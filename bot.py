@@ -206,37 +206,87 @@ def process_page(page):
 
 # ─── CATEGORY TIDIER ─────────────────────────────────────────
 
-def tidy_category(cat_page):
-    """Strip '#', remove unwanted cat links, add a size-tag reflecting
-    the current number of pages in the category (ignoring sub-cats/files)."""
-    original = cat_page.text()
+# Patch: improved tidy_category for orphan_cleanup_and_reformat_bot
+# -----------------------------------------------------------------
+# Drop this function (and the tiny helper below) into your main script
+# to replace the existing tidy_category.  It now handles **all** rules:
+#   • If a category has **zero pages + zero subcategories**
+#       – delete when it also has no backlinks
+#       – otherwise overwrite with a redirect stub to English and
+#         tag it with [[Category:redirect categories]]
+#   • Otherwise (it has at least one page or subcat) tidy text, strip
+#     literal '#', remove unwanted cats/meta‑tag, and append / update
+#     the size‑tag  [[Category:Categories with N members]] — where N is
+#     **pages + subcats** (files are ignored).
+#
+# It relies on the same globals/functions already present:  site,
+# REMOVE_CATS, META_TAG_RE, safe_save, has_backlinks.
+# --------------------------------------------------------------------
 
-    # 1) remove all literal '#'
-    cleaned = original.replace('#', '')
+import re
 
-    # 2) drop unwanted categories and any old size tag
-    for bad in REMOVE_CATS:
-        cleaned = re.sub(rf"\[\[Category:{re.escape(bad)}\]\]", '', cleaned, flags=re.IGNORECASE)
-    cleaned = META_TAG_RE.sub('', cleaned).rstrip()
+# helper --------------------------------------------------------------
 
-    # 3) fetch live page-count via API
-    members = 0
+def _cat_member_count(cat_page) -> int:
+    """Return *pages + subcats* in cat_page using categoryinfo."""
     try:
-        data = site.api('query', prop='categoryinfo', titles=cat_page.name)
-        page_info = next(iter(data['query']['pages'].values()))
-        members = page_info.get('categoryinfo', {}).get('pages', 0)
+        data = site.api("query", prop="categoryinfo", titles=cat_page.name)
+        page_info = next(iter(data["query"]["pages"].values()))
+        ci = page_info.get("categoryinfo", {})
+        return ci.get("pages", 0) + ci.get("subcats", 0)
     except Exception as e:
         print(f"   ! size fetch failed on [[{cat_page.name}]] – {e}")
+        return 0
 
-    # 4) append size tag with proper newlines
+# main ----------------------------------------------------------------
+
+def tidy_category(cat_page):
+    """Maintain *cat_page* according to bot policy.
+
+    1. If (pages + subcats) == 0
+         • delete when no backlinks
+         • else replace with redirect stub
+    2. Else tidy markup and add/update size‑tag based on pages + subcats.
+    """
+    members = _cat_member_count(cat_page)
+
+    # === Case 1 : empty category ====================================
+    if members == 0:
+        if not has_backlinks(cat_page):
+            try:
+                cat_page.delete(reason="Bot: empty, orphaned category", watch=False)
+                print(f"   • deleted empty orphan category [[{cat_page.name}]]")
+            except Exception as e:
+                print(f"   ! cannot delete [[{cat_page.name}]] – {e}")
+            return
+        # has backlinks → convert to redirect stub -------------------
+        redirect_stub = (
+            "#redirect[[en:{{subst:PAGENAME}}]]\n"
+            "[[Category:redirect categories]]\n"
+        )
+        if safe_save(cat_page, redirect_stub, "Bot: empty category redirect"):
+            print(f"   • redirected empty category [[{cat_page.name}]]")
+        return  # finished with empty category
+
+    # === Case 2 : category with members =============================
+    original = cat_page.text()
+    cleaned  = original.replace('#', '')  # strip literal '#'
+
+    # drop unwanted cats and old size tag
+    for bad in REMOVE_CATS:
+        cleaned = re.sub(rf"\[\[Category:{re.escape(bad)}\]\]", "", cleaned, flags=re.IGNORECASE)
+    cleaned = META_TAG_RE.sub("", cleaned).rstrip()
+
+    # append / update size tag
     size_tag = f"[[Category:Categories with {members} members]]"
     if size_tag not in cleaned:
         cleaned += "\n" + size_tag + "\n"
 
-    # 5) save if anything changed
+    # save if modified
     if cleaned != original:
         if safe_save(cat_page, cleaned, f"Bot: tidy & size tag ({members} members)"):
             print(f"   • tidied [[{cat_page.name}]] ({members} members)")
+
 
 # ─── MAIN ───────────────────────────────────────────────────
 
