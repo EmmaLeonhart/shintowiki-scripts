@@ -378,6 +378,67 @@ def main():
         tidy_category(cat)
         time.sleep(1)
 
+# Patch: cleanup of UNUSED TEMPLATE pages (ns=10)
+# ------------------------------------------------------------------
+# Drop `tidy_template` somewhere near your other helper functions and
+# add a **Template sweep** phase to `main()` (code snippet provided at
+# bottom).  Behaviour mirrors your category policy:
+#   • If a template has *no backlinks* → delete it.
+#   • If it *does* have backlinks but is otherwise unused, replace the
+#     entire page with a redirect stub that points to the English
+#     Wikipedia template and categorise it by first letter.
+#       #redirect[[:en:Template:{{subst:PAGENAME}}]]
+#       [[Category:automatic wikipedia template redirects X]]
+#     (where X = first letter of the template’s own title)
+# ------------------------------------------------------------------
+
+import re
+
+_TPL_AUTO_RE = re.compile(r"\[\[Category:automatic wikipedia template redirects[^\]]*\]\]", re.I)
+
+
+def tidy_template(tpl_page):
+    """Delete or redirect unused templates (namespace 10)."""
+
+    # --- Case 1: completely unused (no backlinks) ------------------
+    if not has_backlinks(tpl_page):
+        try:
+            tpl_page.delete(reason="Bot: unused template", watch=False)
+            print(f"   • deleted unused template [[{tpl_page.name}]]")
+        except Exception as e:
+            print(f"   ! cannot delete [[{tpl_page.name}]] – {e}")
+        return
+
+    # --- Case 2: linked but unused – convert to redirect -----------
+    original = tpl_page.text()
+
+    # Build clean redirect stub
+    letter = tpl_page.name.split(':', 1)[-1][0].upper()  # first letter after 'Template:'
+    redirect_stub = (
+        f"#redirect[[:en:Template:{{subst:PAGENAME}}]]\n"
+        f"[[Category:automatic wikipedia template redirects {letter}]]\n"
+    )
+
+    # If page already matches desired stub, do nothing
+    cleaned = _TPL_AUTO_RE.sub("", original)             # remove old auto-cat(s)
+    cleaned = cleaned.strip()
+    if cleaned.lower().startswith("#redirect[[:en:") and "template redirects" in cleaned.lower():
+        return  # already in desired state
+
+    # Replace entire content with stub
+    if safe_save(tpl_page, redirect_stub, "Bot: unused template redirect"):
+        print(f"   • redirected unused template [[{tpl_page.name}]]")
+
+# ------------------------------------------------------------------
+# Add this *after* your category maintenance phase in `main()`
+# ------------------------------------------------------------------
+#     # —— Phase 3 – template cleanup (ns=10) ———————————————
+#     print("—— Template maintenance ——————————————————————————")
+#     for idx, tpl in enumerate(site.allpages(namespace=10), 1):
+#         tidy_template(tpl)
+#         time.sleep(1)
+
+
     print("Done!")
 
 
