@@ -60,9 +60,33 @@ def dedupe(seq):
 
 
 def safe_save(page, text, summary):
+    """Attempt Page.save but gracefully back off on edit‑conflict or if
+    the page vanished (was deleted) before we got to save."""
+    if not page.exists:
+        print(f"   • skipped save, page [[{page.name}]] no longer exists")
+        return False
+
+    # Nothing to do if text hasn't changed
+    try:
+        current = page.text()
+    except Exception:
+        current = None
+    if current is not None and current.rstrip() == text.rstrip():
+        return False
+
     try:
         page.save(text, summary=summary)
         return True
+    except mwclient.errors.EditError as e:
+        if getattr(e, "code", "") == "editconflict":
+            print(f"   ! edit conflict on [[{page.name}]] – skipping")
+            return False
+        raise
+    except mwclient.errors.APIError as e:
+        if e.code == "editconflict":
+            print(f"   ! edit conflict on [[{page.name}]] – skipping")
+            return False
+        raise
     except Exception as e:
         print(f"   ! Save failed on [[{page.name}]] – {e}")
         return False
@@ -182,11 +206,59 @@ def ensure_category_redirect(page):
             if safe_save(cat_page, txt, f"Bot: create cat redirect from [[{page.name}]]"):
                 print(f"   • cat redirect [[{title}]] created")
 
+
+# helper methods
+
+import re
+
+# removes generic or letter‑specific auto‑redirect cats, e.g.
+# [[Category:automatic wikipedia redirects]]
+# [[Category:automatic wikipedia redirects A]]
+_AUTO_RE = re.compile(r"\[\[Category:automatic wikipedia redirects[^\]]*\]\]", re.I)
+
+_EN_REDIRECT_RE = re.compile(r"^\s*(#redirect\s*)?\[\[\s*:?en:[^\]]+\]\]", re.I)
+
+def tidy_redirect(page) -> bool:
+    """Strip category links from redirects and add letter‑bucket auto
+    category for redirects that target English Wikipedia.
+
+    Returns **True** if the page was modified & saved, else False."""
+
+    # Skip non‑redirects (unless soft en: redirect pattern matches)
+    if not page.redirect and not _EN_REDIRECT_RE.match(page.text()):
+        return False
+
+    original = page.text()
+
+    # 1 – remove all category links (including old auto‑cats)
+    cleaned = CAT_LINK_RE.sub("", original)
+    cleaned = _AUTO_RE.sub("", cleaned)
+    cleaned = cleaned.rstrip()
+
+    # 2 – if it’s an en: redirect, append the letter bucket cat
+    if _EN_REDIRECT_RE.match(cleaned):
+        bucket = page.name[0].upper()
+        cleaned += f"\n[[Category:automatic wikipedia redirects {bucket}]]\n"
+    else:
+        cleaned += "\n"  # ensure trailing newline
+
+    # 3 – save when changed
+    if cleaned != original:
+        if safe_save(page, cleaned, "Bot: tidy redirect categories"):
+            print(f"   • tidied redirect [[{page.name}]]")
+            return True
+    return False
+
 # ─── PER‑PAGE DRIVER ─────────────────────────────────────────
 
 def process_page(page):
     if delete_orphan_redirect(page):
         return  # page deleted
+    
+        # NEW: tidy redirect pages ------------------------------------
+    if tidy_redirect(page):
+        return  # redirect cleaned; nothing more to do
+
 
     original = page.text()
     new      = handle_ill_templates(original, page.name)
@@ -295,7 +367,7 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start='10月'), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
