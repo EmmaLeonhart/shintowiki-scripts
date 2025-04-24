@@ -291,23 +291,16 @@ def tidy_category(cat_page):
 # ─── MAIN ───────────────────────────────────────────────────
 
 def main():
-    if not os.path.exists(PAGES_TXT):
-        open(PAGES_TXT, 'w', encoding='utf-8').close()
-        print(f"Created empty {PAGES_TXT}; add titles and re‑run.")
-        return
+    """Sweep every main‑namespace page, then all categories."""
 
-    with open(PAGES_TXT, 'r', encoding='utf-8', errors='ignore') as fh:
-        titles = [ln.strip() for ln in fh if ln.strip() and not ln.startswith('#')]
-
-    # Phase 1 – process explicit list
-    print("—— Page processing (list) ——————————————————————————")
-    for idx, title in enumerate(titles, 1):
-        print(f"{idx}/{len(titles)} [[{title}]]")
-        page = site.pages[title]
+    # —— Phase 1 – full mainspace sweep ————————————————
+    print("—— Mainspace sweep ————————————————————————————")
+    for idx, page in enumerate(site.allpages(namespace=0), 1):
+        print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
 
-    # Phase 2 – category maintenance
+    # —— Phase 2 – category maintenance ————————————————
     print("—— Category maintenance ——————————————————————————")
     for idx, cat in enumerate(site.allpages(namespace=14), 1):
         tidy_category(cat)
@@ -316,5 +309,5 @@ def main():
     print("Done!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
