@@ -33,7 +33,14 @@ PAGES_TXT = 'pages.txt'
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
-print(f"Logged in as {site.userinfo['name']}")
+
+# Retrieve username in a way that works on all mwclient versions
+try:
+    ui = site.api('query', meta='userinfo')
+    logged_user = ui['query']['userinfo'].get('name', USERNAME)
+    print(f"Logged in as {logged_user}")
+except Exception:
+    print("Logged in (could not fetch username via API, but login succeeded).")
 
 # ─── CONSTANTS & REGEX ──────────────────────────────────────
 REMOVE_CATS = {'qq', 'Qq', '11', 'New'}  # exact (case‑sensitive) names
