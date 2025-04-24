@@ -200,10 +200,11 @@ def process_page(page):
 # ─── CATEGORY TIDIER ─────────────────────────────────────────
 
 def tidy_category(cat_page):
-    """Strip '#', remove bad cat links, add size tag based on live categoryinfo."""
+    """Strip '#', remove unwanted cat links, add a size-tag reflecting
+    the current number of pages in the category (ignoring sub-cats/files)."""
     original = cat_page.text()
 
-    # 1) strip '#' chars
+    # 1) remove all literal '#'
     cleaned = original.replace('#', '')
 
     # 2) drop unwanted categories and any old size tag
@@ -211,29 +212,28 @@ def tidy_category(cat_page):
         cleaned = re.sub(rf"\[\[Category:{re.escape(bad)}\]\]", '', cleaned, flags=re.IGNORECASE)
     cleaned = META_TAG_RE.sub('', cleaned).rstrip()
 
-    # 3) fetch member count via API
+    # 3) fetch live page-count via API
     members = 0
     try:
         data = site.api('query', prop='categoryinfo', titles=cat_page.name)
-        page_data = next(iter(data['query']['pages'].values()))
-        members = page_data.get('categoryinfo', {}).get('pages', 0)
+        page_info = next(iter(data['query']['pages'].values()))
+        members = page_info.get('categoryinfo', {}).get('pages', 0)
     except Exception as e:
-        print(f"   ! could not fetch size for [[{cat_page.name}]] – {e}")
+        print(f"   ! size fetch failed on [[{cat_page.name}]] – {e}")
 
+    # 4) append size tag with proper newlines
     size_tag = f"[[Category:Categories with {members} members]]"
     if size_tag not in cleaned:
-            if size_tag not in cleaned:
-        cleaned += '
-' + size_tag + '
-'  # ensure newline before & after tag
+        cleaned += "\n" + size_tag + "\n"
 
+    # 5) save if anything changed
     if cleaned != original:
-        if safe_save(cat_page, cleaned, f"Bot: tidy/category tag ({members} members)"):
+        if safe_save(cat_page, cleaned, f"Bot: tidy & size tag ({members} members)"):
             print(f"   • tidied [[{cat_page.name}]] ({members} members)")
 
 # ─── MAIN ───────────────────────────────────────────────────
 
-def main()::
+def main():
     if not os.path.exists(PAGES_TXT):
         open(PAGES_TXT, 'w', encoding='utf-8').close()
         print(f"Created empty {PAGES_TXT}; add titles and re‑run.")
