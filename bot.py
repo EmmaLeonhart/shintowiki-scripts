@@ -367,14 +367,14 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0, start=''), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start='ara'), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
 
     # —— Phase 2 – category maintenance ————————————————
     print("—— Category maintenance ——————————————————————————")
-    for idx, cat in enumerate(site.allpages(namespace=14), 1):
+    for idx, cat in enumerate(site.allpages(namespace=14, start=''), 1):
         tidy_category(cat)
         time.sleep(1)
 
