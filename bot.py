@@ -367,7 +367,9 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0, start='ara'), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start='Asano Family'), 1):
+    #for idx, page in enumerate(site.allpages(namespace=0, start='Draft:Category:3rd-century BC legendary monarchs'), 1):
+    #for idx, page in enumerate(site.allpages(namespace=0, start='警視庁武術世話掛'), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
