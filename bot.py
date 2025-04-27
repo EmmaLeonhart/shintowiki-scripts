@@ -34,6 +34,29 @@ PAGES_TXT = 'pages.txt'
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
 
+# skip titles that are really inter-wiki links, e.g. “Af:Foo”, “de:Bar”
+SKIP_INTERWIKI_RE = re.compile(r'^[A-Za-z-]{1,15}:')
+
+# match ANY category link (needed by remove_unwanted_cats)
+_CAT_LINK_RE_FULL = re.compile(
+    r'\[\[Category:([^|\]]+)(?:\|[^\]]*)?\]\]',  # [[Category:Name|sort]]
+    re.I
+)
+
+
+
+def remove_unwanted_cats(text: str) -> str:
+    def _repl(m):
+        name = m.group(1).strip()
+        return "" if name in REMOVE_CATS else m.group(0)
+    return _CAT_LINK_RE_FULL.sub(_repl, text)
+
+
+def should_skip_page(page) -> bool:
+    """True when page.title looks like an interwiki pseudo‑page that the
+    API flags as invalidtitle (e.g. 'Af:Foo', 'de:Bar')."""
+    return page.namespace == 0 and SKIP_INTERWIKI_RE.match(page.name)
+
 # Retrieve username in a way that works on all mwclient versions
 try:
     ui = site.api('query', meta='userinfo')
@@ -252,12 +275,17 @@ def tidy_redirect(page) -> bool:
 # ─── PER‑PAGE DRIVER ─────────────────────────────────────────
 
 def process_page(page):
+    if should_skip_page(page):
+        return #not a page
+    
     if delete_orphan_redirect(page):
         return  # page deleted
     
         # NEW: tidy redirect pages ------------------------------------
     if tidy_redirect(page):
         return  # redirect cleaned; nothing more to do
+
+    
 
 
     original = page.text()
@@ -269,8 +297,8 @@ def process_page(page):
         ensure_category_redirect(page)
 
     # remove unwanted category links everywhere
-    for bad in REMOVE_CATS:
-        new = re.sub(rf"\[\[Category:{re.escape(bad)}\]\]", '', new, flags=re.IGNORECASE)
+    new = remove_unwanted_cats(new)
+
 
     if new.strip() != original.strip():
         if safe_save(page, new, "Bot: cleanup/reformat"):
@@ -367,14 +395,14 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0, start='Beppyo'), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start=''), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
 
     # —— Phase 2 – category maintenance ————————————————
     print("—— Category maintenance ——————————————————————————")
-    for idx, cat in enumerate(site.allpages(namespace=14, start='1792 non-fiction books'), 1):
+    for idx, cat in enumerate(site.allpages(namespace=14, start=''), 1):
         tidy_category(cat)
         time.sleep(1)
 
