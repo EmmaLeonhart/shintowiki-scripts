@@ -188,11 +188,7 @@ def handle_ill_templates(text, page_name):
             )
             safe_save(tgt_page, redirect, f"Bot: ill redirect for [[{page_name}]]")
 
-        draft_page = site.pages[f'draft:{tgt}']
-        safe_save(draft_page,
-                  f"#redirect[[{tgt}]]\n[[Category:generated draft redirect pages]]",
-                  f"Bot: draft ill redirect for [[{page_name}]]")
-        return f"{{{{ill|{tgt}|{lang}|{disp}|12=draft}}}}"
+        return f"{{{{ill|{tgt}|{lang}|{disp}}}}}"
 
     return ILL_RE.sub(repl, text)
 
@@ -395,14 +391,14 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0, start=''), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start='April'), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
 
     # —— Phase 2 – category maintenance ————————————————
     print("—— Category maintenance ——————————————————————————")
-    for idx, cat in enumerate(site.allpages(namespace=14, start=''), 1):
+    for idx, cat in enumerate(site.allpages(namespace=14, start='April'), 1):
         tidy_category(cat)
         time.sleep(1)
 
