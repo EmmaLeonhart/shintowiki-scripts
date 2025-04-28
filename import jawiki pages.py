@@ -117,6 +117,16 @@ def tag_failure(page):
     except Exception as e:
         print(f"    ! could not add failure category – {e}")
 
+def clear_failure(page):
+    if FAIL_CAT_RE.search(page.text()):
+        txt = FAIL_CAT_RE.sub("", page.text()).rstrip() + "\n"
+        try:
+            page.save(txt, summary="Bot: clear import-failure category")
+            print("        ✓ removed failure category")
+        except Exception as e:
+            print(f"        ! could not remove failure category – {e}")
+
+
 # ─── MERGE VIA DELETE → MOVE → UNDELETE ────────────────────────────
 
 def merge_by_replace(local: str, ja_title: str, new_text: str, token: str) -> bool:
@@ -202,7 +212,9 @@ def process_page(local_title: str):
     if not import_history(ja_title, rev_id, token):
         return
 
-    merge_by_replace(local_title, ja_title, final_text, token)
+    if merge_by_replace(local_title, ja_title, final_text, token):
+        clear_failure(site.pages[local_title])   # <─ add this line
+
 
 # ─── MAIN LOOP ────────────────────────────────────────────────────
 
