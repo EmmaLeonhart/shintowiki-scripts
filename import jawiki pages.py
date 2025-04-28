@@ -105,9 +105,6 @@ def merge_by_replace(local: str, ja_title: str, new_text: str, token: str) -> bo
     local_page = site.pages[local]
     ja_page    = site.pages[ja_title]
 
-    if TRANSLATED_RE.search(page.text()):
-        print("    ! already has translated page template – skipped")
-        return
 
     if not ja_page.exists:
         print("        ! imported ja page missing – cannot merge")
@@ -157,11 +154,20 @@ def process_page(local_title: str):
         print("    ! local page missing – skipped")
         return
 
+    if TRANSLATED_RE.search(page.text()):
+        print("    ! already has translated page template – skipped")
+        return
+
     m = JA_LINK_RE.search(page.text())
     if not m:
         print("    ! no ja link – skipped")
         return
     ja_title = m.group(1).strip()
+
+
+    from urllib.parse import unquote
+    ja_title = unquote(ja_title).replace('_', ' ')
+
     print(f"    → ja:{ja_title}")
 
     rev_id = ja_last_rev_id(ja_title)
