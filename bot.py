@@ -391,7 +391,7 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    for idx, page in enumerate(site.allpages(namespace=0, start='6月'), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start=''), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)

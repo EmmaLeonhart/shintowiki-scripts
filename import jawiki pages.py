@@ -45,6 +45,8 @@ print("Logged in.")
 
 JA_LINK_RE = re.compile(r"\[\[\s*ja:([^|\]]+)", re.I)
 
+TRANSLATED_RE    = re.compile(r"\{\{\s*translated\s+page", re.I)
+
 # ─── FILE HELPER ───────────────────────────────────────────────────
 
 def load_titles() -> list[str]:
@@ -102,6 +104,10 @@ def import_history(ja_title: str, rev_id: str, token: str) -> bool:
 def merge_by_replace(local: str, ja_title: str, new_text: str, token: str) -> bool:
     local_page = site.pages[local]
     ja_page    = site.pages[ja_title]
+
+    if TRANSLATED_RE.search(page.text()):
+        print("    ! already has translated page template – skipped")
+        return
 
     if not ja_page.exists:
         print("        ! imported ja page missing – cannot merge")
