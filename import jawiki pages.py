@@ -1,139 +1,159 @@
-"""jawiki_full_import_bot.py
-===========================
-Import **full history** for every Japanese‑Wikipedia page listed in
-*pages.txt* directly into your shinto.miraheze.org wiki.
+"""ja_full_replace_bot.py (v3)
+================================
+*New*: **Skip pages that already contain a {{translated page}} template**
+so the bot won’t duplicate work or add a second tag.
 
-How it works
-------------
-* Reads each line of *pages.txt* (ignores blank lines / comments).
-* Tries **transwiki import** first (`interwikisource="jawiki"`).
-* If the wiki doesn’t recognise that source (API error `badvalue`),
-  falls back to **XML export + multipart upload** — still full history.
-* Creates the page automatically if it doesn’t exist locally.
-
-No merging, no templates, no edits to existing pages — this script is
-solely to prove that full‑history import works.
-
-Prerequisites
--------------
-* Account must have **`import`** and (for the fallback) **`importupload`**.
-* `pip install mwclient requests` if not already installed.
+Summary of workflow (unchanged):
+• find `[[ja:…]]` → import full ja‑wiki history → delete local page → move
+  ja page → save original text + tag → undelete archived local revs.
 """
 
-import os
-import sys
-import time
-import re
-import requests
+from __future__ import annotations
+import os, sys, time, re, urllib.parse, requests
+from datetime import datetime, timezone
 import mwclient
 from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
-WIKI_URL  = "shinto.miraheze.org"   # domain only
-WIKI_PATH = "/w/"                  # include leading & trailing slashes
+WIKI_URL  = "shinto.miraheze.org"
+WIKI_PATH = "/w/"           # leading & trailing slash
 USERNAME  = "Immanuelle"
 PASSWORD  = "[REDACTED_SECRET_1]"
-PAGES_TXT = "pages.txt"            # each line = ja‑wiki page title
-THROTTLE  = 1.0                    # seconds between imports
-
-API_URL = f"https://{WIKI_URL}{WIKI_PATH}api.php"
+PAGES_TXT = "pages.txt"      # list of local page titles
+THROTTLE  = 1.0              # delay between pages (sec)
+API_URL   = f"https://{WIKI_URL}{WIKI_PATH}api.php"
 
 # ─── SESSION ───────────────────────────────────────────────────────
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
 print("Logged in.")
 
-# ─── FILE HELPERS ─────────────────────────────────────────────────
+JA_LINK_RE   = re.compile(r"\[\[\s*ja:([^|\]]+)", re.I)
+TPL_RE       = re.compile(r"\{\{\s*translated page\s*\|", re.I)  # detects existing tag
 
-def ensure_pagelist() -> list[str]:
+# ─── FILE HELPER ───────────────────────────────────────────────────
+
+def load_titles() -> list[str]:
     if not os.path.exists(PAGES_TXT):
         open(PAGES_TXT, "w", encoding="utf-8").close()
-        print(f"Created empty {PAGES_TXT}; add ja‑wiki titles and run again.")
+        print(f"Created empty {PAGES_TXT}; add local titles and re-run.")
         sys.exit()
     with open(PAGES_TXT, "r", encoding="utf-8") as fh:
         return [ln.strip() for ln in fh if ln.strip() and not ln.startswith('#')]
 
-# ─── JAPAN WIKI HELPERS ───────────────────────────────────────────
+# ─── JAPANESE WIKI HELPERS ─────────────────────────────────────────
 
-def fetch_export_xml(ja_title: str) -> bytes:
-    """Download full history XML via Special:Export (always includes history)."""
-    import urllib.parse
-    url = (
-        "https://ja.wikipedia.org/wiki/Special:Export/" +
-        urllib.parse.quote(ja_title, safe="")
-    )
-    params = {"history": "1", "templates": "1"}
-    r = requests.get(url, params=params, timeout=90)
+def ja_export_xml(title: str) -> bytes:
+    url = "https://ja.wikipedia.org/wiki/Special:Export/" + urllib.parse.quote(title, safe="")
+    r = requests.get(url, params={"history": "1"}, timeout=90)
     r.raise_for_status()
     return r.content
 
-# ─── IMPORT ROUTINES ───────────────────────────────────────────────
 
-def import_transwiki(ja_title: str, token: str) -> bool:
+def ja_last_rev_id(title: str) -> str | None:
+    params = {"action": "query", "prop": "revisions", "rvprop": "ids", "rvlimit": 1,
+              "titles": title, "format": "json"}
+    data = requests.get("https://ja.wikipedia.org/w/api.php", params=params, timeout=30).json()
+    page = next(iter(data["query"]["pages"].values()))
+    revs = page.get("revisions")
+    return str(revs[0]["revid"]) if revs else None
+
+# ─── FULL HISTORY IMPORT ───────────────────────────────────────────
+
+def import_history(ja_title: str, rev_id: str, token: str) -> bool:
     try:
-        site.api(
-            "import", token=token,
-            interwikisource="jawiki",
-            interwikipage=ja_title,
-            fullhistory=1,
-            summary=f"Bot: import full history from ja:{ja_title}",
-        )
+        site.api("import", token=token, interwikisource="jawiki", interwikipage=ja_title,
+                 fullhistory=1,
+                 summary=f"Bot: import full history from ja:{ja_title} up to rev {rev_id}")
+        print("        ✓ transwiki import")
         return True
     except APIError as e:
-        if e.code == "badvalue":
-            return False  # jawiki not registered
-        print(f"   ! transwiki import failed – {e}")
-        return False
-
-
-def import_xml_upload(xml_bytes: bytes, ja_title: str, token: str) -> bool:
-    data = {
-        "action": "import", "format": "json", "token": token,
-        "interwikiprefix": "ja", "assignknownusers": "1",
-        "summary": f"Bot: import full history from ja:{ja_title}",
-    }
-    files = {"xml": ("history.xml", xml_bytes, "text/xml")}
+        if e.code != "badvalue":
+            print(f"        ! transwiki failed – {e}")
+    # fallback XML
+    xml = ja_export_xml(ja_title)
+    files = {"xml": ("history.xml", xml, "text/xml")}
+    data  = {"action": "import", "format": "json", "token": token,
+             "interwikiprefix": "ja", "assignknownusers": "1",
+             "summary": f"Bot: import full history from ja:{ja_title} up to rev {rev_id}"}
     res = site.connection.post(API_URL, data=data, files=files, timeout=90).json()
     if res.get("error"):
-        print(f"   ! xml upload failed – {res['error']['info']}")
+        print(f"        ! XML upload failed – {res['error']['info']}")
         return False
+    print("        ✓ XML upload import")
     return True
 
-# ─── MAIN DRIVER ──────────────────────────────────────────────────
+# ─── MERGE VIA DELETE → MOVE → UNDELETE ────────────────────────────
 
-def process_title(ja_title: str) -> None:
-    token = site.get_token("csrf")
+def merge_by_replace(local: str, ja_title: str, new_text: str, token: str) -> bool:
+    local_page = site.pages[local]
+    ja_page    = site.pages[ja_title]
 
-    # First try transwiki import
-    if import_transwiki(ja_title, token):
-        print(f"   • imported via transwiki → [[{ja_title}]]")
-        return
-
-    # Fallback: XML upload
     try:
-        xml_bytes = fetch_export_xml(ja_title)
-    except Exception as e:
-        print(f"   ! export failed – {e}")
+        local_page.delete(reason="Bot: prep merge", watch=False)
+        ja_page.move(local, reason="Bot: merge import", no_redirect=True, move_subpages=False)
+        site.pages[local].save(new_text, summary="Bot: restore translated version")
+        site.api("undelete", token=token, title=local,
+                 reason="Bot: restore local revisions after merge")
+        if site.pages[ja_title].exists:
+            site.pages[ja_title].delete(reason="Bot: cleanup redirect", watch=False)
+        print("        ✓ merge + replace complete")
+        return True
+    except APIError as e:
+        print(f"        ! merge failed – {e}")
+        try:
+            if not site.pages[local].exists:
+                site.api("undelete", token=token, title=local, reason="Bot rollback")
+        except Exception:
+            pass
+        return False
+
+# ─── PROCESS ONE PAGE ─────────────────────────────────────────────
+
+def process_page(local_title: str):
+    print(f"– Processing [[{local_title}]]")
+    page = site.pages[local_title]
+    if not page.exists:
+        print("    ! local page missing – skipped")
         return
 
-    if import_xml_upload(xml_bytes, ja_title, token):
-        print(f"   • imported via XML upload → [[{ja_title}]]")
+    if TPL_RE.search(page.text()):
+        print("    • translated-page template already present – skipped")
+        return
+
+    m = JA_LINK_RE.search(page.text())
+    if not m:
+        print("    ! no ja link – skipped")
+        return
+    ja_title = m.group(1).strip()
+    print(f"    → ja:{ja_title}")
+
+    rev_id = ja_last_rev_id(ja_title)
+    if not rev_id:
+        print("    ! could not fetch ja revID – skipped")
+        return
+
+    tag = f"\n{{{{translated page|ja|{ja_title}|version={rev_id}|comment=Imported full ja history}}}}\n"
+    final_text = page.text() + tag
+
+    token = site.get_token("csrf")
+    if not import_history(ja_title, rev_id, token):
+        return
+
+    merge_by_replace(local_title, ja_title, final_text, token)
 
 # ─── MAIN LOOP ────────────────────────────────────────────────────
 
-def main() -> None:
-    titles = ensure_pagelist()
+def main():
+    titles = load_titles()
     if not titles:
-        print("pages.txt is empty – nothing to import.")
+        print("pages.txt empty – nothing to do")
         return
-
-    for i, ja_title in enumerate(titles, 1):
-        print(f"{i}/{len(titles)} ja:{ja_title}")
-        process_title(ja_title)
+    for idx, title in enumerate(titles, 1):
+        print(f"\n{idx}/{len(titles)}")
+        process_page(title)
         time.sleep(THROTTLE)
-
     print("Done!")
-
 
 if __name__ == "__main__":
     main()
