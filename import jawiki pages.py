@@ -38,6 +38,9 @@ PAGES_TXT = "pages.txt"      # list of local page titles
 THROTTLE  = 1.0              # delay between pages (sec)
 API_URL   = f"https://{WIKI_URL}{WIKI_PATH}api.php"
 
+FAIL_CAT  = "[[Category:Ja import failed]]"  # category added on failure
+
+
 # ─── SESSION ───────────────────────────────────────────────────────
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
@@ -46,6 +49,8 @@ print("Logged in.")
 JA_LINK_RE = re.compile(r"\[\[\s*ja:([^|\]]+)", re.I)
 
 TRANSLATED_RE    = re.compile(r"\{\{\s*translated\s+page", re.I)
+
+FAIL_CAT_RE    = re.compile(re.escape(FAIL_CAT), re.I)
 
 # ─── FILE HELPER ───────────────────────────────────────────────────
 
@@ -98,6 +103,19 @@ def import_history(ja_title: str, rev_id: str, token: str) -> bool:
         return False
     print("        ✓ XML upload import")
     return True
+
+
+# ─── ADD FAILURE CATEGORY ─────────────────────────────────────────
+
+def tag_failure(page):
+    if FAIL_CAT_RE.search(page.text()):
+        return  # already tagged
+    try:
+        page.save(page.text() + "\n" + FAIL_CAT + "\n",
+                  summary="Bot: mark ja import failure")
+        print("    ! added failure category")
+    except Exception as e:
+        print(f"    ! could not add failure category – {e}")
 
 # ─── MERGE VIA DELETE → MOVE → UNDELETE ────────────────────────────
 
@@ -172,7 +190,8 @@ def process_page(local_title: str):
 
     rev_id = ja_last_rev_id(ja_title)
     if not rev_id:
-        print("    ! could not fetch ja revID – skipped")
+        print("    ! could not fetch ja revID – tagging failure")
+        tag_failure(page)
         return
 
     # prepare final content with translated tag
