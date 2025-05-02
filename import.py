@@ -29,7 +29,7 @@ from datetime import datetime
 from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
-PAGE_TITLE    = 'Female_(gender)'
+PAGE_TITLE    = 'Superstitions in Christian societies'
 RAW_TITLE     = PAGE_TITLE
 LOCAL_TITLE   = PAGE_TITLE.replace('_', ' ')
 
