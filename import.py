@@ -1,9 +1,16 @@
 """
-everybodywiki_import_bot.py (v6)
+everybodywiki_import_bot.py (v9)
 ================================
-Imports full revision history of a page from EverybodyWiki into Shinto Wiki, plus snapshot metadata from the Edithistory page.
+Imports full revision history of a page from EverybodyWiki into Shinto Wiki,
+plus snapshot metadata from its Edithistory page, preserving timestamps.
 
-Configure PAGE_TITLE and credentials, then run:
+- Fetches API revisions
+- Parses Edithistory table entries as empty-content revisions
+- Merges and sorts by timestamp
+- Builds XML, saves for debugging, and imports via MediaWiki import API
+- Polls until the final timestamp is confirmed on Shinto Wiki
+
+CONFIGURE at top and run:
   python everybodywiki_import_bot.py
 """
 
@@ -13,62 +20,70 @@ import re
 import requests
 import mwclient
 from xml.sax.saxutils import escape
+from datetime import datetime
+from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
+PAGE_TITLE    = 'Female_(gender)'  # EverybodyWiki title (underscores allowed)
+RAW_TITLE     = PAGE_TITLE
+LOCAL_TITLE   = PAGE_TITLE.replace('_', ' ')  # target page on Shinto
+
 EWWIKI_API    = 'https://en.everybodywiki.com/api.php'
+SNAPSHOT_PAGE = 'Edithistory:' + RAW_TITLE
+SNAPSHOT_URL  = f'https://en.everybodywiki.com/{SNAPSHOT_PAGE}'
+
 SHINTO_URL    = 'shinto.miraheze.org'
 SHINTO_PATH   = '/w/'
 API_URL       = f'https://{SHINTO_URL}{SHINTO_PATH}api.php'
 USERNAME      = 'Immanuelle'
 PASSWORD      = '[REDACTED_SECRET_1]'
-PAGE_TITLE    = 'TTT_(programme)'
 THROTTLE      = 1.0  # seconds between HTTP/API calls
-SNAPSHOT_PAGE = 'Edithistory:' + PAGE_TITLE
-SNAPSHOT_URL  = f'https://en.everybodywiki.com/{SNAPSHOT_PAGE}'
 
 # ─── LOGIN TO SHINTO ───────────────────────────────────────────────
 site = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
 site.login(USERNAME, PASSWORD)
 #print(f"Logged in to {SHINTO_URL} as {site.userinfo.get('name')}")
 
-# ─── FETCH ALL REVISIONS VIA API ────────────────────────────────────
-print(f"Fetching actual revisions for '{PAGE_TITLE}' from EverybodyWiki...")
+# ─── FETCH API REVISIONS ───────────────────────────────────────────
+print(f"Fetching revisions for '{RAW_TITLE}' from EverybodyWiki...")
 revisions = []
 params = {
     'action': 'query', 'format': 'json', 'prop': 'revisions',
     'rvprop': 'ids|timestamp|user|comment|content', 'rvslots': 'main',
-    'rvlimit': 'max', 'rvdir': 'newer', 'titles': PAGE_TITLE
+    'rvlimit': 'max', 'rvdir': 'newer', 'titles': RAW_TITLE
 }
 while True:
-    resp = requests.get(EWWIKI_API, params=params)
-    resp.raise_for_status()
-    data = resp.json()
+    r = requests.get(EWWIKI_API, params=params)
+    r.raise_for_status()
+    data = r.json()
     pages = data.get('query', {}).get('pages', {})
-    pageinfo = next(iter(pages.values()), {})
-    revs = pageinfo.get('revisions', [])
+    info = next(iter(pages.values()), {})
+    revs = info.get('revisions', [])
     if not revs:
-        print(f"No actual revisions found for '{PAGE_TITLE}'. Exiting.")
+        print("No revisions found; exiting.")
         sys.exit(1)
     revisions.extend(revs)
     cont = data.get('continue', {}).get('rvcontinue')
     if not cont:
         break
     params['rvcontinue'] = cont
-print(f"Total actual revisions fetched: {len(revisions)}")
+    time.sleep(THROTTLE)
+print(f"Fetched {len(revisions)} actual revisions.")
 
-# ─── FETCH SNAPSHOT METADATA ────────────────────────────────────────
+# ─── FETCH SNAPSHOT ENTRIES ────────────────────────────────────────
 print(f"Fetching snapshot metadata from '{SNAPSHOT_URL}'...")
-resp = requests.get(SNAPSHOT_URL, params={'action': 'raw'})
-if resp.status_code != 200:
-    print("Failed to fetch snapshot page; skipping snapshot entries.")
+r = requests.get(SNAPSHOT_URL, params={'action':'raw'}, timeout=30)
+if r.status_code != 200:
+    print("Snapshot page unavailable; skipping snapshots.")
     snapshots = []
 else:
-    raw = resp.text
-    pattern = re.compile(
+    raw = r.text
+    pat = re.compile(
         r"^\|\s*(?P<id>\d+)\s*\|\|\s*(?P<ts>[^|]+?)\s*\|\|\s*(?P<user>[^|]+?)\s*\|\|\s*<nowiki>(?P<cm>.*?)</nowiki>",
-        re.MULTILINE)
+        re.MULTILINE
+    )
     snapshots = []
-    for m in pattern.finditer(raw):
+    for m in pat.finditer(raw):
         snapshots.append({
             'revid': int(m.group('id')),
             'timestamp': m.group('ts').strip(),
@@ -76,49 +91,56 @@ else:
             'comment': m.group('cm').strip(),
             'content': ''
         })
-print(f"Total snapshot entries parsed: {len(snapshots)}")
+print(f"Parsed {len(snapshots)} snapshot entries.")
 
-# ─── MERGE AND SORT ALL ENTRIES ─────────────────────────────────────
-print("Merging actual revisions and snapshot entries by timestamp...")
-from datetime import datetime
+# ─── MERGE & SORT ALL ENTRIES ──────────────────────────────────────
+print("Merging and sorting all entries by timestamp...")
 entries = []
-for rev in revisions:
+# actual
+for rv in revisions:
     entries.append({
-        'revid': rev['revid'],
-        'timestamp': rev['timestamp'],
-        'user': rev.get('user', ''),
-        'comment': rev.get('comment', ''),
-        'content': rev.get('slots', {}).get('main', {}).get('*', rev.get('*', ''))
+        'timestamp': rv['timestamp'],
+        'user': rv.get('user', ''),
+        'comment': rv.get('comment', ''),
+        'revid': rv['revid'],
+        'content': rv.get('slots', {}).get('main', {}).get('*', '')
     })
-for snap in snapshots:
-    entries.append(snap)
+# snapshots
+entries.extend(snapshots)
+# sort
 entries.sort(key=lambda e: datetime.fromisoformat(e['timestamp'].replace('Z', '+00:00')))
 
-# ─── BUILD XML EXPORT FOR IMPORT ────────────────────────────────────
+# ─── BUILD XML FOR IMPORT ──────────────────────────────────────────
 print("Building combined XML export...")
 xml_lines = [
     '<?xml version="1.0"?>',
     '<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xml:lang="en">',
     '<siteinfo/>',
     '<page>',
-    f'  <title>{escape(PAGE_TITLE)}</title>'
+    f'  <title>{escape(LOCAL_TITLE)}</title>'
 ]
 for ent in entries:
-    xml_lines.append('  <revision>')
-    xml_lines.append(f'    <timestamp>{escape(ent["timestamp"])}</timestamp>')
-    xml_lines.append('    <contributor>')
-    xml_lines.append(f'      <username>{escape(ent["user"])}</username>')
-    xml_lines.append('    </contributor>')
-    xml_lines.append(f'    <comment>{escape(ent["comment"])}</comment>')
-    xml_lines.append(f'    <id>{ent["revid"]}</id>')
-    xml_lines.append(f'    <text xml:space="preserve">{escape(ent["content"])}</text>')
-    xml_lines.append('  </revision>')
+    xml_lines.extend([
+        '  <revision>',
+        f'    <timestamp>{escape(ent["timestamp"])}</timestamp>',
+        '    <contributor>',
+        f'      <username>{escape(ent["user"])}</username>',
+        '    </contributor>',
+        f'    <comment>{escape(ent["comment"])}</comment>',
+        f'    <id>{ent["revid"]}</id>',
+        f'    <text xml:space="preserve">{escape(ent["content"])}</text>',
+        '  </revision>'
+    ])
 xml_lines.extend(['</page>', '</mediawiki>'])
 xml_data = '\n'.join(xml_lines).encode('utf-8')
-print(f"XML built ({len(xml_data)} bytes)")
+
+# ─── SAVE XML TO FILE FOR DEBUG ─────────────────────────────────────
+with open('export.xml', 'wb') as xml_file:
+    xml_file.write(xml_data)
+print(f"XML written to export.xml ({len(xml_data)} bytes) for inspection.")
 
 # ─── IMPORT XML INTO SHINTO ─────────────────────────────────────────
-print("Importing XML into Shinto with full history...")
+print("Uploading XML import to Shinto...")
 token = site.get_token('csrf')
 files = {'xml': ('export.xml', xml_data, 'text/xml')}
 data = {
@@ -128,11 +150,28 @@ data = {
     'fullhistory': '1',
     'interwikiprefix': 'en'
 }
-res = site.connection.post(API_URL, data=data, files=files, timeout=300).json()
+r = site.connection.post(API_URL, data=data, files=files, timeout=300)
+res = r.json()
 if 'error' in res:
     err = res['error']
-    print(f"Import error: {err.get('code')} - {err.get('info')}")
+    print(f"Import failed: {err['code']} - {err['info']}")
     sys.exit(1)
-print("Import complete; full history and snapshots preserved.")
+print("Import request accepted.")
 
-print("Done.")
+# ─── WAIT FOR FINAL TIMESTAMP ───────────────────────────────────────
+final_ts = entries[-1]['timestamp']
+print(f"Waiting for final timestamp {final_ts} on Shinto page '{LOCAL_TITLE}'...")
+while True:
+    info = site.api(
+        'query', prop='revisions', titles=LOCAL_TITLE,
+        rvprop='timestamp', rvlimit=1, format='json'
+    )
+    page = next(iter(info['query']['pages'].values()))
+    revs = page.get('revisions') or []
+    cur_ts = revs[0]['timestamp'] if revs else None
+    if cur_ts == final_ts:
+        print("Final revision confirmed on Shinto.")
+        break
+    print(f"Still waiting... current top ts {cur_ts}")
+    time.sleep(5)
+print("Done importing full history.")
