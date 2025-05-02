@@ -1,8 +1,7 @@
 """
-everybodywiki_import_bot.py (v4)
+everybodywiki_import_bot.py (v6)
 ================================
-Imports full revision history of a page from EverybodyWiki into Shinto Wiki
-by synthesizing an XML export and using the import API to preserve timestamps.
+Imports full revision history of a page from EverybodyWiki into Shinto Wiki, plus snapshot metadata from the Edithistory page.
 
 Configure PAGE_TITLE and credentials, then run:
   python everybodywiki_import_bot.py
@@ -10,37 +9,35 @@ Configure PAGE_TITLE and credentials, then run:
 
 import sys
 import time
+import re
 import requests
 import mwclient
-from mwclient.errors import APIError
 from xml.sax.saxutils import escape
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
-EWWIKI_API   = 'https://en.everybodywiki.com/api.php'
-SHINTO_URL   = 'shinto.miraheze.org'
-SHINTO_PATH  = '/w/'
-API_URL      = f'https://{SHINTO_URL}{SHINTO_PATH}api.php'
-USERNAME     = 'Immanuelle'
-PASSWORD     = '[REDACTED_SECRET_1]'
-PAGE_TITLE   = 'Female_(gender)'
-THROTTLE     = 1.0  # seconds between requests
+EWWIKI_API    = 'https://en.everybodywiki.com/api.php'
+SHINTO_URL    = 'shinto.miraheze.org'
+SHINTO_PATH   = '/w/'
+API_URL       = f'https://{SHINTO_URL}{SHINTO_PATH}api.php'
+USERNAME      = 'Immanuelle'
+PASSWORD      = '[REDACTED_SECRET_1]'
+PAGE_TITLE    = 'TTT_(programme)'
+THROTTLE      = 1.0  # seconds between HTTP/API calls
+SNAPSHOT_PAGE = 'Edithistory:' + PAGE_TITLE
+SNAPSHOT_URL  = f'https://en.everybodywiki.com/{SNAPSHOT_PAGE}'
 
 # ─── LOGIN TO SHINTO ───────────────────────────────────────────────
 site = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
 site.login(USERNAME, PASSWORD)
+#print(f"Logged in to {SHINTO_URL} as {site.userinfo.get('name')}")
 
 # ─── FETCH ALL REVISIONS VIA API ────────────────────────────────────
-print(f"Fetching revisions for '{PAGE_TITLE}'...")
+print(f"Fetching actual revisions for '{PAGE_TITLE}' from EverybodyWiki...")
 revisions = []
 params = {
-    'action': 'query',
-    'format': 'json',
-    'prop': 'revisions',
-    'rvprop': 'ids|timestamp|content',
-    'rvslots': 'main',
-    'rvlimit': 'max',
-    'rvdir': 'newer',
-    'titles': PAGE_TITLE,
+    'action': 'query', 'format': 'json', 'prop': 'revisions',
+    'rvprop': 'ids|timestamp|user|comment|content', 'rvslots': 'main',
+    'rvlimit': 'max', 'rvdir': 'newer', 'titles': PAGE_TITLE
 }
 while True:
     resp = requests.get(EWWIKI_API, params=params)
@@ -50,35 +47,78 @@ while True:
     pageinfo = next(iter(pages.values()), {})
     revs = pageinfo.get('revisions', [])
     if not revs:
-        print(f"No revisions found for '{PAGE_TITLE}'. Exiting.")
+        print(f"No actual revisions found for '{PAGE_TITLE}'. Exiting.")
         sys.exit(1)
     revisions.extend(revs)
     cont = data.get('continue', {}).get('rvcontinue')
     if not cont:
         break
     params['rvcontinue'] = cont
-print(f"Total revisions fetched: {len(revisions)}")
+print(f"Total actual revisions fetched: {len(revisions)}")
 
-# ─── BUILD XML EXPORT STRING ────────────────────────────────────────
-print("Building XML for import...")
-lines = ['<?xml version="1.0"?>', '<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xml:lang="en">', f'<page>', f'  <title>{escape(PAGE_TITLE)}</title>']
+# ─── FETCH SNAPSHOT METADATA ────────────────────────────────────────
+print(f"Fetching snapshot metadata from '{SNAPSHOT_URL}'...")
+resp = requests.get(SNAPSHOT_URL, params={'action': 'raw'})
+if resp.status_code != 200:
+    print("Failed to fetch snapshot page; skipping snapshot entries.")
+    snapshots = []
+else:
+    raw = resp.text
+    pattern = re.compile(
+        r"^\|\s*(?P<id>\d+)\s*\|\|\s*(?P<ts>[^|]+?)\s*\|\|\s*(?P<user>[^|]+?)\s*\|\|\s*<nowiki>(?P<cm>.*?)</nowiki>",
+        re.MULTILINE)
+    snapshots = []
+    for m in pattern.finditer(raw):
+        snapshots.append({
+            'revid': int(m.group('id')),
+            'timestamp': m.group('ts').strip(),
+            'user': m.group('user').strip(),
+            'comment': m.group('cm').strip(),
+            'content': ''
+        })
+print(f"Total snapshot entries parsed: {len(snapshots)}")
+
+# ─── MERGE AND SORT ALL ENTRIES ─────────────────────────────────────
+print("Merging actual revisions and snapshot entries by timestamp...")
+from datetime import datetime
+entries = []
 for rev in revisions:
-    ts   = rev['timestamp']
-    rid  = rev['revid']
-    text = rev.get('slots', {}).get('main', {}).get('*', rev.get('*', ''))
-    lines.append('  <revision>')
-    lines.append(f'    <timestamp>{escape(ts)}</timestamp>')
-    lines.append(f'    <id>{rid}</id>')
-    lines.append(f'    <text xml:space="preserve">{escape(text)}</text>')
-    lines.append(f'    <contributor><username>Everybodywiki archive bot</username></contributor>')
-    lines.append('  </revision>')
-lines.append('</page>')
-lines.append('</mediawiki>')
-xml_data = '\n'.join(lines).encode('utf-8')
+    entries.append({
+        'revid': rev['revid'],
+        'timestamp': rev['timestamp'],
+        'user': rev.get('user', ''),
+        'comment': rev.get('comment', ''),
+        'content': rev.get('slots', {}).get('main', {}).get('*', rev.get('*', ''))
+    })
+for snap in snapshots:
+    entries.append(snap)
+entries.sort(key=lambda e: datetime.fromisoformat(e['timestamp'].replace('Z', '+00:00')))
+
+# ─── BUILD XML EXPORT FOR IMPORT ────────────────────────────────────
+print("Building combined XML export...")
+xml_lines = [
+    '<?xml version="1.0"?>',
+    '<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xml:lang="en">',
+    '<siteinfo/>',
+    '<page>',
+    f'  <title>{escape(PAGE_TITLE)}</title>'
+]
+for ent in entries:
+    xml_lines.append('  <revision>')
+    xml_lines.append(f'    <timestamp>{escape(ent["timestamp"])}</timestamp>')
+    xml_lines.append('    <contributor>')
+    xml_lines.append(f'      <username>{escape(ent["user"])}</username>')
+    xml_lines.append('    </contributor>')
+    xml_lines.append(f'    <comment>{escape(ent["comment"])}</comment>')
+    xml_lines.append(f'    <id>{ent["revid"]}</id>')
+    xml_lines.append(f'    <text xml:space="preserve">{escape(ent["content"])}</text>')
+    xml_lines.append('  </revision>')
+xml_lines.extend(['</page>', '</mediawiki>'])
+xml_data = '\n'.join(xml_lines).encode('utf-8')
 print(f"XML built ({len(xml_data)} bytes)")
 
 # ─── IMPORT XML INTO SHINTO ─────────────────────────────────────────
-print("Importing XML into Shinto...")
+print("Importing XML into Shinto with full history...")
 token = site.get_token('csrf')
 files = {'xml': ('export.xml', xml_data, 'text/xml')}
 data = {
@@ -88,18 +128,11 @@ data = {
     'fullhistory': '1',
     'interwikiprefix': 'en'
 }
-try:
-    res = site.connection.post(API_URL, data=data, files=files, timeout=300).json()
-    if 'error' in res:
-        err = res['error']
-        print(f"Import error: {err.get('code')} - {err.get('info')}")
-        sys.exit(1)
-    print("Import complete; history with timestamps preserved.")
-except APIError as e:
-    print(f"APIError during import: {e.code} - {e.info}")
+res = site.connection.post(API_URL, data=data, files=files, timeout=300).json()
+if 'error' in res:
+    err = res['error']
+    print(f"Import error: {err.get('code')} - {err.get('info')}")
     sys.exit(1)
-except Exception as e:
-    print(f"Unexpected error: {e}")
-    sys.exit(1)
+print("Import complete; full history and snapshots preserved.")
 
 print("Done.")
