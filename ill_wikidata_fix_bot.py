@@ -4,7 +4,8 @@ ill_wikidata_fix_bot.py
 =======================
 Replaces {{ill|…}} templates on Shinto Wiki pages with
 direct enwiki sitelinks (via Wikidata), handling numeric
-and named parameters correctly and skipping any enwiki redirects.
+and named parameters correctly (including “10=ja → 11=…”)
+and skipping any enwiki redirects.
 
 Usage:
  1. Put one page title per line in pages.txt (comment lines with #).
@@ -29,22 +30,20 @@ ILL_RE = re.compile(r"\{\{\s*ill\|(.+?)\}\}", re.DOTALL)
 
 # ─── HELPERS FOR WIKIDATA & REDIRECT CHECK ─────────────────────────
 def get_wikidata_qid(ja_title: str) -> str | None:
-    """Lookup Japanese-title → Wikidata QID."""
     resp = requests.get("https://www.wikidata.org/w/api.php", {
         "action": "wbgetentities",
         "format": "json",
         "sites":  "jawiki",
         "titles": ja_title,
     }, timeout=10)
-    data = resp.json().get("entities", {})
-    for ent in data.values():
+    ents = resp.json().get("entities", {})
+    for ent in ents.values():
         qid = ent.get("id")
         if qid and qid.startswith("Q"):
             return qid
     return None
 
 def get_enwiki_title(qid: str) -> str | None:
-    """Lookup QID → English Wikipedia title."""
     resp = requests.get("https://www.wikidata.org/w/api.php", {
         "action": "wbgetentities",
         "format": "json",
@@ -54,10 +53,9 @@ def get_enwiki_title(qid: str) -> str | None:
     }, timeout=10)
     ent = resp.json().get("entities", {}).get(qid, {})
     sl = ent.get("sitelinks", {}).get("enwiki")
-    return sl.get("title") if sl else None
+    return sl and sl.get("title")
 
 def enwiki_is_redirect(title: str) -> bool:
-    """Check if an enwiki title is a redirect."""
     resp = requests.get("https://en.wikipedia.org/w/api.php", {
         "action": "query",
         "format": "json",
@@ -69,68 +67,50 @@ def enwiki_is_redirect(title: str) -> bool:
     return "redirect" in pg
 
 # ─── PARAMETER PARSING ─────────────────────────────────────────────
-def parse_ill_params(inner: str) -> tuple[dict[int,str], dict[str,str], list[str]]:
-    """
-    From the content of {{ill|…}} (inner), return:
-      - num: dict of numeric index → value
-      - named: dict of named param → value (e.g. lt, qq, etc.)
-      - order: list of raw parts in original order
-    Numeric overrides: any "3=foo" wins over bare positional at #3.
-    """
+def parse_ill_params(inner: str):
     parts = [p.strip() for p in inner.split("|")]
     num   = {}
     named = {}
-    # first, collect named and numeric assignments
+    # 1) collect all explicit assignments
     for p in parts:
         if "=" in p:
-            key, val = p.split("=", 1)
-            key = key.strip()
-            val = val.strip()
+            key, val = p.split("=",1)
+            key = key.strip(); val = val.strip()
             if key.isdigit():
                 num[int(key)] = val
             else:
-                named[key] = val
-    # then assign bare positional into next available numeric slots
-    next_idx = 1
+                named[key]    = val
+    # 2) feed bare positional into next free numeric slots
+    idx = 1
     for p in parts:
         if "=" in p:
             continue
-        # bare positional
-        while next_idx in num:
-            next_idx += 1
-        num[next_idx] = p
-        next_idx += 1
+        while idx in num:
+            idx += 1
+        num[idx] = p
+        idx += 1
     return num, named, parts
 
-def choose_label(num: dict[int,str], named: dict[str,str]) -> str:
-    """
-    Decide the link label:
-      1. named['lt'] if present
-      2. else numeric[1], if present
-      3. else fallback to empty string
-    """
+def choose_label(num, named):
     if "lt" in named and named["lt"].strip():
         return named["lt"].strip()
     return num.get(1, "").strip()
 
-def find_jawiki_title(num: dict[int,str], named: dict[str,str], parts: list[str]) -> str | None:
-    """
-    Find the Japanese title:
-      - if named['ja'] exists, use that
-      - else find each bare "ja" in parts, take its next bare or named value
-      - return the last one found
-    """
+def find_jawiki_title(num, named, parts):
+    # 1) named `ja=…` wins
     if "ja" in named and named["ja"].strip():
         return named["ja"].strip()
 
     jawikis = []
+    # 2) numeric slot whose value == 'ja' → next slot
+    for n in sorted(num):
+        if num[n] == "ja" and (n+1) in num and num[n+1].strip():
+            jawikis.append(num[n+1].strip())
+
+    # 3) fallback: bare 'ja' in parts → next part
     for i,p in enumerate(parts):
-        if p == "ja":
-            # next part if exists and not a numeric slot, take its raw text
-            if i+1 < len(parts):
-                jawikis.append(parts[i+1].strip())
-        elif p.startswith("ja="):
-            jawikis.append(p.split("=",1)[1].strip())
+        if p == "ja" and i+1 < len(parts):
+            jawikis.append(parts[i+1].strip())
 
     return jawikis[-1] if jawikis else None
 
@@ -141,34 +121,33 @@ def repl(match):
     num, named, parts = parse_ill_params(inner)
 
     print(f"  ▶ Found {{ill|…}}: {raw}")
-
-    ja_title = find_jawiki_title(num, named, parts)
-    if not ja_title:
-        print("    ! No ja= found; skipping")
+    ja = find_jawiki_title(num, named, parts)
+    if not ja:
+        print("    ! no ja= found; skipping")
         return raw
-    print(f"    → ja: {ja_title}")
+    print(f"    → ja: {ja}")
 
-    qid = get_wikidata_qid(ja_title)
+    qid = get_wikidata_qid(ja)
     if not qid:
-        print("    ! No Wikidata QID; skipping")
+        print("    ! no QID; skipping")
         return raw
     print(f"    → QID: {qid}")
 
-    en_title = get_enwiki_title(qid)
-    if not en_title:
-        print("    ! No enwiki sitelink; skipping")
+    en = get_enwiki_title(qid)
+    if not en:
+        print("    ! no enwiki link; skipping")
         return raw
-    if enwiki_is_redirect(en_title):
-        print(f"    ! enwiki:{en_title} is a redirect; skipping")
+    if enwiki_is_redirect(en):
+        print(f"    ! enwiki:{en} is a redirect; skipping")
         return raw
-    print(f"    → en: {en_title}")
+    print(f"    → en: {en}")
 
     label = choose_label(num, named)
     if not label:
-        print("    ! No label (lt or numeric[1]); skipping")
+        print("    ! no label; skipping")
         return raw
 
-    replacement = f"[[:en:{en_title}|{label}]]"
+    replacement = f"[[:en:{en}|{label}]]"
     print(f"    ✓ Replacing with {replacement}")
     return replacement
 
@@ -179,8 +158,7 @@ def load_pages():
         print(f"Created empty {PAGES_FILE}. Fill it and re-run.")
         sys.exit(0)
     with open(PAGES_FILE, encoding="utf-8") as fh:
-        return [ln.strip() for ln in fh
-                if ln.strip() and not ln.startswith("#")]
+        return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
 
 def main():
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
@@ -190,7 +168,6 @@ def main():
     pages = load_pages()
     for idx, title in enumerate(pages, 1):
         print(f"{idx}/{len(pages)}: [[{title}]]")
-
         page = site.pages[title]
         if page.redirect:
             print("  ↳ Redirect; skipping\n")
@@ -202,12 +179,12 @@ def main():
         if new != text:
             try:
                 page.save(new,
-                          summary="Bot: replace {{ill}} with enwiki links via Wikidata")
+                          summary="Bot: replace {{ill}} with enwiki link via Wikidata")
                 print("  → Page saved.\n")
             except APIError as e:
                 print(f"  ! Save failed: {e}\n")
         else:
-            print("  (no changes)\n")
+            print("  (no change)\n")
 
         time.sleep(THROTTLE)
 
