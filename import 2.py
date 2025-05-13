@@ -22,7 +22,7 @@ SHINTO_PATH  = '/w/'
 API_URL      = f'https://{SHINTO_URL}{SHINTO_PATH}api.php'
 USERNAME     = 'Immanuelle'
 PASSWORD     = '[REDACTED_SECRET_1]'
-PAGE_TITLE   = 'Female_(gender)'
+PAGE_TITLE   = 'Superstitions_in_Christian_societies'
 THROTTLE     = 1.0  # seconds between requests
 
 # ─── LOGIN TO SHINTO ───────────────────────────────────────────────

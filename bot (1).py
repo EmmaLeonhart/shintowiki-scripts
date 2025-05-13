@@ -126,23 +126,11 @@ def has_backlinks(page):
 # ─── REDIRECT CLEANUP ──────────────────────────────────────
 
 def delete_orphan_redirect(page) -> bool:
-    """Delete orphan redirects even when the API flag isn’t set."""
-    try:
-        txt = page.text()
-    except Exception:
+    if not page.redirect:
         return False
-
-    # detect redirect either via the API **or** raw "#redirect"
-    is_redirect = page.redirect or txt.lstrip().lower().startswith('#redirect')
-    if not is_redirect:
-        return False
-
-    # if it still has backlinks, keep it
     if has_backlinks(page):
         print(f"   ↳ [[{page.name}]] has backlinks – kept")
         return False
-
-    # otherwise delete the orphan
     try:
         page.delete(reason='Bot: orphan redirect', watch=False)
         print(f"   • deleted orphan redirect [[{page.name}]]")
@@ -150,7 +138,6 @@ def delete_orphan_redirect(page) -> bool:
     except Exception as e:
         print(f"   ! cannot delete [[{page.name}]] – {e}")
         return False
-
 
 # ─── MAINSPACE REFORMAT ─────────────────────────────────────
 
@@ -299,7 +286,7 @@ def process_page(page):
         return  # redirect cleaned; nothing more to do
 
     
-    return #the category reformatting is not helpful, deprecating it
+
 
     original = page.text()
     new      = handle_ill_templates(original, page.name)
@@ -408,9 +395,7 @@ def main():
 
     # —— Phase 1 – full mainspace sweep ————————————————
     print("—— Mainspace sweep ————————————————————————————")
-    #Civil aviation in China
-    #Simran (Sanskrit word)
-    for idx, page in enumerate(site.allpages(namespace=0, start=''), 1):
+    for idx, page in enumerate(site.allpages(namespace=0, start='Jichou'), 1):
         print(f"{idx} [[{page.name}]]")
         process_page(page)
         time.sleep(1)
