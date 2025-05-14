@@ -104,7 +104,7 @@ def main():
         targets = pages
         total = len(pages)
     else:
-        targets = (p.name for p in site.allpages(namespace=0, start="as"))
+        targets = (p.name for p in site.allpages(namespace=0, start="tl "))
         total = "all mainspace"
     print(f"Processing {total} pages…")
     for idx, title in enumerate(targets, start=1):
