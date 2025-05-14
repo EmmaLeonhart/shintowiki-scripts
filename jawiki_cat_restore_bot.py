@@ -7,13 +7,19 @@ For each English page in pages.txt:
  1. Grab the first [[ja:…]] interwiki link.
  2. Fetch all [[Category:…]] on that JA page.
  3. For each JA category:
-    • If a matching local English category exists, add the English page to it.
+    • If Wikidata has an English sitelink:
+       – Ensure local Category:<EnglishName> exists.
+       – Tag it exactly [[Category:Categories created from enwiki title]]
+         if we created it now, or
+                [[Category:Existing categories confirmed with Wikidata]]
+         if it already existed.
     • Otherwise:
-       – Create Category:<JapaneseName> locally.
-       – Tag it with [[Category:Categories generated automatically from jawiki]].
-       – Add all other sitelinks from Wikidata as interwikis.
-       – Leave an explanatory note.
-       – Then add that new category to the English page.
+       – Ensure local Category:<JapaneseName> exists.
+       – Tag it exactly [[Category:Categories created from jawiki title]].
+    • In all cases:
+       – Add the other sitelinks (JA + any others from Wikidata).
+       – At the bottom leave a one-line note pointing back to the source.
+    • Finally, add that category to the English page.
 """
 
 import os, sys, time, urllib.parse
@@ -30,13 +36,17 @@ JA_PATH    = "/w/"
 USERNAME   = "Immanuelle"
 PASSWORD   = "[REDACTED_SECRET_1]"
 THROTTLE   = 0.5  # seconds between API calls
-GEN_CAT    = "Categories generated automatically from jawiki"
 WD_API     = "https://www.wikidata.org/w/api.php"
+
+# the three status‐categories
+EXISTING_CAT = "Existing categories confirmed with Wikidata"
+EN_CREATED  = "Categories created from enwiki title"
+JA_CREATED  = "Categories created from jawiki title"
 
 # ─── LOGIN ──────────────────────────────────────────────────────────
 shinto = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
 shinto.login(USERNAME, PASSWORD)
-ja     = mwclient.Site(JA_URL, path=JA_PATH)  # read-only
+ja     = mwclient.Site(JA_URL, path=JA_PATH)  # read-only mirror
 
 def load_pages(path):
     if not os.path.exists(path):
@@ -46,100 +56,97 @@ def load_pages(path):
         return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
 
 def get_first_ja_link(text):
-    """Return the page title from the first [[ja:…]] link, or None."""
     import re
     m = re.search(r"\[\[\s*ja:([^|\]]+)", text, re.IGNORECASE)
-    if not m:
-        return None
-    title = m.group(1).strip()
-    return urllib.parse.unquote(title).replace("_"," ")
+    return urllib.parse.unquote(m.group(1)).replace("_"," ") if m else None
 
 def fetch_ja_categories(title):
-    """Return the list of categories (without 'Category:' prefix) on JA page."""
     resp = ja.api(
-        action="query",
-        format="json",
-        prop="categories",
-        titles=title,
+        action="query", format="json",
+        prop="categories", titles=title,
         cllimit="max"
     )
-    pages = resp["query"]["pages"]
-    page  = next(iter(pages.values()))
-    return [c["title"].split(":",1)[1] for c in page.get("categories",[])]
+    pg = next(iter(resp["query"]["pages"].values()))
+    return [c["title"].split(":",1)[1] for c in pg.get("categories",[])]
 
-def get_wd_sitelinks_for_ja_category(ja_cat):
-    """
-    1) Query pageprops on JA wiki to get the wikibase_item.
-    2) Query WD for its sitelinks.
-    """
-    # 1) get the entity ID
+def lookup_wd_item_for_cat(ja_cat):
     resp = ja.api(
-        action="query",
-        format="json",
-        prop="pageprops",
-        titles=f"Category:{ja_cat}",
+        action="query", format="json",
+        prop="pageprops", titles=f"Category:{ja_cat}",
         ppprop="wikibase_item"
     )
-    pp = next(iter(resp["query"]["pages"].values())).get("pageprops",{})
-    qid = pp.get("wikibase_item")
-    if not qid:
-        return {}
-    # 2) fetch sitelinks from WD
+    props = next(iter(resp["query"]["pages"].values())).get("pageprops",{})
+    return props.get("wikibase_item")
+
+def get_wd_sitelinks(qid):
     r = requests.get(WD_API, params={
-        "action": "wbgetentities",
-        "ids": qid,
-        "props": "sitelinks",
-        "format": "json"
+        "action":"wbgetentities","ids":qid,
+        "props":"sitelinks","format":"json"
     }, timeout=30).json()
-    entity = r["entities"].get(qid, {})
-    return entity.get("sitelinks", {})
+    return r.get("entities",{}).get(qid,{}).get("sitelinks",{})
 
-def local_category_exists(name):
-    return shinto.pages[f"Category:{name}"].exists
+def ensure_local_category(cat_name, ja_cat, eng_page, via_en):
+    """
+    Ensure Category:cat_name exists locally.
+    Tag it with exactly one of EXISTING_CAT, EN_CREATED or JA_CREATED.
+    Return the full local page name 'Category:cat_name'.
+    """
+    full = f"Category:{cat_name}"
+    pg   = shinto.pages[full]
+    existed = pg.exists
 
-def create_ja_category(ja_cat, eng_page):
-    """Create Category:ja_cat with boilerplate + interwikis."""
-    title = f"Category:{ja_cat}"
-    page  = shinto.pages[title]
-    if page.exists:
-        return
-    sl = get_wd_sitelinks_for_ja_category(ja_cat)
+    # build interwiki + note
     lines = []
-    lines.append(f"[[Category:{GEN_CAT}]]")
-    lines.append(f"[[ja:Category:{ja_cat}]]")
-    # all other languages
-    for code, info in sl.items():
-        if not code.endswith("wiki") or code=="jawiki":
-            continue
-        prefix = code[:-4]
-        tgt    = info["title"]
-        # strip redundant 'Category:' if present
-        if tgt.startswith("Category:"):
-            tgt = tgt.split(":",1)[1]
-        lines.append(f"[[{prefix}:Category:{tgt}]]")
-    lines.append("")
-    lines.append(f"This category was automatically created for the Jawiki link [[ja:Category:{ja_cat}]] on page [[{eng_page}]].")
-    lines.append("Please move/rename it to its English name in the future.")
-    text = "\n".join(lines) + "\n"
-    try:
-        page.save(text, summary="Bot: auto-create jawiki category")
-        print(f"    • Created [[Category:{ja_cat}]]")
-    except APIError as e:
-        print(f"    ! FAILED to create Category:{ja_cat}: {e.code}")
+    # pick the correct tag
+    if existed:
+        tag = EXISTING_CAT
+    else:
+        tag = EN_CREATED if via_en else JA_CREATED
+    lines.append(f"[[Category:{tag}]]")
 
-def add_category_to_eng_page(eng_page, cat_name):
-    """Append [[Category:cat_name]] to the English page if missing."""
-    page = shinto.pages[eng_page]
-    txt  = page.text()
-    marker = f"[[Category:{cat_name}]]"
-    if marker in txt:
-        return
-    new = txt.rstrip() + "\n" + marker + "\n"
+    # always link back to jawiki
+    lines.append(f"[[ja:Category:{ja_cat}]]")
+
+    # add all other sitelinks from Wikidata if available
+    qid = lookup_wd_item_for_cat(ja_cat)
+    if qid:
+        for code, info in get_wd_sitelinks(qid).items():
+            if code=="jawiki": continue
+            if not code.endswith("wiki"): continue
+            prefix = code[:-4]
+            tgt    = info["title"].split(":",1)[-1]
+            lines.append(f"[[{prefix}:Category:{tgt}]]")
+
+    # explanatory footer
+    lines.append("")
+    lines.append(
+        f"This category was {'created from' if not existed else 'confirmed via'} "
+        f"{'enwiki sitelink' if via_en else 'jawiki link'} [[ja:Category:{ja_cat}]] "
+        f"found on [[{eng_page}]]."
+    )
+    body = "\n".join(lines) + "\n"
+
+    # save or update
     try:
-        page.save(new, summary=f"Bot: add category {cat_name}")
-        print(f"    • Tagged [[{eng_page}]] → {cat_name}")
+        pg.save(body, summary="Bot: sync category from jawiki↔Wikidata")
+        action = "Updated" if existed else "Created"
+        print(f"    • {action} {full} (tagged {tag})")
     except APIError as e:
-        print(f"    ! FAILED tagging [[{eng_page}]]: {e.code}")
+        print(f"    ! failed saving {full}: {e.code}")
+
+    return full
+
+def add_category_to_page(page, cat_full):
+    pg = shinto.pages[page]
+    mark = f"[[{cat_full}]]"
+    text = pg.text()
+    if mark not in text:
+        new = text.rstrip() + "\n" + mark + "\n"
+        try:
+            pg.save(new, summary=f"Bot: add category {cat_full}")
+            print(f"    • Tagged [[{page}]] → {cat_full}")
+        except APIError as e:
+            print(f"    ! failed tagging [[{page}]]: {e.code}")
 
 def main():
     pages = load_pages(PAGES_FILE)
@@ -149,42 +156,41 @@ def main():
         print(f"\n{idx}/{total}: [[{eng}]]")
         pg = shinto.pages[eng]
         if not pg.exists:
-            print("  ! page missing; skipping")
+            print("  ! missing; skip")
             continue
 
         ja_link = get_first_ja_link(pg.text())
         if not ja_link:
-            print("  ! no [[ja:…]] link; skipping")
+            print("  ! no [[ja:…]]; skip")
             continue
         print(f"    → jawiki: {ja_link}")
 
         try:
             cats = fetch_ja_categories(ja_link)
         except Exception as e:
-            print(f"    ! could not fetch JA cats: {e}")
+            print(f"    ! failed fetch JA cats: {e}")
             continue
 
-        print(f"    → {len(cats)} JA categories found")
+        print(f"    → {len(cats)} categories")
         for ja_cat in cats:
-            # 1) see if WD gives an English sitelink
-            sl = get_wd_sitelinks_for_ja_category(ja_cat)
-            en_info = sl.get("enwiki")
-            if en_info:
-                eng_cat = en_info["title"].split(":",1)[-1]
-                # if a local Category:EngCat exists, just add
-                if local_category_exists(eng_cat):
-                    print(f"    ↳ existing local Category:{eng_cat}")
-                    add_category_to_eng_page(eng, eng_cat)
-                    time.sleep(THROTTLE)
-                    continue
+            # see if Wikidata gives an English sitelink
+            qid = lookup_wd_item_for_cat(ja_cat)
+            enlink = None
+            if qid:
+                sls = get_wd_sitelinks(qid)
+                enlink = sls.get("enwiki",{}).get("title")
+            if enlink:
+                eng_cat = enlink.split(":",1)[-1]
+                print(f"    ↳ EN: {eng_cat}")
+                local = ensure_local_category(eng_cat, ja_cat, eng, via_en=True)
+            else:
+                print(f"    ↳ no EN; use JA: {ja_cat}")
+                local = ensure_local_category(ja_cat, ja_cat, eng, via_en=False)
 
-            # 2) else create the Japanese-titled category and then add
-            print(f"    ↳ creating Category:{ja_cat}")
-            create_ja_category(ja_cat, eng)
-            add_category_to_eng_page(eng, ja_cat)
+            add_category_to_page(eng, local)
             time.sleep(THROTTLE)
 
-    print("\nAll done.")
+    print("\nDone.")
 
 if __name__=="__main__":
     main()
