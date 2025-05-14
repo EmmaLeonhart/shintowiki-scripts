@@ -85,56 +85,67 @@ def get_wd_sitelinks(qid):
     }, timeout=30).json()
     return r.get("entities",{}).get(qid,{}).get("sitelinks",{})
 
-def ensure_local_category(cat_name, ja_cat, eng_page, via_en):
+def ensure_local_category(cat_name: str, ja_cat: str, eng_page: str, via_en: bool) -> str:
     """
-    Ensure Category:cat_name exists locally.
-    Tag it with exactly one of EXISTING_CAT, EN_CREATED or JA_CREATED.
-    Return the full local page name 'Category:cat_name'.
+    Ensure Category:cat_name exists locally with exactly one marker:
+      - EXISTING_CAT    if the page already existed
+      - EN_CREATED      if created via an English sitelink
+      - JA_CREATED      if created via the Ja interwiki
+
+    Never overwrite if one of those markers is already present.
+    Returns the local category title (e.g. "Category:Foo").
     """
     full = f"Category:{cat_name}"
-    pg   = shinto.pages[full]
-    existed = pg.exists
+    pg = site.pages[full]
 
-    # build interwiki + note
-    lines = []
-    # pick the correct tag
-    if existed:
-        tag = EXISTING_CAT
-    else:
+    # 1) If it already has one of our markers, skip entirely
+    text = pg.text() if pg.exists else ""
+    for marker in (EXISTING_CAT, EN_CREATED, JA_CREATED):
+        if f"[[Category:{marker}]]" in text:
+            print(f"    • already tagged ({marker}), skipping")
+            return full
+
+    existed_before = pg.exists
+
+    # 2) Choose the right marker
+    if not existed_before:
         tag = EN_CREATED if via_en else JA_CREATED
-    lines.append(f"[[Category:{tag}]]")
+    else:
+        tag = EXISTING_CAT
 
-    # always link back to jawiki
+    # 3) Build new page content
+    lines: list[str] = []
+    lines.append(f"[[Category:{tag}]]")
     lines.append(f"[[ja:Category:{ja_cat}]]")
 
-    # add all other sitelinks from Wikidata if available
-    qid = lookup_wd_item_for_cat(ja_cat)
+    # 4) Pull in any other sitelinks from Wikidata (if you have a QID lookup)
+    #    (assumes a function get_sitelinks(qid) -> dict[lang, title])
+    qid = get_qid_for_category(ja_cat)  # or however you retrieve it
     if qid:
-        for code, info in get_wd_sitelinks(qid).items():
-            if code=="jawiki": continue
-            if not code.endswith("wiki"): continue
-            prefix = code[:-4]
-            tgt    = info["title"].split(":",1)[-1]
-            lines.append(f"[[{prefix}:Category:{tgt}]]")
+        for lang, link in get_sitelinks(qid).items():
+            if lang not in ("en", "ja"):
+                lines.append(f"[[{lang}:{link}]]")
 
-    # explanatory footer
-    lines.append("")
+    lines.append("")  # blank line before footer
     lines.append(
-        f"This category was {'created from' if not existed else 'confirmed via'} "
-        f"{'enwiki sitelink' if via_en else 'jawiki link'} [[ja:Category:{ja_cat}]] "
-        f"found on [[{eng_page}]]."
+        f"This category was "
+        f"{'created from' if not existed_before else 'confirmed via'} "
+        f"{'enwiki sitelink' if via_en else 'jawiki link'} "
+        f"[[ja:Category:{ja_cat}]] on [[{eng_page}]]."
     )
+
     body = "\n".join(lines) + "\n"
 
-    # save or update
+    # 5) Save the new or updated category page
     try:
         pg.save(body, summary="Bot: sync category from jawiki↔Wikidata")
-        action = "Updated" if existed else "Created"
+        action = "Created" if not existed_before else "Updated"
         print(f"    • {action} {full} (tagged {tag})")
     except APIError as e:
         print(f"    ! failed saving {full}: {e.code}")
 
     return full
+
 
 def add_category_to_page(page, cat_full):
     pg = shinto.pages[page]
