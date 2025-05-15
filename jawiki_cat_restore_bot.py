@@ -27,7 +27,7 @@ USERNAME     = "Immanuelle"
 PASSWORD     = "[REDACTED_SECRET_1]"
 
 PAGES_FILE   = "pages.txt"
-THROTTLE     = 0.5
+THROTTLE     = 0.1
 WD_API       = "https://www.wikidata.org/w/api.php"
 
 TAG_EXISTING = "Existing categories confirmed with Wikidata"
