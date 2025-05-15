@@ -99,7 +99,7 @@ def existing_redirect_target(ja_cat: str) -> Optional[str]:
         txt = pg.text().strip()
     except Exception:
         return None
-    m = REDIRECT_RE.match(txt.lower())
+    m = REDIRECT_RE.match(txt)
     if m:
         return f"Category:{m.group(1).strip()}"
     return None
