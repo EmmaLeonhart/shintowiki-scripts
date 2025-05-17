@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
-ill_wikidata_fix_bot.py  –  FINAL-10
+ill_wikidata_fix_bot.py  –  FINAL-11
 ====================================
-Restores resolution‑page creation for *any* valid Jawiki title, regardless of
-local English‑page existence. Now:
+Fixes resolution-page creation so that a resolution page for `<ja_title>` is
+only created when **Jawiki** status == "ok" **and** the local wiki does *not*
+have a page named **exactly** `<ja_title>`. All other behaviors remain:
 
 1. Jawiki missing → `ja_comment=jawiki link invalid`
 2. Jawiki redirect → `ja_comment=jawiki redirects to <target>`
 3. Enwiki redirect → `comment=enwiki is a redirect`
 4. Otherwise → convert to `[:en:…]` link
-5. **Always** create/update resolution pages for `ja_title` when Jawiki OK.
-6. Diagnostics are added *in‑template* for all edge cases.
+5. **Resolution pages** only when Jawiki OK *and* no local `<ja_title>`
+6. Diagnostics added in-template for all edge cases.
 """
 
 import os, sys, time, re, requests, mwclient
@@ -47,8 +48,8 @@ def jawiki_status(title: str) -> Tuple[str, Optional[str]]:
     page = next(iter(data["query"]["pages"].values()))
     if "missing" in page:
         return "missing", None
-    for r in data["query"].get("redirects", []):
-        if r.get("from", "").lower() == title.lower():
+    for r in data.get("query", {}).get("redirects", []):
+        if r.get("from","").lower() == title.lower():
             return "redirect", r.get("to")
     return "ok", None
 
@@ -117,10 +118,14 @@ def find_jawiki(num, named, parts):
 # ─── Jawiki resolution pages ──────────────────────────────────────
 
 def log_resolution(site, ja_title: str, src: str, tmpl: str):
+    # only create resolution if no local page exists
     pg = site.pages[ja_title]
+    if pg.exists:
+        return
     entry = f"[[{src}]] linked to {tmpl}\n"
-    content = "" if (pg.exists and pg.redirect) else (pg.text() if pg.exists else "")
-    if entry in content: return
+    content = pg.text() if pg.exists and not pg.redirect else ""
+    if entry in content:
+        return
     content = re.sub(r"\n?\[\[Category:jawiki resolution pages\|.*?\]\]", "", content).rstrip()
     content = (content + "\n" if content else "") + entry
     cnt = content.count(" linked to ")
@@ -137,14 +142,13 @@ def make_replacer(site, page_title):
         ja = find_jawiki(num, named, parts)
         diagnostics: List[str] = []
 
-        # Jawiki diagnostics
         if ja:
             st, tgt = jawiki_status(ja)
             if st == "missing":
                 diagnostics.append("ja_comment=jawiki link invalid")
             elif st == "redirect":
                 diagnostics.append(f"ja_comment=jawiki redirects to {tgt}")
-            # Enwiki diagnostics or conversion
+            # Enwiki diagnostic or conversion
             en_t = en_title_from_jawiki(ja)
             if en_t:
                 if enwiki_is_redirect(en_t):
@@ -154,11 +158,10 @@ def make_replacer(site, page_title):
                     lbl = lbl.strip()
                     if lbl:
                         return f"[[:en:{en_t}|{lbl}]]"
-            # Always log resolution page when Jawiki OK
-            if ja and st == "ok":
+            # Jawiki resolution page (only if no local ja page)
+            if st == "ok":
                 log_resolution(site, ja, page_title, raw)
 
-        # Append diagnostics in-template
         if diagnostics:
             return "{{ill|" + "|".join(parts + diagnostics) + "}}"
         return raw
@@ -174,7 +177,7 @@ def process_page(site, title):
     new_text = ILL_RE.sub(make_replacer(site, title), text)
     if new_text != text:
         try:
-            pg.save(new_text, summary="Bot: ill fix final-10")
+            pg.save(new_text, summary="Bot: ill fix final-11")
         except APIError as e:
             print("Save failed", e)
 
@@ -183,8 +186,7 @@ def process_page(site, title):
 def main():
     if not os.path.exists(PAGES_FILE):
         sys.exit("Missing pages.txt")
-    titles = [l.strip() for l in open(PAGES_FILE, encoding="utf-8")
-              if l.strip() and not l.startswith("#")]
+    titles = [l.strip() for l in open(PAGES_FILE, encoding="utf-8") if l.strip() and not l.startswith("#")]
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
     site.login(USERNAME, PASSWORD)
     for i, t in enumerate(titles, 1):
