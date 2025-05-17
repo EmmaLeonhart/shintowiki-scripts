@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 """
-ill_wikidata_fix_bot.py  –  FINAL-11
+ill_wikidata_fix_bot.py  –  FINAL-12
 ====================================
-Fixes resolution-page creation so that a resolution page for `<ja_title>` is
-only created when **Jawiki** status == "ok" **and** the local wiki does *not*
-have a page named **exactly** `<ja_title>`. All other behaviors remain:
+Adds a debug print at the start of each `{{ill|…}}` template processing,
+so the raw template text is output before any parsing or network calls.
 
-1. Jawiki missing → `ja_comment=jawiki link invalid`
-2. Jawiki redirect → `ja_comment=jawiki redirects to <target>`
-3. Enwiki redirect → `comment=enwiki is a redirect`
-4. Otherwise → convert to `[:en:…]` link
-5. **Resolution pages** only when Jawiki OK *and* no local `<ja_title>`
-6. Diagnostics added in-template for all edge cases.
+Other behaviors (jawiki/enwiki diagnostics, resolution pages) remain unchanged.
 """
 
 import os, sys, time, re, requests, mwclient
@@ -30,7 +24,7 @@ ILL_RE     = re.compile(r"\{\{\s*ill\|(.*?)\}\}", re.I | re.DOTALL)
 API_WD     = "https://www.wikidata.org/w/api.php"
 API_JAWIKI = "https://ja.wikipedia.org/w/api.php"
 RAW_ENWIKI = "https://en.wikipedia.org/w/index.php"
-UA         = {"User-Agent": "ill-fix-bot/1.9 (User:Immanuelle)"}
+UA         = {"User-Agent": "ill-fix-bot/1.10 (User:Immanuelle)"}
 REDIR_RE   = re.compile(r"^#\s*redirect", re.I)
 
 # ─── API JSON GET ─────────────────────────────────────────────────
@@ -119,12 +113,9 @@ def find_jawiki(num, named, parts):
 
 def log_resolution(site, ja_title: str, src: str, tmpl: str):
     import urllib.parse
-    # Decode any percent-encoded title
     ja_decoded = urllib.parse.unquote(ja_title)
-    # Normalize underscores to spaces
     ja_page_title = ja_decoded.replace('_', ' ')
     pg = site.pages[ja_page_title]
-    # only create resolution if no local page exists
     if pg.exists:
         return
     entry = f"[[{src}]] linked to {tmpl}\n"
@@ -143,6 +134,7 @@ def log_resolution(site, ja_title: str, src: str, tmpl: str):
 def make_replacer(site, page_title):
     def repl(m):
         raw = m.group(0)
+        print(f"Processing ILL template: {raw}")  # debug print
         parts, num, named = split_params(m.group(1))
         ja = find_jawiki(num, named, parts)
         diagnostics: List[str] = []
@@ -153,7 +145,6 @@ def make_replacer(site, page_title):
                 diagnostics.append("ja_comment=jawiki link invalid")
             elif st == "redirect":
                 diagnostics.append(f"ja_comment=jawiki redirects to {tgt}")
-            # Enwiki diagnostic or conversion
             en_t = en_title_from_jawiki(ja)
             if en_t:
                 if enwiki_is_redirect(en_t):
@@ -163,7 +154,6 @@ def make_replacer(site, page_title):
                     lbl = lbl.strip()
                     if lbl:
                         return f"[[:en:{en_t}|{lbl}]]"
-            # Jawiki resolution page (only if no local ja page)
             if st == "ok":
                 log_resolution(site, ja, page_title, raw)
 
@@ -181,7 +171,7 @@ def process_page(site, title):
     text = pg.text()
     new_text = ILL_RE.sub(make_replacer(site, title), text)
     if new_text != text:
-        try: pg.save(new_text, summary="Bot: ill fix final-11")
+        try: pg.save(new_text, summary="Bot: ill fix final-12")
         except APIError as e: print("Save failed", e)
 
 # ─── Main loop ────────────────────────────────────────────────────
