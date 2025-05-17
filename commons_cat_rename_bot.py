@@ -1,25 +1,23 @@
 #!/usr/bin/env python3
 """
-commons_cat_rename_bot.py  (overwrite-redirect, preserve text)
+commons_cat_rename_bot.py  (overwrite target, preserve text)
 =============================================================
 
 For each canonical category listed in pages.txt:
 
-  * page must still contain [[Category:Categories created from dewiki title]]
+  * page must still contain [[Category:Categories created from jawiki title]]
   * page must contain exactly ONE [[commons:Category:...]] wikilink
 
 Steps
 -----
-1. If Category:<CommonsName> already exists **and is a redirect**, delete it.
-   If it exists and is NOT a redirect → skip (safety).
+1. If Category:<CommonsName> already exists, delete it (whether redirect or not)
 2. Move Category:<JapaneseName> → Category:<CommonsName>
    (MediaWiki will leave a redirect at the JP title).
 3. On the moved page:
-     – remove the dewiki-creation tag line
+     – remove the jawiki-creation tag line
      – append [[Category:wikimedia commons named categories]] if absent
-4. On every page that still uses the old JP category *or* any other
-   redirect pointing to the Commons category, change the link to the
-   Commons name.
+4. On every page that still uses the old JP category or any redirect
+   pointing to the Commons category, change the link to the Commons name.
 """
 
 import os, re, sys, time, urllib.parse
@@ -33,26 +31,26 @@ USERNAME   = "Immanuelle"
 PASSWORD   = "[REDACTED_SECRET_1]"
 PAGES_TXT  = "pages.txt"
 
-TAG_JA   = "Categories created from dewiki title"
-TAG_COMM = "wikimedia commons named categories from de"
-THROTTLE = 0.5  # seconds between edits/saves
+TAG_JA     = "Categories created from jawiki title"
+TAG_COMM   = "wikimedia commons named categories"
+THROTTLE   = 0.5  # seconds between edits/saves
 
 # ─── SESSION ────────────────────────────────────────────────────────
 site = mwclient.Site(SITE_URL, path=SITE_PATH)
 site.login(USERNAME, PASSWORD)
 
 # ─── REGEXES ────────────────────────────────────────────────────────
-RE_COMMONS = re.compile(r"\[\[\s*commons\s*:\s*Category\s*:([^\]|]+)", re.I)
-RE_TAG_JA  = re.compile(rf"\s*\[\[\s*Category:{re.escape(TAG_JA)}\s*\]\]\s*\n?",
-                        re.I)
+RE_COMMONS = re.compile(r"\[\[\s*commons\s*:\s*Category\s*:\s*([^\]|]+)", re.I)
+RE_TAG_JA  = re.compile(rf"\s*\[\[Category:{re.escape(TAG_JA)}\]\]\s*\n?", re.I)
 
-# ─── HELPERS ────────────────────────────────────────────────────────
+# ─── HELPERS ───────────────────────────────────────────────────────
 def load_titles():
     if not os.path.exists(PAGES_TXT):
         print("Create pages.txt first.")
         sys.exit(1)
     with open(PAGES_TXT, encoding="utf-8") as fh:
         return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
+
 
 def redirect_titles_to(target_full):
     params = {"action":"query","list":"backlinks","bltitle":target_full,
@@ -65,19 +63,20 @@ def redirect_titles_to(target_full):
             break
         params.update(data["continue"])
 
+
 def pages_in_category(cat_name):
-    for cm in site.api("query", list="categorymembers", cmtitle=f"Category:{cat_name}",
-                       cmlimit="max")["query"]["categorymembers"]:
+    for cm in site.api("query", list="categorymembers",
+                       cmtitle=f"Category:{cat_name}", cmlimit="max")["query"]["categorymembers"]:
         yield cm["title"]
+
 
 def replace_cat(title, old_cat, new_cat):
     p   = site.pages[title]
     txt = p.text()
-    pattern = re.compile(rf"\[\[\s*Category:{re.escape(old_cat)}([^\]]*)\]\]",
-                         re.I)
+    pattern = re.compile(rf"\[\[\s*Category:{re.escape(old_cat)}([^\]]*)\]\]", re.I)
     if not pattern.search(txt):
         return
-    new = pattern.sub(f"[[Category:{new_cat}\\1]]", txt)
+    new = pattern.sub(f"[[Category:{new_cat}\1]]", txt)
     if new == txt:
         return
     try:
@@ -96,7 +95,7 @@ def process(canon_cat):
 
     text = page.text()
     if TAG_JA.lower() not in text.lower():
-        print("  • no dewiki-creation tag – skipped")
+        print("  • no jawiki-creation tag – skipped")
         return
 
     commons_links = list(dict.fromkeys(RE_COMMONS.findall(text)))
@@ -107,19 +106,16 @@ def process(canon_cat):
     if commons_cat == canon_cat:
         print("  • already matches Commons name – nothing to do")
         return
-    commons_full = f"Category:{commons_cat}"
+    commons_full = f"Category:{commons_cat}"  
     target_page  = site.pages[commons_full]
 
-    # -- if target exists and is redirect, delete it ----------------
+    # -- delete existing target (redirect or not) ----------------
     if target_page.exists:
-        if not target_page.redirect:
-            print("  ! target exists & not a redirect – skipped")
-            return
         try:
             target_page.delete(reason="Bot: overwrite with proper category", watch=False)
-            print("    • deleted existing redirect at target")
+            print("    • deleted existing target category page")
         except APIError as e:
-            print(f"  ! cannot delete redirect at target: {e.code}")
+            print(f"  ! cannot delete existing target: {e.code}")
             return
 
     # -- move --------------------------------------------------------

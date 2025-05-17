@@ -49,7 +49,7 @@ def jawiki_status(title: str) -> Tuple[str, Optional[str]]:
     if "missing" in page:
         return "missing", None
     for r in data.get("query", {}).get("redirects", []):
-        if r.get("from","").lower() == title.lower():
+        if r.get("from"," ").lower() == title.lower():
             return "redirect", r.get("to")
     return "ok", None
 
@@ -119,13 +119,12 @@ def find_jawiki(num, named, parts):
 
 def log_resolution(site, ja_title: str, src: str, tmpl: str):
     import urllib.parse
-    # Decode any percent-encoding in the title
+    # Decode any percent-encoded title
     ja_decoded = urllib.parse.unquote(ja_title)
     # Normalize underscores to spaces
     ja_page_title = ja_decoded.replace('_', ' ')
     pg = site.pages[ja_page_title]
     # only create resolution if no local page exists
-    pg = site.pages[ja_title]
     if pg.exists:
         return
     entry = f"[[{src}]] linked to {tmpl}\n"
@@ -182,16 +181,13 @@ def process_page(site, title):
     text = pg.text()
     new_text = ILL_RE.sub(make_replacer(site, title), text)
     if new_text != text:
-        try:
-            pg.save(new_text, summary="Bot: ill fix final-11")
-        except APIError as e:
-            print("Save failed", e)
+        try: pg.save(new_text, summary="Bot: ill fix final-11")
+        except APIError as e: print("Save failed", e)
 
 # ─── Main loop ────────────────────────────────────────────────────
 
 def main():
-    if not os.path.exists(PAGES_FILE):
-        sys.exit("Missing pages.txt")
+    if not os.path.exists(PAGES_FILE): sys.exit("Missing pages.txt")
     titles = [l.strip() for l in open(PAGES_FILE, encoding="utf-8") if l.strip() and not l.startswith("#")]
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
     site.login(USERNAME, PASSWORD)
