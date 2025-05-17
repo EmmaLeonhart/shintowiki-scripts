@@ -118,6 +118,12 @@ def find_jawiki(num, named, parts):
 # ─── Jawiki resolution pages ──────────────────────────────────────
 
 def log_resolution(site, ja_title: str, src: str, tmpl: str):
+    import urllib.parse
+    # Decode any percent-encoding in the title
+    ja_decoded = urllib.parse.unquote(ja_title)
+    # Normalize underscores to spaces
+    ja_page_title = ja_decoded.replace('_', ' ')
+    pg = site.pages[ja_page_title]
     # only create resolution if no local page exists
     pg = site.pages[ja_title]
     if pg.exists:
