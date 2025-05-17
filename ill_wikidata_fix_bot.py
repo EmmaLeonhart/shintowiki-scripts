@@ -1,194 +1,197 @@
 #!/usr/bin/env python3
 """
-ill_wikidata_fix_bot.py
-=======================
-Replaces {{ill|…}} templates on Shinto Wiki pages with
-direct enwiki sitelinks (via Wikidata), handling numeric
-and named parameters correctly (including “10=ja → 11=…”)
-and skipping any enwiki redirects.
+ill_wikidata_fix_bot.py  –  FINAL-10
+====================================
+Restores resolution‑page creation for *any* valid Jawiki title, regardless of
+local English‑page existence. Now:
 
-Usage:
- 1. Put one page title per line in pages.txt (comment lines with #).
- 2. Configure USERNAME/PASSWORD below.
- 3. Run: python ill_wikidata_fix_bot.py
+1. Jawiki missing → `ja_comment=jawiki link invalid`
+2. Jawiki redirect → `ja_comment=jawiki redirects to <target>`
+3. Enwiki redirect → `comment=enwiki is a redirect`
+4. Otherwise → convert to `[:en:…]` link
+5. **Always** create/update resolution pages for `ja_title` when Jawiki OK.
+6. Diagnostics are added *in‑template* for all edge cases.
 """
 
-import os, sys, time, re
-import requests
-import mwclient
+import os, sys, time, re, requests, mwclient
+from typing import Dict, List, Tuple, Optional
 from mwclient.errors import APIError
 
-# ─── CONFIG ─────────────────────────────────────────────────────────
+# ─── CONFIG ────────────────────────────────────────────────────────
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"
 PASSWORD   = "[REDACTED_SECRET_1]"
 PAGES_FILE = "pages.txt"
-THROTTLE   = 1.0  # seconds between page edits
+THROTTLE   = 1.0  # seconds between edits
 
-ILL_RE = re.compile(r"\{\{\s*ill\|(.+?)\}\}", re.DOTALL)
+ILL_RE     = re.compile(r"\{\{\s*ill\|(.*?)\}\}", re.I | re.DOTALL)
+API_WD     = "https://www.wikidata.org/w/api.php"
+API_JAWIKI = "https://ja.wikipedia.org/w/api.php"
+RAW_ENWIKI = "https://en.wikipedia.org/w/index.php"
+UA         = {"User-Agent": "ill-fix-bot/1.9 (User:Immanuelle)"}
+REDIR_RE   = re.compile(r"^#\s*redirect", re.I)
 
-# ─── HELPERS FOR WIKIDATA & REDIRECT CHECK ─────────────────────────
-def get_wikidata_qid(ja_title: str) -> str | None:
-    resp = requests.get("https://www.wikidata.org/w/api.php", {
-        "action": "wbgetentities",
-        "format": "json",
-        "sites":  "jawiki",
-        "titles": ja_title,
-    }, timeout=10)
-    ents = resp.json().get("entities", {})
-    for ent in ents.values():
-        qid = ent.get("id")
-        if qid and qid.startswith("Q"):
-            return qid
-    return None
+# ─── API JSON GET ─────────────────────────────────────────────────
 
-def get_enwiki_title(qid: str) -> str | None:
-    resp = requests.get("https://www.wikidata.org/w/api.php", {
-        "action": "wbgetentities",
-        "format": "json",
-        "ids":    qid,
-        "props":  "sitelinks",
-        "sitefilter": "enwiki",
-    }, timeout=10)
-    ent = resp.json().get("entities", {}).get(qid, {})
-    sl = ent.get("sitelinks", {}).get("enwiki")
-    return sl and sl.get("title")
+def api_json(url: str, params: Dict) -> Dict:
+    params["format"] = "json"
+    r = requests.get(url, params=params, headers=UA, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+# ─── Jawiki status ─────────────────────────────────────────────────
+
+def jawiki_status(title: str) -> Tuple[str, Optional[str]]:
+    data = api_json(API_JAWIKI, {"action": "query", "titles": title, "redirects": 1})
+    page = next(iter(data["query"]["pages"].values()))
+    if "missing" in page:
+        return "missing", None
+    for r in data["query"].get("redirects", []):
+        if r.get("from", "").lower() == title.lower():
+            return "redirect", r.get("to")
+    return "ok", None
+
+# ─── Enwiki redirect detection ─────────────────────────────────────
 
 def enwiki_is_redirect(title: str) -> bool:
-    resp = requests.get("https://en.wikipedia.org/w/api.php", {
-        "action": "query",
-        "format": "json",
-        "titles": title,
-        "prop":   "info",
-    }, timeout=10)
-    pages = resp.json().get("query", {}).get("pages", {})
-    pg = next(iter(pages.values()), {})
-    return "redirect" in pg
+    norm = title.replace(" ", "_")
+    try:
+        r = requests.get(
+            RAW_ENWIKI,
+            params={"action": "raw", "title": norm, "redirect": "no"},
+            headers=UA, timeout=15
+        )
+        r.raise_for_status()
+        for ln in r.text.splitlines():
+            line = ln.strip()
+            if not line:
+                continue
+            return bool(REDIR_RE.match(line))
+        return False
+    except Exception:
+        return True
 
-# ─── PARAMETER PARSING ─────────────────────────────────────────────
-def parse_ill_params(inner: str):
+# ─── Fetch en title via Wikidata ───────────────────────────────────
+
+def en_title_from_jawiki(title: str) -> Optional[str]:
+    data = api_json(API_WD, {
+        "action": "wbgetentities", "sites": "jawiki", "titles": title,
+        "props": "sitelinks", "sitefilter": "enwiki"
+    })
+    for ent in data.get("entities", {}).values():
+        sl = ent.get("sitelinks", {}).get("enwiki")
+        if sl:
+            return sl.get("title")
+    return None
+
+# ─── Template parsing ──────────────────────────────────────────────
+
+def split_params(inner: str):
     parts = [p.strip() for p in inner.split("|")]
-    num   = {}
-    named = {}
-    # 1) collect all explicit assignments
+    num, named = {}, {}
     for p in parts:
         if "=" in p:
-            key, val = p.split("=",1)
-            key = key.strip(); val = val.strip()
-            if key.isdigit():
-                num[int(key)] = val
-            else:
-                named[key]    = val
-    # 2) feed bare positional into next free numeric slots
+            k, v = p.split("=", 1)
+            if k.isdigit(): num[int(k)] = v.strip()
+            else: named[k.strip()] = v.strip()
     idx = 1
     for p in parts:
-        if "=" in p:
-            continue
-        while idx in num:
-            idx += 1
-        num[idx] = p
-        idx += 1
-    return num, named, parts
+        if "=" in p: continue
+        while idx in num: idx += 1
+        num[idx] = p; idx += 1
+    return parts, num, named
 
-def choose_label(num, named):
-    if "lt" in named and named["lt"].strip():
-        return named["lt"].strip()
-    return num.get(1, "").strip()
 
-def find_jawiki_title(num, named, parts):
-    # 1) named `ja=…` wins
-    if "ja" in named and named["ja"].strip():
+def find_jawiki(num, named, parts):
+    if named.get("ja"):
         return named["ja"].strip()
-
-    jawikis = []
-    # 2) numeric slot whose value == 'ja' → next slot
     for n in sorted(num):
-        if num[n] == "ja" and (n+1) in num and num[n+1].strip():
-            jawikis.append(num[n+1].strip())
-
-    # 3) fallback: bare 'ja' in parts → next part
-    for i,p in enumerate(parts):
+        if num[n] == "ja" and num.get(n+1, "").strip():
+            return num[n+1].strip()
+    for i, p in enumerate(parts):
         if p == "ja" and i+1 < len(parts):
-            jawikis.append(parts[i+1].strip())
+            return parts[i+1].strip()
+    return None
 
-    return jawikis[-1] if jawikis else None
+# ─── Jawiki resolution pages ──────────────────────────────────────
 
-# ─── TEMPLATE REPLACEMENT ──────────────────────────────────────────
-def repl(match):
-    raw   = match.group(0)
-    inner = match.group(1)
-    num, named, parts = parse_ill_params(inner)
+def log_resolution(site, ja_title: str, src: str, tmpl: str):
+    pg = site.pages[ja_title]
+    entry = f"[[{src}]] linked to {tmpl}\n"
+    content = "" if (pg.exists and pg.redirect) else (pg.text() if pg.exists else "")
+    if entry in content: return
+    content = re.sub(r"\n?\[\[Category:jawiki resolution pages\|.*?\]\]", "", content).rstrip()
+    content = (content + "\n" if content else "") + entry
+    cnt = content.count(" linked to ")
+    content += f"\n[[Category:jawiki resolution pages|{cnt}]]\n"
+    try: pg.save(content, summary=f"Bot: add link reference from {src}")
+    except APIError: pass
 
-    print(f"  ▶ Found {{ill|…}}: {raw}")
-    ja = find_jawiki_title(num, named, parts)
-    if not ja:
-        print("    ! no ja= found; skipping")
+# ─── Template replacer ─────────────────────────────────────────────
+
+def make_replacer(site, page_title):
+    def repl(m):
+        raw = m.group(0)
+        parts, num, named = split_params(m.group(1))
+        ja = find_jawiki(num, named, parts)
+        diagnostics: List[str] = []
+
+        # Jawiki diagnostics
+        if ja:
+            st, tgt = jawiki_status(ja)
+            if st == "missing":
+                diagnostics.append("ja_comment=jawiki link invalid")
+            elif st == "redirect":
+                diagnostics.append(f"ja_comment=jawiki redirects to {tgt}")
+            # Enwiki diagnostics or conversion
+            en_t = en_title_from_jawiki(ja)
+            if en_t:
+                if enwiki_is_redirect(en_t):
+                    diagnostics.append("comment=enwiki is a redirect")
+                else:
+                    lbl = named.get("lt", "") or num.get(1, "")
+                    lbl = lbl.strip()
+                    if lbl:
+                        return f"[[:en:{en_t}|{lbl}]]"
+            # Always log resolution page when Jawiki OK
+            if ja and st == "ok":
+                log_resolution(site, ja, page_title, raw)
+
+        # Append diagnostics in-template
+        if diagnostics:
+            return "{{ill|" + "|".join(parts + diagnostics) + "}}"
         return raw
-    print(f"    → ja: {ja}")
+    return repl
 
-    qid = get_wikidata_qid(ja)
-    if not qid:
-        print("    ! no QID; skipping")
-        return raw
-    print(f"    → QID: {qid}")
+# ─── Page handler ─────────────────────────────────────────────────
 
-    en = get_enwiki_title(qid)
-    if not en:
-        print("    ! no enwiki link; skipping")
-        return raw
-    if enwiki_is_redirect(en):
-        print(f"    ! enwiki:{en} is a redirect; skipping")
-        return raw
-    print(f"    → en: {en}")
+def process_page(site, title):
+    pg = site.pages[title]
+    if not pg.exists or pg.redirect:
+        return
+    text = pg.text()
+    new_text = ILL_RE.sub(make_replacer(site, title), text)
+    if new_text != text:
+        try:
+            pg.save(new_text, summary="Bot: ill fix final-10")
+        except APIError as e:
+            print("Save failed", e)
 
-    label = choose_label(num, named)
-    if not label:
-        print("    ! no label; skipping")
-        return raw
-
-    replacement = f"[[:en:{en}|{label}]]"
-    print(f"    ✓ Replacing with {replacement}")
-    return replacement
-
-# ─── MAIN LOOP ────────────────────────────────────────────────────
-def load_pages():
-    if not os.path.exists(PAGES_FILE):
-        open(PAGES_FILE, "w", encoding="utf-8").close()
-        print(f"Created empty {PAGES_FILE}. Fill it and re-run.")
-        sys.exit(0)
-    with open(PAGES_FILE, encoding="utf-8") as fh:
-        return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
+# ─── Main loop ────────────────────────────────────────────────────
 
 def main():
+    if not os.path.exists(PAGES_FILE):
+        sys.exit("Missing pages.txt")
+    titles = [l.strip() for l in open(PAGES_FILE, encoding="utf-8")
+              if l.strip() and not l.startswith("#")]
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
     site.login(USERNAME, PASSWORD)
-    print(f"Logged in as {USERNAME}\n")
-
-    pages = load_pages()
-    for idx, title in enumerate(pages, 1):
-        print(f"{idx}/{len(pages)}: [[{title}]]")
-        page = site.pages[title]
-        if page.redirect:
-            print("  ↳ Redirect; skipping\n")
-            continue
-
-        text = page.text()
-        new  = ILL_RE.sub(repl, text)
-
-        if new != text:
-            try:
-                page.save(new,
-                          summary="Bot: replace {{ill}} with enwiki link via Wikidata")
-                print("  → Page saved.\n")
-            except APIError as e:
-                print(f"  ! Save failed: {e}\n")
-        else:
-            print("  (no change)\n")
-
+    for i, t in enumerate(titles, 1):
+        print(f"{i}. [[{t}]]")
+        process_page(site, t)
         time.sleep(THROTTLE)
-
-    print("All done.")
+    print("Done")
 
 if __name__ == "__main__":
     main()
