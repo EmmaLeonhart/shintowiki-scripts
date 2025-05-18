@@ -1,20 +1,13 @@
 #!/usr/bin/env python3
 """
-jawiki_cat_restore_bot.py  –  JA-wiki → local category sync (v-2025-05-14)
---------------------------------------------------------------------------
+jawiki_cat_restore_bot_T2.py  –  JA-wiki → local category sync  (v-2025-05-17)
 
-*New in this version* – if `Category:<JA-name>` already exists **and** is a
-#REDIRECT to another local category, that target is treated as the confirmed
-category and is used on the article; no duplicate JA category is created.
-
-All other logic is the same as the previous release (status-tags,
-JA-redirects when we create an EN-named category, inter-wiki lines, etc.)
+Variant that **preserves existing category content** and always adds
+[[Category:Tier 2 Categories]] to every category it edits or creates.
 """
 
-import os, sys, time, urllib.parse, re, html
+import os, sys, time, urllib.parse, re, html, requests, mwclient
 from typing import Dict, List, Optional
-
-import requests, mwclient
 from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
@@ -34,6 +27,7 @@ TAG_EXISTING = "Existing categories confirmed with Wikidata"
 TAG_EN_NEW   = "Categories created from enwiki title"
 TAG_JA_NEW   = "Categories created from jawiki title"
 TAG_REDIRECT = "jawiki redirect categories"
+TIER2_CAT    = "Tier 2 Categories"            # <- new
 
 # ─── MW SESSIONS ────────────────────────────────────────────────────
 shinto = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
@@ -104,9 +98,19 @@ def existing_redirect_target(ja_cat: str) -> Optional[str]:
         return f"Category:{m.group(1).strip()}"
     return None
 
-def save_page(page, body, summary):
+# ――― helpers that **preserve** existing text ―――
+def ensure_line(body: str, line: str) -> str:
+    """Append *line* (with trailing newline) if it isn’t already present."""
+    if line not in body:
+        if not body.endswith("\n"):
+            body += "\n"
+        body += line + "\n"
+    return body
+
+def save_if_changed(page, new_text: str, summary: str):
     try:
-        page.save(body, summary=summary)
+        if new_text != page.text():
+            page.save(new_text, summary=summary)
     except APIError as e:
         print(f"    ! save failed for {page.name}: {e.code}")
 
@@ -114,70 +118,89 @@ def ensure_local_category(ja_cat: str,
                           en_title: Optional[str],
                           src_article: str) -> str:
     """
-    Make sure a *local* category exists and return its *full* page title,
-    handling the special case where a JA-named category already exists as a
-    redirect to the proper English-named category.
+    Guarantee a *local* category exists and return its full page title,
+    without deleting/replacing whatever text is already there.
+    Also appends [[Category:Tier 2 Categories]].
     """
-    # Special-case: JA title exists and redirects → treat that target as confirmed
+    # Case 1: JA-named category already redirects to final target
     redir_target = existing_redirect_target(ja_cat)
     if redir_target:
         print(f"      · JA cat is redirect → using {redir_target}")
+        target_page = shinto.pages[redir_target]
+        # make sure the redirect target itself is Tier-2-tagged
+        body = target_page.text()
+        body = ensure_line(body, f"[[Category:{TIER2_CAT}]]")
+        save_if_changed(target_page, body,
+                        "Bot: ensure Tier-2 tag (existing redirect target)")
         return redir_target
 
-    via_en = bool(en_title)
-    cat_name   = en_title or ja_cat
-    local_page = shinto.pages[f"Category:{cat_name}"]
-    existed    = local_page.exists
-
-    # ---------- build category body ----------
-    lines = []
-    tag = (TAG_EXISTING if existed
-           else TAG_EN_NEW if via_en
-           else TAG_JA_NEW)
-    lines.append(f"[[Category:{tag}]]")
-
-    # ja link
-    lines.append(f"[[ja:Category:{ja_cat}]]")
-
-    # other inter-wikis
-    if (qid := ja_cat_qid(ja_cat)):
-        for code, name in wd_sitelinks(qid).items():
-            if code in ("ja","en"):  # skip duplicates
-                continue
-            lines.append(f"[[{code}:Category:{name}]]")
-
-    lines.append("")
-    lines.append(
-        f"This category was {'created' if not existed else 'confirmed'} "
-        f"from JA→Wikidata links on [[{src_article}]]."
-    )
-    body = "\n".join(lines) + "\n"
+    via_en       = bool(en_title)
+    cat_name     = en_title or ja_cat
+    local_page   = shinto.pages[f"Category:{cat_name}"]
+    existed      = local_page.exists
+    tag          = (TAG_EXISTING if existed
+                    else TAG_EN_NEW if via_en
+                    else TAG_JA_NEW)
 
     if existed:
-        save_page(local_page, body, "Bot: update category metadata")
+        # ---- read current text and *append* anything missing ----
+        body = local_page.text()
+        body = ensure_line(body, f"[[Category:{tag}]]")
+        body = ensure_line(body, f"[[Category:{TIER2_CAT}]]")
+        body = ensure_line(body, f"[[ja:Category:{ja_cat}]]")
+
+        if (qid := ja_cat_qid(ja_cat)):
+            for code, name in wd_sitelinks(qid).items():
+                if code in ("ja","en"):
+                    continue
+                body = ensure_line(body, f"[[{code}:Category:{name}]]")
+
+        save_if_changed(local_page, body, "Bot: append metadata & Tier-2 tag")
+
     else:
-        save_page(local_page, body, "Bot: create category from JA/Wikidata")
+        # ---- create fresh category ----
+        lines = [
+            f"[[Category:{tag}]]",
+            f"[[Category:{TIER2_CAT}]]",
+            f"[[ja:Category:{ja_cat}]]"
+        ]
+
+        if (qid := ja_cat_qid(ja_cat)):
+            for code, name in wd_sitelinks(qid).items():
+                if code in ("ja","en"):
+                    continue
+                lines.append(f"[[{code}:Category:{name}]]")
+
+        lines.append("")
+        lines.append(
+            f"This category was created from JA→Wikidata links on [[{src_article}]]."
+        )
+        body = "\n".join(lines) + "\n"
+        save_if_changed(local_page, body,
+                        "Bot: create category from JA/Wikidata")
         print(f"      · created Category:{cat_name} ({tag})")
 
-    # If we *created* the EN category, also create JA redirect
+    # If we *created* an EN category, also create a JA-title redirect
     if (not existed) and via_en:
         ja_redirect = shinto.pages[f"Category:{ja_cat}"]
         if not ja_redirect.exists:
-            red_body = (f"#redirect [[Category:{cat_name}]]\n"
-                        f"[[Category:{TAG_REDIRECT}]]\n")
-            save_page(ja_redirect, red_body,
-                      "Bot: jawiki-title redirect to EN category")
+            red_body = (
+                f"#redirect [[Category:{cat_name}]]\n"
+                f"[[Category:{TAG_REDIRECT}]]\n"
+                f"[[Category:{TIER2_CAT}]]\n"
+            )
+            save_if_changed(ja_redirect, red_body,
+                            "Bot: jawiki-title redirect to EN category")
             print(f"        · created redirect Category:{ja_cat}")
 
     return local_page.name
 
 def add_category_to_article(article: str, cat_full: str):
-    pg = shinto.pages[article]
-    marker = f"[[{cat_full}]]"
-    txt = pg.text()
-    if marker in txt:
+    pg   = shinto.pages[article]
+    txt  = pg.text()
+    if f"[[{cat_full}]]" in txt:
         return
-    new = txt.rstrip() + "\n" + marker + "\n"
+    new = txt.rstrip() + f"\n[[{cat_full}]]\n"
     try:
         pg.save(new, summary=f"Bot: add category {cat_full}")
         print(f"      · tagged [[{article}]]")
@@ -211,10 +234,8 @@ def main():
         print(f"    · {len(ja_cats)} categories")
 
         for ja_cat in ja_cats:
-            qid = ja_cat_qid(ja_cat)
-            en_name = None
-            if qid:
-                en_name = wd_sitelinks(qid).get("en")
+            qid     = ja_cat_qid(ja_cat)
+            en_name = wd_sitelinks(qid).get("en") if qid else None
             if en_name:
                 print(f"      ↳ enwiki: {en_name}")
             else:

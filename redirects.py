@@ -17,7 +17,7 @@ WIKI_HOST   = 'shinto.miraheze.org'
 WIKI_PATH   = '/w/'
 USERNAME    = 'Immanuelle'
 PASSWORD    = '[REDACTED_SECRET_1]'
-START_TITLE = ''       # begin enumeration at this prefix
+START_TITLE = 'draft'       # begin enumeration at this prefix
 THROTTLE    = 0.5       # seconds between operations
 
 # ─── LOGIN ────────────────────────────────────────────────────────
