@@ -1,206 +1,248 @@
 #!/usr/bin/env python3
 """
-category_interwiki_restore_bot.py  –  Tier 2 Category Sync (Multi‑lang)
-=====================================================================
+Category Interwiki Restore Bot  –  Tier-2 Category Generator
+===========================================================
+Creates or confirms **Tier-2 categories** on the local wiki by mining the
+parent categories of Commons / jawiki / dewiki categories referenced from the
+*Tier-1 pages* listed in `pages.txt`.
 
-For each Tier 1 category in pages.txt, create or confirm a Tier 2 category
-on the local wiki based on its interwiki categories (English, Commons,
-Japanese, German) in that priority. All other interwiki names redirect to
-the chosen local category. Pages are never overwritten—new content is
-appended.
+Priority for the local category’s **canonical name**
+----------------------------------------------------
+1. **enwiki** sitelink title
+2. **commonswiki** sitelink title
+3. **jawiki** sitelink title
+4. **dewiki** sitelink title
 
-Behavior per source category (Tier 1):
-1. Fetch its Wikidata QID via local pageprops.
-2. Pull sitelinks: enwiki, commonswiki, jawiki, dewiki.
-3. Choose primary lang in order: enwiki → commonswiki → jawiki → dewiki.
-4. Let `chosen` = the interwiki title for that lang. `via` = that code.
-5. Ensure local Category:<chosen> exists:
-   - If exists and *redirect*, follow to target.
-   - If not exists, create a new page and append `[[Category:Categories created from <via> title]]`.
-   - If exists non-redirect, append `[[Category:Categories confirmed during Tier 2 run]]` (if missing).
-6. Append all available interwiki links on the category page with comment headers.
-7. Create redirects for every other interwiki code→local Category:<chosen> (tag with `[[Category:Tier 2 redirect categories]]`).
-8. Append `[[Category:Tier 2 Categories]]` if absent.
-9. Throttle edits between actions.
+Workflow per Tier-1 source page
+-------------------------------
+* Parse page for category inter-wikis: `commons`, `ja`, `de`.
+* For each of those remote categories, fetch its **parent categories**.
+* For every parent category found, resolve its Wikidata QID.
+* For each QID:
+  1. Gather sitelinks (enwiki / commonswiki / jawiki / dewiki).
+  2. Pick `primary` title by priority above.
+  3. Ensure local `Category:primary` exists:
+     * **If exists (non-redirect)** → tag `Category:Categories confirmed during Tier 2 run`
+     * **Else** create page → tag `Category:Categories created from <source> title`
+  4. Append all inter-wiki lines (with comment headers) + QID (via {{Wikidata|Q…}}).
+  5. Append `[[Category:Tier 2 Categories]]` unless the page is already tagged Tier-1.
+  6. Create redirects for every other sitelink title → canonical category (tag with
+     `Category:Tier 2 redirect categories`).
 
-Edit summary: "Bot: sync Tier 2 category from interwiki"
+Safety notes
+------------
+* **Never** modify the Tier-1 source pages.
+* **Never** overwrite existing content – only append.
+* Edits throttled to avoid API abuse.
 """
-import os, re, time, urllib.parse, requests, mwclient
+
+# Standard lib
+import os, sys, re, time, urllib.parse
+from typing import List, Dict, Set
+
+# Third-party
+import requests, mwclient
 from mwclient.errors import APIError
 
-# ─── CONFIG ─────────────────────────────────────────────────────────
-SITE_URL    = "shinto.miraheze.org"
-SITE_PATH   = "/w/"
+# ─── CONFIG ────────────────────────────────────────────────────────
+LOCAL_URL   = "shinto.miraheze.org"  # local wiki to edit
+LOCAL_PATH  = "/w/"
 USERNAME    = "Immanuelle"
 PASSWORD    = "[REDACTED_SECRET_1]"
-PAGES_FILE  = "pages.txt"
-THROTTLE    = 0.5
+
+PAGES_FILE  = "pages.txt"           # Tier-1 source pages
+THROTTLE    = 0.5                   # seconds between edits
+
 WD_API      = "https://www.wikidata.org/w/api.php"
+UA          = {"User-Agent": "tier2-category-bot/2.0 (User:Immanuelle)"}
+
+# Remote read-only wikis
+REMOTE_SITES = {
+    "commons": ("commons.wikimedia.org", "/w/"),
+    "ja":      ("ja.wikipedia.org", "/w/"),
+    "de":      ("de.wikipedia.org", "/w/"),
+}
 
 # Tags
-TAG_CONFIRMED    = "Categories confirmed during Tier 2 run"
-TAG_EN_NEW       = "Categories created from enwiki title"
-TAG_COMMONS_NEW  = "Categories created from commonswiki title"
-TAG_JA_NEW       = "Categories created from jawiki title"
-TAG_DE_NEW       = "Categories created from dewiki title"
-TAG_REDIRECT     = "Tier 2 redirect categories"
-TAG_TIER2        = "Tier 2 Categories"
+TAG_TIER1          = "Tier 1 Categories"
+TAG_TIER2          = "Tier 2 Categories"
+TAG_CONFIRMED      = "Categories confirmed during Tier 2 run"
+TAG_REDIRECT       = "Tier 2 redirect categories"
+TAG_CREATED_FROM   = {
+    "en":      "Categories created from enwiki title",
+    "commons": "Categories created from commonswiki title",
+    "ja":      "Categories created from jawiki title",
+    "de":      "Categories created from dewiki title",
+}
 
-ORDER = [
-    ("enwiki",    "en",      TAG_EN_NEW),
-    ("commonswiki","commons",TAG_COMMONS_NEW),
-    ("jawiki",    "ja",      TAG_JA_NEW),
-    ("dewiki",    "de",      TAG_DE_NEW),
-]
-USER_AGENT = {"User-Agent": "tier2-cat-bot/1.0 (User:Immanuelle)"}
+# Priority order for canonical name
+PRIORITY = ["en", "commons", "ja", "de"]
 
-# ─── HELPERS ────────────────────────────────────────────────────────
+# ─── UTILS ─────────────────────────────────────────────────────────
 
-def load_titles(path):
-    if not os.path.exists(path):
-        sys.exit(f"Missing {path}")
-    with open(path, encoding="utf-8") as fh:
-        return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
+def load_titles() -> List[str]:
+    if not os.path.exists(PAGES_FILE):
+        print("Missing pages.txt"); sys.exit(1)
+    with open(PAGES_FILE, encoding="utf-8") as fh:
+        return [l.strip() for l in fh if l.strip() and not l.startswith("#")]
 
 
-def get_qid(site, cat):
-    rv = site.api(
-        action="query",
-        titles=f"Category:{cat}",
-        prop="pageprops",
-        ppprop="wikibase_item"
-    )
-    pages = rv.get("query", {}).get("pages", {})
-    for p in pages.values():
-        return p.get("pageprops", {}).get("wikibase_item")
-    return None
-
-
-def get_sitelinks(qid):
-    params = {"action":"wbgetentities","ids":qid,
-              "props":"sitelinks","format":"json"}
-    r = requests.get(WD_API, params=params, headers=USER_AGENT, timeout=15)
-    r.raise_for_status()
+def wd_get_sitelinks(qid: str) -> Dict[str, str]:
+    r = requests.get(WD_API, params={
+        "action": "wbgetentities", "ids": qid,
+        "props": "sitelinks", "format": "json"
+    }, headers=UA, timeout=15)
     ent = r.json().get("entities", {}).get(qid, {})
-    sl = ent.get("sitelinks", {})
-    return {k: v.get("title") for k,v in sl.items()}
+    sl = {}
+    for code, info in ent.get("sitelinks", {}).items():
+        lang = code.replace("wiki", "") if code.endswith("wiki") else code
+        if lang in ("en", "ja", "de", "commons"):
+            sl[lang] = info["title"].split(":",1)[-1]
+    return sl
 
 
-def existing_redirect_target(site, name):
-    pg = site.pages[f"Category:{name}"]
+def commons_parent_cats(com_site, title: str) -> List[str]:
+    data = com_site.api(action="query", prop="categories", clshow="!hidden",
+                        titles=f"Category:{title}", cllimit="max", format="json")
+    pg = next(iter(data["query"]["pages"].values()))
+    return [c["title"].split(":",1)[1] for c in pg.get("categories", [])]
+
+
+def wiki_parent_cats(site, title: str) -> List[str]:
+    data = site.api(action="query", prop="categories", clshow="!hidden",
+                    titles=f"Category:{title}", cllimit="max", format="json")
+    pg = next(iter(data["query"]["pages"].values()))
+    return [c["title"].split(":",1)[1] for c in pg.get("categories", [])]
+
+
+def page_qid(site, cat_title: str) -> str | None:
+    rv = site.api(action="query", titles=f"Category:{cat_title}", prop="pageprops",
+                  ppprop="wikibase_item", format="json")
+    return next(iter(rv["query"]["pages"].values()))\
+           .get("pageprops", {})\
+           .get("wikibase_item")
+
+# ─── LOCAL CATEGORY HELPERS ────────────────────────────────────────
+
+def local_redirect_target(local_site, name: str) -> str | None:
+    pg = local_site.pages[f"Category:{name}"]
     if not pg.exists:
         return None
-    try:
-        txt = pg.text().strip()
-    except:
-        return None
-    m = re.match(r"#redirect\s*\[\[Category:([^\]]+)\]\]", txt, re.I)
+    m = re.match(r"#redirect\s*\[\[Category:([^\]]+)\]\]", pg.text(), re.I)
     return m.group(1) if m else None
 
 
-def save_page(page, body, summary):
+def append_lines_to_page(page, text: str, lines: List[str]):
+    if not lines:
+        return
+    new = text.rstrip() + "\n" + "\n".join(lines) + "\n"
     try:
-        page.save(body, summary=summary)
+        page.save(new, summary="Bot: sync Tier-2 category")
+        print(f"    • saved {page.name}")
     except APIError as e:
-        print(f"  ! save failed: {e.code}")
+        print(f"    ! save failed: {e.code}")
 
-# ─── CORE ────────────────────────────────────────────────────────────
-
-def process_cat(site, cat):
-    print(f"Processing Tier1 category → {cat}")
-    qid = get_qid(site, cat)
-    if not qid:
-        print("  ! no QID; skipped")
-        return
-    sl = get_sitelinks(qid)
-    # pick primary
-    chosen_name = None
-    via_tag     = None
-    for code, lang, tag_new in ORDER:
-        key = code
-        if key in sl:
-            chosen_name = sl[key]
-            via_tag = tag_new
-            break
-    if not chosen_name:
-        print("  ! no interwiki; skipped")
-        return
-    # normalize
-    chosen_name = urllib.parse.unquote(chosen_name).replace('_',' ')
-    # resolve existing redirect
-    redir = existing_redirect_target(site, chosen_name)
-    if redir:
-        chosen_name = redir
-    full = f"Category:{chosen_name}"
-    page = site.pages[full]
-    exists = page.exists and not page.redirect
-
-    text = page.text() if exists else ""
-    new_lines = []
-
-    # creation or confirmation tag
-    if exists:
-        tag = TAG_CONFIRMED
-    else:
-        tag = via_tag
-    line_tag = f"[[Category:{tag}]]"
-    if line_tag not in text:
-        new_lines.append(line_tag)
-
-    # append all interwikis found
-    for code, lang, _ in ORDER:
-        key = code
-        if key in sl:
-            name = urllib.parse.unquote(sl[key]).replace('_',' ')
-            if code == 'enwiki':
-                l = f"<!--enwiki derived category-->\n[[en:Category:{name}]]"
-            elif code == 'commonswiki':
-                l = f"<!--commons derived category-->\n{{{{Commons category|{name}}}}}"
-            elif code == 'jawiki':
-                l = f"<!--jawiki derived category-->\n[[ja:Category:{name}]]"
-            else:
-                l = f"<!--dewiki derived category-->\n[[de:Category:{name}]]"
-            if l not in text:
-                new_lines.append(l)
-
-    # Tier 2 tag
-    tier2_line = f"[[Category:{TAG_TIER2}]]"
-    if tier2_line not in text:
-        new_lines.append(tier2_line)
-
-    # save or create page
-    if new_lines:
-        body = (text.rstrip() + "\n" + "\n".join(new_lines) + "\n") if exists else (
-            # new page header
-            "" + "\n".join(new_lines) + "\n"
-        )
-        save_page(page, body, "Bot: sync Tier 2 category from interwiki")
-        print(f"  ✓ updated/created {full}")
-    else:
-        print("  • nothing new; skipped")
-
-    # redirect others
-    for code, lang, _ in ORDER:
-        key = code
-        if key in sl and sl[key] != chosen_name:
-            other = urllib.parse.unquote(sl[key]).replace('_',' ')
-            red_pg = site.pages[f"Category:{other}"]
-            if not red_pg.exists:
-                body = f"#redirect [[Category:{chosen_name}]]\n[[Category:{TAG_REDIRECT}]]\n"
-                save_page(red_pg, body, "Bot: Tier2 redirect setup")
-                print(f"  ↳ redirect created from {other}")
-
-    time.sleep(THROTTLE)
-
-# ─── MAIN LOOP ──────────────────────────────────────────────────────
+# ─── MAIN ──────────────────────────────────────────────────────────
 
 def main():
-    site = mwclient.Site(SITE_URL, path=SITE_PATH)
-    site.login(USERNAME, PASSWORD)
-    titles = load_titles(PAGES_FILE)
-    for cat in titles:
-        process_cat(site, cat)
-    print("Done Tier 2 sync.")
+    # local session
+    local = mwclient.Site(LOCAL_URL, path=LOCAL_PATH)
+    local.login(USERNAME, PASSWORD)
+
+    # remote read-only sessions
+    remote = {code: mwclient.Site(url, path=path) for code,(url,path) in REMOTE_SITES.items()}
+
+    tier1_pages = load_titles()
+
+    for idx, source in enumerate(tier1_pages, 1):
+        print(f"\n{idx}/{len(tier1_pages)} ▶ {source}")
+        src_page = local.pages[source]
+        if not src_page.exists:
+            print("  • missing – skipped"); continue
+        src_text = src_page.text()
+
+        # ----- gather linked remote categories -----
+        commons_links = re.findall(r"\{\{\s*Commons[ _]category\s*\|\s*([^}|]+)", src_text, re.I)
+        commons_links += re.findall(r"\[\[\s*commons:Category:([^]|]+)", src_text, re.I)
+        ja_links  = re.findall(r"\[\[ja:Category:([^]|]+)", src_text, re.I)
+        de_links  = re.findall(r"\[\[de:Category:([^]|]+)", src_text, re.I)
+
+        # Step 1: fetch parent categories for each link -> QIDs
+        qids_seen: Set[str] = set()
+        parent_qids: Dict[str, Dict[str,str]] = {}  # qid -> sitelinks
+
+        def handle_remote(cat_title: str, code: str):
+            qid = page_qid(remote[code], cat_title)
+            if not qid or qid in qids_seen:
+                return
+            qids_seen.add(qid)
+            parent_qids[qid] = wd_get_sitelinks(qid)
+
+            # record sitelinks on the remote page too
+            parents = commons_parent_cats(remote[code], cat_title) if code == 'commons' else wiki_parent_cats(remote[code], cat_title)
+            for p in parents:
+                pqid = page_qid(remote[code], p)
+                if pqid and pqid not in qids_seen:
+                    qids_seen.add(pqid)
+                    parent_qids[pqid] = wd_get_sitelinks(pqid)
+
+        for c in commons_links:
+            handle_remote(c, 'commons')
+        for j in ja_links:
+            handle_remote(j, 'ja')
+        for d in de_links:
+            handle_remote(d, 'de')
+
+        # ----- create/confirm local categories for each QID -----
+        for qid, sitelinks in parent_qids.items():
+            # choose canonical
+            chosen_lang = next((l for l in PRIORITY if l in sitelinks), None)
+            if not chosen_lang:
+                continue
+            chosen_title = urllib.parse.unquote(sitelinks[chosen_lang]).replace('_',' ')
+            tgt = local_redirect_target(local, chosen_title) or chosen_title
+            cat_page = local.pages[f"Category:{tgt}"]
+            exists = cat_page.exists and not cat_page.redirect
+            original_text = cat_page.text() if exists else ""
+            add_lines: List[str] = []
+
+            # tagging
+            tag_line = f"[[Category:{TAG_CONFIRMED}]]" if exists else f"[[Category:{TAG_CREATED_FROM[chosen_lang]}]]"
+            if tag_line not in original_text:
+                add_lines.append(tag_line)
+            # QID template
+            qid_line = f"{{{{Wikidata|{qid}}}}}"
+            if qid_line not in original_text:
+                add_lines.append(qid_line)
+            # interwiki lines
+            def iw_line(lang, title):
+                if lang == 'en': return f"<!--enwiki derived-->\n[[en:Category:{title}]]"
+                if lang == 'commons': return f"<!--commons derived-->\n{{{{Commons category|{title}}}}}"
+                if lang == 'ja': return f"<!--jawiki derived-->\n[[ja:Category:{title}]]"
+                return f"<!--dewiki derived-->\n[[de:Category:{title}]]"
+            for lang in PRIORITY:
+                if lang in sitelinks:
+                    line = iw_line(lang, urllib.parse.unquote(sitelinks[lang]).replace('_',' '))
+                    if line not in original_text: add_lines.append(line)
+
+            # tier tags
+            if f"[[Category:{TAG_TIER2}]]" not in original_text and f"[[Category:{TAG_TIER1}]]" not in original_text:
+                add_lines.append(f"[[Category:{TAG_TIER2}]]")
+
+            append_lines_to_page(cat_page, original_text, add_lines)
+
+            # redirects from other sitelinks
+            for lang, title in sitelinks.items():
+                title = urllib.parse.unquote(title).replace('_',' ')
+                if title == tgt: continue
+                rpage = local.pages[f"Category:{title}"]
+                if not rpage.exists:
+                    body = f"#REDIRECT [[Category:{tgt}]]\n[[Category:{TAG_REDIRECT}]]\n"
+                    append_lines_to_page(rpage, "", [body])
+
+        time.sleep(THROTTLE)
+
+    print("Finished Tier-2 sync")
 
 if __name__ == '__main__':
     main()
