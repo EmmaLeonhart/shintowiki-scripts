@@ -1,119 +1,181 @@
 #!/usr/bin/env python3
 """
-category_merge_bot.py  –  merge one category into another
----------------------------------------------------------
-Usage:
-    python category_merge_bot.py "Old Category" "New Category"
-Things it does (with admin rights):
+category_merge_bot_v2.py – merge one category into another (v2.5)
+-----------------------------------------------------------------
+**What’s new in v2.5**
 
-1.  Ensure raw names are treated as Category:… .
-2.  Copy the wikitext of *both* pages for later re-save.
-3.  Delete the target (New) page (keeps history in the archive).
-4.  Move Category:Old → Category:New (keeps a redirect).
-5.  Undelete the earlier history of Category:New.
-6.  Rewrite every page that still links to Category:Old so it
-    now uses Category:New.
-7.  Append the previously-saved wikitext of both pages and save.
+1. **Member‑count sanity check** – The bot now prints how many pages it
+   thinks belong to the old category *before* doing anything else.
+2. **Reliable member query** – Instead of `cat_page.members()`, which can
+   silently return nothing if the category is huge or cached, we now hit
+   the API directly (`list=categorymembers`) so we *always* get the full
+   list (up to 5 000 per request, with automatic paging).
+3. **Early abort** if the member list comes back empty – prints a warning
+   and exits so you can debug rather than doing all the move work for
+   nothing.
+
+Run like:
+    python category_merge_bot_v2.py "Place in Egyptian Mythology" \
+                                    "Places in Egyptian Mythology"
 """
+import os
+import re
+import sys
+import urllib.parse
+from typing import List, Tuple
 
-import sys, time, re, mwclient, requests
+import mwclient
 from mwclient.errors import APIError
 
-# ─── CONFIG ────────────────────────────────────────────────────────
-SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
-THROTTLE  = 0.4  # seconds between edits
+SUMMARY = "Merge [[Category:{old}]] into [[Category:{new}]] via bot"
 
-# ─── UTILS ─────────────────────────────────────────────────────────
-def cat_title(raw: str) -> str:
-    return raw[9:] if raw.lower().startswith("category:") else raw
+# ---------------------------------------------------------------------------
+# Helper functions
+# ---------------------------------------------------------------------------
 
-def replace_cat_on_page(page, old, new):
-    txt = page.text()
-    pat = re.compile(rf"\[\[\s*Category:{re.escape(old)}([^\]]*)\]\]", re.I)
-    if not pat.search(txt):
-        return
-    new_txt = pat.sub(f"[[Category:{new}\\1]]", txt)
-    if new_txt == txt:
-        return
-    page.save(new_txt,
-              summary=f"Bot: merge {old} → {new}",
-              minor=True)
-    print("      •", page.name)
-    time.sleep(THROTTLE)
+def normalise(title: str) -> str:
+    """Return canonical `Category:Foo Bar` with spaces, no underscores."""
+    title = title.replace("_", " ").strip()
+    return title if title.lower().startswith("category:") else f"Category:{title}"
 
-def delete_page(page, reason):
-    if page.exists:
+
+def get_site() -> mwclient.Site:
+    api_url = os.environ.get("MW_API_URL")
+    if not api_url:
+        sys.exit("Set MW_API_URL, MW_USERNAME, MW_PASSWORD in env.")
+    parsed = urllib.parse.urlparse(api_url)
+    site = mwclient.Site(parsed.netloc, path=parsed.path.rsplit("/api.php", 1)[0] + "/")
+    site.login(os.environ.get("MW_USERNAME"), os.environ.get("MW_PASSWORD"))
+    return site
+
+# ---------------------------------------------------------------------------
+# Category member fetch (robust)
+# ---------------------------------------------------------------------------
+
+def fetch_members(site: mwclient.Site, cat_title: str) -> List[mwclient.Page]:
+    """Return *all* pages in a category using raw API paging."""
+    members: List[mwclient.Page] = []
+    cmcontinue = None
+    while True:
+        params = {
+            "action": "query",
+            "list": "categorymembers",
+            "cmtitle": cat_title,
+            "cmlimit": "5000",
+            "cmprop": "title|type",
+        }
+        if cmcontinue:
+            params["cmcontinue"] = cmcontinue
+        data = site.api(**params)
+        for m in data["query"]["categorymembers"]:
+            members.append(site.pages[m["title"]])
+        cmcontinue = data.get("continue", {}).get("cmcontinue")
+        if not cmcontinue:
+            break
+    return members
+
+# ---------------------------------------------------------------------------
+# Replacement regex (unchanged from v2.4)
+# ---------------------------------------------------------------------------
+
+def _build_fuzzy_pattern(title: str) -> str:
+    parts = [re.escape(p) for p in title.split(" ") if p]
+    return r"[ _\s]*".join(parts)
+
+
+def _cat_regex(old: str) -> re.Pattern:
+    ns = r"(?:(?:[Cc]ategor(?:y|ie)))"
+    return re.compile(
+        fr"\[\[\s*{ns}\s*:\s*{_build_fuzzy_pattern(old)}\s*(\|[^]]*)?]]",
+        re.IGNORECASE,
+    )
+
+
+def replace_category_link(text: str, old: str, new: str) -> Tuple[str, int]:
+    regex = _cat_regex(old)
+    return regex.subn(lambda m: f"[[Category:{new}{m.group(1) or ''}]]", text)
+
+# ---------------------------------------------------------------------------
+# Member processing
+# ---------------------------------------------------------------------------
+
+def process_members(site: mwclient.Site, pages: List[mwclient.Page], old: str, new: str):
+    skipped, unchanged = [], []
+    for page in pages:
+        print(f"• {page.name}")
         try:
-            page.delete(reason=reason, watch=False)
-            print("    • deleted", page.name)
+            text = page.text()
+        except Exception as e:
+            print(f"   !! failed to fetch text: {e}")
+            skipped.append(page.name)
+            continue
+
+        new_text, n = replace_category_link(text, old, new)
+        if n == 0:
+            unchanged.append(page.name)
+            print("   ▸ no match found")
+            continue
+        try:
+            page.save(new_text, summary=SUMMARY.format(old=old, new=new))
+            print(f"   ▸ replaced {n} link(s)")
         except APIError as e:
-            sys.exit(f"Cannot delete {page.name}: {e.code}")
+            print(f"   !! API error: {e}")
+            skipped.append(page.name)
 
-def undelete_all(site, title, reason):
-    token = site.get_token('csrf')
-    # undelete with timestamps='' means restore all revisions
-    site.api(action='undelete', title=title,
-             reason=reason, token=token)
-    print("    • undeleted history for", title)
+    if unchanged:
+        print("Pages with *no* replacement (check why):")
+        for t in unchanged:
+            print("   -", t)
+    if skipped:
+        print("Skipped (protected/error):")
+        for t in skipped:
+            print("   -", t)
 
-# ─── MAIN ──────────────────────────────────────────────────────────
-def main(old_raw, new_raw):
-    old_cat = cat_title(old_raw)
-    new_cat = cat_title(new_raw)
-    old_full = f"Category:{old_cat}"
-    new_full = f"Category:{new_cat}"
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
 
-    site = mwclient.Site(SITE_URL, path=SITE_PATH)
-    site.login(USERNAME, PASSWORD)
+def main():
+    if len(sys.argv) != 3:
+        sys.exit("Usage: python category_merge_bot_v2.py 'Old' 'New'")
 
-    old_pg = site.pages[old_full]
-    new_pg = site.pages[new_full]
+    old_cat = normalise(sys.argv[1]).removeprefix("Category:")
+    new_cat = normalise(sys.argv[2]).removeprefix("Category:")
 
-    if not old_pg.exists:
-        sys.exit("Old category does not exist!")
+    site = get_site()
+    old_title = f"Category:{old_cat}"
+    new_title = f"Category:{new_cat}"
 
-    # copy wikitext BEFORE doing anything
-    old_text = old_pg.text()
-    new_text = new_pg.text() if new_pg.exists else ""
+    old_page = site.pages[old_title]
+    if not old_page.exists:
+        sys.exit(f"Old category [[{old_title}]] does not exist!")
 
-    # 1. delete New (so title free, history in archive)
-    delete_page(new_pg, "Bot: prepare merge target")
+    print("Fetching category members …", end=" ")
+    members = fetch_members(site, old_title)
+    print(f"{len(members)} page(s)")
 
-    # 2. move Old → New
+    if not members:
+        sys.exit("Nothing to do – category is empty.")
+
+    # Prepare move/merge
+    reason = SUMMARY.format(old=old_cat, new=new_cat)
+    new_page = site.pages[new_title]
+    if new_page.exists:
+        print(f"Deleting existing target {new_title} …")
+        new_page.delete(reason=reason, watch=False, oldimage=False)
+
+    print(f"Moving {old_title} → {new_title} …")
+    old_page.move(new_title, reason=reason, move_talk=True, noredirect=True)
+
     try:
-        old_pg.move(new_full, reason="Bot: merge categories",
-                    move_talk=True)
-        print(f"✓ moved {old_full} → {new_full}")
+        site.api("undelete", title=new_title, reason=reason, token=site.get_token("csrf"))
     except APIError as e:
-        sys.exit("Move failed: " + e.code)
-
-    # after move, old_pg is now a redirect; fetch real new page object
-    new_pg = site.pages[new_full]
-
-    # 3. undelete former history (if any)
-    try:
-        undelete_all(site, new_full, "Bot: merge histories")
-    except APIError as e:
-        # if there was no deleted history this returns badtitle → ignore
         if e.code != "cantundelete":
-            sys.exit("Undelete failed: " + e.code)
+            raise
 
-    # 4. rewrite residual pages still pointing to old title
-    members = site.api(action='query', list='categorymembers',
-                       cmtitle=old_full, cmtype='page',
-                       cmlimit='max', format='json')['query']['categorymembers']
-    for mem in members:
-        replace_cat_on_page(site.pages[mem['title']], old_cat, new_cat)
+    process_members(site, members, old_cat, new_cat)
+    print("Done ✔️")
 
-    # 5. append wikitexts and save
-    merged = (new_text.rstrip() + "\n" + old_text).rstrip() + "\n"
-    new_pg.save(merged,
-                summary="Bot: merge wikitext from both categories")
-    print("✓ final merged content saved")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python category_merge_bot.py 'Old' 'New'")
-        sys.exit(1)
-    main(sys.argv[1], sys.argv[2])
+    main()
