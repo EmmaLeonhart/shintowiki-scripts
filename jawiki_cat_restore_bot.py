@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-jawiki_cat_restore_bot_T2.py  –  JA-wiki → local category sync  (v-2025-05-17)
+jawiki_cat_restore_bot.py  –  JA-wiki → local category sync  (v-2025-05-17)
 
 Variant that **preserves existing category content** and always adds
 [[Category:Tier 2 Categories]] to every category it edits or creates.
@@ -27,7 +27,7 @@ TAG_EXISTING = "Existing categories confirmed with Wikidata"
 TAG_EN_NEW   = "Categories created from enwiki title"
 TAG_JA_NEW   = "Categories created from jawiki title"
 TAG_REDIRECT = "jawiki redirect categories"
-TIER2_CAT    = "Tier 2 Categories"            # <- new
+TIER2_CAT    = "Tier 3 Categories]][[Category:Tier 1 Categories"            # <- new
 
 # ─── MW SESSIONS ────────────────────────────────────────────────────
 shinto = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
