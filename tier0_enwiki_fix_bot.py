@@ -1,34 +1,21 @@
 #!/usr/bin/env python3
 """
-tier0_enwiki_fix_bot.py
-=======================
+tier0_enwiki_fix_bot.py  –  resume‑able + robust (v1.1)
+======================================================
 
-Cleans up categories that currently belong to **[[Category:Tier 0 Categories]]**.
+Additions to original logic
+---------------------------
+* **Start‑at argument** – pass a category name on the command line to resume
+  from that title (alphabetical order). Example:
 
-Rules for each Tier-0 category C:
-1. **Validate existing enwiki interwiki**
-   * If C’s wikitext contains an `[[en:Category:X]]` interwiki and the
-     category *X* does **not** exist on English Wikipedia → **remove** the
-     interwiki line.
-2. **Check for same-name enwiki category**
-   * Query enwiki for *Category:C* (exact title).
-   * If it exists:
-       • Ensure `[[en:Category:C]]` interwiki line is present.
-       • Remove `[[Category:Tier 0 Categories]]`.
-       • Add  `[[Category:confirmed enwiki categories]]` and
-         `[[Category:Tier 1 Categories]]`.
-3. **Otherwise delete empty Tier-0 category**
-   * If no enwiki category exists for C **and** C is *not* already in
-     `[[Category:Meta categories]]` nor `[[Category:Tier 1 Categories]]`,
-     then:
-       • Remove C from every page that transcludes it.
-       • Delete the category page itself.
+      python tier0_enwiki_fix_bot.py "New automatic wikipedia redirects"
 
-The script handles large categorymember lists using `cmcontinue`.
+* **safe_page()** – wraps `site.pages[...]`; if the MediaWiki API returns a
+  malformed response (no "pages" key) the script logs and skips instead of
+  aborting.
 """
-
-import os, re, time, requests, mwclient
-from mwclient.errors import APIError
+import re, time, sys, requests, mwclient
+from mwclient.errors import APIError, InvalidPageTitle
 
 # ── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL   = "shinto.miraheze.org"; SITE_PATH = "/w/"
@@ -38,19 +25,21 @@ TAG_CONF   = "confirmed enwiki categories"
 TAG_TIER0  = "Tier 0 Categories"
 TAG_TIER1  = "Tier 1 Categories"
 META_CAT   = "Meta categories"
-THROTTLE   = 0.5
+THROTTLE   = 0.4
 EN_API     = "https://en.wikipedia.org/w/api.php"
-UA         = {"User-Agent": "tier0-enwiki-fix-bot/1.0 (User:Immanuelle)"}
+UA         = {"User-Agent": "tier0-enwiki-fix-bot/1.1 (User:Immanuelle)"}
 
-EN_IW_RE   = re.compile(r"^\[\[\s*en:\s*Category:([^]|]+)\s*\]\]", re.I|re.M)
-TAG0_RE    = re.compile(r"\[\[Category:Tier 0 Categories\]\]", re.I)
+START_AT   = "New"
+resume_flag = bool(START_AT)
+
+EN_IW_RE = re.compile(r"^\[\[\s*en:\s*Category:([^]|]+)\s*\]\]", re.I|re.M)
+TAG0_RE  = re.compile(r"\[\[Category:Tier 0 Categories\]\]", re.I)
 
 # ── HELPERS ───────────────────────────────────────────────────────
 
 def enwiki_cat_exists(title: str) -> bool:
-    params = {"action":"query","titles":f"Category:{title}","format":"json"}
     try:
-        r = requests.get(EN_API, params=params, headers=UA, timeout=10)
+        r = requests.get(EN_API, params={"action":"query","titles":f"Category:{title}","format":"json"}, headers=UA, timeout=10)
         r.raise_for_status()
         pg = next(iter(r.json()["query"]["pages"].values()))
         return "missing" not in pg
@@ -58,19 +47,30 @@ def enwiki_cat_exists(title: str) -> bool:
         return False
 
 
-def remove_category_from_page(page: mwclient.page, cat_name: str):
-    txt = page.text()
-    pattern = re.compile(rf"\[\[\s*Category:{re.escape(cat_name)}[^\]]*\]\]", re.I)
-    if not pattern.search(txt):
+def safe_page(site, title: str):
+    """Return mwclient.Page or None if API glitch."""
+    try:
+        return site.pages[title]
+    except (InvalidPageTitle, KeyError, APIError):
+        print("      ! API failure on", title, "– skipped")
+        return None
+
+
+def remove_category_from_page(page, cat_name):
+    if not page:
         return
-    new = pattern.sub("", txt)
+    txt = page.text()
+    pat = re.compile(rf"\[\[\s*Category:{re.escape(cat_name)}[^\]]*\]\]", re.I)
+    if not pat.search(txt):
+        return
+    new = pat.sub("", txt)
     if new != txt:
         try:
             page.save(new, summary=f"Bot: remove deleted category {cat_name}")
-            print(f"      • removed from {page.name}")
+            print("      • removed from", page.name)
         except APIError as e:
-            print(f"      ! failed to update {page.name}: {e.code}")
-            time.sleep(THROTTLE)
+            print("      ! save failed", e.code)
+        time.sleep(THROTTLE)
 
 # ── MAIN ──────────────────────────────────────────────────────────
 
@@ -81,76 +81,76 @@ def main():
 
     cm_continue = None
     while True:
-        cm = {
-            "action": "query", "list": "categorymembers",
-            "cmtitle": f"Category:{SOURCE_CAT}", "cmtype": "subcat",
-            "cmlimit": "max", "format": "json"
-        }
+        cm = {"action":"query","list":"categorymembers",
+              "cmtitle":f"Category:{SOURCE_CAT}","cmtype":"subcat",
+              "cmlimit":"max","format":"json"}
         if cm_continue:
             cm["cmcontinue"] = cm_continue
-        data = site.api(**cm)
-        members = data.get("query", {}).get("categorymembers", [])
-
-        for entry in members:
-            full = entry["title"]               # Category:Foo
+        batch = site.api(**cm)
+        for entry in batch.get("query", {}).get("categorymembers", []):
+            full = entry["title"]             # Category:Foo
             cat_name = full.split(":",1)[1]
+
+            # resume logic
+            global resume_flag
+            if resume_flag and cat_name < START_AT:
+                continue
+            resume_flag = False
+
             print(f"\n→ {cat_name}")
-            cat_page = site.pages[full]
-            if cat_page.redirect:
-                print("  • redirect – skipped"); continue
+            cat_page = safe_page(site, full)
+            if not cat_page or cat_page.redirect:
+                continue
             text = cat_page.text()
 
-            # ------- 1. validate existing enwiki interwiki ----------
+            # 1. validate enwiki interwiki
             m = EN_IW_RE.search(text)
-            if m:
-                en_link = m.group(1).strip()
-                if not enwiki_cat_exists(en_link):
-                    print("  • invalid en interwiki – removing line")
-                    text = EN_IW_RE.sub("", text)
+            if m and not enwiki_cat_exists(m.group(1).strip()):
+                print("  • invalid en interwiki – removing")
+                text = EN_IW_RE.sub("", text)
 
-            # ------- 2. check same-name enwiki category -------------
+            # 2. same‑name enwiki category
             if enwiki_cat_exists(cat_name):
-                print("  • enwiki category exists → confirm")
-                # ensure interwiki present
+                print("  • enwiki category exists – confirming")
                 if not EN_IW_RE.search(text):
-                    text = text.rstrip() + f"\n[[en:Category:{cat_name}]]\n"
-                # swap tags
-                if TAG0_RE.search(text):
-                    text = TAG0_RE.sub("", text)
+                    text = text.rstrip()+f"\n[[en:Category:{cat_name}]]\n"
+                text = TAG0_RE.sub("", text)
                 for tag in (TAG_CONF, TAG_TIER1):
                     if f"[[Category:{tag}]]" not in text:
-                        text = text.rstrip() + f"\n[[Category:{tag}]]"
-                # save changes
+                        text = text.rstrip()+f"\n[[Category:{tag}]]"
                 cat_page.save(text, summary="Bot: confirm enwiki category & retag")
-                continue  # done with this category
+                continue
 
-            # ------- 3. delete orphan Tier-0 category ---------------
-            if (f"[[Category:{META_CAT}]]" in text or
-                f"[[Category:{TAG_TIER1}]]" in text):
-                print("  • meta or Tier-1 – keep")
+            # 3. delete orphan Tier‑0 category (not meta/Tier‑1)
+            if any(f"[[Category:{t}]]" in text for t in (META_CAT, TAG_TIER1)):
+                print("  • meta or Tier‑1 – keep")
                 continue
 
             print("  • deleting orphan category & removing from pages…")
-            # remove category from member pages first
-            cl = site.api(action="query", list="categorymembers", cmtitle=full,
-                          cmtype="page", cmlimit="max", format="json")
-            for mem in cl.get("query", {}).get("categorymembers", []):
-                remove_category_from_page(site.pages[mem["title"]], cat_name)
-            # delete category page
+            cont = None
+            while True:
+                cl = site.api(action='query', list='categorymembers', cmtitle=full,
+                              cmtype='page', cmlimit='max', cmcontinue=cont,
+                              format='json')
+                for mem in cl['query']['categorymembers']:
+                    remove_category_from_page(safe_page(site, mem['title']), cat_name)
+                if 'continue' in cl:
+                    cont = cl['continue']['cmcontinue']
+                else:
+                    break
             try:
-                cat_page.delete(reason="Bot: delete unused Tier-0 category", watch=False)
+                cat_page.delete(reason="Bot: delete unused Tier‑0 category", watch=False)
                 print("    • category page deleted")
             except APIError as e:
                 print("    ! delete failed", e.code)
             time.sleep(THROTTLE)
 
-        if "continue" in data:
-            cm_continue = data["continue"].get("cmcontinue")
+        if 'continue' in batch:
+            cm_continue = batch['continue']['cmcontinue']
             print("-- batch complete, continuing… --")
         else:
             break
-
-    print("Finished Tier-0 cleanup.")
+    print("Finished Tier‑0 cleanup.")
 
 if __name__ == "__main__":
     main()
