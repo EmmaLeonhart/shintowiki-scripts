@@ -55,6 +55,19 @@ def fix_backlinks(site, local_title: str, en_title: str) -> bool:
             time.sleep(THROTTLE)
     return changed
 
+# --- add near the other helpers -----------------------------------
+from mwclient.errors import InvalidPageTitle
+
+def safe_page(site, title):
+    """Return mwclient.Page or None if API returned an error."""
+    try:
+        return site.pages[title]
+    except (InvalidPageTitle, KeyError, APIError):
+        print("  ! API failure on", title, "- skipped")
+        return None
+# ------------------------------------------------------------------
+
+
 # ─── MAIN ──────────────────────────────────────────────────────────
 def main():
     site = mwclient.Site(LOCAL_URL, path=LOCAL_PATH)
@@ -79,8 +92,11 @@ def main():
                 continue
             resume_flag = False   # we have now reached the starting point
 
-            pg = site.pages[title]
-            m  = REDIR_RE.match(pg.text()) if pg.exists else None
+            pg = safe_page(site, title)
+            if not pg or not pg.exists:
+                continue
+            m = REDIR_RE.match(pg.text())
+
             if not m:
                 continue
 
