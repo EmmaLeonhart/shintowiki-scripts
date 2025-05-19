@@ -70,7 +70,7 @@ def reconstruct_history(site, title: str) -> str:
                     rvprop='timestamp|content', rvslots='main', rvlimit='max',
                     rvdir='newer', format='json')['query']['pages']
     page = next(iter(revs.values()))
-    out = [f"[[Jaw:{title}]]\n"]
+    out = [f"[[Ja:{title}]]\n"]
     for rev in page.get('revisions', []):
         ts = datetime.fromisoformat(rev['timestamp'].replace('Z','+00:00'))
         ts_str = ts.astimezone(timezone.utc).strftime('%Y‑%m‑%d %H:%M')
@@ -91,6 +91,13 @@ def should_delete(site, text: str) -> bool:
     tgt = targets.pop()
     pg = site.pages[tgt]
     return pg.exists and not pg.redirect
+
+def save_page(page: mwclient.page, text: str, summary: str):
+    try:
+        page.save(text, summary=summary)
+        print("    • saved", page.name)
+    except APIError as e:
+        print("    ! save failed:", e.code)
 
 # ─── ITERATOR OVER PAGES ───────────────────────────────────────────
 
@@ -150,7 +157,7 @@ def main():
         target_title = f"{NS_TARGET}:{title}"
         try:
             pg.move(target_title, reason="Bot: move to Jawiki resolution ns",
-                    noredirect=True, movetalk=False)
+                    no_redirect=True, move_talk=False)
             print("   • moved →", target_title)
         except APIError as e:
             print("   ! move failed", e.code)
