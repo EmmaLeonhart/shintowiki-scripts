@@ -1,26 +1,15 @@
 #!/usr/bin/env python3
 """
-redirect_category_fixer.py
-==========================
+redirect_category_fixer.py  –  move members out of redirect categories (v1.1)
+===========================================================================
 
-Reads **redirect_categories.txt** (one category title per line) and for each
-category that is a *redirect* to another local category, moves every page in
-the redirect category to the *target* category.
-
-How it works
-------------
-1. Normalises each line (strip `Category:` prefix, convert `_` → space).
-2. Checks whether `Category:<name>` exists and is a redirect to
-   `Category:<target>`.
-3. Queries the member pages of the *redirect* category (non‑redirect pages).
-4. On every member page, replaces
-       `[[Category:Old]]` or `[[Category:Old|…]]`
-   with   `[[Category:Target]]` / `[[Category:Target|…]]`
-   (`Old`/`Target` are space‑normalised). Saves each page with summary
-   “Bot: move category Old → Target”.
-5. Does **not** delete the redirect category itself (keeps it as redirect).
-
-Requirements: `mwclient`, write rights.
+* Reads **redirect_categories.txt** (one title per line).
+* For each title that is a local **redirect** to another category:
+  1. Finds the redirect target.
+  2. Rewrites every member page so `[[Category:Old]]` (or with sort key)
+     becomes `[[Category:Target]]`.
+  3. Prints a per‑category summary:  “→ moved N pages from Old → Target”.
+* Leaves the redirect category page itself intact.
 """
 import os, re, time, urllib.parse, mwclient
 from mwclient.errors import APIError
@@ -29,11 +18,11 @@ from mwclient.errors import APIError
 SITE_URL    = "shinto.miraheze.org"; SITE_PATH = "/w/"
 USERNAME    = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
 CAT_FILE    = "redirect_categories.txt"
-THROTTLE    = 0.5
+THROTTLE    = 0.4
 
-REDIR_RX = re.compile(r"#redirect\s*\[\[\s*Category:([^\]]+)", re.I)
+REDIR_RX = re.compile(r"#redirect\s*\[\[\s*:Category:([^\]]+)", re.I)
 
-# ─── UTILS ─────────────────────────────────────────────────────────
+# ─── HELPERS ─────────────────────────────────────────────────────────
 
 def norm(title: str) -> str:
     if title.lower().startswith("category:"):
@@ -41,22 +30,40 @@ def norm(title: str) -> str:
     return urllib.parse.unquote(title).replace('_', ' ').strip()
 
 
-def load_cat_list():
+def load_titles():
     if not os.path.exists(CAT_FILE):
         raise SystemExit("Missing redirect_categories.txt")
     with open(CAT_FILE, encoding="utf-8") as fh:
         return [norm(l) for l in fh if l.strip() and not l.startswith('#')]
 
 
-def member_pages(site, cat_full):
-    cm = site.api(action='query', list='categorymembers', cmtitle=cat_full,
-                  cmtype='page', cmlimit='max', format='json')
-    return [m['title'] for m in cm['query']['categorymembers']]
+def members_of(site, cat_full):
+    members = []
+    cont = None
+    while True:
+        cm = {
+            "action": "query",
+            "list":   "categorymembers",
+            "cmtitle": cat_full,
+            "cmtype":  "page|subcat|file",
+            "cmlimit": "max",
+            "format": "json"
+        }
+        if cont:
+            cm["cmcontinue"] = cont
+        data = site.api(**cm)
+        members.extend(m["title"] for m in data["query"]["categorymembers"])
+        if "continue" in data:
+            cont = data["continue"]["cmcontinue"]
+        else:
+            break
+    return members
 
 
-def swap_cat_on_page(page, old, new):
+
+def swap_cat(page, old, new):
     txt = page.text()
-    old_rx = re.escape(old).replace(r"\ ", "[ _]")  # space or underscore
+    old_rx = re.escape(old).replace(r"\ ", "[ _]")
     pat = re.compile(rf"\[\[\s*Category:{old_rx}([^\]]*)\]\]", re.I)
     if not pat.search(txt):
         return False
@@ -64,36 +71,37 @@ def swap_cat_on_page(page, old, new):
     if new_txt == txt:
         return False
     try:
-        page.save(new_txt, summary=f"Bot: move category {old} → {new}")
-        print("    • updated", page.name)
+        page.save(new_txt, summary=f"Bot: move category {old} → {new}", minor=True)
         return True
-    except APIError as e:
-        print("    ! failed", page.name, e.code)
+    except APIError:
         return False
 
-# ─── MAIN ─────────────────────────────────────────────────────────
+# ─── MAIN ───────────────────────────────────────────────────────────
 
 def main():
     site = mwclient.Site(SITE_URL, path=SITE_PATH)
     site.login(USERNAME, PASSWORD)
 
-    for cat in load_cat_list():
+    for cat in load_titles():
         full = f"Category:{cat}"
         pg = site.pages[full]
-        print("→", full)
-        if not pg.exists or not pg.redirect:
-            print("  • not a redirect – skipped")
-            continue
+        print("→", cat)
+        if not (pg.exists and pg.redirect):
+            print("  • not a redirect – skipped"); continue
         m = REDIR_RX.match(pg.text())
         if not m:
-            print("  • cannot parse redirect target – skipped")
-            continue
-        target = urllib.parse.unquote(m.group(1)).replace('_',' ').strip()
-        print(f"  • target: {target}")
-        for title in member_pages(site, full):
-            swap_cat_on_page(site.pages[title], cat, target)
-            time.sleep(THROTTLE)
-    print("Done.")
+            print("  • cannot parse redirect – skipped"); continue
+        target = norm(m.group(1))
+        print("  • target:", target)
+
+        moved = 0
+        for title in members_of(site, full):
+            if swap_cat(site.pages[title], cat, target):
+                moved += 1
+                print("    •", title)
+                time.sleep(THROTTLE)
+        print(f"  → moved {moved} pages from {cat} → {target}")
+    print("All redirect categories processed.")
 
 if __name__ == '__main__':
     main()

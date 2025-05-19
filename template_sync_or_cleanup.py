@@ -1,40 +1,40 @@
 #!/usr/bin/env python3
 """
-template_sync_or_cleanup.py  –  EN-wiki redirect synchroniser (v2)
-=================================================================
+template_sync_or_cleanup.py  –  EN‑wiki redirect synchroniser (v2.1)
+====================================================================
 
 * Walk the entire **Template:** namespace (NS 10).
-* If a template is **not transcluded anywhere** → delete it.
-* If its first non-blank line is a redirect to an English-Wikipedia template
-  (`#redirect [[en:Template:Foo]]` or `#redirect [[:en:Template:Foo]]`):
-    1. Query enwiki – if the target is missing → delete local template.
-    2. Otherwise fetch raw wikitext from enwiki, overwrite local template
-       with that content (summary: *Bot: sync with enwiki*).
-    3. Scan that wikitext for transcluded templates; for each valid title
-       that doesn’t yet exist locally, import its raw content from enwiki
-       (summary: *Bot: import from enwiki*).
-* Titles containing illegal characters (e.g., “<” or “{”) are ignored.
+* Delete templates that are **not transcluded** anywhere.
+* For templates that are pure redirects to `en:Template:Foo`:
+    1. If `Template:Foo` is missing on enwiki → delete local template.
+    2. Otherwise overwrite local template with the raw enwiki wikitext.
+    3. Import every first‑level sub‑template transcluded in that wikitext if
+       it doesn’t exist locally (skip invalid titles / parser‑functions).
 
-Requires delete/undelete rights and `mwclient`.
+Skipped sub‑template names:
+* empty strings or just `Template:`
+* names starting with `#` or `!`
+* names containing any characters **outside** `[A‑Z a‑z 0‑9 _‑ ]`
+
+Requires delete rights and mwclient.
 """
 import re, time, urllib.parse, requests, mwclient
-from mwclient.errors import APIError
+from mwclient.errors import APIError, InvalidPageTitle
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
 USERNAME   = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE   = 0.5
 EN_API     = "https://en.wikipedia.org/w/api.php"
-UA         = {"User-Agent": "template-sync-bot/2.0 (User:Immanuelle)"}
+UA         = {"User-Agent": "template-sync-bot/2.1 (User:Immanuelle)"}
 
-REDIRECT_RE  = re.compile(r"^#redirect\s*\[\[\s*:?(?:en):\s*Template:([^\]|]+)", re.I)
-INCLUDE_RE   = re.compile(r"\{\{\s*(?:[Tt]emplate:)?\s*([^\|{}\n]+)", re.I)
-VALID_TITLE  = re.compile(r"^[A-Za-z0-9_ \-]+$")  # simple title whitelist
+REDIRECT_RE = re.compile(r"^#redirect\s*\[\[\s*:?(?:en):\s*Template:([^\]|]+)", re.I)
+INCLUDE_RE  = re.compile(r"\{\{\s*(?:[Tt]emplate:)?\s*([^\|{}\n]+)", re.I)
+VALID_TITLE = re.compile(r"^[A-Za-z0-9 _\-]+$")
 
-# ─── EN-WIKI HELPERS ───────────────────────────────────────────────
+# ─── EN‑WIKI HELPER ────────────────────────────────────────────────
 
 def enwiki_raw(title: str) -> str | None:
-    """Return raw wikitext of Template:title from enwiki or None if missing."""
     params = {
         "action": "query", "prop": "revisions", "rvprop": "content",
         "rvslots": "main", "titles": f"Template:{title}", "formatversion": "2",
@@ -42,12 +42,12 @@ def enwiki_raw(title: str) -> str | None:
     }
     r = requests.get(EN_API, params=params, headers=UA, timeout=10)
     r.raise_for_status()
-    page = r.json()["query"]["pages"][0]
-    if "missing" in page:
+    pg = r.json()["query"]["pages"][0]
+    if "missing" in pg:
         return None
-    return page["revisions"][0]["slots"]["main"]["content"]
+    return pg["revisions"][0]["slots"]["main"]["content"]
 
-# ─── LOCAL ACTIONS ─────────────────────────────────────────────────
+# ─── LOCAL WRAPPERS ────────────────────────────────────────────────
 
 def delete_page(page: mwclient.page, reason: str):
     try:
@@ -56,7 +56,6 @@ def delete_page(page: mwclient.page, reason: str):
     except APIError as e:
         print("    ! delete failed:", e.code)
 
-
 def save_page(page: mwclient.page, text: str, summary: str):
     try:
         page.save(text, summary=summary)
@@ -64,58 +63,52 @@ def save_page(page: mwclient.page, text: str, summary: str):
     except APIError as e:
         print("    ! save failed:", e.code)
 
-# ─── MAIN PROCESSOR ───────────────────────────────────────────────
+# ─── MAIN LOOP ────────────────────────────────────────────────────
 
 def main():
     site = mwclient.Site(LOCAL_URL, path=LOCAL_PATH)
     site.login(USERNAME, PASSWORD)
 
-    cont = None
+    apcontinue = None
     while True:
-        params = {
-            "action": "query", "list": "allpages", "apnamespace": 10,
-            "aplimit": "max", "format": "json"
-        }
-        if cont:
-            params["apcontinue"] = cont
-        batch = site.api(**params)
-        for ap in batch["query"]["allpages"]:
-            title = ap["title"]  # Template:Foo
+        batch = site.api(action='query', list='allpages', apnamespace=10,
+                         aplimit='max', apcontinue=apcontinue, format='json')
+        for entry in batch['query']['allpages']:
+            title = entry['title']
             tpl = site.pages[title]
             text = tpl.text()
             print("→", title)
 
-            # 1. delete if unused
-            ei = site.api(action='query', list='embeddedin', eititle=title,
-                          eilimit='1', format='json')["query"]["embeddedin"]
-            if not ei:
+            # delete unused template
+            emb = site.api(action='query', list='embeddedin', eititle=title,
+                           eilimit=1, format='json')['query']['embeddedin']
+            if not emb:
                 delete_page(tpl, "Bot: delete unused template")
                 time.sleep(THROTTLE)
                 continue
 
-            # 2. handle en-wiki redirect
-            first_line = next((ln.strip() for ln in text.splitlines() if ln.strip()), "")
-            m = REDIRECT_RE.match(first_line)
+            # detect redirect to enwiki
+            first = next((ln.strip() for ln in text.splitlines() if ln.strip()), "")
+            m = REDIRECT_RE.match(first)
             if not m:
-                continue  # not a redirect to en
-
+                continue
             en_target = urllib.parse.unquote(m.group(1)).replace('_', ' ')
             raw = enwiki_raw(en_target)
             if raw is None:
-                print("  • enwiki target missing – deleting template")
                 delete_page(tpl, "Bot: dead enwiki redirect")
                 time.sleep(THROTTLE)
                 continue
-
             save_page(tpl, raw, "Bot: sync with enwiki")
             time.sleep(THROTTLE)
 
-            # import sub-templates (single level)
+            # import first‑level sub‑templates
             for name in {urllib.parse.unquote(n).strip() for n in INCLUDE_RE.findall(raw)}:
-                if (name.startswith("#") or name.startswith("!") or
-                        not VALID_TITLE.match(name)):
+                if (not name or name.startswith(('#', '!')) or not VALID_TITLE.match(name)):
                     continue
-                local_inc = site.pages[f"Template:{name}"]
+                try:
+                    local_inc = site.pages[f"Template:{name}"]
+                except InvalidPageTitle:
+                    continue  # skip illegal titles
                 if local_inc.exists:
                     continue
                 src = enwiki_raw(name)
@@ -125,7 +118,7 @@ def main():
                 time.sleep(THROTTLE)
 
         if 'continue' in batch:
-            cont = batch['continue']['apcontinue']
+            apcontinue = batch['continue']['apcontinue']
         else:
             break
     print("Finished template sync/cleanup.")
