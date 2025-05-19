@@ -1,21 +1,17 @@
 #!/usr/bin/env python3
 """
-tier3_ja_to_enwiki_updater.py
-=============================
+tier3_ja_to_enwiki_updater.py  –  verbose v1.1
+=============================================
+Adds detailed progress output so you can see it working instead of appearing
+"stuck".
 
-Walk every subcategory of **Category:Tier 3 Categories**.  If the page has a
-jawiki inter‑wiki
-    [[ja:Category:Foo]]
-then via that jawiki title → Wikidata → check whether an **enwiki category**
-sitelink exists.  If yes:
-    * Ensure the local page is **not** in
-          [[Category:Tier 2 Categories with no enwiki]]
-      (remove if present)
-    * Ensure it **is** in
-          [[Category:Tier 2 Categories with enwiki]]
-
-No other edits are made; pages without a ja‑link or without an enwiki
-sitelink are left untouched.
+Changes vs. v1.0
+----------------
+* Prints **total count** of Tier‑3 cats, and a `n/total → Title` line for
+  every category processed (flush=True so it appears immediately).
+* Every network call (Wikidata) keeps the old throttling but the progress
+  message is written *before* the potentially slow request, so you always
+  see movement.
 """
 import re, time, urllib.parse, requests, mwclient
 from mwclient.errors import APIError
@@ -25,13 +21,13 @@ SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
 USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE  = 0.4
 
-SRC_CAT   = "Tier 3 Categories"           # where we iterate
+SRC_CAT   = "Tier 3 Categories"
 TAG_NO    = "Tier 2 Categories with no enwiki"
 TAG_YES   = "Tier 2 Categories with enwiki"
 
 JA_LINK   = re.compile(r"\[\[\s*ja:Category:([^\]|]+)", re.I)
 WD_API    = "https://www.wikidata.org/w/api.php"
-UA        = {"User-Agent": "tier3-ja2enwiki/1.0 (User:Immanuelle)"}
+UA        = {"User-Agent": "tier3-ja2enwiki/1.1 (User:Immanuelle)"}
 
 # ─── WIKIDATA HELPERS ─────────────────────────────────────────────-
 
@@ -58,14 +54,17 @@ def en_sitelink(qid: str) -> str | None:
 def main():
     site = mwclient.Site(SITE_URL, path=SITE_PATH)
     site.login(USERNAME, PASSWORD)
-    print("Logged in – scanning Tier‑3 cats for ja→enwiki…")
+    print("Logged in – scanning Tier‑3 cats for ja→enwiki…", flush=True)
 
     cats = site.api(action='query', list='categorymembers', cmtitle=f"Category:{SRC_CAT}",
                     cmtype='subcat', cmlimit='max', format='json')['query']['categorymembers']
+    total = len(cats)
 
-    for ent in cats:
+    for idx, ent in enumerate(cats, 1):
         full = ent['title']
         cat_name = full.split(':',1)[1]
+        print(f"{idx}/{total} → {cat_name}", flush=True)
+
         page = site.pages[full]
         if page.redirect:
             continue
@@ -80,7 +79,6 @@ def main():
         if not en_sitelink(qid):
             continue  # no enwiki sitelink
 
-        print("→", cat_name, "• enwiki exists – retag")
         changed = False
         if f"[[Category:{TAG_NO}]]" in text:
             text = text.replace(f"[[Category:{TAG_NO}]]", "")
@@ -90,12 +88,11 @@ def main():
             changed = True
         if changed:
             try:
-                page.save(text, summary="Bot: mark Tier‑3 cat as having enwiki")
-                print("   • tags updated")
+                page.save(text, summary="Bot: mark Tier-3 cat as having enwiki")
+                print("   • tags updated", flush=True)
             except APIError as e:
-                print("   ! save failed", e.code)
+                print("   ! save failed", e.code, flush=True)
         time.sleep(THROTTLE)
-
     print("Done.")
 
 if __name__ == "__main__":
