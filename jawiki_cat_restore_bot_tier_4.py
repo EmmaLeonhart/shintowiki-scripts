@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-jawiki_cat_restore_bot.py  –  JA-wiki → local category sync (tier‑4 v‑2025‑05‑19‑fix)
+jawiki_cat_restore_bot_tier_4.py  –  JA-wiki → local category sync (tier‑4 v‑2025‑05‑19‑fix)
 ================================================================================================
 Bug‑fix: do **not** shadow the `ja` Site object — use `ja_title` for the
 Japanese page title. Previous version crashed with
