@@ -24,11 +24,45 @@ REDIR_RE = re.compile(r"^#redirect\s*\[\[\s*:?(?:en):([^\]|]+)", re.I)
 
 # ─── HELPERS ───────────────────────────────────────────────────────
 def enwiki_exists(title: str) -> bool:
-    r = requests.get(EN_API, params={"action":"query","titles":title,
-                                     "format":"json"},
-                     headers=UA, timeout=8)
-    pg = next(iter(r.json()["query"]["pages"].values()))
-    return "missing" not in pg
+    """
+    Return True when *title* exists as a page on English Wikipedia
+    (case-insensitive).
+
+    The function is hardened so that **any** API irregularity – network
+    error, bad response, or an unexpected JSON layout such as the one that
+    raised `KeyError: 'pages'` – simply returns *False* instead of killing
+    the whole run.
+    """
+    if not title or title.endswith(":"):         # empty / namespace prefix only
+        return False
+
+    try:
+        r = requests.get(
+            EN_API,
+            params={
+                "action": "query",
+                "titles": title,
+                "format": "json"
+            },
+            headers=UA,
+            timeout=8
+        )
+        r.raise_for_status()
+        data = r.json()
+
+        # Some edge cases (e.g. malformed titles) return an 'error' field,
+        # others return {"batchcomplete": …} without a 'pages' dict.
+        pages = data.get("query", {}).get("pages")
+        if not pages:                       # missing key → treat as nonexistent
+            return False
+
+        pg = next(iter(pages.values()))
+        return "missing" not in pg
+
+    except Exception as err:                # requests or json failure
+        print("  ! enwiki_exists API problem:", err, "- treating as missing")
+        return False
+
 
 
 def fix_backlinks(site, local_title: str, en_title: str) -> bool:
