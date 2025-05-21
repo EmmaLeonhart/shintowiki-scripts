@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-dewiki_cat_restore_bot_tier_4.py  –  de‑wiki → local category sync (Tier‑2, 2025‑05‑19)
+dewiki_cat_restore_bot_tier_4.py  –  de‑wiki → local category sync (Tier 8, 2025‑05‑19)
 ================================================================================
 * Fixes variable shadowing bug **and** restores the missing helper functions
   (`build_or_update_category`, `tag_article`) so the script runs end‑to‑end.
-* Adds/updates en‑wiki interwiki, Tier‑2 tags, and mutually exclusive
+* Adds/updates en‑wiki interwiki, Tier 8 tags, and mutually exclusive
   *with/without enwiki* tags exactly as requested.
 """
 import os, sys, time, urllib.parse, re, requests, mwclient
@@ -23,9 +23,9 @@ TAG_EN_NEW   = "Categories created from enwiki title"
 TAG_de_NEW   = "Categories created from dewiki title"
 TAG_REDIRECT = "dewiki redirect categories"
 
-TIER_MAIN = "De Tier 2 Categories"
-TIER_WITH = "De Tier 2 Categories with enwiki"
-TIER_NOEN = "De Tier 2 Categories with no enwiki"
+TIER_MAIN = "De Tier 8 Categories"
+TIER_WITH = "De Tier 8 Categories with enwiki"
+TIER_NOEN = "De Tier 8 Categories with no enwiki"
 
 # ─── MW SESSIONS ────────────────────────────────────────────────────
 shinto = mwclient.Site(SHINTO_URL, path=SHINTO_PATH); shinto.login(USERNAME, PASSWORD)
@@ -88,7 +88,7 @@ def build_or_update_category(de_cat: str, en_title: Optional[str], src: str) -> 
     if red_tgt:
         tgt_pg = shinto.pages[red_tgt]
         body = ensure_line(tgt_pg.text(), f"[[Category:{TIER_MAIN}]]")
-        save_if_changed(tgt_pg, body, "Bot: ensure Tier‑2 tag")
+        save_if_changed(tgt_pg, body, "Bot: ensure Tier 8 tag")
         return red_tgt
 
     name = en_title or de_cat
@@ -118,7 +118,7 @@ def build_or_update_category(de_cat: str, en_title: Optional[str], src: str) -> 
 
     if not existed:
         body += f"\nThis category was created from de→Wikidata links on [[{src}]].\n"
-    save_if_changed(page, body, "Bot: update/create Tier‑2 category")
+    save_if_changed(page, body, "Bot: update/create Tier 8 category")
 
     # create de redirect if we just created an EN cat
     if en_title and not existed:
