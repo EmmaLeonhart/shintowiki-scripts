@@ -29,7 +29,7 @@ THROTTLE   = 0.4
 EN_API     = "https://en.wikipedia.org/w/api.php"
 UA         = {"User-Agent": "tier0-enwiki-fix-bot/1.1 (User:Immanuelle)"}
 
-START_AT   = "New"
+START_AT   = "Sele"
 resume_flag = bool(START_AT)
 
 EN_IW_RE = re.compile(r"^\[\[\s*en:\s*Category:([^]|]+)\s*\]\]", re.I|re.M)
