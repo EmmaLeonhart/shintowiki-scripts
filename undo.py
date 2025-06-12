@@ -29,7 +29,7 @@ USERNAME   = 'Immanuelle'
 PASSWORD   = '[REDACTED_SECRET_1]'
 PAGES_TXT  = 'pages.txt'     # list of page titles
 THROTTLE   = 1.0             # seconds between API calls
-UNDO_COUNT = 2               # how many recent edits to undo per page
+UNDO_COUNT = 3               # how many recent edits to undo per page
 
 # ─── LOGIN ──────────────────────────────────────────────────────────
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
