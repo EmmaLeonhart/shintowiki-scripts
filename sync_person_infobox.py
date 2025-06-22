@@ -79,13 +79,27 @@ def wd_label(wid:str) -> str:
 def ill_link(wid:str)->str:
     return f"{{{{ill|{wd_label(wid)}|qid={wid}}}}}"
 
-def format_date(val:dict,birth:bool)->str:
-    iso=val["time"].lstrip("+")
-    y,m,d=iso.split("T")[0].split("-")
-    prec=val["precision"]
-    if prec>=11:
-        return f"{{{{{'birth' if birth else 'death'} date|{y}|{int(m)}|{int(d)}}}}}"
-    return y
+def format_date(val:dict, birth:bool)->str:
+    """Convert a Wikidata time snak to wikitext.
+
+    * If precision ≥11 (day) → {{birth date|YYYY|MM|DD}} / {{death date|…}}
+    * If precision ==10 (month) → "YYYY-MM"
+    * Otherwise → "YYYY" (signed years handled)
+    Handles negative / BCE years and Wikidata "00" month or day paddings.
+    """
+    iso = val["time"].lstrip("+")           # e.g. "1327-00-00T…" or "-0130-05-00T…"
+    date_part = iso.split("T")[0]            # drop time zone
+    segments = [seg for seg in date_part.split("-") if seg != ""]  # remove empty from BCE
+    year = segments[0] if segments else ""
+    month = segments[1] if len(segments) > 1 else "00"
+    day = segments[2] if len(segments) > 2 else "00"
+    prec = val.get("precision", 9)
+
+    if prec >= 11 and month != "00" and day != "00":
+        return f"{{{{{'birth' if birth else 'death'} date|{year}|{int(month)}|{int(day)}}}}}"
+    if prec == 10 and month != "00":
+        return f"{year}-{month}"
+    return year
 
 # ---------- fetch selected props ----------------------------------------
 
