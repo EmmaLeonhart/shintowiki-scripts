@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(move \"%USERPROFILE%\\Downloads\\JQVEM14S.txt\" \"C:\\Users\\Immanuelle\\Documents\\Github\\q\\wikibot\\pages.txt\")",
+      "Bash(python add_wikidata_links.py:*)",
+      "Bash(python replace_overwrite_category.py:*)",
+      "Bash(python add_enwiki_interwiki.py:*)",
+      "Bash(python add_wikidata_from_id_interwiki.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
