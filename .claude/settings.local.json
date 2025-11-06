@@ -5,7 +5,9 @@
       "Bash(python add_wikidata_links.py:*)",
       "Bash(python replace_overwrite_category.py:*)",
       "Bash(python add_enwiki_interwiki.py:*)",
-      "Bash(python add_wikidata_from_id_interwiki.py:*)"
+      "Bash(python add_wikidata_from_id_interwiki.py:*)",
+      "Bash(python add_wikidata_from_id_interwiki_category.py:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
