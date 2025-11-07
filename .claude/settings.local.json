@@ -8,7 +8,8 @@
       "Bash(python add_wikidata_from_id_interwiki.py:*)",
       "Bash(python add_wikidata_from_id_interwiki_category.py:*)",
       "Bash(python:*)",
-      "Bash(timeout 5 shutdown /s /t 0)"
+      "Bash(timeout 5 shutdown /s /t 0)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []
