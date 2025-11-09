@@ -1,0 +1,50 @@
+Logged in as Immanuelle
+
+Extracting Wikidata QIDs for Ancient Egyptian Decans
+
+============================================================
+
+Fetching all pages in [[Category:Ancient Egyptian Decans]]...
+Found 30 members
+
+1. Ab (decan) ... ✓ Q303855
+2. Baktiu ... ✓ Q804527
+3. Chau (Decan) ... ✓ Q1068317
+4. Chentet-cheret ... ✓ Q1070112
+5. Chentet-heret ... ✓ Q1070111
+6. Cheret-waret ... ✓ Q1070217
+7. Cheri-cheped-Kenmut ... ✓ Q972923
+8. Cheri-cheped-seret ... ✓ Q1070224
+9. Heri-ab-wia ... ✓ Q1609860
+10. Imi-chet-Sopdet ... ✓ Q1272698
+11. Kenemu ... ✓ Q1738727
+12. Kenmet (Decan) ... ✓ Q1632718
+13. Pehui-djat ... ✓ Q2067507
+14. Sawi-qed-seret ... ✓ Q1402958
+15. Sawi-seret ... ✓ Q2228296
+16. Schespet ... ✓ Q2233871
+17. Schetui ... ✓ Q2233884
+18. Seba-en-Sah ... ✓ Q2262463
+19. Seba-en-Sopdet ... ✓ Q2262466
+20. Sebschesen ... ✓ Q2263469
+21. Semed-seret ... ✓ Q1621224
+22. Septi-chenwi ... ✓ Q2271782
+23. Seret (Decan) ... ✓ Q2272336
+24. Sopdet (constellation) ... ✓ Q1418302
+25. Temat-cheret ... ✓ Q2402466
+26. Temat-heret ... ✓ Q1549527
+27. Temat-heret-cheret ... ✓ Q2402471
+28. Tepi-a-Sopdet ... ✓ Q1653714
+29. Tjemes-ni-chentet ... ✓ Q2803584
+30. Weschati-Bekati ... ✓ Q1339483
+
+============================================================
+
+Writing results to ancient_egyptian_decans_wikidata.csv...
+
+✓ CSV file created: ancient_egyptian_decans_wikidata.csv
+
+Summary:
+  Total members: 30
+  Found QIDs: 30
+  Missing QIDs: 0
