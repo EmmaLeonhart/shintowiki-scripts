@@ -9,7 +9,14 @@
       "Bash(python add_wikidata_from_id_interwiki_category.py:*)",
       "Bash(python:*)",
       "Bash(timeout 5 shutdown /s /t 0)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(xargs -I {} sh -c 'echo \"\"\"\"=== {} ===\"\"\"\" && head -5 \"\"\"\"{}\"\"\"\"')",
+      "Bash(python3:*)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe\" add_enwiki_link_to_category.py)",
+      "Bash(tee:*)",
+      "Bash(timeout 20 python:*)",
+      "Bash(timeout 30 python:*)",
+      "Bash(timeout 3600 python:*)"
     ],
     "deny": [],
     "ask": []
