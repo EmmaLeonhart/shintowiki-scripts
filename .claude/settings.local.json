@@ -16,7 +16,8 @@
       "Bash(tee:*)",
       "Bash(timeout 20 python:*)",
       "Bash(timeout 30 python:*)",
-      "Bash(timeout 3600 python:*)"
+      "Bash(timeout 3600 python:*)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []
