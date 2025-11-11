@@ -62,16 +62,18 @@ def get_wikidata_p11250(qid):
     """Query Wikidata for P11250 property value."""
     try:
         url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
-        headers = {"User-Agent": "WikidataBot/1.0 (https://shinto.miraheze.org/; bot for checking wikidata links)"}
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        }
         response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
 
         data = response.json()
         entity = data.get('entities', {}).get(qid, {})
 
-        # Look for P11250 property
+        # Look for P11250 property - check both with and without uppercase
         claims = entity.get('claims', {})
-        p11250_claims = claims.get('P11250', [])
+        p11250_claims = claims.get('P11250', []) or claims.get('p11250', [])
 
         if not p11250_claims:
             return None
@@ -79,7 +81,20 @@ def get_wikidata_p11250(qid):
         # Get the value of the first P11250 claim
         claim = p11250_claims[0]
         datavalue = claim.get('mainsnak', {}).get('datavalue', {})
+
+        # For string values, the structure is {"value": "string_value", "type": "string"}
         value = datavalue.get('value', '')
+
+        # If value is empty string, try alternatives
+        if not value:
+            # Try as direct string extraction
+            if isinstance(datavalue, dict) and 'value' in datavalue:
+                value = datavalue['value']
+            else:
+                # Last resort - check if it's a dict with 'id' key
+                value_obj = datavalue.get('value')
+                if isinstance(value_obj, dict):
+                    value = value_obj.get('id', '')
 
         return value if value else None
 
