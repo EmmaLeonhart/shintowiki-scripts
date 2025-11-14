@@ -133,14 +133,16 @@ def main():
     # Get the category
     category = site.pages['Category:Pages linked to Wikidata']
 
-    print(f"\nFetching all pages in [[Category:Pages linked to Wikidata]]...")
+    print(f"\nFetching mainspace pages in [[Category:Pages linked to Wikidata]]...")
     try:
-        members = list(category.members())
+        all_members = list(category.members())
+        # Filter to mainspace only (namespace 0)
+        members = [page for page in all_members if page.namespace == 0]
     except Exception as e:
         print(f"ERROR: Could not fetch category members – {e}")
         return
 
-    print(f"Found {len(members)} pages\n")
+    print(f"Found {len(members)} mainspace pages (filtered from {len(all_members)} total)\n")
 
     processed_count = 0
     has_p11250_count = 0
@@ -184,8 +186,8 @@ def main():
             has_p11250_count += 1
 
             # Check if P11250 matches the page name
-            # Format: "shinto:PageName" or similar wiki prefix
-            expected_pattern = f"shinto:{page_name.replace(' ', '_')}"
+            # Format: "shinto:Page Name" (with spaces, as stored in Wikidata)
+            expected_pattern = f"shinto:{page_name}"
 
             is_matching = p11250_value == expected_pattern
 
