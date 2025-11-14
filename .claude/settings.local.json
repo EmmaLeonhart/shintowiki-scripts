@@ -19,7 +19,8 @@
       "Bash(timeout 3600 python:*)",
       "Bash(dir:*)",
       "Bash(findstr:*)",
-      "Bash(timeout 14400 python:*)"
+      "Bash(timeout 14400 python:*)",
+      "Bash(timeout 7200 python:*)"
     ],
     "deny": [],
     "ask": []
