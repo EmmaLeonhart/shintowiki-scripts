@@ -143,13 +143,23 @@ def main():
         return
 
     print(f"Found {len(members)} mainspace pages (filtered from {len(all_members)} total)\n")
+
+    # Start from July 20 (Lunisolar)
+    start_page = "July 20 (Lunisolar)"
+    start_idx = 0
+    for i, page in enumerate(members):
+        if page.name == start_page:
+            start_idx = i
+            break
+
+    print(f"Starting from: {start_page} (index {start_idx})")
     print(f"Processing pages...\n")
 
     processed_count = 0
     skipped_count = 0
     error_count = 0
 
-    for idx, page in enumerate(members, 1):
+    for idx, page in enumerate(members[start_idx:], start_idx + 1):
         try:
             page_name = page.name
 
