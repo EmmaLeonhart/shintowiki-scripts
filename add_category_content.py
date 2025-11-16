@@ -327,32 +327,32 @@ def main():
     count = 0
     for cat_name in categories:
         try:
-            print(f"→ {cat_name}")
+            print(f"Processing: {cat_name}")
             pg = s.pages[f"Category:{cat_name}"]
 
             if not pg.exists():
-                print("  ! category does not exist – skip")
+                print("  [SKIP] category does not exist")
                 continue
 
             current_text = pg.text()
 
             # Check if category already has content
             if current_text.strip():
-                print("  • already has content – skip")
+                print("  [SKIP] already has content")
                 continue
 
             # Add the category content
             try:
                 pg.save(new_content, summary="Bot: Add category content from Wanted Categories on Nov 16, 2025")
                 count += 1
-                print("  ✓ added category content")
+                print("  [DONE] added category content")
             except APIError as e:
-                print(f"  ! save failed: {e.code}")
+                print(f"  [FAILED] save failed: {e.code}")
 
             time.sleep(THROTTLE)
 
         except Exception as e:
-            print(f"  ! error: {str(e)}")
+            print(f"  [ERROR] {str(e)}")
 
     print(f"\nTotal categories updated: {count}")
 
