@@ -21,7 +21,8 @@
       "Bash(findstr:*)",
       "Bash(timeout 14400 python:*)",
       "Bash(timeout 7200 python:*)",
-      "WebFetch(domain:shinto.miraheze.org)"
+      "WebFetch(domain:shinto.miraheze.org)",
+      "Bash(timeout 600 python:*)"
     ],
     "deny": [],
     "ask": []
