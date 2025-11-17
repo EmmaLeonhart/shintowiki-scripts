@@ -71,7 +71,9 @@ def get_qid_from_wikipedia(lang_code: str, page_title: str) -> str:
 def extract_languages_from_ill(template_text: str):
     """
     Extract language codes and titles from {{ill|...}} template
-    Format: {{ill|English Title|lang1|Title1|lang2|Title2|...|key=value|...}}
+    Handles multiple formats:
+    1. Standard: {{ill|English Title|lang1|Title1|lang2|Title2|...}}
+    2. With params: {{ill|Title|key=value|...}} where value is a language code (en, ja, etc)
     Returns: list of (lang_code, title) tuples
     """
     languages = []
@@ -80,29 +82,39 @@ def extract_languages_from_ill(template_text: str):
     content = template_text[6:-2]
 
     # Split by | but carefully - we need to handle the structure
-    # Format is: title|lang|title|lang|title|...|param=value|param=value
     parts = content.split('|')
 
     # First part is always the English title
     english_title = parts[0]
 
-    # Now iterate through remaining parts looking for language patterns
+    # Method 1: Look for standard lang|title pairs (no = sign)
     i = 1
     while i < len(parts):
         part = parts[i]
 
-        # Check if this is a language code (2-3 chars, no =)
-        if '=' not in part and len(part) <= 3 and part.isalpha():
+        # Check if this is a language code (no = sign, and next part also no =)
+        if '=' not in part and len(part) > 0:
             lang_code = part
             # Next part should be the title
             if i + 1 < len(parts) and '=' not in parts[i + 1]:
                 title = parts[i + 1]
-                languages.append((lang_code, title))
-                i += 2
-            else:
-                i += 1
-        else:
-            i += 1
+                # Skip if lang_code is very long (likely a title)
+                if len(lang_code) <= 20:
+                    languages.append((lang_code, title))
+                    i += 2
+                    continue
+
+        i += 1
+
+    # Method 2: If no languages found via method 1, look for key=languagecode patterns
+    # This handles templates like: {{ill|Title|every|8=en|12=simple|...}}
+    if not languages:
+        for part in parts[1:]:
+            if '=' in part:
+                key, val = part.split('=', 1)
+                # Check if value looks like a language code (2-3 letters, alphabetic)
+                if len(val) <= 3 and val.isalpha() and len(val) >= 2:
+                    languages.append((val, english_title))
 
     return languages
 

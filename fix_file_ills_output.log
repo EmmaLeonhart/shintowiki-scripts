@@ -1,0 +1,63 @@
+Logged in
+[INFO] Processing pages in Category:Pages with files linked by ill
+Processing: Azuma Shrine (Yokohama)
+  [INFO] Found file ill template
+    Extracted filename: File:Azuma shrine Yokohama.jpg
+    Replaced with: [[File:Azuma shrine Yokohama.jpg|thumb]]
+  [DONE] updated page
+  [ERROR] 'charmap' codec can't encode character '\u016b' in position 15: character maps to <undefined>
+Processing: Kashima Jingu
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu haiden-1.JPG
+    Replaced with: [[File:Kashima-jingu haiden-1.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu entrance.JPG
+    Replaced with: [[File:Kashima-jingu entrance.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-kanameishi-shinzu-namazu-e.jpg
+    Replaced with: [[File:Kashima-kanameishi-shinzu-namazu-e.jpg|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Katori-jingu haiden.JPG
+    Replaced with: [[File:Katori-jingu haiden.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kasuga-taisha11bs3200.jpg
+    Replaced with: [[File:Kasuga-taisha11bs3200.jpg|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu honden.JPG
+    Replaced with: [[File:Kashima-jingu honden.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu karidono.JPG
+    Replaced with: [[File:Kashima-jingu karidono.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu roumon.JPG
+    Replaced with: [[File:Kashima-jingu roumon.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu shasou.JPG
+    Replaced with: [[File:Kashima-jingu shasou.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Isonokami-jingu, haiden-2.jpg
+    Replaced with: [[File:Isonokami-jingu, haiden-2.jpg|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu tourou.JPG
+    Replaced with: [[File:Kashima-jingu tourou.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashima-jingu shasou.JPG
+    Replaced with: [[File:Kashima-jingu shasou.JPG|thumb]]
+  [INFO] Found file ill template
+    Extracted filename: File:Kashimaguuke-ato -3.JPG
+    Replaced with: [[File:Kashimaguuke-ato -3.JPG|thumb]]
+  [DONE] updated page
+  [ERROR] 'charmap' codec can't encode character '\u016b' in position 22: character maps to <undefined>
+Processing: Obata Nagatsuka Kofun
+  [INFO] Found file ill template
+    Extracted filename: File:Obata-Nagatsuka-kofun01.jpg
+    Replaced with: [[File:Obata-Nagatsuka-kofun01.jpg|thumb]]
+  [DONE] updated page
+  [ERROR] 'charmap' codec can't encode character '\u016b' in position 27: character maps to <undefined>
+Processing: Wepet-renpet
+  [INFO] Found file ill template
+    Extracted filename: File:SenenmutRad.svg
+    Replaced with: [[File:SenenmutRad.svg|thumb]]
+  [DONE] updated page
+
+Total pages updated: 4
