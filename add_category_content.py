@@ -330,18 +330,14 @@ def main():
             print(f"Processing: {cat_name}")
             pg = s.pages[f"Category:{cat_name}"]
 
-            if not pg.exists():
-                print("  [SKIP] category does not exist")
-                continue
+            if pg.exists:
+                current_text = pg.text()
+                # Check if category already has content
+                if current_text.strip():
+                    print("  [SKIP] already has content")
+                    continue
 
-            current_text = pg.text()
-
-            # Check if category already has content
-            if current_text.strip():
-                print("  [SKIP] already has content")
-                continue
-
-            # Add the category content
+            # Add the category content (create if doesn't exist, or overwrite if empty)
             try:
                 pg.save(new_content, summary="Bot: Add category content from Wanted Categories on Nov 16, 2025")
                 count += 1

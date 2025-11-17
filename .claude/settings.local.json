@@ -23,7 +23,14 @@
       "Bash(timeout 7200 python:*)",
       "WebFetch(domain:shinto.miraheze.org)",
       "Bash(timeout 600 python:*)",
-      "Bash(timeout 1200 python:*)"
+      "Bash(timeout 1200 python:*)",
+      "Bash(timeout 1800 python:*)",
+      "Bash(taskkill:*)",
+      "Bash(wmic process where name=\"python.exe\" delete)",
+      "Bash(timeout 300 python:*)",
+      "Bash(wmic process where \"name=''python.exe''\" call terminate)",
+      "Bash(timeout 60 python:*)",
+      "Bash(timeout 120 python:*)"
     ],
     "deny": [],
     "ask": []
