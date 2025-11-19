@@ -31,7 +31,9 @@ PASSWORD = '[REDACTED_SECRET_1]'
 # Category mapping: Wikidata -> Aelaki
 CATEGORY_MAPPING = {
     'Q1084': 'Q20',      # noun -> Noun
-    'Q24905': 'Q22'      # verb -> Verb
+    'Q24905': 'Q22',     # verb -> Verb
+    'Q34698': 'Q25',     # adjective -> Adjective
+    'Q380057': 'Q26'     # adverb -> Adverb
 }
 
 def map_category(wd_category):

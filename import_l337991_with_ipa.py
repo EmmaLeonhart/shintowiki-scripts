@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
-Import Wikidata L4164 to Aelaki with IPA Pronunciation
-========================================================
-1. Imports L4164 from Wikidata to Aelaki with proper category mapping
-2. Extracts English IPA pronunciation from Wiktionary
-3. Adds P123 (IPA) claim to the lexeme with the pronunciation
+Import Wikidata L337991 to Aelaki with IPA Pronunciation
+==========================================================
+Imports L337991 (kept) from Wikidata to Aelaki with category mapping and IPA
 """
 
 import requests
@@ -19,7 +17,7 @@ if sys.platform == 'win32':
 
 WIKIDATA_API = 'https://www.wikidata.org/w/api.php'
 AELAKI_API = 'https://aelaki.miraheze.org/w/api.php'
-WIKTIONARY_URL = 'https://en.wiktionary.org/wiki/kill'
+WIKTIONARY_URL = 'https://en.wiktionary.org/wiki/kept'
 USERNAME = 'Immanuelle'
 PASSWORD = '[REDACTED_SECRET_1]'
 
@@ -71,15 +69,15 @@ def extract_ipa_from_wiktionary(url):
         pass
 
     # Fallback: hardcode common pronunciations if extraction fails
-    # For "kill", the IPA from the Wiktionary page is /kɪl/ but we store without slashes
     fallback_ipas = {
+        'kept': 'kɛpt',
         'kill': 'kɪl',
         'cat': 'kæt',
         'dog': 'dɔɡ'
     }
 
     print("⊘ Could not extract IPA from Wiktionary, using common pronunciation")
-    ipa = fallback_ipas.get('kill', None)
+    ipa = fallback_ipas.get('kept', None)
     if ipa:
         print(f"✓ Using known pronunciation: {ipa}")
         print()
@@ -90,16 +88,16 @@ def extract_ipa_from_wiktionary(url):
     return None
 
 print("=" * 80)
-print("IMPORT WIKIDATA L4164 WITH IPA TO AELAKI")
+print("IMPORT WIKIDATA L337991 WITH IPA TO AELAKI")
 print("=" * 80)
 print()
 
 # Step 1: Extract IPA from Wiktionary
 ipa_pronunciation = extract_ipa_from_wiktionary(WIKTIONARY_URL)
 
-# Step 2: Fetch L4164 from Wikidata
+# Step 2: Fetch L337991 from Wikidata
 print("=" * 80)
-print("STEP 2: FETCH L4164 FROM WIKIDATA")
+print("STEP 2: FETCH L337991 FROM WIKIDATA")
 print("=" * 80)
 print()
 
@@ -108,27 +106,27 @@ session.headers.update({'User-Agent': 'Mozilla/5.0'})
 
 r = session.get(WIKIDATA_API, params={
     'action': 'wbgetentities',
-    'ids': 'L4164',
+    'ids': 'L337991',
     'format': 'json'
 })
 
-wd_entity = r.json()['entities']['L4164']
+wd_entity = r.json()['entities']['L337991']
 
 if 'missing' in wd_entity:
-    print("✗ L4164 not found on Wikidata")
+    print("✗ L337991 not found on Wikidata")
     sys.exit(1)
 
 lemma_value = wd_entity.get('lemmas', {}).get('en', {}).get('value', '')
 if not lemma_value:
     lemmas = wd_entity.get('lemmas', {})
     if lemmas:
-        lemma_value = list(lemmas.values())[0].get('value', 'L4164')
+        lemma_value = list(lemmas.values())[0].get('value', 'L337991')
 
 wd_category = wd_entity.get('lexicalCategory', 'Q9')
 aelaki_category = map_category(wd_category)
 senses = wd_entity.get('senses', [])
 
-print(f"✓ Fetched L4164 from Wikidata")
+print(f"✓ Fetched L337991 from Wikidata")
 print(f"  Lemma: {lemma_value}")
 print(f"  Wikidata Category: {wd_category}")
 print(f"  Mapped to Aelaki Category: {aelaki_category}")
@@ -203,13 +201,13 @@ print()
 
 time.sleep(0.5)
 
-# Step 5: Add senses
-print("=" * 80)
-print("STEP 5: ADD SENSES")
-print("=" * 80)
-print()
-
+# Step 5: Add senses (if any)
 if senses:
+    print("=" * 80)
+    print("STEP 5: ADD SENSES")
+    print("=" * 80)
+    print()
+
     senses_to_add = []
     for sense in senses:
         glosses = sense.get('glosses', {})
@@ -235,15 +233,11 @@ if senses:
         entity = result['entity']
         senses_count = len(entity.get('senses', []))
         print(f"✓ Added {senses_count} senses")
-        for i, sense in enumerate(entity.get('senses', []), 1):
-            glosses = sense.get('glosses', {})
-            gloss_langs = list(glosses.keys())[:6]
-            print(f"  S{i}: {gloss_langs}...") if len(glosses) > 6 else print(f"  S{i}: {gloss_langs}")
     else:
         print(f"✗ Error adding senses: {result.get('error', {}).get('code')}")
 
-print()
-time.sleep(0.5)
+    print()
+    time.sleep(0.5)
 
 # Step 6: Add P4, P7, and P5 (IPA) claims
 print("=" * 80)
@@ -258,7 +252,7 @@ claims_to_add = {
                 'snaktype': 'value',
                 'property': 'P4',
                 'datavalue': {
-                    'value': 'L4164',
+                    'value': 'L337991',
                     'type': 'string'
                 },
                 'datatype': 'string'
@@ -323,7 +317,7 @@ if 'entity' in result:
     p5_value = claims.get('P5', [{}])[0].get('mainsnak', {}).get('datavalue', {}).get('value', 'N/A') if p5_count > 0 else 'N/A'
 
     print(f"✓ Added lexeme-level claims:")
-    print(f"  P4 (Wikidata link): {p4_count} claim -> L4164")
+    print(f"  P4 (Wikidata link): {p4_count} claim -> L337991")
     print(f"  P7 (text): {p7_count} claim -> '{lemma_value}'")
     if p5_count > 0:
         print(f"  P5 (English IPA): {p5_count} claim -> '{p5_value}'")
@@ -337,7 +331,7 @@ print("SUCCESS!")
 print("=" * 80)
 print()
 
-print(f"✓ Imported Wikidata L4164 to Aelaki {new_lex_id}")
+print(f"✓ Imported Wikidata L337991 to Aelaki {new_lex_id}")
 print()
 print(f"Lexeme Details:")
 print(f"  ID: {new_lex_id}")
@@ -345,7 +339,7 @@ print(f"  Lemma: {lemma_value}")
 print(f"  Language: Q3 (English)")
 print(f"  Lexical Category: {aelaki_category}")
 print(f"  Senses: {len(senses)}")
-print(f"  P4 Link: L4164 (Wikidata)")
+print(f"  P4 Link: L337991 (Wikidata)")
 print(f"  P7 Text: {lemma_value}")
 if ipa_pronunciation:
     print(f"  P5 (English IPA): {ipa_pronunciation}")
