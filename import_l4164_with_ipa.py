@@ -59,6 +59,8 @@ def extract_ipa_from_wiktionary(url):
                         ipa = html[start:end].strip()
                         # Clean up any extra markup
                         ipa = re.sub(r'<[^>]+>', '', ipa)
+                        # Remove slashes if present
+                        ipa = ipa.strip('/').strip()
                         if ipa:
                             print(f"✓ Found IPA pronunciation: {ipa}")
                             print()
