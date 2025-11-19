@@ -1,0 +1,95 @@
+✓ Authenticated
+
+================================================================================
+COMPREHENSIVE SENSE ADDITION TESTS
+================================================================================
+
+FAMILY 1: wbeditentity with different sense structures
+--------------------------------------------------------------------------------
+
+1.1: Senses with standard glosses dict
+  ✗ No senses in response
+
+1.2: Senses with string glosses
+  ✗ No senses in response
+
+1.3: Senses without language code
+  ✗ Exception: Object of type set is not JSON serializable
+
+1.4: Senses as array instead of dict
+  ✗ No senses in response
+
+1.5: Senses with ID auto-generation (no ID specified)
+  ✗ No senses in response
+
+1.6: Senses with multilingual glosses
+  ✗ No senses in response
+
+1.7: Senses with example
+  ✗ No senses in response
+
+1.8: Senses with claims
+  ✗ No senses in response
+
+
+FAMILY 2: Dedicated Lexeme API endpoints (wbladdsense, wbladdform)
+--------------------------------------------------------------------------------
+
+2.1: wbladdsense basic
+  ✗ Exception: Expecting value: line 1 column 1 (char 0)
+
+2.2: wbladdsense with examples
+  ✗ Exception: Expecting value: line 1 column 1 (char 0)
+
+2.3: wbladdform basic
+  ✗ Exception: Expecting value: line 1 column 1 (char 0)
+
+2.4: wbladdform with grammatical features
+  ✗ Exception: Expecting value: line 1 column 1 (char 0)
+
+
+FAMILY 3: wbeditentity with different form structures
+--------------------------------------------------------------------------------
+
+3.1: Forms with standard representations dict
+  ✗ No forms in response
+
+3.2: Forms with string representations
+  ✗ No forms in response
+
+3.3: Forms as array
+  ✗ No forms in response
+
+3.4: Forms with grammatical features
+  ✗ No forms in response
+
+3.5: Forms with multiple representations
+  ✗ No forms in response
+
+3.6: Forms with claims
+  ✗ No forms in response
+
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+SENSES (Family 1 + 2):
+✗ No working methods found for senses
+  Top errors:
+    • 1.1: Senses with standard glosses dict: NO_SENSES
+    • 1.2: Senses with string glosses: NO_SENSES
+    • 1.3: Senses without language code: EXCEPTION
+    • 1.4: Senses as array instead of dict: NO_SENSES
+    • 1.5: Senses with ID auto-generation (no ID specified): NO_SENSES
+
+FORMS (Family 3):
+✗ No working methods found for forms
+  Top errors:
+    • 3.1: Forms with standard representations dict: NO_FORMS
+    • 3.2: Forms with string representations: NO_FORMS
+    • 3.3: Forms as array: NO_FORMS
+    • 3.4: Forms with grammatical features: NO_FORMS
+    • 3.5: Forms with multiple representations: NO_FORMS
+
+✗ NO WORKING METHODS FOUND

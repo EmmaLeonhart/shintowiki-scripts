@@ -6,7 +6,10 @@
       "Bash(nul)",
       "Bash(timeout 5 tail:*)",
       "Bash(cat:*)",
-      "Bash(full_output.log)"
+      "Bash(full_output.log)",
+      "WebFetch(domain:aelaki.miraheze.org)",
+      "Bash(curl:*)",
+      "Bash(timeout 180 python:*)"
     ],
     "deny": [],
     "ask": []
