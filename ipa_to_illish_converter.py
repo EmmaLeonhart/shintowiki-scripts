@@ -5,9 +5,20 @@ IPA to Illish Phonology Converter
 Converts English IPA pronunciation to Illish orthography following
 phonology rules: tone assignment, coda reduction, vowel length, nasalization.
 
+Uses IPA tone letters (tone bars):
+  ˩ = extra low tone
+  ˥ = extra high tone
+  ˩˥ = rising tone (low to high)
+  ˥˩ = sinking tone (high to low)
+  ˥˩˥ = peaking tone
+  ˩˥˩ = dipping tone
+
+Special rule: Rising tone at word end → vowel˩˥ + ʔ + vowel˥
+Example: kept /kɛpt/ → ke˩˥ʔe˥
+
 Usage:
     from ipa_to_illish_converter import english_ipa_to_illish
-    illish_form = english_ipa_to_illish("kæt")  # Returns "ka" (with low tone mark)
+    illish_form = english_ipa_to_illish("kæt")  # Returns "ka˩" (with low tone letter)
 """
 
 import sys
@@ -16,14 +27,14 @@ import io
 if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# Tone diacritics (combining marks to add AFTER the vowel)
-TONES = {
-    'low': '',          # unmarked: a
-    'high': '\u0304',   # combining macron
-    'rising': '\u0301', # combining acute
-    'sinking': '\u0300', # combining grave
-    'peaking': '\u0302', # combining circumflex
-    'dipping': '\u030c'  # combining caron
+# Tone letters (IPA tone bar notation)
+TONE_LETTERS = {
+    'low': '˩',          # extra low tone
+    'high': '˥',         # extra high tone
+    'rising': '˩˥',      # rising tone (low to high)
+    'sinking': '˥˩',     # sinking tone (high to low)
+    'peaking': '˥˩˥',    # peaking tone (high-low-high)
+    'dipping': '˩˥˩'     # dipping tone (low-high-low)
 }
 
 # Vowel inventory
@@ -78,9 +89,8 @@ def analyze_word(ipa_str):
 def collapse_s_supercluster(onset):
     """
     Handle S + plosive + liquid clusters -> tɬ
-    Only collapse if S is actually at word boundary (full cluster), not just any s+liquid
+    Only collapse complete supercluster patterns
     """
-    # Only collapse complete supercluster patterns
     patterns = [
         ('str', 'tɬ'), ('spr', 'tɬ'), ('spl', 'tɬ'), ('skr', 'tɬ')
     ]
@@ -195,24 +205,18 @@ def normalize_vowel(vowel_char):
     }
     return normalize_map.get(vowel_char, vowel_char)
 
-def apply_tone(vowel_base, tone_name):
-    """Apply tone diacritic to vowel"""
-    tone_mark = TONES.get(tone_name, '')
-
-    if not tone_mark:
-        # Low tone: unmarked
-        return vowel_base
-
-    # Combining marks are added after the vowel
-    return vowel_base + tone_mark
+def apply_tone_letter(vowel_base, tone_name):
+    """Apply tone letter (superscript) after vowel - returned separately"""
+    tone_letter = TONE_LETTERS.get(tone_name, '')
+    return vowel_base, tone_letter
 
 def apply_nasalization(vowel_with_tone):
-    """Add nasalization combining tilde"""
-    nasalization_mark = '\u0303'
-    # Insert before length mark if present
-    if 'ː' in vowel_with_tone:
-        return vowel_with_tone.replace('ː', nasalization_mark + 'ː')
-    return vowel_with_tone + nasalization_mark
+    """
+    Mark vowel as nasalized in phonological processing
+    Note: We don't add a visible diacritic; nasalization is implied by the nasal coda (n/m)
+    """
+    # Currently just a placeholder - nasalization is phonetic, not orthographic
+    return vowel_with_tone
 
 def english_ipa_to_illish(ipa_string):
     """
@@ -223,7 +227,8 @@ def english_ipa_to_illish(ipa_string):
     2. Apply onset rules (S-cluster collapse)
     3. Classify codas and assign tones
     4. Reduce codas to Illish inventory
-    5. Apply tone marks and nasalization
+    5. Apply tone letters and nasalization
+    6. Handle rising tone word-final rule: tone² + ʔ + tone³
     """
     syllables = analyze_word(ipa_string)
 
@@ -232,7 +237,9 @@ def english_ipa_to_illish(ipa_string):
 
     result = []
 
-    for onset, nucleus, coda in syllables:
+    for idx, (onset, nucleus, coda) in enumerate(syllables):
+        is_final = (idx == len(syllables) - 1)
+
         # Step 1: Onset rules
         onset = collapse_s_supercluster(onset)
 
@@ -249,16 +256,25 @@ def english_ipa_to_illish(ipa_string):
         # Step 5: Build output
         vowel_base = nucleus.replace('ː', '')
         vowel_norm = normalize_vowel(vowel_base)
-        vowel_with_tone = apply_tone(vowel_norm, tone)
+        vowel_base_out, tone_letter = apply_tone_letter(vowel_norm, tone)
 
         if nasalized:
-            vowel_with_tone = apply_nasalization(vowel_with_tone)
+            vowel_base_out = apply_nasalization(vowel_base_out)
 
-        if is_long and 'ː' not in vowel_with_tone:
-            vowel_with_tone += 'ː'
+        if is_long and 'ː' not in vowel_base_out:
+            vowel_base_out += 'ː'
 
-        syllable = onset + vowel_with_tone + illish_coda
+        # Build syllable: onset + vowel + coda + tone letter
+        syllable = onset + vowel_base_out + illish_coda + tone_letter
         result.append(syllable)
+
+        # Step 6: Handle rising tone at word end
+        # If this is the final syllable and tone is rising:
+        # Add: ʔ + vowel_norm + high tone letter
+        if is_final and tone == 'rising':
+            glottal_stop = 'ʔ'
+            vowel_out, high_tone_letter = apply_tone_letter(vowel_norm, 'high')
+            result.append(glottal_stop + vowel_out + high_tone_letter)
 
     return ''.join(result)
 
@@ -266,14 +282,14 @@ def english_ipa_to_illish(ipa_string):
 # Test cases
 if __name__ == '__main__':
     test_cases = [
-        ('kæt', 'ka'),                      # cat: plosive -> low tone, no coda output
-        ('bæʃ', 'ba\u0304s'),              # bash: fricative -> high tone + s
-        ('bæn', 'ba\u0304\u0303n'),        # ban: nasal -> high + nasalization + n coda
-        ('/kæt/', 'ka'),                    # cat: slashes stripped
-        ('sliːp', 'sliː'),                  # sleep: sl onset + i long + p plosive coda -> low tone (no mark)
-        ('ɪŋ', 'i\u0304\u0303n'),          # -ing: nasal -> high + nasalization + n coda
-        ('dʒʌs', 'dʒu\u0304s'),            # judge: fricative ending -> high + s
-        ('kɛpt', 'ke\u0301'),               # kept: plosive cluster pt -> rising tone, pt deleted
+        ('kæt', 'ka˩'),                     # cat: plosive -> low tone
+        ('bæʃ', 'bas˥'),                    # bash: fricative -> high tone + s
+        ('bæn', 'ban˥'),                    # ban: nasal -> high tone + n coda
+        ('/kæt/', 'ka˩'),                   # cat: slashes stripped
+        ('sliːp', 'sliː˩'),                 # sleep: sl onset + i long + p plosive coda -> low tone
+        ('ɪŋ', 'in˥'),                      # -ing: nasal -> high tone + n coda
+        ('dʒʌs', 'dʒus˥'),                  # judge: dʒ onset + u vowel + s coda -> high + s
+        ('kɛpt', 'ke˩˥ʔe˥'),                # kept: plosive cluster pt -> rising tone + glottal stop rule
     ]
 
     print("IPA to Illish Conversion Tests")
