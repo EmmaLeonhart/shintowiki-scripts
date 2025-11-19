@@ -9,7 +9,9 @@
       "Bash(full_output.log)",
       "WebFetch(domain:aelaki.miraheze.org)",
       "Bash(curl:*)",
-      "Bash(timeout 180 python:*)"
+      "Bash(timeout 180 python:*)",
+      "WebFetch(domain:en.wiktionary.org)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
