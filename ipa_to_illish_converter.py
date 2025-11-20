@@ -39,7 +39,8 @@ TONE_LETTERS = {
 
 # Vowel inventory
 VOWELS = set('ɪɛæɔʊɑɒəɜaeiouɨʉɯʌ')
-VOICED_OBSTRUENTS = set('bvdðgzʒ')  # dʒ handled separately
+# Voiced consonants (obstruents AND liquids/nasals)
+VOICED_CONSONANTS = set('bvdðgzʒmnŋlrwj')  # includes voiced obstruents, nasals, liquids, glides
 
 def is_vowel(char):
     """Check if character is a vowel"""
@@ -49,6 +50,7 @@ def analyze_word(ipa_str):
     """
     Parse IPA string into syllables
     Returns: list of (onset, vowel, coda) tuples
+    Handles diphthongs as single nuclei (e.g., oʊ, aɪ, etc.)
     """
     ipa = ipa_str.strip().strip('/').replace('ˈ', '').replace('ˌ', '')
 
@@ -68,10 +70,15 @@ def analyze_word(ipa_str):
             onset += ipa[i]
             i += 1
 
-        # Collect nucleus (vowel + optional length mark)
+        # Collect nucleus (vowels + optional length mark, treating diphthongs as single unit)
         if i < len(ipa) and is_vowel(ipa[i]):
             nucleus += ipa[i]
             i += 1
+            # Check for diphthong (vowel immediately followed by another vowel)
+            if i < len(ipa) and is_vowel(ipa[i]):
+                nucleus += ipa[i]
+                i += 1
+            # Check for length mark
             if i < len(ipa) and ipa[i] == 'ː':
                 nucleus += ipa[i]
                 i += 1
@@ -88,11 +95,16 @@ def analyze_word(ipa_str):
 
 def collapse_s_supercluster(onset):
     """
-    Handle S + plosive + liquid clusters -> tɬ
-    Only collapse complete supercluster patterns
+    Handle S + plosive + liquid clusters -> lateral affricate
+    Only collapse complete supercluster patterns at WORD START
+    Handles both 'r' (U+0072) and 'ɹ' (U+0279)
+    str, spr, spl, skr -> tɬ (lateral affricate)
     """
     patterns = [
-        ('str', 'tɬ'), ('spr', 'tɬ'), ('spl', 'tɬ'), ('skr', 'tɬ')
+        ('str', 'tɬ'), ('stɹ', 'tɬ'),    # str with r or ɹ
+        ('spr', 'tɬ'),
+        ('spl', 'tɬ'),
+        ('skr', 'tɬ'), ('skɹ', 'tɬ'),    # skr with r or ɹ
     ]
     for pattern, replacement in patterns:
         if onset.startswith(pattern):
@@ -132,8 +144,19 @@ def classify_coda(coda):
 
     return 'open'
 
-def assign_lexical_tone(coda_type):
-    """Assign lexical tone based on coda"""
+def assign_lexical_tone(coda_type, coda=''):
+    """
+    Assign lexical tone based on coda
+    Special rule: nasal + consonant = low tone
+    """
+    # Check for nasal + consonant cluster (e.g., 'ŋθ', 'ŋk', 'nt', 'ns')
+    if coda and len(coda) > 1:
+        nasals = set('mnŋ')
+        consonants = set('ptkbdgfvszʃʒθðʂʐlrɹwj')
+        # If first is nasal and second is any consonant: low tone
+        if coda[0] in nasals and coda[1] in consonants:
+            return 'low'
+
     tone_map = {
         'open': 'high',
         'plosive': 'low',
@@ -147,27 +170,68 @@ def assign_lexical_tone(coda_type):
     return tone_map.get(coda_type, 'low')
 
 def should_vowel_be_long(nucleus, coda):
-    """Determine if vowel should be long (from voiced obstruent in coda)"""
-    has_length = 'ː' in nucleus
+    """
+    Determine if vowel should be long
+    Rules:
+    1. Voiced OBSTRUENT coda → long vowel
+    2. Nasal alone → short vowel (nasalize only, don't lengthen)
+    3. Nasal + voiced consonant in cluster → long vowel
+    4. Voiceless coda → short vowel
+    """
+    if not coda:
+        # No coda = use what's in the IPA
+        return 'ː' in nucleus
 
-    if coda:
-        # Check for voiced obstruents
-        if len(coda) >= 2 and coda[-2:] == 'dʒ':
+    # Check the last consonant in the coda
+    if len(coda) >= 2 and coda[-2:] == 'dʒ':
+        # dʒ is voiced obstruent
+        return True
+
+    last_consonant = coda[-1]
+    nasals = set('mnŋ')
+    voiced_obstruents = set('bvdðgzʒwj')
+
+    # If coda is nasal + consonant cluster: check if the consonant is voiced
+    if len(coda) > 1 and coda[0] in nasals:
+        # Check second consonant - if it's voiced, lengthen
+        if len(coda) >= 2 and coda[1] in voiced_obstruents:
             return True
-        if coda[-1] in VOICED_OBSTRUENTS:
-            return True
+        # Nasal + voiceless = short vowel
+        return False
 
-    return has_length
+    # Single nasal coda alone: does NOT lengthen (only nasalizes)
+    if last_consonant in nasals:
+        return False
 
-def reduce_coda_to_illish(coda):
+    # Voiced obstruent alone = long vowel
+    if last_consonant in voiced_obstruents:
+        return True
+
+    # Voiceless consonant = short vowel (ignore any length mark in IPA)
+    return False
+
+def reduce_coda_to_illish(coda, is_final=False):
     """
     Reduce English coda to Illish inventory (s, f, m, n, l, Ø)
+    Handles:
+    - Superclusters (e.g., spl, str, etc. within codas) → tɬ (lateral affricate)
+    - Nasal + stop clusters: keep nasal as nasalization + reduce final consonant
+    - Other clusters: keep first consonant only
+    Rule: All fricatives except F → S when at word-final position
     Returns: (illish_coda, is_nasalized)
     """
     if not coda:
         return '', False
 
-    # Handle affricates
+    # Check for superclusters within coda (e.g., "kspl" contains "spl")
+    supercluster_patterns = [('spl', 'tɬ'), ('str', 'tɬ'), ('stɹ', 'tɬ'), ('spr', 'tɬ'),
+                              ('skr', 'tɬ'), ('skɹ', 'tɬ')]
+    for pattern, replacement in supercluster_patterns:
+        if pattern in coda:
+            # Found a supercluster - use it and ignore consonants before it
+            return replacement, False
+
+    # Handle affricates (always -> s)
     if coda in {'tʃ', 'dʒ'}:
         return 's', False
 
@@ -175,8 +239,10 @@ def reduce_coda_to_illish(coda):
     if len(coda) == 1:
         c = coda[0]
         if c in {'s', 'z', 'ʃ', 'ʒ', 'θ', 'ð', 'ʂ', 'ʐ', 'h'}:
+            # All fricatives (except f, v which are handled below) -> s
             return 's', False
         elif c in {'f', 'v'}:
+            # Labiodental fricatives stay as f
             return 'f', False
         elif c == 'm':
             return 'm', True
@@ -184,17 +250,34 @@ def reduce_coda_to_illish(coda):
             return 'n', True
         elif c == 'l':
             return 'l', False
-        elif c == 'r':
-            return 'l', False  # r -> l in Illish
+        elif c == 'r' or c == 'ɹ':
+            return 'l', False  # r/ɹ -> l in Illish
         elif c in 'ptkbdg':
             return '', False
+        else:
+            # Unknown consonant, treat as fricative
+            return 's', False
 
-    # Complex clusters: remove plosives and recurse
-    non_plosives = [c for c in coda if c not in 'ptkbdg']
-    if non_plosives:
-        return reduce_coda_to_illish(''.join(non_plosives))
+    # Complex clusters
+    nasals = set('mnŋ')
+    plosives = set('ptkbdg')
+    fricatives = {'s', 'z', 'ʃ', 'ʒ', 'θ', 'ð', 'ʂ', 'ʐ', 'h', 'f', 'v'}
 
-    return '', False
+    # Special case: nasal + consonant (e.g., 'ŋθ', 'nt', 'mp')
+    # Distinguish: nasal + fricative (keep fricative) vs nasal + stop (keep nasal only)
+    if len(coda) > 1 and coda[0] in nasals:
+        # If followed by a fricative: keep the fricative, mark as nasalized
+        if coda[-1] in fricatives:
+            final_coda, _ = reduce_coda_to_illish(coda[-1], is_final)
+            return final_coda, True
+        else:
+            # Otherwise (nasal + stop): keep nasal only, mark as nasalized
+            nasal_coda, _ = reduce_coda_to_illish(coda[0], is_final)
+            return nasal_coda, True
+
+    # Default: keep first consonant only
+    first_char = coda[0]
+    return reduce_coda_to_illish(first_char, is_final)
 
 def normalize_vowel(vowel_char):
     """Normalize IPA vowels to base orthographic vowel (a, e, i, o, u)"""
@@ -212,10 +295,19 @@ def apply_tone_letter(vowel_base, tone_name):
 
 def apply_nasalization(vowel_with_tone):
     """
-    Mark vowel as nasalized in phonological processing
-    Note: We don't add a visible diacritic; nasalization is implied by the nasal coda (n/m)
+    Add nasalization mark (combining tilde) to vowel
+    Placed after the vowel but before tone letter
     """
-    # Currently just a placeholder - nasalization is phonetic, not orthographic
+    nasalization_mark = '\u0303'  # combining tilde
+    # Insert nasalization mark after the vowel character (before tone letter)
+    # Find where the tone letter is (if present)
+    # Tone letters are: ˩ (U+02E9), ˥ (U+02E5), etc.
+    tone_letters = {'˩', '˥', '˦', '˧', '˨'}
+
+    # Find the vowel and insert nasalization after it
+    if vowel_with_tone and vowel_with_tone[0] not in tone_letters:
+        # First char is vowel, insert tilde after it
+        return vowel_with_tone[0] + nasalization_mark + vowel_with_tone[1:]
     return vowel_with_tone
 
 def english_ipa_to_illish(ipa_string):
@@ -245,18 +337,25 @@ def english_ipa_to_illish(ipa_string):
 
         # Step 2: Coda classification and tone
         coda_type = classify_coda(coda)
-        tone = assign_lexical_tone(coda_type)
+        tone = assign_lexical_tone(coda_type, coda)
 
         # Step 3: Vowel length
         is_long = should_vowel_be_long(nucleus, coda)
 
         # Step 4: Reduce coda
-        illish_coda, nasalized = reduce_coda_to_illish(coda)
+        illish_coda, nasalized = reduce_coda_to_illish(coda, is_final)
 
         # Step 5: Build output
-        vowel_base = nucleus.replace('ː', '')
-        vowel_norm = normalize_vowel(vowel_base)
-        vowel_base_out, tone_letter = apply_tone_letter(vowel_norm, tone)
+        # For diphthongs: use only the first vowel character
+        # (e.g., "oʊ" → "o", "aɪ" → "a")
+        vowel_chars = [c for c in nucleus if is_vowel(c)]
+        if vowel_chars:
+            vowel_base = vowel_chars[0]  # Take first vowel only
+        else:
+            vowel_base = nucleus.replace('ː', '')
+
+        # Use original vowel, don't normalize
+        vowel_base_out, tone_letter = apply_tone_letter(vowel_base, tone)
 
         if nasalized:
             vowel_base_out = apply_nasalization(vowel_base_out)
@@ -264,16 +363,18 @@ def english_ipa_to_illish(ipa_string):
         if is_long and 'ː' not in vowel_base_out:
             vowel_base_out += 'ː'
 
-        # Build syllable: onset + vowel + coda + tone letter
-        syllable = onset + vowel_base_out + illish_coda + tone_letter
+        # Build syllable: onset + vowel + tone letter + coda
+        syllable = onset + vowel_base_out + tone_letter + illish_coda
         result.append(syllable)
 
         # Step 6: Handle rising tone at word end
         # If this is the final syllable and tone is rising:
-        # Add: ʔ + vowel_norm + high tone letter
+        # Add: ʔ + original_vowel + high tone letter
         if is_final and tone == 'rising':
             glottal_stop = 'ʔ'
-            vowel_out, high_tone_letter = apply_tone_letter(vowel_norm, 'high')
+            # For diphthongs, use only first vowel character
+            vowel_for_glottal = vowel_base  # Already extracted first vowel character in step 5
+            vowel_out, high_tone_letter = apply_tone_letter(vowel_for_glottal, 'high')
             result.append(glottal_stop + vowel_out + high_tone_letter)
 
     return ''.join(result)
@@ -282,14 +383,20 @@ def english_ipa_to_illish(ipa_string):
 # Test cases
 if __name__ == '__main__':
     test_cases = [
-        ('kæt', 'ka˩'),                     # cat: plosive -> low tone
-        ('bæʃ', 'bas˥'),                    # bash: fricative -> high tone + s
-        ('bæn', 'ban˥'),                    # ban: nasal -> high tone + n coda
-        ('/kæt/', 'ka˩'),                   # cat: slashes stripped
-        ('sliːp', 'sliː˩'),                 # sleep: sl onset + i long + p plosive coda -> low tone
-        ('ɪŋ', 'in˥'),                      # -ing: nasal -> high tone + n coda
-        ('dʒʌs', 'dʒus˥'),                  # judge: dʒ onset + u vowel + s coda -> high + s
-        ('kɛpt', 'ke˩˥ʔe˥'),                # kept: plosive cluster pt -> rising tone + glottal stop rule
+        ('kæt', 'kæ˩'),                     # cat: voiceless t -> short vowel + low tone
+        ('bæʃ', 'bæ˥s'),                    # bash: voiceless ʃ -> short vowel + high tone + s
+        ('bæn', 'bæ̃˥n'),                    # ban: nasal coda alone -> short vowel + nasalization + high tone
+        ('/kæt/', 'kæ˩'),                   # cat: slashes stripped
+        ('sliːp', 'sli˩'),                  # sleep: voiceless p -> short vowel (strip ː from iː) + low tone
+        ('ɪŋ', 'ɪ̃˥n'),                      # -ing: nasal coda alone -> short vowel + nasalization + high tone
+        ('kɪl', 'kɪ˥l'),                    # kill: liquid coda alone -> short vowel + high tone
+        ('kɛpt', 'kɛ˩˥ʔɛ˥'),                # kept: plosive cluster pt -> rising tone + glottal stop
+        ('stɹɛŋθ', 'tɬɛ̃˩s'),               # strength: str collapse + nasal+stop=low tone + θ->s (word-final)
+        ('ænt', 'æ̃˩n'),                     # ant: nasal+stop=low tone + nt->n coda
+        ('strɔŋ', 'tɬɔ̃˥n'),                # strong: str collapse + nasal alone=high tone + short vowel
+        ('bɑθ', 'bɑ˥s'),                    # bath: fricative at word end -> s
+        ('kæf', 'kæ˥f'),                    # calf: f stays as f (f is exception to fricative rule)
+        ('ɪkˈsploʊd', 'ɪ˥˩tɬoː˩'),         # explode: ik (k=stop,low tone) + ploud (spl→tɬ, oʊ=long, d=voiced,low)
     ]
 
     print("IPA to Illish Conversion Tests")
