@@ -11,7 +11,9 @@
       "Bash(curl:*)",
       "Bash(timeout 180 python:*)",
       "WebFetch(domain:en.wiktionary.org)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(find:*)",
+      "Bash(2)"
     ],
     "deny": [],
     "ask": []
