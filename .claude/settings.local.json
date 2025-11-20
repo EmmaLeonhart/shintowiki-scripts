@@ -20,7 +20,10 @@
       "Bash(fi)",
       "Bash(done)",
       "Bash(timeout 30 python:*)",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(timeout 10 python:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
