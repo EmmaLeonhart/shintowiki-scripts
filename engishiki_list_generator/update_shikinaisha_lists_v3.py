@@ -143,16 +143,16 @@ def harvest_shiki(ent):
                                  for q in p31.get("qualifiers", {}).get("P1545", [])), "")
                 break
 
-        rank = ""
+        rank_qid = ""
         for rcl in sub["claims"].get("P31", []):
             rk = rcl["mainsnak"]["datavalue"]["value"]["id"]
             if rk in {"Q134917287", "Q134917288", "Q9610964"}:
-                rank = _lbl(get_entity_cached(rk))
+                rank_qid = rk
                 break
 
         rows.append((
             int(prov_ord or "9999"),
-            prov_ord, glob_ord, name, kana, rank, tgt
+            prov_ord, glob_ord, name, kana, rank_qid, tgt
         ))
 
     rows.sort(key=lambda x: x[0])
@@ -348,22 +348,26 @@ KANPEI_QID = "Q135160338"
 KOKUHEI_QID = "Q135160342"
 
 def get_designation(qid: str) -> str:
-    """Get Kanpei-sha or Kokuhei-sha designation."""
+    """Get Kanpei-sha or Kokuhei-sha designation as ill link."""
     ent = get_entity_cached(qid)
     for p31 in ent["claims"].get("P31", []):
         p31_id = p31["mainsnak"]["datavalue"]["value"]["id"]
         if p31_id == KANPEI_QID:
-            return "Kanpei-sha"
+            desig_ent = get_entity_cached(KANPEI_QID)
+            desig_name = _lbl(desig_ent, KANPEI_QID)
+            return f"{{{{ill|{escape(desig_name)}|WD={KANPEI_QID}}}}}"
         elif p31_id == KOKUHEI_QID:
-            return "Kokuhei-sha"
+            desig_ent = get_entity_cached(KOKUHEI_QID)
+            desig_name = _lbl(desig_ent, KOKUHEI_QID)
+            return f"{{{{ill|{escape(desig_name)}|WD={KOKUHEI_QID}}}}}"
     return "—"
 
 CELEB_MAP = {
-    "Q135009132": "Tsukinami-/Niiname-sai",
-    "Q135009152": "Hoe & Quiver",
-    "Q135009157": "Tsukinami-/Niiname-/Ainame-sai",
-    "Q135009205": "Hoe offering",
-    "Q135009221": "Quiver offering",
+    "Q135009132": "Q135009132",  # Tsukinami-/Niiname-sai
+    "Q135009152": "Q135009152",  # Hoe & Quiver
+    "Q135009157": "Q135009157",  # Tsukinami-/Niiname-/Ainame-sai
+    "Q135009205": "Q135009205",  # Hoe offering
+    "Q135009221": "Q135009221",  # Quiver offering
 }
 SUBTYPE_MAP = {
     "Q135009975": "Keidai-Sessha", "Q135009973": "Keidai-sha",
@@ -372,6 +376,28 @@ SUBTYPE_MAP = {
     "Q135009906": "Massha",        "Q135009899": "Betsu-gū",
     "Q11412524":  "Gōshi",
 }
+
+RANK_MAP = {
+    "Q134917287": "Q134917287",  # Shosha
+    "Q134917288": "Q134917288",  # Taisha
+    "Q9610964": "Q9610964",      # (other rank)
+}
+
+def get_rank_link(rank_qid: str) -> str:
+    """Get Shosha/Taisha rank as ill link."""
+    if not rank_qid or rank_qid not in RANK_MAP:
+        return "—"
+    rank_ent = get_entity_cached(rank_qid)
+    rank_name = _lbl(rank_ent, rank_qid)
+    return f"{{{{ill|{escape(rank_name)}|WD={rank_qid}}}}}"
+
+def get_celebration_link(celeb_qid: str) -> str:
+    """Get celebration/festival QID as ill link."""
+    if not celeb_qid or celeb_qid not in CELEB_MAP:
+        return "—"
+    celeb_ent = get_entity_cached(celeb_qid)
+    celeb_name = _lbl(celeb_ent, celeb_qid)
+    return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}}}}}"
 
 def shrine_archive_url(qid: str) -> str | None:
     ent = get_entity_cached(qid)
@@ -419,14 +445,16 @@ def build_shiki_table(rows):
         dbcell = f'[{url} DB]' if url else '—'
 
         ent    = get_entity_cached(q)
-        celeb = next((CELEB_MAP[c["mainsnak"]["datavalue"]["value"]["id"]]
-                      for c in ent["claims"].get("P31", [])
-                      if c["mainsnak"]["datavalue"]["value"]["id"] in CELEB_MAP),
-                     '—')
+        celeb_qid = next((c["mainsnak"]["datavalue"]["value"]["id"]
+                          for c in ent["claims"].get("P31", [])
+                          if c["mainsnak"]["datavalue"]["value"]["id"] in CELEB_MAP),
+                         '—')
+        celeb_link = get_celebration_link(celeb_qid)
 
         seats   = seat_quantity(q)
         dist    = district_name(q)
         desig   = get_designation(q)
+        rank_link = get_rank_link(rank)
         subtype = "; ".join(
             SUBTYPE_MAP[c["mainsnak"]["datavalue"]["value"]["id"]]
             for c in ent["claims"].get("P31", [])
@@ -440,7 +468,7 @@ def build_shiki_table(rows):
         lines += [
             '|-',
             cell(dist), cell(link),
-            cell(desig), cell(rank or '—'), cell(celeb), cell(seats),
+            cell(desig), cell(rank_link), cell(celeb_link), cell(seats),
             cell(subtype), cell(parents), cell(same_as), cell(coords), cell(dbcell)
         ]
 
