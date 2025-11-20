@@ -13,7 +13,12 @@
       "WebFetch(domain:en.wiktionary.org)",
       "Bash(python:*)",
       "Bash(find:*)",
-      "Bash(2)"
+      "Bash(2)",
+      "Bash(while read file)",
+      "Bash(do if ! grep -q \"aelaki.miraheze.org\\|evolutionism.miraheze.org\" \"$file\")",
+      "Bash(then echo \"$file\")",
+      "Bash(fi)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
