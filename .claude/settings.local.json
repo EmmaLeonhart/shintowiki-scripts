@@ -23,7 +23,8 @@
       "Bash(tee:*)",
       "Bash(timeout 10 python:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(timeout 30 tail:*)"
     ],
     "deny": [],
     "ask": []
