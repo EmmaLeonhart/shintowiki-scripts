@@ -392,27 +392,33 @@ def get_rank_link(rank_qid: str) -> str:
     return f"{{{{ill|{escape(rank_name)}|WD={rank_qid}}}}}"
 
 def get_celebration_link(celeb_qid: str) -> str:
-    """Get celebration/festival QID as ill link with custom lt= parameters."""
+    """Get celebration/festival QID as ill link with custom lt= parameters and inline footnote if needed."""
     if not celeb_qid or celeb_qid not in CELEB_MAP:
         return "—"
 
-    # Custom display labels for specific celebration QIDs
+    # Custom display labels and inline footnotes for specific celebration QIDs
     celeb_labels = {
-        "Q135009132": "Tsukinami/Niiname",  # Tsukinami-/Niiname-sai
-        "Q135009152": "Hoe and Quiver",      # Hoe & Quiver
-        "Q135009157": "Tsukinami/Niiname/Ainame",  # Tsukinami-/Niiname-/Ainame-sai
-        "Q135009205": "Hoe",                  # Hoe offering
-        "Q135009221": "Quiver",               # Quiver offering
+        "Q135009132": ("Tsukinami", "{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|WD=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|WD=Q11516161}}.}}"),  # Tsukinami-/Niiname-sai
+        "Q135009152": ("Hoe and Quiver", ""),      # Hoe & Quiver
+        "Q135009157": ("Ainame", "{{efn|gets offerings for the {{ill|Ainame Festival|ja|相嘗祭|zh|相嘗祭|WD=Q11581944}} and the lower ranked {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|WD=Q11516161}} and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|WD=Q11501518}}.}}"),  # Tsukinami-/Niiname-/Ainame-sai
+        "Q135009205": ("Hoe", ""),                  # Hoe offering
+        "Q135009221": ("Quiver", ""),               # Quiver offering
     }
 
     celeb_ent = get_entity_cached(celeb_qid)
     celeb_name = _lbl(celeb_ent, celeb_qid)
-    lt_param = celeb_labels.get(celeb_qid, "")
+    lt_param, footnote = celeb_labels.get(celeb_qid, ("", ""))
 
     if lt_param:
-        return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}|lt={lt_param}}}}}"
+        link = f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}|lt={lt_param}}}}}"
     else:
-        return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}}}}}"
+        link = f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}}}}}"
+
+    # Append footnote inline if it exists
+    if footnote:
+        link += footnote
+
+    return link
 
 def shrine_archive_url(qid: str) -> str | None:
     ent = get_entity_cached(qid)
@@ -595,7 +601,8 @@ def process(title, token, dry):
                              tot=cnt["total"], sho=cnt["shosha"], tai=cnt["taisha"])
         + "== Shikinaisha (式内社) ==\n" + shiki_tbl + "\n\n"
         + "== Shikigeisha (式外社) ==\n"  + shikige_tbl + "\n\n"
-        + "== References ==\n\n"
+        + "== References ==\n"
+        + '<references group="lower-alpha"/>\n'
         + foot + "\n"
         + "{{List of Shikinaisha}}\n"
         + interwiki_links + "\n"
@@ -605,7 +612,7 @@ def process(title, token, dry):
     )
 
     wiki_edit(title, text,
-              "Bot: refresh list tables (simplified format, proper ill templates)",
+              "Bot: Update with {{ill|}} links for designations, ranks, celebrations; add explanatory footnotes for festival offerings",
               token, dry)
 
 # ────────────────────────────────────────────────────────
