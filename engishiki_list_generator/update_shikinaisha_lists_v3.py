@@ -348,18 +348,18 @@ KANPEI_QID = "Q135160338"
 KOKUHEI_QID = "Q135160342"
 
 def get_designation(qid: str) -> str:
-    """Get Kanpei-sha or Kokuhei-sha designation as ill link."""
+    """Get Kanpei-sha or Kokuhei-sha designation as ill link with custom lt= parameters."""
     ent = get_entity_cached(qid)
     for p31 in ent["claims"].get("P31", []):
         p31_id = p31["mainsnak"]["datavalue"]["value"]["id"]
         if p31_id == KANPEI_QID:
             desig_ent = get_entity_cached(KANPEI_QID)
             desig_name = _lbl(desig_ent, KANPEI_QID)
-            return f"{{{{ill|{escape(desig_name)}|WD={KANPEI_QID}}}}}"
+            return f"{{{{ill|{escape(desig_name)}|WD={KANPEI_QID}|lt=Kanpei}}}}"
         elif p31_id == KOKUHEI_QID:
             desig_ent = get_entity_cached(KOKUHEI_QID)
             desig_name = _lbl(desig_ent, KOKUHEI_QID)
-            return f"{{{{ill|{escape(desig_name)}|WD={KOKUHEI_QID}}}}}"
+            return f"{{{{ill|{escape(desig_name)}|WD={KOKUHEI_QID}|lt=Kokuhei}}}}"
     return "—"
 
 CELEB_MAP = {
@@ -429,8 +429,8 @@ def _dup_keys(rows, idx):
 def build_shiki_table(rows):
     dup_qids = _dup_keys(rows, 6)
     hdr = ('{| class="wikitable sortable"\n'
-           '! District !! Name !! Funding&nbsp;category !! Rank '
-           '!! Celebration !! Seats '
+           '! District !! Name !! Funding&nbsp;category !! Celebration '
+           '!! Rank !! Seats '
            '!! Subtype !! Parent&nbsp;shrine !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
 
     lines = [hdr]
@@ -468,7 +468,7 @@ def build_shiki_table(rows):
         lines += [
             '|-',
             cell(dist), cell(link),
-            cell(desig), cell(rank_link), cell(celeb_link), cell(seats),
+            cell(desig), cell(celeb_link), cell(rank_link), cell(seats),
             cell(subtype), cell(parents), cell(same_as), cell(coords), cell(dbcell)
         ]
 
