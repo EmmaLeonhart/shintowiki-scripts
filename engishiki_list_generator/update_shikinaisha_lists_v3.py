@@ -294,6 +294,32 @@ def coord_cell(qid: str) -> str:
     val = p625["mainsnak"]["datavalue"]["value"]
     return f"{{{{coord|{val['latitude']:.6f}|{val['longitude']:.6f}|display=inline}}}}"
 
+SHRINE_DESIGNATION_MAP = {
+    "Q1107129": "sōja",
+    "Q1656379": "ichinomiya",
+    "Q134917533": "Ni-no-Miya",
+    "Q134917303": "San-no-Miya",
+    "Q134917307": "Shi-no-Miya",
+    "Q134917301": "Go-no-Miya",
+    "Q135009625": "Roku-no-Miya",
+}
+
+def shrine_designation_notes(qid: str) -> list:
+    """Get shrine designations (sōja, ichinomiya, etc.) as {{ill|}} links for notes."""
+    ent = get_entity_cached(qid)
+    designations = []
+
+    for p31 in ent["claims"].get("P31", []):
+        p31_id = p31["mainsnak"]["datavalue"]["value"]["id"]
+        if p31_id in SHRINE_DESIGNATION_MAP:
+            desig_label = SHRINE_DESIGNATION_MAP[p31_id]
+            desig_ent = get_entity_cached(p31_id)
+            desig_name = _lbl(desig_ent, p31_id)
+            ill_link = f"{{{{ill|{escape(desig_name)}|WD={p31_id}|lt={desig_label}}}}}"
+            designations.append(ill_link)
+
+    return designations
+
 # ────────────────────────────────────────────────────────
 #  Table builders
 # ────────────────────────────────────────────────────────
@@ -451,8 +477,7 @@ def build_shiki_table(rows):
     dup_qids = _dup_keys(rows, 6)
     hdr = ('{| class="wikitable sortable"\n'
            '! District !! Name !! Funding&nbsp;category '
-           '!! Rank !! Seats '
-           '!! Subtype !! Parent&nbsp;shrine !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
+           '!! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
 
     lines = [hdr]
 
@@ -485,21 +510,32 @@ def build_shiki_table(rows):
             combined_desig = desig
 
         rank_link = get_rank_link(rank)
-        subtype = "; ".join(
-            SUBTYPE_MAP[c["mainsnak"]["datavalue"]["value"]["id"]]
-            for c in ent["claims"].get("P31", [])
-            if c["mainsnak"]["datavalue"]["value"]["id"] in SUBTYPE_MAP
-        ) or '—'
 
+        # Build Notes column with parent shrine, seats, and shrine designation info
         parents = parent_shrine_links(q)
+        seats = seat_quantity(q)
+        designations = shrine_designation_notes(q)
+        notes_parts = []
+
+        if parents != "—":
+            notes_parts.append(f"part of {parents}")
+
+        if seats != "single":
+            notes_parts.append(seats)
+
+        if designations:
+            notes_parts.extend(designations)
+
+        notes = " | ".join(notes_parts) if notes_parts else "—"
+
         same_as = same_as_links(q)
         coords  = coord_cell(q)
 
         lines += [
             '|-',
             cell(dist), cell(link),
-            cell(combined_desig), cell(rank_link), cell(seats),
-            cell(subtype), cell(parents), cell(same_as), cell(coords), cell(dbcell)
+            cell(combined_desig), cell(rank_link),
+            cell(notes), cell(same_as), cell(coords), cell(dbcell)
         ]
 
     lines.append('|}')
@@ -612,7 +648,7 @@ def process(title, token, dry):
     )
 
     wiki_edit(title, text,
-              "Bot: Update with {{ill|}} links for designations, ranks, celebrations; add explanatory footnotes for festival offerings",
+              "Bot: Add shrine designations (sōja, ichinomiya, etc.) to Notes column",
               token, dry)
 
 # ────────────────────────────────────────────────────────
