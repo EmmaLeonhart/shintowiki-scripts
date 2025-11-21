@@ -392,12 +392,27 @@ def get_rank_link(rank_qid: str) -> str:
     return f"{{{{ill|{escape(rank_name)}|WD={rank_qid}}}}}"
 
 def get_celebration_link(celeb_qid: str) -> str:
-    """Get celebration/festival QID as ill link."""
+    """Get celebration/festival QID as ill link with custom lt= parameters."""
     if not celeb_qid or celeb_qid not in CELEB_MAP:
         return "—"
+
+    # Custom display labels for specific celebration QIDs
+    celeb_labels = {
+        "Q135009132": "Tsukinami/Niiname",  # Tsukinami-/Niiname-sai
+        "Q135009152": "Hoe and Quiver",      # Hoe & Quiver
+        "Q135009157": "Tsukinami/Niiname/Ainame",  # Tsukinami-/Niiname-/Ainame-sai
+        "Q135009205": "Hoe",                  # Hoe offering
+        "Q135009221": "Quiver",               # Quiver offering
+    }
+
     celeb_ent = get_entity_cached(celeb_qid)
     celeb_name = _lbl(celeb_ent, celeb_qid)
-    return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}}}}}"
+    lt_param = celeb_labels.get(celeb_qid, "")
+
+    if lt_param:
+        return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}|lt={lt_param}}}}}"
+    else:
+        return f"{{{{ill|{escape(celeb_name)}|WD={celeb_qid}}}}}"
 
 def shrine_archive_url(qid: str) -> str | None:
     ent = get_entity_cached(qid)

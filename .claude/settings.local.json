@@ -24,7 +24,8 @@
       "Bash(timeout 10 python:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(timeout 30 tail:*)"
+      "Bash(timeout 30 tail:*)",
+      "Bash(pgrep:*)"
     ],
     "deny": [],
     "ask": []
