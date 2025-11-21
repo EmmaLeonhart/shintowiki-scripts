@@ -16,7 +16,7 @@ All titles are taken from pages.txt (one “Category:Foo Bar” per line).
 # ─── settings ──────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"
 THROTTLE  = 0.4          # seconds between edits
 # ------------------------------------------------------------------

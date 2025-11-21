@@ -15,7 +15,7 @@ Run with an optional first-title argument to resume a stopped run:
 # ─── EDIT ME ───────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"
 THROTTLE  = 0.4          # seconds between edits
 # ───────────────────────────────────────────────────────────────────

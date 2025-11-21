@@ -13,7 +13,7 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
-USERNAME   = "Immanuelle";         PASSWORD   = "[REDACTED_SECRET_1]"
+USERNAME   = "Immanuelle";         PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.5
 EN_API     = "https://en.wikipedia.org/w/api.php"
 UA         = {"User-Agent": "enwiki-redirect-clean/1.1 (User:Immanuelle)"}

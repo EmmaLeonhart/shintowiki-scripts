@@ -32,7 +32,7 @@ if sys.platform == 'win32':
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_1]'
+PASSWORD  = '[REDACTED_SECRET_2]'
 
 # Wait 30 minutes at startup to avoid race conditions
 STARTUP_WAIT = 30 * 60  # 30 minutes in seconds

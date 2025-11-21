@@ -16,7 +16,7 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"; THROTTLE = 0.4
 TIER0_TAG = "[[Category:Tier 0 Categories]]"
 

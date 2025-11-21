@@ -25,7 +25,7 @@ if sys.platform == 'win32':
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_1]'
+PASSWORD  = '[REDACTED_SECRET_2]'
 CATEGORY  = 'Pages linked to Wikidata'
 HAS_LABEL_CAT = 'Wikidata has English label'
 NO_LABEL_CAT = 'Wikidata no English label'

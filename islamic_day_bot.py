@@ -32,7 +32,7 @@ stub.
 # ── ACCOUNT / WIKI ────────────────────────────────────────────────
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE = 0.4         # seconds between edits
 # -----------------------------------------------------------------
 

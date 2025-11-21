@@ -23,7 +23,7 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE  = 0.4
 SOURCE_CAT = "Tier 2 Categories with no enwiki"
 DST_CAT    = "Tier 2 Categories with enwiki"

@@ -18,7 +18,7 @@ Run:
 
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE = 0.4
 UA       = {"User-Agent": "islamic-month-interwikis/1.1 (User:Immanuelle)"}
 

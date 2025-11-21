@@ -4,7 +4,7 @@ from mwclient.errors import APIError
 
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 
 def site():
     p = urllib.parse.urlparse(API_URL)

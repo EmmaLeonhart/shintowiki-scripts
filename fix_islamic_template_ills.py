@@ -10,7 +10,7 @@ fix_islamic_template_ills.py  –  v2
 # ── login / constants ──────────────────────────────────────────────
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE = 0.4
 
 MASTER_PAGE = "List_of_days_of_the_Islamic_Calendar"

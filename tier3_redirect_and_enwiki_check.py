@@ -26,7 +26,7 @@ from mwclient.errors import APIError, InvalidPageTitle
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE  = 0.4
 
 SRC_CAT   = "Tier 3 Categories"

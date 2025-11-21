@@ -7,7 +7,7 @@ Test the corrected script on A1 Decan Lists page - SHOW RESULTS ONLY, NO EDITS
 # >>> credentials / endpoint >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 # <<< credentials <<<
 
 import os, sys, time, urllib.parse, mwclient, re, requests

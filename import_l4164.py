@@ -22,7 +22,7 @@ if sys.platform == 'win32':
 WIKIDATA_API = 'https://www.wikidata.org/w/api.php'
 AELAKI_API = 'https://aelaki.miraheze.org/w/api.php'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 # Category mapping
 CATEGORY_MAPPING = {

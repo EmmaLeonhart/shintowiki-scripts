@@ -22,7 +22,7 @@ import mwclient, mwparserfromhell as mwp, requests
 
 # ─── credentials ─────────────────────────────────────────────────────────
 SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_1]"
+SW_PASS = "[REDACTED_SECRET_2]"
 # ─────────────────────────────────────────────────────────────────────────
 
 JA_API = "https://ja.wikipedia.org/w/api.php"

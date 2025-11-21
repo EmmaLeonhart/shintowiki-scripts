@@ -20,7 +20,7 @@ WIKIDATA_API = 'https://www.wikidata.org/w/api.php'
 AELAKI_API = 'https://aelaki.miraheze.org/w/api.php'
 WIKTIONARY_BASE = 'https://en.wiktionary.org/wiki'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 # Category mapping: Wikidata -> Aelaki
 CATEGORY_MAPPING = {

@@ -23,7 +23,7 @@ WD_USER = "Immanuelle@ImmanuelleMisc"
 WD_PASS = "030akvvhf8b3f6fg7mpt85fo8rvp6d58"  # BotPassword
 
 SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_1]"
+SW_PASS = "[REDACTED_SECRET_2]"
 
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "ShintoLabelDashboard/0.7 (User:Immanuelle)"

@@ -30,7 +30,7 @@ import mwclient
 WIKI_URL   = 'shinto.miraheze.org'
 WIKI_PATH  = '/w/'
 USERNAME   = 'Immanuelle'
-PASSWORD   = '[REDACTED_SECRET_1]'
+PASSWORD   = '[REDACTED_SECRET_2]'
 PAGES_FILE = 'pages.txt'
 
 REMOVE_CATS = {'qq', 'Qq', '11', 'New'}

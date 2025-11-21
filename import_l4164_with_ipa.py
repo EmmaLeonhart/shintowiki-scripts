@@ -21,7 +21,7 @@ WIKIDATA_API = 'https://www.wikidata.org/w/api.php'
 AELAKI_API = 'https://aelaki.miraheze.org/w/api.php'
 WIKTIONARY_URL = 'https://en.wiktionary.org/wiki/kill'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 # Category mapping
 CATEGORY_MAPPING = {

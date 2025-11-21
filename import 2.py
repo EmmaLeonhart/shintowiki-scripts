@@ -21,7 +21,7 @@ SHINTO_URL   = 'shinto.miraheze.org'
 SHINTO_PATH  = '/w/'
 API_URL      = f'https://{SHINTO_URL}{SHINTO_PATH}api.php'
 USERNAME     = 'Immanuelle'
-PASSWORD     = '[REDACTED_SECRET_1]'
+PASSWORD     = '[REDACTED_SECRET_2]'
 PAGE_TITLE   = 'Superstitions_in_Christian_societies'
 THROTTLE     = 1.0  # seconds between requests
 

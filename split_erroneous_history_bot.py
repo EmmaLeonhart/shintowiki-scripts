@@ -25,7 +25,7 @@ from requests.exceptions import RequestException
 WIKI_URL    = "shinto.miraheze.org"
 WIKI_PATH   = "/w/"
 USERNAME    = "Immanuelle"
-PASSWORD    = "[REDACTED_SECRET_1]"
+PASSWORD    = "[REDACTED_SECRET_2]"
 PAGES_FILE  = "pages.txt"
 THROTTLE    = 1.0     # seconds between heavy actions
 CUTOFF_TS   = "2020-01-01T00:00:00Z"

@@ -24,7 +24,7 @@ from mwclient.errors import APIError
 # ─── CONFIG ─────────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 WP_THROTTLE  = 0.2   # seconds between page fetches
 WB_THROTTLE  = 1.0   # seconds between Wayback “save” calls
 

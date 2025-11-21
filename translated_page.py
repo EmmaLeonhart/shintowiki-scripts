@@ -20,7 +20,7 @@ except ModuleNotFoundError:
     sys.exit("[FATAL] Missing deps →  pip install mwclient mwparserfromhell")
 
 # hard‑coded creds
-USER, PASS = "Immanuelle", "[REDACTED_SECRET_1]"
+USER, PASS = "Immanuelle", "[REDACTED_SECRET_2]"
 
 ###############################################################################
 # util helpers

@@ -31,7 +31,7 @@ unchanged.
 
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 MASTER    = "List_of_days_of_the_Islamic_Calendar"
 TEMPL_CAT = "Islamic calendar templates"
 THROTTLE  = 0.5    # seconds

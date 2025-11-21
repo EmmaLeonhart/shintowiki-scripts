@@ -16,7 +16,7 @@ from mwclient.errors import APIError
 WIKI_HOST   = 'shinto.miraheze.org'
 WIKI_PATH   = '/w/'
 USERNAME    = 'Immanuelle'
-PASSWORD    = '[REDACTED_SECRET_1]'
+PASSWORD    = '[REDACTED_SECRET_2]'
 START_TITLE = 'draft'       # begin enumeration at this prefix
 THROTTLE    = 0.5       # seconds between operations
 

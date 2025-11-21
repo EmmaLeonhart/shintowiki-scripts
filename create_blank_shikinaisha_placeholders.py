@@ -24,7 +24,7 @@ if sys.platform == 'win32':
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_1]'
+PASSWORD  = '[REDACTED_SECRET_2]'
 CATEGORY  = 'Blank Shikinaisha with no wikidata'
 SLEEP     = 1.5  # seconds between edits
 

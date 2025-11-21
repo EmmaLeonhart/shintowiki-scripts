@@ -28,7 +28,7 @@ from mwclient.errors import APIError
 SITE_URL   = "shinto.miraheze.org"
 SITE_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 PAGES_TXT  = "pages.txt"
 
 TAG_JA     = "Categories created from jawiki title"

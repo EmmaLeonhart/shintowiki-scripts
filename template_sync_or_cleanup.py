@@ -14,7 +14,7 @@ from mwclient.errors import APIError, InvalidPageTitle
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
-USERNAME   = "Immanuelle";         PASSWORD   = "[REDACTED_SECRET_1]"
+USERNAME   = "Immanuelle";         PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.5
 EN_API     = "https://en.wikipedia.org/w/api.php"
 UA         = {"User-Agent": "template-sync-bot/2.3 (User:Immanuelle)"}

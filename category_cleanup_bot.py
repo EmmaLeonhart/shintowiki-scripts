@@ -16,7 +16,7 @@ from mwclient.errors import APIError
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 THROTTLE  = 1.0
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)

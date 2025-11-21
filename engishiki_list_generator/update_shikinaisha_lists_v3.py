@@ -11,15 +11,21 @@ update_shikinaisha_lists.py  •  2025-07-07
 • Safe label helper prevents crashes from items that lack labels or redirect.
 """
 
-import os, re, time, argparse, requests
+import os, re, time, argparse, requests, sys, io
 from html import escape
+
+# Handle UTF-8 encoding on Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+# ── No delay - start immediately ───────────────────────
+print("[INFO] Starting update now...")
 
 # ── endpoints ───────────────────────────────────────────
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
 WD_API   = "https://www.wikidata.org/w/api.php"
 
 USER = os.getenv("WIKI_USER") or "Immanuelle"
-PASS = os.getenv("WIKI_PASS") or "[REDACTED_SECRET_1]"
+PASS = os.getenv("WIKI_PASS") or "[REDACTED_SECRET_2]"
 
 S = requests.Session()
 S.headers["User-Agent"] = "ShikinaishaListBot/0.7 (coords col)"
@@ -74,6 +80,113 @@ def wiki_edit(title, text, summary, token, dry):
         print(f"[OK] {title}")
     except UnicodeEncodeError:
         print("[OK] [page with unicode title]")
+
+def extract_wikidata_qid(content: str) -> str | None:
+    """Extract Wikidata QID from {{wikidata link|...}} template."""
+    match = re.search(r"{{wikidata link\|([^}]+)}}", content, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    return None
+
+def find_alias_name(base_name: str, province: str, existing_names: set) -> str:
+    """Find a non-colliding alias name."""
+    if base_name not in existing_names:
+        return base_name
+    alias = f"{base_name} ({province})"
+    if alias not in existing_names:
+        return alias
+    counter = 2
+    while True:
+        alias = f"{base_name} ({province} {counter})"
+        if alias not in existing_names:
+            return alias
+        counter += 1
+
+def determine_shrine_page_name(qid: str, shrine_name: str, province: str, created_pages: dict = None) -> tuple[str, str]:
+    """Determine what page name will be used for a shrine (WITHOUT creating the page).
+    Returns (page_name, status_reason).
+
+    Conservative logic: if a page has ANY wikidata link, skip it or create (QID) version.
+
+    Args:
+        qid: Wikidata QID of the shrine
+        shrine_name: Base name of the shrine
+        province: Province name (for alias generation)
+        created_pages: Optional dict mapping qid -> actual_page_name for shrines already created in this batch
+    """
+    if created_pages is None:
+        created_pages = {}
+
+    ent = get_entity_cached(qid)
+
+    # Get preferred page name (ShintoWiki > English Wikipedia > English label)
+    pref_name = None
+    for claim in ent.get("claims", {}).get("P11250", []):
+        article_id = claim["mainsnak"]["datavalue"]["value"]
+        if article_id.startswith("shinto:"):
+            pref_name = article_id[7:]
+            break
+
+    if not pref_name:
+        sitelinks = ent.get("sitelinks", {})
+        if "enwiki" in sitelinks:
+            pref_name = sitelinks["enwiki"]["title"]
+        else:
+            pref_name = _lbl(ent, qid)
+
+    # Check if page exists
+    r = S.get(WIKI_API, params={
+        "action": "query", "titles": pref_name, "format": "json"}).json()
+    pages = r["query"]["pages"]
+    page = next(iter(pages.values()))
+
+    if "missing" not in page:
+        # Page exists - check if it has ANY wikidata link
+        r2 = S.get(WIKI_API, params={
+            "action": "query", "titles": pref_name, "prop": "revisions",
+            "rvprop": "content", "format": "json"}).json()
+        pages2 = r2["query"]["pages"]
+        page2 = next(iter(pages2.values()))
+        if "revisions" in page2:
+            existing_content = page2["revisions"][0]["*"]
+            existing_qid = extract_wikidata_qid(existing_content)
+
+            if existing_qid:
+                # Page already has a wikidata link
+                if existing_qid == qid:
+                    # Same QID - skip it
+                    return (pref_name, "SKIP")
+                else:
+                    # Different QID - must use (QID) version to avoid collision
+                    qid_name = f"{pref_name} ({qid})"
+                    return (qid_name, "WILL_CREATE_QID_VERSION")
+            else:
+                # Existing page has NO wikidata link - safe to overwrite
+                return (pref_name, "WILL_CREATE")
+
+    # Page doesn't exist - check if name was created earlier in this batch
+    if pref_name in created_pages.values():
+        # The name was created in this batch - create (QID) version
+        qid_name = f"{pref_name} ({qid})"
+        return (qid_name, "WILL_CREATE_QID_VERSION")
+
+    return (pref_name, "WILL_CREATE")
+
+def create_shrine_page(qid: str, shrine_name: str, province: str, actual_page_name: str, table_row: str, token: str, dry: bool = False) -> str:
+    """Create individual shrine page with the specified page name. Returns status string."""
+    ent = get_entity_cached(qid)
+
+    page_content = f"""'''{actual_page_name}''' is a shrine in the Engishiki Jinmyōchō. It is located in [[{province}]].
+
+{table_row}
+
+{{{{wikidata link|{qid}}}}}
+
+[[Category:Shikinaisha in {province}]]
+[[Category:Wikidata generated shikinaisha pages]]"""
+
+    wiki_edit(actual_page_name, page_content, f"Bot: Create shrine page for {shrine_name}", token, dry)
+    return "DONE"
 
 # ────────────────────────────────────────────────────────
 #  Wikidata helpers
@@ -277,13 +390,22 @@ def parent_shrine_links(qid: str) -> str:
             links.append(f"{{{{ill|{escape(name)}|WD={tgt}}}}}")
     return "; ".join(links) if links else "—"
 
+def same_as_qids(qid: str) -> list:
+    """Get list of same-as shrine QIDs."""
+    ent = get_entity_cached(qid)
+    qids = []
+    for cl in ent["claims"].get("P460", []):
+        tgt = cl["mainsnak"]["datavalue"]["value"]["id"]
+        qids.append(tgt)
+    return qids
+
 def same_as_links(qid: str) -> str:
     ent = get_entity_cached(qid)
     links = []
     for cl in ent["claims"].get("P460", []):
         tgt = cl["mainsnak"]["datavalue"]["value"]["id"]
-        name = _lbl(get_entity_cached(tgt), tgt)
-        links.append(f"{{{{ill|{escape(name)}|WD={tgt}}}}}")
+        # Use the same proper linking format as build_shrine_link()
+        links.append(build_shrine_link(tgt))
     return "; ".join(links) if links else "—"
 
 def coord_cell(qid: str) -> str:
@@ -360,9 +482,9 @@ def build_shrine_link(qid: str) -> str:
         parts.append(lang)
         parts.append(escape(sitelinks[lang_code]["title"]))
 
-    # Add English label with lt= if different
+    # Always add English label with lt= (for display consistency)
     en_label = ent.get("labels", {}).get("en", {}).get("value", "")
-    if en_label and en_label != shrine_name:
+    if en_label:
         parts.insert(1, f"lt={escape(en_label)}")
 
     # Add WD link
@@ -473,20 +595,20 @@ def _dup_keys(rows, idx):
             seen.add(k)
     return dups
 
-def build_shiki_table(rows):
+def build_shiki_table(rows, token=None, dry=False, province=""):
     dup_qids = _dup_keys(rows, 6)
     hdr = ('{| class="wikitable sortable"\n'
            '! District !! Name !! Funding&nbsp;category '
            '!! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
 
     lines = [hdr]
+    created_pages = {}  # Track created pages: {qid: actual_page_name}
 
     for _, prov, glob, name, kana, rank, q in rows:
         dup   = q in dup_qids
         style = _RED if dup else ''
         cell  = lambda txt: f'|{style} {txt}'.rstrip()
 
-        link   = build_shrine_link(q)
         url    = shrine_archive_url(q)
         dbcell = f'[{url} DB]' if url else '—'
 
@@ -531,12 +653,123 @@ def build_shiki_table(rows):
         same_as = same_as_links(q)
         coords  = coord_cell(q)
 
+        # Process shrine page creation and track created pages
+        actual_page_name = None
+        if token and province:
+            actual_page_name, status = determine_shrine_page_name(q, name, province, created_pages)
+
+            if status not in ("SKIP", "SKIP_MATCHES"):
+                # Build full table row with all columns using full interlanguage links
+                shrine_link = build_shrine_link(q)
+                table_content = (
+                    "== Shikinaisha (式内社) ==\n"
+                    '{| class="wikitable sortable"\n'
+                    "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
+                    "|-\n"
+                    f"| {escape(dist)} || {shrine_link} || {escape(combined_desig)} || {escape(rank_link)} || {escape(notes)} || {escape(same_as)} || {escape(coords)} || {escape(dbcell)}\n"
+                    "|}"
+                )
+
+                try:
+                    create_shrine_page(q, name, province, actual_page_name, table_content, token, dry)
+                    # Track this page as created
+                    created_pages[q] = actual_page_name
+                except Exception as e:
+                    try:
+                        print(f"ERROR creating shrine page for {name}: {e}")
+                    except UnicodeEncodeError:
+                        print(f"ERROR creating shrine page: {e}")
+
+        # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
+        link = build_shrine_link(q)
+
         lines += [
             '|-',
             cell(dist), cell(link),
             cell(combined_desig), cell(rank_link),
             cell(notes), cell(same_as), cell(coords), cell(dbcell)
         ]
+
+        # Add secondary rows for same-as shrines with "RONSHA" district
+        same_as_shrine_qids = same_as_qids(q)
+        for same_as_q in same_as_shrine_qids:
+            same_as_url = shrine_archive_url(same_as_q)
+            same_as_dbcell = f'[{same_as_url} DB]' if same_as_url else '—'
+
+            same_as_ent = get_entity_cached(same_as_q)
+            same_as_celeb_qid = next((c["mainsnak"]["datavalue"]["value"]["id"]
+                                      for c in same_as_ent["claims"].get("P31", [])
+                                      if c["mainsnak"]["datavalue"]["value"]["id"] in CELEB_MAP),
+                                     '—')
+            same_as_celeb_link = get_celebration_link(same_as_celeb_qid)
+
+            same_as_desig = get_designation(same_as_q)
+            if same_as_celeb_link != "—" and same_as_desig != "—":
+                same_as_combined_desig = f"{same_as_desig} ({same_as_celeb_link})"
+            elif same_as_celeb_link != "—":
+                same_as_combined_desig = same_as_celeb_link
+            else:
+                same_as_combined_desig = same_as_desig
+
+            same_as_rank = next((r["mainsnak"]["datavalue"]["value"]["id"]
+                                 for r in same_as_ent["claims"].get("P4075", [])), None)
+            same_as_rank_link = get_rank_link(same_as_rank)
+
+            same_as_parents = parent_shrine_links(same_as_q)
+            same_as_seats = seat_quantity(same_as_q)
+            same_as_designations = shrine_designation_notes(same_as_q)
+            same_as_notes_parts = []
+
+            if same_as_parents != "—":
+                same_as_notes_parts.append(f"part of {same_as_parents}")
+
+            if same_as_seats != "single":
+                same_as_notes_parts.append(same_as_seats)
+
+            if same_as_designations:
+                same_as_notes_parts.extend(same_as_designations)
+
+            same_as_notes = ", ".join(same_as_notes_parts) if same_as_notes_parts else "—"
+            same_as_same_as = same_as_links(same_as_q)
+            same_as_coords = coord_cell(same_as_q)
+
+            # Process same-as shrine page creation and track created pages
+            same_as_name = _lbl(same_as_ent, same_as_q)
+            same_as_actual_page_name = None
+            if token and province:
+                same_as_actual_page_name, same_as_status = determine_shrine_page_name(same_as_q, same_as_name, province, created_pages)
+
+                if same_as_status not in ("SKIP", "SKIP_MATCHES"):
+                    # Build full table row with all columns (RONSHA district) using full interlanguage links
+                    shrine_link = build_shrine_link(same_as_q)
+                    table_content = (
+                        "== Shikinaisha (式内社) ==\n"
+                        '{| class="wikitable sortable"\n'
+                        "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
+                        "|-\n"
+                        f"| RONSHA || {shrine_link} || {escape(same_as_combined_desig)} || {escape(same_as_rank_link)} || {escape(same_as_notes)} || {escape(same_as_same_as)} || {escape(same_as_coords)} || {escape(same_as_dbcell)}\n"
+                        "|}"
+                    )
+
+                    try:
+                        create_shrine_page(same_as_q, same_as_name, province, same_as_actual_page_name, table_content, token, dry)
+                        # Track this page as created
+                        created_pages[same_as_q] = same_as_actual_page_name
+                    except Exception as e:
+                        try:
+                            print(f"ERROR creating shrine page for {same_as_name}: {e}")
+                        except UnicodeEncodeError:
+                            print(f"ERROR creating shrine page: {e}")
+
+            # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
+            same_as_link = build_shrine_link(same_as_q)
+
+            lines += [
+                '|-',
+                cell('RONSHA'), cell(same_as_link),
+                cell(same_as_combined_desig), cell(same_as_rank_link),
+                cell(same_as_notes), cell(same_as_same_as), cell(same_as_coords), cell(same_as_dbcell)
+            ]
 
     lines.append('|}')
     return '\n'.join(lines)
@@ -623,10 +856,10 @@ def process(title, token, dry):
 
     ent              = get_entity_cached(qid)
     shiki_rows, cnt  = harvest_shiki(ent)
-    shiki_tbl        = build_shiki_table(shiki_rows)
+    prov             = title.split(" in ",1)[-1]
+    shiki_tbl        = build_shiki_table(shiki_rows, token=token, dry=dry, province=prov)
     shikige_tbl      = build_shikige_table(shikige_rows(ent))
 
-    prov      = title.split(" in ",1)[-1]
     foot_tmpl = re.search(r"{{translated page[^}]+}}", src, flags=re.I|re.S)
     foot      = foot_tmpl.group(0) if foot_tmpl else ""
     ja_title  = ja_list_title(ent) or prov + "の式内社一覧"
@@ -649,7 +882,7 @@ def process(title, token, dry):
     )
 
     wiki_edit(title, text,
-              "Bot: Update lede format and use comma separators in Notes column",
+              "Bot: Update list and create individual shrine pages",
               token, dry)
 
 # ────────────────────────────────────────────────────────

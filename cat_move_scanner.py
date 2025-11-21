@@ -19,7 +19,7 @@ Nothing is written for categories that have never been moved.
 WIKI_URL   = "shinto.miraheze.org"   # domain
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.4          # seconds between edits / API posts
 
 PAGES_TXT  = "pages.txt"

@@ -18,7 +18,7 @@ if sys.platform == 'win32':
 
 API_URL = 'https://aelaki.miraheze.org/w/api.php'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 session = requests.Session()
 session.headers.update({'User-Agent': 'Mozilla/5.0'})

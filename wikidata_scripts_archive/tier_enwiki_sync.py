@@ -13,7 +13,7 @@ from typing import List
 
 # ── BASIC CONFIG ──────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
-USERNAME   = "Immanuelle";          PASSWORD   = "[REDACTED_SECRET_1]"
+USERNAME   = "Immanuelle";          PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.4          # seconds between edits
 UA         = {"User-Agent": "tier-enwiki-sync/1.0 (User:Immanuelle)"}
 

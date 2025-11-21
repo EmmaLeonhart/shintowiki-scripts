@@ -38,7 +38,7 @@ from datetime import datetime, timezone
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE  = 0.4
 CAT_NAME  = "Jawiki resolution pages"
 LIST_FILE = "resolutionpages.txt"

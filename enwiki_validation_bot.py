@@ -29,7 +29,7 @@ SHINTO_URL  = "shinto.miraheze.org"
 SHINTO_PATH = "/w/"
 
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"           # use env‑var / keyring in production
+PASSWORD = "[REDACTED_SECRET_2]"           # use env‑var / keyring in production
 
 PAGES_FILE = "pages.txt"
 THROTTLE    = 0.1             # seconds between writes

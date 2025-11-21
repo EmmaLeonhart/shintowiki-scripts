@@ -12,7 +12,7 @@ Hard‑coded credentials at the top – edit if needed.
 # >>> credentials / endpoint >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 # <<< credentials <<<
 
 import re, sys, urllib.parse, time

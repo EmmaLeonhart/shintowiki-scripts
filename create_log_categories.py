@@ -18,7 +18,7 @@ Only three things to edit below:  API_URL, USERNAME, PASSWORD.
 # ──── LOGIN / WIKI DETAILS ─────────────────────────────────────────
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"        # bot or user account
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 
 PAGES_TXT = "pages.txt"        # input file
 LOG_CAT   = "Log added categories"

@@ -27,7 +27,7 @@ if sys.platform == 'win32':
 
 API_URL = 'https://aelaki.miraheze.org/w/api.php'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 english_glosses = {
     1: "one", 2: "two", 3: "three", 4: "four", 5: "five",

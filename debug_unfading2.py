@@ -3,7 +3,7 @@ import urllib.parse, mwclient, re
 
 API_URL = 'https://shinto.miraheze.org/w/api.php'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 p = urllib.parse.urlparse(API_URL)
 s = mwclient.Site(p.netloc, path=p.path.rsplit('/api.php',1)[0]+'/')

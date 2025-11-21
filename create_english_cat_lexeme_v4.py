@@ -19,7 +19,7 @@ if sys.platform == 'win32':
 WIKIDATA_API = 'https://www.wikidata.org/w/api.php'
 AELAKI_API = 'https://aelaki.miraheze.org/w/api.php'
 USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_1]'
+PASSWORD = '[REDACTED_SECRET_2]'
 
 print("=" * 80)
 print("STEP 1: FETCH LEXEME L7 FROM WIKIDATA")

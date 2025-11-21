@@ -15,7 +15,7 @@ from mwclient.errors import APIError
 WIKI_URL     = "shinto.miraheze.org"
 WIKI_PATH    = "/w/"
 USERNAME     = "Immanuelle"
-PASSWORD     = "[REDACTED_SECRET_1]"
+PASSWORD     = "[REDACTED_SECRET_2]"
 SOURCE_CAT   = "Category:Jawiki linked categories"
 REDIRECT_TAG = "[[Category:jawiki redirect categories]]"
 THROTTLE     = 1.0  # seconds between edits

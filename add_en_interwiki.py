@@ -17,7 +17,7 @@ Edit the credentials/API URL block first.
 # >>> credentials / endpoint >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 EN_API   = "https://en.wikipedia.org/w/api.php"
 # <<< credentials <<<
 

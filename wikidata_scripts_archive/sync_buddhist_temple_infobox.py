@@ -13,7 +13,7 @@ Usage:
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.4      # seconds between edits
 
 MONGO_URI  = "mongodb://localhost:27017"

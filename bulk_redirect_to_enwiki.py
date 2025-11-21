@@ -17,7 +17,7 @@ from mwclient.errors import APIError, InvalidPageTitle
 # ───── CONFIG ──────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"
 THROTTLE  = 0.4          # seconds between edits
 # ------------------------------------------------------------------

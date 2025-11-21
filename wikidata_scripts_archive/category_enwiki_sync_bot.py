@@ -48,7 +48,7 @@ from mwclient.errors import APIError
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 CATS_FILE  = "categories.txt"
 THROTTLE   = 0.4    # seconds between edits
 

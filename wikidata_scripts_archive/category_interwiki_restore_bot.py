@@ -14,7 +14,7 @@ from mwclient.errors import APIError
 
 # ── CONFIG ─────────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
-USERNAME   = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME   = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 PAGES_FILE = "pages.txt"; THROTTLE = 0.5
 WD_API     = "https://www.wikidata.org/w/api.php"
 UA         = {"User-Agent": "tier2-category-bot/2.1 (User:Immanuelle)"}

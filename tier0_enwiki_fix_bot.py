@@ -19,7 +19,7 @@ from mwclient.errors import APIError, InvalidPageTitle
 
 # ── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL   = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME   = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME   = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
 SOURCE_CAT = "Tier 0 Categories"
 TAG_CONF   = "confirmed enwiki categories"
 TAG_TIER0  = "Tier 0 Categories"

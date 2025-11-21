@@ -14,7 +14,7 @@ from mwclient.errors import APIError
 LOCAL_URL  = "shinto.miraheze.org"      #  ❰ change ❱
 LOCAL_PATH = "/w/"
 USERNAME   = "Immanuelle"               #  ❰ change ❱
-PASSWORD   = "[REDACTED_SECRET_1]"             #  ❰ change ❱
+PASSWORD   = "[REDACTED_SECRET_2]"             #  ❰ change ❱
 THROTTLE   = 0.4                        # seconds between API writes
 CSV_FILE   = sys.argv[1] if len(sys.argv) > 1 else "interwikis.csv"
 

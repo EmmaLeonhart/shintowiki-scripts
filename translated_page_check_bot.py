@@ -22,7 +22,7 @@ from mwclient.errors import APIError
 WIKI_URL   = 'shinto.miraheze.org'
 WIKI_PATH  = '/w/'
 USERNAME   = 'Immanuelle'
-PASSWORD   = '[REDACTED_SECRET_1]'
+PASSWORD   = '[REDACTED_SECRET_2]'
 PAGES_FILE = ''     # optional: list of pages to process. If missing or empty, sweep all ns=0.
 THROTTLE   = 0.5             # seconds between edits
 

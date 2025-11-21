@@ -30,7 +30,7 @@ from mwclient.errors import APIError
 SITE_URL     = "shinto.miraheze.org"
 SITE_PATH    = "/w/"
 USERNAME     = "Immanuelle"
-PASSWORD     = "[REDACTED_SECRET_1]"
+PASSWORD     = "[REDACTED_SECRET_2]"
 SOURCE_CAT   = "Tier 2 Categories"
 TAG_CAT      = "Tier 2 Categories with no enwiki"
 THROTTLE     = 0.5  # seconds between API calls/edits

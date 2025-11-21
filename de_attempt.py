@@ -33,7 +33,7 @@ from mwclient.errors import APIError
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"           # leading & trailing slash
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"      # list of local page titles
 THROTTLE  = 1.0              # delay between pages (sec)
 API_URL   = f"https://{WIKI_URL}{WIKI_PATH}api.php"

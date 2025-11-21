@@ -22,7 +22,7 @@ PAGES_FILE   = 'pages.txt'  # list of backlink-list pages
 WIKI_HOST    = 'shinto.miraheze.org'
 WIKI_PATH    = '/w/'
 USERNAME     = 'Immanuelle'
-PASSWORD     = '[REDACTED_SECRET_1]'
+PASSWORD     = '[REDACTED_SECRET_2]'
 CATEGORY     = 'Category:pages needing proper jawiki and history import'
 THROTTLE     = 1.0          # seconds between edits
 

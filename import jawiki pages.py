@@ -32,7 +32,7 @@ from mwclient.errors import APIError
 WIKI_URL  = "shinto.miraheze.org"   # domain only
 WIKI_PATH = "/w/"                  # include leading & trailing slashes
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 PAGES_TXT = "pages.txt"            # each line = ja‑wiki page title
 THROTTLE  = 1.0                    # seconds between imports
 

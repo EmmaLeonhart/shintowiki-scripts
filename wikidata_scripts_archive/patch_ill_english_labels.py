@@ -41,7 +41,7 @@ import mwparserfromhell as mwp      # pip install mwparserfromhell
 WD_USER = "Immanuelle@ImmanuelleGeniTestBot"   # BotPassword user
 WD_PASS = "4dgbha3p34arj1gj0sj2pmqp1jr89kbv"   # BotPassword pass
 SW_USER = "Immanuelle"                         # ShintoWiki user
-SW_PASS = "[REDACTED_SECRET_1]"                       # ShintoWiki pass
+SW_PASS = "[REDACTED_SECRET_2]"                       # ShintoWiki pass
 # ──────────────────────────────────────────────────────────────────────────
 
 WD_API   = "https://www.wikidata.org/w/api.php"

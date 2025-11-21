@@ -26,7 +26,7 @@ from mwclient.errors import APIError
 WIKI_URL   = 'shinto.miraheze.org'
 WIKI_PATH  = '/w/'          # leading/trailing slash
 USERNAME   = 'Immanuelle'
-PASSWORD   = '[REDACTED_SECRET_1]'
+PASSWORD   = '[REDACTED_SECRET_2]'
 PAGES_TXT  = 'pages.txt'     # list of page titles
 THROTTLE   = 1.0             # seconds between API calls
 UNDO_COUNT = 1               # how many recent edits to undo per page

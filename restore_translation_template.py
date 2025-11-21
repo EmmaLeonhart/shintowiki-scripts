@@ -19,7 +19,7 @@ Hard‑coded API endpoint / credentials – edit at top.
 # >>> edit these >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 # <<< edit <<<
 
 import os, sys, time, re, urllib.parse, mwclient

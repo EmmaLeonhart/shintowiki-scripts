@@ -41,7 +41,7 @@ SHINTO_URL  = "shinto.miraheze.org"
 SHINTO_PATH = "/w/"
 
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"          # ⇐ change / use env-var / keyring
+PASSWORD = "[REDACTED_SECRET_2]"          # ⇐ change / use env-var / keyring
 
 PAGES_FILE = "pages.txt"
 THROTTLE    = 0.1            # seconds between API writes

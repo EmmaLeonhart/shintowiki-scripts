@@ -18,7 +18,7 @@ Run:
 SITE_URL   = "shinto.miraheze.org"
 SITE_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 PAGES_FILE = "pages.txt"
 THROTTLE   = 0.4          # seconds between edits
 

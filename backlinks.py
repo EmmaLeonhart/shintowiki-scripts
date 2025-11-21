@@ -31,7 +31,7 @@ PAGES_FILE  = 'pages.txt'      # list of local page titles
 WIKI_HOST   = 'shinto.miraheze.org'
 WIKI_PATH   = '/w/'
 USERNAME    = 'Immanuelle'
-PASSWORD    = '[REDACTED_SECRET_1]'
+PASSWORD    = '[REDACTED_SECRET_2]'
 THROTTLE    = 1.0              # seconds between edits
 
 # ─── LOAD LOCAL TITLES ────────────────────────────────────────────

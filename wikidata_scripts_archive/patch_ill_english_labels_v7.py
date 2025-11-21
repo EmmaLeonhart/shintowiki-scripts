@@ -18,7 +18,7 @@ from pymongo import MongoClient
 
 # ─── config ──────────────────────────────────────────────────────────────
 SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_1]"
+SW_PASS = "[REDACTED_SECRET_2]"
 MONGO_URI = "mongodb://localhost:27017"   # adjust if needed
 DB_NAME = "shinto_label_review"
 COLL_NAME = "proposed_labels"

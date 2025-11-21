@@ -26,7 +26,7 @@ Run with ``-t`` / ``--test`` to preview changes without saving.
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"           # or set env MW_USER
-PASSWORD   = "[REDACTED_SECRET_1]"         # or set env MW_PASS
+PASSWORD   = "[REDACTED_SECRET_2]"         # or set env MW_PASS
 THROTTLE   = 0.5                    # seconds between live saves
 PAGES_FILE = "pages.txt"            # titles list
 

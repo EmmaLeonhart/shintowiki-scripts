@@ -15,7 +15,7 @@ Run with `-t/--test` for a dry‑run.
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"           # or set env MW_USER
-PASSWORD   = "[REDACTED_SECRET_1]"         # or set env MW_PASS
+PASSWORD   = "[REDACTED_SECRET_2]"         # or set env MW_PASS
 THROTTLE   = 0.5                    # seconds between live saves
 
 SRC_CAT    = "Floating_Z_headings"   # canon form w/ underscores

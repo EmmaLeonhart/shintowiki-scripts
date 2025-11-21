@@ -19,7 +19,7 @@ Usage
 LOCAL_URL  = "shinto.miraheze.org"
 LOCAL_PATH = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
+PASSWORD   = "[REDACTED_SECRET_2]"
 THROTTLE   = 0.3                 # seconds between deletions
 SUMMARY    = "Bot: delete orphaned redirect"
 

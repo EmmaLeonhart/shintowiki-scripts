@@ -7,7 +7,7 @@ Undo the most recent bot edits by restoring to previous version
 # >>> credentials / endpoint >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
 USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_1]"
+PASSWORD = "[REDACTED_SECRET_2]"
 # <<< credentials <<<
 
 import os, sys, time, urllib.parse, mwclient

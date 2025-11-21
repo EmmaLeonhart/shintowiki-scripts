@@ -15,7 +15,7 @@ from mwclient.errors import APIError
 # ─── CONFIG ─────────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
 USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = "[REDACTED_SECRET_2]"
 THROTTLE  = 0.5
 UA        = {"User-Agent": "cat-tidier/1.0 (User:Immanuelle)"}
 
