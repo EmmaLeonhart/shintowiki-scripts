@@ -444,7 +444,7 @@ def _dup_keys(rows, idx):
 def build_shiki_table(rows):
     dup_qids = _dup_keys(rows, 6)
     hdr = ('{| class="wikitable sortable"\n'
-           '! District !! Name !! Funding&nbsp;category !! Celebration '
+           '! District !! Name !! Funding&nbsp;category '
            '!! Rank !! Seats '
            '!! Subtype !! Parent&nbsp;shrine !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
 
@@ -469,6 +469,15 @@ def build_shiki_table(rows):
         seats   = seat_quantity(q)
         dist    = district_name(q)
         desig   = get_designation(q)
+
+        # Merge celebration into funding category
+        if celeb_link != "—" and desig != "—":
+            combined_desig = f"{desig} ({celeb_link})"
+        elif celeb_link != "—":
+            combined_desig = celeb_link
+        else:
+            combined_desig = desig
+
         rank_link = get_rank_link(rank)
         subtype = "; ".join(
             SUBTYPE_MAP[c["mainsnak"]["datavalue"]["value"]["id"]]
@@ -483,7 +492,7 @@ def build_shiki_table(rows):
         lines += [
             '|-',
             cell(dist), cell(link),
-            cell(desig), cell(celeb_link), cell(rank_link), cell(seats),
+            cell(combined_desig), cell(rank_link), cell(seats),
             cell(subtype), cell(parents), cell(same_as), cell(coords), cell(dbcell)
         ]
 
