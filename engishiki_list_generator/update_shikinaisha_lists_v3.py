@@ -526,7 +526,7 @@ def build_shiki_table(rows):
         if designations:
             notes_parts.extend(designations)
 
-        notes = " | ".join(notes_parts) if notes_parts else "—"
+        notes = ", ".join(notes_parts) if notes_parts else "—"
 
         same_as = same_as_links(q)
         coords  = coord_cell(q)
@@ -607,7 +607,8 @@ def build_interwiki_links(ent):
 LEAD_TEMPLATE = (
     "{{{{afc comment|Wikidata entry [[d:{qid}]]\n\n"
     "[[:ja:{ja_title}]]\n\n~~~~}}}}\n"
-    "This is a '''List of Shikinaisha in {prov}''' …\n\n"
+    "This is a list of Shikinaisha in [[{prov}]]. That is the shrines in the "
+    "[[Engishiki Jinmyōchō]] in the province.\n\n"
     "The Engishiki Jinmyōchō counts {tot} Shikinaisha in the province – "
     "{sho} Shikinai Shosha and {tai} Shikinai Taisha.\n\n"
 )
@@ -648,7 +649,7 @@ def process(title, token, dry):
     )
 
     wiki_edit(title, text,
-              "Bot: Add shrine designations (sōja, ichinomiya, etc.) to Notes column",
+              "Bot: Update lede format and use comma separators in Notes column",
               token, dry)
 
 # ────────────────────────────────────────────────────────
