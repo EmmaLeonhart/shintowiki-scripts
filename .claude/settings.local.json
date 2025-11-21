@@ -42,7 +42,9 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:meta.miraheze.org)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(timeout 310 python:*)"
+      "Bash(timeout 310 python:*)",
+      "Bash(cmd.exe /c \"taskkill /F /IM python.exe\")",
+      "Bash(timeout 3600 python:*)"
     ],
     "deny": [],
     "ask": []

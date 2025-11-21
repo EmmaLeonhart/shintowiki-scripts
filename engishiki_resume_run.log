@@ -1,0 +1,56 @@
+[INFO] Starting update now...
+[INFO] Found 0 previously completed lists
+Traceback (most recent call last):
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\engishiki_list_generator\update_shikinaisha_lists_v3.py", line 917, in <module>
+    csrf = wiki_login()
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\engishiki_list_generator\update_shikinaisha_lists_v3.py", line 59, in wiki_login
+    "type": "login", "format": "json"}).json()
+                                        ~~~~^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[INFO] Starting update now...
+[INFO] Found 0 previously completed lists
+[WARNING] Login failed (attempt 1): 429 Client Error: Too Many Requests for url: https://shinto.miraheze.org/w/api.php?action=query&meta=tokens&type=login&format=json
+[INFO] Retrying in 10 seconds...
+[WARNING] Login failed (attempt 2): 429 Client Error: Too Many Requests for url: https://shinto.miraheze.org/w/api.php?action=query&meta=tokens&type=login&format=json
+[INFO] Retrying in 20 seconds...
+Traceback (most recent call last):
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\engishiki_list_generator\update_shikinaisha_lists_v3.py", line 937, in <module>
+    csrf = wiki_login()
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\engishiki_list_generator\update_shikinaisha_lists_v3.py", line 64, in wiki_login
+    r1.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://shinto.miraheze.org/w/api.php?action=query&meta=tokens&type=login&format=json
+[INFO] Starting update now...
+[INFO] Skipping 3 previously partially-completed provinces; starting fresh from Izumi Province
+[INFO] Total pages to skip: 5
+[INFO] Login successful (attempt 1)
+[INFO] Starting update now...
+[INFO] Skipping all provinces before Izumi; starting fresh from Izumi Province
+[INFO] Total pages to skip: 23
+[INFO] Login successful (attempt 1)
+[INFO] Starting update now...
+[INFO] Will skip all provinces until reaching Izumi Province, then process from there
+[INFO] Login successful (attempt 1)
+[INFO] Starting update now...
+[INFO] Will skip all provinces until reaching Izumi Province, then process from there
+[INFO] Login successful (attempt 1)

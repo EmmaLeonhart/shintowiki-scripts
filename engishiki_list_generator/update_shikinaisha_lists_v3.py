@@ -18,7 +18,31 @@ from html import escape
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # ── No delay - start immediately ───────────────────────
+import json
+STATE_FILE = "shiki_list_progress.json"
+
+def load_progress():
+    """Load progress from state file."""
+    if os.path.exists(STATE_FILE):
+        try:
+            with open(STATE_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            return {}
+    return {}
+
+def save_progress(state):
+    """Save progress to state file."""
+    with open(STATE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+
+progress = load_progress()
+
+# Flag to track when we've reached Izumi Province
+started_from_izumi = False
+
 print("[INFO] Starting update now...")
+print(f"[INFO] Will skip all provinces until reaching Izumi Province, then process from there")
 
 # ── endpoints ───────────────────────────────────────────
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
@@ -34,15 +58,33 @@ S.headers["User-Agent"] = "ShikinaishaListBot/0.7 (coords col)"
 #  MediaWiki helpers
 # ────────────────────────────────────────────────────────
 def wiki_login() -> str:
-    t = S.get(WIKI_API, params={
-        "action": "query", "meta": "tokens",
-        "type": "login", "format": "json"}).json()
-    S.post(WIKI_API, data={
-        "action": "login", "lgname": USER, "lgpassword": PASS,
-        "lgtoken": t["query"]["tokens"]["logintoken"], "format": "json"})
-    return S.get(WIKI_API, params={
-        "action": "query", "meta": "tokens", "format": "json"}).json() \
-             ["query"]["tokens"]["csrftoken"]
+    import time as time_module
+    attempt = 0
+    while True:  # Infinite retries - NEVER give up
+        attempt += 1
+        try:
+            r1 = S.get(WIKI_API, params={
+                "action": "query", "meta": "tokens",
+                "type": "login", "format": "json"}, timeout=30)
+            r1.raise_for_status()
+            t = r1.json()
+
+            S.post(WIKI_API, data={
+                "action": "login", "lgname": USER, "lgpassword": PASS,
+                "lgtoken": t["query"]["tokens"]["logintoken"], "format": "json"},
+                timeout=30)
+
+            r2 = S.get(WIKI_API, params={
+                "action": "query", "meta": "tokens", "format": "json"}, timeout=30)
+            r2.raise_for_status()
+            csrf = r2.json()["query"]["tokens"]["csrftoken"]
+            print(f"[INFO] Login successful (attempt {attempt})", flush=True)
+            return csrf
+        except Exception as e:
+            wait = 60 * min(attempt, 5)  # Cap at 300 seconds (5 minutes)
+            print(f"[WARNING] Login failed (attempt {attempt}): {e}", flush=True)
+            print(f"[INFO] Retrying in {wait} seconds...", flush=True)
+            time_module.sleep(wait)
 
 def cat_members(cat):
     cont = ""
@@ -891,13 +933,39 @@ def process(title, token, dry):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true",
-                    help="preview only; don’t save edits")
+                    help="preview only; don't save edits")
     args = ap.parse_args()
 
     csrf = wiki_login()
-    for page in cat_members("Category:Lists_of_Shikinaisha_by_location"):
+
+    # Get all pages in order
+    all_pages = list(cat_members("Category:Lists_of_Shikinaisha_by_location"))
+    print(f"[INFO] Found {len(all_pages)} total province lists")
+
+    # Find Izumi Province index
+    izumi_index = None
+    for i, page in enumerate(all_pages):
+        if "Izumi" in page:
+            izumi_index = i
+            print(f"[INFO] Found Izumi Province at index {i}: {page}")
+            break
+
+    if izumi_index is None:
+        print("[ERROR] Could not find Izumi Province in category!")
+        sys.exit(1)
+
+    # Process from Izumi onwards
+    for page in all_pages[izumi_index:]:
+        # Skip if already processed
+        if page in progress:
+            print(f"[SKIP] {page} (already processed)")
+            continue
+
         try:
             process(page, csrf, args.dry)
+            # Record as successful
+            progress[page] = True
+            save_progress(progress)
         except Exception as e:
             try:
                 print(f"ERROR {page}: {e}")
