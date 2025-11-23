@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 """
-add_wikidata_to_ill_templates_v2.py
-===================================
-For pages in [[Category:Pages linked to Wikidata]]:
-1. Find all {{ill|...}} templates without WD= parameter
-2. Extract language codes and page titles from the template
-3. Query Wikidata for each language's Wikipedia article
-4. APPEND ONLY |WD= or |comment= parameter before closing }}
-5. NEVER modify or remove existing template content
+Test ill template extraction on a single page: Ipip Festival
 """
 # >>> credentials / endpoint >>>
 API_URL  = "https://shinto.miraheze.org/w/api.php"
@@ -15,11 +8,14 @@ USERNAME = "Immanuelle"
 PASSWORD = "[REDACTED_SECRET_2]"
 # <<< credentials <<<
 
-import os, sys, time, urllib.parse, mwclient, re, requests
+import os, sys, time, urllib.parse, mwclient, re, requests, io
 from mwclient.errors import APIError
 
-CATEGORY = "Pages linked to Wikidata"
+# Fix encoding on Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 THROTTLE = 0.5
+PAGE_TITLE = "Ipip Festival"
 
 # ─── site login ───────────────────────────────────────────────────
 
@@ -150,98 +146,106 @@ def main():
     s = site()
     print("Logged in")
 
-    # Get all pages in the category
-    cat = s.pages[f"Category:{CATEGORY}"]
+    # Get the specific page
+    pg = s.pages[PAGE_TITLE]
 
-    if not cat.exists:
-        print(f"[ERROR] Category '{CATEGORY}' does not exist")
+    if not pg.exists:
+        print(f"[ERROR] Page '{PAGE_TITLE}' does not exist")
         return
 
-    print(f"[INFO] Processing pages in Category:{CATEGORY}")
+    try:
+        print(f"Processing: {pg.name}")
+        text = pg.text()
 
-    count = 0
-    for pg in cat:
-        # Only process main namespace articles
-        if pg.namespace != 0:
-            continue
+        # Find all {{ill|...}} templates - non-greedy match
+        ill_pattern = r'\{\{ill\|(?:[^{}])*?\}\}'
+        matches = list(re.finditer(ill_pattern, text))
 
-        try:
-            print(f"Processing: {pg.name}")
-            text = pg.text()
+        if not matches:
+            print(f"  [SKIP] no ill templates found")
+            return
 
-            # Find all {{ill|...}} templates - non-greedy match
-            # This pattern finds {{ill|...}} with no nested templates inside
-            ill_pattern = r'\{\{ill\|(?:[^{}])*?\}\}'
-            matches = list(re.finditer(ill_pattern, text))
+        print(f"  Found {len(matches)} ill templates")
 
-            if not matches:
-                print(f"  [SKIP] no ill templates found")
+        updated = False
+        new_text = text
+
+        for idx, match in enumerate(matches, 1):
+            template_text = match.group(0)
+
+            # Skip if already has WD= parameter
+            if 'WD=' in template_text or 'wd=' in template_text:
+                print(f"  [{idx}] [SKIP] template already has WD parameter")
                 continue
 
-            updated = False
-            new_text = text
+            print(f"  [{idx}] [INFO] Processing template: {template_text[:80]}...")
 
-            for match in matches:
-                template_text = match.group(0)
+            # Extract language-title pairs
+            languages = extract_languages_from_ill(template_text)
 
-                # Skip if already has WD= parameter
-                if 'WD=' in template_text or 'wd=' in template_text:
-                    print(f"  [SKIP] template already has WD parameter")
-                    continue
+            if not languages:
+                print(f"      [NO LANGS] could not extract languages")
+                continue
 
-                print(f"  [INFO] Processing template")
+            print(f"      Extracted languages: {languages}")
 
-                # Extract language-title pairs
-                languages = extract_languages_from_ill(template_text)
-
-                if not languages:
-                    print(f"    [NO LANGS] could not extract languages")
-                    continue
-
-                # Query wikidata for each language
-                found_qids = []
-                for lang, title in languages:
-                    qid = get_qid_from_wikipedia(lang, title)
-                    if qid:
-                        found_qids.append(qid)
-                        print(f"    [OK] {lang}:{title} -> {qid}")
-                    else:
-                        print(f"    [NOT FOUND] {lang}:{title}")
-
-                # Construct the new parameter to append
-                new_param = ""
-                if found_qids:
-                    # Use the first QID (they should all be the same ideally)
-                    qid_list = "|".join(set(found_qids))
-                    new_param = f"|WD={qid_list}"
-                    print(f"  [ADD WD] {qid_list}")
+            # Query wikidata for each language
+            found_qids = []
+            for lang, title in languages:
+                qid = get_qid_from_wikipedia(lang, title)
+                if qid:
+                    found_qids.append(qid)
+                    print(f"        [OK] {lang}:{title} -> {qid}")
                 else:
-                    # No wikidatas found
-                    new_param = "|comment=no wikipedias work"
-                    print(f"  [NO WD] adding comment")
+                    print(f"        [NOT FOUND] {lang}:{title}")
 
-                # IMPORTANT: Only append the new parameter before closing }}
-                # Find the closing }} and insert before it
-                new_template = template_text[:-2] + new_param + "}}"
+            # Construct the new parameter to append
+            new_param = ""
+            if found_qids:
+                # Use the first QID (they should all be the same ideally)
+                qid_list = "|".join(set(found_qids))
+                new_param = f"|WD={qid_list}"
+                print(f"      [ADD WD] {qid_list}")
+            else:
+                # No wikidatas found
+                new_param = "|comment=no wikipedias work"
+                print(f"      [NO WD] adding comment")
 
-                # Replace in text
-                new_text = new_text.replace(template_text, new_template, 1)
-                updated = True
+            # IMPORTANT: Only append the new parameter before closing }}
+            new_template = template_text[:-2] + new_param + "}}"
 
-            if updated:
-                try:
-                    pg.save(new_text, summary="Bot: Add wikidata to ill templates")
-                    count += 1
-                    print(f"  [DONE] updated page")
-                except APIError as e:
-                    print(f"  [FAILED] save failed: {e.code}")
+            print(f"      Old: {template_text[:80]}...")
+            print(f"      New: {new_template[:80]}...")
 
-            time.sleep(THROTTLE)
+            # Replace in text
+            new_text = new_text.replace(template_text, new_template, 1)
+            updated = True
 
-        except Exception as e:
-            print(f"  [ERROR] {str(e)}")
+        if updated:
+            try:
+                print(f"  [DEBUG] Attempting to save page...")
+                print(f"  [DEBUG] Text length before: {len(text)}, after: {len(new_text)}")
+                print(f"  [DEBUG] Text changed: {text != new_text}")
+                result = pg.save(new_text, summary="Bot: Add wikidata to ill templates")
+                print(f"  [DONE] Page saved successfully")
+                print(f"  [DEBUG] Save result: {result}")
+            except APIError as e:
+                print(f"  [FAILED] save failed: {e.code}")
+                import traceback
+                traceback.print_exc()
+            except Exception as e:
+                print(f"  [FAILED] save failed with exception: {e}")
+                import traceback
+                traceback.print_exc()
+        else:
+            print(f"  [NO UPDATES] no changes made")
 
-    print(f"\nTotal pages updated: {count}")
+        time.sleep(THROTTLE)
+
+    except Exception as e:
+        print(f"  [ERROR] {str(e)}")
+        import traceback
+        traceback.print_exc()
 
 if __name__=='__main__':
     main()

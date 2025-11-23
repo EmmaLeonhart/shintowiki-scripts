@@ -1,0 +1,101 @@
+Loading expected QID mapping...
+
+Loaded 6389 expected QID mappings
+
+Parsing XML export files...
+
+Processing export_batch_0001.xml...
+  → 500 pages, total: 500
+
+Processing export_batch_0002.xml...
+  → 500 pages, total: 1000
+
+Processing export_batch_0003.xml...
+  → 500 pages, total: 1500
+
+Processing export_batch_0004.xml...
+  → 500 pages, total: 2000
+
+Processing export_batch_0005.xml...
+  → 500 pages, total: 2500
+
+Processing export_batch_0006.xml...
+  → 500 pages, total: 3000
+
+Processing export_batch_0007.xml...
+  → 500 pages, total: 3500
+
+Processing export_batch_0008.xml...
+  → 500 pages, total: 4000
+
+Processing export_batch_0009.xml...
+  → 500 pages, total: 4500
+
+Processing export_batch_0010.xml...
+  → 500 pages, total: 5000
+
+Processing export_batch_0011.xml...
+  → 500 pages, total: 5500
+
+Processing export_batch_0012.xml...
+  → 500 pages, total: 6000
+
+Processing export_batch_0013.xml...
+  → 500 pages, total: 6500
+
+Processing export_batch_0014.xml...
+  → 500 pages, total: 7000
+
+Processing export_batch_0015.xml...
+  → 500 pages, total: 7500
+
+Processing export_batch_0016.xml...
+  → 500 pages, total: 8000
+
+Processing export_batch_0017.xml...
+  → 500 pages, total: 8500
+
+Processing export_batch_0018.xml...
+  → 500 pages, total: 9000
+
+Processing export_batch_0019.xml...
+  → 500 pages, total: 9500
+
+Processing export_batch_0020.xml...
+  → 500 pages, total: 10000
+
+Processing export_batch_0021.xml...
+  → 500 pages, total: 10500
+
+Processing export_batch_0022.xml...
+  → 500 pages, total: 11000
+
+Processing export_batch_0023.xml...
+  → 62 pages, total: 11062
+
+Total pages loaded: 11062
+
+Analyzing pages for QID issues...
+
+✗ WRONG QID: Futatsuzuka Kofun (Sendai) should have Q11371433 but has Q11371432
+
+Analysis complete!
+
+=== SUMMARY ===
+Total pages analyzed: 11062
+Pages with conflicting QIDs: 0
+QIDs with contradictions to expected mapping: 1
+Pages missing expected QIDs: 0
+Duplicate QIDs (same QID on multiple pages): 36
+
+Writing reports...
+
+Wrote 1 contradictions to contradictions_with_expected.csv
+
+Wrote 0 pages with conflicting QIDs to conflicting_qids.csv
+
+Wrote 36 duplicate QIDs to duplicate_qids.csv
+
+Wrote wiki report to qid_analysis_report.wiki
+
+Done!

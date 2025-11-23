@@ -166,11 +166,6 @@ def main():
             # Get page text
             text = page.text()
 
-            # Skip if already has interwiki comment
-            if has_interwiki_comment(text):
-                skipped_count += 1
-                continue
-
             # Extract QID
             qid = extract_wikidata_qid(text)
             if not qid:
