@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""generate_shikinaisha_pages_v16.py
+"""generate_shikinaisha_pages_v18.py
 ================================================
 Generate standardized shrine pages for Wikidata-generated Shikinaisha entries
-V16: Restore proper ILL logic (priority: Shinto link > English Wikipedia > English label) + include source URLs
+V18: Proper ILL sitelinks logic, omit P1448 and P2671, source refs with URLs
 ================================================
 
 This script:
@@ -16,14 +16,13 @@ This script:
    - P1448 OMITTED (not shown)
    - P2671 OMITTED (not shown)
    - P11250 IGNORED (filtered out)
-   - ILL templates with PROPER logic (Wikipedia sitelinks only for authority control):
-     * Priority 1: Shinto wiki sitelink (shintowiki) if exists
-     * Priority 2: English Wikipedia title (enwiki) if exists
-     * Priority 3: English label from Wikidata (fallback)
-     * Always: lt=ENGLISH_LABEL, WD=QID
-     * NO other language parameters - authority control only (record Wikipedia articles)
+   - ILL templates with PROPER established format:
+     * Priority 1 param: shintowiki sitelink > enwiki sitelink > English label
+     * lt= parameter with English label (for display text)
+     * Positional pairs: |LANG_CODE|WIKIPEDIA_TITLE for each sitelink
+     * WD= parameter with QID (always capitalized)
    - P625 (Coordinate Location) formatted with {{coord|lat|lon}} template
-   - Source references with URLS: <ref>SOURCE: URL</ref>
+   - Source references with URLs: <ref>SOURCE: URL</ref>
    - Sub-bullet qualifiers under each claim
    - Wikipedia links (enwiki/simplewiki) properly included
    - Interwiki categories based on sitelinks
@@ -50,8 +49,8 @@ WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
 PASSWORD  = '[REDACTED_SECRET_2]'
 
-PROPERTIES_TO_IGNORE = ['P11250']
-PROPERTIES_TO_OMIT = ['P1448', 'P2671']
+PROPERTIES_TO_IGNORE = ['P11250']  # Skip these properties entirely
+PROPERTIES_TO_OMIT = ['P1448', 'P2671']  # Don't create sections for these
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
@@ -101,120 +100,120 @@ def get_property_value(entity, property_id):
     claims = entity.get('claims', {})
     prop_claims = claims.get(property_id, [])
 
-    if prop_claims:
-        mainsnak = prop_claims[0].get('mainsnak', {})
-        datavalue = mainsnak.get('datavalue', {})
-        return datavalue.get('value')
+    if not prop_claims:
+        return None
 
+    # Get first claim
+    claim = prop_claims[0]
+    mainsnak = claim.get('mainsnak', {})
+    datavalue = mainsnak.get('datavalue', {})
+
+    return datavalue.get('value')
+
+
+def get_label(entity, lang='en'):
+    """Get label in specific language."""
+    if not entity:
+        return None
+    labels = entity.get('labels', {})
+    if lang in labels:
+        return labels[lang].get('value')
     return None
 
 
+def get_sitelinks(entity):
+    """Extract interwiki links from Wikidata sitelinks - returns only titles."""
+    sitelinks = {}
+    if entity and 'sitelinks' in entity:
+        for site_code, site_data in entity['sitelinks'].items():
+            sitelinks[site_code] = site_data.get('title', '')
+    return sitelinks
+
+
 def get_all_property_claims(entity):
-    """Get all property claims from entity."""
+    """Get all claims organized by property ID."""
     if not entity or 'claims' not in entity:
         return {}
     return entity.get('claims', {})
 
 
-def get_label(entity, language='en'):
-    """Extract label from entity in specified language."""
-    if not entity or 'labels' not in entity:
-        return None
-
-    labels = entity.get('labels', {})
-    if language in labels:
-        return labels[language].get('value')
-
-    return None
-
-
-def get_sitelinks(entity):
-    """Extract sitelinks (interwiki) from entity."""
-    if not entity or 'sitelinks' not in entity:
-        return {}
-    return entity.get('sitelinks', {})
-
-
 def extract_province_from_p361(entity):
-    """Extract province name from P361 (part of) property."""
-    if not entity or 'claims' not in entity:
-        return None, None
+    """Extract province name from P361 (part of) claims."""
+    p361_claims = entity.get('claims', {}).get('P361', [])
 
-    claims = entity.get('claims', {}).get('P361', [])
-    if not claims:
-        return None, None
+    for claim in p361_claims:
+        datavalue = claim.get('mainsnak', {}).get('datavalue', {})
+        if isinstance(datavalue.get('value'), dict):
+            list_qid = datavalue['value'].get('id')
+            if list_qid:
+                list_entity = get_wikidata_entity(list_qid)
+                list_label = get_label(list_entity)
 
-    for claim in claims:
-        mainsnak = claim.get('mainsnak', {})
-        datavalue = mainsnak.get('datavalue', {})
-        value = datavalue.get('value')
+                if list_label:
+                    match = re.match(r'List of Shikinaisha in (.+)$', list_label)
+                    if match:
+                        province = match.group(1)
+                        return province, list_label
 
-        if isinstance(value, dict) and 'id' in value:
-            qid = value['id']
-            ref_entity = get_wikidata_entity(qid)
-            if ref_entity:
-                label = get_label(ref_entity)
-                if label and label.startswith('List of Shikinaisha in '):
-                    province = label.replace('List of Shikinaisha in ', '')
-                    return province, label
     return None, None
 
 
-def format_wikidata_link(entity, qid, sitelinks=None):
-    """Format a Wikidata entity as an ILL (interlanguage link) template.
+def format_wikidata_link(entity, qid, link_text=None):
+    """Format a wikidata link using ILL syntax with lt= and WD parameters.
 
-    Priority for first parameter (Wikipedia sitelinks only):
-    1. Shinto wiki sitelink (shintowiki)
-    2. English Wikipedia title (enwiki)
-    3. English label from Wikidata (if no Wikipedia exists)
+    Format: {{ill|FIRST_PARAM|lt=ENGLISH_LABEL|LANG1|TITLE1|LANG2|TITLE2|...|WD=QID}}
 
-    Template format: {{ill|FIRST_PARAM|lt=ENGLISH_LABEL|WD=QID}}
+    FIRST_PARAM priority:
+    1. shintowiki sitelink
+    2. enwiki sitelink
+    3. English label from Wikidata
 
-    PURPOSE: Authority control - keep record of existing Wikipedia articles.
-    NO other language parameters - only Wikipedia sitelinks matter.
+    Then positional pairs: |LANG_CODE|WIKIPEDIA_TITLE for each sitelink
     """
-    if sitelinks is None:
-        sitelinks = {}
+    sitelinks = get_sitelinks(entity)
 
-    english_label = get_label(entity, 'en') if entity else None
-    if not english_label:
-        english_label = qid
-
-    # Priority 1: Shinto wiki sitelink
-    first_param = None
+    # Try to find shinto wiki page first, then English Wikipedia
+    first_link = None
     if 'shintowiki' in sitelinks:
-        first_param = sitelinks['shintowiki']
-    # Priority 2: English Wikipedia title
+        first_link = sitelinks['shintowiki']
     elif 'enwiki' in sitelinks:
-        first_param = sitelinks['enwiki']
-    # Priority 3: English label (only if no Wikipedia exists)
+        first_link = sitelinks['enwiki']
     else:
-        first_param = english_label
+        first_link = get_label(entity, 'en') or qid
 
-    # Build template: {{ill|FIRST_PARAM|lt=ENGLISH_LABEL|WD=QID}}
-    # NO other language parameters - authority control only
-    template = f"{{{{ill|{first_param}|lt={english_label}|WD={qid}}}}}"
+    # Get English label for lt= parameter
+    en_label = get_label(entity, 'en') or qid
 
-    return template
+    # Build the ILL link with lt= parameter
+    wd_link = f"{{{{ill|{first_link}|lt={en_label}"
+
+    # Add all language codes and links dynamically (don't limit to specific languages)
+    for lang_code in sorted(sitelinks.keys()):
+        # Skip commonswiki (handled separately at bottom)
+        if lang_code != 'commonswiki':
+            lang = lang_code.replace('wiki', '')
+            title = sitelinks[lang_code]
+            wd_link += f"|{lang}|{title}"
+
+    # Add WD (Wikidata QID) parameter
+    wd_link += f"|WD={qid}}}}}"
+
+    return wd_link
 
 
 def get_property_heading(property_id):
-    """Get human-readable heading for a property."""
+    """Get heading text for a property in format: EN_LABEL (PID)"""
     try:
         url = f'https://www.wikidata.org/wiki/Special:EntityData/{property_id}.json'
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         resp = requests.get(url, timeout=5, headers=headers)
-        resp.raise_for_status()
-        data = resp.json()
-
-        if 'entities' in data and property_id in data['entities']:
-            entity = data['entities'][property_id]
-            labels = entity.get('labels', {})
-            if 'en' in labels:
-                label = labels['en'].get('value')
-                return f"{label} ({property_id})"
+        if resp.status_code == 200:
+            data = resp.json()
+            if 'entities' in data and property_id in data['entities']:
+                labels = data['entities'][property_id].get('labels', {})
+                if 'en' in labels:
+                    label = labels['en'].get('value')
+                    return f"{label} ({property_id})"
     except Exception:
         pass
 
@@ -239,7 +238,7 @@ def get_property_heading(property_id):
 
 
 def get_source_reference_with_url(claim):
-    """Extract source reference from claim references, including URLs in proper format.
+    """Extract source reference from claim references, including URLs.
 
     Returns format: "SOURCE_NAME: URL" or just "URL" if no source name available.
     """
@@ -289,8 +288,7 @@ def format_qualifier_value(qualifier_value):
     if isinstance(qualifier_value, dict) and 'id' in qualifier_value:
         qid = qualifier_value['id']
         ref_entity = get_wikidata_entity(qid)
-        sitelinks = get_sitelinks(ref_entity) if ref_entity else {}
-        return format_wikidata_link(ref_entity or {}, qid, sitelinks)
+        return format_wikidata_link(ref_entity or {}, qid)
 
     if isinstance(qualifier_value, str):
         return qualifier_value
@@ -340,10 +338,12 @@ def format_claim_value(claim, entity, property_id=None):
 
     formatted_value = None
 
+    # Special handling for P13677 - Kokugakuin Digital Museum
     if property_id == 'P13677' and isinstance(value, str):
         url = f"https://jmapps.ne.jp/kokugakuin/det.html?data_id={value}"
         formatted_value = f"[{url} Kokugakuin Digital Museum Item]"
 
+    # Special handling for P625 - Coordinate location with coord template
     elif property_id == 'P625' and isinstance(value, dict):
         lat = value.get('latitude')
         lon = value.get('longitude')
@@ -352,19 +352,24 @@ def format_claim_value(claim, entity, property_id=None):
         else:
             formatted_value = None
 
+    # Handle QID references with ILL links
     elif isinstance(value, dict) and 'id' in value:
         qid = value['id']
         ref_entity = get_wikidata_entity(qid)
-        sitelinks = get_sitelinks(ref_entity) if ref_entity else {}
-        formatted_value = format_wikidata_link(ref_entity or {}, qid, sitelinks)
+        formatted_value = format_wikidata_link(ref_entity or {}, qid)
 
+    # Handle strings
     elif isinstance(value, str):
         formatted_value = value
 
+    # Handle other types
     else:
         formatted_value = str(value)
 
+    # Get qualifiers
     qualifiers = get_qualifiers_text(claim)
+
+    # Get source reference with URL
     source = get_source_reference_with_url(claim)
 
     return formatted_value, qualifiers, source
@@ -378,25 +383,8 @@ def format_page_content(page_name, qid, entity):
     native_name = get_label(entity, 'ja')
     english_label = get_label(entity, 'en')
 
-    # Extract sitelinks for interwiki handling
-    sitelinks = get_sitelinks(entity)
-    has_enwiki = 'enwiki' in sitelinks
-    has_simplewiki = 'simplewiki' in sitelinks
-    has_jawiki = 'jawiki' in sitelinks
-    has_zhwiki = 'zhwiki' in sitelinks
-
     # Extract province from P361
     province_name, list_label = extract_province_from_p361(entity)
-
-    # ADD EXPAND TEMPLATES AT TOP if needed
-    if has_jawiki:
-        jawiki_title = sitelinks['jawiki']
-        content_parts.append(f"{{{{Expand Japanese|{jawiki_title}}}}}")
-        content_parts.append("")
-    elif has_zhwiki:
-        zhwiki_title = sitelinks['zhwiki']
-        content_parts.append(f"{{{{Expand Chinese|{zhwiki_title}}}}}")
-        content_parts.append("")
 
     # ADD INFOBOX FIRST
     infobox_parts = ["{{Infobox religious building"]
@@ -434,8 +422,7 @@ def format_page_content(page_name, qid, entity):
         deity_qid = deity.get('id')
         if deity_qid:
             deity_entity = get_wikidata_entity(deity_qid)
-            deity_sitelinks = get_sitelinks(deity_entity) if deity_entity else {}
-            deity_link = format_wikidata_link(deity_entity or {}, deity_qid, deity_sitelinks)
+            deity_link = format_wikidata_link(deity_entity or {}, deity_qid)
             infobox_parts.append(f"| deity = {deity_link}")
 
     # Established (P571)
@@ -482,17 +469,19 @@ def format_page_content(page_name, qid, entity):
             for claim in claims:
                 formatted_value, qualifiers, source = format_claim_value(claim, entity, prop_id)
                 if formatted_value:
+                    # Add main bullet with optional source reference
                     if source:
                         content_parts.append(f"* {formatted_value}<ref>{source}</ref>")
                     else:
                         content_parts.append(f"* {formatted_value}")
 
+                    # Add qualifiers as sub-bullets
                     for qualifier in qualifiers:
                         content_parts.append(qualifier)
 
             content_parts.append("")
 
-    # Add remaining properties
+    # Add remaining properties (except those in PROPERTIES_TO_IGNORE or PROPERTIES_TO_OMIT)
     for prop_id in sorted(all_claims.keys()):
         if prop_id not in property_order and prop_id not in PROPERTIES_TO_IGNORE and prop_id not in PROPERTIES_TO_OMIT:
             claims = all_claims[prop_id]
@@ -503,11 +492,13 @@ def format_page_content(page_name, qid, entity):
             for claim in claims:
                 formatted_value, qualifiers, source = format_claim_value(claim, entity, prop_id)
                 if formatted_value:
+                    # Add main bullet with optional source reference
                     if source:
                         content_parts.append(f"* {formatted_value}<ref>{source}</ref>")
                     else:
                         content_parts.append(f"* {formatted_value}")
 
+                    # Add qualifiers as sub-bullets
                     for qualifier in qualifiers:
                         content_parts.append(qualifier)
 
@@ -515,13 +506,6 @@ def format_page_content(page_name, qid, entity):
 
     # Categories
     categories = ["[[Category:Wikidata generated shikinaisha pages]]"]
-
-    # Add interwiki categories
-    if has_enwiki or has_simplewiki:
-        categories.append("[[Category:Autogenerated pages with simplewiki or enwiki interwikis, possibly accidentally overwritten]]")
-
-    if has_jawiki:
-        categories.append("[[Category:Autogenerated pages with jawiki interwikis, possibly accidentally overwritten]]")
 
     # Add categories from P31 (instance of)
     p31_values = entity.get('claims', {}).get('P31', [])
@@ -543,16 +527,18 @@ def format_page_content(page_name, qid, entity):
     content_parts.append("")
 
     # Interwiki links at the bottom
+    sitelinks = get_sitelinks(entity)
     interwiki_parts = []
 
-    # Handle commons (without "Category:" prefix in the template)
+    # Handle commons
     if 'commonswiki' in sitelinks:
         commons_page = sitelinks['commonswiki']
         interwiki_parts.append(f"{{{{commons category|{commons_page}}}}}")
 
-    # Add other interwiki links (including enwiki and simplewiki)
-    for lang_code in ['enwiki', 'simplewiki', 'jawiki', 'dewiki', 'zhwiki', 'frwiki', 'ruwiki']:
-        if lang_code in sitelinks:
+    # Add other interwiki links dynamically (don't limit to specific languages)
+    for lang_code in sorted(sitelinks.keys()):
+        # Skip commonswiki (handled above)
+        if lang_code != 'commonswiki':
             lang_title = sitelinks[lang_code]
             lang_prefix = lang_code.replace('wiki', '').upper()
             interwiki_parts.append(f"[[{lang_prefix}:{lang_title}]]")
@@ -565,14 +551,14 @@ def format_page_content(page_name, qid, entity):
     content_parts.append(f"{{{{wikidata link|{qid}}}}}")
 
     # Add version comment at the very beginning
-    final_content = "<!--generated by generate_shikinaisha_pages_v16.py-->\n" + "\n".join(content_parts)
+    final_content = "<!--generated by generate_shikinaisha_pages_v18.py-->\n" + "\n".join(content_parts)
     return final_content
 
 
 def main():
     """Process all pages in [[Category:Wikidata generated shikinaisha pages]]."""
 
-    print("Generating standardized Shikinaisha pages (V16 - Proper ILL logic + source URLs)\n")
+    print("Generating standardized Shikinaisha pages (V18 - Proper ILL sitelinks, P1448/P2671 omitted, source URLs)\n")
     print("=" * 60)
 
     # Get the category
@@ -581,6 +567,7 @@ def main():
     print(f"\nFetching mainspace pages in [[Category:Wikidata generated shikinaisha pages]]...")
     try:
         all_members = list(category.members())
+        # Filter to mainspace only (namespace 0)
         members = [page for page in all_members if page.namespace == 0]
     except Exception as e:
         print(f"ERROR: Could not fetch category members – {e}")
@@ -619,7 +606,7 @@ def main():
 
             # Save the page
             try:
-                page.edit(new_content, summary="Bot: V16 - Restore proper ILL logic (priority: Shinto > English Wikipedia > English label) + include source URLs")
+                page.edit(new_content, summary="Bot: V18 - Proper ILL sitelinks with lt= and WD parameters, omit P1448/P2671, source URLs")
                 processed_count += 1
                 print(f" ... ✓ Updated")
             except mwclient.errors.EditConflict:

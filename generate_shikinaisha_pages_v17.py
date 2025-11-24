@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""generate_shikinaisha_pages_v16.py
+"""generate_shikinaisha_pages_v17.py
 ================================================
 Generate standardized shrine pages for Wikidata-generated Shikinaisha entries
-V16: Restore proper ILL logic (priority: Shinto link > English Wikipedia > English label) + include source URLs
+V17: Restore proper established ILL template logic from v13
 ================================================
 
 This script:
@@ -16,12 +16,11 @@ This script:
    - P1448 OMITTED (not shown)
    - P2671 OMITTED (not shown)
    - P11250 IGNORED (filtered out)
-   - ILL templates with PROPER logic (Wikipedia sitelinks only for authority control):
-     * Priority 1: Shinto wiki sitelink (shintowiki) if exists
-     * Priority 2: English Wikipedia title (enwiki) if exists
-     * Priority 3: English label from Wikidata (fallback)
-     * Always: lt=ENGLISH_LABEL, WD=QID
-     * NO other language parameters - authority control only (record Wikipedia articles)
+   - ILL templates with PROPER established format:
+     * Priority 1 param: shintowiki sitelink > enwiki sitelink > English label
+     * Positional pairs: |LANG_CODE|WIKIPEDIA_TITLE for each sitelink (en, ja, de, zh, fr, ru)
+     * lt=ENGLISH_LABEL (for display text)
+     * WD=QID (always capitalized)
    - P625 (Coordinate Location) formatted with {{coord|lat|lon}} template
    - Source references with URLS: <ref>SOURCE: URL</ref>
    - Sub-bullet qualifiers under each claim
@@ -129,10 +128,12 @@ def get_label(entity, language='en'):
 
 
 def get_sitelinks(entity):
-    """Extract sitelinks (interwiki) from entity."""
-    if not entity or 'sitelinks' not in entity:
-        return {}
-    return entity.get('sitelinks', {})
+    """Extract sitelinks (interwiki) from entity - returns only titles."""
+    sitelinks = {}
+    if entity and 'sitelinks' in entity:
+        for site_code, site_data in entity['sitelinks'].items():
+            sitelinks[site_code] = site_data.get('title', '')
+    return sitelinks
 
 
 def extract_province_from_p361(entity):
@@ -160,42 +161,47 @@ def extract_province_from_p361(entity):
     return None, None
 
 
-def format_wikidata_link(entity, qid, sitelinks=None):
-    """Format a Wikidata entity as an ILL (interlanguage link) template.
+def format_wikidata_link(entity, qid):
+    """Format a wikidata link using ILL syntax with proper established logic.
 
-    Priority for first parameter (Wikipedia sitelinks only):
-    1. Shinto wiki sitelink (shintowiki)
-    2. English Wikipedia title (enwiki)
-    3. English label from Wikidata (if no Wikipedia exists)
+    Format: {{ill|FIRST_PARAM|LANG1|TITLE1|LANG2|TITLE2|...|lt=ENGLISH_LABEL|WD=QID}}
 
-    Template format: {{ill|FIRST_PARAM|lt=ENGLISH_LABEL|WD=QID}}
+    FIRST_PARAM priority:
+    1. shintowiki sitelink
+    2. enwiki sitelink
+    3. English label from Wikidata
 
-    PURPOSE: Authority control - keep record of existing Wikipedia articles.
-    NO other language parameters - only Wikipedia sitelinks matter.
+    Then positional pairs: |LANG_CODE|WIKIPEDIA_TITLE for each sitelink
+    (these are Wikipedia article titles, not labels)
     """
-    if sitelinks is None:
-        sitelinks = {}
+    sitelinks = get_sitelinks(entity)
 
-    english_label = get_label(entity, 'en') if entity else None
-    if not english_label:
-        english_label = qid
-
-    # Priority 1: Shinto wiki sitelink
-    first_param = None
+    # Try to find shinto wiki page first, then English Wikipedia, then English label
+    first_link = None
     if 'shintowiki' in sitelinks:
-        first_param = sitelinks['shintowiki']
-    # Priority 2: English Wikipedia title
+        first_link = sitelinks['shintowiki']
     elif 'enwiki' in sitelinks:
-        first_param = sitelinks['enwiki']
-    # Priority 3: English label (only if no Wikipedia exists)
+        first_link = sitelinks['enwiki']
     else:
-        first_param = english_label
+        first_link = get_label(entity, 'en') or qid
 
-    # Build template: {{ill|FIRST_PARAM|lt=ENGLISH_LABEL|WD=QID}}
-    # NO other language parameters - authority control only
-    template = f"{{{{ill|{first_param}|lt={english_label}|WD={qid}}}}}"
+    # Get English label for lt= parameter
+    en_label = get_label(entity, 'en') or qid
 
-    return template
+    # Build the ILL link with positional first param
+    wd_link = f"{{{{ill|{first_link}|lt={en_label}"
+
+    # Add all language codes and Wikipedia article titles (positional pairs)
+    for lang_code in ['enwiki', 'jawiki', 'dewiki', 'zhwiki', 'frwiki', 'ruwiki']:
+        if lang_code in sitelinks:
+            lang = lang_code.replace('wiki', '')
+            title = sitelinks[lang_code]
+            wd_link += f"|{lang}|{title}"
+
+    # Add named parameter: WD= (QID)
+    wd_link += f"|WD={qid}}}}}"
+
+    return wd_link
 
 
 def get_property_heading(property_id):
@@ -289,8 +295,7 @@ def format_qualifier_value(qualifier_value):
     if isinstance(qualifier_value, dict) and 'id' in qualifier_value:
         qid = qualifier_value['id']
         ref_entity = get_wikidata_entity(qid)
-        sitelinks = get_sitelinks(ref_entity) if ref_entity else {}
-        return format_wikidata_link(ref_entity or {}, qid, sitelinks)
+        return format_wikidata_link(ref_entity or {}, qid)
 
     if isinstance(qualifier_value, str):
         return qualifier_value
@@ -355,8 +360,7 @@ def format_claim_value(claim, entity, property_id=None):
     elif isinstance(value, dict) and 'id' in value:
         qid = value['id']
         ref_entity = get_wikidata_entity(qid)
-        sitelinks = get_sitelinks(ref_entity) if ref_entity else {}
-        formatted_value = format_wikidata_link(ref_entity or {}, qid, sitelinks)
+        formatted_value = format_wikidata_link(ref_entity or {}, qid)
 
     elif isinstance(value, str):
         formatted_value = value
@@ -434,8 +438,7 @@ def format_page_content(page_name, qid, entity):
         deity_qid = deity.get('id')
         if deity_qid:
             deity_entity = get_wikidata_entity(deity_qid)
-            deity_sitelinks = get_sitelinks(deity_entity) if deity_entity else {}
-            deity_link = format_wikidata_link(deity_entity or {}, deity_qid, deity_sitelinks)
+            deity_link = format_wikidata_link(deity_entity or {}, deity_qid)
             infobox_parts.append(f"| deity = {deity_link}")
 
     # Established (P571)
@@ -565,14 +568,14 @@ def format_page_content(page_name, qid, entity):
     content_parts.append(f"{{{{wikidata link|{qid}}}}}")
 
     # Add version comment at the very beginning
-    final_content = "<!--generated by generate_shikinaisha_pages_v16.py-->\n" + "\n".join(content_parts)
+    final_content = "<!--generated by generate_shikinaisha_pages_v17.py-->\n" + "\n".join(content_parts)
     return final_content
 
 
 def main():
     """Process all pages in [[Category:Wikidata generated shikinaisha pages]]."""
 
-    print("Generating standardized Shikinaisha pages (V16 - Proper ILL logic + source URLs)\n")
+    print("Generating standardized Shikinaisha pages (V17 - Restore proper established ILL logic)\n")
     print("=" * 60)
 
     # Get the category
@@ -619,7 +622,7 @@ def main():
 
             # Save the page
             try:
-                page.edit(new_content, summary="Bot: V16 - Restore proper ILL logic (priority: Shinto > English Wikipedia > English label) + include source URLs")
+                page.edit(new_content, summary="Bot: V17 - Restore proper established ILL logic with positional Wikipedia article title pairs")
                 processed_count += 1
                 print(f" ... ✓ Updated")
             except mwclient.errors.EditConflict:

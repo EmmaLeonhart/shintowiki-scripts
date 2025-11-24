@@ -65,7 +65,8 @@
       "Bash(do if ! pgrep -f \"Pages linked to Wikidata\")",
       "Bash(timeout 600 bash:*)",
       "Bash(dir \"C:\\Users\\Immanuelle\\Downloads\\exports\")",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(timeout 60 tail:*)"
     ],
     "deny": [],
     "ask": []
