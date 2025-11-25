@@ -32,6 +32,23 @@ PROPERTIES_TO_OMIT = ['P1448', 'P2671']
 # Output directories
 OUTPUT_DIR = 'output_xml_v24'
 MANIFEST_FILE = 'pages_manifest_v24.csv'
+PROPERTY_LABELS_CACHE = 'property_labels_cache.csv'
+
+# Load property labels cache
+PROPERTY_LABELS = {}
+if os.path.exists(PROPERTY_LABELS_CACHE):
+    print(f"Loading property labels cache from {PROPERTY_LABELS_CACHE}...")
+    try:
+        with open(PROPERTY_LABELS_CACHE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                PROPERTY_LABELS[row['property_id']] = row['label']
+        print(f"Loaded {len(PROPERTY_LABELS)} cached property labels\n")
+    except Exception as e:
+        print(f"Warning: Could not load property labels cache: {e}\n")
+else:
+    print(f"Warning: Property labels cache file not found: {PROPERTY_LABELS_CACHE}")
+    print("Run fetch_property_labels.py first to create cache\n")
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
@@ -132,40 +149,16 @@ def format_wikidata_link(entity, qid):
     return wd_link
 
 def get_property_heading(property_id):
-    """Get heading text for a property in format: EN_LABEL (PID)"""
-    try:
-        url = f'https://www.wikidata.org/wiki/Special:EntityData/{property_id}.json'
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-        resp = requests.get(url, timeout=5, headers=headers)
-        if resp.status_code == 200:
-            data = resp.json()
-            if 'entities' in data and property_id in data['entities']:
-                labels = data['entities'][property_id].get('labels', {})
-                if 'en' in labels:
-                    label = labels['en'].get('value')
-                    return f"{label} ({property_id})"
-    except Exception:
-        pass
+    """Get heading text for a property in format: EN_LABEL (PID)
+    Uses cached property labels to avoid API calls.
+    """
+    # Check cache first (no API call needed)
+    if property_id in PROPERTY_LABELS:
+        label = PROPERTY_LABELS[property_id]
+        return f"{label} ({property_id})"
 
-    property_labels = {
-        'P31': 'Instance of',
-        'P155': 'Follows',
-        'P156': 'Followed by',
-        'P361': 'Part of',
-        'P1448': 'Official name',
-        'P131': 'Located in',
-        'P625': 'Coordinate location',
-        'P571': 'Inception',
-        'P580': 'Start time',
-        'P582': 'End time',
-        'P585': 'Point in time',
-        'P856': 'Official website',
-        'P18': 'Image',
-        'P825': 'Dedicated to',
-        'P1566': 'GeoNames ID',
-    }
-    label = property_labels.get(property_id, property_id)
-    return f"{label} ({property_id})"
+    # Fallback if not in cache
+    return f"{property_id} ({property_id})"
 
 def get_source_reference_with_url(claim):
     references = claim.get('references', [])
@@ -464,21 +457,20 @@ def main():
     print(f"Output directory: {OUTPUT_DIR}")
     print(f"Manifest file: {MANIFEST_FILE}\n")
 
-    # Step 1: Download all pages from category
-    print("Step 1: Downloading all category members...")
+    # Step 1: Download all pages from category and extract QIDs
+    print("Step 1: Downloading all category members and extracting QIDs...")
     category = site.pages['Category:Wikidata generated shikinaisha pages']
     all_members = list(category.members())
     members = [m for m in all_members if m.namespace == 0]
     print(f"Found {len(members)} mainspace pages\n")
 
-    # Step 2: Generate content and save to local XML files
-    print("Step 2: Generating page content and saving XML files...")
+    # Step 1b: Extract QIDs and create manifest CSV immediately
+    print("Step 1b: Creating manifest CSV with page titles and QIDs...")
     print("-" * 70)
 
     manifest_rows = []
-    processed_count = 0
+    page_qid_map = {}
     error_count = 0
-    xml_files = []
 
     for i, page in enumerate(members, 1):
         page_name = page.name
@@ -498,7 +490,38 @@ def main():
             continue
 
         qid = match.group(1).upper()
+        page_qid_map[page_name] = qid
+        manifest_rows.append({
+            'page_title': page_name,
+            'qid': qid,
+            'xml_file': f"{page_name}.xml"
+        })
 
+        if i % 100 == 0:
+            print(f"{i:4d}. {page_name:50s} ({qid})")
+
+    # Save manifest CSV immediately
+    print("\n" + "-" * 70)
+    print("Saving manifest CSV...")
+
+    try:
+        with open(MANIFEST_FILE, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=['page_title', 'qid', 'xml_file'])
+            writer.writeheader()
+            writer.writerows(manifest_rows)
+        print(f"Saved manifest to {MANIFEST_FILE} with {len(manifest_rows)} entries\n")
+    except Exception as e:
+        print(f"ERROR saving manifest: {e}\n")
+        return
+
+    # Step 2: Generate content and save to local XML files
+    print("Step 2: Generating page content and saving XML files...")
+    print("-" * 70)
+
+    processed_count = 0
+    xml_files = []
+
+    for i, (page_name, qid) in enumerate(page_qid_map.items(), 1):
         try:
             print(f"{i:4d}. {page_name:50s} ({qid})", end="", flush=True)
 
@@ -520,14 +543,6 @@ def main():
                 f.write(xml_content)
 
             xml_files.append(xml_filename)
-
-            # Add to manifest
-            manifest_rows.append({
-                'page_title': page_name,
-                'qid': qid,
-                'xml_file': f"{page_name}.xml"
-            })
-
             print(f" ... ✓ Generated")
             processed_count += 1
 
@@ -535,20 +550,6 @@ def main():
             print(f"\n   ! ERROR: {e}")
             error_count += 1
             time.sleep(1)
-
-    # Step 3: Save manifest CSV
-    print("\n" + "-" * 70)
-    print("Step 3: Saving manifest CSV...")
-
-    try:
-        with open(MANIFEST_FILE, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=['page_title', 'qid', 'xml_file'])
-            writer.writeheader()
-            writer.writerows(manifest_rows)
-        print(f"Saved manifest to {MANIFEST_FILE} with {len(manifest_rows)} entries\n")
-    except Exception as e:
-        print(f"ERROR saving manifest: {e}\n")
-        return
 
     # Step 4: Create batch XML files for upload
     print("Step 4: Creating batch XML files for upload...")

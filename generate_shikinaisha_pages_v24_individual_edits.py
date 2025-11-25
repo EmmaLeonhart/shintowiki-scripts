@@ -13,6 +13,8 @@ import requests
 import sys
 import time
 import re
+import os
+import csv
 from datetime import datetime
 
 if sys.platform == 'win32':
@@ -26,6 +28,24 @@ PASSWORD  = '[REDACTED_SECRET_2]'
 
 PROPERTIES_TO_IGNORE = ['P11250']
 PROPERTIES_TO_OMIT = ['P1448', 'P2671']
+
+PROPERTY_LABELS_CACHE = 'property_labels_cache.csv'
+
+# Load property labels cache
+PROPERTY_LABELS = {}
+if os.path.exists(PROPERTY_LABELS_CACHE):
+    print(f"Loading property labels cache from {PROPERTY_LABELS_CACHE}...")
+    try:
+        with open(PROPERTY_LABELS_CACHE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                PROPERTY_LABELS[row['property_id']] = row['label']
+        print(f"Loaded {len(PROPERTY_LABELS)} cached property labels\n")
+    except Exception as e:
+        print(f"Warning: Could not load property labels cache: {e}\n")
+else:
+    print(f"Warning: Property labels cache file not found: {PROPERTY_LABELS_CACHE}")
+    print("Run fetch_property_labels.py first to create cache\n")
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
@@ -121,40 +141,16 @@ def format_wikidata_link(entity, qid):
     return wd_link
 
 def get_property_heading(property_id):
-    """Get heading text for a property in format: EN_LABEL (PID)"""
-    try:
-        url = f'https://www.wikidata.org/wiki/Special:EntityData/{property_id}.json'
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-        resp = requests.get(url, timeout=5, headers=headers)
-        if resp.status_code == 200:
-            data = resp.json()
-            if 'entities' in data and property_id in data['entities']:
-                labels = data['entities'][property_id].get('labels', {})
-                if 'en' in labels:
-                    label = labels['en'].get('value')
-                    return f"{label} ({property_id})"
-    except Exception:
-        pass
+    """Get heading text for a property in format: EN_LABEL (PID)
+    Uses cached property labels to avoid API calls.
+    """
+    # Check cache first (no API call needed)
+    if property_id in PROPERTY_LABELS:
+        label = PROPERTY_LABELS[property_id]
+        return f"{label} ({property_id})"
 
-    property_labels = {
-        'P31': 'Instance of',
-        'P155': 'Follows',
-        'P156': 'Followed by',
-        'P361': 'Part of',
-        'P1448': 'Official name',
-        'P131': 'Located in',
-        'P625': 'Coordinate location',
-        'P571': 'Inception',
-        'P580': 'Start time',
-        'P582': 'End time',
-        'P585': 'Point in time',
-        'P856': 'Official website',
-        'P18': 'Image',
-        'P825': 'Dedicated to',
-        'P1566': 'GeoNames ID',
-    }
-    label = property_labels.get(property_id, property_id)
-    return f"{label} ({property_id})"
+    # Fallback if not in cache
+    return f"{property_id} ({property_id})"
 
 def get_source_reference_with_url(claim):
     references = claim.get('references', [])
