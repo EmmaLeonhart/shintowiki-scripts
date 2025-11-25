@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""generate_shikinaisha_pages_v18.py
+"""generate_shikinaisha_pages_v22.py
 ================================================
 Generate standardized shrine pages for Wikidata-generated Shikinaisha entries
-V18: Proper ILL sitelinks logic, omit P1448 and P2671, source refs with URLs
+V22: Restore {{Expand Japanese}} and {{Expand Chinese}} templates, interwiki categories
 ================================================
 
 This script:
@@ -242,8 +242,11 @@ def get_property_heading(property_id):
 def get_source_reference_with_url(claim):
     """Extract source reference from claim references, including URLs.
 
-    Returns format: "SOURCE_NAME: URL" or just "URL" if no source name available.
-    Always prioritizes returning a URL if one exists.
+    Priority:
+    1. P854 (reference URL)
+    2. P248 (stated in) + P2699 (reference URL in snaks) or P2699 in source entity
+
+    Returns format: "SOURCE_NAME (SOURCE_QID) URL" for full context
     """
     references = claim.get('references', [])
     if not references:
@@ -252,7 +255,7 @@ def get_source_reference_with_url(claim):
     for ref in references:
         ref_snaks = ref.get('snaks', {})
 
-        # Check for reference URL (P854) - highest priority
+        # First check for direct reference URL (P854)
         url = None
         if 'P854' in ref_snaks:
             for snak in ref_snaks['P854']:
@@ -261,6 +264,7 @@ def get_source_reference_with_url(claim):
                 if url:
                     # Try to get source name to add context
                     source_label = None
+                    source_qid = None
                     if 'P248' in ref_snaks:
                         for source_snak in ref_snaks['P248']:
                             source_datavalue = source_snak.get('datavalue', {})
@@ -272,23 +276,61 @@ def get_source_reference_with_url(claim):
                                         source_label = get_label(source_entity)
                                         break
 
-                    # Return URL with source name if available
-                    if source_label:
-                        return f"{source_label}: {url}"
+                    # Return URL with source name and QID if available
+                    if source_label and source_qid:
+                        return f"{source_label} ({source_qid}) {url}"
+                    elif source_label:
+                        return f"{source_label} {url}"
                     else:
                         return url
 
-        # If no URL found, try stated in (P248) - source
+            # If we found a P854 but it had no value, don't continue to P248
+            if url:
+                break
+
+        # If no P854 found, check for P248 (stated in) + P2699 (in reference snaks or in source entity)
         if 'P248' in ref_snaks:
-            for snak in ref_snaks['P248']:
-                datavalue = snak.get('datavalue', {})
-                if isinstance(datavalue.get('value'), dict):
-                    source_qid = datavalue['value'].get('id')
+            source_label = None
+            source_qid = None
+            source_url = None
+
+            for source_snak in ref_snaks['P248']:
+                source_datavalue = source_snak.get('datavalue', {})
+                if isinstance(source_datavalue.get('value'), dict):
+                    source_qid = source_datavalue['value'].get('id')
                     if source_qid:
                         source_entity = get_wikidata_entity(source_qid)
                         if source_entity:
                             source_label = get_label(source_entity)
-                            return source_label
+                            break
+
+            # Now look for P2699 in the reference snaks first (most common case)
+            if 'P2699' in ref_snaks:
+                for url_snak in ref_snaks['P2699']:
+                    datavalue = url_snak.get('datavalue', {})
+                    source_url = datavalue.get('value')
+                    if source_url:
+                        break
+
+            # If not in snaks, try the source entity itself
+            if not source_url and source_qid:
+                source_entity = get_wikidata_entity(source_qid)
+                if source_entity:
+                    source_claims = source_entity.get('claims', {})
+                    p2699_claims = source_claims.get('P2699', [])
+                    if p2699_claims:
+                        source_dataval = p2699_claims[0].get('mainsnak', {}).get('datavalue', {})
+                        source_url = source_dataval.get('value')
+
+            # Return with source name, QID and URL if found
+            if source_url and source_label and source_qid:
+                return f"{source_label} ({source_qid}) {source_url}"
+            elif source_url and source_label:
+                return f"{source_label} {source_url}"
+            elif source_url:
+                return source_url
+            elif source_label:
+                return source_label
 
     return None
 
@@ -393,8 +435,23 @@ def format_page_content(page_name, qid, entity):
     native_name = get_label(entity, 'ja')
     english_label = get_label(entity, 'en')
 
+    # Extract sitelinks for interwiki handling
+    sitelinks = get_sitelinks(entity)
+    has_jawiki = 'jawiki' in sitelinks
+    has_zhwiki = 'zhwiki' in sitelinks
+
     # Extract province from P361
     province_name, list_label = extract_province_from_p361(entity)
+
+    # ADD EXPAND TEMPLATES AT TOP if needed
+    if has_jawiki:
+        jawiki_title = sitelinks['jawiki']
+        content_parts.append(f"{{{{Expand Japanese|{jawiki_title}}}}}")
+        content_parts.append("")
+    elif has_zhwiki:
+        zhwiki_title = sitelinks['zhwiki']
+        content_parts.append(f"{{{{Expand Chinese|{zhwiki_title}}}}}")
+        content_parts.append("")
 
     # ADD INFOBOX FIRST
     infobox_parts = ["{{Infobox religious building"]
@@ -517,6 +574,16 @@ def format_page_content(page_name, qid, entity):
     # Categories
     categories = ["[[Category:Wikidata generated shikinaisha pages]]"]
 
+    # Add interwiki categories based on sitelinks
+    has_enwiki = 'enwiki' in sitelinks
+    has_simplewiki = 'simplewiki' in sitelinks
+
+    if has_enwiki or has_simplewiki:
+        categories.append("[[Category:Autogenerated pages with simplewiki or enwiki interwikis, possibly accidentally overwritten]]")
+
+    if has_jawiki:
+        categories.append("[[Category:Autogenerated pages with jawiki interwikis, possibly accidentally overwritten]]")
+
     # Add categories from P31 (instance of)
     p31_values = entity.get('claims', {}).get('P31', [])
     for claim in p31_values:
@@ -561,14 +628,14 @@ def format_page_content(page_name, qid, entity):
     content_parts.append(f"{{{{wikidata link|{qid}}}}}")
 
     # Add version comment at the very beginning
-    final_content = "<!--generated by generate_shikinaisha_pages_v18.py-->\n" + "\n".join(content_parts)
+    final_content = "<!--generated by generate_shikinaisha_pages_v22.py-->\n" + "\n".join(content_parts)
     return final_content
 
 
 def main():
     """Process all pages in [[Category:Wikidata generated shikinaisha pages]]."""
 
-    print("Generating standardized Shikinaisha pages (V18 - Proper ILL sitelinks, P1448/P2671 omitted, source URLs)\n")
+    print("Generating standardized Shikinaisha pages (V22 - {{Expand}} templates restored, interwiki categories)\n")
     print("=" * 60)
 
     # Get the category
@@ -616,7 +683,7 @@ def main():
 
             # Save the page
             try:
-                page.edit(new_content, summary="Bot: V18 - Proper ILL sitelinks with lt= and WD parameters, omit P1448/P2671, source URLs")
+                page.edit(new_content, summary="Bot: V22 - {{Expand Japanese}} and {{Expand Chinese}} templates restored, interwiki categories")
                 processed_count += 1
                 print(f" ... ✓ Updated")
             except mwclient.errors.EditConflict:
