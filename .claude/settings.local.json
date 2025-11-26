@@ -66,7 +66,10 @@
       "Bash(timeout 600 bash:*)",
       "Bash(dir \"C:\\Users\\Immanuelle\\Downloads\\exports\")",
       "Bash(dir:*)",
-      "Bash(timeout 60 tail:*)"
+      "Bash(timeout 60 tail:*)",
+      "Bash(for i in {1..20})",
+      "Bash(do sleep 2)",
+      "Bash(do if ! tasklist /FI 'IMAGENAME eq python.exe')"
     ],
     "deny": [],
     "ask": []
