@@ -69,7 +69,8 @@
       "Bash(timeout 60 tail:*)",
       "Bash(for i in {1..20})",
       "Bash(do sleep 2)",
-      "Bash(do if ! tasklist /FI 'IMAGENAME eq python.exe')"
+      "Bash(do if ! tasklist /FI 'IMAGENAME eq python.exe')",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []
