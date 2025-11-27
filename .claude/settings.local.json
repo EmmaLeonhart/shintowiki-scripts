@@ -70,7 +70,17 @@
       "Bash(for i in {1..20})",
       "Bash(do sleep 2)",
       "Bash(do if ! tasklist /FI 'IMAGENAME eq python.exe')",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(for dir in aelaki_lexeme shinto_miraheze wikidata_editing utilities_and_testing)",
+      "Bash(do if [ -d \"$dir\" ])",
+      "Bash(then mv \"$dir\"/*.py .)",
+      "Bash(for f in IronPythonApplication1.py PythonConsole.py RemoveP1343Kokugakuin.py add_dutch_labels.py add_french_labels.py add_german_labels.py add_indonesian_labels.py add_references.py add_turkish_labels.py analyze_auth.py convert.py enhance_contradictions_with_correct_pages.py extract_ipa_from_wiktionary.py fetch_property_labels.py find_duplicate_wikidata_templates.py generate.py generate_lexeme_with_senses_json.py ipa_to_illish_converter.py merge.py organize_files.py process_exported_qid_data.py remove_kokugakuin_p1343.py remove_kokugakuin_p1343_v2.py remove_kokugakuin_p1343_v3.py run_wikidata_workflow.py test_bracket_detection.py test_wikidata_ill.py)",
+      "Bash(do mv \"$f\" \"uncategorized/$f\")",
+      "Bash(echo:*)",
+      "Bash(timeout 120 python:*)",
+      "Bash(timeout 600 python:*)",
+      "Bash(timeout 900 python:*)",
+      "Bash(timeout 1800 python:*)"
     ],
     "deny": [],
     "ask": []
