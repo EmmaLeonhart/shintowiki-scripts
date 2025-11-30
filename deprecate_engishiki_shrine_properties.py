@@ -25,7 +25,7 @@ USERNAME = "Immanuelle@ImmanuelleCommonsBot"
 PASSWORD = "r7db82prl8ftds5fo9v5uaiunce5n2cp"
 
 # Target shrine
-TARGET_SHRINE_QID = "Q11462862"  # Omonoimi Shrine
+TARGET_SHRINE_QID = "Q11546041"  # Takemizuwake Shrine
 
 # QID values for properties to deprecate
 ENGISHIKI_SHRINE_TYPES = [
@@ -92,6 +92,7 @@ ENGISHIKI_SHRINE_TYPES = [
 ENGISHIKI_JINMYOCHO_QID = "Q11064932"
 HEIAN_PERIOD_QID = "Q193292"
 DISPUTED_SHIKINAISHA_QID = "Q135038714"  # Disputed Shikinaisha or Shikigeisha
+KOKUGAKUIN_SHRINE_DB_OLD_QID = "Q135037878"  # Kokugakuin University Shrine database (old)
 
 REASON_REFERS_DIFFERENT = "Q28091153"  # refers to different subject
 ROLE_QUALIFIER = "P3831"  # object of statement has role
@@ -309,7 +310,9 @@ def deprecate_property_statements(entity_id, p460_qid):
     properties_to_deprecate = {
         'P31': ENGISHIKI_SHRINE_TYPES,  # instance of
         'P361': None,  # part of - special handling (must be part of Engishiki Jinmyocho)
+        'P1343': None,  # described by source - special handling (must be Kokugakuin Shrine database old)
         'P1448': None,  # official name - special handling (must have Heian period qualifier)
+        'P1814': None,  # name in kana - special handling (must have stated in Engishiki qualifier)
         'P13677': None,  # Kokugakuin University Digital Museum entry ID
     }
 
@@ -349,6 +352,13 @@ def deprecate_property_statements(entity_id, p460_qid):
 
                     time.sleep(0.5)  # Rate limiting
 
+            elif prop == 'P1343':
+                # Check if described by Kokugakuin Shrine database (old)
+                if claim['mainsnak']['snaktype'] == 'value':
+                    source_qid = claim['mainsnak']['datavalue']['value']['id']
+                    if source_qid == KOKUGAKUIN_SHRINE_DB_OLD_QID:
+                        should_deprecate = True
+
             elif prop == 'P1448':
                 # Check if has valid in period qualifier with Heian period
                 qualifiers = claim.get('qualifiers', {})
@@ -359,6 +369,19 @@ def deprecate_property_statements(entity_id, p460_qid):
                             if qual_qid == HEIAN_PERIOD_QID:
                                 should_deprecate = True
                                 break
+
+            elif prop == 'P1814':
+                # Check if has stated in reference with Engishiki Jinmyocho
+                references = claim.get('references', [])
+                for ref in references:
+                    ref_snaks = ref.get('snaks', {})
+                    if 'P248' in ref_snaks:
+                        for snak in ref_snaks['P248']:
+                            if snak['snaktype'] == 'value':
+                                snak_qid = snak['datavalue']['value']['id']
+                                if snak_qid == ENGISHIKI_JINMYOCHO_QID:
+                                    should_deprecate = True
+                                    break
 
             elif prop == 'P13677':
                 # Always deprecate Kokugakuin entries
