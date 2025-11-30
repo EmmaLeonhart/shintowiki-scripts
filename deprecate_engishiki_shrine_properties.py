@@ -25,7 +25,7 @@ USERNAME = "Immanuelle@ImmanuelleCommonsBot"
 PASSWORD = "r7db82prl8ftds5fo9v5uaiunce5n2cp"
 
 # Target shrine
-TARGET_SHRINE_QID = "Q106301088"  # Kamo Shrine
+TARGET_SHRINE_QID = "Q11462862"  # Omonoimi Shrine
 
 # QID values for properties to deprecate
 ENGISHIKI_SHRINE_TYPES = [
@@ -41,6 +41,52 @@ ENGISHIKI_SHRINE_TYPES = [
     "Q134917288",  # Shikinai Taisha
     "Q9610964",    # Myōjin Taisha
     "Q135018062",  # Engishiki seat
+    "Q135206465",  # redirect page
+    "Q135206476",  # redirect page
+    "Q135578845",  # redirect page
+    "Q135206474",  # redirect page
+    "Q135206482",  # redirect page
+    "Q135206470",  # redirect page
+    "Q135206478",  # redirect page
+    "Q135206467",  # redirect page
+    "Q135206477",  # redirect page
+    "Q240268",     # Rank
+    "Q1499048",    # clerical rank in Japan
+    "Q11071121",   # Junior First Rank
+    "Q11071123",   # Junior Third Rank
+    "Q11071125",   # Junior Fifth Rank
+    "Q11071127",   # Junior Fourth Rank
+    "Q11123258",   # Senior First Rank
+    "Q11123261",   # Senior Third Rank
+    "Q11123277",   # Senior Second Rank
+    "Q11123280",   # Senior Fifth Rank
+    "Q11123338",   # Senior Fourth Rank
+    "Q11354375",   # Third Rank
+    "Q11371333",   # Second Rank
+    "Q11393856",   # Internal Ranks
+    "Q11395032",   # history of court rank systems in Japan
+    "Q11410715",   # court rank bestowal
+    "Q11419606",   # Fourth Rank
+    "Q11430321",   # gei
+    "Q11433041",   # Greater Initial Rank
+    "Q11452076",   # East Asian government service ranking
+    "Q11452077",   # list of Japanese court ranks, positions and hereditary titles
+    "Q11464527",   # Lesser Initial Rank
+    "Q11487787",   # 弾正尹
+    "Q11488718",   # Junior Seventh Rank
+    "Q11488719",   # Junior Ninth Rank
+    "Q11488720",   # Junior Eighth Rank
+    "Q11488721",   # Junior Second Rank
+    "Q11499495",   # sanni
+    "Q11504610",   # Unranked
+    "Q11545345",   # Senior Seventh Rank
+    "Q11545350",   # Senior Ninth Rank
+    "Q11545368",   # Senior Eighth Rank
+    "Q11545372",   # Senior Sixth Rank
+    "Q11591025",   # shinkai
+    "Q14623716",   # Template:日本の位階
+    "Q14624983",   # Junior Sixth Rank
+    "Q108837834",  # Kan'i
 ]
 
 ENGISHIKI_JINMYOCHO_QID = "Q11064932"
@@ -183,14 +229,18 @@ def remove_claim(entity_id, claim):
         'format': 'json'
     })
 
-    if r.json().get('success') == 1:
+    response = r.json()
+    # Check for success
+    if response.get('success') == 1:
         print(f"    Removed claim {claim_id}")
         time.sleep(1)
+        return True
     else:
-        print(f"    Error removing claim: {r.json()}")
+        print(f"    Error removing claim: {response}")
+        return False
 
 def add_role_qualifier(entity_id, p460_qid):
-    """Add P3831 (role) qualifier to P460 statement with the disputed role"""
+    """Add P3831 and P2868 role qualifiers to P460 statement"""
     entity = get_entity(entity_id)
     claims = entity.get('claims', {})
     p460_claims = claims.get('P460', [])
@@ -204,11 +254,11 @@ def add_role_qualifier(entity_id, p460_qid):
             if target_qid == p460_qid:
                 claim_id = claim['id']
 
-                # Add the role qualifier
+                # Add P3831 (object of statement has role) qualifier
                 r = session.post(WIKIDATA_API, data={
                     'action': 'wbsetqualifier',
                     'claim': claim_id,
-                    'property': ROLE_QUALIFIER,
+                    'property': 'P3831',
                     'snaktype': 'value',
                     'value': json.dumps({'entity-type': 'item', 'numeric-id': int(DISPUTED_SHIKINAISHA_QID[1:])}),
                     'token': csrf_token,
@@ -220,7 +270,26 @@ def add_role_qualifier(entity_id, p460_qid):
                     print(f"  Added P3831 qualifier to P460 statement")
                     time.sleep(1)
                 else:
-                    print(f"  Error adding qualifier: {r.json()}")
+                    print(f"  Error adding P3831 qualifier: {r.json()}")
+                    return
+
+                # Add P2868 (subject has role) qualifier for Shikinai Ronsha
+                r = session.post(WIKIDATA_API, data={
+                    'action': 'wbsetqualifier',
+                    'claim': claim_id,
+                    'property': 'P2868',
+                    'snaktype': 'value',
+                    'value': json.dumps({'entity-type': 'item', 'numeric-id': int('135022904')}),
+                    'token': csrf_token,
+                    'summary': f'Adding subject role qualifier: Shikinai Ronsha',
+                    'format': 'json'
+                })
+
+                if r.json().get('success') == 1:
+                    print(f"  Added P2868 qualifier to P460 statement")
+                    time.sleep(1)
+                else:
+                    print(f"  Error adding P2868 qualifier: {r.json()}")
                 return
 
     print(f"  Could not find P460 statement linking to {p460_qid}")
