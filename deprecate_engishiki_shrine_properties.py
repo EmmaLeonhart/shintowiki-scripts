@@ -25,7 +25,7 @@ USERNAME = "Immanuelle@ImmanuelleCommonsBot"
 PASSWORD = "r7db82prl8ftds5fo9v5uaiunce5n2cp"
 
 # Target shrine
-TARGET_SHRINE_QID = "Q545397"  # Mita Hachiman Shrine
+TARGET_SHRINE_QID = "Q106301088"  # Kamo Shrine
 
 # QID values for properties to deprecate
 ENGISHIKI_SHRINE_TYPES = [
@@ -177,7 +177,7 @@ def remove_claim(entity_id, claim):
 
     r = session.post(WIKIDATA_API, data={
         'action': 'wbremoveclaims',
-        'claims': claim_id,
+        'claim': claim_id,
         'token': csrf_token,
         'summary': 'Removing duplicate P460 statement without qualifier',
         'format': 'json'
