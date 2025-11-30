@@ -80,7 +80,9 @@
       "Bash(timeout 120 python:*)",
       "Bash(timeout 600 python:*)",
       "Bash(timeout 900 python:*)",
-      "Bash(timeout 1800 python:*)"
+      "Bash(timeout 1800 python:*)",
+      "Bash(timeout 90 bash:*)",
+      "Bash(timeout 7200 python:*)"
     ],
     "deny": [],
     "ask": []

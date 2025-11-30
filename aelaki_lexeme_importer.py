@@ -76,19 +76,11 @@ ENGLISH_WORDS = [
     'lamp',
 ]
 
-def get_csrf_token(session):
-    """Get CSRF token from Aelaki."""
+def get_csrf_token(site):
+    """Get CSRF token from Aelaki via mwclient."""
     try:
-        r = session.get(f'https://{AELAKI_URL}{AELAKI_PATH}api.php', params={
-            'action': 'query',
-            'meta': 'tokens',
-            'type': 'csrf',
-            'format': 'json'
-        })
-        r.raise_for_status()
-        data = r.json()
-        token = data['query']['tokens']['csrftoken']
-        return token
+        # Use mwclient's built-in token handling
+        return site.get_token('csrf')
     except Exception as e:
         print(f"Error getting CSRF token: {e}")
         return None
@@ -137,29 +129,22 @@ def get_lexeme_data(lid):
         print(f"    Error fetching {lid}: {e}")
         return None
 
-def create_lexeme_on_aelaki(session, csrf_token, lexeme_data):
-    """Create a new lexeme on Aelaki."""
+def create_lexeme_on_aelaki(site, csrf_token, lexeme_data):
+    """Create a new lexeme on Aelaki with minimal data (lemmas only to avoid QID issues)."""
     try:
-        # Prepare lexeme data for creation
+        # Prepare lexeme data for creation - only include lemmas and language
+        # Omit lexicalCategory (Q1084 doesn't exist on Aelaki) and forms/senses to avoid QID validation issues
         edit_data = {
             'type': 'lexeme',
             'language': lexeme_data.get('language', 'en'),
-            'lemmas': lexeme_data.get('lemmas', {}),
-            'lexicalCategory': lexeme_data.get('lexicalCategory'),
-            'senses': lexeme_data.get('senses', []),
-            'forms': lexeme_data.get('forms', [])
+            'lemmas': lexeme_data.get('lemmas', {})
         }
 
-        # POST to Aelaki to create the lexeme
-        r = session.post(f'https://{AELAKI_URL}{AELAKI_PATH}api.php', data={
-            'action': 'wbeditentity',
-            'new': 'lexeme',
-            'data': json.dumps(edit_data),
-            'token': csrf_token,
-            'format': 'json'
-        })
-        r.raise_for_status()
-        result = r.json()
+        # POST to Aelaki to create the lexeme using site.api
+        result = site.api('wbeditentity',
+            new='lexeme',
+            data=json.dumps(edit_data),
+            token=csrf_token)
 
         if 'entity' in result:
             return result['entity'].get('id')
@@ -180,24 +165,20 @@ def main():
     try:
         # Login to Aelaki
         print(f"Connecting to {AELAKI_URL}...")
-        session = requests.Session()
 
-        # Login via mwclient
+        # Use mwclient for login
         site = mwclient.Site(AELAKI_URL, path=AELAKI_PATH)
         site.login(USERNAME, PASSWORD)
-
-        # Get session cookies from mwclient
-        session.cookies.update(site.client.http_session.cookies)
 
         print(f"Logged in as {USERNAME}\n")
 
         # Get CSRF token
-        csrf_token = get_csrf_token(session)
+        csrf_token = get_csrf_token(site)
         if not csrf_token:
             print("[ERROR] Could not get CSRF token")
             return
 
-        print(f"Got CSRF token: {csrf_token[:20]}...\n")
+        print(f"Got CSRF token\n")
         print(f"Importing {len(ENGLISH_WORDS)} English words as lexemes...\n")
 
         successful_imports = []
@@ -221,7 +202,7 @@ def main():
                 continue
 
             # Create lexeme on Aelaki
-            result = create_lexeme_on_aelaki(session, csrf_token, lexeme_data)
+            result = create_lexeme_on_aelaki(site, csrf_token, lexeme_data)
             if result and not result.startswith('ERROR') and not result.startswith('EXCEPTION'):
                 print(f"[OK] {result}")
                 successful_imports.append((word, lid, result))
