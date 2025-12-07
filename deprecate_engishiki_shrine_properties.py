@@ -21,11 +21,16 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Configuration
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 USERNAME = "Immanuelle@ImmanuelleCommonsBot"
 PASSWORD = "r7db82prl8ftds5fo9v5uaiunce5n2cp"
 
-# Target shrine
-TARGET_SHRINE_QID = "Q11546041"  # Takemizuwake Shrine
+# SPARQL query parameters
+SHIKINAI_RONSHA_QID = "Q135022904"
+LIMIT = 50
+
+# Target shrines - will be fetched via SPARQL
+TARGET_SHRINE_QIDS = []
 
 # QID values for properties to deprecate
 ENGISHIKI_SHRINE_TYPES = [
@@ -99,6 +104,28 @@ ROLE_QUALIFIER = "P3831"  # object of statement has role
 
 session = requests.Session()
 session.headers.update({'User-Agent': 'ImmanuelleCommonsBot/1.0'})
+
+def fetch_shikinai_ronsha_shrines(limit=50):
+    """Fetch all P31 Shikinai Ronsha shrines via SPARQL"""
+    sparql_query = f"""
+    SELECT ?shrine WHERE {{
+      ?shrine wdt:P31 wd:{SHIKINAI_RONSHA_QID} .
+      ?shrine wdt:P460 ?same_as .
+    }}
+    LIMIT {limit}
+    """
+
+    print(f"Fetching Shikinai Ronsha shrines via SPARQL (limit: {limit})...")
+    r = requests.get(SPARQL_ENDPOINT, params={
+        'query': sparql_query,
+        'format': 'json'
+    })
+
+    results = r.json()['results']['bindings']
+    shrine_qids = [item['shrine']['value'].split('/')[-1] for item in results]
+
+    print(f"Found {len(shrine_qids)} shrines to process\n")
+    return shrine_qids
 
 def login():
     """Login to Wikidata"""
@@ -471,38 +498,94 @@ def deprecate_claim(entity_id, claim, p460_qid, csrf_token):
 
     print(f"    Deprecated {claim_id} with qualifiers")
 
+def process_single_shrine(shrine_qid):
+    """Process a single shrine - returns True if successful, False otherwise"""
+    try:
+        # Get the target shrine
+        entity = get_entity(shrine_qid)
+        shrine_label = entity.get('labels', {}).get('en', {}).get('value', shrine_qid)
+
+        # Check P460 property
+        p460_qid = check_p460_property(entity)
+
+        if not p460_qid:
+            return False
+
+        # Add role qualifier to P460
+        add_role_qualifier(shrine_qid, p460_qid)
+
+        # Deprecate properties
+        deprecate_property_statements(shrine_qid, p460_qid)
+
+        return True
+
+    except Exception as e:
+        print(f"  Error processing {shrine_qid}: {str(e)}")
+        return False
+
 def main():
     """Main script execution"""
-    print(f"Starting deprecation script for {TARGET_SHRINE_QID}")
     print("=" * 60)
+    print("Batch Deprecation - Shikinai Ronsha Shrines")
+    print("=" * 60)
+    print()
 
-    # Login
-    login()
+    # Fetch shrine QIDs via SPARQL
+    shrine_qids = fetch_shikinai_ronsha_shrines(LIMIT)
 
-    # Get the target shrine
-    print(f"\nFetching {TARGET_SHRINE_QID}...")
-    entity = get_entity(TARGET_SHRINE_QID)
-    shrine_label = entity.get('labels', {}).get('en', {}).get('value', TARGET_SHRINE_QID)
-    print(f"Working with: {shrine_label}")
-
-    # Check P460 property
-    print(f"\nChecking P460 (said to be the same as) property...")
-    p460_qid = check_p460_property(entity)
-
-    if not p460_qid:
-        print("\nAborted: No valid P460 property found")
+    if not shrine_qids:
+        print("No shrines found. Exiting.")
         return
 
-    # Add role qualifier to P460
-    print(f"\nAdding role qualifier to P460 statement...")
-    add_role_qualifier(TARGET_SHRINE_QID, p460_qid)
+    # Login
+    print()
+    login()
 
-    # Deprecate properties
-    print(f"\nDeprecating related properties...")
-    deprecate_property_statements(TARGET_SHRINE_QID, p460_qid)
+    # Process each shrine
+    print(f"Processing {len(shrine_qids)} shrines...\n")
+
+    processed = 0
+    skipped = 0
+
+    for i, shrine_qid in enumerate(shrine_qids, 1):
+        print(f"\n[{i}/{len(shrine_qids)}] Processing {shrine_qid}...")
+
+        try:
+            # Get the shrine
+            entity = get_entity(shrine_qid)
+            shrine_label = entity.get('labels', {}).get('en', {}).get('value', shrine_qid)
+            print(f"  Shrine: {shrine_label}")
+
+            # Check P460 property
+            p460_qid = check_p460_property(entity)
+
+            if not p460_qid:
+                print(f"  ⊘ Skipped - no valid P460")
+                skipped += 1
+                continue
+
+            # Add role qualifier to P460
+            add_role_qualifier(shrine_qid, p460_qid)
+
+            # Deprecate properties
+            deprecate_property_statements(shrine_qid, p460_qid)
+
+            print(f"  ✓ Processed")
+            processed += 1
+
+        except Exception as e:
+            print(f"  ✗ Error: {str(e)}")
+            skipped += 1
+            continue
+
+        time.sleep(1)  # Rate limiting
 
     print("\n" + "=" * 60)
-    print("Script completed successfully")
+    print(f"Batch processing complete")
+    print("=" * 60)
+    print(f"Processed: {processed}")
+    print(f"Skipped: {skipped}")
+    print(f"Total: {processed + skipped}")
 
 if __name__ == '__main__':
     main()
