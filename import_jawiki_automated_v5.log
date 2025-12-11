@@ -1,0 +1,14 @@
+================================================================================
+AUTOMATED JAPANESE WIKIPEDIA IMPORT WITH FULL HISTORY
+================================================================================
+
+Test page: Ōarahiko Shrine
+
+Connecting to shinto.miraheze.org...
+Logged in successfully
+
+Step 1: Checking if page already has {{translated page|...
+  No {{translated page| found, proceeding...
+
+Step 2: Getting Japanese Wikipedia article name...
+  ERROR: Could not find Wikidata QID for Ōarahiko Shrine

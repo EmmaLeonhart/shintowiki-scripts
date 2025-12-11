@@ -1,0 +1,565 @@
+================================================================================
+Q BRACKETS CSV ANALYSIS
+================================================================================
+
+Connecting to wiki...
+Logged in successfully
+
+Fetching pages from [[Category:Q brackets]]...
+Found 91 pages to analyze
+
+[1/91] Processing: Achi Shrine (Q11657447)
+  QID: Q11657447
+  Japanese title: 阿智神社 (阿智村)
+  Japanese bracket content: 阿智村
+  Bracket QID: Q1203279
+  English label: Achi
+  Proposed new title: Achi Shrine (Achi)
+
+[2/91] Processing: Amanokaguyama Shrine (Q98082987)
+  QID: Q98082987
+  Japanese title: 天香山神社
+  No brackets in Japanese title
+[3/91] Processing: Amatsukasahiko Shrine (Q107410067)
+  QID: Q107410067
+  Japanese title: 天津賀佐彦神社
+  No brackets in Japanese title
+[4/91] Processing: Hachiman Shrine (Q134927474)
+  QID: Q134927474
+  Japanese title: 八幡神社 (下田市吉佐美)
+  Japanese bracket content: 下田市吉佐美
+  Could not find QID for bracket content
+[5/91] Processing: Hajikami Shrine (Q11275441)
+  QID: Q11275441
+  Japanese title: 㯮椒神社
+  No brackets in Japanese title
+[6/91] Processing: Hakusan Shrine (Q11579589)
+  QID: Q11579589
+  Japanese title: 白山神社 (三木町)
+  Japanese bracket content: 三木町
+  Bracket QID: Q1205980
+  English label: Miki
+  Proposed new title: Hakusan Shrine (Miki)
+
+[7/91] Processing: Hayabusa Shrine (Q135021848)
+  QID: Q135021848
+  Japanese title: 隼神社 (京都市)
+  Japanese bracket content: 京都市
+  Bracket QID: Q34600
+  English label: Kyoto
+  Proposed new title: Hayabusa Shrine (Kyoto)
+
+[8/91] Processing: Hioki Shrine (Q11510250)
+  QID: Q11510250
+  Japanese title: 日置神社 (高島市)
+  Japanese bracket content: 高島市
+  Bracket QID: Q845794
+  English label: Takashima
+  Proposed new title: Hioki Shrine (Takashima)
+
+[9/91] Processing: Hiruko Shrine (Q106852693)
+  QID: Q106852693
+  Japanese title: 蛭子神社 (那賀町)
+  Japanese bracket content: 那賀町
+  Bracket QID: Q1205685
+  English label: Naka
+  Proposed new title: Hiruko Shrine (Naka)
+
+[10/91] Processing: Ii Shrine (Q11666643)
+  QID: Q11666643
+  Japanese title: 飯神社
+  No brackets in Japanese title
+[11/91] Processing: Ikeda Shrine (Q134926975)
+  QID: Q134926975
+  Japanese title: 池田神社 (静岡市)
+  Japanese bracket content: 静岡市
+  Bracket QID: Q174691
+  English label: Shizuoka
+  Proposed new title: Ikeda Shrine (Shizuoka)
+
+[12/91] Processing: Ishizukuri Shrine (Q11676453)
+  QID: Q11676453
+  Japanese title: 鹽津神社
+  No brackets in Japanese title
+[13/91] Processing: Iwai Shrine (Q85882705)
+  QID: Q85882705
+  Japanese title: 石坐神社
+  No brackets in Japanese title
+[14/91] Processing: Izumi Shrine (Q11395685)
+  QID: Q11395685
+  Japanese title: 出水神社 (加賀市)
+  Japanese bracket content: 加賀市
+  Bracket QID: Q120103
+  English label: Kaga
+  Proposed new title: Izumi Shrine (Kaga)
+
+[15/91] Processing: Kamo Shrine (Q106301088)
+  QID: Q106301088
+  Japanese title: 加茂神社 (さいたま市)
+  Japanese bracket content: さいたま市
+  Bracket QID: Q134635
+  English label: Saitama
+  Proposed new title: Kamo Shrine (Saitama)
+
+[16/91] Processing: Kanda Shrine (Q11590647)
+  QID: Q11590647
+  Japanese title: 神田神社 (東白川村)
+  Japanese bracket content: 東白川村
+  Bracket QID: Q1202765
+  English label: Higashishirakawa
+  Proposed new title: Kanda Shrine (Higashishirakawa)
+
+[17/91] Processing: Kashima Shrine (Q135069030)
+  QID: Q135069030
+  Japanese title: 鹿島神社 (香芝市)
+  Japanese bracket content: 香芝市
+  Bracket QID: Q696643
+  English label: Kashiba
+  Proposed new title: Kashima Shrine (Kashiba)
+
+[18/91] Processing: Kataoka Shrine (Q28682738)
+  QID: Q28682738
+  Japanese title: 片岡神社 (吉田町)
+  Japanese bracket content: 吉田町
+  Bracket QID: Q1202789
+  English label: Yoshida
+  Proposed new title: Kataoka Shrine (Yoshida)
+
+[19/91] Processing: Kattamine Shrine (Q65249271)
+  QID: Q65249271
+  Japanese title: 刈田嶺神社 (刈田岳)
+  Japanese bracket content: 刈田岳
+  Could not find QID for bracket content
+[20/91] Processing: Kawara Shrine (Q11667602)
+  QID: Q11667602
+  Japanese title: 香春神社
+  No brackets in Japanese title
+[21/91] Processing: Kawara Shrine (Q17209206)
+  QID: Q17209206
+  Japanese title: 川原神社 (伊勢市)
+  Japanese bracket content: 伊勢市
+  Bracket QID: Q328067
+  English label: Ise
+  Proposed new title: Kawara Shrine (Ise)
+
+[22/91] Processing: Kawata Shrine (Q11479033)
+  QID: Q11479033
+  Japanese title: 川田神社 (湖南市)
+  Japanese bracket content: 湖南市
+  Bracket QID: Q857194
+  English label: Konan
+  Proposed new title: Kawata Shrine (Konan)
+
+[23/91] Processing: Kinomiya Shrine (Q119929624)
+  QID: Q119929624
+  Japanese title: 来宮神社 (伊豆市八幡)
+  Japanese bracket content: 伊豆市八幡
+  Could not find QID for bracket content
+[24/91] Processing: Kotoshironushi Shrine (Q48758503)
+  QID: Q48758503
+  Japanese title: 事代主神社 (阿波市)
+  Japanese bracket content: 阿波市
+  Bracket QID: Q791587
+  English label: Awa
+  Proposed new title: Kotoshironushi Shrine (Awa)
+
+[25/91] Processing: Kumano Shrine (Q11568963)
+  QID: Q11568963
+  Japanese title: 熊野神社 (高島市)
+  Japanese bracket content: 高島市
+  Bracket QID: Q845794
+  English label: Takashima
+  Proposed new title: Kumano Shrine (Takashima)
+
+[26/91] Processing: Kusanagi Shrine (Q11368944)
+  QID: Q11368944
+  Japanese title: 久佐奈岐神社
+  No brackets in Japanese title
+[27/91] Processing: Make Shrine (Q11498617)
+  QID: Q11498617
+  Japanese title: 摩氣神社
+  No brackets in Japanese title
+[28/91] Processing: Matsubara Shrine (Q11529439)
+  QID: Q11529439
+  Japanese title: 松原神社 (春日井市)
+  Japanese bracket content: 春日井市
+  Bracket QID: Q26101
+  English label: Kasugai
+  Proposed new title: Matsubara Shrine (Kasugai)
+
+[29/91] Processing: Matsuo Shrine (Q11529679)
+  QID: Q11529679
+  Japanese title: 松尾神社 (亀岡市)
+  Japanese bracket content: 亀岡市
+  Bracket QID: Q633996
+  English label: Kameoka
+  Proposed new title: Matsuo Shrine (Kameoka)
+
+[30/91] Processing: Mefu Shrine (Q11429659)
+  QID: Q11429659
+  Japanese title: 売布神社 (松江市)
+  Japanese bracket content: 松江市
+  Bracket QID: Q207321
+  English label: Matsue
+  Proposed new title: Mefu Shrine (Matsue)
+
+[31/91] Processing: Mifune Shrine (Q17214615)
+  QID: Q17214615
+  Japanese title: 御船神社 (多気町)
+  Japanese bracket content: 多気町
+  Bracket QID: Q1203963
+  English label: Taki
+  Proposed new title: Mifune Shrine (Taki)
+
+[32/91] Processing: Miho Shrine (Q11489249)
+  QID: Q11489249
+  Japanese title: 御穂神社
+  No brackets in Japanese title
+[33/91] Processing: Mii Shrine (Q11488771)
+  QID: Q11488771
+  Japanese title: 御井神社 (各務原市)
+  Japanese bracket content: 各務原市
+  Bracket QID: Q641491
+  English label: Kakamigahara
+  Proposed new title: Mii Shrine (Kakamigahara)
+
+[34/91] Processing: Mishima Shrine (Q134888252)
+  QID: Q134888252
+  Japanese title: 箕島神社
+  No brackets in Japanese title
+[35/91] Processing: Mishima Shrine (Q134926216)
+  QID: Q134926216
+  Japanese title: 三島神社 (南伊豆町下小野)
+  Japanese bracket content: 南伊豆町下小野
+  Could not find QID for bracket content
+[36/91] Processing: Mito Shrine (Q11488802)
+  QID: Q11488802
+  Japanese title: 御刀神社
+  No brackets in Japanese title
+[37/91] Processing: Miwa Shrine (Q11357406)
+  QID: Q11357406
+  Japanese title: 三輪神社 (津幡町)
+  Japanese bracket content: 津幡町
+  Bracket QID: Q432014
+  English label: Tsubata
+  Proposed new title: Miwa Shrine (Tsubata)
+
+[38/91] Processing: Miyake Shrine (Q11355073)
+  QID: Q11355073
+  Japanese title: 三宅神社 (亀岡市)
+  Japanese bracket content: 亀岡市
+  Bracket QID: Q633996
+  English label: Kameoka
+  Proposed new title: Miyake Shrine (Kameoka)
+
+[39/91] Processing: Miyake Shrine (Q22120521)
+  QID: Q22120521
+  Japanese title: 三宅神社 (鈴鹿市国府町)
+  Japanese bracket content: 鈴鹿市国府町
+  Could not find QID for bracket content
+[40/91] Processing: Mononobe Shrine (Q11570699)
+  QID: Q11570699
+  Japanese title: 物部神社 (大田市)
+  Japanese bracket content: 大田市
+  Bracket QID: Q20921
+  English label: Daejeon
+  Proposed new title: Mononobe Shrine (Daejeon)
+
+[41/91] Processing: Mononobe Shrine (Q18235752)
+  QID: Q18235752
+  Japanese title: 物部神社 (名古屋市)
+  Japanese bracket content: 名古屋市
+  Bracket QID: Q11751
+  English label: Nagoya
+  Proposed new title: Mononobe Shrine (Nagoya)
+
+[42/91] Processing: Moritano Shrine (Q11450096)
+  QID: Q11450096
+  Japanese title: 守田迺神社
+  No brackets in Japanese title
+[43/91] Processing: Morokuchi Shrine (Q116694076)
+  QID: Q116694076
+  Japanese title: 諸口神社
+  No brackets in Japanese title
+[44/91] Processing: Murayama Shrine (Q11523148)
+  QID: Q11523148
+  Japanese title: 村山神社 (亀岡市)
+  Japanese bracket content: 亀岡市
+  Bracket QID: Q633996
+  English label: Kameoka
+  Proposed new title: Murayama Shrine (Kameoka)
+
+[45/91] Processing: Nagahatabe Shrine (Q72727981)
+  QID: Q72727981
+  Japanese title: 長幡部神社 (上里町)
+  Japanese bracket content: 上里町
+  Bracket QID: Q1345287
+  English label: Kamisato
+  Proposed new title: Nagahatabe Shrine (Kamisato)
+
+[46/91] Processing: Nakayama Shrine (Q11364249)
+  QID: Q11364249
+  Japanese title: 中山神社 (美濃加茂市)
+  Japanese bracket content: 美濃加茂市
+  Bracket QID: Q857305
+  English label: Minokamo
+  Proposed new title: Nakayama Shrine (Minokamo)
+
+[47/91] Processing: Ninomiya Shrine (Q134930277)
+  QID: Q134930277
+  Japanese title: 二宮神社 (三宅村)
+  Japanese bracket content: 三宅村
+  Bracket QID: Q1154797
+  English label: Miyake
+  Proposed new title: Ninomiya Shrine (Miyake)
+
+[48/91] Processing: Niukawakami Shrine (Q246370)
+  QID: Q246370
+  Japanese title: 丹生川上神社
+  No brackets in Japanese title
+[49/91] Processing: Nomi Shrine (Q11646128)
+  QID: Q11646128
+  Japanese title: 野見神社 (一宮市)
+  Japanese bracket content: 一宮市
+  Bracket QID: Q270810
+  English label: Ichinomiya
+  Proposed new title: Nomi Shrine (Ichinomiya)
+
+[50/91] Processing: Oi Shrine (Q11493043)
+  QID: Q11493043
+  Japanese title: 意非神社
+  No brackets in Japanese title
+[51/91] Processing: Okada Shrine (Q106852596)
+  QID: Q106852596
+  Japanese title: 岡田神社 (松本市)
+  Japanese bracket content: 松本市
+  Bracket QID: Q213324
+  English label: Matsumoto
+  Proposed new title: Okada Shrine (Matsumoto)
+
+[52/91] Processing: Okanoue Shrine (Q48758325)
+  QID: Q48758325
+  Japanese title: 岡上神社
+  No brackets in Japanese title
+[53/91] Processing: Okuni Shrine (Q17221549)
+  QID: Q17221549
+  Japanese title: 大國神社 (伊勢崎市)
+  Japanese bracket content: 伊勢崎市
+  Bracket QID: Q328596
+  English label: Isesaki
+  Proposed new title: Okuni Shrine (Isesaki)
+
+[54/91] Processing: Omiya Shrine (Q113679907)
+  QID: Q113679907
+  Japanese title: 大宮神社 (伊豆市)
+  Japanese bracket content: 伊豆市
+  Bracket QID: Q696840
+  English label: Izu
+  Proposed new title: Omiya Shrine (Izu)
+
+[55/91] Processing: Ono Shrine (Q11464225)
+  QID: Q11464225
+  Japanese title: 小野神社 (大津市)
+  Japanese bracket content: 大津市
+  Bracket QID: Q202907
+  English label: Otsu
+  Proposed new title: Ono Shrine (Otsu)
+
+[56/91] Processing: Ono Shrine (Q11464226)
+  QID: Q11464226
+  Japanese title: 小野神社 (東京都府中市)
+  Japanese bracket content: 東京都府中市
+  Could not find QID for bracket content
+[57/91] Processing: Ono Shrine (Q17225921)
+  QID: Q17225921
+  Japanese title: 小野神社 (厚木市)
+  Japanese bracket content: 厚木市
+  Bracket QID: Q389711
+  English label: Atsugi
+  Proposed new title: Ono Shrine (Atsugi)
+
+[58/91] Processing: Oono Shrine (Q11439718)
+  QID: Q11439718
+  Japanese title: 大野神社 (一宮市)
+  Japanese bracket content: 一宮市
+  Bracket QID: Q270810
+  English label: Ichinomiya
+  Proposed new title: Oono Shrine (Ichinomiya)
+
+[59/91] Processing: Sahimeyama Shrine (Q11383230)
+  QID: Q11383230
+  Japanese title: 佐毘売山神社
+  No brackets in Japanese title
+[60/91] Processing: Saki Shrine (Q56346769)
+  QID: Q56346769
+  Japanese title: 佐紀神社 (奈良市佐紀町字西畑)
+  Japanese bracket content: 奈良市佐紀町字西畑
+  Could not find QID for bracket content
+[61/91] Processing: Sakuta Shrine (Q11382602)
+  QID: Q11382602
+  Japanese title: 佐久太神社
+  No brackets in Japanese title
+[62/91] Processing: Shibukawa Shrine (Q100544140)
+  QID: Q100544140
+  Japanese title: 渋川神社 (尾張旭市)
+  Japanese bracket content: 尾張旭市
+  Bracket QID: Q694893
+  English label: Owariasahi
+  Proposed new title: Shibukawa Shrine (Owariasahi)
+
+[63/91] Processing: Shirahige Shrine (Q11580504)
+  QID: Q11580504
+  Japanese title: 白鬚神社 (大垣市墨俣町)
+  Japanese bracket content: 大垣市墨俣町
+  Could not find QID for bracket content
+[64/91] Processing: Shirahige Shrine (Q124668655)
+  QID: Q124668655
+  Japanese title: 白鬚神社 (各務原市川島笠田町)
+  Japanese bracket content: 各務原市川島笠田町
+  Could not find QID for bracket content
+[65/91] Processing: Sugihara Shrine (Q11521781)
+  QID: Q11521781
+  Japanese title: 杉原神社
+  No brackets in Japanese title
+[66/91] Processing: Sugiyama Shrine (Q17994294)
+  QID: Q17994294
+  Japanese title: 杉山神社 (横浜市港北区新吉田町)
+  Japanese bracket content: 横浜市港北区新吉田町
+  Could not find QID for bracket content
+[67/91] Processing: Susa Shrine (Q11664501)
+  QID: Q11664501
+  Japanese title: 須佐神社 (有田市)
+  Japanese bracket content: 有田市
+  Bracket QID: Q657843
+  English label: Arida
+  Proposed new title: Susa Shrine (Arida)
+
+[68/91] Processing: Suwa Shrine (Q11631934)
+  QID: Q11631934
+  Japanese title: 諏訪神社 (美濃加茂市)
+  Japanese bracket content: 美濃加茂市
+  Bracket QID: Q857305
+  English label: Minokamo
+  Proposed new title: Suwa Shrine (Minokamo)
+
+[69/91] Processing: Suwa Shrine (Q135070129)
+  QID: Q135070129
+  Japanese title: 諏訪神社 (出雲市別所町)
+  Japanese bracket content: 出雲市別所町
+  Could not find QID for bracket content
+[70/91] Processing: Taga Shrine (Q11431090)
+  QID: Q11431090
+  Japanese title: 多賀神社 (多賀城市)
+  Japanese bracket content: 多賀城市
+  Bracket QID: Q653355
+  English label: Tagajō
+  Proposed new title: Taga Shrine (Tagajō)
+
+[71/91] Processing: Takahashi Shrine (Q11670742)
+  QID: Q11670742
+  Japanese title: 高椅神社
+  No brackets in Japanese title
+[72/91] Processing: Takahashi Shrine (Q24899217)
+  QID: Q24899217
+  Japanese title: 高橋神社
+  No brackets in Japanese title
+[73/91] Processing: Takamu Shrine (Q18233534)
+  QID: Q18233534
+  Japanese title: 高牟神社
+  No brackets in Japanese title
+[74/91] Processing: Takase Shrine (Q3791906)
+  QID: Q3791906
+  Japanese title: 高瀬神社
+  No brackets in Japanese title
+[75/91] Processing: Takehime Shrine (Q65734340)
+  QID: Q65734340
+  Japanese title: 多気比売神社
+  No brackets in Japanese title
+[76/91] Processing: Taki Shrine (Q11430618)
+  QID: Q11430618
+  Japanese title: 多伎神社
+  No brackets in Japanese title
+[77/91] Processing: Tamanooya Shrine (Q11572731)
+  QID: Q11572731
+  Japanese title: 玉祖神社
+  No brackets in Japanese title
+[78/91] Processing: Tamatsukuri Shrine (Q134930396)
+  QID: Q134930396
+  Japanese title: 玉作神社
+  No brackets in Japanese title
+[79/91] Processing: Tawa Shrine (Q11430645)
+  QID: Q11430645
+  Japanese title: 多和神社
+  No brackets in Japanese title
+[80/91] Processing: Tenjin-sha (Q70725130)
+  QID: Q70725130
+  Japanese title: 天神社 (上里町五明)
+  Japanese bracket content: 上里町五明
+  Could not find QID for bracket content
+[81/91] Processing: Toga Shrine (Q17229311)
+  QID: Q17229311
+  Japanese title: 富賀神社
+  No brackets in Japanese title
+[82/91] Processing: Tokari Shrine (Q11396948)
+  QID: Q11396948
+  Japanese title: 利雁神社
+  No brackets in Japanese title
+[83/91] Processing: Tomi Shrine (Q11602724)
+  QID: Q11602724
+  Japanese title: 等彌神社
+  No brackets in Japanese title
+[84/91] Processing: Toyokuni Shrine (Q48758383)
+  QID: Q48758383
+  Japanese title: 豊国神社 (小松島市)
+  Japanese bracket content: 小松島市
+  Bracket QID: Q823493
+  English label: Komatsushima
+  Proposed new title: Toyokuni Shrine (Komatsushima)
+
+[85/91] Processing: Tsukiyomi Shrine (Q54153263)
+  QID: Q54153263
+  Japanese title: 月讀神社 (京田辺市)
+  Japanese bracket content: 京田辺市
+  Bracket QID: Q816728
+  English label: Kyotanabe
+  Proposed new title: Tsukiyomi Shrine (Kyotanabe)
+
+[86/91] Processing: Wakamiya Shrine (Q134930669)
+  QID: Q134930669
+  Japanese title: 若宮神社 (南伊豆町湊)
+  Japanese bracket content: 南伊豆町湊
+  Could not find QID for bracket content
+[87/91] Processing: Yagi Shrine (Q11666826)
+  QID: Q11666826
+  Japanese title: 養基神社
+  No brackets in Japanese title
+[88/91] Processing: Yana Shrine (Q11471014)
+  QID: Q11471014
+  Japanese title: 山那神社 (扶桑町南山名)
+  Japanese bracket content: 扶桑町南山名
+  Could not find QID for bracket content
+[89/91] Processing: Yatsurugi Shrine (Q124496744)
+  QID: Q124496744
+  Japanese title: 八剱神社 (羽島市桑原町八神)
+  Japanese bracket content: 羽島市桑原町八神
+  Could not find QID for bracket content
+[90/91] Processing: Yokota Shrine (Q11543413)
+  QID: Q11543413
+  Japanese title: 横田神社 (総社市)
+  Japanese bracket content: 総社市
+  Bracket QID: Q873536
+  English label: Soja
+  Proposed new title: Yokota Shrine (Soja)
+
+[91/91] Processing: Yuge Shrine (Q11487078)
+  QID: Q11487078
+  Japanese title: 弓削神社 (高島市)
+  Japanese bracket content: 高島市
+  Bracket QID: Q845794
+  English label: Takashima
+  Proposed new title: Yuge Shrine (Takashima)
+
+Writing results to q_brackets_analysis.csv...
+CSV file created: q_brackets_analysis.csv
+Total rows: 91
+

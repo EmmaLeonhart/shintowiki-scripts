@@ -1,0 +1,59 @@
+================================================================================
+AUTOMATED JAPANESE WIKIPEDIA IMPORT WITH FULL HISTORY
+================================================================================
+
+Test page: Ōarahiko Shrine
+
+Connecting to shinto.miraheze.org...
+Logged in successfully
+
+Step 1: Checking if page already has {{translated page|...
+  No {{translated page| found, proceeding...
+
+Step 2: Getting Japanese Wikipedia article name...
+  Found QID: Q11438675
+  Found Japanese article: 大荒比古神社
+
+Step 3: Fetching Japanese Wikipedia content...
+  Fetched 1551 characters
+  Current revision ID: 107289665
+
+Step 4: Exporting Japanese Wikipedia history...
+  Exported 6067 bytes
+
+Step 5: Importing XML to create Japanese page...
+  Importing XML via API...
+  Response status: 403
+  Response text: Your request is not compliant with our user agent policy. Please modify your UA, so we have a way to contact you.
+
+Default user agents from popular/default software packages are not permitted.
+
+  Full response: Your request is not compliant with our user agent policy. Please modify your UA, so we have a way to contact you.
+
+Default user agents from popular/default software packages are not permitted.
+
+Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\import_jawiki_content_automated.py", line 194, in main
+    import_result = import_xml_to_wiki(site, xml_content)
+  File "C:\Users\Immanuelle\Documents\Github\q\wikibot\import_jawiki_content_automated.py", line 120, in import_xml_to_wiki
+    result = response.json()
+  File "C:\Users\ambie\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

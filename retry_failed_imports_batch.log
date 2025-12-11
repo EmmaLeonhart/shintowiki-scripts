@@ -1,0 +1,2162 @@
+================================================================================
+BATCH RETRY FAILED IMPORTS
+================================================================================
+
+Connecting to wiki...
+Logged in successfully
+
+Fetching pages from [[Category:Failed imports]]...
+Found 58 pages to process
+
+
+[1/58] Processing: タマヨリビメ (日向神話)
+================================================================================
+Processing: タマヨリビメ (日向神話)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q3082751
+
+Step 2: Finding redirect target from QID page...
+  [[Q3082751]] redirects to [[Tamayori-hime (mother of Jimmu)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 7391 characters
+  Current revision ID: 107144101
+
+Step 4: Getting English page content...
+  Fetched 19714 characters from [[Tamayori-hime (mother of Jimmu)]]
+
+Step 5: Creating merged content...
+  Created merged content (27284 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tamayori-hime (mother of Jimmu)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[タマヨリビメ (日向神話)]] → [[Tamayori-hime (mother of Jimmu)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tamayori-hime (mother of Jimmu)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[2/58] Processing: 亀戸天神社
+================================================================================
+Processing: 亀戸天神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11370953
+
+Step 2: Finding redirect target from QID page...
+  [[Q11370953]] redirects to [[Kameido Tenjin Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 10842 characters
+  Current revision ID: 107390045
+
+Step 4: Getting English page content...
+  Fetched 6767 characters from [[Kameido Tenjin Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (17780 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kameido Tenjin Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[亀戸天神社]] → [[Kameido Tenjin Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kameido Tenjin Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[3/58] Processing: 二宮神社 (船橋市)
+================================================================================
+Processing: 二宮神社 (船橋市)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11371511
+
+Step 2: Finding redirect target from QID page...
+  [[Q11371511]] redirects to [[Ninomiya Shrine (Q11371511)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 4597 characters
+  Current revision ID: 104343519
+
+Step 4: Getting English page content...
+  Fetched 13985 characters from [[Ninomiya Shrine (Q11371511)]]
+
+Step 5: Creating merged content...
+  Created merged content (18758 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Ninomiya Shrine (Q11371511)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[二宮神社 (船橋市)]] → [[Ninomiya Shrine (Q11371511)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Ninomiya Shrine (Q11371511)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[4/58] Processing: 今宮戎神社
+================================================================================
+Processing: 今宮戎神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11376859
+
+Step 2: Finding redirect target from QID page...
+  [[Q11376859]] redirects to [[Imamiya Ebisu Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 6452 characters
+  Current revision ID: 107525142
+
+Step 4: Getting English page content...
+  Fetched 1904 characters from [[Imamiya Ebisu Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (8527 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Imamiya Ebisu Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[今宮戎神社]] → [[Imamiya Ebisu Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Imamiya Ebisu Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[5/58] Processing: 伊佐須美神社
+================================================================================
+Processing: 伊佐須美神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q3155136
+
+Step 2: Finding redirect target from QID page...
+  [[Q3155136]] redirects to [[Isasumi Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 23480 characters
+  Current revision ID: 106673024
+
+Step 4: Getting English page content...
+  Fetched 3965 characters from [[Isasumi Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (27617 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Isasumi Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[伊佐須美神社]] → [[Isasumi Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Isasumi Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[6/58] Processing: 伊奈波神社
+================================================================================
+Processing: 伊奈波神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q701414
+
+Step 2: Finding redirect target from QID page...
+  [[Q701414]] redirects to [[Inaba Shrine (Gifu)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 5251 characters
+  Current revision ID: 107400255
+
+Step 4: Getting English page content...
+  Fetched 7028 characters from [[Inaba Shrine (Gifu)]]
+
+Step 5: Creating merged content...
+  Created merged content (12450 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Inaba Shrine (Gifu)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[伊奈波神社]] → [[Inaba Shrine (Gifu)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Inaba Shrine (Gifu)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[7/58] Processing: 伊射奈岐神社 (吹田市山田東)
+================================================================================
+Processing: 伊射奈岐神社 (吹田市山田東)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11379324
+
+Step 2: Finding redirect target from QID page...
+  [[Q11379324]] redirects to [[Izanagi Shrine (Yamadahigashi, Suita)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 5652 characters
+  Current revision ID: 107241876
+
+Step 4: Getting English page content...
+  Fetched 7137 characters from [[Izanagi Shrine (Yamadahigashi, Suita)]]
+
+Step 5: Creating merged content...
+  Created merged content (12970 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Izanagi Shrine (Yamadahigashi, Suita)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[伊射奈岐神社 (吹田市山田東)]] → [[Izanagi Shrine (Yamadahigashi, Suita)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Izanagi Shrine (Yamadahigashi, Suita)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[8/58] Processing: 伊弉諾神宮
+================================================================================
+Processing: 伊弉諾神宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q10884977
+
+Step 2: Finding redirect target from QID page...
+  [[Q10884977]] redirects to [[Izanagi Jingū]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 10120 characters
+  Current revision ID: 102215469
+
+Step 4: Getting English page content...
+  Fetched 13305 characters from [[Izanagi Jingū]]
+
+Step 5: Creating merged content...
+  Created merged content (23596 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Izanagi Jingū]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[伊弉諾神宮]] → [[Izanagi Jingū]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Izanagi Jingū]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[9/58] Processing: 伊曽乃神社
+================================================================================
+Processing: 伊曽乃神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11379396
+
+Step 2: Finding redirect target from QID page...
+  [[Q11379396]] redirects to [[Isono Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 6239 characters
+  Current revision ID: 107359121
+
+Step 4: Getting English page content...
+  Fetched 5751 characters from [[Isono Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (12161 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Isono Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[伊曽乃神社]] → [[Isono Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Isono Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[10/58] Processing: 住吉神社 (福岡市)
+================================================================================
+Processing: 住吉神社 (福岡市)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q29682
+
+Step 2: Finding redirect target from QID page...
+  [[Q29682]] redirects to [[Sumiyoshi Shrine (Fukuoka)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 19489 characters
+  Current revision ID: 107371188
+
+Step 4: Getting English page content...
+  Fetched 18863 characters from [[Sumiyoshi Shrine (Fukuoka)]]
+
+Step 5: Creating merged content...
+  Created merged content (38528 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Sumiyoshi Shrine (Fukuoka)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[住吉神社 (福岡市)]] → [[Sumiyoshi Shrine (Fukuoka)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Sumiyoshi Shrine (Fukuoka)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[11/58] Processing: 円応教教典
+================================================================================
+Processing: 円応教教典
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  ERROR: Could not find QID for 円応教教典
+Waiting 3 seconds before next page...
+
+[12/58] Processing: 吉備津神社
+================================================================================
+Processing: 吉備津神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q712824
+
+Step 2: Finding redirect target from QID page...
+  [[Q712824]] redirects to [[Kibitsu Shrine (Bitchū)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 15869 characters
+  Current revision ID: 107346529
+
+Step 4: Getting English page content...
+  Fetched 45989 characters from [[Kibitsu Shrine (Bitchū)]]
+
+Step 5: Creating merged content...
+  Created merged content (62029 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kibitsu Shrine (Bitchū)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[吉備津神社]] → [[Kibitsu Shrine (Bitchū)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kibitsu Shrine (Bitchū)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[13/58] Processing: 埴輪 挂甲武人
+================================================================================
+Processing: 埴輪 挂甲武人
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q91239334
+
+Step 2: Finding redirect target from QID page...
+  [[Q91239334]] redirects to [[Haniwa Warrior in Keiko Armor]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 18543 characters
+  Current revision ID: 107357378
+
+Step 4: Getting English page content...
+  Fetched 9622 characters from [[Haniwa Warrior in Keiko Armor]]
+
+Step 5: Creating merged content...
+  Created merged content (28338 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Haniwa Warrior in Keiko Armor]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[埴輪 挂甲武人]] → [[Haniwa Warrior in Keiko Armor]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Haniwa Warrior in Keiko Armor]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[14/58] Processing: 大伴氏
+================================================================================
+Processing: 大伴氏
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q17227938
+
+Step 2: Finding redirect target from QID page...
+  [[Q17227938]] redirects to [[Ōtomo clan (ancient)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 12107 characters
+  Current revision ID: 107513363
+
+Step 4: Getting English page content...
+  Fetched 3076 characters from [[Ōtomo clan (ancient)]]
+
+Step 5: Creating merged content...
+  Created merged content (15352 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Ōtomo clan (ancient)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[大伴氏]] → [[Ōtomo clan (ancient)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Ōtomo clan (ancient)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[15/58] Processing: 大國魂神社
+================================================================================
+Processing: 大國魂神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q611678
+
+Step 2: Finding redirect target from QID page...
+  [[Q611678]] redirects to [[Ōkunitama Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 17284 characters
+  Current revision ID: 107123209
+
+Step 4: Getting English page content...
+  Fetched 10106 characters from [[Ōkunitama Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (27561 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Ōkunitama Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[大國魂神社]] → [[Ōkunitama Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Ōkunitama Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[16/58] Processing: 天津甕星
+================================================================================
+Processing: 天津甕星
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q4740636
+
+Step 2: Finding redirect target from QID page...
+  [[Q4740636]] redirects to [[Amatsu-Mikaboshi]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 6454 characters
+  Current revision ID: 101089655
+
+Step 4: Getting English page content...
+  Fetched 6412 characters from [[Amatsu-Mikaboshi]]
+
+Step 5: Creating merged content...
+  Created merged content (13036 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Amatsu-Mikaboshi]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[天津甕星]] → [[Amatsu-Mikaboshi]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Amatsu-Mikaboshi]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[17/58] Processing: 天満宮
+================================================================================
+Processing: 天満宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q798838
+
+Step 2: Finding redirect target from QID page...
+  [[Q798838]] redirects to [[Tenmangū]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 18455 characters
+  Current revision ID: 106719542
+
+Step 4: Getting English page content...
+  Fetched 3435 characters from [[Tenmangū]]
+
+Step 5: Creating merged content...
+  Created merged content (22059 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tenmangū]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[天満宮]] → [[Tenmangū]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tenmangū]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[18/58] Processing: 宇佐神宮
+================================================================================
+Processing: 宇佐神宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q715632
+
+Step 2: Finding redirect target from QID page...
+  [[Q715632]] redirects to [[Usa Jingū]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 18133 characters
+  Current revision ID: 107333234
+
+Step 4: Getting English page content...
+  Fetched 96017 characters from [[Usa Jingū]]
+
+Step 5: Creating merged content...
+  Created merged content (114320 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Usa Jingū]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[宇佐神宮]] → [[Usa Jingū]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Usa Jingū]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[19/58] Processing: 宇都母知神社
+================================================================================
+Processing: 宇都母知神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q17217329
+
+Step 2: Finding redirect target from QID page...
+  [[Q17217329]] redirects to [[Utsumochi Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 5104 characters
+  Current revision ID: 107001446
+
+Step 4: Getting English page content...
+  Fetched 6387 characters from [[Utsumochi Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (11663 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Utsumochi Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[宇都母知神社]] → [[Utsumochi Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Utsumochi Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[20/58] Processing: 宗像大社
+================================================================================
+Processing: 宗像大社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q704962
+
+Step 2: Finding redirect target from QID page...
+  [[Q704962]] redirects to [[Munakata Taisha]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 13951 characters
+  Current revision ID: 106950024
+
+Step 4: Getting English page content...
+  Fetched 23568 characters from [[Munakata Taisha]]
+
+Step 5: Creating merged content...
+  Created merged content (37689 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Munakata Taisha]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[宗像大社]] → [[Munakata Taisha]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Munakata Taisha]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[21/58] Processing: 富士山本宮浅間大社
+================================================================================
+Processing: 富士山本宮浅間大社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q653180
+
+Step 2: Finding redirect target from QID page...
+  [[Q653180]] redirects to [[Fujisan Hongū Sengen Taisha]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 36768 characters
+  Current revision ID: 107018900
+
+Step 4: Getting English page content...
+  Fetched 16043 characters from [[Fujisan Hongū Sengen Taisha]]
+
+Step 5: Creating merged content...
+  Created merged content (52986 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Fujisan Hongū Sengen Taisha]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[富士山本宮浅間大社]] → [[Fujisan Hongū Sengen Taisha]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Fujisan Hongū Sengen Taisha]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[22/58] Processing: 小学館
+================================================================================
+Processing: 小学館
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q785697
+
+Step 2: Finding redirect target from QID page...
+  [[Q785697]] redirects to [[Shogakukan]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 24203 characters
+  Current revision ID: 107297501
+
+Step 4: Getting English page content...
+  Fetched 21258 characters from [[Shogakukan]]
+
+Step 5: Creating merged content...
+  Created merged content (45630 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Shogakukan]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[小学館]] → [[Shogakukan]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Shogakukan]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[23/58] Processing: 居多神社
+================================================================================
+Processing: 居多神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q172417
+
+Step 2: Finding redirect target from QID page...
+  [[Q172417]] redirects to [[Kota Shrine (Niigata)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 8398 characters
+  Current revision ID: 104614876
+
+Step 4: Getting English page content...
+  Fetched 6583 characters from [[Kota Shrine (Niigata)]]
+
+Step 5: Creating merged content...
+  Created merged content (15151 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kota Shrine (Niigata)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[居多神社]] → [[Kota Shrine (Niigata)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kota Shrine (Niigata)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[24/58] Processing: 川勾神社
+================================================================================
+Processing: 川勾神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11477816
+
+Step 2: Finding redirect target from QID page...
+  [[Q11477816]] redirects to [[Kawawa Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 7383 characters
+  Current revision ID: 105272547
+
+Step 4: Getting English page content...
+  Fetched 22923 characters from [[Kawawa Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (30476 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kawawa Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[川勾神社]] → [[Kawawa Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kawawa Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[25/58] Processing: 御神書
+================================================================================
+Processing: 御神書
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  ERROR: Could not find QID for 御神書
+Waiting 3 seconds before next page...
+
+[26/58] Processing: 忌部氏
+================================================================================
+Processing: 忌部氏
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q8189229
+
+Step 2: Finding redirect target from QID page...
+  [[Q8189229]] redirects to [[Inbe clan]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 14842 characters
+  Current revision ID: 106204342
+
+Step 4: Getting English page content...
+  Fetched 7797 characters from [[Inbe clan]]
+
+Step 5: Creating merged content...
+  Created merged content (22808 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Inbe clan]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[忌部氏]] → [[Inbe clan]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Inbe clan]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[27/58] Processing: 志賀海神社
+================================================================================
+Processing: 志賀海神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11491171
+
+Step 2: Finding redirect target from QID page...
+  [[Q11491171]] redirects to [[Shikaumi Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 15506 characters
+  Current revision ID: 107371195
+
+Step 4: Getting English page content...
+  Fetched 7483 characters from [[Shikaumi Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (23160 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Shikaumi Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[志賀海神社]] → [[Shikaumi Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Shikaumi Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[28/58] Processing: 意富比神社
+================================================================================
+Processing: 意富比神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q3090870
+
+Step 2: Finding redirect target from QID page...
+  [[Q3090870]] redirects to [[Ōhi Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 5181 characters
+  Current revision ID: 107452192
+
+Step 4: Getting English page content...
+  Fetched 22298 characters from [[Ōhi Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (27650 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Ōhi Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[意富比神社]] → [[Ōhi Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Ōhi Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[29/58] Processing: 日吉大社
+================================================================================
+Processing: 日吉大社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q656451
+
+Step 2: Finding redirect target from QID page...
+  [[Q656451]] redirects to [[Hiyoshi Taisha]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 51573 characters
+  Current revision ID: 107420934
+
+Step 4: Getting English page content...
+  Fetched 29476 characters from [[Hiyoshi Taisha]]
+
+Step 5: Creating merged content...
+  Created merged content (81219 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hiyoshi Taisha]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[日吉大社]] → [[Hiyoshi Taisha]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hiyoshi Taisha]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[30/58] Processing: 日御碕神社
+================================================================================
+Processing: 日御碕神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q1619446
+
+Step 2: Finding redirect target from QID page...
+  [[Q1619446]] redirects to [[Hinomisaki Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 13728 characters
+  Current revision ID: 107490026
+
+Step 4: Getting English page content...
+  Fetched 7860 characters from [[Hinomisaki Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (21759 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hinomisaki Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[日御碕神社]] → [[Hinomisaki Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hinomisaki Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[31/58] Processing: 有鹿神社
+================================================================================
+Processing: 有鹿神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11516854
+
+Step 2: Finding redirect target from QID page...
+  [[Q11516854]] redirects to [[Aruka Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 12810 characters
+  Current revision ID: 107507071
+
+Step 4: Getting English page content...
+  Fetched 11856 characters from [[Aruka Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (24836 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Aruka Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[有鹿神社]] → [[Aruka Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Aruka Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[32/58] Processing: 木嶋坐天照御魂神社
+================================================================================
+Processing: 木嶋坐天照御魂神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11518370
+
+Step 2: Finding redirect target from QID page...
+  [[Q11518370]] redirects to [[Konoshima Nimasu Amateru Mitama Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 14695 characters
+  Current revision ID: 107217766
+
+Step 4: Getting English page content...
+  Fetched 6944 characters from [[Konoshima Nimasu Amateru Mitama Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (21814 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Konoshima Nimasu Amateru Mitama Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[木嶋坐天照御魂神社]] → [[Konoshima Nimasu Amateru Mitama Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Konoshima Nimasu Amateru Mitama Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[33/58] Processing: 枚岡神社
+================================================================================
+Processing: 枚岡神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q32422
+
+Step 2: Finding redirect target from QID page...
+  [[Q32422]] redirects to [[Hiraoka Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 22160 characters
+  Current revision ID: 107518237
+
+Step 4: Getting English page content...
+  Fetched 22587 characters from [[Hiraoka Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (44917 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hiraoka Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[枚岡神社]] → [[Hiraoka Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hiraoka Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[34/58] Processing: 歓喜院 (熊谷市)
+================================================================================
+Processing: 歓喜院 (熊谷市)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11545320
+
+Step 2: Finding redirect target from QID page...
+  [[Q11545320]] redirects to [[Kangi-in]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 8444 characters
+  Current revision ID: 107046572
+
+Step 4: Getting English page content...
+  Fetched 27786 characters from [[Kangi-in]]
+
+Step 5: Creating merged content...
+  Created merged content (36405 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kangi-in]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[歓喜院 (熊谷市)]] → [[Kangi-in]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kangi-in]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[35/58] Processing: 氣比神宮
+================================================================================
+Processing: 氣比神宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11129346
+
+Step 2: Finding redirect target from QID page...
+  [[Q11129346]] redirects to [[Kehi Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 40300 characters
+  Current revision ID: 107326262
+
+Step 4: Getting English page content...
+  Fetched 16787 characters from [[Kehi Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (57257 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kehi Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[氣比神宮]] → [[Kehi Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kehi Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[36/58] Processing: 氷川女体神社
+================================================================================
+Processing: 氷川女体神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11549599
+
+Step 2: Finding redirect target from QID page...
+  [[Q11549599]] redirects to [[Hikawa Nyotai Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 6394 characters
+  Current revision ID: 107001594
+
+Step 4: Getting English page content...
+  Fetched 6060 characters from [[Hikawa Nyotai Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (12626 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hikawa Nyotai Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[氷川女体神社]] → [[Hikawa Nyotai Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hikawa Nyotai Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[37/58] Processing: 洲崎神社
+================================================================================
+Processing: 洲崎神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11556513
+
+Step 2: Finding redirect target from QID page...
+  [[Q11556513]] redirects to [[Susaki Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 8918 characters
+  Current revision ID: 104588122
+
+Step 4: Getting English page content...
+  Fetched 5315 characters from [[Susaki Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (14403 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Susaki Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[洲崎神社]] → [[Susaki Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Susaki Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[38/58] Processing: 深見神社
+================================================================================
+Processing: 深見神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11560278
+
+Step 2: Finding redirect target from QID page...
+  [[Q11560278]] redirects to [[Fukami Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 9428 characters
+  Current revision ID: 104349603
+
+Step 4: Getting English page content...
+  Fetched 5378 characters from [[Fukami Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (14976 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Fukami Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[深見神社]] → [[Fukami Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Fukami Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[39/58] Processing: 熱田神宮
+================================================================================
+Processing: 熱田神宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q482065
+
+Step 2: Finding redirect target from QID page...
+  [[Q482065]] redirects to [[Atsuta Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 56026 characters
+  Current revision ID: 107070984
+
+Step 4: Getting English page content...
+  Fetched 31920 characters from [[Atsuta Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (88116 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Atsuta Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[熱田神宮]] → [[Atsuta Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Atsuta Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[40/58] Processing: 玉敷神社
+================================================================================
+Processing: 玉敷神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11572627
+
+Step 2: Finding redirect target from QID page...
+  [[Q11572627]] redirects to [[Tamashiki Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 6056 characters
+  Current revision ID: 107028832
+
+Step 4: Getting English page content...
+  Fetched 12161 characters from [[Tamashiki Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (18387 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tamashiki Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[玉敷神社]] → [[Tamashiki Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tamashiki Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[41/58] Processing: 甘露の法雨
+================================================================================
+Processing: 甘露の法雨
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11574306
+
+Step 2: Finding redirect target from QID page...
+  ERROR: [[Q11574306]] does not exist or is not a redirect
+Waiting 3 seconds before next page...
+
+[42/58] Processing: 生田神社
+================================================================================
+Processing: 生田神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q710086
+
+Step 2: Finding redirect target from QID page...
+  [[Q710086]] redirects to [[Ikuta Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 9899 characters
+  Current revision ID: 107312272
+
+Step 4: Getting English page content...
+  Fetched 18924 characters from [[Ikuta Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (28993 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Ikuta Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[生田神社]] → [[Ikuta Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Ikuta Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[43/58] Processing: 田縣神社
+================================================================================
+Processing: 田縣神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q60581
+
+Step 2: Finding redirect target from QID page...
+  [[Q60581]] redirects to [[Tagata Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 3097 characters
+  Current revision ID: 107156109
+
+Step 4: Getting English page content...
+  Fetched 11861 characters from [[Tagata Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (15128 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tagata Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[田縣神社]] → [[Tagata Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tagata Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[44/58] Processing: 白山神社 (新潟市中央区沼垂東)
+================================================================================
+Processing: 白山神社 (新潟市中央区沼垂東)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q63148121
+
+Step 2: Finding redirect target from QID page...
+  [[Q63148121]] redirects to [[Hakusan Shrine (Nuttari-higashi, Niigata)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 7585 characters
+  Current revision ID: 107330930
+
+Step 4: Getting English page content...
+  Fetched 5466 characters from [[Hakusan Shrine (Nuttari-higashi, Niigata)]]
+
+Step 5: Creating merged content...
+  Created merged content (13233 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hakusan Shrine (Nuttari-higashi, Niigata)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[白山神社 (新潟市中央区沼垂東)]] → [[Hakusan Shrine (Nuttari-higashi, Niigata)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hakusan Shrine (Nuttari-higashi, Niigata)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[45/58] Processing: 真の道
+================================================================================
+Processing: 真の道
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  ERROR: Could not find QID for 真の道
+Waiting 3 seconds before next page...
+
+[46/58] Processing: 矢田坐久志玉比古神社
+================================================================================
+Processing: 矢田坐久志玉比古神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11584205
+
+Step 2: Finding redirect target from QID page...
+  [[Q11584205]] redirects to [[Yata ni Imasu Kushitamahiko Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 3748 characters
+  Current revision ID: 106926963
+
+Step 4: Getting English page content...
+  Fetched 7320 characters from [[Yata ni Imasu Kushitamahiko Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (11244 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Yata ni Imasu Kushitamahiko Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[矢田坐久志玉比古神社]] → [[Yata ni Imasu Kushitamahiko Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Yata ni Imasu Kushitamahiko Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[47/58] Processing: 神社本庁
+================================================================================
+Processing: 神社本庁
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q908077
+
+Step 2: Finding redirect target from QID page...
+  [[Q908077]] redirects to [[Association of Shinto Shrines]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 29152 characters
+  Current revision ID: 107508523
+
+Step 4: Getting English page content...
+  Fetched 11356 characters from [[Association of Shinto Shrines]]
+
+Step 5: Creating merged content...
+  Created merged content (40678 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Association of Shinto Shrines]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[神社本庁]] → [[Association of Shinto Shrines]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Association of Shinto Shrines]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[48/58] Processing: 穂高神社
+================================================================================
+Processing: 穂高神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11597109
+
+Step 2: Finding redirect target from QID page...
+  [[Q11597109]] redirects to [[Hotaka Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 10551 characters
+  Current revision ID: 105865245
+
+Step 4: Getting English page content...
+  Fetched 13920 characters from [[Hotaka Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (24641 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hotaka Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[穂高神社]] → [[Hotaka Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hotaka Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[49/58] Processing: 筑波山神社
+================================================================================
+Processing: 筑波山神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11602876
+
+Step 2: Finding redirect target from QID page...
+  [[Q11602876]] redirects to [[Tsukubasan Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 27020 characters
+  Current revision ID: 106750724
+
+Step 4: Getting English page content...
+  Fetched 12770 characters from [[Tsukubasan Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (39961 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tsukubasan Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[筑波山神社]] → [[Tsukubasan Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tsukubasan Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[50/58] Processing: 筥崎宮
+================================================================================
+Processing: 筥崎宮
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q714742
+
+Step 2: Finding redirect target from QID page...
+  [[Q714742]] redirects to [[Hakozaki Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 14432 characters
+  Current revision ID: 107395537
+
+Step 4: Getting English page content...
+  Fetched 19964 characters from [[Hakozaki Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (34565 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hakozaki Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[筥崎宮]] → [[Hakozaki Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hakozaki Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[51/58] Processing: 美保神社
+================================================================================
+Processing: 美保神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q3313076
+
+Step 2: Finding redirect target from QID page...
+  [[Q3313076]] redirects to [[Miho Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 5594 characters
+  Current revision ID: 104529581
+
+Step 4: Getting English page content...
+  Fetched 11531 characters from [[Miho Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (17295 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Miho Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[美保神社]] → [[Miho Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Miho Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[52/58] Processing: 西野神社
+================================================================================
+Processing: 西野神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11629779
+
+Step 2: Finding redirect target from QID page...
+  [[Q11629779]] redirects to [[Nishino Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 14629 characters
+  Current revision ID: 107319258
+
+Step 4: Getting English page content...
+  Fetched 1956 characters from [[Nishino Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (16755 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Nishino Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[西野神社]] → [[Nishino Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Nishino Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[53/58] Processing: 調神社
+================================================================================
+Processing: 調神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11631781
+
+Step 2: Finding redirect target from QID page...
+  [[Q11631781]] redirects to [[Tsuki Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 9574 characters
+  Current revision ID: 107190192
+
+Step 4: Getting English page content...
+  Fetched 6241 characters from [[Tsuki Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (15984 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Tsuki Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[調神社]] → [[Tsuki Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Tsuki Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[54/58] Processing: 速谷神社
+================================================================================
+Processing: 速谷神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11639721
+
+Step 2: Finding redirect target from QID page...
+  [[Q11639721]] redirects to [[Hayatani Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 4620 characters
+  Current revision ID: 106629933
+
+Step 4: Getting English page content...
+  Fetched 13958 characters from [[Hayatani Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (18748 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Hayatani Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[速谷神社]] → [[Hayatani Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Hayatani Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[55/58] Processing: 針名神社
+================================================================================
+Processing: 針名神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11648156
+
+Step 2: Finding redirect target from QID page...
+  [[Q11648156]] redirects to [[Harina Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 2793 characters
+  Current revision ID: 107291078
+
+Step 4: Getting English page content...
+  Fetched 4744 characters from [[Harina Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (7707 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Harina Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[針名神社]] → [[Harina Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Harina Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[56/58] Processing: 霧島岑神社
+================================================================================
+Processing: 霧島岑神社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11660876
+
+Step 2: Finding redirect target from QID page...
+  [[Q11660876]] redirects to [[Kirishimamine Shrine]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 3527 characters
+  Current revision ID: 107360836
+
+Step 4: Getting English page content...
+  Fetched 5939 characters from [[Kirishimamine Shrine]]
+
+Step 5: Creating merged content...
+  Created merged content (9637 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kirishimamine Shrine]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[霧島岑神社]] → [[Kirishimamine Shrine]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kirishimamine Shrine]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[57/58] Processing: 須佐神社 (有田市)
+================================================================================
+Processing: 須佐神社 (有田市)
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q11664501
+
+Step 2: Finding redirect target from QID page...
+  [[Q11664501]] redirects to [[Susa Shrine (Q11664501)]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 16083 characters
+  Current revision ID: 107351811
+
+Step 4: Getting English page content...
+  Fetched 6834 characters from [[Susa Shrine (Q11664501)]]
+
+Step 5: Creating merged content...
+  Created merged content (23093 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Susa Shrine (Q11664501)]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[須佐神社 (有田市)]] → [[Susa Shrine (Q11664501)]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Susa Shrine (Q11664501)]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+Waiting 3 seconds before next page...
+
+[58/58] Processing: 高良大社
+================================================================================
+Processing: 高良大社
+================================================================================
+
+Step 1: Getting Wikidata QID...
+  Found QID: Q715647
+
+Step 2: Finding redirect target from QID page...
+  [[Q715647]] redirects to [[Kōra taisha]]
+
+Step 3: Getting Japanese Wikipedia content...
+  Fetched 21490 characters
+  Current revision ID: 105721989
+
+Step 4: Getting English page content...
+  Fetched 16792 characters from [[Kōra taisha]]
+
+Step 5: Creating merged content...
+  Created merged content (38452 characters)
+
+Step 6: Deleting English page...
+  ✓ Deleted [[Kōra taisha]]
+
+Step 7: Moving Japanese page to English page name...
+  ✓ Moved [[高良大社]] → [[Kōra taisha]]
+
+Step 8: Undeleting all revisions of English page...
+  ✓ Undeleted revisions
+
+Step 9: Overwriting with merged content...
+  ✓ Saved merged content to [[Kōra taisha]]
+
+================================================================================
+SUCCESS!
+================================================================================
+
+
+================================================================================
+BATCH PROCESSING COMPLETE
+================================================================================
+Total pages: 58
+Successful: 54
+Failed: 4
+

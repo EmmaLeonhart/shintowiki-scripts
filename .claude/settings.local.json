@@ -84,7 +84,9 @@
       "Bash(timeout 90 bash:*)",
       "Bash(timeout 7200 python:*)",
       "Bash(timeout 5 python:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(timeout 180 bash:*)",
+      "Bash(timeout 10 tail:*)"
     ],
     "deny": [],
     "ask": []

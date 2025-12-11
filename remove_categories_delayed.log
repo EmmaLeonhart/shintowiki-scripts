@@ -1,0 +1,79 @@
+================================================================================
+DELAYED CATEGORY REMOVAL
+================================================================================
+
+Waiting 2 hours (7200 seconds) before processing...
+Start time: 2025-12-08 20:41:01
+
+
+================================================================================
+WAIT COMPLETE - STARTING CATEGORY REMOVAL
+================================================================================
+Current time: 2025-12-08 22:41:01
+
+Connecting to wiki...
+Logged in successfully
+
+
+================================================================================
+Processing: [[Category:1000 shortest pages as of Nov 16, 2025]]
+================================================================================
+
+Found 3 pages in category
+
+[1/3] Processing: Yamamoto Hachimangū (Fujinomiya City)
+  ✓ Removed category
+[2/3] Processing: Yamana Shrine Tenno Festival Bugaku
+  ✓ Removed category
+[3/3] Processing: Yawata Hachimangū
+  ✓ Removed category
+
+Category [[Category:1000 shortest pages as of Nov 16, 2025]] complete:
+  Removed: 3
+  Skipped: 0
+
+================================================================================
+Processing: [[Category:Lonely Pages 2025-12-06]]
+================================================================================
+
+Found 0 pages in category
+
+
+Category [[Category:Lonely Pages 2025-12-06]] complete:
+  Removed: 0
+  Skipped: 0
+
+================================================================================
+Processing: [[Category:Qq]]
+================================================================================
+
+Found 2 pages in category
+
+[1/2] Processing: ほんみち概観
+  ✓ Removed category
+[2/2] Processing: Category:Q brackets
+  ✓ Removed category
+
+Category [[Category:Qq]] complete:
+  Removed: 2
+  Skipped: 0
+
+================================================================================
+Processing: [[Category:Has wikidata]]
+================================================================================
+
+Found 0 pages in category
+
+
+Category [[Category:Has wikidata]] complete:
+  Removed: 0
+  Skipped: 0
+
+================================================================================
+ALL CATEGORIES PROCESSED
+================================================================================
+Total pages processed: 5
+Total removed: 5
+Total skipped: 0
+End time: 2025-12-08 22:41:28
+
