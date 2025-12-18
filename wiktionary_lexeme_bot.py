@@ -55,19 +55,20 @@ def query_wikidata_lexeme(lemma, language_qid='Q1860', pos_qid=None):
         pos_qid: Wikidata QID for the lexical category/part of speech
 
     Returns:
-        Lexeme ID (e.g., 'L8005') if found, None otherwise
+        Tuple of (lexeme_id, count) where:
+        - lexeme_id: The lexeme ID (e.g., 'L8005') if exactly one found, None otherwise
+        - count: Number of matching lexemes found (0, 1, or 2+)
     """
     if not pos_qid:
-        return None
+        return None, 0
 
-    # SPARQL query to find matching lexeme
+    # SPARQL query to find ALL matching lexemes (no LIMIT)
     query = f"""
     SELECT ?lexeme WHERE {{
       ?lexeme dct:language wd:{language_qid} ;
               wikibase:lemma "{lemma}"@en ;
               wikibase:lexicalCategory wd:{pos_qid} .
     }}
-    LIMIT 1
     """
 
     headers = {
@@ -87,16 +88,22 @@ def query_wikidata_lexeme(lemma, language_qid='Q1860', pos_qid=None):
         data = response.json()
         bindings = data.get('results', {}).get('bindings', [])
 
-        if bindings:
+        count = len(bindings)
+
+        # Only return lexeme ID if there's exactly one match
+        if count == 1:
             lexeme_uri = bindings[0]['lexeme']['value']
             # Extract lexeme ID from URI (e.g., http://www.wikidata.org/entity/L8005 -> L8005)
             lexeme_id = lexeme_uri.split('/')[-1]
-            return lexeme_id
+            return lexeme_id, count
+        else:
+            # Either no matches or duplicates found
+            return None, count
 
     except Exception as e:
         print(f"Error querying Wikidata: {e}")
 
-    return None
+    return None, 0
 
 
 def parse_english_section(wikitext):
@@ -208,11 +215,24 @@ def process_page(site, page_title):
 
     print(f"  Found {len(pos_sections)} POS section(s)")
 
+    # Count how many times each POS type appears
+    from collections import Counter
+    pos_counts = Counter(pos_header for pos_header, _, _ in pos_sections)
+
+    # Skip any POS that appears multiple times (multiple Etymology sections)
+    duplicate_pos = {pos for pos, count in pos_counts.items() if count > 1}
+    if duplicate_pos:
+        print(f"  Skipping POS types with multiple sections: {', '.join(sorted(duplicate_pos))}")
+
     modified_wikitext = wikitext
     edits_made = []
     offset = 0  # Track offset due to insertions
 
     for pos_header, start_pos, end_pos in pos_sections:
+        # Skip if this POS type appears multiple times on the page
+        if pos_header in duplicate_pos:
+            continue
+
         print(f"  Checking {pos_header}...")
 
         # Adjust positions for previous insertions
@@ -226,10 +246,14 @@ def process_page(site, page_title):
 
         # Query Wikidata for matching lexeme
         pos_qid = POS_MAP.get(pos_header)
-        lexeme_id = query_wikidata_lexeme(page_title, pos_qid=pos_qid)
+        lexeme_id, count = query_wikidata_lexeme(page_title, pos_qid=pos_qid)
 
-        if lexeme_id:
-            print(f"    Found lexeme: {lexeme_id}")
+        if count == 0:
+            print(f"    No matching lexeme found on Wikidata")
+        elif count > 1:
+            print(f"    Found {count} duplicate lexemes on Wikidata - skipping for safety")
+        elif lexeme_id:
+            print(f"    Found unique lexeme: {lexeme_id}")
 
             # Find the exact position of the POS header in the modified text
             pos_pattern = f'===\\s*{re.escape(pos_header)}\\s*==='
@@ -244,8 +268,6 @@ def process_page(site, page_title):
                 offset += template_length
 
                 edits_made.append((pos_header, lexeme_id))
-        else:
-            print(f"    No matching lexeme found on Wikidata")
 
         # Rate limit for Wikidata queries
         time.sleep(1)
