@@ -181,15 +181,42 @@ CATEGORIES = [
 def get_wikidata_item_for_commons_category(category_name):
     """
     Get the Wikidata item QID for a Commons category.
-    Uses the Commons category name to find its Wikidata item via sitelink.
+    Uses Wikidata API to get entity from Commons sitelink.
+    """
+    headers = {'User-Agent': 'ImmanuelleCommonsBot/1.0'}
+
+    try:
+        # Use Wikidata API to get entity from Commons sitelink
+        params = {
+            'action': 'wbgetentities',
+            'sites': 'commonswiki',
+            'titles': f'Category:{category_name}',
+            'format': 'json'
+        }
+
+        response = requests.get(WIKIDATA_API, params=params, headers=headers, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+
+        if 'entities' in data:
+            for qid, entity in data['entities'].items():
+                if qid != '-1' and 'missing' not in entity:
+                    return qid
+
+        return None
+
+    except Exception as e:
+        print(f"  ✗ Failed to get Wikidata item: {e}")
+        return None
+
+def is_wikimedia_category(qid):
+    """
+    Check if item is instance of Wikimedia category (Q4167836).
     """
     query = f"""
-    SELECT ?item WHERE {{
-      ?item schema:about ?category .
-      ?category schema:isPartOf <https://commons.wikimedia.org/> .
-      ?category schema:name "Category:{category_name}"@en .
+    ASK {{
+      wd:{qid} wdt:P31 wd:Q4167836 .
     }}
-    LIMIT 1
     """
 
     headers = {'User-Agent': 'ImmanuelleCommonsBot/1.0'}
@@ -203,16 +230,11 @@ def get_wikidata_item_for_commons_category(category_name):
         )
         response.raise_for_status()
         data = response.json()
-
-        if data['results']['bindings']:
-            item_url = data['results']['bindings'][0]['item']['value']
-            qid = item_url.split('/')[-1]
-            return qid
-        return None
+        return data.get('boolean', False)
 
     except Exception as e:
-        print(f"  ✗ Failed to get Wikidata item: {e}")
-        return None
+        print(f"  ✗ Failed to check if Wikimedia category: {e}")
+        return False
 
 def get_main_topic(qid):
     """
@@ -340,18 +362,27 @@ def main():
             continue
         print(f"  Category item: {cat_qid}")
 
-        # Step 2: Get the main topic (P301)
-        topic_qid = get_main_topic(cat_qid)
-        if not topic_qid:
-            print(f"  ⚠ No main topic (P301) found")
-            continue
-        print(f"  Main topic: {topic_qid}")
+        # Step 2: Determine the topic QID
+        # If item is instance of Wikimedia category, get P301 (main topic)
+        # Otherwise, use the item itself as the topic
+        if is_wikimedia_category(cat_qid):
+            print(f"  Is Wikimedia category, looking for P301...")
+            topic_qid = get_main_topic(cat_qid)
+            if not topic_qid:
+                print(f"  ⚠ No main topic (P301) found")
+                continue
+            print(f"  Main topic (P301): {topic_qid}")
+        else:
+            # Not a Wikimedia category - use the item itself as the topic
+            topic_qid = cat_qid
+            print(f"  Not a Wikimedia category, using item as topic: {topic_qid}")
 
         # Step 3: Find all items where property = topic_qid
         results = find_items_with_property_value(topic_qid, prop_type)
         print(f"  Found {len(results)} items with Commons categories")
 
         if not results:
+            print(f"  ⚠ No items found")
             continue
 
         # Step 4: Add category to each Commons page
