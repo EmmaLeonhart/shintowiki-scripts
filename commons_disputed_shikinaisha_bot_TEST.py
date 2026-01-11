@@ -22,7 +22,7 @@ if sys.platform == 'win32':
 COMMONS_URL = "commons.wikimedia.org"
 COMMONS_PATH = "/w/"
 BOT_USERNAME = "Immanuelle@ImmanuelleCommonsBot"
-BOT_PASSWORD = "38um3qqm2844p3eri3k28aj8f9do5h7e"
+BOT_PASSWORD = "rctsl2fbuo3qa0ngj1q2eur5ookdbjir"
 CSV_FILE = r"C:\Users\Immanuelle\Downloads\query (2).csv"
 THROTTLE = 2.0  # seconds between edits (Commons is stricter)
 
