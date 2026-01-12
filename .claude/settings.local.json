@@ -87,7 +87,8 @@
       "Bash(ls:*)",
       "Bash(timeout 180 bash:*)",
       "Bash(timeout 10 tail:*)",
-      "WebFetch(domain:www.wikidata.org)"
+      "WebFetch(domain:www.wikidata.org)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []
