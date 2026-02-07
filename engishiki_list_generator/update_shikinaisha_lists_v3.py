@@ -38,11 +38,8 @@ def save_progress(state):
 
 progress = load_progress()
 
-# Flag to track when we've reached Izumi Province
-started_from_izumi = False
-
 print("[INFO] Starting update now...")
-print(f"[INFO] Will skip all provinces until reaching Izumi Province, then process from there")
+print("[INFO] Processing all provinces from the beginning")
 
 # ── endpoints ───────────────────────────────────────────
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
@@ -97,6 +94,23 @@ def cat_members(cat):
         if "continue" not in r:
             break
         cont = r["continue"]["cmcontinue"]
+
+def allpages_with_prefix(prefix):
+    """Get all pages starting with a given prefix."""
+    cont = ""
+    while True:
+        params = {
+            "action": "query", "list": "allpages", "apprefix": prefix,
+            "aplimit": "500", "format": "json"
+        }
+        if cont:
+            params["apcontinue"] = cont
+        r = S.get(WIKI_API, params=params).json()
+        for p in r["query"]["allpages"]:
+            yield p["title"]
+        if "continue" not in r:
+            break
+        cont = r["continue"]["apcontinue"]
 
 def wiki_get(title):
     r = S.get(WIKI_API, params={
@@ -234,10 +248,23 @@ def create_shrine_page(qid: str, shrine_name: str, province: str, actual_page_na
 #  Wikidata helpers
 # ────────────────────────────────────────────────────────
 def wd_entity(qid: str) -> dict:
-    return S.get(WD_API, params={
-        "action": "wbgetentities", "ids": qid,
-        "props": "labels|claims|sitelinks", "languages": "en,ja",
-        "redirects": "yes", "format": "json"}).json()["entities"][qid]
+    """Fetch Wikidata entity with retry logic for rate limiting."""
+    import time as time_module
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            time_module.sleep(0.5)  # Rate limit: wait 500ms between requests
+            resp = S.get(WD_API, params={
+                "action": "wbgetentities", "ids": qid,
+                "props": "labels|claims|sitelinks", "languages": "en,ja",
+                "redirects": "yes", "format": "json"}, timeout=30)
+            data = resp.json()
+            return data["entities"][qid]
+        except Exception as e:
+            wait_time = 5 * (attempt + 1)  # 5, 10, 15, 20, 25 seconds
+            print(f"  [RETRY] Wikidata API error for {qid}: {e}, waiting {wait_time}s...", flush=True)
+            time_module.sleep(wait_time)
+    raise Exception(f"Failed to fetch {qid} after {max_retries} retries")
 
 # ── safe label helper -------------------------------------------------
 def _lbl(ent: dict, fallback: str = "") -> str:
@@ -890,9 +917,12 @@ LEAD_TEMPLATE = (
 
 def process(title, token, dry):
     src = wiki_get(title)
-    # Support both [[d:Q...]] and [[da:d:Q...]] formats
+    # Support multiple formats: [[d:Q...]], [[da:d:Q...]], and {{wikidata link|Q...}}
     m = re.search(r"(?:\[\[d:|da:d:)(Q\d+)\]\]", src)
     if not m:
+        m = re.search(r"\{\{wikidata link\|(Q\d+)\}\}", src, re.IGNORECASE)
+    if not m:
+        print(f"  [SKIP] No Wikidata QID found in {title}")
         return
     qid = m.group(1)
 
@@ -938,24 +968,12 @@ if __name__ == "__main__":
 
     csrf = wiki_login()
 
-    # Get all pages in order
-    all_pages = list(cat_members("Category:Lists_of_Shikinaisha_by_location"))
+    # Get all pages by prefix (category lost members during wiki restoration)
+    all_pages = list(allpages_with_prefix("List of Shikinaisha in"))
     print(f"[INFO] Found {len(all_pages)} total province lists")
 
-    # Find Izumi Province index
-    izumi_index = None
-    for i, page in enumerate(all_pages):
-        if "Izumi" in page:
-            izumi_index = i
-            print(f"[INFO] Found Izumi Province at index {i}: {page}")
-            break
-
-    if izumi_index is None:
-        print("[ERROR] Could not find Izumi Province in category!")
-        sys.exit(1)
-
-    # Process from Izumi onwards
-    for page in all_pages[izumi_index:]:
+    # Process all pages from the beginning
+    for page in all_pages:
         # Skip if already processed
         if page in progress:
             print(f"[SKIP] {page} (already processed)")

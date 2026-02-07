@@ -1,0 +1,63 @@
+<!--interwikis from wikidata-->[[ja:武蔵国の式内社一覧]]
+<!--interwikis from wikidata-->[[ja:武蔵国の式内社一覧]]
+<!--interwikis from wikidata-->[[ja:武蔵国の式内社一覧]]
+
+This is a list of Shikinaisha in [[Musashi Province]]. That is the shrines in the [[Engishiki Jinmyōchō]] in the province.
+
+The Engishiki Jinmyōchō counts 44 Shikinaisha in the province – 42 Shikinai Shōsha and 2 Shikinai Taisha.
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Ebara district|ja|荏原郡|de|Ebara-gun|ko|에바라군|zh|荏原郡|WD=Q1278470}}
+| {{ill|Hietano Shrine|lt=Hietano Shrine|WD=Q135039725}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| {{ill|Shikinai Shōsha|WD=Q134917287}}
+| —
+| {{ill|Hieta Shrine|lt=Hieta Shrine|ja|薭田神社|WD=Q11596288}}; {{ill|Mita Hachiman Shrine|lt=Mita Hachiman Shrine|en|Mita Hachiman Shrine|ja|御田八幡神社|commons|Category:Mita-Hachiman-jinja|fr|Mita Hachiman-jinja|WD=Q545397}}; {{ill|Rokugō Shrine|lt=Rokugo Shrine|ja|六郷神社|commons|Category:Rokugo-jinja|WD=Q17215324}}; {{ill|Unokihachiman Shrine|lt=Unokihachiman Shrine|WD=Q135069507}}; {{ill|Hieda Shrine|lt=Hieda Shrine|WD=Q135193277}}; {{ill|Ota Hachiman Shrine|lt=Ota Hachiman Shrine|WD=Q135193278}}; {{ill|Rokugo Shrine|lt=Rokugo Shrine|WD=Q135193279}}; {{ill|Unoki Hachiman Shrine|lt=Unoki Hachiman Shrine|WD=Q135193280}}
+| —
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181689 DB]
+|-
+| RONSHA
+| {{ill|Hieta Shrine|lt=Hieta Shrine|ja|薭田神社|WD=Q11596288}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| —
+| —
+| {{ill|Hietano Shrine|lt=Hietano Shrine|WD=Q135039725}}
+| {{coord|35.564611|139.722639|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181689 DB]
+|-
+| RONSHA
+| {{ill|Mita Hachiman Shrine|lt=Mita Hachiman Shrine|en|Mita Hachiman Shrine|ja|御田八幡神社|commons|Category:Mita-Hachiman-jinja|fr|Mita Hachiman-jinja|WD=Q545397}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| —
+| —
+| {{ill|Hietano Shrine|lt=Hietano Shrine|WD=Q135039725}}
+| {{coord|35.643110|139.741500|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181689 DB]
+|-
+| RONSHA
+| {{ill|Rokugō Shrine|lt=Rokugo Shrine|ja|六郷神社|commons|Category:Rokugo-jinja|WD=Q17215324}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| —
+| —
+| {{ill|Hietano Shrine|lt=Hietano Shrine|WD=Q135039725}}
+| {{coord|35.544167|139.713056|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181689 DB]
+|-
+| RONSHA
+| {{ill|Unokihachiman Shrine|lt=Unokihachiman Shrine|WD=Q135069507}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| —
+| —
+| {{ill|Hietano Shrine|lt=Hietano Shrine|WD=Q135039725}}
+| —
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181689 DB]
+|-
+| RONSHA
+| {{ill|Hieda Shrine|lt=Hieda Shrine|WD=Q135193277}}
+| {{ill|Kokuhei-sha|WD=Q135160342|lt=Kokuhei|comment=categorized}}
+| —
+| —
+| {{ill|Hietano Shrine|lt=Hietano Shr

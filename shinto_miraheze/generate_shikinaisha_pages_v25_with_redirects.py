@@ -27,14 +27,22 @@ PASSWORD  = '[REDACTED_SECRET_2]'
 PROPERTIES_TO_IGNORE = ['P11250']
 PROPERTIES_TO_OMIT = ['P1448', 'P2671']
 
+# Look for property labels cache in current dir or parent dir
 PROPERTY_LABELS_CACHE = 'property_labels_cache.csv'
+PROPERTY_LABELS_CACHE_PARENT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'property_labels_cache.csv')
 
 # Load property labels cache
 PROPERTY_LABELS = {}
+cache_path = None
 if os.path.exists(PROPERTY_LABELS_CACHE):
-    print(f"Loading property labels cache from {PROPERTY_LABELS_CACHE}...")
+    cache_path = PROPERTY_LABELS_CACHE
+elif os.path.exists(PROPERTY_LABELS_CACHE_PARENT):
+    cache_path = PROPERTY_LABELS_CACHE_PARENT
+
+if cache_path:
+    print(f"Loading property labels cache from {cache_path}...")
     try:
-        with open(PROPERTY_LABELS_CACHE, 'r', encoding='utf-8') as f:
+        with open(cache_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
                 PROPERTY_LABELS[row['property_id']] = row['label']
@@ -42,10 +50,10 @@ if os.path.exists(PROPERTY_LABELS_CACHE):
     except Exception as e:
         print(f"Warning: Could not load property labels cache: {e}\n")
 else:
-    print(f"Warning: Property labels cache file not found: {PROPERTY_LABELS_CACHE}")
+    print(f"Warning: Property labels cache file not found")
     print("Run fetch_property_labels.py first to create cache\n")
 
-site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
+site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent='ShintoWikiBot/1.0 (immanuelle@shinto.miraheze.org)')
 site.login(USERNAME, PASSWORD)
 
 try:
