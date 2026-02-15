@@ -106,7 +106,8 @@
       "WebFetch(domain:shinto.miraheze.org)",
       "WebFetch(domain:evolutionism.miraheze.org)",
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" edit_evolutionism_goshuin_table_v2.py)",
-      "Bash(C:UsersImmanuelleAppDataLocalProgramsPythonPython313python.exe recreate_categories_wave3.py)"
+      "Bash(C:UsersImmanuelleAppDataLocalProgramsPythonPython313python.exe recreate_categories_wave3.py)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u:*)"
     ],
     "deny": [],
     "ask": []
