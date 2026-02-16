@@ -17,10 +17,8 @@ from html import escape
 # Handle UTF-8 encoding on Windows
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# ── Wait 1 hour before starting (wiki technical issues) ──
+# ── No delay - start immediately ───────────────────────
 import json
-print("[INFO] Waiting 1 hour before starting (scheduled delay)...", flush=True)
-time.sleep(3600)
 STATE_FILE = "shiki_list_progress.json"
 
 def load_progress():
@@ -666,20 +664,35 @@ def _dup_keys(rows, idx):
             seen.add(k)
     return dups
 
+def _build_candidate_notes(cand_q):
+    """Build notes string for a candidate (ronsha) shrine."""
+    parents = parent_shrine_links(cand_q)
+    seats = seat_quantity(cand_q)
+    designations = shrine_designation_notes(cand_q)
+    parts = []
+    if parents != "—":
+        parts.append(f"part of {parents}")
+    if seats != "single":
+        parts.append(seats)
+    if designations:
+        parts.extend(designations)
+    return ", ".join(parts) if parts else "—"
+
+
 def build_shiki_table(rows, token=None, dry=False, province=""):
     dup_qids = _dup_keys(rows, 6)
     hdr = ('{| class="wikitable sortable"\n'
            '! District !! Name !! Funding&nbsp;category '
-           '!! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB')
+           '!! Rank !! Candidates !! Notes !! Co-ords !! Shrine&nbsp;DB')
 
     lines = [hdr]
-    created_pages = {}  # Track created pages: {qid: actual_page_name}
 
     for _, prov, glob, name, kana, rank, q in rows:
         dup   = q in dup_qids
         style = _RED if dup else ''
-        cell  = lambda txt: f'|{style} {txt}'.rstrip()
+        cell  = lambda txt, s=style: f'|{s} {txt}'.rstrip()
 
+        # Parent Engishiki entry data
         url    = shrine_archive_url(q)
         dbcell = f'[{url} DB]' if url else '—'
 
@@ -690,11 +703,9 @@ def build_shiki_table(rows, token=None, dry=False, province=""):
                          '—')
         celeb_link = get_celebration_link(celeb_qid)
 
-        seats   = seat_quantity(q)
         dist    = district_name(q)
         desig   = get_designation(q)
 
-        # Merge celebration into funding category
         if celeb_link != "—" and desig != "—":
             combined_desig = f"{desig} ({celeb_link})"
         elif celeb_link != "—":
@@ -703,140 +714,50 @@ def build_shiki_table(rows, token=None, dry=False, province=""):
             combined_desig = desig
 
         rank_link = get_rank_link(rank)
-
-        # Build Notes column with parent shrine, seats, and shrine designation info
-        parents = parent_shrine_links(q)
-        seats = seat_quantity(q)
-        designations = shrine_designation_notes(q)
-        notes_parts = []
-
-        if parents != "—":
-            notes_parts.append(f"part of {parents}")
-
-        if seats != "single":
-            notes_parts.append(seats)
-
-        if designations:
-            notes_parts.extend(designations)
-
-        notes = ", ".join(notes_parts) if notes_parts else "—"
-
-        same_as = same_as_links(q)
-        coords  = coord_cell(q)
-
-        # NOTE: Shrine page creation disabled to protect existing shrine pages
-        # actual_page_name = None
-        # if token and province:
-        #     actual_page_name, status = determine_shrine_page_name(q, name, province, created_pages)
-        #
-        #     if status not in ("SKIP", "SKIP_MATCHES"):
-        #         shrine_link = build_shrine_link(q)
-        #         table_content = (
-        #             "== Shikinaisha (式内社) ==\n"
-        #             '{| class="wikitable sortable"\n'
-        #             "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
-        #             "|-\n"
-        #             f"| {escape(dist)} || {shrine_link} || {escape(combined_desig)} || {escape(rank_link)} || {escape(notes)} || {escape(same_as)} || {escape(coords)} || {escape(dbcell)}\n"
-        #             "|}"
-        #         )
-        #
-        #         try:
-        #             create_shrine_page(q, name, province, actual_page_name, table_content, token, dry)
-        #             created_pages[q] = actual_page_name
-        #         except Exception as e:
-        #             try:
-        #                 print(f"ERROR creating shrine page for {name}: {e}")
-        #             except UnicodeEncodeError:
-        #                 print(f"ERROR creating shrine page: {e}")
-
-        # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
         link = build_shrine_link(q)
 
-        lines += [
-            '|-',
-            cell(dist), cell(link),
-            cell(combined_desig), cell(rank_link),
-            cell(notes), cell(same_as), cell(coords), cell(dbcell)
-        ]
+        # Get ronsha candidates (P460 same-as)
+        candidates = same_as_qids(q)
 
-        # Add secondary rows for same-as shrines with "RONSHA" district
-        same_as_shrine_qids = same_as_qids(q)
-        for same_as_q in same_as_shrine_qids:
-            same_as_url = shrine_archive_url(same_as_q)
-            same_as_dbcell = f'[{same_as_url} DB]' if same_as_url else '—'
-
-            same_as_ent = get_entity_cached(same_as_q)
-            same_as_celeb_qid = next((c["mainsnak"]["datavalue"]["value"]["id"]
-                                      for c in same_as_ent["claims"].get("P31", [])
-                                      if c["mainsnak"]["datavalue"]["value"]["id"] in CELEB_MAP),
-                                     '—')
-            same_as_celeb_link = get_celebration_link(same_as_celeb_qid)
-
-            same_as_desig = get_designation(same_as_q)
-            if same_as_celeb_link != "—" and same_as_desig != "—":
-                same_as_combined_desig = f"{same_as_desig} ({same_as_celeb_link})"
-            elif same_as_celeb_link != "—":
-                same_as_combined_desig = same_as_celeb_link
-            else:
-                same_as_combined_desig = same_as_desig
-
-            same_as_rank = next((r["mainsnak"]["datavalue"]["value"]["id"]
-                                 for r in same_as_ent["claims"].get("P4075", [])), None)
-            same_as_rank_link = get_rank_link(same_as_rank)
-
-            same_as_parents = parent_shrine_links(same_as_q)
-            same_as_seats = seat_quantity(same_as_q)
-            same_as_designations = shrine_designation_notes(same_as_q)
-            same_as_notes_parts = []
-
-            if same_as_parents != "—":
-                same_as_notes_parts.append(f"part of {same_as_parents}")
-
-            if same_as_seats != "single":
-                same_as_notes_parts.append(same_as_seats)
-
-            if same_as_designations:
-                same_as_notes_parts.extend(same_as_designations)
-
-            same_as_notes = ", ".join(same_as_notes_parts) if same_as_notes_parts else "—"
-            same_as_same_as = same_as_links(same_as_q)
-            same_as_coords = coord_cell(same_as_q)
-
-            # NOTE: Same-as shrine page creation disabled to protect existing shrine pages
-            # same_as_name = _lbl(same_as_ent, same_as_q)
-            # same_as_actual_page_name = None
-            # if token and province:
-            #     same_as_actual_page_name, same_as_status = determine_shrine_page_name(same_as_q, same_as_name, province, created_pages)
-            #
-            #     if same_as_status not in ("SKIP", "SKIP_MATCHES"):
-            #         shrine_link = build_shrine_link(same_as_q)
-            #         table_content = (
-            #             "== Shikinaisha (式内社) ==\n"
-            #             '{| class="wikitable sortable"\n'
-            #             "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
-            #             "|-\n"
-            #             f"| RONSHA || {shrine_link} || {escape(same_as_combined_desig)} || {escape(same_as_rank_link)} || {escape(same_as_notes)} || {escape(same_as_same_as)} || {escape(same_as_coords)} || {escape(same_as_dbcell)}\n"
-            #             "|}"
-            #         )
-            #
-            #         try:
-            #             create_shrine_page(same_as_q, same_as_name, province, same_as_actual_page_name, table_content, token, dry)
-            #             created_pages[same_as_q] = same_as_actual_page_name
-            #         except Exception as e:
-            #             try:
-            #                 print(f"ERROR creating shrine page for {same_as_name}: {e}")
-            #             except UnicodeEncodeError:
-            #                 print(f"ERROR creating shrine page: {e}")
-
-            # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
-            same_as_link = build_shrine_link(same_as_q)
+        if not candidates:
+            # Firmly identified — single row, notes/coords/DB from the entry itself
+            notes  = _build_candidate_notes(q)
+            coords = coord_cell(q)
 
             lines += [
                 '|-',
-                cell('RONSHA'), cell(same_as_link),
-                cell(same_as_combined_desig), cell(same_as_rank_link),
-                cell(same_as_notes), cell(same_as_same_as), cell(same_as_coords), cell(same_as_dbcell)
+                cell(dist), cell(link),
+                cell(combined_desig), cell(rank_link),
+                cell('Firmly identified'),
+                cell(notes), cell(coords), cell(dbcell)
             ]
+        else:
+            # Has candidates — use rowspan to group them under the parent entry
+            n = len(candidates)
+
+            for i, cand_q in enumerate(candidates):
+                cand_link   = build_shrine_link(cand_q)
+                cand_notes  = _build_candidate_notes(cand_q)
+                cand_coords = coord_cell(cand_q)
+
+                if i == 0:
+                    # First candidate row carries the rowspan columns
+                    lines += [
+                        '|-',
+                        f'| rowspan="{n}" | {dist}',
+                        f'| rowspan="{n}" | {link}',
+                        f'| rowspan="{n}" | {combined_desig}',
+                        f'| rowspan="{n}" | {rank_link}',
+                        cell(cand_link),
+                        cell(cand_notes), cell(cand_coords), cell(dbcell)
+                    ]
+                else:
+                    # Subsequent candidate rows — only the per-candidate columns
+                    lines += [
+                        '|-',
+                        cell(cand_link),
+                        cell(cand_notes), cell(cand_coords), cell(dbcell)
+                    ]
 
     lines.append('|}')
     return '\n'.join(lines)
