@@ -17,8 +17,10 @@ from html import escape
 # Handle UTF-8 encoding on Windows
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# ── No delay - start immediately ───────────────────────
+# ── Wait 1 hour before starting (wiki technical issues) ──
 import json
+print("[INFO] Waiting 1 hour before starting (scheduled delay)...", flush=True)
+time.sleep(3600)
 STATE_FILE = "shiki_list_progress.json"
 
 def load_progress():
