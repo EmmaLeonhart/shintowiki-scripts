@@ -722,32 +722,30 @@ def build_shiki_table(rows, token=None, dry=False, province=""):
         same_as = same_as_links(q)
         coords  = coord_cell(q)
 
-        # Process shrine page creation and track created pages
-        actual_page_name = None
-        if token and province:
-            actual_page_name, status = determine_shrine_page_name(q, name, province, created_pages)
-
-            if status not in ("SKIP", "SKIP_MATCHES"):
-                # Build full table row with all columns using full interlanguage links
-                shrine_link = build_shrine_link(q)
-                table_content = (
-                    "== Shikinaisha (式内社) ==\n"
-                    '{| class="wikitable sortable"\n'
-                    "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
-                    "|-\n"
-                    f"| {escape(dist)} || {shrine_link} || {escape(combined_desig)} || {escape(rank_link)} || {escape(notes)} || {escape(same_as)} || {escape(coords)} || {escape(dbcell)}\n"
-                    "|}"
-                )
-
-                try:
-                    create_shrine_page(q, name, province, actual_page_name, table_content, token, dry)
-                    # Track this page as created
-                    created_pages[q] = actual_page_name
-                except Exception as e:
-                    try:
-                        print(f"ERROR creating shrine page for {name}: {e}")
-                    except UnicodeEncodeError:
-                        print(f"ERROR creating shrine page: {e}")
+        # NOTE: Shrine page creation disabled to protect existing shrine pages
+        # actual_page_name = None
+        # if token and province:
+        #     actual_page_name, status = determine_shrine_page_name(q, name, province, created_pages)
+        #
+        #     if status not in ("SKIP", "SKIP_MATCHES"):
+        #         shrine_link = build_shrine_link(q)
+        #         table_content = (
+        #             "== Shikinaisha (式内社) ==\n"
+        #             '{| class="wikitable sortable"\n'
+        #             "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
+        #             "|-\n"
+        #             f"| {escape(dist)} || {shrine_link} || {escape(combined_desig)} || {escape(rank_link)} || {escape(notes)} || {escape(same_as)} || {escape(coords)} || {escape(dbcell)}\n"
+        #             "|}"
+        #         )
+        #
+        #         try:
+        #             create_shrine_page(q, name, province, actual_page_name, table_content, token, dry)
+        #             created_pages[q] = actual_page_name
+        #         except Exception as e:
+        #             try:
+        #                 print(f"ERROR creating shrine page for {name}: {e}")
+        #             except UnicodeEncodeError:
+        #                 print(f"ERROR creating shrine page: {e}")
 
         # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
         link = build_shrine_link(q)
@@ -802,33 +800,31 @@ def build_shiki_table(rows, token=None, dry=False, province=""):
             same_as_same_as = same_as_links(same_as_q)
             same_as_coords = coord_cell(same_as_q)
 
-            # Process same-as shrine page creation and track created pages
-            same_as_name = _lbl(same_as_ent, same_as_q)
-            same_as_actual_page_name = None
-            if token and province:
-                same_as_actual_page_name, same_as_status = determine_shrine_page_name(same_as_q, same_as_name, province, created_pages)
-
-                if same_as_status not in ("SKIP", "SKIP_MATCHES"):
-                    # Build full table row with all columns (RONSHA district) using full interlanguage links
-                    shrine_link = build_shrine_link(same_as_q)
-                    table_content = (
-                        "== Shikinaisha (式内社) ==\n"
-                        '{| class="wikitable sortable"\n'
-                        "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
-                        "|-\n"
-                        f"| RONSHA || {shrine_link} || {escape(same_as_combined_desig)} || {escape(same_as_rank_link)} || {escape(same_as_notes)} || {escape(same_as_same_as)} || {escape(same_as_coords)} || {escape(same_as_dbcell)}\n"
-                        "|}"
-                    )
-
-                    try:
-                        create_shrine_page(same_as_q, same_as_name, province, same_as_actual_page_name, table_content, token, dry)
-                        # Track this page as created
-                        created_pages[same_as_q] = same_as_actual_page_name
-                    except Exception as e:
-                        try:
-                            print(f"ERROR creating shrine page for {same_as_name}: {e}")
-                        except UnicodeEncodeError:
-                            print(f"ERROR creating shrine page: {e}")
+            # NOTE: Same-as shrine page creation disabled to protect existing shrine pages
+            # same_as_name = _lbl(same_as_ent, same_as_q)
+            # same_as_actual_page_name = None
+            # if token and province:
+            #     same_as_actual_page_name, same_as_status = determine_shrine_page_name(same_as_q, same_as_name, province, created_pages)
+            #
+            #     if same_as_status not in ("SKIP", "SKIP_MATCHES"):
+            #         shrine_link = build_shrine_link(same_as_q)
+            #         table_content = (
+            #             "== Shikinaisha (式内社) ==\n"
+            #             '{| class="wikitable sortable"\n'
+            #             "! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB\n"
+            #             "|-\n"
+            #             f"| RONSHA || {shrine_link} || {escape(same_as_combined_desig)} || {escape(same_as_rank_link)} || {escape(same_as_notes)} || {escape(same_as_same_as)} || {escape(same_as_coords)} || {escape(same_as_dbcell)}\n"
+            #             "|}"
+            #         )
+            #
+            #         try:
+            #             create_shrine_page(same_as_q, same_as_name, province, same_as_actual_page_name, table_content, token, dry)
+            #             created_pages[same_as_q] = same_as_actual_page_name
+            #         except Exception as e:
+            #             try:
+            #                 print(f"ERROR creating shrine page for {same_as_name}: {e}")
+            #             except UnicodeEncodeError:
+            #                 print(f"ERROR creating shrine page: {e}")
 
             # Build the shrine link for the list table - always use build_shrine_link for full interlanguage links
             same_as_link = build_shrine_link(same_as_q)
