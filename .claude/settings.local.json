@@ -107,7 +107,12 @@
       "WebFetch(domain:evolutionism.miraheze.org)",
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" edit_evolutionism_goshuin_table_v2.py)",
       "Bash(C:UsersImmanuelleAppDataLocalProgramsPythonPython313python.exe recreate_categories_wave3.py)",
-      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u:*)"
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u:*)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"\nimport mwclient\nimport io, sys\nsys.stdout = io.TextIOWrapper\\(sys.stdout.buffer, encoding=''utf-8''\\)\n\nsite = mwclient.Site\\(''shinto.miraheze.org''\\)\nsite.login\\(''Immanuelle'', ''[REDACTED_SECRET_2]''\\)\n\n# Get first few pages from the category\ncat = site.categories[''Wikidata generated shikinaisha pages'']\ncount = 0\nfor page in cat:\n    if count >= 5:\n        break\n    text = page.text\\(\\)\n    if ''jalink'' in text.lower\\(\\):\n        print\\(f''=== {page.name} ===''\\)\n        # Print lines with jalink\n        for i, line in enumerate\\(text.split\\(''\\\\n''\\)\\):\n            if ''jalink'' in line.lower\\(\\):\n                print\\(f''  Line {i}: {line[:300]}''\\)\n        print\\(\\)\n        count += 1\n    else:\n        print\\(f''--- {page.name}: no jalink found''\\)\n\")",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" replace_jalink_with_ill.py)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"\nimport mwclient\nhelp\\(mwclient.Site.__init__\\)\n\")",
+      "Bash(git push:*)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u update_shikinaisha_lists_v3.py)"
     ],
     "deny": [],
     "ask": []
