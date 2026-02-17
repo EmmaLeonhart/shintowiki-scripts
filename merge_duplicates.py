@@ -1,115 +1,118 @@
+#!/usr/bin/env python3
 """
-merge_duplicate_translations_bot.py
-===================================
-
-For each jawiki backlink page title in pages.txt:
- 1. Load the page (which should list exactly two local pages as numbered links: `# [[PageA]]`, `# [[PageB]]`).
- 2. If exactly two, treat the first as primary, second as duplicate.
- 3. Fetch both pages' content from Shinto wiki.
- 4. Append the duplicate's content under a heading "==Merged second translation==" to the primary.
- 5. Add [[Category:Merged pages]] to the end of the merged content.
- 6. Save the primary page with a summary noting the merge from the duplicate and reason.
- 7. Replace the duplicate page with a redirect to the primary (no other content).
-
-Usage:
-  - List jawiki target page titles (the ones whose backlink pages you generated) in pages.txt
-  - Configure credentials below
-  - Run: python merge_duplicate_translations_bot.py
+merge_duplicates.py
+===================
+Reads qid_duplicates.csv (QID, Page1, Page2).
+For each row:
+1. Append to Page1: {{moved from|Page2}} + "==merged content==\n" + Page2's content
+2. Replace Page2 with: {{moved to|Page1}} + #REDIRECT [[Page1]]
+3. Overwrite QID redirect to point to Page1
 """
-import os
-import sys
-import re
-import time
+
+import csv, time, io, sys
 import mwclient
 from mwclient.errors import APIError
 
-# ─── CONFIGURATION ────────────────────────────────────────────────
-PAGES_FILE   = 'pages.txt'      # list of backlink pages to process
-WIKI_HOST    = 'shinto.miraheze.org'
-WIKI_PATH    = '/w/'
-USERNAME     = 'Immanuelle'
-PASSWORD     = '[REDACTED_SECRET_1]'
-THROTTLE     = 1.0              # seconds between operations
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# ─── UTILITIES ────────────────────────────────────────────────────
-def load_pages(path):
-    if not os.path.exists(path):
-        open(path, 'w', encoding='utf-8').close()
-        print(f"Created empty {path}; add titles and re-run.")
-        sys.exit(0)
-    with open(path, 'r', encoding='utf-8') as f:
-        return [ln.strip() for ln in f if ln.strip() and not ln.startswith('#')]
+WIKI_URL = "shinto.miraheze.org"
+WIKI_PATH = "/w/"
+USERNAME = "Immanuelle"
+PASSWORD = "[REDACTED_SECRET_2]"
+THROTTLE = 1.5
+CSV_FILE = "qid_duplicates.csv"
 
-# ─── MAIN ────────────────────────────────────────────────────────
-def main():
-    pages = load_pages(PAGES_FILE)
-    site = mwclient.Site(WIKI_HOST, path=WIKI_PATH)
-    site.login(USERNAME, PASSWORD)
-    print(f"Logged in as {USERNAME}")
+site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
+                     clients_useragent='MergeDuplicatesBot/1.0 (User:Immanuelle; shinto.miraheze.org)')
+site.login(USERNAME, PASSWORD)
+print(f"Logged in as {USERNAME}", flush=True)
 
-    # regex to extract numbered backlinks: lines like '# [[PageName]]'
-    BACKLINK_RE = re.compile(r'^# \[\[([^\]]+)\]\]', re.MULTILINE)
+print("=" * 70, flush=True)
+print("MERGE DUPLICATE QID PAGES", flush=True)
+print("=" * 70, flush=True)
 
-    for title in pages:
-        print(f"Processing backlink list [[{title}]]...")
-        page = site.pages[title]
-        try:
-            text = page.text()
-        except Exception as e:
-            print(f"  ! Failed to fetch [[{title}]]: {e}")
+with open(CSV_FILE, 'r', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    rows = list(reader)
+
+total = 0
+merged = 0
+errors = 0
+
+for row in rows:
+    if len(row) < 3:
+        continue
+    qid, page1_name, page2_name = row[0].strip(), row[1].strip(), row[2].strip()
+
+    if qid.upper() == "QID":
+        continue
+
+    total += 1
+    print(f"\n[{total}] {qid}: [[{page1_name}]] <- [[{page2_name}]]", flush=True)
+
+    try:
+        p1 = site.pages[page1_name]
+        p2 = site.pages[page2_name]
+
+        if not p1.exists:
+            print(f"  ! Page1 [[{page1_name}]] does not exist, skipping", flush=True)
+            errors += 1
             continue
 
-        matches = BACKLINK_RE.findall(text)
-        if len(matches) != 2:
-            print(f"  – Expected 2 backlinks, found {len(matches)}; skipping.")
+        if not p2.exists:
+            print(f"  ! Page2 [[{page2_name}]] does not exist, skipping", flush=True)
+            errors += 1
             continue
 
-        primary_name, duplicate_name = matches
-        primary_page   = site.pages[primary_name]
-        duplicate_page = site.pages[duplicate_name]
+        text1 = p1.text()
+        text2 = p2.text()
+    except Exception as e:
+        print(f"  ! Error reading pages: {e}", flush=True)
+        errors += 1
+        continue
 
-        # fetch contents
-        try:
-            primary_text = primary_page.text()
-        except Exception as e:
-            print(f"  ! Could not load [[{primary_name}]]: {e}")
-            continue
-        try:
-            dup_text = duplicate_page.text()
-        except Exception as e:
-            print(f"  ! Could not load [[{duplicate_name}]]: {e}")
-            dup_text = ''
+    # Step 1: Update Page1 - append moved from + merged content
+    new_text1 = text1.rstrip() + "\n\n"
+    new_text1 += f"{{{{moved from|{page2_name}}}}}\n"
+    new_text1 += "==merged content==\n"
+    new_text1 += text2.rstrip() + "\n"
 
-        # build merged content
-        merged = primary_text.rstrip() + "\n\n==Merged second translation==\n" + dup_text.rstrip() + "\n\n[[Category:Merged pages]]\n"
+    try:
+        p1.save(new_text1, summary=f"Bot: merge content from [[{page2_name}]]")
+        print(f"  + Updated [[{page1_name}]]", flush=True)
+    except Exception as e:
+        print(f"  ! Error saving Page1: {e}", flush=True)
+        errors += 1
+        continue
 
-        # save merged primary
-        summary = (f"Bot: merge duplicate translation from [[{duplicate_name}]] into [[{primary_name}]]; "
-                   "accidental double translation")
-        try:
-            primary_page.save(merged, summary=summary)
-            print(f"  ✓ Merged into [[{primary_name}]]")
-        except APIError as e:
-            print(f"  ! APIError saving [[{primary_name}]]: {e.code}")
-            continue
-        except Exception as e:
-            print(f"  ! Error saving [[{primary_name}]]: {e}")
-            continue
+    time.sleep(THROTTLE)
 
-        # blank & redirect the duplicate page
-        redirect_text = f"#redirect [[{primary_name}]]\n"
-        try:
-            duplicate_page.save(redirect_text,
-                                summary=f"Bot: redirect duplicated translation to [[{primary_name}]]")
-            print(f"  ✓ Redirected [[{duplicate_name}]] → [[{primary_name}]]")
-        except APIError as e:
-            print(f"  ! APIError redirecting [[{duplicate_name}]]: {e.code}")
-        except Exception as e:
-            print(f"  ! Error redirecting [[{duplicate_name}]]: {e}")
+    # Step 2: Replace Page2 with moved to + redirect
+    new_text2 = f"{{{{moved to|{page1_name}}}}}\n#REDIRECT [[{page1_name}]]"
 
-        time.sleep(THROTTLE)
+    try:
+        p2.save(new_text2, summary=f"Bot: redirect to [[{page1_name}]] (merged)")
+        print(f"  + Redirected [[{page2_name}]] -> [[{page1_name}]]", flush=True)
+    except Exception as e:
+        print(f"  ! Error saving Page2: {e}", flush=True)
+        errors += 1
+        continue
 
-    print("All done.")
+    time.sleep(THROTTLE)
 
-if __name__ == '__main__':
-    main()
+    # Step 3: Overwrite QID redirect to point to Page1
+    qid_page = site.pages[qid]
+    redirect_text = f"#REDIRECT [[{page1_name}]]"
+
+    try:
+        qid_page.save(redirect_text, summary=f"Bot: redirect {qid} -> [[{page1_name}]]")
+        print(f"  + {qid} -> [[{page1_name}]]", flush=True)
+    except Exception as e:
+        print(f"  ! Error saving QID redirect: {e}", flush=True)
+
+    time.sleep(THROTTLE)
+    merged += 1
+
+print("\n" + "=" * 70, flush=True)
+print(f"DONE - {total} pairs processed, {merged} merged, {errors} errors", flush=True)
+print("=" * 70, flush=True)

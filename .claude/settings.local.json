@@ -113,7 +113,10 @@
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"\nimport mwclient\nhelp\\(mwclient.Site.__init__\\)\n\")",
       "Bash(git push:*)",
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u update_shikinaisha_lists_v3.py)",
-      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/create_qid_redirects.py\")"
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/create_qid_redirects.py\")",
+      "Bash(test:*)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/merge_duplicates.py\")",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/fix_ill_destinations.py\")"
     ],
     "deny": [],
     "ask": []
