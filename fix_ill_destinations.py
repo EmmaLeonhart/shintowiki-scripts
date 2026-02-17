@@ -90,7 +90,7 @@ ILL_RE = re.compile(r'\{\{ill\|([^{}]*)\}\}', re.IGNORECASE)
 
 
 def fix_ill(match):
-    """Fix a single {{ill|...}} match."""
+    """Fix a single {{ill|...}} match by setting |1=DESTINATION and not touching positional params."""
     inner = match.group(1)
     params = inner.split('|')
 
@@ -113,20 +113,38 @@ def fix_ill(match):
         for p in params:
             if p.strip().startswith('lt='):
                 last_lt = p.strip()[3:]
-        if last_lt:
-            resolved = last_lt
-        else:
-            resolved = wd_qid  # Final fallback: the QID itself
+        resolved = last_lt if last_lt else wd_qid
 
-    # Set first positional parameter
-    if params and '=' not in params[0]:
-        # First param is already positional — replace it
-        if params[0].strip() == resolved:
-            return match.group(0)  # Already correct, skip
-        params[0] = resolved
-    else:
-        # First param is named (e.g. lt=...), insert destination at front
-        params.insert(0, resolved)
+    # Helper to detect named params like "foo=bar"
+    def is_named_param(s: str) -> bool:
+        s = s.strip()
+        if '=' not in s:
+            return False
+        # treat leading "=" or empty name as not-a-param
+        name = s.split('=', 1)[0].strip()
+        return bool(name)
+
+    # Update/insert named parameter 1= without touching positional params
+    changed = False
+    found_1 = False
+
+    for i, p in enumerate(params):
+        ps = p.strip()
+        if ps.lower().startswith('1='):
+            found_1 = True
+            current = ps.split('=', 1)[1]
+            if current != resolved:
+                params[i] = f'1={resolved}'
+                changed = True
+            break
+
+    if not found_1:
+        # Append at end to avoid disturbing positional ordering
+        params.append(f'1={resolved}')
+        changed = True
+
+    if not changed:
+        return match.group(0)
 
     return '{{ill|' + '|'.join(params) + '}}'
 
