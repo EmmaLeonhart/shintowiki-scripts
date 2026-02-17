@@ -1,33 +1,33 @@
-Q11451877,Munakata Shrine (Kyoto),Munakata Shrine (Imperial Palace)
-Q11516023,Tsukiyomi-no-Miya (Geku),Tsukiyomi-no-Miya (Gekū)
-Q11516220,Tsukiyomi-no-Miya (Naiku),Tsukiyomi-no-Miya (Naikū)
+Q11451877,Munakata Shrine (Imperial Palace),Munakata Shrine (Kyoto)
+Q11516023,Tsukiyomi-no-Miya (Gekū),Tsukiyomi-no-Miya (Geku)
+Q11516220,Tsukiyomi-no-Miya (Naikū),Tsukiyomi-no-Miya (Naiku)
 Q11566947,Honoo-Honome Shrine,Hinokuma Hime Shrine
 Q123118312,Iwai Shrine (Izumozaki),Ishii Shrine (Izumozaki)
-Q135038839,Futonotono Shrine,"Mori Shrine (Tenri
+Q135038839,Futonotono Shrine,"Mori Shrine (Tenri, Nara)"
 Q135038992,Hase-Yamaguchi-Niimasu Shrine,Hasenoyamakuchi Shrine
 Q135039013,Higashiohotani-Hime-no-Mikoto Shrine,Higashiohotanihimenomikoto Shrine
-Q135039571,Hahiho Shrine,Haihō Shrine
+Q135039571,Haihō Shrine,Hahiho Shrine
 Q135040229,Okami Shrine,Okami Shrine (Q135040229)
 Q135040443,Tsuno Shrine,Tsuno Shrine (Q135040443)
 Q135041162,Nishino Shrine,Nishino Shrine (Q135041162)
 Q135068802,Itata Shrine,Itata Shrine (Otagi district)
 Q135069106,Tsuruginushi Shrine (Uda district),Tsurugishushin Shrine (Uda district)
 Q135069137,Shitai Shrine (Asago),Shitawi Shrine (Asago)
-Q135069162,Jouguuko Shrine,Jōgūko Shrine
+Q135069162,Jōgūko Shrine,Jouguuko Shrine
 Q135069380,Rokusho Shrine,Rokusho Shrine (Q135069380)
-Q135069437,Yamanokami,Yama‑no‑Kami Shrine (Q135069437)
+Q135069437,Yama‑no‑Kami Shrine (Q135069437),Yamanokami
 Q135069438,Hachiōji Shrine,Hachiōji Shrine (Q135069438)
-Q135069448,Minamishikyuu,Nanako‑no‑Miya Shrine
+Q135069448,Nanako‑no‑Miya Shrine,Minamishikyuu
 Q135069520,Anazawa Tenjin Shrine,Anazawa Tenjin Shrine (Ronsha 1)
 Q135069593,Tenmangū,Tenmangū (Q135069593)
 Q135069666,Hiyoshi Shrine (Nagahama),Hiyoshi Shrine (Q135069666)
 Q135069809,Ogawa Hachiman Shrine,Ogawahachimanguu
 Q135069848,Munakata Shrine,Munakata Shrine (Utsunomiya)
 Q135069876,Taka Shrine,Taka Shrine (Q135069876)
-Q135069895,Wakasahimegami Shrine,Wakasa-hime Shrine
+Q135069895,Wakasa-hime Shrine,Wakasahimegami Shrine
 Q135069905,Aniko Shrine,Anikogami Shrine
-Q135070060,Koukinemurataiheishushin Shrine,Saraki-mura Hyozu Shrine
-Q135070066,Anakengoukoshudainamabuheishushin Shrine,Anamigo Toshunushi Ōube Hyoju Shrine
+Q135070060,Saraki-mura Hyozu Shrine,Koukinemurataiheishushin Shrine
+Q135070066,Anamigo Toshunushi Ōube Hyoju Shrine,Anakengoukoshudainamabuheishushin Shrine
 Q135070098,Sai Takamori Shrine,Saitakamamorigami Shrine
 Q135070120,Tarumi Shrine,Tarumi Shrine (Q135070120)
 Q135070152,Kokubun-ji Hekireki Shrine,Kokubunji Hekireki Shrine
@@ -40,7 +40,7 @@ Q135070328,Kanno Shrine (Kagawa),Kanno Shrine (Q135070328)
 Q135070330,Unki Hachimangū,Unkihachimanguu
 Q135070353,Higashikirishima Shrine,Tsumakirishima Shrine
 Q135099008,Dōsha-ni-imasu Hiiwaya-hiko Shrine,Hiinohayahikono Shrine
-Q135186187,Ōmi Shrine,"Ōmi Shrine (Nakami
+Q135186187,Ōmi Shrine,"Ōmi Shrine (Nakami, Meiwa Town)"
 Q135186243,Location Unknown,Unknown Shrine Location
 Q135186443,Inaba Shrine (Ise),Inaba Shrine (Q135186443)
 Q135186649,Kawamata Shrine,Kawamata Shrine (Q135186649)
@@ -51,20 +51,16 @@ Q135190182,Nomi Shrine,Nomi Shrine (Q135190182)
 Q135192866,Nago Shrine (Mikojima),Nanko Shrine (Mikojima)
 Q135192867,Nago Shrine,Nanko Shrine
 Q135193246,Kanasakura Shrine,Kanasakura Shrine (Q135193246)
-Q135193470,Sahahano Jigi Shrine (Nida Shrine),Sawawachigi Shrine (Nida Shrine)
-Q135193471,Sahahano Jigi Shrine (Ōtsu Town),Sawawachigi Shrine (Ōtsu Town)
-Q135194226,Ogawa Shrine,"Ogawa Shrine (Setogawa
+Q135193470,Sawawachigi Shrine (Nida Shrine),Sahahano Jigi Shrine (Nida Shrine)
+Q135193471,Sawawachigi Shrine (Ōtsu Town),Sahahano Jigi Shrine (Ōtsu Town)
+Q135194226,Ogawa Shrine,"Ogawa Shrine (Setogawa, Ogawa Village)"
 Q135194292,Futarasan Shrine Chūgū-shi,Nikkō Futaarasan Shrine Chūgūshi branch Shrine
 Q135195066,Kinpu Shrine,Kinpu Shrine (Q135195066)
-Q135195189,Date Shrine (Q135195189),"Date Shrine (Utsunecho
+Q135195189,"Date Shrine (Utsunecho, Kameoka)",Date Shrine (Q135195189)
 Q135195233,Tenman Shrine,Tenman Shrine (Q135195233)
-Q135200437,Ginzan Shrine (Q135200437),Ginzan Shrine (Tsushima)
-Q136890160,Q136890160,Unknown Shrine (Q136890160)
-Q136890168,Q136890168,Unknown Shrine (Q136890168)
-Q136890171,Q136890171,Unknown Shrine (Q136890171)
+Q135200437,Ginzan Shrine (Tsushima),Ginzan Shrine (Q135200437)
 Q372380,Katori Jingū,Katori Jingu
 Q48759404,Take Minato Shrine,Tagimitonotoya Shrine
 Q704622,Kirishima Jingū,Kirishima Jingu
 Q704695,Kagoshima Jingū,Kagoshima Shrine
 Q706499,Kashima Jingū,Kashima Jingu
-QID,Page1,Page2
