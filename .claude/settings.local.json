@@ -112,7 +112,8 @@
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" replace_jalink_with_ill.py)",
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"\nimport mwclient\nhelp\\(mwclient.Site.__init__\\)\n\")",
       "Bash(git push:*)",
-      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u update_shikinaisha_lists_v3.py)"
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u update_shikinaisha_lists_v3.py)",
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/create_qid_redirects.py\")"
     ],
     "deny": [],
     "ask": []
