@@ -33,11 +33,16 @@ WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
 PASSWORD  = '[REDACTED_SECRET_2]'
+BOT_USER_AGENT = "ImmanuelleCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)"
 
 # Wait 30 minutes at startup to avoid race conditions
 STARTUP_WAIT = 30 * 60  # 30 minutes in seconds
 
-site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
+site = mwclient.Site(
+    WIKI_URL,
+    path=WIKI_PATH,
+    clients_useragent=BOT_USER_AGENT,
+)
 site.login(USERNAME, PASSWORD)
 
 # Retrieve username in a way that works on all mwclient versions
@@ -132,9 +137,7 @@ def query_wikipedia_for_wikidata(lang_code, category_title):
             "prop": "pageprops",
             "format": "json"
         }
-        headers = {
-            "User-Agent": "WikidataBot/1.0 (https://shinto.miraheze.org/; bot for adding wikidata links)"
-        }
+        headers = {"User-Agent": BOT_USER_AGENT}
         response = requests.get(url, params=params, headers=headers, timeout=10)
         response.raise_for_status()
         data = response.json()

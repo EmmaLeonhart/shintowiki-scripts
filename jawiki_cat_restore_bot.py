@@ -17,11 +17,12 @@ JA_URL       = "ja.wikipedia.org"
 JA_PATH      = "/w/"
 
 USERNAME     = "Immanuelle"
-PASSWORD     = "[REDACTED_SECRET_1]"
+PASSWORD     = "[REDACTED_SECRET_2]"
 
-PAGES_FILE   = "pages.txt"
+SOURCE_CATEGORY = "Pages linked to Wikidata"
 THROTTLE     = 0.1
 WD_API       = "https://www.wikidata.org/w/api.php"
+BOT_USER_AGENT = "ImmanuelleCategoryBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)"
 
 TAG_EXISTING = "Existing categories confirmed with Wikidata"
 TAG_EN_NEW   = "Categories created from enwiki title"
@@ -30,19 +31,25 @@ TAG_REDIRECT = "jawiki redirect categories"
 TIER2_CAT    = "Tier 3 Categories]][[Category:Tier 1 Categories"            # <- new
 
 # ─── MW SESSIONS ────────────────────────────────────────────────────
-shinto = mwclient.Site(SHINTO_URL, path=SHINTO_PATH)
+shinto = mwclient.Site(
+    SHINTO_URL,
+    path=SHINTO_PATH,
+    clients_useragent=BOT_USER_AGENT,
+)
 shinto.login(USERNAME, PASSWORD)
-ja     = mwclient.Site(JA_URL, path=JA_PATH)           # read-only
+ja     = mwclient.Site(
+    JA_URL,
+    path=JA_PATH,
+    clients_useragent=BOT_USER_AGENT,
+)           # read-only
 
 print(f"Logged in to {SHINTO_URL} as {USERNAME}")
 
 # ─── UTILS ──────────────────────────────────────────────────────────
-def load_titles(path: str) -> List[str]:
-    if not os.path.exists(path):
-        print(f"Missing {path}")
-        sys.exit(1)
-    with open(path, encoding="utf-8") as fh:
-        return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
+def load_titles_from_source_category(site: mwclient.Site, category_name: str) -> List[str]:
+    cat_page = site.pages[f"Category:{category_name}"]
+    members = [p.name for p in cat_page.members() if p.namespace == 0]
+    return members
 
 ILL_JA_RE = re.compile(r"\[\[\s*ja:([^|\]]+)", re.I)
 
@@ -73,10 +80,17 @@ def ja_cat_qid(ja_cat: str) -> Optional[str]:
 def wd_sitelinks(qid: str) -> Dict[str,str]:
     if not qid:
         return {}
-    j = requests.get(WD_API, params={
-        "action":"wbgetentities","format":"json",
-        "ids":qid,"props":"sitelinks"
-    }, timeout=30).json()
+    j = requests.get(
+        WD_API,
+        params={
+            "action": "wbgetentities",
+            "format": "json",
+            "ids": qid,
+            "props": "sitelinks",
+        },
+        headers={"User-Agent": BOT_USER_AGENT},
+        timeout=30,
+    ).json()
     sl = j.get("entities",{}).get(qid,{}).get("sitelinks",{})
     return {code[:-4]: info["title"].split(":",1)[-1]
             for code,info in sl.items() if code.endswith("wiki")}
@@ -209,7 +223,9 @@ def add_category_to_article(article: str, cat_full: str):
 
 # ─── MAIN LOOP ──────────────────────────────────────────────────────
 def main():
-    arts = load_titles(PAGES_FILE)
+    print(f"Loading pages from [[Category:{SOURCE_CATEGORY}]]")
+    arts = load_titles_from_source_category(shinto, SOURCE_CATEGORY)
+    print(f"Found {len(arts)} pages")
     for idx, art in enumerate(arts, 1):
         print(f"\n{idx}/{len(arts)} → [[{art}]]")
         art_pg = shinto.pages[art]

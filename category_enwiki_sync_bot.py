@@ -48,32 +48,46 @@ from mwclient.errors import APIError
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_1]"
-CATS_FILE  = "categories.txt"
+PASSWORD   = "[REDACTED_SECRET_2]"
+SOURCE_CATEGORY = "Pages linked to Wikidata"
 THROTTLE   = 0.4    # seconds between edits
 
 API_WD     = "https://www.wikidata.org/w/api.php"
+BOT_USER_AGENT = "ImmanuelleCategoryBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)"
 
 LANG_WIKIS = {
-    "ja": mwclient.Site("ja.wikipedia.org", path="/w/"),
-    "de": mwclient.Site("de.wikipedia.org", path="/w/"),
+    "ja": mwclient.Site("ja.wikipedia.org", path="/w/", clients_useragent=BOT_USER_AGENT),
+    "de": mwclient.Site("de.wikipedia.org", path="/w/", clients_useragent=BOT_USER_AGENT),
 }
 
 # ─── UTILITY -------------------------------------------------------
 
-def load_cat_titles(path: str) -> List[str]:
-    if not os.path.exists(path):
-        print(f"Missing {path}")
-        sys.exit(1)
-    with open(path, encoding="utf-8") as fh:
-        return [ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")]
+PAGE_CAT_RE = re.compile(r"\[\[\s*Category:([^\]|]+)", re.I)
+
+def categories_from_wikidata_linked_pages(site: mwclient.Site, category_name: str) -> List[str]:
+    source = site.pages[f"Category:{category_name}"]
+    members = [p for p in source.members() if p.namespace == 0]
+    found = set()
+    for page in members:
+        try:
+            text = page.text()
+        except Exception:
+            continue
+        for m in PAGE_CAT_RE.finditer(text):
+            found.add(m.group(1).strip())
+    return sorted(found)
 
 
 IW_RE = re.compile(r"\[\[\s*(ja|de)\s*:\s*Category:([^\]|]+)", re.I)
 
 
 def api_json(url: str, params):
-    r = requests.get(url, params=params, timeout=10)
+    r = requests.get(
+        url,
+        params=params,
+        headers={"User-Agent": BOT_USER_AGENT},
+        timeout=10,
+    )
     r.raise_for_status()
     return r.json()
 
@@ -191,11 +205,17 @@ def process_category(site: mwclient.Site, cat_title: str):
 # ─── RUNNER --------------------------------------------------------
 
 def main():
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
+    site = mwclient.Site(
+        WIKI_URL,
+        path=WIKI_PATH,
+        clients_useragent=BOT_USER_AGENT,
+    )
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
-    cats = load_cat_titles(CATS_FILE)
+    print(f"Loading categories from pages in [[Category:{SOURCE_CATEGORY}]]")
+    cats = categories_from_wikidata_linked_pages(site, SOURCE_CATEGORY)
+    print(f"Found {len(cats)} categories on those pages")
     for idx, title in enumerate(cats, 1):
         print(f"{idx}/{len(cats)} → Category:{title}")
         process_category(site, title)
