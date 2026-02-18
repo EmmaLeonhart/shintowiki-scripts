@@ -26,8 +26,13 @@ WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME  = 'Immanuelle'
 PASSWORD  = '[REDACTED_SECRET_2]'
+BOT_USER_AGENT = "ImmanuelleInterwikiBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)"
 
-site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
+site = mwclient.Site(
+    WIKI_URL,
+    path=WIKI_PATH,
+    clients_useragent=BOT_USER_AGENT,
+)
 site.login(USERNAME, PASSWORD)
 
 # Retrieve username in a way that works on all mwclient versions
