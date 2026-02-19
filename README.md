@@ -55,3 +55,5 @@ python shinto_miraheze/resolve_category_wikidata_from_interwiki.py
 
 - [VISION.md](VISION.md) — full architecture plan and future direction
 - [SCRIPTS.md](SCRIPTS.md) — catalog of all scripts with status
+- [API.md](API.md) — how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
+- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) — page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
