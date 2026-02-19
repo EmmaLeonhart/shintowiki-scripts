@@ -274,10 +274,17 @@ def main():
 
     print(f"Starting category namespace processing at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
+    import sys as _sys
+    start_title = _sys.argv[1] if len(_sys.argv) > 1 else None
+
     # Get all pages in Category namespace (namespace 14)
     print("Fetching all pages in Category namespace...")
     try:
-        category_pages = site.allpages(namespace=14, limit=None)
+        kwargs = {"namespace": 14, "limit": None}
+        if start_title:
+            kwargs["start"] = start_title
+            print(f"Starting from: {start_title!r}")
+        category_pages = site.allpages(**kwargs)
     except Exception as e:
         print(f"ERROR: Could not fetch category pages – {e}")
         return
