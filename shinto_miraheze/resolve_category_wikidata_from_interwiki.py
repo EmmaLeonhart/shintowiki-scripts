@@ -61,7 +61,7 @@ except Exception:
 INTERWIKI_RE = re.compile(r'\[\[([a-z]{2,3}):([^\]]+)\]\]')
 
 # Match existing {{wikidata link|Q...}} templates
-WIKIDATA_TEMPLATE_RE = re.compile(r'{{wikidata link\|([Qq](\d+))}}')
+WIKIDATA_TEMPLATE_RE = re.compile(r'{{wikidata link\|([Qq](\d+))}}', re.IGNORECASE)
 
 # Match category links
 CATEGORY_RE = re.compile(r'\[\[Category:([^\]]+)\]\]')

@@ -116,7 +116,10 @@
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/create_qid_redirects.py\")",
       "Bash(test:*)",
       "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/merge_duplicates.py\")",
-      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/fix_ill_destinations.py\")"
+      "Bash(\"C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -u \"C:/Users/Immanuelle/Documents/Github/wikibot/fix_ill_destinations.py\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(git -C \"C:/Users/[REDACTED_USER_1]/Documents/GitHub/order.life\" log --oneline -5)"
     ],
     "deny": [],
     "ask": []
