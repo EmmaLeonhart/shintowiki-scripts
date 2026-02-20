@@ -1,5 +1,7 @@
 This file exists just to add notes when on the go that claude can use later
 
-added the Qq]]{{moveto|UNESCO Culture and NATURE}} (sorry cursor issues) {{moveto|X}} template for tryning to minimize moves before history import
+added the {{moveto|X}} template for tryning to minimize moves before history import
 
 oh and also pretty much every module might need a refresh from wikipedia since a lot of them got crud in them and there are few if any custom modules except for calculating Japanese calendar dates
+
+Also I am not sure if either script properly did to completion but both are safe to restart, both of the scripts we ran today
