@@ -1,0 +1,1018 @@
+{{Autoarchive resolved section
+|age=1
+|archive='Wikidata talk:WikiProject Shinto/Archive/((year))/((month:##))'
+|show=yes
+}}
+{{User:Hazard-Bot/Archiver
+|archive = Wikidata talk:WikiProject Shinto/Archive/%(year)d/%(month)02d
+|algo = old(90d)
+|counter = 1
+|archiveheader = {{Archive}}
+}}
+{{Discussion navigation}}
+{{archives|search=yes}}
+
+== discussion ( single Heian as multiplel modern ) ==
+
+:One issue that I encountered was that during the database import, we often ended up with parts of different shrines getting entered as Ronsha due to a lack of consistent database stuff there. So we have to keep that in mind and manually change some like that. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:03, 2 November 2025 (UTC)
+
+:{{q|Q135041484}} is one such example, and a confusing one to me at that. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:07, 2 November 2025 (UTC)
+
+== Explanation ==
+
+This consolidates a large amount of conversations across many pages. We are doing this because discussion of Engishiki Ontology has been very difficult and conversations frequently ended up prematurely archived. Doing it across many nested sub conversations has been very frustrating.
+ 
+The conversations immediately below this comes from [[Wikidata_talk:WikiProject_Religions]] after the page became dominated by our discussion. Feel free to move any other conversations here, especially when we are starting out. And obviously we can talk in any language and likely will be doing a heavy overlap of Japanese and English here. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:01, 2 December 2025 (UTC)
+
+:New content proper starts at [[#Beginning of new content]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+::Anyone is free to move more threads here [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:37, 5 December 2025 (UTC)
+:::This thread is one I chose not to move here since it has minimal ontology discussion, but if someone wants to consolidate it to here then they are welcome [[Wikidata:Project_chat/Archive/2025/09#I_am_implementing_近代社格_(P13723)_with_quickstatements]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:26, 6 December 2025 (UTC)
+::::While I think we will need archiving someday, I have disabled it until we can be sure it will not archive anything prematurely. At least 90 days is necessary, I think 180 might be best. Fighting premature archiving is the point of this page. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:32, 9 December 2025 (UTC)
+:::::We have hopefully managed to fix it again at 90 days. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:47, 9 December 2025 (UTC)
+:As per [[#Proposed automatic edits]] our current policy is to wait at least a week between proposing something here, and doing a proper bot request. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:51, 14 December 2025 (UTC)
+:For someone having difficulty with understanding things. The bulk of the discussion here is about a problematic import that was done in July of 2025. You can see discussions that occurred during the import [[#Content from Talk:Engishiki Jinmyōchō|here]] and discussion of the ontology of the imports [[#Ontology insights|here]] and [[#Background on import issues|here]] and the most comprehensive explanation of the import process [[#Some questions|here]]. Most of the other discussion is more topic focused on smaller things, and not as comprehensive. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:18, 21 December 2025 (UTC)
+:The main questions we need to address now are 
+:# [[#Ontology insights|How do we resolve the issues with the Kokugakuin Unversity id]]
+:# [[#Properties on Ronshas that we could remove|Which properties do we keep on Ronshas vs keep only on the disputed Shikinaisha]]
+:# [[#Cleaning up Engishiki kana|What do we do with the imported Old Japanese kana readings which do not come from the source jawiki attributes them to]]
+:# [[#Labels of Disputed Shikinaisha in non CJK languages|How do we label historical shrines which do not have a clear modern identification, do we use the old Japanese or modernized Japanese]]
+:# [[#Language coverage for shrines|How do we generally expand labels of shrines across many languages]]
+:# [[#Duplicate properties|How do we deal with duplicated properties from import errors]]
+:[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:42, 21 December 2025 (UTC)
+
+== Engishiki Shrine entries ==
+
+Note: This conversation and everything below it until [[#Proposed automatic edits]] was originally taken from [[Wikidata talk:WikiProject Religions]]. As there was a table structure, the headings are a bit off and likely need some editing. But I am normalizing the headings. The conversation immediately below was a note about the moving of the topic from a different chat.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:50, 2 December 2025 (UTC)
+
+Note: Entire conversation moved from here [[Wikidata:井戸端]]. I have struggled in the past with communication with the Japanese community here. And a Japanese ip user started a conversation on this to try to help me. However they did it in the wrong place and it ran into issues. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 1 November 2025 (UTC)
+:Immanuelle-san are being criticized for the Japanese community, but the original discussion took place on [[Wikidata:Project_chat#Structure_of_Engishiki_Shrine_entries]]. The mistake of posting in the wrong forum was caused by '''the single IP user''', not by the Japanese community.
+:In the past, Immanuelle-san has posted similar discussion in various places. The following are related discussions.
+:* [[Wikidata:Property_proposal/Source_Shrine]]
+:* [[User_talk:Immanuelle#Some_questions]]
+:* [[Wikidata:Project_chat/Archive/2025/09#I_am_implementing_近代社格_(P13723)_with_quickstatements]]
+:Furthermore, I should menstion that Immanuelle-san has repeatedly low-quality edits to shrine-related items in the past. While I think eastablishing guidelines for shrine items is a good idea, I cannot agree if low-quality edits continues to be made again. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:54, 2 November 2025 (UTC)
+::I hope that I have established by my actions, if not by my words that I am holding myself to a higher standard of editing here now. Having changed my editing style significantly from then. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:50, 2 November 2025 (UTC)
+:Thank you very very mach for relocating my opinion here. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 21:33, 9 November 2025 (UTC)
+
+== Original table / 延喜式神名帳の神社の項目について ==
+
+The subsequent few sections were substantially easier to understand if you view them in their original table format here https://www.wikidata.org/w/index.php?title=Wikidata_talk:WikiProject_Religions&oldid=2424387831#Engishiki_Shrine_entries [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:34, 2 December 2025 (UTC)
+
+As I have found the next sections are borderline incomprehensible without the table. I am including it here from this area https://www.wikidata.org/w/index.php?title=Wikidata_talk:WikiProject_Religions&direction=prev&oldid=2432380415 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:16, 6 December 2025 (UTC)
+
+
+{| class="wikitable"
+|-
+! Number !! Japanese !! English
+|-
+|1
+| この表は「平安時代の神社と、現代の神社が、１対複数で対応する場合」のデータ構成（の案）について、記入・議論する場所とします。  ( どなたか、英語欄を、より良い英訳に書き換えていただければ、有難いです )
+| Please fill in this table the opinions about data-structures in case of one Heian-period shrine identified two or more modern day shrines.  ( Please someone rewrite to better English sentence. )
+|-
+|1-1
+| 平安時代のことがらと、現代の（および現代につながる江戸時代などの）ことがらを、混ぜないこと。平安時代の神社の項目と、現代の神社の項目をつなげるためには、{{P|P460}}を使うこと。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+| Don't mix the item for modern era shrine with the item for Heian-period shrine. Use {{P|P460}} to connect them. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+|-
+|1-1-1
+| 現代の神社の例を一つ作りました。[[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 東京都八王子市の天満社Q11442850]] この差分で Deprecated rank に変わった部分は、除去すべきだと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+| I made an example as modern era shrine at the item of [[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 (Q11442850)  Tenmansha in Hachiōji, Tokyo]]. The deprecated rank sentence must be removed. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+|-
+|1-1-2
+| ja
+| en
+|-
+|1-2
+| ja
+| en
+|-
+|1-3
+| ja
+| en
+|}
+
+2. 平安時代の神社と、現代の神社が、１対１で対応する場合
+ 
+{| class="wikitable"
+|-
+! Number !! Japanese !! English
+|-
+|2
+| この表は「平安時代の神社と、現代の神社が、１対１で対応する場合」のデータ構成（の案）について、記入・議論する場所とします。
+| Please fill in this table the opinions about data-structures in case of one Heian-period shrine identified one modern day shrine.  ( どなたか、より良い英訳に書き換えてていただければ、有難いです )
+|-
+|2-1
+| 1.の「現代の神社が複数対応する場合」を先にフィックスさせてから、こちらを考えるという順序のほうが良いと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+| I think the better order is to first finalize section 1 (“the case where multiple modern shrines correspond to a single Heian-period shrine”), and only after that consider this section. (feel free to improve the translation) --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+|-
+|2-1-1
+| ja
+| I agree with that sentiment. I think we should also remember that {{q|Q135039972}} also exist where a Heian period shrine has no known modern candidates.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:04, 31 October 2025 (UTC)
+|-
+|2-2
+| ja
+| en
+|-
+|2-3
+| ja
+| en
+|}
+
+3. 以後の番号も、必要に応じて作ってください。 Please add section 3 or more , if neccesary. [[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+
+3.
+
+{| class="wikitable"
+|-
+! Number !! Japanese !! English
+|-
+|3
+| ja
+| This table is for the individual structure of the shrines. Engishiki Shrines have rankings, but their rankings are relatively confusing and overlapping. {{q|Q9610964}} and {{q|Q134917288}} and {{q|Q134917287}} are three of them, but there are a variety of other ones. I just did for all of them {{q|P31}} to indicate the rankings. But the rankings definitely need more discussion. Each of them can also have the property of {{q|Q135160338}} or {{q|Q135160342}}. As well as the various celebration categories {{q|Q135009120}}. There is also the {{q|Q135018062}} or {{q|Q135022834}} which is used to indicate the size of the shrine. I do not understand the distinction well, and it is possible that {{q|Q135022834}} is just an error on the jawiki list pages, and not distinct from the regular numer of 座 that a shrine has. Myojin Taisha are technically subtypes of Shikinai Taisha so that just adds to the ranking confusion. Since it means that {{q|Q135206477}} and {{q|Q135206467}} both technically have two subranks. So it is unclear to me if those should even be used on wikidata, over just the {{q|Q135160338}} or {{q|Q135160342}} categories. The Kokuhei or Kanpei ranking is post-Engishiki but closely related and all sourced from the {{q|Q135159299}}.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:59, 31 October 2025 (UTC)
+|-
+|3-1
+| ja
+| en
+|-
+|3-1-1
+| ja
+| en
+|-
+|3-1-2
+| ja
+| en
+|-
+|3-2
+| ja
+| en
+|-
+|3-3
+| ja
+| en
+|}
+
+
+Content taken from here https://www.wikidata.org/w/index.php?title=Wikidata_talk:WikiProject_Religions&direction=prev&oldid=2432380415 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:16, 6 December 2025 (UTC)
+== Merge dicsussion ==
+
+:(Original Japanese): もう一方の議論([[Wikidata talk:WikiProject Religions]])から統合のため、こちらにも書き込みます。こちらの議論への移動やアーカイブについてはこの利用者の警告の隠ぺいでは？と思う部分もありますが、今回はそれ以上は言いません。（{{oldid|Wikidata talk:WikiProject Religions|2438591836}}
+:これは全体的なマージ基準についてです。節が適当でなければ移動してください。
+:私は神社については普通の日本人程度の知識で、特に興味のある分野ではございません。ただ、ウィキデータの項目がウィキペディアでどう使われているか、など一般的な知見は持っているつもりです。大きな原則としてウィキペディアと対応を取ることは求めたいです。例えば異なる神社の座標{{P|P625}}がマージされると記事に異なる神社のマップが表示され得ます。法人番号{{P|P3225}}、公式ウェブサイト{{P|P856}}なども同様です。
+:既存のウィキペディアと接続している項目には有害な影響を与える編集は避けるべき、かと思います。{{Q|Q11397991}}のような編集は避けて欲しいです。
+:「同じ神社項目」とされる項目には同名の神社であるとか、運営組織が同じであるとか、分霊元が同じであるとか、複数の神社群のグループとして対応する呼称があるとか、色々と考えられると思うのですが、そういった項目の整理はウィキペディアとの対応関係がない場合にはウィキペディアに接続していない項目で行っていただきたいです。あと「この神社とこの神社が同じ、という説がある」みたいな曖昧な確度でのマージもやめて欲しいです。
+:Regarding the other discussion ([[Wikidata talk:WikiProject Religions]]), I'm posting here as well for merging purposes. While I do have concerns about whether moving or archiving discussions here constitutes concealing this user's warnings, I won't pursue that further at this time. ({{oldid|Wikidata talk:WikiProject Religions|2438591836}}
+:This comment is about the application of overall merging criteria. If this comment section is inappropriate, please move it.
+:My knowledge of shrines is that of an average Japanese person; it is not a field I have particular interest in. However, I believe I possess general knowledge, such as how Wikidata items are used on Wikipedia. As a major principle, I would like to see alignment with Wikipedia. For example, merging the coordinates {{P|P625}} of different shrines could result in a map of a different shrine appearing in the article. The same applies to items like the corporate number {{P|P3225}} and the official website {{P|P856}}.
+:I believe edits that could negatively impact existing Wikipedia-linked items should be avoided. Please refrain from edits like {{Q|Q11397991}}.
+:For items considered “the same shrine item,” there are various possibilities: they share the same name, have the same operating organization, share the same branch shrine origin, or have a corresponding designation as a group of multiple shrines. However, if such items cannot be organized in a one-to-one correspondence with Wikipedia, I would prefer this sorting be done on entries not connected to Wikipedia. Also, please refrain from merging entries based on vague claims like “there is a theory that this shrine and that shrine are the same.” [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:19, 6 December 2025 (UTC)
+::勿来です。 わぁいMariobananaさん、ありがとーございまーすー！　それ俺が7番目くらいに書こうとしてたこと、ズバリそれです。
+::俺文章書くのおそいからさあ、そんで余裕時間もあんまり多いわけじゃないからさあ、俺と同じ意見持っててそれを上手に書いてくれるのってすげえウレシーです。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:18, 6 December 2025 (UTC)
+::Thank you for responding here.
+::I agree with these issues. 
+::I do not have any plans of doing merges in the near future, and avoided doing them when resolving duplicates earlier due to these risks. There are currently many floating shrines that could be merged, but I do not think  we should rush on them.
+::I am happy that I feel we reached a venue where we can effectively discuss these things long term without scattering the conversation, or running into premature archiving, and build a consensus about what to do with our shrine modelling. 
+::{{quote|ここでご返信くださり、ありがとうございます。<br>ご指摘の点には私も同意します。<br>当面、統合（merge）を行う予定はありませんし、以前に重複項目を整理した際も、こうしたリスクを考えて統合は避けていました。現在、統合できそうな浮動的な神社項目がいくつかありますが、これについても急いで対応するべきではないと考えています。<br>長期的に議論を進められる場ができ、会話が分散したり、早期にアーカイブされてしまうことなく、神社モデル化についてどのように進めるかを合意形成できるようになったことを嬉しく思います。|translation}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:59, 6 December 2025 (UTC)
+
+== < 1 > in case of one Heian-period shrine identified two or more modern day shrines ==
+
+< 1 > 平安時代の神社１個に対して、対応する現代の神社が複数ある場合
+Due to the breakdown of the table this section is unclear what its purpose is and I think it should be removed or merged into the area below.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:39, 2 December 2025 (UTC)
+
+== rules ( single Heian as multiple modern ) ==
+
+(ja) このセクションは「平安時代の神社と、現代の神社が、１対複数で対応する場合」のデータ構成（の案）について、記入・議論する場所とします。
+
+(en) Please fill in this section the opinions about data-structures in case of one Heian-period shrine identified two or more modern day shrines.
+Due to the breakdown of the table this section is unclear what its purpose is and I think it should be removed or merged into the area below.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:40, 2 December 2025 (UTC)
+
+== < 2 > in case of one Heian-period shrine identified one modern day shrines ==
+
+< 2 > 平安時代の神社と、現代の神社が、１対１で対応する場合
+
+(ja) このセクションは「平安時代の神社と、現代の神社が、１対１で対応する場合」のデータ構成（の案）について、記入・議論する場所とします。
+
+(en) Please fill in this section the opinions about data-structures in case of one Heian-period shrine identified one modern day shrine.
+
+::(ja) < 1 >の「現代の神社が複数対応する場合」を先にフィックスさせてから、こちらを考えるという順序のほうが良いと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(en) I think the better order is to first finalize section 1 (“the case where multiple modern shrines correspond to a single Heian-period shrine”), and only after that consider this section. (feel free to improve the translation) --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+:::I agree with that sentiment. I think we should also remember that {{q|Q135039972}} also exist where a Heian period shrine has no known modern candidates.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:04, 31 October 2025 (UTC)
+::::I don't know if this actually does P31 well. It might be better to somehow use {{q|Q135038714}} but with zero candidates. Still new to ontology best practices. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:46, 1 December 2025 (UTC)
+
+== < 3 > the individual structure of the shrines ==
+
+:This table is for the individual structure of the shrines. Engishiki Shrines have rankings, but their rankings are relatively confusing and overlapping. {{q|Q9610964}} and {{q|Q134917288}} and {{q|Q134917287}} are three of them, but there are a variety of other ones. I just did for all of them {{q|P31}} to indicate the rankings. But the rankings definitely need more discussion. Each of them can also have the property of {{q|Q135160338}} or {{q|Q135160342}}. As well as the various celebration categories {{q|Q135009120}}. There is also the {{q|Q135018062}} or {{q|Q135022834}} which is used to indicate the size of the shrine. I do not understand the distinction well, and it is possible that {{q|Q135022834}} is just an error on the jawiki list pages, and not distinct from the regular numer of 座 that a shrine has. Myojin Taisha are technically subtypes of Shikinai Taisha so that just adds to the ranking confusion. Since it means that {{q|Q135206477}} and {{q|Q135206467}} both technically have two subranks. So it is unclear to me if those should even be used on wikidata, over just the {{q|Q135160338}} or {{q|Q135160342}} categories. The Kokuhei or Kanpei ranking is post-Engishiki but closely related and all sourced from the {{q|Q135159299}}.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:59, 31 October 2025 (UTC)
+::I am still unsure about the difference between {{q|Q135018062}} and {{q|Q135022834}}, I think it is related to the engishiki statistics sometimes given though.
+::But as for the ranks. I made a good progress with [[Wikidata:Property proposal/Engishiki Rank]] and [[Wikidata:Property proposal/Engishiki Funding Category]]. There are technically 21 permutations. Terms like Kokuhei Taisha and Kanpei Taisha are relatively imprecise colloquial terms referring to mere intersection of categories, and in the case of Kanpei Taisha two imprecise categories. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:23, 1 December 2025 (UTC)
+:::[[#Relevant property proposals|#Relevant property proposals]] really help with this. Say if you think I missed a property. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:27, 1 December 2025 (UTC)
+
+== < 4 > in case of one modern shrine having plural ground-area / 現代の神社が複数箇所の敷地を持つ場合 ==
+
+:複数箇所の敷地を持つ神社（たとえば、奥宮と里宮、現社地と旧社地など）について考察するセクションです。國學院大學の式内社データベースでは、このような事例に対して「現社名など」に複数の項目として記載されており、つまり論社が複数ある事例と同じ記述方法なのですが、一つの神社なのか複数なのかは区別すべきだと思います。 --[[Special:Contributions/&#126;2025-35556-42|&#126;2025-35556-42]] ([[User talk:&#126;2025-35556-42|talk]]) 06:31, 22 November 2025 (UTC)
+::{{quote|This section examines shrines that possess multiple sites (for example, an okumiya and a satomiya, or a current shrine site and a former shrine site).<br>In the Kokugakuin University Shikinaisha Database, these cases are recorded as multiple entries under “Current shrine name,” which is the same method of notation used for cases where there are multiple ronsha (candidate shrines).<br>However, I think it is important to distinguish whether the situation involves one shrine with multiple sites or multiple separate shrines.}}
+::I agree with this assessment. I hope that the formatting worked for the translation though. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:26, 30 November 2025 (UTC)
+== < 4-1 > 敷地ごとのウィキデータ項目を作るべきかどうか ==
+
+:たとえば旧社地ならば「終了日」の付いた文だけで済ますことも考えられます。各敷地ごとにウィキデータ項目を作るかどうかは、現時点でこの場で統一ルールを決めることはせずに、[[WD:N]]([[Wikidata:Notability/ja|Wikidata:情報価値]])に従って判断するべきでしょう。 --[[Special:Contributions/&#126;2025-35556-42|&#126;2025-35556-42]] ([[User talk:&#126;2025-35556-42|talk]]) 06:31, 22 November 2025 (UTC)
+::{{quote|Should we create separate Wikidata items for each site? For example, in the case of an old shrine site (旧社地), it might be sufficient to handle it simply with a statement that includes an “end date.” Whether to create a separate Wikidata item for each individual site is something we should not try to establish a unified rule for here. Instead, it should be judged in accordance with WD:N (Wikidata:Notability / Information Value).}}
+::I think there is definitely a notability issue. However these entities already exist (unless the database updates) and they could at least be connected to commons categories. Many of them are pretty easy to connect to commons categories due to the coordinates they nearly universally have. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:50, 1 December 2025 (UTC)
+== < 4-2 > 平安時代の神社項目とのリンク付けは1項目だけに置く ==
+
+:敷地ごとに複数のウィキデータ項目を作った場合であっても、平安時代の神社とのリンク付けは、1項目だけに置くのが良いと思います。これでは都合の悪い事例があるでしょうか？。 --[[Special:Contributions/&#126;2025-35556-42|&#126;2025-35556-42]] ([[User talk:&#126;2025-35556-42|talk]]) 06:31, 22 November 2025 (UTC)
+::{{quote|Link to the Heian-period shrine item should be placed on only one item Even if multiple Wikidata items are created for each site (敷地), I think it is best to place the link to the Heian-period shrine item on only one of them. Are there any cases where this would cause problems?}}
+::@[[User:勿来直通|勿来直通]] this is the translation I got. I am not sure if the translation messed up. But what are you meaning by the Heian link? The database link? 
+::I found a trick that lets you link to the ronsha or parts independently. And the database still covers them all. But actually implementing this in the property will be an uphill battle.
+::{{q|Q135040498}} [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182493 182493] 
+::{{q|Q11380845}} [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182493#:~:text=（１） 182493#1]
+::{{q|Q135195189}} [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182493#:~:text=（２） 182493#2] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:54, 1 December 2025 (UTC)
+:::Conversation continued at [[#Ontology insights|#Ontology insights]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:16, 2 December 2025 (UTC)
+
+== general discussions ==
+
+:ここは議論ページなので議論のフォーマットに則った形で書き込んでください。サンドボックスページのような利用はやめてください。
+:最初の書き込みの表を編集する形で見づらい書き込みをしているみたいですがこういうのは'''他人の発言の改変'''ということになります。
+:あとどうもこの議論は[[Wikidata:Project_chat#Structure_of_Engishiki_Shrine_entries]]からプロジェクトの中に議論場所を変えろと言われてスタートしているようですが、上記の表はIPユーザ（113.42.150.194）の方が考えたものなのでしょうか？
+:議論をスタートしたImmanuelle氏はこの表の元になるようなことは言われていないようですし、議論場所の変更を代行するんだったら元の議論と同じものが書かれると思うのですが。そもそも日本語の井戸端でもこういうのは直接行うような話題ではないので適切な場所に議論場所を変えてください。
+:こちらのIP利用者の方は非ログインで[[User_talk:Immanuelle]]さんが日本語話者のIP利用者のふりをしているとかではないですよね？どうも翻訳調を感じる文体や議論の進め方から懸念を抱かざるを得ません。 --[[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:04, 1 November 2025 (UTC)
+::I really do not want to use machine translation here, since I had issues with using machine translation earlier. I have moved it to this page. I am not the same person a the ip address, and you can use checkuser to confirm it, and I am not sure what the best way to discuss this actually is. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 1 November 2025 (UTC)
+:::Pinging relevant projects 
+:::{{ping project|Japan}}
+:::{{ping project|Religions}}
+:::[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:46, 1 November 2025 (UTC)
+:ご意見ありがとうございました。私の書いた議論形式が「他人の発言の改変」を呼び起こしてしまうとは、思いが至りませんでした（でも、イムマヌエルさんは、私の想定したとおりの場所に書き込んでいただきましたよ）。　私は自分の意見を書いて伝える場所がほしかっただけで、議論場所作りの代行をするというつもりは全く無かったのですが、結果を見直してみますと代行と解釈されても当然な状況になっておりました。　伝えるべき相手が <the big issue I encountered is that due to language or cultural barriers>とか言っている状況なので、翻訳済みかどうかが目立ちやすい伝え方をしようと思って、考えるというほどのものではないけど、表形式にすべきかなと自然に思ったのです。　文体がああゆう感じなのは、誤読が生じる可能性がこの文体ならば少ないんじゃないかなと思って、そうしております。　あいにく今までも今も十分な時間が取れなくて、この表形式の解消作業を今すぐには実行できないこと御許し下さい。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 21:31, 9 November 2025 (UTC)
+::I appreciate your help. Archiving time is at 365 days here so we can spend a while on the discussion here. And I think this will take a while to complete. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:10, 10 November 2025 (UTC)
+::議論フォーマットの形式を変えて table-style を解消しました。（IPユーザ（113.42.150.194）ですが、非ログインユーザーの制度が変わってしまいました。） [[Special:Contributions/&#126;2025-35556-42|&#126;2025-35556-42]] ([[User talk:&#126;2025-35556-42|talk]]) 05:27, 22 November 2025 (UTC)
+:::I logged in as [[User:勿来直通]], and addition to say, I've used [[Special:Contributions/&#126;2025-35556-42|&#126;2025-35556-42]] and [[Special:Contributions/113.42.150.194|113.42.150.194]].
+:::ログインすることにします。[[User:勿来直通]]と名乗ります。 [[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:59, 30 November 2025 (UTC)
+::::@[[User:勿来直通|勿来直通]] apologies for the move again. I felt things still were not consolidated enough there. Would you mind if I changd both of the ips to you so it could be a bit more clear who was doing the editing? I will also try to check with the rules more to be sure I am allowed to do this. Are you cool with me changing the heading titles too? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:30, 2 December 2025 (UTC)
+
+== Relevant property proposals ==
+
+Here are the property proposals I have been working on which are relevant to this. Most of them have rather significantly stalled for long periods.
+* [[Wikidata:Property proposal/Engishiki Funding Category]]
+* [[Wikidata:Property proposal/Engishiki Rank]]
+* [[Wikidata:Property proposal/Divine Rank]]
+* [[Wikidata:Property proposal/Day of Reisai]]
+* [[Wikidata:Property proposal/Honji Buddha]]
+* [[Wikidata:Property proposal/Source Shrine]]
+* [[Wikidata:Property proposal/Encyclopedia of Shinto ID]]
+I did have to change up the first two a fair bit recently. Since my earlier proposals reflected a misunderstanding of shrine ontology.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:30, 28 November 2025 (UTC)
+
+:@[[User:JRagusa|JRagusa]] would you be interested in looking over these property proposals? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:00, 28 November 2025 (UTC)
+::I am sorry, but I am not qualified to evaluate such a specialised subject as the classification of temples. It is far beyond my actual expertise. [[User:JRagusa|JRagusa]] ([[User talk:JRagusa|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:00, 29 November 2025 (UTC)
+:@[[User:Trade|Trade]] do you think it will be good to do a mass movement of the properties from {{q|P31}} to {{q|P1552}}. To help avoid clutter in the meantime while properties are being proposed? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:54, 30 November 2025 (UTC)
+::This is to say the following ones are all represented with P31, and I feel a mass movement to P1552 while the proposals are still running will be helpful. 
+::* [[Wikidata:Property proposal/Engishiki Funding Category]]
+::* [[Wikidata:Property proposal/Engishiki Rank]]
+::* [[Wikidata:Property proposal/Divine Rank]]
+::[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:30, 1 December 2025 (UTC)
+::Yes [[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:01, 2 December 2025 (UTC)
+:::@[[User:Trade|Trade]] I filed a bot request [[Wikidata:Bot_requests#Request_to_Move_abused_P31_properties_to_P1552_during_property_proposals_(2025-12-02)]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:04, 2 December 2025 (UTC)
+::::I am not sure the degree I am able to just be bold with these kinds of things. I could easily write the bot right now. One community member has voiced distrust of me using bots but none have objected to this proposal. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:05, 2 December 2025 (UTC)
+:::::Cant you just ask someone else to let you use their bot? Seems easier [[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:08, 2 December 2025 (UTC)
+::::::@[[User:Trade|Trade]] as far as writing it would certainly be easier to do it myself. But socially getting approval it will likely be easier. Is there a bot that you recommend I ask someone to do this with? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:13, 2 December 2025 (UTC)
+:::::::User talk:BrokenSegue [[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:20, 2 December 2025 (UTC)
+::::::::[[User talk:BrokenSegue]] got it [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:22, 2 December 2025 (UTC)
+:[[Wikidata:Property proposal/Encyclopedia of Shinto ID]] was approved and [[Wikidata:Property proposal/Day of Reisai]] was rejected. Does this mean that we should actually use {{q|P841}} for {{q|Q11385469}} days or should we work on another proposal to explain it better? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:38, 11 December 2025 (UTC)
+::[[#Japanese court rank]] was also just approved. It is not yet created but will be a nice change to get momentum for this. As soon as it is completed we will transclude it and follow up on [[Wikidata:Bot_requests#Request_to_Move_abused_P31_properties_to_P1552_during_property_proposals_(2025-12-02)]] about it. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:51, 16 December 2025 (UTC)
+
+As I see the ontological work on these property proposals to be important enough to warrant a continued involvement with our community and possibly even continuation of the discussion of the nature of the things after the proposals are over. I am transcluding them here. So people on the page can easily see them and we could substitute them in after completion to continue the discussion of the property and how to use it.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:13, 2 December 2025 (UTC)
+
+{{Wikidata:Property proposal/Engishiki Funding Category}} 
+from [[Wikidata:Property proposal/Engishiki Funding Category]] do not substitute until the proposal is finished[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:13, 2 December 2025 (UTC)
+{{Wikidata:Property proposal/Engishiki Rank}} 
+from [[Wikidata:Property proposal/Engishiki Rank]] do not substitute until the proposal is finished[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:13, 2 December 2025 (UTC)
+== {{TranslateThis | anchor = en
+| en = Japanese court rank <!--PROPERTY NAME IN English-->
+| ja = 神階<!-- property names in ja -->
+<!-- |xx = property names in some other languages -->
+}} ==
+{{Property proposal
+| description                = {{TranslateThis
+ | en = Japanese court rank of a person or a shrine
+ | ja = 神社などの位階、[[Q11591025|Shinkai (divine rank)]]
+<!-- | xx = descriptions in other languages -->
+ }}
+| status                     = P14005
+| subject item               = Q99196082
+| datatype                   = item
+| allowed values             = {{q|Q11504610}} 
+{{q|Q11464527}}
+{{q|Q11433041}}
+{{q|Q11488719}}
+{{q|Q11545350}}
+{{q|Q11488720}}
+{{q|Q11545368}}
+{{q|Q11488718}}
+{{q|Q11545345}}
+{{q|Q14624983}}
+{{q|Q11545372}}
+{{q|Q11071125}}
+{{q|Q11123280}}
+{{q|Q11419606}}
+{{q|Q11071127}}
+{{q|Q11123338}}
+{{q|Q11354375}}
+{{q|Q11071123}}
+{{q|Q11123261}}
+{{q|Q11371333}}
+{{q|Q11488721}}
+{{q|Q11123277}}
+{{q|Q11071121}}
+{{q|Q11123258}}
+| example 1                  = {{Statement|Q245731|→|Q11071121}}
+| example 2                  = {{Statement|Q218813|→|Q11071123}}
+| example 3                  = {{Statement|Q335618|→|Q11071125}}
+| example 4                  = {{Statement|Q11582685|→|Q11123258}}
+| example 5                  = {{Statement|Q17191701|→|Q11123258}}
+| example 6                  = {{Statement|Q428200|→|Q11123258}}
+| planned use                = There are many shrines that I already added these to using the instance of property. My plan is to simply move all of those into this property to unclutter the instances of thing. This is the case alongside many other shrine properties that I have added for instances of.
+（既に多くの神社ではこれを記録するため属性のインスタンスを流用しています。対象をすべて当プロパティに移し、インスタンスを整理したいと考えます。神社プロパティのうち、インスタンス用に追加した他の多くのものも同様の措置を想定。）
+
+For people I do not have an immediate plan of adding it for them. However it is well documented who has what rank on Japanese wikipedia and others can easily add it.
+| subpage                    = Divine Rank
+| topic                      = place
+}}
+
+=== {{Int Motivation}} ===
+
+Having them as instance of is not good. They should be indicated with a property. (プロパティを設定すべきであり、インスタンスで示すのは正しくないため。)
+
+==={{int:Talk}}===
+* The property as proposed is very specific. Is there are reason that a broader proposal that might work across multiple religions (or maybe building types) wouldn't work for this use-case? [[User:ChristianKl|<span style="color:#0000EE;">'''ChristianKl'''</span>]] ❪[[User talk:ChristianKl|✉]]❫ 09:27, 10 July 2025 (UTC)
+*:@[[User:ChristianKl|ChristianKl]] I think the giving of court ranks to shrines is very Shinto specific. I could imagine it happening for Japanese Buddhist temples, or somehow being applied in Okinawa Korea and possibly China. But the impetus for this, as with the other proposals isn’t that there’s no way of representing Shinto Shrine rankings, but that so many shrines have half a dozen or so rankings from multiple ranking systems and it makes their entries very cumbersome. 
+*:There’s Engishiki rankings, x-no-Miya rankings, court rankings (of which there is almost always multiple at different time periods), and modern system rankings, and the modern Beppyo ranking. And many prominent shrines have a ranking in all 5 of these systems. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:50, 10 July 2025 (UTC)
+*:This rank for Shinto divinities is basically same with the court rank system in pre-modern Japan, while there is no property for court rank. I think a property for court rank (not limited to Japan) should be created, and we can use it for Shinto shrines too. [[User:Mzaki|Mzaki]] ([[User talk:Mzaki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:25, 11 July 2025 (UTC)
+*:Sounds like a good way to create awful data modeling. Wikidata really ought to stop treating different religions as being interchangable [[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:22, 12 October 2025 (UTC)
+*:The following three proposals [[Wikidata:Property proposal/Engishiki Rank]] [[Wikidata:Property_proposal/Engishiki_Funding_Category]] [[Wikidata:Property_proposal/Divine_Rank]] are all pretty closely related and would ideally be all examined as a relative group. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:20, 28 November 2025 (UTC)
+{{ping project|Japan}}[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:25, 10 July 2025 (UTC)
+:Anyone have more thoughts?[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:23, 12 October 2025 (UTC)
+::{{ping project|Japan}}
+::{{ping project|Religions}}
+::{{ping project|Medieval Nobility}}
+::[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:33, 19 October 2025 (UTC)
+* {{s}} --[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:22, 12 October 2025 (UTC)
+* {{question}} Is that ''super-rank'' or parent rank going to accomodate those other items or not?  [[User:Mzaki|Mzaki]]'s definision sounds good to me. Mzakiさんの案に賛成ですが、以下のすでにあるものとの整合・親子関係は？「Mzakiさん：日本限定でない宮廷の位階 court ranking をまず新設、それを流用できないか」。
+:See court rankings for: 
+:* (Category:日本の位階) [[:Q9665982|Q9665982]], site links:2
+:* (Category:位階制度) [[:Q9520387|Q9520387]]
+:*Choson court (朝鮮王朝の位階) [[:Q12616815|Q12616815]]
+:*Ryūkyū court (琉球王朝の位階) [[:Q15142314|Q15142314]]
+:*Ranking in Japan (日本の位階) [[:Q99196082|Q99196082]]
+:{{question}} side note: How do we note if the said shrine hasn't agreed on, after 1945, the given ranking regulated by [[Q908077|Jinja Honcho]] aka Association of Shinto Shrines? How do I state such condition, or ignore? Cheers, --[[User:Omotecho|Omotecho]] ([[User talk:Omotecho|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:05, 28 October 2025 (UTC)
+::@[[User:Omotecho|Omotecho]] this only applies to pre-Meiji ranks, and only the court ranks. It does not include the Engishiki rankings related to offerings given, such as {{q|Q135009157}} or Engishiki ranks such as {{q|Q9610964}}. 
+::Pre-Meiji ranks are very chaotic so this is a problem, but this thing has exactly one system in question. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:16, 3 November 2025 (UTC)
+:::I organized this a bit more. The Pre-Meiji ranks are I believe much better organized ontologically now and this can proceed more easily. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:22, 28 November 2025 (UTC)
+* {{com}} - The label should be "divine rank", I think, if not, tell me [[User:QwertyZ34|QwertyZ34]] ([[User talk:QwertyZ34|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:46, 29 November 2025 (UTC)
+*:@[[User:QwertyZ34|QwertyZ34]] We have been talking about expanding it to a general Japanese court rank. So this could be something people have. At which point something like "Japanese court rank" would be a better label. The system does not exist elsewhere but we can make this not a shrine specific property. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:10, 30 November 2025 (UTC)
+*::@[[User:QwertyZ34|QwertyZ34]] I changed the label to generalize the property to people and shrines. The story of how it applies to both is a bit convoluted but it does. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:58, 3 December 2025 (UTC)
+With all due respect could you please avoid the unecessary capitalization in your proposal labels? It's a bit annoying to read --[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:00, 30 November 2025 (UTC)
+
+:Will do in the future [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:48, 30 November 2025 (UTC)
+What is the main obstacle to propery creation right now?[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:42, 2 December 2025 (UTC)
+
+:I added the allowed values [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:42, 3 December 2025 (UTC)
+::I also made the proposal more generic since this is not just about shrine ranks it is also about court ranks [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:57, 3 December 2025 (UTC)
+:::Mass edit seems to have been rejected so we are representing this through P31 until the proposal finishes [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:51, 4 December 2025 (UTC)
+
+* {{s}} --[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:35, 4 December 2025 (UTC)
+*:@[[User:Trade|Trade]] would you also support the related proposals [[Wikidata:Property proposal/Engishiki Rank]] and [[Wikidata:Property proposal/Engishiki Funding Category]]? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:29, 12 December 2025 (UTC)
+*{{s}} - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:05, 13 December 2025 (UTC)
+* {{ping|ChristianKl|Immanuelle|Mzaki|Trade}} {{ping|Omotecho|QwertyZ34|PKM}} {{done}} [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:49, 18 December 2025 (UTC) 
+from [[Wikidata:Property proposal/Divine Rank]] do not substitute until the proposal is finished[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:13, 2 December 2025 (UTC)
+
+:As this is approved, we just need to wait on creation before transclusion. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:52, 16 December 2025 (UTC)
+{{Wikidata:Property proposal/Source Shrine}} 
+from [[Wikidata:Property proposal/Source Shrine]] do not substitute until the proposal is finished[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:13, 2 December 2025 (UTC)
+
+{{Wikidata:Property proposal/Gifu Prefectural Shrine Association ranking}}
+:Transcluding this new proposal here[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:11, 26 January 2026 (UTC)
+
+== Proposed automatic edits ==
+
+I am a bit wary of doing automated edits but @[[User:勿来直通|勿来直通]] would you be cool with me running an automated version of the deprecation that you were doing earlier? @[[User:Trade|Trade]] I am also thinking of doing an automated mass move from {{q|P31}} to {{q|P1552}} for the properties that are clogging up P31[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:20, 30 November 2025 (UTC)
+
+:For reference the automated edits that person was doing were ones of deprecating properties on Ronsha. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:24, 30 November 2025 (UTC)
+:@[[User:勿来直通|勿来直通]] さん
+:日本語が得意ではないため、機械翻訳を併用しています。不自然な点があれば教えていただけると助かります。
+:以前行われていた {{q|Q135022904}} 関連プロパティを非推奨ランクに変更する作業について、私の方でも同様の処理を自動的に行ってよろしいでしょうか。もし懸念点などありましたら、ご指摘いただけると幸いです。
+:よろしくお願いします。 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:37, 30 November 2025 (UTC)
+::Yes, I welcome your propose with my happiness.
+::The reason of deprecating I did was to get many other users to see the result here.
+::I planned first step I made some examples of deprecating properties, and next step as remove the deprecated properties, ultimately only one-step removing without deprecating step.
+::But you are a bit of wary, so maybe now we deprecate them. I welcome youe editting along my opinions.
+::And I say "Don't do it all at once, just do 100 items at first." and check and re-view for a few days, then do the rest. [[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:01, 30 November 2025 (UTC)
+:::って、もう始めてるのかい！。疑問文だったんじゃないのかよ。ああいいよ、百件でとめるかどうか自由に決めてくだされ。 [[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:01, 30 November 2025 (UTC)
+::::@[[User:勿来直通|勿来直通]] Sorry I got impatient and decided to write the bot and test it on a few. It is not running on all Ronsha. I tested it on a few edge cases and it seems generally fine. Now that the bot is complete I will run it on 50 and stop. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:07, 30 November 2025 (UTC)
+:::::{{Oppose}} Immanuelle氏は過去に非常に低品質な編集をされた過去があり迷惑しています。議論の場で編集方針を決めるような態度を取りながら勝手に大量の編集を始めるのはいったいどういうことなのでしょうか？
+:::::また、Immanuelle さんが勿来直通さんにメンションしてからその後で勿来直通さんがIPユーザーと同一ですと名乗っているようですが、Immanuelle さんはいつ勿来直通さんとお知り合いになられたのでしょうか？
+:::::勿来直通さん自身は自身の[[User:勿来直通|ユーザページ]]にて11/24にIPユーザと同一人物と名乗っているようですが、自発的にImanualeさんが確認するとも思えませんし。 [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:20, 30 November 2025 (UTC)
+::::::Killing it now. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:21, 30 November 2025 (UTC)
+:::::::In case you want to do a rollback here are the affected pages
+:::::::* {{q|Q583589}}
+:::::::* {{q|Q246370}}
+:::::::* {{q|Q195714}}
+:::::::* {{q|Q172253}}
+:::::::* {{q|Q94760}}
+:::::::* {{q|Q11371572}}
+:::::::* {{q|Q11546041}}
+:::::::* {{q|Q11529679}}
+:::::::* {{q|Q11462862}}
+:::::::* {{q|Q11379324}} 
+:::::::* {{q|Q106301088}}
+:::::::* {{q|Q545397}}
+:::::::* {{q|Q107410068}}
+:::::::* {{q|Q106852711}}
+:::::::[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:27, 30 November 2025 (UTC)
+::::::::Shrines the other person edited in the same way {{q|Q6587276}} and {{q|Q11442032}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:33, 30 November 2025 (UTC)
+:::::::::"the other person," does not refers to an unrelated user, but rather to [[User:勿来直通]] who is suspected of being a Immanuelle's sockpuppet or meatpuppet. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:40, 30 November 2025 (UTC)
+::::::::::I do not know this person. I have only interacted with them on wiki and not very much on wiki. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:54, 30 November 2025 (UTC)
+:::::::::::You mentioned {{diff|Wikidata_talk:WikiProject_Religions|2435904674|2435903342|label=勿来直通 first}}, and later 勿来直通 came forward saying “I am the same person as the previous IP user.” But where did you know 勿来直通 from?
+:::::::::::If the interaction occurred only at Wikidata, there should be the conversation page at Wikidata. Please provide it. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:05, 30 November 2025 (UTC)
+::::::::::::I only saw them implementing the edits on {{q|Q6587276}} and {{q|Q11442032}} through my watchlist. My tagging them here is the first interaction I had with them. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:14, 30 November 2025 (UTC)
+:::::::::::::つまりあなたは、たまたまウォッチリストで追跡していた項目に対してあなた自身が望む編集が行われて、メンションしたらその人が議論を開始したIPユーザーと同一と名乗ったことを主張していることになります。そんな奇跡みたいなことはありえないと思いますけどね。
+:::::::::::::In other words. you're claiming that the edit you desired happened at the item your watchlist, and that when you mentioned to the editor, the parson was the IP user who started this discussion. I don't think such a miraculous event could possibly happen.
+:::::::::::::{{diff|Wikidata_talk:WikiProject_Religions|label=03:37, 30 November 2025 (UTC)|2435904674|prev}}に編集の許可を求めておきながら{{diff|Q545397|2435919751|2435919616|label=2025-11-30T05:07:00ごろ}}からbotによる大量の編集を始めています。こういった編集は過去に編集の質に疑問を持たれた（[[Wikidata:井戸端/Archive/2025#誤った英語ラベルを大量追加する利用者がいる]]、[[Wikidata:Project_chat/Archive/2025/09#I_am_implementing_近代社格_(P13723)_with_quickstatements]]）のにこういったことを行うのは甚だ疑問に思います。
+:::::::::::::This person first leaves a comment requesting editing permission, then suddenly making a mass edits without waiting a sufficient period for other's opinions. The person has been suspected of low-quality edits than before([[Wikidata:井戸端/Archive/2025#誤った英語ラベルを大量追加する利用者がいる]]、[[Wikidata:Project_chat/Archive/2025/09#I_am_implementing_近代社格_(P13723)_with_quickstatements]]). As I have already [[#c-Mariobanana-20251102055400-Immanuelle-20251101214400|pointed out]], I am deeply concerned about such actions. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:40, 30 November 2025 (UTC)
+::::::::::::::I want to clarify that I did a relatively low volume of test edits to a few pages, and then only started a 50 page limited run of the bot after 勿来直通 expressed support at 06:01. [https://www.wikidata.org/w/index.php?title=Q11371572&oldid=2435926017 This] was the first actual batch edit at 06:14. After Mariobanana expressed opposition at 06:20 I stopped the bot at 06:21 and immediately offered to revert the edits. I acted too quickly and will not perform mass edits in this area again without clear community consensus. One person is not enough for consensus. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:16, 30 November 2025 (UTC)
+:::::::::::::::Do not lie. As of 2025-11-30T05:07:00, you had already begun making a mass of edits, even if they weren't bot-executed. 
+:::::::::::::::Furthermore, the consensus process should take at least a week to begin with. Since you started working on the same day you asked for consensus, it seem like you were just pretending to seek agreement. I can't trust you anyway, since I suspect 勿来直通 is your sockpuppet.
+:::::::::::::::Stop editing instead of lying and tryng to cover it up. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:38, 30 November 2025 (UTC)
+::::::::::::::::Now that we have sorted this out with the check user we can get back to improving shrines entries. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:42, 1 December 2025 (UTC)
+:::::::::::::::::The checkuser results are inconclusive, not proof that you two are unrelated. If it appears that you are attempting to push through edits by approving each other, that will be considered problematic behavior, naturally. [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:03, 1 December 2025 (UTC)
+::::::::::::::::::Inconclusive is what most cases of different people give. It is enough that it makes this behaviour of derailing edits solely based on suspicion of sockpuppetry baseless. 
+::::::::::::::::::Honestly I am not even convinced you have any objections to my current behaviour or editing decisions. After doing possibly the most conservative bot editing possible you seemed to object more on the idea you don’t think I should be allowed to do bot editing rather than objecting on the substance of the extremely minor edits.
+::::::::::::::::::I don’t want to just let the shrines stay broken forever because of a single persons personal distrust in me keeping me from fixing them. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:11, 1 December 2025 (UTC)
+:::::::::::::::::::I would consider this behavior to likely violate  these policies
+:::::::::::::::::::[[:en:Wikipedia:Assume good faith]]/[[:ja:Wikipedia:善意にとる]]
+:::::::::::::::::::[[:en:Wikipedia:No personal attacks]]/[[:ja:Wikipedia:個人攻撃はしない]]
+:::::::::::::::::::If you have an objection to decisions I am making here then make it. We need more people fixing the shrine ontology problems. But do not oppose everything solely because I am involved. 
+:::::::::::::::::::Also [https://www.wikidata.org/w/index.php?title=Wikidata_talk:WikiProject_Religions&oldid=2424520066 waiting a month] from your first participation in the discussion and never objecting to implicit discussion of mass editing does not work in favor of this going against consensus. The proposed edits were being discussed for a month before I started the test run, and they were more conservative than a typical small quickstatements batch. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:02, 1 December 2025 (UTC)
+:::::::::::::::I also want to clarify about merges: There are a lot of duplicate shrines from import errors months ago. I believe they need to be merged manually. The continued presence of such duplicates harms our ability to implement any large changes and we should take our time with fixing the duplicates. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:40, 30 November 2025 (UTC)
+::::::勿来直通さんがImmanuelleが使っているアカウントなのであればソックパペットですし、Wikipedia外で接点があるのであればミートパペットでしょう。接点については詳細な回答を求めたいところです。 [[User:Mariobanana|Mariobanana]] ([[User talk:Mariobanana|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:26, 30 November 2025 (UTC)
+:::::::@[[User:Mariobanana|Mariobanana]] I apologize for having moved overly quickly. I killed the script. Do you want me to manually undo all of these edits? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:39, 30 November 2025 (UTC)
+::::::::I reverted the edits on a fair few of them already [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:13, 30 November 2025 (UTC)
+:::::::::I decided to revert all of the edits. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:21, 30 November 2025 (UTC)
+::::::::::I have decided with the merging situation not properly done, we need more time to decide on what to do. Merges definitely should not be done in an automated manner. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:29, 30 November 2025 (UTC)
+:::::::[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:39, 30 November 2025 (UTC) です。(これはどこのReplyを押すべきなんだろうか？)　なんかすごいことになっちゃったようですね。（まだ詳細把握してないので。）　ウィキ外の接点なんて無いと思いますがねえ。ミラヘゼシントーとかわずかな時間ですが見に行ったけど、ウィキペディア（日本語、英語、シンプル）もコモンズもちょっとは見ましたけど、何も書き残さなかったはずです。接点とおっしゃる言葉にこういうのが含まれているのでしょうか？。わたくし（勿来直通）は、Immanuelleさんとは別人です。ついでに申しますと、わたくし（勿来直通）は、Mariobananaさんとは別人です。（後者のほうが疑われていそうな気がするのですが。）
+:::::::前回のサンプル項目を作ったのが武蔵の国の多磨郡の神社でして、今回も同じ郡の神社でサンプル追加しようとしたので、あちらさんがウォッチリストの対象に当然入れていそうな項目なんですよね。（たまたま追跡していたのではなく多磨多磨で追跡するのは必然でしょう。）　まあ、どんな奇跡が起きても、わたくし（勿来直通）は、Immanuelleさんとは別人です。　でも別人であろうとパペットであろうと、合意無しに実行に踏み切った罪は明らかじゃないのかなあ？。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:39, 30 November 2025 (UTC)
+:Another mass edit I wish to do is to add end dates to {{q|P13723}} on all entries [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:16, 30 November 2025 (UTC)
+
+== Shrine ontology conversations from elsewhere ==
+
+Here I put shrine ontology content from elsewhere. I give the source where I can so we can reference the conversations and continue them despite most of them archiving before they could naturally finish. New content proper starts at [[#Beginning of new content]], everything before this is a revival/consolidation of earlier conversations as indicated by the source indication messages I left with the same date as this comment. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+ 
+== Some questions ==
+
+ 
+Hi, @[[User:Immanuelle|Immanuelle]], can I ask some questions:
+# Why are you having an interest in Japan-releated stuffs, specially shrines?
+# Where are you from? Japan? or maybe somewhere? or maybe an expat in Japan or just a person having interest in shrines?
+# I heard that you are been blocked in English Wikipedia because you using AI-stuff?
+ 
+Some shrines stuff:
+# How many shrines are in Japan? (total count)
+# Describe and explain the metadata/item model that a shrine need, for example what properties should be used
+# Notable databases about shrines and their properties, if avaliable?
+ 
+Make sure to link any related things by {{Template|Q}} and {{Template|P}}
+ 
+Thanks. [[User:DinhHuy2010|DinhHuy2010]] ([[User talk:DinhHuy2010|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:26, 18 October 2025 (UTC)
+ 
+:@[[User:DinhHuy2010|DinhHuy2010]] Thank you.
+:# I am very interested in Shinto. Shrines are especially interesting to me because they have a lot of local history attached to them and generally are just interesting that way. 
+:# I am from Canada. I have gone to Japan a few times, but that was over my interest in Shrines. I have contributed many photos to wikimedia commons of the shrines I visited in Japan. 
+:# I was not blocked on enwiki for ai stuff. I am in the process of appealing, but it was essentially over my being rather obnoxious in response to editing restrictions which included ai stuff, mostly around machine translation. I have based my shrine edits on structured data to avoid such problems. 
+:Shrines
+:# It is pretty much impossible to properly count all the shrines in Japan. In 1903 there were 193,297 registered shrines.<ref>https://doi.org/10.18874%2Fjjrs.2.2-3.1975.137-168</ref> A lot of the issue comes from how large a shrine is for you to count it as a "shrine". We have all Beppyo shrines ({{q|Q10898274}}) listed here and you can read in this table [[Talk:Q10898274]]. We have about 30,000 Shinto shrines on wikidata, at least going by this query https://query.wikidata.org/#SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ845945.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FitemLabel%0A
+:# Shrines that are not {{q|Q135039972}} or {{q|Q135038714}} should have all the properties of a building. Generally a shrine should have {{q|P825}} for whatever deity it is dedicated to. It should have properties recording any rankings it has or has had. {{q|P13723}} is the most well documented one, but the {{q|Q11064932}} and rankings based on it have a distinct different set of rankings. And they need their court rankings ({{q|Q11591025}}) too (property proposal here [[Wikidata:Property_proposal/Divine_Rank]]). In addition all shrines with known source shrines should have that recorded. I did a property proposal here. [[Wikidata:Property_proposal/Source_Shrine]], and they should have their {{q|Q11385469}} day recorded. Property proposal here [[Wikidata:Property_proposal/Day_of_Reisai]]. Aside from this I do not really know what else needs to be added to them. Their {{q|P3225}} is often added. 
+:# Notable databases: {{q|Q135159299}} which is part of {{q|Q135505514}}, which I have imported in its entirety, and got the property {{q|P13677}} created to link them to, however there is an issue of how my import from that database abused the {{q|P31}} property to do things that it really should not have done. There is also {{q|Q135179694}} which I am running a property proposal for here [[Wikidata:Property proposal/Genbu.net ID]].  There is definitely a database that fully has the {{q|Q712534}} documentation somewhere, but I have not yet found it. It would be very good to import if we could find it. We can also look through the registrations of Prefectural Shrine Associations ({{q|Q11590703}}) for each prefecture, or the legal registrations. Sometimes the legal registrations are relatively easy to find like this one https://web.archive.org/web/20230707162335/https://www.pref.okinawa.jp/site/somu/somushi/shigaku/syuukyou/documents/syukyohoujin-meibo_r40401.pdf but I have not actually looked for these things I feel it is relatively beyond my abilities although some users appear to have tried more in that angle. 
+:Other things:
+:I have found that it is very difficult to work with the Japanese community here and this has made me discouraged. I do believe I was a bit too cavalier with my editing earlier. But the big issue I encountered is that due to language or cultural barriers, I have not really been able to come up with plans of what to do with shrines, and previously thought my edits were seen much more positively by them than they actually were. 
+:I am most inclined to just give up on Shrines over this. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:10, 18 October 2025 (UTC)
+::Rankings related to the {{Q|Q11064932}} are really weird and feel random and unsystematic compared to rankings in the {{q|Q712534}} so it is harder to put it into a single property as much as I would want to do so [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:19, 18 October 2025 (UTC)
+:::Particularly with doing the appeal I am really anxious about getting things in order with other wikis and I want to make sure that I am not gonna start doing something bad or controversial on wikidata again. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:23, 18 October 2025 (UTC)
+::Quetion about the import:
+::# What wrong when the database imported? Specifically what tools you use? How did you pull 100s of entries from a database (if the databases is 1000s of entries)
+::# {{Q|Q135179694}} have no statements at all. Did you add the statements about the website itself?
+::# <blockquote>Shrines that are not [[Q135039972|Lost Shikinaisha or Shikigeisha <small>(Q135039972)</small>]] or [[Q135038714|Disputed Shikinaisha or Shikigeisha <small>(Q135038714)</small>]] should have all the properties of a building.</blockquote><br>Then what about those that are lost or disputed shrines? Then what properties?
+::# Also give me an example of a item about a shrine.
+::@[[User:Immanuelle|Immanuelle]], thanks. [[User:DinhHuy2010|DinhHuy2010]] ([[User talk:DinhHuy2010|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:44, 18 October 2025 (UTC)
+:::I'll respond tomorrow. Sorry something came up for me irl [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:38, 18 October 2025 (UTC)
+:::@[[User:DinhHuy2010|DinhHuy2010]]
+:::# I downloaded every html page from the website and then parsed it into a MongoDB database which I then connected to a script that I used for it.
+:::# I did not add statements about the website myself. Unlike the Kokugakuin University Digital Museum I do not know much about the website and who runs it. 
+:::# Lost and Disputed shrines are specifically related to the {{q|Q11064932}} and really just would need the number in the Engishiki, and the previous and next shrine, and the district, and any other sources. They are not known buildings and seem to be nearly complete now.
+:::# Here is an example of a shrine item {{q|Q22117854}}
+:::[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:28, 18 October 2025 (UTC)
+::::@[[User:DinhHuy2010|DinhHuy2010]] Oh for an update [[Wikidata:Property proposal/Genbu.net ID]] was in fact approved and it is now here as {{q|P13930}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:00, 2 December 2025 (UTC)
+ 
+Conversation taken from https://www.wikidata.org/wiki/User_talk:Immanuelle/Archives/2025/October [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+{{Reflist-talk}}
+
+== Shinto shrine short descriptions ==
+
+ 
+It seems like almost every Shinto shrine has an identical description: Shinto shrine in Japan. Imo this makes them useless and as many shrines share the same name, the prohibition on identical English label and short description really is restrictive. Is there a reason their descriptions are nearly identical? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:00, 5 July 2025 (UTC)
+ 
+:For buildings I'd use the location in the description to distinguish them. Use locations people will have heard of, mention a founding date if not unique [[User:Vicarage|Vicarage]] ([[User talk:Vicarage|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:37, 6 July 2025 (UTC)
+::@[[User:Vicarage|Vicarage]] would municipality or prefecture be good? I feel something like this [[Q78321387]] would be improved significantly by changing the description to "Shinto shrine in Nishi-ku, Nagoya" [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:24, 6 July 2025 (UTC)
+:::Descriptions are for people, write them so the casual user with some knowledge of the subject is informed, so neither be too specific or general. That user would know if Shinto is only in Japan (I don't), and how many there are, so whether the location can be general or specific, and whether Japan itself needs to be mentioned. And expect them to be used in combination with the label, so saying Winchester Cathedral is in Winchester is pointless, say its in Hampshire, UK [[User:Vicarage|Vicarage]] ([[User talk:Vicarage|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:58, 6 July 2025 (UTC)
+::::The main issue that I have with this is the fact that the shrines often have identical names. And with the en label and en short descriptioon combination needing to be unique. This heavily limits labelling ability [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:57, 6 July 2025 (UTC)
+:::::The requirement of uniqueness exist to make you enter enough information so that among those shrines that have identical names a user knows which shrine is meant. 
+:::::If you would talk with a person who understands something about those shrines about them, what would you say about the shrine besides it's name to help the person understand which of the shrines you mean? That information should be in the description. This might just be the location, but it might also be something more domain specific. [[User:ChristianKl|<span style="color:#0000EE;">'''ChristianKl'''</span>]] ❪[[User talk:ChristianKl|✉]]❫ 09:51, 10 July 2025 (UTC)
+::::::I am working on changing a few of them. I think for many shrines they have very notable things such as being part of a certain group. But "Shinto shrine in Japan" is just too generic for being seemingly the default description of all shrines. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:48, 16 July 2025 (UTC)
+:::::::Seems one person is responsible for almost all of this. Did a mass editing that overwrote the unique descriptions around April 2023 and applied descriptions to undescribed items
+:::::::https://www.wikidata.org/w/index.php?title=Q59282646&oldid=1867070783 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:08, 16 July 2025 (UTC)
+::::::::@[[User:Rachmat04|Rachmat04]] Is there a particular reason you mass applied this generic description? Is there a consensus I am not aware of? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:23, 16 July 2025 (UTC)
+:::::::::Hi Immanuelle! Thanks for bringing this up for discussion. At the time I did this, there was no consensus underlying the edits; I did them alone. The basis for making the edits was to complete the empty descriptions in both English and Indonesian. I put the description "Shinto shrine..." because I took the Q from the query involving {{q|Q845945}}. I failed to notice that there are some items that have more specific descriptions. I apologize if that makes you confused when exploring them. Let me know if there's anything I can do to fix the mess. Best, '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 04:10, 19 July 2025 (UTC)
+::::::::::@[[User:Rachmat04|Rachmat04]] I wrote a script that replaced these descriptions with a similar one derived from the prefecture, see this one {{q|Q11669115}}. It just checked every {{q|P131}} property to see if it was an {{q|P31}} {{q|Q50337}}, and ran recursively until it found a prefecture and skipped it. 
+::::::::::Would you want me to modify and run it for the Indonesian descriptions of "kuil Shinto di Jepang" to change them to something more descriptive too? I would need a basic template of how you would say "Shinto shrine in Shizuoka Prefecture, Japan" in Indonesian. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:27, 19 July 2025 (UTC)
+:::::::::::That would be very helpful. For Indonesian, you can use "kuil Shinto di Prefektur Shizuoka, Jepang". '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 08:39, 20 July 2025 (UTC)
+::::::::::::@[[User:Rachmat04|Rachmat04]] okay so I ran it. It seems to be working. It might be good to look at this for other languages too. Although I am guessing those descriptions were done by other users. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:08, 21 July 2025 (UTC)
+:::::::::::::{{q|Q11447922}} has a canned Ukrainian description "синтоїстське святилище в Японії" [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:09, 21 July 2025 (UTC)
+::::::::::::::This one seems a lot harder, just looking at Ukrainian grammar. Since it would require editing the name of the prefecture to indicate location. @[[User:Renamerr|Renamerr]] Do you have any guidance? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:42, 21 July 2025 (UTC)
+:::::::::::::::You were the one to add the Ukrainian descriptions, althoug I do not think they are nearly as common [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:07, 21 July 2025 (UTC)
+::::::::::::::::@[[User:Renamerr|Renamerr]] I just decided to attempt to rename some of them. I apologize if I got the cases wrong, but that kind of shrine description caused a lot of problems with the description uniqueness constraints. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:01, 30 July 2025 (UTC)
+:::::::::::::::::Remember if any one of them is wrong with Ukrainian you can easily just do a search for all the ones with that identical description and use quickstatements to fix it. I have a description for each prefecture that I replaced them with. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:21, 30 July 2025 (UTC)
+::::::::::::::::::As for the labels I think if we somehow figured things out, the conversion from Indonesian to Ukrainian would be the low hanging fruit of the conversion once we establish a proper protocol, since hard shrines are mostly absent from this
+::::::::::::::::::https://query.wikidata.org/#SELECT%20%3Fitem%20%3FidLabel%20%3FukDescription%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ845945.%20%20%23%20instance%20of%20Shinto%20shrine%0A%0A%20%20%3Fitem%20schema%3Adescription%20%3FukDescription.%0A%20%20FILTER%28LANG%28%3FukDescription%29%20%3D%20%22uk%22%29%20%20%23%20has%20Ukrainian%20description%0A%0A%20%20%3Fitem%20rdfs%3Alabel%20%3FidLabel.%0A%20%20FILTER%28LANG%28%3FidLabel%29%20%3D%20%22id%22%29%20%20%23%20has%20Indonesian%20label%0A%0A%20%20FILTER%28NOT%20EXISTS%20%7B%0A%20%20%20%20%3Fitem%20rdfs%3Alabel%20%3FukLabel.%0A%20%20%20%20FILTER%28LANG%28%3FukLabel%29%20%3D%20%22uk%22%29%20%20%23%20lacks%20Ukrainian%20label%0A%20%20%7D%29%0A%7D%0AORDER%20BY%20%3FidLabel%0A%0A [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:06, 2 August 2025 (UTC)
+:::::::::::::::::::@[[User:Renamerr|Renamerr]] do you have any insights on Ukrainian and Russian shrine names? This is gonna be the last time I will tag you. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:48, 2 August 2025 (UTC)
+::::::::::::@[[User:Rachmat04|Rachmat04]] I wrote a similar script that converts English language Shrine names to Indonesian. Ran it on about 30 Shrines so you can see the results here https://query.wikidata.org/#SELECT%20%3Fitem%20%3Flabel_en%20%3Flabel_id%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ845945.%0A%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel_id%20FILTER%20%28LANG%28%3Flabel_id%29%20%3D%20%22id%22%29.%0A%20%20OPTIONAL%20%7B%20%3Fitem%20rdfs%3Alabel%20%3Flabel_en%20FILTER%20%28LANG%28%3Flabel_en%29%20%3D%20%22en%22%29%20%7D%0A%7D%0AORDER%20BY%20%3Flabel_id%0A 
+::::::::::::Atsuta Shrine becomes Kuil Atsuta, etc
+::::::::::::In your view would something like this be a positive thing to run? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:35, 22 July 2025 (UTC)
+:::::::::::::@[[User:Immanuelle|Immanuelle]]: I can see that the translation is pretty good, but there might need to be some minor tweaks after you complete the mass edit. I can help with that afterwards. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 05:22, 23 July 2025 (UTC)
+::::::::::::::@[[User:Rachmat04|Rachmat04]] I applied it to an additional hundred or so. Considering this operation will add over 20,000 labels I think I want to be more sure of things. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:50, 24 July 2025 (UTC)
+:::::::::::::::I made Jingu and Taisha into Kuil Agung like {{q|Q482065}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:00, 24 July 2025 (UTC)
+::::::::::::::::The program just omits anything that is Daijinja or Daijingu or Tenmangu or Hachimangu. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:00, 24 July 2025 (UTC)
+:::::::::::::::::Hi @[[User:Immanuelle|Immanuelle]]: Sure, let's get right to it. I'll help spot-check for minor corrections afterwards. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 23:37, 24 July 2025 (UTC)
+::::::::::::::::::@[[User:Rachmat04|Rachmat04]] I am running it now. There are currently around 4,000 labelled Shrines. I think you will probably have plenty of time to look over the shrine names. 
+::::::::::::::::::btw have you heard of any project that could do something like just algorithmically display the Indonesian names without mass copying? Since across pretty much all languages, you just need to process the romaji in pretty regular ways to get a label in every language. It would help a lot with error correction, since only the english label (or maybe the Kana reading) would need to be edited to fix errors. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:28, 25 July 2025 (UTC)
+:::::::::::::::::::I decided to put off more for a bit longer to try to check some of the Shrine names for English accuracy. Will hopefully continue soon. Do you know other people who would want to help with Shrine labels in their languages? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:22, 25 July 2025 (UTC)
+::::::::::::::::::::I do not know yet who would be interested to these subjects. If you have a long-term plan to fill the local language labels in Indonesia, I can help to inform some users I know. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 07:04, 26 July 2025 (UTC)
+:::::::::::::::::::::@[[User:Rachmat04|Rachmat04]] For Indonesian my plan would be just to end with a full conversion of all the easy shrine names and maybe kami names. I have noticed a potential issue. Does {{q|Q4696584}} work well. Keep in mind the idea is that a Gokoku Shrine is a type of Shinto shrine, so this is the one for Aichi Prefecture.
+:::::::::::::::::::::Doing non-automated label imports is definitely beyond my abilities or interest. I am not learning Indonesian, I just came across a situation where adding Indonesian labels like this was good. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:58, 26 July 2025 (UTC)
+::::::::::::::::::::::I would expect that pretty much every kami name can just be imported verbatim? I would think this would be a use case for the mul label, but apparently that is not the case. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:58, 26 July 2025 (UTC)
+:::::::::::::::::::::::@[[User:Rachmat04|Rachmat04]] if I were to apply this to Japanese Buddhist temples would "Anpuku-ji Temple" be properly turned to "Wihara Anpuku-ji"? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:23, 30 July 2025 (UTC)
+::::::::::::::::::::::::How would I do {{q|Q3200280}}, I think this one is an issue [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:30, 30 July 2025 (UTC)
+:::::::::::::::::::::::::I can make sure that {{q|Q4696584}}'s Indonesian label is good. And, I added Indonesian label to {{q|Q3200280}}. I'm not sure if there is a special name for this in Indonesia, but I added it based on the English and Japanese names.
+:::::::::::::::::::::::::For the name of the deity, I believe using a verbatim name is a wise choice to align their name with appropriate name terms, particularly in Indonesian. However, I haven't come across a similar or translation name in Indonesian dedicated to the name of a Japanese god.
+:::::::::::::::::::::::::For "Anpuku-ji Temple", does the suffix "-ji" indicate the translation of "temple"? If so, you can simply use "Anpuku temple". Other than that, I'm not sure if this can be translated as "kuil" or "wihara", depending on the context. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 00:36, 31 July 2025 (UTC)
+::::::::::::::::::::::::::What context would Kuil vs Wihara be better? My main concern is that I would not want Shinto shrines and Buddhist temples to be labelled as the same thing.
+::::::::::::::::::::::::::-ji indicates temple, but it is one of a few different suffixes that all indicate a temple. To my knowledge, unlike jinja for shrine, -ji is not independent and temples are called "Tera" when it is not a part of a temple name. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:40, 31 July 2025 (UTC)
+:::::::::::::::::::::::::::@[[User:Rachmat04|Rachmat04]] so I think with that structure of temple names it would be good to keep -ji, other common suffixes are -an and -do. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:09, 31 July 2025 (UTC)
+:::::::::::::::::::::::::::I'm gonna name them Wihara for now. Will do it with quickstatements when it starts working again [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:53, 31 July 2025 (UTC)
+::::::::::::::::::::::::::::All the shrines I had planned are done. Tmeples in progress. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:00, 31 July 2025 (UTC)
+:::::::::::::::::::::::::::::I understand that the "Ampuku-ji Temple" is primarily intended for Buddhists. Therefore, it would be more appropriate to use the term "wihara" instead of "kuil" in this context.
+:::::::::::::::::::::::::::::I also second to retain the suffix "-ji" and similar designations in the Indonesian labels for now. However, if an Indonesian Wikipedia article later adopts a local name or similar designation, we can adjust the labels in Wikidata accordingly in the future. Thanks, '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 03:21, 1 August 2025 (UTC)
+::::::::::::::::::::::::::@[[User:Rachmat04|Rachmat04]] I imported kami names en masse. Here are the few ones I tried to do with words can you check them {{q|Q65249011}}, {{q|Q71133194}}, {{q|Q10948069}}, {{q|Q402052}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:20, 1 August 2025 (UTC)
+:::::::::::::::::::::::::::All good! Thanks. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 03:40, 2 August 2025 (UTC)
+:::::::::::::::::::''btw have you heard of any project that could do something like just algorithmically display the Indonesian names without mass copying? Since across pretty much all languages, you just need to process the romaji in pretty regular ways to get a label in every language. It would help a lot with error correction, since only the english label (or maybe the Kana reading) would need to be edited to fix errors.''
+:::::::::::::::::::I have not found it outside or within the Wikimedia projects. However, if the use of the Kana alphabet in Wikidata is widespread, I believe it might help make this happen someday. '''&middot;&middot;&middot;''' <span title="Cherry blossom">🌸</span> [[User:Rachmat04|'''Rachmat04''']] '''&middot;''' [[User talk:Rachmat04|<span title="Let's discuss!">☕</span>]] 07:11, 26 July 2025 (UTC)
+::::::::::::::::::::Yeah that would be good especially with other scripts. I recently learned that {{q|Q4400677}} tends to be pretty different than the Hepburn system. Using the kana names could pretty straightforwardly represent shrine names, with a simple program that places "Shrine" or whatever variant is used in the language at the front or back depending on language word order.
+::::::::::::::::::::A language could have a standard representation of Taisha, Jinja, Jingu, Daijinja, etc. And people could edit the protocol directly, if say the Russian community decides that Daijinja and Taisha should be represented the same. An opinion I disagree with, but do not have a good case for. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:30, 26 July 2025 (UTC)
+:::::::::::::::::::::Unfortunately while some people are working on this it does not appear to be anything people are working on on wikidata [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:40, 30 July 2025 (UTC)
+ 
+Conversation taken from https://www.wikidata.org/w/index.php?title=Wikidata:Project_chat/Archive/2025/08 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+
+:I am interested in Toki Pona translations of Shrine names. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 12 December 2025 (UTC)
+
+ 
+ 
+== Structuring Engishiki entries ==
+
+ 
+I have been working on getting data of the [[Q11064932|Engishiki Jinmyōchō]] on shrines here and now I am finally complete. But now there are many different relatively heterogenous properties that I want to organize better. 
+ 
+The main rankings are
+Shinkai: a ranking based on nobility
+Engishiki three ranks: Shosha, Taisha, Myojin Taisha
+Kanpei vs Kokuhei: They are typically applied alongside the three ranks, but Taisha and Myojin Taisha are merged to form Kokuhei Taisha, Kanpei Taisha etc
+ 
+Thge celebration category: what holidays the shrine is given offerings on
+ 
+The ranking in the modern system of ranked shinto shrines, which ended in 1945
+ 
+I just used instance of for every single one of these. But I hope there might be a better way of doing it
+ 
+Also at this point the shrine database [[Q135159299]] should probably be converted into an identifier. It is on over 1,000 pages now. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:37, 4 July 2025 (UTC)
+ 
+:Here is an example of such a shrine with the many traits all being described through the instance of property [[Q3197197]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:01, 4 July 2025 (UTC)
+::Likewise it might be better to merge in the archaic kana readings with the official name in the engishiki or something like that. Would cause less confusion for people thinking it is a contemporary reading, when the kana represents Old Japanese. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:21, 4 July 2025 (UTC)
+:::@[[User:Immanuelle|Immanuelle]] The issues with your edits have been pointed out at [[Wikidata:井戸端#誤った英語ラベルを大量追加する利用者がいる]]. The pronunciation ({{P|1814}}) you added abbreviates “jinja” with a hyphen, which does not conform to current Wikidata standards. Furthermore, since you did not specify in the qualifier that it is an Old Japanese reading, it may be mistakenly understood as a modern Japanese reading. Additionally, the values for {{P|31}} mix items from ancient times with those from the modern era, which risks turning this into a graveyard of inconsistent data. [[User:Afaz|Afaz]] ([[User talk:Afaz|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:09, 4 July 2025 (UTC)
+::::@[[User:Afaz|Afaz]] would your suggestion be to move it as a qualifier of the official names that I have which are time linked?
+::::As for the ranks. All of the Shinkai are former ranks because the system was abolished. I think things being Myojin Taisha is still actively discussed today. But do you have suggestions for the rank structure? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:32, 4 July 2025 (UTC)
+:::::Also to my knowledge the idea that the hyphen represents an abbreviation of "jinja" is actually incorrect. Because a lot of the time it represents that no pronounciation guides survive giving that part of the pronounciation, and also I think 神社 was typically read as カミヤシロ  the time. You can see that some of the data has the hyphens and others parts do not. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:44, 4 July 2025 (UTC)
+::::::I wrote this proposal [[Wikidata:Property_proposal/Kokugakuin_University_Shrine_Database_ID]], and will attempt to write other proposals for things related to this. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:21, 4 July 2025 (UTC)
+:::::::I have a few other ones active here [[Wikidata:Property_proposal/Place]] Any idea how long it takes for discussion to start? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:33, 5 July 2025 (UTC)
+::::::::My hope is that if we move all of these into their own properties all of this would be much more clear. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:39, 5 July 2025 (UTC)
+::::@[[User:Afaz|Afaz]] I fixed the kana. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:29, 5 July 2025 (UTC)
+:::::So do you think I should add "カミヤシロ" at the end of every katakana entry? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:25, 5 July 2025 (UTC)
+::::::The incomplete ones are also an issue. I think they are useful information but maybe some kind of qualifier to indicate the kana is incomplete? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:40, 5 July 2025 (UTC)
+:::::::I really hope that the kana change was helpful. I’m sorry about any issues that I caused. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:27, 5 July 2025 (UTC)
+::::::::Anyways I’m gonna not do any mass creations anymore in the foreseeable future. Will focus on fixing up the Engishiki Shrines [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:55, 5 July 2025 (UTC)
+:::::::::I decided to move the order stuff based on how JRagusa moved the things in Kasuga Taisha [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:01, 7 July 2025 (UTC)
+ 
+conversation taken from https://www.wikidata.org/w/index.php?title=Wikidata:Project_chat/Archive/2025/07 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+
+:I am still unsure what is supposed to be done with the kana, and generally questioning the kana and how they have been used. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:43, 12 December 2025 (UTC)
+::The [https://ja.wikipedia.org/wiki/Template:%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7/%E5%87%A1%E4%BE%8B legend] says this which might be a clue to the kana origins. But I canot really understand where this is saying the shrine readings come from.
+::{{quote|<br>1）「神名帳」列は、[{{NDLDC|1442211/160}} 『延喜式 上巻』]（大岡山書店、昭和4年、国立国会図書館デジタルコレクション）等における『[[延喜式]]』[[延喜式神名帳|神名帳]]の記載を基に作成。社名表記は[http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html 神社史料集成]（5を参照）における字体（異体字がある場合には新字体・通用性の高い字体を使用）を基準とした。読みの「-」部分は、「神社」以外で仮名が振られていない部分。「○座」は座数を表し、一座の場合は記載していない。<br /><br>2）格の「名神大」は[[名神大社]]を、「大」は式内大社（名神大社除く）を、「小」は式内小社を意味する。付記は社名とともに記されているもので、一部は「[[式内社#式内社の社格]]」を参照。<br /><br>3）比定社が複数ある場合、最も有力なものを無冠で示し、他の論社には「（論）」を冠した。<br /><br>4）本来の式内社とは認めがたいものの、式内社を合祀したなどその後継を主張するもの、その他参考の神社には「（参）」を冠した。<br /><br>5）「集成」列は[http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html 神社史料集成]（國學院大學21世紀COEプログラム「神道・神社史料集成」）における神社項へのリンク先を記載。
+::}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:00, 14 December 2025 (UTC)
+::
+
+::Well specifically at https://web.archive.org/web/20060211055411/http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html the {{q|Q135037878}} I am struggling to find the kana [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:01, 14 December 2025 (UTC)
+:::Conversation continued at [[#Cleaning up Engishiki kana]]. It does not appear that the kana have any actual source, so I am gonna file a bot request to deprecate the kana in addition to removing it from the ones it does not apply to. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:05, 15 December 2025 (UTC)
+
+ 
+ 
+== Content from [[Talk:Q11064932|Talk:Engishiki Jinmyōchō]] ==
+
+=== Errors ===
+
+This one is suspicious [[Q135039477]]
+
+Last few like this one [[Q134927674]] on [[Q11380552]] have a couple issues [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:38, 2 July 2025 (UTC)
+
+:[[Q135039477|Asawino Shrine]] appears real according to some sources but is not in the current database
+:[[Q11380552|List of Shikinaisha in Izu Province]] has a bit of inconsistencies at the end which I have not been able to sort out [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:39, 2 July 2025 (UTC)
+
+=== Izu Province erroneous ones ===
+
+* [[Q135039683|Mikatamano- shrine]][[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:22, 3 July 2025 (UTC)
+*:I think this one is actually a properly done one. Just has some weird aliases [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:22, 3 July 2025 (UTC)
+*::Yeah confirmed this one is proper [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:23, 3 July 2025 (UTC)
+* [[Q116694076|Morokuchi Shrine]][[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:22, 3 July 2025 (UTC)
+*:Appears to be absent from the new database and was erroneously merged [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:24, 3 July 2025 (UTC)
+*::Reversed edits for this one and subsequent ones.  Manually adding the info to the other two [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:26, 3 July 2025 (UTC)
+*:::This one is present in this list and jawiki https://web.archive.org/web/20210414045850/http://21coe.kokugakuin.ac.jp/db/jinja/jinjastate13.html [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:31, 3 July 2025 (UTC)
+* [[Q119929626|Toi Shrine (Izu)]][[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:22, 3 July 2025 (UTC)
+*:Got the link here done. Other stuff might be good to add [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:06, 3 July 2025 (UTC)
+*::豊御玉命神社 is present in https://web.archive.org/web/20210414045850/http://21coe.kokugakuin.ac.jp/db/jinja/jinjastate13.html [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:10, 3 July 2025 (UTC)
+*:::Also covered here? https://jmapps.ne.jp/kokugakuin/det.html?data_id=181654 Is this a ronsha being poorly represented? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:16, 3 July 2025 (UTC)
+* [[Q134927674|Hachiman Shrine (Otoi)]][[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:22, 3 July 2025 (UTC)
+*:I think this one might be this 青玉比売命神社 in the list [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:10, 3 July 2025 (UTC)
+*::Covered in the database here https://jmapps.ne.jp/kokugakuin/det.html?data_id=181655 [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:15, 3 July 2025 (UTC)
+
+Check them to see if there are database entries were mismatched or something [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:20, 3 July 2025 (UTC)
+
+=== [[Q119929626|Toi Shrine (Izu)]] vs [[Q134927674|Hachiman Shrine (Otoi)]] ===
+
+[[Q119929626|Toi Shrine (Izu)]] vs [[Q134927674|Hachiman Shrine (Otoi)]] is a question here. I think they are both ronshas and incorrectly represented on Japanese wikipedia. This is slightly confusing but I think we have progress. They are distinct too https://web.archive.org/web/20210414045850/http://21coe.kokugakuin.ac.jp/db/jinja/jinjastate13.html [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:18, 3 July 2025 (UTC)
+
+:No they are distinct in the database. So I think Morokuchi Shrine might be the only actually absent one. But aliases were confusing [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:20, 3 July 2025 (UTC)
+
+=== Hypothesis ===
+
+I think that the database might have de-duplicated shrines with identical names for some reason if they are in the same province
+
+So it got 浅井神社 - 
+* Present: [[Q11556984]]
+* Removed: [[Q135039477]] 
+[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:37, 3 July 2025 (UTC)
+
+:Confusing and possibly malformed Ronshas. But 2 ronshas appear to be here [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:38, 3 July 2025 (UTC)
+::Fixed it but still a bit weird. Want to organize it better [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:50, 3 July 2025 (UTC)
+
+And it got 国玉命神社 - 
+* Present: [[Q134930702]] 
+* Removed: [[Q116694076]]
+[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:37, 3 July 2025 (UTC)
+
+:Has five ronshas. I do not think there is lost information here [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:38, 3 July 2025 (UTC)
+
+So lets hope it does not do this again and we will not have further issues. I got a couple random malformations that were my fault but this is the main database issue [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:30, 3 July 2025 (UTC)
+
+:Both have described Ronshas so I can work with the ronshas and try to resolve things after the import is finished [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:31, 3 July 2025 (UTC)
+
+=== Issue with shrines predecing Noto Province ===
+
+Look into issues with shrines before [[Q11612019]] there appears to be another missing one before it [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:22, 3 July 2025 (UTC)
+
+:Issue confirmed limited to List of Shikinaisha in Kaga Province ([[Q11399659]]) [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:27, 3 July 2025 (UTC)
+::Appears to be absence of [[Q135040298]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:29, 3 July 2025 (UTC)
+:::Fixed that issue [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:34, 3 July 2025 (UTC)
+
+=== Error with Izumo Province ===
+
+Seems to start at Miwosano shrine (Q135040911) [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:06, 3 July 2025 (UTC)
+
+:Seems to start at [[Q135040786]] where there is a present or absent shrine that messes it up [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:23, 3 July 2025 (UTC)
+===Source===
+
+All of this comes from [[Talk:Q11064932]] and was stuff I was working on actively during the import. Potentially useful but doesn't have a massive amount of context [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:43, 17 December 2025 (UTC)
+
+== Beginning of new content ==
+
+ 
+Here is the beginning of new content. Stuff before this is older ones taken from archives since they are important conversations relevant to this project.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 2 December 2025 (UTC)
+
+== Ontology insights ==
+
+<!--this is an original one-->
+So I realized that the fundamental issue we have been facing with the Shikinaisha is the merging. 
+ 
+I propose that as a hack we use the external id so like {{q|Q135195256}} has {{q|P13677}} https://jmapps.ne.jp/kokugakuin/det.html?data_id=182573#:~:text=（２） 
+ 
+It is not ideal but the actual point in the database is actually preserved in most instances of {{q|Q135038714}} for the second database import. Because the {{q|P1352}} property is a number that corresponds to the number of sub-item in it. The number is in brackets with full width characters to add a piece of annoyance.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:29, 2 December 2025 (UTC)
+
+:More discussion on the external identifier situation is happening here [[Wikidata:Project_chat#Subheadings_in_an_external_identifier]] but it is mostly technical and not worth moving here. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:30, 2 December 2025 (UTC)
+::I have decided to use {{q|P958}} to indicate the part of the page that the id uses. As used in {{q|Q137184253}}.
+::I would like to write and execute a simple bot that would go through all instances of {{q|Q135038714}}. It will take the {{q|P958}} qualifier on the shrine, and then it will go to all of the ronshas and give each one its respective number as a {{q|P958}} qualifier. 
+::In the event of a ronsha having multiple identifiers then it will find the matching one with the shikinaisha in question and attach it there. This is not a common occurrence but it does happen with a few Ronshas.
+::The bot will only do this simple task and nothing else.
+::Would all of you be cool with me running such a bot like this? I hope this is a simple enough project that not much can go wrong with it. And how long do you suggest I wait to be sure everyone is okay with this?
+::{{ping project|Japan}}
+::{{ping project|Religions}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:27, 2 December 2025 (UTC)
+:{{Oppose}} その手順で正しい結果が出るのでしょうか？　まだ私は納得できません。　百歩譲ってもし仮に、正確な動作をするボットを作ったとしても、ボット動作の土台となるべき現状のデータ状態に誤りが有るのならば、ボットは誤った結果を残すはずですよね。 User:Immanuelle さんがデータインポートをする前から、いろいろな誤りが存在していたはずです。それらを全て把握していますか？解消できましたか？　私が心配していることは「User:Immanuelle さんがデータベースを壊すこと」だけでなく「すでに存在していた小さな欠点が、User:Immanuelle さんの行動によって影響範囲が広がって致命的な破壊がうみだされてしまうこと」も含めて心配をしています。
+:私の言いたいことがわかりますか？「この手順で正しい結果が出ることの説明」を望んでいるわけではありません。「新しいことをやるなら十分な時間をかけて合意をとれよ」ということです。 --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:25, 7 December 2025 (UTC)
+::それよりもなによりも、日本語文献の読解が困難な人は、日本関連項目で大きな動きをするなよ。データベース設計の知識の少ない人が（←私も他人に言えるほどの設計実績はありませんけど）まるでおもいつきのように新しいプロパティリンクをうみだすなよ。ってことです。 [[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:34, 7 December 2025 (UTC)
+:::The numbers are not perfectly preserved. However I do believe that we can relatively easily do this and make the identifier more useful. And afterwards we can definitely fill out the identifier for this. We could even add a heading number as {{q|Q21510856}} for the property. Would you support it if we had more examples to demonstrate it working well, and more examples of the edge cases which would require manual fixes or secondary fixing methods?
+:::{{quote|番号が完全に保存されているわけではありませんが、この方法であれば比較的容易に処理でき、識別子をより有用なものにできると考えています。<br>その後で、この識別子をさらに充実させることも可能です。必要であれば、このプロパティに見出し番号を {{q|Q21510856}} のように追加することもできます。<br>この方法がうまく機能している例をさらに提示し、また手作業での修正が必要となるケースや、二次的な対処方法が必要となる例についても示した上であれば、ご支持いただけますでしょうか？|translation}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:51, 9 December 2025 (UTC)
+::::If we were to do this, I believe it would make it much easier to correct errors. Because we can easily see irregularities using constraint violations. While right now constraint violations are not useful. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:33, 11 December 2025 (UTC)
+:::::This is something I would consider a rather core ontology discussion or policy decision that needs a lot of long term attention. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:37, 21 December 2025 (UTC)
+ 
+== Background on import issues ==
+
+ 
+In the months of June and July I did a mass import of Engishiki data. First from Japanese Wikipedia, which has a lot of info from the {{q|Q135037878}}<!--old shrine database--> and second from the {{q|Q135159299}}<!--new shrine database-->.
+ 
+A major problem is that this caused duplicate Ronsha to proliferate. Because they were not properly deduplicated in my imports. 
+ 
+They are divided into
+ 
+# Neither database had Ronshas
+# Only the old database had Ronshas
+# Only the new database had Ronshas
+# Both databases had Ronshas
+ 
+Each one had its own unique import issues. I am going to try to put together Listeriabot tables to illustrate the problems with all of them and our progress in fixing them.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:29, 2 December 2025 (UTC)
+
+:Here is my table I made for situation number 4 [[Wikidata:WikiProject Shinto/ronsha deduplication (both imports have ronsha)]]. However a problem I have with it is that a lot of false positives show up for already deduplicated ronshas. I would like to run an automated script to fix the duplicates in the {{q|P460}} property. For {{q|P460}} properties if there are duplicates pointing to the same qid and one has qualifiers and the other does not, then it will remove the one without qualifiers. Such situations originated with the non-qualified one coming from the first import, and the qualified one coming from the second. And then the two being merged later, but the unqualified one not removed. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:35, 2 December 2025 (UTC)
+
+== Fundamental issues of Ronshas ==
+
+As mentioned in [[Wikidata talk:WikiProject Religions]] we have issues related to the duplication of Ronshas.
+
+These issues fundamentally come from the fact that I did two data imports: One from the articles on {{q|Q177837}} which were created in 2013. I believe the data there from {{q|Q135037878}}. And by contrast I directly imported from {{q|Q135159299}} with data from 2025.
+
+There were some issues related to a few shrines existing in one but not the other, and I am not certain why this happened, but I believe that has been fully resolved.
+
+The main issue now is the Ronshas. 
+
+Shrines that have multiple candidates are listed as {{q|P31}} {{q|Q135038714}}
+
+They are linked to their Ronshas with {{q|P460}}. 
+
+We have four potential situations with Ronshas in imports
+
+# Neither database had Ronshas
+# {{q|Q135037878}} had Ronshas but not {{q|Q135159299}}
+# {{q|Q135159299}} had Ronshas but not {{q|Q135037878}}
+# Both had Ronshas
+
+I am going to make headings on dealing with potential issues on all four of these situations.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:44, 30 November 2025 (UTC)
+
+:[[#Both databases had Ronshas]] has been resolved. All {{q|Q135038714}} now either have no ranked ronshas or all ronshas are ranked. With a rank zero implying that the ronshas have origin elsewhere and merges are inappropriate [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:35, 3 December 2025 (UTC)
+
+=== Neither database had Ronshas ===
+
+This is the safest point. We do have some other data issues such as mismatched coordinates but most things are fine here [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:44, 30 November 2025 (UTC)
+
+:There will of course be other ontological issues on these shrines but the merge thing is not one [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:40, 2 December 2025 (UTC)
+
+
+
+=== only old has ronshas ===
+I think this is plausible but it is not something I have seen yet. As a result I am not sure what to comment on the nature of such cases.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:47, 30 November 2025 (UTC)
+
+The way I am trying to find these cases is simple: 1st import does not have a ranking property on the ronshas, this means that ronshas added by it can be clearly differentiated from Ronshas that were added in the second import. So if there are no ranking qualifiers that means that all the ronshas are from the first import. This group seems to exist but I am not certain how to analyze it.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:58, 30 November 2025 (UTC)
+
+:Query here, unsure what to do with it [[Wikidata:WikiProject_Shinto/ronsha_deduplication_(all_unranked)]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:34, 3 December 2025 (UTC)
+::I belive most of these are ones where the ranked statements were removed for some reason, not ones where the ronshas come from jawiki [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:49, 3 December 2025 (UTC)
+:::It looks pretty mixed and confusing. I think we should just not take action on these until we understand what generally led to this structure. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:34, 3 December 2025 (UTC)
+
+=== Only new had ronshas===
+This situation is much more common because the new one does not effectively differentiate Ronshas from other shrine components. Likely most cases here are ones of the Ronshas being misidentified shrine components.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:47, 30 November 2025 (UTC)
+
+:I am adding code like the one above for this one. But the difference with this one is that after the merging this is what I preferentially edited things to be. So this list has some that belong in [[#Both databases had Ronshas]] and likely will come to have all of the Ronshas in them as time goes on. The main potential issue with this one is if there is a wikipedia article or something otherwise important connected to the parent of the ronshas. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:02, 30 November 2025 (UTC)
+
+== Labels of Disputed Shikinaisha in non CJK languages ==
+
+Currently the labels of {{q| Q135038714}} are adaptations of the Engishiki kana from Japanese Wikipedia. 
+
+I did this because the readings were easy to find, and I felt they were more historically accurate. 
+
+However it might be best to anachronistically give them modern Japanese readings. Does anyone have thoughts on this? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:38, 3 December 2025 (UTC)
+
+:As per [[#Cleaning up Engishiki kana]] I feel it is best to use contemporary readings. Because the kana readings seem to not have proper citations in the first place. Although my search is not quite complete yet. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:44, 14 December 2025 (UTC)
+::This is confirmed. None of the kana readings were found in my search. So these readings are effectively unsourced. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:33, 21 December 2025 (UTC)
+
+== Archiving issue ==
+
+We had the bot prematurely archive conversations here https://www.wikidata.org/w/index.php?title=Wikidata_talk%3AWikiProject_Shinto&diff=2437506903&oldid=2437481109 and had to undo it here https://www.wikidata.org/w/index.php?title=Wikidata_talk%3AWikiProject_Shinto&diff=2437567331&oldid=2437566831 lets hope that does not happen again but we might have a glitch somewhere. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:30, 3 December 2025 (UTC)
+:It seems to be still going on. I am working on a fix.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:43, 9 December 2025 (UTC)
+::I think I’ll remove all archiving until I can figure this out. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:27, 9 December 2025 (UTC)
+:::As the objectives of this chat have been achieved I mark this as resolved {{#ifeq:[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)| | <!-- then --><div style="border-style:solid; font-size:90%; margin:2px 0; padding:8px; clear:both;">{{Section resolved/text/{{#ifexist:Template:Section resolved/text/{{USERLANGUAGE}}|{{USERLANGUAGE}}|en}}}}<!-- link for error tracking: --><div style="display:none;">[[Template:Autoarchive resolved section/parameter error]]</div></div> <!-- else --> | {{{{#ifexist:{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module|{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module |Section resolved/standard module}}|1=[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)|2= |subst= }} }}
+
+== Adding end dates to P13723 items ==
+
+I want to add the qualifiers {{q|P582}} "2 February 1946" and {{q|P1534}} {{q|Q3029647}} as qualifiers to all existing {{q|P13723}} statements. This will make it easier to differentiate this from potential later {{q|P13723}} statements indicating earlier ranks
+
+This will not include any {{q|P13723}} statements that already have {{q|P582}} statements as many of those shrines lost the rank due to Japanese withdrawal from colonial territories. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:53, 5 December 2025 (UTC)
+
+:As the objectives of this chat have been achieved I mark this as resolved {{#ifeq:[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)| | <!-- then --><div style="border-style:solid; font-size:90%; margin:2px 0; padding:8px; clear:both;">{{Section resolved/text/{{#ifexist:Template:Section resolved/text/{{USERLANGUAGE}}|{{USERLANGUAGE}}|en}}}}<!-- link for error tracking: --><div style="display:none;">[[Template:Autoarchive resolved section/parameter error]]</div></div> <!-- else --> | {{{{#ifexist:{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module|{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module |Section resolved/standard module}}|1=[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)|2= |subst= }} }}
+
+== Terms consern Shintō ==
+
+=== Shōkon-sha and Shokan-sha ===
+招魂社(Shōkon-sha,{{q|Q11497810}},{{q|Q55587924}})と所管社(Shokan-sha,[[:commons:Category:Naiku Shokansha]],[[:commons:Category:Geku Shokansha]])は別の単語です。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:28, 6 December 2025 (UTC)
+
+:I split them apart. Now I made a new item for the commons category {{q|Q137248883}}. Thank you for pointing this out! [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:38, 6 December 2025 (UTC)
+
+(en) Shōkon-sha is defferent from Shokan-sha.
+
+=== translitelation of 式外社 ===
+式外社のふりがなは「しきげしゃ」のようです。これをヘボン式ローマ字にすると、"Shikigesha"です。"Shikigeisha"にはなりません。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:28, 6 December 2025 (UTC)
+
+(en) Hepburn-style transliteration of 式外社 is "Shikigesha", not "Shikigeisha".
+
+=== Please teach me about {{q|Q135018062}} ===
+User:Immanuelleさんが Q135018062 と呼んでいることがらについて、いくつか質問があります。教えてください。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:28, 6 December 2025 (UTC)
+
+==== 1st question about {{q|Q135018062}} / citation ====
+{{q|Q135018062}} と一緒に {{p|P1545}} をお使いですよね。この番号はなにかの出版物に書いてあるのでしょうか？それともあなたが数えた結果ですか？
+
+たとえば {{statement|Q135041484|P31|Q135018062}} with {{p|P1545}}=2770であるとして、私は日本の図書館に行って「建男霜凝日子神社の延喜式神名帳のseatの番号は2770番だ、ってカナダの人が言ってたんだけど。そういうのが書いてある本を見たいので<<書名・ページ・ISBNまたはそれに代わるもの>>をコピーしてほしい。よその図書館でもいいから探して取り寄せてほしい。」って言いたいんで、その<<書名・ページ・ISBN>>を教えてください。（あなたの書いた紙片やエクセルを見たいというわけではありません。）　今は図書館に行かなくてもクリックすれば見えちゃうのかな？ URL-link でもいいかな、ってことですね。
+
+(en) not yet translated
+
+第2の質問を書いてる時間が無い。何週間後になるかわからんけどまた来るよ。 --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:28, 6 December 2025 (UTC)
+
+(en) Now, I've no time. See you again few week later with 2nd question.  --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:28, 6 December 2025 (UTC)
+
+:Yes, I counted them myself. As a result I think that they should be removed. Especially with the {{q|Q135018062}} vs {{q|Q134917286}} ordinals. 
+:Likewise the {{q|P31}} {{q|Q135018062}} is something I see as having been a mistake for all things with that property except for the parts of the {{q|Q11391709}} and {{q|Q10928586}}. Perhaps moving it to {{q|P527}} {{q|Q135018062}} or removing it. 
+:{{quote|はい、あの番号は私が自分で数えたものです。<br>なので、いったん全部外したほうがいいと思っています。特に {{q|Q135018062}} と {{q|Q134917286}} の並び順の問題があるので、なおさらですね。<br>それから、{{q|P31}} が {{q|Q135018062}} になっている件も、今ではほとんどの場合は付けるべきじゃなかったと思っています。{{q|Q11391709}} や {{q|Q10928586}} の一部以外は、誤りだったかなと感じています。<br>{{q|P527}} の下に置き直すか、いっそ削除するか、そのあたりを検討したほうが良さそうです。|translation}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:49, 6 December 2025 (UTC)
+::Would you be in support of a bot request to remove the improperly applied ordinals and to fix the {{q|Q135018062}} issues? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:34, 11 December 2025 (UTC)
+:::もう消しちゃったんですね。 {{support}} 賛成（追認）します。　--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:14, 2 January 2026 (UTC) 　そして、すでにほぼ全部が消えているのならば、 Q135018062 に関するの私の質問の、2番目以後を問いかける理由も御返答をもらう目的も無くなってしまいました。　それと引換に、さきに早めに書いておきたいことを、他に色々と思いついたので、そういうのを先にやったうえで時間に余裕ができる時がもし来たら、もしかしたら「この時用意していた2番目の質問の内容は、・　・　・　・　・。（もちろん返答不要なのですよ。いつなのかわからない未来の仮定なのですから。）」って感じで公表することになるかもしれませんね。 --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:14, 2 January 2026 (UTC)
+
+== Proposed bot edit to cleanup number issues ==
+
+I propose removing all {{q|P31}} {{q|Q135018062}} claims except for on the following:
+
+{{q|Q135016830}}, {{q|Q135017419}}, {{q|Q135017422}}, {{q|Q135017425}}, {{q|Q135017429}}, {{q|Q135017431}}, {{q|Q135017435}}, {{q|Q135017438}}, {{q|Q135018984}}, {{q|Q135018989}}, {{q|Q135018991}}, {{q|Q135018993}}, {{q|Q135018996}}
+
+This includes ones with qualifiers or references
+
+On all {{q|P31}} {{q|Q134917286}} claims I propose removing the {{q|P1545}} qualifier
+
+This is because the {{q|P31}} {{q|Q135018062}} claim is pointless, it was accidentally created. Likewise the {{q|P1545}} qualifier on the {{q|P31}} {{q|Q134917286}} claims was just counted automatically and does not correspond to anything in literature.
+
+I hope that all of these ones are uncontroversial [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:09, 11 December 2025 (UTC)
+
+:This is in response to [[#Terms consern Shintō]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:23, 11 December 2025 (UTC)
+::@[[User:JRagusa|JRagusa]] do you have opinions on this proposal? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:35, 11 December 2025 (UTC)
+:::If the claim is indeed pointless and created by accident, removal may not be a bad thing, [[User:Maculosae tegmine lyncis|Maculosae tegmine lyncis]] ([[User talk:Maculosae tegmine lyncis|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:39, 11 December 2025 (UTC)
+::::@[[User:勿来直通|勿来直通]] do you think this is a good and uncontroversial edit proposal? [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:51, 12 December 2025 (UTC)
+:::::As per [[#Proposed automatic edits]] I intend on filing a request after a week of discussion [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:08, 14 December 2025 (UTC)
+::::::Been a week [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:13, 18 December 2025 (UTC)
+:::::::See [[Wikidata:Bot_requests#Request_to_cleanup_Shikinaisha_%282025-12-18%29]] [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:20, 18 December 2025 (UTC)
+::::::::As the objectives of this chat have been achieved I mark this as resolved {{#ifeq:[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)| | <!-- then --><div style="border-style:solid; font-size:90%; margin:2px 0; padding:8px; clear:both;">{{Section resolved/text/{{#ifexist:Template:Section resolved/text/{{USERLANGUAGE}}|{{USERLANGUAGE}}|en}}}}<!-- link for error tracking: --><div style="display:none;">[[Template:Autoarchive resolved section/parameter error]]</div></div> <!-- else --> | {{{{#ifexist:{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module|{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module |Section resolved/standard module}}|1=[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:04, 5 January 2026 (UTC)|2= |subst= }} }}
+
+== Proposal to remove descriptions referencing Engishiki numbers ==
+
+I propose removing all short descriptions that reference the numer in the Engishiki Jinmyocho. There are [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fdesc%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ134917286%20.%0A%20%20%3Fitem%20schema%3Adescription%20%3Fdesc%20.%0A%20%20FILTER%28LANG%28%3Fdesc%29%20%3D%20%22en%22%29%0A%20%20FILTER%28REGEX%28%0A%20%20%20%20%3Fdesc%2C%0A%20%20%20%20%22%5EThe%20%5B0-9%5D%2B%28st%7Cnd%7Crd%7Cth%29%20Shrine%20of%20the%20Engishiki%20Jinmy%C5%8Dch%C5%8D%24%22%0A%20%20%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22.%0A%20%20%7D%0A%7D%0AORDER%20BY%20%3FitemLabel%0A 1900] such descriptions and I think just removing the description is good to move away from that issue. We can decide on better descriptions later. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:27, 12 December 2025 (UTC)
+
+:As per [[#Proposed automatic edits]] I intend on filing a request after a week of discussion [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:08, 14 December 2025 (UTC)
+
+== Cleaning up Engishiki kana ==
+
+Engishiki kana need a cleanup. 
+
+During my first import I added this as a simple raw property of the shrines, and in response to criticism I moved them as qualifiers of the {{q|P1448}} property in most shrines.
+
+Most of them are kept as qualifiers of the official name property. But some as in {{q|Q195714}} and {{q|Q11546041}} ended up not being properly moved.
+
+The kana are rather awkward since they were directly imported from Japanese wikipedia. 
+
+None of them contain jinja or kamiyashiro in their names. Some people have mentioned here [[#Structuring Engishiki entries]] that they should all have "jinja" at the end of their names, but I have not seen anyone express clear support for a replacement of that, and my wariness on the topic in the past came from being unsure whether jinja or kamiyashiro is the reading to put at the end of such kana.
+
+There is likewise a concern around where these kana actually come from and whether there is a basis for them. I will move a comment below this to explain what I have found [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:46, 14 December 2025 (UTC)
+:I am still unsure what is supposed to be done with the kana, and generally questioning the kana and how they have been used. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:43, 12 December 2025 (UTC)
+::The [https://ja.wikipedia.org/wiki/Template:%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7/%E5%87%A1%E4%BE%8B legend] says this which might be a clue to the kana origins. But I canot really understand where this is saying the shrine readings come from.
+::{{quote|<br>1）「神名帳」列は、[{{NDLDC|1442211/160}} 『延喜式 上巻』]（大岡山書店、昭和4年、国立国会図書館デジタルコレクション）等における『[[延喜式]]』[[延喜式神名帳|神名帳]]の記載を基に作成。社名表記は[http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html 神社史料集成]（5を参照）における字体（異体字がある場合には新字体・通用性の高い字体を使用）を基準とした。読みの「-」部分は、「神社」以外で仮名が振られていない部分。「○座」は座数を表し、一座の場合は記載していない。<br /><br>2）格の「名神大」は[[名神大社]]を、「大」は式内大社（名神大社除く）を、「小」は式内小社を意味する。付記は社名とともに記されているもので、一部は「[[式内社#式内社の社格]]」を参照。<br /><br>3）比定社が複数ある場合、最も有力なものを無冠で示し、他の論社には「（論）」を冠した。<br /><br>4）本来の式内社とは認めがたいものの、式内社を合祀したなどその後継を主張するもの、その他参考の神社には「（参）」を冠した。<br /><br>5）「集成」列は[http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html 神社史料集成]（國學院大學21世紀COEプログラム「神道・神社史料集成」）における神社項へのリンク先を記載。}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:00, 14 December 2025 (UTC)
+::
+
+::Well specifically at https://web.archive.org/web/20060211055411/http://21coe.kokugakuin.ac.jp/db/jinja/jinjaindex.html the {{q|Q135037878}} I am struggling to find the kana [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:01, 14 December 2025 (UTC)
+:::I have ran a script of downloading everything archived at http://21coe.kokugakuin.ac.jp/db/jinja/* I provisionally ran scripts to find the kana readings present on jawiki. I cannot find any at all. I do not have the full dataset but I am convinced that the kana are for all intents and purposes uncited. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:30, 14 December 2025 (UTC)
+::::I think for all of them we should somehow add {{q|P2241}} {{q|Q99949087}} or {{q|Q2492572}}. Some kind of deprecation because of the fact that the kana readings seem much more suspicious than I thought. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:42, 14 December 2025 (UTC)
+:::::I can confirm no pronounciations are present on any surviving fragments of {{q|Q135037878}} [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:40, 14 December 2025 (UTC)
+:As per [[#Proposed automatic edits]] I intend on filing a request after a week of discussion [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:59, 15 December 2025 (UTC)
+::You can find all of the katakana names with [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3FofficialName%20%3FkanaName%20WHERE%20%7B%0A%20%20%3Fitem%20p%3AP1448%20%3Fstmt%20.%0A%0A%20%20%3Fstmt%20ps%3AP1448%20%3FofficialName%20%3B%0A%20%20%20%20%20%20%20%20pq%3AP1814%20%3FkanaName%20.%0A%0A%20%20FILTER%28LANG%28%3FofficialName%29%20%3D%20%22ojp-hani%22%29%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22.%0A%20%20%7D%0A%7D%0A this SPARQL query] for future normalization attempts. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:22, 19 December 2025 (UTC)
+
+== Removing duplicate P460 properties from ronshas ==
+
+On instances of {{q|Q135022904}} it is very common for there to be duplicate {{q|P460}} properties with the only difference being that one has a source and one does not. For example on {{q|Q195714}}. I want to run a bot edit to get rid of this since they clutter the entry without adding anything. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:44, 14 December 2025 (UTC)
+
+:As per [[#Proposed automatic edits]] I intend on filing a request after a week of discussion [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:59, 15 December 2025 (UTC)
+::As the objectives of this chat have been achieved I mark this as resolved {{#ifeq:[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:03, 5 January 2026 (UTC)| | <!-- then --><div style="border-style:solid; font-size:90%; margin:2px 0; padding:8px; clear:both;">{{Section resolved/text/{{#ifexist:Template:Section resolved/text/{{USERLANGUAGE}}|{{USERLANGUAGE}}|en}}}}<!-- link for error tracking: --><div style="display:none;">[[Template:Autoarchive resolved section/parameter error]]</div></div> <!-- else --> | {{{{#ifexist:{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module|{{#titleparts:{{SUBJECTPAGENAME}}|1}}/resolved module |Section resolved/standard module}}|1=[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:03, 5 January 2026 (UTC)|2= |subst= }} }}
+
+== Getting the two major property proposals through ==
+
+We have [[Wikidata:Property proposal/Engishiki Funding Category]] and [[Wikidata:Property proposal/Engishiki Rank]] still running. How can we get these through so we can finally overcome the massive P31 misuse. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:25, 18 December 2025 (UTC)
+
+== If we want to implement disputed shikinaisha commons categories ==
+
+If we want to do this, we can use [https://query.wikidata.org/#SELECT%0A%20%20%3Fdisputed%20%3FdisputedLabel%0A%20%20%3Fcandidate%20%3FcandidateLabel%0A%20%20%3FcommonsCategory%0AWHERE%20%7B%0A%20%20%7B%0A%20%20%20%20SELECT%20%3Fdisputed%20WHERE%20%7B%0A%20%20%20%20%20%20%3Fdisputed%20wdt%3AP31%20wd%3AQ135038714%20.%0A%20%20%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%20%3Fdisputed%20wdt%3AP373%20%5B%5D%20%7D%0A%0A%20%20%20%20%20%20%3Fcandidate%20wdt%3AP460%20%3Fdisputed%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20wdt%3AP373%20%3FcommonsCat%20.%0A%20%20%20%20%7D%0A%20%20%20%20GROUP%20BY%20%3Fdisputed%0A%20%20%20%20HAVING%20%28COUNT%28DISTINCT%20%3Fcandidate%29%20%3E%3D%202%29%0A%20%20%7D%0A%0A%20%20%23%20Re-bind%20the%20rows%20we%20want%20to%20display%0A%20%20%3Fcandidate%20wdt%3AP460%20%3Fdisputed%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20wdt%3AP373%20%3FcommonsCat%20.%0A%0A%20%20BIND%28%0A%20%20%20%20IRI%28CONCAT%28%0A%20%20%20%20%20%20%22https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FCategory%3A%22%2C%0A%20%20%20%20%20%20ENCODE_FOR_URI%28%3FcommonsCat%29%0A%20%20%20%20%29%29%20AS%20%3FcommonsCategory%0A%20%20%29%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22.%20%7D%0A%7D%0AORDER%20BY%20%3FdisputedLabel%20%3FcandidateLabel%0A this SPARQL query] to find the instances of {{q|Q135038714}} which have commons categories on at least two of their ronshas, so we can add a category for the disputed one that connects the two. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:52, 19 December 2025 (UTC)
+
+== Language coverage for shrines ==
+
+Here is a [https://query.wikidata.org/#SELECT%20%3Flang%20%28COUNT%28%3Fitem%29%20AS%20%3Fcount%29%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ845945.%20%20%20%20%20%23%20instance%20of%20Shinto%20shrine%0A%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel.%0A%20%20BIND%28LANG%28%3Flabel%29%20AS%20%3Flang%29%0A%20%20FILTER%28%3Flang%20%21%3D%20%22%22%29%0A%7D%0AGROUP%20BY%20%3Flang%0AORDER%20BY%20DESC%28%3Fcount%29%0A SPARQL query] demonstrating the language coverage for Shinto shrines. 
+
+Chinese is the next candidate for us to try to get near completion, as most shrine names are nearly identical in Japanese and Chinese.
+
+Korean is uncertain
+
+Otherwise most shrines can likely be best labelled through regular transformations of English, French, or Indonesian labels. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:07, 19 December 2025 (UTC)
+
+:However any regular transformation is depenndent on the quality of the latin labelling. 
+:Latin labelling tends to be best on entries with wikipedia articles where the kana could be taken for them.
+:See [[#Labels of Disputed Shikinaisha in non CJK languages]] for discussion on instances of {{q|Q135038714}}. The worst or most controversial labels tend to be on instances of {{q|Q135038714}} which are often derived from dubious old Japanese readings as mentioned at [[#Cleaning up Engishiki kana]] and instances of {{q|Q135022904}} which were often hasty bad transliterations locked in place by short description based deduplication rules. See [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fdesc%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ134917286%20.%0A%20%20%3Fitem%20schema%3Adescription%20%3Fdesc%20.%0A%20%20FILTER%28LANG%28%3Fdesc%29%20%3D%20%22en%22%29%0A%20%20FILTER%28REGEX%28%3Fdesc%2C%20%22%5C%5Cbcandidate%5C%5Cb%22%2C%20%22i%22%29%29%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22.%0A%20%20%7D%0A%7D%0AORDER%20BY%20%3FitemLabel%0A this SPARQL query] for common offending descriptions that lock bad labels in place. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:19, 19 December 2025 (UTC)
+:It seems that Korean tends to use hanja readings of shrines. So that resolves it. Should be easy to implement them like for Chinese names. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 21 December 2025 (UTC)
+
+== Duplicate properties ==
+
+Due to import issues we have a lot of issues with duplication of {{q|P361}} and {{q|P1448}} and {{q|P6375}}. For example on {{q|Q59282644}}.
+
+The {{q|P361}} and {{q|P1448}} properties tend to be highly property heavy
+
+The duplicate {{q|P6375}} properties are simple and someone other than me would be best to assess them.
+
+The incorrect {{q|P1448}} properties appear to be very direcetly able to be detected with the sources
+
+The {{q|P361}} duplicates seem to be just related to ordering in the lists. We could probably fix them by walking through the lists again, if we want this. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:04, 21 December 2025 (UTC)
+
+== Properties on Ronshas that we could remove ==
+
+Discussing which properties belong on Ronshas has been controversial as per [[#Proposed automatic edits]] and the earlier cited conversations of [[#Original table / 延喜式神名帳の神社の項目について]]. 
+
+However I thjink there are some pretty clear things we could do
+
+All of these properties
+
+* [[Wikidata:Property proposal/Engishiki Funding Category]] (now {{q|P14005}})
+* [[Wikidata:Property proposal/Engishiki Rank]]
+* [[Wikidata:Property proposal/Divine Rank]]
+
+should be removed from any instance of {{q|Q135022904}}
+
+I think that the {{q|P13677}} property should be qualified somehow on ronshas per [[#Ontology insights]] to indicate the sub heading that discusses the ronsha.
+
+We might want to remove the {{q|P31}} {{q|Q134917286}} property from all items that have {{q|P31}} {{q|Q134917286}}, but this is less certain. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:17, 21 December 2025 (UTC)
+
+:Also potentially removing {{q|P1448}} properties with the qualifier {{q|P1264}} {{q|Q193292}} or similar ones, see [[#Cleaning up Engishiki kana]] and [[#Duplicate properties]] for more info, but this one is potentially more risky.
+:There is an earlier deprecation script as used in [[#Proposed automatic edits]] but as that led to a lot of controversy and came before [[#Ontology insights]] it is worth holding back on it. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:21, 21 December 2025 (UTC)
+:We should note that some instances of {{q|Q135022904}} can legitimately have the {{q|P14005}} property if they were granted it in later periods, so this one is of more required caution. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:00, 22 December 2025 (UTC)
+
+== Citation of information ==
+
+If we want to reliably cite things. Of the instances of {{q|Q134917286}}
+
+All of the P31 {{q|Q134917286}} pages can be cited to the Kokugakuin University id, same with the P31 {{q|Q135022904}}
+
+Uncited information in the [[Wikidata:Property proposal/Engishiki Funding Category]] property should be cited to the List of Shikinaisha jawiki article in the future. We can later verify it with the Kokugakuin University id
+
+All information in [[Wikidata:Property proposal/Engishiki Rank]] should be cited to the jawiki Shikinaisha list for now. But we can verify it with the university website
+
+The {{q|P1448}} properties are unclear, but they should not be cited to the engishiki. They only come from the Japanese wikipedia and had failed verification. So as per [[#Cleaning up Engishiki kana]] we might want to remove them or deprecate them or similar.
+
+The {{q|P361}} properties can be pretty unambiguously cited to both the jawiki article and the website. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:13, 22 December 2025 (UTC)
+
+== User:勿来直通 's opinion about shinto shrine ==
+
+ルール執筆ばかりやっていても（いや、予想外に時間取れずに、やってさえいないんですけどね）、目の前の神社個別項目の混乱が解消するわけではないので、私のめざす優先順位を書いておこうと思います。決意表明です。
+=== 2026年1月時点での第一優先順位 ===
+1月末日までに完成させたいとかいう意味ではありません。
+多くのプロパティがボット作業依頼の対象となってるので、そういうのの無いところをターゲットにしたいと思いまして、{{P|P6375}}に注目します。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:45, 2 January 2026 (UTC)
+*「平安時代の神社1つに対して、対応する現代の神社が複数ある場合」について、現代の神社項目の{{P|P6375}}の誤記の無い状態にする。（{{P|P6375}}については、誤記をうみだした本人が「 someone other than me would be best 」と発言したことですし。）
+** 現代の神社項目から{{P|P6375}}の誤記を消す（当面、非推奨にはせずにやってみます）。{{P|P625}}も気づいたら直す（気づきにくい）。日本語説明に住所の影響があったら直す（住所の影響以外は、申し訳ないけど後回し）。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]])
+***Thank you for your work on fixing the street addresses. Do you think we could automate this?[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:48, 1 February 2026 (UTC)
+*:I think we can not automate this. --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:42, 15 February 2026 (UTC)
+
+=== 2026年1月時点での第二優先順位 ===
+例の「式内社データベース」の「現社名など（１）」についての番号付けに関することを、なんとかどうにかする。
+* もちろん他にも、誤記解消を早めに済ませたいこととか、いろいろある。でももうしわけないけど、私の考えの中では、あとまわし。--[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]])
+** It is understandable to put it off. I think that the numbering issue is important but I am not sure how it would even be technically implemented.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:48, 1 February 2026 (UTC)
+
+=== 非推奨として残すか？跡形無く消すか？ ===
+* ボット作業依頼などのような、日本の神社になじみが無いかたの御手をわずらわせた部分があることがらは、なるべく非推奨ランクで見える状態を一旦作っておくのがいいのかなあ、って思っています。でも、手間かかるよね。 --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:45, 2 January 2026 (UTC)
+* Listeria は非推奨ランクを完全無視してくれるんだっけか？　スバークルに bestrank って加えなくちゃならんのか？加えてもダメなのか？ --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:45, 2 January 2026 (UTC)
+*:I tested it on the erroneously included {{q|Q11635468}}. The deprecation did nothing https://www.wikidata.org/w/index.php?title=Talk:Q9610964&oldid=2459843504 so we cannot easily use it in this way. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:04, 1 February 2026 (UTC)
+*:: Oh, thank you. --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:39, 15 February 2026 (UTC)
+=== 疑問 ===
+* 「平安時代の文書に記載された神社」というのは、{{P|P31}}をどうするのが最適でしょうかねえ？。 「{{Q|Q13433827}}」のようなもので適切なのがあれば良いとおもうのですが。「延喜式に記載された宗教組織」と「六国史に記載された宗教組織」に分けずに、ひとつで済む「古代日本の文書に記された神社」というQ-itemを新規に作るのが良いか？。　単純に、現状に「{{P|P2348}}」を加えるだけにしておくべきか？ --[[User:勿来直通|勿来直通]] ([[User talk:勿来直通|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:45, 2 January 2026 (UTC)
+*:I am not sure what to do with this one. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:06, 1 February 2026 (UTC)
+
+== New potential property ==
+
+I found this thing on the kokugakuin university website that could be an external identifier on kami https://kojiki.kokugakuin.ac.jp/shinmei/ [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:47, 15 February 2026 (UTC)
