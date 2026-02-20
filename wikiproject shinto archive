@@ -1,0 +1,62 @@
+{{Archive||Project chat archive}}
+
+== Japanese ip user ==
+
+大量に記載された神社の項目について、今後どのように整理しましょうか？
+
+誰も始めないので、今ここに議論場所を作ります。ここで合意形成することにしませんか？　
+こういう目的のことは他の場所がいいとか、下記記入欄の形式を変えようとか、ご意見ありましたら、どうぞ進めてください。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+== < 1-1 > Don't mix modern shrine and Heian shrine ==
+
+:(ja) 平安時代のことがらと、現代の（および現代につながる江戸時代などの）ことがらを、混ぜないこと。平安時代の神社の項目と、現代の神社の項目をつなげるためには、{{P|P460}}を使うこと。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+:(en) Don't mix the item for modern era shrine with the item for Heian-period shrine. Use {{P|P460}} to connect them. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(ja) 現代の神社の例を一つ作りました。[[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 東京都八王子市の天満社Q11442850]] この差分で Deprecated rank に変わった部分は、除去すべきだと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(en) I made an example as modern era shrine at the item of [[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 (Q11442850)  Tenmansha in Hachiōji, Tokyo]]. The deprecated rank sentence must be removed. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+== Japanese ip user ==
+
+大量に記載された神社の項目について、今後どのように整理しましょうか？
+
+誰も始めないので、今ここに議論場所を作ります。ここで合意形成することにしませんか？　
+こういう目的のことは他の場所がいいとか、下記記入欄の形式を変えようとか、ご意見ありましたら、どうぞ進めてください。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+== < 1-1 > Don't mix modern shrine and Heian shrine ==
+
+:(ja) 平安時代のことがらと、現代の（および現代につながる江戸時代などの）ことがらを、混ぜないこと。平安時代の神社の項目と、現代の神社の項目をつなげるためには、{{P|P460}}を使うこと。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+:(en) Don't mix the item for modern era shrine with the item for Heian-period shrine. Use {{P|P460}} to connect them. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(ja) 現代の神社の例を一つ作りました。[[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 東京都八王子市の天満社Q11442850]] この差分で Deprecated rank に変わった部分は、除去すべきだと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(en) I made an example as modern era shrine at the item of [[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 (Q11442850)  Tenmansha in Hachiōji, Tokyo]]. The deprecated rank sentence must be removed. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+== < 2 > in case of one Heian-period shrine identified one modern day shrines ==
+
+< 2 > 平安時代の神社と、現代の神社が、１対１で対応する場合
+
+(ja) このセクションは「平安時代の神社と、現代の神社が、１対１で対応する場合」のデータ構成（の案）について、記入・議論する場所とします。
+
+(en) Please fill in this section the opinions about data-structures in case of one Heian-period shrine identified one modern day shrine.
+
+::(ja) < 1 >の「現代の神社が複数対応する場合」を先にフィックスさせてから、こちらを考えるという順序のほうが良いと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(en) I think the better order is to first finalize section 1 (“the case where multiple modern shrines correspond to a single Heian-period shrine”), and only after that consider this section. (feel free to improve the translation) --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+:::I agree with that sentiment. I think we should also remember that {{q|Q135039972}} also exist where a Heian period shrine has no known modern candidates.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:04, 31 October 2025 (UTC)
+::::I don't know if this actually does P31 well. It might be better to somehow use {{q|Q135038714}} but with zero candidates. Still new to ontology best practices. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:46, 1 December 2025 (UTC)
+
+== < 3 > the individual structure of the shrines ==
+
+:This table is for the individual structure of the shrines. Engishiki Shrines have rankings, but their rankings are relatively confusing and overlapping. {{q|Q9610964}} and {{q|Q134917288}} and {{q|Q134917287}} are three of them, but there are a variety of other ones. I just did for all of them {{q|P31}} to indicate the rankings. But the rankings definitely need more discussion. Each of them can also have the property of {{q|Q135160338}} or {{q|Q135160342}}. As well as the various celebration categories {{q|Q135009120}}. There is also the {{q|Q135018062}} or {{q|Q135022834}} which is used to indicate the size of the shrine. I do not understand the distinction well, and it is possible that {{q|Q135022834}} is just an error on the jawiki list pages, and not distinct from the regular numer of 座 that a shrine has. Myojin Taisha are technically subtypes of Shikinai Taisha so that just adds to the ranking confusion. Since it means that {{q|Q135206477}} and {{q|Q135206467}} both technically have two subranks. So it is unclear to me if those should even be used on wikidata, over just the {{q|Q135160338}} or {{q|Q135160342}} categories. The Kokuhei or Kanpei ranking is post-Engishiki but closely related and all sourced from the {{q|Q135159299}}.[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:59, 31 October 2025 (UTC)
+::I am still unsure about the difference between {{q|Q135018062}} and {{q|Q135022834}}, I think it is related to the engishiki statistics sometimes given though.
+::But as for the ranks. I made a good progress with [[Wikidata:Property proposal/Engishiki Rank]] and [[Wikidata:Property proposal/Engishiki Funding Category]]. There are technically 21 permutations. Terms like Kokuhei Taisha and Kanpei Taisha are relatively imprecise colloquial terms referring to mere intersection of categories, and in the case of Kanpei Taisha two imprecise categories. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:23, 1 December 2025 (UTC)
+:::[[#Relevant property proposals|#Relevant property proposals]] really help with this. Say if you think I missed a property. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:27, 1 December 2025 (UTC)
+== Japanese ip user ==
+
+大量に記載された神社の項目について、今後どのように整理しましょうか？
+
+誰も始めないので、今ここに議論場所を作ります。ここで合意形成することにしませんか？　
+こういう目的のことは他の場所がいいとか、下記記入欄の形式を変えようとか、ご意見ありましたら、どうぞ進めてください。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+
+== < 1-1 > Don't mix modern shrine and Heian shrine ==
+
+:(ja) 平安時代のことがらと、現代の（および現代につながる江戸時代などの）ことがらを、混ぜないこと。平安時代の神社の項目と、現代の神社の項目をつなげるためには、{{P|P460}}を使うこと。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+:(en) Don't mix the item for modern era shrine with the item for Heian-period shrine. Use {{P|P460}} to connect them. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(ja) 現代の神社の例を一つ作りました。[[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 東京都八王子市の天満社Q11442850]] この差分で Deprecated rank に変わった部分は、除去すべきだと思います。 --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
+::(en) I made an example as modern era shrine at the item of [[https://www.wikidata.org/w/index.php?title=Q11442850&diff=2421633511&oldid=2402797062 (Q11442850)  Tenmansha in Hachiōji, Tokyo]]. The deprecated rank sentence must be removed. --[[Special:Contributions/113.42.150.194|113.42.150.194]] 06:52, 25 October 2025 (UTC)
