@@ -34,16 +34,18 @@ SN_RE = re.compile(r'\[\[sn:[^\]]*\]\]\n?', re.IGNORECASE)
 
 
 def get_pages_with_sn(site):
-    """Return list of page titles that have [[sn:...]] links."""
+    """Return list of page titles that have [[sn:...]] links, via full-text search."""
     titles = []
     params = {
-        "list": "alllanglinks",
-        "allimit": 500,
-        "allang": "sn",
+        "list": "search",
+        "srsearch": "insource:\"[[sn:\"",
+        "srnamespace": "*",
+        "srlimit": 500,
+        "srwhat": "text",
     }
     while True:
         result = site.api("query", **params)
-        for entry in result["query"]["alllanglinks"]:
+        for entry in result["query"]["search"]:
             titles.append(entry["title"])
         if "continue" in result:
             params.update(result["continue"])
