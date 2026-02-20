@@ -61,17 +61,22 @@ The positional parameters and the named `lt=` can be redundant, contradictory, o
 
 This is the main reason parsing ILLs requires careful handling — you cannot assume any single parameter is authoritative without checking the others.
 
+### Parameter importance
+
+| Parameter | Reliability | Notes |
+|-----------|-------------|-------|
+| `WD=` | **Most important** | The authoritative Wikidata connection. Trust this first. |
+| `lt=` | **Most important** | The intended display text. Often the best human-readable signal for what the link is actually pointing to. |
+| `1=` | Unreliable | Intended as the local wiki path, but poorly maintained across bot passes. Do not treat as authoritative. |
+| Language/title pairs | Variable | Useful for fallback links but may be outdated or duplicated. |
+
+**Do not overwrite ILL templates without understanding why a given ILL looks the way it does.** Local pages sometimes have intentional deviations (e.g., a non-standard `1=` because the local title differs from enwiki, or a specific `lt=` chosen by a human editor). Blind rewrites destroy this information.
+
 ### State of ILLs currently
 
 - **Most ILLs have `WD=`** — the `wikidata link` template on each page and the ILL template's `WD=` parameter are the two places QIDs appear
 - **ILLs without `WD=`** indicate something went wrong during an earlier bot pass; these need fixing
-- **The `1=` destination** should point to the correct local page title (resolved from the QID redirect if one exists, otherwise from enwiki sitelink, otherwise from English label)
-- `fix_ill_destinations.py` handles keeping `1=` correct using this priority chain:
-  1. `Q{QID}` mainspace redirect → resolves to local page title
-  2. Wikidata enwiki sitelink
-  3. Wikidata English label
-  4. Last `lt=` value
-  5. The QID itself as a fallback
+- **`1=`** is not reliably correct — it was intended to hold the local wiki path but has been overwritten inconsistently across passes and should not be trusted blindly
 
 ### Why this is a maintenance problem
 
