@@ -6,6 +6,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-19
 
+### Japanese-named category merges
+**Script:** `shinto_miraheze/merge_japanese_named_categories.py` (new)
+**Status:** Running (2417 categories to check)
+For every category in [Category:Japanese_language_category_names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names): finds the `{{wikidata link|Q...}}` on the category page, looks up the Q{QID} mainspace page, and if that Q page is a simple `#REDIRECT [[Category:EnglishName]]` to a non-CJK category, recategorizes all members from the Japanese-named category to the English one and redirects the Japanese category page.
+
+Skips if: no wikidata link, Q page doesn't exist, Q page redirects back to a CJK name (no English equivalent on this wiki yet), or Q page is a disambiguation list (handled separately by `resolve_duplicated_qid_categories.py`).
+
+Expected yield: ~100–120 merges out of 2417 checked (~5% hit rate).
+
 ### [[sn:...]] interwiki link removal
 **Script:** `shinto_miraheze/remove_sn_interwikis.py` (new)
 **Status:** Complete
