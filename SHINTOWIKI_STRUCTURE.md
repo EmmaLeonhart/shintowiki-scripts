@@ -46,6 +46,21 @@ Renders as a link that:
 - The `WD=` parameter connects it to Wikidata item Q131287
 - Displays as "Ise Shrine" (from `lt=`)
 
+### Positional parameter accumulation
+
+A particularly common pattern is ILLs with **overwritten positional arguments** — multiple bot and script passes each added language pairs as positional parameters, and later passes sometimes overwrote earlier ones or added duplicates. Combined with `lt=` overrides added at other times, many ILLs look like:
+
+```wikitext
+{{ill|Ise Grand Shrine|ja|伊勢神宮|en|Ise Grand Shrine|zh|伊勢神宮|WD=Q131287|lt=Ise Shrine|2=ja|3=伊勢神宮}}
+```
+
+The positional parameters and the named `lt=` can be redundant, contradictory, or both. In practice:
+- Positional `1=` (destination) may have been overwritten by a later pass
+- Language/title pairs may appear both as positionals and duplicated in named form
+- `lt=` may reflect an older intended display text that no longer matches the current destination
+
+This is the main reason parsing ILLs requires careful handling — you cannot assume any single parameter is authoritative without checking the others.
+
 ### State of ILLs currently
 
 - **Most ILLs have `WD=`** — the `wikidata link` template on each page and the ILL template's `WD=` parameter are the two places QIDs appear

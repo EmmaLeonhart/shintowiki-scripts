@@ -8,16 +8,16 @@ This documents the history of [shinto.miraheze.org](https://shinto.miraheze.org)
 
 Started using English Wikipedia around 2020. By 2023 there were serious problems: pages were being moved from mainspace to draft space, editing restrictions were imposed, and a heavy volume of translation work (setting up a translation workflow for Japanese Wikipedia content) was not being accepted. Around 4,000 drafts accumulated in draft space. A permanent block on English Wikipedia was issued in December 2023. After that, the drafts could not be kept from deletion. Two appeals have been filed and rejected; an appeal is ongoing.
 
-There was a brief period of editing on Simple English Wikipedia while the block situation played out.
+After the enwiki block, drafts were saved to Simple English Wikipedia user pages as a stopgap. The enwiki block did not cover userspace on Simple English Wikipedia, making it a weird but functional intermediary for preserving content.
 
 ---
 
 ## Creating Shintowiki
 
-Founded [shinto.miraheze.org](https://shinto.miraheze.org) as an independent wiki. Initial page set was imported from:
-- English Wikipedia drafts
-- Simple English Wikipedia drafts
-- A few pages from Everybody Wiki
+Founded [shinto.miraheze.org](https://shinto.miraheze.org) as an independent wiki. Initial page set was recovered from three sources:
+- English Wikipedia (drafts)
+- Simple English Wikipedia (user pages used as temporary storage)
+- Everybody Wiki
 
 Started with a few hundred pages. Includes some non-Japanese content (Russian Orthodox icons, ancient Egyptian deities) from the old drafts.
 
