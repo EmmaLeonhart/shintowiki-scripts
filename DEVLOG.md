@@ -6,6 +6,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-19
 
+### Missing Wikidata link resolution
+**Script:** `shinto_miraheze/resolve_missing_wikidata_categories.py` (new)
+**Status:** Running (5054 categories to check)
+For every category in [Category:Categories_missing_wikidata](https://shinto.miraheze.org/wiki/Category:Categories_missing_wikidata): queries the English or Japanese Wikipedia API (enwiki for Latin names, jawiki for CJK names, with fallback to the other) for `Category:{name}` and retrieves the `wikibase_item` QID from pageprops. If found:
+
+- **Q page doesn't exist on shintowiki** → create `Q{QID}` as `#REDIRECT [[Category:Name]]` and add `{{wikidata link|Q...}}` to the category page
+- **Q page redirects to this same category** → just add `{{wikidata link|Q...}}` to the category page
+- **Q page redirects to a different English category** → merge (recategorize members + redirect this category), same logic as `merge_japanese_named_categories.py`
+- **Q page is a disambiguation list** → skip
+
+Dry-run of first 50 showed ~82% hit rate (41/50 actionable), mostly Case A (new Q pages to create).
+
 ### Japanese-named category merges
 **Script:** `shinto_miraheze/merge_japanese_named_categories.py` (new)
 **Status:** Running (2417 categories to check)
