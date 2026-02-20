@@ -1,1 +1,0 @@
-py update_shikinaisha_lists_v3.py
