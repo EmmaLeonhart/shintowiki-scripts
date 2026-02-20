@@ -80,7 +80,7 @@ def recategorize_members(site, from_cat, to_cat, dry_run):
         if dry_run:
             print(f"      DRY RUN: would recategorize {page.name}")
         else:
-            page.save(new_text, summary=f"Bot: recategorize [[Category:{from_cat}]] → [[Category:{to_cat}]] (QID consolidation)")
+            page.save(new_text, summary=f"Bot: recategorize [[Category:{from_cat}]] → [[Category:{to_cat}]] (merging Japanese-named category into English equivalent)")
             print(f"      RECATEGORIZED: {page.name}")
             time.sleep(THROTTLE)
 
@@ -150,7 +150,7 @@ def main():
             cjk_page = site.pages[f"Category:{cjk_cat}"]
             cjk_page.save(
                 f"#REDIRECT [[Category:{latin_cat}]]",
-                summary=f"Bot: redirect Japanese-named category to English equivalent (QID consolidation)"
+                summary=f"Bot: merge Japanese-named category into English equivalent [[Category:{latin_cat}]]"
             )
             print(f"  REDIRECTED: Category:{cjk_cat} → Category:{latin_cat}")
             time.sleep(THROTTLE)
@@ -158,7 +158,7 @@ def main():
             # 3. Convert Q page to simple redirect
             q_page.save(
                 f"#REDIRECT [[Category:{latin_cat}]]",
-                summary=f"Bot: QID disambiguation resolved — redirect to [[Category:{latin_cat}]]"
+                summary=f"Bot: QID redirect updated — Japanese category merged into [[Category:{latin_cat}]]"
             )
             print(f"  Q PAGE RESOLVED: {q_title} → Category:{latin_cat}")
             time.sleep(THROTTLE)
