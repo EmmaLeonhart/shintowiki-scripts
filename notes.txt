@@ -3,3 +3,5 @@ This file exists just to add notes when on the go that claude can use later
 What I am noticing right now is that the removal of the [[sn: interwikis is just not going remotely fast enough and needs a proper bot instead of my weird haphazard solution
 
 added the Qq]]{{moveto|UNESCO Culture and NATURE}} (sorry cursor issues) {{moveto|X}} template for tryning to minimize moves before history import
+
+oh and also pretty much every module might need a refresh from wikipedia since a lot of them got crud in them and there are few if any custom modules except for calculating Japanese calendar dates
