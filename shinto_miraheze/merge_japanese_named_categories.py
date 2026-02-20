@@ -74,8 +74,26 @@ def recategorize_members(site, from_cat, to_cat, dry_run):
         if dry_run:
             print(f"      DRY RUN: would recategorize {page.name}")
         else:
-            page.save(new_text, summary=f"Bot: recategorize [[Category:{from_cat}]] → [[Category:{to_cat}]] (merging Japanese-named category into English equivalent)")
-            print(f"      RECATEGORIZED: {page.name}")
+            try:
+                page.save(new_text, summary=f"Bot: recategorize [[Category:{from_cat}]] → [[Category:{to_cat}]] (merging Japanese-named category into English equivalent)")
+                print(f"      RECATEGORIZED: {page.name}")
+            except Exception as e:
+                if "editconflict" in str(e).lower():
+                    # Concurrent edit — wait and retry once
+                    print(f"      CONFLICT on {page.name}, retrying...")
+                    time.sleep(5)
+                    try:
+                        fresh_text = page.text()
+                        fresh_new = pattern.sub(f'[[Category:{to_cat}]]', fresh_text)
+                        if fresh_new != fresh_text:
+                            page.save(fresh_new, summary=f"Bot: recategorize [[Category:{from_cat}]] → [[Category:{to_cat}]] (merging Japanese-named category into English equivalent)")
+                            print(f"      RECATEGORIZED (retry): {page.name}")
+                        else:
+                            print(f"      SKIP (already moved on retry): {page.name}")
+                    except Exception as e2:
+                        print(f"      ERROR (retry failed): {page.name}: {e2}")
+                else:
+                    print(f"      ERROR: {page.name}: {e}")
             time.sleep(THROTTLE)
 
 
