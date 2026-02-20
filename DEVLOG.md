@@ -8,22 +8,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ### [[sn:...]] interwiki link removal
 **Script:** `shinto_miraheze/remove_sn_interwikis.py` (new)
-**Status:** Queued
-Strips all `[[sn:...]]` links from every page on the wiki. These were accidentally used as a note-storage mechanism during earlier bot passes — e.g. `[[sn:This category was created from JA→Wikidata links on Fuse Shrine (Sanuki, Kagawa)]]`. The `sn` language code produces meaningless interwiki links and serves no purpose. Uses `list=alllanglinks&allang=sn` to find all affected pages, then strips the pattern from each.
+**Status:** Complete
+Strips all `[[sn:...]]` links from every page on the wiki. These were accidentally used as a note-storage mechanism during earlier bot passes — e.g. `[[sn:This category was created from JA→Wikidata links on Fuse Shrine (Sanuki, Kagawa)]]`. The `sn` language code produces meaningless interwiki links and serves no purpose. Uses `insource:"[[sn:"` full-text search to find affected pages (the `list=alllanglinks` API module is not available on Miraheze), then strips the pattern from each.
+
+Result: 1 page affected ([Help:Searching](https://shinto.miraheze.org/wiki/Help:Searching)), 3 links removed. The minimal footprint confirms these were all added during a single earlier pass.
 
 ### Crud category cleanup
 **Script:** `shinto_miraheze/remove_crud_categories.py` (new)
-**Status:** Running
+**Status:** Running (in background)
 Fetches all subcategories of [Category:Crud_categories](https://shinto.miraheze.org/wiki/Category:Crud_categories) and strips those category tags from every member page. Goal is to leave all the crud subcategories empty. These were leftover maintenance/tracking categories accumulated from various automated passes that serve no ongoing purpose.
+
+21 subcategories identified. Processing in progress — first subcategory (Category:11) had 1568 members alone. Expected to run for several hours.
 
 ### Duplicate QID category resolution
 **Script:** `shinto_miraheze/resolve_duplicated_qid_categories.py` (new)
-**Status:** Running (221 Q pages)
+**Status:** Partially complete — 146/221 processed; needs re-run for remainder
 Processes all Q{QID} pages in [Category:Duplicated qid category redirects](https://shinto.miraheze.org/wiki/Category:Duplicated_qid_category_redirects). These are QID redirect pages where two categories — one with a Japanese name and one with an English name — share the same Wikidata QID, meaning they are the same category under two names.
 
 Logic:
 - **CJK name + Latin name pair** (e.g. `Category:上野国` + `Category:Kōzuke Province`): recategorizes all members from the CJK category to the Latin/English one, redirects the CJK category page to the Latin one, and converts the Q page to a simple `#REDIRECT [[Category:LatinName]]`.
 - **Both Latin names**: cannot auto-resolve — tags the Q page with `[[Category:Erroneous qid category links]]` for manual review.
+
+Run crashed at Q8976949 (Category:一宮 → Category:Ichinomiya, 36 members) with an edit conflict — concurrent editing with the crud cleanup script. 146 Q pages were fully resolved before the crash. Re-run will skip already-resolved pages since they no longer appear in the category.
 
 ### Wanted categories created
 **Script:** `shinto_miraheze/create_wanted_categories.py` (new, ran this session)
