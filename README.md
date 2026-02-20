@@ -58,3 +58,4 @@ python shinto_miraheze/resolve_category_wikidata_from_interwiki.py
 - [API.md](API.md) — how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
 - [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) — page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
 - [HISTORY.md](HISTORY.md) — wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
+- [TODO.md](TODO.md) — prioritized list of all known tasks
