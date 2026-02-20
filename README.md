@@ -17,11 +17,12 @@ The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
 | Script | Purpose |
 |--------|---------|
 | `shinto_miraheze/resolve_category_wikidata_from_interwiki.py` | Resolves Wikidata QIDs for category pages by querying their interwiki links |
-| `create_category_qid_redirects.py` | Creates `Q{QID}` redirect pages in mainspace pointing to their category |
-| `fix_ill_destinations.py` | Fixes broken ILL template destinations |
-| `add_moved_templates.py` | Adds `{{moved to}}` / `{{moved from}}` templates after page moves |
-| `remove_defaultsort_digits.py` | Removes `{{DEFAULTSORT:}}` from Wikidata-generated shikinaisha pages |
-| `fix_dup_cat_links.py` | One-off: fixes `[[Category:X]]` → `[[:Category:X]]` in dup disambiguation pages |
+| `shinto_miraheze/create_category_qid_redirects.py` | Creates `Q{QID}` redirect pages in mainspace pointing to their category |
+| `shinto_miraheze/fix_ill_destinations.py` | Fixes broken ILL template destinations |
+| `shinto_miraheze/add_moved_templates.py` | Adds `{{moved to}}` / `{{moved from}}` templates after page moves |
+| `shinto_miraheze/resolve_duplicated_qid_categories.py` | Merges CJK/Latin duplicate QID category pairs; tags Latin/Latin pairs as erroneous |
+| `shinto_miraheze/create_wanted_categories.py` | Creates wanted category pages (categories with members but no page) |
+| `shinto_miraheze/remove_crud_categories.py` | Strips all subcategories of Category:Crud_categories from member pages |
 
 ---
 
