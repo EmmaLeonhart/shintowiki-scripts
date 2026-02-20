@@ -14,6 +14,8 @@ edit: notes.txt is covered here so deleting it
 
 desktop.ini is another thing to look over
 
+look over settings.local.json to make sure there's no secret leakage
+
 ## Immediate / in progress
 
 - [ ] **History merges** — pages that need `{{moved to}}` / `{{moved from}}` templates to preserve attribution after page moves. Two separate waves of moves means some pages need both. (The actual history import is handled by Miraheze, not by us — the templates just ensure the import will be coherent when it happens.)
