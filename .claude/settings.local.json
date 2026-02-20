@@ -121,7 +121,9 @@
       "Bash(python3:*)",
       "Bash(git -C \"C:/Users/[REDACTED_USER_1]/Documents/GitHub/order.life\" log --oneline -5)",
       "Bash(git pull:*)",
-      "Bash(sort find /c/Users/[REDACTED_USER_1]/Documents/GitHub/wikibot/shinto_miraheze -maxdepth 1 -name \"*.py\")"
+      "Bash(sort find /c/Users/[REDACTED_USER_1]/Documents/GitHub/wikibot/shinto_miraheze -maxdepth 1 -name \"*.py\")",
+      "Bash(git fetch:*)",
+      "Bash(xargs rm:*)"
     ],
     "deny": [],
     "ask": []
