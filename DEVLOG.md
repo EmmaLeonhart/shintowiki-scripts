@@ -6,6 +6,11 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-19
 
+### [[sn:...]] interwiki link removal
+**Script:** `shinto_miraheze/remove_sn_interwikis.py` (new)
+**Status:** Queued
+Strips all `[[sn:...]]` links from every page on the wiki. These were accidentally used as a note-storage mechanism during earlier bot passes — e.g. `[[sn:This category was created from JA→Wikidata links on Fuse Shrine (Sanuki, Kagawa)]]`. The `sn` language code produces meaningless interwiki links and serves no purpose. Uses `list=alllanglinks&allang=sn` to find all affected pages, then strips the pattern from each.
+
 ### Crud category cleanup
 **Script:** `shinto_miraheze/remove_crud_categories.py` (new)
 **Status:** Running
@@ -13,16 +18,17 @@ Fetches all subcategories of [Category:Crud_categories](https://shinto.miraheze.
 
 ### Duplicate QID category resolution
 **Script:** `shinto_miraheze/resolve_duplicated_qid_categories.py` (new)
-**Status:** Running
-Processes all Q{QID} pages in [Category:Duplicated qid category redirects](https://shinto.miraheze.org/wiki/Category:Duplicated_qid_category_redirects).
+**Status:** Running (221 Q pages)
+Processes all Q{QID} pages in [Category:Duplicated qid category redirects](https://shinto.miraheze.org/wiki/Category:Duplicated_qid_category_redirects). These are QID redirect pages where two categories — one with a Japanese name and one with an English name — share the same Wikidata QID, meaning they are the same category under two names.
 
 Logic:
-- **CJK name + Latin name pair** (e.g. `Category:上野国` + `Category:Kōzuke Province`): these are the same category under two names. Recategorizes all members from the CJK category to the Latin/English one, redirects the CJK category page to the Latin one, and converts the Q page to a simple `#REDIRECT [[Category:LatinName]]`.
+- **CJK name + Latin name pair** (e.g. `Category:上野国` + `Category:Kōzuke Province`): recategorizes all members from the CJK category to the Latin/English one, redirects the CJK category page to the Latin one, and converts the Q page to a simple `#REDIRECT [[Category:LatinName]]`.
 - **Both Latin names**: cannot auto-resolve — tags the Q page with `[[Category:Erroneous qid category links]]` for manual review.
 
 ### Wanted categories created
 **Script:** `shinto_miraheze/create_wanted_categories.py` (new, ran this session)
-Created ~153 category pages that had members but no page (showed up in Special:WantedCategories). Each got `[[Category:categories made during git consolidation]]`. [Category:Duplicated qid category redirects](https://shinto.miraheze.org/wiki/Category:Duplicated_qid_category_redirects) got special documentation explaining the Q-page disambiguation format and how to resolve entries.
+**Status:** Complete
+Created 153 category pages that had members but no page (showed up in Special:WantedCategories). Each got `[[Category:categories made during git consolidation]]`. [Category:Duplicated qid category redirects](https://shinto.miraheze.org/wiki/Category:Duplicated_qid_category_redirects) got special documentation explaining the Q-page format and how to resolve entries. Parent category [Category:categories made during git consolidation](https://shinto.miraheze.org/wiki/Category:Categories_made_during_git_consolidation) also created.
 
 ### Repository consolidation
 - Moved all root-level scripts into `shinto_miraheze/`
