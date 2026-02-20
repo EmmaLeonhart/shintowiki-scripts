@@ -1,1 +1,0 @@
-streamlit run proposed_entries_streamlit.py
