@@ -6,8 +6,7 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 
 ## Immediate / in progress
 
-- [ ] **Full history import** — the wiki was restored from Archive.org XML with only the most recent revision per page. The full edit history XML still needs to be imported.
-- [ ] **History merges** — pages that need `{{moved to}}` / `{{moved from}}` templates to preserve attribution after page moves. Two separate waves of moves means some pages need both.
+- [ ] **History merges** — pages that need `{{moved to}}` / `{{moved from}}` templates to preserve attribution after page moves. Two separate waves of moves means some pages need both. (The actual history import is handled by Miraheze, not by us — the templates just ensure the import will be coherent when it happens.)
 
 ---
 
@@ -36,7 +35,6 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 ## Repository / script tasks
 
 - [ ] **Move hardcoded credentials to environment variables** — all scripts use hardcoded `USERNAME`/`PASSWORD`. Must be done before repo can be made public. Use `.env` + `python-dotenv` or environment variables directly.
-- [ ] **Move legacy scripts to `archive/`** — the root and `shinto_miraheze/` still contain superseded scripts. Move them rather than delete so history is preserved.
 - [ ] **Consolidate active root scripts into `shinto_miraheze/`** — active scripts currently spread across root and `shinto_miraheze/`; consolidate into one canonical location.
 
 ---

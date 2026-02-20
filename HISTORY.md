@@ -53,7 +53,7 @@ Translation pipeline over time:
 
 The wiki was suspended and then reinstated. It was restored using XML exports from Archive.org. The archived XML technically contained the full edit history, but was "weirdly partially archived." Only the most recent revision of each page was imported in the restoration (around January of the restoration year), not the full history.
 
-A full history import is pending.
+The full history import is pending on Miraheze's side — not something controlled from this repo.
 
 To preserve edit attribution, templates were introduced for history merges:
 - `{{moved to}}` — marks the destination page of a history merge
