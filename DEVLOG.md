@@ -8,14 +8,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ### ja: interwiki category merge and QID linking
 **Script:** `shinto_miraheze/merge_by_ja_interwiki.py` (new)
-**Status:** Running
+**Status:** Complete — **22 linked, 40 merged, 0 errors**
 Scans all 834 categories in [Category:Categories missing Wikidata with Japanese interwikis](https://shinto.miraheze.org/wiki/Category:Categories_missing_Wikidata_with_Japanese_interwikis). Builds a map of jawiki target → shintowiki categories, then:
 
 - **Single match** — queries jawiki API for the QID, creates a `Q{QID}` redirect page and adds `{{wikidata link|Q...}}` to the category (same flow as `resolve_missing_wikidata_categories.py`)
 - **One CJK + one Latin sharing same jawiki target** — merges: recategorizes all members from the CJK category into the Latin one, redirects the CJK category, then adds the wikidata link to the Latin category
 - **Two or more Latin sharing same jawiki target** — tags all with `[[Category:jawiki categories with multiple enwiki]]` for manual review
 
-Map: 754 singles, 40 shared-target groups (all 40 are clean CJK+Latin pairs eligible for merging).
+Results: 754 singles (22 linked, 732 skipped — no jawiki QID), 40 shared-target groups (all clean CJK+Latin pairs, all merged). 0 tagged-multi cases, 0 errors.
 
 ---
 
