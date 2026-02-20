@@ -8,7 +8,7 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ### Tagging categories missing Wikidata but with Japanese interwikis
 **Script:** `shinto_miraheze/tag_missing_wikidata_with_ja_interwiki.py` (new)
-**Status:** Running
+**Status:** Complete — **834 categories tagged**, 4209 skipped (no ja: interwiki), 0 errors
 Scans all members of Category:Categories_missing_wikidata for `[[ja:...]]` interwiki links in their wikitext. Tags any that have one with `[[Category:Categories missing Wikidata with Japanese interwikis]]`. This intermediate categorization step makes it easy to later batch-process that subset: the ja: link provides a direct path to the jawiki category, from which the QID can be retrieved.
 
 ### Missing Wikidata link resolution
