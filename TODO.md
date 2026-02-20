@@ -44,6 +44,12 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 
 ---
 
+## Known external issues
+
+- [ ] **Wikidata item deletions** — a batch of Wikidata items created by an earlier script (for interlanguage link targets) were deleted by another editor on Wikidata. The deletions happened without opportunity to contest or add supplementary content that might have justified keeping them. Need to assess scope (which items were deleted, whether they can be re-created with stronger sourcing) and develop a strategy for re-creation or working around the missing QIDs.
+
+---
+
 ## Longer term (architecture)
 
 These are tracked in detail in [VISION.md](VISION.md). Listed here for completeness.

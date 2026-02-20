@@ -6,6 +6,11 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-19
 
+### Tagging categories missing Wikidata but with Japanese interwikis
+**Script:** `shinto_miraheze/tag_missing_wikidata_with_ja_interwiki.py` (new)
+**Status:** Running
+Scans all members of Category:Categories_missing_wikidata for `[[ja:...]]` interwiki links in their wikitext. Tags any that have one with `[[Category:Categories missing Wikidata with Japanese interwikis]]`. This intermediate categorization step makes it easy to later batch-process that subset: the ja: link provides a direct path to the jawiki category, from which the QID can be retrieved.
+
 ### Missing Wikidata link resolution
 **Script:** `shinto_miraheze/resolve_missing_wikidata_categories.py` (new)
 **Status:** Complete
@@ -36,10 +41,10 @@ Result: 1 page affected ([Help:Searching](https://shinto.miraheze.org/wiki/Help:
 
 ### Crud category cleanup
 **Script:** `shinto_miraheze/remove_crud_categories.py` (new)
-**Status:** Running (in background)
+**Status:** Running (two instances — original + second pass for subcategories added during runtime)
 Fetches all subcategories of [Category:Crud_categories](https://shinto.miraheze.org/wiki/Category:Crud_categories) and strips those category tags from every member page. Goal is to leave all the crud subcategories empty. These were leftover maintenance/tracking categories accumulated from various automated passes that serve no ongoing purpose.
 
-21 subcategories identified. Processing in progress — first subcategory (Category:11) had 1568 members alone. Expected to run for several hours.
+21 subcategories identified in the original run. The script caches the subcategory list at start and fetches members live per subcategory. A second instance was started to catch any new subcategories added to Category:Crud_categories during the first run's execution. By far the slowest script this session — the first subcategory alone (Category:11) had 1568 members. The individual-edit-per-page approach is suboptimal for bulk cleanup but is intentional and generative; the slow pace is not considered an error.
 
 ### Duplicate QID category resolution
 **Script:** `shinto_miraheze/resolve_duplicated_qid_categories.py` (new)
