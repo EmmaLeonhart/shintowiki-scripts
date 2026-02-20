@@ -20,12 +20,12 @@ Dry-run of first 50 showed ~82% hit rate (41/50 actionable), mostly Case A (new 
 
 ### Japanese-named category merges
 **Script:** `shinto_miraheze/merge_japanese_named_categories.py` (new)
-**Status:** Running (2417 categories to check)
+**Status:** Complete
 For every category in [Category:Japanese_language_category_names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names): finds the `{{wikidata link|Q...}}` on the category page, looks up the Q{QID} mainspace page, and if that Q page is a simple `#REDIRECT [[Category:EnglishName]]` to a non-CJK category, recategorizes all members from the Japanese-named category to the English one and redirects the Japanese category page.
 
 Skips if: no wikidata link, Q page doesn't exist, Q page redirects back to a CJK name (no English equivalent on this wiki yet), or Q page is a disambiguation list (handled separately by `resolve_duplicated_qid_categories.py`).
 
-Expected yield: ~100–120 merges out of 2417 checked (~5% hit rate).
+Result: **1274 categories merged** out of 2417 checked (ran in two passes — first pass crashed at 84 on edit conflict with concurrent crud script; second pass completed remaining 1190 cleanly with 0 errors).
 
 ### [[sn:...]] interwiki link removal
 **Script:** `shinto_miraheze/remove_sn_interwikis.py` (new)
