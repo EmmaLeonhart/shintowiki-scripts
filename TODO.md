@@ -7,6 +7,11 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 ## Immediate / in progress
 
 - [ ] **History merges** — pages that need `{{moved to}}` / `{{moved from}}` templates to preserve attribution after page moves. Two separate waves of moves means some pages need both. (The actual history import is handled by Miraheze, not by us — the templates just ensure the import will be coherent when it happens.)
+- [ ] **Re-run `resolve_duplicated_qid_categories.py`** — 146/221 Q pages resolved; crashed at Q8976949 (edit conflict with concurrent crud run). Re-run after crud finishes to resolve remaining ~75 pages.
+- [x] **Crud category cleanup** — `remove_crud_categories.py` running in background; stripping all subcategories of Category:Crud_categories from member pages.
+- [x] **`[[sn:...]]` interwiki removal** — complete (1 page, 3 links).
+- [x] **Wanted categories created** — 153 pages created.
+- [x] **`Category:Generated_x-no-miya_lists` deleted** — 67 User namespace pages deleted.
 
 ---
 
@@ -35,7 +40,7 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 ## Repository / script tasks
 
 - [ ] **Move hardcoded credentials to environment variables** — all scripts use hardcoded `USERNAME`/`PASSWORD`. Must be done before repo can be made public. Use `.env` + `python-dotenv` or environment variables directly.
-- [ ] **Consolidate active root scripts into `shinto_miraheze/`** — active scripts currently spread across root and `shinto_miraheze/`; consolidate into one canonical location.
+- [x] **Consolidate active root scripts into `shinto_miraheze/`** — done.
 
 ---
 
