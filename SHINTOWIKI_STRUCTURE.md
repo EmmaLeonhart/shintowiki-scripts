@@ -273,8 +273,9 @@ These categories are used by scripts to find pages to process:
 | `Pages linked to Wikidata` | All pages with `{{wikidata link\|Q…}}` |
 | `categories missing wikidata` | Categories with interwikis but no Wikidata QID found |
 | `Templates without wikidata` | Templates with no Wikidata connection |
-| `duplicated qid category redirects` | `Q{QID}` pages pointing to 2+ categories |
+| `duplicated qid category redirects` | `Q{QID}` pages pointing to 2+ categories (disambiguation needed) |
 | `Wikidata generated shikinaisha pages` | Pages generated from Wikidata shikinaisha data |
+| [`Pages with duplicated content`](https://shinto.miraheze.org/wiki/Category:Pages_with_duplicated_content) | Mainspace pages where the same content exists under multiple titles — needs human review for merge/redirect |
 
 ---
 
