@@ -123,7 +123,9 @@
       "Bash(git pull:*)",
       "Bash(sort find /c/Users/[REDACTED_USER_1]/Documents/GitHub/wikibot/shinto_miraheze -maxdepth 1 -name \"*.py\")",
       "Bash(git fetch:*)",
-      "Bash(xargs rm:*)"
+      "Bash(xargs rm:*)",
+      "Bash(git rm:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
