@@ -14,6 +14,10 @@ Run dry-run first:
 import time
 import mwclient
 import argparse
+import io
+import sys
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
@@ -23,6 +27,27 @@ THROTTLE  = 1.5
 
 PARENT_CAT = "categories made during git consolidation"
 CONTENT    = f"[[Category:{PARENT_CAT}]]"
+
+DUP_QID_CAT = "Duplicated qid category redirects"
+DUP_QID_CONTENT = """\
+Pages in this category are Q{QID} mainspace pages where two or more \
+category pages share the same Wikidata QID. Each page is a disambiguation \
+list in the format:
+
+<pre>
+# [[:Category:Foo]]
+# [[:Category:Bar]]
+[[Category:Duplicated qid category redirects]]
+</pre>
+
+The [[:Category:]] colon prefix is intentional — it links to the category \
+rather than adding the Q page to that category.
+
+To resolve a page in this category: determine which category correctly holds \
+the QID, then replace the disambiguation list with a standard \
+<code>#REDIRECT [[Category:Name]]</code> and remove the category tag.
+
+[[Category:categories made during git consolidation]]"""
 
 WANTED_CATEGORIES = [
     "Categories in qq but actually having wikidata",
@@ -208,10 +233,21 @@ def main():
     create_category(site, PARENT_CAT, args.dry_run)
     print()
 
-    # Create all wanted categories
+    # Create all wanted categories (special content for dup QID category)
     print(f"--- Wanted categories ({len(WANTED_CATEGORIES)}) ---")
     for cat in WANTED_CATEGORIES:
-        create_category(site, cat, args.dry_run)
+        if cat == DUP_QID_CAT:
+            page = site.pages[f"Category:{cat}"]
+            if page.exists:
+                print(f"  SKIP (exists): Category:{cat}")
+            elif args.dry_run:
+                print(f"  DRY RUN: would create Category:{cat} (with special docs)")
+            else:
+                page.save(DUP_QID_CONTENT, summary="Create wanted category page with documentation (git consolidation cleanup)")
+                print(f"  CREATED (with docs): Category:{cat}")
+                time.sleep(THROTTLE)
+        else:
+            create_category(site, cat, args.dry_run)
 
     print("\nDone.")
 
