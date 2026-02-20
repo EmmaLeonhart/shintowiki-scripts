@@ -1,0 +1,591 @@
+#!/usr/bin/env python3
+"""
+Deprecate properties incorrectly applied to Shikinai Ronsha (Engishiki shrines) on Wikidata.
+Specifically targets Mita Hachiman Shrine (Q545397).
+
+This script:
+1. Checks for P460 (said to be the same as) property
+2. Validates that there's a single QID linked (after removing duplicates with/without qualifiers)
+3. Adds P3831 (object of statement has role) with value Disputed Shikinaisha/Shikigeisha
+4. Deprecates specific properties with qualifiers indicating they refer to the Engishiki shrine
+"""
+
+import requests
+import json
+import sys
+import io
+import time
+
+# Handle Unicode on Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+# Configuration
+WIKIDATA_API = "https://www.wikidata.org/w/api.php"
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+USERNAME = "Immanuelle@ImmanuelleCommonsBot"
+PASSWORD = "r7db82prl8ftds5fo9v5uaiunce5n2cp"
+
+# SPARQL query parameters
+SHIKINAI_RONSHA_QID = "Q135022904"
+LIMIT = 50
+
+# Target shrines - will be fetched via SPARQL
+TARGET_SHRINE_QIDS = []
+
+# QID values for properties to deprecate
+ENGISHIKI_SHRINE_TYPES = [
+    "Q134917286",  # Shikinaisha
+    "Q135160342",  # Kokuhei-sha (Engishiki Jinmyocho)
+    "Q135160338",  # Kanpei-sha (Engishiki Jinmyocho)
+    "Q135009152",  # Shrines receiving Hoe and Quiver
+    "Q135009205",  # Shrines receiving hoe offering
+    "Q135009221",  # Shrines receiving Quiver offering
+    "Q135009132",  # Shrine receiving Tsukinami-sai and Niiname-sai offerings
+    "Q135009157",  # Shrine receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings
+    "Q134917287",  # Shikinai Shosha
+    "Q134917288",  # Shikinai Taisha
+    "Q9610964",    # Myōjin Taisha
+    "Q135018062",  # Engishiki seat
+    "Q135206465",  # redirect page
+    "Q135206476",  # redirect page
+    "Q135578845",  # redirect page
+    "Q135206474",  # redirect page
+    "Q135206482",  # redirect page
+    "Q135206470",  # redirect page
+    "Q135206478",  # redirect page
+    "Q135206467",  # redirect page
+    "Q135206477",  # redirect page
+    "Q240268",     # Rank
+    "Q1499048",    # clerical rank in Japan
+    "Q11071121",   # Junior First Rank
+    "Q11071123",   # Junior Third Rank
+    "Q11071125",   # Junior Fifth Rank
+    "Q11071127",   # Junior Fourth Rank
+    "Q11123258",   # Senior First Rank
+    "Q11123261",   # Senior Third Rank
+    "Q11123277",   # Senior Second Rank
+    "Q11123280",   # Senior Fifth Rank
+    "Q11123338",   # Senior Fourth Rank
+    "Q11354375",   # Third Rank
+    "Q11371333",   # Second Rank
+    "Q11393856",   # Internal Ranks
+    "Q11395032",   # history of court rank systems in Japan
+    "Q11410715",   # court rank bestowal
+    "Q11419606",   # Fourth Rank
+    "Q11430321",   # gei
+    "Q11433041",   # Greater Initial Rank
+    "Q11452076",   # East Asian government service ranking
+    "Q11452077",   # list of Japanese court ranks, positions and hereditary titles
+    "Q11464527",   # Lesser Initial Rank
+    "Q11487787",   # 弾正尹
+    "Q11488718",   # Junior Seventh Rank
+    "Q11488719",   # Junior Ninth Rank
+    "Q11488720",   # Junior Eighth Rank
+    "Q11488721",   # Junior Second Rank
+    "Q11499495",   # sanni
+    "Q11504610",   # Unranked
+    "Q11545345",   # Senior Seventh Rank
+    "Q11545350",   # Senior Ninth Rank
+    "Q11545368",   # Senior Eighth Rank
+    "Q11545372",   # Senior Sixth Rank
+    "Q11591025",   # shinkai
+    "Q14623716",   # Template:日本の位階
+    "Q14624983",   # Junior Sixth Rank
+    "Q108837834",  # Kan'i
+]
+
+ENGISHIKI_JINMYOCHO_QID = "Q11064932"
+HEIAN_PERIOD_QID = "Q193292"
+DISPUTED_SHIKINAISHA_QID = "Q135038714"  # Disputed Shikinaisha or Shikigeisha
+KOKUGAKUIN_SHRINE_DB_OLD_QID = "Q135037878"  # Kokugakuin University Shrine database (old)
+
+REASON_REFERS_DIFFERENT = "Q28091153"  # refers to different subject
+ROLE_QUALIFIER = "P3831"  # object of statement has role
+
+session = requests.Session()
+session.headers.update({'User-Agent': 'ImmanuelleCommonsBot/1.0'})
+
+def fetch_shikinai_ronsha_shrines(limit=50):
+    """Fetch all P31 Shikinai Ronsha shrines via SPARQL"""
+    sparql_query = f"""
+    SELECT ?shrine WHERE {{
+      ?shrine wdt:P31 wd:{SHIKINAI_RONSHA_QID} .
+      ?shrine wdt:P460 ?same_as .
+    }}
+    LIMIT {limit}
+    """
+
+    print(f"Fetching Shikinai Ronsha shrines via SPARQL (limit: {limit})...")
+    r = requests.get(SPARQL_ENDPOINT, params={
+        'query': sparql_query,
+        'format': 'json'
+    })
+
+    results = r.json()['results']['bindings']
+    shrine_qids = [item['shrine']['value'].split('/')[-1] for item in results]
+
+    print(f"Found {len(shrine_qids)} shrines to process\n")
+    return shrine_qids
+
+def login():
+    """Login to Wikidata"""
+    print("Logging in to Wikidata...")
+
+    # Get login token
+    r = session.get(WIKIDATA_API, params={
+        'action': 'query',
+        'meta': 'tokens',
+        'type': 'login',
+        'format': 'json'
+    })
+    login_token = r.json()['query']['tokens']['logintoken']
+
+    # Perform login using legacy method
+    r = session.post(WIKIDATA_API, data={
+        'action': 'login',
+        'lgname': USERNAME,
+        'lgpassword': PASSWORD,
+        'lgtoken': login_token,
+        'format': 'json'
+    })
+
+    result = r.json().get('login', {})
+    if result.get('result') != 'Success':
+        print(f"Login failed: {r.json()}")
+        sys.exit(1)
+
+    print("Successfully logged in")
+
+def get_csrf_token():
+    """Get CSRF token for editing"""
+    r = session.get(WIKIDATA_API, params={
+        'action': 'query',
+        'meta': 'tokens',
+        'type': 'csrf',
+        'format': 'json'
+    })
+    return r.json()['query']['tokens']['csrftoken']
+
+def get_entity(qid):
+    """Fetch an entity from Wikidata"""
+    r = session.get(WIKIDATA_API, params={
+        'action': 'wbgetentities',
+        'ids': qid,
+        'format': 'json'
+    })
+    return r.json()['entities'][qid]
+
+def check_p460_property(entity):
+    """
+    Check P460 (said to be the same as) property.
+
+    Returns:
+        QID if valid single target found, None otherwise
+    """
+    claims = entity.get('claims', {})
+    p460_claims = claims.get('P460', [])
+
+    if not p460_claims:
+        print("  No P460 (said to be the same as) property found. Aborting.")
+        return None
+
+    print(f"  Found {len(p460_claims)} P460 statement(s)")
+
+    # Extract QID targets
+    p460_targets = []
+    for claim in p460_claims:
+        if claim['mainsnak']['snaktype'] == 'value':
+            target_qid = claim['mainsnak']['datavalue']['value']['id']
+            has_qualifier = bool(claim.get('qualifiers'))
+            p460_targets.append({
+                'qid': target_qid,
+                'has_qualifier': has_qualifier,
+                'claim': claim
+            })
+
+    if not p460_targets:
+        print("  No valid P460 values. Aborting.")
+        return None
+
+    # Check for duplicates with same QID but different qualifier status
+    qid_groups = {}
+    for target in p460_targets:
+        qid = target['qid']
+        if qid not in qid_groups:
+            qid_groups[qid] = []
+        qid_groups[qid].append(target)
+
+    # Check if we have multiple different QIDs
+    unique_qids = list(qid_groups.keys())
+    if len(unique_qids) > 1:
+        print(f"  Multiple different QIDs linked via P460: {unique_qids}")
+        print("  Aborting - too many targets.")
+        return None
+
+    # We have exactly one QID - check for duplicate with/without qualifiers
+    single_qid = unique_qids[0]
+    qid_targets = qid_groups[single_qid]
+
+    if len(qid_targets) > 1:
+        # Check if one has qualifier and one doesn't
+        with_qual = [t for t in qid_targets if t['has_qualifier']]
+        without_qual = [t for t in qid_targets if not t['has_qualifier']]
+
+        if len(with_qual) == 1 and len(without_qual) == 1:
+            print(f"  Found duplicate P460 for {single_qid}: one with qualifier, one without")
+            print(f"  Removing statement without qualifier")
+            # Remove the one without qualifier
+            remove_claim(entity['id'], without_qual[0]['claim'])
+        else:
+            print(f"  Multiple P460 statements for {single_qid} with unexpected qualifier pattern")
+            print(f"  Aborting - cannot safely resolve.")
+            return None
+
+    print(f"  Single valid P460 target: {single_qid}")
+    return single_qid
+
+def remove_claim(entity_id, claim):
+    """Remove a claim from an entity"""
+    csrf_token = get_csrf_token()
+    claim_id = claim['id']
+
+    r = session.post(WIKIDATA_API, data={
+        'action': 'wbremoveclaims',
+        'claim': claim_id,
+        'token': csrf_token,
+        'summary': 'Removing duplicate P460 statement without qualifier',
+        'format': 'json'
+    })
+
+    response = r.json()
+    # Check for success
+    if response.get('success') == 1:
+        print(f"    Removed claim {claim_id}")
+        time.sleep(1)
+        return True
+    else:
+        print(f"    Error removing claim: {response}")
+        return False
+
+def add_role_qualifier(entity_id, p460_qid):
+    """Add P3831 and P2868 role qualifiers to P460 statement"""
+    entity = get_entity(entity_id)
+    claims = entity.get('claims', {})
+    p460_claims = claims.get('P460', [])
+
+    csrf_token = get_csrf_token()
+
+    # Find the P460 claim linking to p460_qid
+    for claim in p460_claims:
+        if claim['mainsnak']['snaktype'] == 'value':
+            target_qid = claim['mainsnak']['datavalue']['value']['id']
+            if target_qid == p460_qid:
+                claim_id = claim['id']
+
+                # Add P3831 (object of statement has role) qualifier
+                r = session.post(WIKIDATA_API, data={
+                    'action': 'wbsetqualifier',
+                    'claim': claim_id,
+                    'property': 'P3831',
+                    'snaktype': 'value',
+                    'value': json.dumps({'entity-type': 'item', 'numeric-id': int(DISPUTED_SHIKINAISHA_QID[1:])}),
+                    'token': csrf_token,
+                    'summary': f'Adding role qualifier: Disputed Shikinaisha/Shikigeisha',
+                    'format': 'json'
+                })
+
+                if r.json().get('success') == 1:
+                    print(f"  Added P3831 qualifier to P460 statement")
+                    time.sleep(1)
+                else:
+                    print(f"  Error adding P3831 qualifier: {r.json()}")
+                    return
+
+                # Add P2868 (subject has role) qualifier for Shikinai Ronsha
+                r = session.post(WIKIDATA_API, data={
+                    'action': 'wbsetqualifier',
+                    'claim': claim_id,
+                    'property': 'P2868',
+                    'snaktype': 'value',
+                    'value': json.dumps({'entity-type': 'item', 'numeric-id': int('135022904')}),
+                    'token': csrf_token,
+                    'summary': f'Adding subject role qualifier: Shikinai Ronsha',
+                    'format': 'json'
+                })
+
+                if r.json().get('success') == 1:
+                    print(f"  Added P2868 qualifier to P460 statement")
+                    time.sleep(1)
+                else:
+                    print(f"  Error adding P2868 qualifier: {r.json()}")
+                return
+
+    print(f"  Could not find P460 statement linking to {p460_qid}")
+
+def deprecate_property_statements(entity_id, p460_qid):
+    """
+    Deprecate statements of specified properties.
+    Add qualifiers indicating they refer to the Engishiki shrine via P460.
+    """
+    entity = get_entity(entity_id)
+    claims = entity.get('claims', {})
+    csrf_token = get_csrf_token()
+
+    deprecated_count = 0
+
+    # Properties to check and their target QIDs
+    properties_to_deprecate = {
+        'P31': ENGISHIKI_SHRINE_TYPES,  # instance of
+        'P361': None,  # part of - special handling (must be part of Engishiki Jinmyocho)
+        'P1343': None,  # described by source - special handling (must be Kokugakuin Shrine database old)
+        'P1448': None,  # official name - special handling (must have Heian period qualifier)
+        'P1814': None,  # name in kana - special handling (must have stated in Engishiki qualifier)
+        'P13677': None,  # Kokugakuin University Digital Museum entry ID
+    }
+
+    for prop, target_qids in properties_to_deprecate.items():
+        prop_claims = claims.get(prop, [])
+
+        if not prop_claims:
+            print(f"  No {prop} statements found")
+            continue
+
+        print(f"  Found {len(prop_claims)} {prop} statement(s)")
+
+        for claim in prop_claims:
+            should_deprecate = False
+
+            if prop == 'P31':
+                # Check if value is in ENGISHIKI_SHRINE_TYPES
+                if claim['mainsnak']['snaktype'] == 'value':
+                    target_qid = claim['mainsnak']['datavalue']['value']['id']
+                    if target_qid in ENGISHIKI_SHRINE_TYPES:
+                        should_deprecate = True
+
+            elif prop == 'P361':
+                # Check if this is part of something that is part of Engishiki Jinmyocho
+                if claim['mainsnak']['snaktype'] == 'value':
+                    target_qid = claim['mainsnak']['datavalue']['value']['id']
+                    # Check if target is part of Engishiki Jinmyocho
+                    target_entity = get_entity(target_qid)
+                    target_claims = target_entity.get('claims', {})
+
+                    for p361_claim in target_claims.get('P361', []):
+                        if p361_claim['mainsnak']['snaktype'] == 'value':
+                            p361_target = p361_claim['mainsnak']['datavalue']['value']['id']
+                            if p361_target == ENGISHIKI_JINMYOCHO_QID:
+                                should_deprecate = True
+                                break
+
+                    time.sleep(0.5)  # Rate limiting
+
+            elif prop == 'P1343':
+                # Check if described by Kokugakuin Shrine database (old)
+                if claim['mainsnak']['snaktype'] == 'value':
+                    source_qid = claim['mainsnak']['datavalue']['value']['id']
+                    if source_qid == KOKUGAKUIN_SHRINE_DB_OLD_QID:
+                        should_deprecate = True
+
+            elif prop == 'P1448':
+                # Check if has valid in period qualifier with Heian period
+                qualifiers = claim.get('qualifiers', {})
+                if 'P1264' in qualifiers:
+                    for qual in qualifiers['P1264']:
+                        if qual['snaktype'] == 'value':
+                            qual_qid = qual['datavalue']['value']['id']
+                            if qual_qid == HEIAN_PERIOD_QID:
+                                should_deprecate = True
+                                break
+
+            elif prop == 'P1814':
+                # Check if has stated in reference with Engishiki Jinmyocho
+                references = claim.get('references', [])
+                for ref in references:
+                    ref_snaks = ref.get('snaks', {})
+                    if 'P248' in ref_snaks:
+                        for snak in ref_snaks['P248']:
+                            if snak['snaktype'] == 'value':
+                                snak_qid = snak['datavalue']['value']['id']
+                                if snak_qid == ENGISHIKI_JINMYOCHO_QID:
+                                    should_deprecate = True
+                                    break
+
+            elif prop == 'P13677':
+                # Always deprecate Kokugakuin entries
+                should_deprecate = True
+
+            if should_deprecate:
+                deprecate_claim(entity_id, claim, p460_qid, csrf_token)
+                deprecated_count += 1
+                time.sleep(1)
+
+    print(f"  Deprecated {deprecated_count} statements")
+
+def deprecate_claim(entity_id, claim, p460_qid, csrf_token):
+    """Deprecate a claim and add qualifiers"""
+    claim_id = claim['id']
+
+    # Set rank to deprecated using wbsetclaim with the proper structure
+    claim_copy = claim.copy()
+    claim_copy['rank'] = 'deprecated'
+
+    r = session.post(WIKIDATA_API, data={
+        'action': 'wbsetclaim',
+        'claim': json.dumps(claim_copy),
+        'token': csrf_token,
+        'summary': 'Deprecating statement - refers to Engishiki shrine properties',
+        'format': 'json'
+    })
+
+    if 'error' in r.json():
+        # Try alternative: fetch fresh entity and update via wbeditentity
+        entity = get_entity(entity_id)
+        claims = entity.get('claims', {})
+
+        # Find the property this claim belongs to
+        for prop, prop_claims in claims.items():
+            for idx, c in enumerate(prop_claims):
+                if c['id'] == claim_id:
+                    # Found it - set rank and update
+                    claims[prop][idx]['rank'] = 'deprecated'
+
+                    edit_data = {'claims': claims[prop]}
+                    r2 = session.post(WIKIDATA_API, data={
+                        'action': 'wbeditentity',
+                        'id': entity_id,
+                        'data': json.dumps(edit_data),
+                        'token': csrf_token,
+                        'summary': 'Deprecating statement - refers to Engishiki shrine properties',
+                        'format': 'json'
+                    })
+
+                    if 'error' in r2.json():
+                        print(f"    Error setting rank: {r2.json()['error']}")
+                        return
+                    break
+
+    # Add reason for deprecated rank qualifier
+    r = session.post(WIKIDATA_API, data={
+        'action': 'wbsetqualifier',
+        'claim': claim_id,
+        'property': 'P2241',
+        'snaktype': 'value',
+        'value': json.dumps({'entity-type': 'item', 'numeric-id': int(REASON_REFERS_DIFFERENT[1:])}),
+        'token': csrf_token,
+        'summary': 'Adding reason for deprecation',
+        'format': 'json'
+    })
+
+    if r.json().get('success') != 1:
+        print(f"    Error adding P2241 qualifier: {r.json()}")
+        return
+
+    # Add intended subject qualifier
+    r = session.post(WIKIDATA_API, data={
+        'action': 'wbsetqualifier',
+        'claim': claim_id,
+        'property': 'P8327',
+        'snaktype': 'value',
+        'value': json.dumps({'entity-type': 'item', 'numeric-id': int(p460_qid[1:])}),
+        'token': csrf_token,
+        'summary': 'Adding intended subject of deprecated statement',
+        'format': 'json'
+    })
+
+    if r.json().get('success') != 1:
+        print(f"    Error adding P8327 qualifier: {r.json()}")
+        return
+
+    print(f"    Deprecated {claim_id} with qualifiers")
+
+def process_single_shrine(shrine_qid):
+    """Process a single shrine - returns True if successful, False otherwise"""
+    try:
+        # Get the target shrine
+        entity = get_entity(shrine_qid)
+        shrine_label = entity.get('labels', {}).get('en', {}).get('value', shrine_qid)
+
+        # Check P460 property
+        p460_qid = check_p460_property(entity)
+
+        if not p460_qid:
+            return False
+
+        # Add role qualifier to P460
+        add_role_qualifier(shrine_qid, p460_qid)
+
+        # Deprecate properties
+        deprecate_property_statements(shrine_qid, p460_qid)
+
+        return True
+
+    except Exception as e:
+        print(f"  Error processing {shrine_qid}: {str(e)}")
+        return False
+
+def main():
+    """Main script execution"""
+    print("=" * 60)
+    print("Batch Deprecation - Shikinai Ronsha Shrines")
+    print("=" * 60)
+    print()
+
+    # Fetch shrine QIDs via SPARQL
+    shrine_qids = fetch_shikinai_ronsha_shrines(LIMIT)
+
+    if not shrine_qids:
+        print("No shrines found. Exiting.")
+        return
+
+    # Login
+    print()
+    login()
+
+    # Process each shrine
+    print(f"Processing {len(shrine_qids)} shrines...\n")
+
+    processed = 0
+    skipped = 0
+
+    for i, shrine_qid in enumerate(shrine_qids, 1):
+        print(f"\n[{i}/{len(shrine_qids)}] Processing {shrine_qid}...")
+
+        try:
+            # Get the shrine
+            entity = get_entity(shrine_qid)
+            shrine_label = entity.get('labels', {}).get('en', {}).get('value', shrine_qid)
+            print(f"  Shrine: {shrine_label}")
+
+            # Check P460 property
+            p460_qid = check_p460_property(entity)
+
+            if not p460_qid:
+                print(f"  ⊘ Skipped - no valid P460")
+                skipped += 1
+                continue
+
+            # Add role qualifier to P460
+            add_role_qualifier(shrine_qid, p460_qid)
+
+            # Deprecate properties
+            deprecate_property_statements(shrine_qid, p460_qid)
+
+            print(f"  ✓ Processed")
+            processed += 1
+
+        except Exception as e:
+            print(f"  ✗ Error: {str(e)}")
+            skipped += 1
+            continue
+
+        time.sleep(1)  # Rate limiting
+
+    print("\n" + "=" * 60)
+    print(f"Batch processing complete")
+    print("=" * 60)
+    print(f"Processed: {processed}")
+    print(f"Skipped: {skipped}")
+    print(f"Total: {processed + skipped}")
+
+if __name__ == '__main__':
+    main()
