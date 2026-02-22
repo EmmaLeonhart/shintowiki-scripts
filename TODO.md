@@ -4,6 +4,18 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 
 ---
 
+URGENT
+
+check notes.txt and get rid of it if it is clear here
+
+OK so basically what is going on the Claude ended up attempting to make a script to fix some of the Japanese categories stuff particularly ones that have a Japanese category name but no wiki data and it didn't really complete it it ended up getting stuck basically there it might end up just starting running again on its own but I'm not really sure but this is just an urgent thing that it has to fix something I am potentially interested in is making a thing that generates quick statement so that I can have these categories on wiki data but I am not 100% confident on it like there's a lot of Japanese like Japanese only categories that probably need wiki data items but whether it's wise for me to do so it's kind of questionable
+
+edit: notes.txt is covered here so deleting it
+
+desktop.ini is another thing to look over
+
+look over settings.local.json to make sure there's no secret leakage
+
 ## Immediate / in progress
 
 - [ ] **History merges** — pages that need `{{moved to}}` / `{{moved from}}` templates to preserve attribution after page moves. Two separate waves of moves means some pages need both. (The actual history import is handled by Miraheze, not by us — the templates just ensure the import will be coherent when it happens.)
