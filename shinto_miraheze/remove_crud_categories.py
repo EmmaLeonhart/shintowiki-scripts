@@ -74,10 +74,23 @@ def main():
             if args.dry_run:
                 print(f"  DRY RUN: would strip [[Category:{subcat_name}]] from {page.name}")
             else:
-                page.save(new_text, summary=f"Bot: remove [[Category:{subcat_name}]] (crud category cleanup)")
-                print(f"  CLEANED: {page.name}")
+                for attempt in range(3):
+                    try:
+                        page.save(new_text, summary=f"Bot: remove [[Category:{subcat_name}]] (crud category cleanup)")
+                        print(f"  CLEANED: {page.name}")
+                        total_edits += 1
+                        break
+                    except mwclient.errors.EditError as e:
+                        if 'editconflict' in str(e).lower() and attempt < 2:
+                            print(f"  CONFLICT (retry {attempt+1}/3): {page.name}")
+                            time.sleep(3)
+                            # Re-fetch and re-apply the strip
+                            text = page.text()
+                            new_text = pattern.sub("", text).rstrip("\n")
+                        else:
+                            print(f"  ERROR: {page.name} — {e}")
+                            break
                 time.sleep(THROTTLE)
-                total_edits += 1
 
         print()
 
