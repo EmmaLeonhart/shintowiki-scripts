@@ -4,6 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-02-23
+
+### History merge — `{{moved to}}` / `{{moved from}}` pairs
+**Scripts:** `shinto_miraheze/merge_move_histories.py` (new), `shinto_miraheze/tag_move_link_quality.py` (new), `shinto_miraheze/tag_move_intersection.py` (new)
+**Status:** Complete — **184 pairs merged, 0 errors**
+
+Completed the full-history merge for all matched move pairs. For each pair (A = old name, B = new name):
+1. B's content saved (with `{{moved from}}` stripped)
+2. B deleted → revisions enter the deleted archive
+3. A moved to B's title → B's title now holds A's revision history
+4. B's content pasted onto the page at B's title
+5. B's archived revisions undeleted → histories merge chronologically at B's title
+
+Also introduced three maintenance categories populated by bot:
+- `Category:moved from a redlink` — `{{moved from|X}}` where X doesn't exist
+- `Category:moved to a redlink` — `{{moved to|X}}` where X doesn't exist
+- `Category:moved from a non-redirect` — `{{moved from|X}}` where X exists but is not a redirect
+- `Category:Move targets ∩ destinations` — pages with both templates (edge cases needing manual resolution)
+- `Category:move templates that do not link to each other` — pages whose templates form a contradictory/mismatched pair (7 pages; needs manual review)
+
+History fully preserved for all 184 merged pages. Marginal exceptions: the 7 pages in the error category, plus the pre-existing ∩ cases that were cleared manually.
+
+---
+
 ## 2026-02-20
 
 ### ja: interwiki category merge and QID linking
