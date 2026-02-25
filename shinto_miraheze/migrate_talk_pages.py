@@ -42,6 +42,8 @@ LOCAL_DISCUSSION_RE = re.compile(
     re.MULTILINE,
 )
 QPAGE_RE = re.compile(r"^Q\d+$")
+DUMMY_COMMENT = ":Dummy comment added by script to avoid immediate auto-archive of a fresh page.~~~~"
+HEADING_RE = re.compile(r"^\s*=+\s*[^=].*?\s*=+\s*$")
 
 
 def fetch_json(url, params):
@@ -126,6 +128,26 @@ def get_local_discussion_block(existing_talk_text):
     return m.group(1).strip()
 
 
+def inject_dummy_after_headings(text):
+    """Ensure every heading line in text has the dummy comment directly after it."""
+    if not text:
+        return text
+
+    lines = text.splitlines()
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        out.append(line)
+        if HEADING_RE.match(line):
+            next_line = lines[i + 1] if i + 1 < len(lines) else ""
+            if not next_line.startswith(":Dummy comment added by script to avoid immediate auto-archive of a fresh page."):
+                out.append(DUMMY_COMMENT)
+        i += 1
+
+    return "\n".join(out).rstrip()
+
+
 def build_talk_text(base_title, local_discussion, ja_data, en_data, run_date):
     parts = []
     parts.append("{{talk page header}}")
@@ -136,6 +158,7 @@ def build_talk_text(base_title, local_discussion, ja_data, en_data, run_date):
     )
     parts.append("")
     parts.append("== Local discussion ==")
+    parts.append(DUMMY_COMMENT)
     if local_discussion:
         parts.append(local_discussion)
     else:
@@ -143,44 +166,117 @@ def build_talk_text(base_title, local_discussion, ja_data, en_data, run_date):
     parts.append("")
 
     if ja_data:
-        parts.append(f"== Imported from Japanese Wikipedia ({run_date}) ==")
+        ja_rev_link = (
+            f"https://ja.wikipedia.org/wiki/Special:PermanentLink/{ja_data['revid']}"
+            if ja_data.get("revid")
+            else ""
+        )
+        ja_heading = (
+            f"== Imported from Japanese Wikipedia ({run_date}, [{ja_rev_link} revision]) =="
+            if ja_rev_link
+            else f"== Imported from Japanese Wikipedia ({run_date}) =="
+        )
+        parts.append(ja_heading)
+        parts.append(DUMMY_COMMENT)
         parts.append(f"<!-- Source: ja:{ja_data['talk_title']} | revid={ja_data['revid']} -->")
-        parts.append(ja_data["text"])
+        parts.append(inject_dummy_after_headings(ja_data["text"]))
         parts.append("")
 
     if en_data:
-        parts.append(f"== Imported from English Wikipedia ({run_date}) ==")
+        en_rev_link = (
+            f"https://en.wikipedia.org/wiki/Special:PermanentLink/{en_data['revid']}"
+            if en_data.get("revid")
+            else ""
+        )
+        en_heading = (
+            f"== Imported from English Wikipedia ({run_date}, [{en_rev_link} revision]) =="
+            if en_rev_link
+            else f"== Imported from English Wikipedia ({run_date}) =="
+        )
+        parts.append(en_heading)
+        parts.append(DUMMY_COMMENT)
         parts.append(f"<!-- Source: en:{en_data['talk_title']} | revid={en_data['revid']} -->")
-        parts.append(en_data["text"])
+        parts.append(inject_dummy_after_headings(en_data["text"]))
         parts.append("")
 
     if not ja_data and not en_data:
         parts.append("== Initial import ==")
+        parts.append(DUMMY_COMMENT)
         parts.append("<!-- No source talk page found on ja/en Wikipedia at migration time. -->")
         parts.append("")
-
-    parts.append("<!-- Dummy comment to avoid immediate auto-archive of a fresh page. -->")
     return "\n".join(parts).rstrip() + "\n"
 
 
-def iter_mainspace_titles(site, start_title=None):
-    params = {
-        "list": "allpages",
-        "apnamespace": 0,
-        "aplimit": "max",
-        "apfilterredir": "nonredirects",
-    }
-    if start_title:
-        params["apfrom"] = start_title
+def get_namespace_maps(site):
+    info = site.api("query", meta="siteinfo", siprop="namespaces|namespacealiases")
+    ns_data = info.get("query", {}).get("namespaces", {})
+    alias_data = info.get("query", {}).get("namespacealiases", [])
 
-    while True:
-        result = site.api("query", **params)
-        for entry in result["query"]["allpages"]:
-            yield entry["title"]
-        if "continue" in result:
-            params.update(result["continue"])
-        else:
-            break
+    id_to_name = {}
+    name_to_id = {}
+    for k, v in ns_data.items():
+        ns_id = int(k)
+        ns_name = v.get("*", "")
+        id_to_name[ns_id] = ns_name
+        name_to_id[ns_name.lower()] = ns_id
+        canonical = (v.get("canonical") or "").strip()
+        if canonical:
+            name_to_id[canonical.lower()] = ns_id
+
+    for alias in alias_data:
+        name_to_id[alias.get("*", "").lower()] = int(alias.get("id"))
+
+    return id_to_name, name_to_id
+
+
+def iter_subject_titles_all_namespaces(site, subject_ns_ids, start_title=None):
+    for ns_id in sorted(subject_ns_ids):
+        params = {
+            "list": "allpages",
+            "apnamespace": ns_id,
+            "aplimit": "max",
+            "apfilterredir": "nonredirects",
+        }
+        if start_title and ns_id == 0:
+            params["apfrom"] = start_title
+
+        while True:
+            result = site.api("query", **params)
+            for entry in result["query"]["allpages"]:
+                yield entry["title"], ns_id
+            if "continue" in result:
+                params.update(result["continue"])
+            else:
+                break
+
+
+def get_title_info(site, title):
+    result = site.api("query", prop="info", titles=title, formatversion="2")
+    pages = result.get("query", {}).get("pages", [])
+    if not pages:
+        return None, title
+    page = pages[0]
+    if page.get("missing"):
+        return None, page.get("title", title)
+    return page.get("ns"), page.get("title", title)
+
+
+def to_talk_title(subject_title, subject_ns_id, id_to_name):
+    if subject_ns_id % 2 == 1:
+        return None
+
+    talk_ns_id = subject_ns_id + 1
+    talk_ns_name = id_to_name.get(talk_ns_id)
+    if talk_ns_name is None:
+        return None
+
+    subject_ns_name = id_to_name.get(subject_ns_id, "")
+    if subject_ns_name and subject_title.startswith(subject_ns_name + ":"):
+        base_title = subject_title[len(subject_ns_name) + 1 :]
+    else:
+        base_title = subject_title
+
+    return f"{talk_ns_name}:{base_title}"
 
 
 def parse_titles_arg(titles_arg):
@@ -203,18 +299,17 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
-    parser.add_argument("--start-title", default="", help="Start title for all-mainspace mode.")
-    parser.add_argument("--titles", default="", help="Comma-separated mainspace titles to process.")
+    parser.add_argument(
+        "--start-title",
+        default="",
+        help="Start title for default all-namespace mode (applies to mainspace scan start).",
+    )
+    parser.add_argument("--titles", default="", help="Comma-separated subject-page titles to process.")
     parser.add_argument("--titles-file", default="", help="Path to newline-delimited titles file.")
     parser.add_argument(
         "--fallback-same-title",
         action="store_true",
         help="If no ja/en mapping is found, try same title on ja/en Wikipedia.",
-    )
-    parser.add_argument(
-        "--force-overwrite",
-        action="store_true",
-        help="Overwrite even if the talk page already appears migrated.",
     )
     args = parser.parse_args()
 
@@ -232,25 +327,46 @@ def main():
         explicit_titles.extend(parse_titles_file(args.titles_file))
     explicit_titles = list(dict.fromkeys(explicit_titles))
 
+    id_to_name, _name_to_id = get_namespace_maps(site)
+    subject_ns_ids = [ns_id for ns_id in id_to_name.keys() if ns_id >= 0 and ns_id % 2 == 0]
+
     if explicit_titles:
-        titles_iter = iter(explicit_titles)
-        print(f"Processing explicit title list: {len(explicit_titles)} titles")
+        title_ns_pairs = []
+        for t in explicit_titles:
+            ns_id, normalized_title = get_title_info(site, t)
+            if ns_id is None:
+                print(f"SKIP missing page: {t}")
+                continue
+            if ns_id % 2 == 1:
+                print(f"SKIP talk page in explicit list: {normalized_title}")
+                continue
+            title_ns_pairs.append((normalized_title, ns_id))
+        titles_iter = iter(title_ns_pairs)
+        print(f"Processing explicit title list: {len(title_ns_pairs)} existing subject pages")
     else:
-        titles_iter = iter_mainspace_titles(site, start_title=args.start_title or None)
-        print("Processing all non-redirect mainspace pages")
+        titles_iter = iter_subject_titles_all_namespaces(
+            site,
+            subject_ns_ids=subject_ns_ids,
+            start_title=args.start_title or None,
+        )
+        print("Processing all non-redirect pages in all subject namespaces")
 
     run_date = dt.datetime.utcnow().strftime("%Y-%m-%d")
     processed = edited = skipped = errors = 0
 
-    for title in titles_iter:
+    for title, ns_id in titles_iter:
         if args.limit and processed >= args.limit:
             break
-        if QPAGE_RE.match(title):
+        if ns_id == 0 and QPAGE_RE.match(title):
+            continue
+
+        talk_title = to_talk_title(title, ns_id, id_to_name)
+        if not talk_title:
             continue
 
         processed += 1
         page = site.pages[title]
-        talk_page = site.pages[f"Talk:{title}"]
+        talk_page = site.pages[talk_title]
         prefix = f"[{processed}] {title}"
 
         try:
@@ -259,15 +375,6 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR reading page/talk page: {e}")
             errors += 1
-            continue
-
-        if (
-            not args.force_overwrite
-            and "{{talk page header}}" in (talk_text or "")
-            and "<!-- Imported from Japanese/English Wikipedia talk pages on " in (talk_text or "")
-        ):
-            print(f"{prefix} SKIP (already migrated marker found)")
-            skipped += 1
             continue
 
         qid = extract_qid(page_text)
