@@ -18,6 +18,8 @@ look over settings.local.json to make sure there's no secret leakage
 
 ## Immediate / in progress
 
+- [ ] **Delete `Category:Jawiki_resolution_pages`** — 10,239 pages being deleted by `delete_jawiki_resolution_pages.py` (running, started 2026-02-25).
+
 - [x] **History merges** — 184 pairs merged (2026-02-23). Combined revision histories of old-name and new-name pages for all matched `{{moved to}}`/`{{moved from}}` pairs. 7 edge cases left unresolved; tagged in `Category:move templates that do not link to each other` for manual review. History fully preserved except for those marginal pages.
 - [x] **Re-run `resolve_duplicated_qid_categories.py`** — complete (2026-02-23). Only 3 pages remained; all were duplicate Latin-name pairs tagged as erroneous. The ~75 expected remainder had already been resolved by intervening script passes.
 - [x] **Crud category cleanup** — `remove_crud_categories.py` running in background; stripping all subcategories of Category:Crud_categories from member pages.
