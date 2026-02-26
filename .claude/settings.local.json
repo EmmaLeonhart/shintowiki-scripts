@@ -136,7 +136,9 @@
       "Bash(cd /c/Users/Immanuelle/Documents/Github/wikibot && C:/Users/Immanuelle/AppData/Local/Programs/Python/Python313/python.exe shinto_miraheze/debug_pairs.py 2>&1)",
       "Bash(cd /c/Users/Immanuelle/Documents/Github/wikibot && C:/Users/Immanuelle/AppData/Local/Programs/Python/Python313/python.exe shinto_miraheze/resolve_duplicated_qid_categories.py 2>&1)",
       "Bash(cd /c/Users/Immanuelle/Documents/Github/wikibot && C:/Users/Immanuelle/AppData/Local/Programs/Python/Python313/python.exe shinto_miraheze/remove_crud_categories.py 2>&1)",
-      "Bash(cd C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\wikibot:*)"
+      "Bash(cd C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\wikibot:*)",
+      "Bash(C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe:*)",
+      "Bash(/c/Users/Immanuelle/AppData/Local/Programs/Python/Python313/python.exe:*)"
     ],
     "deny": [],
     "ask": []
