@@ -46,6 +46,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [ ] **Resolve migration issues in [Category:Erroneous qid category links](https://shinto.miraheze.org/wiki/Category:Erroneous_qid_category_links)** — fix category/QID mismatches and complete any blocked merges or redirect corrections.
 - [ ] **[Category:Pages with duplicated content](https://shinto.miraheze.org/wiki/Category:Pages_with_duplicated_content)** — pages where the same content exists under multiple titles. Needs human review per page: which title is canonical, whether a history merge is appropriate.
 - [ ] **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
+- [ ] I think  I solved the audit. We got a lot of categories in https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names that are mostly a product of this with their qids linking to other things directly. 
 
 ### Lower priority
 
