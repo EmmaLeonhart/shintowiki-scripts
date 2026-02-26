@@ -56,6 +56,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [ ] **Talk pages** — currently contain junk (Wikipedia AFC notices, old bot messages). Plan: overwrite with imported talk page content from Japanese Wikipedia and English Wikipedia per article, with a section for any local discussion and a comment noting the import date.
 - [ ] **Shikinaisha pages with broken ILL destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
 - [ ] **Github actions** — Get this repo working with github actions to periodically edit the wiki. This is a concern more once we have finished up with our overhaul of the wiki, and it is less of a concern right now. But it might be useful to actually implement it this way since it frees up my local CPU time. We might have massive actions that occur daily for 6 hours and then stop and continue again. Might take a few months to do the overhaul and we can work on editing the bot loop in the meantime. A few months of no mental energy or all energy dedicated to editing the loop and then a couple edits a week is better than a few weeks of frantic edits.
+switch to [[User:EmmaBot]] that is the bot account that I just made and I am intending on using it because combining it with GitHub actions makes it clear what is going on and allow or audit allows for like audible stuff and it makes it clear which edits are being done by me as a human
 ---
 
 ## Repository / script tasks
