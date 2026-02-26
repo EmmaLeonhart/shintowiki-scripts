@@ -18,11 +18,10 @@ look over settings.local.json to make sure there's no secret leakage
 
 ## Immediate / in progress
 
-- [ ] **Delete `Category:Jawiki_resolution_pages`** — 10,239 pages being deleted by `delete_jawiki_resolution_pages.py` (running, started 2026-02-25).
-
 - [ ] **Crud category cleanup** — `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. No state file; safe to re-run (skips already-empty categories automatically).
 
-- [ ] **Category page wikitext normalization** — `normalize_category_pages.py --apply` running (2026-02-25); strips all free text from category pages, keeping only templates / interwikis / category links in a clean structured layout. State file: `shinto_miraheze/normalize_category_pages.state`. Log: `shinto_miraheze/normalize_category_pages.log`.
+- [x] **Delete `Category:Jawiki_resolution_pages`** — complete (2026-02-26). 10,239 pages deleted by `delete_jawiki_resolution_pages.py`.
+- [x] **Category page wikitext normalization** — complete (2026-02-26). 23,571 of 24,045 category pages edited by `normalize_category_pages.py`. State file preserved for safe re-runs.
 
 - [ ] **Talk page migration** — `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state` (201+ pages done). Log: `shinto_miraheze/migrate_talk_pages.log`.
 

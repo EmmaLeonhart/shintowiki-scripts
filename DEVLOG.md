@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-02-26
+
+### Category page wikitext normalization
+**Script:** `shinto_miraheze/normalize_category_pages.py` (new)
+**Status:** Complete — **23,571 edited, 474 skipped, 0 errors**
+
+Normalized all 24,045 non-redirect category pages to a clean three-section structure:
+
+```
+<!--templates-->
+{{wikidata link|Q…}} etc.
+<!--interwikis-->
+[[ja:…]] [[en:…]] etc.
+<!--categories-->
+[[Category:…]]
+```
+
+Strips all free text, stray headings, Japanese prose, and any other content accumulated from previous automated passes. Added state file (`normalize_category_pages.state`) and JSONL log (`normalize_category_pages.log`) so the script is safe to re-run without re-processing completed pages.
+
+### Deletion of Category:Jawiki_resolution_pages
+**Script:** `shinto_miraheze/delete_jawiki_resolution_pages.py`
+**Status:** Complete — **10,239 pages deleted**
+
+Deleted all pages in `Category:Jawiki_resolution_pages`. These were stub pages created during earlier jawiki import passes that served no ongoing purpose. Deletion was performed in bulk via the bot account. Category is now empty.
+
+---
+
 ## 2026-02-23
 
 ### History merge — `{{moved to}}` / `{{moved from}}` pairs
