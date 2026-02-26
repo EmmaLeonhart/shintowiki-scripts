@@ -20,9 +20,14 @@ look over settings.local.json to make sure there's no secret leakage
 
 - [ ] **Delete `Category:Jawiki_resolution_pages`** — 10,239 pages being deleted by `delete_jawiki_resolution_pages.py` (running, started 2026-02-25).
 
+- [ ] **Crud category cleanup** — `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. No state file; safe to re-run (skips already-empty categories automatically).
+
+- [ ] **Category page wikitext normalization** — `normalize_category_pages.py --apply` running (2026-02-25); strips all free text from category pages, keeping only templates / interwikis / category links in a clean structured layout. State file: `shinto_miraheze/normalize_category_pages.state`. Log: `shinto_miraheze/normalize_category_pages.log`.
+
+- [ ] **Talk page migration** — `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state` (201+ pages done). Log: `shinto_miraheze/migrate_talk_pages.log`.
+
 - [x] **History merges** — 184 pairs merged (2026-02-23). Combined revision histories of old-name and new-name pages for all matched `{{moved to}}`/`{{moved from}}` pairs. 7 edge cases left unresolved; tagged in `Category:move templates that do not link to each other` for manual review. History fully preserved except for those marginal pages.
 - [x] **Re-run `resolve_duplicated_qid_categories.py`** — complete (2026-02-23). Only 3 pages remained; all were duplicate Latin-name pairs tagged as erroneous. The ~75 expected remainder had already been resolved by intervening script passes.
-- [x] **Crud category cleanup** — `remove_crud_categories.py` running in background; stripping all subcategories of Category:Crud_categories from member pages.
 - [x] **`[[sn:...]]` interwiki removal** — complete (1 page, 3 links).
 - [x] **Wanted categories created** — 153 pages created.
 - [x] **`Category:Generated_x-no-miya_lists` deleted** — 67 User namespace pages deleted.

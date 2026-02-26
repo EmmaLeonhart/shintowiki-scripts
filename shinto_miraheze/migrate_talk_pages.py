@@ -499,9 +499,15 @@ def main():
             talk_title = f"Talk:{title}"
 
         processed += 1
-        page = site.pages[title]
-        talk_page = site.pages[talk_title]
         prefix = f"[{processed}] {title}"
+        try:
+            page = site.pages[title]
+            talk_page = site.pages[talk_title]
+        except Exception as e:
+            print(f"{prefix} ERROR accessing page object: {e}")
+            errors += 1
+            append_log(args.log_file, {"title": title, "talk_title": talk_title, "status": "error_page_access", "error": str(e)})
+            continue
 
         page_text = talk_text = None
         read_ok = False

@@ -18,7 +18,10 @@ Default mode is dry-run. Use --apply to save.
 """
 
 import argparse
+import datetime as dt
 import io
+import json
+import os
 import re
 import sys
 import time
@@ -32,6 +35,8 @@ WIKI_PATH = "/w/"
 USERNAME = "Immanuelle"
 PASSWORD = "[REDACTED_SECRET_2]"
 THROTTLE = 1.5
+DEFAULT_STATE_FILE = "shinto_miraheze/normalize_category_pages.state"
+DEFAULT_LOG_FILE = "shinto_miraheze/normalize_category_pages.log"
 
 CATEGORY_LINE_RE = re.compile(r"^\s*\[\[\s*Category\s*:[^\]]+\]\]\s*$", re.IGNORECASE)
 INTERWIKI_LINE_RE = re.compile(r"^\s*\[\[\s*[a-z][a-z0-9-]{1,15}\s*:[^\]]+\]\]\s*$", re.IGNORECASE)
@@ -130,6 +135,30 @@ def iter_category_titles(site, start_title=None, include_redirects=False):
             break
 
 
+def load_state(path):
+    completed = set()
+    if not os.path.exists(path):
+        return completed
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if s:
+                completed.add(s)
+    return completed
+
+
+def append_state(path, title):
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(title + "\n")
+
+
+def append_log(path, data):
+    payload = dict(data)
+    payload["ts_utc"] = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+
 def parse_titles_arg(titles_arg):
     if not titles_arg:
         return []
@@ -154,6 +183,8 @@ def main():
     parser.add_argument("--titles", default="", help="Comma-separated category titles to process.")
     parser.add_argument("--titles-file", default="", help="Path to newline-delimited category titles.")
     parser.add_argument("--include-redirects", action="store_true", help="Include redirect category pages.")
+    parser.add_argument("--state-file", default=DEFAULT_STATE_FILE, help="Path to resume-state file.")
+    parser.add_argument("--log-file", default=DEFAULT_LOG_FILE, help="Path to JSONL run log.")
     args = parser.parse_args()
 
     site = mwclient.Site(
@@ -163,6 +194,10 @@ def main():
     )
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
+
+    completed_titles = load_state(args.state_file) if args.apply else set()
+    if args.apply:
+        print(f"Loaded {len(completed_titles)} completed titles from state file: {args.state_file}")
 
     explicit_titles = []
     explicit_titles.extend(parse_titles_arg(args.titles))
@@ -190,6 +225,11 @@ def main():
         if not title.startswith("Category:"):
             title = f"Category:{title}"
 
+        if args.apply and title in completed_titles:
+            skipped += 1
+            print(f"SKIP (already in state): {title}")
+            continue
+
         processed += 1
         page = site.pages[title]
         prefix = f"[{processed}] {title}"
@@ -199,22 +239,32 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR reading page: {e}")
             errors += 1
+            append_log(args.log_file, {"title": title, "status": "error_read", "error": str(e)})
             continue
 
         if not text:
             print(f"{prefix} SKIP (missing or empty)")
             skipped += 1
+            append_log(args.log_file, {"title": title, "status": "skipped_empty"})
+            if args.apply:
+                append_state(args.state_file, title)
+                completed_titles.add(title)
             continue
 
         if REDIRECT_RE.match(text) and not args.include_redirects:
             print(f"{prefix} SKIP (redirect)")
             skipped += 1
+            append_log(args.log_file, {"title": title, "status": "skipped_redirect"})
+            if args.apply:
+                append_state(args.state_file, title)
+                completed_titles.add(title)
             continue
 
         new_text = build_normalized_text(text)
         if not args.apply:
             changed = (text.rstrip() != new_text.rstrip())
             print(f"{prefix} DRY RUN {'would edit' if changed else 'no change'}")
+            append_log(args.log_file, {"title": title, "status": "dry_run", "would_change": changed})
             continue
 
         try:
@@ -224,15 +274,22 @@ def main():
             )
             edited += 1
             print(f"{prefix} EDITED")
+            append_log(args.log_file, {"title": title, "status": "edited"})
+            append_state(args.state_file, title)
+            completed_titles.add(title)
             time.sleep(THROTTLE)
         except Exception as e:
             msg = str(e).lower()
             if "nochange" in msg:
                 api_nochange += 1
                 print(f"{prefix} NOCHANGE returned by API")
+                append_log(args.log_file, {"title": title, "status": "nochange"})
+                append_state(args.state_file, title)
+                completed_titles.add(title)
             else:
                 errors += 1
                 print(f"{prefix} ERROR saving page: {e}")
+                append_log(args.log_file, {"title": title, "status": "error_save", "error": str(e)})
 
     print("\n" + "=" * 60)
     print(
