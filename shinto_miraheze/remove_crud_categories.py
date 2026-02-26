@@ -66,7 +66,11 @@ def main():
 
         print(f"  {len(members)} members to clean")
         for page in members:
-            text = page.text()
+            try:
+                text = page.text()
+            except Exception as e:
+                print(f"  ERROR reading {page.name}: {e}")
+                continue
             new_text = pattern.sub("", text).rstrip("\n")
             if new_text == text.rstrip("\n"):
                 print(f"  SKIP (tag not found): {page.name}")
