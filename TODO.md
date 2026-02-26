@@ -30,7 +30,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [x] **`[[sn:...]]` interwiki removal** — complete (1 page, 3 links).
 - [x] **Wanted categories created** — 153 pages created.
 - [x] **`Category:Generated_x-no-miya_lists` deleted** — 67 User namespace pages deleted.
-
+- [ ] **Template:Talk page header** Edit this template so that it fits all of our requirements for our new migrated/transformed talk pages.
 ---
 
 ## Wiki content tasks (on shintowiki)
