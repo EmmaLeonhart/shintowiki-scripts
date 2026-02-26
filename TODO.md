@@ -30,7 +30,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [x] **`[[sn:...]]` interwiki removal** — complete (1 page, 3 links).
 - [x] **Wanted categories created** — 153 pages created.
 - [x] **`Category:Generated_x-no-miya_lists` deleted** — 67 User namespace pages deleted.
-
+- [ ] **Template:Talk page header** Edit this template so that it fits all of our requirements for our new migrated/transformed talk pages.
 ---
 
 ## Wiki content tasks (on shintowiki)
@@ -46,6 +46,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [ ] **Resolve migration issues in [Category:Erroneous qid category links](https://shinto.miraheze.org/wiki/Category:Erroneous_qid_category_links)** — fix category/QID mismatches and complete any blocked merges or redirect corrections.
 - [ ] **[Category:Pages with duplicated content](https://shinto.miraheze.org/wiki/Category:Pages_with_duplicated_content)** — pages where the same content exists under multiple titles. Needs human review per page: which title is canonical, whether a history merge is appropriate.
 - [ ] **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
+- [ ] I think  I solved the audit. We got a lot of categories in https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names that are mostly a product of this with their qids linking to other things directly. 
 
 ### Lower priority
 
@@ -54,7 +55,7 @@ look over settings.local.json to make sure there's no secret leakage
 - [ ] **Multiple `{{wikidata link}}` on one page** — usually indicates a Wikidata disambiguation issue. Needs per-case review.
 - [ ] **Talk pages** — currently contain junk (Wikipedia AFC notices, old bot messages). Plan: overwrite with imported talk page content from Japanese Wikipedia and English Wikipedia per article, with a section for any local discussion and a comment noting the import date.
 - [ ] **Shikinaisha pages with broken ILL destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
-
+- [ ] **Github actions** — Get this repo working with github actions to periodically edit the wiki. This is a concern more once we have finished up with our overhaul of the wiki, and it is less of a concern right now. But it might be useful to actually implement it this way since it frees up my local CPU time. We might have massive actions that occur daily for 6 hours and then stop and continue again. Might take a few months to do the overhaul and we can work on editing the bot loop in the meantime. A few months of no mental energy or all energy dedicated to editing the loop and then a couple edits a week is better than a few weeks of frantic edits.
 ---
 
 ## Repository / script tasks
