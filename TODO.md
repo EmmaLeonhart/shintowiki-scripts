@@ -6,6 +6,8 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ## Immediate / in progress
 
+- [ ] **Unused category deletion (with safeguard)** — `delete_unused_categories.py` runs first in the GitHub Actions loop and deletes pages listed in Special:UnusedCategories, except pages containing `{{Possibly empty category}}`. This is part of post-crud cleanup and is expected to run repeatedly over multiple days as category cleanup progresses.
+
 - [ ] **Crud category cleanup** â€” `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
 
 - [ ] **Talk page migration** â€” `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state`. Log: `shinto_miraheze/migrate_talk_pages.log`. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.

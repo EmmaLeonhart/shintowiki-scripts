@@ -25,6 +25,7 @@ Current local orchestration baseline for cleanup runs is shinto_miraheze/cleanup
 | `shinto_miraheze/resolve_duplicated_qid_categories.py` | Merges CJK/Latin duplicate QID category pairs; tags Latin/Latin pairs as erroneous |
 | `shinto_miraheze/create_wanted_categories.py` | Creates wanted category pages (categories with members but no page) |
 | `shinto_miraheze/remove_crud_categories.py` | Strips all subcategories of Category:Crud_categories from member pages |
+| `shinto_miraheze/delete_unused_categories.py` | Deletes pages in Special:UnusedCategories, except pages containing `{{Possibly empty category}}` |
 
 ---
 
@@ -79,6 +80,7 @@ The workflow runs on:
 Pipeline behavior:
 - Uses bot-password login (`WIKI_USERNAME` format `MainUser@BotName`)
 - Writes a run-start status update to `[[User:EmmaBot]]` from `EmmaBot.wiki` + trigger metadata
+- Runs unused-category deletion first (with `{{Possibly empty category}}` safeguard)
 - Runs cleanup scripts sequentially with a per-script edit cap (`WIKI_EDIT_LIMIT=1000`)
 - Commits updated `*.state` files back to the current branch after successful runs
 

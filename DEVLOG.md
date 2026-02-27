@@ -34,6 +34,18 @@ Added run-size limiting for timeout control:
 Operational note:
 - `remove_crud_categories.py` and `migrate_talk_pages.py` are expected to require multiple daily runs over several days due to scale.
 
+### Unused category deletion added to active loop
+**Script:** `shinto_miraheze/delete_unused_categories.py`
+**Status:** Complete (pipeline integration)
+
+Added automatic deletion of categories from Special:UnusedCategories as the first cleanup task in the CI loop.
+
+Safeguard:
+- If a category page contains `{{Possibly empty category}}`, the bot skips deletion.
+
+Rationale:
+- With crud categories being trimmed, unused category pages now need active cleanup to complete the consolidation phase.
+
 ### Active script credential override migration
 **Scripts:** `shinto_miraheze/*.py` (active scripts)
 **Status:** Complete for active scripts
