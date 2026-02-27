@@ -54,6 +54,20 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 - [ ] **Move hardcoded credentials to environment variables** â€” complete for active `shinto_miraheze` scripts; remaining legacy/archive scripts still need migration before full open-source cleanup.
 - [x] **Consolidate active root scripts into `shinto_miraheze/`** â€” done.
 
+### Secret removal (run soon, before open-source release)
+
+- [ ] **Rotate exposed credentials first** â€” treat any historical plaintext credentials as compromised and rotate them before/alongside history rewrite.
+- [ ] **Rewrite git history to remove sensitive literals while preserving commit history structure** â€” use `git filter-repo --replace-text` (do not run yet until branch/backup plan is ready).
+- [ ] **Target literals for replacement** â€” currently identified examples include:
+  - `[REDACTED_SECRET_1]`
+  - `[REDACTED_SECRET_2]`
+  - `[REDACTED_USER_1]`
+- [ ] **Prepare replacements file and perform dry planning review** â€” confirm exact replacement tokens and scope before execution.
+- [ ] **Execute rewrite in one controlled maintenance window** â€” run once, verify with repo-wide search, then force-push branches/tags.
+- [ ] **Coordinate downstream clone reset** â€” after rewrite, collaborators must re-clone or hard-reset because commit SHAs will change.
+- [ ] **Post-rewrite verification** â€” search entire repo history and working tree to confirm sensitive literals are fully removed.
+- [ ] **Open-source readiness gate** â€” do not make repo public until rewrite + rotation + verification are complete.
+
 ---
 
 ## Known external issues
