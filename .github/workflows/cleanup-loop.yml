@@ -3,8 +3,13 @@ name: shinto-cleanup-loop
 on:
   workflow_dispatch:
   push:
+    paths-ignore:
+      - "**/*.state"
   schedule:
     - cron: "0 0 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   cleanup:
@@ -39,3 +44,15 @@ jobs:
         run: |
           chmod +x shinto_miraheze/cleanup_loop.sh
           shinto_miraheze/cleanup_loop.sh
+
+      - name: Commit updated state files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- "*.state"
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(state): update bot state files [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
