@@ -5,6 +5,7 @@ import datetime as dt
 import json
 import os
 import argparse
+import re
 from pathlib import Path
 
 import mwclient
@@ -17,6 +18,9 @@ STATUS_PAGE = os.getenv("WIKI_STATUS_PAGE", "User:EmmaBot")
 BASE_PAGE_PATH = os.getenv("WIKI_STATUS_TEMPLATE_PATH", "EmmaBot.wiki")
 START_MARKER = "<!-- BOT-RUN-STATUS:START -->"
 END_MARKER = "<!-- BOT-RUN-STATUS:END -->"
+IMMEDIATE_START = "<!-- BOT-IMMEDIATE:START -->"
+IMMEDIATE_END = "<!-- BOT-IMMEDIATE:END -->"
+TODO_PATH = os.getenv("WIKI_TODO_PATH", "TODO.md")
 
 
 def load_event_data():
@@ -78,6 +82,56 @@ def merge_base_and_status(base_text, status_block):
     return f"{text}\n\n{status_block}\n"
 
 
+def md_inline_to_wiki(text):
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"[\2 \1]", text)
+    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"'''\1'''", text)
+    return text
+
+
+def extract_immediate_items_from_todo(path):
+    todo_text = Path(path).read_text(encoding="utf-8")
+    lines = todo_text.splitlines()
+
+    in_section = False
+    items = []
+    for raw in lines:
+        line = raw.rstrip()
+        if not in_section:
+            if line.strip().lower() == "## immediate / in progress":
+                in_section = True
+            continue
+
+        if line.startswith("## "):
+            break
+        if not line.strip() or line.strip() == "---":
+            continue
+
+        m = re.match(r"^\s*-\s*\[( |x|X)\]\s*(.+)$", line)
+        if m:
+            items.append(f"* {md_inline_to_wiki(m.group(2).strip())}")
+            continue
+
+        m2 = re.match(r"^\s*-\s+(.+)$", line)
+        if m2:
+            items.append(f"* {md_inline_to_wiki(m2.group(1).strip())}")
+
+    if not items:
+        items.append("* No immediate tasks listed in TODO.md")
+    return "\n".join(items)
+
+
+def merge_base_and_immediate(base_text, immediate_text):
+    if IMMEDIATE_START not in base_text or IMMEDIATE_END not in base_text:
+        raise RuntimeError("EmmaBot.wiki is missing BOT-IMMEDIATE markers.")
+
+    before = base_text.split(IMMEDIATE_START, 1)[0].rstrip()
+    after = base_text.split(IMMEDIATE_END, 1)[1].lstrip()
+    block = f"{IMMEDIATE_START}\n{immediate_text}\n{IMMEDIATE_END}"
+    merged = f"{before}\n{block}\n\n{after}".strip()
+    return merged + "\n"
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
@@ -90,6 +144,8 @@ def main():
     if not base_path.exists():
         raise FileNotFoundError(f"Template page file not found: {base_path}")
     base_text = base_path.read_text(encoding="utf-8")
+    immediate_text = extract_immediate_items_from_todo(TODO_PATH)
+    page_text_with_immediate = merge_base_and_immediate(base_text, immediate_text)
 
     site = mwclient.Site(
         WIKI_URL,
@@ -99,7 +155,7 @@ def main():
     site.login(USERNAME, PASSWORD)
 
     status_block = build_status_block()
-    new_text = merge_base_and_status(base_text, status_block)
+    new_text = merge_base_and_status(page_text_with_immediate, status_block)
     page = site.pages[STATUS_PAGE]
     page.save(new_text, summary=f"Bot: update pipeline run status {args.run_tag}")
     print(f"Updated {STATUS_PAGE}")
