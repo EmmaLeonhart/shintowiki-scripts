@@ -30,8 +30,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_2]"
+USERNAME = "EmmaBot"
+PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE = 1.5
 DEFAULT_STATE_FILE = "shinto_miraheze/migrate_talk_pages.state"
 DEFAULT_LOG_FILE = "shinto_miraheze/migrate_talk_pages.log"
@@ -52,7 +52,7 @@ def fetch_json(url, params):
     full_url = f"{url}?{query}"
     req = urllib.request.Request(
         full_url,
-        headers={"User-Agent": "TalkPageMigrationBot/1.0 (User:Immanuelle; shinto.miraheze.org)"},
+        headers={"User-Agent": "TalkPageMigrationBot/1.0 (User:EmmaBot; shinto.miraheze.org)"},
     )
     last_err = None
     for _attempt in range(1, 4):
@@ -69,7 +69,7 @@ def make_site():
     site = mwclient.Site(
         WIKI_URL,
         path=WIKI_PATH,
-        clients_useragent="TalkPageMigrationBot/1.0 (User:Immanuelle; shinto.miraheze.org)",
+        clients_useragent="TalkPageMigrationBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
     )
     site.login(USERNAME, PASSWORD)
     return site

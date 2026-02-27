@@ -28,8 +28,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_2]'
+USERNAME  = 'EmmaBot'
+PASSWORD  = '[REDACTED_SECRET_1]'
 SLEEP     = 1.5
 
 CAT_STARTING = 'Move starting points'
@@ -208,7 +208,7 @@ def merge_pair(site, a_title, b_title, token):
 
 def main():
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent='ShintoWikiBot/1.0 (immanuelle@shinto.miraheze.org)')
+                         clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
     site.login(USERNAME, PASSWORD)
     print(f'Logged in to {WIKI_URL}\n')
 

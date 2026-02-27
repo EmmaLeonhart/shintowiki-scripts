@@ -2,8 +2,8 @@ import mwclient, re, io, sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 site = mwclient.Site('shinto.miraheze.org', path='/w/',
-    clients_useragent='ShintoWikiBot/1.0 (immanuelle@shinto.miraheze.org)')
-site.login('Immanuelle', '[REDACTED_SECRET_2]')
+    clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
+site.login('EmmaBot', '[REDACTED_SECRET_1]')
 
 TMPL_FROM = re.compile(r'\{\{\s*moved from\s*\|([^|]+?)\s*[|}]', re.IGNORECASE)
 TMPL_TO   = re.compile(r'\{\{\s*moved to\s*\|([^|]+?)\s*[|}]',   re.IGNORECASE)

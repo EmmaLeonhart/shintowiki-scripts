@@ -35,7 +35,7 @@ Current local orchestration baseline for cleanup runs is shinto_miraheze/cleanup
 Until then, do not share this repo publicly.
 
 Required credentials (to be moved to environment variables or a `.env` file):
-- `USERNAME` / `PASSWORD` â€” MediaWiki bot account (`Immanuelle` on shinto.miraheze.org)
+- `USERNAME` / `PASSWORD` â€” MediaWiki bot account (`EmmaBot` on shinto.miraheze.org)
 - Pramana server credentials (future)
 
 ---

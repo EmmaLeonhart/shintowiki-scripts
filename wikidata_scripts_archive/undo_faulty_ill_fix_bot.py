@@ -23,8 +23,8 @@ from mwclient.errors import APIError
 # ─── CONFIG ────────────────────────────────────────────────────────
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
-USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_2]"
+USERNAME   = "EmmaBot"
+PASSWORD   = "[REDACTED_SECRET_1]"
 PAGES_FILE = "pages.txt"
 THROTTLE   = 1.0
 
@@ -32,7 +32,7 @@ ILL_RE     = re.compile(r"\{\{\s*ill\|(.*?)\}\}", re.I | re.DOTALL)
 API_WD     = "https://www.wikidata.org/w/api.php"
 API_JAWIKI = "https://ja.wikipedia.org/w/api.php"
 RAW_ENWIKI = "https://en.wikipedia.org/w/index.php"
-UA         = {"User-Agent": "ill-fix-bot/1.7 (User:Immanuelle)"}
+UA         = {"User-Agent": "ill-fix-bot/1.7 (User:EmmaBot)"}
 REDIR_RE   = re.compile(r"^#\s*redirect", re.I)
 
 # ─── API JSON GET ─────────────────────────────────────────────────

@@ -17,10 +17,10 @@ Run:
 """
 
 API_URL  = "https://shinto.miraheze.org/w/api.php"
-USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_2]"
+USERNAME = "EmmaBot"
+PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE = 0.4
-UA       = {"User-Agent": "islamic-month-interwikis/1.1 (User:Immanuelle)"}
+UA       = {"User-Agent": "islamic-month-interwikis/1.1 (User:EmmaBot)"}
 
 import re, time, urllib.parse, requests, mwclient
 from mwclient.errors import APIError, InvalidPageTitle

@@ -4,7 +4,7 @@
 # Import EN-wiki text & full inter-wikis for every category that sits in
 # Category:Tier_N_Categories_with_enwiki   (N = 1‥9)
 #
-# Immanuelle – 2025-05-28
+# EmmaBot – 2025-05-28
 
 from __future__ import annotations
 import re, time, argparse, requests, mwclient
@@ -13,9 +13,9 @@ from typing import List
 
 # ── BASIC CONFIG ──────────────────────────────────────────────────────
 LOCAL_URL  = "shinto.miraheze.org"; LOCAL_PATH = "/w/"
-USERNAME   = "Immanuelle";          PASSWORD   = "[REDACTED_SECRET_2]"
+USERNAME   = "EmmaBot";          PASSWORD   = "[REDACTED_SECRET_1]"
 THROTTLE   = 0.4          # seconds between edits
-UA         = {"User-Agent": "tier-enwiki-sync/1.0 (User:Immanuelle)"}
+UA         = {"User-Agent": "tier-enwiki-sync/1.0 (User:EmmaBot)"}
 
 WD_API     = "https://www.wikidata.org/w/api.php"
 EN_API     = "https://en.wikipedia.org/w/api.php"

@@ -23,8 +23,8 @@ SHINTO_PATH  = "/w/"
 de_URL       = "de.wikipedia.org"
 de_PATH      = "/w/"
 
-USERNAME     = "Immanuelle"
-PASSWORD     = "[REDACTED_SECRET_2]"
+USERNAME     = "EmmaBot"
+PASSWORD     = "[REDACTED_SECRET_1]"
 
 PAGES_FILE   = "pages.txt"
 THROTTLE     = 0.1

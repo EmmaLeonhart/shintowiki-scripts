@@ -14,10 +14,10 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 API_URL   = "https://shinto.miraheze.org/w/api.php"
-USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_2]"
+USERNAME  = "EmmaBot"
+PASSWORD  = "[REDACTED_SECRET_1]"
 THROTTLE  = 0.5
-UA        = {"User-Agent": "cat-tidier/1.0 (User:Immanuelle)"}
+UA        = {"User-Agent": "cat-tidier/1.0 (User:EmmaBot)"}
 
 TRACK_JA   = "Categories with Japanese explanatory text to translate to english"
 TRACK_NOEN = "Categories without enwiki"

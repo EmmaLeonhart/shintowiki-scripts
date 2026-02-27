@@ -18,7 +18,7 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
+USERNAME  = "EmmaBot"; PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE  = 0.4
 
 SRC_CAT   = "Tier 3 Categories"
@@ -27,7 +27,7 @@ TAG_YES   = "Tier 2 Categories with enwiki"
 
 JA_LINK   = re.compile(r"\[\[\s*ja:Category:([^\]|]+)", re.I)
 WD_API    = "https://www.wikidata.org/w/api.php"
-UA        = {"User-Agent": "tier3-ja2enwiki/1.1 (User:Immanuelle)"}
+UA        = {"User-Agent": "tier3-ja2enwiki/1.1 (User:EmmaBot)"}
 
 # ─── WIKIDATA HELPERS ─────────────────────────────────────────────-
 

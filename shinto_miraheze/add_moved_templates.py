@@ -17,17 +17,17 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 # Configuration
 WIKI_URL = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME = 'Immanuelle'
-PASSWORD = '[REDACTED_SECRET_2]'
+USERNAME = 'EmmaBot'
+PASSWORD = '[REDACTED_SECRET_1]'
 SLEEP = 1.5
 
 # All moves: (old_title, new_title)
 MOVES = [
     ("Template:The 17 Generations of Deities", "Template/The 17 Generations of Deities"),
-    ("User:Immanuelle/Kunishirotomi Kami", "User:Immanuelle/Kuninotoshimi-no-Kami"),
-    ("User:Immanuelle/Hinaterunakatanomichioikochini Kami", "User:Immanuelle/Hinateri-Nukada-Bichio-Ikochini-no-Kami"),
-    ("User:Immanuelle/Torinarumi Kami", "User:Immanuelle/Torinarumi-no-Kami"),
-    ("User:Immanuelle/Nunototomi Torinarumi Kami", "User:Immanuelle/Nunototomi Torinarumi-no-Kami"),
+    ("User:EmmaBot/Kunishirotomi Kami", "User:EmmaBot/Kuninotoshimi-no-Kami"),
+    ("User:EmmaBot/Hinaterunakatanomichioikochini Kami", "User:EmmaBot/Hinateri-Nukada-Bichio-Ikochini-no-Kami"),
+    ("User:EmmaBot/Torinarumi Kami", "User:EmmaBot/Torinarumi-no-Kami"),
+    ("User:EmmaBot/Nunototomi Torinarumi Kami", "User:EmmaBot/Nunototomi Torinarumi-no-Kami"),
     ("Inashironimasu Shrine", "Inashiro-ni-masu Shrine"),
     ("Prince Ameoshitarashi", "Prince Ametarashihiko"),
     ("Isonokamifutsumitama Shrine", "Isonokami Futsumitama Shrine"),
@@ -246,7 +246,7 @@ def add_template_to_page(site, title, template_text, summary):
 def main():
     # Connect
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent='ShintoWikiBot/1.0 (immanuelle@shinto.miraheze.org)')
+                         clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
     site.login(USERNAME, PASSWORD)
     print(f"Logged in to {WIKI_URL}")
 

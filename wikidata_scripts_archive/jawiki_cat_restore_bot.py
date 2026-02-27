@@ -16,8 +16,8 @@ SHINTO_PATH  = "/w/"
 JA_URL       = "ja.wikipedia.org"
 JA_PATH      = "/w/"
 
-USERNAME     = "Immanuelle"
-PASSWORD     = "[REDACTED_SECRET_2]"
+USERNAME     = "EmmaBot"
+PASSWORD     = "[REDACTED_SECRET_1]"
 
 PAGES_FILE   = "pages.txt"
 THROTTLE     = 0.1

@@ -23,11 +23,11 @@ import time, requests, simplejson as json
 from collections import defaultdict
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────
-BOT_USER = "Immanuelle@ImmanuelleMisc"
+BOT_USER = "EmmaBot@EmmaBotMisc"
 BOT_PASS = "3c5akegiqjk7sbnhscl059ihusi0bo4e"
 SUMMARY  = "Bot: adding short description based on location'"
 PAUSE    = 1.5                                   # seconds between edits
-UA       = "ShrineDescBot/0.5 (User:Immanuelle)"
+UA       = "ShrineDescBot/0.5 (User:EmmaBot)"
 SPARQL   = "https://query.wikidata.org/sparql"
 API      = "https://www.wikidata.org/w/api.php"
 BATCH    = 5_000                                 # SPARQL LIMIT per slice

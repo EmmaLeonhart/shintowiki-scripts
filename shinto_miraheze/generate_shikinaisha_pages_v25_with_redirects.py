@@ -21,8 +21,8 @@ if sys.platform == 'win32':
 
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_2]'
+USERNAME  = 'EmmaBot'
+PASSWORD  = '[REDACTED_SECRET_1]'
 
 PROPERTIES_TO_IGNORE = ['P11250']
 PROPERTIES_TO_OMIT = ['P1448', 'P2671']
@@ -53,7 +53,7 @@ else:
     print(f"Warning: Property labels cache file not found")
     print("Run fetch_property_labels.py first to create cache\n")
 
-site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent='ShintoWikiBot/1.0 (immanuelle@shinto.miraheze.org)')
+site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
 site.login(USERNAME, PASSWORD)
 
 try:

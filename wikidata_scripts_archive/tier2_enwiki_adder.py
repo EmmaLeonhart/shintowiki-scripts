@@ -23,13 +23,13 @@ from mwclient.errors import APIError
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 SITE_URL  = "shinto.miraheze.org"; SITE_PATH = "/w/"
-USERNAME  = "Immanuelle"; PASSWORD = "[REDACTED_SECRET_2]"
+USERNAME  = "EmmaBot"; PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE  = 0.4
 SOURCE_CAT = "Tier 2 Categories with no enwiki"
 DST_CAT    = "Tier 2 Categories with enwiki"
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA     = {"User-Agent": "tier2-enwiki-adder/1.0 (User:Immanuelle)"}
+UA     = {"User-Agent": "tier2-enwiki-adder/1.0 (User:EmmaBot)"}
 JA_RE  = re.compile(r"\[\[\s*ja:Category:([^\]|]+)", re.I)
 EN_RE  = re.compile(r"\[\[\s*en:Category:[^\]]+\]\]", re.I)
 

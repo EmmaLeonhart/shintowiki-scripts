@@ -15,8 +15,8 @@ Dependencies: mwclient, mwparserfromhell, pymongo, requests.
 # ── CONFIG ────────────────────────────────────────────────────────────────
 WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
-USERNAME   = "Immanuelle"
-PASSWORD   = "[REDACTED_SECRET_2]"
+USERNAME   = "EmmaBot"
+PASSWORD   = "[REDACTED_SECRET_1]"
 THROTTLE   = 0.4
 
 MONGO_URI  = "mongodb://localhost:27017"

@@ -27,8 +27,8 @@ if sys.platform == 'win32':
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_2]'
+USERNAME  = 'EmmaBot'
+PASSWORD  = '[REDACTED_SECRET_1]'
 CATEGORY_NAME = 'Islamic Calendar Days'
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)

@@ -28,13 +28,13 @@ import mwclient
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_2]"    # some old scripts have "[REDACTED_SECRET_1]"
+USERNAME  = "EmmaBot"
+PASSWORD  = "[REDACTED_SECRET_1]"    # some old scripts have "[REDACTED_SECRET_1]"
 
 site = mwclient.Site(
     WIKI_URL,
     path=WIKI_PATH,
-    clients_useragent="BotName/1.0 (User:Immanuelle; shinto.miraheze.org)"
+    clients_useragent="BotName/1.0 (User:EmmaBot; shinto.miraheze.org)"
 )
 site.login(USERNAME, PASSWORD)
 ```
@@ -53,11 +53,11 @@ except Exception:
 ### User-agent strings seen in working scripts
 
 ```
-CategoryQidRedirectBot/1.0 (User:Immanuelle; shinto.miraheze.org)
-IllFixerBot/1.0 (User:Immanuelle; shinto.miraheze.org)
-ImmanuelleCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)
-ImmanuelleInterwikiBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)
-ImmanuelleCategoryBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)
+CategoryQidRedirectBot/1.0 (User:EmmaBot; shinto.miraheze.org)
+IllFixerBot/1.0 (User:EmmaBot; shinto.miraheze.org)
+EmmaBotCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)
+EmmaBotInterwikiBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)
+EmmaBotCategoryBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)
 ```
 
 ### Core operations
@@ -150,7 +150,7 @@ All Wikidata reads use plain `requests` — no login needed.
 ```python
 import requests
 
-HEADERS = {"User-Agent": "BotName/1.0 (User:Immanuelle; shinto.miraheze.org)"}
+HEADERS = {"User-Agent": "BotName/1.0 (User:EmmaBot; shinto.miraheze.org)"}
 
 def get_entity(qid: str) -> dict:
     url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
@@ -288,11 +288,11 @@ Used for editing Commons category pages (adding shrine ranking categories etc.).
 ### Connection + login
 
 ```python
-COMMONS_USERNAME = "Immanuelle@ImmanuelleCommonsBot"
+COMMONS_USERNAME = "EmmaBot@EmmaBotCommonsBot"
 COMMONS_PASSWORD = "rctsl2fbuo3qa0ngj1q2eur5ookdbjir"   # bot password
 
 commons = mwclient.Site("commons.wikimedia.org", path="/w/",
-                         clients_useragent="ImmanuelleCommonsBot/1.0")
+                         clients_useragent="EmmaBotCommonsBot/1.0")
 commons.login(COMMONS_USERNAME, COMMONS_PASSWORD)
 ```
 
@@ -317,11 +317,11 @@ Used for adding `{{wikidata lexeme|LXXXXX}}` templates to Wiktionary entries.
 ### Connection + login
 
 ```python
-BOT_USERNAME = "ImmanuelleBot@Bot"
+BOT_USERNAME = "EmmaBotBot@Bot"
 BOT_PASSWORD  = "hljht8jdeh1p1562gke2tmj7hkqg9hkf"
 
 wikt = mwclient.Site("en.wiktionary.org", path="/w/",
-                      clients_useragent="WiktionaryLexemeBot/1.0 (User:Immanuelle) Python/mwclient")
+                      clients_useragent="WiktionaryLexemeBot/1.0 (User:EmmaBot) Python/mwclient")
 wikt.login(BOT_USERNAME, BOT_PASSWORD)
 ```
 
@@ -356,10 +356,10 @@ def find_lexeme(lemma: str, lang_qid: str = "Q1860", pos_qid: str = "Q1084") -> 
 
 | Service | Library | Auth type | Account format |
 |---------|---------|-----------|----------------|
-| shinto.miraheze.org | mwclient | Username + password | `Immanuelle` |
-| commons.wikimedia.org | mwclient | Bot password | `Immanuelle@ImmanuelleCommonsBot` |
-| en.wiktionary.org | mwclient | Bot password | `ImmanuelleBot@Bot` |
-| ja.wiktionary.org | mwclient | Bot password | `ImmanuelleBot@Bot` |
+| shinto.miraheze.org | mwclient | Username + password | `EmmaBot` |
+| commons.wikimedia.org | mwclient | Bot password | `EmmaBot@EmmaBotCommonsBot` |
+| en.wiktionary.org | mwclient | Bot password | `EmmaBotBot@Bot` |
+| ja.wiktionary.org | mwclient | Bot password | `EmmaBotBot@Bot` |
 | wikidata.org | requests | None (public read) | User-Agent header only |
 | *.wikipedia.org | requests | None (public read) | User-Agent header only |
 
@@ -411,10 +411,10 @@ if sys.platform == 'win32':
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_2]"
+USERNAME  = "EmmaBot"
+PASSWORD  = "[REDACTED_SECRET_1]"
 THROTTLE  = 1.5
-BOT_UA    = "BotName/1.0 (User:Immanuelle; shinto.miraheze.org)"
+BOT_UA    = "BotName/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=BOT_UA)
 site.login(USERNAME, PASSWORD)

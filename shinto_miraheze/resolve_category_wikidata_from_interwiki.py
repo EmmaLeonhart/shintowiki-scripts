@@ -31,9 +31,9 @@ if sys.platform == 'win32':
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'Immanuelle'
-PASSWORD  = '[REDACTED_SECRET_2]'
-BOT_USER_AGENT = "ImmanuelleCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle)"
+USERNAME  = 'EmmaBot'
+PASSWORD  = '[REDACTED_SECRET_1]'
+BOT_USER_AGENT = "EmmaBotCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)"
 
 # Wait 30 minutes at startup to avoid race conditions
 STARTUP_WAIT = 30 * 60  # 30 minutes in seconds

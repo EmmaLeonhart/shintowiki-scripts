@@ -19,14 +19,14 @@ DB_NAME = "shinto_label_review"
 COLL_PROP = "proposed_labels"   # items have QID but no en‑label
 COLL_MISS = "missing_ills"      # no Wikidata item yet
 
-WD_USER = "Immanuelle@ImmanuelleMisc"
+WD_USER = "EmmaBot@EmmaBotMisc"
 WD_PASS = "030akvvhf8b3f6fg7mpt85fo8rvp6d58"  # BotPassword
 
-SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_2]"
+SW_USER = "EmmaBot"
+SW_PASS = "[REDACTED_SECRET_1]"
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = "ShintoLabelDashboard/0.7 (User:Immanuelle)"
+UA = "ShintoLabelDashboard/0.7 (User:EmmaBot)"
 PAUSE = 0.5   # seconds between ShintoWiki edits
 
 DEL_COL = "✅ Delete"

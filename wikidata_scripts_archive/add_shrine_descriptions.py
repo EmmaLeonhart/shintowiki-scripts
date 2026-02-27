@@ -26,7 +26,7 @@ import time, requests, simplejson as json
 from urllib.parse import quote_plus
 
 # ─────────── USER SETTINGS ──────────────────────────────────────────────
-WD_USER = "Immanuelle@ImmanuelleMisc"        # bot username
+WD_USER = "EmmaBot@EmmaBotMisc"        # bot username
 WD_PASS = "030akvvhf8b3f6fg7mpt85fo8rvp6d58"        # hard‑coded as requested
 SUMMARY = "Bot: add description → 'Shinto shrine in <place>', applying this only to Shrines already having english labels, to help disambiguate them"
 SLEEP   = 1.5                                       # seconds between writes
@@ -35,7 +35,7 @@ SLEEP   = 1.5                                       # seconds between writes
 SPARQL_URL = "https://query.wikidata.org/sparql"
 API_URL    = "https://www.wikidata.org/w/api.php"
 HEADERS    = {
-    "User-Agent": "ShrineDescBot/0.2 (https://www.wikidata.org/wiki/User:Immanuelle)",
+    "User-Agent": "ShrineDescBot/0.2 (https://www.wikidata.org/wiki/User:EmmaBot)",
     "Accept": "application/sparql-results+json"
 }
 

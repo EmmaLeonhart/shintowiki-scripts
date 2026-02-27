@@ -34,10 +34,10 @@ import requests, mwclient, simplejson as json
 import mwparserfromhell as mwp        # pip install mwparserfromhell
 
 # ────────────────────  C R E D E N T I A L S  ────────────────────────────
-WD_USER = "Immanuelle@ImmanuelleGeniTestBot"
+WD_USER = "EmmaBot@EmmaBotGeniTestBot"
 WD_PASS = "4dgbha3p34arj1gj0sj2pmqp1jr89kbv"
-SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_2]"
+SW_USER = "EmmaBot"
+SW_PASS = "[REDACTED_SECRET_1]"
 # ──────────────────────────────────────────────────────────────────────────
 
 WD_API   = "https://www.wikidata.org/w/api.php"

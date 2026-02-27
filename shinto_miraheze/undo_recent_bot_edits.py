@@ -1,7 +1,7 @@
 """
 undo_recent_bot_edits.py
 =========================
-Undoes all recent edits by User:Immanuelle made after a given timestamp.
+Undoes all recent edits by User:EmmaBot made after a given timestamp.
 Used to roll back a bad bot run.
 
 Edit the CUTOFF timestamp below before running.
@@ -14,8 +14,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "Immanuelle"
-PASSWORD  = "[REDACTED_SECRET_2]"
+USERNAME  = "EmmaBot"
+PASSWORD  = "[REDACTED_SECRET_1]"
 THROTTLE  = 1.0
 
 # UTC timestamp — undo all edits by this user AT OR AFTER this time
@@ -23,7 +23,7 @@ THROTTLE  = 1.0
 CUTOFF = "2026-02-20T01:06:00Z"
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                     clients_useragent="UndoBot/1.0 (User:Immanuelle; shinto.miraheze.org)")
+                     clients_useragent="UndoBot/1.0 (User:EmmaBot; shinto.miraheze.org)")
 site.login(USERNAME, PASSWORD)
 print(f"Logged in as {USERNAME}")
 print(f"Undoing all edits at or after {CUTOFF}\n")

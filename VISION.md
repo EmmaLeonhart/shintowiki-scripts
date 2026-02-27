@@ -123,7 +123,7 @@ PASSWORD = os.environ["WIKI_PASSWORD"]
 
 Or use a `.env` file with `python-dotenv`:
 ```
-WIKI_USERNAME=Immanuelle
+WIKI_USERNAME=EmmaBot
 WIKI_PASSWORD=...
 ```
 

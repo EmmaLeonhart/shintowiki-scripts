@@ -20,8 +20,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME = "Immanuelle"
-PASSWORD = "[REDACTED_SECRET_2]"
+USERNAME = "EmmaBot"
+PASSWORD = "[REDACTED_SECRET_1]"
 THROTTLE = 1.5
 
 SOURCE_CAT = "Erroneous_qid_category_links"
@@ -70,7 +70,7 @@ def main():
     site = mwclient.Site(
         WIKI_URL,
         path=WIKI_PATH,
-        clients_useragent="ErroneousQidFixBot/1.0 (User:Immanuelle; shinto.miraheze.org)",
+        clients_useragent="ErroneousQidFixBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
     )
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")

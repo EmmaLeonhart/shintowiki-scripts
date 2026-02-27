@@ -22,7 +22,7 @@ SW_USER = ""              # leave empty for anonymous read
 SW_PASS = ""
 
 # ─── Wikidata BotPassword credentials ────────────────────────────────────
-WD_USER = "Immanuelle@ImmanuelleGeniTestBot"   # ← change
+WD_USER = "EmmaBot@EmmaBotGeniTestBot"   # ← change
 WD_PASS = "botpassword"                        # ← change
 
 # ─── constants ────────────────────────────────────────────────────────────

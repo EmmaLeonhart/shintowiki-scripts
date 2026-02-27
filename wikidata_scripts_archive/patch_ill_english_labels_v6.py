@@ -21,8 +21,8 @@ from typing import Dict, Tuple, Set
 import mwclient, mwparserfromhell as mwp, requests
 
 # ─── credentials ─────────────────────────────────────────────────────────
-SW_USER = "Immanuelle"
-SW_PASS = "[REDACTED_SECRET_2]"
+SW_USER = "EmmaBot"
+SW_PASS = "[REDACTED_SECRET_1]"
 # ─────────────────────────────────────────────────────────────────────────
 
 JA_API = "https://ja.wikipedia.org/w/api.php"
