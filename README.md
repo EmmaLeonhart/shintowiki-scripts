@@ -1,4 +1,4 @@
-# wikibot
+﻿# wikibot
 
 A bot framework for editing MediaWiki wikis, primarily [shinto.miraheze.org](https://shinto.miraheze.org), with integration against Wikidata and the [pramana.dev](https://pramana.dev) server.
 
@@ -9,6 +9,8 @@ A bot framework for editing MediaWiki wikis, primarily [shinto.miraheze.org](htt
 The root directory and `shinto_miraheze/` contain hundreds of accumulated one-off scripts, log files, and data CSVs from several years of iterative work. Most of these are legacy ChatGPT-era scripts that are no longer needed. A cleanup pass is planned (see [VISION.md](VISION.md)).
 
 The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
+
+Current local orchestration baseline for cleanup runs is shinto_miraheze/cleanup loop.bat; this is the basis for the planned CI/CD bot pipeline migration.
 
 ---
 
@@ -28,12 +30,12 @@ The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
 
 ## Credentials / secrets
 
-**All scripts currently have hardcoded credentials.** This must be fixed before the repo can be made public. See [VISION.md § Secrets](VISION.md#secrets) for the plan.
+**All scripts currently have hardcoded credentials.** This must be fixed before the repo can be made public. See [VISION.md Â§ Secrets](VISION.md#secrets) for the plan.
 
 Until then, do not share this repo publicly.
 
 Required credentials (to be moved to environment variables or a `.env` file):
-- `USERNAME` / `PASSWORD` — MediaWiki bot account (`Immanuelle` on shinto.miraheze.org)
+- `USERNAME` / `PASSWORD` â€” MediaWiki bot account (`Immanuelle` on shinto.miraheze.org)
 - Pramana server credentials (future)
 
 ---
@@ -54,9 +56,10 @@ python shinto_miraheze/resolve_category_wikidata_from_interwiki.py
 
 ## See also
 
-- [VISION.md](VISION.md) — full architecture plan and future direction
-- [SCRIPTS.md](SCRIPTS.md) — catalog of all scripts with status
-- [API.md](API.md) — how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
-- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) — page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
-- [HISTORY.md](HISTORY.md) — wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
-- [TODO.md](TODO.md) — prioritized list of all known tasks
+- [VISION.md](VISION.md) â€” full architecture plan and future direction
+- [SCRIPTS.md](SCRIPTS.md) â€” catalog of all scripts with status
+- [API.md](API.md) â€” how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
+- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) â€” page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
+- [HISTORY.md](HISTORY.md) â€” wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
+- [TODO.md](TODO.md) â€” prioritized list of all known tasks
+
