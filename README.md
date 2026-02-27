@@ -37,7 +37,7 @@ Active `shinto_miraheze/*.py` scripts now support environment-variable overrides
 Until then, do not share this repo publicly.
 
 Required credentials (to be moved to environment variables or a `.env` file):
-- `WIKI_USERNAME` / `WIKI_PASSWORD` â€” MediaWiki bot account (`EmmaBot` on shinto.miraheze.org)
+- `WIKI_USERNAME` / `WIKI_PASSWORD` â€” MediaWiki bot password login (example username format: `EmmaBot@EmmaBot`)
 - Pramana server credentials (future)
 
 For local development, copy `.env.example` to `.env` and set real values in your shell or environment manager.
@@ -68,10 +68,13 @@ bash shinto_miraheze/cleanup_loop.sh
 A manual workflow is available at `.github/workflows/cleanup-loop.yml`.
 
 Set these repository or environment secrets before running:
-- `WIKI_USERNAME`
+- `WIKI_USERNAME` (variable, bot username like `EmmaBot@EmmaBot`)
 - `WIKI_PASSWORD`
 
-Then run the workflow via `workflow_dispatch`.
+The workflow runs on:
+- manual dispatch (`workflow_dispatch`)
+- every push (`push`)
+- every 24 hours (`schedule`, at `00:00` UTC)
 
 ---
 

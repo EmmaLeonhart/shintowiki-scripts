@@ -2,12 +2,15 @@ name: shinto-cleanup-loop
 
 on:
   workflow_dispatch:
+  push:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   cleanup:
     runs-on: ubuntu-latest
     env:
-      WIKI_USERNAME: ${{ secrets.WIKI_USERNAME }}
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
     steps:
       - name: Checkout
@@ -24,7 +27,11 @@ jobs:
       - name: Validate required secrets
         run: |
           if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
-            echo "WIKI_USERNAME and WIKI_PASSWORD secrets are required."
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
             exit 1
           fi
 

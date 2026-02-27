@@ -6,6 +6,16 @@ cd "$ROOT_DIR"
 
 echo "Running cleanup loop from: $ROOT_DIR"
 
+if [ -z "${WIKI_USERNAME:-}" ] || [ -z "${WIKI_PASSWORD:-}" ]; then
+  echo "WIKI_USERNAME and WIKI_PASSWORD must be set."
+  exit 1
+fi
+
+if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+  echo "WIKI_USERNAME must be a bot-password username (example: EmmaBot@EmmaBot)."
+  exit 1
+fi
+
 python3 shinto_miraheze/normalize_category_pages.py --apply
 python3 shinto_miraheze/migrate_talk_pages.py --apply
 python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply
