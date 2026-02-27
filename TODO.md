@@ -4,14 +4,6 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 
 ---
 
-URGENT
-
-- [x] `notes.txt` review completed; content captured here, file can be removed.
-- [ ] Resume/finish the stalled Japanese-category-without-Wikidata remediation workflow.
-- [ ] Evaluate whether to generate QuickStatements for Japanese-only categories lacking Wikidata items.
-- [ ] Review `desktop.ini`.
-- [ ] Review `settings.local.json` for secret leakage.
-
 ## Immediate / in progress
 
 - [ ] **Crud category cleanup** â€” `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. No state file; safe to re-run (skips already-empty categories automatically).
@@ -80,6 +72,8 @@ These are tracked in detail in [VISION.md](VISION.md). Listed here for completen
 - [ ] **Pramana integration** â€” connect `Data:` pages to pramana.dev as the canonical ID backend
 - [ ] **Automated translation pipeline** â€” take any Japanese Wikipedia page and produce a consistent translated page with proper ILL/Wikidata connections
 - [ ] **Change-tracking bot** â€” monitor wiki changes and propagate them across namespace layers
+
+
 
 
 
