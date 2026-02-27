@@ -4,12 +4,6 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
-## Operating policy
-
-- [ ] **Enforce CI-first operations policy** — I, Emma Leonhart, will not run normal mass-edit jobs from my own computer. Routine and major automated edits should be executed through GitHub Actions by updating repository code/workflows, with local manual runs limited to emergency cases only. -- Done
-
----
-
 ## Immediate / in progress
 
 - [ ] **Unused category deletion (with safeguard)** — `delete_unused_categories.py` runs first in the GitHub Actions loop and deletes pages listed in Special:UnusedCategories, except pages containing `{{Possibly empty category}}`. This is part of post-crud cleanup and is expected to run repeatedly over multiple days as category cleanup progresses.
@@ -19,15 +13,6 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 - [ ] **Talk page migration** â€” `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state`. Log: `shinto_miraheze/migrate_talk_pages.log`. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
 
 - [ ] **Template:Talk page header** - Edit this template so that it fits all requirements for migrated/transformed talk pages.
-
-- [ ] **Category pages with spaghetti wikitext** â€” category pages have accumulated Japanese text, stray category links, redundant `{{wikidata link}}` placements, and auto-generated junk from old passes. Goal: strip to clean English description + `{{wikidata link}}` + parent category links only. -- Done
-
-- [x] **Category:Q* pages in category namespace** â€” ~77 pages exist as `Category:Q{QID}` (wrong namespace). These should either be deleted or moved to mainspace as `Q{QID}` redirects. -- Done
-
-- [x] **Switch to [[User:EmmaBot]] for automation** - planned for CI/CD rollout so bot edits are clearly separated from human edits and easier to audit. -- Done
-
-- [ ] **Talk pages** â€” currently contain junk (Wikipedia AFC notices, old bot messages). Plan: overwrite with imported talk page content from Japanese Wikipedia and English Wikipedia per article, with a section for any local discussion and a comment noting the import date. -- Done
-
 
 ---
 
@@ -52,11 +37,10 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 - [ ] **Multiple `{{wikidata link}}` on one page** â€” usually indicates a Wikidata disambiguation issue. Needs per-case review.
 - [ ] **Shikinaisha pages with broken ILL destinations** â€” ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
 - [ ] **Remove legacy category-page fix templates** â€” remove remnants such as `{{デフォルトソート:...}}` and `{{citation needed|...}}` from category pages where they were introduced by old workaround passes.
+
 ---
 
 ## Repository / script tasks
-
-- [x] **Move hardcoded credentials to environment variables** â€” complete for active `shinto_miraheze` scripts; remaining legacy/archive scripts still need migration before full open-source cleanup. -- Done
 
 ### Secret removal (run soon, before open-source release)
 

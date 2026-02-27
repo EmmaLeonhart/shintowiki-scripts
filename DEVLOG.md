@@ -72,6 +72,11 @@ Added a Windows launcher (`cleanup loop.bat`) that opens separate command sessio
 
 Also added `fix_erroneous_qid_category_links.py`, which processes pages in `Category:Erroneous_qid_category_links` and converts pages to simple redirects when all listed category targets are the same.
 
+### Category:Q{QID} pages in wrong namespace resolved
+**Status:** Complete — ~77 pages
+
+Approximately 77 pages existed in the Category namespace as `Category:Q{QID}` (wrong namespace). These were resolved by deleting or moving them to mainspace as `Q{QID}` redirects pointing to the correct category.
+
 ---
 ## 2026-02-26
 
