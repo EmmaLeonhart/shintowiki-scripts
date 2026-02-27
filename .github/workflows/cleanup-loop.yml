@@ -11,9 +11,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: shinto-cleanup-loop
+  cancel-in-progress: false
+
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    timeout-minutes: 330
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}

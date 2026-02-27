@@ -72,6 +72,7 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
     parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     parser.add_argument("--state-file", default=DEFAULT_STATE_FILE, help="Path to resume-state file.")
     args = parser.parse_args()
 
@@ -137,7 +138,11 @@ def main():
         try:
             talk_page.save(
                 new_talk_text,
-                summary=f"Bot: add Wikidata generation notice ([[d:{qid}]])" if qid else "Bot: add Wikidata generation notice",
+                summary=(
+                    f"Bot: add Wikidata generation notice ([[d:{qid}]]) {args.run_tag}"
+                    if qid
+                    else f"Bot: add Wikidata generation notice {args.run_tag}"
+                ),
             )
             edited += 1
             print(f"{prefix} EDITED (qid={qid})")

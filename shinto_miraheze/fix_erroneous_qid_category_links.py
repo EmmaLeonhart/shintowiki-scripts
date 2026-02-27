@@ -67,6 +67,7 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
     parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
     site = mwclient.Site(
@@ -116,7 +117,10 @@ def main():
         try:
             page.save(
                 new_text,
-                summary="Bot: convert single-target erroneous QID category link list into redirect",
+                summary=(
+                    "Bot: convert single-target erroneous QID category link list into redirect "
+                    f"{args.run_tag}"
+                ),
             )
             print(f"{prefix} FIXED -> [[Category:{target}]]")
             fixed += 1

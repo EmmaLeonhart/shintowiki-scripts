@@ -180,6 +180,7 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
     parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     parser.add_argument("--start-title", default="", help="Start title for full category scan.")
     parser.add_argument("--titles", default="", help="Comma-separated category titles to process.")
     parser.add_argument("--titles-file", default="", help="Path to newline-delimited category titles.")
@@ -274,7 +275,10 @@ def main():
         try:
             page.save(
                 new_text,
-                summary="Bot: normalize category page structure (templates/interwikis/categories only)",
+                summary=(
+                    "Bot: normalize category page structure (templates/interwikis/categories only) "
+                    f"{args.run_tag}"
+                ),
             )
             edited += 1
             print(f"{prefix} EDITED")

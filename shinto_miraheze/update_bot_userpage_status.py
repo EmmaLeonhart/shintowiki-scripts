@@ -4,6 +4,7 @@
 import datetime as dt
 import json
 import os
+import argparse
 from pathlib import Path
 
 import mwclient
@@ -78,6 +79,10 @@ def merge_base_and_status(base_text, status_block):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
+    args = parser.parse_args()
+
     if not PASSWORD:
         raise RuntimeError("WIKI_PASSWORD must be set")
 
@@ -96,7 +101,7 @@ def main():
     status_block = build_status_block()
     new_text = merge_base_and_status(base_text, status_block)
     page = site.pages[STATUS_PAGE]
-    page.save(new_text, summary="Bot: update pipeline run status")
+    page.save(new_text, summary=f"Bot: update pipeline run status {args.run_tag}")
     print(f"Updated {STATUS_PAGE}")
 
 

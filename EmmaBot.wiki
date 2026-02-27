@@ -1,42 +1,27 @@
-This is my bot. I am transitioning to using this account once I am finished the current operations and github actions to make things clear about what is going on and making things more clear and auditable.
+This is the operational bot account used for automated maintenance on shinto.miraheze.org.
 
-See the git repo https://github.com/Emma-Leonhart/shintowiki-scripts
+Its purpose is to run repeatable cleanup and migration tasks with transparent logging, persistent state files, and auditable edit summaries tied to GitHub Actions workflow runs.
 
-The bot will periodically update its own userpage as a part of the Github actions loop. This is the initial page for the bot that exists to explain what it is. 
-
-The git repo contains most if not all scripts used in the history of the wiki. Most if not all scripts were done by python command line.
-
-The bot will also edit the main page to announce its tasks periodically.
-
-The intention of it is that the bot will focus on making this wiki a lot more human readable and editable. As per documentation in the repo, the wiki was made very difficult to read and edit as a human because of conflicting design goals. 
-
-This last push of editing exists to clean up wiki content before we can simplify it for human users.
+Repository: https://github.com/Emma-Leonhart/shintowiki-scripts
 
 == Immediate / in progress ==
 
-*  '''Crud category cleanup''' — <code>remove_crud_categories.py</code> running (2026-02-25); stripping <nowiki>[[Category:X]]</nowiki> tags from all member pages across 112 subcategories of Category:Crud_categories. No state file; safe to re-run (skips already-empty categories automatically).
-*  '''Delete <code>Category:Jawiki_resolution_pages</code>'''— complete (2026-02-26). 10,239 pages deleted by <code>delete_jawiki_resolution_pages.py</code>.
-*  '''Category page wikitext normalization''' — complete (2026-02-26). 23,571 of 24,045 category pages edited by <code>normalize_category_pages.py</code>. State file preserved for safe re-runs.
-*  '''Talk page migration''' — <code>migrate_talk_pages.py --apply</code> running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: <code>shinto_miraheze/migrate_talk_pages.state</code> (201+ pages done). Log: <code>shinto_miraheze/migrate_talk_pages.log</code>.
-*  '''History merges''' — 184 pairs merged (2026-02-23). Combined revision histories of old-name and new-name pages for all matched <code><nowiki>{{moved to}}</nowiki></code>/<code><nowiki>{{moved from}}</nowiki></code> pairs. 7 edge cases left unresolved; tagged in <code>Category:move templates that do not link to each other</code> for manual review. History fully preserved except for those marginal pages.
-*  '''Re-run <code>resolve_duplicated_qid_categories.py</code>''' — complete (2026-02-23). Only 3 pages remained; all were duplicate Latin-name pairs tagged as erroneous. The ~75 expected remainder had already been resolved by intervening script passes.
-*  '''<code><nowiki>[[sn:...]]</nowiki></code> interwiki removal''' — complete (1 page, 3 links).
-*  '''Wanted categories created''' — 153 pages created.
-*  '''<code>Category:Generated_x-no-miya_lists</code>deleted''' — 67 User namespace pages deleted.
-*  '''Template:Talk page header''' Edit this template so that it fits all of our requirements for our new migrated/transformed talk pages.
+* '''Crud category cleanup''' - <code>remove_crud_categories.py</code> running (2026-02-25); stripping <nowiki>[[Category:X]]</nowiki> tags from all member pages across 112 subcategories of Category:Crud_categories. Now runs in GitHub Actions with <code>--max-edits</code> cap and is expected to take several days of automated runs.
+* '''Talk page migration''' - <code>migrate_talk_pages.py --apply</code> running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: <code>shinto_miraheze/migrate_talk_pages.state</code>. Log: <code>shinto_miraheze/migrate_talk_pages.log</code>. Now runs in GitHub Actions with <code>--max-edits</code> cap and is expected to take several days of automated runs.
+* '''Template:Talk page header''' - Edit this template so that it fits all requirements for migrated/transformed talk pages.
 
 == Tasks ==
 
-See [[User:EmmaBot]] for current tasks being done cleaning up this wiki
+See [[User:EmmaBot]] for current tasks being done cleaning up this wiki.
 
 === Current tasks ===
 
-* Four current tasks
-** normalize talk pages
-** normalize category pages
-** delete jawiki resolution pages (wikidata links cover this)
-** remove crud categories
+* normalize talk pages
+* normalize category pages
+* remove crud categories
+* fix erroneous QID category links
 
 === Future tasks ===
-* Normalization of template categories
+
+* normalization of template categories
 * fix [[:Category:Erroneous qid category links]]

@@ -43,6 +43,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
@@ -89,7 +90,13 @@ def main():
             else:
                 for attempt in range(3):
                     try:
-                        page.save(new_text, summary=f"Bot: remove [[Category:{subcat_name}]] (crud category cleanup)")
+                        page.save(
+                            new_text,
+                            summary=(
+                                f"Bot: remove [[Category:{subcat_name}]] (crud category cleanup) "
+                                f"{args.run_tag}"
+                            ),
+                        )
                         print(f"  CLEANED: {page.name}")
                         total_edits += 1
                         break

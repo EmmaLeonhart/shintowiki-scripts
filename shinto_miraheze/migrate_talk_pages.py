@@ -416,6 +416,7 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
     parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
+    parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     parser.add_argument(
         "--start-title",
         default="",
@@ -583,7 +584,7 @@ def main():
                         new_talk_text,
                         summary=(
                             f"Bot: migrate talk page structure; import discussion seed ({source_label}); "
-                            "add local discussion section + dated import note"
+                            f"add local discussion section + dated import note {args.run_tag}"
                         ),
                     )
                     saved = True
