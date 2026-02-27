@@ -29,6 +29,9 @@ Strips all free text, stray headings, Japanese prose, and any other content accu
 
 Deleted all pages in `Category:Jawiki_resolution_pages`. These were stub pages created during earlier jawiki import passes that served no ongoing purpose. Deletion was performed in bulk via the bot account. Category is now empty.
 
+### Imported Kuni no Miyatsuko pages
+I imported all of the Kuni no Miyatsuko pages from jawiki, this is something that needed to be complete, and leaving it partway filled was causing issues. They still need to be translated and normalized and deduplicated.
+
 ---
 
 ## 2026-02-23
