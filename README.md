@@ -65,7 +65,7 @@ bash shinto_miraheze/cleanup_loop.sh
 
 ## GitHub Actions (Ubuntu)
 
-A manual workflow is available at `.github/workflows/cleanup-loop.yml`.
+A workflow is available at `.github/workflows/cleanup-loop.yml`.
 
 Set these repository or environment secrets before running:
 - `WIKI_USERNAME` (variable, bot username like `EmmaBot@EmmaBot`)
@@ -75,6 +75,12 @@ The workflow runs on:
 - manual dispatch (`workflow_dispatch`)
 - every push (`push`)
 - every 24 hours (`schedule`, at `00:00` UTC)
+
+Pipeline behavior:
+- Uses bot-password login (`WIKI_USERNAME` format `MainUser@BotName`)
+- Writes a run-start status update to `[[User:EmmaBot]]` from `EmmaBot.wiki` + trigger metadata
+- Runs cleanup scripts sequentially with a per-script edit cap (`WIKI_EDIT_LIMIT=1000`)
+- Commits updated `*.state` files back to the current branch after successful runs
 
 ---
 

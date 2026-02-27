@@ -42,6 +42,7 @@ def make_cat_pattern(cat_name):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
@@ -54,8 +55,11 @@ def main():
     print(f"Found {len(subcats)} subcategories of Category:{CRUD_CAT}\n")
 
     total_edits = 0
+    limit_reached = False
 
     for subcat in subcats:
+        if limit_reached:
+            break
         subcat_name = subcat.name.removeprefix("Category:")
         print(f"--- Category:{subcat_name} ---")
         pattern = make_cat_pattern(subcat_name)
@@ -67,6 +71,10 @@ def main():
 
         print(f"  {len(members)} members to clean")
         for page in members:
+            if args.max_edits and total_edits >= args.max_edits:
+                print(f"  Reached max edits ({args.max_edits}); stopping run.")
+                limit_reached = True
+                break
             try:
                 text = page.text()
             except Exception as e:

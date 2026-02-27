@@ -6,6 +6,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-27
 
+### GitHub Actions bot-password pipeline rollout
+**Scripts/Workflow:** `.github/workflows/cleanup-loop.yml`, `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/update_bot_userpage_status.py`
+**Status:** Complete (pipeline implementation)
+
+Implemented full Ubuntu GitHub Actions execution for the active cleanup loop with bot-password credentials:
+- Trigger modes: push, daily schedule (`00:00 UTC`), and manual dispatch
+- Authentication model: `WIKI_USERNAME` variable (`MainUser@BotName`) + `WIKI_PASSWORD` secret
+- Persistent state: `*.state` files are committed back to the branch after successful runs
+- Loop protection: state-only commits do not retrigger the workflow (`paths-ignore: **/*.state`)
+
+Added run-start status reporting:
+- Bot updates `[[User:EmmaBot]]` at run start
+- Uses `EmmaBot.wiki` as baseline content and appends/replaces a machine-managed status block
+- Records UTC start time, trigger cause (push/schedule/manual), and workflow run URL
+
+Added run-size limiting for timeout control:
+- `WIKI_EDIT_LIMIT=1000` configured in workflow
+- Active cleanup scripts now support `--max-edits` and stop after reaching the cap
+- Cap is passed by `cleanup_loop.sh` into:
+  - `normalize_category_pages.py`
+  - `migrate_talk_pages.py`
+  - `tag_shikinaisha_talk_pages.py`
+  - `remove_crud_categories.py`
+  - `fix_erroneous_qid_category_links.py`
+
+Operational note:
+- `remove_crud_categories.py` and `migrate_talk_pages.py` are expected to require multiple daily runs over several days due to scale.
+
+### Active script credential override migration
+**Scripts:** `shinto_miraheze/*.py` (active scripts)
+**Status:** Complete for active scripts
+
+Migrated active scripts from fixed credentials to environment-variable override pattern:
+- `USERNAME = os.getenv("WIKI_USERNAME", ...)`
+- `PASSWORD = os.getenv("WIKI_PASSWORD", ...)`
+
+This keeps legacy fallback behavior locally while enabling secure CI credential injection.
+
 ### Local cleanup loop orchestration baseline
 **Scripts:** `shinto_miraheze/cleanup loop.bat`, `shinto_miraheze/fix_erroneous_qid_category_links.py`
 **Status:** Complete

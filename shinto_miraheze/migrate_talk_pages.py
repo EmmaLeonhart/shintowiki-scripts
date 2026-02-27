@@ -415,6 +415,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
+    parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
     parser.add_argument(
         "--start-title",
         default="",
@@ -464,6 +465,9 @@ def main():
     nochange_errors = 0
 
     for title, ns_id in titles_iter:
+        if args.max_edits and edited >= args.max_edits:
+            print(f"Reached max edits ({args.max_edits}); stopping run.")
+            break
         if args.limit and processed >= args.limit:
             break
         if args.apply and title in completed_titles:

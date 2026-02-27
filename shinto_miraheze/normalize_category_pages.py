@@ -179,6 +179,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
+    parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
     parser.add_argument("--start-title", default="", help="Start title for full category scan.")
     parser.add_argument("--titles", default="", help="Comma-separated category titles to process.")
     parser.add_argument("--titles-file", default="", help="Path to newline-delimited category titles.")
@@ -220,6 +221,9 @@ def main():
     api_nochange = 0
 
     for title in titles_iter:
+        if args.max_edits and edited >= args.max_edits:
+            print(f"Reached max edits ({args.max_edits}); stopping run.")
+            break
         if args.limit and processed >= args.limit:
             break
         if not title.startswith("Category:"):

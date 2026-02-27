@@ -6,12 +6,12 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 
 ## Immediate / in progress
 
-- [ ] **Crud category cleanup** â€” `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. No state file; safe to re-run (skips already-empty categories automatically).
+- [ ] **Crud category cleanup** â€” `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
 
 - [x] **Delete `Category:Jawiki_resolution_pages`** â€” complete (2026-02-26). 10,239 pages deleted by `delete_jawiki_resolution_pages.py`.
 - [x] **Category page wikitext normalization** â€” complete (2026-02-26). 23,571 of 24,045 category pages edited by `normalize_category_pages.py`. State file preserved for safe re-runs.
 
-- [ ] **Talk page migration** â€” `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state` (201+ pages done). Log: `shinto_miraheze/migrate_talk_pages.log`.
+- [ ] **Talk page migration** â€” `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state`. Log: `shinto_miraheze/migrate_talk_pages.log`. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
 
 - [x] **History merges** â€” 184 pairs merged (2026-02-23). Combined revision histories of old-name and new-name pages for all matched `{{moved to}}`/`{{moved from}}` pairs. 7 edge cases left unresolved; tagged in `Category:move templates that do not link to each other` for manual review. History fully preserved except for those marginal pages.
 - [x] **Re-run `resolve_duplicated_qid_categories.py`** â€” complete (2026-02-23). Only 3 pages remained; all were duplicate Latin-name pairs tagged as erroneous. The ~75 expected remainder had already been resolved by intervening script passes.
@@ -45,13 +45,13 @@ Consolidated list of known tasks. See [VISION.md](VISION.md) for the broader arc
 - [ ] **Multiple `{{wikidata link}}` on one page** â€” usually indicates a Wikidata disambiguation issue. Needs per-case review.
 - [ ] **Talk pages** â€” currently contain junk (Wikipedia AFC notices, old bot messages). Plan: overwrite with imported talk page content from Japanese Wikipedia and English Wikipedia per article, with a section for any local discussion and a comment noting the import date.
 - [ ] **Shikinaisha pages with broken ILL destinations** â€” ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
-- [ ] **Github actions** â€” Get this repo working with github actions to periodically edit the wiki. This is a concern more once we have finished up with our overhaul of the wiki, and it is less of a concern right now. But it might be useful to actually implement it this way since it frees up my local CPU time. We might have massive actions that occur daily for 6 hours and then stop and continue again. Might take a few months to do the overhaul and we can work on editing the bot loop in the meantime. A few months of no mental energy or all energy dedicated to editing the loop and then a couple edits a week is better than a few weeks of frantic edits.
+- [x] **Github actions** â€” implemented. Full cleanup loop now runs on Ubuntu Actions (push + daily + manual), authenticates with bot password credentials, updates bot user page run status, caps edits per script (`WIKI_EDIT_LIMIT=1000`), and commits `*.state` files for persistence.
 - [ ] **Switch to [[User:EmmaBot]] for automation** - planned for CI/CD rollout so bot edits are clearly separated from human edits and easier to audit.
 ---
 
 ## Repository / script tasks
 
-- [ ] **Move hardcoded credentials to environment variables** â€” all scripts use hardcoded `USERNAME`/`PASSWORD`. Must be done before repo can be made public. Use `.env` + `python-dotenv` or environment variables directly.
+- [ ] **Move hardcoded credentials to environment variables** â€” complete for active `shinto_miraheze` scripts; remaining legacy/archive scripts still need migration before full open-source cleanup.
 - [x] **Consolidate active root scripts into `shinto_miraheze/`** â€” done.
 
 ---

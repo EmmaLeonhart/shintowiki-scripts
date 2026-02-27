@@ -66,6 +66,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Save edits (default is dry-run).")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process (0 = no limit).")
+    parser.add_argument("--max-edits", type=int, default=0, help="Max edits to save in this run (0 = no limit).")
     args = parser.parse_args()
 
     site = mwclient.Site(
@@ -80,6 +81,9 @@ def main():
     processed = fixed = skipped = errors = 0
 
     for page in cat:
+        if args.max_edits and fixed >= args.max_edits and args.apply:
+            print(f"Reached max edits ({args.max_edits}); stopping run.")
+            break
         if args.limit and processed >= args.limit:
             break
         processed += 1
