@@ -16,6 +16,15 @@ Build a maintainable, multi-layer content pipeline for [shinto.miraheze.org](htt
 
 ---
 
+## Operations policy
+
+CI-first execution is now the operational standard:
+- Emma Leonhart does not run normal mass-edit bot jobs from a local computer.
+- Routine and major automated edits are implemented by changing repository code/workflows and executing through GitHub Actions.
+- Local manual script runs are reserved for emergency-only intervention.
+
+---
+
 ## Phase 0: Complete legacy operations (in progress / mostly done)
 
 - [x] Add `{{wikidata link|Q...}}` to all category pages via interwiki resolution

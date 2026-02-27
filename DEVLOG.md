@@ -6,6 +6,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-02-27
 
+### CI-first operating policy declared
+**Status:** Active policy
+
+Operational policy is now explicit across docs and bot-page content:
+- Emma Leonhart will not run normal mass-edit jobs from a local machine.
+- Routine and major bot operations are to be executed via GitHub Actions by editing repository code/workflows.
+- Local manual script execution is reserved for emergency intervention only.
+
 ### GitHub Actions bot-password pipeline rollout
 **Scripts/Workflow:** `.github/workflows/cleanup-loop.yml`, `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/update_bot_userpage_status.py`
 **Status:** Complete (pipeline implementation)

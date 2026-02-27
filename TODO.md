@@ -4,6 +4,12 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
+## Operating policy
+
+- [ ] **Enforce CI-first operations policy** — I, Emma Leonhart, will not run normal mass-edit jobs from my own computer. Routine and major automated edits should be executed through GitHub Actions by updating repository code/workflows, with local manual runs limited to emergency cases only.
+
+---
+
 ## Immediate / in progress
 
 - [ ] **Unused category deletion (with safeguard)** — `delete_unused_categories.py` runs first in the GitHub Actions loop and deletes pages listed in Special:UnusedCategories, except pages containing `{{Possibly empty category}}`. This is part of post-crud cleanup and is expected to run repeatedly over multiple days as category cleanup progresses.
