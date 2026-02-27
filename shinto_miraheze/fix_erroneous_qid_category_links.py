@@ -8,6 +8,7 @@ For pages in Category:Erroneous_qid_category_links:
 Default mode is dry-run. Use --apply to save edits.
 """
 
+import os
 import argparse
 import io
 import re
@@ -20,8 +21,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME = "EmmaBot"
-PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 THROTTLE = 1.5
 
 SOURCE_CAT = "Erroneous_qid_category_links"

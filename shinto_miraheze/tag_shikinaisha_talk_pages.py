@@ -27,8 +27,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME = "EmmaBot"
-PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 THROTTLE = 1.5
 CATEGORY = "Wikidata_generated_shikinaisha_pages"
 DEFAULT_STATE_FILE = "shinto_miraheze/tag_shikinaisha_talk_pages.state"

@@ -8,14 +8,15 @@ Edit the CUTOFF timestamp below before running.
 """
 
 import io, sys, time
+import os
 import mwclient
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "EmmaBot"
-PASSWORD  = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 THROTTLE  = 1.0
 
 # UTC timestamp — undo all edits by this user AT OR AFTER this time

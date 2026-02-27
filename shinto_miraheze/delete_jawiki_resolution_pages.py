@@ -10,6 +10,7 @@ Then run for real:
     python delete_jawiki_resolution_pages.py
 """
 
+import os
 import io
 import sys
 import time
@@ -20,8 +21,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "EmmaBot"
-PASSWORD  = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 THROTTLE  = 1.5
 CATEGORY  = "Jawiki_resolution_pages"
 REASON    = "Bot: deleting jawiki resolution page (unwanted content)"

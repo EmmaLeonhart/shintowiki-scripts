@@ -1,3 +1,4 @@
+import os
 """
 fix_dup_cat_links.py
 Fix existing dup pages that have [[Category:X]] instead of [[:Category:X]]
@@ -9,8 +10,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME  = "EmmaBot"
-PASSWORD  = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 DUP_CAT   = "duplicated qid category redirects"
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,

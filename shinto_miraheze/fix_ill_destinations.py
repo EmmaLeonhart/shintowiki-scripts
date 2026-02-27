@@ -14,6 +14,7 @@ Priority:
 """
 
 import re, time, io, sys, requests
+import os
 import mwclient
 from mwclient.errors import APIError
 
@@ -21,8 +22,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USERNAME = "EmmaBot"
-PASSWORD = "[REDACTED_SECRET_1]"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 WD_API = "https://www.wikidata.org/w/api.php"
 THROTTLE = 1.5
 

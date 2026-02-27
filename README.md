@@ -30,13 +30,17 @@ Current local orchestration baseline for cleanup runs is shinto_miraheze/cleanup
 
 ## Credentials / secrets
 
-**All scripts currently have hardcoded credentials.** This must be fixed before the repo can be made public. See [VISION.md Â§ Secrets](VISION.md#secrets) for the plan.
+Active `shinto_miraheze/*.py` scripts now support environment-variable overrides:
+- `WIKI_USERNAME`
+- `WIKI_PASSWORD`
 
 Until then, do not share this repo publicly.
 
 Required credentials (to be moved to environment variables or a `.env` file):
-- `USERNAME` / `PASSWORD` â€” MediaWiki bot account (`EmmaBot` on shinto.miraheze.org)
+- `WIKI_USERNAME` / `WIKI_PASSWORD` â€” MediaWiki bot account (`EmmaBot` on shinto.miraheze.org)
 - Pramana server credentials (future)
+
+For local development, copy `.env.example` to `.env` and set real values in your shell or environment manager.
 
 ---
 
@@ -51,6 +55,23 @@ Run any script directly:
 python create_category_qid_redirects.py
 python shinto_miraheze/resolve_category_wikidata_from_interwiki.py
 ```
+
+Run the Ubuntu cleanup loop locally:
+```bash
+bash shinto_miraheze/cleanup_loop.sh
+```
+
+---
+
+## GitHub Actions (Ubuntu)
+
+A manual workflow is available at `.github/workflows/cleanup-loop.yml`.
+
+Set these repository or environment secrets before running:
+- `WIKI_USERNAME`
+- `WIKI_PASSWORD`
+
+Then run the workflow via `workflow_dispatch`.
 
 ---
 

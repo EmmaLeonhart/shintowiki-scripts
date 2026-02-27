@@ -6,6 +6,7 @@ remove any {{DEFAULTSORT:NNNNNNNN}} where the sort key is purely numeric
 (i.e. a Wikidata QID number left in by the generator).
 """
 
+import os
 import mwclient
 import re
 import time
@@ -16,8 +17,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME = 'EmmaBot'
-PASSWORD = '[REDACTED_SECRET_1]'
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 SLEEP = 1.5
 
 CATEGORY = 'Wikidata generated shikinaisha pages'

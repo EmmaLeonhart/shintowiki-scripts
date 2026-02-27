@@ -29,9 +29,8 @@ if sys.platform == 'win32':
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'EmmaBot'
-PASSWORD  = '[REDACTED_SECRET_1]'
-
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
 site.login(USERNAME, PASSWORD)
 

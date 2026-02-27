@@ -21,9 +21,8 @@ if sys.platform == 'win32':
 
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'EmmaBot'
-PASSWORD  = '[REDACTED_SECRET_1]'
-
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 PROPERTIES_TO_IGNORE = ['P11250']
 PROPERTIES_TO_OMIT = ['P1448', 'P2671']
 

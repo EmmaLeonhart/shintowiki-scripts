@@ -31,8 +31,8 @@ if sys.platform == 'win32':
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'EmmaBot'
-PASSWORD  = '[REDACTED_SECRET_1]'
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 BOT_USER_AGENT = "EmmaBotCategoryWikidataBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)"
 
 # Wait 30 minutes at startup to avoid race conditions

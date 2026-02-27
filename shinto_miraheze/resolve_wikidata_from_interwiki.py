@@ -15,6 +15,7 @@ This script:
 
 """
 
+import os
 import time
 import re
 import mwclient
@@ -29,8 +30,8 @@ if sys.platform == 'win32':
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'EmmaBot'
-PASSWORD  = '[REDACTED_SECRET_1]'
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 CATEGORY_NAME = 'Missing wikidata'
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)

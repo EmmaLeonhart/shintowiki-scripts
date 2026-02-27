@@ -18,6 +18,7 @@ of both A and B, and B's content (minus the {{moved from}} template).
 Pages that link to more than one partner are skipped (must be exclusive pairs).
 """
 
+import os
 import mwclient
 import re
 import time
@@ -28,8 +29,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 WIKI_URL = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
-USERNAME  = 'EmmaBot'
-PASSWORD  = '[REDACTED_SECRET_1]'
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 SLEEP     = 1.5
 
 CAT_STARTING = 'Move starting points'
