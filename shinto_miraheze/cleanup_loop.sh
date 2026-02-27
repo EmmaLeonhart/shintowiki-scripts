@@ -28,7 +28,7 @@ if [ -z "${RUN_ID}" ]; then
   exit 1
 fi
 
-RUN_URL="https://github.com/${REPO}/actions/runs/${RUN_ID}"
+RUN_PATH="${REPO}/actions/runs/${RUN_ID}"
 CAUSE_TEXT="pipeline run"
 case "${EVENT_NAME}" in
   push)
@@ -42,7 +42,7 @@ case "${EVENT_NAME}" in
     ;;
 esac
 
-RUN_TAG="[${RUN_URL} ${CAUSE_TEXT}]"
+RUN_TAG="[[git:${RUN_PATH}|${CAUSE_TEXT}]]"
 echo "Run tag: ${RUN_TAG}"
 
 python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}"
@@ -52,3 +52,4 @@ python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$EDIT_LIMIT" 
 python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
