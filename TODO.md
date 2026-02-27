@@ -33,11 +33,13 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 ### Lower priority
 
 - [ ] **Categories missing Wikidata** â€” categories with interwikis but no `{{wikidata link}}`. Many are Japan-only or internal maintenance categories with no real Wikidata item; assess per-category.
+- [ ] **Split `Category:Categories_missing_wikidata` into two typed subcategories** â€” create and maintain two `|*`-sorted subcategories under `Category:Categories_missing_wikidata`: (1) categories missing interwikis entirely, and (2) categories with valid interwikis but no Wikidata link yet. Keep this as a later structural cleanup task (not immediate implementation).
 - [ ] **Categories with interwikis but no Wikidata link added** â€” older script passes added interwiki links without adding the `{{wikidata link}}` template. Re-run the wikidata link script on these.
 - [ ] **Multiple `{{wikidata link}}` on one page** â€” usually indicates a Wikidata disambiguation issue. Needs per-case review.
 - [ ] **Talk pages** â€” currently contain junk (Wikipedia AFC notices, old bot messages). Plan: overwrite with imported talk page content from Japanese Wikipedia and English Wikipedia per article, with a section for any local discussion and a comment noting the import date.
 - [ ] **Shikinaisha pages with broken ILL destinations** â€” ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
 - [ ] **Switch to [[User:EmmaBot]] for automation** - planned for CI/CD rollout so bot edits are clearly separated from human edits and easier to audit.
+- [ ] **Remove legacy category-page fix templates** â€” remove remnants such as `{{デフォルトソート:...}}` and `{{citation needed|...}}` from category pages where they were introduced by old workaround passes.
 ---
 
 ## Repository / script tasks
