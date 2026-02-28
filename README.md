@@ -46,7 +46,7 @@ Active `shinto_miraheze/*.py` scripts now support environment-variable overrides
 Until then, do not share this repo publicly.
 
 Required credentials (to be moved to environment variables or a `.env` file):
-- `WIKI_USERNAME` / `WIKI_PASSWORD` â€” MediaWiki bot password login (example username format: `EmmaBot@EmmaBot`)
+- `WIKI_USERNAME` / `WIKI_PASSWORD` - MediaWiki bot password login (example username format: `EmmaBot@EmmaBot`)
 - Pramana server credentials (future)
 
 For local development, copy `.env.example` to `.env` and set real values in your shell or environment manager.
@@ -96,10 +96,10 @@ Pipeline behavior:
 
 ## See also
 
-- [VISION.md](VISION.md) â€” full architecture plan and future direction
-- [SCRIPTS.md](SCRIPTS.md) â€” catalog of all scripts with status
-- [API.md](API.md) â€” how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
-- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) â€” page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
-- [HISTORY.md](HISTORY.md) â€” wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
-- [TODO.md](TODO.md) â€” prioritized list of all known tasks
+- [VISION.md](VISION.md) - full architecture plan and future direction
+- [SCRIPTS.md](SCRIPTS.md) - catalog of all scripts with status
+- [API.md](API.md) - how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
+- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) - page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
+- [HISTORY.md](HISTORY.md) - wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
+- [TODO.md](TODO.md) - prioritized list of all known tasks
 
