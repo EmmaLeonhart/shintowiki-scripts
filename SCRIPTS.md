@@ -21,14 +21,34 @@ Status codes:
 
 ---
 
-## shinto_miraheze/ — active scripts
+## shinto_miraheze/ — cleanup loop (runs automatically via GitHub Actions)
 
 | Script | Status | Description |
 |--------|--------|-------------|
-| `resolve_category_wikidata_from_interwiki.py` | ACTIVE | Resolves Wikidata QIDs for category pages via interwiki links. Accepts optional start-title CLI arg. Ran full pass Feb 2026. |
-| `resolve_wikidata_from_interwiki.py` | ACTIVE | Same as above but for main-namespace pages. |
-| `resolve_template_wikidata_from_interwiki_v2.py` | ACTIVE | Resolves Wikidata for template pages. |
-| `generate_shikinaisha_pages_v24_from_t.py` | ACTIVE | Latest version of the shikinaisha page generator. |
+| `update_bot_userpage_status.py` | ACTIVE | Updates `User:EmmaBot` with current pipeline run metadata. |
+| `delete_unused_categories.py` | ACTIVE | Deletes Special:UnusedCategories pages; skips those with `{{Possibly empty category}}`. |
+| `normalize_category_pages.py` | ACTIVE | Enforces canonical category page layout: templates → interwikis → categories. |
+| `migrate_talk_pages.py` | ACTIVE | Rebuilds talk pages and seeds discussion content from ja/en/simple Wikipedia. |
+| `tag_shikinaisha_talk_pages.py` | ACTIVE | Adds "generated from Wikidata" notice to shikinaisha talk pages. |
+| `remove_crud_categories.py` | ACTIVE | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories. |
+| `fix_erroneous_qid_category_links.py` | ACTIVE | Fixes category/QID mismatches flagged in Category:Erroneous_qid_category_links. |
+| `remove_legacy_cat_templates.py` | ACTIVE | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages. |
+
+## shinto_miraheze/ — manual-use / not in loop
+
+These exist but require human review or have been superseded. They are not run automatically.
+
+| Script | Status | Description |
+|--------|--------|-------------|
+| `resolve_category_wikidata_from_interwiki.py` | LEGACY | Ran a full pass Feb 2026. Remaining gaps require human judgment; not safe to re-run automatically. |
+| `resolve_wikidata_from_interwiki.py` | LEGACY | Main-namespace equivalent of the above. Full pass complete. |
+| `resolve_duplicated_qid_categories.py` | MANUAL | Merges CJK/Latin duplicate QID pairs. Needs human review per case. |
+| `merge_japanese_named_categories.py` | MANUAL | Merges Japanese-named categories into English equivalents. Remaining entries are ambiguous. |
+| `fix_ill_destinations.py` | MANUAL | Fixes broken ILL destinations. Must not be run blindly — check local context per page. |
+| `resolve_missing_wikidata_categories.py` | MANUAL | Resolves Wikidata for categories missing it. Source category was cleaned out; prereq work needed. |
+| `tag_missing_wikidata_with_ja_interwiki.py` | MANUAL | Tags categories missing Wikidata that have a ja: interwiki. Source category needs recreation. |
+| `create_category_qid_redirects.py` | MANUAL | Creates `Q{QID}` mainspace redirects. Full pass complete; run only when new categories are added. |
+| `generate_shikinaisha_pages_v25_with_redirects.py` | MANUAL | Latest shikinaisha page generator. Run only when new shikinaisha data is available. |
 
 ---
 

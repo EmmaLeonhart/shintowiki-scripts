@@ -10,7 +10,7 @@ The root directory and `shinto_miraheze/` contain hundreds of accumulated one-of
 
 The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
 
-Current local orchestration baseline for cleanup runs is shinto_miraheze/cleanup loop.bat; this is the basis for the planned CI/CD bot pipeline migration.
+All standard bot operations now run through GitHub Actions via `shinto_miraheze/cleanup_loop.sh`. The remaining open wiki tasks require manual intervention — there are no safe script additions left to make to the loop.
 
 ## Operations policy
 
@@ -20,16 +20,20 @@ I, Emma Leonhart, am no longer doing normal mass-edit runs from my local compute
 
 ## Active scripts (shinto.miraheze.org pipeline)
 
+These run in order via `shinto_miraheze/cleanup_loop.sh` (GitHub Actions, daily + on push):
+
 | Script | Purpose |
 |--------|---------|
-| `shinto_miraheze/resolve_category_wikidata_from_interwiki.py` | Resolves Wikidata QIDs for category pages by querying their interwiki links |
-| `shinto_miraheze/create_category_qid_redirects.py` | Creates `Q{QID}` redirect pages in mainspace pointing to their category |
-| `shinto_miraheze/fix_ill_destinations.py` | Fixes broken ILL template destinations |
-| `shinto_miraheze/add_moved_templates.py` | Adds `{{moved to}}` / `{{moved from}}` templates after page moves |
-| `shinto_miraheze/resolve_duplicated_qid_categories.py` | Merges CJK/Latin duplicate QID category pairs; tags Latin/Latin pairs as erroneous |
-| `shinto_miraheze/create_wanted_categories.py` | Creates wanted category pages (categories with members but no page) |
-| `shinto_miraheze/remove_crud_categories.py` | Strips all subcategories of Category:Crud_categories from member pages |
-| `shinto_miraheze/delete_unused_categories.py` | Deletes pages in Special:UnusedCategories, except pages containing `{{Possibly empty category}}` |
+| `shinto_miraheze/update_bot_userpage_status.py` | Updates `User:EmmaBot` with current run metadata |
+| `shinto_miraheze/delete_unused_categories.py` | Deletes Special:UnusedCategories pages, skipping those with `{{Possibly empty category}}` |
+| `shinto_miraheze/normalize_category_pages.py` | Enforces canonical layout (templates / interwikis / categories) on category pages |
+| `shinto_miraheze/migrate_talk_pages.py` | Rebuilds talk pages and seeds them with discussion content from Wikipedia |
+| `shinto_miraheze/tag_shikinaisha_talk_pages.py` | Adds a "generated from Wikidata" notice to shikinaisha talk pages |
+| `shinto_miraheze/remove_crud_categories.py` | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories |
+| `shinto_miraheze/fix_erroneous_qid_category_links.py` | Fixes category/QID mismatches in Category:Erroneous_qid_category_links |
+| `shinto_miraheze/remove_legacy_cat_templates.py` | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages |
+
+Everything else in the repo either completed its run, requires manual intervention, or is legacy/archived. See [TODO.md](TODO.md) for the full picture.
 
 ---
 

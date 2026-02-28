@@ -4,23 +4,35 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
-## Immediate / in progress
+## Automation boundary
 
-- [ ] **Unused category deletion (with safeguard)** — `delete_unused_categories.py` runs first in the GitHub Actions loop and deletes pages listed in Special:UnusedCategories, except pages containing `[[Template:Possibly empty category]]`. This is part of post-crud cleanup and is expected to run repeatedly over multiple days as category cleanup progresses.
+The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. **Everything outside the loop requires manual intervention — there are no easy script additions left.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
 
-- [ ] **Crud category cleanup** â€” `remove_crud_categories.py` running (2026-02-25); stripping [[Category:X]] tags from all member pages across 112 subcategories of Category:Crud_categories. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
+### Currently automated (cleanup loop)
 
-- [ ] **Talk page migration** â€” `migrate_talk_pages.py --apply` running (2026-02-25); rebuilds every talk page into a clean structure and imports discussion seeds from ja/en/simple Wikipedia via QID sitelinks. State file: `shinto_miraheze/migrate_talk_pages.state`. Log: `shinto_miraheze/migrate_talk_pages.log`. Now runs in GitHub Actions with `--max-edits` cap and is expected to take several days of automated runs.
+These run automatically every 24 hours via GitHub Actions. No manual action needed unless something breaks.
 
-- [ ] **Template:Talk page header** - Edit this template so that it fits all requirements for migrated/transformed talk pages.
+- **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
+- **Category page normalization** — `normalize_category_pages.py`: enforces the canonical templates / interwikis / categories layout on every category page.
+- **Talk page migration** — `migrate_talk_pages.py`: rebuilds talk pages and seeds them with discussion content from ja/en/simple Wikipedia. State file: `shinto_miraheze/migrate_talk_pages.state`.
+- **Shikinaisha talk page tagging** — `tag_shikinaisha_talk_pages.py`: adds a “generated from Wikidata” notice to talk pages of Wikidata-generated shikinaisha pages.
+- **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
+- **Erroneous QID category link fixes** — `fix_erroneous_qid_category_links.py`: corrects category/QID mismatches flagged in Category:Erroneous_qid_category_links.
+- **Legacy template removal** — `remove_legacy_cat_templates.py`: removes `{{デフォルトソート:…}}` and `{{citation needed}}` artifacts from category pages.
+
+### Requires manual intervention
+
+- [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
 
 ---
 
 ## Wiki content tasks (on shintowiki)
 
+All items below require manual editing or human review. None have a safe automated path right now.
+
 ### High priority
 
-- [ ] **Fix template categories outside `<noinclude>`** â€” some templates have `[[Category:â€¦]]` and `{{wikidata link}}` placed outside `<noinclude>`, causing every page that transcludes the template to inherit those categories. Move stray tags into `<noinclude>`.
+- [ ] **Fix template categories outside `<noinclude>`** — some templates have `[[Category:…]]` and `{{wikidata link}}` placed outside `<noinclude>`, causing every page that transcludes the template to inherit those categories. Move stray tags into `<noinclude>`. **Manual edit required per template.**
 - [ ] **ILLs without `WD=`** â€” ILL templates missing a `WD=` parameter are broken by design. Run `fix_ill_destinations.py` or a new script to identify and fill in missing `WD=` values. Do not blindly overwrite â€” check the local context of each.
 - [ ] **Duplicate QID disambiguation pages** â€” 621 `Q{QID}` mainspace pages point to 2+ categories. Needs human review to decide which category correctly holds the QID.
 - [ ] **Translate all category names in [Category:Japanese language category names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names)** â€” ensure every category in this tracking set is migrated to a canonical English category title.
