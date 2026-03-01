@@ -12,10 +12,6 @@ The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
 
 All standard bot operations now run through GitHub Actions via `shinto_miraheze/cleanup_loop.sh`. The remaining open wiki tasks require manual intervention — there are no safe script additions left to make to the loop.
 
-## Operations policy
-
-I, Emma Leonhart, am no longer doing normal mass-edit runs from my local computer. Standard bot operations must run through GitHub Actions so they are auditable and lower-anxiety to operate. Major changes should be made by editing the GitHub repository/workflows and letting the pipeline execute them. Local manual script runs are reserved for emergency intervention only.
-
 ---
 
 ## Active scripts (shinto.miraheze.org pipeline)
