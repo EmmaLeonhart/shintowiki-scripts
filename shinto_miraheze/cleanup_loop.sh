@@ -46,6 +46,7 @@ RUN_TAG="[[git:${RUN_PATH}|${CAUSE_TEXT}]]"
 echo "Run tag: ${RUN_TAG}"
 
 python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}"
+python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
