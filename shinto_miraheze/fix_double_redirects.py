@@ -80,8 +80,8 @@ def resolve_final_target(site, start_target, max_depth=10):
         seen.add(norm)
 
         page_title = current.split("#")[0].strip()
-        page = site.pages[page_title]
         try:
+            page = site.pages[page_title]
             text = page.text() if page.exists else ""
         except Exception:
             return None
