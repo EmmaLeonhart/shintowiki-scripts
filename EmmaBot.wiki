@@ -6,7 +6,7 @@ Repository: https://github.com/Emma-Leonhart/shintowiki-scripts
 
 == Operations policy ==
 
-I, Emma Leonhart, am committed to CI-first bot operations. I do not run normal mass-edit jobs from my local computer anymore. Routine and major automated edits are implemented by changing the GitHub repository and executed through GitHub Actions. Local manual script runs are reserved for emergency intervention only.
+All routine bot edits run through '''GitHub Actions''', not from a local machine. Scripts are committed to the repository and triggered automatically or via manual dispatch. Local runs are only used for emergencies.
 
 == Immediate / in progress ==
 <!-- BOT-IMMEDIATE:START -->
