@@ -100,13 +100,17 @@ def main():
                         print(f"  CLEANED: {page.name}")
                         total_edits += 1
                         break
-                    except mwclient.errors.EditError as e:
+                    except Exception as e:
                         if 'editconflict' in str(e).lower() and attempt < 2:
                             print(f"  CONFLICT (retry {attempt+1}/3): {page.name}")
                             time.sleep(3)
                             # Re-fetch and re-apply the strip
-                            text = page.text()
-                            new_text = pattern.sub("", text).rstrip("\n")
+                            try:
+                                text = page.text()
+                                new_text = pattern.sub("", text).rstrip("\n")
+                            except Exception as re_err:
+                                print(f"  ERROR re-reading {page.name}: {re_err}")
+                                break
                         else:
                             print(f"  ERROR: {page.name} — {e}")
                             break
