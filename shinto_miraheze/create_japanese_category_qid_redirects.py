@@ -29,13 +29,13 @@ SOURCE_CAT  = "Japanese language category names"
 WD_LINK_RE  = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
 REDIRECT_RE = re.compile(r'^#REDIRECT\s*\[\[(.+?)\]\]', re.IGNORECASE | re.MULTILINE)
 
-site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                     clients_useragent='JapaneseCategoryQidRedirectBot/1.0 (User:EmmaBot; shinto.miraheze.org)')
-site.login(USERNAME, PASSWORD)
-print("Logged in as", USERNAME, flush=True)
-
 
 def main():
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
+                         clients_useragent='JapaneseCategoryQidRedirectBot/1.0 (User:EmmaBot; shinto.miraheze.org)')
+    site.login(USERNAME, PASSWORD)
+    print("Logged in as", USERNAME, flush=True)
+
     print(f"Loading [[Category:{SOURCE_CAT}]]...", flush=True)
     cat = site.categories[SOURCE_CAT]
     # Only process Category namespace (14), skip QID pages themselves
