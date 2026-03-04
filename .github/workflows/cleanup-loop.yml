@@ -52,9 +52,16 @@ jobs:
           shinto_miraheze/cleanup_loop.sh
 
       - name: Commit updated state files
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Re-authenticate in case the token cached by actions/checkout has gone stale
+          # during the long-running cleanup loop
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+
           git add -A -- "*.state"
           if git diff --cached --quiet; then
             echo "No state changes to commit."
