@@ -85594,3 +85594,379 @@ Module:Random/sandbox
 Module:Random portal component
 Module:Random portal component/doc
 Module:Random slideshow
+Module:Random slideshow/doc
+Module:Random slideshow/sandbox
+Module:Random slideshow/sandbox/doc
+Module:Redirect
+Module:Redirect-distinguish
+Module:Redirect-distinguish-for/sandbox
+Module:Redirect-distinguish/doc
+Module:Redirect/doc
+Module:Redirect/sandbox
+Module:Redirect/testcases
+Module:RedirectData
+Module:RedirectData/doc
+Module:RedirectData/sandbox
+Module:RedirectData/testcases
+Module:Redirect hatnote
+Module:Redirect hatnote/doc
+Module:Redirect hatnote/sandbox
+Module:Redirect hatnote/testcases
+Module:Redirect template
+Module:Redirect template/doc
+Module:Redirect template/sandbox
+Module:Redirect template/testcases
+Module:Region topic/doc
+Module:Reply to
+Module:Reply to/doc
+Module:ResolveEntityId
+Module:ResolveEntityId/sandbox
+Module:Resolve category redirect
+Module:Resolve category redirect/doc
+Module:Respell
+Module:Respell/doc
+Module:Respell/sandbox
+Module:Respell/testcases
+Module:RfD
+Module:RfD/doc
+Module:Road data
+Module:Road data/browse
+Module:Road data/browse/doc
+Module:Road data/browsetable
+Module:Road data/browsetable/doc
+Module:Road data/browsetable/styles.css
+Module:Road data/countrymask
+Module:Road data/countrymask/doc
+Module:Road data/doc
+Module:Road data/extra
+Module:Road data/extra/doc
+Module:Road data/parser
+Module:Road data/parser/doc
+Module:Road data/parser/hooks
+Module:Road data/parser/hooks/doc
+Module:Road data/size
+Module:Road data/size/doc
+Module:Road data/strings/AFG
+Module:Road data/strings/AFG/doc
+Module:Road data/strings/UNK
+Module:Road data/strings/UNK/doc
+Module:Road data/strings/USA
+Module:Road data/strings/USA/NJ
+Module:Road data/strings/USA/NJ/doc
+Module:Road data/strings/USA/doc
+Module:Road data/strings/USA/regional/GRR
+Module:Road data/strings/USA/regional/GRR/doc
+Module:Road data/strings/USA/regional/NER
+Module:Road data/strings/USA/regional/NER/doc
+Module:Road data/strings/USA/regional/Tour
+Module:Road data/strings/USA/regional/Tour/doc
+Module:Road data/strings/USA/regional/Trails
+Module:Road data/strings/USA/regional/Trails/doc
+Module:Road data/util
+Module:Road data/util/doc
+Module:Roman
+Module:Rugby box
+Module:SDcat
+Module:SDcat/doc
+Module:SDcat/sandbox
+Module:SDcat/testcases
+Module:Sandbox
+Module:ScribuntoUnit
+Module:Search
+Module:Search/doc
+Module:Search/styles.css
+Module:Section link
+Module:Section link/doc
+Module:Section link/sandbox
+Module:Section link/testcases
+Module:Selected current events
+Module:Selected current events/doc
+Module:Selected recent additions
+Module:Selected recent additions/doc
+Module:Separated entries
+Module:Separated entries/doc
+Module:Separated entries/sandbox
+Module:Separated entries/testcases
+Module:Settlement short description
+Module:Settlement short description/sandbox
+Module:Settlement short description/sandbox/doc
+Module:Shortcut
+Module:Shortcut/config
+Module:Shortcut/config/doc
+Module:Shortcut/config/sandbox
+Module:Shortcut/config/testcases
+Module:Shortcut/doc
+Module:Shortcut/sandbox
+Module:Shortcut/styles.css
+Module:Shortcut/testcases
+Module:Side box
+Module:Side box/doc
+Module:Side box/sandbox
+Module:Side box/styles.css
+Module:Side box/testcases
+Module:Sidebar
+Module:Sidebar/configuration
+Module:Sidebar/configuration/doc
+Module:Sidebar/configuration/sandbox
+Module:Sidebar/doc
+Module:Sidebar/sandbox
+Module:Sidebar/styles.css
+Module:Sidebar/testcases
+Module:String
+Module:String/doc
+Module:String/sandbox
+Module:String/testcases
+Module:String2
+Module:String2/doc
+Module:String2/sandbox
+Module:String2/testcases
+Module:Submit an edit request/sandbox
+Module:TNT
+Module:TNT/doc
+Module:TNT/sandbox
+Module:TNT/testcases
+Module:TNTTools
+Module:TableTools
+Module:TableTools/doc
+Module:TableTools/sandbox
+Module:TableTools/testcases
+Module:Taxonbar/exists
+Module:Team appearances list/doc
+Module:TemplatePar
+Module:TemplateStyles
+Module:TemplateStyles/doc
+Module:Template invocation
+Module:Template invocation/doc
+Module:Template invocation/sandbox
+Module:Template link general
+Module:Template link general/doc
+Module:Template link general/sandbox
+Module:Template link general/sandbox/doc
+Module:Template link general/testcases
+Module:Template link with magic
+Module:Template link with magic/doc
+Module:Template parameter value
+Module:Template redirect regex
+Module:Template redirect regex/doc
+Module:Template redirect regex/sandbox
+Module:Template redirect regex/testcases
+Module:Template test case
+Module:Template test case/config
+Module:Template test case/config/doc
+Module:Template test case/config/sandbox
+Module:Template test case/data
+Module:Template test case/data/doc
+Module:Template test case/data/sandbox
+Module:Template test case/doc
+Module:Template wrapper
+Module:Template wrapper/doc
+Module:Template wrapper/sandbox
+Module:Template wrapper/sandbox/doc
+Module:Template wrapper/testcases
+Module:TestWd
+Module:Text
+Module:Text/data
+Module:Text/data/doc
+Module:Text/doc
+Module:Text/sandbox
+Module:Text/testcases
+Module:Tfd links
+Module:Time
+Module:Time/data
+Module:Time ago
+Module:Time ago/doc
+Module:Time ago/sandbox
+Module:Time ago/testcases
+Module:Tlm
+Module:Toolbar
+Module:Toolbar/doc
+Module:Tracks and uses Wikidata/doc
+Module:Transclude DYK
+Module:Transclude DYK/doc
+Module:Transclude DYK/sandbox
+Module:Transclude random subpage/sandbox
+Module:Transcluder
+Module:Transcluder/sandbox
+Module:Transclusion count
+Module:Transclusion count/data/A
+Module:Transclusion count/data/A/doc
+Module:Transclusion count/data/B
+Module:Transclusion count/data/B/doc
+Module:Transclusion count/data/C
+Module:Transclusion count/data/C/doc
+Module:Transclusion count/data/D
+Module:Transclusion count/data/D/doc
+Module:Transclusion count/data/E
+Module:Transclusion count/data/E/doc
+Module:Transclusion count/data/F
+Module:Transclusion count/data/F/doc
+Module:Transclusion count/data/G
+Module:Transclusion count/data/G/doc
+Module:Transclusion count/data/H
+Module:Transclusion count/data/H/doc
+Module:Transclusion count/data/I
+Module:Transclusion count/data/I/doc
+Module:Transclusion count/data/J
+Module:Transclusion count/data/J/doc
+Module:Transclusion count/data/L
+Module:Transclusion count/data/L/doc
+Module:Transclusion count/data/M
+Module:Transclusion count/data/M/doc
+Module:Transclusion count/data/N
+Module:Transclusion count/data/N/doc
+Module:Transclusion count/data/O
+Module:Transclusion count/data/O/doc
+Module:Transclusion count/data/P
+Module:Transclusion count/data/P/doc
+Module:Transclusion count/data/R
+Module:Transclusion count/data/R/doc
+Module:Transclusion count/data/S
+Module:Transclusion count/data/S/doc
+Module:Transclusion count/data/T
+Module:Transclusion count/data/T/doc
+Module:Transclusion count/data/U
+Module:Transclusion count/data/U/doc
+Module:Transclusion count/data/W
+Module:Transclusion count/data/W/doc
+Module:Transclusion count/data/Y
+Module:Transclusion count/data/Y/doc
+Module:Transclusion count/doc
+Module:Transclusion count/sandbox
+Module:Transclusion count/testcases
+Module:TranslateThis
+Module:Tree chart
+Module:Tree chart/data
+Module:Tree chart/data/doc
+Module:Tree chart/doc
+Module:Tree chart/sandbox
+Module:Tree chart/testcases
+Module:Trim quotes
+Module:Trim quotes/doc
+Module:Trim quotes/sandbox
+Module:Trim quotes/testcases
+Module:Type in location
+Module:Type in location/doc
+Module:Type in location/sandbox
+Module:Type in location/testcases
+Module:URL
+Module:URL/doc
+Module:URL/sandbox
+Module:URL/sandbox/doc
+Module:URL/testcases
+Module:Unicode convert
+Module:Unicode data
+Module:Unicode data/Hangul
+Module:Unicode data/age
+Module:Unicode data/aliases
+Module:Unicode data/blocks
+Module:Unicode data/category
+Module:Unicode data/combining
+Module:Unicode data/control
+Module:Unicode data/datasets
+Module:Unicode data/derived core properties
+Module:Unicode data/doc
+Module:Unicode data/names/000
+Module:Unicode data/sandbox
+Module:Unicode data/scripts
+Module:Unicode data/scripts/doc
+Module:Unicode data/scripts/make
+Module:Unicode data/scripts/sandbox
+Module:Unicode data/scripts/testcases
+Module:Unicode data/testcases
+Module:UnitTests
+Module:Unsubst
+Module:Unsubst-infobox
+Module:Unsubst/doc
+Module:Unsubst/sandbox
+Module:Unsubst/sandbox/doc
+Module:Unsubst/testcases
+Module:Urldecode
+Module:Userbox
+Module:Uses TemplateStyles
+Module:Uses TemplateStyles/config
+Module:Uses TemplateStyles/config/doc
+Module:Uses TemplateStyles/config/sandbox
+Module:Uses TemplateStyles/doc
+Module:Uses Wikidata
+Module:Uses Wikidata/doc
+Module:Uses Wikidata/sandbox
+Module:Uses Wikidata/testcases
+Module:Ustring
+Module:Ustring/doc
+Module:Ustring/sandbox
+Module:Ustring/testcases
+Module:Vertical header/sandbox
+Module:Video game release/doc
+Module:WLink
+Module:WPMILHIST Infobox style
+Module:WPMILHIST Infobox style/doc
+Module:Warning
+Module:Wd
+Module:Wd/doc
+Module:Wd/i18n
+Module:Wd/i18n/doc
+Module:Wd/i18n/sandbox
+Module:Wd/i18n/testcases
+Module:Wd/sandbox
+Module:Wd/testcases
+Module:Webarchive
+Module:Webarchive/data
+Module:Webarchive/data/doc
+Module:Webarchive/data/sandbox
+Module:Webarchive/data/sandbox/doc
+Module:Webarchive/doc
+Module:Webarchive/sandbox
+Module:Webarchive/sandbox/doc
+Module:Webarchive/testcases
+Module:Wikidata
+Module:Wikidata/doc
+Module:Wikidata/sandbox
+Module:Wikidata/sandbox/doc
+Module:Wikidata/testcases
+Module:WikidataCheck
+Module:WikidataCheck/doc
+Module:WikidataCheck/sandbox
+Module:WikidataCheck/sandbox/doc
+Module:WikidataIB
+Module:WikidataIB/doc
+Module:WikidataIB/i18n
+Module:WikidataIB/nolinks
+Module:WikidataIB/nolinks/doc
+Module:WikidataIB/sandbox
+Module:WikidataIB/sandbox/doc
+Module:WikidataIB/sandbox1
+Module:WikidataIB/testcases
+Module:WikidataIB/titleformats
+Module:WikidataIB/titleformats/doc
+Module:Wikidata label
+Module:Wikitext Parsing
+Module:Wikitext Parsing/doc
+Module:Wikitext Parsing/sandbox
+Module:Wikitext Parsing/testcases
+Module:Wikt-lang
+Module:Wikt-lang/data
+Module:Year in various calendars
+Module:Yesno
+Module:Yesno/doc
+Module:Yesno/sandbox
+Module:Yesno/sandbox/doc
+Module:Yesno/testcases
+Property:P1
+Property:P10
+Property:P11
+Property:P12
+Property:P13
+Property:P14
+Property:P15
+Property:P16
+Property:P17
+Property:P18
+Property:P19
+Property:P2
+Property:P3
+Property:P4
+Property:P5
+Property:P6
+Property:P7
+Property:P8
+Property:P9
