@@ -141,7 +141,11 @@
       "Bash(/c/Users/Immanuelle/AppData/Local/Programs/Python/Python313/python.exe:*)",
       "Bash(tail:*)",
       "Bash(sleep 10:*)",
-      "Bash(sleep 60:*)"
+      "Bash(sleep 60:*)",
+      "Bash(cd /c/Users/Immanuelle/Documents/Github/shintowiki-scripts && gh run view 22927289600 2>&1)",
+      "Bash(cd /c/Users/Immanuelle/Documents/Github/shintowiki-scripts && gh run view 22744539680 2>&1)",
+      "Bash(cd /c/Users/Immanuelle/Documents/Github/shintowiki-scripts && gh run view 22744539680 --log-failed 2>&1)",
+      "Bash(cd /c/Users/Immanuelle/Documents/Github/shintowiki-scripts && gh run view --job=66079755638 --log-failed 2>&1)"
     ],
     "deny": [],
     "ask": []
