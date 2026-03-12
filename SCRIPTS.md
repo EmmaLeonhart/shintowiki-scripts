@@ -34,6 +34,7 @@ Status codes:
 | Script | Status | Description |
 |--------|--------|-------------|
 | `create_wanted_categories.py` | ACTIVE | Fetches Special:WantedCategories via API and creates stub pages for each. |
+| `categorize_uncategorized_categories.py` | ACTIVE | Adds `[[Category:Categories autocreated by EmmaBot]]` to uncategorized category pages. |
 | `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects. |
 | `move_categories.py` | ACTIVE | Moves/renames categories per configured move list. |
 | `create_japanese_category_qid_redirects.py` | ACTIVE | Creates QID redirects for Japanese-named categories. |

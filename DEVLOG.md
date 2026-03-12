@@ -6,6 +6,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-03-12
 
+### Uncategorized category fixer added to core loop
+**Script:** `shinto_miraheze/categorize_uncategorized_categories.py`
+**Status:** Complete (pipeline integration)
+
+Added `categorize_uncategorized_categories.py` to the core loop. Fetches `Special:UncategorizedCategories` via the querypage API and appends `[[Category:Categories autocreated by EmmaBot]]` to each page that has no category membership.
+
+Many category pages were created in earlier bulk workflows (consolidation, QID redirects, etc.) without any categorization. This retroactively fixes that by bringing them under the `Categories autocreated by EmmaBot` umbrella — the same category used by `create_wanted_categories.py` for newly created stubs.
+
 ### Run tag interwiki prefix fixed
 **Script:** `shinto_miraheze/cleanup_loop.sh`
 **Status:** Complete

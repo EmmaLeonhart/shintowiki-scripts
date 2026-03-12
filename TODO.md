@@ -17,6 +17,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 **Core Loop** (structural changes that later scripts depend on):
 - **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
+- **Uncategorized category fix** — `categorize_uncategorized_categories.py`: adds `[[Category:Categories autocreated by EmmaBot]]` to category pages from Special:UncategorizedCategories that were created in earlier bulk workflows without proper categorization.
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
 - **Category moves** — `move_categories.py`: moves/renames categories per configured move list.
 - **Japanese category QID redirects** — `create_japanese_category_qid_redirects.py`: creates QID redirects for Japanese-named categories.
