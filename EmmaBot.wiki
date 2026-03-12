@@ -21,10 +21,9 @@ See [[User:EmmaBot]] for current tasks being done cleaning up this wiki.
 * normalize talk pages
 * normalize category pages
 * remove crud categories
-* fix erroneous QID category links
+* triage [[:Category:Categories autocreated by EmmaBot]] into [[:Category:Emmabot categories with enwiki]] and [[:Category:Emmabot categories without enwiki]]
 
 === Future tasks ===
 
 * normalization of template categories
-* fix [[:Category:Erroneous qid category links]]
-* enrich [[:Category:Categories autocreated by EmmaBot]]
+* enrich [[:Category:Categories autocreated by EmmaBot]] subcategories with proper content

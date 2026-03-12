@@ -14,6 +14,24 @@ Added `categorize_uncategorized_categories.py` to the core loop. Fetches `Specia
 
 Many category pages were created in earlier bulk workflows (consolidation, QID redirects, etc.) without any categorization. This retroactively fixes that by bringing them under the `Categories autocreated by EmmaBot` umbrella — the same category used by `create_wanted_categories.py` for newly created stubs.
 
+### Erroneous QID category link fixes completed
+**Script:** `shinto_miraheze/fix_erroneous_qid_category_links.py`
+**Status:** Complete (task finished)
+
+`Category:Erroneous qid category links` has been fully cleared. Removed from the active tasks list on `User:EmmaBot`.
+
+### EmmaBot category triage script added to core loop
+**Script:** `shinto_miraheze/triage_emmabot_categories.py`
+**Status:** Complete (pipeline integration)
+
+Added `triage_emmabot_categories.py` to the core loop. Processes up to 100 subcategories of `[[Category:Categories autocreated by EmmaBot]]` per run:
+- Batch-checks English Wikipedia for a category with the same name
+- If enwiki match exists: recategorizes to `[[Category:Emmabot categories with enwiki]]`
+- If no match: recategorizes to `[[Category:Emmabot categories without enwiki]]`
+- Removes the original `[[Category:Categories autocreated by EmmaBot]]` tag in both cases
+
+This is the first step in a larger normalization pipeline for the many categories that were bulk-created in earlier workflows without proper documentation or categorization.
+
 ### Per-script stage declarations on User:EmmaBot
 **Scripts:** `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/update_bot_userpage_status.py`
 **Status:** Complete
