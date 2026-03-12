@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-12
+
+### Cleanup loop restructured into Core Loop + Cleanup Loop
+**Scripts/Workflow:** `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/create_wanted_categories.py`, `shinto_miraheze/update_bot_userpage_status.py`
+**Status:** Complete
+
+Restructured the flat cleanup loop into clearly separated phases with echo banners:
+
+1. **Bookkeeping: START** — `update_bot_userpage_status.py --status active` marks the workflow as active on `User:EmmaBot`.
+2. **Core Loop** — structural changes that later scripts depend on:
+   - `create_wanted_categories.py` (new to loop) — dynamically fetches Special:WantedCategories and creates stub pages
+   - `fix_double_redirects.py`
+   - `move_categories.py`
+   - `create_japanese_category_qid_redirects.py`
+3. **Cleanup Loop** — category cleanup + talk pages (all 7 existing scripts, unchanged order).
+4. **Bookkeeping: END** — `update_bot_userpage_status.py --status inactive` marks the workflow as done.
+
+### create_wanted_categories.py rewritten to use dynamic API query
+**Script:** `shinto_miraheze/create_wanted_categories.py`
+**Status:** Complete
+
+Replaced the hardcoded list of ~150 category names with a live query to `Special:WantedCategories` using the `querypage` API (same pattern as `delete_unused_categories.py` uses for `Unusedcategories`). Added standard CLI args: `--apply`, `--max-edits`, `--run-tag`.
+
+The parent category was changed from `[[Category:Categories made during git consolidation]]` to `[[Category:Categories autocreated by EmmaBot]]`. These are effectively the same thing — the "git consolidation" category was an earlier iteration of the same concept (auto-creating wanted categories), just with a name tied to a specific cleanup phase. The new name is permanent and self-describing.
+
+### update_bot_userpage_status.py gains --status flag
+**Script:** `shinto_miraheze/update_bot_userpage_status.py`
+**Status:** Complete
+
+Added `--status active|inactive` flag. When set, the status block on `User:EmmaBot` includes a `Workflow status: '''active'''` or `'''inactive'''` line. Called at both start and end of the cleanup loop to show whether the bot is currently running.
+
+---
+
 ## 2026-02-27
 
 ### CI-first operating policy declared
