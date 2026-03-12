@@ -23,9 +23,25 @@ Status codes:
 
 ## shinto_miraheze/ — cleanup loop (runs automatically via GitHub Actions)
 
+### Bookkeeping
+
 | Script | Status | Description |
 |--------|--------|-------------|
-| `update_bot_userpage_status.py` | ACTIVE | Updates `User:EmmaBot` with current pipeline run metadata. |
+| `update_bot_userpage_status.py` | ACTIVE | Updates `User:EmmaBot` with current pipeline run metadata and workflow active/inactive status. |
+
+### Core Loop — structural changes that later scripts depend on
+
+| Script | Status | Description |
+|--------|--------|-------------|
+| `create_wanted_categories.py` | ACTIVE | Fetches Special:WantedCategories via API and creates stub pages for each. |
+| `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects. |
+| `move_categories.py` | ACTIVE | Moves/renames categories per configured move list. |
+| `create_japanese_category_qid_redirects.py` | ACTIVE | Creates QID redirects for Japanese-named categories. |
+
+### Cleanup Loop — category cleanup + talk pages
+
+| Script | Status | Description |
+|--------|--------|-------------|
 | `delete_unused_categories.py` | ACTIVE | Deletes Special:UnusedCategories pages; skips those with `{{Possibly empty category}}`. |
 | `normalize_category_pages.py` | ACTIVE | Enforces canonical category page layout: templates → interwikis → categories. |
 | `migrate_talk_pages.py` | ACTIVE | Rebuilds talk pages and seeds discussion content from ja/en/simple Wikipedia. |
