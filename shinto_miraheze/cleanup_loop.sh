@@ -81,12 +81,6 @@ python3 shinto_miraheze/triage_emmabot_categories.py --apply --max-edits "$EDIT_
 declare_stage "Core Loop: fix_double_redirects"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Core Loop: move_categories"
-python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-declare_stage "Core Loop: create_japanese_category_qid_redirects"
-python3 shinto_miraheze/create_japanese_category_qid_redirects.py
-
 # ============================================================
 # [Cleanup Loop] — category cleanup + talk pages
 # ============================================================
@@ -115,6 +109,21 @@ python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits 
 
 declare_stage "Cleanup Loop: remove_legacy_cat_templates"
 python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+# ============================================================
+# [Deprecated] — likely complete, kept as safety net
+# These are stateless and run after all stateful work + state commit.
+# ============================================================
+echo ""
+echo "========================================"
+echo "[Deprecated]"
+echo "========================================"
+
+declare_stage "Deprecated: move_categories"
+python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Deprecated: create_japanese_category_qid_redirects"
+python3 shinto_miraheze/create_japanese_category_qid_redirects.py
 
 # ============================================================
 # [Bookkeeping: END] — mark workflow INACTIVE

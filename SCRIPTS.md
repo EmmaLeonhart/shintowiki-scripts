@@ -37,8 +37,6 @@ Status codes:
 | `categorize_uncategorized_categories.py` | ACTIVE | Adds `[[Category:Categories autocreated by EmmaBot]]` to uncategorized category pages. |
 | `triage_emmabot_categories.py` | ACTIVE | Checks EmmaBot-autocreated categories against enwiki; sorts into with-enwiki / without-enwiki subcategories. |
 | `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects. |
-| `move_categories.py` | ACTIVE | Moves/renames categories per configured move list. |
-| `create_japanese_category_qid_redirects.py` | ACTIVE | Creates QID redirects for Japanese-named categories. |
 
 ### Cleanup Loop — category cleanup + talk pages
 
@@ -51,6 +49,13 @@ Status codes:
 | `remove_crud_categories.py` | ACTIVE | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories. |
 | `fix_erroneous_qid_category_links.py` | ACTIVE | Fixes category/QID mismatches flagged in Category:Erroneous_qid_category_links. |
 | `remove_legacy_cat_templates.py` | ACTIVE | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages. |
+
+### Deprecated — likely complete, kept as safety net
+
+| Script | Status | Description |
+|--------|--------|-------------|
+| `move_categories.py` | DEPRECATED | Moves/renames categories per configured move list. Likely all moves complete. |
+| `create_japanese_category_qid_redirects.py` | DEPRECATED | Creates QID redirects for Japanese-named categories. Likely all redirects created. |
 
 ## shinto_miraheze/ — manual-use / not in loop
 
