@@ -81,6 +81,9 @@ python3 shinto_miraheze/triage_emmabot_categories.py --apply --max-edits "$EDIT_
 declare_stage "Core Loop: triage_emmabot_categories_jawiki"
 python3 shinto_miraheze/triage_emmabot_categories_jawiki.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: triage_emmabot_categories_secondary"
+python3 shinto_miraheze/triage_emmabot_categories_secondary.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 declare_stage "Core Loop: delete_unused_templates"
 python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
