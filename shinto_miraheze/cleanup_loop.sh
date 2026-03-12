@@ -45,10 +45,34 @@ esac
 RUN_TAG="[[github:${RUN_PATH}|${CAUSE_TEXT}]]"
 echo "Run tag: ${RUN_TAG}"
 
-python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}"
+# ============================================================
+# [Bookkeeping: START] — mark workflow ACTIVE
+# ============================================================
+echo ""
+echo "========================================"
+echo "[Bookkeeping: START]"
+echo "========================================"
+python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status active
+
+# ============================================================
+# [Core Loop] — structural changes that later scripts depend on
+# ============================================================
+echo ""
+echo "========================================"
+echo "[Core Loop]"
+echo "========================================"
+python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/create_japanese_category_qid_redirects.py
+
+# ============================================================
+# [Cleanup Loop] — category cleanup + talk pages
+# ============================================================
+echo ""
+echo "========================================"
+echo "[Cleanup Loop]"
+echo "========================================"
 python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -56,3 +80,12 @@ python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+# ============================================================
+# [Bookkeeping: END] — mark workflow INACTIVE
+# ============================================================
+echo ""
+echo "========================================"
+echo "[Bookkeeping: END]"
+echo "========================================"
+python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status inactive

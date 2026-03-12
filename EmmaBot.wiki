@@ -27,3 +27,4 @@ See [[User:EmmaBot]] for current tasks being done cleaning up this wiki.
 
 * normalization of template categories
 * fix [[:Category:Erroneous qid category links]]
+* enrich [[:Category:Categories autocreated by EmmaBot]]

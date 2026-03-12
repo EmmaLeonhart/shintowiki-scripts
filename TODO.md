@@ -12,6 +12,16 @@ The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) 
 
 These run automatically every 24 hours via GitHub Actions. No manual action needed unless something breaks.
 
+**Bookkeeping** (start & end of loop):
+- **Bot userpage status** — `update_bot_userpage_status.py`: marks workflow active at start, inactive at end, and updates `User:EmmaBot` with run metadata.
+
+**Core Loop** (structural changes that later scripts depend on):
+- **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
+- **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
+- **Category moves** — `move_categories.py`: moves/renames categories per configured move list.
+- **Japanese category QID redirects** — `create_japanese_category_qid_redirects.py`: creates QID redirects for Japanese-named categories.
+
+**Cleanup Loop** (category cleanup + talk pages):
 - **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
 - **Category page normalization** — `normalize_category_pages.py`: enforces the canonical templates / interwikis / categories layout on every category page.
 - **Talk page migration** — `migrate_talk_pages.py`: rebuilds talk pages and seeds them with discussion content from ja/en/simple Wikipedia. State file: `shinto_miraheze/migrate_talk_pages.state`.
@@ -23,6 +33,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 ### Requires manual intervention
 
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
+- [ ] **Enrich autocreated categories** — Write a script to add meaningful content (interwikis, wikidata links, parent categories) to pages in `Category:Categories autocreated by EmmaBot` that were created as stubs.
 
 ---
 

@@ -49,7 +49,7 @@ def summarize_trigger(event_name, event):
     return event_name or "unknown"
 
 
-def build_status_block():
+def build_status_block(workflow_status=None):
     event_name = os.getenv("GITHUB_EVENT_NAME", "local")
     event = load_event_data()
     now_utc = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
@@ -63,9 +63,13 @@ def build_status_block():
     lines = [
         START_MARKER,
         "== Bot run status ==",
+    ]
+    if workflow_status:
+        lines.append(f"* Workflow status: '''{workflow_status}'''")
+    lines.extend([
         f"* Last pipeline start (UTC): {now_utc}",
         f"* Trigger: {trigger_summary}",
-    ]
+    ])
     if run_url:
         lines.append(f"* Workflow run: {run_url}")
     lines.append(END_MARKER)
@@ -135,6 +139,8 @@ def merge_base_and_immediate(base_text, immediate_text):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
+    parser.add_argument("--status", choices=["active", "inactive"], default=None,
+                        help="Set workflow status to active or inactive.")
     args = parser.parse_args()
 
     if not PASSWORD:
@@ -154,11 +160,12 @@ def main():
     )
     site.login(USERNAME, PASSWORD)
 
-    status_block = build_status_block()
+    status_block = build_status_block(workflow_status=args.status)
     new_text = merge_base_and_status(page_text_with_immediate, status_block)
     page = site.pages[STATUS_PAGE]
-    page.save(new_text, summary=f"Bot: update pipeline run status {args.run_tag}")
-    print(f"Updated {STATUS_PAGE}")
+    status_label = f" ({args.status})" if args.status else ""
+    page.save(new_text, summary=f"Bot: update pipeline run status{status_label} {args.run_tag}")
+    print(f"Updated {STATUS_PAGE}{status_label}")
 
 
 if __name__ == "__main__":
