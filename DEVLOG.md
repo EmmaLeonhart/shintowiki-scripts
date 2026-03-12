@@ -14,6 +14,20 @@ Added `categorize_uncategorized_categories.py` to the core loop. Fetches `Specia
 
 Many category pages were created in earlier bulk workflows (consolidation, QID redirects, etc.) without any categorization. This retroactively fixes that by bringing them under the `Categories autocreated by EmmaBot` umbrella — the same category used by `create_wanted_categories.py` for newly created stubs.
 
+### Per-script stage declarations on User:EmmaBot
+**Scripts:** `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/update_bot_userpage_status.py`
+**Status:** Complete
+
+Added `--stage` flag to `update_bot_userpage_status.py`. When used alone (without `--status`), it performs a lightweight in-place edit of the status block on `User:EmmaBot` to update only the "Current stage" line — no full page rebuild from template.
+
+The cleanup loop now calls `declare_stage` before every script invocation, so `User:EmmaBot` always shows exactly which script is currently running (e.g. "Core Loop: create_wanted_categories", "Cleanup Loop: migrate_talk_pages"). This makes it trivial to identify where the pipeline stalls.
+
+### Uncategorized category fixer added to core loop
+**Script:** `shinto_miraheze/categorize_uncategorized_categories.py`
+**Status:** Complete (pipeline integration)
+
+Added `categorize_uncategorized_categories.py` to the core loop. Fetches `Special:UncategorizedCategories` via the querypage API and appends `[[Category:Categories autocreated by EmmaBot]]` to each page that has no category membership. Many category pages were created in earlier bulk workflows without proper categorization — this retroactively fixes them under the same umbrella category used by `create_wanted_categories.py`.
+
 ### Run tag interwiki prefix fixed
 **Script:** `shinto_miraheze/cleanup_loop.sh`
 **Status:** Complete

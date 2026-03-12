@@ -45,6 +45,13 @@ esac
 RUN_TAG="[[github:${RUN_PATH}|${CAUSE_TEXT}]]"
 echo "Run tag: ${RUN_TAG}"
 
+# Helper: update User:EmmaBot with the current stage name.
+# This is a lightweight wiki edit so we can tell from the bot page
+# exactly which script is running at any point in time.
+declare_stage() {
+  python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --stage "$1"
+}
+
 # ============================================================
 # [Bookkeeping: START] — mark workflow ACTIVE
 # ============================================================
@@ -52,7 +59,7 @@ echo ""
 echo "========================================"
 echo "[Bookkeeping: START]"
 echo "========================================"
-python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status active
+python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status active --stage "Bookkeeping: START"
 
 # ============================================================
 # [Core Loop] — structural changes that later scripts depend on
@@ -61,10 +68,20 @@ echo ""
 echo "========================================"
 echo "[Core Loop]"
 echo "========================================"
+
+declare_stage "Core Loop: create_wanted_categories"
 python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Core Loop: categorize_uncategorized_categories"
 python3 shinto_miraheze/categorize_uncategorized_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Core Loop: fix_double_redirects"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Core Loop: move_categories"
 python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Core Loop: create_japanese_category_qid_redirects"
 python3 shinto_miraheze/create_japanese_category_qid_redirects.py
 
 # ============================================================
@@ -74,12 +91,26 @@ echo ""
 echo "========================================"
 echo "[Cleanup Loop]"
 echo "========================================"
+
+declare_stage "Cleanup Loop: delete_unused_categories"
 python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: normalize_category_pages"
 python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: migrate_talk_pages"
 python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: tag_shikinaisha_talk_pages"
 python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: remove_crud_categories"
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: fix_erroneous_qid_category_links"
 python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Cleanup Loop: remove_legacy_cat_templates"
 python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
 # ============================================================
@@ -89,4 +120,4 @@ echo ""
 echo "========================================"
 echo "[Bookkeeping: END]"
 echo "========================================"
-python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status inactive
+python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --status inactive --stage "Complete"

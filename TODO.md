@@ -34,6 +34,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 ### Requires manual intervention
 
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
+- [ ] **Figure out what to do with `[[Category:Need translation]]`** — assess scope, decide whether to automate or manually review members.
 - [ ] **Enrich autocreated categories** — Write a script to add meaningful content (interwikis, wikidata links, parent categories) to pages in `Category:Categories autocreated by EmmaBot` that were created as stubs.
 
 ---

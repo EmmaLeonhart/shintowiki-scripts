@@ -49,7 +49,7 @@ def summarize_trigger(event_name, event):
     return event_name or "unknown"
 
 
-def build_status_block(workflow_status=None):
+def build_status_block(workflow_status=None, stage=None):
     event_name = os.getenv("GITHUB_EVENT_NAME", "local")
     event = load_event_data()
     now_utc = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
@@ -66,6 +66,8 @@ def build_status_block(workflow_status=None):
     ]
     if workflow_status:
         lines.append(f"* Workflow status: '''{workflow_status}'''")
+    if stage:
+        lines.append(f"* Current stage: '''{stage}'''")
     lines.extend([
         f"* Last pipeline start (UTC): {now_utc}",
         f"* Trigger: {trigger_summary}",
@@ -136,22 +138,50 @@ def merge_base_and_immediate(base_text, immediate_text):
     return merged + "\n"
 
 
+def update_stage_only(site, stage_text, run_tag):
+    """Lightweight update: only replace the status block on the live wiki page."""
+    page = site.pages[STATUS_PAGE]
+    current = page.text()
+    if START_MARKER not in current or END_MARKER not in current:
+        print("WARNING: status markers not found on wiki page; skipping stage update.")
+        return
+
+    before = current.split(START_MARKER, 1)[0].rstrip()
+    after = current.split(END_MARKER, 1)[1].lstrip()
+
+    # Rebuild the status block but keep most lines, just insert/replace the stage line
+    old_block = current.split(START_MARKER, 1)[1].split(END_MARKER, 1)[0]
+    new_lines = []
+    stage_added = False
+    for line in old_block.splitlines():
+        if line.startswith("* Current stage:"):
+            continue  # drop old stage line
+        new_lines.append(line)
+        if line.startswith("* Workflow status:") and not stage_added:
+            new_lines.append(f"* Current stage: '''{stage_text}'''")
+            stage_added = True
+
+    # If there was no workflow status line, append stage at end
+    if not stage_added:
+        new_lines.append(f"* Current stage: '''{stage_text}'''")
+
+    new_block = "\n".join(new_lines)
+    merged = f"{before}\n{START_MARKER}{new_block}{END_MARKER}\n\n{after}".strip() + "\n"
+    page.save(merged, summary=f"Bot: stage → {stage_text} {run_tag}")
+    print(f"Updated stage: {stage_text}")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-tag", required=True, help="Wiki-formatted run tag link for edit summaries.")
     parser.add_argument("--status", choices=["active", "inactive"], default=None,
                         help="Set workflow status to active or inactive.")
+    parser.add_argument("--stage", default=None,
+                        help="Lightweight update: set current stage on the wiki page without rebuilding.")
     args = parser.parse_args()
 
     if not PASSWORD:
         raise RuntimeError("WIKI_PASSWORD must be set")
-
-    base_path = Path(BASE_PAGE_PATH)
-    if not base_path.exists():
-        raise FileNotFoundError(f"Template page file not found: {base_path}")
-    base_text = base_path.read_text(encoding="utf-8")
-    immediate_text = extract_immediate_items_from_todo(TODO_PATH)
-    page_text_with_immediate = merge_base_and_immediate(base_text, immediate_text)
 
     site = mwclient.Site(
         WIKI_URL,
@@ -160,7 +190,19 @@ def main():
     )
     site.login(USERNAME, PASSWORD)
 
-    status_block = build_status_block(workflow_status=args.status)
+    # Lightweight stage-only update — skip the full page rebuild
+    if args.stage and not args.status:
+        update_stage_only(site, args.stage, args.run_tag)
+        return
+
+    base_path = Path(BASE_PAGE_PATH)
+    if not base_path.exists():
+        raise FileNotFoundError(f"Template page file not found: {base_path}")
+    base_text = base_path.read_text(encoding="utf-8")
+    immediate_text = extract_immediate_items_from_todo(TODO_PATH)
+    page_text_with_immediate = merge_base_and_immediate(base_text, immediate_text)
+
+    status_block = build_status_block(workflow_status=args.status, stage=args.stage)
     new_text = merge_base_and_status(page_text_with_immediate, status_block)
     page = site.pages[STATUS_PAGE]
     status_label = f" ({args.status})" if args.status else ""
