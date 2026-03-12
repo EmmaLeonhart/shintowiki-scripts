@@ -37,6 +37,7 @@ Status codes:
 | `categorize_uncategorized_categories.py` | ACTIVE | Adds `[[Category:Categories autocreated by EmmaBot]]` to uncategorized category pages. |
 | `triage_emmabot_categories.py` | ACTIVE | Checks EmmaBot-autocreated categories against enwiki; sorts into with-enwiki / without-enwiki subcategories. |
 | `triage_emmabot_categories_jawiki.py` | ACTIVE | Second pass: checks without-enwiki categories against jawiki; sorts into with-jawiki / without-either subcategories. |
+| `delete_unused_templates.py` | ACTIVE | Deletes template pages from Special:UnusedTemplates. |
 | `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects. |
 
 ### Cleanup Loop — category cleanup + talk pages
