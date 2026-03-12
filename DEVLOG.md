@@ -6,6 +6,12 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-03-12
 
+### Run tag interwiki prefix fixed
+**Script:** `shinto_miraheze/cleanup_loop.sh`
+**Status:** Complete
+
+Changed edit summary run tags from `[[git:...]]` to `[[github:...]]` to match the wiki's actual interwiki prefix configuration.
+
 ### Cleanup loop restructured into Core Loop + Cleanup Loop
 **Scripts/Workflow:** `shinto_miraheze/cleanup_loop.sh`, `shinto_miraheze/create_wanted_categories.py`, `shinto_miraheze/update_bot_userpage_status.py`
 **Status:** Complete
@@ -34,6 +40,50 @@ The parent category was changed from `[[Category:Categories made during git cons
 **Status:** Complete
 
 Added `--status active|inactive` flag. When set, the status block on `User:EmmaBot` includes a `Workflow status: '''active'''` or `'''inactive'''` line. Called at both start and end of the cleanup loop to show whether the bot is currently running.
+
+---
+
+## 2026-03-01
+
+### Double redirect fixer added to cleanup loop
+**Script:** `shinto_miraheze/fix_double_redirects.py`
+**Status:** Complete (pipeline integration)
+
+Added `fix_double_redirects.py` to the cleanup loop as the first cleanup step. Queries `Special:DoubleRedirects` and updates each redirect to point directly to the final target, eliminating intermediate hops. Runs before all other cleanup scripts so downstream steps see correct redirect targets.
+
+---
+
+## 2026-02-28
+
+### Category move script and Japanese→English translations
+**Scripts:** `shinto_miraheze/move_categories.py`, `shinto_miraheze/category_moves.csv`
+**Status:** Complete (pipeline integration)
+
+Added `move_categories.py` which reads a CSV of (source, destination) category pairs and performs moves: recategorizes all members then moves the category page. Skips sources that are already redirects or have `{{category move error}}`; tags conflicts where both source and destination already exist.
+
+Added `category_moves.csv` with ~295 Japanese→English category translations covering:
+- Building and history categories for various Japanese municipalities
+- Japanese cultural and historical categories (shrines, temples, ancient relations)
+- Taiwan-related historical and cultural categories
+- Year/century-based categories, regional categories, template categories, WikiProject categories
+
+### Japanese category QID redirect script added to cleanup loop
+**Script:** `shinto_miraheze/create_japanese_category_qid_redirects.py`
+**Status:** Complete (pipeline integration)
+
+Added `create_japanese_category_qid_redirects.py` to handle a race condition where Japanese-named categories may not have proper QID redirects. For every category in `[[Category:Japanese language category names]]` with `{{wikidata link|Q...}}`: creates `Q{QID}` mainspace redirects, and handles duplicate QIDs by creating disambiguation pages tagged with `[[Category:double category qids]]`. Runs in the cleanup loop immediately after `move_categories.py`.
+
+---
+
+## 2026-02-27
+
+### Legacy category template remover added to cleanup loop
+**Script:** `shinto_miraheze/remove_legacy_cat_templates.py`
+**Status:** Complete (pipeline integration)
+
+Added `remove_legacy_cat_templates.py` to the cleanup loop. Strips `{{デフォルトソート:…}}` and `{{citation needed|…}}` artifacts from Category: namespace pages, with state file resumability and standard `--apply`/`--max-edits`/`--run-tag` interface.
+
+Also fixed run-tag format in the same commit: switched from external link syntax `[https://... text]` to interwiki syntax `[[git:path|text]]` so edit summary links render correctly on the wiki.
 
 ---
 
