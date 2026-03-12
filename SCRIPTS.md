@@ -44,17 +44,17 @@ Status codes:
 | Script | Status | Description |
 |--------|--------|-------------|
 | `delete_unused_categories.py` | ACTIVE | Deletes Special:UnusedCategories pages; skips those with `{{Possibly empty category}}`. |
-| `normalize_category_pages.py` | ACTIVE | Enforces canonical category page layout: templates → interwikis → categories. |
 | `migrate_talk_pages.py` | ACTIVE | Rebuilds talk pages and seeds discussion content from ja/en/simple Wikipedia. |
-| `tag_shikinaisha_talk_pages.py` | ACTIVE | Adds "generated from Wikidata" notice to shikinaisha talk pages. |
 | `remove_crud_categories.py` | ACTIVE | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories. |
-| `fix_erroneous_qid_category_links.py` | ACTIVE | Fixes category/QID mismatches flagged in Category:Erroneous_qid_category_links. |
-| `remove_legacy_cat_templates.py` | ACTIVE | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages. |
 
 ### Deprecated — likely complete, kept as safety net
 
 | Script | Status | Description |
 |--------|--------|-------------|
+| `normalize_category_pages.py` | DEPRECATED | Enforces canonical category page layout. State file unchanged since Mar 1. |
+| `tag_shikinaisha_talk_pages.py` | DEPRECATED | Adds "generated from Wikidata" notice to shikinaisha talk pages. State file unchanged since Feb 26. |
+| `fix_erroneous_qid_category_links.py` | DEPRECATED | Fixes category/QID mismatches. Category fully cleared as of Mar 12. |
+| `remove_legacy_cat_templates.py` | DEPRECATED | Removes legacy template artifacts from category pages. State file unchanged since Mar 1. |
 | `move_categories.py` | DEPRECATED | Moves/renames categories per configured move list. Likely all moves complete. |
 | `create_japanese_category_qid_redirects.py` | DEPRECATED | Creates QID redirects for Japanese-named categories. Likely all redirects created. |
 

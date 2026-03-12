@@ -95,23 +95,11 @@ echo "========================================"
 declare_stage "Cleanup Loop: delete_unused_categories"
 python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Cleanup Loop: normalize_category_pages"
-python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
 declare_stage "Cleanup Loop: migrate_talk_pages"
 python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Cleanup Loop: tag_shikinaisha_talk_pages"
-python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
 declare_stage "Cleanup Loop: remove_crud_categories"
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-declare_stage "Cleanup Loop: fix_erroneous_qid_category_links"
-python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-declare_stage "Cleanup Loop: remove_legacy_cat_templates"
-python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
 # ============================================================
 # [Deprecated] — likely complete, kept as safety net
@@ -121,6 +109,18 @@ echo ""
 echo "========================================"
 echo "[Deprecated]"
 echo "========================================"
+
+declare_stage "Deprecated: normalize_category_pages"
+python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Deprecated: tag_shikinaisha_talk_pages"
+python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Deprecated: fix_erroneous_qid_category_links"
+python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Deprecated: remove_legacy_cat_templates"
+python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
 declare_stage "Deprecated: move_categories"
 python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
