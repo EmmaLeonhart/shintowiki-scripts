@@ -62,6 +62,7 @@ echo "========================================"
 echo "[Core Loop]"
 echo "========================================"
 python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+python3 shinto_miraheze/categorize_uncategorized_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 python3 shinto_miraheze/create_japanese_category_qid_redirects.py
