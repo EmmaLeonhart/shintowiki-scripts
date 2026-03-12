@@ -78,6 +78,9 @@ python3 shinto_miraheze/categorize_uncategorized_categories.py --apply --max-edi
 declare_stage "Core Loop: triage_emmabot_categories"
 python3 shinto_miraheze/triage_emmabot_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: triage_emmabot_categories_jawiki"
+python3 shinto_miraheze/triage_emmabot_categories_jawiki.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 declare_stage "Core Loop: fix_double_redirects"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 

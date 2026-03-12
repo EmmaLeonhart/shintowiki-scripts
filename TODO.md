@@ -18,7 +18,8 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 **Core Loop** (structural changes that later scripts depend on):
 - **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
 - **Uncategorized category fix** — `categorize_uncategorized_categories.py`: adds `[[Category:Categories autocreated by EmmaBot]]` to category pages from Special:UncategorizedCategories that were created in earlier bulk workflows without proper categorization.
-- **EmmaBot category triage** — `triage_emmabot_categories.py`: checks autocreated categories against enwiki; moves to `[[Category:Emmabot categories with enwiki]]` or `[[Category:Emmabot categories without enwiki]]` (100 per run).
+- **EmmaBot category triage (enwiki)** — `triage_emmabot_categories.py`: checks autocreated categories against enwiki; moves to `[[Category:Emmabot categories with enwiki]]` or `[[Category:Emmabot categories without enwiki]]` (100 per run).
+- **EmmaBot category triage (jawiki)** — `triage_emmabot_categories_jawiki.py`: second pass on without-enwiki categories; checks jawiki; moves to `[[Category:Emmabot categories with jawiki]]` or `[[Category:Emmabot categories without enwiki or jawiki]]` (100 per run).
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
 - **Category moves** — `move_categories.py`: moves/renames categories per configured move list.
 - **Japanese category QID redirects** — `create_japanese_category_qid_redirects.py`: creates QID redirects for Japanese-named categories.
