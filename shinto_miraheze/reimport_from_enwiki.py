@@ -157,12 +157,12 @@ def main():
         help="Actually import (default is dry-run).",
     )
     parser.add_argument(
-        "--max-imports", type=int, default=1,
-        help="Max successful imports per run (default 1).",
+        "--max-imports", type=int, default=10,
+        help="Max successful imports per run (default 10).",
     )
     parser.add_argument(
         "--max-errors", type=int, default=10,
-        help="Bail after this many consecutive errors (default 10).",
+        help="Bail if this many errors with zero successes (default 10).",
     )
     parser.add_argument(
         "--pages-file", default=DEFAULT_PAGES_FILE,
@@ -200,7 +200,6 @@ def main():
     print(f"Logged in as {USERNAME}\n")
 
     imported = skipped = errors = 0
-    consecutive_errors = 0
     checked = 0
 
     for title in pending:
@@ -208,8 +207,8 @@ def main():
             print(f"Reached max imports ({args.max_imports}); stopping.")
             break
 
-        if consecutive_errors >= args.max_errors:
-            print(f"Reached {args.max_errors} consecutive errors; bailing.")
+        if imported == 0 and errors >= args.max_errors:
+            print(f"Reached {args.max_errors} errors with zero successes; bailing.")
             break
 
         checked += 1
@@ -242,7 +241,6 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR downloading: {e}")
             errors += 1
-            consecutive_errors += 1
             continue
 
         # Mangle timestamps
@@ -263,13 +261,11 @@ def main():
             if len(import_pages) > 5:
                 print(f"    ... and {len(import_pages) - 5} more")
             imported += 1
-            consecutive_errors = 0
             append_state(args.state_file, title)
             time.sleep(THROTTLE)
         except Exception as e:
             print(f"{prefix} ERROR importing: {e}")
             errors += 1
-            consecutive_errors += 1
 
     print("\n" + "=" * 60)
     print(f"Checked:  {checked}")

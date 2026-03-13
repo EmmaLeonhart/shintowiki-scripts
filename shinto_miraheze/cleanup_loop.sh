@@ -70,7 +70,7 @@ echo "[Core Loop]"
 echo "========================================"
 
 declare_stage "Core Loop: reimport_from_enwiki"
-python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 1 --run-tag "${RUN_TAG}"
+python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 10 --run-tag "${RUN_TAG}"
 
 declare_stage "Core Loop: create_wanted_categories"
 python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
