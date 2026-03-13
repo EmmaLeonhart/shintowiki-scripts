@@ -158,7 +158,11 @@ def main():
     )
     parser.add_argument(
         "--max-imports", type=int, default=1,
-        help="Max pages to import per run (default 1).",
+        help="Max successful imports per run (default 1).",
+    )
+    parser.add_argument(
+        "--max-errors", type=int, default=10,
+        help="Bail after this many consecutive errors (default 10).",
     )
     parser.add_argument(
         "--pages-file", default=DEFAULT_PAGES_FILE,
@@ -196,15 +200,20 @@ def main():
     print(f"Logged in as {USERNAME}\n")
 
     imported = skipped = errors = 0
-    attempted = 0
+    consecutive_errors = 0
+    checked = 0
 
     for title in pending:
-        if args.max_imports and attempted >= args.max_imports:
-            print(f"Reached max attempts ({args.max_imports}); stopping.")
+        if args.max_imports and imported >= args.max_imports:
+            print(f"Reached max imports ({args.max_imports}); stopping.")
             break
 
-        attempted += 1
-        prefix = f"[{attempted}] {title}"
+        if consecutive_errors >= args.max_errors:
+            print(f"Reached {args.max_errors} consecutive errors; bailing.")
+            break
+
+        checked += 1
+        prefix = f"[{checked}] {title}"
 
         # Download from enwiki
         try:
@@ -233,6 +242,7 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR downloading: {e}")
             errors += 1
+            consecutive_errors += 1
             continue
 
         # Mangle timestamps
@@ -253,13 +263,16 @@ def main():
             if len(import_pages) > 5:
                 print(f"    ... and {len(import_pages) - 5} more")
             imported += 1
+            consecutive_errors = 0
             append_state(args.state_file, title)
             time.sleep(THROTTLE)
         except Exception as e:
             print(f"{prefix} ERROR importing: {e}")
             errors += 1
+            consecutive_errors += 1
 
     print("\n" + "=" * 60)
+    print(f"Checked:  {checked}")
     print(f"Imported: {imported}")
     print(f"Skipped:  {skipped}")
     print(f"Errors:   {errors}")
