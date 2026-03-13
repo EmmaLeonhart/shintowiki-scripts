@@ -151,7 +151,8 @@
       "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 23018043084)",
       "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh api repos/EmmaLeonhart/shintowiki-scripts/actions/jobs/66846583260 --jq '.steps[] | \"\\\\\\(.status\\) \\\\\\(.conclusion // \"running\"\\) \\\\\\(.name\\)\"')",
       "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 22982016256 --jq '.run_started_at + \" -> \" + .updated_at')",
-      "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 22982016256 --json createdAt,updatedAt --jq '\"\\\\\\(.createdAt\\) -> \\\\\\(.updatedAt\\)\"')"
+      "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 22982016256 --json createdAt,updatedAt --jq '\"\\\\\\(.createdAt\\) -> \\\\\\(.updatedAt\\)\"')",
+      "Bash(gh run:*)"
     ],
     "deny": [],
     "ask": []
