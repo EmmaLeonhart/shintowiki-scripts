@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-13
+
+### Orphaned talk page deletion added to cleanup loop
+**Script:** `shinto_miraheze/delete_orphaned_talk_pages.py`
+**Status:** Complete (pipeline integration)
+
+Added `delete_orphaned_talk_pages.py` to the cleanup loop. Queries `Special:OrphanedTalkPages` via the querypage API and deletes talk pages whose corresponding subject page does not exist. 500+ orphaned talk pages identified at time of addition. Runs after `delete_unused_categories.py` and before `remove_crud_categories.py`.
+
+### Enwiki XML reimport workflow automated
+**Script:** `shinto_miraheze/reimport_from_enwiki.py`
+**Status:** Complete (pipeline integration, bug fixed)
+
+Automated the long-standing manual workflow of reimporting pages from enwiki to fix erroneous transclusions. The script:
+1. Reads page titles from `erroneous_transclusion_pages.txt` (129 pages extracted from `[[Category:Erroneous transclusions of X]]` categories)
+2. Downloads XML via enwiki `Special:Export` with `templates=1` and `curonly=1` (pulls full dependency tree)
+3. Replaces `timestamp` with `timestam` in the XML to force overwrite regardless of local revision age
+4. Imports into shintowiki via `action=import` with `interwikiprefix=en`
+
+Processes 1 page per pipeline run (low priority, high cost operation). Runs as the first step of the Core Loop. Auto-retries non-namespaced titles with `Template:` prefix (e.g., "Country data X" → "Template:Country data X").
+
+**Bug fix:** First pipeline run failed on all 129 pages — MediaWiki requires the `interwikiprefix` parameter for XML imports. Also fixed the loop to count attempts (not just successes) against `--max-imports` so it stops after 1 attempt per run.
+
+**Historical context:** This workflow was originally performed manually and was one of the most important maintenance operations. Shintowiki was built by mass-importing templates/modules from enwiki. Categories were manually added to imported pages because of a Miraheze indexing quirk (imported pages had non-functioning categories until one was added manually). This caused crud categories to leak onto templates, modules, and structural pages, breaking template dependency chains in hard-to-diagnose ways. The indexing quirk has since been fixed on Miraheze, but the damage remains and needs cleanup.
+
+### Secondary category triage added to core loop
+**Script:** `shinto_miraheze/triage_emmabot_categories_secondary.py`
+**Status:** Complete (pipeline integration)
+
+Added `triage_emmabot_categories_secondary.py` as a third pass in the category triage pipeline, after the enwiki and jawiki passes. Handles remaining categories in `[[Category:EmmaBot categories without enwiki or jawiki match]]` using additional heuristics.
+
+---
+
 ## 2026-03-12
 
 ### Uncategorized category fixer added to core loop

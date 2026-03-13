@@ -16,22 +16,20 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Bot userpage status** — `update_bot_userpage_status.py`: marks workflow active at start, inactive at end, and updates `User:EmmaBot` with run metadata.
 
 **Core Loop** (structural changes that later scripts depend on):
+- **Enwiki XML reimport** — `reimport_from_enwiki.py`: downloads XML export from enwiki (with templates, current revision) and reimports into shintowiki with mangled timestamps to force overwrite. Fixes erroneous transclusions by pulling the full dependency tree. Processes 1 page per run from `erroneous_transclusion_pages.txt`.
 - **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
 - **Uncategorized category fix** — `categorize_uncategorized_categories.py`: adds `[[Category:Categories autocreated by EmmaBot]]` to category pages from Special:UncategorizedCategories that were created in earlier bulk workflows without proper categorization.
 - **EmmaBot category triage (enwiki)** — `triage_emmabot_categories.py`: checks autocreated categories against enwiki; moves to `[[Category:Emmabot categories with enwiki]]` or `[[Category:Emmabot categories without enwiki]]` (100 per run).
 - **EmmaBot category triage (jawiki)** — `triage_emmabot_categories_jawiki.py`: second pass on without-enwiki categories; checks jawiki; moves to `[[Category:Emmabot categories with jawiki]]` or `[[Category:Emmabot categories without enwiki or jawiki]]` (100 per run).
+- **EmmaBot category triage (secondary)** — `triage_emmabot_categories_secondary.py`: third pass on remaining categories using additional heuristics.
+- **Unused template deletion** — `delete_unused_templates.py`: deletes template pages from Special:UnusedTemplates.
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
-- **Category moves** — `move_categories.py`: moves/renames categories per configured move list.
-- **Japanese category QID redirects** — `create_japanese_category_qid_redirects.py`: creates QID redirects for Japanese-named categories.
 
 **Cleanup Loop** (category cleanup + talk pages):
 - **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
-- **Category page normalization** — `normalize_category_pages.py`: enforces the canonical templates / interwikis / categories layout on every category page.
+- **Orphaned talk page deletion** — `delete_orphaned_talk_pages.py`: deletes talk pages from Special:OrphanedTalkPages whose subject page does not exist.
 - **Talk page migration** — `migrate_talk_pages.py`: rebuilds talk pages and seeds them with discussion content from ja/en/simple Wikipedia. State file: `shinto_miraheze/migrate_talk_pages.state`.
-- **Shikinaisha talk page tagging** — `tag_shikinaisha_talk_pages.py`: adds a “generated from Wikidata” notice to talk pages of Wikidata-generated shikinaisha pages.
 - **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
-- **Erroneous QID category link fixes** — `fix_erroneous_qid_category_links.py`: corrects category/QID mismatches flagged in Category:Erroneous_qid_category_links. *(Category fully cleared as of 2026-03-12; script remains in loop as a safety net.)*
-- **Legacy template removal** — `remove_legacy_cat_templates.py`: removes `{{デフォルトソート:…}}` and `{{citation needed}}` artifacts from category pages.
 
 ### Requires manual intervention
 
