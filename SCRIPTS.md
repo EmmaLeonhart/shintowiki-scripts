@@ -47,6 +47,7 @@ Status codes:
 | Script | Status | Description |
 |--------|--------|-------------|
 | `delete_unused_categories.py` | ACTIVE | Deletes Special:UnusedCategories pages; skips those with `{{Possibly empty category}}`. |
+| `delete_orphaned_talk_pages.py` | ACTIVE | Deletes talk pages from Special:OrphanedTalkPages whose subject page does not exist. |
 | `migrate_talk_pages.py` | ACTIVE | Rebuilds talk pages and seeds discussion content from ja/en/simple Wikipedia. |
 | `remove_crud_categories.py` | ACTIVE | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories. |
 

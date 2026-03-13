@@ -107,6 +107,9 @@ python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$EDIT_LIMIT" 
 declare_stage "Cleanup Loop: migrate_talk_pages"
 python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Cleanup Loop: delete_orphaned_talk_pages"
+python3 shinto_miraheze/delete_orphaned_talk_pages.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 declare_stage "Cleanup Loop: remove_crud_categories"
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
