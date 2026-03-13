@@ -117,7 +117,7 @@ def mangle_timestamps(xml_text):
     return xml_text.replace("timestamp", "timestam")
 
 
-def import_xml(site, xml_text, summary=""):
+def import_xml(site, xml_text, summary="", interwiki_prefix="en"):
     """Import XML into the wiki via action=import."""
     # Get CSRF token
     token_result = site.api("query", meta="tokens", type="csrf")
@@ -125,6 +125,7 @@ def import_xml(site, xml_text, summary=""):
 
     import_data = {
         "action": "import",
+        "interwikiprefix": interwiki_prefix,
         "token": csrf_token,
         "format": "json",
     }
@@ -195,13 +196,15 @@ def main():
     print(f"Logged in as {USERNAME}\n")
 
     imported = skipped = errors = 0
+    attempted = 0
 
     for title in pending:
-        if args.max_imports and imported >= args.max_imports:
-            print(f"Reached max imports ({args.max_imports}); stopping.")
+        if args.max_imports and attempted >= args.max_imports:
+            print(f"Reached max attempts ({args.max_imports}); stopping.")
             break
 
-        prefix = f"[{imported + skipped + errors + 1}] {title}"
+        attempted += 1
+        prefix = f"[{attempted}] {title}"
 
         # Download from enwiki
         try:
