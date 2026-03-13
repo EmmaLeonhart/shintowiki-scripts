@@ -33,10 +33,12 @@ Status codes:
 
 | Script | Status | Description |
 |--------|--------|-------------|
+| `reimport_from_enwiki.py` | ACTIVE | Downloads XML export from enwiki (with templates, current revision) and reimports into shintowiki with mangled timestamps to force overwrite. Fixes erroneous transclusions by pulling the full dependency tree. Processes 1 page per run. Reads from `erroneous_transclusion_pages.txt`. See "Enwiki XML reimport workflow" below. |
 | `create_wanted_categories.py` | ACTIVE | Fetches Special:WantedCategories via API and creates stub pages for each. |
 | `categorize_uncategorized_categories.py` | ACTIVE | Adds `[[Category:Categories autocreated by EmmaBot]]` to uncategorized category pages. |
 | `triage_emmabot_categories.py` | ACTIVE | Checks EmmaBot-autocreated categories against enwiki; sorts into with-enwiki / without-enwiki subcategories. |
 | `triage_emmabot_categories_jawiki.py` | ACTIVE | Second pass: checks without-enwiki categories against jawiki; sorts into with-jawiki / without-either subcategories. |
+| `triage_emmabot_categories_secondary.py` | ACTIVE | Third pass: secondary triage for remaining uncategorized EmmaBot categories using additional heuristics. |
 | `delete_unused_templates.py` | ACTIVE | Deletes template pages from Special:UnusedTemplates. |
 | `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects. |
 
@@ -109,6 +111,37 @@ __pycache__/
 tmpclaude-*/
 desktop.ini
 ```
+
+---
+
+## Enwiki XML reimport workflow
+
+A long-standing workflow for fixing broken templates, modules, and pages on shintowiki by reimporting them from enwiki. This was historically one of the most important maintenance operations.
+
+**How it works:**
+1. Download the XML export of a page from enwiki via `Special:Export` with "include templates" enabled and "current revision only".
+2. Replace `timestamp` with `timestam` in the XML — this breaks the timestamp field so MediaWiki treats the import as having no timestamp. The import time becomes the revision timestamp, which forces an overwrite of the local revision even if it is newer than enwiki's.
+3. Import the modified XML into shintowiki via `action=import`.
+
+**Why this exists:**
+Shintowiki was originally built by mass-importing templates and modules from enwiki. During those imports, categories were manually added to imported pages because imported pages used to not have functioning categories until at least one category was added (due to a Miraheze indexing quirk that has since been fixed). This category-adding had unforeseen consequences: crud categories ended up on templates, modules, and other structural pages, and some template dependency chains broke in ways that were hard to diagnose. The reimport workflow fixes this by pulling the entire dependency tree of a page (the page itself plus all transcluded templates) fresh from enwiki and overwriting the local copies.
+
+**Why mangle timestamps:**
+Often the local shintowiki revision is technically "newer" than enwiki's (because of the manual category edits made after import). Without timestamp mangling, MediaWiki would refuse to overwrite the local revision. By breaking the timestamp field, the import always overwrites.
+
+**Current implementation:** `reimport_from_enwiki.py` reads from `erroneous_transclusion_pages.txt`, processes 1 page per pipeline run (low priority, high cost), and tracks completed pages in `reimport_from_enwiki.state`. It runs as the first step of the Core Loop.
+
+---
+
+## Category triage workflow
+
+EmmaBot-autocreated categories go through a multi-pass triage to determine their origin and relevance:
+
+1. **`triage_emmabot_categories.py`** — First pass: checks each category against enwiki. Categories that exist on enwiki are sorted into `[[Category:EmmaBot categories with enwiki match]]`; those without are sorted into `[[Category:EmmaBot categories without enwiki match]]`.
+2. **`triage_emmabot_categories_jawiki.py`** — Second pass: checks the "without enwiki match" categories against jawiki. Matches go to `[[Category:EmmaBot categories with jawiki match]]`; remaining go to `[[Category:EmmaBot categories without enwiki or jawiki match]]`.
+3. **`triage_emmabot_categories_secondary.py`** — Third pass: secondary triage for remaining categories using additional heuristics.
+
+This triage feeds into downstream cleanup decisions (e.g., whether to keep, merge, or delete a category).
 
 ---
 
