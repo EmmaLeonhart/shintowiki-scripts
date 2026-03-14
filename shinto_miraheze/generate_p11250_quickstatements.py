@@ -1,0 +1,357 @@
+#!/usr/bin/env python3
+"""
+generate_p11250_quickstatements.py
+===================================
+Walks pages in [[Category:Pages linked to Wikidata]] (including subcategories),
+extracts the QID from {{wikidata link|Q…}}, checks whether the Wikidata item
+already has P11250 (Miraheze article ID) pointing to shinto:<PAGENAME>, and if
+not, adds a QuickStatements line to [[QuickStatements/P11250]].
+
+Also cleans up: any QS lines on the wiki page for items that now have the
+correct P11250 are removed.
+
+* Processes up to --max-edits pages per run (default 100, stateful).
+* When the full category has been processed, the state file resets so the
+  next run starts a fresh sweep.
+
+Default mode is dry-run. Use --apply to actually edit the wiki page.
+"""
+
+import argparse
+import io
+import os
+import re
+import sys
+import time
+
+import mwclient
+import requests
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+# ─── CONFIG ─────────────────────────────────────────────────
+WIKI_URL = "shinto.miraheze.org"
+WIKI_PATH = "/w/"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "")
+THROTTLE = 1.5
+
+CATEGORY_NAME = "Pages linked to Wikidata"
+QS_PAGE_TITLE = "QuickStatements/P11250"
+STATE_FILE = os.path.join(os.path.dirname(__file__), "generate_p11250_quickstatements.state")
+
+WD_LINK_RE = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
+# Match QS lines like: Q12345|P11250|"shinto:Page Name"
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
+
+USER_AGENT = "ShintoBotP11250/1.0 (User:EmmaBot; shinto.miraheze.org)"
+
+QS_PAGE_HEADER = """\
+QuickStatements for syncing [https://www.wikidata.org/wiki/Property:P11250 P11250] (Miraheze article ID) to Wikidata.
+
+Each line below adds a <code>P11250</code> claim linking a Wikidata item to its corresponding page on [https://shinto.miraheze.org shinto.miraheze.org]. Lines are automatically added and removed by [[User:EmmaBot]].
+
+<pre>
+"""
+
+QS_PAGE_FOOTER = "</pre>"
+
+
+# ─── STATE ──────────────────────────────────────────────────
+
+def load_state(path):
+    done = set()
+    if not os.path.exists(path):
+        return done
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if s:
+                done.add(s)
+    return done
+
+
+def append_state(path, title):
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(title + "\n")
+
+
+def clear_state(path):
+    with open(path, "w", encoding="utf-8") as f:
+        pass
+
+
+# ─── HELPERS ────────────────────────────────────────────────
+
+def get_category_pages_recursive(site, category_name, visited_cats=None):
+    """Get mainspace pages in a category and all subcategories."""
+    if visited_cats is None:
+        visited_cats = set()
+
+    full_cat = f"Category:{category_name}"
+    if full_cat in visited_cats:
+        return []
+    visited_cats.add(full_cat)
+
+    pages = []
+
+    # Get pages (namespace 0)
+    params = {
+        "action": "query",
+        "list": "categorymembers",
+        "cmtitle": full_cat,
+        "cmlimit": 500,
+        "cmnamespace": 0,
+        "cmtype": "page",
+        "format": "json",
+    }
+    while True:
+        resp = requests.get(
+            f"https://{WIKI_URL}{WIKI_PATH}api.php",
+            params=params,
+            headers={"User-Agent": USER_AGENT},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        for m in data.get("query", {}).get("categorymembers", []):
+            pages.append(m["title"])
+        if "continue" not in data:
+            break
+        params["cmcontinue"] = data["continue"]["cmcontinue"]
+
+    # Get subcategories
+    params = {
+        "action": "query",
+        "list": "categorymembers",
+        "cmtitle": full_cat,
+        "cmlimit": 500,
+        "cmtype": "subcat",
+        "format": "json",
+    }
+    while True:
+        resp = requests.get(
+            f"https://{WIKI_URL}{WIKI_PATH}api.php",
+            params=params,
+            headers={"User-Agent": USER_AGENT},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        for m in data.get("query", {}).get("categorymembers", []):
+            subcat_name = m["title"]
+            if subcat_name.startswith("Category:"):
+                subcat_name = subcat_name[len("Category:"):]
+            pages.extend(get_category_pages_recursive(site, subcat_name, visited_cats))
+        if "continue" not in data:
+            break
+        params["cmcontinue"] = data["continue"]["cmcontinue"]
+
+    return pages
+
+
+def get_wikidata_p11250(qid):
+    """
+    Fetch P11250 values for a Wikidata item.
+    Returns a list of string values, or None on error.
+    """
+    try:
+        url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
+        resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=15)
+        resp.raise_for_status()
+        entity = resp.json().get("entities", {}).get(qid, {})
+        claims = entity.get("claims", {}).get("P11250", [])
+        values = []
+        for claim in claims:
+            dv = claim.get("mainsnak", {}).get("datavalue", {})
+            if dv.get("type") == "string":
+                values.append(dv["value"])
+        return values
+    except Exception as e:
+        print(f"   ! error fetching P11250 for {qid}: {e}")
+        return None
+
+
+def parse_qs_page(text):
+    """Parse existing QS page, return set of (qid, expected_value) tuples and non-QS lines."""
+    existing_qs = {}  # qid -> expected_value
+    header_lines = []
+    in_pre = False
+    found_pre = False
+
+    for line in text.split("\n"):
+        m = QS_LINE_RE.match(line.strip())
+        if m:
+            existing_qs[m.group(1)] = f"shinto:{m.group(2)}"
+        elif line.strip() == "<pre>":
+            in_pre = True
+            found_pre = True
+        elif line.strip() == "</pre>":
+            in_pre = False
+
+    return existing_qs
+
+
+# ─── MAIN ───────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--apply", action="store_true",
+                        help="Actually save the QuickStatements page (default is dry-run).")
+    parser.add_argument("--max-edits", type=int, default=100,
+                        help="Max pages to process per run (default 100).")
+    parser.add_argument("--run-tag", required=True,
+                        help="Wiki-formatted run tag link for edit summaries.")
+    args = parser.parse_args()
+
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
+                         clients_useragent=USER_AGENT)
+    site.login(USERNAME, PASSWORD)
+    print(f"Logged in as {USERNAME}")
+
+    # Load state
+    done = load_state(STATE_FILE)
+    print(f"State: {len(done)} pages already processed")
+
+    # Fetch category members (recursive)
+    print(f"Fetching [[Category:{CATEGORY_NAME}]] (including subcategories)...")
+    all_pages = get_category_pages_recursive(site, CATEGORY_NAME)
+    # Deduplicate while preserving order
+    seen = set()
+    unique_pages = []
+    for t in all_pages:
+        if t not in seen:
+            seen.add(t)
+            unique_pages.append(t)
+    all_pages = unique_pages
+    print(f"Found {len(all_pages)} unique pages total")
+
+    # Filter out already-processed
+    pending = [t for t in all_pages if t not in done]
+    print(f"Pending: {len(pending)} pages")
+
+    if not pending:
+        print("All pages processed — clearing state for next cycle.")
+        clear_state(STATE_FILE)
+        # Still do cleanup pass below
+        pending = []
+
+    batch = pending[: args.max_edits] if pending else []
+    if batch:
+        print(f"Processing batch of {len(batch)} pages\n")
+
+    # ─── Process batch ──────────────────────────────────────
+    new_qs = {}  # qid -> expected_value  (new lines to add)
+    skipped_no_template = 0
+    skipped_already_correct = 0
+    skipped_error = 0
+
+    for idx, title in enumerate(batch, 1):
+        print(f"{idx}/{len(batch)}  [[{title}]]")
+
+        try:
+            page = site.pages[title]
+            text = page.text()
+        except Exception as e:
+            print(f"   ! could not read page: {e}")
+            skipped_error += 1
+            append_state(STATE_FILE, title)
+            continue
+
+        m = WD_LINK_RE.search(text)
+        if not m:
+            print("   - no {{wikidata link}} template, skipping")
+            skipped_no_template += 1
+            append_state(STATE_FILE, title)
+            continue
+
+        qid = m.group(1)
+        expected_value = f"shinto:{title}"
+
+        p11250_values = get_wikidata_p11250(qid)
+        if p11250_values is None:
+            skipped_error += 1
+            continue
+
+        if expected_value in p11250_values:
+            print(f"   OK {qid} already has P11250={expected_value}")
+            skipped_already_correct += 1
+            append_state(STATE_FILE, title)
+            time.sleep(0.3)
+            continue
+
+        new_qs[qid] = expected_value
+        if p11250_values:
+            print(f"   + {qid} has P11250={p11250_values} but not {expected_value}")
+        else:
+            print(f"   + {qid} missing P11250 -> {expected_value}")
+
+        append_state(STATE_FILE, title)
+        time.sleep(0.3)
+
+    # ─── Reconcile QS page ──────────────────────────────────
+    print(f"\n{'='*50}")
+    print(f"Batch results:")
+    print(f"  New QuickStatements:    {len(new_qs)}")
+    print(f"  Already correct:        {skipped_already_correct}")
+    print(f"  No wikidata template:   {skipped_no_template}")
+    print(f"  Errors (will retry):    {skipped_error}")
+
+    # Read existing QS page
+    qs_page = site.pages[QS_PAGE_TITLE]
+    try:
+        existing_text = qs_page.text() if qs_page.exists else ""
+    except Exception:
+        existing_text = ""
+
+    existing_qs = parse_qs_page(existing_text)
+    print(f"\nExisting QS lines on wiki: {len(existing_qs)}")
+
+    # Merge: existing + new
+    merged = dict(existing_qs)
+    merged.update(new_qs)
+
+    # Cleanup pass: check existing QS lines — remove any that are now correct on Wikidata
+    removed = []
+    for qid, expected in list(existing_qs.items()):
+        if qid in new_qs:
+            continue  # just added, skip check
+        p11250_values = get_wikidata_p11250(qid)
+        if p11250_values is not None and expected in p11250_values:
+            print(f"   Removing {qid}|P11250|\"{expected}\" — already on Wikidata")
+            del merged[qid]
+            removed.append(qid)
+            time.sleep(0.3)
+
+    print(f"  Removed (now on Wikidata): {len(removed)}")
+    print(f"  Final QS line count:       {len(merged)}")
+
+    # Build page
+    qs_lines = []
+    for qid in sorted(merged.keys()):
+        qs_lines.append(f'{qid}|P11250|"{merged[qid]}"')
+
+    new_page_text = QS_PAGE_HEADER + "\n".join(qs_lines) + "\n" + QS_PAGE_FOOTER + "\n"
+
+    if new_page_text.rstrip() == existing_text.rstrip():
+        print("\nNo changes to QS page.")
+        return
+
+    if args.apply:
+        try:
+            qs_page.save(new_page_text,
+                         summary=f"Bot: update P11250 QuickStatements (+{len(new_qs)} -{len(removed)}) {args.run_tag}")
+            print(f"\nSaved [[{QS_PAGE_TITLE}]] ({len(merged)} total lines)")
+            time.sleep(THROTTLE)
+        except Exception as e:
+            print(f"\n! Failed to save [[{QS_PAGE_TITLE}]]: {e}")
+    else:
+        print(f"\nDRY RUN — would save [[{QS_PAGE_TITLE}]] ({len(merged)} lines):")
+        for line in qs_lines[:10]:
+            print(f"  {line}")
+        if len(qs_lines) > 10:
+            print(f"  ... and {len(qs_lines) - 10} more")
+
+
+if __name__ == "__main__":
+    main()

@@ -93,6 +93,9 @@ python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$EDIT_LIMIT" -
 declare_stage "Core Loop: fix_double_redirects"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: generate_p11250_quickstatements"
+python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 # ============================================================
 # [Cleanup Loop] — category cleanup + talk pages
 # ============================================================
