@@ -26,6 +26,8 @@ import time
 
 import mwclient
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -45,6 +47,16 @@ WD_LINK_RE = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
 
 USER_AGENT = "ShintoBotP11250/1.0 (User:EmmaBot; shinto.miraheze.org)"
+
+# Retry session for transient network errors (502, 503, 504, timeouts)
+_retry_strategy = Retry(
+    total=5,
+    backoff_factor=2,
+    status_forcelist=[429, 500, 502, 503, 504],
+)
+_http = requests.Session()
+_http.mount("https://", HTTPAdapter(max_retries=_retry_strategy))
+_http.mount("http://", HTTPAdapter(max_retries=_retry_strategy))
 
 QS_PAGE_HEADER = """\
 QuickStatements for syncing [https://www.wikidata.org/wiki/Property:P11250 P11250] (Miraheze article ID) to Wikidata.
@@ -106,11 +118,11 @@ def get_category_pages_recursive(site, category_name, visited_cats=None):
         "format": "json",
     }
     while True:
-        resp = requests.get(
+        resp = _http.get(
             f"https://{WIKI_URL}{WIKI_PATH}api.php",
             params=params,
             headers={"User-Agent": USER_AGENT},
-            timeout=15,
+            timeout=30,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -130,11 +142,11 @@ def get_category_pages_recursive(site, category_name, visited_cats=None):
         "format": "json",
     }
     while True:
-        resp = requests.get(
+        resp = _http.get(
             f"https://{WIKI_URL}{WIKI_PATH}api.php",
             params=params,
             headers={"User-Agent": USER_AGENT},
-            timeout=15,
+            timeout=30,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -157,7 +169,7 @@ def get_wikidata_p11250(qid):
     """
     try:
         url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
-        resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=15)
+        resp = _http.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
         resp.raise_for_status()
         entity = resp.json().get("entities", {}).get(qid, {})
         claims = entity.get("claims", {}).get("P11250", [])
