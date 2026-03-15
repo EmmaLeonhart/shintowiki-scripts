@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-15
+
+### Pipeline failures: 3 consecutive CI failures diagnosed and fixed
+**Script:** `shinto_miraheze/generate_p11250_quickstatements.py`, `.github/workflows/cleanup-loop.yml`
+**Status:** Fixed
+
+The pipeline failed 3 times in a row between 2026-03-14 and 2026-03-15. Root causes:
+
+1. **Run 23081580192 (Mar 14, 05:40):** `git push` rejected — the remote had newer state file commits that the runner didn't have locally. The workflow was doing `git push` without pulling first, so when two runs produced state commits close together, the second one failed.
+
+2. **Run 23081942775 (Mar 14, 06:02):** `502 Bad Gateway` from `shinto.miraheze.org` during recursive category traversal. The script was deep inside `get_category_pages_recursive` fetching subcategories of `天白区の歴史` (history of Tenpaku ward) when the Miraheze server returned a 502. No retry logic existed, so the entire run crashed.
+
+3. **Run 23100572874 (Mar 15, 01:24):** `ReadTimeoutError` — same recursive category traversal, this time the server took longer than 15 seconds to respond. Again, no retry logic, immediate crash.
+
+**Fixes applied:**
+
+- Added `requests.Session` with automatic retry (5 retries, exponential backoff) for 500/502/503/504 errors. Timeout increased from 15s to 30s.
+- Added `git pull --rebase` before `git push` in the workflow to handle state file divergence.
+- 429 (Too Many Requests) is deliberately **not** retried — it triggers immediate termination with a FATAL log entry to avoid worsening rate-limit situations.
+- Added `error.log` file (`shinto_miraheze/error.log`) where all errors are logged with timestamps and severity. The workflow now commits log files alongside state files, and runs the commit step with `if: always()` so logs are preserved even on failure.
+- Added `*.log` to `paths-ignore` in the push trigger to avoid re-triggering the pipeline from log commits.
+
+### ⚠️ Open concern: recursive category traversal depth
+**Script:** `shinto_miraheze/generate_p11250_quickstatements.py`
+**Status:** Under review
+
+The `get_category_pages_recursive` function traverses the full subcategory tree of `[[Category:Pages linked to Wikidata]]` with no depth limit. The stack traces from the failures showed 12+ levels of recursion, reaching into deeply nested Japanese geographic/historical categories like `天白区の歴史`.
+
+This is potentially problematic because:
+- **No depth limit:** The recursion goes as deep as the category tree allows. A single deeply-nested branch can generate dozens of sequential API calls before returning.
+- **No throttling on category API calls:** The script sleeps 0.3s between Wikidata checks in the main loop, but the category traversal itself makes rapid-fire requests with zero delay between them.
+- **Multiplicative API load:** Each category level spawns N subcategory fetches, each of which spawns N more. A category tree 12+ levels deep with branching at each level means hundreds of API calls just to build the page list.
+- **The function was part of the original script design** (commit 9d75771, 2026-03-13) — it was not added later. But the category tree has likely grown since then.
+
+The retry logic added above makes the script more resilient to individual request failures, but does not address the underlying load pattern. If the category tree continues to grow, this could become a recurring source of 502s and timeouts — or worse, trigger rate limiting.
+
+Possible mitigations (not yet implemented):
+- Add a `max_depth` parameter to cap recursion depth
+- Add throttling (e.g. `time.sleep(0.5)`) between category API calls
+- Cache the page list between runs instead of rebuilding it from scratch every time
+- Switch to a flat category member query if deep subcategories aren't actually needed for P11250 coverage
+
+---
+
 ## 2026-03-13
 
 ### Orphaned talk page deletion added to cleanup loop
