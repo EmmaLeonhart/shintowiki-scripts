@@ -18,11 +18,13 @@ Default mode is dry-run. Use --apply to actually edit the wiki page.
 """
 
 import argparse
+import datetime
 import io
 import os
 import re
 import sys
 import time
+import traceback
 
 import mwclient
 import requests
@@ -41,6 +43,7 @@ THROTTLE = 1.5
 CATEGORY_NAME = "Pages linked to Wikidata"
 QS_PAGE_TITLE = "QuickStatements/P11250"
 STATE_FILE = os.path.join(os.path.dirname(__file__), "generate_p11250_quickstatements.state")
+ERROR_LOG = os.path.join(os.path.dirname(__file__), "error.log")
 
 WD_LINK_RE = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
 # Match QS lines like: Q12345|P11250|"shinto:Page Name"
@@ -49,14 +52,44 @@ QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
 USER_AGENT = "ShintoBotP11250/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Retry session for transient network errors (502, 503, 504, timeouts)
+# NOTE: 429 (Too Many Requests) is deliberately excluded — it triggers
+# immediate termination to avoid worsening rate-limit situations.
 _retry_strategy = Retry(
     total=5,
     backoff_factor=2,
-    status_forcelist=[429, 500, 502, 503, 504],
+    status_forcelist=[500, 502, 503, 504],
 )
 _http = requests.Session()
 _http.mount("https://", HTTPAdapter(max_retries=_retry_strategy))
 _http.mount("http://", HTTPAdapter(max_retries=_retry_strategy))
+
+
+# ─── ERROR LOGGING ─────────────────────────────────────────
+
+class RateLimitError(Exception):
+    """Raised when a 429 Too Many Requests response is received."""
+
+
+def log_error(message, *, fatal=False):
+    """Append a timestamped error entry to the error log file."""
+    timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    severity = "FATAL" if fatal else "ERROR"
+    entry = f"[{timestamp}] [{severity}] generate_p11250_quickstatements: {message}\n"
+    print(f"   ! {severity}: {message}", file=sys.stderr)
+    with open(ERROR_LOG, "a", encoding="utf-8") as f:
+        f.write(entry)
+
+
+def checked_get(url, **kwargs):
+    """Wrapper around _http.get that checks for 429 and logs + terminates."""
+    resp = _http.get(url, **kwargs)
+    if resp.status_code == 429:
+        log_error(
+            f"429 Too Many Requests from {resp.url} — terminating immediately to avoid further rate-limit violations",
+            fatal=True,
+        )
+        raise RateLimitError(f"429 Too Many Requests: {resp.url}")
+    return resp
 
 QS_PAGE_HEADER = """\
 QuickStatements for syncing [https://www.wikidata.org/wiki/Property:P11250 P11250] (Miraheze article ID) to Wikidata.
@@ -118,7 +151,7 @@ def get_category_pages_recursive(site, category_name, visited_cats=None):
         "format": "json",
     }
     while True:
-        resp = _http.get(
+        resp = checked_get(
             f"https://{WIKI_URL}{WIKI_PATH}api.php",
             params=params,
             headers={"User-Agent": USER_AGENT},
@@ -142,7 +175,7 @@ def get_category_pages_recursive(site, category_name, visited_cats=None):
         "format": "json",
     }
     while True:
-        resp = _http.get(
+        resp = checked_get(
             f"https://{WIKI_URL}{WIKI_PATH}api.php",
             params=params,
             headers={"User-Agent": USER_AGENT},
@@ -169,7 +202,7 @@ def get_wikidata_p11250(qid):
     """
     try:
         url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
-        resp = _http.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+        resp = checked_get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
         resp.raise_for_status()
         entity = resp.json().get("entities", {}).get(qid, {})
         claims = entity.get("claims", {}).get("P11250", [])
@@ -179,8 +212,10 @@ def get_wikidata_p11250(qid):
             if dv.get("type") == "string":
                 values.append(dv["value"])
         return values
+    except RateLimitError:
+        raise  # must propagate — never swallow 429s
     except Exception as e:
-        print(f"   ! error fetching P11250 for {qid}: {e}")
+        log_error(f"Failed to fetch P11250 for {qid}: {e}")
         return None
 
 
@@ -265,7 +300,7 @@ def main():
             page = site.pages[title]
             text = page.text()
         except Exception as e:
-            print(f"   ! could not read page: {e}")
+            log_error(f"Could not read page [[{title}]]: {e}")
             skipped_error += 1
             append_state(STATE_FILE, title)
             continue
@@ -356,7 +391,7 @@ def main():
             print(f"\nSaved [[{QS_PAGE_TITLE}]] ({len(merged)} total lines)")
             time.sleep(THROTTLE)
         except Exception as e:
-            print(f"\n! Failed to save [[{QS_PAGE_TITLE}]]: {e}")
+            log_error(f"Failed to save [[{QS_PAGE_TITLE}]]: {e}")
     else:
         print(f"\nDRY RUN — would save [[{QS_PAGE_TITLE}]] ({len(merged)} lines):")
         for line in qs_lines[:10]:
@@ -366,4 +401,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except RateLimitError:
+        # Already logged by checked_get / log_error — exit with error
+        sys.exit(1)
+    except Exception:
+        log_error(f"Unhandled exception:\n{traceback.format_exc()}")
+        sys.exit(1)
