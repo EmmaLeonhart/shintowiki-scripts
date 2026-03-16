@@ -52,6 +52,8 @@ TARGET_CAT_RE = re.compile(
     re.IGNORECASE,
 )
 
+REDIRECT_RE = re.compile(r'^\s*#redirect\b', re.IGNORECASE | re.MULTILINE)
+
 # Interwiki-prefixed pages sitting in mainspace — not real local pages.
 # mwclient can't read them and they throw KeyError('pages').
 INTERWIKI_RE = re.compile(r'^[A-Za-z]{2,}:')
@@ -177,6 +179,13 @@ def main():
                 continue
 
             if not page.exists:
+                skipped += 1
+                if args.apply:
+                    append_state(STATE_FILE, title)
+                continue
+
+            # Skip redirects
+            if REDIRECT_RE.search(text):
                 skipped += 1
                 if args.apply:
                     append_state(STATE_FILE, title)

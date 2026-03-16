@@ -99,6 +99,9 @@ python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "
 declare_stage "Core Loop: tag_pages_without_wikidata"
 python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: clean_wikidata_cat_redirects"
+python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 declare_stage "Core Loop: fix_template_noinclude"
 python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
