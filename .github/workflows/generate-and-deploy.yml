@@ -1,0 +1,78 @@
+name: Generate QuickStatements & Deploy to Pages
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly on Monday at 06:00 UTC
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests
+
+      - name: Generate QuickStatements
+        run: python generate_modern_shrine_ranking_qualifiers.py
+
+      - name: Build site
+        run: |
+          mkdir -p _site
+          cp modern_shrine_ranking_qualifiers.txt _site/
+          REMAINING=$(wc -l < modern_shrine_ranking_qualifiers.txt | tr -d ' ')
+          GENERATED=$(date -u '+%Y-%m-%d %H:%M UTC')
+          cat > _site/index.html << HTMLEOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Modern Shrine Ranking Qualifiers</title>
+            <style>
+              body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+              pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; font-size: 0.85rem; }
+              a { color: #0645ad; }
+              .stats { background: #e8f4e8; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+            </style>
+          </head>
+          <body>
+            <h1>Modern Shrine Ranking Qualifiers</h1>
+            <p>QuickStatements to add <code>P1027</code> (conferred by) &rarr; <code>Q712534</code> (modern system of ranked Shinto shrines) qualifier to all <code>P13723</code> (modern shrine ranking) statements.</p>
+            <div class="stats">
+              <strong>${REMAINING} statements remaining</strong> &mdash; generated ${GENERATED}
+            </div>
+            <p><a href="modern_shrine_ranking_qualifiers.txt">Download QuickStatements file</a></p>
+            <p>Paste into <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements</a> to apply.</p>
+            <h2>Preview (first 20 lines)</h2>
+            <pre>$(head -20 modern_shrine_ranking_qualifiers.txt)</pre>
+          </body>
+          </html>
+          HTMLEOF
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
