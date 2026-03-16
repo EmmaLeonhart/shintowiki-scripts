@@ -6,7 +6,7 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ## Automation boundary
 
-The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. **Everything outside the loop requires manual intervention — there are no easy script additions left.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
+The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
 
 ### Currently automated (cleanup loop)
 
@@ -16,7 +16,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Bot userpage status** — `update_bot_userpage_status.py`: marks workflow active at start, inactive at end, and updates `User:EmmaBot` with run metadata.
 
 **Core Loop** (structural changes that later scripts depend on):
-- **Enwiki XML reimport** — `reimport_from_enwiki.py`: downloads XML export from enwiki (with templates, current revision) and reimports into shintowiki with mangled timestamps to force overwrite. Fixes erroneous transclusions by pulling the full dependency tree. Processes 1 page per run from `erroneous_transclusion_pages.txt`.
+- **Enwiki XML reimport** — `reimport_from_enwiki.py`: downloads XML export from enwiki (with templates, current revision) and reimports into shintowiki with mangled timestamps to force overwrite. Fixes erroneous transclusions by pulling the full dependency tree. Processes 10 pages per run from `erroneous_transclusion_pages.txt`. Failed imports are logged to `reimport_from_enwiki.errors`.
 - **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
 - **Uncategorized category fix** — `categorize_uncategorized_categories.py`: adds `[[Category:Categories autocreated by EmmaBot]]` to category pages from Special:UncategorizedCategories that were created in earlier bulk workflows without proper categorization.
 - **EmmaBot category triage (enwiki)** — `triage_emmabot_categories.py`: checks autocreated categories against enwiki; moves to `[[Category:Emmabot categories with enwiki]]` or `[[Category:Emmabot categories without enwiki]]` (100 per run).
@@ -24,6 +24,10 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **EmmaBot category triage (secondary)** — `triage_emmabot_categories_secondary.py`: third pass on remaining categories using additional heuristics.
 - **Unused template deletion** — `delete_unused_templates.py`: deletes template pages from Special:UnusedTemplates.
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
+- **P11250 QuickStatements** — `generate_p11250_quickstatements.py`: walks direct members of `[[Category:Pages linked to Wikidata]]`, checks Wikidata P11250, and adds QuickStatements lines to `[[QuickStatements/P11250]]` for items missing the property. Stateful, 100 per run. Has retry logic with automatic 429 termination and error logging to `error.log`.
+- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 100 per run.
+- **Fix noinclude on templates** — `fix_template_noinclude.py`: finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` blocks and wraps them properly. Tags fixed templates with `[[Category:Templates fixed with noinclude]]`. 100 per run.
+- **Categorize uncategorized pages** — `categorize_uncategorized_pages.py`: fetches `Special:UncategorizedPages` and tags them with `[[Category:Uncategorized pages]]`. 100 per run.
 
 **Cleanup Loop** (category cleanup + talk pages):
 - **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
@@ -46,7 +50,7 @@ All items below require manual editing or human review. None have a safe automat
 
 ### High priority
 
-- [ ] **Fix template categories outside `<noinclude>`** — some templates have `[[Category:…]]` and `{{wikidata link}}` placed outside `<noinclude>`, causing every page that transcludes the template to inherit those categories. Move stray tags into `<noinclude>`. **Manual edit required per template.**
+- [x] **Fix template categories outside `<noinclude>`** — now automated via `fix_template_noinclude.py` in the cleanup loop.
 - [ ] **ILLs without `WD=`** â€” ILL templates missing a `WD=` parameter are broken by design. Run `fix_ill_destinations.py` or a new script to identify and fill in missing `WD=` values. Do not blindly overwrite â€” check the local context of each.
 - [ ] **Duplicate QID disambiguation pages** â€” 621 `Q{QID}` mainspace pages point to 2+ categories. Needs human review to decide which category correctly holds the QID.
 - [ ] **Translate all category names in [Category:Japanese language category names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names)** â€” ensure every category in this tracking set is migrated to a canonical English category title.

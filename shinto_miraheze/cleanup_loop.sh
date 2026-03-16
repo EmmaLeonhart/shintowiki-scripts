@@ -99,6 +99,12 @@ python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "
 declare_stage "Core Loop: tag_pages_without_wikidata"
 python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: fix_template_noinclude"
+python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+declare_stage "Core Loop: categorize_uncategorized_pages"
+python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 # ============================================================
 # [Cleanup Loop] — category cleanup + talk pages
 # ============================================================
