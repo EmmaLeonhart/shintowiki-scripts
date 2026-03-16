@@ -126,7 +126,7 @@ def main():
     parser.add_argument("--apply", action="store_true",
                         help="Actually edit pages (default is dry-run).")
     parser.add_argument("--max-edits", type=int, default=100,
-                        help="Max pages to edit per run (default 100).")
+                        help="Max pages to check per run (default 100).")
     parser.add_argument("--run-tag", required=True,
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
@@ -147,8 +147,8 @@ def main():
         print(f"\n--- Scanning {ns_label} (ns {ns}) ---")
 
         for title in iter_all_pages(site, ns):
-            if args.max_edits and edited >= args.max_edits:
-                print(f"Reached max edits ({args.max_edits}); stopping.")
+            if args.max_edits and checked >= args.max_edits:
+                print(f"Reached max checks ({args.max_edits}); stopping.")
                 finished_all = False
                 break
 
