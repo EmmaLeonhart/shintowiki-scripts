@@ -4,6 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-16
+
+### Workflow reliability: chunked state commits and bounded runtime
+**Scripts:** `cleanup_loop.sh`, `.github/workflows/cleanup-loop.yml`, `tag_pages_without_wikidata.py`
+**Status:** Complete
+
+The pipeline was failing and losing all state progress because it only committed state files once at the very end. If any script crashed midway (which was happening due to 502s and timeouts — see 2026-03-15 entry), every earlier script's state progress was thrown away.
+
+**Chunked state commits:** The workflow now commits state/log/error files after each logical chunk instead of once at the end. Six commit points:
+1. Import & Categorization
+2. Structural Fixes
+3. Wikidata
+4. Final Core
+5. Cleanup Loop
+6. Deprecated (weekly)
+
+A `commit_state()` helper in `cleanup_loop.sh` handles this — finds all `*.state`, `*.log`, `*.errors` files, stages them with `git add -f`, and commits if there are changes. Git config is now set up before the cleanup loop runs (moved out of the final push step). The final workflow step is now a fallback commit + push for anything the chunks missed.
+
+**Bounded runtime for tag_pages_without_wikidata:** Previously `--max-edits 100` counted only pages that were actually *tagged*, meaning the script could scan thousands of pages (each with an API call) just to find 100 that needed tagging. Most pages already have `{{wikidata link}}`, so the hit rate was low and the runtime was unbounded. Changed to count pages *checked* instead of pages *edited*, so the script now stops after examining 100 pages regardless of how many needed tagging. This keeps the runtime predictable and prevents the pipeline from timing out on this single script.
+
+Also fixed `.gitignore` which was blocking `*.log` files from being committed (the state commit step needs to track these), and added `Help:Link color` to `erroneous_transclusion_pages.txt` for reimport.
+
+---
+
 ## 2026-03-15
 
 ### Pipeline failures: 3 consecutive CI failures diagnosed and fixed

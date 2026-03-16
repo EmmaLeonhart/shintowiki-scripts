@@ -6,7 +6,7 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ## Automation boundary
 
-The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
+The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. State files are committed incrementally after each chunk (Import & Categorization, Structural Fixes, Wikidata, Final Core, Cleanup Loop, Deprecated) so progress is not lost if a later chunk fails. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
 
 ### Currently automated (cleanup loop)
 
@@ -25,7 +25,9 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Unused template deletion** — `delete_unused_templates.py`: deletes template pages from Special:UnusedTemplates.
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
 - **P11250 QuickStatements** — `generate_p11250_quickstatements.py`: walks direct members of `[[Category:Pages linked to Wikidata]]`, checks Wikidata P11250, and adds QuickStatements lines to `[[QuickStatements/P11250]]` for items missing the property. Stateful, 100 per run. Has retry logic with automatic 429 termination and error logging to `error.log`.
-- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 100 per run.
+- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 100 pages *checked* per run (not 100 edited — bounds runtime regardless of hit rate).
+- **Clean P11250 QuickStatements** — `clean_p11250_quickstatements.py`: reads `[[QuickStatements/P11250]]`, checks each line against Wikidata, and removes lines where the item now has the correct P11250 value. 100 checks per run.
+- **Clean wikidata category redirects** — `clean_wikidata_cat_redirects.py`: cleans up wikidata-related category redirects.
 - **Fix noinclude on templates** — `fix_template_noinclude.py`: finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` blocks and wraps them properly. Tags fixed templates with `[[Category:Templates fixed with noinclude]]`. 100 per run.
 - **Categorize uncategorized pages** — `categorize_uncategorized_pages.py`: fetches `Special:UncategorizedPages` and tags them with `[[Category:Uncategorized pages]]`. 100 per run.
 
@@ -33,6 +35,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
 - **Orphaned talk page deletion** — `delete_orphaned_talk_pages.py`: deletes talk pages from Special:OrphanedTalkPages whose subject page does not exist.
 - **Talk page migration** — `migrate_talk_pages.py`: rebuilds talk pages and seeds them with discussion content from ja/en/simple Wikipedia. State file: `shinto_miraheze/migrate_talk_pages.state`.
+- **Broken redirect deletion** — `delete_broken_redirects.py`: deletes redirects from Special:BrokenRedirects whose target page does not exist.
 - **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
 
 ### Requires manual intervention
