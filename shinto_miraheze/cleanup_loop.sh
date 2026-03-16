@@ -122,29 +122,38 @@ python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --ru
 # ============================================================
 # [Deprecated] — likely complete, kept as safety net
 # These are stateless and run after all stateful work + state commit.
+# Only run once a week (Sunday) to avoid unnecessary load.
 # ============================================================
-echo ""
-echo "========================================"
-echo "[Deprecated]"
-echo "========================================"
+DAY_OF_WEEK="$(date +%u)"  # 1=Monday ... 7=Sunday
+if [ "$DAY_OF_WEEK" = "7" ]; then
+  echo ""
+  echo "========================================"
+  echo "[Deprecated] (weekly — Sunday)"
+  echo "========================================"
 
-declare_stage "Deprecated: normalize_category_pages"
-python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+  declare_stage "Deprecated: normalize_category_pages"
+  python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Deprecated: tag_shikinaisha_talk_pages"
-python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+  declare_stage "Deprecated: tag_shikinaisha_talk_pages"
+  python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Deprecated: fix_erroneous_qid_category_links"
-python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+  declare_stage "Deprecated: fix_erroneous_qid_category_links"
+  python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Deprecated: remove_legacy_cat_templates"
-python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+  declare_stage "Deprecated: remove_legacy_cat_templates"
+  python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Deprecated: move_categories"
-python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+  declare_stage "Deprecated: move_categories"
+  python3 shinto_miraheze/move_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-declare_stage "Deprecated: create_japanese_category_qid_redirects"
-python3 shinto_miraheze/create_japanese_category_qid_redirects.py
+  declare_stage "Deprecated: create_japanese_category_qid_redirects"
+  python3 shinto_miraheze/create_japanese_category_qid_redirects.py
+else
+  echo ""
+  echo "========================================"
+  echo "[Deprecated] SKIPPED (only runs on Sundays, today is day $DAY_OF_WEEK)"
+  echo "========================================"
+fi
 
 # ============================================================
 # [Bookkeeping: END] — mark workflow INACTIVE
