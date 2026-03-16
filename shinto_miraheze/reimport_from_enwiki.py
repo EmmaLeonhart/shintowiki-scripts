@@ -241,6 +241,8 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR downloading: {e}")
             errors += 1
+            if args.apply:
+                append_state(args.state_file, title)
             continue
 
         # Mangle timestamps
@@ -266,6 +268,8 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR importing: {e}")
             errors += 1
+            if args.apply:
+                append_state(args.state_file, title)
 
     print("\n" + "=" * 60)
     print(f"Checked:  {checked}")
