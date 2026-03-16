@@ -52,6 +52,27 @@ declare_stage() {
   python3 shinto_miraheze/update_bot_userpage_status.py --run-tag "${RUN_TAG}" --stage "$1"
 }
 
+# Helper: commit any changed state/log/error files immediately.
+# Called after each chunk so progress is not lost if a later chunk fails.
+commit_state() {
+  local chunk_name="$1"
+  echo ""
+  echo "--- Committing state after: ${chunk_name} ---"
+  local state_files
+  state_files="$(find . -name '*.state' -o -name '*.log' -o -name '*.errors' | sort)"
+  if [ -z "$state_files" ]; then
+    echo "No state files found, skipping commit."
+    return 0
+  fi
+  echo "$state_files" | xargs git add -f
+  if git diff --cached --quiet; then
+    echo "No state changes to commit after ${chunk_name}."
+    return 0
+  fi
+  git commit -m "chore(state): update state after ${chunk_name} [skip ci]"
+  echo "State committed after ${chunk_name}."
+}
+
 # ============================================================
 # [Bookkeeping: START] — mark workflow ACTIVE
 # ============================================================
@@ -68,6 +89,10 @@ echo ""
 echo "========================================"
 echo "[Core Loop]"
 echo "========================================"
+
+# --- Chunk 1: Import & Categorization ---
+echo ""
+echo "--- Chunk 1: Import & Categorization ---"
 
 declare_stage "Core Loop: reimport_from_enwiki"
 python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 10 --run-tag "${RUN_TAG}"
@@ -87,11 +112,23 @@ python3 shinto_miraheze/triage_emmabot_categories_jawiki.py --apply --max-edits 
 declare_stage "Core Loop: triage_emmabot_categories_secondary"
 python3 shinto_miraheze/triage_emmabot_categories_secondary.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+commit_state "Import & Categorization"
+
+# --- Chunk 2: Structural Fixes ---
+echo ""
+echo "--- Chunk 2: Structural Fixes ---"
+
 declare_stage "Core Loop: delete_unused_templates"
 python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
 declare_stage "Core Loop: fix_double_redirects"
 python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+commit_state "Structural Fixes"
+
+# --- Chunk 3: Wikidata ---
+echo ""
+echo "--- Chunk 3: Wikidata ---"
 
 declare_stage "Core Loop: generate_p11250_quickstatements"
 python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -105,11 +142,19 @@ python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits "$EDIT
 declare_stage "Core Loop: clean_wikidata_cat_redirects"
 python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+commit_state "Wikidata"
+
+# --- Chunk 4: Final Core ---
+echo ""
+echo "--- Chunk 4: Final Core ---"
+
 declare_stage "Core Loop: fix_template_noinclude"
 python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
 declare_stage "Core Loop: categorize_uncategorized_pages"
 python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+commit_state "Final Core"
 
 # ============================================================
 # [Cleanup Loop] — category cleanup + talk pages
@@ -133,6 +178,8 @@ python3 shinto_miraheze/delete_broken_redirects.py --max-deletes "$EDIT_LIMIT" -
 
 declare_stage "Cleanup Loop: remove_crud_categories"
 python3 shinto_miraheze/remove_crud_categories.py --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+commit_state "Cleanup Loop"
 
 # ============================================================
 # [Deprecated] — likely complete, kept as safety net
@@ -163,6 +210,8 @@ if [ "$DAY_OF_WEEK" = "7" ]; then
 
   declare_stage "Deprecated: create_japanese_category_qid_redirects"
   python3 shinto_miraheze/create_japanese_category_qid_redirects.py
+
+  commit_state "Deprecated (weekly)"
 else
   echo ""
   echo "========================================"
