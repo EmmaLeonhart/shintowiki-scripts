@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          find . -name '*.state' -o -name '*.log' -o -name '*.errors' | xargs -r git add
+          find . -name '*.state' -o -name '*.log' -o -name '*.errors' | xargs -r git add -f
           if git diff --cached --quiet; then
             echo "No state changes to commit."
             exit 0

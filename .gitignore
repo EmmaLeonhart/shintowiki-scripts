@@ -1,5 +1,7 @@
 *.xml
 *.log
+!shinto_miraheze/*.log
+!shinto_miraheze/*.errors
 __pycache__/
 *.pyc
 *.pyo
