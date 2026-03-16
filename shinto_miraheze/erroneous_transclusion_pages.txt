@@ -19,7 +19,6 @@ Module:Authority control/config/staging/doc
 Module:Authority control/documentation/sandbox/doc
 Module:Authority control/sandbox/doc
 Module:Category main article/doc
-Module:Category series navigation/doc
 Module:Check isxn/sandbox/doc
 Module:Citation/CS1/COinS/sandbox/doc
 Module:Citation/CS1/Configuration/sandbox/doc
@@ -48,7 +47,6 @@ Module:Lang/configuration/doc
 Module:Lang/sandbox/doc
 Module:LangSwitch/doc
 Module:Location map/data/100x100/doc
-Module:Location map/data/Asia/doc
 Module:Location map/data/Continental Asia/doc
 Module:Location map/data/doc
 Module:Location map/data/Japan Aichi Prefecture/doc

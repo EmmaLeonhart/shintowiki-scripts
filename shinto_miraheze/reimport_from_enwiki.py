@@ -46,6 +46,7 @@ ENWIKI_EXPORT_URL = "https://en.wikipedia.org/w/index.php"
 USER_AGENT = "EmmaBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "reimport_from_enwiki.state")
+ERRORS_FILE = os.path.join(os.path.dirname(__file__), "reimport_from_enwiki.errors")
 DEFAULT_PAGES_FILE = os.path.join(
     os.path.dirname(__file__), "erroneous_transclusion_pages.txt"
 )
@@ -72,6 +73,12 @@ def load_state(path):
 def append_state(path, title):
     with open(path, "a", encoding="utf-8") as f:
         f.write(title + "\n")
+
+
+def append_error(title, error_msg):
+    """Log a failed page to the errors file so it can be reviewed later."""
+    with open(ERRORS_FILE, "a", encoding="utf-8") as f:
+        f.write(f"{title}\t{error_msg}\n")
 
 
 def parse_pages_file(path):
@@ -241,6 +248,7 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR downloading: {e}")
             errors += 1
+            append_error(title, f"download: {e}")
             if args.apply:
                 append_state(args.state_file, title)
             continue
@@ -268,6 +276,7 @@ def main():
         except Exception as e:
             print(f"{prefix} ERROR importing: {e}")
             errors += 1
+            append_error(title, f"import: {e}")
             if args.apply:
                 append_state(args.state_file, title)
 
