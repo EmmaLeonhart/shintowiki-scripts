@@ -128,26 +128,16 @@ def clear_state(path):
 
 # ─── HELPERS ────────────────────────────────────────────────
 
-def get_category_pages_recursive(site, category_name, visited_cats=None):
-    """Get mainspace pages in a category and all subcategories."""
-    if visited_cats is None:
-        visited_cats = set()
-
+def get_category_pages(site, category_name):
+    """Get all direct members of a category (all namespaces, no recursion)."""
     full_cat = f"Category:{category_name}"
-    if full_cat in visited_cats:
-        return []
-    visited_cats.add(full_cat)
-
     pages = []
 
-    # Get pages (namespace 0)
     params = {
         "action": "query",
         "list": "categorymembers",
         "cmtitle": full_cat,
         "cmlimit": 500,
-        "cmnamespace": 0,
-        "cmtype": "page",
         "format": "json",
     }
     while True:
@@ -161,33 +151,6 @@ def get_category_pages_recursive(site, category_name, visited_cats=None):
         data = resp.json()
         for m in data.get("query", {}).get("categorymembers", []):
             pages.append(m["title"])
-        if "continue" not in data:
-            break
-        params["cmcontinue"] = data["continue"]["cmcontinue"]
-
-    # Get subcategories
-    params = {
-        "action": "query",
-        "list": "categorymembers",
-        "cmtitle": full_cat,
-        "cmlimit": 500,
-        "cmtype": "subcat",
-        "format": "json",
-    }
-    while True:
-        resp = checked_get(
-            f"https://{WIKI_URL}{WIKI_PATH}api.php",
-            params=params,
-            headers={"User-Agent": USER_AGENT},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        for m in data.get("query", {}).get("categorymembers", []):
-            subcat_name = m["title"]
-            if subcat_name.startswith("Category:"):
-                subcat_name = subcat_name[len("Category:"):]
-            pages.extend(get_category_pages_recursive(site, subcat_name, visited_cats))
         if "continue" not in data:
             break
         params["cmcontinue"] = data["continue"]["cmcontinue"]
@@ -260,9 +223,9 @@ def main():
     done = load_state(STATE_FILE)
     print(f"State: {len(done)} pages already processed")
 
-    # Fetch category members (recursive)
-    print(f"Fetching [[Category:{CATEGORY_NAME}]] (including subcategories)...")
-    all_pages = get_category_pages_recursive(site, CATEGORY_NAME)
+    # Fetch category members
+    print(f"Fetching [[Category:{CATEGORY_NAME}]]...")
+    all_pages = get_category_pages(site, CATEGORY_NAME)
     # Deduplicate while preserving order
     seen = set()
     unique_pages = []
