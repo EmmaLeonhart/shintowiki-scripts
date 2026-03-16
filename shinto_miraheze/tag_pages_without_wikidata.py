@@ -52,6 +52,18 @@ TARGET_CAT_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Interwiki-prefixed pages sitting in mainspace — not real local pages.
+# mwclient can't read them and they throw KeyError('pages').
+INTERWIKI_RE = re.compile(r'^[A-Za-z]{2,}:')
+
+# Known local namespace prefixes (these are NOT interwiki prefixes)
+LOCAL_NS_PREFIXES = (
+    "Category:", "Template:", "Module:", "Help:", "Talk:", "User:",
+    "File:", "MediaWiki:", "Shinto Wiki:", "Wikipedia:",
+    "User talk:", "Template talk:", "Category talk:", "File talk:",
+    "Help talk:", "Module talk:", "MediaWiki talk:",
+)
+
 # Namespaces to process, in order
 NAMESPACES = [
     (0, "mainspace"),
@@ -125,7 +137,7 @@ def main():
     done = load_state(STATE_FILE) if args.apply else set()
     print(f"State: {len(done)} pages already processed")
 
-    edited = skipped = errors = 0
+    edited = skipped = skipped_interwiki = has_wikidata = errors = 0
     checked = 0
     finished_all = True
 
@@ -141,21 +153,30 @@ def main():
             if title in done:
                 continue
 
+            # Skip interwiki-prefixed pages in mainspace (e.g. Ar:, Bcl:, Bn:)
+            if ns == 0 and INTERWIKI_RE.match(title) and not title.startswith(LOCAL_NS_PREFIXES):
+                skipped_interwiki += 1
+                if args.apply:
+                    append_state(STATE_FILE, title)
+                continue
+
             checked += 1
-            prefix = f"[{checked}] {title}"
+
+            # Progress logging every 500 pages
+            if checked % 500 == 0:
+                print(f"  ... scanned {checked} pages ({edited} tagged, {has_wikidata} have wikidata)")
 
             try:
                 page = site.pages[title]
                 text = page.text() if page.exists else ""
             except Exception as e:
-                print(f"{prefix} ERROR reading: {e}")
+                print(f"[{checked}] {title} ERROR reading: {e}")
                 errors += 1
                 if args.apply:
                     append_state(STATE_FILE, title)
                 continue
 
             if not page.exists:
-                print(f"{prefix} SKIP (missing)")
                 skipped += 1
                 if args.apply:
                     append_state(STATE_FILE, title)
@@ -163,6 +184,7 @@ def main():
 
             # Check for {{wikidata link|...}}
             if WD_LINK_RE.search(text):
+                has_wikidata += 1
                 if args.apply:
                     append_state(STATE_FILE, title)
                 continue
@@ -174,7 +196,7 @@ def main():
                 continue
 
             if not args.apply:
-                print(f"{prefix} DRY RUN: would add {CAT_TAG}")
+                print(f"[{checked}] {title} DRY RUN: would add {CAT_TAG}")
                 continue
 
             try:
@@ -184,11 +206,11 @@ def main():
                     summary=f"Bot: tag page without wikidata link {args.run_tag}",
                 )
                 edited += 1
-                print(f"{prefix} TAGGED")
+                print(f"[{checked}] {title} TAGGED")
                 append_state(STATE_FILE, title)
                 time.sleep(THROTTLE)
             except Exception as e:
-                print(f"{prefix} ERROR saving: {e}")
+                print(f"[{checked}] {title} ERROR saving: {e}")
                 errors += 1
                 if args.apply:
                     append_state(STATE_FILE, title)
@@ -204,10 +226,12 @@ def main():
         clear_state(STATE_FILE)
 
     print(f"\n{'='*60}")
-    print(f"Checked:  {checked}")
-    print(f"Tagged:   {edited}")
-    print(f"Skipped:  {skipped}")
-    print(f"Errors:   {errors}")
+    print(f"Checked:    {checked}")
+    print(f"Tagged:     {edited}")
+    print(f"Has WD:     {has_wikidata}")
+    print(f"Interwiki:  {skipped_interwiki}")
+    print(f"Skipped:    {skipped}")
+    print(f"Errors:     {errors}")
 
 
 if __name__ == "__main__":
