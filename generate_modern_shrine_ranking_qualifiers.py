@@ -31,6 +31,14 @@ SELECT ?item ?rankvalue WHERE {
 ORDER BY ?item
 """
 
+# Count total P13723 statements (with and without qualifier)
+TOTAL_QUERY = """
+SELECT (COUNT(*) AS ?total) WHERE {
+  ?item p:P13723 ?stmt .
+  ?stmt ps:P13723 ?rankvalue .
+}
+"""
+
 
 def fetch_sparql(query):
     """Run a SPARQL query against Wikidata."""
@@ -50,12 +58,25 @@ def qid(uri):
 
 
 def main():
+    print("Fetching total P13723 statement count...")
+    total_results = fetch_sparql(TOTAL_QUERY)
+    total = int(total_results[0]["total"]["value"])
+    print(f"Total P13723 statements: {total}")
+
     print("Fetching all P13723 statements without P1027 qualifier...")
     results = fetch_sparql(QUERY)
-    print(f"Found {len(results)} statements to qualify.")
+    remaining = len(results)
+    completed = total - remaining
+    print(f"Found {remaining} statements to qualify ({completed}/{total} done).")
+
+    # Write total count for the site build to use
+    with open("total_count.txt", "w") as f:
+        f.write(str(total))
 
     if not results:
         print("Nothing to do — all statements already have P1027 qualifier.")
+        # Still write empty file so site build doesn't break
+        open("modern_shrine_ranking_qualifiers.txt", "w").close()
         return
 
     # Generate QuickStatements v1 format with pipe delimiters
@@ -67,7 +88,7 @@ def main():
             rankvalue = qid(r["rankvalue"]["value"])
             f.write(f"{item}|P13723|{rankvalue}|P1027|Q712534\n")
 
-    print(f"Written {len(results)} QuickStatements lines to {output_file}")
+    print(f"Written {remaining} QuickStatements lines to {output_file}")
 
 
 if __name__ == "__main__":

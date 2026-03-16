@@ -36,6 +36,13 @@ jobs:
           mkdir -p _site
           cp modern_shrine_ranking_qualifiers.txt _site/
           REMAINING=$(wc -l < modern_shrine_ranking_qualifiers.txt | tr -d ' ')
+          TOTAL=$(cat total_count.txt)
+          COMPLETED=$((TOTAL - REMAINING))
+          if [ "$TOTAL" -gt 0 ]; then
+            PERCENT=$((COMPLETED * 100 / TOTAL))
+          else
+            PERCENT=100
+          fi
           GENERATED=$(date -u '+%Y-%m-%d %H:%M UTC')
           cat > _site/index.html << HTMLEOF
           <!DOCTYPE html>
@@ -49,15 +56,21 @@ jobs:
               pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; font-size: 0.85rem; }
               a { color: #0645ad; }
               .stats { background: #e8f4e8; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+              .progress-bar { background: #ddd; border-radius: 8px; overflow: hidden; height: 24px; margin: 0.75rem 0; }
+              .progress-fill { background: #4caf50; height: 100%; text-align: center; color: white; font-size: 0.85rem; line-height: 24px; min-width: 2rem; }
             </style>
           </head>
           <body>
             <h1>Modern Shrine Ranking Qualifiers</h1>
             <p>QuickStatements to add <code>P1027</code> (conferred by) &rarr; <code>Q712534</code> (modern system of ranked Shinto shrines) qualifier to all <code>P13723</code> (modern shrine ranking) statements.</p>
             <div class="stats">
-              <strong>${REMAINING} statements remaining</strong> &mdash; generated ${GENERATED}
+              <strong>${COMPLETED} / ${TOTAL} statements done</strong> (${PERCENT}%) &mdash; <strong>${REMAINING} remaining</strong>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: ${PERCENT}%">${PERCENT}%</div>
+              </div>
+              <small>Last updated: ${GENERATED}</small>
             </div>
-            <p><a href="modern_shrine_ranking_qualifiers.txt">Download QuickStatements file</a></p>
+            <p><a href="modern_shrine_ranking_qualifiers.txt">Download QuickStatements file</a> (${REMAINING} lines)</p>
             <p>Paste into <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements</a> to apply.</p>
             <h2>Preview (first 20 lines)</h2>
             <pre>$(head -20 modern_shrine_ranking_qualifiers.txt)</pre>
