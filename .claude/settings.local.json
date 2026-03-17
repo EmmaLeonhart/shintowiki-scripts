@@ -153,7 +153,8 @@
       "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 22982016256 --jq '.run_started_at + \" -> \" + .updated_at')",
       "Bash(cd \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\shintowiki-scripts\" && gh run view 22982016256 --json createdAt,updatedAt --jq '\"\\\\\\(.createdAt\\) -> \\\\\\(.updatedAt\\)\"')",
       "Bash(gh run:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(git:*)"
     ],
     "deny": [],
     "ask": []
