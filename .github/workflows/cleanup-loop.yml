@@ -70,7 +70,21 @@ jobs:
           if [ "$(git rev-list --count origin/${GITHUB_REF_NAME}..HEAD)" -gt 0 ]; then
             # Stash any unstaged changes so rebase can proceed cleanly
             git stash --include-untracked || true
-            git pull --rebase origin "${GITHUB_REF_NAME}"
+            # Rebase on remote; auto-resolve state/log conflicts keeping our version
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              echo "Rebase conflict detected — auto-resolving state files..."
+              for i in $(seq 1 20); do
+                # Resolve all conflicted files by keeping theirs (= our rebased commit's version)
+                conflicted=$(git diff --name-only --diff-filter=U)
+                if [ -n "$conflicted" ]; then
+                  echo "$conflicted" | xargs -I{} git checkout --theirs "{}"
+                  echo "$conflicted" | xargs -I{} git add "{}"
+                  GIT_EDITOR=true git -c core.editor=true rebase --continue 2>/dev/null && break
+                else
+                  git rebase --skip 2>/dev/null && break
+                fi
+              done
+            fi
             git stash pop || true
             git push origin "HEAD:${GITHUB_REF_NAME}"
           else
