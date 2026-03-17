@@ -71,6 +71,9 @@ commit_state() {
   fi
   git commit -m "chore(state): update state after ${chunk_name} [skip ci]"
   echo "State committed after ${chunk_name}."
+  # Push immediately so state survives even if a later chunk or the final push fails
+  git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+  git push origin "HEAD:${GITHUB_REF_NAME}" && echo "State pushed after ${chunk_name}." || echo "WARNING: failed to push state after ${chunk_name}."
 }
 
 # ============================================================
