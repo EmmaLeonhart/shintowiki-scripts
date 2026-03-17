@@ -68,7 +68,10 @@ jobs:
           fi
           # Push all state commits (from chunks + fallback) in one go
           if [ "$(git rev-list --count origin/${GITHUB_REF_NAME}..HEAD)" -gt 0 ]; then
+            # Stash any unstaged changes so rebase can proceed cleanly
+            git stash --include-untracked || true
             git pull --rebase origin "${GITHUB_REF_NAME}"
+            git stash pop || true
             git push origin "HEAD:${GITHUB_REF_NAME}"
           else
             echo "No new commits to push."
