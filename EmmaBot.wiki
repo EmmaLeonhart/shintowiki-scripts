@@ -1,4 +1,4 @@
-This is the operational bot account used for automated maintenance on shinto.miraheze.org.
+This is the operational bot account used for automated maintenance on shinto.miraheze.org, it is also used on lifeism.miraheze.org and aelaki.miraheze.org
 
 Its purpose is to run repeatable cleanup and migration tasks with transparent logging, persistent state files, and auditable edit summaries tied to GitHub Actions workflow runs.
 
