@@ -1,2 +1,3 @@
 Help:Link color	import: HTTPSConnectionPool(host='shinto.miraheze.org', port=443): Read timed out. (read timeout=30)
-Module:Portal/images/t/doc	import: HTTPSConnectionPool(host='shinto.miraheze.org', port=443): Read timed out. (read timeout=30)
+Module:Portal/images/m/doc	import: HTTPSConnectionPool(host='shinto.miraheze.org', port=443): Read timed out. (read timeout=30)
+Module:Portal/images/n/doc	import: HTTPSConnectionPool(host='shinto.miraheze.org', port=443): Read timed out. (read timeout=30)
