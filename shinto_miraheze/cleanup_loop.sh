@@ -100,6 +100,9 @@ echo "--- Chunk 1: Import & Categorization ---"
 declare_stage "Core Loop: reimport_from_enwiki"
 python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 10 --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: overwrite_deleted_enwiki_pages"
+python3 shinto_miraheze/overwrite_deleted_enwiki_pages.py --apply --run-tag "${RUN_TAG}"
+
 declare_stage "Core Loop: create_wanted_categories"
 python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
