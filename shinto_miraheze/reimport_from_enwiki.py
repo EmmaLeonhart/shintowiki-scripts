@@ -202,8 +202,8 @@ def main():
         WIKI_URL,
         path=WIKI_PATH,
         clients_useragent=USER_AGENT,
-        requests={"timeout": 120},
     )
+    site.connection.timeout = 120
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
