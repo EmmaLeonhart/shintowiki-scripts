@@ -157,6 +157,9 @@ python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$EDIT_LIM
 declare_stage "Core Loop: categorize_uncategorized_pages"
 python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+declare_stage "Core Loop: tag_untranslated_japanese"
+python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
 commit_state "Final Core"
 
 # ============================================================
