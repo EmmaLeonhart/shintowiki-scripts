@@ -30,6 +30,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Clean wikidata category redirects** — `clean_wikidata_cat_redirects.py`: cleans up wikidata-related category redirects.
 - **Fix noinclude on templates** — `fix_template_noinclude.py`: finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` blocks and wraps them properly. Tags fixed templates with `[[Category:Templates fixed with noinclude]]`. 100 per run.
 - **Categorize uncategorized pages** — `categorize_uncategorized_pages.py`: fetches `Special:UncategorizedPages` and tags them with `[[Category:Uncategorized pages]]`. 100 per run.
+- **Tag untranslated Japanese content** — `tag_untranslated_japanese.py`: walks all mainspace pages and detects significant Japanese text (hiragana, katakana, CJK ideographs) outside of templates, interwiki links, refs, and other expected contexts. Tags pages with `[[Category:Pages with untranslated japanese content]]`. 100 pages checked per run. Prerequisite for the namespace layer work.
 
 **Cleanup Loop** (category cleanup + talk pages):
 - **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
@@ -101,7 +102,7 @@ All items below require manual editing or human review. None have a safe automat
 
 These are tracked in detail in [VISION.md](VISION.md). Listed here for completeness.
 
-- [ ] **Namespace restructure** â€” introduce `Data:`, `Meta:`, `Export:` namespaces per the VISION.md plan
+- [ ] **Namespace restructure** â€” introduce `Data:`, `Meta:`, `Export:` namespaces per the VISION.md plan. Script `populate_namespace_layers.py` is ready but gated behind `--enable-namespace-layers` flag until namespaces are created on the wiki. Currently creates `Data:` (JSON with QID) and `Export:` (wikitext copy) pages from mainspace.
 - [ ] **Move `{{ill}}` export data to `Export:` namespace** â€” simplify mainspace to plain `[[links]]`; keep the ILL/QID data in `Export:` pages only
 - [ ] **Category name standardization** â€” establish canonical English names for all categories; categories handled via Wikidata rather than translation
 - [ ] **Pramana integration** â€” connect `Data:` pages to pramana.dev as the canonical ID backend
