@@ -261,40 +261,25 @@ def main():
             print(f"{prefix} DRY RUN: would import {page_count} page(s)")
             continue
 
-        # Import into shintowiki (with retry on timeout)
-        max_retries = 3
-        for attempt in range(1, max_retries + 1):
-            try:
-                summary = f"Bot: reimport from enwiki to fix erroneous transclusions {args.run_tag}"
-                result = import_xml(site, xml, summary=summary)
-                import_pages = result.get("import", [])
-                print(f"{prefix} IMPORTED {len(import_pages)} page(s)")
-                for ip in import_pages[:5]:
-                    print(f"    - {ip.get('title', '?')} (revisions: {ip.get('revisions', 0)})")
-                if len(import_pages) > 5:
-                    print(f"    ... and {len(import_pages) - 5} more")
-                imported += 1
+        # Import into shintowiki
+        try:
+            summary = f"Bot: reimport from enwiki to fix erroneous transclusions {args.run_tag}"
+            result = import_xml(site, xml, summary=summary)
+            import_pages = result.get("import", [])
+            print(f"{prefix} IMPORTED {len(import_pages)} page(s)")
+            for ip in import_pages[:5]:
+                print(f"    - {ip.get('title', '?')} (revisions: {ip.get('revisions', 0)})")
+            if len(import_pages) > 5:
+                print(f"    ... and {len(import_pages) - 5} more")
+            imported += 1
+            append_state(args.state_file, title)
+            time.sleep(THROTTLE)
+        except Exception as e:
+            print(f"{prefix} ERROR importing: {e}")
+            errors += 1
+            append_error(title, f"import: {e}")
+            if args.apply:
                 append_state(args.state_file, title)
-                time.sleep(THROTTLE)
-                break
-            except (requests_lib.exceptions.ReadTimeout, requests_lib.exceptions.ConnectionError) as e:
-                if attempt < max_retries:
-                    wait = 10 * attempt
-                    print(f"{prefix} TIMEOUT (attempt {attempt}/{max_retries}), retrying in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    print(f"{prefix} ERROR importing after {max_retries} attempts: {e}")
-                    errors += 1
-                    append_error(title, f"import: {e}")
-                    if args.apply:
-                        append_state(args.state_file, title)
-            except Exception as e:
-                print(f"{prefix} ERROR importing: {e}")
-                errors += 1
-                append_error(title, f"import: {e}")
-                if args.apply:
-                    append_state(args.state_file, title)
-                break
 
     print("\n" + "=" * 60)
     print(f"Checked:  {checked}")
