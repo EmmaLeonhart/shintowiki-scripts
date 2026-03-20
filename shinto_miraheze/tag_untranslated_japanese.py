@@ -7,8 +7,15 @@ untranslated Japanese text (hiragana, katakana, or CJK ideographs
 outside of template parameters, interwiki links, and other expected
 contexts).
 
-Pages with significant Japanese content are tagged with
-[[Category:Pages with untranslated japanese content]].
+Pages are tagged with bucketed categories based on the count of
+Japanese characters found:
+  [[Category:Pages with 50+ untranslated japanese characters]]
+  [[Category:Pages with 100+ untranslated japanese characters]]
+  [[Category:Pages with 150+ untranslated japanese characters]]
+  ... up to 300+
+
+Also removes the old [[Category:Pages with untranslated japanese content]]
+tag if present.
 
 * Stateful — tracks processed pages in a .state file so it can resume
   across pipeline runs.
@@ -40,14 +47,20 @@ THROTTLE = 1.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "tag_untranslated_japanese.state")
 
-TARGET_CAT = "Pages with untranslated japanese content"
-CAT_TAG = f"[[Category:{TARGET_CAT}]]"
-
 USER_AGENT = "JapaneseDetectBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
-# Matches any existing category tag for our target
-TARGET_CAT_RE = re.compile(
-    r'\[\[\s*Category\s*:\s*Pages with untranslated japanese content\s*\]\]',
+# Bucketed thresholds for categorization
+THRESHOLDS = [50, 100, 150, 200, 250, 300]
+
+# Old category to remove during migration
+OLD_CAT_RE = re.compile(
+    r'\[\[\s*Category\s*:\s*Pages with untranslated japanese content\s*\]\]\n?',
+    re.IGNORECASE,
+)
+
+# Matches any of the new bucketed category tags
+BUCKET_CAT_RE = re.compile(
+    r'\[\[\s*Category\s*:\s*Pages with \d+\+ untranslated japanese characters\s*\]\]\n?',
     re.IGNORECASE,
 )
 
@@ -69,54 +82,78 @@ LOCAL_NS_PREFIXES = (
 # Patterns to strip before checking for Japanese text.
 # These are contexts where Japanese is expected/acceptable.
 STRIP_PATTERNS = [
-    # Template calls (entire {{...}} including nested)
-    # We use a non-greedy approach and handle one level of nesting
-    re.compile(r'\{\{[^{}]*(?:\{\{[^{}]*\}\}[^{}]*)*\}\}', re.DOTALL),
+    # Wikidata property sections: == property name (Pxxxx) == ... up to next ==
+    re.compile(r'^==\s*[^=]*\(P\d+\)\s*==.*?(?=^==\s*[^=]|\Z)', re.DOTALL | re.MULTILINE),
+    # Wikitables {| ... |}
+    re.compile(r'\{\|.*?\|\}', re.DOTALL),
+    # Template calls — iteratively strip innermost {{...}} to handle deep nesting
+    # (applied multiple times via strip_templates())
     # Interwiki links [[ja:...]], [[en:...]], etc.
     re.compile(r'\[\[[a-z]{2,}:[^\]]*\]\]', re.IGNORECASE),
     # HTML comments
     re.compile(r'<!--.*?-->', re.DOTALL),
     # <ref>...</ref> tags (references often contain Japanese sources)
     re.compile(r'<ref[^>]*>.*?</ref>', re.DOTALL | re.IGNORECASE),
+    # Self-closing <ref ... /> tags
+    re.compile(r'<ref[^>]*/>', re.IGNORECASE),
     # <nowiki>...</nowiki>
     re.compile(r'<nowiki>.*?</nowiki>', re.DOTALL | re.IGNORECASE),
     # Category links
     re.compile(r'\[\[\s*Category\s*:[^\]]*\]\]', re.IGNORECASE),
     # File/Image links
     re.compile(r'\[\[\s*(?:File|Image)\s*:[^\]]*\]\]', re.IGNORECASE),
+    # Gallery tags
+    re.compile(r'<gallery[^>]*>.*?</gallery>', re.DOTALL | re.IGNORECASE),
 ]
 
-# Minimum number of Japanese characters (after stripping) to count as
-# "untranslated Japanese content" — avoids false positives from single
-# kanji in proper nouns etc.
-MIN_JAPANESE_CHARS = 10
+# Innermost template pattern — no braces inside
+INNERMOST_TEMPLATE_RE = re.compile(r'\{\{[^{}]*\}\}', re.DOTALL)
+
+
+def strip_templates(text):
+    """Iteratively strip innermost templates to handle arbitrary nesting depth."""
+    prev = None
+    while prev != text:
+        prev = text
+        text = INNERMOST_TEMPLATE_RE.sub("", text)
+    return text
 
 
 def count_japanese_chars(text):
     """Count characters that are hiragana, katakana, or CJK ideographs."""
     count = 0
     for ch in text:
-        try:
-            name = unicodedata.name(ch, "")
-        except ValueError:
-            continue
-        if any(keyword in name for keyword in (
-            "HIRAGANA", "KATAKANA", "CJK UNIFIED", "CJK COMPATIBILITY",
-        )):
+        cp = ord(ch)
+        # Fast range checks instead of unicodedata.name() lookup
+        if (0x3040 <= cp <= 0x309F       # Hiragana
+            or 0x30A0 <= cp <= 0x30FF    # Katakana
+            or 0x4E00 <= cp <= 0x9FFF    # CJK Unified Ideographs
+            or 0x3400 <= cp <= 0x4DBF    # CJK Unified Ideographs Extension A
+            or 0xF900 <= cp <= 0xFAFF):  # CJK Compatibility Ideographs
             count += 1
     return count
 
 
-def has_significant_japanese(text):
+def count_japanese_after_strip(text):
     """
-    Return True if the page text contains significant Japanese content
-    outside of templates, interwiki links, and other expected contexts.
+    Return the count of Japanese characters in the page text after
+    removing templates, interwiki links, and other expected contexts.
     """
     stripped = text
     for pattern in STRIP_PATTERNS:
         stripped = pattern.sub("", stripped)
+    # Strip templates iteratively to handle deep nesting
+    stripped = strip_templates(stripped)
+    return count_japanese_chars(stripped)
 
-    return count_japanese_chars(stripped) >= MIN_JAPANESE_CHARS
+
+def bucket_categories(jp_count):
+    """Return the list of category tags for the given Japanese char count."""
+    cats = []
+    for t in THRESHOLDS:
+        if jp_count >= t:
+            cats.append(f"[[Category:Pages with {t}+ untranslated japanese characters]]")
+    return cats
 
 
 # ─── STATE ──────────────────────────────────────────────────
@@ -178,6 +215,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent=USER_AGENT)
+    site.connection.timeout = 120
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
@@ -234,31 +272,71 @@ def main():
                 append_state(STATE_FILE, title)
             continue
 
-        # Already tagged?
-        if TARGET_CAT_RE.search(text):
+        # Count Japanese characters after stripping expected contexts
+        jp_count = count_japanese_after_strip(text)
+
+        # Determine desired bucket categories
+        desired_cats = bucket_categories(jp_count)
+
+        # Check what's already on the page
+        has_old_cat = bool(OLD_CAT_RE.search(text))
+        existing_buckets = set(BUCKET_CAT_RE.findall(text))
+
+        # Build the set of bucket cat strings already present
+        existing_bucket_set = set()
+        for m in BUCKET_CAT_RE.finditer(text):
+            existing_bucket_set.add(m.group(0).rstrip("\n"))
+
+        needs_edit = False
+        new_text = text
+
+        # Remove old category tag
+        if has_old_cat:
+            new_text = OLD_CAT_RE.sub("", new_text)
+            needs_edit = True
+
+        # Remove any existing bucket cats that no longer apply
+        for m in BUCKET_CAT_RE.finditer(new_text):
+            tag = m.group(0).rstrip("\n")
+            if tag not in desired_cats:
+                needs_edit = True
+        if needs_edit or any(c not in existing_bucket_set for c in desired_cats):
+            # Strip all existing bucket cats and re-add the correct ones
+            new_text = BUCKET_CAT_RE.sub("", new_text)
+            needs_edit = True
+
+        if not desired_cats and not needs_edit:
+            clean += 1
             if args.apply:
                 append_state(STATE_FILE, title)
             continue
 
-        # Check for Japanese content
-        if not has_significant_japanese(text):
+        if not desired_cats and needs_edit:
+            # Only had old cat to remove, no new cats needed
+            new_text = new_text.rstrip() + "\n"
+        elif needs_edit:
+            new_text = new_text.rstrip() + "\n" + "\n".join(desired_cats) + "\n"
+
+        if not needs_edit:
             clean += 1
             if args.apply:
                 append_state(STATE_FILE, title)
             continue
 
         if not args.apply:
-            print(f"[{checked}] {title} DRY RUN: would add {CAT_TAG}")
+            cat_names = [f"{t}+" for t in THRESHOLDS if jp_count >= t]
+            print(f"[{checked}] {title} ({jp_count} chars) DRY RUN: would tag {', '.join(cat_names) or 'remove old'}")
             continue
 
         try:
-            new_text = text.rstrip() + "\n" + CAT_TAG + "\n"
+            cat_names = [f"{t}+" for t in THRESHOLDS if jp_count >= t]
+            summary_detail = f"{jp_count} JP chars" + (f", buckets: {', '.join(cat_names)}" if cat_names else ", removing old tag")
             page.save(
                 new_text,
-                summary=f"Bot: tag page with untranslated Japanese content {args.run_tag}",
+                summary=f"Bot: update Japanese content tags ({summary_detail}) {args.run_tag}",
             )
             edited += 1
-            print(f"[{checked}] {title} TAGGED")
+            print(f"[{checked}] {title} TAGGED ({jp_count} chars: {', '.join(cat_names) or 'removed old'})")
             append_state(STATE_FILE, title)
             time.sleep(THROTTLE)
         except Exception as e:
