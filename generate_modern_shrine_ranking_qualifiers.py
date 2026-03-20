@@ -382,13 +382,29 @@ def generate_migration(migration):
     print(f"Fetching claim details ({len(items_values)} items)...")
     all_claims = fetch_claims_batch(list(items_values.keys()), source_prop)
 
+    # For P31 migrations, check which items already have P31=Q845945 (Shinto shrine)
+    # so we can add it before removing the old P31 value
+    items_have_shinto_shrine = set()
+    if source_prop == "P31":
+        for item_id, claims in all_claims.items():
+            for claim in claims:
+                cv = snak_to_qs(claim["mainsnak"])
+                if cv == "Q845945":
+                    items_have_shinto_shrine.add(item_id)
+
     # Generate QuickStatements lines
-    # For each claim: first add the new P13723 statement, then remove the old source property
+    # For P31 migrations: add P31=Q845945 if missing, then add P13723, then remove old P31
     lines = []
+    items_given_shinto_shrine = set()  # Track so we only add it once per item
     for item_id, target_values in sorted(items_values.items()):
         for claim in all_claims.get(item_id, []):
             cv = snak_to_qs(claim["mainsnak"])
             if cv in target_values:
+                # If this is a P31 migration and item lacks P31=Q845945, add it first
+                if source_prop == "P31" and item_id not in items_have_shinto_shrine and item_id not in items_given_shinto_shrine:
+                    lines.append(f"{item_id}|P31|Q845945")
+                    items_given_shinto_shrine.add(item_id)
+                # Add the new P13723 statement with qualifiers/references
                 lines.extend(claim_to_qs_lines(item_id, claim, conferred_by))
                 # Remove the old source property statement
                 lines.append(f"-{item_id}|{source_prop}|{cv}")
