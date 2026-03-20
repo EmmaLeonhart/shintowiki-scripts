@@ -5,3 +5,4 @@ __pycache__/
 .env
 tmpclaude-*/
 desktop.ini
+shinto_miraheze/manual_import_local.py
