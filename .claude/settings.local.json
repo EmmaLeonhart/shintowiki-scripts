@@ -155,7 +155,9 @@
       "Bash(gh run:*)",
       "Bash(gh api:*)",
       "Bash(git:*)",
-      "Bash(:)"
+      "Bash(:)",
+      "Bash(code:*)",
+      "Read(//c/Users/Immanuelle/Downloads/**)"
     ],
     "deny": [],
     "ask": []
