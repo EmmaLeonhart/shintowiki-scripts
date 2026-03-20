@@ -383,12 +383,15 @@ def generate_migration(migration):
     all_claims = fetch_claims_batch(list(items_values.keys()), source_prop)
 
     # Generate QuickStatements lines
+    # For each claim: first add the new P13723 statement, then remove the old source property
     lines = []
     for item_id, target_values in sorted(items_values.items()):
         for claim in all_claims.get(item_id, []):
             cv = snak_to_qs(claim["mainsnak"])
             if cv in target_values:
                 lines.extend(claim_to_qs_lines(item_id, claim, conferred_by))
+                # Remove the old source property statement
+                lines.append(f"-{item_id}|{source_prop}|{cv}")
 
     with open(output_file, "w", encoding="utf-8") as f:
         for line in lines:
