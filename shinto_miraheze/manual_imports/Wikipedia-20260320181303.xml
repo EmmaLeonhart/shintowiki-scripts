@@ -1,0 +1,663 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.46.0-wmf.20</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="126" case="first-letter">MOS</namespace>
+      <namespace key="127" case="first-letter">MOS talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="1728" case="first-letter">Event</namespace>
+      <namespace key="1729" case="first-letter">Event talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Module:Template link with magic/doc</title>
+    <ns>828</ns>
+    <id>60049375</id>
+    <revision>
+      <id>1229392710</id>
+      <parentid>1226760585</parentid>
+      <timeston>2024-06-16T15:18:47Z</timeston>
+      <contributor>
+        <username>Andrybak</username>
+        <id>23735172</id>
+      </contributor>
+      <comment>[[Category:Link modules]]</comment>
+      <origin>1229392710</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="140" sha1="fkldl9jrmq6sc21xgnd9juqq696ot96" xml:space="preserve">Implements {{t|Template link with magic}} (shortcut {{tl-r|tlm}}).
+&lt;includeonly&gt;{{Sandbox other||
+[[Category:Link modules]]
+}}&lt;/includeonly&gt;</text>
+      <sha1>fkldl9jrmq6sc21xgnd9juqq696ot96</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Arguments</title>
+    <ns>828</ns>
+    <id>41298065</id>
+    <revision>
+      <id>948472485</id>
+      <parentid>948472482</parentid>
+      <timeston>2020-04-01T06:12:40Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>948472482</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="10054" sha1="5qx9tzlul9ser30uxj9nbasjt92cevn" xml:space="preserve">-- This module provides easy processing of arguments passed to Scribunto from
+-- #invoke. It is intended for use by other Lua modules, and should not be
+-- called from #invoke directly.
+
+local libraryUtil = require('libraryUtil')
+local checkType = libraryUtil.checkType
+
+local arguments = {}
+
+-- Generate four different tidyVal functions, so that we don't have to check the
+-- options every time we call it.
+
+local function tidyValDefault(key, val)
+	if type(val) == 'string' then
+		val = val:match('^%s*(.-)%s*$')
+		if val == '' then
+			return nil
+		else
+			return val
+		end
+	else
+		return val
+	end
+end
+
+local function tidyValTrimOnly(key, val)
+	if type(val) == 'string' then
+		return val:match('^%s*(.-)%s*$')
+	else
+		return val
+	end
+end
+
+local function tidyValRemoveBlanksOnly(key, val)
+	if type(val) == 'string' then
+		if val:find('%S') then
+			return val
+		else
+			return nil
+		end
+	else
+		return val
+	end
+end
+
+local function tidyValNoChange(key, val)
+	return val
+end
+
+local function matchesTitle(given, title)
+	local tp = type( given )
+	return (tp == 'string' or tp == 'number') and mw.title.new( given ).prefixedText == title
+end
+
+local translate_mt = { __index = function(t, k) return k end }
+
+function arguments.getArgs(frame, options)
+	checkType('getArgs', 1, frame, 'table', true)
+	checkType('getArgs', 2, options, 'table', true)
+	frame = frame or {}
+	options = options or {}
+
+	--[[
+	-- Set up argument translation.
+	--]]
+	options.translate = options.translate or {}
+	if getmetatable(options.translate) == nil then
+		setmetatable(options.translate, translate_mt)
+	end
+	if options.backtranslate == nil then
+		options.backtranslate = {}
+		for k,v in pairs(options.translate) do
+			options.backtranslate[v] = k
+		end
+	end
+	if options.backtranslate and getmetatable(options.backtranslate) == nil then
+		setmetatable(options.backtranslate, {
+			__index = function(t, k)
+				if options.translate[k] ~= k then
+					return nil
+				else
+					return k
+				end
+			end
+		})
+	end
+
+	--[[
+	-- Get the argument tables. If we were passed a valid frame object, get the
+	-- frame arguments (fargs) and the parent frame arguments (pargs), depending
+	-- on the options set and on the parent frame's availability. If we weren't
+	-- passed a valid frame object, we are being called from another Lua module
+	-- or from the debug console, so assume that we were passed a table of args
+	-- directly, and assign it to a new variable (luaArgs).
+	--]]
+	local fargs, pargs, luaArgs
+	if type(frame.args) == 'table' and type(frame.getParent) == 'function' then
+		if options.wrappers then
+			--[[
+			-- The wrappers option makes Module:Arguments look up arguments in
+			-- either the frame argument table or the parent argument table, but
+			-- not both. This means that users can use either the #invoke syntax
+			-- or a wrapper template without the loss of performance associated
+			-- with looking arguments up in both the frame and the parent frame.
+			-- Module:Arguments will look up arguments in the parent frame
+			-- if it finds the parent frame's title in options.wrapper;
+			-- otherwise it will look up arguments in the frame object passed
+			-- to getArgs.
+			--]]
+			local parent = frame:getParent()
+			if not parent then
+				fargs = frame.args
+			else
+				local title = parent:getTitle():gsub('/sandbox$', '')
+				local found = false
+				if matchesTitle(options.wrappers, title) then
+					found = true
+				elseif type(options.wrappers) == 'table' then
+					for _,v in pairs(options.wrappers) do
+						if matchesTitle(v, title) then
+							found = true
+							break
+						end
+					end
+				end
+
+				-- We test for false specifically here so that nil (the default) acts like true.
+				if found or options.frameOnly == false then
+					pargs = parent.args
+				end
+				if not found or options.parentOnly == false then
+					fargs = frame.args
+				end
+			end
+		else
+			-- options.wrapper isn't set, so check the other options.
+			if not options.parentOnly then
+				fargs = frame.args
+			end
+			if not options.frameOnly then
+				local parent = frame:getParent()
+				pargs = parent and parent.args or nil
+			end
+		end
+		if options.parentFirst then
+			fargs, pargs = pargs, fargs
+		end
+	else
+		luaArgs = frame
+	end
+
+	-- Set the order of precedence of the argument tables. If the variables are
+	-- nil, nothing will be added to the table, which is how we avoid clashes
+	-- between the frame/parent args and the Lua args.
+	local argTables = {fargs}
+	argTables[#argTables + 1] = pargs
+	argTables[#argTables + 1] = luaArgs
+
+	--[[
+	-- Generate the tidyVal function. If it has been specified by the user, we
+	-- use that; if not, we choose one of four functions depending on the
+	-- options chosen. This is so that we don't have to call the options table
+	-- every time the function is called.
+	--]]
+	local tidyVal = options.valueFunc
+	if tidyVal then
+		if type(tidyVal) ~= 'function' then
+			error(
+				"bad value assigned to option 'valueFunc'"
+					.. '(function expected, got '
+					.. type(tidyVal)
+					.. ')',
+				2
+			)
+		end
+	elseif options.trim ~= false then
+		if options.removeBlanks ~= false then
+			tidyVal = tidyValDefault
+		else
+			tidyVal = tidyValTrimOnly
+		end
+	else
+		if options.removeBlanks ~= false then
+			tidyVal = tidyValRemoveBlanksOnly
+		else
+			tidyVal = tidyValNoChange
+		end
+	end
+
+	--[[
+	-- Set up the args, metaArgs and nilArgs tables. args will be the one
+	-- accessed from functions, and metaArgs will hold the actual arguments. Nil
+	-- arguments are memoized in nilArgs, and the metatable connects all of them
+	-- together.
+	--]]
+	local args, metaArgs, nilArgs, metatable = {}, {}, {}, {}
+	setmetatable(args, metatable)
+
+	local function mergeArgs(tables)
+		--[[
+		-- Accepts multiple tables as input and merges their keys and values
+		-- into one table. If a value is already present it is not overwritten;
+		-- tables listed earlier have precedence. We are also memoizing nil
+		-- values, which can be overwritten if they are 's' (soft).
+		--]]
+		for _, t in ipairs(tables) do
+			for key, val in pairs(t) do
+				if metaArgs[key] == nil and nilArgs[key] ~= 'h' then
+					local tidiedVal = tidyVal(key, val)
+					if tidiedVal == nil then
+						nilArgs[key] = 's'
+					else
+						metaArgs[key] = tidiedVal
+					end
+				end
+			end
+		end
+	end
+
+	--[[
+	-- Define metatable behaviour. Arguments are memoized in the metaArgs table,
+	-- and are only fetched from the argument tables once. Fetching arguments
+	-- from the argument tables is the most resource-intensive step in this
+	-- module, so we try and avoid it where possible. For this reason, nil
+	-- arguments are also memoized, in the nilArgs table. Also, we keep a record
+	-- in the metatable of when pairs and ipairs have been called, so we do not
+	-- run pairs and ipairs on the argument tables more than once. We also do
+	-- not run ipairs on fargs and pargs if pairs has already been run, as all
+	-- the arguments will already have been copied over.
+	--]]
+
+	metatable.__index = function (t, key)
+		--[[
+		-- Fetches an argument when the args table is indexed. First we check
+		-- to see if the value is memoized, and if not we try and fetch it from
+		-- the argument tables. When we check memoization, we need to check
+		-- metaArgs before nilArgs, as both can be non-nil at the same time.
+		-- If the argument is not present in metaArgs, we also check whether
+		-- pairs has been run yet. If pairs has already been run, we return nil.
+		-- This is because all the arguments will have already been copied into
+		-- metaArgs by the mergeArgs function, meaning that any other arguments
+		-- must be nil.
+		--]]
+		if type(key) == 'string' then
+			key = options.translate[key]
+		end
+		local val = metaArgs[key]
+		if val ~= nil then
+			return val
+		elseif metatable.donePairs or nilArgs[key] then
+			return nil
+		end
+		for _, argTable in ipairs(argTables) do
+			local argTableVal = tidyVal(key, argTable[key])
+			if argTableVal ~= nil then
+				metaArgs[key] = argTableVal
+				return argTableVal
+			end
+		end
+		nilArgs[key] = 'h'
+		return nil
+	end
+
+	metatable.__newindex = function (t, key, val)
+		-- This function is called when a module tries to add a new value to the
+		-- args table, or tries to change an existing value.
+		if type(key) == 'string' then
+			key = options.translate[key]
+		end
+		if options.readOnly then
+			error(
+				'could not write to argument table key "'
+					.. tostring(key)
+					.. '"; the table is read-only',
+				2
+			)
+		elseif options.noOverwrite and args[key] ~= nil then
+			error(
+				'could not write to argument table key "'
+					.. tostring(key)
+					.. '"; overwriting existing arguments is not permitted',
+				2
+			)
+		elseif val == nil then
+			--[[
+			-- If the argument is to be overwritten with nil, we need to erase
+			-- the value in metaArgs, so that __index, __pairs and __ipairs do
+			-- not use a previous existing value, if present; and we also need
+			-- to memoize the nil in nilArgs, so that the value isn't looked
+			-- up in the argument tables if it is accessed again.
+			--]]
+			metaArgs[key] = nil
+			nilArgs[key] = 'h'
+		else
+			metaArgs[key] = val
+		end
+	end
+
+	local function translatenext(invariant)
+		local k, v = next(invariant.t, invariant.k)
+		invariant.k = k
+		if k == nil then
+			return nil
+		elseif type(k) ~= 'string' or not options.backtranslate then
+			return k, v
+		else
+			local backtranslate = options.backtranslate[k]
+			if backtranslate == nil then
+				-- Skip this one. This is a tail call, so this won't cause stack overflow
+				return translatenext(invariant)
+			else
+				return backtranslate, v
+			end
+		end
+	end
+
+	metatable.__pairs = function ()
+		-- Called when pairs is run on the args table.
+		if not metatable.donePairs then
+			mergeArgs(argTables)
+			metatable.donePairs = true
+		end
+		return translatenext, { t = metaArgs }
+	end
+
+	local function inext(t, i)
+		-- This uses our __index metamethod
+		local v = t[i + 1]
+		if v ~= nil then
+			return i + 1, v
+		end
+	end
+
+	metatable.__ipairs = function (t)
+		-- Called when ipairs is run on the args table.
+		return inext, t, 0
+	end
+
+	return args
+end
+
+return arguments</text>
+      <sha1>5qx9tzlul9ser30uxj9nbasjt92cevn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Template link</title>
+    <ns>10</ns>
+    <id>1487430</id>
+    <revision>
+      <id>1270893692</id>
+      <parentid>1223793927</parentid>
+      <timeston>2025-01-21T19:19:39Z</timeston>
+      <contributor>
+        <username>Ahecht</username>
+        <id>2016996</id>
+      </contributor>
+      <comment>Reduce [[WP:PEIS]]</comment>
+      <origin>1270893692</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="224" sha1="kkhg4xclyf9r0bcl7ypdd0yuh41mfu9" xml:space="preserve">&lt;span class="nowrap"&gt;&amp;#123;&amp;#123;&lt;/span&gt;[[Template:{{{1}}}|{{{1}}}]]&lt;span class="nowrap"&gt;&amp;#125;&amp;#125;&lt;/span&gt;&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage and interwikis go on Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>kkhg4xclyf9r0bcl7ypdd0yuh41mfu9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Redirect</title>
+    <ns>828</ns>
+    <id>38849415</id>
+    <revision>
+      <id>1043472510</id>
+      <parentid>1043456012</parentid>
+      <timeston>2021-09-10T07:46:37Z</timeston>
+      <contributor>
+        <username>Johnuniq</username>
+        <id>6036800</id>
+      </contributor>
+      <comment>restore p.getTargetFromText which is used by [[Module:RfD]] which is causing "Lua error in Module:RfD at line 87: attempt to call upvalue 'getTargetFromText' (a nil value)"</comment>
+      <origin>1043472510</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="3295" sha1="ixuh7hehfu8mxwx3ai7pksok45inaxs" xml:space="preserve">-- This module provides functions for getting the target of a redirect page.
+
+local p = {}
+
+-- Gets a mw.title object, using pcall to avoid generating script errors if we
+-- are over the expensive function count limit (among other possible causes).
+local function getTitle(...)
+	local success, titleObj = pcall(mw.title.new, ...)
+	if success then
+		return titleObj
+	else
+		return nil
+	end
+end
+
+-- Gets the name of a page that a redirect leads to, or nil if it isn't a
+-- redirect.
+function p.getTargetFromText(text)
+	local target = string.match(
+		text,
+		"^%s*#[Rr][Ee][Dd][Ii][Rr][Ee][Cc][Tt]%s*:?%s*%[%[([^%[%]|]-)%]%]"
+	) or string.match(
+		text,
+		"^%s*#[Rr][Ee][Dd][Ii][Rr][Ee][Cc][Tt]%s*:?%s*%[%[([^%[%]|]-)|[^%[%]]-%]%]"
+	)
+	return target and mw.uri.decode(target, 'PATH')
+end
+
+-- Gets the target of a redirect. If the page specified is not a redirect,
+-- returns nil.
+function p.getTarget(page, fulltext)
+	-- Get the title object. Both page names and title objects are allowed
+	-- as input.
+	local titleObj
+	if type(page) == 'string' or type(page) == 'number' then
+		titleObj = getTitle(page)
+	elseif type(page) == 'table' and type(page.getContent) == 'function' then
+		titleObj = page
+	else
+		error(string.format(
+			"bad argument #1 to 'getTarget'"
+				.. " (string, number, or title object expected, got %s)",
+			type(page)
+		), 2)
+	end
+	if not titleObj then
+		return nil
+	end
+	local targetTitle = titleObj.redirectTarget
+	if targetTitle then
+		if fulltext then
+			return targetTitle.fullText
+		else
+			return targetTitle.prefixedText
+		end
+	else
+		return nil
+	end
+end
+
+--[[
+-- Given a single page name determines what page it redirects to and returns the
+-- target page name, or the passed page name when not a redirect. The passed
+-- page name can be given as plain text or as a page link.
+--
+-- Returns page name as plain text, or when the bracket parameter is given, as a
+-- page link. Returns an error message when page does not exist or the redirect
+-- target cannot be determined for some reason.
+--]]
+function p.luaMain(rname, bracket, fulltext)
+	if type(rname) ~= "string" or not rname:find("%S") then
+		return nil
+	end
+	bracket = bracket and "[[%s]]" or "%s"
+	rname = rname:match("%[%[(.+)%]%]") or rname
+	local target = p.getTarget(rname, fulltext)
+	local ret = target or rname
+	ret = getTitle(ret)
+	if ret then
+		if fulltext then
+			ret = ret.fullText
+		else
+			ret = ret.prefixedText
+		end
+		return bracket:format(ret)
+	else
+		return nil
+	end
+end
+
+-- Provides access to the luaMain function from wikitext.
+function p.main(frame)
+	local args = require('Module:Arguments').getArgs(frame, {frameOnly = true})
+	return p.luaMain(args[1], args.bracket, args.fulltext) or ''
+end
+
+-- Returns true if the specified page is a redirect, and false otherwise.
+function p.luaIsRedirect(page)
+	local titleObj = getTitle(page)
+	if not titleObj then
+		return false
+	end
+	if titleObj.isRedirect then
+		return true
+	else
+		return false
+	end
+end
+
+-- Provides access to the luaIsRedirect function from wikitext, returning 'yes'
+-- if the specified page is a redirect, and the blank string otherwise.
+function p.isRedirect(frame)
+	local args = require('Module:Arguments').getArgs(frame, {frameOnly = true})
+	if p.luaIsRedirect(args[1]) then
+		return 'yes'
+	else
+		return ''
+	end
+end
+
+return p</text>
+      <sha1>ixuh7hehfu8mxwx3ai7pksok45inaxs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:T</title>
+    <ns>10</ns>
+    <id>568524</id>
+    <redirect title="Template:Template link" />
+    <revision>
+      <id>1091576724</id>
+      <parentid>1006441921</parentid>
+      <timeston>2022-06-05T04:09:28Z</timeston>
+      <contributor>
+        <username>Dinoguy1000</username>
+        <id>2412089</id>
+      </contributor>
+      <comment>not that it matters much, but fix comment closing</comment>
+      <origin>1091576724</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="180" sha1="lundwspklp4q9oao3icq7qp0luocglh" xml:space="preserve">#REDIRECT [[Template:Template link]]
+
+{{Rcat shell|
+{{R from template shortcut}}
+}}
+&lt;!-- Used as Template:tl throughout English Wikipedia; demo template referenced only on meta --&gt;</text>
+      <sha1>lundwspklp4q9oao3icq7qp0luocglh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Template link no redirect</title>
+    <ns>10</ns>
+    <id>69068948</id>
+    <revision>
+      <id>1109415333</id>
+      <parentid>1050807832</parentid>
+      <timeston>2022-09-09T17:59:39Z</timeston>
+      <contributor>
+        <username>MusikBot II</username>
+        <id>29539620</id>
+      </contributor>
+      <minor/>
+      <comment>Protected "[[Template:Template link no redirect]]": [[Wikipedia:High-risk templates|High-risk template or module]]: 61213 transclusions ([[User:MusikBot II/TemplateProtector|more info]]) ([Edit=Require template editor access] (indefinite) [Move=Require template editor access] (indefinite))</comment>
+      <origin>1050807832</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="480" sha1="50p95ruqsind3drddlv0lkso4oxi8e3" xml:space="preserve">{{{{{|safesubst:}}}#if: {{{{{|safesubst:}}}#invoke:Redirect|isRedirect|Template:{{{1}}}}}
+| &lt;span class="plainlinks"&gt;&amp;#123;&amp;#123;[{{{{{|safesubst:}}}fullurl:Template:{{{1}}}|redirect=no}} {{{2|{{{1}}}}}}]&amp;#125;&amp;#125;&lt;/span&gt;
+| {{{{{|safesubst:}}}#if:{{{2|}}}|&amp;#123;&amp;#123;[[:{{{{{|safesubst:}}}Template:FULLPAGENAME:{{{1}}}}}|{{{2}}}]]&amp;#125;&amp;#125;|&amp;#123;&amp;#123;[[:{{{{{|safesubst:}}}FULLPAGENAME:Template:{{{1}}}}}|{{{1}}}]]&amp;#125;&amp;#125;}}
+}}&lt;noinclude&gt;
+{{documentation}}
+&lt;/noinclude&gt;</text>
+      <sha1>50p95ruqsind3drddlv0lkso4oxi8e3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Tl-r</title>
+    <ns>10</ns>
+    <id>69068989</id>
+    <redirect title="Template:Template link no redirect" />
+    <revision>
+      <id>1109415336</id>
+      <parentid>1050807264</parentid>
+      <timeston>2022-09-09T17:59:40Z</timeston>
+      <contributor>
+        <username>MusikBot II</username>
+        <id>29539620</id>
+      </contributor>
+      <minor/>
+      <comment>Protected "[[Template:Tl-r]]": [[Wikipedia:High-risk templates|High-risk template or module]]: 61213 transclusions ([[User:MusikBot II/TemplateProtector|more info]]) ([Edit=Require template editor access] (indefinite) [Move=Require template editor access] (indefinite))</comment>
+      <origin>1050807223</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="48" sha1="fwrhppxq5zgj058i2w44hvpcv8nryx0" xml:space="preserve">#REDIRECT [[Template:Template link no redirect]]</text>
+      <sha1>fwrhppxq5zgj058i2w44hvpcv8nryx0</sha1>
+    </revision>
+  </page>
+</mediawiki>
