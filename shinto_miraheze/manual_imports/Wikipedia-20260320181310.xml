@@ -1,0 +1,3862 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.46.0-wmf.20</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="126" case="first-letter">MOS</namespace>
+      <namespace key="127" case="first-letter">MOS talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="1728" case="first-letter">Event</namespace>
+      <namespace key="1729" case="first-letter">Event talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Module:Reply to/doc</title>
+    <ns>828</ns>
+    <id>50075863</id>
+    <revision>
+      <id>1333029775</id>
+      <parentid>1332904709</parentid>
+      <timeston>2026-01-15T07:34:30Z</timeston>
+      <contributor>
+        <username>Annh07</username>
+        <id>46051904</id>
+      </contributor>
+      <minor/>
+      <comment>Reverted edit by [[Special:Contribs/~2026-29391-7|~2026-29391-7]] ([[User talk:~2026-29391-7|talk]]) to last version by CanonNi</comment>
+      <origin>1297308361</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1194" sha1="kn4bubrszj1fmofdh7vs2s6jwhkcs5b" xml:space="preserve">{{High-risk|approximately 150,000}}
+{{module rating|release}}
+{{module rating|protected}}
+
+This module is used by {{tl|Reply to}} to trigger a [[Wikipedia:Notifications|notification]] to one or several registered user(s) you are replying to in a discussion.
+
+== Usage from wikitext ==
+This module cannot be used directly from wikitext. Please use the {{tl|Reply to}} template instead.
+
+== Usage within templates ==
+&lt;syntaxhighlight lang="wikitext"&gt;
+{{#invoke:Reply to|replyto|example=''example name''|max=''maximum number of names''}}
+&lt;/syntaxhighlight&gt;
+
+*The {{para|example}} parameter sets the name that will show when the template page is viewed. This parameter should be surrounded by {{tag|noinclude}} so that it is not transcluded with the parent template, and the parent template will show an error message if no names are specified.
+*The {{para|max}} parameter sets the maximum number of names that the template will accept. If not specified, it defaults to 50 (which is the maximum number that Echo currently supports {{as of|August 2015|lc=yes}}). If this number of names is exceeded, the parent template will return an error message.
+
+&lt;includeonly&gt;{{sandbox other||
+
+}}&lt;/includeonly&gt;</text>
+      <sha1>kn4bubrszj1fmofdh7vs2s6jwhkcs5b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Yesno</title>
+    <ns>828</ns>
+    <id>38665046</id>
+    <revision>
+      <id>948473803</id>
+      <parentid>948472535</parentid>
+      <timeston>2020-04-01T06:27:55Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <comment>Undid revision 948472533 by [[Special:Contributions/w&gt;Vogone|w&gt;Vogone]] ([[User talk:w&gt;Vogone|talk]])</comment>
+      <origin>948473803</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="745" sha1="swdskn7svew8i9wuydn9uj5l3r2ghcs" xml:space="preserve">-- Function allowing for consistent treatment of boolean-like wikitext input.
+-- It works similarly to the template {{yesno}}.
+
+return function (val, default)
+	-- If your wiki uses non-ascii characters for any of "yes", "no", etc., you
+	-- should replace "val:lower()" with "mw.ustring.lower(val)" in the
+	-- following line.
+	val = type(val) == 'string' and val:lower() or val
+	if val == nil then
+		return nil
+	elseif val == true 
+		or val == 'yes'
+		or val == 'y'
+		or val == 'true'
+		or val == 't'
+		or val == 'on'
+		or tonumber(val) == 1
+	then
+		return true
+	elseif val == false
+		or val == 'no'
+		or val == 'n'
+		or val == 'false'
+		or val == 'f'
+		or val == 'off'
+		or tonumber(val) == 0
+	then
+		return false
+	else
+		return default
+	end
+end</text>
+      <sha1>swdskn7svew8i9wuydn9uj5l3r2ghcs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Arguments</title>
+    <ns>828</ns>
+    <id>41298065</id>
+    <revision>
+      <id>948472485</id>
+      <parentid>948472482</parentid>
+      <timeston>2020-04-01T06:12:40Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>948472482</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="10054" sha1="5qx9tzlul9ser30uxj9nbasjt92cevn" xml:space="preserve">-- This module provides easy processing of arguments passed to Scribunto from
+-- #invoke. It is intended for use by other Lua modules, and should not be
+-- called from #invoke directly.
+
+local libraryUtil = require('libraryUtil')
+local checkType = libraryUtil.checkType
+
+local arguments = {}
+
+-- Generate four different tidyVal functions, so that we don't have to check the
+-- options every time we call it.
+
+local function tidyValDefault(key, val)
+	if type(val) == 'string' then
+		val = val:match('^%s*(.-)%s*$')
+		if val == '' then
+			return nil
+		else
+			return val
+		end
+	else
+		return val
+	end
+end
+
+local function tidyValTrimOnly(key, val)
+	if type(val) == 'string' then
+		return val:match('^%s*(.-)%s*$')
+	else
+		return val
+	end
+end
+
+local function tidyValRemoveBlanksOnly(key, val)
+	if type(val) == 'string' then
+		if val:find('%S') then
+			return val
+		else
+			return nil
+		end
+	else
+		return val
+	end
+end
+
+local function tidyValNoChange(key, val)
+	return val
+end
+
+local function matchesTitle(given, title)
+	local tp = type( given )
+	return (tp == 'string' or tp == 'number') and mw.title.new( given ).prefixedText == title
+end
+
+local translate_mt = { __index = function(t, k) return k end }
+
+function arguments.getArgs(frame, options)
+	checkType('getArgs', 1, frame, 'table', true)
+	checkType('getArgs', 2, options, 'table', true)
+	frame = frame or {}
+	options = options or {}
+
+	--[[
+	-- Set up argument translation.
+	--]]
+	options.translate = options.translate or {}
+	if getmetatable(options.translate) == nil then
+		setmetatable(options.translate, translate_mt)
+	end
+	if options.backtranslate == nil then
+		options.backtranslate = {}
+		for k,v in pairs(options.translate) do
+			options.backtranslate[v] = k
+		end
+	end
+	if options.backtranslate and getmetatable(options.backtranslate) == nil then
+		setmetatable(options.backtranslate, {
+			__index = function(t, k)
+				if options.translate[k] ~= k then
+					return nil
+				else
+					return k
+				end
+			end
+		})
+	end
+
+	--[[
+	-- Get the argument tables. If we were passed a valid frame object, get the
+	-- frame arguments (fargs) and the parent frame arguments (pargs), depending
+	-- on the options set and on the parent frame's availability. If we weren't
+	-- passed a valid frame object, we are being called from another Lua module
+	-- or from the debug console, so assume that we were passed a table of args
+	-- directly, and assign it to a new variable (luaArgs).
+	--]]
+	local fargs, pargs, luaArgs
+	if type(frame.args) == 'table' and type(frame.getParent) == 'function' then
+		if options.wrappers then
+			--[[
+			-- The wrappers option makes Module:Arguments look up arguments in
+			-- either the frame argument table or the parent argument table, but
+			-- not both. This means that users can use either the #invoke syntax
+			-- or a wrapper template without the loss of performance associated
+			-- with looking arguments up in both the frame and the parent frame.
+			-- Module:Arguments will look up arguments in the parent frame
+			-- if it finds the parent frame's title in options.wrapper;
+			-- otherwise it will look up arguments in the frame object passed
+			-- to getArgs.
+			--]]
+			local parent = frame:getParent()
+			if not parent then
+				fargs = frame.args
+			else
+				local title = parent:getTitle():gsub('/sandbox$', '')
+				local found = false
+				if matchesTitle(options.wrappers, title) then
+					found = true
+				elseif type(options.wrappers) == 'table' then
+					for _,v in pairs(options.wrappers) do
+						if matchesTitle(v, title) then
+							found = true
+							break
+						end
+					end
+				end
+
+				-- We test for false specifically here so that nil (the default) acts like true.
+				if found or options.frameOnly == false then
+					pargs = parent.args
+				end
+				if not found or options.parentOnly == false then
+					fargs = frame.args
+				end
+			end
+		else
+			-- options.wrapper isn't set, so check the other options.
+			if not options.parentOnly then
+				fargs = frame.args
+			end
+			if not options.frameOnly then
+				local parent = frame:getParent()
+				pargs = parent and parent.args or nil
+			end
+		end
+		if options.parentFirst then
+			fargs, pargs = pargs, fargs
+		end
+	else
+		luaArgs = frame
+	end
+
+	-- Set the order of precedence of the argument tables. If the variables are
+	-- nil, nothing will be added to the table, which is how we avoid clashes
+	-- between the frame/parent args and the Lua args.
+	local argTables = {fargs}
+	argTables[#argTables + 1] = pargs
+	argTables[#argTables + 1] = luaArgs
+
+	--[[
+	-- Generate the tidyVal function. If it has been specified by the user, we
+	-- use that; if not, we choose one of four functions depending on the
+	-- options chosen. This is so that we don't have to call the options table
+	-- every time the function is called.
+	--]]
+	local tidyVal = options.valueFunc
+	if tidyVal then
+		if type(tidyVal) ~= 'function' then
+			error(
+				"bad value assigned to option 'valueFunc'"
+					.. '(function expected, got '
+					.. type(tidyVal)
+					.. ')',
+				2
+			)
+		end
+	elseif options.trim ~= false then
+		if options.removeBlanks ~= false then
+			tidyVal = tidyValDefault
+		else
+			tidyVal = tidyValTrimOnly
+		end
+	else
+		if options.removeBlanks ~= false then
+			tidyVal = tidyValRemoveBlanksOnly
+		else
+			tidyVal = tidyValNoChange
+		end
+	end
+
+	--[[
+	-- Set up the args, metaArgs and nilArgs tables. args will be the one
+	-- accessed from functions, and metaArgs will hold the actual arguments. Nil
+	-- arguments are memoized in nilArgs, and the metatable connects all of them
+	-- together.
+	--]]
+	local args, metaArgs, nilArgs, metatable = {}, {}, {}, {}
+	setmetatable(args, metatable)
+
+	local function mergeArgs(tables)
+		--[[
+		-- Accepts multiple tables as input and merges their keys and values
+		-- into one table. If a value is already present it is not overwritten;
+		-- tables listed earlier have precedence. We are also memoizing nil
+		-- values, which can be overwritten if they are 's' (soft).
+		--]]
+		for _, t in ipairs(tables) do
+			for key, val in pairs(t) do
+				if metaArgs[key] == nil and nilArgs[key] ~= 'h' then
+					local tidiedVal = tidyVal(key, val)
+					if tidiedVal == nil then
+						nilArgs[key] = 's'
+					else
+						metaArgs[key] = tidiedVal
+					end
+				end
+			end
+		end
+	end
+
+	--[[
+	-- Define metatable behaviour. Arguments are memoized in the metaArgs table,
+	-- and are only fetched from the argument tables once. Fetching arguments
+	-- from the argument tables is the most resource-intensive step in this
+	-- module, so we try and avoid it where possible. For this reason, nil
+	-- arguments are also memoized, in the nilArgs table. Also, we keep a record
+	-- in the metatable of when pairs and ipairs have been called, so we do not
+	-- run pairs and ipairs on the argument tables more than once. We also do
+	-- not run ipairs on fargs and pargs if pairs has already been run, as all
+	-- the arguments will already have been copied over.
+	--]]
+
+	metatable.__index = function (t, key)
+		--[[
+		-- Fetches an argument when the args table is indexed. First we check
+		-- to see if the value is memoized, and if not we try and fetch it from
+		-- the argument tables. When we check memoization, we need to check
+		-- metaArgs before nilArgs, as both can be non-nil at the same time.
+		-- If the argument is not present in metaArgs, we also check whether
+		-- pairs has been run yet. If pairs has already been run, we return nil.
+		-- This is because all the arguments will have already been copied into
+		-- metaArgs by the mergeArgs function, meaning that any other arguments
+		-- must be nil.
+		--]]
+		if type(key) == 'string' then
+			key = options.translate[key]
+		end
+		local val = metaArgs[key]
+		if val ~= nil then
+			return val
+		elseif metatable.donePairs or nilArgs[key] then
+			return nil
+		end
+		for _, argTable in ipairs(argTables) do
+			local argTableVal = tidyVal(key, argTable[key])
+			if argTableVal ~= nil then
+				metaArgs[key] = argTableVal
+				return argTableVal
+			end
+		end
+		nilArgs[key] = 'h'
+		return nil
+	end
+
+	metatable.__newindex = function (t, key, val)
+		-- This function is called when a module tries to add a new value to the
+		-- args table, or tries to change an existing value.
+		if type(key) == 'string' then
+			key = options.translate[key]
+		end
+		if options.readOnly then
+			error(
+				'could not write to argument table key "'
+					.. tostring(key)
+					.. '"; the table is read-only',
+				2
+			)
+		elseif options.noOverwrite and args[key] ~= nil then
+			error(
+				'could not write to argument table key "'
+					.. tostring(key)
+					.. '"; overwriting existing arguments is not permitted',
+				2
+			)
+		elseif val == nil then
+			--[[
+			-- If the argument is to be overwritten with nil, we need to erase
+			-- the value in metaArgs, so that __index, __pairs and __ipairs do
+			-- not use a previous existing value, if present; and we also need
+			-- to memoize the nil in nilArgs, so that the value isn't looked
+			-- up in the argument tables if it is accessed again.
+			--]]
+			metaArgs[key] = nil
+			nilArgs[key] = 'h'
+		else
+			metaArgs[key] = val
+		end
+	end
+
+	local function translatenext(invariant)
+		local k, v = next(invariant.t, invariant.k)
+		invariant.k = k
+		if k == nil then
+			return nil
+		elseif type(k) ~= 'string' or not options.backtranslate then
+			return k, v
+		else
+			local backtranslate = options.backtranslate[k]
+			if backtranslate == nil then
+				-- Skip this one. This is a tail call, so this won't cause stack overflow
+				return translatenext(invariant)
+			else
+				return backtranslate, v
+			end
+		end
+	end
+
+	metatable.__pairs = function ()
+		-- Called when pairs is run on the args table.
+		if not metatable.donePairs then
+			mergeArgs(argTables)
+			metatable.donePairs = true
+		end
+		return translatenext, { t = metaArgs }
+	end
+
+	local function inext(t, i)
+		-- This uses our __index metamethod
+		local v = t[i + 1]
+		if v ~= nil then
+			return i + 1, v
+		end
+	end
+
+	metatable.__ipairs = function (t)
+		-- Called when ipairs is run on the args table.
+		return inext, t, 0
+	end
+
+	return args
+end
+
+return arguments</text>
+      <sha1>5qx9tzlul9ser30uxj9nbasjt92cevn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Tl</title>
+    <ns>10</ns>
+    <id>66733012</id>
+    <redirect title="Template:Template link" />
+    <revision>
+      <id>1006436965</id>
+      <timeston>2021-02-12T22:03:00Z</timeston>
+      <contributor>
+        <username>Anthony Appleyard</username>
+        <id>119438</id>
+      </contributor>
+      <comment>Anthony Appleyard moved page [[Template:Tl]] to [[Template:Template link]]: [[Special:Permalink/1006428669|Requested]] by Buidhe at [[WP:RM/TR]]: RM closed as move</comment>
+      <origin>1006436965</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="83" sha1="p1dn3i2ckb7gtckkrbn0xh6ckx8nei1" xml:space="preserve">#REDIRECT [[Template:Template link]]
+
+{{Redirect category shell|
+{{R from move}}
+}}</text>
+      <sha1>p1dn3i2ckb7gtckkrbn0xh6ckx8nei1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Template link</title>
+    <ns>10</ns>
+    <id>1487430</id>
+    <revision>
+      <id>1270893692</id>
+      <parentid>1223793927</parentid>
+      <timeston>2025-01-21T19:19:39Z</timeston>
+      <contributor>
+        <username>Ahecht</username>
+        <id>2016996</id>
+      </contributor>
+      <comment>Reduce [[WP:PEIS]]</comment>
+      <origin>1270893692</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="224" sha1="kkhg4xclyf9r0bcl7ypdd0yuh41mfu9" xml:space="preserve">&lt;span class="nowrap"&gt;&amp;#123;&amp;#123;&lt;/span&gt;[[Template:{{{1}}}|{{{1}}}]]&lt;span class="nowrap"&gt;&amp;#125;&amp;#125;&lt;/span&gt;&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage and interwikis go on Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>kkhg4xclyf9r0bcl7ypdd0yuh41mfu9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Message box</title>
+    <ns>828</ns>
+    <id>40574910</id>
+    <revision>
+      <id>1317729838</id>
+      <parentid>1314697419</parentid>
+      <timeston>2025-10-19T18:19:52Z</timeston>
+      <contributor>
+        <username>Izno</username>
+        <id>2927383</id>
+      </contributor>
+      <comment>below in div mbox</comment>
+      <origin>1317729838</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="22838" sha1="ocboyo877qnpqum2b9fyiquh72vukqa" xml:space="preserve">require('strict')
+local getArgs
+local yesno = require('Module:Yesno')
+local lang = mw.language.getContentLanguage()
+
+local CONFIG_MODULE = 'Module:Message box/configuration'
+local DEMOSPACES = {talk = 'tmbox', image = 'imbox', file = 'imbox', category = 'cmbox', article = 'ambox', main = 'ambox'}
+
+--------------------------------------------------------------------------------
+-- Helper functions
+--------------------------------------------------------------------------------
+
+local function getTitleObject(...)
+	-- Get the title object, passing the function through pcall
+	-- in case we are over the expensive function count limit.
+	local success, title = pcall(mw.title.new, ...)
+	if success then
+		return title
+	end
+end
+
+local function union(t1, t2)
+	-- Returns the union of two arrays.
+	local vals = {}
+	for i, v in ipairs(t1) do
+		vals[v] = true
+	end
+	for i, v in ipairs(t2) do
+		vals[v] = true
+	end
+	local ret = {}
+	for k in pairs(vals) do
+		table.insert(ret, k)
+	end
+	table.sort(ret)
+	return ret
+end
+
+local function getArgNums(args, prefix)
+	local nums = {}
+	for k, v in pairs(args) do
+		local num = mw.ustring.match(tostring(k), '^' .. prefix .. '([1-9]%d*)$')
+		if num then
+			table.insert(nums, tonumber(num))
+		end
+	end
+	table.sort(nums)
+	return nums
+end
+
+--------------------------------------------------------------------------------
+-- Box class definition
+--------------------------------------------------------------------------------
+
+local MessageBox = {}
+MessageBox.__index = MessageBox
+
+function MessageBox.new(boxType, args, cfg)
+	args = args or {}
+	local obj = {}
+
+	-- Set the title object and the namespace.
+	obj.title = getTitleObject(args.page) or mw.title.getCurrentTitle()
+
+	-- Set the config for our box type.
+	obj.cfg = cfg[boxType]
+	if not obj.cfg then
+		local ns = obj.title.namespace
+		-- boxType is "mbox" or invalid input
+		if args.demospace and args.demospace ~= '' then
+			-- implement demospace parameter of mbox
+			local demospace = string.lower(args.demospace)
+			if DEMOSPACES[demospace] then
+				-- use template from DEMOSPACES
+				obj.cfg = cfg[DEMOSPACES[demospace]]
+			elseif string.find( demospace, 'talk' ) then
+				-- demo as a talk page
+				obj.cfg = cfg.tmbox
+			else
+				-- default to ombox
+				obj.cfg = cfg.ombox
+			end
+		elseif ns == 0 then
+			obj.cfg = cfg.ambox -- main namespace
+		elseif ns == 6 then
+			obj.cfg = cfg.imbox -- file namespace
+		elseif ns == 14 then
+			obj.cfg = cfg.cmbox -- category namespace
+		else
+			local nsTable = mw.site.namespaces[ns]
+			if nsTable and nsTable.isTalk then
+				obj.cfg = cfg.tmbox -- any talk namespace
+			else
+				obj.cfg = cfg.ombox -- other namespaces or invalid input
+			end
+		end
+	end
+
+	-- Set the arguments, and remove all blank arguments except for the ones
+	-- listed in cfg.allowBlankParams.
+	do
+		local newArgs = {}
+		for k, v in pairs(args) do
+			if v ~= '' then
+				newArgs[k] = v
+			end
+		end
+		for i, param in ipairs(obj.cfg.allowBlankParams or {}) do
+			newArgs[param] = args[param]
+		end
+		obj.args = newArgs
+	end
+
+	-- Define internal data structure.
+	obj.categories = {}
+	obj.classes = {}
+	-- For lazy loading of [[Module:Category handler]].
+	obj.hasCategories = false
+
+	return setmetatable(obj, MessageBox)
+end
+
+function MessageBox:addCat(ns, cat, sort)
+	if not cat then
+		return nil
+	end
+	if sort then
+		cat = string.format('[[Category:%s|%s]]', cat, sort)
+	else
+		cat = string.format('[[Category:%s]]', cat)
+	end
+	self.hasCategories = true
+	self.categories[ns] = self.categories[ns] or {}
+	table.insert(self.categories[ns], cat)
+end
+
+function MessageBox:addClass(class)
+	if not class then
+		return nil
+	end
+	table.insert(self.classes, class)
+end
+
+function MessageBox:setParameters()
+	local args = self.args
+	local cfg = self.cfg
+
+	-- Get type data.
+	self.type = args.type
+	local typeData = cfg.types[self.type]
+	self.invalidTypeError = cfg.showInvalidTypeError
+		and self.type
+		and not typeData
+	typeData = typeData or cfg.types[cfg.default]
+	self.typeClass = typeData.class
+	self.typeImage = typeData.image
+	self.typeImageNeedsLink = typeData.imageNeedsLink
+
+	-- Find if the box has been wrongly substituted.
+	self.isSubstituted = cfg.substCheck and args.subst == 'SUBST'
+
+	-- Find whether we are using a small message box.
+	self.isSmall = cfg.allowSmall and (
+		cfg.smallParam and args.small == cfg.smallParam
+		or not cfg.smallParam and yesno(args.small)
+	)
+
+	-- Set the below row.
+	self.below = cfg.below and args.below
+	
+	-- Add attributes, classes and styles.
+	self.id = args.id
+	self.name = args.name
+	if self.name then
+		self:addClass('box-' .. string.gsub(self.name,' ','_'))
+	end
+	if yesno(args.plainlinks) ~= false then
+		self:addClass('plainlinks')
+	end
+	if self.below then
+		self:addClass('mbox-with-below')
+	end
+	for _, class in ipairs(cfg.classes or {}) do
+		self:addClass(class)
+	end
+	if self.isSmall then
+		self:addClass(cfg.smallClass or 'mbox-small')
+	end
+	self:addClass(self.typeClass)
+	self:addClass(args.class)
+	self.style = args.style
+	self.attrs = args.attrs
+
+	-- Set text style.
+	self.textstyle = args.textstyle
+
+	-- Set image classes.
+	self.imageRightClass = args.imagerightclass or args.imageclass
+	self.imageLeftClass = args.imageleftclass or args.imageclass
+
+	-- Find if we are on the template page or not. This functionality is only
+	-- used if useCollapsibleTextFields is set, or if both cfg.templateCategory
+	-- and cfg.templateCategoryRequireName are set.
+	self.useCollapsibleTextFields = cfg.useCollapsibleTextFields
+	if self.useCollapsibleTextFields
+		or cfg.templateCategory
+		and cfg.templateCategoryRequireName
+	then
+		if self.name then
+			local templateName = mw.ustring.match(
+				self.name,
+				'^[tT][eE][mM][pP][lL][aA][tT][eE][%s_]*:[%s_]*(.*)$'
+			) or self.name
+			templateName = 'Template:' .. templateName
+			self.templateTitle = getTitleObject(templateName)
+		end
+		self.isTemplatePage = self.templateTitle
+			and mw.title.equals(self.title, self.templateTitle)
+	end
+	
+	-- Process data for collapsible text fields. At the moment these are only
+	-- used in {{ambox}}.
+	if self.useCollapsibleTextFields then
+		-- Get the self.issue value.
+		if self.isSmall and args.smalltext then
+			self.issue = args.smalltext
+		else
+			local sect
+			if args.sect == '' then
+				sect = 'This ' .. (cfg.sectionDefault or 'page')
+			elseif type(args.sect) == 'string' then
+				sect = 'This ' .. args.sect
+			end
+			local issue = args.issue
+			issue = type(issue) == 'string' and issue ~= '' and issue or nil
+			local text = args.text
+			text = type(text) == 'string' and text or nil
+			local issues = {}
+			table.insert(issues, sect)
+			table.insert(issues, issue)
+			table.insert(issues, text)
+			self.issue = table.concat(issues, ' ')
+		end
+
+		-- Get the self.talk value.
+		local talk = args.talk
+		-- Show talk links on the template page or template subpages if the talk
+		-- parameter is blank.
+		if talk == ''
+			and self.templateTitle
+			and (
+				mw.title.equals(self.templateTitle, self.title)
+				or self.title:isSubpageOf(self.templateTitle)
+			)
+		then
+			talk = '#'
+		elseif talk == '' then
+			talk = nil
+		end
+		if talk then
+			-- If the talk value is a talk page, make a link to that page. Else
+			-- assume that it's a section heading, and make a link to the talk
+			-- page of the current page with that section heading.
+			local talkTitle = getTitleObject(talk)
+			local talkArgIsTalkPage = true
+			if not talkTitle or not talkTitle.isTalkPage then
+				talkArgIsTalkPage = false
+				talkTitle = getTitleObject(
+					self.title.text,
+					mw.site.namespaces[self.title.namespace].talk.id
+				)
+			end
+			if talkTitle and talkTitle.exists then
+                local talkText
+                if self.isSmall then
+                    local talkLink = talkArgIsTalkPage and talk or (talkTitle.prefixedText .. (talk == '#' and '' or '#') .. talk)
+                    talkText = string.format('([[%s|talk]])', talkLink)
+                else
+                    talkText = 'Relevant discussion may be found on'
+                    if talkArgIsTalkPage then
+                        talkText = string.format(
+                            '%s [[%s|%s]].',
+                            talkText,
+                            talk,
+                            talkTitle.prefixedText
+                        )
+                    else
+                        talkText = string.format(
+                            '%s the [[%s' .. (talk == '#' and '' or '#') .. '%s|talk page]].',
+                            talkText,
+                            talkTitle.prefixedText,
+                            talk
+                        )
+                    end
+                end
+				self.talk = talkText
+			end
+		end
+
+		-- Get other values.
+		self.fix = args.fix ~= '' and args.fix or nil
+		local date
+		if args.date and args.date ~= '' then
+			date = args.date
+		elseif args.date == '' and self.isTemplatePage then
+			date = lang:formatDate('F Y')
+		end
+		if date then
+			self.date = string.format(" &lt;span class='date-container'&gt;&lt;i&gt;(&lt;span class='date'&gt;%s&lt;/span&gt;)&lt;/i&gt;&lt;/span&gt;", date)
+		end
+		self.info = args.info
+		if yesno(args.removalnotice) then
+			self.removalNotice = cfg.removalNotice
+		end
+	end
+
+	-- Set the non-collapsible text field. At the moment this is used by all box
+	-- types other than ambox, and also by ambox when small=yes.
+	if self.isSmall then
+		self.text = args.smalltext or args.text
+	else
+		self.text = args.text
+	end
+
+	-- General image settings.
+	self.imageCellDiv = not self.isSmall and cfg.imageCellDiv
+	self.imageEmptyCell = cfg.imageEmptyCell
+
+	-- Left image settings.
+	local imageLeft = self.isSmall and args.smallimage or args.image
+	if cfg.imageCheckBlank and imageLeft ~= 'blank' and imageLeft ~= 'none'
+		or not cfg.imageCheckBlank and imageLeft ~= 'none'
+	then
+		self.imageLeft = imageLeft
+		if not imageLeft then
+			local imageSize = self.isSmall
+				and (cfg.imageSmallSize or '30x30px')
+				or '40x40px'
+			self.imageLeft = string.format('[[File:%s|%s%s|alt=]]', self.typeImage
+				or 'Information icon4.svg', imageSize, self.typeImageNeedsLink and "" or "|link=" )
+		end
+	end
+
+	-- Right image settings.
+	local imageRight = self.isSmall and args.smallimageright or args.imageright
+	if not (cfg.imageRightNone and imageRight == 'none') then
+		self.imageRight = imageRight
+	end
+	
+	-- set templatestyles
+	self.base_templatestyles = cfg.templatestyles
+	self.templatestyles = args.templatestyles
+end
+
+function MessageBox:setMainspaceCategories()
+	local args = self.args
+	local cfg = self.cfg
+
+	if not cfg.allowMainspaceCategories then
+		return nil
+	end
+
+	local nums = {}
+	for _, prefix in ipairs{'cat', 'category', 'all'} do
+		args[prefix .. '1'] = args[prefix]
+		nums = union(nums, getArgNums(args, prefix))
+	end
+
+	-- The following is roughly equivalent to the old {{Ambox/category}}.
+	local date = args.date
+	date = type(date) == 'string' and date
+	local preposition = 'from'
+	for _, num in ipairs(nums) do
+		local mainCat = args['cat' .. tostring(num)]
+			or args['category' .. tostring(num)]
+		local allCat = args['all' .. tostring(num)]
+		mainCat = type(mainCat) == 'string' and mainCat
+		allCat = type(allCat) == 'string' and allCat
+		if mainCat and date and date ~= '' then
+			local catTitle = string.format('%s %s %s', mainCat, preposition, date)
+			self:addCat(0, catTitle)
+			catTitle = getTitleObject('Category:' .. catTitle)
+			if not catTitle or not catTitle.exists then
+				self:addCat(0, 'Articles with invalid date parameter in template')
+			end
+		elseif mainCat and (not date or date == '') then
+			self:addCat(0, mainCat)
+		end
+		if allCat then
+			self:addCat(0, allCat)
+		end
+	end
+end
+
+function MessageBox:setTemplateCategories()
+	local args = self.args
+	local cfg = self.cfg
+
+	-- Add template categories.
+	if cfg.templateCategory then
+		if cfg.templateCategoryRequireName then
+			if self.isTemplatePage then
+				self:addCat(10, cfg.templateCategory)
+			end
+		elseif not self.title.isSubpage then
+			self:addCat(10, cfg.templateCategory)
+		end
+	end
+
+	-- Add template error categories.
+	if cfg.templateErrorCategory then
+		local templateErrorCategory = cfg.templateErrorCategory
+		local templateCat, templateSort
+		if not self.name and not self.title.isSubpage then
+			templateCat = templateErrorCategory
+		elseif self.isTemplatePage then
+			local paramsToCheck = cfg.templateErrorParamsToCheck or {}
+			local count = 0
+			for i, param in ipairs(paramsToCheck) do
+				if not args[param] then
+					count = count + 1
+				end
+			end
+			if count &gt; 0 then
+				templateCat = templateErrorCategory
+				templateSort = tostring(count)
+			end
+			if self.categoryNums and #self.categoryNums &gt; 0 then
+				templateCat = templateErrorCategory
+				templateSort = 'C'
+			end
+		end
+		self:addCat(10, templateCat, templateSort)
+	end
+end
+
+function MessageBox:setAllNamespaceCategories()
+	-- Set categories for all namespaces.
+	if self.invalidTypeError then
+		local allSort = (self.title.namespace == 0 and 'Main:' or '') .. self.title.prefixedText
+		self:addCat('all', 'Wikipedia message box parameter needs fixing', allSort)
+	end
+	if self.isSubstituted then
+		self:addCat('all', 'Pages with incorrectly substituted templates')
+	end
+end
+
+function MessageBox:setCategories()
+	if self.title.namespace == 0 then
+		self:setMainspaceCategories()
+	elseif self.title.namespace == 10 then
+		self:setTemplateCategories()
+	end
+	self:setAllNamespaceCategories()
+end
+
+function MessageBox:renderCategories()
+	if not self.hasCategories then
+		-- No categories added, no need to pass them to Category handler so,
+		-- if it was invoked, it would return the empty string.
+		-- So we shortcut and return the empty string.
+		return ""
+	end
+	-- Convert category tables to strings and pass them through
+	-- [[Module:Category handler]].
+	return require('Module:Category handler')._main{
+		main = table.concat(self.categories[0] or {}),
+		template = table.concat(self.categories[10] or {}),
+		all = table.concat(self.categories.all or {}),
+		nocat = self.args.nocat,
+		page = self.args.page
+	}
+end
+
+function MessageBox:exportDiv()
+	local root = mw.html.create()
+
+	-- Add the subst check error.
+	if self.isSubstituted and self.name then
+		root:tag('b')
+			:addClass('error')
+			:wikitext(string.format(
+				'Template &lt;code&gt;%s[[Template:%s|%s]]%s&lt;/code&gt; has been incorrectly substituted.',
+				mw.text.nowiki('{{'), self.name, self.name, mw.text.nowiki('}}')
+			))
+	end
+
+	local frame = mw.getCurrentFrame()
+	root:wikitext(frame:extensionTag{
+		name = 'templatestyles',
+		args = { src = self.base_templatestyles },
+	})
+	-- Add support for a single custom templatestyles sheet. Undocumented as
+	-- need should be limited and many templates using mbox are substed; we
+	-- don't want to spread templatestyles sheets around to arbitrary places
+	if self.templatestyles then
+		root:wikitext(frame:extensionTag{
+			name = 'templatestyles',
+			args = { src = self.templatestyles },
+		})
+	end
+
+	-- Create the box.
+	local mbox = root:tag('div')
+	mbox:attr('id', self.id or nil)
+	for i, class in ipairs(self.classes or {}) do
+		mbox:addClass(class or nil)
+	end
+	mbox
+		:cssText(self.style or nil)
+
+	if self.attrs then
+		mbox:attr(self.attrs)
+	end
+	
+	local flex_container
+	if self.below then
+		-- we need to wrap the flex components (`image(right)` and `text`) in their
+		-- own container div to support the `below` parameter
+		flex_container = mw.html.create('div')
+		flex_container:addClass('mbox-flex')
+	else
+		-- the mbox itself is the parent, so we need no HTML flex_container
+		flex_container = mw.html.create()
+	end
+
+	-- Add the left-hand image.
+	if self.imageLeft then
+		local imageLeftCell = flex_container:tag('div'):addClass('mbox-image')
+		imageLeftCell
+			:addClass(self.imageLeftClass)
+			:wikitext(self.imageLeft or nil)
+	end
+
+	-- Add the text.
+	local textCell = flex_container:tag('div'):addClass('mbox-text')
+	if self.useCollapsibleTextFields then
+		-- The message box uses advanced text parameters that allow things to be
+		-- collapsible. At the moment, only ambox uses this.
+		textCell:cssText(self.textstyle or nil)
+		local textCellDiv = textCell:tag('div')
+		textCellDiv
+			:addClass('mbox-text-span')
+			:wikitext(self.issue or nil)
+		if (self.talk or self.fix) then
+			textCellDiv:tag('span')
+				:addClass('hide-when-compact')
+				:wikitext(self.talk and (' ' .. self.talk) or nil)
+				:wikitext(self.fix and (' ' .. self.fix) or nil)
+		end
+		textCellDiv:wikitext(self.date and (' ' .. self.date) or nil)
+		if self.info and not self.isSmall then
+			textCellDiv
+				:tag('span')
+				:addClass('hide-when-compact')
+				:wikitext(self.info and (' ' .. self.info) or nil)
+		end
+		if self.removalNotice then
+			textCellDiv:tag('span')
+				:addClass('hide-when-compact')
+				:tag('i')
+					:wikitext(string.format(" (%s)", self.removalNotice))
+		end
+	else
+		-- Default text formatting - anything goes.
+		textCell
+			:cssText(self.textstyle or nil)
+			:wikitext(self.text or nil)
+	end
+
+	-- Add the right-hand image.
+	if self.imageRight then
+		local imageRightCell = flex_container:tag('div'):addClass('mbox-imageright')
+		imageRightCell
+			:addClass(self.imageRightClass)
+			:wikitext(self.imageRight or nil)
+	end
+	
+	mbox:node(flex_container)
+
+	-- Add the below row.
+	if self.below then
+		mbox:tag('div')
+			:addClass('mbox-text mbox-below')
+			:cssText(self.textstyle or nil)
+			:wikitext(self.below or nil)
+	end
+
+	-- Add error message for invalid type parameters.
+	if self.invalidTypeError then
+		root:tag('div')
+			:addClass('mbox-invalid-type')
+			:wikitext(string.format(
+				'This message box is using an invalid "type=%s" parameter and needs fixing.',
+				self.type or ''
+			))
+	end
+
+	-- Add categories.
+	root:wikitext(self:renderCategories() or nil)
+
+	return tostring(root)
+end
+
+function MessageBox:export()
+
+	local root = mw.html.create()
+
+	-- Add the subst check error.
+	if self.isSubstituted and self.name then
+		root:tag('b')
+			:addClass('error')
+			:wikitext(string.format(
+				'Template &lt;code&gt;%s[[Template:%s|%s]]%s&lt;/code&gt; has been incorrectly substituted.',
+				mw.text.nowiki('{{'), self.name, self.name, mw.text.nowiki('}}')
+			))
+	end
+
+	local frame = mw.getCurrentFrame()
+	root:wikitext(frame:extensionTag{
+		name = 'templatestyles',
+		args = { src = self.base_templatestyles },
+	})
+	-- Add support for a single custom templatestyles sheet. Undocumented as
+	-- need should be limited and many templates using mbox are substed; we
+	-- don't want to spread templatestyles sheets around to arbitrary places
+	if self.templatestyles then
+		root:wikitext(frame:extensionTag{
+			name = 'templatestyles',
+			args = { src = self.templatestyles },
+		})
+	end
+
+	-- Create the box table.
+	local boxTable = root:tag('table')
+	boxTable:attr('id', self.id or nil)
+	for i, class in ipairs(self.classes or {}) do
+		boxTable:addClass(class or nil)
+	end
+	boxTable
+		:cssText(self.style or nil)
+		:attr('role', 'presentation')
+
+	if self.attrs then
+		boxTable:attr(self.attrs)
+	end
+
+	-- Add the left-hand image.
+	local row = boxTable:tag('tr')
+	if self.imageLeft then
+		local imageLeftCell = row:tag('td'):addClass('mbox-image')
+		if self.imageCellDiv then
+			-- If we are using a div, redefine imageLeftCell so that the image
+			-- is inside it. Divs use style="width: 52px;", which limits the
+			-- image width to 52px. If any images in a div are wider than that,
+			-- they may overlap with the text or cause other display problems.
+			imageLeftCell = imageLeftCell:tag('div'):addClass('mbox-image-div')
+		end
+		imageLeftCell
+			:addClass(self.imageLeftClass)
+			:wikitext(self.imageLeft or nil)
+	elseif self.imageEmptyCell then
+		-- Some message boxes define an empty cell if no image is specified, and
+		-- some don't. The old template code in templates where empty cells are
+		-- specified gives the following hint: "No image. Cell with some width
+		-- or padding necessary for text cell to have 100% width."
+		row:tag('td')
+			:addClass('mbox-empty-cell')
+	end
+
+	-- Add the text.
+	local textCell = row:tag('td'):addClass('mbox-text')
+	if self.useCollapsibleTextFields then
+		-- The message box uses advanced text parameters that allow things to be
+		-- collapsible. At the moment, only ambox uses this.
+		textCell:cssText(self.textstyle or nil)
+		local textCellDiv = textCell:tag('div')
+		textCellDiv
+			:addClass('mbox-text-span')
+			:wikitext(self.issue or nil)
+		if (self.talk or self.fix) then
+			textCellDiv:tag('span')
+				:addClass('hide-when-compact')
+				:wikitext(self.talk and (' ' .. self.talk) or nil)
+				:wikitext(self.fix and (' ' .. self.fix) or nil)
+		end
+		textCellDiv:wikitext(self.date and (' ' .. self.date) or nil)
+		if self.info and not self.isSmall then
+			textCellDiv
+				:tag('span')
+				:addClass('hide-when-compact')
+				:wikitext(self.info and (' ' .. self.info) or nil)
+		end
+		if self.removalNotice then
+			textCellDiv:tag('span')
+				:addClass('hide-when-compact')
+				:tag('i')
+					:wikitext(string.format(" (%s)", self.removalNotice))
+		end
+	else
+		-- Default text formatting - anything goes.
+		textCell
+			:cssText(self.textstyle or nil)
+			:wikitext(self.text or nil)
+	end
+
+	-- Add the right-hand image.
+	if self.imageRight then
+		local imageRightCell = row:tag('td'):addClass('mbox-imageright')
+		if self.imageCellDiv then
+			-- If we are using a div, redefine imageRightCell so that the image
+			-- is inside it.
+			imageRightCell = imageRightCell:tag('div'):addClass('mbox-image-div')
+		end
+		imageRightCell
+			:addClass(self.imageRightClass)
+			:wikitext(self.imageRight or nil)
+	end
+
+	-- Add the below row.
+	if self.below then
+		boxTable:tag('tr')
+			:tag('td')
+				:attr('colspan', self.imageRight and '3' or '2')
+				:addClass('mbox-text')
+				:cssText(self.textstyle or nil)
+				:wikitext(self.below or nil)
+	end
+
+	-- Add error message for invalid type parameters.
+	if self.invalidTypeError then
+		root:tag('div')
+			:addClass('mbox-invalid-type')
+			:wikitext(string.format(
+				'This message box is using an invalid "type=%s" parameter and needs fixing.',
+				self.type or ''
+			))
+	end
+
+	-- Add categories.
+	root:wikitext(self:renderCategories() or nil)
+
+	return tostring(root)
+end
+
+--------------------------------------------------------------------------------
+-- Exports
+--------------------------------------------------------------------------------
+
+local p, mt = {}, {}
+
+function p._exportClasses()
+	-- For testing.
+	return {
+		MessageBox = MessageBox
+	}
+end
+
+function p.main(boxType, args, cfgTables)
+	local box = MessageBox.new(boxType, args, cfgTables or mw.loadData(CONFIG_MODULE))
+	box:setParameters()
+	box:setCategories()
+	-- DIV MIGRATION CONDITIONAL
+	if box.cfg.div_structure then
+		return box:exportDiv()
+	end
+	-- END DIV MIGRATION CONDITIONAL
+	return box:export()
+end
+
+function mt.__index(t, k)
+	return function (frame)
+		if not getArgs then
+			getArgs = require('Module:Arguments').getArgs
+		end
+		return t.main(k, getArgs(frame, {trim = false, removeBlanks = false}))
+	end
+end
+
+return setmetatable(p, mt)</text>
+      <sha1>ocboyo877qnpqum2b9fyiquh72vukqa</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Message box/configuration</title>
+    <ns>828</ns>
+    <id>40627038</id>
+    <revision>
+      <id>1317729836</id>
+      <parentid>1317018144</parentid>
+      <timeston>2025-10-19T18:19:49Z</timeston>
+      <contributor>
+        <username>Izno</username>
+        <id>2927383</id>
+      </contributor>
+      <comment>div imbox</comment>
+      <origin>1317729836</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="6642" sha1="p36hrbxjy99m7clj64lhlint2en3bo0" xml:space="preserve">--------------------------------------------------------------------------------
+--                          Message box configuration                         --
+--                                                                            --
+-- This module contains configuration data for [[Module:Message box]].        --
+--------------------------------------------------------------------------------
+
+return {
+	ambox = {
+		types = {
+			speedy = {
+				class = 'ambox-speedy',
+				image = 'Ambox warning pn.svg'
+			},
+			delete = {
+				class = 'ambox-delete',
+				image = 'Ambox warning pn.svg'
+			},
+			content = {
+				class = 'ambox-content',
+				image = 'Ambox important.svg'
+			},
+			style = {
+				class = 'ambox-style',
+				image = 'Edit-clear.svg'
+			},
+			move = {
+				class = 'ambox-move',
+				image = 'Merge-split-transwiki default.svg'
+			},
+			protection = {
+				class = 'ambox-protection',
+				image = 'Semi-protection-shackle-keyhole.svg'
+			},
+			notice = {
+				class = 'ambox-notice',
+				image = 'Information icon4.svg'
+			}
+		},
+		default                     = 'notice',
+		allowBlankParams            = {'talk', 'sect', 'date', 'issue', 'fix', 'subst', 'hidden'},
+		allowSmall                  = true,
+		smallParam                  = 'left',
+		smallClass                  = 'mbox-small-left',
+		substCheck                  = true,
+		classes                     = {'metadata', 'ambox'},
+		imageEmptyCell              = true,
+		imageCheckBlank             = true,
+		imageSmallSize              = '20x20px',
+		imageCellDiv                = true,
+		useCollapsibleTextFields    = true,
+		imageRightNone              = true,
+		sectionDefault              = 'article',
+		allowMainspaceCategories    = true,
+		templateCategory            = 'Article message templates',
+	        templateCategoryRequireName = true,
+		templateErrorCategory       = 'Article message templates with missing parameters',
+		templateErrorParamsToCheck  = {'issue', 'fix', 'subst'},
+		removalNotice               = '&lt;small&gt;[[Help:Maintenance template removal|Learn how and when to remove this message]]&lt;/small&gt;',
+		templatestyles              = 'Module:Message box/ambox.css'
+	},
+	
+	cmbox = {
+		types = {
+			speedy = {
+				class = 'cmbox-speedy',
+				image = 'Ambox warning pn.svg'
+			},
+			delete = {
+				class = 'cmbox-delete',
+				image = 'Ambox warning pn.svg'
+			},
+			content = {
+				class = 'cmbox-content',
+				image = 'Ambox important.svg'
+			},
+			style = {
+				class = 'cmbox-style',
+				image = 'Edit-clear.svg'
+			},
+			move = {
+				class = 'cmbox-move',
+				image = 'Merge-split-transwiki default.svg'
+			},
+			protection = {
+				class = 'cmbox-protection',
+				image = 'Semi-protection-shackle-keyhole.svg'
+			},
+			notice = {
+				class = 'cmbox-notice',
+				image = 'Information icon4.svg'
+			}
+		},
+		default              = 'notice',
+		showInvalidTypeError = true,
+		classes              = {'cmbox'},
+		imageEmptyCell       = true,
+		templatestyles       = 'Module:Message box/cmbox.css',
+		div_structure        = true,
+	},
+	
+	fmbox = {
+		types = {
+			warning = {
+				class = 'fmbox-warning',
+				image = 'Ambox warning pn.svg'
+			},
+			editnotice = {
+				class = 'fmbox-editnotice',
+				image = 'Information icon4.svg'
+			},
+			system = {
+				class = 'fmbox-system',
+				image = 'Information icon4.svg'
+			}
+		},
+		default              = 'system',
+		showInvalidTypeError = true,
+		classes              = {'fmbox'},
+		imageEmptyCell       = false,
+		imageRightNone       = false,
+		templatestyles       = 'Module:Message box/fmbox.css',
+		div_structure        = true,
+	},
+	
+	imbox = {
+		types = {
+			speedy = {
+				class = 'imbox-speedy',
+				image = 'Ambox warning pn.svg'
+			},
+			delete = {
+				class = 'imbox-delete',
+				image = 'Ambox warning pn.svg'
+			},
+			content = {
+				class = 'imbox-content',
+				image = 'Ambox important.svg'
+			},
+			style = {
+				class = 'imbox-style',
+				image = 'Edit-clear.svg'
+			},
+			move = {
+				class = 'imbox-move',
+				image = 'Merge-split-transwiki default.svg'
+			},
+			protection = {
+				class = 'imbox-protection',
+				image = 'Semi-protection-shackle-keyhole.svg'
+			},
+			license = {
+				class = 'imbox-license licensetpl',
+				image = 'Imbox-license.svg'
+			},
+			["license-related"] = {
+				class = 'imbox-license',
+				image = 'Imbox-license.svg'
+			},
+			featured = {
+				class = 'imbox-featured',
+				image = 'Cscr-featured.svg',
+				imageNeedsLink = true
+			},
+			notice = {
+				class = 'imbox-notice',
+				image = 'Information icon4.svg'
+			}
+		},
+		default              = 'notice',
+		showInvalidTypeError = true,
+		classes              = {'imbox'},
+		imageEmptyCell       = true,
+		below                = true,
+		templateCategory     = 'File message boxes',
+		templatestyles       = 'Module:Message box/imbox.css',
+		div_structure        = true,
+	},
+	
+	ombox = {
+		types = {
+			speedy = {
+				class = 'ombox-speedy',
+				image = 'Ambox warning pn.svg'
+			},
+			delete = {
+				class = 'ombox-delete',
+				image = 'Ambox warning pn.svg'
+			},
+			content = {
+				class = 'ombox-content',
+				image = 'Ambox important.svg'
+			},
+			style = {
+				class = 'ombox-style',
+				image = 'Edit-clear.svg'
+			},
+			move = {
+				class = 'ombox-move',
+				image = 'Merge-split-transwiki default.svg'
+			},
+			protection = {
+				class = 'ombox-protection',
+				image = 'Semi-protection-shackle-keyhole.svg'
+			},
+			notice = {
+				class = 'ombox-notice',
+				image = 'Information icon4.svg'
+			}
+		},
+		default              = 'notice',
+		showInvalidTypeError = true,
+		classes              = {'ombox'},
+		allowSmall           = true,
+		imageEmptyCell       = true,
+		imageRightNone       = true,
+		templatestyles       = 'Module:Message box/ombox.css'
+	},
+	
+	tmbox = {
+		types = {
+			speedy = {
+				class = 'tmbox-speedy',
+				image = 'Ambox warning pn.svg'
+			},
+			delete = {
+				class = 'tmbox-delete',
+				image = 'Ambox warning pn.svg'
+			},
+			content = {
+				class = 'tmbox-content',
+				image = 'Ambox important.svg'
+			},
+			style = {
+				class = 'tmbox-style',
+				image = 'Edit-clear.svg'
+			},
+			move = {
+				class = 'tmbox-move',
+				image = 'Merge-split-transwiki default.svg'
+			},
+			protection = {
+				class = 'tmbox-protection',
+				image = 'Semi-protection-shackle-keyhole.svg'
+			},
+			notice = {
+				class = 'tmbox-notice',
+				image = 'Information icon4.svg'
+			}
+		},
+		default              = 'notice',
+		showInvalidTypeError = true,
+		classes              = {'tmbox'},
+		allowSmall           = true,
+		imageRightNone       = true,
+		imageEmptyCell       = true,
+		templateCategory     = 'Talk message boxes',
+		templatestyles       = 'Module:Message box/tmbox.css'
+	}
+}</text>
+      <sha1>p36hrbxjy99m7clj64lhlint2en3bo0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Dated maintenance category</title>
+    <ns>10</ns>
+    <id>22598546</id>
+    <revision>
+      <id>589732290</id>
+      <parentid>584337311</parentid>
+      <timeston>2014-01-08T08:14:55Z</timeston>
+      <contributor>
+        <username>John of Reading</username>
+        <id>11308236</id>
+      </contributor>
+      <comment>Second attempt. Those spaces upset inline templates such as {{As of}}. Instead, try an unconditional &lt;nowiki/&gt;</comment>
+      <origin>589732290</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="660" sha1="7p59j4cq4i8wg65odpv5287yu50sczo" xml:space="preserve">&lt;nowiki/&gt;&lt;!--This nowiki helps to prevent whitespace at the top of articles--&gt;{{#ifeq:{{FULLROOTPAGENAME}}|Wikipedia:Template messages|&lt;!--Do not categorize--&gt;|&lt;!--
+--&gt;{{#ifexpr:{{#if:{{NAMESPACE}}|0|1}}+{{#ifeq:{{{onlyarticles|no}}}|yes|0|1}}
+ |{{#if:{{{3|}}}
+  |[[Category:{{{1}}} {{{2}}} {{{3}}}]]&lt;!--
+--&gt;{{#ifexist:Category:{{{1}}} {{{2}}} {{{3}}}
+    |&lt;!--
+ --&gt;|[[Category:Articles with invalid date parameter in template]]&lt;!--
+--&gt;}}
+  |[[Category:{{#if:{{{5|}}}
+               |{{{5}}}&lt;!--
+            --&gt;|{{{1}}}&lt;!--
+           --&gt;}}]]&lt;!--
+--&gt;}}{{#if:{{{4|}}}
+      |[[Category:{{{4}}}]]}}&lt;!--
+  --&gt;}}&lt;!--
+--&gt;}}&lt;noinclude&gt;
+{{documentation}}
+&lt;/noinclude&gt;</text>
+      <sha1>7p59j4cq4i8wg65odpv5287yu50sczo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:FULLROOTPAGENAME</title>
+    <ns>10</ns>
+    <id>34701984</id>
+    <revision>
+      <id>1063308743</id>
+      <parentid>774489771</parentid>
+      <timeston>2022-01-02T08:54:02Z</timeston>
+      <contributor>
+        <username>Dinoguy1000</username>
+        <id>2412089</id>
+      </contributor>
+      <comment>fix "|=foo" bug</comment>
+      <origin>1063308743</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="470" sha1="tk494gglkhfogc40do2k58d4bbttx9o" xml:space="preserve">{{ safesubst:&lt;noinclude/&gt;#if: {{ safesubst:&lt;noinclude/&gt;Ns has subpages | {{ safesubst:&lt;noinclude/&gt;#if:{{{1|}}}|{{ safesubst:&lt;noinclude/&gt;NAMESPACE:{{{1}}}}}|{{ safesubst:&lt;noinclude/&gt;NAMESPACE}}}} }} 
+  | {{ safesubst:&lt;noinclude/&gt;#titleparts:{{ safesubst:&lt;noinclude/&gt;#if:{{{1|}}}|{{{1}}}|{{ safesubst:&lt;noinclude/&gt;FULLPAGENAME}}}}|1}}
+  | {{ safesubst:&lt;noinclude/&gt;#if:{{{1|}}}|{{{1}}}|{{ safesubst:&lt;noinclude/&gt;FULLPAGENAME}}}}
+}}&lt;noinclude&gt;
+
+{{documentation}}
+
+&lt;/noinclude&gt;</text>
+      <sha1>tk494gglkhfogc40do2k58d4bbttx9o</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Ns has subpages</title>
+    <ns>10</ns>
+    <id>22589696</id>
+    <revision>
+      <id>1074822270</id>
+      <parentid>637438114</parentid>
+      <timeston>2022-03-02T10:43:18Z</timeston>
+      <contributor>
+        <username>Trialpears</username>
+        <id>35786750</id>
+      </contributor>
+      <minor/>
+      <comment>Changed protection settings for "[[Template:Ns has subpages]]": [[WP:High-risk templates|Highly visible template]] ([Edit=Require administrator access] (indefinite) [Move=Require administrator access] (indefinite))</comment>
+      <origin>637438114</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="185" sha1="0pg457y46td6p53rdt8tyc76jeg9pa8" xml:space="preserve">{{&lt;includeonly&gt;safesubst:&lt;/includeonly&gt;#invoke:Ns has subpages|main}}&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage and interwikis go on Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>0pg457y46td6p53rdt8tyc76jeg9pa8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Ns has subpages</title>
+    <ns>828</ns>
+    <id>44657407</id>
+    <revision>
+      <id>1208340234</id>
+      <parentid>637438142</parentid>
+      <timeston>2024-02-17T04:01:43Z</timeston>
+      <contributor>
+        <username>Pppery</username>
+        <id>28032115</id>
+      </contributor>
+      <minor/>
+      <comment>Changed protection settings for "[[Module:Ns has subpages]]": Per template ([Edit=Require administrator access] (indefinite) [Move=Require administrator access] (indefinite))</comment>
+      <origin>637438142</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="1678" sha1="qb0b1z2vff7kifnw21v205d791esbiz" xml:space="preserve">-- This module implements [[Template:Ns has subpages]].
+-- While the template is fairly simple, this information is made available to
+-- Lua directly, so using a module means that we don't have to update the
+-- template as new namespaces are added.
+
+local p = {}
+
+function p._main(ns, frame)
+	-- Get the current namespace if we were not passed one.
+	if not ns then
+		ns = mw.title.getCurrentTitle().namespace
+	end
+
+	-- Look up the namespace table from mw.site.namespaces. This should work
+	-- for a majority of cases.
+	local nsTable = mw.site.namespaces[ns]
+
+	-- Try using string matching to get the namespace from page names.
+	-- Do a quick and dirty bad title check to try and make sure we do the same
+	-- thing as {{NAMESPACE}} in most cases.
+	if not nsTable and type(ns) == 'string' and not ns:find('[&lt;&gt;|%[%]{}]') then
+		local nsStripped = ns:gsub('^[_%s]*:', '')
+		nsStripped = nsStripped:gsub(':.*$', '')
+		nsTable = mw.site.namespaces[nsStripped]
+	end
+
+	-- If we still have no match then try the {{NAMESPACE}} parser function,
+	-- which should catch the remainder of cases. Don't use a mw.title object,
+	-- as this would increment the expensive function count for each new page
+	-- tested.
+	if not nsTable then
+		frame = frame or mw.getCurrentFrame()
+		local nsProcessed = frame:callParserFunction('NAMESPACE', ns)
+		nsTable = nsProcessed and mw.site.namespaces[nsProcessed]
+	end
+	
+	return nsTable and nsTable.hasSubpages
+end
+
+function p.main(frame)
+	local ns = frame:getParent().args[1]
+	if ns then
+		ns = ns:match('^%s*(.-)%s*$') -- trim whitespace
+		ns = tonumber(ns) or ns
+	end
+	local hasSubpages = p._main(ns, frame)
+	return hasSubpages and 'yes' or ''
+end
+
+return p</text>
+      <sha1>qb0b1z2vff7kifnw21v205d791esbiz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Yesno</title>
+    <ns>10</ns>
+    <id>22255088</id>
+    <revision>
+      <id>1326051197</id>
+      <parentid>975364754</parentid>
+      <timeston>2025-12-06T20:28:33Z</timeston>
+      <contributor>
+        <username>Pppery</username>
+        <id>28032115</id>
+      </contributor>
+      <comment>Copy from sandbox per request</comment>
+      <origin>1326051197</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="348" sha1="ap97tktff18ii0muqd5f4eezydumg5v" xml:space="preserve">{{&lt;includeonly&gt;safesubst:&lt;/includeonly&gt;#switch: {{&lt;includeonly&gt;safesubst:&lt;/includeonly&gt;lc: {{{1|¬}}} }}
+ |no
+ |n
+ |f
+ |false
+ |off
+ |0        = {{{no|}}}
+ |         = {{{blank|{{{no|}}}}}}
+ |¬        = {{{¬|}}}
+ |yes
+ |y
+ |t
+ |true
+ |on
+ |1        = {{{yes|yes}}}
+ |#default = {{{def|{{{yes|yes}}}}}}
+}}&lt;noinclude&gt;
+{{Documentation}}
+&lt;/noinclude&gt;</text>
+      <sha1>ap97tktff18ii0muqd5f4eezydumg5v</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Namespace detect</title>
+    <ns>828</ns>
+    <id>39762919</id>
+    <revision>
+      <id>602886406</id>
+      <parentid>601020017</parentid>
+      <timeston>2014-04-05T17:01:23Z</timeston>
+      <contributor>
+        <username>Mr. Stradivarius</username>
+        <id>4708675</id>
+      </contributor>
+      <comment>use demopage instead of page as the main "page" parameter</comment>
+      <origin>602886406</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="5992" sha1="j7kygz1y56jpz4doq0m2c6x1td5d8ar" xml:space="preserve">--[[
+--------------------------------------------------------------------------------
+--                                                                            --
+--                            NAMESPACE DETECT                                --
+--                                                                            --
+-- This module implements the {{namespace detect}} template in Lua, with a    --
+-- few improvements: all namespaces and all namespace aliases are supported,  --
+-- and namespace names are detected automatically for the local wiki. The     --
+-- module can also use the corresponding subject namespace value if it is     --
+-- used on a talk page. Parameter names can be configured for different wikis --
+-- by altering the values in the "cfg" table in                               --
+-- Module:Namespace detect/config.                                            --
+--                                                                            --
+--------------------------------------------------------------------------------
+--]]
+
+local data = mw.loadData('Module:Namespace detect/data')
+local argKeys = data.argKeys
+local cfg = data.cfg
+local mappings = data.mappings
+
+local yesno = require('Module:Yesno')
+local mArguments -- Lazily initialise Module:Arguments
+local mTableTools -- Lazily initilalise Module:TableTools
+local ustringLower = mw.ustring.lower
+
+local p = {}
+
+local function fetchValue(t1, t2)
+	-- Fetches a value from the table t1 for the first key in array t2 where
+	-- a non-nil value of t1 exists.
+	for i, key in ipairs(t2) do
+		local value = t1[key]
+		if value ~= nil then
+			return value
+		end
+	end
+	return nil
+end
+
+local function equalsArrayValue(t, value)
+	-- Returns true if value equals a value in the array t. Otherwise
+	-- returns false.
+	for i, arrayValue in ipairs(t) do
+		if value == arrayValue then
+			return true
+		end
+	end
+	return false
+end
+
+function p.getPageObject(page)
+	-- Get the page object, passing the function through pcall in case of
+	-- errors, e.g. being over the expensive function count limit.
+	if page then
+		local success, pageObject = pcall(mw.title.new, page)
+		if success then
+			return pageObject
+		else
+			return nil
+		end
+	else
+		return mw.title.getCurrentTitle()
+	end
+end
+
+-- Provided for backward compatibility with other modules
+function p.getParamMappings()
+	return mappings
+end
+
+local function getNamespace(args)
+	-- This function gets the namespace name from the page object.
+	local page = fetchValue(args, argKeys.demopage)
+	if page == '' then
+		page = nil
+	end
+	local demospace = fetchValue(args, argKeys.demospace)
+	if demospace == '' then
+		demospace = nil
+	end
+	local subjectns = fetchValue(args, argKeys.subjectns)
+	local ret
+	if demospace then
+		-- Handle "demospace = main" properly.
+		if equalsArrayValue(argKeys.main, ustringLower(demospace)) then
+			ret = mw.site.namespaces[0].name
+		else
+			ret = demospace
+		end
+	else
+		local pageObject = p.getPageObject(page)
+		if pageObject then
+			if pageObject.isTalkPage then
+				-- Get the subject namespace if the option is set,
+				-- otherwise use "talk".
+				if yesno(subjectns) then
+					ret = mw.site.namespaces[pageObject.namespace].subject.name
+				else
+					ret = 'talk'
+				end
+			else
+				ret = pageObject.nsText
+			end
+		else
+			return nil -- return nil if the page object doesn't exist.
+		end
+	end
+	ret = ret:gsub('_', ' ')
+	return ustringLower(ret)
+end
+
+function p._main(args)
+	-- Check the parameters stored in the mappings table for any matches.
+	local namespace = getNamespace(args) or 'other' -- "other" avoids nil table keys
+	local params = mappings[namespace] or {}
+	local ret = fetchValue(args, params)
+	--[[
+	-- If there were no matches, return parameters for other namespaces.
+	-- This happens if there was no text specified for the namespace that
+	-- was detected or if the demospace parameter is not a valid
+	-- namespace. Note that the parameter for the detected namespace must be
+	-- completely absent for this to happen, not merely blank.
+	--]]
+	if ret == nil then
+		ret = fetchValue(args, argKeys.other)
+	end
+	return ret
+end
+
+function p.main(frame)
+	mArguments = require('Module:Arguments')
+	local args = mArguments.getArgs(frame, {removeBlanks = false})
+	local ret = p._main(args)
+	return ret or ''
+end
+
+function p.table(frame)
+	--[[
+	-- Create a wikitable of all subject namespace parameters, for
+	-- documentation purposes. The talk parameter is optional, in case it
+	-- needs to be excluded in the documentation.
+	--]]
+	
+	-- Load modules and initialise variables.
+	mTableTools = require('Module:TableTools')
+	local namespaces = mw.site.namespaces
+	local cfg = data.cfg
+	local useTalk = type(frame) == 'table' 
+		and type(frame.args) == 'table' 
+		and yesno(frame.args.talk) -- Whether to use the talk parameter.
+	
+	-- Get the header names.
+	local function checkValue(value, default)
+		if type(value) == 'string' then
+			return value
+		else
+			return default
+		end
+	end
+	local nsHeader = checkValue(cfg.wikitableNamespaceHeader, 'Namespace')
+	local aliasesHeader = checkValue(cfg.wikitableAliasesHeader, 'Aliases')
+
+	-- Put the namespaces in order.
+	local mappingsOrdered = {}
+	for nsname, params in pairs(mappings) do
+		if useTalk or nsname ~= 'talk' then
+			local nsid = namespaces[nsname].id
+			-- Add 1, as the array must start with 1; nsid 0 would be lost otherwise.
+			nsid = nsid + 1 
+			mappingsOrdered[nsid] = params
+		end
+	end
+	mappingsOrdered = mTableTools.compressSparseArray(mappingsOrdered)
+
+	-- Build the table.
+	local ret = '{| class="wikitable"'
+		.. '\n|-'
+		.. '\n! ' .. nsHeader
+		.. '\n! ' .. aliasesHeader
+	for i, params in ipairs(mappingsOrdered) do
+		for j, param in ipairs(params) do
+			if j == 1 then
+				ret = ret .. '\n|-'
+					.. '\n| &lt;code&gt;' .. param .. '&lt;/code&gt;'
+					.. '\n| '
+			elseif j == 2 then
+				ret = ret .. '&lt;code&gt;' .. param .. '&lt;/code&gt;'
+			else
+				ret = ret .. ', &lt;code&gt;' .. param .. '&lt;/code&gt;'
+			end
+		end
+	end
+	ret = ret .. '\n|-'
+		.. '\n|}'
+	return ret
+end
+
+return p</text>
+      <sha1>j7kygz1y56jpz4doq0m2c6x1td5d8ar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Namespace detect/data</title>
+    <ns>828</ns>
+    <id>42257476</id>
+    <revision>
+      <id>948472520</id>
+      <parentid>948472519</parentid>
+      <timeston>2020-04-01T06:12:45Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>948472519</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="2569" sha1="ojp6d3pc8mql5nufaqdg576c9so3479" xml:space="preserve">--------------------------------------------------------------------------------
+--                          Namespace detect data                             --
+-- This module holds data for [[Module:Namespace detect]] to be loaded per    --
+-- page, rather than per #invoke, for performance reasons.                    --
+--------------------------------------------------------------------------------
+
+local cfg = require('Module:Namespace detect/config')
+
+local function addKey(t, key, defaultKey)
+	if key ~= defaultKey then
+		t[#t + 1] = key
+	end
+end
+
+-- Get a table of parameters to query for each default parameter name.
+-- This allows wikis to customise parameter names in the cfg table while
+-- ensuring that default parameter names will always work. The cfg table
+-- values can be added as a string, or as an array of strings.
+
+local defaultKeys = {
+	'main',
+	'talk',
+	'other',
+	'subjectns',
+	'demospace',
+	'demopage'
+}
+
+local argKeys = {}
+for i, defaultKey in ipairs(defaultKeys) do
+	argKeys[defaultKey] = {defaultKey}
+end
+
+for defaultKey, t in pairs(argKeys) do
+	local cfgValue = cfg[defaultKey]
+	local cfgValueType = type(cfgValue)
+	if cfgValueType == 'string' then
+		addKey(t, cfgValue, defaultKey)
+	elseif cfgValueType == 'table' then
+		for i, key in ipairs(cfgValue) do
+			addKey(t, key, defaultKey)
+		end
+	end
+	cfg[defaultKey] = nil -- Free the cfg value as we don't need it any more.
+end
+
+local function getParamMappings()
+	--[[
+	-- Returns a table of how parameter names map to namespace names. The keys
+	-- are the actual namespace names, in lower case, and the values are the
+	-- possible parameter names for that namespace, also in lower case. The
+	-- table entries are structured like this:
+	-- {
+	--   [''] = {'main'},
+	--   ['wikipedia'] = {'wikipedia', 'project', 'wp'},
+	--   ...
+	-- }
+	--]]
+	local mappings = {}
+	local mainNsName = mw.site.subjectNamespaces[0].name
+	mainNsName = mw.ustring.lower(mainNsName)
+	mappings[mainNsName] = mw.clone(argKeys.main)
+	mappings['talk'] = mw.clone(argKeys.talk)
+	for nsid, ns in pairs(mw.site.subjectNamespaces) do
+		if nsid ~= 0 then -- Exclude main namespace.
+			local nsname = mw.ustring.lower(ns.name)
+			local canonicalName = mw.ustring.lower(ns.canonicalName)
+			mappings[nsname] = {nsname}
+			if canonicalName ~= nsname then
+				table.insert(mappings[nsname], canonicalName)
+			end
+			for _, alias in ipairs(ns.aliases) do
+				table.insert(mappings[nsname], mw.ustring.lower(alias))
+			end
+		end
+	end
+	return mappings
+end
+
+return {
+	argKeys = argKeys,
+	cfg = cfg,
+	mappings = getParamMappings()
+}</text>
+      <sha1>ojp6d3pc8mql5nufaqdg576c9so3479</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Namespace detect/config</title>
+    <ns>828</ns>
+    <id>42256703</id>
+    <revision>
+      <id>948472518</id>
+      <parentid>948472515</parentid>
+      <timeston>2020-04-01T06:12:44Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>948472515</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="3545" sha1="1o6ozz56i8q0xgyl6xa41n2v7kelhli" xml:space="preserve">--------------------------------------------------------------------------------
+--                    Namespace detect configuration data                     --
+--                                                                            --
+-- This module stores configuration data for Module:Namespace detect. Here    --
+-- you can localise the module to your wiki's language.                       --
+--                                                                            --
+-- To activate a configuration item, you need to uncomment it. This means     --
+-- that you need to remove the text "-- " at the start of the line.           --
+--------------------------------------------------------------------------------
+
+local cfg = {} -- Don't edit this line.
+
+--------------------------------------------------------------------------------
+--                              Parameter names                               --
+-- These configuration items specify custom parameter names. Values added     --
+-- here will work in addition to the default English parameter names.         --
+-- To add one extra name, you can use this format:                            --
+--                                                                            --
+-- cfg.foo = 'parameter name'                                                 --
+--                                                                            --
+-- To add multiple names, you can use this format:                            --
+--                                                                            --
+-- cfg.foo = {'parameter name 1', 'parameter name 2', 'parameter name 3'}     --
+--------------------------------------------------------------------------------
+
+---- This parameter displays content for the main namespace:
+-- cfg.main = 'main'
+
+---- This parameter displays in talk namespaces:
+-- cfg.talk = 'talk'
+
+---- This parameter displays content for "other" namespaces (namespaces for which
+---- parameters have not been specified):
+-- cfg.other = 'other'
+
+---- This parameter makes talk pages behave as though they are the corresponding
+---- subject namespace. Note that this parameter is used with [[Module:Yesno]].
+---- Edit that module to change the default values of "yes", "no", etc.
+-- cfg.subjectns = 'subjectns'
+
+---- This parameter sets a demonstration namespace:
+-- cfg.demospace = 'demospace'
+
+---- This parameter sets a specific page to compare:
+cfg.demopage = 'page'
+
+--------------------------------------------------------------------------------
+--                           Table configuration                              --
+-- These configuration items allow customisation of the "table" function,     --
+-- used to generate a table of possible parameters in the module              --
+-- documentation.                                                             --
+--------------------------------------------------------------------------------
+
+---- The header for the namespace column in the wikitable containing the list of
+---- possible subject-space parameters.
+-- cfg.wikitableNamespaceHeader = 'Namespace'
+
+---- The header for the wikitable containing the list of possible subject-space
+---- parameters.
+-- cfg.wikitableAliasesHeader = 'Aliases'
+
+--------------------------------------------------------------------------------
+--                        End of configuration data                           --
+--------------------------------------------------------------------------------
+
+return cfg -- Don't edit this line.</text>
+      <sha1>1o6ozz56i8q0xgyl6xa41n2v7kelhli</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Main other</title>
+    <ns>10</ns>
+    <id>17220251</id>
+    <revision>
+      <id>1302994848</id>
+      <parentid>1059626360</parentid>
+      <timeston>2025-07-28T14:53:49Z</timeston>
+      <contributor>
+        <username>Pppery</username>
+        <id>28032115</id>
+      </contributor>
+      <comment>Make substable per request</comment>
+      <origin>1302994848</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="604" sha1="aljcm6nr1pwk5dw5g13lyhxhplulpg5" xml:space="preserve">{{safesubst:&lt;noinclude/&gt;#switch:
+  &lt;noinclude&gt;&lt;!-- If no or empty "demospace" parameter then detect namespace --&gt;&lt;/noinclude&gt;
+  {{safesubst:&lt;noinclude/&gt;#if:{{{demospace|}}} 
+  | {{safesubst:&lt;noinclude/&gt;lc: {{{demospace}}} }}    &lt;noinclude&gt;&lt;!-- Use lower case "demospace" --&gt;&lt;/noinclude&gt;
+  | {{safesubst:&lt;noinclude/&gt;#ifeq:{{safesubst:&lt;noinclude/&gt;NAMESPACE}}|{{safesubst:&lt;noinclude/&gt;ns:0}}
+    | main
+    | other
+    }} 
+  }}
+| main     = {{{1|}}}
+| other
+| #default = {{{2|}}}
+}}&lt;noinclude&gt;
+
+{{documentation}}
+&lt;!-- Add categories to the /doc subpage; interwikis go to Wikidata, thank you! --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>aljcm6nr1pwk5dw5g13lyhxhplulpg5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Check for unknown parameters</title>
+    <ns>828</ns>
+    <id>42286729</id>
+    <revision>
+      <id>1317293842</id>
+      <parentid>1317291627</parentid>
+      <timeston>2025-10-17T11:01:38Z</timeston>
+      <contributor>
+        <username>Joy</username>
+        <id>20318</id>
+      </contributor>
+      <comment>document missing mapframe parameter aliases</comment>
+      <origin>1317293842</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="4561" sha1="mf5u017ry3j5wcsi9ctzrqfash3oih5" xml:space="preserve">-- This module may be used to compare the arguments passed to the parent
+-- with a list of arguments, returning a specified result if an argument is
+-- not on the list
+
+require ('strict');
+
+local p = {}
+
+local mapframe_params = {
+	'coord',
+	'coordinates',
+	'id',
+	'qid',
+	'mapframe',
+	'mapframe-area_km2',
+	'mapframe-area_mi2',
+	'mapframe-caption',
+	'mapframe-coord',
+	'mapframe-coordinates',
+	'mapframe-custom',
+	'mapframe-frame-coord',
+	'mapframe-frame-coordinates',
+	'mapframe-frame-height',
+	'mapframe-frame-width',
+	'mapframe-geomask',
+	'mapframe-geomask-fill',
+	'mapframe-geomask-fill-opacity',
+	'mapframe-geomask-stroke-color',
+	'mapframe-geomask-stroke-colour',
+	'mapframe-geomask-stroke-width',
+	'mapframe-height',
+	'mapframe-id',
+	'mapframe-length_km',
+	'mapframe-length_mi',
+	'mapframe-line',
+	'mapframe-line-stroke-color',
+	'mapframe-line-stroke-colour',
+	'mapframe-marker',
+	'mapframe-marker-color',
+	'mapframe-marker-colour',
+	'mapframe-point',
+	'mapframe-population',
+	'mapframe-shape',
+	'mapframe-shape-fill',
+	'mapframe-shape-fill-opacity',
+	'mapframe-shape-stroke-color',
+	'mapframe-shape-stroke-colour',
+	'mapframe-stroke-color',
+	'mapframe-stroke-colour',
+	'mapframe-stroke-width',
+	'mapframe-switcher',
+	'mapframe-type',
+	'mapframe-width',
+	'mapframe-wikidata',
+	'mapframe-zoom'
+}
+
+local function trim(s)
+	return s:match('^%s*(.-)%s*$')
+end
+
+local function isnotempty(s)
+	return s and s:match('%S')
+end
+
+local function clean(text)
+	-- Return text cleaned for display and truncated if too long.
+	-- Strip markers are replaced with dummy text representing the original wikitext.
+	local pos, truncated
+	local function truncate(text)
+		if truncated then
+			return ''
+		end
+		if mw.ustring.len(text) &gt; 25 then
+			truncated = true
+			text = mw.ustring.sub(text, 1, 25) .. '...'
+		end
+		return mw.text.nowiki(text)
+	end
+	local parts = {}
+	for before, tag, remainder in text:gmatch('([^\127]*)\127[^\127]*%-(%l+)%-[^\127]*\127()') do
+		pos = remainder
+		table.insert(parts, truncate(before) .. '&amp;lt;' .. tag .. '&amp;gt;...&amp;lt;/' .. tag .. '&amp;gt;')
+	end
+	table.insert(parts, truncate(text:sub(pos or 1)))
+	return table.concat(parts)
+end
+
+function p._check(args, pargs)
+	if type(args) ~= "table" or type(pargs) ~= "table" then
+		-- TODO: error handling
+		return
+	end
+
+	-- create the list of known args, regular expressions, and the return string
+	local knownargs = {}
+	
+	if isnotempty(args['mapframe_args']) then
+		for _, v in ipairs(mapframe_params) do
+    		knownargs[v] = 1
+		end
+	end
+	
+	local regexps = {}
+	for k, v in pairs(args) do
+		if type(k) == 'number' then
+			v = trim(v)
+			knownargs[v] = 1
+		elseif k:find('^regexp[1-9][0-9]*$') then
+			table.insert(regexps, '^' .. v .. '$')
+		end
+	end
+	
+	-- loop over the parent args, and make sure they are on the list
+	local ignoreblank = isnotempty(args['ignoreblank'])
+	local showblankpos = isnotempty(args['showblankpositional'])
+	local values = {}
+	for k, v in pairs(pargs) do
+		if type(k) == 'string' and knownargs[k] == nil then
+			local knownflag = false
+			for _, regexp in ipairs(regexps) do
+				if mw.ustring.match(k, regexp) then
+					knownflag = true
+					break
+				end
+			end
+			if not knownflag and ( not ignoreblank or isnotempty(v) )  then
+				table.insert(values, clean(k))
+			end
+		elseif type(k) == 'number' and knownargs[tostring(k)] == nil then
+			local knownflag = false
+			for _, regexp in ipairs(regexps) do
+				if mw.ustring.match(tostring(k), regexp) then
+					knownflag = true
+					break
+				end
+			end
+			if not knownflag and ( showblankpos or isnotempty(v) ) then
+				table.insert(values, k .. ' = ' .. clean(v))
+			end
+		end
+	end
+
+	-- add results to the output tables
+	local res = {}
+	if #values &gt; 0 then
+		local unknown_text = args['unknown'] or 'Found _VALUE_, '
+
+		if mw.getCurrentFrame():preprocess( "{{REVISIONID}}" ) == "" then
+			local preview_text = args['preview']
+			if isnotempty(preview_text) then
+				preview_text = require('Module:If preview')._warning({preview_text})
+			elseif preview_text == nil then
+				preview_text = unknown_text
+			end
+			unknown_text = preview_text
+		end
+		for _, v in pairs(values) do
+			-- Fix odd bug for | = which gets stripped to the empty string and
+			-- breaks category links
+			if v == '' then v = ' ' end
+
+			-- avoid error with v = 'example%2' ("invalid capture index")
+			local r = unknown_text:gsub('_VALUE_', {_VALUE_ = v})
+			table.insert(res, r)
+		end
+	end
+
+	return table.concat(res)
+end
+
+function p.check(frame)
+	local args = frame.args
+	local pargs = frame:getParent().args
+	return p._check(args, pargs)
+end
+
+return p</text>
+      <sha1>mf5u017ry3j5wcsi9ctzrqfash3oih5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Namespace detect</title>
+    <ns>10</ns>
+    <id>17433896</id>
+    <revision>
+      <id>822697538</id>
+      <parentid>772147338</parentid>
+      <timeston>2018-01-27T23:54:39Z</timeston>
+      <contributor>
+        <username>JJMC89</username>
+        <id>24812038</id>
+      </contributor>
+      <comment>clean subst</comment>
+      <origin>822697538</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="173" sha1="l3ti6zjxip68spdlt018btofjtao8um" xml:space="preserve">{{SAFESUBST:&lt;noinclude /&gt;#invoke:Namespace detect|main}}&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage, and interwikis go on Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>l3ti6zjxip68spdlt018btofjtao8um</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Effective protection level</title>
+    <ns>828</ns>
+    <id>41617327</id>
+    <revision>
+      <id>1313238235</id>
+      <parentid>1195942202</parentid>
+      <timeston>2025-09-25T02:35:06Z</timeston>
+      <contributor>
+        <username>Pppery</username>
+        <id>28032115</id>
+      </contributor>
+      <comment>Handle gadget page</comment>
+      <origin>1313238235</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="3660" sha1="nacj9lsnya0896kpkyuy2onbc6mm6xw" xml:space="preserve">local p = {}
+-- Returns the permission required to perform a given action on a given title.
+-- If no title is specified, the title of the page being displayed is used.
+function p._main(action, pagename)
+	local title
+	if type(pagename) == 'table' and pagename.prefixedText then
+		title = pagename
+	elseif pagename then
+		title = mw.title.new(pagename)
+	else
+		title = mw.title.getCurrentTitle()
+	end
+	pagename = title.prefixedText
+	if action == 'autoreview' then
+		local level = mw.ext.FlaggedRevs.getStabilitySettings(title)
+		level = level and level.autoreview
+		if level == 'review' then
+			return 'reviewer'
+		elseif level ~= '' then
+			return level
+		else
+			return nil -- not '*'. a page not being PC-protected is distinct from it being PC-protected with anyone able to review. also not '', as that would mean PC-protected but nobody can review
+		end
+	elseif action ~= 'edit' and action ~= 'move' and action ~= 'create' and action ~= 'upload' and action ~= 'undelete' then
+		error( 'First parameter must be one of edit, move, create, upload, undelete, autoreview', 2 )
+	end
+	if title.namespace == 8 then -- MediaWiki namespace
+		if title.text:sub(-3) == '.js' or title.text:sub(-4) == '.css' or title.contentModel == 'javascript' or title.contentModel == 'css' then -- site JS or CSS page
+			return 'interfaceadmin'
+		elseif title.baseText == "Gadgets-definition" then
+			return 'interfaceadmin'
+		else -- any non-JS/CSS MediaWiki page
+			return 'sysop'
+		end
+	elseif title.namespace == 2 and title.isSubpage then
+		if title.contentModel == 'javascript' or title.contentModel == 'css' then -- user JS or CSS page
+			return 'interfaceadmin'
+		elseif title.contentModel == 'json' then -- user JSON page
+			return 'sysop'
+		end
+	end
+	if action == 'undelete' then
+		return 'sysop'
+	end
+	local level = title.protectionLevels[action] and title.protectionLevels[action][1]
+	if level == 'sysop' or level == 'editprotected' then
+		return 'sysop'
+	elseif title.cascadingProtection.restrictions[action] and title.cascadingProtection.restrictions[action][1] then -- used by a cascading-protected page
+		return 'sysop'
+	elseif level == 'templateeditor' then
+		return 'templateeditor'
+	elseif action == 'move' then
+		local blacklistentry = mw.ext.TitleBlacklist.test('edit', pagename) -- Testing action edit is correct, since this is for the source page. The target page name gets tested with action move.
+		if blacklistentry and not blacklistentry.params.autoconfirmed then
+			return 'templateeditor'
+		elseif title.namespace == 6 then
+			return 'filemover'
+		elseif level == 'extendedconfirmed' then
+			return 'extendedconfirmed'
+		else
+			return 'autoconfirmed'
+		end
+	end
+	local blacklistentry = mw.ext.TitleBlacklist.test(action, pagename)
+	if blacklistentry then
+		if not blacklistentry.params.autoconfirmed then
+			return 'templateeditor'
+		elseif level == 'extendedconfirmed' then
+			return 'extendedconfirmed'
+		else
+			return 'autoconfirmed'
+		end
+	elseif level == 'editsemiprotected' then -- create-semiprotected pages return this for some reason
+		return 'autoconfirmed'
+	elseif level then
+		return level
+	elseif action == 'upload' then
+		return 'autoconfirmed'
+	elseif action == 'create' and title.namespace % 2 == 0 and title.namespace ~= 118 then -- You need to be registered, but not autoconfirmed, to create non-talk pages other than drafts
+		if title.namespace == 0 then
+			return 'autoconfirmed' -- Per [[WP:ACPERM]], you need to be autoconfirmed to create pages in mainspace
+		end
+		return 'user'
+	else
+		return '*'
+	end
+end
+
+setmetatable(p, { __index = function(t, k)
+	return function(frame)
+		return t._main(k, frame.args[1])
+	end
+end })
+
+return p</text>
+      <sha1>nacj9lsnya0896kpkyuy2onbc6mm6xw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:As of</title>
+    <ns>10</ns>
+    <id>16011254</id>
+    <revision>
+      <id>1283600415</id>
+      <parentid>1276724807</parentid>
+      <timeston>2025-04-02T14:19:52Z</timeston>
+      <contributor>
+        <username>Ivanvector</username>
+        <id>10734192</id>
+      </contributor>
+      <comment>[[WP:GLOBALIZE]]: allow usage of a neutral "mdy" switch for month-day-year format, for countries which are not the USA</comment>
+      <origin>1283600415</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2846" sha1="bq5bdna8yn906uggp4lk061xrls2ey6" xml:space="preserve">&lt;!--{{As of}} begin--&gt;&lt;includeonly&gt;&lt;!--
+
+## param 1 is the year
+## optional param 2 is the month
+## optional param 3 is the day of the month
+## optional named parameter alt=[text] is alternative display text (may include wiki markup)
+## optional named parameter df=mdy or df=US produces month-day-year format in displayed text
+## optional named parameter lc=on gives lower-case-first output
+## optional named parameter url=[URL] gives statement reference
+
+## displayed text ([A/a]s of [Start date] by default)
+--&gt;{{#if: {{{alt|}}} | {{{alt}}} | {{#if:{{{bare|}}}||{{#if:{{yesno|{{{since|}}}}}|{{#if: {{yesno|{{{lc|}}}}} | s | S }}ince | {{#if: {{yesno|{{{lc|}}}}} | a | A }}s of}}}} {{#if:{{{pre|}}}|{{{pre}}}&amp;#32;}}{{#if: {{{3|}}} | {{#switch:{{lc:{{{df|}}}}}|us|mdy={{MONTHNAME|{{{2}}}}}&amp;nbsp;{{#expr:{{{3}}}}},&amp;#32;|{{#expr:{{{3}}}}}&amp;nbsp;{{MONTHNAME|{{{2}}}}}&amp;nbsp;}}{{{1}}}|{{#if: {{{2|}}} |{{MONTHNAME|{{{2}}}}}&amp;nbsp;}}{{{1}}}}}}}{{#if:{{{post|}}}|&lt;nowiki /&gt;{{{post}}}}}&lt;!--
+#### That nowiki is required or, various characters (:, ;, #, and *} will be parsed as wikisyntax for list items.
+## ref/update inline banner (hidden by default)
+--&gt;&lt;sup class="plainlinks noexcerpt noprint asof-tag {{#if:{{{url|}}}|ref|update}}" style="display:none;"&gt;[{{#if:{{{url|}}}|{{{url}}} &amp;#91;ref&amp;#93;|{{fullurl:{{PAGENAME}}|action=edit}} &amp;#91;update&amp;#93;}}]&lt;/sup&gt;&lt;!--
+
+## categorisation disabled outside main namespace
+--&gt;{{Dated maintenance category (articles)|Articles containing potentially dated statements|from|&lt;!--
+
+## temporal category for template (word method)
+--&gt;{{#if: {{#ifexpr: {{{1}}} = 1 }} |{{#ifexpr:{{#time:U|{{{1}}}}} &gt; {{#time:U}} | the future | {{#ifexpr: {{#time:Y|{{{1}}}}} &gt; 2004 | {{{1}}} | {{#ifexpr: {{#time:Y|{{{1}}}}} &gt; 1989 | {{#time:Y|{{{1}}}}} | before 1990 }}}}}} |&lt;!--
+
+## temporal category for template (parameter method)
+--&gt;{{#ifexpr: {{{1}}} &gt; 2004 | {{#ifexpr:{{#time:U|{{#if:{{{2|}}} | {{MONTHNAME|{{{2}}}}}}} {{{1}}}}} &gt; {{#time:U}} | the future| {{#if:{{{2|}}} | {{MONTHNAME|{{{2}}}}} }} {{{1}}}}} | {{#ifexpr:{{{1}}} &gt; 1989 | {{{1}}} | before 1990 }}}}}}|&lt;!--
+
+## global category for template
+--&gt;All articles containing potentially dated statements}}&lt;/includeonly&gt;&lt;!--{{As of}} end--&gt;&lt;noinclude&gt;&lt;!-- 
+
+## dynamic example (as of today, self ref)
+
+--&gt;{{As of|{{CURRENTYEAR}}|{{CURRENTMONTH}}|{{CURRENTDAY}}}}&lt;sup class="plainlinks"&gt;[https://en.wikipedia.org/wiki/Template:As_of &amp;#91;ref&amp;#93;]&lt;/sup&gt;
+
+{{documentation}}
+
+&lt;!-- Add categories to the /doc subpage; interwikis go to Wikidata, thank you! --&gt; 
+
+&lt;/noinclude&gt;{{#invoke:Check for unknown parameters|check|unknown={{main other|[[Category:Pages using as of template with unknown parameters|_VALUE_{{PAGENAME}}]]}}|preview=Page using [[Template:As of]] with unknown parameter "_VALUE_"|ignoreblank=y| 1 | 2 | 3 | alt | bare | df | lc | post | pre | since | url }}</text>
+      <sha1>bq5bdna8yn906uggp4lk061xrls2ey6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Ombox</title>
+    <ns>10</ns>
+    <id>17522403</id>
+    <revision>
+      <id>948472472</id>
+      <parentid>948472468</parentid>
+      <timeston>2020-04-01T06:12:36Z</timeston>
+      <contributor>
+        <username>MusikAnimal</username>
+        <id>14882394</id>
+      </contributor>
+      <minor/>
+      <comment>1 revision imported</comment>
+      <origin>948472468</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="146" sha1="1o93yrjvq6v2ylug2k0uaaltljurje2" xml:space="preserve">{{#invoke:Message box|ombox}}&lt;noinclude&gt;
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage, and interwikis go on Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>1o93yrjvq6v2ylug2k0uaaltljurje2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Para</title>
+    <ns>10</ns>
+    <id>16639086</id>
+    <revision>
+      <id>1099725938</id>
+      <parentid>1099725401</parentid>
+      <timeston>2022-07-22T08:06:17Z</timeston>
+      <contributor>
+        <username>TheDJ</username>
+        <id>244887</id>
+      </contributor>
+      <comment>breakup super long words, so we do not overflow the viewport.</comment>
+      <origin>1099725938</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="608" sha1="0p8ksf0z4xhqkt9wrqh7fa1q0ga6u3s" xml:space="preserve">&lt;code class="tpl-para" style="word-break:break-word;{{SAFESUBST:&lt;noinclude /&gt;#if:{{{plain|}}}|border: none; background-color: inherit;}} {{SAFESUBST:&lt;noinclude /&gt;#if:{{{plain|}}}{{{mxt|}}}{{{green|}}}{{{!mxt|}}}{{{red|}}}|color: {{SAFESUBST:&lt;noinclude /&gt;#if:{{{mxt|}}}{{{green|}}}|#006400|{{SAFESUBST:&lt;noinclude /&gt;#if:{{{!mxt|}}}{{{red|}}}|#8B0000|inherit}}}};}} {{SAFESUBST:&lt;noinclude /&gt;#if:{{{style|}}}|{{{style}}}}}"&gt;&amp;#124;{{SAFESUBST:&lt;noinclude /&gt;#if:{{{1|}}}|{{{1}}}&amp;#61;}}{{{2|}}}&lt;/code&gt;&lt;noinclude&gt;
+{{Documentation}}
+&lt;!--Categories and interwikis go near the bottom of the /doc subpage.--&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>0p8ksf0z4xhqkt9wrqh7fa1q0ga6u3s</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Tag</title>
+    <ns>10</ns>
+    <id>7252577</id>
+    <revision>
+      <id>1343898983</id>
+      <parentid>852104887</parentid>
+      <timeston>2026-03-17T02:03:42Z</timeston>
+      <contributor>
+        <username>Andrybak</username>
+        <id>23735172</id>
+      </contributor>
+      <comment>Fix `|style=plain` in dark mode. See [[Template:Tag/testcases#Plain style]]</comment>
+      <origin>1343898983</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="849" sha1="raaklsk7m011yysk3yxm5h60oevl896" xml:space="preserve">&lt;code class="{{#ifeq:{{{wrap|}}}|yes|wrap|nowrap}}" style="{{#ifeq:{{{style|}}}|plain|border:none;background:transparent;color:inherit;|{{{style|}}}}}"&gt;&lt;!--
+ Opening tag
+--&gt;{{#switch:{{{2|pair}}}
+  |c|close =
+  |e|empty|s|single|v|void
+  |o|open
+  |p|pair = &amp;lt;{{#if:{{{link|}}}|[[HTML element#{{{1|tag}}}|{{{1|tag}}}]]|{{{1|tag}}}}}{{#if:{{{params|{{{attribs|}}}}}}|&amp;#32;{{{params|{{{attribs}}}}}}}}
+ }}&lt;!--
+ Content between tags
+--&gt;{{#switch:{{{2|pair}}}
+  |c|close = {{{content|}}}
+  |e|empty|s|single|v|void = &amp;#32;&amp;#47;&amp;gt;
+  |o|open = &amp;gt;{{{content|}}}
+  |p|pair = {{#ifeq:{{{1|tag}}}|!--||&amp;gt;}}{{{content|...}}}
+ }}&lt;!--
+ Closing tag
+--&gt;{{#switch:{{{2|pair}}}
+  |e|empty|s|single|v|void
+  |o|open =
+  |c|close
+  |p|pair = {{#ifeq:{{{1|tag}}}|!--|--&amp;gt;|&amp;lt;&amp;#47;{{{1|tag}}}&amp;gt;}}
+ }}&lt;!--
+--&gt;&lt;/code&gt;&lt;noinclude&gt;
+{{Documentation}}
+&lt;/noinclude&gt;</text>
+      <sha1>raaklsk7m011yysk3yxm5h60oevl896</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:High-use</title>
+    <ns>10</ns>
+    <id>17406187</id>
+    <revision>
+      <id>1157688598</id>
+      <parentid>1106268831</parentid>
+      <timeston>2023-05-30T09:39:48Z</timeston>
+      <contributor>
+        <username>Lectonar</username>
+        <id>128863</id>
+      </contributor>
+      <minor/>
+      <comment>Changed protection settings for "[[Template:High-use]]": [[WP:High-risk templates|High-risk template or module]] ([Edit=Require template editor access] (indefinite) [Move=Require template editor access] (indefinite))</comment>
+      <origin>1106268831</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="270" sha1="j29sm6019piulvmp7rcudlkhl1yuxmv" xml:space="preserve">{{#invoke:High-use|main|1={{{1|}}}|2={{{2|}}}|info={{{info|}}}|demo={{{demo|}}}|form={{{form|}}}|expiry={{{expiry|}}}|system={{{system|}}}}}&lt;noinclude&gt;
+{{Documentation}}
+&lt;!-- Add categories to the /doc subpage; interwiki links go to Wikidata, thank you! --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>j29sm6019piulvmp7rcudlkhl1yuxmv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:High-use</title>
+    <ns>828</ns>
+    <id>62062952</id>
+    <revision>
+      <id>1315814017</id>
+      <parentid>1315584747</parentid>
+      <timeston>2025-10-08T20:24:46Z</timeston>
+      <contributor>
+        <username>Ahecht</username>
+        <id>2016996</id>
+      </contributor>
+      <comment>Per [[Template talk:High-use#Transcluding nonexistent /testcases pages]]</comment>
+      <origin>1315814017</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="9348" sha1="7vhku385skyupjyp8fbj77dh043svz7" xml:space="preserve">require('strict')
+
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local _fetch = require('Module:Transclusion_count')._fetch -- _fetch looks at the 'demo' argument
+local yesno = require('Module:Yesno')
+
+local lang_obj = mw.getContentLanguage() -- this here because the language object is used multiple places in the module
+local large_count_cutoff = 100000
+local approx_num_total_pages = 63000000
+
+local user_subpage_info_page = 'Wikipedia:User pages#SUB'
+local sandbox_module_page = 'Module:Sandbox'
+local system_messages_cat = 'Pages used in system messages needing protection'
+local sandbox_word = 'sandbox'
+local testcases_word = 'testcases'
+local doc_word = 'doc'
+
+local function count_from_args(args)
+	if tonumber(args.count) then -- check if function has already been used
+		return tonumber(args.count) -- early exit if so
+	end
+	
+	local count
+	
+	if yesno(args['fetch']) ~= false then
+		count = _fetch(args) -- fetch transclusion count
+	end
+	
+	-- use explicitly-provided count when fetch fails
+	if count == nil and args[1] ~= nil and args[1] ~= '' then
+		-- convert local language number string to a number understandable by Lua
+		count = mw.ustring.gsub(args[1], '+$', '')
+		count = lang_obj:parseFormattedNumber(args[1])
+	end
+	
+	-- in case someone writes a non-positive number
+	if count and count &gt; 0 then
+		return count
+	end
+	
+	return nil
+end
+
+-- Actions if there is a large (greater than or equal to 100,000) transclusion count
+local function risk_boolean(args)
+	if args.risk == true or args.risk == false then
+		return args.risk
+	elseif args[1]  == 'risk' then
+		return true
+	else
+		local count = count_from_args(args)
+		if count and count &gt;= large_count_cutoff then
+			return true
+		end
+	end
+	return false
+end
+
+-- function retained for backwards compatibility
+function p._risk(args)
+	return risk_boolean(args) and 'risk' or ''
+end
+
+-- function retained for backwards compatibility
+function p.risk(frame)
+	return p._risk(getArgs(frame))
+end
+
+-- count and no_percent arguments retained for backwards compatibility
+function p._num(args, count, no_percent)
+	if count == nil then
+		count = count_from_args(args)
+	end
+	args.count = count
+	args.risk = risk_boolean(args)
+	
+	-- Build output string
+	local return_value = ''
+	if args.count == nil and args.risk then
+		return 'a very large number of'
+	elseif args.count == nil then
+		return 'many'
+	else
+		-- Use 2 significant figures for smaller numbers and 3 for larger ones
+		local sigfig = 2
+		if args.count &gt;= large_count_cutoff then
+			sigfig = 3
+		end
+		
+		-- Prepare to round to appropriate number of sigfigs
+		local f = math.floor(math.log10(args.count)) - sigfig + 1
+		
+		-- Round and insert 'approximately' or '+' when appropriate
+		if yesno(args[2]) == true or (type(args[1]) == 'string' and (mw.ustring.sub(args[1], -1) == '+')) then
+			-- Round down
+			return_value = string.format('%s+', lang_obj:formatNum(math.floor( (args.count / 10^(f)) ) * (10^(f))) )
+		else
+			-- Round to nearest
+			return_value = string.format('approximately&amp;#x20;%s', lang_obj:formatNum(math.floor( (args.count / 10^(f)) + 0.5) * (10^(f))) )
+		end
+		
+		-- Insert percentage of pages if that is likely to be &gt;= 1% and when |no-percent= not set to yes
+		no_percent = yesno(no_percent or args['no-percent'])
+		if args.count and args.count &gt;= approx_num_total_pages/100 and not no_percent then
+			local num_total_pages = mw.getCurrentFrame():callParserFunction('NUMBEROFPAGES', 'R')
+			local total_percent = math.floor( ( ( args.count/num_total_pages ) * 100) + 0.5)
+			
+			if total_percent &gt;= 1 then
+				return_value = string.format('%s&amp;#x20;pages, or roughly %s%% of all', return_value, total_percent)
+			end
+		end	
+	end
+	
+	return return_value
+end
+
+-- used by [[Template:Stub documentation]] and other pages
+-- count argument retained for backwards compatibility
+function p.num(frame, count)
+	return p._num(getArgs(frame), count)
+end
+
+-- count argument retained for backwards compatibility
+function p._text(args, count)
+	--[=[
+		Only show the information about how this template gets updated
+		if someone is actually editing the page and maybe trying to update the count.
+	]=]
+	local bot_text = (mw.getCurrentFrame():preprocess('{{REVISIONID}}') == '') and ("\n\n----\n'''Preview message''':" .. ' Transclusion count updated automatically ([[Template:High-use/doc#Technical details|see documentation]]).') or ''
+	
+	if count == nil then
+		count = count_from_args(args)
+	end
+	args.count = count
+	args.risk = risk_boolean(args)
+	
+	-- trim /doc, /sandbox and /testcases
+	local title = args.title or (args.demo and args.demo ~= '' and mw.title.new(args.demo, 'Template')) or mw.title.getCurrentTitle()
+	if title.subpageText == doc_word or title.subpageText == sandbox_word or title.subpageText == testcases_word then
+		title = title.basePageTitle
+	end
+	
+	-- use /testcases of base template
+	local testcases_page = mw.title.new(title.prefixedText .. '/' .. testcases_word)
+	-- exists is expensive
+	while testcases_page.basePageTitle.isSubpage and not testcases_page.exists do
+		testcases_page = mw.title.new(testcases_page.basePageTitle.basePageTitle.prefixedText .. '/' .. testcases_word)
+	end
+	
+	local systemMessages = (args['system'] or '') ~= ''
+	
+	-- This retrieves the project URL automatically to simplify localization.
+	local templateCount = ('on [https://linkcount.toolforge.org/?project=%s&amp;page=%s#transclusions %s pages]'):format(
+		title:fullUrl():gsub('//(.-)/.*', '%1'),
+		mw.uri.encode(title.fullText), p._num(args))
+	local used_on_text = "'''This " .. (title:inNamespace('Module') and 'Lua module' or 'template') .. ' is used '
+	if systemMessages then
+		used_on_text = used_on_text .. args['system'] ..
+			((args.count and args.count &gt; 2000) and ("''', and " .. templateCount) or ("'''"))
+	else
+		used_on_text = used_on_text .. templateCount .. "'''"
+	end
+	
+	local sandbox_text = ('%s\'s [[%s/sandbox|/sandbox]] or [[%s|/testcases]] subpages, or in your own [[%s]]. '):format(
+		title:inNamespace('Module') and 'module' or 'template',
+		title.fullText,
+		testcases_page.fullText,
+		title:inNamespace('Module') and (sandbox_module_page .. '|module sandbox') or (user_subpage_info_page .. '|user subpage')
+	)
+	
+	local infoArg = args['info'] ~= '' and args['info']
+	if (systemMessages or args.risk) then
+		local info = '.'
+		if systemMessages then
+			info = info .. '&lt;br /&gt;Changes to it can cause immediate changes to the ' .. mw.site.namespaces.Project.name .. ' user interface.'
+		end
+		if infoArg then
+			info = info .. '&lt;br /&gt;' .. infoArg
+		end
+		sandbox_text = info .. '&lt;br /&gt; To avoid major disruption' ..
+			(args.count and args.count &gt;= large_count_cutoff and ' and server load' or '') .. -- should this use args.risk?
+			', any changes should be tested in the ' .. sandbox_text ..
+			'The tested changes can be added to this page in a single edit. '
+	else
+		sandbox_text = (infoArg and ('.&lt;br /&gt;' .. infoArg .. ' C') or ' and c') ..
+			'hanges may be widely noticed. Test changes in the ' .. sandbox_text
+	end
+	
+	local discussion_text = systemMessages and 'Please discuss changes ' or 'Consider discussing changes '
+	if args[2] ~= nil and args[2] ~= '' and yesno(args[2]) == nil then
+		discussion_text = string.format('%sat [[%s]]', discussion_text, args[2])
+	else
+		discussion_text = string.format('%son the [[%s|talk page]]', discussion_text, title.talkPageTitle.fullText)
+	end
+	
+	return used_on_text .. sandbox_text .. discussion_text .. ' before implementing them.' .. bot_text
+end
+
+-- used by [[Template:R from high-use template]]
+-- count argument retained for backwards compatibility
+function p.text(frame, count)
+	return p._text(getArgs(frame), count)
+end
+
+-- nocat argument retained for backwards compatibility
+function p._main(args, nocat)
+	args.count = count_from_args(args)
+	args.risk = risk_boolean(args)
+	args.title = (args.demo and args.demo ~= '' and mw.title.new(args.demo, 'Template')) or mw.title.getCurrentTitle()
+	
+	local image = 'Ambox warning yellow.svg'
+	local type_param = 'style'
+	local epilogue = ''
+	
+	if args['system'] and args['system'] ~= '' then
+		image = 'Ambox important.svg'
+		type_param = 'content'
+		if yesno(nocat or args['nocat']) ~= true and not args.title.isRedirect then
+			local protection_action = (args.title:inNamespace('File') and 'upload') or 'edit'
+			local protection_level = require('Module:Effective protection level')._main(protection_action, args.title.fullText)
+			
+			if protection_level ~= 'sysop' and protection_level ~= 'templateeditor' and protection_level ~= 'interfaceadmin' then
+				epilogue = mw.getCurrentFrame():expandTemplate {
+					title = 'sandbox other',
+					args = {
+						[2] = '[[Category:' .. system_messages_cat .. ']]'
+					}
+				}
+			end
+		end
+	elseif args.risk then
+		image = 'Ambox warning orange.svg'
+		type_param = 'content'
+	end
+	
+	image = '[[File:' .. image .. '|40px|alt=Warning|link=]]'
+	if args['form'] == 'editnotice' then
+		return mw.getCurrentFrame():expandTemplate{
+				title = 'editnotice',
+				args = {
+						['image'] = image,
+						['text'] = p._text(args),
+						['expiry'] = (args['expiry'] or '')
+				}
+		} .. epilogue
+	else
+		return require('Module:Message box').main('ombox', {
+			type = type_param,
+			image = image,
+			text = p._text(args),
+			expiry = (args['expiry'] or '')
+		}) .. epilogue
+	end
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p</text>
+      <sha1>7vhku385skyupjyp8fbj77dh043svz7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Transclusion count</title>
+    <ns>828</ns>
+    <id>61792794</id>
+    <revision>
+      <id>1305411379</id>
+      <parentid>1260691518</parentid>
+      <timeston>2025-08-11T22:36:46Z</timeston>
+      <contributor>
+        <username>Pppery</username>
+        <id>28032115</id>
+      </contributor>
+      <comment>Add protection level for top 400 rows</comment>
+      <origin>1305411379</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="2582" sha1="gbl6ss0edudar6ja2191jv0zv8o86gv" xml:space="preserve">local p = {}
+
+function p._fetch(args)
+	local template = nil
+	local return_value = nil
+
+	-- Use demo parameter if it exists, otherwise use current template name
+	local namespace = mw.title.getCurrentTitle().namespace
+	if args["demo"] and args["demo"] ~= "" then
+		template = mw.ustring.gsub(args["demo"],"^[Tt]emplate:","")
+	elseif namespace == 10 then -- Template namespace
+		template = mw.title.getCurrentTitle().text
+	elseif namespace == 828 then -- Module namespace
+		template = (mw.site.namespaces[828].name .. ":" .. mw.title.getCurrentTitle().text)
+	end
+
+	-- If in template or module namespace, look up count in /data
+	if template ~= nil then
+		namespace = mw.title.new(template, "Template").namespace
+		if namespace == 10 or namespace == 828 then
+			template =  mw.ustring.gsub(template, "/doc$", "") -- strip /doc from end
+			template =  mw.ustring.gsub(template, "/sandbox$", "") -- strip /sandbox from end
+			local index = mw.ustring.sub(mw.title.new(template).text,1,1)
+			local status, data = pcall(function ()
+				return(mw.loadData('Module:Transclusion_count/data/' .. (mw.ustring.find(index, "%a") and index or "other")))
+			end)
+			if status then
+				return_value = tonumber(data[mw.ustring.gsub(template, " ", "_")])
+			end
+		end
+	end
+	
+	-- If database value doesn't exist, use value passed to template
+	if return_value == nil and args[1] ~= nil then
+		local arg1=mw.ustring.match(args[1], '[%d,]+')
+		if arg1 and arg1 ~= '' then
+			return_value = tonumber(mw.getCurrentFrame():callParserFunction('formatnum', arg1, 'R'))
+		end
+	end
+	
+	return return_value	
+end
+
+function p.fetch(frame)
+	return p._fetch(frame.args)
+end
+
+-- Tabulate this data for [[Wikipedia:Database reports/Templates transcluded on the most pages]]
+function p.tabulate()
+	local list = {}
+	for i = 65, 91 do
+		local data = mw.loadData('Module:Transclusion count/data/' .. ((i == 91) and 'other' or string.char(i)))
+		for name, count in pairs(data) do
+			local title = mw.title.new(name, "Template")
+			table.insert(list, {title, count})
+		end
+	end
+	table.sort(list, function(a, b)
+		return (a[2] == b[2]) and (a[1] &lt; b[1]) or (a[2] &gt; b[2])
+	end)
+	local lang = mw.getContentLanguage();
+	for i = 1, #list do
+		local protLevel = ""
+		local title = list[i][1]
+		if i &lt; 400 then
+			-- Stop at 400 to avoid breaching the expensive parser function call limit
+			protLevel = title.protectionLevels.edit[1] or "(unprotected)"
+		end
+		list[i] = ('|-\n| %d || [[%s]] || %s || %s \n'):format(i, title.fullText:gsub('_', ' '), lang:formatNum(list[i][2]), protLevel)
+	end
+	return table.concat(list)
+end
+
+return p</text>
+      <sha1>gbl6ss0edudar6ja2191jv0zv8o86gv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Module rating</title>
+    <ns>10</ns>
+    <id>39134544</id>
+    <redirect title="Template:Template rating" />
+    <revision>
+      <id>1310606351</id>
+      <parentid>1310606214</parentid>
+      <timeston>2025-09-10T15:49:37Z</timeston>
+      <contributor>
+        <username>Waddie96</username>
+        <id>13503327</id>
+      </contributor>
+      <comment>Modifying [[WP:RCAT|redirect categories]] using [[User:Wugapodes/Capricorn|Capricorn ♑]]</comment>
+      <origin>1310606351</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="113" sha1="1foept7zoaam5vjrfz3pyntp5xbpjv4" xml:space="preserve">#REDIRECT [[Template:Template rating]]
+
+{{Redirect category shell|
+{{R from merge}}
+{{R mentioned in hatnote}}
+}}</text>
+      <sha1>1foept7zoaam5vjrfz3pyntp5xbpjv4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Transclusion count/data/R</title>
+    <ns>828</ns>
+    <id>61481078</id>
+    <revision>
+      <id>1343581686</id>
+      <parentid>1342293715</parentid>
+      <timeston>2026-03-15T05:12:38Z</timeston>
+      <contributor>
+        <username>Ahechtbot</username>
+        <id>26109785</id>
+      </contributor>
+      <minor/>
+      <comment>[[Wikipedia:BOT|Bot]]: Updated page.</comment>
+      <origin>1343581686</origin>
+      <model>Scribunto</model>
+      <format>text/plain</format>
+      <text bytes="12821" sha1="lawngl7zofnu4f19l2xxti6emesqzbr" xml:space="preserve">return {
+["R"] = 35000,
+["R/ref"] = 35000,
+["R/superscript"] = 107000,
+["R/where"] = 107000,
+["RA"] = 11000,
+["RCS"] = 4200,
+["REVISIONUSER2"] = 70000,
+["RMS"] = 6300,
+["RMnac"] = 3200,
+["ROM"] = 2700,
+["ROU"] = 7600,
+["RSA"] = 5100,
+["RSS-Atom_feed_notice"] = 222000,
+["RTGS"] = 2400,
+["RT_data"] = 4100,
+["RUS"] = 15000,
+["R_alt"] = 2800,
+["R_ambig"] = 16000,
+["R_animal_with_possibilities"] = 2200,
+["R_avoided_double_redirect"] = 193000,
+["R_cat_shell"] = 11000,
+["R_category_shell"] = 11000,
+["R_from_ASCII-only"] = 224000,
+["R_from_ATC_code"] = 4700,
+["R_from_ATCvet_code"] = 5400,
+["R_from_British_English"] = 2400,
+["R_from_DOI_prefix"] = 7500,
+["R_from_IMO_number"] = 4300,
+["R_from_ISO_4"] = 42000,
+["R_from_ISO_4_abbreviation"] = 47000,
+["R_from_ISO_639"] = 8800,
+["R_from_ISO_639_code"] = 9000,
+["R_from_NLM"] = 4600,
+["R_from_NLM_abbreviation"] = 4700,
+["R_from_UK_road"] = 3000,
+["R_from_UN/LOCODE"] = 7100,
+["R_from_US_postal_abbreviation"] = 43000,
+["R_from_Unicode"] = 28000,
+["R_from_Unicode_character"] = 32000,
+["R_from_abbreviation"] = 26000,
+["R_from_acronym"] = 2800,
+["R_from_adjective"] = 7400,
+["R_from_airport_code"] = 6900,
+["R_from_album"] = 18000,
+["R_from_alt_name"] = 4600,
+["R_from_alternate_name"] = 20000,
+["R_from_alternate_spelling"] = 7200,
+["R_from_alternative_capitalisation"] = 9000,
+["R_from_alternative_capitalization"] = 4600,
+["R_from_alternative_disambiguation"] = 6300,
+["R_from_alternative_hyphenation"] = 304000,
+["R_from_alternative_language"] = 88000,
+["R_from_alternative_name"] = 289000,
+["R_from_alternative_punctuation"] = 33000,
+["R_from_alternative_scientific_name"] = 157000,
+["R_from_alternative_spacing"] = 14000,
+["R_from_alternative_spelling"] = 77000,
+["R_from_alternative_title"] = 10000,
+["R_from_alternative_transliteration"] = 6900,
+["R_from_ambiguous"] = 2900,
+["R_from_ambiguous_page"] = 7800,
+["R_from_ambiguous_sort_name"] = 40000,
+["R_from_ambiguous_term"] = 50000,
+["R_from_avoided_double_redirect"] = 7100,
+["R_from_birth_name"] = 12000,
+["R_from_book"] = 4900,
+["R_from_case_citation"] = 3100,
+["R_from_category_navigation"] = 4500,
+["R_from_chemical_formula"] = 9200,
+["R_from_comment_subpage"] = 22000,
+["R_from_diacritic"] = 10000,
+["R_from_diacritics"] = 2100,
+["R_from_domain_name"] = 12000,
+["R_from_draft"] = 3900,
+["R_from_draft_namespace"] = 5700,
+["R_from_drug_trade_name"] = 23000,
+["R_from_emoji"] = 3300,
+["R_from_fictional_character"] = 55000,
+["R_from_fictional_element"] = 5400,
+["R_from_fictional_location"] = 2300,
+["R_from_former_name"] = 31000,
+["R_from_full_name"] = 13000,
+["R_from_gene_symbol"] = 10000,
+["R_from_given_name"] = 2900,
+["R_from_incomplete_disambiguation"] = 59000,
+["R_from_incomplete_name"] = 2600,
+["R_from_incorrect_disambiguation"] = 5400,
+["R_from_incorrect_name"] = 13000,
+["R_from_initialism"] = 22000,
+["R_from_legislation"] = 3200,
+["R_from_less_specific_name"] = 4600,
+["R_from_list_topic"] = 9500,
+["R_from_long"] = 5600,
+["R_from_long_name"] = 97000,
+["R_from_longer_name"] = 17000,
+["R_from_member"] = 6300,
+["R_from_merge"] = 74000,
+["R_from_miscapitalisation"] = 39000,
+["R_from_miscapitalization"] = 5700,
+["R_from_misspelling"] = 66000,
+["R_from_modification"] = 459000,
+["R_from_molecular_formula"] = 6800,
+["R_from_monotypic_taxon"] = 7900,
+["R_from_more_specific_geographic_name"] = 2700,
+["R_from_more_specific_name"] = 5400,
+["R_from_move"] = 2960000,
+["R_from_move/except"] = 2960000,
+["R_from_name_with_title"] = 5900,
+["R_from_nickname"] = 3000,
+["R_from_old_AfC_draft"] = 29000,
+["R_from_other_capitalisation"] = 417000,
+["R_from_other_capitalization"] = 6000,
+["R_from_other_disambiguation"] = 19000,
+["R_from_other_language"] = 2800,
+["R_from_other_name"] = 7300,
+["R_from_other_spelling"] = 2600,
+["R_from_person"] = 12000,
+["R_from_personal_name"] = 2600,
+["R_from_plural"] = 37000,
+["R_from_product_name"] = 2400,
+["R_from_pseudonym"] = 2800,
+["R_from_railroad_name_with_ampersand"] = 2300,
+["R_from_related_term"] = 2100,
+["R_from_related_topic"] = 6900,
+["R_from_related_word"] = 17000,
+["R_from_remote_page"] = 12000,
+["R_from_remote_talk_page"] = 29000,
+["R_from_school"] = 3400,
+["R_from_scientific_name"] = 35000,
+["R_from_short"] = 4200,
+["R_from_short_name"] = 112000,
+["R_from_shortcut"] = 45000,
+["R_from_shorter_name"] = 2400,
+["R_from_shorter_title"] = 5100,
+["R_from_song"] = 58000,
+["R_from_sort_name"] = 179000,
+["R_from_species_to_genus"] = 4900,
+["R_from_subpage"] = 41000,
+["R_from_subtopic"] = 78000,
+["R_from_surname"] = 31000,
+["R_from_symbol"] = 3100,
+["R_from_synonym"] = 6200,
+["R_from_taxonomic_synonym"] = 2500,
+["R_from_television_episode"] = 59000,
+["R_from_template_shortcut"] = 4600,
+["R_from_title_with_diacritics"] = 5800,
+["R_from_title_without_diacritics"] = 394000,
+["R_from_trade_name"] = 23000,
+["R_from_typo"] = 3900,
+["R_from_unnecessary_disambiguation"] = 46000,
+["R_from_work"] = 2400,
+["R_from_year"] = 4100,
+["R_hatnote"] = 2900,
+["R_mentioned_in_hatnote"] = 11000,
+["R_miscap"] = 2600,
+["R_move"] = 2300,
+["R_printworthy"] = 85000,
+["R_protected"] = 9800,
+["R_protected/excon"] = 2300,
+["R_protected/semi"] = 5800,
+["R_sect"] = 3500,
+["R_section"] = 13000,
+["R_shell"] = 19000,
+["R_to_Swiss_municipality_(,_Switzerland)"] = 2300,
+["R_to_Swiss_municipality_(canton)"] = 3500,
+["R_to_Swiss_municipality_2L"] = 2600,
+["R_to_TV_episode_list_entry"] = 9000,
+["R_to_alternative_scientific_name"] = 2800,
+["R_to_anchor"] = 101000,
+["R_to_category_namespace"] = 6500,
+["R_to_century"] = 2700,
+["R_to_diacritic"] = 420000,
+["R_to_diacritics"] = 4700,
+["R_to_disambiguation"] = 3900,
+["R_to_disambiguation_page"] = 286000,
+["R_to_list"] = 38000,
+["R_to_list_entry"] = 89000,
+["R_to_monotypic_taxon"] = 16000,
+["R_to_plural"] = 4300,
+["R_to_project"] = 2600,
+["R_to_project_namespace"] = 24000,
+["R_to_redirect_template"] = 3300,
+["R_to_related_topic"] = 92000,
+["R_to_scientific_name"] = 103000,
+["R_to_section"] = 405000,
+["R_to_short_name"] = 4400,
+["R_to_stub_template"] = 4300,
+["R_to_subpage"] = 7800,
+["R_to_subtopic"] = 4000,
+["R_to_transliteration"] = 15000,
+["R_unprintworthy"] = 94000,
+["R_with_Wikidata_item"] = 45000,
+["R_with_history"] = 20000,
+["R_with_possibilities"] = 119000,
+["Racing-Reference_driver"] = 2800,
+["Radio_Relay"] = 3300,
+["Radio_formats"] = 11000,
+["Rail-interchange"] = 42000,
+["RailGauge"] = 10000,
+["Rail_color"] = 37000,
+["Rail_color_box"] = 15000,
+["Rail_icon"] = 19000,
+["Rail_line"] = 9800,
+["Rail_navbox_titlestyle"] = 13000,
+["Rail_pass_box"] = 17000,
+["Rail_start"] = 2100,
+["Rail_template_doc"] = 2300,
+["Railway-routemap"] = 4500,
+["Railway_division_link"] = 4700,
+["Railway_stations_in_countryname_opened_in_YYYY_category_header"] = 3100,
+["Railway_stations_in_countryname_opened_or_closed_in_YYYY_category_header"] = 5300,
+["Railway_stations_in_countryname_opened_or_closed_in_YYYY_category_header/core"] = 5300,
+["Rand"] = 5200,
+["Random_number"] = 5500,
+["Random_page_in_category"] = 5600,
+["Random_subpage"] = 7700,
+["Ranking_movements"] = 4700,
+["Rating"] = 108000,
+["Rating-Christgau"] = 2700,
+["Rayment"] = 2100,
+["Rayment-hc"] = 6400,
+["Rbox"] = 2000,
+["Rcat_shell"] = 253000,
+["Rcatsh"] = 9700,
+["Rcatshell"] = 4500,
+["Rcb"] = 10000,
+["Rcr"] = 29000,
+["Rcs"] = 3200,
+["Re"] = 86000,
+["Recent_AfDs"] = 5300,
+["Recent_AfDs/core"] = 5300,
+["Red"] = 54000,
+["Redacted"] = 3100,
+["Redirect"] = 60000,
+["Redirect-Class"] = 12000,
+["Redirect-distinguish"] = 4800,
+["Redirect_category"] = 4800,
+["Redirect_category_shell"] = 3920000,
+["Redirect_from_modification"] = 3200,
+["Redirect_from_move"] = 3700,
+["Redirect_italic_title"] = 2100,
+["Redirect_shell"] = 322000,
+["Redirect_template"] = 7620000,
+["Redirect_to_section"] = 3700,
+["Redr"] = 9200,
+["Ref"] = 24000,
+["Ref_heading"] = 2300,
+["Ref_improve"] = 2500,
+["Ref_label"] = 13000,
+["Refbegin"] = 221000,
+["Refbegin/styles.css"] = 221000,
+["Refend"] = 220000,
+["Reference_column_heading"] = 9200,
+["Reference_page"] = 75000,
+["Refh"] = 4100,
+["Refideas"] = 29000,
+["Refimprove"] = 76000,
+["Refimprove_section"] = 2000,
+["Reflist"] = 6470000,
+["Reflist-talk"] = 106000,
+["Reflist-talk/styles.css"] = 107000,
+["Reflist/styles.css"] = 6470000,
+["Reflist_talk"] = 7700,
+["Refn"] = 41000,
+["Reftalk"] = 8800,
+["Region_history_sidebar_title"] = 5900,
+["Regional_notice_board_box"] = 249000,
+["Regional_notice_board_box/1"] = 249000,
+["Registered_Historic_Places"] = 2000,
+["Registration_required"] = 7600,
+["Reign"] = 5400,
+["Related_molecular_formulas"] = 2300,
+["ReleaseVersionParameters"] = 2100,
+["Release_version_parameters"] = 2100,
+["Reliable_sources_for_medical_articles"] = 14000,
+["Remove_accents"] = 9700,
+["Remove_file_prefix"] = 2100,
+["Remove_first_word"] = 190000,
+["Remove_last_word"] = 21000,
+["Repeat_vandal"] = 2700,
+["Repeated_IP_abuse"] = 5300,
+["Repeatvandal"] = 2200,
+["Replace"] = 1530000,
+["Reply"] = 23000,
+["Reply_to"] = 361000,
+["Replyto"] = 19000,
+["Republican_Party_(US)/meta/shading"] = 18000,
+["Reqmapin"] = 2600,
+["Reqphoto"] = 74000,
+["Request_and_endorse"] = 2100,
+["Request_edit_button"] = 10000,
+["Request_edit_button/styles.css"] = 10000,
+["Requestandendorse"] = 2000,
+["Resbox"] = 3200,
+["Resize"] = 147000,
+["Resizediv"] = 14000,
+["Resolve_category_redirect"] = 1330000,
+["Resolved"] = 18000,
+["Respell"] = 23000,
+["Respond"] = 71000,
+["Resume-like"] = 4300,
+["Retired"] = 10000,
+["Retrieved"] = 3200,
+["Reverse_date"] = 54000,
+["Reviewer_topicon"] = 2700,
+["RfA_watchlist_notice"] = 7100,
+["Rfd_log_header"] = 7200,
+["Ribbon_devices"] = 5200,
+["Ribbon_devices/alt"] = 5200,
+["Ribbon_devices/device"] = 4000,
+["Ribbon_devices/device_layout"] = 4000,
+["Ric"] = 14000,
+["Right"] = 6700,
+["Right_ascension"] = 11000,
+["Rint"] = 30000,
+["Rlp"] = 10000,
+["Rlp/Positions"] = 10000,
+["Rmri"] = 3900,
+["Rnd"] = 8400,
+["Rollback_topicon"] = 3200,
+["Roman"] = 3100,
+["Romania_metadata_Wikidata"] = 3200,
+["RomanianSoccer"] = 2400,
+["Rotten-tomatoes"] = 9200,
+["Rotten_Tomatoes"] = 25000,
+["Rotten_Tomatoes_data"] = 6300,
+["Rotten_Tomatoes_prose"] = 6300,
+["Round"] = 60000,
+["Round4-with_third"] = 3500,
+["Round_corners"] = 9200,
+["Rounddown"] = 3000,
+["RouteBox"] = 9400,
+["Routemap"] = 30000,
+["Routemap/embeded_text"] = 9300,
+["Routemap/if_empty_codes"] = 5000,
+["Routemap/styles.css"] = 30000,
+["RoutemapRouteIcon"] = 4000,
+["Row_hover_highlight"] = 2800,
+["Row_hover_highlight/styles.css"] = 2800,
+["Rp"] = 73000,
+["Rshell"] = 9900,
+["Rtl-para"] = 2100,
+["Rto"] = 3500,
+["Ru"] = 3700,
+["Ru-census"] = 5600,
+["Ru-census2002"] = 5600,
+["Ru-census2010"] = 5600,
+["Ru-pop-ref"] = 8000,
+["Ruby/styles.css"] = 2100,
+["Rugby_box"] = 3500,
+["Rugby_league_positions"] = 10000,
+["Rugby_league_positions/Positions"] = 10000,
+["Rugby_league_squad2_coach"] = 2800,
+["Rugby_union_team"] = 5200,
+["Rugby_union_team/link"] = 5200,
+["Rugbybox"] = 3500,
+["RussiaAdmMunRef"] = 5900,
+["Russia_Time_Zone_Wikidata"] = 6700,
+["Russia_Time_Zone_Wikidata/getQID"] = 6500,
+["Russia_by_federal_subject_category_navigation"] = 2900,
+["Rut"] = 5200,
+["Rwd"] = 4700,
+["Rws"] = 26000,
+["Module:R_avoided_double_redirect"] = 193000,
+["Module:Rail-interchange_multi"] = 15000,
+["Module:Random"] = 13000,
+["Module:Ranking_movements"] = 4700,
+["Module:Ranking_movements/styles.css"] = 4700,
+["Module:Redirect"] = 5130000,
+["Module:Redirect-distinguish"] = 4800,
+["Module:RedirectData"] = 45000,
+["Module:Redirect_hatnote"] = 62000,
+["Module:Redirect_template"] = 7620000,
+["Module:Redirect_template_handler"] = 25000,
+["Module:Reply_to"] = 361000,
+["Module:ResolveEntityId"] = 495000,
+["Module:Resolve_category_redirect"] = 1700000,
+["Module:Respell"] = 23000,
+["Module:Rivals.com_recruit_url"] = 2400,
+["Module:Road_data"] = 18000,
+["Module:Road_data/RJL_types"] = 16000,
+["Module:Road_data/banners/USA"] = 9400,
+["Module:Road_data/browse"] = 18000,
+["Module:Road_data/browsetable"] = 18000,
+["Module:Road_data/browsetable/styles.css"] = 18000,
+["Module:Road_data/countrymask"] = 35000,
+["Module:Road_data/extra"] = 32000,
+["Module:Road_data/locations"] = 12000,
+["Module:Road_data/parser"] = 42000,
+["Module:Road_data/parser/hooks"] = 20000,
+["Module:Road_data/parser/namespace"] = 3800,
+["Module:Road_data/size"] = 18000,
+["Module:Road_data/strings/ASIA"] = 8900,
+["Module:Road_data/strings/CAN"] = 5000,
+["Module:Road_data/strings/EUR"] = 5700,
+["Module:Road_data/strings/IND"] = 2200,
+["Module:Road_data/strings/JPN"] = 3500,
+["Module:Road_data/strings/USA"] = 20000,
+["Module:Road_data/strings/USA/regional/GRR"] = 20000,
+["Module:Road_data/strings/USA/regional/NER"] = 20000,
+["Module:Road_data/strings/USA/regional/Tour"] = 20000,
+["Module:Road_data/strings/USA/regional/Trails"] = 20000,
+["Module:Road_data/util"] = 43000,
+["Module:Roman"] = 6000,
+["Module:Rotten_Tomatoes_data"] = 6300,
+["Module:RoundN"] = 13000,
+["Module:Routemap"] = 30000,
+["Module:Rugby_box"] = 3500,
+["Module:Russia_by_federal_subject_category_navigation"] = 2900,
+}</text>
+      <sha1>lawngl7zofnu4f19l2xxti6emesqzbr</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:High-risk</title>
+    <ns>10</ns>
+    <id>11453893</id>
+    <redirect title="Template:High-use" />
+    <revision>
+      <id>1149009627</id>
+      <parentid>948472462</parentid>
+      <timeston>2023-04-09T16:46:44Z</timeston>
+      <contributor>
+        <username>Nagsb</username>
+        <id>45555970</id>
+      </contributor>
+      <origin>1149009627</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="120" sha1="9o509tuzggiizv8673s2ucyx82hdjgp" xml:space="preserve">#REDIRECT [[Template:High-use]]
+
+{{Rcat shell|
+{{R with Wikidata item}}
+{{R from merge}}
+{{R from template shortcut}}
+}}</text>
+      <sha1>9o509tuzggiizv8673s2ucyx82hdjgp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Template rating</title>
+    <ns>10</ns>
+    <id>53399178</id>
+    <revision>
+      <id>1336923237</id>
+      <parentid>1326146056</parentid>
+      <timeston>2026-02-06T13:24:16Z</timeston>
+      <contributor>
+        <username>Sophivorus</username>
+        <id>8396030</id>
+      </contributor>
+      <comment>Link to replacement</comment>
+      <origin>1336923237</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="8093" sha1="012hbsdccyka8kh6en7uf9uzb1h2uub" xml:space="preserve">&lt;includeonly&gt;{{#if:{{{1|}}}&lt;!-- Escape empty required first unnamed parameter --&gt;|{{#switch:{{Namespace detect|template=t|module=m|demospace={{{demospace|}}}|page={{{demopage|}}}}}
+|m
+|t = &lt;!-- ***** IF IN MODULE OR TEMPLATE NAMESPACE ***** --&gt;{{ombox
+ | type      = notice
+ | image     = {{#switch: {{lc:{{{1|}}}}}
+   | pre-alpha | prealpha | pa | experimental = [[File:Ambox warning blue construction.svg|40x40px|link=|alt=]]
+   | alpha | a                                = [[File:Greek lc alpha icon.svg|class=skin-invert|26x26px|link=|alt=]]
+   | beta | b                                 = [[File:Greek lc beta icon.svg|class=skin-invert|40x40px|link=|alt=]]
+   | release | r | general | g | stable | protected | protect | p | semiprotected | semiprotect | semi = [[File:Green check.svg|40x40px|link=|alt=]]
+   | broken | br | unstable = [[File:Red x.svg|40x40px|link=|alt=]]
+   | deprecated | d | defunct = [[File:Historical.svg|40x40px|link=|alt=]]
+  }}
+ | style     = 
+ | textstyle = 
+ | text      = {{#switch: {{lc:{{{1|}}}}}
+   | pre-alpha | prealpha | pa | experimental = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]] is rated as [[:Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in pre-alpha development|pre-alpha]]. It is incomplete and may or may not be in active development. Do not use it in [[Wikipedia:Article namespace|article namespace]] pages. A {{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}} remains in pre-alpha until its developer, or another editor who adopts it if it is abandoned for some time, considers the basic structure complete.
+   | alpha | a                 = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]]  is rated as [[:Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in alpha|alpha]]. It is ready for limited use and third-party feedback. It may be used on a small number of pages, but should be monitored closely. Suggestions for new features or adjustments to input and output are welcome.
+   | beta | b                  = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]]  is rated as [[:Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in beta|beta]]. It is considered ready for widespread use, but as it is still relatively new, it should be applied with some caution to ensure results are as expected.
+   | release | r | general | g | stable | protected | protect | p | semiprotected | semiprotect | semi = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]]  is rated as [[:Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s for general use|ready for general use]]. It has reached a mature state, is considered relatively stable and bug-free, and may be used wherever appropriate. It can be mentioned on [[Wikipedia:Help pages|help pages]] and other Wikipedia resources as an option for new users. To minimise server load and avoid disruptive output, improvements should be developed through [[Wikipedia:Template sandbox and test cases|sandbox testing]] rather than repeated trial-and-error editing.
+   | broken | br | unstable    = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]]  is rated as [[:Category:Unstable {{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}s|unstable]]. It has missing dependencies, compatibility issues, or output errors that make it unusable. Editors are encouraged to [[Special:EditPage/{{FULLPAGENAME}}|improve its compatibility]] or [[Wikipedia:Templates for discussion|nominate it for deletion]] if it cannot be fixed.
+   | deprecated | d | defunct  = This [[Wikipedia:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}|{{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}]]  is rated as '''[[:Category:Deprecated {{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}s|deprecated]]''' and defunct.{{#if:{{{replaced|}}}|{{space}}It is recommended editors use [[{{{replaced}}}]].}}{{#if:{{{message|}}}|{{space}}{{{message}}}}}
+   | #default                  = {{error|Page using [[Template:Template rating]] with &lt;u&gt;invalid&lt;/u&gt; template or module rating in {{para|1}} parameter.}}[[Category:Pages using template rating template with unknown parameters|{{FULLPAGENAME}}]]
+  }}
+}}&lt;!-- Categorize.
+--&gt;{{#if:{{{demopage|}}}{{{demospace|}}}||
+      {{#switch: {{lc:{{SUBPAGENAME}}}}
+         | doc | sandbox =&lt;!-- No category for /doc or /sandbox subpages --&gt;
+         | {{#ifeq: {{{nocat|}}} | true 
+             | &lt;!-- No category if user sets nocat=true --&gt; 
+             | {{#switch: {{lc:{{{1|}}}}}
+                 | pre-alpha | prealpha | pa | experimental = [[Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in pre-alpha development|{{PAGENAME}}]]
+                 | alpha | a                                = [[Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in alpha|{{PAGENAME}}]]
+                 | beta | b                                 = [[Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s in beta|{{PAGENAME}}]]
+                 | release | r | general | g | stable | protected | p | semiprotected | semiprotect | semi = [[Category:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}s for general use|{{PAGENAME}}]]
+                 | deprecated | d | defunct = [[Category:Deprecated {{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}s|{{PAGENAME}}]]
+				 | broken | br | unstable = [[Category:Unstable {{lc:{{NAMESPACE:{{{demopage|{{FULLPAGENAME}}}}}}}}}s|{{PAGENAME}}]]
+               }}
+           }}
+       }}
+}}
+| #default = &lt;!-- ***** Error not in Template or Module namespaces ***** --&gt;{{if preview|1={{error|Error: {{tl|Template rating}} can only be used on pages in the [[Wikipedia:Template namespace|Template:]] or [[Wikipedia:Module namespace|Module: namespaces]].}}}}[[Category:Pages with templates in the wrong namespace]]
+}}&lt;!-- End switch. --&gt;|{{If preview|1={{error|Page using [[Template:Template rating]] with &lt;u&gt;empty&lt;/u&gt; {{para|1}} module rating parameter.}}}}[[Category:Pages using template rating template with unknown parameters|{{FULLPAGENAME}}]]&lt;!--
+--&gt;}}&lt;!-- End if. Display protection template if necessary, this will obviously show it for /doc page too since it uses {{FULLPAGENAME}}: --&gt;{{#switch:{{Namespace detect|template=t|module=m|demospace={{{demospace|}}}}}
+|t|m = {{#if:{{{suppress-pp|}}}
+           |
+           |{{#switch:{{#invoke:Effective protection level|edit|1={{{demopage|{{FULLPAGENAME}}}}}}}
+                |*|user = &lt;!-- If not protected page, do nothing. --&gt;
+                |#default = {{#ifeq:{{lc:{{SUBPAGENAME}}}}|doc
+                    |&lt;!-- {{#if:{{{2|}}}{{{doc-reason|}}}{{{3|}}}{{{doc-action|}}} --&gt;&lt;!-- 
+                      --&gt;&lt;!-- | --&gt;{{pp|{{{2|{{{doc-reason|}}}}}}|action={{{3|{{{doc-action|}}}}}}}}&lt;!--
+                  --&gt;&lt;!-- }} --&gt;
+                 --&gt;|{{pp|1={{{reason|{{{doc-reason|}}}}}}|action={{{action|{{{doc-action|}}}}}}|demolevel={{{demolevel|}}}}}&lt;!-- 
+             --&gt;}}&lt;!--
+        --&gt;}}&lt;!-- 
+    --&gt;}}
+|#default = &lt;!-- If not in template or module namespace, do nothing
+--&gt;}}&lt;!--
+  End template, start tracking.
+--&gt;{{#invoke:Check for unknown parameters| check
+| unknown = {{#if:{{{demopage|}}}{{{demospace|}}}||{{#switch:{{Namespace detect|template=t|module=m}}|m|t=[[Category:Pages using template rating template with unknown parameters|_VALUE_{{FULLPAGENAME}}]]}}}}
+| preview = Page using [[Template:Template rating]] with unknown parameter "_VALUE_"
+| ignoreblank=y | demospace | demopage | 1 | 2 | 3 | reason | action | doc-reason | doc-action | nocat | replaced | message | demolevel | suppress-pp | demopage
+}}&lt;/includeonly&gt;&lt;!-- End tracking. --&gt;&lt;noinclude&gt;
+{{template rating/sandbox|release|nocat=true|demospace=template|demopage=template:template rating|demolevel=edit}}
+{{mbox|text=The above template is a demo.}}
+{{documentation}}
+&lt;!-- Categories go on the /doc subpage, and interwikis go in Wikidata. --&gt;
+&lt;/noinclude&gt;</text>
+      <sha1>012hbsdccyka8kh6en7uf9uzb1h2uub</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Module:Message box/ombox.css</title>
+    <ns>828</ns>
+    <id>70729525</id>
+    <revision>
+      <id>1308393816</id>
+      <parentid>1308393454</parentid>
+      <timeston>2025-08-29T06:07:09Z</timeston>
+      <contributor>
+        <username>Izno</username>
+        <id>2927383</id>
+      </contributor>
+      <comment>english</comment>
+      <origin>1308393816</origin>
+      <model>sanitized-css</model>
+      <format>text/css</format>
+      <text bytes="1923" sha1="s3kd4o8l90hza7k55c82cm0ltkd3xp2" xml:space="preserve">/* {{pp|small=y}} */
+.ombox {
+	margin: 4px 0;
+	border-collapse: collapse;
+	border: 1px solid #a2a9b1;    /* Default "notice" gray */
+	background-color: var(--background-color-neutral-subtle, #f8f9fa);
+	box-sizing: border-box;
+    color: var(--color-base, #202122);
+}
+
+/* For the "small=yes" option. */
+.ombox.mbox-small {
+	font-size: 88%;
+	line-height: 1.25em;
+}
+
+.ombox-speedy {
+	border: 2px solid #b32424;    /* Red */
+	background-color: #fee7e6;    /* Pink */
+}
+
+.ombox-delete {
+	border: 2px solid #b32424;    /* Red */
+}
+
+.ombox-content {
+	border: 1px solid #f28500;    /* Orange */
+}
+
+.ombox-style {
+	border: 1px solid #fc3;       /* Yellow */
+}
+
+.ombox-move {
+	border: 1px solid #9932cc;    /* Purple */
+}
+
+.ombox-protection {
+	border: 2px solid #a2a9b1;    /* Gray-gold */
+}
+
+.ombox .mbox-text {
+	border: none;
+	/* @noflip */
+	padding: 0.25em 0.9em;
+	width: 100%;
+}
+
+.ombox .mbox-image {
+	border: none;
+	/* @noflip */
+	padding: 2px 0 2px 0.9em;
+	text-align: center;
+}
+
+.ombox .mbox-imageright {
+	border: none;
+	/* @noflip */
+	padding: 2px 0.9em 2px 0;
+	text-align: center;
+}
+
+/* An empty narrow cell */
+.ombox .mbox-empty-cell {
+	border: none;
+	padding: 0;
+	width: 1px;
+}
+
+/* keep synced with each other type of message box as this isn't qualified */
+.mbox-invalid-type {
+	text-align: center;
+}
+
+@media (min-width: 720px) {
+	.ombox {
+		margin: 4px 10%;
+	}
+	
+	.ombox.mbox-small {
+		/* @noflip */
+		clear: right;
+		/* @noflip */
+		float: right;
+		/* @noflip */
+		margin: 4px 0 4px 1em;
+		width: 238px;
+	}
+}
+
+/** T367463 */
+body.skin--responsive table.ombox img {
+	max-width: none !important;
+}
+
+@media screen {
+	html.skin-theme-clientpref-night .ombox-speedy {
+		background-color: #310402;    /* Dark red, same hue/saturation as light */
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os .ombox-speedy {
+		background-color: #310402; /* Dark red, same hue/saturation as light */
+	}
+}</text>
+      <sha1>s3kd4o8l90hza7k55c82cm0ltkd3xp2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Dated maintenance category (articles)</title>
+    <ns>10</ns>
+    <id>23226218</id>
+    <revision>
+      <id>1137159158</id>
+      <parentid>1137158806</parentid>
+      <timeston>2023-02-03T03:07:34Z</timeston>
+      <contributor>
+        <username>UtherSRG</username>
+        <id>33145</id>
+      </contributor>
+      <minor/>
+      <comment>UtherSRG moved page [[Template:DMCA]] to [[Template:Dated maintenance category (articles)]]: [[Special:Permalink/1137158761|Requested]] by Robertsky at [[WP:RM/TR]]: Per RM discussion. See [[Template_talk:DMCA#Requested_move_26_January_2023]]. Template protected at template editor/admin level</comment>
+      <origin>1137158806</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="197" sha1="cl1tba6o83bu6hpmnvwvbcse6qwofoo" xml:space="preserve">{{Dated maintenance category
+ |onlyarticles=yes
+ |1={{{1|}}}
+ |2={{{2|}}}
+ |3={{{3|}}}
+ |4={{{4|}}}
+ |5={{{5|}}}
+}}&lt;noinclude&gt;
+{{documentation|Template:Dated maintenance category/doc}}
+&lt;/noinclude&gt;</text>
+      <sha1>cl1tba6o83bu6hpmnvwvbcse6qwofoo</sha1>
+    </revision>
+  </page>
+</mediawiki>
