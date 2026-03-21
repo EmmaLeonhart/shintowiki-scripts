@@ -4,6 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-21
+
+### Extended untranslated Japanese character thresholds + translation pipeline plan
+**Script:** `tag_untranslated_japanese.py`
+**Status:** Thresholds updated; translation pipeline planned
+
+The bucketed thresholds for tagging untranslated Japanese content previously capped at 300+, meaning pages with 500, 1000, or even 5000+ untranslated characters were all lumped into the same "300+" bucket. Extended the thresholds to: 50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000.
+
+**Next steps (blocked on pipeline cycle completing):**
+1. Let the tagging script run through the pipeline to re-bucket pages with the new thresholds
+2. Triage pages starting from [[Category:Secondary category triage]] and the highest untranslated character buckets (300+, 500+, etc.)
+3. Run an AI translation agent against the heavily-untranslated pages to properly translate them
+4. Feed translated pages back through the pipeline for re-categorization
+
+Added `--category` flag to `tag_untranslated_japanese.py` so it can target a specific category's members instead of walking all mainspace pages. This enables quick re-bucketing runs like:
+```
+python tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters" --apply --run-tag "..."
+```
+Category mode ignores the state file (always processes all members) and doesn't clear state on completion, so it won't interfere with the normal full-scan pipeline runs.
+
+The goal is to identify the pages with the most untranslated Japanese content, translate them, and then verify via re-tagging that the translations stuck. Pages in the 300+ range and above are the priority targets since they represent substantially untranslated articles rather than minor leftover fragments.
+
+---
+
 ## 2026-03-16
 
 ### Workflow reliability: chunked state commits and bounded runtime

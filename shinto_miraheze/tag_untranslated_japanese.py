@@ -12,7 +12,7 @@ Japanese characters found:
   [[Category:Pages with 50+ untranslated japanese characters]]
   [[Category:Pages with 100+ untranslated japanese characters]]
   [[Category:Pages with 150+ untranslated japanese characters]]
-  ... up to 300+
+  ... up to 5000+
 
 Also removes the old [[Category:Pages with untranslated japanese content]]
 tag if present.
@@ -50,7 +50,7 @@ STATE_FILE = os.path.join(os.path.dirname(__file__), "tag_untranslated_japanese.
 USER_AGENT = "JapaneseDetectBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Bucketed thresholds for categorization
-THRESHOLDS = [50, 100, 150, 200, 250, 300]
+THRESHOLDS = [50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000]
 
 # Old category to remove during migration
 OLD_CAT_RE = re.compile(
@@ -199,6 +199,24 @@ def iter_all_pages(site, namespace):
             break
 
 
+def iter_category_members(site, category_name):
+    """Yield all page titles in a given category via the categorymembers API."""
+    params = {
+        "list": "categorymembers",
+        "cmtitle": f"Category:{category_name}",
+        "cmnamespace": "0",
+        "cmlimit": "max",
+    }
+    while True:
+        result = site.api("query", **params)
+        for entry in result.get("query", {}).get("categorymembers", []):
+            yield entry["title"]
+        if "continue" in result:
+            params.update(result["continue"])
+        else:
+            break
+
+
 # ─── MAIN ───────────────────────────────────────────────────
 
 def main():
@@ -211,6 +229,10 @@ def main():
                         help="Max pages to check per run (default 100).")
     parser.add_argument("--run-tag", required=True,
                         help="Wiki-formatted run tag link for edit summaries.")
+    parser.add_argument("--category", type=str, default=None,
+                        help="Only process pages in this category (e.g. 'Pages with 300+ untranslated japanese characters'). "
+                             "Useful for re-bucketing a specific tier with new thresholds. "
+                             "Ignores state file — always processes all members.")
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
@@ -219,16 +241,26 @@ def main():
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
-    done = load_state(STATE_FILE) if args.apply else set()
-    print(f"State: {len(done)} pages already processed")
+    # When targeting a specific category, skip state tracking — always process all members
+    if args.category:
+        done = set()
+        print(f"Category mode: processing all members of [[Category:{args.category}]]")
+    else:
+        done = load_state(STATE_FILE) if args.apply else set()
+        print(f"State: {len(done)} pages already processed")
 
     edited = skipped = skipped_interwiki = clean = errors = 0
     checked = 0
     finished_all = True
 
-    print(f"\n--- Scanning mainspace (ns 0) ---")
+    if args.category:
+        print(f"\n--- Scanning [[Category:{args.category}]] ---")
+        page_iter = iter_category_members(site, args.category)
+    else:
+        print(f"\n--- Scanning mainspace (ns 0) ---")
+        page_iter = iter_all_pages(site, 0)
 
-    for title in iter_all_pages(site, 0):
+    for title in page_iter:
         if args.max_edits and checked >= args.max_edits:
             print(f"Reached max checks ({args.max_edits}); stopping.")
             finished_all = False
@@ -345,7 +377,7 @@ def main():
             if args.apply:
                 append_state(STATE_FILE, title)
 
-    if finished_all and args.apply:
+    if finished_all and args.apply and not args.category:
         print("\nAll pages fully processed — clearing state for next cycle.")
         clear_state(STATE_FILE)
 
