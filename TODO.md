@@ -39,6 +39,11 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Broken redirect deletion** — `delete_broken_redirects.py`: deletes redirects from Special:BrokenRedirects whose target page does not exist.
 - **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
 
+### Temporary / one-off re-bucketing tasks
+
+- [ ] **Re-bucket 300+ untranslated pages with extended thresholds** — The original thresholds capped at 300, so all pages with 300+ untranslated Japanese characters were lumped together. Thresholds now extend to 5000 (50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000). Run `tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters" --apply --run-tag "..."` to re-bucket existing 300+ pages into finer-grained categories. This is a smaller targeted run since it only hits category members, not all mainspace. Can be re-run as needed to introduce more granular tiers later.
+- [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
+
 ### Requires manual intervention
 
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
