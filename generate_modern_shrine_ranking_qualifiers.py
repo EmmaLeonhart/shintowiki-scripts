@@ -1,9 +1,9 @@
 """
 Generate QuickStatements for P13723 (shrine ranking) property work.
 
-Phase 1: Add P1027 (conferred by) → Q712534 qualifier to existing P13723 statements
+Phase 1: Add P459 (determination method or standard) → Q712534 qualifier to existing P13723 statements
 Phase 2: Migrate P31/P1552 shrine ranking values to P13723, preserving all
-         existing qualifiers and references, and adding appropriate P1027 qualifier.
+         existing qualifiers and references, and adding appropriate P459 qualifier.
 """
 
 import io
@@ -40,10 +40,10 @@ PROPERTY_EDITS = [
     'P13723|Lmk|"ранг на светилиште"',
     '-P13723|P1629|Q712534',
     'P13723|P1629|Q10444029',
-    'P13723|P2302|Q21510856|P1027',
+    'P13723|P2302|Q21510856|P459',
 ]
 
-# Migration categories: old P31/P1552 values → P13723 with P1027 qualifier
+# Migration categories: old P31/P1552 values → P13723 with P459 qualifier
 MIGRATIONS = [
     {
         "id": "engishiki",
@@ -51,7 +51,7 @@ MIGRATIONS = [
         "description": "Shikinai Shōsha, Shikinai Taisha, Myōjin Taisha",
         "source_property": "P31",
         "values": ["Q134917287", "Q134917288", "Q9610964"],
-        "conferred_by": "Q138640329",  # Engishiki ranking
+        "determined_by": "Q138640329",  # Engishiki ranking
         "output_file": "migrate_engishiki_ranking.txt",
     },
     {
@@ -60,7 +60,7 @@ MIGRATIONS = [
         "description": "Kinpei-sha, Ginpei-sha, Hakuhei-sha",
         "source_property": "P1552",
         "values": ["Q119929592", "Q137886068", "Q137886071"],
-        "conferred_by": "Q137901635",  # Gifu Prefecture Shrine ranking
+        "determined_by": "Q137901635",  # Gifu Prefecture Shrine ranking
         "output_file": "migrate_gifu_ranking.txt",
     },
     {
@@ -69,7 +69,7 @@ MIGRATIONS = [
         "description": "Beppyo Shrine",
         "source_property": "P31",
         "values": ["Q10898274"],
-        "conferred_by": "Q908077",  # Association of Shinto Shrines
+        "determined_by": "Q908077",  # Association of Shinto Shrines
         "output_file": "migrate_beppyo_shrine.txt",
     },
     {
@@ -86,7 +86,7 @@ MIGRATIONS = [
             "Q134917533",   # Ni-no-Miya
             "Q135009625",   # Roku-no-Miya
         ],
-        "conferred_by": "Q134916677",  # X-no-miya
+        "determined_by": "Q134916677",  # X-no-miya
         "output_file": "migrate_x_no_miya.txt",
     },
     {
@@ -103,7 +103,7 @@ MIGRATIONS = [
             "Q135009132",   # Shrines receiving Tsukinami-sai and Niiname-sai offerings
             "Q135009157",   # Shrines receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings
         ],
-        "conferred_by": "Q135009120",  # Ritsuryō funding type
+        "determined_by": "Q135009120",  # Ritsuryō funding type
         "output_file": "migrate_ritsuryo_funding.txt",
     },
 ]
@@ -163,12 +163,12 @@ def snak_to_qs(snak):
     return None
 
 
-def claim_to_qs_lines(item_id, claim, conferred_by):
+def claim_to_qs_lines(item_id, claim, determined_by):
     """Convert a Wikidata claim to QS v1 lines migrating it to P13723.
 
     The new P13723 statement gets:
     - The original value
-    - P1027 (conferred by) qualifier with the appropriate ranking system
+    - P459 (determination method or standard) qualifier with the appropriate ranking system
     - All original qualifiers preserved
     - All original references preserved (flattened into one reference group per line)
     """
@@ -176,7 +176,7 @@ def claim_to_qs_lines(item_id, claim, conferred_by):
     if not main_value:
         return []
 
-    parts = [item_id, "P13723", main_value, "P1027", conferred_by]
+    parts = [item_id, "P13723", main_value, "P459", determined_by]
 
     # Migrate all existing qualifiers
     qualifiers = claim.get("qualifiers", {})
@@ -261,8 +261,8 @@ def generate_property_edits():
     }
 
 
-def generate_p1027_qualifiers():
-    """Phase 1: Add P1027 qualifiers to existing P13723 statements."""
+def generate_p459_qualifiers():
+    """Phase 1: Add P459 qualifiers to existing P13723 statements."""
     total_query = """
     SELECT (COUNT(*) AS ?total) WHERE {
       ?item p:P13723 ?stmt .
@@ -273,17 +273,17 @@ def generate_p1027_qualifiers():
     SELECT ?item ?rankvalue WHERE {
       ?item p:P13723 ?stmt .
       ?stmt ps:P13723 ?rankvalue .
-      FILTER NOT EXISTS { ?stmt pq:P1027 ?_ }
+      FILTER NOT EXISTS { ?stmt pq:P459 ?_ }
     }
     ORDER BY ?item
     """
 
-    print("=== Phase 1: P1027 qualifiers ===")
+    print("=== Phase 1: P459 qualifiers ===")
     print("Fetching total P13723 statement count...")
     total = int(fetch_sparql(total_query)[0]["total"]["value"])
     print(f"Total P13723 statements: {total}")
 
-    print("Fetching statements without P1027 qualifier...")
+    print("Fetching statements without P459 qualifier...")
     results = fetch_sparql(remaining_query)
     remaining = len(results)
     completed = total - remaining
@@ -294,7 +294,7 @@ def generate_p1027_qualifiers():
     for r in results:
         item = qid(r["item"]["value"])
         rankvalue = qid(r["rankvalue"]["value"])
-        all_lines.append(f"{item}|P13723|{rankvalue}|P1027|Q712534")
+        all_lines.append(f"{item}|P13723|{rankvalue}|P459|Q712534")
 
     with open(output_file, "w", encoding="utf-8") as f:
         for line in all_lines:
@@ -303,8 +303,8 @@ def generate_p1027_qualifiers():
     print(f"Written {len(all_lines)} lines to {output_file}")
 
     return {
-        "name": "P1027 qualifiers (conferred by)",
-        "description": "Add P1027 (conferred by) → Q712534 (modern system of ranked Shinto shrines) to existing P13723 statements",
+        "name": "P459 qualifiers (determination method)",
+        "description": "Add P459 (determination method or standard) → Q712534 (modern system of ranked Shinto shrines) to existing P13723 statements",
         "total": total,
         "remaining": remaining,
         "completed": completed,
@@ -313,12 +313,60 @@ def generate_p1027_qualifiers():
     }
 
 
+def generate_p1027_to_p459_replacement():
+    """Phase 1.5: Replace existing P1027 qualifiers with P459 on P13723 statements.
+
+    Finds all P13723 statements that still have a P1027 qualifier,
+    generates QuickStatements to remove P1027 and add P459 with the same value.
+    """
+    query = """
+    SELECT ?item ?rankvalue ?conferredBy WHERE {
+      ?item p:P13723 ?stmt .
+      ?stmt ps:P13723 ?rankvalue .
+      ?stmt pq:P1027 ?conferredBy .
+    }
+    ORDER BY ?item
+    """
+
+    print("\n=== Phase 1.5: Replace P1027 → P459 on existing P13723 ===")
+    print("Fetching P13723 statements with P1027 qualifier...")
+    results = fetch_sparql(query)
+    print(f"Found {len(results)} statements to update")
+
+    output_file = "replace_p1027_with_p459.txt"
+    lines = []
+    for r in results:
+        item = qid(r["item"]["value"])
+        rankvalue = qid(r["rankvalue"]["value"])
+        conferred = qid(r["conferredBy"]["value"])
+        # Remove the old P1027 qualifier
+        lines.append(f"-{item}|P13723|{rankvalue}|P1027|{conferred}")
+        # Add P459 with the same value
+        lines.append(f"{item}|P13723|{rankvalue}|P459|{conferred}")
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+    print(f"Written {len(lines)} lines to {output_file}")
+
+    return {
+        "name": "Replace P1027 with P459",
+        "description": "Replace P1027 (conferred by) qualifiers with P459 (determination method or standard) on existing P13723 statements",
+        "total": len(results),
+        "remaining": len(results),
+        "completed": 0,
+        "output_file": output_file,
+        "lines": len(lines),
+    }
+
+
 def generate_migration(migration):
     """Phase 2: Migrate P31/P1552 to P13723 with qualifiers and references."""
     name = migration["name"]
     source_prop = migration["source_property"]
     values = migration["values"]
-    conferred_by = migration["conferred_by"]
+    determined_by = migration["determined_by"]
     output_file = migration["output_file"]
 
     values_sparql = " ".join(f"wd:{v}" for v in values)
@@ -370,7 +418,7 @@ def generate_migration(migration):
             "name": name,
             "description": migration["description"],
             "source_property": source_prop,
-            "conferred_by": conferred_by,
+            "determined_by": determined_by,
             "total": total,
             "remaining": 0,
             "completed": total,
@@ -405,7 +453,7 @@ def generate_migration(migration):
                     lines.append(f"{item_id}|P31|Q845945")
                     items_given_shinto_shrine.add(item_id)
                 # Add the new P13723 statement with qualifiers/references
-                lines.extend(claim_to_qs_lines(item_id, claim, conferred_by))
+                lines.extend(claim_to_qs_lines(item_id, claim, determined_by))
                 # Remove the old source property statement
                 lines.append(f"-{item_id}|{source_prop}|{cv}")
 
@@ -419,7 +467,7 @@ def generate_migration(migration):
         "name": name,
         "description": migration["description"],
         "source_property": source_prop,
-        "conferred_by": conferred_by,
+        "determined_by": determined_by,
         "total": total,
         "remaining": remaining,
         "completed": completed,
@@ -446,18 +494,20 @@ def html_escape(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
-def generate_html(p1027_stats, migration_stats, prop_stats):
+def generate_html(p459_stats, replace_stats, migration_stats, prop_stats):
     """Generate the site index.html with progress for all categories."""
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     def progress_pct(completed, total):
         return completed * 100 // total if total > 0 else 100
 
-    p1027_pct = progress_pct(p1027_stats["completed"], p1027_stats["total"])
+    p459_pct = progress_pct(p459_stats["completed"], p459_stats["total"])
 
     # Read first 200 lines for copy-paste boxes
-    p1027_batch = read_first_n_lines(p1027_stats["output_file"])
-    p1027_batch_escaped = html_escape(p1027_batch)
+    p459_batch = read_first_n_lines(p459_stats["output_file"])
+    p459_batch_escaped = html_escape(p459_batch)
+    replace_batch = read_first_n_lines(replace_stats["output_file"])
+    replace_batch_escaped = html_escape(replace_batch)
     prop_batch = read_first_n_lines(prop_stats["output_file"])
     prop_batch_escaped = html_escape(prop_batch)
 
@@ -473,7 +523,7 @@ def generate_html(p1027_stats, migration_stats, prop_stats):
       <h3>{m["name"]}</h3>
       <p class="desc">{m["description"]}<br>
         <code>{m["source_property"]}</code> &rarr; <code>P13723</code>
-        &nbsp;|&nbsp; qualifier <code>P1027</code> &rarr; <code>{m["conferred_by"]}</code></p>
+        &nbsp;|&nbsp; qualifier <code>P459</code> &rarr; <code>{m["determined_by"]}</code></p>
       <div class="stats">
         <strong>{m["completed"]} / {m["total"]} migrated</strong> ({pct}%)
         &mdash; <strong>{m["remaining"]} remaining</strong>
@@ -525,31 +575,38 @@ def generate_html(p1027_stats, migration_stats, prop_stats):
     Run in order: Phase 1 first, then each migration.
   </div>
 
-  <h2>Phase 1: Add P1027 qualifiers to existing P13723</h2>
-  <p>Add <code>P1027</code> (conferred by) &rarr; <code>Q712534</code>
+  <h2>Phase 1: Add P459 qualifiers to existing P13723</h2>
+  <p>Add <code>P459</code> (determination method or standard) &rarr; <code>Q712534</code>
      (modern system of ranked Shinto shrines) to all existing <code>P13723</code> statements.</p>
   <div class="stats">
-    <strong>{p1027_stats["completed"]} / {p1027_stats["total"]} done</strong> ({p1027_pct}%)
-    &mdash; <strong>{p1027_stats["remaining"]} remaining</strong>
+    <strong>{p459_stats["completed"]} / {p459_stats["total"]} done</strong> ({p459_pct}%)
+    &mdash; <strong>{p459_stats["remaining"]} remaining</strong>
     <div class="progress-bar">
-      <div class="progress-fill" style="width: {max(p1027_pct, 2)}%">{p1027_pct}%</div>
+      <div class="progress-fill" style="width: {max(p459_pct, 2)}%">{p459_pct}%</div>
     </div>
   </div>
-  <p>Today's batch: {min(p1027_stats.get("lines", p1027_stats["remaining"]), MAX_LINES_PER_BATCH)} of {p1027_stats.get("lines", p1027_stats["remaining"])} total lines
-     &mdash; <a href="{p1027_stats["output_file"]}">Download all</a></p>
-  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{p1027_batch_escaped}</textarea>
+  <p>Today's batch: {min(p459_stats.get("lines", p459_stats["remaining"]), MAX_LINES_PER_BATCH)} of {p459_stats.get("lines", p459_stats["remaining"])} total lines
+     &mdash; <a href="{p459_stats["output_file"]}">Download all</a></p>
+  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{p459_batch_escaped}</textarea>
+
+  <h2>Phase 1.5: Replace P1027 qualifiers with P459</h2>
+  <p>Replace existing <code>P1027</code> (conferred by) qualifiers with <code>P459</code>
+     (determination method or standard) on <code>P13723</code> statements that already have P1027.</p>
+  <p>{replace_stats["total"]} statements to update ({replace_stats["lines"]} lines)
+     &mdash; <a href="{replace_stats["output_file"]}">Download all</a></p>
+  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{replace_batch_escaped}</textarea>
 
   <h2>Phase 2: Edit P13723 property definition</h2>
   <p>Broaden <code>P13723</code> from &ldquo;modern shrine ranking&rdquo; to general &ldquo;shrine ranking&rdquo;.
      Updates labels, changes subject type constraint from <code>Q712534</code> to <code>Q10444029</code>,
-     and adds <code>P1027</code> qualifier constraint.</p>
+     and adds <code>P459</code> qualifier constraint.</p>
   <p>{prop_stats["lines"]} lines &mdash; <a href="{prop_stats["output_file"]}">Download all</a></p>
   <textarea class="qs-box" rows="6" readonly onclick="this.select()">{prop_batch_escaped}</textarea>
 
   <h2>Phase 3: Migrate old properties to P13723</h2>
   <p>Migrate <code>P31</code> / <code>P1552</code> shrine ranking values to <code>P13723</code>,
      preserving all existing qualifiers and references, and adding the appropriate
-     <code>P1027</code> (conferred by) qualifier.</p>
+     <code>P459</code> (determination method or standard) qualifier.</p>
   {migration_sections}
 
   <hr>
@@ -563,8 +620,11 @@ def generate_html(p1027_stats, migration_stats, prop_stats):
 
 
 def main():
-    # Phase 1: P1027 qualifiers for existing P13723 statements
-    p1027_stats = generate_p1027_qualifiers()
+    # Phase 1: P459 qualifiers for existing P13723 statements
+    p459_stats = generate_p459_qualifiers()
+
+    # Phase 1.5: Replace existing P1027 qualifiers with P459
+    replace_stats = generate_p1027_to_p459_replacement()
 
     # Phase 2: Property-level edits to P13723 (after modern qualifiers, before migrations)
     prop_stats = generate_property_edits()
@@ -577,16 +637,16 @@ def main():
         time.sleep(2)  # Be nice to SPARQL endpoint between categories
 
     # Build site
-    generate_html(p1027_stats, migration_stats, prop_stats)
+    generate_html(p459_stats, replace_stats, migration_stats, prop_stats)
 
     # Copy all QuickStatements files into _site
-    all_files = [p1027_stats["output_file"]] + [m["output_file"] for m in migration_stats] + [prop_stats["output_file"]]
+    all_files = [p459_stats["output_file"], replace_stats["output_file"]] + [m["output_file"] for m in migration_stats] + [prop_stats["output_file"]]
     for fname in all_files:
         if os.path.exists(fname):
             shutil.copy(fname, os.path.join("_site", fname))
 
     # Write summary JSON
-    summary = {"p1027": p1027_stats, "migrations": migration_stats, "property_edits": prop_stats}
+    summary = {"p459": p459_stats, "replace_p1027": replace_stats, "migrations": migration_stats, "property_edits": prop_stats}
     with open("_site/summary.json", "w") as f:
         json.dump(summary, f, indent=2)
 
