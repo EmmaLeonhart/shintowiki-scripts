@@ -22,6 +22,12 @@ Creates article pages for all 21 subcategories of [[Category:Shrine rankings nee
 
 **To remove after completion:** Delete the workflow step marked `(TEMPORARY)` in `cleanup-loop.yml` and optionally delete the script.
 
+### Triage single-member categories from Secondary category triage
+**Script:** `triage_secondary_single_member.py`
+**Status:** Added to workflow
+
+Walks [[Category:Secondary category triage]] and moves categories that have exactly one member into [[Category:Triaged categories with only one member]]. Early-exits member counting after 2 to avoid scanning large categories unnecessarily.
+
 ---
 
 ## 2026-03-21

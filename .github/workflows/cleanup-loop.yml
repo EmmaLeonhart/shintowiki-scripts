@@ -119,6 +119,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories_secondary" \
             python3 shinto_miraheze/triage_emmabot_categories_secondary.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Import: triage_secondary_single_member"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: triage_secondary_single_member" \
+            python3 shinto_miraheze/triage_secondary_single_member.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Import: create_shrine_ranking_pages (TEMPORARY)"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
