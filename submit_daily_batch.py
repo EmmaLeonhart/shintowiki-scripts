@@ -16,7 +16,6 @@ Expects environment variables:
 import io
 import json
 import os
-import random
 import sys
 import time
 from datetime import datetime, timezone
@@ -107,7 +106,6 @@ def main():
         "timestamp": now.strftime("%Y-%m-%d %H:%M:%S UTC"),
         "outcome": "unknown",
         "batches": [],
-        "delay_seconds": 0,
     }
 
     token = os.environ.get("QUICKSTATEMENTS_API_KEY", "")
@@ -119,12 +117,6 @@ def main():
         print(f"ERROR: {report['error']}")
         write_report(report)
         sys.exit(1)
-
-    # Random delay 1-3600 seconds to avoid predictable timing
-    delay = random.randint(1, 3600)
-    report["delay_seconds"] = delay
-    print(f"Waiting {delay}s before submitting ({delay // 60}m {delay % 60}s)...")
-    time.sleep(delay)
 
     all_ok = True
     any_submitted = False
