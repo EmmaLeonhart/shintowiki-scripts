@@ -661,6 +661,102 @@ def generate_p958_html_section(summary):
   {anomaly_list}"""
 
 
+def fetch_duplicate_items(prop):
+    """Fetch Shikinai Ronsha items with duplicate statements for a property."""
+    query = f"""
+    SELECT ?item ?itemLabel (COUNT(?s) AS ?count) WHERE {{
+      ?item wdt:P31 wd:Q135022904 .
+      ?item p:{prop} ?s .
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,ja" }}
+    }} GROUP BY ?item ?itemLabel HAVING(COUNT(?s) > 1) ORDER BY DESC(?count)
+    """
+    try:
+        results = fetch_sparql(query)
+        items = []
+        for row in results:
+            qid = row["item"]["value"].rsplit("/", 1)[-1]
+            label = row.get("itemLabel", {}).get("value", qid)
+            count = int(row["count"]["value"])
+            items.append({"qid": qid, "label": label, "count": count})
+        return items
+    except Exception as e:
+        print(f"  Warning: failed to fetch {prop} duplicates: {e}")
+        return []
+
+
+def generate_duplicates_section():
+    """Fetch and render the duplicate properties section."""
+    print("\n=== Fetching duplicate property data ===")
+
+    dupes = {}
+    for prop in ["P361", "P1448", "P6375"]:
+        print(f"  Querying {prop} duplicates...")
+        dupes[prop] = fetch_duplicate_items(prop)
+        print(f"    Found {len(dupes[prop])} items with duplicate {prop}")
+        time.sleep(2)
+
+    def item_list_html(items):
+        if not items:
+            return "<p><em>No duplicates found (or query failed).</em></p>"
+        rows = ""
+        for item in items:
+            rows += (
+                f'<li><a href="https://www.wikidata.org/wiki/{item["qid"]}">'
+                f'{item["qid"]}</a> {html_escape(item["label"])} '
+                f'({item["count"]} statements)</li>\n'
+            )
+        return f'<ul style="font-size: 0.85rem; max-height: 300px; overflow-y: auto;">{rows}</ul>'
+
+    p361_list = item_list_html(dupes["P361"])
+    p1448_list = item_list_html(dupes["P1448"])
+    p6375_list = item_list_html(dupes["P6375"])
+
+    return f"""
+  <h2>Duplicate Properties on Shikinai Ronsha</h2>
+  <p>Due to a partial data migration that broke provenance, many
+     <a href="https://www.wikidata.org/wiki/Q135022904">Shikinai Ronsha</a> items
+     ended up with duplicate <code>P361</code>, <code>P1448</code>, and <code>P6375</code>
+     statements. The original source had bad data modelling, and correcting it in a way
+     that broke provenance made the situation worse.</p>
+
+  <div class="category">
+    <h3>P361 (part of) &mdash; {len(dupes["P361"])} items with duplicates</h3>
+    <p class="desc">These duplicates are related to ordering in the Engishiki lists.
+      The P361 and P1448 properties on these items tend to be highly property-heavy
+      (many qualifiers and references). We could probably fix the P361 duplicates by
+      walking through the lists again and reconciling.</p>
+    <details>
+      <summary>Show all {len(dupes["P361"])} items</summary>
+      {p361_list}
+    </details>
+  </div>
+
+  <div class="category">
+    <h3>P1448 (official name) &mdash; {len(dupes["P1448"])} items with duplicates</h3>
+    <p class="desc">Like P361, these tend to be property-heavy items. The incorrect
+      P1448 statements appear to be directly detectable by checking their source
+      references &mdash; the wrong ones will have mismatched or missing sources.</p>
+    <details>
+      <summary>Show all {len(dupes["P1448"])} items</summary>
+      {p1448_list}
+    </details>
+  </div>
+
+  <div class="category">
+    <h3>P6375 (street address) &mdash; {len(dupes["P6375"])} items with duplicates</h3>
+    <p class="desc">These are simpler duplicates compared to P361/P1448. Someone other
+      than the original importer would be best to assess which addresses are correct,
+      as the duplicates may reflect genuinely different locations for merged items.</p>
+    <details>
+      <summary>Show all {len(dupes["P6375"])} items</summary>
+      {p6375_list}
+    </details>
+  </div>
+
+  <p class="desc">Example of all three issues on a single item:
+     <a href="https://www.wikidata.org/wiki/Q59282644">Q59282644</a> (Takagi Shrine)</p>"""
+
+
 def generate_html(p459_stats, replace_stats, migration_stats, prop_stats):
     """Generate the site index.html with progress for all categories."""
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -687,6 +783,9 @@ def generate_html(p459_stats, replace_stats, migration_stats, prop_stats):
     # P958 section from separate generator
     p958_summary = load_p958_summary()
     p958_section = generate_p958_html_section(p958_summary)
+
+    # Duplicate properties section
+    duplicates_section = generate_duplicates_section()
 
     migration_sections = ""
     for m in migration_stats:
@@ -792,38 +891,7 @@ def generate_html(p459_stats, replace_stats, migration_stats, prop_stats):
 
   {p958_section}
 
-  <h2>Duplicate Properties on Shikinai Ronsha</h2>
-  <p>Due to import issues, many <a href="https://www.wikidata.org/wiki/Q135022904">Shikinai Ronsha</a> items
-     have duplicate <code>P361</code>, <code>P1448</code>, and <code>P6375</code> statements.
-     These need investigation and cleanup.</p>
-
-  <div class="category">
-    <h3>P361 (part of) &mdash; duplicates</h3>
-    <p class="desc">Items with multiple P361 statements, often identical values from re-imports.
-      The duplicates seem related to ordering in the Engishiki lists. Could potentially be fixed by
-      walking through the lists again.</p>
-    <p><a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%28COUNT%28%3Fs%29%20AS%20%3Fcount%29%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ135022904%20.%0A%20%20%3Fitem%20p%3AP361%20%3Fs%20.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22%20%7D%0A%7D%20GROUP%20BY%20%3Fitem%20%3FitemLabel%20HAVING%28COUNT%28%3Fs%29%20%3E%201%29%20ORDER%20BY%20DESC%28%3Fcount%29">Run SPARQL query &rarr;</a>
-       Find all Shikinai Ronsha with more than one P361 statement.</p>
-  </div>
-
-  <div class="category">
-    <h3>P1448 (official name) &mdash; duplicates</h3>
-    <p class="desc">Items with multiple P1448 statements. These tend to be property-heavy.
-      The incorrect ones appear to be detectable via their source references.</p>
-    <p><a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%28COUNT%28%3Fs%29%20AS%20%3Fcount%29%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ135022904%20.%0A%20%20%3Fitem%20p%3AP1448%20%3Fs%20.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22%20%7D%0A%7D%20GROUP%20BY%20%3Fitem%20%3FitemLabel%20HAVING%28COUNT%28%3Fs%29%20%3E%201%29%20ORDER%20BY%20DESC%28%3Fcount%29">Run SPARQL query &rarr;</a>
-       Find all Shikinai Ronsha with more than one P1448 statement.</p>
-  </div>
-
-  <div class="category">
-    <h3>P6375 (street address) &mdash; duplicates</h3>
-    <p class="desc">Items with multiple P6375 statements. These are simpler duplicates and
-      someone other than the original importer would be best to assess them.</p>
-    <p><a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%28COUNT%28%3Fs%29%20AS%20%3Fcount%29%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ135022904%20.%0A%20%20%3Fitem%20p%3AP6375%20%3Fs%20.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2Cja%22%20%7D%0A%7D%20GROUP%20BY%20%3Fitem%20%3FitemLabel%20HAVING%28COUNT%28%3Fs%29%20%3E%201%29%20ORDER%20BY%20DESC%28%3Fcount%29">Run SPARQL query &rarr;</a>
-       Find all Shikinai Ronsha with more than one P6375 statement.</p>
-  </div>
-
-  <p class="desc">Example of all three issues on a single item:
-     <a href="https://www.wikidata.org/wiki/Q59282644">Q59282644</a> (Takagi Shrine)</p>
+  {duplicates_section}
 
   <hr>
   <p class="timestamp">Generated automatically from SPARQL + Wikidata API data.</p>
