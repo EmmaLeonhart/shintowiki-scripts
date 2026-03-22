@@ -21,8 +21,8 @@ jobs:
 
       - name: Regenerate QuickStatements files
         run: |
-          python generate_modern_shrine_ranking_qualifiers.py
           python generate_p958_qualifiers.py
+          python generate_modern_shrine_ranking_qualifiers.py
 
       - name: Submit daily batch via QuickStatements API
         id: submit

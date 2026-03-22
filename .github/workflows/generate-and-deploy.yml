@@ -29,8 +29,8 @@ jobs:
 
       - name: Generate QuickStatements and build site
         run: |
-          python generate_modern_shrine_ranking_qualifiers.py
           python generate_p958_qualifiers.py
+          python generate_modern_shrine_ranking_qualifiers.py
 
       - uses: actions/upload-pages-artifact@v3
         with:
