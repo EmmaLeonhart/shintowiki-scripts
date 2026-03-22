@@ -30,6 +30,7 @@ MAX_LINES_PER_BATCH = 200
 ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
     # "replace_p1027_with_p459.txt",          # Phase 1.5: non-atomic (remove + re-add), manual only
+    "p958_qualifiers.txt",                    # Add P958 section qualifiers to P13677
 ]
 
 

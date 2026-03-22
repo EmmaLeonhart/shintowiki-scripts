@@ -29,7 +29,9 @@ jobs:
       - run: pip install requests
 
       - name: Generate QuickStatements and build site
-        run: python generate_modern_shrine_ranking_qualifiers.py
+        run: |
+          python generate_modern_shrine_ranking_qualifiers.py
+          python generate_p958_qualifiers.py
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -44,39 +46,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
-  submit:
-    needs: build
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - run: pip install requests
-
-      - name: Regenerate QuickStatements files
-        run: python generate_modern_shrine_ranking_qualifiers.py
-
-      - name: Submit daily batch via QuickStatements API
-        id: submit
-        env:
-          QUICKSTATEMENTS_API_KEY: ${{ secrets.QUICKSTATEMENTS_API_KEY }}
-          QUICKSTATEMENTS_USERNAME: ${{ secrets.QUICKSTATEMENTS_USERNAME }}
-        run: python submit_daily_batch.py
-        continue-on-error: true
-
-      - name: Commit and push run report
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/
-          git diff --cached --quiet || git commit -m "Daily submission report $(date -u +%Y-%m-%d)"
-          git push
-
-      - name: Fail if submission failed
-        if: steps.submit.outcome == 'failure'
-        run: exit 1
