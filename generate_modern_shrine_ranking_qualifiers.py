@@ -315,12 +315,21 @@ def generate_p459_qualifiers():
 
 
 def generate_migration(migration):
-    """Phase 2: Migrate P31/P1552 to P13723 with qualifiers and references."""
+    """Phase 3: Migrate P31/P1552 to P13723 with qualifiers and references.
+
+    Generates two separate files:
+    - ADD file: safe additions of P13723 statements (run first)
+    - REMOVE file: removals of old source property statements (run only after adds are confirmed)
+    """
     name = migration["name"]
     source_prop = migration["source_property"]
     values = migration["values"]
     determined_by = migration["determined_by"]
     output_file = migration["output_file"]
+    # Derive add/remove filenames from the base output file
+    base = output_file.rsplit(".", 1)[0]
+    add_file = f"{base}_add.txt"
+    remove_file = f"{base}_remove.txt"
 
     values_sparql = " ".join(f"wd:{v}" for v in values)
 
@@ -347,6 +356,18 @@ def generate_migration(migration):
     ORDER BY ?item
     """
 
+    # Find old statements safe to remove (P13723 already exists for this value)
+    safe_remove_query = f"""
+    SELECT ?item ?value WHERE {{
+      VALUES ?value {{ {values_sparql} }}
+      ?item p:{source_prop} ?stmt .
+      ?stmt ps:{source_prop} ?value .
+      ?item p:P13723 ?s2 .
+      ?s2 ps:P13723 ?value .
+    }}
+    ORDER BY ?item
+    """
+
     print(f"\n=== Migration: {name} ===")
     print("Fetching total count...")
     total = int(fetch_sparql(total_query)[0]["total"]["value"])
@@ -366,55 +387,52 @@ def generate_migration(migration):
     print(f"{source_prop} → P13723: {remaining} to migrate ({completed}/{total} done)")
 
     if not items_values:
-        open(output_file, "w").close()
-        return {
-            "name": name,
-            "description": migration["description"],
-            "source_property": source_prop,
-            "determined_by": determined_by,
-            "total": total,
-            "remaining": 0,
-            "completed": total,
-            "output_file": output_file,
-            "lines": 0,
-        }
+        open(add_file, "w").close()
+    else:
+        # Fetch full claim details from Wikidata API to get qualifiers + references
+        print(f"Fetching claim details ({len(items_values)} items)...")
+        all_claims = fetch_claims_batch(list(items_values.keys()), source_prop)
 
-    # Fetch full claim details from Wikidata API to get qualifiers + references
-    print(f"Fetching claim details ({len(items_values)} items)...")
-    all_claims = fetch_claims_batch(list(items_values.keys()), source_prop)
+        # For P31 migrations, check which items already have P31=Q845945 (Shinto shrine)
+        # so we can add it before removing the old P31 value
+        items_have_shinto_shrine = set()
+        if source_prop == "P31":
+            for item_id, claims in all_claims.items():
+                for claim in claims:
+                    cv = snak_to_qs(claim["mainsnak"])
+                    if cv == "Q845945":
+                        items_have_shinto_shrine.add(item_id)
 
-    # For P31 migrations, check which items already have P31=Q845945 (Shinto shrine)
-    # so we can add it before removing the old P31 value
-    items_have_shinto_shrine = set()
-    if source_prop == "P31":
-        for item_id, claims in all_claims.items():
-            for claim in claims:
+        # Generate ADD lines only (safe to run)
+        add_lines = []
+        items_given_shinto_shrine = set()
+        for item_id, target_values in sorted(items_values.items()):
+            for claim in all_claims.get(item_id, []):
                 cv = snak_to_qs(claim["mainsnak"])
-                if cv == "Q845945":
-                    items_have_shinto_shrine.add(item_id)
+                if cv in target_values:
+                    if source_prop == "P31" and item_id not in items_have_shinto_shrine and item_id not in items_given_shinto_shrine:
+                        add_lines.append(f"{item_id}|P31|Q845945")
+                        items_given_shinto_shrine.add(item_id)
+                    add_lines.extend(claim_to_qs_lines(item_id, claim, determined_by))
 
-    # Generate QuickStatements lines
-    # For P31 migrations: add P31=Q845945 if missing, then add P13723, then remove old P31
-    lines = []
-    items_given_shinto_shrine = set()  # Track so we only add it once per item
-    for item_id, target_values in sorted(items_values.items()):
-        for claim in all_claims.get(item_id, []):
-            cv = snak_to_qs(claim["mainsnak"])
-            if cv in target_values:
-                # If this is a P31 migration and item lacks P31=Q845945, add it first
-                if source_prop == "P31" and item_id not in items_have_shinto_shrine and item_id not in items_given_shinto_shrine:
-                    lines.append(f"{item_id}|P31|Q845945")
-                    items_given_shinto_shrine.add(item_id)
-                # Add the new P13723 statement with qualifiers/references
-                lines.extend(claim_to_qs_lines(item_id, claim, determined_by))
-                # Remove the old source property statement
-                lines.append(f"-{item_id}|{source_prop}|{cv}")
+        with open(add_file, "w", encoding="utf-8") as f:
+            for line in add_lines:
+                f.write(line + "\n")
+        print(f"Written {len(add_lines)} ADD lines to {add_file}")
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        for line in lines:
+    # Generate REMOVE lines (only for items where P13723 already exists)
+    print("Fetching statements safe to remove (P13723 already confirmed)...")
+    safe_results = fetch_sparql(safe_remove_query)
+    remove_lines = []
+    for r in safe_results:
+        item_id = qid(r["item"]["value"])
+        value_id = qid(r["value"]["value"])
+        remove_lines.append(f"-{item_id}|{source_prop}|{value_id}")
+
+    with open(remove_file, "w", encoding="utf-8") as f:
+        for line in remove_lines:
             f.write(line + "\n")
-
-    print(f"Written {len(lines)} lines to {output_file}")
+    print(f"Written {len(remove_lines)} REMOVE lines to {remove_file}")
 
     return {
         "name": name,
@@ -424,8 +442,10 @@ def generate_migration(migration):
         "total": total,
         "remaining": remaining,
         "completed": completed,
-        "output_file": output_file,
-        "lines": len(lines),
+        "add_file": add_file,
+        "remove_file": remove_file,
+        "add_lines": len(add_lines) if items_values else 0,
+        "remove_lines": len(remove_lines),
     }
 
 
@@ -660,10 +680,12 @@ def generate_html(p459_stats, migration_stats, prop_stats):
     migration_sections = ""
     for m in migration_stats:
         pct = progress_pct(m["completed"], m["total"])
-        batch_lines = read_first_n_lines(m["output_file"])
-        batch_escaped = html_escape(batch_lines)
-        total_lines = m.get("lines", m["remaining"])
-        shown = min(total_lines, MAX_LINES_PER_BATCH)
+        add_batch = read_first_n_lines(m["add_file"])
+        add_escaped = html_escape(add_batch)
+        add_shown = min(m["add_lines"], MAX_LINES_PER_BATCH)
+        remove_batch = read_first_n_lines(m["remove_file"])
+        remove_escaped = html_escape(remove_batch)
+        remove_shown = min(m["remove_lines"], MAX_LINES_PER_BATCH)
         migration_sections += f"""
     <div class="category">
       <h3>{m["name"]}</h3>
@@ -677,9 +699,14 @@ def generate_html(p459_stats, migration_stats, prop_stats):
           <div class="progress-fill" style="width: {max(pct, 2)}%">{pct}%</div>
         </div>
       </div>
-      <p>Today's batch: {shown} of {total_lines} total lines
-         &mdash; <a href="{m["output_file"]}">Download all</a></p>
-      <textarea class="qs-box" rows="10" readonly onclick="this.select()">{batch_escaped}</textarea>
+      <h4>Step 1: Add P13723 statements (safe to run)</h4>
+      <p>{add_shown} of {m["add_lines"]} total lines
+         &mdash; <a href="{m["add_file"]}">Download all</a></p>
+      <textarea class="qs-box" rows="10" readonly onclick="this.select()">{add_escaped}</textarea>
+      <h4>Step 2: Remove old {m["source_property"]} statements (only after Step 1 is confirmed)</h4>
+      <p>{remove_shown} of {m["remove_lines"]} total lines
+         &mdash; <a href="{m["remove_file"]}">Download all</a></p>
+      <textarea class="qs-box" rows="6" readonly onclick="this.select()">{remove_escaped}</textarea>
     </div>"""
 
     html = f"""<!DOCTYPE html>
@@ -781,7 +808,11 @@ def main():
     generate_html(p459_stats, migration_stats, prop_stats)
 
     # Copy all QuickStatements files into _site
-    all_files = [p459_stats["output_file"]] + [m["output_file"] for m in migration_stats] + [prop_stats["output_file"]]
+    migration_files = []
+    for m in migration_stats:
+        migration_files.append(m["add_file"])
+        migration_files.append(m["remove_file"])
+    all_files = [p459_stats["output_file"]] + migration_files + [prop_stats["output_file"]]
     # Include P958 files if they exist
     for p958_file in ["p958_qualifiers.txt", "p958_manual_review.txt"]:
         if os.path.exists(p958_file):
