@@ -742,6 +742,11 @@ def generate_html(p459_stats, migration_stats, prop_stats):
   <h1>Shrine Ranking (P13723) &mdash; QuickStatements</h1>
   <p class="timestamp">Last updated: {generated}</p>
 
+  <div class="instructions" style="background: #e3f2fd; border-left-color: #2196f3;">
+    <strong><a href="daily.html" style="font-size: 1.1em;">Daily Operations &rarr;</a></strong>
+    &mdash; Single combined box of everything to paste right now. Just keep running it.
+  </div>
+
   <div class="instructions">
     <strong>How to use:</strong> Click a text box below to select its contents, then paste into
     <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements</a>.
@@ -790,6 +795,117 @@ def generate_html(p459_stats, migration_stats, prop_stats):
         f.write(html)
 
 
+def generate_daily_operations(p459_stats, prop_stats, migration_stats):
+    """Generate the daily operations page — a single combined box of what to run now.
+
+    Priority order:
+    - Phase 1 (P459 qualifiers) until complete
+    - Phase 2 (property edits) after Phase 1 complete
+    - Phase 3 (migration adds + removes) after Phase 2 complete
+    - P958 qualifiers always included
+    """
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    lines = []
+    phase_description = ""
+
+    p1_done = p459_stats["remaining"] == 0
+
+    if not p1_done:
+        # Phase 1 not complete — include P459 lines
+        phase_description = "Phase 1: Adding P459 qualifiers to existing P13723 statements"
+        p459_file = p459_stats["output_file"]
+        if os.path.exists(p459_file):
+            with open(p459_file, "r", encoding="utf-8") as f:
+                lines.extend(line.strip() for line in f if line.strip())
+    elif prop_stats["lines"] > 0:
+        # Phase 1 complete, Phase 2 not done — include property edits
+        phase_description = "Phase 2: Editing P13723 property definition"
+        prop_file = prop_stats["output_file"]
+        if os.path.exists(prop_file):
+            with open(prop_file, "r", encoding="utf-8") as f:
+                lines.extend(line.strip() for line in f if line.strip())
+    else:
+        # Phase 1 and 2 complete — include all migration adds and removes
+        phase_description = "Phase 3: Migrating old properties to P13723"
+        for m in migration_stats:
+            for fpath in [m["add_file"], m["remove_file"]]:
+                if os.path.exists(fpath):
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        lines.extend(line.strip() for line in f if line.strip())
+
+    # Always include P958 qualifiers
+    p958_file = "p958_qualifiers.txt"
+    p958_count = 0
+    if os.path.exists(p958_file):
+        with open(p958_file, "r", encoding="utf-8") as f:
+            for line in f:
+                stripped = line.strip()
+                if stripped:
+                    lines.append(stripped)
+                    p958_count += 1
+
+    # Write combined file
+    daily_file = "daily_operations.txt"
+    with open(daily_file, "w", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+    batch_text = "\n".join(lines[:MAX_LINES_PER_BATCH])
+    batch_escaped = html_escape(batch_text)
+    shown = min(len(lines), MAX_LINES_PER_BATCH)
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Operations - QuickStatements</title>
+  <style>
+    body {{ font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #333; }}
+    h1 {{ border-bottom: 2px solid #4caf50; padding-bottom: 0.5rem; }}
+    a {{ color: #0645ad; }}
+    code {{ background: #f0f0f0; padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.9em; }}
+    .instructions {{ background: #fff3e0; padding: 1rem; border-radius: 4px; margin: 1rem 0;
+                     border-left: 4px solid #ff9800; }}
+    .stats {{ background: #e8f4e8; padding: 1rem; border-radius: 4px; margin: 0.75rem 0; }}
+    .timestamp {{ color: #888; font-size: 0.85rem; }}
+    .qs-box {{ width: 100%; font-family: monospace; font-size: 0.8rem; background: #f5f5f5;
+               border: 1px solid #ccc; border-radius: 4px; padding: 0.5rem; resize: vertical; }}
+  </style>
+</head>
+<body>
+  <h1>Daily Operations</h1>
+  <p class="timestamp">Last updated: {generated}</p>
+  <p><a href="index.html">&larr; Back to full dashboard</a></p>
+
+  <div class="instructions">
+    <strong>Paste everything below into
+    <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements</a>.</strong>
+    Most batches will fail &mdash; that is expected. Just keep running them.
+    Completed statements are automatically excluded on the next generation.
+  </div>
+
+  <div class="stats">
+    <strong>Current phase:</strong> {phase_description}<br>
+    <strong>{len(lines)} total lines</strong> (showing first {shown})
+    &mdash; <a href="daily_operations.txt">Download all</a><br>
+    {"<em>Includes " + str(p958_count) + " P958 qualifier lines</em>" if p958_count else ""}
+  </div>
+
+  <textarea class="qs-box" rows="30" readonly onclick="this.select()">{batch_escaped}</textarea>
+
+  <hr>
+  <p class="timestamp">Generated automatically from SPARQL + Wikidata API data.</p>
+</body>
+</html>"""
+
+    with open(os.path.join("_site", "daily.html"), "w", encoding="utf-8") as f:
+        f.write(html)
+    shutil.copy(daily_file, os.path.join("_site", daily_file))
+    print(f"Daily operations: {len(lines)} lines ({phase_description})")
+
+
 def main():
     # Phase 1: P459 qualifiers for existing P13723 statements
     p459_stats = generate_p459_qualifiers()
@@ -806,6 +922,7 @@ def main():
 
     # Build site
     generate_html(p459_stats, migration_stats, prop_stats)
+    generate_daily_operations(p459_stats, prop_stats, migration_stats)
 
     # Copy all QuickStatements files into _site
     migration_files = []
