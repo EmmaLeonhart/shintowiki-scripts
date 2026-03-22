@@ -200,10 +200,12 @@ def main():
         expected_non_zero = list(range(1, len(non_zero) + 1))
 
         if non_zero != expected_non_zero:
-            flagged_sequence.append(
-                f"  {parent_qid} ({parent_data['label']}): "
-                f"non-zero rankings={non_zero}, expected={expected_non_zero}"
-            )
+            flagged_sequence.append({
+                "qid": parent_qid,
+                "label": parent_data["label"],
+                "rankings": rankings,
+                "expected": list(range(0, rankings.count(0))) + expected_non_zero,
+            })
 
         for child in children:
             child_qid = child["qid"]
@@ -259,7 +261,9 @@ def main():
             if flagged_sequence:
                 f.write("=== RANKING SEQUENCE ANOMALIES ===\n")
                 f.write("These parents have non-sequential rankings:\n\n")
-                f.write("\n".join(flagged_sequence) + "\n\n")
+                for a in flagged_sequence:
+                    f.write(f"  {a['qid']} ({a['label']}): rankings={a['rankings']}, expected={a['expected']}\n")
+                f.write("\n")
 
             if manual_review:
                 f.write("=== MULTIPLE P13677 — NEEDS MANUAL REVIEW ===\n")

@@ -488,14 +488,33 @@ def generate_p958_html_section(summary):
       </table>
     </details>"""
 
-    # Build sequence anomaly list
+    # Build sequence anomaly table
     anomaly_list = ""
     if summary.get("sequence_anomaly_items"):
-        items = "\n".join(f"<li><code>{html_escape(a.strip())}</code></li>" for a in summary["sequence_anomaly_items"])
+        anomaly_rows = ""
+        for a in summary["sequence_anomaly_items"]:
+            if isinstance(a, dict):
+                qid = a["qid"]
+                label = html_escape(a["label"])
+                rankings = ", ".join(str(r) for r in a["rankings"])
+                expected = ", ".join(str(r) for r in a["expected"])
+            else:
+                # Legacy string format fallback
+                qid = a.strip().split(" ")[0]
+                label = html_escape(a.strip())
+                rankings = ""
+                expected = ""
+            anomaly_rows += (
+                f'<tr><td><a href="https://www.wikidata.org/wiki/{qid}">{qid}</a></td>'
+                f'<td>{label}</td><td>{rankings}</td><td>{expected}</td></tr>\n'
+            )
         anomaly_list = f"""
     <details>
       <summary><strong>{summary["sequence_anomalies"]} ranking sequence anomalies</strong></summary>
-      <ul style="font-size: 0.85rem;">{items}</ul>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem;">
+        <tr><th>QID</th><th>Label</th><th>Actual rankings</th><th>Expected rankings</th></tr>
+        {anomaly_rows}
+      </table>
     </details>"""
 
     shown = min(summary["generated"], MAX_LINES_PER_BATCH)
