@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-22
+
+### TEMPORARY: Create shrine ranking article pages
+**Script:** `create_shrine_ranking_pages.py`
+**Status:** Added to workflow — remove after all pages are created
+
+Creates article pages for all 21 subcategories of [[Category:Shrine rankings needing pages]] that don't already have articles. Uses the Gō-sha page as a template.
+
+- 5 articles already exist: Gō-sha, Myōjin Taisha, Shikinai Shōsha, Shikinai Taisha, Son-sha
+- 16 articles to create across three types:
+  - **Modern system ranks** (Bekkaku Kanpeisha, Kanpei Taisha/Chūsha/Shōsha, Kokuhei Taisha/Chūsha/Shōsha, Fu-sha, Ken-sha, Fuken-sha, Unranked shrines)
+  - **Engishiki offering classifications** (Hoe and Quiver, Hoe offering, Quiver offering, Tsukinami-sai+Niiname-sai, Tsukinami-sai+Niiname-sai+Ainame-sai)
+- For categories with a `{{wikidata link}}`, queries Wikidata P301 (category's main topic) to get the article's QID
+- 9 of 21 categories have Wikidata links; the other 12 get articles without wikidata
+- Each article gets: nihongo template (where applicable), system link, See Also with category link, wikidata link (if available), and [[Category:Shrine rankings]]
+
+**To remove after completion:** Delete the workflow step marked `(TEMPORARY)` in `cleanup-loop.yml` and optionally delete the script.
+
+---
+
 ## 2026-03-21
 
 ### Extended untranslated Japanese character thresholds + translation pipeline plan
