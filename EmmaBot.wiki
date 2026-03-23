@@ -2,7 +2,9 @@ This is the operational bot account used for automated maintenance on shinto.mir
 
 Its purpose is to run repeatable cleanup and migration tasks with transparent logging, persistent state files, and auditable edit summaries tied to GitHub Actions workflow runs.
 
-Repository: https://github.com/Emma-Leonhart/shintowiki-scripts
+Repository: https://github.com/EmmaLeonhart/shintowiki-scripts
+
+Dashboard: https://emmaleonhart.github.io/shintowiki-scripts/
 
 == Operations policy ==
 
