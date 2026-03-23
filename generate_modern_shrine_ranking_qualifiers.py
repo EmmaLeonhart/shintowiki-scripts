@@ -15,7 +15,6 @@ import shutil
 import requests
 import time
 from datetime import datetime, timezone
-from urllib.parse import quote
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -363,9 +362,9 @@ def generate_p4656_references():
         item = qid(r["item"]["value"])
         rankvalue = qid(r["rankvalue"]["value"])
         article_name = r["articleName"]["value"]
-        # Encode article name for URL (spaces → underscores, then percent-encode)
-        encoded = quote(article_name.replace(" ", "_"), safe="/:@!$&'()*+,;=-._~")
-        url = f"https://ja.wikipedia.org/wiki/{encoded}"
+        # Use raw characters — percent-encoding breaks QuickStatements matching
+        title = article_name.replace(" ", "_")
+        url = f"https://ja.wikipedia.org/wiki/{title}"
         lines.append(f'{item}|P13723|{rankvalue}|S4656|"{url}"')
 
     with open(P4656_OUTPUT_FILE, "w", encoding="utf-8") as f:
