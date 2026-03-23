@@ -1,6 +1,8 @@
 name: Daily Chain
 
 on:
+  push:
+    branches: [master]
   schedule:
     - cron: '0 21 * * *'  # Daily at 21:00 UTC (1:00 PM PST)
   workflow_dispatch:
