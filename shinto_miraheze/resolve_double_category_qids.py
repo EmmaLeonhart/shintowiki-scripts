@@ -43,6 +43,12 @@ def normalize_title(title):
     return title.strip()
 
 
+def strip_leading_colon(title):
+    """Strip a leading colon from a title (used in category redirects to
+    prevent self-categorization, e.g. #REDIRECT [[:Category:X]])."""
+    return title.lstrip(":")
+
+
 def resolve_final_target(site, title, max_depth=10):
     """Follow redirect chain to the final destination.
 
@@ -50,7 +56,7 @@ def resolve_final_target(site, title, max_depth=10):
     the page is not a redirect or doesn't exist.
     """
     seen = set()
-    current = normalize_title(title)
+    current = normalize_title(strip_leading_colon(title))
 
     for _ in range(max_depth):
         key = current.casefold()
@@ -70,7 +76,8 @@ def resolve_final_target(site, title, max_depth=10):
         m = REDIRECT_RE.match(text)
         if m is None:
             return current
-        current = normalize_title(m.group(1))
+        # Strip leading colon — category redirects use [[:Category:X]]
+        current = normalize_title(strip_leading_colon(m.group(1)))
 
     return current
 
