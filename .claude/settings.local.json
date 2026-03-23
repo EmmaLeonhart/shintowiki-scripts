@@ -23,7 +23,8 @@
       "Bash(gh run:*)",
       "Bash(gh workflow:*)",
       "Bash(gh api:*)",
-      "WebFetch(domain:pypi.org)"
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:emmaleonhart.github.io)"
     ]
   }
 }
