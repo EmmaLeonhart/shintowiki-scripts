@@ -30,8 +30,6 @@ jobs:
           python generate_modern_shrine_ranking_qualifiers.py
 
       - name: Submit daily batch via QuickStatements API
-        id: submit
-        continue-on-error: true
         working-directory: modern-quickstatements
         env:
           QUICKSTATEMENTS_API_KEY: ${{ secrets.QUICKSTATEMENTS_API_KEY }}
@@ -47,7 +45,3 @@ jobs:
           git pull --rebase || true
           git stash pop || true
           git push
-
-      - name: Fail if submission failed
-        if: steps.submit.outcome == 'failure'
-        run: exit 1
