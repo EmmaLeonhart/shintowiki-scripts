@@ -2,6 +2,8 @@
 
 Automated QuickStatements generation and submission for Wikidata shrine property maintenance. Part of the [shintowiki-scripts](https://github.com/EmmaLeonhart/shintowiki-scripts) pipeline.
 
+**Dashboard:** [shrine-ranking](https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html) | **Run history:** [runs](https://emmaleonhart.github.io/shintowiki-scripts/runs.html)
+
 ## What this does
 
 Generates QuickStatements v1 files for batch Wikidata edits and submits them daily via the QuickStatements API. Tracks submission outcomes in JSON reports and serves a run history dashboard.

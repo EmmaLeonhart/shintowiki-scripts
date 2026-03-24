@@ -6,7 +6,9 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ## Automation boundary
 
-The GitHub Actions cleanup loop (`shinto_miraheze/cleanup_loop.sh`, runs daily) handles everything that can be scripted safely and repeatably. State files are committed incrementally after each chunk (Import & Categorization, Structural Fixes, Wikidata, Final Core, Cleanup Loop, Deprecated) so progress is not lost if a later chunk fails. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
+The GitHub Actions pipeline (a chain of reusable workflows orchestrated by `.github/workflows/cleanup-loop.yml`, runs daily + on push) handles everything that can be scripted safely and repeatably. State files are committed incrementally after each chunk (Import & Categorization, Structural Fixes, Wikidata, Final Core, Cleanup Loop, Deprecated) so progress is not lost if a later chunk fails. After the wiki cleanup, QuickStatements are submitted to Wikidata and a run history page is rebuilt. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
+
+Dashboard: [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/) — includes [run history](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) for QS submissions.
 
 ### Currently automated (cleanup loop)
 

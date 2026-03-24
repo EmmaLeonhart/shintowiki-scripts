@@ -23,6 +23,15 @@ CI-first execution is now the operational standard:
 - Routine and major automated edits are implemented by changing repository code/workflows and executing through GitHub Actions.
 - Local manual script runs are reserved for emergency-only intervention.
 
+The pipeline runs as a chain of reusable GitHub Actions workflows orchestrated by `cleanup-loop.yml`:
+1. `generate-quickstatements.yml` — pre-flight QuickStatements file generation
+2. `wiki-cleanup.yml` — main wiki editing loop (5 chunks with state commits between them)
+3. `random-wait.yml` — random delay before QS submission (schedule-only)
+4. `submit-quickstatements.yml` — submits atomic Wikidata operations via QuickStatements API
+5. `build-run-history.yml` — rebuilds the run history dashboard page
+
+A separate `generate-pages.yml` workflow builds and deploys the [GitHub Pages dashboard](https://emmaleonhart.github.io/shintowiki-scripts/) daily.
+
 ---
 
 ## Phase 0: Complete legacy operations (in progress / mostly done)

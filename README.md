@@ -2,6 +2,12 @@
 
 A bot framework and automation pipeline for [shinto.miraheze.org](https://shinto.miraheze.org), with Wikidata integration via QuickStatements and a static GitHub Pages dashboard.
 
+**Dashboard:** [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/) — project overview, QuickStatements status, and [run history](https://emmaleonhart.github.io/shintowiki-scripts/runs.html)
+
+**Wiki:** [shinto.miraheze.org](https://shinto.miraheze.org) — the wiki this pipeline maintains
+
+**Bot status:** [User:EmmaBot](https://shinto.miraheze.org/wiki/User:EmmaBot) — live pipeline status, current stage, and run history on-wiki
+
 ---
 
 ## How it works
@@ -128,16 +134,18 @@ The submission job **never fails the workflow** — it logs the outcome (submitt
 
 ---
 
-## GitHub Pages site
+## GitHub Pages dashboard
 
-Deployed via `generate-pages.yml` (daily at 00:30 UTC). Pages served:
+**Live at:** [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/)
 
-| Page | Source |
-|------|--------|
-| `index.html` | `generate_pages.py` — project overview and P11250 status |
-| `shrine-ranking.html` | `modern-quickstatements` — QS dashboard for shrine ranking work |
-| `runs.html` | `generate_run_history.py` — QS submission history with outcome badges |
-| `p11250.html` / `p11250.txt` | P11250 QuickStatements for copy-paste |
+Deployed via `generate-pages.yml` (daily at 00:30 UTC). The `build-run-history.yml` workflow also updates `runs.html` after every pipeline run.
+
+| Page | URL | Source |
+|------|-----|--------|
+| Project overview | [index](https://emmaleonhart.github.io/shintowiki-scripts/) | `generate_pages.py` — automation status + P11250 overview |
+| Shrine ranking dashboard | [shrine-ranking](https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html) | `modern-quickstatements` — P13723/P958 QuickStatements status |
+| Run history | [runs](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) | `generate_run_history.py` — QS submission history with outcome badges |
+| P11250 QuickStatements | [p11250](https://emmaleonhart.github.io/shintowiki-scripts/p11250.html) | Copy-paste QuickStatements for Wikidata P11250 |
 
 ---
 
