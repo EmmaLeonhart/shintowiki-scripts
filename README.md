@@ -153,11 +153,32 @@ Deployed via `generate-pages.yml` (daily at 00:30 UTC). The `build-run-history.y
 
 All credentials are injected via GitHub Actions secrets/variables. No credentials in source code.
 
+### Shintowiki (Miraheze)
+
 | Name | Type | Purpose |
 |------|------|---------|
-| `WIKI_USERNAME` | Variable | Bot-password login (format: `EmmaBot@EmmaBot`) |
+| `WIKI_USERNAME` | Variable | Bot-password login for shinto.miraheze.org (format: `MainUser@BotName`) |
 | `WIKI_PASSWORD` | Secret | Bot password for shinto.miraheze.org |
-| `QUICKSTATEMENTS_API_KEY` | Secret | API token from QuickStatements user page |
+
+Used by `wiki-cleanup.yml` for all wiki editing operations.
+
+### Wikidata / Wikimedia
+
+| Name | Type | Purpose |
+|------|------|---------|
+| `MW_BOTNAME` | Secret | Wikimedia bot-password login (format: `User@BotName`) for Wikidata editing |
+| `BOT_TOKEN` | Secret | Wikimedia bot password token (the password part of the bot-password) |
+
+Reserved for future direct Wikidata editing via the MediaWiki API. Not currently used by any workflow — all Wikidata edits currently go through QuickStatements.
+
+### QuickStatements
+
+| Name | Type | Purpose |
+|------|------|---------|
+| `QS_TOKEN` | Secret | API token from your [QuickStatements user page](https://quickstatements.toolforge.org/) |
+| `QS_USERNAME` | Secret | Wikidata username for QuickStatements submissions |
+
+Used by `submit-quickstatements.yml` to submit atomic QuickStatements batches.
 
 ---
 

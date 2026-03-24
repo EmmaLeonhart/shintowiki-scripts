@@ -32,7 +32,8 @@ jobs:
       - name: Submit daily batch via QuickStatements API
         working-directory: modern-quickstatements
         env:
-          QUICKSTATEMENTS_API_KEY: ${{ secrets.QUICKSTATEMENTS_API_KEY }}
+          QS_TOKEN: ${{ secrets.QS_TOKEN }}
+          QS_USERNAME: ${{ secrets.QS_USERNAME }}
         run: python submit_daily_batch.py
 
       - name: Commit and push run report

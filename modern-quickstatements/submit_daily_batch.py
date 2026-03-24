@@ -7,7 +7,8 @@ independently with retries, so one flaky failure doesn't block the rest.
 Writes a run report to reports/ after each run.
 
 Expects environment variables:
-  QUICKSTATEMENTS_API_KEY  - API token from QuickStatements user page
+  QS_TOKEN     - API token from QuickStatements user page
+  QS_USERNAME  - Wikidata username for QuickStatements submissions
 """
 
 import io
@@ -115,12 +116,17 @@ def main():
         "batches": [],
     }
 
-    token = os.environ.get("QUICKSTATEMENTS_API_KEY", "")
-    username = "Immanuelle"
+    token = os.environ.get("QS_TOKEN", "")
+    username = os.environ.get("QS_USERNAME", "")
 
-    if not token:
+    if not token or not username:
+        missing = []
+        if not token:
+            missing.append("QS_TOKEN")
+        if not username:
+            missing.append("QS_USERNAME")
         report["outcome"] = "skipped"
-        report["error"] = "QUICKSTATEMENTS_API_KEY not set"
+        report["error"] = f"{', '.join(missing)} not set"
         print(f"SKIPPED: {report['error']}")
         write_report(report)
         return

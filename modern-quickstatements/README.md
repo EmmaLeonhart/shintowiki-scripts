@@ -74,9 +74,10 @@ This page is served via GitHub Pages at `/runs.html`.
 
 | Secret | Description |
 |--------|-------------|
-| `QUICKSTATEMENTS_API_KEY` | API token from your [QuickStatements user page](https://quickstatements.toolforge.org/) |
+| `QS_TOKEN` | API token from your [QuickStatements user page](https://quickstatements.toolforge.org/) |
+| `QS_USERNAME` | Wikidata username associated with the token |
 
-Set in **Settings → Secrets and variables → Actions** on the GitHub repo. If the key is not set, the submission step logs "SKIPPED" and continues without error.
+Set in **Settings → Secrets and variables → Actions** on the GitHub repo. If either is not set, the submission step logs "SKIPPED" and continues without error.
 
 ## Local usage
 
