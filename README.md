@@ -12,7 +12,7 @@ A bot framework and automation pipeline for [shinto.miraheze.org](https://shinto
 
 ## How it works
 
-Everything runs through **GitHub Actions** — no scripts are run locally. The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`:
+Everything runs through **GitHub Actions**. The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`:
 
 ```
 cleanup-loop.yml (orchestrator)
