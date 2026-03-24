@@ -120,19 +120,19 @@ body {
   max-width: 960px; margin: 2rem auto; padding: 0 1.5rem;
   color: #1a1a1a; line-height: 1.6;
 }
-h1 { border-bottom: 3px solid #c62828; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-h2 { color: #b71c1c; margin: 1.5rem 0 0.75rem; }
+h1 { border-bottom: 3px solid #4caf50; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+h2 { color: #2e7d32; margin: 1.5rem 0 0.75rem; }
 h3 { color: #333; margin: 1rem 0 0.5rem; }
-a { color: #c62828; }
-a:hover { color: #e53935; }
+a { color: #2e7d32; }
+a:hover { color: #4caf50; }
 p { margin: 0.5rem 0; }
 nav {
-  background: #fafafa; border: 1px solid #e0e0e0; border-radius: 8px;
+  background: #f1f8e9; border: 1px solid #c5e1a5; border-radius: 8px;
   padding: 1rem 1.5rem; margin-bottom: 1.5rem;
   display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
 }
 nav a { text-decoration: none; font-weight: 500; }
-nav .sep { color: #ccc; }
+nav .sep { color: #aed581; }
 .timestamp { color: #666; font-size: 0.85rem; }
 .stats-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -142,7 +142,7 @@ nav .sep { color: #ccc; }
   background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
   padding: 1rem; text-align: center;
 }
-.stat-card .number { font-size: 1.8rem; font-weight: 700; color: #c62828; }
+.stat-card .number { font-size: 1.8rem; font-weight: 700; color: #2e7d32; }
 .stat-card .label { font-size: 0.85rem; color: #666; }
 .section {
   background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
@@ -157,6 +157,18 @@ nav .sep { color: #ccc; }
   background: #e8f5e9; border-left: 4px solid #4caf50;
   padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
 }
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 1rem 0;
+}
+.feature-card {
+  background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px;
+  padding: 1.25rem; text-decoration: none; color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { border-color: #4caf50; box-shadow: 0 2px 8px rgba(76,175,80,0.15); }
+.feature-card h3 { color: #2e7d32; margin: 0 0 0.5rem; }
+.feature-card p { margin: 0; font-size: 0.9rem; color: #555; }
 .qs-box {
   width: 100%; font-family: 'Consolas', 'Monaco', monospace;
   font-size: 0.8rem; border: 1px solid #ccc; border-radius: 4px;
@@ -167,7 +179,7 @@ nav .sep { color: #ccc; }
   overflow: hidden; margin: 0.5rem 0;
 }
 .progress-fill {
-  height: 100%; background: #c62828; color: #fff;
+  height: 100%; background: #4caf50; color: #fff;
   display: flex; align-items: center; justify-content: center;
   font-size: 0.75rem; font-weight: 600;
   transition: width 0.3s ease; min-width: 2rem;
@@ -177,7 +189,7 @@ nav .sep { color: #ccc; }
   padding: 0.4rem 0.75rem; border-left: 3px solid #e0e0e0; margin: 0.25rem 0;
 }
 .pipeline-list li.chunk-header {
-  border-left-color: #c62828; font-weight: 600; margin-top: 0.75rem;
+  border-left-color: #4caf50; font-weight: 600; margin-top: 0.75rem;
 }
 footer {
   margin-top: 2rem; padding-top: 1rem;
@@ -191,9 +203,9 @@ li { margin: 0.25rem 0; }
 def nav_html(active="index"):
     links = [
         ("index", "index.html", "Overview"),
-        ("p11250", "p11250.html", "P11250 QuickStatements"),
-        ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking (P13723)"),
-        ("daily", "daily.html", "Daily Operations"),
+        ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking"),
+        ("p11250", "p11250.html", "P11250"),
+        ("runs", "runs.html", "Run History"),
     ]
     parts = []
     for key, href, label in links:
@@ -203,7 +215,7 @@ def nav_html(active="index"):
             parts.append(f'<a href="{href}">{label}</a>')
 
     return f"""<nav>
-  <span style="font-weight:700;">shintowiki</span>
+  <a href="index.html" style="font-weight:700;font-size:1.1rem;color:#2e7d32;text-decoration:none;">shintowiki</a>
   <span class="sep">|</span>
   {"  ".join(parts)}
   <span class="sep">|</span>
@@ -235,7 +247,8 @@ def page_html(title, body, active="index"):
 
 # ─── Index page ──────────────────────────────────────────────
 
-def generate_index(stats):
+def generate_index(stats, qs_count=0):
+    count = qs_count
     total = stats.get("total_pages", "?")
     edits = stats.get("total_edits", "?")
     linked = stats.get("linked_to_wikidata", "?")
@@ -268,6 +281,22 @@ def generate_index(stats):
   <p>The wiki uses <strong>interlanguage link templates</strong> (<code>{{{{ill}}}}</code>) for every
   cross-wiki reference, and <strong>Wikidata integration</strong> (<code>{{{{wikidata link}}}}</code>)
   to connect pages to the linked data ecosystem. Every page is linked to its Wikidata item where one exists.</p>
+</div>
+
+<h2>Wikidata QuickStatements</h2>
+<div class="feature-grid">
+  <a class="feature-card" href="shrine-ranking.html">
+    <h3>Shrine Ranking (P13723)</h3>
+    <p>Add P459 determination method qualifiers to shrine ranking statements, P958 section qualifiers to Kokugakuin Museum entries, and migrate legacy properties.</p>
+  </a>
+  <a class="feature-card" href="p11250.html">
+    <h3>Miraheze Article ID (P11250)</h3>
+    <p>Link Wikidata items to their shintowiki articles. {count:,} pending statements.</p>
+  </a>
+  <a class="feature-card" href="runs.html">
+    <h3>Run History</h3>
+    <p>Track daily QuickStatements submission outcomes &mdash; submitted, partial, skipped, or failed.</p>
+  </a>
 </div>
 
 <h2>Wiki statistics</h2>
@@ -434,7 +463,7 @@ def main():
     print(f"  Found {len(qs_lines)} QuickStatements lines")
 
     print("Generating index.html...", flush=True)
-    index_html = generate_index(stats)
+    index_html = generate_index(stats, qs_count=len(qs_lines))
     with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
