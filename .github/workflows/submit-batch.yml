@@ -37,7 +37,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/
           git diff --cached --quiet || git commit -m "Daily submission report $(date -u +%Y-%m-%d)"
+          git stash --include-untracked
           git pull --rebase
+          git stash pop || true
           git push
 
       - name: Fail if submission failed
