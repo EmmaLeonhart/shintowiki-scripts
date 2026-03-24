@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-03-24 20:19:25 UTC",
+  "outcome": "error",
+  "batches": [],
+  "error": "QUICKSTATEMENTS_API_KEY must be set"
+}
