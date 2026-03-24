@@ -192,6 +192,8 @@ def nav_html(active="index"):
     links = [
         ("index", "index.html", "Overview"),
         ("p11250", "p11250.html", "P11250 QuickStatements"),
+        ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking (P13723)"),
+        ("daily", "daily.html", "Daily Operations"),
     ]
     parts = []
     for key, href, label in links:

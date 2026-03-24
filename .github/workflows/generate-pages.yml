@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,13 +25,28 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate site
+      - name: Generate QuickStatements files and site
+        working-directory: modern-quickstatements
+        run: |
+          python generate_p958_qualifiers.py
+          python generate_modern_shrine_ranking_qualifiers.py
+
+      - name: Generate main site
         run: python3 generate_pages.py
+
+      - name: Combine sites
+        run: |
+          # Copy QS dashboard pages into main _site, renaming index to avoid collision
+          cp modern-quickstatements/_site/index.html _site/shrine-ranking.html
+          cp modern-quickstatements/_site/daily.html _site/daily.html 2>/dev/null || true
+          # Copy all QS text files and summary
+          cp modern-quickstatements/_site/*.txt _site/ 2>/dev/null || true
+          cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
