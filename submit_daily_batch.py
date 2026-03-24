@@ -1,10 +1,8 @@
-"""Submit the daily budget of atomic QuickStatements via the QuickStatements API.
+"""Submit atomic QuickStatements via the QuickStatements API.
 
-Submits Phase 1 (P459 qualifier addition) and P958 qualifier lines,
-which are atomic operations safe for unattended execution.
-
-Phase 3 migration lines are non-atomic (remove old + add new) and require
-manual review, so they are NOT submitted here.
+Submits all atomic operation files (P459 qualifiers, P4656 references,
+P958 qualifiers, Shikinai Hiteisha removals). Each file is tried
+independently with retries, so one flaky failure doesn't block the rest.
 
 Writes a run report to reports/ after each run.
 
@@ -23,7 +21,8 @@ import requests
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 QS_API = "https://quickstatements.toolforge.org/api.php"
-MAX_LINES_PER_BATCH = None  # Submit all lines in each file
+MAX_RETRIES = 3
+RETRY_DELAY = 30  # seconds between retries
 
 ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
@@ -84,6 +83,19 @@ def submit_batch(lines, token, username, batch_name):
     return False, f"API error: {result}", result
 
 
+def submit_with_retries(lines, token, username, batch_name):
+    """Try submitting a batch up to MAX_RETRIES times."""
+    for attempt in range(1, MAX_RETRIES + 1):
+        success, message, raw = submit_batch(lines, token, username, batch_name)
+        if success:
+            return success, message, raw, attempt
+        print(f"  Attempt {attempt}/{MAX_RETRIES} failed: {message}")
+        if attempt < MAX_RETRIES:
+            print(f"  Retrying in {RETRY_DELAY}s...")
+            time.sleep(RETRY_DELAY)
+    return False, message, raw, MAX_RETRIES
+
+
 def write_report(report):
     """Write run report to reports/ directory."""
     os.makedirs("reports", exist_ok=True)
@@ -113,8 +125,8 @@ def main():
         write_report(report)
         sys.exit(1)
 
-    all_ok = True
-    any_submitted = False
+    any_succeeded = False
+    any_failed = False
 
     for filepath in ATOMIC_FILES:
         lines = read_batch(filepath)
@@ -124,6 +136,7 @@ def main():
             "lines_submitted": 0,
             "success": None,
             "message": "",
+            "attempts": 0,
             "api_response": None,
         }
 
@@ -137,28 +150,30 @@ def main():
         batch_name = f"auto: {os.path.splitext(filepath)[0]} ({len(lines)} lines)"
         print(f"{filepath}: submitting {len(lines)} lines as '{batch_name}'...")
 
-        success, message, raw = submit_batch(lines, token, username, batch_name)
+        success, message, raw, attempts = submit_with_retries(lines, token, username, batch_name)
         batch_entry["lines_submitted"] = len(lines)
         batch_entry["success"] = success
         batch_entry["message"] = message
+        batch_entry["attempts"] = attempts
         batch_entry["api_response"] = raw
         report["batches"].append(batch_entry)
 
-        print(f"  → {message}")
-
         if success:
-            any_submitted = True
+            print(f"  OK: {message}" + (f" (attempt {attempts})" if attempts > 1 else ""))
+            any_succeeded = True
         else:
-            all_ok = False
-            print("Submission failed, giving up on remaining batches.")
-            break
+            print(f"  FAILED after {attempts} attempts: {message}")
+            any_failed = True
+            # Continue to next file instead of giving up
 
-        # Small gap between batches
+        # Gap between files
         time.sleep(5)
 
-    if all_ok and any_submitted:
+    if any_succeeded and not any_failed:
         report["outcome"] = "submitted"
-    elif all_ok and not any_submitted:
+    elif any_succeeded and any_failed:
+        report["outcome"] = "partial"
+    elif not any_succeeded and not any_failed:
         report["outcome"] = "nothing_to_do"
     else:
         report["outcome"] = "failed"
@@ -166,8 +181,8 @@ def main():
     report_path = write_report(report)
     print(f"Done. Outcome: {report['outcome']}")
 
-    # Exit non-zero on failure so the workflow step fails visibly
-    if not all_ok:
+    # Exit non-zero only if everything failed (partial success is still progress)
+    if report["outcome"] == "failed":
         sys.exit(1)
 
 
