@@ -1,43 +1,92 @@
 # modern-quickstatements
 
-Automated QuickStatements generation for Wikidata shrine property maintenance.
+Automated QuickStatements generation and submission for Wikidata shrine property maintenance. Part of the [shintowiki-scripts](https://github.com/EmmaLeonhart/shintowiki-scripts) pipeline.
 
-## Current: Modern Shrine Ranking Qualifiers
+## What this does
 
-Adds `P459` (determination method or standard) → `Q712534` (modern system of ranked Shinto shrines) qualifier to all `P13723` (shrine ranking) statements on Wikidata.
+Generates QuickStatements v1 files for batch Wikidata edits and submits them daily via the QuickStatements API. Tracks submission outcomes in JSON reports and serves a run history dashboard.
 
-This is prep work for generalizing `P13723` to support multiple shrine ranking systems, where the qualifier distinguishes which system determined the rank.
+### Property work
 
-### Usage
+**P13723 (shrine ranking) — Modern shrine ranking qualifiers:**
+- Adds `P459` (determination method) → `Q712534` (modern system of ranked Shinto shrines) qualifier to all existing `P13723` statements
+- Phase 3 (non-atomic, manual): migrates P31/P1552 shrine ranking statements to P13723
+- ~4,179 statements across all shrines with P13723
 
-```bash
-python generate_modern_shrine_ranking_qualifiers.py
-```
+**P13677 (Kokugakuin Museum entry ID) — Section qualifiers:**
+- Adds `P958` (section, verse, paragraph, or clause) qualifiers to P13677 statements
+- Qualifies each entry ID with the relevant section of the Kokugakuin database
 
-Outputs `modern_shrine_ranking_qualifiers.txt` — paste into [QuickStatements](https://quickstatements.toolforge.org/) to apply.
+**P4656 (Wikimedia import URL) — jawiki references:**
+- Adds P4656 references pointing to ja.wikipedia.org source pages for modern P13723 statements
 
-### Current output
+**P31 (instance of) — Shikinai Hiteisha removal:**
+- Removes incorrect P31=Q135026601 (Shikinai Hiteisha / non-Engishiki shrine) statements
 
-- **4,179** statements across all shrines with `P13723`
-- QuickStatements v1 format: `QXXX|P13723|QYYY|P459|Q712534`
+## Files
 
-## Automated Submission
+| File | Description |
+|------|-------------|
+| `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 qualifiers + Phase 3 migration lines |
+| `generate_p958_qualifiers.py` | Generates P958 section qualifiers for P13677 |
+| `submit_daily_batch.py` | Submits atomic QS files via API; writes JSON report to `reports/` |
+| `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
 
-A daily cron job (06:00 UTC) regenerates the QuickStatements files and submits the atomic Phase 1 lines via the [QuickStatements API](https://www.wikidata.org/wiki/Help:QuickStatements#Using_the_API_to_start_batches). A random 1–3600 second delay is added before submission.
+### Generated files (atomic — submitted daily)
 
-Only atomic operations are submitted automatically:
-- **Phase 1**: Add P459 qualifiers to existing P13723 (each line is independent)
-- **P958**: Add P958 section qualifiers to P13677 (each line is independent)
+| File | Contents |
+|------|----------|
+| `modern_shrine_ranking_qualifiers.txt` | P459 qualifiers on existing P13723 |
+| `p958_qualifiers.txt` | P958 section qualifiers on P13677 |
+| `p4656_jawiki_references.txt` | P4656 ja.wiki references on P13723 |
+| `remove_shikinai_hiteisha.txt` | Remove P31=Q135026601 |
 
-Phase 3 migration lines (remove old property + add new P13723) are **non-atomic** and require manual submission.
+### Generated files (non-atomic — manual submission only)
 
-### Required Secrets
+| File | Contents |
+|------|----------|
+| `migrate_*.txt` | Phase 3 migration lines (remove old property + add new P13723) |
+| `p958_manual_review.txt` | P958 lines needing human review |
+
+## How submission works
+
+The `submit_daily_batch.py` script:
+1. Reads each atomic `.txt` file
+2. Submits all lines as a single QuickStatements batch via the API
+3. Retries up to 10 times with 20s delay between attempts
+4. Writes a JSON report to `reports/` with outcome, batch details, and API responses
+5. **Never exits non-zero** — logs outcome (submitted/partial/skipped/failed) and exits cleanly
+
+The submission job is part of the `cleanup-loop.yml` workflow chain. Its success or failure does not affect the overall workflow status.
+
+### Run history page
+
+`generate_run_history.py` reads all `reports/*.json` files and generates `_site/runs.html` — an HTML dashboard showing:
+- Summary counts by outcome (submitted, partial, failed, skipped, nothing to do)
+- Per-run cards with timestamp, outcome badge, and batch-level details
+- Color-coded status indicators
+
+This page is served via GitHub Pages at `/runs.html`.
+
+## Required secrets
 
 | Secret | Description |
 |--------|-------------|
 | `QUICKSTATEMENTS_API_KEY` | API token from your [QuickStatements user page](https://quickstatements.toolforge.org/) |
-| `QUICKSTATEMENTS_USERNAME` | Wikidata username associated with the token |
 
-Set these in **Settings → Secrets and variables → Actions** on the GitHub repo.
+Set in **Settings → Secrets and variables → Actions** on the GitHub repo. If the key is not set, the submission step logs "SKIPPED" and continues without error.
 
-Note: The QuickStatements API may reject requests from GitHub Actions IPs. If that happens, the job simply fails — no retries.
+## Local usage
+
+```bash
+pip install requests
+
+# Generate QuickStatements files
+python generate_p958_qualifiers.py
+python generate_modern_shrine_ranking_qualifiers.py
+
+# Build run history page (reads reports/*.json)
+python generate_run_history.py
+```
+
+Non-atomic files (migration lines) must be copy-pasted into [QuickStatements](https://quickstatements.toolforge.org/) manually.

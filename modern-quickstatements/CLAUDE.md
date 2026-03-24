@@ -7,10 +7,27 @@
 - **Update README.md regularly.** It should always reflect the current state of the project for human readers.
 
 ## Project Description
-_TODO: Describe what this project is about._
+
+Automated QuickStatements generation and submission for Wikidata shrine property maintenance. This subdirectory generates QuickStatements v1 files for batch Wikidata edits (P13723 shrine ranking qualifiers, P958 section qualifiers, P4656 jawiki references, Shikinai Hiteisha removals) and submits them daily via the QuickStatements API as part of the shintowiki-scripts pipeline.
 
 ## Architecture and Conventions
-_TODO: Document key decisions, file structure, and patterns as they emerge._
 
-# currentDate
-Today's date is 2026-03-16.
+### File layout
+- `generate_*.py` — QuickStatements generators. Each queries Wikidata SPARQL and outputs `.txt` files.
+- `submit_daily_batch.py` — API submission script. Reads atomic `.txt` files, submits via QS API, writes JSON reports.
+- `generate_run_history.py` — Reads `reports/*.json` and builds `_site/runs.html`.
+- `reports/` — JSON run reports (one per submission attempt).
+- `_site/` — Generated HTML/TXT files for GitHub Pages.
+
+### Submission behavior
+- Only **atomic** operations (each line independent) are submitted automatically.
+- **Non-atomic** operations (paired remove+add) require manual submission.
+- The submission script **never exits non-zero** — it logs outcomes and exits cleanly. The run history page tracks failures.
+- Missing `QUICKSTATEMENTS_API_KEY` results in a "skipped" outcome, not an error.
+
+### Workflow integration
+This subdirectory's scripts are called by two GitHub Actions workflows:
+1. `generate-quickstatements.yml` — pre-flight generation before wiki cleanup
+2. `submit-quickstatements.yml` — post-cleanup submission with report commit
+3. `build-run-history.yml` — final action: rebuilds the run history page
+4. `generate-pages.yml` — daily GitHub Pages build includes `_site/runs.html`

@@ -1,101 +1,176 @@
-﻿# wikibot
+# shintowiki-scripts
 
-A bot framework for editing MediaWiki wikis, primarily [shinto.miraheze.org](https://shinto.miraheze.org), with integration against Wikidata and the [pramana.dev](https://pramana.dev) server.
-
----
-
-## Current state
-
-The root directory and `shinto_miraheze/` contain hundreds of accumulated one-off scripts, log files, and data CSVs from several years of iterative work. Most of these are legacy ChatGPT-era scripts that are no longer needed. A cleanup pass is planned (see [VISION.md](VISION.md)).
-
-The active, maintained scripts are documented in [SCRIPTS.md](SCRIPTS.md).
-
-All standard bot operations now run through GitHub Actions via `shinto_miraheze/cleanup_loop.sh`. The remaining open wiki tasks require manual intervention — there are no safe script additions left to make to the loop.
+A bot framework and automation pipeline for [shinto.miraheze.org](https://shinto.miraheze.org), with Wikidata integration via QuickStatements and a static GitHub Pages dashboard.
 
 ---
 
-## Active scripts (shinto.miraheze.org pipeline)
+## How it works
 
-These run in order via `shinto_miraheze/cleanup_loop.sh` (GitHub Actions, daily + on push):
+Everything runs through **GitHub Actions** — no scripts are run locally. The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`:
 
+```
+cleanup-loop.yml (orchestrator)
+├─ generate-quickstatements.yml   → generates Wikidata QuickStatements files
+├─ wiki-cleanup.yml               → runs all wiki editing scripts (5 chunks + deprecated)
+├─ random-wait.yml                → random delay before QS submission (schedule only)
+├─ submit-quickstatements.yml     → submits atomic operations to QuickStatements API
+└─ build-run-history.yml          → rebuilds the run history page from reports
+```
+
+A separate workflow, `generate-pages.yml`, builds and deploys the GitHub Pages site (daily at 00:30 UTC).
+
+### Triggers
+
+| Trigger | What happens |
+|---------|--------------|
+| Push to main (excluding .state/.log/.errors) | Full pipeline run |
+| Daily schedule (00:00 UTC) | Full pipeline run + random-delayed QS submission |
+| Manual dispatch | Full pipeline run |
+
+---
+
+## Repository structure
+
+```
+shintowiki-scripts/
+├── .github/workflows/          # GitHub Actions workflow chain (7 files)
+├── shinto_miraheze/            # Wiki editing bot scripts (~46 Python, 3 shell)
+├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
+│   ├── reports/                # JSON run reports from QS submissions
+│   └── _site/                  # Generated QS dashboard pages
+├── _site/                      # GitHub Pages output (main site)
+├── generate_pages.py           # Generates the main GitHub Pages site
+├── EmmaBot.wiki                # Wiki template for User:EmmaBot status updates
+└── docs: README.md, SCRIPTS.md, API.md, SHINTOWIKI_STRUCTURE.md,
+          HISTORY.md, VISION.md, TODO.md, DEVLOG.md
+```
+
+---
+
+## Wiki editing pipeline (wiki-cleanup.yml)
+
+The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into chunks with state commits between them. Each chunk's state files are committed to git so progress is preserved if a later chunk fails.
+
+### Chunk 1: Import & Categorization
 | Script | Purpose |
 |--------|---------|
-| `shinto_miraheze/update_bot_userpage_status.py` | Updates `User:EmmaBot` with current run metadata |
-| `shinto_miraheze/delete_unused_categories.py` | Deletes Special:UnusedCategories pages, skipping those with `{{Possibly empty category}}` |
-| `shinto_miraheze/normalize_category_pages.py` | Enforces canonical layout (templates / interwikis / categories) on category pages |
-| `shinto_miraheze/migrate_talk_pages.py` | Rebuilds talk pages and seeds them with discussion content from Wikipedia |
-| `shinto_miraheze/tag_shikinaisha_talk_pages.py` | Adds a "generated from Wikidata" notice to shikinaisha talk pages |
-| `shinto_miraheze/remove_crud_categories.py` | Strips `[[Category:X]]` tags from members of all Crud_categories subcategories |
-| `shinto_miraheze/fix_erroneous_qid_category_links.py` | Fixes category/QID mismatches in Category:Erroneous_qid_category_links |
-| `shinto_miraheze/remove_legacy_cat_templates.py` | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages |
+| `reimport_from_enwiki.py` | Reimports pages from enwiki XML to fix broken template transclusions (10/run) |
+| `overwrite_deleted_enwiki_pages.py` | Overwrites local pages whose enwiki source was deleted |
+| `create_wanted_categories.py` | Creates stub pages for Special:WantedCategories |
+| `categorize_uncategorized_categories.py` | Tags uncategorized categories under EmmaBot umbrella |
+| `triage_emmabot_categories.py` | First-pass triage: checks EmmaBot categories against enwiki |
+| `triage_emmabot_categories_jawiki.py` | Second-pass triage: checks against jawiki |
+| `triage_emmabot_categories_secondary.py` | Third-pass triage: secondary heuristics |
+| `triage_secondary_single_member.py` | Moves single-member categories to triaged bucket |
+| `create_shrine_ranking_pages.py` | Creates shrine ranking article pages (TEMPORARY) |
 
-Everything else in the repo either completed its run, requires manual intervention, or is legacy/archived. See [TODO.md](TODO.md) for the full picture.
+### Chunk 2: Structural Fixes
+| Script | Purpose |
+|--------|---------|
+| `delete_unused_templates.py` | Deletes pages from Special:UnusedTemplates |
+| `fix_double_redirects.py` | Fixes Special:DoubleRedirects |
+| `resolve_double_category_qids.py` | Simplifies QID disambiguation pages where all targets resolve to the same category |
+
+### Chunk 3: Wikidata
+| Script | Purpose |
+|--------|---------|
+| `generate_p11250_quickstatements.py` | Generates P11250 QuickStatements for items missing the property |
+| `clean_p11250_quickstatements.py` | Removes applied QuickStatements lines |
+| `tag_pages_without_wikidata.py` | Tags pages lacking `{{wikidata link}}` |
+| `clean_wikidata_cat_redirects.py` | Removes wikidata category tags from redirect pages |
+
+### Chunk 4: Final Core
+| Script | Purpose |
+|--------|---------|
+| `fix_template_noinclude.py` | Moves stray categories/wikidata links into `<noinclude>` on templates |
+| `categorize_uncategorized_pages.py` | Tags uncategorized mainspace pages |
+| `tag_untranslated_japanese.py` | Detects and categorizes pages with untranslated Japanese text |
+
+### Cleanup Loop
+| Script | Purpose |
+|--------|---------|
+| `delete_unused_categories.py` | Deletes Special:UnusedCategories (skips `{{Possibly empty category}}`) |
+| `migrate_talk_pages.py` | Rebuilds talk pages with discussion content from Wikipedia |
+| `delete_orphaned_talk_pages.py` | Deletes talk pages with no subject page |
+| `delete_broken_redirects.py` | Deletes Special:BrokenRedirects |
+| `remove_crud_categories.py` | Strips crud category tags from pages |
+
+### Deprecated (Sunday only)
+| Script | Purpose |
+|--------|---------|
+| `normalize_category_pages.py` | Enforces canonical category page layout |
+| `tag_shikinaisha_talk_pages.py` | Adds "generated from Wikidata" notice to shikinaisha talk pages |
+| `fix_erroneous_qid_category_links.py` | Fixes category/QID mismatches |
+| `remove_legacy_cat_templates.py` | Removes legacy template artifacts from categories |
+| `move_categories.py` | Moves/renames categories per configured CSV |
+| `create_japanese_category_qid_redirects.py` | Creates QID redirects for Japanese-named categories |
+
+---
+
+## QuickStatements pipeline (modern-quickstatements/)
+
+Generates and submits Wikidata property edits via the [QuickStatements API](https://quickstatements.toolforge.org/):
+
+| Script | What it does |
+|--------|--------------|
+| `generate_p958_qualifiers.py` | Generates P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) |
+| `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 (determination method) qualifiers for P13723 (shrine ranking) |
+| `submit_daily_batch.py` | Submits atomic QS operations; writes JSON reports to `reports/` |
+| `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
+
+Atomic files submitted daily:
+- `modern_shrine_ranking_qualifiers.txt` — P459 qualifiers on P13723
+- `p4656_jawiki_references.txt` — P4656 ja.wiki references on P13723
+- `p958_qualifiers.txt` — P958 section qualifiers on P13677
+- `remove_shikinai_hiteisha.txt` — Remove P31=Q135026601 (Shikinai Hiteisha)
+
+The submission job **never fails the workflow** — it logs the outcome (submitted/partial/skipped/failed) to a JSON report and exits cleanly. The run history page at `runs.html` tracks all outcomes over time.
+
+---
+
+## GitHub Pages site
+
+Deployed via `generate-pages.yml` (daily at 00:30 UTC). Pages served:
+
+| Page | Source |
+|------|--------|
+| `index.html` | `generate_pages.py` — project overview and P11250 status |
+| `shrine-ranking.html` | `modern-quickstatements` — QS dashboard for shrine ranking work |
+| `runs.html` | `generate_run_history.py` — QS submission history with outcome badges |
+| `p11250.html` / `p11250.txt` | P11250 QuickStatements for copy-paste |
 
 ---
 
 ## Credentials / secrets
 
-Active `shinto_miraheze/*.py` scripts now support environment-variable overrides:
-- `WIKI_USERNAME`
-- `WIKI_PASSWORD`
+All credentials are injected via GitHub Actions secrets/variables. No credentials in source code.
 
-Until then, do not share this repo publicly.
-
-Required credentials (to be moved to environment variables or a `.env` file):
-- `WIKI_USERNAME` / `WIKI_PASSWORD` - MediaWiki bot password login (example username format: `EmmaBot@EmmaBot`)
-- Pramana server credentials (future)
-
-For local development, copy `.env.example` to `.env` and set real values in your shell or environment manager.
+| Name | Type | Purpose |
+|------|------|---------|
+| `WIKI_USERNAME` | Variable | Bot-password login (format: `EmmaBot@EmmaBot`) |
+| `WIKI_PASSWORD` | Secret | Bot password for shinto.miraheze.org |
+| `QUICKSTATEMENTS_API_KEY` | Secret | API token from QuickStatements user page |
 
 ---
 
-## Setup
+## Setup (for local development)
 
 ```bash
 pip install mwclient requests
 ```
 
-Run any script directly:
-```bash
-python create_category_qid_redirects.py
-python shinto_miraheze/resolve_category_wikidata_from_interwiki.py
-```
-
-Run the Ubuntu cleanup loop locally:
-```bash
-bash shinto_miraheze/cleanup_loop.sh
-```
+Scripts are designed for CI execution. For local testing, set `WIKI_USERNAME` and `WIKI_PASSWORD` environment variables. See [API.md](API.md) for access patterns.
 
 ---
 
-## GitHub Actions (Ubuntu)
+## Documentation
 
-A workflow is available at `.github/workflows/cleanup-loop.yml`.
-
-Set these repository or environment secrets before running:
-- `WIKI_USERNAME` (variable, bot username like `EmmaBot@EmmaBot`)
-- `WIKI_PASSWORD`
-
-The workflow runs on:
-- manual dispatch (`workflow_dispatch`)
-- every push (`push`)
-- every 24 hours (`schedule`, at `00:00` UTC)
-
-Pipeline behavior:
-- Uses bot-password login (`WIKI_USERNAME` format `MainUser@BotName`)
-- Writes a run-start status update to `[[User:EmmaBot]]` from `EmmaBot.wiki` + trigger metadata
-- Runs unused-category deletion first (with `{{Possibly empty category}}` safeguard)
-- Runs cleanup scripts sequentially with a per-script edit cap (`WIKI_EDIT_LIMIT=1000`)
-- Commits updated `*.state` files back to the current branch after successful runs
-
----
-
-## See also
-
-- [VISION.md](VISION.md) - full architecture plan and future direction
-- [SCRIPTS.md](SCRIPTS.md) - catalog of all scripts with status
-- [API.md](API.md) - how every external service is accessed (mwclient, Wikidata, Wikipedia APIs)
-- [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) - page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, category/template/talk page conventions, known issues
-- [HISTORY.md](HISTORY.md) - wiki development timeline and context: origins, suspension/restoration, shikinaisha project, category system, WikiProject Shinto situation
-- [TODO.md](TODO.md) - prioritized list of all known tasks
-
+| File | Contents |
+|------|----------|
+| [SCRIPTS.md](SCRIPTS.md) | Full catalog of all scripts with status |
+| [API.md](API.md) | How every external service is accessed |
+| [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) | Page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, categories, templates, talk pages |
+| [HISTORY.md](HISTORY.md) | Wiki development timeline and context |
+| [VISION.md](VISION.md) | Architecture plan and future direction |
+| [TODO.md](TODO.md) | Prioritized list of open tasks |
+| [DEVLOG.md](DEVLOG.md) | Running log of all significant operations |
