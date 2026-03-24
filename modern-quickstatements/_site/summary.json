@@ -1,0 +1,81 @@
+{
+  "p459": {
+    "name": "P459 qualifiers (determination method)",
+    "description": "Add P459 (determination method or standard) \u2192 Q712534 (modern system of ranked Shinto shrines) to existing P13723 statements",
+    "total": 4179,
+    "remaining": 3588,
+    "completed": 591,
+    "output_file": "modern_shrine_ranking_qualifiers.txt",
+    "lines": 3588
+  },
+  "replace_p1027": {
+    "name": "Replace P1027 with P459",
+    "description": "Replace P1027 (conferred by) qualifiers with P459 (determination method or standard) on existing P13723 statements, preserving all other qualifiers and references",
+    "total": 593,
+    "remaining": 593,
+    "completed": 0,
+    "output_file": "replace_p1027_with_p459.txt",
+    "lines": 1188
+  },
+  "migrations": [
+    {
+      "name": "Engishiki ranking",
+      "description": "Shikinai Sh\u014dsha, Shikinai Taisha, My\u014djin Taisha",
+      "source_property": "P31",
+      "determined_by": "Q138640329",
+      "total": 5341,
+      "remaining": 5341,
+      "completed": 0,
+      "output_file": "migrate_engishiki_ranking.txt",
+      "lines": 10706
+    },
+    {
+      "name": "Gifu Prefecture Shrine ranking",
+      "description": "Kinpei-sha, Ginpei-sha, Hakuhei-sha",
+      "source_property": "P1552",
+      "determined_by": "Q137901635",
+      "total": 226,
+      "remaining": 226,
+      "completed": 0,
+      "output_file": "migrate_gifu_ranking.txt",
+      "lines": 452
+    },
+    {
+      "name": "Beppyo Shrine",
+      "description": "Beppyo Shrine",
+      "source_property": "P31",
+      "determined_by": "Q908077",
+      "total": 350,
+      "remaining": 350,
+      "completed": 0,
+      "output_file": "migrate_beppyo_shrine.txt",
+      "lines": 747
+    },
+    {
+      "name": "X-no-miya",
+      "description": "Ichinomiya, Ni-no-Miya, San-no-Miya, Shi-no-Miya, Go-no-Miya, Roku-no-Miya, Regional Ichinomiya",
+      "source_property": "P31",
+      "determined_by": "Q134916677",
+      "total": 238,
+      "remaining": 238,
+      "completed": 0,
+      "output_file": "migrate_x_no_miya.txt",
+      "lines": 484
+    },
+    {
+      "name": "Ritsury\u014d funding type",
+      "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
+      "source_property": "P31",
+      "determined_by": "Q135009120",
+      "total": 5474,
+      "remaining": 5474,
+      "completed": 0,
+      "output_file": "migrate_ritsuryo_funding.txt",
+      "lines": 11015
+    }
+  ],
+  "property_edits": {
+    "output_file": "edit_p13723_property.txt",
+    "lines": 11
+  }
+}

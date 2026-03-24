@@ -1,0 +1,15 @@
+name: Random Wait
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  wait:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Random delay before submission
+        run: |
+          DELAY=$((RANDOM % 3600 + 1))
+          echo "Waiting ${DELAY}s ($((DELAY / 60))m $((DELAY % 60))s)..."
+          sleep $DELAY

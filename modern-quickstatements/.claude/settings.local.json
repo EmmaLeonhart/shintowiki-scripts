@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:query.wikidata.org)",
+      "Bash(curl:*)",
+      "Bash(cd:*)",
+      "Bash(sleep:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(grep -E \"\\\\.\\(txt|json\\)$\")",
+      "Bash(git commit:*)",
+      "Bash(find C:UsersImmanuelleDocumentsGithubmodern-quickstatements -type f \\\\\\(-name *.py -o -name *.html -o -name *.css -o -name *.js \\\\\\))",
+      "Bash(grep -iE \"\\\\.\\(html|css|js|py\\)$\")",
+      "WebFetch(domain:www.wikidata.org)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:meta.wikimedia.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(python:*)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"\nimport urllib.request, json, sys\nreq = urllib.request.Request\\('https://www.wikidata.org/wiki/Special:EntityData/Q59282644.json',\n    headers={'User-Agent': 'ModernQuickstatements/1.0 \\(research\\)'}\\)\nd = json.loads\\(urllib.request.urlopen\\(req\\).read\\(\\)\\)\ne = d['entities']['Q59282644']\nclaims = e.get\\('claims', {}\\)\nfor prop in ['P361', 'P1448', 'P6375']:\n    stmts = claims.get\\(prop, []\\)\n    print\\(f'{prop}: {len\\(stmts\\)} statement\\(s\\)'\\)\n    for s in stmts:\n        rank = s.get\\('rank', 'unknown'\\)\n        mv = s.get\\('mainsnak', {}\\).get\\('datavalue', {}\\)\n        if mv.get\\('type'\\) == 'wikibase-entityid':\n            val = mv['value'].get\\('id', '?'\\)\n        elif mv.get\\('type'\\) == 'monolingualtext':\n            val = mv['value'].get\\('text', '?'\\) + ' [' + mv['value'].get\\('language', '?'\\) + ']'\n        elif mv.get\\('type'\\) == 'string':\n            val = mv.get\\('value', '?'\\)\n        else:\n            val = str\\(mv\\)\n        print\\(f'  - {val} \\(rank: {rank}\\)'\\)\n\")",
+      "Bash(gh run:*)",
+      "Bash(gh workflow:*)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:emmaleonhart.github.io)",
+      "Bash(grep:*)"
+    ]
+  }
+}
