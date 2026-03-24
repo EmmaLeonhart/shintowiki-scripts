@@ -119,11 +119,11 @@ def main():
     username = "Immanuelle"
 
     if not token:
-        report["outcome"] = "error"
-        report["error"] = "QUICKSTATEMENTS_API_KEY must be set"
-        print(f"ERROR: {report['error']}")
+        report["outcome"] = "skipped"
+        report["error"] = "QUICKSTATEMENTS_API_KEY not set"
+        print(f"SKIPPED: {report['error']}")
         write_report(report)
-        sys.exit(1)
+        return
 
     any_succeeded = False
     any_failed = False
@@ -181,9 +181,9 @@ def main():
     report_path = write_report(report)
     print(f"Done. Outcome: {report['outcome']}")
 
-    # Exit non-zero only if everything failed (partial success is still progress)
+    # Log outcome but never exit non-zero — the run history page tracks failures
     if report["outcome"] == "failed":
-        sys.exit(1)
+        print("WARNING: All batches failed, see report for details")
 
 
 if __name__ == "__main__":
