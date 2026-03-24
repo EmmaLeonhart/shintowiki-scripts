@@ -354,14 +354,28 @@ def find_lexeme(lemma: str, lang_qid: str = "Q1860", pos_qid: str = "Q1084") -> 
 
 ## 6. Authentication summary
 
-| Service | Library | Auth type | Account format |
-|---------|---------|-----------|----------------|
-| shinto.miraheze.org | mwclient | Username + password | `EmmaBot` |
-| commons.wikimedia.org | mwclient | Bot password | `EmmaBot@EmmaBotCommonsBot` |
-| en.wiktionary.org | mwclient | Bot password | `EmmaBotBot@Bot` |
-| ja.wiktionary.org | mwclient | Bot password | `EmmaBotBot@Bot` |
-| wikidata.org | requests | None (public read) | User-Agent header only |
-| *.wikipedia.org | requests | None (public read) | User-Agent header only |
+### Active (used by CI pipeline)
+
+| Service | Method | CI Secret/Variable | Notes |
+|---------|--------|--------------------|-------|
+| shinto.miraheze.org | mwclient bot password | `WIKI_USERNAME` (var) + `WIKI_PASSWORD` (secret) | Format: `EmmaBot@EmmaBot`. Used by `wiki-cleanup.yml`. |
+| QuickStatements API | requests + API token | `QS_TOKEN` + `QS_USERNAME` (secrets) | Used by `submit-quickstatements.yml`. |
+| Wikidata / Wikimedia (editing) | mwclient bot password | `MW_BOTNAME` + `BOT_TOKEN` (secrets) | Format: `User@BotName`. Reserved for future direct Wikidata editing. Not yet used by any workflow. |
+
+### Read-only (no credentials needed)
+
+| Service | Method | Notes |
+|---------|--------|-------|
+| wikidata.org | requests | User-Agent header only |
+| *.wikipedia.org | requests | User-Agent header only |
+
+### Legacy (historical, credentials in old scripts)
+
+| Service | Library | Account format |
+|---------|---------|----------------|
+| commons.wikimedia.org | mwclient | `EmmaBot@EmmaBotCommonsBot` |
+| en.wiktionary.org | mwclient | `EmmaBotBot@Bot` |
+| ja.wiktionary.org | mwclient | `EmmaBotBot@Bot` |
 
 **Bot passwords** (`Special:BotPasswords`) are separate from the main account password — they're scoped to specific permissions and can be revoked independently. This is the correct mechanism for bot access to Wikimedia wikis.
 

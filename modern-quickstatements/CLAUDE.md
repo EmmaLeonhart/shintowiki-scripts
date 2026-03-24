@@ -23,7 +23,7 @@ Automated QuickStatements generation and submission for Wikidata shrine property
 - Only **atomic** operations (each line independent) are submitted automatically.
 - **Non-atomic** operations (paired remove+add) require manual submission.
 - The submission script **never exits non-zero** — it logs outcomes and exits cleanly. The run history page tracks failures.
-- Missing `QUICKSTATEMENTS_API_KEY` results in a "skipped" outcome, not an error.
+- Missing `QS_TOKEN` or `QS_USERNAME` results in a "skipped" outcome, not an error.
 
 ### Workflow integration
 This subdirectory's scripts are called by two GitHub Actions workflows:
