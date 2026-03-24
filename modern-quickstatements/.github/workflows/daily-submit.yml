@@ -1,0 +1,37 @@
+name: Daily Chain
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '0 21 * * *'  # Daily at 21:00 UTC (1:00 PM PST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    uses: ./.github/workflows/generate-and-deploy.yml
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+  # Random delay only on cron schedule, not on push
+  wait:
+    needs: generate
+    if: github.event_name == 'schedule'
+    uses: ./.github/workflows/random-wait.yml
+
+  # On push: submit immediately after generate
+  # On cron: submit after random wait
+  submit:
+    needs: [generate, wait]
+    if: always() && needs.generate.result == 'success'
+    uses: ./.github/workflows/submit-batch.yml
+    permissions:
+      contents: write
+    secrets: inherit
