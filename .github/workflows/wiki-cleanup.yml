@@ -1,0 +1,340 @@
+name: Wiki Cleanup
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      WIKI_EDIT_LIMIT: "100"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and environment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/run_step.sh shinto_miraheze/commit_state.sh
+
+          # Build RUN_TAG
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      # ════════════════════════════════════════
+      #  Bookkeeping: START
+      # ════════════════════════════════════════
+
+      - name: "Bookkeeping: mark active"
+        run: |
+          python3 shinto_miraheze/update_bot_userpage_status.py \
+            --run-tag "${RUN_TAG}" --status active --stage "Bookkeeping: START"
+
+      # ════════════════════════════════════════
+      #  Chunk 1: Import & Categorization
+      # ════════════════════════════════════════
+
+      - name: "Import: reimport_from_enwiki"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: reimport_from_enwiki" \
+            python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 10 --run-tag "${RUN_TAG}"
+
+      - name: "Import: overwrite_deleted_enwiki_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: overwrite_deleted_enwiki_pages" \
+            python3 shinto_miraheze/overwrite_deleted_enwiki_pages.py --apply --run-tag "${RUN_TAG}"
+
+      - name: "Import: create_wanted_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: create_wanted_categories" \
+            python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: categorize_uncategorized_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: categorize_uncategorized_categories" \
+            python3 shinto_miraheze/categorize_uncategorized_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: triage_emmabot_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories" \
+            python3 shinto_miraheze/triage_emmabot_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: triage_emmabot_categories_jawiki"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories_jawiki" \
+            python3 shinto_miraheze/triage_emmabot_categories_jawiki.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: triage_emmabot_categories_secondary"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories_secondary" \
+            python3 shinto_miraheze/triage_emmabot_categories_secondary.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: triage_secondary_single_member"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: triage_secondary_single_member" \
+            python3 shinto_miraheze/triage_secondary_single_member.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Import: create_shrine_ranking_pages (TEMPORARY)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: create_shrine_ranking_pages" \
+            python3 shinto_miraheze/create_shrine_ranking_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Import & Categorization"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Import & Categorization"
+
+      # ════════════════════════════════════════
+      #  Chunk 2: Structural Fixes
+      # ════════════════════════════════════════
+
+      - name: "Structural: delete_unused_templates"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: delete_unused_templates" \
+            python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Structural: fix_double_redirects"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: fix_double_redirects" \
+            python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Structural: resolve_double_category_qids"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: resolve_double_category_qids" \
+            python3 shinto_miraheze/resolve_double_category_qids.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Structural Fixes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Structural Fixes"
+
+      # ════════════════════════════════════════
+      #  Chunk 3: Wikidata
+      # ════════════════════════════════════════
+
+      - name: "Wikidata: generate_p11250_quickstatements"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: generate_p11250_quickstatements" \
+            python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Wikidata: clean_p11250_quickstatements"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: clean_p11250_quickstatements" \
+            python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --max-checks "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Wikidata: tag_pages_without_wikidata"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: tag_pages_without_wikidata" \
+            python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Wikidata: clean_wikidata_cat_redirects"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
+            python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Wikidata"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Wikidata"
+
+      # ════════════════════════════════════════
+      #  Chunk 4: Final Core
+      # ════════════════════════════════════════
+
+      - name: "Final: fix_template_noinclude"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: fix_template_noinclude" \
+            python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Final: categorize_uncategorized_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: categorize_uncategorized_pages" \
+            python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Final: tag_untranslated_japanese"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: tag_untranslated_japanese" \
+            python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Final Core"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Final Core"
+
+      # ════════════════════════════════════════
+      #  Cleanup Loop
+      # ════════════════════════════════════════
+
+      - name: "Cleanup: delete_unused_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: delete_unused_categories" \
+            python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Cleanup: migrate_talk_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: migrate_talk_pages" \
+            python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Cleanup: delete_orphaned_talk_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: delete_orphaned_talk_pages" \
+            python3 shinto_miraheze/delete_orphaned_talk_pages.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Cleanup: delete_broken_redirects"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: delete_broken_redirects" \
+            python3 shinto_miraheze/delete_broken_redirects.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Cleanup: remove_crud_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: remove_crud_categories" \
+            python3 shinto_miraheze/remove_crud_categories.py --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Cleanup Loop"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Cleanup Loop"
+
+      # ════════════════════════════════════════
+      #  Deprecated (Sunday only)
+      # ════════════════════════════════════════
+
+      - name: "Deprecated: normalize_category_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: normalize_category_pages" \
+            python3 shinto_miraheze/normalize_category_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Deprecated: tag_shikinaisha_talk_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: tag_shikinaisha_talk_pages" \
+            python3 shinto_miraheze/tag_shikinaisha_talk_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Deprecated: fix_erroneous_qid_category_links"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: fix_erroneous_qid_category_links" \
+            python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Deprecated: remove_legacy_cat_templates"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: remove_legacy_cat_templates" \
+            python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Deprecated: move_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: move_categories" \
+            python3 shinto_miraheze/move_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Deprecated: create_japanese_category_qid_redirects"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: create_japanese_category_qid_redirects" \
+            python3 shinto_miraheze/create_japanese_category_qid_redirects.py
+
+      - name: "Commit state: Deprecated"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          shinto_miraheze/commit_state.sh "Deprecated (weekly)"
+
+      # ════════════════════════════════════════
+      #  Bookkeeping: END
+      # ════════════════════════════════════════
+
+      - name: "Bookkeeping: mark inactive"
+        if: always()
+        run: |
+          python3 shinto_miraheze/update_bot_userpage_status.py \
+            --run-tag "${RUN_TAG}" --status inactive --stage "Complete"
+
+      - name: "Push remaining state"
+        if: always()
+        run: |
+          # Fallback: commit any remaining uncommitted state files
+          find . -name '*.state' -o -name '*.log' -o -name '*.errors' | xargs -r git add -f
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(state): update bot state files (fallback) [skip ci]"
+          fi
+          # Push all state commits in one go
+          if [ "$(git rev-list --count origin/${GITHUB_REF_NAME}..HEAD)" -gt 0 ]; then
+            git stash --include-untracked || true
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              echo "Rebase conflict detected — auto-resolving state files..."
+              for i in $(seq 1 20); do
+                conflicted=$(git diff --name-only --diff-filter=U)
+                if [ -n "$conflicted" ]; then
+                  echo "$conflicted" | xargs -I{} git checkout --theirs "{}"
+                  echo "$conflicted" | xargs -I{} git add "{}"
+                  GIT_EDITOR=true git -c core.editor=true rebase --continue 2>/dev/null && break
+                else
+                  git rebase --skip 2>/dev/null && break
+                fi
+              done
+            fi
+            git stash pop || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No new commits to push."
+          fi
