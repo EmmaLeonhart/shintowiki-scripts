@@ -18,7 +18,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ════════════════════════════════════════
+  #  Pre-flight: Generate QuickStatements
+  # ════════════════════════════════════════
+  generate-quickstatements:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate QuickStatements files
+        working-directory: modern-quickstatements
+        run: |
+          python generate_p958_qualifiers.py
+          python generate_modern_shrine_ranking_qualifiers.py
+
+  # ════════════════════════════════════════
+  #  Main: Wikibot Cleanup Loop
+  # ════════════════════════════════════════
   cleanup:
+    needs: generate-quickstatements
+    if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 330
     env:
@@ -348,3 +377,66 @@ jobs:
           else
             echo "No new commits to push."
           fi
+
+  # ════════════════════════════════════════
+  #  Post-flight: Random Wait (cron only)
+  # ════════════════════════════════════════
+  random-wait:
+    needs: cleanup
+    if: always() && needs.cleanup.result != 'cancelled' && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Random delay before submission
+        run: |
+          DELAY=$((RANDOM % 3600 + 1))
+          echo "Waiting ${DELAY}s ($((DELAY / 60))m $((DELAY % 60))s)..."
+          sleep $DELAY
+
+  # ════════════════════════════════════════
+  #  Post-flight: Submit QuickStatements
+  # ════════════════════════════════════════
+  submit-quickstatements:
+    needs: [cleanup, random-wait]
+    if: always() && needs.cleanup.result != 'cancelled'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Regenerate QuickStatements files
+        working-directory: modern-quickstatements
+        run: |
+          python generate_p958_qualifiers.py
+          python generate_modern_shrine_ranking_qualifiers.py
+
+      - name: Submit daily batch via QuickStatements API
+        id: submit
+        continue-on-error: true
+        working-directory: modern-quickstatements
+        env:
+          QUICKSTATEMENTS_API_KEY: ${{ secrets.QUICKSTATEMENTS_API_KEY }}
+        run: python submit_daily_batch.py
+
+      - name: Commit and push run report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modern-quickstatements/reports/
+          git diff --cached --quiet || git commit -m "Daily QS submission report $(date -u +%Y-%m-%d) [skip ci]"
+          git stash --include-untracked || true
+          git pull --rebase || true
+          git stash pop || true
+          git push
+
+      - name: Fail if submission failed
+        if: steps.submit.outcome == 'failure'
+        run: exit 1

@@ -157,7 +157,8 @@
       "Bash(git:*)",
       "Bash(:)",
       "Bash(code:*)",
-      "Read(//c/Users/Immanuelle/Downloads/**)"
+      "Read(//c/Users/Immanuelle/Downloads/**)",
+      "Bash(wc -l *.py)"
     ],
     "deny": [],
     "ask": []
