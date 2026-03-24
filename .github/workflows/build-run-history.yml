@@ -32,7 +32,7 @@ jobs:
 
       - name: Commit and push run history
         run: |
-          git add modern-quickstatements/_site/runs.html
+          git add -f modern-quickstatements/_site/runs.html
           git diff --cached --quiet || git commit -m "chore: update run history page [skip ci]"
           git stash --include-untracked || true
           git pull --rebase || true
