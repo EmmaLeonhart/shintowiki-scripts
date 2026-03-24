@@ -72,7 +72,7 @@ def main():
             errors += 1
             continue
 
-        if text == "PLACEHOLDER":
+        if text.startswith("PLACEHOLDER"):
             print(f"  {title} SKIP (already placeholder)")
             skipped += 1
             continue
