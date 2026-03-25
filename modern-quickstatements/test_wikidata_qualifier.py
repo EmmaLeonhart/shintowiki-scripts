@@ -1,10 +1,10 @@
 """
 test_wikidata_qualifier.py
 ==========================
-Test script: apply a single P459 qualifier to one P13723 statement via the
-Wikidata API (wbsetqualifier), bypassing QuickStatements entirely.
+Apply P459 qualifiers to P13723 statements via the Wikidata API
+(wbsetqualifier), bypassing QuickStatements entirely.
 
-Picks the first P13723 statement that lacks a P459 qualifier and adds:
+Finds up to MAX_EDITS P13723 statements that lack a P459 qualifier and adds:
     P459 → Q712534 (modern system of ranked Shinto shrines)
 
 Environment variables:
@@ -26,6 +26,7 @@ SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 QUALIFIER_PROPERTY = "P459"                    # determination method or standard
 QUALIFIER_VALUE = "Q712534"                    # modern system of ranked Shinto shrines
 TARGET_PROPERTY = "P13723"                     # shrine ranking
+MAX_EDITS = 10
 
 
 def sparql_query(query):
@@ -40,28 +41,31 @@ def sparql_query(query):
     return r.json()["results"]["bindings"]
 
 
-def find_one_missing_qualifier():
-    """Find one P13723 statement that lacks a P459 qualifier.
+def find_missing_qualifiers(limit=MAX_EDITS):
+    """Find P13723 statements that lack a P459 qualifier.
 
-    Returns (item_qid, rank_value_qid) or None.
+    Returns list of (item_qid, rank_value_qid) tuples.
     """
-    query = """
-    SELECT ?item ?rankvalue WHERE {
+    query = f"""
+    SELECT ?item ?rankvalue WHERE {{
       ?item p:P13723 ?stmt .
       ?stmt ps:P13723 ?rankvalue .
-      FILTER NOT EXISTS { ?stmt pq:P459 ?_ }
-    }
+      FILTER NOT EXISTS {{ ?stmt pq:P459 ?_ }}
+    }}
     ORDER BY ?item
-    LIMIT 1
+    LIMIT {limit}
     """
     results = sparql_query(query)
     if not results:
         print("No P13723 statements without P459 qualifier found.")
-        return None
+        return []
 
-    item = results[0]["item"]["value"].split("/")[-1]
-    rankvalue = results[0]["rankvalue"]["value"].split("/")[-1]
-    return item, rankvalue
+    targets = []
+    for r in results:
+        item = r["item"]["value"].split("/")[-1]
+        rankvalue = r["rankvalue"]["value"].split("/")[-1]
+        targets.append((item, rankvalue))
+    return targets
 
 
 def get_statement_guid(session, item_qid, rank_value_qid):
@@ -189,40 +193,49 @@ def set_qualifier(session, csrf, statement_guid, property_id, value_qid):
 
 
 def main():
-    print("=== Wikidata Qualifier Test Edit ===\n")
+    print(f"=== Wikidata Qualifier Edit ({MAX_EDITS} edits) ===\n")
 
-    # Step 1: Find a target
-    print("Step 1: Finding a P13723 statement without P459 qualifier...")
-    target = find_one_missing_qualifier()
-    if target is None:
+    # Step 1: Find targets
+    print(f"Step 1: Finding up to {MAX_EDITS} P13723 statements without P459 qualifier...")
+    targets = find_missing_qualifiers(MAX_EDITS)
+    if not targets:
         print("Nothing to do — all P13723 statements already have P459 qualifiers.")
         return
-
-    item_qid, rank_value_qid = target
-    print(f"  Target: {item_qid} → P13723 → {rank_value_qid}")
-    print(f"  https://www.wikidata.org/wiki/{item_qid}")
+    print(f"  Found {len(targets)} targets")
 
     # Step 2: Login
     print("\nStep 2: Logging in to Wikidata...")
     session, csrf = wd_login()
 
-    # Step 3: Get the statement GUID
-    print("\nStep 3: Fetching statement GUID...")
-    guid = get_statement_guid(session, item_qid, rank_value_qid)
-    if guid is None:
-        print("  Could not find matching statement (may already have qualifier).")
-        return
-    print(f"  Statement GUID: {guid}")
+    # Step 3: Process each target
+    succeeded = 0
+    failed = 0
+    skipped = 0
 
-    # Step 4: Apply the qualifier
-    print(f"\nStep 4: Adding {QUALIFIER_PROPERTY} → {QUALIFIER_VALUE} qualifier...")
-    success = set_qualifier(session, csrf, guid, QUALIFIER_PROPERTY, QUALIFIER_VALUE)
+    for i, (item_qid, rank_value_qid) in enumerate(targets, 1):
+        print(f"\n--- [{i}/{len(targets)}] {item_qid} → P13723 → {rank_value_qid} ---")
+        print(f"  https://www.wikidata.org/wiki/{item_qid}")
 
-    if success:
-        print(f"\nDone! Check: https://www.wikidata.org/wiki/{item_qid}")
-    else:
-        print("\nEdit failed — see error above.")
-        sys.exit(1)
+        guid = get_statement_guid(session, item_qid, rank_value_qid)
+        if guid is None:
+            print("  SKIP: Could not find matching statement (may already have qualifier).")
+            skipped += 1
+            continue
+        print(f"  Statement GUID: {guid}")
+
+        print(f"  Adding {QUALIFIER_PROPERTY} → {QUALIFIER_VALUE}...")
+        success = set_qualifier(session, csrf, guid, QUALIFIER_PROPERTY, QUALIFIER_VALUE)
+
+        if success:
+            succeeded += 1
+        else:
+            failed += 1
+
+        # Throttle between edits
+        if i < len(targets):
+            time.sleep(1)
+
+    print(f"\n=== Results: {succeeded} succeeded, {failed} failed, {skipped} skipped ===")
 
 
 if __name__ == "__main__":
