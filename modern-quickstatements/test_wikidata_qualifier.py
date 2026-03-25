@@ -172,7 +172,7 @@ def set_qualifier(session, csrf, statement_guid, property_id, value_qid):
             "value": snak_value,
             "token": csrf,
             "bot": 1,
-            "summary": "Add P459 (determination method) qualifier to shrine ranking statement [test edit]",
+            "summary": "Adding P459 (determination method) qualifier to shrine ranking statement",
             "format": "json",
         },
         timeout=60,
