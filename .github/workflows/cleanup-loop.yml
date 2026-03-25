@@ -41,8 +41,15 @@ jobs:
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
+  # Direct Wikidata edits via API (after QS submission)
+  wikidata-qualifier-edit:
+    needs: [submit-quickstatements]
+    if: always() && needs.cleanup.result == 'success'
+    uses: ./.github/workflows/test-wikidata-qualifier.yml
+    secrets: inherit
+
   # Final action: rebuild run history page from all reports
   build-run-history:
-    needs: [submit-quickstatements]
+    needs: [submit-quickstatements, wikidata-qualifier-edit]
     if: always()
     uses: ./.github/workflows/build-run-history.yml
