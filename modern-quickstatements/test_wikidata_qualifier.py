@@ -172,7 +172,7 @@ def set_qualifier(session, csrf, statement_guid, property_id, value_qid):
             "value": snak_value,
             "token": csrf,
             "bot": 1,
-            "summary": "adding qualifier",
+            "summary": "",
             "format": "json",
         },
         timeout=60,
