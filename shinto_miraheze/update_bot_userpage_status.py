@@ -20,7 +20,7 @@ START_MARKER = "<!-- BOT-RUN-STATUS:START -->"
 END_MARKER = "<!-- BOT-RUN-STATUS:END -->"
 IMMEDIATE_START = "<!-- BOT-IMMEDIATE:START -->"
 IMMEDIATE_END = "<!-- BOT-IMMEDIATE:END -->"
-TODO_PATH = os.getenv("WIKI_TODO_PATH", "TODO.md")
+TODO_PATH = os.getenv("WIKI_TODO_PATH", "todo.md")
 
 
 def load_event_data():
