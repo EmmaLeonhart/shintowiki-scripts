@@ -28,10 +28,10 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Unused template deletion** — `delete_unused_templates.py`: deletes template pages from Special:UnusedTemplates.
 - **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
 - **Resolve double category QIDs** — `resolve_double_category_qids.py`: walks `[[Category:Double category qids]]` disambiguation pages; when all listed categories resolve to the same final target (one is a redirect to the other), replaces the disambiguation page with a simple redirect. Part of a multi-step cleanup of duplicate QID disambiguation pages. 100 per run.
-- **P11250 QuickStatements** — `generate_p11250_quickstatements.py`: walks direct members of `[[Category:Pages linked to Wikidata]]`, checks Wikidata P11250, and adds QuickStatements lines to `[[QuickStatements/P11250]]` for items missing the property. Stateful, 100 per run. Has retry logic with automatic 429 termination and error logging to `error.log`.
-- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 100 pages *checked* per run (not 100 edited — bounds runtime regardless of hit rate).
-- **Clean P11250 QuickStatements** — `clean_p11250_quickstatements.py`: reads `[[QuickStatements/P11250]]`, checks each line against Wikidata, and removes lines where the item now has the correct P11250 value. 100 checks per run.
-- **Clean wikidata category redirects** — `clean_wikidata_cat_redirects.py`: cleans up wikidata-related category redirects.
+- **P11250 QuickStatements** — `generate_p11250_quickstatements.py`: walks direct members of `[[Category:Pages linked to Wikidata]]`, checks Wikidata P11250, and adds QuickStatements lines to `[[QuickStatements/P11250]]` for items missing the property. Stateful, 300 per run. Has retry logic with automatic 429 termination and error logging to `error.log`.
+- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 300 pages *checked* per run (not 300 edited — bounds runtime regardless of hit rate).
+- **Clean P11250 QuickStatements** — `clean_p11250_quickstatements.py`: reads `[[QuickStatements/P11250]]`, checks each line against Wikidata, and removes lines where the item now has the correct P11250 value. 300 checks per run.
+- **Clean wikidata category redirects** — `clean_wikidata_cat_redirects.py`: cleans up wikidata-related category redirects. 300 per run.
 - **Fix noinclude on templates** — `fix_template_noinclude.py`: finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` blocks and wraps them properly. Tags fixed templates with `[[Category:Templates fixed with noinclude]]`. 100 per run.
 - **Categorize uncategorized pages** — `categorize_uncategorized_pages.py`: fetches `Special:UncategorizedPages` and tags them with `[[Category:Uncategorized pages]]`. 100 per run.
 - **Tag untranslated Japanese content** — `tag_untranslated_japanese.py`: walks all mainspace pages and detects significant Japanese text (hiragana, katakana, CJK ideographs) outside of templates, interwiki links, refs, and other expected contexts. Tags pages with `[[Category:Pages with untranslated japanese content]]`. 100 pages checked per run. Prerequisite for the namespace layer work.
@@ -45,7 +45,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 **Wikidata (QuickStatements + direct API)**:
 - **P958 qualifiers** — `generate_p958_qualifiers.py` + `submit_daily_batch.py`: generates and submits P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) via QuickStatements API.
-- **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~334 remaining as of 2026-03-25 — should complete within a few days.
+- **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~244 remaining as of 2026-03-26 — should complete within a few days.
 
 **Temporary** (remove after completion):
 - **Shrine ranking page creation** — `create_shrine_ranking_pages.py`: creates article pages for subcategories of `[[Category:Shrine rankings needing pages]]`. Remove from workflow after all 21 pages exist (5 already existed, 16 to create).
