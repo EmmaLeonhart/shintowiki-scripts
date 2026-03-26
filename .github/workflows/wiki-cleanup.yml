@@ -14,7 +14,7 @@ jobs:
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
-      WIKI_EDIT_LIMIT: "300"
+      WIKI_EDIT_LIMIT: "100"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -159,25 +159,25 @@ jobs:
         if: always() && steps.*.outcome != 'cancelled'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: generate_p11250_quickstatements" \
-            python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_p11250_quickstatements"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: clean_p11250_quickstatements" \
-            python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --max-checks "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --max-checks 300 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: tag_pages_without_wikidata"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: tag_pages_without_wikidata" \
-            python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_wikidata_cat_redirects"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
-            python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Wikidata"
         if: always() && steps.*.outcome != 'cancelled'
