@@ -32,6 +32,7 @@ Generates QuickStatements v1 files for batch Wikidata edits and submits them dai
 | `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 qualifiers + Phase 3 migration lines |
 | `generate_p958_qualifiers.py` | Generates P958 section qualifiers for P13677 |
 | `submit_daily_batch.py` | Submits atomic QS files via API; writes JSON report to `reports/` |
+| `test_wikidata_qualifier.py` | Applies P459 qualifiers to P13723 via Wikidata API directly (10/run) |
 | `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
 
 ### Generated files (atomic — submitted daily)

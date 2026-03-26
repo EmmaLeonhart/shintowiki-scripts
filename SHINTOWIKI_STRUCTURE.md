@@ -307,7 +307,7 @@ These categories are used by scripts to find pages to process:
 |-------|-------|-----|
 | Template categories outside `<noinclude>` | Template namespace | Move stray `[[Category:…]]` and `{{wikidata link}}` into `<noinclude>` |
 | ILLs without `WD=` parameter | Mainspace | Run `fix_ill_destinations.py` or a new script to add missing `WD=` |
-| Category:Q* pages in category namespace | ~77 pages | Either delete or move to mainspace |
+| ~~Category:Q* pages in category namespace~~ | ~~77 pages~~ | ~~Resolved 2026-02-27: all deleted or moved to mainspace~~ |
 | Duplicate QID disambiguation pages | 621 pages | Human review to assign correct QID ownership |
 | Category pages with spaghetti wikitext | All categories | Rewrite script to clean up category content |
 

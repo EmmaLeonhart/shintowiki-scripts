@@ -28,7 +28,8 @@ The pipeline runs as a chain of reusable GitHub Actions workflows orchestrated b
 2. `wiki-cleanup.yml` — main wiki editing loop (5 chunks with state commits between them)
 3. `random-wait.yml` — random delay before QS submission (schedule-only)
 4. `submit-quickstatements.yml` — submits atomic Wikidata operations via QuickStatements API
-5. `build-run-history.yml` — rebuilds the run history dashboard page
+5. `test-wikidata-qualifier.yml` — direct Wikidata API edits (P459 qualifiers on P13723)
+6. `build-run-history.yml` — rebuilds the run history dashboard page
 
 A separate `generate-pages.yml` workflow builds and deploys the [GitHub Pages dashboard](https://emmaleonhart.github.io/shintowiki-scripts/) daily.
 
@@ -155,9 +156,9 @@ Add `.env` to `.gitignore`. Provide `.env.example` with placeholder values.
 
 During the category Wikidata-link-adding runs, the `create_category_qid_redirects.py` script caught up with the `resolve_category_wikidata_from_interwiki.py` script. This may have resulted in some `Q{QID}` redirect pages being created before the target category had its Wikidata link added, or vice versa. The exact scope of this issue is unknown but believed to be minor. A future audit script should verify consistency.
 
-### Category:Q* pages in category namespace
+### Category:Q* pages in category namespace (resolved)
 
-An early version of `create_category_qid_redirects.py` incorrectly created redirect pages as `Category:Q{QID}` instead of `Q{QID}` in mainspace. ~77 such pages were created and left in place (not deleted). These may need cleanup.
+An early version of `create_category_qid_redirects.py` incorrectly created redirect pages as `Category:Q{QID}` instead of `Q{QID}` in mainspace. ~77 such pages were created. **Resolved 2026-02-27:** all 77 pages were deleted or moved to mainspace as proper `Q{QID}` redirects.
 
 ### Duplicate QID disambiguation pages
 
