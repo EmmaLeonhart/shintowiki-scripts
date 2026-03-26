@@ -20,6 +20,7 @@ cleanup-loop.yml (orchestrator)
 ├─ wiki-cleanup.yml               → runs all wiki editing scripts (5 chunks + deprecated)
 ├─ random-wait.yml                → random delay before QS submission (schedule only)
 ├─ submit-quickstatements.yml     → submits atomic operations to QuickStatements API
+├─ test-wikidata-qualifier.yml    → applies P459 qualifiers via Wikidata API directly
 └─ build-run-history.yml          → rebuilds the run history page from reports
 ```
 
@@ -39,8 +40,8 @@ A separate workflow, `generate-pages.yml`, builds and deploys the GitHub Pages s
 
 ```
 shintowiki-scripts/
-├── .github/workflows/          # GitHub Actions workflow chain (7 files)
-├── shinto_miraheze/            # Wiki editing bot scripts (~46 Python, 3 shell)
+├── .github/workflows/          # GitHub Actions workflow chain (8 files)
+├── shinto_miraheze/            # Wiki editing bot scripts (~45 Python, 3 shell)
 ├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
 │   ├── reports/                # JSON run reports from QS submissions
 │   └── _site/                  # Generated QS dashboard pages
@@ -122,6 +123,7 @@ Generates and submits Wikidata property edits via the [QuickStatements API](http
 | `generate_p958_qualifiers.py` | Generates P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) |
 | `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 (determination method) qualifiers for P13723 (shrine ranking) |
 | `submit_daily_batch.py` | Submits atomic QS operations; writes JSON reports to `reports/` |
+| `test_wikidata_qualifier.py` | Applies P459 qualifiers to P13723 via Wikidata API directly (bypasses QuickStatements) |
 | `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
 
 Atomic files submitted daily:

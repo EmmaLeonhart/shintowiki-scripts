@@ -20,6 +20,7 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `wiki-cleanup.yml` | Main: runs all `shinto_miraheze/` scripts with state commits between chunks | 330 min |
 | `random-wait.yml` | Random 1–3600s delay (schedule-only, prevents thundering herd) | — |
 | `submit-quickstatements.yml` | Submits atomic QS operations to the API, commits run report | 30 min |
+| `test-wikidata-qualifier.yml` | Direct Wikidata API edits: applies P459 qualifiers to P13723 statements | 10 min |
 | `build-run-history.yml` | Final: rebuilds run history page from all report JSONs | 10 min |
 | `generate-pages.yml` | Separate: builds and deploys GitHub Pages site (daily 00:30 UTC) | 15 min |
 
@@ -120,6 +121,9 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `populate_namespace_layers.py` | MANUAL | Copies pages to Data: and Export: namespace layers. Gated behind `--enable-namespace-layers` flag. |
 | `debug_pairs.py` | MANUAL | Debug script for checking move starting points and targets. |
 | `manual_import_local.py` | MANUAL | One-shot local import of pre-downloaded XML files. |
+| `create_category_qid_redirects.py` | LEGACY | Creates `Q{QID}` mainspace redirects for Wikidata-linked categories. Full pass complete. |
+| `fix_dup_cat_links.py` | LEGACY | Fixes duplicate category links in page wikitext. |
+| `merge_by_ja_interwiki.py` | COMPLETE | Merged Japanese-named categories with English equivalents via jawiki interwiki resolution. 22 linked, 40 merged. |
 | `merge_move_histories.py` | COMPLETE | Merged revision histories for matched wiki move pairs. |
 
 ---
@@ -131,6 +135,7 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `generate_p958_qualifiers.py` | ACTIVE | Generates P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) statements. |
 | `generate_modern_shrine_ranking_qualifiers.py` | ACTIVE | Generates P459 (determination method) qualifiers for P13723 (shrine ranking). Also handles Phase 3 migration of P31/P1552 to P13723. |
 | `submit_daily_batch.py` | ACTIVE | Submits atomic QS operation files via QuickStatements API. Writes JSON run reports to `reports/`. Never exits non-zero — logs outcome and continues. |
+| `test_wikidata_qualifier.py` | ACTIVE | Applies P459 qualifiers to P13723 statements via the Wikidata API directly (bypasses QuickStatements). Up to 10 edits per run. |
 | `generate_run_history.py` | ACTIVE | Reads all `reports/*.json` and builds `_site/runs.html` with outcome badges and batch details. |
 
 ---

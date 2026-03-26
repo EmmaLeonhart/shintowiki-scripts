@@ -26,8 +26,9 @@ Automated QuickStatements generation and submission for Wikidata shrine property
 - Missing `QS_TOKEN` or `QS_USERNAME` results in a "skipped" outcome, not an error.
 
 ### Workflow integration
-This subdirectory's scripts are called by two GitHub Actions workflows:
+This subdirectory's scripts are called by these GitHub Actions workflows:
 1. `generate-quickstatements.yml` — pre-flight generation before wiki cleanup
 2. `submit-quickstatements.yml` — post-cleanup submission with report commit
-3. `build-run-history.yml` — final action: rebuilds the run history page
-4. `generate-pages.yml` — daily GitHub Pages build includes `_site/runs.html`
+3. `test-wikidata-qualifier.yml` — direct Wikidata API edits (P459 qualifiers on P13723, bypasses QS)
+4. `build-run-history.yml` — final action: rebuilds the run history page
+5. `generate-pages.yml` — daily GitHub Pages build includes `_site/runs.html`
