@@ -26,7 +26,7 @@ SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 QUALIFIER_PROPERTY = "P459"                    # determination method or standard
 QUALIFIER_VALUE = "Q712534"                    # modern system of ranked Shinto shrines
 TARGET_PROPERTY = "P13723"                     # shrine ranking
-MAX_EDITS = 10
+MAX_EDITS = 100
 
 
 def sparql_query(query):
