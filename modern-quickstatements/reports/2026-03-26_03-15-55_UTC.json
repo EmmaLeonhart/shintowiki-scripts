@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-03-26 03:15:55 UTC",
+  "outcome": "failed",
+  "batches": [
+    {
+      "file": "modern_shrine_ranking_qualifiers.txt",
+      "lines_available": 383,
+      "lines_submitted": 383,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p4656_jawiki_references.txt",
+      "lines_available": 2861,
+      "lines_submitted": 2861,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p958_qualifiers.txt",
+      "lines_available": 1254,
+      "lines_submitted": 1254,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "remove_shikinai_hiteisha.txt",
+      "lines_available": 2059,
+      "lines_submitted": 2059,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    }
+  ]
+}
