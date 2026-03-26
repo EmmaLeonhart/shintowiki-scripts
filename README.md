@@ -49,7 +49,7 @@ shintowiki-scripts/
 ├── generate_pages.py           # Generates the main GitHub Pages site
 ├── EmmaBot.wiki                # Wiki template for User:EmmaBot status updates
 └── docs: README.md, SCRIPTS.md, API.md, SHINTOWIKI_STRUCTURE.md,
-          HISTORY.md, VISION.md, TODO.md, DEVLOG.md
+          HISTORY.md, VISION.md, todo.md, DEVLOG.md
 ```
 
 ---
@@ -203,5 +203,5 @@ Scripts are designed for CI execution. For local testing, set `WIKI_USERNAME` an
 | [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) | Page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, categories, templates, talk pages |
 | [HISTORY.md](HISTORY.md) | Wiki development timeline and context |
 | [VISION.md](VISION.md) | Architecture plan and future direction |
-| [TODO.md](TODO.md) | Prioritized list of open tasks |
+| [todo.md](todo.md) | Prioritized list of open tasks |
 | [DEVLOG.md](DEVLOG.md) | Running log of all significant operations |

@@ -482,7 +482,7 @@ Created 153 category pages that had members but no page (showed up in Special:Wa
 - Moved all root-level scripts into `shinto_miraheze/`
 - Deleted `aelaki_miraheze/` (project abandoned)
 - Deleted `archive/` directory (544 files; all preserved in git history)
-- Added `TODO.md`, `HISTORY.md`, `DEVLOG.md` to repo
+- Added `todo.md`, `HISTORY.md`, `DEVLOG.md` to repo
 - Cleaned up README (removed speech-to-text dump, replaced with proper docs)
 
 ---
