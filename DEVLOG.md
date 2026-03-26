@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-26
+
+### Increase Wikidata step edit limits to 300
+**Workflow:** `wiki-cleanup.yml`
+**Status:** Complete
+
+Raised the per-run edit limit for all four Wikidata steps from 100 to 300: `generate_p11250_quickstatements`, `clean_p11250_quickstatements`, `tag_pages_without_wikidata`, and `clean_wikidata_cat_redirects`. The global `WIKI_EDIT_LIMIT` (used by all other steps) remains at 100. This speeds up Wikidata convergence without increasing load on the wiki itself.
+
+### Regenerate P459 missing qualifier quickstatements
+**File:** `p459_missing_qualifiers.txt`
+**Status:** Complete
+
+Regenerated the P459 qualifier quickstatements from a live SPARQL query. Down to 244 remaining unqualified P13723 statements (from 382 when the file was first created on 2026-03-25).
+
+### Fix case-sensitive TODO.md path for Linux CI
+**Script:** `update_bot_userpage_status.py`
+**Status:** Complete
+
+The bookkeeping step was failing on CI (Linux) because the script defaulted to `TODO.md` but git tracks the file as `todo.md`. Windows is case-insensitive so this worked locally but broke in CI. Fixed the default path to match what git tracks.
+
+---
+
 ## 2026-03-22
 
 ### TEMPORARY: Create shrine ranking article pages
