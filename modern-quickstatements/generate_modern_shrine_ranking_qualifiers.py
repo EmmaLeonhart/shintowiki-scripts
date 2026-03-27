@@ -14,7 +14,6 @@ import os
 import shutil
 import time
 import requests
-import time
 from datetime import datetime, timezone
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -55,6 +54,7 @@ MIGRATIONS = [
         "values": ["Q134917287", "Q134917288", "Q9610964"],
         "determined_by": "Q138640329",  # Engishiki ranking
         "output_file": "migrate_engishiki_ranking.txt",
+        "reference_source": "kokugakuin",
     },
     {
         "id": "gifu",
@@ -73,6 +73,7 @@ MIGRATIONS = [
         "values": ["Q10898274"],
         "determined_by": "Q908077",  # Association of Shinto Shrines
         "output_file": "migrate_beppyo_shrine.txt",
+        "reference_source": "jawiki",
     },
     {
         "id": "x_no_miya",
@@ -90,6 +91,7 @@ MIGRATIONS = [
         ],
         "determined_by": "Q134916677",  # X-no-miya
         "output_file": "migrate_x_no_miya.txt",
+        "reference_source": "jawiki",
     },
     {
         "id": "ritsuryo",
@@ -107,6 +109,14 @@ MIGRATIONS = [
         ],
         "determined_by": "Q135009120",  # Ritsuryō funding type
         "output_file": "migrate_ritsuryo_funding.txt",
+        "reference_source": "kokugakuin",
+        # Remove P31=Kanpei-sha from items that have specific funding types
+        # (per Wikidata bot request 2025-12-22)
+        "underspecified_removal": {
+            "condition_values": ["Q135009152", "Q135009205", "Q135009221", "Q135009132", "Q135009157"],
+            "remove_value": "Q135160338",  # Kanpei-sha
+            "remove_property": "P31",
+        },
     },
 ]
 
@@ -171,14 +181,48 @@ def snak_to_qs(snak):
     return None
 
 
-def claim_to_qs_lines(item_id, claim, determined_by):
+def fetch_jawiki_sitelinks(item_ids):
+    """Fetch Japanese Wikipedia sitelinks for items via the Wikidata API."""
+    sitelinks = {}
+    for i in range(0, len(item_ids), 50):
+        batch = item_ids[i:i + 50]
+        r = requests.get(
+            WIKIDATA_API,
+            params={
+                "action": "wbgetentities",
+                "ids": "|".join(batch),
+                "props": "sitelinks",
+                "sitefilter": "jawiki",
+                "format": "json",
+            },
+            headers={"User-Agent": HEADERS["User-Agent"]},
+            timeout=120,
+        )
+        r.raise_for_status()
+        entities = r.json().get("entities", {})
+        for eid, entity in entities.items():
+            jawiki = entity.get("sitelinks", {}).get("jawiki", {})
+            if jawiki:
+                title = jawiki["title"].replace(" ", "_")
+                url = f"https://ja.wikipedia.org/wiki/{title}"
+                sitelinks[eid] = ["S4656", f'"{url}"']
+        if i + 50 < len(item_ids):
+            time.sleep(1.5)
+    return sitelinks
+
+
+def claim_to_qs_lines(item_id, claim, determined_by, override_ref=None):
     """Convert a Wikidata claim to QS v1 lines migrating it to P13723.
 
     The new P13723 statement gets:
     - The original value
     - P459 (determination method or standard) qualifier with the appropriate ranking system
     - All original qualifiers preserved
-    - All original references preserved (flattened into one reference group per line)
+    - References: either override_ref (if provided) or original references preserved
+
+    Args:
+        override_ref: Optional list of reference parts (e.g. ["S13677", '"123"', "S248", "Q135159299"])
+                      to use instead of copying original references.
     """
     main_value = snak_to_qs(claim["mainsnak"])
     if not main_value:
@@ -194,6 +238,11 @@ def claim_to_qs_lines(item_id, claim, determined_by):
             val = snak_to_qs(qsnak)
             if val is not None:
                 parts.extend([prop, val])
+
+    # Use override reference if provided
+    if override_ref is not None:
+        parts.extend(override_ref)
+        return ["|".join(parts)]
 
     # Migrate references - each reference group becomes a separate QS line
     # First reference group goes on the main line, additional groups get their own lines
@@ -514,6 +563,23 @@ def generate_migration(migration):
         print(f"Fetching claim details ({len(items_values)} items)...")
         all_claims = fetch_claims_batch(list(items_values.keys()), source_prop)
 
+        # Fetch reference data based on reference_source
+        ref_source = migration.get("reference_source")
+        item_refs = {}
+        if ref_source == "kokugakuin":
+            print("Fetching Kokugakuin University IDs (P13677) for references...")
+            p13677_claims = fetch_claims_batch(list(items_values.keys()), "P13677")
+            for item_id, claims in p13677_claims.items():
+                if claims:
+                    val = snak_to_qs(claims[0]["mainsnak"])
+                    if val:
+                        item_refs[item_id] = ["S13677", val, "S248", "Q135159299"]
+            print(f"  Found P13677 for {len(item_refs)}/{len(items_values)} items")
+        elif ref_source == "jawiki":
+            print("Fetching Japanese Wikipedia sitelinks for references...")
+            item_refs = fetch_jawiki_sitelinks(list(items_values.keys()))
+            print(f"  Found jawiki sitelinks for {len(item_refs)}/{len(items_values)} items")
+
         # For P31 migrations, check which items already have P31=Q845945 (Shinto shrine)
         # so we can add it before removing the old P31 value
         items_have_shinto_shrine = set()
@@ -534,7 +600,9 @@ def generate_migration(migration):
                     if source_prop == "P31" and item_id not in items_have_shinto_shrine and item_id not in items_given_shinto_shrine:
                         add_lines.append(f"{item_id}|P31|Q845945")
                         items_given_shinto_shrine.add(item_id)
-                    add_lines.extend(claim_to_qs_lines(item_id, claim, determined_by))
+                    # Use override reference if available for this item
+                    override_ref = item_refs.get(item_id) if ref_source else None
+                    add_lines.extend(claim_to_qs_lines(item_id, claim, determined_by, override_ref=override_ref))
 
         with open(add_file, "w", encoding="utf-8") as f:
             for line in add_lines:
@@ -555,6 +623,40 @@ def generate_migration(migration):
             f.write(line + "\n")
     print(f"Written {len(remove_lines)} REMOVE lines to {remove_file}")
 
+    # Handle underspecified removals (e.g., remove P31=Kanpei-sha from items
+    # that have more specific funding types, per bot request pattern)
+    underspec = migration.get("underspecified_removal")
+    underspec_lines = 0
+    underspec_file = None
+    if underspec:
+        condition_values = underspec["condition_values"]
+        remove_value = underspec["remove_value"]
+        remove_prop = underspec.get("remove_property", "P31")
+        cond_sparql = " ".join(f"wd:{v}" for v in condition_values)
+
+        uquery = f"""
+        SELECT DISTINCT ?item WHERE {{
+          VALUES ?condValue {{ {cond_sparql} }}
+          ?item wdt:{remove_prop} ?condValue .
+          ?item wdt:{remove_prop} wd:{remove_value} .
+        }}
+        ORDER BY ?item
+        """
+
+        print(f"Fetching items for underspecified removal ({remove_prop}={remove_value})...")
+        uresults = fetch_sparql(uquery)
+        ulines = []
+        for r in uresults:
+            item_id = qid(r["item"]["value"])
+            ulines.append(f"-{item_id}|{remove_prop}|{remove_value}")
+
+        underspec_file = f"{base}_underspecified_remove.txt"
+        with open(underspec_file, "w", encoding="utf-8") as f:
+            for line in ulines:
+                f.write(line + "\n")
+        underspec_lines = len(ulines)
+        print(f"Written {underspec_lines} underspecified removal lines to {underspec_file}")
+
     return {
         "name": name,
         "description": migration["description"],
@@ -567,6 +669,8 @@ def generate_migration(migration):
         "remove_file": remove_file,
         "add_lines": len(add_lines) if items_values else 0,
         "remove_lines": len(remove_lines),
+        "underspec_file": underspec_file,
+        "underspec_lines": underspec_lines,
     }
 
 
@@ -835,6 +939,19 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
         remove_batch = read_first_n_lines(m["remove_file"])
         remove_escaped = html_escape(remove_batch)
         remove_shown = min(m["remove_lines"], MAX_LINES_PER_BATCH)
+
+        # Underspecified removal section (e.g., remove Kanpei-sha from items with specific types)
+        underspec_section = ""
+        if m.get("underspec_file") and m.get("underspec_lines", 0) > 0:
+            underspec_batch = read_first_n_lines(m["underspec_file"])
+            underspec_escaped = html_escape(underspec_batch)
+            underspec_shown = min(m["underspec_lines"], MAX_LINES_PER_BATCH)
+            underspec_section = f"""
+      <h4>Step 3: Remove underspecified types (safe to run independently)</h4>
+      <p>{underspec_shown} of {m["underspec_lines"]} total lines
+         &mdash; <a href="{m["underspec_file"]}">Download all</a></p>
+      <textarea class="qs-box" rows="6" readonly onclick="this.select()">{underspec_escaped}</textarea>"""
+
         migration_sections += f"""
     <div class="category">
       <h3>{m["name"]}</h3>
@@ -856,6 +973,7 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
       <p>{remove_shown} of {m["remove_lines"]} total lines
          &mdash; <a href="{m["remove_file"]}">Download all</a></p>
       <textarea class="qs-box" rows="6" readonly onclick="this.select()">{remove_escaped}</textarea>
+      {underspec_section}
     </div>"""
 
     html = f"""<!DOCTYPE html>
@@ -986,6 +1104,10 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
                 if os.path.exists(fpath):
                     with open(fpath, "r", encoding="utf-8") as f:
                         lines.extend(line.strip() for line in f if line.strip())
+            # Include underspecified removal lines
+            if m.get("underspec_file") and os.path.exists(m["underspec_file"]):
+                with open(m["underspec_file"], "r", encoding="utf-8") as f:
+                    lines.extend(line.strip() for line in f if line.strip())
 
     # Always include P4656 Japanese Wikipedia references
     p4656_count = 0
@@ -1111,6 +1233,8 @@ def main():
     for m in migration_stats:
         migration_files.append(m["add_file"])
         migration_files.append(m["remove_file"])
+        if m.get("underspec_file"):
+            migration_files.append(m["underspec_file"])
     all_files = [p459_stats["output_file"], p4656_stats["output_file"], hiteisha_stats["output_file"]] + migration_files + [prop_stats["output_file"]]
     # Include P958 files if they exist
     for p958_file in ["p958_qualifiers.txt", "p958_manual_review.txt"]:
