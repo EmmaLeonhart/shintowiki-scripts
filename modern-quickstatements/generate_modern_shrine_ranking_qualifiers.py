@@ -12,6 +12,7 @@ import sys
 import json
 import os
 import shutil
+import time
 import requests
 import time
 from datetime import datetime, timezone
@@ -110,16 +111,22 @@ MIGRATIONS = [
 ]
 
 
-def fetch_sparql(query):
-    """Run a SPARQL query against Wikidata."""
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers=HEADERS,
-        timeout=180,
-    )
-    r.raise_for_status()
-    return r.json()["results"]["bindings"]
+def fetch_sparql(query, retries=3):
+    """Run a SPARQL query against Wikidata, retrying on 429 rate-limit errors."""
+    for attempt in range(retries):
+        r = requests.get(
+            SPARQL_ENDPOINT,
+            params={"query": query, "format": "json"},
+            headers=HEADERS,
+            timeout=180,
+        )
+        if r.status_code == 429 and attempt < retries - 1:
+            wait = 30 * (attempt + 1)
+            print(f"  SPARQL 429 rate-limited, waiting {wait}s (attempt {attempt + 1}/{retries})...")
+            time.sleep(wait)
+            continue
+        r.raise_for_status()
+        return r.json()["results"]["bindings"]
 
 
 def qid(uri):
