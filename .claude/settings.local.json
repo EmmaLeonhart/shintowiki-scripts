@@ -161,7 +161,8 @@
       "Bash(wc -l *.py)",
       "Bash(find /c/Users/Immanuelle/Documents/Github/shintowiki-scripts -type f \\\\\\(-name *.log -o -name *.errors -o -name *.state \\\\\\))",
       "Bash(gh repo:*)",
-      "Bash(gh workflow:*)"
+      "Bash(gh workflow:*)",
+      "Bash(wc:*)"
     ],
     "deny": [],
     "ask": []
