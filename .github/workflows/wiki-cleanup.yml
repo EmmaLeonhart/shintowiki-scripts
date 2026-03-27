@@ -152,32 +152,36 @@ jobs:
         run: shinto_miraheze/commit_state.sh "Structural Fixes"
 
       # ════════════════════════════════════════
-      #  Chunk 3: Wikidata
+      #  Chunk 3: Wikidata (paused until May 2026)
       # ════════════════════════════════════════
 
       - name: "Wikidata: generate_p11250_quickstatements"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
+          if [ "$(date +%m)" -lt 5 ]; then echo "Skipped (paused until May)"; exit 0; fi
           shinto_miraheze/run_step.sh "Core Loop: generate_p11250_quickstatements" \
-            python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_p11250_quickstatements"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
+          if [ "$(date +%m)" -lt 5 ]; then echo "Skipped (paused until May)"; exit 0; fi
           shinto_miraheze/run_step.sh "Core Loop: clean_p11250_quickstatements" \
-            python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --max-checks 300 --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --max-checks 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: tag_pages_without_wikidata"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
+          if [ "$(date +%m)" -lt 5 ]; then echo "Skipped (paused until May)"; exit 0; fi
           shinto_miraheze/run_step.sh "Core Loop: tag_pages_without_wikidata" \
-            python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_wikidata_cat_redirects"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
+          if [ "$(date +%m)" -lt 5 ]; then echo "Skipped (paused until May)"; exit 0; fi
           shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
-            python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 300 --run-tag "${RUN_TAG}"
+            python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Wikidata"
         if: always() && steps.*.outcome != 'cancelled'
