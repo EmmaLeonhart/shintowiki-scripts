@@ -29,6 +29,10 @@ TARGET_PROPERTY = "P13723"                     # shrine ranking
 MAX_EDITS = 100
 
 
+class RateLimitError(Exception):
+    """Raised when a 429 Too Many Requests response is received."""
+
+
 def sparql_query(query):
     """Run a SPARQL query against Wikidata."""
     r = requests.get(
@@ -37,6 +41,9 @@ def sparql_query(query):
         headers={"User-Agent": UA},
         timeout=60,
     )
+    if r.status_code == 429:
+        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
+        raise RateLimitError(f"429 Too Many Requests: {r.url}")
     r.raise_for_status()
     return r.json()["results"]["bindings"]
 
@@ -81,6 +88,9 @@ def get_statement_guid(session, item_qid, rank_value_qid):
         },
         timeout=60,
     )
+    if r.status_code == 429:
+        print(f"FATAL: 429 Too Many Requests from Wikidata API — bailing to avoid further rate-limit violations")
+        raise RateLimitError(f"429 Too Many Requests: {r.url}")
     r.raise_for_status()
     data = r.json()
 
@@ -181,6 +191,9 @@ def set_qualifier(session, csrf, statement_guid, property_id, value_qid):
         },
         timeout=60,
     )
+    if r.status_code == 429:
+        print(f"FATAL: 429 Too Many Requests from Wikidata API — bailing to avoid further rate-limit violations")
+        raise RateLimitError(f"429 Too Many Requests: {r.url}")
     r.raise_for_status()
     result = r.json()
 

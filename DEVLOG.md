@@ -4,6 +4,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-28
+
+### Bail-on-429 for all Wikidata scripts
+**Scripts:** `test_wikidata_qualifier.py`, `generate_p958_qualifiers.py`, `generate_modern_shrine_ranking_qualifiers.py`
+**Status:** Complete
+
+We've been seeing 429 Too Many Requests from Wikidata. The root cause is unclear — may be cumulative load from multiple scripts hitting the SPARQL endpoint and Wikidata API in the same pipeline run, or external factors.
+
+Previously, `generate_p958_qualifiers.py` and `generate_modern_shrine_ranking_qualifiers.py` would retry on 429 with backoff (30-90s waits), and `test_wikidata_qualifier.py` had **no** 429 handling at all. Retrying 429s can worsen rate-limit situations.
+
+Changed all three scripts to match the `generate_p11250_quickstatements.py` pattern: on any 429, raise `RateLimitError` and terminate immediately. This lets us see the failure cleanly in CI logs and do diagnostics, rather than burning through retry budgets and potentially deepening the rate limit.
+
+Wikidata chunk steps are already at 50 edits/run and paused until May, so the main exposure is `test_wikidata_qualifier.py` (100 direct API edits) and the QS generators (`generate_p958_qualifiers.py`, `generate_modern_shrine_ranking_qualifiers.py`) which query SPARQL.
+
+---
+
 ## 2026-03-26
 
 ### Increase Wikidata step edit limits to 300

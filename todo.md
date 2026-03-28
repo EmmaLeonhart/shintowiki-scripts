@@ -10,6 +10,8 @@ The GitHub Actions pipeline (8 reusable workflows orchestrated by `.github/workf
 
 Dashboard: [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/) — includes [run history](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) for QS submissions.
 
+**429 policy (as of 2026-03-28):** All scripts that hit Wikidata (SPARQL or API) bail immediately on HTTP 429 — no retries. This avoids worsening rate-limit situations. Check CI logs for `RateLimitError` if a step fails unexpectedly.
+
 ### Currently automated (cleanup loop)
 
 These run automatically every 24 hours via GitHub Actions. No manual action needed unless something breaks.
@@ -44,8 +46,8 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
 
 **Wikidata (QuickStatements + direct API)**:
-- **P958 qualifiers** — `generate_p958_qualifiers.py` + `submit_daily_batch.py`: generates and submits P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) via QuickStatements API.
-- **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~244 remaining as of 2026-03-26 — should complete within a few days.
+- **P958 qualifiers** — `generate_p958_qualifiers.py` + `submit_daily_batch.py`: generates and submits P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) via QuickStatements API. Bails immediately on 429 (as of 2026-03-28).
+- **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~244 remaining as of 2026-03-26 — should complete within a few days. Bails immediately on 429 (as of 2026-03-28).
 
 **Temporary** (remove after completion):
 - **Shrine ranking page creation** — `create_shrine_ranking_pages.py`: creates article pages for subcategories of `[[Category:Shrine rankings needing pages]]`. Remove from workflow after all 21 pages exist (5 already existed, 16 to create).

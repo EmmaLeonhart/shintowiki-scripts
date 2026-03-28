@@ -121,22 +121,23 @@ MIGRATIONS = [
 ]
 
 
-def fetch_sparql(query, retries=3):
-    """Run a SPARQL query against Wikidata, retrying on 429 rate-limit errors."""
-    for attempt in range(retries):
-        r = requests.get(
-            SPARQL_ENDPOINT,
-            params={"query": query, "format": "json"},
-            headers=HEADERS,
-            timeout=180,
-        )
-        if r.status_code == 429 and attempt < retries - 1:
-            wait = 30 * (attempt + 1)
-            print(f"  SPARQL 429 rate-limited, waiting {wait}s (attempt {attempt + 1}/{retries})...")
-            time.sleep(wait)
-            continue
-        r.raise_for_status()
-        return r.json()["results"]["bindings"]
+class RateLimitError(Exception):
+    """Raised when a 429 Too Many Requests response is received."""
+
+
+def fetch_sparql(query):
+    """Run a SPARQL query against Wikidata. Bails on 429 to avoid worsening rate limits."""
+    r = requests.get(
+        SPARQL_ENDPOINT,
+        params={"query": query, "format": "json"},
+        headers=HEADERS,
+        timeout=180,
+    )
+    if r.status_code == 429:
+        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
+        raise RateLimitError(f"429 Too Many Requests: {r.url}")
+    r.raise_for_status()
+    return r.json()["results"]["bindings"]
 
 
 def qid(uri):
