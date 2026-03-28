@@ -45,7 +45,7 @@ def sparql_query(query):
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},
         headers=HEADERS,
-        timeout=120,
+        timeout=60,
     )
     if resp.status_code == 429:
         print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
