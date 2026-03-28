@@ -65,7 +65,7 @@ def submit_batch(lines, token, username, batch_name):
                 "batchname": batch_name,
                 "compress": "1",
             },
-            headers={"User-Agent": "ModernQuickstatements/1.0 (daily cron batch)"},
+            headers={"User-Agent": "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"},
             timeout=120,
         )
     except Exception as e:

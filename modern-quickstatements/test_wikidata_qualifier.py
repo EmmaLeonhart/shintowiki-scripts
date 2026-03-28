@@ -19,7 +19,7 @@ import time
 import requests
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = "ShintoShrineQualifierTest/1.0 (User:EmmaBot; shinto.miraheze.org)"
+UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
 # Qualifier to add
