@@ -10,7 +10,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,6 +26,7 @@ jobs:
       - name: Generate QuickStatements files
         working-directory: modern-quickstatements
         run: |
-          python generate_p958_qualifiers.py
           python generate_modern_shrine_ranking_qualifiers.py
+          sleep 10
+          python generate_p958_qualifiers.py
           python fetch_p11250_from_wiki.py

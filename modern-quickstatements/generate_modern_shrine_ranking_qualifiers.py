@@ -132,15 +132,15 @@ _last_sparql_time = 0.0
 def fetch_sparql(query):
     """Run a SPARQL query against Wikidata. Bails on 429 to avoid worsening rate limits."""
     global _last_sparql_time
-    # Throttle: at least 3s between SPARQL requests
+    # Throttle: at least 5s between SPARQL requests to avoid silent rate limiting
     elapsed = time.time() - _last_sparql_time
-    if elapsed < 3:
-        time.sleep(3 - elapsed)
+    if elapsed < 5:
+        time.sleep(5 - elapsed)
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},
         headers=HEADERS,
-        timeout=180,
+        timeout=60,
     )
     _last_sparql_time = time.time()
     if r.status_code == 429:
