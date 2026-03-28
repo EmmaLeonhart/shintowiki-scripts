@@ -34,25 +34,23 @@ MANUAL_REVIEW_FILE = "p958_manual_review.txt"
 SUMMARY_FILE = "p958_summary.json"
 
 
+class RateLimitError(Exception):
+    """Raised when a 429 Too Many Requests response is received."""
+
+
 def sparql_query(query):
     """Run a SPARQL query and return results."""
-    for attempt in range(3):
-        try:
-            resp = requests.get(
-                SPARQL_ENDPOINT,
-                params={"query": query, "format": "json"},
-                headers=HEADERS,
-                timeout=120,
-            )
-            resp.raise_for_status()
-            return resp.json()["results"]["bindings"]
-        except requests.exceptions.HTTPError as e:
-            if resp.status_code == 429 and attempt < 2:
-                wait = 30 * (attempt + 1)
-                print(f"  SPARQL rate limited, waiting {wait}s...")
-                time.sleep(wait)
-            else:
-                raise
+    resp = requests.get(
+        SPARQL_ENDPOINT,
+        params={"query": query, "format": "json"},
+        headers=HEADERS,
+        timeout=120,
+    )
+    if resp.status_code == 429:
+        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
+        raise RateLimitError(f"429 Too Many Requests: {resp.url}")
+    resp.raise_for_status()
+    return resp.json()["results"]["bindings"]
 
 
 def get_entities_batch(qids):
@@ -61,30 +59,23 @@ def get_entities_batch(qids):
     for i in range(0, len(qids), 50):
         batch = qids[i:i+50]
         ids_str = "|".join(batch)
-        for attempt in range(5):
-            try:
-                resp = requests.get(
-                    WIKIDATA_API,
-                    params={
-                        "action": "wbgetentities",
-                        "ids": ids_str,
-                        "props": "claims",
-                        "format": "json",
-                    },
-                    headers=HEADERS,
-                    timeout=60,
-                )
-                resp.raise_for_status()
-                data = resp.json().get("entities", {})
-                entities.update(data)
-                break
-            except requests.exceptions.HTTPError as e:
-                if resp.status_code == 429 and attempt < 4:
-                    wait = 15 * (attempt + 1)
-                    print(f"  API rate limited, waiting {wait}s...")
-                    time.sleep(wait)
-                else:
-                    raise
+        resp = requests.get(
+            WIKIDATA_API,
+            params={
+                "action": "wbgetentities",
+                "ids": ids_str,
+                "props": "claims",
+                "format": "json",
+            },
+            headers=HEADERS,
+            timeout=60,
+        )
+        if resp.status_code == 429:
+            print(f"FATAL: 429 Too Many Requests from Wikidata API — bailing to avoid further rate-limit violations")
+            raise RateLimitError(f"429 Too Many Requests: {resp.url}")
+        resp.raise_for_status()
+        data = resp.json().get("entities", {})
+        entities.update(data)
         # Pause between batches
         if i + 50 < len(qids):
             time.sleep(2)
