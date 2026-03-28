@@ -37,7 +37,7 @@ THROTTLE = 1.5
 
 QS_PAGE_TITLE = "QuickStatements/P11250"
 
-USER_AGENT = "P11250CleanBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
+USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
 

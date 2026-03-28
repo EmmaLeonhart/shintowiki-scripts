@@ -22,8 +22,9 @@ MAX_LINES_PER_BATCH = 200  # Budget ~200 QuickStatements per day per file
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
+USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 HEADERS = {
-    "User-Agent": "ModernQuickstatements/1.0 (shrine ranking migration)",
+    "User-Agent": USER_AGENT,
     "Accept": "application/sparql-results+json",
 }
 
@@ -125,14 +126,23 @@ class RateLimitError(Exception):
     """Raised when a 429 Too Many Requests response is received."""
 
 
+_last_sparql_time = 0.0
+
+
 def fetch_sparql(query):
     """Run a SPARQL query against Wikidata. Bails on 429 to avoid worsening rate limits."""
+    global _last_sparql_time
+    # Throttle: at least 3s between SPARQL requests
+    elapsed = time.time() - _last_sparql_time
+    if elapsed < 3:
+        time.sleep(3 - elapsed)
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},
         headers=HEADERS,
         timeout=180,
     )
+    _last_sparql_time = time.time()
     if r.status_code == 429:
         print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
         raise RateLimitError(f"429 Too Many Requests: {r.url}")

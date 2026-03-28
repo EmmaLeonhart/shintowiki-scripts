@@ -24,8 +24,9 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
+USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 HEADERS = {
-    "User-Agent": "ModernQuickstatements/1.0 (P958 qualifier bot)",
+    "User-Agent": USER_AGENT,
     "Accept": "application/sparql-results+json",
 }
 

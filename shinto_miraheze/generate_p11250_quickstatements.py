@@ -49,7 +49,7 @@ WD_LINK_RE = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
 # Match QS lines like: Q12345|P11250|"shinto:Page Name"
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
 
-USER_AGENT = "ShintoBotP11250/1.0 (User:EmmaBot; shinto.miraheze.org)"
+USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
 # Retry session for transient network errors (502, 503, 504, timeouts)
 # NOTE: 429 (Too Many Requests) is deliberately excluded — it triggers
