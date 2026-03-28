@@ -28,6 +28,7 @@ jobs:
         run: |
           python generate_p958_qualifiers.py
           python generate_modern_shrine_ranking_qualifiers.py
+          python fetch_p11250_from_wiki.py
 
       - name: Submit daily batch via QuickStatements API
         working-directory: modern-quickstatements

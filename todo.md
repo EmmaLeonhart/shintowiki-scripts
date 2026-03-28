@@ -46,6 +46,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 - **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
 
 **Wikidata (QuickStatements + direct API)**:
+- **P11250 Miraheze links** — `fetch_p11250_from_wiki.py` + `submit_daily_batch.py`: fetches P11250 QS lines from `[[QuickStatements/P11250]]` wiki page and submits via QuickStatements API.
 - **P958 qualifiers** — `generate_p958_qualifiers.py` + `submit_daily_batch.py`: generates and submits P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) via QuickStatements API. Bails immediately on 429 (as of 2026-03-28).
 - **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~244 remaining as of 2026-03-26 — should complete within a few days. Bails immediately on 429 (as of 2026-03-28).
 

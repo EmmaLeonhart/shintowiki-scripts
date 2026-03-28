@@ -30,6 +30,7 @@ ATOMIC_FILES = [
     "p4656_jawiki_references.txt",            # Add P4656 ja.wiki references to modern P13723
     "p958_qualifiers.txt",                    # Add P958 section qualifiers to P13677
     "remove_shikinai_hiteisha.txt",           # Remove P31=Q135026601 (Shikinai Hiteisha)
+    "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
 ]
 
 

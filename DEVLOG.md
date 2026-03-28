@@ -6,6 +6,12 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-03-28
 
+### Submit P11250 QuickStatements via daily batch
+**Script:** `fetch_p11250_from_wiki.py`
+**Status:** Complete
+
+P11250 (Miraheze article ID) QuickStatements were previously only written to a wiki page (`QuickStatements/P11250`) but never submitted automatically. Added `fetch_p11250_from_wiki.py` which reads the wiki page (public, no auth) and writes a local `p11250_miraheze_links.txt` for `submit_daily_batch.py` to pick up. Added to both the pre-flight generation and submission workflows.
+
 ### Bail-on-429 for all Wikidata scripts
 **Scripts:** `test_wikidata_qualifier.py`, `generate_p958_qualifiers.py`, `generate_modern_shrine_ranking_qualifiers.py`
 **Status:** Complete
