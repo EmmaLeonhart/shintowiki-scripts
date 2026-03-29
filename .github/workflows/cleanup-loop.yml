@@ -23,6 +23,12 @@ jobs:
   generate-quickstatements:
     uses: ./.github/workflows/generate-quickstatements.yml
 
+  # Build pages right after SPARQL generation (runs in parallel with cleanup)
+  generate-pages:
+    needs: [generate-quickstatements]
+    if: always()
+    uses: ./.github/workflows/generate-pages.yml
+
   cleanup:
     needs: generate-quickstatements
     if: always()
@@ -56,8 +62,3 @@ jobs:
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 
-  # Rebuild GitHub Pages after everything completes
-  generate-pages:
-    needs: [build-run-history]
-    if: always()
-    uses: ./.github/workflows/generate-pages.yml

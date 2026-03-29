@@ -37,3 +37,10 @@ jobs:
           name: quickstatements-files
           path: modern-quickstatements/*.txt
           retention-days: 1
+
+      - name: Upload generated site
+        uses: actions/upload-artifact@v4
+        with:
+          name: quickstatements-site
+          path: modern-quickstatements/_site/
+          retention-days: 1
