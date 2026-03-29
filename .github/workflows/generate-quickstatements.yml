@@ -30,3 +30,10 @@ jobs:
           sleep 10
           python generate_p958_qualifiers.py
           python fetch_p11250_from_wiki.py
+
+      - name: Upload generated QS files
+        uses: actions/upload-artifact@v4
+        with:
+          name: quickstatements-files
+          path: modern-quickstatements/*.txt
+          retention-days: 1

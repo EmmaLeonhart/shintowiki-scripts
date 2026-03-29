@@ -6,6 +6,9 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-03-28
 
+### Stop submit-quickstatements from regenerating SPARQL queries
+The submit job was re-running all SPARQL generators (22+ queries) even though the generate job already produced the `.txt` files. This doubled SPARQL load and caused a `ReadTimeout` on the second run. Fixed by uploading generated files as artifacts from the generate job and downloading them in the submit job. No more redundant SPARQL queries.
+
 ### Submit P11250 QuickStatements via daily batch
 **Script:** `fetch_p11250_from_wiki.py`
 **Status:** Complete
