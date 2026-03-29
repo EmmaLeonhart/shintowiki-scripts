@@ -62,3 +62,11 @@ jobs:
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 
+  # Fallback: if QS submission failed, apply edits directly via Wikidata API
+  # This is the absolute last step — random 1-5 min intervals, no rush
+  direct-daily-edits:
+    needs: [submit-quickstatements, build-run-history]
+    if: always() && needs.submit-quickstatements.result == 'failure'
+    uses: ./.github/workflows/direct-daily-edits.yml
+    secrets: inherit
+

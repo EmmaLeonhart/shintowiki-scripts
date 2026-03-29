@@ -1,0 +1,38 @@
+name: Direct Wikidata API Edits
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download generated QS files
+        uses: actions/download-artifact@v4
+        with:
+          name: quickstatements-files
+          path: modern-quickstatements
+        continue-on-error: true
+
+      - name: Execute edits via Wikidata API
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python direct_daily_edits.py

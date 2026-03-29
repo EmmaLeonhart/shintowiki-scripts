@@ -31,6 +31,8 @@ jobs:
         continue-on-error: true
 
       - name: Submit daily batch via QuickStatements API
+        id: qs-submit
+        continue-on-error: true
         working-directory: modern-quickstatements
         env:
           QS_TOKEN: ${{ secrets.QS_TOKEN }}
@@ -38,6 +40,7 @@ jobs:
         run: python submit_daily_batch.py
 
       - name: Commit and push run report
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
