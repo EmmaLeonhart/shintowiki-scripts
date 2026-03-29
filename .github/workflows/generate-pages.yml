@@ -29,15 +29,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Download QS site from generate step
-        uses: actions/download-artifact@v4
-        with:
-          name: quickstatements-site
-          path: modern-quickstatements/_site
-        continue-on-error: true
-
-      - name: "Fallback: regenerate QS site if artifact missing"
-        if: hashFiles('modern-quickstatements/_site/index.html') == ''
+      - name: Generate QS site
         working-directory: modern-quickstatements
         run: |
           python generate_modern_shrine_ranking_qualifiers.py
