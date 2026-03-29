@@ -10,7 +10,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,18 +23,31 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate QuickStatements files
+      - name: Generate shrine ranking QS
+        working-directory: modern-quickstatements
+        run: python generate_modern_shrine_ranking_qualifiers.py
+
+      - name: Generate P958 QS
         working-directory: modern-quickstatements
         run: |
-          python generate_modern_shrine_ranking_qualifiers.py
           sleep 10
           python generate_p958_qualifiers.py
-          python fetch_p11250_from_wiki.py
+
+      - name: Fetch P11250 from wiki
+        working-directory: modern-quickstatements
+        run: python fetch_p11250_from_wiki.py
 
       - name: Upload generated QS files
         uses: actions/upload-artifact@v4
         with:
           name: quickstatements-files
           path: modern-quickstatements/*.txt
+          retention-days: 1
+
+      - name: Upload generated QS site
+        uses: actions/upload-artifact@v4
+        with:
+          name: quickstatements-site
+          path: modern-quickstatements/_site/
           retention-days: 1
 
