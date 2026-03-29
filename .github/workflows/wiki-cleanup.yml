@@ -272,36 +272,36 @@ jobs:
       - name: "Deprecated: fix_erroneous_qid_category_links"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
-          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: fix_erroneous_qid_category_links" \
             python3 shinto_miraheze/fix_erroneous_qid_category_links.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Deprecated: remove_legacy_cat_templates"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
-          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: remove_legacy_cat_templates" \
             python3 shinto_miraheze/remove_legacy_cat_templates.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Deprecated: move_categories"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
-          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: move_categories" \
             python3 shinto_miraheze/move_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Deprecated: create_japanese_category_qid_redirects"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
-          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: create_japanese_category_qid_redirects" \
             python3 shinto_miraheze/create_japanese_category_qid_redirects.py
 
       - name: "Commit state: Deprecated"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
-          if [ "$(date +%u)" != "7" ]; then echo "Skipped (not Sunday)"; exit 0; fi
-          shinto_miraheze/commit_state.sh "Deprecated (weekly)"
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
+          shinto_miraheze/commit_state.sh "Deprecated (monthly)"
 
       # ════════════════════════════════════════
       #  Bookkeeping: END
