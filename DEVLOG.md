@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-03-29
+
+### Re-add retry with exponential backoff for SPARQL 429s
+**Scripts:** `generate_modern_shrine_ranking_qualifiers.py`, `generate_p958_qualifiers.py`
+**Status:** Complete
+
+The bail-immediately-on-429 policy (2026-03-28) turned out to be too aggressive for the QS generators. The `generate-quickstatements` job makes 20+ SPARQL queries across all phases/migrations; by the Ritsuryō migration phase, the endpoint reliably returns 429. A single transient 429 would kill the entire pipeline.
+
+Reverted these two scripts to retry with exponential backoff (30/60/120/240s waits, 4 retries max) and increased the base throttle from 5s to 10s between SPARQL requests. `test_wikidata_qualifier.py` still bails immediately on 429 since it hits the Wikidata API (not SPARQL) and retrying API writes is riskier.
+
+The fix (355582e) hasn't been tested in CI yet — the run that used it (23704115295) was cancelled before reaching the SPARQL-heavy phases. The prior failure (23703150061) ran on the pre-fix commit.
+
+### Fix stale artifact in pages build
+**Workflow:** `generate-pages.yml`
+**Status:** Complete
+
+The pages build was downloading a stale artifact from the generate job instead of regenerating QS files fresh. Fixed to always regenerate in the pages build step.
+
+---
+
 ## 2026-03-28
 
 ### Stop submit-quickstatements from regenerating SPARQL queries
