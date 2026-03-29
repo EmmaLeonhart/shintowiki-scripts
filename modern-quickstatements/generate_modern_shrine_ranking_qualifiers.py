@@ -31,19 +31,8 @@ HEADERS = {
 # Phase 0: Property-level edits to P13723 itself
 # Broadens P13723 from "modern shrine ranking" to general "shrine ranking"
 PROPERTY_EDITS_FILE = "edit_p13723_property.txt"
-PROPERTY_EDITS = [
-    'P13723|Len|"shrine ranking"',
-    'P13723|Lfr|"classement des sanctuaires"',
-    'P13723|Lid|"peringkat kuil Shinto"',
-    'P13723|Lja|"神社の社格"',
-    'P13723|Lnl|"schrijnrang"',
-    'P13723|Ltok|"nanpa pi tomo sewi"',
-    'P13723|Lca|"rang de santuaris"',
-    'P13723|Lmk|"ранг на светилиште"',
-    '-P13723|P1629|Q712534',
-    'P13723|P1629|Q10444029',
-    'P13723|P2302|Q21510856|P459',
-]
+# Property edits already applied — cleared 2026-03-29
+PROPERTY_EDITS = []
 
 # Migration categories: old P31/P1552 values → P13723 with P459 qualifier
 MIGRATIONS = [
@@ -935,8 +924,6 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
     # Read first 200 lines for copy-paste boxes
     p459_batch = read_first_n_lines(p459_stats["output_file"])
     p459_batch_escaped = html_escape(p459_batch)
-    prop_batch = read_first_n_lines(prop_stats["output_file"])
-    prop_batch_escaped = html_escape(prop_batch)
 
     # P958 section from separate generator
     p958_summary = load_p958_summary()
@@ -1053,14 +1040,7 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
      &mdash; <a href="{p459_stats["output_file"]}">Download all</a></p>
   <textarea class="qs-box" rows="10" readonly onclick="this.select()">{p459_batch_escaped}</textarea>
 
-  <h2>Phase 2: Edit P13723 property definition</h2>
-  <p>Broaden <code>P13723</code> from &ldquo;modern shrine ranking&rdquo; to general &ldquo;shrine ranking&rdquo;.
-     Updates labels, changes subject type constraint from <code>Q712534</code> to <code>Q10444029</code>,
-     and adds <code>P459</code> qualifier constraint.</p>
-  <p>{prop_stats["lines"]} lines &mdash; <a href="{prop_stats["output_file"]}">Download all</a></p>
-  <textarea class="qs-box" rows="6" readonly onclick="this.select()">{prop_batch_escaped}</textarea>
-
-  <h2>Phase 3: Migrate old properties to P13723</h2>
+  <h2>Migrate old properties to P13723</h2>
   <p>Migrate <code>P31</code> / <code>P1552</code> shrine ranking values to <code>P13723</code>,
      preserving all existing qualifiers and references, and adding the appropriate
      <code>P459</code> (determination method or standard) qualifier.</p>
