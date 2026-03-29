@@ -1223,24 +1223,65 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
 
 
 def main():
+    rate_limited = False
+
     # Phase 1: P459 qualifiers for existing P13723 statements
-    p459_stats = generate_p459_qualifiers()
+    try:
+        p459_stats = generate_p459_qualifiers()
+    except RateLimitError:
+        print("WARNING: Rate-limited during P459 phase, skipping remaining work", flush=True)
+        p459_stats = {"output_file": "modern_shrine_ranking_qualifiers.txt", "added": 0, "skipped": 0, "total": 0}
+        rate_limited = True
 
     # Phase 2: Property-level edits to P13723 (after modern qualifiers, before migrations)
-    prop_stats = generate_property_edits()
+    try:
+        prop_stats = generate_property_edits() if not rate_limited else {"output_file": "edit_p13723_property.txt", "lines": 0}
+    except RateLimitError:
+        print("WARNING: Rate-limited during property edits phase, skipping", flush=True)
+        prop_stats = {"output_file": "edit_p13723_property.txt", "lines": 0}
+        rate_limited = True
 
     # Remove P31=Q135026601 (Shikinai Hiteisha) statements
-    hiteisha_stats = generate_hiteisha_removals()
+    try:
+        hiteisha_stats = generate_hiteisha_removals() if not rate_limited else {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
+    except RateLimitError:
+        print("WARNING: Rate-limited during hiteisha removals, skipping", flush=True)
+        hiteisha_stats = {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
+        rate_limited = True
 
     # P4656: Add Japanese Wikipedia references to modern-qualified P13723 statements
-    p4656_stats = generate_p4656_references()
+    try:
+        p4656_stats = generate_p4656_references() if not rate_limited else {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
+    except RateLimitError:
+        print("WARNING: Rate-limited during P4656 phase, skipping", flush=True)
+        p4656_stats = {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
+        rate_limited = True
 
     # Phase 3: Migrate old P31/P1552 values to P13723
     migration_stats = []
     for migration in MIGRATIONS:
-        stats = generate_migration(migration)
-        migration_stats.append(stats)
-        time.sleep(2)  # Be nice to SPARQL endpoint between categories
+        name = migration["name"]
+        base = migration["output_file"].rsplit(".", 1)[0]
+        add_file = f"{base}_add.txt"
+        remove_file = f"{base}_remove.txt"
+        placeholder = {
+            "name": name, "add_file": add_file, "remove_file": remove_file,
+            "total": 0, "done": 0, "to_migrate": 0, "add_lines": 0, "remove_lines": 0,
+        }
+        if rate_limited:
+            migration_stats.append(placeholder)
+            continue
+        try:
+            stats = generate_migration(migration)
+            migration_stats.append(stats)
+            time.sleep(2)  # Be nice to SPARQL endpoint between categories
+        except RateLimitError:
+            print(f"WARNING: Rate-limited during {name} migration, skipping remaining migrations", flush=True)
+            migration_stats.append(placeholder)
+            rate_limited = True
+
+    if rate_limited:
+        print("\nWARNING: Some phases were skipped due to rate limiting. Partial results will be used.", flush=True)
 
     # Build site
     generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats)

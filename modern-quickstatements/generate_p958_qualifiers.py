@@ -293,4 +293,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except RateLimitError:
+        print("WARNING: Rate-limited, exiting with partial results (if any).", flush=True)

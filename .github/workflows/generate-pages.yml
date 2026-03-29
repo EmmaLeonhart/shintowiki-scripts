@@ -29,9 +29,19 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate QS site
+      - name: Download QS site artifact
+        id: download-qs
+        uses: actions/download-artifact@v4
+        with:
+          name: quickstatements-site
+          path: modern-quickstatements/_site/
+        continue-on-error: true
+
+      - name: Generate QS site (fallback if no artifact)
+        if: steps.download-qs.outcome == 'failure'
         working-directory: modern-quickstatements
         run: |
+          echo "No QS site artifact found, regenerating from SPARQL..."
           python generate_modern_shrine_ranking_qualifiers.py
           sleep 10
           python generate_p958_qualifiers.py

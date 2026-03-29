@@ -33,8 +33,10 @@ def main():
         timeout=30,
     )
     if resp.status_code == 429:
-        print("FATAL: 429 Too Many Requests — bailing")
-        sys.exit(1)
+        print("WARNING: 429 Too Many Requests — writing empty file")
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            pass
+        return
     resp.raise_for_status()
 
     data = resp.json()
