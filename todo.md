@@ -60,6 +60,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 ### Requires manual intervention
 
+- [ ] **Figure out `replace_p1027_with_p459.txt`** — This file exists in `modern-quickstatements/` but it's unclear what it does, whether it's still needed, or whether it was ever submitted. Investigate its origin and purpose; remove or integrate into the pipeline as appropriate.
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
 - [ ] **Figure out what to do with `[[Category:Need translation]]`** — assess scope, decide whether to automate or manually review members.
 - [ ] **Enrich autocreated categories** — Write a script to add meaningful content (interwikis, wikidata links, parent categories) to pages in `Category:Categories autocreated by EmmaBot` that were created as stubs.
