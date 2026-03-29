@@ -130,24 +130,31 @@ _last_sparql_time = 0.0
 
 
 def fetch_sparql(query):
-    """Run a SPARQL query against Wikidata. Bails on 429 to avoid worsening rate limits."""
+    """Run a SPARQL query against Wikidata with retry + exponential backoff on 429."""
     global _last_sparql_time
-    # Throttle: at least 5s between SPARQL requests to avoid silent rate limiting
-    elapsed = time.time() - _last_sparql_time
-    if elapsed < 5:
-        time.sleep(5 - elapsed)
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers=HEADERS,
-        timeout=60,
-    )
-    _last_sparql_time = time.time()
-    if r.status_code == 429:
-        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
-        raise RateLimitError(f"429 Too Many Requests: {r.url}")
-    r.raise_for_status()
-    return r.json()["results"]["bindings"]
+    max_retries = 4
+    for attempt in range(max_retries + 1):
+        # Throttle: at least 10s between SPARQL requests
+        elapsed = time.time() - _last_sparql_time
+        if elapsed < 10:
+            time.sleep(10 - elapsed)
+        r = requests.get(
+            SPARQL_ENDPOINT,
+            params={"query": query, "format": "json"},
+            headers=HEADERS,
+            timeout=60,
+        )
+        _last_sparql_time = time.time()
+        if r.status_code == 429:
+            if attempt < max_retries:
+                wait = 30 * (2 ** attempt)  # 30s, 60s, 120s, 240s
+                print(f"429 Too Many Requests — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
+                time.sleep(wait)
+                continue
+            print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
+            raise RateLimitError(f"429 Too Many Requests: {r.url}")
+        r.raise_for_status()
+        return r.json()["results"]["bindings"]
 
 
 def qid(uri):

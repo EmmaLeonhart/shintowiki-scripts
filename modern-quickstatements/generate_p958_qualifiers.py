@@ -40,18 +40,25 @@ class RateLimitError(Exception):
 
 
 def sparql_query(query):
-    """Run a SPARQL query and return results."""
-    resp = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers=HEADERS,
-        timeout=60,
-    )
-    if resp.status_code == 429:
-        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
-        raise RateLimitError(f"429 Too Many Requests: {resp.url}")
-    resp.raise_for_status()
-    return resp.json()["results"]["bindings"]
+    """Run a SPARQL query with retry + exponential backoff on 429."""
+    max_retries = 4
+    for attempt in range(max_retries + 1):
+        resp = requests.get(
+            SPARQL_ENDPOINT,
+            params={"query": query, "format": "json"},
+            headers=HEADERS,
+            timeout=60,
+        )
+        if resp.status_code == 429:
+            if attempt < max_retries:
+                wait = 30 * (2 ** attempt)
+                print(f"429 Too Many Requests — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
+                time.sleep(wait)
+                continue
+            print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
+            raise RateLimitError(f"429 Too Many Requests: {resp.url}")
+        resp.raise_for_status()
+        return resp.json()["results"]["bindings"]
 
 
 def get_entities_batch(qids):
