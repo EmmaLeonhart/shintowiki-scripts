@@ -24,6 +24,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 QS_API = "https://quickstatements.toolforge.org/api.php"
 MAX_RETRIES = 10
 RETRY_DELAY = 20  # seconds between retries
+MAX_LINES_TOTAL = 100  # Cap total lines submitted per run
 
 ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
@@ -134,6 +135,7 @@ def main():
 
     any_succeeded = False
     any_failed = False
+    total_submitted = 0
 
     for filepath in ATOMIC_FILES:
         lines = read_batch(filepath)
@@ -154,6 +156,17 @@ def main():
             report["batches"].append(batch_entry)
             continue
 
+        # Cap total lines across all files
+        remaining_budget = MAX_LINES_TOTAL - total_submitted
+        if remaining_budget <= 0:
+            batch_entry["success"] = True
+            batch_entry["message"] = f"Skipped (daily cap of {MAX_LINES_TOTAL} reached)"
+            print(f"{filepath}: skipped ({MAX_LINES_TOTAL} line cap reached)")
+            report["batches"].append(batch_entry)
+            continue
+        if len(lines) > remaining_budget:
+            lines = lines[:remaining_budget]
+
         batch_name = f"auto: {os.path.splitext(filepath)[0]} ({len(lines)} lines)"
         print(f"{filepath}: submitting {len(lines)} lines as '{batch_name}'...")
 
@@ -168,6 +181,7 @@ def main():
         if success:
             print(f"  OK: {message}" + (f" (attempt {attempts})" if attempts > 1 else ""))
             any_succeeded = True
+            total_submitted += len(lines)
         else:
             print(f"  FAILED after {attempts} attempts: {message}")
             any_failed = True
@@ -188,9 +202,10 @@ def main():
     report_path = write_report(report)
     print(f"Done. Outcome: {report['outcome']}")
 
-    # Log outcome but never exit non-zero — the run history page tracks failures
+    # Exit non-zero when ALL batches failed so the workflow can trigger the direct API fallback
     if report["outcome"] == "failed":
-        print("WARNING: All batches failed, see report for details")
+        print("WARNING: All batches failed — direct API fallback should run")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
