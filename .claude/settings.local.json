@@ -162,7 +162,8 @@
       "Bash(find /c/Users/Immanuelle/Documents/Github/shintowiki-scripts -type f \\\\\\(-name *.log -o -name *.errors -o -name *.state \\\\\\))",
       "Bash(gh repo:*)",
       "Bash(gh workflow:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(find /c/Users/Immanuelle/Documents/Github/shintowiki-scripts -type f \\\\\\(-name *.log -o -name *devlog* -o -name *state* -o -name *.txt \\\\\\))"
     ],
     "deny": [],
     "ask": []
