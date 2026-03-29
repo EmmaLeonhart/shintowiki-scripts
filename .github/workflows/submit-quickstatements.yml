@@ -23,13 +23,12 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Regenerate QuickStatements files
-        working-directory: modern-quickstatements
-        run: |
-          python generate_modern_shrine_ranking_qualifiers.py
-          sleep 10
-          python generate_p958_qualifiers.py
-          python fetch_p11250_from_wiki.py
+      - name: Download generated QS files
+        uses: actions/download-artifact@v4
+        with:
+          name: quickstatements-files
+          path: modern-quickstatements
+        continue-on-error: true
 
       - name: Submit daily batch via QuickStatements API
         working-directory: modern-quickstatements
