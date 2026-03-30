@@ -164,14 +164,7 @@ All credentials are injected via GitHub Actions secrets/variables. No credential
 
 Used by `wiki-cleanup.yml` for all wiki editing operations.
 
-### Wikidata / Wikimedia
 
-| Name | Type | Purpose |
-|------|------|---------|
-| `MW_BOTNAME` | Secret | Wikimedia bot-password login (format: `User@BotName`) for Wikidata editing |
-| `BOT_TOKEN` | Secret | Wikimedia bot password token (the password part of the bot-password) |
-
-Reserved for future direct Wikidata editing via the MediaWiki API. Not currently used by any workflow — all Wikidata edits currently go through QuickStatements.
 
 ### QuickStatements
 
