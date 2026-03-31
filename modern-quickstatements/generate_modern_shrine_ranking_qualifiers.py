@@ -143,7 +143,7 @@ _last_sparql_time = 0.0
 
 
 def fetch_sparql(query):
-    """Run a SPARQL query against Wikidata with retry + exponential backoff on 429."""
+    """Run a SPARQL query against Wikidata with retry + exponential backoff on 429/timeout."""
     global _last_sparql_time
     max_retries = 4
     for attempt in range(max_retries + 1):
@@ -151,12 +151,21 @@ def fetch_sparql(query):
         elapsed = time.time() - _last_sparql_time
         if elapsed < 10:
             time.sleep(10 - elapsed)
-        r = requests.get(
-            SPARQL_ENDPOINT,
-            params={"query": query, "format": "json"},
-            headers=HEADERS,
-            timeout=60,
-        )
+        try:
+            r = requests.get(
+                SPARQL_ENDPOINT,
+                params={"query": query, "format": "json"},
+                headers=HEADERS,
+                timeout=90,
+            )
+        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as exc:
+            _last_sparql_time = time.time()
+            if attempt < max_retries:
+                wait = 30 * (2 ** attempt)  # 30s, 60s, 120s, 240s
+                print(f"SPARQL timeout/connection error — retrying in {wait}s (attempt {attempt + 1}/{max_retries}): {exc}", flush=True)
+                time.sleep(wait)
+                continue
+            raise
         _last_sparql_time = time.time()
         if r.status_code == 429:
             if attempt < max_retries:
