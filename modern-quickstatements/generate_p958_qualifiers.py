@@ -176,17 +176,34 @@ def main():
     print(f"Found {len(parents)} parent items with ranked children.")
     print(f"Unique child items to check: {len(all_child_qids)}")
 
+    # Batch-fetch parent entities to get their P13677 values
+    parent_qid_list = sorted(parents.keys())
+    print(f"\nFetching {len(parent_qid_list)} parent entities in batches of 50...")
+    parent_entities = get_entities_batch(parent_qid_list)
+    print(f"Fetched {len(parent_entities)} parent entities.")
+
+    # Extract parent P13677 values
+    parent_p13677 = {}
+    for pqid, pentity in parent_entities.items():
+        p13677_vals, _, count = analyze_p13677(pentity)
+        if count == 1:
+            parent_p13677[pqid] = p13677_vals[0]
+        elif count > 1:
+            print(f"  WARNING: parent {pqid} has {count} P13677 values — skipping as source")
+
     # Batch-fetch all child entities
-    print(f"\nFetching entity data in batches of 50...")
+    print(f"\nFetching {len(all_child_qids)} child entity data in batches of 50...")
     child_qid_list = sorted(all_child_qids)
     child_entities = get_entities_batch(child_qid_list)
     print(f"Fetched {len(child_entities)} entities.")
 
     # Process each parent and its children
     quickstatements = []
+    new_p13677_statements = []
     manual_review = []
     skipped_existing = 0
     skipped_no_p13677 = 0
+    added_from_parent = 0
     flagged_sequence = []
 
     for parent_qid, parent_data in sorted(parents.items()):
@@ -214,7 +231,19 @@ def main():
             p13677_values, has_p958, num_p13677 = analyze_p13677(entity)
 
             if num_p13677 == 0:
-                skipped_no_p13677 += 1
+                # Try to add P13677 from parent's value
+                if parent_qid in parent_p13677:
+                    parent_val = parent_p13677[parent_qid]
+                    new_p13677_statements.append(
+                        f'{child_qid}|P13677|"{parent_val}"|P958|"{ranking}"'
+                    )
+                    added_from_parent += 1
+                    print(
+                        f"  {child_qid} ({child['label']}) ← NEW P13677=\"{parent_val}\" + P958=\"{ranking}\" "
+                        f"[from parent: {parent_qid}, via {child['prop']}]"
+                    )
+                else:
+                    skipped_no_p13677 += 1
                 continue
 
             if has_p958:
@@ -242,17 +271,22 @@ def main():
             )
 
     # Write QuickStatements output
+    # Combine both types of statements
+    all_statements = quickstatements + new_p13677_statements
+
     print(f"\n{'=' * 60}")
     print(f"Results:")
-    print(f"  QuickStatements generated: {len(quickstatements)}")
+    print(f"  P958 qualifiers for existing P13677: {len(quickstatements)}")
+    print(f"  New P13677 + P958 (from parent): {added_from_parent}")
+    print(f"  Total QuickStatements: {len(all_statements)}")
     print(f"  Skipped (already has P958): {skipped_existing}")
-    print(f"  Skipped (no P13677): {skipped_no_p13677}")
+    print(f"  Skipped (no P13677, parent also missing): {skipped_no_p13677}")
     print(f"  Flagged for manual review (multiple P13677): {len(manual_review)}")
     print(f"  Flagged sequence anomalies: {len(flagged_sequence)}")
 
-    if quickstatements:
+    if all_statements:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write("\n".join(quickstatements) + "\n")
+            f.write("\n".join(all_statements) + "\n")
         print(f"\nQuickStatements written to {OUTPUT_FILE}")
 
     if manual_review or flagged_sequence:
@@ -277,7 +311,9 @@ def main():
     total_links = len(results)
     summary = {
         "total_links": total_links,
-        "generated": len(quickstatements),
+        "generated": len(all_statements),
+        "p958_qualifiers": len(quickstatements),
+        "new_p13677_from_parent": added_from_parent,
         "completed": skipped_existing,
         "skipped_no_p13677": skipped_no_p13677,
         "manual_review": len(manual_review),
