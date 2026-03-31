@@ -1,10 +1,14 @@
 """
 Generate QuickStatements for P13723 (shrine ranking) property work.
 
-Phase 1: Add P459 (determination method or standard) → Q712534 qualifier to existing P13723 statements
+Phase 1: Add P459 (determination method or standard) qualifier to existing P13723 statements.
+         Uses value-specific determination methods (Q712534 modern, Q138640329 Engishiki,
+         Q135009120 Ritsuryō, etc.) based on the rank value.
 Phase 2: Edit P13723 property definition (labels, constraints)
 Phase 3: Migrate P31/P1552 shrine ranking values to P13723, preserving all
          existing qualifiers and references, and adding appropriate P459 qualifier.
+Also:    Add Kokugakuin University references to Engishiki/Ritsuryō P13723 statements
+         that currently lack sources.
 """
 
 import io
@@ -33,6 +37,12 @@ HEADERS = {
 PROPERTY_EDITS_FILE = "edit_p13723_property.txt"
 # Property edits already applied — cleared 2026-03-29
 PROPERTY_EDITS = []
+
+# Build reverse mapping: rank value QID → determined_by QID
+# Used by Phase 1 (P459 qualifiers) and reference correction to assign
+# the correct determination method based on the rank value.
+# Anything not in this mapping defaults to Q712534 (modern system).
+RANK_VALUE_TO_P459 = {}  # populated from MIGRATIONS after definition
 
 # Migration categories: old P31/P1552 values → P13723 with P459 qualifier
 MIGRATIONS = [
@@ -109,6 +119,20 @@ MIGRATIONS = [
         },
     },
 ]
+
+
+# Populate the reverse mapping from MIGRATIONS
+for _m in MIGRATIONS:
+    for _v in _m["values"]:
+        RANK_VALUE_TO_P459[_v] = _m["determined_by"]
+
+# Engishiki + Ritsuryō values (for reference correction)
+ENGISHIKI_RITSURYO_VALUES = set()
+for _m in MIGRATIONS:
+    if _m["id"] in ("engishiki", "ritsuryo"):
+        ENGISHIKI_RITSURYO_VALUES.update(_m["values"])
+
+ENGISHIKI_REFS_OUTPUT_FILE = "engishiki_add_references.txt"
 
 
 class RateLimitError(Exception):
@@ -370,7 +394,12 @@ def generate_property_edits():
 
 
 def generate_p459_qualifiers():
-    """Phase 1: Add P459 qualifiers to existing P13723 statements."""
+    """Phase 1: Add P459 qualifiers to existing P13723 statements.
+
+    Uses RANK_VALUE_TO_P459 to assign the correct determination method
+    based on the rank value (e.g. Engishiki ranks get Q138640329, Ritsuryō
+    funding types get Q135009120, modern ranks get Q712534).
+    """
     total_query = """
     SELECT (COUNT(*) AS ?total) WHERE {
       ?item p:P13723 ?stmt .
@@ -399,20 +428,25 @@ def generate_p459_qualifiers():
 
     output_file = "modern_shrine_ranking_qualifiers.txt"
     all_lines = []
+    p459_counts = {}  # track how many get each P459
     for r in results:
         item = qid(r["item"]["value"])
         rankvalue = qid(r["rankvalue"]["value"])
-        all_lines.append(f"{item}|P13723|{rankvalue}|P459|Q712534")
+        determined_by = RANK_VALUE_TO_P459.get(rankvalue, "Q712534")
+        all_lines.append(f"{item}|P13723|{rankvalue}|P459|{determined_by}")
+        p459_counts[determined_by] = p459_counts.get(determined_by, 0) + 1
 
     with open(output_file, "w", encoding="utf-8") as f:
         for line in all_lines:
             f.write(line + "\n")
 
     print(f"Written {len(all_lines)} lines to {output_file}")
+    for db, count in sorted(p459_counts.items()):
+        print(f"  P459={db}: {count} statements")
 
     return {
         "name": "P459 qualifiers (determination method)",
-        "description": "Add P459 (determination method or standard) → Q712534 (modern system of ranked Shinto shrines) to existing P13723 statements",
+        "description": "Add P459 (determination method) to existing P13723 statements — value-specific (Engishiki, Ritsuryō, modern, etc.)",
         "total": total,
         "remaining": remaining,
         "completed": completed,
@@ -488,6 +522,116 @@ def generate_p4656_references():
         "completed": total - remaining,
         "output_file": P4656_OUTPUT_FILE,
         "lines": len(lines),
+    }
+
+
+def generate_engishiki_references():
+    """Find P13723 statements with Engishiki/Ritsuryō rank values that lack references,
+    and generate QuickStatements to add Kokugakuin University sources.
+
+    Targets P13723 statements where:
+    - The rank value is an Engishiki rank (Q134917287, Q134917288, Q9610964) or
+      Ritsuryō funding type (Q135160342, Q135160338, Q135009152, etc.)
+    - The statement has no reference at all
+    - The item has a P13677 (Kokugakuin University Digital Museum entry ID)
+    """
+    values_sparql = " ".join(f"wd:{v}" for v in sorted(ENGISHIKI_RITSURYO_VALUES))
+
+    # Find Engishiki/Ritsuryō P13723 statements without any reference
+    query = f"""
+    SELECT ?item ?rankvalue WHERE {{
+      VALUES ?rankvalue {{ {values_sparql} }}
+      ?item p:P13723 ?stmt .
+      ?stmt ps:P13723 ?rankvalue .
+      FILTER NOT EXISTS {{
+        ?stmt prov:wasDerivedFrom ?ref .
+      }}
+    }}
+    ORDER BY ?item
+    """
+
+    total_query = f"""
+    SELECT (COUNT(*) AS ?total) WHERE {{
+      VALUES ?rankvalue {{ {values_sparql} }}
+      ?item p:P13723 ?stmt .
+      ?stmt ps:P13723 ?rankvalue .
+    }}
+    """
+
+    print("\n=== Engishiki/Ritsuryō reference correction ===")
+    print("Fetching total Engishiki/Ritsuryō P13723 statements...")
+    total = int(fetch_sparql(total_query)[0]["total"]["value"])
+    print(f"Total Engishiki/Ritsuryō P13723 statements: {total}")
+
+    print("Fetching statements without references...")
+    results = fetch_sparql(query)
+    remaining = len(results)
+    completed = total - remaining
+    print(f"Found {remaining} without references ({completed}/{total} already sourced)")
+
+    if not results:
+        open(ENGISHIKI_REFS_OUTPUT_FILE, "w").close()
+        print(f"Written 0 lines to {ENGISHIKI_REFS_OUTPUT_FILE}")
+        return {
+            "name": "Engishiki/Ritsuryō references",
+            "description": "Add Kokugakuin University sources to Engishiki/Ritsuryō P13723 statements",
+            "total": total,
+            "remaining": 0,
+            "completed": total,
+            "output_file": ENGISHIKI_REFS_OUTPUT_FILE,
+            "lines": 0,
+            "skipped_no_p13677": 0,
+        }
+
+    # Collect unique items and their rank values
+    items_values = {}
+    for r in results:
+        item_id = qid(r["item"]["value"])
+        value_id = qid(r["rankvalue"]["value"])
+        items_values.setdefault(item_id, set()).add(value_id)
+
+    # Fetch P13677 for these items
+    print(f"Fetching Kokugakuin University IDs (P13677) for {len(items_values)} items...")
+    p13677_claims = fetch_claims_batch(list(items_values.keys()), "P13677")
+
+    item_entry_ids = {}
+    for item_id, claims in p13677_claims.items():
+        if claims:
+            val = snak_to_qs(claims[0]["mainsnak"])
+            if val:
+                item_entry_ids[item_id] = val
+
+    print(f"  Found P13677 for {len(item_entry_ids)}/{len(items_values)} items")
+
+    lines = []
+    skipped_no_p13677 = 0
+    for item_id, rank_values in sorted(items_values.items()):
+        entry_id = item_entry_ids.get(item_id)
+        if not entry_id:
+            skipped_no_p13677 += 1
+            continue
+        for rv in sorted(rank_values):
+            lines.append(
+                f"{item_id}|P13723|{rv}|S248|Q135159299|S13677|{entry_id}"
+            )
+
+    with open(ENGISHIKI_REFS_OUTPUT_FILE, "w", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+    print(f"Written {len(lines)} lines to {ENGISHIKI_REFS_OUTPUT_FILE}")
+    if skipped_no_p13677:
+        print(f"  Skipped {skipped_no_p13677} items (no P13677)")
+
+    return {
+        "name": "Engishiki/Ritsuryō references",
+        "description": "Add Kokugakuin University sources to Engishiki/Ritsuryō P13723 statements",
+        "total": total,
+        "remaining": remaining,
+        "completed": completed,
+        "output_file": ENGISHIKI_REFS_OUTPUT_FILE,
+        "lines": len(lines),
+        "skipped_no_p13677": skipped_no_p13677,
     }
 
 
@@ -912,7 +1056,7 @@ def generate_hiteisha_html_section(stats):
   <textarea class="qs-box" rows="10" readonly onclick="this.select()">{batch_escaped}</textarea>"""
 
 
-def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
+def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, engishiki_refs_stats=None):
     """Generate the site index.html with progress for all categories."""
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -928,6 +1072,36 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
     # P958 section from separate generator
     p958_summary = load_p958_summary()
     p958_section = generate_p958_html_section(p958_summary)
+
+    # Engishiki/Ritsuryō reference correction section
+    engishiki_refs_section = ""
+    if engishiki_refs_stats and engishiki_refs_stats.get("lines", 0) > 0:
+        er = engishiki_refs_stats
+        er_pct = progress_pct(er["completed"], er["total"])
+        er_batch = read_first_n_lines(er["output_file"])
+        er_escaped = html_escape(er_batch)
+        er_shown = min(er["lines"], MAX_LINES_PER_BATCH)
+        engishiki_refs_section = f"""
+  <h2>Engishiki/Ritsury&#x14D; Reference Correction</h2>
+  <p>Add <a href="https://www.wikidata.org/wiki/Q135159299">Kokugakuin University</a> sources
+     (<code>S248</code> + <code>S13677</code>) to <code>P13723</code> statements with
+     Engishiki ranking or Ritsury&#x14D; funding values that currently have no references.</p>
+  <div class="stats">
+    <strong>{er["completed"]} / {er["total"]} sourced</strong> ({er_pct}%)
+    &mdash; <strong>{er["remaining"]} without references</strong>
+    {"&mdash; " + str(er.get("skipped_no_p13677", 0)) + " skipped (no P13677)" if er.get("skipped_no_p13677") else ""}
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: {max(er_pct, 2 if er['completed'] else 0)}%">{er_pct}%</div>
+    </div>
+  </div>
+  <p>{er_shown} of {er["lines"]} total lines
+     &mdash; <a href="{er["output_file"]}">Download all</a></p>
+  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{er_escaped}</textarea>"""
+    elif engishiki_refs_stats:
+        engishiki_refs_section = """
+  <h2>Engishiki/Ritsury&#x14D; Reference Correction</h2>
+  <p>All Engishiki/Ritsury&#x14D; <code>P13723</code> statements are sourced.</p>
+  <div class="stats"><strong>0 remaining</strong></div>"""
 
     # Shikinai Hiteisha removal section
     hiteisha_section = generate_hiteisha_html_section(hiteisha_stats) if hiteisha_stats else ""
@@ -1012,7 +1186,8 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
 </head>
 <body>
   <h1>Shrine Ranking (P13723) &mdash; QuickStatements</h1>
-  <p class="timestamp">Last updated: {generated}</p>
+  <p class="timestamp">Last updated: {generated}
+    &mdash; <a href="https://github.com/immanuelle/shintowiki-scripts">Source on GitHub</a></p>
 
   <div class="instructions" style="background: #e3f2fd; border-left-color: #2196f3;">
     <strong><a href="daily.html" style="font-size: 1.1em;">Daily Operations &rarr;</a></strong>
@@ -1027,8 +1202,9 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
   </div>
 
   <h2>Phase 1: Add P459 qualifiers to existing P13723</h2>
-  <p>Add <code>P459</code> (determination method or standard) &rarr; <code>Q712534</code>
-     (modern system of ranked Shinto shrines) to all existing <code>P13723</code> statements.</p>
+  <p>Add <code>P459</code> (determination method or standard) to all existing <code>P13723</code> statements.
+     Each rank value gets the correct determination method: <code>Q712534</code> (modern),
+     <code>Q138640329</code> (Engishiki), <code>Q135009120</code> (Ritsury&#x14D;), etc.</p>
   <div class="stats">
     <strong>{p459_stats["completed"]} / {p459_stats["total"]} done</strong> ({p459_pct}%)
     &mdash; <strong>{p459_stats["remaining"]} remaining</strong>
@@ -1048,6 +1224,8 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
 
   {p958_section}
 
+  {engishiki_refs_section}
+
   {hiteisha_section}
 
   {duplicates_section}
@@ -1062,7 +1240,7 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None):
         f.write(html)
 
 
-def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats=None):
+def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats=None, engishiki_refs_stats=None):
     """Generate the daily operations page — a single combined box of what to run now.
 
     Priority order:
@@ -1071,6 +1249,7 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
     - P4656 references (always included when lines exist)
     - Phase 3 (migration adds + removes) after Phase 2 complete
     - P958 qualifiers always included
+    - Engishiki/Ritsuryō references always included
     - Shikinai Hiteisha removals always included
     """
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -1129,6 +1308,16 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
                     lines.append(stripped)
                     p958_count += 1
 
+    # Always include Engishiki/Ritsuryō reference corrections
+    engishiki_refs_count = 0
+    if engishiki_refs_stats and os.path.exists(engishiki_refs_stats["output_file"]):
+        with open(engishiki_refs_stats["output_file"], "r", encoding="utf-8") as f:
+            for line in f:
+                stripped = line.strip()
+                if stripped:
+                    lines.append(stripped)
+                    engishiki_refs_count += 1
+
     # Always include Shikinai Hiteisha removals
     hiteisha_count = 0
     if hiteisha_stats and os.path.exists(hiteisha_stats["output_file"]):
@@ -1186,6 +1375,7 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
     &mdash; <a href="daily_operations.txt">Download all</a><br>
     {"<em>Includes " + str(p4656_count) + " P4656 ja.wiki reference lines</em><br>" if p4656_count else ""}
     {"<em>Includes " + str(p958_count) + " P958 qualifier lines</em><br>" if p958_count else ""}
+    {"<em>Includes " + str(engishiki_refs_count) + " Engishiki/Ritsury&#x14D; reference lines</em><br>" if engishiki_refs_count else ""}
     {"<em>Includes " + str(hiteisha_count) + " Shikinai Hiteisha removal lines</em>" if hiteisha_count else ""}
   </div>
 
@@ -1237,6 +1427,15 @@ def main():
         p4656_stats = {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
         rate_limited = True
 
+    # Engishiki/Ritsuryō: Add Kokugakuin references to P13723 statements missing sources
+    engishiki_ref_placeholder = {"output_file": ENGISHIKI_REFS_OUTPUT_FILE, "lines": 0, "total": 0, "remaining": 0, "completed": 0, "skipped_no_p13677": 0}
+    try:
+        engishiki_refs_stats = generate_engishiki_references() if not rate_limited else engishiki_ref_placeholder
+    except RateLimitError:
+        print("WARNING: Rate-limited during Engishiki reference phase, skipping", flush=True)
+        engishiki_refs_stats = engishiki_ref_placeholder
+        rate_limited = True
+
     # Phase 3: Migrate old P31/P1552 values to P13723
     migration_stats = []
     for migration in MIGRATIONS:
@@ -1264,8 +1463,8 @@ def main():
         print("\nWARNING: Some phases were skipped due to rate limiting. Partial results will be used.", flush=True)
 
     # Build site
-    generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats)
-    generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats)
+    generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats, engishiki_refs_stats)
+    generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats, engishiki_refs_stats)
 
     # Copy all QuickStatements files into _site
     migration_files = []
@@ -1274,7 +1473,10 @@ def main():
         migration_files.append(m["remove_file"])
         if m.get("underspec_file"):
             migration_files.append(m["underspec_file"])
-    all_files = [p459_stats["output_file"], p4656_stats["output_file"], hiteisha_stats["output_file"]] + migration_files + [prop_stats["output_file"]]
+    all_files = [
+        p459_stats["output_file"], p4656_stats["output_file"],
+        hiteisha_stats["output_file"], engishiki_refs_stats["output_file"],
+    ] + migration_files + [prop_stats["output_file"]]
     # Include P958 files if they exist
     for p958_file in ["p958_qualifiers.txt", "p958_manual_review.txt"]:
         if os.path.exists(p958_file):
@@ -1284,7 +1486,7 @@ def main():
             shutil.copy(fname, os.path.join("_site", fname))
 
     # Write summary JSON
-    summary = {"p459": p459_stats, "p4656": p4656_stats, "hiteisha": hiteisha_stats, "migrations": migration_stats, "property_edits": prop_stats}
+    summary = {"p459": p459_stats, "p4656": p4656_stats, "hiteisha": hiteisha_stats, "engishiki_refs": engishiki_refs_stats, "migrations": migration_stats, "property_edits": prop_stats}
     with open("_site/summary.json", "w") as f:
         json.dump(summary, f, indent=2)
 
