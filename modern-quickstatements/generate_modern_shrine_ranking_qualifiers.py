@@ -459,16 +459,15 @@ P4656_OUTPUT_FILE = "p4656_jawiki_references.txt"
 
 
 def generate_p4656_references():
-    """Generate P4656 (Wikimedia import URL) references for modern shrine rankings.
+    """Generate P4656 (Wikimedia import URL) references for all P13723 shrine rankings.
 
-    Only targets P13723 statements that already have P459=Q712534 (modern system)
-    and have a Japanese Wikipedia sitelink, but no P4656 reference yet.
+    Targets all P13723 statements that have a Japanese Wikipedia sitelink
+    but no P4656 reference yet, regardless of determination method (P459).
     """
     query = """
     SELECT ?item ?rankvalue ?articleName WHERE {
       ?item p:P13723 ?stmt .
       ?stmt ps:P13723 ?rankvalue .
-      ?stmt pq:P459 wd:Q712534 .
       ?article schema:about ?item ;
                schema:isPartOf <https://ja.wikipedia.org/> ;
                schema:name ?articleName .
@@ -484,14 +483,13 @@ def generate_p4656_references():
     SELECT (COUNT(*) AS ?total) WHERE {
       ?item p:P13723 ?stmt .
       ?stmt ps:P13723 ?rankvalue .
-      ?stmt pq:P459 wd:Q712534 .
     }
     """
 
     print("\n=== P4656 Japanese Wikipedia references ===")
-    print("Fetching total modern-qualified P13723 statements...")
+    print("Fetching total P13723 statements...")
     total = int(fetch_sparql(total_query)[0]["total"]["value"])
-    print(f"Total P13723 statements with P459=Q712534: {total}")
+    print(f"Total P13723 statements: {total}")
 
     print("Fetching statements needing P4656 reference...")
     results = fetch_sparql(query)
@@ -516,7 +514,7 @@ def generate_p4656_references():
 
     return {
         "name": "P4656 Japanese Wikipedia references",
-        "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for modern-qualified P13723 statements",
+        "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
         "total": total,
         "remaining": remaining,
         "completed": total - remaining,
@@ -1419,7 +1417,7 @@ def main():
         hiteisha_stats = {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
         rate_limited = True
 
-    # P4656: Add Japanese Wikipedia references to modern-qualified P13723 statements
+    # P4656: Add Japanese Wikipedia references to all P13723 statements
     try:
         p4656_stats = generate_p4656_references() if not rate_limited else {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
     except RateLimitError:
