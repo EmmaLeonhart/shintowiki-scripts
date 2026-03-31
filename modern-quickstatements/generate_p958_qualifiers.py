@@ -8,6 +8,9 @@ For each instance of Q135038714:
   - Go to the linked item and find its P13677 statement
   - Generate a QuickStatement adding P958 = ranking number as qualifier
 
+Disputed shikinaisha (P460 links without P1352 qualifiers) get
+P958 = Q105729336 (not applicable) on their Kokugakuin IDs.
+
 Items with multiple P13677 statements are flagged for manual review.
 Ranking numbers that don't follow expected patterns (sequential from 1,
 occasional 0) are also flagged.
@@ -270,17 +273,133 @@ def main():
                 f"[parent: {parent_qid}, via {child['prop']}]"
             )
 
+    # --- Disputed shikinaisha: P460 links WITHOUT P1352 qualifiers ---
+    # These are disputed identifications and get P958 = Q105729336 (not applicable)
+    disputed_query = """
+    SELECT ?parent ?parentLabel ?child ?childLabel WHERE {
+      ?parent wdt:P31 wd:Q135038714 .
+      ?parent p:P460 ?stmt .
+      ?stmt ps:P460 ?child .
+      FILTER NOT EXISTS {
+        ?stmt pq:P1352 ?ranking .
+      }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en,ja" }
+    }
+    ORDER BY ?parent ?child
+    """
+
+    print("\n" + "=" * 60)
+    print("Disputed Shikinaisha — P460 without P1352 ranking")
+    print("=" * 60)
+
+    print("\nQuerying SPARQL for P460 links WITHOUT P1352 qualifiers...")
+    disputed_results = sparql_query(disputed_query)
+    print(f"Found {len(disputed_results)} disputed identification links.")
+
+    disputed_statements = []
+    disputed_new_p13677 = []
+    disputed_skipped_existing = 0
+    disputed_skipped_no_p13677 = 0
+    disputed_manual_review = []
+
+    if disputed_results:
+        # Collect all disputed child QIDs
+        disputed_children = {}
+        for row in disputed_results:
+            parent_qid_d = extract_qid(row["parent"]["value"])
+            parent_label_d = row.get("parentLabel", {}).get("value", parent_qid_d)
+            child_qid_d = extract_qid(row["child"]["value"])
+            child_label_d = row.get("childLabel", {}).get("value", child_qid_d)
+            disputed_children[child_qid_d] = {
+                "label": child_label_d,
+                "parent_qid": parent_qid_d,
+                "parent_label": parent_label_d,
+            }
+
+        # Fetch entities for disputed children (skip any already fetched)
+        new_disputed_qids = [q for q in disputed_children if q not in child_entities]
+        if new_disputed_qids:
+            print(f"Fetching {len(new_disputed_qids)} additional disputed child entities...")
+            disputed_entities = get_entities_batch(new_disputed_qids)
+            child_entities.update(disputed_entities)
+
+        # Also need parent P13677 values for disputed children
+        disputed_parent_qids = set(c["parent_qid"] for c in disputed_children.values())
+        new_parent_qids = [q for q in disputed_parent_qids if q not in parent_p13677 and q not in parent_entities]
+        if new_parent_qids:
+            print(f"Fetching {len(new_parent_qids)} additional parent entities...")
+            extra_parents = get_entities_batch(new_parent_qids)
+            parent_entities.update(extra_parents)
+            for pqid, pentity in extra_parents.items():
+                p13677_vals, _, count = analyze_p13677(pentity)
+                if count == 1:
+                    parent_p13677[pqid] = p13677_vals[0]
+
+        for child_qid_d, info in sorted(disputed_children.items()):
+            entity = child_entities.get(child_qid_d)
+            p13677_values, has_p958, num_p13677 = analyze_p13677(entity)
+
+            if num_p13677 == 0:
+                # Try to add P13677 from parent's value with P958=Q105729336
+                if info["parent_qid"] in parent_p13677:
+                    parent_val = parent_p13677[info["parent_qid"]]
+                    disputed_new_p13677.append(
+                        f'{child_qid_d}|P13677|"{parent_val}"|P958|Q105729336'
+                    )
+                    print(
+                        f"  {child_qid_d} ({info['label']}) ← NEW P13677=\"{parent_val}\" + P958=Q105729336 (n/a) "
+                        f"[disputed, from parent: {info['parent_qid']}]"
+                    )
+                else:
+                    disputed_skipped_no_p13677 += 1
+                continue
+
+            if has_p958:
+                disputed_skipped_existing += 1
+                continue
+
+            if num_p13677 > 1:
+                disputed_manual_review.append(
+                    f"{child_qid_d}\t{info['label']}\t"
+                    f"parent={info['parent_qid']} ({info['parent_label']})\t"
+                    f"ranking=disputed\t"
+                    f"P13677_count={num_p13677}\t"
+                    f"via P460 (no P1352)"
+                )
+                continue
+
+            # Single P13677, no existing P958 — add Q105729336 (not applicable)
+            p13677_value = p13677_values[0]
+            disputed_statements.append(
+                f'{child_qid_d}|P13677|"{p13677_value}"|P958|Q105729336'
+            )
+            print(
+                f"  {child_qid_d} ({info['label']}) ← P958=Q105729336 (n/a) "
+                f"[disputed, parent: {info['parent_qid']}]"
+            )
+
+    print(f"\nDisputed results:")
+    print(f"  P958=Q105729336 for existing P13677: {len(disputed_statements)}")
+    print(f"  New P13677 + P958=Q105729336 (from parent): {len(disputed_new_p13677)}")
+    print(f"  Skipped (already has P958): {disputed_skipped_existing}")
+    print(f"  Skipped (no P13677): {disputed_skipped_no_p13677}")
+    print(f"  Flagged for manual review: {len(disputed_manual_review)}")
+
+    # Add disputed items to manual review
+    manual_review.extend(disputed_manual_review)
+
     # Write QuickStatements output
-    # Combine both types of statements
-    all_statements = quickstatements + new_p13677_statements
+    # Combine all types of statements
+    all_statements = quickstatements + new_p13677_statements + disputed_statements + disputed_new_p13677
 
     print(f"\n{'=' * 60}")
     print(f"Results:")
     print(f"  P958 qualifiers for existing P13677: {len(quickstatements)}")
     print(f"  New P13677 + P958 (from parent): {added_from_parent}")
+    print(f"  Disputed P958=Q105729336: {len(disputed_statements) + len(disputed_new_p13677)}")
     print(f"  Total QuickStatements: {len(all_statements)}")
-    print(f"  Skipped (already has P958): {skipped_existing}")
-    print(f"  Skipped (no P13677, parent also missing): {skipped_no_p13677}")
+    print(f"  Skipped (already has P958): {skipped_existing + disputed_skipped_existing}")
+    print(f"  Skipped (no P13677, parent also missing): {skipped_no_p13677 + disputed_skipped_no_p13677}")
     print(f"  Flagged for manual review (multiple P13677): {len(manual_review)}")
     print(f"  Flagged sequence anomalies: {len(flagged_sequence)}")
 
@@ -314,8 +433,10 @@ def main():
         "generated": len(all_statements),
         "p958_qualifiers": len(quickstatements),
         "new_p13677_from_parent": added_from_parent,
-        "completed": skipped_existing,
-        "skipped_no_p13677": skipped_no_p13677,
+        "disputed_p958": len(disputed_statements) + len(disputed_new_p13677),
+        "disputed_total": len(disputed_results),
+        "completed": skipped_existing + disputed_skipped_existing,
+        "skipped_no_p13677": skipped_no_p13677 + disputed_skipped_no_p13677,
         "manual_review": len(manual_review),
         "sequence_anomalies": len(flagged_sequence),
         "output_file": OUTPUT_FILE,
