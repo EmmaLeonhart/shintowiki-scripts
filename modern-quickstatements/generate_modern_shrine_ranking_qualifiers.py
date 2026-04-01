@@ -167,14 +167,17 @@ def fetch_sparql(query):
                 continue
             raise
         _last_sparql_time = time.time()
-        if r.status_code == 429:
+        if r.status_code in (429, 500, 502, 503, 504):
             if attempt < max_retries:
                 wait = 30 * (2 ** attempt)  # 30s, 60s, 120s, 240s
-                print(f"429 Too Many Requests — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
+                print(f"{r.status_code} Server Error — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
                 time.sleep(wait)
                 continue
-            print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
-            raise RateLimitError(f"429 Too Many Requests: {r.url}")
+            if r.status_code == 429:
+                print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
+                raise RateLimitError(f"429 Too Many Requests: {r.url}")
+            print(f"FATAL: {r.status_code} after {max_retries} retries — bailing")
+            r.raise_for_status()
         r.raise_for_status()
         return r.json()["results"]["bindings"]
 

@@ -110,6 +110,9 @@ def main():
                         else:
                             print(f"  ERROR: {page.name} — {e}")
                             break
+                    except mwclient.errors.APIError as e:
+                        print(f"  ERROR (API): {page.name} — {e}")
+                        break
                 time.sleep(THROTTLE)
 
         print()
