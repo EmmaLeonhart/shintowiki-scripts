@@ -20,6 +20,7 @@ cleanup-loop.yml (orchestrator)
 ├─ wiki-cleanup.yml               → runs all wiki editing scripts (5 chunks + deprecated)
 ├─ random-wait.yml                → random delay before QS submission (schedule only)
 ├─ submit-quickstatements.yml     → submits atomic operations to QuickStatements API
+├─ direct-daily-edits.yml         → fallback: applies edits via Wikidata API if QS submission fails
 ├─ test-wikidata-qualifier.yml    → applies P459 qualifiers via Wikidata API directly
 └─ build-run-history.yml          → rebuilds the run history page from reports
 ```
@@ -40,7 +41,7 @@ A separate workflow, `generate-pages.yml`, builds and deploys the GitHub Pages s
 
 ```
 shintowiki-scripts/
-├── .github/workflows/          # GitHub Actions workflow chain (8 files)
+├── .github/workflows/          # GitHub Actions workflow chain (9 files)
 ├── shinto_miraheze/            # Wiki editing bot scripts (~45 Python, 3 shell)
 ├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
 │   ├── reports/                # JSON run reports from QS submissions
@@ -69,6 +70,7 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 | `triage_emmabot_categories_jawiki.py` | Second-pass triage: checks against jawiki |
 | `triage_emmabot_categories_secondary.py` | Third-pass triage: secondary heuristics |
 | `triage_secondary_single_member.py` | Moves single-member categories to triaged bucket |
+| `enrich_jawiki_categories.py` | Enriches categories with jawiki interwiki data |
 | `create_shrine_ranking_pages.py` | Creates shrine ranking article pages (TEMPORARY) |
 
 ### Chunk 2: Structural Fixes
@@ -102,6 +104,11 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 | `delete_broken_redirects.py` | Deletes Special:BrokenRedirects |
 | `remove_crud_categories.py` | Strips crud category tags from pages |
 
+### Bookkeeping
+| Script | Purpose |
+|--------|---------|
+| `update_bot_userpage_status.py` | Updates User:EmmaBot status page with pipeline stage and run info |
+
 ### Deprecated (Sunday only)
 | Script | Purpose |
 |--------|---------|
@@ -124,6 +131,8 @@ Generates and submits Wikidata property edits via the [QuickStatements API](http
 | `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 (determination method) qualifiers for P13723 (shrine ranking) |
 | `submit_daily_batch.py` | Submits atomic QS operations; writes JSON reports to `reports/` |
 | `test_wikidata_qualifier.py` | Applies P459 qualifiers to P13723 via Wikidata API directly (bypasses QuickStatements) |
+| `direct_daily_edits.py` | Fallback: applies edits via Wikidata API directly when QuickStatements API fails |
+| `fetch_p11250_from_wiki.py` | Fetches P11250 QuickStatements lines from shintowiki and writes to `p11250_miraheze_links.txt` |
 | `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
 
 Atomic files submitted daily:
@@ -131,6 +140,7 @@ Atomic files submitted daily:
 - `p4656_jawiki_references.txt` — P4656 ja.wiki references on P13723
 - `p958_qualifiers.txt` — P958 section qualifiers on P13677
 - `remove_shikinai_hiteisha.txt` — Remove P31=Q135026601 (Shikinai Hiteisha)
+- `p11250_miraheze_links.txt` — P11250 (ShintoDB article ID) links fetched from shintowiki
 
 The submission job **never fails the workflow** — it logs the outcome (submitted/partial/skipped/failed) to a JSON report and exits cleanly. The run history page at `runs.html` tracks all outcomes over time.
 
