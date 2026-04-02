@@ -129,7 +129,7 @@ def generate_html(reports):
   <h1>QuickStatements Run History</h1>
   <p class="timestamp">Generated {datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")} &middot; {len(reports)} runs
     &middot; <a href="index.html">&larr; Dashboard</a>
-    &middot; <a href="https://github.com/immanuelle/shintowiki-scripts">GitHub</a></p>
+    &middot; <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">GitHub</a></p>
 
   <h2>Summary</h2>
   {"".join(summary_parts) if summary_parts else "<p>No runs recorded yet.</p>"}
