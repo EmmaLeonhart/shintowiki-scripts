@@ -6,6 +6,8 @@ Repository: https://github.com/EmmaLeonhart/shintowiki-scripts
 
 Dashboard: https://emmaleonhart.github.io/shintowiki-scripts/
 
+Run manually: https://github.com/EmmaLeonhart/shintowiki-scripts/actions/workflows/cleanup-loop.yml
+
 == Operations policy ==
 
 All routine bot edits run through '''GitHub Actions''', not from a local machine. Scripts are committed to the repository and triggered automatically or via manual dispatch. Local runs are only used for emergencies.
