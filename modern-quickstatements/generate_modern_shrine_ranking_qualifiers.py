@@ -1197,7 +1197,7 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
 <body>
   <h1>Shrine Ranking (P13723) &mdash; QuickStatements</h1>
   <p class="timestamp">Last updated: {generated}
-    &mdash; <a href="https://github.com/immanuelle/shintowiki-scripts">Source on GitHub</a></p>
+    &mdash; <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">Source on GitHub</a></p>
 
   <div class="instructions" style="background: #e3f2fd; border-left-color: #2196f3;">
     <strong><a href="daily.html" style="font-size: 1.1em;">Daily Operations &rarr;</a></strong>
