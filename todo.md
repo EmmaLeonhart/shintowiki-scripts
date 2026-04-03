@@ -55,7 +55,7 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 ### Temporary / one-off re-bucketing tasks
 
-- [ ] **Re-bucket 300+ untranslated pages with extended thresholds** — The original thresholds capped at 300, so all pages with 300+ untranslated Japanese characters were lumped together. Thresholds now extend to 5000 (50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000). Run `tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters" --apply --run-tag "..."` to re-bucket existing 300+ pages into finer-grained categories. This is a smaller targeted run since it only hits category members, not all mainspace. Can be re-run as needed to introduce more granular tiers later.
+- [x] **Re-bucket 300+ untranslated pages with extended thresholds** — Added as temporary step `rebucket_300plus_untranslated` in cleanup loop (2026-04-03). Runs `tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters"` to re-bucket 72 pages into finer-grained categories (up to 5000+). Remove step from workflow after all pages are re-bucketed.
 - [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
 
 ### Requires manual intervention

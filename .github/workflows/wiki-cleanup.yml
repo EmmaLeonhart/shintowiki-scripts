@@ -216,6 +216,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: tag_untranslated_japanese" \
             python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Final: rebucket_300plus_untranslated (TEMPORARY)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: rebucket_300plus_untranslated" \
+            python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$WIKI_EDIT_LIMIT" --category "Pages with 300+ untranslated japanese characters" --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Final Core"
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Final Core"
