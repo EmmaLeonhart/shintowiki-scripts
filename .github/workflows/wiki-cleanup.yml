@@ -197,11 +197,12 @@ jobs:
       #  Chunk 4: Final Core
       # ════════════════════════════════════════
 
-      - name: "Final: fix_template_noinclude"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Core Loop: fix_template_noinclude" \
-            python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # fix_template_noinclude — disabled, one-time fix completed
+      # - name: "Final: fix_template_noinclude"
+      #   if: always() && steps.*.outcome != 'cancelled'
+      #   run: |
+      #     shinto_miraheze/run_step.sh "Core Loop: fix_template_noinclude" \
+      #       python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Final: categorize_uncategorized_pages"
         if: always() && steps.*.outcome != 'cancelled'
