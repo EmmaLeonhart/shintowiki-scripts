@@ -257,8 +257,11 @@ def main():
                 append_state(STATE_FILE, title)
 
     if finished_all and args.apply:
-        print("\nAll templates processed — clearing state for next cycle.")
-        clear_state(STATE_FILE)
+        if edited > 0:
+            print("\nAll templates processed with edits — clearing state for next cycle.")
+            clear_state(STATE_FILE)
+        else:
+            print("\nAll templates processed, nothing to fix — keeping state to skip on next run.")
 
     print(f"\n{'='*60}")
     print(f"Checked:  {checked}")
