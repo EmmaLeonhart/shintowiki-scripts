@@ -103,12 +103,8 @@ def main():
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
-    # Collect up to max-edits category names
-    names = []
-    for name in iter_source_categories(site):
-        names.append(name)
-        if len(names) >= args.max_edits:
-            break
+    # Collect all category names
+    names = list(iter_source_categories(site))
 
     if not names:
         print("No categories to triage.")
@@ -123,6 +119,10 @@ def main():
 
     edited = skipped = errors = 0
     for i, name in enumerate(names, 1):
+        if args.max_edits and edited >= args.max_edits:
+            print(f"Reached max edits ({args.max_edits}); stopping.")
+            break
+
         has_jawiki = name in jawiki_existing
         target_cat = WITH_JAWIKI_CAT if has_jawiki else WITHOUT_EITHER_CAT
         tag = "jawiki" if has_jawiki else "no jawiki"

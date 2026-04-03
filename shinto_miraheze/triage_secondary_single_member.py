@@ -82,9 +82,6 @@ def main():
 
     edited = skipped = errors = 0
     for i, name in enumerate(names, 1):
-        if edited >= args.max_edits:
-            print(f"Reached max edits ({args.max_edits}); stopping.")
-            break
 
         prefix = f"[{i}/{len(names)}] Category:{name}"
 
