@@ -72,11 +72,7 @@ def main():
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
-    names = []
-    for name in iter_source_categories(site):
-        names.append(name)
-        if len(names) >= args.max_edits:
-            break
+    names = list(iter_source_categories(site))
 
     if not names:
         print("No categories in Secondary category triage.")
@@ -86,6 +82,10 @@ def main():
 
     edited = skipped = errors = 0
     for i, name in enumerate(names, 1):
+        if edited >= args.max_edits:
+            print(f"Reached max edits ({args.max_edits}); stopping.")
+            break
+
         prefix = f"[{i}/{len(names)}] Category:{name}"
 
         page = site.pages[f"Category:{name}"]
