@@ -1408,32 +1408,32 @@ def main():
     # Phase 1: P459 qualifiers for existing P13723 statements
     try:
         p459_stats = generate_p459_qualifiers()
-    except RateLimitError:
-        print("WARNING: Rate-limited during P459 phase, skipping remaining work", flush=True)
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during P459 phase, skipping remaining work", flush=True)
         p459_stats = {"output_file": "modern_shrine_ranking_qualifiers.txt", "added": 0, "skipped": 0, "total": 0}
         rate_limited = True
 
     # Phase 2: Property-level edits to P13723 (after modern qualifiers, before migrations)
     try:
         prop_stats = generate_property_edits() if not rate_limited else {"output_file": "edit_p13723_property.txt", "lines": 0}
-    except RateLimitError:
-        print("WARNING: Rate-limited during property edits phase, skipping", flush=True)
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during property edits phase, skipping", flush=True)
         prop_stats = {"output_file": "edit_p13723_property.txt", "lines": 0}
         rate_limited = True
 
     # Remove P31=Q135026601 (Shikinai Hiteisha) statements
     try:
         hiteisha_stats = generate_hiteisha_removals() if not rate_limited else {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
-    except RateLimitError:
-        print("WARNING: Rate-limited during hiteisha removals, skipping", flush=True)
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during hiteisha removals, skipping", flush=True)
         hiteisha_stats = {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
         rate_limited = True
 
     # P4656: Add Japanese Wikipedia references to all P13723 statements
     try:
         p4656_stats = generate_p4656_references() if not rate_limited else {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
-    except RateLimitError:
-        print("WARNING: Rate-limited during P4656 phase, skipping", flush=True)
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during P4656 phase, skipping", flush=True)
         p4656_stats = {"output_file": "add_p4656_jawiki_refs.txt", "added": 0, "skipped": 0, "total": 0}
         rate_limited = True
 
@@ -1441,8 +1441,8 @@ def main():
     engishiki_ref_placeholder = {"output_file": ENGISHIKI_REFS_OUTPUT_FILE, "lines": 0, "total": 0, "remaining": 0, "completed": 0, "skipped_no_p13677": 0}
     try:
         engishiki_refs_stats = generate_engishiki_references() if not rate_limited else engishiki_ref_placeholder
-    except RateLimitError:
-        print("WARNING: Rate-limited during Engishiki reference phase, skipping", flush=True)
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during Engishiki reference phase, skipping", flush=True)
         engishiki_refs_stats = engishiki_ref_placeholder
         rate_limited = True
 
@@ -1464,8 +1464,8 @@ def main():
             stats = generate_migration(migration)
             migration_stats.append(stats)
             time.sleep(2)  # Be nice to SPARQL endpoint between categories
-        except RateLimitError:
-            print(f"WARNING: Rate-limited during {name} migration, skipping remaining migrations", flush=True)
+        except (RateLimitError, requests.exceptions.HTTPError) as exc:
+            print(f"WARNING: {exc.__class__.__name__} during {name} migration, skipping remaining migrations", flush=True)
             migration_stats.append(placeholder)
             rate_limited = True
 
