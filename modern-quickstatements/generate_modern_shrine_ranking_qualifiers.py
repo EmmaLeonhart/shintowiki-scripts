@@ -1454,8 +1454,11 @@ def main():
         add_file = f"{base}_add.txt"
         remove_file = f"{base}_remove.txt"
         placeholder = {
-            "name": name, "add_file": add_file, "remove_file": remove_file,
-            "total": 0, "done": 0, "to_migrate": 0, "add_lines": 0, "remove_lines": 0,
+            "name": name, "description": migration["description"],
+            "source_property": migration["source_property"],
+            "determined_by": migration["determined_by"],
+            "add_file": add_file, "remove_file": remove_file,
+            "total": 0, "completed": 0, "remaining": 0, "add_lines": 0, "remove_lines": 0,
         }
         if rate_limited:
             migration_stats.append(placeholder)
