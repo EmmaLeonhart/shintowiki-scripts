@@ -15,6 +15,8 @@ Automated QuickStatements generation and submission for Wikidata shrine property
 ### File layout
 - `generate_*.py` — QuickStatements generators. Each queries Wikidata SPARQL and outputs `.txt` files.
 - `submit_daily_batch.py` — API submission script. Reads atomic `.txt` files, submits via QS API, writes JSON reports.
+- `direct_daily_edits.py` — Fallback: applies edits via Wikidata API directly when QuickStatements API fails.
+- `fetch_p11250_from_wiki.py` — Fetches P11250 QS lines from `[[QuickStatements/P11250]]` wiki page for daily batch submission.
 - `generate_run_history.py` — Reads `reports/*.json` and builds `_site/runs.html`.
 - `reports/` — JSON run reports (one per submission attempt).
 - `_site/` — Generated HTML/TXT files for GitHub Pages.
