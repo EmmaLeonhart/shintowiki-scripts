@@ -106,7 +106,7 @@ Categorization distinguishes:
 - Identified shikinaisha (confirmed modern shrine correspondence)
 - Candidate / disputed shikinaisha (no consensus on modern identification)
 
-Most pages linked to Wikidata via the "Mizen article" property (`P18`), though not all — particularly more recent additions. Pages without Wikidata connections often have broken ILL links pointing to "Unknown" as target (flaw in early workflow).
+Most pages linked to Wikidata via the P11250 (Miraheze article ID) property, though not all — particularly more recent additions. Pages without Wikidata connections often have broken ILL links pointing to "Unknown" as target (flaw in early workflow).
 
 Japanese Wikipedia content has been imported for most of them. Translation quality varies: early ChatGPT translations have the most issues.
 

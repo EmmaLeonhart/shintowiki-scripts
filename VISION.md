@@ -43,7 +43,7 @@ A separate `generate-pages.yml` workflow builds and deploys the [GitHub Pages da
 - [x] Add `{{moved to}}` / `{{moved from}}` for recent page moves
 - [x] Fix `[[:Category:X]]` colon prefix in dup-disambiguation pages
 - [ ] Audit category pages for remaining race-condition artifacts (see postmortem below)
-- [ ] Remove all hardcoded passwords → environment variables
+- [x] Remove all hardcoded passwords → environment variables (done: all scripts use `os.environ` for credentials; CI uses GitHub Actions secrets/variables)
 
 ---
 
@@ -132,7 +132,7 @@ To enable cross-language sync at fine granularity:
 
 ## Secrets
 
-Move all credentials out of source code. Proposed approach:
+Credentials have been moved out of source code. Current approach:
 
 ```python
 import os

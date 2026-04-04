@@ -1,4 +1,4 @@
-﻿# Devlog â€” shintowiki bot operations
+﻿# Devlog — shintowiki bot operations
 
 Running log of all significant bot operations and wiki changes. Most recent first.
 
