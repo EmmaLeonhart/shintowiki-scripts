@@ -9,7 +9,7 @@ For each instance of Q135038714:
   - Generate a QuickStatement adding P958 = ranking number as qualifier
 
 Disputed shikinaisha (P460 links without P1352 qualifiers) get
-P958 = Q105729336 (not applicable) on their Kokugakuin IDs.
+P958 = "n/a" (not applicable) on their Kokugakuin IDs.
 
 Items with multiple P13677 statements are flagged for manual review.
 Ranking numbers that don't follow expected patterns (sequential from 1,
@@ -274,7 +274,7 @@ def main():
             )
 
     # --- Disputed Shikinaisha parent items (Q135038714) ---
-    # Only the PARENT Ronsha items themselves get P958=Q105729336 (not applicable),
+    # Only the PARENT Ronsha items themselves get P958="n/a" (not applicable),
     # because they are grouping items that don't have sections in the Kokugakuin
     # database. Child shrines linked via P460 still have real sections even if
     # the P1352 ranking hasn't been recorded on the P460 statement yet.
@@ -287,7 +287,7 @@ def main():
     """
 
     print("\n" + "=" * 60)
-    print("Disputed Shikinaisha parent items — P958=Q105729336 (not applicable)")
+    print('Disputed Shikinaisha parent items — P958="n/a" (not applicable)')
     print("=" * 60)
 
     print("\nQuerying SPARQL for Q135038714 (Disputed Shikinaisha) instances...")
@@ -338,15 +338,15 @@ def main():
 
             p13677_value = p13677_values[0]
             disputed_statements.append(
-                f'{pqid}|P13677|"{p13677_value}"|P958|Q105729336'
+                f'{pqid}|P13677|"{p13677_value}"|P958|"n/a"'
             )
             print(
-                f"  {pqid} ({parent_labels_d[pqid]}) ← P958=Q105729336 (n/a) "
+                f'  {pqid} ({parent_labels_d[pqid]}) \u2190 P958="n/a" '
                 f"[Disputed Shikinaisha parent]"
             )
 
     print(f"\nDisputed parent results:")
-    print(f"  P958=Q105729336 for existing P13677: {len(disputed_statements)}")
+    print(f'  P958="n/a" for existing P13677: {len(disputed_statements)}')
     print(f"  Skipped (already has P958): {disputed_skipped_existing}")
     print(f"  Skipped (no P13677): {disputed_skipped_no_p13677}")
     print(f"  Flagged for manual review: {len(disputed_manual_review)}")
@@ -362,7 +362,7 @@ def main():
     print(f"Results:")
     print(f"  P958 qualifiers for existing P13677: {len(quickstatements)}")
     print(f"  New P13677 + P958 (from parent): {added_from_parent}")
-    print(f"  Disputed P958=Q105729336 (parent items only): {len(disputed_statements)}")
+    print(f'  Disputed P958="n/a" (parent items only): {len(disputed_statements)}')
     print(f"  Total QuickStatements: {len(all_statements)}")
     print(f"  Skipped (already has P958): {skipped_existing + disputed_skipped_existing}")
     print(f"  Skipped (no P13677, parent also missing): {skipped_no_p13677 + disputed_skipped_no_p13677}")
