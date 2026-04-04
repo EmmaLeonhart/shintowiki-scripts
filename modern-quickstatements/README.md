@@ -33,6 +33,8 @@ Generates QuickStatements v1 files for batch Wikidata edits and submits them dai
 | `generate_p958_qualifiers.py` | Generates P958 section qualifiers for P13677 |
 | `submit_daily_batch.py` | Submits atomic QS files via API; writes JSON report to `reports/` |
 | `test_wikidata_qualifier.py` | Applies P459 qualifiers to P13723 via Wikidata API directly (10/run) |
+| `direct_daily_edits.py` | Fallback: applies edits via Wikidata API directly when QuickStatements API fails |
+| `fetch_p11250_from_wiki.py` | Fetches P11250 QS lines from `[[QuickStatements/P11250]]` wiki page; writes `p11250_miraheze_links.txt` |
 | `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
 
 ### Generated files (atomic — submitted daily)
@@ -43,6 +45,7 @@ Generates QuickStatements v1 files for batch Wikidata edits and submits them dai
 | `p958_qualifiers.txt` | P958 section qualifiers on P13677 |
 | `p4656_jawiki_references.txt` | P4656 ja.wiki references on P13723 |
 | `remove_shikinai_hiteisha.txt` | Remove P31=Q135026601 |
+| `p11250_miraheze_links.txt` | P11250 (ShintoDB article ID) links fetched from shintowiki |
 
 ### Generated files (non-atomic — manual submission only)
 

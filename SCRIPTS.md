@@ -66,7 +66,9 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `fix_double_redirects.py` | ACTIVE | Fixes pages listed on Special:DoubleRedirects by pointing directly to final target. |
 | `resolve_double_category_qids.py` | ACTIVE | Walks `[[Category:Double category qids]]` disambiguation pages. When all listed categories resolve to the same target, replaces with a simple redirect. 100/run. |
 
-### Chunk 3: Wikidata
+### Chunk 3: Wikidata (paused until May 2026)
+
+> **Note:** All Wikidata steps are paused until May 2026 via a date check in the workflow. When active, they run at 50 edits/run.
 
 | Script | Status | Description |
 |--------|--------|-------------|
@@ -79,7 +81,7 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 
 | Script | Status | Description |
 |--------|--------|-------------|
-| `fix_template_noinclude.py` | ACTIVE | Finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` and wraps them properly. 100/run. |
+| `fix_template_noinclude.py` | DISABLED | Finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` and wraps them properly. Disabled in workflow — one-time fix completed. |
 | `categorize_uncategorized_pages.py` | ACTIVE | Tags mainspace pages from Special:UncategorizedPages with `[[Category:Uncategorized pages]]`. 100/run. |
 | `tag_untranslated_japanese.py` | ACTIVE | Detects significant Japanese text outside expected contexts (templates, interwikis, refs). Tags with bucketed categories (50+ through 5000+). 100 pages checked/run. Supports `--category` for targeted re-bucketing. |
 
@@ -93,16 +95,16 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `delete_broken_redirects.py` | ACTIVE | Deletes redirects from Special:BrokenRedirects whose target page does not exist. |
 | `remove_crud_categories.py` | ACTIVE | Strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories. |
 
-### Deprecated (Sunday only)
+### Deprecated (Sunday + monthly)
 
-| Script | Status | Description |
-|--------|--------|-------------|
-| `normalize_category_pages.py` | DEPRECATED | Enforces canonical category page layout (templates / interwikis / categories). State file unchanged since Mar 1. |
-| `tag_shikinaisha_talk_pages.py` | DEPRECATED | Adds "generated from Wikidata" notice to shikinaisha talk pages. State file unchanged since Feb 26. |
-| `fix_erroneous_qid_category_links.py` | DEPRECATED | Fixes category/QID mismatches. Category fully cleared as of Mar 12. |
-| `remove_legacy_cat_templates.py` | DEPRECATED | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages. State file unchanged since Mar 1. |
-| `move_categories.py` | DEPRECATED | Moves/renames categories per `category_moves.csv`. Likely all moves complete. |
-| `create_japanese_category_qid_redirects.py` | DEPRECATED | Creates QID redirects for Japanese-named categories. Likely all redirects created. |
+| Script | Status | Schedule | Description |
+|--------|--------|----------|-------------|
+| `normalize_category_pages.py` | DEPRECATED | Sunday | Enforces canonical category page layout (templates / interwikis / categories). State file unchanged since Mar 1. |
+| `tag_shikinaisha_talk_pages.py` | DEPRECATED | Sunday | Adds "generated from Wikidata" notice to shikinaisha talk pages. State file unchanged since Feb 26. |
+| `fix_erroneous_qid_category_links.py` | DEPRECATED | 1st of month | Fixes category/QID mismatches. Category fully cleared as of Mar 12. |
+| `remove_legacy_cat_templates.py` | DEPRECATED | 1st of month | Removes `{{デフォルトソート}}` and `{{citation needed}}` artifacts from category pages. State file unchanged since Mar 1. |
+| `move_categories.py` | DEPRECATED | 1st of month | Moves/renames categories per `category_moves.csv`. Likely all moves complete. |
+| `create_japanese_category_qid_redirects.py` | DEPRECATED | 1st of month | Creates QID redirects for Japanese-named categories. Likely all redirects created. |
 
 ---
 
@@ -136,6 +138,8 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `generate_modern_shrine_ranking_qualifiers.py` | ACTIVE | Generates P459 (determination method) qualifiers for P13723 (shrine ranking). Also handles Phase 3 migration of P31/P1552 to P13723. |
 | `submit_daily_batch.py` | ACTIVE | Submits atomic QS operation files via QuickStatements API. Writes JSON run reports to `reports/`. Never exits non-zero — logs outcome and continues. |
 | `test_wikidata_qualifier.py` | ACTIVE | Applies P459 qualifiers to P13723 statements via the Wikidata API directly (bypasses QuickStatements). Up to 10 edits per run. |
+| `direct_daily_edits.py` | ACTIVE | Fallback: applies edits via Wikidata API directly when QuickStatements API fails. |
+| `fetch_p11250_from_wiki.py` | ACTIVE | Fetches P11250 QuickStatements lines from `[[QuickStatements/P11250]]` wiki page and writes to `p11250_miraheze_links.txt` for daily batch submission. |
 | `generate_run_history.py` | ACTIVE | Reads all `reports/*.json` and builds `_site/runs.html` with outcome badges and batch details. |
 
 ---
