@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shintowiki Scripts</title>
+  <style>* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 960px; margin: 2rem auto; padding: 0 1.5rem;
+  color: #1a1a1a; line-height: 1.6;
+}
+h1 { border-bottom: 3px solid #4caf50; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+h2 { color: #2e7d32; margin: 1.5rem 0 0.75rem; }
+h3 { color: #333; margin: 1rem 0 0.5rem; }
+a { color: #2e7d32; }
+a:hover { color: #4caf50; }
+p { margin: 0.5rem 0; }
+nav {
+  background: #f1f8e9; border: 1px solid #c5e1a5; border-radius: 8px;
+  padding: 1rem 1.5rem; margin-bottom: 1.5rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+}
+nav a { text-decoration: none; font-weight: 500; }
+nav .sep { color: #aed581; }
+.timestamp { color: #666; font-size: 0.85rem; }
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem; margin: 1rem 0;
+}
+.stat-card {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1rem; text-align: center;
+}
+.stat-card .number { font-size: 1.8rem; font-weight: 700; color: #2e7d32; }
+.stat-card .label { font-size: 0.85rem; color: #666; }
+.section {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1.25rem; margin: 1rem 0;
+}
+.section h3 { margin-top: 0; }
+.info-box {
+  background: #fff3e0; border-left: 4px solid #ff9800;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.success-box {
+  background: #e8f5e9; border-left: 4px solid #4caf50;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 1rem 0;
+}
+.feature-card {
+  background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px;
+  padding: 1.25rem; text-decoration: none; color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { border-color: #4caf50; box-shadow: 0 2px 8px rgba(76,175,80,0.15); }
+.feature-card h3 { color: #2e7d32; margin: 0 0 0.5rem; }
+.feature-card p { margin: 0; font-size: 0.9rem; color: #555; }
+.qs-box {
+  width: 100%; font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.8rem; border: 1px solid #ccc; border-radius: 4px;
+  padding: 0.75rem; resize: vertical; background: #fafafa;
+}
+.progress-bar {
+  background: #e0e0e0; border-radius: 12px; height: 24px;
+  overflow: hidden; margin: 0.5rem 0;
+}
+.progress-fill {
+  height: 100%; background: #4caf50; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 600;
+  transition: width 0.3s ease; min-width: 2rem;
+}
+.pipeline-list { list-style: none; padding: 0; }
+.pipeline-list li {
+  padding: 0.4rem 0.75rem; border-left: 3px solid #e0e0e0; margin: 0.25rem 0;
+}
+.pipeline-list li.chunk-header {
+  border-left-color: #4caf50; font-weight: 600; margin-top: 0.75rem;
+}
+footer {
+  margin-top: 2rem; padding-top: 1rem;
+  border-top: 1px solid #e0e0e0; color: #999; font-size: 0.8rem;
+}
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" style="font-weight:700;font-size:1.1rem;color:#2e7d32;text-decoration:none;">shintowiki</a>
+  <span class="sep">|</span>
+  <strong>Overview</strong>  <a href="shrine-ranking.html">Shrine Ranking</a>  <a href="p11250.html">P11250</a>  <a href="runs.html">Run History</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">GitHub</a>
+  <a href="https://shinto.miraheze.org">Wiki</a>
+</nav>
+
+<h1>Shintowiki Scripts</h1>
+
+<div class="section">
+  <h3>About the project</h3>
+  <p><a href="https://shinto.miraheze.org">shinto.miraheze.org</a> is an independent wiki documenting Shinto shrines,
+  Japanese religious history, and related topics. It was founded after content created on English Wikipedia
+  could no longer be maintained there, preserving thousands of articles about shrines, deities, and
+  religious practices.</p>
+  <p>The wiki uses <strong>interlanguage link templates</strong> (<code>{{ill}}</code>) for every
+  cross-wiki reference, and <strong>Wikidata integration</strong> (<code>{{wikidata link}}</code>)
+  to connect pages to the linked data ecosystem. Every page is linked to its Wikidata item where one exists.</p>
+</div>
+
+<h2>Wikidata QuickStatements</h2>
+<div class="feature-grid">
+  <a class="feature-card" href="shrine-ranking.html">
+    <h3>Shrine Ranking (P13723)</h3>
+    <p>Add P459 determination method qualifiers to shrine ranking statements, P958 section qualifiers to Kokugakuin Museum entries, and migrate legacy properties.</p>
+  </a>
+  <a class="feature-card" href="p11250.html">
+    <h3>Miraheze Article ID (P11250)</h3>
+    <p>Link Wikidata items to their shintowiki articles. 1,289 pending statements.</p>
+  </a>
+  <a class="feature-card" href="runs.html">
+    <h3>Run History</h3>
+    <p>Track daily QuickStatements submission outcomes &mdash; submitted, partial, skipped, or failed.</p>
+  </a>
+</div>
+
+<h2>Wiki statistics</h2>
+<div class="stats-grid">
+  <div class="stat-card"><div class="number">11,187</div><div class="label">Content pages</div></div>
+  <div class="stat-card"><div class="number">3,590,965</div><div class="label">Total edits</div></div>
+  <div class="stat-card"><div class="number">0</div><div class="label">Linked to Wikidata</div></div>
+  <div class="stat-card"><div class="number">175</div><div class="label">Missing Wikidata</div></div>
+</div>
+
+<h2>Wikidata integration progress</h2>
+<div class="progress-bar">
+  <div class="progress-fill" style="width:0.0%">0 linked (0%)</div>
+</div>
+<p class="timestamp">175 pages still need Wikidata links</p>
+
+<h2>Automated maintenance</h2>
+<div class="section">
+  <p>The <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> repository runs a daily <strong>GitHub Actions</strong>
+  pipeline that performs automated maintenance on the wiki. All edits are made by
+  <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a> with transparent edit summaries linking back to
+  the workflow run.</p>
+
+  <h3>Pipeline stages</h3>
+  <ul class="pipeline-list">
+    <li class="chunk-header">Import &amp; Categorization</li>
+    <li>Reimport pages from English Wikipedia</li>
+    <li>Create wanted categories as stubs</li>
+    <li>Triage autocreated categories (enwiki / jawiki / secondary)</li>
+    <li>Create shrine ranking article pages</li>
+    <li class="chunk-header">Structural Fixes</li>
+    <li>Delete unused templates</li>
+    <li>Fix double redirects</li>
+    <li>Resolve duplicate QID disambiguation pages</li>
+    <li class="chunk-header">Wikidata</li>
+    <li>Generate P11250 QuickStatements (<a href="p11250.html">view</a>)</li>
+    <li>Clean completed QuickStatements</li>
+    <li>Tag pages without Wikidata links</li>
+    <li>Clean wikidata category redirects</li>
+    <li class="chunk-header">Final</li>
+    <li>Fix template noinclude blocks</li>
+    <li>Categorize uncategorized pages</li>
+    <li>Tag untranslated Japanese content</li>
+    <li class="chunk-header">Cleanup</li>
+    <li>Delete unused categories &amp; broken redirects</li>
+    <li>Migrate &amp; clean up talk pages</li>
+    <li>Remove crud category tags</li>
+  </ul>
+</div>
+
+<h2>Ongoing work</h2>
+<div class="stats-grid">
+  <div class="stat-card"><div class="number">0</div><div class="label">Japanese category names<br><small>(need translation)</small></div></div>
+  <div class="stat-card"><div class="number">0</div><div class="label">Autocreated categories<br><small>(need enrichment)</small></div></div>
+  <div class="stat-card"><div class="number">0</div><div class="label">Pages with untranslated<br>Japanese content</div></div>
+  <div class="stat-card"><div class="number">323</div><div class="label">Double category QIDs<br><small>(being resolved)</small></div></div>
+</div>
+
+<div class="section">
+  <h3>Key categories</h3>
+  <ul>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:Pages_linked_to_Wikidata">Pages linked to Wikidata</a> (0)</li>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:Pages_without_wikidata">Pages without wikidata</a> (175)</li>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names">Japanese language category names</a> (0)</li>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:Double_category_qids">Double category QIDs</a> (323)</li>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:duplicated_qid_category_redirects">Duplicated QID category redirects</a> (0)</li>
+    <li><a href="https://shinto.miraheze.org/wiki/Category:Pages_with_untranslated_japanese_content">Pages with untranslated Japanese content</a> (0)</li>
+  </ul>
+</div>
+
+<footer>
+  Generated 2026-04-04 21:08 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
+</footer>
+</body>
+</html>

@@ -6,4 +6,4 @@ __pycache__/
 tmpclaude-*/
 desktop.ini
 shinto_miraheze/manual_import_local.py
-_site/
+# _site/ is tracked — committed locally and updated by CI
