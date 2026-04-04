@@ -23,6 +23,10 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Fetch P11250 from wiki
+        working-directory: modern-quickstatements
+        run: python fetch_p11250_from_wiki.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         run: python generate_modern_shrine_ranking_qualifiers.py
@@ -32,10 +36,6 @@ jobs:
         run: |
           sleep 10
           python generate_p958_qualifiers.py
-
-      - name: Fetch P11250 from wiki
-        working-directory: modern-quickstatements
-        run: python fetch_p11250_from_wiki.py
 
       - name: Upload generated QS files
         uses: actions/upload-artifact@v4

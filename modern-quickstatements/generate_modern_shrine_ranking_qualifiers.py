@@ -392,6 +392,45 @@ def generate_hiteisha_removals():
     }
 
 
+SHIKINAISHA_OUTPUT_FILE = "remove_shikinaisha.txt"
+
+
+def generate_shikinaisha_removals():
+    """Generate QuickStatements to remove P31=Q134917286 (Shikinaisha) from items that are P31=Q135022904 (Shikinai Ronsha)."""
+    query = """
+    SELECT ?item WHERE {
+      ?item wdt:P31 wd:Q135022904 .
+      ?item wdt:P31 wd:Q134917286 .
+    }
+    ORDER BY ?item
+    """
+
+    print("\n=== Shikinaisha (Q134917286) removal from Shikinai Ronsha items ===")
+    print("Fetching Shikinai Ronsha items that also have P31=Shikinaisha...")
+    results = fetch_sparql(query)
+    remaining = len(results)
+    print(f"Found {remaining} items with both P31=Shikinai Ronsha and P31=Shikinaisha")
+
+    lines = []
+    for r in results:
+        item = qid(r["item"]["value"])
+        lines.append(f"-{item}|P31|Q134917286")
+
+    with open(SHIKINAISHA_OUTPUT_FILE, "w", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+    print(f"Written {len(lines)} lines to {SHIKINAISHA_OUTPUT_FILE}")
+
+    return {
+        "name": "Remove P31 Shikinaisha from Shikinai Ronsha",
+        "description": "Remove P31 (instance of) → Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha)",
+        "remaining": remaining,
+        "output_file": SHIKINAISHA_OUTPUT_FILE,
+        "lines": len(lines),
+    }
+
+
 def generate_property_edits():
     """Phase 0: Write property-level edits for P13723 itself."""
     print("\n=== Phase 2: P13723 property edits ===")
@@ -1066,7 +1105,65 @@ def generate_hiteisha_html_section(stats):
   <textarea class="qs-box" rows="10" readonly onclick="this.select()">{batch_escaped}</textarea>"""
 
 
-def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, engishiki_refs_stats=None):
+def generate_shikinaisha_html_section(stats):
+    """Generate HTML section for Shikinaisha removal from Shikinai Ronsha items."""
+    if not stats or stats["lines"] == 0:
+        return """
+  <h2>Remove P31 Shikinaisha (Q134917286) from Shikinai Ronsha</h2>
+  <p>All <code>P31</code> &rarr; <code>Q134917286</code> (Shikinaisha) statements have been removed from Shikinai Ronsha items.</p>
+  <div class="stats"><strong>0 remaining</strong></div>"""
+
+    batch = read_first_n_lines(stats["output_file"])
+    batch_escaped = html_escape(batch)
+    shown = min(stats["lines"], MAX_LINES_PER_BATCH)
+
+    return f"""
+  <h2>Remove P31 Shikinaisha (Q134917286) from Shikinai Ronsha</h2>
+  <p>Remove <code>P31</code> (instance of) &rarr; <code>Q134917286</code>
+     (<a href="https://www.wikidata.org/wiki/Q134917286">Shikinaisha</a>) from items that have
+     <code>P31</code> &rarr; <code>Q135022904</code>
+     (<a href="https://www.wikidata.org/wiki/Q135022904">Shikinai Ronsha</a>).
+     Shikinai Ronsha is more specific and replaces the generic Shikinaisha class.</p>
+  <div class="stats">
+    <strong>{stats["remaining"]} items remaining</strong>
+  </div>
+  <p>{shown} of {stats["lines"]} total lines
+     &mdash; <a href="{stats["output_file"]}">Download all</a></p>
+  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{batch_escaped}</textarea>"""
+
+
+def generate_p11250_html_section():
+    """Generate HTML section for P11250 Miraheze article ID lines."""
+    p11250_file = "p11250_miraheze_links.txt"
+    if not os.path.exists(p11250_file):
+        return ""
+
+    with open(p11250_file, "r", encoding="utf-8") as f:
+        lines = [line.strip() for line in f if line.strip()]
+
+    if not lines:
+        return """
+  <h2>P11250 Miraheze Article ID</h2>
+  <p>All Wikidata items are linked to their shintowiki pages.</p>
+  <div class="stats"><strong>0 remaining</strong></div>"""
+
+    batch = "\n".join(lines[:MAX_LINES_PER_BATCH])
+    batch_escaped = html_escape(batch)
+    shown = min(len(lines), MAX_LINES_PER_BATCH)
+
+    return f"""
+  <h2>P11250 Miraheze Article ID</h2>
+  <p>Add <code>P11250</code> (Miraheze article ID) linking Wikidata items to their corresponding
+     pages on <a href="https://shinto.miraheze.org">shinto.miraheze.org</a>.</p>
+  <div class="stats">
+    <strong>{len(lines)} items remaining</strong>
+  </div>
+  <p>{shown} of {len(lines)} total lines
+     &mdash; <a href="{p11250_file}">Download all</a></p>
+  <textarea class="qs-box" rows="10" readonly onclick="this.select()">{batch_escaped}</textarea>"""
+
+
+def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, engishiki_refs_stats=None, shikinaisha_stats=None):
     """Generate the site index.html with progress for all categories."""
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -1115,6 +1212,8 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
 
     # Shikinai Hiteisha removal section
     hiteisha_section = generate_hiteisha_html_section(hiteisha_stats) if hiteisha_stats else ""
+    shikinaisha_section = generate_shikinaisha_html_section(shikinaisha_stats) if shikinaisha_stats else ""
+    p11250_section = generate_p11250_html_section()
 
     # Duplicate properties section
     duplicates_section = generate_duplicates_section()
@@ -1238,6 +1337,10 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
 
   {hiteisha_section}
 
+  {shikinaisha_section}
+
+  {p11250_section}
+
   {duplicates_section}
 
   <hr>
@@ -1250,7 +1353,7 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
         f.write(html)
 
 
-def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats=None, engishiki_refs_stats=None):
+def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats=None, engishiki_refs_stats=None, shikinaisha_stats=None):
     """Generate the daily operations page — a single combined box of what to run now.
 
     Priority order:
@@ -1338,6 +1441,27 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
                     lines.append(stripped)
                     hiteisha_count += 1
 
+    # Always include Shikinaisha removals (from Shikinai Ronsha items)
+    shikinaisha_count = 0
+    if shikinaisha_stats and os.path.exists(shikinaisha_stats["output_file"]):
+        with open(shikinaisha_stats["output_file"], "r", encoding="utf-8") as f:
+            for line in f:
+                stripped = line.strip()
+                if stripped:
+                    lines.append(stripped)
+                    shikinaisha_count += 1
+
+    # Always include P11250 Miraheze article ID lines
+    p11250_count = 0
+    p11250_file = "p11250_miraheze_links.txt"
+    if os.path.exists(p11250_file):
+        with open(p11250_file, "r", encoding="utf-8") as f:
+            for line in f:
+                stripped = line.strip()
+                if stripped:
+                    lines.append(stripped)
+                    p11250_count += 1
+
     # Write combined file
     daily_file = "daily_operations.txt"
     with open(daily_file, "w", encoding="utf-8") as f:
@@ -1386,7 +1510,9 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
     {"<em>Includes " + str(p4656_count) + " P4656 ja.wiki reference lines</em><br>" if p4656_count else ""}
     {"<em>Includes " + str(p958_count) + " P958 qualifier lines</em><br>" if p958_count else ""}
     {"<em>Includes " + str(engishiki_refs_count) + " Engishiki/Ritsury&#x14D; reference lines</em><br>" if engishiki_refs_count else ""}
-    {"<em>Includes " + str(hiteisha_count) + " Shikinai Hiteisha removal lines</em>" if hiteisha_count else ""}
+    {"<em>Includes " + str(hiteisha_count) + " Shikinai Hiteisha removal lines</em><br>" if hiteisha_count else ""}
+    {"<em>Includes " + str(shikinaisha_count) + " Shikinaisha removal lines (from Shikinai Ronsha)</em><br>" if shikinaisha_count else ""}
+    {"<em>Includes " + str(p11250_count) + " P11250 Miraheze article ID lines</em>" if p11250_count else ""}
   </div>
 
   <textarea class="qs-box" rows="30" readonly onclick="this.select()">{batch_escaped}</textarea>
@@ -1427,6 +1553,14 @@ def main():
     except (RateLimitError, requests.exceptions.HTTPError) as exc:
         print(f"WARNING: {exc.__class__.__name__} during hiteisha removals, skipping", flush=True)
         hiteisha_stats = {"output_file": "remove_shikinai_hiteisha.txt", "removed": 0, "total": 0}
+        rate_limited = True
+
+    # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
+    try:
+        shikinaisha_stats = generate_shikinaisha_removals() if not rate_limited else {"output_file": "remove_shikinaisha.txt", "remaining": 0, "lines": 0}
+    except (RateLimitError, requests.exceptions.HTTPError) as exc:
+        print(f"WARNING: {exc.__class__.__name__} during shikinaisha removals, skipping", flush=True)
+        shikinaisha_stats = {"output_file": "remove_shikinaisha.txt", "remaining": 0, "lines": 0}
         rate_limited = True
 
     # P4656: Add Japanese Wikipedia references to all P13723 statements
@@ -1476,8 +1610,8 @@ def main():
         print("\nWARNING: Some phases were skipped due to rate limiting. Partial results will be used.", flush=True)
 
     # Build site
-    generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats, engishiki_refs_stats)
-    generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats, engishiki_refs_stats)
+    generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats, engishiki_refs_stats, shikinaisha_stats)
+    generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_stats, hiteisha_stats, engishiki_refs_stats, shikinaisha_stats)
 
     # Copy all QuickStatements files into _site
     migration_files = []
@@ -1488,18 +1622,19 @@ def main():
             migration_files.append(m["underspec_file"])
     all_files = [
         p459_stats["output_file"], p4656_stats["output_file"],
-        hiteisha_stats["output_file"], engishiki_refs_stats["output_file"],
+        hiteisha_stats["output_file"], shikinaisha_stats["output_file"],
+        engishiki_refs_stats["output_file"],
     ] + migration_files + [prop_stats["output_file"]]
-    # Include P958 files if they exist
-    for p958_file in ["p958_qualifiers.txt", "p958_manual_review.txt"]:
-        if os.path.exists(p958_file):
-            all_files.append(p958_file)
+    # Include P958 and P11250 files if they exist
+    for extra_file in ["p958_qualifiers.txt", "p958_manual_review.txt", "p11250_miraheze_links.txt"]:
+        if os.path.exists(extra_file):
+            all_files.append(extra_file)
     for fname in all_files:
         if os.path.exists(fname):
             shutil.copy(fname, os.path.join("_site", fname))
 
     # Write summary JSON
-    summary = {"p459": p459_stats, "p4656": p4656_stats, "hiteisha": hiteisha_stats, "engishiki_refs": engishiki_refs_stats, "migrations": migration_stats, "property_edits": prop_stats}
+    summary = {"p459": p459_stats, "p4656": p4656_stats, "hiteisha": hiteisha_stats, "shikinaisha": shikinaisha_stats, "engishiki_refs": engishiki_refs_stats, "migrations": migration_stats, "property_edits": prop_stats}
     with open("_site/summary.json", "w") as f:
         json.dump(summary, f, indent=2)
 
