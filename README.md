@@ -46,7 +46,7 @@ shintowiki-scripts/
 ├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
 │   ├── reports/                # JSON run reports from QS submissions
 │   └── _site/                  # Generated QS dashboard pages
-├── _site/                      # GitHub Pages output (main site)
+├── _site/                      # GitHub Pages output (generated at build time, not committed)
 ├── generate_pages.py           # Generates the main GitHub Pages site
 ├── EmmaBot.wiki                # Wiki template for User:EmmaBot status updates
 └── docs: README.md, SCRIPTS.md, API.md, SHINTOWIKI_STRUCTURE.md,
@@ -146,7 +146,7 @@ Atomic files submitted daily:
 - `remove_shikinai_hiteisha.txt` — Remove P31=Q135026601 (Shikinai Hiteisha)
 - `p11250_miraheze_links.txt` — P11250 (ShintoDB article ID) links fetched from shintowiki
 
-The submission job **never fails the workflow** — it logs the outcome (submitted/partial/skipped/failed) to a JSON report and exits cleanly. The run history page at `runs.html` tracks all outcomes over time.
+The submission job exits non-zero when all batches fail, which triggers the `direct-daily-edits.yml` fallback. The workflow step has `continue-on-error: true` so the overall pipeline continues regardless. All outcomes (submitted/partial/skipped/failed) are logged to JSON reports. The run history page at `runs.html` tracks all outcomes over time.
 
 ---
 
@@ -159,9 +159,9 @@ Deployed via `generate-pages.yml` (daily at 00:30 UTC). The `build-run-history.y
 | Page | URL | Source |
 |------|-----|--------|
 | Project overview | [index](https://emmaleonhart.github.io/shintowiki-scripts/) | `generate_pages.py` — automation status + P11250 overview |
-| Shrine ranking dashboard | [shrine-ranking](https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html) | `modern-quickstatements` — P13723/P958 QuickStatements status |
+| Shrine ranking dashboard | [shrine-ranking](https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html) | `modern-quickstatements/_site/index.html` — P13723/P958 QuickStatements status (renamed during Pages build) |
 | Run history | [runs](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) | `generate_run_history.py` — QS submission history with outcome badges |
-| P11250 QuickStatements | [p11250](https://emmaleonhart.github.io/shintowiki-scripts/p11250.html) | Copy-paste QuickStatements for Wikidata P11250 |
+| P11250 QuickStatements | [p11250](https://emmaleonhart.github.io/shintowiki-scripts/p11250.html) | `generate_pages.py` — copy-paste QuickStatements for Wikidata P11250 |
 
 ---
 
