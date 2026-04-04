@@ -753,8 +753,12 @@ def generate_migration(migration):
         items_values.setdefault(item_id, set()).add(value_id)
 
     remaining = len(results)
-    completed = total - remaining
-    print(f"{source_prop} → P13723: {remaining} to migrate ({completed}/{total} done)")
+    # total counts old statements still present; items whose old P31 was already
+    # removed no longer appear.  Use remaining as the authoritative count of
+    # work left, and derive a corrected total that is always >= remaining.
+    completed = max(total - remaining, 0)
+    corrected_total = completed + remaining
+    print(f"{source_prop} → P13723: {remaining} to migrate ({completed}/{corrected_total} done)")
 
     if not items_values:
         open(add_file, "w").close()
@@ -862,7 +866,7 @@ def generate_migration(migration):
         "description": migration["description"],
         "source_property": source_prop,
         "determined_by": determined_by,
-        "total": total,
+        "total": corrected_total,
         "remaining": remaining,
         "completed": completed,
         "add_file": add_file,
