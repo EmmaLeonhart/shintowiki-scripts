@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-04-04
+
+### Fix GitHub Pages reverting to weeks-old content on pipeline failures
+**Workflows:** `generate-pages.yml`, `generate-quickstatements.yml`
+**Status:** Complete
+
+**The bug:** When `generate-quickstatements` failed (usually SPARQL timeouts), no artifact was uploaded. The `generate-pages` workflow would then fall back to *regenerating everything from SPARQL*, which also tended to time out (10-minute limit). When that fallback also failed, no pages deployed — but when it *partially* succeeded, it deployed with incomplete data. Either way the site got stuck showing whatever last succeeded, which could be weeks old.
+
+The subtle part: `_site/` was in `.gitignore`, so the repo never had a copy of the built pages. Every deployment had to generate them from scratch. If SPARQL was having a bad day (which was frequent — the pipeline makes 20+ queries), the pages simply couldn't be built at all.
+
+**The fix (three parts):**
+1. **Committed `_site/` to the repo** after running all generators locally. Removed `_site/` from `.gitignore`. The repo now always has a known-good copy of every page.
+2. **CI commits `_site/` after each successful build.** Both `generate-quickstatements.yml` (commits generated `.txt` files, only non-empty ones so partial failures don't overwrite good data) and `generate-pages.yml` (commits the built `_site/`) push back to the repo with `[skip ci]`.
+3. **Replaced the SPARQL fallback with the committed repo files.** When the artifact isn't available, `generate-pages` now just uses whatever's already checked out — no more re-querying SPARQL. Timeout increased from 10 to 30 minutes as a safety margin.
+
+The net effect: pages can never go stale. Worst case, a failed run leaves the previously-committed version in place. Each successful run (even partial) ratchets forward.
+
+### Add Shikinaisha removal from Shikinai Ronsha items
+**Script:** `generate_modern_shrine_ranking_qualifiers.py`
+**Status:** Complete
+
+New generator: removes P31=Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha). Shikinai Ronsha is more specific and replaces the generic Shikinaisha class. Found 2,329 items needing cleanup. Output: `remove_shikinaisha.txt`, added to both `submit_daily_batch.py` and `direct_daily_edits.py`.
+
+### Include P11250 Miraheze article ID in daily operations page
+**Script:** `generate_modern_shrine_ranking_qualifiers.py`
+**Status:** Complete
+
+P11250 lines were being submitted via the daily batch but weren't shown on the HTML dashboard or daily operations page. Now included in both, with a dedicated section on the shrine ranking dashboard. Also moved the `fetch_p11250_from_wiki.py` step to run before the main generator in the workflow so the file exists when the HTML is built.
+
+### Fix migration progress bar showing 100% with thousands of lines remaining
+**Script:** `generate_modern_shrine_ranking_qualifiers.py`
+**Status:** Complete
+
+The Engishiki ranking migration showed "100% complete" while still generating 4,359 add lines. Root cause: the `total` SPARQL query counts old P31 statements still present, but as migration progresses and old P31 values get removed, `total` shrinks below `remaining`. This gave `completed = total - remaining = -931`, which the progress bar clamped to 100%. Fixed by using `corrected_total = max(total - remaining, 0) + remaining` so the bar always reflects actual work remaining.
+
+---
+
 ## 2026-03-29
 
 ### Re-add retry with exponential backoff for SPARQL 429s
