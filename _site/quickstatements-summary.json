@@ -1,0 +1,125 @@
+{
+  "p459": {
+    "name": "P459 qualifiers (determination method)",
+    "description": "Add P459 (determination method) to existing P13723 statements \u2014 value-specific (Engishiki, Ritsury\u014d, modern, etc.)",
+    "total": 16940,
+    "remaining": 0,
+    "completed": 16940,
+    "output_file": "modern_shrine_ranking_qualifiers.txt",
+    "lines": 0
+  },
+  "p4656": {
+    "name": "P4656 Japanese Wikipedia references",
+    "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
+    "total": 16940,
+    "remaining": 120,
+    "completed": 16820,
+    "output_file": "p4656_jawiki_references.txt",
+    "lines": 120
+  },
+  "hiteisha": {
+    "name": "Remove P31 Shikinai Hiteisha",
+    "description": "Remove all P31 (instance of) \u2192 Q135026601 (Shikinai Hiteisha) statements",
+    "remaining": 0,
+    "output_file": "remove_shikinai_hiteisha.txt",
+    "lines": 0
+  },
+  "shikinaisha": {
+    "name": "Remove P31 Shikinaisha from Shikinai Ronsha",
+    "description": "Remove P31 (instance of) \u2192 Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha)",
+    "remaining": 2329,
+    "output_file": "remove_shikinaisha.txt",
+    "lines": 2329
+  },
+  "engishiki_refs": {
+    "name": "Engishiki/Ritsury\u014d references",
+    "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
+    "total": 11950,
+    "remaining": 1386,
+    "completed": 10564,
+    "output_file": "engishiki_add_references.txt",
+    "lines": 1340,
+    "skipped_no_p13677": 28
+  },
+  "migrations": [
+    {
+      "name": "Engishiki ranking",
+      "description": "Shikinai Sh\u014dsha, Shikinai Taisha, My\u014djin Taisha",
+      "source_property": "P31",
+      "determined_by": "Q138640329",
+      "total": 4352,
+      "remaining": 5283,
+      "completed": -931,
+      "add_file": "migrate_engishiki_ranking_add.txt",
+      "remove_file": "migrate_engishiki_ranking_remove.txt",
+      "add_lines": 4359,
+      "remove_lines": 15,
+      "underspec_file": null,
+      "underspec_lines": 0
+    },
+    {
+      "name": "Gifu Prefecture Shrine ranking",
+      "description": "Kinpei-sha, Ginpei-sha, Hakuhei-sha",
+      "source_property": "P1552",
+      "determined_by": "Q137901635",
+      "total": 81,
+      "remaining": 0,
+      "completed": 81,
+      "add_file": "migrate_gifu_ranking_add.txt",
+      "remove_file": "migrate_gifu_ranking_remove.txt",
+      "add_lines": 0,
+      "remove_lines": 81,
+      "underspec_file": null,
+      "underspec_lines": 0
+    },
+    {
+      "name": "Beppyo Shrine",
+      "description": "Beppyo Shrine",
+      "source_property": "P31",
+      "determined_by": "Q908077",
+      "total": 326,
+      "remaining": 0,
+      "completed": 326,
+      "add_file": "migrate_beppyo_shrine_add.txt",
+      "remove_file": "migrate_beppyo_shrine_remove.txt",
+      "add_lines": 0,
+      "remove_lines": 326,
+      "underspec_file": null,
+      "underspec_lines": 0
+    },
+    {
+      "name": "X-no-miya",
+      "description": "Ichinomiya, Ni-no-Miya, San-no-Miya, Shi-no-Miya, Go-no-Miya, Roku-no-Miya, Regional Ichinomiya",
+      "source_property": "P31",
+      "determined_by": "Q134916677",
+      "total": 0,
+      "remaining": 0,
+      "completed": 0,
+      "add_file": "migrate_x_no_miya_add.txt",
+      "remove_file": "migrate_x_no_miya_remove.txt",
+      "add_lines": 0,
+      "remove_lines": 0,
+      "underspec_file": null,
+      "underspec_lines": 0
+    },
+    {
+      "name": "Ritsury\u014d funding type",
+      "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
+      "source_property": "P31",
+      "determined_by": "Q135009120",
+      "total": 4870,
+      "remaining": 5224,
+      "completed": -354,
+      "add_file": "migrate_ritsuryo_funding_add.txt",
+      "remove_file": "migrate_ritsuryo_funding_remove.txt",
+      "add_lines": 4871,
+      "remove_lines": 208,
+      "underspec_file": "migrate_ritsuryo_funding_underspecified_remove.txt",
+      "underspec_lines": 7
+    }
+  ],
+  "property_edits": {
+    "output_file": "edit_p13723_property.txt",
+    "lines": 0
+  }
+}

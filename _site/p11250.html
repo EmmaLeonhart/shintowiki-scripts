@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P11250 QuickStatements — Shintowiki</title>
+  <style>* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 960px; margin: 2rem auto; padding: 0 1.5rem;
+  color: #1a1a1a; line-height: 1.6;
+}
+h1 { border-bottom: 3px solid #4caf50; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+h2 { color: #2e7d32; margin: 1.5rem 0 0.75rem; }
+h3 { color: #333; margin: 1rem 0 0.5rem; }
+a { color: #2e7d32; }
+a:hover { color: #4caf50; }
+p { margin: 0.5rem 0; }
+nav {
+  background: #f1f8e9; border: 1px solid #c5e1a5; border-radius: 8px;
+  padding: 1rem 1.5rem; margin-bottom: 1.5rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+}
+nav a { text-decoration: none; font-weight: 500; }
+nav .sep { color: #aed581; }
+.timestamp { color: #666; font-size: 0.85rem; }
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem; margin: 1rem 0;
+}
+.stat-card {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1rem; text-align: center;
+}
+.stat-card .number { font-size: 1.8rem; font-weight: 700; color: #2e7d32; }
+.stat-card .label { font-size: 0.85rem; color: #666; }
+.section {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1.25rem; margin: 1rem 0;
+}
+.section h3 { margin-top: 0; }
+.info-box {
+  background: #fff3e0; border-left: 4px solid #ff9800;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.success-box {
+  background: #e8f5e9; border-left: 4px solid #4caf50;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 1rem 0;
+}
+.feature-card {
+  background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px;
+  padding: 1.25rem; text-decoration: none; color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { border-color: #4caf50; box-shadow: 0 2px 8px rgba(76,175,80,0.15); }
+.feature-card h3 { color: #2e7d32; margin: 0 0 0.5rem; }
+.feature-card p { margin: 0; font-size: 0.9rem; color: #555; }
+.qs-box {
+  width: 100%; font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.8rem; border: 1px solid #ccc; border-radius: 4px;
+  padding: 0.75rem; resize: vertical; background: #fafafa;
+}
+.progress-bar {
+  background: #e0e0e0; border-radius: 12px; height: 24px;
+  overflow: hidden; margin: 0.5rem 0;
+}
+.progress-fill {
+  height: 100%; background: #4caf50; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 600;
+  transition: width 0.3s ease; min-width: 2rem;
+}
+.pipeline-list { list-style: none; padding: 0; }
+.pipeline-list li {
+  padding: 0.4rem 0.75rem; border-left: 3px solid #e0e0e0; margin: 0.25rem 0;
+}
+.pipeline-list li.chunk-header {
+  border-left-color: #4caf50; font-weight: 600; margin-top: 0.75rem;
+}
+footer {
+  margin-top: 2rem; padding-top: 1rem;
+  border-top: 1px solid #e0e0e0; color: #999; font-size: 0.8rem;
+}
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" style="font-weight:700;font-size:1.1rem;color:#2e7d32;text-decoration:none;">shintowiki</a>
+  <span class="sep">|</span>
+  <a href="index.html">Overview</a>  <a href="shrine-ranking.html">Shrine Ranking</a>  <strong>P11250</strong>  <a href="runs.html">Run History</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">GitHub</a>
+  <a href="https://shinto.miraheze.org">Wiki</a>
+</nav>
+
+<h1>P11250 QuickStatements</h1>
+
+<div class="section">
+  <h3>What is this?</h3>
+  <p><a href="https://www.wikidata.org/wiki/Property:P11250">P11250</a> (Miraheze article ID) links
+  Wikidata items to their corresponding articles on <a href="https://shinto.miraheze.org">shinto.miraheze.org</a>.
+  Each line below adds a <code>P11250</code> claim to a Wikidata item, connecting it to the shintowiki article.</p>
+  <p>These statements are generated automatically by
+  <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">EmmaBot</a> and can be pasted directly into
+  <a href="https://quickstatements.toolforge.org/">QuickStatements</a>.</p>
+</div>
+
+<div class="info-box">
+  Click the text box to select all contents, then paste into
+  <a href="https://quickstatements.toolforge.org/#/batch">QuickStatements batch mode</a>.
+  Each box shows up to 200 lines. Download the full file for all 1,289 lines.
+</div>
+
+<h2>Status</h2>
+<div class="stats-grid">
+  <div class="stat-card"><div class="number">1,289</div><div class="label">Pending QuickStatements</div></div>
+</div>
+
+<h2>QuickStatements</h2>
+<p><strong>1,289 lines</strong> &mdash;
+  <a href="p11250.txt" download>Download full p11250.txt</a></p>
+
+<textarea class="qs-box" rows="20" readonly onclick="this.select()">Q106852693|P11250|"shinto:Hiruko Shrine (Q106852693)"
+Q107297935|P11250|"shinto:Himesaka Kanachiana Shrine"
+Q107410059|P11250|"shinto:Haniyamahime Shrine"
+Q107410066|P11250|"shinto:Amatsukasahiko Shrine"
+Q107410067|P11250|"shinto:Amatsukasahiko Shrine (Q107410067)"
+Q107410068|P11250|"shinto:Amanohashidate Shrine"
+Q10777837|P11250|"shinto:Template:Harvard citation text/doc"
+Q10809670|P11250|"shinto:Template:Infobox deity"
+Q11000805|P11250|"shinto:Template:Islamic Ramadan"
+Q11001502|P11250|"shinto:Template:Islamic Rajab"
+Q110066542|P11250|"shinto:Template:Beppyo Shrines"
+Q110858812|P11250|"shinto:Ajiko Shrine"
+Q110915761|P11250|"shinto:Inane Shrine"
+Q111269921|P11250|"shinto:Hinatano Shrine"
+Q111374476|P11250|"shinto:Ikama Shrine"
+Q111442063|P11250|"shinto:Hakozaki Hachiman Shrine"
+Q111776816|P11250|"shinto:Hirose Shrine (Izunokuni)"
+Q112161861|P11250|"shinto:Arami Shrine"
+Q11275441|P11250|"shinto:Hajikami Shrine (Q11275441)"
+Q112923996|P11250|"shinto:Aomi Shrine"
+Q11352589|P11250|"shinto:Ichinomiya Sengen Shrine"
+Q11352598|P11250|"shinto:Ichinomiya Shrine (Tokushima)"
+Q11378800|P11250|"shinto:Ikuhime Shrine"
+Q11378911|P11250|"shinto:Ikagashi Shrine"
+Q11378969|P11250|"shinto:Isemikoto Shrine"
+Q11379181|P11250|"shinto:Ikohayawake-no-Mikoto Shrine"
+Q11379270|P11250|"shinto:Itahato Shrine"
+Q11379315|P11250|"shinto:Inu Shrine"
+Q11379320|P11250|"shinto:Ifuribe Shrine"
+Q11379321|P11250|"shinto:Ibuki Shrine"
+Q11379327|P11250|"shinto:Ikota Shrine"
+Q11379329|P11250|"shinto:Ikeda Shrine"
+Q11379343|P11250|"shinto:Ikawadani Sōja"
+Q11379707|P11250|"shinto:Ime Shrine & Hachimangu"
+Q11380845|P11250|"shinto:Date Shrine (Q11380845)"
+Q11380847|P11250|"shinto:Itate Shrine"
+Q11380848|P11250|"shinto:Idate Shrine"
+Q11381016|P11250|"shinto:Ikagu Shrine"
+Q11385699|P11250|"shinto:Horowasan Haushiwake Shrine"
+Q11390944|P11250|"shinto:Hachimangū Kinomiya Shrine"
+Q11395802|P11250|"shinto:Dewa Shrine"
+Q11408858|P11250|"shinto:Independent Shinto shrine"
+Q11409089|P11250|"shinto:Ikishiro Shrine"
+Q11423842|P11250|"shinto:Clay pipe"
+Q11442221|P11250|"shinto:Amasashinowake Shrine"
+Q11442354|P11250|"shinto:Amawake Toyohime Shrine"
+Q11442508|P11250|"shinto:Ame-Futotama-no-Mikoto Shrine"
+Q11443184|P11250|"shinto:Ama-no-Iwatate Shrine"
+Q11448984|P11250|"shinto:Enomiya Shrine"
+Q11451153|P11250|"shinto:Afuku Kahaku Shrine"
+Q11451521|P11250|"shinto:Adatara Shrine"
+Q11456095|P11250|"shinto:Fuji Sengen Shrine (Togo Town)"
+Q11457275|P11250|"shinto:Fukuchi Shrine"
+Q11479974|P11250|"shinto:Ichigao Yokoanabo Cluster"
+Q11480773|P11250|"shinto:Fudaten Shrine"
+Q11485625|P11250|"shinto:Hirose Shrine (Sayama)"
+Q11487151|P11250|"shinto:Hikite Chikara no Mikoto Shrine"
+Q11490722|P11250|"shinto:Inbe Shrine"
+Q11490723|P11250|"shinto:Inbe Shrine (Yoshinogawa)"
+Q11490726|P11250|"shinto:Inbe Shrine (Matsue City)"
+Q11492453|P11250|"shinto:Ena Shrine (Nakatsugawa, Gifu)"
+Q11493845|P11250|"shinto:Atagoyama Yokoanabos"
+Q11500716|P11250|"shinto:Hii Shrine"
+Q11500718|P11250|"shinto:Hida Shrine"
+Q11505275|P11250|"shinto:Hioka Shrine"
+Q11510248|P11250|"shinto:Hioki Shrine (Nagoya)"
+Q11510250|P11250|"shinto:Hioki Shrine (Takashima)"
+Q11510876|P11250|"shinto:Asakura Shrine (Uji, Kyoto)"
+Q11511196|P11250|"shinto:Hayasuihime Shrine"
+Q11512854|P11250|"shinto:Hoshinomiya-sha Shrine"
+Q11512981|P11250|"shinto:Hoshi Shrine"
+Q11516854|P11250|"shinto:Aruka Shrine"
+Q11517375|P11250|"shinto:Asamiya Shrine"
+Q11517384|P11250|"shinto:Asayama Shrine"
+Q11517708|P11250|"shinto:Asadatehiko Shrine"
+Q11526673|P11250|"shinto:Azumayanuma Shrine"
+Q11547364|P11250|"shinto:Hibita Shrine"
+Q11547446|P11250|"shinto:Hinamori Shrine"
+Q11547458|P11250|"shinto:Hibita Shrine (Q11547458)"
+Q11547502|P11250|"shinto:Hitsusa Shrine"
+Q11549599|P11250|"shinto:Hikawa Nyotai Shrine"
+Q11551131|P11250|"shinto:Ebumi Shrine"
+Q11553081|P11250|"shinto:Isagoda Shrine"
+Q11554359|P11250|"shinto:Aburahi Shrine"
+Q11555072|P11250|"shinto:Hokki Shrine"
+Q11555428|P11250|"shinto:Hakunu Shrine"
+Q11555561|P11250|"shinto:Hahaki Shrine"
+Q11555577|P11250|"shinto:Hanifu Shrine"
+Q11555598|P11250|"shinto:Hajikami Shrine"
+Q11556984|P11250|"shinto:Azai Shrine (Ichinomiya)"
+Q11557476|P11250|"shinto:Ichinomiya Asama Shrine (Fuefuki)"
+Q11560019|P11250|"shinto:Fukagawa Shrine"
+Q11560278|P11250|"shinto:Fukami Shrine"
+Q11566947|P11250|"shinto:Honoo-Honome Shrine"
+Q11569065|P11250|"shinto:Atsuhitakahiko Shrine"
+Q115739544|P11250|"shinto:Adachi Shrine"
+Q11579589|P11250|"shinto:Hakusan Shrine (Q11579589)"
+Q11579597|P11250|"shinto:Hakusan Shrine (Q11579597)"
+Q11584766|P11250|"shinto:Isonokami Futsumitama Shrine"
+Q11585161|P11250|"shinto:Ishizukuri Shrine"
+Q11585503|P11250|"shinto:Irō Shrine"
+Q11586490|P11250|"shinto:Ishimaki Shrine"
+Q11586510|P11250|"shinto:Ihakurano Shrine (Q11586510)"
+Q11586788|P11250|"shinto:Ishizu Shrine"
+Q11586806|P11250|"shinto:Ishiura Shrine"
+Q11588063|P11250|"shinto:Isobe-no-Omita"
+Q11594015|P11250|"shinto:Fukuōji Shrine"
+Q11596288|P11250|"shinto:Hieta Shrine"
+Q11596632|P11250|"shinto:Inagi Shrine"
+Q11596731|P11250|"shinto:Inazume Shrine"
+Q11596799|P11250|"shinto:Inada Shrine"
+Q11597095|P11250|"shinto:Homi Shrine"
+Q11597096|P11250|"shinto:Homi Shrine (Asahimachi, Nirasaki)"
+Q11597109|P11250|"shinto:Hotaka Shrine"
+Q11597204|P11250|"shinto:Anagiri Daijinja"
+Q11597242|P11250|"shinto:Anazawa Tenjinsha"
+Q11602932|P11250|"shinto:Chikushi Shrine"
+Q11604472|P11250|"shinto:Iibo Nimasu Amaterasu Shrine"
+Q11604560|P11250|"shinto:Awai Shrine"
+Q11608141|P11250|"shinto:Agata Shrine (Gifu)"
+Q11610064|P11250|"shinto:Hakui Shrine"
+Q11611103|P11250|"shinto:Hijiri Shrine (Q11611103)"
+Q11613979|P11250|"shinto:Funai Shrine"
+Q11615716|P11250|"shinto:Hananagakami Shrine"
+Q11615718|P11250|"shinto:Hananagashimo Shrine"
+Q11617261|P11250|"shinto:Akanabe Shrine"
+Q11618317|P11250|"shinto:Ekoda Yokoanabo Cluster"
+Q11618386|P11250|"shinto:Arai Shrine (Nantan)"
+Q11618425|P11250|"shinto:Araki Shrine"
+Q11621139|P11250|"shinto:Ashiinaba Shrine"
+Q11636084|P11250|"shinto:Hashiriochi Shrine"
+Q11648156|P11250|"shinto:Harina Shrine"
+Q11648178|P11250|"shinto:Haritsuna Shrine"
+Q11649828|P11250|"shinto:Erehiko Shrine"
+Q11653682|P11250|"shinto:Hasedera (Nagano)"
+Q11657364|P11250|"shinto:Abushina Shrine"
+Q11657447|P11250|"shinto:Achi Shrine (Achi)"
+Q11657490|P11250|"shinto:Awawa Shrine"
+Q11657523|P11250|"shinto:Awayamanoueno Shrine"
+Q11657681|P11250|"shinto:Azusami Tenjinsha"
+Q11657682|P11250|"shinto:Azura Shrine"
+Q11657713|P11250|"shinto:Ajika Shrine"
+Q11659781|P11250|"shinto:Amatarashi Shrine"
+Q11660144|P11250|"shinto:Hitsujisaki Shrine (Minato, Ishinomaki)"
+Q11660145|P11250|"shinto:Hitsujisaki Shrine (Mano, Ishinomaki)"
+Q11662605|P11250|"shinto:Aoi Shrine"
+Q11665977|P11250|"shinto:Asukada Shrine"
+Q11666643|P11250|"shinto:Ii Shrine (Q11666643)"
+Q11676453|P11250|"shinto:Ishizukuri Shrine (Q11676453)"
+Q117138364|P11250|"shinto:Araki Shrine (Izunokuni)"
+Q119929616|P11250|"shinto:Hamana Sōsha-shinmeigū"
+Q119929629|P11250|"shinto:Hamamatsu Hachimangu"
+Q119929720|P11250|"shinto:Gosho Shrine"
+Q122190137|P11250|"shinto:Ima Izumiguchi Hachiman-yama Kofun"
+Q123115222|P11250|"shinto:Ichihara Shrine"
+Q123116949|P11250|"shinto:Chōhōji Minamihara Kofun"
+Q124983668|P11250|"shinto:Template:100 Greens of Ōsaka"
+Q125287943|P11250|"shinto:Furutsuki Yokoanabos"
+Q125475111|P11250|"shinto:Template:Inari Faith"
+Q125475202|P11250|"shinto:Template:Hachiman Faith"
+Q125475251|P11250|"shinto:Template:Gion cult"
+Q125475277|P11250|"shinto:Template:Hakusan Faith"
+Q125475299|P11250|"shinto:Template:Atsuta Faith"
+Q125506968|P11250|"shinto:Template:Isonokami Faith"
+Q125506974|P11250|"shinto:Template:Inbe Faith"
+Q127783765|P11250|"shinto:Amasashihiko-no-Mikoto Shrine"
+Q128866991|P11250|"shinto:Ise-Kuruma Shrine"
+Q129837100|P11250|"shinto:Ishinuki Anakannon Yokoanabos"
+Q130300879|P11250|"shinto:Ishinukinagi Yokoanabo Cluster"
+Q131925942|P11250|"shinto:Hihayo Tenjin Shrine"
+Q133940165|P11250|"shinto:Hinamajihimemikoto Shrine"
+Q13412311|P11250|"shinto:Template:Egyptian Calendar Navbar"
+Q134893091|P11250|"shinto:Enoki Shrine"
+Q134893134|P11250|"shinto:Inakami Shrine"
+Q134893135|P11250|"shinto:Hayatamawakenomikoto Shrine"
+Q134893136|P11250|"shinto:Ishifu Shrine"
+Q134917276|P11250|"shinto:Bekkaku Kanpeisha"
+Q134917283|P11250|"shinto:Fuken-sha"
+Q134917326|P11250|"shinto:Fu-sha"
+Q134925373|P11250|"shinto:Hirose Shrine"
+Q134925834|P11250|"shinto:Asai Shrine (Takaoka)"
+Q134926458|P11250|"shinto:Hatsuhime Shrine"
+Q134926700|P11250|"shinto:Azusawake-no-Mikoto Shrine"
+Q134926816|P11250|"shinto:Ita Shrine"
+Q134926830|P11250|"shinto:Ikamashi Shrine"
+Q134926963|P11250|"shinto:Himemiya Shrine"
+Q134926975|P11250|"shinto:Ikeda Shrine (Shizuoka)"
+Q134927474|P11250|"shinto:Hachiman Shrine (Q134927474)"
+Q134927674|P11250|"shinto:Hachiman Shrine (Otoi)"
+Q134928475|P11250|"shinto:Inohanako Shrine"
+Q134928802|P11250|"shinto:Awabitamashiratama-hime-no-Mikoto Shrine"
+Q134930157|P11250|"shinto:Habuhime-no-Mikoto Shrine"
+Q134930206|P11250|"shinto:Hachiman Shrine (Koura, Minamiizu)"
+Q134930376|P11250|"shinto:Hajikama Shrine"
+Q134930633|P11250|"shinto:Habuhime Shrine (Shimoda)"
+Q134930667|P11250|"shinto:Daisan Ōji Shrine"
+Q135009120|P11250|"shinto:Engishiki funding categories"
+Q135018062|P11250|"shinto:Engishiki seat"
+Q135019513|P11250|"shinto:Ama-no-Iwato-wake no Kami Shrine"
+Q135019813|P11250|"shinto:Ikushima no Mikannaki-no-matsuru-kami Shrine"
+... and 1089 more lines (download full file below)</textarea>
+
+<h2>How it works</h2>
+<div class="section">
+  <ol>
+    <li><code>generate_p11250_quickstatements.py</code> walks all pages in
+    <a href="https://shinto.miraheze.org/wiki/Category:Pages_linked_to_Wikidata">Category:Pages linked to Wikidata</a></li>
+    <li>For each page with <code>{{wikidata link|Q...}}</code>, it checks Wikidata for an existing P11250 claim</li>
+    <li>If missing, a QuickStatements line is added: <code>Q...|P11250|"shinto:Page Name"</code></li>
+    <li><code>clean_p11250_quickstatements.py</code> removes lines for items that now have the correct P11250</li>
+    <li>Both scripts run daily in the GitHub Actions pipeline</li>
+  </ol>
+</div>
+
+<h2>Sample entries</h2>
+<div class="section">
+  <table style="width:100%;font-size:0.85rem;">
+    <thead><tr><th style="text-align:left">Wikidata</th><th style="text-align:left">Shintowiki page</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q106852693">Q106852693</a></td><td><a href="https://shinto.miraheze.org/wiki/Hiruko_Shrine_(Q106852693)">Hiruko Shrine (Q106852693)</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q107297935">Q107297935</a></td><td><a href="https://shinto.miraheze.org/wiki/Himesaka_Kanachiana_Shrine">Himesaka Kanachiana Shrine</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q107410059">Q107410059</a></td><td><a href="https://shinto.miraheze.org/wiki/Haniyamahime_Shrine">Haniyamahime Shrine</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q107410066">Q107410066</a></td><td><a href="https://shinto.miraheze.org/wiki/Amatsukasahiko_Shrine">Amatsukasahiko Shrine</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q107410067">Q107410067</a></td><td><a href="https://shinto.miraheze.org/wiki/Amatsukasahiko_Shrine_(Q107410067)">Amatsukasahiko Shrine (Q107410067)</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q107410068">Q107410068</a></td><td><a href="https://shinto.miraheze.org/wiki/Amanohashidate_Shrine">Amanohashidate Shrine</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q10777837">Q10777837</a></td><td><a href="https://shinto.miraheze.org/wiki/Template:Harvard_citation_text/doc">Template:Harvard citation text/doc</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q10809670">Q10809670</a></td><td><a href="https://shinto.miraheze.org/wiki/Template:Infobox_deity">Template:Infobox deity</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q11000805">Q11000805</a></td><td><a href="https://shinto.miraheze.org/wiki/Template:Islamic_Ramadan">Template:Islamic Ramadan</a></td></tr>
+      <tr><td><a href="https://www.wikidata.org/wiki/Q11001502">Q11001502</a></td><td><a href="https://shinto.miraheze.org/wiki/Template:Islamic_Rajab">Template:Islamic Rajab</a></td></tr>
+    </tbody>
+  </table>
+  <p class='timestamp'>Showing first 10 of 1289 entries</p>
+</div>
+
+<footer>
+  Generated 2026-04-04 21:08 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
+</footer>
+</body>
+</html>
