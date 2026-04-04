@@ -42,7 +42,7 @@ A separate workflow, `generate-pages.yml`, builds and deploys the GitHub Pages s
 ```
 shintowiki-scripts/
 ├── .github/workflows/          # GitHub Actions workflow chain (9 files)
-├── shinto_miraheze/            # Wiki editing bot scripts (~45 Python, 3 shell)
+├── shinto_miraheze/            # Wiki editing bot scripts (46 Python, 3 shell)
 ├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
 │   ├── reports/                # JSON run reports from QS submissions
 │   └── _site/                  # Generated QS dashboard pages
@@ -80,7 +80,10 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 | `fix_double_redirects.py` | Fixes Special:DoubleRedirects |
 | `resolve_double_category_qids.py` | Simplifies QID disambiguation pages where all targets resolve to the same category |
 
-### Chunk 3: Wikidata
+### Chunk 3: Wikidata (paused until May 2026)
+
+> **Note:** All Wikidata steps are paused until May 2026 via a date check in the workflow. When active, they run at 50 edits/run (separate from the global `WIKI_EDIT_LIMIT` of 100).
+
 | Script | Purpose |
 |--------|---------|
 | `generate_p11250_quickstatements.py` | Generates P11250 QuickStatements for items missing the property |
@@ -91,9 +94,10 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 ### Chunk 4: Final Core
 | Script | Purpose |
 |--------|---------|
-| `fix_template_noinclude.py` | Moves stray categories/wikidata links into `<noinclude>` on templates |
+| ~~`fix_template_noinclude.py`~~ | ~~Moves stray categories/wikidata links into `<noinclude>` on templates~~ (disabled — one-time fix completed) |
 | `categorize_uncategorized_pages.py` | Tags uncategorized mainspace pages |
 | `tag_untranslated_japanese.py` | Detects and categorizes pages with untranslated Japanese text |
+| `tag_untranslated_japanese.py --category` | Re-buckets 300+ untranslated pages with extended thresholds (TEMPORARY) |
 
 ### Cleanup Loop
 | Script | Purpose |
@@ -109,15 +113,15 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 |--------|---------|
 | `update_bot_userpage_status.py` | Updates User:EmmaBot status page with pipeline stage and run info |
 
-### Deprecated (Sunday only)
-| Script | Purpose |
-|--------|---------|
-| `normalize_category_pages.py` | Enforces canonical category page layout |
-| `tag_shikinaisha_talk_pages.py` | Adds "generated from Wikidata" notice to shikinaisha talk pages |
-| `fix_erroneous_qid_category_links.py` | Fixes category/QID mismatches |
-| `remove_legacy_cat_templates.py` | Removes legacy template artifacts from categories |
-| `move_categories.py` | Moves/renames categories per configured CSV |
-| `create_japanese_category_qid_redirects.py` | Creates QID redirects for Japanese-named categories |
+### Deprecated (Sunday + monthly)
+| Script | Schedule | Purpose |
+|--------|----------|---------|
+| `normalize_category_pages.py` | Sunday | Enforces canonical category page layout |
+| `tag_shikinaisha_talk_pages.py` | Sunday | Adds "generated from Wikidata" notice to shikinaisha talk pages |
+| `fix_erroneous_qid_category_links.py` | 1st of month | Fixes category/QID mismatches |
+| `remove_legacy_cat_templates.py` | 1st of month | Removes legacy template artifacts from categories |
+| `move_categories.py` | 1st of month | Moves/renames categories per configured CSV |
+| `create_japanese_category_qid_redirects.py` | 1st of month | Creates QID redirects for Japanese-named categories |
 
 ---
 
