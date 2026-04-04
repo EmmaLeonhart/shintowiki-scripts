@@ -52,7 +52,8 @@ jobs:
           git diff --cached --quiet && echo "No generated file changes to commit" || {
             git stash --include-untracked || true
             git pull --rebase || true
-            git stash pop || true
+            # On conflict from stash pop, accept our (freshly generated) version
+            git stash pop || git checkout --theirs . && git add -f modern-quickstatements/
             git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
             git push
           }
