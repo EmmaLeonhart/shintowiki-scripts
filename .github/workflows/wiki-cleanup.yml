@@ -189,6 +189,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
             python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
+      - name: "Wikidata: tag_deleted_qids_in_ill"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: tag_deleted_qids_in_ill" \
+            python3 shinto_miraheze/tag_deleted_qids_in_ill.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Wikidata"
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Wikidata"
