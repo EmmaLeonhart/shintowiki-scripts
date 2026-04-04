@@ -5,7 +5,7 @@ on:
   workflow_call:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   generate:
@@ -29,13 +29,33 @@ jobs:
 
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_modern_shrine_ranking_qualifiers.py
 
       - name: Generate P958 QS
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: |
           sleep 10
           python generate_p958_qualifiers.py
+
+      - name: Commit non-empty generated files to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd modern-quickstatements
+          # Only stage non-empty .txt files and _site/ contents
+          find . -maxdepth 1 -name '*.txt' -size +0c -exec git add {} +
+          find _site/ -type f -size +0c -exec git add {} + 2>/dev/null || true
+          git add -f _site/summary.json 2>/dev/null || true
+          cd ..
+          git diff --cached --quiet && echo "No generated file changes to commit" || {
+            git stash --include-untracked || true
+            git pull --rebase || true
+            git stash pop || true
+            git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
+            git push
+          }
 
       - name: Upload generated QS files
         uses: actions/upload-artifact@v4
@@ -50,4 +70,3 @@ jobs:
           name: quickstatements-site
           path: modern-quickstatements/_site/
           retention-days: 1
-
