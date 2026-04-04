@@ -69,7 +69,8 @@ jobs:
           git diff --cached --quiet && echo "No _site changes to commit" || {
             git stash --include-untracked || true
             git pull --rebase || true
-            git stash pop || true
+            # On conflict from stash pop, accept our (freshly generated) version
+            git stash pop || git checkout --theirs . && git add -f _site/
             git commit -m "chore: update _site from pages build [skip ci]"
             git push
           }
