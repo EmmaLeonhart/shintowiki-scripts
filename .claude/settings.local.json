@@ -165,7 +165,8 @@
       "Bash(wc:*)",
       "Bash(find /c/Users/Immanuelle/Documents/Github/shintowiki-scripts -type f \\\\\\(-name *.log -o -name *devlog* -o -name *state* -o -name *.txt \\\\\\))",
       "Bash(xargs -I {} basename {})",
-      "Bash([ -f \"/c/Users/Immanuelle/Documents/Github/shintowiki-scripts/shinto_miraheze/$script\" ])"
+      "Bash([ -f \"/c/Users/Immanuelle/Documents/Github/shintowiki-scripts/shinto_miraheze/$script\" ])",
+      "Bash(]*\\\\.py\\\\`\" SCRIPTS.md | wc -l)"
     ],
     "deny": [],
     "ask": []
