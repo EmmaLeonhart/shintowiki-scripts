@@ -16,7 +16,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,15 +37,12 @@ jobs:
           path: modern-quickstatements/_site/
         continue-on-error: true
 
-      - name: Generate QS site (fallback if no artifact)
+      - name: Use committed files as fallback (no SPARQL re-query)
         if: steps.download-qs.outcome == 'failure'
-        working-directory: modern-quickstatements
         run: |
-          echo "No QS site artifact found, regenerating from SPARQL..."
-          python fetch_p11250_from_wiki.py
-          python generate_modern_shrine_ranking_qualifiers.py
-          sleep 10
-          python generate_p958_qualifiers.py
+          echo "No QS site artifact found — using committed repo files as fallback."
+          echo "These files are updated by generate-quickstatements on each successful run."
+          ls -la modern-quickstatements/_site/ 2>/dev/null || echo "WARNING: no _site/ files in repo either"
 
       - name: Generate main site
         run: python3 generate_pages.py

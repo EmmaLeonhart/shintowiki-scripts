@@ -1,10 +1,14 @@
 {
-  "total_links": 1789,
-  "generated": 1685,
-  "completed": 4,
-  "skipped_no_p13677": 35,
-  "manual_review": 65,
-  "sequence_anomalies": 36,
+  "total_links": 1840,
+  "generated": 367,
+  "p958_qualifiers": 37,
+  "new_p13677_from_parent": 42,
+  "disputed_p958": 288,
+  "disputed_total": 344,
+  "completed": 1695,
+  "skipped_no_p13677": 19,
+  "manual_review": 84,
+  "sequence_anomalies": 14,
   "output_file": "p958_qualifiers.txt",
   "manual_review_file": "p958_manual_review.txt",
   "manual_review_items": [
@@ -31,6 +35,7 @@
     "Q135190252\tRokusho Shrine\tparent=Q135039595 (Takane Shrine)\tranking=2\tP13677_count=3\tvia P460",
     "Q135190252\tRokusho Shrine\tparent=Q135039596 (Rokusho Shrine)\tranking=2\tP13677_count=3\tvia P460",
     "Q135190252\tRokusho Shrine\tparent=Q135039597 (Wakayamatono Shrine)\tranking=2\tP13677_count=3\tvia P460",
+    "Q134930633\tHabuhime Shrine (Shimoda)\tparent=Q135039636 (Hafuhimeno- Shrine)\tranking=0\tP13677_count=2\tvia P460",
     "Q30925511\tSengen Shrine\tparent=Q135039637 (Ikamuhimeno- Shrine)\tranking=2\tP13677_count=2\tvia P460",
     "Q110915859\tOshaku Shrine\tparent=Q135039642 (Hayashino- Shrine)\tranking=0\tP13677_count=5\tvia P460",
     "Q134893133\tSutou Shrine\tparent=Q135039642 (Hayashino- Shrine)\tranking=1\tP13677_count=2\tvia P460",
@@ -72,44 +77,230 @@
     "Q11559099\tKaijin Shrine\tparent=Q135041537 (Korokuno Shrine)\tranking=2\tP13677_count=4\tvia P460",
     "Q11559099\tKaijin Shrine\tparent=Q135041538 (Korokuno- Shrine)\tranking=4\tP13677_count=4\tvia P460",
     "Q18457651\tWatazumi Shrine\tparent=Q135041542 (Ohoshimano Shrine)\tranking=1\tP13677_count=4\tvia P460",
-    "Q18457651\tWatazumi Shrine\tparent=Q135041543 (Harahano Shrine)\tranking=1\tP13677_count=4\tvia P460"
+    "Q18457651\tWatazumi Shrine\tparent=Q135041543 (Harahano Shrine)\tranking=1\tP13677_count=4\tvia P460",
+    "Q110915859\tOshaku Shrine\tparent=Q135039638 (Sakitamahimeno- Shrine)\tranking=disputed\tP13677_count=5\tvia P460 (no P1352)",
+    "Q11378828\tIyo Shrine\tparent=Q135041437 (Iyotsuhikono- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11390944\tHachimangū Kinomiya Shrine\tparent=Q135039641 (Ihare- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11512854\tHoshinomiya-sha Shrine\tparent=Q135039548 (Shimotsuchikamano Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11547445\tHimekoso Shrine\tparent=Q135039202 (Himekosono Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11586779\tIwatsuta Shrine\tparent=Q135039162 (Ihatsutano- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11631810\tUketa Shrine\tparent=Q135040497 (Matsuo Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11671792\tKōzu-gū\tparent=Q135039202 (Himekosono Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q11677857\tKoganeyama Shrine (Ishinomaki)\tparent=Q135040041 (Kokaneyamano Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q134926924\tSanai Shrine\tparent=Q135039676 (Ametsuseno- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q134927903\tUnai Shrine\tparent=Q135039676 (Ametsuseno- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q134930603\tRyou Shrine\tparent=Q135039661 (Hotsusakeno- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q134930633\tHabuhime Shrine (Shimoda)\tparent=Q135039662 (Ohotsunoyukino- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q135270122\tQ135270122\tparent=Q135039162 (Ihatsutano- Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q135270123\tQ135270123\tparent=Q135039202 (Himekosono Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q135270424\tOhokuninushino Shrine\tparent=Q135039223 (Ohokuninushino Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)",
+    "Q18457651\tWatazumi Shrine\tparent=Q135041548 (Watatsumino Shrine)\tranking=disputed\tP13677_count=4\tvia P460 (no P1352)",
+    "Q705297\tNishinomiya Shrine\tparent=Q135039223 (Ohokuninushino Shrine)\tranking=disputed\tP13677_count=2\tvia P460 (no P1352)"
   ],
   "sequence_anomaly_items": [
-    "  Q11442961 (Tennōgū Ōtoshi Shrine): rankings=[2], expected=[1]",
-    "  Q11659237 (Ogami Shrine (Tonami City)): rankings=[2], expected=[1]",
-    "  Q135039222 (Wokatano Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039294 (Hatada Shrine): rankings=[2, 3], expected=[1, 2]",
-    "  Q135039482 (Shihoeno Shrine): rankings=[1, 1, 2, 2], expected=[1, 2, 3, 4]",
-    "  Q135039498 (Ishitsukurino Shrine): rankings=[1, 1, 2, 2], expected=[1, 2, 3, 4]",
-    "  Q135039513 (Witeno Shrine): rankings=[1, 1, 2, 2], expected=[1, 2, 3, 4]",
-    "  Q135039517 (Ueno Shrine): rankings=[1, 2, 2, 3, 4, 5, 6, 7], expected=[1, 2, 3, 4, 5, 6, 7, 8]",
-    "  Q135039520 (Katayamano Shrine): rankings=[0, 1, 2, 2], expected=[0, 1, 2, 3]",
-    "  Q135039521 (Kuniharano Shrine): rankings=[1, 1, 2, 2], expected=[1, 2, 3, 4]",
-    "  Q135039534 (Wanirano Shrine): rankings=[0, 0, 0, 1, 2, 3, 4, 5, 6], expected=[0, 1, 2, 3, 4, 5, 6, 7, 8]",
-    "  Q135039597 (Wakayamatono Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039644 (Katasukano- Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039648 (Kamino- Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039672 (Ohoasano Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039674 (Homusuhino- Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039729 (Anasahano- Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135039746 (Imakiawoyasakainamino Shrine): rankings=[0, 0, 0, 1, 2, 3, 4], expected=[0, 1, 2, 3, 4, 5, 6]",
-    "  Q135039747 (Imakiawosakanoinamiaramitamano Shrine): rankings=[0, 0, 0, 0, 1, 2, 3, 4], expected=[0, 1, 2, 3, 4, 5, 6, 7]",
-    "  Q135039748 (Imakiawosakainaminoikekamino Shrine): rankings=[0, 0, 0, 1, 2, 3], expected=[0, 1, 2, 3, 4, 5]",
-    "  Q135039769 (Iharino Shrine): rankings=[0, 0, 1, 2, 3, 4, 5], expected=[0, 1, 2, 3, 4, 5, 6]",
-    "  Q135039811 (Karonono Shrine): rankings=[1, 1, 2, 2], expected=[1, 2, 3, 4]",
-    "  Q135039965 (Akagi Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135040569 (Miheno Shrine): rankings=[2, 3], expected=[1, 2]",
-    "  Q135040590 (Shifuhino Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135040685 (Hyōzu Shrine): rankings=[0, 0, 2], expected=[0, 1, 2]",
-    "  Q135040778 (Nimasukarakuniitateno Shrine): rankings=[0, 0, 0, 3, 4], expected=[0, 1, 2, 3, 4]",
-    "  Q135041216 (Momoiyamano Shrine): rankings=[2], expected=[1]",
-    "  Q135041251 (Warihimeno Shrine): rankings=[2, 3], expected=[1, 2]",
-    "  Q135041304 (Takefutsuno Shrine): rankings=[0, 0, 0, 0, 1, 2], expected=[0, 1, 2, 3, 4, 5]",
-    "  Q135041306 (Tawano Shrine): rankings=[0, 0, 0, 0, 1, 2], expected=[0, 1, 2, 3, 4, 5]",
-    "  Q135041308 (Isanamino Shrine): rankings=[0, 0, 1, 2, 3], expected=[0, 1, 2, 3, 4]",
-    "  Q135041315 (Mitsuhanomeno Shrine): rankings=[0, 0, 1, 2, 3], expected=[0, 1, 2, 3, 4]",
-    "  Q135041385 (Tawano Shrine): rankings=[0, 0, 1, 2], expected=[0, 1, 2, 3]",
-    "  Q135041556 (Tsutsuchino Shrine): rankings=[1, 3, 4], expected=[1, 2, 3]",
-    "  Q59282644 (Takagi Shrine): rankings=[2], expected=[1]"
+    {
+      "qid": "Q11442961",
+      "label": "Tennōgū Ōtoshi Shrine",
+      "rankings": [
+        2
+      ],
+      "expected": [
+        1
+      ]
+    },
+    {
+      "qid": "Q11659237",
+      "label": "Ogami Shrine (Tonami City)",
+      "rankings": [
+        2
+      ],
+      "expected": [
+        1
+      ]
+    },
+    {
+      "qid": "Q135039294",
+      "label": "Hatada Shrine",
+      "rankings": [
+        2,
+        3
+      ],
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "qid": "Q135039482",
+      "label": "Shihoeno Shrine",
+      "rankings": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "qid": "Q135039498",
+      "label": "Ishitsukurino Shrine",
+      "rankings": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "qid": "Q135039513",
+      "label": "Witeno Shrine",
+      "rankings": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "qid": "Q135039517",
+      "label": "Ueno Shrine",
+      "rankings": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "qid": "Q135039520",
+      "label": "Katayamano Shrine",
+      "rankings": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "qid": "Q135039521",
+      "label": "Kuniharano Shrine",
+      "rankings": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "qid": "Q135039811",
+      "label": "Karonono Shrine",
+      "rankings": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "qid": "Q135040569",
+      "label": "Miheno Shrine",
+      "rankings": [
+        2,
+        3
+      ],
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "qid": "Q135040778",
+      "label": "Nimasukarakuniitateno Shrine",
+      "rankings": [
+        0,
+        0,
+        0,
+        3,
+        4
+      ],
+      "expected": [
+        0,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "qid": "Q135041216",
+      "label": "Momoiyamano Shrine",
+      "rankings": [
+        2
+      ],
+      "expected": [
+        1
+      ]
+    },
+    {
+      "qid": "Q135041251",
+      "label": "Warihimeno Shrine",
+      "rankings": [
+        2,
+        3
+      ],
+      "expected": [
+        1,
+        2
+      ]
+    }
   ]
 }
