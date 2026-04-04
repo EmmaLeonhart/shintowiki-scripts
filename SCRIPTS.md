@@ -16,12 +16,13 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | Workflow | Role | Timeout |
 |----------|------|---------|
 | `cleanup-loop.yml` | Orchestrator — chains all others via `workflow_call` | — |
-| `generate-quickstatements.yml` | Pre-flight: generates P958 and P13723 QuickStatements files | 15 min |
+| `generate-quickstatements.yml` | Pre-flight: generates P958 and P13723 QuickStatements files | 30 min |
 | `wiki-cleanup.yml` | Main: runs all `shinto_miraheze/` scripts with state commits between chunks | 330 min |
 | `random-wait.yml` | Random 1–3600s delay (schedule-only, prevents thundering herd) | — |
 | `submit-quickstatements.yml` | Submits atomic QS operations to the API, commits run report | 30 min |
 | `test-wikidata-qualifier.yml` | Direct Wikidata API edits: applies P459 qualifiers to P13723 statements | 10 min |
 | `build-run-history.yml` | Final: rebuilds run history page from all report JSONs | 10 min |
+| `direct-daily-edits.yml` | Fallback: applies edits via Wikidata API directly when QS submission fails | 360 min |
 | `generate-pages.yml` | Separate: builds and deploys GitHub Pages site (daily 00:30 UTC) | 15 min |
 
 ---
@@ -56,6 +57,7 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 | `triage_emmabot_categories_jawiki.py` | ACTIVE | Second-pass triage: checks without-enwiki categories against jawiki. 100/run. |
 | `triage_emmabot_categories_secondary.py` | ACTIVE | Third-pass triage: secondary heuristics for remaining uncategorized EmmaBot categories. 100/run. |
 | `triage_secondary_single_member.py` | ACTIVE | Moves single-member categories from Secondary triage to `[[Category:Triaged categories with only one member]]`. |
+| `enrich_jawiki_categories.py` | ACTIVE | Enriches categories with jawiki interwiki data. |
 | `create_shrine_ranking_pages.py` | ACTIVE (TEMPORARY) | Creates article pages for shrine ranking subcategories. Remove from workflow after all pages are created. |
 
 ### Chunk 2: Structural Fixes
@@ -136,7 +138,7 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 |--------|--------|-------------|
 | `generate_p958_qualifiers.py` | ACTIVE | Generates P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) statements. |
 | `generate_modern_shrine_ranking_qualifiers.py` | ACTIVE | Generates P459 (determination method) qualifiers for P13723 (shrine ranking). Also handles Phase 3 migration of P31/P1552 to P13723. |
-| `submit_daily_batch.py` | ACTIVE | Submits atomic QS operation files via QuickStatements API. Writes JSON run reports to `reports/`. Never exits non-zero — logs outcome and continues. |
+| `submit_daily_batch.py` | ACTIVE | Submits atomic QS operation files via QuickStatements API. Writes JSON run reports to `reports/`. Exits non-zero when all batches fail (triggers `direct-daily-edits.yml` fallback); workflow step has `continue-on-error: true`. |
 | `test_wikidata_qualifier.py` | ACTIVE | Applies P459 qualifiers to P13723 statements via the Wikidata API directly (bypasses QuickStatements). Up to 10 edits per run. |
 | `direct_daily_edits.py` | ACTIVE | Fallback: applies edits via Wikidata API directly when QuickStatements API fails. |
 | `fetch_p11250_from_wiki.py` | ACTIVE | Fetches P11250 QuickStatements lines from `[[QuickStatements/P11250]]` wiki page and writes to `p11250_miraheze_links.txt` for daily batch submission. |

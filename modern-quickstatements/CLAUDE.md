@@ -24,7 +24,7 @@ Automated QuickStatements generation and submission for Wikidata shrine property
 ### Submission behavior
 - Only **atomic** operations (each line independent) are submitted automatically.
 - **Non-atomic** operations (paired remove+add) require manual submission.
-- The submission script **never exits non-zero** — it logs outcomes and exits cleanly. The run history page tracks failures.
+- The submission script exits non-zero when **all** batches fail, triggering the `direct-daily-edits.yml` fallback. The workflow step has `continue-on-error: true` so the pipeline continues regardless. The run history page tracks all outcomes.
 - Missing `QS_TOKEN` or `QS_USERNAME` results in a "skipped" outcome, not an error.
 
 ### Workflow integration
