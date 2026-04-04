@@ -713,12 +713,15 @@ def generate_migration(migration):
     """
 
     # Find statements needing migration (no corresponding P13723 yet)
+    # Uses MINUS instead of FILTER NOT EXISTS — the latter can return
+    # phantom results on Wikidata's query service due to query optimizer
+    # differences, producing thousands of false "remaining" items.
     remaining_query = f"""
     SELECT ?item ?value WHERE {{
       VALUES ?value {{ {values_sparql} }}
       ?item p:{source_prop} ?stmt .
       ?stmt ps:{source_prop} ?value .
-      FILTER NOT EXISTS {{
+      MINUS {{
         ?item p:P13723 ?s2 .
         ?s2 ps:P13723 ?value .
       }}
