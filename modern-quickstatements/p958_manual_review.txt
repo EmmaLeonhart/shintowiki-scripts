@@ -87,21 +87,3 @@ Q11559099	Kaijin Shrine	parent=Q135041537 (Korokuno Shrine)	ranking=2	P13677_cou
 Q11559099	Kaijin Shrine	parent=Q135041538 (Korokuno- Shrine)	ranking=4	P13677_count=4	via P460
 Q18457651	Watazumi Shrine	parent=Q135041542 (Ohoshimano Shrine)	ranking=1	P13677_count=4	via P460
 Q18457651	Watazumi Shrine	parent=Q135041543 (Harahano Shrine)	ranking=1	P13677_count=4	via P460
-Q110915859	Oshaku Shrine	parent=Q135039638 (Sakitamahimeno- Shrine)	ranking=disputed	P13677_count=5	via P460 (no P1352)
-Q11378828	Iyo Shrine	parent=Q135041437 (Iyotsuhikono- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11390944	Hachimangū Kinomiya Shrine	parent=Q135039641 (Ihare- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11512854	Hoshinomiya-sha Shrine	parent=Q135039548 (Shimotsuchikamano Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11547445	Himekoso Shrine	parent=Q135039202 (Himekosono Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11586779	Iwatsuta Shrine	parent=Q135039162 (Ihatsutano- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11631810	Uketa Shrine	parent=Q135040497 (Matsuo Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11671792	Kōzu-gū	parent=Q135039202 (Himekosono Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q11677857	Koganeyama Shrine (Ishinomaki)	parent=Q135040041 (Kokaneyamano Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q134926924	Sanai Shrine	parent=Q135039676 (Ametsuseno- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q134927903	Unai Shrine	parent=Q135039676 (Ametsuseno- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q134930603	Ryou Shrine	parent=Q135039661 (Hotsusakeno- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q134930633	Habuhime Shrine (Shimoda)	parent=Q135039662 (Ohotsunoyukino- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q135270122	Q135270122	parent=Q135039162 (Ihatsutano- Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q135270123	Q135270123	parent=Q135039202 (Himekosono Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q135270424	Ohokuninushino Shrine	parent=Q135039223 (Ohokuninushino Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
-Q18457651	Watazumi Shrine	parent=Q135041548 (Watatsumino Shrine)	ranking=disputed	P13677_count=4	via P460 (no P1352)
-Q705297	Nishinomiya Shrine	parent=Q135039223 (Ohokuninushino Shrine)	ranking=disputed	P13677_count=2	via P460 (no P1352)
