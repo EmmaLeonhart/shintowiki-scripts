@@ -166,7 +166,13 @@
       "Bash(find /c/Users/Immanuelle/Documents/Github/shintowiki-scripts -type f \\\\\\(-name *.log -o -name *devlog* -o -name *state* -o -name *.txt \\\\\\))",
       "Bash(xargs -I {} basename {})",
       "Bash([ -f \"/c/Users/Immanuelle/Documents/Github/shintowiki-scripts/shinto_miraheze/$script\" ])",
-      "Bash(]*\\\\.py\\\\`\" SCRIPTS.md | wc -l)"
+      "Bash(]*\\\\.py\\\\`\" SCRIPTS.md | wc -l)",
+      "Bash(cp modern-quickstatements/_site/index.html _site/shrine-ranking.html)",
+      "Bash(cp modern-quickstatements/_site/daily.html _site/daily.html)",
+      "Bash(cp modern-quickstatements/_site/runs.html _site/runs.html)",
+      "Bash(cp modern-quickstatements/_site/*.txt _site/)",
+      "Bash(cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json)",
+      "Bash('C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe' -u -c ':*)"
     ],
     "deny": [],
     "ask": []
