@@ -42,6 +42,7 @@ jobs:
         working-directory: modern-quickstatements
         run: |
           echo "No QS site artifact found, regenerating from SPARQL..."
+          python fetch_p11250_from_wiki.py
           python generate_modern_shrine_ranking_qualifiers.py
           sleep 10
           python generate_p958_qualifiers.py
