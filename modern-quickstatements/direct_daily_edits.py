@@ -33,6 +33,7 @@ ATOMIC_FILES = [
     "p958_qualifiers.txt",
     "remove_shikinai_hiteisha.txt",
     "remove_shikinaisha.txt",
+    "engishiki_add_references.txt",
     "p11250_miraheze_links.txt",
 ]
 

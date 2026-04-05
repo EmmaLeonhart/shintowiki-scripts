@@ -32,6 +32,7 @@ ATOMIC_FILES = [
     "p958_qualifiers.txt",                    # Add P958 section qualifiers to P13677
     "remove_shikinai_hiteisha.txt",           # Remove P31=Q135026601 (Shikinai Hiteisha)
     "remove_shikinaisha.txt",                 # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
+    "engishiki_add_references.txt",           # Add Kokugakuin refs to Engishiki/Ritsuryō P13723
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
 ]
 
