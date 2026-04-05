@@ -65,12 +65,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Save generated files before any git operations
+          cp -r _site/ /tmp/_site_backup/
           git add -f _site/
           git diff --cached --quiet && echo "No _site changes to commit" || {
-            git stash --include-untracked || true
+            # Reset and pull clean, then copy our generated files back
+            git checkout -- . || true
+            git clean -fd _site/ || true
             git pull --rebase || true
-            # On conflict from stash pop, accept our (freshly generated) version
-            git stash pop || git checkout --theirs . && git add -f _site/
+            cp -r /tmp/_site_backup/* _site/
+            git add -f _site/
             git commit -m "chore: update _site from pages build [skip ci]"
             git push
           }
