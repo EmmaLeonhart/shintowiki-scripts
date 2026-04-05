@@ -24,8 +24,11 @@ Automated QuickStatements generation and submission for Wikidata shrine property
 ### Submission behavior
 - Only **atomic** operations (each line independent) are submitted automatically.
 - **Non-atomic** operations (paired remove+add) require manual submission.
-- The submission script exits non-zero when **all** batches fail, triggering the `direct-daily-edits.yml` fallback. The workflow step has `continue-on-error: true` so the pipeline continues regardless. The run history page tracks all outcomes.
+- The submission script exits non-zero when **all** batches fail, triggering the `direct-daily-edits.yml` fallback. The submit workflow job is set up to propagate this failure so the orchestrator can detect it.
 - Missing `QS_TOKEN` or `QS_USERNAME` results in a "skipped" outcome, not an error.
+
+### QuickStatements API is unreliable
+The QuickStatements API (`quickstatements.toolforge.org/api.php`) routinely returns bogus error messages like "user needs to have submitted a batch manually at least once before" (OAuth signature generation problem). This error is a complete lie — it has nothing to do with whether you've submitted manually. QuickStatements is just fucky and the API breaks unpredictably. Do not waste time trying to "fix" the OAuth token or manually submitting batches to satisfy this error. The `direct-daily-edits.py` fallback exists specifically because the QS API cannot be trusted — it applies the same edits directly via the Wikidata API instead.
 
 ### Workflow integration
 This subdirectory's scripts are called by these GitHub Actions workflows:
