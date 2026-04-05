@@ -44,16 +44,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cd modern-quickstatements
+          # Save generated files before any git operations
+          mkdir -p /tmp/qs_backup
+          find . -maxdepth 1 -name '*.txt' -size +0c -exec cp {} /tmp/qs_backup/ \;
+          cp -r _site/ /tmp/qs_backup/_site/ 2>/dev/null || true
           # Only stage non-empty .txt files and _site/ contents
           find . -maxdepth 1 -name '*.txt' -size +0c -exec git add {} +
           find _site/ -type f -size +0c -exec git add {} + 2>/dev/null || true
           git add -f _site/summary.json 2>/dev/null || true
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
-            git stash --include-untracked || true
+            # Reset and pull clean, then copy our generated files back
+            git checkout -- . || true
+            git clean -fd modern-quickstatements/ || true
             git pull --rebase || true
-            # On conflict from stash pop, accept our (freshly generated) version
-            git stash pop || git checkout --theirs . && git add -f modern-quickstatements/
+            cp /tmp/qs_backup/*.txt modern-quickstatements/ 2>/dev/null || true
+            cp -r /tmp/qs_backup/_site/* modern-quickstatements/_site/ 2>/dev/null || true
+            cd modern-quickstatements
+            find . -maxdepth 1 -name '*.txt' -size +0c -exec git add {} +
+            find _site/ -type f -size +0c -exec git add {} + 2>/dev/null || true
+            cd ..
             git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
             git push
           }
