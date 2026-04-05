@@ -27,9 +27,9 @@
   "shikinaisha": {
     "name": "Remove P31 Shikinaisha from Shikinai Ronsha",
     "description": "Remove P31 (instance of) \u2192 Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha)",
-    "remaining": 540,
+    "remaining": 0,
     "output_file": "remove_shikinaisha.txt",
-    "lines": 540
+    "lines": 0
   },
   "engishiki_refs": {
     "name": "Engishiki/Ritsury\u014d references",
