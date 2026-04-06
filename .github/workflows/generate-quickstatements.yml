@@ -39,19 +39,18 @@ jobs:
           sleep 10
           python generate_p958_qualifiers.py
 
-      - name: Commit non-empty generated files to repo
+      - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cd modern-quickstatements
           # Save generated files before any git operations
           mkdir -p /tmp/qs_backup
-          find . -maxdepth 1 -name '*.txt' -size +0c -exec cp {} /tmp/qs_backup/ \;
+          cp *.txt /tmp/qs_backup/ 2>/dev/null || true
           cp -r _site/ /tmp/qs_backup/_site/ 2>/dev/null || true
-          # Only stage non-empty .txt files and _site/ contents
-          find . -maxdepth 1 -name '*.txt' -size +0c -exec git add {} +
-          find _site/ -type f -size +0c -exec git add {} + 2>/dev/null || true
-          git add -f _site/summary.json 2>/dev/null || true
+          # Stage ALL .txt files (including empty ones that replaced old content)
+          git add *.txt 2>/dev/null || true
+          git add _site/ 2>/dev/null || true
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
             # Reset and pull clean, then copy our generated files back
@@ -61,8 +60,8 @@ jobs:
             cp /tmp/qs_backup/*.txt modern-quickstatements/ 2>/dev/null || true
             cp -r /tmp/qs_backup/_site/* modern-quickstatements/_site/ 2>/dev/null || true
             cd modern-quickstatements
-            find . -maxdepth 1 -name '*.txt' -size +0c -exec git add {} +
-            find _site/ -type f -size +0c -exec git add {} + 2>/dev/null || true
+            git add *.txt 2>/dev/null || true
+            git add _site/ 2>/dev/null || true
             cd ..
             git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
             git push
