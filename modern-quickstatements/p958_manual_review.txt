@@ -25,11 +25,14 @@ Q11610732	Miminashi Yamaguchi Shrine	parent=Q135039027 (Meharano- Shrine)	rankin
 Q98082987	Amanokaguyama Shrine	parent=Q135039029 (Unehino- Shrine)	ranking=2	P13677_count=2	via P460
 Q98082987	Amanokaguyama Shrine	parent=Q135039033 (Amanokakoyamano- Shrine)	ranking=1	P13677_count=2	via P460
 Q11608777	Migukurumitama Shrine	parent=Q135039108 (Tokarino Shrine)	ranking=1	P13677_count=2	via P460
+Q11586779	Iwatsuta Shrine	parent=Q135039162 (Ihatsutano- Shrine)	ranking=1	P13677_count=2	via P460
 Q135270127	Iketano Shrine	parent=Q135039219 (Iketano Shrine)	ranking=0	P13677_count=2	via P460
 Q11379327	Ikota Shrine	parent=Q135039219 (Iketano Shrine)	ranking=2	P13677_count=2	via P460
 Q11379248	Iwashizu Shrine	parent=Q135039221 (Iwashitsuno Shrine)	ranking=2	P13677_count=2	via P460
 Q135270129	Wokatano Shrine	parent=Q135039222 (Wokatano Shrine)	ranking=0	P13677_count=2	via P460
 Q135206858	Okata Shrine	parent=Q135039222 (Wokatano Shrine)	ranking=2	P13677_count=2	via P460
+Q705297	Nishinomiya Shrine	parent=Q135039223 (Ohokuninushino Shrine)	ranking=1	P13677_count=2	via P460
+Q17228423	Kōzaki Shrine & Komori Shrine & Arasaki Shrine	parent=Q135039267 (Kamusakino Shrine)	ranking=1	P13677_count=2	via P460
 Q17228121	Katada Shrine	parent=Q135039268 (Wemurano Shrine)	ranking=2	P13677_count=2	via P460
 Q17225818	Yuta Shrine	parent=Q135039270 (Raiden Shrine)	ranking=2	P13677_count=2	via P460
 Q135186675	E Shrine	parent=Q135039365 (Ohowino Shrine)	ranking=4	P13677_count=2	via P460
@@ -59,10 +62,12 @@ Q134930277	Ninomiya Shrine	parent=Q135039653 (Ihanohimeno- Shrine)	ranking=0	P13
 Q135192783	Ninomiya Shrine (Tsubota)	parent=Q135039653 (Ihanohimeno- Shrine)	ranking=2	P13677_count=3	via P460
 Q11390944	Hachimangū Kinomiya Shrine	parent=Q135039655 (Ihakurawakeno- Shrine)	ranking=1	P13677_count=2	via P460
 Q110915859	Oshaku Shrine	parent=Q135039658 (Minamikono Shrine)	ranking=3	P13677_count=5	via P460
+Q134930603	Ryou Shrine	parent=Q135039661 (Hotsusakeno- Shrine)	ranking=0	P13677_count=2	via P460
 Q134927474	Hachiman Shrine	parent=Q135039666 (Takama Shrine)	ranking=2	P13677_count=3	via P460
 Q134926924	Sanai Shrine	parent=Q135039668 (Fumunashino Shrine)	ranking=1	P13677_count=2	via P460
 Q30925511	Sengen Shrine	parent=Q135039674 (Homusuhino- Shrine)	ranking=0	P13677_count=2	via P460
 Q11442850	Tenmansha	parent=Q135039728 (Ohomatonotsuno- Shrine)	ranking=3	P13677_count=2	via P460
+Q65734340	Takehime Shrine	parent=Q135039733 (Takehimeno Shrine)	ranking=1	P13677_count=2	via P460
 Q11677158	Kashima Onata Shrine	parent=Q135039994 (Kashima-Itsunohikeno Shrine)	ranking=1	P13677_count=2	via P460
 Q11677110	Kashima Amatarashi Wake Shrine	parent=Q135039994 (Kashima-Itsunohikeno Shrine)	ranking=2	P13677_count=3	via P460
 Q11677158	Kashima Onata Shrine	parent=Q135039995 (Kashimawonatano Shrine)	ranking=1	P13677_count=2	via P460
@@ -73,6 +78,7 @@ Q135194870	Ōanamochi Miyo Shrine	parent=Q135040309 (Kumakafutsuarakashihikono S
 Q135194870	Ōanamochi Miyo Shrine	parent=Q135040311 (Ohonamochinokamikataishino Shrine)	ranking=2	P13677_count=2	via P460
 Q135195732	Hinomisaki Shrine (branch shrine outside the precincts of Hongū Shrine)	parent=Q135040778 (Nimasukarakuniitateno Shrine)	ranking=3	P13677_count=2	via P460
 Q135195732	Hinomisaki Shrine (branch shrine outside the precincts of Hongū Shrine)	parent=Q135040907 (Sakutano Shrine)	ranking=1	P13677_count=2	via P460
+Q135070147	Hekireki Shrine	parent=Q135041120 (Hiyakurakuno Shrine)	ranking=1	P13677_count=2	via P460
 Q11378828	Iyo Shrine	parent=Q135041429 (Iyono Shrine)	ranking=1	P13677_count=2	via P460
 Q11442606	Ame-no-Tanagao Shrine	parent=Q135041506 (Ame-no-Tanakawono Shrine)	ranking=1	P13677_count=3	via P460
 Q11442606	Ame-no-Tanagao Shrine	parent=Q135041507 (Ameno-tanakahimeno Shrine)	ranking=1	P13677_count=3	via P460
@@ -87,3 +93,4 @@ Q11559099	Kaijin Shrine	parent=Q135041537 (Korokuno Shrine)	ranking=2	P13677_cou
 Q11559099	Kaijin Shrine	parent=Q135041538 (Korokuno- Shrine)	ranking=4	P13677_count=4	via P460
 Q18457651	Watazumi Shrine	parent=Q135041542 (Ohoshimano Shrine)	ranking=1	P13677_count=4	via P460
 Q18457651	Watazumi Shrine	parent=Q135041543 (Harahano Shrine)	ranking=1	P13677_count=4	via P460
+Q18457651	Watazumi Shrine	parent=Q135041548 (Watatsumino Shrine)	ranking=4	P13677_count=4	via P460
