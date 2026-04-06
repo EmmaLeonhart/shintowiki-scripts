@@ -172,7 +172,13 @@
       "Bash(cp modern-quickstatements/_site/runs.html _site/runs.html)",
       "Bash(cp modern-quickstatements/_site/*.txt _site/)",
       "Bash(cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json)",
-      "Bash('C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe' -u -c ':*)"
+      "Bash('C:\\\\Users\\\\Immanuelle\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe' -u -c ':*)",
+      "Bash(> modern-quickstatements/migrate_engishiki_ranking_add.txt)",
+      "Bash(> modern-quickstatements/migrate_engishiki_ranking_remove.txt)",
+      "Bash(> modern-quickstatements/migrate_gifu_ranking_add.txt)",
+      "Bash(> modern-quickstatements/migrate_gifu_ranking_remove.txt)",
+      "Bash(> modern-quickstatements/migrate_beppyo_shrine_add.txt)",
+      "Bash(> \"modern-quickstatements/broadening the category.txt\")"
     ],
     "deny": [],
     "ask": []
