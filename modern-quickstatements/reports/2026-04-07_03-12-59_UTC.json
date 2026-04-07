@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-04-07 03:12:59 UTC",
+  "outcome": "failed",
+  "batches": [
+    {
+      "file": "modern_shrine_ranking_qualifiers.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "p4656_jawiki_references.txt",
+      "lines_available": 121,
+      "lines_submitted": 100,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p958_qualifiers.txt",
+      "lines_available": 132,
+      "lines_submitted": 100,
+      "success": false,
+      "message": "HTTP 502: <!DOCTYPE HTML>\n<html lang=\"en\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"Content-Language\" content=\"en-us\">\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=yes, width=device-width\">\n    <meta http-equiv=\"imagetoolbar\" content=\"no\">\n    <meta name=\"robots\" content=\"noindex\">\n    <link rel=\"shortcut icon\" href=\"https://tools-static.",
+      "attempts": 10,
+      "api_response": null
+    },
+    {
+      "file": "remove_shikinai_hiteisha.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "remove_shikinaisha.txt",
+      "lines_available": 2,
+      "lines_submitted": 2,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "engishiki_add_references.txt",
+      "lines_available": 1296,
+      "lines_submitted": 100,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p11250_miraheze_links.txt",
+      "lines_available": 1289,
+      "lines_submitted": 100,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 10,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    }
+  ]
+}
