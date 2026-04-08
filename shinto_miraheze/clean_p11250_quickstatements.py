@@ -2,15 +2,14 @@
 """
 clean_p11250_quickstatements.py
 ================================
-Reads [[QuickStatements/P11250]] on shintowiki and checks each QS line
-against Wikidata. If the Wikidata item now has the correct P11250 value,
-the line is removed from the page.
+Reads [[QuickStatements/P11250]] on shintowiki and bulk-checks all QS lines
+against Wikidata using SPARQL. If a Wikidata item already has the correct
+P11250 value, the line is removed from the page.
 
-This is the cleanup counterpart to generate_p11250_quickstatements.py,
-which adds lines. This script only removes lines that are no longer
-needed.
+Uses a single SPARQL query to check all QIDs at once (batched in groups of
+200 to stay within query limits), replacing the old one-by-one approach that
+was too slow to keep up and caused duplicate submissions.
 
-Processes up to --max-checks items per run (default 100).
 Default mode is dry-run. Use --apply to actually edit the wiki page.
 """
 
@@ -51,6 +50,9 @@ Each line below adds a <code>P11250</code> claim linking a Wikidata item to its 
 
 QS_PAGE_FOOTER = "</pre>"
 
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_BATCH_SIZE = 200  # max QIDs per SPARQL query to stay within limits
+
 # Retry session — 429 is excluded (immediate termination)
 _retry_strategy = Retry(
     total=5,
@@ -64,41 +66,64 @@ _http.mount("http://", HTTPAdapter(max_retries=_retry_strategy))
 
 # ─── HELPERS ────────────────────────────────────────────────
 
-def get_wikidata_p11250(qid):
+def sparql_query(query):
+    """Run a SPARQL query against Wikidata Query Service. Returns list of bindings."""
+    resp = _http.get(
+        SPARQL_ENDPOINT,
+        params={"query": query, "format": "json"},
+        headers={"User-Agent": USER_AGENT, "Accept": "application/sparql-results+json"},
+        timeout=120,
+    )
+    if resp.status_code == 429:
+        print("   ! FATAL: 429 Too Many Requests from SPARQL — terminating", file=sys.stderr)
+        sys.exit(1)
+    resp.raise_for_status()
+    return resp.json().get("results", {}).get("bindings", [])
+
+
+def bulk_check_p11250(qids):
     """
-    Fetch P11250 values for a Wikidata item.
-    Returns a list of string values, or None on error.
+    Given a list of QIDs, returns a dict of {qid: [p11250_value, ...]} for
+    items that already have P11250 on Wikidata. Uses SPARQL in batches.
     """
-    try:
-        url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
-        resp = _http.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
-        if resp.status_code == 429:
-            print(f"   ! FATAL: 429 Too Many Requests — terminating", file=sys.stderr)
-            sys.exit(1)
-        resp.raise_for_status()
-        entity = resp.json().get("entities", {}).get(qid, {})
-        claims = entity.get("claims", {}).get("P11250", [])
-        values = []
-        for claim in claims:
-            dv = claim.get("mainsnak", {}).get("datavalue", {})
-            if dv.get("type") == "string":
-                values.append(dv["value"])
-        return values
-    except Exception as e:
-        print(f"   ! error fetching P11250 for {qid}: {e}")
-        return None
+    result = {}
+    batches = [qids[i:i + SPARQL_BATCH_SIZE] for i in range(0, len(qids), SPARQL_BATCH_SIZE)]
+
+    for batch_num, batch in enumerate(batches, 1):
+        print(f"  SPARQL batch {batch_num}/{len(batches)} ({len(batch)} QIDs)...")
+        values_clause = " ".join(f"wd:{qid}" for qid in batch)
+        query = f"""
+SELECT ?item ?value WHERE {{
+  VALUES ?item {{ {values_clause} }}
+  ?item wdt:P11250 ?value .
+}}
+"""
+        try:
+            bindings = sparql_query(query)
+            for row in bindings:
+                qid = row["item"]["value"].rsplit("/", 1)[-1]
+                value = row["value"]["value"]
+                result.setdefault(qid, []).append(value)
+        except Exception as e:
+            print(f"   ! SPARQL batch {batch_num} failed: {e}", file=sys.stderr)
+            # On failure, skip this batch — items won't be removed, so it's safe
+
+        if batch_num < len(batches):
+            time.sleep(2)  # be polite to WDQS
+
+    return result
 
 
 # ─── MAIN ───────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Remove completed P11250 QuickStatements from the wiki page."
+        description="Remove completed P11250 QuickStatements from the wiki page using SPARQL bulk check."
     )
     parser.add_argument("--apply", action="store_true",
                         help="Actually edit the QS page (default is dry-run).")
-    parser.add_argument("--max-checks", type=int, default=100,
-                        help="Max QS lines to check per run (default 100).")
+    parser.add_argument("--max-checks", type=int, default=0,
+                        help="Ignored (kept for CLI compatibility). All lines are checked via SPARQL.")
     parser.add_argument("--run-tag", required=True,
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
@@ -129,43 +154,31 @@ def main():
         print("Nothing to check.")
         return
 
-    # Check each QS line against Wikidata
-    checked = 0
+    # Bulk check all QIDs via SPARQL
+    print(f"\nBulk checking {len(qs_entries)} items via SPARQL...")
+    existing_p11250 = bulk_check_p11250(list(qs_entries.keys()))
+    print(f"SPARQL found P11250 values on {len(existing_p11250)} items")
+
+    # Determine which lines to remove
     removed = []
-    errors = 0
-
-    for qid, expected in list(qs_entries.items()):
-        if args.max_checks and checked >= args.max_checks:
-            print(f"Reached max checks ({args.max_checks}); stopping.")
-            break
-
-        checked += 1
-
-        p11250_values = get_wikidata_p11250(qid)
-        if p11250_values is None:
-            errors += 1
-            continue
-
-        if expected in p11250_values:
-            print(f"[{checked}] {qid} — P11250={expected} now on Wikidata, removing")
+    for qid, expected in qs_entries.items():
+        wd_values = existing_p11250.get(qid, [])
+        if expected in wd_values:
+            print(f"  REMOVE {qid} — P11250=\"{expected}\" already on Wikidata")
             removed.append(qid)
-        else:
-            # Still needed
-            pass
-
-        time.sleep(0.3)
 
     print(f"\n{'='*50}")
-    print(f"Checked:  {checked}")
-    print(f"Removed:  {len(removed)}")
-    print(f"Errors:   {errors}")
+    print(f"Total QS lines:  {len(qs_entries)}")
+    print(f"Already done:    {len(removed)}")
+    print(f"Still needed:    {len(qs_entries) - len(removed)}")
 
     if not removed:
         print("No lines to remove.")
         return
 
     # Rebuild page without removed lines
-    remaining = {qid: val for qid, val in qs_entries.items() if qid not in removed}
+    removed_set = set(removed)
+    remaining = {qid: val for qid, val in qs_entries.items() if qid not in removed_set}
     qs_lines = []
     for qid in sorted(remaining.keys()):
         qs_lines.append(f'{qid}|P11250|"{remaining[qid]}"')
@@ -176,7 +189,7 @@ def main():
         try:
             qs_page.save(
                 new_page_text,
-                summary=f"Bot: remove {len(removed)} completed P11250 QuickStatements {args.run_tag}",
+                summary=f"Bot: remove {len(removed)} completed P11250 QuickStatements (SPARQL bulk check) {args.run_tag}",
             )
             print(f"\nSaved [[{QS_PAGE_TITLE}]] ({len(remaining)} lines remaining)")
             time.sleep(THROTTLE)
