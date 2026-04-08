@@ -302,7 +302,10 @@ def execute_line(session, csrf, parsed):
     has_references = bool(parsed["references"])
 
     if not has_qualifiers and not has_references:
-        # Simple claim creation
+        # Check if claim already exists to avoid duplicates
+        existing = find_claim(session, entity, prop, value)
+        if existing:
+            return True, "Skipped (already exists)"
         ok, msg, _ = execute_create_claim(session, csrf, entity, prop, value)
         return ok, msg
 
