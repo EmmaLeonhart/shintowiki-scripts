@@ -33,19 +33,28 @@ class RateLimitError(Exception):
     """Raised when a 429 Too Many Requests response is received."""
 
 
-def sparql_query(query):
-    """Run a SPARQL query against Wikidata."""
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers={"User-Agent": UA},
-        timeout=60,
-    )
-    if r.status_code == 429:
-        print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
-        raise RateLimitError(f"429 Too Many Requests: {r.url}")
-    r.raise_for_status()
-    return r.json()["results"]["bindings"]
+def sparql_query(query, retries=3):
+    """Run a SPARQL query against Wikidata with retry on timeout."""
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.get(
+                SPARQL_ENDPOINT,
+                params={"query": query, "format": "json"},
+                headers={"User-Agent": UA},
+                timeout=90,
+            )
+            if r.status_code == 429:
+                print(f"FATAL: 429 Too Many Requests from SPARQL endpoint — bailing to avoid further rate-limit violations")
+                raise RateLimitError(f"429 Too Many Requests: {r.url}")
+            r.raise_for_status()
+            return r.json()["results"]["bindings"]
+        except requests.exceptions.ReadTimeout:
+            print(f"SPARQL timeout (attempt {attempt}/{retries})")
+            if attempt < retries:
+                time.sleep(10 * attempt)
+            else:
+                print("SPARQL endpoint timed out after all retries — exiting gracefully")
+                return []
 
 
 def find_missing_qualifiers(limit=MAX_EDITS):
