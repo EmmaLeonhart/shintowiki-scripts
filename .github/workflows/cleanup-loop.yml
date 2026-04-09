@@ -51,7 +51,7 @@ jobs:
 
   # Direct Wikidata edits via API (after QS submission)
   wikidata-qualifier-edit:
-    needs: [submit-quickstatements]
+    needs: [cleanup, submit-quickstatements]
     if: always() && needs.cleanup.result == 'success'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
@@ -66,7 +66,7 @@ jobs:
   # This is the absolute last step — random 1-5 min intervals, no rush
   direct-daily-edits:
     needs: [submit-quickstatements, build-run-history]
-    if: always() && needs.submit-quickstatements.result == 'failure'
+    if: always() && needs.submit-quickstatements.outputs.qs-failed == 'true'
     uses: ./.github/workflows/direct-daily-edits.yml
     secrets: inherit
 
