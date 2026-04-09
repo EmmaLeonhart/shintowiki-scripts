@@ -53,7 +53,8 @@ jobs:
           git add _site/ 2>/dev/null || true
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
-            # Reset and pull clean, then copy our generated files back
+            # Reset index and working tree, pull latest, then re-apply generated files
+            git reset HEAD -- . || true
             git checkout -- . || true
             git clean -fd modern-quickstatements/ || true
             git pull --rebase || true
@@ -63,8 +64,11 @@ jobs:
             git add *.txt 2>/dev/null || true
             git add _site/ 2>/dev/null || true
             cd ..
-            git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
-            git push
+            git diff --cached --quiet && echo "No changes after rebase" || {
+              git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
+              # Retry push once after pulling if it gets rejected again
+              git push || { git pull --rebase && git push; }
+            }
           }
 
       - name: Upload generated QS files
