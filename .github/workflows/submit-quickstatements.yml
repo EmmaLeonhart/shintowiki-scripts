@@ -57,8 +57,7 @@ jobs:
           git stash pop || true
           git push
 
-      - name: Fail job if submission failed
+      - name: Warn if submission failed
         if: steps.qs-submit.outcome == 'failure'
         run: |
-          echo "::warning::QuickStatements API submission failed — this is expected behavior. The QS API frequently returns errors or timeouts. The report has been committed above. No action needed."
-          exit 1
+          echo "::warning::QuickStatements API submission failed — this is expected behavior. The QS API frequently returns errors or timeouts. The report has been committed above. Direct API fallback will run."
