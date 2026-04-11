@@ -12,10 +12,10 @@
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
     "total": 16922,
-    "remaining": 84,
-    "completed": 16838,
+    "remaining": 82,
+    "completed": 16840,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 84
+    "lines": 82
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
@@ -35,10 +35,10 @@
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
     "total": 11932,
-    "remaining": 957,
-    "completed": 10975,
+    "remaining": 872,
+    "completed": 11060,
     "output_file": "engishiki_add_references.txt",
-    "lines": 927,
+    "lines": 842,
     "skipped_no_p13677": 19
   },
   "migrations": [
