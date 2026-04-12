@@ -94,6 +94,16 @@ MIGRATIONS = [
         "reference_source": "jawiki",
     },
     {
+        "id": "soja",
+        "name": "Sōja",
+        "description": "Sōja (provincial shrine enshrining the kami of a province)",
+        "source_property": "P31",
+        "values": ["Q1107129"],
+        "determined_by": "Q1107129",  # Sōja (self-referential — sōja is its own designation system)
+        "output_file": "migrate_soja.txt",
+        "reference_source": "jawiki",
+    },
+    {
         "id": "ritsuryo",
         "name": "Ritsuryō funding type",
         "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
