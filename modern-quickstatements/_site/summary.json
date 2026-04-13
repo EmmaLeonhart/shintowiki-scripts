@@ -12,10 +12,10 @@
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
     "total": 16922,
-    "remaining": 69,
-    "completed": 16853,
+    "remaining": 58,
+    "completed": 16864,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 69
+    "lines": 58
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
@@ -35,10 +35,10 @@
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
     "total": 11932,
-    "remaining": 714,
-    "completed": 11218,
+    "remaining": 635,
+    "completed": 11297,
     "output_file": "engishiki_add_references.txt",
-    "lines": 684,
+    "lines": 605,
     "skipped_no_p13677": 19
   },
   "migrations": [
@@ -98,7 +98,7 @@
       "name": "S\u014dja",
       "description": "S\u014dja (provincial shrine enshrining the kami of a province)",
       "source_property": "P31",
-      "determined_by": "Q1107129",
+      "determined_by": "Q742460",
       "add_file": "migrate_soja_add.txt",
       "remove_file": "migrate_soja_remove.txt",
       "total": 0,
