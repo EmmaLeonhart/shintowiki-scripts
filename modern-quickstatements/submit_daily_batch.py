@@ -34,6 +34,8 @@ ATOMIC_FILES = [
     "remove_shikinaisha.txt",                 # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
     "engishiki_add_references.txt",           # Add Kokugakuin refs to Engishiki/Ritsuryō P13723
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
+    "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
+    "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
 ]
 
 
