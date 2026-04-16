@@ -2,20 +2,20 @@
   "p459": {
     "name": "P459 qualifiers (determination method)",
     "description": "Add P459 (determination method) to existing P13723 statements \u2014 value-specific (Engishiki, Ritsury\u014d, modern, etc.)",
-    "total": 17005,
+    "total": 16999,
     "remaining": 0,
-    "completed": 17005,
+    "completed": 16999,
     "output_file": "modern_shrine_ranking_qualifiers.txt",
     "lines": 0
   },
   "p4656": {
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
-    "total": 17005,
-    "remaining": 47,
-    "completed": 16958,
+    "total": 16999,
+    "remaining": 46,
+    "completed": 16953,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 47
+    "lines": 46
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
@@ -27,18 +27,18 @@
   "shikinaisha": {
     "name": "Remove P31 Shikinaisha from Shikinai Ronsha",
     "description": "Remove P31 (instance of) \u2192 Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha)",
-    "remaining": 0,
+    "remaining": 1,
     "output_file": "remove_shikinaisha.txt",
-    "lines": 0
+    "lines": 1
   },
   "engishiki_refs": {
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
-    "total": 11932,
-    "remaining": 480,
-    "completed": 11452,
+    "total": 11926,
+    "remaining": 463,
+    "completed": 11463,
     "output_file": "engishiki_add_references.txt",
-    "lines": 450,
+    "lines": 433,
     "skipped_no_p13677": 19
   },
   "migrations": [
@@ -47,13 +47,13 @@
       "description": "Shikinai Sh\u014dsha, Shikinai Taisha, My\u014djin Taisha",
       "source_property": "P31",
       "determined_by": "Q138640329",
-      "total": 208,
+      "total": 0,
       "remaining": 0,
-      "completed": 208,
+      "completed": 0,
       "add_file": "migrate_engishiki_ranking_add.txt",
       "remove_file": "migrate_engishiki_ranking_remove.txt",
       "add_lines": 0,
-      "remove_lines": 208,
+      "remove_lines": 0,
       "underspec_file": null,
       "underspec_lines": 0
     },
@@ -107,13 +107,13 @@
       "description": "S\u014dja (provincial shrine enshrining the kami of a province)",
       "source_property": "P31",
       "determined_by": "Q742460",
-      "total": 84,
+      "total": 0,
       "remaining": 0,
-      "completed": 84,
+      "completed": 0,
       "add_file": "migrate_soja_add.txt",
       "remove_file": "migrate_soja_remove.txt",
       "add_lines": 0,
-      "remove_lines": 84,
+      "remove_lines": 0,
       "underspec_file": null,
       "underspec_lines": 0
     },
