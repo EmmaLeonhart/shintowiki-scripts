@@ -2,18 +2,18 @@
   "p459": {
     "name": "P459 qualifiers (determination method)",
     "description": "Add P459 (determination method) to existing P13723 statements \u2014 value-specific (Engishiki, Ritsury\u014d, modern, etc.)",
-    "total": 16999,
+    "total": 16997,
     "remaining": 0,
-    "completed": 16999,
+    "completed": 16997,
     "output_file": "modern_shrine_ranking_qualifiers.txt",
     "lines": 0
   },
   "p4656": {
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
-    "total": 16999,
+    "total": 16997,
     "remaining": 46,
-    "completed": 16953,
+    "completed": 16951,
     "output_file": "p4656_jawiki_references.txt",
     "lines": 46
   },
@@ -27,16 +27,16 @@
   "shikinaisha": {
     "name": "Remove P31 Shikinaisha from Shikinai Ronsha",
     "description": "Remove P31 (instance of) \u2192 Q134917286 (Shikinaisha) from items that have P31=Q135022904 (Shikinai Ronsha)",
-    "remaining": 1,
+    "remaining": 0,
     "output_file": "remove_shikinaisha.txt",
-    "lines": 1
+    "lines": 0
   },
   "engishiki_refs": {
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
-    "total": 11926,
+    "total": 11924,
     "remaining": 463,
-    "completed": 11463,
+    "completed": 11461,
     "output_file": "engishiki_add_references.txt",
     "lines": 433,
     "skipped_no_p13677": 19
