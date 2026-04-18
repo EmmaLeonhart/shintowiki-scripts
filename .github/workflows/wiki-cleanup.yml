@@ -167,6 +167,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: clean_p11250_quickstatements" \
             python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --run-tag "${RUN_TAG}"
 
+      - name: "Wikidata: fix_merged_qids"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: fix_merged_qids" \
+            python3 shinto_miraheze/fix_merged_qids.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
+
       - name: "Wikidata: generate_p11250_quickstatements"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
