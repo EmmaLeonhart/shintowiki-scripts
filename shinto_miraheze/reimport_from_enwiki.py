@@ -40,7 +40,7 @@ WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 ENWIKI_EXPORT_URL = "https://en.wikipedia.org/w/index.php"
 USER_AGENT = "EmmaBot/1.0 (User:EmmaBot; shinto.miraheze.org)"

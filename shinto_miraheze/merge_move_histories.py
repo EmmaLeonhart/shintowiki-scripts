@@ -31,7 +31,7 @@ WIKI_URL = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
-SLEEP     = 1.5
+SLEEP     = 2.5
 
 CAT_STARTING = 'Move starting points'
 CAT_TARGETS  = 'Move targets'

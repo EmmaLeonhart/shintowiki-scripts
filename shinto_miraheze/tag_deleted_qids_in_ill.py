@@ -32,7 +32,7 @@ WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "tag_deleted_qids_in_ill.state")
 REPORT_FILE = os.path.join(os.path.dirname(__file__), "deleted_qids_report.txt")

@@ -25,7 +25,7 @@ WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 PARENT_CAT = "Categories autocreated by EmmaBot"
 CONTENT = f"[[Category:{PARENT_CAT}]]"

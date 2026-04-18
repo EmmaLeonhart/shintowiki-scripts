@@ -12,22 +12,54 @@ Run manually: https://github.com/EmmaLeonhart/shintowiki-scripts/actions/workflo
 
 All routine bot edits run through '''GitHub Actions''', not from a local machine. Scripts are committed to the repository and triggered automatically or via manual dispatch. Local runs are only used for emergencies.
 
+=== Rate limiting and server-load policy (updated 2026-04-18) ===
+
+In response to recently raised concerns about Miraheze server load, this bot has been tightened as follows:
+
+* '''Inter-edit throttle raised from 1.5s to 2.5s''' across every script that writes to <code>shinto.miraheze.org</code> (43 scripts, single constant <code>THROTTLE = 2.5</code>). This reduces the sustained edit rate from ~40/minute to ~24/minute.
+* '''Bounded per-run work.''' Every long-walking script has a state file and a <code>--max-edits</code> cap (typically 100–300); runs resume from state rather than re-scanning from scratch, so Miraheze does not pay the cost of repeat namespace walks.
+* '''Bail-on-429 for Wikidata / SPARQL''' (policy 2026-03-28). Scripts that hit the Wikidata API or WDQS do not retry on HTTP 429 — they terminate, and the next scheduled run picks up where state left off. A narrow exception (2026-03-29) uses exponential backoff for the QS generators that legitimately need >20 SPARQL queries in one pass.
+* '''No new full-namespace walks''' will be added to the cleanup loop without a state file and a justification against the server-load constraint.
+
+Any new script added to the pipeline must follow the same template: <code>mwclient</code>, <code>THROTTLE = 2.5</code>, stateful with <code>--max-edits</code>/<code>--run-tag</code>, and graceful behaviour under 429.
+
 == Immediate / in progress ==
 <!-- BOT-IMMEDIATE:START -->
 <!-- BOT-IMMEDIATE:END -->
 
 == Tasks ==
 
-See [[User:EmmaBot]] for current tasks being done cleaning up this wiki.
+Active short-horizon work queue lives in the repository's [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/status.md status.md] (Sutra-style queue — items deleted when done, not checkmarked). Longer-horizon backlog lives in [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/todo.md todo.md].
 
-=== Current tasks ===
+=== Currently automated (runs every 24h via the cleanup loop) ===
 
-* normalize talk pages
-* normalize category pages
-* remove crud categories
-* triage [[:Category:Categories autocreated by EmmaBot]] into [[:Category:Emmabot categories with enwiki]] and [[:Category:Emmabot categories without enwiki]]
+Structural and categorization cleanup:
+* enwiki XML reimport of erroneous-transclusion pages
+* wanted-category stub creation
+* categorization of uncategorized categories and pages
+* EmmaBot category triage (enwiki → jawiki → secondary → single-member bucket)
+* unused-template deletion
+* double-redirect and broken-redirect fixes
+* <code>&lt;noinclude&gt;</code> fix on templates carrying categories or wikidata-link transclusions
+* untranslated-Japanese tagging with bucketed character-count categories
+* talk-page migration seeded from ja / en / simple Wikipedia
+* duplicate QID disambiguation resolution (easy redirect case)
+* crud category stripping
+
+Wikidata integration:
+* P11250 (Miraheze article ID) QuickStatements — generate, fetch from wiki, submit daily, clean once accepted
+* P958 (section) qualifier generation and daily submission
+* P459 (determination method) qualifier application via direct API
+* remove P31 = Shikinaisha from items already carrying P31 = Shikinai Ronsha
+
+Bookkeeping: bot userpage status markers at start/end of each run, full run-history dashboard page rebuilt per run.
 
 === Future tasks ===
 
-* normalization of template categories
+* strip untranslated-character-count categories from pages now in [[:Category:Translated pages]]
+* remove legacy <code>{{DEFAULTSORT:...}}</code> tags from mainspace
+* extend P11250 QuickStatements generation to Template: and Category: namespaces
+* translate the remaining pages in the repository's <code>need_translation/</code> queue
+* audit [[:Category:Double category qids]] for members whose two targets are genuinely distinct working categories (needs human review)
 * enrich [[:Category:Categories autocreated by EmmaBot]] subcategories with proper content
+* namespace restructure (<code>Data:</code>, <code>Meta:</code>, <code>Export:</code>) per repository VISION.md
