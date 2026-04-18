@@ -1,0 +1,27 @@
+__NOTOC__
+== Welcome to {{SITENAME}}! ==
+This wiki is mainly dedicated to covering Shinto and Shinto shrines. This wiki has a broad focus on Japanese religion, culture, and history.
+
+We have [https://shinto.miraheze.org/wiki/Special:PrefixIndex?prefix=&namespace=0&hideredirects=1&stripprefix=1 {{NUMBEROFARTICLES}} articles] and counting.
+
+History was just merged to fix up before other things
+
+== Tasks ==
+
+See [[User:EmmaBot]] for current tasks being done cleaning up this wiki
+
+=== Current tasks ===
+
+* Four current tasks
+** normalize talk pages
+** normalize category pages
+** delete jawiki resolution pages (wikidata links cover this)
+** remove crud categories
+
+=== Future tasks ===
+* Normalization of template categories
+* fix [[:Category:Erroneous qid category links]][[Category:Need translation]]
+[[Category:Need translation]]
+[[Category:Need translation]]
+[[Category:Need translation]]
+[[Category:Pages without wikidata]]

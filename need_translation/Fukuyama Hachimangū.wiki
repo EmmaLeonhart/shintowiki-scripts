@@ -1,0 +1,162 @@
+<!--interwikis from wikidata-->[[en:Fukuyama Hachimangū]][[ja:福山八幡宮]]
+
+
+{{Expand language|topic=|langcode=ja|otherarticle=福山八幡宮|date=December 2021}}
+{{Infobox religious building
+| name                  = Fukuyama Hachimangū
+| native_name           = 福山八幡宮
+| native_name_lang      = ja
+| religious_affiliation = [[Shinto]]
+| image                 = 福山八幡宮本殿.JPG
+| caption               = Central worship hall, ca. 2006
+| location              = 1 Chome-2-16 Kitayoshizucho, {{ill|Fukuyama, Hiroshima|en|Fukuyama, Hiroshima|qid=Q661038|lt=Fukuyama}}, Hiroshima 720-0073, Japan
+| deity                 = {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}, {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}, [[Himegami]]
+| prefecture            = {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima}}
+| country               = {{flag|Japan}}
+| type                  = [[Beppyo Shrine|Beppyo]]
+}}
+'''Fukuyama Hachimangū''' (福山八幡宮, ''Fukuyama Hachimangū'') is a [[Shinto]] shrine located in {{ill|Fukuyama, Hiroshima|en|Fukuyama, Hiroshima|qid=Q661038|lt=Fukuyama, Hiroshima}} Prefecture, Japan. It is a [[Hachiman shrine|Hachiman Shrine]], dedicated to the [[kami]] [[Hachiman]]. The [[kami]] it enshrines include {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}, {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}, and Himegami (比売神).
+
+== See also ==
+*[[List of Shinto shrines in Japan]]
+*[[Hachiman shrine|Hachiman Shrine]]
+
+== External links ==
+{{Commons Category|Fukuyama Hachiman-gū}}
+*[https://www.fukuyamahachimangu.or.jp Official website]
+
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+{{coord missing|Hiroshima Prefecture}}
+
+{{Shinto-stub}}
+{{Hachiman Faith}}
+
+{{Beppyo Shrines}}
+
+
+
+[[en:Fukuyama Hachimangū]]
+<!--enwiki derived wikidata interwikis-->
+{{Commons category|Fukuyama Hachiman-gū}}
+[[ja:福山八幡宮]]
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q11592011}}
+[[Category:Beppyo shrines]]
+[[Category:Hachiman shrines]]
+[[Category:Ken-sha]]
+[[Category:Shinto shrines in Hiroshima Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|福山八幡宮|version=102011313|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{神社
+|名称=福山八幡宮
+|画像=[[画像:福山八幡宮本殿.JPG|250px]]<br />中央拝殿（2006年3月撮影）<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250|coord={{coord|34|29|41.5|N|133|21|35.5|E}}}}
+|所在地={{jalink|広島県|Q617375}}{{jalink|福山市|Q661038}}北吉津町1-2-16
+| 緯度度 = 34 | 緯度分 = 29 | 緯度秒 = 41.5 | N(北緯)及びS(南緯) = N 
+| 経度度 = 133 |経度分 = 21 | 経度秒 = 35.5 | E(東経)及びW(西経) = E
+| 地図国コード = JP
+|祭神={{jalink|応神天皇|Q317997}}、{{jalink|神功皇后|Q232803}}、{{jalink|比売大神}}
+|創建=古代
+|社格={{jalink|別表神社|Q10898274}}
+|例祭=
+|神事=
+|本殿=
+|別名=
+| 地図 = Japan Hiroshima
+| ラベル位置 = left
+}}
+[[画像:福山八幡宮東御宮.JPG|thumb|240px|right|福山八幡宮東御宮（2006年3月撮影）]]
+[[画像:Fukuyamahatimangu Nishagyoen.jpg|thumb|240px|right|福山八幡宮西御宮（2009年4月撮影）]]
+'''福山八幡宮'''（ふくやまはちまんぐう）は、{{jalink|広島県|Q617375}}{{jalink|福山市|Q661038}}北吉津町にある{{jalink|八幡宮|Q11390939}}である。{{jalink|福山城 (備後国)|Q1071869|福山城}}の北側にある松廼尾山に祀られている。
+
+== 概要 ==
+福山八幡宮は2つの社で構成されている。多くの場合、神社を並列して祀る場合、どちらかの本殿へ合祀することが一般的であるが、本宮は{{jalink|本殿|Q2044994}}、{{jalink|拝殿|Q3125745}}、随身門、石段、両部{{jalink|鳥居|Q234731}}、参道、総門等それぞれが同一規模、同一形式で東西に並べて建てられており、全国に類例の少ない形式である。かつては、東御宮は延広（のぶひろ）八幡宮、西御宮は野上（のがみ）八幡宮と呼ばれ別法人として祀られていたが、{{jalink|1969年|Q2485}}に両者の法人格を合併し「福山八幡宮」となった。備後福山の{{jalink|総鎮守}}とされ、境内には{{jalink|結婚式|Q49836}}などを行う福山八幡宮会館のほか{{jalink|水野勝成|Q8190277}}を祀る聡敏神社や稲荷神社など多くの社も祭られている。
+
+1951年{{jalink|第6回国民体育大会|Q11601649|広島国体}}では境内で柔道が行われた。
+
+本宮は25年を式年としており、2009年（平成21年）3月3日に、御鎮座三百二十五年奉祝大祭を行う。
+
+== 歴史 ==
+伝承によれば福山八幡宮の前身となる延広八幡宮と野上八幡宮は古代から{{jalink|深津郡|Q11153319}}に奉祀されていたとされているが、両神社が文献に現れるのは江戸時代になってからで、それ以前の正確な様子はわかっていない。{{jalink|備後福山藩|Q909278|福山藩}}初代藩主{{jalink|水野勝成|Q8190277}}による{{jalink|福山城 (備後国)|Q1071869|福山城}}築城と城下町の整備に伴い城下に祀られるようになり、2代藩主{{jalink|水野勝俊|Q10565388}}の時代に城下南側の西と東に置かれる形ができあがった。
+
+=== 延広八幡宮 ===
+かつては惣堂八幡宮と呼ばれ福山城建設地である常興寺山の麓にあったが、福山城築城のとき職人たちにより城下の南の神島町下市（現在の延広町）に祀られたとされる。{{jalink|寛永|Q1192913}}18年（{{jalink|1641年|Q6907}}）に神島町が火事で焼けたため、神島町と共に城下南東（現在の住吉町）に移されたといわれる。なお、現在の天満屋南側の通りが（神社が存在しないにもかかわらず）「宮通り」と呼ばれるのは、この名残といわれる。寛文2年（{{jalink|1662年|Q7574}}）、3代藩主{{jalink|水野勝貞|Q10565395}}の死去により発生したお家騒動のため、惣堂は騒動につながるとして「延広八幡宮」と改称された。この騒動は旧勝貞側近と門閥派との対立により起きたもので「水野家家中騒動」といわれ勝貞の元側近5名が殉死を強いられることになった。4代藩主・{{jalink|水野勝種|Q10565394}}が{{jalink|天和 (日本)|Q1145289|天和}}3年（{{jalink|1683年|Q7651}}）に城下南西の野上八幡宮と共に吉津川北岸に移転させ「東の宮」と一般に呼ばれるようになった。
+
+=== 野上八幡宮 ===
+野上八幡宮は{{jalink|天文 (日本)||天文}}年中（1532－55）に備後地方の有力豪族である杉原盛重により常興寺山（現在の福山城）に造営されたとされる。福山城築城に際して城下の南西である野上（現在の野上町）に移され「野上」の名称の由来となったといわれる。なお、遷座される以前の名称は分かっていないが、常興寺山に祀られる以前は野上町にあったとの伝承もあり、元々野上の名称であったともいわれるが（つまり野上→常興寺山→野上と移転したことになる）、若宮八幡宮の別名もあることから、これが旧称であった可能性も考えられる。何れにしろ、確たる由来は不明である。以後、水野家の庇護を受け藩士たちの{{jalink|氏神|Q767655}}として崇められていたが、4代藩主・{{jalink|水野勝種|Q10565394}}が{{jalink|天和 (日本)|Q1145289|天和}}3年（{{jalink|1683年|Q7651}}）に城下南東の延広八幡宮と共に吉津川北岸に移転され「西の宮」と一般に呼ばれるようになった。
+
+=== 両社八幡宮 ===
+4代藩主・{{jalink|水野勝種|Q10565394}}は{{jalink|天和 (日本)|Q1145289|天和}}3年（{{jalink|1683年|Q7651}}）に城下南東の延広八幡宮と城下南西の野上八幡宮を筆頭家老上田玄蕃下屋敷であった吉津川北岸の松廼尾山に移転させた。本宮は福山城天守を南に望む小山の山頂に同じ形式・規模で並べて建てられ、隣接した位置に設置されたが両社の間は福山藩初代藩主である水野勝成を祀る聡敏神社が鎮座し、参道も東西それぞれに専用のものが設けられた。このように藩士と町人の氏神が対等に並べられたことは、水野家の統治政策を象徴している。以後、2つの神社は両社八幡宮と呼ばれることになった。
+
+=== 福山八幡宮 ===
+昭和44年({{jalink|1969年|Q2485}})に両者の法人格は合併され{{jalink|神社本庁|Q908077}}所属の{{jalink|別表神社|Q10898274}}となり社名は「福山八幡宮」と改められた。両社の本殿は共に建造当時のまま今日まで残されているが、間を隔てる聡敏神社は昭和59年({{jalink|1984年|Q2432}}）の中央拝殿建設により西御宮裏（北西部）に移され、本殿の周囲も舞台の新設を始めとする大規模な整備が行われ創建時から大きく姿を変えた。中央拝殿正面の舞台は巨大な貯水タンクになっており、初期消火に必要な水量（最大水量にて30分連続放水可能）を常に蓄えている。この中央拝殿は御鎮座300年の式年記念事業により建てられたもので、両社の中間に位置し、東西の本殿を同時に参拝できるようになっている。
+
+== 祭神 ==
+*{{jalink|応神天皇|Q317997}}
+**誉田別命 (ほんだわけのみこと)　―　人皇第15代  
+
+*{{jalink|神功皇后|Q232803}}
+**息長帯比賣命　(おきながたらしひめのみこと) 　―　応神天皇御母君
+
+*{{jalink|比売大神}}　　
+**紀理姫命・多岐都姫命・市杵島姫命　(たぎりひめのみこと・たぎつめひめのみこと・いちきしまひめのみこと）
+
+== 年中行事 ==
+=== 夏越の茅輪くぐり ===
+
+例年7月30日に執り行われ、一般的には夏の{{jalink|大祓|Q11261910}}と呼ばれる行事である。
+年二回、6月と12月の最終日に執り行われるが、{{jalink|旧暦|Q11511066}}に合わせて夏は7月に行う。
+
+{{jalink|茅輪}}くぐりとは『{{jalink|備後国風土記|Q11387368}}』スサノオノミコトの故事に由来した神事
+
+=== 薪能 ===
+薪能とは「薪の宴の能」という意味で、本来は奈良の{{jalink|興福寺|Q1070863}}に薪を献進する際に行われた{{jalink|能|Q226887}}のこと。その後いったんは絶えたものの、近年簡略化して{{jalink|復興|Q11489398}}し、夕方暗くなってから、薪の火を{{jalink|照明|Q210064}}代わりにして野外で行う{{jalink|納涼|Q11605358}}{{jalink|能|Q226887}}のことも薪能と呼んでいる。夜の海や林を背景にして薪の明かりで演ずる能は、幽玄がさらに増して迫力があり、新たな{{jalink|人気|Q1357284}}を得ている。
+
+福山藩の歴代{{jalink|藩主}}が{{jalink|能|Q226887}}を奉納された歴史にちなみ、{{jalink|御鎮座}}300年を記念して{{jalink|1986年|Q2430}}（昭和61年）より毎年{{jalink|7月28日|Q2718}}に恒例行事として開催。特設舞台にて篝火の揺れる炎に照らされて、演じられる。{{jalink|観世流|Q4525037}}、{{jalink|大蔵流}}、{{jalink|喜多流|Q11419173}}の各流派が基本的には隔年にて上演。
+
+== 所在地 ==
+〒720-0073　広島県福山市北吉津町1-2-16　
+
+== 交通アクセス ==
+*JR{{jalink|福山駅|Q800797}}北口より徒歩10分 
+*山陽自動車道・福山東インターチェンジ、福山西インターチェンジより20分 
+
+== 周辺情報 ==
+*{{jalink|福山城 (備後国)|Q1071869|福山城}}
+*{{jalink|備後護国神社|Q11387373}}
+*{{jalink|三蔵稲荷神社|Q11357190}}
+*{{jalink|福山市武道館}}
+*{{jalink|福山市人権平和資料館|Q11592024}}
+*{{jalink|ふくやま美術館|Q11277001}}
+*{{jalink|ふくやま文学館|Q11277000}} 
+*{{jalink|広島県立歴史博物館|Q5771293}}
+
+== 脚注 ==
+{{Reflist}}
+
+== 外部リンク ==
+*[http://www.fukuyamahachimangu.or.jp/ 福山八幡宮公式HP]
+{{神道 横}}
+
+{{shinto-stub}}
+{{pref-stub|pref=広島県}}
+
+==End Japanese==
+[[Category:広島県の神社]]
+[[Category:福山市の建築物]]
+[[Category:福山市の歴史]]
+[[Category:別表神社]]
+[[Category:八幡宮]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Pages with 1500+ untranslated japanese characters]]
+[[Category:Pages with 2000+ untranslated japanese characters]]
+[[Category:Need translation]]

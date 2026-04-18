@@ -1,0 +1,165 @@
+{{Expand Japanese|団原古墳|date=November 2025}}
+<!--interwikis from wikidata-->[[en:Danbara Kofun]][[ja:団原古墳]]
+{{Short description|Ancient tomb in Japan}}
+{{Orphan|date=November 2015}}
+
+[[File:Danbara kofun-sekishitsu.jpg|thumb|Danbara Kofun]]
+The {{nihongo|'''Danbara Kofun'''|団原古墳}} is an old stone {{ill|Tomb|en|Tomb|qid=Q381885|lt=Tomb}} in the grounds of [[Nagoya Castle]] in central {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}.
+
+== History ==
+The tomb is a Japanese ''[[kofun]]'', consisting of an empty stone chamber where someone originally was laid to rest. The chamber consists of roughly hewn, large slabs of stone pieced together and capped with a heavy stone roof. The entrance to the chamber was chiseled into the rock.
+
+The kofun is located on the grounds of the Ofukemaru of Nagoya Castle.<ref>{{Cite web |title=御深井丸に佇む古代の石造物 ―団原古墳石室と河内飛鳥寺塔心礎― {{!}} イベントアーカイブ {{!}} 催し |url=https://www.nagoyajo.city.nagoya.jp/event/2023/03/20230320_4204.html |access-date=2024-11-21 |website=名古屋城公式ウェブサイト |language=ja}}</ref> In 1988, experts were able to determine that the tomb must have originally come from what is today {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}, or ancient {{ill|Izumo Province|en|Izumo Province|qid=Q582846|lt=Izumo Province}}. The exact original location of the tomb cannot however be determined since most of the areas in question are today used for agriculture. Shimane Prefecture is about 500 kilometres to the west of Nagoya. How and when the tomb was transported to Nagoya Castle and what purpose it served there is unknown. It could be that the tomb was reused as a storage chamber, however that remains speculation.{{Citation needed|date=May 2012}}
+
+==References==
+{{commonscat}}
+{{reflist}}
+{{CoordDec|35.18639|136.89857|display='title'}}
+
+[[en:Danbara Kofun]]
+{{wikidata link|Q5214944}}
+[[Category:Buildings and structures in Nagoya]]
+[[Category:Buildings and structures in Shimane Prefecture]]
+[[Category:Kofun]]
+[[Category:Special:LonelyPages 26 May 2025]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|団原古墳|version=107159095|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{日本の古墳
+|名称 = 団原古墳
+|画像 = [[File:Danbara kofun-sekishitsu.jpg|280px]]
+|画像キャプション = 移築石室（{{jalink|名古屋城|Q648629}}御深井丸内）
+|別名 = 
+|所属 = 有・大草古墳群
+|所在地 = {{jalink|島根県|Q132751}}{{jalink|松江市|Q207321}}山代町
+|緯度度 = 35|緯度分 = 25|緯度秒 = 47.40
+|経度度 = 133|経度分 = 5|経度秒 = 29.15
+|ISO = JP-32
+|形状 = 不明
+|規模 = 
+|埋葬施設 = 石棺式石室
+|出土品 = {{jalink|須恵器|Q7634351}}
+|陪塚 =
+|築造時期 = {{jalink|6世紀|Q8090}}末-{{jalink|7世紀|Q8089}}初頭
+|被葬者 = 
+|陵墓 = 
+|史跡 = なし
+|有形文化財 = 
+|特記事項 = 
+|地図 = Japan Shimane
+|アイコン = 
+|ラベル = 団原古墳
+|ラベル位置 = bottom
+}}
+{{OSM Location map
+| coord = {{Coord|35|25|36|N|133|5|30|E}} | zoom = 15
+| float = right
+| width = 300| height =300
+| caption = {{center|有・大草古墳群の主な古墳}}
+| scalemark = 60
+| mark-coord1= {{Coord|35|25|40.25|N|133|5|28.68|E}}
+| mark1 = blue pog.svg
+| mark-size1=8
+| label1={{jalink|岡田山古墳群|Q11473525|岡田山<br/>1号墳}}
+| label-pos1=top
+| label-color1=black
+| mark-coord2= {{Coord|35|25|38.33|N|133|5|29.00|E}}
+| mark2 = blue pog.svg
+| label2={{jalink|岡田山古墳群|Q11473525|2号墳}}
+| label-pos2=left
+| label-color2=black
+| mark-size2=8
+| mark-coord3= {{Coord|35|25|35.93|N|133|5|35.15|E}}
+| mark3 = blue pog.svg
+| label3={{jalink|岩屋後古墳|Q131930270}}
+| label-pos3=right
+| label-color3=black
+| mark-size3=8
+| mark-coord4= {{Coord|35|25|47.40|N|133|5|29.15|E}}
+| mark4 = red pog.svg
+| label4='''団原古墳跡'''
+| label-pos4=right
+| label-color4=black
+| mark-size4=8
+| mark-coord5= {{Coord|35|25|27.72|N|133|5|35.67|E}}
+| mark5 = blue pog.svg
+| label5={{jalink|御崎山古墳|Q134462007}}
+| label-pos5=right
+| label-color5=black
+| mark-size5=8
+| mark-coord6= {{Coord|35|25|34.93|N|133|5|25.23|E}}
+| mark6 = green pog.svg
+| label6={{jalink|島根県立八雲立つ風土記の丘|Q104721896|八雲立つ<br/>風土記の丘}}
+| label-pos6=left
+| label-color6=black
+| mark-size6=8
+}}
+'''団原古墳'''（だんばらこふん）は、{{jalink|島根県|Q132751}}{{jalink|松江市|Q207321}}山代町にあった{{jalink|古墳|Q1141225}}。有・大草古墳群を構成した古墳の1つ。現在では墳丘の大部分は失われ、石室は{{jalink|名古屋城|Q648629}}内に移築されている。
+
+== 概要 ==
+島根県東部、意宇平野南西隅の低丘陵（標高23メートル）上に築造された古墳である。かつては墳丘が流失して石室が露出する状態であったが、{{jalink|昭和|Q327567}}期に石室が解体されて{{jalink|名古屋城|Q648629}}御深井丸内へ移築されており、現地では{{jalink|1988年|Q2426}}（{{jalink|昭和|Q327567}}63年）に発掘調査が実施されている。
+
+墳形は明らかでない。現在は長径約40メートル・短径約25メートル・高さ約2メートルの楕円状の高まりが残り、発掘調査では西側墳裾が確認されている{{Sfn|松江市史 史料編2 考古資料|2012}}。墳丘外表の調査では墳裾から{{jalink|須恵器|Q7634351}}（子持壺など）が出土している{{Sfn|松江市史 史料編2 考古資料|2012}}。埋葬施設は石棺式石室で、南西方向に開口したとされる。玄室・羨道から構成され、玄室部分は名古屋城内に移築されている。玄室が一枚石の組み合わせで家形石棺状に構築された石室であり、出雲地方東部に分布する同様の石棺式石室の代表例の1つになる。石室内は盗掘に遭っており、副葬品は詳らかでないが、発掘調査では羨道部付近で須恵器の出雲型子持壺・大甕が出土している。
+
+築造時期は、{{jalink|古墳時代|Q459939}}後期-{{jalink|終末期古墳|Q11606293|終末期}}の{{jalink|6世紀|Q8090}}末-{{jalink|7世紀|Q8089}}初頭頃と推定される{{Sfn|松江市史 史料編2 考古資料|2012}}。付近では{{jalink|岡田山古墳群|Q11473525|岡田山1号墳}}・{{jalink|御崎山古墳|Q134462007}}・{{jalink|岩屋後古墳|Q131930270}}に後続する時期に位置づけられる。出雲地方東部では、山代・大庭古墳群（{{jalink|山代二子塚古墳|Q11466267}}・{{jalink|山代方墳|Q109366099}}など）の規模が突出しており、大草町周辺の古墳の被葬者はその大首長を補佐する立場にあったと想定される。
+
+== 遺跡歴 ==
+* {{jalink|1918年|Q2094}}（{{jalink|大正|Q329174}}7年）、梅原末治が学会に紹介。石室実測図の報告（当時には原位置で露出）{{Sfn|松江市史 史料編2 考古資料|2012}}。
+* {{jalink|1936年|Q18649}}（{{jalink|昭和|Q327567}}11年）、名古屋の古美術商の長谷川長宜堂が石室を購入。その後解体されて馬潟駅（現在の{{jalink|東松江駅_(島根県)|Q5357082|東松江駅}}）に野積み{{Sfn|大村陸・磯貝龍志|2024}}。
+* {{jalink|1940年|Q18633}}（昭和15年）、名古屋の{{jalink|笹島駅|Q11602562}}まで石室石材を汽車輸送、駅から中村貫之助邸まで牛車輸送、邸内で保存{{Sfn|大村陸・磯貝龍志|2024}}。
+* 戦後、名古屋城天守の再建運動。機運醸成のため御深井丸に茶席整備の計画、茶席庭園へ多くの石造物の寄贈{{Sfn|大村陸・磯貝龍志|2024}}。
+* {{jalink|1949年|Q5188}}（昭和24年）、長谷川祐之が石室を名古屋市へ寄贈。米軍トラックで運搬され、名古屋城大天守礎石展示位置に設置{{Sfn|大村陸・磯貝龍志|2024}}。
+* {{jalink|1959年|Q5302}}（昭和34年）、名古屋城天守再建の際に御深井丸に石室を移動{{Sfn|大村陸・磯貝龍志|2024}}。
+* {{jalink|1987年|Q2429}}（昭和62年）、出雲考古学研究会による石室実測図の報告{{Sfn|大村陸・磯貝龍志|2024}}。
+* {{jalink|1988年|Q2426}}（昭和63年）
+** 水谷盛光が長谷川祐之への聞き取り調査を報告{{Sfn|大村陸・磯貝龍志|2024}}。
+** 現地発掘調査（島根県教育委員会、{{jalink|1989年|Q2425}}に報告）{{Sfn|団原古墳・下黒田遺跡|1989}}。
+* {{jalink|2024年|Q49619}}（{{jalink|令和|Q62609017}}6年）、石室三次元計測図の報告（大村陸・磯貝龍志）{{Sfn|大村陸・磯貝龍志|2024}}。
+
+== 埋葬施設 ==
+埋葬施設としては石棺式石室が構築されており、南西方向に開口したとされる。玄室・羨道から構成されたが、現在では玄室のみ名古屋城御深井丸内に移築されている。石室の規模は次の通り{{Sfn|大村陸・磯貝龍志|2024}}。
+* 玄室：長さ約1.9メートル、幅約2.6メートル、高さ約1.9メートル
+* 羨道：長さ不明、幅約0.9メートル、高さ約1.3メートル（玄室前壁の刳り込みからの推定値）
+
+石室の石材は大草周辺産の角礫凝灰岩。玄室の平面形は横広の長方形で、奥壁・側壁・前壁はいずれも板状に加工した一枚石による。前壁は、正面中央やや左寄りを幅0.6メートル・高さ0.7メートルの長方形に刳り抜いて玄門とし（刳り抜き玄門）、外面には閉塞石を受けるための刳り込みを施す。天井石も一石で、内面は平坦であるが、外面は家形に加工されており（現在は左右逆転の状態で保存）、妻部・平部に縄掛突起の痕跡が認められる。羨道は、大正期には西側の石材2枚や転落天井石が残存していたといい、石室跡地付近で凝灰岩の一枚石が確認されている{{Sfn|松江市史 史料編2 考古資料|2012}}{{Sfn|大村陸・磯貝龍志|2024}}。
+
+古くから開口したため、石室内の副葬品は詳らかでない。発掘調査では羨道部付近で須恵器の出雲型子持壺約7個体・大甕4個体以上が出土しており、羨道部付近に置かれたとみられる{{Sfn|松江市史 史料編2 考古資料|2012}}。
+
+== 関連施設 ==
+* {{jalink|島根県立八雲立つ風土記の丘|Q104721896}}展示学習館（松江市大庭町）
+
+== 脚注 ==
+{{脚注ヘルプ}}
+{{reflist}}
+
+== 参考文献 ==
+{{small|（記事執筆に使用した文献）}}
+* {{Cite book|和書|editor=|author=|year=1989|chapter=|title=[https://sitereports.nabunken.go.jp/2895 団原古墳・下黒田遺跡]|series=風上記の丘地内遺跡発掘調査報告VI|number=|publisher=島根県教育委員会|isbn=|ref={{Harvid|団原古墳・下黒田遺跡|1989}}}} - リンクは奈良文化財研究所「全国文化財総覧」。
+* {{Cite book|和書|editor=|author=|year=2012|chapter=団原古墳|title=松江市史|volume=史料編2 考古資料|number=|publisher=松江市|isbn=|ref={{Harvid|松江市史 史料編2 考古資料|2012}}}}
+* {{Cite book|和書|editor=|author=大村陸・磯貝龍志|year=2024|chapter=名古屋市所在松江市団原古墳石室 調査概要|title=石工の技術|series=しだみゅー歴史講演会 東海古墳時代研究会 第8回研究会資料|volume=|number=|publisher=しだみの里守グループ|isbn=|ref={{Harvid|大村陸・磯貝龍志|2024}}}}
+
+== 関連文献 ==
+{{small|（記事執筆に使用していない関連文献）}}
+* {{Cite journal|和書|author={{jalink|梅原末治|Q2478238}}|title=出雲に於ける特殊古墳（上）|date=1918-11|journal=考古學雜誌|publisher=考古學會|volume=9|number=3|pages=132-145|url=|ref=}}
+* {{Cite book|和書|editor=|author=|year=1987|chapter=|title=石棺式石室の研究 -出雲地方を中心とする切石造り横穴式石室の検討-|series=古代の出雲を考える6|number=|publisher=出雲考古学研究会|isbn=|ref=}}
+
+== 関連項目 ==
+{{Commonscat|Danbara Kofun}}
+* {{jalink|名古屋城|Q648629}}
+
+
+==End Japanese==
+[[Category:島根県の古墳]]
+[[Category:松江市の歴史]]
+[[Category:名城公園]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Need translation]]

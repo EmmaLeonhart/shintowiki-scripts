@@ -1,0 +1,43 @@
+<!--interwikis from wikidata-->[[ja:大日本国一宮記]]
+
+
+'''Dainihon-koku Ichinomiya-ki''' (大日本国一宮記) is a list of [[Ichinomiya]] (first-Ranked shrines) in Japan, compiled in the {{ill|Gunsho Ruijū|en|Gunsho Ruijū|qid=Q1554852|lt=Gunsho Ruijū|1=Gunsho Ruijū}}’s second volume, "Shinto Division" (神祇部), Volume 23. It is believed to have been created during the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}.
+Various historical records documenting the names, enshrined deities, and locations of Ichinomiya shrines are collectively referred to as "Ichinomiya-ki." Among these, '''Dainihon-koku Ichinomiya-ki''' is one such text. The manuscript itself exists in numerous copies and is a significant resource for the study of Ichinomiya. Even in contemporary times, it is sometimes used as a criterion for selecting Ichinomiya for pilgrimage or research.<ref>Ōbayashi Taira, *My Ichinomiya Pilgrimage Record,* Seidosha, September 2001. The author establishes two conditions for determining Ichinomiya: 1) the shrine is recognized as Ichinomiya in texts like '''Dainihon-koku Ichinomiya-ki''' or [[Tachibana Mitsuyoshi]]’s *Shokoku Ichinomiya Junpai-ki*; 2) the shrine is listed in the [[Engishiki Jinmyōchō]].</ref>
+== Overview ==
+'''Dainihon-koku Ichinomiya-ki''' lists the names, enshrined deities, alternative names, and locations of 67 shrines nationwide. It concludes with the phrase, "'''All Ichinomiya shrines of the provinces are as follows. This is sacred and mysterious knowledge.'''"
+The text reflects the influence of [[Honji Suijaku]] (the theory of original Buddhist entities manifesting as Shinto deities). It also lists two separate shrines as though they were a single shrine in the [[Awa Province]] and {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province|1=Bungo Province}}.<ref>Tachibana Mitsuyoshi, during his national Ichinomiya pilgrimage, carried a manuscript of '''Dainihon-koku Ichinomiya-ki''' that stated the Ichinomiya of Bungo Province, [[Saiki Shrine]], was also known as [[Yusuhara Hachiman]]. His *Shokoku Ichinomiya Junpai-ki* records that he visited Yusuhara Hachiman to inquire about Saiki Shrine’s location but found no information from shrine personnel.</ref> Therefore, the compilation is assumed not to have been based on field surveys.
+The annotation regarding [[Kagoshima Jingū|Kagoshima Shrine]] contains the phrase "'''Ken’u says'''" (兼右云), indicating it was likely compiled during the lifetime of [[Yoshida Ken’u]] in the 16th century.<ref name="shokeitou">Ōtsuka Noriko, *The Various Lineages of Ichinomiya-ki: Bibliographic Study of Manuscripts,* in *The Historical Development of the Medieval Ichinomiya System, Vol. 2: Comprehensive Research,* Iwata Shoin, December 2004.</ref> It is suggested that the compilation was created by the [[Urabe clan|Yoshida family]] or someone closely related to them.
+Although many manuscripts exist, their content may vary slightly.<ref>According to Ōtsuka Noriko, manuscripts at the [[Jingū Library]] state: "Isewa Shrine, Masumita Daimyōjin, Ōnamuchi-no-Mikoto, Shima Tōshi District," and "Ō Shrine, Ōnamuchi-no-Mikoto, Owari Province, Nakashima District."</ref> Additionally, manuscripts titled '''Daiwako-koku Ichinomiya-ki''' and '''Nihon-koku Ichinomiya-ki''' have almost identical content and are considered variants of '''Dainihon-koku Ichinomiya-ki'''.<ref name="shokeitou" />
+The study "The Various Lineages of Ichinomiya-ki"<ref name="shokeitou" /> compares '''Dainihon-koku Ichinomiya-ki''' with the earlier '''Shokoku Ichinomiya Jinmyōchō''' (annotated by [[Urabe Sukuné]] in 1375). Of the 19 shrines where deity names differ between the two texts, 14 have been corrected in the latter to match the deities listed in the [[Engishiki Jinmyōchō]]. For instance, in {{ill|Mutsu Province|en|Mutsu Province|qid=Q907389|lt=Mutsu Province|1=Mutsu Province}}, the Ichinomiya was changed from {{ill|Shiogama shrine|en|Shiogama shrine|qid=Q133753|lt=Shiogama shrine|1=Shiogama shrine}} to [[Totsukowake Shrine]], and in Bungo Province, it was changed from [[Yusuhara Hachiman]] to [[Saiki Shrine]]. This suggests that the editors were strongly influenced by the Engishiki Jinmyōchō’s inclusion of formally recognized shrines. However, whether these revisions were intended to seek factual accuracy or were politically motivated requires further examination.
+== References ==
+<references />
+== Further Reading ==
+* Hannya Hokiichi (ed.), *Gunsho Ruijū, Vol. 2: Shinto Section (2)*, Zokugunsho Ruijū Kankōkai, November 1952.
+* Ichinomiya Research Society (ed.), *The Historical Development of the Medieval Ichinomiya System, Vol. 2: Comprehensive Research,* Iwata Shoin, December 2004.
+* Saeki Ariyoshi (ed.), *Shinto Texts, Vol. 1,* Kōten Kōkyūsho, October 1906 (reproduced by Shibunkaku, 1971).
+* Saeki Ariyoshi (ed.), *Shinto Texts, Vol. 2,* Kōten Kōkyūsho, February 1907 (reproduced by Shibunkaku, 1971).
+
+== See Also ==
+* {{ill|Gunsho Ruijū|en|Gunsho Ruijū|qid=Q1554852|lt=Gunsho Ruijū|1=Gunsho Ruijū}}
+* [[Ichinomiya]]
+{{Shinto Footer|qq=}}
+{{Ichinomiya|qq=}}
+
+{{translated page|ja|大日本国一宮記|version=78455980|comment=Imported full ja history}}
+
+
+
+[[ja:大日本国一宮記]]
+
+<!--Dai Nippon Koku Ichinomiya Ki-->
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q11435648}}
+[[Category:Ichinomiya]]
+[[Category:Ichinomiya|*]]
+[[Category:Japanese Historical Series]]
+[[Category:Muromachi-period history books]]
+[[Category:Shinto literature]]
+[[Category:Shinto texts]]
+[[Category:Wikidata no short description]]
+[[Category:Need translation]]
+[[Category:日本の歴史系叢書]]

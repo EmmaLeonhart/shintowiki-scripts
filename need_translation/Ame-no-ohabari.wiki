@@ -1,0 +1,162 @@
+<!--interwikis from wikidata-->[[en:Ame-no-ohabari]][[it:Ame-no-ohabari]][[ja:天之尾羽張]][[pl:Niebiański Mężnie Naprężony Brzeszczot]][[zh:天之尾羽張]]
+
+
+{{Short description|Japanese mythological weapon|qq=}}
+{{Multiple issues|
+{{notability|date=November 2023|qq=}}
+{{Expand Japanese|date=December 2023|qq=}}
+}}
+{{Infobox deity
+| type = Shinto
+| children = [[Takemikazuchi]]
+| offspring = {{ill|Takemikazuchi|qid=Q1502690}}
+| venerated_in = {{ill|Shinto|qid=Q812767}}
+}}
+'''Ame-no-Ohabari''' ({{lang-ja|天之尾羽張|qq=}}), '''Ameno Ohabari''', or '''Ama-no-Ohabari''' is a legendary Japanese blade.<ref name=":0" /> that roughly translates to "Heaven-Point-Blade-Extended".<ref name="chamberlin-fire-deity2" /><ref name="kojiki-kuniyuzuri" />  It is primarily found in the Izumo mythology. It is a kind of sword known as a [[Totsuka-no-Tsurugi]] or a "Sword of Length of Ten Fists" which seems to be distinguished by its length and having a double-sided blade.<ref name=":0" />
+==Overview==
+Wielded by the male creator-god [[Izanagi]], this blade is used to cut up the infant Fire God [[Kagu-tsuchi|Kagutsuchi]] after his birth burns {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami}} to death.<ref name=":0">{{Cite web |date=2011-05-19 |title=Encyclopedia of Shinto - Home : Kami in Classic Texts : Amenoohabari |url=http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=39 |access-date=2023-11-04 |archive-url=https://web.archive.org/web/20110519134542/http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=39 |archive-date=2011-05-19 |qq=}}</ref> It cuts the Fire God into multiple pieces, creating eight volcano-gods. When blood drips from the blade afterwards, the Sea God {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi}} and the Rain God [[Kuraokami]] are formed.
+The name of the ten-fist sword wielded by Izanagi is given postscripturally as {{ill|Ame-no-ohabari|en|Ame-no-ohabari|qid=Q10939046|lt=Ame-no-ohabari}}, otherwise known as Itsu-no-ohabari.<ref name="Ouwehand">{{cite book |last1=Ouwehand |first1=Cornelis |url=https://books.google.com/books?id=1P4UAAAAIAAJ&pg=PA57 |title=Namazu-e and Their Themes: An Interpretative Approach to Some Aspects of Japanese Folk Religion |last2=Logunova |first2=Vera Vasil'evna |publisher=Brill Archive |year=1964 |pages=57–|qq=}}, gives sword as "Itsu-no-o habari"</ref>
+In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q582846|lt=Izumo}} chapter), the heavenly deities [[Amaterasu]] and [[Takamimusubi|Takamusubi]] decreed that either Takemikazuchi or his father {{ill|Ame-no-ohabari|en|Ame-no-ohabari|qid=Q10939046|lt=Itsu-no-ohabari}} ("Heaven-Point-Blade-Extended") must be sent down for the conquest. Itsu-no-ohabari (who appeared previously as a ten-fist sword) here has the mind and speech of a sentient god, and he volunteered his son Takemikazuchi for the subjugation campaign. Takemikazuchi was accompanied by {{ill|Ame-no-torifune|ja|鳥之石楠船神|vertical-align=sup|12=simple|13=User:Immanuelle/Ame-no-torifune|qq=}} "Deity Heavenly-Bird-Boat" (which may be a boat as well as being a god).<ref name="chamberlin-fire-deity2">{{Harvnb|Chamberlain|1919|loc=§XXXII, Abdication of the deity Master-of-the-Great-Land, pp.121-|qq=}}</ref><ref name="kojiki-kuniyuzuri">{{Harvnb|武田|1996|qq=}}『古事記』text p. 60/ mod. Ja. tr. p.244</ref>
+== See also ==
+* [[Ame-no-Nuboko]]
+== References ==
+{{reflist|qq=}}
+===Bibliography===
+{{Commons Category|qq=}}
+{{Refbegin|qq=}}
+*{{cite book|author-link=Basil Hall Chamberlain|last=Chamberlain|first=Basil Hall|title=A Translation of the "Ko-ji-ki," or a record of ancient matters|orig-year=1882|year=1919|url=http://www.sacred-texts.com/shi/kj/index.htm|series=Transactions of the Asiatic Society of Japan|volume=X|qq=}}
+**{{cite book|last=武田|first=祐吉 (Yūkichi Takeda)|editor=中村啓信|title=新訂古事記|publisher=講談社|orig-year=1977|year=1996|isbn=4-04-400101-4|pages=60, 62, 77, 78, 95|qq=}}
+*{{cite book|last=Aston|first=William George|title=Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697|volume=1|place=London|publisher=Japan Society of London|year=1896|isbn=9780524053478 |url=https://books.google.com/books?id=1IJrNAKBpycC&pg=PA299|author-link=William George Aston|qq=}}, English translation
+**{{cite book|last=宇治谷|first=孟 (Tsutomu Ujitani)|title=日本書紀|volume=上|publisher=講談社|year=1988|isbn=9780802150585|qq=}}
+{{Refend|qq=}}
+{{Jmyth navbox long|qq=}}
+{{Myth-stub|qq=}}
+{{Japan-stub|qq=}}
+
+
+
+[[en:Ame-no-ohabari]]
+
+<!--enwiki derived wikidata interwikis-->
+[[ja:天之尾羽張]]
+[[zh:天之尾羽張]]
+{{wikidata link|Q10939046}}
+
+{{translated page|ja|天之尾羽張|version=104157444|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{基礎情報 日本の神
+| 名 =  天之尾羽張神
+| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{jalink|天津神}}
+| 全名 = 天之尾羽張神（アメノオハバリノカミ）
+| 別名 = 天尾羽張神、天尾羽張命、伊都之尾羽張、稜威雄走神
+| 別称 = 
+| 神格 = <!-- 太陽、月、山、海など司るもの -->刀剣神
+| 父 = 
+| 母 = 
+| 親 = <!-- まぐあいによって生まれない場合 -->
+| 兄弟姉妹 = 
+| 配偶者 = 
+| 子 = {{Plainlist|
+* {{jalink|イワサク・ネサク|Q11287276|石析神}}
+* {{jalink|イワサク・ネサク|Q11287276|根析神}}
+* {{jalink|イワツツノオ|Q9010200|石箇之男神}}
+* {{jalink|甕速日神|Q11574224}}
+* {{jalink|ヒハヤヒ||樋速日神}}
+* {{jalink|タケミカヅチ|Q1502690|建御雷之男神}}
+* {{jalink|オカミ||闇淤加美神}}
+* {{jalink|クラミツハ|Q11299063|闇御津羽神}}
+}}
+| 神社 = {{Plainlist|
+* {{jalink|鹿島天足和気神社|Q11677110}}
+* 耀窟神社
+* 磯部神社
+* {{jalink|斐伊神社|Q11500716}}
+* 佐肆布都神社 等
+}}
+| 記紀等 = {{jalink|古事記|Q813031}}、{{jalink|日本書紀|Q813935}}
+| 関連氏族 = 
+}}
+[[Image:Descendants of Izanagi and Izanami.svg|thumb|right|250px|神産み神話（イザナギ・イザナミが生んだ神々） [[メディア:Descendants of Izanagi and Izanami.svg|SVGで表示（対応ブラウザのみ）]]]]
+'''天之尾羽張'''（アメノオハバリ／アマノオハバリ、{{smaller|{{jalink|歴史的仮名遣|Q1142552}}：}}アメノヲハバリ／アマノヲハバリ）は、{{jalink|日本神話|Q814158}}に登場する{{jalink|刀|Q7523706}}であり<ref name="福永百科天之尾羽張剣">{{jalink|#福永百科1巻||日本刀大百科事典1巻}}52頁、'''あめのおはばりのつるぎ'''【天之尾羽張剣】</ref><ref name="西郷1975-01天之尾羽張">{{jalink|#西郷注釈1975-01||西郷(1975)古事記注釈一巻}}169-170頁『○《天之尾羽張、<ruby><rb>伊都</rb><rt>イツ</rt></ruby>之尾羽張》』</ref>、また{{jalink|神 (神道)|Q524158|神}}の名前である<ref name="福永百科天之尾羽張神">{{jalink|#福永百科1巻||日本刀大百科事典1巻}}52頁、'''あめのおはばりのかみ'''【天之尾羽張神】</ref><ref name="岩波古事記火神">{{jalink|#岩波、古事記||古事記(岩波文庫)}}24-26頁『5 火神被殺』</ref><ref name="平凡辞典1巻天尾羽張">{{jalink|#平凡辞典1937一巻||神道大辞典一巻}}コマ35(原本49頁)</ref>。
+== 概要 ==
+{{jalink|イザナギ|Q813858}}が所有する神剣（{{jalink|十束剣|Q2628318}}）で、妻{{jalink|イザナミ|Q682306}}が{{jalink|黄泉|Q1142558}}へ行く原因となった{{jalink|カグツチ|Q1640658}}を斬り殺す時に用いられた<ref name="平凡辞典1巻天尾羽張"/><ref>{{jalink|#古事記角川1977-08||古事記(角川文庫1977)}}213-214頁『黄泉の国』</ref>。『古事記』における神名は、'''天之尾羽張神'''（あめのおはばりのかみ）という<ref name="岩波古事記火神"/><ref name="平凡辞典1巻天尾羽張"/>。別名 '''伊都之尾羽張'''（いつのおはばり）<ref name="西郷1975-01天之尾羽張"/><ref name="岩波古事記火神"/>。『日本書紀』の'''稜威雄走神'''（いつのおはしり／いつのおばしりのかみ）と同一神とされる<ref name="平凡辞典1巻稜威雄走">{{jalink|#平凡辞典1937一巻||神道大辞典一巻}}コマ82(原本133頁)</ref><ref>{{jalink|#高木、建国||日本建国神話}}コマ25-26(原本28-30)</ref>。{{jalink|国譲り|Q11621119|葦原中国平定}}（国譲り）神話で活躍する{{jalink|タケミカヅチ|Q1502690|建御雷神}}（{{jalink|鹿島神宮|Q706499}}主祀神）は、天之尾羽張神（伊都之尾羽張）の子供（古事記）もしくは子孫（日本書紀）と記述され<ref name="西郷1975-02伊都之尾羽張神">{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}頁</ref><ref>{{jalink|#古事記角川1977-08||古事記(角川文庫1977)}}244頁『国譲り』</ref>、同一神とみなされる事もある<ref name="平凡辞典1巻稜威雄走" />。
+== 記述 ==
+=== 神産み ===
+『古事記』の{{jalink|神産み|Q3545159}}の段において伊邪那岐命（イザナギ）は、妻神たる伊邪那美（イザナミ）の死因となった{{jalink|カグツチ|Q1640658|迦具土神}}（カグツチ）を、身に帯びた{{jalink|十束剣|Q2628318|十拳剣}}をもって首を斬り、殺す<ref>{{jalink|#西郷注釈1975-01||西郷(1975)古事記注釈一巻}}161-162頁『九 迦具土神を斬る』</ref><ref>{{jalink|#講談次田上||古事記(上)全訳註}}55-56頁『四 火神迦具土神』</ref><ref>{{jalink|#平凡辞典1937一巻||神道大辞典一巻}}コマ178(原本302頁)</ref>。『古事記』では、この十拳剣の名前を「天尾羽張」、別名を「伊都之尾羽張」と記す<ref>{{jalink|#西郷注釈1975-01||西郷(1975)古事記注釈一巻}}167-168頁『十 迦具土神の死体に成る神』</ref><ref>{{jalink|#講談次田上||古事記(上)全訳註}}59頁『○天之尾羽張/○伊都之尾羽張』</ref>。『日本書紀』では「十握剣」のみと記して、固有名詞を与えていない<ref>{{jalink|#岩波1994、書紀一||日本書紀1巻(岩波文庫)}}43頁(註六)</ref><ref>{{jalink|#宇治谷書記上||宇治谷、書記(上)}}25-26頁『一書(第六)』</ref>。
+{{Quotation|
+【書き下し】
+
+　<ruby><rb>故</rb><rt>かれ</rt></ruby>、斬りたまひし<ruby><rb>刀</rb><rt>たち</rt></ruby>の名は、<ruby><rb>天</rb><rt>あめ</rt></ruby><ruby><rb>之</rb><rt>の</rt></ruby><ruby><rb>尾</rb><rt>を</rt></ruby><ruby><rb>羽</rb><rt>は</rt></ruby><ruby><rb>張</rb><rt>ばり</rt></ruby>と謂ひ、亦の名は<ruby><rb>伊</rb><rt>い</rt></ruby><ruby><rb>都</rb><rt>つ</rt></ruby><ruby><rb>之</rb><rt>の</rt></ruby><ruby><rb>尾</rb><rt>を</rt></ruby><ruby><rb>羽</rb><rt>は</rt></ruby><ruby><rb>張</rb><rt>ばり</rt></ruby>と謂ふ。
+
+}}
+一方、十拳剣からこぼれ落ちたカグツチの血からは火・雷・刀に関わる八神が生まれるが<ref>{{jalink|#講談次田上||古事記(上)全訳註}}57-58頁〈現代語訳〉</ref><ref>{{jalink|#古事記角川1977-08||古事記(角川文庫1977)}}27-28頁</ref>、その中に建御雷之男神（建布都神/豊布都神）もあった<ref>{{jalink|#西郷注釈1975-01||西郷(1975)古事記注釈一巻}}164-165頁『○《建御雷之男神》/○《建布都神、豊布都神》』</ref><ref name="学生鹿島38">{{jalink|#鹿島、学生社2000||鹿島神宮(学生社2000)}}38-41頁『武甕槌神の誕生』</ref>。
+=== 葦原中国平定 ===
+『古事記』にける{{jalink|葦原中国平定}}の段では、{{jalink|アメノホヒ|Q10940685|天穂日命}}（あめのほひ）・{{jalink|アメノワカヒコ|Q10940674|天稚彦}}（あめわかひこ）に次ぐ三番目に{{jalink|葦原中国|Q1096244}}に派遣する神を選定する際に登場する<ref name="平凡辞典1巻天尾羽張"/><ref>{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}190-191頁『一 建御雷神』</ref>。{{jalink|オモイカネ|Q586088|思兼神}}（おもいかね）は、伊都之尾羽張神もしくは<ref>{{jalink|#講談次田上||古事記(上)全訳註}}161頁『○伊都之尾羽張神』</ref><ref name="学生鹿島41">{{jalink|#鹿島、学生社2000||鹿島神宮(学生社2000)}}41-43頁『武甕槌神の行動』</ref>、その神の子の建御雷之男神を推薦している<ref>{{jalink|#講談次田上||古事記(上)全訳註}}159-160頁『三 建御雷神と事代主神』</ref><ref name="岩波古事記建御雷神">{{jalink|#岩波、古事記||古事記(岩波文庫)}}60-61頁『3 建御雷神』</ref>。天尾羽張神は天安河の水を逆にせき上げて道を塞いでおり<ref>{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}192頁『○《逆に水を塞き上げて云々》』</ref>、他の神はそこへ行くことができないので、{{jalink|アメノカク||天迦久神}}<ref>{{jalink|#古事記角川1977-08||古事記(角川文庫1977)}}60頁(かく＝鹿児とも)</ref>が使者として遣わされた<ref>{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}192頁『○《天迦久神》』</ref><ref>{{jalink|#講談次田上||古事記(上)全訳註}}160-161頁〈現代語訳〉</ref>。伊都之尾羽張神は「恐し。仕え奉らむ。然（しかれ）どもこの道には、僕（わ）が子、建御雷神を遣はすべし」（もったいないことです。お仕えいたしましょう。ですが、この御使いには私よりも、私の子供 ''建御雷之男神'' を遣わすのがよろしいでしょう）と答えたため、建御雷之男神は{{jalink|鳥之石楠船神|Q10731425|天鳥船神}}と共に葦原中国へ派遣されることになった<ref name="学生鹿島41"/><ref>{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}192-193頁『○《仕へ奉らむ》』</ref><ref>{{jalink|#三体古事記||三体古事記}}コマ61-62頁(原本101-102頁)『大國主神の國譲り』</ref>。
+
+『日本書紀』の葦原中国平定の段の本文で武甕槌神が登場する際<ref>{{jalink|#田辺、1932||日本書紀講義.神代}}コマ133(原本18-19頁)『譯讀』</ref><ref name="学生鹿島48">{{jalink|#鹿島、学生社2000||鹿島神宮(学生社2000)}}48-49頁『武甕槌神の出雲派遣』</ref>、天石窟に住む神である稜威雄走神（いつのおはしりのかみ）<ref name="平凡辞典1巻稜威雄走"/>の四世の孫であると記されている（1.稜威雄走神<ref name="日本書紀講義神代133">{{jalink|#田辺、1932||日本書紀講義.神代}}コマ133-134(原本19-20頁)</ref>― 2.甕速日神<ref name="#1">{{jalink|#田辺、1932||日本書紀講義.神代}}コマ134(原本20頁)</ref><ref name="#2">{{jalink|#佐伯、古語拾遺講義||古語拾遺講義}}コマ19(原本30頁)</ref>― 3.熯速日命<ref name="#1"/>― 4.武甕槌神）<ref>{{jalink|#岩波1994、書紀一||日本書紀1巻(岩波文庫)}}116頁(本文)</ref>。稜威雄走神は天之尾羽張神の別名と見られる<ref name="平凡辞典1巻稜威雄走"/><ref>{{jalink|#岩波1994、書紀一||日本書紀1巻(岩波文庫)}}117頁(註一三)</ref>。この後、武甕槌神は{{jalink|経津主神|Q1107286}}と共に出雲へ派遣された（経津主神は書記のみ登場）<ref name="学生鹿島48"/>。一説には、天之尾羽張神・伊都之尾羽張神・経津主神・建御雷之男神は同一神であるという<ref name="平凡辞典1巻稜威雄走"/>。
+== 考証 ==
+日本神話は、天之尾羽張（伊都之尾羽張神、稜威雄走）・タケミカヅチ（建御雷神）の二柱とも、剣の神霊であることを表している<ref name="西郷1975-02伊都之尾羽張神"/><ref>{{jalink|#講談次田上||古事記(上)全訳註}}162頁〈解説〉</ref><ref>{{jalink|#西郷注釈1975-02||西郷(1975)古事記注釈二巻}}193頁『○《此の道》』</ref>。なお「尾羽張」は「尾刃張」で、鋒の両方の刃が張り出した（切先が幅広くなった）剣の意味である<ref name="福永百科天之尾羽張剣"/>。「雄刃張」で、刃全体が鋭利であることを意味するとも<ref name="福永百科天之尾羽張剣"/>。「天」は{{jalink|高天原|Q1141974}}に関係のあるものであることを示す。「伊都」「稜威」（いつ/いづ）は、神の威力盛んな様子を意味する<ref name="西郷1975-01天之尾羽張"/><ref>{{jalink|#平凡辞典1937一巻||神道大辞典一巻}}コマ78(原本127頁)</ref>。『古事記』で「伊都之尾羽張神」が天之安河の水を堰き止めていた事から、山が張り出した{{jalink|尾根|Q740445}}を意味するとも<ref name="学生鹿島38"/>。「雄走」（をはしり）は「鞘走る」（さおはしる）の意で、鋭利な刃・刃のひらめきが鋭く走る様子を示す<ref name="西郷1975-01天之尾羽張"/><ref name="日本書紀講義神代133"/>。なお「羽々」（はば）で{{jalink|蛇||大蛇}}を意味する<ref>{{jalink|#佐伯、古語拾遺講義||古語拾遺講義}}コマ17頁(原本26頁)</ref>。
+
+現在、タケミカヅチは{{jalink|鹿島神宮|Q706499}}<ref>{{jalink|#岩波、古語拾遺||古語拾遺(岩波文庫)}}25-26『吾勝尊』</ref><ref name="#2"/>他、全国の{{jalink|鹿島神社|Q11677154}}で祀られている。
+== 祀る神社 ==
+* 鹿島天足和気神社（{{jalink|宮城県|Q47896}}{{jalink|亘理郡|Q1131765}}{{jalink|亘理町|Q1205296}}逢隈鹿島） - 左殿
+* 耀窟神社（{{jalink|千葉県|Q80011}}{{jalink|成田市|Q273798}}西大須賀） - 主祭神
+* 磯部神社（{{jalink|三重県|Q128196}}{{jalink|志摩市|Q338009}}{{jalink|磯部町恵利原|Q11588094}}） - 主祭神
+* 斐伊神社（{{jalink|島根県|Q132751}}{{jalink|雲南市|Q877935}}{{jalink|木次町|Q6417338}}里方） - 主祭神
+* 佐肆布都神社（{{jalink|長崎県|Q169376}}{{jalink|壱岐市|Q861519}}{{jalink|芦辺町|Q11614924}}箱崎大左右） - 主祭神
+== 脚注 ==
+{{脚注ヘルプ}}
+=== 出典 ===
+{{reflist|3}}
+== 参考文献 ==
+<!-- ウィキペディア推奨スタイル、著者五十音順　 -->
+*<!-- イワナミ1963古事記 -->{{Cite book|和書|author=|editor=倉野憲司|year=1963|month=1|chapter=|title=古事記|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古事記}}
+*<!-- イワナミ1994日本書紀 -->{{Cite book|和書|author=坂本太郎、家永三郎、井上光貞、大野晋校注|year=1994|month=9|chapter=|title=日本書紀（一）|publisher=岩波書店|series=岩波文庫|isbn=4-00-300041-2|ref=岩波1994、書紀一}}
+*<!-- ウジタニ1988 -->{{Cite book|和書|author=宇治谷孟|year=1988|month=6|chapter=|title=日本書紀（上）　{{small|全現代語訳}}|publisher=講談社|series=講談社学術文庫|isbn=4-06-158833-8|ref=宇治谷書記上}}
+*<!-- サイゴウ1975-01-->{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第五　大八島国と神々の生成|title=古事記注釈　第一巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-01}}
+*<!-- サイゴウ1975-02-->{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第十四　国譲り（続）|title=古事記注釈　第二巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-02}}
+*<!-- サイ1985-->{{Cite book|和書|author=斎部広成撰、西宮一民校注|editor=|year=1985|month=3|chapter=|title=古語拾遺|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古語拾遺}}
+*<!-- タケダ1977-08古事記-->{{Cite book|和書|author1=武田祐吉訳注|authorlink1=武田祐吉|author2=中村啓信補訂解説|authorlink2=中村啓信|editor=|year=1977|month=8|chapter=|title=新訂　古事記　付現代語訳|publisher=角川書店|series=角川文庫|isbn=4-04-400101-4|ref=古事記角川1977-08}}
+*<!-- ツギ1977上-->{{Cite book|和書|author=次田真幸|editor=|year=1977|month=12|chapter=|title=古事記（上）全訳注|publisher=講談社|series=講談社学術文庫|isbn=4-06-158207-0|ref=講談次田上}}
+*<!-- トウ2000学生、鹿島改訂 -->{{Cite book|和書|author={{small|鹿島神宮元宮司}}東実|authorlink=東実|editor=|year=2000|month=8|chapter=三　日本神話と武甕槌神|title=鹿島神宮　<改訂新版>|publisher=学生社|series=日本の神社|isbn=4-311-40717-3|ref=鹿島、学生社2000}}
+*<!-- フクナガ -->{{Cite book|和書|author=福永酔剣|editor=|year=1993|month=11|chapter=|title=日本刀大百科事典＜全5巻＞　第1巻　{{small|あ―かっ}}|publisher=雄山閣出版|series=日本刀大百科|isbn=4-639-01202-0|ref=福永百科1巻}}
+
+*[https://dl.ndl.go.jp/ 国立国会図書館デジタルコレクション] - {{jalink|国立国会図書館|Q477675}}
+**{{Citation |和書|author=佐伯有義|editor=|year=1930|month=7|title=古語拾遺講義|chapter=|publisher=桜園書院|url={{NDLDC|1188541}}|ref=佐伯、古語拾遺講義}}
+**{{Citation |和書|author=渋川玄耳〔他〕|editor=|year=1940|month=9|title=三体古事記|chapter=|publisher=誠文堂新光社|url={{NDLDC|1146090}}|ref=三体古事記}}
+**{{Citation |和書|author=島根県内務部島根県史編纂掛|editor=|year=1921|month=|title=島根県史.1　{{small|先史時代　神代}}|chapter=第七章　天之尾羽張劒|publisher=島根県|url={{NDLDC|965760/120}}|ref=島根、神代}}
+**{{Citation |和書|author=高木敏雄|editor=|year=1912|month=3|title=日本建国神話|chapter=天之尾羽張|publisher=宝文館|url={{NDLDC|815921/24}}|ref=高木、建国}}
+**{{Citation |和書|author=田辺勝哉|editor=|year=1932|month=5|title=日本書紀講義.神代巻|chapter=|publisher=帝国神祇会|url={{NDLDC|1176640}}|ref=田辺、1932}}
+**{{Citation |和書|author=|editor=平凡社|year=1937|month=7|title=神道大辞典　第一巻|chapter=|publisher=平凡社|url={{NDLDC|1913333}}|ref=平凡辞典1937一巻}}
+**{{Citation |和書|author=|editor=平凡社|year=1939|month=6|title=神道大辞典　第二巻|chapter=|publisher=平凡社|url={{NDLDC|1913348}}|ref=平凡辞典1939二巻}}
+**{{Citation |和書|author=|editor=平凡社|year=1940|month=9|title=神道大辞典　第三巻|chapter=|publisher=平凡社|url={{NDLDC|1913359}}|ref=平凡辞典1937三巻}}
+== 関連項目 ==
+* {{jalink|日本の神の一覧|Q3240847}}
+* {{jalink|神代三剣|Q11588683}}
+** {{jalink|布都御魂|Q11059754}}
+** {{jalink|天羽々斬|Q10940643}}
+** {{jalink|天叢雲剣|Q14944}}
+== 外部リンク ==
+* [https://kojiki.kokugakuin.ac.jp/shinmei/amenoohabari/ 天之尾羽張 – 國學院大學 古典文化学事業]
+* [https://kojiki.kokugakuin.ac.jp/chimei/amenoyasunokawa-3/ 天安河（その3） – 國學院大學 古典文化学事業]
+* [https://www.miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310010278 宮城県神社庁]（鹿島天足和気神社）
+* [https://crd.ndl.go.jp/reference/entry/index.php?id=1000280502&page=ref_view 成田市西大須賀にある耀窟神社につい書かれた資料はあるか。また、毎年４月15日に行われる湯立神事につい... | レファレンス協同データベース]
+* [http://isobejinja.xsrv.jp/saijin-smh.html 磯部神社【公式】祭神]
+* [https://www.shimane-jinjacho.or.jp/unnan/b4a73f469a9d93859d76e6041c4b08eb497669b2.html 斐伊神社 - 神社詳細 | 島根県神社庁]
+* [http://www.iki-haku.jp/museumInet/ikf/poiGet.do?id=1214 壱岐市立一支国博物館-壱岐めぐり情報-壱岐の名所情報]（佐肆布都神社）
+{{日本神話}}
+{{神道 横}}
+
+==End Japanese==
+[[Category:日本の神]]
+[[Category:神話・伝説の刀剣]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Need translation]]

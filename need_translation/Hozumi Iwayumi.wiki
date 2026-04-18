@@ -1,0 +1,61 @@
+<!--interwikis from wikidata-->[[ja:穂積磐弓]]
+{{Infobox person|gender={{ill|male|qid=Q6581097|1=Male (gender)}}|children={{ill|Q11597084|qid=Q11597084|1=Hozumi Soso}}|father={{ill|Q22129303|qid=Q22129303|1=Hozumi Oshiyama}}}}
+
+
+
+{{基礎情報 公家
+| 氏名 = 穂積磐弓
+| 画像 = 
+| 画像サイズ = 
+| 画像説明 = 
+| 時代 = {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period|1=Kofun period}}後期
+| 生誕 = 不明
+| 死没 = 不明
+| 改名 = 
+| 別名 = 穂積臣
+| 諡号 = 
+| 神号 = 
+| 戒名 = 
+| 墓所 = 
+| 官位 = 
+| 主君 = {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei|1=Emperor Kinmei}}
+| 氏族 = {{ill|Hozumi clan|ja|穂積氏|12=simple|13=User:Immanuelle/Hozumi clan|qq=}}臣
+| 父母 =
+| 兄弟 =
+| 妻   =
+| 子   =
+| 特記事項 = 
+}}
+
+'''Hozumi no Iwayumi''' (穂積磐弓) was a figure from the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period|1=Kofun period}}. He held the kabane of 臣 (omi).
+
+== Career ==
+On the 4th day of the 7th month in the 16th year of the reign of {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei|1=Emperor Kinmei}}, Hozumi no Iwayumi, along with {{ill|Soga no Iname|en|Soga no Iname|qid=Q595897|lt=Soga no Iname|1=Soga no Iname}}, was dispatched to {{ill|Kibi Province|en|Kibi Province|qid=Q1155128|lt=Kibi Province|1=Kingdom of Kibi}} to establish the {{ill|Shirai no Miyake|ja|白猪屯倉|1=Shirai no Miyake|12=simple|13=User:Immanuelle/Shirai no Miyake|13=User:Immanuelle/Shirai no Miyake|qq=}} in five districts.<ref name="a">『日本書紀欽明16th year 条』</ref>
+
+== Notes ==
+
+{{Reflist}}
+
+== References ==
+* 『日本書紀』欽明16th year 条
+* 宝賀寿男『古代氏族系譜集成 中巻』
+
+{{Japanese-history-stub}}
+{{people-stub}}
+{{translated page|ja|穂積磐弓|version=88412427|comment=Imported full ja history}}
+
+
+
+[[ja:穂積磐弓]]
+<!--standardizing to enwiki standards where this would merely be the intersection of two categories-->
+
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q22129270}}
+[[Category:Hozumi Clan]]
+[[Category:People of Kofun-period Japan]]
+[[Category:Need translation]]
+[[Category:Wikidata no short description]]
+[[Category:Year of birth unknown]]
+[[Category:Year of death unknown]]
+[[Category:Year_of_birth_unknown]]
+[[Category:Year_of_death_unknown]]
