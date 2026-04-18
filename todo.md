@@ -4,6 +4,10 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
+## Stuff to do
+
+Implement a status.md thing as per the one used on https://github.com/EmmaLeonhart/Sutra
+
 ## Automation boundary
 
 The GitHub Actions pipeline (8 reusable workflows orchestrated by `.github/workflows/cleanup-loop.yml`, runs daily + on push) handles everything that can be scripted safely and repeatably. State files are committed incrementally after each chunk (Import & Categorization, Structural Fixes, Wikidata, Final Core, Cleanup Loop, Deprecated) so progress is not lost if a later chunk fails. After the wiki cleanup, QuickStatements are submitted to Wikidata, P459 qualifiers are applied via direct API, and a run history page is rebuilt. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
