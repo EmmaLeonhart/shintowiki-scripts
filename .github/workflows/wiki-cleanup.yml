@@ -173,6 +173,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: fix_merged_qids" \
             python3 shinto_miraheze/fix_merged_qids.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
+      - name: "Wikidata: find_duplicate_page_qids"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: find_duplicate_page_qids" \
+            python3 shinto_miraheze/find_duplicate_page_qids.py --apply --run-tag "${RUN_TAG}"
+
       - name: "Wikidata: generate_p11250_quickstatements"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
