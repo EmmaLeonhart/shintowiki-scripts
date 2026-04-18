@@ -1,5 +1,23 @@
-Write a script that strips the untranslated character count categories from https://shinto.miraheze.org/wiki/Category:Translated_pages
+# shintowiki-scripts — Work Queue
 
-I think that we also need to start getting working on some other stuff:
-1. We should be removing the default sourcing from all pages with a bot.
-2. For our quick statements that we're generating, link things to their wiki data. We should be extending this to templates and category pages.
+**This file is a queue, not a state snapshot.** When an item is done, delete it. Finished work lives in `git log` and `DEVLOG.md`. Do not add summary sections, progress checkmarks, or status indicators — if an item is still here, it is not done.
+
+The purpose of this file is to bound scope. If a task is not in this queue, it is not in scope for the current session. New ideas go at the bottom of the queue (or to `todo.md` if they are longer-term / architectural), not silently into whatever is being worked on.
+
+## Queued work
+
+1. **Strip untranslated character-count categories from already-translated pages.** `[[Category:Pages with 50+/100+/.../5000+ untranslated japanese characters]]` was applied by `shinto_miraheze/tag_untranslated_japanese.py` based on CJK density. Pages that have since been translated still carry these categories. Write `shinto_miraheze/strip_translated_char_count_cats.py` that walks [[Category:Translated pages]](https://shinto.miraheze.org/wiki/Category:Translated_pages), removes any `[[Category:Pages with N+ untranslated japanese characters]]` tags found on each, and commits the edit. Must follow the repo script template: `--apply`, `--max-edits`, `--run-tag` flags; `mwclient`; 1.5s rate limit; UTF-8 stdout wrapper; state file under `shinto_miraheze/`.
+
+2. **Remove DEFAULTSORT from all pages via a bot.** `{{DEFAULTSORT:...}}` is leftover from the enwiki/jawiki imports and has no semantic value on shintowiki (categories use direct sort keys). Write a script that walks mainspace, removes the `{{DEFAULTSORT:...}}` line, and commits. Same script-template requirements as task 1.
+
+3. **Extend QuickStatements wikidata linking to templates and category pages.** `shinto_miraheze/generate_p11250_quickstatements.py` today only walks mainspace members of `[[Category:Pages linked to Wikidata]]`. Extend it (or add a sibling script) that also processes `Template:` and `Category:` namespace pages that carry `{{wikidata link|Q...}}`, emitting `Q...|P11250|"Template:Name"` / `Q...|P11250|"Category:Name"` lines. Confirm Wikidata accepts P11250 with a namespaced title first — that's the risk.
+
+4. **Translate the remaining untranslated `need_translation/` pages.** After tasks 1–3 clear: the `need_translation/` directory has ~290 files still carrying `[[Category:Need translation]]`. Nine of them are the large kokuzo articles that actually matter: `国造.wiki` (8669 CJK), `无邪志国造.wiki` (5141), `出雲国造.wiki` (4527), `千葉国造.wiki` (1763), `尾張国造.wiki` (1640), `倭国造.wiki` (1346), `廬原国造.wiki` (982), `斐陀国造.wiki` (854), `伊勢国造.wiki` (841). 83 files are shrine pages with `== Japanese Wikipedia content ==` sections (auto-generated English top + Japanese body). Translate using `{{ill|English|ja|Japanese|lt=Display|lt_ja=Japanese Display}}` per `feedback_translation_link_rules.md` in memory. Never remove `[[Category:Need translation]]` without verifying the body is actually English — CI deletes the file from the repo when the category is gone.
+
+5. **Audit `[[Category:Double category qids]]` for resolvable entries.** <https://shinto.miraheze.org/wiki/Category:Double_category_qids> lists QID disambiguation pages where two categories share the same QID. `shinto_miraheze/resolve_double_category_qids.py` already handles the easy case (one is a redirect to the other → replace the dab with a redirect). The remaining members are where both targets are *real, working, distinct* categories — these need manual inspection to decide which category should keep the QID (or whether they should be merged on the wiki side). Walk the category, for each member fetch the two categories it disambiguates, check if both have member pages and distinct scope, produce a report listing the pairs for human review. Do not edit — just report.
+
+## Pinned notes
+
+1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
+2. **Script-template invariants.** All scripts must support `--apply`, `--max-edits`, `--run-tag` flags; use `mwclient`; apply `time.sleep(1.5)` between edits; set `User-Agent`; `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`; state file alongside the script. See `check_wikidata_labels.py` as a reference implementation. Do not innovate on this scaffolding.
+3. **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.

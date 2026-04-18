@@ -4,9 +4,17 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
-## Stuff to do
+## Current session work
 
-Implement a status.md thing as per the one used on https://github.com/EmmaLeonhart/Sutra
+Active work queue lives in [status.md](status.md) (Sutra-style queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
+
+## Server load (emerging concern — 2026-04-18)
+
+Miraheze has raised server-load concerns. All scripts should minimize read/write volume against `shinto.miraheze.org`:
+- Prefer running stateful scripts at their existing `--max-edits` caps; do not bump caps without reason.
+- Do not add new loops that walk full namespaces unless there is a dedicated reason and a state file to bound per-run work.
+- SPARQL/Wikidata-side bail-on-429 policy (2026-03-28) remains in force; some generators use exponential backoff (2026-03-29) only when strictly necessary.
+- Before adding a new automated step to `wiki-cleanup.yml`, justify it against this constraint.
 
 ## Automation boundary
 
@@ -60,13 +68,14 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 ### Temporary / one-off re-bucketing tasks
 
 - [x] **Re-bucket 300+ untranslated pages with extended thresholds** — Added as temporary step `rebucket_300plus_untranslated` in cleanup loop (2026-04-03). Runs `tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters"` to re-bucket 72 pages into finer-grained categories (up to 5000+). Remove step from workflow after all pages are re-bucketed.
+- [ ] **Strip untranslated character-count categories from already-translated pages** — inverse of `tag_untranslated_japanese.py`. Tracked in `status.md` as task 1.
 - [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
 
 ### Requires manual intervention
 
 - [ ] **Figure out `replace_p1027_with_p459.txt`** — This file exists in `modern-quickstatements/` but it's unclear what it does, whether it's still needed, or whether it was ever submitted. Investigate its origin and purpose; remove or integrate into the pipeline as appropriate.
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
-- [ ] **Figure out what to do with `[[Category:Need translation]]`** — assess scope, decide whether to automate or manually review members.
+- [ ] **Figure out what to do with `[[Category:Need translation]]`** — ~290 files in `need_translation/` still tagged. Manual translation batches documented in `status.md` task 4. CI (`sync_need_translation.py`) deletes the local file when the category is removed on the wiki, so category removal is destructive and must only follow actual translation.
 - [ ] **Enrich autocreated categories** — Write a script to add meaningful content (interwikis, wikidata links, parent categories) to pages in `Category:Categories autocreated by EmmaBot` that were created as stubs.
 - [ ] **Special:WantedPages and Special:WantedTemplates** — Planning to do something with these eventually, but not sure what yet. Waiting until the category pipeline is solid before tackling.
 
