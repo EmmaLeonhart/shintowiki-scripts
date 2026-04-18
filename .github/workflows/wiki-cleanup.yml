@@ -267,6 +267,32 @@ jobs:
         run: shinto_miraheze/commit_state.sh "Cleanup Loop"
 
       # ════════════════════════════════════════
+      #  Translation Sync
+      # ════════════════════════════════════════
+
+      - name: "Translation: sync_need_translation"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Translation Sync: sync_need_translation" \
+            python3 shinto_miraheze/sync_need_translation.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit: need_translation/ changes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          git add -A need_translation/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No need_translation/ changes to commit."
+          else
+            git commit -m "chore(translation): sync Need translation pages [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "need_translation/ changes pushed." || echo "WARNING: failed to push need_translation/ changes."
+          fi
+
+      - name: "Commit state: Translation Sync"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Translation Sync"
+
+      # ════════════════════════════════════════
       #  Deprecated (Sunday only)
       # ════════════════════════════════════════
 
