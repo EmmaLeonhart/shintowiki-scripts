@@ -178,7 +178,10 @@
       "Bash(> modern-quickstatements/migrate_gifu_ranking_add.txt)",
       "Bash(> modern-quickstatements/migrate_gifu_ranking_remove.txt)",
       "Bash(> modern-quickstatements/migrate_beppyo_shrine_add.txt)",
-      "Bash(> \"modern-quickstatements/broadening the category.txt\")"
+      "Bash(> \"modern-quickstatements/broadening the category.txt\")",
+      "Bash(awk -F/ '{print $2\"/\"$3 > \"/dev/stderr\"; d[$2]++} END {for \\(k in d\\) print d[k], k}')",
+      "Bash(awk -F/ '{d=\"\"; for\\(i=2;i<NF;i++\\){d=d\"/\"$i}; print d}')",
+      "Bash(awk -F/ 'NF>0{print $1}')"
     ],
     "deny": [],
     "ask": []
