@@ -1,0 +1,121 @@
+<!--interwikis from wikidata-->[[en:Ikasuri Shrine]][[fr:Ikasuri-jinja]][[ja:坐摩神社]][[simple:Ikasuri Shrine]][[zh:坐摩神社]]
+{
+{
+{{Short description|Shrine in Osaka Prefecture, Japan}}
+{{Multiple issues|
+{{more citations needed|date=November 2023}}
+{{Expand language|topic=|langcode=ja|otherarticle=坐摩神社|date=December 2021}}
+}}
+{{infobox religious building| religious_affiliation = [[Shinto]]|image=File:Ikasuri-jinja, keidai.jpg|deity={{ill|Ikasuri|qid=Q10928586|1=Ikasuri no Kami}}|location=Watanabe-3, Kyūtarō-machi, {{ill|Chūō-ku, Osaka|en|Chūō-ku, Osaka|qid=Q876485|lt=Chūō-ku, Osaka|1=Chūō-ku, Osaka}} City, Osaka, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}|prefecture={{ill|Kyūtarō-machi|qid=Q60996434|1=Kyūtarō-machi}}|coordinates={{Coord|34.680833|N|135.498611|E|region:JP_type:landmark|display=inline,title}}|part_of={{ill|Shinbutsu Reijō Junpai no Michi|qid=Q10444949|1=Sacred Sites of Kamigata}}}}
+
+'''Ikasuri Shrine''' (坐摩神社, ''Ikasuri jinja'', also known as ''Zama jinja'') is a major [[Shinto]] shrine located in central {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka|1=Osaka}}, Japan. Its annual festival is on April 22. In the former [[modern system of Ranked Shinto shrines]] it was an imperial shrine of the second Rank or ''[[Modern system of Ranked Shinto shrines|Kanpei-chūsha]]'' (官幣中社). It was also the [[ichinomiya]] of the former {{ill|Settsu Province|en|Settsu Province|qid=Q864163|lt=Settsu Province|1=Settsu Province}}.
+It enshrines five [[kami]] known as ''ikasuri no kami'' or ''zama no kami'': Ikui no kami (生井神), Sakui no kami (福井神), Tsunagai no kami (綱長井神), Hahiki no kami (波比祇神), and Asuha no kami (阿須波神); collectively known as {{nihongo|Ikasuri no Kami|座摩神|1=Ikasuri no Kami|2=ja|3=座摩神|4=zh|5=坐摩巫祭神|1=Ikasuri no Kami}}
+
+== History ==
+It was founded by {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū|1=Empress Jingū}} when she returned from the Three Han (三韓, Korea) campaign.<ref name=":0">{{Cite web |title=Shinto shrines {{!}} Japan {{!}} Rods Shinto |url=https://www.rodsshinto.com/ |access-date=2023-04-04 |website=shintoshrines |language=en}}</ref><ref name=":1">{{Cite web |title=Watatsumi Shrine {{!}} 海神社 {{!}}Hyōgo-ken, Kobe-shi |url=https://www.rodsshinto.com/28-108-01 |access-date=2023-04-06 |website=shintoshrines |language=en}}</ref>
+
+She was nearly shipwrecked but managed to survive thanks to praying to {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi|1=Watatsumi}}, and she made the shrine to honor him.<ref name=":1" />  [[Ikuta Shrine]] and [[Watatsumi Shrine (Kobe)|Watatsumi Shrine]] were both also made at the same time by the Empress.<ref name=":1" />
+
+==Ikasuri no Kami==
+{{Infobox deity
+| type = Shinto
+| deity_of = 
+| member_of = 
+| alt = 
+| caption = 
+| other_names = 
+| hiero = 
+| avatar_birth = 
+| avatar_end = 
+| script_name = 
+| script = [[Japanese language|Japanese]]
+| consorts = 
+| father = [[Toshigami]]
+| mother = {{nihongo|Amechikarumizu-hime|天知迦流美豆比売|}}
+| siblings = {{ill|Hahiki-no-kami|ja|波比岐神|12=simple|13=User:Immanuelle/Hahiki-no-kami|ja_comment=jawiki redirects to 座摩神|1=Ikasuri no Kami|comment=changed title based on wikidata|qid=Q10928586}}
+| offspring = 
+| region = 
+| festivals = 
+| name = Asuha-no-kami
+}}
+Two of the goddesses composing Ikasuri no Kami: Asuha-no-kami and Hahiki-no-kami are daughters of [[Toshigami]]{{Infobox deity
+| type = Shinto
+| deity_of = 
+| member_of = 
+| alt = 
+| caption = 
+| other_names = 
+| hiero = 
+| avatar_birth = 
+| avatar_end = 
+| script_name = 
+| script = [[Japanese language|Japanese]]
+| consorts = 
+| father = [[Toshigami]]
+| mother = {{nihongo|Amechikarumizu-hime|天知迦流美豆比売|}}
+| siblings = {{ill|Asuha-no-kami|ja|阿須波神|12=simple|13=User:Immanuelle/Asuha-no-kami|ja_comment=jawiki redirects to 座摩神|1=Ikasuri no Kami|comment=changed title based on wikidata|qid=Q10928586}}
+| offspring = 
+| region = 
+| festivals = 
+| name = Hahiki-no-kami
+}}
+
+==See also==
+*[[List of Shinto shrines in Japan]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+{{Commons Category|Ikasuri-jinja}}
+*[http://www.ikasuri.or.jp Official website]
+
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+
+{{coord|34.68096|135.49862|format=dms|type:landmark_region:JP|display=title}}
+
+{{Munakata Faith}}
+{{Shinto-stub}}
+{{Beppyo Shrines}}
+
+{{translated page|ja|坐摩神社|version=101361653|comment=Imported full ja history}}
+
+
+
+[[en:Ikasuri Shrine]]
+[[ja:坐摩神社]]
+
+<!-- for alternate text of the title image per [[WP:ALT]] --><!-- for alternate text of the title image per [[WP:ALT]] -->
+<!--jawiki derived wikidata interwikis-->
+{{Commons category|Ikasuri-jinja}}
+[[fr:Ikasuri-jinja]]
+[[simple:Ikasuri Shrine]]
+[[zh:坐摩神社]]
+<!--enwiki derived wikidata interwikis-->
+{{Commons category|Ikasuri-jinja}}
+[[fr:Ikasuri-jinja]]
+[[simple:Ikasuri Shrine]]
+[[zh:坐摩神社]]
+<!--zhwiki derived wikidata interwikis-->
+{{wikidata link|Q11425667}}
+[[Category:Beppyo shrines]]
+[[Category:beppyo shrines]]
+[[Category:Buildings and structures in Chuo-ku, Osaka]]
+[[Category:Chūō-ku, Osaka]]
+[[Category:Empress Jingū]]
+[[Category:History of Chuo-ku, Osaka]]
+[[Category:Ichinomiya]]
+[[Category:Kanpei Chūsha]]
+[[Category:Settsu Province]]
+[[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Shinto shrines in Osaka]]
+[[Category:translated pages with valid en interwikis]]
+[[Category:Watanabe Clan of Settsu Province]]
+[[Category:Wikidata has short description]]
+[[Category:Junior Fifth Rank]]
+[[Category:Junior Fourth Rank]]
+[[Category:Shikinai Taisha]]
+[[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
+[[Category:Kanpei-sha]]
+[[Category:Need translation]]

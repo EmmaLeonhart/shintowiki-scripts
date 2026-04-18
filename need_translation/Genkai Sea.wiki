@@ -1,0 +1,195 @@
+{{Expand Japanese|玄界灘|date=November 2025}}
+<!--interwikis from wikidata-->[[ceb:Genkai Nada]][[en:Genkai Sea]][[fr:Mer de Genkai]][[id:Laut Genkai]][[ja:玄界灘]][[ko:겐카이나다]][[nl:Genkaizee]][[ru:Генкай-Нада]][[zh:玄界灘]]
+
+
+{{Short description|Body of water in the Sea of Japan}}
+[[File:Sea Of Genkai up20060427.jpg|thumb|Genkai Sea in 2005]]
+The {{nihongo|'''Genkai Sea'''|玄界灘|Genkai-nada}} <ref>{{cite book|last=Loyd Batten|first=Bruce|title= Gateway to Japan:Hakata in War And Peace, 500-1300|publisher=University of Hawaii Press|pages=38}}</ref> is a {{ill|Body of water|en|Body of water|qid=Q15324|lt=Body of water}} that comprises the southwestern tip of the {{ill|Sea of Japan|en|Sea of Japan|qid=Q27092|lt=Sea of Japan}} and borders the northern coasts of {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka}} and {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga}} prefectures.
+
+== References ==
+{{Reflist}}
+
+{{coord|33|40|N|130|00|E|type:waterbody_region:JP_dim:100000|display=title}}
+
+{{marine-geo-stub}}
+
+
+
+[[en:Genkai Sea]]
+<!--enwiki derived wikidata interwikis-->
+[[ceb:Genkai Nada]]
+{{Commons category|Genkai Sea}}
+[[fr:Mer de Genkai]]
+[[id:Laut Genkai]]
+[[ja:玄界灘]]
+[[ko:겐카이나다]]
+[[nl:Genkaizee]]
+[[ru:Генкай-Нада]]
+[[zh:玄界灘]]
+<!--jawiki derived wikidata interwikis-->
+<!--zhwiki derived wikidata interwikis-->
+{{wikidata link|Q498047}}
+[[Category:Bodies of water of the Sea of Japan]]
+[[Category:Seas of Japan]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|玄界灘|version=103969256|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{統合文字|{{jalink|灘|Q11566792}}}}
+{{Infobox ocean
+| name = 玄界灘
+| image = View of Katsushima Island and Oshima Island from Ferry "Oshima".JPG
+| image_size = 250
+| caption = 勝島と{{jalink|大島 (福岡県)|Q11434813|筑前大島}}
+| coords = {{coord|34|0|N|130|0|E|region:JP_type:waterbody|display =inline,title}}
+| part_of = {{jalink|日本海|Q27092}} / {{jalink|東シナ海|Q45341}}
+| oceans = {{jalink|太平洋|Q98}}
+| basin_countries = {{JPN}}
+| cities = {{jalink|福岡市|Q26600|福岡}}、{{jalink|宗像市|Q819603|宗像}}、{{jalink|糸島市|Q1011145|糸島}}、{{jalink|古賀市|Q768356|古賀}}、{{jalink|唐津市|Q738275|唐津}}など
+| pushpin_map = Japan#East China Sea#Japan Kyushu
+| pushpin_map_caption = 玄界灘（およその位置）
+| latd = 34 |latm = 0 |latNS = N
+| longd = 130 |longm = 0 |longEW = E
+}}
+'''玄界灘'''（げんかいなだ）は、{{jalink|九州|Q13987}}の北西部に広がる海域である。{{jalink|大陸棚|Q134851}}が広がり、{{jalink|対馬海流|Q495355}}が流れて世界有数の{{jalink|漁場|Q10396778}}として知られる。
+
+== 名称・表記 ==
+玄は暗い・黒いという意味である。玄界灘のことを略して「'''玄海'''（げんかい）」とも呼ぶ。これは「玄界灘」の省略記法でもあり、海を意味する漢字が複数使用される「'''玄海灘'''」は誤記であるとされている。古くは「'''玄界洋'''」とも書かれ<ref>{{jalink|吉田東伍|Q11413910}}、『増補　大日本地名辞書　第4巻　西国』、冨山房、1901年（1979年増補）</ref>、これを略して「'''玄洋'''（げんよう）」という呼び方もあり、学校や団体の名称に使われる例がある<ref>{{jalink|福岡県立玄洋高等学校|Q11592560}}、{{jalink|玄洋中学校|Q11572300}}、{{jalink|玄洋社|Q645046}}など</ref>。
+
+== 地理 ==
+=== 範囲 ===
+{{see also|響灘|玄海国定公園}}
+最も一般的な範囲として{{jalink|福岡県|Q123258}}{{jalink|宗像市|Q819603}}の{{jalink|鐘崎 (宗像市)|Q11651333|鐘ノ岬}}から{{jalink|志賀島|Q3077260}}、{{jalink|糸島半島|Q8697965}}、{{jalink|唐津湾|Q11418635}}を経て{{jalink|佐賀県|Q160420}}{{jalink|唐津市|Q738275}}の{{jalink|東松浦半島|Q11527363}}までの{{jalink|九州|Q13987}}の海岸から、沖合は{{jalink|大島 (福岡県)|Q11434813|大島}}、{{jalink|地島|Q17992764}}、{{jalink|沖ノ島|Q7082047}}、{{jalink|長崎県|Q169376}}の{{jalink|壱岐島|Q494914|壱岐}}、{{jalink|対馬|Q52051}}までの海域を指すとされる。{{jalink|海上保安庁|Q565418}}が発行する日本の{{jalink|水路図誌|Q11549256}}（{{jalink|海図|Q728502}}）でも上記範囲で掲載されている<ref>「[https://www1.kaiho.mlit.go.jp/JODC/SODAN/annai.html 海の相談室] FAQ [https://www1.kaiho.mlit.go.jp/JODC/SODAN/faq/what_is_nada.htm 灘ってなに?]」、海上保安庁 海洋情報部、2017年9月10日閲覧</ref>。東方は{{jalink|響灘|Q11288861}}に接し、西方は{{jalink|東シナ海|Q45341}}（{{jalink|対馬海峡|Q52052}}東水道・{{jalink|壱岐水道|Q11429629}}）、北方は{{jalink|日本海|Q27092}}に連なる{{Refnest|group=注|ただし{{jalink|国際水路機関|Q233611}}の定義では、{{jalink|日本海|Q27092}}の範囲は、玄界灘より西の{{jalink|五島列島|Q1333790}}から{{jalink|済州島|Q29151}}・{{jalink|大韓民国|Q884|韓国}}南部にいたる海域までとされている。<ref>「[http://www1.kaiho.mlit.go.jp/KAN9/sodan/mame/nihonkai/hani.htm 「日本海の範囲」国際水路機関による定義]」、海上保安庁 {{jalink|第九管区海上保安本部|Q11602234}}</ref>}}。
+
+一方で、東端を{{jalink|遠賀川|Q11642388}}河口まで、西端を平戸海峡（{{jalink|平戸瀬戸|Q11482988}}）までとすることもある<ref>玄海町町誌編纂委員会編『玄海町誌』玄海町、1979年</ref><ref>角川日本地名大辞典編纂委員会編　『角川日本地名大辞典　35　山口県』　角川書店、1988年、ISBN 4-04-001350-6</ref><ref>渡辺光他編　『日本地名大事典　1　九州』　朝倉書店、1967年</ref>。
+
+なお、{{jalink|山口県|Q127264}}沖日本海の{{jalink|見島|Q49513}} - 沖ノ島 - 壱岐島北西端 - {{jalink|五島列島|Q1333790}}沖の{{jalink|白瀬|Q17993734}}の間に{{jalink|基線 (海)|Q810247|基線}}が設定されており<ref>「管轄海域情報～日本の領海～ 直線基線 [https://www1.kaiho.mlit.go.jp/JODC/ryokai/kakudai/kyu_idx.html 九区域 九州:都井岬～鳥屋鼻]」、海上保安庁 海洋情報部、2017年9月10日閲覧</ref>、これより南東側は海洋法上日本の{{jalink|内水|Q1663988}}（{{jalink|内海|Q2578218}}）とみなされ、玄界灘のほとんどの範囲は日本の内海または{{jalink|領海|Q213204}}となっている。
+
+=== 地形・気候 ===
+南側は全て水深200m以上の{{jalink|大陸棚|Q134851}}である。南西から北東に向かって{{jalink|対馬海流|Q495355}}が流れている。{{jalink|新生代|Q102416}}になってから{{jalink|日本列島|Q841337}}の原型が形成された頃は{{jalink|日本海|Q27092}}は巨大な湖で、その当時は{{jalink|朝鮮半島|Q483134}}と陸続きであった。そして、{{jalink|第四紀|Q26185}}の頃に玄界灘にあたる海域が形成されたとされる。この玄界灘には未知なる海底{{jalink|断層|Q47089}}が存在しているとみられて{{jalink|福岡市|Q26600}}の{{jalink|警固断層|Q11632312}}に関係する可能性が指摘されており、学術機関で研究や調査がなされている。
+
+九州・{{jalink|山口県|Q127264|山口}}沿岸部の気候は温暖であるが、冬は{{jalink|日本海側気候|Q11086452}}の特徴が現れる。北西の{{jalink|季節風}}と対馬海流の影響で雲が発生するため曇天の日が多く、沿岸部に雨・雪を降らせることもある。
+
+=== 生態系 ===
+{{jalink|対馬海流|Q495355}}が流れ、世界有数の{{jalink|漁場|Q10396778}}として知られるなど海洋生物が豊富に生息している。 {{jalink|鐘崎 (宗像市) |Q11651333|鐘崎}}港、{{jalink|博多漁港|Q11408962}}、{{jalink|唐津港|Q11418634}}、{{jalink|呼子港|Q30933508}}などにおいては多くの{{jalink|魚介類|Q107329976}}が水揚げされる。{{jalink|魚類|Q152}}の他にも、{{jalink|ウミガメ|Q219329}}<ref name=ハンドブック>{{Cite journal |和書 |year=2006-03 |url=https://www.env.go.jp/content/900491148.pdf |title=ウミガメ保護ハンドブック |publisher=日本ウミガメ協議会, 環境省自然環境局 |page=5 |work={{jalink|環境省|Q1125558}} |access-date=2025-03-03}}</ref>や{{jalink|海鳥|Q55808}}などの{{jalink|回遊|Q852569}}や{{jalink|渡り|Q193145}}の経路にもなっており、{{jalink|江戸時代|Q184963}}や{{jalink|明治時代}}までは沿岸に来遊する多数の{{jalink|ヒゲクジラ類|Q168366}}を対象とした大規模な古式捕鯨も行われていた<ref>{{Cite book |和書 |work=平戸市教育委員会 |title=西海鯨鯢記 |date=1980-03 |url=https://sitereports.nabunken.go.jp/99256 |ncid=BN15724724 |series=平戸市の文化財 |volume=13}}</ref><ref>{{Cite web |和書 |year=2021 |title=テーマ展「玄界灘でクジラがとれた日ーよみがえる記憶とにぎわいー」|url=https://saga-museum.jp/nagoya/exhibition/limited/2021/06/003637.html |website=佐賀ミュージアムズ |publisher={{jalink|佐賀県|Q160420}} |access-date=2025-03-03}}</ref>。
+
+=== 主な島 ===
+{{col|
+*福岡県
+**{{jalink|地島|Q17992764}}
+**{{jalink|大島 (福岡県)|Q11434813|大島}}
+**{{jalink|相島 (福岡県)|Q11581975|相島}}
+**{{jalink|沖ノ島|Q7082047}}
+**{{jalink|玄界島|Q11572311}}
+**{{jalink|小呂島|Q11459344}}
+|
+*佐賀県
+**{{jalink|小川島|Q11460438}}
+**{{jalink|加唐島|Q11398556}}
+**{{jalink|松島 (佐賀県)|Q11530091|松島}}
+**{{jalink|馬渡島|Q11668024}}
+|
+*長崎県
+**{{jalink|壱岐島|Q494914}}
+**{{jalink|対馬|Q52051}}
+**{{jalink|福島 (長崎県)|Q11592984|福島}}（広義の場合）
+**{{jalink|鷹島 (長崎県)|Q10860535|鷹島}}（同上）
+}}
+
+=== 沿岸の自治体 ===
+{{col|
+*福岡県
+**{{jalink|宗像市|Q819603}}
+**{{jalink|福津市|Q825700}}
+**{{jalink|古賀市|Q768356}}
+**{{jalink|新宮町|Q179185}}
+**{{jalink|福岡市|Q26600}}
+***{{jalink|東区 (福岡市)|Q1206659|東区}}
+***{{jalink|博多区|Q1330839}}
+***{{jalink|中央区 (福岡市)|Q1156273|中央区}}
+***{{jalink|早良区|Q1071779}}
+***{{jalink|西区 (福岡市)|Q1132402|西区}}
+**{{jalink|糸島市|Q1011145}}
+**{{jalink|岡垣町|Q1206102}}（広義の場合）
+**{{jalink|芦屋町|Q725518}}（同上）
+|
+*佐賀県
+**{{jalink|唐津市|Q738275}}
+**{{jalink|玄海町|Q1206926}}
+**{{jalink|伊万里市|Q857266}}（広義の場合）
+*長崎県
+**{{jalink|壱岐市|Q861519}}
+**{{jalink|対馬市|Q991032}}
+**{{jalink|松浦市|Q850465}}（広義の場合）
+**{{jalink|平戸市|Q328601}}（同上）
+}}
+
+=== 主な港 ===
+{{col|
+*福岡県
+**{{jalink|博多港|Q11284640}}
+**{{jalink|鐘崎 (宗像市)|Q11651333|鐘崎}}漁港
+|
+*佐賀県
+**{{jalink|唐津港|Q11418634}}
+**{{jalink|呼子港|Q30933508}}
+|
+*長崎県
+**{{jalink|郷ノ浦港|Q11643378}}
+**{{jalink|印通寺港|Q11409125}}
+**{{jalink|勝本港|Q30934829}}
+**{{jalink|芦辺漁港|Q11614922}}
+**{{jalink|厳原港|Q11410122}}
+**{{jalink|比田勝港|Q11547472}}
+}}
+
+== 歴史 ==
+{{see also|玄界灘海難事故|福岡県西方沖地震}}
+*{{jalink|日露戦争|Q159950}}を歌った{{jalink|軍歌|Q16194930}}「{{jalink|戦友 (軍歌)|Q11495984|戦友}}」第9番の「玄界灘で手を握り 名を名乗ったが始めにて」や、「{{jalink|無法松の一生|Q24890846}}」にて{{jalink|小倉祇園太鼓|Q11459006}}の「玄界灘の荒波に…」として有名である。{{jalink|福岡ソフトバンクホークス|Q129164}}の応援歌『{{jalink|いざゆけ若鷹軍団|Q11259197}}』の歌い出しにも登場する。
+*{{jalink|1905年|Q2047}}には、{{jalink|東郷平八郎|Q296785}}が率いる{{jalink|連合艦隊|Q697037}}と{{jalink|ロシア帝国|Q34266}}の{{jalink|バルチック艦隊|Q805787}}（バルト海艦隊）との間で発生した{{jalink|日本海海戦|Q208127}}の激戦地となった。
+* {{jalink|1945年|Q5240}}（昭和20年）{{jalink|8月21日|Q2823}}、輸送船「大東丸（326トン）」が触雷により沈没<ref>{{Cite book |和書 |author=日置英剛 |title=年表 太平洋戦争全史 |publisher=国書刊行会 |year=2005-10-31 |page=783 |isbn=978-4-336-04719-9 }}</ref>。
+*{{jalink|2005年|Q2019}}{{jalink|3月20日|Q2427}}10時53分には福岡市沖を{{jalink|震源地}}とする{{jalink|マグニチュード|Q500062|M}}7.0の{{jalink|福岡県西方沖地震|Q4604346}}（福岡県北西沖地震）が発生して、福岡県や{{jalink|佐賀県|Q160420}}で震度6弱を観測する大地震となった。
+
+==「げんかい（玄界・玄海）」の使用例==
+* {{jalink|玄界島|Q11572311}} （{{jalink|福岡市|Q26600}}{{jalink|西区 (福岡市)|Q1132402|西区}}に属する島、大字地名）
+* {{jalink|福岡市立玄界小中学校|Q11592323}} （福岡市西区玄界島の市立小学校・中学校）
+* {{jalink|福岡県立玄界高等学校|Q11592559}} （{{jalink|福岡県|Q123258}}{{jalink|古賀市|Q768356}}にある県立高校）
+* {{jalink|玄海町|Q1206926}} （{{jalink|佐賀県|Q160420}}{{jalink|東松浦郡|Q1043844}}の地方自治体）
+* {{jalink|玄海町 (福岡県)|Q11572305|玄海町}} （福岡県{{jalink|宗像郡|Q6935606}}にかつて存在した地方自治体）
+* {{jalink|玄海原子力発電所|Q1513575}} （佐賀県東松浦郡玄海町にある{{jalink|九州電力|Q694507}}の原子力発電所）
+* {{jalink|宗像市立玄海中学校}}
+* {{jalink|宗像市立玄海小学校|Q60990026}}
+* {{jalink|宗像市立玄海東小学校}}
+* {{jalink|玄海国定公園|Q1072901}} （玄界灘に臨む福岡、佐賀、長崎3県北部海岸線を区域にした{{jalink|国定公園|Q11832860}}<ref>[http://www.biodic.go.jp/jpark/qnp/genkai.html 日本の自然保護地域■玄海国定公園] （環境省）</ref>）
+* {{jalink|佐賀玄海漁業協同組合}} （佐賀県{{jalink|唐津市|Q738275}}の{{jalink|漁業協同組合|Q11565348}}）
+* {{jalink|玄海灘に立つ虹|Q11286484}} （{{jalink|大韓民国|Q884|韓国}}{{jalink|KBSワールドラジオ|Q496898}}の人気番組）
+* {{jalink|げんかい_(多用途支援艦)|Q6108999|げんかい}} （{{jalink|海上自衛隊|Q731647}}の多用途支援艦）
+* {{jalink|いざゆけ若鷹軍団|Q11259197}}（歌詞冒頭に玄界灘のフレーズが登場する）
+== 脚注 ==
+{{脚注ヘルプ}}
+=== 注釈 ===
+{{Reflist|group=注}}
+=== 出典 ===
+{{Reflist}}
+
+{{ウィキポータルリンク|日本の地理|[[画像:Gnome-globe.svg|34px|Portal:日本の地理]]}}
+
+{{japan-geo-stub}}
+
+==End Japanese==
+[[Category:日本の海域]]
+[[Category:日本海の水域]]
+[[Category:福岡県の地形]]
+[[Category:佐賀県の地形]]
+[[Category:長崎県の地形]]
+[[Category:対馬海峡|*けんかいなた]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Need translation]]

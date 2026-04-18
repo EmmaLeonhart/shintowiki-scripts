@@ -1,0 +1,41 @@
+<!--interwikis from wikidata-->[[ja:伊豆神社]]
+
+
+
+{{otheruses|A shrine in Gifu City, Gifu Prefecture|A shrine in Ōtsu City, Shiga Prefecture|Izu Shrine (Ōtsu City)}}
+{{Infobox religious building
+ | 名称 = Izu Shrine (伊豆神社)
+ | 画像 = [[Image:Izu-jinja gifu2009-6.jpg|center|250px|]]
+ | 所在地 = {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}{{ill|Gifu|en|Gifu|qid=Q45798|lt=Gifu City|1=Gifu}} Kiridōri 12-49
+ | 位置   = {{ウィキ座標2段度分秒|35|23|57.51|N|136|47|39.27|E|scale:30000}}
+ | 祭神   = {{ill|Iwanaga-hime|en|Iwanaga-hime|qid=Q8191705|lt=Iwanaga-hime|1=Iwanaga-hime}} (Ishinaga Hime)
+ | 社格   = 
+ | 創建   = Unknown
+ | 本殿   = 
+ | 例祭   = Unknown
+ | 神事   = 
+| image   = File:Izu-jinja gifu2009-6.jpg
+ | prefecture   = {{ill|Gifu|qid=Q45798|1=Gifu}}
+ | coordinates   = {{Coord|35.3993083|N|136.7942417|E|region:JP_type:landmark|display=inline,title}}
+ | deity   = {{ill|Iwanaga|qid=Q8191705|1=Iwanaga-hime}}
+ }}
+
+'''Izu Shrine''' (伊豆神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}} located in {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}{{ill|Gifu|en|Gifu|qid=Q45798|lt=Gifu City|1=Gifu}}.
+
+== Overview and Origin ==
+It is one of the few shrines nationwide enshrining {{ill|Iwanaga-hime|en|Iwanaga-hime|qid=Q8191705|lt=Iwanaga-hime|1=Iwanaga-hime}}, daughter of {{ill|Ōyamatsumi|en|Ōyamatsumi|qid=Q386563|lt=Oyamatsumi|1=Ōyamatsumi}} and older sister of {{ill|Konohanasakuya-hime|en|Konohanasakuya-hime|qid=Q1781862|lt=Konohananosakuya-hime|1=Konohanasakuya-hime}}.
+
+It was previously enshrined around Nagamori Hosohata, in the Ishinaga area, but was relocated to this site along the {{ill|Nakasendō|en|Nakasendō|qid=Q1154479|lt=Nakasendo|1=Nakasendō}} due to flood damage.
+
+{{shinto-stub}}
+{{Iwanaga Faith}}
+{{translated page|ja|伊豆神社|version=100778661|comment=Imported full ja history}}
+
+
+<!--jawiki derived wikidata interwikis-->
+{{Commons category|Izu Shrine (Gifu)}}
+[[ja:伊豆神社]]
+{{wikidata link|Q11380589}}
+[[Category:Shinto shrines in Gifu]]
+[[Category:Need translation]]
+[[Category:Wikidata has short description]]

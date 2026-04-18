@@ -1,0 +1,152 @@
+<!--interwikis from wikidata-->[[co:commons:Category:Kameyama Hachiman-gū (Shimonoseki)]][[en:Kameyama Hachimangū]][[ja:亀山八幡宮 (下関市)]]
+<!--interwikis from wikidata-->[[co:commons:Category:Kameyama Hachiman-gū (Shimonoseki)]][[en:Kameyama Hachimangū]][[ja:亀山八幡宮 (下関市)]]
+<!--interwikis from wikidata-->[[co:commons:Category:Kameyama Hachiman-gū (Shimonoseki)]][[en:Kameyama Hachimangū]][[ja:亀山八幡宮 (下関市)]]
+<!--interwikis from wikidata-->[[en:Kameyama Hachimangū]][[ja:亀山八幡宮 (下関市)]]
+
+
+{{Short description|Shinto shrine located in Shimonoseki, Yamaguchi Prefecture, Japan}}
+{{unreferenced|date=December 2021}}
+{{Expand language|topic=|langcode=ja|otherarticle=亀山八幡宮|date=December 2021}}
+
+'''Kameyama Hachimangū''' (亀山八幡宮, ''Kameyama Hachimangū'') is a [[Shinto]] shrine located in {{ill|Shimonoseki|en|Shimonoseki|qid=Q203308|lt=Shimonoseki}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture}}, Japan. It is a [[Hachiman shrine|Hachiman Shrine]], dedicated to the [[kami]] [[Hachiman]]. The [[kami]] enshrined there include {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}, {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}, and {{ill|Emperor Chūai|en|Emperor Chūai|qid=Q179971|lt=Emperor Chūai}}. It was established in 859, and has an annual festival on October 15.
+
+The shrine can be reached by bus from {{ill|Shimonoseki Station|en|Shimonoseki Station|qid=Q1130253|lt=Shimonoseki Station}}.
+
+== See also ==
+{{Commons Category:100 oldest pages]][[Category|Kameyama Hachiman-gū (Shimonoseki)}}
+*[[List of Shinto shrines in Japan]]
+*[[Hachiman shrine|Hachiman Shrine]]
+
+== External links ==
+*[http://www.kameyamagu.com Official website]
+
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+{{coord|33.9575|130.9450|type:landmark_region:JP|display=title}}
+
+{{Shinto-stub}}
+{{Hachiman Faith}}
+{{Beppyo Shrines}}
+\
+
+
+
+[[en:Kameyama Hachimangū]]
+<!--enwiki derived wikidata interwikis-->
+{{Commons category|Kameyama Hachiman-gū (Shimonoseki)}}
+[[ja:亀山八幡宮 (下関市)]]
+{{wikidata link|Q11370831}}
+[[Category:Beppyo shrines]]
+[[Category:Hachiman shrines]]
+[[Category:Ken-sha]]
+[[Category:Shinto shrines in Yamaguchi Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|亀山八幡宮 (下関市)|version=102530698|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{神社
+ | 名称=亀山八幡宮
+ | 画像=[[File:亀山八幡宮全景202309.jpg|260px]]<br />鳥居と拝殿
+ | 所在地={{jalink|山口県|Q127264}}{{jalink|下関市|Q203308}}中之町1-1
+ | 位置   = {{ウィキ座標2段度分秒|33|57|26.7|N|130|56|42|E|display=inline,title}}
+ | 祭神={{jalink|応神天皇|Q317997}}<br/>{{jalink|仲哀天皇|Q179971}}<br/>{{jalink|神功皇后|Q232803}}
+ | 社格=旧{{jalink|県社}}・{{jalink|別表神社|Q10898274}}
+ | 創建={{jalink|貞観 (日本)|Q1075635|貞観}}元年（{{jalink|859年|Q23897}}）
+ | 例祭={{jalink|10月15日|Q2919}}（亀山能）
+ | 神事=五穀祭・関の提灯祭
+ | 地図={{Location map|Japan Yamaguchi|label=亀山八幡宮|coordinates=
+{{coord2|33|57|26.7|N|130|56|42|E}}|position=right|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|33|57|26.7|N|130|56|42|E}}}}
+}}
+[[ファイル:141122 Kameyama hachimangu Shimonoseki Yamaguchi pref Japan01bs5.jpg|thumb|拝殿]]
+[[ファイル:Kameyama Hachimangu Shrine in Shimonoseki.JPG|thumb|大鳥居]]
+
+'''亀山八幡宮'''（かめやまはちまんぐう）は、{{jalink|山口県|Q127264}}{{jalink|下関市|Q203308}}にある{{jalink|神社|Q845945}}である。旧{{jalink|社格|Q10444029}}は{{jalink|県社}}で、現在は{{jalink|神社本庁|Q908077}}の{{jalink|別表神社|Q10898274}}。通称'''亀山さま（亀山さん）'''。
+
+{{jalink|応神天皇|Q317997}}・{{jalink|仲哀天皇|Q179971}}・{{jalink|神功皇后|Q232803}}を主{{jalink|祭神|Q11591100}}とし、{{jalink|仁徳天皇|Q313119}}・{{jalink|武内宿禰|Q1073668}}をあわせ祀る。
+
+== 歴史 ==
+{{jalink|享保|Q1145048}}年間の『防長社寺由来』によれば、{{jalink|859年|Q23897}}（{{jalink|貞観 (日本)|Q1075635|貞観}}元年）、{{jalink|行教|Q11626127}}が{{jalink|宇佐神宮|Q715632|宇佐}}から{{jalink|石清水八幡宮|Q710098|石清水}}へ{{jalink|八幡神|Q261637}}を勧請する途中、当時は島だった亀山に碇泊した。そのとき、「この山は清浄な地であるので、しばらく祀ってから先へ進んでほしい」と{{jalink|神託|Q217123}}があったため、亀山に行宮が設けられた。この行宮が当社の起源であるという。
+
+{{jalink|関門海峡|Q494894}}鎮護の神社として歴代領主の{{jalink|大内氏|Q1348909}}・{{jalink|毛利氏|Q914637}}らの崇敬を受け、下関の総鎮守、{{jalink|長門国|Q907382}}{{jalink|一宮|Q1656379|三宮}}とされた。{{jalink|1874年|Q7761}}（明治7年）に郷社に列し、{{jalink|1890年|Q7832}}（明治23年）に県社に昇格した。{{jalink|1968年|Q2644}}（昭和43年）に神社本庁の別表神社に加列された。
+
+境内には、{{jalink|山陽道|Q1376722}}の終点を示す碑が建てられている。
+
+== 境内摂末社 ==
+*宮地嶽神社 - 祭神：息長足比売命・勝村大神・勝頼大神 
+*熊鷹稲荷神社 - 祭神：倉稲魂命
+*恵比須神社 - 祭神：事代主神・大国主命
+
+== 境内 ==
+*大鳥居 - {{jalink|御影石}}製。昭和8年再建
+*亀山八幡宮儀式殿 - 平成元年竣工
+*亀山砲台跡
+*お亀茶屋跡 - {{jalink|伊藤博文|Q174971}}夫妻ゆかりの地 
+*水月句碑 - {{jalink|中野水月}}の句碑。大正4年建立 
+*{{jalink|林芙美子|Q445839}}文学碑 - 昭和41年建立
+*扇塚 - {{jalink|日本舞踊|Q1303389}}で使用する{{jalink|扇|Q108778988}}を供養する塚。昭和45年建立
+*太閤蘇鉄 - {{jalink|豊臣秀吉|Q187550}}参拝時に植えたとされる{{jalink|蘇鉄}}
+*針塚 - 昭和57年建立 
+*{{jalink|金子みすゞ|Q291489}}詩碑 - 「夏越まつり」（平成15年建立）、「鶴」 
+*宗祇句碑 - 連歌師{{jalink|宗祇|Q923562}}の句碑。大正3年建立 
+*{{jalink|山陽道|Q1376722}}碑 - 明治11年建立
+*{{jalink|床屋|Q11485955}}発祥の地碑 - 平成7年建立 
+*昭和天皇御製碑 - 昭和天皇在位60年を祝して建立 
+*力石 - 勧請相撲を記念して文政10年に奉納された石。 
+*お亀明神社 - ご祭神：お亀明神 
+*お亀いちょう 
+*亀の池
+*日本一のふくの像 - 平成2年再建
+*神亀 - 御影石製の亀の彫像。平成14年建立
+*子持ち狛犬 - 文久元年（1861年）建立
+*玉紫の玉垣 - 大坂屋玉紫が寄進した玉垣。文化九壬申（1812年）九月吉日の銘。
+
+== 床屋発祥の地 ==
+鎌倉時代後期に{{jalink|亀山天皇|Q360972}}に仕えていた武士が宝刀紛失の責任をとり息子とともに京都から下関に移り髪結いの技術を習得した<ref name="yamaguchi20221114">{{Cite web|和書|work=山口新聞|url=https://yama.minato-yamaguchi.co.jp/e-yama/articles/50347|title=髪に感謝、健康も願い供養祭 「床屋発祥の地」下関で県理容組合|accessdate=2022-11-14}}</ref>。店は亀山八幡宮のある中之町にあり床の間に立派な祭壇があったことから「床屋」の屋号で知られるようになった<ref name="yamaguchi20221114" />。
+
+{{jalink|1995年|Q2068}}（平成7年）に境内に床屋発祥の地記念碑が建てられ、山口県理容生活衛生同業組合が毛髪供養祭を毎年開いている<ref name="yamaguchi20221114" />。
+
+== その他 ==
+[[ファイル:Kameyama Hachiman Shrine 20190812 161626.jpg|thumb|{{jalink|神額}}]]
+鳥居の{{jalink|神額}}にある「山」の字の左下には、1958年頃にたまたま{{jalink|野球|Q5369}}の{{jalink|ボール|Q18545}}がはまりこんでしまっており、現在に至るまで落下していない。そのため、{{jalink|日本の高校野球|Q5353630|高校球児}}たちが験担ぎで必勝祈願に訪れたり、「落ちない」ボールにあやかって{{jalink|受験生}}が合格祈願をしたりしているという<ref>[https://www.nikkansports.com/baseball/highschool/news/202208220000785.html　【甲子園】下関国際準Ｖ後押し！？地元「亀山八幡宮」の額「山」の字にはまって落ちないボール]日刊スポーツ　2022年8月22日</ref>。
+
+== 交通アクセス ==
+*{{jalink|山陽本線|Q1193436}} {{jalink|下関駅|Q1130253}}から{{jalink|サンデンバス}}で7分、「{{jalink|唐戸|Q6368794}}」下車、徒歩3分
+
+== 周辺 ==
+*{{jalink|唐戸市場|Q11418545}}、カモンワーフ、唐戸桟橋
+*{{jalink|旧下関英国領事館|Q18991816}}
+*{{jalink|旧秋田商会ビル|Q131983772}}
+*{{jalink|下関南部町郵便局|Q11361429}}
+*{{jalink|赤間神宮|Q712617}}
+
+== 脚注 ==
+{{Reflist}}
+
+== 関連項目 ==
+{{Commonscat|Kameyama Hachiman-gū (Shimonoseki)}}
+*{{jalink|唐戸|Q6368794}}
+*{{jalink|亀の甲煎餅|Q28683715}}
+
+== 外部リンク ==
+*[http://www.kameyamagu.com 亀山八幡宮]（公式サイト）
+
+{{神道 横}}
+
+
+==End Japanese==
+[[Category:山口県の神社]]
+[[Category:下関市の建築物]]
+[[Category:下関市の歴史]]
+[[Category:山口県の旧県社]]
+[[Category:別表神社]]
+[[Category:八幡宮]]
+[[Category:西国街道]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Need translation]]

@@ -1,0 +1,176 @@
+<!--interwikis from wikidata-->[[en:Futako Shrine]][[ja:二子神社]]
+
+
+{{expand Japanese|date=March 2016}}
+{{Infobox religious building
+| name = Futako Shrine<br />二子神社
+| image = File:二子神社 本殿 鳥居あり.JPG
+| caption = 
+| map_type = Japan
+| map_alt = 
+| coordinates = {{Coord|35.608611|N|139.621389|E|region:JP_type:landmark|display=inline,title}}
+| map_relief  = 
+| map_size = 
+| map_caption = 
+| religious_affiliation = [[Shinto]]
+| type = 
+| deity = 
+| founded_by = 
+| established = 
+| date_destroyed = 
+| location = Futako 1-2-18, Takatsu-ku, Kawasaki city, Kawasaki prefecture
+| website = {{URL|http://www.mizonokuchijinjya.org/kenmu.html}}
+| architecture_style = 
+| festival = 
+| leadership = 
+| location = {{ill|Takatsu-ku|qid=Q1076736}}
+}}
+
+'''{{Nihongo|Futako shrine|二子神社|Futako jinja}}''', located in {{ill|Takatsu-ku, Kawasaki|en|Takatsu-ku, Kawasaki|qid=Q1076736|lt=Takatsu-ku, Kawasaki}}, is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} in [[:en:Kanagawa prefecture|Kanagawa prefecture]], {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. It was established in 1641 and was called "Shinmeisha". It was renamed "Futako Shrine" in the [[:en:Meiji Era|Meiji Era]], after the area in which it is located.
+
+==Features==
+It is known for the "Kanoko Monument" sculpture next to the shrine. The sculpture was made by the artist {{ill|Tarō Okamoto|en|Tarō Okamoto|qid=Q983942|lt=Tarō Okamoto}}, who was born locally. The sculpture is dedicated to the artist's mother, {{ill|Kanoko Okamoto|en|Kanoko Okamoto|qid=Q1396664|lt=Kanoko Okamoto}}.
+
+==Gallery==
+<gallery>
+File:かの子の碑.JPG|"Kanoko monument" by {{ill|Tarō Okamoto|en|Tarō Okamoto|qid=Q983942|lt=Tarō Okamoto}}
+File:二子神社の六字名号塔.JPG|Sixth column name
+File:二子神社の庚申塔.JPG|[[Kōshin]]-tō
+File:大山常夜灯.JPG|Oyama lantern at the shrine entrance
+File:二子神社 一の鳥居と社号標.JPG|The outer torii
+File:二子神社 手洗舎.JPG|{{ill|Chōzuya|en|Chōzuya|qid=Q1069667|lt=Chōzuya (visitors' washing place)}}
+File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kawasaki City's 50 selected trees
+</gallery>
+
+==See also==
+* {{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines}}
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://eng.shoinjinja.org|Official website]
+
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+{{Shinmei shrines}}
+
+
+
+[[en:Futako Shrine]]
+<!--enwiki derived wikidata interwikis-->
+{{Commons category|Futako-jinja}}
+[[ja:二子神社]]
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q21480958}}
+[[Category:1641 establishments in Japan]]
+[[Category:Religious buildings and structures completed in 1641]]
+[[Category:Shinmei shrines]]
+[[Category:Shinto shrines in Kanagawa Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|二子神社|version=107367709|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{神社
+|名称 = 二子神社
+|画像 = [[File:二子神社_本殿_鳥居あり.JPG|300px]]<br />二の鳥居と社殿
+|所在地 = 神奈川県川崎市高津区二子一丁目2番18号
+|緯度度 =35  |緯度分 =36  |緯度秒 =31 
+|経度度 =139  |経度分 =37  |経度秒 =17 
+|ISO = JP-14
+|祭神 = 天照皇大神
+|神体 = 
+|社格 = 村社
+|創建 = 寛永18年（1641年）
+|本殿 = 神明造
+|別名 = 二子神明社
+|札所等 = 
+|例祭 = 10月10日
+|神事 = 
+}}
+
+'''二子神社'''（ふたこじんじゃ）は、{{jalink|神奈川県|Q127513}}{{jalink|川崎市|Q164234}}{{jalink|高津区|Q1076736}}{{jalink|二子 (川崎市)|Q11371440|二子}}一丁目にある{{jalink|神社|Q845945}}。元は神明社と称していたが、{{jalink|明治|Q3125096}}時代に{{jalink|大六天}}と{{jalink|稲荷神|Q719665|稲荷}}を合祀し、村名をとって二子神社と改称した<ref name="chimei">{{Cite book|和書|title=川崎地名辞典 (上)|author=日本地名研究所|publisher=川崎市|year=2004|page=308}}</ref>。
+
+== 祭神 ==
+* {{jalink|天照皇大神}}<ref name="rekishi">{{Cite book|和書|title=神奈川県神社誌|author=神奈川県神社庁|publisher=神奈川県神社庁|year=1981|page=124}}</ref>
+
+== 歴史 ==
+* {{jalink|1641年|Q6907}}（{{jalink|寛永|Q1192913}}18年） - {{jalink|武田氏|Q1210114|武田家}}の旧臣・小山田兵部により天照皇大神を守護神として祠が立てられた<ref name="rekishi"/>。
+* {{jalink|明治|Q3125096}}時代 - 大六天と稲荷を合祀し、二子神社と改称<ref name="chimei"/>。村社に列せられる<ref name="rekishi"/>。
+* {{jalink|1926年|Q5259}}（{{jalink|大正|Q329174}}15年） - {{jalink|幣帛|Q11481885}}料供進社に指定された<ref name="rekishi"/>。
+* {{jalink|1930年|Q18787}}（{{jalink|昭和|Q327567}}5年） - 二子三業組合により境内に出世稲荷が作られた<ref name="minzoku">{{Cite book|和書|title=川崎市民俗文化財緊急調査報告書　第三集　二子・溝口　宿場の民俗|author=川崎市教育委員会|publisher=川崎市教育委員会|year=1984|page=87}}</ref>。
+* {{jalink|1943年|Q18623}}（昭和18年） - 社殿が再建された<ref name="minzoku"/>。
+
+== 境内 ==
+; かの子の碑
+: 抽象彫刻の「{{jalink|岡本かの子|Q1396664}}」の文学碑。{{jalink|二子 (川崎市)|Q11371440|二子}}村の旧家・大貫家に生まれ、{{jalink|多摩川|Q1063006}}を愛したかの子のために、多摩川を眺むこの地が選ばれた。「誇り」と題する大型の彫刻は、かの子の子息、{{jalink|岡本太郎|Q983942}}の作で、築山風台座は建築家、{{jalink|丹下健三|Q151794}}が設計し、{{jalink|1962年|Q2764}}（昭和37年）秋に完成した<ref>{{Cite book|和書|title=高津郷土資料集 第12編 写真で読む今昔・矢倉沢往還|publisher=川崎市立高津図書館|year=1994|page=7}}</ref><ref name="silver">{{Cite book|和書|author=高津シルバーガイドの会|title=高津区歴史的石造物調査報告書|year=2008|page=1}}</ref>。岡本かの子の「としとしにわが悲しみは深くしていよよ華やぐいのちなりけり」という歌を刻んだ歌碑があるほか、{{jalink|亀井勝一郎|Q382681}}が岡本かの子について書いた文章を{{jalink|川端康成|Q43736}}の書によって記した碑も設置されている<ref>{{Cite web|和書|date= |url=http://www.taromuseum.jp/introduction/okamotos/taro/otozureru/a_7_2b/a_7_2b1.htm |title=岡本かの子文学碑 （二子神社） |publisher=川崎市岡本太郎美術館 |accessdate=2015-11-03}}</ref><ref>{{Cite book|和書|author=浜田健治|title=神奈川の文学碑|publisher=公孫樹舎|year=2012|page=24|ISBN=9784990403287}}</ref>。
+; 六字名号塔
+: {{jalink|延宝|Q1145735}}6年（{{jalink|1678年|Q7634}}）の銘<ref name="silver"/>。
+; {{jalink|庚申塔|Q11486001}}
+: 年代不明。青面金剛と三猿の陽刻<ref>{{Cite book|和書|title=高津郷土資料集 第16編 矢倉沢往還の石造物|publisher=川崎市立高津図書館|year=1994|page=5}}</ref>。
+; {{jalink|狛犬|Q20155846}}
+: {{jalink|1929年|Q18792}}（昭和4年）<ref>{{Cite book|和書|author=土屋誠一郎|title=川崎の狛犬たち|year=1992|page=48}}</ref>。
+; 大山灯籠
+: 夏に鳥居脇に立てられる<ref name="minzoku"/>。
+; ムクノキ
+: 境内には、川崎市のまちの樹50選に指定されている{{jalink|ムクノキ|Q4779482}}がある<ref>{{Cite book|和書|editor=川崎市建設緑政局緑政部みどりの企画管理課|title=建設緑政局事業概要 緑編 -みどりと公園- 平成26年度|publisher=川崎市|year=2014|page=p24}}</ref>。
+
+<gallery>
+かの子の碑.JPG|岡本かの子の文学碑
+二子神社の六字名号塔.JPG|六字名号塔
+二子神社の庚申塔.JPG|{{jalink|庚申塔|Q11486001}}
+大山常夜灯.JPG|参道入口の大山灯籠
+二子神社 一の鳥居と社号標.JPG|一の鳥居と社号標
+二子神社 手洗舎.JPG|手水舎
+川崎市のまちの樹50選 「ムクノキ」.jpg|川崎市のまちの樹50選 「ムクノキ」
+</gallery>
+
+=== 境内社 ===
+; 出世稲荷
+: {{jalink|1930年|Q18787}}（昭和5年）に二子{{jalink|花街|Q1574228|三業}}組合が{{jalink|伏見稲荷}}から勧請した。第六天を合祀した際に、そこにあった稲荷社を移したという説もある<ref name="minzoku"/>。三業とは芸妓{{jalink|置屋|Q2017260}}・{{jalink|待合|Q11488275}}・{{jalink|料亭|Q2178435}}の三業種であり、二子新地は伝統ある{{jalink|宿場町}}として昭和30年代頃まで花街の営業が盛んであった。二子神社の周りはこうした三業が栄えた地域であり、三業組合は二子神社にこの稲荷を寄進した他、神社のすぐ外側に街灯柱も建てている<ref>{{Cite book|和書|title=たかつ　ひと・まち・記憶－高津区制40周年記念誌|publisher=川崎市高津区役所|year=2012|page=62|ISBN=9784990683108}}</ref>。
+
+<gallery>
+二子神社内稲荷神社 鳥居と社殿.JPG|鳥居と社殿
+街灯柱 二子三業組合 遠目.JPG|二子三業組合が立てた手水舎脇の街灯柱
+街灯柱 二子三業組合 アップ.JPG|街灯柱に付けられた二子三業組合のプレート
+</gallery>
+
+== 年中行事 ==
+* 4月3日–大陸天の祭り<ref name="gyoji">{{Cite book|和書|title=川崎市民俗文化財緊急調査報告書　第三集　二子・溝口宿場の民俗|author=川崎市教育委員会|publisher=川崎市教育委員会|year=1984|page=91}}</ref>
+* 10月10日–例祭<ref name="rekishi"></ref><ref name="gyoji"></ref>
+
+== 交通アクセス ==
+; 鉄道
+: {{jalink|東急田園都市線|Q1190086}}{{jalink|二子新地駅|Q5510461}}下車、徒歩3分<ref>{{Cite web|和書|date=2010年12月20日　|url=http://www.city.kawasaki.jp/880/page/0000000072.html |title= 二子神社(岡本かの子文学碑) |publisher=川崎市教育委員会 |accessdate=2015-11-03}}</ref>
+; バス
+: {{jalink|東急バス|Q11526982}}の玉06・向02・渋12で「二子神社前」バス停下車<ref>{{Cite web|和書|url=http://www.tokyubus.co.jp/jikoku/dia/cgi/search_route.cgi?stcode=1750218l |title= 東急バス時刻表　二子神社前 |publisher=東急バス |accessdate=2015-11-03}}</ref>
+
+== 出典 ==
+{{脚注ヘルプ}}
+{{Reflist}}
+
+== 関連項目 ==
+* {{jalink|高津区|Q1076736}}
+* {{jalink|川崎歴史ガイド#大山街道|Q11478513}}
+* {{jalink|二子村|Q11371451}}
+* {{jalink|二子 (川崎市)|Q11371440}}
+
+== 外部リンク ==
+{{commonscat|Futako-jinja}}
+* [http://www.mizonokuchijinjya.org/kenmu.html 溝口神社 (兼務神社)]
+
+
+==End Japanese==
+[[Category:神奈川県の旧村社]]
+[[Category:川崎市の神社]]
+[[Category:高津区の歴史]]
+[[Category:高津区の建築物]]
+[[Category:神明神社]]
+[[Category:17世紀の日本の設立]]
+[[Category:溝口 (川崎市)]]
+[[Category:Need translation]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]

@@ -1,0 +1,185 @@
+<!--interwikis from wikidata-->[[co:commons:Category:Kurume Suiten-gū]][[en:Kurume Suitengū]][[es:Kurume Suiten-gū]][[fr:Kurume Suiten-gū]][[ja:水天宮 (久留米市)]][[zh:水天宮 (久留米市)]]
+<!--interwikis from wikidata-->[[co:commons:Category:Kurume Suiten-gū]][[en:Kurume Suitengū]][[es:Kurume Suiten-gū]][[fr:Kurume Suiten-gū]][[ja:水天宮 (久留米市)]][[zh:水天宮 (久留米市)]]
+<!--interwikis from wikidata-->[[en:Kurume Suitengū]][[es:Kurume Suiten-gū]][[fr:Kurume Suiten-gū]][[ja:水天宮 (久留米市)]][[zh:水天宮 (久留米市)]]
+{{Expand Japanese|水天宮|date=September 2011}}
+{{Infobox religious building
+| name = Kurume Suitengū<br>久留米水天宮
+| image = Kurume Suitengu ac (1).jpg
+| caption = The ''[[honden]]'', or main shrine
+| map_type = Japan
+| map_alt = 
+| coordinates = {{coord|33|19|13|N|130|29|46|E|region:JP-40_type:landmark_source:kolossus-dewiki|display=title,inline}}
+| map_relief  = 
+| map_size = 
+| map_caption = 
+| religious_affiliation = [[Shinto]]
+| type = 
+| deity = [[Amenominakanushi]]<br>[[Emperor Antoku]]<br>[[Taira no Tokuko]]<br>{{ill|Taira no Tokiko|en|Taira no Tokiko|qid=Q3379244|lt=Taira no Tokiko}}
+| founded_by = 
+| established = 
+| date_destroyed = 
+| location = 265, Senoshita-machi {{ill|Kurume|en|Kurume|qid=Q320934|lt=Kurume}}<br>[[Fukuoka Prefecture|Fukuoka]] 830-0025
+| website = {{URL|http://www.suitengu.net/}}
+| architecture_style = 
+| festival = 
+| leadership = 
+}}
+
+{{Nihongo|'''Kurume Suitengū'''|久留米水天宮|}} is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} located in {{ill|Kurume|en|Kurume|qid=Q320934|lt=Kurume}}, [[Fukuoka prefecture]], [[Japan]]. This shrine is the headquarters for all Suitengū Shrines in Japan.
+
+It is dedicated to four deities:
+
+* [[Ame-no-Minakanushi|Amenominakanushi]]
+* [[Emperor Antoku|Antoku]]
+* [[Taira no Tokuko|Kenrenmon-in]]
+* {{ill|Taira no Tokiko|en|Taira no Tokiko|qid=Q3379244|lt=Nii No Ama}}
+
+"Suiten" is the [[Japan|Japanese]] name of the deity of [[Hindu]] origins {{ill|Varuna|en|Varuna|qid=Q1001037|lt=Varuna}}, one of a series of Hindu deities whose worship entered Japan together with [[Buddhism]].. When the Japanese Empire enforced the ''[[Shinbutsu bunri]]'', the official separation of Shinto shrines and Buddhist temples, shrines celebrating Suiten identified their dedication to [[Amenominakanushi]].
+
+==Legends==
+As a shrine related with {{ill|Water|en|Water|qid=Q283|lt=Water}}, Suitengū came to be venerated as a guardian shrine for [[:en:Ship transport|marine traffic]] and was said to have a connection with the legend of [[Kappa (folklore)|Kappa]]. These days, it is believed to house the [[Kami|god]] of safe childbirth.
+
+==See also==
+*[[Suijin]]
+*[[Suitengū (Tokyo)]]
+*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines}}
+
+==External links==
+*[http://www.suitengu.net/ Official website] {{in lang|ja}}
+*[http://www.kurume-hotomeki.jp/en/event/?mode=detail&isSpot=1&id=402036000004 Suitengū Shrine - Kurume Tourist Information] {{in lang|en}}
+
+{{Commons category|Kurume Suiten-gū}}
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+
+{{citation needed|Kurume Suitengu}}
+{{Shinto-stub}}
+
+[[en:Kurume Suitengū]]
+{{wikidata link|Q3200625}}
+[[Category:Beppyo shrines]]
+[[Category:Ken-sha]]
+[[Category:Shinto shrines in Fukuoka Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|水天宮 (久留米市)|version=103070762|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{神社
+ | 名称=水天宮
+ | 画像=[[File:Kurume Suitengu ac (1).jpg|250px]]<br/>拝殿
+ | 所在地={{jalink|福岡県|Q123258}}{{jalink|久留米市|Q320934}}瀬下町265-1
+ | 位置={{ウィキ座標2段度分秒|33|19|13|N|130|29|46|E|region:JP-40_type:landmark|display=inline,title}}
+ | 祭神={{jalink|天御中主神}}<br/>{{jalink|安徳天皇|Q316651}}<br/>{{jalink|平徳子|Q3315855|高倉平中宮}}<br/>{{jalink|二位の尼}}
+ | 社格=旧{{jalink|県社}}・{{jalink|別表神社|Q10898274}}
+ | 創建={{jalink|建久|Q1193933}}年間
+ | 例祭={{jalink|5月5日|Q2550}} - {{jalink|5月7日|Q2553|7日}}<br/>{{jalink|8月5日|Q2783}} - {{jalink|8月7日|Q2781|7日}}
+ | 地図={{Location map|Japan Fukuoka|label=水天宮|coordinates=
+{{coord2|33|19|13|N|130|29|46|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|33|19|13|N|130|29|46|E}}}}
+}}
+'''水天宮'''（すいてんぐう）は、{{jalink|福岡県|Q123258}}{{jalink|久留米市|Q320934}}にある{{jalink|神社|Q845945}}。全国にある{{jalink|水天宮|Q125319456}}の総本宮<ref>{{Cite book|和書 |title=古地図で歩く 福岡 歴史探訪ガイド |date=2018-6-5 |publisher=メイツ出版 |page=108 |author=月刊はかた編集部 |isbn=978-4780420449}}</ref>。旧社格は{{jalink|県社}}。{{jalink|神社本庁|Q908077}}の{{jalink|別表神社|Q10898274}}。
+
+{{jalink|天御中主神}}・{{jalink|安徳天皇|Q316651}}・高倉平中宮（建礼門院、{{jalink|平徳子|Q3315855}}）・二位の尼（{{jalink|平時子|Q3379244}}）を祀る。
+
+== 祭神 ==
+{{jalink|寛文|Q1146228}}10年（{{jalink|1670年|Q7606}}）に{{jalink|久留米藩|Q426826}}が寺社の由緒を調査した際に提出された書上によれば、尼御前社と呼ばれていた時代の祭神は尼御前大明神・左荒五郎大明神・右安坊大明神の三神であったという。尼御前大明神は千年川（{{jalink|筑後川|Q954320}}）の水神、荒五郎はその{{jalink|荒御魂}}となる牛馬守護の{{jalink|水神|Q3137449}}<ref name="Koga"/>、安坊とは{{jalink|和御魂}}となる安徳天皇を指す。また、{{jalink|河童|Q335140|河伯}}水神の信仰もあったことから、旧来の水天宮は筑後川水系の水神を祀る{{jalink|民間信仰|Q1068640}}の社であったと考えられる<ref name="Yamanaka">山中耕作、{{jalink|谷川健一|Q2392596}}（編）『1・九州』  <日本の神々：神社と聖地> 白水社 2000年第2刷 、ISBN 4-560-02501-0 pp.216-224.</ref>。
+
+; 現在の祭神
+* {{jalink|天御中主神}}
+* {{jalink|安徳天皇|Q316651}}
+* 高倉平中宮（建礼門院、{{jalink|平徳子|Q3315855}}）
+* 二位の尼（{{jalink|平時子|Q3379244}}）
+
+== 歴史 ==
+社伝によれば、{{jalink|寿永|Q598057}}4年（{{jalink|1185年|Q19729}}）、高倉平中宮に仕え{{jalink|壇ノ浦の戦い|Q968676}}で生き延びた{{jalink|按察使局伊勢|Q11498043}}が千歳川（現 {{jalink|筑後川|Q954320}}）のほとりの鷺野ヶ原に逃れて来て、{{jalink|建久|Q1193933}}年間（{{jalink|1190年|Q19736}} - {{jalink|1199年|Q19752}}）に安徳天皇と平家一門の霊を祀る祠を建てたのに始まる<ref name="Koga">{{Cite journal|author = 古賀瑞枝 |title=水天宮信仰の展開について : 久留米から江戸ヘ |journal = 佛教大学大学院紀要、文学研究科篇 |issue =  |volume = 41 |pages = 1-18 |publisher= 佛教大学大学院 |date = 2013 |naid=110009557296 |accessdate=2020-07-27 }}</ref>。伊勢は剃髪して名を千代と改め、里々に請われて加持祈祷を行ったことから、当初は尼御前大明神、尼御前神社、尼御前宮などと呼ばれた。そのころ、中納言{{jalink|平知盛|Q736706}}の次男{{jalink|平知時|Q18458120}}の子右忠が肥後国から千代を訪れ、その後嗣とした。これが現在まで続く{{jalink|社家|Q11588367}}・真木家の祖先である。{{jalink|幕末|Q804558}}の{{jalink|志士|Q2279517}}である{{jalink|真木保臣|Q6537582}}（真木和泉守）は第22代宮司であり、境内社・真木神社に祀られている。
+
+{{jalink|慶長|Q1328185}}年間に久留米市新町に遷り、{{jalink|慶安|Q1146135}}3年（{{jalink|1650年|Q6951}}）、{{jalink|久留米藩|Q426826}}第2代藩主{{jalink|有馬忠頼|Q11516786}}によって現在地に社殿が整えられ遷座したのが現在総本宮である久留米水天宮である<ref name="Koga"/>。その後も歴代藩主により崇敬されたが、特に第9代藩主{{jalink|有馬頼徳|Q11516845|頼徳}}は、{{jalink|文政|Q1327119}}元年（{{jalink|1818年|Q6964}}）に久留米藩江戸屋敷に分霊を勧請し、その後{{jalink|明治|Q3125096}}5年に現在の{{jalink|水天宮 (東京都中央区)|Q3503320|東京水天宮}}にご遷座された<ref name="Koga"/>。{{jalink|明治|Q3125096}}元年（{{jalink|1868年|Q7717}}）には{{jalink|元神明宮|Q11388013}}に分霊され相殿に祀られる。
+
+== 境内 ==
+=== 施設 ===
+* 社殿
+* {{jalink|真木保臣|Q6537582|真木和泉守}}記念館
+* 古民家 - 真木神社に隣接。真木保臣によって尊皇・倒幕の策源地となった{{jalink|山梔窩|Q11469588}}（さんしか）を模している<ref name="東林寺天満宮"/>。
+* 真木和泉守の銅像 - 1915年（大正4年）建立<ref name="東林寺天満宮"/>。{{jalink|太平洋戦争|Q184425}}中に供出されたが、1968年（昭和43年）には没後100年を記念して再建された<ref name="東林寺天満宮"/>。
+* {{jalink|高浜虚子|Q743767}}の句碑
+* {{jalink|千歳 (空母)|Q4564982|軍艦千歳}}慰霊碑
+* {{jalink|久留米絣|Q11369541}}碑
+
+<gallery>
+Kurume Suitengu ac (4).jpg|真木和泉守記念館
+Kurume Suitengu ac (5).jpg|山梔窩を模した古民家
+Memorial stele for Japanese Aircraft Carrier "Chitose" in Suiten Shrine.jpg|軍艦千歳慰霊碑
+Monument of Kurume-gasuri weaving.JPG|久留米絣碑
+</gallery>
+
+=== 境内外社 ===
+*真木神社 - 水天宮の第22代宮司でもあった真木和泉守こと{{jalink|真木保臣|Q6537582}}などが祀られている<ref name="東林寺天満宮">[https://www.torinji-tenmangu.com/2017/08/24/%E7%9C%9F%E6%9C%A8%E7%A5%9E%E7%A4%BE/ 水天宮に鎮座する真木神社] 東林寺天満宮</ref>。
+*千代松神社
+*{{jalink|秋葉神社|Q11595841}}
+*{{jalink|水神社|Q55522725}} - {{jalink|肥前狛犬}}が鎮座している。
+
+<gallery>
+Kurume Maki-jinja ac (1).jpg|真木神社
+Kurume Suitengu ac (14).jpg|秋葉神社（左奥）と千代松神社（右）
+Kurume Suitengu ac (10).jpg|水神社
+Kurume Suitengu ac (12).jpg|水神社の肥前狛犬
+</gallery>
+
+== 祭事 ==
+[[File:ColorfulFireworks.png|thumb|筑後川花火大会]]
+
+*5月3日から7日 - {{jalink|水天宮春大祭|Q11548439|春大祭}}
+*7月21日 - 真木神社例祭
+*8月5日 - {{jalink|筑後川花火大会|Q11602813}}
+*8月5日から7日 - 夏大祭
+水天宮の例大祭は5月5日であり、縁日は毎月5日である。これについて当社では例大祭が5月5日であることから毎月の5日が縁日となったとしているが、東京水天宮では逆に毎月の5日が縁日であることから例大祭が5月5日となったとしている。
+
+== 交通アクセス ==
+*{{jalink|九州旅客鉄道|Q498366}}{{jalink|久留米駅|Q1122628}}より徒歩7分または後述の路線バスに乗車。
+*JR久留米駅もしくは{{jalink|西鉄久留米駅|Q7040736}}から{{jalink|西鉄バス|Q11629843}}40番長門石・目達原・神埼・{{jalink|佐賀駅バスセンター|Q11384901|佐賀}}方面行きに乗車、梅林寺下車、4分（380m）。
+*{{jalink|九州自動車道|Q1060803}}{{jalink|久留米インターチェンジ|Q1655312}}から6.8㎞（駐車場有り）
+
+== 周辺情報 ==
+[[File:View of Chikugo River from Suiten-gu.jpg|thumb|水天宮そばを流れる筑後川]]
+
+*{{jalink|梅林寺 (久留米市)|Q17866872|梅林寺}}
+*{{jalink|坂本繁二郎生家}}
+*{{jalink|青木繁旧居}}
+*{{jalink|筑後川|Q954320}}
+*JR{{jalink|久留米駅|Q1122628}} - 西口は「水天宮口」と呼ばれている。
+
+== 関連図書 ==
+* 安津素彦・梅田義彦編集兼監修者『神道辞典』神社新報社、1968年、33頁
+* 白井永二・土岐昌訓編集『神社辞典』{{jalink|東京堂出版|Q11524645}}、1979年、180-181頁
+== 関連項目 ==
+* {{jalink|藤井フミヤ|Q2407643}} - 自身が結婚式を挙げた。
+
+== 脚注 ==
+{{Reflist}}
+
+== 外部リンク ==
+{{Commonscat|Kurume Suiten-gū}}
+* {{official|http://www.suitengu.net/}}
+
+{{神道 横}}
+
+
+
+{{shinto-stub}}
+
+==End Japanese==
+[[Category:福岡県の神社]]
+[[Category:久留米市の歴史]]
+[[Category:水天宮|*]]
+[[Category:福岡県の旧県社]]
+[[Category:別表神社]]
+[[Category:筑後川水系]]
+[[Category:久留米藩]]
+[[Category:久留米市の建築物]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Need translation]]

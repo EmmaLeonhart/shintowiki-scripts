@@ -1,0 +1,150 @@
+<!--interwikis from wikidata-->[[en:Iino Hachimangū]][[ja:飯野八幡宮]]
+
+
+{{Short description|Shrine in Iwaki, Fukushima Prefecture, Japan}}
+{{Multiple issues|
+{{unreferenced|date=December 2021}}
+{{Expand language|topic=|langcode=ja|otherarticle=飯野八幡宮|date=December 2021}}
+}}{{Infobox religious building
+| name                  = Iino Hachimangū
+| native_name           = 飯野八幡宮
+| native_name_lang      = ja
+| religious_affiliation = [[Shinto]]
+| image                 = Iino Hachimangu 1.JPG
+| location              = Japan, 〒970-8026 Fukushima, Iwaki, Taira, Hachimankoji−８４
+| deity                 = {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}<br />{{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}<br />[[Himegami]]
+| festival              = September 14
+| municipality          = {{ill|Iwaki, Fukushima|en|Iwaki, Fukushima|qid=Q274384|lt=Iwaki}}
+| prefecture            = {{ill|Fukushima Prefecture|en|Fukushima Prefecture|qid=Q71707|lt=Fukushima}}
+| country               = {{flag|Japan}}
+| type                  = Former [[Modern_system_of_Ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|prefectural shrine]]
+| architecture_style    = <i>{{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=Iromoya}}</i>
+| established           = 1063 or 1186
+}}
+'''Iino Hachimangū''' (飯野八幡宮, ''Iino Hachimangū'') is a [[Shinto]] shrine located in {{ill|Iwaki, Fukushima|en|Iwaki, Fukushima|qid=Q274384|lt=Iwaki, Fukushima}} Prefecture, Japan. It is a [[Hachiman shrine|Hachiman Shrine]], dedicated to the [[kami]] [[Hachiman]]. The shrine was founded in either 1063 or 1186, and its annual festival is on September 14. The [[kami]] it enshrines include {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}} as Hondawake no mikoto (品陀別命), {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}} as Okinagatarashihime no Mikoto (息長帯姫命), and Himegami (比売神).
+
+==See also==
+* [[List of Shinto shrines in Japan]]
+* [[Hachiman shrine|Hachiman Shrine]]
+
+<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+
+{{Hachiman Faith}}
+
+{{coord|37.06027|140.88215|format=dms|type:landmark_region:JP|display=title}}
+{{Shinto-stub}}
+
+
+
+[[en:Iino Hachimangū]]
+<!--enwiki derived wikidata interwikis-->
+[[ja:飯野八幡宮]]
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q11666702}}
+[[Category:Hachiman shrines]]
+[[Category:Shinto shrines in Fukushima Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|飯野八幡宮|version=103237570|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+{{神社
+|名称   = 飯野八幡宮
+|画像   = [[File:Iino Hachimangu 1.JPG|270px]]<br />鳥居と楼門
+|所在地 = {{jalink|福島県|Q71707}}{{jalink|いわき市|Q274384}}{{jalink|平 (いわき市)|Q128846894|平}}字八幡小路84
+|位置   = {{Coord|37|03|37.3|N|140|52|55.6|E|region:JP-07_scale:25000_type:landmark|display=inline,title|name=飯野八幡宮}}
+|祭神   = {{jalink|品陀別命}}<br/>{{jalink|息長帯姫命}}<br/>{{jalink|比売神|Q22070227}}
+|社格   = 旧{{jalink|県社}}
+|創建   = <sub>伝</sub>{{jalink|康平|Q1193572}}6年（{{jalink|1063年|Q19400}}）もしくは{{jalink|文治|Q1194415}}2年（{{jalink|1186年|Q19730}}）
+|本殿   = 入母屋造杮葺
+|別名   = 
+|札所等 = 
+|例祭   = 9月14日
+|神事   = 古式大祭（9月15日）・流鏑馬（9月15日）
+|地図   = {{Location map|Japan Fukushima|label=飯野八幡宮|float=center|relief=1|width=200|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|37|03|37.3|N|140|52|55.6|E}}}}
+}}
+[[File:Iino Hachimangu 2.JPG|thumb|250px|幣殿拝殿]]
+
+'''飯野八幡宮'''（いいのはちまんぐう）は、{{jalink|福島県|Q71707}}{{jalink|いわき市|Q274384}}{{jalink|平 (いわき市)|Q128846894|平}}に鎮座する{{jalink|八幡宮|Q11390939}}である。{{jalink|近代社格制度|Q712534|旧社格}}は県社。社家は伊賀氏の{{jalink|庶流}}である飯野氏である。
+
+== 祭神 ==
+*{{jalink|応神天皇|Q317997|品陀別命}}（ほんだわけのみこと、応神天皇）
+*{{jalink|神功皇后|Q232803|息長帯姫命}}（おきながたらしひめのみこと、神功皇后）
+*{{jalink|比売神|Q22070227}}（ひめがみ、仲姫命）
+
+== 歴史 ==
+社伝によれば、{{jalink|源頼義|Q3082851}}が{{jalink|前九年の役|Q1187448|前九年合戦}}後の{{jalink|康平|Q1193572}}6年（{{jalink|1063年|Q19400}}）に{{jalink|京都|Q740246}}{{jalink|石清水八幡宮|Q710098}}を勧請したという。{{jalink|文治|Q1194415}}2年（{{jalink|1186年|Q19730}}）に{{jalink|関東御領|Q11655961}}{{jalink|好嶋荘}}の総社として、{{jalink|源頼朝|Q242800}}の命により、本社石清水より御正躰を奉じて、{{jalink|岩城郡}}飯野郷（村）の赤目埼見物岡（現在の{{jalink|JR|Q864495}}{{jalink|常磐線|Q1369263}}{{jalink|いわき駅|Q5353428}}北側の高台）へ奉祀した。
+
+浜通り南部でも最大級の神社であり、{{jalink|岩城氏|Q11474314}}や{{jalink|磐城平藩|Q843782}}主など当地を本拠地にした権力者たちから崇敬を受けてきた。
+
+しかし、{{jalink|関ヶ原の戦い|Q234188|関ヶ原合戦}}後に岩城氏は追放され、代わって{{jalink|徳川将軍家||徳川}}譜代の{{jalink|鳥居忠政|Q846206}}が入ると、{{jalink|慶長|Q1328185}}7年（{{jalink|1602年|Q6727}}）に現在地である八幡小路（{{jalink|福島地方裁判所|Q11593056|福島地裁}}いわき支部の近く）に飯野八幡宮は移設され、移設後の飯野八幡宮跡地に{{jalink|磐城平城|Q11587869}}が建設された。なお、{{jalink|安藤氏|Q11451352}}が磐城平藩主だった時期（{{jalink|1756年|Q7632}} - {{jalink|1868年|Q7717}}）には、八幡小路に藩校{{jalink|施政堂}}が立地していた。
+
+== 摂末社 ==
+=== 摂社 ===
+* 若宮八幡神社（わかみや はちまんぐう）
+** 祭神：{{jalink| 大鷦鷯尊}}（おおささぎのみこと、{{jalink|仁徳天皇|Q313119}}）
+
+=== 末社 ===
+* 五社
+** 武内社 - 祭神：{{jalink|武内宿禰|Q1073668}}（たけうちのすくね）公
+** 白旗社 - 祭神：{{jalink|源頼朝|Q242800}}（みなもと の よりとも）公
+** 春日社 - 祭神：{{jalink|天児屋命|Q2564508}}（あめのこやねのみこと）
+** 愛宕社 - 祭神：{{jalink|軻遇突智命}}（かぐつちのみこと）
+** 事代主社 - 祭神：{{jalink|事代主命}}（ことしろぬしのみこと）
+
+== 文化財 ==
+'''重要文化財（国指定）'''
+*本殿 - {{jalink|元和 (日本)|Q635245|元和}}2年（{{jalink|1616年|Q6788}}）{{jalink|上棟}}。桁行梁間共3間の{{jalink|入母屋造|Q855025}}平入{{jalink|杮葺|Q199388}}。屋根は当初{{jalink|流造|Q210684}}であったが、{{jalink|延宝|Q1145735}}2年（{{jalink|1674年|Q7620}}）と{{jalink|元禄|Q1325001}}16年（{{jalink|1703年|Q6822}}）の修理で入母屋造となる。
+*楼門 - {{jalink|万治|Q1145295}}元年（{{jalink|1658年|Q6991}}）建立。入母屋造、{{jalink|銅板葺}}（もと板葺）。
+*唐門 - 元禄16年頃建立。銅板葺の{{jalink|唐門||平唐門}}。
+*神楽殿 - 元和9年建立。入母屋造、鉄板葺（もと杮葺）。
+*仮殿 - {{jalink|寛文|Q1146228}}13年（{{jalink|1673年|Q7617}}）建立。一間社流造、鉄板葺（もと板葺）。
+*若宮八幡社本殿 - 元和5年建立。一間社流造、板葺。
+*宝蔵 - {{jalink|江戸時代|Q184963}}初期建立。{{jalink|寄棟造|Q162034}}、{{jalink|本瓦葺}}の土蔵。
+*大薙刀 銘「備州長船住盛景 貞治六年十一月日」 - {{jalink|盛景}}は{{jalink|長船派|Q11653605}}の刀工、{{jalink|貞治|Q1146153}}6年は{{jalink|1367年|Q6202}}。
+*飯野家文書 1,683通
+
+'''いわき市指定有形文化財'''
+*飯野八幡宮幣拝殿　など
+
+== 参考文献 ==
+*「新指定の文化財」（『月刊文化財』第471号、2002年）建造物の解説あり
+
+== 脚注 ==
+{{Reflist}}
+
+== 関連項目 ==
+*{{jalink|平 (いわき市)|Q128846894}}
+*{{jalink|岩城氏|Q11474314}}
+*{{jalink|磐城平藩|Q843782}}
+*{{jalink|磐城平城|Q11587869}}
+*{{jalink|伊賀光宗|Q11380640}}（飯野八幡宮別当）
+
+== 外部リンク ==
+*[http://www.noteplan.net/8man/b.htm 飯野八幡宮]（神社公式）
+*[http://www.city.iwaki.fukushima.jp/dbps_data/_material_/localhost/17_kyoiku/6040/bunkazai_ichiran_H22_05_21.pdf いわき市の文化財一覧｛2010年（平成22年）5月21日現在｝（PDF形式） ]（いわき市）
+
+
+{{神道 横}}
+{{Normdaten}}
+{{shinto-stub}}
+
+
+==End Japanese==
+[[Category:八幡宮]]
+[[Category:福島県の旧県社]]
+[[Category:福島県の重要文化財]]
+[[Category:重要文化財 (建造物)]]
+[[Category:江戸時代の建築]]
+[[Category:磐城平藩]]
+[[Category:福島県の神社]]
+[[Category:いわき市の建築物]]
+[[Category:いわき市の歴史]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Need translation]]
