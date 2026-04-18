@@ -20,8 +20,5 @@ See [[User:EmmaBot]] for current tasks being done cleaning up this wiki
 
 === Future tasks ===
 * Normalization of template categories
-* fix [[:Category:Erroneous qid category links]][[Category:Need translation]]
-[[Category:Need translation]]
-[[Category:Need translation]]
-[[Category:Need translation]]
+* fix [[:Category:Erroneous qid category links]]
 [[Category:Pages without wikidata]]
