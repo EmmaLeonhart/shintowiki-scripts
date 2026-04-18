@@ -1,85 +1,84 @@
 {{基礎情報 日本の神
-| 名 = 伊佐我命
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->
-| 全名 = 伊佐我命（イサガノミコト）
-| 別名 = 神伊佐我神、櫛瓊命、五十坂三磯命、[[クシヤタマ|櫛八玉命]]
-| 別称 = 
-| 神格 = <!-- 太陽、月、山、海など司るもの -->
-| 父 = [[建比良鳥命|武雛命]]
-| 母 = 
-| 親 = <!-- まぐあいによって生まれない場合 -->
-| 兄弟姉妹 =[[出雲建子命]] 
-| 配偶者 = 
-| 子 = [[津狭命]]
-| 神社 = 阿須伎神社（神伊佐我神社）
-| 記紀等 = 
-| 関連氏族 = [[出雲国造]]
+| 名 = Isaga-no-Mikoto
+| 神祇 =
+| 全名 = Isaga-no-Mikoto
+| 別名 = Kamu-Isaga-no-Kami, Kushitama-no-Mikoto, Isaka-Miiso-no-Mikoto, {{ill|Kushiyatama-no-Mikoto|ja|クシヤタマ|lt=Kushiyatama-no-Mikoto|lt_ja=櫛八玉命}}
+| 別称 =
+| 神格 =
+| 父 = {{ill|Takehina-no-Mikoto|ja|建比良鳥命|lt=Takehina-no-Mikoto|lt_ja=武雛命}}
+| 母 =
+| 親 =
+| 兄弟姉妹 = {{ill|Izumo-Takeko-no-Mikoto|ja|出雲建子命}}
+| 配偶者 =
+| 子 = {{ill|Tsusa-no-Mikoto|ja|津狭命}}
+| 神社 = Asuki Shrine (Kamu-Isaga Shrine)
+| 記紀等 =
+| 関連氏族 = {{ill|Izumo no Kuni no Miyatsuko|ja|出雲国造}}
 }}
-'''伊佐我命'''（イサガ）は、[[出雲国造#系譜|出雲国造系図]]に登場する[[神 (神道)|神]]。
-== 概要 ==
-[[江戸時代]]初期に成立した『国造[[出雲国造#北島家|北島氏]]系譜』等の出雲国造系図において、[[国造]]の祖神である[[天穂日命]]の孫かつ武雛命（武夷鳥命）の子として記述されており、伝本によっては第3代を'''櫛瓊命'''とする{{Sfn|高嶋|1995|pp=175-178}}{{Sfn|千家|1882}}。伊佐我命を出雲建子命（伊勢津彦）の別名とする[[系図]]{{Sfn|千家|1882}}のほか、伊佐我命と出雲建子命を[[兄弟]]とし、さらに櫛八玉命を伊佐我命の別名と伝える系図も存在する{{Sfn|柴田|稲村|1929|p=442}}。[[菅原氏]]の系譜では'''五十坂三磯命'''という別名が伝わるとされる{{Sfn|三谷|1970|p=20}}。『[[古事記]]』『[[日本書紀]]』等に同名の神は見られない。
-== 記述 ==
-=== 国造北島氏系譜 ===
+'''Isaga-no-Mikoto''' (''isaga'') is a {{ill|kami|ja|神 (神道)|lt=kami|lt_ja=神}} who appears in the {{ill|Izumo no Kuni no Miyatsuko|ja|出雲国造#系譜|lt=Izumo no Kuni no Miyatsuko genealogy|lt_ja=出雲国造系図}}.
+== Overview ==
+In the Izumo no Kuni no Miyatsuko genealogy, such as the ''Kokuzō {{ill|Kitajima family|ja|出雲国造#北島家|lt=Kitajima family|lt_ja=北島家}} Keifu'' compiled in the early {{ill|Edo period|ja|江戸時代}}, he is recorded as the grandson of {{ill|Ame-no-Hohi-no-Mikoto|ja|天穂日命}}, the ancestor deity of the {{ill|kuni no miyatsuko|ja|国造}}, and the son of Takehina-no-Mikoto (Takehinadori-no-Mikoto); in some transmissions, the 3rd generation is '''Kushitama-no-Mikoto'''{{Sfn|Takashima|1995|pp=175-178}}{{Sfn|Senge|1882}}. There are {{ill|genealogies|ja|系図}} that make Isaga-no-Mikoto an alternate name of Izumo-Takeko-no-Mikoto (Izumotsuhiko){{Sfn|Senge|1882}}, as well as genealogies that make Isaga-no-Mikoto and Izumo-Takeko-no-Mikoto {{ill|brothers|ja|兄弟}} and further transmit Kushiyatama-no-Mikoto as an alternate name of Isaga-no-Mikoto{{Sfn|Shibata|Inamura|1929|p=442}}. In the genealogy of the {{ill|Sugawara clan|ja|菅原氏}}, an alternate name of '''Isaka-Miiso-no-Mikoto''' is transmitted{{Sfn|Mitani|1970|p=20}}. No deity by the same name is found in the ''{{ill|Kojiki|ja|古事記}}'' or ''{{ill|Nihon Shoki|ja|日本書紀}}''.
+== Description ==
+=== Kokuzō Kitajima family genealogy ===
 <div style = "overflow: auto;white-space:nowrap">
 {{familytree/start|style = font-size:85%}}
-{{familytree | border = 0|||||||01||||| 01 = 天穂日命}}
+{{familytree | border = 0|||||||01||||| 01 = Ame-no-Hohi-no-Mikoto}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = 武雛命}}
+{{familytree | border = 0|||||||01||||| 01 = Takehina-no-Mikoto}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = '''伊佐我命'''}}
+{{familytree | border = 0|||||||01||||| 01 = '''Isaga-no-Mikoto'''}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = 津狭命}}
+{{familytree | border = 0|||||||01||||| 01 = Tsusa-no-Mikoto}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[櫛𤭖前命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Kushitamasaki-no-Mikoto|ja|櫛𤭖前命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border= 0|||||||01||||| 01 = [[櫛月命]]}}
+{{familytree | border= 0|||||||01||||| 01 = {{ill|Kushitsuki-no-Mikoto|ja|櫛月命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[櫛𤭖嶋海命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Kushitamashima-Umi-no-Mikoto|ja|櫛𤭖嶋海命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[櫛田命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Kushita-no-Mikoto|ja|櫛田命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[知理命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Chiri-no-Mikoto|ja|知理命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[世毛呂須命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Yomorosu-no-Mikoto|ja|世毛呂須命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[出雲振根|阿多命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Izumo-Furune|ja|出雲振根|lt=Ata-no-Mikoto|lt_ja=阿多命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = [[飯入根|伊幣根命]]}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Iineri|ja|飯入根|lt=Ihene-no-Mikoto|lt_ja=伊幣根命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = 以下省略}}
+{{familytree | border = 0|||||||01||||| 01 = (following omitted)}}
 {{familytree/end}}
 </div>
 </div>
-== 考証 ==
-神名にあるイサガは小川を意味するイササカハ・イサカハから変じた語ではないかと見る説が唱えられている{{Sfn|志賀|1981|pp=427-433, 443, 456-457}}。出雲国造系図に見える天穂日命から伊幣根命までの系譜（『国造北島氏系譜』では初代から第12代に相当）は、[[出雲国]]で天穂日命を祀る[[神社]]が『[[出雲国風土記]]』編纂当時では[[式外社]]に留まっており、[[官社]]になる時期が後世に下ることから、新しく出雲国造の[[祖神]]として参入されたものであると論じられている{{Sfn|高嶋|1995|pp=175-178}}。
-== 祀る神社 ==
-粟田寛の『神祇志料』では神伊佐我神社（阿須伎神社に合祀、後述）の他に伊佐波神社（都我利神社に合祀、[[島根県]][[出雲市]]東林木町）と伊佐賀神社（出雲市[[斐川町]][[出西村|出西]]）の祭神も伊佐我命とする{{Sfn|粟田|1971|pp=457-458, 460-461, 463}}が、伊佐波神社は社説で[[祭神]]を[[伊邪那美尊]]としており{{Sfn|志賀|1981|pp=427-433, 443, 456-457}}、伊佐賀神社は現在、『[[播磨国風土記]]』に登場する神である[[阿菩大神]]を祀っている{{Sfn|吉岡|1983|p=543}}。
-* 阿須伎神社（島根県出雲市[[大社町]][[遙堪村|遙堪]]） - 合祀{{Unbulleted list|[[式内社]]の阿須伎神社に比定され、同じく式内社の同社神伊佐我神社を合祀する{{Sfn|志賀|1981|pp=427-433, 443, 456-457}}{{Sfn|粟田|1971|pp=457-458, 460-461, 463}}。神伊佐我神社は「[[延喜式神名帳]]」に阿須伎神社の同社として記述される神社の中で、唯一『[[特選神名牒]]』に[[祭日]]（11月14日）が記されており、元来は独立社であったと考えられる{{Sfn|志賀|1981|pp=427-433, 443, 456-457}}。}}
-== 脚注 ==
+== Examination ==
+It has been argued that the Isaga in the deity name may be a word changed from Isasakaha / Isakaha, meaning "small river"{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}. Regarding the genealogy from Ame-no-Hohi-no-Mikoto to Ihene-no-Mikoto (corresponding to the 1st through 12th generations in the ''Kokuzō Kitajima Keifu'') visible in the Izumo no Kuni no Miyatsuko genealogy, it has been argued that, since shrines enshrining Ame-no-Hohi-no-Mikoto in {{ill|Izumo Province|ja|出雲国}} were still listed as {{ill|Shikige-sha|ja|式外社}} at the time of compilation of the ''{{ill|Izumo-no-Kuni Fudoki|ja|出雲国風土記}}'' and only became {{ill|official shrines|ja|官社}} in a later era, these were newly incorporated as the {{ill|ancestral deity|ja|祖神}} of the Izumo no Kuni no Miyatsuko{{Sfn|Takashima|1995|pp=175-178}}.
+== Shrines Enshrining Him ==
+In Awata Hiroshi's ''Jingi Shiryō'', in addition to Kamu-Isaga Shrine (enshrined at Asuki Shrine, described below), the enshrined deities of Isaba Shrine (enshrined at Tsugari Shrine, Tōhayashimachi, {{ill|Izumo, Shimane|ja|出雲市|lt=Izumo City|lt_ja=出雲市}}, {{ill|Shimane Prefecture|ja|島根県}}) and Isaga Shrine (Shussai, {{ill|Hikawa-chō|ja|斐川町}}, Izumo City) are also considered to be Isaga-no-Mikoto{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}; however, Isaba Shrine states in its shrine tradition that the enshrined deity is {{ill|Izanami|ja|伊邪那美尊}}{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}, and Isaga Shrine currently enshrines {{ill|Abo-no-Ōkami|ja|阿菩大神}}, a deity that appears in the ''{{ill|Harima-no-Kuni Fudoki|ja|播磨国風土記}}''{{Sfn|Yoshioka|1983|p=543}}.
+* Asuki Shrine ({{ill|Taisha-chō|ja|大社町}} {{ill|Yōkan-mura|ja|遙堪村|lt=Yōkan|lt_ja=遙堪}}, Izumo City, Shimane Prefecture) - merged {{Unbulleted list|Identified as the {{ill|Shikinai-sha|ja|式内社}} Asuki Shrine, and the same shrine, the Shikinai-sha Kamu-Isaga Shrine, is enshrined there as well{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}. Among the shrines described as within the same shrine as Asuki Shrine in the "{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}," Kamu-Isaga Shrine is the only one whose {{ill|festival date|ja|祭日}} (November 14) is recorded in the ''{{ill|Tokusen Shinmyōchō|ja|特選神名牒}}'', and originally it is considered to have been an independent shrine{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}.}}
+== Footnotes ==
 {{脚注ヘルプ}}
-=== 出典 ===
+=== Citations ===
 <references />
-== 参考文献 ==
-* <!-- あわた -->{{Cite book|和書 |title=神祇志料 |date=1971年8月31日 |publisher=思文閣 |ref={{SfnRef|粟田|1971}} |author=栗田寛 著・栗田勤 校訂 |edition=復刻版 |ncid=BN06693594 |volume=下巻}}
-*<!-- しが -->{{Cite book|和書 |title=式内社の研究 |date=1981年7月20日 |publisher=[[雄山閣]] |author=志賀剛 |ref={{SfnRef|志賀|1981}} |isbn=4-639-00083-9 |volume=第4巻 山陰道編}}
-* <!-- しばた -->{{Cite book|和書 |title=埼玉叢書 |date=1929年6月21日 |publisher=三明社 |ref={{SfnRef|柴田|稲村|1929}} |editor=[[柴田常恵]]、[[稲村坦元]] |ncid=BN09959880 |volume=第三}}
-* <!-- せんげ -->{{Cite book|和書 |title=出雲國造傳統略 |date=1882年4月 |publisher=千家武主 |ref={{SfnRef|千家|1882}} |author=千家武主 謹編 |ncid=BA55648765}}
-* <!-- たかしま -->{{Cite book|和書 |title=出雲世界と古代の山陰 |date=1995年2月 |publisher=名著出版 |ref={{SfnRef|高嶋|1995}} |author=高嶋弘志 |editor=[[瀧音能之]] |series=古代王権と交流7 |chapter=出雲国造の成立と展開 |isbn=4-626-01505-0}}
-* <!-- みたに -->{{Cite journal|和書|author=[[三谷栄一]]|date=1970-02-15|title=古代出雲の氏族的背景─大穴持神信仰の変貌と出雲の内乱─|journal=國學院雜誌|volume=71|issue=2|publisher=[[國學院大學]]|ref={{SfnRef|三谷|1970}}|crid=1520572357792178176|issn=0288-2051}}
-* <!-- よしおか -->{{Cite book|和書 |title=式内社調査報告 |date=1983年2月 |publisher=[[皇學館大学]]出版部 |ref={{SfnRef|吉岡|1983}} |author=吉岡茂 |editor=式内社研究会 |chapter=132 伊佐賀神社 |volume=第二十巻 山陰道3 |ncid=BN00231541}}
-== 関連項目 ==
-* [[襲髄命]] - 出雲国造系図で第14（15）代とされる。
-* [[キヒサツミ]] - 同上第15（14）代とされる。
-== 外部リンク ==
-* [https://www.shimane-jinjacho.or.jp/izumo/3e51691075516c87ae4ccc6d888be94b23d83bc4.html 阿須伎神社 - 神社詳細 | 島根県神社庁]
-* [https://www.shimane-jinjacho.or.jp/izumo/a5c84826230f62d8945debca61bf1d8f60f91244.html 都我利神社 - 神社詳細 | 島根県神社庁]
-* [https://www.city.izumo.shimane.jp/www/contents/1610698250948/index.html 都我利神社 | 出雲市]
-* [https://www.shimane-jinjacho.or.jp/izumo/02d8ec5b3f3040a08926279b988b5812d38c860a.html 伊佐賀神社 - 神社詳細 | 島根県神社庁]
-* [https://kotobank.jp/word/%E4%BC%8A%E4%BD%90%E8%B3%80%E7%A5%9E%E7%A4%BE-3086496 伊佐賀神社(いさがじんじや)とは？ 意味や使い方 - コトバンク]
+== References ==
+* {{Cite book|和書 |title=Jingi Shiryō |date=August 31, 1971 |publisher=Shibunkaku |ref={{SfnRef|Awata|1971}} |author=Awata Hiroshi (author), Awata Tsutomu (ed.) |edition=Reprint edition |ncid=BN06693594 |volume=Part 2}}
+*{{Cite book|和書 |title=Shikinai-sha no Kenkyū |date=July 20, 1981 |publisher={{ill|Yūzankaku|ja|雄山閣}} |author=Shiga Takeshi |ref={{SfnRef|Shiga|1981}} |isbn=4-639-00083-9 |volume=Vol. 4, San'indō edition}}
+* {{Cite book|和書 |title=Saitama Sōsho |date=June 21, 1929 |publisher=Sanmeisha |ref={{SfnRef|Shibata|Inamura|1929}} |editor={{ill|Shibata Tsunee|ja|柴田常恵}}, {{ill|Inamura Tangen|ja|稲村坦元}} |ncid=BN09959880 |volume=Vol. 3}}
+* {{Cite book|和書 |title=Izumo Kokuzō Dentō Ryaku |date=April 1882 |publisher=Senge Taketoshi |ref={{SfnRef|Senge|1882}} |author=Senge Taketoshi (compiler) |ncid=BA55648765}}
+* {{Cite book|和書 |title=Izumo Sekai to Kodai no San'in |date=February 1995 |publisher=Meicho Shuppan |ref={{SfnRef|Takashima|1995}} |author=Takashima Hiroshi |editor={{ill|Takioto Yoshiyuki|ja|瀧音能之}} |series=Kodai Ōken to Kōryū 7 |chapter=The Establishment and Development of the Izumo no Kuni no Miyatsuko |isbn=4-626-01505-0}}
+* {{Cite journal|和書|author={{ill|Mitani Eiichi|ja|三谷栄一}}|date=1970-02-15|title=The Clan Background of Ancient Izumo — Transformation of Ōnamuchi Faith and the Izumo Civil War|journal=Kokugakuin Zasshi|volume=71|issue=2|publisher={{ill|Kokugakuin University|ja|國學院大學}}|ref={{SfnRef|Mitani|1970}}|crid=1520572357792178176|issn=0288-2051}}
+* {{Cite book|和書 |title=Shikinai-sha Chōsa Hōkoku |date=February 1983 |publisher={{ill|Kōgakkan University|ja|皇學館大学}} Publishing Dept. |ref={{SfnRef|Yoshioka|1983}} |author=Yoshioka Shigeru |editor=Shikinai-sha Kenkyūkai |chapter=132 Isaga Shrine |volume=Vol. 20, San'indō 3 |ncid=BN00231541}}
+== See also ==
+* {{ill|Soshitsu-no-Mikoto|ja|襲髄命}} - considered the 14th (15th) generation in the Izumo no Kuni no Miyatsuko genealogy.
+* {{ill|Kihisatsumi|ja|キヒサツミ}} - considered the same 15th (14th) generation as above.
+== External links ==
+* [https://www.shimane-jinjacho.or.jp/izumo/3e51691075516c87ae4ccc6d888be94b23d83bc4.html Asuki Shrine - Shrine Details | Shimane Prefecture Shrine Office]
+* [https://www.shimane-jinjacho.or.jp/izumo/a5c84826230f62d8945debca61bf1d8f60f91244.html Tsugari Shrine - Shrine Details | Shimane Prefecture Shrine Office]
+* [https://www.city.izumo.shimane.jp/www/contents/1610698250948/index.html Tsugari Shrine | Izumo City]
+* [https://www.shimane-jinjacho.or.jp/izumo/02d8ec5b3f3040a08926279b988b5812d38c860a.html Isaga Shrine - Shrine Details | Shimane Prefecture Shrine Office]
+* [https://kotobank.jp/word/%E4%BC%8A%E4%BD%90%E8%B3%80%E7%A5%9E%E7%A4%BE-3086496 Isaga Shrine: meaning and usage | Kotobank]
 {{日本神話}}
 {{神道 横}}
 {{デフォルトソート:いさかのみこと}}
 [[Category:日本の神]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:伊佐我命]]
