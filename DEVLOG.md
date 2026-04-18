@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-04-18
+
+### Server-load reduction effort
+**Status:** Ongoing policy note
+
+Miraheze has raised server-load concerns. As a response, all scripts going forward are held to the minimum traffic needed against `shinto.miraheze.org`. Existing `--max-edits` caps stay where they are; new automated steps in `wiki-cleanup.yml` require justification against this constraint. The bail-on-429 policy (2026-03-28) and targeted exponential backoff (2026-03-29) stand. `todo.md` now carries a "Server load" section documenting this. No new full-namespace walks will be added without a state file to bound per-run work.
+
+### Queue-style `status.md` adopted (Sutra-pattern)
+**Status:** Complete
+
+Replaced the ad-hoc `status.md` with a queue-style file modeled on `EmmaLeonhart/Sutra`'s `STATUS.md`: items have concrete context, and when finished they are deleted rather than checkmarked. Purpose is to bound session scope and curb scope creep. The long-horizon backlog stays in `todo.md`; `status.md` is strictly the active queue.
+
+### `need_translation/` repair after a bad category strip
+**Status:** Complete
+
+An earlier batch edit in this session stripped `[[Category:Need translation]]` from ~140 files by ASCII-filename heuristic. That heuristic was wrong — most of those files had an auto-generated English top section but a full Japanese body under `== Japanese Wikipedia content ==`, and removing the category is destructive because `sync_need_translation.py` deletes the local file on the next CI sync when the wiki page loses the category. Recovery:
+- Reverted the 83 files that still had the `== Japanese Wikipedia content ==` heading; prepended `[[Category:Pages with duplicated content]]` + `[[Category:Need translation]]` before the heading (commit `e02003d`).
+- Re-added `[[Category:Need translation]]` to 15 files with 200–18k CJK characters inline but no heading (commit `bc39c53`).
+- Appended `[[Category:Need translation]]` unconditionally across all 304 files in the directory to guarantee the repo version is newer than the wiki version on next sync — duplicate category tags are harmless on MediaWiki render (commit `41b3e90`).
+- Tagged 13 fully-English pages with `[[Category:Translated pages]]` (commit `1a58022`).
+- Added minimal stub content to 6 essentially-empty pages (Ancestor worship, Anrakugawa River (Mie), Engishiki funding categories, three Jawiki resolution tracking pages).
+
+No files were lost — `git log --diff-filter=D -- need_translation/` confirms CI had not run between the bad commit and the reverts.
+
+Lessons captured in `.claude/.../memory/feedback_judgment_shortcuts.md` and `project_need_translation_ci_sync.md`.
+
+---
+
 ## 2026-04-04
 
 ### Fix GitHub Pages reverting to weeks-old content on pipeline failures
