@@ -13,9 +13,16 @@ references to the old QID (``{{wikidata link|Qold}}``, ``WD=Qold``,
 Runs in CI on the EmmaBot schedule — uses the standard
 ``WIKI_USERNAME`` / ``WIKI_PASSWORD`` environment variables. Standard
 ``--apply``, ``--max-edits``, ``--run-tag`` flags. Default is dry-run.
+
+To run locally under your own account, pass ``--local``. That ignores the
+env vars and prompts for username + password on the console. Example:
+
+    python shinto_miraheze/fix_merged_qids.py --local --apply \
+        --max-edits 20 --run-tag "[local]"
 """
 
 import argparse
+import getpass
 import io
 import os
 import re
@@ -131,12 +138,32 @@ def main():
                         help="Cap on pages edited per run (default 50).")
     parser.add_argument("--run-tag", required=True,
                         help="Run tag appended to the edit summary for auditing.")
+    parser.add_argument("--local", action="store_true",
+                        help="Ignore WIKI_USERNAME/WIKI_PASSWORD env vars and "
+                             "prompt for credentials interactively (for local runs).")
     args = parser.parse_args()
+
+    if args.local:
+        username = input("shintowiki username: ").strip()
+        if not username:
+            print("No username entered; aborting.")
+            sys.exit(1)
+        password = getpass.getpass(f"Password for {username}: ")
+        if not password:
+            print("No password entered; aborting.")
+            sys.exit(1)
+    else:
+        username = USERNAME
+        password = PASSWORD
+        if not password:
+            print("WIKI_PASSWORD env var is empty. Either set it, or pass --local "
+                  "to enter credentials interactively.")
+            sys.exit(1)
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
-    print(f"Logged in as {USERNAME}")
+    site.login(username, password)
+    print(f"Logged in as {username}")
 
     # Pull the live QS page
     qs_page = site.pages[QS_PAGE_TITLE]
