@@ -7,9 +7,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 ## 2026-04-18
 
 ### Server-load reduction effort
-**Status:** Ongoing policy note
+**Status:** Policy in force
 
-Miraheze has raised server-load concerns. As a response, all scripts going forward are held to the minimum traffic needed against `shinto.miraheze.org`. Existing `--max-edits` caps stay where they are; new automated steps in `wiki-cleanup.yml` require justification against this constraint. The bail-on-429 policy (2026-03-28) and targeted exponential backoff (2026-03-29) stand. `todo.md` now carries a "Server load" section documenting this. No new full-namespace walks will be added without a state file to bound per-run work.
+Miraheze has raised server-load concerns. Actions taken:
+
+* **Inter-edit throttle bumped from 1.5s to 2.5s** across all 43 scripts in `shinto_miraheze/` that write to `shinto.miraheze.org`. Sustained edit rate drops from ~40/min to ~24/min. Single constant `THROTTLE = 2.5`; reference enshrined in `status.md` pinned notes and the `EmmaBot` user page.
+* **`--max-edits` caps stay where they are** — all long-walking scripts are already stateful and resume from state, so Miraheze is not paying for repeat namespace scans.
+* **No new full-namespace walks** without a state file and a justification. Anything new added to `wiki-cleanup.yml` has to answer to this constraint.
+* **Bail-on-429** for Wikidata/SPARQL (policy 2026-03-28) remains in force; the narrow exponential-backoff exception for QS generators (2026-03-29) also remains.
+
+`todo.md` carries a "Server load" section; `EmmaBot.wiki` now documents the rate-limiting stance publicly so editors see the intent.
 
 ### Queue-style `status.md` adopted (Sutra-pattern)
 **Status:** Complete

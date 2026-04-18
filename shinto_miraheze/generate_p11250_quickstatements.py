@@ -38,7 +38,7 @@ WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 CATEGORY_NAME = "Pages linked to Wikidata"
 QS_PAGE_TITLE = "QuickStatements/P11250"

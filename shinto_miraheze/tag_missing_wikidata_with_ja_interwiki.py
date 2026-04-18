@@ -28,7 +28,7 @@ WIKI_URL   = "shinto.miraheze.org"
 WIKI_PATH  = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
-THROTTLE   = 1.5
+THROTTLE   = 2.5
 
 SOURCE_CAT = "Categories_missing_wikidata"
 TARGET_CAT = "Categories missing Wikidata with Japanese interwikis"

@@ -25,7 +25,7 @@ WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 WD_API = "https://www.wikidata.org/w/api.php"
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                      clients_useragent='IllFixerBot/1.0 (User:EmmaBot; shinto.miraheze.org)')

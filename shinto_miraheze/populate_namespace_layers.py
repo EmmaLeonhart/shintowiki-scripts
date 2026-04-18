@@ -37,7 +37,7 @@ WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
-THROTTLE = 1.5
+THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "populate_namespace_layers.state")
 

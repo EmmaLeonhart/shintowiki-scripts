@@ -36,7 +36,7 @@ WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
-THROTTLE  = 1.5
+THROTTLE  = 2.5
 
 SOURCE_CAT    = "Japanese_language_category_names"
 WIKIDATA_RE   = re.compile(r'\{\{wikidata[_ ]link\|?\s*(Q\d+)', re.IGNORECASE)
