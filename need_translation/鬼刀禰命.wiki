@@ -1,36 +1,36 @@
 {{基礎情報 公家
-| 氏名 = 鬼刀禰命
-| 画像 = 
+| 氏名 = Kitone-no-Mikoto
+| 画像 =
 | 画像サイズ =
-| 画像説明 = 
-| 時代 = [[上古]]
-| 生誕 = 不明
-| 死没 = 不明
-| 改名 = 
-| 別名 = 
-| 諡号 = 
-| 神号 = 
-| 戒名 = 
-| 墓所 = 
-| 官位 = 
-| 主君 = 
-| 氏族 = 紀氏（[[紀国造]]）
-| 父母 = 父：[[比古麻命]]<ref name="名前なし-20230316135012"> 鈴木正信「紀伊国造次第の成立とその背景」[https://123deta.com/document/ydvxje1y-紀伊国造次第の成立とその背景.html ]</ref>
-| 兄弟 = 
-| 子   = [[久志多麻命]]<ref name="名前なし-20230316135012"/>
-| 特記事項 = 
+| 画像説明 =
+| 時代 = {{ill|Ancient times|ja|上古}}
+| 生誕 = Unknown
+| 死没 = Unknown
+| 改名 =
+| 別名 =
+| 諡号 =
+| 神号 =
+| 戒名 =
+| 墓所 =
+| 官位 =
+| 主君 =
+| 氏族 = Ki clan ({{ill|Ki no Kuni no Miyatsuko|ja|紀国造}})
+| 父母 = Father: {{ill|Hikoma-no-Mikoto|ja|比古麻命}}<ref name="名前なし-20230316135012">Suzuki Masanobu, "The Establishment of the Kii no Kuni no Miyatsuko Shidai and Its Background" [https://123deta.com/document/ydvxje1y-紀伊国造次第の成立とその背景.html ]</ref>
+| 兄弟 =
+| 子   = {{ill|Kushitama-no-Mikoto|ja|久志多麻命}}<ref name="名前なし-20230316135012"/>
+| 特記事項 =
 }}
-'''鬼刀禰命'''（きとねのみこと、生没年不明）は、古代[[日本]]の[[豪族]]で'''[[紀国造]]'''の一人。
+'''Kitone-no-Mikoto''' (''kitone-no-mikoto''; dates of birth and death unknown) was a {{ill|gōzoku|ja|豪族}} of ancient {{ill|Japan|ja|日本}} and one of the '''{{ill|Ki no Kuni no Miyatsuko|ja|紀国造}}'''.
 
-== 系譜 ==
-[[天道根命]]の孫で、父親については、[[紀国造]]の末裔である紀俊行氏が所有している「紀伊国造次第」では[[比古麻命]]となっている<ref name="名前なし-20230316135012"/>。
+== Genealogy ==
+A grandson of {{ill|Amenomichine-no-Mikoto|ja|天道根命}}, his father is given as {{ill|Hikoma-no-Mikoto|ja|比古麻命}} according to the "Kii no Kuni no Miyatsuko Shidai" owned by Ki Toshiyuki, a descendant of the {{ill|Ki no Kuni no Miyatsuko|ja|紀国造}}.<ref name="名前なし-20230316135012"/>
 
-== 脚注 ==
+== Footnotes ==
 {{Reflist}}
 
-== 関連項目 ==
-*[[国造]]
-*[[飛鳥時代以前の人物一覧]]
+== See also ==
+*{{ill|Kuni no miyatsuko|ja|国造}}
+*{{ill|List of Figures from before the Asuka Period|ja|飛鳥時代以前の人物一覧}}
 
 {{デフォルトソート:きとねのみこと}}
 [[Category:Kii no Kuni no Miyatsuko]]
@@ -39,5 +39,4 @@
 [[Category:和歌山県の歴史]]
 [[Category:生没年不詳]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:鬼刀禰命]]
