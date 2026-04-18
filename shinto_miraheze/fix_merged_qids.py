@@ -141,6 +141,10 @@ def main():
     parser.add_argument("--local", action="store_true",
                         help="Ignore WIKI_USERNAME/WIKI_PASSWORD env vars and "
                              "prompt for credentials interactively (for local runs).")
+    parser.add_argument("--input", "-i",
+                        help="Read QS lines from this file instead of from the "
+                             "live [[QuickStatements/P11250]] page. Useful for "
+                             "local runs against a specific list.")
     args = parser.parse_args()
 
     if args.local:
@@ -165,11 +169,17 @@ def main():
     site.login(username, password)
     print(f"Logged in as {username}")
 
-    # Pull the live QS page
-    qs_page = site.pages[QS_PAGE_TITLE]
-    qs_text = qs_page.text()
+    # Get QS lines from either --input file or live wiki page
+    if args.input:
+        with open(args.input, "r", encoding="utf-8") as f:
+            qs_text = f.read()
+        source_label = args.input
+    else:
+        qs_page = site.pages[QS_PAGE_TITLE]
+        qs_text = qs_page.text()
+        source_label = f"[[{QS_PAGE_TITLE}]]"
     if not qs_text:
-        print(f"[[{QS_PAGE_TITLE}]] is empty; nothing to check.")
+        print(f"{source_label} is empty; nothing to check.")
         return
 
     entries = list(parse_qs_text(qs_text))
@@ -182,7 +192,7 @@ def main():
             continue
         seen.add(key)
         unique.append(key)
-    print(f"Parsed {len(unique)} unique (QID, page) pairs from [[{QS_PAGE_TITLE}]].")
+    print(f"Parsed {len(unique)} unique (QID, page) pairs from {source_label}.")
 
     qids = sorted({q for q, _ in unique})
     print(f"Checking {len(qids)} QIDs against Wikidata for merges…")
