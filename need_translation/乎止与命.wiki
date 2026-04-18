@@ -1,43 +1,43 @@
 {{基礎情報 公家
-| 氏名 = 乎止与命
-| 画像 = 
-| 画像サイズ = 
-| 画像説明 = 
-| 時代 = [[古墳時代]]
-| 生誕 = 不明
-| 死没 = 不明
-| 改名 = 
-| 別名 = 小止与命、小豊命
-| 諡号 = 
-| 神号 = 
-| 戒名 = 
-| 墓所 = [[白鳥塚古墳 (名古屋市)|白鳥塚古墳]]か
-| 官位 = [[国造]]
-| 主君 = [[景行天皇]]か
-| 氏族 = [[尾張氏]]
+| 氏名 = Otoyo-no-Mikoto
+| 画像 =
+| 画像サイズ =
+| 画像説明 =
+| 時代 = {{ill|Kofun period|ja|古墳時代}}
+| 生誕 = Unknown
+| 死没 = Unknown
+| 改名 =
+| 別名 = Otoyo-no-Mikoto, Otoyo-no-Mikoto
+| 諡号 =
+| 神号 =
+| 戒名 =
+| 墓所 = {{ill|Shiratorizuka Kofun (Nagoya)|ja|白鳥塚古墳 (名古屋市)|lt=Shiratorizuka Kofun|lt_ja=白鳥塚古墳}} possibly
+| 官位 = {{ill|kuni no miyatsuko|ja|国造}}
+| 主君 = {{ill|Emperor Keikō|ja|景行天皇}} possibly
+| 氏族 = {{ill|Owari clan|ja|尾張氏}}
 | 父母 =
-| 兄弟 = 
-| 妻   = [[真敷刀婢]]
-| 子   = [[建稲種命]]、[[宮簀媛]]
-| 特記事項 = 
+| 兄弟 =
+| 妻   = {{ill|Mashikitohi|ja|真敷刀婢}}
+| 子   = {{ill|Takeinadane-no-Mikoto|ja|建稲種命}}, {{ill|Miyazu-hime|ja|宮簀媛}}
+| 特記事項 =
 }}
 
-'''乎止与命'''（おとよのみこと）は、[[古墳時代]]の[[豪族]]・'''[[尾張国造]]'''の一人。
+'''Otoyo-no-Mikoto''' (''otoyo no mikoto'') was a {{ill|gōzoku|ja|豪族}} of the {{ill|Kofun period|ja|古墳時代}} and one of the '''{{ill|Owari no Kuni no Miyatsuko|ja|尾張国造}}'''.
 
-== 概要 ==
-「[[国造本紀]]」では'''小止与命'''、『[[新撰姓氏録]]』では'''小豊命'''と表記している<ref>「河内国　神別天孫　尾張連」『新撰姓氏録』弘仁六年。</ref>。
+== Overview ==
+In the "{{ill|Kokuzō Hongi|ja|国造本紀}}" he is written as '''Otoyo-no-Mikoto'''; in the ''{{ill|Shinsen Shōjiroku|ja|新撰姓氏録}}'' he is written as '''Otoyo-no-Mikoto'''<ref>"Kawachi Province, Shinbetsu-Tenson, Owari-no-Muraji," ''Shinsen Shōjiroku'', Kōnin 6.</ref>.
 
-「国造本紀」では[[成務天皇]]の御代に[[尾張国造]]に定められたと伝わる。
+In the "Kokuzō Hongi," he is transmitted as having been appointed {{ill|Owari no Kuni no Miyatsuko|ja|尾張国造}} during the reign of {{ill|Emperor Seimu|ja|成務天皇}}.
 
-子の建稲種命は尾張国造を継ぎ、娘の[[宮簀媛]]は[[日本武尊]]の妻である。[[愛知県]]の[[氷上姉子神社]]は[[宮簀媛]]を祀っており、乎止与命の館跡という伝承がある。
+His son Takeinadane-no-Mikoto succeeded him as Owari no Kuni no Miyatsuko, and his daughter {{ill|Miyazu-hime|ja|宮簀媛}} was the wife of {{ill|Yamato Takeru|ja|日本武尊}}. The {{ill|Hikami-Aneko Shrine|ja|氷上姉子神社}} in {{ill|Aichi Prefecture|ja|愛知県}} enshrines {{ill|Miyazu-hime|ja|宮簀媛}}, and there is a tradition that it is the site of Otoyo-no-Mikoto's residence.
 
-== 脚注 ==
+== Footnotes ==
 {{Reflist}}
 
-== 関連項目 ==
-*[[国造]]
-*[[日本武尊]]
-*[[飛鳥時代以前の人物一覧]]
+== See also ==
+*{{ill|kuni no miyatsuko|ja|国造}}
+*{{ill|Yamato Takeru|ja|日本武尊}}
+*{{ill|List of Figures from before the Asuka Period|ja|飛鳥時代以前の人物一覧}}
 
 {{デフォルトソート:おとよのみこと}}
 [[Category:古代日本の人物]]
@@ -47,5 +47,4 @@
 [[Category:尾張氏]]
 [[Category:生没年不詳]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:乎止与命]]

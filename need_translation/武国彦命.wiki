@@ -1,38 +1,38 @@
 {{基礎情報 公家
-| 氏名 = 武国彦命
-| 画像 = 
-| 画像サイズ = 
-| 画像説明 = 
-| 時代 = [[古墳時代]]
-| 生誕 = 不明
-| 死没 = 不明
-| 改名 = 
-| 別名 = 建大臣命、武大臣命
-| 諡号 = 
-| 神号 = 
-| 戒名 = 
-| 墓所 = 
-| 官位 = 
+| 氏名 = Takekunihiko-no-Mikoto
+| 画像 =
+| 画像サイズ =
+| 画像説明 =
+| 時代 = {{ill|Kofun period|ja|古墳時代}}
+| 生誕 = Unknown
+| 死没 = Unknown
+| 改名 =
+| 別名 = Take-Ōomi-no-Mikoto, Takeōomi-no-Mikoto
+| 諡号 =
+| 神号 =
+| 戒名 =
+| 墓所 =
+| 官位 =
 }}
-'''武国彦命'''（たけくにひこのみこと、生没年不詳）とは、[[古墳時代]]の[[豪族]]。'''建大臣命'''（たけおおおみのみこと）とも。
+'''Takekunihiko-no-Mikoto''' (''takekunihiko no mikoto''; dates of birth and death unknown) was a {{ill|gōzoku|ja|豪族}} of the {{ill|Kofun period|ja|古墳時代}}. Also known as '''Take-Ōomi-no-Mikoto''' (''take-ōomi no mikoto'').
 
-== 概要 ==
-別名に'''武大臣命'''<ref>[[中田憲信]]「諏訪氏」『諸系譜』、第十三冊。</ref>や、'''建大臣命'''<ref>[[延川和彦]]著、「諏訪氏系図」『修補諏訪氏系図.正編』飯田好太郎、大正10年、25頁。</ref>があるとされる。
+== Overview ==
+Alternate names include '''Takeōomi-no-Mikoto'''<ref>{{ill|Nakada Norinobu|ja|中田憲信}}, "Suwa-shi," ''Shokeifu'', Vol. 13.</ref> and '''Take-Ōomi-no-Mikoto'''<ref>{{ill|Nobekawa Kazuhiko|ja|延川和彦}}, "Suwa-shi Keizu," ''Shūho Suwa-shi Keizu. Seihen'', Iida Kōtarō, Taishō 10 (1921), p. 25.</ref>.
 
-[[山梨県]][[北杜市]]に鎮座する諏訪神社中社や『甲斐国史』の伝承では、[[崇神天皇|崇神朝]]に[[建沼河別命]]が東征の功によって西域の地に封ぜられ、その孫の大臣命が諏訪国造に任命され、同地に廟を建てたとされる。また「[[国造本紀]]」の写本の一つにも[[景行天皇|景行朝]]に須羽国造に任命されたと見えるが、この記述は[[那須国造]]との誤記・混同と見る説がある<ref>佐藤雄一著『シナノの国造勢力』</ref>。
+According to the traditions of Suwa Shrine Naka-sha enshrined in {{ill|Hokuto, Yamanashi|ja|北杜市|lt=Hokuto City|lt_ja=北杜市}}, {{ill|Yamanashi Prefecture|ja|山梨県}}, and the ''Kai Kokushi'', during the reign of {{ill|Emperor Sujin|ja|崇神天皇|lt=Emperor Sujin|lt_ja=崇神朝}}, {{ill|Take-Nunakawa-Wake-no-Mikoto|ja|建沼河別命}} was enfeoffed in the western region for his merits in the eastern expedition, and his grandson Ōomi-no-Mikoto was appointed Suwa no Kuni no Miyatsuko and built a shrine in the same area. Additionally, in one manuscript of the "{{ill|Kokuzō Hongi|ja|国造本紀}}," he appears as having been appointed Suha no Kuni no Miyatsuko during the reign of {{ill|Emperor Keikō|ja|景行天皇|lt=Emperor Keikō|lt_ja=景行朝}}, but there is a theory that this description is a miswriting or confusion with the {{ill|Nasu no Kuni no Miyatsuko|ja|那須国造}}<ref>Satō Yūichi, ''Shinano no Kokuzō Seiryoku''.</ref>.
 
-== 脚注 ==
+== Footnotes ==
 {{Reflist}}
 
-== 関連項目 ==
-*[[国造]]
-*[[諏訪大社]]
-*[[信濃国]]
-*[[諏訪国]]
-*[[八縣宿禰神]]
-*[[武美名別命]]
-*[[健隈照命]]
-*[[飛鳥時代以前の人物一覧]]
+== See also ==
+*{{ill|kuni no miyatsuko|ja|国造}}
+*{{ill|Suwa Taisha|ja|諏訪大社}}
+*{{ill|Shinano Province|ja|信濃国}}
+*{{ill|Suwa Province|ja|諏訪国}}
+*{{ill|Yagata-Sukune-no-Kami|ja|八縣宿禰神}}
+*{{ill|Takeminakata-Wake-no-Mikoto|ja|武美名別命}}
+*{{ill|Takekumateru-no-Mikoto|ja|健隈照命}}
+*{{ill|List of Figures from before the Asuka Period|ja|飛鳥時代以前の人物一覧}}
 
 {{DEFAULTSORT:たけくにひこのみこと}}
 [[Category:古墳時代の人物]]
@@ -45,5 +45,4 @@
 {{Japanese-history-stub}}
 {{People-stub}}
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:武国彦命]]
