@@ -1,43 +1,46 @@
 {{基礎情報 日本の神
-| 名 = 鳥取神
+| 名 = Totori-no-Kami
 | 世代名 =
-| 先代= 
-| 次代= 
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->[[国津神]]
-| 全名 = 鳥取神（トトリノカミ）
-| 別名 = 鳥耳神、鳥甘神
-| 別称 = 
-| 神階 = 
-| 神格 = <!-- 太陽、月、山、海など司るもの -->神事の神
-| 陵所 = 
-| 父 = [[八島牟遅能神]]
-| 母 = 
+| 先代=
+| 次代=
+| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{ill|Kunitsukami|ja|国津神}}
+| 全名 = Totori-no-Kami
+| 別名 = Torimimi-no-Kami, Torikai-no-Kami
+| 別称 =
+| 神階 =
+| 神格 = <!-- 太陽、月、山、海など司るもの -->Deity of ritual
+| 陵所 =
+| 父 = {{ill|Yashimamuji-no-Kami|ja|八島牟遅能神}}
+| 母 =
 | 親 = <!-- まぐあいによって生まれない場合 -->
-| 配偶者 = [[大国主神]]
-| 子 = [[鳥鳴海神]]
-| 宮 = 
-| 神社 = 
-| 記紀等 = [[古事記]]
+| 配偶者 = {{ill|Ōkuninushi|ja|大国主神}}
+| 子 = {{ill|Torinarumi-no-Kami|ja|鳥鳴海神}}
+| 宮 =
+| 神社 =
+| 記紀等 = {{ill|Kojiki|ja|古事記}}
 }}
-'''鳥取神'''（トトリ）は[[日本神話]]に登場する[[神 (神道)|女神]]。'''鳥耳神'''（トリミミ）、'''鳥甘神'''（トリカイ）ともする。
-== 概要 ==
-『古事記』にのみ登場する[[国津神]]。八島牟遅能神の娘であり、大国主神の六番目の妻。名称は鳥取神の他に、'''鳥耳神'''（トリミミノカミ）、'''鳥甘神'''（トリカイノカミ）などとも表記する。
+'''Totori-no-Kami''' (''totori'') is a {{ill|goddess|ja|神 (神道)|lt=goddess|lt_ja=女神}} appearing in {{ill|Japanese mythology|ja|日本神話}}. Also called '''Torimimi-no-Kami''' (''torimimi'') or '''Torikai-no-Kami''' (''torikai'').
 
-古代日本において鳥は人間の霊魂を運ぶと考えられ、その鳥を捕まえることは神事であり、名義は「鳥を捕まえること」と考えられる{{Sfn|西宮|2014|p=381}}。
-== 系譜 ==
-[[画像:Ohokuninushi family tree.png|right|thumb|250px|大国主の系図（『古事記』による）。青は男神、赤は女神、黄は性別不詳]]
-八島牟遅能神の娘で、大国主神との間に鳥鳴海神をもうけた。
-== 脚注 ==
+== Overview ==
+A {{ill|Kunitsukami|ja|国津神}} appearing only in the ''Kojiki''. Daughter of Yashimamuji-no-Kami and sixth consort of Ōkuninushi-no-Kami. Besides the name Totori-no-Kami, she is also written as '''Torimimi-no-Kami''' or '''Torikai-no-Kami'''.
+
+In ancient Japan, birds were thought to carry human souls, and catching those birds was a ritual act; her name is thought to mean "bird-catching".{{Sfn|Nishimiya|2014|p=381}}
+
+== Genealogy ==
+[[画像:Ohokuninushi family tree.png|right|thumb|250px|Genealogy of Ōkuninushi (according to the ''Kojiki''). Blue is male deities, red is female deities, yellow is undetermined sex.]]
+Daughter of Yashimamuji-no-Kami; she bore Torinarumi-no-Kami with Ōkuninushi-no-Kami.
+
+== Footnotes ==
 {{脚注ヘルプ}}
-=== 出典 ===
+=== Citations ===
 {{Reflist}}
-== 参考文献 ==
-* <!-- にしみや -->{{Cite book|和書 |title=古事記 |volume= |date=2014年10月30日 |publisher=[[新潮社]] |ref={{SfnRef|西宮|2014}} |author=[[西宮一民]] 校注 |isbn=978-4-10-620801-0 |series=[[新潮日本古典集成]]（新装版）}}
-== 関連項目 ==
-* [[十七世神]]
-* [[鳥取部]]
-== 外部リンク ==
-* [https://kojiki.kokugakuin.ac.jp/shinmei/totorinokami/ 鳥取神 – 國學院大學 古典文化学事業]
+== References ==
+* <!-- にしみや -->{{Cite book|和書 |title=Kojiki |volume= |date=October 30, 2014 |publisher={{ill|Shinchosha|ja|新潮社}} |ref={{SfnRef|Nishimiya|2014}} |author={{ill|Nishimiya Kazutami|ja|西宮一民}}, ed. |isbn=978-4-10-620801-0 |series={{ill|Shincho Nihon Koten Shūsei|ja|新潮日本古典集成}} (new edition)}}
+== See also ==
+* {{ill|Jūshichiseshin|ja|十七世神}}
+* {{ill|Tottoribe|ja|鳥取部}}
+== External links ==
+* [https://kojiki.kokugakuin.ac.jp/shinmei/totorinokami/ Totori-no-Kami – Kokugakuin University Classical Culture Project]
 {{日本神話}}
 {{神道 横}}
 {{shinto-stub}}
@@ -50,5 +53,4 @@
 [[Category:長門国の人物]]
 [[Category:十七世神]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:鳥取神]]
