@@ -1,201 +1,200 @@
 {{日本の氏族
-|家名 = 科野国造
+|家名 = Shinanu no Kuni no Miyatsuko
 |家紋 = <!-- 家紋の画像 -->
 |家紋名称 =
-|本姓 = [[科野氏]]（直）？
-|家祖 = [[武五百建命|建五百建命]]
-|種別 = [[皇別]]
+|本姓 = {{ill|Shinanu clan|ja|科野氏}} (Atai)?
+|家祖 = {{ill|Takeiotatsu-no-Mikoto|ja|武五百建命|lt=Takeiotatsu-no-Mikoto|lt_ja=建五百建命}}
+|種別 = {{ill|Kōbetsu|ja|皇別}}
 |出身地 =
-|根拠地 = 科野国（のちの[[信濃国]]）
-|人物 = [[#人物]]参照
-|支流 = （括弧内は姓）<br />[[金刺舎人氏]]（[[直 (姓)|直]]）<br />[[金刺氏]]（[[キミ (カバネ)|君]]のち直のち[[連]]のち[[宿禰]]）<br />[[多氏]]（[[朝臣]]）<br />[[他田氏]]（直）<br />[[他田舎人氏]]（[[造]]、直）
+|根拠地 = Shinanu Province (later {{ill|Shinano Province|ja|信濃国}})
+|人物 = See [[#People|People]]
+|支流 = (kabane in parentheses)<br />{{ill|Kanasashi-Toneri clan|ja|金刺舎人氏}} ({{ill|Atai (kabane)|ja|直 (姓)|lt=Atai|lt_ja=直}})<br />{{ill|Kanasashi clan|ja|金刺氏}} ({{ill|Kimi (kabane)|ja|キミ (カバネ)|lt=Kimi|lt_ja=君}}, later Atai, later {{ill|Muraji|ja|連}}, later {{ill|Sukune|ja|宿禰}})<br />{{ill|Ō clan|ja|多氏}} ({{ill|Asomi|ja|朝臣}})<br />{{ill|Osada clan|ja|他田氏}} (Atai)<br />{{ill|Osada-Toneri clan|ja|他田舎人氏}} ({{ill|Miyatsuko|ja|造}}, Atai)
 }}
-'''科野国造'''（しなぬのくにのみやつこ、しなぬこくぞう、しなののくにのみやつこ、しなのこくぞう）は、のちに[[信濃国]]となる地域（'''[[#支配領域|科野国]]'''）の全域を支配した[[国造]]である。
+'''Shinanu no Kuni no Miyatsuko''' (''shinanu no kuni no miyatsuko'', ''shinanu kokuzō'', ''shinano no kuni no miyatsuko'', ''shinano kokuzō'') was a {{ill|kuni no miyatsuko|ja|国造}} who ruled the entire region that later became {{ill|Shinano Province|ja|信濃国}} ('''[[#Territory|Shinanu Province]]''').
 
-== 概要 ==
-=== 表記 ===
-「科野国造」は『[[古事記]]』などによる表記である。『[[先代旧事本紀]]』[[神宮文庫]]本では「'''<span style="-webkit-text-emphasis: filled circle;">神</span>野国造'''」と表記されている<ref>『[[#taikei|新訂増補國史大系 第7巻]]』。</ref>。
+== Overview ==
+=== Name ===
+"Shinanu no Kuni no Miyatsuko" is the notation used in the ''{{ill|Kojiki|ja|古事記}}'' and others. The {{ill|Jingū Bunko|ja|神宮文庫}} text of the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' writes it as "'''<span style="-webkit-text-emphasis: filled circle;">Kami</span>nu no Kuni no Miyatsuko'''"<ref>''[[#taikei|Shinchō Zōho Kokushi Taikei Vol. 7]]''.</ref>.
 
-=== 祖先 ===
-* 『[[古事記]]』（中巻）によれば、[[神武天皇]]（初代[[天皇]]）の[[皇子]]の'''[[神八井耳命]]'''が科野国造などの祖であるという。
-* 『[[先代旧事本紀]]』の「[[国造本紀]]」によれば、[[崇神天皇]]（第10代天皇）の時代に'''神八井耳命'''の孫の'''[[武五百建命|建五百建命]]'''（たけいおたつ の みこと）が初代科野国造（または神野国造。[[#表記]]参照。）に任命されたという。
+=== Ancestry ===
+* According to the ''{{ill|Kojiki|ja|古事記}}'' (middle volume), '''{{ill|Kamuyaimimi-no-Mikoto|ja|神八井耳命}}''', son of {{ill|Emperor Jinmu|ja|神武天皇}} (the first {{ill|emperor|ja|天皇}}), is said to be the ancestor of the Shinanu no Kuni no Miyatsuko and others.
+* According to the "{{ill|Kokuzō Hongi|ja|国造本紀}}" of the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'', during the reign of {{ill|Emperor Sujin|ja|崇神天皇}} (the 10th emperor), '''{{ill|Takeiotatsu-no-Mikoto|ja|武五百建命|lt=Takeiotatsu-no-Mikoto|lt_ja=建五百建命}}''' (''takeiotatsu no mikoto''), grandson of '''Kamuyaimimi-no-Mikoto''', was appointed the first Shinanu no Kuni no Miyatsuko (or Kaminu no Kuni no Miyatsuko; see [[#Name|Name]]).
 
-=== 氏族 ===
-'''[[金刺部氏|金刺舎人氏]]'''（かなさしのとねりうじ、[[カバネ|姓]]は無し）あるいは'''[[他田部氏|他田舎人氏]]'''（おさたのとねりうじ、[[カバネ|姓]]は無し）。[[神武天皇]]の子・[[神八井耳命]]の子孫である'''[[多氏]]'''（おおうじ）と同系であり、[[皇別]]氏族としては最古級に属する氏族。その一部は[[朝鮮半島]]で[[倭人]]系[[百済]]官僚として活動する者もいた可能性がある<ref name="#1">{{Cite journal|和書 |author=河内春人 |date=2017-03 |url=https://senshu-u.repo.nii.ac.jp/records/8264 |title=古代東アジアにおける政治的流動性と人流 |journal=専修大学社会知性開発研究センター古代東ユーラシア研究センター年報 |publisher=専修大学社会知性開発研究センター |volume=3 |pages=103-121 |doi=10.34360/00008258 |CRID=1390572174779544704}}</ref>。金刺舎人氏はのちに[[宿禰]]の姓を賜っている。金刺舎人氏と他田舎人氏は[[信濃国]]全体に広がりを見せ、律令制移行後も[[小県郡]]や[[伊那郡]]などの郡領を務めた。
+=== Clan ===
+'''{{ill|Kanasashi-Toneri clan|ja|金刺部氏|lt=Kanasashi-Toneri clan|lt_ja=金刺舎人氏}}''' (''kanasashi-no-toneri-uji''; no {{ill|kabane|ja|カバネ|lt=kabane|lt_ja=姓}}) or '''{{ill|Osada-Toneri clan|ja|他田部氏|lt=Osada-Toneri clan|lt_ja=他田舎人氏}}''' (''osada-no-toneri-uji''; no {{ill|kabane|ja|カバネ|lt=kabane|lt_ja=姓}}). Of the same lineage as the '''{{ill|Ō clan|ja|多氏}}''' (''ō-uji''), descendants of {{ill|Kamuyaimimi-no-Mikoto|ja|神八井耳命}}, son of {{ill|Emperor Jinmu|ja|神武天皇}}; the clan is one of the oldest {{ill|Kōbetsu|ja|皇別}} clans. Some of them may have been active as {{ill|Wa|ja|倭人}}-descended {{ill|Baekje|ja|百済}} officials on the {{ill|Korean Peninsula|ja|朝鮮半島}}<ref name="#1">{{Cite journal|和書 |author=河内春人 |date=2017-03 |url=https://senshu-u.repo.nii.ac.jp/records/8264 |title=古代東アジアにおける政治的流動性と人流 |journal=専修大学社会知性開発研究センター古代東ユーラシア研究センター年報 |publisher=専修大学社会知性開発研究センター |volume=3 |pages=103-121 |doi=10.34360/00008258 |CRID=1390572174779544704}}</ref>. The Kanasashi-Toneri clan was later granted the kabane of {{ill|Sukune|ja|宿禰}}. The Kanasashi-Toneri clan and Osada-Toneri clan spread across the whole of {{ill|Shinano Province|ja|信濃国}}, and even after the transition to the ritsuryō system, they served as {{ill|district magistrates|ja|郡}} of {{ill|Chiisagata District|ja|小県郡}}, {{ill|Ina District|ja|伊那郡}}, and others.
 
-=== 偽りの系図 ===
+=== Forged Genealogy ===
 
-{{main|諏訪氏#出自}}
+{{main|{{ill|Suwa clan#Origin|ja|諏訪氏#出自|lt=Suwa clan#Origin|lt_ja=諏訪氏#出自}}}}
 
-歴史学者の[[田中卓]]が[[1956年]]（[[昭和]]31年）に提示を受けた『[[阿蘇氏#上古の氏としての阿蘇氏|阿蘇氏]]略系図（異本阿蘇氏系図）』と、[[1884年]]（[[明治]]17年）に見つかった『神氏系図（大祝家本）』には、科野国造に関する系図も記されている。しかし、これらの資料は[[江戸時代]]末期から[[明治]]時代初期に[[飯田武郷]]と[[中田憲信]]によって作成されたものだとする[[伊藤麟太朗]]、[[福島正樹]]、[[寺田鎮子]]、[[鷲尾徹太]]、[[佐藤雄一 (歴史学者)|佐藤雄一]]らの見方があった<ref>田中卓『田中卓著作集 2日本国家の成立と諸氏族』（国書刊行会、2012年）</ref><ref>{{Cite journal|和書|author=伊藤麟太朗|title=所謂『阿蘇氏系図』について|journal=信濃|volume=46|issue=8|publisher=[[信濃史学会]]|year=1994|pages=696-697}}</ref><ref>村崎真智子「異本阿蘇氏系図試論」（『ヒト・モノ・コトバの人類学 国分直一博士米寿記念論文集』[[1996年]]）202 - 218頁。</ref><ref>{{Cite web|和書|url=http://user1.matsumoto.ne.jp/~fukusima/yamakawa.htm |title=信濃古代の通史叙述をめぐって|author=福島正樹|date=2003-11-24|access-date=2022-04-15}}</ref><ref>佐藤雄一『古代信濃の氏族と信仰』（吉川弘文館、2021年）</ref>。
+The ''{{ill|Aso clan|ja|阿蘇氏#上古の氏としての阿蘇氏|lt=Aso clan|lt_ja=阿蘇氏}}略 Genealogy (Variant Aso clan genealogy)'', presented to historian {{ill|Tanaka Takashi|ja|田中卓}} in {{ill|1956|ja|1956年}} ({{ill|Shōwa|ja|昭和}} 31), and the ''Shin-shi Keizu (Hafuri-ke-bon)'' discovered in {{ill|1884|ja|1884年}} ({{ill|Meiji|ja|明治}} 17) also contain genealogies concerning the Shinanu no Kuni no Miyatsuko. However, these materials were produced by {{ill|Iida Taketoshi|ja|飯田武郷}} and {{ill|Nakata Kenshin|ja|中田憲信}} in the late {{ill|Edo period|ja|江戸時代}} and early {{ill|Meiji period|ja|明治}} era, according to {{ill|Itō Rintarō|ja|伊藤麟太朗}}, {{ill|Fukushima Masaki|ja|福島正樹}}, {{ill|Terada Chinko|ja|寺田鎮子}}, {{ill|Washio Tetsuta|ja|鷲尾徹太}}, {{ill|Satō Yūichi (historian)|ja|佐藤雄一 (歴史学者)|lt=Satō Yūichi|lt_ja=佐藤雄一}}, and others<ref>Tanaka Takashi, ''Tanaka Takashi Chosakushū 2: Nihon Kokka no Seiritsu to Shoshizoku'' (Kokusho Kankōkai, 2012).</ref><ref>{{Cite journal|和書|author=伊藤麟太朗|title=所謂『阿蘇氏系図』について|journal=信濃|volume=46|issue=8|publisher=[[信濃史学会]]|year=1994|pages=696-697}}</ref><ref>Murasaki Machiko, "A Tentative Theory on the Variant Aso Clan Genealogy" (''Hito-Mono-Kotoba no Jinruigaku: Kokubu Naoichi Hakushi Beiju Kinen Ronbunshū'', {{ill|1996|ja|1996年}}), pp. 202-218.</ref><ref>{{Cite web|和書|url=http://user1.matsumoto.ne.jp/~fukusima/yamakawa.htm |title=信濃古代の通史叙述をめぐって|author=福島正樹|date=2003-11-24|access-date=2022-04-15}}</ref><ref>Satō Yūichi, ''Kodai Shinano no Shizoku to Shinkō'' (Yoshikawa Kōbunkan, 2021).</ref>.
 
-[[間枝遼太郎]]は、『阿蘇氏略系図』と大祝本「神氏系図」が'''古代の歴史的事実を明らかにする力は持たない'''系図であると証明した<ref name="間枝遼太郎2023">{{Cite journal|和書|author=間枝遼太郎 |date=2023-08 |title=大祝本『神氏系図』・『阿蘇家略系譜』再考 : 再構成される諏訪の伝承 |journal=国語国文研究 |ISSN=02890488 |publisher=北海道大学国語国文学会 |issue=161 |pages=1-16 |CRID=1520579134373407616 |id={{国立国会図書館書誌ID|033071475}}}}</ref>。
+{{ill|Aizawa Ryōtarō|ja|間枝遼太郎}} demonstrated that the ''Aso Clan Abbreviated Genealogy'' and the Hafuri-hon ''Shin-shi Keizu'' '''lack the power to clarify ancient historical facts'''<ref name="間枝遼太郎2023">{{Cite journal|和書|author=間枝遼太郎 |date=2023-08 |title=大祝本『神氏系図』・『阿蘇家略系譜』再考 : 再構成される諏訪の伝承 |journal=国語国文研究 |ISSN=02890488 |publisher=北海道大学国語国文学会 |issue=161 |pages=1-16 |CRID=1520579134373407616 |id={{国立国会図書館書誌ID|033071475}}}}</ref>.
 
-大祝本「神氏系図」は、
-* [[建御名方神]]から'''有員'''（[[延暦]]年間）までの系譜を述べた文章系図部分に、[[延文]]元年（[[1356年]]）に成立した[[諏訪円忠]]作『[[諏訪大明神画詞]]』や、円忠の5世孫・[[諏訪貞通]]が[[延徳]]2年（[[1490年]]）〜[[永正]]元年（[[1504年]]）頃に編纂した前田本「神氏系図」内の文章を引用・改竄した箇所が多数存在していること
-* 『[[諏訪大明神画詞]]』から引用・改竄した結果、本来の用法ではあり得ない歪な文章が誕生してしまっていること（「始祖」という語が氏族ではなく「'''神子'''{{efn|『諏訪大明神画詞』の原文では用明天皇期の「有員」}}'''が有員'''{{efn|信濃国諏訪地方に伝わっていた平城天皇期の本来の「有員」、『諏訪大明神画詞』の原文では「神氏」}}'''の始祖である'''」というように、個人同士に対して用いられている）{{efn|大祝本「神氏系図」「神子八歲之時、尊神化現、脱着御衣於神子、吾無体以汝為体。有神勅､ 隠御身矣。是則御衣着祝神氏有員之始祖也。用明天皇御宇二年、神子構社壇于湖南山麓。」}}
-*神氏の祖である諏訪大明神を「[[天照大神]]御弟、[[スサノオ|健速須佐之男命]]六世孫、[[オオクニヌシ|大名持命]]第二子、[[建御名方神|御名方富命]]是也」としているが、[[大国主命]]を[[素戔嗚尊]]の「6世孫」とするのは『[[古事記]]』の説であり（『[[日本書紀]]』や『[[先代旧事本紀]]』では親子関係にあるとされる）、『古事記』は[[本居宣長]]の『[[古事記伝]]』以前には人々が読む機会は著しく限られていたこと
-* 「[[茨木国造]]・許々意命（こころのみこと）」という人物が科野国造に任じられ、後に放逐されたという記述があるが、これは『[[常陸国風土記]]』に見える多祁許呂命（たけころのみこと、『[[新撰姓氏録]]』では建凝命、『[[先代旧事本紀]]』では茨城国造祖建許呂命のことであり、「許々意」というような特異な表記方法は[[江戸時代]]に創作された[[偽書]]である『[[先代旧事本紀大成経]]』にのみ見えること（「心」の字をココロと読み、心と通じる漢字である「意」にもロという読み方を当てている）{{efn|『先代旧事本紀大成経』国造本紀「科野國造。高穴穗宮成務朝御世，茨城國造祖'''建許意命'''兒宮富鷲意命任，定賜國造。」}}
-*許々意命（『先代旧事本紀大成経』では建許意命、建許呂命のこと）が科野国造と関連しているという記述も『[[先代旧事本紀大成経]]』にのみ見えること{{efn|『先代旧事本紀大成経』国造本紀「科野國造。高穴穗宮成務朝御世，茨城國造祖'''建許意命'''兒宮富鷲意命任，定賜國造。」}}
-から、江戸時代以降に創作された系図であることが明らかとなった<ref name="間枝遼太郎2023"/>。
+The Hafuri-hon ''Shin-shi Keizu'':
+* In the prose genealogy section describing the lineage from {{ill|Takeminakata-no-Kami|ja|建御名方神}} to '''Arikazu''' (during the {{ill|Enryaku|ja|延暦}} era), there are numerous places where it quotes and tampers with the text of the ''{{ill|Suwa-Daimyōjin Ekotoba|ja|諏訪大明神画詞}}'', established in {{ill|Enbun|ja|延文}} 1 ({{ill|1356|ja|1356年}}) by {{ill|Suwa Enchū|ja|諏訪円忠}}, and of the Maeda-hon ''Shin-shi Keizu'' compiled around {{ill|Entoku|ja|延徳}} 2 ({{ill|1490|ja|1490年}}) to {{ill|Eishō|ja|永正}} 1 ({{ill|1504|ja|1504年}}) by Enchū's 5th-generation descendant {{ill|Suwa Sadamichi|ja|諏訪貞通}}.
+* As a result of quoting and tampering with the ''{{ill|Suwa-Daimyōjin Ekotoba|ja|諏訪大明神画詞}}'', distorted sentences have been created that cannot exist in the original usage (the term "founder" is used for "'''Shinshi'''{{efn|In the original text of the ''Suwa-Daimyōjin Ekotoba'', "Arikazu" of the Emperor Yōmei era.}}'''is the founder of Arikazu'''{{efn|The original "Arikazu" of the Emperor Heizei era transmitted in the Suwa region of Shinano Province; in the original text of the ''Suwa-Daimyōjin Ekotoba'' "Shin-shi"}}" rather than clan names){{efn|Hafuri-hon ''Shin-shi Keizu'': "When the divine child was 8 years old, the venerable deity appeared and, taking off the divine garment, clothed the child, saying 'I have no body; I will use you as my body.' With a divine decree, he hid his body. This is precisely the founder of the Shin-shi Arikazu of the Miso-gi-no-Hōri. In the 2nd year of the reign of Emperor Yōmei, the divine child built a shrine at the foot of Konan Mountain."}}.
+*Regarding the origin of the Shin clan's Suwa-Daimyōjin, it states: "Younger brother of {{ill|Amaterasu|ja|天照大神}}, sixth-generation descendant of {{ill|Susanoo|ja|スサノオ|lt=Take-haya-Susano-o-no-Mikoto|lt_ja=健速須佐之男命}}, second son of {{ill|Ōkuninushi|ja|オオクニヌシ|lt=Ōnamochi-no-Mikoto|lt_ja=大名持命}} — {{ill|Takeminakata-no-Kami|ja|建御名方神|lt=Minakata-Tomi-no-Mikoto|lt_ja=御名方富命}} is this one." However, the view that {{ill|Ōkuninushi|ja|大国主命}} was the "6th-generation descendant" of {{ill|Susanoo|ja|素戔嗚尊}} is the ''{{ill|Kojiki|ja|古事記}}'' theory (in ''{{ill|Nihon Shoki|ja|日本書紀}}'' and ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'', they are in a parent-child relationship), and the ''Kojiki'' was hardly available for people to read until {{ill|Motoori Norinaga|ja|本居宣長}}'s ''{{ill|Kojiki-den|ja|古事記伝}}''.
+* There is a description that a figure named "{{ill|Ibaraki no Kuni no Miyatsuko|ja|茨木国造}} Kokoro-no-Mikoto (''kokoro no mikoto'')" was appointed Shinanu no Kuni no Miyatsuko and later expelled. However, this is Takekoro-no-Mikoto (''takekoro no mikoto'') — whom the ''{{ill|Hitachi no Kuni Fudoki|ja|常陸国風土記}}'' calls Takekori-no-Mikoto, the ''{{ill|Shinsen Shōjiroku|ja|新撰姓氏録}}'' calls Takekori-no-Mikoto, and the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' calls Takekoro-no-Mikoto, ancestor of the Ibaraki no Kuni no Miyatsuko — and such a peculiar notation "Kokoro" only appears in the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}'', a {{ill|forgery|ja|偽書}} created in the {{ill|Edo period|ja|江戸時代}} (reading the character 心 as "kokoro" and assigning the reading "ro" to the character 意, which is akin to 心){{efn|''Sendai Kuji Hongi Taiseikyō'' Kokuzō Hongi: "Shinanu no Kuni no Miyatsuko. During the reign of the Takaanaho-no-Miya Seimu court, Miyatomi-Washio-no-Mikoto, son of '''Takekori-no-Mikoto''', ancestor of the Ibaraki no Kuni no Miyatsuko, was appointed and granted kuni no miyatsuko."}}.
+*The description that Kokoro-no-Mikoto (Takekori-no-Mikoto, i.e. Takekori-no-Mikoto in the ''Sendai Kuji Hongi Taiseikyō'') is connected with the Shinanu no Kuni no Miyatsuko also only appears in the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}''{{efn|''Sendai Kuji Hongi Taiseikyō'' Kokuzō Hongi: "Shinanu no Kuni no Miyatsuko. During the reign of the Takaanaho-no-Miya Seimu court, Miyatomi-Washio-no-Mikoto, son of '''Takekori-no-Mikoto''', ancestor of the Ibaraki no Kuni no Miyatsuko, was appointed and granted kuni no miyatsuko."}}
+— from these points, it has become clear that the genealogy was created after the Edo period<ref name="間枝遼太郎2023"/>.
 
-また、『阿蘇氏略系図』は、大祝本「神氏系図」と、延川和彦著・飯田好太郎補『修補諏訪氏系図 続編』が引用する「金刺氏略系図」、さらに[[阿蘇氏]]の系図が組み合わされて成立している（間枝は「再再構成」と呼んでいる）。これらの系図が組み合わされる過程で、京都諏訪氏（[[諏訪円忠]]やその5世孫・[[諏訪貞通]]）に伝えられた、[[太子信仰]]が取り込まれた[[建御名方神]]を祖とする[[用明天皇]]2年（[[587年]]）の大祝の始祖・'''有員'''と、[[信濃国]]・[[諏訪大社]]上社の[[諏訪氏]]や神長官・[[守矢氏]]に伝えられた、[[大同 (日本)|大同]]元年（[[806年]]）の大祝の始祖・'''有員'''という2人の「有員」という矛盾が生まれた。そのため、京都諏訪氏に伝えられ、大祝本「神氏系図」に記された[[用明天皇]]2年（[[587年]]）の「有員」は「神子（熊古・熊子とも）」と名前が書き換えられた上で、両方の「有員」の伝説が並立して述べられることとなった<ref name="間枝遼太郎2023"/>。
+Furthermore, the ''Aso Clan Abbreviated Genealogy'' was established by combining the Hafuri-hon ''Shin-shi Keizu'', the "Kanasashi Clan Abbreviated Genealogy" quoted in ''Supplemented Suwa Clan Genealogy, Sequel'' by Nobukawa Kazuhiko with supplements by Iida Kōtarō, and the genealogy of the {{ill|Aso clan|ja|阿蘇氏}} (Aizawa calls this "re-reconstruction"). In the process of combining these genealogies, a contradiction arose from two "Arikazu" figures: '''Arikazu''', the founder of the Ōhōri in {{ill|Emperor Yōmei|ja|用明天皇}} 2 ({{ill|587|ja|587年}}) whose origins were in {{ill|Takeminakata-no-Kami|ja|建御名方神}} with {{ill|Taishi worship|ja|太子信仰}} incorporated, as transmitted in the Kyoto Suwa clan ({{ill|Suwa Enchū|ja|諏訪円忠}} and his 5th-generation descendant {{ill|Suwa Sadamichi|ja|諏訪貞通}}); and '''Arikazu''', the founder of the Ōhōri in {{ill|Daidō (Japan)|ja|大同 (日本)|lt=Daidō|lt_ja=大同}} 1 ({{ill|806|ja|806年}}), as transmitted in the {{ill|Suwa clan|ja|諏訪氏}} of the Upper Shrine of {{ill|Suwa-taisha|ja|諏訪大社}} in {{ill|Shinano Province|ja|信濃国}} and in the shinchōkan {{ill|Moriya clan|ja|守矢氏}}. To resolve this, the "Arikazu" of Yōmei 2 (587), as transmitted to the Kyoto Suwa clan and recorded in the Hafuri-hon ''Shin-shi Keizu'', had his name rewritten as "Shinshi (also Kumako or Kumako)," and the legends of both "Arikazu" came to be described side by side<ref name="間枝遼太郎2023"/>.
 
-加えて、大祝本「神氏系図」の文章系図前半にある国造関連の人名（健甕富命や諸日別命など）も、実際に古代から伝えられてきた系譜・人名ではなく、近世の諏訪大社下社社家が金刺氏の末裔であるというアイデンティティや系図そのものを確立するために、『[[先代旧事本紀]]』や『[[先代旧事本紀大成経]]』を参考にして近世以降に創作された<ref name="間枝遼太郎2023"/>。
+In addition, the kuni no miyatsuko-related personal names in the first half of the prose genealogy of the Hafuri-hon ''Shin-shi Keizu'' (such as Takemikatomi-no-Mikoto and Morohi-Wake-no-Mikoto) are also not genealogies or names actually transmitted from ancient times; they were created in the early modern period or later, referring to the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' and the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}'' in order to establish the identity of the shake of the Lower Shrine of Suwa-taisha in the early modern period as descendants of the Kanasashi clan and the genealogy itself<ref name="間枝遼太郎2023"/>.
 
-== 本拠 ==
-国造の本拠は諸説あるが、[[小林敏男 (歴史学者)|小林敏男]]は、「科野」の地名が「シナ（段差）」に由来する説を取った上で、シナノという地名の発生地を埴科・更科エリアであるとし、「[[斯那奴阿比多]]」という科野国造と思しき人物が『[[日本書紀]]』継体天皇条に見えることから、本拠地は埴科・更科エリアを中心とした水内郡・小県郡を含んだ善光寺平と上田盆地であるとした<ref name="#2"> 井上今朝男、牛山佳幸編『論集 東国信濃の古代中世史』（岩田書院、2008年）</ref>。あるいは[[信濃国]]'''[[小県郡]]'''<ref
-name="chizu">『[[#chizu|日本歴史地図 原始・古代編 下]]』。</ref> で、現在の[[長野県]][[小県郡]]<ref name="chizu"/>のみであるとする説もある。『[[和名類聚抄]]』によれば小県郡には[[安宗郷]]（あそ-）という[[郷#律令制の郷|郷]]があったといい、現在も[[上田市]]古安曽（こあそ）に[[安曽神社]]が存在する。これらは、初代科野国造建五百建命のもとの居住地である九州の[[阿蘇]]（あそ）と同音である。ただし「蘇」は「ソ」（甲類）であることに対し、「曽」は「ソ」（乙類）であるため、[[上代特殊仮名遣]]においては別音である。また、阿蘇氏が小県郡に至る過程が全く他の地域の地名や歴史に表れておらず、小県郡以外にも、[[備中国]]、[[出羽国]]、[[播磨国]]にアソ郷が存在しており、[[神功皇后]]の弟の[[息長日子王]]が播磨国の阿宗君の祖となっていることから、無関係であると考えられる<ref name="#2"/>。旧安宗郷内には、科野国造が勧請したものと推察される<ref name="taikei">『[[#taikei2|日本歴史地名大系第二十巻 長野県の地名]]』。</ref>'''[[生島足島神社]]'''（いくしまたるしまじんじゃ、{{Coord|36|21|36.90|N|138|13|5.50|E|region:JP-20_type:landmark|name=生島足島神社}}。上田市[[下之郷 (上田市)|下之郷]]。）があり、その付近が科野国造の治所に比定されている<ref name="taikei"/>。また埴科古墳群の所在から更埴地域を国造の本拠とする見方もある<ref>[[藤森栄一]]『信濃考古学散歩』[[学生社]]、1968年</ref>。
+== Base ==
+There are various theories regarding the base of the kuni no miyatsuko. {{ill|Kobayashi Toshio (historian)|ja|小林敏男 (歴史学者)|lt=Kobayashi Toshio|lt_ja=小林敏男}} takes the view that the place name "Shinanu" is derived from "Shina" (a level difference), and locates the origin of the Shinano place name in the Hanishina-Sarashina area; since a figure who appears to be a Shinanu no Kuni no Miyatsuko — "{{ill|Shinanu-no-Abita|ja|斯那奴阿比多}}" — appears in the Emperor Keitai section of the ''{{ill|Nihon Shoki|ja|日本書紀}}'', he considered the base to be the Zenkōji Plain and Ueda Basin, centered on the Hanishina-Sarashina area and including Minouchi and Chiisagata Districts<ref name="#2"> Inoue Kesao, Ushiyama Yoshiyuki (eds.), ''Ronshū: Tōgoku Shinano no Kodai Chūsei-shi'' (Iwata Shoin, 2008).</ref>. There is also a theory that the base was {{ill|Shinano Province|ja|信濃国}} '''{{ill|Chiisagata District|ja|小県郡}}'''<ref name="chizu">''[[#chizu|Nihon Rekishi Chizu: Primitive and Ancient Part II]]''.</ref>, limited to the present {{ill|Chiisagata District|ja|小県郡}} in {{ill|Nagano Prefecture|ja|長野県}}<ref name="chizu"/>. According to the ''{{ill|Wamyō Ruijushō|ja|和名類聚抄}}'', Chiisagata District had a {{ill|gō|ja|郷#律令制の郷|lt=gō|lt_ja=郷}} called {{ill|Aso-gō|ja|安宗郷}} (''aso-''), and even today there is the {{ill|Aso Shrine|ja|安曽神社}} in Koaso (''koaso''), {{ill|Ueda, Nagano|ja|上田市|lt=Ueda|lt_ja=上田市}}. These have the same sound as {{ill|Aso|ja|阿蘇}} (''aso'') in Kyūshū, the original residence of the first Shinanu no Kuni no Miyatsuko, Takeiotatsu-no-Mikoto. However, "蘇" is "so" (class A), while "曽" is "so" (class B), so in {{ill|Jōdai Tokushu Kanazukai|ja|上代特殊仮名遣}} they are different sounds. Also, no trace of the Aso clan's migration to Chiisagata District appears in any other region's place names or history, and besides Chiisagata District, there are Aso-gō in {{ill|Bitchū Province|ja|備中国}}, {{ill|Dewa Province|ja|出羽国}}, and {{ill|Harima Province|ja|播磨国}}; since {{ill|Okinaga-Hiko-no-Ōkimi|ja|息長日子王}}, younger brother of {{ill|Empress Jingū|ja|神功皇后}}, was the ancestor of the Asō-no-Kimi of Harima Province, these are considered unrelated<ref name="#2"/>. Within the old Aso-gō there is '''{{ill|Ikushima-Tarushima Shrine|ja|生島足島神社}}''' (''ikushima-tarushima jinja''; {{Coord|36|21|36.90|N|138|13|5.50|E|region:JP-20_type:landmark|name=Ikushima-Tarushima Shrine}}; {{ill|Shimono-gō, Ueda|ja|下之郷 (上田市)|lt=Shimono-gō|lt_ja=下之郷}}, Ueda City), presumed to have been enshrined by the Shinanu no Kuni no Miyatsuko<ref name="taikei">''[[#taikei2|Nihon Rekishi Chimei Taikei Vol. 20: Nagano Prefecture Place Names]]''.</ref>, and the area around it is identified as the Shinanu no Kuni no Miyatsuko's seat of government<ref name="taikei"/>. There is also a view placing the kuni no miyatsuko base in the Kōhan area based on the location of the Hanishina Kofun Cluster<ref>{{ill|Fujimori Eiichi|ja|藤森栄一}}, ''Shinano Kōkogaku Sanpo'', {{ill|Gakuseisha|ja|学生社}}, 1968.</ref>.
 
-また、のちの信濃国'''[[埴科郡]]'''・'''[[更級郡]]'''の「しな」は、科野の「しな」と同じである。
+Also, the "Shina" in the later Shinano Province '''{{ill|Hanishina District|ja|埴科郡}}''' and '''{{ill|Sarashina District|ja|更級郡}}''' is the same as the "Shina" in Shinanu.
 
-=== 支配領域 ===
-科野国造の支配領域は当時'''科野国'''と呼ばれていた地域、後の[[令制国]]の[[信濃国]]全域である。
+=== Territory ===
+The territory of the Shinanu no Kuni no Miyatsuko was the region then called '''Shinanu Province''', i.e. the entire area of the later {{ill|ritsuryō province|ja|令制国}} of {{ill|Shinano Province|ja|信濃国}}.
 
-地名の語源については、[[信濃国#「信濃」の名称と由来]]を参照。
+For the etymology of the place name, see {{ill|Shinano Province#Name and Origin of "Shinano"|ja|信濃国#「信濃」の名称と由来|lt=Shinano Province#Name and Origin of "Shinano"|lt_ja=信濃国#「信濃」の名称と由来}}.
 
-元は「しなぬ」であったが、のちに訓が「しなの」に変わり、さらに「科野」の字が当てられた。『[[古事記]]』には、[[大国主神]]の子[[建御名方神]]が諏訪に入国する際に、「'''科野国'''の洲羽海」に至ると記される。『[[日本書紀]]』には、[[欽明天皇]]14年（[[553年]]）に[[百済]]が朝廷に遣じた使者として上部徳率[[科野次酒|'''科野'''次酒]]<ref>『日本書紀』巻19欽明天皇14年(553)正月乙亥12</ref>、上部奈率[[科野新羅|'''科野'''新羅]]<ref>『日本書紀』巻19欽明天皇14年(553)8月丁西7</ref> の名があり、[[正史]]における「科野」の初見は[[6世紀]]の半ばである。
+The original reading was "Shinanu," which later became "Shinano" and was then written with the characters "科野" (Shinano). The ''{{ill|Kojiki|ja|古事記}}'' records that when {{ill|Takeminakata-no-Kami|ja|建御名方神}}, son of {{ill|Ōkuninushi-no-Kami|ja|大国主神}}, entered Suwa, he came to "the Suwa sea of '''Shinanu Province'''." In the ''{{ill|Nihon Shoki|ja|日本書紀}}'', there are names of {{ill|Baekje|ja|百済}} envoys sent to the imperial court in {{ill|Emperor Kinmei|ja|欽明天皇}} 14 ({{ill|553|ja|553年}}): Jōbu-Tokusotsu {{ill|Shinanu-no-Shisu|ja|科野次酒|lt='''Shinanu'''-no-Shisu|lt_ja='''科野'''次酒}}<ref>''Nihon Shoki'' Vol. 19, Emperor Kinmei 14 (553) 1st month kinoto-i day 12.</ref> and Jōbu-Naso {{ill|Shinanu-no-Shiraki|ja|科野新羅|lt='''Shinanu'''-no-Shiraki|lt_ja='''科野'''新羅}}<ref>''Nihon Shoki'' Vol. 19, Emperor Kinmei 14 (553) 8th month hinoto-tori day 7.</ref>; the first appearance of "Shinanu" in an {{ill|official history|ja|正史}} is the mid-{{ill|6th century|ja|6世紀}}.
 
-神代、[[出雲の国譲り]]に反対していた[[大国主神]]の長男[[建御名方神]]が大和方の[[建御雷神]]と[[相撲]]をとって敗れ、助命されて科野国諏訪郡に住まわされたと伝わる。その地には[[諏訪神社]]が建立され、信濃国[[一の宮]]の格式を誇り武芸と開拓の神として尊崇を集めた。
+In the age of the gods, {{ill|Takeminakata-no-Kami|ja|建御名方神}}, eldest son of {{ill|Ōkuninushi-no-Kami|ja|大国主神}} who had opposed the {{ill|Transfer of the Izumo Kingdom|ja|出雲の国譲り}}, fought {{ill|Takemikazuchi-no-Kami|ja|建御雷神}} of the Yamato side in {{ill|sumo|ja|相撲}} and was defeated; being spared, he was made to live in Suwa District of Shinanu Province. There, {{ill|Suwa Shrine|ja|諏訪神社}} was built and it came to command the rank of {{ill|ichi-no-miya|ja|一の宮}} of Shinano Province, attracting veneration as a deity of martial arts and reclamation.
 
-[[古墳時代]]の[[前方後方墳]]は、[[弘法山古墳]]（[[松本市]]）や[[姫塚古墳]]（[[長野市]]）、[[瀧の峯古墳群]]（[[佐久市]]）など長野県内各所で発見されており、時期については概ね古墳時代前期（[[4世紀]]始めから中葉）のほぼ同時期とされている。その後[[前方後円墳]]が県内各所に築造され、特に長野市南部から千曲市北部にかけての一帯には、[[森将軍塚古墳]]や[[川柳将軍塚古墳]]、[[倉科将軍塚古墳]]など県内最大級の前方後円墳が集中している。古墳時代後期には高井郡を中心に[[高句麗]]式の積石墳が多数分布する。
+{{ill|Keyhole-shaped kofun (rectangle)|ja|前方後方墳}} of the {{ill|Kofun period|ja|古墳時代}} have been discovered at various places in Nagano Prefecture, such as {{ill|Kōbōyama Kofun|ja|弘法山古墳}} ({{ill|Matsumoto, Nagano|ja|松本市|lt=Matsumoto|lt_ja=松本市}}), {{ill|Himezuka Kofun|ja|姫塚古墳}} ({{ill|Nagano City|ja|長野市}}), and {{ill|Takinomine Kofun Cluster|ja|瀧の峯古墳群}} ({{ill|Saku, Nagano|ja|佐久市|lt=Saku|lt_ja=佐久市}}), and their periods are generally considered to be roughly the same — early Kofun period (early to mid-{{ill|4th century|ja|4世紀}}). Afterwards, {{ill|keyhole-shaped kofun|ja|前方後円墳}} were built throughout the prefecture; in particular, in the area from southern Nagano City to northern Chikuma City, the prefecture's largest keyhole-shaped kofun — such as {{ill|Mori-Shōgunzuka Kofun|ja|森将軍塚古墳}}, {{ill|Senryū-Shōgunzuka Kofun|ja|川柳将軍塚古墳}}, and {{ill|Kurashina-Shōgunzuka Kofun|ja|倉科将軍塚古墳}} — are concentrated. In the late Kofun period, many {{ill|Goguryeo|ja|高句麗}}-style stacked-stone tombs are distributed around Takai District.
 
-[[弥生時代]]から[[古墳時代]]にかけての科野は、更級・埴科を中心とした[[千曲川]]流域であり、県内最大の[[前方後円墳]]で科野の大王の墳墓と目されている[[森将軍塚古墳]]を筆頭とした[[埴科古墳群]]が残されている現在の[[千曲市]]（旧[[更埴市]]）から[[川柳将軍塚古墳]]のある[[長野市]]南部（旧[[更級郡]]）にかけての一帯が中心（科野国造）であったとされる<ref>[[福島正樹]]「信濃国のなり立ち」 （[[古川貞雄]]・福島正樹・[[井原今朝男]]・[[青木歳幸]]・[[小平千文]]『長野県の歴史』山川出版社、2003年） 43ページ</ref>。系図には六世紀に[[金刺麻背|麻背]]が科野国造に復したと見え、この任命記事は国造本拠地の移動と考えられ、前方後円墳の中心地が[[長野盆地]]（善光寺平）から飯田盆地へ移ったことと軌を一にしている<ref>「第三節 諏訪の金刺氏 第七章 諏訪神社の古態」『諏訪市史』上巻、1995年、704頁。</ref>。
+From the {{ill|Yayoi period|ja|弥生時代}} to the Kofun period, Shinanu was the {{ill|Chikuma River|ja|千曲川}} basin centered on Sarashina-Hanishina; the central area (Shinanu no Kuni no Miyatsuko) is said to have been from present-day {{ill|Chikuma, Nagano|ja|千曲市}} (former {{ill|Kōshoku|ja|更埴市}}) — where the {{ill|Hanishina Kofun Cluster|ja|埴科古墳群}} remains, with Mori-Shōgunzuka Kofun, the prefecture's largest keyhole-shaped kofun and regarded as the tomb of the Great King of Shinanu, at its head — to southern Nagano City (former Sarashina District), where Senryū-Shōgunzuka Kofun is located<ref>{{ill|Fukushima Masaki|ja|福島正樹}}, "The Formation of Shinano Province," in {{ill|Furukawa Sadao|ja|古川貞雄}}, Fukushima Masaki, {{ill|Ibara Kesao|ja|井原今朝男}}, {{ill|Aoki Toshiyuki|ja|青木歳幸}}, {{ill|Odaira Chifumi|ja|小平千文}}, ''Nagano-ken no Rekishi'' (Yamakawa Shuppansha, 2003), p. 43.</ref>. In the genealogy, it is seen that in the 6th century {{ill|Kanasashi Maze|ja|金刺麻背|lt=Maze|lt_ja=麻背}} was reappointed Shinanu no Kuni no Miyatsuko, and this appointment is considered to indicate the movement of the kuni no miyatsuko base, which coincides with the center of the keyhole-shaped kofun shifting from the {{ill|Nagano Basin|ja|長野盆地}} (Zenkōji Plain) to the Iida Basin<ref>"Section 3: The Kanasashi Clan of Suwa, Chapter 7: The Ancient State of Suwa Shrine," ''Suwa Shishi Jōkan'', 1995, p. 704.</ref>.
 
-科野国は[[7世紀]]に[[令制国]]の[[信濃国]]となった。令制国造としては延喜14年（914年）の時点で国造田<ref>[https://kotobank.jp/word/%E5%9B%BD%E9%80%A0%E7%94%B0-49958 国造田]精選版 日本国語大辞典</ref>を六町支給されている（『[[別聚符宣抄]]』所収 [[太政官符]]）。
+Shinanu Province became the {{ill|ritsuryō province|ja|令制国}} of {{ill|Shinano Province|ja|信濃国}} in the {{ill|7th century|ja|7世紀}}. As a ritsuryō kuni no miyatsuko, as of Engi 14 (914), 6 ''chō'' of {{ill|kuni no miyatsuko fields|ja|国造田}}<ref>[https://kotobank.jp/word/%E5%9B%BD%E9%80%A0%E7%94%B0-49958 Kokuzōden] Seisenban Nihon Kokugo Daijiten</ref> were granted (Daijōkan-fu in ''{{ill|Bessen Fusenshō|ja|別聚符宣抄}}'').
 
-== 氏神 ==
-旧[[諏訪郡]]にあり[[信濃国]][[一宮]]の'''[[諏訪大社]]'''（すわたいしゃ、{{Coord|35|59|53.37|N|138|7|10.09|E|region:JP-20_type:landmark|name=諏訪大社}}）か。[[諏訪大社#下社|下社]]の[[大祝]]は科野国造の後裔金刺氏がつとめたが、[[諏訪氏]]との抗争後に滅ぼされたため同族の[[武居氏]]が[[明治維新]]までつとめていた。ただし多氏は[[皇別]]氏族であるため、本来の国造の氏神は[[皇祖神]]である'''[[生島足島神社]]'''であるともされる。
+== Tutelary Shrine ==
+Possibly '''{{ill|Suwa-taisha|ja|諏訪大社}}''' (''suwa-taisha''; {{Coord|35|59|53.37|N|138|7|10.09|E|region:JP-20_type:landmark|name=Suwa-taisha}}), the {{ill|ichi-no-miya|ja|一宮}} of {{ill|Shinano Province|ja|信濃国}} located in the former {{ill|Suwa District|ja|諏訪郡}}. The {{ill|Ōhōri|ja|大祝}} of the {{ill|Lower Shrine|ja|諏訪大社#下社|lt=Lower Shrine|lt_ja=下社}} was served by the Kanasashi clan, descendants of the Shinanu no Kuni no Miyatsuko, but after conflict with the {{ill|Suwa clan|ja|諏訪氏}} they were destroyed, and the kindred {{ill|Takei clan|ja|武居氏}} served until the {{ill|Meiji Restoration|ja|明治維新}}. However, since the Ō clan is a {{ill|Kōbetsu|ja|皇別}} clan, the original tutelary shrine of the kuni no miyatsuko is also said to be '''{{ill|Ikushima-Tarushima Shrine|ja|生島足島神社}}''', which enshrines {{ill|imperial ancestral deities|ja|皇祖神}}.
 
-=== 関連神社 ===
-* [[科野大宮社]]（しなのおおみやしゃ、{{Coord|36|23|40.04|N|138|15|28.80|E|region:JP-20_type:landmark|name=科野大宮社}}）
-*: [[長野県]][[上田市]]（旧[[小県郡]]）にある神社。[[信濃国]][[総社]]（異説あり）。初代科野国造の武五百建命によって創建されたと伝わる。
-* [[生島足島神社]]（いくしまたるしまじんじゃ）
-*: 生島神と足島神は[[皇室]]にも所縁の深い神であり、神八井耳命の後裔たる科野国造家が北信に定着したことを示しているとも考えられる<ref>「天皇氏族」（2018年）[[宝賀寿男]]</ref>。また本来の国造奉斎社か。
-* [[祝神社]]（はふりじんじゃ）
-*:長野県[[長野市]]に鎮座する神社。生島神と同神と考えられる[[天活玉命|生魂命]]を祀る。
-* [[玉依比賣命神社]]（たまよりひめのみことじんじゃ）
-*:長野県長野市に鎮座する神社。[[神武天皇]]の母親である[[タマヨリビメ (日向神話)|玉依比賣命]]を祀る。
-* [[須須岐水神社 (千曲市)|須須岐水神社]]
-*:長野県[[千曲市]]に鎮座する神社。境内社の祝神社に[[建五百建命|武五百建命]]を祀る。
-* [[山家神社]]（やまがじんじゃ）
-*:長野県上田市に鎮座する神社。国造の祖である[[神八井耳命]]を祀る。
-* [[健御名方冨命彦神別神社 (長野市信州新町)|健御名方富命彦神別神社]]（たけみなかたとみのみことひこかみわけじんじゃ）
-*:長野県長野市に鎮座する神社。国造の祖である神八井耳命を祀る。
-* [[会津比売神社]]（かいづひめじんじゃ）
-*:長野県長野市松代町岩野の[[妻女山]]の麓に鎮座する神社。祭神の[[会津比売神]]は[[出早雄命|伊豆早雄命]]の娘（[[会知早雄命]]の娘の転化か）で、初代科野国造の武五百建命の妻とされる。
-* [[会地早雄神社]]（おうじはやおじんじゃ）
-*:[[埴科郡]][[坂城町]]に鎮座する神社。現在は[[熊野神]]と[[大穴持命]]を祀るが、名称から本来は会知早雄命を祀ったものか。
-* [[墨坂神社 (須坂市)|墨坂神社]]（すみさかじんじゃ）
-*:長野県[[須坂市]]に鎮座する神社。生島足島神社と共に畿内と信濃国にのみ見える。論社が二社存在する。
+=== Related Shrines ===
+* {{ill|Shinano-Ōmiya Shrine|ja|科野大宮社}} (''shinano ōmiya sha''; {{Coord|36|23|40.04|N|138|15|28.80|E|region:JP-20_type:landmark|name=Shinano-Ōmiya Shrine}})
+*: A shrine located in {{ill|Ueda, Nagano|ja|上田市}} (former {{ill|Chiisagata District|ja|小県郡}}), {{ill|Nagano Prefecture|ja|長野県}}. The {{ill|Shinano Province|ja|信濃国}} {{ill|sōja|ja|総社}} (with a variant theory). Traditionally said to have been founded by the first Shinanu no Kuni no Miyatsuko, Takeiotatsu-no-Mikoto.
+* {{ill|Ikushima-Tarushima Shrine|ja|生島足島神社}} (''ikushima-tarushima jinja'')
+*: Ikushima-no-Kami and Tarushima-no-Kami are deities with a close connection to the {{ill|imperial family|ja|皇室}}, and may indicate that the Shinanu no Kuni no Miyatsuko family — descendants of Kamuyaimimi-no-Mikoto — settled in northern Shinano<ref>"Imperial Family Clans" (2018), {{ill|Hōga Toshio|ja|宝賀寿男}}.</ref>. It may also have been the original shrine of the kuni no miyatsuko.
+* {{ill|Hafuri Shrine|ja|祝神社}} (''hafuri jinja'')
+*: A shrine located in {{ill|Nagano City|ja|長野市}}, Nagano Prefecture. It enshrines {{ill|Ame-no-Ikutama-no-Mikoto|ja|天活玉命|lt=Ikumusubi-no-Mikoto|lt_ja=生魂命}}, considered the same deity as Ikushima-no-Kami.
+* {{ill|Tamayorihime-no-Mikoto Shrine|ja|玉依比賣命神社}} (''tamayorihime no mikoto jinja'')
+*: A shrine located in Nagano City, Nagano Prefecture. It enshrines {{ill|Tamayori-hime (Hyūga mythology)|ja|タマヨリビメ (日向神話)|lt=Tamayorihime-no-Mikoto|lt_ja=玉依比賣命}}, mother of {{ill|Emperor Jinmu|ja|神武天皇}}.
+* {{ill|Susuki-Mizu Shrine (Chikuma)|ja|須須岐水神社 (千曲市)|lt=Susuki-Mizu Shrine|lt_ja=須須岐水神社}}
+*: A shrine located in {{ill|Chikuma, Nagano|ja|千曲市}}, Nagano Prefecture. Its auxiliary Hafuri Shrine enshrines {{ill|Takeiotatsu-no-Mikoto|ja|建五百建命|lt=Takeiotatsu-no-Mikoto|lt_ja=武五百建命}}.
+* {{ill|Yamaga Shrine|ja|山家神社}} (''yamaga jinja'')
+*: A shrine located in Ueda City, Nagano Prefecture. It enshrines {{ill|Kamuyaimimi-no-Mikoto|ja|神八井耳命}}, the ancestor of the kuni no miyatsuko.
+* {{ill|Takeminakatatomi-no-Mikoto-Hiko-Kamiwake Shrine (Nagano, Shinshū-Shin-machi)|ja|健御名方冨命彦神別神社 (長野市信州新町)|lt=Takeminakatatomi-no-Mikoto-Hiko-Kamiwake Shrine|lt_ja=健御名方富命彦神別神社}} (''takeminakatatomi no mikoto hiko kamiwake jinja'')
+*: A shrine located in Nagano City, Nagano Prefecture. It enshrines Kamuyaimimi-no-Mikoto, the ancestor of the kuni no miyatsuko.
+* {{ill|Aizuhime Shrine|ja|会津比売神社}} (''aizuhime jinja'')
+*: A shrine located at the foot of {{ill|Mount Saijo|ja|妻女山}} in Iwano, Matsushiro-chō, Nagano City, Nagano Prefecture. The enshrined deity {{ill|Aizuhime-no-Kami|ja|会津比売神}} is said to be the daughter of {{ill|Izuhayao-no-Mikoto|ja|出早雄命|lt=Izuhayao-no-Mikoto|lt_ja=伊豆早雄命}} (or possibly transformed from daughter of {{ill|Aichi-hayao-no-Mikoto|ja|会知早雄命}}), and is said to be the wife of the first Shinanu no Kuni no Miyatsuko, Takeiotatsu-no-Mikoto.
+* {{ill|Aichi-Hayao Shrine|ja|会地早雄神社}} (''ōji-hayao jinja'')
+*: A shrine located in {{ill|Sakaki, Nagano|ja|坂城町}} in {{ill|Hanishina District|ja|埴科郡}}. Currently enshrining {{ill|Kumano-no-Kami|ja|熊野神}} and {{ill|Ōanamochi-no-Mikoto|ja|大穴持命}}, but based on its name it may originally have enshrined Aichi-Hayao-no-Mikoto.
+* {{ill|Sumisaka Shrine (Suzaka)|ja|墨坂神社 (須坂市)|lt=Sumisaka Shrine|lt_ja=墨坂神社}} (''sumisaka jinja'')
+*: A shrine located in {{ill|Suzaka, Nagano|ja|須坂市}}, Nagano Prefecture. Along with Ikushima-Tarushima Shrine, it appears only in the Kinai and Shinano Province. Two candidate shrines exist.
 
-=== 墓 ===
-* '''[[川柳将軍塚古墳]]'''
-*:長野県[[長野市]]（旧[[更級郡]]）にある[[前方後円墳]]で、長野盆地（通称：善光寺平）の中でも最古級にあたる[[4世紀]]前期の築造とされる。発見当時は多数の[[銅鏡]]や[[勾玉|玉類]]、[[埴輪]]が発見されている。
-* '''[[森将軍塚古墳]]'''（{{Coord|36|31|52.86|N|138|08|14.02|E|region:JP-20_type:landmark|name=森将軍塚古墳}}）
-*: 長野県[[千曲市]]（旧[[埴科郡]]）にある前方後円墳で、[[埴科古墳群]]（はにしなこふんぐん）に属する。築造は長野県内の前方後円墳の中でも最古級にあたる4世紀中期とされており、初代科野国造の建五百建命の墓とする説がある<ref>{{Cite web|和書|url=http://www.nihonjiten.com/data/263245.html |title=科野国造 （ 信濃 ）|publisher= 日本辞典|accessdate=2018-07-06}}</ref>。
-*'''[[王子塚古墳]]'''
-*: 長野県[[上田市]]（旧[[小県郡]]）にある[[帆立貝式古墳]]で、上田市唯一の帆立貝式古墳。築造時期は[[5世紀]]中期から[[6世紀]]前半と見られる。
-* '''[[二子塚古墳 (上田市)|二子塚古墳]]'''
-*: 長野県上田市にある前方後円墳で、上田市唯一かつ東信最東端の前方後円墳。初代国造の武五百建命の墓と伝わり、墳丘上に武五百建命を祀る二子神社があるが、築造は森将軍塚古墳よりも遅い6世紀前半とされており、崇神天皇の御代に国造に任命されたとする記録と矛盾する。
+=== Tombs ===
+* '''{{ill|Senryū-Shōgunzuka Kofun|ja|川柳将軍塚古墳}}'''
+*: A {{ill|keyhole-shaped kofun|ja|前方後円墳}} in {{ill|Nagano City|ja|長野市}} (former {{ill|Sarashina District|ja|更級郡}}), Nagano Prefecture; considered one of the oldest kofun in the Nagano Basin (commonly: Zenkōji Plain), built in the early {{ill|4th century|ja|4世紀}}. At the time of discovery, many {{ill|bronze mirrors|ja|銅鏡}}, {{ill|beads|ja|勾玉|lt=beads|lt_ja=玉類}}, and {{ill|haniwa|ja|埴輪}} were discovered.
+* '''{{ill|Mori-Shōgunzuka Kofun|ja|森将軍塚古墳}}''' ({{Coord|36|31|52.86|N|138|08|14.02|E|region:JP-20_type:landmark|name=Mori-Shōgunzuka Kofun}})
+*: A keyhole-shaped kofun in {{ill|Chikuma, Nagano|ja|千曲市}} (former {{ill|Hanishina District|ja|埴科郡}}), Nagano Prefecture, belonging to the {{ill|Hanishina Kofun Cluster|ja|埴科古墳群}} (''hanishina kofun-gun''). Built in the mid-4th century, making it one of the oldest keyhole-shaped kofun in Nagano Prefecture; there is a theory that it is the tomb of the first Shinanu no Kuni no Miyatsuko, Takeiotatsu-no-Mikoto<ref>{{Cite web|和書|url=http://www.nihonjiten.com/data/263245.html |title=科野国造 （ 信濃 ）|publisher= 日本辞典|accessdate=2018-07-06}}</ref>.
+*'''{{ill|Ōjizuka Kofun|ja|王子塚古墳}}'''
+*: A {{ill|scallop-shaped kofun|ja|帆立貝式古墳}} in {{ill|Ueda, Nagano|ja|上田市}} (former {{ill|Chiisagata District|ja|小県郡}}), Nagano Prefecture; the only scallop-shaped kofun in Ueda City. Built between the mid-{{ill|5th century|ja|5世紀}} and the first half of the {{ill|6th century|ja|6世紀}}.
+* '''{{ill|Futagozuka Kofun (Ueda)|ja|二子塚古墳 (上田市)|lt=Futagozuka Kofun|lt_ja=二子塚古墳}}'''
+*: A keyhole-shaped kofun in Ueda City, Nagano Prefecture; the only keyhole-shaped kofun in Ueda City and the easternmost in eastern Shinano. Said to be the tomb of the first kuni no miyatsuko, Takeiotatsu-no-Mikoto, with a Futago Shrine on the mound enshrining Takeiotatsu-no-Mikoto; however, its construction is considered to be the first half of the 6th century, later than the Mori-Shōgunzuka Kofun, which contradicts the record of his being appointed kuni no miyatsuko during the reign of Emperor Sujin.
 
-== 人物 ==
-* '''[[武五百建命|健五百武命]]'''（たけいおたけ の みこと/たけいおたつ の みこと、建五百建命、武五百建命）
-*: 『[[先代旧事本紀]]』によれば、[[崇神天皇|崇神朝]]の初代科野国造であり、[[神八井耳命]]の4世孫とされる。
+== People ==
+* '''{{ill|Takeiotake-no-Mikoto|ja|武五百建命|lt=Takeiotake-no-Mikoto|lt_ja=健五百武命}}''' (''takeiotake no mikoto'' / ''takeiotatsu no mikoto''; Takeiotatsu-no-Mikoto, Takeiotatsu-no-Mikoto)
+*: According to the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'', the first Shinanu no Kuni no Miyatsuko of the {{ill|Emperor Sujin|ja|崇神天皇|lt=Emperor Sujin|lt_ja=崇神朝}} court, said to be the 4th-generation descendant of {{ill|Kamuyaimimi-no-Mikoto|ja|神八井耳命}}.
 
-=== 倭系百済官僚 ===
-'''科野'''の[[氏]]を持つ[[百済|倭系百済官僚]]。科野国造軍として朝鮮に出兵した国造の子弟が、現地人の妻との間に残した子孫であるとされる<ref>「第三節 大和王権と科野のクニ」『[[長野県史]] 通史編 第一巻 原始・古代』1989年、312頁。</ref>。ただし、「物部莫奇武連」「紀臣奈率彌麻沙」のような他の倭系百済官人とは異なり、[[カバネ|姓]]を有している様子が見られないので、ここでの「シナノ氏」は「科野国造の一族」という意味ではなく、[[氏姓制度]]が成立する以前に朝鮮に渡った信濃の人間が「シナノの人の〇〇」といったニュアンスで呼ばれていた（＝シナノは氏ではない）とする説も存在する<ref name="#1"/>。信濃の人間が外交に従事したのは、ヤマト王権内で信濃の人間が一定の役割を担っており、そのようになったのは、渡来人によって信濃に軍事行動の要である馬の文化が伝えられたからであると考えられる<ref name="#3">佐藤雄一「古代信濃の氏族と信仰」（2021年、吉川弘文館）</ref>。
-* [[斯那奴阿比多]]（しなぬ（の）あひた）
-*: [[継体天皇]]紀、[[欽明天皇]]紀に登場する[[百済]]の使者。[[小林敏男 (歴史学者)|小林敏男]]は、「科野」の地名が「シナ（段差）」に由来する説を取った上で、シナノという地名の発生地を埴科・更科エリアであるとし、斯那奴阿比多は更埴エリア出身の人物であるとした<ref name="#2"/>。
-* [[斯那奴次酒]]（しなぬ（の）しす、科野次酒）
-*: 欽明天皇紀に登場する百済の上部德率、施德、内臣德率。
-* [[科野新羅]]（しなぬ（の）しらき）
-*: 欽明天皇紀に登場する百済の上部奈率。
+=== Wa-lineage Baekje Officials ===
+{{ill|Wa-lineage Baekje officials|ja|百済|lt=Wa-lineage Baekje officials|lt_ja=倭系百済官僚}} bearing the '''Shinanu''' {{ill|uji|ja|氏}}. They are said to be descendants of the sons and brothers of the kuni no miyatsuko who were dispatched to Korea as the Shinanu no Kuni no Miyatsuko army, born to local wives<ref>"Section 3: The Yamato Court and the Shinanu no Kuni," ''{{ill|Nagano-kenshi|ja|長野県史}} Tsūshi-hen Vol. 1: Primitive and Ancient'', 1989, p. 312.</ref>. However, unlike other Wa-lineage Baekje officials such as "Mononobe-no-Makamu-no-Muraji" and "Ki-no-Omi-Naso-Mimasa," they do not appear to have a {{ill|kabane|ja|カバネ|lt=kabane|lt_ja=姓}}; so there is also a theory that "Shinanu clan" here does not mean "a family of the Shinanu no Kuni no Miyatsuko," but rather that Shinanu people who migrated to Korea before the establishment of the {{ill|uji-kabane system|ja|氏姓制度}} were called "X of the Shinanu people" (i.e., Shinanu is not a clan name)<ref name="#1"/>. Shinano people engaged in diplomacy because Shinano people played a certain role within the Yamato Court, which is considered to have come about because the culture of the horse — essential to military action — was transmitted to Shinano by {{ill|toraijin|ja|渡来人}}<ref name="#3">Satō Yūichi, "Kodai Shinano no Shizoku to Shinkō" (2021, Yoshikawa Kōbunkan).</ref>.
+* {{ill|Shinanu-no-Abita|ja|斯那奴阿比多}} (''shinanu (no) ahita'')
+*: A Baekje envoy appearing in the Emperor Keitai and Kinmei chronicles. {{ill|Kobayashi Toshio|ja|小林敏男 (歴史学者)|lt=Kobayashi Toshio|lt_ja=小林敏男}} takes the view that the place name "Shinanu" derives from "Shina" (a level difference), and locates the origin of the Shinano place name in the Hanishina-Sarashina area, considering Shinanu-no-Abita a figure from the Kōshoku area<ref name="#2"/>.
+* {{ill|Shinanu-no-Shisu|ja|斯那奴次酒}} (''shinanu (no) shisu''; Shinanu-no-Shisu)
+*: A Baekje Jōbu-Tokusotsu, Shitoku, Naishin-Tokusotsu appearing in the Emperor Kinmei chronicle.
+* {{ill|Shinanu-no-Shiraki|ja|科野新羅}} (''shinanu (no) shiraki'')
+*: A Baekje Jōbu-Naso appearing in the Emperor Kinmei chronicle.
 
-== 子孫 ==
-=== 科野氏{{efn|ただし、「物部莫奇武連」「紀臣奈率彌麻沙」のような他の倭系百済官人とは異なり、[[カバネ|姓]]を有している様子が見られないので、ここでの「シナノ氏」は「科野国造の一族」という意味ではなく、[[氏姓制度]]が成立する以前に朝鮮に渡った信濃の人間が「シナノの人の〇〇」といったニュアンスで呼ばれていた（＝シナノは氏ではない）とする説も存在する<ref name="#1"/>。}} ===
-* [[科野友麻呂]]
-*: [[奈良時代]]の豪族。百済系の帰化人で、[[天平宝字]]5年に清田造姓を賜る。
-* [[科野石弓]]
-*: 奈良時代の豪族。百済系の帰化人で、[[天平神護]]2年に従七位上で石橋連姓を賜る。
-* [[科野虫麻呂]]
-*: [[天平宝字]]2年（[[758年]]）9月に東寺写経所から布施布を受け（このとき[[白丁]]であった）、同3年には前春宮舎人・少初位下となり、同6年2月には石山院大般若経所に召され、翌月には大舎人・少初位下となった。後に左大舎人ともなっており、[[天平神護]]元年（[[765年]]）には45歳であったという<ref name="#3"/>。
-* [[信濃浜足]]
-*: 奈良時代の豪族。[[天平]]15年（[[743年]]）5〜9月に写疏所書生として写経に従事した<ref name="#3"/>。
+== Descendants ==
+=== Shinanu clan{{efn|However, unlike other Wa-lineage Baekje officials such as "Mononobe-no-Makamu-no-Muraji" and "Ki-no-Omi-Naso-Mimasa," they do not appear to have a {{ill|kabane|ja|カバネ|lt=kabane|lt_ja=姓}}; so there is also a theory that "Shinanu clan" here does not mean "a family of the Shinanu no Kuni no Miyatsuko," but rather that Shinanu people who migrated to Korea before the establishment of the {{ill|uji-kabane system|ja|氏姓制度}} were called "X of the Shinanu people" (i.e., Shinanu is not a clan name)<ref name="#1"/>.}} ===
+* {{ill|Shinanu-no-Tomomaro|ja|科野友麻呂}}
+*: A {{ill|Nara period|ja|奈良時代}} {{ill|gōzoku|ja|豪族}}. A Baekje-lineage naturalized person; granted the surname Kiyota-no-Miyatsuko in {{ill|Tenpyō-hōji|ja|天平宝字}} 5.
+* {{ill|Shinanu-no-Iwayumi|ja|科野石弓}}
+*: A Nara period gōzoku. A Baekje-lineage naturalized person; granted the surname Ishibashi-no-Muraji at Jū-shichi-i-jō in {{ill|Tenpyō-jingo|ja|天平神護}} 2.
+* {{ill|Shinanu-no-Mushimaro|ja|科野虫麻呂}}
+*: In {{ill|Tenpyō-hōji|ja|天平宝字}} 2 ({{ill|758|ja|758年}}) Month 9, he received distribution cloth from the Tōdai-ji copying bureau (he was a {{ill|hakuchō|ja|白丁}} at this time); in the 3rd year, he became a former tōgū-toneri at Shō-sho-i-ge; in the 6th year Month 2 he was summoned to the Ishiyama-in Daihannya-kyō-sho; the following month he became an ōtoneri at Shō-sho-i-ge. He later also became a sa-ōtoneri; in {{ill|Tenpyō-jingo|ja|天平神護}} 1 ({{ill|765|ja|765年}}) he is said to have been 45 years old<ref name="#3"/>.
+* {{ill|Shinano-no-Hamatari|ja|信濃浜足}}
+*: A Nara period gōzoku. In {{ill|Tenpyō|ja|天平}} 15 ({{ill|743|ja|743年}}) Months 5 to 9, he engaged in sutra copying as a Shashoso scribe<ref name="#3"/>.
 
-=== [[金刺氏]] ===
-* [[金刺舎人若島|金刺若嶋]]
-*: 奈良時代の女性。[[女嬬]]。[[外]][[従五位下]]に叙せられ、[[連]]姓を賜った。
-* [[金刺舎人八麻呂|金刺八麻呂]]
-*: 奈良時代の[[豪族]]。[[伊那郡]]大領。[[藤原仲麻呂の乱]]で活躍した。外従五位下。
-* [[金刺舎人貞長|金刺貞長]]
-*: [[平安時代]]の豪族。参河介。[[多氏|大朝臣]]姓を賜った。外従五位下。
-* [[金刺正長]]
-*: 平安時代の豪族。[[埴科郡]]大領。外従五位下。
+=== {{ill|Kanasashi clan|ja|金刺氏}} ===
+* {{ill|Kanasashi-Toneri Wakashima|ja|金刺舎人若島|lt=Kanasashi Wakashima|lt_ja=金刺若嶋}}
+*: A Nara period woman. {{ill|Nyoju|ja|女嬬}}. She was granted {{ill|Ge|ja|外}} {{ill|Jū-go-i-ge|ja|従五位下}} and the {{ill|Muraji|ja|連}} kabane.
+* {{ill|Kanasashi-Toneri Hachimaro|ja|金刺舎人八麻呂|lt=Kanasashi Hachimaro|lt_ja=金刺八麻呂}}
+*: A Nara period {{ill|gōzoku|ja|豪族}}. {{ill|Ina District|ja|伊那郡}} taryō. He was active in {{ill|Fujiwara no Nakamaro Rebellion|ja|藤原仲麻呂の乱}}. Ge Jū-go-i-ge.
+* {{ill|Kanasashi-Toneri Sadanaga|ja|金刺舎人貞長|lt=Kanasashi Sadanaga|lt_ja=金刺貞長}}
+*: A {{ill|Heian period|ja|平安時代}} gōzoku. Mikawa-no-suke. Granted the {{ill|Ō clan|ja|多氏|lt=Ōnoasomi|lt_ja=大朝臣}} kabane. Ge Jū-go-i-ge.
+* {{ill|Kanasashi Masanaga|ja|金刺正長}}
+*: A Heian period gōzoku. {{ill|Hanishina District|ja|埴科郡}} taryō. Ge Jū-go-i-ge.
 
-=== [[他田氏]] ===
-* [[他田国麻呂]]
-*: 奈良時代の豪族。[[筑摩郡]]大領。他田大島の子。
-* [[他田藤雄]]
-*: 奈良時代の豪族。[[小県郡]]権少領。外従五位下。
-* [[他田大島]]
-*: 奈良時代の豪族。防人を統べる[[国造丁]]。[[万葉集]]所収の[[防人歌]]を詠んだ。
-* [[他田千世売]]
-*: 奈良時代の女性。爵2級を賜った。
-* [[他田真樹]]
-*: 平安時代の豪族。[[小県郡]]郡司。[[平貞盛]]と[[平将門]]が[[信濃国分寺]]付近で戦った際に戦死。
+=== {{ill|Osada clan|ja|他田氏}} ===
+* {{ill|Osada-no-Kunimaro|ja|他田国麻呂}}
+*: A Nara period gōzoku. {{ill|Chikuma District|ja|筑摩郡}} taryō. Son of Osada Ōshima.
+* {{ill|Osada Fujio|ja|他田藤雄}}
+*: A Nara period gōzoku. {{ill|Chiisagata District|ja|小県郡}} gon-shōryō. Ge Jū-go-i-ge.
+* {{ill|Osada Ōshima|ja|他田大島}}
+*: A Nara period gōzoku. A {{ill|kokuzō-tei|ja|国造丁}} who commanded the {{ill|sakimori|ja|防人|lt=sakimori|lt_ja=防人}}. Composed a sakimori poem included in the ''{{ill|Man'yōshū|ja|万葉集}}''.
+* {{ill|Osada Chiyome|ja|他田千世売}}
+*: A Nara period woman. Granted 2 ranks of nobility.
+* {{ill|Osada Maki|ja|他田真樹}}
+*: A Heian period gōzoku. {{ill|Chiisagata District|ja|小県郡}} district administrator. Died in battle when {{ill|Taira no Sadamori|ja|平貞盛}} and {{ill|Taira no Masakado|ja|平将門}} fought near {{ill|Shinano Kokubun-ji|ja|信濃国分寺}}.
 
-== 偽系図・「異本阿蘇系図」 ==
-[[昭和]]31年（[[1956年]]）、[[田中卓]]は[[阿蘇氏]]の系図を求めて宮地の阿蘇家を訪ねた。阿蘇氏から提供されたのは「中田憲信所贈」と記された「異本阿蘇系図」というものであった。田中はこれを江戸中期以降に成立したものと考えたが、実際は[[明治]]期に[[中田憲信]]によって作成されたものであった。その系図の内容は、「武五百建命（[[健磐龍命]]）を祖として、一方は科野国造から[[諏訪大社]]の大祝家と繋がり、一方は[[阿蘇国造]][[速瓶玉命]]を祖として阿蘇大宮司家に繋がるものであるが、その間には「評督」から「郡擬大領」と[[評]]から[[郡]]に行政区分が移ったこと、「宇治」という姓を与えられたこと、「阿蘇宮司」に任ぜられていることなど、古代律令制の中の阿蘇氏の地位や阿蘇宮司の始まり、なぜ中世に大宮司家が「宇治」を称するかなどの回答が全て盛り込まれていた。
+== Forged Genealogy / "Variant Aso Genealogy" ==
+In {{ill|Shōwa|ja|昭和}} 31 ({{ill|1956|ja|1956年}}), {{ill|Tanaka Takashi|ja|田中卓}} visited the Aso family in Miyaji in search of the genealogy of the {{ill|Aso clan|ja|阿蘇氏}}. What he was provided with from the Aso family was a document called the "Variant Aso Genealogy" marked "Presented by Nakata Kenshin." Tanaka considered this to have been established in the mid-Edo period or later, but in reality it was produced during the Meiji era by {{ill|Nakata Kenshin|ja|中田憲信}}. The content of the genealogy was: with Takeiotatsu-no-Mikoto ({{ill|Takeiwatatsu-no-Mikoto|ja|健磐龍命}}) as the ancestor, on one hand it connects from the Shinanu no Kuni no Miyatsuko to the Ōhōri family of {{ill|Suwa-taisha|ja|諏訪大社}}, and on the other hand, with {{ill|Aso no Kuni no Miyatsuko|ja|阿蘇国造}} {{ill|Hayamikatama-no-Mikoto|ja|速瓶玉命}} as the ancestor, it connects to the Aso Ōgūji family. Between them, all the answers are contained regarding the shift of administrative divisions from "{{ill|hyō|ja|評}}" to "{{ill|gun|ja|郡}}" — from "Hyōdoku" to "Gun-gi-taryō" — the granting of the surname "Uji," appointment as "Aso Gūji," and other things such as the position of the Aso clan within the ancient ritsuryō system, the beginning of the Aso Gūji, and why the Ōgūji family took the name "Uji" in the medieval period.
 
-元来、阿蘇氏の系図は、『[[続群書類従]]』に収録されていた。これは、鎌倉時代における伝説上の祖・惟人から[[阿蘇惟光]]、[[阿蘇惟善]]まで、惟善の子・[[阿蘇友貞]]の時代までに伝わっていた所伝を記録していた「阿蘇継図」に、[[神武天皇]]から惟人までの神系図を加えた系図が友貞の子・[[阿蘇友隆]]の時代までに成立し、[[貞享]]年間に[[丸山可澄]]が書写したものである。
+Originally, the Aso clan genealogy was contained in ''{{ill|Zoku Gunsho Ruijū|ja|続群書類従}}''. This is a genealogy that was established by the time of Tomotaka, son of Tomosada, recording a "Aso Keizu" that preserved the traditions transmitted down to the time of Tomosada's son, from Koreto — the legendary ancestor of the Kamakura period — through {{ill|Aso Koremitsu|ja|阿蘇惟光}} and {{ill|Aso Korezen|ja|阿蘇惟善}}; combined with a divine genealogy from {{ill|Emperor Jinmu|ja|神武天皇}} to Koreto, and copied by {{ill|Maruyama Kasumi|ja|丸山可澄}} in the {{ill|Jōkyō|ja|貞享}} era.
 
-しかし、『続群書類従』収録の阿蘇氏系図が成立するまでに、異本系図は現れない。異本系図のように詳細な系図があれば、阿蘇氏の系図が作成される際に採用されないはずがなく、中世阿蘇文書の中にも違反系図を匂わせるような記述は全く見られない。この異本系の中には「中田憲信贈」・「中田憲信編」という注記が見られることが注目されるが、それは、この異本系図が外部から提供されたものであったことを表す。
+However, the variant genealogy does not appear prior to the establishment of the Aso clan genealogy in ''Zoku Gunsho Ruijū''. If there had been such a detailed variant genealogy, it would surely have been adopted when the Aso clan genealogy was being compiled, and no description in medieval Aso documents even hints at a variant genealogy. It is noteworthy that annotations such as "Nakata Kenshin Presented" and "Nakata Kenshin Edited" are seen in this variant genealogy, which indicates that this variant genealogy was provided from outside.
 
-昭和58年（[[1983年]]）には、[[飯田瑞穂]]が「古いところで、国造→郡督→大領という肩書きの変遷を示す例がいくつか目にとまった」と述べ、「系図作成の専門家はいつの世にもあり、このやうな背景があったと考へることはさほど見当違ひではあるまい。[[鈴木真年]]など、国学者で、その世界に名を売った者もある。国造→郡督→大領という変遷は、それらの人々の知識・理解の反映であった可能性があろう」と暗に異本系図が偽系図であることを指摘されている。
+In Shōwa 58 ({{ill|1983|ja|1983年}}), {{ill|Iida Mizuho|ja|飯田瑞穂}} stated, "At an early point, I noticed several examples showing the title transition kuni no miyatsuko → gun-doku → taryō," and implicitly pointed out that the variant genealogy was a forgery: "Professional genealogy compilers have existed in every era, and it would not be far off the mark to think that such a background existed. Among them, there are also those who were kokugaku scholars like {{ill|Suzuki Matoshi|ja|鈴木真年}}, who gained reputation in that world. The transition kuni no miyatsuko → gun-doku → taryō may have been a reflection of those people's knowledge and understanding."
 
-また、[[平成]]8年（[[1996年]]）には、[[村崎真智子]]が異本阿蘇系図の信憑性を否定した。村崎は異本系の阿蘇系図の分類、系統によって、異本系に阿蘇系図の原点は明治初期の中田憲信本に始まることを明らかにして、また一部に類似する部分を持つ異本阿蘇系図と諏訪の「神氏系図」の関連所論について紹介している。この神氏系図とされるものは、[[明治]]17年（[[1884年]]）に[[諏訪大社]]上社の旧大祝家で見出されたというもので、『修補諏訪氏系図』の補記、[[武居幸重]]の「阿蘇氏系図一件」、[[宮地直一]]の『諏訪史』などから、村崎は諏訪大社宮司の[[飯田武郷]]が文案を作り、中田憲信が系図としたと結論づけざるを得ないとした。すなわち、異本阿蘇系図の中の阿蘇国造家・科野国造家の系図には後世の偽作があり、これに飯田と中田が関わっていたとする。
+Also, in {{ill|Heisei|ja|平成}} 8 ({{ill|1996|ja|1996年}}), {{ill|Murasaki Machiko|ja|村崎真智子}} denied the credibility of the variant Aso genealogy. Murasaki, through classification of the variant Aso genealogy and lineage analysis, clarified that the origin of the variant Aso genealogy began with Nakata Kenshin's manuscript in the early Meiji era, and also introduced discussion of the relation between the variant Aso genealogy and the Suwa "Shin-shi Keizu," which partially resemble each other. The so-called "Shin-shi Keizu" is said to have been discovered in the former Ōhōri family of the Upper Shrine of Suwa-taisha in {{ill|Meiji|ja|明治}} 17 ({{ill|1884|ja|1884年}}); from the supplement to ''Shūho Suwa-shi Keizu'', {{ill|Takei Kōshige|ja|武居幸重}}'s "Aso Clan Genealogy Case," and {{ill|Miyaji Naokazu|ja|宮地直一}}'s ''Suwa-shi'', Murasaki concluded that one must conclude that the Suwa-taisha Gūji {{ill|Iida Taketoshi|ja|飯田武郷}} drafted the text and Nakata Kenshin made it into the genealogy. In other words, the Aso no Kuni no Miyatsuko family and the Shinanu no Kuni no Miyatsuko family genealogies in the variant Aso genealogy contain later forgeries, and Iida and Nakata were involved in these.
 
-飯田と中田、それに中田と同じく偽系図の制作者である[[鈴木真年]]は、『[[和学総覧]]』を勘案すれば、[[国学者]]である[[平田銕胤]]の門下生として机を並べた兄弟弟子であった。彼ら国学者にとって、郡評の歴史や関係は『[[新編常陸国誌]]』など周知の知識であった。飯田、中田、鈴木は、偽作した系図を疑う者が現れることを警戒した。そのため、偽作した系図に「国造→郡督→大領という肩書きの変遷を示す例」を注記することで、系図の信憑性が高まると考えた。実際に、異本阿蘇系図を発見した田中は、慎重に系図を検討して、さらに[[江戸時代]]末期の国学者が「[[評]]」に関する知識を持っていたことをも知りながら、「全く偽作できないわけではないが、そこまで疑う必要もなかろう」と楽観的な判断を下した。
+Iida, Nakata, and Suzuki Matoshi, another forger of genealogies like Nakata, were, judging from ''{{ill|Wagaku Sōran|ja|和学総覧}}'', fellow disciples of the {{ill|kokugaku|ja|国学者|lt=kokugaku scholar|lt_ja=国学者}} {{ill|Hirata Kanetane|ja|平田銕胤}}. For these kokugaku scholars, the history and relationship of gun-hyō were widely known knowledge, as in ''{{ill|Shinpen Hitachi Kokushi|ja|新編常陸国誌}}'' and elsewhere. Iida, Nakata, and Suzuki were wary of people who might suspect the forged genealogy. So they thought that annotating the forged genealogy with "examples showing the title transition kuni no miyatsuko → gun-doku → taryō" would increase the credibility of the genealogy. In fact, Tanaka, who discovered the variant Aso genealogy, carefully examined the genealogy and, while knowing that late Edo-period kokugaku scholars had knowledge of "{{ill|hyō|ja|評}}," made the optimistic judgment that "while it is not impossible to completely fabricate, there is no need to doubt to that extent."
 
-[[間枝遼太郎]]は、『阿蘇氏略系図』に記された[[阿蘇氏]]と科野国造氏が同族であるという説や、「評督」といった役職の時代的整合性は先人たちの歴史学的検討によって既に否定されたとし、その上で『阿蘇氏略系図』と大祝本「神氏系図」が'''古代の歴史的事実を明らかにする力は持たない'''系図であると証明した<ref name="間枝遼太郎2023"/>。
+{{ill|Aizawa Ryōtarō|ja|間枝遼太郎}} held that the theory recorded in the ''Aso Clan Abbreviated Genealogy'' that the {{ill|Aso clan|ja|阿蘇氏}} and the Shinanu no Kuni no Miyatsuko clan were of the same lineage, and the temporal consistency of titles such as "Hyōdoku," had already been refuted by the historical investigations of predecessors; on this basis, he demonstrated that the ''Aso Clan Abbreviated Genealogy'' and the Hafuri-hon ''Shin-shi Keizu'' '''lack the power to clarify ancient historical facts'''<ref name="間枝遼太郎2023"/>.
 
-大祝本「神氏系図」は、
-* [[建御名方神]]から'''有員'''（[[延暦]]年間）までの系譜を述べた文章系図部分に、[[延文]]元年（[[1356年]]）に成立した[[諏訪円忠]]作『[[諏訪大明神画詞]]』や、円忠の5世孫・[[諏訪貞通]]が[[延徳]]2年（[[1490年]]）〜[[永正]]元年（[[1504年]]）頃に編纂した前田本「神氏系図」内の文章を引用・改竄した箇所が多数存在していること
-* 『[[諏訪大明神画詞]]』から引用・改竄した結果、本来の用法ではあり得ない歪な文章が誕生してしまっていること（「始祖」という語が氏族ではなく個人に対して用いられている）
-*神氏の祖である諏訪大明神を「[[天照大神]]御弟、[[スサノオ|健速須佐之男命]]六世孫、[[オオクニヌシ|大名持命]]第二子、[[建御名方神|御名方富命]]是也」としているが、[[大国主命]]を[[素戔嗚尊]]の「6世孫」とするのは『[[古事記]]』の説であり（『[[日本書紀]]』や『[[先代旧事本紀]]』では親子関係にあるとされる）、『古事記』は[[本居宣長]]の『[[古事記伝]]』以前には人々が読む機会は著しく限られていたこと
-* 「[[茨木国造]]・許々意命（こころのみこと）」という人物が科野国造に任じられ、後に放逐されたという記述があるが、これは『[[常陸国風土記]]』に見える多祁許呂命（たけころのみこと、『[[新撰姓氏録]]』では建凝命、『[[先代旧事本紀]]』では茨城国造祖建許呂命のことであり、「許々意」という特異な表記方法は[[江戸時代]]に創作された[[偽書]]である『[[先代旧事本紀大成経]]』にのみ見えること
-*許々意命（建許呂命）が科野国造と関連しているという記述も『[[先代旧事本紀大成経]]』にのみ見えること
-から、江戸時代以降に創作された系図であることが明らかとなった<ref name="間枝遼太郎2023"/>。
+The Hafuri-hon ''Shin-shi Keizu'':
+* In the prose genealogy section describing the lineage from {{ill|Takeminakata-no-Kami|ja|建御名方神}} to '''Arikazu''' (during the {{ill|Enryaku|ja|延暦}} era), there are numerous places where it quotes and tampers with the text of the ''{{ill|Suwa-Daimyōjin Ekotoba|ja|諏訪大明神画詞}}'', established in {{ill|Enbun|ja|延文}} 1 ({{ill|1356|ja|1356年}}) by {{ill|Suwa Enchū|ja|諏訪円忠}}, and of the Maeda-hon ''Shin-shi Keizu'' compiled around {{ill|Entoku|ja|延徳}} 2 ({{ill|1490|ja|1490年}}) to {{ill|Eishō|ja|永正}} 1 ({{ill|1504|ja|1504年}}) by Enchū's 5th-generation descendant {{ill|Suwa Sadamichi|ja|諏訪貞通}}.
+* As a result of quoting and tampering with the ''{{ill|Suwa-Daimyōjin Ekotoba|ja|諏訪大明神画詞}}'', distorted sentences have been created that cannot exist in the original usage (the term "founder" is used for an individual rather than for a clan).
+*Regarding the origin of the Shin clan's Suwa-Daimyōjin, it states: "Younger brother of {{ill|Amaterasu|ja|天照大神}}, sixth-generation descendant of {{ill|Susanoo|ja|スサノオ|lt=Take-haya-Susano-o-no-Mikoto|lt_ja=健速須佐之男命}}, second son of {{ill|Ōkuninushi|ja|オオクニヌシ|lt=Ōnamochi-no-Mikoto|lt_ja=大名持命}} — {{ill|Takeminakata-no-Kami|ja|建御名方神|lt=Minakata-Tomi-no-Mikoto|lt_ja=御名方富命}} is this one." However, the view that {{ill|Ōkuninushi|ja|大国主命}} was the "6th-generation descendant" of {{ill|Susanoo|ja|素戔嗚尊}} is the ''{{ill|Kojiki|ja|古事記}}'' theory (in ''{{ill|Nihon Shoki|ja|日本書紀}}'' and ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'', they are in a parent-child relationship), and the ''Kojiki'' was hardly available for people to read until {{ill|Motoori Norinaga|ja|本居宣長}}'s ''{{ill|Kojiki-den|ja|古事記伝}}''.
+* There is a description that a figure named "{{ill|Ibaraki no Kuni no Miyatsuko|ja|茨木国造}} Kokoro-no-Mikoto (''kokoro no mikoto'')" was appointed Shinanu no Kuni no Miyatsuko and later expelled. However, this is Takekoro-no-Mikoto (''takekoro no mikoto'') — whom the ''{{ill|Hitachi no Kuni Fudoki|ja|常陸国風土記}}'' calls Takekori-no-Mikoto, the ''{{ill|Shinsen Shōjiroku|ja|新撰姓氏録}}'' calls Takekori-no-Mikoto, and the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' calls Takekori-no-Mikoto, ancestor of the Ibaraki no Kuni no Miyatsuko — and such a peculiar notation "Kokoro" only appears in the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}'', a {{ill|forgery|ja|偽書}} created in the {{ill|Edo period|ja|江戸時代}}.
+*The description that Kokoro-no-Mikoto (Takekori-no-Mikoto) is connected with the Shinanu no Kuni no Miyatsuko also only appears in the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}''.
+— from these points, it has become clear that the genealogy was created after the Edo period<ref name="間枝遼太郎2023"/>.
 
-また、『阿蘇氏略系図』は、大祝本「神氏系図」と、延川和彦著・飯田好太郎補『修補諏訪氏系図 続編』が引用する「金刺氏略系図」、さらに[[阿蘇氏]]の系図が組み合わされて成立している（間枝は「再再構成」と呼んでいる）。これらの系図が組み合わされる過程で、京都諏訪氏（[[諏訪円忠]]やその5世孫・[[諏訪貞通]]）に伝えられた、[[太子信仰]]が取り込まれた[[建御名方神]]を祖とする[[用明天皇]]2年（[[587年]]）の大祝の始祖・'''有員'''と、[[信濃国]]・[[諏訪大社]]上社の[[諏訪氏]]や神長官・[[守矢氏]]に伝えられた、[[大同 (日本)|大同]]元年（[[806年]]）の大祝の始祖・'''有員'''という2人の「有員」という矛盾が生まれた。そのため、京都諏訪氏に伝えられ、大祝本「神氏系図」に記された[[用明天皇]]2年（[[587年]]）の「有員」は「神子（熊古・熊子とも）」と名前が書き換えられた上で、両方の「有員」の伝説が並立して述べられることとなった<ref name="間枝遼太郎2023"/>。
+Furthermore, the ''Aso Clan Abbreviated Genealogy'' was established by combining the Hafuri-hon ''Shin-shi Keizu'', the "Kanasashi Clan Abbreviated Genealogy" quoted in ''Supplemented Suwa Clan Genealogy, Sequel'' by Nobukawa Kazuhiko with supplements by Iida Kōtarō, and the genealogy of the {{ill|Aso clan|ja|阿蘇氏}} (Aizawa calls this "re-reconstruction"). In the process of combining these genealogies, a contradiction arose from two "Arikazu" figures: '''Arikazu''', the founder of the Ōhōri in {{ill|Emperor Yōmei|ja|用明天皇}} 2 ({{ill|587|ja|587年}}) whose origins were in {{ill|Takeminakata-no-Kami|ja|建御名方神}} with {{ill|Taishi worship|ja|太子信仰}} incorporated, as transmitted in the Kyoto Suwa clan ({{ill|Suwa Enchū|ja|諏訪円忠}} and his 5th-generation descendant {{ill|Suwa Sadamichi|ja|諏訪貞通}}); and '''Arikazu''', the founder of the Ōhōri in {{ill|Daidō (Japan)|ja|大同 (日本)|lt=Daidō|lt_ja=大同}} 1 ({{ill|806|ja|806年}}), as transmitted in the {{ill|Suwa clan|ja|諏訪氏}} of the Upper Shrine of {{ill|Suwa-taisha|ja|諏訪大社}} in {{ill|Shinano Province|ja|信濃国}} and in the shinchōkan {{ill|Moriya clan|ja|守矢氏}}. To resolve this, the "Arikazu" of Yōmei 2 (587), as transmitted to the Kyoto Suwa clan and recorded in the Hafuri-hon ''Shin-shi Keizu'', had his name rewritten as "Shinshi (also Kumako or Kumako)," and the legends of both "Arikazu" came to be described side by side<ref name="間枝遼太郎2023"/>.
 
-加えて、大祝本「神氏系図」の文章系図前半にある国造関連の人名（健甕富命や諸日別命など）も、実際に古代から伝えられてきた系譜・人名ではなく、近世の諏訪大社下社社家が金刺氏の末裔であるというアイデンティティや系図そのものを確立するために、『[[先代旧事本紀]]』や『[[先代旧事本紀大成経]]』を参考にして近世以降に創作された<ref name="間枝遼太郎2023"/>。
+In addition, the kuni no miyatsuko-related personal names in the first half of the prose genealogy of the Hafuri-hon ''Shin-shi Keizu'' (such as Takemikatomi-no-Mikoto and Morohi-Wake-no-Mikoto) are also not genealogies or names actually transmitted from ancient times; they were created in the early modern period or later, referring to the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' and the ''{{ill|Sendai Kuji Hongi Taiseikyō|ja|先代旧事本紀大成経}}'' in order to establish the identity of the shake of the Lower Shrine of Suwa-taisha in the early modern period as descendants of the Kanasashi clan and the genealogy itself<ref name="間枝遼太郎2023"/>.
 
-== 脚注 ==
+== Footnotes ==
 {{脚注ヘルプ}}
-=== 出典 ===
+=== Citations ===
 {{Reflist|30em}}
 
-=== 注釈 ===
+=== Notes ===
 {{notelist}}
 
-== 参考文献 ==
-* 『國史大辭典』（[[吉川弘文館]]）
-* [[坂本太郎 (歴史学者)|坂本太郎]]・[[平野邦雄]]『日本古代氏族人名辞典』（[[吉川弘文館]]）
-* 『日本史広辞典』（[[山川出版社]]）
-* 『神道大辞典』（[[臨川書店]]）
-* 古川貞雄編『県史20 長野県の歴史』（山川出版社、2003年）
+== References ==
+* ''Kokushi Daijiten'' ({{ill|Yoshikawa Kōbunkan|ja|吉川弘文館}})
+* {{ill|Sakamoto Tarō (historian)|ja|坂本太郎 (歴史学者)|lt=Sakamoto Tarō|lt_ja=坂本太郎}}, {{ill|Hirano Kunio|ja|平野邦雄}}, ''Nihon Kodai Shizoku Jinmei Jiten'' ({{ill|Yoshikawa Kōbunkan|ja|吉川弘文館}})
+* ''Nihon-shi Kō-jiten'' ({{ill|Yamakawa Shuppansha|ja|山川出版社}})
+* ''Shintō Daijiten'' ({{ill|Rinsen Shoten|ja|臨川書店}})
+* Furukawa Sadao (ed.), ''Kenshi 20: Nagano-ken no Rekishi'' (Yamakawa Shuppansha, 2003)
 * {{Cite book|和書|author=|editor=[[近藤敏喬]]|title=古代豪族系図集覧|year=1993|publisher=[[東京堂出版]]|isbn=4-490-20225-3|pages=92,343-352頁|chapter=|ref=keizu}}
-* {{Cite book|和書|author=太田亮|authorlink=太田亮|editor=|title=姓氏家系大辞典. 第1巻|url=https://dl.ndl.go.jp/info:ndljp/pid/1130845/130|accessdate=2018-07-08|year=1936|publisher=[[姓氏家系大辞典刊行会]]|page=114|chapter=|ref=seishi}}リンクは[[国立国会図書館デジタルコレクション]]、130コマ目。
+* {{Cite book|和書|author=太田亮|authorlink=太田亮|editor=|title=姓氏家系大辞典. 第1巻|url=https://dl.ndl.go.jp/info:ndljp/pid/1130845/130|accessdate=2018-07-08|year=1936|publisher=[[姓氏家系大辞典刊行会]]|page=114|chapter=|ref=seishi}}
 * {{Cite book|和書|author=|authorlink=|editor=[[黒板勝美]]|title=[[国史大系#第3次：新訂増補国史大系|新訂増補國史大系]] 第7巻|edition=新装版|year=1998|publisher=[[吉川弘文館]]|isbn=4642003088|pages=先代舊事本紀凡例1頁,先代舊事本紀本文147頁|chapter=|ref=taikei}}
 * {{Cite book|和書|author=|editor=[[竹内理三]]等|title=日本歴史地図 原始・古代編 下|year=1982|publisher=[[柏書房]]|page=290|chapter=|ref=chizu}}
 * {{Cite book|和書|author=平凡社地方資料センター|editor=|title=[[日本歴史地名大系]]第二十巻 [[長野県]]の地名|year=1979|publisher=[[平凡社]]|isbn=4582490204|pages=32,281頁|chapter=|ref=taikei2}}
-== 関連文献 ==
-*　佐藤雄一『古代信濃の氏族と信仰』[https://www.yoshikawa-k.co.jp/book/b583784.html]吉川弘文館、2021年　ISBN　9784642046626
+== Related Literature ==
+* Satō Yūichi, ''Kodai Shinano no Shizoku to Shinkō'' [https://www.yoshikawa-k.co.jp/book/b583784.html] Yoshikawa Kōbunkan, 2021, ISBN 9784642046626
 
-== 関連項目 ==
-* [[国造#諸国造一覧]]
+== See also ==
+* {{ill|Kuni no miyatsuko#List of Shokokuzō|ja|国造#諸国造一覧|lt=Kuni no miyatsuko#List of Shokokuzō|lt_ja=国造#諸国造一覧}}
 
 {{DEFAULTSORT:しなぬのくにのみやつこ}}
 [[Category:信濃国]]
@@ -203,5 +202,4 @@ name="chizu">『[[#chizu|日本歴史地図 原始・古代編 下]]』。</ref>
 [[Category:多氏|#しなぬのくにのみやつこ]]
 [[Category:金刺氏|#しなぬのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 [[ja:科野国造]]
