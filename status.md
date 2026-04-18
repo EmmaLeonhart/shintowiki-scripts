@@ -1,0 +1,1 @@
+Write a script that strips the untranslated character count categories from https://shinto.miraheze.org/wiki/Category:Translated_pages
