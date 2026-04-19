@@ -35,10 +35,10 @@
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
     "total": 11922,
-    "remaining": 145,
-    "completed": 11777,
+    "remaining": 77,
+    "completed": 11845,
     "output_file": "engishiki_add_references.txt",
-    "lines": 115,
+    "lines": 47,
     "skipped_no_p13677": 19
   },
   "migrations": [
