@@ -45,7 +45,13 @@ def _clone_url() -> str:
 
 
 def _run(cmd: list[str], cwd: Path | None = None, check: bool = True) -> subprocess.CompletedProcess:
-    return subprocess.run(cmd, cwd=cwd, check=check, capture_output=True, text=True)
+    # Suppress interactive credential prompts. The token is already embedded in
+    # the clone URL, but Git Credential Manager on Windows will still pop up an
+    # account picker unless we tell it not to.
+    env = os.environ.copy()
+    env.setdefault("GIT_TERMINAL_PROMPT", "0")
+    env.setdefault("GCM_INTERACTIVE", "Never")
+    return subprocess.run(cmd, cwd=cwd, check=check, capture_output=True, text=True, env=env)
 
 
 def ensure_clone() -> Path:

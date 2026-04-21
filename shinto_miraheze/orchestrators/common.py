@@ -125,11 +125,16 @@ def run_orchestrator(
     print(f"State ({state_name}): {len(done)} titles already processed this cycle")
 
     edited = checked = skipped = errors = 0
+    would_edit = 0  # dry-run counter (changes the code would have made)
     finished_all = True
 
     for title in iter_allpages(site, namespace):
         if apply and max_edits and edited >= max_edits:
             print(f"Reached max edits ({max_edits}); stopping mid-cycle.")
+            finished_all = False
+            break
+        if not apply and max_edits and would_edit >= max_edits:
+            print(f"Reached dry-run limit ({max_edits} would-edit pages); stopping.")
             finished_all = False
             break
 
@@ -216,6 +221,7 @@ def run_orchestrator(
 
         if not apply:
             print(f"[{checked}] {title} DRY RUN: {'; '.join(summaries) or '(no summary)'}")
+            would_edit += 1
             continue
 
         summary = "Bot: " + "; ".join(summaries) + f" {run_tag}"
