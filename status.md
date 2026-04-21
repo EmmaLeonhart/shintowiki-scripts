@@ -6,6 +6,15 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Queued work
 
+0. **Retrofit all non-terminating cycling scripts into the namespace orchestrators.** The three namespace orchestrators (`shinto_miraheze/orchestrators/mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`) visit every page in their namespace once per cycle and run every registered op on it. `history_offload` is the first op in every orchestrator's OPS list (gated behind `ENABLE_HISTORY_OFFLOAD=1`). The following cycling scripts still have their own standalone state files and must be ported into `shinto_miraheze/orchestrators/ops/` as per-page ops (signature: `NAME`, `NAMESPACES`, `def apply(title, text) -> (new_text|None, summary_fragment|None)`), then their steps must be removed from `.github/workflows/wiki-cleanup.yml`:
+   - `tag_untranslated_japanese.py` → `ops/untranslated_japanese.py` (mainspace only, `NAMESPACES=(0,)`)
+   - `generate_p11250_quickstatements.py` → `ops/p11250_quickstatements.py` (mainspace only; writes QuickStatements to a wiki page, not the page being visited — needs special handling, likely `HANDLES_SAVE = True`)
+   - `populate_namespace_layers.py` → `ops/namespace_layers.py` (mainspace only; creates/edits sibling pages in Data:/Export: namespaces — also `HANDLES_SAVE = True`)
+   - `tag_deleted_qids_in_ill.py` → `ops/deleted_qids_in_ill.py` (mainspace only)
+   - `fix_template_noinclude.py` → already ported as `ops/noinclude_wrap.py` ✔
+   - `tag_pages_without_wikidata.py` → already ported as `ops/wikidata_link.py` ✔
+   After all six are ported and their wiki-cleanup.yml steps removed, the only cycling scripts the workflow still invokes should be the terminating ones flagged for July 2026 review.
+
 1. **Strip untranslated character-count categories from already-translated pages.** `[[Category:Pages with 50+/100+/.../5000+ untranslated japanese characters]]` was applied by `shinto_miraheze/tag_untranslated_japanese.py` based on CJK density. Pages that have since been translated still carry these categories. Write `shinto_miraheze/strip_translated_char_count_cats.py` that walks [[Category:Translated pages]](https://shinto.miraheze.org/wiki/Category:Translated_pages), removes any `[[Category:Pages with N+ untranslated japanese characters]]` tags found on each, and commits the edit. Must follow the repo script template: `--apply`, `--max-edits`, `--run-tag` flags; `mwclient`; 1.5s rate limit; UTF-8 stdout wrapper; state file under `shinto_miraheze/`.
 
 2. **Remove DEFAULTSORT from all pages via a bot.** `{{DEFAULTSORT:...}}` is leftover from the enwiki/jawiki imports and has no semantic value on shintowiki (categories use direct sort keys). Write a script that walks mainspace, removes the `{{DEFAULTSORT:...}}` line, and commits. Same script-template requirements as task 1.
