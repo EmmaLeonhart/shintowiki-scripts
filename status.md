@@ -8,6 +8,35 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 Okay, so this is me talking as myself. This isn't a Claude Run thing. So one thing I'll say is with a lot of the cued work, it might already be done yet, and I'm not really sure. But my main thing is that kind of the legacy orchestrator that we split a lot of stuff off into, which mostly, which does stuff like removing the crud categories, that things in our workflow that things should execute first and then main space then Category then Template that that's good secondly I don't really know what's going on with the workflows and this might be something that just kind of goes away on its own but it seems like it's behaving a bit weird a bit weirdly ordered or something and I don't know why. I don't know if it's that if it's like forcing through a lot of outdated scripts being run this is probably going to be resolved pretty quickly this is probably going to be resolved pretty quickly this is probably going to be resolved pretty quickly overall this is probably going to be resolved pretty quickly overall but I'm not sure might be worth looking into if things aren't working are running great. Another thing is basically it appears that it doesn't seem like it's even trying to do the history cleaning stuff for the category space and the template space. I don't know if it's a legacy script is run I don't know if it's like an outdated script is running on that side but this is causing some problems some problems and it's worth looking into because remember we're supposed to be doing this for all the name spaces not just the not just main personally I think we should actually extend this to apply on every single name space on the wiki we're going to do this it's just going to so and in this case it's pretty simple to me actually no yeah I think we should extend it to every single name space in the wiki so after the template orchestrator is complete we're then going to do the miscellaneous orchestrator which goes through every single other name space in order every single other name space to do the same things this would include things like user space all the talk spaces all this stuff just to make sure we're clearing out the stuff because again like we want to be as space efficient as possible we want to be as space efficient as possible and this is a pretty critical thing also I do not know if our this is a pretty critical thing 
 
+## Minor stuff
+One thing I really want us to work on is getting the interlanguage links more integrated with the Wikidata link template. I feel like we can do this, and once we do, we'll no longer have the interlanguage links randomly going around the page. This will be generally more efficient. I want this script that we make to be implemented on all namespaces, so it doesn't just iterate through the ones with the interlanguage link. Basically, what it will do is it will take something like this 
+
+'''
+[[vi:Ất Mão]]
+{{wikidata link|Q904791}}
+'''
+
+and it will turn it into something like this
+
+{{wikidata link|Q904791|vi|Ất Mão}}
+
+Now, I think we might be able to at some point move away from positional parameters into something like 
+
+{{wikidata link|Q904791|vi=Ất Mão}}
+
+But I feel like an unfortunate reality is that the way that our links and stuff are structured makes it so that it's very difficult, because you can easily, with that one, do something like this. 
+
+[[$2:$3]]
+
+Whereas dropping the positional parameters in favour of having it so the languages all have their individual things is something that we might be able to do. But I think in order to do this, it'll be best for us to consolidate all of these things first and then focus on it later.
+
+Our general rule here will be pretty simple, right? If we experience instances where we are putting them into the template regardless of where they are. If there is no wiki data but there is a thing, then we specifically have the wiki data but there are interlanguage links. We specifically have them so that the second parameter is empty and this will add these things into a category specifically indicating that they have interlanguage links but no wiki data. This is easier than running our own category thing constantly. 
+
+Yeah, positional parameters are good, but my idea here would probably be we get all these things in here first to consolidate the mess, and then we work on that. One thing I'll say as well is basically the interlanguage links: if there are two of the same interlanguage link that contradict each other, then we can even have it so that they're two different positional parameters with the same information, and the template will somehow indicate it. We're switching everything towards using the template. However, if it's the same one, then we don't bother with it. Right now, we're not actually going to do anything of like 'are these consistent with a Wikidata item?' or anything like that. That is something for later. 
+
+
+Also sync the category [[Category:Git synced pages]] based on how it is done in C:\Users\Immanuelle\Documents\Github\aelaki-wikibot2 you will need this for when we edit [[Template:Wikidata link]] to make it properly use the new parameters we have added to it
+
 ## Queued work
 
 0. **Retrofit all non-terminating cycling scripts into the namespace orchestrators.** The three namespace orchestrators (`shinto_miraheze/orchestrators/mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`) visit every page in their namespace once per cycle and run every registered op on it. `history_offload` is the first op in every orchestrator's OPS list (gated behind `ENABLE_HISTORY_OFFLOAD=1`). The following cycling scripts still have their own standalone state files and must be ported into `shinto_miraheze/orchestrators/ops/` as per-page ops (signature: `NAME`, `NAMESPACES`, `def apply(title, text) -> (new_text|None, summary_fragment|None)`), then their steps must be removed from `.github/workflows/wiki-cleanup.yml`:
