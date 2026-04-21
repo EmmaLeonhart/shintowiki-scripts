@@ -6,7 +6,23 @@ name: Template Orchestrator
 
 on:
   workflow_dispatch:
+    inputs:
+      enable_history_offload:
+        description: "Archive XML export + make truncation edit"
+        type: boolean
+        default: false
+      enable_revdel:
+        description: "Also revision-delete the offloaded history (destructive)"
+        type: boolean
+        default: false
   workflow_call:
+    inputs:
+      enable_history_offload:
+        type: boolean
+        default: false
+      enable_revdel:
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,6 +35,8 @@ jobs:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
       WIKI_EDIT_LIMIT: "100"
+      ENABLE_HISTORY_OFFLOAD: ${{ inputs.enable_history_offload && '1' || '' }}
+      ENABLE_REVDEL: ${{ inputs.enable_revdel && '1' || '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
