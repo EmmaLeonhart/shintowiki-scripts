@@ -35,16 +35,38 @@ jobs:
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
+  # Per-namespace orchestrators — each runs every per-page op whose
+  # NAMESPACES includes its namespace, using a single shared state file
+  # per namespace. Replaces the per-script state files of the cycling
+  # scripts that used to live in wiki-cleanup.yml.
+  mainspace-orchestrator:
+    needs: cleanup
+    if: always()
+    uses: ./.github/workflows/mainspace-orchestrator.yml
+    secrets: inherit
+
+  category-orchestrator:
+    needs: mainspace-orchestrator
+    if: always()
+    uses: ./.github/workflows/category-orchestrator.yml
+    secrets: inherit
+
+  template-orchestrator:
+    needs: category-orchestrator
+    if: always()
+    uses: ./.github/workflows/template-orchestrator.yml
+    secrets: inherit
+
   # Random delay only on cron schedule, not on push
   random-wait:
-    needs: cleanup
+    needs: template-orchestrator
     if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
 
-  # On push: submit immediately after cleanup
+  # On push: submit immediately after orchestrators
   # On cron: submit after random wait
   submit-quickstatements:
-    needs: [cleanup, random-wait]
+    needs: [template-orchestrator, random-wait]
     if: always() && needs.cleanup.result == 'success'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit

@@ -8,6 +8,14 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 Active work queue lives in [status.md](status.md) (Sutra-style queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
 
+## Scheduled review — July 2026
+
+- [ ] **Audit terminating cleanup scripts** — all per-page "cycling" operations have been moved into the three namespace orchestrators (`mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`). The following scripts in `wiki-cleanup.yml` are **terminating** — they have state files but don't reset at the end of a sweep, so once their state covers every eligible page they simply do nothing on subsequent runs. In July 2026, check each one's state/log to confirm it has stopped producing edits; if so, remove the step from `wiki-cleanup.yml` and delete the script:
+  - `reimport_from_enwiki.py` (input-file driven; state shows it is already effectively complete)
+  - `migrate_talk_pages.py`
+  - `normalize_category_pages.py` (Sunday only)
+  - `remove_legacy_cat_templates.py` (monthly)
+
 ## Server load (emerging concern — 2026-04-18)
 
 Miraheze has raised server-load concerns. All scripts should minimize read/write volume against `shinto.miraheze.org`:

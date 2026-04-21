@@ -1,0 +1,77 @@
+name: Template Orchestrator
+
+# Cycles through every Template-namespace page (ns=10) and runs every per-page
+# op whose NAMESPACES includes 10. Shared state file:
+# shinto_miraheze/orchestrators/template_orchestrator.state.
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  template-orchestrator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      WIKI_EDIT_LIMIT: "100"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Configure SSH for XML archive repo
+        env:
+          ARCHIVE_REPO_DEPLOY_KEY: ${{ secrets.ARCHIVE_REPO_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$ARCHIVE_REPO_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: "Template orchestrator"
+        run: |
+          python3 -m shinto_miraheze.orchestrators.template_orchestrator \
+            --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Template Orchestrator"
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Template Orchestrator"

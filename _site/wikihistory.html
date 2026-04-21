@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shinto Wiki — Offloaded Page History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 780px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+    h1 { margin-bottom: 0.2rem; }
+    .title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #f4f4f4; padding: 0.1rem 0.4rem; border-radius: 3px; }
+    .box { border: 1px solid #ddd; border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fafafa; }
+    .muted { color: #666; font-size: 0.95rem; }
+    code { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; }
+    a { color: #0366d6; }
+  </style>
+</head>
+<body>
+  <h1>Offloaded page history</h1>
+  <p class="muted">
+    The edit history of some pages on <a href="https://shinto.miraheze.org/">shinto.miraheze.org</a>
+    has been offloaded to an external XML archive to reduce export load on the wiki farm.
+    The on-wiki page still holds the most recent revision; everything prior lives in the archive.
+  </p>
+
+  <div class="box">
+    <div id="target"></div>
+  </div>
+
+  <h2>What this page will eventually do</h2>
+  <p>
+    Fetch the offloaded XML, render a human-readable revision log, diff any two revisions,
+    and offer a one-click download of the full history XML. Not built yet — for now it just
+    points you at the raw archive file.
+  </p>
+
+  <p class="muted">
+    Archive repo:
+    <a href="https://github.com/EmmaLeonhart/shintowiki-xml-archives">EmmaLeonhart/shintowiki-xml-archives</a>.
+    Source: <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">EmmaLeonhart/shintowiki-scripts</a>.
+  </p>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("page");
+      const target = document.getElementById("target");
+
+      if (!raw) {
+        target.innerHTML =
+          '<p>No <code>?page=</code> parameter supplied. Link format:</p>' +
+          '<p><code>wikihistory.html?page=Page_Title</code> (spaces as underscores).</p>';
+        return;
+      }
+
+      const slug = raw.replace(/ /g, "_");
+      const safe = slug.replace(/[^A-Za-z0-9_\-\.]/g, "_");
+      const first = (safe[0] || "_").toLowerCase();
+      const shard = /[a-z0-9]/.test(first) ? first : "_";
+      const relpath = "xml/" + shard + "/" + safe + ".xml";
+
+      const repo = "EmmaLeonhart/shintowiki-xml-archives";
+      const blobUrl = "https://github.com/" + repo + "/blob/main/" + relpath;
+      const rawUrl  = "https://raw.githubusercontent.com/" + repo + "/main/" + relpath;
+      const wikiUrl = "https://shinto.miraheze.org/wiki/" + encodeURIComponent(slug);
+
+      const titleDisplay = decodeURIComponent(slug).replace(/_/g, " ");
+
+      target.innerHTML =
+        '<p>Page: <span class="title">' + titleDisplay + '</span></p>' +
+        '<ul>' +
+          '<li>Live page on wiki: <a href="' + wikiUrl + '">' + titleDisplay + '</a></li>' +
+          '<li>XML archive (browse): <a href="' + blobUrl + '">' + relpath + '</a></li>' +
+          '<li>XML archive (download): <a href="' + rawUrl + '">raw file</a></li>' +
+        '</ul>' +
+        '<p class="muted">If the browse link 404s, the page has not yet been offloaded — its full history is still on-wiki.</p>';
+    })();
+  </script>
+</body>
+</html>
