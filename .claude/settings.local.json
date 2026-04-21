@@ -181,7 +181,19 @@
       "Bash(> \"modern-quickstatements/broadening the category.txt\")",
       "Bash(awk -F/ '{print $2\"/\"$3 > \"/dev/stderr\"; d[$2]++} END {for \\(k in d\\) print d[k], k}')",
       "Bash(awk -F/ '{d=\"\"; for\\(i=2;i<NF;i++\\){d=d\"/\"$i}; print d}')",
-      "Bash(awk -F/ 'NF>0{print $1}')"
+      "Bash(awk -F/ 'NF>0{print $1}')",
+      "Bash(gh auth *)",
+      "Bash(gh secret *)",
+      "Bash(ssh -T -o StrictHostKeyChecking=accept-new git@github.com)",
+      "Bash(GIT_TERMINAL_PROMPT=0 GCM_INTERACTIVE=Never git push origin main)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); print\\(d['parse']['wikitext']['*'][:800]\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); [print\\(r.get\\('timestamp','?'\\), '|', r.get\\('user','HIDDEN' if 'userhidden' in r else '?'\\), '|', r.get\\('comment','HIDDEN' if 'commenthidden' in r else '?'\\)[:60]\\) for p in d['query']['pages'].values\\(\\) for r in p['revisions']]\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); u = d['query']['users'][0]; print\\('groups:', u.get\\('groups'\\)\\); print\\('has deleterevision:', 'deleterevision' in u.get\\('rights', []\\)\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); [print\\(rc['timestamp'], '|', rc['title']\\) for rc in d['query']['recentchanges']]\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); events = d['query']['logevents']; print\\(f'{len\\(events\\)} delete-log events'\\); [print\\(e.get\\('timestamp'\\), '|', e.get\\('action'\\), '|', e.get\\('title'\\), '|', e.get\\('comment',''\\)[:60]\\) for e in events]\")",
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(unzip -o run-log.zip -d run-log/)"
     ],
     "deny": [],
     "ask": []
