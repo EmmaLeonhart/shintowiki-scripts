@@ -125,6 +125,18 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 
 ---
 
+## History archive repo
+
+Full per-page revision history offloaded by the `history_offload` op lives in a separate repository: **[EmmaLeonhart/shintowiki-xml-archives](https://github.com/EmmaLeonhart/shintowiki-xml-archives)**.
+
+- **Layout:** `xml/{first_char}/{safe_title}.xml` — one `Special:Export` dump per page, sharded by the first character of the slug.
+- **Viewer:** [emmaleonhart.github.io/shintowiki-scripts/wikihistory.html](https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html) — takes `?page=<Title>` and renders the archived XML.
+- **Producer:** `shinto_miraheze/orchestrators/ops/history_offload.py` (archive) + `shinto_miraheze/orchestrators/ops/_archive_repo.py` (clone/commit/push).
+- **Gates:** `ENABLE_HISTORY_OFFLOAD=1` turns the op on; `ENABLE_REVDEL=1` separately enables stage 3 (hiding old revisions on-wiki so they drop out of Miraheze XML dumps).
+- **Auth:** `ARCHIVE_REPO_DEPLOY_KEY` secret (SSH deploy key) in CI; `gh auth token` locally. Note the account is **EmmaLeonhart** (no hyphen), not `Emma-Leonhart`.
+
+---
+
 ## QuickStatements pipeline (modern-quickstatements/)
 
 Generates and submits Wikidata property edits via the [QuickStatements API](https://quickstatements.toolforge.org/):
