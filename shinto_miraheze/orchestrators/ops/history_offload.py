@@ -1,39 +1,47 @@
 """
 history_offload op
 ===================
-Archives the full revision history of a page to the XML archive repo, then
-makes one "truncation" edit on the wiki that keeps only the current content
-plus a top-of-page HTML comment pointing at the archive viewer. The prior
-revisions are then hidden via RevisionDelete so they drop out of subsequent
-XML exports — which is the whole point: reduce the wiki-farm export burden.
+Archives a page's full revision history to (a) the XML archive repo and
+(b) shinto.fandom.com, then deletes + recreates the source page so the
+old revisions move into MediaWiki's per-title "deleted edits" pool. The
+result on shintowiki is a single visible revision (a banner + current
+content) with a "View or undelete N deleted edits" link above the history,
+rather than inline "(username removed)" rows from per-revision hiding.
 
 Safety:
   * Runs only when ENABLE_HISTORY_OFFLOAD=1 (env var). Otherwise the op is
     a no-op so it can safely sit at the top of every orchestrator OPS list.
-  * Order is archive → commit → push → wiki edit → revision-delete. Each
-    step is gated on the previous succeeding, so a crash leaves either a
-    harmless archive file or, at worst, an extra truncation-notice edit on
-    the page (history still intact, easy to revert).
-  * Revision-delete runs only when ENABLE_REVDEL=1 (separate gate). Stage 1
-    validates archives + truncation edits; stage 2 flips the revdel switch.
-  * Cycles idempotently: on each re-visit the prior truncation banner is
-    stripped and a fresh one (carrying the current run_tag) is prepended,
-    producing a text-distinct new revision. Stage 3 then revdels every
-    prior revision including any earlier truncation edits, so the page
-    converges to a single visible revision: the most recent run's.
+  * Order: fandom mirror → XML archive → delete → recreate. Each step is
+    gated on the previous succeeding, so a crash leaves either (a) nothing
+    changed, (b) a harmless archive file / fandom import, or (c) a deleted
+    page that needs Special:Undelete + manual recreate to restore.
+  * The destructive delete+recreate runs only when ENABLE_REVDEL=1 (the
+    gate is named for historical reasons — we used to revdel here, now we
+    delete+recreate for a cleaner page-history UI).
+  * ENABLE_FANDOM_MIRROR=1 additionally makes a fandom mirror required;
+    if the mirror fails, the op aborts for that page and nothing
+    destructive happens.
 
-The op sets HANDLES_SAVE = True, which tells common.run_orchestrator to run
-it in a pre-pass and then refetch page.text() before the regular apply()
-ops see the page. That way downstream per-page ops act on the truncated
-version.
+Skip conditions:
+  * If the page is already in its offloaded steady state (banner present
+    AND only 1 visible revision), the op returns early without touching it.
+  * If the page has only 1 revision total, there is no history worth
+    offloading, so the op skips.
 
-Why revision-delete rather than page-delete + recreate:
-  * Preserves the page ID. Some downstream consumers (and the MediaWiki
-    link table) treat page IDs as stable identifiers.
-  * Preserves the link table — page-delete clears and reinserts every
-    incoming link, which is expensive and touches every linker's cache.
-  * Revision-delete hides content/user/comment; those revisions then drop
-    out of standard XML exports, which is the wiki-farm-stability goal.
+Why delete+recreate rather than action=revisiondelete:
+  * Revisiondelete renders every hidden revision inline as
+    "(username removed) ... (edit summary removed)", which clutters the
+    page history indefinitely.
+  * Delete+recreate produces MediaWiki's "View or undelete N deleted edits"
+    link — one line above a clean single-revision history.
+  * Tradeoff: page-delete clears the page ID (new ID on recreate) and
+    forces the link table to re-evaluate every incoming link. Both are
+    acceptable given the user-facing UI is the priority.
+
+The op sets HANDLES_SAVE = True, which tells common.run_orchestrator to
+run it in a pre-pass and then refetch page.text() before the regular
+apply() ops see the page — so downstream per-page ops act on the
+recreated banner-only version.
 """
 
 import os
@@ -109,9 +117,11 @@ def _fetch_export_xml(site, title: str) -> str:
     host = site.host
     path = site.path
     url = f"https://{host}{path}index.php?title=Special:Export&action=submit"
+    # `curonly` MUST be omitted for full history — SpecialExport.php uses
+    # getCheck() which treats any present value (even "0") as truthy.
     resp = site.connection.post(
         url,
-        data={"pages": title, "curonly": "0", "wpDownload": "1"},
+        data={"pages": title, "history": "1", "wpDownload": "1"},
     )
     resp.raise_for_status()
     return resp.text
@@ -147,82 +157,15 @@ def _list_contributors(site, title: str, limit: int = 50) -> list[str]:
     return seen
 
 
-def _list_old_revids(site, title: str, keep_revid: int) -> list[int]:
-    """Every revision of the page except keep_revid."""
-    params = {
-        "prop": "revisions",
-        "titles": title,
-        "rvprop": "ids",
-        "rvlimit": "max",
-    }
-    revids: list[int] = []
-    cont = {}
-    while True:
-        q = dict(params)
-        q.update(cont)
-        result = site.api("query", **q)
-        pages = result.get("query", {}).get("pages", {})
-        for _, p in pages.items():
-            for rev in p.get("revisions", []):
-                rid = rev.get("revid")
-                if rid and rid != keep_revid:
-                    revids.append(rid)
-        if "continue" in result:
-            cont = result["continue"]
-        else:
-            break
-    return revids
-
-
-def _revdel(site, title: str, revids: list[int]) -> tuple[int, list[str]]:
-    """Hide content+comment+user on the given revision IDs. Needs deleterevision
-    right (EmmaBot has sysop on shintowiki, so this is satisfied).
-
-    Returns (number of revisions successfully hidden, list of error strings).
-    Errors are COLLECTED and returned rather than raised, so one bad batch
-    doesn't abort the rest of the page's offload; the caller logs them.
-    """
-    if not revids:
-        return 0, []
-    token = site.get_token("csrf")
-    done = 0
-    errors: list[str] = []
-    # action=revisiondelete accepts up to 50 ids per call. It is a WRITE
-    # action and must go over POST — some mwclient versions default api()
-    # to GET, which silently yields an empty response and leaves revisions
-    # visible. Force http_method='POST' explicitly.
-    for i in range(0, len(revids), 50):
-        batch = revids[i : i + 50]
-        try:
-            resp = site.api(
-                "revisiondelete",
-                http_method="POST",
-                type="revision",
-                target=title,
-                ids="|".join(str(r) for r in batch),
-                hide="content|comment|user",
-                reason="History offloaded to XML archive; see top-of-page comment for link.",
-                token=token,
-            )
-        except Exception as e:
-            errors.append(f"batch starting {batch[0]}: {e}")
-            continue
-        # The API returns {"revisiondelete": {"status": "Success", "items": [...]}}
-        # on success. Count items whose status reflects a hide (errored items
-        # come back with "errors"). Be defensive about shape — treat a
-        # non-"Success" top-level status as an error.
-        rd = (resp or {}).get("revisiondelete") or {}
-        status = rd.get("status")
-        items = rd.get("items") or []
-        if status != "Success":
-            errors.append(f"batch starting {batch[0]}: API status={status!r} resp={resp!r}")
-            continue
-        for item in items:
-            if item.get("errors"):
-                errors.append(f"rev {item.get('id')}: {item['errors']}")
-            else:
-                done += 1
-    return done, errors
+def _revision_count_capped(site, title: str, cap: int = 2) -> int:
+    """Returns up to `cap` revisions for the page, enough to distinguish
+    'single revision' vs 'multi-revision' without fetching thousands."""
+    result = site.api(
+        "query", prop="revisions", titles=title, rvprop="ids", rvlimit=cap,
+    )
+    for _, p in result.get("query", {}).get("pages", {}).items():
+        return len(p.get("revisions", []))
+    return 0
 
 
 def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
@@ -233,8 +176,12 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     if os.getenv("ENABLE_HISTORY_OFFLOAD") != "1":
         return False, "history_offload disabled (set ENABLE_HISTORY_OFFLOAD=1 to enable)"
 
-    title = page.page_title if hasattr(page, "page_title") else page.name
-    enable_revdel = os.getenv("ENABLE_REVDEL") == "1"
+    # Use the full title (with namespace prefix); the archive repo shards
+    # files by namespace folder to avoid collisions between e.g. mainspace
+    # "Foo" and "Category:Foo", which would otherwise share a slug.
+    title = page.name
+    ns = page.namespace
+    enable_destructive = os.getenv("ENABLE_REVDEL") == "1"
     enable_fandom_mirror = os.getenv("ENABLE_FANDOM_MIRROR") == "1"
 
     try:
@@ -242,11 +189,18 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     except Exception as e:
         return False, f"could not read page: {e}"
 
-    # Stage 0: Fandom mirror. Runs BEFORE truncation/revdel so the
-    # destructive source-side edits only happen if the fandom copy is
-    # known good. A failed mirror aborts the op for this page — the
-    # wiki is left untouched, retaining full history for manual followup.
-    # (The XML archive in stage 1 is always safe and independent.)
+    # Fast-path skip: already in offloaded steady state.
+    try:
+        rev_count = _revision_count_capped(site, title)
+    except Exception as e:
+        return False, f"could not count revisions: {e}"
+    if rev_count <= 1 and current_text.startswith(COMMENT_MARKER):
+        return False, "already offloaded (banner + single revision)"
+    if rev_count <= 1:
+        return False, "no history to offload (single revision)"
+
+    # Stage 0: Fandom mirror. Runs BEFORE any destructive source-side work
+    # so we only delete pages that are known preserved on fandom.
     if enable_fandom_mirror and apply:
         ok, msg = fandom_mirror.mirror_page(site, title, run_tag)
         if not ok:
@@ -254,51 +208,46 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
         print(f"  fandom mirror: {msg}")
 
     # Stage 1: XML archive (idempotent — skip if already present).
-    if not _archive_repo.archive_exists(title):
+    if not _archive_repo.archive_exists(title, ns):
         if not apply:
-            return False, "DRY RUN: would mirror to fandom + archive + edit + revdel"
+            return False, "DRY RUN: would mirror + archive + delete + recreate"
         xml_text = _fetch_export_xml(site, title)
-        _archive_repo.write_and_commit(title, xml_text, run_tag)
+        _archive_repo.write_and_commit(title, xml_text, run_tag, ns)
 
     if not apply:
-        return False, "DRY RUN: would refresh banner + edit + revdel"
+        return False, "DRY RUN: would delete + recreate"
 
-    # Stage 2: Truncation edit. Strip any prior banner so we don't stack,
-    # then prepend a fresh one. The banner AND the summary embed run_tag,
-    # so each cycle produces a text-distinct revision — MediaWiki can't
-    # suppress as a null edit, and the newest revid rotates forward. The
-    # revdel in stage 3 then hides every prior revision (including prior
-    # truncation edits), converging each page to one visible revision:
-    # the most recent run's truncation.
+    if not enable_destructive:
+        return False, "archive+mirror done; delete+recreate skipped (ENABLE_REVDEL not set)"
+
+    # Compute the recreate payload BEFORE deletion so we don't lose content
+    # if delete succeeds but we then fail computing the new text.
     body = _strip_existing_banner(current_text)
     contributors = _list_contributors(site, title)
     new_text = _top_comment(title, run_tag) + "\n" + body
     summary = _build_summary(title, contributors, run_tag)
-    page.save(new_text, summary=summary)
 
-    # Stage 3: RevDel the rest. Gated separately so stage-1 rollout is reversible.
-    if enable_revdel:
-        # page.revisions() hits the API fresh each call — no need to reload().
-        # (mwclient's Page has no .reload(); calling it raised AttributeError
-        # and skipped revdel on every page.)
-        try:
-            keep_revid = next(iter(page.revisions(limit=1)))["revid"]
-        except StopIteration:
-            return True, "saved truncation edit; could not list revisions for revdel"
-        olds = _list_old_revids(site, title, keep_revid)
-        done, errors = _revdel(site, title, olds)
-        if errors:
-            # Surface WHICH batches failed so a silent-revdel regression
-            # doesn't get masked by the orchestrator's generic heavy-op
-            # error handler. Return True (page was still modified by the
-            # truncation edit) but make the message carry the failure.
-            err_summary = "; ".join(errors[:3])
-            if len(errors) > 3:
-                err_summary += f" (+{len(errors) - 3} more)"
-            return True, (
-                f"offloaded; archived + truncated + revdel'd {done}/{len(olds)} revs "
-                f"(errors: {err_summary})"
-            )
-        return True, f"offloaded; archived + truncated + revdel'd {done}/{len(olds)} revs"
+    # Stage 2: Delete. Moves all revisions into the per-title deleted-edits
+    # pool (accessible via Special:Undelete). Requires the `delete` right —
+    # EmmaBot has sysop on shintowiki so this is satisfied.
+    delete_reason = (
+        "History offloaded to XML archive and mirrored to shinto.fandom.com. "
+        "Full history recoverable via Special:Undelete."
+    )
+    try:
+        page.delete(reason=delete_reason)
+    except Exception as e:
+        return False, f"page delete failed: {e}"
 
-    return True, "offloaded; archived + truncated (revdel disabled)"
+    # Stage 3: Recreate with banner + current content. Refetch the Page
+    # object so mwclient isn't working against stale post-delete state.
+    fresh_page = site.pages[title]
+    try:
+        fresh_page.save(new_text, summary=summary)
+    except Exception as e:
+        return False, (
+            f"recreate FAILED after delete succeeded: {e}. "
+            f"Page is currently deleted; manual Special:Undelete needed."
+        )
+
+    return True, f"offloaded; deleted {rev_count}+ revs and recreated with banner"

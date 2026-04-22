@@ -4,9 +4,12 @@ _archive_repo.py
 Thin helper for reading/writing the XML archive repo
 (EmmaLeonhart/shintowiki-xml-archives).
 
-Per-page XML exports are stored under xml/{first_char}/{safe_title}.xml. The
-first-char shard keeps any single directory from exploding past a few
-thousand files once the archive is fully populated.
+Per-page XML exports are stored under xml/{namespace}/{first_char}/{slug}.xml.
+The namespace folder (e.g. main, category, template, module) prevents
+collisions between pages with the same short title in different namespaces
+(e.g. mainspace "Foo" vs "Category:Foo"). The first-char shard under each
+namespace keeps individual directories from exploding past a few thousand
+files once the archive is fully populated.
 
 Authentication (picked automatically):
   * In GitHub Actions (GITHUB_ACTIONS=true): SSH via the ARCHIVE_REPO_DEPLOY_KEY
@@ -69,6 +72,40 @@ def ensure_clone() -> Path:
 
 _SAFE_RE = re.compile(r"[^A-Za-z0-9_\-\.]")
 
+# Maps a numeric namespace (from mwclient Page.namespace or <ns> in export
+# XML) to a filesystem folder name. Unknown namespaces fall through to
+# "ns_<number>" so nothing silently collides if MediaWiki adds new namespaces.
+NS_FOLDER = {
+    0: "main",
+    1: "talk",
+    2: "user",
+    3: "user_talk",
+    4: "project",
+    5: "project_talk",
+    6: "file",
+    7: "file_talk",
+    8: "mediawiki",
+    9: "mediawiki_talk",
+    10: "template",
+    11: "template_talk",
+    12: "help",
+    13: "help_talk",
+    14: "category",
+    15: "category_talk",
+    420: "geojson",
+    421: "geojson_talk",
+    828: "module",
+    829: "module_talk",
+    860: "item",
+    861: "item_talk",
+    862: "property",
+    863: "property_talk",
+}
+
+
+def namespace_folder(ns: int) -> str:
+    return NS_FOLDER.get(ns, f"ns_{ns}")
+
 
 def safe_title(title: str) -> str:
     """Turn a wiki title into a filesystem-safe slug. Spaces → underscores."""
@@ -76,24 +113,33 @@ def safe_title(title: str) -> str:
     return _SAFE_RE.sub("_", t)
 
 
-def archive_relpath(title: str) -> str:
-    slug = safe_title(title)
+def _bare_title(title: str, ns: int) -> str:
+    """For non-mainspace titles, strip the leading namespace prefix so the
+    slug doesn't redundantly carry it (the folder already distinguishes)."""
+    if ns == 0 or ":" not in title:
+        return title
+    return title.split(":", 1)[1]
+
+
+def archive_relpath(title: str, ns: int = 0) -> str:
+    folder = namespace_folder(ns)
+    slug = safe_title(_bare_title(title, ns))
     first = slug[0].lower() if slug else "_"
     if not first.isalnum():
         first = "_"
-    return f"xml/{first}/{slug}.xml"
+    return f"xml/{folder}/{first}/{slug}.xml"
 
 
-def archive_exists(title: str) -> bool:
+def archive_exists(title: str, ns: int = 0) -> bool:
     """True if an XML archive for this title is already committed."""
     root = ensure_clone()
-    return (root / archive_relpath(title)).is_file()
+    return (root / archive_relpath(title, ns)).is_file()
 
 
-def write_and_commit(title: str, xml_text: str, run_tag: str) -> bool:
+def write_and_commit(title: str, xml_text: str, run_tag: str, ns: int = 0) -> bool:
     """Write the XML, commit, and push. Returns True on a new commit, False if nothing changed."""
     root = ensure_clone()
-    rel = archive_relpath(title)
+    rel = archive_relpath(title, ns)
     target = root / rel
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(xml_text, encoding="utf-8")
