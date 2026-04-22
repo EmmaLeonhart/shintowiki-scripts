@@ -31,8 +31,6 @@ Our general rule here will be pretty simple, right? If we experience instances w
 Yeah, positional parameters are good, but my idea here would probably be we get all these things in here first to consolidate the mess, and then we work on that. One thing I'll say as well is basically the interlanguage links: if there are two of the same interlanguage link that contradict each other, then we can even have it so that they're two different positional parameters with the same information, and the template will somehow indicate it. We're switching everything towards using the template. However, if it's the same one, then we don't bother with it. Right now, we're not actually going to do anything of like 'are these consistent with a Wikidata item?' or anything like that. That is something for later. 
 
 
-Also sync the category [[Category:Git synced pages]] based on how it is done in C:\Users\Immanuelle\Documents\Github\aelaki-wikibot2 you will need this for when we edit [[Template:Wikidata link]] to make it properly use the new parameters we have added to it
-
 Also at least in this run https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/24744680692/job/72417848749 there was a lot of redirect related flailing and idk why. I thought we solved the redirects problem several commits ago. Either way I am also gonna be interested in making something that we ADD TO ALL FOUR ORCHESTRATORS THAT CHECKS FOR DUPLICATE QIDS ON OUR WIKI. iF THERE ARE DUPLICATE QIDS THEN IT WILL ADD THEM TO A DUPLICATE QIDS PAGE.  tHIS MIGHT EVEN EXIST ALREADY BUT IF SO IT IS PROBABLY A ONE TIME OPERATION AND REALLY STALE, OUR EVENTUAL INTENTION IS TO MERGE THESE POSSIBLY SOMEWHAT AUTOMATICALLY BUT NOT SURE HOW TO DO IT AD THE MOMENT
 
 ## Queued work
