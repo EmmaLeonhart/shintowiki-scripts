@@ -43,18 +43,27 @@ jobs:
     needs: cleanup
     if: always()
     uses: ./.github/workflows/mainspace-orchestrator.yml
+    with:
+      enable_history_offload: true
+      enable_revdel: true
     secrets: inherit
 
   category-orchestrator:
     needs: mainspace-orchestrator
     if: always()
     uses: ./.github/workflows/category-orchestrator.yml
+    with:
+      enable_history_offload: true
+      enable_revdel: true
     secrets: inherit
 
   template-orchestrator:
     needs: category-orchestrator
     if: always()
     uses: ./.github/workflows/template-orchestrator.yml
+    with:
+      enable_history_offload: true
+      enable_revdel: true
     secrets: inherit
 
   # Random delay only on cron schedule, not on push
