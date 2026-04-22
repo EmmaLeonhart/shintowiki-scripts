@@ -17,13 +17,21 @@ After::
     {{wikidata link|Q904791|vi|Ất Mão}}
 
 When the page has interlanguage links but no wikidata link template, a
-new ``{{wikidata link||...}}`` (empty QID slot) is created — the template
-definition is expected to categorise these into a maintenance category
-so they can be noticed without running a separate scan script.
+new ``{{wikidata link||...}}`` (empty QID slot) is created so the
+interwikis still render — the empty slot stays until someone supplies
+the QID.
 
-Two same-language interlanguage links with different titles are kept as
-two distinct pairs (the template is expected to surface the conflict).
-Same-language same-title duplicates are deduplicated.
+Duplicate handling (per user spec):
+  * Same-language same-title pairs are dropped as duplicates.
+  * Same-language DIFFERENT-title pairs are kept, preserving both
+    distinct links.
+  * If the resulting pair list contains any duplicate language code,
+    the op adds ``[[Category:Pages with interwikis with duplicate
+    languages]]`` to the page so those pages are discoverable for
+    cleanup. The category is also removed again if a later run finds
+    no duplicates.
+Pairs are appended in the order interlanguage links appear on the
+page (top-down), so chronology on the source page is preserved.
 
 Safety gate
 -----------
@@ -78,6 +86,8 @@ WD_LINK_RE = re.compile(
     re.IGNORECASE,
 )
 
+DUP_LANG_CATEGORY = "[[Category:Pages with interwikis with duplicate languages]]"
+
 
 def _parse_wd_params(raw: str) -> tuple[str, list[tuple[str, str]]]:
     """Split the captured ``|Q|lang|title|lang|title...`` into (qid, pairs).
@@ -103,6 +113,12 @@ def _build_wd_template(qid: str, pairs: list[tuple[str, str]]) -> str:
         parts.append(lang)
         parts.append(title)
     return "{{wikidata link|" + "|".join(parts) + "}}"
+
+
+def _has_duplicate_languages(pairs: list[tuple[str, str]]) -> bool:
+    """True if any language code appears in more than one pair."""
+    langs = [lang for lang, _ in pairs]
+    return len(langs) != len(set(langs))
 
 
 def apply(title: str, text: str):
@@ -137,13 +153,29 @@ def apply(title: str, text: str):
                 merged.append(pair)
         new_template = _build_wd_template(qid, merged)
         new_text = text_no_il[:wd_match.start()] + new_template + text_no_il[wd_match.end():]
+        final_pairs = merged
     else:
-        # No existing template — create one with empty QID slot so the
-        # template can surface the page in a "has interlang but no QID"
-        # maintenance category.
+        # No existing template — create one with empty QID slot. The
+        # interwikis still render; a later run or manual edit can fill
+        # in the QID.
         new_template = _build_wd_template("", new_pairs)
         new_text = text_no_il.rstrip() + "\n" + new_template + "\n"
+        final_pairs = new_pairs
+
+    # Maintenance: flag pages that wound up with the same language code
+    # on multiple pairs (different targets). Add or remove the category
+    # so the invariant stays truthful across re-runs.
+    has_dup = _has_duplicate_languages(final_pairs)
+    cat_present = DUP_LANG_CATEGORY in new_text
+    if has_dup and not cat_present:
+        new_text = new_text.rstrip() + "\n" + DUP_LANG_CATEGORY + "\n"
+    elif not has_dup and cat_present:
+        new_text = new_text.replace(DUP_LANG_CATEGORY + "\n", "")
+        new_text = new_text.replace(DUP_LANG_CATEGORY, "")
 
     if new_text == text:
         return None, None
-    return new_text, f"consolidate {len(new_pairs)} interlanguage link(s) into wikidata link template"
+    summary = f"consolidate {len(new_pairs)} interlanguage link(s) into wikidata link template"
+    if has_dup:
+        summary += " (has duplicate-language pairs)"
+    return new_text, summary
