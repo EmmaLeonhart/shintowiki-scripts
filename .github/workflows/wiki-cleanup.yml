@@ -294,13 +294,11 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_unused_categories" \
             python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      # TERMINATING (July 2026 review): one-time talk-page rebuild across all
-      # subject namespaces. Remove once state covers every page.
-      - name: "Cleanup: migrate_talk_pages"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Cleanup Loop: migrate_talk_pages" \
-            python3 shinto_miraheze/migrate_talk_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # migrate_talk_pages — removed 2026-04-22. The talk-page rebuild was
+      # predicated on a wiki direction we're no longer pursuing, so the
+      # step is dropped (not just commented) along with the "TERMINATING
+      # July 2026 review" note that went with it. The script itself is
+      # kept in shinto_miraheze/ in case we want to revisit.
 
       - name: "Cleanup: delete_orphaned_talk_pages"
         if: always() && steps.*.outcome != 'cancelled'
