@@ -22,6 +22,40 @@ USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shinto
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:.+"$')
 
 
+def fetch_redirect_qids(qids):
+    """Return the subset of QIDs that are redirects on Wikidata.
+
+    Items that have been merged become redirects. `direct_daily_edits.py`
+    blows up on those with 'entity ID refers to a redirect' because the
+    Wikidata API refuses to add statements to a redirect. We filter them
+    here so they never reach the submission pipeline.
+    """
+    redirects = set()
+    qid_list = sorted(qids)
+    for i in range(0, len(qid_list), 50):
+        batch = qid_list[i : i + 50]
+        try:
+            resp = requests.get(
+                "https://www.wikidata.org/w/api.php",
+                params={
+                    "action": "wbgetentities",
+                    "ids": "|".join(batch),
+                    "props": "info",
+                    "format": "json",
+                },
+                headers={"User-Agent": USER_AGENT},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            entities = resp.json().get("entities", {})
+            for qid, entity in entities.items():
+                if "redirects" in entity:
+                    redirects.add(qid)
+        except Exception as e:
+            print(f"WARNING: redirect check failed for batch {batch[0]}..: {e}")
+    return redirects
+
+
 def fetch_existing_p11250_qids():
     """Query Wikidata SPARQL for all items that already have P11250.
 
@@ -93,18 +127,26 @@ def main():
         print("Wrote 0 QS lines to avoid duplicate submissions")
         return
 
+    candidate_qids = {QS_LINE_RE.match(line).group(1) for line in all_lines}
+    redirect_qids = fetch_redirect_qids(candidate_qids)
+    if redirect_qids:
+        print(f"Filtered out {len(redirect_qids)} redirect QIDs")
+
     lines = []
-    skipped = 0
+    skipped_existing = 0
+    skipped_redirect = 0
     for line in all_lines:
         m = QS_LINE_RE.match(line)
         qid = m.group(1)
-        if qid in existing_qids:
-            skipped += 1
+        if qid in redirect_qids:
+            skipped_redirect += 1
+        elif qid in existing_qids:
+            skipped_existing += 1
         else:
             lines.append(line)
 
-    if skipped:
-        print(f"Filtered out {skipped} items that already have P11250")
+    if skipped_existing:
+        print(f"Filtered out {skipped_existing} items that already have P11250")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         for line in lines:
