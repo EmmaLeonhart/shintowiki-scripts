@@ -194,7 +194,8 @@
       "Read(//tmp/**)",
       "Read(//c/tmp/**)",
       "Bash(unzip -o run-log.zip -d run-log/)",
-      "Bash(env)"
+      "Bash(env)",
+      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('_site/wikihistory.html', 'utf8'\\); const scriptStart = html.indexOf\\('<script>'\\); const scriptEnd = html.indexOf\\('</script>'\\); const body = html.slice\\(scriptStart+8, scriptEnd\\); try { new Function\\(body\\); console.log\\('JS parses OK'\\); } catch\\(e\\) { console.log\\('JS ERROR:', e.message\\); }\")"
     ],
     "deny": [],
     "ask": []
