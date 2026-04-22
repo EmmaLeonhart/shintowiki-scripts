@@ -121,7 +121,14 @@ def _bare_title(title: str, ns: int) -> str:
     return title.split(":", 1)[1]
 
 
-def archive_relpath(title: str, ns: int = 0) -> str:
+def archive_relpath(title: str, ns: int) -> str:
+    """Compute the archive path for a title in a given numeric namespace.
+
+    `ns` is REQUIRED and has no default. A silent default of ns=0 was the
+    original collision bug — every non-mainspace page ended up at a
+    mainspace path because callers didn't pass the namespace. Enforce it
+    at the signature so it can't happen again.
+    """
     folder = namespace_folder(ns)
     slug = safe_title(_bare_title(title, ns))
     first = slug[0].lower() if slug else "_"
@@ -130,13 +137,13 @@ def archive_relpath(title: str, ns: int = 0) -> str:
     return f"xml/{folder}/{first}/{slug}.xml"
 
 
-def archive_exists(title: str, ns: int = 0) -> bool:
-    """True if an XML archive for this title is already committed."""
+def archive_exists(title: str, ns: int) -> bool:
+    """True if an XML archive for this title+namespace is already committed."""
     root = ensure_clone()
     return (root / archive_relpath(title, ns)).is_file()
 
 
-def write_and_commit(title: str, xml_text: str, run_tag: str, ns: int = 0) -> bool:
+def write_and_commit(title: str, xml_text: str, run_tag: str, ns: int) -> bool:
     """Write the XML, commit, and push. Returns True on a new commit, False if nothing changed."""
     root = ensure_clone()
     rel = archive_relpath(title, ns)
