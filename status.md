@@ -4,13 +4,11 @@
 
 The purpose of this file is to bound scope. If a task is not in this queue, it is not in scope for the current session. New ideas go at the bottom of the queue (or to `todo.md` if they are longer-term / architectural), not silently into whatever is being worked on.
 
-## Blockers
+## Open follow-ups (from the history-offload rework)
 
-These are blocking the queued work below.
+1. **Enable `interlang_consolidate` in cleanup-loop.** The op is implemented on all four orchestrators and gated by `ENABLE_INTERLANG_CONSOLIDATE=1`. The original blocker was `Template:Wikidata link` not supporting the new positional `|lang|title` pairs; the template is now in `git_synced/` so edits can be made locally and CI-pushed. Flip `enable_interlang_consolidate: true` on the four orchestrator calls in `.github/workflows/cleanup-loop.yml` once the template has been updated. With this on, each page the orchestrator processes should get ~3 edits per run (fandom mirror + delete-recreate + interlang consolidate), up from ~2 currently.
 
-1. **`history_offload` crashes before revdel (stage 3 never runs).** `shinto_miraheze/orchestrators/ops/history_offload.py:269` calls `page.reload()`, which does not exist on mwclient `Page` objects. Every page raises `'Page' object has no attribute 'reload'` (see mainspace-orchestrator run 24745197206: the error repeats for every title). The crash happens *after* `_archive_repo.write_and_commit()` and *after* `page.save()`, so the XML file IS committed+pushed to `EmmaLeonhart/shintowiki-xml-archives` and the truncation banner IS saved on-wiki — but the revdel of old revisions never happens, so the actual Miraheze export-burden reduction (the whole point of the op) isn't occurring. Likely fix: drop the `.reload()` call (page.revisions() refetches from the API each call anyway), or replace with `page = site.pages[title]` to obtain a fresh Page.
-
-2. **`direct_daily_edits.py` flailing on stale/redirect QIDs.** Most P11250 lines fail with `The given entity ID refers to a redirect, which is not supported in this context`. `p11250_miraheze_links.txt` is fetched from `[[QuickStatements/P11250]]` on-wiki by `fetch_p11250_from_wiki.py`, and that page has accumulated QIDs that have since been merged into other items on Wikidata. A smaller subset of P958 lines fail with `The statement has already a qualifier with hash ...` — those are idempotency no-ops, not stale-QID errors, and are separate. Options: (a) resolve redirects to the current target QID before applying, (b) skip-and-log redirects in `direct_daily_edits.py`, (c) regenerate/prune `[[QuickStatements/P11250]]` against current Wikidata state so the stale lines stop being fetched. A lot of the backlog is probably just cycle-induced drift and can be cleared wholesale.
+2. **Review the 4667 files now sitting in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. They were siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
 
 ## Minor stuff
 
