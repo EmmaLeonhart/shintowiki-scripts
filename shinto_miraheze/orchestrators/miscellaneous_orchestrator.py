@@ -14,9 +14,9 @@ export burden is reduced wiki-wide, not just in the three primary
 content namespaces.
 
 Each namespace has its own state file (`misc_orchestrator_<ns>.state`)
-so progress on one doesn't affect the others. The `--max-edits` budget
-is shared across the entire miscellaneous sweep, not per-namespace; once
-exhausted, the remaining namespaces are skipped until the next run.
+AND its own `--max-edits` budget. A shared budget would let one busy
+namespace starve the rest — giving each namespace its own 100-edit cap
+means every namespace actually gets visited every run.
 
 Omitted namespaces (wikitext edits don't apply to their content model):
   * -2 Media, -1 Special     (virtual, not real pages)
@@ -67,29 +67,24 @@ def main() -> None:
         "--max-edits",
         type=int,
         default=100,
-        help="TOTAL edits across all miscellaneous namespaces per run.",
+        help="Per-namespace edit cap (NOT a shared budget across the sweep).",
     )
     parser.add_argument("--run-tag", required=True)
     args = parser.parse_args()
 
-    remaining = args.max_edits
     for ns, label in MISC_NAMESPACES:
-        if args.apply and remaining <= 0:
-            print(f"\nEdit budget exhausted; skipping ns={ns} ({label}) and beyond.")
-            break
         print(f"\n{'=' * 60}")
-        print(f"Miscellaneous orchestrator: ns={ns} ({label}) [budget remaining={remaining}]")
+        print(f"Miscellaneous orchestrator: ns={ns} ({label}) [cap={args.max_edits}]")
         print(f"{'=' * 60}")
-        edited = common.run_orchestrator(
+        common.run_orchestrator(
             namespace=ns,
             ns_label=label,
             ops=OPS,
             state_name=f"misc_orchestrator_{ns}",
             apply=args.apply,
-            max_edits=remaining,
+            max_edits=args.max_edits,
             run_tag=args.run_tag,
         )
-        remaining -= edited
 
 
 if __name__ == "__main__":
