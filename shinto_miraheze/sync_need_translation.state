@@ -92,32 +92,32 @@
     "sha": "1afa57f8fef17df258c4eeaccc8c4ce1f3fe81cb"
   },
   "Enuma no Kuni no Miyatsuko": {
-    "revid": 3620763,
-    "sha": "6ca8959eefa31fb89cd83f54881cd13937ffa097"
+    "revid": 3620912,
+    "sha": "fd111746c5aa4cec37046b63af7aaa095bdd7268"
   },
   "Fukuyama Hachimangū": {
     "revid": 3608937,
     "sha": "1c69d0c07e34f980e8113729a74512eb09fcb603"
   },
   "Fuse Shrine (Nagano)": {
-    "revid": 3611131,
-    "sha": "f39d0c30b028de0ebcc55cc9790d20333f212d81"
+    "revid": 3620915,
+    "sha": "8218db7e67dd28211b28b07e8eb8cc6e55c042fe"
   },
   "Futako Shrine": {
-    "revid": 3611167,
-    "sha": "d30d92822d40b7ad85a5c2f935752d41c803d323"
+    "revid": 3620951,
+    "sha": "b321d02a4fd958545880272e501538b11230d8ba"
   },
   "Gary Luscombe": {
-    "revid": 3611203,
-    "sha": "b6e939cd6d2bec4819fabc77d5a0a6090b8c65cb"
+    "revid": 3620988,
+    "sha": "ccfc25fabae3489b55b145eec9eb89857fe8f292"
   },
   "Generations": {
-    "revid": 3611210,
-    "sha": "c601d0d63b9590b0aa95e1286b8f5494e56aab05"
+    "revid": 3620995,
+    "sha": "0d81aead7d7cdfdb1eeeab983a22077f8e3274c0"
   },
   "Genkai Sea": {
-    "revid": 3611211,
-    "sha": "bb187123971bf2fd5bc346bc740723cf97c396bb"
+    "revid": 3620996,
+    "sha": "f888be05ed0432279714f734ff7a77ac42da88bf"
   },
   "Goryō": {
     "revid": 3611260,
@@ -320,8 +320,8 @@
     "sha": "f509020748568705eced6f3be3fa2ca984d74b0e"
   },
   "Keta-hongū": {
-    "revid": 3608906,
-    "sha": "cca86da78a2de0b43296874cb76361856d2be28b"
+    "revid": 3621579,
+    "sha": "20aa09a28e80939061be931f641e488dfc9e8a39"
   },
   "Kii no Kuni no Miyatsuko": {
     "revid": 3608887,
@@ -647,25 +647,9 @@
     "revid": 3609583,
     "sha": "cd0c7d3eb929d7e7adce3ddf6be710ac8a83b121"
   },
-  "上道国造": {
-    "revid": 3620751,
-    "sha": "0b2de2ec7953737da1d07a8c833407df71cb8d46"
-  },
   "下毛野国造": {
     "revid": 3609584,
     "sha": "32e4c028f092e74bc471f065d95a4fe07152dbf8"
-  },
-  "久努国造": {
-    "revid": 3620748,
-    "sha": "246da2d5c893e84571e9e134394ab654dfc9b216"
-  },
-  "久比岐国造": {
-    "revid": 3620749,
-    "sha": "a208a9e4f6b1861cc2ab34436de402bccc255b49"
-  },
-  "久自国造": {
-    "revid": 3620752,
-    "sha": "8f8e00b90b944013bd7d16e29aba2db7b8daa5e9"
   },
   "乎止与命": {
     "revid": 3609623,
@@ -915,10 +899,6 @@
     "revid": 3609190,
     "sha": "042765977cfe5f17a6af31349f8e016c32246060"
   },
-  "神大根王": {
-    "revid": 3620750,
-    "sha": "2aa67de09dab8b2225af5201f5be689ded424146"
-  },
   "科野国造": {
     "revid": 3609212,
     "sha": "68c6735c1c2e25722bd6e444e0b66aee973f1a43"
@@ -931,10 +911,6 @@
     "revid": 3609204,
     "sha": "f40a2243f0978c027fdb51f84351aa18c1cebb40"
   },
-  "紀伊国造": {
-    "revid": 3620753,
-    "sha": "75342876fc80245006f85d902bfac7eb54292280"
-  },
   "素賀国造": {
     "revid": 3609614,
     "sha": "3e25e5bc11cfd52a091f5fdffc8f2759914b7d62"
@@ -942,10 +918,6 @@
   "胸刺国造": {
     "revid": 3609606,
     "sha": "60767c6c8d72bc3d38a9680504b1a3207928e242"
-  },
-  "菊麻国造": {
-    "revid": 3620754,
-    "sha": "4eb1353623810d4d5f97d71e028ad39a07148f6c"
   },
   "菟狭津彦命": {
     "revid": 3609634,
