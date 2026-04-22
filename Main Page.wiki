@@ -10,9 +10,10 @@ See [[User:EmmaBot]] for current tasks being done cleaning up this wiki
 
 === Current tasks ===
 
-* Optimizing wiki to help with server load
+* Clearing the massive histories of pages to make the wiki no longer cause issues for miraheze
 * Updating the task list here
 
 === Future tasks ===
 * Unclear based on the future of the wiki
 [[Category:Uncategorized pages]]
+[[Category:Pages without wikidata]]
