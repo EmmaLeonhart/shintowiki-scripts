@@ -37,7 +37,14 @@ import urllib.parse
 from . import _archive_repo
 
 NAME = "history_offload"
-NAMESPACES = (0, 10, 14)
+# Every wikitext-content namespace. Excludes virtual (-2/-1) and special-
+# content namespaces where wikitext edits don't apply: GeoJson (420),
+# Module/Scribunto (828), and Wikibase Item/Property (860/862). Their Talk
+# counterparts (421/829/861/863) ARE wikitext and are included.
+NAMESPACES = (
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+    421, 829, 861, 863,
+)
 HANDLES_SAVE = True
 
 VIEWER_URL = "https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html"

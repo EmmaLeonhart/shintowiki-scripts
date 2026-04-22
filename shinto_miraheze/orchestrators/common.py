@@ -107,12 +107,12 @@ def run_orchestrator(
     apply: bool,
     max_edits: int,
     run_tag: str,
-) -> None:
-    """Core loop shared by all three namespace orchestrators."""
+) -> int:
+    """Core loop shared by all namespace orchestrators. Returns edit count."""
     applicable_ops = [op for op in ops if namespace in op.NAMESPACES]
     if not applicable_ops:
         print(f"No operations registered for ns={namespace} ({ns_label}); exiting.")
-        return
+        return 0
 
     heavy_ops = [op for op in applicable_ops if getattr(op, "HANDLES_SAVE", False)]
     light_ops = [op for op in applicable_ops if not getattr(op, "HANDLES_SAVE", False)]
@@ -246,3 +246,4 @@ def run_orchestrator(
     print(f"Edited:    {edited}")
     print(f"Skipped:   {skipped}")
     print(f"Errors:    {errors}")
+    return edited

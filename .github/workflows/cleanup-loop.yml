@@ -66,16 +66,28 @@ jobs:
       enable_revdel: true
     secrets: inherit
 
+  # Sweeps every other wikitext namespace (User, Talk, Project, File,
+  # MediaWiki, Help, and all remaining Talk spaces) with one shared
+  # edit budget. Runs last among the orchestrators.
+  miscellaneous-orchestrator:
+    needs: template-orchestrator
+    if: always()
+    uses: ./.github/workflows/miscellaneous-orchestrator.yml
+    with:
+      enable_history_offload: true
+      enable_revdel: true
+    secrets: inherit
+
   # Random delay only on cron schedule, not on push
   random-wait:
-    needs: template-orchestrator
+    needs: miscellaneous-orchestrator
     if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
 
   # On push: submit immediately after orchestrators
   # On cron: submit after random wait
   submit-quickstatements:
-    needs: [template-orchestrator, random-wait]
+    needs: [miscellaneous-orchestrator, random-wait]
     if: always() && needs.cleanup.result == 'success'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
