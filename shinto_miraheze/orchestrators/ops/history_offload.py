@@ -112,8 +112,16 @@ def _strip_existing_banner(text: str) -> str:
     return text[rest_start:]
 
 
-def _fetch_export_xml(site, title: str) -> str:
-    """Fetch the canonical Special:Export XML for a page (full history)."""
+def _fetch_export_xml(site, title: str) -> str | None:
+    """Fetch the canonical Special:Export XML for a page (full history).
+
+    Returns None if the export response lacks a <page> block (i.e. it's
+    just siteinfo — the page didn't exist, or Miraheze returned a dud).
+    The earlier implementation returned such responses anyway, which
+    caused the orchestrator to commit siteinfo-only "placeholder" files
+    into the archive repo. Those placeholders then blocked retries via
+    archive_exists(). Reject them here instead.
+    """
     host = site.host
     path = site.path
     url = f"https://{host}{path}index.php?title=Special:Export&action=submit"
@@ -124,7 +132,10 @@ def _fetch_export_xml(site, title: str) -> str:
         data={"pages": title, "history": "1", "wpDownload": "1"},
     )
     resp.raise_for_status()
-    return resp.text
+    xml = resp.text
+    if "<page>" not in xml:
+        return None
+    return xml
 
 
 def _list_contributors(site, title: str, limit: int = 50) -> list[str]:
@@ -208,10 +219,14 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
         print(f"  fandom mirror: {msg}")
 
     # Stage 1: XML archive (idempotent — skip if already present).
+    # Refuse to archive a placeholder: if Special:Export returned siteinfo
+    # only with no <page> block, don't commit — let the next run retry.
     if not _archive_repo.archive_exists(title, ns):
         if not apply:
             return False, "DRY RUN: would mirror + archive + delete + recreate"
         xml_text = _fetch_export_xml(site, title)
+        if xml_text is None:
+            return False, "Special:Export returned no <page> block; skipping offload"
         _archive_repo.write_and_commit(title, xml_text, run_tag, ns)
 
     if not apply:
