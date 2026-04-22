@@ -52,18 +52,53 @@
         return;
       }
 
-      const slug = raw.replace(/ /g, "_");
+      // Archive layout: xml/{namespace}/{first_char}/{slug}.xml. Namespace
+      // folder comes from the title prefix; slug is the non-namespace part.
+      const NS_PREFIX = {
+        "Talk:":            "talk",
+        "User:":            "user",
+        "User talk:":       "user_talk",
+        "Project:":         "project",
+        "Shinto Wiki:":     "project",
+        "Project talk:":    "project_talk",
+        "Shinto Wiki talk:": "project_talk",
+        "File:":            "file",
+        "File talk:":       "file_talk",
+        "MediaWiki:":       "mediawiki",
+        "MediaWiki talk:":  "mediawiki_talk",
+        "Template:":        "template",
+        "Template talk:":   "template_talk",
+        "Help:":            "help",
+        "Help talk:":       "help_talk",
+        "Category:":        "category",
+        "Category talk:":   "category_talk",
+        "GeoJson:":         "geojson",
+        "GeoJson talk:":    "geojson_talk",
+        "Module:":          "module",
+        "Module talk:":     "module_talk"
+      };
+      const normalized = raw.replace(/_/g, " ");
+      let nsFolder = "main";
+      let bare = normalized;
+      for (const [prefix, folder] of Object.entries(NS_PREFIX)) {
+        if (normalized.startsWith(prefix)) {
+          nsFolder = folder;
+          bare = normalized.slice(prefix.length);
+          break;
+        }
+      }
+      const slug = bare.replace(/ /g, "_");
       const safe = slug.replace(/[^A-Za-z0-9_\-\.]/g, "_");
       const first = (safe[0] || "_").toLowerCase();
       const shard = /[a-z0-9]/.test(first) ? first : "_";
-      const relpath = "xml/" + shard + "/" + safe + ".xml";
+      const relpath = "xml/" + nsFolder + "/" + shard + "/" + safe + ".xml";
 
       const repo = "EmmaLeonhart/shintowiki-xml-archives";
       const blobUrl = "https://github.com/" + repo + "/blob/main/" + relpath;
       const rawUrl  = "https://raw.githubusercontent.com/" + repo + "/main/" + relpath;
-      const wikiUrl = "https://shinto.miraheze.org/wiki/" + encodeURIComponent(slug);
+      const wikiUrl = "https://shinto.miraheze.org/wiki/" + encodeURIComponent(normalized.replace(/ /g, "_"));
 
-      const titleDisplay = decodeURIComponent(slug).replace(/_/g, " ");
+      const titleDisplay = normalized;
 
       target.innerHTML =
         '<p>Page: <span class="title">' + titleDisplay + '</span></p>' +
