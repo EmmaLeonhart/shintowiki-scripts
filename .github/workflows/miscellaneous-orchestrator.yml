@@ -92,6 +92,16 @@ jobs:
           python3 -m shinto_miraheze.orchestrators.miscellaneous_orchestrator \
             --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      # Render the duplicate-QIDs wiki report from the shared dict that
+      # the `duplicate_qids` op populates across all four orchestrators.
+      # Must run after ALL orchestrators (this is the last one) so the
+      # dict reflects the whole wiki, not just one namespace.
+      - name: "Render: find_duplicate_page_qids"
+        if: always()
+        run: |
+          shinto_miraheze/run_step.sh "Render: find_duplicate_page_qids" \
+            python3 shinto_miraheze/find_duplicate_page_qids.py --apply --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Miscellaneous Orchestrator"
         if: always()
         run: shinto_miraheze/commit_state.sh "Miscellaneous Orchestrator"

@@ -17,11 +17,15 @@ Usage:
 import argparse
 
 from shinto_miraheze.orchestrators import common
-from shinto_miraheze.orchestrators.ops import history_offload, wikidata_link
+from shinto_miraheze.orchestrators.ops import (
+    duplicate_qids,
+    history_offload,
+    wikidata_link,
+)
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
-OPS = [history_offload, wikidata_link]
+OPS = [history_offload, duplicate_qids, wikidata_link]
 
 
 def main():

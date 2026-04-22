@@ -32,7 +32,7 @@ Usage:
 import argparse
 
 from shinto_miraheze.orchestrators import common
-from shinto_miraheze.orchestrators.ops import history_offload
+from shinto_miraheze.orchestrators.ops import duplicate_qids, history_offload
 
 # (namespace_id, state_file_label) — processed in this order.
 MISC_NAMESPACES: list[tuple[int, str]] = [
@@ -55,7 +55,7 @@ MISC_NAMESPACES: list[tuple[int, str]] = [
     (863, "property_talk"),
 ]
 
-OPS = [history_offload]
+OPS = [history_offload, duplicate_qids]
 
 
 def main() -> None:
