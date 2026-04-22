@@ -16,6 +16,11 @@ Safety:
     the page (history still intact, easy to revert).
   * Revision-delete runs only when ENABLE_REVDEL=1 (separate gate). Stage 1
     validates archives + truncation edits; stage 2 flips the revdel switch.
+  * Cycles idempotently: on each re-visit the prior truncation banner is
+    stripped and a fresh one (carrying the current run_tag) is prepended,
+    producing a text-distinct new revision. Stage 3 then revdels every
+    prior revision including any earlier truncation edits, so the page
+    converges to a single visible revision: the most recent run's.
 
 The op sets HANDLES_SAVE = True, which tells common.run_orchestrator to run
 it in a pre-pass and then refetch page.text() before the regular apply()
@@ -57,22 +62,22 @@ def _viewer_link(title: str) -> str:
     return f"{VIEWER_URL}?page={page}"
 
 
-def _top_comment(title: str) -> str:
+def _top_comment(title: str, run_tag: str) -> str:
     link = _viewer_link(title)
     return (
         f"{COMMENT_MARKER} due to miraheze stability concerns, the edit "
         f"history of this page has been offloaded to the XML archive. "
-        f"See {link} for full history. -->"
+        f"See {link} for full history. Last refreshed: {run_tag} -->"
     )
 
 
-def _build_summary(title: str, contributors: list[str]) -> str:
+def _build_summary(title: str, contributors: list[str], run_tag: str) -> str:
     link = _viewer_link(title)
     prefix = (
         "[[Project:History cleanup|Offloading history due to miraheze "
         "stability concerns]]"
     )
-    suffix = f", see [{link} here] for full history"
+    suffix = f", see [{link} here] for full history {run_tag}"
 
     def attempt(contrib_text: str) -> str:
         return f"{prefix} {contrib_text}{suffix}"
@@ -85,8 +90,18 @@ def _build_summary(title: str, contributors: list[str]) -> str:
     return attempt("many contributors")
 
 
-def _already_offloaded(text: str) -> bool:
-    return COMMENT_MARKER in (text[:2000] if text else "")
+def _strip_existing_banner(text: str) -> str:
+    """Remove a prior history_offload banner (and its trailing newline) so we
+    can prepend a fresh one each cycle without stacking."""
+    if not text or not text.startswith(COMMENT_MARKER):
+        return text
+    end = text.find("-->", len(COMMENT_MARKER))
+    if end == -1:
+        return text  # malformed; leave alone
+    rest_start = end + len("-->")
+    if rest_start < len(text) and text[rest_start] == "\n":
+        rest_start += 1
+    return text[rest_start:]
 
 
 def _fetch_export_xml(site, title: str) -> str:
@@ -194,9 +209,6 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     except Exception as e:
         return False, f"could not read page: {e}"
 
-    if _already_offloaded(current_text):
-        return False, "already offloaded"
-
     # Stage 1: XML archive (idempotent — skip if already present).
     if not _archive_repo.archive_exists(title):
         if not apply:
@@ -205,12 +217,19 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
         _archive_repo.write_and_commit(title, xml_text, run_tag)
 
     if not apply:
-        return False, "DRY RUN: would edit + revdel (archive already present)"
+        return False, "DRY RUN: would refresh banner + edit + revdel"
 
-    # Stage 2: Truncation edit — one new revision with the HTML-comment banner.
+    # Stage 2: Truncation edit. Strip any prior banner so we don't stack,
+    # then prepend a fresh one. The banner AND the summary embed run_tag,
+    # so each cycle produces a text-distinct revision — MediaWiki can't
+    # suppress as a null edit, and the newest revid rotates forward. The
+    # revdel in stage 3 then hides every prior revision (including prior
+    # truncation edits), converging each page to one visible revision:
+    # the most recent run's truncation.
+    body = _strip_existing_banner(current_text)
     contributors = _list_contributors(site, title)
-    new_text = _top_comment(title) + "\n" + current_text
-    summary = _build_summary(title, contributors)
+    new_text = _top_comment(title, run_tag) + "\n" + body
+    summary = _build_summary(title, contributors, run_tag)
     page.save(new_text, summary=summary)
 
     # Stage 3: RevDel the rest. Gated separately so stage-1 rollout is reversible.
