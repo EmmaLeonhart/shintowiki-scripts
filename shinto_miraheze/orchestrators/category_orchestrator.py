@@ -14,12 +14,14 @@ from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
+    interlang_consolidate,
     wikidata_link,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
-OPS = [history_offload, duplicate_qids, wikidata_link]
+# interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
+OPS = [history_offload, duplicate_qids, interlang_consolidate, wikidata_link]
 
 
 def main():
