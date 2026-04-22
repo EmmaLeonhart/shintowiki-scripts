@@ -18,10 +18,12 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    deleted_qids_in_ill,
     duplicate_qids,
     history_offload,
     interlang_consolidate,
     remove_defaultsort,
+    untranslated_japanese,
     wikidata_link,
 )
 
@@ -32,7 +34,9 @@ OPS = [
     history_offload,
     duplicate_qids,
     remove_defaultsort,
+    deleted_qids_in_ill,
     interlang_consolidate,
+    untranslated_japanese,
     wikidata_link,
 ]
 
