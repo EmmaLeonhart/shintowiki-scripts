@@ -1,7 +1,15 @@
 {
+  "Template:GaiadDate": {
+    "revid": 3621478,
+    "sha": "b81f270c756760d237b9397c0bfb009fe038698d"
+  },
+  "Template:GaiadToday": {
+    "revid": 3621479,
+    "sha": "83879699b7b7e2fadf3714c9e99473a18aa63d35"
+  },
   "Template:Wikidata link": {
-    "revid": 3610547,
-    "sha": "042d353d14cc2ac0d741cb7177ad9f9e3cc97f62"
+    "revid": 3621598,
+    "sha": "5269aa1653bd706f76f9dd58249b5236601c59fd"
   },
   "Yang Earth Dog": {
     "revid": 3609221,
