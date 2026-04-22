@@ -39,13 +39,9 @@ jobs:
   # NAMESPACES includes its namespace, using a single shared state file
   # per namespace. Replaces the per-script state files of the cycling
   # scripts that used to live in wiki-cleanup.yml.
-  # NOTE: enable_interlang_consolidate is deliberately NOT set on any of
-  # the four orchestrator calls. That op rewrites pages to use new
-  # positional params in Template:Wikidata link, which must be updated
-  # on the wiki first (edit the template locally via git_synced/ and let
-  # CI push it). Once the template accepts the new params, flip the
-  # input to true here (or run the orchestrator via workflow_dispatch
-  # with the box ticked).
+  # Template:Wikidata link has been updated (via git_synced/) to accept
+  # the new positional |lang|title pairs (up to 20 pairs, params 2-41),
+  # so enable_interlang_consolidate is now on for all four orchestrators.
 
   mainspace-orchestrator:
     needs: cleanup
@@ -55,6 +51,7 @@ jobs:
       enable_history_offload: true
       enable_revdel: true
       enable_fandom_mirror: true
+      enable_interlang_consolidate: true
     secrets: inherit
 
   category-orchestrator:
@@ -65,6 +62,7 @@ jobs:
       enable_history_offload: true
       enable_revdel: true
       enable_fandom_mirror: true
+      enable_interlang_consolidate: true
     secrets: inherit
 
   template-orchestrator:
@@ -75,6 +73,7 @@ jobs:
       enable_history_offload: true
       enable_revdel: true
       enable_fandom_mirror: true
+      enable_interlang_consolidate: true
     secrets: inherit
 
   # Sweeps every other wikitext namespace (User, Talk, Project, File,
@@ -88,6 +87,7 @@ jobs:
       enable_history_offload: true
       enable_revdel: true
       enable_fandom_mirror: true
+      enable_interlang_consolidate: true
     secrets: inherit
 
   # Random delay only on cron schedule, not on push
