@@ -174,23 +174,55 @@ def _list_old_revids(site, title: str, keep_revid: int) -> list[int]:
     return revids
 
 
-def _revdel(site, title: str, revids: list[int]) -> None:
-    """Hide content+comment+user on the given revision IDs. Admin right needed."""
+def _revdel(site, title: str, revids: list[int]) -> tuple[int, list[str]]:
+    """Hide content+comment+user on the given revision IDs. Needs deleterevision
+    right (EmmaBot has sysop on shintowiki, so this is satisfied).
+
+    Returns (number of revisions successfully hidden, list of error strings).
+    Errors are COLLECTED and returned rather than raised, so one bad batch
+    doesn't abort the rest of the page's offload; the caller logs them.
+    """
     if not revids:
-        return
+        return 0, []
     token = site.get_token("csrf")
-    # action=revisiondelete accepts up to 50 ids per call.
+    done = 0
+    errors: list[str] = []
+    # action=revisiondelete accepts up to 50 ids per call. It is a WRITE
+    # action and must go over POST — some mwclient versions default api()
+    # to GET, which silently yields an empty response and leaves revisions
+    # visible. Force http_method='POST' explicitly.
     for i in range(0, len(revids), 50):
         batch = revids[i : i + 50]
-        site.api(
-            "revisiondelete",
-            type="revision",
-            target=title,
-            ids="|".join(str(r) for r in batch),
-            hide="content|comment|user",
-            reason="History offloaded to XML archive; see top-of-page comment for link.",
-            token=token,
-        )
+        try:
+            resp = site.api(
+                "revisiondelete",
+                http_method="POST",
+                type="revision",
+                target=title,
+                ids="|".join(str(r) for r in batch),
+                hide="content|comment|user",
+                reason="History offloaded to XML archive; see top-of-page comment for link.",
+                token=token,
+            )
+        except Exception as e:
+            errors.append(f"batch starting {batch[0]}: {e}")
+            continue
+        # The API returns {"revisiondelete": {"status": "Success", "items": [...]}}
+        # on success. Count items whose status reflects a hide (errored items
+        # come back with "errors"). Be defensive about shape — treat a
+        # non-"Success" top-level status as an error.
+        rd = (resp or {}).get("revisiondelete") or {}
+        status = rd.get("status")
+        items = rd.get("items") or []
+        if status != "Success":
+            errors.append(f"batch starting {batch[0]}: API status={status!r} resp={resp!r}")
+            continue
+        for item in items:
+            if item.get("errors"):
+                errors.append(f"rev {item.get('id')}: {item['errors']}")
+            else:
+                done += 1
+    return done, errors
 
 
 def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
@@ -240,7 +272,19 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
         except StopIteration:
             return True, "saved truncation edit; could not list revisions for revdel"
         olds = _list_old_revids(site, title, keep_revid)
-        _revdel(site, title, olds)
-        return True, f"offloaded; archived + truncated + revdel'd {len(olds)} revs"
+        done, errors = _revdel(site, title, olds)
+        if errors:
+            # Surface WHICH batches failed so a silent-revdel regression
+            # doesn't get masked by the orchestrator's generic heavy-op
+            # error handler. Return True (page was still modified by the
+            # truncation edit) but make the message carry the failure.
+            err_summary = "; ".join(errors[:3])
+            if len(errors) > 3:
+                err_summary += f" (+{len(errors) - 3} more)"
+            return True, (
+                f"offloaded; archived + truncated + revdel'd {done}/{len(olds)} revs "
+                f"(errors: {err_summary})"
+            )
+        return True, f"offloaded; archived + truncated + revdel'd {done}/{len(olds)} revs"
 
     return True, "offloaded; archived + truncated (revdel disabled)"
