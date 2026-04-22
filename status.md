@@ -5,31 +5,8 @@
 The purpose of this file is to bound scope. If a task is not in this queue, it is not in scope for the current session. New ideas go at the bottom of the queue (or to `todo.md` if they are longer-term / architectural), not silently into whatever is being worked on.
 
 ## Minor stuff
-One thing I really want us to work on is getting the interlanguage links more integrated with the Wikidata link template. I feel like we can do this, and once we do, we'll no longer have the interlanguage links randomly going around the page. This will be generally more efficient. I want this script that we make to be implemented on all namespaces, so it doesn't just iterate through the ones with the interlanguage link. Basically, what it will do is it will take something like this 
 
-'''
-[[vi:Ất Mão]]
-{{wikidata link|Q904791}}
-'''
-
-and it will turn it into something like this
-
-{{wikidata link|Q904791|vi|Ất Mão}}
-
-Now, I think we might be able to at some point move away from positional parameters into something like 
-
-{{wikidata link|Q904791|vi=Ất Mão}}
-
-But I feel like an unfortunate reality is that the way that our links and stuff are structured makes it so that it's very difficult, because you can easily, with that one, do something like this. 
-
-[[$2:$3]]
-
-Whereas dropping the positional parameters in favour of having it so the languages all have their individual things is something that we might be able to do. But I think in order to do this, it'll be best for us to consolidate all of these things first and then focus on it later.
-
-Our general rule here will be pretty simple, right? If we experience instances where we are putting them into the template regardless of where they are. If there is no wiki data but there is a thing, then we specifically have the wiki data but there are interlanguage links. We specifically have them so that the second parameter is empty and this will add these things into a category specifically indicating that they have interlanguage links but no wiki data. This is easier than running our own category thing constantly. 
-
-Yeah, positional parameters are good, but my idea here would probably be we get all these things in here first to consolidate the mess, and then we work on that. One thing I'll say as well is basically the interlanguage links: if there are two of the same interlanguage link that contradict each other, then we can even have it so that they're two different positional parameters with the same information, and the template will somehow indicate it. We're switching everything towards using the template. However, if it's the same one, then we don't bother with it. Right now, we're not actually going to do anything of like 'are these consistent with a Wikidata item?' or anything like that. That is something for later. 
-
+The `interlang_consolidate` op is implemented (all four orchestrators) but deliberately gated behind `ENABLE_INTERLANG_CONSOLIDATE=1`, which is NOT set from cleanup-loop.yml. Flip that input to `true` on the four orchestrator calls in `.github/workflows/cleanup-loop.yml` once `Template:Wikidata link` has been updated to accept the new positional `|lang|title` pairs. Template edits go via `git_synced/` (tag `Template:Wikidata link` on the wiki with `[[Category:Git synced pages]]`, let the sync pull it to the repo, edit locally, push).
 
 Also at least in this run https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/24744680692/job/72417848749 there was a lot of redirect related flailing and idk why. I thought we solved the redirects problem several commits ago. (Observation so far: that run's `mainspace-orchestrator` hit the 2h timeout and got cancelled; the orchestrator skips redirects correctly in common.py, so the flailing is probably in `fix_double_redirects.py` — if Special:DoubleRedirects keeps producing the same pages run after run, that script is fighting itself. Run log isn't available until the run finishes, so this is deferred until a completed run with similar behavior can be inspected.)
 

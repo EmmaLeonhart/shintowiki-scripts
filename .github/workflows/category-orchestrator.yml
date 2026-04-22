@@ -15,12 +15,19 @@ on:
         description: "Also revision-delete the offloaded history (destructive)"
         type: boolean
         default: false
+      enable_interlang_consolidate:
+        description: "Fold interlanguage links into the wikidata link template"
+        type: boolean
+        default: false
   workflow_call:
     inputs:
       enable_history_offload:
         type: boolean
         default: false
       enable_revdel:
+        type: boolean
+        default: false
+      enable_interlang_consolidate:
         type: boolean
         default: false
 
@@ -37,6 +44,7 @@ jobs:
       WIKI_EDIT_LIMIT: "100"
       ENABLE_HISTORY_OFFLOAD: ${{ inputs.enable_history_offload && '1' || '' }}
       ENABLE_REVDEL: ${{ inputs.enable_revdel && '1' || '' }}
+      ENABLE_INTERLANG_CONSOLIDATE: ${{ inputs.enable_interlang_consolidate && '1' || '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
