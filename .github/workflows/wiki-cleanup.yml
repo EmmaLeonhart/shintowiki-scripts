@@ -230,11 +230,8 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
             python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
-      - name: "Wikidata: tag_deleted_qids_in_ill"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Core Loop: tag_deleted_qids_in_ill" \
-            python3 shinto_miraheze/tag_deleted_qids_in_ill.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # tag_deleted_qids_in_ill ported to ops/deleted_qids_in_ill.py —
+      # runs via mainspace-orchestrator now.
 
       - name: "Commit state: Wikidata"
         if: always() && steps.*.outcome != 'cancelled'
@@ -257,11 +254,9 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: categorize_uncategorized_pages" \
             python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      - name: "Final: tag_untranslated_japanese"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Core Loop: tag_untranslated_japanese" \
-            python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # tag_untranslated_japanese ported to ops/untranslated_japanese.py —
+      # runs via mainspace-orchestrator now. The standalone script is
+      # retained for the one-off --category rebucket step below.
 
       - name: "Final: strip_translated_char_count_cats"
         if: always() && steps.*.outcome != 'cancelled'
