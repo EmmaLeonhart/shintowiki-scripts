@@ -181,6 +181,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: resolve_double_category_qids" \
             python3 shinto_miraheze/resolve_double_category_qids.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Structural: audit_double_category_qids"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: audit_double_category_qids" \
+            python3 shinto_miraheze/audit_double_category_qids.py --apply --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Structural Fixes"
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Structural Fixes"
