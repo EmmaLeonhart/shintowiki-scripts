@@ -193,7 +193,8 @@
       "Bash(PYTHONIOENCODING=utf-8 python -c \"import sys, json; d = json.load\\(sys.stdin\\); events = d['query']['logevents']; print\\(f'{len\\(events\\)} delete-log events'\\); [print\\(e.get\\('timestamp'\\), '|', e.get\\('action'\\), '|', e.get\\('title'\\), '|', e.get\\('comment',''\\)[:60]\\) for e in events]\")",
       "Read(//tmp/**)",
       "Read(//c/tmp/**)",
-      "Bash(unzip -o run-log.zip -d run-log/)"
+      "Bash(unzip -o run-log.zip -d run-log/)",
+      "Bash(env)"
     ],
     "deny": [],
     "ask": []
