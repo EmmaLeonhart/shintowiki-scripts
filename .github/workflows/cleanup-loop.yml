@@ -54,6 +54,7 @@ jobs:
     with:
       enable_history_offload: true
       enable_revdel: true
+      enable_fandom_mirror: true
     secrets: inherit
 
   category-orchestrator:
@@ -63,6 +64,7 @@ jobs:
     with:
       enable_history_offload: true
       enable_revdel: true
+      enable_fandom_mirror: true
     secrets: inherit
 
   template-orchestrator:
@@ -72,6 +74,7 @@ jobs:
     with:
       enable_history_offload: true
       enable_revdel: true
+      enable_fandom_mirror: true
     secrets: inherit
 
   # Sweeps every other wikitext namespace (User, Talk, Project, File,
@@ -84,6 +87,7 @@ jobs:
     with:
       enable_history_offload: true
       enable_revdel: true
+      enable_fandom_mirror: true
     secrets: inherit
 
   # Random delay only on cron schedule, not on push

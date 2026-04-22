@@ -39,7 +39,7 @@ Why revision-delete rather than page-delete + recreate:
 import os
 import urllib.parse
 
-from . import _archive_repo
+from . import _archive_repo, fandom_mirror
 
 NAME = "history_offload"
 # Every wikitext-content namespace. Excludes virtual (-2/-1) and special-
@@ -235,16 +235,28 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
 
     title = page.page_title if hasattr(page, "page_title") else page.name
     enable_revdel = os.getenv("ENABLE_REVDEL") == "1"
+    enable_fandom_mirror = os.getenv("ENABLE_FANDOM_MIRROR") == "1"
 
     try:
         current_text = page.text()
     except Exception as e:
         return False, f"could not read page: {e}"
 
+    # Stage 0: Fandom mirror. Runs BEFORE truncation/revdel so the
+    # destructive source-side edits only happen if the fandom copy is
+    # known good. A failed mirror aborts the op for this page — the
+    # wiki is left untouched, retaining full history for manual followup.
+    # (The XML archive in stage 1 is always safe and independent.)
+    if enable_fandom_mirror and apply:
+        ok, msg = fandom_mirror.mirror_page(site, title, run_tag)
+        if not ok:
+            return False, f"fandom mirror FAILED ({msg}); aborting offload"
+        print(f"  fandom mirror: {msg}")
+
     # Stage 1: XML archive (idempotent — skip if already present).
     if not _archive_repo.archive_exists(title):
         if not apply:
-            return False, "DRY RUN: would archive XML + edit + revdel"
+            return False, "DRY RUN: would mirror to fandom + archive + edit + revdel"
         xml_text = _fetch_export_xml(site, title)
         _archive_repo.write_and_commit(title, xml_text, run_tag)
 
