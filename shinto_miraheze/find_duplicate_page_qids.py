@@ -2,10 +2,11 @@
 """
 find_duplicate_page_qids.py
 ============================
-Walks every mainspace page in [[Category:Pages linked to Wikidata]], reads
-the QID out of its ``{{wikidata link|Qxxx}}`` template, and writes a
-maintenance report to [[Duplicate page QIDs]] listing every QID that is
-claimed by more than one wiki page.
+Walks every page in [[Category:Pages linked to Wikidata]] (across all
+namespaces — mainspace, Template, Category, and every other namespace
+where {{wikidata link|...}} is transcluded), reads the QID out of the
+template, and writes a maintenance report to [[Duplicate page QIDs]]
+listing every QID that is claimed by more than one wiki page.
 
 The report is rewritten from scratch on each run (single page, one write),
 so there is no per-entry state file. The scan is read-only against every
@@ -97,8 +98,6 @@ def main():
     scanned = 0
     no_qid = 0
     for page in cat:
-        if page.namespace != 0:
-            continue
         try:
             text = page.text()
         except Exception as e:
