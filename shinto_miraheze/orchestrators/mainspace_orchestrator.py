@@ -21,13 +21,20 @@ from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
     interlang_consolidate,
+    remove_defaultsort,
     wikidata_link,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
 # interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
-OPS = [history_offload, duplicate_qids, interlang_consolidate, wikidata_link]
+OPS = [
+    history_offload,
+    duplicate_qids,
+    remove_defaultsort,
+    interlang_consolidate,
+    wikidata_link,
+]
 
 
 def main():
