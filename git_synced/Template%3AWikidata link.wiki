@@ -1,0 +1,14 @@
+{{tmbox
+ |name=wikidata-entry
+ |type=notice
+ |image=[[File:Wikidata-logo.svg|30px]]
+ |small=yes
+ |smallimage=[[File:Wikidata-logo.svg|20px]]
+ |smalltext=This {{pagetype}} is linked to its entry on [[Wikidata]]: {{q|{{{1}}}}}.
+}}[[da:{{{1}}}]]<includeonly>
+</includeonly><noinclude>
+{{documentation}}
+[[Category:Git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
