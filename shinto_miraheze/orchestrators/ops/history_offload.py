@@ -266,7 +266,9 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
 
     # Stage 3: RevDel the rest. Gated separately so stage-1 rollout is reversible.
     if enable_revdel:
-        page.reload()
+        # page.revisions() hits the API fresh each call — no need to reload().
+        # (mwclient's Page has no .reload(); calling it raised AttributeError
+        # and skipped revdel on every page.)
         try:
             keep_revid = next(iter(page.revisions(limit=1)))["revid"]
         except StopIteration:
