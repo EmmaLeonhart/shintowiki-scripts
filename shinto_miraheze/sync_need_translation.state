@@ -91,121 +91,129 @@
     "revid": 3608916,
     "sha": "1afa57f8fef17df258c4eeaccc8c4ce1f3fe81cb"
   },
+  "Enuma no Kuni no Miyatsuko": {
+    "revid": 3620763,
+    "sha": "6ca8959eefa31fb89cd83f54881cd13937ffa097"
+  },
   "Fukuyama Hachimangū": {
     "revid": 3608937,
     "sha": "1c69d0c07e34f980e8113729a74512eb09fcb603"
   },
   "Fuse Shrine (Nagano)": {
-    "revid": 3609787,
-    "sha": "20716d97d7c309ea081917e602087dbd1f6c646b"
+    "revid": 3611131,
+    "sha": "f39d0c30b028de0ebcc55cc9790d20333f212d81"
   },
   "Futako Shrine": {
-    "revid": 3609823,
-    "sha": "5205817ee690bb26f2ce2466d25634ad1e0f2114"
+    "revid": 3611167,
+    "sha": "d30d92822d40b7ad85a5c2f935752d41c803d323"
   },
   "Gary Luscombe": {
-    "revid": 3609859,
-    "sha": "90e3849bf35d0d329ba03e66d745f45b60a8d1a4"
+    "revid": 3611203,
+    "sha": "b6e939cd6d2bec4819fabc77d5a0a6090b8c65cb"
   },
   "Generations": {
-    "revid": 3609866,
-    "sha": "26dc9d6e0a67ce4f0fca4219dbe5c37bcdbf9ef9"
+    "revid": 3611210,
+    "sha": "c601d0d63b9590b0aa95e1286b8f5494e56aab05"
   },
   "Genkai Sea": {
-    "revid": 3609867,
-    "sha": "7355d4fb03404f4d598a089997e793b372189812"
+    "revid": 3611211,
+    "sha": "bb187123971bf2fd5bc346bc740723cf97c396bb"
   },
   "Goryō": {
-    "revid": 3609930,
-    "sha": "5016da269b5ca545f4466d417b932c43fbc4d27e"
+    "revid": 3611260,
+    "sha": "6c98be08c117b7c304001f111d454773db7f0146"
   },
   "Hakusan Shrine (Kasugai)": {
-    "revid": 3610232,
-    "sha": "eb05705221b0f7786630b30bdb2774feeb276351"
+    "revid": 3611442,
+    "sha": "505ec37b630092fda8df45cfb53846c7fe398061"
   },
   "Hakusan Shrine (Miki)": {
-    "revid": 3610233,
-    "sha": "1c70e0e6b0ec60f86f189ece77dc3a5c81855ba8"
+    "revid": 3611443,
+    "sha": "c7d212f32c2f7b4ecd4c60478eb1a047f9fb8f3b"
   },
   "Hakusan Shrine (Nuttari-higashi, Niigata)": {
-    "revid": 3610234,
-    "sha": "f670361851a07119c4b4bbca4182d29badde2480"
+    "revid": 3611444,
+    "sha": "9faa520a4c64241faa369ed789cbd8a32885c4da"
   },
   "Hayabusa Shrine (Kyoto)": {
     "revid": 3608945,
     "sha": "ba0168c748caac72c2d7a420ce0d0308426df09b"
   },
   "Hetu and Luoshu": {
-    "revid": 3570519,
-    "sha": "0abc4d040938d1091883feae0a227b964a1da01a"
+    "revid": 3611658,
+    "sha": "46d84c0fb5e4ce7dbec758f79daef695be14a24e"
   },
   "Hijiri Shrine (Izumi, Osaka)": {
-    "revid": 3608946,
-    "sha": "c8abdf9c2081fa8a7b66b5eab4b7a6019e668594"
+    "revid": 3611719,
+    "sha": "34b1c8e4e585f8fcbefe18c1b2a1fe831b164ebc"
   },
   "Himukai-daijingū": {
-    "revid": 3609072,
-    "sha": "bac41ffac1ba957efbc1e80082fca80e5f831401"
+    "revid": 3611797,
+    "sha": "3e4d0e39eac0bdb85843a516675a6f58455f6818"
   },
   "Hinama-ji Hime-no-Mikoto Shrine": {
-    "revid": 3608947,
-    "sha": "e4f00baa093eff78354bf9df0783829ec7875e6c"
+    "revid": 3611806,
+    "sha": "4c46fe231ce201cb06fe05c5cbd596f70612fc98"
   },
   "Hioki Shrine (Takashima)": {
-    "revid": 3608948,
-    "sha": "a70cb770f608b370ebbde953f9bd5abd5e82ca0b"
+    "revid": 3611844,
+    "sha": "8f24c292ed3a35e38ce76d82bf46d79649dac7d8"
   },
   "Hirose Shrine (Sayama)": {
-    "revid": 3608949,
-    "sha": "9839fc2639adf154ebafc7ee7d0dfa4119305623"
+    "revid": 3611884,
+    "sha": "33770c645aaab2730e5403b6978570dfed55bc19"
   },
   "Hiruko Shrine (Naka)": {
-    "revid": 3608950,
-    "sha": "db605cb32e555712359d6fb0945ae2ecbb985e24"
+    "revid": 3611895,
+    "sha": "b783750b33990f5765ba56de56ff8e7b58c13b95"
   },
   "Hitsujisaki Shrine (Minato, Ishinomaki)": {
-    "revid": 3608951,
-    "sha": "6832025423fe61b7abd4a91154b85401f68bcebd"
+    "revid": 3611937,
+    "sha": "2d62ca35b67870c7343488bb5d7a26eb04a5c6d1"
   },
   "Horaisan Kofun": {
     "revid": 3607727,
     "sha": "93bc4747952f57d04c3d49d24a681fe6f90185cf"
   },
   "Hozumi Iwayumi": {
-    "revid": 3608882,
-    "sha": "0070234e95be8d35e7c894ae9b87c879a9e348d0"
+    "revid": 3612051,
+    "sha": "e361dfe04fd0c0cc79ac222e6912bef41286c3f6"
   },
   "Ichikishima-hime": {
-    "revid": 3608883,
-    "sha": "272d2637d36dda74338e8bbbf21da6866a2c6393"
+    "revid": 3612127,
+    "sha": "a740fc1311b33f668d8bb720c738ac520230e784"
   },
   "Iino Hachimangū": {
-    "revid": 3608952,
-    "sha": "f73f608166f598a391b3e06686427c0090fd43bd"
+    "revid": 3612248,
+    "sha": "6affc7e38bd2cc714d3d54884aba10ff43d9471d"
   },
   "Iizuna Shrine (Mount Iizuna)": {
-    "revid": 3608953,
-    "sha": "dbdd307b24f02b9169e6a5ccdf429ee1e79bcc8a"
+    "revid": 3612256,
+    "sha": "67c509390834435a4f005c5acbc867c0d9bf5a17"
   },
   "Ikasuri Shrine": {
-    "revid": 3600248,
-    "sha": "e7ed31229f857c9de0c05eca05307d46e378b9b4"
+    "revid": 3612285,
+    "sha": "402084759ee92da1a888febe10a1d9381152cad6"
   },
   "Imamiya Ebisu Shrine": {
-    "revid": 3608954,
-    "sha": "60740ed5f7e7816369f6443f243b57b6a3bfaca7"
+    "revid": 3612364,
+    "sha": "3cc0fc2c164316c5d6f1d7064d6265904017fe88"
   },
   "Imperial decrees": {
     "revid": 3607728,
     "sha": "9062c89648e6deb2f70bca3b553ba4220fb978bf"
   },
   "Inaba Shrine": {
-    "revid": 3610731,
-    "sha": "b560fec79fca32d62014a4de9cc5c72340fd8b1b"
+    "revid": 3612389,
+    "sha": "4fdcc166f033593a857f38a7469d2cfce9eb1e73"
   },
   "Inaba Shrine (Gifu)": {
-    "revid": 3609114,
-    "sha": "711b9781bd6762a1bec67a15b1c89796ce784b62"
+    "revid": 3612390,
+    "sha": "bd0e672a456b44852231f4e6f992f0c40a048e74"
+  },
+  "Isachi-no-Sukune": {
+    "revid": 3620767,
+    "sha": "73b7bb6e7108fcf12ce3ebfe2c3452e241216568"
   },
   "Iwa-tsutsu-no'o": {
     "revid": 3608884,
@@ -234,6 +242,14 @@
   "Juniso Kumano Shrine": {
     "revid": 3609116,
     "sha": "6f212aa72d9a7bfc2e41a429fb80d35c19d5e01a"
+  },
+  "Kai clan": {
+    "revid": 3620770,
+    "sha": "68b2ad126ea2e114e9b045eb99fe342777f31d22"
+  },
+  "Kai no Kuni no Miyatsuko": {
+    "revid": 3620737,
+    "sha": "85dfb22f0a25b575294c268a6ed9bb15080401fb"
   },
   "Kameido Tenjin Shrine": {
     "revid": 3609117,
@@ -267,6 +283,10 @@
     "revid": 3609123,
     "sha": "07ac99137b3a22eee7f1f11b46c59d4f86b39c9a"
   },
+  "Kanesune-no-Mikoto": {
+    "revid": 3620771,
+    "sha": "d3dd820ad99e87caa089dcdf5314464153163785"
+  },
   "Kashii-gū": {
     "revid": 3600942,
     "sha": "e85a11605209fda6b22de992bb7117e01ce9100d"
@@ -274,6 +294,10 @@
   "Kashima Shrine (Kashiba)": {
     "revid": 3609124,
     "sha": "92e00c9abeb8af56feb3307cbc2b0155cbcfd40b"
+  },
+  "Kashiwade-no-Areshi": {
+    "revid": 3620772,
+    "sha": "bfdce82a76440f46513999d55285f5fb708ada95"
   },
   "Kawahara Shrine": {
     "revid": 3608886,
@@ -399,6 +423,10 @@
     "revid": 3608903,
     "sha": "d8ded6351ec13457ea292d7bfc17254a2855bc36"
   },
+  "Mukuda no Kuni no Miyatsuko": {
+    "revid": 3620706,
+    "sha": "68d798f77635ef36660cf3eafb53a497981a143a"
+  },
   "Munakata clan": {
     "revid": 3608894,
     "sha": "c1b70adb8763113fcba9dae3b45d4762a3414f90"
@@ -474,6 +502,10 @@
   "Oosakayamaguchi Shrine (Katsuge district)": {
     "revid": 3609149,
     "sha": "35db76dc91ede5b3b741b1fe5da386e83475168f"
+  },
+  "Osashi": {
+    "revid": 3620723,
+    "sha": "157d027da657b464e6f1941e863fcb0865570244"
   },
   "Otokuni-nimasuohoikatsuchino Shrine": {
     "revid": 3608896,
@@ -551,9 +583,13 @@
     "revid": 3608892,
     "sha": "290a565209bb60464d8e616884726a7b5d48be41"
   },
-  "Two-Wheeled Festival Floats": {
-    "revid": 3608907,
-    "sha": "784d92d7aacda24ad9e7e3bffcefc7e2226bd7d3"
+  "Ujihiko": {
+    "revid": 3620698,
+    "sha": "7f57673cd00ebd5cdacdaaf9f70e7662736c90f9"
+  },
+  "Ukita no Kuni no Miyatsuko": {
+    "revid": 3620697,
+    "sha": "52300d10fad35e353a4816f3675f4935d07ef69c"
   },
   "Ushihiko Shrine (Tokushima)": {
     "revid": 3609155,
@@ -575,18 +611,6 @@
     "revid": 3607739,
     "sha": "434f8c58789153e8bf55592686c9a078655c5c02"
   },
-  "Yagi clan": {
-    "revid": 3560104,
-    "sha": "bc23ee9538e117d96ddbd159a647e423c8d7d6b0"
-  },
-  "Yamamoto Hachimangū (Fujinomiya City)": {
-    "revid": 3608893,
-    "sha": "38a5d5d298a48b74843b61d150efee3257272f4e"
-  },
-  "Yamanobe-no-Michi": {
-    "revid": 3298494,
-    "sha": "601c1c9fc74f36806f4dff9c4498d09311cb445b"
-  },
   "Yasaka Shrine (Gika, Koka)": {
     "revid": 3609159,
     "sha": "753b084b52150d7390bcf5990c92c255ee1e5d5e"
@@ -595,9 +619,13 @@
     "revid": 3609160,
     "sha": "f7c88be8db0437e2940f794fe63cdd3086b799b8"
   },
-  "Ōtataneko": {
-    "revid": 3393028,
-    "sha": "655928f57036ef80da9462783c526f6698180346"
+  "Ōku no Kuni no Miyatsuko": {
+    "revid": 3620719,
+    "sha": "710ec66259e0becb61989dcd36f9664caa36f91c"
+  },
+  "Ōmi no Kuni no Miyatsuko": {
+    "revid": 3620715,
+    "sha": "1c7ec19f537520872fb08c3e510fc0ad362d89ae"
   },
   "Ōyamato Shrine": {
     "revid": 3601641,
@@ -619,29 +647,25 @@
     "revid": 3609583,
     "sha": "cd0c7d3eb929d7e7adce3ddf6be710ac8a83b121"
   },
-  "上海上国造": {
-    "revid": 3609200,
-    "sha": "4f166e8ec684508dd2d72872cbacf99fd62a52b1"
-  },
   "上道国造": {
-    "revid": 3609645,
-    "sha": "61e3a073f65e3d31d28d01239d494e47b9d9abe1"
+    "revid": 3620751,
+    "sha": "0b2de2ec7953737da1d07a8c833407df71cb8d46"
   },
   "下毛野国造": {
     "revid": 3609584,
     "sha": "32e4c028f092e74bc471f065d95a4fe07152dbf8"
   },
   "久努国造": {
-    "revid": 3609612,
-    "sha": "83523444f6f1b629745fcc81a8298eae31af127a"
+    "revid": 3620748,
+    "sha": "246da2d5c893e84571e9e134394ab654dfc9b216"
   },
   "久比岐国造": {
-    "revid": 3609620,
-    "sha": "6e025bc030535319bbdd9ba3278e07dbe8b0a7b5"
+    "revid": 3620749,
+    "sha": "a208a9e4f6b1861cc2ab34436de402bccc255b49"
   },
   "久自国造": {
-    "revid": 3609205,
-    "sha": "ca23cdfa337f1b0ee08bf2e4e447bd028a32e535"
+    "revid": 3620752,
+    "sha": "8f8e00b90b944013bd7d16e29aba2db7b8daa5e9"
   },
   "乎止与命": {
     "revid": 3609623,
@@ -650,10 +674,6 @@
   "二方国造": {
     "revid": 3609633,
     "sha": "8adf4b5a3603b69738112879124aa2849dba4145"
-  },
-  "伊久国造": {
-    "revid": 3609615,
-    "sha": "b29631d8f462e49c3b450e0898129cf716f402c7"
   },
   "伊佐我命": {
     "revid": 3609605,
@@ -730,10 +750,6 @@
   "塩海足尼": {
     "revid": 3609626,
     "sha": "083bf1f453715f7de24e85c8ad6f1c2ab968fdb7"
-  },
-  "大伯国造": {
-    "revid": 3609644,
-    "sha": "01ef07ee8dc7344146416ad2c1c626b9b17caa9e"
   },
   "大河内味張": {
     "revid": 3609610,
@@ -863,10 +879,6 @@
     "revid": 3609197,
     "sha": "2ca6e3648cd63c87df03b4565eebde9d3683f874"
   },
-  "江沼国造": {
-    "revid": 3609642,
-    "sha": "28dac61bf69e1eb6417d5122aeddb6ce1e4ca902"
-  },
   "沼田国造": {
     "revid": 3609168,
     "sha": "35bb74c1b7043a7f71aaacaf6ae95e5bce29eed6"
@@ -874,18 +886,6 @@
   "洲羽国造": {
     "revid": 3609611,
     "sha": "76e27ec92920e606d52284c282576593d3fb99c0"
-  },
-  "浮田国造": {
-    "revid": 3609628,
-    "sha": "18d7eafecc0417f98b3d78c329600b4b60cb7ced"
-  },
-  "海上五十狭茅": {
-    "revid": 3609647,
-    "sha": "07870e6f3b9ae90afcea68f4f899e62d4f6760cc"
-  },
-  "淡海国造": {
-    "revid": 3609206,
-    "sha": "2687a49624a21908419ca185668f840a26030b35"
   },
   "熊野国造": {
     "revid": 3609173,
@@ -903,18 +903,6 @@
     "revid": 3608899,
     "sha": "d2f8fe4da8f2d3a70e72298e5f9280374d6ff58c"
   },
-  "甲斐国造": {
-    "revid": 3609191,
-    "sha": "9e5a71e2a7ec6fa3496de2378fff36a5180e938f"
-  },
-  "甲斐氏": {
-    "revid": 3609164,
-    "sha": "dbc0e5177af1b0fcabbe9579d4fa05e0b1cc7558"
-  },
-  "男狭磯": {
-    "revid": 3609638,
-    "sha": "5df029070ca9dd6273660b7dae235c2cca2535d1"
-  },
   "白河国造": {
     "revid": 3609590,
     "sha": "0850c841a93c8001d724d3abcdff9c6bd38ee952"
@@ -927,25 +915,13 @@
     "revid": 3609190,
     "sha": "042765977cfe5f17a6af31349f8e016c32246060"
   },
-  "石城国造": {
-    "revid": 3609588,
-    "sha": "891776f99f3a589fb63d0bebececc62219828ec4"
-  },
-  "石背国造": {
-    "revid": 3609589,
-    "sha": "b09cd27b44f160f824a86f02dc7ce32c8dad65c4"
-  },
   "神大根王": {
-    "revid": 3609640,
-    "sha": "d631c1491727442caf9a4e398e5e8633a8b114ed"
+    "revid": 3620750,
+    "sha": "2aa67de09dab8b2225af5201f5be689ded424146"
   },
   "科野国造": {
     "revid": 3609212,
     "sha": "68c6735c1c2e25722bd6e444e0b66aee973f1a43"
-  },
-  "稲葉国造": {
-    "revid": 3609616,
-    "sha": "cb216533362c2647af1024f309e23c1431391de2"
   },
   "穂国造": {
     "revid": 3609166,
@@ -956,8 +932,8 @@
     "sha": "f40a2243f0978c027fdb51f84351aa18c1cebb40"
   },
   "紀伊国造": {
-    "revid": 3609165,
-    "sha": "191e4f7d457adc220911a8dde8336980f4b3587f"
+    "revid": 3620753,
+    "sha": "75342876fc80245006f85d902bfac7eb54292280"
   },
   "素賀国造": {
     "revid": 3609614,
@@ -967,37 +943,13 @@
     "revid": 3609606,
     "sha": "60767c6c8d72bc3d38a9680504b1a3207928e242"
   },
-  "膳余磯": {
-    "revid": 3609608,
-    "sha": "8222673be14379f9baa5ca906fded36cf58a2a13"
-  },
-  "茨城国造": {
-    "revid": 3609202,
-    "sha": "7ee575bf26c75045b3470f25097669301ffeac31"
-  },
-  "荒田別": {
-    "revid": 3609593,
-    "sha": "b06366d57a298bb5891f947a9e554a2e117dc0e5"
-  },
-  "莵道彦": {
-    "revid": 3609625,
-    "sha": "ff8444491dfa18576a50cfda8fda72050657facc"
-  },
   "菊麻国造": {
-    "revid": 3609586,
-    "sha": "52be07b2085ebe540ebdd6c7020a3aeae7e9f7ab"
+    "revid": 3620754,
+    "sha": "4eb1353623810d4d5f97d71e028ad39a07148f6c"
   },
   "菟狭津彦命": {
     "revid": 3609634,
     "sha": "e8786e8f98bf4c5bb800580cb5f491062e7203d6"
-  },
-  "葛城国造": {
-    "revid": 3609177,
-    "sha": "a4808b7a33de25bba8f4f775c30adc0886ff6abc"
-  },
-  "襲髄命": {
-    "revid": 3609597,
-    "sha": "36a58e75c47bc7ba46478dea62ad135658870e0c"
   },
   "角古君": {
     "revid": 3609617,
@@ -1055,14 +1007,6 @@
     "revid": 3609603,
     "sha": "57004113bb0f8034f69ac056f5ac4d4d0f480a8a"
   },
-  "阿波国造": {
-    "revid": 3609193,
-    "sha": "baae43b44bf74bb4b3e64a8be824094298f9f8d8"
-  },
-  "阿蘇国造": {
-    "revid": 3609607,
-    "sha": "54ddd5dff52d59c2a142d557285f32d45801b49e"
-  },
   "須恵国造": {
     "revid": 3609587,
     "sha": "331e9c0f5a31e7e7a240bc10b38ca1ea5f5e9c6a"
@@ -1070,10 +1014,6 @@
   "額田国造": {
     "revid": 3609209,
     "sha": "79c3d2361d48ba2dd74d75df315dfddf6c6e4e12"
-  },
-  "馬来田国造": {
-    "revid": 3609196,
-    "sha": "af1db360447abaf3e1f0fe3c94588cf43687f4bc"
   },
   "高国造": {
     "revid": 3609201,
@@ -1086,9 +1026,5 @@
   "鳥取神": {
     "revid": 3609602,
     "sha": "3fd8e9e62c24053351d5c6af8a68ed1fa751a145"
-  },
-  "鹿我別": {
-    "revid": 3609594,
-    "sha": "0c96c4e1432645a8ddaabcded097167cdfd58bfb"
   }
 }
