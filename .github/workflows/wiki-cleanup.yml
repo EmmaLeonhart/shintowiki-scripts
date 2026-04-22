@@ -268,11 +268,8 @@ jobs:
       # runs via mainspace-orchestrator now. The standalone script is
       # retained for the one-off --category rebucket step below.
 
-      - name: "Final: strip_translated_char_count_cats"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Core Loop: strip_translated_char_count_cats" \
-            python3 shinto_miraheze/strip_translated_char_count_cats.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # strip_translated_char_count_cats ported to ops/strip_char_count_cats.py
+      # — runs via mainspace-orchestrator, no longer a standalone sweep.
 
       - name: "Final: rebucket_300plus_untranslated (TEMPORARY)"
         if: always() && steps.*.outcome != 'cancelled'

@@ -23,6 +23,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     interlang_consolidate,
     remove_defaultsort,
+    strip_char_count_cats,
     untranslated_japanese,
     wikidata_link,
 )
@@ -37,6 +38,7 @@ OPS = [
     deleted_qids_in_ill,
     interlang_consolidate,
     untranslated_japanese,
+    strip_char_count_cats,
     wikidata_link,
 ]
 
