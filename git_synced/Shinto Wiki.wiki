@@ -1,1 +1,109 @@
-[[Category:git synced pages]]
+<mainpage-leftcolumn-start />
+<!--This is the FANDOM wiki code and as such the weird stuff here is not to be treated as a normal page-->
+<!--The code you see using the source editor is used to insert all the content inside the left and right columns. Please don't remove it from the Main Page because it's the optimal main page structure, and accommodates the main page ad. -->
+Welcome to the '''{{SITENAME}}'''! We're a collaborative community about [[Shinto]] created by fans and for fans like you! This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these Fandom help pages]]!
+
+==Important articles==
+<gallery position="center" captionalign="center" navigation="true">
+Itsukushima Gate.jpg|alt=Stylized text reading "PRODUCT LOGO" in bold, multi-colored letters with a vintage texture, set against a deep purple background filled with stars and abstract geometric shapes.|The name of the product
+Amaterasu cave crop.jpg|alt=A knight wearing golden armor, holding a sword with a pink hilt pointing down. The background is a brown, hazy wooded area with a stone building.|The name of a character
+Wiki Episode.jpeg|alt=A detective in a trench coat and fedora holding a flashlight and magnifying glass, rendered in purple and blue tones with a halftone texture against a dark window backdrop.|The name of an episode
+Wiki Mission.jpeg|alt=Two swords clashing, one with a turquoise blade, the other dark blue. The background is a grey. barren, grassy area, with dead trees.|The name of a mission
+Wiki Location.jpeg|alt=A red and white striped lighthouse emitting beams of light made of white dots, set against a dark, textured sea and sky background.|The name of a location
+Wiki Object.jpeg|alt=A red ruby jewell, with a golden border. The background is a religious building with an alter, stained glass windows, and stone walls.|The name of an object
+</gallery>
+[[w:Help:Galleries|Galleries]] with [[w:Help:Adding images|images]] are typically used to show and link to the main important content about your topic. You can link to specific pages or [[w:Help:Categories|categories]] about them, once you have created different ones. To start creating content, you can use these buttons for each one of the content pages:
+
+<div class="inputbox-gallery">
+<inputbox>
+type=create
+preload=Template:Product page
+buttonlabel=New product page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Character page
+buttonlabel=New character page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Episode page
+buttonlabel=New episode page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Mission page
+buttonlabel=New mission page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Location page
+buttonlabel=New location page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Object page
+buttonlabel=New object page
+width=25
+</inputbox>
+</div>
+<!-- The gallery above works well for individual articles, but it would also be good to have another below it that points to important Category pages. -->
+
+==Track your progress==
+You can use different [[w:Help:Tables|tables]] to collect relevant information about the topic of the wiki and the related products. Be sure to add the [[w:Help:Table Progress Tracking|progress tracking feature]] where appropriate too! It allows all users to keep track of their personal progress related to missions to complete in a video game, episodes from a TV show, book chapters - whatever you can think of!
+
+<table-progress-tracking table-id="1" unique-column-index="1">
+{| class="wikitable sortable"
+|-
+! Name !! Description !! Notes
+|-
+| Mission || You have to go to this location and defeat the main boss. Don't forget to prepare your weapons first. || Once defeated, you will be rewarded with a new weapon.
+|-
+| Episode || The main characters are going to get married, but a secret from the past will resurface. || Air date
+|-
+| Book chapter || In this chapter, the main conflict is starting to be solved. || The number of pages
+|-
+| Toy || This product is based on the character from the movie. || Price
+|}
+</table-progress-tracking>
+<!-- You can remove this section from the Main Page and use it on different content pages at your convenience.-->
+==Interactive Map==
+<interactive-map name="Example map" />
+[[w:Help:Interactive Maps|Interactive Maps]] are also a great way to represent the universe from the wiki topic. You can also add markers for points of interest like hidden treasures, boss locations, or quest givers, and use them to mark your progress. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
+<!-- Interactive Maps are usually more optimal for content pages, while Main Pages can also contain them.-->
+<mainpage-endcolumn /><mainpage-rightcolumn-start />
+<!-- These two lines of code you see using the source editor are also essential as they are used to close the left column and open the right column. -->
+==About==
+This section serves as an introduction for visitors to the wiki, usually describing the IP itself. You can use it to explain the topic this community is about, [[w:Help:Links|adding links]] to the  pages talking about the products or events, characters or real-life people who created the series or franchise.
+
+<!--Alongside the introduction, using this section to describe the IP is always helpful for readers and also to improve search engine optimization (SEO).-->
+==Join the conversation==
+'''Discussions''' is the central meeting place where you can connect with other fans. There you can share news, chat about trending topics, introduce your personal favorite character or content, and talk about what you love most. Ready to connect? [[Special:Forum|Head over to Discussions]] and start the conversation now!
+
+<!--As a wiki admin, don't forget to participate on Discussions and moderate what's happening there. You can also assign specific Moderators to help you there.-->
+==Helping out==
+''Need help building out this community?''
+
+*[[Project:Wiki rules|Rules of this wiki]]
+*[[Project:Policies|Policies of this wiki]]
+*[[Project:Accessibility checklist|Accessibility checklist]]
+*[[w:Help:Getting Started|Getting started]]
+*[[w:Help:Contributing|How to contribute]]
+*[[w:Help:Community Management|Managing your community]]
+*[[w:Help:Growing your wiki|Growing your wiki]]
+*[[w:Help:Contents|Guides]]
+*[[w:Help:Index|All Help articles]]
+
+You can also be part of the larger Fandom family of communities. Visit [[w:c:community|Fandom's Community Central]]!
+<!-- These suggested pages are always useful. If you want to improve the Main Page with different content, don't forget to keep references for new people to help them participate on your community. -->
+<mainpage-endcolumn />
+[[Category:{{SITENAME}}]]
+__NOTOC__
+__noeditsection__
+<!--The column tag you see while using the source editor is needed to close the right column. You also have to include the Main Page into a general wiki category, like the Sitename. __Notoc__ and __Noeditsection__ are used to hide the Table of Contents and the Edit pencil button in the section titles, as the Main Page has a different design from the normal content pages.-->
+[[Category:Git synced pages]]
