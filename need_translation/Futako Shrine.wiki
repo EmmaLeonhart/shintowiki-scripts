@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Futako_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24796114356|commit triggered pipeline]] -->
 <!--interwikis from wikidata-->[[en:Futako Shrine]][[ja:二子神社]]
 
-
 {{expand Japanese|date=March 2016}}
 {{Infobox religious building
 | name = Futako Shrine<br />二子神社
@@ -55,14 +54,10 @@ File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kaw
 <!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
 {{Shinmei shrines}}
 
-
-
-[[en:Futako Shrine]]
 <!--enwiki derived wikidata interwikis-->
 {{Commons category|Futako-jinja}}
-[[ja:二子神社]]
 <!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q21480958}}
+{{wikidata link|Q21480958|en|Futako Shrine|ja|二子神社}}
 [[Category:1641 establishments in Japan]]
 [[Category:Religious buildings and structures completed in 1641]]
 [[Category:Shinmei shrines]]
@@ -160,7 +155,6 @@ File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kaw
 == 外部リンク ==
 {{commonscat|Futako-jinja}}
 * [http://www.mizonokuchijinjya.org/kenmu.html 溝口神社 (兼務神社)]
-
 
 ==End Japanese==
 [[Category:神奈川県の旧村社]]
