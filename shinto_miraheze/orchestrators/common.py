@@ -107,12 +107,19 @@ def run_orchestrator(
     apply: bool,
     max_edits: int,
     run_tag: str,
-) -> int:
-    """Core loop shared by all namespace orchestrators. Returns edit count."""
+    clear_on_exhaust: bool = True,
+) -> tuple[int, bool]:
+    """Core loop shared by all namespace orchestrators.
+
+    Returns (edited_count, exhausted) — exhausted is True if allpages was
+    fully walked without hitting max_edits. Set clear_on_exhaust=False to
+    share a single state file across multiple namespaces (the misc
+    orchestrator does this to sweep many namespaces under one budget).
+    """
     applicable_ops = [op for op in ops if namespace in op.NAMESPACES]
     if not applicable_ops:
         print(f"No operations registered for ns={namespace} ({ns_label}); exiting.")
-        return 0
+        return 0, True
 
     heavy_ops = [op for op in applicable_ops if getattr(op, "HANDLES_SAVE", False)]
     light_ops = [op for op in applicable_ops if not getattr(op, "HANDLES_SAVE", False)]
@@ -236,7 +243,7 @@ def run_orchestrator(
             errors += 1
             append_state(path, title)
 
-    if finished_all and apply:
+    if finished_all and apply and clear_on_exhaust:
         print(f"\nCycle complete for {ns_label} — clearing state.")
         clear_state(path)
 
@@ -246,4 +253,4 @@ def run_orchestrator(
     print(f"Edited:    {edited}")
     print(f"Skipped:   {skipped}")
     print(f"Errors:    {errors}")
-    return edited
+    return edited, finished_all
