@@ -19,9 +19,13 @@ MAX_ATTEMPTS=6
 echo ""
 echo "--- Committing state after: ${CHUNK_NAME} ---"
 
-STATE_FILES="$(find . -name '*.state' -o -name '*.log' -o -name '*.errors' | sort)"
+STATE_FILES="$(
+  find . -name '*.state' -o -name '*.log' -o -name '*.errors'
+  [ -d reports ] && find reports -type f
+)"
+STATE_FILES="$(echo "$STATE_FILES" | sort -u | sed '/^$/d')"
 if [ -z "$STATE_FILES" ]; then
-  echo "No state files found, skipping commit."
+  echo "No state or report files found, skipping commit."
   exit 0
 fi
 
