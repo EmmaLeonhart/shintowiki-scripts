@@ -2,7 +2,6 @@
 {{Expand Japanese|玄界灘|date=November 2025}}
 <!--interwikis from wikidata-->[[ceb:Genkai Nada]][[en:Genkai Sea]][[fr:Mer de Genkai]][[id:Laut Genkai]][[ja:玄界灘]][[ko:겐카이나다]][[nl:Genkaizee]][[ru:Генкай-Нада]][[zh:玄界灘]]
 
-
 {{Short description|Body of water in the Sea of Japan}}
 [[File:Sea Of Genkai up20060427.jpg|thumb|Genkai Sea in 2005]]
 The {{nihongo|'''Genkai Sea'''|玄界灘|Genkai-nada}} <ref>{{cite book|last=Loyd Batten|first=Bruce|title= Gateway to Japan:Hakata in War And Peace, 500-1300|publisher=University of Hawaii Press|pages=38}}</ref> is a {{ill|Body of water|en|Body of water|qid=Q15324|lt=Body of water}} that comprises the southwestern tip of the {{ill|Sea of Japan|en|Sea of Japan|qid=Q27092|lt=Sea of Japan}} and borders the northern coasts of {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka}} and {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga}} prefectures.
@@ -14,22 +13,12 @@ The {{nihongo|'''Genkai Sea'''|玄界灘|Genkai-nada}} <ref>{{cite book|last=Loy
 
 {{marine-geo-stub}}
 
-
-
-[[en:Genkai Sea]]
 <!--enwiki derived wikidata interwikis-->
 [[ceb:Genkai Nada]]
 {{Commons category|Genkai Sea}}
-[[fr:Mer de Genkai]]
-[[id:Laut Genkai]]
-[[ja:玄界灘]]
-[[ko:겐카이나다]]
-[[nl:Genkaizee]]
-[[ru:Генкай-Нада]]
-[[zh:玄界灘]]
 <!--jawiki derived wikidata interwikis-->
 <!--zhwiki derived wikidata interwikis-->
-{{wikidata link|Q498047}}
+{{wikidata link|Q498047|en|Genkai Sea|fr|Mer de Genkai|id|Laut Genkai|ja|玄界灘|ko|겐카이나다|nl|Genkaizee|ru|Генкай-Нада|zh|玄界灘}}
 [[Category:Bodies of water of the Sea of Japan]]
 [[Category:Seas of Japan]]
 [[Category:Wikidata has short description]]
