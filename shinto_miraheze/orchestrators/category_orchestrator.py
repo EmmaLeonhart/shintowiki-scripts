@@ -15,13 +15,24 @@ from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
     interlang_consolidate,
+    normalize_category_page,
+    remove_legacy_cat_templates,
     wikidata_link,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
 # interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
-OPS = [history_offload, duplicate_qids, interlang_consolidate, wikidata_link]
+# remove_legacy_cat_templates runs before normalize_category_page so the
+# stripped templates don't end up in the normalized output.
+OPS = [
+    history_offload,
+    duplicate_qids,
+    interlang_consolidate,
+    remove_legacy_cat_templates,
+    normalize_category_page,
+    wikidata_link,
+]
 
 
 def main():

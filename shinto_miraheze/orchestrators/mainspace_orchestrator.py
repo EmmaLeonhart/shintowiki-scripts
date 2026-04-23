@@ -23,6 +23,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     interlang_consolidate,
     remove_defaultsort,
+    shikinaisha_talk,
     strip_char_count_cats,
     untranslated_japanese,
     wikidata_link,
@@ -31,8 +32,12 @@ from shinto_miraheze.orchestrators.ops import (
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
 # interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
+# shikinaisha_talk is also a heavy op — it edits the corresponding talk
+# page when the visited mainspace page is in the shikinaisha-generated
+# category; returns no-op for every other page.
 OPS = [
     history_offload,
+    shikinaisha_talk,
     duplicate_qids,
     remove_defaultsort,
     deleted_qids_in_ill,
