@@ -381,31 +381,9 @@ jobs:
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Git-Synced Pages Sync"
 
-      # ════════════════════════════════════════
-      #  Main Page Sync
-      # ════════════════════════════════════════
-
-      - name: "Main Page: sync_main_page"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Main Page Sync: sync_main_page" \
-            python3 shinto_miraheze/sync_main_page.py --apply --max-edits 1 --run-tag "${RUN_TAG}"
-
-      - name: "Commit: Main Page.wiki changes"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          git add -A "Main Page.wiki" 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No Main Page.wiki changes to commit."
-          else
-            git commit -m "chore(main-page): sync Main Page from wiki [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
-            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "Main Page.wiki changes pushed." || echo "WARNING: failed to push Main Page.wiki changes."
-          fi
-
-      - name: "Commit state: Main Page Sync"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: shinto_miraheze/commit_state.sh "Main Page Sync"
+      # Main Page is now handled generically by sync_git_synced_pages if
+      # [[Category:Git synced pages]] is present on the wiki page — no
+      # separate tooling needed.
 
       # ════════════════════════════════════════
       #  Deprecated (Sunday only)
