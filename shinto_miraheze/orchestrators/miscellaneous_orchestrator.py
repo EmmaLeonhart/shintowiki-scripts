@@ -4,24 +4,34 @@ miscellaneous_orchestrator.py
 ==============================
 Cycles through every wikitext namespace that isn't already owned by the
 three main orchestrators (mainspace ns=0, template ns=10, category ns=14).
-Visits: Talk, User, User talk, Project, Project talk, File, File talk,
-MediaWiki, MediaWiki talk, Template talk, Help, Help talk, Category talk,
-GeoJson talk, Module talk, Item talk, Property talk.
+Canonical order: Talk (ns=1), User, User talk, Project, Project talk,
+File, File talk, MediaWiki, MediaWiki talk, Template talk, Help, Help
+talk, Category talk, GeoJson talk, Module talk, Item talk, Property talk.
 
 Goal: the same space-efficiency work (history offload, revdel) that runs
 on the three main namespaces, applied to everything else — so the XML
 export burden is reduced wiki-wide, not just in the three primary
 content namespaces.
 
-Budgeting: `--max-edits` is a SHARED budget across the whole sweep (matches
-the other three orchestrators). Each namespace has its own state file
-(`misc_orchestrator_<ns>.state`), and the starting namespace rotates each
-run via `misc_orchestrator_cursor.state` — so if the budget gets spent
-early, different namespaces lead on the next run. No namespace starves.
+Budgeting (matches the three main orchestrators):
+  * `--max-edits` is a single shared budget across the whole sweep.
+  * ONE combined state file `misc_orchestrator.state` holds every title
+    visited during the current cycle (titles carry namespace prefixes,
+    so there are no collisions). This is a bit chaotic but keeps us
+    from repeating work as we move between namespaces.
+  * `misc_orchestrator_cursor.state` tracks which namespace to resume.
+  * Each run picks up at the cursor and tries to spend up to `--max-edits`
+    edits. Most runs will only hit one namespace (100 edits × 2.5s
+    throttle ≈ 4 min of edits + walk time).
+  * When the current namespace is exhausted AND budget remains, the
+    cursor advances and the sweep continues into the next namespace
+    under the same state file.
+  * When the final namespace in the list is exhausted, the cycle is
+    complete: state is cleared and cursor resets to 0.
 
-This was previously per-namespace (100 edits × 17 namespaces = up to 1700
-edits + 17 full iter_allpages walks per run), which made this orchestrator
-take ~2h while the three main orchestrators each took ~11 min.
+Previously this orchestrator gave each namespace its own 100-edit cap
+and its own state file, so every run paid 17× the walk/edit cost of the
+three main orchestrators (~2h vs ~11min).
 
 Omitted namespaces (wikitext edits don't apply to their content model):
   * -2 Media, -1 Special     (virtual, not real pages)
@@ -44,8 +54,8 @@ from shinto_miraheze.orchestrators.ops import (
     interlang_consolidate,
 )
 
-# (namespace_id, state_file_label) — rotated each run, but iterated in
-# this canonical order starting from the persisted cursor.
+# (namespace_id, state_file_label) — swept in this exact order starting
+# from the persisted cursor. ns=1 (Talk = mainspace talk pages) leads.
 MISC_NAMESPACES: list[tuple[int, str]] = [
     (1,   "talk"),
     (2,   "user"),
@@ -68,6 +78,7 @@ MISC_NAMESPACES: list[tuple[int, str]] = [
 
 OPS = [history_offload, duplicate_qids, interlang_consolidate]
 
+STATE_NAME = "misc_orchestrator"
 CURSOR_NAME = "misc_orchestrator_cursor"
 
 
@@ -102,36 +113,46 @@ def main() -> None:
     parser.add_argument("--run-tag", required=True)
     args = parser.parse_args()
 
-    start = _load_cursor()
-    ordered = MISC_NAMESPACES[start:] + MISC_NAMESPACES[:start]
-    print(f"Misc sweep starting at index {start} "
-          f"(ns={ordered[0][0]} {ordered[0][1]}); shared budget={args.max_edits}")
-
+    cursor = _load_cursor()
     remaining = args.max_edits
-    for ns, label in ordered:
+    state_path = common.state_path(STATE_NAME)
+
+    print(f"Misc sweep starting at cursor={cursor} "
+          f"(ns={MISC_NAMESPACES[cursor][0]} "
+          f"{MISC_NAMESPACES[cursor][1]}); shared budget={remaining}")
+
+    while remaining > 0 and cursor < len(MISC_NAMESPACES):
+        ns, label = MISC_NAMESPACES[cursor]
         print(f"\n{'=' * 60}")
         print(f"Miscellaneous orchestrator: ns={ns} ({label}) "
               f"[remaining budget={remaining}]")
         print(f"{'=' * 60}")
-        if remaining <= 0:
-            print("Global edit budget exhausted; skipping remaining namespaces.")
-            break
-        edited = common.run_orchestrator(
+        edited, exhausted = common.run_orchestrator(
             namespace=ns,
             ns_label=label,
             ops=OPS,
-            state_name=f"misc_orchestrator_{ns}",
+            state_name=STATE_NAME,
             apply=args.apply,
             max_edits=remaining,
             run_tag=args.run_tag,
+            clear_on_exhaust=False,
         )
         remaining -= edited
+        if not exhausted:
+            # Budget hit before finishing this namespace — stay on it next run.
+            break
+        cursor += 1
 
-    # Advance cursor so next run leads with a different namespace — this
-    # is what prevents the first namespace in the list from hogging the
-    # shared budget every run.
+    # Full cycle complete: clear shared state and rewind cursor.
+    if cursor >= len(MISC_NAMESPACES):
+        print("\nAll misc namespaces exhausted — clearing shared state and "
+              "rewinding cursor to 0.")
+        if args.apply:
+            common.clear_state(state_path)
+        cursor = 0
+
     if args.apply:
-        _save_cursor(start + 1)
+        _save_cursor(cursor)
 
 
 if __name__ == "__main__":
