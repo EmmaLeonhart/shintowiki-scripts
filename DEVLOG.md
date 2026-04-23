@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-04-23
+
+### Orchestrator state was silently never landing on origin — fixed with a push-retry loop
+**Scripts:** `shinto_miraheze/commit_state.sh`
+**Status:** Fixed
+
+`commit_state.sh` was `git pull --rebase ... 2>/dev/null || true` followed by a single `git push`, and on rejection only printed a warning. Concurrent pushes from other workflow jobs in the same cleanup cycle consistently won the race, so `category_orchestrator.state`, `template_orchestrator.state`, `misc_orchestrator.state`, and the load-bearing shared `duplicate_qids.state` were being committed on the runner, push-rejected, and destroyed when the runner tore down. Only one `mainspace_orchestrator.state` commit (`9d4d5b6`) ever actually reached origin across many weeks.
+
+Why nothing obviously broke: every orchestrator op is wiki-idempotent (each op detects the target state on the wiki itself and returns `(None, None)` if nothing needs to change), so a run without state still produced correct edits — it just wasted time re-reading already-processed pages to reach 100 pages that actually needed work. The first visible symptom was the `[[Duplicate page QIDs]]` report being perpetually out of date because `duplicate_qids.state` never persisted long enough for `find_duplicate_page_qids.py` to see it.
+
+The fix replaces the silent-failure pattern with a fetch + rebase + push retry loop (up to 6 attempts, exponential backoff). First run under the fix landed `category_orchestrator.state`, `misc_orchestrator.state`, and the first-ever `duplicate_qids.state` commit.
+
+### Migration-criterion correction — 3 "Deprecated:" scripts ported to ops; 8 cruft state files removed
+**Scripts:** `shinto_miraheze/orchestrators/ops/{normalize_category_page,remove_legacy_cat_templates,shikinaisha_talk}.py`, `.github/workflows/wiki-cleanup.yml`
+**Status:** Complete
+
+Audit of the legacy `shinto_miraheze/*.state` files surfaced the real reason the orchestrator migration felt incomplete: the prior criterion ("port if the script finishes / drains its state") let per-page sweeps linger in legacy form as long as their state files were still growing. The correct criterion is structural, not behavioural: **port if the script is a per-page namespace sweep**; keep in legacy only if it's SPARQL-driven, a single-page write, a bidirectional repo↔wiki sync, or input-queue driven. This is now in `CLAUDE.md`.
+
+Ported (previously `Deprecated:` steps in wiki-cleanup.yml, running Sunday or first-of-month):
+* `normalize_category_pages` → `ops/normalize_category_page.py` (ns=14)
+* `remove_legacy_cat_templates` → `ops/remove_legacy_cat_templates.py` (ns=14; runs before the normalizer so stripped templates don't re-appear in the normalized output)
+* `tag_shikinaisha_talk_pages` → `ops/shikinaisha_talk.py` (ns=0, heavy op — edits the corresponding talk page when the visited mainspace page carries `[[Category:Wikidata generated shikinaisha pages]]`)
+
+Removed 8 cruft state files (scripts disabled, ported, or fully abandoned; state files were dead weight): `migrate_talk_pages_jax.state`, `reimport_from_enwiki.state`, `tag_pages_without_wikidata.state`, `tag_deleted_qids_in_ill.state`, `strip_translated_char_count_cats.state`, `migrate_talk_pages.state`, `fix_template_noinclude.state`, `generate_p11250_quickstatements.state` (the last was an orphan from an older version of the script — the current renderer reads `orchestrators/duplicate_qids.state`).
+
+Also removed `sync_main_page.py` + `sync_main_page.state` + `Main Page.wiki` (root). Main Page can sync via `sync_git_synced_pages.py` once `[[Category:Git synced pages]]` is added to the wiki's Main Page (one-time wiki edit).
+
+### Misc orchestrator: share budget across sweep, combine state files, add push retry
+**Scripts:** `shinto_miraheze/orchestrators/miscellaneous_orchestrator.py`, `orchestrators/common.py`
+**Status:** Complete
+
+The misc orchestrator took ~2h per cleanup cycle while the three main orchestrators each took ~11 min. Cause: `--max-edits 100` was being applied *per namespace* in a loop over 17 namespaces (effective cap ~1700 edits), and each namespace did its own full `allpages` walk with separate state files. Now a single shared `misc_orchestrator.state` tracks titles across the sweep, a `misc_orchestrator_cursor.state` records which namespace to resume, and the edit budget is shared across the whole sweep — so most runs hit only one namespace and cycle through to the next when that namespace is exhausted. `common.run_orchestrator` now returns `(edited, exhausted)` and accepts `clear_on_exhaust=False` so the misc orchestrator can own its own state clearing across the 17-namespace cycle.
+
+Also fixed: the misc workflow step `Render: find_duplicate_page_qids` was failing with `run_step.sh: Permission denied` (exit 126) because the workflow only `chmod +x`'d `commit_state.sh`. Marked `run_step.sh` and `commit_state.sh` both executable in the git index (`git update-index --chmod=+x`) so every future checkout lands with the bit set.
+
+### Merge legacy `tag_untranslated_japanese.state` into mainspace orchestrator state
+**Scripts:** `shinto_miraheze/orchestrators/mainspace_orchestrator.state`
+**Status:** Complete
+
+`untranslated_japanese` was ported to `ops/untranslated_japanese.py` earlier but the standalone script's state file (`shinto_miraheze/tag_untranslated_japanese.state`, 18,556 lines / 14,620 unique titles) was left in the repo. Merged those titles into `orchestrators/mainspace_orchestrator.state` (12,909 new) and deleted the legacy file. The standalone script is still used by wiki-cleanup's `--category` rebucket mode but no longer owns a separate cycle state.
+
+---
+
 ## 2026-04-18
 
 ### Server-load reduction effort
