@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Gory%C5%8D for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24756154998|commit triggered pipeline]] -->
 <!--interwikis from wikidata-->[[bcl:Goryō]][[en:Goryō]][[es:Goryō]][[fi:Goryō]][[fr:Goryō]][[it:Goryō]][[ja:御霊信仰]][[ko:어령신앙]][[no:Goryō]][[pl:Goryō]][[sc:Goryō]][[uk:Ґорьо]]
 
-
 {{Short description|Vengeful Japanese ghosts}}
 {{about|the mythological Japanese spirit|the Korean dynasty|Goryeo}}{{Expand Japanese}}[[File:Tsukioka (Taiso) Yoshitoshi (1839-1892), Sugawara no Michizane roept een onweersbui op boven KyotoKôkoku (1880).jpg|thumb|{{transliteration|ja|[[Ukiyo-e]]}} by {{ill|Tsukioka Yoshitoshi|en|Tsukioka Yoshitoshi|qid=Q467337|lt=Tsukioka Yoshitoshi}} depicting {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane}} as the {{nihongo3|{{transliteration|ja|[[kami]]}} of thunder.||{{ill|Tenjin (kami)|en|Tenjin (kami)|qid=Q1753428|lt=Tenjin}}}}. After Sugawara no Michizane's death, lightning struck the palace, killing and injuring many of the powerful people involved in his banishment, and Sugawara no Michizane was enshrined in the {{transliteration|ja|[[Tenmangū]]}} ({{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}) as the Tenjin.]]
 In a broad sense, {{nihongo|'''Goryō'''|[[Wiktionary:御霊|御霊]]||{{IPA|ja|ɡoɾʲoː|lang}}}}  is an honorific for a spirit, especially one that causes hauntings, and the term is used as a synonym for {{nihongo3|{{ill|Vengeful ghost|en|Vengeful ghost|qid=Q2836709|lt=vengeful}} {{ill|Yūrei|en|Yūrei|qid=Q11050647|lt=Japanese ghosts}}|怨霊|[[onryō]]}}. In a narrower sense, it refers to a person who was a noble or accomplished person in his or her lifetime, but who lost a political power struggle or died prematurely from an epidemic or other disease, becoming an {{transliteration|ja|onryō}} that brings pestilence or famine and is later enshrined as a {{transliteration|ja|[[kami]]}} in {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}. For example, the "[[:en:Sandai Jitsuroku|Sandai Jitsuroku]]" (a historical Japanese document) mentions that six Shinto shrines were dedicated to the worship of {{transliteration|ja|goryō}}, which were the spirits of those who died from non-natural causes. Later on, two more shrines were added, bringing the total to eight.<ref name="kotogoryo">{{cite web|url=https://kotobank.jp/word/%E5%BE%A1%E9%9C%8A-505236|archive-url=https://web.archive.org/web/20230206025142/https://kotobank.jp/word/%E5%BE%A1%E9%9C%8A-505236|script-title=ja:御霊|language=ja|publisher=Kotobank|archive-date=6 February 2023|access-date=24 February 2023}}</ref><ref name="kotoshinko">{{cite web|url=https://kotobank.jp/word/%E5%BE%A1%E9%9C%8A%E4%BF%A1%E4%BB%B0-66557|archive-url=https://web.archive.org/web/20230206025148/https://kotobank.jp/word/%E5%BE%A1%E9%9C%8A%E4%BF%A1%E4%BB%B0-66557|script-title=ja:御霊信仰|language=ja|publisher=Kotobank|archive-date=6 February 2023|access-date=24 February 2023}}</ref><ref>{{cite web|url=https://kotobank.jp/word/%E6%80%A8%E9%9C%8A-42048|archive-url=https://web.archive.org/web/20230206025148/https://kotobank.jp/word/%E6%80%A8%E9%9C%8A-42048|script-title=ja:怨霊|language=ja|publisher=Kotobank|archive-date=6 February 2023|access-date=24 February 2023}}</ref>
@@ -39,23 +38,11 @@ Government official {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q38
 
 {{Japanese folklore long}}
 
-
-
-[[en:Goryō]]
 <!--enwiki derived wikidata interwikis-->
 [[bcl:Goryō]]
-[[es:Goryō]]
-[[fi:Goryō]]
-[[fr:Goryō]]
-[[it:Goryō]]
-[[ja:御霊信仰]]
-[[ko:어령신앙]]
-[[no:Goryō]]
-[[pl:Goryō]]
 [[sc:Goryō]]
-[[uk:Ґорьо]]
 <!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q3273210}}
+{{wikidata link|Q3273210|en|Goryō|es|Goryō|fi|Goryō|fr|Goryō|it|Goryō|ja|御霊信仰|ko|어령신앙|no|Goryō|pl|Goryō|uk|Ґорьо}}
 [[Category:Deified Japanese people|*]]
 [[Category:Goryō faith]]
 [[Category:Japanese folk religion]]
