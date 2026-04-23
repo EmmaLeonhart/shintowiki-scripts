@@ -45,6 +45,7 @@ Usage:
 """
 
 import argparse
+import glob
 import os
 
 from shinto_miraheze.orchestrators import common
@@ -99,6 +100,51 @@ def _save_cursor(idx: int) -> None:
         f.write(str(idx % len(MISC_NAMESPACES)))
 
 
+def _migrate_legacy_per_namespace_state() -> None:
+    """One-time merge of legacy per-namespace misc state files.
+
+    The previous version wrote misc_orchestrator_<ns>.state (one per
+    namespace). The new version uses a single misc_orchestrator.state.
+    Any legacy files we find get their titles appended (de-duped) into
+    the combined file, then the legacy files are deleted so titles
+    already processed in the current cycle aren't redone.
+    """
+    combined = common.state_path(STATE_NAME)
+    legacy_dir = os.path.dirname(combined)
+    # Match misc_orchestrator_<number>.state but NOT misc_orchestrator.state
+    # or misc_orchestrator_cursor.state.
+    legacy_paths = [
+        p for p in glob.glob(os.path.join(legacy_dir, "misc_orchestrator_*.state"))
+        if os.path.basename(p) != f"{CURSOR_NAME}.state"
+        and os.path.basename(p).removeprefix("misc_orchestrator_").removesuffix(".state").isdigit()
+    ]
+    if not legacy_paths:
+        return
+
+    existing = common.load_state(combined)
+    merged = set(existing)
+    for path in legacy_paths:
+        merged |= common.load_state(path)
+
+    new_titles = merged - existing
+    if new_titles:
+        with open(combined, "a", encoding="utf-8") as f:
+            for title in sorted(new_titles):
+                f.write(title + "\n")
+
+    for path in legacy_paths:
+        try:
+            os.remove(path)
+        except OSError as e:
+            print(f"WARN: could not delete legacy state file {path}: {e}")
+
+    print(
+        f"Migrated {len(legacy_paths)} legacy per-namespace state file(s) "
+        f"into {os.path.basename(combined)} "
+        f"(+{len(new_titles)} new titles, total {len(merged)})."
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Miscellaneous-namespace cleanup orchestrator."
@@ -113,6 +159,7 @@ def main() -> None:
     parser.add_argument("--run-tag", required=True)
     args = parser.parse_args()
 
+    _migrate_legacy_per_namespace_state()
     cursor = _load_cursor()
     remaining = args.max_edits
     state_path = common.state_path(STATE_NAME)
