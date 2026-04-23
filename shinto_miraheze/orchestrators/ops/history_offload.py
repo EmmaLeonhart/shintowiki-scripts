@@ -245,12 +245,8 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     # Stage 2: Delete. Moves all revisions into the per-title deleted-edits
     # pool (accessible via Special:Undelete). Requires the `delete` right —
     # EmmaBot has sysop on shintowiki so this is satisfied.
-    delete_reason = (
-        "History offloaded to XML archive and mirrored to shinto.fandom.com. "
-        "Full history recoverable via Special:Undelete."
-    )
     try:
-        page.delete(reason=delete_reason)
+        page.delete(reason=summary)
     except Exception as e:
         return False, f"page delete failed: {e}"
 
