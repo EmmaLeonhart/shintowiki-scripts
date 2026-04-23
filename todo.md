@@ -117,6 +117,16 @@ All items below require manual editing or human review. None have a safe automat
 
 ## Repository / script tasks
 
+### Orchestrator state can drop on rebase conflict (2026-04-23)
+
+- [ ] **`commit_state.sh` bails on rebase conflict** — the retry loop handles push rejection (adds a fetch + rebase + push cycle with backoff) but if the rebase itself conflicts (both sides modified the same state file), it runs `git rebase --abort` and gives up with `WARN: rebase failed`. State for that step is then lost. Seen in run `24837523241` on 2026-04-23 when "Final Core" state collided with an earlier push.
+  - **Likely fix**: add a `.gitattributes` entry setting `merge=union` on the append-mostly line-based orchestrator state files (`mainspace_orchestrator.state`, `category_orchestrator.state`, `template_orchestrator.state`, `misc_orchestrator.state`). Union-merge concatenates both sides' new lines, which is exactly the right semantics for title queues. Exclude `duplicate_qids.state` (JSON — union would corrupt it) and `misc_orchestrator_cursor.state` (single integer — union would produce garbage like "31").
+  - **Why it's not urgent**: non-fatal. State files are retried on the next run and the orchestrator ops are idempotent, so lost state means "re-read those pages next time and skip them as already-done" — wasted time, not wrong output.
+
+### Drop state files from the wiki↔repo sync scripts (2026-04-23)
+
+- [ ] **`sync_git_synced_pages.state` and `sync_need_translation.state` are redundant with git history** — the state files track `{title: {revid, sha1}}` to distinguish "wiki changed since last sync" vs "repo changed" vs "both changed". But the wiki edit summary already contains the run tag (which links to a git commit), so the base revid is recoverable by walking page history to find the most recent bot edit. The base sha is just whatever git has for the file at that commit. Refactor so the sync scripts derive their own bases from git log + wiki history and delete the state files. Keep the existing conflict-detection behaviour, just source the baseline differently.
+
 ### Secret removal (run soon, before open-source release)
 
 - [ ] **Rotate exposed credentials first** — treat any historical plaintext credentials as compromised and rotate them before/alongside history rewrite.
