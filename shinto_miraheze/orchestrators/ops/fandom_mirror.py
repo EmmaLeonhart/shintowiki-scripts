@@ -136,9 +136,24 @@ def mirror_page(source_site: mwclient.Site, title: str, run_tag: str) -> tuple[b
             },
             timeout=300,
         )
+    except Exception as e:
+        return False, f"fandom import POST failed (transport): {e}"
+
+    # Capture status + body snippet BEFORE attempting JSON parse. Historically
+    # the error surfaced as the opaque "Expecting value: line 1 column 1 (char
+    # 0)" JSONDecodeError, which can't distinguish 429 vs 403 IP-block vs 503
+    # vs Cloudflare interstitial vs session-expired login HTML. Logging the
+    # status code and first 200 chars of the body makes the next failure
+    # diagnosable at a glance.
+    status = resp.status_code
+    snippet = (resp.text or "")[:200].replace("\n", "\\n")
+    try:
         body = resp.json()
     except Exception as e:
-        return False, f"fandom import POST failed: {e}"
+        return False, (
+            f"fandom import POST non-JSON response "
+            f"(HTTP {status}, body[:200]={snippet!r}): {e}"
+        )
 
     if "error" in body:
         err = body["error"]
