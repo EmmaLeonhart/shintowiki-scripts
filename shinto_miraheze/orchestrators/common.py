@@ -48,7 +48,19 @@ WIKI_PATH = "/w/"
 USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 THROTTLE = 2.5
 
-REDIRECT_RE = re.compile(r"^\s*#redirect\b", re.IGNORECASE | re.MULTILINE)
+# Matches hard redirects AND the common template-based soft/category
+# redirect forms. If any of these appear at the start of a line, the
+# page is treated as a redirect and skipped entirely — no op runs on
+# it, including history_offload. Redirects should not have their
+# history offloaded (there is nothing meaningful to preserve), and
+# light ops would either no-op or risk damaging the redirect target.
+REDIRECT_RE = re.compile(
+    r"^\s*("
+    r"#redirect\b"
+    r"|\{\{\s*(?:category|soft)[\s_]*redirect\b"
+    r")",
+    re.IGNORECASE | re.MULTILINE,
+)
 INTERWIKI_RE = re.compile(r"^[A-Za-z]{2,}:")
 LOCAL_NS_PREFIXES = (
     "Category:", "Template:", "Module:", "Help:", "Talk:", "User:",
