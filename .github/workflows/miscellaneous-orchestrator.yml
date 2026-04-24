@@ -65,8 +65,15 @@ jobs:
       FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
       FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
     steps:
-      - name: Checkout
+      - name: Checkout (tip of branch, not trigger SHA)
+        # Explicit ref so each orchestrator in the cleanup-loop chain
+        # sees the state commits pushed by earlier orchestrators. Without
+        # this, a later checkout is still at the original push SHA and
+        # its first attempt to commit duplicate_qids.state conflicts
+        # (add/add) on rebase — which commit_state.sh bails on.
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Setup Python
         uses: actions/setup-python@v5

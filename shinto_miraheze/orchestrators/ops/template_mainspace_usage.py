@@ -36,6 +36,10 @@ import time
 NAME = "template_mainspace_usage"
 NAMESPACES = (10,)
 HANDLES_SAVE = True
+# Yield to higher-priority heavy ops (history_offload). If history_offload
+# just modified this page in this visit, skip categorization — it'll run
+# on the next cycle when the page's offload is stable.
+DEFER_IF_PRIOR_MODIFIED = True
 
 THROTTLE = 2.5
 
