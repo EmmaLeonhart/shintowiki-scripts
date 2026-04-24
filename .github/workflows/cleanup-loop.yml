@@ -8,7 +8,12 @@ on:
       - "**/*.log"
       - "**/*.errors"
   schedule:
-    - cron: "0 0 * * *"
+    # Every 6 hours. Until 2026-06-01 every fire runs the full pipeline
+    # (catch-up cadence). After 2026-06-01 the window-gate job skips
+    # every downstream job except on the 00:00 UTC fire — so the
+    # effective cadence returns to daily automatically with no manual
+    # cron change needed. See window-gate's `should-proceed` output.
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -39,31 +44,54 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       catchup-active: ${{ steps.check.outputs.active }}
+      should-proceed: ${{ steps.check.outputs.proceed }}
     steps:
       - id: check
         run: |
+          # (1) Is the catch-up window still open?
           if [ "$(date -u +%Y%m%d)" -lt "20260601" ]; then
             echo "active=true" >> "$GITHUB_OUTPUT"
             echo "Catch-up window ACTIVE (pre-2026-06-01): QS/cleanup jobs skipped, orchestrator budget raised to 500."
+            CATCHUP=true
           else
             echo "active=false" >> "$GITHUB_OUTPUT"
             echo "Catch-up window EXPIRED: normal schedule."
+            CATCHUP=false
+          fi
+
+          # (2) Should this fire actually run the pipeline?
+          #   - push / workflow_dispatch: always run
+          #   - schedule + catch-up active: run every 6h fire (catch-up cadence)
+          #   - schedule + catch-up expired: only the 00:00 UTC fire runs
+          #     (daily cadence, matching pre-catchup behaviour)
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            echo "Non-schedule event ($GITHUB_EVENT_NAME): proceeding."
+          elif [ "$CATCHUP" = "true" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            echo "Catch-up active: every 6h scheduled fire proceeds."
+          elif [ "$(date -u +%H)" = "00" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            echo "00:00 UTC scheduled fire (post-catchup daily slot): proceeding."
+          else
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "Off-hour scheduled fire (post-catchup): window-gate only, downstream will skip."
           fi
 
   generate-quickstatements:
     needs: window-gate
-    if: needs.window-gate.outputs.catchup-active != 'true'
+    if: needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/generate-quickstatements.yml
 
   # Build pages right after SPARQL generation (runs in parallel with cleanup)
   generate-pages:
-    needs: [generate-quickstatements]
-    if: always()
+    needs: [window-gate, generate-quickstatements]
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/generate-pages.yml
 
   cleanup:
     needs: [window-gate, generate-quickstatements]
-    if: always() && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
@@ -77,7 +105,7 @@ jobs:
 
   mainspace-orchestrator:
     needs: [window-gate, cleanup]
-    if: always()
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/mainspace-orchestrator.yml
     with:
       enable_history_offload: true
@@ -89,7 +117,7 @@ jobs:
 
   category-orchestrator:
     needs: [window-gate, mainspace-orchestrator]
-    if: always()
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/category-orchestrator.yml
     with:
       enable_history_offload: true
@@ -101,7 +129,7 @@ jobs:
 
   template-orchestrator:
     needs: [window-gate, category-orchestrator]
-    if: always()
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/template-orchestrator.yml
     with:
       enable_history_offload: true
@@ -116,7 +144,7 @@ jobs:
   # edit budget. Runs last among the orchestrators.
   miscellaneous-orchestrator:
     needs: [window-gate, template-orchestrator]
-    if: always()
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/miscellaneous-orchestrator.yml
     with:
       enable_history_offload: true
@@ -130,7 +158,7 @@ jobs:
   # Skipped during the catch-up window (per 2026-04-23 pause).
   random-wait:
     needs: [window-gate, miscellaneous-orchestrator]
-    if: github.event_name == 'schedule' && needs.window-gate.outputs.catchup-active != 'true'
+    if: github.event_name == 'schedule' && needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/random-wait.yml
 
   # On push: submit immediately after orchestrators
@@ -138,7 +166,7 @@ jobs:
   # Skipped during the catch-up window.
   submit-quickstatements:
     needs: [window-gate, miscellaneous-orchestrator, random-wait]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
@@ -146,21 +174,21 @@ jobs:
   # Skipped during the catch-up window.
   wikidata-qualifier-edit:
     needs: [window-gate, cleanup, submit-quickstatements]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
   # Final action: rebuild run history page from all reports
   build-run-history:
-    needs: [submit-quickstatements, wikidata-qualifier-edit]
-    if: always()
+    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit]
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/build-run-history.yml
 
   # Fallback: if QS submission failed, apply edits directly via Wikidata API
   # This is the absolute last step — random 1-5 min intervals, no rush
   direct-daily-edits:
-    needs: [submit-quickstatements, build-run-history]
-    if: always() && needs.submit-quickstatements.outputs.qs-failed == 'true'
+    needs: [window-gate, submit-quickstatements, build-run-history]
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.submit-quickstatements.outputs.qs-failed == 'true'
     uses: ./.github/workflows/direct-daily-edits.yml
     secrets: inherit
 

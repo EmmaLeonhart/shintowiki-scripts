@@ -11,10 +11,10 @@ Active work queue lives in [status.md](status.md) (Sutra-style queue — items a
 ## Scheduled review — 2026-06-01 (remove catch-up window)
 
 - [ ] **Remove the catch-up window from `cleanup-loop.yml`** — the `window-gate` job auto-expires on 2026-06-01 (it just checks the date), so nothing breaks if we forget, but the scaffolding around it should be torn out:
-  - Drop the `window-gate` job and every `needs: [window-gate, …]` reference.
-  - Restore the pre-window `if:` conditions on `cleanup`, `submit-quickstatements`, `wikidata-qualifier-edit`, `random-wait` (just remove the `&& needs.window-gate.outputs.catchup-active != 'true'` clauses).
+  - Drop the `catchup-active` output and every `needs.window-gate.outputs.catchup-active != 'true'` clause in the downstream `if:` conditions.
   - Remove `edit_limit` input wiring from the four orchestrator workflows OR leave it as a dispatch-time knob but set the default back to `"100"`.
   - Delete the temporary-banner comment block at the top of the `jobs:` section.
+  - **Keep** the `should-proceed` output logic and downstream `&& needs.window-gate.outputs.should-proceed == 'true'` guards — those are how the every-6h cron auto-reverts to an effective daily cadence (only the 00:00 UTC fire proceeds; the other three are window-gate-only no-ops). OR if the 6h cron is no longer wanted at all post-catchup, also change cron back to `"0 0 * * *"` and drop the `should-proceed` mechanism.
 - **Why the window exists**: potential concerns about the future of shintowiki as of 2026-04-23 — we wanted to burn through the orchestrator queue faster and pause QS/cleanup side-work that wasn't time-critical. See the DEVLOG entry for 2026-04-23.
 
 ## Scheduled review — July 2026
