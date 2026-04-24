@@ -95,6 +95,15 @@ jobs:
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
+  # sync_git_synced_pages runs on every pipeline regardless of the
+  # catch-up window — individual date gating, so the git_synced/ ↔ wiki
+  # mirror keeps moving even while the broader legacy cleanup is paused.
+  git-synced-sync:
+    needs: window-gate
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    uses: ./.github/workflows/git-synced-sync.yml
+    secrets: inherit
+
   # Per-namespace orchestrators — each runs every per-page op whose
   # NAMESPACES includes its namespace, using a single shared state file
   # per namespace. Replaces the per-script state files of the cycling

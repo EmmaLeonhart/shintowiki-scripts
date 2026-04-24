@@ -1,0 +1,85 @@
+name: Git Synced Sync
+
+# Syncs pages tagged [[Category:Git synced pages]] between the repo's
+# git_synced/ directory and shinto.miraheze.org (plus any mirrored
+# fandom pages that sync_git_synced_pages.py handles).
+#
+# Split out of wiki-cleanup.yml so it can run on its own date-gate
+# (currently unconditional) even when the broader legacy cleanup is
+# gated off — e.g. during the 2026-04-23 → 2026-06-01 catch-up window
+# when wiki-cleanup.yml is skipped entirely.
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  git-synced-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      WIKI_EDIT_LIMIT: "100"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and environment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/run_step.sh shinto_miraheze/commit_state.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: "Git synced: sync_git_synced_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Git Synced Sync: sync_git_synced_pages" \
+            python3 shinto_miraheze/sync_git_synced_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit: git_synced/ changes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          git add -A git_synced/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No git_synced/ changes to commit."
+          else
+            git commit -m "chore(git-synced): sync Git synced pages [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "git_synced/ changes pushed." || echo "WARNING: failed to push git_synced/ changes."
+          fi
+
+      - name: "Commit state: Git-Synced Pages Sync"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Git-Synced Pages Sync"
