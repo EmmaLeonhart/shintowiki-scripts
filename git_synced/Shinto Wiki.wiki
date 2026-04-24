@@ -1,7 +1,7 @@
 <mainpage-leftcolumn-start />
 <!--This is the FANDOM wiki code and as such the weird stuff here is not to be treated as a normal page-->
 <!--The code you see using the source editor is used to insert all the content inside the left and right columns. Please don't remove it from the Main Page because it's the optimal main page structure, and accommodates the main page ad. -->
-Welcome to the '''{{SITENAME}}'''! We're a collaborative community about [[Shinto]] created by fans and for fans like you! This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these Fandom help pages]]!
+Welcome to the '''{{SITENAME}}'''! We're a collaborative reference on [[Shinto]], Japan's indigenous religious tradition — covering [[Kami|kami]], [[Jinja|shrines]], [[Matsuri|festivals]], [[Kannushi|priesthood]], and the classical texts. This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these help pages]]!
 
 ==Important articles==
 <gallery position="center" captionalign="center" navigation="true">
@@ -12,7 +12,7 @@ Wiki Mission.jpeg|alt=A shrine priest in white robes performing a purification r
 Wiki Location.jpeg|alt=A wooded path leading to a shrine gate.|[[Ise Grand Shrine]], [[Izumo-taisha]], and other sacred sites
 Wiki Object.jpeg|alt=A bronze mirror displayed on a shrine altar.|The [[Three Sacred Treasures]] and other ritual objects
 </gallery>
-[[w:Help:Galleries|Galleries]] with [[w:Help:Adding images|images]] are typically used to show and link to the main important content about your topic. You can link to specific pages or [[w:Help:Categories|categories]] about them, once you have created different ones. To start creating content, you can use these buttons for each one of the content pages:
+The [[w:Help:Galleries|gallery]] above links to articles that cover the wiki's main areas — [[Jinja|shrines]], [[Kami|deities]], [[Matsuri|festivals]], ritual, and sacred texts. To start new pages in any of these areas, use the buttons below:
 
 <div class="inputbox-gallery">
 <inputbox>
@@ -55,7 +55,7 @@ width=25
 <!-- The gallery above works well for individual articles, but it would also be good to have another below it that points to important Category pages. -->
 
 ==Track your progress==
-You can use different [[w:Help:Tables|tables]] to collect relevant information about the topic of the wiki and the related products. Be sure to add the [[w:Help:Table Progress Tracking|progress tracking feature]] where appropriate too! It allows all users to keep track of their personal progress related to missions to complete in a video game, episodes from a TV show, book chapters - whatever you can think of!
+The [[w:Help:Tables|table]] below lists some of Japan's most historically and religiously significant shrines. Use the [[w:Help:Table Progress Tracking|progress tracking feature]] to mark which ones you've visited on pilgrimage or would like to see.
 
 <table-progress-tracking table-id="1" unique-column-index="1">
 {| class="wikitable sortable"
@@ -78,7 +78,7 @@ You can use different [[w:Help:Tables|tables]] to collect relevant information a
 <!-- You can remove this section from the Main Page and use it on different content pages at your convenience.-->
 ==Interactive Map==
 <interactive-map name="Example map" />
-[[w:Help:Interactive Maps|Interactive Maps]] are also a great way to represent the universe from the wiki topic. You can also add markers for points of interest like hidden treasures, boss locations, or quest givers, and use them to mark your progress. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
+[[w:Help:Interactive Maps|Interactive Maps]] are a great way to explore the geography of Shinto. Markers can locate [[Jinja|shrines]], sacred mountains, and other sites of religious significance across Japan — from [[Ise Grand Shrine|Ise]] and [[Izumo-taisha|Izumo]] to the [[Fushimi Inari-taisha|Fushimi Inari]] torii paths. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
 <!-- Interactive Maps are usually more optimal for content pages, while Main Pages can also contain them.-->
 <mainpage-endcolumn /><mainpage-rightcolumn-start />
 <!-- These two lines of code you see using the source editor are also essential as they are used to close the left column and open the right column. -->
@@ -96,7 +96,7 @@ Core starting points on this wiki:
 
 <!--Alongside the introduction, using this section to describe the IP is always helpful for readers and also to improve search engine optimization (SEO).-->
 ==Join the conversation==
-'''Discussions''' is the central meeting place where you can connect with other fans. There you can share news, chat about trending topics, introduce your personal favorite character or content, and talk about what you love most. Ready to connect? [[Special:Forum|Head over to Discussions]] and start the conversation now!
+'''Discussions''' is a place to connect with other contributors and readers interested in Shinto. Share questions about practice and belief, discuss recent edits, suggest new articles, or swap notes from visits to shrines and festivals. Ready to connect? [[Special:Forum|Head over to Discussions]] and start the conversation now!
 
 <!--As a wiki admin, don't forget to participate on Discussions and moderate what's happening there. You can also assign specific Moderators to help you there.-->
 ==Helping out==
