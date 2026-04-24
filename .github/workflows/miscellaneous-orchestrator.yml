@@ -25,6 +25,10 @@ on:
         description: "Mirror full page history to shinto.fandom.com before truncating on miraheze"
         type: boolean
         default: false
+      edit_limit:
+        description: "Per-run edit cap (default 100; cleanup-loop bumps to 500 during the 2026-04-23 → 2026-06-01 catch-up window)"
+        type: string
+        default: "100"
   workflow_call:
     inputs:
       enable_history_offload:
@@ -39,6 +43,9 @@ on:
       enable_fandom_mirror:
         type: boolean
         default: false
+      edit_limit:
+        type: string
+        default: "100"
 
 permissions:
   contents: write
@@ -50,7 +57,7 @@ jobs:
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
-      WIKI_EDIT_LIMIT: "100"
+      WIKI_EDIT_LIMIT: ${{ inputs.edit_limit }}
       ENABLE_HISTORY_OFFLOAD: ${{ inputs.enable_history_offload && '1' || '' }}
       ENABLE_REVDEL: ${{ inputs.enable_revdel && '1' || '' }}
       ENABLE_INTERLANG_CONSOLIDATE: ${{ inputs.enable_interlang_consolidate && '1' || '' }}

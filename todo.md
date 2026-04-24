@@ -8,6 +8,15 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 Active work queue lives in [status.md](status.md) (Sutra-style queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
 
+## Scheduled review — 2026-06-01 (remove catch-up window)
+
+- [ ] **Remove the catch-up window from `cleanup-loop.yml`** — the `window-gate` job auto-expires on 2026-06-01 (it just checks the date), so nothing breaks if we forget, but the scaffolding around it should be torn out:
+  - Drop the `window-gate` job and every `needs: [window-gate, …]` reference.
+  - Restore the pre-window `if:` conditions on `cleanup`, `submit-quickstatements`, `wikidata-qualifier-edit`, `random-wait` (just remove the `&& needs.window-gate.outputs.catchup-active != 'true'` clauses).
+  - Remove `edit_limit` input wiring from the four orchestrator workflows OR leave it as a dispatch-time knob but set the default back to `"100"`.
+  - Delete the temporary-banner comment block at the top of the `jobs:` section.
+- **Why the window exists**: potential concerns about the future of shintowiki as of 2026-04-23 — we wanted to burn through the orchestrator queue faster and pause QS/cleanup side-work that wasn't time-critical. See the DEVLOG entry for 2026-04-23.
+
 ## Scheduled review — July 2026
 
 - [ ] **Audit terminating cleanup scripts** — all per-page "cycling" operations have been moved into the three namespace orchestrators (`mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`). The following scripts in `wiki-cleanup.yml` are **terminating** — they have state files but don't reset at the end of a sweep, so once their state covers every eligible page they simply do nothing on subsequent runs. In July 2026, check each one's state/log to confirm it has stopped producing edits; if so, remove the step from `wiki-cleanup.yml` and delete the script:

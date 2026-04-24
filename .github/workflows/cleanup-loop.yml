@@ -20,7 +20,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ══════════════════════════════════════════════════════════
+  # TEMPORARY (2026-04-23 → 2026-06-01): catch-up window.
+  # Due to potential concerns about the future of shintowiki, we are
+  # temporarily (a) skipping the non-orchestrator wiki-cleanup step,
+  # SPARQL QS generation, and QS/Wikidata submission; and (b) raising
+  # the per-run edit budget on the four namespace orchestrators from
+  # 100 to 500. The window-gate job below outputs `catchup-active` so
+  # every affected downstream job can key off one value. Remove this
+  # gate (and restore the default edit limit) on/after 2026-06-01.
+  # ══════════════════════════════════════════════════════════
+  window-gate:
+    runs-on: ubuntu-latest
+    outputs:
+      catchup-active: ${{ steps.check.outputs.active }}
+    steps:
+      - id: check
+        run: |
+          if [ "$(date -u +%Y%m%d)" -lt "20260601" ]; then
+            echo "active=true" >> "$GITHUB_OUTPUT"
+            echo "Catch-up window ACTIVE (pre-2026-06-01): QS/cleanup jobs skipped, orchestrator budget raised to 500."
+          else
+            echo "active=false" >> "$GITHUB_OUTPUT"
+            echo "Catch-up window EXPIRED: normal schedule."
+          fi
+
   generate-quickstatements:
+    needs: window-gate
+    if: needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/generate-quickstatements.yml
 
   # Build pages right after SPARQL generation (runs in parallel with cleanup)
@@ -30,8 +57,8 @@ jobs:
     uses: ./.github/workflows/generate-pages.yml
 
   cleanup:
-    needs: generate-quickstatements
-    if: always()
+    needs: [window-gate, generate-quickstatements]
+    if: always() && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
@@ -44,7 +71,7 @@ jobs:
   # so enable_interlang_consolidate is now on for all four orchestrators.
 
   mainspace-orchestrator:
-    needs: cleanup
+    needs: [window-gate, cleanup]
     if: always()
     uses: ./.github/workflows/mainspace-orchestrator.yml
     with:
@@ -52,10 +79,11 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
     secrets: inherit
 
   category-orchestrator:
-    needs: mainspace-orchestrator
+    needs: [window-gate, mainspace-orchestrator]
     if: always()
     uses: ./.github/workflows/category-orchestrator.yml
     with:
@@ -63,10 +91,11 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
     secrets: inherit
 
   template-orchestrator:
-    needs: category-orchestrator
+    needs: [window-gate, category-orchestrator]
     if: always()
     uses: ./.github/workflows/template-orchestrator.yml
     with:
@@ -74,13 +103,14 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
     secrets: inherit
 
   # Sweeps every other wikitext namespace (User, Talk, Project, File,
   # MediaWiki, Help, and all remaining Talk spaces) with one shared
   # edit budget. Runs last among the orchestrators.
   miscellaneous-orchestrator:
-    needs: template-orchestrator
+    needs: [window-gate, template-orchestrator]
     if: always()
     uses: ./.github/workflows/miscellaneous-orchestrator.yml
     with:
@@ -88,26 +118,30 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
     secrets: inherit
 
-  # Random delay only on cron schedule, not on push
+  # Random delay only on cron schedule, not on push.
+  # Skipped during the catch-up window (per 2026-04-23 pause).
   random-wait:
-    needs: miscellaneous-orchestrator
-    if: github.event_name == 'schedule'
+    needs: [window-gate, miscellaneous-orchestrator]
+    if: github.event_name == 'schedule' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/random-wait.yml
 
   # On push: submit immediately after orchestrators
   # On cron: submit after random wait
+  # Skipped during the catch-up window.
   submit-quickstatements:
-    needs: [miscellaneous-orchestrator, random-wait]
-    if: always() && needs.cleanup.result == 'success'
+    needs: [window-gate, miscellaneous-orchestrator, random-wait]
+    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
   # Direct Wikidata edits via API (after QS submission)
+  # Skipped during the catch-up window.
   wikidata-qualifier-edit:
-    needs: [cleanup, submit-quickstatements]
-    if: always() && needs.cleanup.result == 'success'
+    needs: [window-gate, cleanup, submit-quickstatements]
+    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
