@@ -49,11 +49,14 @@ USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 THROTTLE = 2.5
 
 # Matches hard redirects AND the common template-based soft/category
-# redirect forms. If any of these appear at the start of a line, the
-# page is treated as a redirect and skipped entirely — no op runs on
-# it, including history_offload. Redirects should not have their
-# history offloaded (there is nothing meaningful to preserve), and
-# light ops would either no-op or risk damaging the redirect target.
+# redirect forms. Exported so individual ops can opt out of running
+# on redirects (e.g. history_offload refuses outright — delete+recreate
+# would trash the #REDIRECT line and redirect history isn't worth
+# preserving). The orchestrator itself does NOT pre-skip redirects:
+# the walk visits them, appends them to state, and most ops naturally
+# no-op on them. That way state tracking is uniform across redirects
+# and real pages, and any future op that wants to run on redirects
+# (e.g. fixing broken ones) can just not-check.
 REDIRECT_RE = re.compile(
     r"^\s*("
     r"#redirect\b"
@@ -186,11 +189,14 @@ def run_orchestrator(
                 append_state(path, title)
             continue
 
-        if REDIRECT_RE.search(text):
-            if apply:
-                append_state(path, title)
-            skipped += 1
-            continue
+        # NOTE: we deliberately do NOT pre-skip redirects here. Redirects
+        # should be walked, appended to state, and either (a) no-op through
+        # every op that checks its content (most do) or (b) get an
+        # explicit refusal inside the op (history_offload, wikidata_link).
+        # Skipping wholesale up front made it invisible whether a given op
+        # was actually safe on redirects or not. Per-op refusal is clearer
+        # and leaves room for future ops that legitimately want to edit
+        # redirects (e.g. fix double redirects).
 
         # Heavy-op pre-pass: each heavy op owns its own save. If any modifies
         # the page, refetch text before the light ops see it.
