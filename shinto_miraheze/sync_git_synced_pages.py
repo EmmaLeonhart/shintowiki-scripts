@@ -15,7 +15,9 @@ Resolution per page:
   * wiki changed, local unchanged  → pull wiki → local
   * local changed, wiki unchanged  → push local → wiki
   * both unchanged                 → no-op
-  * both changed                   → conflict, logged and skipped
+  * both changed                   → push local → wiki (repo is the
+                                     source of truth; any divergent
+                                     wiki edit gets overwritten)
 
 If a page is no longer in the category on the wiki, its local copy is
 deleted — wiki is the source of truth for category membership. If the
@@ -275,8 +277,34 @@ def main():
                 print(f"ERROR saving {title}: {e}")
             continue
 
+        # Both sides changed since the last sync. Policy: repo is the
+        # source of truth — push local → wiki, overwriting the wiki's
+        # divergent edit. Track it as a conflict counter for visibility,
+        # but don't skip.
         conflicts += 1
-        print(f"CONFLICT: {title}  (wiki {base_revid} → {wiki_revid}, local sha changed) — skipped")
+        if edits_performed >= args.max_edits:
+            skipped += 1
+            print(f"CONFLICT (repo wins): {title}  (wiki {base_revid} → {wiki_revid}) — deferred, edit limit reached")
+            continue
+        if not args.apply:
+            print(f"[DRY] PUSH (conflict → repo wins): {title}  (wiki {base_revid} → {wiki_revid})")
+            pushed += 1
+            continue
+        try:
+            page = site.pages[title]
+            result = page.save(
+                local_text,
+                summary=f"Sync from repo git_synced/ (overwriting divergent wiki edit; repo is source of truth) {args.run_tag}",
+            )
+            new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or wiki_revid
+            state[title] = {"revid": new_revid, "sha": local_sha}
+            pushed += 1
+            edits_performed += 1
+            print(f"PUSH  {title}  (conflict → repo wins; wiki {base_revid} → {wiki_revid} overwritten, new rev {new_revid})")
+            time.sleep(THROTTLE)
+        except Exception as e:
+            errors += 1
+            print(f"ERROR saving {title}: {e}")
 
     # ── Pass 2: local files whose title is no longer in the wiki category ──
     orphans = sorted(set(local_files) - set(wiki_pages))
