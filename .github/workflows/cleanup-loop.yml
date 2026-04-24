@@ -145,6 +145,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_template_usage_check: true
       edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
     secrets: inherit
 

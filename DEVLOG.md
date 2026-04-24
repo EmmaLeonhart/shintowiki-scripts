@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-04-24
+
+### Template orchestrator: tag every template as transcluded-in-mainspace or not
+**Scripts:** `shinto_miraheze/orchestrators/ops/template_mainspace_usage.py`, `shinto_miraheze/orchestrators/template_orchestrator.py`, `.github/workflows/template-orchestrator.yml`, `.github/workflows/cleanup-loop.yml`
+**Status:** Complete (shipping in off state pending first observed run; enabled via `enable_template_usage_check: true` in cleanup-loop)
+
+A very large fraction of Template-namespace pages were accidentally imported via the wanted-templates import pipeline and aren't actually used in any mainspace article — e.g. `Template:Coast guard`, which is transcluded only from non-mainspace pages and from other templates. We need to surface that set so we can review and prune it.
+
+The new `template_mainspace_usage` op partitions every template into exactly one of two complementary maintenance categories, placed inside the template's `<noinclude>` block:
+* `[[Category:Templates transcluded in mainspace]]` — at least one `prop=transcludedin&tinamespace=0` hit
+* `[[Category:Templates not transcluded in mainspace]]` — zero hits
+
+Heavy op (one API call per visited template via `tilimit=1`, so we detect "is there any mainspace use at all" without paging a full list). Self-correcting — when a template gains or loses its first mainspace transclusion, the tags swap on the next sweep. Env-gated by `ENABLE_TEMPLATE_USAGE_CHECK=1` so it can sit in the OPS list without acting until explicitly enabled; `cleanup-loop.yml` passes `enable_template_usage_check: true` to the template orchestrator.
+
+Intent is to use the two categories as filter input for a later review/deletion workflow. Running it on every sweep keeps the partition fresh as mainspace content evolves.
+
+---
+
 ## 2026-04-23
 
 ### Orchestrator state was silently never landing on origin — fixed with a push-retry loop
