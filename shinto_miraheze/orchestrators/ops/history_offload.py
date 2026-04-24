@@ -45,11 +45,27 @@ recreated banner-only version.
 """
 
 import os
+import re
 import urllib.parse
 
 from . import _archive_repo, fandom_mirror
 
 NAME = "history_offload"
+
+# Belt-and-suspenders redirect guard. common.run_orchestrator already
+# skips redirects before any op runs, but offloading a redirect page's
+# history is never correct (there's nothing to preserve and the delete
+# + recreate cycle would trash the redirect), so we refuse again here
+# in case this op is ever invoked outside the orchestrator or the
+# common-loop check is bypassed. Matches hard #REDIRECT and the common
+# soft/category redirect templates.
+_REDIRECT_RE = re.compile(
+    r"^\s*("
+    r"#redirect\b"
+    r"|\{\{\s*(?:category|soft)[\s_]*redirect\b"
+    r")",
+    re.IGNORECASE | re.MULTILINE,
+)
 # Every wikitext-content namespace. Excludes virtual (-2/-1) and special-
 # content namespaces where wikitext edits don't apply: GeoJson (420),
 # Module/Scribunto (828), and Wikibase Item/Property (860/862). Their Talk
@@ -199,6 +215,9 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
         current_text = page.text()
     except Exception as e:
         return False, f"could not read page: {e}"
+
+    if _REDIRECT_RE.search(current_text):
+        return False, "skipped: page is a redirect"
 
     # Fast-path skip: already in offloaded steady state.
     try:
