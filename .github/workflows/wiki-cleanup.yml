@@ -188,11 +188,23 @@ jobs:
       #     shinto_miraheze/run_step.sh "Core Loop: resolve_double_category_qids" \
       #       python3 shinto_miraheze/resolve_double_category_qids.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      - name: "Structural: audit_double_category_qids"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Core Loop: audit_double_category_qids" \
-            python3 shinto_miraheze/audit_double_category_qids.py --apply --run-tag "${RUN_TAG}"
+      # audit_double_category_qids — DISABLED 2026-04-24. The audit walks
+      # every page in [[Category:Double category qids]], follows redirect
+      # chains for each linked category, and counts members per target.
+      # At ~2000+ dab pages × ~10 wiki API calls each (no throttle), one
+      # run can take 11+ hours on a slow wiki — seen 2026-04-24 hanging
+      # the entire cleanup job and blocking everything after it. The
+      # report was never consulted and the companion auto-fixer
+      # (resolve_double_category_qids) is itself disabled, so there is
+      # no downstream consumer. Re-enable only with a smaller scope
+      # (e.g. sample N pages per run) or after moving the expensive
+      # work into an orchestrator op that piggybacks on the existing
+      # category sweep.
+      # - name: "Structural: audit_double_category_qids"
+      #   if: always() && steps.*.outcome != 'cancelled'
+      #   run: |
+      #     shinto_miraheze/run_step.sh "Core Loop: audit_double_category_qids" \
+      #       python3 shinto_miraheze/audit_double_category_qids.py --apply --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Structural Fixes"
         if: always() && steps.*.outcome != 'cancelled'
