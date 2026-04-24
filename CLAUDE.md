@@ -95,3 +95,12 @@ the retry — do not replace it with a single-shot push.
   CI uses `python3`.
 * **`chmod +x` is in the git index** for `run_step.sh` and
   `commit_state.sh` — don't re-add workflow-level chmod lines for them.
+* **Force-cancel, not cancel, for stuck runs.** `gh run cancel <id>`
+  (and `POST .../actions/runs/{id}/cancel`) is *cooperative* — the
+  runner only notices the signal between steps, and an orchestrator
+  that's mid-walk with 2.5s throttles between `page.save()` calls may
+  take a minute+ or never respond. For badly stuck runs, escalate to
+  `POST .../actions/runs/{id}/force-cancel` via `gh api -X POST
+  "repos/OWNER/REPO/actions/runs/ID/force-cancel"`. This terminates
+  the run immediately. Needed fairly often — reach for it the moment
+  a regular cancel hasn't propagated within ~1 minute.
