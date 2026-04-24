@@ -5,50 +5,50 @@ Welcome to the '''{{SITENAME}}'''! We're a collaborative community about [[Shint
 
 ==Important articles==
 <gallery position="center" captionalign="center" navigation="true">
-Itsukushima Gate.jpg|alt=Stylized text reading "PRODUCT LOGO" in bold, multi-colored letters with a vintage texture, set against a deep purple background filled with stars and abstract geometric shapes.|The name of the product
-Amaterasu cave crop.jpg|alt=A knight wearing golden armor, holding a sword with a pink hilt pointing down. The background is a brown, hazy wooded area with a stone building.|The name of a character
-Wiki Episode.jpeg|alt=A detective in a trench coat and fedora holding a flashlight and magnifying glass, rendered in purple and blue tones with a halftone texture against a dark window backdrop.|The name of an episode
-Wiki Mission.jpeg|alt=Two swords clashing, one with a turquoise blade, the other dark blue. The background is a grey. barren, grassy area, with dead trees.|The name of a mission
-Wiki Location.jpeg|alt=A red and white striped lighthouse emitting beams of light made of white dots, set against a dark, textured sea and sky background.|The name of a location
-Wiki Object.jpeg|alt=A red ruby jewell, with a golden border. The background is a religious building with an alter, stained glass windows, and stone walls.|The name of an object
+Itsukushima Gate.jpg|alt=A vermilion torii gate standing in the sea at Itsukushima, framed by wooded mountains.|[[Itsukushima Shrine]] — one of Japan's most iconic shrines
+Amaterasu cave crop.jpg|alt=A woodblock-style depiction of the sun goddess Amaterasu emerging from a rock cave surrounded by other kami.|[[Amaterasu]] emerging from the [[Amano-Iwato]] cave
+Wiki Episode.jpeg|alt=Interior view of a shrine hall with tatami flooring.|[[Jinja|Shrine architecture]] and the parts of a shrine
+Wiki Mission.jpeg|alt=A shrine priest in white robes performing a purification ritual.|[[Kannushi|Priests]] and [[Matsuri|festivals]]
+Wiki Location.jpeg|alt=A wooded path leading to a shrine gate.|[[Ise Grand Shrine]], [[Izumo-taisha]], and other sacred sites
+Wiki Object.jpeg|alt=A bronze mirror displayed on a shrine altar.|The [[Three Sacred Treasures]] and other ritual objects
 </gallery>
 [[w:Help:Galleries|Galleries]] with [[w:Help:Adding images|images]] are typically used to show and link to the main important content about your topic. You can link to specific pages or [[w:Help:Categories|categories]] about them, once you have created different ones. To start creating content, you can use these buttons for each one of the content pages:
 
 <div class="inputbox-gallery">
 <inputbox>
 type=create
-preload=Template:Product page
-buttonlabel=New product page
+preload=Template:Shrine page
+buttonlabel=New shrine page
 width=25
 </inputbox>
 <inputbox>
 type=create
-preload=Template:Character page
-buttonlabel=New character page
+preload=Template:Kami page
+buttonlabel=New kami page
 width=25
 </inputbox>
 <inputbox>
 type=create
-preload=Template:Episode page
-buttonlabel=New episode page
+preload=Template:Festival page
+buttonlabel=New festival page
 width=25
 </inputbox>
 <inputbox>
 type=create
-preload=Template:Mission page
-buttonlabel=New mission page
+preload=Template:Ritual page
+buttonlabel=New ritual page
 width=25
 </inputbox>
 <inputbox>
 type=create
-preload=Template:Location page
-buttonlabel=New location page
+preload=Template:Text page
+buttonlabel=New text/scripture page
 width=25
 </inputbox>
 <inputbox>
 type=create
-preload=Template:Object page
-buttonlabel=New object page
+preload=Template:Sacred object page
+buttonlabel=New sacred object page
 width=25
 </inputbox>
 </div>
@@ -60,15 +60,19 @@ You can use different [[w:Help:Tables|tables]] to collect relevant information a
 <table-progress-tracking table-id="1" unique-column-index="1">
 {| class="wikitable sortable"
 |-
-! Name !! Description !! Notes
+! Shrine !! Location !! Notes
 |-
-| Mission || You have to go to this location and defeat the main boss. Don't forget to prepare your weapons first. || Once defeated, you will be rewarded with a new weapon.
+| [[Ise Grand Shrine]] || Mie Prefecture || The most sacred shrine in Shinto, dedicated to [[Amaterasu]]; rebuilt every 20 years in the [[Shikinen Sengū]] tradition
 |-
-| Episode || The main characters are going to get married, but a secret from the past will resurface. || Air date
+| [[Izumo-taisha]] || Shimane Prefecture || One of the oldest and most important shrines, dedicated to [[Ōkuninushi]]
 |-
-| Book chapter || In this chapter, the main conflict is starting to be solved. || The number of pages
+| [[Itsukushima Shrine]] || Hiroshima Prefecture || Famous for its "floating" torii gate in the sea; UNESCO World Heritage Site
 |-
-| Toy || This product is based on the character from the movie. || Price
+| [[Fushimi Inari-taisha]] || Kyoto Prefecture || Head shrine of [[Inari]]; known for thousands of vermilion torii forming forest tunnels
+|-
+| [[Meiji Shrine]] || Tokyo || Dedicated to the deified spirits of Emperor Meiji and Empress Shōken
+|-
+| [[Atsuta Shrine]] || Aichi Prefecture || Houses one of the [[Three Sacred Treasures]], the sword [[Kusanagi-no-Tsurugi]]
 |}
 </table-progress-tracking>
 <!-- You can remove this section from the Main Page and use it on different content pages at your convenience.-->
@@ -79,7 +83,16 @@ You can use different [[w:Help:Tables|tables]] to collect relevant information a
 <mainpage-endcolumn /><mainpage-rightcolumn-start />
 <!-- These two lines of code you see using the source editor are also essential as they are used to close the left column and open the right column. -->
 ==About==
-This section serves as an introduction for visitors to the wiki, usually describing the IP itself. You can use it to explain the topic this community is about, [[w:Help:Links|adding links]] to the  pages talking about the products or events, characters or real-life people who created the series or franchise.
+[[Shinto]] (神道, ''the way of the kami'') is the indigenous religious tradition of Japan. It centres on the veneration of [[Kami]] — sacred spirits associated with nature, ancestors, historical figures, and specific places — through rituals, festivals, and observances performed at [[Shrine|shrines]]. Shinto has no founder, no canonical scripture, and no fixed doctrine; instead it is a living tradition preserved through practice and through classical texts like the [[Kojiki]], the [[Nihon Shoki]], and the [[Engishiki]].
+
+Core starting points on this wiki:
+
+* '''[[Shinto]]''' — the tradition itself: its history, practice, and schools
+* '''[[Kami]]''' — the spirits and deities venerated in Shinto, including [[Amaterasu]], [[Susanoo]], [[Tsukuyomi]], [[Inari]], [[Hachiman]], and countless others
+* '''[[Shrine]]''' / '''[[Jinja]]''' — sacred architecture, [[Torii]] gates, and famous sites like [[Ise Grand Shrine]] and [[Izumo-taisha]]
+* '''[[Matsuri]]''' — the festival calendar
+* '''[[Kannushi]]''', '''[[Miko]]''' — priests and shrine attendants
+* '''[[Kojiki]]''', '''[[Nihon Shoki]]''', '''[[Engishiki]]''' — the foundational classical texts
 
 <!--Alongside the introduction, using this section to describe the IP is always helpful for readers and also to improve search engine optimization (SEO).-->
 ==Join the conversation==
