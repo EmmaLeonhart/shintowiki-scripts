@@ -6,6 +6,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-04-24
 
+### Orchestrator walks: apfrom resume + 1000-append state-growth cap per run
+**Scripts:** `shinto_miraheze/orchestrators/common.py`
+**Status:** Complete
+
+Two perf/safety knobs added to `run_orchestrator`:
+
+* **Server-side walk resume via `apfrom`.** `iter_allpages` now accepts a `start_from` arg (maps to MediaWiki's `apfrom`). Before the loop, `run_orchestrator` computes the alphabetically-max title in the current namespace's state entries (strips the namespace prefix; misc's mixed-namespace state is handled by prefix-filtering first). That value is passed as `apfrom`, so a run with 10,000 prior titles in state doesn't pay 20 allpages API batches just to discard each title via the in-memory `done` lookup — it starts at the right position directly.
+
+* **`MAX_STATE_GROWTH_PER_RUN = 1000` cap.** Each run can append at most 1,000 titles to state before breaking with `finished_all=False`. Without this cap, a run where every visited page is a no-op (nothing to edit, but each visit still appends to state) would walk the entire namespace — potentially 20,000+ pages — in a single CI run, taking hours. The cap bounds one run at roughly "fetch 1,000 pages worth of content" and lets the next scheduled run pick up where this one left off. All in-loop `append_state(path, title)` calls now go through a `_mark_done` helper that bumps a counter, so the cap applies uniformly across outcomes (edited / no-op / error / interwiki skip / page-missing).
+
+Combined with the earlier checkout + push-priority fixes, these two make per-run work visible, bounded, and auto-resuming across the full lifecycle of a cycle.
+
 ### Template orchestrator state never landed — checkout SHA stale + rebase bails on add/add
 **Scripts:** `.github/workflows/{mainspace,category,template,miscellaneous}-orchestrator.yml`
 **Status:** Fixed

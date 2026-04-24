@@ -48,6 +48,15 @@ WIKI_PATH = "/w/"
 USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 THROTTLE = 2.5
 
+# Hard cap on state-file growth per run. Once this many titles have been
+# appended to state in a single run, the walk stops mid-cycle and the
+# remainder waits for the next run. Without this cap, a run where every
+# page is a no-op (nothing to edit) would walk the entire namespace —
+# potentially tens of thousands of pages — in a single CI run. At ~5-10
+# pages/sec that's multi-hour no-op walks. This bounds one run at
+# roughly "fetch 1000 pages worth of content" = ~10-15 min.
+MAX_STATE_GROWTH_PER_RUN = 1000
+
 # Matches hard redirects AND the common template-based soft/category
 # redirect forms. Exported so individual ops can opt out of running
 # on redirects (e.g. history_offload refuses outright — delete+recreate
@@ -102,8 +111,14 @@ def login_site() -> mwclient.Site:
     return site
 
 
-def iter_allpages(site: mwclient.Site, namespace: int):
+def iter_allpages(site: mwclient.Site, namespace: int, start_from: str = ""):
+    """Yield every page title in `namespace`, optionally starting alphabetically
+    at `start_from`. The `start_from` value is a title WITHOUT the namespace
+    prefix (MediaWiki's apfrom parameter expects the in-namespace title, since
+    apnamespace is specified separately)."""
     params = {"list": "allpages", "apnamespace": namespace, "aplimit": "max"}
+    if start_from:
+        params["apfrom"] = start_from
     while True:
         result = site.api("query", **params)
         for entry in result.get("query", {}).get("allpages", []):
@@ -112,6 +127,38 @@ def iter_allpages(site: mwclient.Site, namespace: int):
             params.update(result["continue"])
         else:
             break
+
+
+def _namespace_prefix(site: mwclient.Site, namespace: int) -> str | None:
+    """Returns 'Template:' for ns=10, '' for ns=0 (mainspace), None if the
+    namespace name can't be resolved from the site's siteinfo (in which case
+    the caller should skip the apfrom optimization for safety)."""
+    if namespace == 0:
+        return ""
+    try:
+        name = site.namespaces.get(namespace, "")
+    except Exception:
+        return None
+    if not name:
+        return None
+    return f"{name}:"
+
+
+def _compute_apfrom(done: set[str], namespace_prefix: str | None) -> str:
+    """Return the alphabetically-max title in `done` that belongs to the
+    given namespace (matched by prefix), with the prefix stripped for use
+    with allpages' `apfrom` parameter. Empty string if there are no matches
+    or the prefix couldn't be resolved — caller should then walk from the
+    beginning of the namespace."""
+    if namespace_prefix is None:
+        return ""
+    if namespace_prefix:
+        stripped = [t[len(namespace_prefix):] for t in done if t.startswith(namespace_prefix)]
+    else:
+        stripped = list(done)
+    if not stripped:
+        return ""
+    return max(stripped)
 
 
 def run_orchestrator(
@@ -146,11 +193,33 @@ def run_orchestrator(
     done = load_state(path) if apply else set()
     print(f"State ({state_name}): {len(done)} titles already processed this cycle")
 
+    # Performance: use MediaWiki's `apfrom` to start the walk server-side at
+    # the alphabetically-last title already in state for this namespace. That
+    # avoids enumerating the already-done prefix at one API call per 500
+    # titles just to discard each via the in-memory 'done' lookup.
+    ns_prefix = _namespace_prefix(site, namespace)
+    start_from = _compute_apfrom(done, ns_prefix)
+    if start_from:
+        print(f"Resuming walk at apfrom={start_from!r} (server-side skip of {len(done)} prior titles)")
+
     edited = checked = skipped = errors = 0
     would_edit = 0  # dry-run counter (changes the code would have made)
+    state_growth = 0  # titles appended to state in THIS run (bounded below)
     finished_all = True
 
-    for title in iter_allpages(site, namespace):
+    def _mark_done(t: str) -> None:
+        """Append `t` to state and bump the per-run growth counter. All
+        in-loop append_state calls go through this helper so the cap
+        applies uniformly regardless of outcome (edit / no-op / error)."""
+        nonlocal state_growth
+        append_state(path, t)
+        state_growth += 1
+
+    for title in iter_allpages(site, namespace, start_from=start_from):
+        if apply and state_growth >= MAX_STATE_GROWTH_PER_RUN:
+            print(f"Reached max state growth per run ({MAX_STATE_GROWTH_PER_RUN}); stopping mid-cycle.")
+            finished_all = False
+            break
         if apply and max_edits and edited >= max_edits:
             print(f"Reached max edits ({max_edits}); stopping mid-cycle.")
             finished_all = False
@@ -166,7 +235,7 @@ def run_orchestrator(
         # Interwiki titles in mainspace aren't real local pages.
         if namespace == 0 and INTERWIKI_RE.match(title) and not title.startswith(LOCAL_NS_PREFIXES):
             if apply:
-                append_state(path, title)
+                _mark_done(title)
             skipped += 1
             continue
 
@@ -178,7 +247,7 @@ def run_orchestrator(
             page = site.pages[title]
             if not page.exists:
                 if apply:
-                    append_state(path, title)
+                    _mark_done(title)
                 skipped += 1
                 continue
             text = page.text()
@@ -186,7 +255,7 @@ def run_orchestrator(
             print(f"[{checked}] {title} ERROR reading: {e}")
             errors += 1
             if apply:
-                append_state(path, title)
+                _mark_done(title)
             continue
 
         # NOTE: we deliberately do NOT pre-skip redirects here. Redirects
@@ -234,7 +303,7 @@ def run_orchestrator(
                 prior_heavy_modified = True
         if heavy_failure:
             if apply:
-                append_state(path, title)
+                _mark_done(title)
             continue
 
         new_text = text
@@ -253,7 +322,7 @@ def run_orchestrator(
 
         if new_text == text:
             if apply:
-                append_state(path, title)
+                _mark_done(title)
             continue
 
         if not apply:
@@ -266,12 +335,12 @@ def run_orchestrator(
             page.save(new_text, summary=summary)
             edited += 1
             print(f"[{checked}] {title} EDITED: {'; '.join(summaries)}")
-            append_state(path, title)
+            _mark_done(title)
             time.sleep(THROTTLE)
         except Exception as e:
             print(f"[{checked}] {title} ERROR saving: {e}")
             errors += 1
-            append_state(path, title)
+            _mark_done(title)
 
     if finished_all and apply and clear_on_exhaust:
         print(f"\nCycle complete for {ns_label} — clearing state.")
