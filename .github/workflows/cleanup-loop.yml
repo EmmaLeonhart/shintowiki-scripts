@@ -17,7 +17,12 @@ permissions:
 
 concurrency:
   group: shinto-cleanup-loop
-  cancel-in-progress: false
+  # Was `false` historically so long orchestrator runs finished cleanly.
+  # Flipped to `true` on 2026-04-24 after a cleanup job hung for hours
+  # on audit_double_category_qids and manual `gh run cancel` didn't
+  # propagate. With this on, any new push / schedule fires will cancel
+  # the prior stuck run instead of queueing behind it.
+  cancel-in-progress: true
 
 jobs:
   # ══════════════════════════════════════════════════════════
