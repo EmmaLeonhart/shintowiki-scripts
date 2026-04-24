@@ -234,13 +234,23 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     if rev_count <= 1:
         return False, "no history to offload (single revision)"
 
-    # Stage 0: Fandom mirror. Runs BEFORE any destructive source-side work
-    # so we only delete pages that are known preserved on fandom.
+    # Stage 0: Fandom mirror (best-effort, not a gate). Tries up to twice.
+    # If still failing, we proceed anyway — the GitHub XML archive
+    # (Stage 1 below) is the authoritative backup, so a missing fandom
+    # copy is recoverable. Without this non-gating behaviour a fandom
+    # outage stalls the entire offload queue behind every page.
     if enable_fandom_mirror and apply:
-        ok, msg = fandom_mirror.mirror_page(site, title, run_tag)
-        if not ok:
-            return False, f"fandom mirror FAILED ({msg}); aborting offload"
-        print(f"  fandom mirror: {msg}")
+        mirror_ok = False
+        mirror_msg = ""
+        for attempt in (1, 2):
+            mirror_ok, mirror_msg = fandom_mirror.mirror_page(site, title, run_tag)
+            if mirror_ok:
+                break
+            print(f"  fandom mirror attempt {attempt} FAILED: {mirror_msg}")
+        if mirror_ok:
+            print(f"  fandom mirror: {mirror_msg}")
+        else:
+            print(f"  fandom mirror: giving up after 2 attempts; proceeding via GitHub archive")
 
     # Stage 1: XML archive (idempotent — skip if already present).
     # Refuse to archive a placeholder: if Special:Export returned siteinfo

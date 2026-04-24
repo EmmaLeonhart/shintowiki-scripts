@@ -6,10 +6,11 @@ shinto.fandom.com via Special:Export → action=import. Called from
 history_offload as a pre-stage, so the wiki-to-wiki mirror happens BEFORE
 the source page gets truncated and revdel'd.
 
-If the mirror fails, history_offload must abort that page — otherwise we
-would truncate + revdel on miraheze without a fandom copy, destroying
-history. The op surfaces a clear failure message so the orchestrator
-skips the page cleanly.
+Best-effort: if the mirror fails, history_offload retries once and then
+continues anyway. The GitHub XML archive (history_offload Stage 1) is
+the authoritative backup, so a missing fandom copy is recoverable. Not
+gating on fandom prevents a fandom outage from stalling the entire
+offload queue.
 
 Credentials:
   FANDOM_USERNAME  — bot-password login (e.g. "Their Eminence@BotName")
@@ -94,8 +95,9 @@ def _fetch_source_xml(source_site: mwclient.Site, title: str) -> str:
 def mirror_page(source_site: mwclient.Site, title: str, run_tag: str) -> tuple[bool, str]:
     """Mirror `title`'s full history to shinto.fandom.com.
 
-    Returns (success, message). Callers must abort downstream destructive
-    work (truncation, revdel) if success is False.
+    Returns (success, message). Best-effort: the caller (history_offload)
+    retries once and then proceeds even on failure, since the GitHub XML
+    archive is the authoritative backup.
     """
     try:
         xml = _fetch_source_xml(source_site, title)
