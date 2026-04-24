@@ -2,11 +2,22 @@
 """
 miscellaneous_orchestrator.py
 ==============================
-Cycles through every wikitext namespace that isn't already owned by the
-three main orchestrators (mainspace ns=0, template ns=10, category ns=14).
-Canonical order: Talk (ns=1), User, User talk, Project, Project talk,
-File, File talk, MediaWiki, MediaWiki talk, Template talk, Help, Help
-talk, Category talk, GeoJson talk, Module talk, Item talk, Property talk.
+Cycles through every subject-side namespace that isn't already owned by
+the three main orchestrators (mainspace ns=0, template ns=10,
+category ns=14).
+Canonical order: User (ns=2), Project, File, MediaWiki, Help, GeoJson,
+Module, Item, Property.
+
+Talk namespaces (odd-numbered: ns=1, 3, 5, 7, 9, 11, 13, 15, 421, 829,
+861, 863) are intentionally excluded — the orchestrator only runs on
+subject-side namespaces.
+
+GeoJson (420), Module (828), Item (860), and Property (862) carry
+non-wikitext content, so only the history_offload op runs on them
+(and it skips the wikitext banner for those — see
+history_offload.NON_WIKITEXT_NAMESPACES). The wikitext ops
+(duplicate_qids, interlang_consolidate) self-exclude via their own
+NAMESPACES tuples.
 
 Goal: the same space-efficiency work (history offload, revdel) that runs
 on the three main namespaces, applied to everything else — so the XML
@@ -33,8 +44,11 @@ Previously this orchestrator gave each namespace its own 100-edit cap
 and its own state file, so every run paid 17× the walk/edit cost of the
 three main orchestrators (~2h vs ~11min).
 
-Omitted namespaces (wikitext edits don't apply to their content model):
+Omitted namespaces:
   * -2 Media, -1 Special     (virtual, not real pages)
+  * All odd-numbered talk namespaces (subject-side sweep only)
+
+Included non-wikitext namespaces (history_offload only; no banner):
   *  420 GeoJson              (JSON content)
   *  828 Module               (Lua/Scribunto)
   *  860 Item, 862 Property   (Wikibase entities, JSON)
@@ -56,25 +70,19 @@ from shinto_miraheze.orchestrators.ops import (
 )
 
 # (namespace_id, state_file_label) — swept in this exact order starting
-# from the persisted cursor. ns=1 (Talk = mainspace talk pages) leads.
+# from the persisted cursor. Only even-numbered (subject-side) namespaces;
+# talk namespaces are excluded. The last four carry non-wikitext content
+# (JSON / Lua / Wikibase) — only history_offload runs on them.
 MISC_NAMESPACES: list[tuple[int, str]] = [
-    (1,   "talk"),
     (2,   "user"),
-    (3,   "user_talk"),
     (4,   "project"),
-    (5,   "project_talk"),
     (6,   "file"),
-    (7,   "file_talk"),
     (8,   "mediawiki"),
-    (9,   "mediawiki_talk"),
-    (11,  "template_talk"),
     (12,  "help"),
-    (13,  "help_talk"),
-    (15,  "category_talk"),
-    (421, "geojson_talk"),
-    (829, "module_talk"),
-    (861, "item_talk"),
-    (863, "property_talk"),
+    (420, "geojson"),
+    (828, "module"),
+    (860, "item"),
+    (862, "property"),
 ]
 
 OPS = [history_offload, duplicate_qids, interlang_consolidate]
