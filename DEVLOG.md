@@ -6,6 +6,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-04-24
 
+### Session summary — archive-push plan, timeline, and everything that shipped today
+**Status:** Context note
+
+Big session. Today the story is "how do we cram as much of shintowiki into a preserved form (fandom mirror + GitHub XML archive) before the miraheze situation potentially forces our hand." Everything below was in service of making the orchestrator pipeline reliable, bounded, and biased toward the content we most care about saving.
+
+**Timeline plan (all dates UTC):**
+
+| Window | Mainspace | Template | Category | Misc | Notes |
+|---|---|---|---|---|---|
+| **2026-04-24 → 2026-05-05** (archive-push) | **1000** | **1000** | **10** | **10** | Bias hard toward the two namespaces we most want archived. |
+| **2026-05-05 → 2026-06-01** (catchup baseline) | 500 | 500 | 500 | 500 | Uniform budget while the outer catchup window stays open. |
+| **2026-06-01 onward** (default) | 100 | 100 | 100 | 100 | Normal operating schedule; daily instead of 6-hourly. |
+
+Mid-window tweaks pending decision (not yet coded — see STATUS.md):
+* If template finishes a full cycle during the push window, shift mainspace to **1500** and keep category/misc at 10.
+* Once mainspace is fully imported, drop everything to uniform 500 (matches the outer catchup baseline early).
+
+**What landed today, roughly in causal order:**
+
+1. **Misc orchestrator scope**: restricted to subject-side namespaces (2/4/6/8/12/420/828/860/862); talk namespaces (odd-numbered) excluded. `history_offload` extended to cover non-wikitext namespaces (Module/GeoJson/Item/Property) with banner suppression — Lua and JSON content get archived + delete + recreate without a `<!-- History offloaded -->` comment that would corrupt the content model.
+2. **Git-synced sync split out of wiki-cleanup**: now its own `git-synced-sync.yml` reusable workflow, invoked from cleanup-loop independently of the catch-up gate. `git_synced/` ↔ wiki mirror keeps moving even while the broader legacy cleanup is paused.
+3. **Template orchestrator state push — fixed (the big one)**: zero state commits had ever landed on origin for the template orchestrator. Root cause: each orchestrator job used `actions/checkout@v4` without an explicit ref, so it checked out the push SHA instead of tip-of-main. When the 2nd / 3rd / 4th orchestrator committed `duplicate_qids.state`, rebase onto origin hit `add/add` conflict because their local version didn't include the 1st orchestrator's commit. `commit_state.sh` bails on rebase conflicts, so all downstream state was lost. Fix: `ref: ${{ github.ref_name }}` on the checkout across all four orchestrator workflows. Template state now lands.
+4. **Offloading-priority scheduling**: new `DEFER_IF_PRIOR_MODIFIED` op flag. `template_mainspace_usage` opts in — when `history_offload` modifies a template in the same visit, categorization defers to the next cycle. Edit budget goes to offloading first; categorization fills in on pages that already offloaded.
+5. **State-growth cap + apfrom resume**: `MAX_STATE_GROWTH_PER_RUN = 1000` bounds any single run at ~1000 page-visits, preventing multi-hour no-op walks. `iter_allpages` now accepts `start_from` (MediaWiki `apfrom`) so a run with 10k prior titles in state doesn't enumerate the already-done prefix just to discard via `done` set lookup.
+6. **Template state seeded**: fetched all 805 templates from Template:! through Template:Company-stub via Special:AllPages and wrote them into `template_orchestrator.state`. Cycle-scoped — they come back into rotation on the next cycle clear.
+7. **Fandom mirror is now best-effort**: retries once (so 2 attempts per page); on both fail, logs "giving up, proceeding via GitHub archive" and continues. The GitHub XML archive is the authoritative backup. Fandom outages no longer stall the offload queue.
+8. **Fandom failure diagnostics**: the opaque `Expecting value: line 1 column 1 (char 0)` JSONDecodeError now includes HTTP status code and the first 200 chars of the response body, so the next 429 / 403 / 503 / login-redirect case is distinguishable at a glance.
+9. **wikidata_link template namespace fix**: on templates, uses `[[Category:Templates missing wikidata]]` placed inside `<noinclude>` (not the generic mainspace category at top level, which was cascading through transclusion into every page using the template). Strips stray generic tags left over from prior runs.
+10. **git-synced conflict policy changed**: repo is now the source of truth. Both-sides-changed conflicts resolve by pushing local → wiki with an audit summary. The previous "skip on conflict" behaviour was indefinitely blocking repo edits behind any concurrent wiki edit.
+11. **Archive-push edit-limit window wired up**: `window-gate` now emits per-orchestrator edit-limit outputs computed from today's date, implementing the timeline in the table above.
+12. **Force-cancel documented**: added CLAUDE.md note that `POST .../actions/runs/{id}/force-cancel` is the right escalation for runs where standard `gh run cancel` doesn't propagate within ~1 minute (the regular cancel is cooperative; the runner only notices between steps, and an orchestrator mid-walk with 2.5s throttles between saves may not respond for minutes).
+
+---
+
 ### Orchestrator walks: apfrom resume + 1000-append state-growth cap per run
 **Scripts:** `shinto_miraheze/orchestrators/common.py`
 **Status:** Complete
