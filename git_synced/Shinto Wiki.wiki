@@ -1,18 +1,18 @@
 <mainpage-leftcolumn-start />
 <!--This is the FANDOM wiki code and as such the weird stuff here is not to be treated as a normal page-->
 <!--The code you see using the source editor is used to insert all the content inside the left and right columns. Please don't remove it from the Main Page because it's the optimal main page structure, and accommodates the main page ad. -->
-Welcome to the '''{{SITENAME}}'''! We're a collaborative reference on [[Shinto]], Japan's indigenous religious tradition — covering [[Kami|kami]], [[Jinja|shrines]], [[Matsuri|festivals]], [[Kannushi|priesthood]], and the classical texts. This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these help pages]]!
+Welcome to the '''{{SITENAME}}'''! We're a collaborative reference on [[Shinto]], Japan's indigenous religious tradition — covering [[Kami|kami]], [[Shinto shrine|shrines]], [[Matsuri|festivals]], [[Kannushi|priesthood]], and the classical texts. This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these help pages]]!
 
 ==Important articles==
 <gallery position="center" captionalign="center" navigation="true">
 Itsukushima Gate.jpg|alt=A vermilion torii gate standing in the sea at Itsukushima, framed by wooded mountains.|[[Itsukushima Shrine]] — one of Japan's most iconic shrines
 Amaterasu cave crop.jpg|alt=A woodblock-style depiction of the sun goddess Amaterasu emerging from a rock cave surrounded by other kami.|[[Amaterasu]] emerging from the [[Amano-Iwato]] cave
-Wiki Episode.jpeg|alt=Interior view of a shrine hall with tatami flooring.|[[Jinja|Shrine architecture]] and the parts of a shrine
+Wiki Episode.jpeg|alt=Interior view of a shrine hall with tatami flooring.|[[Shinto shrine|Shrine architecture]] and the parts of a shrine
 Wiki Mission.jpeg|alt=A shrine priest in white robes performing a purification ritual.|[[Kannushi|Priests]] and [[Matsuri|festivals]]
 Wiki Location.jpeg|alt=A wooded path leading to a shrine gate.|[[Ise Grand Shrine]], [[Izumo-taisha]], and other sacred sites
 Wiki Object.jpeg|alt=A bronze mirror displayed on a shrine altar.|The [[Three Sacred Treasures]] and other ritual objects
 </gallery>
-The [[w:Help:Galleries|gallery]] above links to articles that cover the wiki's main areas — [[Jinja|shrines]], [[Kami|deities]], [[Matsuri|festivals]], ritual, and sacred texts. To start new pages in any of these areas, use the buttons below:
+The [[w:Help:Galleries|gallery]] above links to articles that cover the wiki's main areas — [[Shinto shrine|shrines]], [[Kami|deities]], [[Matsuri|festivals]], ritual, and sacred texts. To start new pages in any of these areas, use the buttons below:
 
 <div class="inputbox-gallery">
 <inputbox>
@@ -77,8 +77,8 @@ The [[w:Help:Tables|table]] below lists some of Japan's most historically and re
 </table-progress-tracking>
 <!-- You can remove this section from the Main Page and use it on different content pages at your convenience.-->
 ==Interactive Map==
-<interactive-map name="Example map" />
-[[w:Help:Interactive Maps|Interactive Maps]] are a great way to explore the geography of Shinto. Markers can locate [[Jinja|shrines]], sacred mountains, and other sites of religious significance across Japan — from [[Ise Grand Shrine|Ise]] and [[Izumo-taisha|Izumo]] to the [[Fushimi Inari-taisha|Fushimi Inari]] torii paths. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
+<interactive-map name="Japan" />
+[[w:Help:Interactive Maps|Interactive Maps]] are a great way to explore the geography of Shinto. Markers can locate [[Shinto shrine|shrines]], sacred mountains, and other sites of religious significance across Japan — from [[Ise Grand Shrine|Ise]] and [[Izumo-taisha|Izumo]] to the [[Fushimi Inari-taisha|Fushimi Inari]] torii paths. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
 <!-- Interactive Maps are usually more optimal for content pages, while Main Pages can also contain them.-->
 <mainpage-endcolumn /><mainpage-rightcolumn-start />
 <!-- These two lines of code you see using the source editor are also essential as they are used to close the left column and open the right column. -->
