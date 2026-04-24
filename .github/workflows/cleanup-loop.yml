@@ -35,23 +35,38 @@ jobs:
   # Due to potential concerns about the future of shintowiki, we are
   # temporarily (a) skipping the non-orchestrator wiki-cleanup step,
   # SPARQL QS generation, and QS/Wikidata submission; and (b) raising
-  # the per-run edit budget on the four namespace orchestrators from
-  # 100 to 500. The window-gate job below outputs `catchup-active` so
-  # every affected downstream job can key off one value. Remove this
-  # gate (and restore the default edit limit) on/after 2026-06-01.
+  # the per-run edit budget on the four namespace orchestrators. The
+  # window-gate job below outputs `catchup-active` so every affected
+  # downstream job can key off one value.
+  #
+  # TEMPORARY WITHIN THE TEMPORARY (2026-04-24 → 2026-05-05):
+  # archive-push window. During these 11 days the edit budget is
+  # biased hard toward mainspace (1000) and template (1000) to get
+  # those archived / mirrored as fast as possible; category and misc
+  # drop to 10 each so they barely consume runner time. On 2026-05-05
+  # everything reverts to a uniform 500 until the outer catch-up
+  # window expires 2026-06-01. See STATUS.md for rationale and the
+  # planned mid-window tweaks (e.g. shifting mainspace to 1500 if
+  # template completes a full cycle first).
   # ══════════════════════════════════════════════════════════
   window-gate:
     runs-on: ubuntu-latest
     outputs:
       catchup-active: ${{ steps.check.outputs.active }}
       should-proceed: ${{ steps.check.outputs.proceed }}
+      mainspace-edit-limit: ${{ steps.check.outputs.mainspace-edit-limit }}
+      template-edit-limit: ${{ steps.check.outputs.template-edit-limit }}
+      category-edit-limit: ${{ steps.check.outputs.category-edit-limit }}
+      misc-edit-limit:     ${{ steps.check.outputs.misc-edit-limit }}
     steps:
       - id: check
         run: |
+          TODAY=$(date -u +%Y%m%d)
+
           # (1) Is the catch-up window still open?
-          if [ "$(date -u +%Y%m%d)" -lt "20260601" ]; then
+          if [ "$TODAY" -lt "20260601" ]; then
             echo "active=true" >> "$GITHUB_OUTPUT"
-            echo "Catch-up window ACTIVE (pre-2026-06-01): QS/cleanup jobs skipped, orchestrator budget raised to 500."
+            echo "Catch-up window ACTIVE (pre-2026-06-01): QS/cleanup jobs skipped."
             CATCHUP=true
           else
             echo "active=false" >> "$GITHUB_OUTPUT"
@@ -59,7 +74,36 @@ jobs:
             CATCHUP=false
           fi
 
-          # (2) Should this fire actually run the pipeline?
+          # (2) Per-orchestrator edit limits. During the archive-push window
+          # (2026-04-24 → 2026-05-05 UTC) we bias budget hard toward mainspace
+          # and template — those are what we want mirrored to fandom / archived
+          # as fast as possible. Category and miscellaneous get a small 10-edit
+          # cap so they don't compete for runner time. On 2026-05-05 the
+          # split reverts to a uniform catchup budget (500 each until the
+          # catch-up window itself expires on 2026-06-01, then 100 each).
+          # See STATUS.md for the rationale and the planned mid-window tweaks
+          # (e.g. bumping mainspace to 1500 if template finishes a full cycle).
+          if [ "$TODAY" -lt "20260505" ]; then
+            echo "mainspace-edit-limit=1000" >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=1000"  >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=10"    >> "$GITHUB_OUTPUT"
+            echo "misc-edit-limit=10"        >> "$GITHUB_OUTPUT"
+            echo "Archive-push window ACTIVE (pre-2026-05-05): mainspace/template 1000, category/misc 10."
+          elif [ "$CATCHUP" = "true" ]; then
+            echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=500"  >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
+            echo "misc-edit-limit=500"      >> "$GITHUB_OUTPUT"
+            echo "Catch-up window: uniform 500 budget per orchestrator."
+          else
+            echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
+            echo "misc-edit-limit=100"      >> "$GITHUB_OUTPUT"
+            echo "Default: uniform 100 budget per orchestrator."
+          fi
+
+          # (3) Should this fire actually run the pipeline?
           #   - push / workflow_dispatch: always run
           #   - schedule + catch-up active: run every 6h fire (catch-up cadence)
           #   - schedule + catch-up expired: only the 00:00 UTC fire runs
@@ -121,7 +165,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
-      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
+      edit_limit: ${{ needs.window-gate.outputs.mainspace-edit-limit }}
     secrets: inherit
 
   category-orchestrator:
@@ -133,7 +177,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
-      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
+      edit_limit: ${{ needs.window-gate.outputs.category-edit-limit }}
     secrets: inherit
 
   template-orchestrator:
@@ -146,7 +190,7 @@ jobs:
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
       enable_template_usage_check: true
-      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
+      edit_limit: ${{ needs.window-gate.outputs.template-edit-limit }}
     secrets: inherit
 
   # Sweeps every other wikitext namespace (User, Talk, Project, File,
@@ -161,7 +205,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
-      edit_limit: ${{ needs.window-gate.outputs.catchup-active == 'true' && '500' || '100' }}
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
   # Random delay only on cron schedule, not on push.
