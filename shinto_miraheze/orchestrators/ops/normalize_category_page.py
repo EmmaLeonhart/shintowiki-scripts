@@ -15,6 +15,8 @@ allpages(ns=14).
 
 import re
 
+from ..common import REDIRECT_RE
+
 NAME = "normalize_category_page"
 NAMESPACES = (14,)
 
@@ -92,6 +94,11 @@ def _build_normalized(text: str) -> str:
 
 def apply(title: str, text: str):
     if not text:
+        return None, None
+    # Redirect category pages carry `#REDIRECT [[Category:…]]` or
+    # `{{category redirect|…}}` — normalizing them would collapse the
+    # page to empty marker comments and destroy the redirect.
+    if REDIRECT_RE.search(text):
         return None, None
     new_text = _build_normalized(text)
     if new_text.rstrip() == text.rstrip():

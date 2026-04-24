@@ -127,6 +127,13 @@ def apply(title: str, text: str):
     if not text:
         return None, None
 
+    # Redirects occasionally carry stray interlanguage links from old
+    # imports; consolidating them would create a {{wikidata link}}
+    # template on the redirect itself and wreck the #REDIRECT line.
+    from ..common import REDIRECT_RE
+    if REDIRECT_RE.search(text):
+        return None, None
+
     interlang_matches = list(INTERLANG_RE.finditer(text))
     # Drop any prefix that isn't a known language code (interwiki-project
     # prefixes like ``d:`` have different semantics).
