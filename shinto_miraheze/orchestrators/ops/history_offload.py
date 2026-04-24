@@ -66,14 +66,19 @@ _REDIRECT_RE = re.compile(
     r")",
     re.IGNORECASE | re.MULTILINE,
 )
-# Every wikitext-content namespace. Excludes virtual (-2/-1) and special-
-# content namespaces where wikitext edits don't apply: GeoJson (420),
-# Module/Scribunto (828), and Wikibase Item/Property (860/862). Their Talk
-# counterparts (421/829/861/863) ARE wikitext and are included.
+# Every real-page namespace. Excludes only virtual (-2 Media / -1 Special).
+# Includes the non-wikitext content namespaces (GeoJson 420, Module/Scribunto
+# 828, Wikibase Item 860, Wikibase Property 862) — their revisions still
+# benefit from history offload. The banner comment is skipped for those
+# (see NON_WIKITEXT_NAMESPACES) because a <!-- ... --> prefix would
+# corrupt Lua/JSON content.
 NAMESPACES = (
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-    421, 829, 861, 863,
+    420, 421, 828, 829, 860, 861, 862, 863,
 )
+# Subject-side namespaces whose content isn't wikitext. We still archive +
+# delete + recreate their history; we just recreate without a banner.
+NON_WIKITEXT_NAMESPACES = frozenset({420, 828, 860, 862})
 HANDLES_SAVE = True
 
 VIEWER_URL = "https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html"
@@ -258,7 +263,12 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     # if delete succeeds but we then fail computing the new text.
     body = _strip_existing_banner(current_text)
     contributors = _list_contributors(site, title)
-    new_text = _top_comment(title, run_tag) + "\n" + body
+    if ns in NON_WIKITEXT_NAMESPACES:
+        # Lua/JSON content — a <!-- ... --> banner would corrupt the content
+        # model, so recreate with the original body only.
+        new_text = body
+    else:
+        new_text = _top_comment(title, run_tag) + "\n" + body
     summary = _build_summary(title, contributors, run_tag)
 
     # Stage 2: Delete. Moves all revisions into the per-title deleted-edits

@@ -25,7 +25,7 @@ Four per-page orchestrators sweep every wikitext namespace:
 | `mainspace_orchestrator`  | 0 | `orchestrators/mainspace_orchestrator.state` |
 | `category_orchestrator`   | 14 | `orchestrators/category_orchestrator.state` |
 | `template_orchestrator`   | 10 | `orchestrators/template_orchestrator.state` |
-| `miscellaneous_orchestrator` | 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 421, 829, 861, 863 | `orchestrators/misc_orchestrator.state` + `misc_orchestrator_cursor.state` |
+| `miscellaneous_orchestrator` | 2, 4, 6, 8, 12, 420, 828, 860, 862 (subject-side only; talk excluded; last four are non-wikitext — history_offload only, no banner) | `orchestrators/misc_orchestrator.state` + `misc_orchestrator_cursor.state` |
 
 Each orchestrator walks `allpages(ns)` and runs every op in its `OPS`
 list against every non-redirect page. Ops are either:
