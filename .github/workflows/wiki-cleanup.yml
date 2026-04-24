@@ -368,34 +368,13 @@ jobs:
         run: shinto_miraheze/commit_state.sh "Translation Sync"
 
       # ════════════════════════════════════════
-      #  Git-Synced Pages Sync
+      #  Git-Synced Pages Sync — MOVED
       # ════════════════════════════════════════
-
-      - name: "Git synced: sync_git_synced_pages"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Git Synced Sync: sync_git_synced_pages" \
-            python3 shinto_miraheze/sync_git_synced_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-      - name: "Commit: git_synced/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          git add -A git_synced/ 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No git_synced/ changes to commit."
-          else
-            git commit -m "chore(git-synced): sync Git synced pages [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
-            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "git_synced/ changes pushed." || echo "WARNING: failed to push git_synced/ changes."
-          fi
-
-      - name: "Commit state: Git-Synced Pages Sync"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: shinto_miraheze/commit_state.sh "Git-Synced Pages Sync"
-
-      # Main Page is now handled generically by sync_git_synced_pages if
-      # [[Category:Git synced pages]] is present on the wiki page — no
-      # separate tooling needed.
+      # sync_git_synced_pages now runs in its own reusable workflow
+      # (.github/workflows/git-synced-sync.yml), invoked directly from
+      # cleanup-loop.yml so it fires on every scheduled pipeline — even
+      # while this wiki-cleanup job is gated off (e.g. during the
+      # 2026-04-23 → 2026-06-01 catch-up window).
 
       # ════════════════════════════════════════
       #  Deprecated (Sunday only)
