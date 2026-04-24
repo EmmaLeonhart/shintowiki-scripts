@@ -200,8 +200,19 @@ def run_orchestrator(
 
         # Heavy-op pre-pass: each heavy op owns its own save. If any modifies
         # the page, refetch text before the light ops see it.
+        #
+        # Ops may opt into "defer if a prior heavy op already modified this
+        # page in this visit" by setting DEFER_IF_PRIOR_MODIFIED = True.
+        # Used by lower-priority ops (e.g. template_mainspace_usage) to
+        # yield edit budget to higher-priority ops (e.g. history_offload) —
+        # the deferred op will run on the next cycle's visit when the
+        # higher-priority op is a no-op for that page.
         heavy_failure = False
+        prior_heavy_modified = False
         for op in heavy_ops:
+            if prior_heavy_modified and getattr(op, "DEFER_IF_PRIOR_MODIFIED", False):
+                print(f"[{checked}] {title} [{op.NAME}] deferred (prior heavy op modified this page)")
+                continue
             try:
                 modified, msg = op.run(site, page, run_tag, apply)
             except Exception as e:
@@ -220,6 +231,7 @@ def run_orchestrator(
                     heavy_failure = True
                     break
                 edited += 1
+                prior_heavy_modified = True
         if heavy_failure:
             if apply:
                 append_state(path, title)

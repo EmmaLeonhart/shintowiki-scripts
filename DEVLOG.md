@@ -6,6 +6,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-04-24
 
+### Template orchestrator state never landed — checkout SHA stale + rebase bails on add/add
+**Scripts:** `.github/workflows/{mainspace,category,template,miscellaneous}-orchestrator.yml`
+**Status:** Fixed
+
+Symptom: zero `chore(state): update state after Template Orchestrator` commits had ever landed on origin, while mainspace / category / miscellaneous had each landed several. Noticed because the template walk seemed to "restart" every run instead of resuming mid-walk.
+
+Root cause: each orchestrator job in the cleanup-loop chain does its own `actions/checkout@v4`, and the default ref is the SHA that triggered the workflow — NOT the current tip of `main`. So the sequence is:
+1. Cleanup-loop triggers at push SHA X (no `duplicate_qids.state` yet).
+2. Mainspace checks out X, walks ns=0, creates fresh `duplicate_qids.state` + `mainspace_orchestrator.state`, commits, rebases cleanly onto origin (which is still X), pushes. Origin is now Y.
+3. Category checks out X (not Y!), walks ns=14, **also creates a fresh `duplicate_qids.state`** (because it didn't see mainspace's commit), commits, rebases onto Y → `CONFLICT (add/add)` on `duplicate_qids.state` because both sides added the file from scratch. `commit_state.sh`'s rebase step aborts with `WARN: rebase failed; aborting. State will retry next run.` State for this orchestrator is lost.
+4. Template has the same problem.
+
+For category and misc the conflict sometimes resolved into a normal modify/modify and rebase survived, but for template it consistently failed. Template's state had literally never reached origin.
+
+Fix: set `ref: ${{ github.ref_name }}` on `actions/checkout@v4` in all four orchestrator workflows, so each job checks out the tip of `main` at job-start and sees state commits from earlier orchestrator jobs in the same run. `duplicate_qids.state` is then a modify/modify edge for later orchestrators (each one appends its own titles to the existing dict), which git can auto-merge.
+
+The underlying fragility in `commit_state.sh` (rebase-abort-on-first-failure, no handler for add/add on a JSON file) remains — flagged in `todo.md` — but the checkout fix removes the common path that triggers it.
+
+### Template orchestrator: offloading-priority scheduling via `DEFER_IF_PRIOR_MODIFIED`
+**Scripts:** `shinto_miraheze/orchestrators/common.py`, `shinto_miraheze/orchestrators/ops/template_mainspace_usage.py`
+**Status:** Complete
+
+With the new `template_mainspace_usage` heavy op added to the template orchestrator, each visited template could generate up to three edits per visit (history_offload save + template_mainspace_usage save + combined light-op save), burning `--max-edits 100` across ~33 pages instead of the prior ~50. Offloading (the higher-priority work) was getting throttled by categorization on the same page.
+
+Added an opt-in per-op flag `DEFER_IF_PRIOR_MODIFIED = True`. In `common.run_orchestrator`'s heavy-op pre-pass, if an earlier heavy op modified the page in this visit, subsequent heavy ops with this flag set are skipped (printed as `deferred (prior heavy op modified this page)`). Only `template_mainspace_usage` sets the flag.
+
+Effect: `history_offload` always gets first crack at the edit budget. `template_mainspace_usage` runs only on pages where `history_offload` was a no-op (already offloaded in a prior cycle, single-revision-so-skip, etc.) — so categorization fills in opportunistically as the offload backlog drains, without stealing budget from in-progress offload work.
+
 ### Template orchestrator: tag every template as transcluded-in-mainspace or not
 **Scripts:** `shinto_miraheze/orchestrators/ops/template_mainspace_usage.py`, `shinto_miraheze/orchestrators/template_orchestrator.py`, `.github/workflows/template-orchestrator.yml`, `.github/workflows/cleanup-loop.yml`
 **Status:** Complete (shipping in off state pending first observed run; enabled via `enable_template_usage_check: true` in cleanup-loop)
