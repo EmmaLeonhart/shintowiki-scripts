@@ -83,16 +83,34 @@ _NON_LANGUAGE_PREFIXES = frozenset([
     "gadget", "topic", "book", "education", "timedtext", "project",
 ])
 
-# Standalone-line interlang link: allow leading/trailing whitespace and
-# consume the trailing newline so removal collapses the whole line.
+# A line that consists entirely of one or more interlang-style links.
+# Bot-imported pages occasionally pack several links onto a single line
+# without delimiters (e.g.
+# ``[[co:commons:Category:Foo]][[en:Foo]][[ja:フー]][[simple:Foo]]``);
+# the previous single-link-per-line regex left those clusters untouched
+# because each ``]]`` wasn't followed by a newline. The outer pattern
+# captures the whole line (one or more concatenated/whitespace-separated
+# links plus the trailing newline) and we re-scan inside via
+# ``INDIVIDUAL_LINK_RE`` to extract each pair. Lines that mix interlang
+# links with arbitrary content are deliberately not matched — we only
+# consume lines whose entire content is interlang-style links.
 # The prefix is anything that *looks* like a language code (lowercase
 # letters, optional ``-subtag`` parts); we filter sister-project
 # prefixes via ``_NON_LANGUAGE_PREFIXES`` after the match. The 2+ lower
 # bound rules out namespace shorthands like ``[[w:…]]`` while letting
 # longer codes like ``simple`` and ``zh-min-nan`` through.
-INTERLANG_RE = re.compile(
-    r"^[ \t]*\[\[\s*([a-z]{2,}(?:-[a-z0-9]+)*)\s*:\s*([^\]|\n]+?)\s*\]\][ \t]*(?:\n|\Z)",
+INTERLANG_LINE_RE = re.compile(
+    r"^[ \t]*"
+    r"((?:\[\[\s*[a-z]{2,}(?:-[a-z0-9]+)*\s*:\s*[^\]|\n]+?\s*\]\][ \t]*)+)"
+    r"(?:\n|\Z)",
     re.MULTILINE,
+)
+
+# Extracts each ``[[lang:title]]`` pair from a line matched by
+# ``INTERLANG_LINE_RE``. No anchors / multiline — ``finditer`` over the
+# captured group walks every link in order.
+INDIVIDUAL_LINK_RE = re.compile(
+    r"\[\[\s*([a-z]{2,}(?:-[a-z0-9]+)*)\s*:\s*([^\]|\n]+?)\s*\]\]",
 )
 
 # First {{wikidata link|...}} invocation on the page. The params group
@@ -150,21 +168,41 @@ def apply(title: str, text: str):
     if REDIRECT_RE.search(text):
         return None, None
 
-    interlang_matches = list(INTERLANG_RE.finditer(text))
-    # Drop any prefix that isn't a Wikipedia language link — sister-project
-    # interwikis (``wikt:``, ``commons:``, …) and lowercase namespace
-    # prefixes (``category:``, ``image:``) have different semantics.
-    valid = [m for m in interlang_matches if m.group(1).lower() not in _NON_LANGUAGE_PREFIXES]
-    if not valid:
+    line_matches = list(INTERLANG_LINE_RE.finditer(text))
+    if not line_matches:
         return None, None
 
-    new_pairs = [(m.group(1).lower(), m.group(2).strip()) for m in valid]
+    # For each "line of interlang links", extract individual pairs. Drop
+    # any prefix that isn't a Wikipedia language link — sister-project
+    # interwikis (``wikt:``, ``commons:``, …) and lowercase namespace
+    # prefixes (``category:``, ``image:``) have different semantics.
+    # Within a single matched line we may keep some links (non-language
+    # prefixes) and consume others (real language pairs); the line is
+    # rewritten with just the kept links, or removed entirely if none.
+    new_pairs: list[tuple[str, str]] = []
+    replacements: list[tuple[int, int, str]] = []  # (start, end, replacement)
+    for lm in line_matches:
+        inner = lm.group(1)
+        kept_links: list[str] = []
+        for link_match in INDIVIDUAL_LINK_RE.finditer(inner):
+            lang = link_match.group(1).lower()
+            target = link_match.group(2).strip()
+            if lang in _NON_LANGUAGE_PREFIXES:
+                kept_links.append(link_match.group(0))
+            else:
+                new_pairs.append((lang, target))
+        if kept_links:
+            replacements.append((lm.start(), lm.end(), "".join(kept_links) + "\n"))
+        else:
+            replacements.append((lm.start(), lm.end(), ""))
 
-    # Remove the interlang links right-to-left so earlier offsets stay
-    # valid while we mutate.
+    if not new_pairs:
+        return None, None
+
+    # Apply replacements right-to-left so earlier offsets stay valid.
     text_no_il = text
-    for m in reversed(valid):
-        text_no_il = text_no_il[:m.start()] + text_no_il[m.end():]
+    for start, end, repl in reversed(replacements):
+        text_no_il = text_no_il[:start] + repl + text_no_il[end:]
     # Collapse runs of blank lines the removals may have created.
     text_no_il = re.sub(r"\n{3,}", "\n\n", text_no_il)
 
