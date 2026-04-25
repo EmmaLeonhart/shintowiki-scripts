@@ -21,6 +21,7 @@ import os
 import re
 import subprocess
 import tempfile
+import time
 from pathlib import Path
 
 ARCHIVE_OWNER = "EmmaLeonhart"
@@ -143,8 +144,42 @@ def archive_exists(title: str, ns: int) -> bool:
     return (root / archive_relpath(title, ns)).is_file()
 
 
+def _recover_repo_state(root: Path) -> None:
+    """Bring the local clone back to a clean state on the current remote tip.
+
+    A previous failed push or interrupted rebase can leave the working tree
+    in a half-rebased state ("you are currently rebasing"), or stack
+    unpushed local commits that conflict with concurrent pushes from other
+    jobs. Without recovery, every subsequent ``write_and_commit`` call
+    inherits the broken state and raises — and because ``_clone_dir`` is
+    cached at module level, the failure persists for the whole orchestrator
+    run, which is exactly what was silently disabling history_offload's
+    delete+recreate stage. Best-effort: each command tolerates "nothing to
+    do" exits.
+    """
+    _run(["git", "rebase", "--abort"], cwd=root, check=False)
+    _run(["git", "merge", "--abort"], cwd=root, check=False)
+    _run(["git", "reset", "--hard", "HEAD"], cwd=root, check=False)
+    _run(["git", "fetch", "origin"], cwd=root, check=False)
+    # Determine the default branch name the remote uses (HEAD symref) so we
+    # don't hard-code "main"/"master" — fall back to "HEAD" if the symref
+    # query fails.
+    sym = _run(
+        ["git", "symbolic-ref", "refs/remotes/origin/HEAD"],
+        cwd=root, check=False,
+    )
+    branch_ref = sym.stdout.strip() or "refs/remotes/origin/HEAD"
+    _run(["git", "reset", "--hard", branch_ref], cwd=root, check=False)
+
+
 def write_and_commit(title: str, xml_text: str, run_tag: str, ns: int) -> bool:
-    """Write the XML, commit, and push. Returns True on a new commit, False if nothing changed."""
+    """Write the XML, commit, and push. Returns True on a new commit, False if nothing changed.
+
+    Push failures retry with state recovery between attempts so that one
+    transient failure (concurrent push from another orchestrator job, brief
+    network blip, etc.) doesn't poison every subsequent call for the rest
+    of the run.
+    """
     root = ensure_clone()
     rel = archive_relpath(title, ns)
     target = root / rel
@@ -158,7 +193,41 @@ def write_and_commit(title: str, xml_text: str, run_tag: str, ns: int) -> bool:
 
     message = f"archive: {title} {run_tag}"
     _run(["git", "commit", "-m", message], cwd=root)
-    # Best-effort rebase to absorb concurrent pushes, then push.
-    _run(["git", "pull", "--rebase", "origin", "HEAD"], cwd=root, check=False)
-    _run(["git", "push", "origin", "HEAD"], cwd=root)
-    return True
+
+    # Best-effort rebase + push, with retry. Each retry recovers repo state
+    # first so a half-rebased tree from the prior attempt doesn't turn a
+    # transient failure into a permanent one.
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        pull = _run(["git", "pull", "--rebase", "origin", "HEAD"], cwd=root, check=False)
+        if pull.returncode != 0:
+            print(f"  archive_repo: pull --rebase failed (attempt {attempt}): {pull.stderr.strip()[:200]}")
+            _recover_repo_state(root)
+            # State has been reset; the local commit is gone. Re-stage the
+            # file and re-commit so we still have something to push.
+            target.write_text(xml_text, encoding="utf-8")
+            _run(["git", "add", rel], cwd=root)
+            re_status = _run(["git", "diff", "--cached", "--quiet"], cwd=root, check=False)
+            if re_status.returncode == 0:
+                # Already on remote — somebody else archived this title.
+                return False
+            _run(["git", "commit", "-m", message], cwd=root)
+        push = _run(["git", "push", "origin", "HEAD"], cwd=root, check=False)
+        if push.returncode == 0:
+            return True
+        last_error = RuntimeError(
+            f"git push failed (attempt {attempt}): {push.stderr.strip()[:200]}"
+        )
+        print(f"  archive_repo: {last_error}")
+        time.sleep(2)
+        _recover_repo_state(root)
+        target.write_text(xml_text, encoding="utf-8")
+        _run(["git", "add", rel], cwd=root)
+        re_status = _run(["git", "diff", "--cached", "--quiet"], cwd=root, check=False)
+        if re_status.returncode == 0:
+            return False
+        _run(["git", "commit", "-m", message], cwd=root)
+    # Give up — but leave the clone in a clean state so the NEXT page's
+    # call doesn't inherit a poisoned working tree.
+    _recover_repo_state(root)
+    raise last_error or RuntimeError("git push failed after retries")
