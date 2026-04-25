@@ -120,3 +120,4 @@ __NOTOC__
 __noeditsection__
 <!--The column tag you see while using the source editor is needed to close the right column. You also have to include the Main Page into a general wiki category, like the Sitename. __Notoc__ and __Noeditsection__ are used to hide the Table of Contents and the Edit pencil button in the section titles, as the Main Page has a different design from the normal content pages.-->
 [[Category:Git synced pages]]
+[[Category:Pages without wikidata]]
