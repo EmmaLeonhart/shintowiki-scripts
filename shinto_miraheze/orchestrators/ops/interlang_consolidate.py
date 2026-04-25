@@ -56,26 +56,37 @@ NAMESPACES = (
     421, 829, 861, 863,
 )
 
-# Interlanguage-link prefixes we will consolidate. Deliberately excludes
-# non-language interwiki prefixes like ``d:`` (Wikidata), ``c:`` (Commons),
-# ``wikt:`` (Wiktionary), ``m:`` (Meta) — those mean something different and
-# must not be folded into the wikidata link template.
-_LANGUAGE_CODES = frozenset([
-    "en", "ja", "zh", "ko", "vi", "th", "ar", "de", "fr", "es", "it",
-    "pt", "nl", "pl", "ru", "uk", "tr", "id", "ms", "fi", "sv", "no",
-    "nb", "nn", "da", "cs", "hu", "el", "he", "hi", "bn", "fa", "ml",
-    "ta", "te", "mr", "sa", "bo", "mn", "my", "km", "lo", "ka", "eu",
-    "gl", "ca", "hr", "sr", "sl", "mk", "bg", "lv", "lt", "et", "sk",
-    "ro", "is", "cy", "ga", "la", "be", "kk", "uz", "az", "hy", "eo",
-    "sh", "bs", "simple",
-    "zh-cn", "zh-tw", "zh-hk", "zh-hans", "zh-hant", "zh-yue",
-    "sr-latn", "sr-cyrl",
+# Prefixes that look like an interlanguage link but aren't — sister
+# projects (Wikidata, Commons, Wiktionary, Meta, …), MediaWiki
+# infrastructure, and lowercase namespace prefixes that occasionally
+# appear in legacy wikitext (``[[category:…]]``, ``[[image:…]]``).
+# Single-letter prefixes (``d:``, ``c:``, ``m:``, …) don't need to be
+# listed because the regex already requires 2+ letters.
+_NON_LANGUAGE_PREFIXES = frozenset([
+    # Sister projects
+    "wikt", "wiktionary",
+    "wikipedia", "wikinews", "wikiquote", "wikisource",
+    "wikibooks", "wikiversity", "wikivoyage", "wikispecies",
+    "wikidata", "commons", "meta", "metawiki",
+    "mediawiki", "mw", "outreach", "incubator", "testwiki",
+    # Tooling / infrastructure
+    "phab", "phabricator", "bugzilla", "mediazilla", "wmf",
+    # MediaWiki namespace prefixes in lowercase form
+    # (uppercase forms don't match the regex, which requires [a-z]).
+    "user", "talk", "file", "image", "category", "template",
+    "help", "portal", "media", "special", "draft", "module",
+    "gadget", "topic", "book", "education", "timedtext", "project",
 ])
 
 # Standalone-line interlang link: allow leading/trailing whitespace and
 # consume the trailing newline so removal collapses the whole line.
+# The prefix is anything that *looks* like a language code (lowercase
+# letters, optional ``-subtag`` parts); we filter sister-project
+# prefixes via ``_NON_LANGUAGE_PREFIXES`` after the match. The 2+ lower
+# bound rules out namespace shorthands like ``[[w:…]]`` while letting
+# longer codes like ``simple`` and ``zh-min-nan`` through.
 INTERLANG_RE = re.compile(
-    r"^[ \t]*\[\[\s*([a-z]{2,3}(?:-[a-z]+)*)\s*:\s*([^\]|\n]+?)\s*\]\][ \t]*(?:\n|\Z)",
+    r"^[ \t]*\[\[\s*([a-z]{2,}(?:-[a-z0-9]+)*)\s*:\s*([^\]|\n]+?)\s*\]\][ \t]*(?:\n|\Z)",
     re.MULTILINE,
 )
 
@@ -135,9 +146,10 @@ def apply(title: str, text: str):
         return None, None
 
     interlang_matches = list(INTERLANG_RE.finditer(text))
-    # Drop any prefix that isn't a known language code (interwiki-project
-    # prefixes like ``d:`` have different semantics).
-    valid = [m for m in interlang_matches if m.group(1).lower() in _LANGUAGE_CODES]
+    # Drop any prefix that isn't a Wikipedia language link — sister-project
+    # interwikis (``wikt:``, ``commons:``, …) and lowercase namespace
+    # prefixes (``category:``, ``image:``) have different semantics.
+    valid = [m for m in interlang_matches if m.group(1).lower() not in _NON_LANGUAGE_PREFIXES]
     if not valid:
         return None, None
 
