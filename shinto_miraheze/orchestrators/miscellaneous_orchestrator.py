@@ -67,6 +67,7 @@ from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
     interlang_consolidate,
+    strip_html_comments,
 )
 
 # (namespace_id, state_file_label) — swept in this exact order starting
@@ -85,7 +86,10 @@ MISC_NAMESPACES: list[tuple[int, str]] = [
     (862, "property"),
 ]
 
-OPS = [history_offload, duplicate_qids, interlang_consolidate]
+# strip_html_comments and interlang_consolidate are PRE_HEAVY light ops:
+# they run before history_offload so the cleaned text is what the
+# fandom mirror and XML archive capture.
+OPS = [strip_html_comments, interlang_consolidate, history_offload, duplicate_qids]
 
 STATE_NAME = "misc_orchestrator"
 CURSOR_NAME = "misc_orchestrator_cursor"

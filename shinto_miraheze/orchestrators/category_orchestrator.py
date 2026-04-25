@@ -17,18 +17,23 @@ from shinto_miraheze.orchestrators.ops import (
     interlang_consolidate,
     normalize_category_page,
     remove_legacy_cat_templates,
+    strip_html_comments,
     wikidata_link,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
-# interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
+# strip_html_comments and interlang_consolidate are PRE_HEAVY light ops:
+# they run before history_offload so the cleaned text is what the
+# fandom mirror and XML archive capture. interlang_consolidate is a
+# no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
 # remove_legacy_cat_templates runs before normalize_category_page so the
 # stripped templates don't end up in the normalized output.
 OPS = [
+    strip_html_comments,
+    interlang_consolidate,
     history_offload,
     duplicate_qids,
-    interlang_consolidate,
     remove_legacy_cat_templates,
     normalize_category_page,
     wikidata_link,

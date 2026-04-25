@@ -31,6 +31,13 @@ HANDLES_SAVE = True and instead exposes:
         # orchestrator refetches page text before the regular apply() ops run.
 
 Heavy ops run in a pre-pass, before any regular apply() ops on the same page.
+
+A light op may also set PRE_HEAVY = True to opt into running BEFORE the
+heavy-op pre-pass. All PRE_HEAVY light ops are run first as a group with
+a single combined save; the page is then refetched and heavy ops + the
+remaining light ops run as normal. Used for cleanups (interlang
+consolidation, comment stripping) that should be reflected in
+history_offload's fandom mirror and XML archive snapshots.
 """
 
 import io
@@ -184,7 +191,9 @@ def run_orchestrator(
         return 0, True
 
     heavy_ops = [op for op in applicable_ops if getattr(op, "HANDLES_SAVE", False)]
-    light_ops = [op for op in applicable_ops if not getattr(op, "HANDLES_SAVE", False)]
+    all_light_ops = [op for op in applicable_ops if not getattr(op, "HANDLES_SAVE", False)]
+    pre_heavy_ops = [op for op in all_light_ops if getattr(op, "PRE_HEAVY", False)]
+    light_ops = [op for op in all_light_ops if not getattr(op, "PRE_HEAVY", False)]
 
     print(f"Ops for {ns_label}: {', '.join(op.NAME for op in applicable_ops)}")
 
@@ -266,6 +275,54 @@ def run_orchestrator(
         # was actually safe on redirects or not. Per-op refusal is clearer
         # and leaves room for future ops that legitimately want to edit
         # redirects (e.g. fix double redirects).
+
+        # Pre-heavy phase: run light ops marked PRE_HEAVY=True with a
+        # single combined save, BEFORE any heavy op gets to see the page.
+        # This is what makes cleanups (interlang consolidation, comment
+        # stripping) propagate into history_offload's fandom mirror and
+        # XML archive snapshots in the same cycle, instead of having to
+        # wait for a follow-up cycle.
+        pre_heavy_failed = False
+        if pre_heavy_ops:
+            candidate = text
+            pre_summaries: list[str] = []
+            for op in pre_heavy_ops:
+                try:
+                    new, fragment = op.apply(title, candidate)
+                except Exception as e:
+                    print(f"[{checked}] {title} pre-heavy op {op.NAME} ERROR: {e}")
+                    errors += 1
+                    continue
+                if new is not None and new != candidate:
+                    candidate = new
+                    if fragment:
+                        pre_summaries.append(fragment)
+            if candidate != text:
+                if not apply:
+                    print(f"[{checked}] {title} DRY RUN (pre-heavy): {'; '.join(pre_summaries) or '(no summary)'}")
+                    would_edit += 1
+                    continue
+                summary = "Bot: " + "; ".join(pre_summaries) + f" {run_tag}"
+                try:
+                    page.save(candidate, summary=summary)
+                    edited += 1
+                    print(f"[{checked}] {title} EDITED (pre-heavy): {'; '.join(pre_summaries)}")
+                    time.sleep(THROTTLE)
+                except Exception as e:
+                    print(f"[{checked}] {title} ERROR saving pre-heavy: {e}")
+                    errors += 1
+                    pre_heavy_failed = True
+                if not pre_heavy_failed:
+                    try:
+                        text = page.text()
+                    except Exception as e:
+                        print(f"[{checked}] {title} refetch ERROR after pre-heavy: {e}")
+                        errors += 1
+                        pre_heavy_failed = True
+        if pre_heavy_failed:
+            if apply:
+                _mark_done(title)
+            continue
 
         # Heavy-op pre-pass: each heavy op owns its own save. If any modifies
         # the page, refetch text before the light ops see it.
