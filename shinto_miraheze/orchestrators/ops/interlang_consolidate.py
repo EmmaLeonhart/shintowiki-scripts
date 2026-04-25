@@ -56,6 +56,10 @@ NAMESPACES = (
     421, 829, 861, 863,
 )
 
+# Run before heavy ops so the consolidated text (no stranded interwikis)
+# is what fandom_mirror and the XML archive capture inside history_offload.
+PRE_HEAVY = True
+
 # Prefixes that look like an interlanguage link but aren't — sister
 # projects (Wikidata, Commons, Wiktionary, Meta, …), MediaWiki
 # infrastructure, and lowercase namespace prefixes that occasionally

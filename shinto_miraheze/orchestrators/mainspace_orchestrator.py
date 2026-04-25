@@ -25,23 +25,28 @@ from shinto_miraheze.orchestrators.ops import (
     remove_defaultsort,
     shikinaisha_talk,
     strip_char_count_cats,
+    strip_html_comments,
     untranslated_japanese,
     wikidata_link,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
 # ENABLE_HISTORY_OFFLOAD=1 is set in the environment.
-# interlang_consolidate is a no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
+# strip_html_comments and interlang_consolidate are PRE_HEAVY light ops:
+# they run before history_offload so the cleaned text is what the
+# fandom mirror and XML archive capture. interlang_consolidate is a
+# no-op unless ENABLE_INTERLANG_CONSOLIDATE=1.
 # shikinaisha_talk is also a heavy op — it edits the corresponding talk
 # page when the visited mainspace page is in the shikinaisha-generated
 # category; returns no-op for every other page.
 OPS = [
+    strip_html_comments,
+    interlang_consolidate,
     history_offload,
     shikinaisha_talk,
     duplicate_qids,
     remove_defaultsort,
     deleted_qids_in_ill,
-    interlang_consolidate,
     untranslated_japanese,
     strip_char_count_cats,
     wikidata_link,
