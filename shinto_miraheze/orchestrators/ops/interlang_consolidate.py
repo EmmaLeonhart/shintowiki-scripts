@@ -64,11 +64,12 @@ NAMESPACES = (
 # listed because the regex already requires 2+ letters.
 _NON_LANGUAGE_PREFIXES = frozenset([
     # Sister projects
-    "wikt", "wiktionary",
-    "wikipedia", "wikinews", "wikiquote", "wikisource",
-    "wikibooks", "wikiversity", "wikivoyage", "wikispecies",
-    "wikidata", "commons", "meta", "metawiki",
-    "mediawiki", "mw", "outreach", "incubator", "testwiki",
+    # all of these are legit so don't exclude them they do not belong as random links scattered on the pages
+    #"wikt", "wiktionary",
+    #"wikipedia", "wikinews", "wikiquote", "wikisource",
+    #"wikibooks", "wikiversity", "wikivoyage", "wikispecies",
+    #"wikidata", "commons", "meta", "metawiki",
+    #"mediawiki", "mw", "outreach", "incubator", "testwiki",
     # Tooling / infrastructure
     "phab", "phabricator", "bugzilla", "mediazilla", "wmf",
     # MediaWiki namespace prefixes in lowercase form
