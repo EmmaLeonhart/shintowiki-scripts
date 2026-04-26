@@ -1,6 +1,3 @@
-<!--interwikis from wikidata-->[[af:Metaalaap (astrologie)]][[cdo:Gĕng-sĭng]][[de:Metall-Affe]][[en:Metal Monkey]][[fr:Singe de métal]][[hak:Kâng-sṳ̂n]][[ja:庚申]][[ko:경신]][[vi:Canh Thân]][[za:Gengsaen]][[zh-min-nan:Keng-sin]][[zh-yue:庚申]][[zh:庚申]]
-<!--interwikis from wikidata-->[[af:Metaalaap (astrologie)]][[cdo:Gĕng-sĭng]][[de:Metall-Affe]][[en:Metal Monkey]][[fr:Singe de métal]][[hak:Kâng-sṳ̂n]][[ja:庚申]][[ko:경신]][[vi:Canh Thân]][[za:Gengsaen]][[zh-min-nan:Keng-sin]][[zh-yue:庚申]][[zh:庚申]]
-<!--interwikis from wikidata-->[[af:Metaalaap (astrologie)]][[cdo:Gĕng-sĭng]][[de:Metall-Affe]][[en:Metal Monkey]][[fr:Singe de métal]][[hak:Kâng-sṳ̂n]][[ja:庚申]][[ko:경신]][[vi:Canh Thân]][[za:Gengsaen]][[zh-min-nan:Keng-sin]][[zh-yue:庚申]][[zh:庚申]]
 
 {{infobox Chinese|l=Yang Metal Monkey|kanji=庚申|romaji=kanoe saru|onyomi=kōshin|p=gēngshēn|w=keng-shen|mi=kɤŋ⁵³ ʂən|y=geng1 san1|j=geng1 san1|ci=kɪŋ ʂɐn|mc=kæŋ ʂin|oc-bs=kˤraŋ ʂin|qq=}}
 {{otheruses|Sexagenary cycle|日本人の信仰対象|庚申信仰|qq=}}
@@ -8,9 +5,9 @@
 Might be worth moving to or merging with {{ill|Kōshin|ja|こうしん|12=simple|13=User:Immanuelle/Kōshin|ja_comment=jawiki link invalid}}
 
 {{Sexagenary cycle|qq=}}
-'''Yang Metal Monkey also known as  Kōshin''' (庚申; かのえさる、こうきんのさる、こうしん) is one of the {{ill|Sexagenary cycle|en|Sexagenary cycle|WD=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yang Metal Monkey also known as  Kōshin''' (庚申; かのえさる、こうきんのさる、こうしん) is one of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 57th combination in the Sexagenary cycle, preceded by {{ill|Kimi|ja|1=Yin Earth Goat|2=ja|己未|12=simple|13=User:Immanuelle/Kimi|ja_comment=jawiki link invalid}} and followed by {{ill|Shinyuu|ja|1=Yin Metal Rooster|2=ja|辛酉|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang Five Elements|ja|陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang Five Elements|ja_comment=jawiki redirects to 陰陽五行思想|1=Yin-Yang and Wuxing Theory|comment=changed title based on wikidata|WD=Q11265234}}, the stem {{ill|Geng|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|1=Kanoe (庚)|12=simple|13=User:Immanuelle/Geng|13=User:Immanuelle/Kanoe (庚)|qq=}} of the {{ill|Heavenly Stems|en|Heavenly Stems|WD=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents Yang Metal, and the branch {{ill|Monkey (zodiac)|en|Monkey (zodiac)|WD=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}} of the {{ill|Earthly Branches|en|Earthly Branches|WD=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} also represents Yang Metal, a state referred to as {{ill|Bihwa|ja|五行思想#比和（ひわ）|1=Wuxing (Chinese philosophy)|1=Wuxing (Chinese philosophy)#Harmonious Relationship (比和)|2=ja|3=五行思想#比和（ひわ）|lt=Harmonious Relationship (Five Elements)|qq=Bihwa|lt_ja=比和|12=simple|13=User:Immanuelle/Bihwa|13=User:Immanuelle/比和|comment=changed title based on wikidata|WD=Q218652}}.
+It is the 57th combination in the Sexagenary cycle, preceded by {{ill|Kimi|ja|1=Yin Earth Goat|2=ja|己未|12=simple|13=User:Immanuelle/Kimi|ja_comment=jawiki link invalid}} and followed by {{ill|Shinyuu|ja|1=Yin Metal Rooster|2=ja|辛酉|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang Five Elements|ja|陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang Five Elements|ja_comment=jawiki redirects to 陰陽五行思想|1=Yin-Yang and Wuxing Theory|comment=changed title based on wikidata|qid=Q11265234}}, the stem {{ill|Geng|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|1=Kanoe (庚)|12=simple|13=User:Immanuelle/Geng|13=User:Immanuelle/Kanoe (庚)|qq=}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents Yang Metal, and the branch {{ill|Monkey (zodiac)|en|Monkey (zodiac)|qid=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} also represents Yang Metal, a state referred to as {{ill|Bihwa|ja|五行思想#比和（ひわ）|1=Wuxing (Chinese philosophy)|1=Wuxing (Chinese philosophy)#Harmonious Relationship (比和)|2=ja|3=五行思想#比和（ひわ）|lt=Harmonious Relationship (Five Elements)|qq=Bihwa|lt_ja=比和|12=simple|13=User:Immanuelle/Bihwa|13=User:Immanuelle/比和|comment=changed title based on wikidata|qid=Q218652}}.
 
 ==Pronunciation==
 * English: Yang Metal Monkey (庚申)
@@ -24,61 +21,61 @@ It is the 57th combination in the Sexagenary cycle, preceded by {{ill|Kimi|ja|1=
 ** Vietnamese (Hán-Việt): Canh Thân
 
 == Years of Yang Metal Monkey ==
-{{ill|Common Era|en|Common Era|WD=Q208141|lt=Common Era|1=Common Era}} and {{ill|Japanese imperial year|en|Japanese imperial year|WD=Q1209728|lt=Imperial Era|1=Japanese imperial year}} designate years that are multiples of 60 as {{ill|Year|en|Year|WD=Q577|lt=Year|1=Year}} of Kōshin.
+{{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} and {{ill|Japanese imperial year|en|Japanese imperial year|qid=Q1209728|lt=Imperial Era|1=Japanese imperial year}} designate years that are multiples of 60 as {{ill|Year|en|Year|qid=Q577|lt=Year|1=Year}} of Kōshin.
 
 === Nature and Era Change ===
-Because both the heavenly stem and earthly branch of Kōshin are of {{ill|Metal|en|Metal|WD=Q11426|lt=Metal|1=Metal}} nature, it was believed that the metal energy pervading the universe in a Kōshin year or day would render human hearts cold and unfeeling. The following combination, {{ill|Shinyuu|ja|1=Yin Metal Rooster|2=ja|辛酉|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}, also being metal in nature—with Xin being of Yin energy—was thought to intensify this coldness. Consequently, Kōshin and Shinyuu were considered harbingers of political upheaval, and to avert such changes it was not uncommon to change eras for two consecutive years. For example, this occurred in the first years of {{ill|Man'en|en|Man'en|WD=Q1193862|lt=Man'en|1=Man'en}} ({{ill|1860|en|1860|WD=Q7691|lt=1860|1=1860}}) and {{ill|Bunkyū|en|Bunkyū|WD=Q730266|lt=Bunkyu|1=Bunkyū}} ({{ill|1861|en|1861|WD=Q7693|lt=1861|1=1861}}).
+Because both the heavenly stem and earthly branch of Kōshin are of {{ill|Metal|en|Metal|qid=Q11426|lt=Metal|1=Metal}} nature, it was believed that the metal energy pervading the universe in a Kōshin year or day would render human hearts cold and unfeeling. The following combination, {{ill|Shinyuu|ja|1=Yin Metal Rooster|2=ja|辛酉|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}, also being metal in nature—with Xin being of Yin energy—was thought to intensify this coldness. Consequently, Kōshin and Shinyuu were considered harbingers of political upheaval, and to avert such changes it was not uncommon to change eras for two consecutive years. For example, this occurred in the first years of {{ill|Man'en|en|Man'en|qid=Q1193862|lt=Man'en|1=Man'en}} ({{ill|1860|en|1860|qid=Q7691|lt=1860|1=1860}}) and {{ill|Bunkyū|en|Bunkyū|qid=Q730266|lt=Bunkyu|1=Bunkyū}} ({{ill|1861|en|1861|qid=Q7693|lt=1861|1=1861}}).
 
 {| class="wikitable"
 |+ '''Kōshin Years'''
 |-
-! {{ill|1st millennium|en|1st millennium|WD=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|WD=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|WD=Q26224|lt=3rd Millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
 |
-* {{ill|AD 60|en|AD 60|WD=Q24927|lt=60 AD|1=AD 60}}
-* {{ill|AD 120|en|AD 120|WD=Q23688|lt=120 AD|1=AD 120}}
-* {{ill|180|en|180|WD=Q30884|lt=180 AD|1=180}}
-* {{ill|240|en|240|WD=Q30032|lt=240 AD|1=240}}
-* {{ill|300|en|300|WD=Q25641|lt=300 AD|1=300}}
-* {{ill|AD 360|en|AD 360|WD=Q32458|lt=360 AD|1=AD 360}}
-* {{ill|AD 420|en|AD 420|WD=Q32230|lt=420 AD|1=AD 420}}
-* {{ill|480|en|480|WD=Q30329|lt=480 AD|1=480}}
-* {{ill|540|en|540|WD=Q30900|lt=540 AD|1=540}}
-* {{ill|600|en|600|WD=Q25586|lt=600 AD|1=600}}
-* {{ill|660|en|660|WD=Q30308|lt=660 AD|1=660}}
-* {{ill|720|en|720|WD=Q23539|lt=720 AD|1=720}}
-* {{ill|780|en|780|WD=Q30519|lt=780 AD|1=780}}
-* {{ill|840|en|840|WD=Q29936|lt=840 AD|1=840}}
-* {{ill|900|en|900|WD=Q23460|lt=900 AD|1=900}}
-* {{ill|960|en|960|WD=Q23705|lt=960 AD|1=960}}
+* {{ill|AD 60|en|AD 60|qid=Q24927|lt=60 AD|1=AD 60}}
+* {{ill|AD 120|en|AD 120|qid=Q23688|lt=120 AD|1=AD 120}}
+* {{ill|180|en|180|qid=Q30884|lt=180 AD|1=180}}
+* {{ill|240|en|240|qid=Q30032|lt=240 AD|1=240}}
+* {{ill|300|en|300|qid=Q25641|lt=300 AD|1=300}}
+* {{ill|AD 360|en|AD 360|qid=Q32458|lt=360 AD|1=AD 360}}
+* {{ill|AD 420|en|AD 420|qid=Q32230|lt=420 AD|1=AD 420}}
+* {{ill|480|en|480|qid=Q30329|lt=480 AD|1=480}}
+* {{ill|540|en|540|qid=Q30900|lt=540 AD|1=540}}
+* {{ill|600|en|600|qid=Q25586|lt=600 AD|1=600}}
+* {{ill|660|en|660|qid=Q30308|lt=660 AD|1=660}}
+* {{ill|720|en|720|qid=Q23539|lt=720 AD|1=720}}
+* {{ill|780|en|780|qid=Q30519|lt=780 AD|1=780}}
+* {{ill|840|en|840|qid=Q29936|lt=840 AD|1=840}}
+* {{ill|900|en|900|qid=Q23460|lt=900 AD|1=900}}
+* {{ill|960|en|960|qid=Q23705|lt=960 AD|1=960}}
 |
-* {{ill|1020|en|1020|WD=Q19255|lt=1020 AD|1=1020}}
-* {{ill|1080|en|1080|WD=Q19448|lt=1080 AD|1=1080}}
-* {{ill|1140|en|1140|WD=Q19611|lt=1140 AD|1=1140}}
-* {{ill|1200|en|1200|WD=Q5224|lt=1200 AD|1=1200}}
-* {{ill|1260|en|1260|WD=Q5508|lt=1260 AD|1=1260}}
-* {{ill|1320|en|1320|WD=Q5768|lt=1320 AD|1=1320}}
-* {{ill|1380|en|1380|WD=Q6327|lt=1380 AD|1=1380}}
-* {{ill|1440|en|1440|WD=Q6384|lt=1440 AD|1=1440}}
-* {{ill|1500|en|1500|WD=Q6126|lt=1500 AD|1=1500}}
-* {{ill|1560|en|1560|WD=Q6613|lt=1560 AD|1=1560}}
-* {{ill|1620|en|1620|WD=Q6810|lt=1620 AD|1=1620}}
-* {{ill|1680|en|1680|WD=Q7642|lt=1680 AD|1=1680}}
-* {{ill|1740|en|1740|WD=Q7006|lt=1740 AD|1=1740}}
-* {{ill|1800|en|1800|WD=Q6875|lt=1800 AD|1=1800}}
-* {{ill|1860|en|1860|WD=Q7691|lt=1860 AD|1=1860}}
-* {{ill|1920|en|1920|WD=Q2155|lt=1920 AD|1=1920}}
-* {{ill|1980|en|1980|WD=Q2439|lt=1980 AD|1=1980}}
+* {{ill|1020|en|1020|qid=Q19255|lt=1020 AD|1=1020}}
+* {{ill|1080|en|1080|qid=Q19448|lt=1080 AD|1=1080}}
+* {{ill|1140|en|1140|qid=Q19611|lt=1140 AD|1=1140}}
+* {{ill|1200|en|1200|qid=Q5224|lt=1200 AD|1=1200}}
+* {{ill|1260|en|1260|qid=Q5508|lt=1260 AD|1=1260}}
+* {{ill|1320|en|1320|qid=Q5768|lt=1320 AD|1=1320}}
+* {{ill|1380|en|1380|qid=Q6327|lt=1380 AD|1=1380}}
+* {{ill|1440|en|1440|qid=Q6384|lt=1440 AD|1=1440}}
+* {{ill|1500|en|1500|qid=Q6126|lt=1500 AD|1=1500}}
+* {{ill|1560|en|1560|qid=Q6613|lt=1560 AD|1=1560}}
+* {{ill|1620|en|1620|qid=Q6810|lt=1620 AD|1=1620}}
+* {{ill|1680|en|1680|qid=Q7642|lt=1680 AD|1=1680}}
+* {{ill|1740|en|1740|qid=Q7006|lt=1740 AD|1=1740}}
+* {{ill|1800|en|1800|qid=Q6875|lt=1800 AD|1=1800}}
+* {{ill|1860|en|1860|qid=Q7691|lt=1860 AD|1=1860}}
+* {{ill|1920|en|1920|qid=Q2155|lt=1920 AD|1=1920}}
+* {{ill|1980|en|1980|qid=Q2439|lt=1980 AD|1=1980}}
 |
-* {{ill|2040 AD|ja|2040年|12=simple|13=User:Immanuelle/2040 AD|comment=changed title based on wikidata|1=2040|WD=Q12108}}
-* {{ill|2100 AD|ja|2100年|12=simple|13=User:Immanuelle/2100 AD|ja_comment=jawiki redirects to 2100年代|comment=changed title based on wikidata|1=2100s|WD=Q1209304}}
-* {{ill|2160 AD|ja|2160年|12=simple|13=User:Immanuelle/2160 AD|ja_comment=jawiki redirects to 22世紀|1=22nd century|comment=changed title based on wikidata|WD=Q11177}}
-* {{ill|2220 AD|ja|2220年|12=simple|13=User:Immanuelle/2220 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|comment=changed title based on wikidata|WD=Q49832}}
-* {{ill|2280 AD|ja|2280年|12=simple|13=User:Immanuelle/2280 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|comment=changed title based on wikidata|WD=Q49832}}
-* {{ill|2340 AD|ja|2340年|12=simple|13=User:Immanuelle/2340 AD|ja_comment=jawiki redirects to 24世紀|1=24th century|comment=changed title based on wikidata|WD=Q49838}}
-* {{ill|2400 AD|ja|2400年|12=simple|13=User:Immanuelle/2400 AD|ja_comment=jawiki redirects to 24世紀|1=24th century|comment=changed title based on wikidata|WD=Q49838}}
+* {{ill|2040 AD|ja|2040年|12=simple|13=User:Immanuelle/2040 AD|comment=changed title based on wikidata|1=2040|qid=Q12108}}
+* {{ill|2100 AD|ja|2100年|12=simple|13=User:Immanuelle/2100 AD|ja_comment=jawiki redirects to 2100年代|comment=changed title based on wikidata|1=2100s|qid=Q1209304}}
+* {{ill|2160 AD|ja|2160年|12=simple|13=User:Immanuelle/2160 AD|ja_comment=jawiki redirects to 22世紀|1=22nd century|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|2220 AD|ja|2220年|12=simple|13=User:Immanuelle/2220 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|2280 AD|ja|2280年|12=simple|13=User:Immanuelle/2280 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|2340 AD|ja|2340年|12=simple|13=User:Immanuelle/2340 AD|ja_comment=jawiki redirects to 24世紀|1=24th century|comment=changed title based on wikidata|qid=Q49838}}
+* {{ill|2400 AD|ja|2400年|12=simple|13=User:Immanuelle/2400 AD|ja_comment=jawiki redirects to 24世紀|1=24th century|comment=changed title based on wikidata|qid=Q49838}}
 * {{ill|2460 AD|ja|2460年|12=simple|13=User:Immanuelle/2460 AD|ja_comment=jawiki link invalid}}
-* {{ill|2520 AD|ja|2520年|12=simple|13=User:Immanuelle/2520 AD|ja_comment=jawiki redirects to 3千年紀|1=3rd millennium|comment=changed title based on wikidata|WD=Q26224}}
+* {{ill|2520 AD|ja|2520年|12=simple|13=User:Immanuelle/2520 AD|ja_comment=jawiki redirects to 3千年紀|1=3rd millennium|comment=changed title based on wikidata|qid=Q26224}}
 * {{ill|2580 AD|ja|2580年|12=simple|13=User:Immanuelle/2580 AD|ja_comment=jawiki link invalid}}
 * {{ill|2640 AD|ja|2640年|12=simple|13=User:Immanuelle/2640 AD|ja_comment=jawiki link invalid}}
 * {{ill|2700 AD|ja|2700年|12=simple|13=User:Immanuelle/2700 AD|ja_comment=jawiki link invalid}}
@@ -86,17 +83,17 @@ Because both the heavenly stem and earthly branch of Kōshin are of {{ill|Metal|
 * {{ill|2820 AD|ja|2820年|12=simple|13=User:Immanuelle/2820 AD|ja_comment=jawiki link invalid}}
 * {{ill|2880 AD|ja|2880年|12=simple|13=User:Immanuelle/2880 AD|ja_comment=jawiki link invalid}}
 * {{ill|2940 AD|ja|2940年|12=simple|13=User:Immanuelle/2940 AD|ja_comment=jawiki link invalid}}
-* {{ill|3000 AD|ja|3000年|12=simple|13=User:Immanuelle/3000 AD|ja_comment=jawiki redirects to 3千年紀|comment=changed title based on wikidata|1=3rd millennium|WD=Q26224}}
+* {{ill|3000 AD|ja|3000年|12=simple|13=User:Immanuelle/3000 AD|ja_comment=jawiki redirects to 3千年紀|comment=changed title based on wikidata|1=3rd millennium|qid=Q26224}}
 |}
 
 == Months of Yang Metal Monkey ==
-In years where the last digit of the Western Calendar year is 3 or 8 (when the heavenly stem is {{ill|Guǐ|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|1=Mizunoto (癸)|12=simple|13=User:Immanuelle/Guǐ|13=User:Immanuelle/Mizunoto (癸)|qq=}} or {{ill|Wu|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|1=Tsuchinoe (戊)|12=simple|13=User:Immanuelle/Wu|13=User:Immanuelle/Tsuchinoe (戊)|qq=}}), the month of {{ill|July|en|July|WD=Q121|lt=July|1=July}} becomes the Kōshin {{ill|Month|en|Month|WD=Q5151|lt=Month (Calendar)|1=Month}}. Note that here the month may refer either to a month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|1=Japanese Lunisolar Calendar|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Japanese Lunisolar Calendar|13=User:Immanuelle/Japanese Lunisolar Calendar|qq=}} or to a {{ill|Solar term|en|Solar term|WD=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Liqiu|en|Liqiu|WD=Q1147421|lt=Start of Autumn|1=Liqiu}} until the day before {{ill|Bailu (solar term)|en|Bailu (solar term)|WD=Q1191003|lt=White Dew|1=Bailu (solar term)}}).
+In years where the last digit of the Western Calendar year is 3 or 8 (when the heavenly stem is {{ill|Guǐ|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|1=Mizunoto (癸)|12=simple|13=User:Immanuelle/Guǐ|13=User:Immanuelle/Mizunoto (癸)|qq=}} or {{ill|Wu|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|1=Tsuchinoe (戊)|12=simple|13=User:Immanuelle/Wu|13=User:Immanuelle/Tsuchinoe (戊)|qq=}}), the month of {{ill|July|en|July|qid=Q121|lt=July|1=July}} becomes the Kōshin {{ill|Month|en|Month|qid=Q5151|lt=Month (Calendar)|1=Month}}. Note that here the month may refer either to a month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|1=Japanese Lunisolar Calendar|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Japanese Lunisolar Calendar|13=User:Immanuelle/Japanese Lunisolar Calendar|qq=}} or to a {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Liqiu|en|Liqiu|qid=Q1147421|lt=Start of Autumn|1=Liqiu}} until the day before {{ill|Bailu (solar term)|en|Bailu (solar term)|qid=Q1191003|lt=White Dew|1=Bailu (solar term)}}).
 
 == Days of Yang Metal Monkey ==
 
-On Kōshin days, a Kōshin Vigil ({{ill|Kōshin Vigil|ja|庚申待|12=simple|13=User:Immanuelle/Kōshin Vigil|1=Kōshin-machi|comment=changed title based on wikidata|WD=Q11486004}}, also known as  {{ill|Kōshin Lecture|ja|庚申講|12=simple|13=User:Immanuelle/Kōshin Lecture|ja_comment=jawiki redirects to 庚申待|1=Kōshin-machi|comment=changed title based on wikidata|WD=Q11486004}}) was held. {{main|{{ill|Kōshin|en|Kōshin|WD=Q3082157|lt=Kōshin Faith|1=Kōshin}}|qq=}}
+On Kōshin days, a Kōshin Vigil ({{ill|Kōshin Vigil|ja|庚申待|12=simple|13=User:Immanuelle/Kōshin Vigil|1=Kōshin-machi|comment=changed title based on wikidata|qid=Q11486004}}, also known as  {{ill|Kōshin Lecture|ja|庚申講|12=simple|13=User:Immanuelle/Kōshin Lecture|ja_comment=jawiki redirects to 庚申待|1=Kōshin-machi|comment=changed title based on wikidata|qid=Q11486004}}) was held. {{main|{{ill|Kōshin|en|Kōshin|qid=Q3082157|lt=Kōshin Faith|1=Kōshin}}|qq=}}
 
-A Kōshin day is also the {{ill|Ennichi|en|Ennichi|WD=Q985655|lt=Festival Day|1=Ennichi}} of {{ill|Śakra (Buddhism)|en|Śakra (Buddhism)|WD=Q1444745|lt=Taishakuten|1=Śakra (Buddhism)}}.
+A Kōshin day is also the {{ill|Ennichi|en|Ennichi|qid=Q985655|lt=Festival Day|1=Ennichi}} of {{ill|Śakra (Buddhism)|en|Śakra (Buddhism)|qid=Q1444745|lt=Taishakuten|1=Śakra (Buddhism)}}.
 
 === Choosing a Day ===
 Kōshin days occur on the sixth day (excluding intercalary days {{ill|Intercalary Day|ja|間日|12=simple|13=User:Immanuelle/Intercalary Day|ja_comment=jawiki link invalid}}) of the {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle/Hassen|qq=}} cycle.
@@ -112,23 +109,23 @@ Kōshin days occur on the sixth day (excluding intercalary days {{ill|Intercalar
 {{more footnotes|date=August 2020|qq=}}
 {{Italic title|reason=|qq=}}
 
-{{nihongo|'''''Kōshin'''''|庚申|1=Kōshin|lt=Yang Metal Monkey|2=ja|3=庚申|4=zh|5=庚申|6=ko|7=경신|lt_ko=경신|8=fr|9=Singe de métal|10=de|11=Metall-Affe||qq=}} or {{nihongo|''Kōshin-shinkō''|庚申信仰||qq=}} is a folk belief in {{ill|Japan|en|Japan|WD=Q17|lt=Japan|1=Japan}} with [[Taoism|Taoist]] origins, influenced by [[Shinto]], {{ill|Buddhism|en|Buddhism|WD=Q748|lt=Buddhism|1=Buddhism}} and other local beliefs.
+{{nihongo|'''''Kōshin'''''|庚申|1=Kōshin|lt=Yang Metal Monkey|2=ja|3=庚申|4=zh|5=庚申|6=ko|7=경신|lt_ko=경신|8=fr|9=Singe de métal|10=de|11=Metall-Affe||qq=}} or {{nihongo|''Kōshin-shinkō''|庚申信仰||qq=}} is a folk belief in {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}} with [[Taoism|Taoist]] origins, influenced by [[Shinto]], {{ill|Buddhism|en|Buddhism|qid=Q748|lt=Buddhism|1=Buddhism}} and other local beliefs.
 
 An event related to the belief is called {{nihongo|Kōshin-kō|庚申講||qq=}}, held on the Kōshin days that occur every 60 days in accordance with the [[:en:Chinese sexagenary cycle|Chinese sexagenary cycle]]. On this day some believers stay awake to prevent {{nihongo|Sanshi|三尸||qq=}}, entities believed to live inside the bodies of believers, from leaving during that night in order to report the deeds of believers to the god Tentei.
 
-It is not known when this belief arrived in Japan, but it was widespread among the nobles of the imperial court by some time in the 9th century. The Japanese monk {{ill|Ennin|en|Ennin|WD=Q732282|lt=Ennin|1=Ennin}}, visiting {{ill|Tang dynasty|en|Tang dynasty|WD=Q9683|lt=Tang China|1=Tang dynasty}} in 838, wrote that "This night no one sleeps. It is the same as New Year's Eve and the nights of ''Kōshin'' in our country."<ref>{{Cite book |last= |first= |url=http://archive.org/details/diaryrecordofpil0000enni |title=Ennin's Diary. The Record of a Pilgrimage to China in Search of the Law |title-link= |publisher=Ronald Press Company |year=1955 |location=New York |page=58 |translator-last=Reischauer |translator-first=Edwin O. |translator-link=Edwin O. Reischauer|qq=}}</ref> In the {{ill|Muromachi period|en|Muromachi period|WD=Q334845|lt=Muromachi period|1=Muromachi period}}, {{ill|Bhikkhu|en|Bhikkhu|WD=Q854997|lt=Buddhist monks|1=Bhikkhu}} started to write about Kōshin and spread the belief to a wider public. Numerous monuments or pillars called {{nihongo|Kōshin-tō|庚申塔||qq=}} (or also {{nihongo|Kōshin-zuka|庚申塚||qq=}}) were erected all over the country, and the belief remained very popular during the  {{ill|Edo period|en|Edo period|WD=Q184963|lt=Edo period|1=Edo period}}. However, after the Meiji government issued the [[Shinbutsu bunri|Shinto and Buddhism Separation Order]] in 1872, Kōshin and other folk beliefs were officially rejected as superstitions.
+It is not known when this belief arrived in Japan, but it was widespread among the nobles of the imperial court by some time in the 9th century. The Japanese monk {{ill|Ennin|en|Ennin|qid=Q732282|lt=Ennin|1=Ennin}}, visiting {{ill|Tang dynasty|en|Tang dynasty|qid=Q9683|lt=Tang China|1=Tang dynasty}} in 838, wrote that "This night no one sleeps. It is the same as New Year's Eve and the nights of ''Kōshin'' in our country."<ref>{{Cite book |last= |first= |url=http://archive.org/details/diaryrecordofpil0000enni |title=Ennin's Diary. The Record of a Pilgrimage to China in Search of the Law |title-link= |publisher=Ronald Press Company |year=1955 |location=New York |page=58 |translator-last=Reischauer |translator-first=Edwin O. |translator-link=Edwin O. Reischauer|qq=}}</ref> In the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}, {{ill|Bhikkhu|en|Bhikkhu|qid=Q854997|lt=Buddhist monks|1=Bhikkhu}} started to write about Kōshin and spread the belief to a wider public. Numerous monuments or pillars called {{nihongo|Kōshin-tō|庚申塔||qq=}} (or also {{nihongo|Kōshin-zuka|庚申塚||qq=}}) were erected all over the country, and the belief remained very popular during the  {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}. However, after the Meiji government issued the [[Shinbutsu bunri|Shinto and Buddhism Separation Order]] in 1872, Kōshin and other folk beliefs were officially rejected as superstitions.
 
 Belief in Kōshin survives, although it is far less popular than it once was. Many Kōshin-tō have been moved inside Buddhist temples or private homes, but  many remain alongside roads and there are still some well-maintained {{nihongo|Kōshin-dō|Kōshin-dō||qq=}} (Kōshin halls) either attached to Buddhist temples or standing alone.
 
 ==Deities and customs==
 The most ancient Kōshin custom is that of staying awake one special night every sixty days. This night is called ''Kōshin-Machi'' (庚申待 - Kōshin Waiting).
 
-The main Kōshin belief is the concept that {{ill|Three Corpses|en|Three Corpses|WD=Q9380693|lt=Three Corpses|1=Three Corpses}}, or ''Sanshi'' (三尸), live in every human body. The Sanshi keep track of the deeds of the person they inhabit. On the night called Kōshin-Machi, the ''Sanshis'' leave the body and go to [[:en:King of Heavens|Tentei]] (天帝), the Heavenly God, to report the deeds of that person. Tentei then punishes bad people, making them ill, shortening their lifespans or, in extreme cases, ending their lives. Believers in Kōshin try to live without performing bad deeds, but those who believe that they have reason to fear try to stay awake during Kōshin nights, as the only way to prevent the Sanshi from reporting to Tentei.
+The main Kōshin belief is the concept that {{ill|Three Corpses|en|Three Corpses|qid=Q9380693|lt=Three Corpses|1=Three Corpses}}, or ''Sanshi'' (三尸), live in every human body. The Sanshi keep track of the deeds of the person they inhabit. On the night called Kōshin-Machi, the ''Sanshis'' leave the body and go to [[:en:King of Heavens|Tentei]] (天帝), the Heavenly God, to report the deeds of that person. Tentei then punishes bad people, making them ill, shortening their lifespans or, in extreme cases, ending their lives. Believers in Kōshin try to live without performing bad deeds, but those who believe that they have reason to fear try to stay awake during Kōshin nights, as the only way to prevent the Sanshi from reporting to Tentei.
 
-In the {{ill|Edo period|en|Edo period|WD=Q184963|lt=Edo period|1=Edo period}}, Kōshin-Machi became more popular among commoners, leading to a proliferation of festivities and cultic activities. Many of these practices centered on the worship of specific deities. These deities were visualized in {{ill|Hanging scroll|en|Hanging scroll|WD=Q2188827|lt=Hanging scroll|1=Hanging scroll}}s, icons, and stone carvings, many of which continue to dot the rural landscape of Japan today. One specially prominent god in the Kōshin cult was [[Shōmen-Kongō]] (Blue-Faced [[:en:Vajra-Yakṣa|Vajra-Yakṣa]]), a fearsome deity with many arms. The first scriptures that established his connection with Kōshin were produced in the context of esoteric Buddhist rituals performed at the temple known as {{transliteration|ja|[[:en:Onjōji|Onjōji]]|qq=}} or {{transliteration|ja|[[:en:Miidera|Miidera]]|qq=}}. Another temple crucial in the early development of this cult was [[Shitennō-ji]]. Shōmen-Kongō became Kōshin-san when people expected this deity to make the Sanshis themselves ill and prevent them from going to Tentei.
+In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, Kōshin-Machi became more popular among commoners, leading to a proliferation of festivities and cultic activities. Many of these practices centered on the worship of specific deities. These deities were visualized in {{ill|Hanging scroll|en|Hanging scroll|qid=Q2188827|lt=Hanging scroll|1=Hanging scroll}}s, icons, and stone carvings, many of which continue to dot the rural landscape of Japan today. One specially prominent god in the Kōshin cult was [[Shōmen-Kongō]] (Blue-Faced [[:en:Vajra-Yakṣa|Vajra-Yakṣa]]), a fearsome deity with many arms. The first scriptures that established his connection with Kōshin were produced in the context of esoteric Buddhist rituals performed at the temple known as {{transliteration|ja|[[:en:Onjōji|Onjōji]]|qq=}} or {{transliteration|ja|[[:en:Miidera|Miidera]]|qq=}}. Another temple crucial in the early development of this cult was [[Shitennō-ji]]. Shōmen-Kongō became Kōshin-san when people expected this deity to make the Sanshis themselves ill and prevent them from going to Tentei.
 
 ==See also==
-* {{ill|Yasaka Kōshin-dō|en|Yasaka Kōshin-dō|WD=Q3571897|lt=Yasaka Kōshin-dō|1=Yasaka Kōshin-dō}}
+* {{ill|Yasaka Kōshin-dō|en|Yasaka Kōshin-dō|qid=Q3571897|lt=Yasaka Kōshin-dō|1=Yasaka Kōshin-dō}}
 
 ==References and further reading==
 {{reflist|qq=}}
@@ -138,7 +135,7 @@ In the {{ill|Edo period|en|Edo period|WD=Q184963|lt=Edo period|1=Edo period}}, K
 * Lafcadio Hearn, ''Japan's Religions: Shinto and Buddhism'', Kessinger Publishing Co, 2003, {{ISBN|978-0-7661-7657-7|qq=}} 
 * Ichiro Hori, ''Folk Religion in Japan: Continuity and Change'', University of Chicago Press, 1974, {{ISBN|978-0-226-35334-0|qq=}}
 * Livia Kohn, ''Daoism and Chinese Culture'', Three Pines Press, 2005, {{ISBN|978-1-931483-00-1|qq=}}
-* {{ill|Richard Bowring|en|Richard Bowring|WD=Q7324287|lt=Richard Bowring|1=Richard Bowring}}, ''The Religious Traditions of Japan'',  Cambridge University Press, 2005, {{ISBN|978-0-521-85119-0|qq=}}
+* {{ill|Richard Bowring|en|Richard Bowring|qid=Q7324287|lt=Richard Bowring|1=Richard Bowring}}, ''The Religious Traditions of Japan'',  Cambridge University Press, 2005, {{ISBN|978-0-521-85119-0|qq=}}
 * [http://www.three-monkeys.info/1/ENG.htm  Three-Monkeys site with related research and information]
 
 == External links ==
@@ -148,51 +145,11 @@ In the {{ill|Edo period|en|Edo period|WD=Q184963|lt=Edo period|1=Edo period}}, K
 
 {{Hiyoshi Faith|qq=}}
 
-[[zh-min-nan:Kap-chú]]
-[[zh-yue:甲午]]
 [[File:koshinscroll.jpg|thumb|A Kōshin scroll|right]]
 
 {{translated page|ja|庚申信仰|version=102438991|comment=Imported full ja history}}
 
-
-
-[[cdo:Gák-cṳ̄de]]
-[[nds:Holt-Pferdevi]]
-[[de:Kōshin]]
-
-[[en:Kōshin]]
-[[fa:کوشین شینکو]]
-[[zh:庚申信仰]]
-[[ja:庚申信仰]]
-[[ru:Косин]]
-[[fr:Kōshin]]
-[[ja:庚申]]
-[[zh:庚申]]
-[[ko:경신]]
-[[fr:Singe de métal]]
-[[de:Metall-Affe]]
-
-[[af:Houtperd (astrologie)]]
-[[de:Holz-Pferdeen]]
-[[en:Wood Horse]]
-[[fr:Cheval de boisboishak]]
-[[it:Kap-chṳ́id]]
-
-[[ko:갑오]]
-[[vi:Giáp Ngọ]]
-[[za:Gyapceij]]
-[[zh:甲午]]
-
-[[ar:Kōshin]]
-
-<!--please transliterate all the hiragana readings into romaji and provide the kanji--><!--please transliterate all the hiragana readings into romaji and provide the kanji--><!--Kōshin-11| ]]
-
-<!--Kōshin--><!--Kōshin-->
-
-<!--jawiki derived wikidata interwikis-->
-<!--zhwiki derived wikidata interwikis-->
-<!--enwiki derived wikidata interwikis-->
-{{wikidata link|Q798775}}
+{{wikidata link|Q798775|af|Metaalaap (astrologie)|cdo|Gĕng-sĭng|de|Metall-Affe|en|Metal Monkey|fr|Singe de métal|hak|Kâng-sṳ̂n|ja|庚申|ko|경신|vi|Canh Thân|za|Gengsaen|zh-min-nan|Keng-sin|zh-yue|庚申|zh|庚申|zh-min-nan|Kap-chú|zh-yue|甲午|cdo|Gák-cṳ̄de|nds|Holt-Pferdevi|de|Kōshin|en|Kōshin|fa|کوشین شینکو|zh|庚申信仰|ja|庚申信仰|ru|Косин|fr|Kōshin|af|Houtperd (astrologie)|de|Holz-Pferdeen|en|Wood Horse|fr|Cheval de boisboishak|it|Kap-chṳ́id|ko|갑오|vi|Giáp Ngọ|za|Gyapceij|zh|甲午|ar|Kōshin}}
 [[Category:Japanese folk religion]]
 [[Category:Japanese words and phrases]]
 [[Category:Kōshin]]
@@ -207,3 +164,4 @@ In the {{ill|Edo period|en|Edo period|WD=Q184963|lt=Edo period|1=Edo period}}, K
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata has short description]]
 [[Category:WikiProject Japanese Calendar]]
+[[Category:Pages with interwikis with duplicate languages]]
