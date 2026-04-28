@@ -3862,3 +3862,16 @@ Module:Convert/wikidata/data
 Module:Convert/wikidata/data/sandbox
 Module:Convert/wikidata/sandbox
 Module:ConvertNumeric
+Module:ConvertNumeric/doc
+Module:ConvertNumeric/sandbox
+Module:Convert character width
+Module:Convert character width/data
+Module:Coordinates
+Module:Coordinates/doc
+Module:Coordinates/sandbox
+Module:Coordinates/sandbox/doc
+Module:Coordinates/styles.css
+Module:Coordinates/testcases
+Module:CountryData
+Module:CountryData/cacheA
+Module:CountryData/cacheB
