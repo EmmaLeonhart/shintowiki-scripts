@@ -27,6 +27,10 @@ on:
         description: "Maintain [[Category:Templates transcluded in mainspace]] / [[Category:Templates not transcluded in mainspace]] on every visited template"
         type: boolean
         default: false
+      enable_enwiki_wikidata_link:
+        description: "Pre-offload: lookup same-named enwiki template, fold its QID + en pair into {{wikidata link}}"
+        type: boolean
+        default: false
       edit_limit:
         description: "Per-run edit cap (default 100; cleanup-loop bumps to 500 during the 2026-04-23 → 2026-06-01 catch-up window)"
         type: string
@@ -46,6 +50,9 @@ on:
         type: boolean
         default: false
       enable_template_usage_check:
+        type: boolean
+        default: false
+      enable_enwiki_wikidata_link:
         type: boolean
         default: false
       edit_limit:
@@ -68,6 +75,7 @@ jobs:
       ENABLE_INTERLANG_CONSOLIDATE: ${{ inputs.enable_interlang_consolidate && '1' || '' }}
       ENABLE_FANDOM_MIRROR: ${{ inputs.enable_fandom_mirror && '1' || '' }}
       ENABLE_TEMPLATE_USAGE_CHECK: ${{ inputs.enable_template_usage_check && '1' || '' }}
+      ENABLE_ENWIKI_WIKIDATA_LINK: ${{ inputs.enable_enwiki_wikidata_link && '1' || '' }}
       FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
       FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
     steps:
