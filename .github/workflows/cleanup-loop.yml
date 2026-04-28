@@ -80,16 +80,17 @@ jobs:
           # as possible. Templates are now mostly offloaded so their budget
           # drops to 100/run (with the new pre-offload enwiki_wikidata_link
           # op doing real work each visit, 100 keeps the runner well-paced).
-          # Category gets bumped from 10 to 100 since the archive-push for
-          # mainspace+template is no longer competing for runner time.
-          # Misc stays at 10. On 2026-05-05 the split reverts to a uniform
-          # catchup budget (500 each until 2026-06-01, then 100 each).
+          # Category and misc get a uniform 100/run so the downstream
+          # orchestrators (chained behind mainspace) actually do meaningful
+          # work each cycle instead of getting starved when mainspace runs
+          # long. On 2026-05-05 the split reverts to a uniform catchup
+          # budget (500 each until 2026-06-01, then 100 each).
           if [ "$TODAY" -lt "20260505" ]; then
             echo "mainspace-edit-limit=1000" >> "$GITHUB_OUTPUT"
             echo "template-edit-limit=100"   >> "$GITHUB_OUTPUT"
             echo "category-edit-limit=100"   >> "$GITHUB_OUTPUT"
-            echo "misc-edit-limit=10"        >> "$GITHUB_OUTPUT"
-            echo "Archive-push window ACTIVE (pre-2026-05-05): mainspace 1000, template/category 100, misc 10."
+            echo "misc-edit-limit=100"       >> "$GITHUB_OUTPUT"
+            echo "Archive-push window ACTIVE (pre-2026-05-05): mainspace 1000, template/category/misc 100."
           elif [ "$CATCHUP" = "true" ]; then
             echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
             echo "template-edit-limit=500"  >> "$GITHUB_OUTPUT"

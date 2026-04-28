@@ -11,14 +11,14 @@ Per-orchestrator edit limits are biased to move mainspace and template to fandom
 | Orchestrator | Edit limit during window | After 2026-05-05 (catchup) | After 2026-06-01 |
 |---|---|---|---|
 | mainspace | **1000** | 500 | 100 |
-| template  | **1000** | 500 | 100 |
-| category  | **10**   | 500 | 100 |
-| miscellaneous | **10** | 500 | 100 |
+| template  | **100**  | 500 | 100 |
+| category  | **100**  | 500 | 100 |
+| miscellaneous | **100** | 500 | 100 |
 
-**Why**: mainspace is the primary thing we want archived; template is the next biggest. Category and misc drop to 10 so they don't compete for runner minutes during the push. Implemented in `.github/workflows/cleanup-loop.yml`'s `window-gate` (per-orchestrator-edit-limit outputs).
+**Why**: mainspace is the primary thing we want archived. Template is mostly offloaded so it drops to 100/run; category and misc also run at 100 each so the downstream orchestrators (chained behind mainspace) actually accomplish work each cycle rather than getting starved on a 10-edit budget while the mainspace job consumes most of the window. Implemented in `.github/workflows/cleanup-loop.yml`'s `window-gate` (per-orchestrator-edit-limit outputs).
 
 **Mid-window tweaks (pending decision, not yet coded):**
-* If the template orchestrator **completes a full cycle** inside this window (state clears, nothing left to offload), shift the freed budget to mainspace: bump mainspace to **1500**, keep category/misc at 10.
+* If the template orchestrator **completes a full cycle** inside this window (state clears, nothing left to offload), shift the freed budget to mainspace: bump mainspace to **1500**.
 * Once mainspace has been **fully imported**, drop everything to a uniform 500 (matches the outer catchup baseline).
 
 ## Open follow-ups (from the history-offload rework)
