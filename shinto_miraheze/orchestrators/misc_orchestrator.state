@@ -3875,3 +3875,23 @@ Module:Coordinates/testcases
 Module:CountryData
 Module:CountryData/cacheA
 Module:CountryData/cacheB
+Module:CountryData/cacheB/doc
+Module:CountryData/doc
+Module:CountryData/summary
+Module:CountryData/summary/doc
+Module:Country alias
+Module:Country alias/data
+Module:Country alias/data/doc
+Module:Country alias/doc
+Module:Country alias/sandbox
+Module:Cs1 documentation support
+Module:Cs1 documentation support/doc
+Module:Cs1 documentation support/sandbox
+Module:Cs1 documentation support/testcases
+Module:Cslist
+Module:Cslist/doc
+Module:Data
+Module:Data/doc
+Module:Date
+Module:Date/doc
+Module:DateI18n
