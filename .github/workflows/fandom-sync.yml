@@ -1,0 +1,92 @@
+name: Fandom Sync
+
+# Bidirectionally syncs pages tagged [[Category:Fandom sync]] (on
+# shinto.miraheze.org) between miraheze and shinto.fandom.com. Discovery
+# is one-way (the category lives on miraheze) but content sync is
+# two-way: edits on either wiki propagate to the other, with
+# miraheze-wins on conflicts.
+#
+# Patterned after git-synced-sync.yml, but with FANDOM_USERNAME /
+# FANDOM_PASSWORD added so the script can log in to fandom alongside
+# miraheze.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_edits:
+        description: "Per-run cap on combined wiki edits (default 50)"
+        type: string
+        default: "50"
+  workflow_call:
+  schedule:
+    # Daily at 11:30 UTC. Twice as relaxed as the git-synced sweep
+    # because it talks to two wikis per page (1x miraheze read + 1x
+    # fandom read + up to 1 write per page).
+    - cron: "30 11 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  fandom-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
+      FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
+      WIKI_EDIT_LIMIT: ${{ inputs.max_edits || '50' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+          if [ -z "${FANDOM_USERNAME}" ] || [ -z "${FANDOM_PASSWORD}" ]; then
+            echo "FANDOM_USERNAME and FANDOM_PASSWORD secrets are required."
+            exit 1
+          fi
+
+      - name: Configure git and environment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/run_step.sh shinto_miraheze/commit_state.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: "Fandom sync: sync_fandom_pages"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Fandom Sync: sync_fandom_pages" \
+            python3 shinto_miraheze/sync_fandom_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Fandom Sync"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Fandom Sync"
