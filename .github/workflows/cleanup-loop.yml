@@ -39,15 +39,14 @@ jobs:
   # window-gate job below outputs `catchup-active` so every affected
   # downstream job can key off one value.
   #
-  # TEMPORARY WITHIN THE TEMPORARY (2026-04-24 → 2026-05-05):
-  # archive-push window. During these 11 days the edit budget is
-  # biased hard toward mainspace (1000) and template (1000) to get
-  # those archived / mirrored as fast as possible; category and misc
-  # drop to 10 each so they barely consume runner time. On 2026-05-05
-  # everything reverts to a uniform 500 until the outer catch-up
-  # window expires 2026-06-01. See STATUS.md for rationale and the
-  # planned mid-window tweaks (e.g. shifting mainspace to 1500 if
-  # template completes a full cycle first).
+  # TEMPORARY WITHIN THE TEMPORARY (2026-05-02 → 2026-05-09):
+  # category-push window. Mainspace and template are basically done
+  # for now, so their budgets drop to 10/run (just enough to catch
+  # any new pages that show up). Category gets 500/run to drain its
+  # backlog; misc holds at 100/run. On 2026-05-09 everything reverts
+  # to a uniform 500 until the outer catch-up window expires
+  # 2026-06-01. (Earlier window 2026-04-24 → 2026-05-02 biased toward
+  # mainspace/template at 1000 each — superseded.)
   # ══════════════════════════════════════════════════════════
   window-gate:
     runs-on: ubuntu-latest
@@ -74,23 +73,19 @@ jobs:
             CATCHUP=false
           fi
 
-          # (2) Per-orchestrator edit limits. During the archive-push window
-          # (2026-04-24 → 2026-05-05 UTC) we bias budget toward mainspace —
-          # that's what we still want mirrored to fandom / archived as fast
-          # as possible. Templates are now mostly offloaded so their budget
-          # drops to 100/run (with the new pre-offload enwiki_wikidata_link
-          # op doing real work each visit, 100 keeps the runner well-paced).
-          # Category and misc get a uniform 100/run so the downstream
-          # orchestrators (chained behind mainspace) actually do meaningful
-          # work each cycle instead of getting starved when mainspace runs
-          # long. On 2026-05-05 the split reverts to a uniform catchup
-          # budget (500 each until 2026-06-01, then 100 each).
-          if [ "$TODAY" -lt "20260505" ]; then
-            echo "mainspace-edit-limit=1000" >> "$GITHUB_OUTPUT"
-            echo "template-edit-limit=100"   >> "$GITHUB_OUTPUT"
-            echo "category-edit-limit=100"   >> "$GITHUB_OUTPUT"
+          # (2) Per-orchestrator edit limits. During the category-push
+          # window (2026-05-02 → 2026-05-09 UTC) mainspace and template
+          # are basically done, so their budgets drop to 10/run — just
+          # enough to pick up any new pages that show up. Category gets
+          # 500/run to drain its backlog; misc holds at 100/run. On
+          # 2026-05-09 the split reverts to a uniform catchup budget
+          # (500 each until 2026-06-01, then 100 each).
+          if [ "$TODAY" -lt "20260509" ]; then
+            echo "mainspace-edit-limit=10"   >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=10"    >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=500"   >> "$GITHUB_OUTPUT"
             echo "misc-edit-limit=100"       >> "$GITHUB_OUTPUT"
-            echo "Archive-push window ACTIVE (pre-2026-05-05): mainspace 1000, template/category/misc 100."
+            echo "Category-push window ACTIVE (pre-2026-05-09): category 500, misc 100, mainspace/template 10."
           elif [ "$CATCHUP" = "true" ]; then
             echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
             echo "template-edit-limit=500"  >> "$GITHUB_OUTPUT"
