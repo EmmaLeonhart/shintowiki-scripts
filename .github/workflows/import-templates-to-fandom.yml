@@ -1,0 +1,103 @@
+name: Import Templates to Fandom
+
+# Walks ``templates to import to fandom.txt`` and pushes each entry's
+# full revision history from shinto.miraheze.org to shinto.fandom.com
+# via Special:Export -> action=import. Unlike the orchestrator's
+# fandom_mirror op (which is gated inside history_offload and refuses
+# redirects), this workflow imports every listed page including
+# redirects -- those are exactly the ones that were previously skipped.
+#
+# State lives in shinto_miraheze/import_template_list_to_fandom.state
+# so successive runs resume where the prior run stopped.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_edits:
+        description: "Per-run cap on successful imports (default 25)"
+        type: string
+        default: "25"
+      retry_errors:
+        description: "Re-attempt titles previously recorded as error"
+        type: boolean
+        default: false
+  schedule:
+    # Daily at 09:30 UTC. Slow drain so we don't pound fandom's
+    # action=import endpoint -- 25 imports per run with 2.5s throttle
+    # works out to about a minute of activity, finishing the 999-entry
+    # list in ~40 days. Adjust the cap upward via workflow_dispatch if
+    # the rate looks safe.
+    - cron: "30 9 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  import-templates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
+      FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
+      MAX_EDITS: ${{ inputs.max_edits || '25' }}
+      RETRY_ERRORS_FLAG: ${{ inputs.retry_errors && '--retry-errors' || '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate fandom credentials
+        run: |
+          if [ -z "${FANDOM_USERNAME}" ] || [ -z "${FANDOM_PASSWORD}" ]; then
+            echo "FANDOM_USERNAME / FANDOM_PASSWORD secrets are required."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: Import templates to fandom
+        run: |
+          python3 import_template_list_to_fandom.py \
+            --apply \
+            --max-edits "${MAX_EDITS}" \
+            --run-tag "${RUN_TAG}" \
+            ${RETRY_ERRORS_FLAG}
+
+      # Kludge alongside the import: User:Immanuelle/common.js keeps getting
+      # auto-deleted by orchestrator history_offload (delete stage runs but
+      # the recreate stage appears to glitch out). Restore it on every run
+      # of this workflow too so we have multiple recovery surfaces. See
+      # todo.md "Diagnose history_offload delete-without-recreate glitch".
+      - name: Undelete User:Immanuelle/common.js
+        if: always()
+        run: |
+          python3 shinto_miraheze/undelete_immanuelle_common_js.py \
+            --apply --run-tag "${RUN_TAG}"
+
+      - name: Commit state
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Import Templates to Fandom"

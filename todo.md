@@ -126,6 +126,14 @@ All items below require manual editing or human review. None have a safe automat
 
 ## Repository / script tasks
 
+### Diagnose history_offload delete-without-recreate glitch (2026-05-02)
+
+- [ ] **Root-cause why `User:Immanuelle/common.js` keeps ending up deleted.** Suspected: the orchestrator's `history_offload` op (in `shinto_miraheze/orchestrators/ops/history_offload.py`) successfully runs Stage 2 (`page.delete(...)`) but Stage 3 (recreate via `fresh_page.edit(...)` after refetching the post-delete `Page` object) fails silently or partway, leaving the page in the deleted-edits pool with no replacement. Same symptom previously seen for `Template:GaiadDate`, addressed there with a similar undelete kludge.
+  - **Current kludge**: `shinto_miraheze/undelete_immanuelle_common_js.py` runs at the end of every `wiki-cleanup.yml` cycle (modeled on the existing `undelete_gaiad_date.py`) and on every `import-templates-to-fandom.yml` run, restoring the page if it was deleted.
+  - **Why the kludge is fine for now**: the import-templates-to-fandom batch needs to ship first (it is the immediate user-visible workaround for redirects that `fandom_mirror` skips); the underlying glitch is pre-existing and the kludge contains the user impact.
+  - **What to investigate**: (1) is `page.delete()` raising on User:/JS pages but the exception is being swallowed before the recreate? (2) does mwclient's `Site.pages[title]` cache the pre-delete entity such that the post-delete `edit()` no-ops or fails on stale tokens? (3) is the JS content model being rejected by the recreate path (e.g. wikitext-banner injection logic accidentally running for ns=2 JS subpages despite `NON_WIKITEXT_NAMESPACES`)? Note that User:Immanuelle/common.js lives in ns=2 (User), NOT in `NON_WIKITEXT_NAMESPACES = {420, 828, 860, 862}`, so the banner WILL be prepended to a `.js` page — which would corrupt the content model. **That is most likely the bug.** Fix: extend `NON_WIKITEXT_NAMESPACES`-style handling to cover `.js` and `.css` subpages of User: and MediaWiki: regardless of namespace number.
+  - Once fixed: remove both undelete kludges from `wiki-cleanup.yml` and `import-templates-to-fandom.yml`, and delete `undelete_immanuelle_common_js.py` (and probably `undelete_gaiad_date.py`).
+
 ### Orchestrator state can drop on rebase conflict (2026-04-23)
 
 - [ ] **`commit_state.sh` bails on rebase conflict** — the retry loop handles push rejection (adds a fetch + rebase + push cycle with backoff) but if the rebase itself conflicts (both sides modified the same state file), it runs `git rebase --abort` and gives up with `WARN: rebase failed`. State for that step is then lost. Seen in run `24837523241` on 2026-04-23 when "Final Core" state collided with an earlier push.
