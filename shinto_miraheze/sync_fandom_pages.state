@@ -228,7 +228,7 @@
     "mira_sha": "6db7ff7c14ee72a8a59966e3c31b1e7281ec71c8"
   },
   "Template:Infobox Buddhist temple": {
-    "fan_revid": 1966295,
+    "fan_revid": 1970144,
     "fan_sha": "7cb885521402e4a96be804e31f3dec8ada55be1f",
     "mira_revid": 3695161,
     "mira_sha": "7cb885521402e4a96be804e31f3dec8ada55be1f"
@@ -485,11 +485,311 @@
     "mira_revid": 3695136,
     "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
   },
+  "Template:Infobox architect": {
+    "fan_revid": 1970656,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695140,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox aristocrat": {
+    "fan_revid": 1970607,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695139,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox artifact": {
+    "fan_revid": 1970608,
+    "fan_sha": "5f9f773b03ceb9c72637a765840b5171553659c8",
+    "mira_revid": 3695141,
+    "mira_sha": "5f9f773b03ceb9c72637a765840b5171553659c8"
+  },
+  "Template:Infobox artifact/doc": {
+    "fan_revid": 1970609,
+    "fan_sha": "616b26c62c7dc96c5094732d2465dcdda1cd6b9f",
+    "mira_revid": 3695142,
+    "mira_sha": "616b26c62c7dc96c5094732d2465dcdda1cd6b9f"
+  },
+  "Template:Infobox artist": {
+    "fan_revid": 1970610,
+    "fan_sha": "bae331dddff59b181ea019b23bc870ec01ecc0dd",
+    "mira_revid": 3695145,
+    "mira_sha": "bae331dddff59b181ea019b23bc870ec01ecc0dd"
+  },
+  "Template:Infobox artist/doc": {
+    "fan_revid": 1970611,
+    "fan_sha": "23a4846ad58cc953c799c0583f4b0f6a3f0668ec",
+    "mira_revid": 3695146,
+    "mira_sha": "23a4846ad58cc953c799c0583f4b0f6a3f0668ec"
+  },
+  "Template:Infobox artwork": {
+    "fan_revid": 1970612,
+    "fan_sha": "178538d909181f4eb8a91e2e5aab3b2149b33ad1",
+    "mira_revid": 3695148,
+    "mira_sha": "178538d909181f4eb8a91e2e5aab3b2149b33ad1"
+  },
+  "Template:Infobox artwork/doc": {
+    "fan_revid": 1970613,
+    "fan_sha": "d8664584954ada60f2cd41b04e25cf2ccee94786",
+    "mira_revid": 3695149,
+    "mira_sha": "d8664584954ada60f2cd41b04e25cf2ccee94786"
+  },
+  "Template:Infobox baseball player": {
+    "fan_revid": 1970614,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695150,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox body of water": {
+    "fan_revid": 1970615,
+    "fan_sha": "574fd41c116ea2d91236a25509382b6ebc436f5b",
+    "mira_revid": 3695153,
+    "mira_sha": "574fd41c116ea2d91236a25509382b6ebc436f5b"
+  },
+  "Template:Infobox body of water/doc": {
+    "fan_revid": 1970616,
+    "fan_sha": "917aaa63f6dedfe91cb1e779ceaaad0fd8675697",
+    "mira_revid": 3695154,
+    "mira_sha": "917aaa63f6dedfe91cb1e779ceaaad0fd8675697"
+  },
+  "Template:Infobox book": {
+    "fan_revid": 1970617,
+    "fan_sha": "252078fa08bb95ebac5c4470efb559bec17d3d7c",
+    "mira_revid": 3695156,
+    "mira_sha": "252078fa08bb95ebac5c4470efb559bec17d3d7c"
+  },
+  "Template:Infobox book/doc": {
+    "fan_revid": 1970618,
+    "fan_sha": "3b47b3e66c1bf7a65741cf281f1d97d20b2c3b21",
+    "mira_revid": 3695157,
+    "mira_sha": "3b47b3e66c1bf7a65741cf281f1d97d20b2c3b21"
+  },
+  "Template:Infobox bridge": {
+    "fan_revid": 1970619,
+    "fan_sha": "67befb7ea0bf65a7c96bb996566fad77c5d7070e",
+    "mira_revid": 3695158,
+    "mira_sha": "67befb7ea0bf65a7c96bb996566fad77c5d7070e"
+  },
+  "Template:Infobox building": {
+    "fan_revid": 1970620,
+    "fan_sha": "e4502ab443fd1660463bfe3a9f7ffee52cd783b4",
+    "mira_revid": 3695164,
+    "mira_sha": "e4502ab443fd1660463bfe3a9f7ffee52cd783b4"
+  },
+  "Template:Infobox building/doc": {
+    "fan_revid": 1970621,
+    "fan_sha": "d9ec1807710b685496a71b3eaa55e362ab65eec8",
+    "mira_revid": 3695167,
+    "mira_sha": "d9ec1807710b685496a71b3eaa55e362ab65eec8"
+  },
+  "Template:Infobox burial site": {
+    "fan_revid": 1970657,
+    "fan_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a",
+    "mira_revid": 3695169,
+    "mira_sha": "0a46b1d9ea4119e11b7a6d61ca52a88959643d11"
+  },
+  "Template:Infobox character": {
+    "fan_revid": 1970623,
+    "fan_sha": "84fd9fc461e40c73af8e1e16220cb567f11bc2e3",
+    "mira_revid": 3695170,
+    "mira_sha": "84fd9fc461e40c73af8e1e16220cb567f11bc2e3"
+  },
+  "Template:Infobox character/doc": {
+    "fan_revid": 1970624,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695171,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
   "Template:Infobox chinese": {
     "fan_revid": 1966293,
     "fan_sha": "626aea42f246f1dc04c7b1eceb0356eddf68d8ef",
     "mira_revid": 3695172,
     "mira_sha": "626aea42f246f1dc04c7b1eceb0356eddf68d8ef"
+  },
+  "Template:Infobox clan": {
+    "fan_revid": 1970625,
+    "fan_sha": "b89ca216f5c16a1275c3bd483ce9cb079aa123eb",
+    "mira_revid": 3695175,
+    "mira_sha": "b89ca216f5c16a1275c3bd483ce9cb079aa123eb"
+  },
+  "Template:Infobox clan/doc": {
+    "fan_revid": 1970626,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695177,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox clergy/doc": {
+    "fan_revid": 1970627,
+    "fan_sha": "5447717e0512054db3438af88501abfb118754f4",
+    "mira_revid": 3695187,
+    "mira_sha": "5447717e0512054db3438af88501abfb118754f4"
+  },
+  "Template:Infobox color": {
+    "fan_revid": 1970658,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695178,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox company": {
+    "fan_revid": 1970629,
+    "fan_sha": "a00563fb6ae9f1899fbf3c6cd743879b730475e2",
+    "mira_revid": 3695181,
+    "mira_sha": "a00563fb6ae9f1899fbf3c6cd743879b730475e2"
+  },
+  "Template:Infobox company/doc": {
+    "fan_revid": 1970630,
+    "fan_sha": "92886c421b3f5b5e3560f8ae169effa14f7b2325",
+    "mira_revid": 3695183,
+    "mira_sha": "92886c421b3f5b5e3560f8ae169effa14f7b2325"
+  },
+  "Template:Infobox country": {
+    "fan_revid": 1970631,
+    "fan_sha": "bc94fa39bae079045e2d5108973521fc5d9a96d6",
+    "mira_revid": 3695184,
+    "mira_sha": "bc94fa39bae079045e2d5108973521fc5d9a96d6"
+  },
+  "Template:Infobox country/doc": {
+    "fan_revid": 1970632,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695185,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox country/formernext": {
+    "fan_revid": 1970633,
+    "fan_sha": "f25049ecce5f3a36fd23c3ad584abe3ba1fbd9db",
+    "mira_revid": 3695186,
+    "mira_sha": "f25049ecce5f3a36fd23c3ad584abe3ba1fbd9db"
+  },
+  "Template:Infobox country/imagetable": {
+    "fan_revid": 1970634,
+    "fan_sha": "e64a4ff10f97ce59ca106a206fc78c51560a7f4b",
+    "mira_revid": 3695189,
+    "mira_sha": "e64a4ff10f97ce59ca106a206fc78c51560a7f4b"
+  },
+  "Template:Infobox country/multirow": {
+    "fan_revid": 1970635,
+    "fan_sha": "31d2ac03899a115b2b80939cbbbc452cdabdb55e",
+    "mira_revid": 3695191,
+    "mira_sha": "31d2ac03899a115b2b80939cbbbc452cdabdb55e"
+  },
+  "Template:Infobox country/multirow/doc": {
+    "fan_revid": 1970636,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695192,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox deity": {
+    "fan_revid": 1970659,
+    "fan_sha": "a550ab4b8e9e0ae98f351faebbe1aebc174bd780",
+    "mira_revid": 3695193,
+    "mira_sha": "1f2e4268feb077f88d317827df5f98475a6a4a48"
+  },
+  "Template:Infobox deity Japan": {
+    "fan_revid": 1970640,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695195,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox deity/color": {
+    "fan_revid": 1970638,
+    "fan_sha": "8fc9a202c6918b91ea26ac217faca2f3adc7a2ec",
+    "mira_revid": 3695196,
+    "mira_sha": "8fc9a202c6918b91ea26ac217faca2f3adc7a2ec"
+  },
+  "Template:Infobox deity/doc": {
+    "fan_revid": 1970639,
+    "fan_sha": "f28e7dca2e23d06b111036dd1e6b15456a071c77",
+    "mira_revid": 3695197,
+    "mira_sha": "f28e7dca2e23d06b111036dd1e6b15456a071c77"
+  },
+  "Template:Infobox designation list": {
+    "fan_revid": 1970641,
+    "fan_sha": "6e29885fbb2e5d67c6ed68004c1bc44c06b3b158",
+    "mira_revid": 3695198,
+    "mira_sha": "6e29885fbb2e5d67c6ed68004c1bc44c06b3b158"
+  },
+  "Template:Infobox designation list/doc": {
+    "fan_revid": 1970642,
+    "fan_sha": "8964171983a7c7cbb8d561bd284fb2640239b805",
+    "mira_revid": 3695201,
+    "mira_sha": "8964171983a7c7cbb8d561bd284fb2640239b805"
+  },
+  "Template:Infobox designation list/entry": {
+    "fan_revid": 1970643,
+    "fan_sha": "bc99dac2220ffdc4a2910ec487bdc91b013b02a2",
+    "mira_revid": 3695202,
+    "mira_sha": "bc99dac2220ffdc4a2910ec487bdc91b013b02a2"
+  },
+  "Template:Infobox dim": {
+    "fan_revid": 1970644,
+    "fan_sha": "f654db0f9a05b2b35e711e5b42d35b493be51597",
+    "mira_revid": 3695203,
+    "mira_sha": "f654db0f9a05b2b35e711e5b42d35b493be51597"
+  },
+  "Template:Infobox dim/doc": {
+    "fan_revid": 1970645,
+    "fan_sha": "97f2d969e0917a6996c51b8afc108adb1591b7ad",
+    "mira_revid": 3695204,
+    "mira_sha": "97f2d969e0917a6996c51b8afc108adb1591b7ad"
+  },
+  "Template:Infobox drink": {
+    "fan_revid": 1970646,
+    "fan_sha": "048ee1d17cea711c3dd44bcdd2de04646cee7295",
+    "mira_revid": 3695206,
+    "mira_sha": "048ee1d17cea711c3dd44bcdd2de04646cee7295"
+  },
+  "Template:Infobox drink/doc": {
+    "fan_revid": 1970647,
+    "fan_sha": "2159ef2747376232cc1c4c505a5bd620bb952bdc",
+    "mira_revid": 3695207,
+    "mira_sha": "2159ef2747376232cc1c4c505a5bd620bb952bdc"
+  },
+  "Template:Infobox ethnic group": {
+    "fan_revid": 1970648,
+    "fan_sha": "c875be37419364a0b2e3d2fa20bec8609b05b603",
+    "mira_revid": 3695210,
+    "mira_sha": "c875be37419364a0b2e3d2fa20bec8609b05b603"
+  },
+  "Template:Infobox ethnic group/doc": {
+    "fan_revid": 1970649,
+    "fan_sha": "9d28d8ee63b370dbf1c5a5846279966aee49c766",
+    "mira_revid": 3695213,
+    "mira_sha": "9d28d8ee63b370dbf1c5a5846279966aee49c766"
+  },
+  "Template:Infobox event": {
+    "fan_revid": 1970650,
+    "fan_sha": "13b7451a14c30ac7dca2468fd62531617b5ba8c1",
+    "mira_revid": 3695214,
+    "mira_sha": "13b7451a14c30ac7dca2468fd62531617b5ba8c1"
+  },
+  "Template:Infobox event/doc": {
+    "fan_revid": 1970651,
+    "fan_sha": "6217d288a15fdec076caeecdea0a9f677c7d519f",
+    "mira_revid": 3695216,
+    "mira_sha": "6217d288a15fdec076caeecdea0a9f677c7d519f"
+  },
+  "Template:Infobox family": {
+    "fan_revid": 1970660,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695217,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox film": {
+    "fan_revid": 1970653,
+    "fan_sha": "8c655dedd6414d9cffe444c1b16d0746dbc16d6f",
+    "mira_revid": 3695219,
+    "mira_sha": "8c655dedd6414d9cffe444c1b16d0746dbc16d6f"
+  },
+  "Template:Infobox folk tale": {
+    "fan_revid": 1970654,
+    "fan_sha": "ea351e707fc040d4fdadaa04b26833e5eb73821d",
+    "mira_revid": 3695220,
+    "mira_sha": "ea351e707fc040d4fdadaa04b26833e5eb73821d"
+  },
+  "Template:Infobox food": {
+    "fan_revid": 1970655,
+    "fan_sha": "76cae4a2eb0d994ed655c6af61219961ac8208cb",
+    "mira_revid": 3695221,
+    "mira_sha": "76cae4a2eb0d994ed655c6af61219961ac8208cb"
   },
   "Template:Infobox island": {
     "fan_revid": 1966290,
@@ -574,32 +874,32 @@
     "mira_sha": "05f77f480097830445ae1e5f2ee2423757639ae2"
   },
   "Unpenji": {
-    "fan_revid": 1966781,
-    "fan_sha": "8cd85559d15d8aa12fd157b40b3b9eda98b0b764",
+    "fan_revid": 1970661,
+    "fan_sha": "61f920920df333ef060ea34362b9d3002d0e7f15",
     "mira_revid": 3658012,
     "mira_sha": "8cd85559d15d8aa12fd157b40b3b9eda98b0b764"
   },
   "Unzen Onsen Shrine": {
-    "fan_revid": 1966782,
-    "fan_sha": "701993408b6fe9dc0227bac82aba8337b7346a2e",
+    "fan_revid": 1970662,
+    "fan_sha": "196acb78210ce0ffe5cc4ca8c9eb0d448256219f",
     "mira_revid": 3658023,
     "mira_sha": "701993408b6fe9dc0227bac82aba8337b7346a2e"
   },
   "Utsunomiya Shrine": {
-    "fan_revid": 1966783,
-    "fan_sha": "25b1df642fea791d8e5b89b84ec54f61ac2240e3",
+    "fan_revid": 1970663,
+    "fan_sha": "eba72ca438664b162477451c08d1e3a5cb320fad",
     "mira_revid": 3658224,
     "mira_sha": "25b1df642fea791d8e5b89b84ec54f61ac2240e3"
   },
   "Wakamatsu Ebisu Shrine": {
-    "fan_revid": 1966784,
-    "fan_sha": "fd3296b91da91e2a0142c463ff40bacb6ca28103",
+    "fan_revid": 1970664,
+    "fan_sha": "eeac008d720cfe7d182c9307e34e4a403bf83a5e",
     "mira_revid": 3658329,
     "mira_sha": "fd3296b91da91e2a0142c463ff40bacb6ca28103"
   },
   "Wakamiya Shrine (Taiki, Mie)": {
-    "fan_revid": 1966785,
-    "fan_sha": "3b754148ab5091c4b25e5fcdd13d8958a9227ba9",
+    "fan_revid": 1970665,
+    "fan_sha": "71292895178ceb97140f7c5c923b7f920a215e02",
     "mira_revid": 3658389,
     "mira_sha": "3b754148ab5091c4b25e5fcdd13d8958a9227ba9"
   }
