@@ -314,6 +314,18 @@ def main() -> int:
             mira_changed = True
             fan_changed = False
 
+        # Deliberate-divergence case: both sides match their recorded
+        # baseline revids but their content shas differ. This is the
+        # signature left by cleanup_fandom_pages.py, which edits the
+        # fandom-side only to drop Lua/Wikidata constructs that don't
+        # work there, then bumps fan_revid/fan_sha in this state file
+        # so the next sync sees "no change". Preserve the divergence
+        # rather than treating it as a both-sides-changed conflict --
+        # otherwise we'd overwrite the cleanups on every run.
+        if not mira_changed and not fan_changed:
+            print(f"DIVERGED  {title}  (preserved; neither side changed since last sync)")
+            continue
+
         if mira_changed and not fan_changed:
             if edits_performed >= args.max_edits:
                 skipped += 1
