@@ -1,177 +1,255 @@
 {
   "Category:Infobox templates": {
-    "fan_revid": 1966287,
-    "fan_sha": "353a5cdffeced1f3beedf3c1798d451b24cd32d3",
+    "fan_revid": 1966816,
+    "fan_sha": "e8e24d9ebe3de38a61fa715aa8eb5f03a62137ad",
     "mira_revid": 3693563,
     "mira_sha": "353a5cdffeced1f3beedf3c1798d451b24cd32d3"
   },
   "Miyajidake Shrine": {
-    "fan_revid": 1966294,
-    "fan_sha": "064ca698158b0a38b0618e0394e637d528133bda",
+    "fan_revid": 1966817,
+    "fan_sha": "1d198e7ab84971e9921be89643f3d15f845a6a60",
     "mira_revid": 3686609,
     "mira_sha": "064ca698158b0a38b0618e0394e637d528133bda"
   },
   "Renjōji Temple": {
-    "fan_revid": 1966313,
-    "fan_sha": "1769124303b5da3a5d8dbed5bf250c7d72f69932",
+    "fan_revid": 1966818,
+    "fan_sha": "2a01bf160341b2a48c0ab69966e9de4fd38251d2",
     "mira_revid": 3643041,
     "mira_sha": "1769124303b5da3a5d8dbed5bf250c7d72f69932"
   },
   "Rinkai-ji": {
-    "fan_revid": 1966314,
-    "fan_sha": "3ca43a56564eab58a8e0dbe44b510be64f6e8a0a",
+    "fan_revid": 1966819,
+    "fan_sha": "6e5d271aa51332185fbbd541b5ed85b430063f50",
     "mira_revid": 3643051,
     "mira_sha": "3ca43a56564eab58a8e0dbe44b510be64f6e8a0a"
   },
   "Ryōhō-ji": {
-    "fan_revid": 1966315,
-    "fan_sha": "e1305121f96986daf74c3a51c08deb6fb85dfb05",
+    "fan_revid": 1966820,
+    "fan_sha": "96647d7437a6e04021ac105afb22e6b7aa9522b6",
     "mira_revid": 3643086,
     "mira_sha": "e1305121f96986daf74c3a51c08deb6fb85dfb05"
   },
   "Ryūtō-ji": {
-    "fan_revid": 1966316,
-    "fan_sha": "97c25e21f057f021485371631349c8d17a19c991",
+    "fan_revid": 1966821,
+    "fan_sha": "2de137f53070ffd2e04226a021c45cd082638536",
     "mira_revid": 3643092,
     "mira_sha": "97c25e21f057f021485371631349c8d17a19c991"
   },
   "Sagami-ji": {
-    "fan_revid": 1966317,
-    "fan_sha": "3b6d0a2e25af6d3287d47e3345be795460538246",
+    "fan_revid": 1966822,
+    "fan_sha": "9b43f50b83d99a1a9a08d0775e1004d5cfffc581",
     "mira_revid": 3643182,
     "mira_sha": "3b6d0a2e25af6d3287d47e3345be795460538246"
   },
   "Saidai-ji": {
-    "fan_revid": 1966318,
-    "fan_sha": "5dc204f4ff9075569cd9cf2e375454bbb67c3d97",
+    "fan_revid": 1966823,
+    "fan_sha": "fa9f148a0c77adb68556167bc022f18c2e0440c9",
     "mira_revid": 3643238,
     "mira_sha": "5dc204f4ff9075569cd9cf2e375454bbb67c3d97"
   },
   "Saifuku-ji": {
-    "fan_revid": 1966319,
-    "fan_sha": "21cce2bdb126f5929aded7da7eba7634ea309a00",
+    "fan_revid": 1966824,
+    "fan_sha": "4b5ccc15e3275f95c5139336cdb9d9c6d469deb6",
     "mira_revid": 3643242,
     "mira_sha": "21cce2bdb126f5929aded7da7eba7634ea309a00"
   },
   "Samukawa Shrine": {
-    "fan_revid": 1966320,
-    "fan_sha": "6c397021e1de45b70fc0628cf0cb5594c189fb86",
+    "fan_revid": 1966825,
+    "fan_sha": "52e91a1b71d87790b2bf494d63ec80109a292847",
     "mira_revid": 3645022,
     "mira_sha": "6c397021e1de45b70fc0628cf0cb5594c189fb86"
   },
   "Sanjūsangen-dō": {
-    "fan_revid": 1966321,
-    "fan_sha": "f0899aed7f0abfb6ba4cbbab2358c2d78df8700c",
+    "fan_revid": 1966826,
+    "fan_sha": "151b3cf4e14d365d94cc08fa581e8f44a51bc4dd",
     "mira_revid": 3645064,
     "mira_sha": "f0899aed7f0abfb6ba4cbbab2358c2d78df8700c"
   },
   "Saruka Shrine": {
-    "fan_revid": 1966322,
-    "fan_sha": "61bdad3b6780f765bc04e1e3065eac32184ac84f",
+    "fan_revid": 1966827,
+    "fan_sha": "d4d88ca78195afecff5155131c0e9ffbb86c06f8",
     "mira_revid": 3645152,
     "mira_sha": "61bdad3b6780f765bc04e1e3065eac32184ac84f"
   },
   "Seiganto-ji": {
-    "fan_revid": 1966323,
-    "fan_sha": "d130ca519309a381efc0ddbd0063a70a5a0ea9f7",
+    "fan_revid": 1966828,
+    "fan_sha": "8ba7796e4cf9254ebdccb4141b9cb10353c4808c",
     "mira_revid": 3645326,
     "mira_sha": "d130ca519309a381efc0ddbd0063a70a5a0ea9f7"
   },
   "Seigen-ji": {
-    "fan_revid": 1966324,
-    "fan_sha": "eb8460231212553ec6a0d469d191ecbf0661260d",
+    "fan_revid": 1966829,
+    "fan_sha": "879740041b22f3f83292e03410000f0bf22d0256",
     "mira_revid": 3645328,
     "mira_sha": "eb8460231212553ec6a0d469d191ecbf0661260d"
   },
   "Seiken-ji": {
-    "fan_revid": 1966325,
-    "fan_sha": "eabdb3eb46f8e8bd8ec16f0a7df298235968a174",
+    "fan_revid": 1966830,
+    "fan_sha": "b5e1f96451add5d403bb2dc5217025c3bab02119",
     "mira_revid": 3645332,
     "mira_sha": "eabdb3eb46f8e8bd8ec16f0a7df298235968a174"
   },
   "Sensō-ji": {
-    "fan_revid": 1966288,
-    "fan_sha": "f7269c7687a52799f13f5ba24ce18213885f9976",
+    "fan_revid": 1966831,
+    "fan_sha": "558766fb8dc926fc87dd266a12e917c9f18894af",
     "mira_revid": 3645439,
     "mira_sha": "f7269c7687a52799f13f5ba24ce18213885f9976"
   },
   "Shaka-in Temple (Ikeda)": {
-    "fan_revid": 1966326,
-    "fan_sha": "901bc889cdc9299f28deb5ab1cdff971fcfb0b16",
+    "fan_revid": 1966832,
+    "fan_sha": "c2157f28fa8db981391e9dfadad2208c0c1ab903",
     "mira_revid": 3647642,
     "mira_sha": "901bc889cdc9299f28deb5ab1cdff971fcfb0b16"
   },
   "Shijōnawate Shrine": {
-    "fan_revid": 1966327,
-    "fan_sha": "01efdcaccac3311989ee06df57db16360d6d207d",
+    "fan_revid": 1966833,
+    "fan_sha": "afd38bf851c337aa0be6e1b66fa7fa8625e6c199",
     "mira_revid": 3647851,
     "mira_sha": "01efdcaccac3311989ee06df57db16360d6d207d"
   },
   "Shipporyuji Temple": {
-    "fan_revid": 1966328,
-    "fan_sha": "9670574d89979db6a7bde9ef642cef0c46eaa729",
+    "fan_revid": 1966834,
+    "fan_sha": "fb83e3474ae0200f5c1a8b3a7842d45ddd66fa67",
     "mira_revid": 3649636,
     "mira_sha": "9670574d89979db6a7bde9ef642cef0c46eaa729"
   },
   "Shisho Shrine (Toyooka)": {
-    "fan_revid": 1966329,
-    "fan_sha": "04fc40345864305a497bc40791cf1748de9ef31f",
+    "fan_revid": 1966835,
+    "fan_sha": "077c6f6d7637304869f3ab4ec4701874bc1a07d3",
     "mira_revid": 3649768,
     "mira_sha": "04fc40345864305a497bc40791cf1748de9ef31f"
   },
   "Shitennō-ji": {
-    "fan_revid": 1966330,
-    "fan_sha": "707f90001a0487fa9ad443ce66ea7320b2409b9e",
+    "fan_revid": 1966836,
+    "fan_sha": "7266366211c19fc1e9f7863b99ff73f6690df070",
     "mira_revid": 3649786,
     "mira_sha": "707f90001a0487fa9ad443ce66ea7320b2409b9e"
   },
   "Shitori Shrine (Tottori)": {
-    "fan_revid": 1966331,
-    "fan_sha": "92a919134b29cad5e46e960d9a58bbfaaa296ca6",
+    "fan_revid": 1966837,
+    "fan_sha": "b7f3528440c6f1e03ae2804c5a5eeabceac243b9",
     "mira_revid": 3649798,
     "mira_sha": "92a919134b29cad5e46e960d9a58bbfaaa296ca6"
   },
   "Shoufukuji Temple (Toba City)": {
-    "fan_revid": 1966332,
-    "fan_sha": "ab666a53dd3fb94f3842c5e9f3ae6bb37895c708",
+    "fan_revid": 1966838,
+    "fan_sha": "3e0cc4b52e6b3deeb0b64a53f931bdc47661a017",
     "mira_revid": 3649878,
     "mira_sha": "ab666a53dd3fb94f3842c5e9f3ae6bb37895c708"
   },
   "Shōrin-ji": {
-    "fan_revid": 1966333,
-    "fan_sha": "4b25112f05893c2b594392a7ec87829bf009d608",
+    "fan_revid": 1966839,
+    "fan_sha": "6b1b5813ec71487c1d32b2461f53c9b51e11fe45",
     "mira_revid": 3649945,
     "mira_sha": "4b25112f05893c2b594392a7ec87829bf009d608"
   },
   "Shōun-ji (Utsunomiya)": {
-    "fan_revid": 1966334,
-    "fan_sha": "003ba14ffc64bf7f2a56bb5a8ed7fccbc94a1991",
+    "fan_revid": 1966840,
+    "fan_sha": "79b813c574d7fed48350f733b99266f43af24e3a",
     "mira_revid": 3649955,
     "mira_sha": "003ba14ffc64bf7f2a56bb5a8ed7fccbc94a1991"
   },
   "Sugiyama Shrine (Shrine, Chigasaki-chuo)": {
-    "fan_revid": 1966335,
-    "fan_sha": "2f888e8a28dc2f3a19e583aaabde5a21492478d8",
+    "fan_revid": 1966841,
+    "fan_sha": "e2f4e96c238f86d70b99578c6d8a2edd6a2364b0",
     "mira_revid": 3650190,
     "mira_sha": "2f888e8a28dc2f3a19e583aaabde5a21492478d8"
   },
   "Sugiyama Shrine (Shrine, Shinyoshida-cho)": {
-    "fan_revid": 1966336,
-    "fan_sha": "f998a6c5da786ae4ce2e341bcdd85c8dea783289",
+    "fan_revid": 1966842,
+    "fan_sha": "4867005e583703af267acd3ef47ba8a063a773c1",
     "mira_revid": 3650192,
     "mira_sha": "f998a6c5da786ae4ce2e341bcdd85c8dea783289"
   },
+  "Suwa Shrine (Katase, Fujisawa City)": {
+    "fan_revid": 1966843,
+    "fan_sha": "7b9e68e0c07ea18271c87be4adab99857a432bb7",
+    "mira_revid": 3651509,
+    "mira_sha": "9fac611d3c02845e62e4e56d2b4631882952852b"
+  },
+  "Sōzenji": {
+    "fan_revid": 1966844,
+    "fan_sha": "0aca73c7944eac24bc494825e20d04878bf7814d",
+    "mira_revid": 3651617,
+    "mira_sha": "304794dc158ab17c8d190899ecb29068fb0c952b"
+  },
+  "Taga Shrine (Matsuyama)": {
+    "fan_revid": 1966845,
+    "fan_sha": "6e62128426537f7f8368f7d10ff07b972280a5f6",
+    "mira_revid": 3651697,
+    "mira_sha": "03c17a4483d6901dad8bea59ddb5e2fe2626a23b"
+  },
+  "Tajima Shrine (Imari)": {
+    "fan_revid": 1966846,
+    "fan_sha": "43f78bd0110b8b334dbdc01b1f087eb5aaadcec2",
+    "mira_revid": 3651834,
+    "mira_sha": "436c17adbbcec6e725e6a351107a004c8c781643"
+  },
+  "Takahashi Inari Shrine": {
+    "fan_revid": 1966847,
+    "fan_sha": "48ab0d606ce38d6709ef633ae436e85902c7ccb0",
+    "mira_revid": 3651874,
+    "mira_sha": "bea0d58c6795a30ec47ac6b9e1f9d17d50e1d85b"
+  },
+  "Take-dera": {
+    "fan_revid": 1966848,
+    "fan_sha": "1cb7de50f6e934e1489c245504c2d64760d770d5",
+    "mira_revid": 3652130,
+    "mira_sha": "6f1a4fc19a5936a700d558a1d593c5b065d94682"
+  },
+  "Tamatsukuri Shrine": {
+    "fan_revid": 1966849,
+    "fan_sha": "fac79b3c46bd48767ef6c46a5566b5f06210d86d",
+    "mira_revid": 3652394,
+    "mira_sha": "61975f619d7b471ba9d7233e74bf8986c7f69695"
+  },
+  "Tatsuta Taisha": {
+    "fan_revid": 1966850,
+    "fan_sha": "c8eb63b5a4e4ae0761142a4f3200e705a56005a9",
+    "mira_revid": 3653811,
+    "mira_sha": "bdcb39863b9f42e2ef53bcdf739bb95180cc93ee"
+  },
+  "Template:Infobox": {
+    "fan_revid": 1966786,
+    "fan_sha": "c4d7c0491dc69a5b5556e0260781f66a1ffb8d90",
+    "mira_revid": 3695122,
+    "mira_sha": "c4d7c0491dc69a5b5556e0260781f66a1ffb8d90"
+  },
   "Template:Infobox Ancient Aristocrat": {
-    "fan_revid": 1966311,
-    "fan_sha": "3f5b495904d1d3d941c27392574af4895680d330",
+    "fan_revid": 1966851,
+    "fan_sha": "f87ce5b0ea9108e0c8057245dc22d53d542e9f5d",
     "mira_revid": 3695664,
     "mira_sha": "3f5b495904d1d3d941c27392574af4895680d330"
+  },
+  "Template:Infobox Buddha": {
+    "fan_revid": 1966788,
+    "fan_sha": "6db7ff7c14ee72a8a59966e3c31b1e7281ec71c8",
+    "mira_revid": 3695159,
+    "mira_sha": "6db7ff7c14ee72a8a59966e3c31b1e7281ec71c8"
   },
   "Template:Infobox Buddhist temple": {
     "fan_revid": 1966295,
     "fan_sha": "7cb885521402e4a96be804e31f3dec8ada55be1f",
     "mira_revid": 3695161,
     "mira_sha": "7cb885521402e4a96be804e31f3dec8ada55be1f"
+  },
+  "Template:Infobox Buddhist term": {
+    "fan_revid": 1966789,
+    "fan_sha": "f5ae6a4fa7442f42b30e0a42433d3e9086c08a1c",
+    "mira_revid": 3695160,
+    "mira_sha": "f5ae6a4fa7442f42b30e0a42433d3e9086c08a1c"
+  },
+  "Template:Infobox Chinese": {
+    "fan_revid": 1966790,
+    "fan_sha": "8edb70a4fdbd212cc1025b74493c3268b771b1ff",
+    "mira_revid": 3695173,
+    "mira_sha": "8edb70a4fdbd212cc1025b74493c3268b771b1ff"
+  },
+  "Template:Infobox Chinese/doc": {
+    "fan_revid": 1966791,
+    "fan_sha": "83a418d04e0bed2f4877d32ca824190c9bad699e",
+    "mira_revid": 3695176,
+    "mira_sha": "83a418d04e0bed2f4877d32ca824190c9bad699e"
   },
   "Template:Infobox East Asian name": {
     "fan_revid": 1966297,
@@ -184,6 +262,24 @@
     "fan_sha": "8c74d878ba6c707610e09da42a305a7db419b1bf",
     "mira_revid": 3695209,
     "mira_sha": "8c74d878ba6c707610e09da42a305a7db419b1bf"
+  },
+  "Template:Infobox Film": {
+    "fan_revid": 1966792,
+    "fan_sha": "8c655dedd6414d9cffe444c1b16d0746dbc16d6f",
+    "mira_revid": 3695218,
+    "mira_sha": "8c655dedd6414d9cffe444c1b16d0746dbc16d6f"
+  },
+  "Template:Infobox Hieroglyphen": {
+    "fan_revid": 1966793,
+    "fan_sha": "b08d8d40244d30e30a3c0d651f797366a7c6afc4",
+    "mira_revid": 3695237,
+    "mira_sha": "b08d8d40244d30e30a3c0d651f797366a7c6afc4"
+  },
+  "Template:Infobox Hindu term": {
+    "fan_revid": 1966794,
+    "fan_sha": "a08fd2c9ccecaccdac92e1808ab69676af7f9753",
+    "mira_revid": 3695241,
+    "mira_sha": "a08fd2c9ccecaccdac92e1808ab69676af7f9753"
   },
   "Template:Infobox Historic Site": {
     "fan_revid": 1966299,
@@ -198,16 +294,46 @@
     "mira_sha": "faf8c0c75b4578b5102259b15ac5e8b45f1cc7a9"
   },
   "Template:Infobox Japanese Kofun": {
-    "fan_revid": 1966309,
-    "fan_sha": "e241949acaea441743b7afccaa883ec4d93b4a97",
+    "fan_revid": 1966852,
+    "fan_sha": "a0c0a53b992da6767f09d7ab874d0b45dcfa875e",
     "mira_revid": 3695665,
     "mira_sha": "e241949acaea441743b7afccaa883ec4d93b4a97"
   },
   "Template:Infobox Japanese Temple": {
-    "fan_revid": 1966312,
-    "fan_sha": "208e0995146c9305fdcf6cabe183e98054cd61ae",
+    "fan_revid": 1966853,
+    "fan_sha": "31e329ac1a94f73606ebaaee22b9420353d7a8b0",
     "mira_revid": 3695666,
     "mira_sha": "208e0995146c9305fdcf6cabe183e98054cd61ae"
+  },
+  "Template:Infobox Japanese clan": {
+    "fan_revid": 1966795,
+    "fan_sha": "0c6f606555937502acc7d27067471a151a76812d",
+    "mira_revid": 3695315,
+    "mira_sha": "0c6f606555937502acc7d27067471a151a76812d"
+  },
+  "Template:Infobox Japanese clan/doc": {
+    "fan_revid": 1966796,
+    "fan_sha": "85e1954bf9ea4089ec19438aa341e848406cca6b",
+    "mira_revid": 3695316,
+    "mira_sha": "85e1954bf9ea4089ec19438aa341e848406cca6b"
+  },
+  "Template:Infobox Japanese deity": {
+    "fan_revid": 1966797,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695317,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox Kofun": {
+    "fan_revid": 1966798,
+    "fan_sha": "545ccbf189a08abbc4d677ec2f321613293c15a1",
+    "mira_revid": 3695322,
+    "mira_sha": "545ccbf189a08abbc4d677ec2f321613293c15a1"
+  },
+  "Template:Infobox Korean name": {
+    "fan_revid": 1966799,
+    "fan_sha": "96dadaa4fa5f315343ae3d60a60f2f4ccfea5763",
+    "mira_revid": 3695323,
+    "mira_sha": "96dadaa4fa5f315343ae3d60a60f2f4ccfea5763"
   },
   "Template:Infobox Lake": {
     "fan_revid": 1966301,
@@ -227,6 +353,12 @@
     "mira_revid": 3695350,
     "mira_sha": "7ff602364d674412bbde7402c6fcf26e1d557296"
   },
+  "Template:Infobox Mountain": {
+    "fan_revid": 1966800,
+    "fan_sha": "d9c090fcdb9718ab70639e9af13422bd64b2774c",
+    "mira_revid": 3695351,
+    "mira_sha": "d9c090fcdb9718ab70639e9af13422bd64b2774c"
+  },
   "Template:Infobox Museum": {
     "fan_revid": 1966304,
     "fan_sha": "a0e15fd6f89630508b11834471451285316542c8",
@@ -239,9 +371,15 @@
     "mira_revid": 3695358,
     "mira_sha": "dcf8f30f8bfc28a0f81f77477d84464354f542fb"
   },
+  "Template:Infobox NRHP": {
+    "fan_revid": 1966801,
+    "fan_sha": "3f85dcc031bbd87f84125dcd2d0b18dde3839ff7",
+    "mira_revid": 3695366,
+    "mira_sha": "3f85dcc031bbd87f84125dcd2d0b18dde3839ff7"
+  },
   "Template:Infobox Noble": {
-    "fan_revid": 1966307,
-    "fan_sha": "33ff0e1cde2e95259cbd622d54e0c0fd2c126ec2",
+    "fan_revid": 1966854,
+    "fan_sha": "348a5bec39124f4b2e512440c2e4271fa39a2866",
     "mira_revid": 3695667,
     "mira_sha": "33ff0e1cde2e95259cbd622d54e0c0fd2c126ec2"
   },
@@ -251,17 +389,101 @@
     "mira_revid": 3695368,
     "mira_sha": "5927ecedf66ee2c3af06eeb1d1403b93354f4bfc"
   },
+  "Template:Infobox Onsen": {
+    "fan_revid": 1966802,
+    "fan_sha": "6a14659378952d5f424d670e4e3aac4b249b5b24",
+    "mira_revid": 3695372,
+    "mira_sha": "6a14659378952d5f424d670e4e3aac4b249b5b24"
+  },
   "Template:Infobox Organization": {
     "fan_revid": 1966306,
     "fan_sha": "bfb377f46c154ef1b5b6f05f412410a6ec64a1a0",
     "mira_revid": 3695374,
     "mira_sha": "bfb377f46c154ef1b5b6f05f412410a6ec64a1a0"
   },
+  "Template:Infobox UNESCO World Heritage Site": {
+    "fan_revid": 1966803,
+    "fan_sha": "bed2cbfe2e1b361fb35314e3e466b1715ea5cc65",
+    "mira_revid": 3695467,
+    "mira_sha": "bed2cbfe2e1b361fb35314e3e466b1715ea5cc65"
+  },
+  "Template:Infobox Wikipedia user script": {
+    "fan_revid": 1966804,
+    "fan_sha": "054bce2ea9fd830c25238925235ab87de2a4c74e",
+    "mira_revid": 3695476,
+    "mira_sha": "054bce2ea9fd830c25238925235ab87de2a4c74e"
+  },
+  "Template:Infobox Wikipedia user script/doc": {
+    "fan_revid": 1966805,
+    "fan_sha": "13bac5e2d8ff561ac446b769d1abd1648b2b55c8",
+    "mira_revid": 3695477,
+    "mira_sha": "13bac5e2d8ff561ac446b769d1abd1648b2b55c8"
+  },
+  "Template:Infobox YouTube personality": {
+    "fan_revid": 1966806,
+    "fan_sha": "3df1d0e13582d18ffbcae6293747fe8fd2bbc995",
+    "mira_revid": 3695480,
+    "mira_sha": "3df1d0e13582d18ffbcae6293747fe8fd2bbc995"
+  },
+  "Template:Infobox YouTube personality/doc": {
+    "fan_revid": 1966807,
+    "fan_sha": "6a60fc5d6929cd4bfacb35a32db8be6d5a55b0c9",
+    "mira_revid": 3695481,
+    "mira_sha": "6a60fc5d6929cd4bfacb35a32db8be6d5a55b0c9"
+  },
+  "Template:Infobox academic": {
+    "fan_revid": 1966808,
+    "fan_sha": "6783dc78fecab826b668edf272b0596745f480b1",
+    "mira_revid": 3695440,
+    "mira_sha": "6783dc78fecab826b668edf272b0596745f480b1"
+  },
+  "Template:Infobox academic/doc": {
+    "fan_revid": 1966809,
+    "fan_sha": "ac22153e19d1aa3a1387b59936a4d7dbe6028f06",
+    "mira_revid": 3695125,
+    "mira_sha": "ac22153e19d1aa3a1387b59936a4d7dbe6028f06"
+  },
+  "Template:Infobox ancient site": {
+    "fan_revid": 1966810,
+    "fan_sha": "985e515f3f3bcfb0423c09189f41d8d013b43b7c",
+    "mira_revid": 3695130,
+    "mira_sha": "985e515f3f3bcfb0423c09189f41d8d013b43b7c"
+  },
+  "Template:Infobox ancient site infobox": {
+    "fan_revid": 1966812,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695133,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
   "Template:Infobox ancient site of Japan": {
-    "fan_revid": 1966310,
-    "fan_sha": "29a6aab7fc70fe3b88f17f5b1dd0746bab39bd5a",
+    "fan_revid": 1966855,
+    "fan_sha": "4968ab76b7f652051c6fb80d282cdfc23017d406",
     "mira_revid": 3695670,
     "mira_sha": "29a6aab7fc70fe3b88f17f5b1dd0746bab39bd5a"
+  },
+  "Template:Infobox ancient site/doc": {
+    "fan_revid": 1966811,
+    "fan_sha": "ddbb38ae853f453876ec35d6ff37e483013859ad",
+    "mira_revid": 3695135,
+    "mira_sha": "ddbb38ae853f453876ec35d6ff37e483013859ad"
+  },
+  "Template:Infobox ancient sites": {
+    "fan_revid": 1966813,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695134,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox ancient tumulus": {
+    "fan_revid": 1966814,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695138,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox anthem": {
+    "fan_revid": 1966856,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695136,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
   },
   "Template:Infobox chinese": {
     "fan_revid": 1966293,
@@ -282,8 +504,8 @@
     "mira_sha": "ffe6e86cb04fd1acf31ed6fd3a0bde0424d27804"
   },
   "Template:Infobox military Rank": {
-    "fan_revid": 1966308,
-    "fan_sha": "db51d589cd967119dd91547862d159e6cc1dca3b",
+    "fan_revid": 1966857,
+    "fan_sha": "c1092b3f8cc2952d5006624c187f755c3f000f42",
     "mira_revid": 3695671,
     "mira_sha": "db51d589cd967119dd91547862d159e6cc1dca3b"
   },
@@ -298,5 +520,87 @@
     "fan_sha": "5927ecedf66ee2c3af06eeb1d1403b93354f4bfc",
     "mira_revid": 3695367,
     "mira_sha": "5927ecedf66ee2c3af06eeb1d1403b93354f4bfc"
+  },
+  "Template:Infobox religious building": {
+    "fan_revid": 1966858,
+    "fan_sha": "8f687e34f5168877d64beda97fbc9759d62ff742"
+  },
+  "Template:Infobox/doc": {
+    "fan_revid": 1966787,
+    "fan_sha": "58b65e76380a855ae26b1eaa24307812e01d8781",
+    "mira_revid": 3695484,
+    "mira_sha": "58b65e76380a855ae26b1eaa24307812e01d8781"
+  },
+  "Tenryū-ji": {
+    "fan_revid": 1966859,
+    "fan_sha": "7d0c5fba77084edaf67eb84de07899fc956a1b06",
+    "mira_revid": 3654151,
+    "mira_sha": "8dd1dbe28e69abdd06d1300701b577efbba08844"
+  },
+  "Toyokawa Inari Tokyo": {
+    "fan_revid": 1966860,
+    "fan_sha": "a2017498ff840899ec80aab7a7d62a51c7b1ba18",
+    "mira_revid": 3655761,
+    "mira_sha": "49092b13cade078541fd18112920448c91df4947"
+  },
+  "Tō-ji": {
+    "fan_revid": 1966861,
+    "fan_sha": "50a5a180f1119ab9fcc2f3edf597994cab18356c",
+    "mira_revid": 3656478,
+    "mira_sha": "2d704ee372d57ecd79a2c7098042615d06ae2756"
+  },
+  "Tōdai-ji": {
+    "fan_revid": 1966862,
+    "fan_sha": "4cb6c844e458d522b752f19b9f76ca4c25e0f454",
+    "mira_revid": 3656484,
+    "mira_sha": "9358af0e9b6aa6ea8be1cbc4375f54a78da39017"
+  },
+  "Tōfuku-ji": {
+    "fan_revid": 1966863,
+    "fan_sha": "df5707b4a330cb01251b968a9144dec80490e3df",
+    "mira_revid": 3656493,
+    "mira_sha": "0fa1f5f58bfd9684e9935c300a9d30f43ab5be39"
+  },
+  "Tōrin-ji (Ishigaki)": {
+    "fan_revid": 1966864,
+    "fan_sha": "d2eeaf19ad192d7fc71022cec95483a761e22f6c",
+    "mira_revid": 3656514,
+    "mira_sha": "7d2745ab5be3d54562f6ca53d8fb302d50623bbf"
+  },
+  "Uda Mikumari Shrine": {
+    "fan_revid": 1966865,
+    "fan_sha": "13ee0de84eed256855ceaecf8f0ccbff8836dd8e",
+    "mira_revid": 3656595,
+    "mira_sha": "05f77f480097830445ae1e5f2ee2423757639ae2"
+  },
+  "Unpenji": {
+    "fan_revid": 1966781,
+    "fan_sha": "8cd85559d15d8aa12fd157b40b3b9eda98b0b764",
+    "mira_revid": 3658012,
+    "mira_sha": "8cd85559d15d8aa12fd157b40b3b9eda98b0b764"
+  },
+  "Unzen Onsen Shrine": {
+    "fan_revid": 1966782,
+    "fan_sha": "701993408b6fe9dc0227bac82aba8337b7346a2e",
+    "mira_revid": 3658023,
+    "mira_sha": "701993408b6fe9dc0227bac82aba8337b7346a2e"
+  },
+  "Utsunomiya Shrine": {
+    "fan_revid": 1966783,
+    "fan_sha": "25b1df642fea791d8e5b89b84ec54f61ac2240e3",
+    "mira_revid": 3658224,
+    "mira_sha": "25b1df642fea791d8e5b89b84ec54f61ac2240e3"
+  },
+  "Wakamatsu Ebisu Shrine": {
+    "fan_revid": 1966784,
+    "fan_sha": "fd3296b91da91e2a0142c463ff40bacb6ca28103",
+    "mira_revid": 3658329,
+    "mira_sha": "fd3296b91da91e2a0142c463ff40bacb6ca28103"
+  },
+  "Wakamiya Shrine (Taiki, Mie)": {
+    "fan_revid": 1966785,
+    "fan_sha": "3b754148ab5091c4b25e5fcdd13d8958a9227ba9",
+    "mira_revid": 3658389,
+    "mira_sha": "3b754148ab5091c4b25e5fcdd13d8958a9227ba9"
   }
 }
