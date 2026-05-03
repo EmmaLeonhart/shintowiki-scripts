@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[en:Azumi-no-isora]][[it:Azumi-no-isora]][[ja:阿曇磯良]][[ko:아즈미노이소라]][[mni:ꯑꯓꯨꯃꯤ-ꯅꯣ-ꯏꯁꯣꯔ]][[ru:Адзуми-но Исора]][[zh:阿曇磯良]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Azumi-no-isora for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
 
 {{short description|Shinto kami of the seashore|qq=}}
 {{More references|date=December 2009|qq=}}
@@ -22,18 +21,7 @@ It is speculated that Azumi no Isora and {{ill|Watatsumi|en|Watatsumi|qid=Q14741
 {{Shinto-stub|qq=}}
 {{Watatsumi and Sumiyoshi Faiths|qq=}}
 
-
-[[en:Azumi-no-isora]]
-
-<!--1350062863, -->
-<!--enwiki derived wikidata interwikis-->
-[[ja:阿曇磯良]]
-[[ko:아즈미노이소라]]
-[[mni:ꯑꯓꯨꯃꯤ-ꯅꯣ-ꯏꯁꯣꯔ]]
-[[ru:Адзуми-но Исора]]
-[[zh:阿曇磯良]]
-
-{{wikidata link|Q1755974}}
+{{wikidata link|Q1755974|en|Azumi-no-isora|it|Azumi-no-isora|ja|阿曇磯良|ko|아즈미노이소라|mni|ꯑꯓꯨꯃꯤ-ꯅꯣ-ꯏꯁꯣꯔ|ru|Адзуми-но Исора|zh|阿曇磯良}}
 
 {{translated page|ja|阿曇磯良|version=102479528|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -94,12 +82,12 @@ It is speculated that Azumi no Isora and {{ill|Watatsumi|en|Watatsumi|qid=Q14741
 == 出典 ==
 ;脚注 
 {{Reflist|30em|refs=
-<ref name=kodera>{{cite book|和書|ref={{SfnRef|小寺|1922}}|author=小寺融吉 |author-link=小寺融吉 |chapter=第八章 神社仏閣の宗教的舞踊: 三　花祭り、花鎮め、細男 |title=近代舞踊史論 |publisher=日本評論社出版部 |date=1922 |chapter-url=https://dl.ndl.go.jp/info:ndljp/pid/964749/182 |pages=238–239 |id=<!--{{NDLDC|964749/182}}-->}}</ref>
+<ref name=kodera>{{cite book|和書|ref={{SfnRef|小寺|1922}}|author=小寺融吉 |author-link=小寺融吉 |chapter=第八章 神社仏閣の宗教的舞踊: 三　花祭り、花鎮め、細男 |title=近代舞踊史論 |publisher=日本評論社出版部 |date=1922 |chapter-url=https://dl.ndl.go.jp/info:ndljp/pid/964749/182 |pages=238–239 |id=}}</ref>
 }}
 
 ;参照文献
 {{refbegin}}
-* {{cite journal|和書|ref={{SfnRef|小山|2005}}|author=小山一成 |author-link=<!--小山一成--> |title=「『雨月』の磯良」追補 |journal=立正大学文学部論叢<!--The Journal of the Faculty of Letters, Rissho University.--> |number=122 |date=2005-09-25 |url=https://hdl.handle.net/11266/4741 |pages=5–18 |publisher=<!--立正大学--> |hdl=11266/4741 |naid=40007145161}}
+* {{cite journal|和書|ref={{SfnRef|小山|2005}}|author=小山一成 |author-link= |title=「『雨月』の磯良」追補 |journal=立正大学文学部論叢 |number=122 |date=2005-09-25 |url=https://hdl.handle.net/11266/4741 |pages=5–18 |publisher= |hdl=11266/4741 |naid=40007145161}}
 
 * {{cite journal|和書|ref={{SfnRef|吉田|2004}}|author=吉田修作 |author-link=吉田修作 |title=福岡の祭りに見られる恵比須神と磯良神 |journal=比較文化 : 福岡女学院大学大学院人文科学研究科紀要 |volume=1 |date=2004-03-31 |url=https://hdl.handle.net/11470/576 |pages=69–87 |publisher=福岡女学院大学大学院人文科学研究科紀要編集委員会|hdl=11470/576}}
 {{refend}}
@@ -113,7 +101,6 @@ It is speculated that Azumi no Isora and {{ill|Watatsumi|en|Watatsumi|qid=Q14741
 * [https://www.youtube.com/watch?v=WtCwKNEnb2Q　春日若宮おん祭「細男の舞」]
 
 {{shinto-stub}}
-
 
 ==End Japanese==
 [[Category:日本の神]]

@@ -1,9 +1,4 @@
-<!--interwikis from wikidata-->[[fr:Clan Munakata]][[ja:宗像氏]][[simple:Munakata clan]]
-<!--interwikis from wikidata-->[[fr:Clan Munakata]][[ja:宗像氏]][[simple:Munakata clan]]
-<!--interwikis from wikidata-->[[fr:Clan Munakata]][[ja:宗像氏]][[simple:Munakata clan]]
-
-
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Munakata_clan for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
 
 {{Expand Japanese|宗像氏|1=Munakata clan|fr|Clan Munakata}}
 {{Infobox Japanese clan|province of origin={{ill|Chikuzen Province|en|Chikuzen Province|qid=Q1047664|lt=Chikuzen Province|1=Chikuzen Province}}|home province={{ill|Chikuzen Province|en|Chikuzen Province|qid=Q1047664|lt=Chikuzen Province|1=Chikuzen Province}}|founder=disputed original ancestor
@@ -253,19 +248,7 @@ File:新原・奴山古墳群34～36号墳.JPG|Shinbaru-Nuyama Kofun No.34～36
 
 {{translated page|ja|宗像氏|version=100476587|comment=Imported full ja history}}
 
-
-[[simple:User:Munakata clan]]
-
-<!--all this actually mandates is a completion tier 7 ranking. We are not using the promising draft template here. If I get anywhere near implementing it, I will do so based on the actual completion tiers of this wiki rather than whether I added them when they were on simple english wikipedia or wherever--><!-- clarifying that I did not read this myself --><!--Munakata clan--><!--Munakata clan--><!--Munakata clan--><!--Munakata clan--><!--Munakata clan--><!--Munakata clan-->
-
-[[ja:宗像氏]]
-[[fr:Clan Munakata]]
-[[ja:宗像大宮司の一覧]]
-
-[[fr:User:Munakata clan]]
-
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q16481907}}
+{{wikidata link|Q16481907|fr|Clan Munakata|ja|宗像氏|simple|Munakata clan|simple|User:Munakata clan|ja|宗像大宮司の一覧|fr|User:Munakata clan}}
 [[Category:Clans of Kyūshū Region]]
 [[Category:Japanese clans]]
 [[Category:Munakata clan]]
@@ -274,3 +257,4 @@ File:新原・奴山古墳群34～36号墳.JPG|Shinbaru-Nuyama Kofun No.34～36
 [[Category:Wikidata no short description]]
 [[Category:Need translation]]
 [[Category:Need translation]]
+[[Category:Pages with interwikis with duplicate languages]]

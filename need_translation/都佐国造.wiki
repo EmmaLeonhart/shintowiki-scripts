@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名 = Tosa no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = {{ill|Tosa clan|ja|土佐氏}} (Ōshi-no-Atai)
 |家祖 = {{ill|Kotachi-no-Sukune|ja|小立宿祢}}
@@ -132,9 +132,8 @@ The full picture of those who held the position of kuni no miyatsuko is unknown.
 * Katō Kenkichi et al. (eds.), ''Nihon Kodai-shi Chimei Jiten'', Yūzankaku, 2007, ISBN 978-4-639-01995-4, pp. 786, 789
 
 {{Japanese-history-stub}}
-{{DEFAULTSORT:とさのくにのみやつこ}}
 [[Category:土佐国]]
 [[Category:高知県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:都佐国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|都佐国造}}

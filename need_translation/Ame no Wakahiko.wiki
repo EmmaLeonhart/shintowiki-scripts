@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[az:Ame-no-Vakahiko]][[en:Ame no Wakahiko]][[ja:アメノワカヒコ]][[pl:Młodzian Potrafiący się Oderwać od Nieba]][[zh:天稚彥]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame_no_Wakahiko for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 
 {{Multiple issues|
 {{Page numbers needed|date=September 2021|qq=}}{{Lead too short|date=September 2021|qq=}}
@@ -48,15 +47,7 @@ Ame no Wakahiko is enshrined at Abiko Shrine in {{ill|Aishō, Shiga|en|Aishō, S
 * Yasufuku, Junko. "[http://ir.lib.osaka-kyoiku.ac.jp/dspace/handle/123456789/6149 The Tale of Ame no Wakahiko and the Psychic Development of the Feminine]". In: ''Memoirs of Osaka Kyoiku University. IV, Education, pshychology, special education and physical culture'', Osaka Kyoiku University, Feb/1995, volume 43, no. 2, pp.&nbsp;251–258. {{ISSN|0389-3472|qq=}}. URL: https://ci.nii.ac.jp/naid/110000119291/en/ (in Japanese)
 {{Shizuri Faith|qq=}}
 
-
-
-[[en:Ame no Wakahiko]]
-
-[[en:Ame no Wakahiko]]<!--enwiki derived wikidata interwikis-->
-[[az:Ame-no-Vakahiko]]
-[[ja:アメノワカヒコ]]
-[[zh:天稚彥]]
-{{wikidata link|Q10940674}}
+{{wikidata link|Q10940674|az|Ame-no-Vakahiko|en|Ame no Wakahiko|ja|アメノワカヒコ|pl|Młodzian Potrafiący się Oderwać od Nieba|zh|天稚彥}}
 
 {{translated page|ja|アメノワカヒコ|version=104157393|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -64,14 +55,14 @@ Ame no Wakahiko is enshrined at Abiko Shrine in {{ill|Aishō, Shiga|en|Aishō, S
 == Japanese Wikipedia content ==
 {{基礎情報 日本の神
 | 名 = 天若日子
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{jalink|天津神}}
+| 神祇 = {{jalink|天津神}}
 | 全名 = 天若日子（アメノワカヒコ）
 | 別名 = 天稚彦、天若日子命、天若日子神、天稚彦命、天稚彦神
 | 別称 = 
-| 神格 = <!-- 太陽、月、山、海など司るもの -->{{jalink|穀物|Q12117}}神
+| 神格 = {{jalink|穀物|Q12117}}神
 | 父 = {{jalink|天津国玉神|Q135113177}}
 | 母 = 
-| 親 = <!-- まぐあいによって生まれない場合 -->
+| 親 = 
 | 兄弟姉妹 = 
 | 配偶者 = {{jalink|シタテルヒメ|Q11307233|下照比売}}
 | 子 = 

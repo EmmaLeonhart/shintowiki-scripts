@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[bg:Аме Но Хохи]][[en:Ame no Hohi]][[fa:آمه-نو-هوهی]][[fr:Ame no Hohi]][[it:Ame no Hohi]][[ja:アメノホヒ]][[pl:Niebiański Duch Przewodni]][[ru:Амэ но Хохи]][[simple:Ame no Hohi]][[zh:天菩比神]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame_no_Hohi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 
 {{Expand language|langcode=ja|otherarticle=アメノホヒ|date=October 2021|qq=}}
 {{Page numbers needed|date=August 2021|qq=}}
@@ -31,18 +30,7 @@ He is the ancestor of the [[Haji clan]]<ref>{{cite book | last1=Cali | first1=J.
 {{reflist|qq=}}
 {{Izumo-taishakyo|qq=}}
 
-
-
-[[en:Ame no Hohi]]
-
-[[en:Ame no Hohi]]<!--enwiki derived wikidata interwikis-->
-[[bg:Аме Но Хохи]]
-[[fa:آمه-نو-هوهی]]
-[[fr:Ame no Hohi]]
-[[ja:アメノホヒ]]
-[[ru:Амэ но Хохи]]
-[[zh:天菩比神]]
-{{wikidata link|Q10940685}}
+{{wikidata link|Q10940685|bg|Аме Но Хохи|en|Ame no Hohi|fa|آمه-نو-هوهی|fr|Ame no Hohi|it|Ame no Hohi|ja|アメノホヒ|pl|Niebiański Duch Przewodni|ru|Амэ но Хохи|simple|Ame no Hohi|zh|天菩比神}}
 
 {{translated page|ja|アメノホヒ|version=106391301|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -53,12 +41,12 @@ He is the ancestor of the [[Haji clan]]<ref>{{cite book | last1=Cali | first1=J.
 | 世代名 = 
 | 先代 = 
 | 次代 = 
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{jalink|天津神}}
+| 神祇 = {{jalink|天津神}}
 | 全名 = 天之菩卑能命（アメノホヒノミコト）
 | 別名 = 天菩比命、天菩比神、天穂日命、天穂比命、天穗日命、天穗比命、天乃夫比命
 | 別称 = {{jalink|野城大神}}
 | 神階 ={{jalink|正三位|Q11123261}} 
-| 神格 = <!-- 太陽、月、山、海など司るもの --> {{jalink|農耕|Q24886094}}神、{{jalink|稲穂}}の神、{{jalink|養蚕}}の神、{{jalink|木綿|Q11457}}の神、{{jalink|産業|Q268592}}の神
+| 神格 =  {{jalink|農耕|Q24886094}}神、{{jalink|稲穂}}の神、{{jalink|養蚕}}の神、{{jalink|木綿|Q11457}}の神、{{jalink|産業|Q268592}}の神
 | 陵所 = 
 | 父 = 
 | 母 = 
@@ -102,7 +90,7 @@ He is the ancestor of the [[Haji clan]]<ref>{{cite book | last1=Cali | first1=J.
 * {{jalink|天穂日命神社|Q17191844}} - {{jalink|鳥取市|Q200731}}福井（{{jalink|前方後円墳|Q11268718}}）
 * {{jalink|若一王子社}} - {{jalink|愛知県|Q80434}}{{jalink|安城市|Q270806}}
 * {{jalink|大江神社|Q11436878}} - 鳥取県八頭郡{{jalink|八頭町|Q1156136}}
-* {{jalink|芦屋神社|Q11614845}} - 兵庫県{{jalink|芦屋市|Q725514}}({{jalink|六甲山|Q462120}}山頂、六甲山カンツリーハウス敷地内にアメノホヒ＝天穂日命の磐座がある。<!--　そこから冬至の日の出ライン延長上に天穂日命を祭神とする{{jalink|芦屋神社|Q11614845}}が位置する。また磐座の真西に{{jalink|六甲比命神社|Q17215573}}の磐座が位置するが、六甲とは元は武庫、向津であり{{jalink|廣田神社|Q1466105}}祭神の向津姫と関連する。-->)
+* {{jalink|芦屋神社|Q11614845}} - 兵庫県{{jalink|芦屋市|Q725514}}({{jalink|六甲山|Q462120}}山頂、六甲山カンツリーハウス敷地内にアメノホヒ＝天穂日命の磐座がある。)
 * {{jalink|道明寺天満宮|Q11641744}} - 大阪府{{jalink|藤井寺市|Q634011}}
 * {{jalink|山阪神社|Q11471104}} - 大阪市{{jalink|東住吉区|Q861264}}
 * {{jalink|馬見岡綿向神社|Q24865035}} - 滋賀県蒲生郡{{jalink|日野町 (滋賀県)|Q1208020|日野町}}
@@ -119,8 +107,8 @@ He is the ancestor of the [[Haji clan]]<ref>{{cite book | last1=Cali | first1=J.
 === 出典 ===
 {{Reflist}}
 == 参考文献 ==
-* <!-- くらの -->{{Cite book|和書 |title=古事記 祝詞 |date=1958年6月5日 |publisher={{jalink|岩波書店|Q1331427}} |ref={{SfnRef|倉野|武田|1958}} |author={{jalink|倉野憲司|Q11386970}}、{{jalink|武田祐吉|Q2165204}} 校注 |isbn=4-00-060001-X |series={{jalink|日本古典文学大系|Q11507508}} 1}}
-* <!-- なかむら -->{{Cite book|和書 |title=風土記 現代語訳付き |date=2015年6月25日 |publisher={{jalink|KADOKAWA|Q17224985}} |ref={{SfnRef|中村|2015}} |author={{jalink|中村啓信|Q17229484}} 監修・訳注 |isbn=978-4-04-400119-3 |series={{jalink|角川ソフィア文庫|Q11630720}} |volume=上}}
+* {{Cite book|和書 |title=古事記 祝詞 |date=1958年6月5日 |publisher={{jalink|岩波書店|Q1331427}} |ref={{SfnRef|倉野|武田|1958}} |author={{jalink|倉野憲司|Q11386970}}、{{jalink|武田祐吉|Q2165204}} 校注 |isbn=4-00-060001-X |series={{jalink|日本古典文学大系|Q11507508}} 1}}
+* {{Cite book|和書 |title=風土記 現代語訳付き |date=2015年6月25日 |publisher={{jalink|KADOKAWA|Q17224985}} |ref={{SfnRef|中村|2015}} |author={{jalink|中村啓信|Q17229484}} 監修・訳注 |isbn=978-4-04-400119-3 |series={{jalink|角川ソフィア文庫|Q11630720}} |volume=上}}
 == 関連項目 ==
 *{{jalink|キヒサツミ|Q123511663}} - 『古事記』中巻の{{jalink|垂仁天皇|Q314850}}条で出雲国造の祖とされる。
 == 外部リンク ==

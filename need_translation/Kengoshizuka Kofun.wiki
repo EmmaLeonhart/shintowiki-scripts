@@ -1,14 +1,4 @@
-<!--interwikis from wikidata-->[[co:commons:Category:Kengoshizuka Kofun]][[en:Kengoshizuka Kofun]][[ja:牽牛子塚古墳]]
-<!--interwikis from wikidata-->[[co:commons:Category:Kengoshizuka Kofun]][[en:Kengoshizuka Kofun]][[ja:牽牛子塚古墳]]
-<!--interwikis from wikidata-->[[en:Kengoshizuka Kofun]][[ja:牽牛子塚古墳]]
-
-
-
-
-
-
-
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kengoshizuka_Kofun for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 
 {{Short description|Tomb of Empress Kōgyoku of Japan}}{{Expand Japanese}}{{Infobox ancient site|type = {{ill|Octagonal Kofun|ja|八角墳|1=Octagonal Kofun|12=simple|13=User:Immanuelle/Octagonal Kofun|13=User:Immanuelle/Octagonal Kofun|comment=enwiki is a redirect}}
 |name=Kengoshizuka Kofun
@@ -93,19 +83,11 @@ Kengoshizuka Kofun
 
 {{translated page|ja|牽牛子塚古墳|version=103767053|comment=Imported full ja history}}
 
-
-
-[[ja:牽牛子塚古墳]]
-[[en:Kengoshizuka Kofun]]
-
-<!--Kengoshizuka Kofun--><!--Kengoshizuka Kofun--><!--Kengoshizuka Kofun-->
-
-<!--jawiki derived wikidata interwikis-->
-{{Commons category|Kengoshizuka Kofun}}
-<!--enwiki derived wikidata interwikis-->
 {{Commons category|Kengoshizuka Kofun}}
 
-{{wikidata link|Q11571102}}
+{{Commons category|Kengoshizuka Kofun}}
+
+{{wikidata link|Q11571102|co|commons:Category:Kengoshizuka Kofun|en|Kengoshizuka Kofun|ja|牽牛子塚古墳}}
 [[Category:Empress Saimei]]
 [[Category:History of Asuka, Nara]]
 [[Category:Important Cultural Property of Japan in Nara prefecture]]

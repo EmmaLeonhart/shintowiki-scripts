@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E8%8F%9F%E7%8B%AD%E6%B4%A5%E5%BD%A6%E5%91%BD for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{基礎情報 公家
 | 氏名 = Usatsuhiko-no-Mikoto
 | 画像 =
@@ -66,5 +67,5 @@ His younger sister Usatsu-hime-no-Mikoto became the wife of {{ill|Amanotane-ko-n
 [[Category:豊前国の人物]]
 [[Category:大分県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:菟狭津彦命]]
 [[Category:Need translation]]
+{{wikidata link||ja|菟狭津彦命}}

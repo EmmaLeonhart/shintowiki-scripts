@@ -1,9 +1,4 @@
-<!--interwikis from wikidata-->[[fr:Kii no Kuni no Miyatsuko]][[ja:紀伊国造]][[simple:Kii no Kuni no Miyatsuko]]
-<!--interwikis from wikidata-->[[fr:Kii no Kuni no Miyatsuko]][[ja:紀伊国造]][[simple:Kii no Kuni no Miyatsuko]]
-<!--interwikis from wikidata-->[[fr:Kii no Kuni no Miyatsuko]][[ja:紀伊国造]][[simple:Kii no Kuni no Miyatsuko]]
-
-
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kii_no_Kuni_no_Miyatsuko for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 
 {{Expand Japanese}}
 
@@ -201,27 +196,7 @@ By the early Heian period, only a few members, such as {{ill|Ki no Haseo|en|Ki n
 
 {{translated page|ja|紀伊国造|version=98569675|comment=Imported full ja history}}
 
-
-
-[[fr:User:Immanuelle/Kii no Kuni no Miyatsuko]]
-[[ja: 紀伊国造]]
-[[fr:Kii no Kuni no Miyatsuko]]
-[[zh:Kii no Kuni no Miyatsuko]]
-[[ja:Kii no Kuni no Miyatsuko]]
-
-[[ja:紀氏系図]]
-[[ja:紀氏]]
-[[ja:紀伊国造]]
-[[de:Ki (Klan)]]
-[[ru:%D0%A0%D1%96%D0%B4 %D0%9A%D1%96]]
-[[ko:%EA%B8%B0%EC%94%A8 (%ED%99%A9%EB%B3%84)]]
-
-<!--all this actually mandates is a completion tier 7 ranking. We are not using the promising draft template here. If I get anywhere near implementing it, I will do so based on the actual completion tiers of this wiki rather than whether I added them when they were on simple english wikipedia or wherever--><!-- citation taken from the article, see it for content --><!-- 家紋の画像 --><!--Kii no Kuni no Miyatsuko--><!--Kii no Kuni no Miyatsuko--><!--Kii no Kuni no Miyatsuko--><!--Kii no Kuni no Miyatsuko--><!--Kii no Kuni no Miyatsuko--><!--Kii no Kuni no Miyatsuko-->
-<!--jawiki derived wikidata interwikis-->
-<!--dewiki derived wikidata interwikis-->
-[[ko:기씨 (황별)]]
-[[uk:Рід Кі]]
-{{wikidata link|Q11604953}}
+{{wikidata link|Q11604953|fr|Kii no Kuni no Miyatsuko|ja|紀伊国造|simple|Kii no Kuni no Miyatsuko|fr|User:Immanuelle/Kii no Kuni no Miyatsuko|zh|Kii no Kuni no Miyatsuko|ja|Kii no Kuni no Miyatsuko|ja|紀氏系図|ja|紀氏|de|Ki (Klan)|ru|%D0%A0%D1%96%D0%B4 %D0%9A%D1%96|ko|%EA%B8%B0%EC%94%A8 (%ED%99%A9%EB%B3%84)|ko|기씨 (황별)|uk|Рід Кі}}
 [[Category:Clans by region]]
 [[Category:History of Wakayama]]
 [[Category:Japanese clans]]
@@ -235,3 +210,4 @@ By the early Heian period, only a few members, such as {{ill|Ki no Haseo|en|Ki n
 [[Category:Wikidata has short description]]
 [[Category:Need translation]]
 [[Category:Need translation]]
+[[Category:Pages with interwikis with duplicate languages]]

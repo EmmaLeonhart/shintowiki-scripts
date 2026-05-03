@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名 = Kumano no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = '''Styled''' {{ill|Tachibana clan|ja|橘氏|lt=Tachibana|lt_ja=橘}}-{{ill|Asomi|ja|朝臣}}<br />{{ill|Kumano clan|ja|熊野氏|lt=Kumano|lt_ja=熊野}}-{{ill|Atai|ja|直}}<br />later Kumano-{{ill|Muraji|ja|連}}
 |家祖 = {{ill|Ōato-no-Sukune|ja|大阿刀足尼}}
@@ -45,10 +45,10 @@ Possibly '''{{ill|Kumano Hongū Taisha|ja|熊野本宮大社}}''', a {{ill|Shiki
 * There is also a theory that the {{ill|Kawachi Wada clan|ja|河内和田氏}} of the {{ill|Nanboku-chō period|ja|南北朝時代_(日本)|lt=Nanboku-chō period|lt_ja=南北朝時代}} (related to the {{ill|Kusunoki clan|ja|楠木氏}}) are descendants of the Kumano no Kuni no Miyatsuko{{Sfn|Ōta Akira|1935|pp=2144&ndash;2145}}.
 
 == Footnotes ==
-<!--===注釈===-->
+
 {{脚注ヘルプ}}
 {{Notelist}}
-<!--===出典===-->
+
 {{Reflist}}
 
 == References ==
@@ -66,7 +66,6 @@ Possibly '''{{ill|Kumano Hongū Taisha|ja|熊野本宮大社}}''', a {{ill|Shiki
 }}
 {{Japanese-history-stub}}
 
-{{DEFAULTSORT:くまののくにのみやつこ}}
 [[Category:三重県の歴史]]
 [[Category:和歌山県の歴史]]
 [[Category:楠木氏|+]]
@@ -74,5 +73,5 @@ Possibly '''{{ill|Kumano Hongū Taisha|ja|熊野本宮大社}}''', a {{ill|Shiki
 [[Category:紀伊国の氏族]]
 [[Category:物部氏|-くまののくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[ja:熊野国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|熊野国造}}

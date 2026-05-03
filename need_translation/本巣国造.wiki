@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名=Motosu no Kuni no Miyatsuko
-<!-- |家紋= 家紋の画像 -->
+
 |家紋名称=
 |本姓=Mino clan (Atai)
 |家祖={{ill|Yatsuuri-Iribiko-no-Ōkimi|ja|八瓜入日子王|lt=Kamu-Ōne-no-Ōkimi|lt_ja=神大根王}}<br/>(prince of {{ill|Hikoimasu-no-Ōkimi|ja|彦坐王}})
@@ -16,7 +16,6 @@
 === Ancestry ===
 *According to the Emperor Kaika section of the ''{{ill|Kojiki|ja|古事記}}'', the ancestor is '''{{ill|Kamu-Ōne-no-Ōkimi|ja|神大根王}}''' (Yatsuuri-Iribiko-no-Ōkimi), son of {{ill|Hikoimasu-no-Ōkimi|ja|彦坐王}}.
 *In the ''Kojiki'' {{ill|Emperor Keikō|ja|景行天皇}} section, Ōne-no-Ōkimi is the ancestor of the Mino no Kuni no Miyatsuko; in the ''{{ill|Nihon Shoki|ja|日本書紀}}'' Emperor Keikō section, Kami-hone is made the Mino no Kuni no Miyatsuko; and in the "Kokuzō Hongi" of the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'', Yatsuuri-no-Mikoto is transmitted as the {{ill|Mino-no-Michinokuchi no Kuni no Miyatsuko|ja|三野前国造}}, indicating that the Motosu no Kuni no Miyatsuko, Mino no Kuni no Miyatsuko, and Mino-no-Michinokuchi no Kuni no Miyatsuko were regarded as the same kuni no miyatsuko.
-
 
 === Clan ===
 '''{{ill|Mino clan|ja|美濃氏}}''' (''mino-uji''; {{ill|kabane|ja|カバネ|lt=kabane|lt_ja=姓}} of {{ill|Atai (kabane)|ja|直 (姓)|lt=Atai|lt_ja=直}}), whose ancestor is {{ill|Hikoimasu-no-Ōkimi|ja|彦坐王}}, of the same lineage as the {{ill|Nagahatabe clan|ja|長幡部氏|lt=Nagahatabe-no-Muraji|lt_ja=長幡部連}}, etc.
@@ -59,9 +58,8 @@ Perhaps the {{ill|ichinomiya|ja|一宮}} of {{ill|Mino Province|ja|美濃国}}, 
 == See also ==
 * {{ill|List of Kuni no Miyatsuko|ja|国造の一覧}}
 
-{{DEFAULTSORT:もとすのくにのみやつこ}}
 [[Category:美濃国]]
 [[Category:岐阜県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:本巣国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|本巣国造}}

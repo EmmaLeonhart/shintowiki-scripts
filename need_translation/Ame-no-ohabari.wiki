@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[en:Ame-no-ohabari]][[it:Ame-no-ohabari]][[ja:天之尾羽張]][[pl:Niebiański Mężnie Naprężony Brzeszczot]][[zh:天之尾羽張]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame-no-ohabari for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 
 {{Short description|Japanese mythological weapon|qq=}}
 {{Multiple issues|
@@ -33,14 +32,7 @@ In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q58284
 {{Myth-stub|qq=}}
 {{Japan-stub|qq=}}
 
-
-
-[[en:Ame-no-ohabari]]
-
-<!--enwiki derived wikidata interwikis-->
-[[ja:天之尾羽張]]
-[[zh:天之尾羽張]]
-{{wikidata link|Q10939046}}
+{{wikidata link|Q10939046|en|Ame-no-ohabari|it|Ame-no-ohabari|ja|天之尾羽張|pl|Niebiański Mężnie Naprężony Brzeszczot|zh|天之尾羽張}}
 
 {{translated page|ja|天之尾羽張|version=104157444|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -48,14 +40,14 @@ In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q58284
 == Japanese Wikipedia content ==
 {{基礎情報 日本の神
 | 名 =  天之尾羽張神
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{jalink|天津神}}
+| 神祇 = {{jalink|天津神}}
 | 全名 = 天之尾羽張神（アメノオハバリノカミ）
 | 別名 = 天尾羽張神、天尾羽張命、伊都之尾羽張、稜威雄走神
 | 別称 = 
-| 神格 = <!-- 太陽、月、山、海など司るもの -->刀剣神
+| 神格 = 刀剣神
 | 父 = 
 | 母 = 
-| 親 = <!-- まぐあいによって生まれない場合 -->
+| 親 = 
 | 兄弟姉妹 = 
 | 配偶者 = 
 | 子 = {{Plainlist|
@@ -111,17 +103,17 @@ In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q58284
 === 出典 ===
 {{reflist|3}}
 == 参考文献 ==
-<!-- ウィキペディア推奨スタイル、著者五十音順　 -->
-*<!-- イワナミ1963古事記 -->{{Cite book|和書|author=|editor=倉野憲司|year=1963|month=1|chapter=|title=古事記|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古事記}}
-*<!-- イワナミ1994日本書紀 -->{{Cite book|和書|author=坂本太郎、家永三郎、井上光貞、大野晋校注|year=1994|month=9|chapter=|title=日本書紀（一）|publisher=岩波書店|series=岩波文庫|isbn=4-00-300041-2|ref=岩波1994、書紀一}}
-*<!-- ウジタニ1988 -->{{Cite book|和書|author=宇治谷孟|year=1988|month=6|chapter=|title=日本書紀（上）　{{small|全現代語訳}}|publisher=講談社|series=講談社学術文庫|isbn=4-06-158833-8|ref=宇治谷書記上}}
-*<!-- サイゴウ1975-01-->{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第五　大八島国と神々の生成|title=古事記注釈　第一巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-01}}
-*<!-- サイゴウ1975-02-->{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第十四　国譲り（続）|title=古事記注釈　第二巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-02}}
-*<!-- サイ1985-->{{Cite book|和書|author=斎部広成撰、西宮一民校注|editor=|year=1985|month=3|chapter=|title=古語拾遺|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古語拾遺}}
-*<!-- タケダ1977-08古事記-->{{Cite book|和書|author1=武田祐吉訳注|authorlink1=武田祐吉|author2=中村啓信補訂解説|authorlink2=中村啓信|editor=|year=1977|month=8|chapter=|title=新訂　古事記　付現代語訳|publisher=角川書店|series=角川文庫|isbn=4-04-400101-4|ref=古事記角川1977-08}}
-*<!-- ツギ1977上-->{{Cite book|和書|author=次田真幸|editor=|year=1977|month=12|chapter=|title=古事記（上）全訳注|publisher=講談社|series=講談社学術文庫|isbn=4-06-158207-0|ref=講談次田上}}
-*<!-- トウ2000学生、鹿島改訂 -->{{Cite book|和書|author={{small|鹿島神宮元宮司}}東実|authorlink=東実|editor=|year=2000|month=8|chapter=三　日本神話と武甕槌神|title=鹿島神宮　<改訂新版>|publisher=学生社|series=日本の神社|isbn=4-311-40717-3|ref=鹿島、学生社2000}}
-*<!-- フクナガ -->{{Cite book|和書|author=福永酔剣|editor=|year=1993|month=11|chapter=|title=日本刀大百科事典＜全5巻＞　第1巻　{{small|あ―かっ}}|publisher=雄山閣出版|series=日本刀大百科|isbn=4-639-01202-0|ref=福永百科1巻}}
+
+*{{Cite book|和書|author=|editor=倉野憲司|year=1963|month=1|chapter=|title=古事記|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古事記}}
+*{{Cite book|和書|author=坂本太郎、家永三郎、井上光貞、大野晋校注|year=1994|month=9|chapter=|title=日本書紀（一）|publisher=岩波書店|series=岩波文庫|isbn=4-00-300041-2|ref=岩波1994、書紀一}}
+*{{Cite book|和書|author=宇治谷孟|year=1988|month=6|chapter=|title=日本書紀（上）　{{small|全現代語訳}}|publisher=講談社|series=講談社学術文庫|isbn=4-06-158833-8|ref=宇治谷書記上}}
+*{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第五　大八島国と神々の生成|title=古事記注釈　第一巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-01}}
+*{{Cite book|和書|author=西郷信綱|authorlink=西郷信綱|editor=|year=1975|month=1|chapter=第十四　国譲り（続）|title=古事記注釈　第二巻|publisher=平凡社|series=|isbn=|ref=西郷注釈1975-02}}
+*{{Cite book|和書|author=斎部広成撰、西宮一民校注|editor=|year=1985|month=3|chapter=|title=古語拾遺|publisher=岩波書店|series=岩波文庫|isbn=4-00-300011-0|ref=岩波、古語拾遺}}
+*{{Cite book|和書|author1=武田祐吉訳注|authorlink1=武田祐吉|author2=中村啓信補訂解説|authorlink2=中村啓信|editor=|year=1977|month=8|chapter=|title=新訂　古事記　付現代語訳|publisher=角川書店|series=角川文庫|isbn=4-04-400101-4|ref=古事記角川1977-08}}
+*{{Cite book|和書|author=次田真幸|editor=|year=1977|month=12|chapter=|title=古事記（上）全訳注|publisher=講談社|series=講談社学術文庫|isbn=4-06-158207-0|ref=講談次田上}}
+*{{Cite book|和書|author={{small|鹿島神宮元宮司}}東実|authorlink=東実|editor=|year=2000|month=8|chapter=三　日本神話と武甕槌神|title=鹿島神宮　<改訂新版>|publisher=学生社|series=日本の神社|isbn=4-311-40717-3|ref=鹿島、学生社2000}}
+*{{Cite book|和書|author=福永酔剣|editor=|year=1993|month=11|chapter=|title=日本刀大百科事典＜全5巻＞　第1巻　{{small|あ―かっ}}|publisher=雄山閣出版|series=日本刀大百科|isbn=4-639-01202-0|ref=福永百科1巻}}
 
 *[https://dl.ndl.go.jp/ 国立国会図書館デジタルコレクション] - {{jalink|国立国会図書館|Q477675}}
 **{{Citation |和書|author=佐伯有義|editor=|year=1930|month=7|title=古語拾遺講義|chapter=|publisher=桜園書院|url={{NDLDC|1188541}}|ref=佐伯、古語拾遺講義}}

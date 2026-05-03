@@ -1,9 +1,5 @@
-<!--interwikis from wikidata-->[[co:commons:Category:Juniso Kumano-jinja (Shinjuku)]][[en:Juniso Kumano Shrine]][[ja:熊野神社 (新宿区)]]
-<!--interwikis from wikidata-->[[co:commons:Category:Juniso Kumano-jinja (Shinjuku)]][[en:Juniso Kumano Shrine]][[ja:熊野神社 (新宿区)]]
-<!--interwikis from wikidata-->[[co:commons:Category:Juniso Kumano-jinja (Shinjuku)]][[en:Juniso Kumano Shrine]][[ja:熊野神社 (新宿区)]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Juniso_Kumano_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25075158020|manual triggered pipeline]] -->
 {{Expand Japanese|熊野神社 (新宿区)|date=November 2025}}
-<!--interwikis from wikidata-->[[en:Juniso Kumano Shrine]][[ja:熊野神社 (新宿区)]]
-
 
 {{Short description|Shrine in Shinjuku, Tokyo, Japan}}
 {{Coord|35|41|25.5|N|139|41|17.5|E|display=title}}
@@ -37,13 +33,8 @@
 {{Japan-struct-stub}}
 {{Kumano Faith}}
 
-
-
-[[en:Juniso Kumano Shrine]]
-<!--enwiki derived wikidata interwikis-->
 {{Commons category|Juniso Kumano-jinja (Shinjuku)}}
-[[ja:熊野神社 (新宿区)]]
-{{wikidata link|Q11568951}}
+{{wikidata link|Q11568951|co|commons:Category:Juniso Kumano-jinja (Shinjuku)|en|Juniso Kumano Shrine|ja|熊野神社 (新宿区)}}
 [[Category:Buildings and structures in Shinjuku]]
 [[Category:Kumano shrines]]
 [[Category:Wikidata has short description]]
@@ -73,7 +64,6 @@
 * [https://genbu.net/saijin/kusimike.htm#google_vignette 櫛御気野大神]　(くしみけぬのおおかみ）
 
 * {{jalink|イザナミ|Q682306|伊邪那美大神}}（いざなみのおおかみ）
-
 
 明治維新前の祭神
 
@@ -190,7 +180,6 @@ kumano_jinja_entrance_b.jpg|直近にある「宮前歩道橋2号」
 {{Commonscat|Juniso Kumano-jinja (Shinjuku)}}
 * [https://12so-kumanojinja.or.jp/ 新宿十二社 熊野神社] - 公式サイト
 * {{Instagram|junisou_kumanojinjya}}
-
 
 ==End Japanese==
 [[Category:新宿区の神社]]

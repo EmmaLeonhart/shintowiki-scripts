@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Osashi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25185113590|time triggered pipeline]] -->
 {{基礎情報 公家
 | 氏名 = Osashi
 | 画像 =
@@ -40,8 +41,6 @@ There is a legend that the Ishi-no-Neya Kofun in {{ill|Awaji, Hyōgo|ja|淡路�
 *{{ill|Kuni no miyatsuko|ja|国造}}
 *{{ill|List of Figures from before the Asuka Period|ja|飛鳥時代以前の人物一覧}}
 
-
-{{DEFAULTSORT:おさし}}
 [[Category:日本神話の人物]]
 [[Category:古墳時代の人物]]
 [[Category:古代日本の人物]]
@@ -49,5 +48,5 @@ There is a legend that the Ishi-no-Neya Kofun in {{ill|Awaji, Hyōgo|ja|淡路�
 [[Category:徳島県の歴史]]
 [[Category:生没年不詳]]
 [[Category:Kuni no miyatsuko]]
-[[ja:男狭磯]]
 [[Category:Need translation]]
+{{wikidata link||ja|男狭磯}}

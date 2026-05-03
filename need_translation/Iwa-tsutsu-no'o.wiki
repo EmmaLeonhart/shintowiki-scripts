@@ -1,7 +1,5 @@
-<!--interwikis from wikidata-->[[es:Iwatsutsunoo]][[ja:イワツツノオ]][[zh:石筒之男神]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iwa-tsutsu-no%27o for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 {{Infobox deity|gender={{ill|male|qid=Q6581097|1=Male (gender)}}|parents={{ill|Kagu-tsuchi|qid=Q1640658|1=Kagu-tsuchi}}|offspring={{ill|Futsunushi|qid=Q1107286|1=Futsunushi}}}}
-
-
 
 '''イワツツノオ'''（イハツツノヲ）は、[[日本神話]]に登場する[[神 (神道)|神]]である。
 
@@ -32,19 +30,13 @@ In a fragment of the {{ill|Tensho|qid=太白星}} quoted in works such as the ''
 
 {{reflist}}
 
-
 *
 {{神道 横}}
 {{shinto-stub}}
 
 {{translated page|ja|イワツツノオ|version=101094147|comment=Imported full ja history}}
 
-
-<!--jawiki derived wikidata interwikis-->
-[[es:Iwatsutsunoo]]
-[[ja:イワツツノオ]]
-[[zh:石筒之男神]]
-{{wikidata link|Q9010200}}
+{{wikidata link|Q9010200|es|Iwatsutsunoo|ja|イワツツノオ|zh|石筒之男神}}
 [[Category:Amatsukami]]
 [[Category:Japanese deities]]
 [[Category:War deities]]

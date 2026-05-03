@@ -1,6 +1,5 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Genkai_Sea for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24820903940|commit triggered pipeline]] -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Genkai_Sea for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
 {{Expand Japanese|玄界灘|date=November 2025}}
-<!--interwikis from wikidata-->[[ceb:Genkai Nada]][[en:Genkai Sea]][[fr:Mer de Genkai]][[id:Laut Genkai]][[ja:玄界灘]][[ko:겐카이나다]][[nl:Genkaizee]][[ru:Генкай-Нада]][[zh:玄界灘]]
 
 {{Short description|Body of water in the Sea of Japan}}
 [[File:Sea Of Genkai up20060427.jpg|thumb|Genkai Sea in 2005]]
@@ -13,12 +12,9 @@ The {{nihongo|'''Genkai Sea'''|玄界灘|Genkai-nada}} <ref>{{cite book|last=Loy
 
 {{marine-geo-stub}}
 
-<!--enwiki derived wikidata interwikis-->
-[[ceb:Genkai Nada]]
 {{Commons category|Genkai Sea}}
-<!--jawiki derived wikidata interwikis-->
-<!--zhwiki derived wikidata interwikis-->
-{{wikidata link|Q498047|en|Genkai Sea|fr|Mer de Genkai|id|Laut Genkai|ja|玄界灘|ko|겐카이나다|nl|Genkaizee|ru|Генкай-Нада|zh|玄界灘}}
+
+{{wikidata link|Q498047|en|Genkai Sea|fr|Mer de Genkai|id|Laut Genkai|ja|玄界灘|ko|겐카이나다|nl|Genkaizee|ru|Генкай-Нада|zh|玄界灘|ceb|Genkai Nada}}
 [[Category:Bodies of water of the Sea of Japan]]
 [[Category:Seas of Japan]]
 [[Category:Wikidata has short description]]
