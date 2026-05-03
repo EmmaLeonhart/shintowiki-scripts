@@ -1,5 +1,4 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Himukai-daijing%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24756154998|commit triggered pipeline]] -->
-<!--interwikis from wikidata-->[[ja:日向大神宮]][[sv:Himukai-daijingū]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Himukai-daijing%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
 
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Himukai Daijingū
@@ -37,7 +36,6 @@
 == Deities ==
 * '''Inner Shrine (Upper Main Shrine)''': {{ill|Amaterasu Ōmikami|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to 天照大神}}, {{ill|Tagirihime no Mikoto|ja|多紀理毘売命|1=Tagorihime|2=ja|3=タキリビメ|4=fr|5=Takiribime|6=zh|7=多紀理毘賣命|1=Tagorihime|12=simple|13=User:Immanuelle/Tagirihime no Mikoto|13=User:Immanuelle/Tagorihime|comment=enwiki is a redirect}}, {{ill|Ichikishima-hime no Mikoto|ja|市寸島比売命|12=simple|13=User:Immanuelle/Ichikishima-hime no Mikoto||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}}, {{ill|Tagitsuhime no Mikoto|ja|多岐都比売命|1=Tagitsuhime|12=simple|13=User:Immanuelle/Tagitsuhime no Mikoto|13=User:Immanuelle/Tagitsuhime|ja_comment=jawiki redirects to タギツヒメ}}
 * '''Outer Shrine (Lower Main Shrine)''': {{ill|Ninigi-no-Mikoto|lt=Ninigi-no-Mikoto|lt=Ninigi|ja|天津彦火瓊々杵尊|12=simple|13=User:Immanuelle/Ninigi|ja_comment=jawiki link invalid}}, {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi|1=Ame-no-Minakanushi}}
-
 
 == Deities ==
 
@@ -101,8 +99,6 @@ The shrine comprises two main areas:
 * '''Mii Shrine''': Dedicated to {{ill|Mizuhanome|ja|水波能売神|12=simple|13=User:Immanuelle/Mizuhanome|ja_comment=jawiki redirects to ミヅハノメ}}.
 * '''Ebisu Shrine''': Dedicated to {{ill|Ebisu|ja|事代主神|12=simple|13=User:Immanuelle/Ebisu|ja_comment=jawiki redirects to 事代主}}.
 
-
-
 == Grounds ==
 
 The shrine complex consists of an Inner Shrine (Naikū) and an Outer Shrine (Gekū).
@@ -136,7 +132,6 @@ The shrine complex consists of an Inner Shrine (Naikū) and an Outer Shrine (Gek
 === Car ===
 * Located immediately left upon entering the {{ill|Higashiyama Driveway|ja|東山ドライブウェイ|12=simple|13=User:Immanuelle/Higashiyama Driveway|comment=changed title based on wikidata|qid=Q11526685}} from Sanjo Street.
 
-
 == Related Articles ==
 
 *{{ill|List of Jingū|en||12=|13=|qq=}}
@@ -157,38 +152,10 @@ The shrine complex consists of an Inner Shrine (Naikū) and an Outer Shrine (Gek
 == External Links ==
 * [http://www12.plala.or.jp/himukai/ Himukai Daijingū Homepage]
 
-[[ja:日向大神宮]]
-
-[[ja:顕宗天皇]]
-[[ja:宮崎県]]
-[[ja:皇大神宮]]
-[[ja:伊勢神宮]]
-[[ja:式年遷宮]]
-[[ja:Emperor Tenmu]]
-[[ja:持統天皇]]
-[[ja:豊受大神宮]]
-[[ja:山口大神宮]]
-[[ja:大内義興]]
-[[ja:伊勢原大神宮]]
-[[ja:後水尾天皇]]
-[[ja:開成山大神宮]]
-[[ja:東京大神宮]]
-[[ja:関東大震災]]
-[[ja:飯田橋]]
-[[ja:伊勢山皇大神宮]]
-[[ja:大神宮 (桜川市)]]
-[[ja:大神宮 (館山市)]]
-[[ja:館山市]]
-[[ja:安房神社]]
-[[ja:神宮]]
-[[ja:大神宮]]
-[[sv:Himukai-daijing%C5%AB]]
-
 {{Commons category|Himukai-daijingū}}
-[[sv:Himukai-daijingū]]
 
 {{translated page|ja|日向大神宮|version=104430848|comment=Imported full ja history}}
-{{wikidata link|Q11505112}}
+{{wikidata link|Q11505112|ja|日向大神宮|sv|Himukai-daijingū|ja|顕宗天皇|ja|宮崎県|ja|皇大神宮|ja|伊勢神宮|ja|式年遷宮|ja|Emperor Tenmu|ja|持統天皇|ja|豊受大神宮|ja|山口大神宮|ja|大内義興|ja|伊勢原大神宮|ja|後水尾天皇|ja|開成山大神宮|ja|東京大神宮|ja|関東大震災|ja|飯田橋|ja|伊勢山皇大神宮|ja|大神宮 (桜川市)|ja|大神宮 (館山市)|ja|館山市|ja|安房神社|ja|神宮|ja|大神宮|sv|Himukai-daijing%C5%AB}}
 [[Category:Buildings and structures in Yamashina-ku, Kyoto]]
 [[Category:History of Yamashina-ku, Kyoto]]
 [[Category:Shikinaisha in Yamashiro Province]]
@@ -203,3 +170,4 @@ The shrine complex consists of an Inner Shrine (Naikū) and an Outer Shrine (Gek
 [[Category:Kokuhei-sha]]
 [[Category:Qq]]
 [[Category:Tier 0 Categories]][[Category:need translation]]
+[[Category:Pages with interwikis with duplicate languages]]

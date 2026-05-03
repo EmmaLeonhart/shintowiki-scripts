@@ -1,6 +1,7 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E6%B4%B2%E7%BE%BD%E5%9B%BD%E9%80%A0 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{日本の氏族
 |家名 = Suwa no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 =
 |家祖 = Unknown
@@ -37,14 +38,12 @@ From the {{ill|Yayoi period|ja|弥生時代}} through the {{ill|Kofun period|ja|
 {{Notelist}}
 === Citations ===
 {{Reflist|refs=
-<!--
-<ref name="宝賀寿男著「諏訪社の奉斎氏族」『古樹紀之房間』、2010年。">宝賀寿男著「諏訪社の奉斎氏族」『古樹紀之房間』、2010年。</ref>
--->
+
 }}{{デフォルトソート:すわのくにのみやつこ}}
 [[Category:架空の国家を舞台とした作品]]
 [[Category:偽作]]
 [[Category:長野県の歴史|偽すわのくにのみやつこ]]
 [[Category:信濃国|偽すわのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[ja:洲羽国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|洲羽国造}}

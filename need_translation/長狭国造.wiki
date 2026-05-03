@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名 = Nagasa no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = {{ill|Nagasa clan|ja|長狭氏|lt=Possibly Nagasa clan|lt_ja=長狭氏か}}
 |家祖 = {{ill|Takenuta-no-Mikoto|ja|武沼田命}}
@@ -65,10 +65,9 @@ The ''{{ill|Engishiki|ja|延喜式}}'' does not list any {{ill|Engishiki-listed 
 == External links ==
 * [http://www.haniwakan.com/kenkyu/boso/nagasa.html Walking the Kofun of Bōsō: Kofun of Nagasa Province]
 
-{{DEFAULTSORT:なかさのくにのみやつこ}}
 [[Category:安房国]]
 [[Category:千葉県の歴史]]
 [[Category:多氏|#なかさのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[ja:長狭国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|長狭国造}}

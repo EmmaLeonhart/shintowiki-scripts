@@ -1,8 +1,4 @@
-<!--interwikis from wikidata-->[[co:commons:Category:Kashii-gū]][[de:Kashii-gū]][[en:Kashii-gū]][[fr:Kashii-gū]][[ja:香椎宮]][[zh:香椎宮]]
-<!--interwikis from wikidata-->[[co:commons:Category:Kashii-gū]][[de:Kashii-gū]][[en:Kashii-gū]][[fr:Kashii-gū]][[ja:香椎宮]][[zh:香椎宮]]
-<!--interwikis from wikidata-->[[co:commons:Category:Kashii-gū]][[de:Kashii-gū]][[en:Kashii-gū]][[fr:Kashii-gū]][[ja:香椎宮]][[zh:香椎宮]]
-<!--interwikis from wikidata-->[[de:Kashii-gū]][[en:Kashii-gū]][[fr:Kashii-gū]][[ja:香椎宮]][[zh:香椎宮]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kashii-g%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
 
 {{Userspace draft}}{{Expand French|Kashii-gū}}{{Expand Japanese|香椎宮}}{{Overly detailed}}{{infobox religious building| religious_affiliation = [[Shinto]]
 |bang colspan="2" class="infobox-header" style="background-color:
@@ -163,7 +159,7 @@ File:香椎・万葉集歌碑.jpg|alt=Man'yōshū Monument|Man'yōshū Monument
 *{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
 
 == References ==
-<references /><!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
+<references />
 
 }}
 }}
@@ -199,25 +195,13 @@ File:香椎・万葉集歌碑.jpg|alt=Man'yōshū Monument|Man'yōshū Monument
 {{draft categories|
 {{draft categories|
 
-[[en:Kashii-gū]]
-[[fr:Kashii-gū]]
-[[ja:香椎宮]]
-[[fr:Kashii-gu]]
-[[de:Kashii-gū]]
-[[ja:Kashii-gū]]
+{{Commons category|Kashii-gū}}
 
-<!--Kashii-gū--><!--Kashii-gū-->
-<!--jawiki derived wikidata interwikis-->
 {{Commons category|Kashii-gū}}
-[[zh:香椎宮]]
-<!--dewiki derived wikidata interwikis-->
-{{Commons category|Kashii-gū}}
-[[zh:香椎宮]]
-<!--enwiki derived wikidata interwikis-->
-{{Commons category|Kashii-gū}}
-[[zh:香椎宮]]
 
-{{wikidata link|Q631373}}
+{{Commons category|Kashii-gū}}
+
+{{wikidata link|Q631373|co|commons:Category:Kashii-gū|de|Kashii-gū|en|Kashii-gū|fr|Kashii-gū|ja|香椎宮|zh|香椎宮|fr|Kashii-gu|ja|Kashii-gū}}
 [[Category:Beppyo shrines]]
 [[Category:Buildings and structures in Fukuoka]]
 [[Category:Buildings and structures in Higashi-ku, Fukuoka]]
@@ -239,3 +223,4 @@ File:香椎・万葉集歌碑.jpg|alt=Man'yōshū Monument|Man'yōshū Monument
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata has short description]]
 [[Category:Need translation]]
+[[Category:Pages with interwikis with duplicate languages]]

@@ -1,6 +1,4 @@
-<!--interwikis from wikidata-->[[co:commons:Category:Kushihiki Hachimangū]][[en:Kushihiki Hachimangū]][[ja:櫛引八幡宮]]
-<!--interwikis from wikidata-->[[co:commons:Category:Kushihiki Hachimangū]][[en:Kushihiki Hachimangū]][[ja:櫛引八幡宮]]
-<!--interwikis from wikidata-->[[en:Kushihiki Hachimangū]][[ja:櫛引八幡宮]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kushihiki_Hachimang%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 
 {{Short description|Shrine in Hachinohe, Aomori, Japan}}
 {{Multiple issues|
@@ -30,20 +28,13 @@
 [[Category|Kushihiki Hachimangū}}
 *[http://www.kushihikihachimangu.com Official website]
 
-<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
-
 {{coord|40.4900|141.4348|type:landmark_region:JP|display=title}}
 
 {{Shinto-stub}}
 
-
-
-[[en:Kushihiki Hachimangū]]
-<!--enwiki derived wikidata interwikis-->
 {{Commons category|Kushihiki Hachimangū}}
-[[ja:櫛引八幡宮]]
 
-{{wikidata link|Q11544667}}
+{{wikidata link|Q11544667|co|commons:Category:Kushihiki Hachimangū|en|Kushihiki Hachimangū|ja|櫛引八幡宮}}
 [[Category:Aomori Prefecture designated tangible cultural property]]
 [[Category:Gō-sha]]
 [[Category:Hachiman shrines]]
@@ -127,7 +118,7 @@
 * 赤糸威鎧（兜、大袖付）（附:{{jalink|唐櫃|Q11418586}}）（昭和28年（{{jalink|1953年|Q18585}}）11月14日）
 *: {{jalink|鎌倉時代|Q236205}}の{{jalink|大鎧|Q386589}}。{{jalink|長慶天皇|Q464039}}からの拝領と伝えられる。{{jalink|茜}}染めの組糸で{{jalink|大鎧#小札|Q386589|小札}}（こざね）を{{jalink|威||威し}}（赤糸威）、八重菊枝模様を打出した鍍金金具を{{jalink|兜|Q1720878}}の鉢・{{jalink|鍬形台}}・{{jalink|吹返}}、{{jalink|大鎧#大袖|Q386589|大袖}}の裾板、草摺の裾板、鳩尾板（きゅうびのいた）、栴檀板（せんだんのいた）など随所に散らす。兜は鋲の頭を星に見立てた{{jalink|星兜|Q1630364}}で{{jalink|兜#眉庇（まびさし）|Q1720878|眉庇}}に八重菊枝文の鍬形台と{{jalink|兜#立物（たてもの）|Q1720878|大鍬形}}が付く<ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/kokuho_01.html 赤糸威鎧 兜、大袖付]」（平成22年2月26日閲覧））</ref>。大袖には籬（まがき）に八重菊枝文の金具の上に「一」の字の飾金物を置くため「'''菊一文字の鎧'''」と呼ばれる。鎌倉時代の金工芸術の最高水準を示し、装飾性の豊かな点で{{jalink|奈良県|Q131287}}{{jalink|春日大社|Q714559}}所蔵の「赤糸威鎧」（竹に虎金物）と双璧をなすものと唱われる<ref name="市文化財">八戸市庁、「はちのへ文化財ガイドブック - [http://www.city.hachinohe.aomori.jp/shiryo/guidebook/yawata_hatiman-2.html 「やわたの八幡様」を訪ねる(2)]」（平成22年2月26日閲覧）</ref>。{{jalink|天明|Q1194121}}8年（{{jalink|1788年|Q7765}}）の{{jalink|巡見使|Q11479408|江戸幕府巡見使}}に随行した地理学者・紀行作者の{{jalink|古川古松軒|Q18011592}}は「{{jalink|源義光|Q3083118|新羅三郎義光公}}の甲冑」と紹介している（『{{jalink|東遊雑記}}』）。{{jalink|大正|Q329174}}4年（{{jalink|1915年|Q2084}}）3月26日に{{jalink|古社寺保存法|Q11411552}}に基づき当時の国宝（旧国宝、現行法の重要文化財に相当）に指定。昭和28年に{{jalink|文化財保護法|Q1188502}}に基づく国宝に指定された。
 * 白糸威褄取（つまどり）鎧（兜、大袖付）（附:唐櫃）（昭和28年11月14日）
-*: {{jalink|南北朝時代 (日本)|Q264012|南北朝時代}}の大鎧。南北朝時代を代表する鎧であるとされ、白糸を卯の花に見立て、「'''卯の花威'''（うのはなおどし）」と呼ばれている<!--「白色を基調とする絵韋に」云々という説明は誤り。この鎧の絵韋は白色ではない。-->。{{jalink|大鎧#草摺（くさずり）|Q386589|草摺}}と大袖の隅の部分を{{jalink|紫|Q3257809}}、薄紫、{{jalink|黄色|Q943|黄}}、{{jalink|萌黄|Q11620271}}、{{jalink|紅色|Q56351133|紅}}の色糸で{{jalink|縅#色彩・文様による分類|Q17221315|褄取り}}に威す。兜は鋲の頭を星に見立てた星兜で、兜鉢の前後左右に鍍銀の板金を伏せた四方白（しほうじろ）とする。鍬形を欠くものの{{jalink|兜#鉢（はち）|Q1720878|鉢}}正面の{{jalink|鎬垂}}（しのだれ）に堂々とした風格を示す<ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/kokuho_02.html 白糸威褄取鎧 兜、大袖付]」（平成22年2月26日閲覧））</ref>。応永18年に{{jalink|南部光経}}（{{jalink|七戸氏|Q11353534|七戸}}光政）が奉納した2領の中の1領といい、光経の父{{jalink|南部信光|Q11408497|信光}}が{{jalink|後村上天皇|Q440447}}から拝領したものと伝えられる（『三翁昔語』巻の二。「祭祀節」の「流鏑馬」項も参照）<ref name="市文化財"/>。赤絲威鎧同様、大正4年古社寺保存法に基づく旧国宝に、昭和28年、文化財保護法に基づく国宝に指定されている。
+*: {{jalink|南北朝時代 (日本)|Q264012|南北朝時代}}の大鎧。南北朝時代を代表する鎧であるとされ、白糸を卯の花に見立て、「'''卯の花威'''（うのはなおどし）」と呼ばれている。{{jalink|大鎧#草摺（くさずり）|Q386589|草摺}}と大袖の隅の部分を{{jalink|紫|Q3257809}}、薄紫、{{jalink|黄色|Q943|黄}}、{{jalink|萌黄|Q11620271}}、{{jalink|紅色|Q56351133|紅}}の色糸で{{jalink|縅#色彩・文様による分類|Q17221315|褄取り}}に威す。兜は鋲の頭を星に見立てた星兜で、兜鉢の前後左右に鍍銀の板金を伏せた四方白（しほうじろ）とする。鍬形を欠くものの{{jalink|兜#鉢（はち）|Q1720878|鉢}}正面の{{jalink|鎬垂}}（しのだれ）に堂々とした風格を示す<ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/kokuho_02.html 白糸威褄取鎧 兜、大袖付]」（平成22年2月26日閲覧））</ref>。応永18年に{{jalink|南部光経}}（{{jalink|七戸氏|Q11353534|七戸}}光政）が奉納した2領の中の1領といい、光経の父{{jalink|南部信光|Q11408497|信光}}が{{jalink|後村上天皇|Q440447}}から拝領したものと伝えられる（『三翁昔語』巻の二。「祭祀節」の「流鏑馬」項も参照）<ref name="市文化財"/>。赤絲威鎧同様、大正4年古社寺保存法に基づく旧国宝に、昭和28年、文化財保護法に基づく国宝に指定されている。
 
 === 重要文化財 ===
 '''建造物'''
@@ -143,7 +134,7 @@
 * 唐櫃入白糸威肩赤胴丸（兜、大袖付）（大正4年3月26日）
 *: 南北朝時代後期から室町時代前期の{{jalink|胴丸|Q495328}}。南北朝時代から主流となる軽快な胴丸であるが、鎌倉時代以来の鎧（大鎧）の華麗さも継承されており、戦闘の様式が変化して行く時代の特色がよく表された名品とされる。胴の立挙（たてあげ）と大袖の2段目までを赤糸で威し（肩赤）、胴の{{jalink|胸板 (鎧)||胸板}}と大袖の冠板、兜の吹返などの{{jalink|染韋}}を5弁の{{jalink|撫子}}をあしらった唐草文で飾る。兜は鋲の頭（{{jalink|星 (兜)||星}}）を見せない{{jalink|筋兜|Q1248483}}で全ての筋を鍍金で縁取る{{jalink|総覆輪}}、吹返に撫子の花を配した唐草文の金物を据える<ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/jubun_kougei_02.html 唐櫃入白糸威肩赤胴丸 兜、大袖付]」（平成22年2月27日閲覧））。</ref><ref name="市文化財"/>。文化財指定については前項に同じ。
 * 兜（浅黄糸威肩赤大袖2枚付）（大正4年3月26日）
-*: 南北朝時代の鍍金総覆輪の筋兜。胴を欠失しているために大鎧か胴丸か不明ながら、兜の{{jalink|総覆輪}}や紅と浅黄で威した{{jalink|兜#錣（しころ）|Q1720878|錣}}（しころ）、大袖の仕立て配色から、南北朝時代の華麗な胴であったろうことが窺える。兜鉢は正面に3条、後面に2条の鎬垂を持ち、眉庇に鍍金枝透彫の鍬形台を打って鍬形を構え（但し後補）、吹返には獅子牡丹文の絵韋を張り、据文金具は奈良菊文を施す。大袖は7段のうち上2段目までを赤で威し（肩赤）、以下を浅黄糸で威す<!--「菱縫」は肩部ではなく最下部であり、糸でなく韋--><ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/jubun_kougei_03.html 兜 浅黄威肩赤大袖二枚付]」（平成22年2月27日閲覧））。</ref><ref name="市文化財"/>。文化財指定については前項に同じ。
+*: 南北朝時代の鍍金総覆輪の筋兜。胴を欠失しているために大鎧か胴丸か不明ながら、兜の{{jalink|総覆輪}}や紅と浅黄で威した{{jalink|兜#錣（しころ）|Q1720878|錣}}（しころ）、大袖の仕立て配色から、南北朝時代の華麗な胴であったろうことが窺える。兜鉢は正面に3条、後面に2条の鎬垂を持ち、眉庇に鍍金枝透彫の鍬形台を打って鍬形を構え（但し後補）、吹返には獅子牡丹文の絵韋を張り、据文金具は奈良菊文を施す。大袖は7段のうち上2段目までを赤で威し（肩赤）、以下を浅黄糸で威す<ref>（青森県庁、「あおもりの文化財 - [http://www.pref.aomori.lg.jp/bunka/education/jubun_kougei_03.html 兜 浅黄威肩赤大袖二枚付]」（平成22年2月27日閲覧））。</ref><ref name="市文化財"/>。文化財指定については前項に同じ。
 
 === 青森県重宝 ===
 '''建造物'''

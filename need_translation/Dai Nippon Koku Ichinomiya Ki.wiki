@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[ja:大日本国一宮記]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Dai_Nippon_Koku_Ichinomiya_Ki for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24975162458|time triggered pipeline]] -->
 
 '''Dainihon-koku Ichinomiya-ki''' (大日本国一宮記) is a list of [[Ichinomiya]] (first-Ranked shrines) in Japan, compiled in the {{ill|Gunsho Ruijū|en|Gunsho Ruijū|qid=Q1554852|lt=Gunsho Ruijū|1=Gunsho Ruijū}}’s second volume, "Shinto Division" (神祇部), Volume 23. It is believed to have been created during the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}.
 Various historical records documenting the names, enshrined deities, and locations of Ichinomiya shrines are collectively referred to as "Ichinomiya-ki." Among these, '''Dainihon-koku Ichinomiya-ki''' is one such text. The manuscript itself exists in numerous copies and is a significant resource for the study of Ichinomiya. Even in contemporary times, it is sometimes used as a criterion for selecting Ichinomiya for pilgrimage or research.<ref>Ōbayashi Taira, *My Ichinomiya Pilgrimage Record,* Seidosha, September 2001. The author establishes two conditions for determining Ichinomiya: 1) the shrine is recognized as Ichinomiya in texts like '''Dainihon-koku Ichinomiya-ki''' or [[Tachibana Mitsuyoshi]]’s *Shokoku Ichinomiya Junpai-ki*; 2) the shrine is listed in the [[Engishiki Jinmyōchō]].</ref>
@@ -25,13 +24,7 @@ The study "The Various Lineages of Ichinomiya-ki"<ref name="shokeitou" /> compar
 
 {{translated page|ja|大日本国一宮記|version=78455980|comment=Imported full ja history}}
 
-
-
-[[ja:大日本国一宮記]]
-
-<!--Dai Nippon Koku Ichinomiya Ki-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11435648}}
+{{wikidata link|Q11435648|ja|大日本国一宮記}}
 [[Category:Ichinomiya]]
 [[Category:Ichinomiya|*]]
 [[Category:Japanese Historical Series]]

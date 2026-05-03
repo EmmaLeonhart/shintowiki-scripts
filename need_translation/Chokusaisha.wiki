@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[de:Chokusaisha]][[en:Chokusaisha]][[es:Chokusaisha]][[fr:Chokusaisha]][[ja:勅祭社]][[ko:칙제사]][[simple:Chokusaisha]][[zh:敕祭社]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Chokusaisha for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
 
 {{Short description|Type of Shinto shrine|qq=}}
 {{italic title|qq=}}{{Expand Japanese|qq=}}
@@ -57,18 +56,7 @@ The following table shows sixteen shrines designated as Chokusaisha.
 <noinclude></noinclude>
 }}
 
-[[en:Chokusaisha]]
-<!--enwiki derived wikidata interwikis-->
-[[de:Chokusaisha]]
-[[es:Chokusaisha]]
-[[fr:Chokusaisha]]
-[[ja:勅祭社]]
-[[ko:칙제사]]
-
-[[simple:Chokusaisha]]
-[[zh:敕祭社]]
-
-{{wikidata link|Q175288}}
+{{wikidata link|Q175288|de|Chokusaisha|en|Chokusaisha|es|Chokusaisha|fr|Chokusaisha|ja|勅祭社|ko|칙제사|simple|Chokusaisha|zh|敕祭社}}
 
 {{translated page|ja|勅祭社|version=103392958|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]

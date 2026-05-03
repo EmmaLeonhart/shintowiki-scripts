@@ -1,6 +1,4 @@
-<!--interwikis from wikidata-->[[co:commons:Category:Kōtoku-ji]][[ja:広徳寺 (甲賀市)]]
-<!--interwikis from wikidata-->[[co:commons:Category:Kōtoku-ji]][[ja:広徳寺 (甲賀市)]]
-<!--interwikis from wikidata-->[[ja:広徳寺 (甲賀市)]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kotokuji_Temple_%28Koka_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 {{Infobox Buddhist temple|image=File:Kōshin-san Kōtoku-ji 09.jpg|religious_affiliation={{ill|Tendai|qid=Q855964|1=Tendai}}|prefecture={{ill|Koka|qid=Q847584|1=Kōka, Shiga}}|coordinates={{Coord|34.926611111111114|N|136.13216666666668|E|region:JP_type:landmark|display=inline,title}}}}
 {{infobox religious building
 |name = Kotokuji Temple (Koka City)|native_name=広徳寺
@@ -52,15 +50,8 @@ File:Stone signpost for Kōshin-san Kōtoku-ji at Minakuchi.jpg|庚申山広徳�
 
 {{translated page|ja|広徳寺 (甲賀市)|version=98058057|comment=Imported full ja history}}
 
-
-
-[[ja:広徳寺 (甲賀市)]]
-
-<!--広徳寺 (甲賀市)--><!--広徳寺 (甲賀市)-->
-
-<!--jawiki derived wikidata interwikis-->
 {{Commons category|Kōtoku-ji}}
-{{wikidata link|Q76105919}}
+{{wikidata link|Q76105919|co|commons:Category:Kōtoku-ji|ja|広徳寺 (甲賀市)}}
 [[Category:Buddhist temples in Shiga Prefecture]]
 [[Category:Buildings and structures in Koka, Shiga]]
 [[Category:Copper alloys]]

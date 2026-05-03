@@ -1,8 +1,4 @@
-<!--interwikis from wikidata-->[[en:Konpira Gongen]][[es:Konpira Gongen]][[ja:金毘羅権現]][[simple:Kompira]][[zh:金毘羅權現]]
-<!--interwikis from wikidata-->[[en:Konpira Gongen]][[es:Konpira Gongen]][[ja:金毘羅権現]][[simple:Kompira]][[zh:金毘羅權現]]
-<!--interwikis from wikidata-->[[en:Konpira Gongen]][[es:Konpira Gongen]][[ja:金毘羅権現]][[simple:Kompira]][[zh:金毘羅權現]]
-
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Konpira_Gongen for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 
 {{Short description|Japanese god of the Shugendō sect}}
 {{Multiple issues|
@@ -116,22 +112,7 @@ In 1889 due to the [[Meiji Restoration]] the head temple was renamed from Konpir
 
 {{translated page|ja|金毘羅権現|version=104322926|comment=Imported full ja history}}
 
-
-
-[[en:Konpira Gongen]]
-
-<!-- for alternate text of the title image per [[WP:ALT]] --><!-- or | abodes = --><!-- or | world = --><!-- sourrce says Kametomo but I think thisis almost cerrtainly a typo -->
-<!--jawiki derived wikidata interwikis-->
-[[es:Konpira Gongen]]
-[[ja:金毘羅権現]]
-[[zh:金毘羅權現]]
-<!--enwiki derived wikidata interwikis-->
-[[es:Konpira Gongen]]
-[[ja:金毘羅権現]]
-[[zh:金毘羅權現]]
-
-[[en:Konpira Gongen]]
-{{wikidata link|Q167077}}
+{{wikidata link|Q167077|en|Konpira Gongen|es|Konpira Gongen|ja|金毘羅権現|simple|Kompira|zh|金毘羅權現}}
 [[Category:Acala]]
 [[Category:Gongen]]
 [[Category:Japanese deities]]

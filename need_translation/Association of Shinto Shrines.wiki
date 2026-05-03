@@ -1,5 +1,4 @@
-<!--interwikis from wikidata-->[[ca:Associació de Santuaris Xinto]][[en:Association of Shinto Shrines]][[fr:Association des sanctuaires shinto]][[id:Asosiasi Kuil Shinto]][[it:Associazione dei santuari shintoisti]][[ja:神社本庁]][[ko:신사본청]][[ru:Дзиндзя хонтё]][[simple:Association of Shinto Shrines]][[sv:Jinja Honcho]][[zh:神社本廳]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Association_of_Shinto_Shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
 
 {{Short description|Religious organization overseeing Shinto shrines in Japan|qq=}}{{Infobox organization
 | image                    = Association of Shinto Shrines 2010.jpg
@@ -52,24 +51,7 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 {{Authority control|qq=}}
 {{State Shinto|qq=}}
 
-
-
-[[en:Association of Shinto Shrines]]
-
-<!-- translated from jaspanese -->
-
-<!--enwiki derived wikidata interwikis-->
-[[ca:Associació de Santuaris Xinto]]
-[[fr:Association des sanctuaires shinto]]
-[[id:Asosiasi Kuil Shinto]]
-[[it:Associazione dei santuari shintoisti]]
-[[ja:神社本庁]]
-[[ko:신사본청]]
-[[ru:Дзиндзя хонтё]]
-[[simple:Association of Shinto Shrines]]
-[[sv:Jinja Honcho]]
-[[zh:神社本廳]]
-{{wikidata link|Q908077}}
+{{wikidata link|Q908077|ca|Associació de Santuaris Xinto|en|Association of Shinto Shrines|fr|Association des sanctuaires shinto|id|Asosiasi Kuil Shinto|it|Associazione dei santuari shintoisti|ja|神社本庁|ko|신사본청|ru|Дзиндзя хонтё|simple|Association of Shinto Shrines|sv|Jinja Honcho|zh|神社本廳}}
 
 {{translated page|ja|神社本庁|version=107508523|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -232,10 +214,6 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 古社や有名な神社であっても、神社本庁との被包括関係を有せず、{{jalink|単立|Q11408858}}{{jalink|宗教法人|Q7311343}}として運営される場合がある<ref>{{Cite web |url=http://www.japanese-shrines.com/58/#index_id10 |title=神社本庁に属さない神社一覧！独立神社の特徴と歴史を解説 - Japanese Shrines |access-date=2025-6-18 |publisher=株式会社アイユー}}</ref><ref>{{Cite web |url=https://www.tokyo-np.co.jp/article/69079#:~:text=%E9%9B%A2%E8%84%B1%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AF%E3%80%81%E6%98%A8%E5%B9%B4,%E3%81%8C%E5%B1%8A%E3%81%8B%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%9F%E3%82%81%E3%81%A8%E3%81%84%E3%81%86%E3%80%82 |title=「こんぴらさん」が神社本庁を離脱　大嘗祭の供え物届かず「天皇陛下にも不敬極まりない」 |access-date=2025-6-18 |publisher=東京新聞社}}</ref>。例として{{jalink|靖国神社|Q242803}}・{{jalink|富岡八幡宮|Q654417}}・{{jalink|武蔵御嶽神社|Q6587276}}・{{jalink|鎌倉宮|Q710351}}・{{jalink|鶴岡八幡宮|Q701403}}・{{jalink|日光東照宮|Q696641}}・{{jalink|気多大社|Q11129340}}・{{jalink|伏見稲荷大社|Q714828}}・{{jalink|梅宮大社|Q276781}}・{{jalink|梨木神社|Q11538748}}・{{jalink|建勲神社|Q3195151}}・{{jalink|京都霊山神社}}・{{jalink|車折神社|Q11637305}}・{{jalink|出雲大神宮|Q10896675}}・{{jalink|石切剣箭神社|Q11585189}}・{{jalink|日前神宮・國懸神宮|Q888184}}・{{jalink|淡嶋神社|Q7007362}}・{{jalink|草戸稲荷神社|Q11618139}}・{{jalink|金刀比羅宮|Q94760}}・{{jalink|光雲神社|Q11388585}}・{{jalink|小倉祇園八坂神社}}などがある。大きな単立神社は約2000社、小さな祠等を含めると20万社の単立神社がある{{r|diamond20160416a}}<ref name="mainichi20160318">{{cite news |url=https://web.archive.org/web/20160320224741/http://mainichi.jp/articles/20160318/dde/012/010/017000c |title=続報真相　改憲急ぐ安倍首相を応援する人々　「美しい日本の憲法」とは |newspaper=毎日新聞 |date=2016-03-18 |accessdate=2016-03-18 }}</ref>。{{jalink|東大阪市|Q243863}}のように宗教法人格を有している神社に限っても半数以上が神社本庁に属していない地域もある<ref>[http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai6sibu/higasiosaka-city/m28.html 大阪府神社庁 第六支部 東大阪市]参照。</ref>。
 
 神社本庁以外にも神社神道系の包括宗教法人がいくつかあり（{{jalink|神社本教|Q11590707}}、{{jalink|北海道神社協会}}、{{jalink|神社産土教|Q60986070}}、{{jalink|日本神宮本庁}}など）、これに属する神社は神社本庁の被包括関係には属さない。
-<!---
-*{{jalink|天理教|Q737323}}、{{jalink|金光教|Q897040}}など神道系の新宗教（{{jalink|教派神道|Q1532150}}）は、神社本庁とは別の宗教団体である。
-*{{jalink|御嶽神社|Q11488964}}も神社組織だが、教派神道・{{jalink|御嶽教|Q6880734}}に属し、神社本庁とは別の宗教団体である。
---->
 
 {{jalink|気多大社|Q11129340}}は{{jalink|別表神社|Q10898274}}であったが、財産の管理および処分に関する気多大社神社規則変更における対立から訴訟を起こすまでに至り、神社本庁から離脱し単立神社となり、2010年には最高裁で神社規則の変更も認められ勝訴となっている<ref name="diamondo20160416d">「強権発動で宮司人事にも介入　完了・世俗化する神社本庁の罪」、週刊ダイヤモンド、2016年4月16日。</ref><ref>「気多大社 人事で混乱　宮司2人 法廷頼み」、朝日新聞、2006年9月17日</ref><ref>「最高裁、神社規則の変更認める　羽咋市の気多神社訴訟」、共同通信、2010年4月20日</ref>。
 
@@ -267,7 +245,6 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 |-
 |3代||{{jalink|池田厚子|Q1030348}}||1996-  ||1931-  || 
 |}
-
 
 {| class="wikitable" style="font-size: small; width: 100%;"
 |+ 歴代の統理
@@ -381,7 +358,7 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 |}
 
 == 政治活動・主張 ==
-神社本庁の関係団体に{{jalink|神道政治連盟|Q11590929}}（神政連）がある{{r|hori}}。また、神社本庁総長・{{jalink|田中恆清|Q23671014}}は{{jalink|日本会議|Q11507216}}の副会長、統理・{{jalink|鷹司尚武|Q7140646}}は顧問である<ref name=asahi20160324>{{Cite news|<!--url=http://digital.asahi.com/articles/DA3S12271243.html-->|title=日本会議研究 憲法編 中 国民投票へ 賛同拡大運動 |newspaper={{jalink|朝日新聞|Q720503}}|date=2016-03-24|page=朝刊14版 3面}}</ref>。日本会議の前身で宗教団体中心の{{jalink|日本を守る会|Q24863543}}結成に関与するなど、古くからつながりがある。
+神社本庁の関係団体に{{jalink|神道政治連盟|Q11590929}}（神政連）がある{{r|hori}}。また、神社本庁総長・{{jalink|田中恆清|Q23671014}}は{{jalink|日本会議|Q11507216}}の副会長、統理・{{jalink|鷹司尚武|Q7140646}}は顧問である<ref name=asahi20160324>{{Cite news||title=日本会議研究 憲法編 中 国民投票へ 賛同拡大運動 |newspaper={{jalink|朝日新聞|Q720503}}|date=2016-03-24|page=朝刊14版 3面}}</ref>。日本会議の前身で宗教団体中心の{{jalink|日本を守る会|Q24863543}}結成に関与するなど、古くからつながりがある。
 
 1953年（昭和28年）の{{jalink|第3回参議院議員通常選挙|Q1766470}}で神社本庁は{{jalink|宮川宗徳|Q27921105}}を擁立したが、宮川は落選した<ref name=hori>{{jalink|堀幸雄|Q11427465}}『最新右翼辞典』2006年、「神社本庁」の項、295ページ</ref>。1966年（昭和41年）に神社審議会は「神社本庁関係の全組織をあげて強力な推進団体を組織して、国会に代表を送る」べきだと答申した{{sfn|塚田穂高|2015|pp=44-48}}。1969年（昭和44年）の神政連結成後は、独自候補擁立ではなく既存政党の政治家の推薦が行われた{{r|hori}}{{sfn|塚田穂高|2015|pp=44-48}}。塚田穂高によれば神政連結成後、神社本庁と神政連は{{jalink|自由民主党 (日本)|Q232595|自由民主党}}の議員を主に支援しており{{sfn|塚田穂高|2015|pp=44-48}}、{{jalink|堀幸雄|Q11427465}}によれば「利益代表を出すのに熱心」だった{{r|hori}}。{{jalink|ジェフ・キングストン}}によれば、神社本庁は{{jalink|日本遺族会|Q3662025}}など他の右派団体と共に、{{jalink|靖国神社|Q242803}}を参拝する見返りに政治家に票と金を提供する{{jalink|ロビー活動|Q187117}}をおこなった<ref>{{jalink|ジェフ・キングストン}}, ''[[iarchive:ContempJapan|Contemporary Japan: History, Politics, and Social Change since the 1980s]]'', p.160 ISBN 978-1-118-31506-4</ref>。
 
@@ -448,7 +425,6 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 また、鷹司統理を支持する神職たちによる「{{jalink|花菖蒲ノ会||花菖蒲ノ會}}」が小串和夫({{jalink|熱田神宮|Q482065}}名誉宮司)、中野幸彦({{jalink|多賀大社|Q402091}}名誉宮司)、{{jalink|千家尊祐}}{{efn2|{{jalink|千家国麿|Q16963459}}権宮司・{{jalink|千家典子|Q2740324}}夫妻の父}}({{jalink|出雲大社|Q696362}}宮司)らを発起人として、令和4年(2022)9月14日に結成され、神社本庁の正常化を目指して田中執行部の退陣を求める運動が開始された<ref>「統理を支持する会設立 賛同260人超 神社本庁のあり方議論」,『中外日報』1面,2022年9月14日</ref><ref>「統理支持の"花菖蒲ノ會"　賛同者1200人超す　神社本庁」,『中外日報』2022年10月07日1面。[https://www.chugainippoh.co.jp/article/news/20221007-005.html 同web版](2022年10月11日閲覧)</ref>。
 
 12月22日、東京地裁は「総長選任には役員会の議決が必要」として、芦原理事の請求を棄却した<ref>{{Cite news|url=https://www.asahi.com/sp/articles/ASQDQ6RCFQDQUTIL008.html|title=神社本庁の総長ポストめぐり判決 「統理」だけの指名、認められず|newspaper=朝日新聞|date=2022-12-22|accessdate=2022-12-23}}</ref>。芦原は判決を不服として控訴したが、2023年6月に東京高裁はこれを棄却。最高裁第3小法廷が2024年10月2日付で芦原の上告を棄却する決定をし、芦原を総長と認めなかった1、2審判決が確定した<ref>{{Cite news|url=https://www.sankei.com/article/20241003-XXCPKZGM5RMINMJV43UWA3YA2Y/|title=最高裁も神社本庁「総長」と認めず トップの指名で騒動、地位確認求めた宮司の敗訴確定|newspaper=産経新聞|date=2024-10-03|accessdate=2024-10-04}}</ref>。この判決をうけ、執行部は田中氏に対する「代表役員総長」への指名を鷹司統理に要求。鷹司統理は12月12日の役員会終了後、「神社本庁の将来を考え、宗教団体の代表者として、組織の分裂状況を回避するため」として田中恒清をあらためて「正式に総長に指名」し、5期目の任期が正式に確定した。2025年5月22日から24日に開催された評議員会で田中総長の続投が確認され、田中氏の在任は6期目にはいることが確定した。
-
 
 ==刊行物==
 「月刊若木」「神職教養シリーズ」「氏子のしおり」「神社広報」<ref>{{jalink|全国各種団体名鑑|Q97496322}} 1974年版(第5版) p.634</ref>（後、「まほろば」<ref>https://ndlsearch.ndl.go.jp/books/R100000002-I000000041064</ref>）など。

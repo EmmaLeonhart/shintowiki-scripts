@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Engishiki_Ranks for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24975162458|time triggered pipeline]] -->
 {| class="wikitable"
 |+Engishiki Rankings
 !Ranking 1
@@ -108,6 +109,6 @@
 |}
 [[Category:Special:LonelyPages November 4 2025]]
 
-[[en:Engishiki Ranks]]
 [[Category:Pages without wikidata]]
 [[Category:Need translation]]
+{{wikidata link||en|Engishiki Ranks}}

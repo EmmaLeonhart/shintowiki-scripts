@@ -1,6 +1,4 @@
-<!--interwikis from wikidata-->[[ja:伊豆神社]]
-
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 
 {{otheruses|A shrine in Gifu City, Gifu Prefecture|A shrine in Ōtsu City, Shiga Prefecture|Izu Shrine (Ōtsu City)}}
 {{Infobox religious building
@@ -31,11 +29,8 @@ It was previously enshrined around Nagamori Hosohata, in the Ishinaga area, but 
 {{Iwanaga Faith}}
 {{translated page|ja|伊豆神社|version=100778661|comment=Imported full ja history}}
 
-
-<!--jawiki derived wikidata interwikis-->
 {{Commons category|Izu Shrine (Gifu)}}
-[[ja:伊豆神社]]
-{{wikidata link|Q11380589}}
+{{wikidata link|Q11380589|ja|伊豆神社}}
 [[Category:Shinto shrines in Gifu]]
 [[Category:Wikidata has short description]]
 [[Category:Need translation]]

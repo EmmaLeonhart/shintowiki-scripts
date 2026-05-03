@@ -1,9 +1,10 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kai_clan for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
 {{出典の明記|date=2017年4月}}
 '''Kai clan''' (''kai-shi'') is one of the {{ill|clans|ja|氏族}} of {{ill|Japan|ja|日本}}. Three main branches and others are identified: the {{ill|Kai no Kuni no Miyatsuko|ja|甲斐国造}} lineage of {{ill|Kai Province|ja|甲斐}}, the {{ill|Fujiwara Northern House|ja|藤原北家}} {{ill|Kikuchi clan|ja|菊池氏}} lineage of {{ill|Higo|ja|肥後}}, and the {{ill|shugodai|ja|守護代}} '''Kai clan''' of {{ill|Echizen Province|ja|越前国|lt=Echizen|lt_ja=越前}}.
 == Kai clan (Kai no Kuni no Miyatsuko) ==
 {{日本の氏族
 |家名 = Kai clan
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = Kai-no-Kimi
 |家祖 =
@@ -50,7 +51,7 @@ The {{ill|family crest|ja|家紋}} is the "Chigai-taka-no-ha" (crossed hawk feat
 # {{ill|Kai Chikahide|ja|甲斐親英}} (Sōryū)
 
 === Genealogy ===
-; Solid lines are biological children, dotted lines (vertical) are adopted children. <!-- 構成の都合で出生順より組み替え -->
+; Solid lines are biological children, dotted lines (vertical) are adopted children. 
 {{familytree/start|style="font-size:120%"}}
 {{familytree |border=0|01||||| 01={{ill|Kikuchi Takefusa|ja|菊池武房}}}}
 {{familytree |border=0| |!||||||}}
@@ -70,11 +71,6 @@ The {{ill|family crest|ja|家紋}} is the "Chigai-taka-no-ha" (crossed hawk feat
 {{familytree |border=0| ||||!||||||!|||}}
 {{familytree |border=0||||01||||02||| 01={{ill|Chikahide|ja|甲斐親英|lt=Chikahide|lt_ja=親英}}<sup>6</sup>|02=Akimasa}}
 {{familytree/end}}
-<!--
-系譜参考
-* [https://web.archive.org/web/20071107202628/http://www.myj7000.jp-biz.net/clan/02/020/02006c.htm#002 日本の名字七千傑] {{ja icon}}
-* [http://www2.harimaya.com/sengoku/html/kai_k.html 武家家伝] {{ja icon}}
--->
 
 == Kai clan (Sano clan) ==
 A clan that served as {{ill|shugodai|ja|守護代}} of {{ill|Echizen Province|ja|越前国|lt=Echizen|lt_ja=越前}}, {{ill|Tōtōmi Province|ja|遠江国|lt=Tōtōmi|lt_ja=遠江}}, etc. under the Shiba clan{{Efn|{{Quotation|"Buei-sama go-bunkoku Echizen-no-kuni shugodai, Kai Saemon-no-daibu|''{{ill|Ōshū Amarume Kyūki|ja|奥州余目旧記}}''|{{Sfn|Ōta|1934|p=1690}} }} }}. Considered part of the {{ill|Sano clan|ja|佐野氏}}, their origin is thought to be in {{ill|Shimotsuke Province|ja|下野国|lt=Shimotsuke|lt_ja=下野}}, but this is not clearly known.
@@ -99,10 +95,10 @@ However, unlike the {{ill|Asakura clan|ja|朝倉氏}} of Echizen and the {{ill|O
 # {{ill|Kai Nobuhisa|ja|甲斐信久}}
 
 == Footnotes ==
-<!-- === 注釈 === -->
+
 {{脚注ヘルプ}}
 {{Notelist}}
-<!-- === 出典 === -->
+
 {{Reflist}}
 
 == References ==
@@ -117,8 +113,6 @@ However, unlike the {{ill|Asakura clan|ja|朝倉氏}} of Echizen and the {{ill|O
 * {{ill|Asakura clan|ja|朝倉氏}}
 * {{ill|Chōroku War|ja|長禄合戦}}
 
-
-{{DEFAULTSORT:かいし}}
 [[Category:甲斐氏|*]]
 [[Category:菊池氏|*か]]
 [[Category:日本の氏族]]
@@ -128,6 +122,6 @@ However, unlike the {{ill|Asakura clan|ja|朝倉氏}} of Echizen and the {{ill|O
 [[Category:甲斐国の氏族]]
 [[Category:肥後国の氏族]]
 [[Category:Kuni no miyatsuko]]
-[[ja:甲斐氏]]
 [[Category:Need translation]]
 [[Category:Pages without wikidata]]
+{{wikidata link||ja|甲斐氏}}

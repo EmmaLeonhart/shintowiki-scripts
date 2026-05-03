@@ -1,10 +1,7 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=20-Year_Plan_for_One_Million_Families for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 {{Expand Japanese|二十カ年百万戸送出計画|date=November 2025}}
-<!--interwikis from wikidata-->[[ja:二十カ年百万戸送出計画]][[zh:二十年百万户送出计划]]
 
-
-[[en:20-Year Plan for One Million Families]]
-[[ja:二十カ年百万戸送出計画]]
-{{wikidata link|Q18234309}}
+{{wikidata link|Q18234309|ja|二十カ年百万戸送出計画|zh|二十年百万户送出计划|en|20-Year Plan for One Million Families}}
 
 {{translated page|ja|二十カ年百万戸送出計画|version=88308256|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -34,7 +31,7 @@
 移民の送出戸数は、関東軍作成の「満州農業移民百万戸移住計画」と同じく、第一期を10万戸とし、下表のように、5か年に割り振った<ref name="tsutsui">筒井、1997年、189ページ</ref>。
 {| class="wikitable" style="text-align:right"
 |+ 第一期満州移民入植計画戸数
-!年度!!年次!!集団移民（戸）!!自由移民（戸）!!計（戸） <!-- 見出しセルには適用されない -->
+!年度!!年次!!集団移民（戸）!!自由移民（戸）!!計（戸） 
 |-
 !昭和12年（1937年）度
 |6次||5,000||1,000||6,000
@@ -69,7 +66,7 @@
 {{jalink|日中戦争|Q170314}}の拡大により{{jalink|国家総力戦|Q154605}}体制が1938年（昭和13年）日中戦争が拡大かつ長期化すると戦時体制下の軍需産業に多くの労働力が動員されるようになると、上記第一期移民送出計画の遂行が危ぶまれた。拓務省は昭和13年度、昭和14年度の戸数を減少させ、その代わり昭和15年度・16年度を増加させ、総数としては5年間で10万戸を達成するという修正を施した。この時に満蒙開拓青少年義勇隊を毎年3万人、4年間送出し、計12万人送出することとされた。<ref name="tsutsui-194">筒井、1997年、194ページ</ref>。しかし、その後の実績は、縮小され修正計画すら達成できず、昭和15年度以降は、各年度の状況を見てその都度送出計画を立てるという場当たり的措置をとらざるを得なくなった。移民事業の崩壊期である<ref name="tsutsui-200">筒井、1997年、200ページ</ref>。
 {| class="wikitable" style="text-align:right"
 |+ 本格移民の第一期の入植計画戸数（当初・修正・再修正）と実績戸数
-!年度!!年次!!当初計画（戸）!!修正計画（戸）!!再修正計画（戸）!!実績 <!-- 見出しセルには適用されない -->
+!年度!!年次!!当初計画（戸）!!修正計画（戸）!!再修正計画（戸）!!実績 
 |-
 !昭和12年（1937年）度
 |6次||6,000||6,000||6,000||5,942
@@ -97,7 +94,6 @@
 
 == 脚注 ==
 {{Reflist}}
-
 
 ==End Japanese==
 [[Category:歴史上の人間の移動]]

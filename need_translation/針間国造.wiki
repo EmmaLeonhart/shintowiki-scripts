@@ -23,7 +23,7 @@ Regarding {{ill|Inase-iribiko-no-Miko|ja|稲背入彦皇子}}, the ''Nihon Shoki
 <div class="NavFrame" style="width:100%;">
  <div class="NavHead" style="padding:1.5px; line-height:1.7; letter-spacing:1px;">House of the Harima no Kuni no Miyatsuko</div>
  <div class="NavContent" style="text-align:left;">
-;Bold = head of clan; solid line = biological child; dotted line = adopted.<!--構成の都合で出生順より組み替え-->
+;Bold = head of clan; solid line = biological child; dotted line = adopted.
 {{familytree/start|style=font-size:85%}}
 {{familytree |border=0|||||||01||||| 01='''{{ill|Emperor Keikō|ja|景行天皇}}'''}}
 {{familytree |border=0| |||||||!}}
@@ -128,8 +128,7 @@ There is a theory that the {{ill|Danjōzan Kofun|ja|壇場山古墳}}, the large
 {{脚注ヘルプ}}
 {{Reflist}}
 
-{{DEFAULTSORT:はりまのくにのみやつこ}}
 [[Category:播磨国の氏族]]
 [[Category:Kuni no miyatsuko]]
-[[ja:針間国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|針間国造}}

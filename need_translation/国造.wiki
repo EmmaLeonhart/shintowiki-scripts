@@ -81,7 +81,6 @@
 === 諸国造一覧 ===
 国造が存在したのは[[律令制]]以前であるが、便宜上[[9世紀]]以降の令制国の領域で分類した<ref>『国史大辞典』国造項 氏姓国造一覧表を参考にして記載。</ref>。
 
-<!--都に近い順に記載-->
 {| class="wikitable" style="background:#ffffff;font-size:85%" align="left" 
 !style="background:#ccccff; white-space:nowrap" rowspan="2" | 令制国
 !style="background:#ccccff; white-space:nowrap" colspan="2" | 国造名
@@ -158,7 +157,7 @@
 |-
 | '''[[相武国造]]'''<br />（武相国造）||さがむ||茅武彦命(弟武彦命)<br />（成務天皇期）||[[壬生氏]]（直）||相模国東部||
 |-
-| align="center" style="background:#E3E3FF" rowspan="3"| [[武蔵国]]<!--令制国は分類の便宜上に用いているので、東山道ではなく東海道で分類。-->
+| align="center" style="background:#E3E3FF" rowspan="3"| [[武蔵国]]
 | '''[[知々夫国造]]'''||ちちぶ||知知夫彦命<br />（[[崇神天皇]]期）||大伴部氏（直）か||武蔵国北西部||
 |-
 | '''[[无邪志国造]]'''||むさし||兄多毛比命<br />（成務天皇期）||无邪志氏（直）および笠原氏（直）<br />のち丈部氏（直）改姓後武蔵氏（宿禰）|| rowspan="2" |武蔵国（秩父除く）||[[氷川神社]]社家
@@ -609,11 +608,22 @@
 
 {{カバネ}}
 {{Normdaten}}
-{{DEFAULTSORT:くにのみやつこ}}
 [[Category:神道の称号・役職]]
 [[Category:古墳時代]]
 [[Category:飛鳥時代]]
 [[Category:Kuni no miyatsuko]]
 [[Category:Need translation]]
-[[ja:国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|国造}}
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
+[[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Pages with 1500+ untranslated japanese characters]]
+[[Category:Pages with 2000+ untranslated japanese characters]]
+[[Category:Pages with 3000+ untranslated japanese characters]]

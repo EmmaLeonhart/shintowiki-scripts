@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kofun_interior_gallery for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 <gallery>
 File:Agemizo_Tenjinzuka_Kofun,_3D-P.jpg|thumb|[[Agemizo Tenjinzuka Kofun]]
 File:Akaizuka_Kofun,_3D-P.jpg|thumb|[[Akaizuka Kofun]]
@@ -222,9 +223,7 @@ goodbye $1
 
 }}
 
-
-<!-- no translated page template found in history -->
-[[en:Kofun interior gallery]]
 [[Category:Pages without wikidata]]
 [[Category:Need translation]]
 [[Category:Translated pages]]
+{{wikidata link||en|Kofun interior gallery}}

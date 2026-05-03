@@ -4,8 +4,8 @@
 | 画像サイズ = 
 | 画像説明 = 
 | 時代 = [[弥生時代]]、[[古代|上古]]
-| 生誕 = [[神武天皇]]即位前14年<ref name="gunshi"/><!--（伝）[[神武天皇]]の時代<ref group="注">父である神八井耳命が神武天皇元年以降の誕生であり（『日本書紀』）、健磐龍命の事績の最初の記録が神武天皇76年のものである（『[[#ruien|古事類苑. 神祇部３０]]』）ので、健磐龍命の生誕は[[神武天皇]]元年から同76年の間と推測される。</ref><br />（ただし実在性不確か、また諸説あり）--><!--ノート参照-->
-| 死没 = 神武天皇93年[[丙午]][[8月15日 (旧暦)|8月15日]]<ref name="gunshi"/><br />（他にも諸説あり）<!--（伝）[[崇神天皇]]の時代以降<ref group="注">建五百建命は崇神天皇の時代に初代[[科野国造]]に任命されている（「[[国造本紀]]」。[[#国造本紀|後述]]。）ので、死没はそれ以降と推測できる。なお『[[日本書紀]]』[[景行天皇]]段には阿蘇都彦が登場する（[[#日本書紀|後述]]）が、人ではなく神として登場するので生存記録とみなしうるか不明である。</ref><br />（ただし実在性不確か）--><!--ノート参照-->
+| 生誕 = [[神武天皇]]即位前14年<ref name="gunshi"/>
+| 死没 = 神武天皇93年[[丙午]][[8月15日 (旧暦)|8月15日]]<ref name="gunshi"/><br />（他にも諸説あり）
 | 改名 = 
 | 別名 = 天健磐龍命<ref name="ruien"/><br />一説：阿蘇都彦命<ref name="ruien">『[[#ruien|古事類苑. 神祇部３０]]』。</ref>
 | 諡号 = 
@@ -105,11 +105,9 @@
 {{Reflist|group="注"}}
 === 出典 ===
 {{Reflist|2|refs=
-<!--<ref name="hongi">「[[国造本紀]]」[[科野国造]]条。</ref>-->
+
 <ref name="gunshi">『[[#gunshi|阿蘇郡誌]]』</ref>
-<!--
-<ref name="keifu">『[[#keifu|古代氏族系譜集成]]』。</ref>
--->
+
 <ref name="keizu">『[[#keizu|古代豪族系図集覧]]』。</ref>
 <ref name="mura">[http://www.ubuyama-v.jp/summary/history/ 産山村の沿革] - 産山村ホームページ（2018年7月25日 午後9時55分（[[日本標準時|JST]]）閲覧）</ref>
 <ref name="ihon">『阿蘇家略系譜』</ref>
@@ -128,7 +126,6 @@
 == 関連項目 ==
 *[[飛鳥時代以前の人物一覧]]
 
-{{DEFAULTSORT:たけいわたつのみこと}}
 [[Category:日本神話の人物]]
 [[Category:古代日本の人物]]
 [[Category:肥後国の人物]]
@@ -139,5 +136,11 @@
 [[Category:多氏]]
 [[Category:Kuni no miyatsuko]]
 [[Category:Need translation]]
-[[ja:健磐龍命]]
 [[Category:Need translation]]
+{{wikidata link||ja|健磐龍命}}
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]
