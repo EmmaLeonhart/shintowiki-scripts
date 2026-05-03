@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-03
+
+### cleanup-loop: every 6h fire actually runs again
+**Status:** Fix
+
+Symptom: scheduled run at 13:19 UTC completed in 7 seconds with every downstream job reporting "in 0s". The earlier 08:05 UTC fire showed the same shape (window-gate ran, everything else skipped). User flag: "last run literally did absolutely nothing."
+
+Root cause: on 2026-05-02 (commit 52eac59) the catch-up window was removed and `should-proceed` was kept as the cron cadence gate — only the 00:00 UTC fire proceeded. The catch-up branch that previously overrode that gate (`CATCHUP=true → proceed=true`) went away with it, so 3-of-4 cron slots silently no-op'd. The cron-line comment still claimed "every fire runs the full pipeline" — code and comment had drifted.
+
+Fix: removed the off-hour gate entirely. `window-gate` now publishes only the per-orchestrator edit limits; every downstream `if:` lost its `should-proceed` predicate (`if: always()` where the job had other reasons to keep `always()`, removed otherwise). Every 6h cron fire now runs the full pipeline. `submit-quickstatements` gained `cleanup` in its `needs:` list — it was already referencing `needs.cleanup.result` without declaring the dependency.
+
+If a future pause is needed, disable individual jobs explicitly rather than re-introducing the gate.
+
+---
+
 ## 2026-04-24
 
 ### Session summary — archive-push plan, timeline, and everything that shipped today
