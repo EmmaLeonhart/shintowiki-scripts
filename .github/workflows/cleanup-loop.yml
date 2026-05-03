@@ -30,28 +30,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # ══════════════════════════════════════════════════════════
-  # TEMPORARY (2026-04-23 → 2026-06-01): catch-up window.
-  # Due to potential concerns about the future of shintowiki, we are
-  # temporarily (a) skipping the non-orchestrator wiki-cleanup step,
-  # SPARQL QS generation, and QS/Wikidata submission; and (b) raising
-  # the per-run edit budget on the four namespace orchestrators. The
-  # window-gate job below outputs `catchup-active` so every affected
-  # downstream job can key off one value.
+  # window-gate handles two concerns:
+  #   - per-orchestrator edit limits (uniform 100 by default; can be
+  #     bumped via workflow_dispatch input on the individual orchestrator
+  #     workflows if needed)
+  #   - cron cadence: only the 00:00 UTC scheduled fire proceeds; the
+  #     other three slots in the every-6h cron are window-gate-only no-ops
+  #     so the effective cadence is daily without changing the cron line
   #
-  # TEMPORARY WITHIN THE TEMPORARY (2026-05-02 → 2026-05-09):
-  # category-push window. Mainspace and template are basically done
-  # for now, so their budgets drop to 10/run (just enough to catch
-  # any new pages that show up). Category gets 500/run to drain its
-  # backlog; misc holds at 100/run. On 2026-05-09 everything reverts
-  # to a uniform 500 until the outer catch-up window expires
-  # 2026-06-01. (Earlier window 2026-04-24 → 2026-05-02 biased toward
-  # mainspace/template at 1000 each — superseded.)
-  # ══════════════════════════════════════════════════════════
+  # The catch-up window (2026-04-23 → 2026-06-01) and the inner
+  # category-push window (2026-05-02 → 2026-05-09) were removed on
+  # 2026-05-02 — QS/cleanup/wikidata-qualifier jobs are re-enabled. If a
+  # future pause is needed, prefer disabling individual jobs explicitly
+  # over re-introducing a global catchup-active gate.
   window-gate:
     runs-on: ubuntu-latest
     outputs:
-      catchup-active: ${{ steps.check.outputs.active }}
       should-proceed: ${{ steps.check.outputs.proceed }}
       mainspace-edit-limit: ${{ steps.check.outputs.mainspace-edit-limit }}
       template-edit-limit: ${{ steps.check.outputs.template-edit-limit }}
@@ -60,68 +54,31 @@ jobs:
     steps:
       - id: check
         run: |
-          TODAY=$(date -u +%Y%m%d)
+          # (1) Per-orchestrator edit limits. Uniform 100/run baseline.
+          echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
+          echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
+          echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
+          echo "misc-edit-limit=100"      >> "$GITHUB_OUTPUT"
+          echo "Default: uniform 100 budget per orchestrator."
 
-          # (1) Is the catch-up window still open?
-          if [ "$TODAY" -lt "20260601" ]; then
-            echo "active=true" >> "$GITHUB_OUTPUT"
-            echo "Catch-up window ACTIVE (pre-2026-06-01): QS/cleanup jobs skipped."
-            CATCHUP=true
-          else
-            echo "active=false" >> "$GITHUB_OUTPUT"
-            echo "Catch-up window EXPIRED: normal schedule."
-            CATCHUP=false
-          fi
-
-          # (2) Per-orchestrator edit limits. During the category-push
-          # window (2026-05-02 → 2026-05-09 UTC) mainspace and template
-          # are basically done, so their budgets drop to 10/run — just
-          # enough to pick up any new pages that show up. Category gets
-          # 500/run to drain its backlog; misc holds at 100/run. On
-          # 2026-05-09 the split reverts to a uniform catchup budget
-          # (500 each until 2026-06-01, then 100 each).
-          if [ "$TODAY" -lt "20260509" ]; then
-            echo "mainspace-edit-limit=10"   >> "$GITHUB_OUTPUT"
-            echo "template-edit-limit=10"    >> "$GITHUB_OUTPUT"
-            echo "category-edit-limit=500"   >> "$GITHUB_OUTPUT"
-            echo "misc-edit-limit=100"       >> "$GITHUB_OUTPUT"
-            echo "Category-push window ACTIVE (pre-2026-05-09): category 500, misc 100, mainspace/template 10."
-          elif [ "$CATCHUP" = "true" ]; then
-            echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
-            echo "template-edit-limit=500"  >> "$GITHUB_OUTPUT"
-            echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
-            echo "misc-edit-limit=500"      >> "$GITHUB_OUTPUT"
-            echo "Catch-up window: uniform 500 budget per orchestrator."
-          else
-            echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
-            echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
-            echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
-            echo "misc-edit-limit=100"      >> "$GITHUB_OUTPUT"
-            echo "Default: uniform 100 budget per orchestrator."
-          fi
-
-          # (3) Should this fire actually run the pipeline?
+          # (2) Should this fire actually run the pipeline?
           #   - push / workflow_dispatch: always run
-          #   - schedule + catch-up active: run every 6h fire (catch-up cadence)
-          #   - schedule + catch-up expired: only the 00:00 UTC fire runs
-          #     (daily cadence, matching pre-catchup behaviour)
+          #   - schedule: only the 00:00 UTC fire runs (daily cadence;
+          #     the every-6h cron has 4 slots, 3 of which are no-ops)
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
             echo "proceed=true" >> "$GITHUB_OUTPUT"
             echo "Non-schedule event ($GITHUB_EVENT_NAME): proceeding."
-          elif [ "$CATCHUP" = "true" ]; then
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
-            echo "Catch-up active: every 6h scheduled fire proceeds."
           elif [ "$(date -u +%H)" = "00" ]; then
             echo "proceed=true" >> "$GITHUB_OUTPUT"
-            echo "00:00 UTC scheduled fire (post-catchup daily slot): proceeding."
+            echo "00:00 UTC scheduled fire (daily slot): proceeding."
           else
             echo "proceed=false" >> "$GITHUB_OUTPUT"
-            echo "Off-hour scheduled fire (post-catchup): window-gate only, downstream will skip."
+            echo "Off-hour scheduled fire: window-gate only, downstream will skip."
           fi
 
   generate-quickstatements:
     needs: window-gate
-    if: needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
+    if: needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/generate-quickstatements.yml
 
   # Build pages right after SPARQL generation (runs in parallel with cleanup)
@@ -132,17 +89,28 @@ jobs:
 
   cleanup:
     needs: [window-gate, generate-quickstatements]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
-  # sync_git_synced_pages runs on every pipeline regardless of the
-  # catch-up window — individual date gating, so the git_synced/ ↔ wiki
-  # mirror keeps moving even while the broader legacy cleanup is paused.
+  # sync_git_synced_pages: bidirectional sync between
+  # [[Category:Git synced pages]] on miraheze and the repo's git_synced/
+  # directory.
   git-synced-sync:
     needs: window-gate
     if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/git-synced-sync.yml
+    secrets: inherit
+
+  # sync_fandom_pages: bidirectional sync between
+  # [[Category:Fandom sync]] on miraheze and same-titled pages on
+  # shinto.fandom.com. For Lua-related templates and similar pages
+  # whose fandom-side wikitext shim must stay in step with the
+  # miraheze-side Lua-aware version.
+  fandom-sync:
+    needs: window-gate
+    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    uses: ./.github/workflows/fandom-sync.yml
     secrets: inherit
 
   # Per-namespace orchestrators — each runs every per-page op whose
@@ -207,26 +175,23 @@ jobs:
     secrets: inherit
 
   # Random delay only on cron schedule, not on push.
-  # Skipped during the catch-up window (per 2026-04-23 pause).
   random-wait:
     needs: [window-gate, miscellaneous-orchestrator]
-    if: github.event_name == 'schedule' && needs.window-gate.outputs.should-proceed == 'true' && needs.window-gate.outputs.catchup-active != 'true'
+    if: github.event_name == 'schedule' && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/random-wait.yml
 
   # On push: submit immediately after orchestrators
   # On cron: submit after random wait
-  # Skipped during the catch-up window.
   submit-quickstatements:
     needs: [window-gate, miscellaneous-orchestrator, random-wait]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
   # Direct Wikidata edits via API (after QS submission)
-  # Skipped during the catch-up window.
   wikidata-qualifier-edit:
     needs: [window-gate, cleanup, submit-quickstatements]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success' && needs.window-gate.outputs.catchup-active != 'true'
+    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
