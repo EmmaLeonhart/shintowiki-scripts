@@ -224,6 +224,24 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     if _REDIRECT_RE.search(current_text):
         return False, "skipped: page is a redirect"
 
+    # User-personal and MediaWiki-interface JS/CSS/JSON pages are
+    # protected by MediaWiki core (rights ``edituserjs`` /
+    # ``editusercss`` / ``edituserjson`` for User-namespace personal
+    # subpages, and ``editsitejs`` / ``editsitecss`` for MediaWiki:
+    # interface pages). EmmaBot doesn't hold any of those, so the
+    # delete + recreate cycle would succeed at the delete (since
+    # ``delete`` is granted) but fail at the recreate with
+    # ``customjsprotected``/``customcssprotected``, leaving the page
+    # in the deleted-edits pool with no replacement. Skip these
+    # outright. Discovered on 2026-05-03 after User:Immanuelle/
+    # common.js disappeared and undelete_immanuelle_common_js.py
+    # could not restore it for the same permission reason.
+    if title.endswith((".js", ".css", ".json")) and ns in (2, 3, 8, 9):
+        return False, (
+            "skipped: protected user/interface JS/CSS/JSON page "
+            "(history_offload cannot recreate after deletion)"
+        )
+
     # Fast-path skip: already in offloaded steady state.
     try:
         rev_count = _revision_count_capped(site, title)
