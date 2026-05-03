@@ -8,11 +8,9 @@ on:
       - "**/*.log"
       - "**/*.errors"
   schedule:
-    # Every 6 hours. Until 2026-06-01 every fire runs the full pipeline
-    # (catch-up cadence). After 2026-06-01 the window-gate job skips
-    # every downstream job except on the 00:00 UTC fire — so the
-    # effective cadence returns to daily automatically with no manual
-    # cron change needed. See window-gate's `should-proceed` output.
+    # Every 6 hours. Each fire runs the full pipeline; concurrency
+    # `cancel-in-progress: true` evicts any prior run still going so
+    # back-to-back orchestrator sweeps don't pile up.
     - cron: "0 */6 * * *"
 
 permissions:
@@ -30,23 +28,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # window-gate handles two concerns:
-  #   - per-orchestrator edit limits (uniform 100 by default; can be
-  #     bumped via workflow_dispatch input on the individual orchestrator
-  #     workflows if needed)
-  #   - cron cadence: only the 00:00 UTC scheduled fire proceeds; the
-  #     other three slots in the every-6h cron are window-gate-only no-ops
-  #     so the effective cadence is daily without changing the cron line
+  # window-gate publishes per-orchestrator edit limits (uniform 100 by
+  # default; can be bumped via workflow_dispatch input on the individual
+  # orchestrator workflows if needed).
   #
-  # The catch-up window (2026-04-23 → 2026-06-01) and the inner
-  # category-push window (2026-05-02 → 2026-05-09) were removed on
-  # 2026-05-02 — QS/cleanup/wikidata-qualifier jobs are re-enabled. If a
-  # future pause is needed, prefer disabling individual jobs explicitly
-  # over re-introducing a global catchup-active gate.
+  # Historical note: this job used to also gate cron cadence — only the
+  # 00:00 UTC fire proceeded, the other three 6h slots no-oped. That
+  # behaviour was paired with a catch-up window (2026-04-23 → 2026-06-01)
+  # that overrode the gate so all four slots ran during catch-up. When
+  # the catch-up override was removed on 2026-05-02 the off-hour gate
+  # was inadvertently left in place, silently turning 3-of-4 cron fires
+  # into no-ops. The off-hour gate was removed on 2026-05-03 — every
+  # cron fire now runs the pipeline.
   window-gate:
     runs-on: ubuntu-latest
     outputs:
-      should-proceed: ${{ steps.check.outputs.proceed }}
       mainspace-edit-limit: ${{ steps.check.outputs.mainspace-edit-limit }}
       template-edit-limit: ${{ steps.check.outputs.template-edit-limit }}
       category-edit-limit: ${{ steps.check.outputs.category-edit-limit }}
@@ -54,42 +50,26 @@ jobs:
     steps:
       - id: check
         run: |
-          # (1) Per-orchestrator edit limits. Uniform 100/run baseline.
+          # Per-orchestrator edit limits. Uniform 100/run baseline.
           echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
           echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
           echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
           echo "misc-edit-limit=100"      >> "$GITHUB_OUTPUT"
           echo "Default: uniform 100 budget per orchestrator."
 
-          # (2) Should this fire actually run the pipeline?
-          #   - push / workflow_dispatch: always run
-          #   - schedule: only the 00:00 UTC fire runs (daily cadence;
-          #     the every-6h cron has 4 slots, 3 of which are no-ops)
-          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
-            echo "Non-schedule event ($GITHUB_EVENT_NAME): proceeding."
-          elif [ "$(date -u +%H)" = "00" ]; then
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
-            echo "00:00 UTC scheduled fire (daily slot): proceeding."
-          else
-            echo "proceed=false" >> "$GITHUB_OUTPUT"
-            echo "Off-hour scheduled fire: window-gate only, downstream will skip."
-          fi
-
   generate-quickstatements:
     needs: window-gate
-    if: needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/generate-quickstatements.yml
 
   # Build pages right after SPARQL generation (runs in parallel with cleanup)
   generate-pages:
     needs: [window-gate, generate-quickstatements]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/generate-pages.yml
 
   cleanup:
     needs: [window-gate, generate-quickstatements]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
@@ -98,7 +78,6 @@ jobs:
   # directory.
   git-synced-sync:
     needs: window-gate
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/git-synced-sync.yml
     secrets: inherit
 
@@ -109,7 +88,6 @@ jobs:
   # miraheze-side Lua-aware version.
   fandom-sync:
     needs: window-gate
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
     uses: ./.github/workflows/fandom-sync.yml
     secrets: inherit
 
@@ -123,7 +101,7 @@ jobs:
 
   mainspace-orchestrator:
     needs: [window-gate, cleanup]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/mainspace-orchestrator.yml
     with:
       enable_history_offload: true
@@ -135,7 +113,7 @@ jobs:
 
   category-orchestrator:
     needs: [window-gate, mainspace-orchestrator]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/category-orchestrator.yml
     with:
       enable_history_offload: true
@@ -147,7 +125,7 @@ jobs:
 
   template-orchestrator:
     needs: [window-gate, category-orchestrator]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/template-orchestrator.yml
     with:
       enable_history_offload: true
@@ -164,7 +142,7 @@ jobs:
   # edit budget. Runs last among the orchestrators.
   miscellaneous-orchestrator:
     needs: [window-gate, template-orchestrator]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/miscellaneous-orchestrator.yml
     with:
       enable_history_offload: true
@@ -177,35 +155,35 @@ jobs:
   # Random delay only on cron schedule, not on push.
   random-wait:
     needs: [window-gate, miscellaneous-orchestrator]
-    if: github.event_name == 'schedule' && needs.window-gate.outputs.should-proceed == 'true'
+    if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
 
   # On push: submit immediately after orchestrators
   # On cron: submit after random wait
   submit-quickstatements:
-    needs: [window-gate, miscellaneous-orchestrator, random-wait]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success'
+    needs: [window-gate, miscellaneous-orchestrator, random-wait, cleanup]
+    if: always() && needs.cleanup.result == 'success'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
   # Direct Wikidata edits via API (after QS submission)
   wikidata-qualifier-edit:
     needs: [window-gate, cleanup, submit-quickstatements]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.cleanup.result == 'success'
+    if: always() && needs.cleanup.result == 'success'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
   # Final action: rebuild run history page from all reports
   build-run-history:
     needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true'
+    if: always()
     uses: ./.github/workflows/build-run-history.yml
 
   # Fallback: if QS submission failed, apply edits directly via Wikidata API
   # This is the absolute last step — random 1-5 min intervals, no rush
   direct-daily-edits:
     needs: [window-gate, submit-quickstatements, build-run-history]
-    if: always() && needs.window-gate.outputs.should-proceed == 'true' && needs.submit-quickstatements.outputs.qs-failed == 'true'
+    if: always() && needs.submit-quickstatements.outputs.qs-failed == 'true'
     uses: ./.github/workflows/direct-daily-edits.yml
     secrets: inherit
 
