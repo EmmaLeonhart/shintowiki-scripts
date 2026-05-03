@@ -1,0 +1,69 @@
+<infobox theme="kofun">
+<title source="name"><default>{{PAGENAME}}</default></title>
+<image source="image">
+<caption source="caption"/>
+</image>
+<data source="native_name"><label>Native name</label></data>
+<data source="alternative_names"><label>Alternative names</label></data>
+<group>
+<header>{{#if:{{{location|}}}{{{municipality|}}}{{{prefecture|}}}{{{region|}}}{{{country|}}}{{{coordinates|}}}|Location}}</header>
+<data source="location"><label>Location</label></data>
+<data source="municipality"><label>Municipality</label></data>
+<data source="prefecture"><label>Prefecture</label></data>
+<data source="region"><label>Region</label></data>
+<data source="country"><label>Country</label></data>
+<data source="coordinates"><label>Coordinates</label></data>
+</group>
+<group>
+<header>{{#if:{{{type|}}}{{{shape|}}}{{{length|}}}{{{width|}}}{{{height|}}}{{{diameter|}}}{{{volume|}}}{{{material|}}}|Mound</header>
+<data source="type"><label>Type</label></data>
+<data source="shape"><label>Shape</label></data>
+<data source="length"><label>Length</label></data>
+<data source="width"><label>Width</label></data>
+<data source="height"><label>Height</label></data>
+<data source="diameter"><label>Diameter</label></data>
+<data source="volume"><label>Volume</label></data>
+<data source="material"><label>Material</label></data>
+</group>
+<group>
+<header>{{#if:{{{period|}}}{{{built|}}}{{{cultures|}}}{{{epochs|}}}{{{founded|}}}{{{abandoned|}}}|Period}}</header>
+<data source="period"><label>Period</label></data>
+<data source="built"><label>Built</label></data>
+<data source="cultures"><label>Cultures</label></data>
+<data source="epochs"><label>Epochs</label></data>
+<data source="founded"><label>Founded</label></data>
+<data source="abandoned"><label>Abandoned</label></data>
+</group>
+<group>
+<header>{{#if:{{{excavated|}}}{{{archaeologists|}}}{{{condition|}}}{{{ownership|}}}{{{public_access|}}}{{{designation|}}}|Archaeology}}</header>
+<data source="excavated"><label>Excavated</label></data>
+<data source="archaeologists"><label>Archaeologists</label></data>
+<data source="condition"><label>Condition</label></data>
+<data source="ownership"><label>Ownership</label></data>
+<data source="public_access"><label>Public access</label></data>
+<data source="designation"><label>Designation</label></data>
+<data source="designated"><label>Designated</label></data>
+<data source="reference_no"><label>Reference no.</label></data>
+</group>
+<group>
+<header>{{#if:{{{occupant|}}}{{{burial|}}}|Burial}}</header>
+<data source="occupant"><label>Occupant</label></data>
+<data source="burial"><label>Burial</label></data>
+</group>
+</infobox><noinclude>
+{{Documentation
+|content=
+;Fandom Portable Infobox for Japanese kofun (burial mound) articles.
+
+Originally an interwiki redirect to the enwiki template, which
+doesn't actually resolve on fandom. Rewritten as a native Portable
+Infobox so kofun pages render correctly. Theme {{C|kofun}} can be
+styled via {{C|MediaWiki:Common.css}} on shinto.fandom.com.
+
+Empty rows hide automatically; only fill in the parameters that
+apply to a given mound.
+}}
+[[Category:Infobox templates]]
+[[Category:fandom sync]]
+[[Category:Fandom Portable Infobox templates]]
+</noinclude>

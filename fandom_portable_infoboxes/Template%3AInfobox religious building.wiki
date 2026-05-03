@@ -1,0 +1,84 @@
+<infobox theme-source="religious_affiliation">
+<title source="name"><default>{{PAGENAME}}</default></title>
+<image source="image">
+<caption source="caption"/>
+</image>
+<data source="native_name"><label>Native name</label></data>
+<group>
+<header>{{#if:{{{religious_affiliation|}}}{{{deity|}}}{{{sect|}}}{{{tradition|}}}{{{festivals|}}}{{{festival|}}}{{{rite|}}}{{{patron|}}}{{{leadership|}}}{{{ownership|}}}{{{status|}}}{{{organisational_status|}}}{{{organizational_status|}}}|Religion}}</header>
+<data source="religious_affiliation"><label>Affiliation</label></data>
+<data source="sect"><label>Sect</label></data>
+<data source="tradition"><label>Tradition</label></data>
+<data source="rite"><label>Rite</label></data>
+<data source="deity"><label>Deity</label></data>
+<data source="festival"><label>Festival</label></data>
+<data source="festivals"><label>Festivals</label></data>
+<data source="status"><label>Status</label></data>
+<data source="organisational_status"><label>Organisational status</label></data>
+<data source="organizational_status"><label>Organizational status</label></data>
+<data source="leadership"><label>Leadership</label></data>
+<data source="ownership"><label>Ownership</label></data>
+<data source="governing_body"><label>Governing body</label></data>
+<data source="patron"><label>Patron</label></data>
+<data source="bhattaraka"><label>Bhattaraka</label></data>
+<data source="consecration_year"><label>Consecrated</label></data>
+</group>
+<group>
+<header>{{#if:{{{location|}}}{{{municipality|}}}{{{district|}}}{{{prefecture|}}}{{{province|}}}{{{state|}}}{{{country|}}}{{{region|}}}{{{territory|}}}{{{coordinates|}}}|Location}}</header>
+<data source="location"><label>Location</label></data>
+<data source="municipality"><label>Municipality</label></data>
+<data source="district"><label>District</label></data>
+<data source="prefecture"><label>Prefecture</label></data>
+<data source="province"><label>Province</label></data>
+<data source="state"><label>State</label></data>
+<data source="country"><label>Country</label></data>
+<data source="region"><label>Region</label></data>
+<data source="territory"><label>Territory</label></data>
+<data source="coordinates"><label>Coordinates</label></data>
+</group>
+<group>
+<header>{{#if:{{{founded_by|}}}{{{established|}}}{{{founded_date|}}}{{{completed|}}}{{{date_destroyed|}}}{{{architect|}}}{{{architecture_style|}}}{{{architecture_type|}}}{{{type|}}}{{{capacity|}}}{{{height|}}}{{{length|}}}{{{width|}}}{{{materials|}}}{{{dome_quantity|}}}{{{minaret_quantity|}}}|Architecture}}</header>
+<data source="founded_by"><label>Founder</label></data>
+<data source="established"><label>Established</label></data>
+<data source="founded_date"><label>Founded</label></data>
+<data source="completed"><label>Completed</label></data>
+<data source="date_destroyed"><label>Destroyed</label></data>
+<data source="architect"><label>Architect</label></data>
+<data source="architecture_style"><label>Architectural style</label></data>
+<data source="architecture_type"><label>Architectural type</label></data>
+<data source="type"><label>Type</label></data>
+<data source="capacity"><label>Capacity</label></data>
+<data source="height"><label>Height</label></data>
+<data source="length"><label>Length</label></data>
+<data source="width"><label>Width</label></data>
+<data source="dome_quantity"><label>Dome(s)</label></data>
+<data source="minaret_quantity"><label>Minaret(s)</label></data>
+<data source="materials"><label>Materials</label></data>
+</group>
+<group>
+<header>{{#if:{{{part_of|}}}{{{heritage_designation|}}}{{{website|}}}|Recognition}}</header>
+<data source="part_of"><label>Part of</label></data>
+<data source="heritage_designation"><label>Heritage designation</label></data>
+<data source="website"><label>Website</label></data>
+</group>
+</infobox><noinclude>
+{{Documentation
+|content=
+;Fandom Portable Infobox replacement for the legacy Lua-driven
+{{Tlf|Infobox religious building}}.
+
+Lua / {{Tag|invoke}} based versions don't render on Fandom (no
+Wikibase Client, no {{C|Module:Wikidata}}, no {{C|Module:InfoboxImage}}),
+so this template is rewritten as a Portable Infobox. The rewrite
+covers the parameters used by the temple and shrine articles
+currently in {{C|fandom sync}}; less-common parameters from the
+upstream Wikipedia template are intentionally dropped.
+
+Empty rows hide automatically. Themable per page via
+{{Para|religious_affiliation}}: theme variants live in
+{{C|MediaWiki:Common.css}}.
+}}
+[[Category:Infobox templates]]
+[[Category:fandom sync]]
+[[Category:Fandom Portable Infobox templates]]
+</noinclude>
