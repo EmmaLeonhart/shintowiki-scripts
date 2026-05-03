@@ -1,0 +1,227 @@
+{
+  "Template:Air force/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-03T10:31:43Z"
+  },
+  "Template:Asbox": {
+    "bytes": 33031,
+    "ns": 10,
+    "revisions": 43,
+    "status": "ok",
+    "title_imported": "Template:Asbox",
+    "ts": "2026-05-03T10:30:25Z"
+  },
+  "Template:Beppyo Shrines": {
+    "bytes": 59211,
+    "ns": 10,
+    "revisions": 1,
+    "status": "ok",
+    "title_imported": "Template:Beppyo Shrines",
+    "ts": "2026-05-03T10:30:52Z"
+  },
+  "Template:CatAutoTOC": {
+    "bytes": 16805,
+    "ns": 10,
+    "revisions": 14,
+    "status": "ok",
+    "title_imported": "Template:CatAutoTOC",
+    "ts": "2026-05-03T10:31:37Z"
+  },
+  "Template:Commons Category": {
+    "bytes": 11806,
+    "ns": 10,
+    "revisions": 12,
+    "status": "ok",
+    "title_imported": "Template:Commons Category",
+    "ts": "2026-05-03T10:31:15Z"
+  },
+  "Template:Commonscat": {
+    "bytes": 15897,
+    "ns": 10,
+    "revisions": 16,
+    "status": "ok",
+    "title_imported": "Template:Commonscat",
+    "ts": "2026-05-03T10:30:33Z"
+  },
+  "Template:Commonscat-inline": {
+    "bytes": 12507,
+    "ns": 10,
+    "revisions": 12,
+    "status": "ok",
+    "title_imported": "Template:Commonscat-inline",
+    "ts": "2026-05-03T10:31:53Z"
+  },
+  "Template:Familytree": {
+    "bytes": 43232,
+    "ns": 10,
+    "revisions": 16,
+    "status": "ok",
+    "title_imported": "Template:Familytree",
+    "ts": "2026-05-03T10:31:50Z"
+  },
+  "Template:Familytree/start": {
+    "bytes": 14042,
+    "ns": 10,
+    "revisions": 16,
+    "status": "ok",
+    "title_imported": "Template:Familytree/start",
+    "ts": "2026-05-03T10:32:12Z"
+  },
+  "Template:Footnote help": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-03T10:31:27Z"
+  },
+  "Template:High-risk": {
+    "bytes": 460027,
+    "ns": 10,
+    "revisions": 376,
+    "status": "ok",
+    "title_imported": "Template:High-risk",
+    "ts": "2026-05-03T10:32:09Z"
+  },
+  "Template:Infobox Buddhist temple": {
+    "bytes": 10775,
+    "ns": 10,
+    "revisions": 11,
+    "status": "ok",
+    "title_imported": "Template:Infobox Buddhist temple",
+    "ts": "2026-05-03T10:31:40Z"
+  },
+  "Template:Kofun navbar": {
+    "bytes": 133124,
+    "ns": 10,
+    "revisions": 2,
+    "status": "ok",
+    "title_imported": "Template:Kofun navbar",
+    "ts": "2026-05-03T10:30:30Z"
+  },
+  "Template:Maplink2": {
+    "bytes": 13815,
+    "ns": 10,
+    "revisions": 16,
+    "status": "ok",
+    "title_imported": "Template:Maplink2",
+    "ts": "2026-05-03T10:30:39Z"
+  },
+  "Template:Module rating": {
+    "bytes": 214509,
+    "ns": 10,
+    "revisions": 122,
+    "status": "ok",
+    "title_imported": "Template:Module rating",
+    "ts": "2026-05-03T10:31:07Z"
+  },
+  "Template:NDLDC": {
+    "bytes": 30177,
+    "ns": 10,
+    "revisions": 22,
+    "status": "ok",
+    "title_imported": "Template:NDLDC",
+    "ts": "2026-05-03T10:31:46Z"
+  },
+  "Template:Navseasoncats": {
+    "bytes": 18346,
+    "ns": 10,
+    "revisions": 20,
+    "status": "ok",
+    "title_imported": "Template:Navseasoncats",
+    "ts": "2026-05-03T10:31:11Z"
+  },
+  "Template:Navy": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-03T10:31:33Z"
+  },
+  "Template:Not to be confused with": {
+    "bytes": 8171,
+    "ns": 10,
+    "revisions": 8,
+    "status": "ok",
+    "title_imported": "Template:Not to be confused with",
+    "ts": "2026-05-03T10:30:46Z"
+  },
+  "Template:Otheruses": {
+    "bytes": 7885,
+    "ns": 10,
+    "revisions": 8,
+    "status": "ok",
+    "title_imported": "Template:Otheruses",
+    "ts": "2026-05-03T10:31:18Z"
+  },
+  "Template:Q": {
+    "bytes": 38993,
+    "ns": 10,
+    "revisions": 43,
+    "status": "ok",
+    "title_imported": "Template:Q",
+    "ts": "2026-05-03T10:30:18Z"
+  },
+  "Template:SHORTDESC:Topics referred to by the same term": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-03T10:30:55Z"
+  },
+  "Template:Shinto Horizontal": {
+    "bytes": 6694,
+    "ns": 10,
+    "revisions": 6,
+    "status": "ok",
+    "title_imported": "Template:Shinto Horizontal",
+    "ts": "2026-05-03T10:31:21Z"
+  },
+  "Template:Shinto shrine": {
+    "bytes": 11217,
+    "ns": 10,
+    "revisions": 12,
+    "status": "ok",
+    "title_imported": "Template:Shinto shrine",
+    "ts": "2026-05-03T10:31:24Z"
+  },
+  "Template:Shrine": {
+    "bytes": 6780,
+    "ns": 10,
+    "revisions": 6,
+    "status": "ok",
+    "title_imported": "Template:Shrine",
+    "ts": "2026-05-03T10:30:49Z"
+  },
+  "Template:Talk header/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-03T10:30:21Z"
+  },
+  "Template:TemplateDataHeader": {
+    "bytes": 11722,
+    "ns": 10,
+    "revisions": 13,
+    "status": "ok",
+    "title_imported": "Template:TemplateDataHeader",
+    "ts": "2026-05-03T10:31:56Z"
+  },
+  "Template:Tsh": {
+    "bytes": 20317,
+    "ns": 10,
+    "revisions": 25,
+    "status": "ok",
+    "title_imported": "Template:Tsh",
+    "ts": "2026-05-03T10:31:31Z"
+  },
+  "Template:神社": {
+    "bytes": 6780,
+    "ns": 10,
+    "revisions": 6,
+    "status": "ok",
+    "title_imported": "Template:神社",
+    "ts": "2026-05-03T10:30:36Z"
+  },
+  "Template:神道 横": {
+    "bytes": 6687,
+    "ns": 10,
+    "revisions": 6,
+    "status": "ok",
+    "title_imported": "Template:神道 横",
+    "ts": "2026-05-03T10:30:42Z"
+  }
+}
