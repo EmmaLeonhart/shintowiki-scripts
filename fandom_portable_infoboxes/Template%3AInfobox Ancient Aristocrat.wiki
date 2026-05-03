@@ -1,0 +1,52 @@
+<infobox theme="aristocrat">
+<title source="name"><default>{{PAGENAME}}</default></title>
+<image source="image">
+<caption source="caption"/>
+</image>
+<data source="native_name"><label>Native name</label></data>
+<data source="other_name"><label>Other names</label></data>
+<data source="title"><label>Title</label></data>
+<data source="court_rank"><label>Court rank</label></data>
+<data source="court_position"><label>Court position</label></data>
+<group>
+<header>{{#if:{{{clan|}}}{{{family|}}}{{{house|}}}{{{father|}}}{{{mother|}}}{{{spouse|}}}{{{spouses|}}}{{{children|}}}{{{siblings|}}}{{{relatives|}}}|Family}}</header>
+<data source="clan"><label>Clan</label></data>
+<data source="family"><label>Family</label></data>
+<data source="house"><label>House</label></data>
+<data source="father"><label>Father</label></data>
+<data source="mother"><label>Mother</label></data>
+<data source="spouse"><label>Spouse</label></data>
+<data source="spouses"><label>Spouses</label></data>
+<data source="children"><label>Children</label></data>
+<data source="siblings"><label>Siblings</label></data>
+<data source="relatives"><label>Relatives</label></data>
+</group>
+<group>
+<header>{{#if:{{{birth_date|}}}{{{birth_place|}}}{{{death_date|}}}{{{death_place|}}}{{{burial_place|}}}{{{posthumous_name|}}}{{{era|}}}|Life}}</header>
+<data source="birth_date"><label>Born</label></data>
+<data source="birth_place"><label>Birthplace</label></data>
+<data source="death_date"><label>Died</label></data>
+<data source="death_place"><label>Place of death</label></data>
+<data source="burial_place"><label>Burial place</label></data>
+<data source="posthumous_name"><label>Posthumous name</label></data>
+<data source="era"><label>Era</label></data>
+</group>
+<group>
+<header>{{#if:{{{office|}}}{{{tenure|}}}{{{appointer|}}}{{{predecessor|}}}{{{successor|}}}|Career}}</header>
+<data source="office"><label>Office</label></data>
+<data source="tenure"><label>Tenure</label></data>
+<data source="appointer"><label>Appointed by</label></data>
+<data source="predecessor"><label>Predecessor</label></data>
+<data source="successor"><label>Successor</label></data>
+</group>
+<data source="religion"><label>Religion</label></data>
+</infobox><noinclude>
+{{Documentation|content=
+;Fandom Portable Infobox replacement for the broken interwiki
+"redirect" to enwiki. Covers the parameters used by ancient
+aristocrat / court-noble articles. Empty rows hide automatically.
+}}
+[[Category:Infobox templates]]
+[[Category:fandom sync]]
+[[Category:Fandom Portable Infobox templates]]
+</noinclude>
