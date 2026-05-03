@@ -62,6 +62,7 @@ FANDOM_PASSWORD = os.getenv("FANDOM_PASSWORD", "")
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 STATE_FILE = SCRIPT_DIR / "sync_fandom_pages.state"
+PORTABLE_INFOBOX_DIR = SCRIPT_DIR.parent / "fandom_portable_infoboxes"
 
 USER_AGENT = (
     "FandomCleanupBot/1.0 (User:EmmaBot; shinto.fandom.com cleanup)"
@@ -70,6 +71,42 @@ USER_AGENT = (
 
 def sha1_text(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+
+# --- Portable Infobox overrides ---------------------------------------
+
+import urllib.parse
+
+
+def _filename_to_title(filename: str) -> str:
+    """Reverse of the encoding sync_git_synced_pages uses: replace
+    %XX escapes back into the original characters."""
+    if filename.endswith(".wiki"):
+        filename = filename[:-5]
+    return urllib.parse.unquote(filename)
+
+
+def load_portable_infobox_overrides() -> dict[str, str]:
+    """Map page title -> full wikitext for any .wiki file in
+    fandom_portable_infoboxes/. These are full-page overrides applied
+    BEFORE the textual cleanups, so the cleanups don't try to mangle
+    the curated Portable Infobox source.
+
+    Filenames use the same %XX-encoding convention as git_synced/ so
+    titles with ``:`` (template namespace) survive the round-trip.
+    """
+    overrides: dict[str, str] = {}
+    if not PORTABLE_INFOBOX_DIR.is_dir():
+        return overrides
+    for path in PORTABLE_INFOBOX_DIR.iterdir():
+        if not path.is_file() or path.suffix != ".wiki":
+            continue
+        title = _filename_to_title(path.name)
+        try:
+            overrides[title] = path.read_text(encoding="utf-8")
+        except OSError as e:
+            print(f"WARN: could not read {path}: {e}")
+    return overrides
 
 
 def load_state(path: Path) -> dict:
@@ -297,8 +334,15 @@ def drop_redundant_buddhist_infobox(text: str) -> str:
 
 # --- Per-page transform ------------------------------------------------
 
-def cleanup_text(text: str) -> str:
-    """Apply every cleanup transform in a deterministic order."""
+def cleanup_text(text: str, override: str | None = None) -> str:
+    """Apply every cleanup transform in a deterministic order. If
+    ``override`` is provided, it short-circuits everything: the
+    Portable Infobox source from ``fandom_portable_infoboxes/`` is the
+    authoritative content and we don't run the textual transforms over
+    it (those are designed for legacy article wikitext, not for clean
+    Portable Infobox markup)."""
+    if override is not None:
+        return override
     text = dedupe_interwiki_blocks(text)
     text = drop_redundant_buddhist_infobox(text)
     text = convert_ill_to_wikilinks(text)
@@ -377,6 +421,10 @@ def main() -> int:
         return 0
     print(f"State: {len(state)} tracked pages")
 
+    overrides = load_portable_infobox_overrides()
+    print(f"Portable Infobox overrides: {len(overrides)} templates "
+          f"({', '.join(sorted(overrides)) or 'none'})")
+
     print(f"Logging in to {FAN_HOST}...")
     fan = mwclient.Site(FAN_HOST, path=FAN_PATH, clients_useragent=USER_AGENT)
     fan.connection.timeout = 120
@@ -386,7 +434,11 @@ def main() -> int:
     cleaned = unchanged = errors = skipped = 0
     edits_performed = 0
 
-    for title in sorted(state.keys()):
+    # Iterate over union(state, overrides) so override-target templates
+    # get applied even if they fell out of the sync state for some reason.
+    titles = sorted(set(state.keys()) | set(overrides.keys()))
+
+    for title in titles:
         if edits_performed >= args.max_edits:
             skipped += 1
             continue
@@ -402,7 +454,8 @@ def main() -> int:
             print(f"MISSING on fandom: {title}")
             continue
 
-        new_text = cleanup_text(fan_text)
+        override = overrides.get(title)
+        new_text = cleanup_text(fan_text, override=override)
         if new_text == fan_text:
             unchanged += 1
             continue
@@ -412,14 +465,18 @@ def main() -> int:
             cleaned += 1
             continue
 
-        try:
-            new_fan_revid = write_page(
-                fan, title, new_text,
-                summary=(
-                    f"Fandom-side cleanup: dedupe interwikis, drop "
-                    f"{{{{ill}}}}/{{{{wikidata link}}}}/{{{{shortdesc}}}} {args.run_tag}"
-                ),
+        if override is not None:
+            summary = (
+                f"Replace with curated Fandom Portable Infobox source "
+                f"(from fandom_portable_infoboxes/ in shintowiki-scripts) {args.run_tag}"
             )
+        else:
+            summary = (
+                f"Fandom-side cleanup: dedupe interwikis, drop "
+                f"{{{{ill}}}}/{{{{wikidata link}}}}/{{{{shortdesc}}}} {args.run_tag}"
+            )
+        try:
+            new_fan_revid = write_page(fan, title, new_text, summary=summary)
         except Exception as e:
             errors += 1
             print(f"ERROR saving {title}: {e}")
@@ -436,7 +493,8 @@ def main() -> int:
 
         cleaned += 1
         edits_performed += 1
-        print(f"CLEAN {title}  -> fandom rev {new_fan_revid}")
+        kind = "OVERRIDE" if override is not None else "CLEAN"
+        print(f"{kind} {title}  -> fandom rev {new_fan_revid}")
         time.sleep(THROTTLE)
 
     print(f"\n{'=' * 60}")
