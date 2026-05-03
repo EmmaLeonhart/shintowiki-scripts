@@ -1,8 +1,5 @@
-<!--interwikis from wikidata-->[[ja:鶴崎神社]]
-<!--interwikis from wikidata-->[[ja:鶴崎神社]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsurusaki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24931715792|time triggered pipeline]] -->
 {{Expand Japanese|鶴崎神社|date=November 2025}}
-<!--interwikis from wikidata-->[[ja:鶴崎神社]]
-
 
 {{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 |name = Tsurusaki Shrine
@@ -40,18 +37,13 @@ The shrine houses several town-designated important cultural properties:
 
 {{Shinto Horizontal}}
 
-
 {{translated page|ja|鶴崎神社 (早島町)|version=92434961|comment=Imported full ja history}}
 
-
-
-[[ja:鶴崎神社]]
-<!--jawiki derived wikidata interwikis-->
-[[ja:鶴崎神社 (早島町)]]
-{{wikidata link|Q11675995}}
+{{wikidata link|Q11675995|ja|鶴崎神社|ja|鶴崎神社 (早島町)}}
 [[Category:Architecture of Hayashima Town]]
 [[Category:Image requests in Tsukubo District]]
 [[Category:Municipal History of Hayashima]]
 [[Category:Shinto shrines in Okayama Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Need translation]]
+[[Category:Pages with interwikis with duplicate languages]]

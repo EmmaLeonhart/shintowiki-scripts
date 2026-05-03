@@ -1,6 +1,5 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Imamiya_Ebisu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24756154998|commit triggered pipeline]] -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Imamiya_Ebisu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
 {{Expand Japanese|今宮戎神社|date=November 2025}}
-<!--interwikis from wikidata-->[[en:Imamiya Ebisu Shrine]][[fr:Imamiya Ebisu-jinja]][[ja:今宮戎神社]][[simple:Imamiya Ebisu Shrine]]
 {{Short description|Shrine in Naniwa-ku, Osaka, Osaka Prefecture, Japan}}
 {{Unreferenced|date=January 2022}}
 {{Infobox religious building
@@ -17,13 +16,11 @@
 {{Commons category|Imamiya-Ebisu-jinja}}
 *[https://www.imamiya-ebisu.jp Official website]
 
-<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
 {{Authority control}}
 {{coord|34.6553|135.5025|type:landmark_region:JP|display=title}}
 
 {{Shinto-stub}}
-[[en:Imamiya Ebisu Shrine]]
-{{wikidata link|Q11376859}}
+{{wikidata link|Q11376859|en|Imamiya Ebisu Shrine|fr|Imamiya Ebisu-jinja|ja|今宮戎神社|simple|Imamiya Ebisu Shrine}}
 [[Category:Beppyo shrines]]
 [[Category:Ebisu shrines]]
 [[Category:Gō-sha]]
@@ -192,7 +189,6 @@
 
 {{神道 横}}
 {{Normdaten}}
-
 
 ==End Japanese==
 [[Category:大阪市の神社]]

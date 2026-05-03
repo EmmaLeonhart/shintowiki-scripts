@@ -1,18 +1,19 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E9%B3%A5%E5%8F%96%E7%A5%9E for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{基礎情報 日本の神
 | 名 = Totori-no-Kami
 | 世代名 =
 | 先代=
 | 次代=
-| 神祇 = <!-- 天神、地祇、天津神、国津神など -->{{ill|Kunitsukami|ja|国津神}}
+| 神祇 = {{ill|Kunitsukami|ja|国津神}}
 | 全名 = Totori-no-Kami
 | 別名 = Torimimi-no-Kami, Torikai-no-Kami
 | 別称 =
 | 神階 =
-| 神格 = <!-- 太陽、月、山、海など司るもの -->Deity of ritual
+| 神格 = Deity of ritual
 | 陵所 =
 | 父 = {{ill|Yashimamuji-no-Kami|ja|八島牟遅能神}}
 | 母 =
-| 親 = <!-- まぐあいによって生まれない場合 -->
+| 親 = 
 | 配偶者 = {{ill|Ōkuninushi|ja|大国主神}}
 | 子 = {{ill|Torinarumi-no-Kami|ja|鳥鳴海神}}
 | 宮 =
@@ -35,7 +36,7 @@ Daughter of Yashimamuji-no-Kami; she bore Torinarumi-no-Kami with Ōkuninushi-no
 === Citations ===
 {{Reflist}}
 == References ==
-* <!-- にしみや -->{{Cite book|和書 |title=Kojiki |volume= |date=October 30, 2014 |publisher={{ill|Shinchosha|ja|新潮社}} |ref={{SfnRef|Nishimiya|2014}} |author={{ill|Nishimiya Kazutami|ja|西宮一民}}, ed. |isbn=978-4-10-620801-0 |series={{ill|Shincho Nihon Koten Shūsei|ja|新潮日本古典集成}} (new edition)}}
+* {{Cite book|和書 |title=Kojiki |volume= |date=October 30, 2014 |publisher={{ill|Shinchosha|ja|新潮社}} |ref={{SfnRef|Nishimiya|2014}} |author={{ill|Nishimiya Kazutami|ja|西宮一民}}, ed. |isbn=978-4-10-620801-0 |series={{ill|Shincho Nihon Koten Shūsei|ja|新潮日本古典集成}} (new edition)}}
 == See also ==
 * {{ill|Jūshichiseshin|ja|十七世神}}
 * {{ill|Tottoribe|ja|鳥取部}}
@@ -53,5 +54,5 @@ Daughter of Yashimamuji-no-Kami; she bore Torinarumi-no-Kami with Ōkuninushi-no
 [[Category:長門国の人物]]
 [[Category:十七世神]]
 [[Category:Kuni no miyatsuko]]
-[[ja:鳥取神]]
 [[Category:Need translation]]
+{{wikidata link||ja|鳥取神}}

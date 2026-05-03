@@ -1,5 +1,4 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Futako_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24806172707|commit triggered pipeline]] -->
-<!--interwikis from wikidata-->[[en:Futako Shrine]][[ja:二子神社]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Futako_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
 
 {{expand Japanese|date=March 2016}}
 {{Infobox religious building
@@ -51,12 +50,10 @@ File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kaw
 ==External links==
 * [http://eng.shoinjinja.org|Official website]
 
-<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
 {{Shinmei shrines}}
 
-<!--enwiki derived wikidata interwikis-->
 {{Commons category|Futako-jinja}}
-<!--jawiki derived wikidata interwikis-->
+
 {{wikidata link|Q21480958|en|Futako Shrine|ja|二子神社}}
 [[Category:1641 establishments in Japan]]
 [[Category:Religious buildings and structures completed in 1641]]
@@ -162,7 +159,7 @@ File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kaw
 [[Category:高津区の歴史]]
 [[Category:高津区の建築物]]
 [[Category:神明神社]]
-[[Category:17世紀の日本の設立]]
+[[Category:17th-century establishments in Japan]]
 [[Category:溝口 (川崎市)]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]

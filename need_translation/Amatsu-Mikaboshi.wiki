@@ -1,4 +1,4 @@
-<!--interwikis from wikidata-->[[en:Amatsu-Mikaboshi]][[it:Amatsu-Mikaboshi]][[ja:天津甕星]][[mni:ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ]][[ru:Амацумикабоси]][[th:อามัตสึมิกาโบชิ]][[tr:Amatsu Mikaboşi]][[zh:天津甕星]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Amatsu-Mikaboshi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 {{Infobox deity}}
 
 {{Short description|Originally a malevolent Shinto god|qq=}}
@@ -36,16 +36,7 @@ Amatsumikaboshi is the God of Stars who have gifted two stellar-demon swords of 
 <noinclude></noinclude>
 }}
 
-[[en:Amatsu-Mikaboshi]]
-
-<!--enwiki derived wikidata interwikis-->
-[[ja:天津甕星]]
-[[mni:ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ]]
-[[ru:Амацумикабоси]]
-[[th:อามัตสึมิกาโบชิ]]
-[[tr:Amatsu Mikaboşi]]
-[[zh:天津甕星]]
-{{wikidata link|Q4740636}}
+{{wikidata link|Q4740636|en|Amatsu-Mikaboshi|it|Amatsu-Mikaboshi|ja|天津甕星|mni|ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ|ru|Амацумикабоси|th|อามัตสึมิกาโบชิ|tr|Amatsu Mikaboşi|zh|天津甕星}}
 
 {{translated page|ja|天津甕星|version=101089655|comment=Imported full ja history}}
 [[Category:Pages with duplicated content]]
@@ -93,8 +84,8 @@ Amatsumikaboshi is the God of Stars who have gifted two stellar-demon swords of 
 {{Reflist|2}}
 
 == 参考文献 ==
-* <!-- イワナミ1994 -->{{Cite book|和書|editor1=坂本太郎|editor1-link=坂本太郎 (歴史学者)|editor2=家永三郎|editor2-link=家永三郎|editor3=井上光貞|editor3-link=井上光貞|editor4=大野晋|editor4-link=大野晋|date=1994-09||title=日本書紀|volume=1|publisher=岩波書店|series=岩波文庫|isbn=4-00-300041-2|id={{全国書誌番号|95000553}}|ref={{SfnRef|坂本・家永・井上・大野|1994}} }}
-* <!-- トウ2000学生、鹿島改訂 -->{{Cite book|和書|author={{small|鹿島神宮元宮司}}東実|date=2000-08|chapter=三　日本神話と武甕槌神、四　鹿島の土地の謎|title=鹿島神宮|edition=改訂新版|publisher=学生社|series=日本の神社|isbn=4-311-40717-3|id={{全国書誌番号|20101680}}|ref={{SfnRef|東実|2000}} }}
+* {{Cite book|和書|editor1=坂本太郎|editor1-link=坂本太郎 (歴史学者)|editor2=家永三郎|editor2-link=家永三郎|editor3=井上光貞|editor3-link=井上光貞|editor4=大野晋|editor4-link=大野晋|date=1994-09||title=日本書紀|volume=1|publisher=岩波書店|series=岩波文庫|isbn=4-00-300041-2|id={{全国書誌番号|95000553}}|ref={{SfnRef|坂本・家永・井上・大野|1994}} }}
+* {{Cite book|和書|author={{small|鹿島神宮元宮司}}東実|date=2000-08|chapter=三　日本神話と武甕槌神、四　鹿島の土地の謎|title=鹿島神宮|edition=改訂新版|publisher=学生社|series=日本の神社|isbn=4-311-40717-3|id={{全国書誌番号|20101680}}|ref={{SfnRef|東実|2000}} }}
 * {{jalink|国立国会図書館#国立国会図書館デジタルコレクション|Q477675|国立国会図書館デジタルコレクション}} - {{jalink|国立国会図書館|Q477675}}
 ** {{Citation |和書|author=植松安|date=1920-06|title=仮名日本書紀|volume=上巻|publisher=大同館書店|doi=10.11501/961006|ref={{SfnRef|植松|1920}} }}
 ** {{Citation |和書|editor=経済雑誌社|date=1917-10|title=六国史：国史大系. 日本書紀|edition=再販|publisher=経済雑誌社|doi=10.11501/950693|ref={{SfnRef|経済雑誌社|1917}} }}

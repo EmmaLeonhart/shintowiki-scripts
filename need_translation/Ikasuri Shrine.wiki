@@ -1,5 +1,4 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ikasuri_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24756154998|commit triggered pipeline]] -->
-<!--interwikis from wikidata-->[[en:Ikasuri Shrine]][[fr:Ikasuri-jinja]][[ja:坐摩神社]][[simple:Ikasuri Shrine]][[zh:坐摩神社]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ikasuri_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
 {
 {
 {{Short description|Shrine in Osaka Prefecture, Japan}}
@@ -71,8 +70,6 @@ Two of the goddesses composing Ikasuri no Kami: Asuha-no-kami and Hahiki-no-kami
 {{Commons Category|Ikasuri-jinja}}
 *[http://www.ikasuri.or.jp Official website]
 
-<!--this was an inappropriate and erroneous transclusion meant to be a bottom bar thing I think but not including-->
-
 {{coord|34.68096|135.49862|format=dms|type:landmark_region:JP|display=title}}
 
 {{Munakata Faith}}
@@ -81,24 +78,11 @@ Two of the goddesses composing Ikasuri no Kami: Asuha-no-kami and Hahiki-no-kami
 
 {{translated page|ja|坐摩神社|version=101361653|comment=Imported full ja history}}
 
-
-
-[[en:Ikasuri Shrine]]
-[[ja:坐摩神社]]
-
-<!-- for alternate text of the title image per [[WP:ALT]] --><!-- for alternate text of the title image per [[WP:ALT]] -->
-<!--jawiki derived wikidata interwikis-->
 {{Commons category|Ikasuri-jinja}}
-[[fr:Ikasuri-jinja]]
-[[simple:Ikasuri Shrine]]
-[[zh:坐摩神社]]
-<!--enwiki derived wikidata interwikis-->
+
 {{Commons category|Ikasuri-jinja}}
-[[fr:Ikasuri-jinja]]
-[[simple:Ikasuri Shrine]]
-[[zh:坐摩神社]]
-<!--zhwiki derived wikidata interwikis-->
-{{wikidata link|Q11425667}}
+
+{{wikidata link|Q11425667|en|Ikasuri Shrine|fr|Ikasuri-jinja|ja|坐摩神社|simple|Ikasuri Shrine|zh|坐摩神社}}
 [[Category:Beppyo shrines]]
 [[Category:beppyo shrines]]
 [[Category:Buildings and structures in Chuo-ku, Osaka]]

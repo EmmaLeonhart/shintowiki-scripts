@@ -1,48 +1,45 @@
-<!--interwikis from wikidata-->[[ja:浮田国造]]
-<!--interwikis from wikidata-->[[ja:浮田国造]]
-<!--interwikis from wikidata-->[[ja:浮田国造]]
 
 {{Infobox Japanese clan
 | name        = Ukita no Kuni no Miyatsuko
 | crest       = 
 | crestcaption = 
 | honsei      = {{ill|Kibiya clan|ja|吉弥侯部|12=simple|13=User:Immanuelle/Kimikobe clan|ja_comment=jawiki redirects to 吉美侯部}}
-| founder     = {{ill|Kagawaki|ja|鹿我別|12=simple|13=User:Immanuelle/Kagawaki|1=Kagawake|comment=changed title based on wikidata|WD=Q17226573}}
-| type        = {{ill|Imperial lineage|ja|皇別|12=simple|13=User:Immanuelle/Imperial lineage|1=Kōbetsu|comment=changed title based on wikidata|WD=Q11581000}}
-| origin      = {{ill|Yamato Province|en|Yamato Province|WD=Q907495|lt=Yamato Province|1=Yamato Province}}
-| base        = Ukita Province<br /> (later {{ill|Mutsu Province|en|Mutsu Province|WD=Q907389|lt=Mutsu Province|1=Mutsu Province}} {{ill|Uda District, Fukushima|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District, Fukushima|1=Uda district|comment=changed title based on wikidata|WD=Q11449246}}, {{ill|Nakama District, Fukushima|ja|行方郡|12=simple|13=User:Immanuelle/Nakama District, Fukushima|1=Q16769301|comment=changed title based on wikidata|WD=Q16769301}})
+| founder     = {{ill|Kagawaki|ja|鹿我別|12=simple|13=User:Immanuelle/Kagawaki|1=Kagawake|comment=changed title based on wikidata|qid=Q17226573}}
+| type        = {{ill|Imperial lineage|ja|皇別|12=simple|13=User:Immanuelle/Imperial lineage|1=Kōbetsu|comment=changed title based on wikidata|qid=Q11581000}}
+| origin      = {{ill|Yamato Province|en|Yamato Province|qid=Q907495|lt=Yamato Province|1=Yamato Province}}
+| base        = Ukita Province<br /> (later {{ill|Mutsu Province|en|Mutsu Province|qid=Q907389|lt=Mutsu Province|1=Mutsu Province}} {{ill|Uda District, Fukushima|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District, Fukushima|1=Uda district|comment=changed title based on wikidata|qid=Q11449246}}, {{ill|Nakama District, Fukushima|ja|行方郡|12=simple|13=User:Immanuelle/Nakama District, Fukushima|1=Q16769301|comment=changed title based on wikidata|qid=Q16769301}})
 | notable members = See [[#Notable Members]]
-| branches    = {{ill|Harima Kamo no Kuni no Miyatsuko|ja|針間鴨国造|12=simple|13=User:Immanuelle/Harima Kamo no Kuni no Miyatsuko|1=Harima Kuni no Miyatsuko|comment=changed title based on wikidata|WD=Q108487215}}<br />{{ill|Kamitsukeno no Kuni no Miyatsuko|ja|上毛野国造|12=simple|13=User:Immanuelle/Kamitsukeno no Kuni no Miyatsuko|1=Kamitsuke no Kuni no Miyatsuko|comment=changed title based on wikidata|WD=Q11359471}}<br />{{ill|Shimotsukeno no Kuni no Miyatsuko|ja|下毛野国造|12=simple|13=User:Immanuelle/Shimotsukeno no Kuni no Miyatsuko|qq=}}
+| branches    = {{ill|Harima Kamo no Kuni no Miyatsuko|ja|針間鴨国造|12=simple|13=User:Immanuelle/Harima Kamo no Kuni no Miyatsuko|1=Harima Kuni no Miyatsuko|comment=changed title based on wikidata|qid=Q108487215}}<br />{{ill|Kamitsukeno no Kuni no Miyatsuko|ja|上毛野国造|12=simple|13=User:Immanuelle/Kamitsukeno no Kuni no Miyatsuko|1=Kamitsuke no Kuni no Miyatsuko|comment=changed title based on wikidata|qid=Q11359471}}<br />{{ill|Shimotsukeno no Kuni no Miyatsuko|ja|下毛野国造|12=simple|13=User:Immanuelle/Shimotsukeno no Kuni no Miyatsuko|qq=}}
 }}
 
-'''Ukita no Kuni no Miyatsuko''' (浮田国造), also known as '''Ukita Kokuzō''', was the {{ill|Kuni no miyatsuko|en|Kuni no miyatsuko|WD=Q2483673|lt=Kuni no Miyatsuko|1=Kuni no miyatsuko}} who governed the ancient territory of [[Ukita Province]], corresponding to the eastern part of {{ill|Mutsu Province|en|Mutsu Province|WD=Q907389|lt=Mutsu Province|1=Mutsu Province}}.
+'''Ukita no Kuni no Miyatsuko''' (浮田国造), also known as '''Ukita Kokuzō''', was the {{ill|Kuni no miyatsuko|en|Kuni no miyatsuko|qid=Q2483673|lt=Kuni no Miyatsuko|1=Kuni no miyatsuko}} who governed the ancient territory of [[Ukita Province]], corresponding to the eastern part of {{ill|Mutsu Province|en|Mutsu Province|qid=Q907389|lt=Mutsu Province|1=Mutsu Province}}.
 
 == Overview ==
 
 === Ancestry ===
-According to the ''{{ill|Kujiki|en|Kujiki|WD=Q2716751|lt=Sendai Kuji Hongi|1=Kujiki}}'' ("Records of Ancient Matters"), the office of Ukita no Kuni no Miyatsuko was established during the reign of {{ill|Emperor Seimu|en|Emperor Seimu|WD=Q316672|lt=Emperor Seimu|1=Emperor Seimu}}, appointing '''{{ill|Kagawaki|ja|賀我別王|12=simple|13=User:Immanuelle/Kagawaki|ja_comment=jawiki link invalid}}''', a fifth-generation descendant of {{ill|Emperor Sujin|en|Emperor Sujin|WD=Q333530|lt=Emperor Sujin|1=Emperor Sujin}}, as the first ruler of the region.
+According to the ''{{ill|Kujiki|en|Kujiki|qid=Q2716751|lt=Sendai Kuji Hongi|1=Kujiki}}'' ("Records of Ancient Matters"), the office of Ukita no Kuni no Miyatsuko was established during the reign of {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Emperor Seimu|1=Emperor Seimu}}, appointing '''{{ill|Kagawaki|ja|賀我別王|12=simple|13=User:Immanuelle/Kagawaki|ja_comment=jawiki link invalid}}''', a fifth-generation descendant of {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin|1=Emperor Sujin}}, as the first ruler of the region.
 
 === Clan ===
-The clan name was '''{{ill|Kibiya clan|ja|吉弥侯部|12=simple|13=User:Immanuelle/Kimikobe clan|ja_comment=jawiki redirects to 吉美侯部}}''' (read "Kimikobe Uji"). They were kin to the {{ill|Kamitsukeno clan|ja|上毛野氏|1=Kamitsukeno clan|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan|qq=}}, {{ill|Shimotsukeno clan|ja|下毛野氏|1=Shimotsukeno clan|lt=Shimotsukeno clan|12=simple|13=User:Immanuelle/Shimotsukeno clan|13=User:Immanuelle/Shimotsukeno clan|qq=}}, and other related clans such as the {{ill|Harima Kamo clan|ja|針間鴨国造|12=simple|13=User:Immanuelle/Harima Kamo clan|1=Harima Kuni no Miyatsuko|comment=changed title based on wikidata|WD=Q108487215}}. In the first year of {{ill|Jingo-keiun|en|Jingo-keiun|WD=Q1373049|lt=Jingō-keiun|1=Jingo-keiun}} (767 CE), on {{nihongo|July 19|7月19日}}, Kimikobe Ishimaro (吉弥侯部石麻呂), a resident of {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|WD=Q11449246}}, was granted the surname of "Kamitsukeno Mutsu no Kimi" (上毛野陸奥公).
+The clan name was '''{{ill|Kibiya clan|ja|吉弥侯部|12=simple|13=User:Immanuelle/Kimikobe clan|ja_comment=jawiki redirects to 吉美侯部}}''' (read "Kimikobe Uji"). They were kin to the {{ill|Kamitsukeno clan|ja|上毛野氏|1=Kamitsukeno clan|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan|qq=}}, {{ill|Shimotsukeno clan|ja|下毛野氏|1=Shimotsukeno clan|lt=Shimotsukeno clan|12=simple|13=User:Immanuelle/Shimotsukeno clan|13=User:Immanuelle/Shimotsukeno clan|qq=}}, and other related clans such as the {{ill|Harima Kamo clan|ja|針間鴨国造|12=simple|13=User:Immanuelle/Harima Kamo clan|1=Harima Kuni no Miyatsuko|comment=changed title based on wikidata|qid=Q108487215}}. In the first year of {{ill|Jingo-keiun|en|Jingo-keiun|qid=Q1373049|lt=Jingō-keiun|1=Jingo-keiun}} (767 CE), on {{nihongo|July 19|7月19日}}, Kimikobe Ishimaro (吉弥侯部石麻呂), a resident of {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|qid=Q11449246}}, was granted the surname of "Kamitsukeno Mutsu no Kimi" (上毛野陸奥公).
 
 == Territory ==
 
 === Domain ===
-The Ukita no Kuni no Miyatsuko governed the region known as "Ukita Province," which later became part of {{ill|Mutsu Province|en|Mutsu Province|WD=Q907389|lt=Mutsu Province|1=Mutsu Province}}. The domain encompassed areas in {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|WD=Q11449246}} and {{ill|Nakama District, Fukushima|ja|行方郡|12=simple|13=User:Immanuelle/Nakama District, Fukushima|1=Q16769301|comment=changed title based on wikidata|WD=Q16769301}}, corresponding to modern {{ill|Sōma, Fukushima|en|Sōma, Fukushima|WD=Q696456|lt=Sōma, Fukushima|1=Sōma, Fukushima}}, {{ill|Minamisōma|en|Minamisōma|WD=Q642094|lt=Minamisōma|1=Minamisōma}}, and parts of {{ill|Shinchi, Fukushima|en|Shinchi, Fukushima|WD=Q1205416|lt=Shinchi, Fukushima|1=Shinchi, Fukushima}} and {{ill|Iitate, Fukushima|en|Iitate, Fukushima|WD=Q674500|lt=Iitate, Fukushima|1=Iitate, Fukushima}} in Fukushima Prefecture. Neighboring domains at the time included the {{ill|Iku no Kuni no Miyatsuko|ja|伊久国造|12=simple|13=User:Immanuelle/Iku no Kuni no Miyatsuko|1=Q85876227|comment=changed title based on wikidata|WD=Q85876227}} to the northwest and the {{ill|Someha no Kuni no Miyatsuko|ja|染羽国造|12=simple|13=User:Immanuelle/Someha no Kuni no Miyatsuko|ja_comment=jawiki link invalid}} to the south.
+The Ukita no Kuni no Miyatsuko governed the region known as "Ukita Province," which later became part of {{ill|Mutsu Province|en|Mutsu Province|qid=Q907389|lt=Mutsu Province|1=Mutsu Province}}. The domain encompassed areas in {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|qid=Q11449246}} and {{ill|Nakama District, Fukushima|ja|行方郡|12=simple|13=User:Immanuelle/Nakama District, Fukushima|1=Q16769301|comment=changed title based on wikidata|qid=Q16769301}}, corresponding to modern {{ill|Sōma, Fukushima|en|Sōma, Fukushima|qid=Q696456|lt=Sōma, Fukushima|1=Sōma, Fukushima}}, {{ill|Minamisōma|en|Minamisōma|qid=Q642094|lt=Minamisōma|1=Minamisōma}}, and parts of {{ill|Shinchi, Fukushima|en|Shinchi, Fukushima|qid=Q1205416|lt=Shinchi, Fukushima|1=Shinchi, Fukushima}} and {{ill|Iitate, Fukushima|en|Iitate, Fukushima|qid=Q674500|lt=Iitate, Fukushima|1=Iitate, Fukushima}} in Fukushima Prefecture. Neighboring domains at the time included the {{ill|Iku no Kuni no Miyatsuko|ja|伊久国造|12=simple|13=User:Immanuelle/Iku no Kuni no Miyatsuko|1=Q85876227|comment=changed title based on wikidata|qid=Q85876227}} to the northwest and the {{ill|Someha no Kuni no Miyatsuko|ja|染羽国造|12=simple|13=User:Immanuelle/Someha no Kuni no Miyatsuko|ja_comment=jawiki link invalid}} to the south.
 
-During the reforms following the {{ill|Taika Reform|en|Taika Reform|WD=Q570140|lt=Taika Reforms|1=Taika Reform}}, the regions were restructured, with the Uda River valley forming Uda District and the Nitta River valley forming Nakama District.<ref>Hirakawa Minami, ''Ancient History of the Tōhoku "Kaido,"'' Iwanami Shoten, 2012, p. 122.</ref>
+During the reforms following the {{ill|Taika Reform|en|Taika Reform|qid=Q570140|lt=Taika Reforms|1=Taika Reform}}, the regions were restructured, with the Uda River valley forming Uda District and the Nitta River valley forming Nakama District.<ref>Hirakawa Minami, ''Ancient History of the Tōhoku "Kaido,"'' Iwanami Shoten, 2012, p. 122.</ref>
 
 == Religious Significance ==
 
 === Clan Shrine ===
-The sole {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and {{ill|Myōjin-taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myōjin-taisha|comment=changed title based on wikidata|1=Myōjin Taisha|WD=Q9610964}} in {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|WD=Q11449246}} is the '''{{ill|Komidake Shrine|ja|子眉嶺神社|12=simple|13=User:Immanuelle/Komidake Shrine|1=Kobimine Shrine|comment=changed title based on wikidata|WD=Q11447922}}''', believed to be associated with the Ukita no Kuni no Miyatsuko.
+The sole {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and {{ill|Myōjin-taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myōjin-taisha|comment=changed title based on wikidata|1=Myōjin Taisha|qid=Q9610964}} in {{ill|Uda District|ja|宇多郡|12=simple|13=User:Immanuelle/Uda District|1=Uda district|comment=changed title based on wikidata|qid=Q11449246}} is the '''{{ill|Komidake Shrine|ja|子眉嶺神社|12=simple|13=User:Immanuelle/Komidake Shrine|1=Kobimine Shrine|comment=changed title based on wikidata|qid=Q11447922}}''', believed to be associated with the Ukita no Kuni no Miyatsuko.
 
 === Kofuns ===
 
-* '''{{ill|Sakurai Kofun|en|Sakurai Kofun|WD=Q11537784|lt=Sakurai Kofun|1=Sakurai Kofun}}'''
-: Located in {{ill|Minamisōma|en|Minamisōma|WD=Q642094|lt=Minamisōma|1=Minamisōma}}, Fukushima Prefecture, this keyhole-shaped tumulus (全長74メートル) dates to the late 4th or early 5th century. It is considered the possible burial site of {{ill|Kagawaki|ja|鹿我別命|12=simple|13=User:Immanuelle/Kagawaki|ja_comment=jawiki redirects to 鹿我別|1=Kagawake|comment=changed title based on wikidata|WD=Q17226573}}, the clan's progenitor.<ref>Hōga Toshio, "[http://wwr2.ucom.ne.jp/hetoyc15/hitori/kimikobe1.htm Genealogy of the Kimikobe-surnamed Madara Clan]," 2016.</ref>
+* '''{{ill|Sakurai Kofun|en|Sakurai Kofun|qid=Q11537784|lt=Sakurai Kofun|1=Sakurai Kofun}}'''
+: Located in {{ill|Minamisōma|en|Minamisōma|qid=Q642094|lt=Minamisōma|1=Minamisōma}}, Fukushima Prefecture, this keyhole-shaped tumulus (全長74メートル) dates to the late 4th or early 5th century. It is considered the possible burial site of {{ill|Kagawaki|ja|鹿我別命|12=simple|13=User:Immanuelle/Kagawaki|ja_comment=jawiki redirects to 鹿我別|1=Kagawake|comment=changed title based on wikidata|qid=Q17226573}}, the clan's progenitor.<ref>Hōga Toshio, "[http://wwr2.ucom.ne.jp/hetoyc15/hitori/kimikobe1.htm Genealogy of the Kimikobe-surnamed Madara Clan]," 2016.</ref>
 
-* '''{{ill|Mano Kofun Cluster|en|Mano Kofun Cluster|WD=Q11583561|lt=Mano Kofungun|1=Mano Kofun Cluster}}'''
+* '''{{ill|Mano Kofun Cluster|en|Mano Kofun Cluster|qid=Q11583561|lt=Mano Kofungun|1=Mano Kofun Cluster}}'''
 : Also located in Minamisōma, this large cluster of Kofuns from the late Kofun period includes two keyhole-shaped tumuli and numerous circular mounds.
 
 == References ==
@@ -55,15 +52,7 @@ The sole {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikina
 
 {{translated page|ja|浮田国造|version=91695221|comment=Imported full ja history}}
 
-
-
-[[ja:浮田国造]]
-
-<!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko--><!--Ukita no Kuni no Miyatsuko-->
-<!--jawiki derived wikidata interwikis-->
-
-
-{{wikidata link|Q108487214}}
+{{wikidata link|Q108487214|ja|浮田国造}}
 [[Category:Kuni no miyatsuko]]
 [[Category:Mutsu Province]]
 [[Category:Wikidata no short description]]
@@ -111,11 +100,9 @@ After the {{ill|Taika Reform|ja|大化の改新}}, when the {{ill|hyō system|ja
 == See also ==
 *{{ill|Fushū|ja|俘囚}}
 
-{{DEFAULTSORT:うきたのくにのみやつこ}}
 [[Category:陸奥国]]
 {{Japanese-history-stub}}
 [[Category:Kuni no miyatsuko]]
-[[ja:浮田国造]]
 [[Category:Need translation]]
 [[Category:Page2]]
 [[Category:Pages with duplicated content]]

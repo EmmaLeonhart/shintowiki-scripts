@@ -1,8 +1,4 @@
-<!--interwikis from wikidata-->[[arz:كاميدو تنجينشا]][[co:commons:Category:Kameido-tenjinsha]][[de:Kameido-Schrein]][[en:Kameido Tenjin Shrine]][[ja:亀戸天神社]][[pl:Kameido Tenjin-sha]][[zh:龟户天神社]]
-<!--interwikis from wikidata-->[[arz:كاميدو تنجينشا]][[co:commons:Category:Kameido-tenjinsha]][[de:Kameido-Schrein]][[en:Kameido Tenjin Shrine]][[ja:亀戸天神社]][[pl:Kameido Tenjin-sha]][[zh:龟户天神社]]
-<!--interwikis from wikidata-->[[arz:كاميدو تنجينشا]][[co:commons:Category:Kameido-tenjinsha]][[de:Kameido-Schrein]][[en:Kameido Tenjin Shrine]][[ja:亀戸天神社]][[pl:Kameido Tenjin-sha]][[zh:龟户天神社]]
-<!--interwikis from wikidata-->[[arz:كاميدو تنجينشا]][[de:Kameido-Schrein]][[en:Kameido Tenjin Shrine]][[ja:亀戸天神社]][[pl:Kameido Tenjin-sha]][[zh:龟户天神社]]
-
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kameido_Tenjin_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
 
 {{Expand Japanese|亀戸天神社|date=January 2021}}
 {{Infobox religious building
@@ -60,17 +56,8 @@ File:Kameido Tenjin Kiku-Matsuri.jpg|Chrysanthemum Festival (November 15, 2020)
 {{Reflist}}
 {{Tenjin Faith}}
 
-
-
-[[en:Kameido Tenjin Shrine]]
-<!--enwiki derived wikidata interwikis-->
-[[arz:كاميدو تنجينشا]]
 {{Commons category|Kameido-tenjinsha}}
-[[de:Kameido-Schrein]]
-[[ja:亀戸天神社]]
-[[pl:Kameido Tenjin-sha]]
-[[zh:龟户天神社]]
-{{wikidata link|Q11370953}}
+{{wikidata link|Q11370953|arz|كاميدو تنجينشا|co|commons:Category:Kameido-tenjinsha|de|Kameido-Schrein|en|Kameido Tenjin Shrine|ja|亀戸天神社|pl|Kameido Tenjin-sha|zh|龟户天神社}}
 [[Category:1646 establishments in Japan]]
 [[Category:Former Fu-sha in Tokyo]]
 [[Category:Shinto shrines in Tokyo]]
@@ -169,7 +156,7 @@ File:Kameido Tenjin Kiku-Matsuri.jpg|Chrysanthemum Festival (November 15, 2020)
 == 境内 ==
 ;{{jalink|社務所}}
 :
-<!-- 太鼓橋の画像 -->
+
 {| style="float:right;margin-left:1em;text-align:center"
 |-
 | [[File:亀戸天神社・太鼓橋・男橋.jpg|200px|男橋]]
@@ -178,9 +165,9 @@ File:Kameido Tenjin Kiku-Matsuri.jpg|Chrysanthemum Festival (November 15, 2020)
 | 男橋 || 女橋
 |}
 ;{{jalink|太鼓橋|Q30936438}}<ref>半円形に反った橋 --『{{jalink|#広辞苑||広辞苑}}』より。</ref> - 男橋、女橋
-:<!-- 男橋 -->男橋は、大鳥居を過ぎると最初にある橋。{{jalink|太宰府天満宮|Q710786}}を模して造られた。池と橋を人の一生に見立てた「三世一念の理」に基づき、この橋は過去を表す<ref>{{Cite book | 和書 | author = 亀戸天神社 | title = 境内あちこち発見隊 | chapter = (1)太鼓橋 男橋 | url = http://kameidotenjin.or.jp/tour/index.html | accessdate = 2009年12月27日}}</ref>。
-:<!-- 女橋 -->女橋は、{{jalink|本殿|Q2044994}}の手前にある橋。この橋は希望の未来を表す<ref>{{Cite book | 和書 | author = 亀戸天神社 | title = 境内あちこち発見隊 | chapter = (2)太鼓橋 女橋 | url = http://kameidotenjin.or.jp/tour/index.html | accessdate = 2009年12月27日}}</ref>。
-:<!-- 広重の浮世絵 -->本社の太鼓橋は{{jalink|歌川広重|Q200798}}によって描かれ、『{{jalink|名所江戸百景|Q165190}}』シリーズの「{{jalink|#広重 亀戸天神境内||亀戸天神境内}}」として発行された。
+:男橋は、大鳥居を過ぎると最初にある橋。{{jalink|太宰府天満宮|Q710786}}を模して造られた。池と橋を人の一生に見立てた「三世一念の理」に基づき、この橋は過去を表す<ref>{{Cite book | 和書 | author = 亀戸天神社 | title = 境内あちこち発見隊 | chapter = (1)太鼓橋 男橋 | url = http://kameidotenjin.or.jp/tour/index.html | accessdate = 2009年12月27日}}</ref>。
+:女橋は、{{jalink|本殿|Q2044994}}の手前にある橋。この橋は希望の未来を表す<ref>{{Cite book | 和書 | author = 亀戸天神社 | title = 境内あちこち発見隊 | chapter = (2)太鼓橋 女橋 | url = http://kameidotenjin.or.jp/tour/index.html | accessdate = 2009年12月27日}}</ref>。
+:本社の太鼓橋は{{jalink|歌川広重|Q200798}}によって描かれ、『{{jalink|名所江戸百景|Q165190}}』シリーズの「{{jalink|#広重 亀戸天神境内||亀戸天神境内}}」として発行された。
 ;亀井戸跡
 :
 ;おいぬさま
@@ -330,7 +317,7 @@ File:Unusual Views of Celebrated Bridges in the Provinces-Kameido Tenjin Taiko H
 [[Category:東京都の旧府社]]
 [[Category:天満宮]]
 [[Category:亀戸]]
-[[Category:17世紀の日本の設立]]
+[[Category:17th-century establishments in Japan]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

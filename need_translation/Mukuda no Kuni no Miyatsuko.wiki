@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Mukuda_no_Kuni_no_Miyatsuko for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
 '''Mukuda no Kuni no Miyatsuko''' (''umakuta no kuni no miyatsuko'', ''makuta no kuni no miyatsuko'', ''umakuta kokuzō'', ''makuta kokuzō'') was a {{ill|kuni no miyatsuko|ja|国造}} who ruled the central-western part of {{ill|Kazusa Province|ja|上総国}}.
 
 == Overview ==
@@ -38,10 +39,9 @@ Unknown.
 == External links ==
 * [http://www.haniwakan.com/kenkyu/boso/makuta.html Walking the Kofun of Bōsō: Kofun of Mukuda Province]
 
-{{DEFAULTSORT:うまくたのくにのみやつこ}}
 [[Category:日本の歴史関連のスタブ項目]]
 [[Category:上総国]]
 [[Category:千葉県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:馬来田国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|馬来田国造}}

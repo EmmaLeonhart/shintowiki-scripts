@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名 = Suruga no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = {{ill|Kanasashi clan|ja|金刺氏}} ({{ill|Mononobe clan|ja|物部氏}} lineage)
 |家祖 = {{ill|Katakataishi-no-Mikoto|ja|片堅石命}}
@@ -68,7 +68,6 @@ Unknown. Candidates include '''{{ill|Fujisan Hongū Sengen Taisha|ja|富士山�
 * ''Shintō Daijiten'' (Rinsen Shoten)
 * ''Nihon-shi Sōran'' ({{ill|Shinjinbutsu Ōraisha|ja|新人物往来社}})
 
-{{DEFAULTSORT:するかのくにのみやつこ}}
 [[Category:日本の歴史関連のスタブ項目]]
 [[Category:駿河国]]
 [[Category:駿河国の氏族]]
@@ -76,5 +75,5 @@ Unknown. Candidates include '''{{ill|Fujisan Hongū Sengen Taisha|ja|富士山�
 [[Category:物部氏|-するかのくにのみやつこ]]
 [[Category:静岡県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:珠流河国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|珠流河国造}}

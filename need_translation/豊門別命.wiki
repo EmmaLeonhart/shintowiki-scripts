@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E8%B1%8A%E9%96%80%E5%88%A5%E5%91%BD for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{基礎情報 公家
 | 氏名 = Toyotowake-no-Mikoto
 | 画像 =
@@ -58,5 +59,5 @@ He is enshrined alongside {{ill|Ōita-no-Wakaomi|ja|大分稚臣}} at {{ill|Ōit
 [[Category:大分県の歴史]]
 [[Category:生没年不詳]]
 [[Category:Kuni no miyatsuko]]
-[[ja:豊門別命]]
 [[Category:Need translation]]
+{{wikidata link||ja|豊門別命}}

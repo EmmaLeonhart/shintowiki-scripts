@@ -1,3 +1,4 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Isachi-no-Sukune for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 {{基礎情報 公家
 | 氏名 = Isachi-no-Sukune
 | 画像 =
@@ -46,7 +47,6 @@ His father was {{ill|Etamohi-no-Mikoto|ja|兄多毛比命}}, the first {{ill|Mus
 *{{ill|Kuni no miyatsuko|ja|国造}}
 *{{ill|List of Figures from before the Asuka Period|ja|飛鳥時代以前の人物一覧}}
 
-{{DEFAULTSORT:うなかみ の いさち}}
 [[Category:日本神話の人物]]
 [[Category:古墳時代の人物]]
 [[Category:古代日本の人物]]
@@ -55,6 +55,6 @@ His father was {{ill|Etamohi-no-Mikoto|ja|兄多毛比命}}, the first {{ill|Mus
 [[Category:播磨国の人物]]
 [[Category:上総国の人物]]
 [[Category:Kuni no miyatsuko]]
-[[ja:海上五十狭茅]]
 [[Category:Need translation]]
 [[Category:Pages without wikidata]]
+{{wikidata link||ja|海上五十狭茅}}

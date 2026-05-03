@@ -1,6 +1,6 @@
 {{日本の氏族
 |家名 = Suga no Kuni no Miyatsuko
-|家紋 = <!-- 家紋の画像 -->
+|家紋 = 
 |家紋名称 =
 |本姓 = Unknown
 |家祖 = {{ill|Umashiini-no-Mikoto|ja|美志印命}}
@@ -57,11 +57,10 @@ Unknown.
 *{{ill|List of Kuni no Miyatsuko|ja|国造の一覧}}
 *{{ill|Kunu no Kuni no Miyatsuko|ja|久努国造}}
 
-{{DEFAULTSORT:すかのくにのみやつこ}}
 [[Category:遠江国|くにのみやつこ]]
 [[Category:出雲氏|*すかのくにのみやつこ]]
 [[Category:物部氏|-すかのくにのみやつこ]]
 [[Category:静岡県の歴史]]
 [[Category:Kuni no miyatsuko]]
-[[ja:素賀国造]]
 [[Category:Need translation]]
+{{wikidata link||ja|素賀国造}}
