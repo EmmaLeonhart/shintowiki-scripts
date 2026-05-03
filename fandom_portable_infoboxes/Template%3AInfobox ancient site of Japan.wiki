@@ -1,0 +1,59 @@
+<infobox theme="ancient-site">
+<title source="name"><default>{{PAGENAME}}</default></title>
+<image source="image">
+<caption source="caption"/>
+</image>
+<data source="native_name"><label>Native name</label></data>
+<data source="alternative_names"><label>Alternative names</label></data>
+<group>
+<header>{{#if:{{{location|}}}{{{municipality|}}}{{{prefecture|}}}{{{region|}}}{{{country|}}}{{{coordinates|}}}|Location}}</header>
+<data source="location"><label>Location</label></data>
+<data source="municipality"><label>Municipality</label></data>
+<data source="prefecture"><label>Prefecture</label></data>
+<data source="region"><label>Region</label></data>
+<data source="country"><label>Country</label></data>
+<data source="coordinates"><label>Coordinates</label></data>
+<data source="elevation"><label>Elevation</label></data>
+</group>
+<group>
+<header>{{#if:{{{type|}}}{{{part_of|}}}{{{area|}}}{{{length|}}}{{{width|}}}{{{height|}}}{{{material|}}}|Site}}</header>
+<data source="type"><label>Type</label></data>
+<data source="part_of"><label>Part of</label></data>
+<data source="area"><label>Area</label></data>
+<data source="length"><label>Length</label></data>
+<data source="width"><label>Width</label></data>
+<data source="height"><label>Height</label></data>
+<data source="material"><label>Material</label></data>
+</group>
+<group>
+<header>{{#if:{{{period|}}}{{{cultures|}}}{{{epochs|}}}{{{founded|}}}{{{abandoned|}}}{{{built|}}}|History}}</header>
+<data source="period"><label>Period</label></data>
+<data source="cultures"><label>Cultures</label></data>
+<data source="epochs"><label>Epochs</label></data>
+<data source="founded"><label>Founded</label></data>
+<data source="built"><label>Built</label></data>
+<data source="abandoned"><label>Abandoned</label></data>
+</group>
+<group>
+<header>{{#if:{{{excavated|}}}{{{archaeologists|}}}{{{condition|}}}{{{ownership|}}}{{{public_access|}}}{{{designation|}}}{{{designated|}}}{{{reference_no|}}}|Heritage}}</header>
+<data source="excavated"><label>Excavated</label></data>
+<data source="archaeologists"><label>Archaeologists</label></data>
+<data source="condition"><label>Condition</label></data>
+<data source="ownership"><label>Ownership</label></data>
+<data source="public_access"><label>Public access</label></data>
+<data source="designation"><label>Designation</label></data>
+<data source="designated"><label>Designated</label></data>
+<data source="reference_no"><label>Reference no.</label></data>
+</group>
+<data source="website"><label>Website</label></data>
+</infobox><noinclude>
+{{Documentation|content=
+;Fandom Portable Infobox replacement for the broken interwiki
+"redirect" to enwiki. Covers parameters used by Japanese ancient-site
+articles (archaeological / historic sites). Empty rows hide
+automatically.
+}}
+[[Category:Infobox templates]]
+[[Category:fandom sync]]
+[[Category:Fandom Portable Infobox templates]]
+</noinclude>

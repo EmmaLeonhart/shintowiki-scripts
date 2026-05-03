@@ -1,0 +1,43 @@
+<infobox theme="military-rank">
+<title source="name"><default>{{PAGENAME}}</default></title>
+<image source="image">
+<caption source="caption"/>
+</image>
+<data source="native_name"><label>Native name</label></data>
+<group>
+<header>{{#if:{{{country|}}}{{{service_branch|}}}{{{branch|}}}{{{service|}}}|Service}}</header>
+<data source="country"><label>Country</label></data>
+<data source="service_branch"><label>Service branch</label></data>
+<data source="branch"><label>Branch</label></data>
+<data source="service"><label>Service</label></data>
+</group>
+<group>
+<header>{{#if:{{{rank_group|}}}{{{rank_class|}}}{{{abbreviation|}}}{{{nato_code|}}}{{{nato_rank|}}}{{{non_nato_rank|}}}{{{equivalent_to|}}}|Rank}}</header>
+<data source="rank_group"><label>Rank group</label></data>
+<data source="rank_class"><label>Rank class</label></data>
+<data source="abbreviation"><label>Abbreviation</label></data>
+<data source="nato_code"><label>NATO code</label></data>
+<data source="nato_rank"><label>NATO rank</label></data>
+<data source="non_nato_rank"><label>Non-NATO rank</label></data>
+<data source="equivalent_to"><label>Equivalent to</label></data>
+<data source="next_higher_rank"><label>Next higher rank</label></data>
+<data source="next_lower_rank"><label>Next lower rank</label></data>
+</group>
+<group>
+<header>{{#if:{{{formation|}}}{{{abolished|}}}{{{first_used|}}}{{{last_used|}}}{{{history|}}}|History}}</header>
+<data source="formation"><label>Formation</label></data>
+<data source="abolished"><label>Abolished</label></data>
+<data source="first_used"><label>First used</label></data>
+<data source="last_used"><label>Last used</label></data>
+<data source="history"><label>History</label></data>
+</group>
+</infobox><noinclude>
+{{Documentation|content=
+;Fandom Portable Infobox replacement for the broken interwiki
+"redirect" to enwiki. Covers parameters used by military-rank
+articles. Empty rows hide automatically.
+}}
+[[Category:Infobox templates]]
+[[Category:fandom sync]]
+[[Category:Fandom Portable Infobox templates]]
+</noinclude>
