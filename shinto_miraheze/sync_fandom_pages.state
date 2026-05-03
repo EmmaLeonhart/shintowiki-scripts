@@ -791,17 +791,317 @@
     "mira_revid": 3695221,
     "mira_sha": "76cae4a2eb0d994ed655c6af61219961ac8208cb"
   },
+  "Template:Infobox food/doc": {
+    "fan_revid": 1970666,
+    "fan_sha": "f88dcc45e3c38e180365565f00ae10468c4ba710",
+    "mira_revid": 3695223,
+    "mira_sha": "f88dcc45e3c38e180365565f00ae10468c4ba710"
+  },
+  "Template:Infobox footer": {
+    "fan_revid": 1970667,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695225,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox forest": {
+    "fan_revid": 1970668,
+    "fan_sha": "da615d73e753933d27c6fab75034b1e2c382a8fe",
+    "mira_revid": 3695226,
+    "mira_sha": "da615d73e753933d27c6fab75034b1e2c382a8fe"
+  },
+  "Template:Infobox forest/doc": {
+    "fan_revid": 1970669,
+    "fan_sha": "18dd2a7b7c385461635518b2e652c1d2bb746998",
+    "mira_revid": 3695227,
+    "mira_sha": "18dd2a7b7c385461635518b2e652c1d2bb746998"
+  },
+  "Template:Infobox former subdivision": {
+    "fan_revid": 1970670,
+    "fan_sha": "cd0b889c6d2968b493e0f988a6639487ea4bafa2",
+    "mira_revid": 3695229,
+    "mira_sha": "cd0b889c6d2968b493e0f988a6639487ea4bafa2"
+  },
+  "Template:Infobox former subdivision/doc": {
+    "fan_revid": 1970671,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695230,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox government agency": {
+    "fan_revid": 1970672,
+    "fan_sha": "2fc3a0ebaa2a0e4fca274528146cacc817865efe",
+    "mira_revid": 3695233,
+    "mira_sha": "2fc3a0ebaa2a0e4fca274528146cacc817865efe"
+  },
+  "Template:Infobox government agency/doc": {
+    "fan_revid": 1970716,
+    "fan_sha": "1a481e5b85083f4c6438dbc1d2b083b0d7cba2e1",
+    "mira_revid": 3695235,
+    "mira_sha": "a7cb1a234a237bcbf9deae205a581e6754c7444e"
+  },
+  "Template:Infobox grapheme": {
+    "fan_revid": 1970674,
+    "fan_sha": "55d97a8ac6418abe8b9316f722f75fbd06ce705d",
+    "mira_revid": 3695236,
+    "mira_sha": "55d97a8ac6418abe8b9316f722f75fbd06ce705d"
+  },
+  "Template:Infobox hieroglyphs": {
+    "fan_revid": 1970675,
+    "fan_sha": "ae1ac220ad5d65961eb07eda2c8cedbab079f9ba",
+    "mira_revid": 3695238,
+    "mira_sha": "ae1ac220ad5d65961eb07eda2c8cedbab079f9ba"
+  },
+  "Template:Infobox hieroglyphs two-columns": {
+    "fan_revid": 1970717,
+    "fan_sha": "690b2b1d6583fe5614e5916a53c136147e9aeb43",
+    "mira_revid": 3695239,
+    "mira_sha": "25f39899d97a5fe40eaa4cf2c26eebf3d220262c"
+  },
+  "Template:Infobox hieroglyphs/doc": {
+    "fan_revid": 1970676,
+    "fan_sha": "fd92445b02e90d094d625a01283b82c1742afbbc",
+    "mira_revid": 3695240,
+    "mira_sha": "fd92445b02e90d094d625a01283b82c1742afbbc"
+  },
+  "Template:Infobox historic site": {
+    "fan_revid": 1970678,
+    "fan_sha": "bb766eb80325e62ec6dd4aa0a07fae0f9bfa6403",
+    "mira_revid": 3695245,
+    "mira_sha": "bb766eb80325e62ec6dd4aa0a07fae0f9bfa6403"
+  },
+  "Template:Infobox historic site/doc": {
+    "fan_revid": 1970679,
+    "fan_sha": "ec628638dd190ea4303d6aa7f3a78d61d6c1aaa2",
+    "mira_revid": 3695249,
+    "mira_sha": "ec628638dd190ea4303d6aa7f3a78d61d6c1aaa2"
+  },
+  "Template:Infobox historical era": {
+    "fan_revid": 1970680,
+    "fan_sha": "6d0ae5dd61eccf6debc693c361b43537ebfef0cd",
+    "mira_revid": 3695250,
+    "mira_sha": "6d0ae5dd61eccf6debc693c361b43537ebfef0cd"
+  },
+  "Template:Infobox historical figure": {
+    "fan_revid": 1970681,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695251,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox holiday": {
+    "fan_revid": 1970682,
+    "fan_sha": "d001d03425338fbda6a8a51e3a1fbcc16549fd40",
+    "mira_revid": 3695253,
+    "mira_sha": "d001d03425338fbda6a8a51e3a1fbcc16549fd40"
+  },
+  "Template:Infobox holiday/date": {
+    "fan_revid": 1970683,
+    "fan_sha": "8dc0c3b0a93b106bfb995fa5f0d2a48ae256f754",
+    "mira_revid": 3695254,
+    "mira_sha": "8dc0c3b0a93b106bfb995fa5f0d2a48ae256f754"
+  },
+  "Template:Infobox holiday/doc": {
+    "fan_revid": 1970684,
+    "fan_sha": "1d24c9da50381050b290a154388ce6bc66b1e072",
+    "mira_revid": 3695256,
+    "mira_sha": "1d24c9da50381050b290a154388ce6bc66b1e072"
+  },
+  "Template:Infobox hospital": {
+    "fan_revid": 1970685,
+    "fan_sha": "b970c7f797835efe6c9494ec0bbe833ba030521e",
+    "mira_revid": 3695257,
+    "mira_sha": "b970c7f797835efe6c9494ec0bbe833ba030521e"
+  },
+  "Template:Infobox hospital/care system": {
+    "fan_revid": 1970686,
+    "fan_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a",
+    "mira_revid": 3695259,
+    "mira_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a"
+  },
+  "Template:Infobox hospital/doc": {
+    "fan_revid": 1970687,
+    "fan_sha": "c0a3362932628324200dc72661d1903c444843d2",
+    "mira_revid": 3695261,
+    "mira_sha": "c0a3362932628324200dc72661d1903c444843d2"
+  },
+  "Template:Infobox hospital/lists": {
+    "fan_revid": 1970688,
+    "fan_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a",
+    "mira_revid": 3695262,
+    "mira_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a"
+  },
+  "Template:Infobox hot spring": {
+    "fan_revid": 1970689,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695263,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox instrument": {
+    "fan_revid": 1970690,
+    "fan_sha": "a2ff7a0f0e92b49dd5d59ecb7e816c627a1054c0",
+    "mira_revid": 3695264,
+    "mira_sha": "a2ff7a0f0e92b49dd5d59ecb7e816c627a1054c0"
+  },
+  "Template:Infobox instrument/Classification": {
+    "fan_revid": 1970691,
+    "fan_sha": "7b37e18bf690c7dc98aacc6fded70ead69caeb64",
+    "mira_revid": 3695265,
+    "mira_sha": "7b37e18bf690c7dc98aacc6fded70ead69caeb64"
+  },
+  "Template:Infobox instrument/Color": {
+    "fan_revid": 1970692,
+    "fan_sha": "c8b0b3670ce09622d2b42f35ea3eb355aa9c7048",
+    "mira_revid": 3695266,
+    "mira_sha": "c8b0b3670ce09622d2b42f35ea3eb355aa9c7048"
+  },
+  "Template:Infobox instrument/doc": {
+    "fan_revid": 1970693,
+    "fan_sha": "efc604af74ae690e85897c71af264ab60cad8e29",
+    "mira_revid": 3695268,
+    "mira_sha": "efc604af74ae690e85897c71af264ab60cad8e29"
+  },
+  "Template:Infobox intangible heritage": {
+    "fan_revid": 1970694,
+    "fan_sha": "1b43ea5fc0e7aaabe5d76518844ee9cf0f4eadae",
+    "mira_revid": 3695269,
+    "mira_sha": "1b43ea5fc0e7aaabe5d76518844ee9cf0f4eadae"
+  },
+  "Template:Infobox intangible heritage/doc": {
+    "fan_revid": 1970695,
+    "fan_sha": "42803325066f630b3bc9f80ef57e08aed4c45a73",
+    "mira_revid": 3695270,
+    "mira_sha": "42803325066f630b3bc9f80ef57e08aed4c45a73"
+  },
   "Template:Infobox island": {
     "fan_revid": 1966290,
     "fan_sha": "2ff38e9cca981486bb5f4be0028b04506d3fb0c6",
     "mira_revid": 3695271,
     "mira_sha": "2ff38e9cca981486bb5f4be0028b04506d3fb0c6"
   },
+  "Template:Infobox islands": {
+    "fan_revid": 1970696,
+    "fan_sha": "a69dd97e9f5d4989ce9c6dbf0fd5a46ed680f5a2",
+    "mira_revid": 3695272,
+    "mira_sha": "a69dd97e9f5d4989ce9c6dbf0fd5a46ed680f5a2"
+  },
+  "Template:Infobox islands/area": {
+    "fan_revid": 1970697,
+    "fan_sha": "ff5736d442be5c74c7bd020cbb39e10caaa1d499",
+    "mira_revid": 3695275,
+    "mira_sha": "ff5736d442be5c74c7bd020cbb39e10caaa1d499"
+  },
+  "Template:Infobox islands/area/doc": {
+    "fan_revid": 1970698,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695276,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox islands/density": {
+    "fan_revid": 1970699,
+    "fan_sha": "ce37a2a064cb700434e234b22eb542ad2e176ebe",
+    "mira_revid": 3695277,
+    "mira_sha": "ce37a2a064cb700434e234b22eb542ad2e176ebe"
+  },
+  "Template:Infobox islands/density/doc": {
+    "fan_revid": 1970700,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695278,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox islands/doc": {
+    "fan_revid": 1970701,
+    "fan_sha": "1c7fa9a0ad8ffcaf06e430a27009612ca405f794",
+    "mira_revid": 3695279,
+    "mira_sha": "1c7fa9a0ad8ffcaf06e430a27009612ca405f794"
+  },
+  "Template:Infobox islands/length": {
+    "fan_revid": 1970702,
+    "fan_sha": "5ff5d6ad06c48e5d98814570157c6d34873117da",
+    "mira_revid": 3695283,
+    "mira_sha": "5ff5d6ad06c48e5d98814570157c6d34873117da"
+  },
+  "Template:Infobox islands/length/doc": {
+    "fan_revid": 1970703,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695306,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox jiscolor": {
+    "fan_revid": 1970704,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695321,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
   "Template:Infobox kofun": {
     "fan_revid": 1966292,
     "fan_sha": "ffe6e86cb04fd1acf31ed6fd3a0bde0424d27804",
     "mira_revid": 3695320,
     "mira_sha": "ffe6e86cb04fd1acf31ed6fd3a0bde0424d27804"
+  },
+  "Template:Infobox koryu": {
+    "fan_revid": 1970718,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695325,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox landform": {
+    "fan_revid": 1970706,
+    "fan_sha": "2eb2fdac79e45539d887a69c257f599aa3491234",
+    "mira_revid": 3695326,
+    "mira_sha": "2eb2fdac79e45539d887a69c257f599aa3491234"
+  },
+  "Template:Infobox landform/doc": {
+    "fan_revid": 1970707,
+    "fan_sha": "27d4c4cc821df866d83bc587749b1345b0d3e661",
+    "mira_revid": 3695327,
+    "mira_sha": "27d4c4cc821df866d83bc587749b1345b0d3e661"
+  },
+  "Template:Infobox legislation": {
+    "fan_revid": 1970708,
+    "fan_sha": "71a61f3ce5a8c782bbc08c33dc5a1897e12687ae",
+    "mira_revid": 3695329,
+    "mira_sha": "71a61f3ce5a8c782bbc08c33dc5a1897e12687ae"
+  },
+  "Template:Infobox legislation/doc": {
+    "fan_revid": 1970709,
+    "fan_sha": "a254ea72d6d366038b803269ed46d303435754d1",
+    "mira_revid": 3695331,
+    "mira_sha": "a254ea72d6d366038b803269ed46d303435754d1"
+  },
+  "Template:Infobox library classification": {
+    "fan_revid": 1970710,
+    "fan_sha": "32df261e86adf0dcd289f6701978472792536bba",
+    "mira_revid": 3695330,
+    "mira_sha": "32df261e86adf0dcd289f6701978472792536bba"
+  },
+  "Template:Infobox library classification/doc": {
+    "fan_revid": 1970711,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695332,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox magazine": {
+    "fan_revid": 1970712,
+    "fan_sha": "22c3a087ececa568d18e86ebe71a407b9ad970b1",
+    "mira_revid": 3695333,
+    "mira_sha": "22c3a087ececa568d18e86ebe71a407b9ad970b1"
+  },
+  "Template:Infobox magazine/doc": {
+    "fan_revid": 1970713,
+    "fan_sha": "cd29a4534043f2748c7cacfc3358a941ca9ea2f2",
+    "mira_revid": 3695334,
+    "mira_sha": "cd29a4534043f2748c7cacfc3358a941ca9ea2f2"
+  },
+  "Template:Infobox manner of address": {
+    "fan_revid": 1970714,
+    "fan_sha": "3d9cffbd4295fad85e5cac345e76e07d6c67deba",
+    "mira_revid": 3695335,
+    "mira_sha": "3d9cffbd4295fad85e5cac345e76e07d6c67deba"
+  },
+  "Template:Infobox manner of address/doc": {
+    "fan_revid": 1970715,
+    "fan_sha": "0c546eb14dab7c242ba05bc69db4884766e72412",
+    "mira_revid": 3695336,
+    "mira_sha": "0c546eb14dab7c242ba05bc69db4884766e72412"
   },
   "Template:Infobox military Rank": {
     "fan_revid": 1966857,
