@@ -22,6 +22,7 @@ from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
     interlang_consolidate,
+    normalize_ill_positional,
     remove_defaultsort,
     shikinaisha_talk,
     strip_char_count_cats,
@@ -41,6 +42,7 @@ from shinto_miraheze.orchestrators.ops import (
 # category; returns no-op for every other page.
 OPS = [
     strip_html_comments,
+    normalize_ill_positional,
     interlang_consolidate,
     history_offload,
     shikinaisha_talk,
