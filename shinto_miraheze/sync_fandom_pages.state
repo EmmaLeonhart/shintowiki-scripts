@@ -1103,11 +1103,77 @@
     "mira_revid": 3695336,
     "mira_sha": "0c546eb14dab7c242ba05bc69db4884766e72412"
   },
+  "Template:Infobox mapframe": {
+    "fan_revid": 1973845,
+    "fan_sha": "e10c5493977c4b4e014e4127e3d6a6a534556d80",
+    "mira_revid": 3695337,
+    "mira_sha": "e10c5493977c4b4e014e4127e3d6a6a534556d80"
+  },
+  "Template:Infobox mapframe/doc": {
+    "fan_revid": 1973846,
+    "fan_sha": "82c4c711ce33029fdd411aa580752b8bb9da993d",
+    "mira_revid": 3695338,
+    "mira_sha": "82c4c711ce33029fdd411aa580752b8bb9da993d"
+  },
+  "Template:Infobox mapframe/doc/parameters/doc": {
+    "fan_revid": 1973847,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695339,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox mapframe/sandbox": {
+    "fan_revid": 1973848,
+    "fan_sha": "e8a528b5a68af48e6ef05a1f75011a4ea10d246c",
+    "mira_revid": 3695340,
+    "mira_sha": "e8a528b5a68af48e6ef05a1f75011a4ea10d246c"
+  },
   "Template:Infobox military Rank": {
     "fan_revid": 1966857,
     "fan_sha": "c1092b3f8cc2952d5006624c187f755c3f000f42",
     "mira_revid": 3695671,
     "mira_sha": "db51d589cd967119dd91547862d159e6cc1dca3b"
+  },
+  "Template:Infobox military conflict": {
+    "fan_revid": 1973856,
+    "fan_sha": "059dbc7ca21f140db6990921ae6ad723d0e9fff1",
+    "mira_revid": 3695341,
+    "mira_sha": "059dbc7ca21f140db6990921ae6ad723d0e9fff1"
+  },
+  "Template:Infobox military conflict documentation": {
+    "fan_revid": 1973895,
+    "fan_sha": "286576117fdcf9bf8b92f4fa9012fbaaea00f650",
+    "mira_revid": 3695342,
+    "mira_sha": "2143ac685cb2aff954c1bed55c583c7ccede0a77"
+  },
+  "Template:Infobox military conflict/doc": {
+    "fan_revid": 1973857,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695343,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox military installation": {
+    "fan_revid": 1973859,
+    "fan_sha": "439c1f22deeefcd4d748fbe3f6f361ff283f334c",
+    "mira_revid": 3695344,
+    "mira_sha": "439c1f22deeefcd4d748fbe3f6f361ff283f334c"
+  },
+  "Template:Infobox military installation/doc": {
+    "fan_revid": 1973860,
+    "fan_sha": "3a688397411a5311f13212a6f382e33286b238f7",
+    "mira_revid": 3695345,
+    "mira_sha": "3a688397411a5311f13212a6f382e33286b238f7"
+  },
+  "Template:Infobox military person": {
+    "fan_revid": 1973861,
+    "fan_sha": "db0eeac3a3a92a265a61097d9dab3362166571eb",
+    "mira_revid": 3695346,
+    "mira_sha": "db0eeac3a3a92a265a61097d9dab3362166571eb"
+  },
+  "Template:Infobox military person/doc": {
+    "fan_revid": 1973862,
+    "fan_sha": "f410fe149265425160ce7a9eb0d371508f1ad1e4",
+    "mira_revid": 3695348,
+    "mira_sha": "f410fe149265425160ce7a9eb0d371508f1ad1e4"
   },
   "Template:Infobox military structure": {
     "fan_revid": 1966289,
@@ -1115,11 +1181,203 @@
     "mira_revid": 3695349,
     "mira_sha": "fa7bd6d12506276ba55d9c668cf008392f88e853"
   },
+  "Template:Infobox mountain": {
+    "fan_revid": 1973863,
+    "fan_sha": "b2d79ca33b3a214975c2565c8d39981dafd6bf7c",
+    "mira_revid": 3695352,
+    "mira_sha": "b2d79ca33b3a214975c2565c8d39981dafd6bf7c"
+  },
+  "Template:Infobox mountain/doc": {
+    "fan_revid": 1973864,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695353,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox museum": {
+    "fan_revid": 1973865,
+    "fan_sha": "6f25e61e091e29c1f5a66e17ffa760bb9e4fb324",
+    "mira_revid": 3695355,
+    "mira_sha": "6f25e61e091e29c1f5a66e17ffa760bb9e4fb324"
+  },
+  "Template:Infobox museum/doc": {
+    "fan_revid": 1973866,
+    "fan_sha": "b3e2833916844d01d5c4758200c240645227e8f0",
+    "mira_revid": 3695357,
+    "mira_sha": "b3e2833916844d01d5c4758200c240645227e8f0"
+  },
+  "Template:Infobox musical artist": {
+    "fan_revid": 1973896,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695356,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox mythical creature": {
+    "fan_revid": 1973868,
+    "fan_sha": "d20b1a48bf68dc476e2f3f4978540200b1c44978",
+    "mira_revid": 3695359,
+    "mira_sha": "d20b1a48bf68dc476e2f3f4978540200b1c44978"
+  },
+  "Template:Infobox mythical creature/doc": {
+    "fan_revid": 1973869,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695360,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox noble": {
+    "fan_revid": 1973870,
+    "fan_sha": "d68946ed345ef84a2f1d480cc0aa76267ad2e823",
+    "mira_revid": 3695362,
+    "mira_sha": "d68946ed345ef84a2f1d480cc0aa76267ad2e823"
+  },
+  "Template:Infobox noble (Japan)": {
+    "fan_revid": 1973897,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695363,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox noble family": {
+    "fan_revid": 1973873,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695364,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox noble/doc": {
+    "fan_revid": 1973871,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695365,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
   "Template:Infobox office holder": {
     "fan_revid": 1966291,
     "fan_sha": "5927ecedf66ee2c3af06eeb1d1403b93354f4bfc",
     "mira_revid": 3695367,
     "mira_sha": "5927ecedf66ee2c3af06eeb1d1403b93354f4bfc"
+  },
+  "Template:Infobox officeholder": {
+    "fan_revid": 1973874,
+    "fan_sha": "f1926e07bca9d4ac87f2b05aa4c635096297dbba",
+    "mira_revid": 3695369,
+    "mira_sha": "f1926e07bca9d4ac87f2b05aa4c635096297dbba"
+  },
+  "Template:Infobox officeholder/doc": {
+    "fan_revid": 1973875,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695370,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox officeholder/office": {
+    "fan_revid": 1973876,
+    "fan_sha": "a6d928f67e29fd918f5b2fc832f2ca481ef8d845",
+    "mira_revid": 3695371,
+    "mira_sha": "a6d928f67e29fd918f5b2fc832f2ca481ef8d845"
+  },
+  "Template:Infobox officeholder/office/doc": {
+    "fan_revid": 1973877,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695373,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox organization": {
+    "fan_revid": 1973878,
+    "fan_sha": "b3780edd9501a67fec18a68f494295adc6cbeb1d",
+    "mira_revid": 3695375,
+    "mira_sha": "b3780edd9501a67fec18a68f494295adc6cbeb1d"
+  },
+  "Template:Infobox organization/doc": {
+    "fan_revid": 1973879,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695376,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox park": {
+    "fan_revid": 1973880,
+    "fan_sha": "ea2dab29bcd3b6b6dc93df7a1137a1b81cd1758b",
+    "mira_revid": 3695377,
+    "mira_sha": "ea2dab29bcd3b6b6dc93df7a1137a1b81cd1758b"
+  },
+  "Template:Infobox park/doc": {
+    "fan_revid": 1973881,
+    "fan_sha": "e23b9cfe97563fce8a48bdd0a8aa61ae3d389dbf",
+    "mira_revid": 3695378,
+    "mira_sha": "e23b9cfe97563fce8a48bdd0a8aa61ae3d389dbf"
+  },
+  "Template:Infobox performing art": {
+    "fan_revid": 1973898,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695380,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox person": {
+    "fan_revid": 1973883,
+    "fan_sha": "727d239553888fc25d2ddb60f8afc2d05fb31b3b",
+    "mira_revid": 3695379,
+    "mira_sha": "727d239553888fc25d2ddb60f8afc2d05fb31b3b"
+  },
+  "Template:Infobox person/doc": {
+    "fan_revid": 1973884,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695381,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox pharaoh/Golden": {
+    "fan_revid": 1973885,
+    "fan_sha": "26fec0cd306635eaf457f6fbc5b866d969ed6766",
+    "mira_revid": 3695383,
+    "mira_sha": "26fec0cd306635eaf457f6fbc5b866d969ed6766"
+  },
+  "Template:Infobox pharaoh/Nebty": {
+    "fan_revid": 1973886,
+    "fan_sha": "a818babd599af9cc5b4f2a49e49ae61fb3d6da9d",
+    "mira_revid": 3695384,
+    "mira_sha": "a818babd599af9cc5b4f2a49e49ae61fb3d6da9d"
+  },
+  "Template:Infobox pharaoh/Nomen": {
+    "fan_revid": 1973887,
+    "fan_sha": "1917271176cbca245b34caf5dcbd37ce37b5bc42",
+    "mira_revid": 3695385,
+    "mira_sha": "1917271176cbca245b34caf5dcbd37ce37b5bc42"
+  },
+  "Template:Infobox pharaoh/Prenomen": {
+    "fan_revid": 1973888,
+    "fan_sha": "08f5dc69f3c2dc95608bd2b12ad54ec6071362ed",
+    "mira_revid": 3695386,
+    "mira_sha": "08f5dc69f3c2dc95608bd2b12ad54ec6071362ed"
+  },
+  "Template:Infobox pharaoh/Serekh": {
+    "fan_revid": 1973889,
+    "fan_sha": "d5023cfb9c3006c6cc749f905c82b747db7735ce",
+    "mira_revid": 3695387,
+    "mira_sha": "d5023cfb9c3006c6cc749f905c82b747db7735ce"
+  },
+  "Template:Infobox pharaoh/doc": {
+    "fan_revid": 1973890,
+    "fan_sha": "d138ec98a8ea030955e2e09cc9a8b6a67259ff1c",
+    "mira_revid": 3695382,
+    "mira_sha": "d138ec98a8ea030955e2e09cc9a8b6a67259ff1c"
+  },
+  "Template:Infobox philosopher": {
+    "fan_revid": 1973891,
+    "fan_sha": "08db66ace0dae53ef48c6954cc59120db6123030",
+    "mira_revid": 3695388,
+    "mira_sha": "08db66ace0dae53ef48c6954cc59120db6123030"
+  },
+  "Template:Infobox philosopher/doc": {
+    "fan_revid": 1973892,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695389,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
+  },
+  "Template:Infobox political system": {
+    "fan_revid": 1973899,
+    "fan_sha": "60a623be7c5efc82f0f643be368fc9f97ea575c8",
+    "mira_revid": 3695390,
+    "mira_sha": "b5183f75efbddbb7a6b0d084b06688ba133c8ddc"
+  },
+  "Template:Infobox politician": {
+    "fan_revid": 1973894,
+    "fan_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870",
+    "mira_revid": 3695391,
+    "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
   },
   "Template:Infobox religious building": {
     "fan_revid": 1966858,
@@ -1202,5 +1460,47 @@
     "fan_sha": "71292895178ceb97140f7c5c923b7f920a215e02",
     "mira_revid": 3658389,
     "mira_sha": "3b754148ab5091c4b25e5fcdd13d8958a9227ba9"
+  },
+  "Yakushi-ji": {
+    "fan_revid": 1973900,
+    "fan_sha": "b57cb23e1f66cd51a16520b742f28182e505fc11",
+    "mira_revid": 3660917,
+    "mira_sha": "5bbdbbe3cbdf16660d158fef107df8a1cfffcb13"
+  },
+  "Yakuō-ji (Shiroi)": {
+    "fan_revid": 1973901,
+    "fan_sha": "c14fc749724c45035393b6fcc5b807b6e0087a59",
+    "mira_revid": 3660920,
+    "mira_sha": "0d280d0995c775b747ce91e9fcb2be1de3d17aa5"
+  },
+  "Yakyu Inari Shrine": {
+    "fan_revid": 1973902,
+    "fan_sha": "574764778b1acfa44828ec7adbfa398200ea17f8",
+    "mira_revid": 3660923,
+    "mira_sha": "bf339f04cd4cc1e80edaacdef99d01685851a983"
+  },
+  "Yasaka Shrine (Hino City)": {
+    "fan_revid": 1973903,
+    "fan_sha": "e36558ddaa31e107e50000e370753598156272c7",
+    "mira_revid": 3661384,
+    "mira_sha": "f536f4dbf0cd365d88d8aa19e16f4060c27c80df"
+  },
+  "Yasaka Shrine (Miyama)": {
+    "fan_revid": 1973904,
+    "fan_sha": "fb38045f885d67e1a84b93ae3499cd9a251c7aa2",
+    "mira_revid": 3661390,
+    "mira_sha": "b9169c924d845c086d7e111785ded17db6b69bcc"
+  },
+  "Yasaka Shrine (Oizumi-cho, Honma District)": {
+    "fan_revid": 1973905,
+    "fan_sha": "e24e5ba0b657df6cfa147068da9d0bf7df948d55",
+    "mira_revid": 3661393,
+    "mira_sha": "f1b491e6f50f21878e366c60bb05b52ecb1c1c04"
+  },
+  "Yasaka Shrine (Takarazuka City)": {
+    "fan_revid": 1973906,
+    "fan_sha": "ab4f86e202ff2618467096294cc41f3ffd5581f8",
+    "mira_revid": 3661405,
+    "mira_sha": "b1cc52417a0959080c82ec53509c0f9461d738b0"
   }
 }
