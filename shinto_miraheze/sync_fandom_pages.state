@@ -240,7 +240,7 @@
     "mira_sha": "f5ae6a4fa7442f42b30e0a42433d3e9086c08a1c"
   },
   "Template:Infobox Chinese": {
-    "fan_revid": 1966790,
+    "fan_revid": 1980183,
     "fan_sha": "8edb70a4fdbd212cc1025b74493c3268b771b1ff",
     "mira_revid": 3695173,
     "mira_sha": "8edb70a4fdbd212cc1025b74493c3268b771b1ff"
@@ -1379,9 +1379,305 @@
     "mira_revid": 3695391,
     "mira_sha": "795a824195c39e45d5afc7594d7e38d46b7b3870"
   },
+  "Template:Infobox power station": {
+    "fan_revid": 1981096,
+    "fan_sha": "5edb7d52f9d058c387fca188fe4d6995f79d27b2",
+    "mira_revid": 3695392,
+    "mira_sha": "5edb7d52f9d058c387fca188fe4d6995f79d27b2"
+  },
+  "Template:Infobox power station/doc": {
+    "fan_revid": 1981097,
+    "fan_sha": "a248116864656a28d765ee7dcf152d803f007565",
+    "mira_revid": 3695393,
+    "mira_sha": "a248116864656a28d765ee7dcf152d803f007565"
+  },
+  "Template:Infobox prepared food": {
+    "fan_revid": 1981146,
+    "fan_sha": "1ec983235858a6b42cb3515ced708c9f5a77fc2a",
+    "mira_revid": 3695394,
+    "mira_sha": "0a46b1d9ea4119e11b7a6d61ca52a88959643d11"
+  },
+  "Template:Infobox programming language": {
+    "fan_revid": 1981099,
+    "fan_sha": "d08ad688cb0ed11e47c8b8bdc62044f0c881ebb9",
+    "mira_revid": 3695395,
+    "mira_sha": "d08ad688cb0ed11e47c8b8bdc62044f0c881ebb9"
+  },
+  "Template:Infobox programming language/doc": {
+    "fan_revid": 1981100,
+    "fan_sha": "fa60b78a54a200da11d5f0df22f15e0f923fb93a",
+    "mira_revid": 3695396,
+    "mira_sha": "fa60b78a54a200da11d5f0df22f15e0f923fb93a"
+  },
+  "Template:Infobox publisher": {
+    "fan_revid": 1981101,
+    "fan_sha": "b81a3d1a09811e8bd2a49b0a7c068101a03d4046",
+    "mira_revid": 3695407,
+    "mira_sha": "b81a3d1a09811e8bd2a49b0a7c068101a03d4046"
+  },
+  "Template:Infobox publisher2": {
+    "fan_revid": 1981147,
+    "fan_sha": "967c8fa00b67c53ef873d54b75e6a6beae882255",
+    "mira_revid": 3695408,
+    "mira_sha": "55e2020632b6b60f674dc4875fa614310af62739"
+  },
+  "Template:Infobox recurring event": {
+    "fan_revid": 1981148,
+    "fan_sha": "6cdf8ff118b9b05b3f950a8868be9cbd4278c31a",
+    "mira_revid": 3695409,
+    "mira_sha": "13744c46c550fc854e1b5ebb116c890156ef4a8e"
+  },
+  "Template:Infobox religion": {
+    "fan_revid": 1981104,
+    "fan_sha": "0940a9a6dac5b09f9c4ef64d2e2c93a20c621453",
+    "mira_revid": 3695410,
+    "mira_sha": "0940a9a6dac5b09f9c4ef64d2e2c93a20c621453"
+  },
+  "Template:Infobox religion/doc": {
+    "fan_revid": 1981105,
+    "fan_sha": "270c77937ae93cfd2037092c4a1f3e0b0ed90d8d",
+    "mira_revid": 3695411,
+    "mira_sha": "270c77937ae93cfd2037092c4a1f3e0b0ed90d8d"
+  },
+  "Template:Infobox religious biography": {
+    "fan_revid": 1981106,
+    "fan_sha": "c18f4ca28df6940d65f3f4cec606effff66521f0",
+    "mira_revid": 3695412,
+    "mira_sha": "c18f4ca28df6940d65f3f4cec606effff66521f0"
+  },
+  "Template:Infobox religious biography/doc": {
+    "fan_revid": 1981107,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695413,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
   "Template:Infobox religious building": {
-    "fan_revid": 1966858,
-    "fan_sha": "8f687e34f5168877d64beda97fbc9759d62ff742"
+    "fan_revid": 1981149,
+    "fan_sha": "8f687e34f5168877d64beda97fbc9759d62ff742",
+    "mira_revid": 3695455,
+    "mira_sha": "a1e0f4b33b0e0d8d283a326f205888927044e3dd"
+  },
+  "Template:Infobox religious building/color/doc": {
+    "fan_revid": 1981109,
+    "fan_sha": "e6481480d8c78f74655198dbe0e65dc962a5107c",
+    "mira_revid": 3695415,
+    "mira_sha": "e6481480d8c78f74655198dbe0e65dc962a5107c"
+  },
+  "Template:Infobox religious building/color/test/doc": {
+    "fan_revid": 1981110,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695416,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox religious building/color/testtable": {
+    "fan_revid": 1981111,
+    "fan_sha": "df2b90cbfc2ca35a30c80c09794afaabbd0f9c86",
+    "mira_revid": 3695417,
+    "mira_sha": "df2b90cbfc2ca35a30c80c09794afaabbd0f9c86"
+  },
+  "Template:Infobox religious building/doc": {
+    "fan_revid": 1981112,
+    "fan_sha": "4fac21cf574527a2849b219a2f88be5b6e999c29",
+    "mira_revid": 3695418,
+    "mira_sha": "4fac21cf574527a2849b219a2f88be5b6e999c29"
+  },
+  "Template:Infobox river": {
+    "fan_revid": 1981113,
+    "fan_sha": "895c4156185d3027e4e1c352bfe7b48ff910b8a2",
+    "mira_revid": 3695420,
+    "mira_sha": "895c4156185d3027e4e1c352bfe7b48ff910b8a2"
+  },
+  "Template:Infobox river/calcunit": {
+    "fan_revid": 1981114,
+    "fan_sha": "e11f59eff06916566cf70216cfd320afee9fa0e5",
+    "mira_revid": 3695421,
+    "mira_sha": "e11f59eff06916566cf70216cfd320afee9fa0e5"
+  },
+  "Template:Infobox river/discharge": {
+    "fan_revid": 1981115,
+    "fan_sha": "49170c560d28574c6489358317a360c4abfd7731",
+    "mira_revid": 3695422,
+    "mira_sha": "49170c560d28574c6489358317a360c4abfd7731"
+  },
+  "Template:Infobox river/discharge/doc": {
+    "fan_revid": 1981116,
+    "fan_sha": "027748d22382833df7cd6b0147955099594cf3ad",
+    "mira_revid": 3695423,
+    "mira_sha": "027748d22382833df7cd6b0147955099594cf3ad"
+  },
+  "Template:Infobox river/doc": {
+    "fan_revid": 1981117,
+    "fan_sha": "e45d101df17392a830c1ae2dba144187785a9e11",
+    "mira_revid": 3695424,
+    "mira_sha": "e45d101df17392a830c1ae2dba144187785a9e11"
+  },
+  "Template:Infobox river/row-style": {
+    "fan_revid": 1981118,
+    "fan_sha": "f0904f3d382e37b9d5173967e247394cde1145a1",
+    "mira_revid": 3695425,
+    "mira_sha": "f0904f3d382e37b9d5173967e247394cde1145a1"
+  },
+  "Template:Infobox river/source": {
+    "fan_revid": 1981119,
+    "fan_sha": "d72eefe1a62a17b7a3df62e458753be95d8bdf93",
+    "mira_revid": 3695426,
+    "mira_sha": "d72eefe1a62a17b7a3df62e458753be95d8bdf93"
+  },
+  "Template:Infobox road": {
+    "fan_revid": 1981120,
+    "fan_sha": "aca7619d31a60baa5639f4e7ca7394d24327c843",
+    "mira_revid": 3695427,
+    "mira_sha": "aca7619d31a60baa5639f4e7ca7394d24327c843"
+  },
+  "Template:Infobox road/doc": {
+    "fan_revid": 1981121,
+    "fan_sha": "bc7367195a0038ee6eef526e32e01c7874b1a36b",
+    "mira_revid": 3695428,
+    "mira_sha": "bc7367195a0038ee6eef526e32e01c7874b1a36b"
+  },
+  "Template:Infobox road/meta/mask/category": {
+    "fan_revid": 1981122,
+    "fan_sha": "fa49fd2e642cd0dbc07e715223e3dd26e180c4f7",
+    "mira_revid": 3695429,
+    "mira_sha": "fa49fd2e642cd0dbc07e715223e3dd26e180c4f7"
+  },
+  "Template:Infobox road/meta/mask/country": {
+    "fan_revid": 1981123,
+    "fan_sha": "ef0fd50d45249cacdef4cca889dde85b963fee42",
+    "mira_revid": 3695430,
+    "mira_sha": "ef0fd50d45249cacdef4cca889dde85b963fee42"
+  },
+  "Template:Infobox royal styles": {
+    "fan_revid": 1981124,
+    "fan_sha": "398c71d04e4cba9186180598370ea392e89e1ebc",
+    "mira_revid": 3695432,
+    "mira_sha": "398c71d04e4cba9186180598370ea392e89e1ebc"
+  },
+  "Template:Infobox royal styles/doc": {
+    "fan_revid": 1981125,
+    "fan_sha": "329dbfcce8bc415540ef83875ab6e0913ce10966",
+    "mira_revid": 3695433,
+    "mira_sha": "329dbfcce8bc415540ef83875ab6e0913ce10966"
+  },
+  "Template:Infobox royalty": {
+    "fan_revid": 1981126,
+    "fan_sha": "663db411be11e7d708f1b417a0e97ca780e6628f",
+    "mira_revid": 3695435,
+    "mira_sha": "663db411be11e7d708f1b417a0e97ca780e6628f"
+  },
+  "Template:Infobox royalty/doc": {
+    "fan_revid": 1981127,
+    "fan_sha": "0eb69e1af8139d72c23cb6d7ee116be03b4db5cd",
+    "mira_revid": 3695436,
+    "mira_sha": "0eb69e1af8139d72c23cb6d7ee116be03b4db5cd"
+  },
+  "Template:Infobox saint": {
+    "fan_revid": 1981128,
+    "fan_sha": "07b8b2ea1ce0c7a9ced0547cec42e004e0f89dce",
+    "mira_revid": 3695437,
+    "mira_sha": "07b8b2ea1ce0c7a9ced0547cec42e004e0f89dce"
+  },
+  "Template:Infobox saint/doc": {
+    "fan_revid": 1981129,
+    "fan_sha": "64f33c286efce1206cc7147a3b3fa1e3bf730886",
+    "mira_revid": 3695438,
+    "mira_sha": "64f33c286efce1206cc7147a3b3fa1e3bf730886"
+  },
+  "Template:Infobox samurai": {
+    "fan_revid": 1981150,
+    "fan_sha": "6cdf8ff118b9b05b3f950a8868be9cbd4278c31a",
+    "mira_revid": 3695439,
+    "mira_sha": "13744c46c550fc854e1b5ebb116c890156ef4a8e"
+  },
+  "Template:Infobox settlement": {
+    "fan_revid": 1981131,
+    "fan_sha": "84c2fd5f3ca82ce28a9794d83a8ed71002e6b31d",
+    "mira_revid": 3695441,
+    "mira_sha": "84c2fd5f3ca82ce28a9794d83a8ed71002e6b31d"
+  },
+  "Template:Infobox settlement/areadisp": {
+    "fan_revid": 1981132,
+    "fan_sha": "a0a3e6c2e7ac702241b8b849f35d5fd5fbc0eaf0",
+    "mira_revid": 3695442,
+    "mira_sha": "a0a3e6c2e7ac702241b8b849f35d5fd5fbc0eaf0"
+  },
+  "Template:Infobox settlement/areadisp/doc": {
+    "fan_revid": 1981133,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695443,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox settlement/densdisp": {
+    "fan_revid": 1981134,
+    "fan_sha": "6c70587aa595ff4886470f7c29f46e710f1d96f3",
+    "mira_revid": 3695444,
+    "mira_sha": "6c70587aa595ff4886470f7c29f46e710f1d96f3"
+  },
+  "Template:Infobox settlement/densdisp/doc": {
+    "fan_revid": 1981135,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695445,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox settlement/doc": {
+    "fan_revid": 1981136,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695446,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox settlement/lengthdisp": {
+    "fan_revid": 1981137,
+    "fan_sha": "0da9ff2bc8aaa2f987e82755ab838d711d6d4d8d",
+    "mira_revid": 3695447,
+    "mira_sha": "0da9ff2bc8aaa2f987e82755ab838d711d6d4d8d"
+  },
+  "Template:Infobox settlement/lengthdisp/doc": {
+    "fan_revid": 1981138,
+    "fan_sha": "a137447c74dc236056f8082c3b25cda40cb47379",
+    "mira_revid": 3695448,
+    "mira_sha": "a137447c74dc236056f8082c3b25cda40cb47379"
+  },
+  "Template:Infobox settlement/link": {
+    "fan_revid": 1981139,
+    "fan_sha": "a91e852484dd63a1f21ceb10b468c023d19d50c7",
+    "mira_revid": 3695449,
+    "mira_sha": "a91e852484dd63a1f21ceb10b468c023d19d50c7"
+  },
+  "Template:Infobox settlement/link/doc": {
+    "fan_revid": 1981151,
+    "fan_sha": "39f391dd6e93b81c332e58fd6b75cf0b00235008",
+    "mira_revid": 3695450,
+    "mira_sha": "2d68ea99205ada1bb34d75cefaf26320bdf1a777"
+  },
+  "Template:Infobox settlement/pref": {
+    "fan_revid": 1981141,
+    "fan_sha": "819c3fa81c96b3f9eb5d2d83eb447e41f18e2efe",
+    "mira_revid": 3695451,
+    "mira_sha": "819c3fa81c96b3f9eb5d2d83eb447e41f18e2efe"
+  },
+  "Template:Infobox settlement/pref/doc": {
+    "fan_revid": 1981142,
+    "fan_sha": "72d7067c3a589a1ba56f63dd23ffbe5bdd2c2509",
+    "mira_revid": 3695452,
+    "mira_sha": "72d7067c3a589a1ba56f63dd23ffbe5bdd2c2509"
+  },
+  "Template:Infobox software": {
+    "fan_revid": 1981143,
+    "fan_sha": "1774ba711a74080bfcfdd45bd90bd637d449b4d4",
+    "mira_revid": 3695456,
+    "mira_sha": "1774ba711a74080bfcfdd45bd90bd637d449b4d4"
+  },
+  "Template:Infobox software/doc": {
+    "fan_revid": 1981144,
+    "fan_sha": "dd6445ae7fe8e5cc52879853c9c3c48afed942eb",
+    "mira_revid": 3695457,
+    "mira_sha": "dd6445ae7fe8e5cc52879853c9c3c48afed942eb"
+  },
+  "Template:Infobox software/simple": {
+    "fan_revid": 1981152,
+    "fan_sha": "6cdf8ff118b9b05b3f950a8868be9cbd4278c31a",
+    "mira_revid": 3695458,
+    "mira_sha": "13744c46c550fc854e1b5ebb116c890156ef4a8e"
   },
   "Template:Infobox/doc": {
     "fan_revid": 1966787,
