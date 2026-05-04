@@ -87,18 +87,24 @@ jobs:
           shinto_miraheze/run_step.sh "Fandom Sync: sync_fandom_pages" \
             python3 shinto_miraheze/sync_fandom_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      # After the bidirectional sync, apply fandom-side-only cleanups
-      # (drop {{ill}}, {{wikidata link}}, {{shortdesc}}, dedupe
-      # interwiki blocks, drop the redundant Buddhist-temple infobox
-      # call when religious-building is also present). The script
-      # updates fan_revid/fan_sha in the sync state so the next sync
-      # treats the divergence as deliberate and doesn't propagate the
-      # cleanups back to miraheze.
-      - name: "Fandom sync: cleanup_fandom_pages"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Fandom Sync: cleanup_fandom_pages" \
-            python3 shinto_miraheze/cleanup_fandom_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+      # Disabled 2026-05-04: cleanup_fandom_pages was reliably damaging
+      # pages — convert_ill_to_wikilinks reduces every {{ill|Foo|en|Foo|...}}
+      # interlanguage-link call to a plain [[Foo]], which is why
+      # interlanguage links keep "not persisting" on the fandom side.
+      # strip_wikidata_link removes {{wikidata link|...}} calls entirely,
+      # which is in conflict with the in-flight effort to make
+      # Template:Wikidata link render correctly on shinto.fandom.com via
+      # an HTTPS-URL shim. The dedupe-interwiki-blocks and drop-redundant-
+      # Buddhist-infobox transforms were useful, but the {{ill}} and
+      # {{wikidata link}} mangling outweighs them; the script is left
+      # in place for now in case a narrower targeted version is wanted
+      # later, but the workflow no longer invokes it.
+      #
+      # - name: "Fandom sync: cleanup_fandom_pages"
+      #   if: always() && steps.*.outcome != 'cancelled'
+      #   run: |
+      #     shinto_miraheze/run_step.sh "Fandom Sync: cleanup_fandom_pages" \
+      #       python3 shinto_miraheze/cleanup_fandom_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Fandom Sync"
         if: always() && steps.*.outcome != 'cancelled'
