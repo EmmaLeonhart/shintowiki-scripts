@@ -1,9 +1,177 @@
 {
+  "Akagi Shrine (Fujimi Town Yokomuro)": {
+    "fan_revid": 1981203,
+    "fan_sha": "31106e8dac7c824b94423561f0fa477b066ea06a",
+    "mira_revid": 3666271,
+    "mira_sha": "5d88ee7795c1b2e76283a7de6f7bea26872dedb2"
+  },
+  "Akane Shrine": {
+    "fan_revid": 1981204,
+    "fan_sha": "aad9cb821dc1d861184e3957ecaf93f920e337ef",
+    "mira_revid": 3666295,
+    "mira_sha": "89faa1d40fb904766fd24854de0d3a68b549dd02"
+  },
+  "Amanawa Shinmei Shrine": {
+    "fan_revid": 1981205,
+    "fan_sha": "a648ec348f0f000987c9a7aa3cc071804dff5ad1",
+    "mira_revid": 3666443,
+    "mira_sha": "ddd398e0e4bcf2ea6d78e65569355d65ab5702f3"
+  },
+  "Anfuku-ji (Kashiwara)": {
+    "fan_revid": 1981206,
+    "fan_sha": "ffe06fa69fdc919f192933a9864ffdb32f37b97a",
+    "mira_revid": 3666838,
+    "mira_sha": "a1e76846cacde08d0cd4fd3753a728d93640d2e7"
+  },
+  "Ankokoji (Chino City)": {
+    "fan_revid": 1981207,
+    "fan_sha": "d22f1471cb8648dd77c5636c3e65d6f9bae5f54f",
+    "mira_revid": 3666848,
+    "mira_sha": "abb16ad65b41072fd4caf8de976ae5c9b6560699"
+  },
+  "Asakusa Shrine": {
+    "fan_revid": 1981208,
+    "fan_sha": "2b2e360a7e99b9b3ebc730a0c12e889102716625",
+    "mira_revid": 3668172,
+    "mira_sha": "32cf426b4a89262a3b8d7a621e8838ee5aa8a28f"
+  },
+  "Aso Shrine (Hashima, Gifu)": {
+    "fan_revid": 1981209,
+    "fan_sha": "3541883c5ffed53902d80aafefc7e4d60c38057f",
+    "mira_revid": 3668250,
+    "mira_sha": "7401dd4ac409cf965aeca82101fe5e04e7ecf2cd"
+  },
+  "Asukata Shrine (Kakamigahara City)": {
+    "fan_revid": 1981210,
+    "fan_sha": "fa262bfeed8a4562b244c4aab70b37654c76591e",
+    "mira_revid": 3668292,
+    "mira_sha": "8d4b0226864dac5ecaa5bad55c2976afcecb0ee2"
+  },
+  "Atago Shrine (Ageo)": {
+    "fan_revid": 1981211,
+    "fan_sha": "96d78a26d8382838f28b1c6e2f398ab5d6b13beb",
+    "mira_revid": 3668326,
+    "mira_sha": "9f18eff69fcb4acb9f6233c70d398ea1a9c8cc30"
+  },
+  "Atago Shrine (Gujō)": {
+    "fan_revid": 1981212,
+    "fan_sha": "46fa1c24c48998a20245a2aac7486dac043e6c79",
+    "mira_revid": 3668328,
+    "mira_sha": "9bc22af933df906cfe566e2ce07eef0beede00f8"
+  },
+  "Atago Shrine (Kameoka)": {
+    "fan_revid": 1981213,
+    "fan_sha": "d71644dc59fcba1fc5eff8b3dc9ffbe663db49e1",
+    "mira_revid": 3668330,
+    "mira_sha": "366d0e3d419c879276eb6a80043e5d5cb15b08b3"
+  },
+  "Atago Shrine (Kuki Honcho)": {
+    "fan_revid": 1981214,
+    "fan_sha": "05d78365b6cdbe6cb96b3959bc59637e187d9cc7",
+    "mira_revid": 3668334,
+    "mira_sha": "845f7de64e8261f153bf0999f29080ef58621d49"
+  },
+  "Awashima Shrine (Wakayama)": {
+    "fan_revid": 1981215,
+    "fan_sha": "e38d1393c017f22cd2bffd369e9fdee555d36ae3",
+    "mira_revid": 3668525,
+    "mira_sha": "71e97089ed4805ae08edc2b62c73cd957d44129a"
+  },
+  "Azayama Shrine": {
+    "fan_revid": 1981216,
+    "fan_sha": "0f2ec9341761e30c7df0a2893f13dab0c5e52ae7",
+    "mira_revid": 3668567,
+    "mira_sha": "dcbac4b57d65e5fa706cd5aa085b4b26dea171ca"
+  },
+  "Buppōshōryū-ji": {
+    "fan_revid": 1981217,
+    "fan_sha": "b8d99fd7d13a1cff11150b90e77058f6f4d5dfb1",
+    "mira_revid": 3668720,
+    "mira_sha": "b2f9433121e2ad5722935e6782f0570f1b7372a0"
+  },
+  "Butsumoin": {
+    "fan_revid": 1981218,
+    "fan_sha": "72d280bf47075249ae654fb0fb4896533c9ac9a7",
+    "mira_revid": 3668736,
+    "mira_sha": "b6e0ad4d0997aecd1c7c15c581bf59c9a3a427dd"
+  },
+  "Byōdō-in": {
+    "fan_revid": 1981219,
+    "fan_sha": "32cd3df42e49989ddc6856f822ffa3ab6d91301f",
+    "mira_revid": 3668740,
+    "mira_sha": "059d72718faa9de76c77b1b485423b147bf5bab0"
+  },
   "Category:Infobox templates": {
     "fan_revid": 1966816,
     "fan_sha": "e8e24d9ebe3de38a61fa715aa8eb5f03a62137ad",
     "mira_revid": 3693563,
     "mira_sha": "353a5cdffeced1f3beedf3c1798d451b24cd32d3"
+  },
+  "Chichibu Shrine": {
+    "fan_revid": 1981220,
+    "fan_sha": "7a10283299d4ec588d2a3c34cdf4b8367c11a415",
+    "mira_revid": 3668816,
+    "mira_sha": "e966c4dc10165404ddd1ec1c73b39d26bdc7bd60"
+  },
+  "Chinkoku-ji": {
+    "fan_revid": 1981221,
+    "fan_sha": "edb808b3cbaf70c2df956a1e76485d9a05a9aea1",
+    "mira_revid": 3668906,
+    "mira_sha": "e1ae41800c32a53fdf44a7748d232b498ada4fec"
+  },
+  "Chion-in": {
+    "fan_revid": 1981222,
+    "fan_sha": "d35daadd077e1212c684f152cc256dc89bbd3186",
+    "mira_revid": 3668922,
+    "mira_sha": "75d3ca060e5844d62319c0b1899679a2f3bdeaf5"
+  },
+  "Chōkoku-ji": {
+    "fan_revid": 1981223,
+    "fan_sha": "3223445e139279f14f34e0a071f66def0bfebde7",
+    "mira_revid": 3670002,
+    "mira_sha": "0980616e3bc04d83441f9b66eb66e12ae2ad9ea8"
+  },
+  "Daidō Akagi Shrine": {
+    "fan_revid": 1981224,
+    "fan_sha": "0fb464c0e5bbdffa5e3af17b505ab1eecd3c757b",
+    "mira_revid": 3670150,
+    "mira_sha": "0e2c6c40059ca3799d20a11b043c04bd8193194b"
+  },
+  "Daigan-ji Temple": {
+    "fan_revid": 1981225,
+    "fan_sha": "c510374190207543836240f97140a8d7e2348a2c",
+    "mira_revid": 3670154,
+    "mira_sha": "7ac9026ab117fdbc17043a5df85dc2b60c1a110f"
+  },
+  "Daigo-ji": {
+    "fan_revid": 1981226,
+    "fan_sha": "d26e02d2f43dd24b00816e0a1a084f029bcc7943",
+    "mira_revid": 3670156,
+    "mira_sha": "8cd7844419fd45f43cc1f850a7d6f767ff042e94"
+  },
+  "Ebetsu shrine": {
+    "fan_revid": 1981227,
+    "fan_sha": "76d9e09dfcbdb980419519c047b698843d845c97",
+    "mira_revid": 3670584,
+    "mira_sha": "56e820a01a752ed7469df8532315dd183e01ab85"
+  },
+  "Engaku-ji": {
+    "fan_revid": 1981228,
+    "fan_sha": "d5c3f0e1fb823a2d649f7b4d57dc62d1347f48ab",
+    "mira_revid": 3670670,
+    "mira_sha": "ba225589441c52727a3e50cf394d72256018160a"
+  },
+  "Engyō-ji": {
+    "fan_revid": 1981229,
+    "fan_sha": "1620ac5c0acf4a22f3069638378f05a49446159a",
+    "mira_revid": 3670682,
+    "mira_sha": "76f2e19265943edc35eee86f47b3d5698963611b"
+  },
+  "Enryaku-ji": {
+    "fan_revid": 1981230,
+    "fan_sha": "51eb841d11edc8e9520ccb529f065252e207fb6f",
+    "mira_revid": 3670706,
+    "mira_sha": "8d8f13105f810697b6d91a327fb3c77e53b6c930"
   },
   "Miyajidake Shrine": {
     "fan_revid": 1966817,
@@ -1679,6 +1847,120 @@
     "mira_revid": 3695458,
     "mira_sha": "13744c46c550fc854e1b5ebb116c890156ef4a8e"
   },
+  "Template:Infobox theologian": {
+    "fan_revid": 1981153,
+    "fan_sha": "cb0339edd2eca4d1d1f3d75f6a2b2ea32fb19af7",
+    "mira_revid": 3695459,
+    "mira_sha": "cb0339edd2eca4d1d1f3d75f6a2b2ea32fb19af7"
+  },
+  "Template:Infobox theologian/doc": {
+    "fan_revid": 1981154,
+    "fan_sha": "ed9fcadc457c2c5b924db4204478d6bdc34d9c5e",
+    "mira_revid": 3695460,
+    "mira_sha": "ed9fcadc457c2c5b924db4204478d6bdc34d9c5e"
+  },
+  "Template:Infobox theological work": {
+    "fan_revid": 1981155,
+    "fan_sha": "1e560ed06b373158576375d6af6b9226700784b1",
+    "mira_revid": 3695461,
+    "mira_sha": "1e560ed06b373158576375d6af6b9226700784b1"
+  },
+  "Template:Infobox train": {
+    "fan_revid": 1981156,
+    "fan_sha": "6cec4d11547e842cd676f18cb6faa3c647afe0d5",
+    "mira_revid": 3695462,
+    "mira_sha": "6cec4d11547e842cd676f18cb6faa3c647afe0d5"
+  },
+  "Template:Infobox train/doc": {
+    "fan_revid": 1981157,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695463,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox tribe": {
+    "fan_revid": 1981158,
+    "fan_sha": "ff09865d9b030cd39540b39c4226826dd667a1ad",
+    "mira_revid": 3695464,
+    "mira_sha": "ff09865d9b030cd39540b39c4226826dd667a1ad"
+  },
+  "Template:Infobox tribe/doc": {
+    "fan_revid": 1981159,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695465,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox tumulus": {
+    "fan_revid": 1981160,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695466,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox venue": {
+    "fan_revid": 1981161,
+    "fan_sha": "85dba45db6850a09671577c4555a761eab9b24fd",
+    "mira_revid": 3695469,
+    "mira_sha": "85dba45db6850a09671577c4555a761eab9b24fd"
+  },
+  "Template:Infobox warrior": {
+    "fan_revid": 1981231,
+    "fan_sha": "967c8fa00b67c53ef873d54b75e6a6beae882255",
+    "mira_revid": 3695470,
+    "mira_sha": "55e2020632b6b60f674dc4875fa614310af62739"
+  },
+  "Template:Infobox weapon": {
+    "fan_revid": 1981163,
+    "fan_sha": "123b4c1dc339ea964124fbff60968b1481dbed1b",
+    "mira_revid": 3695471,
+    "mira_sha": "123b4c1dc339ea964124fbff60968b1481dbed1b"
+  },
+  "Template:Infobox weapon/doc": {
+    "fan_revid": 1981164,
+    "fan_sha": "2fce09bdc22734a9536d85d33c39b22435214f4c",
+    "mira_revid": 3695472,
+    "mira_sha": "2fce09bdc22734a9536d85d33c39b22435214f4c"
+  },
+  "Template:Infobox webcolor": {
+    "fan_revid": 1981165,
+    "fan_sha": "967c8fa00b67c53ef873d54b75e6a6beae882255",
+    "mira_revid": 3695473,
+    "mira_sha": "967c8fa00b67c53ef873d54b75e6a6beae882255"
+  },
+  "Template:Infobox website": {
+    "fan_revid": 1981166,
+    "fan_sha": "7fccb3d3dca61e888dfbbc249fcf43f77a924f5d",
+    "mira_revid": 3695474,
+    "mira_sha": "7fccb3d3dca61e888dfbbc249fcf43f77a924f5d"
+  },
+  "Template:Infobox website/doc": {
+    "fan_revid": 1981167,
+    "fan_sha": "0c1248dade8e5120e04f34c12ff1a33502b25b9a",
+    "mira_revid": 3695475,
+    "mira_sha": "0c1248dade8e5120e04f34c12ff1a33502b25b9a"
+  },
+  "Template:Infobox writer": {
+    "fan_revid": 1981168,
+    "fan_sha": "097689f29205a53329cc3ea0037ad54f7138e54c",
+    "mira_revid": 3695478,
+    "mira_sha": "097689f29205a53329cc3ea0037ad54f7138e54c"
+  },
+  "Template:Infobox writer/doc": {
+    "fan_revid": 1981169,
+    "fan_sha": "d7860db6661b5c26f13b302949a7cfdcdd65c061",
+    "mira_revid": 3695479,
+    "mira_sha": "d7860db6661b5c26f13b302949a7cfdcdd65c061"
+  },
+  "Template:Infobox 山": {
+    "fan_revid": 1981170,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695482,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
+  "Template:Infobox 島": {
+    "fan_revid": 1981171,
+    "fan_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a",
+    "mira_revid": 3695483,
+    "mira_sha": "6a2ccbd6b6661daa1e420571225288db1f4cd61a"
+  },
   "Template:Infobox/doc": {
     "fan_revid": 1966787,
     "fan_sha": "58b65e76380a855ae26b1eaa24307812e01d8781",
@@ -1798,5 +2080,23 @@
     "fan_sha": "ab4f86e202ff2618467096294cc41f3ffd5581f8",
     "mira_revid": 3661405,
     "mira_sha": "b1cc52417a0959080c82ec53509c0f9461d738b0"
+  },
+  "Yatsushiro-gū": {
+    "fan_revid": 1981232,
+    "fan_sha": "6c9a93a2c725f3be5dcfe3fcef01fbe26fc643b5",
+    "mira_revid": 3662550,
+    "mira_sha": "92fecea8d4feba27757802e8b20e7d5d127a8b19"
+  },
+  "Yobito Shrine": {
+    "fan_revid": 1981233,
+    "fan_sha": "2f2897cb4e2c4ce4eaad1808be3483846ac3f713",
+    "mira_revid": 3662678,
+    "mira_sha": "986ca4f7dcee74c79628fc7b72655c473cc3a3f9"
+  },
+  "Yugasan Rendaiji": {
+    "fan_revid": 1981234,
+    "fan_sha": "98845fd580bc5d5aed41d42afb7aba9b217b46be",
+    "mira_revid": 3662914,
+    "mira_sha": "cfe0af78eab47eadfd4816477b313521c4f63e38"
   }
 }
