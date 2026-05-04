@@ -2,8 +2,13 @@
 Fetch P11250 QuickStatements lines from the shintowiki wiki page.
 
 Reads [[QuickStatements/P11250]] (public, no auth needed), filters out
-items that already have a P11250 claim on Wikidata, and writes the
-remaining QS lines to a local file for submission by submit_daily_batch.py.
+items that already have a P11250 claim on Wikidata (P11250 lines only)
+or are Wikidata redirects (all lines), and writes the remaining QS lines
+to a local file for submission by submit_daily_batch.py.
+
+The wiki page may also contain ``Qxxx|Len|"..."`` label-set lines emitted
+by ``generate_p11250_quickstatements.py`` for items missing an English
+label. Those pass through unchanged (no P11250-presence dedup applies).
 """
 
 import io
@@ -20,6 +25,7 @@ PAGE_TITLE = "QuickStatements/P11250"
 OUTPUT_FILE = "p11250_miraheze_links.txt"
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:.+"$')
+QS_LABEL_RE = re.compile(r'^(Q\d+)\|Len\|".+"$')
 
 
 def fetch_redirect_qids(qids):
@@ -110,15 +116,19 @@ def main():
     data = resp.json()
     wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
 
-    all_lines = []
+    p11250_lines = []
+    label_lines = []
     for line in wikitext.split("\n"):
         line = line.strip()
         if QS_LINE_RE.match(line):
-            all_lines.append(line)
+            p11250_lines.append(line)
+        elif QS_LABEL_RE.match(line):
+            label_lines.append(line)
 
-    print(f"Found {len(all_lines)} QS lines on wiki page")
+    print(f"Found {len(p11250_lines)} P11250 lines and {len(label_lines)} Len lines on wiki page")
 
-    # Filter out items that already have P11250 on Wikidata
+    # Filter out items that already have P11250 on Wikidata (only applies
+    # to P11250 lines — Len lines are independent of P11250 presence).
     existing_qids = fetch_existing_p11250_qids()
     if existing_qids is None:
         # SPARQL failed — fail closed: write nothing to prevent duplicates
@@ -127,7 +137,10 @@ def main():
         print("Wrote 0 QS lines to avoid duplicate submissions")
         return
 
-    candidate_qids = {QS_LINE_RE.match(line).group(1) for line in all_lines}
+    candidate_qids = (
+        {QS_LINE_RE.match(line).group(1) for line in p11250_lines}
+        | {QS_LABEL_RE.match(line).group(1) for line in label_lines}
+    )
     redirect_qids = fetch_redirect_qids(candidate_qids)
     if redirect_qids:
         print(f"Filtered out {len(redirect_qids)} redirect QIDs")
@@ -135,9 +148,8 @@ def main():
     lines = []
     skipped_existing = 0
     skipped_redirect = 0
-    for line in all_lines:
-        m = QS_LINE_RE.match(line)
-        qid = m.group(1)
+    for line in p11250_lines:
+        qid = QS_LINE_RE.match(line).group(1)
         if qid in redirect_qids:
             skipped_redirect += 1
         elif qid in existing_qids:
@@ -145,8 +157,19 @@ def main():
         else:
             lines.append(line)
 
+    label_kept = 0
+    for line in label_lines:
+        qid = QS_LABEL_RE.match(line).group(1)
+        if qid in redirect_qids:
+            skipped_redirect += 1
+        else:
+            lines.append(line)
+            label_kept += 1
+
     if skipped_existing:
         print(f"Filtered out {skipped_existing} items that already have P11250")
+    if label_kept:
+        print(f"Kept {label_kept} Len lines (no P11250-presence dedup applied)")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         for line in lines:

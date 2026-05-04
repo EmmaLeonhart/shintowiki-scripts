@@ -22,7 +22,11 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
-MAX_EDITS = 100
+# Capped at 50 — this is the QS-failed fallback path, so when it runs it
+# stands in for the 50-line submit_daily_batch budget. Paired with the
+# 50-edit cap in test_wikidata_qualifier.py and the once-per-day fire gate
+# in cleanup-loop.yml so daily wikidata edits ~= 100.
+MAX_EDITS = 50
 MIN_DELAY = 60   # 1 minute
 MAX_DELAY = 300  # 5 minutes
 
@@ -99,6 +103,18 @@ def parse_qs_line(line):
     entity = parts[0]
     prop = parts[1]
     value = parse_qs_value(parts[2])
+
+    # QS v1 label/description/alias shorthands: Lxx (label), Dxx (description),
+    # Axx (alias) where xx is a language code. These map to wbsetlabel/
+    # wbsetdescription/wbsetaliases on the Wikidata API, not wbcreateclaim.
+    if len(prop) >= 2 and prop[0] in ("L", "D", "A") and prop[1:].isalpha():
+        return {
+            "entity": entity,
+            "term_kind": prop[0],          # "L", "D", "A"
+            "term_lang": prop[1:].lower(),  # e.g. "en"
+            "term_value": value.get("value", "") if value["type"] == "string" else "",
+            "is_removal": is_removal,
+        }
 
     qualifiers = []
     references = []
@@ -290,8 +306,52 @@ def execute_set_reference(session, csrf, guid, ref_pairs):
     return True, "Reference added"
 
 
+def execute_set_term(session, csrf, entity, kind, lang, value):
+    """Set/clear a label, description, or alias via wbsetlabel/wbsetdescription/wbsetaliases."""
+    if kind == "L":
+        action = "wbsetlabel"
+    elif kind == "D":
+        action = "wbsetdescription"
+    elif kind == "A":
+        action = "wbsetaliases"
+    else:
+        return False, f"Unknown term kind: {kind}"
+
+    data = {
+        "action": action,
+        "id": entity,
+        "language": lang,
+        "token": csrf,
+        "bot": 1,
+        "format": "json",
+    }
+    if action == "wbsetaliases":
+        data["add"] = value
+    else:
+        data["value"] = value
+
+    r = session.post(WD_API, data=data, timeout=60)
+    if r.status_code == 429:
+        return False, "429 Too Many Requests"
+    r.raise_for_status()
+    result = r.json()
+    if "error" in result:
+        return False, f"API error: {result['error'].get('info', str(result['error']))}"
+    return True, f"{action} {lang}={value!r}"
+
+
 def execute_line(session, csrf, parsed):
     """Execute a single parsed QS v1 line via Wikidata API."""
+    if parsed.get("term_kind"):
+        # Lxx / Dxx / Axx — label / description / alias.
+        if parsed["is_removal"]:
+            return False, "Term removal not supported"
+        return execute_set_term(
+            session, csrf,
+            parsed["entity"], parsed["term_kind"],
+            parsed["term_lang"], parsed["term_value"],
+        )
+
     if parsed["is_removal"]:
         return execute_removal(session, csrf, parsed)
 

@@ -26,7 +26,9 @@ SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 QUALIFIER_PROPERTY = "P459"                    # determination method or standard
 QUALIFIER_VALUE = "Q712534"                    # modern system of ranked Shinto shrines
 TARGET_PROPERTY = "P13723"                     # shrine ranking
-MAX_EDITS = 100
+# Capped at 50 (paired with submit_daily_batch's 50-line cap and the
+# once-per-day fire gate in cleanup-loop.yml) so daily wikidata edits ~= 100.
+MAX_EDITS = 50
 
 
 class RateLimitError(Exception):
