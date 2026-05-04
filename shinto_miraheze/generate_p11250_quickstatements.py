@@ -11,10 +11,18 @@ covering the Queued-3 ask to extend P11250 linking beyond mainspace
 without a separate walk.
 
 For each (title, qid) in the shared state:
+  * Skip any ``Template:`` titles — too many existing template-namespace
+    items on Wikidata for blanket P11250 linking to be safe right now.
+    Mainspace and Category-namespace titles only.
   * Batch-query Wikidata (wbgetentities, 50 QIDs per call) for
-    existing P11250 values.
-  * If ``shinto:<title>`` is already among the P11250 values, skip.
+    existing P11250 values **and** English labels.
+  * If ``shinto:<title>`` is already among the P11250 values, skip the
+    P11250 emission.
   * Otherwise emit ``Qxxx|P11250|"shinto:<title>"``.
+  * If the item also lacks an English label, additionally emit
+    ``Qxxx|Len|"<title without namespace prefix>"`` so the label gets
+    set in the same daily QS run. Mostly relevant for category items
+    that are missing en labels on Wikidata.
 
 Cleanup pass: any line currently on [[QuickStatements/P11250]] whose
 QID already has the correct P11250 on Wikidata is removed, so the page
@@ -64,6 +72,17 @@ STATE_FILE = os.path.join(SCRIPT_DIR, "orchestrators", "duplicate_qids.state")
 
 # Match QS lines like: Q12345|P11250|"shinto:Page Name"
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(.+)"$')
+# Match QS label-set lines like: Q12345|Len|"Some Label"
+QS_LABEL_RE = re.compile(r'^(Q\d+)\|Len\|"(.+)"$')
+
+# Namespace prefixes we deliberately DO NOT emit P11250 for. Template:
+# is excluded because there are too many existing template-namespace
+# items on Wikidata for blanket P11250 linking to be safe right now.
+# Currently the orchestrators only ever record mainspace, Category:, and
+# Template: titles (the misc orchestrator's namespaces don't carry
+# {{wikidata link}}), so blocklisting Template: yields the
+# "mainspace + Category: only" set the user asked for.
+SKIP_PREFIXES = ("Template:",)
 
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 WD_API = "https://www.wikidata.org/w/api.php"
@@ -119,9 +138,15 @@ QS_PAGE_FOOTER = "</pre>"
 
 # ─── WIKIDATA ───────────────────────────────────────────────
 
-def fetch_p11250_batch(qids: list[str]) -> dict[str, list[str]]:
-    """Return {qid: [P11250 values]} for the given QIDs, 50 at a time."""
-    results: dict[str, list[str]] = {}
+def fetch_p11250_and_labels(qids: list[str]) -> tuple[dict[str, list[str]], set[str]]:
+    """Batch-query Wikidata for the given QIDs.
+
+    Returns:
+        p11250: {qid: [P11250 values]} (empty list if missing/unknown)
+        missing_en_label: set of qids that lack an English label
+    """
+    p11250: dict[str, list[str]] = {}
+    missing_en_label: set[str] = set()
     for i in range(0, len(qids), 50):
         batch = qids[i : i + 50]
         try:
@@ -130,7 +155,8 @@ def fetch_p11250_batch(qids: list[str]) -> dict[str, list[str]]:
                 params={
                     "action": "wbgetentities",
                     "ids": "|".join(batch),
-                    "props": "claims",
+                    "props": "claims|labels",
+                    "languages": "en",
                     "format": "json",
                 },
                 headers={"User-Agent": USER_AGENT},
@@ -143,13 +169,14 @@ def fetch_p11250_batch(qids: list[str]) -> dict[str, list[str]]:
         except Exception as e:
             log_error(f"wbgetentities batch failed ({batch[0]}...): {e}")
             for qid in batch:
-                results[qid] = []  # unknown — treat as "claim not present"
+                p11250[qid] = []  # unknown — treat as "claim not present"
+                # don't infer en-label state when the fetch failed
             continue
 
         for qid in batch:
             entity = entities.get(qid, {})
             if "missing" in entity:
-                results[qid] = []
+                p11250[qid] = []
                 continue
             claims = entity.get("claims", {}).get("P11250", [])
             values = []
@@ -157,9 +184,29 @@ def fetch_p11250_batch(qids: list[str]) -> dict[str, list[str]]:
                 dv = c.get("mainsnak", {}).get("datavalue", {})
                 if dv.get("type") == "string":
                     values.append(dv.get("value"))
-            results[qid] = [v for v in values if v]
+            p11250[qid] = [v for v in values if v]
+
+            labels = entity.get("labels", {})
+            en_label = labels.get("en", {}).get("value", "").strip()
+            if not en_label:
+                missing_en_label.add(qid)
         time.sleep(0.5)
-    return results
+    return p11250, missing_en_label
+
+
+def title_to_label(title: str) -> str:
+    """Strip a leading namespace prefix to get a Wikidata-style en label.
+    "Category:Shrines in Tokyo" -> "Shrines in Tokyo"; mainspace passes through.
+    Only namespaces we actually emit P11250 for are recognized — keeps
+    mainspace titles that happen to contain ':' from being mangled."""
+    if title.startswith("Category:"):
+        return title[len("Category:"):]
+    return title
+
+
+def qs_escape(value: str) -> str:
+    """Escape a string for inclusion in a QS v1 quoted value."""
+    return value.replace("\\", "\\\\").replace('"', '\\"')
 
 
 def parse_qs_page(text: str) -> dict[str, str]:
@@ -203,16 +250,36 @@ def main():
 
     print(f"Tracked titles: {len(state)}")
 
-    # title -> qid dict; want to build {qid: expected_value} for diff.
-    desired: dict[str, str] = {}
+    # Filter out namespaces we deliberately don't link to Wikidata.
+    skipped_by_ns: dict[str, int] = {}
+    filtered_state: dict[str, str] = {}
     for title, qid in state.items():
+        skipped = False
+        for prefix in SKIP_PREFIXES:
+            if title.startswith(prefix):
+                skipped_by_ns[prefix] = skipped_by_ns.get(prefix, 0) + 1
+                skipped = True
+                break
+        if not skipped:
+            filtered_state[title] = qid
+
+    if skipped_by_ns:
+        skipped_summary = ", ".join(f"{p}{n}" for p, n in skipped_by_ns.items())
+        print(f"Skipped namespace-blocked titles: {skipped_summary}")
+    print(f"Eligible titles after filter: {len(filtered_state)}")
+
+    # title -> qid dict; want to build {qid: (expected_value, title)} for diff.
+    desired: dict[str, str] = {}
+    qid_to_title: dict[str, str] = {}
+    for title, qid in filtered_state.items():
         desired[qid] = f"shinto:{title}"
+        qid_to_title[qid] = title
 
     qids = sorted(desired.keys())
     print(f"Distinct QIDs: {len(qids)}")
 
-    print("Fetching P11250 values from Wikidata (batched)...")
-    wd_p11250 = fetch_p11250_batch(qids)
+    print("Fetching P11250 values + en labels from Wikidata (batched)...")
+    wd_p11250, missing_en_label = fetch_p11250_and_labels(qids)
 
     new_qs: dict[str, str] = {}
     already_correct = 0
@@ -225,7 +292,8 @@ def main():
 
     print(f"\nComputed:")
     print(f"  Already correct on Wikidata: {already_correct}")
-    print(f"  Need QS line:                {len(new_qs)}")
+    print(f"  Need P11250 QS line:         {len(new_qs)}")
+    print(f"  Missing en label:            {len(missing_en_label)}")
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
@@ -260,9 +328,27 @@ def main():
     merged = {**preserved, **new_qs}
     print(f"  Preserved existing lines:    {len(preserved)}")
     print(f"  Removed (now on Wikidata):   {len(removed)}")
-    print(f"  Final QS line count:         {len(merged)}")
+    print(f"  Final P11250 line count:     {len(merged)}")
+
+    # English-label backfill: for items we're emitting a P11250 line for,
+    # if Wikidata has no en label, also emit Len|"<title without ns>" so
+    # the daily QS run sets the label in the same pass. Only items still
+    # in our current desired set get this — we have a title to use.
+    label_lines: list[str] = []
+    for qid in sorted(merged):
+        if qid not in qid_to_title:
+            continue  # preserved-only line, no title to label with
+        if qid not in missing_en_label:
+            continue
+        label = title_to_label(qid_to_title[qid])
+        if not label:
+            continue
+        label_lines.append(f'{qid}|Len|"{qs_escape(label)}"')
+    print(f"  En-label backfill lines:     {len(label_lines)}")
 
     qs_lines = [f'{qid}|P11250|"{merged[qid]}"' for qid in sorted(merged)]
+    if label_lines:
+        qs_lines.extend(label_lines)
     new_page_text = QS_PAGE_HEADER + "\n".join(qs_lines) + "\n" + QS_PAGE_FOOTER + "\n"
 
     if new_page_text.rstrip() == existing_text.rstrip():
@@ -275,15 +361,18 @@ def main():
                 new_page_text,
                 summary=(
                     f"Bot: update P11250 QuickStatements "
-                    f"(+{len(new_qs)} -{len(removed)}) {args.run_tag}"
+                    f"(+{len(new_qs)} P11250, +{len(label_lines)} Len, -{len(removed)}) "
+                    f"{args.run_tag}"
                 ),
             )
-            print(f"\nSaved [[{QS_PAGE_TITLE}]] ({len(merged)} lines)")
+            print(f"\nSaved [[{QS_PAGE_TITLE}]] "
+                  f"({len(merged)} P11250 + {len(label_lines)} Len lines)")
             time.sleep(THROTTLE)
         except Exception as e:
             log_error(f"Failed to save [[{QS_PAGE_TITLE}]]: {e}")
     else:
-        print(f"\nDRY RUN — would save [[{QS_PAGE_TITLE}]] ({len(merged)} lines)")
+        print(f"\nDRY RUN — would save [[{QS_PAGE_TITLE}]] "
+              f"({len(merged)} P11250 + {len(label_lines)} Len lines)")
         for line in qs_lines[:10]:
             print(f"  {line}")
         if len(qs_lines) > 10:
