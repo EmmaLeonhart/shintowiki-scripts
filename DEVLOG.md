@@ -6,6 +6,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-05
 
+### Wiki shutdown threat from yesterday did not materialize — exiting desperation mode
+**Status:** Context note
+
+The miraheze-side warning that triggered the 2026-04-24 archive-push window (bias mainspace+template orchestrators to 1000-edit budgets, push aggressively into the fandom mirror + GitHub XML archive) was supposedly going to result in the wiki being shut down on 2026-05-04. That deadline came and went without action. We are not abandoning the archive backstops — fandom mirror + XML archive are still maintained best-effort — but we are no longer in "save what we can before the lights go out" mode.
+
+Practical effects landing in subsequent commits:
+
+* Archive-push edit-limit window in `cleanup-loop.yml`'s `window-gate` reverts to the 2026-05-05 → 2026-06-01 catchup baseline (uniform 500 per orchestrator) starting today, then to default 100 on 2026-06-01. (Implementation already in `window-gate`; today is the date the table inflects.)
+* The `Currently double category qids` review buffer (added below) and the Japanese-cat drain logic become the long-running cleanup pattern, replacing one-shot bulk migrations.
+* `status.md` archive-push window section is removed — the work it was tracking is done or no longer relevant.
+
+### Resolver: also redirect the dab page itself after a successful Japanese-cat drain
+**Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
+**Status:** Complete
+
+Follow-up to the drain branch added below. After surveying actual dab pages in `[[Category:Double category qids]]`, every sample was the same shape: one English-named category + one Japanese-script category for the same concept (e.g. `Category:Municipalities of Tokushima Prefecture` + `Category:徳島県の市町村`). The drain branch correctly tagged the Japanese cat as crud and double-categorized its members, but left the dab QID page itself as a numbered list awaiting human review — even though there is no review needed.
+
+The QID semantically refers to the *canonical* (English) category once the Japanese duplicate is being deprecated. So when the drain completes within the per-run edit budget, the dab page is now also redirected to the English target (`#REDIRECT [[Category:English]]`). If the drain runs out of budget partway, the dab page stays in the source category and the next run picks up where this one left off; the redirect lands on whichever run completes the drain.
+
 ### fandom-sync: pulled .wiki files were never committed — workflow missing the content-commit step
 **Scripts:** `.github/workflows/fandom-sync.yml`
 **Status:** Fixed
