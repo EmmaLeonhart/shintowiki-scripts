@@ -1,0 +1,13 @@
+{{tmbox
+ |name=wikidata-entry
+ |type=notice
+ |image=[[File:Wikidata-logo.svg|30px]]
+ |small=yes
+ |smallimage=[[File:Wikidata-logo.svg|20px]]
+ |smalltext=This {{pagetype}} is linked to its entry on [[Wikidata]]: [https://www.wikidata.org/wiki/{{{1}}} {{{1}}}].
+}}<includeonly>
+</includeonly><noinclude>
+{{documentation}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

@@ -106,6 +106,12 @@ jobs:
       #     shinto_miraheze/run_step.sh "Fandom Sync: cleanup_fandom_pages" \
       #       python3 shinto_miraheze/cleanup_fandom_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Fandom fix: fix_fandom_wikidata_link_template"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Fandom Fix: fix_fandom_wikidata_link_template" \
+            python3 shinto_miraheze/fix_fandom_wikidata_link_template.py --apply --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Fandom Sync"
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Fandom Sync"
