@@ -65,6 +65,17 @@ LEGACY_CAT_RE = re.compile(
     re.IGNORECASE,
 )
 PENDING_CAT_TAG = f"[[Category:{PENDING_CAT}]]"
+CRUD_CAT_TAG = "[[Category:crud categories]]"
+
+
+def is_japanese_only_category(full_title):
+    """True if the category name (the part after 'Category:') contains
+    no ASCII letters — i.e. entirely Kanji/Kana/digits/punctuation.
+    Used to detect the Japanese-named category in a multi-target dab
+    so we can drain it into the corresponding English-named one."""
+    parts = full_title.split(":", 1)
+    name = parts[1] if len(parts) == 2 else full_title
+    return name and not any("a" <= c.lower() <= "z" for c in name)
 
 
 def normalize_title(title):
@@ -109,6 +120,94 @@ def resolve_final_target(site, title, max_depth=10):
             return current, True
         current = normalize_title(strip_leading_colon(m.group(1)))
     return current, last_exists
+
+
+def drain_japanese_into_english(site, jp_titles, en_target, args, edits_so_far):
+    """Tag each Japanese-named category as crud and append [[Category:en_target]]
+    to every member page. Idempotent: skips pages that already have the
+    English category. Returns (edits_made, hit_budget).
+
+    Each save respects the global ``--max-edits`` cap by checking
+    ``edits_so_far + edits`` against ``args.max_edits`` before saving.
+    """
+    edits = 0
+    en_tag = f"[[Category:{en_target}]]"
+    en_tag_lower = en_tag.lower()
+
+    for jp_full_title in jp_titles:
+        # 1. Tag the Japanese-named category page itself as crud.
+        jp_cat_page = site.pages[jp_full_title]
+        try:
+            jp_text = jp_cat_page.text() if jp_cat_page.exists else ""
+        except Exception as e:
+            print(f"  ERROR reading {jp_full_title}: {e}")
+            continue
+        if not jp_cat_page.exists:
+            print(f"  SKIP drain ({jp_full_title} no longer exists)")
+            continue
+
+        if CRUD_CAT_TAG.lower() not in jp_text.lower():
+            new_jp_text = (jp_text.rstrip() + "\n" + CRUD_CAT_TAG) if jp_text else CRUD_CAT_TAG
+            if args.max_edits and edits_so_far + edits >= args.max_edits:
+                return edits, True
+            if args.apply:
+                try:
+                    jp_cat_page.save(
+                        new_jp_text,
+                        summary=(
+                            f"Bot: tag Japanese-named category as crud "
+                            f"(draining members into [[:{en_target}]]) {args.run_tag}"
+                        ),
+                    )
+                    print(f"  CRUD-TAGGED [[{jp_full_title}]]")
+                    edits += 1
+                    time.sleep(THROTTLE)
+                except Exception as e:
+                    print(f"  ERROR tagging {jp_full_title}: {e}")
+            else:
+                print(f"  DRY: would crud-tag [[{jp_full_title}]]")
+                edits += 1
+
+        # 2. Iterate members and append the English category to each.
+        try:
+            jp_cat = site.categories[jp_full_title.split(":", 1)[1]]
+            members = list(jp_cat)
+        except Exception as e:
+            print(f"  ERROR enumerating members of {jp_full_title}: {e}")
+            continue
+
+        for member in members:
+            if args.max_edits and edits_so_far + edits >= args.max_edits:
+                return edits, True
+            try:
+                m_text = member.text() if member.exists else ""
+            except Exception as e:
+                print(f"  ERROR reading {member.name}: {e}")
+                continue
+            if not m_text:
+                continue
+            if en_tag_lower in m_text.lower():
+                continue
+            new_m_text = m_text.rstrip() + "\n" + en_tag
+            if args.apply:
+                try:
+                    member.save(
+                        new_m_text,
+                        summary=(
+                            f"Bot: add [[Category:{en_target}]] (draining "
+                            f"[[{jp_full_title}]]) {args.run_tag}"
+                        ),
+                    )
+                    print(f"  ADDED to [[{member.name}]]")
+                    edits += 1
+                    time.sleep(THROTTLE)
+                except Exception as e:
+                    print(f"  ERROR appending to {member.name}: {e}")
+            else:
+                print(f"  DRY: would add {en_tag} to [[{member.name}]]")
+                edits += 1
+
+    return edits, False
 
 
 def collect_pages(site):
@@ -223,12 +322,40 @@ def main():
             skipped += 1
             continue
 
-        # Multiple distinct existing targets — needs human review. Move
-        # off the legacy category onto the pending-review one.
+        # Multi-target case. If exactly one English-named target plus
+        # one or more Japanese-script-only targets exist, drain the
+        # Japanese ones into the English one: tag each Japanese cat as
+        # crud and append [[Category:English]] to each member. Over
+        # subsequent cycles the Japanese cat empties, gets deleted by
+        # the unused-categories sweep, and this dab page falls into
+        # the single-existing-target branch and gets auto-redirected.
+        targets_list = list(existing_targets.values())
+        jp_targets = [t for t in targets_list if is_japanese_only_category(t)]
+        en_targets = [t for t in targets_list if not is_japanese_only_category(t)]
+
+        if len(en_targets) == 1 and jp_targets:
+            en_target = en_targets[0]
+            jp_full_titles = [
+                t if t.lower().startswith("category:") else f"Category:{t}"
+                for t in jp_targets
+            ]
+            en_target_name = en_target.split(":", 1)[1] if ":" in en_target else en_target
+            print(f"{prefix} DRAIN: {jp_full_titles} -> [[Category:{en_target_name}]]")
+            drained, hit_budget = drain_japanese_into_english(
+                site, jp_full_titles, en_target_name, args, edits
+            )
+            edits += drained
+            if hit_budget:
+                print(f"  (hit max-edits during drain; will resume next run)")
+                break
+            # Fall through to also re-tag the dab page off legacy.
+
+        # Always: move multi-target dabs off the legacy category onto
+        # the pending-review buffer so the legacy category drains.
         legacy_present = bool(LEGACY_CAT_RE.search(text))
         pending_present = PENDING_CAT_TAG in text
         if not legacy_present and pending_present:
-            print(f"{prefix} SKIP (multi-target, already pending)")
+            print(f"{prefix} SKIP retag (already on pending)")
             skipped += 1
             continue
 
@@ -236,9 +363,12 @@ def main():
         if not pending_present:
             new_text = f"{new_text}\n{PENDING_CAT_TAG}"
         if new_text == text:
-            print(f"{prefix} SKIP (multi-target, no change)")
+            print(f"{prefix} SKIP retag (no change)")
             skipped += 1
             continue
+        if args.max_edits and edits >= args.max_edits:
+            print(f"{prefix} STOP (hit max-edits before retag)")
+            break
         targets_str = ", ".join(existing_targets.values())
         if not args.apply:
             print(f"{prefix} DRY: would re-tag (multi-target: {targets_str})")
