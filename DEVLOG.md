@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-05
+
+### resolve_double_category_qids: re-enabled with missing-target branch + bounded scope
+**Scripts:** `shinto_miraheze/resolve_double_category_qids.py`,
+`shinto_miraheze/create_japanese_category_qid_redirects.py`,
+`.github/workflows/wiki-cleanup.yml`
+**Status:** Re-enabled
+
+`resolve_double_category_qids.py` had been disabled with the note "0 edits across 3 runs" — root cause was that the resolver only handled the all-chain-to-same-target case, but the dominant pattern in `[[Category:Double category qids]]` is "one of the two listed categories was renamed and emptied without leaving a redirect," i.e. only one target *exists*. The old `resolve_final_target` returned the title unchanged for missing pages, so a `[[:Category:Foo]]` (exists) + `[[:Category:Bar]]` (missing) page produced two distinct targets and was skipped.
+
+Three changes shipped together:
+
+1. **Resolver: missing-target branch.** `resolve_final_target` now returns `(final_title, exists)`. The main loop counts *distinct existing terminal targets*. If exactly one exists, redirect to it (subsumes the old all-same-target case). Multi-target pages are left untouched but moved to a separate review category (below).
+
+2. **New "currently" category swap.** The generator (`create_japanese_category_qid_redirects.py`) now writes new dab pages into `[[Category:Currently double category qids]]` instead of the legacy `[[Category:double category qids]]`. The resolver iterates both source categories; for any page with multiple distinct existing targets that still carries the legacy tag, it strips the legacy tag and adds the "currently" tag. Effect: the legacy category drains to empty as the resolver visits its pages, and the "currently" category becomes the rolling buffer of dabs awaiting human review.
+
+3. **Bounded per-run scope.** `MAX_PAGES_PER_RUN = 200` caps page visits per run, and `THROTTLE_API = 0.3s` spaces out reads inside the redirect-chain follower. This is the safeguard that was missing on `audit_double_category_qids.py` (un-throttled, 11+ hours, hung the cleanup loop on 2026-04-24); without it the same fate would befall this script when iterating the ~2000-page legacy backlog.
+
+The audit script stays disabled — once the resolver drains the easy cases, the residual review set is exposed by the "currently" category itself, no separate report needed.
+
+---
+
 ## 2026-05-03
 
 ### cleanup-loop: every 6h fire actually runs again

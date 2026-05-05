@@ -23,7 +23,7 @@ WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
 THROTTLE  = 2.5
-DUP_CAT   = "double category qids"
+DUP_CAT   = "Currently double category qids"
 
 SOURCE_CAT  = "Japanese language category names"
 WD_LINK_RE  = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
