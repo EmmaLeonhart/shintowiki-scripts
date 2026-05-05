@@ -109,7 +109,7 @@
 |名称    = 鴨大神御子神主玉神社
 |画像    = [[File:Kamonookaminomikokaminushitama-jinja Main hall.JPG|280px]]<br />拝殿
 |所在地  = {{jalink|茨城県|Q83273}}{{jalink|桜川市|Q990350}}加茂部694
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神    = {{jalink|主玉神}}
 |神体    =
 |社格    = {{jalink|式内小社|Q134917287}}<br />旧{{jalink|郷社}}

@@ -98,7 +98,7 @@
 |名称 = 小野神社
 |画像= [[File:Ono-jin (Atsugi) 1.jpg|270px]]<br />鳥居と拝殿
 |所在地 = {{ill|lt=神奈川県|Q127513|qid=Q127513|1=Kanagawa Prefecture}}{{ill|lt=厚木市|Q389711|qid=Q389711|1=Atsugi}}{{ill|lt=小野 (厚木市)|Q127687837|qid=Q127687837|lt=小野|1=Ono}}428
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神 = 日本武命
 |社格 = {{ill|UNKNOWN|lt=式内社|1=Shikinaisha|qid=Q134917286|lt=Shikinaisha}}（小）、{{ill|lt=郷社|Q134917316|qid=Q134917316|1=Gō-sha}}（{{ill|lt=近代社格制度|Q712534|qid=Q712534|lt=旧社格|1=Modern system of ranked Shinto shrines}}）
 |創建 = 不詳

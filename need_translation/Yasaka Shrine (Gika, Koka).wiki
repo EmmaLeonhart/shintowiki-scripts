@@ -112,7 +112,7 @@
  | 名称=八坂神社
  | 画像=[[File:Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 09.jpg|270px]]<br />社殿
  | 所在地={{jalink|滋賀県|Q131358}}{{jalink|甲賀市|Q847584}}水口町嶬峨1606
- | 位置={{ウィキ座標2段度分秒|34|57|2.125|N|136|11|48.537|E|region:JP-25_type:landmark|display=inline,title}}
+ | 位置={{ウィキ座標2段度分秒|34|57|2.125|N|136|11|48.537|E|region:JP-25_type:landmark}}
  | 祭神={{jalink|素盞鳴命}}、{{jalink|聖武天皇|Q349263}}、{{jalink|神武天皇|Q200188}}
  | 社格={{jalink|式内社}}論社、旧{{jalink|村社}}
  | 創建=（伝）{{jalink|794年|Q30887}}|例祭={{jalink|5月1日|Q2544}}川枯祭

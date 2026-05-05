@@ -80,7 +80,7 @@
 |名称   = 鹿島神社
 |画像 = [[File:Kashima-jinja Kashiba201806.jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
 |所在地 = {{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}下田西1-9-3
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神   = {{jalink|武甕槌大神}}
 |社格   = 旧指定{{jalink|村社}}、{{jalink|式内社}}論社
 |創建   = {{jalink|承安 (日本)|Q1194188|承安}}2年（{{jalink|1172年|Q19687}}）
