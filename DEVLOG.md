@@ -6,6 +6,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-05
 
+### fandom-sync: pulled .wiki files were never committed — workflow missing the content-commit step
+**Scripts:** `.github/workflows/fandom-sync.yml`
+**Status:** Fixed
+
+Symptom: `fandom_unique/` had only 8 files in the repo despite the workflow running daily and pulling ~1000 pages each run. User flagged it as "the fandom unique directory has fuck all pages in it."
+
+Root cause: when the new Independent Pages Sync workflow was added on 2026-05-05 (commits 3496352 + 73a7982), it was modeled on the existing `git-synced-sync.yml` but missed its content-commit step. `git-synced-sync.yml:71-81` has an explicit "Commit: git_synced/ changes" step that does `git add -A git_synced/` before invoking `commit_state.sh`. The new workflow only invoked `commit_state.sh` directly — and that script's globs (`*.state`, `*.log`, `*.errors`, `reports/`) don't match `.wiki` files in the unique/ directories.
+
+The compounding failure: `commit_state.sh` rebases against origin before pushing. With unstaged `.wiki` files in the working tree, `git rebase` aborted with "you have unstaged changes," so even the state-file commit never reached origin. Every daily run pulled 948 fandom pages + 106 miraheze pages, then the runner tore down and lost everything. Same loop the next day.
+
+Confirmed via the 2026-05-05 12:45 UTC run log:
+
+```
+sync_miraheze_unique:    Wiki: 107 in category, Local: 1 .wiki files. Pulled (wiki -> repo): 106
+bootstrap_seed_fandom:   Seeded into fandom_unique/: 101
+sync_fandom_unique:      Wiki: 1042 in category, Local: 109 .wiki files. Pulled: 948
+commit_state.sh:         error: cannot rebase: You have unstaged changes.
+                         WARN: rebase failed on attempt 1; aborting.
+```
+
+Fix: add the missing "Commit: miraheze_unique/ + fandom_unique/ changes" step to `fandom-sync.yml`, modeled exactly on the git-synced-sync equivalent (`git add -A` over the dirs, commit if non-empty, pull-rebase, push). Runs before `commit_state.sh` so the state-file commit's rebase has nothing unstaged to choke on. Next scheduled run (2026-05-06 11:30 UTC) will land all ~1050 pulled pages.
+
 ### resolve_double_category_qids: drain Japanese-named categories into the English equivalent
 **Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
 **Status:** Complete
