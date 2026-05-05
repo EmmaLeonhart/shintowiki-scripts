@@ -438,10 +438,10 @@
     "mira_sha": "c403e31baecd40cf4e0c9539f5ee4bf3600fd85e"
   },
   "Kashiwa Shrine": {
-    "fan_revid": 1983697,
-    "fan_sha": "0b9c7953034830ae7713280212bfcb6a5c3a187a",
-    "mira_revid": 3682128,
-    "mira_sha": "5a01c3e3864099094d64c03ab1f00e81f49c78bc"
+    "fan_revid": 1986396,
+    "fan_sha": "7c7167bd42ce30438351ea6fddeea827a6d23906",
+    "mira_revid": 3705191,
+    "mira_sha": "7c7167bd42ce30438351ea6fddeea827a6d23906"
   },
   "Keijō Shrine": {
     "fan_revid": 1983698,
@@ -467,11 +467,287 @@
     "mira_revid": 3682871,
     "mira_sha": "df5d798f6fd403445d97fa658690db1de75af165"
   },
+  "Kenpuku-ji": {
+    "fan_revid": 1986397,
+    "fan_sha": "e6ba5ffd6530c63a12c6bd73ace2786e6b3802f9",
+    "mira_revid": 3682873,
+    "mira_sha": "e6ba5ffd6530c63a12c6bd73ace2786e6b3802f9"
+  },
+  "Kifune Shrine (Manazuru, Kanagawa)": {
+    "fan_revid": 1986398,
+    "fan_sha": "cea599a3d6aa8f6377576f86e7b11785f56294ef",
+    "mira_revid": 3705194,
+    "mira_sha": "cea599a3d6aa8f6377576f86e7b11785f56294ef"
+  },
+  "Kifune Shrine (Ogaki)": {
+    "fan_revid": 1986399,
+    "fan_sha": "335698796fd31288126e0310ed68b9309d0695bc",
+    "mira_revid": 3682955,
+    "mira_sha": "335698796fd31288126e0310ed68b9309d0695bc"
+  },
+  "Kifune Shrine (Seki City)": {
+    "fan_revid": 1986400,
+    "fan_sha": "e3fe8b196f7047b95900f6f878565007a843277b",
+    "mira_revid": 3682959,
+    "mira_sha": "e3fe8b196f7047b95900f6f878565007a843277b"
+  },
+  "Kin Kannon-ji": {
+    "fan_revid": 1986401,
+    "fan_sha": "70ed9170772cfd65675adedefcb600b4f80f23d4",
+    "mira_revid": 3683012,
+    "mira_sha": "70ed9170772cfd65675adedefcb600b4f80f23d4"
+  },
+  "Kinkaku-ji": {
+    "fan_revid": 1986402,
+    "fan_sha": "bfdba4d3e495066b297054f0a70487c61a3b1c69",
+    "mira_revid": 3683036,
+    "mira_sha": "bfdba4d3e495066b297054f0a70487c61a3b1c69"
+  },
+  "Kinomiya Shrine": {
+    "fan_revid": 1986403,
+    "fan_sha": "334239ba508b030ccf643d48d23551200973eed1",
+    "mira_revid": 3683045,
+    "mira_sha": "334239ba508b030ccf643d48d23551200973eed1"
+  },
+  "Kirime Ōji Shrine": {
+    "fan_revid": 1986404,
+    "fan_sha": "9d804f67b56c1f213ce86fa618e63f8223480f53",
+    "mira_revid": 3683097,
+    "mira_sha": "9d804f67b56c1f213ce86fa618e63f8223480f53"
+  },
+  "Kiyomizu-dera": {
+    "fan_revid": 1986405,
+    "fan_sha": "03672421aa6aaa4f3c9ceebdbea0a4d0f58aef3d",
+    "mira_revid": 3683213,
+    "mira_sha": "03672421aa6aaa4f3c9ceebdbea0a4d0f58aef3d"
+  },
+  "Kongōshō-ji": {
+    "fan_revid": 1986406,
+    "fan_sha": "520c9268f603415591c0ed61543b909826997d99",
+    "mira_revid": 3683437,
+    "mira_sha": "520c9268f603415591c0ed61543b909826997d99"
+  },
+  "Kono Shrine": {
+    "fan_revid": 1986407,
+    "fan_sha": "24605b6626f51f53e3c14f2e933ce520b0bb4b4c",
+    "mira_revid": 3683441,
+    "mira_sha": "24605b6626f51f53e3c14f2e933ce520b0bb4b4c"
+  },
+  "Konpira Daigongen (Kurashiki City)": {
+    "fan_revid": 1986408,
+    "fan_sha": "762afae04e62b37ae9beac1ca62c1a4586664bc7",
+    "mira_revid": 3683767,
+    "mira_sha": "762afae04e62b37ae9beac1ca62c1a4586664bc7"
+  },
+  "Konpira Shrine (Taito)": {
+    "fan_revid": 1986409,
+    "fan_sha": "d443ecf2c341962662b7d9fce980078ed9b2f221",
+    "mira_revid": 3683783,
+    "mira_sha": "d443ecf2c341962662b7d9fce980078ed9b2f221"
+  },
+  "Koshio Shrine (Daisen City, Akita Prefecture)": {
+    "fan_revid": 1986410,
+    "fan_sha": "d7574272ee059c4edf0da53848fa15ebb228c4d0",
+    "mira_revid": 3683847,
+    "mira_sha": "d7574272ee059c4edf0da53848fa15ebb228c4d0"
+  },
+  "Kosuge Shrine (Iiyama)": {
+    "fan_revid": 1986411,
+    "fan_sha": "ad9446684f036c7cc3a7b6608806fcd27e24f122",
+    "mira_revid": 3683859,
+    "mira_sha": "ad9446684f036c7cc3a7b6608806fcd27e24f122"
+  },
+  "Kotohira Shrine (Joetsu City)": {
+    "fan_revid": 1986413,
+    "fan_sha": "b4dda00292dbf9aacc0797cb0e447e78314e15d5",
+    "mira_revid": 3683887,
+    "mira_sha": "b4dda00292dbf9aacc0797cb0e447e78314e15d5"
+  },
+  "Kotohira Shrine (Kochi City)": {
+    "fan_revid": 1986414,
+    "fan_sha": "450ef0c87dd59a267257f7c7e33374ffc95fa207",
+    "mira_revid": 3683889,
+    "mira_sha": "450ef0c87dd59a267257f7c7e33374ffc95fa207"
+  },
+  "Kotohira Shrine (Naruto)": {
+    "fan_revid": 1986415,
+    "fan_sha": "7972a56e39d9f2631e0a643cd8d78db12fbd5cfc",
+    "mira_revid": 3705197,
+    "mira_sha": "7972a56e39d9f2631e0a643cd8d78db12fbd5cfc"
+  },
+  "Kotohira Shrine (Shinkamigotō, Mikano-ura-gō)": {
+    "fan_revid": 1986416,
+    "fan_sha": "3cd37a845204ea4d1ac07cde006b28b9aca2f32d",
+    "mira_revid": 3683893,
+    "mira_sha": "3cd37a845204ea4d1ac07cde006b28b9aca2f32d"
+  },
+  "Kotohira-gū": {
+    "fan_revid": 1986412,
+    "fan_sha": "bd0475aa7ca3e642cfe44c14f6d362b39a43f8a1",
+    "mira_revid": 3683881,
+    "mira_sha": "bd0475aa7ca3e642cfe44c14f6d362b39a43f8a1"
+  },
+  "Kotokuji Temple (Koka City)": {
+    "fan_revid": 1986417,
+    "fan_sha": "36032dd9a39900fc33dd73732ee4d834cb482ab0",
+    "mira_revid": 3683908,
+    "mira_sha": "36032dd9a39900fc33dd73732ee4d834cb482ab0"
+  },
+  "Kotonomama Hachiman-gū": {
+    "fan_revid": 1986418,
+    "fan_sha": "f55fb6352758270fd3a7cc8080278d0b6c12c157",
+    "mira_revid": 3683910,
+    "mira_sha": "f55fb6352758270fd3a7cc8080278d0b6c12c157"
+  },
+  "Koyasu Shrine (Hachioji)": {
+    "fan_revid": 1986419,
+    "fan_sha": "b8875066fc28cb0d8a5e58d8dae6003bef6c5cb5",
+    "mira_revid": 3705199,
+    "mira_sha": "b8875066fc28cb0d8a5e58d8dae6003bef6c5cb5"
+  },
+  "Koyasu Shrine (Ise)": {
+    "fan_revid": 1986420,
+    "fan_sha": "9e2340c25d6a8ee109f821c522e21690c8f9c1b3",
+    "mira_revid": 3683962,
+    "mira_sha": "9e2340c25d6a8ee109f821c522e21690c8f9c1b3"
+  },
+  "Kumano Shrine (Yamagata)": {
+    "fan_revid": 1986421,
+    "fan_sha": "1ecb5db67846a7d7ac60d346a720a2233beeb338",
+    "mira_revid": 3684132,
+    "mira_sha": "1ecb5db67846a7d7ac60d346a720a2233beeb338"
+  },
+  "Kurama-dera": {
+    "fan_revid": 1986422,
+    "fan_sha": "8d35909a8a98477da65ee21787b904e91ae28bf5",
+    "mira_revid": 3684296,
+    "mira_sha": "8d35909a8a98477da65ee21787b904e91ae28bf5"
+  },
+  "Kurikara Fudō-ji": {
+    "fan_revid": 1986423,
+    "fan_sha": "aa0b0a8893f9e330261fa57299f59aa9d2dead40",
+    "mira_revid": 3684332,
+    "mira_sha": "aa0b0a8893f9e330261fa57299f59aa9d2dead40"
+  },
+  "Kōfuku-ji": {
+    "fan_revid": 1986424,
+    "fan_sha": "33447c815a5f75e2a5aecd0715049134d2e80b9e",
+    "mira_revid": 3684618,
+    "mira_sha": "33447c815a5f75e2a5aecd0715049134d2e80b9e"
+  },
+  "Kōgaku-ji (Kakegawa)": {
+    "fan_revid": 1986425,
+    "fan_sha": "415e22fa02bf26a7b87c6da1045b61c3ea5e9441",
+    "mira_revid": 3684622,
+    "mira_sha": "415e22fa02bf26a7b87c6da1045b61c3ea5e9441"
+  },
+  "Kōshin Shrine": {
+    "fan_revid": 1986426,
+    "fan_sha": "d6a9e8077d930d86597e0398d462da5dbc3c6a6d",
+    "mira_revid": 3684656,
+    "mira_sha": "d6a9e8077d930d86597e0398d462da5dbc3c6a6d"
+  },
+  "Kōzan-ji (Shimonoseki)": {
+    "fan_revid": 1986427,
+    "fan_sha": "03015d5c3c1b31cccf0d020b28ea39c61b7b0688",
+    "mira_revid": 3685007,
+    "mira_sha": "03015d5c3c1b31cccf0d020b28ea39c61b7b0688"
+  },
+  "Lingyin Temple": {
+    "fan_revid": 1986428,
+    "fan_sha": "38b8a1ccb64af3aa68636cf3df8a175560d9c4d8",
+    "mira_revid": 3685031,
+    "mira_sha": "38b8a1ccb64af3aa68636cf3df8a175560d9c4d8"
+  },
+  "Manpuku-ji": {
+    "fan_revid": 1986429,
+    "fan_sha": "cb4c935f6a01daf95f37c7879dee43a238919b3f",
+    "mira_revid": 3685378,
+    "mira_sha": "cb4c935f6a01daf95f37c7879dee43a238919b3f"
+  },
+  "Matsuo-ji": {
+    "fan_revid": 1986430,
+    "fan_sha": "065a728c81ba99aa96595d4ba986ebbb4917c34f",
+    "mira_revid": 3685573,
+    "mira_sha": "065a728c81ba99aa96595d4ba986ebbb4917c34f"
+  },
+  "Mifune Shrine": {
+    "fan_revid": 1986431,
+    "fan_sha": "66139ff36a8bff3dde176dea965c8039defdd2f8",
+    "mira_revid": 3686069,
+    "mira_sha": "66139ff36a8bff3dde176dea965c8039defdd2f8"
+  },
+  "Miwa Shrine (Fuefuki City)": {
+    "fan_revid": 1986432,
+    "fan_sha": "8b4d16728770e70335309dccfdf0b764c6b79fae",
+    "mira_revid": 3686560,
+    "mira_sha": "8b4d16728770e70335309dccfdf0b764c6b79fae"
+  },
+  "Miwa Shrine (Nagano)": {
+    "fan_revid": 1986433,
+    "fan_sha": "e41560f2afd15d002d59532ee10c77b4fddfd575",
+    "mira_revid": 3690981,
+    "mira_sha": "e41560f2afd15d002d59532ee10c77b4fddfd575"
+  },
+  "Miwa Shrine (Nakagawa, Tochigi)": {
+    "fan_revid": 1986434,
+    "fan_sha": "38eb3d403357ad23368306ff97805c3fdf938dea",
+    "mira_revid": 3686570,
+    "mira_sha": "38eb3d403357ad23368306ff97805c3fdf938dea"
+  },
   "Miyajidake Shrine": {
     "fan_revid": 1966817,
     "fan_sha": "1d198e7ab84971e9921be89643f3d15f845a6a60",
     "mira_revid": 3686609,
     "mira_sha": "064ca698158b0a38b0618e0394e637d528133bda"
+  },
+  "Miyosawa Akagi Shrine": {
+    "fan_revid": 1986435,
+    "fan_sha": "b6d29e96b89a43d0be7b0e77c245d29b38146c2d",
+    "mira_revid": 3686697,
+    "mira_sha": "b6d29e96b89a43d0be7b0e77c245d29b38146c2d"
+  },
+  "Miyoshi Shrine (Sapporo City)": {
+    "fan_revid": 1986436,
+    "fan_sha": "f4063023dc326a97ab80e91bfe606b4a475ffdd3",
+    "mira_revid": 3705203,
+    "mira_sha": "f4063023dc326a97ab80e91bfe606b4a475ffdd3"
+  },
+  "Musashi-Mitake Shrine": {
+    "fan_revid": 1986437,
+    "fan_sha": "d90a07f0111f1b6479860ec3e183430adbed18aa",
+    "mira_revid": 3705204,
+    "mira_sha": "d90a07f0111f1b6479860ec3e183430adbed18aa"
+  },
+  "Myofukuji Temple (Choshi City)": {
+    "fan_revid": 1986438,
+    "fan_sha": "afc65b6ffdf4d4e19c04de63a7b3dfb7dae50e6c",
+    "mira_revid": 3687488,
+    "mira_sha": "afc65b6ffdf4d4e19c04de63a7b3dfb7dae50e6c"
+  },
+  "Myoju-in": {
+    "fan_revid": 1986439,
+    "fan_sha": "fe9d921ed819c4cc552cf96f83b339da21a5e0e8",
+    "mira_revid": 3687490,
+    "mira_sha": "fe9d921ed819c4cc552cf96f83b339da21a5e0e8"
+  },
+  "Myokakuji Temple (Edogawa Ward)": {
+    "fan_revid": 1986440,
+    "fan_sha": "1751246eaf3a07a035dece5ba96365403228fa9a",
+    "mira_revid": 3687492,
+    "mira_sha": "1751246eaf3a07a035dece5ba96365403228fa9a"
+  },
+  "Myokenji Temple (Hikimacho, Takasaki City)": {
+    "fan_revid": 1986441,
+    "fan_sha": "64fe255cfc7db34913b44cf4cf78760c6dc6a46f",
+    "mira_revid": 3687496,
+    "mira_sha": "64fe255cfc7db34913b44cf4cf78760c6dc6a46f"
+  },
+  "Myōshin-ji": {
+    "fan_revid": 1986442,
+    "fan_sha": "a5d4dda227c7b769b3957c53de4d02bbea829449",
+    "mira_revid": 3687523,
+    "mira_sha": "a5d4dda227c7b769b3957c53de4d02bbea829449"
   },
   "Renjōji Temple": {
     "fan_revid": 1966818,
@@ -660,10 +936,10 @@
     "mira_sha": "6f1a4fc19a5936a700d558a1d593c5b065d94682"
   },
   "Tamatsukuri Shrine": {
-    "fan_revid": 1966849,
-    "fan_sha": "fac79b3c46bd48767ef6c46a5566b5f06210d86d",
-    "mira_revid": 3652394,
-    "mira_sha": "61975f619d7b471ba9d7233e74bf8986c7f69695"
+    "fan_revid": 1986393,
+    "fan_sha": "8033f01754f973b06e2f6f83c65a87452a21125b",
+    "mira_revid": 3705218,
+    "mira_sha": "8033f01754f973b06e2f6f83c65a87452a21125b"
   },
   "Tatsuta Taisha": {
     "fan_revid": 1966850,
@@ -838,12 +1114,6 @@
     "fan_sha": "3f85dcc031bbd87f84125dcd2d0b18dde3839ff7",
     "mira_revid": 3695366,
     "mira_sha": "3f85dcc031bbd87f84125dcd2d0b18dde3839ff7"
-  },
-  "Template:Infobox Noble": {
-    "fan_revid": 1966854,
-    "fan_sha": "348a5bec39124f4b2e512440c2e4271fa39a2866",
-    "mira_revid": 3695667,
-    "mira_sha": "33ff0e1cde2e95259cbd622d54e0c0fd2c126ec2"
   },
   "Template:Infobox Officeholder": {
     "fan_revid": 1966298,
@@ -1589,12 +1859,6 @@
     "mira_revid": 3695340,
     "mira_sha": "e8a528b5a68af48e6ef05a1f75011a4ea10d246c"
   },
-  "Template:Infobox military Rank": {
-    "fan_revid": 1966857,
-    "fan_sha": "c1092b3f8cc2952d5006624c187f755c3f000f42",
-    "mira_revid": 3695671,
-    "mira_sha": "db51d589cd967119dd91547862d159e6cc1dca3b"
-  },
   "Template:Infobox military conflict": {
     "fan_revid": 1973856,
     "fan_sha": "059dbc7ca21f140db6990921ae6ad723d0e9fff1",
@@ -2267,6 +2531,12 @@
     "mira_revid": 3697707,
     "mira_sha": "86bc8f85a08351172c94b74a905d5facc6d1df4c"
   },
+  "Template:Wikidata link": {
+    "fan_revid": 1986395,
+    "fan_sha": "2dbebce9c3cf3bc04c11dcc5312b865ed8b13279",
+    "mira_revid": 3704955,
+    "mira_sha": "2dbebce9c3cf3bc04c11dcc5312b865ed8b13279"
+  },
   "Tenryū-ji": {
     "fan_revid": 1966859,
     "fan_sha": "7d0c5fba77084edaf67eb84de07899fc956a1b06",
@@ -2322,10 +2592,10 @@
     "mira_sha": "701993408b6fe9dc0227bac82aba8337b7346a2e"
   },
   "Utsunomiya Shrine": {
-    "fan_revid": 1970663,
-    "fan_sha": "eba72ca438664b162477451c08d1e3a5cb320fad",
-    "mira_revid": 3658224,
-    "mira_sha": "25b1df642fea791d8e5b89b84ec54f61ac2240e3"
+    "fan_revid": 1986394,
+    "fan_sha": "8aae505d4a546fcfcb4d5b63797697bc5af8ebfb",
+    "mira_revid": 3705225,
+    "mira_sha": "8aae505d4a546fcfcb4d5b63797697bc5af8ebfb"
   },
   "Wakamatsu Ebisu Shrine": {
     "fan_revid": 1970664,
