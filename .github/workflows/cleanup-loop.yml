@@ -102,11 +102,11 @@ jobs:
     uses: ./.github/workflows/git-synced-sync.yml
     secrets: inherit
 
-  # sync_fandom_pages: bidirectional sync between
-  # [[Category:Fandom sync]] on miraheze and same-titled pages on
-  # shinto.fandom.com. For Lua-related templates and similar pages
-  # whose fandom-side wikitext shim must stay in step with the
-  # miraheze-side Lua-aware version.
+  # Independent Pages Sync — runs the per-wiki bidirectional sync for
+  # pages tagged [[Category:Independently git synced pages]] on each
+  # wiki. miraheze_unique/ syncs to shinto.miraheze.org and fandom_unique/
+  # syncs to shinto.fandom.com; the two wikis never write to each other.
+  # Replaces the broken wiki-to-wiki sync_fandom_pages model.
   fandom-sync:
     needs: window-gate
     uses: ./.github/workflows/fandom-sync.yml

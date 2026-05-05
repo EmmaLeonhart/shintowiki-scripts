@@ -9,5 +9,6 @@
 </includeonly><noinclude>
 {{documentation}}
 [[Category:Templates]]
+[[Category:Independently git synced pages]]
 [[Category:Templates fixed with noinclude]]
 </noinclude>
