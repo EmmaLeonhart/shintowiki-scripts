@@ -86,7 +86,7 @@
 |名称 = 天健金草神社
 |画像 = [[File:Amatakekanakaya-Jinja Torii.jpg|270px]]<br />鳥居
 |所在地 = {{jalink|島根県|Q132751}}{{jalink|隠岐郡|Q735735}}{{jalink|隠岐の島町|Q1205039}}都万砂子谷霊亀山4243{{sfn|島根県神社庁}}
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神 = {{jalink|大屋津姫命}}、{{jalink|抓津姫命}}、{{jalink|譽田別尊}}{{sfn|半田|1983|p=984}}
 |神体 = 
 |社格 = {{jalink|式内小社|Q134917287}}、旧{{jalink|県社}}{{sfn|半田|1983|p=985}}

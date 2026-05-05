@@ -47,7 +47,7 @@
 |名称   = 熊野神社
 |画像   = [[File:Juniso Kumano-jinja (Shinjuku).jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250|coord={{coord|35|41|25.5|N|139|41|17.5|E}}}}
 |所在地 = {{jalink|東京都|Q1490}}{{jalink|新宿区|Q179645}}{{jalink|西新宿|Q430349}}二丁目11番2号{{sfn|東京都神社庁}}
-|位置   = {{ウィキ座標2段度分秒|35|41|25.5|N|139|41|17.5|E|display=inline,title}}
+|位置   = {{ウィキ座標2段度分秒|35|41|25.5|N|139|41|17.5|E}}
 |祭神   = {{jalink|スサノオ|Q272993|櫛御気野神}}<br />{{jalink|伊邪那美神}}{{sfn|東京都神社庁}}
 |社格   = 旧{{jalink|郷社}}
 |創建   = {{jalink|応永|Q1193078}}年間{{sfn|東京都神社庁}}（{{jalink|1394年|Q6398}} - {{jalink|1428年|Q6315}}）

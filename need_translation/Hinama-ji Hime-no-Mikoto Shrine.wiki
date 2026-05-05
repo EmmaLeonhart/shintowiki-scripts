@@ -97,7 +97,7 @@
 |名称 = 比奈麻治比売命神社
 |画像 = [[File:hinamadihime_torii.jpg|270px]]<br/>鳥居と拝殿
 |所在地 = {{jalink|島根県|Q132751}}{{jalink|隠岐郡|Q735735}}{{jalink|西ノ島町|Q543193}}宇賀1685<ref>{{cite web|url=https://www.shimane-jinjacho.or.jp/nishinoshima/b29be45bfd35007246dcdf1e627ca4a7601874ce.html|title=比奈麻治比売命神社 - 神社詳細│島根県神社庁|accessdate=2025-04-12}}</ref>
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神 = 比奈麻治比売命{{sfn|高橋他編|1996|p=477}}
 |神体 = 木像または黒い石{{sfn|鎌田|1960|p=69}}
 |社格 = {{jalink|式内小社|Q134917287}}、旧{{jalink|村社}}{{sfn|高橋他編|1996|p=477}}

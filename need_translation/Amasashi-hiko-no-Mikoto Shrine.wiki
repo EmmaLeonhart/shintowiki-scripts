@@ -94,7 +94,7 @@
 |名称 = 天佐志比古命神社（一宮神社）
 |画像 = [[File:一宮神社の本堂.jpg|280px|天佐志比古命神社の拝殿]]<br />拝殿
 |所在地 = {{jalink|島根県|Q132751}}{{jalink|隠岐郡|Q735735}}{{jalink|知夫村|Q1204968}}1018
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神 = 天佐志比古命
 |神体 = {{jalink|銅鏡|Q1041984}}
 |社格 = {{jalink|式内小社|Q134917287}}、旧{{jalink|村社}}

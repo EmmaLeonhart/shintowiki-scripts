@@ -58,7 +58,7 @@
 |名称 = 中山神社
 |画像 = [[File:Tottori Daisen-cho Nakayama Shrine.jpg|250px]]<br />拝殿
 |所在地 = {{jalink|鳥取県|Q133935}}{{jalink|西伯郡|Q917024}}{{jalink|大山町|Q1204975}}束積8
-|位置 = {{Coord|35|29|59.7|N|133|35|38.8|E|display=inline,title}}
+|位置 = {{Coord|35|29|59.7|N|133|35|38.8|E}}
 |祭神 = {{jalink|大国主|Q276944|大己貴命}}<br />{{jalink|タキリビメ|Q10932870|田心姫命}}
 |社格 = 旧{{jalink|近代社格制度#諸社|Q712534|郷社}}
 |創建 = 不詳

@@ -96,7 +96,7 @@
 | 画像   = [[File:Mononobe-jinja ac (1).jpg|250px]]<br />鳥居
 | 画像の説明   = 物部神社の鳥居
 | 所在地 = {{jalink|愛知県|Q80434}}{{jalink|名古屋市|Q11751}}{{jalink|東区 (名古屋市)|Q578824|東区}}{{jalink|筒井 (名古屋市)|Q62588744|筒井}}三丁目31番21号
-| 位置 = {{WikidataCoord|display=inline,title}}
+| 位置 = {{WikidataCoord}}
 | 祭神   = {{jalink|ウマシマジ|Q10946169|宇麻志麻遲命}}
 | 社格   = 旧{{jalink|村社}}<br />{{jalink|式内社}}論社
 | 創建   = （伝）{{jalink|垂仁天皇|Q314850}}の治世

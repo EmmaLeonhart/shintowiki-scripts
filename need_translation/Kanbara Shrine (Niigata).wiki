@@ -103,7 +103,7 @@
 |名称 = 蒲原神社
 |画像 = [[File:Kanbara Shinto shrine honden.jpg|250px]]<br />拝殿
 |所在地 = {{jalink|新潟県|Q132705}}{{jalink|新潟市|Q179691}}{{jalink|中央区 (新潟市)|Q711787|中央区}}長嶺町3-18
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神 = {{jalink|椎根津彦|Q11120574|椎根津彦命}}
 |神体 = 木造伝畠山重宗夫妻坐像
 |社格 = {{jalink|式内社}}、旧{{jalink|郷社}}

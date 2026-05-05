@@ -92,7 +92,7 @@
 |名称   = 大坂山口神社
 |画像 = [[File:Osaka-yamaguchi-jinja (osaka)2.jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
 |所在地 = {{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}{{jalink|逢坂 (香芝市)||逢坂}}5-831
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神   = {{jalink|大山祇命}}、{{jalink|須佐之男命}}、{{jalink|神大市比売命}}
 |社格   = {{jalink|式内社}}論社、旧{{jalink|村社}}
 |創建   = 

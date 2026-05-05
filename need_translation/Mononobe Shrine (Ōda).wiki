@@ -170,7 +170,7 @@
 |名称   = 物部神社
 |画像   = [[ファイル:Precincts of Mononobe-jinja.JPG|270px|物部神社 境内]]<br/>境内全景。社殿背後は八百山。
 |所在地 = {{jalink|島根県|Q132751}}{{jalink|大田市|Q384796}}川合町川合1545
-|位置   = {{Coord|35|9|18|N|132|30|48.5|E|region:JP-32|display=inline,title}}
+|位置   = {{Coord|35|9|18|N|132|30|48.5|E|region:JP-32}}
 |祭神   = {{jalink|ウマシマジ|Q10946169|宇摩志麻遅命}}
 |社格   = {{jalink|式内社}}（小）<br/>{{jalink|石見国|Q1053709}}{{jalink|一宮|Q1656379}}<br/>旧国幣小社<br/>{{jalink|別表神社|Q10898274}}
 |創建   = （伝）{{jalink|継体天皇|Q349277}}8年（{{jalink|514年|Q32881}}?）

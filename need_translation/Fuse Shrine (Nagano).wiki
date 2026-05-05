@@ -80,7 +80,7 @@
 |名称   = 布制神社
 |画像 = [[File:布制神社.jpg|250px]]<br />鳥居と拝殿
 |所在地 = {{jalink|長野県|Q127877}}{{jalink|長野市|Q128849}}篠ノ井布施五明235
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神   = {{jalink|大彦命|Q11435420}}
 |社格   = 旧{{jalink|村社}}、{{jalink|式内社}}論社
 |創建   = 不詳

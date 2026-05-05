@@ -86,7 +86,7 @@
 |名称= 事代主神社
 |画像= [[File:Kotoshironushi Shrine, Awa City.jpg|250px]]<br />拝殿
 |所在地= {{jalink|徳島県|Q160734}}{{jalink|阿波市|Q791587}}{{jalink|市場町伊月|Q55523753}}字宮ノ本100-1
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神= {{jalink|事代主命}}
 |社格= {{jalink|式内社}}・{{jalink|旧郷社}}
 |創建= 不詳

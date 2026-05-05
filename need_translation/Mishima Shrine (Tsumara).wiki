@@ -92,7 +92,7 @@
 |画像 = {{画像募集中|cat=賀茂郡}}
 {{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=250|frame-height=|coord={{coord|34|39|29.1|N|138|47|25.4|E}}}}
 |所在地 = {{jalink|静岡県|Q131320}}{{jalink|賀茂郡|Q961511}}{{jalink|南伊豆町|Q1203741}}妻良828ｰ1
-|位置   = {{coord|34|39|29.1|N|138|47|25.4|E|region:JP-22_type:landmark|display=inline,title}}
+|位置   = {{coord|34|39|29.1|N|138|47|25.4|E|region:JP-22_type:landmark}}
 |祭神   = 大津往命
 |社格   = {{jalink|式内社}}、旧{{jalink|村社}}
 |創建   = 

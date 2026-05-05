@@ -14,7 +14,7 @@
  | 神事   = 
 | image   = File:Izu-jinja gifu2009-6.jpg
  | prefecture   = {{ill|Gifu|qid=Q45798|1=Gifu}}
- | coordinates   = {{Coord|35.3993083|N|136.7942417|E|region:JP_type:landmark|display=inline,title}}
+ | coordinates   = {{Coord|35.3993083|N|136.7942417}}
  | deity   = {{ill|Iwanaga|qid=Q8191705|1=Iwanaga-hime}}
  }}
 

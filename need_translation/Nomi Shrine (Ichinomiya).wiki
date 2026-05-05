@@ -91,7 +91,7 @@
 |名称   = 野見神社
 |画像   = [[File:Nomi-jinja, Ichinomiya.jpg|250px]]<br />鳥居
 |所在地 = {{jalink|愛知県|Q80434}}{{jalink|一宮市|Q270810}}{{jalink|今伊勢町宮後|Q127432729}}字稲荷1929
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神   = {{jalink|野見宿禰|Q965742|野見宿禰命}}・{{jalink|アメノホヒ|Q10940685|天穂日命}}・{{jalink|天照大神|Q455602|天照大御神}}
 |社格   = {{jalink|式内社}}・旧{{jalink|村社}}
 |創建   = 不詳

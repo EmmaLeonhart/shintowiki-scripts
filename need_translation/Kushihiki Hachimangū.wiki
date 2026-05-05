@@ -50,7 +50,7 @@
 |名称   = 櫛引八幡宮
 |画像   = [[File:Kushihiki Hachiman-gu.jpg|270px]]<br />拝殿
 |所在地 = {{jalink|青森県|Q71699}}{{jalink|八戸市|Q191914}}八幡字八幡丁3-2
-|位置   = {{ウィキ座標2段度分秒|40|29|25.2|N|141|26|05.2|E|region:JP-02_scale:25000_type:landmark|display=inline,title}}
+|位置   = {{ウィキ座標2段度分秒|40|29|25.2|N|141|26|05.2|E|region:JP-02_scale:25000_type:landmark}}
 |祭神   = {{jalink|八幡大神}}
 |社格   = 旧{{jalink|郷社}}
 |創建   = <sub>伝</sub>{{jalink|建久|Q1193933}}年間（1190-99年）

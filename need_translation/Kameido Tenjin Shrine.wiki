@@ -7,7 +7,7 @@
 | caption = Kameido Tenjin Shrine in Tokyo, with the {{ill|Tokyo Skytree|en|Tokyo Skytree|qid=Q57965|lt=Tokyo Skytree}} in the background
 | map_type = Japan
 | map_alt = 
-| coordinates = {{Coord|35.702778|N|139.820833|E|region:JP_type:landmark|display=inline,title}}
+| coordinates = {{Coord|35.702778|N|139.820833}}
 | map_relief  = 
 | map_size = 
 | map_caption = 
@@ -73,7 +73,7 @@ File:Kameido Tenjin Kiku-Matsuri.jpg|Chrysanthemum Festival (November 15, 2020)
 |名称 = 亀戸天神社
 |画像 = [[ファイル:Kameido Tenjin 20130506e.jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|35|42|11.3|N|139|49|15.6|E}}}}
 |所在地 = {{jalink|東京都|Q1490}}{{jalink|江東区|Q215175}}{{jalink|亀戸|Q11370950}}3丁目6番1号{{sfn|東京都神社庁}}
-|位置   = {{Coord|35|42|11.3|N|139|49|15.6|E|region:JP-13_scale:5000|display=inline,title}}
+|位置   = {{Coord|35|42|11.3|N|139|49|15.6|E|region:JP-13_scale:5000}}
 |祭神 = {{jalink|菅原道真|Q382005|天満大神}}{{sfn|東京都神社庁}}<ref name="gods">[http://kameidotenjin.or.jp/about/ 御祭神] 亀戸天神社</ref><br />{{jalink|アメノホヒ|Q10940685|天菩日命}}{{sfn|東京都神社庁}}<ref name="gods"/>
 |神体 =
 |社格 = 旧{{jalink|府社}}

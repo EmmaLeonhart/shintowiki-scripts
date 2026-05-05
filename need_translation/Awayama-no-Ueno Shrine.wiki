@@ -98,7 +98,7 @@
 |名称   = 阿波山上神社
 |画像=[[File:Awayamanoueno Shrine (Shirosato, Ibaraki, Japan) 03.jpg|250px]]<br />拝殿
 |所在地 = {{jalink|茨城県|Q83273}}{{jalink|東茨城郡|Q1154667}}{{jalink|城里町|Q1203068}}阿波山664-1
-|位置 = {{WikidataCoord|display=inline,title}}
+|位置 = {{WikidataCoord}}
 |祭神   = {{jalink|スクナビコナ|Q3275687|少彦名命}}
 |社格   = {{jalink|延喜式神名帳|Q11064932|式内社}}（小）<br />旧{{jalink|近代社格制度#諸社|Q712534|郷社}}
 |創建   = {{jalink|大宝 (日本)|Q1346269|大宝}}元年（{{jalink|701年|Q23496}}）
