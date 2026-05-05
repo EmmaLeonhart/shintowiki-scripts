@@ -91,12 +91,12 @@ The shrine comprises two main areas:
 ''' Administrative Office
 
 === Auxiliary Shrines ===
-* '''Upper Auxiliary Shrine''' (Aramatsuri Shrine): Dedicated to {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ja|月読尊|12=simple|13=User:Immanuelle/Tsukuyomi|ja_comment=jawiki redirects to ツクヨミ|1=Tsukuyomi-no-Mikoto}}, {{ill|Takami Musubi|ja|高皇産霊神|12=simple|13=User:Immanuelle/Takami Musubi|ja_comment=jawiki redirects to タカミムスビ|1=Takamimusubi|comment=changed title based on wikidata|qid=Q125400}}, and {{ill|Takuhadachiji-hime|en|Takuhadachiji-hime|qid=Q11110848|lt=Takuhadachiji-hime|1=Takuhadachiji-hime}}.
-* '''Lower Auxiliary Shrine''': Includes various smaller shrines dedicated to deities such as {{ill|Ame-no-Oshihomimi|ja|天忍穂耳尊|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|1=Ame-no-oshihomimi|comment=changed title based on wikidata|qid=Q462555}}, {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|ja_comment=jawiki redirects to イザナギ}}, and {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|ja_comment=jawiki redirects to イザナミ|1=Izanami|comment=changed title based on wikidata|qid=Q682306}}.
+* '''Upper Auxiliary Shrine''' (Aramatsuri Shrine): Dedicated to {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ja|月読尊|12=simple|13=User:Immanuelle/Tsukuyomi|ja_comment=jawiki redirects to ツクヨミ|1=Tsukuyomi-no-Mikoto}}, {{ill|Takami Musubi|ja|高皇産霊神|12=simple|13=User:Immanuelle/Takami Musubi|qid=Q125400|1=Takamimusubi|comment=changed title based on wikidata|qid=Q125400}}, and {{ill|Takuhadachiji-hime|en|Takuhadachiji-hime|qid=Q11110848|lt=Takuhadachiji-hime|1=Takuhadachiji-hime}}.
+* '''Lower Auxiliary Shrine''': Includes various smaller shrines dedicated to deities such as {{ill|Ame-no-Oshihomimi|ja|天忍穂耳尊|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|1=Ame-no-oshihomimi|comment=changed title based on wikidata|qid=Q462555}}, {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}}, and {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|1=Izanami|comment=changed title based on wikidata|qid=Q682306}}.
 
 === Other Shrines ===
 * '''Togakushi Shrine''': Dedicated to {{ill|Ame-no-Tajikarao|ja|天手力雄命|1=Ame-no-Tajikarao|12=simple|13=User:Immanuelle/Ame-no-Tajikarao|13=User:Immanuelle/Ame-no-Tajikarao|ja_comment=jawiki redirects to アメノタヂカラオ|comment=changed title based on wikidata|qid=Q849412}}.
-* '''Mii Shrine''': Dedicated to {{ill|Mizuhanome|ja|水波能売神|12=simple|13=User:Immanuelle/Mizuhanome|ja_comment=jawiki redirects to ミヅハノメ}}.
+* '''Mii Shrine''': Dedicated to {{ill|Mizuhanome|ja|水波能売神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}.
 * '''Ebisu Shrine''': Dedicated to {{ill|Ebisu|ja|事代主神|12=simple|13=User:Immanuelle/Ebisu|ja_comment=jawiki redirects to 事代主}}.
 
 == Grounds ==
