@@ -6,6 +6,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-05
 
+### resolve_double_category_qids: drain Japanese-named categories into the English equivalent
+**Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
+**Status:** Complete
+
+Follow-up to the resolver re-enable below. For multi-target dab pages — where two or more *existing* categories share a QID — the previous behaviour was just to migrate the page off the legacy review category and leave it for human triage. Most of these pages are actually a Japanese-script category (e.g. `Category:遺跡`) duplicated against an English equivalent (`Category:Archaeological Sites`); the user's preference is to drain the Japanese one into the English one rather than merge in a single edit.
+
+When exactly one of the existing targets is English-named (contains an ASCII letter) and one or more are Japanese-script-only (no ASCII letters in the name), the resolver now:
+
+1. Tags each Japanese-named category page with `[[Category:crud categories]]` (idempotent — skips if already present).
+2. Iterates members of each Japanese category and appends `[[Category:English]]` to any page that doesn't already have it.
+
+Idempotent under repeated runs. Members already double-categorized are skipped. As the Japanese categories drain to empty over subsequent cleanup-loop cycles, the unused-categories sweep deletes them, and the dab page falls into the single-existing-target branch and gets auto-redirected — no separate cleanup needed.
+
+Edits are bounded by the same `--max-edits` budget that governs the rest of the resolver run; if the budget is hit mid-drain, the run halts and resumes next cycle.
+
 ### resolve_double_category_qids: re-enabled with missing-target branch + bounded scope
 **Scripts:** `shinto_miraheze/resolve_double_category_qids.py`,
 `shinto_miraheze/create_japanese_category_qid_redirects.py`,
