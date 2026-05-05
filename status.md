@@ -4,22 +4,16 @@
 
 The purpose of this file is to bound scope. If a task is not in this queue, it is not in scope for the current session. New ideas go at the bottom of the queue (or to `todo.md` if they are longer-term / architectural), not silently into whatever is being worked on.
 
-## Archive-push window (2026-04-24 → 2026-05-05)
+## Currently watching
 
-Per-orchestrator edit limits are biased to move mainspace and template to fandom / GitHub archive as fast as possible:
+1. **Resolver run on its first real cycle.** `resolve_double_category_qids.py` re-enabled in commit 6c1bc3d, drain branch added in 12eef5a, post-drain redirect added today. First push-triggered cleanup-loop run is `25408189695` (in_progress as of writing). Once it completes, check that:
+   * Single-existing-target dabs got `#REDIRECT [[Category:Foo]]` (the missing-target branch).
+   * Multi-target English+Japanese dabs got the drain (Japanese cat tagged crud + members double-categorized) AND the dab page itself ended as a redirect to the English cat.
+   * Run did not exceed the wiki-cleanup timeout (resolver step has 200-page cap + 0.3s read throttle, but each drain can blow `--max-edits` quickly).
 
-| Orchestrator | Edit limit during window | After 2026-05-05 (catchup) | After 2026-06-01 |
-|---|---|---|---|
-| mainspace | **1000** | 500 | 100 |
-| template  | **100**  | 500 | 100 |
-| category  | **100**  | 500 | 100 |
-| miscellaneous | **100** | 500 | 100 |
+2. **fandom-sync first run with the content-commit fix.** The next `Independent Pages Sync` run (either standalone 11:30 UTC or the cleanup-loop fan-out at 18:00 UTC) should land ~948 fandom + ~106 miraheze `.wiki` files into the repo. Confirm `fandom_unique/` count jumps from 8 to ~1000 after that run.
 
-**Why**: mainspace is the primary thing we want archived. Template is mostly offloaded so it drops to 100/run; category and misc also run at 100 each so the downstream orchestrators (chained behind mainspace) actually accomplish work each cycle rather than getting starved on a 10-edit budget while the mainspace job consumes most of the window. Implemented in `.github/workflows/cleanup-loop.yml`'s `window-gate` (per-orchestrator-edit-limit outputs).
-
-**Mid-window tweaks (pending decision, not yet coded):**
-* If the template orchestrator **completes a full cycle** inside this window (state clears, nothing left to offload), shift the freed budget to mainspace: bump mainspace to **1500**.
-* Once mainspace has been **fully imported**, drop everything to a uniform 500 (matches the outer catchup baseline).
+3. **Hourly local loop converting non-portable infoboxes to Portable Infobox syntax.** `/loop 1h` scheduled (job `565ff75f`); fires hourly at :23. Once `fandom_unique/` has the bulk of pulled pages, each loop fire scans `Template%3AInfobox*.wiki` for non-portable templates and converts them to `<infobox>` syntax. Stops after 4 iterations or once all infoboxes are portable.
 
 ## Open follow-ups (from the history-offload rework)
 
