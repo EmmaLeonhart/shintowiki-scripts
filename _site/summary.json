@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-04T22:02:38.273532+00:00",
+  "generated_utc": "2026-05-05T04:36:12.411699+00:00",
   "stats": {
     "linked_to_wikidata": 0,
     "without_wikidata": 444,
@@ -9,7 +9,7 @@
     "double_category_qids": 324,
     "duplicated_qid_redirects": 0,
     "total_pages": 11149,
-    "total_edits": 3686554
+    "total_edits": 3687384
   },
-  "p11250_pending": 5689
+  "p11250_pending": 5642
 }
