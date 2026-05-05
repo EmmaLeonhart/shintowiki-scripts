@@ -1,0 +1,387 @@
+#!/usr/bin/env python3
+"""
+sync_miraheze_unique_pages.py
+==============================
+Bidirectional sync between [[Category:Independently git synced pages]] on
+shinto.miraheze.org and the local ``miraheze_unique/`` directory.
+
+This is the miraheze half of the per-wiki independently-synced pattern.
+Pages in this category are intentionally divergent from their fandom-side
+counterparts (Lua, ``{{q}}``, ``d:`` interwiki, etc. work on miraheze but
+not on fandom). The fandom-side counterpart lives in ``fandom_unique/``
+and is synced by ``sync_fandom_unique_pages.py`` against shinto.fandom.com.
+The two wikis never write to each other; the git repo is the hub.
+
+Patterned on ``sync_git_synced_pages.py``. The conflict policy is the
+same (repo wins on simultaneous-change). Discovery is by category on
+miraheze; the script also picks up local files whose title is missing
+from the wiki category and pushes them, treating the repo as the
+source of truth for membership.
+"""
+
+import argparse
+import hashlib
+import io
+import json
+import os
+import re
+import sys
+import time
+import urllib.parse
+from pathlib import Path
+
+import mwclient
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+WIKI_URL = "shinto.miraheze.org"
+WIKI_PATH = "/w/"
+USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
+PASSWORD = os.getenv("WIKI_PASSWORD", "")
+THROTTLE = 2.5
+
+CATEGORY = "Independently git synced pages"
+CATEGORY_NAMESPACES = "0|10|14"  # main, Template, Category
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+WIKI_DIR = REPO_ROOT / "miraheze_unique"
+STATE_FILE = SCRIPT_DIR / "sync_miraheze_unique_pages.state"
+
+USER_AGENT = "MirahezeUniquePagesBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
+
+_FORBIDDEN = set('<>:"/\\|?*')
+
+CAT_RE = re.compile(
+    r'\[\[\s*Category\s*:\s*Independently git synced pages\s*\]\]',
+    re.IGNORECASE,
+)
+
+
+def title_to_filename(title: str) -> str:
+    out = []
+    for c in title:
+        if c in _FORBIDDEN or c == "%":
+            out.append(f"%{ord(c):02X}")
+        else:
+            out.append(c)
+    return "".join(out) + ".wiki"
+
+
+def filename_to_title(filename: str) -> str:
+    name = filename[:-5] if filename.endswith(".wiki") else filename
+    return urllib.parse.unquote(name)
+
+
+def sha1_text(text: str) -> str:
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+
+def load_state(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def save_state(path: Path, state: dict) -> None:
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
+def iter_category_with_revisions(site, category_name, namespaces):
+    params = {
+        "generator": "categorymembers",
+        "gcmtitle": f"Category:{category_name}",
+        "gcmnamespace": namespaces,
+        "gcmlimit": "max",
+        "prop": "revisions",
+        "rvprop": "ids|content",
+        "rvslots": "main",
+        "formatversion": "2",
+    }
+    while True:
+        result = site.api("query", **params)
+        pages = result.get("query", {}).get("pages", [])
+        for page in pages:
+            if page.get("missing"):
+                continue
+            revs = page.get("revisions") or []
+            if not revs:
+                continue
+            rev = revs[0]
+            revid = rev.get("revid")
+            text = rev.get("slots", {}).get("main", {}).get("content", "")
+            if revid is None:
+                continue
+            yield page["title"], revid, text
+        if "continue" in result:
+            params.update(result["continue"])
+        else:
+            break
+
+
+def fetch_page(site, title):
+    """Return (exists, revid, text) for a single page on `site`."""
+    result = site.api(
+        "query",
+        prop="revisions",
+        rvprop="ids|content",
+        rvslots="main",
+        rvlimit=1,
+        titles=title,
+        formatversion="2",
+    )
+    pages = result.get("query", {}).get("pages", []) or []
+    if not pages:
+        return False, None, None
+    page = pages[0]
+    if page.get("missing"):
+        return False, None, None
+    revs = page.get("revisions") or []
+    if not revs:
+        return False, None, None
+    rev = revs[0]
+    return True, rev.get("revid"), rev.get("slots", {}).get("main", {}).get("content", "")
+
+
+def _fetch_latest_revid(site, title):
+    result = site.api(
+        "query",
+        prop="revisions",
+        rvprop="ids",
+        rvlimit=1,
+        titles=title,
+        formatversion="2",
+    )
+    pages = result.get("query", {}).get("pages", [])
+    if not pages:
+        return None
+    revs = pages[0].get("revisions") or []
+    if not revs:
+        return None
+    return revs[0].get("revid")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--apply", action="store_true",
+                        help="Actually push/pull edits (default dry-run).")
+    parser.add_argument("--max-edits", type=int, default=100,
+                        help="Max wiki edits per run (default 100).")
+    parser.add_argument("--run-tag", required=True,
+                        help="Wiki-formatted run tag link for edit summaries.")
+    args = parser.parse_args()
+
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+    site.connection.timeout = 120
+    site.login(USERNAME, PASSWORD)
+    print(f"Logged in to {WIKI_URL} as {USERNAME}")
+
+    WIKI_DIR.mkdir(parents=True, exist_ok=True)
+
+    state = load_state(STATE_FILE)
+    print(f"State: {len(state)} tracked pages")
+
+    print(f"Fetching [[Category:{CATEGORY}]] members with content ...")
+    wiki_pages = {}
+    for title, revid, text in iter_category_with_revisions(
+            site, CATEGORY, CATEGORY_NAMESPACES):
+        wiki_pages[title] = (revid, text)
+    print(f"Wiki:  {len(wiki_pages)} pages in category")
+
+    local_files = {}
+    for p in WIKI_DIR.iterdir():
+        if p.is_file() and p.suffix == ".wiki":
+            local_files[filename_to_title(p.name)] = p
+    print(f"Local: {len(local_files)} .wiki files\n")
+
+    pulled = pushed = pushed_new = skipped = conflicts = errors = 0
+    edits_performed = 0
+
+    # Pass 1: pages currently in the wiki category.
+    for title, (wiki_revid, wiki_text) in wiki_pages.items():
+        local_path = WIKI_DIR / title_to_filename(title)
+        entry = state.get(title) or {}
+        base_revid = entry.get("revid")
+        base_sha = entry.get("sha")
+        wiki_sha = sha1_text(wiki_text)
+
+        if not local_path.exists():
+            if not args.apply:
+                print(f"[DRY] PULL new: {title}")
+                pulled += 1
+                continue
+            try:
+                local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+                pulled += 1
+                print(f"PULL  {title}  (rev {wiki_revid})")
+            except Exception as e:
+                errors += 1
+                print(f"ERROR writing {title}: {e}")
+            continue
+
+        try:
+            local_text = local_path.read_text(encoding="utf-8")
+        except Exception as e:
+            errors += 1
+            print(f"ERROR reading {title}: {e}")
+            continue
+        local_sha = sha1_text(local_text)
+
+        if local_sha == wiki_sha:
+            if base_revid != wiki_revid or base_sha != wiki_sha:
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+            continue
+
+        wiki_changed = base_revid != wiki_revid
+        local_changed = base_sha is None or local_sha != base_sha
+
+        if wiki_changed and not local_changed:
+            if not args.apply:
+                print(f"[DRY] PULL updated: {title}  ({base_revid} -> {wiki_revid})")
+                pulled += 1
+                continue
+            try:
+                local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+                pulled += 1
+                print(f"PULL  {title}  ({base_revid} -> {wiki_revid})")
+            except Exception as e:
+                errors += 1
+                print(f"ERROR writing {title}: {e}")
+            continue
+
+        if local_changed and not wiki_changed:
+            if edits_performed >= args.max_edits:
+                skipped += 1
+                continue
+            if not args.apply:
+                print(f"[DRY] PUSH: {title}")
+                pushed += 1
+                continue
+            try:
+                page = site.pages[title]
+                result = page.save(
+                    local_text,
+                    summary=f"Sync from repo miraheze_unique/ {args.run_tag}",
+                )
+                new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or wiki_revid
+                state[title] = {"revid": new_revid, "sha": local_sha}
+                pushed += 1
+                edits_performed += 1
+                print(f"PUSH  {title}  (new rev {new_revid})")
+                time.sleep(THROTTLE)
+            except Exception as e:
+                errors += 1
+                print(f"ERROR saving {title}: {e}")
+            continue
+
+        # Both sides changed. Repo wins.
+        conflicts += 1
+        if edits_performed >= args.max_edits:
+            skipped += 1
+            print(f"CONFLICT (repo wins): {title}  (wiki {base_revid} -> {wiki_revid}) - deferred, edit limit reached")
+            continue
+        if not args.apply:
+            print(f"[DRY] PUSH (conflict, repo wins): {title}")
+            pushed += 1
+            continue
+        try:
+            page = site.pages[title]
+            result = page.save(
+                local_text,
+                summary=f"Sync from repo miraheze_unique/ (overwriting divergent wiki edit; repo is source of truth) {args.run_tag}",
+            )
+            new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or wiki_revid
+            state[title] = {"revid": new_revid, "sha": local_sha}
+            pushed += 1
+            edits_performed += 1
+            print(f"PUSH  {title}  (conflict, repo wins; wiki {base_revid} -> {wiki_revid} overwritten, new rev {new_revid})")
+            time.sleep(THROTTLE)
+        except Exception as e:
+            errors += 1
+            print(f"ERROR saving {title}: {e}")
+
+    # Pass 2: local files not in the wiki category. Push if the file
+    # carries the category tag (treat as new content), else delete the
+    # local file (wiki is the source of truth for membership, matching
+    # sync_git_synced_pages.py semantics).
+    orphans = sorted(set(local_files) - set(wiki_pages))
+    for title in orphans:
+        local_path = local_files[title]
+        try:
+            local_text = local_path.read_text(encoding="utf-8")
+        except Exception as e:
+            errors += 1
+            print(f"ERROR reading orphan {title}: {e}")
+            continue
+
+        cat_in_local = bool(CAT_RE.search(local_text))
+        local_sha = sha1_text(local_text)
+
+        if cat_in_local:
+            # Repo wants this page in the category. Push local content;
+            # creates the wiki page if missing or updates if existing
+            # but uncategorised. The category tag is in the local
+            # wikitext itself, so a successful push lands the page in
+            # the category on miraheze too.
+            if edits_performed >= args.max_edits:
+                skipped += 1
+                continue
+            if not args.apply:
+                print(f"[DRY] PUSH (repo-only, has category): {title}")
+                pushed_new += 1
+                continue
+            try:
+                page = site.pages[title]
+                result = page.save(
+                    local_text,
+                    summary=f"Sync from repo miraheze_unique/ (seeding into [[Category:{CATEGORY}]]) {args.run_tag}",
+                )
+                new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title)
+                state[title] = {"revid": new_revid, "sha": local_sha}
+                pushed_new += 1
+                edits_performed += 1
+                print(f"PUSH-NEW  {title}  (new rev {new_revid})")
+                time.sleep(THROTTLE)
+            except Exception as e:
+                errors += 1
+                print(f"ERROR pushing new {title}: {e}")
+            continue
+
+        # Local has no category tag and the wiki dropped it from the
+        # category — delete the local file. Recoverable from git history.
+        if not args.apply:
+            print(f"[DRY] DELETE local (no category in either side): {title}")
+            continue
+        try:
+            local_path.unlink()
+            state.pop(title, None)
+            print(f"DELETE  {title}  (no longer tracked)")
+        except Exception as e:
+            errors += 1
+            print(f"ERROR deleting {title}: {e}")
+
+    for title in list(state.keys()):
+        if title not in wiki_pages and title not in local_files:
+            state.pop(title, None)
+
+    if args.apply:
+        save_state(STATE_FILE, state)
+
+    print(f"\n{'=' * 60}")
+    print(f"Pulled (wiki -> repo):           {pulled}")
+    print(f"Pushed (repo -> wiki, existing): {pushed}")
+    print(f"Pushed (repo -> wiki, new):      {pushed_new}")
+    print(f"Skipped (edit limit):            {skipped}")
+    print(f"Conflicts (repo wins):           {conflicts}")
+    print(f"Errors:                          {errors}")
+
+
+if __name__ == "__main__":
+    main()
