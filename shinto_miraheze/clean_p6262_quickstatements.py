@@ -6,9 +6,11 @@ Reads [[QuickStatements/P6262]] on shintowiki and bulk-checks all QS lines
 against Wikidata using SPARQL. If a Wikidata item already has the correct
 P6262 (Fandom article ID) value, the line is removed from the page.
 
-Mirror of clean_p11250_quickstatements.py — same shape, swapped property
-and value separator (P6262 uses ``shinto/Title``, P11250 uses
-``shinto:Title``). See that script for the design rationale.
+Mirror of clean_p11250_quickstatements.py — same shape, only the
+property differs (P6262 vs P11250). Both use the same colon-separated
+value form ``shinto:Title``; the property itself is what discriminates
+the Fandom link from the Miraheze one. See clean_p11250_quickstatements
+for the design rationale.
 
 Default mode is dry-run. Use --apply to actually edit the wiki page.
 """
@@ -39,7 +41,7 @@ QS_PAGE_TITLE = "QuickStatements/P6262"
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
 FANDOM_SUBDOMAIN = "shinto"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"' + re.escape(FANDOM_SUBDOMAIN) + r'/(.+)"$')
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"' + re.escape(FANDOM_SUBDOMAIN) + r':(.+)"$')
 
 QS_PAGE_HEADER = """\
 QuickStatements for syncing [https://www.wikidata.org/wiki/Property:P6262 P6262] (Fandom article ID) to Wikidata.
@@ -130,7 +132,7 @@ def main():
     for line in existing_text.split("\n"):
         m = QS_LINE_RE.match(line.strip())
         if m:
-            qs_entries[m.group(1)] = f"{FANDOM_SUBDOMAIN}/{m.group(2)}"
+            qs_entries[m.group(1)] = f"{FANDOM_SUBDOMAIN}:{m.group(2)}"
 
     print(f"Found {len(qs_entries)} QS lines on [[{QS_PAGE_TITLE}]]")
     if not qs_entries:

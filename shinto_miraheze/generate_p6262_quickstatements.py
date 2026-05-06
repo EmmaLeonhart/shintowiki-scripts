@@ -24,9 +24,9 @@ For each (title, qid) in the shared state:
     and ``Category:`` only.
   * Batch-query Wikidata (wbgetentities, 50 QIDs per call) for any
     existing P6262 values.
-  * If ``shinto/<title>`` is already among the P6262 values, skip the
+  * If ``shinto:<title>`` is already among the P6262 values, skip the
     line.
-  * Otherwise emit ``Qxxx|P6262|"shinto/<title>"``.
+  * Otherwise emit ``Qxxx|P6262|"shinto:<title>"``.
 
 Cleanup pass: any line currently on [[QuickStatements/P6262]] whose QID
 already has the correct P6262 on Wikidata is removed, so the page
@@ -74,15 +74,15 @@ ERROR_LOG = os.path.join(os.path.dirname(__file__), "error.log")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(SCRIPT_DIR, "orchestrators", "duplicate_qids.state")
 
-# P6262 stores values as "<subdomain>/<page title>" — separator is a
-# slash, mirroring the Fandom URL path. Both Miraheze (shinto.miraheze.org)
-# and Fandom (shinto.fandom.com) coincidentally use "shinto" as the
-# subdomain, so the prefix string is the same; only the separator
-# differs from P11250 ("shinto:..." vs "shinto/...").
+# P6262 stores values as "<subdomain>:<page title>" — colon separator,
+# matching the same convention P11250 uses on Miraheze. Both wikis
+# (shinto.miraheze.org, shinto.fandom.com) use "shinto" as subdomain,
+# so the value strings look identical between properties; the
+# discriminator is the property itself (P11250 vs P6262).
 FANDOM_SUBDOMAIN = "shinto"
 
-# Match QS lines like: Q12345|P6262|"shinto/Page Name"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"' + re.escape(FANDOM_SUBDOMAIN) + r'/(.+)"$')
+# Match QS lines like: Q12345|P6262|"shinto:Page Name"
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"' + re.escape(FANDOM_SUBDOMAIN) + r':(.+)"$')
 
 # Same blocklist as P11250 — mainspace + Category: only.
 SKIP_PREFIXES = ("Template:",)
@@ -195,16 +195,16 @@ def qs_escape(value: str) -> str:
 def fandom_value(title: str) -> str:
     """Return the P6262 value for a Miraheze page title. Pages mirror
     1:1 onto shinto.fandom.com under the same title."""
-    return f"{FANDOM_SUBDOMAIN}/{title}"
+    return f"{FANDOM_SUBDOMAIN}:{title}"
 
 
 def parse_qs_page(text: str) -> dict[str, str]:
-    """Return {qid: "shinto/Title"} for every QS line on the page."""
+    """Return {qid: "shinto:Title"} for every QS line on the page."""
     existing = {}
     for line in text.split("\n"):
         m = QS_LINE_RE.match(line.strip())
         if m:
-            existing[m.group(1)] = f"{FANDOM_SUBDOMAIN}/{m.group(2)}"
+            existing[m.group(1)] = f"{FANDOM_SUBDOMAIN}:{m.group(2)}"
     return existing
 
 
