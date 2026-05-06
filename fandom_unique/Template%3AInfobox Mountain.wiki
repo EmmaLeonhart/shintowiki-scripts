@@ -1,0 +1,271 @@
+{{Infobox
+| bodyclass     = vcard
+| child         = {{{child|}}}
+| subbox        = {{{subbox|}}}
+| above         = {{#if:{{{name|}}}|{{{name}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}}
+| aboveclass    = fn org
+| autoheaders   = y
+| abovestyle    = background-color: #E7DCC3;color:#000;
+| headerstyle   = background-color: #E7DCC3;color:#000;
+| imagestyle    = padding: 0.3em 0.2em 0.2em 0.2em;
+| captionstyle  = padding: 0.2em 0em;
+| bodystyle     = width:24.5em; line-height:1.5em;
+
+| subheaderclass= nickname
+| subheader     = {{{other_name|}}}
+
+| image         = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|1=P18|2={{{photo|}}}|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}||size={{if empty|{{{photo_width|}}}|{{{photo_size|}}}}}|upright={{{photo_upright|}}}|sizedefault=272px|maxsize=288px|alt={{{photo_alt|}}}}}
+| caption       = {{#if:{{{photo|}}}|{{{photo_caption|}}}|{{#if:{{#invoke:WikidataIB|getValue|1=P18|2=|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}|{{#invoke:WikidataIB|getValue|1=P18|2=|name=caption|qid={{{qid|}}}|qual=P2096|qualsonly=true|rank=best|maxvals=1|ps=2}}}}}}
+
+| {{#if:{{#invoke:WikidataIB|getValue|1=P18|2={{{photo|}}}|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}|data36|data1}} = {{#if:{{{map|}}}
+             | <div style="padding:0.2em 0.2em {{#if:{{{map_caption|}}}{{{location|}}}|0.5em|0.2em}} 0.2em;">{{location map|{{{map}}}
+                 | border = infobox | float = center
+                 | alt = {{{map_alt|}}}
+                 | default_width = 272
+                 | max_width = 288
+                 | width = {{if empty|{{{map_width|}}}|{{{map_size|}}} }}
+                 | caption = {{#switch:{{{map_caption|}}}|none=|#default={{if empty|{{{map_caption|}}}|{{{location|}}} }} }}
+                 | mark = Red triangle with thick white border.svg
+                 | marksize = 16
+                 | relief = {{#ifeq:{{{map_relief|{{{relief|}}}}}}|0||1}}
+                 | label = {{if empty|{{{label|}}}|{{{name|}}}}}
+                 | position ={{{label_position|}}}
+                 | coordinates = {{if empty|{{{range_coordinates|}}}|{{{coordinates|}}}|{{{coords|}}}}} }}
+            </div>
+             }}
+
+| {{#if:{{#invoke:WikidataIB|getValue|1=P18|2={{{photo|}}}|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}|data37|data2}} = {{#if:{{{map_image|{{{image_map|}}}}}} 
+                 |<div style="padding:0.2em 0.2em {{#if:{{{map_image_caption|{{{image_map_caption|{{{map_caption|}}}}}}}}}{{{location|}}}|0.5em|0.2em}} 0.2em;">{{#invoke:InfoboxImage
+                     |InfoboxImage
+                     |image={{{map_image|{{{image_map|}}}}}}
+                     |size={{if empty|{{{map_size|}}}|{{{mapsize|}}}|{{{map_width|}}}}}
+                     |upright={{{map_upright|}}}
+                     |sizedefault=272px
+                     |maxsize=288px 
+                     |alt={{{map_alt|}}}}}{{#switch:{{{map_image_caption|{{{image_map_caption|{{{map_caption|}}}}}}}}}|none|=|#default=<div>{{{map_image_caption|{{{image_map_caption|{{{map_caption|}}}}}}}}}</div>
+                  }}</div>
+             }}
+
+| {{#if:{{#invoke:WikidataIB|getValue|1=P18|2={{{photo|}}}|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}|data38|data3}} = {{#if:{{Yesno|{{{mapframe|}}}|no=|blank={{#if:{{{map|}}}{{{map_image|}}}{{{image_map|}}}{{{map_relief|}}}{{{relief|}}}||yes}}}}|{{Infobox mapframe
+                     |coord={{if empty|{{{mapframe-coordinates|}}}|{{{mapframe-coord|}}}|{{{range_coordinates|}}}|{{{range_coords|}}}|{{{coordinates|}}}|{{{coords|}}}}}
+                     |frame-width={{{mapframe-frame-width|250}}}
+                     |wikidata={{#if:{{{mapframe-coordinates|}}}{{{mapframe-coord|}}}{{{range_coordinates|}}}{{{range_coords|}}}{{{coordinates|}}}{{{coords|}}}|{{{mapframe-wikidata|}}}|yes}}
+                     |marker={{{mapframe-marker|mountain}}}
+                     |type={{{mapframe-type|mountain}}}
+                     |length_km={{{length_km|}}}|length_mi={{{length_mi|}}}
+                     |width_km={{{width_km|}}}|width_mi={{{width_mi|}}}
+                     |area_mi2={{{area_mi2|}}}|area_km2={{{area_km2|}}}
+                     |zoom={{{mapframe-zoom|}}}
+                     |id={{{qid|}}}
+             }} }}
+| {{#if:{{#invoke:WikidataIB|getValue|1=P18|2={{{photo|}}}|name=photo|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|onlysourced={{{onlysourced|false}}}|maxvals=1|noicon=true}}|data39|data4}} = {{#invoke:Infobox mapframe
+                     |autocaption
+                     |onByDefault={{#if:{{{map|}}}{{{map_image|}}}{{{image_map|}}}{{{map_relief|}}}{{{relief|}}}|no|yes}}
+             }}
+
+| header5       = Highest&nbsp;point
+
+| label6        = Peak
+| data6         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2044|2={{{highest|}}}|name=highest|qid={{{qid|}}}|qual=P2561|qualsonly=Y|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|noicon=false}}|{{If last display both|,&#32;|{{#invoke:WikidataIB|getValue|1=P2044|2={{{highest_location|}}}|name=highest_location|qid={{{qid|}}}|qual=P276|qualsonly=Y|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|qshortname=true|noicon=false}}}}}}
+
+| label7        = [[Summit|Elevation]]
+| data7         = {{If empty|{{{elevation|}}}|{{#if:{{{elevation_m|}}}{{{elevation_ft|}}}|{{Convinfobox|{{{elevation_m|}}}|m|{{{elevation_ft|}}}|ft}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2044|2=|name=elevation|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|ALL}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|maxvals=1|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2044}}}}}}}}{{{elevation_ref|}}}{{If last display both|<br/>|{{#invoke:WikidataIB|getValue|1=P2044|2={{{elevation_system|}}}|name=elevation_system|qid={{{qid|}}}|qual=P459|qualsonly=Y|fetchwikidata={{{fetchwikidata|ALL}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|qshortname=true|maxvals=1|noicon=false}}}}
+
+| label8        = [[Topographic prominence|Prominence]]
+| data8         = {{If empty|{{{prominence|}}}|{{#if:{{{prominence_m|}}}{{{prominence_ft|}}}|{{Convinfobox|{{{prominence_m|}}}|m|{{{prominence_ft|}}}|ft}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2660|2=|name=prominence|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|ALL}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|maxvals=1|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2660}}}}}}}}{{#if:{{{prominence_ref|}}}|{{{prominence_ref|}}}}}
+
+| label9        = [[Topographic prominence#Prominence parentage|Parent peak]]
+| data9         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P3137|2={{{parent_peak|}}}|name=parent_peak|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|shortname=true|maxvals=1|noicon=false|replacetext={{#ifeq:{{{fetchwikidata|}}}|ALL||}}}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P3137}}}}}}
+
+| label10        = [[Topographic isolation|Isolation]]
+| data10         = {{If empty|{{{isolation|}}}|{{#if:{{{isolation_km|}}}{{{isolation_mi|}}}|{{Convinfobox|{{{isolation_km|}}}|km|{{{isolation_mi|}}}|mi}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2659|2=|name=isolation|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|ALL}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|maxvals=1|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2659}}}}}}}}{{If last display both|<br/>to&nbsp;|{{#invoke:WikidataIB|getValue|1=P2659|2={{{isolation_parent|}}}|name=isolation_parent|qid={{{qid|}}}|qual=P2210|qualsonly=Y|fetchwikidata={{{fetchwikidata|ALL}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|qshortname=true|maxvals=1|noicon=false}}}}{{#if:{{{isolation_ref|}}}|{{{isolation_ref|}}}}}
+
+| class11        = category
+| label11        = [[Lists of mountains|Listing]]
+| data11         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P361|2={{{listing|}}}|name=listing|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|qshortname=true|sorted=true|noicon=false|list=ubl|replacetext={{#ifeq:{{{fetchwikidata|}}}|ALL||}}}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P3137}}}}}}
+
+| label12        = [[Geographic coordinate system|Coordinates]]
+| data12         = {{#if:{{{coordinates|}}}{{{coords|}}}|{{#invoke:Coordinates|coordinsert|{{if empty|{{{coordinates|}}}|{{{coords|}}}}}|type:mountain|{{#if:{{{range_coordinates|}}}||scale:{{Map scale|type=mountain|length_km={{{length_km|}}}|length_mi={{{length_mi|}}}|width_km={{{width_km|}}}|width_mi={{{width_mi|}}}|area_mi2={{{area_mi2|}}}|area_km2={{{area_km2|}}}}}}}}}{{if empty|{{{coordinates_ref|}}}|{{{coords_ref|}}} }} }}
+
+| header20      = Dimensions
+
+| label21       = Length
+| data21        = {{If first display both|{{If empty|{{{length|}}}|{{#if:{{{length_km|}}}{{{length_mi|}}}|{{Convinfobox|{{{length_km|}}}|km|{{{length_mi|}}}|mi}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2043|2=|name=length|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2043}}}}}}}}|{{If last display both|&#32;|{{If empty|{{{length_orientation|}}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getQualifierIDs|1=P2043|2=|qid={{{qid|}}}|fwd=ALL|osd=n|qlist=P7469}}|pattern=Q36477|nomatch=}}|Q36477|(NS)|}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getQualifierIDs|1=P2043|2=|qid={{{qid|}}}|fwd=ALL|osd=n|qlist=P7469}}|pattern=Q34027|nomatch=}}|Q34027|(EW)|}}}}}}{{{length_ref|}}}}}
+
+| label22       = Width
+| data22        = {{If first display both|{{If empty|{{{width|}}}|{{#if:{{{width_km|}}}{{{width_mi|}}}|{{Convinfobox|{{{width_km|}}}|km|{{{width_mi|}}}|mi}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2049|2=|name=width|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2049}}}}}}}}|{{If last display both|&#32;|{{If empty|{{{width_orientation|}}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getQualifierIDs|1=P2049|2=|qid={{{qid|}}}|fwd=ALL|osd=n|qlist=P7469}}|pattern=Q36477|nomatch=}}|Q36477|(NS)|}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getQualifierIDs|1=P2049|2=|qid={{{qid|}}}|fwd=ALL|osd=n|qlist=P7469}}|pattern=Q34027|nomatch=}}|Q34027|(EW)|}}}}}}{{{width_ref|}}}}}
+
+| label23       = Area
+| data23        = {{If first display both|{{If empty|{{{area|}}}|{{#if:{{{area_km2|}}}{{{area_mi2|}}}|{{Convinfobox|{{{area_km2|}}}|km2|{{{area_mi2|}}}|mi2}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2046|2=|name=area|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2046}}}}}}}}|{{{area_ref|}}}}}
+
+| label24       = Volume
+| data24        = {{If first display both|{{If empty|{{{volume|}}}|{{#if:{{{volume_km3|}}}{{{volume_mi3|}}}|{{Convinfobox|{{{volume_km3|}}}|km3|{{{volume_mi3|}}}|mi3}}|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2234|2=|name=volume|qid={{{qid|}}}|fetchwikidata={{{fetchwikidata|NONE}}}|suppressfields={{{suppressfields|}}}|onlysourced=true|unitabbr=true|convert=true|noicon=false}}|{{#ifeq:{{{refs|no}}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2234}}}}}}}}|{{{volume_ref|}}}}}
+
+| header25      = Naming
+
+| label26       = [[Etymology]]
+| data26        = {{{etymology|}}}
+
+| class27       = nickname
+| label27       = [[Nickname|Nickname{{pluralize from text|{{{nickname|}}}|likely=(s)|plural=s}}]]
+| data27        = {{{nickname|}}}
+
+| class28       = nickname
+| label28       = Native name
+| data28        = {{native name checker|{{{native_name|}}}}}
+
+| label29       = English translation
+| data29        = {{{translation|}}}
+
+| label30       = Language of name
+| data30        = {{#if:{{{native_name|}}}||{{#if:{{{language|}}}|{{{language}}}|{{#if:{{{native_name_lang|}}}|{{ISO 639 name|{{{native_name_lang|}}}|link=yes}}}}}}}}
+
+| label31       = Pronunciation
+| data31        = {{{pronunciation|}}}
+
+| label32       = Defining authority
+| data32        = {{{authority|}}}
+
+| header35      = Geography
+
+| class40       = label
+| label40       = Location
+| data40        = {{#if:{{{map_caption|}}}|{{{location|}}}|{{#if:{{{photo|}}}|{{#if:{{{map|}}}||{{{location|}}} }}|{{{location|}}} }} }}
+
+| class41       = label
+| label41       = {{If empty|{{{country_type|}}}|{{pluralize from text|{{{country|}}}|singular=Country|plural=Countries}}}}
+| data41        = {{{country|}}}
+
+| class42       = label
+| label42       = {{If empty|{{{subdivision1_type|}}}|{{{state_type|}}}|State{{pluralize from text|{{if empty|{{{subdivision1|}}}|{{{state|}}}}}|likely=(s)|plural=s}}}}
+| data42        = {{if empty|{{{subdivision1|}}}|{{{state|}}}}}
+
+| class43       = label
+| label43       = {{If empty|{{{subdivision2_type|}}}|{{{region_type|}}}|Region{{pluralize from text|{{if empty|{{{subdivision2|}}}|{{{region|}}}}}|likely=(s)|plural=s}}}}
+| data43        = {{if empty|{{{subdivision2|}}}|{{{region|}}}}}
+
+| class44       = label
+| label44       = {{If empty|{{{subdivision3_type|}}}|{{{district_type|}}}|District{{pluralize from text|{{if empty|{{{subdivision3|}}}|{{{district|}}}}}|likely=(s)|plural=s}}}}
+| data44        = {{if empty|{{{subdivision3|}}}|{{{district|}}}}}
+
+| label45       = {{If empty|{{{subdivision4_type|}}}|{{{part_type|}}}|Subdivision{{pluralize from text|{{if empty|{{{subdivision4|}}}|{{{part|}}}}}|likely=(s)|plural=s}}}}
+| data45        = {{if empty|{{{subdivision4|}}}|{{{part|}}}}}
+
+| label46       = {{If empty|{{{settlement_type|}}}|Settlement{{pluralize from text|{{{settlement|}}}|likely=(s)|plural=s}}}}
+| data46        = {{{settlement|}}}
+
+| label47       = [[Geographic coordinate system|Range coordinates]]
+| data47        = {{#if:{{{range_coordinates|}}}{{{range_coords|}}}|{{#invoke:Coordinates|coordinsert|{{if empty|{{{range_coordinates|}}}|{{{range_coords|}}}}}|type:mountain|scale:{{Map scale|type=mountain|length_km={{{length_km|}}}|length_mi={{{length_mi|}}}|width_km={{{width_km|}}}|width_mi={{{width_mi|}}}|area_mi2={{{area_mi2|}}}|area_km2={{{area_km2|}}}}}}}{{{range_coordinates_ref|}}}}}
+
+| class48       = category
+| label48       = [[Mountain range|{{nowrap|Parent range}}]]
+| data48        = {{if empty|{{{parent|}}}|{{{range|}}}}}
+
+| label49       = Borders on
+| data49        = {{if empty|{{{borders_on|}}}|{{{border|}}}}}
+
+| label50       = [[Ordnance Survey National Grid|OS grid]]
+| data50        = {{#if:{{{grid_ref_UK|}}}|{{gbm4ibx|{{{grid_ref_UK|}}}|name={{{name|{{PAGENAMEBASE}}}}} }}{{{grid_ref_UK_ref|}}}}}
+
+| label51       = [[Irish grid reference system|OSI/OSNI grid]]
+| data51        = {{#if:{{{grid_ref_Ireland|}}}|{{iem4ibx|{{{grid_ref_Ireland|}}}|name={{{name|{{PAGENAMEBASE}}}}} }}{{{grid_ref_Ireland_ref|}}}}}
+
+| label52       = [[Topographic map|Topo map{{pluralize from text|{{if empty|{{{topo|}}}|{{{topo_map|}}} }}|likely=(s)|plural=s}}]]
+| data52        = {{#if:{{{topo_maker|}}}|{{{topo_maker}}}&nbsp;}}{{if empty|{{{topo|}}}|{{{topo_map|}}} }}
+
+| label53       = [[Biome]]
+| data53        = {{{biome|}}}
+
+| header62      = Geology
+
+| label63       = [[Mountain formation|Formed by]]
+| data63        = {{{formed_by|}}}
+
+| label64       = [[Orogeny|{{pluralize from text|{{{orogeny|}}}|singular=Orogeny|plural=Orogenies}}]]
+| data64        = {{{orogeny|}}}
+
+| label65       = [[Geological time scale|Rock age{{pluralize from text|{{if empty|{{{period|}}}|{{{age|}}}}}|likely=(s)|plural=s}}]]
+| data65        = {{if empty|{{{period|}}}|{{{age|}}}}}
+
+| label66       = [[List of mountain types|Mountain type{{pluralize from text|{{if empty|{{{mountain_type|}}}|{{{type|}}}}}|likely=(s)|plural=s}}]]
+| data66        = {{if empty|{{{mountain_type|}}}|{{{type|}}}}}
+
+| label67       = [[List of rock types|Rock type{{pluralize from text|{{if empty|{{{geology|}}}|{{{rock|}}}}}|likely=(s)|plural=s}}]]      
+| data67        = {{if empty|{{{geology|}}}|{{{rock|}}}}}
+
+| label68       = {{#if:{{{volcanic_region|}}}|Volcanic&nbsp;region
+                     | {{#if:{{{volcanic_arc|}}}|[[Volcanic arc]]
+                          | {{#if:{{{volcanic_belt|}}}|[[Volcanic belt]]
+                               | {{#if:{{{volcanic_field|}}}|[[Volcanic field]]
+                                   | {{#if:{{{volcanic_arc/belt|}}}|Volcanic [[Volcanic arc|arc]]/[[Volcanic belt|belt]]}}}}}}}}}}
+| data68        = {{If empty|{{{volcanic_region|}}}|{{{volcanic_arc|}}}|{{{volcanic_belt|}}}|{{{volcanic_field|}}}|{{{volcanic_arc/belt|}}}}}
+
+| label69       = [[Types of volcanic eruptions|Last eruption]]
+| data69        = {{{last_eruption|}}}
+
+| header70      = Climbing
+
+| label71       = [[First ascent]]
+| data71        = {{{first_ascent|}}}
+
+| label72       = [[Normal route|{{nowrap|Easiest route}}]]
+| data72        = {{{easiest_route|}}}
+
+| label73       = [[Normal route]]
+| data73        = {{{normal_route|}}}
+
+| label74       = Access
+| data74        = {{{access|}}}
+
+| header75      = _BLANK_
+
+| data76        = {{{embedded|}}}
+
+| data77        = {{{module|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox mountain]] with unknown parameter "_VALUE_"|ignoreblank=y| access|age|area|area_km2|area_mi2|area_ref|authority|biome|border|borders_on|child|coordinates|coordinates_ref|coords|coords_ref|country|country_type|district|district_type|easiest_route|elevation|elevation_ft|elevation_m|elevation_ref|elevation_system|embedded|etymology|fetchwikidata|first_ascent|formed_by|geology|grid_ref_Ireland|grid_ref_Ireland_ref|grid_ref_UK|grid_ref_UK_ref|highest|highest_location|image_map|image_map_caption|isolation|isolation_km|isolation_mi|isolation_parent|isolation_ref|label|label_position|language|last_eruption|length|length_km|length_mi|length_orientation|length_ref|listing|location|map|map_alt|map_caption|map_image|map_image_caption|map_relief|map_size|map_upright|map_width|mapframe|mapframe-area_km2|mapframe-area_mi2|mapframe-caption|mapframe-coord|mapframe-coordinates|mapframe-custom|mapframe-frame-coord|mapframe-frame-coordinates|mapframe-frame-height|mapframe-frame-width|mapframe-geomask|mapframe-geomask-fill|mapframe-geomask-fill-opacity|mapframe-geomask-stroke-color|mapframe-geomask-stroke-colour|mapframe-geomask-stroke-width|mapframe-height|mapframe-id|mapframe-length_km|mapframe-length_mi|mapframe-marker|mapframe-marker-color|mapframe-marker-colour|mapframe-point|mapframe-shape|mapframe-shape-fill|mapframe-shape-fill-opacity|mapframe-stroke-color|mapframe-stroke-colour|mapframe-stroke-width|mapframe-switcher|mapframe-width|mapframe-wikidata|mapframe-zoom|mapsize|module|mountain_type|name|native_name|native_name_lang|nickname|nocat_wdimage|normal_route|orogeny|other_name|parent|parent_peak|part|part_type|period|photo|photo_alt|photo_caption|photo_size|photo_upright|prominence|prominence_ft|prominence_m|prominence_ref|pronunciation|qid|range|range_coordinates|range_coordinates_ref|range_coords|refs|region|region_type|relief|rock|settlement|settlement_type|sourcedonly|state|state_type|subdivision1|subdivision1_type|subdivision2|subdivision2_type|subdivision3|subdivision3_type|subdivision4|subdivision4_type|suppressfields|topo|topo_maker|topo_map|translation|type|volcanic_arc|volcanic_arc/belt|volcanic_belt|volcanic_field|volcanic_region|volume|volume_km3|volume_mi3|volume_ref|width|width_km|width_mi|width_orientation|width_ref
+}}{{main other|{{#if:{{{region|}}}|{{#ifeq:{{#invoke:string|replace|{{{region}}}|^[A-Z0-9/\-]*$|MATCH|plain=false}}|MATCH|}}}}
+}}{{#invoke:Check for clobbered parameters|check
+| template = [[Template:Infobox mountain|infobox mountain]]
+| cat = {{main other|Category:Pages using infobox mountain with conflicting parameters}}
+| photo_width; photo_size
+| map_size; mapsize; map_width
+| map_relief; relief
+| map_image; image_map
+| map_image_caption; image_map_caption
+| elevation; elevation_m; elevation_ft
+| prominence; prominence_m; prominence_ft
+| isolation; isolation_km; isolation_mi
+| coordinates; coords
+| coordinates_ref; coords_ref
+| length; length_km; length_mi
+| width; width_km; width_mi
+| area; area_km2; area_mi2
+| volume; volume_km3; volume_mi3
+| subdivision1; state
+| subdivision2; region
+| subdivision3; district
+| subdivision4; part
+| range_coordinates; range_coords
+| parent; range
+| borders_on; border
+| topo; topo_map
+| period; age
+| mountain_type; type
+| geology; rock
+| volcanic_region; volcanic_arc; volcanic_belt; volcanic_field; volcanic_arc/belt
+}}{{Wikidata image |1={{{photo|}}} |2={{{nocat_wdimage|{{#ifeq:ALL|{{uc:{{{fetchwikidata|}}}}}|1|}}}}} 
+}}{{main other|
+{{#if:{{{language|}}}|[[Category:Pages using infobox mountain with language parameter|{{#invoke:string|replace|{{{language}}}|[^A-Za-z0-9]||plain=false}} ]]}}
+}}<noinclude>
+{{documentation}}
+
+[[Category:Wikidata value to be checked for Infobox mountain]]
+[[Category:Wikidata value to be checked for Infobox mountain]]
+[[Category:Pages using infobox mountain with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox mountain with unknown parameters|ρ]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

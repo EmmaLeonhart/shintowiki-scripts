@@ -1,0 +1,451 @@
+{{Documentation subpage}}
+{{Uses TemplateStyles|Template:Infobox hieroglyphs/style.css}}
+
+== Usage ==
+
+To display the infobox in articles, please copy the following source text into the start of the article:
+
+<syntaxhighlight lang="wikitext">
+{{Infobox hieroglyphs
+|name = 
+|name transcription = 
+|name explanation = 
+}}
+</syntaxhighlight>
+
+== List of parameters ==
+
+{| class="wikitable"
+!Variable
+!width="130" | Type
+!Explanation
+|-
+| '''position'''
+| optional
+| Position of the hieroglyph infobox, default is "right"
+|-
+| '''width'''
+| optional
+| Width of the hieroglyph infobox, default is "300"
+|-
+| '''title'''
+| optional
+| Name in of the header of the infobox, if not entered the article name + "in [[:en:Egyptian hieroglyphs|hieroglyphs]]" will be displayed.
+|-
+| '''expanded title'''
+| optional
+| Replaces the text „in [[:en:Egyptian hieroglyphs|hieroglyphs]]" by the entered text.
+|-
+| '''name'''
+| optional, but must be entered for all parameters, which begin with "name" 
+| Name of the subject in hieroglyphs
+|-
+| '''name in cartouche'''
+| optional
+| Switches on the display of cartouche, the parameters must  be entered in a preferred sequence, e.g.  "yes"
+|-
+| '''name cartouche symbol'''
+| optional
+| Places the entered hieroglyphs before the cartouche, if not cartouche will be displayed 
+|-
+| '''name in Serekh'''
+| optional
+| Switches on the display of Serekh, the parameters must  be entered in a preferred sequence, e.g.  "yes"
+|-
+| '''name Serekh symbol'''
+| optional
+| Places the entered hieroglyph symbol before the Serekh, if not the Serekh will be displayed 
+|-
+| '''name determinative'''
+| optional
+| Places the entered hieroglyphs after the cartouche or the Serekh.
+|-
+| '''name transcription'''
+| optional
+| Transcription of the hieroglyph name of the subject
+|-
+| '''name explanation'''
+| optional
+| Explanation of the name of the subject, also translation and/or English name, as well as possibly the place of discovery of the name
+|-
+| '''name unicode'''
+| optional
+| Unicode encoding of the hieroglyphs
+|-
+| '''name2''' to '''name10'''
+| optional, but must be entered for all parameters, which begin with name2 to name10 
+| Other names of the subject in hieroglyphs
+|-
+| '''name2 in cartouche''' to '''name10 in cartouche'''
+| optional
+| Switches on the display of cartouche for the corresponding other name, the parameters must  be entered in a preferred sequence, e. g.  „yes"
+|-
+| '''name2 cartouche symbol''' to '''name10 cartouche symbol'''
+| optional
+| Places the entered hieroglyphs before the cartouche, if not the cartouche will be displayed 
+|-
+| '''name2 in Serekh''' to '''name10 in Serekh'''
+| optional
+| Switches on the display of Serekh for the corresponding other name, the parameters must  be entered in a preferred sequence, e.g.  „yes"
+|-
+| '''name2 Serekh symbol''' to '''name10 Serekh symbol'''
+| optional
+| Places the entered hieroglyph symbol before the corresponding name in Serekh, if not the Serekh will be displayed 
+|-
+| '''name2 determinative''' to '''name10 determinative'''
+| optional
+| Places the entered hieroglyphs after the cartouche or the Serekh.
+|-
+| '''name2 transcription''' to '''name10 transcription'''
+| optional
+| Transcription of the corresponding other hieroglyph names of the subject
+|-
+| '''name2 explanation''' to '''name10 explanation'''
+| optional
+| Explanation of the corresponding other name of the subject, also translation and/or English name, as well as possibly of the place of discovery of the name
+|-
+| '''name2 unicode''' to '''name10 unicode'''
+| optional
+| Unicode encoding of the hieroglyphs
+|-
+| '''Greek'''
+| optional
+| The corresponding Greek form
+|-
+| '''Greek expanded'''
+| optional
+| additional text entries of the left side of the "Greek" line
+|-
+| '''Coptic'''
+| optional
+| The corresponding Coptic form
+|-
+| '''Coptic- Sahidic'''
+| optional
+| The corresponding Sahidic form
+|-
+| '''Coptic- Bohairic'''
+| optional
+| The corresponding Bohairic form
+|-
+| '''Coptic-Ancient Coptic '''
+| optional
+| The corresponding Ancient Coptic form
+|-
+| '''cuneiform'''
+| optional
+| The corresponding cuneiform form
+|-
+| '''Remarks'''
+| optional
+| For general remarks about the hieroglyphs
+|-
+| '''image1''' to '''image5'''
+|
+| optional images under the infobox 
+|-
+| '''image1 width''' to '''image5 width'''
+|
+| Entry of the width of the images from '''image1''' to '''image5''', defaults are <code>200px</code>
+|-
+| '''image1 description''' to '''image5 description'''
+|
+| Entry of an image description
+|}
+
+== Example ==
+
+{{infobox hieroglyphs
+|title = … foo
+|name = <hiero>Aa1-G43-I9-G43</hiero>
+|name transcription = Transcription ''(cursive)''
+|name explanation = Explanation, ''translation''
+|name2 = <hiero>< Aa1-G43-I9-G43 ></hiero>
+|name2 transcription = Transcription ''(cursive)''
+|name2 explanation = Explanation, ''translation''
+|name3 = <hiero>Aa1-G43-I9-G43</hiero>
+|name3 in cartouche = yes
+|name3 cartouche symbol = <hiero>G43</hiero>
+|name3 determinative = <hiero>wr-O24</hiero>
+|name3 transcription = Transcription ''(cursive)''
+|name3 explanation = Explanation, ''translation''
+|name4 = <hiero>Aa1-G43-I9-G43</hiero>
+|name4 in Serekh = yes
+|name4 Serekh symbol = <hiero>G43</hiero>
+|name4 determinative = <hiero>wr-O24</hiero>
+|name4 transcription = Transcription ''(cursive)''
+|name4 explanation = Explanation, ''translation''
+|remarks = Remarks
+|image1 =
+|image2 =
+|image2 width = 100px
+|image3 =
+|image3 description = test
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{infobox hieroglyphs
+|title = … mal
+|name = <hiero>Aa1-G43-I9-G43</hiero>
+|name transcription = Transcription ''(cursive)''
+|name explanation = Explanation, ''translation''
+|name2 = <hiero>< Aa1-G43-I9-G43 ></hiero>
+|name2 transcription = Transcription ''(cursive)''
+|name2 explanation = Explanation, ''translation''
+|name3 = <hiero>Aa1-G43-I9-G43</hiero>
+|name3 in cartouche = yes
+|name3 cartouche symbol = <hiero>G43</hiero>
+|name3 determinative = <hiero>wr-O24</hiero>
+|name3 transcription = Transcription ''(cursive)''
+|name3 explanation = Explanation, ''translation''
+|name4 = <hiero>Aa1-G43-I9-G43</hiero>
+|name4 in Serekh = yes
+|name4 Serekh symbol = <hiero>G43</hiero>
+|name4 determinative = <hiero>wr-O24</hiero>
+|name4 transcription = Transcription ''(cursive)''
+|name4 explanation = Explanation, ''translation''
+|remarks = Remarks
+|image1 =
+|image2 =
+|image2 width = 100px
+|image3 =
+|image3 description = test
+}}
+</syntaxhighlight>{{clear}}
+
+== Hieroglyphic Combinations ==
+Hieroglyphic combinations are divided into sets of a letter and a number in [[:en:Unicode|Unicode]]. Each hieroglyphic is provided with a letter and number set listed on the [https://www.unicode.org/charts/PDF/U13000.pdf Hieroglyphics Chart]. Example: A001 would be written in the Hieroglyphs Infobox as A1.
+
+==Template data==
+{{Template data header}}
+{{cot|title=Parameters (200+)|bg=#ccc}}
+<templatedata>
+{
+	"params": {
+		"width": {},
+		"BREITE": {},
+		"position": {},
+		"AUSRICHTUNG": {},
+		"title": {},
+		"TITEL": {},
+		"expanded title": {},
+		"TITEL-ERWEITERT": {},
+		"name": {},
+		"name in cartouche": {},
+		"NAME-IN-KARTUSCHE": {},
+		"name cartouche symbol": {},
+		"NAME-KARTUSCHE-SYMBOL": {},
+		"name determinative": {},
+		"NAME-DETERMINATIV": {},
+		"name transcription": {},
+		"NAME-TRANSKRIPTION": {},
+		"name explanation": {},
+		"NAME-ERKLÄRUNG": {},
+		"name in Serekh": {},
+		"NAME-IN-SERECH": {},
+		"name Serekh symbol": {},
+		"NAME-SERECH-SYMBOL": {},
+		"name unicode": {},
+		"name2": {},
+		"name2 in cartouche": {},
+		"NAME2-IN-KARTUSCHE": {},
+		"name2 cartouche symbol": {},
+		"NAME2-KARTUSCHE-SYMBOL": {},
+		"name2 determinative": {},
+		"NAME2-DETERMINATIV": {},
+		"name2 transcription": {},
+		"NAME2-TRANSKRIPTION": {},
+		"name2 explanation": {},
+		"NAME2-ERKLÄRUNG": {},
+		"name2 in Serekh": {},
+		"NAME2-IN-SERECH": {},
+		"name2 Serekh symbol": {},
+		"name2 unicode": {},
+		"name3": {},
+		"name3 in cartouche": {},
+		"NAME3-IN-KARTUSCHE": {},
+		"name3 cartouche symbol": {},
+		"NAME3-KARTUSCHE-SYMBOL": {},
+		"name3 determinative": {},
+		"NAME3-DETERMINATIV": {},
+		"name3 transcription": {},
+		"NAME3-TRANSKRIPTION": {},
+		"name3 explanation": {},
+		"NAME3-ERKLÄRUNG": {},
+		"name3 in Serekh": {},
+		"NAME3-IN-SERECH": {},
+		"name3 Serekh symbol": {},
+		"name3 unicode": {},
+		"name4": {},
+		"name4 in cartouche": {},
+		"NAME4-IN-KARTUSCHE": {},
+		"name4 cartouche symbol": {},
+		"NAME4-KARTUSCHE-SYMBOL": {},
+		"name4 determinative": {},
+		"NAME4-DETERMINATIV": {},
+		"name4 transcription": {},
+		"NAME4-TRANSKRIPTION": {},
+		"name4 explanation": {},
+		"NAME4-ERKLÄRUNG": {},
+		"name4 in Serekh": {},
+		"NAME4-IN-SERECH": {},
+		"name4 Serekh symbol": {},
+		"name4 unicode": {},
+		"name5": {},
+		"name5 in cartouche": {},
+		"NAME5-IN-KARTUSCHE": {},
+		"name5 cartouche symbol": {},
+		"NAME5-KARTUSCHE-SYMBOL": {},
+		"name5 determinative": {},
+		"NAME5-DETERMINATIV": {},
+		"name5 transcription": {},
+		"NAME5-TRANSKRIPTION": {},
+		"name5 explanation": {},
+		"NAME5-ERKLÄRUNG": {},
+		"name5 in Serekh": {},
+		"NAME5-IN-SERECH": {},
+		"name5 Serekh symbol": {},
+		"name5 unicode": {},
+		"name6": {},
+		"name6 in cartouche": {},
+		"NAME6-IN-KARTUSCHE": {},
+		"name6 cartouche symbol": {},
+		"NAME6-KARTUSCHE-SYMBOL": {},
+		"name6 determinative": {},
+		"NAME6-DETERMINATIV": {},
+		"name6 transcription": {},
+		"NAME6-TRANSKRIPTION": {},
+		"name6 explanation": {},
+		"NAME6-ERKLÄRUNG": {},
+		"name6 in Serekh": {},
+		"NAME6-IN-SERECH": {},
+		"name6 Serekh symbol": {},
+		"name6 unicode": {},
+		"name7": {},
+		"name7 in cartouche": {},
+		"NAME7-IN-KARTUSCHE": {},
+		"name7 cartouche symbol": {},
+		"NAME7-KARTUSCHE-SYMBOL": {},
+		"name7 determinative": {},
+		"NAME7-DETERMINATIV": {},
+		"name7 transcription": {},
+		"NAME7-TRANSKRIPTION": {},
+		"name7 explanation": {},
+		"NAME7-ERKLÄRUNG": {},
+		"name7 in Serekh": {},
+		"NAME7-IN-SERECH": {},
+		"name7 Serekh symbol": {},
+		"name7 unicode": {},
+		"name8": {},
+		"name8 in cartouche": {},
+		"NAME8-IN-KARTUSCHE": {},
+		"name8 cartouche symbol": {},
+		"NAME8-KARTUSCHE-SYMBOL": {},
+		"name8 determinative": {},
+		"NAME8-DETERMINATIV": {},
+		"name8 transcription": {},
+		"NAME8-TRANSKRIPTION": {},
+		"name8 explanation": {},
+		"NAME8-ERKLÄRUNG": {},
+		"name8 in Serekh": {},
+		"NAME8-IN-SERECH": {},
+		"name8 Serekh symbol": {},
+		"name8 unicode": {},
+		"name9": {},
+		"name9 in cartouche": {},
+		"NAME9-IN-KARTUSCHE": {},
+		"name9 cartouche symbol": {},
+		"NAME9-KARTUSCHE-SYMBOL": {},
+		"name9 determinative": {},
+		"NAME9-DETERMINATIV": {},
+		"name9 transcription": {},
+		"NAME9-TRANSKRIPTION": {},
+		"name9 explanation": {},
+		"NAME9-ERKLÄRUNG": {},
+		"name9 in Serekh": {},
+		"NAME9-IN-SERECH": {},
+		"name9 Serekh symbol": {},
+		"name9 unicode": {},
+		"name10": {},
+		"name10 in cartouche": {},
+		"NAME10-IN-KARTUSCHE": {},
+		"name10 cartouche symbol": {},
+		"NAME10-KARTUSCHE-SYMBOL": {},
+		"name10 determinative": {},
+		"NAME10-DETERMINATIV": {},
+		"name10 transcription": {},
+		"NAME10-TRANSKRIPTION": {},
+		"name10 explanation": {},
+		"NAME10-ERKLÄRUNG": {},
+		"name10 in Serekh": {},
+		"NAME10-IN-SERECH": {},
+		"name10 Serekh symbol": {},
+		"name10 unicode": {},
+		"remarks": {},
+		"ANMERKUNGEN": {},
+		"Greek expanded title": {},
+		"GRIECHISCH-ERWEITERT": {},
+		"Greek": {},
+		"GRIECHISCH": {},
+		"Coptic": {},
+		"KOPTISCH": {},
+		"Coptic-Sahidic": {},
+		"KOPTISCH-SAHIDISCH": {},
+		"Coptic-Bohairic": {},
+		"KOPTISCH-BOHAIRISCH": {},
+		"Coptic-Ancient Coptic": {},
+		"KOPTISCH-ALTKOPTISCH": {},
+		"Cuneiform": {},
+		"KEILSCHRIFTLICH": {},
+		"image1": {},
+		"BILD1": {},
+		"image1-width": {},
+		"BILD1-BREITE": {},
+		"image1 description": {},
+		"BILD1-BESCHREIBUNG": {},
+		"image2": {},
+		"BILD2": {},
+		"image2-width": {},
+		"BILD2-BREITE": {},
+		"image2 description": {},
+		"BILD2-BESCHREIBUNG": {},
+		"image3": {},
+		"BILD3": {},
+		"image3-width": {},
+		"BILD3-BREITE": {},
+		"image3 description": {},
+		"BILD3-BESCHREIBUNG": {},
+		"image4": {},
+		"BILD4": {},
+		"image4-width": {},
+		"BILD4-BREITE": {},
+		"image4 description": {},
+		"BILD4-BESCHREIBUNG": {},
+		"image5": {},
+		"BILD5": {},
+		"image5-width": {},
+		"BILD5-BREITE": {},
+		"image5 description": {},
+		"BILD5-BESCHREIBUNG": {}
+	}
+}
+</templatedata>
+{{cob}}
+
+== See also ==
+* [[Template:Infobox pharaoh]]
+* [https://www.unicode.org/charts/PDF/U13000.pdf Hieroglyphics Chart]
+* [http://en.wiktionary.org/wiki/Appendix:Unicode/Egyptian_Hieroglyphs Hieroglyphics]
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Language infobox templates|Hieroglyphics]]
+[[Category:Egyptian hieroglyphics templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

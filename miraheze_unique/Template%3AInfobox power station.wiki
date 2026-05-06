@@ -1,0 +1,451 @@
+{{Infobox
+| bodyclass     = vcard
+| child         = {{{child|}}}
+| subbox        = {{{embed|}}}
+| above         = {{If empty|{{{name|}}}|<includeonly>{{#invoke:WikidataIB|label}}</includeonly>|{{PAGENAMEBASE}}}}
+| aboveclass    = fn org
+| abovestyle    = background-color:#FFFFE6; color:inherit;
+| headerstyle   = background-color:#FFFFE6; color:inherit;
+| autoheaders   = y
+| image         = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|1=P154|2={{{logo|}}}|name=image|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|noicon=true}}|size={{{logo_size|}}}|upright=1|alt={{{logo_alt|}}}}}
+| image2        = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|1=P18|2={{{image|}}}|name=image|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|noicon=true}}|size={{if empty|{{{image_size|}}}|300px}}|upright=1|alt={{{image_alt|}}}}}
+| caption2       = {{#if:{{{image|}}}|{{{image_caption|}}}|{{#if:{{#invoke:WikidataIB|getValue|1=P18|2=|name=image|qid={{{qid|}}}|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|noicon=true}}|{{#invoke:WikidataIB|getValue|1=P18|2=|name=caption|qid={{{qid|}}}|qual=P2096|qualsonly=true|rank=best|suppressfields={{{suppressfields|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|noicon=true}}}}}}
+
+| image3        = {{#invoke:Infobox mapframe|autoWithCaption|onByDefault = yes
+   |mapframe-frame-width           = {{{location_map_size|}}}
+   |mapframe-marker                = {{if empty|{{{location_map_marker|}}}|industrial}}
+   |mapframe-zoom                  = {{if empty|{{{location_map_zoom|}}}|13}}
+   |mapframe-geomask               = {{#ifeq:{{{location_map_geomask|}}}|Yes|P17|}}
+   |mapframe-geomask-stroke-width  = 0.5
+   |mapframe-geomask-stroke-colour = #000000
+   |mapframe-geomask-fill          = #BABABA
+   |mapframe-wikidata              = yes
+}}
+
+| caption3      = {{if empty|{{{location_map_caption|}}}|{{#invoke:Infobox mapframe|autocaption}}}}
+
+| image4      = {{#if:{{{pushpin_map|}}}{{{map_type|}}}|{{Location map|{{if empty|{{{pushpin_map|}}}|{{{map_type}}}}}
+ | border  = infobox
+ | caption = {{#switch:{{{map_caption|}}}|#default={{{map_caption}}}|none=|=Location within {{#invoke:Location map|data|{{if empty|{{{pushpin_map|}}}|{{{map_type}}}}}|name}}}}
+ | float   = center
+ | alt = {{{map_alt|}}}
+ | width   = {{if empty|{{{map_size|}}}|250}}
+ | relief  = {{if empty|{{{pushpin_relief|}}}|{{{map_relief|}}}}}
+ | label   = {{#ifeq: {{lc: {{{pushpin_label_position|}}} }} | none | | {{if empty|{{{pushpin_label|}}}|{{{name|}}}|{{PAGENAMEBASE}} }} }}
+ | coordinates = {{{coordinates|}}}
+ }}}}
+
+| label1        = Official name
+| data1         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P1705|2={{{name_official|}}}|name=name_official|qid={{{qid|}}}|rank=best|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|noicon=true|list=ubl|lang={{#invoke:WikidataIB|getPropOfProp|prop1=P37|prop2=P424|qid={{#invoke:WikidataIB|followQid|props=P17|qid={{{qid|}}}}}|rank=best|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|noicon=true}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1705}}}}}}
+
+| label2        = Country
+| data2         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P17|2={{{country|}}}|name=country|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P17}}}}}}
+
+| label3        = Location
+| data3         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P276|2={{{location|}}}|name=location|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P276}}}}}}
+
+| label4        = Coordinates
+| data4         = {{#if:{{{coordinates|}}}|{{{coordinates|}}}|{{#ifeq:{{if empty|{{{fetchwikidata|}}}|ALL}}|NONE||{{#if:{{#Property:P625}}|{{If first display both|{{Coord|display=inline,title|format=dms}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|P625}}}}}}}}}}}}
+
+| label5        = Status
+| data5         = {{If empty|{{#switch:{{uc:{{{status|}}}}}
+                  |B=Being decommissioned
+                  |BD=Being decommissioned
+                  |C=Cancelled
+                  |D=Decommissioned
+                  |M=[[:wikt:mothball|Mothballed]]
+                  |O=Operational
+                  |P=Proposed
+                  |R=Renovating
+                  |U=Under construction
+                  |UC=Under construction
+                  |#default={{{status|}}}
+                  }}|{{#if:{{#invoke:WikidataIB|getValue|1=P730|name=status_commissioned|qid={{{qid|}}}|fetchwikidata=ALL|onlysourced=no|noicon=true}}|Decommissioned|}}|{{#if:{{#invoke:WikidataIB|getValue|1=P729|name=status_commissioned|qid={{{qid|}}}|fetchwikidata=ALL|onlysourced=no|noicon=true}}|Operational|}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P5817|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q30108381|nomatch=}}|Q30108381|Cancelled|}}|{{#if:{{#invoke:WikidataIB|getQualifierValue|1=P793|pval=Q385378|qual=P580|name=status_construction_began|qid={{{qid|}}}|fetchwikidata=ALL|onlysourced=no|noicon=true}}|Under&nbsp;construction|}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P5817|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q811683|nomatch=}}|Q811683|Proposed|}}|}}
+
+| label6        = Construction&nbsp;began
+| data6         = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P793|2={{{construction_began|}}}|name=construction_began|qid={{{qid|}}}|pval=Q385378|qual=P580|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P793}}}}}}
+
+| label7        = [[Project commissioning|Commission&nbsp;date]]
+| data7         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P729|2={{{commissioned|}}}|name=commissioned|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P729}}}}}}
+
+| label8        = Decommission&nbsp;date
+| data8         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P730|2={{{decommissioned|}}}|name=decommissioned|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P730}}}}}}
+
+| label9        = Construction&nbsp;cost
+| data9         = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2130|2={{{cost|}}}|name=cost|qid={{{qid|}}}|qual=P585|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|scale=8|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2130}}}}}}
+
+| label10       = {{Pluralize from text|{{If first display both|{{#invoke:WikidataIB|getValue|1=P127|2={{{owner|}}}|name=owner|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|shortname=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P127}}}}}}|singular=Owner|likely=Owners|plural=Owners}}
+| data10        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P127|2={{{owner|}}}|name=owner|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|shortname=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P127}}}}}}
+
+| label11       = {{Pluralize from text|{{If first display both|{{#invoke:WikidataIB|getValue|1=P137|2={{{operator|}}}|name=operator|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|shortname=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P137}}}}}}|singular=Operator|likely=Operators|plural=Operators}}
+| data11        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P137|2={{{operator|}}}|name=operator|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|shortname=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P137}}}}}}
+
+| label12       = Employees
+| data12        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P1128|2={{{employees|}}}|qid={{{qid|}}}|qual=P585|rank=best|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|name=employees|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1128}}}}}}
+
+| header13      = Geothermal&nbsp;power&nbsp;station <includeonly>{{Main other|}}</includeonly>
+
+| label14       = Type
+| data14        = {{If empty|{{#switch:{{uc:{{{geo_type|}}}}}
+                  |DS=[[Dry steam power station|Dry steam]]
+                  |FS=[[Flash steam power station|Flash steam]]
+                  |BC=[[Binary cycle]]
+                  |#default={{{geo_type|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q41722964|nomatch=}}|Q41722964|[[Flash steam power station|Flash steam]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q41722780|nomatch=}}|Q41722780|[[Dry steam power station|Dry steam]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q4086827|nomatch=}}|Q4086827|[[Binary cycle power station|Binary cycle]]|}}}}</includeonly>|}}
+
+| label15       = Min.&nbsp;source&nbsp;temp.
+| data15        = {{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P5066|2={{{geo_temp_requirement|}}}|name=geo_temp_requirement|qid={{{qid|}}}|qualID=P518|qvalue=Q1049799|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P5066}}}}}}
+
+| label16       = Wells
+| data16        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{geo_well_count|}}}|name=geo_well_count|qid={{{qid|}}}|pval=Q61846297|qual=P1114|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label17       = Max.&nbsp;well&nbsp;depth
+| data17        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{geo_well_depth|}}}|name=geo_well_depth|qid={{{qid|}}}|pval=Q61846297|qual=P4511|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label18       = Hot&nbsp;water&nbsp;output
+| data18        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P1056|2={{{geo_water_output|}}}|name=geo_water_output|qid={{{qid|}}}|pval=Q1419245|qual=P2197|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1056}}}}}}
+
+| header19      = Nuclear&nbsp;power&nbsp;station <includeonly>{{Main other|}}</includeonly>
+
+| label20       = Reactors
+| data20        = {{#if:{{{np_reactors|}}}|{{{np_reactors|}}}|{{#invoke:WikidataIB|getSumOfParts|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|vlist=Q377968,Q468846,Q558152,Q558181,Q319449,Q3100709,Q1204277,Q379573,Q557804,Q552334,Q1058741,Q2058283,Q1622414,Q373950,Q4391458,Q432432,Q35957}}}}
+
+| label21       = Reactor&nbsp;type
+| data21        = {{If empty|{{#switch:{{uc:{{{np_reactor_type|}}}}}
+                  |PWR=[[Pressurized water reactor|PWR]]
+                  |BWR=[[Boiling water reactor|BWR]]
+                  |PHWR=[[Pressurised heavy water reactor|PHWR]]
+                  |CANDU=[[CANDU reactor|CANDU]] [[Pressurised heavy water reactor|PHWR]]
+                  |RBMK=[[RBMK]]
+                  |GCR=[[Gas cooled reactor|GCR]]
+                  |HTGR=[[Very-high-temperature reactor|HTGR]]
+                  |VHTR=[[Very-high-temperature reactor|VHTR]]
+                  |AGR=[[Advanced gas-cooled reactor|AGR]]
+                  |GFR=[[Gas-cooled fast reactor|GFR]]
+                  |FBR=[[Fast breeder reactor|FBR]]
+                  |SFR=[[Sodium-cooled fast reactor|SFR]]
+                  |LFR=[[Lead-cooled fast reactor|LFR]]
+                  |PBR=[[Pebble bed reactor|PBR]]
+                  |MSR=[[Molten salt reactor|MSR]]
+                  |AHR=[[Aqueous homogeneous reactor|AHR]]
+                  |AHWR=[[Advanced heavy-water reactor|AHWR]]
+                  |VVER=[[VVER]]
+                  |#default={{{np_reactor_type|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q377968|nomatch=}}|Q377968|[[Pressurized water reactor|PWR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q468846|nomatch=}}|Q468846|[[Boiling water reactor|BWR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q558152|nomatch=}}|Q558152|[[Pressurized heavy-water reactor|PHWR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q558181|nomatch=}}|Q558181|[[CANDU reactor|CANDU]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q319449|nomatch=}}|Q319449|[[RBMK]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q3100709|nomatch=}}|Q3100709|[[Gas-cooled reactor|GCR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1204277|nomatch=}}|Q1204277|[[Very-high-temperature reactor|VHTR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q379573|nomatch=}}|Q379573|[[Advanced gas-cooled Reactor|AGR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q557804|nomatch=}}|Q557804|[[Gas-cooled fast reactor|GFR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q552334|nomatch=}}|Q552334|[[Fast breeder reactor|FBR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1058741|nomatch=}}|Q1058741|[[Sodium-cooled fast reactor|SFR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q2058283|nomatch=}}|Q2058283|[[Lead-cooled fast reactor|LFR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1622414|nomatch=}}|Q1622414|[[Pebble-bed reactor|PBR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q373950|nomatch=}}|Q373950|[[Molten salt reactor|MSR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q4391458|nomatch=}}|Q4391458|[[Aqueous homogeneous reactor|AHR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q432432|nomatch=}}|Q432432|[[Advanced heavy-water reactor|AHWR]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q35957|nomatch=}}|Q35957|[[VVER]]|}}}}</includeonly>|}}
+
+| label22       = Reactor&nbsp;supplier
+| data22        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P527|2={{{np_reactor_supplier|}}}|name=np_reactor_supplier|qid={{{qid|}}}|qual=P176|qualsonly=y|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| header23      = Solar&nbsp;farm <includeonly>{{Main other|}}</includeonly>
+
+| label24       = Type
+| data24        = {{If empty|{{#switch:{{uc:{{{solar_type|}}}}}
+                  |PV=[[Photovoltaics|Flat-panel PV]]
+                  |CPV=[[Concentrated photovoltaics|CPV]]
+                  |CSP=[[Concentrated solar power|CSP]]
+                  |#default={{{solar_type|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1003207|nomatch=}}|Q1003207|[[Photovoltaics|Standard PV]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q61950883|nomatch=}}|Q61950883|[[Concentrator photovoltaics|CPV]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q285927|nomatch=}}|Q285927|[[Concentrated solar power|CSP]]|}}}}</includeonly>|}}
+
+| label25       = CSP&nbsp;technology
+| data25        = {{If empty|{{#switch:{{uc:{{{solar_csp_technology|}}}}}
+                  |D=[[Solar thermal energy#Dish designs|Parabolic solar reflector]]
+                  |P=[[Parabolic trough]]
+                  |F=[[Fresnel reflector]]
+                  |T=[[Solar power tower]]
+                  |#default={{{solar_csp_technology|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q61954404|nomatch=}}|Q61954404|[[Solar thermal energy#Dish designs|Parabolic solar reflector]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q2051219|nomatch=}}|Q2051219|[[Parabolic trough]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q5155312|nomatch=}}|Q5155312|[[Fresnel reflector]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q13847726|nomatch=}}|Q13847726|[[Solar power tower]]|}}}}</includeonly>|}}
+
+| label26       = [[Solar thermal collector|Collectors]]
+| data26        = {{#if:{{{solar_collectors|}}}|{{{solar_collectors|}}}|{{#invoke:WikidataIB|getSumOfParts|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|vlist=Q2051219,Q1347279,Q5155312,Q61954404}}}}
+
+| label27       = Total&nbsp;collector&nbsp;area
+| data27        = {{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P2046|2={{{solar_collectors_area|}}}|name=solar_collectors_area|qid={{{qid|}}}|qualID=P518|qvalue=Q1379273|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2046}}}}}}
+
+| label28       = Site&nbsp;resource
+| data28        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P6876|2={{{solar_site_resource|}}}|name=solar_site_resource|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P6876}}}}}}
+
+| label29       = Solar&nbsp;tracker
+| data29        = {{If empty|{{#switch:{{uc:{{{solar_tracker|}}}}}
+                  |SA=[[Solar tracker#Single axis trackers|Single-axis]]
+                  |1A=[[Solar tracker#Single axis trackers|Single-axis]]
+                  |DA=[[Solar tracker#Dual axis trackers|Dual-axis]]
+                  |2A=[[Solar tracker#Dual axis trackers|Dual-axis]]
+                  |#default={{{solar_tracker|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63199411|nomatch=}}|Q63199411|[[Solar tracker#Single axis trackers|Single-axis]]|}}
+{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63199420|nomatch=}}|Q63199420|[[Solar tracker#Dual axis trackers|Dual-axis]]|}}}}</includeonly>|}}
+
+| header30      = Thermal&nbsp;power&nbsp;station <includeonly>{{Main other|}}</includeonly>
+
+| label31       = Primary&nbsp;fuel
+| data31        = {{If first display both|{{#if:{{#invoke:WikidataIB|getValueByQual|1=P618|2={{{th_fuel_primary|}}}|name=th_fuel_primary|qid={{{qid|}}}|qualID=P1545|qvalue=1|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}|{{#invoke:String2|ucfirst|{{{|{{#invoke:WikidataIB|getValueByQual|1=P618|2={{{th_fuel_primary|}}}|name=th_fuel_primary|qid={{{qid|}}}|qualID=P1545|qvalue=1|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}}}}}}|{{#invoke:String2|ucfirst|{{{|{{#invoke:WikidataIB|getValue|1=P618|2=|name=th_fuel_primary|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}}}}}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P618}}}}}}
+
+| label32       = Secondary&nbsp;fuel
+| data32        = {{If first display both|{{#invoke:String2|ucfirst|{{#invoke:WikidataIB|getValueByQual|1=P618|2={{{th_fuel_secondary|}}}|name=th_fuel_secondary|qid={{{qid|}}}|qualID=P1545|qvalue=2|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P618}}}}}}
+
+| label33       = Tertiary&nbsp;fuel
+| data33        = {{If first display both|{{#invoke:String2|ucfirst|{{#invoke:WikidataIB|getValueByQual|1=P618|2={{{th_fuel_tertiary|}}}|name=th_fuel_tertiary|qualID=P1545|qvalue=3|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|sorted=true|noicon=true|list=ubl}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P618}}}}}}
+
+| label34       = Turbine&nbsp;technology
+| data34        = {{If empty|{{#switch:{{uc:{{{th_technology|}}}}}
+                  |ST=[[Steam turbine]]
+                  |GT=[[Gas turbine]]
+                  |#default={{{th_technology|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P2670|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q193470|nomatch=}}|Q193470|[[Gas turbine]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P2670|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q189859|nomatch=}}|Q189859|[[Steam turbine]]|}}}}</includeonly>|}}
+
+| header35      = Tidal&nbsp;power&nbsp;station <includeonly>{{Main other|}}</includeonly>
+
+| label36       = [[Tidal_power#Generating_methods|Type]]
+| data36        = {{If empty|{{#switch:{{uc:{{{tide_technology|}}}}}
+                  |TB=[[Tidal barrage]]
+                  |TSG=[[Tidal stream generator]]
+                  |DTP=[[Dynamic tidal power]]
+                  |#default={{{tide_technology|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q7800783|nomatch=}}|Q7800783|[[Tidal barrage]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q3250943|nomatch=}}|Q3250943|[[Tidal stream generator]]|}}}}</includeonly>|}}
+
+| label37       = Type&nbsp;of&nbsp;[[Tidal stream generator|TSG]]
+| data37        = {{If empty|{{#switch:{{uc:{{{tide_tsg_type|}}}}}
+                  |HA=Horizontal axis
+                  |VA=Vertical axis
+                  |HF=Hydrofoil
+                  |AS=Archimedes screw
+                  |TK=Tidal kite
+                  |#default={{{tide_tsg_type|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63363573|nomatch=}}|Q63363573|Horizontal axis|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63363632|nomatch=}}|Q63363632|Vertical axis|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63363679|nomatch=}}|Q63363679|Oscillating hydrofoil|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63363745|nomatch=}}|Q63363745|Archimedes screw|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63363781|nomatch=}}|Q63363781|Tidal kite|}}}}</includeonly>|}}
+
+| label38       = Barrage&nbsp;height
+| data38        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{tide_barrage_height|}}}|name=tide_barrage_height|qid={{{qid|}}}|pval=Q7800783|qual=P2048|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label39       = Barrage&nbsp;length
+| data39        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{tide_barrage_length|}}}|name=tide_barrage_length|qid={{{qid|}}}|pval=Q7800783|qual=P2043|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label40       = Barrage&nbsp;width
+| data40        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{tide_barrage_width|}}}|name=tide_barrage_width|qid={{{qid|}}}|pval=Q7800783|qual=P2049|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label41       = Crosses
+| data41        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P177|2={{{tide_crosses|}}}|name=tide_crosses|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P177}}}}}}
+
+| label42       = Channel&nbsp;speed
+| data42        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P177|2={{{tide_channel_speed|}}}|name=tide_channel_speed|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P177|qid={{{qid|}}}|fwd=ALL|osd=n}}|qual=P2052|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P177}}}}}}
+
+| label43       = Channel&nbsp;volume
+| data43        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P177|2={{{tide_channel_volume|}}}|name=tide_channel_volume|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P177|qid={{{qid|}}}|fwd=ALL|osd=n}}|qual=P2225|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P177}}}}}}
+
+| label44       = [[Tidal range|Tidal&nbsp;range]]
+| data44        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P4441|2={{{tide_range|}}}|name=tide_range|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P4441}}}}}}
+
+| header45      = Wave&nbsp;power&nbsp;station <includeonly>{{Main other|}}</includeonly>
+
+| label46       = [[Wave_power#Modern_technology|Type]]
+| data46        = {{If empty|{{#switch:{{uc:{{{wave_technology|}}}}}
+                  |SA=Surface-following attenuator
+                  |PA=Point absorber
+                  |OS=Oscillating wave surge converter
+                  |OC=[[Oscillating water column]]
+                  |OT=Overtopping/Terminator
+                  |PD=Submerged pressure differential
+                  |BW=Bulge wave device
+                  |RM=Rotating mass
+                  |#default={{{wave_technology|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367036|nomatch=}}|Q63367036|Attenuator|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367054|nomatch=}}|Q63367054|Point absorber|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367137|nomatch=}}|Q63367137|Oscillating wave surge converter|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q3683519|nomatch=}}|Q3683519|[[Oscillating water column]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367204|nomatch=}}|Q63367204|Overtopping/Terminator|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367211|nomatch=}}|Q63367211|Submerged pressure differential|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367217|nomatch=}}|Q63367217|Bulge wave device|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P527|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q63367226|nomatch=}}|Q63367226|Rotating mass|}}}}</includeonly>|}}
+
+| label47       = Water&nbsp;body
+| data47        = {{#if:{{{wave_water_body|}}}|{{{wave_water_body|}}}|{{#if:{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q3068975|nomatch=}}|Q3068975|Wave power station|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P206|2=|name=wave_water_body|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P206}}}}}}}}}}
+
+| label48       = Water&nbsp;depth
+| data48        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P206|2={{{wave_water_depth|}}}|name=wave_water_depth|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P206|qid={{{qid|}}}|fwd=ALL|osd=n}}|qual=P4511|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P206}}}}}}
+
+| label49       = Distance&nbsp;from&nbsp;shore
+| data49        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P206|2={{{wave_shore_distance|}}}|name=wave_shore_distance|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P206|qid={{{qid|}}}|fwd=ALL|osd=n}}|qual=P2787|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P206}}}}}}
+
+| header50      = Wind&nbsp;farm <includeonly>{{Main other|}}</includeonly>
+
+| label51       = [[Wind farm#Types|Type]]
+| data51        = {{If empty|{{#switch:{{uc:{{{wind_farm_type|}}}}}
+                  |ON=[[Onshore wind farm|Onshore]]
+                  |OF=[[Offshore wind farm|Offshore]]
+                  |#default={{{wind_farm_type|}}}
+                  }}|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q50687555|nomatch=}}|Q50687555|[[Onshore wind farm|Onshore]]|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1357601|nomatch=}}|Q1357601|[[Offshore wind farm|Offshore]]|}}}}</includeonly>|}}
+
+| label52       = Site&nbsp;usage
+| data52        = {{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q50687555|nomatch=}}|Q50687555|{{{wind_site_usage|<includeonly>{{Unbulleted list
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P366|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q11451|nomatch=}}|Q11451|Agriculture|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P366|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q2153464|nomatch=}}|Q2153464|Livestock farming|}}
+|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P366|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q911871|nomatch=}}|Q911871|Wilderness|}}}}</includeonly>}}}|}}
+
+| label53       = Max.&nbsp;water&nbsp;depth
+| data53        = {{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P4511|2={{{wind_offshore_depth|}}}|name=wind_offshore_depth|qid={{{qid|}}}|qualID=P518|qvalue=Q1357601|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P4511}}}}}}
+
+| label54       = Distance&nbsp;from&nbsp;shore
+| data54        = {{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P2043|2={{{wind_offshore_distance|}}}|name=wind_offshore_distance|qid={{{qid|}}}|qualID=P518|qvalue=Q1357601|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2043}}}}}}
+
+| label55       = Hub&nbsp;height
+| data55        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P516|2={{{wind_hub_height|}}}|name=wind_hub_height|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|qual=P2048|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P516}}}}}}
+
+| label56       = Rotor&nbsp;diameter
+| data56        = {{If empty|{{{wind_rotor_diameter|}}}|{{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P516|name=wind_rotor_diameter|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|1=P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|qual=P2386|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P516}}}}}}|{{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P2386|2=|name=wind_rotor_diameter|qualID=P518|qvalue=Q193466|qid={{#invoke:WikidataIB|getPropertyIDs|P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|rank=best|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{#invoke:WikidataIB|getPropertyIDs|1=P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|P2386}}}}}}}}
+
+| label57       = Rated&nbsp;wind&nbsp;speed
+| data57        = {{If empty|{{{wind_rated_speed|}}}|{{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P516|2=|name=wind_rated_speed|qid={{{qid|}}}|pval={{#invoke:WikidataIB|getPropertyIDs|P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|qual=P5065|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P516}}}}}}|{{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P5065|2=|name=wind_rated_speed|qid={{#invoke:WikidataIB|getPropertyIDs|P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|qualID=P1013|qvalue=Q64441440|rank=best|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{#invoke:WikidataIB|getPropertyIDs|1=P516|qid={{{qid|}}}|fwd=ALL|osd=no|rank=best|maxvals=1}}|P5065}}}}}}}}
+
+| header58      = {{if empty|{{{ps_header|}}}|_BLANK_}}
+
+| label59       = Site&nbsp;area
+| data59        = {{If first display both|{{#invoke:WikidataIB|getValueByQual|1=P2046|2={{{ps_site_area|}}}|name=ps_site_area|qid={{{qid|}}}|qualID=P518|qvalue=Q159719|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2046}}}}}}
+
+| label60       = Site&nbsp;elevation
+| data60        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2044|2={{{ps_site_elevation|}}}|name=ps_site_elevation|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2044}}}}}}
+
+| label61       = Chimneys
+| data61        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{ps_chimneys|}}}|name=ps_chimneys|qid={{{qid|}}}|pval=Q170477|qual=P1114|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label62       = Cooling&nbsp;towers
+| data62        = {{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P527|2={{{ps_cooling_towers|}}}|name=ps_cooling_towers|qid={{{qid|}}}|pval=Q193886|qual=P1114|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+
+| label63       = Cooling&nbsp;source
+| data63        = {{#if:{{{ps_cooling_source|}}}|{{{ps_cooling_source|}}}|<includeonly>{{Unbulleted list
+|{{If first display both|{{#invoke:String2|ucfirst|{{#invoke:WikidataIB|getQualifierValue|1=P527|2=|name=ps_cooling_source|qid={{{qid|}}}|pval=Q1049799|qual=P885|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P527}}}}}}
+|{{If first display both|{{#invoke:String2|ucfirst|{{#invoke:WikidataIB|getValue|1=P588|name=ps_cooling_source|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P588}}}}}}}}</includeonly>|}}
+
+| label64       = [[Feed-in tariff|Feed-in&nbsp;tariff]]
+| data64        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P6826|2={{{ps_feed-in_tariff|}}}|name=ps_feed-in_tariff|qid={{{qid|}}}|qual=P1013|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|qlinked=true|unitabbr=false|qprefix=per" "|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P6826}}}}}}
+
+| label65       = Annual&nbsp;revenue
+| data65        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2139|2={{{ps_revenue|}}}|name=ps_revenue|qid={{{qid|}}}|qual=P585|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2139}}}}}}
+
+| label66       = [[Combined cycle|Combined&nbsp;cycle]]?
+| data66        = {{#if:{{{ps_combined_cycle|}}}|{{{ps_combined_cycle|}}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q900729|nomatch=}}|Q900729|Yes|}}}}
+
+| label67       = [[Cogeneration]]?
+| data67        = {{{ps_cogeneration|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q1601458|nomatch=}}|Q1601458|Yes|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q61867910|nomatch=}}|Q61867910|Yes|}}}}}}}
+
+| label68       = [[Trigeneration]]?
+| data68        = {{#if:{{{ps_trigeneration|}}}|{{{ps_trigeneration|}}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q61876608|nomatch=}}|Q61876608|Yes|}}}}
+
+| label69       = [[Integrated water and power plant|IWPP]]?
+| data69        = {{#if:{{{ps_iwpp|}}}|{{{ps_iwpp|}}}|{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q64447720|nomatch=}}|Q64447720|Yes|}}}}
+
+| label70       = IWPP&nbsp;purification&nbsp;method
+| data70        = {{If empty|{{#switch:{{uc:{{{ps_iwpp_technology|}}}}}
+                  |D=[[Distillation]]
+                  |R=[[Reverse osmosis plant|Reverse osmosis]]
+                  |#default={{{ps_iwpp_technology|}}}
+                  }}|{{#if:{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q64447720|nomatch=}}|Q64447720|IWPP|}}|{{If first display both|{{#invoke:WikidataIB |getQualifierValue|1=P1056|2={{{ps_iwpp_technology|}}}|name=ps_iwpp_technology|qid={{{qid|}}}|pval=Q283|qual=P2079|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1056}}}}}}}}}}
+
+| label71       = IWPP&nbsp;water&nbsp;output
+| data71        = {{#if:{{{ps_iwpp_water_output|}}}|{{{ps_iwpp_water_output|}}}|{{#if:{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q64447720|nomatch=}}|Q64447720|IWPP|}}|{{If first display both|{{#invoke:WikidataIB|getQualifierValue|1=P1056|2={{{ps_iwpp_water_output|}}}|name=ps_iwpp_water_output|qid={{{qid|}}}|pval=Q283|qual=P2197|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|convert=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1056}}}}}}}}}}
+
+| label72       = IWPP&nbsp;water&nbsp;tariff
+| data72        = {{#if:{{{ps_iwpp_water_tariff|}}}|{{{ps_iwpp_water_tariff|}}}|{{#if:{{#ifeq:{{#invoke:String|match|s={{#invoke:WikidataIB|getPropertyIDs|1=P31|qid={{{qid|}}}|fwd=ALL|osd=n}}|pattern=Q64447720|nomatch=}}|Q64447720|IWPP|}}|{{If first display both|{{#invoke:WikidataIB|getValue|1=P2555|2={{{ps_iwpp_water_tariff|}}}|name=ps_iwpp_water_tariff|qid={{{qid|}}}|qual=P2210|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P1013}}}}}}}}|}}
+
+| label73       = Thermal&nbsp;capacity
+| data73        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2056|2={{{ps_thermal_capacity|}}}|name=ps_thermal_capacity|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2056}}}}}}
+
+| label74       = {{{ps_label1|}}}
+| data74        = {{{ps_data1|}}}
+
+| label75       = {{{ps_label2|}}}
+| data75        = {{{ps_data2|}}}
+
+| label76       = {{{ps_label3|}}}
+| data76        = {{{ps_data3|}}}
+
+| label77       = {{{ps_label4|}}}
+| data77        = {{{ps_data4|}}}
+
+| label78       = {{{ps_label5|}}}
+| data78        = {{{ps_data5|}}}
+
+| header79      = Power&nbsp;generation
+
+| data80        = <includeonly>{{#invoke:Infobox power station|psunits|qid={{{qid|}}}|ps_units_operational={{{ps_units_operational|}}}|ps_units_manu_model={{{ps_units_manu_model|}}}|ps_units_planned={{{ps_units_planned|}}}|ps_units_cancelled={{{ps_units_cancelled|}}}|ps_units_uc={{{ps_units_uc|}}}|ps_units_decommissioned={{{ps_units_decommissioned|}}}|dbug={{{dbug|}}}}}</includeonly>
+
+| label86       = [[Nameplate&nbsp;capacity]]
+| data86        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P2109|2={{#iferror:{{#expr:0+{{formatnum:{{{ps_electrical_capacity|}}}|R}}}}|{{{ps_electrical_capacity|}}}|{{{ps_electrical_capacity|}}} [[Megawatt|MW]]}}|name=ps_electrical_capacity|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P2109}}}}}}
+
+| label87       = [[Capacity factor|Capacity&nbsp;factor]]
+| data87        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P6639|2={{{ps_electrical_cap_fac|}}}|name=ps_electrical_cap_fac|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P6639}}}}}}
+
+| label88       = [[Net generation|Annual&nbsp;net&nbsp;output]]
+| data88        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P4131|2={{#iferror: {{#expr:0+{{formatnum:{{{ps_annual_generation|}}}|R}} }}| {{{ps_annual_generation|}}} | {{{ps_annual_generation|}}} [[GW·h]]}}|name=ps_annual_generation|qid={{{qid|}}}|qual=ALL|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P4131}}}}}}
+
+| label89       = [[Energy storage#Storage capacity|Storage&nbsp;capacity]]
+| data89        = {{If first display both|{{#invoke:WikidataIB|getValue|1=P4140|2={{{ps_storage_capacity|}}}|name=ps_storage_capacity|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|unitabbr=true|sorted=true|noicon=true|list=ubl}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P4140}}}}}}
+
+| header90      = External&nbsp;links
+
+| label91       = Website
+| data91        = {{If empty|{{{website|}}}|{{If first display both|{{URL2|{{#invoke:WikidataIB|getValue|1=P856|2=|name=website|qid={{{qid|}}}|fetchwikidata={{if empty|{{{fetchwikidata|}}}|ALL}}|suppressfields={{{suppressfields|}}}|onlysourced={{if empty|{{{onlysourced|}}}|false}}|maxvals=1|noicon=true}}}}|{{#ifeq:{{if empty|{{{refs|}}}|no}}|yes|{{Wikidata|references|normal+|{{{qid|}}}|P856}}}}}}}}
+
+| label92       = Commons
+| data92        = {{#if:{{#invoke:WikidataIB|getValue|1=P373|qid={{{qid|}}}|fwd=ALL|osd=n|noicon=true}}|[[Commons:Category:{{#invoke:WikidataIB|getValue|1=P373|qid={{{qid|}}}|fwd=ALL|osd=n|noicon=true}}|Related&nbsp;media&nbsp;on&nbsp;Commons]]}}
+
+| below         = <includeonly>{{#if:{{{child|}}}||{{Edit on Wikidata|qid={{{qid|}}}}}}}{{#if:{{{extra|}}}|<br>{{{extra|}}}}}</includeonly>
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox power station]] with unknown parameter "_VALUE_"|ignoreblank=y|mapframe_args=y|  | child | commissioned | construction_began | coordinates | cost | country | dbug | decommissioned | embed | employees | extra | fetchwikidata | geo_temp_requirement | geo_type | geo_water_output | geo_well_count | geo_well_depth | image | image_alt | image_caption | image_size | location | location_map_caption | location_map_geomask | location_map_marker | location_map_size | location_map_zoom | logo | logo_alt | logo_size | name | name_official | np_reactor_supplier | np_reactor_type | np_reactors | onlysourced | operator | owner | ps_annual_generation | ps_chimneys | ps_cogeneration | ps_combined_cycle | ps_cooling_source | ps_cooling_towers | ps_data1 | ps_data2 | ps_data3 | ps_data4 | ps_data5 | ps_electrical_cap_fac | ps_electrical_capacity | ps_feed-in_tariff | ps_header | ps_iwpp | ps_iwpp_technology | ps_iwpp_water_output | ps_iwpp_water_tariff | ps_label1 | ps_label2 | ps_label3 | ps_label4 | ps_label5 | ps_revenue | ps_site_area | ps_site_elevation | ps_storage_capacity | ps_thermal_capacity | ps_trigeneration | ps_units_cancelled | ps_units_decommissioned | ps_units_manu_model | ps_units_operational | ps_units_planned | ps_units_uc | qid | refs | solar_collectors | solar_collectors_area | solar_csp_technology | solar_site_resource | solar_tracker | solar_type | status | suppressfields | th_fuel_primary | th_fuel_secondary | th_fuel_tertiary | th_technology | tide_barrage_height | tide_barrage_length | tide_barrage_width | tide_channel_speed | tide_channel_volume | tide_crosses | tide_range | tide_technology | tide_tsg_type | wave_shore_distance | wave_technology | wave_water_body | wave_water_depth | website | wind_farm_type | wind_hub_height | wind_offshore_depth | wind_offshore_distance | wind_rated_speed | wind_rotor_diameter | wind_site_usage }}{{#invoke:Check for conflicting parameters|check
+| template = [[Template:Infobox power station]]
+| pushpin_map; map_type 
+| pushpin_relief; map_relief 
+}}<noinclude>
+{{Documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Geothermal power station articles using Infobox power station]]
+[[Category:Nuclear power station articles using Infobox power station]]
+[[Category:Solar power station articles using Infobox power station]]
+[[Category:Thermal power station articles using Infobox power station]]
+[[Category:Tidal power station articles using Infobox power station]]
+[[Category:Wave power station articles using Infobox power station]]
+[[Category:Wind farm articles using Infobox power station]]
+[[Category:Pages using infobox power station with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

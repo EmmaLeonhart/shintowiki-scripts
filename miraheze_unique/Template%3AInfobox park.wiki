@@ -1,0 +1,177 @@
+{{infobox
+| bodyclass      = vcard
+| child          = {{#if:{{{child|}}}{{{embed|}}}|yes}}
+
+| title  = {{#if:{{{child|}}}{{{embed|}}}|{{{title|}}}}}
+| aboveclass     = fn org
+| abovestyle     = background-color: #abdb75; line-height: 140%;
+| above          = {{if empty|{{{name|}}}|<includeonly>{{PAGENAMEBASE}}</includeonly> }}
+
+| subheaderstyle = font-size: 110%
+| subheader      = {{if empty|{{{alt_name|}}}|{{{other_name|}}}}}
+| subheader2     = {{#if:{{{native_name|}}}|{{#if:{{{native_name_lang|}}}|<span class="nickname" lang="{{{native_name_lang}}}">}}{{{native_name}}}{{#if:{{{native_name_lang|}}}|</span>}}}}
+
+| image1          = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo_size|}}}|upright={{{logo_upright|}}}|alt={{{logo_alt|}}}}}
+| caption1        = {{{logo_caption|}}}
+
+| image2          = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|{{{photo|}}}}}}|size={{#switch:{{{image_size|{{{photo_width|}}}}}}
+                     | frameless = frameless
+                     | upright = frameless
+                     | {{if empty|{{{image_size|}}}|{{{photo_width|}}} }}
+                     }}|upright={{#ifeq:{{{image_size|{{{photo_width|}}}}}}|upright|0.75|{{{upright|}}}
+                     }}|sizedefault=250px|maxsize=325px|alt={{{image_alt|{{{photo_alt|}}}}}} }}
+| caption2        = {{{image_caption|{{{photo_caption|}}}}}}
+
+| image3         = {{#if:{{{map|}}}
+           | {{Location map|{{{map}}}
+                     | border = infobox | float = center
+                     | alt = {{{map_alt|}}}
+                     | width = {{{map_width|}}}
+                     | default_width = 250
+                     | max_width = 272
+                     | caption = {{{map_caption|}}}
+                     | relief = {{{relief|}}}
+                     | label = {{if empty|{{{label|}}}|{{{map_label|}}}}}
+                     | position = {{if empty|{{{label_position|}}}|{{{map_label_position|}}}}}
+                     | mark = {{{mark|}}}
+                     | marksize = {{{mark_width|}}}
+                     | coordinates = {{if empty|{{{coordinates|}}}|{{{coords|}}}}} }}
+           | {{#invoke:InfoboxImage|InfoboxImage|image={{{map_image|{{{image_map|}}}}}}|size={{if empty|{{{map_size|}}}|{{{mapsize|}}}|{{{map_width|}}} }}|sizedefault=250px|maxsize=272px|alt={{{map_alt|}}}}}
+           }}
+| caption3 = {{#if:{{{map|}}} || {{{map_caption|}}} }}
+
+| image4     = {{#invoke:Infobox mapframe|auto|mapframe-marker=park|mapframe-marker-color={{{mapframe-marker-color|#abdb75}}}|mapframe-frame-width=250|mapframe-wikidata={{{mapframe-wikidata|yes}}}|onByDefault={{#if:{{{map|}}}{{{map_image|}}}|no|yes}}}}
+| caption4   = {{#invoke:Infobox mapframe|autocaption|onByDefault={{#if:{{{map|}}}{{{map_image|}}}|no|yes}}}}
+
+| rowclass2      = category
+| label2         = Type
+| data2          = {{{type|}}}
+
+| label3         = Motto
+| data3          = {{{motto|{{{Motto|}}}}}}
+
+| rowclass4      = label
+| label4         = Location
+| data4          = {{{location|}}}
+
+| label5         = {{#if:{{{nearest_city|}}}|Nearest&nbsp;city
+                   | {{#if:{{{nearest_town|}}}|Nearest&nbsp;town }}}}
+| data5          = {{if empty|{{{nearest_city|}}}|{{{nearest_town|}}} }}
+
+| label6         = [[:en:Ordnance Survey National Grid|OS grid]]
+| data6          = {{#if:{{{grid_ref_UK|}}}|{{gbm4ibx|{{{grid_ref_UK|}}}|name={{{name|{{PAGENAMEBASE}}}}} }}{{{grid_ref_UK_note|}}}}}
+
+| label7         = [[:en:Irish grid reference system|OSI/OSNI grid]]
+| data7          = {{#if:{{{grid_ref_Ireland|}}}|{{iem4ibx|{{{grid_ref_Ireland|}}}|name={{{name|{{PAGENAMEBASE}}}}} }}{{{grid_ref_Ireland_note|}}}}}
+
+| label8         = [[:en:Geographic coordinate system|Coordinates]]
+| data8          = {{#if:{{{coordinates|{{{coords|}}}}}}|{{#invoke:Coordinates|coordinsert|{{{coordinates|{{{coords|}}}}}}|type:landmark}}{{{coords_ref|}}}}}
+
+| rowclass9      = note
+| label9         = Area
+| data9          = {{{area|}}}
+
+| label10         = Elevation
+| data10          = {{{elevation|}}}
+
+| label11        = {{#if:{{{authorized|}}}|Authorized
+                 | {{#if:{{{created|}}}|Created
+                 | {{#if:{{{established|}}}|Established
+                 | {{#if:{{{designated|}}}|Designated 
+                 | {{#if:{{{opening|}}}|Opening
+                 | {{#if:{{{opened|}}}|Opened }}}}}}}}}}}}
+| data11         = {{if empty|{{{authorized|}}}|{{{created|}}}|{{{established|}}}|{{{designated|}}}|{{{opening|}}}|{{{opened|}}} }}
+
+| label12        = Closed
+| data12         = {{{closed|}}}
+
+| label13        = Founder
+| data13         = {{{founder|}}}
+
+| label14        = Designer
+| data14         = {{{designer|}}}
+
+| label15        = Etymology
+| data15         = {{{etymology|}}}
+
+| label16        = Owned&nbsp;by
+| data16         = {{{owner|}}}
+
+| rowclass17     = note
+| label17        = {{#if:{{{administrator|}}}|Administered&nbsp;by
+                   | {{#if:{{{manager|}}}|Managed&nbsp;by
+                   | {{#if:{{{operator|}}}|Operated&nbsp;by}}}}}}
+| data17         = {{if empty|{{{administrator|}}}|{{{manager|}}}|{{{operator|}}} }}
+
+| label18        = Visitors
+| data18         = {{#if:{{{visitation_num|}}}|{{{visitation_num|}}}{{#if:{{{visitation_year|}}}|{{sp}}(in&nbsp;{{{visitation_year|}}})}}{{{visitation_ref|}}}}}
+
+| label19        = Open
+| data19         = {{{open|}}}
+
+| rowclass20     = category
+| label20        = Status
+| data20         = {{{status|}}}
+
+| label21        = Awards
+| data21         = {{{awards|}}}
+
+| label22        = Camp sites
+| data22         = {{{camp_sites|}}}
+
+| label23        = {{#if:{{{paths|}}}|Paths|Hiking trails}}
+| data23         = {{#if:{{{paths|}}}|{{{paths}}}|{{{hiking_trails|}}}}}
+
+| label24        = {{#if:{{{terrain|}}}|Terrain|Habitats}}
+| data24         = {{#if:{{{terrain|}}}|{{{terrain}}}|{{{habitat|}}}}}
+
+| label25        = Water
+| data25         = {{{water|}}}
+
+| label26        = {{#if:{{{vegetation|}}}|Vegetation|Plants}}
+| data26         = {{#if:{{{vegetation|}}}|{{{vegetation}}}|{{{plants|}}}}}
+
+| label27        = Species
+| data27         = {{{species|}}}
+
+| label28        = Collections
+| data28         = {{{collections|}}}
+
+| label30        = Designation
+| data30         = {{{designation|}}}
+
+| label32        = Threatened by
+| data32         = {{{disturbance|}}}
+
+| label34        = Budget
+| data34         = {{{budget|}}}
+
+| label35        = Parking
+| data35         = {{{parking|}}}
+
+| label36        = {{#if:{{{transport|}}}|Connecting transport|Public transit access}}
+| data36         = {{#if:{{{transport|}}}|{{{transport}}}|{{{publictransit|}}}}}
+
+| label37        = {{{free_label|}}}
+| class37        = note
+| data37         = {{{free_data|}}}
+
+| label38        = {{#if:{{{facilities|}}}|Facilities|Other information}}
+| data38         = {{#if:{{{facilities|}}}|{{{facilities|}}}|{{{other_info|}}}}}
+
+| label39        = Website
+| data39         = {{{website|}}}
+
+| data40         = {{{embedded|{{{module|}}}}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox park]] with unknown parameter "_VALUE_"|ignoreblank=y| administrator | alt_name | area | authorized | awards | budget | camp_sites | child | closed | collections | coordinates | coords | coords_ref | created | designated | designation | designer | disturbance | elevation | embed | embedded | established | etymology | facilities | founder | free_data | free_label | grid_ref_Ireland | grid_ref_Ireland_note | grid_ref_UK | grid_ref_UK_note | habitat | hiking_trails | image | image_alt | image_caption | image_map | image_size | label | label_position | location | logo| logo_alt | logo_upright | logo_size | logo_ caption | manager | map | map_alt | map_caption | map_image | map_label | map_label_position | map_size | map_width | mapframe | mapframe-caption | mapframe-custom | mapframe-id | mapframe-coord | mapframe-wikidata | mapframe-point | mapframe-shape | mapframe-frame-width | mapframe-frame-height | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-geomask | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-zoom | mapframe-length_km | mapframe-length_mi | mapframe-area_km2 | mapframe-area_mi2 | mapframe-frame-coordinates | mapframe-frame-coord | mapframe-switcher | mapframe-height | mapframe-width | mapsize | mark | mark_width | module | Motto | motto | name | native_name | native_name_lang | nearest_city | nearest_town | open | opened | opening | operator | other_info | other_name | owner | parking | paths | photo | photo_alt | photo_caption | photo_width | plants | publictransit | qid | relief | species | status | terrain | title | transport | type | upright | vegetation | visitation_num | visitation_ref | visitation_year | water | website
+}}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox park with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

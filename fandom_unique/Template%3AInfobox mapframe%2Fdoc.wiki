@@ -1,0 +1,423 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{lua|Module:Infobox mapframe}}
+{{Uses Wikidata|P625}}
+{{Tracks Wikidata|P402|cat=Infobox mapframe without OSM relation ID on Wikidata}}
+{{Sister project
+|image=[[File:Openstreetmap logo.svg|40x40px]]
+|text=This template uses the [[:en:OpenStreetMap|OpenStreetMap]] tag:
+*'''''[https://wiki.openstreetmap.org/wiki/Key:wikidata wikidata]''''' (see [https://wiki.openstreetmap.org/wiki/Talk:Key:wikidata talk]; [https://taginfo.openstreetmap.org/keys/wikidata taginfo])
+}}
+{{Lua sidebar}}
+
+This template generates a mapframe map, suitable for infoboxes, with minimal user input. This template only works with single features (points, lines, or shapes); use {{tlx|maplink}} if more advanced options, such as displaying multiple features, are required.
+
+If coordinates are not supplied, they will be fetched from the page's Wikidata item. In such cases, if {{para|point}} is not set, then a point feature marker is displayed at those coordinates {{em|unless}} the Wikidata item has an {{Q|P402}} specified.
+*See [[:Category:Infobox mapframe without OSM relation ID on Wikidata]] for pages which have items without {{Q|P402}}
+*Troubleshooting shapes guidance is found at [[Module talk:mapframe/FAQ]]
+
+== Usage ==
+'''Note:''' When in mainspace, parameter {{para|id}} is not required (except to use a different page's data)
+
+===Basic===
+<syntaxhighlight lang="wikitext">{{Infobox mapframe}}</syntaxhighlight>
+When used without parameters, or with only {{para|id}}, the map will display either a shape, line, or point feature, depending on the data available on Wikidata and OpenStreetMap.
+*If the Wikidata item does not specify a {{Q|P402}} value, then a point marker will be displayed by default in addition any OSM shape or line feature.
+*If the Wikidata items does not specify a {{Q|P625}} or a {{Q|P3896}} value, then no map will be displayed
+{{cot|Basic usage examples}}
+Point feature (Wikidata coordinates):
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q7270550}}</syntaxhighlight>
+{{Infobox mapframe |id=Q7270550}}
+Line feature:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q1318331}}</syntaxhighlight>
+{{Infobox mapframe |id=Q1318331}}
+Shape feature:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q61}}</syntaxhighlight>
+{{Infobox mapframe |id=Q61}}
+{{cob}}
+
+===Using specified coordinates instead of Wikidata===
+Point feature only, no shapes or lines:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |coord=}}</syntaxhighlight>
+Point feature and shape/line feature if available:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |wikidata=yes |coord=}}</syntaxhighlight>
+
+Specify coordinates using the {{tlx|Coord}} templates, e.g. {{para|coord|2={{tlx|Coord|32.1|S|116.2|E}}}}
+*If {{para|coord}} is specified, then by default only that coordinate will be displayed (no line or shape features)
+*If {{para|coord}} is specified and {{para|wikidata|yes}} is used, then those coordinate will be displayed, along with any line or shape features linked to the Wikidata item.
+{{cot|Specified coordinates examples}}
+Point feature (with coordinates specified, no shape/line feature from Wikidata item):
+<syntaxhighlight lang="wikitext">{{infobox mapframe |coord={{coord|31|56|S|115|58|E}} }}</syntaxhighlight>
+{{infobox mapframe |id=Q45935 |coord={{coord|31|56|S|115|58|E}} }}
+Point feature (with coordinates specified, along with shape/line feature from Wikidata item):
+<syntaxhighlight lang="wikitext">{{infobox mapframe |wikidata=yes |coord={{coord|31|56|S|115|58|E}} }}</syntaxhighlight>
+{{infobox mapframe |id=Q45935 |wikidata=yes |coord={{coord|31|56|S|115|58|E}} }}
+{{cob}}
+
+===Customizing which features are displayed===
+====Inverse shape====
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |shape=inverse}}</syntaxhighlight>
+Replace the shape with an inverse-shape (geomask) by setting {{para|shape|inverse}}
+{{cot|Inverse shape example}}
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q61 |shape=inverse}}</syntaxhighlight>
+{{Infobox mapframe |id=Q61 |shape=inverse}}
+{{cob}}
+
+====Turn point marker on or off====
+Force point marker to be displayed:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |point=on}}</syntaxhighlight>
+Prevent point marker from being displayed:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |point=none}}</syntaxhighlight>
+
+====Turn shape feature off====
+Prevent shape feature from being displayed:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |shape=none}}</syntaxhighlight>
+
+====Turn line feature off====
+Prevent line feature from being displayed:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |line=none}}</syntaxhighlight>
+
+===Show a geomask from a related Wikidata item===
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |geomask=}}</syntaxhighlight>
+Set {{para|geomask}} to a Wikidata item id (Q-number), or property id (P-number) such as {{Q|P17}}
+{{cot|Geomask examples}}
+Use the item linked from the {{q|P17}} statement as a geomask:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q3239281 |geomask=P17}}</syntaxhighlight>
+{{Infobox mapframe |id=Q3239281 |geomask=P17}}
+Use the item {{q|Q1199}} as a geomask:
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q3239281 |geomask=Q1199}}</syntaxhighlight>
+{{Infobox mapframe |id=Q3239281 |geomask=Q1199}}
+{{cob}}
+
+===Determine zoom from object length or area===
+Use any of the following parameters to specify an object's dimension:
+{{col div|colwidth=15em}}
+*{{para|length_km}}
+*{{para|length_mi}}
+*{{para|width_km}}
+*{{para|width_mi}}
+*{{para|area_km2}}
+*{{para|area_mi2}}
+*{{para|area_ha}}
+*{{para|area_acre}}
+{{col div end}}
+
+Additionally, the zoom of the mapframe can be set by specifying the {{para|type}} of the object, with the same usage as {{tl|coord}}. For example, {{para|type|city}}. In the case of a city, the population can determine the zoom by specifying {{para|population}}.
+{{cot|Zoom from length/area examples}}
+Determine zoom from object length in kilometres or miles
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q1318331 |length_km=5.6}}</syntaxhighlight>
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q1318331 |length_mi=3.5}}</syntaxhighlight>
+{{Infobox mapframe |id=Q1318331 |length_km=5.6}}
+Determine zoom from object area in square kilometres or square miles
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q100 |area_km2=232.14}}</syntaxhighlight>
+<syntaxhighlight lang="wikitext">{{Infobox mapframe |id=Q100 |area_mi2=89.63}}</syntaxhighlight>
+{{Infobox mapframe |id=Q100 |area_km2=232.14}}
+{{cob}}
+
+==Parameters==
+All parameters are optional.
+
+{{Infobox mapframe/doc/parameters|noprefix=yes|deprecated=yes}}
+
+==Examples for use within templates==
+{{cot|Infobox hospital}}
+{{tl|Infobox hospital}} (as of {{oldid|Template:Infobox hospital|919731352|5 October 2019}})
+<syntaxhighlight lang="wikitext">
+|image3    = {{yesno|{{{mapframe|yes}}}|no=|yes={{Infobox mapframe
+ |zoom={{{mapframe-zoom|}}}
+ |frame-width={{{mapframe-width|}}}
+ |frame-height={{{mapframe-height|}}}
+ |marker={{{mapframe-marker|hospital}}}
+ |marker-color={{{mapframe-marker-color|{{{mapframe-marker-colour|}}}}}}
+ |frame-lat={{{mapframe-lat|{{{mapframe-latitude|}}}}}}
+ |frame-long={{{mapframe-long|{{{mapframe-longitude|}}}}}}
+ |stroke-color={{{mapframe-stroke-color|{{{mapframe-stroke-colour|}}}}}}
+ }}
+}}
+|caption3 = {{yesno|{{{mapframe|yes}}}|no=|yes={{{mapframe-caption|}}}}}
+</syntaxhighlight>
+{{cob}}
+
+{{cot|Infobox power station}}
+{{tl|Infobox power station}} (as of {{oldid|Template:Infobox power station|890573674|2 April 2019}}):
+<syntaxhighlight lang="wikitext">| image2        = {{#ifeq:{{{location_map|}}}|no||{{Infobox mapframe
+                  |id                    = {{{qid|}}}
+                  |coord                 = {{{coordinates|}}}
+                  |frame-width           = {{Digits|1={{#if:{{{image_size|}}}|{{{image_size|}}}|300px}}}}
+                  |marker                = industrial
+                  |zoom                  = {{#if:{{{location_map_geomask|}}}|{{{location_map_zoom|}}}|{{{location_map_zoom|5}}}}}
+                  |geomask               = {{#ifeq:{{{location_map_geomask|}}}|Yes|P17|}}
+                  |geomask-stroke-width  = {{#ifeq:{{{location_map_geomask|}}}|Yes|0.5|}}
+                  |geomask-stroke-colour = {{#ifeq:{{{location_map_geomask|}}}|Yes|#000000|}}
+                  |geomask-fill          = {{#ifeq:{{{location_map_geomask|}}}|Yes|#BABABA|}}
+                  }}}}
+| caption2      = {{#ifeq:{{{location_map|}}}|no||{{#if:{{{coordinates|}}}{{#property:P625}}|{{{location_map_caption|}}}}}}}
+</syntaxhighlight>
+{{cob}}
+
+{{cot|Infobox Australian road}}
+{{tl|Infobox Australian road}} (as of {{oldid|Template:Infobox Australian road|918815119|5 October 2019}}):
+<syntaxhighlight lang="wikitext">
+| data3        = {{#ifexist:media:{{{location|}}}|[[File:{{{location}}}|270px|frameless|alt={{{location_alt|{{{loc_alt|{{{alt|}}}}}}}}}]]|{{{location|{{yesno| {{{mapframe|yes}}}|no=|yes={{Infobox mapframe | length_km={{{length|}}} }}{{main other|{{#if:{{#property:P625}}|}}}}}}}}}}}
+</syntaxhighlight>
+{{cob}}
+
+==FAQ==
+{{Module talk:mapframe/FAQ}}
+
+==TemplateData==
+{{TemplateData header}}
+{{collapse top|title=parameters|bg=#ddd}}
+<templatedata>
+{
+	"params": {
+		"mapframe": {
+			"label": "Show mapframe map",
+			"description": "Specify yes or no to show or hide the map, overriding the default",
+			"example": "yes",
+			"type": "string",
+			"default": "no",
+			"suggested": true
+		},
+		"mapframe-caption": {
+			"label": "Mapframe caption",
+			"description": "Caption for the map. If mapframe-geomask is set, then the default is \"Location in <<geomask's label>>\"",
+			"type": "string"
+		},
+		"mapframe-custom": {
+			"label": "Custom mapframe",
+			"description": "Use a custom map instead of the automatic mapframe. Specify either a {{maplink}} template, or another template that generates a mapframe map, or an image name. If used, other mapframe parameters will be ignored.",
+			"type": "wiki-template-name"
+		},
+		"mapframe-id": {
+			"aliases": [
+				"id",
+				"qid"
+			],
+			"label": "Mapframe Wikidata item",
+			"description": "Id (Q-number) of Wikidata item to use.",
+			"type": "string",
+			"default": "(item for current page)"
+		},
+		"mapframe-coordinates": {
+			"aliases": [
+				"mapframe-coord",
+				"coordinates",
+				"coord"
+			],
+			"label": "Mapframe coordinates ",
+			"description": "Coordinates to use, instead of any on Wikidata. Use the {{Coord}} template.",
+			"example": "{{Coord|12.34|N|56.78|E}}",
+			"type": "wiki-template-name",
+			"default": "(coordinates from Wikidata)"
+		},
+		"mapframe-wikidata": {
+			"label": "Mapframe shapes from Wikidata",
+			"description": "et to yes to show shape/line features from the wikidata item, if any, when coordinates are specified by parameter",
+			"example": "yes",
+			"type": "string"
+		},
+		"mapframe-shape": {
+			"label": "Mapframe shape feature",
+			"description": "Override display of mapframe shape feature. Turn off by setting to \"none\". Use an inverse shape (geomask) instead of a regular shape by setting to \"inverse\"",
+			"type": "string"
+		},
+		"mapframe-point": {
+			"label": "Mapframe point feature",
+			"description": "Override display of mapframe point feature. Turn off display of point feature by setting to \"none\". Force point marker to be displayed by setting to \"on\"",
+			"type": "string"
+		},
+		"mapframe-geomask": {
+			"label": "Mapframe geomask",
+			"description": "Wikidata item to use as a geomask (everything outside the boundary is shaded darker). Can either be a specific Wikidata item (Q-number), or a property that specifies the item to use (e.g. P17 for country, or P131 for located in the administrative territorial entity)",
+			"example": "Q100",
+			"type": "wiki-page-name"
+		},
+		"mapframe-switcher": {
+			"label": "Mapframe switcher",
+			"description": "Set to \"auto\" or \"geomasks\" or \"zooms\" to enable Template:Switcher-style switching between multiple mapframes. IF SET TO auto – switch geomasks found in location (P276) and located in the administrative territorial entity (P131) statements on the page's Wikidata item, searching recursively. E.g. an item's city, that city's state, and that state's country. IF SET TO geomasks – switch between the geomasks specified as a comma-separated list of Wikidata items (Q-numbers) in the mapframe-geomask parameter. IF SET TO zooms – switch between \"zoomed in\"/\"zoomed midway\"/\"zoomed out\", where \"zoomed in\" is the default zoom (with a minimum of 3), \"zoomed out\" is 1, and \"zoomed midway\" is the average.",
+			"type": "string"
+		},
+		"mapframe-frame-width": {
+			"aliases": [
+				"mapframe-width"
+			],
+			"label": "Mapframe width",
+			"description": "Frame width in pixels",
+			"type": "number",
+			"default": "270"
+		},
+		"mapframe-frame-height": {
+			"aliases": [
+				"mapframe-height"
+			],
+			"label": "Mapframe height",
+			"description": "Frame height in pixels",
+			"type": "number",
+			"default": "200"
+		},
+		"mapframe-shape-fill": {
+			"label": "Mapframe shape fill",
+			"description": "Color used to fill shape features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-shape-fill-opacity": {
+			"label": "Mapframe shape fill opacity",
+			"description": "Opacity level of shape fill, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-stroke-color": {
+			"aliases": [
+				"mapframe-stroke-colour"
+			],
+			"label": "Mapframe stroke color",
+			"description": "Color of line features, and outlines of shape features",
+			"type": "string",
+			"default": "#ff0000"
+		},
+		"mapframe-stroke-width": {
+			"label": "Mapframe stroke width",
+			"description": "Width of line features, and outlines of shape features",
+			"type": "number",
+			"default": "5"
+		},
+		"mapframe-marker": {
+			"label": "Mapframe marker",
+			"description": "Marker symbol to use for coordinates; see [[mw:Help:Extension:Kartographer/Icons]] for options",
+			"example": "museum",
+			"type": "string"
+		},
+		"mapframe-marker-color": {
+			"aliases": [
+				"mapframe-marker-colour"
+			],
+			"label": "Mapframe marker color",
+			"description": "Background color for the marker",
+			"type": "string",
+			"default": "#5E74F3"
+		},
+		"mapframe-geomask-stroke-color": {
+			"aliases": [
+				"mapframe-geomask-stroke-colour"
+			],
+			"label": "Mapframe geomask stroke color",
+			"description": "Color of outline of geomask shape",
+			"type": "string",
+			"default": "#555555"
+		},
+		"mapframe-geomask-stroke-width": {
+			"label": "Mapframe geomask stroke width",
+			"description": "Width of outline of geomask shape",
+			"type": "number",
+			"default": "2"
+		},
+		"mapframe-geomask-fill": {
+			"label": "Mapframe geomask fill",
+			"description": "Color used to fill outside geomask features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-geomask-fill-opacity": {
+			"label": "Mapframe geomask fill opacity",
+			"description": "Opacity level of fill outside geomask features, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-zoom": {
+			"label": "Mapframe zoom",
+			"description": "Set the zoom level, from \"1\" to \"18\", to used if the zoom level cannot be determined automatically from object length or area",
+			"example": "12",
+			"type": "number",
+			"default": "10"
+		},
+		"mapframe-length_km": {
+			"label": "Mapframe length (km)",
+			"description": "Object length in kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-length_mi": {
+			"label": "Mapframe length (mi)",
+			"description": "Object length in miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_km2": {
+			"label": "Mapframe area (km^2)",
+			"description": "Object arean square kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_mi2": {
+			"label": "Mapframe area (mi^2)",
+			"description": "Object area in square miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-frame-coordinates": {
+			"aliases": [
+				"mapframe-frame-coord"
+			],
+			"label": "Mapframe frame coordinates",
+			"description": "Alternate latitude and longitude coordinates for initial placement of map, using {{coord}}",
+			"example": "{{Coord|12.35|N|56.71|E}}",
+			"type": "wiki-template-name"
+		},
+		"mapframe-line": {},
+		"mapframe-type": {
+			"label": "Mapframe type",
+			"description": "Type of the object rendered in the mapframe, like with {{coord}}.",
+			"type": "string"
+		}
+	},
+    "paramOrder": [
+		"mapframe",
+		"mapframe-caption",
+		"mapframe-custom",
+		"mapframe-id",
+		"mapframe-coordinates",
+		"mapframe-wikidata",
+		"mapframe-point",
+		"mapframe-shape",
+		"mapframe-frame-width",
+		"mapframe-frame-height",
+		"mapframe-shape-fill",
+		"mapframe-shape-fill-opacity",
+		"mapframe-stroke-color",
+		"mapframe-stroke-width",
+		"mapframe-marker",
+		"mapframe-marker-color",
+		"mapframe-geomask",
+		"mapframe-geomask-stroke-color",
+		"mapframe-geomask-stroke-width",
+		"mapframe-geomask-fill",
+		"mapframe-geomask-fill-opacity",
+		"mapframe-zoom",
+		"mapframe-length_km",
+		"mapframe-length_mi",
+		"mapframe-area_km2",
+		"mapframe-area_mi2",
+		"mapframe-frame-coordinates",
+		"mapframe-switcher",
+        "mapframe-line",
+		"mapframe-type"
+	]
+    
+}
+</templatedata>
+{{collapse bottom}}
+
+== See also ==
+* [[Wikipedia:Mapframe maps in infoboxes]], inclusion of this kind of functionality in infoboxes by default
+* [[Wikipedia:Maps for Wikipedia]], a list of mapping tools available on Wikipedia
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Infobox Australian road articles with an infobox mapframe map|{{#if:{{{coordinates_a|}}}|π}}{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

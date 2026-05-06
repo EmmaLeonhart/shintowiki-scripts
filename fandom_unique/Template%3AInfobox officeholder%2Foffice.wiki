@@ -1,0 +1,269 @@
+{{#if:{{{speaker|}}}{{{state_legislature|}}}{{{state_assembly|}}}{{{speaker_office|}}}{{{state_delegate|}}}{{{state_house|}}}{{{prior_term|}}}{{{nominee|}}}{{{candidate|}}}{{{termstart|}}}{{{election_date|}}}{{{majority_leader|}}}{{{minority_floor_leader|}}}{{{minority_leader|}}}{{{majority_floor_leader|}}}{{{jr/sr|}}}{{{succeeding|}}}{{{assuming|}}}{{{state|}}}{{{jr/sr and state|}}}{{{state_senate|}}}{{{district|}}}{{{ambassador_from|}}}{{{minister_from|}}}{{{order|}}}{{{office|}}}{{{title|}}}{{{country|}}}{{{constituency_AM|}}}{{{constituency_MP|}}}{{{parliament|}}}{{{assembly|}}}{{{constituency_|}}}{{{riding|}}}{{{term|}}}{{{termend|}}}{{{alongside|}}}{{{co-leader|}}}
+|{{#invoke:infobox|infoboxTemplate|child=yes|decat=yes
+| headerstyle = color: #202122; background:{{{color|lavender}}};line-height:normal;padding:0.2em;
+| datastyle = border-bottom:none
+
+| header1 = {{#if:{{{speaker|}}}|
+{{{speaker}}} {{#if:{{{state_legislature|}}}
+  |[[Speaker of the {{{state_legislature}}} Legislature]]
+  |{{#if:{{{state_assembly|}}}
+     |[[Speaker of the {{{state_assembly|}}} {{#ifeq:{{{state_assembly|}}}|Nevada||{{#ifeq:{{{state_assembly|}}}|New Jersey|General|State}}}} Assembly]]
+     |{{#if:{{{speaker_office|}}}|{{{speaker_office}}}|[[Speaker of the {{#if:{{{state_delegate|}}} |{{{state_delegate}}}|{{#if:{{{state_house|}}} |{{{state_house}}}|United States}}}} House of {{#if:{{{state_delegate|}}}|Delegates|Representatives}}|Speaker of the {{#if:{{{state_delegate|}}} |{{{state_delegate}}}|{{#if:{{{state_house|}}} |{{{state_house}}}|U.S.}}}} House of {{#if:{{{state_delegate|}}}|Delegates|Representatives}}]]}}
+   }}
+ }}{{#if:{{{prior_term|}}}|
+<br />{{{prior_term}}}}}
+}}
+
+| header2 = {{#if:{{{nominee|}}}{{{candidate|}}}|
+{{#if:{{{party_election|}}}{{{party|}}}
+  |{{#if:{{{party_election|}}}|{{{party_election}}}|{{{party}}}}} {{#if:{{{nominee|}}}|nominee for<br />{{{nominee}}}|candidate for<br />{{{candidate}}}}}
+  |{{#if:{{{nominee|}}}|Nominee for<br />{{{nominee}}}|Candidate for<br />{{{candidate}}}}}
+}} }}
+
+| data3 = {{#if:{{{nominee|}}}{{{candidate|}}}|
+{{#if:{{{termstart|}}}{{{election_date|}}} | <span class="nowrap">'''Election date'''</span><br />{{#if:{{{election_date|}}}|{{{election_date}}}|{{{termstart}}}}}
+}} }}
+
+| header4 = {{#if:{{{majority_leader|}}}{{{minority_floor_leader|}}}{{{minority_leader|}}}{{{majority_floor_leader|}}}||
+{{#if:{{{jr/sr|}}}|[[United States Senate|United States Senator{{#if:{{{succeeding|}}}{{{assuming|}}}|-elect}}]]<br />from {{{state}}}
+}} }}
+
+| header5 = {{#if:{{{majority_leader|}}}{{{minority_floor_leader|}}}{{{minority_leader|}}}{{{majority_floor_leader|}}}||
+{{{jr/sr and state|}}}
+}}
+
+| header6 = {{#if:{{{majority_leader|}}}{{{minority_floor_leader|}}}{{{minority_leader|}}}{{{majority_floor_leader|}}}||
+{{#if:{{{state_senate|}}}|Member{{#if:{{{succeeding|}}}{{{assuming|}}}|-elect}} of the <span style="display: inline-block;">[[{{{state_senate}}} Senate]]</span>{{#if:{{{district|}}}|<br />from the {{{district}}} district}}{{#if:{{{prior_term|}}}|
+<br />{{{prior_term}}}}}
+}} }}
+
+| header7 = {{#if:{{{majority_leader|}}}{{{minority_floor_leader|}}}{{{minority_leader|}}}{{{majority_floor_leader|}}}||
+{{#if:{{{state_legislature|}}}|Member{{#if:{{{succeeding|}}}{{{assuming|}}}|-elect}} of the <span style="display: inline-block;">[[{{{state_legislature}}} Legislature]]</span><br />from the {{{district}}} district
+}} }}
+
+| header8 = {{#if:{{{ambassador_from|}}}{{{minister_from|}}}||
+{{#if:{{{order|}}} 
+|{{{order}}}{{#if:{{{office|}}} |&#32;[[{{{office}}}]]}}{{#if:{{{state|}}} |&#32;[[{{{state}}}]]}}{{#if:{{{title|}}} |&#32;{{{title}}}}}
+|{{{office|}}}
+}} }}
+
+| header9 = {{#if:{{{ambassador_from|}}}{{{minister_from|}}}||
+{{#if:{{{order|}}} 
+||{{{title|}}}
+}} }}
+
+| header10 = {{#if:{{both|{{{ambassador_from|}}}{{{minister_from|}}}|{{{country|}}}}}
+  |{{#if:{{{order|}}}|{{{order}}}}} {{#if:{{{minister_from|}}}
+    |[[{{{minister_from}}} Ambassador to {{CountryPrefixThe|{{{country}}}}}|{{{minister_from}}} Minister to <span class="nowrap">{{CountryPrefixThe|{{{country}}}}}</span>]]
+    |[[{{{ambassador_from}}} Ambassador to {{CountryPrefixThe|{{{country}}}}}|{{{ambassador_from}}} Ambassador to <span class="nowrap">{{CountryPrefixThe|{{{country}}}}}</span>]]
+    }} }}
+
+| header11 = {{#if:{{{constituency_AM|}}}{{{constituency_MP|}}}|
+{{#switch:{{{parliament|}}}
+ |Australian = Member of the <span style="display: inline-block;">[[Australian House of Representatives|Australian Parliament]]</span>
+ |European = [[Member of the European&nbsp;Parliament]]
+ |Scottish = [[Member of the Scottish&nbsp;Parliament]]
+ |Sri Lanka|Sri Lankan = [[Member of Parliament (Sri Lanka)|Member of Parliament]]
+ |United Kingdom|UK = [[Member of Parliament (United Kingdom)|Member of Parliament]]
+ |#default = {{#if:{{{constituency_AM|}}}|{{#if:{{{assembly|}}}|Member of the <span style="display: inline-block;">[[{{{assembly}}} Assembly]]</span>|Assembly Member}}|Member of {{#if:{{{parliament|}}}|the <span style="display: inline-block;">[[{{{parliament}}} Parliament]]</span>|Parliament}}}}}}<br />for {{#ifeq:{{Title disambig text|{{{constituency_MP|}}}}}|UK Parliament constituency
+ |{{{constituency_MP|}}}
+ |{{#if:{{#switch:{{{parliament|}}} |United Kingdom|UK| = {{Linkless exists|{{#invoke:delink|delink|{{{constituency_MP|}}}}} (UK Parliament constituency)}} }}
+  |{{#ifeq:{{#invoke:delink|delink|{{{constituency_MP|}}}}}|{{#invoke:delink|delink|{{{constituency_MP|}}}|wikilinks=target}}
+   |{{Constlk|{{#invoke:delink|delink|{{{constituency_MP|}}}}}}}
+   |{{{constituency_{{#if:{{{constituency_AM|}}}|AM|MP}}}}}}}
+  |{{{constituency_{{#if:{{{constituency_AM|}}}|AM|MP}}}}}}}
+}}{{#if:{{{prior_term|}}}|
+<div style="font-weight:normal;">{{{prior_term}}}</div>}}
+}}
+| header12 = {{#if:{{{riding|}}}|{{#if:{{{constituency_AM|}}}|{{#if:{{{assembly|}}}|Member of the <span style="display: inline-block;">[[{{{assembly}}} Assembly]]</span>|Assembly Member}}|
+{{#switch:{{{parliament|}}}
+ |Canadian = [[Member of Parliament (Canada)|Member of Parliament]]
+ |#default = Member of {{#if:{{{parliament|}}}|the <span style="display: inline-block;">[[{{{parliament}}} Parliament]]</span>|Parliament}}}}}}<br />for {{{riding}}}
+}}
+
+| header13 = {{#if:{{{majority_leader|}}}|{{{majority_leader}}} {{#if:{{{state_senate|}}}|[[Majority Leader of the {{{state_senate}}} Senate]]|[[United States Senate Majority Leader]]}}
+}}
+
+| header14 = {{#if:{{{majority_floor_leader|}}}|{{{majority_floor_leader}}} [[Majority Floor Leader of the {{{state_senate}}} Senate]]
+}}
+
+| header15 = {{#if:{{{minority_leader|}}}|{{{minority_leader}}} [[Minority Leader of the {{{state_senate}}} Senate]]
+}}
+
+| header16 = {{#if:{{{minority_floor_leader|}}}|{{{minority_floor_leader}}} [[Minority Floor Leader of the {{{state_senate}}} Senate]]
+}}
+
+| header17 = {{#if:{{{state_legislature|}}}{{{state_senate|}}}{{{jr/sr|}}}{{{jr/sr and state|}}}||
+{{#if:{{#if:{{{state|}}}|{{{constituency|}}}}}{{{district|}}}{{{state_house|}}}|{{#if:{{{state_assembly|}}}
+  |Member{{#if:{{{succeeding|}}}{{{assuming|}}}|-elect}} of the <span style="display: inline-block;">[[{{{state_assembly|}}} {{#ifeq:{{{state_assembly|}}}|Nevada||{{#ifeq:{{{state_assembly|}}}|New Jersey|General|State}}}} Assembly]]</span><br />from the 
+  |Member{{#if:{{{succeeding|}}}{{{assuming|}}}|-elect}} of the <span style="display: inline-block;">[[{{#if:{{{state_house|}}} |{{{state_house}}}|{{#if:{{{state_delegate|}}}|{{{state_delegate}}}|United States }}}} {{#if:{{{state_delegate|}}}|House of Delegates|House of Representatives}}|{{#if:{{{state_house|}}} |{{{state_house}}}|{{#if:{{{state_delegate|}}}|{{{state_delegate}}}|U.S.}}}}&#32;{{#if:{{{state_delegate|}}}|House&#32;of&#32;Delegates|{{#if:{{{state_house|}}}| }}House&#32;of&#32;Representatives}}]]</span>{{#if:{{{district|}}}{{{state|}}}{{{state_delegate|}}}|<br />from {{#if:{{{state_delegate|}}}|the |{{#if:{{{state_house|}}}|{{#if:{{{district|}}}|the|{{{state|}}}}}|{{{state|}}}{{#if:{{{district|}}}|'s}}}}}} 
+  }}}} {{#if:{{{district|}}}|{{{district}}} district|{{#if:{{{state_house|}}}|{{{constituency|}}}}}}}{{#if:{{{prior_term|}}}|
+<br />{{{prior_term}}}}}
+}}
+}}
+
+| header18 = {{#if:{{{convocation|}}}|{{{convocation}}}}}
+
+| data19 = {{#if:{{{termend|}}}{{{succeeding|}}}{{{assuming|}}}|
+{{#if:{{{status|}}}
+  | <div class="skin-nightmode-reset-color" style="width:100%; margin:0; color: black; background-color: {{{color|lavender}}}">'''{{{status}}}'''</div>|}}|
+}}
+
+| data20 = {{#if:{{{nominee|}}}{{{candidate|}}}||
+{{#if:{{{succeeding|}}}{{{assuming|}}}
+  | <span class="nowrap">'''Assuming office'''</span><br />{{{termstart}}}{{#if:{{{term|}}}{{{termend|}}}|}}
+  | {{#if: {{{term|}}} | <span class="nowrap">'''{{{termlabel|In office}}}'''</span><br />{{{term}}} }}
+}} }}
+
+| data21 = {{#if:{{{nominee|}}}{{{candidate|}}}||
+{{#if:{{{succeeding|}}}{{{assuming|}}}
+  | 
+  |{{#if:{{{termstart|}}}
+      | {{#if:{{{termend|}}}
+         |<span class="nowrap">'''{{{termlabel|In office}}}'''</span><br />{{en dash range|{{{termstart}}}|{{{termend}}}}}{{#if:{{{alongside|}}}{{{co-leader|}}}|<div style="line-height:normal; padding-top:0.2em; padding-bottom:0.1em">{{#if:{{{alongside|}}}|Serving|Co-leading}}&#32;with&#32;{{#if:{{{alongside|}}}|{{{alongside}}}|{{{co-leader}}}}}</div>}}
+         |{{#if:{{{status|}}}|<div class="skin-nightmode-reset-color" style="width:100%; margin:0; color: black; background-color: {{{color|lavender}}}">'''{{{status}}}'''</div>|<div class="skin-nightmode-reset-color" style="width:100%; margin:0; color: black; background-color: {{{color|lavender}}}">'''[[Incumbent]]'''</div>}}
+         }}
+    }}
+}} }}
+
+| data22 = {{#if:{{{nominee|}}}{{{candidate|}}}||
+{{#if:{{{succeeding|}}}{{{assuming|}}}
+  | 
+  |{{#if:{{{termstart|}}}
+      |{{#if:{{{termend|}}}
+|
+|<span class="nowrap">'''{{#if:{{{termlabel|}}}|{{#invoke:String|replace|source={{{termlabel}}}|In office|Assumed office}}|Assumed office}}'''</span>&#32;<br />{{{termstart}}}{{#if:{{{alongside|}}}{{{co-leader|}}}|<div style="line-height:normal; padding-top:0.2em; padding-bottom:0.1em">{{#if:{{{alongside|}}}|Serving|Co-leader}}&#32;with&#32;{{#if:{{{alongside|}}}|{{{alongside}}}|{{{co-leader}}}}}</div>}}
+       }}
+   }}
+}} }}
+
+}} }}{{#if:{{{monarch|}}}{{{president|}}}{{{governor-general|}}}{{{governor_general|}}}{{{primeminister|}}}{{{chancellor|}}}{{{minister|}}}{{{taoiseach|}}}{{{firstminister|}}}{{{chiefminister|}}}{{{premier|}}}{{{governor|}}}{{{lieutenant_governor|}}}{{{vicepresident|}}}{{{vicegovernor|}}}{{{viceprimeminister|}}}{{{vicepremier|}}}{{{deputy|}}}{{{leader|}}}{{{lieutenant|}}}{{{nominator|}}}{{{appointer|}}}{{{opponent|}}}{{{incumbent|}}}{{{succeeding|}}}{{{assuming|}}}{{{preceding|}}}{{{predecessor|}}}{{{preceded|}}}{{{successor|}}}{{{succeeded|}}}{{{parliamentarygroup|}}}{{{constituency|}}}{{{majority|}}}{{{suboffice|}}}{{{1namedata|}}}{{{2namedata|}}}{{{3namedata|}}}{{{4namedata|}}}{{{5namedata|}}}{{{runningmate|}}}|
+{{#invoke:infobox|infoboxTemplate|child=yes
+| labelstyle = text-align:left
+
+| label1 = <span class="nowrap">Nominated by</span>
+| data1 = {{{nominator|}}}
+
+| label2 = <span class="nowrap">Appointed by</span>
+| data2 = {{{appointer|}}}
+
+| label3 = Monarch{{#if:{{detect singular|{{{monarch|}}}}}||s}}
+| data3 = {{{monarch|}}}
+
+| label4 = President
+| data4 = {{{president|}}}
+
+| label5 = {{#if:{{{governor_general|}}}|Governor{{#if:{{detect singular|{{{governor_general}}}}}||s}} General|Governor{{#if:{{detect singular|{{{governor-general}}}}}||s}}{{nbhyph}}General}}
+| data5 = {{#if:{{{governor_general|}}}|{{{governor_general}}}|{{{governor-general|}}}}}
+
+| label6 = <span class="nowrap">Prime Minister</span>
+| data6 = {{{primeminister|}}}
+
+| label7 = Chancellor
+| data7 = {{{chancellor|}}}
+
+| label8 = Minister
+| data8 = {{{minister|}}}
+
+| label9 = Taoiseach
+| data9 = {{{taoiseach|}}}
+
+| label10 = <span class="nowrap">First Minister</span>
+| data10 = {{{firstminister|}}}
+
+| label11 = <span class="nowrap">Chief Minister</span>
+| data11 = {{{chiefminister|}}}
+
+| label12 = Premier
+| data12 = {{{premier|}}}
+
+| label13 = Governor
+| data13 = {{{governor|}}}
+
+| label14 = Lieutenant Governor
+| data14 = {{{lieutenant_governor|}}}
+
+| label15 = <span class="nowrap">{{#if:{{{vicepresident|}}}|{{#ifeq:{{Linkless exists|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}|{{#ifeq:{{#invoke:Redirect|main|fulltext=1|{{#ifeq:Vice|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}||Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}}}|{{#invoke:Redirect|main|fulltext=1|{{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||{{#if:{{#invoke:Disambiguation|isDisambiguationPage|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||true}} }}|[[Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Vice President]]|Vice President}}|Vice President}}</span>
+| data15 = {{{vicepresident|}}}
+
+| label16 = <span class="nowrap">{{#if:{{{vicegovernor|}}}|{{#ifeq:{{Linkless exists|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}|{{#ifeq:{{#invoke:Redirect|main|fulltext=1|{{#ifeq:Vice|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}||Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}}}|{{#invoke:Redirect|main|fulltext=1|{{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||{{#if:{{#invoke:Disambiguation|isDisambiguationPage|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||true}} }}|[[Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Vice Governor]]|Vice Governor}}|Vice Governor}}</span>
+| data16 = {{{vicegovernor|}}}
+
+| label17 = <span class="nowrap">{{#if:{{{viceprimeminister|}}}|[[Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Vice PM]]|Vice [[Prime Minister|PM]]}}</span>
+| data17 = {{{viceprimeminister|}}}
+
+| label18 = <span class="nowrap">{{#if:{{{vicepremier|}}}|{{#ifeq:{{Linkless exists|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}|{{#ifeq:{{#invoke:Redirect|main|fulltext=1|{{#ifeq:Vice|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}||Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}}}|{{#invoke:Redirect|main|fulltext=1|{{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||{{#if:{{#invoke:Disambiguation|isDisambiguationPage|Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||true}} }}|[[Vice {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Vice Premier]]|Vice Premier}}|Vice Premier}}</span>
+| data18 = {{{vicepremier|}}}
+
+| label19 = {{#if:{{{deputy|}}}|{{#ifeq:{{Linkless exists|Deputy {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}|{{#ifeq:{{#invoke:Redirect|main|fulltext=1|{{#ifeq:Deputy|Deputy {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}||Deputy {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}}}|{{#invoke:Redirect|main|fulltext=1|{{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||{{#if:{{#invoke:Disambiguation|isDisambiguationPage|Deputy {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}}}||true}} }}|[[Deputy {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Deputy]]|Deputy}}|Deputy}}
+| data19 = {{{deputy|}}}
+
+| label20 = Leader
+| data20 = {{{leader|}}}
+
+| label21 = {{#if:{{{office|}}}|[[Lieutenant {{#invoke:delink|delink|{{{office}}}|wikilinks=target}}|Lieutenant]]|Lieutenant}}
+| data21 = {{{lieutenant|}}}
+
+| label22 = {{nowrap|{{{subterm|}}}}}
+| data22 = {{{suboffice|}}}
+
+| label23 = {{{1blankname|}}}
+| data23 = {{{1namedata|}}}
+
+| label24 = {{{2blankname|}}}
+| data24 = {{{2namedata|}}}
+
+| label25 = {{{3blankname|}}}
+| data25 = {{{3namedata|}}}
+
+| label26 = {{{4blankname|}}}
+| data26 = {{{4namedata|}}}
+
+| label27 = {{{5blankname|}}}
+| data27 = {{{5namedata|}}}
+
+| label28 = <span class="nowrap">Running mate</span>
+| data28 = {{{runningmate|}}}
+
+| label29 = Opponent{{#invoke:Detect singular|pluralize|{{{opponent|}}}|likely=(s)|plural=s}}
+| data29 = {{{opponent|}}}
+
+| label30 = Incumbent
+| data30 = {{{incumbent|}}}
+
+| label31 = {{#if:{{{succeeding|}}}|Succeeding|Preceding}}
+| data31 = {{#if:{{{succeeding|}}}|{{{succeeding|}}}|{{{preceding|}}}}}
+
+| label32 = <span class="nowrap">Preceded by</span>
+| data32 = {{#if:{{{succeeding|}}}||{{#if:{{{predecessor|}}}|{{{predecessor}}}|{{{preceded|}}}}}}}
+
+| label33 = <span class="nowrap">Succeeded by</span>
+| data33 = {{#if:{{{succeeding|}}}||{{#switch:{{#if:{{{successor|}}}|{{{successor}}}|{{{succeeded|}}}}}
+| Incumbent
+| '''Incumbent'''
+| ''Incumbent''
+| [[Incumbent]]
+| incumbent
+| '''incumbent'''
+| ''incumbent''
+| [[incumbent]] =
+| #default = {{#if:{{{successor|}}}|{{{successor}}}|{{{succeeded|}}}}}
+}}}}
+
+| label34 = [[Parliamentary group]]
+| data34 = {{{parliamentarygroup|}}}
+
+| label35 = Constituency
+| data35 = {{#if:{{{state_house|}}}||{{{constituency|}}}}}
+
+| label36 = Majority
+| data36 = {{{majority|}}}
+}} }}<noinclude>{{documentation}}
+[[Category:Pages using infobox officeholder with ambassador from or minister from]]
+[[Category:Pages using infobox officeholder with succeeding and term or termend]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

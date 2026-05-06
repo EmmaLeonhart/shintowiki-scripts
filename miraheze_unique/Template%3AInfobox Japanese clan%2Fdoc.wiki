@@ -1,0 +1,53 @@
+{{Documentation subpage}}
+
+== Usage ==
+<syntaxhighlight lang="wikitext">{{Infobox Japanese clan
+| surname         = Name (+ "clan") [default: page name]
+| surname nihongo = Kanji
+| image           = File:X
+| image size      = image size in pixels
+| image caption   = caption for image
+| home province   = Name & Wikilink <br />Name & Wikilink etc.
+| parent house    = Name & Wikilink
+| titles          = Name & Wikilink <br />Name & Wikilink etc.
+| founder         = Name & Wikilink
+| final ruler     = Name & Wikilink
+| current head    = Name & Wikilink
+| founding year   = YYYY
+| dissolution     = YYYY
+| ruled until     = YYYY (+ reason)
+| cadet branches  = Name & Wikilink <br />Name & Wikilink etc.
+</syntaxhighlight>
+
+== Example ==
+{{Infobox Japanese clan
+| surname         = Example Name
+| surname nihongo = Example kanji
+| image           = File:Japanese crest Sagari Fuji.svg
+| image size      = 
+| image caption   = Example caption
+| home province   = Example province
+| parent house    = Example Clan
+| titles          = Shogun
+| founder         = Example no Example
+| final ruler     = Example Example
+| current head    = Example
+| founding year   = 10XX
+| dissolution     = 11XX
+| ruled until     = 1112 (killed by pirates)
+| cadet branches  = None
+}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:WikiProject Anthroponymy templates|Japanese clan]]
+[[Category:Surnames]]
+[[Category:Japan infobox templates|Clan]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

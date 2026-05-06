@@ -1,0 +1,1013 @@
+{{Documentation subpage}}
+{{undocumented|date=February 2024|reason=This template can create a reference named "YouTubeStats" in some conditions. Some articles depend on it, but the source and the parameters that cause that reference to be generated (or suppressed) don't seem to be documented here.}}
+{{High-use}}
+
+{{WikiProject YouTube/Used Template}}
+{{Template redirect|Infobox YouTube|Infobox YouTuber|Infobox YouTube channel}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters|Module:YouTubeSubscribers}}
+{{Uses TemplateStyles|Template:Infobox YouTube personality/styles.css}}
+
+This infobox is intended to be used in articles about [[YouTube]] personalities, rather than using the generic {{tl|Infobox person}} template. The template may be used for individual YouTube personalities or collective YouTube channels run by more than one person.
+
+== Usage ==
+The infobox may be added by pasting the template as shown below into an article and then filling in the desired fields. Any parameters left blank or omitted will not be displayed.
+
+=== Blank template with basic parameters ===
+{{Parameter names example |name |image=Pessoa Neutra.svg |caption
+|birth_name |birth_date |birth_place |death_date |death_place |nationality
+|other_names |occupation |organization |website
+|pseudonym |channel_name |years_active |genre |subscribers |views |network |associated_acts |language
+|silver_year |gold_year |diamond_year |ruby_year |red_diamond_year |stats_update
+}}
+
+This blank template pattern shows some basic parameters needed to fill the infobox, with comments about many parameters. For actual examples, see the section "[[#Examples|Examples]]" below.
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; line-height:1.2em;">
+{{Infobox YouTube personality
+| name                 = 
+| image                = 
+| caption              = 
+| birth_name           = 
+| birth_date           = 
+| birth_place          = 
+| death_date           = 
+| death_place          = 
+| nationality          = 
+| other_names          = 
+| occupation           = 
+| organization         = 
+| website              = 
+| pseudonym            = 
+
+| channel_name         = 
+| channel_url          = 
+| channel_direct_url   = 
+
+| channel_display_name = 
+| years_active         = 
+| genre                = 
+| subscribers          = 
+| views                = 
+| network              = 
+| language             = 
+| associated_acts      =      
+| silver_year          = 
+| gold_year            = 
+| diamond_year         = 
+| ruby_year            = 
+| red_diamond_year     = 
+| stats_update         = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+=== Blank template with all parameters ===
+{{Parameter names example|honorific_prefix|name|honorific_suffix|logo|logo_size|logo_alt|logo_caption|image|image_upright|alt|caption|birth_name|birth_date|birth_place|death_date|death_place|origin|nationality|other_names|education|occupation|spouse|partner|children|parents|relatives|organization|signature|signature_size|signature_alt|website|module_personal|pseudonym|channel_name|channel_display_name|creator|presenter|location|years_active|genre|subscribers|subscriber_date|views|view_date|network|language|associated_acts|channel_website|silver_year|gold_year|diamond_year|ruby_year|red_diamond_year|module|stats_update|extra_information}}
+
+Only the most pertinent information should be included. Please remove unused parameters, and refrain from inserting dubious trivia in an attempt to fill all parameters.
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; line-height:1.2em;">
+{{Infobox YouTube personality
+| honorific_prefix      = 
+| name                  = 
+| honorific_suffix      = 
+| logo                  = 
+| logo_size             = 
+| logo_alt              = 
+| logo_caption          = 
+| image                 = 
+| image_upright         = 
+| alt                   = 
+| caption               = 
+| birth_name            = 
+| birth_date            = 
+| birth_place           = 
+| death_date            = 
+| death_place           = 
+| origin                = 
+| nationality           = 
+| other_names           = 
+| education             = 
+| occupation            = 
+| spouse                = 
+| partner               = 
+| children              = 
+| parents               = 
+| mother                = 
+| father                = 
+| relatives             = 
+| organization          = 
+| signature             = 
+| signature_size        = 
+| signature_alt         = 
+| website               = 
+| module_personal       = 
+| pseudonym             = 
+
+| channel_name          = 
+| channel_url           = 
+| channel_direct_url    = 
+
+| channel_name2         = 
+| channel_url2          = 
+| channel_direct_url2   = 
+
+| channel_name3         = 
+| channel_url3          = 
+| channel_direct_url3   = 
+
+| channel_display_name  = 
+| channel_display_name2 = 
+| channel_display_name3 = 
+| channels              = 
+| creator               = 
+| presenter             = 
+| location              = 
+| years_active          = 
+| genre                 = 
+| subscribers           = 
+| subscriber_date       = 
+| views                 = 
+| view_date             = 
+| network               = 
+| language              = 
+| associated_acts       = 
+| channel_website       = 
+| silver_year           = 
+| silver_button         = 
+| gold_year             = 
+| gold_button           = 
+| diamond_year          = 
+| diamond_button        = 
+| ruby_year             = 
+| ruby_button           = 
+| red_diamond_year      = 
+| red_diamond_button    = 
+| module                = 
+| stats_update          = 
+| extra_information     = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== Examples ==
+
+=== Individual ===
+{{Infobox YouTube personality
+| name               = Fuslie
+| image              = Fuslie TwitchCon 2022 (cropped).jpg
+| caption            = Fuslie in 2022
+| birth_name         = Leslie Ann Fu
+| birth_date         = {{birth date and age|1992|11|23}}
+| birth_place        = [[San Francisco Bay Area]], [[California]], U.S.
+| education          = [[University of California, Irvine]] ([[Bachelor of Science|BS]])
+| occupation         = {{flatlist|
+* [[Live streamer]]
+* [[YouTuber]]
+}}
+| organization       = [[100 Thieves]]
+| website            = {{URL|fuslie.com}}
+| years_active       = 2015–present
+| channel_direct_url = fuslie
+| genre              = {{flatlist|
+* [[Video game|Gaming]]
+* [[vlog]]
+}}
+| subscribers        = 787,000
+| views              = 165.9 million
+| associated_acts    = {{flatlist|
+* [[OfflineTV]]
+* [[Valkyrae]]
+* [[Sykkuno]]
+}}
+| silver_year        = 2019
+| module             =
+  {{Infobox Twitch streamer | subbox=yes
+  | years_active     = 2015–2022
+  | channel_name     = fuslie
+  | genre            = Gaming
+  }}
+| stats_update       = April 2, 2023
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox YouTube personality
+| name               = Fuslie
+| image              = Fuslie TwitchCon 2022 (cropped).jpg
+| caption            = Fuslie in 2022
+| birth_name         = Leslie Ann Fu
+| birth_date         = {{birth date and age|1992|11|23}}
+| birth_place        = [[San Francisco Bay Area]], [[California]], U.S.
+| education          = [[University of California, Irvine]] ([[Bachelor of Science|BS]])
+| occupation         = {{flatlist|
+* [[Live streamer]]
+* [[YouTuber]]
+}}
+| organization       = [[100 Thieves]]
+| website            = {{URL|fuslie.com}}
+| years_active       = 2015–present
+| channel_direct_url = fuslie
+| genre              = {{flatlist|
+* [[Video game|Gaming]]
+* [[vlog]]
+}}
+| subscribers        = 787,000
+| views              = 165.9 million
+| associated_acts    = {{flatlist|
+* [[OfflineTV]]
+* [[Valkyrae]]
+* [[Sykkuno]]
+}}
+| silver_year        = 2019
+| module             =
+  {{Infobox Twitch streamer | subbox=yes
+  | years_active     = 2015–2022
+  | channel_name     = fuslie
+  | genre            = Gaming
+  }}
+| stats_update       = April 2, 2023
+}}
+</syntaxhighlight>
+{{Clear}}
+
+=== Collective ===
+{{Infobox YouTube personality
+| name                 = Sidemen
+| logo                 = Sidemen Logo.svg
+| image                = Sidemen collage 4.5.jpg
+| caption              = Top to bottom from left column: [[Vikkstar123|Barn]], [[TBJZL|Brown]]; [[KSI|Olatunji]], Minter, Lewis; [[Behzinga|Payne]], and [[Zerkaa|Bradley]].
+| birth_date           = {{Unbulleted list
+  |Olajide Olayinka Williams Olatunji ([[KSI]])|{{birth date and age|1993|6|19|df=yes}}
+  |<hr>Simon Minter (Miniminter)|{{birth date and age|1992|09|07|df=y}}
+  |<hr>Joshua Bradley ([[Zerkaa]])|{{birth date and age|1992|09|04|df=y}}
+  |<hr>Tobit John Brown ([[TBJZL]])|{{birth date and age|df=y|1993|4|8}}
+  |<hr>Ethan Payne ([[Behzinga]])|{{birth date and age|df=y|1995|6|20}}
+  |<hr>Vikram Singh Barn ([[Vikkstar123]])|{{birth date and age|df=y|1995|8|2}}
+  |<hr>Harry Lewis (W2S)|{{birth date and age|1996|11|24|df=y}}
+}}
+| occupation           = [[YouTuber]]s
+| website              = {{URL|https://sidemen.com}}
+| origin               = London, England
+| channels             = [https://www.youtube.com/channel/UCDogdKl7t7NHzQ95aEwkdMw Sidemen]<br />[https://www.youtube.com/channel/UCh5mLn90vUaB1PbRRx_AiaA MoreSidemen]<br />[https://www.youtube.com/channel/UCjRkTl_HP4zOh3UFaThgRZw SidemenReacts]<br />[https://www.youtube.com/channel/UCbAZH3nTxzyNmehmTUhuUsA SidemenShorts]<br />
+{{Collapsible list
+  | framestyle     = border:none; padding:0;
+  | title          = Associated channels 
+  | 1              = [https://www.youtube.com/channel/UCVtFOytbRpEvzLjvqGG5gxQ KSI]
+  | 2              = [https://www.youtube.com/channel/UCGmnsW623G1r-Chmo5RB4Yw JJ Olatunji]
+  | 3              = [https://www.youtube.com/channel/UCWZmCMB7mmKWcXJSIPRhzZw Miniminter]
+  | 4              = [https://www.youtube.com/channel/UCjB_adDAIxOL8GA4Y4OCt8g MM7Games]
+  | 5              = [https://www.youtube.com/user/ZerkaaHD Zerkaa]
+  | 6              = [https://www.youtube.com/user/ZerkaaPlays ZerkaaPlays]
+  | 7              = [https://www.youtube.com/user/TBJZL TBJZL]
+  | 8              = [https://www.youtube.com/user/EDITinGAMING TBJZLPlays]
+  | 9              = [https://www.youtube.com/user/Behzinga Behzinga]
+  | 10             = [https://www.youtube.com/channel/UCbzZFTHge5zk2yebSiWRZRg Beh2inga]
+  | 11             = [https://www.youtube.com/user/Vikkstar123 Vikkstar123]
+  | 12             = [https://www.youtube.com/user/VikkstarPlays VikkstarPlays]
+  | 13             = [https://www.youtube.com/user/Vikkstar123HD Vikkstar123HD]
+  | 14             = [https://www.youtube.com/user/wroetoshaw W2S]
+  | 15             = [https://www.youtube.com/channel/UC5_IT4-XpinnvNQwM1e15eQ W2S+]
+}}
+| years_active         = 2013–present
+| genre                = {{flatlist|
+* [[Entertainment]]
+* [[Let's Play|gaming]]
+* [[vlog]]
+* reaction
+}}
+| subscribers          = {{Rounddown|{{Sum|16.9|7.00|4.81|1.82|24.0|16.0|10.1|5.21|4.66|2.80|4.87|1.67|4.88|1.96|7.58|1.10|3.29|16.3|3.79}}|1}} million (combined)
+| views                = {{Rounddown|{{Sum|4.45|2.85|1.72|1.08|5.93|3.77|3.54|2.68|0.70|1.02|0.51|0.16|0.56|0.29|2.10|0.14|1.10|4.75|0.55}}|1}} billion (combined)
+| stats_update         = 14 October 2022
+| network              = {{flatlist|
+* [[Omnia Media]]
+* [[OP Talent]]
+}}
+| associated_acts      = [[Jme (musician)|Jme]]
+| silver_year          = <abbr title="Sidemen">2016</abbr>, <abbr title="MoreSidemen">2018</abbr>, <abbr title="SidemenReacts">2020</abbr>, <abbr title="SidemenShorts">2021</abbr>
+| gold_year            = <abbr title="Sidemen">2016</abbr>, <abbr title="MoreSidemen">2018</abbr>, <abbr title="SidemenReacts">2020</abbr>, <abbr title="SidemenShorts">2021</abbr>
+| diamond_year         = <abbr title="Sidemen">2020</abbr>
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox YouTube personality
+| name                 = Sidemen
+| logo                 = Sidemen Logo.svg
+| image                = Sidemen collage 4.5.jpg
+| caption              = Top to bottom from left column: [[Vikkstar123|Barn]], [[TBJZL|Brown]]; [[KSI|Olatunji]], Minter, Lewis; [[Behzinga|Payne]], and [[Zerkaa|Bradley]].
+| birth_date           = {{Unbulleted list
+  |Olajide Olayinka Williams Olatunji ([[KSI]])|{{birth date and age|1993|6|19|df=yes}}
+  |<hr>Simon Minter (Miniminter)|{{birth date and age|1992|09|07|df=y}}
+  |<hr>Joshua Bradley ([[Zerkaa]])|{{birth date and age|1992|09|04|df=y}}
+  |<hr>Tobit John Brown ([[TBJZL]])|{{birth date and age|df=y|1993|4|8}}
+  |<hr>Ethan Payne ([[Behzinga]])|{{birth date and age|df=y|1995|6|20}}
+  |<hr>Vikram Singh Barn ([[Vikkstar123]])|{{birth date and age|df=y|1995|8|2}}
+  |<hr>Harry Lewis (W2S)|{{birth date and age|1996|11|24|df=y}}
+}}
+| occupation           = [[YouTuber]]s
+| website              = {{URL|https://sidemen.com}}
+| origin               = London, England
+| channels             = [https://www.youtube.com/channel/UCDogdKl7t7NHzQ95aEwkdMw Sidemen]<br />[https://www.youtube.com/channel/UCh5mLn90vUaB1PbRRx_AiaA MoreSidemen]<br />[https://www.youtube.com/channel/UCjRkTl_HP4zOh3UFaThgRZw SidemenReacts]<br />[https://www.youtube.com/channel/UCbAZH3nTxzyNmehmTUhuUsA SidemenShorts]<br />
+{{Collapsible list
+  | framestyle     = border:none; padding:0;
+  | title          = Associated channels 
+  | 1              = [https://www.youtube.com/channel/UCVtFOytbRpEvzLjvqGG5gxQ KSI]
+  | 2              = [https://www.youtube.com/channel/UCGmnsW623G1r-Chmo5RB4Yw JJ Olatunji]
+  | 3              = [https://www.youtube.com/channel/UCWZmCMB7mmKWcXJSIPRhzZw Miniminter]
+  | 4              = [https://www.youtube.com/channel/UCjB_adDAIxOL8GA4Y4OCt8g MM7Games]
+  | 5              = [https://www.youtube.com/user/ZerkaaHD Zerkaa]
+  | 6              = [https://www.youtube.com/user/ZerkaaPlays ZerkaaPlays]
+  | 7              = [https://www.youtube.com/user/TBJZL TBJZL]
+  | 8              = [https://www.youtube.com/user/EDITinGAMING TBJZLPlays]
+  | 9              = [https://www.youtube.com/user/Behzinga Behzinga]
+  | 10             = [https://www.youtube.com/channel/UCbzZFTHge5zk2yebSiWRZRg Beh2inga]
+  | 11             = [https://www.youtube.com/user/Vikkstar123 Vikkstar123]
+  | 12             = [https://www.youtube.com/user/VikkstarPlays VikkstarPlays]
+  | 13             = [https://www.youtube.com/user/Vikkstar123HD Vikkstar123HD]
+  | 14             = [https://www.youtube.com/user/wroetoshaw W2S]
+  | 15             = [https://www.youtube.com/channel/UC5_IT4-XpinnvNQwM1e15eQ W2S+]
+}}
+| years_active         = 2013–present
+| genre                = {{flatlist|
+* [[Entertainment]]
+* [[Let's Play|gaming]]
+* [[vlog]]
+* reaction
+}}
+| subscribers          = {{Rounddown|{{Sum|16.9|7.00|4.81|1.82|24.0|16.0|10.1|5.21|4.66|2.80|4.87|1.67|4.88|1.96|7.58|1.10|3.29|16.3|3.79}}|1}} million (combined)
+| views                = {{Rounddown|{{Sum|4.45|2.85|1.72|1.08|5.93|3.77|3.54|2.68|0.70|1.02|0.51|0.16|0.56|0.29|2.10|0.14|1.10|4.75|0.55}}|1}} billion (combined)
+| stats_update         = 14 October 2022
+| network              = {{flatlist|
+* [[Omnia Media]]
+* [[OP Talent]]
+}}
+| associated_acts      = [[Jme (musician)|Jme]]
+| silver_year          = <abbr title="Sidemen">2016</abbr>, <abbr title="MoreSidemen">2018</abbr>, <abbr title="SidemenReacts">2020</abbr>, <abbr title="SidemenShorts">2021</abbr>
+| gold_year            = <abbr title="Sidemen">2016</abbr>, <abbr title="MoreSidemen">2018</abbr>, <abbr title="SidemenReacts">2020</abbr>, <abbr title="SidemenShorts">2021</abbr>
+| diamond_year         = <abbr title="Sidemen">2020</abbr>
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== TemplateData ==
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "An infobox for a YouTube personality or channel.",
+	"format": "{{_\n| ____________________ = _\n}}\n",
+	"params": {
+		"honorific_prefix": {
+			"aliases": [
+				"honorific prefix"
+			],
+			"label": "Honorific prefix",
+			"description": "Honorific prefix(es), to appear above the YouTube personality's name.",
+			"example": "[[Sir]]",
+			"type": "line"
+		},
+		"name": {
+			"label": {
+				"en": "Name",
+				"ar": "الإسم"
+			},
+			"description": {
+				"en": "The name of the YouTube personality or channel.",
+				"ar": "اسم الشخصية"
+			},
+			"type": "string",
+			"suggested": true
+		},
+		"honorific_suffix": {
+			"aliases": [
+				"honorific suffix"
+			],
+			"label": "Honorific suffix",
+			"description": "Honorific suffix(es), to appear below the YouTube personality's name.",
+			"example": "[[PhD]]",
+			"type": "line"
+		},
+		"logo": {
+			"label": {
+				"en": "Logo"
+			},
+			"description": {
+				"en": "The logo of the YouTube channel, if applicable."
+			},
+			"example": "Dude Perfect logo.svg",
+			"type": "wiki-file-name"
+		},
+		"logo_size": {
+			"label": {
+				"en": "Logo size"
+			},
+			"description": {
+				"en": "The logo width in pixels (\"px\" is automatically added if omitted)."
+			},
+			"default": "250px",
+			"example": "120px"
+		},
+		"logo_alt": {
+			"label": {
+				"en": "Logo alt text"
+			},
+			"description": {
+				"en": "Alt text for the logo, for visually impaired readers. One word (such as \"photograph\") is rarely sufficient. See WP:ALT."
+			},
+			"type": "string"
+		},
+		"logo_caption": {
+			"aliases": [
+				"logo caption"
+			],
+			"label": "Logo caption",
+			"description": "A caption for the logo, if needed.",
+			"type": "string"
+		},
+		"image": {
+			"label": {
+				"en": "Image"
+			},
+			"description": {
+				"en": "An image of the YouTube personality."
+			},
+			"type": "wiki-file-name"
+		},
+		"image_upright": {
+			"aliases": [
+				"upright"
+			],
+			"label": {
+				"en": "Image upright"
+			},
+			"description": {
+				"en": "Scales the image thumbnail from its default size by the given factor. Values less than 1 scale the image down (0.9 = 90%) and values greater than 1 scale the image up (1.15 = 115%)."
+			},
+			"default": "1",
+			"example": "1.15",
+			"type": "line"
+		},
+		"image_size": {
+			"label": {
+				"en": "Image size"
+			},
+			"description": {
+				"en": "The image width in pixels (\"px\" is automatically added if omitted)."
+			},
+			"default": "220px",
+			"example": "120px",
+			"aliases": [
+				"image size",
+				"imagesize"
+			],
+			"deprecated": "Use of this parameter is discouraged as per WP:IMGSIZE. Use \"image_upright\" instead.",
+			"type": "line"
+		},
+		"alt": {
+			"label": "Image alt text",
+			"description": "Alt text for the image, for visually impaired readers. One word (such as \"photograph\") is rarely sufficient. See WP:ALT.",
+			"type": "string"
+		},
+		"caption": {
+			"aliases": [
+				"image_caption",
+				"image caption"
+			],
+			"label": "Image caption",
+			"description": "A caption for the image, if needed. Try to include year of photo.",
+			"type": "string"
+		},
+		"birth_name": {
+			"label": "Birth name",
+			"description": "The birth name of the YouTube personality. Only use if different from \"name\".",
+			"type": "string"
+		},
+		"birth_date": {
+			"label": "Birth date",
+			"description": "The birth date of the YouTube personality. Use Template:Birth date and age (for living people) or Template:Birth date (for people who have died). If only a year of birth is known, or age as of a certain date, consider using Template:Birth year and age or Template:Birth based on age as of date.",
+			"example": "{{Birth date and age|1990|01|26}}"
+		},
+		"birth_place": {
+			"label": "Birth place",
+			"description": "The birth place of the YouTube personality: city, administrative region, sovereign state. Use the name of the birth place at the time of birth.",
+			"example": "[[Los Angeles]], California, United States",
+			"type": "string"
+		},
+		"death_date": {
+			"label": "Death date",
+			"description": "The death date of the YouTube personality. Use Template:Death date and age (if birth date is known) or Template:Death date (if birth date unknown).",
+			"example": "{{Death date and age|2010|12|30|1990|01|26}}"
+		},
+		"death_place": {
+			"label": "Death place",
+			"description": "The death place of the YouTube personality: city, administrative region, sovereign state. Use the name of the death place at the time of death.",
+			"example": "[[Paris]], France",
+			"type": "string"
+		},
+		"origin": {
+			"label": "Origin",
+			"description": "The city from which the subject originated. Usually appropriate for groups or companies.",
+			"example": "[[Paris]], France",
+			"type": "string"
+		},
+		"nationality": {
+			"label": "Nationality",
+			"description": "The nationality of the YouTube personality. Only use if nationality cannot be inferred from the birthplace per WP:INFONAT.",
+			"example": "American",
+			"type": "string"
+		},
+		"other_names": {
+			"label": "Other names",
+			"description": "Notable aliases of the subject. Listed outside of the \"YouTube information\" section, contrary to the \"pseudonym\" parameter.",
+			"type": "string"
+		},
+		"education": {
+			"label": "Education",
+			"description": "The YouTube personality's institution of higher education and degree, if notable. It is usually not relevant to include for non-graduates.",
+			"example": "[[University of Oxford]]",
+			"type": "string"
+		},
+		"occupation": {
+			"aliases": [
+				"occupations"
+			],
+			"label": "Occupation(s)",
+			"description": "The occupation(s) of the YouTube personality, as given in the lead.",
+			"example": "[[YouTuber]]",
+			"type": "string"
+		},
+		"spouse": {
+			"aliases": [
+				"spouses"
+			],
+			"label": "Spouse(s)",
+			"description": "Name of spouse(s), followed by years of marriage. Use Template:Marriage."
+		},
+		"partner": {
+			"aliases": [
+				"partners"
+			],
+			"label": "Partner(s)",
+			"description": "Name of long-term unmarried partner(s), followed by years.",
+			"example": "[[Name]] (1980–present)"
+		},
+		"children": {
+			"label": "Children",
+			"description": "Number of children (e.g., 3), or list of independently notable names."
+		},
+		"parents": {
+			"aliases": [
+				"parent"
+			],
+			"label": "Parent(s)",
+			"description": "Names of notable parent(s). If subject has only one notable mother or father, \"mother\" and \"father\" parameters may be used instead."
+		},
+		"mother": {
+			"label": "Mother",
+			"description": "Name of mother; include only if subject has one mother who is independently notable or particularly relevant. Overridden by \"parents\" parameter."
+		},
+		"father": {
+			"label": "Father",
+			"description": "Name of father; include only if subject has one father who is independently notable or particularly relevant. Overridden by \"parents\" parameter."
+		},
+		"relatives": {
+			"label": "Relatives",
+			"description": "Notable relative(s) of the YouTube personality."
+		},
+		"organization": {
+			"aliases": [
+				"organisation",
+				"organisations",
+				"organizations"
+			],
+			"label": "Organization(s)",
+			"description": "Organization(s) the YouTube personality has been signed to. Omit dates.",
+			"example": "[[OfflineTV]]"
+		},
+		"signature": {
+			"label": "Signature",
+			"description": "An image of the YouTube personality's signature.",
+			"type": "wiki-file-name"
+		},
+		"signature_size": {
+			"label": "Signature size",
+			"description": "The signature width in pixels (\"px\" is automatically added if omitted).",
+			"default": "150px",
+			"example": "100px"
+		},
+		"signature_alt": {
+			"aliases": [
+				"signature alt"
+			],
+			"label": "Signature alt",
+			"description": "Alt text for the signature image."
+		},
+		"website": {
+			"aliases": [
+				"homepage",
+				"URL"
+			],
+			"label": "Website (personal)",
+			"description": "The official website of the YouTube personality.",
+			"example": "{{URL|example.com}}",
+			"type": "content"
+		},
+		"module_personal": {
+			"label": "Module personal",
+			"description": "Used for embedding other infoboxes into the \"Personal information\" section of this one."
+		},
+		"pseudonym": {
+			"label": "Also known as",
+			"description": "Notable aliases of the YouTube personality or channel. Listed in the \"YouTube information\" section, contrary to the \"other_names\" parameter.",
+			"type": "string"
+		},
+		"channel_name": {
+			"label": {
+				"en": "Channel name"
+			},
+			"description": {
+				"en": "The primary YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/user/\". Use only one of \"channel_name\", \"channel_url\" or \"channel_direct_url\"."
+			},
+			"type": "string"
+		},
+		"channel_url": {
+			"label": {
+				"en": "Channel URL"
+			},
+			"description": {
+				"en": "The primary YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/channel/\". Use only one of \"channel_name\", \"channel_url\" or \"channel_direct_url\"."
+			},
+			"type": "string"
+		},
+		"channel_direct_url": {
+			"label": {
+				"en": "Channel direct URL"
+			},
+			"description": {
+				"en": "The primary YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/\". Use only one of \"channel_name\", \"channel_url\" or \"channel_direct_url\"."
+			},
+			"type": "string"
+		},
+		"channel_display_name": {
+			"label": {
+				"en": "Channel display name"
+			},
+			"description": {
+				"en": "The primary YouTube channel's display name, if it differs from \"channel_name\", \"channel_url\" or \"channel_direct_url\"."
+			},
+			"type": "string"
+		},
+		"channel_name2": {
+			"label": {
+				"en": "Second channel name"
+			},
+			"description": {
+				"en": "The second YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/user/\". Use only one of \"channel_name2\", \"channel_url2\" or \"channel_direct_url2\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_url2": {
+			"label": {
+				"en": "Second channel URL"
+			},
+			"description": {
+				"en": "The second YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/channel/\". Use only one of \"channel_name2\", \"channel_url2\" or \"channel_direct_url2\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_direct_url2": {
+			"label": {
+				"en": "Second channel direct URL"
+			},
+			"description": {
+				"en": "The second YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/\". Use only one of \"channel_name2\", \"channel_url2\" or \"channel_direct_url2\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_display_name2": {
+			"label": {
+				"en": "Second channel display name"
+			},
+			"description": {
+				"en": "The second YouTube channel's display name, if it differs from \"channel_name2\", \"channel_url2\" or \"channel_direct_url2\"."
+			},
+			"type": "string"
+		},
+		"channel_name3": {
+			"label": {
+				"en": "Third channel name"
+			},
+			"description": {
+				"en": "The third YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/user/\". Use only one of \"channel_name3\", \"channel_url3\" or \"channel_direct_url3\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_url3": {
+			"label": {
+				"en": "Third channel URL"
+			},
+			"description": {
+				"en": "The third YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/channel/\". Use only one of \"channel_name3\", \"channel_url3\" or \"channel_direct_url3\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_direct_url3": {
+			"label": {
+				"en": "Third channel direct URL"
+			},
+			"description": {
+				"en": "The third YouTube channel affiliated with the subject. Enter ONLY what comes after \"www.youtube.com/\". Use only one of \"channel_name3\", \"channel_url3\" or \"channel_direct_url3\". Do not include secondary channels unless they are covered by reliable sources in the body of the article."
+			},
+			"type": "string"
+		},
+		"channel_display_name3": {
+			"label": {
+				"en": "Third channel display name"
+			},
+			"description": {
+				"en": "The third YouTube channel's display name, if it differs from \"channel_name3\", \"channel_url3\" or \"channel_direct_url3\"."
+			},
+			"type": "string"
+		},
+		"channels": {
+			"label": "Channels",
+			"description": "Custom styling for the YouTube channels affiliated with the subject. Overridden by \"channel_name\", \"channel_url\" and \"channel_direct_url\".",
+			"type": "string"
+		},
+		"creator": {
+			"aliases": [
+				"creators",
+				"created_by"
+			],
+			"label": "Created by",
+			"description": "The creator(s) of the YouTube channel.",
+			"type": "string"
+		},
+		"presenter": {
+			"aliases": [
+				"presenters",
+				"presented_by"
+			],
+			"label": "Presented by",
+			"description": "The presenter(s) of the YouTube channel.",
+			"type": "string"
+		},
+		"location": {
+			"label": "Location",
+			"description": "The location of the YouTube channel, if notable. Not for mere residence.",
+			"example": "[[Los Angeles]], California, United States",
+			"type": "string"
+		},
+		"years_active": {
+			"aliases": [
+				"years active",
+				"yearsactive"
+			],
+			"label": "Years active",
+			"description": "Date range in years during which the YouTube channel was active. Use an en dash (–) to separate the years.",
+			"example": "2009–present",
+			"type": "string"
+		},
+		"genre": {
+			"label": "Genre",
+			"description": "The genre(s) of content produced by the YouTube channel.",
+			"example": "Comedy",
+			"type": "string",
+			"aliases": [
+				"genres"
+			]
+		},
+		"subscribers": {
+			"label": "Subscribers",
+			"description": "The number of subscribers the YouTube channel has.",
+			"example": "1.5 million",
+			"type": "string"
+		},
+		"subscriber_date": {
+			"description": "The month and year when the YouTube channel's subscriber count was last updated. The date is listed inline with the subscriber count. The all-encompassing \"stats_update\" parameter is generally recommended instead.",
+			"label": "Subscribers date",
+			"type": "string"
+		},
+		"views": {
+			"label": {
+				"en": "Total views"
+			},
+			"description": {
+				"en": "The number of views the YouTube channel has."
+			},
+			"example": "1.5 billion",
+			"type": "string"
+		},
+		"view_date": {
+			"label": {
+				"en": "Total views date"
+			},
+			"description": {
+				"en": "The month and year when the YouTube channel's view count was last updated. The date is listed inline with the view count. The all-encompassing \"stats_update\" parameter is generally recommended instead."
+			}
+		},
+		"network": {
+			"description": "The multi-channel network (MCN) that the YouTube channel has been a part of.",
+			"label": "Network",
+			"example": "[[Machinima Inc.]] (2013–2015)"
+		},
+		"language": {
+			"label": "Contents are in",
+			"description": "The primary language(s) of the YouTube channel. Use their English name.",
+			"type": "string",
+			"example": "Spanish"
+		},
+		"associated_acts": {
+			"label": "Associated acts",
+			"description": "Associated YouTube personalities or channels, such as those that collaborate with the subject.",
+			"type": "string"
+		},
+		"channel_website": {
+			"label": "Website (channel)",
+			"description": "The official website of the YouTube channel.",
+			"example": "{{URL|example.com}}"
+		},
+		"silver_year": {
+			"description": "The year the YouTube channel reached 100,000 subscribers. If the year is not known, use \"silver_button=yes\" instead.",
+			"label": "Silver Creator Award year",
+			"type": "string"
+		},
+		"silver_button": {
+			"description": "Enter \"yes\" if the YouTube channel has been awarded a Silver Creator Award for reaching 100,000 subscribers. Overriden by \"silver_year\".",
+			"label": "Silver Creator Award?",
+			"type": "line"
+		},
+		"gold_year": {
+			"description": "The year the YouTube channel reached 1,000,000 subscribers. If the year is not known, use \"gold_button=yes\" instead.",
+			"label": "Gold Creator Award year",
+			"type": "string"
+		},
+		"gold_button": {
+			"description": "Enter \"yes\" if the YouTube channel has been awarded a Gold Creator Award for reaching 1,000,000 subscribers. Overriden by \"gold_year\".",
+			"label": "Gold Creator Award?",
+			"type": "line"
+		},
+		"diamond_year": {
+			"description": "The year the YouTube channel reached 10,000,000 subscribers. If the year is not known, use \"diamond_button=yes\" instead.",
+			"label": "Diamond Creator Award year",
+			"type": "string"
+		},
+		"diamond_button": {
+			"description": "Enter \"yes\" if the YouTube channel has been awarded a Diamond Creator Award for reaching 10,000,000 subscribers. Overriden by \"diamond_year\".",
+			"label": "Diamond Creator Award?",
+			"type": "line"
+		},
+		"ruby_year": {
+			"description": "The year the YouTube channel reached 50,000,000 subscribers. If the year is not known, use \"ruby_button=yes\" instead.",
+			"label": "Custom Creator Award year",
+			"type": "string"
+		},
+		"ruby_button": {
+			"description": "Enter \"yes\" if the YouTube channel has been awarded a Custom Creator Award for reaching 50,000,000 subscribers. Overriden by \"ruby_year\".",
+			"label": "Custom Creator Award?",
+			"type": "line"
+		},
+		"red_diamond_year": {
+			"description": "The year the YouTube channel reached 100,000,000 subscribers. If the year is not known, use \"red_diamond_button=yes\" instead.",
+			"label": "Red Diamond Creator Award year",
+			"type": "string"
+		},
+		"red_diamond_button": {
+			"description": "Enter \"yes\" if the YouTube channel has been awarded a Red Diamond Creator Award for reaching 100,000,000 subscribers. Overridden by \"red_diamond_year\".",
+			"label": "Red Diamond Creator Award?",
+			"type": "line"
+		},
+		"expand": {
+			"label": "Expand",
+			"description": "Enter \"yes\" to expand the \"Creator Awards\" section by default."
+		},
+		"module": {
+			"label": "Module",
+			"description": "Used for embedding other infoboxes into this one."
+		},
+		"stats_update": {
+			"label": "Last updated",
+			"description": "The date when the YouTube channel's statistics were last updated. The date is listed at the bottom of the infobox."
+		},
+		"extra_information": {
+			"label": "Extra information",
+			"description": "If necessary, extra information can be added to the bottom of the infobox."
+		},
+		"subbox": {
+			"label": "Subbox",
+			"description": "Enter \"yes\" when embedding this infobox into another to retain the red-colored headings."
+		},
+		"embed": {
+			"label": "Embed",
+			"description": "Enter \"yes\" when embedding this infobox into another to remove the red-colored headings."
+		}
+	},
+	"paramOrder": [
+		"honorific_prefix",
+		"name",
+		"honorific_suffix",
+		"logo",
+		"logo_size",
+		"logo_alt",
+		"logo_caption",
+		"image",
+		"image_upright",
+		"image_size",
+		"alt",
+		"caption",
+		"birth_name",
+		"birth_date",
+		"birth_place",
+		"death_date",
+		"death_place",
+		"origin",
+		"nationality",
+		"other_names",
+		"education",
+		"occupation",
+		"spouse",
+		"partner",
+		"children",
+		"parents",
+		"mother",
+		"father",
+		"relatives",
+		"organization",
+		"signature",
+		"signature_size",
+		"signature_alt",
+		"website",
+		"module_personal",
+		"pseudonym",
+		"channel_name",
+		"channel_url",
+		"channel_direct_url",
+		"channel_display_name",
+		"channel_name2",
+		"channel_url2",
+		"channel_direct_url2",
+		"channel_display_name2",
+		"channel_name3",
+		"channel_url3",
+		"channel_direct_url3",
+		"channel_display_name3",
+		"channels",
+		"creator",
+		"presenter",
+		"location",
+		"years_active",
+		"genre",
+		"subscribers",
+		"subscriber_date",
+		"views",
+		"view_date",
+		"network",
+		"language",
+		"associated_acts",
+		"channel_website",
+		"silver_year",
+		"silver_button",
+		"gold_year",
+		"gold_button",
+		"diamond_year",
+		"diamond_button",
+		"ruby_year",
+		"ruby_button",
+		"red_diamond_year",
+		"red_diamond_button",
+		"expand",
+		"module",
+		"stats_update",
+		"extra_information",
+		"subbox",
+		"embed"
+	]
+}
+</templatedata>
+
+== Tracking categories ==
+* {{Category link with count|Pages using infobox YouTube personality with unknown parameters}}
+* {{Category link with count|Pages with YouTubeSubscribers module errors}}
+
+== See also ==
+* [[Template:Infobox Twitch streamer]]
+* [[Template:Infobox video game player]]
+* [[Template:Infobox podcast]]
+
+== References ==
+<references />
+
+<includeonly>{{Basepage subpage|
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:People and person infobox templates|YouTube personality]]
+[[Category:Independently git synced pages]][[Category:Arts and culture infobox templates|YouTube personality]]
+[[Category:Independently git synced pages]][[Category:Biographical templates usable as a module|YouTube personality]]
+[[Category:Independently git synced pages]][[Category:Infobox templates with module parameter|YouTube personality]]
+[[Category:Independently git synced pages]][[Category:Infobox templates with updated parameter]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
+[[Category:Independently git synced pages]][[Category:Templates that generate named references]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

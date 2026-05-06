@@ -1,0 +1,110 @@
+{{Infobox
+ | aboveclass  = fn org
+ | abovestyle  = background-color:#FFD068
+ | above       = {{{name}}}
+ | image       = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|{{{img|}}}}}}|size={{{image_size|}}}|sizedefault=frameless|upright=1.1|alt={{{image_alt|{{{img_alt|}}}}}}}}
+ | caption     = {{{caption|{{{img_capt|}}}}}}
+ | headerstyle = background-color: #FFD068
+
+ | label1 = [[Sanskrit]]
+ | data1 = {{{sanskrit_name|}}}
+
+ | label2 = [[Pāli]]
+ | data2 = {{{pali_name|}}}
+
+ | label3 = [[Bikol language|Bikol]]
+ | data3 = {{{bikol_name|}}}
+
+ | label4 = [[Burmese language|Burmese]]
+ | data4 = {{{burmese_name|}}}
+
+ | label5 = [[Cebuano language|Cebuano]]
+ | data5 = {{{cebuano_name|}}}
+
+ | label6 = [[Chinese language|Chinese]]
+ | data6 = {{{chinese_name|}}}
+
+ | label7 = [[English language|English]]
+ | data7 = {{{english_name|}}}
+
+ | label8 = [[Ilocano language|Ilocano]]
+ | data8 = {{{ilocano_name|}}}
+
+ | label9 = [[Japanese language|Japanese]]
+ | data9 = {{{japanese_name|}}}
+
+ | label10 = [[Sgaw Karen language|Karen]]
+ | data10 = {{{karen_name|}}}
+
+ | label11 = [[Khmer language|Khmer]]
+ | data11 = {{{khmer_name|}}}
+
+ | label12 = [[Korean language|Korean]]
+ | data12 = {{{korean_name|}}}
+
+ | label13 = [[Mongolian language|Mongolian]]
+ | data13 = {{{mongolian_name|}}}
+
+ | label14 = [[Okinawan language|Okinawan]]
+ | data14 = {{{okinawan_name|}}}
+
+ | label15 = [[Russian language|Russian]]
+ | data15 = {{{russian_name|}}}
+
+ | label16 = [[Shan language|Shan]]
+ | data16 = {{{shan_name|}}}
+
+ | label17 = [[Sinhala language|Sinhala]]
+ | data17 = {{{sinhala_name|}}}
+
+ | label18 = [[Tagalog language|Tagalog]]
+ | data18 = {{{tagalog_name|}}}
+
+ | label19 = [[Thai language|Thai]]
+ | data19 = {{{thai_name|}}}
+
+ | label20 = [[Classical Tibetan|Tibetan]]
+ | data20 = {{{tibetan_name|}}}
+
+ | label21 = [[Vietnamese language|Vietnamese]]
+ | data21 = {{{vietnamese_name|}}}
+
+ | header22 = {{#if:{{{veneration|}}}{{{attributes|}}}{{{shakti|}}}{{{preceded_by|}}}{{{succeeded_by|}}}{{{birth_name|}}}{{{birthplace|}}}{{{parents|}}}|Information}}
+
+ | label23 = Venerated by
+ | data23 = {{{veneration|}}}
+
+ | label24 = Attributes
+ | data24 = {{{attributes|}}}
+
+ | label25 = Shakti
+ | data25 = {{{shakti|}}}
+
+ | data26 = {{succession links
+   | left = {{#if:{{{preceded_by|}}}|'''Preceded by'''<br>{{{preceded_by}}} }}
+   | noarrows = yes
+   | center = 
+   | right = {{#if:{{{succeeded_by|}}}|'''Succeeded by'''<br>{{{succeeded_by|}}} }}
+ }}
+
+ | label27 = Birth name
+ | data27 = {{{birth_name|}}}
+
+ | label28 = Birthplace
+ | data28 = {{{birth_place|{{{birthplace|}}}}}}
+
+ | label29 = Parents
+ | data29 = {{{parents|}}}
+
+ | belowstyle  = background-color: #EBEBEB
+ | below       = {{portal-inline|Religion|size=tiny}}
+ 
+}}<noinclude>
+{{documentation}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

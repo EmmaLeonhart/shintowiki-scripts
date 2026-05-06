@@ -1,0 +1,264 @@
+{{main other|{{#if:{{Has short description}} | |{{#invoke:Type in location|main|Bridge|{{#invoke:WikidataIB|getValue|P276|qid={{{qid|}}}|name=locale|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{locale|{{{location|}}}}}}}}}}}}}}{{Infobox
+| bodyclass   = vcard
+| autoheaders = y
+| child       = {{{child|{{{embed|}}}}}}
+
+| headerstyle = background-color: #efefef;
+
+| above       = <div style="display:inline;" class="fn org">{{If empty|{{{name|{{{bridge_name|{{{aqueduct_name|}}}}}}}}}|{{PAGENAMEBASE}}}}</div>{{#if:{{{native_name|}}}|<br /><div style="display:inline;" class="nickname" {{#if:{{{native_name_lang|}}}| lang="{{{native_name_lang}}}"}}>{{{native_name}}}</div>}}
+
+| image       = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|P18|qid={{{qid|}}}|name=image|maxvals=1|noicon=true|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{{image|}}}}}|size={{{image_size|}}}|upright={{{image_upright|1.14}}}|sizedefault=250px|maxsize=325px|alt={{{alt|}}}}}
+| caption     = {{#if:{{{image|}}}|{{{caption|{{{image_caption|}}}}}}|{{#invoke:WikidataIB|getValue|P18|qid={{{qid|}}}|qual=P2096|qualsonly=y|lang=en|name=caption|maxvals=1|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{{caption|{{{image_caption|}}}}}}}}}}
+
+| label1      = [[Geographic coordinate system|Coordinates]]
+|  data1      = {{#invoke:WikidataIB|getCoords|qid={{{qid|}}}|name=coordinates|fetchwikidata=coordinates|format={{{coord_format|}}}|{{{coordinates|}}}}}
+
+| label2      = [[Ordnance Survey National Grid|OS grid reference]]
+|  data2      = {{gbmappingsmall|{{#invoke:WikidataIB|getValue|P613|qid={{{qid|}}}|noicon=true|name=os_grid_reference|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{{os_grid_reference|}}}}}}}
+
+| label3      = Carrie{{#if:{{{collapsed|}}}{{{destroyed|}}}{{{demolished|}}}|d|s}}
+|  data3      = {{#invoke:WikidataIB|getValue|P2505|qid={{{qid|}}}|name=carries|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{carries|}}}}}
+
+| label4      = Crosse{{#if:{{{collapsed|}}}{{{destroyed|}}}{{{demolished|}}}|d|s}}
+|  data4      = {{#invoke:WikidataIB|getValue|P177|qid={{{qid|}}}|name=crosses|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{crosses|}}}}}
+
+| label5      = Locale
+|  data5      = {{#invoke:WikidataIB|getValue|P276|qid={{{qid|}}}|name=locale|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{locale|{{{location|}}}}}}}}
+| class5      = label
+
+| label6      = Beg{{#if:{{{collapsed|}}}{{{destroyed|}}}{{{demolished|}}}|an|ins}}
+|  data6      = {{{starts|}}}
+
+| label7      = End{{#if:{{{collapsed|}}}{{{destroyed|}}}{{{demolished|}}}|ed|s}}
+|  data7      = {{{ends|}}}
+
+| label8      = Official name
+|  data8      = {{#invoke:WikidataIB|getValue|P1448|qid={{{qid|}}}|name=official_name|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{official_name|}}}}}
+
+| label9      = Other name(s)
+|  data9      = {{{other_name|{{{also_known_as|}}}}}}
+| class9      = nickname
+
+| label10     = [[Namesake|Named for]]
+|  data10     = {{#invoke:WikidataIB|getValue|P138|qid={{{qid|}}}|name=named_for|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{named_for|}}}}}
+
+| label11     = Owner
+|  data11     = {{#invoke:WikidataIB|getValue|P127|qid={{{qid|}}}|name=owner|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{owner|}}}}}
+
+| label12     = Maintained by
+|  data12     = {{#invoke:WikidataIB|getValue|P126|qid={{{qid|}}}|name=maintained|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{maint|{{{maintained|}}}}}}}}
+
+| label13     = Heritage status
+|  data13     = {{#invoke:WikidataIB|getValue|P1435|qid={{{qid|}}}|name=heritage|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{heritage|}}}}}
+| class13     = category
+
+| label14     = {{#if:{{{id_type|}}}|{{{id_type}}}|[[National Bridge Inventory#ID numbers|ID number]]}}
+|  data14     = {{#if:{{{id_type|}}}|{{{id|}}}|{{#invoke:WikidataIB|getValue|P3676|qid={{{qid|}}}|name=id|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{{id|}}}}}}}
+
+| label15     = Website
+|  data15     = {{URL2|{{wdib|P856|qid={{{qid|}}}|name=website|fwd={{{fetchwikidata|}}}|osd={{{onlysourced|no}}}|{{{website|}}}}}}}
+
+| label16     = {{#if:{{{preceded|}}}|Preceded by|Next upstream}}
+|  data16     = {{#invoke:WikidataIB|getValue|P2673|qid={{{qid|}}}|name=upstream|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{#if:{{{preceded|}}}|{{{preceded|}}}|{{{upstream|}}}}}}}
+
+| label17     = {{#if:{{{followed|}}}|Followed by|Next downstream}}
+|  data17     = {{#invoke:WikidataIB|getValue|P2674|qid={{{qid|}}}|name=downstream|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|no}}}|{{#if:{{{followed|}}}|{{{followed|}}}|{{{downstream|}}}}}}}
+
+| header26    = Characteristics
+ | label27    = Design
+ |  data27    = {{{design|}}}
+ | class27    = category
+
+ | label28    = Material
+ |  data28    = {{#invoke:String2 | ucfirst | {{#invoke:WikidataIB|getValue|P186|qid={{{qid|}}}|name=material|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{material|}}}}}}}
+ | class28    = category
+
+ | label29    = Trough construction
+ |  data29    = {{{material1|}}}
+
+ | label30    = Pier construction
+ |  data30    = {{{material2|}}}
+
+ | label31    = Total length
+ |  data31    = {{#invoke:WikidataIB|getValue|P2043|qid={{{qid|}}}|name=length|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{length|}}}}}
+
+ | label32    = Width
+ |  data32    = {{#invoke:WikidataIB|getValue|P2049|qid={{{qid|}}}|name=width|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{width|}}}}}
+
+ | label33    = Height
+ |  data33    = {{#invoke:WikidataIB|getValue|P2048|qid={{{qid|}}}|name=height|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{height|}}}}}
+
+ | label34    = Water depth
+ |  data34    = {{{depth|}}}
+
+ | label35    = Traversable?
+ |  data35    = {{{traversable|{{{passable|}}}}}}
+
+ | label36    = [[Towpath]]s
+ |  data36    = {{{towpath|}}}
+
+ | label37    = Longest span
+ |  data37    = {{#invoke:WikidataIB|getValue|P2787|qid={{{qid|}}}|name=mainspan|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{mainspan|}}}}}
+
+ | label38    = {{abbr|No.|Number}} of spans
+ |  data38    = {{#invoke:WikidataIB|getValue|P1314|qid={{{qid|}}}|name=spans|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{number_spans|{{{spans|}}}}}}}}
+
+ | label39    = Piers in water
+ |  data39    = {{{piers_in_water|{{{pierswater|}}}}}}
+
+ | label40    = Load limit
+ |  data40    = {{{load|}}}
+
+ | label41    = [[Clearance above]]
+ |  data41    = {{{clearance_above|{{{clearance|}}}}}}
+
+ | label42    = [[Air draft#Clearance below|Clearance below]]
+ |  data42    = {{#invoke:WikidataIB|getValue|P2793|qid={{{qid|}}}|name=below|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{clearance_below|{{{below|}}}}}}}}
+
+ | label43    = {{abbr|No.|Number}} of [[lane]]s
+ |  data43    = {{{lanes|}}}
+
+ | label44    = Design life
+ |  data44    = {{{life|}}}
+
+ | label45    = Diameter
+ |  data45    = {{#invoke:WikidataIB|getValue|P2386|qid={{{qid|}}}|name=diameter|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{diameter|}}}}}
+
+ | label46    = First section length
+ |  data46    = {{{first_length|}}}
+
+ | label47    = First section diameter
+ |  data47    = {{{first_diameter|}}}
+
+ | label48    = Second section length
+ |  data48    = {{{second_length|}}}
+
+ | label49    = Second section diameter
+ |  data49    = {{{second_diameter|}}}
+
+ | label50    = Third section length
+ |  data50    = {{{third_length|}}}
+
+ | label51    = Third section diameter
+ |  data51    = {{{third_diameter|}}}
+
+ | label52    = Capacity
+ |  data52    = {{{capacity|}}}
+
+| header55    = Rail characteristics
+ | label56    = {{abbr|No.|Number}} of [[Track (rail transport)|tracks]]
+ |  data56    = {{{num_track|{{{notrack|}}}}}}
+
+ | label57    = [[Track gauge]]
+ |  data57    = {{#invoke:WikidataIB|getValue|P1064|qid={{{qid|}}}|name=gauge|convert=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{track_gauge|{{{gauge|}}}}}}}}
+
+ | label58    = [[Structure gauge]]
+ |  data58    = {{{structure_gauge|}}}
+
+ | label59    = [[Railway electrification|Electrified]]
+ |  data59    = {{{electrification|}}}
+
+| header60    = History
+ | label61    = Architect
+ |  data61    = {{#invoke:WikidataIB|getValue|P84|qid={{{qid|}}}|name=architect|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{architect|}}}}}
+
+ | label62    = Designer
+ |  data62    = {{#invoke:WikidataIB|getValue|P287|qid={{{qid|}}}|name=designer|uselbl=yes|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{designer|}}}}}
+
+ | label63    = Contracted lead designer
+ |  data63    = {{{contracted_designer|}}}
+
+ | label64    = Successful competition design
+ |  data64    = {{{winner|}}}
+
+ | label65    = Engineering design by
+ |  data65    = {{{engineering|}}}
+
+ | label66    = {{nowrap|Constructed by}}
+ |  data66    = {{#invoke:WikidataIB|getValue|P193|qid={{{qid|}}}|name=builder|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{builder|}}}}}
+
+ | label67    = Fabrication by
+ |  data67    = {{{fabricator|}}}
+
+ | label68    = Built
+ |  data68    = {{{built|}}}
+
+ | label69    = Construction start
+ |  data69    = {{{begin|}}}
+
+ | label70    = Construction end
+ |  data70    = {{{complete|}}}
+
+ | label71    = Construction cost
+ |  data71    = {{#invoke:WikidataIB|getValue|P2130|qid={{{qid|}}}|unitabbr=true|name=cost|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{cost|}}}}}
+
+ | label72    = {{#if:{{{opening|}}}|Opening|Opened}}
+ |  data72    = {{#invoke:WikidataIB|getValue|P571|qid={{{qid|}}}|name=open|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{if empty|{{{opening|}}}|{{{open|}}}|{{{opened|}}}}}}}
+
+ | label73    = {{#if:{{{dedicated|}}}|Dedicated|Inaugurated}}
+ |  data73    = {{#invoke:WikidataIB|getValue|P1619|qid={{{qid|}}}|name=inaugurated|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{if empty|{{{dedicated|}}}|{{{inaugurated|}}}}}}}
+
+ | label74    = Rebuilt
+ |  data74    = {{{rebuilt|}}}
+
+ | label75    = Collapsed
+ |  data75    = {{{collapsed|}}}
+
+ | label76    = Destroyed
+ |  data76    = {{{destroyed|}}}
+
+ | label77    = Closed
+ |  data77    = {{#invoke:WikidataIB|getValue|P3999|qid={{{qid|}}}|name=closed|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{closed|}}}}}
+
+ | label78    = Demolished
+ |  data78    = {{#invoke:WikidataIB|getValue|P576|qid={{{qid|}}}|name=demolished|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{demolished|}}}}}
+
+ | label79    = Replace{{#if:{{{collapsed|}}}{{{destroyed|}}}{{{demolished|}}}|d|s}}
+ |  data79    = {{#invoke:WikidataIB|getValue|P1398|qid={{{qid|}}}|name=replaces|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{replaces|}}}}}
+
+ | label80    = Replaced by
+ |  data80    = {{#invoke:WikidataIB|getValue|P167|qid={{{qid|}}}|name=replaced_by|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{replaced_by|}}}}}
+
+| header81    = Statistics
+ | label82    = [[Annual average daily traffic|Daily traffic]]
+ |  data82    = {{{traffic|}}}
+
+ | label83    = Toll
+ |  data83    = {{#invoke:WikidataIB|getValue|P2555|qid={{{qid|}}}|name=toll|unitabbr=true|fetchwikidata={{{fetchwikidata|}}}|onlysourced={{{onlysourced|yes}}}|{{{toll|}}}}}
+
+| header84    = {{#if:{{{extra|}}}|<nowiki />}}
+| rowstyle84  = display:none;
+| data84      = {{{embedded|{{{extra|}}}}}}
+
+| header85    = Location
+ | data86     = {{#invoke:Infobox mapframe
+    | auto
+    | onByDefault = yes
+    | mapframe-frame-width = 250
+    | mapframe-marker = bridge
+    | mapframe-type = landmark
+ }}
+ | data87     = {{#invoke:Infobox mapframe|autocaption}}
+
+| header91    = References
+ |  data92    = {{{references|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox bridge]] with unknown parameter "_VALUE_"|ignoreblank = 1| also_known_as | alt | aqueduct_name | architect | begin | below | bridge_name | builder | built | capacity | caption | carries | child | clearance | clearance_above | clearance_below | closed | collapsed | demolished | complete | contracted_designer | coord_format | coordinates | cost | crosses | dedicated | depth | design | designer | destroyed | diameter | downstream | electrification | embed | embedded | ends | engineering | extra | fabricator | fetchwikidata |first_length | first_diameter | followed | gauge | height | heritage | id | id_type | image | image_caption | image_size | image_upright | inaugurated | lanes | length | life | load | locale | location | mainspan | maint | maintained | mapframe | mapframe-caption | mapframe-custom | mapframe-id | mapframe-coord | mapframe-wikidata | mapframe-point | mapframe-shape | mapframe-frame-width | mapframe-frame-height | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-geomask | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-zoom | mapframe-length_km | mapframe-length_mi | mapframe-area_km2 | mapframe-area_mi2 | mapframe-frame-coordinates | mapframe-frame-coord | mapframe-switcher | material | material1 | material2 | name | named_for | native_name | native_name_lang | notrack | num_track | number_spans | official_name | onlysourced | open | opened | opening | os_grid_reference | other_name | owner | passable | piers_in_water | pierswater | preceded | qid | rebuilt | references | refs | replaced_by | replaces | second_length | second_diameter | spans | starts | structure_gauge | third_length | third_diameter | toll | towpath | track_gauge | traffic | traversable | upstream | website | width | winner 
+}}{{Main other|
+{{#if:{{{id|}}}|}}{{#if:{{{clearance|}}}|}}{{#if:{{{extra|}}}|{{#switch:{{str left|{{{extra}}}|3}}
+|<tr=|<di=|#default=}}
+}}{{#if:{{{coordinates|}}}||{{#if:{{#property:P625}}||}}}}}}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox bridge with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox bridge with id]]
+[[Category:Pages using infobox bridge with clearance]]
+[[Category:Pages using infobox bridge with extra embedded table]]
+[[Category:Pages using infobox bridge with extra embedded div]]
+[[Category:Pages using infobox bridge with extra]]
+[[Category:Pages using infobox bridge with empty coordinates parameter]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

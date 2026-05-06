@@ -1,0 +1,288 @@
+{{Infobox
+ |bodyclass = hProduct
+ |bodystyle = {{#if:{{{box_width|}}}|width:{{{box_width}}};}}
+ |labelstyle = {{#if:{{{label_width|}}}|width:{{{label_width}}};}}
+ |headerstyle = color:{{Greater color contrast ratio|{{{background|#eee}}}}}; background-color:{{{background|#eee}}};
+
+ |above = {{If empty|{{{name|}}}<includeonly>|{{PAGENAMEBASE}}</includeonly>}}
+ |abovestyle = color:{{Greater color contrast ratio|{{{background|#eee}}}}}; background-color:{{{background|#eee}}};
+ |aboveclass = fn
+
+ |image = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{imagesize|{{{image_size|}}}}}}|sizedefault=300x300px|alt={{{imagealt|}}}}}
+ |caption = {{{caption|}}}
+ |image2 = {{#invoke:InfoboxImage|InfoboxImage|image={{{interiorimage|}}}|size={{{imagesize|{{{image_size|}}}}}}|sizedefault=300x300px|alt={{{interiorimagealt|}}}}}
+ |caption2 = {{{interiorcaption|}}}
+
+|label11 = Stock type
+ |data11 = {{{stocktype|{{{StockType|}}}}}}
+
+|label12 = In service
+ |data12 = {{{service|}}}
+
+|label13 = Manufacturer
+|class13 = brand
+ |data13 = {{{manufacturer|}}}
+
+|label14 = Designer
+ |data14 = {{{designer|}}}
+
+|label15 = Assembly
+ |data15 = {{{assembly|}}}
+
+|label16 = Order {{abbr|no.|number}}
+ |data16 = {{{ordernumber|}}}
+
+|label17 = Built at
+ |data17 = {{{factory|}}}
+
+|label18 = Family name
+ |data18 = {{{family|}}}
+
+|label19 = Replaced
+ |data19 = {{{replaced|}}}
+
+|label30 = Constructed
+ |data30 = {{{yearconstruction|{{{constructed|}}}}}}
+
+|label31 = Entered service
+ |data31 = {{{yearservice|}}}
+
+|label32 = Refurbished
+ |data32 = {{{refurbishment|}}}
+
+|label33 = Retired
+ |data33 = {{{yearretired|}}}
+
+|label34 = Scrapped
+ |data34 = {{{yearscrapped|}}}
+
+|label35 = Number under construction
+ |data35 = {{{numberconstruction|}}}
+
+|label36 = Number built
+ |data36 = {{{numberbuilt|}}}
+
+|label37 = Number in service
+ |data37 = {{{numberservice|}}}
+
+|label38 = Number retired
+ |data38 = {{{numberretired|}}}
+
+|label39 = Number preserved
+ |data39 = {{{numberpreserved|}}}
+
+|label40 = Number scrapped
+ |data40 = {{{numberscrapped|}}}
+
+|label41 = Predecessor
+ |data41 = {{{predecessor|}}}
+
+|label42 = Successor
+ |data42 = {{{successor|}}}
+
+|label51 = Formation
+ |data51 = {{{formation|}}}
+
+|label52 = Diagram
+ |data52 = {{{diagram|}}}
+
+|label53 = Design code
+ |data53 = {{{code|}}}
+
+|label54 = Fleet numbers
+ |data54 = {{{fleetnumbers|}}}
+
+|label55 = Capacity
+ |data55 = {{{capacity|}}}
+
+|label56 = [[Rolling stock company|Owners]]
+ |data56 = {{{owner|}}}
+
+|label57 = Operators
+ |data57 = {{{operator|}}}
+
+|label58 = Depots
+ |data58 = {{{depots|}}}
+
+|label59 = {{#ifexpr:{{#invoke:string|find|{{SUBJECTPAGENAME}}|New York City Subway car}}|Service(s) assigned|Lines served}}
+ |data59 = {{{lines|}}}
+
+|header130 = {{#if:{{{carbody|}}}{{{TrainLength|}}}{{{trainlength|}}}{{{CarLength|}}}{{{carlength|}}}{{{width|}}}{{{height|}}}{{{floorheight|}}}{{{platformheight|}}}{{{entrylevelorstep|}}}{{{doors|}}}{{{art-sections|}}}{{{wheeldiameter|}}}{{{wheelbase|}}}{{{maxspeed|}}}{{{weight|}}}{{{axleload|}}}{{{traction|}}}{{{engine|}}}{{{Enginetype|}}}{{{enginetype|}}}{{{cylindercount|}}}
+{{{cylindersize|}}}{{{traction motors|}}}{{{poweroutput|}}}{{{tractiveeffort|}}}{{{transmission|}}}{{{acceleration|}}}{{{deceleration|}}}{{{aux|}}}{{{powersupply|}}}{{{hvac|}}}{{{electricsystem|}}}{{{collectionmethod|}}}{{{uicclass|}}}{{{wheel arrangement|}}}{{{aarwheels|}}}{{{bogies|}}}{{{Brakes|}}}{{{brakes|}}}{{{safety|}}}{{{coupling|}}}{{{multipleworking|}}}{{{gauge|}}}{{{wheels driven|}}}{{{steep gradient|}}}{{{gradient|}}}{{{minimum curve|}}}{{{lowfloor|}}}|Specifications}}
+
+|label131 = Car body construction
+ |data131 = {{{carbody|}}}
+
+|label132 = Train length
+ |data132 = {{{trainlength|{{{TrainLength|}}}}}}
+
+|label133 = Car length
+ |data133 = {{{carlength|{{{CarLength|}}}}}}
+
+|label134 = Width
+ |data134 = {{{width|}}}
+
+|label135 = Height
+ |data135 = {{{height|}}}
+
+|label136 = Floor height
+ |data136 = {{{floorheight|}}}
+
+|label137 = [[Low-floor tram|Low-floor]]
+ |data137 = {{{lowfloor|}}}
+
+|label138 = [[Railway platform height|Platform height]]
+ |data138 = {{{platformheight|}}}
+
+|label139 = Entry
+ |data139 = {{{entrylevelorstep|}}}
+
+|label140 = Doors
+ |data140 = {{{doors|}}}
+
+|label141 = Articulated sections
+ |data141 = {{{art-sections|}}}
+
+|label142 = Wheel diameter 
+ |data142 = {{{wheeldiameter|}}}
+
+|label143 = [[Wheelbase#Rail|Wheelbase]]
+ |data143 = {{{wheelbase|}}}
+
+|label144 = Maximum speed
+ |data144 = {{{maxspeed|}}}
+
+|label145 = Weight
+ |data145 = {{{weight|}}}
+
+|label146 = [[Axle load]]
+ |data146 = {{{axleload|}}}
+
+|label147 = [[Grade (slope)|Steep gradient]]
+ |data147 = {{{steep gradient|{{{gradient|}}}}}}
+
+|label148 = Traction system
+ |data148 = {{{traction|}}}
+
+|label149 = [[Prime mover (locomotive)|Prime mover(s)]]
+ |data149 = {{{engine|}}}
+
+|label150 = Engine type
+ |data150 = {{{enginetype|{{{Enginetype|}}}}}}
+
+|label151=[[Cylinder (engine)|Cylinder]] count
+ |data151={{{cylindercount|}}}
+
+|label152=[[Cylinder (engine)|Cylinder]] size
+ |data152={{{cylindersize|}}}
+
+|label153=[[Engine displacement|Displacement]]
+ |data153={{{displacement|}}}
+
+|label154 = [[Traction motor]]s
+ |data154= {{{traction motors|}}}
+
+|label155 = Power output
+ |data155 = {{{poweroutput|}}}
+
+|label156 = [[Tractive effort]]
+ |data156 = {{{tractiveeffort|}}}
+
+|label157= Transmission
+ |data157 = {{{transmission|}}}
+
+|label158 = [[Acceleration]]
+ |data158 = {{{acceleration|}}}
+
+|label159 = [[Deceleration]]
+ |data159 = {{{deceleration|}}}
+
+|label160 = Auxiliaries
+ |data160 = {{{aux|}}}
+
+|label161 = [[Head-end power|Power supply]]
+ |data161 = {{{powersupply|}}}
+
+|label162 = [[Heating, ventilation, and air conditioning|HVAC]]
+ |data162 = {{{hvac|}}}
+
+|label163 = [[Railway electrification|Electric system(s)]]
+ |data163 = {{{electricsystem|}}}
+
+|label164 = [[Current collector|Current collector(s)]]
+ |data164 = {{{collectionmethod|}}}
+
+|label165 = [[UIC classification of locomotive axle arrangements|UIC classification]]
+ |data165 = {{{uicclass|}}}
+
+|label166 = [[AAR wheel arrangement]]
+ |data166 = {{{aarwheels|{{{wheel arrangement|}}}}}}
+
+|label167 = [[Adhesion railway|Wheels driven]]
+ |data167 = {{{wheels driven|}}}
+
+|label168 = [[Bogie]]s
+ |data168 = {{{bogies|}}}
+
+|label169 = [[Minimum railway curve radius|Minimum turning radius]]
+ |data169 = {{{minimum curve|}}}
+
+|label170 = [[Railway brake|Braking system(s)]]
+ |data170 = {{{brakes|{{{Brakes|}}}}}}
+
+|label171 = Safety system(s)
+ |data171 = {{{safety|}}}
+
+|label172 = [[Railway coupling|Coupling system]]
+ |data172 = {{{coupling|}}}
+
+|label173 = [[Multiple working]]
+ |data173 = {{{multipleworking|}}}
+
+|label174 = Headlight type
+ |data174 = {{{light|}}}
+
+|label176 = Seating
+ |data176 = {{{seating|{{{CarSeating|}}}}}}
+
+|label197 = [[Track gauge]]
+ |data197 = {{{gauge|}}}
+
+|header198 = {{#if:{{{notes|}}}|Notes/references}}
+ |data199 = {{{notes|}}}
+
+}}{{#invoke:Check for unknown parameters|check
+|unknown=|preview=Page using [[Template:Infobox train]] with unknown parameter "_VALUE_"
+|aarwheels |acceleration |art-sections |assembly |aux |axleload
+|background |bogies |box_width |Brakes |brakes
+|capacity |caption |carbody |CarLength |carlength |CarSeating |code |collectionmethod |constructed |coupling |cylindercount |cylindersize
+|deceleration |depots |designer |diagram |displacement |doors
+|electricsystem |engine |Enginetype |enginetype |entrylevelorstep
+|factory |family |fleetnumbers |floorheight |formation
+|gauge |gradient
+|height |hvac
+|image |image_size |imagealt |imagesize |interiorcaption |interiorimage |interiorimagealt
+|label_width |light |lines |lowfloor
+|manufacturer |maxspeed |minimum curve |multipleworking
+|name |notes |numberbuilt |numberconstruction |numberpreserved |numberretired |numberscrapped |numberservice
+|owner |operator |ordernumber
+|platformheight |poweroutput |powersupply |predecessor
+|refurbishment |replaced
+|safety |seating |service |steep gradient |StockType |stocktype |successor
+|traction |traction motors |tractiveeffort |TrainLength |trainlength |transmission
+|uicclass
+|weight |wheel arrangement |wheelbase |wheeldiameter |wheels driven |width
+|yearconstruction |yearretired |yearscrapped |yearservice
+}}{{#if:
+
+|  }}{{Main other|{{Ensure AAA contrast ratio|base={{#invoke:String|replace|source={{{background|#eee}}}|pattern=;.*|plain=false|count=1|ignore_errors=1}}|other={{#invoke:String|match|{{{background|#eee}}}|pattern=color:%s*([^;]*)|plain=false|ignore_errors=1}}|category=}}}}<noinclude>
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Pages using Infobox train with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Unusual parameters of Infobox train template]]
+[[Category:Independently git synced pages]][[Category:Articles using Template:Infobox train with invalid colour combination]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

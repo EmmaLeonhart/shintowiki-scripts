@@ -1,0 +1,197 @@
+{| style="width:95%; text-align:center; margin:0 auto; display:inline-table;"
+|-
+| style="text-align:center; border:0; padding-bottom:0"|<div id="before-after"></div> {{#if:{{{p1|}}}|'''Preceded by'''}} || style="text-align:center;border:0; padding-bottom:0;"| {{#if:{{{s1|}}}|'''Succeeded by'''}}
+|-
+| style="vertical-align:top; text-align:center; border:0;"| {{#if:{{{p1|}}} | {{{!}} style="width:100%; text-align:center; margin:0 auto;  border:0;"
+{{!}}-
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p1|}}}|[[File:{{{flag_p1}}}|20px{{#ifeq:{{{border_p1}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p1|}}}|{{{image_p1}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p1}}}]]
+{{!}}-
+{{#if:{{{p2|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p2|}}}|[[File:{{{flag_p2}}}|20px{{#ifeq:{{{border_p2}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p2|}}}|{{{image_p2}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p2}}}]]}}
+{{!}}-
+{{#if:{{{p3|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p3|}}}|[[File:{{{flag_p3}}}|20px{{#ifeq:{{{border_p3}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p3|}}}|{{{image_p3}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p3}}}]]}}
+{{!}}-
+{{#if:{{{p4|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p4|}}}|[[File:{{{flag_p4}}}|20px{{#ifeq:{{{border_p4}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p4|}}}|{{{image_p4}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p4}}}]]}}
+{{!}}-
+{{#if:{{{p5|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p5|}}}|[[File:{{{flag_p5}}}|20px{{#ifeq:{{{border_p5}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p5|}}}|{{{image_p5}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p5}}}]]}}
+{{!}}-
+{{#if:{{{p6|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p6|}}}|[[File:{{{flag_p6}}}|20px{{#ifeq:{{{border_p6}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p6|}}}|{{{image_p6}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p6}}}]]}}
+{{!}}-
+{{#if:{{{p7|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p7|}}}|[[File:{{{flag_p7}}}|20px{{#ifeq:{{{border_p7}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p7|}}}|{{{image_p7}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p7}}}]]}}
+{{!}}-
+{{#if:{{{p8|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p8|}}}|[[File:{{{flag_p8}}}|20px{{#ifeq:{{{border_p8}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p8|}}}|{{{image_p8}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p8}}}]]}}
+{{!}}-
+{{#if:{{{p9|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p9|}}}|[[File:{{{flag_p9}}}|20px{{#ifeq:{{{border_p9}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p9|}}}|{{{image_p9}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p9}}}]]}}
+{{!}}-
+{{#if:{{{p10|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p10|}}}|[[File:{{{flag_p10}}}|20px{{#ifeq:{{{border_p10}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p10|}}}|{{{image_p10}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p10}}}]]}}
+{{!}}-
+{{#if:{{{p11|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p11|}}}|[[File:{{{flag_p11}}}|20px{{#ifeq:{{{border_p11}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p11|}}}|{{{image_p11}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p11}}}]]}}
+{{!}}-
+{{#if:{{{p12|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p12|}}}|[[File:{{{flag_p12}}}|20px{{#ifeq:{{{border_p12}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p12|}}}|{{{image_p12}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p12}}}]]}}
+{{!}}-
+{{#if:{{{p13|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p13|}}}|[[File:{{{flag_p13}}}|20px{{#ifeq:{{{border_p13}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p13|}}}|{{{image_p13}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p13}}}]]}}
+{{!}}-
+{{#if:{{{p14|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p14|}}}|[[File:{{{flag_p14}}}|20px{{#ifeq:{{{border_p14}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p14|}}}|{{{image_p14}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p14}}}]]}}
+{{!}}-
+{{#if:{{{p15|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p15|}}}|[[File:{{{flag_p15}}}|20px{{#ifeq:{{{border_p15}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p15|}}}|{{{image_p15}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p15}}}]]}}
+{{!}}-
+{{#if:{{{p16|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p16|}}}|[[File:{{{flag_p16}}}|20px{{#ifeq:{{{border_p16}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p16|}}}|{{{image_p16}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p16}}}]]}}
+{{!}}-
+{{#if:{{{p17|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p17|}}}|[[File:{{{flag_p17}}}|20px{{#ifeq:{{{border_p17}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p17|}}}|{{{image_p17}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p17}}}]]}}
+{{!}}-
+{{#if:{{{p18|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p18|}}}|[[File:{{{flag_p18}}}|20px{{#ifeq:{{{border_p18}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p18|}}}|{{{image_p18}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p18}}}]]}}
+{{!}}-
+{{#if:{{{p19|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p19|}}}|[[File:{{{flag_p19}}}|20px{{#ifeq:{{{border_p19}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p19|}}}|{{{image_p19}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p19}}}]]}}
+{{!}}-
+{{#if:{{{p20|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p20|}}}|[[File:{{{flag_p20}}}|20px{{#ifeq:{{{border_p20}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p20|}}}|{{{image_p20}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p20}}}]]}}
+{{!}}-
+{{#if:{{{p21|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p21|}}}|[[File:{{{flag_p21}}}|20px{{#ifeq:{{{border_p21}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p21|}}}|{{{image_p21}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p21}}}]]}}
+{{!}}-
+{{#if:{{{p22|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_p22|}}}|[[File:{{{flag_p22}}}|20px{{#ifeq:{{{border_p22}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_p22|}}}|{{{image_p22}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:left;"{{!}} [[{{{p22}}}]]}}
+
+{{!}}}
+}}
+| style="vertical-align:top; text-align:center;border:0;"| {{#if:{{{s1|}}} | {{{!}} style="width:92%; text-align:center; margin:0 auto; border:0;"
+{{!}}-
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s1}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s1|}}}|[[File:{{{flag_s1}}}|20px{{#ifeq:{{{border_s1}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s1|}}}|{{{image_s1}}}|[[File:Blank.png|22px|link=|alt=]]}}}}
+{{!}}-
+{{#if:{{{s2|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s2}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s2|}}}|[[File:{{{flag_s2}}}|20px{{#ifeq:{{{border_s2}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s2|}}}|{{{image_s2}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s3|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s3}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s3|}}}|[[File:{{{flag_s3}}}|20px{{#ifeq:{{{border_s3}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s3|}}}|{{{image_s3}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s4|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s4}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s4|}}}|[[File:{{{flag_s4}}}|20px{{#ifeq:{{{border_s4}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s4|}}}|{{{image_s4}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s5|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s5}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s5|}}}|[[File:{{{flag_s5}}}|20px{{#ifeq:{{{border_s5}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s5|}}}|{{{image_s5}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s6|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s6}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s6|}}}|[[File:{{{flag_s6}}}|20px{{#ifeq:{{{border_s6}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s6|}}}|{{{image_s6}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s7|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s7}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s7|}}}|[[File:{{{flag_s7}}}|20px{{#ifeq:{{{border_s7}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s7|}}}|{{{image_s7}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s8|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s8}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s8|}}}|[[File:{{{flag_s8}}}|20px{{#ifeq:{{{border_s8}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s8|}}}|{{{image_s8}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s9|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s9}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s9|}}}|[[File:{{{flag_s9}}}|20px{{#ifeq:{{{border_s9}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s9|}}}|{{{image_s9}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s10|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s10}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s10|}}}|[[File:{{{flag_s10}}}|20px{{#ifeq:{{{border_s10}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s10|}}}|{{{image_s10}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s11|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s11}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s11|}}}|[[File:{{{flag_s11}}}|20px{{#ifeq:{{{border_s11}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s11|}}}|{{{image_s11}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s12|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s12}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s12|}}}|[[File:{{{flag_s12}}}|20px{{#ifeq:{{{border_s12}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s12|}}}|{{{image_s12}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s13|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s13}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s13|}}}|[[File:{{{flag_s13}}}|20px{{#ifeq:{{{border_s13}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s13|}}}|{{{image_s13}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s14|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s14}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s14|}}}|[[File:{{{flag_s14}}}|20px{{#ifeq:{{{border_s14}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s14|}}}|{{{image_s14}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s15|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s15}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s15|}}}|[[File:{{{flag_s15}}}|20px{{#ifeq:{{{border_s15}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s15|}}}|{{{image_s15}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s16|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s16}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s16|}}}|[[File:{{{flag_s16}}}|20px{{#ifeq:{{{border_s16}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s16|}}}|{{{image_s16}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s17|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s17}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s17|}}}|[[File:{{{flag_s17}}}|20px{{#ifeq:{{{border_s17}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s17|}}}|{{{image_s17}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s18|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s18}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s18|}}}|[[File:{{{flag_s18}}}|20px{{#ifeq:{{{border_s18}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s18|}}}|{{{image_s18}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s19|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s19}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s19|}}}|[[File:{{{flag_s19}}}|20px{{#ifeq:{{{border_s19}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s19|}}}|{{{image_s19}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s20|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s20}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s20|}}}|[[File:{{{flag_s20}}}|20px{{#ifeq:{{{border_s20}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s20|}}}|{{{image_s20}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s21|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s21}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s21|}}}|[[File:{{{flag_s21}}}|20px{{#ifeq:{{{border_s21}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s21|}}}|{{{image_s21}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+{{!}}-
+{{#if:{{{s22|}}} |
+{{!}}style="border:0; padding:0; vertical-align:middle; text-align:right;"{{!}} [[{{{s22}}}]]
+{{!}}style="border:0; padding:0; vertical-align:middle;"{{!}} {{#if:{{{flag_s22|}}}|[[File:{{{flag_s22}}}|20px{{#ifeq:{{{border_s22}}}|no||{{!}}border}}|link=|alt=]]|{{#if:{{{image_s22|}}}|{{{image_s22}}}|[[File:Blank.png|22px|link=|alt=]]}}}}}}
+
+{{!}}}
+}}
+
+{{!}}}<noinclude>
+{{documentation|content=
+This subtemplate is used to simplify the code of {{tl|infobox country}}.  It should not be used directly. It can currently handle up to 21 flags.
+}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,61 @@
+<includeonly>{{Infobox
+ | bodyclass    = infobox-user-script
+ | bodystyle    = {{#if: {{Yesno|{{{styled|}}}}} | border: 2px ridge #CAE1FF; width: 30em; padding-bottom: 0px; |  }} {{{bodystyle|}}}
+
+ | title        = {{#if:{{{mainsource|}}}|<span class="userscript-install-data" data-mainsource="{{{mainsource|}}}" data-install-target="{{{install-target|common.js}}}">}}{{#if: {{Yesno|{{{styled|}}}}} | [[Wikipedia:User scripts|User script]] | {{{name|{{SUBPAGENAME}}}}} }}{{#if:{{{mainsource|}}}|</span>}}
+ | above        = {{#if: {{Yesno|{{{styled|}}}}} | {{{name|{{SUBPAGENAME}}}}}  |  }}
+
+ | titlestyle   = {{#if: {{Yesno|{{{styled|}}}}} | font-size: 0.95em; padding: 0px; margin: 0px |  }}
+ | abovestyle   = {{#if: {{Yesno|{{{styled|}}}}} | background:#83C5DA; color:inherit; padding: 3px 0px |  }}
+ | labelstyle   = {{#if: {{Yesno|{{{styled|}}}}} | background:#DFEFFF; color:inherit; padding: 0px 7px; vertical-align: middle |  }}
+ | datastyle    = {{#if: {{Yesno|{{{styled|}}}}} | padding: 5px 5px; |  }}
+
+ | image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logosize|}}}|upright={{{logoupright|}}}|alt={{{logoalt|}}}}}
+ | caption      = {{{logo-caption|}}}
+
+ | image2       = {{#invoke:InfoboxImage|InfoboxImage|image={{{screenshot|}}}|size={{{screenshotsize|}}}|upright={{{screenshotupright|}}}|alt={{{screenshotalt|}}}}}
+ | caption2     = {{{screenshot-caption|}}}
+
+ | label1       = Description
+ | data1        = {{{desc|}}}
+
+ | label2       = Author{{pluralize from text|{{{author|}}}|plural=s}}
+ | data2        = {{{author|}}}
+
+ | label3       = Maintainer{{pluralize from text|{{{maintainer|}}}|plural=s}}
+ | data3        = {{{maintainer|}}}
+
+ | label4       = Status
+ | data4        = {{{status|}}}
+
+ | label5       = First released
+ | data5        = {{{released|}}}
+
+ | label6       = Version
+ | data6        = {{{version|}}}
+
+ | label7       = Updated
+ | data7        = {{{updated|{{#time:F j, Y|{{REVISIONTAMP:{{{mainsource|{{Linkless exists|{{FULLPAGENAME}}.js|{{FULLPAGENAME}}.js|{{Linkless exists|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}}}}}}}}}}}}<br /> &nbsp; &nbsp; ({{Time ago|{{#time:H:i j F Y|{{REVISIONTAMP:{{{mainsource|{{Linkless exists|{{FULLPAGENAME}}.js|{{FULLPAGENAME}}.js|{{Linkless exists|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}}}}}}}}}}}}|min_magnitude=days}})}}}
+
+ | label8       = Browsers
+ | data8        = {{{browsers|}}}
+
+ | label9       = Skins
+ | data9        = {{{skins|}}}
+
+ | label10       = Source{{#if:{{{beta|}}}|<hr />Beta}}
+ | data10        = {{{source| {{#if:{{{mainsource|}}}| [[{{{mainsource|}}}]] | [[{{Linkless exists|{{FULLPAGENAME}}.js|{{FULLPAGENAME}}.js|{{Linkless exists|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}.css|{{FULLPAGENAME}}}}}}]] }} }}}{{#if:{{{beta|}}}|<hr />{{{beta}}}}}
+
+ | label11       = [[GitHub]] repository
+ | data11        = {{#ifeq:{{{github|}}}|||{{GitHub|{{{github}}}|link=hidden}}}}
+
+ | label12       = Repository
+ | data12        = {{#if:{{{repository|}}}|[{{{repository}}} {{{repository-name|{{#invoke:String|replace|{{#invoke:URLutil|getHost|{{{repository}}}}}|^www%.|||false}}}}}]}}
+
+}}{{#switch:{{{categorize|{{{cat|}}}}}}|never|no=|{{#switch:{{NAMESPACENUMBER}}|2|4=}} }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox Wikipedia user script]] with unknown parameter "_VALUE_" | styled | bodystyle | install-target | name | logo | logosize | logoupright | logoalt | logo-caption | screenshot | screenshotsize | screenshotupright | screenshotalt | screenshot-caption | desc | author | maintainer | status | released | version | updated | browsers | skins | source | mainsource | beta | GitHub | github | repository | repository-name | categorize | cat }}</includeonly><noinclude>
+{{documentation}}
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Wikipedia scripts|{{SUBPAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

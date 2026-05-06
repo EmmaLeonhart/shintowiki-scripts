@@ -1,0 +1,17 @@
+<noinclude>{{pp-template|small=yes}}
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>{{#if:{{{free|}}}
+ |{{{free}}}{{#if:{{isnumeric|{{{free}}}}}|&nbsp;{{error|units?}}}}
+ |{{#if:{{{met|}}}
+  |{{convert|{{{met}}}|{{{met_unit|km}}}|abbr=on}}
+  |{{#if:{{{imp|}}}
+   |{{convert|{{{imp}}}|{{{imp_unit|miles}}}|abbr=on}}
+  }}
+ }}
+}}
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Articles requiring unit attention]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+</noinclude>

@@ -1,0 +1,38 @@
+{{#switch:{{{1|}}}{{{2|}}}{{{3|}}}
+ |AL|AK|AZ|AR|CA|CO|CT|DE|FL|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WV|WI|WY|AS|GU|PR=in {{ISO 3166 name|US-{{{2}}}}}
+ |GA=in Georgia (U.S. state)
+ |NY|WA=in {{ISO 3166 name|US-{{{2}}}}} (state)
+ |DC|MP|UM|VI=in the {{ISO 3166 name|US-{{{2}}}}}
+ |AB|BC|MB|NB|NL|NS|NU|ON|PE|QC|SK|YT=in {{ISO 3166 name|CA-{{{3}}}}}
+ |NT=in the {{ISO 3166 name|CA-{{{3}}}}}
+ |AGU|BCN|BCS|CAM|CHH|CHP|DUR|GRO|GUA|HID|JAL|MOR|NAY|NLE|OAX|PUE|QUE|ROO|SIN|SLP|SON|TAB|TAM|TLA|YUC|ZAC=in {{ISO 3166 name|MX-{{{2}}}}}
+ |MEX={{#ifeq:{{{2|}}}|MEX|in {{ISO 3166 name|MX-{{{2}}}}}|in Mexico}}
+ |CMX|DIF=in Mexico City
+ |COA=in Coahuila
+ |MIC=in Michoacán
+ |VER=in Veracruz
+ |NSW|QLD|SA|TAS|VIC=in {{ISO 3166 name|AU-{{{2}}}}}
+ |ACT=in the {{ISO 3166 name|AU-{{{2}}}}}
+ |AFR|AFRICA=in the Trans-African Highway network
+ |ARAB=in the Arab Mashreq International Road Network
+ |ASIA=in the Asian Highway Network
+ |EUR=in the International E-road network
+ |KOS=in Kosovo
+ |YUG=in Yugoslavia
+ |CPV=in Cape Verde
+ |GEO=in Georgia (country)
+ |ALA|CAF|COG|COD|CZE|DOM|GMB|IMN|NLD|PHL|ARE|GBR|USA=in the {{country name|{{{1}}}}}
+ |#default={{#switch:{{{1|}}}-{{{2|}}}
+  |AUS-NT=in the {{ISO 3166 name|AU-NT}}
+  |AUS-WA=in {{ISO 3166 name|AU-WA}}
+  |MEX-COL=in {{ISO 3166 name|MX-COL}}
+  |#default=in {{country name|{{{1}}}}}
+  }}
+ |=without location
+ }}
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,61 @@
+{{Infobox
+| above         = {{{name}}}
+| abovestyle     = text-align:center;background-color:#ededed;
+
+| subheader      = {{{start}}}{{#if:{{#invoke:String|match|{{{start}}}{{{end}}}| |plain=true|nomatch=1}}|–|&nbsp;–&#32;}}{{{end}}}
+| subheaderstyle = padding-bottom: 0.4em; border-bottom: 1px solid #aaa; font-weight: bold;
+
+| image          = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|upright={{{image_upright|1}}}|alt={{{alt|}}}}}
+| caption        = {{{caption|}}}
+
+| label1         = Location
+|  data1         = {{{location|}}}
+| label2         = Including
+|  data2         = {{{including|}}}
+| label3         = {{#if:{{{monarch title|}}}|{{{monarch title}}}|Monarch(s)}}
+|  data3         = {{{monarch|}}}
+| label4         = {{#if:{{{leader title|}}}|{{{leader title}}}|Leader(s)}}
+|  data4         = {{#if:{{{leader|}}}|{{{leader}}}|{{{leaders|}}}}}
+| label5         = President(s)
+|  data5         = {{{presidents|}}}
+| label6         = Prime Minister(s)
+|  data6         = {{{primeministers|}}}
+| label7         = Key events
+|  data7         = {{{key_events|}}}
+
+| below  = {{#if:{{{before|}}}{{{after|}}}|'''Chronology''' <br><table style="background:var(--background-color-neutral, #eaecf0); color: inherit; border-top: 1px solid #aaa;" width="100%">
+<tr>
+<td width="50%" style="text-align:left;">{{#if:{{{before|}}} |
+  [[File:Arrleft.svg|10px|link=|class=skin-invert-image]] {{#if:{{{before|}}} | {{{before|}}}}}}}</td>
+<td width="50%" style="text-align:right;">{{#if:{{{after|}}} | {{#if:{{{after|}}} | {{{after|}}} | {{{next|}}}}} [[File:Arrright.svg|10px|link=|class-skin-invert-image]]}}</td>
+</tr></table>}}
+
+}}<noinclude>
+{{Documentation|content=
+{{Parameter names example|_template=Infobox historical era|name|location|start|end|image|alt|caption|before|including|after|monarch|leaders|presidents|primeministers|key_events}}
+<syntaxhighlight lang="wikitext" _base="" style="overflow: auto;">{{Infobox historical era
+| name      = 
+| location  =
+| start     = 
+| end       = 
+| image     = 
+| alt       = 
+| caption   = 
+| before    = 
+| including = 
+| after     = 
+| monarch   = 
+| leaders   = 
+| presidents = 
+| primeministers = 
+| key_events =
+}}</syntaxhighlight>
+}}
+[[Category:History and events infobox templates]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

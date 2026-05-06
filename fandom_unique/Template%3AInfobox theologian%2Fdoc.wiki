@@ -1,0 +1,170 @@
+{{Documentation subpage}}
+
+{{Uses infobox person|wrapped=1}}
+{{Lua|Module:Template wrapper|Module:Check for conflicting parameters}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+
+To use the template, copy the wikitext below, and paste it in the top section of the article’s main page. If the article is not divided into sections, it should be placed on top. Then, fill out the data fields. You can omit any unused fields. 
+
+== Usage ==
+{{Parameter names example
+| honorific_prefix   
+| name               
+| honorific_suffix   
+| image              
+| image_size         
+| alt                
+| caption            
+| native_name        
+| native_name_lang   
+| birth_name         
+| birth_date         
+| birth_place        
+| death_date         
+| death_place        
+| education          
+| occupation         
+| period             
+| notable_works      
+| spouse             
+| children           
+| era                
+| language           
+| tradition_movement 
+| school_tradition   
+| main_interests     
+| notable_ideas      
+| signature          
+| signature_alt      
+| signature_size     
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox theologian
+| honorific_prefix   = 
+| name               = 
+| honorific_suffix   = 
+| image              = 
+| image_size         = 
+| alt                = 
+| caption            = 
+| native_name        = 
+| native_name_lang   = 
+| birth_name         = 
+| birth_date         = 
+| birth_place        = 
+| death_date         = 
+| death_place        = 
+| education          = 
+| occupation         = 
+| period             = 
+| notable_works      = 
+| spouse             = 
+| children           = 
+| era                = 
+| language           = 
+| tradition_movement = 
+| school_tradition   = 
+| main_interests     = 
+| notable_ideas      = 
+| signature          = 
+| signature_alt      = 
+| signature_size     = 
+}}
+</syntaxhighlight>
+
+== Parameters ==
+This template accepts all parameters that {{tl|Infobox person}} does, see [[Template:Infobox person/doc#Parameters|here]] for a complete list. Theological parameters are shown below:
+; religion
+: e.g., Christian
+
+; denomination
+: specific denomination
+
+; ordination
+: date of ordination
+
+; ordained_by
+: person who performed the ordination
+
+; era
+: dates that theologian was active
+
+; language
+: language that theologian wrote their main texts
+
+; tradition_movement
+: strain of theology practiced (e.g, Calvinism)
+
+; main_interests
+: Should be explained in the main text of the article; Those that are not mentioned in the main text may be deleted.
+
+; notable_ideas
+: Should be explained in the main text of the article; Those that are not mentioned in the main text may be deleted.
+
+; child_header
+: when embedded in another infobox, by default, this infobox starts with a '''Theology career''' header. If child_header is an explicit "no", this header is suppressed
+
+== Example ==
+{{Infobox theologian
+| name               = John Calvin 
+| image              = John Calvin 2.jpg
+| caption            = Barcelona, Spain, 1554.
+| birth_name         = Jean Cauvin
+| birth_date         = {{Birth date|1510|07|19|df=yes}} For living people supply only the year unless the exact date is already WIDELY published, as per [[WP:DOB]]. Treat such cases as if only the year is known, so use {{tl|birth year and age}} or a similar option.
+| birth_place        = [[Noyon]], [[Picardy]],<br/>[[Kingdom of France|France]]
+| death_date         = {{Death date and age|1564|05|27|1509|07|10|df=yes}}
+| death_place        = [[Geneva]], [[Old Swiss Confederacy|Switzerland]]
+| occupation         = [[Protestant Reformers|Reformer]], [[Minister (Christianity)|minister]], [[author]]
+| notable_works      = ''[[Institutes of the Christian Religion]]''
+| main_interests     = [[Systematic theology]]
+| notable_ideas      = [[Predestination]], [[Monergism]]
+| signature          = John Calvin signature.png
+| signature_size     = 170px
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox theologian
+| name               = John Calvin 
+| image              = John Calvin 2.jpg
+| caption            = Barcelona, Spain, 1554.
+| birth_name         = Jean Cauvin
+| birth_date         = {{Birth date|1510|07|19|df=yes}} For living people supply only the year unless the exact date is already WIDELY published, as per [[WP:DOB]]. Treat such cases as if only the year is known, so use {{tl|birth year and age}} or a similar option.
+| birth_place        = [[Noyon]], [[Picardy (region)|Picardy]],<br/>[[Kingdom of France|France]]
+| death_date         = {{Death date and age|1564|05|27|1509|07|10|df=yes}}
+| death_place        = [[Geneva]], [[Old Swiss Confederacy|Switzerland]]
+| occupation         = [[Protestant Reformer|Reformer]], [[Minister (Christianity)|minister]], author
+| notable_works      = ''[[Institutes of the Christian Religion]]''
+| main_interests     = [[Systematic theology]]
+| notable_ideas      = [[Predestination]], [[Monergism]]
+| signature          = John Calvin signature.png
+| signature_size     = 170px
+}}
+</syntaxhighlight>
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox theologian with unknown parameters}}
+* {{clc|Pages using infobox theologian with conflicting parameters}}
+* {{clc|Pages using infobox theologian with deprecated parameters}}
+* {{clc|Pages using infobox theologian with embed equal yes}}
+* {{clc|No local image but image on Wikidata}} – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== See also ==
+* {{tl|Infobox person}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Theology work group|Infobox Theologian]]
+[[Category:Independently git synced pages]][[Category:Christian infobox templates|Theologian]]
+[[Category:Independently git synced pages]][[Category:People and person infobox templates|Theologian]]
+[[Category:Independently git synced pages]][[Category:Templates calling Infobox person|Theologian]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

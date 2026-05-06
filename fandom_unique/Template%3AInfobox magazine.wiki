@@ -1,0 +1,92 @@
+{{Infobox
+| italic title = {{{italic title|<noinclude>no
+[[Category:Templates missing wikidata]]
+</noinclude>}}}
+| bodyclass  = hproduct
+| title      = <includeonly>''{{if empty|{{{title|}}}|{{PAGENAMEBASE}}}}''</includeonly>
+| titleclass = fn
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo_size|{{{image_size|}}}}}}|class={{{logo_class|}}}|sizedefault=180px}}
+| image2     = {{#invoke:InfoboxImage|InfoboxImage|image={{{image_file|}}}|size={{{image_size|}}}|sizedefault=frameless|alt={{{image_alt|}}}|page={{{image_page|}}}}}
+| caption2   = {{if empty|{{{caption|}}}|{{{image_caption|}}}}}
+
+| label1  = {{longitem|Native name}}
+| data1       = {{{native_name|}}}
+| label2     = {{#if:{{{editor_title|}}}|{{{editor_title}}}|Editor}}
+| data2      = {{{editor|}}}
+| label3     = {{#if:{{{editor_title2|}}}|{{{editor_title2}}}|Editor}}
+| data3      = {{{editor2|}}}
+| label4     = {{#if:{{{editor_title3|}}}|{{{editor_title3}}}|Editor}}
+| data4      = {{{editor3|}}}
+| label5     = {{#if:{{{editor_title4|}}}|{{{editor_title4}}}|Editor}}
+| data5      = {{{editor4|}}}
+| label6     = {{#if:{{{editor_title5|}}}|{{{editor_title5}}}|Editor}}
+| data6      = {{{editor5|}}}
+| label7     = {{#if:{{{editor_title6|}}}|{{{editor_title6}}}|Editor}}
+| data7      = {{{editor6|}}}
+| label8     = Former editors
+| data8      = {{{previous_editor|}}}
+| label9     = Staff writers
+| data9      = {{{staff_writer|}}}
+| label10     = Photographer
+| data10      = {{{photographer|}}}
+
+| label20    = Categories
+| data20     = {{{category|}}}
+| label21    = Frequency
+| data21     = {{{frequency|}}}
+| label22    = Format
+| data22     = {{{format|}}}
+| label23    = [[List of magazines by circulation|Circulation]]
+| data23     = {{{circulation|}}}
+| label24    = Publisher
+| data24     = {{{publisher|}}}
+| class25    = brand
+| label25    = Paid circulation
+| data25     = {{{paid_circulation|}}}
+| label26    = Unpaid circulation
+| data26     = {{{unpaid_circulation|}}}
+| label27    = Total circulation
+| data27     = {{{total_circulation|}}} {{#if:{{{total_circulation|}}}|{{#if:{{{circulation_year|}}}|({{{circulation_year|}}})}}}}
+| label28    = Founder
+| data28     = {{{creator|{{{founder|}}}}}}
+| label29    = Founded
+| data29     = {{{founded|}}}
+| label30    = First issue
+| data30     = {{{firstdate|}}}
+| label31    = Final issue{{#if:{{{finalnumber|}}}|<br />Number}}
+| data31     = {{{finaldate|{{{lastdate|}}}}}}{{#if:{{{finalnumber|}}}|<br />{{{finalnumber|}}}}}
+
+| label41    = Company
+| data41     = {{{company|}}}
+| label42    = Country
+| data42     = {{{country|}}}
+| label43    = Based in
+| data43     = {{{based|}}}
+| label44    = Language
+| data44     = {{{language|}}}
+| label45    = Website
+| data45     = {{{website|}}}
+| label46    = [[ISSN (identifier)|ISSN]]
+| data46     = {{#if:{{{issn|{{{ISSN|}}}}}}
+ |{{#if:{{{eissn|{{{eISSN|}}}}}}
+     |{{ISSN link|{{{issn|{{{ISSN|}}}}}}}}&nbsp;(print)<br />{{ISSN link|{{{eissn|{{{eISSN|}}}}}}}}&nbsp;(web)
+     |{{ISSN link|{{{issn|{{{ISSN|}}}}}}}}
+   }}
+ |{{#if:{{{eissn|{{{eISSN|}}}}}}
+     |{{ISSN link|{{{eissn|{{{eISSN|}}}}}}}}
+   }}
+ }}
+| label47    = [[OCLC (identifier)|OCLC]]
+| data47     = {{#if:{{{oclc|{{{OCLC|}}}}}}|[https://www.worldcat.org/oclc/{{urlencode:{{{oclc|{{{OCLC|}}}}}} }} {{{oclc|{{{OCLC|}}}}}}]}}
+
+| data60 = {{{module|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox magazine]] with unknown parameter "_VALUE_"|ignoreblank=y| based | caption | category | circulation | circulation_year | company | country | creator | editor | editor_title | editor_title2 | editor_title3 | editor_title4 | editor_title5 | editor_title6 | editor2 | editor3 | editor4 | editor5 | editor6 | eISSN | eissn | finaldate | finalnumber | firstdate | format | founded | founder | frequency | image_alt | image_caption | image_file | image_page | image_size | ISSN | issn | italic title | language | lastdate | logo | logo_class | logo_size | module | native_name | OCLC | oclc | paid_circulation | photographer | previous_editor | publisher | staff_writer | title | total_circulation | unpaid_circulation | website }}<noinclude>
+{{Documentation}}
+
+</noinclude>
+<noinclude>
+[[Category:Pages using infobox magazine with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

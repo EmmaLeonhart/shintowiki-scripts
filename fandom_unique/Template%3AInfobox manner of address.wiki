@@ -1,0 +1,32 @@
+{{Infobox
+| child      = {{#if:{{{child|}}}{{{embed|}}}|yes}}
+| bodyclass  = vcard
+| abovestyle = font-weight: normal; background-color: {{#if:{{{background|}}}|{{{background}}}|#DEDEDE}}; {{#if:{{{color|{{{colour|}}}}}}|color: {{{color|{{{colour}}}}}};}}
+| above      = <includeonly><span style="font-size:80%">{{#if:{{{type|}}}|{{{type}}} styles|Styles}} of</span><br>'''<span class="fn">{{{royal name|{{{name|{{PAGENAMEBASE}}}}}}}}</span>'''{{#if:{{{consort|}}}|<span style="font-size:80%"> as&nbsp;consort</span>}}</includeonly>
+| title      = {{#if:{{{child|}}}{{{embed|}}}|<div style="background-color: {{#if:{{{background|}}}|{{{background}}}|#DEDEDE}}; {{#if:{{{color|{{{colour|}}}}}}|color: {{{color|{{{colour}}}}}};}}">'''{{#if:{{{type|}}}|{{{type}}} styles|Styles}}'''</div>}}
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|alt={{{image_alt|}}}|size={{{image_size|{{{size|}}}}}} }} {{#invoke:InfoboxImage|InfoboxImage|image={{{image2|}}}|alt={{{image2_alt|}}}|size={{{image2_size|{{{size2|{{{image_size|{{{size|}}}}}}}}}}}} }}
+| caption    = {{{caption|}}}
+| label1     = [[:en:Style (manner of address)|Reference style]]
+| data1      = {{{dipstyle|{{{reference|}}}}}}
+| label2     = Spoken style
+| data2      = {{{offstyle|{{{spoken|}}}}}}
+| label3     = Religious style
+| data3      = {{{relstyle|{{{religious|}}}}}}
+| label4     = Posthumous style
+| data4      = {{{deathstyle|{{{posthumous|}}}}}}
+| label5     = Alternative style
+| data5      = {{{altstyle|{{{alternative|}}}}}}
+| label6     = Informal style
+| data6      = {{{informal|}}}
+| label7     = [[Episcopal see|See]]
+| data7      = {{{see|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox manner of address]] with unknown parameter "_VALUE_"|ignoreblank=y| alternative | altstyle | background | caption | child | color | colour | consort | deathstyle | dipstyle | embed | image | image_alt | image_size | image2 | image2_alt | image2_size | informal | name | offstyle | posthumous | reference | religious | relstyle | royal name | see | size | size2 | spoken | type }}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox manner of address with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,112 @@
+{{Infobox
+| bodyclass   = vevent
+| bodystyle   = {{{bodystyle|}}}
+
+| titleclass  = summary
+| title       = {{#if:{{{title|{{{name|}}}}}} |{{{title|{{{name|}}}}}} |<includeonly>{{PAGENAMEBASE}}</includeonly>}}
+
+| image       = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo size|{{{logo_size|}}}}}}|sizedefault=121px|alt={{{logo alt|{{{logo_alt|}}}}}}}}
+| caption     = {{{logo caption|}}}
+| image2      = {{#if:{{{collapsible|}}} |{{Hidden begin |title=Screenshot |toggle=left |titlestyle=text-align:left |contentstyle=text-align:center}} }}{{#invoke:InfoboxImage|InfoboxImage |image={{{screenshot|}}} |size={{{screenshot_size|{{{screenshot size|}}}}}} |sizedefault=300px |alt={{{screenshot_alt|{{{screenshot alt|}}}}}} }}
+| caption2    =      {{{screenshot caption|}}}{{#if:{{{collapsible|}}} |{{Hidden end}} }}
+
+| headerstyle = background-color: #eee;
+
+| header1    = {{#if:{{{sampleCode|}}}|Sample Code}}
+| data2      = {{#if:{{{sampleCode|}}}|<div style=" text-align:left;">{{{sampleCode|}}}</div> }}
+| data3 = <div style="text-align:center;">{{{sampleCode caption|}}}</div>
+
+| label4      = [[Programming paradigm|Paradigm]]{{#if:{{{paradigms|}}}|s}}
+| data4       = {{{paradigm|{{{paradigms|}}}}}}
+
+| label5      = Family
+| data5       = {{{family|}}}
+
+| label6      = [[Software design|Designed&nbsp;by]]
+| data6       = {{{designer|{{{designers|}}}}}}
+
+| label7      = [[Software developer|Developer]]{{#if:{{{developers|}}}|s}}
+| class7      = organiser
+| data7       = {{{developer|{{{developers|}}}}}}
+
+| label8      = First&nbsp;appeared
+| data8       = {{{released|{{{year|}}}}}}
+
+| data9       = {{#ifeq:{{{ver layout|simple}}}|stacked
+ |{{Infobox software/stacked
+  |{{{name|{{PAGENAME}}}}}
+  |{{{discontinued|no}}}
+  |{{{latest release version|{{{latest_release_version|}}}}}}
+  |{{{latest release date   |   {{{latest_release_date|}}}}}}
+  |{{{latest preview version|   {{{latest test version|{{{latest_preview_version|{{{latest_test_version|}}} }}} }}} }}}
+  |{{{latest preview date   |      {{{latest test date|{{{latest_preview_date   |{{{latest_test_date   |}}} }}} }}} }}}
+  }}
+ |{{Infobox software/simple
+  |{{{name|{{PAGENAME}}}}}
+  |{{{discontinued|no}}}
+  |{{{latest release version|{{{latest_release_version|}}}}}}
+  |{{{latest release date   |   {{{latest_release_date|}}}}}}
+  |{{{latest preview version|   {{{latest test version|{{{latest_preview_version|{{{latest_test_version|}}} }}} }}} }}}
+  |{{{latest preview date   |      {{{latest test date|{{{latest_preview_date   |{{{latest_test_date   |}}} }}} }}} }}}
+  }}
+ }}
+
+| label10      = [[Type system|Typing discipline]]
+| data10       = {{{typing|}}}
+
+| label11      = [[Scope (computer science)|Scope]]
+| data11       = {{{scope|}}}
+
+| label12     = Implementation language
+| data12      = {{{programming language|{{{programming_language|}}}}}}
+
+| label13     = [[Computing platform|Platform]]
+| data13      = {{{platform|}}}
+
+| label14     = [[Operating system|OS]]
+| data14      = {{{operating system|{{{operating_system|}}}}}}
+
+| label15     = [[Software license|License]]
+| data15      = {{{license|}}}
+
+| label16     = [[Filename extension]]s
+| data16      = {{{File extensions|{{{file extensions|{{{file ext|{{{file_ext|}}}}}}}}}}}}
+
+| label17     = [[File format]]s
+| data17      = {{{File format|{{{file format|{{{file_format|{{{fileformat|{{{file formats|}}}}}}}}}}}}}}}
+
+| label18     = Website
+| data18      = {{#if:{{{website|}}}
+                  |{{#ifeq:{{{website|}}}|hide||{{{website|}}} }}
+                  |{{#if:{{#property:P856}}
+                     |{{URL|{{#property:P856}}}}
+                   }}
+               }}
+
+| header19    = {{#if:{{{implementations|}}}|Major [[Programming language implementation|implementations]]}}
+| data20      = {{{implementations|}}}
+
+| header21    = {{#if:{{{dialects|}}}|[[Programming language#Dialects, flavors and implementations|Dialects]]}}
+| data22      = {{{dialects|}}}
+
+| header23    = {{#if:{{{influenced by|{{{influenced_by|}}}}}}|Influenced by}}
+| data24      = {{{influenced by|{{{influenced_by|}}}}}}
+
+| header25    = {{#if:{{{influenced|}}}|Influenced}}
+| data26      = {{{influenced|}}}
+
+| belowclass  = hlist
+| belowstyle  = border-top: 1px solid #aaa; padding-top: 3px;
+| below       =
+{{#if:{{{wikibooks|}}}|
+* {{wikibooks-inline|{{{wikibooks}}}}}
+}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox programming language]] with unknown parameter "_VALUE_" | name | title | logo | logo size | logo_size | logo alt | logo_alt | logo caption | collapsible | screenshot | screenshot_size | screenshot size | screenshot_alt | screenshot alt | screenshot caption | sampleCode | paradigm | paradigms | family | designer | designers | developer | developers | released | year | ver layout | latest release version | latest_release_version | latest release date | latest_release_date | latest preview version | latest test version | latest_preview_version | latest_test_version | latest preview date | latest test date | latest_preview_date | latest_test_date | typing | scope | programming language | programming_language | discontinued | platform | operating system | operating_system | license | File extensions | file extensions | file ext | file_ext | File format | file format | file_format | fileformat | file formats | website | implementations | dialects | influenced by| influenced_by | influenced | wikibooks-inline | wikibooks }}<noinclude>
+{{documentation}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,32 @@
+{{#if:{{{discharge|}}}{{{loc|}}}{{{min|}}}{{{avg|}}}{{{max|}}}|{{infobox
+
+| child     = yes
+
+| label1    = Discharge
+| rowstyle1 = {{Infobox river/row-style}}
+| data1     = {{#if:{{{discharge|}}}|{{{discharge}}}|{{#if:{{{loc|}}}{{{min|}}}{{{avg|}}}{{{max|}}}|&nbsp;}}}}
+
+| label2    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;location</span>
+| rowstyle2 = {{Infobox river/row-style}}
+| data2     = {{{loc|}}}
+
+| label3    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;average</span>
+| rowstyle3 = {{Infobox river/row-style}}
+| data3     = {{{avg|}}}
+
+| label4    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;minimum</span>
+| rowstyle4 = {{Infobox river/row-style}}
+| data4     = {{{min|}}}
+
+| label5    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;maximum</span>
+| rowstyle5 = {{Infobox river/row-style}}
+| data5     = {{{max|}}}
+
+}}}}<noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

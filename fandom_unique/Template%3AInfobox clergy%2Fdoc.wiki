@@ -1,0 +1,98 @@
+{{Documentation subpage}}
+{{Person infobox header}}
+{{Uses Infobox person|wrapped=1}}
+{{Lua|Module:Template wrapper|Module:Check for conflicting parameters}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+
+{{tl|Infobox clergy}} may be added by pasting the template as shown below into an article and then filling in the desired fields. Any parameters left blank or omitted will not be displayed.
+
+In addition to clergy-specific parameters, this template accepts any parameter that {{tl|Infobox person}} does. See [[Template:Infobox person/doc#Parameters|here]] for a complete list.
+
+== Usage ==
+Commonly-used parameters:
+{{Parameter names example | honorific_prefix | name | honorific_suffix | image | image_size={{{image_size}}}<br /> | alt | caption | native_name | pronunciation | birth_name | birth_date | birth_place | death_date | death_place | death_cause | other_names | citizenship | education | alma_mater | occupation | years_active | religion | spouse | children | parents | relatives | known_for | church | ordained | laicized | writings | congregations | offices_held | title | website | signature={{{signature}}}<br /> | signature_alt | footnotes | module }}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; white-space:pre;">
+{{Infobox clergy
+| child            = 
+| honorific_prefix = 
+| name             = 
+| native_name      = 
+| native_name_lang = 
+| honorific_suffix = 
+| image            = 
+| image_size       = 
+| alt              = 
+| caption          = 
+| citizenship      = 
+| pronunciation    = 
+| birth_name       = 
+| birth_date       = 
+| birth_place      = 
+| burial_place     = 
+| death_date       = 
+| death_place      = 
+| death_cause      = 
+| other_names      = 
+| years_active     = 
+| occupation       = 
+| education        = 
+| alma_mater       = 
+| known_for        = 
+| spouse           = 
+| partner          = 
+| parents          = 
+| children         = 
+| relatives        = 
+| website          = 
+| footnotes        = 
+| signature        = 
+| signature_alt    = 
+| nocat_wdimage    = 
+| religion         = 
+| church           = 
+| ordained         = 
+| laicised         = 
+| writings         = 
+| congregations    = 
+| offices_held     = 
+| title            = 
+| module           =  
+}}
+</syntaxhighlight>
+{{clear}}
+
+== Embedding other templates ==
+The {{para|module}} parameter may used to embed other templates into this infobox (see [[Wikipedia:Infobox modules]]).
+
+== Use as a child template ==
+The '''child''' parameter is used when embedding this infobox into another.
+
+{{Infobox person module documentation |template=Infobox clergy |parameter=child}}
+
+== Microformats ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox clergy with unknown parameters}}
+* {{clc|Pages using infobox clergy with conflicting parameters}}
+* {{clc|Pages using infobox clergy with deprecated parameters}}
+* {{clc|No local image but image on Wikidata}} – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== See also ==
+* {{tl|Infobox religious biography}}
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Religion and belief infobox templates|Clergy]]
+[[Category:People and person infobox templates|Clergy]]
+[[Category:Biographical templates usable as a module|Clergy]]
+[[Category:Templates calling Infobox person|Clergy]]
+[[Category:Infobox templates with module parameter|Clergy]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

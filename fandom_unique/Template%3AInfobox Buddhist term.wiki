@@ -1,0 +1,94 @@
+{{infobox
+| bodyclass = {{#if:{{{collapsible|}}}|collapsible}}
+| bodystyle = 
+
+| abovestyle = background-color:#FFD068
+| above = Translations of<br/>{{#if:{{{title|}}}|{{{title}}} | {{#if:{{{pi|}}}|{{lang|pi|{{{pi}}}}} | {{#if:{{{sa|}}}|{{lang|sa|{{{sa}}}}} | }} }} }}
+
+	
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|upright={{{image_upright|1.2}}}|alt={{{alt|}}}}}
+| caption    = {{{caption|}}}
+
+| label1 = English
+| data1 =  {{{en|}}}
+
+| label2 = [[Sanskrit]]
+| data2 = {{#if:{{{sa|}}} | {{lang|sa|2= {{{sa}}}}} {{#if:{{{sa-Latn|}}}|<br/>([[International Alphabet of Sanskrit Transliteration|IAST]]: {{Transliteration|sa|iast|{{{sa-Latn}}}}})|}} }}
+
+| label3 = [[Pali]]
+| data3 = {{#if:{{{pi|}}} | {{lang|pi|2= {{{pi}}}}} {{#if:{{{pi-Latn|}}}|<br/>({{lang|pi-Latn|{{{pi-Latn}}}}})|}} }}
+
+| label4 = [[Assamese language|Assamese]]
+| data4 = {{#if:{{{as|}}} | {{lang|as|2= {{{as}}}}} {{#if:{{{as-Latn|}}}|<br/>({{lang|as-Latn|{{{as-Latn}}}}})|}} }}
+
+| label5 = [[Bengali language|Bengali]]
+| data5 = {{#if:{{{bn|}}} | {{lang|bn|2= {{{bn}}}}} {{#if:{{{bn-Latn|}}}|<br/>({{lang|bn-Latn|{{{bn-Latn}}}}})|}} }}
+
+| label6 = [[Burmese language|Burmese]]
+| data6 = {{#if:{{{my|}}} | {{lang|my|2= {{{my}}}}} {{#if:{{{my-Latn|}}}|<br/>([[MLC Transcription System|MLCTS]]: {{lang|my-Latn|{{{my-Latn}}}}})|}} }}
+
+| label7 = [[Chinese language|Chinese]]
+| data7 = {{#if:{{{zh|}}} | {{lang|zh|2= {{{zh}}}}} {{#if:{{{zh-Hans|}}}|<br/>{{lang|zh-Hans|{{{zh-Hans}}}}} ([[Simplified Chinese characters|Simplified]])|}} {{#if:{{{zh-Hant|}}}|<br/>{{lang|zh-Hant|{{{zh-Hant}}}}} ([[Traditional Chinese characters|Traditional]])|}} {{#if:{{{zh-Latn|}}}|<br/>([[Pinyin]]: {{lang|zh-Latn|{{{zh-Latn}}}}})|}} }}
+
+| label8 = [[Indonesian language|Indonesian]]
+| data8 = {{#if:{{{id|}}} | {{lang|id|2= {{{id}}}}}}}
+
+| label9 = [[Japanese language|Japanese]]
+| data9 = {{#if:{{{ja|}}} | {{lang|ja|2= {{{ja}}}}} {{#if:{{{ja-Hani|}}}|<br/>([[Kanji]]: {{lang|ja-Hani|{{{ja-Hani}}}}})|}} {{#if:{{{ja-Kana|}}}|<br/>([[Katakana]]: {{lang|ja-Kana|{{{ja-Kana}}}}})|}} {{#if:{{{ja-Latn|}}}|<br/>([[Rōmaji]]: {{lang|ja-Latn|{{{ja-Latn}}}}})|}} }}
+
+| label10 = [[Khmer language|Khmer]]
+| data10 = {{#if:{{{km|}}} | {{lang|km|2= {{{km}}}}} {{#if:{{{km-Latn|}}}|<br/>([[Romanization of Khmer#UNGEGN|UNGEGN]]: {{Transliteration|km|ungegn|{{{km-Latn}}}}})|}} }}
+
+| label11 = [[Korean language|Korean]]
+| data11 = {{#if:{{{ko|}}} | {{lang|ko|2= {{{ko}}}}} {{#if:{{{ko-Hani|}}}|<br/>([[Hanja]]: {{lang|ko-Hani|{{{ko-Hani}}}}})|}} {{#if:{{{ko-Latn|}}}|<br/>([[Revised Romanization of Korean|RR]]: {{Transliteration|ko|rr|{{{ko-Latn}}}}})|}} }}
+
+| label12 = [[Lao language|Lao]]
+| data12 = {{#if:{{{lo|}}} | {{lang|lo|2= {{{lo}}}}} {{#if:{{{lo-Latn|}}}|<br/>({{lang|lo-Latn|{{{lo-Latn}}}}})|}} }}
+
+| label13 = [[Malay language|Malay]]
+| data13 = {{#if:{{{ms|}}} | {{lang|id|2= {{{ms}}} }} }}
+
+| label14 = [[Mon language|Mon]]
+| data14 = {{#if:{{{mnw|}}} |  {{lang|my|{{{mnw}}}}} {{#if:{{{mnw-Latn|}}}|<br/>({{IPA|[{{{mnw-Latn}}}]}})|}} }}
+
+| label15 = [[Mongolian language|Mongolian]]
+| data15 = {{#if:{{{mn|}}} | {{lang|mn|2= {{{mn}}}}}  {{#if:{{{mn-Latn|}}}|<br/>({{lang|mn-Latn|{{{mn-Latn}}}}})|}} }}
+
+| label16 = [[Shan language|Shan]]
+| data16 = {{#if:{{{shn|}}} | {{lang|my|{{{shn}}}}} {{#if:{{{shn-Latn|}}}|<br/>({{IPA|[{{{shn-Latn}}}]}})|}} }}
+
+| label17 = [[Sinhala language|Sinhala]]
+| data17 = {{#if:{{{si|}}} | {{lang|si|2= {{{si}}}}} {{#if:{{{si-Latn|}}}|<br/>({{Transliteration|si|{{{si-Latn}}}}})|}} | {{#if:{{{si-Latn|}}} | {{Transliteration|si|{{{si-Latn}}}}} |}}  }}
+
+| label18 = [[Standard Tibetan|Tibetan]]
+| data18 = {{#if:{{{bo|}}} | {{lang|bo|2= {{{bo}}}}} {{#if:{{{bo-Latn|}}}|<br/>({{lang|bo-Latn|{{{bo-Latn}}}}})|}} }}
+
+| label19 = [[Tamil language|Tamil]]
+| data19 = {{#if:{{{ta|}}} | {{lang|ta|2= {{{ta}}}}} {{#if:{{{ta-Latn|}}}|<br/>({{lang|ta-Latn|{{{ta-Latn}}}}})|}} }}
+
+| label20 = [[Tagalog language|Tagalog]]
+| data20 = {{#if:{{{tl|}}} | {{lang|tl|2= {{{tl}}}}} {{#if:{{{tl-tglg|}}}|<br/>([[Baybayin]]: {{lang|tl-Tglg|{{{tl-tglg}}}}})|}} }}
+
+| label21 = [[Thai language|Thai]]
+| data21 = {{#if:{{{th|}}} | {{lang|th|2= {{{th}}}}} {{#if:{{{th-Latn|}}}|<br/>([[Royal Thai General System of Transcription|RTGS]]: {{Transliteration|th|rtgs|{{{th-Latn}}}}})|}} }}
+
+| label22 = [[Vietnamese language|Vietnamese]]
+| data22 = {{#if:{{{vi|}}} | {{lang|vi|2= {{{vi}}}}} {{#if:{{{vi-Hani|}}}|<br/>([[Chữ Nôm]]: {{lang|vi-Hani|{{{vi-Hani}}}}})|}} }}
+
+| label23 = [[Prakrit]]
+| data23 = {{#if:{{{pr|}}} | {{lang|pri|2= {{{pr}}}}} {{#if:{{{pr-Latn|}}}|<br/>({{lang|pr-Latn|{{{pr-Latn}}}}})|}} }}
+
+| label24 = [[Paiwan language|Taiwanese]]
+| data24 = {{#if:{{{pwn|}}} | {{lang|pwn|2= {{{pwn}}} }} }}
+
+| belowstyle = background-color: #EBEBEB; font-size:small
+| below = [[:en:Glossary of Buddhism|Glossary of Buddhism]]
+}}<noinclude>
+{{documentation}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

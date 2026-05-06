@@ -1,0 +1,146 @@
+{{Infobox
+| italic title = {{{italic title|<noinclude>no
+[[Category:Templates missing wikidata]]
+</noinclude>}}}
+| bodyclass = vcard
+| bodystyle = {{#if:{{{infoboxwidth|{{{width|}}}}}} |width:{{{infoboxwidth|{{{width}}}}}} }}
+
+| titlestyle = font-size:125%; font-style:italic; padding-bottom:0.2em;
+| title = <includeonly>{{#if:{{{name|}}}{{{caption|{{{image_caption|}}}}}}{{{editors|{{{editor|}}}}}}{{{authors|{{{author|}}}}}}{{{audio_read_by|}}}{{{title_orig|}}}{{{title_working|}}}{{{translators|{{{translator|}}}}}}{{{illustrators|{{{illustrator|}}}}}}{{{cover_artist|}}}{{{country|}}}{{{language|}}}{{{series|}}}{{{release_number|}}}{{{subjects|{{{subject|}}}}}}{{{genres|{{{genre|}}}}}}{{{set_in|}}}{{{published|}}}{{{publisher|}}}{{{publisher2|}}}{{{pub_date|{{{release_date|}}}}}}{{{english_pub_date|{{{english_release_date|}}}}}}{{{media_type|}}}{{{pages|}}}{{{awards|{{{award|}}}}}}{{{isbn_note|{{{ISBN_note|}}}}}}{{{dewey|}}}{{{congress|}}}| }}{{{name|{{PAGENAMEBASE}}}}} <span class="Z3988"
+          title="ctx_ver=Z39.88-2004&rft_val_fmt={{urlencode:info:ofi/fmt:kev:mtx:book}}&rft.genre=book&rft.btitle={{urlencode:{{{name|}}}}}{{#if:{{{author|}}}    |&rft.author={{urlencode:{{{author}}}}}}}{{#if:{{{last|}}}      |&rft.aulast={{urlencode:{{{last}}}}}}}{{#if:{{{first|}}}     |&rft.aufirst={{urlencode:{{{first}}}}}}}{{#if:{{{pub_date|{{{release_date|}}}}}} |&rft.date={{urlencode:{{{pub_date|{{{release_date}}}}}}}}}}{{#if:{{{publisher|}}} |&rft.pub={{urlencode:{{{publisher}}}}}}}{{#if:{{{pub_place|{{{country|}}}}}} |&rft.place={{urlencode:{{if empty|{{{pub_place|}}}|{{{country|}}}}}}}}}{{#if:{{{pages|}}}     |&rft.pages={{urlencode:{{{pages}}}}}}}{{#if:{{{series|}}}    |&rft.series={{urlencode:{{{series}}}}}}}{{#if:{{{oclc|}}}      |&rft_id=info:oclcnum/{{{oclc}}}}}"></span></includeonly>
+
+| imagestyle = {{#if:{{{image|}}}||display:none}}
+| image = {{#if:{{{image|}}} |  {{#invoke:InfoboxImage|InfoboxImage |image={{{image|}}} |size={{{image_size|}}} |sizedefault=frameless |upright=1 |alt={{{alt|}}} |title={{{alt|}}} |border={{{border|}}} |suppressplaceholder=yes}}| {{#ifeq:{{yesno|{{lc:{{{exclude_cover|no}}}}}}}|yes | |{{main other|}} }}
+          }}
+| caption = {{{caption|{{{image_caption|}}}}}}
+
+| label1  = Editor{{#if:{{{editors|}}}|s}}
+|  data1  = {{{editors|{{{editor|}}}}}}
+
+| label2  = Author{{#if:{{{authors|}}}|s}}
+|  data2  = {{{authors|{{{author|}}}}}}
+
+| label3  = Audio&nbsp;read&nbsp;by
+|  data3  = {{{audio_read_by|}}}
+
+| label4  = Original&nbsp;title
+|  data4  = {{#if:{{{title_orig|}}} |{{#if:{{{orig_lang_code|}}}|{{lang|{{{orig_lang_code|}}} |{{{title_orig}}} |italics={{#invoke:infobox/utilities|set_italics|{{{orig_lang_code|}}}|{{{title_orig}}}}}}}|''{{{title_orig}}}''}} }}
+
+| label5  = Working&nbsp;title
+|  data5  = {{#if:{{{title_working|}}} |''{{{title_working}}}''}}
+
+| label6  = Translator{{#if:{{{translators|}}}|s}}
+|  data6  = {{{translators|{{{translator|}}}}}}
+
+| label7  = Illustrator{{#if:{{{illustrators|}}}|s}}
+|  data7  = {{{illustrators|{{{illustrator|}}}}}}
+
+| label8  = Cover&nbsp;artist
+|  data8  = {{{cover_artist|}}}
+
+| label11 = Language
+|  data11 = {{{language|}}}
+
+| label12 = Series
+|  data12 = {{{series|}}}
+
+| label13 = {{longitem|Release number}}
+|  data13 = {{{release_number|}}}
+
+| label14 = Subject{{#if:{{{subjects|}}}|s}}
+|  data14 = {{{subjects|{{{subject|}}}}}}
+
+| label15 = Genre{{#if:{{{genres|}}}|s}}
+|  data15 = {{#invoke:Wikidata|getValue|P136|{{{genres|{{{genre|}}}}}}}}
+
+| label16 = Set&nbsp;in
+|  data16 = {{{set_in|}}}
+
+| label17 = Published
+|  data17 = {{{published|}}}
+
+| label18 = Publisher
+|  data18 = {{{publisher|}}}{{#if:{{{publisher2|}}} |, {{{publisher2}}} }}
+
+| label19 = {{longitem|Publication date}}
+|  data19 = {{#invoke:Wikidata|getValue|P577|{{{pub_date|{{{release_date|}}}}}}}}
+
+| label20 = Publication place
+|  data20 = {{if empty|{{{pub_place|}}}|{{{country|}}}}}
+
+| label23 = {{longitem|Published&nbsp;in English}}
+|  data23 = {{{english_pub_date|{{{english_release_date|}}}}}}
+
+| label24 = Media&nbsp;type
+|  data24 = {{{media_type|}}}
+
+| label25 = Pages
+|  data25 = {{#invoke:Wikidata|getValue|P1104|{{{pages|}}}}}
+
+| label26 = Award{{#if:{{{awards|}}}|s}}
+|  data26 = {{{awards|{{{award|}}}}}}
+
+| label30 = [[ISBN (identifier)|ISBN]]
+|  data30 = {{#if:{{{isbn|{{{ISBN|}}}}}}
+             | {{#ifeq:{{{isbn|{{{ISBN|}}}}}}|FETCH_WIKIDATA
+               | {{#if:{{#property:P212}}|{{#invoke:ISBNT|link|{{#property:P212}}}}}}
+               | {{ISBNT|1={{{isbn|{{{ISBN}}}}}}}} {{{isbn_note|{{{ISBN_note|}}}}}} 
+               }}
+             }}
+
+| label31 = [[OCLC (identifier)|{{abbr|OCLC|Online Computer Library Center number}}]]
+|  data31 = {{#if:{{{oclc|}}} |[https://www.worldcat.org/oclc/{{urlencode:{{{oclc}}}}} {{{oclc}}}]}}
+
+| label32 = {{longitem|[[:en:Dewey Decimal Classification|Dewey Decimal]]}}
+|  data32 = {{#invoke:Wikidata|getValue|P1036|{{{dewey|}}}}}
+
+| label33 = [[LCC (identifier)|{{abbr|LC&nbsp;Class|Library of Congress Classification}}]]
+|  data33 = {{#invoke:Wikidata|getValue|P1149|{{{congress|}}}}}
+
+| label34 = Preceded&nbsp;by
+|  data34 = {{#if:{{{preceded_by|}}} |''{{{preceded_by|}}}&nbsp;''
+             | {{#if:{{{preceded_by_quotation_marks|}}} |"{{{preceded_by_quotation_marks|}}}"}}
+            }}
+
+| label35 = Followed&nbsp;by
+|  data35 = {{#if:{{{followed_by|}}} |''{{{followed_by|}}}&nbsp;''
+             | {{#if:{{{followed_by_quotation_marks|}}} |"{{{followed_by_quotation_marks|}}}"}}
+            }}
+
+| label36 = {{longitem|Original text}}
+|  data36 = {{#if:{{both|{{{native_wikisource|}}}|{{{orig_lang_code|}}}}} | {{#invoke:Infobox/utilities|interlang_wikisource_link_make|{{{orig_lang_code|}}}|{{{native_wikisource|}}}|{{{title_orig|}}}|{{{name|}}} }}{{main other|}} | {{#if:{{both|{{{native_external_url|}}}|{{{orig_lang_code|}}}}}
+                | {{lang |{{{orig_lang_code|}}}
+                     | [{{{native_external_url|}}} {{{title_orig|{{{name|{{PAGENAME}}}}}}}}]}} {{#if:{{{native_external_host|}}} |at {{{native_external_host|}}} |online}}
+            }} }}
+
+| label37 = {{#if:{{{native_wikisource|}}} |Translation |{{#if:{{{native_external_url|}}}|Translation|Text}} }}
+|  data37 = {{#if:{{{wikisource|}}} | ''[[s:{{{wikisource|}}}|{{{name|{{PAGENAME}}}}}]]'' at {{#if:{{{native_wikisource|}}} |Wikisource |[[:en:Wikisource|Wikisource]]}}{{main other|}} | {{#if:{{{external_url|}}}
+                | ''[{{{external_url|}}} {{{name|{{PAGENAME}}}}}]'' {{#if:{{{external_host|}}} |at {{{external_host|}}} |online}}
+            }} }}
+
+| label38   = Website
+| data38    = {{{website|{{{homepage|{{{URL|{{#ifeq:{{{website|{{{homepage|{{{URL|}}}}}}}}}
+    | FETCH_WIKIDATA
+    | {{#if:{{#property:P856}}|{{Url|1={{#invoke:Wikidata|getValue|P856|FETCH_WIKIDATA}} }} }}
+    |}}}}}}}}}}}
+
+| data60 = {{{module|}}}
+
+| belowstyle = border-top:#aaa 1px solid;
+| below = {{{notes|{{{note|}}}}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox book]] with unknown parameter "_VALUE_"|ignoreblank=y| alt | audio_read_by | author | authors | award | awards | border | caption | congress | country | cover_artist | dewey | editor | editors | english_pub_date | english_release_date | exclude_cover | external_host | external_url | first | followed_by | followed_by_quotation_marks | genre | genres | homepage | illustrator | illustrators | image | image_caption | image_size | infoboxwidth | isbn | ISBN  | isbn_note | ISBN_note | italic title | language | last | media_type | module | name | native_external_host | native_external_url | native_wikisource | nocat_wdimage | note | notes | oclc | orig_lang_code | pages | preceded_by | preceded_by_quotation_marks | pub_date | pub_place | published | publisher | publisher2 | release_date | release_number | series | set_in | subject | subjects | title_orig | title_working | translator | translators | URL | website | width | wikisource 
+}}{{Wikidata image |1={{{image|}}} |2={{{nocat_wdimage|}}} 
+}}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Books with missing cover]]
+[[Category:Pages using ISBN values obtained from wikidata]]
+[[Category:Articles that link to foreign-language Wikisources]]
+[[Category:Articles that link to Wikisource]]
+[[Category:Pages using infobox book with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

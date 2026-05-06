@@ -1,0 +1,305 @@
+<includeonly>{{Infobox
+| child = {{yesno|{{{embed|}}}}}
+| templatestyles = Infobox landform/styles.css
+| bodyclass = ib-landform vcard
+
+| above = <div class="fn org">{{if empty|{{{name|}}}|{{{official_name|}}}|{{PAGENAMEBASE}}}}</div>
+    {{#if:{{{native_name|}}}|<div class="nickname ib-landform-native" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang}}}"}}>{{{native_name}}}</div>}}{{#if:{{{other_name|}}}|<div class="nickname ib-landform-other-name">{{{other_name}}}</div>}}
+
+| subheader = {{#if:{{{landform_type|}}}{{{type|}}}|<div class="category">{{{landform_type|{{{type}}}}}}</div>|{{main other|}}}}
+
+| rowclass1 = mergedtoprow ib-landform-official
+| data1 = {{#if:{{{name|}}}|{{{official_name|}}}}}
+
+| rowclass2 = mergedtoprow
+| data2 = {{#if:{{{image|}}}{{{photo|}}}|{{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}{{{photo|}}}|size={{if empty|{{{image_size|}}}|{{{photo_width|}}}}}|sizedefault=250px|alt={{if empty|{{{photo_alt|}}}|{{{alt|}}}}}|title={{if empty|{{{photo_caption|}}}|{{{caption|}}}|{{{photo_alt|}}}|{{{alt|}}}}}}}{{#if:{{{photo_caption|}}}{{{caption|}}}|<div class="ib-landform-caption">{{if empty|{{{photo_caption|}}}|{{{caption|}}}}}</div>}} }}
+
+| rowclass3 = mergedtoprow
+|  data3 = {{#if:{{both|{{{pushpin_map_narrow|}}}|{{{pushpin_map|}}}}}||{{#if:{{{map_image|}}}
+|{{#invoke:InfoboxImage|InfoboxImage|image={{{map_image}}}|size={{{mapsize|}}}|sizedefault=250px|alt={{{map_alt|}}}|title={{{map_caption|Location of {{#if:{{{name|}}}|{{{name}}}|{{{official_name}}}}}}}}}}{{#if:{{{map_caption|}}}|<div class="ib-settlement-caption">{{{map_caption}}}</div>}}
+}}}}
+
+| rowclass4 = mergedtoprow
+|  data4 = {{#if:{{{pushpin_map_narrow|}}}||{{#if:{{both| {{{pushpin_map|{{{map|}}}}}} | {{{coordinates|}}} }}|
+{{location map|{{{pushpin_map|{{{map|}}}}}}
+ |border = infobox
+ |alt = {{{pushpin_map_alt|{{{map_alt|}}}}}}
+ |caption ={{#if:{{{pushpin_map_caption_notsmall|}}}|{{{pushpin_map_caption_notsmall|}}}|{{#if:{{{pushpin_map_caption|}}}|{{{pushpin_map_caption}}}|{{#if:{{{map_caption|}}}|{{#if:{{{map_image|}}}||{{{map_caption}}}}}}}}}}}
+ |float = center
+ |width = {{{pushpin_mapsize|{{{map_size|}}}}}}
+ |default_width = 250
+ |relief= {{{pushpin_relief|{{{map_relief|{{{relief|}}}}}}}}}
+ |AlternativeMap = {{{pushpin_image|}}}
+ |overlay_image = {{{pushpin_overlay|}}}
+ |coordinates = {{{coordinates|}}}
+ |label = {{#ifeq: {{lc: {{{pushpin_label_position|{{{label_position|}}}}}} }} | none | | {{#if:{{{pushpin_label|}}}{{{label|}}}|{{if empty|{{{pushpin_label|}}}|{{{label|}}}}}|{{#if:{{{name|}}}|{{{name}}}|{{{official_name|}}}}}}} }}
+ |marksize =6
+ |outside = {{{pushpin_outside|}}} 
+ |position = {{{pushpin_label_position|{{{label_position|}}}}}}
+}}
+}} }}
+
+| rowclass5 = mergedtoprow
+| data5 = {{#invoke:Infobox mapframe
+                     |auto
+                     |onByDefault={{#if:{{{map|}}}{{{map_image|}}}{{{pushpin_map|}}}|no|yes}}
+                     |mapframe-area_km2={{{area_total_km2|}}}| mapframe-area_mi2={{{area_total_sq_mi|}}}
+                     |mapframe-area_ha={{{area_total_ha|}}}| mapframe-area_acre={{{area_total_acre|}}}
+                     |mapframe-length_km={{{length_km|}}}| mapframe-length_mi={{{length_mi|}}}
+                     |mapframe-width_km={{{width_km|}}}| mapframe-width_mi={{{width_mi|}}}
+                     |mapframe-frame-width={{{mapframe-frame-width|250}}}
+                     |mapframe-marker={{{mapframe-marker|natural}}}
+}}
+| data6 = {{#invoke:Infobox mapframe|autocaption}}
+
+| rowclass7 = {{#if:{{{map_image|}}}{{{pushpin_map|}}}{{{mapframe|}}}|{{#if:{{{grid_ref|}}}|mergedrow|mergedbottomrow}}}}
+|  data7 = {{#if:{{{coordinates|}}}
+  |Coordinates{{#if:{{{coor_pinpoint|{{{coor_type|}}}}}}|&#32;({{{coor_pinpoint|{{{coor_type|}}}}}})}}: {{#invoke:ISO 3166|geocoordinsert|nocat=true|1={{{coordinates|}}}|country={{{subdivision_name|}}}|subdivision1={{{subdivision_name1|}}}|subdivision2={{{subdivision_name2|}}}|subdivision3={{{subdivision_name3|}}}|type=city{{#if:{{{population_total|}}}|{{#iferror:{{#expr:{{formatnum:{{{population_total}}}|R}}+1}}||({{formatnum:{{replace|{{{population_total}}}|,|}}|R}})}}}} }}{{{coordinates_footnotes|{{{coords_ref|}}}}}} }}
+
+| rowclass8 = {{#if:{{{map_image|}}}{{{pushpin_map|}}}{{{mapframe|}}}|mergedbottomrow|mergedrow}}
+| label8 = {{#if:{{{grid_ref_UK|}}}|[[:en:Ordnance Survey National Grid|Grid&nbsp;position]]|{{#if:{{{grid_ref_Ireland|}}}|[[:en:Irish grid reference system|Grid&nbsp;position]]|{{if empty|{{{grid_name|}}}|Grid&nbsp;position}} }} }}
+|  data8 = {{#if:{{{grid_ref_UK|}}}|{{gbm4ibx|{{{grid_ref_UK|}}}|name={{if empty|{{{name|}}}|{{{official_name|}}}|{{PAGENAMEBASE}}}} }}|{{#if:{{{grid_ref_Ireland|}}}|{{iem4ibx|{{{grid_ref_Ireland|}}}|name={{if empty|{{{name|}}}|{{{official_name|}}}|{{PAGENAMEBASE}}}} }}|{{{grid_ref|}}}}}}}
+
+| rowclass10 = mergedtoprow
+| label10 = Location
+|  data10 = {{{location|}}}
+
+| rowclass11 = mergedrow
+| label11 = Range
+|  data11 = {{{range|}}}
+
+| rowclass12 = mergedrow
+| label12 = Part of
+|  data12 = {{{part_of|}}}
+
+| rowclass13 = mergedrow
+| label13 = Offshore water bodies
+|  data13 = {{{water_bodies|}}}
+
+| rowclass15 = mergedtoprow
+| label15 = [[:en:Geologic time scale|Age]]
+|  data15 = {{{age|}}}
+
+| rowclass16 = {{#if:{{{age|}}}|mergedrow|mergedtoprow|}}
+| label16 = Formed by
+|  data16 = {{{formed_by|}}}
+
+| rowclass17 = {{#if:{{{age|}}}{{{formed_by|}}}|mergedrow|mergedtoprow}}
+| label17  = [[:en:Orogeny|Orogeny]]
+|  data17  = {{{orogeny|}}}
+
+| rowclass18 = {{#if:{{{age|}}}{{{formed_by|}}}{{{orogeny|}}}|mergedrow|mergedtoprow}}
+| label18  = Geology
+|  data18  = {{{geology|}}}
+
+| rowclass20 = mergedtoprow
+| label20    = [[:en:Etymology|Etymology]]
+| data20     = {{{etymology|}}}
+
+| rowclass21 = {{#if:{{{etymology|}}}|mergedrow|mergedtoprow|}}
+| label21    = [[:en:Nickname|Nickname]]
+| data21     = {{{nickname|}}}
+
+| rowclass22 = {{#if:{{{etymology|}}}{{{nickname|}}}|mergedrow|mergedtoprow}}
+| label22    = Native name
+| data22     = {{native name checker|{{{native_name|}}}}}
+
+| rowclass23 = {{#if:{{{etymology|}}}{{{nickname|}}}{{{native_name|}}}|mergedrow|mergedtoprow}}
+| label23    = Defining authority
+| data23     = {{{authority|}}}
+
+| rowclass25 = mergedtoprow
+| label25 = Operator
+| data25  = {{{operator|}}}
+
+| rowclass27 = mergedtoprow
+| header27   = {{#if:{{{area_total_km2|}}}{{{area_total_ha|}}}{{{area_total_acre|}}}{{{area_total_sq_mi|}}}{{{area_total_dunam|}}}{{{area|}}}{{{area_land_km2|}}}{{{area_land_ha|}}}{{{area_land_acre|}}}{{{area_land_sq_mi|}}}{{{area_water_km2|}}}{{{area_water_ha|}}}{{{area_water_acre|}}}{{{area_water_sq_mi|}}}
+ |{{#if:{{both|{{#ifeq:{{{total_type}}}|&nbsp;|1}}|{{{area_total_km2|}}}{{{area_total_ha|}}}{{{area_total_acre|}}}{{{area_total_sq_mi|}}}{{{area_total_dunam|}}}}}
+   |
+   |Area<div class="ib-landform-fn">{{{area_footnotes|}}}</div>
+  }}
+ }}
+
+| rowclass28 = {{#if:{{both|{{#ifeq:{{{total_type}}}|&nbsp;|1}}|{{{area_total_km2|}}}{{{area_total_ha|}}}{{{area_total_acre|}}}{{{area_total_sq_mi|}}}{{{area_total_dunam|}}}{{{area|}}}}}|mergedtoprow|mergedrow}}
+| label28 = &nbsp;•&nbsp;Total
+|  data28 = {{#if:{{{area_total_km2|}}}{{{area_total_ha|}}}{{{area_total_acre|}}}{{{area_total_sq_mi|}}}{{{area_total_dunam|}}}
+ |{{infobox_settlement/areadisp
+   |km2  ={{{area_total_km2|}}}
+   |ha   ={{{area_total_ha|}}}
+   |acre ={{{area_total_acre|}}}
+   |sqmi ={{{area_total_sq_mi|}}}
+   |dunam={{{area_total_dunam|}}}
+   |link ={{#switch:{{{dunam_link|}}}||on|total=on}}
+   |pref ={{{unit_pref}}}
+   |name ={{{subdivision_name}}}
+ }}|{{{area|}}}}}
+
+| rowclass29 = mergedrow
+| label29 = &nbsp;•&nbsp;Land
+|  data29 = {{#if:{{{area_land_km2|}}}{{{area_land_ha|}}}{{{area_land_acre|}}}{{{area_land_sq_mi|}}}{{{area_land_dunam|}}}
+ |{{infobox_settlement/areadisp
+   |km2  ={{{area_land_km2|}}}
+   |ha   ={{{area_land_ha|}}}
+   |acre ={{{area_land_acre|}}}
+   |sqmi ={{{area_land_sq_mi|}}}
+   |dunam={{{area_land_dunam|}}}
+   |link ={{#ifeq:{{{dunam_link|}}}|land|on}}
+   |pref ={{{unit_pref}}}
+   |name ={{{subdivision_name}}}
+ }}}}
+| rowclass30 = mergedrow
+| label30 = &nbsp;•&nbsp;Water
+|  data30 = {{#if:{{{area_water_km2|}}}{{{area_water_ha|}}}{{{area_water_acre|}}}{{{area_water_sq_mi|}}}{{{area_water_dunam|}}}
+ |{{infobox_settlement/areadisp
+   |km2  ={{{area_water_km2|}}}
+   |ha   ={{{area_water_ha|}}}
+   |acre ={{{area_water_acre|}}}
+   |sqmi ={{{area_water_sq_mi|}}}
+   |dunam={{{area_water_dunam|}}}
+   |link ={{#ifeq:{{{dunam_link|}}}|water|on}}
+   |pref ={{{unit_pref}}}
+   |name ={{{subdivision_name}}}
+ }} {{#if:{{{area_water_percent|}}}| &nbsp;{{{area_water_percent}}}%}}}}
+
+| rowclass31 = mergedtoprow
+| header31 = {{#if:{{{length_km|}}}{{{length_mi|}}}{{{length|}}}{{{width_km|}}}{{{width_mi|}}}{{{width|}}}{{{depth_km|}}}{{{depth_mi|}}}{{{depth|}}}{{{drop_km|}}}{{{drop_mi|}}}{{{drop|}}}{{{height_m|}}}{{{height_ft|}}}{{{height|}}}|Dimensions<div class="ib-landform-fn">{{{dimensions_footnotes|}}}</div>}}
+
+| rowclass32 = mergedrow
+| label32 = &nbsp;•&nbsp;Length
+|  data32 = {{#if:{{{length_km|}}}{{{length_mi|}}}
+ | {{infobox_settlement/lengthdisp
+      |km  ={{{length_km|}}}
+      |mi  ={{{length_mi|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{length|}}} }}
+
+| rowclass33 = mergedrow
+| label33 = &nbsp;•&nbsp;Width
+|  data33 = {{#if:{{{width_km|}}}{{{width_mi|}}}
+ |{{infobox_settlement/lengthdisp
+      |km  ={{{width_km|}}}
+      |mi  ={{{width_mi|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{width|}}} }}
+
+| rowclass34 = mergedrow
+| label34 = &nbsp;•&nbsp;Depth
+|  data34 = {{#if:{{{depth_km|}}}{{{depth_mi|}}}
+ |{{infobox_settlement/lengthdisp
+      |km  ={{{depth_km|}}}
+      |mi  ={{{depth_mi|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{depth|}}} }}
+
+| rowclass35 = mergedrow
+| label35 = &nbsp;•&nbsp;Drop
+|  data35 = {{#if:{{{drop_km|}}}{{{drop_mi|}}}
+ |{{infobox_settlement/lengthdisp
+      |km  ={{{drop_km|}}}
+      |mi  ={{{drop_mi|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{drop|}}} }}
+
+| rowclass36 = mergedrow
+| label36 = &nbsp;•&nbsp;Height
+| data36 = {{#if:{{{height_m|}}}{{{height_ft|}}}
+ |{{infobox_settlement/lengthdisp
+      |m  ={{{drop_m|}}}
+      |ft  ={{{drop_ft|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{height|}}} }}
+
+| rowclass40 = mergedtoprow
+| label40 = {{#if:{{{elevation_link|}}}|[[{{{elevation_link|}}}|Elevation]]|Elevation}}
+|  data40 = {{#if:{{{elevation_m|}}}{{{elevation_ft|}}}
+ |{{infobox_settlement/lengthdisp
+      |m   ={{{elevation_m|}}}
+      |ft  ={{{elevation_ft|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{elevation|}}} }}{{#if:{{{elevation_m|}}}{{{elevation_ft|}}}{{{elevation|}}}|<div class="ib-landform-fn">{{{elevation_footnotes|{{{elevation_ref|}}}}}}{{#if:{{{elevation_point|}}}|&#32;({{{elevation_point}}})}}</div>}}
+
+| rowclass41 = {{#if:{{{elevation_m|}}}{{{elevation_ft|}}}{{{elevation|}}}|mergedrow|mergedtoprow}}
+| label41 = Highest&nbsp;elevation
+|  data41 = {{#if:{{{elevation_max_m|}}}{{{elevation_max_ft|}}}
+ |{{infobox_settlement/lengthdisp
+      |m   ={{{elevation_max_m|}}}
+      |ft  ={{{elevation_max_ft|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{highest_elevation|}}} }}{{#if:{{{elevation_max_m|}}}{{{elevation_max_ft|}}}{{{highest_elevation|}}}|<div class="ib-landform-fn">{{{elevation_max_footnotes|}}}{{#if:{{{highest_point|}}}|&#32;({{{highest_point}}})}}</div>}}
+
+| rowclass42 = {{#if:{{{elevation_m|}}}{{{elevation_ft|}}}{{{elevation|}}}{{{elevation_max_m|}}}{{{elevation_max_ft|}}}{{{highest_elevation|}}}|mergedrow|mergedtoprow}}
+| label42 = Surface&nbsp;elevation
+|  data42 = {{#if:{{{surface_elevation_m|}}}{{{surface_elevation_ft|}}}
+ |{{infobox_settlement/lengthdisp
+      |m   ={{{surface_elevation_m|}}}
+      |ft  ={{{surface_elevation_ft|}}}
+      |pref={{{unit_pref}}}
+      |name={{{subdivision_name}}}
+    }}|{{{surface_elevation|}}} }}{{#if:{{{surface_elevation_m|}}}{{{surface_elevation_ft|}}}{{{surface_elevation|}}}|<div class="ib-landform-fn">{{{surface_elevation_ref|}}}</div>}}
+
+| rowclass50 = mergedtoprow
+| label50  = {{#if:{{{volcanic_arc/belt|}}}
+            | Volcanic [[:en:Volcanic arc|arc]]/[[:en:volcanic belt|belt]]
+            | {{#if:{{{volcanic_arc|}}}
+              | [[:en:Volcanic arc|Volcanic arc]]
+              | {{#if:{{{volcanic_belt|}}}
+                | [[:en:volcanic belt|volcanic belt]]
+                | {{#if:{{{volcanic_field|}}}
+                  | Volcanic field }}}}}}}}
+|  data50   = {{#if:{{{volcanic_arc/belt|}}}
+            | {{{volcanic_arc/belt|}}}
+            | {{#if:{{{volcanic_arc|}}}
+              | {{{volcanic_arc|}}}
+              | {{#if:{{{volcanic_belt|}}}
+                | {{{volcanic_belt|}}}
+                | {{#if:{{{volcanic_field|}}}
+                  | {{{volcanic_field}}} }}}}}}}}
+
+| rowclass51 = {{#if:{{{volcanic_arc/belt|}}}{{{volcanic_arc|}}}{{{volcanic_belt|}}}|mergedrow|mergedtoprow}}
+| label51  = [[:en:Volcano|Last&nbsp;eruption]]
+|  data51  = {{if empty|{{{eruption|}}}|{{{last_eruption|}}}}}
+
+| rowclass52 = mergedtoprow
+| label52 = [[:en:Topographic map|Topo map]]
+|  data52 = {{{topo|}}}
+
+| rowclass53 = mergedtoprow
+| label53 = Designation
+|  data53 = {{{designation|}}}
+
+| rowclass60 = mergedtoprow
+| label60 = {{{free_label_1|}}}
+|  data60 = {{{free_data_1|}}}
+
+| rowclass61 = mergedrow
+| label61  = {{{free_label_2|}}}
+|  data61   = {{{free_data_2|}}}
+
+| rowclass62 = mergedrow
+| label62  = {{{free_label_3|}}}
+|  data62   = {{{free_data_3|}}}
+
+| rowclass70 = mergedtoprow
+| label70   = Website
+|  data70   = {{{website|}}}
+
+|  data80   = {{{embedded|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox landform]] with unknown parameter "_VALUE_"|ignoreblank=y| age | alt | alt_name | area | area_footnotes | area_land_acre | area_land_dunam | area_land_ha | area_land_km2 | area_land_sq_mi | area_total_acre | area_total_dunam | area_total_ha | area_total_km2 | area_total_sq_mi | area_water_acre | area_water_dunam | area_water_ha | area_water_km2 | area_water_percent | area_water_sq_mi | authority| caption | child | coordinates | coordinates_ref | coords | coords_ref | depth | depth_km | depth_mi | designation | dimensions_footnotes | display | drop | drop_km | drop_mi | dunam_link | elevation | elevation_ft | elevation_footnotes | elevation_link | elevation_m | elevation_max_ft | elevation_max_footnotes | elevation_max_m | elevation_point | elevation_ref | embed | embedded | eruption | etymology| format | formed_by | free_data_1 | free_data_2 | free_data_3 | free_label_1 | free_label_2 | free_label_3 | geology | grid_ref | grid_ref_Ireland | grid_ref_UK | highest_coords | highest_elevation | highest_point | height_m | height_ft | height | image | image_size | label | label_position | landmark_type | last_eruption | length | length_km | length_mi | location | map | map_alt | map_caption | map_image | map_relief | map_size | map_width | mark | marker_size | name | native_name | native_name_lang | nickname | official_name | operator | orogeny | other_name | part_of | photo | photo_alt | photo_caption | photo_width | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_map_caption_notsmall | pushpin_image | pushpin_label | pushpin_label_position | pushpin_mapsize | pushpin_map_narrow | pushpin_overlay | pushpin_relief | range | region | relief | scale | source | surface_elevation | surface_elevation_ft | surface_elevation_m | surface_elevation_ref | topo | type | volcanic_arc | volcanic_arc/belt | volcanic_belt | volcanic_field | water | water_bodies | website | width | width_km | width_mi | mapframe | mapframe-area_km2 | mapframe-area_mi2 | mapframe-caption | mapframe-coord | mapframe-coordinates | mapframe-custom | mapframe-frame-coord | mapframe-frame-coordinates | mapframe-frame-height | mapframe-frame-width | mapframe-geomask | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-height | mapframe-id | mapframe-length_km | mapframe-length_mi | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-point | mapframe-shape | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-switcher | mapframe-width | mapframe-wikidata | mapframe-zoom
+}}</includeonly><noinclude>
+{{documentation}}
+
+[[Category:Pages using Infobox landform with no type]]
+[[Category:Pages using infobox landform with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

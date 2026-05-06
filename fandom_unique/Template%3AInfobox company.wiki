@@ -1,0 +1,169 @@
+{{Infobox
+| bodyclass = ib-company vcard
+| templatestyles = Infobox company/styles.css
+
+| child = {{lc:{{{embed}}}}}
+| decat = yes
+
+| titleclass = fn org
+| title = {{#ifeq:{{lc:{{{embed}}}}} | yes | '''Company''' | {{#if:{{{name|}}} | {{{name}}} | {{#if:{{{company_name|}}}|{{{company_name}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}} }} }}
+
+| imageclass = ib-company-logo logo
+| image = {{#invoke:InfoboxImage |InfoboxImage |image={{#ifeq:{{lc:{{{embed}}}}} | yes | {{{logo|{{{company_logo|}}}}}} |{{#invoke:WikidataIB |getValue |Rank=best |P154 |name=logo |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=no |noicon=yes |maxvals=1 |{{{logo|{{{company_logo|}}}}}} }} }} |size={{{logo_size|}}} |sizedefault=frameless |upright={{{logo_upright|1}}} |alt={{{logo_alt|{{{alt|}}}}}} }}
+| caption = {{{logo_caption|}}}
+| image2 = {{#invoke:InfoboxImage |InfoboxImage |image={{{image|}}} |size={{{image_size|}}} |sizedefault=frameless |upright={{{image_upright|1}}} |alt={{{image_alt|}}} }}
+| caption2 = {{{image_caption|}}}
+
+| label1  = {{longitem|[[Trade name]]}}
+|  data1  = {{{trade_name|{{{trading_name|}}}}}}
+
+| label2  = {{longitem|Native name}}
+|  data2  = {{#if:{{{native_name|}}} | {{#if:{{{native_name_lang|}}} | {{lang|{{{native_name_lang}}}|{{{native_name}}} }} | {{{native_name}}} }} }}
+
+| label3  = {{longitem|[[Romanization|Romanized]] name}}
+|  data3  = {{{romanized_name|}}}
+
+| label4  = Formerly
+| class4  = nickname
+|  data4  = {{{former_names|{{{former_name|}}}}}}
+
+| label5  = Company type
+| class5  = category
+|  data5  = {{{type|{{{company_type|}}}}}}
+
+| label6  = {{longitem|[[Ticker symbol|Traded as]]}}
+|  data6  = {{{traded_as|}}}
+
+| label7  = [[:en:International Securities Identification Number|ISIN]]
+|  data7  = {{#invoke:WikidataIB |getValue |Rank=best |P946 |name=ISIN |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{ISIN|}}} }}
+
+| label8  = Industry
+| class8  = category
+|  data8  = {{#invoke:WikidataIB |getValue |Rank=best |P452 |name=industry |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{industry|}}} }}
+
+| label9  = Genre
+| class9  = category
+|  data9  = {{{genre|}}}
+
+| label10 = Predecessor{{#if:{{{predecessors|}}}|s}}
+|  data10 = {{#invoke:WikidataIB |getValue |Rank=best |P155 |name=predecessor |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{predecessors|{{{predecessor|}}}}}} }}
+
+| label11 = Founded
+|  data11 = {{#invoke:WikidataIB |getValue |Rank=best |P571 |name=founded |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{founded|{{{foundation|}}}}}} }}
+
+| label12 = Founder{{#if:{{{founders|}}}|s}}
+| class12 = agent
+|  data12 = {{#invoke:WikidataIB |getValue |Rank=best |P112 |name=founder |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{founders|{{{founder|}}}}}} }}
+
+| label13 = Defunct
+|  data13 = {{#invoke:WikidataIB |getValue |Rank=best |P576 |name=defunct |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{defunct|{{{dissolved|}}}}}} }}
+
+| label14 = Fate
+|  data14 = {{{fate|}}}
+
+| label15 = Successor{{#if:{{{successors|}}}|s}}
+|  data15 = {{#invoke:WikidataIB |getValue |Rank=best |P156 |name=successor |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes |{{{successors|{{{successor|}}}}}} }}
+
+| label16 = Headquarters
+| class16 = {{#if:{{{hq_location|{{{location|}}}}}} | label | adr}}
+|  data16 = {{#if:{{{hq_location|{{{location|}}}}}}{{{hq_location_city|{{{location_city|}}}}}}{{{hq_location_country|{{{location_country|}}}}}}
+            | {{Comma separated entries
+                | 1 = {{{hq_location|{{{location|}}}}}}
+                | 2 = {{#if:{{{hq_location_city|}}}{{{location_city|}}} |<div class="ib-company-locality locality">{{#if:{{{hq_location_city|}}}{{{location_city|}}} | {{{hq_location_city|{{{location_city|}}}}}} | }}</div>}}
+                | 3 = {{#if:{{{hq_location_country|}}}{{{location_country|}}} |<div class="ib-company-country country-name">{{#if:{{{hq_location_country|}}}{{{location_country|}}} | {{{hq_location_country|{{{location_country|}}}}}} | }}</div>}}
+              }}
+            | {{#if:{{#invoke:WikidataIB |getValue |Rank=best |P159 |name=hq_location_city |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }}{{#invoke:WikidataIB |getValue |Rank=best |P17 |name=hq_location_country |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }}
+              | {{Comma separated entries
+                | 1 = {{#if:{{#invoke:WikidataIB |getValue |Rank=best |P159 |name=hq_location_city |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }} |<div class="ib-company-locality locality">{{#invoke:WikidataIB |getValue |Rank=best |P159 |name=headquarters location |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }}</div>}}
+                | 2 = {{#if:{{#invoke:WikidataIB |getValue |Rank=best |P17 |name=countrry |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }} |<div class="ib-company-country country-name">{{#invoke:WikidataIB |getValue |Rank=best |P17 |name=hq_location_country |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 }}</div>}}
+                }}
+              }}
+            }}
+
+| label18 = {{longitem|Number of locations}}
+|  data18 = {{#if:{{{num_locations|{{{locations|}}}}}} | {{{num_locations|{{{locations|}}}}}}{{#if:{{{num_locations_year|}}} | &nbsp;({{{num_locations_year}}}) }} }}
+
+| label19 = {{longitem|Area{{#if:{{{areas_served|}}}|s}} served}}
+|  data19 = {{{areas_served|{{{area_served|}}}}}}
+
+| label20 = {{longitem|Key people}}
+| class20 = agent
+|  data20 = {{{key_people|}}}
+
+| label21 = Products
+|  data21 = {{{products|}}}
+
+| label22 = {{longitem|Production output}}
+|  data22 = {{#if:{{{production|}}} | {{{production|}}}{{#if:{{{production_year|}}} | &nbsp;({{{production_year}}}) }} }}
+
+| label23 = Brands
+|  data23 = {{{brands|}}}
+
+| label24 = Services
+| class24 = category
+|  data24 = {{{services|}}}
+
+| label25 = Revenue
+|  data25 = {{#invoke:WikidataIB |getValue |Rank=best |P2139 |name=revenue |qual=P585 |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 |{{{revenue|}}}{{#if:{{{revenue_year|}}} | &nbsp;({{{revenue_year}}}) }} }}
+
+| label26 = {{longitem|[[Earnings before interest and taxes|Operating income]]}}
+|  data26 = {{#invoke:WikidataIB |getValue |Rank=best |P3362 |name=operating_income |qual=P585 |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 |{{{operating_income|}}}{{#if:{{{income_year|}}} | &nbsp;({{{income_year}}}) }} }}
+
+| label27 = {{longitem|[[Net income]]}}
+|  data27 = {{#invoke:WikidataIB |getValue |Rank=best |P2295 |name=net_income |qual=P585 |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 |{{{net_income|{{{profit|}}}}}}{{#if:{{{net_income_year|{{{profit_year|}}}}}} | &nbsp;({{{net_income_year|{{{profit_year|}}}}}}) }} }}
+
+| label28 = [[:en:Assets under management|AUM]]
+|  data28 = {{{aum|}}}
+
+| label29 = {{nowrap|[[:en:Asset|Total assets]]}}
+|  data29 = {{#invoke:WikidataIB |getValue |Rank=best |P2403 |name=assets |qual=P585 |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 |{{{assets|}}}{{#if:{{{assets_year|}}} | &nbsp;({{{assets_year}}}) }} }}
+
+| label30 = {{nowrap|[[Equity (finance)|Total equity]]}}
+|  data30 = {{#if:{{{equity|}}} | {{{equity}}}{{#if:{{{equity_year|}}} | &nbsp;({{{equity_year}}})}} }}
+
+| label31 = Owner{{#if:{{{owners|}}}|s}}
+|  data31 = {{{owners|{{{owner|}}}}}}
+
+| label32 = Members
+|  data32 = {{#if:{{{members|}}} | {{{members}}}{{#if:{{{members_year|}}} | &nbsp;({{{members_year}}})}} }}
+
+| label33 = {{longitem|Number of employees}}
+|  data33 = {{#invoke:WikidataIB |getValue |Rank=best |P1128 |name=num_employees |qual=P585 |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |maxvals=1 |{{{num_employees|}}}{{#if:{{{num_employees_year|}}} | &nbsp;({{{num_employees_year}}}) }} }}
+
+| label34 = [[Parent company|Parent]]
+|  data34 = {{#ifeq:{{{owners|}}}{{{owner|}}}{{{parent|}}} || {{#invoke:WikidataIB |getValue |Rank=best |P749 |name=parent |qid={{{qid|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |suppressfields={{{suppressfields|}}} |onlysourced=yes |noicon={{{noicon|no}}} |sep="<br />" |sorted=yes }} | {{{parent|}}} }}
+
+| label35 = [[Division (business)|Divisions]]
+|  data35 = {{{divisions|}}}
+
+| label36 = [[:en:Subsidiary|Subsidiaries]]
+|  data36 = {{{subsid|}}}
+
+|  data38 = {{{module|}}}
+
+| label39 = [[:en:Basel III|Capital ratio]]
+|  data39 = {{{ratio|}}}
+
+| label40 = Rating
+|  data40 = {{{rating|}}}
+
+| label41 = Website
+|  data41 = {{#if:{{{website|{{{homepage|}}}}}} |{{{website|{{{homepage|}}}}}} |{{#invoke:WikidataIB |url2 |url={{#invoke:WikidataIB |getValue |Rank=best |P856 |name=website |qid={{{qid|}}} |suppressfields={{{suppressfields|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |onlysourced=yes |maxvals=1}} }} }}
+
+| below = {{#if:{{{footnotes|}}} | '''Footnotes{{\}}references'''{{break}}{{{footnotes}}} }}
+
+}}{{main other|{{#if:{{{trading_name|}}}|}}{{#ifeq:{{{logo|{{{company_logo|{{wikidata|property|raw|P154}}}}}}}}|{{{logo|{{{company_logo|}}}}}}||}}{{#if:{{{image|}}}|{{#ifeq:{{#invoke:string|replace|{{{image|}}}| |_}}|{{#invoke:string|replace|{{{logo|{{{company_logo|{{wikidata|property|raw|P154}}}}}}}}| |_}}||}}|}}
+}}{{#invoke:Check for clobbered parameters|check|nested=1|template=Infobox company|cat={{main other|Category:Pages using infobox company with conflicting parameters}}|name; company_name|logo; company_logo|logo_alt; alt|trade_name; trading_name|former_names; former_name|type; company_type|predecessors; predecessor|successors; successor|foundation; founded|founders; founder|defunct; dissolved|hq_location; location|hq_location_city; location_city|hq_location_country; location_country|num_locations; locations|areas_served; area_served|net_income; profit|net_income_year; profit_year|owners; owner |homepage; website
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox company]] with unknown parameter "_VALUE_" | ignoreblank=y | alt | area_served | areas_served | assets | assets_year | aum | brands | company_logo | company_name | company_type | defunct | dissolved | divisions | embed | equity | equity_year | fate | footnotes | former_name | former_names | foundation | founded | founder | founders | genre | homepage | hq_location | hq_location_city | hq_location_country | image | image_alt | image_caption | image_size | image_upright | income_year | industry | ISIN | key_people | location | location_city | location_country | locations | logo | logo_alt | logo_caption | logo_size | logo_upright | members | members_year | module | name | native_name | native_name_lang | net_income | net_income_year | num_employees | num_employees_year | num_locations | num_locations_year | operating_income | owner | owners | parent | predecessor | predecessors | production | production_year | products | profit | profit_year | rating | ratio | revenue | revenue_year | romanized_name | services | subsid | successor | successors | traded_as | trade_name | trading_name | type | website| qid | fetchwikidata | suppressfields | noicon | nocat | demo | categories }}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox company using trading name]]
+[[Category:Pages using infobox company with a logo from wikidata]]
+[[Category:Pages using infobox company with a duplicate image]]
+[[Category:Pages using infobox company with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

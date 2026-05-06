@@ -1,0 +1,169 @@
+<includeonly>{{#ifeq:{{{embed|}}}|yes||{{main other|{{short description|United States historic place|noreplace}}}}}}</includeonly>{{Infobox
+|child={{#ifeq:{{{embed|}}}|yes|yes}}
+|bodystyle = border-spacing:1px;{{#if:{{{borderless|}}}|border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none}}
+|subheaderstyle = padding:0; border:none;
+|subheader = {{infobox|child=yes
+|data1    = <includeonly><div class="skin-nightmode-reset-color" style="width:100%; font-size:110%; font-weight:bold;color: var(--color-base); background:{{#invoke:Designation|color|nrhp}}; line-height:1.5">{{if empty|{{{name|}}}|{{PAGENAMEBASE}}}}</div></includeonly>
+
+|data2    = {{#ifeq:{{#invoke:String|find|source={{{refnum|}}}|target=^%s*(%d%d%d%d%d%d%d%d)|plain=false}}|0|{{#if:{{#switch:{{lc:{{{nrhp_type|}}}}}|cp|nhldcp=a}}{{#switch:{{lc:{{{nrhp_type2|}}}}}|cp|nhldcp=a}}{{#switch:{{lc:{{{nrhp_type3|}}}}}|cp|nhldcp=a}}{{#switch:{{lc:{{{nrhp_type4|}}}}}|cp|nhldcp=a}}||{{cat handler|main=}}}}|<div style="width:100%; text-align:center; line-height:1.5;color: var(--color-base); background:{{#if:{{{delisted|}}}|&#35;ddd|{{#invoke:Designation|color|nrhp}}}};">{{#if:{{{delisted|}}}|Formerly listed on the&nbsp;}}[[National Register of Historic Places|U.S. National Register of Historic Places]]</div>}}
+
+|data3    = {{#if:{{lc:{{{nrhp_type|}}}}}|{{#ifeq:{{lc:{{{nrhp_type}}}}}|nrhp||<div style="width:100%; text-align:center; line-height:1.4; color: var(--color-base); background:{{#invoke:Designation|color|{{{nrhp_type}}}}}">{{Infobox NRHP/conv|text|{{lc:{{{nrhp_type}}}}}|{{#if:{{{nocat|}}}|nocat|{{#if:{{{locmapin|}}}|{{#switch:{{{locmapin}}}|New York|New York#USA=New York (state)|USA Georgia=Georgia (U.S. state)|USA Washington|Washington=Washington (state)|District of Columbia|USA District of Columbia|Washington DC|Washington, DC|United States Washington, D.C.=Washington, D.C.|US Virgin Islands=the United States Virgin Islands|USA=the United States|{{{locmapin}}}}}|the United States}}}}}}</div>}}}}
+
+|data4    = {{#if:{{lc:{{{nrhp_type2|}}}}}|{{#ifeq:{{lc:{{{nrhp_type2}}}}}|nrhp||<div style="width:100%; text-align:center; line-height:1.5; color: var(--color-base);background:{{#invoke:Designation|color|{{{nrhp_type2}}}}}">{{Infobox NRHP/conv|text|{{lc:{{{nrhp_type2}}}}}|{{#if:{{{nocat|}}}|nocat|{{#if:{{{locmapin|}}}|{{#switch:{{{locmapin}}}|New York|New York#USA=New York (state)|USA Georgia=Georgia (U.S. state)|USA Washington|Washington=Washington (state)|District of Columbia|USA District of Columbia|Washington DC|Washington, DC|United States Washington, D.C.=Washington, D.C.|US Virgin Islands=the United States Virgin Islands|USA=the United States|{{{locmapin}}}}}|the United States}}}}}}</div>}}}}
+
+|data5    = {{#if:{{lc:{{{nrhp_type3|}}}}}|{{#ifeq:{{lc:{{{nrhp_type3}}}}}|nrhp||<div style="width:100%; text-align:center; line-height:1.5; color: var(--color-base);background:{{#invoke:Designation|color|{{{nrhp_type3}}}}}">{{Infobox NRHP/conv|text|{{lc:{{{nrhp_type3}}}}}|{{#if:{{{nocat|}}}|nocat|{{#if:{{{locmapin|}}}|{{#switch:{{{locmapin}}}|New York|New York#USA=New York (state)|USA Georgia=Georgia (U.S. state)|USA Washington|Washington=Washington (state)|District of Columbia|USA District of Columbia|Washington DC|Washington, DC|United States Washington, D.C.=Washington, D.C.|US Virgin Islands=the United States Virgin Islands|USA=the United States|{{{locmapin}}}}}|the United States}}}}}}</div>}}}}
+
+|data6    = {{#if:{{lc:{{{nrhp_type4|}}}}}|{{#ifeq:{{lc:{{{nrhp_type4}}}}}|nrhp||<div style="width:100%; text-align:center; line-height:1.5;color: var(--color-base); background:{{#invoke:Designation|color|{{{nrhp_type4}}}}}">{{Infobox NRHP/conv|text|{{lc:{{{nrhp_type4}}}}}|{{#if:{{{nocat|}}}|nocat|{{#if:{{{locmapin|}}}|{{#switch:{{{locmapin}}}|New York|New York#USA=New York (state)|USA Georgia=Georgia (U.S. state)|USA Washington|Washington=Washington (state)|District of Columbia|USA District of Columbia|Washington DC|Washington, DC|United States Washington, D.C.=Washington, D.C.|US Virgin Islands=the United States Virgin Islands|USA=the United States|{{{locmapin}}}}}|the United States}}}}}}</div>}}}}
+
+|data7    = {{#invoke:Designation|header|1}}
+
+|data8    = {{#invoke:Designation|header|2}}
+
+|data9    = {{#invoke:Designation|header|3}}
+}}
+
+|image1   = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|upright=1.136|alt={{{alt|}}}}}
+|caption1 = {{{caption|}}}
+|image2    = {{#if:{{{district_map|}}}
+  |{{#invoke:InfoboxImage|InfoboxImage|image={{{district_map|}}}|size={{{map_width|}}}|sizedefault=frameless|upright=1.136|alt={{{map_alt|}}}}}
+  |{{#if:{{both|{{{locmapin|}}}|{{{coordinates|}}}{{#switch:{{#property:P625}}|unknown value|=|#default=1}}}}|{{Location map|{{if empty|{{{locmapin|}}}|USA}}|border=infobox|float=center|alt={{{map_alt|}}}|relief={{{locmap_relief|}}}|coordinates={{{coordinates|}}}|label={{if empty|{{{map_label|}}}|{{{locmap_label|}}}}}|label_width={{{label_width|}}}|label_size={{{label_size|}}}|position={{if empty|{{{label_position|}}}|{{{locmap_label_position|}}}}}|background={{{label_background|}}}|marksize=7|width={{if empty|{{{map_width|}}}|250}}|caption={{{map_caption|}}}}}
+    }}
+  }}
+|caption2  = {{#if:{{{district_map|}}}|{{{map_caption|}}}}}
+|image3    = {{#invoke:Infobox mapframe
+  | autoWithCaption
+  | mapframe-frame-width = 250
+  | mapframe-type = landmark
+  | mapframe-caption = Interactive map of {{if empty|{{{name|}}}|{{PAGENAMEBASE}}}}
+}}
+
+|headerstyle=color: var(--color-base);background:{{#if:{{{delisted|}}}|&#35;ddd|{{#invoke:Designation|color|nrhp}}}}
+|datastyle = border: 0;
+|labelstyle = font-weight:bold; border: 0;
+
+|label1  = Location
+|data1   = {{{location|}}}
+|label2  = Nearest city
+|data2   = {{{nearest_city|}}}
+
+|label3  = {{#ifeq:{{{coord_display}}}|title||Coordinates}}
+|data3   = {{#if:{{{coordinates|}}}|{{#invoke:Coordinates|coordinsert|{{{coordinates|}}}|type:landmark|region:{{Country abbreviation|United States|{{Infobox NRHP/locmapin2region|{{{locmapin|}}}}}}}}}|}}
+
+|label4  = Area
+|data4   = {{{area|}}}
+|label5  = Built
+|data5   = {{{built|}}}
+|label6  = Built by
+|data6   = {{{builder|}}}
+|label7  = Architect
+|data7   = {{{architect|}}}
+|label8  = Engineer
+|data8   = {{{engineer|}}}
+|label9  = {{{customarchitect_title|}}}
+|data9   = {{{customarchitect|}}}
+|label10 = Architectural&nbsp;style
+|data10  = {{{architecture|}}}
+|label11 = Demolished
+|data11  = {{{demolished|}}}
+|label12 = Restored
+|data12  = {{{restored|}}}
+|label13 = Restored by
+|data13  = {{{restored_by|}}}
+|label14 = Visitation
+|data14  = {{#if:{{{visitation_num|}}}|{{{visitation_num}}} {{#if:{{{visitation_year|}}}|({{{visitation_year}}})}}}}{{#if:{{{visitation_ref|}}}|{{{visitation_ref}}}}}
+|label15 = Website
+|data15  = {{{website|}}}
+
+|label20 = Part of
+|data20  = {{#if:{{{partof2|}}}
+ |{{Unbulleted list
+   |1={{#if:{{{partof|}}}|{{auto link|{{{partof|}}}}} {{#if:{{{partof_refnum|}}}|({{#invoke:String|replace|{{{partof_refnum}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} ID%1]|1|false}})}}}}
+   |2={{#if:{{{partof2|}}}|{{auto link|{{{partof2|}}}}} {{#if:{{{partof2_refnum|}}}|({{#invoke:String|replace|{{{partof2_refnum}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} ID%1]|1|false}})}}}}
+   |3={{#if:{{{partof3|}}}|{{auto link|{{{partof3|}}}}} {{#if:{{{partof3_refnum|}}}|({{#invoke:String|replace|{{{partof3_refnum}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} ID%1]|1|false}})}}}}
+  }}
+ |{{#if:{{{partof|}}}|{{auto link|{{{partof|}}}}} {{#if:{{{partof_refnum|}}}|({{#invoke:String|replace|{{{partof_refnum}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} ID%1]|1|false}})}}}}
+ }}
+
+|label21 = [[Multiple Property Submission|MPS]]
+|data21  = {{{mpsub|}}}
+|label22 = NRHP&nbsp;reference&nbsp;{{abbr|No.|number}}
+|data22  = {{#if:{{{refnum|}}}|{{#invoke:String|replace|{{{refnum}}}|^%s*(%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}}}{{#if:{{{increase_refnum|}}}{{{increase1_refnum|}}}|&nbsp;(original)<br />{{#invoke:String|replace|{{if empty|{{{increase_refnum|}}}|{{{increase1_refnum}}}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(increase{{#if:{{{increase2_refnum|}}}|&nbsp;1}}){{#if:{{{increase2_refnum|}}}|<br />{{#invoke:String|replace|{{{increase2_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(increase&nbsp;2)}}{{#if:{{{increase3_refnum|}}}|<br />{{#invoke:String|replace|{{{increase3_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(increase&nbsp;3)}}{{#if:{{{increase4_refnum|}}}|<br />{{#invoke:String|replace|{{{increase4_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(increase&nbsp;4)}}}}
+{{#if:{{{decrease_refnum|}}}{{{decrease1_refnum|}}}|<br />{{#invoke:String|replace|{{if empty|{{{decrease_refnum|}}}|{{{decrease1_refnum|}}}}}|(%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(decrease{{#if:{{{decrease2_refnum|}}}|&nbsp;1}}){{#if:{{{decrease2_refnum|}}}|<br />{{#invoke:String|replace|{{{decrease2_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(decrease&nbsp;2)}}{{#if:{{{decrease3_refnum|}}}|<br />{{#invoke:String|replace|{{{decrease3_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(decrease&nbsp;3)}}{{#if:{{{decrease4_refnum|}}}|<br />{{#invoke:String|replace|{{{decrease4_refnum}}}|(%d%d+)|[{{NRHP Focus|%1|url=yes}} %1]|1|false}}&nbsp;(decrease&nbsp;4)}}}}
+|label23 = {{#invoke:Designation|number|1}}
+|data23  = {{#ifeq:{{lc:{{{designated_other1_num_position}}}}}|top||{{{designated_other1_number|}}}}}
+|label24 = {{#invoke:Designation|number|2}}
+|data24  = {{#ifeq:{{lc:{{{designated_other2_num_position}}}}}|top||{{{designated_other2_number|}}}}}
+|label25 = {{#invoke:Designation|number|3}}
+|data25  = {{#ifeq:{{lc:{{{designated_other3_num_position}}}}}|top||{{{designated_other3_number|}}}}}
+
+|header30 = {{#ifexpr:0{{#if:{{{designated_other1_date|}}}|1}}{{#if:{{{designated_other2_date|}}}|1}}{{#if:{{{designated_other3_date|}}}|1}}{{#if:{{{added|}}}|1}}{{#if:{{{increase|}}}|1}}{{#if:{{{increase2|}}}|1}}{{#if:{{{increase3|}}}|1}}{{#if:{{{decrease|}}}|1}}{{#if:{{{decrease2|}}}|1}}{{#if:{{{decrease3|}}}|1}}{{#if:{{{designated_nrhp_type|}}}|1}}{{#if:{{{designated_nrhp_type2|}}}|1}}{{#if:{{{designated_nrhp_type3|}}}|1}}{{#if:{{{designated_nrhp_type4|}}}|1}}{{#if:{{{delisted|}}}|1}}{{#if:{{{delisted_nrhp_type|}}}|1}}{{#if:{{{delisted_nrhp_type2|}}}|1}}{{#if:{{{delisted_nrhp_type3|}}}|1}}{{#if:{{{delisted_nrhp_type4|}}}|1}}{{#if:{{{delisted_other1_date|}}}|1}}{{#if:{{{delisted_other2_date|}}}|1}}{{#if:{{{delisted_other3_date|}}}|1}}{{#if:{{{sigdate1|}}}{{{sigdate|}}}|1}}{{#if:{{{sigdate2|}}}|1}}{{#if:{{{sigdate3|}}}|1}}>1|Significant dates}}
+|label31  = {{if empty|{{{sigdate1_label|}}}|{{{sigdate_label|}}}}}
+|data31   = {{if empty|{{{sigdate1|}}}|{{{sigdate|}}}}}
+|label32  = {{{sigdate2_label|}}}
+|data32   = {{{sigdate2|}}}
+|label33  = {{{sigdate3_label|}}}
+|data33   = {{{sigdate3|}}}
+|label34  = Added to NRHP
+|data34   = {{{added|}}}
+|label35  = Boundary&nbsp;increase{{#if:{{{increase2|}}}|s}}
+|data35   = {{if empty|{{{increase|}}}|{{{increase1|}}}}}{{#if:{{{increase2|}}}|<br />{{{increase2}}}}}{{#if:{{{increase3|}}}|<br />{{{increase3}}}}}{{#if:{{{increase4|}}}|<br />{{{increase4}}}}}
+|label36  = Boundary&nbsp;decrease{{#if:{{{decrease2|}}}|s}}
+|data36   = {{if empty|{{{decrease|}}}|{{{decrease1|}}}}}{{#if:{{{decrease2|}}}|<br />{{{decrease2}}}}}{{#if:{{{decrease3|}}}|<br />{{{decrease3}}}}}{{#if:{{{decrease4|}}}|<br />{{{decrease4}}}}}
+
+|label37  = Designated&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type}}}}}}}
+|data37   = {{{designated_nrhp_type|}}}
+|label38  = Designated&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type2}}}}}}}
+|data38   = {{{designated_nrhp_type2|}}}
+|label39  = Designated&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type3}}}}}}}
+|data39   = {{{designated_nrhp_type3|}}}
+|label40  = Designated&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type4}}}}}}}
+|data40   = {{{designated_nrhp_type4|}}}
+|label41  = {{#invoke:Designation|label|1|Designated}}
+|data41   = {{{designated_other1_date|}}}
+|label42  = {{#invoke:Designation|label|2|Designated}}
+|data42   = {{{designated_other2_date|}}}
+|label43  = {{#invoke:Designation|label|3|Designated}}
+|data43   = {{{designated_other3_date|}}}
+
+|label44  = Removed from NRHP
+|data44   = {{{delisted|}}}
+|label45  = Delisted&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type}}}}}}}
+|data45   = {{{delisted_nrhp_type|}}}
+|label46  = Delisted&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type2}}}}}}}
+|data46   = {{{delisted_nrhp_type2|}}}
+|label47  = Delisted&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type3}}}}}}}
+|data47   = {{{delisted_nrhp_type3|}}}
+|label48  = Delisted&nbsp;{{Infobox NRHP/conv|abbr|{{lc:{{{nrhp_type4}}}}}}}
+|data48   = {{{delisted_nrhp_type4|}}}
+|label49  = {{#invoke:Designation|label|1|Delisted}}
+|data49   = {{{delisted_other1_date|}}}
+|label50  = {{#invoke:Designation|label|2|Delisted}}
+|data50   = {{{delisted_other2_date|}}}
+|label51  = {{#invoke:Designation|label|3|Delisted}}
+|data51   = {{{delisted_other3_date|}}}
+|header52 = _BLANK_
+|data53   = {{if empty|{{{embedded|}}}|{{{module|}}}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox NRHP]] with unknown parameter "_VALUE_"|ignoreblank=y|mapframe_args=y| added | alt | architect | architecture | area | borderless | builder | built | caption | coord_display | coordinates | customarchitect | customarchitect_title | decrease | decrease_refnum | decrease1 | decrease1_refnum | decrease2 | decrease2_refnum | decrease3 | decrease3_refnum | decrease4 | decrease4_refnum | delisted | delisted_nrhp_type | delisted_nrhp_type2 | delisted_nrhp_type3 | delisted_nrhp_type4 | delisted_other1_date | delisted_other2_date | delisted_other3_date | demolished | designated_nrhp_type | designated_nrhp_type2 | designated_nrhp_type3 | designated_nrhp_type4 | designated_other1 | designated_other1_abbr | designated_other1_color | designated_other1_date | designated_other1_link | designated_other1_name | designated_other1_num_position | designated_other1_number | designated_other1_textcolor | designated_other2 | designated_other2_abbr | designated_other2_color | designated_other2_date | designated_other2_link | designated_other2_name | designated_other2_num_position | designated_other2_number | designated_other2_textcolor | designated_other3 | designated_other3_abbr | designated_other3_color | designated_other3_date | designated_other3_link | designated_other3_name | designated_other3_num_position | designated_other3_number | designated_other3_textcolor | district_map | embed | embedded | engineer | image | image_size | increase | increase_refnum | increase1 | increase1_refnum | increase2 | increase2_refnum | increase3 | increase3_refnum | increase4 | increase4_refnum | label_background | label_position | label_size | label_width | location | locmap_label | locmap_label_position | locmap_relief | locmapin | map_alt | map_caption | map_label | map_width | module | mpsub | name | nearest_city | nocat | nrhp_type | nrhp_type2 | nrhp_type3 | nrhp_type4 | partof | partof_refnum | partof2 | partof2_refnum | partof3 | partof2_refnum | refnum | restored | restored_by | sigdate | sigdate_label | sigdate1 | sigdate1_label | sigdate2 | sigdate2_label | sigdate3 | sigdate3_label | visitation_num | visitation_ref | visitation_year | website }}{{Main other|{{#if:{{{nocat|}}}|}}}}{{#invoke:Check for conflicting parameters|check
+| template = [[Template:Infobox NRHP]]
+| cat = {{main other|Category:Pages using infobox NRHP with conflicting parameters}}
+| map_label; locmap_label 
+| label_position; locmap_label_position 
+| increase_refnum; increase1_refnum 
+| decrease_refnum; decrease1_refnum 
+| sigdate1_label; sigdate_label 
+| sigdate1; sigdate 
+| increase; increase1 
+| decrease; decrease1 
+| embedded; module 
+}}<noinclude>
+{{documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:NRHP infobox needing cleanup]]
+[[Category:Pages using infobox NRHP with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:NRHP infobox with nocat]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

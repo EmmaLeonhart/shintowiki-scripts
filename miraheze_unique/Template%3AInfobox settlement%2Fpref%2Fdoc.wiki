@@ -1,0 +1,77 @@
+{{Documentation subpage}}
+{{High-use}}
+
+This is a subtemplate of {{tl|Infobox settlement}}.  It is not intended to be used directly.  It is called by the following templates:
+*{{tlx|Infobox settlement/areadisp}}
+*{{tlx|Infobox settlement/densdisp}}
+*{{tlx|Infobox settlement/lengthdisp}}
+
+Its purpose is to determine whether those templates call one of the subtemplates that displays [[:en:metric units|metric units]] first (the default):
+*{{tlx|Infobox settlement/metric}}
+*{{tlx|Infobox settlement/metric/mag}}
+or one of the subtemplates that displays [[:en:Imperial units|Imperial units]] ([[:en:U.S. units|U.S. units]]) first:
+*{{tlx|Infobox settlement/impus}}
+*{{tlx|Infobox settlement/impus/mag}}
+or the following subtemplates if an area is specified in [[:en:dunam|dunam]]s:
+*{{tlx|Infobox settlement/dunam}}
+*{{tlx|Infobox settlement/dunam/mag}}
+
+== Usage ==
+The template handles up to three unnamed parameters.
+# Text which specifies preference to display either metric or Imperial units first. It is specified as <code>unit_pref</code> in {{tlx|Infobox settlement}}, then passed as <code>pref</code> to one of three display subtemplates (<code>[[Template:Infobox settlement/areadisp|/areadisp]], [[Template:Infobox settlement/densdisp|/densdisp]], [[Template:Infobox settlement/lengthdisp|/lengthdisp]]</code>).
+# Country name, used to determine preferene when not given in first parameter. It is specified as <code>subdivision_name</code> in {{tlx|Infobox settlement}}, then passed as <code>name</code> to one of three display subtemplates.
+# The third parameter is only specified by the <code>[[Template:Infobox settlement/areadisp|/areadisp]]</code> subtemplate, which passes the text <code>area</code>.
+
+The default is to display metric units first, so the template only checks these parameters for values that would indicate the need to display non-metric units first:
+# <code>Imperial, English, UK, US, U.S., US Customary, U.S. Customary, Standard</code>
+# <code>United Kingdom, <nowiki>[[</nowiki>United Kingdom]], {{nowrap|United States}}, {{nowrap|<nowiki>[[</nowiki>United States]]}}, {{nowrap|United States of America}}, {{nowrap|<nowiki>[[</nowiki>United States of America]]}}, {{nowrap|<nowiki>[[</nowiki>United States{{!}}United States of America]]}}</code>
+# if this template is called by the <code>[[Template:Infobox settlement/areadisp|/areadisp]]</code> subtemplate, then it also checks parameter #1 for <code>dunam</code> (after converting it to lowercase)
+
+== Examples ==
+{| class="wikitable"
+! Code
+! Result
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | | }}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | | }}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | Imperial | }}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | Imperial | }}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | UK | }}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | UK | }}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | US | }}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | US | }}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | | United Kingdom}}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | | United Kingdom}}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref | | United States}}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref | | United States}}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref|Dunam|Other|area}}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref|Dunam|Other|area}}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref|Dunam|Other}}</nowiki></code>
+| style="padding:10px;" | {{Infobox settlement/pref|Dunam|Other}}
+|-
+| style="padding:10px;" | <code><nowiki>{{Infobox settlement/pref|Dunam|United Kingdom|area}}</nowiki></code><br/>{{smaller|In this example, the template never checks for "Dunam" because it previously<br/>found that parameter #2 contained the name of a country using imperial units.}}
+| style="padding:10px;" | {{Infobox settlement/pref|Dunam|United Kingdom|area}}
+|}
+
+== See also ==
+*{{tl|Infobox settlement/areadisp}}
+*{{tl|Infobox settlement/lengthdisp}}
+*{{tl|Infobox settlement/link}}
+*{{tl|Infobox settlement cleaner}}
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Place infobox subtemplates]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

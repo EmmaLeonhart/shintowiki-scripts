@@ -1,0 +1,433 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+{{uses TemplateStyles|Template:Infobox landform/styles.css}}
+
+The '''[[Template:Infobox landform]]''' formats a right-side [[help:infobox|infobox]] to be used in articles about geological features for which no other infobox exists.
+
+== Usage ==
+{{Parameter names example
+|water|name|other_name|alt_name|photo|photo_width|photo_alt
+|photo_caption|map=|map_width|map_relief|label|label_position|map_caption|map_alt|mark|marker_size
+|mapframe = no
+|location|grid_ref_UK|grid_ref|grid_ref_Ireland|region
+|scale|source|display|format|coordinates|coords|coordinates_ref|coords_ref
+|range|part_of|water_bodies|elevation|elevation_m|elevation_ft|elevation_ref|surface_elevation
+|surface_elevation_m|surface_elevation_ft|surface_elevation_ref|highest_elevation
+|highest_coords|highest_point|length|width|area|depth|drop|height|etymology|nickname|native_name|authority|formed_by|geology|type
+|age|orogeny|volcanic_arc/belt|volcanic_arc|volcanic_belt|volcanic_field|eruption
+|last_eruption|topo|operator|designation|free_label_1|free_data_1|free_label_2|free_data_2|free_label_3|free_data_3
+|website|embedded}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox landform
+| water                 = 
+| name                  = 
+| native_name           = 
+| other_name            = 
+| type                  = 
+
+| photo                 = 
+| photo_width           = 
+| photo_alt             = 
+| photo_caption         = 
+
+| map                   = 
+| map_width             = 
+| map_caption           = 
+| map_alt               = 
+| map_relief            = 
+| label                 = 
+| label_position        = 
+| mark                  = 
+| marker_size           = 
+| mapframe = 
+| coordinates           = 
+| coords_ref       = 
+
+| location              = 
+| grid_ref              = 
+| grid_ref_UK           = 
+| grid_ref_Ireland      = 
+| range                 = 
+| part_of               = 
+| water_bodies          = 
+
+| age                   = 
+| orogeny               = 
+| formed_by             = 
+| geology               = 
+
+| etymology             = 
+| nickname              = 
+| authority             = 
+
+| operator              = 
+
+| area                  = 
+| area_km2              = 
+| area_mi2              = 
+| area_ref              = 
+
+| length                = 
+| width                 = 
+| depth                 = 
+| drop                  = 
+| height                = 
+
+| elevation             = 
+| elevation_m           = 
+| elevation_ft          = 
+| elevation_ref         = 
+| surface_elevation     = 
+| surface_elevation_m   = 
+| surface_elevation_ft  = 
+| surface_elevation_ref = 
+| highest_point         = 
+| highest_elevation     = 
+| highest_coords        = 
+
+| volcanic_arc/belt     = 
+| volcanic_arc          = 
+| volcanic_belt         = 
+| volcanic_field        = 
+| eruption              = 
+
+| topo                  = 
+| designation           = 
+| free_label_1          = 
+| free_data_1           = 
+| free_label_2          = 
+| free_data_2           = 
+| free_label_3          = 
+| free_data_3           = 
+| website               = 
+| embedded              = 
+}}
+</syntaxhighlight>
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox landform
+| water                 = 
+| name                  = 
+| native_name           = 
+| other_name            = 
+| type                  = 
+| photo                 = 
+| photo_width           = 
+| photo_alt             = 
+| photo_caption         = 
+| map                   = 
+| map_width             = 
+| map_caption           = 
+| map_alt               = 
+| map_relief            = 
+| label                 = 
+| label_position        = 
+| mark                  = 
+| marker_size           = 
+| mapframe = 
+| coordinates           = 
+| coords_ref            = 
+| location              = 
+| grid_ref              = 
+| grid_ref_UK           = 
+| grid_ref_Ireland      = 
+| range                 = 
+| part_of               = 
+| water_bodies          = 
+| age                   = 
+| orogeny               = 
+| formed_by             = 
+| geology               = 
+| etymology             = 
+| nickname              = 
+| authority             = 
+| operator              = 
+| area                  = 
+| area_km2              = 
+| area_mi2              = 
+| area_ref              = 
+| length                = 
+| width                 = 
+| depth                 = 
+| drop                  = 
+| height                = 
+| elevation             = 
+| elevation_m           = 
+| elevation_ft          = 
+| elevation_ref         = 
+| surface_elevation     = 
+| surface_elevation_m   = 
+| surface_elevation_ft  = 
+| surface_elevation_ref = 
+| highest_point         = 
+| highest_elevation     = 
+| highest_coords        = 
+| volcanic_arc/belt     = 
+| volcanic_arc          = 
+| volcanic_belt         = 
+| volcanic_field        = 
+| eruption              = 
+| topo                  = 
+| designation           = 
+| free_label_1          = 
+| free_data_1           = 
+| free_label_2          = 
+| free_data_2           = 
+| free_label_3          = 
+| free_data_3           = 
+| website               = 
+| embedded              = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== Parameters ==
+{| class="wikitable"
+|-
+! align="center" | Parameter !! align="center" | Default value !! align="center" | Description
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Lead section'''
+|-
+| '''water''' || || Assigning any value to this parameter will generate a blue header. Only articles about features that are predominantly water, such as [[maar]]s and [[whirlpool]]s, should use this option. The default is brown.
+|-
+| '''name''' || Wikidata label in the local language || Name of the landform.
+|-
+| '''native_name''' || {{Property|P1559}} || Name in local language – use {{tl|native name}} or, for multiple names, use {{tl|native name list}}
+|-
+| '''other_name''' || || Other name for the landform. See <code>native_name</code> if the name is in a different language.
+|-
+| '''type''' || || What type of landform the feature is. Required in order to generate a header.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Image and map'''
+|-
+| '''photo''' || Image on Wikidata || Photograph of the mountain. Preferably a distance shot to show most/all of the mountain rather than a view from the summit.
+|-
+| '''photo_width''' || 280px || The default image width in pixels.
+|-
+| '''photo_alt''' || <code>photo_caption</code> || [[Wikipedia:Alternative text for images|Alt text]] for the photo.
+|-
+| '''photo_caption''' || {{Property|P2096}} stated on image || Description of the photograph.
+|-
+| '''map''' || || The name of a location map as per [[Template:Location map]] (e.g. ''Indonesia'' or ''Russia''). The coordinates template ({{tl|coord}}) positions a pushpin marker and label on the map '''automatically'''. Example see: [[Mount Everest]].
+|-
+| '''map_width''' || 280px || 
+|- 
+| '''map_caption''' || <code>location</code> || Fill out if a map caption is desired.
+|- 
+| '''map_alt''' || || Alt text for the map, primarily for visually impaired readers. See ''[[Wikipedia:Alternative text for images#Maps and diagrams|Alt text for maps]]''.
+|- 
+| '''map_relief''' || || Any non-blank value will use the alternate map (typically a relief map) if the chosen location map has one
+|-
+| '''label''' || <code>name</code> || Label given to the landform on the location map
+|- 
+| '''label_position''' || right || Location of the label in relation to the specific mark
+|-
+| '''mark''' || ||
+|- 
+| '''marker_size''' || || 
+|-
+| '''mapframe''' || on by default when no other maps present || Add a {{tl|infobox mapframe}} map. See the documentation below in [[#Mapframe maps]] for more details on usage. 
+|-
+| '''coordinates''' || {{Property|P625}} || [[:en:Geographic coordinate system|Coordinates]] of the landform.
+|-
+| '''coords_ref''' || N/A || Optional parameter to add a suffix to the <code>coordinates</code> parameter (such as a reference).
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Location'''
+|-
+| '''location''' || {{Property|P276}} || Free-form field to describe the location.
+|-
+| '''grid_ref''' ||  || 
+|-
+| '''grid_ref_UK''' || {{Property|P613}} || If the landform is in [[:en:Great Britain|Great Britain]], the [[:en:British national grid reference system|British grid reference]]. Use <code>grid_ref_UK_ref</code> to add a suffix reference.
+|-
+| '''grid_ref_Ireland''' || {{Property|P4091}} || If the landform is in [[:en:Ireland|Ireland]] (whether [[:en:Northern Ireland|Northern Ireland]] or the [[:en:Republic of Ireland|Republic]]), the [[:en:Irish national grid reference system|Irish grid reference]]. Use <code>grid_ref_Ireland_ref</code> to add a suffix reference.
+|-
+| '''range''' || {{Property|P4552}} || The [[:en:Mountain range|Mountain range]] that the landform is in. Note that this should be the specific subgroup (eg. [[:en:Bernese Alps|Bernese Alps]], not [[:en:Alps|Alps]]).
+|-
+| '''part_of''' ||  || Group of relevant landforms the feature is a part of.
+|-
+| '''water_bodies''' ||  || Any bodies of water the landform is associated with (eg. the [[Strait of Dover]] for the [[White Cliffs of Dover]]).
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Geology'''
+|-
+|  '''age''' || || Age of the rock. [[:en:Geologic time scale|Geologic time scale]]s may be useful here.
+|-
+|  '''formed_by''' ||  || Processes which led to the formation of the landform
+|-
+|  '''orogeny''' || &nbsp; || &nbsp;
+|-
+|  '''geology''' || &nbsp; || &nbsp;
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Naming'''
+|-
+| '''etymology''' ||  || Origin of name
+|-
+| '''nickname''' ||  || &nbsp;
+|-
+| '''authority''' || &nbsp; || The authority which is responsible for the official naming of the landform
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Operator'''
+|-
+| '''operator''' ||  ||
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Area'''
+|-
+| '''area''' || rowspan=3 | {{Property|P2046}} || Footprint of the mountain or peak, without auto-conversion. You may wish to use <code><nowiki>{{</nowiki>[[Template:Convert|Convert]]<nowiki>|xxx|km2|mi2|abbr=on}}</nowiki></code>
+|-
+| '''area_km2''' || Footprint of the mountain or peak in square kilometres, with auto-conversion.
+|-
+| '''area_mi2''' || Footprint of the mountain or peak in square miles, with auto-conversion.
+|-
+| '''area_ref''' || N/A || Optional parameter to add a suffix to the <code>area</code> parameters (such as a reference).
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Dimensions'''
+|-
+| '''length''' || rowspan=3 | {{Property|P2043}} || Length of the landform, without auto-conversion. You may wish to use <code><nowiki>{{</nowiki>[[Template:Convert|Convert]]<nowiki>|xxx|km|mi|abbr=on}}</nowiki></code>
+|-
+| '''length_km''' || Length in kilometres, with auto-conversion.
+|-
+| '''length_mi''' || Length in miles, with auto-conversion.
+|-
+| '''length_ref''' || N/A || Optional parameter to add a suffix to the <code>length</code> parameters (such as a reference).
+|-
+| '''width''' || rowspan=3 | {{Property|P2049}} || Width of thelandform, without auto-conversion. You may wish to use <code><nowiki>{{</nowiki>[[Template:Convert|Convert]]<nowiki>|xxx|km|mi|abbr=on}}</nowiki></code>
+|-
+| '''width_km''' || Length in kilometres, with auto-conversion.
+|-
+| '''width_mi''' || Length in miles, with auto-conversion.
+|-
+| '''width_ref''' || N/A || Optional parameter to add a suffix to the <code>width</code> parameters (such as a reference).
+|-
+| '''depth_km''' ||  || Depth of the landform in kilometres, with auto-conversion.
+|-
+| '''depth_mi''' || || Depth in miles, with auto-conversion.
+|-
+| '''drop_km''' ||  || Drop in kilometres, with auto-conversion.
+|-
+| '''drop_mi''' || || Drop in miles, with auto-conversion.
+|-
+| '''height_m''' || || Height of landform (bottom to top) in meters, with auto-conversion.
+|-
+| '''height_ft''' || || Height of landform (bottom to top) in feet, with auto-conversion.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Elevation'''
+|-
+| '''elevation''' || rowspan=3 | {{Property|P2044}} || [[:en:Elevation|Elevation]], without auto-conversion. You may wish to use <code><nowiki>{{</nowiki>[[Template:Convert|Convert]]<nowiki>|xxx|m|ft|abbr=on}}</nowiki></code>
+|-
+| '''elevation_m''' || Elevation in metres, with auto-conversion.
+|-
+| '''elevation_ft''' || Elevation in feet, with auto-conversion.
+|-
+| '''elevation_ref''' || N/A || Optional parameter to add a suffix to the <code>elevation</code> parameters (such as a reference).
+|-
+| '''surface_elevation''' || rowspan=3 | {{Property|P2044}} || Surface [[:en:Elevation|Elevation]], without auto-conversion. You may wish to use <code><nowiki>{{</nowiki>[[Template:Convert|Convert]]<nowiki>|xxx|m|ft|abbr=on}}</nowiki></code>
+|-
+| '''surface_elevation_m''' || Surface elevation in metres, with auto-conversion.
+|-
+| '''surface_elevation_ft''' || Surface elevation in feet, with auto-conversion.
+|-
+| '''surface_elevation_ref''' || N/A || Optional parameter to add a suffix to the <code>elevation</code> parameters (such as a reference).
+|-
+| '''highest_point''' || || Name or location of the highest point of the landform
+|-
+| '''highest_elevation''' || || Elevation of the highest point
+|-
+| '''highest_coords''' || || Coordinates of the highest point
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Volcanism'''
+|-
+|  '''volcanic_arc/belt'''<br/> '''volcanic_arc'''<br/> '''volcanic_belt'''<br/> '''volcanic_field''' || || If the landform is a volcano, the [[:en:Volcanic arc|arc]], [[:en:volcanic belt|belt]] or [[volcanic field|field]] in which it is situated. Subsequent tags cause a more specific label to appear instead of the catch-all label. 
+|-
+|  '''eruption'''<br/> '''last_eruption''' || || The date of the last eruption if the landform is of volcanic origin.
+|-
+|  colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Other'''
+|-
+|  '''topo''' || &nbsp; || The name of the topographic map that contains the landform
+|-
+|  '''Designation''' || &nbsp; || Any designation the landform has, such as a protected area.
+|-
+|  '''free_label_1'''<br/> '''free_label_2'''<br/> '''free_label_3''' || &nbsp; || Additional tags that can be customised to add further content to the infobox. Provides the label on the left hand side of the infobox for the corresponding <code>free_data_#</code>
+|-
+|  '''free_data_1'''<br/> '''free_data_2'''<br/> '''free_data_3''' || &nbsp; || Additional tags that can be customised to add further content to the infobox. Provides the data on the right hand side of the infobox for the corresponding <code>free_label_#</code>
+|-
+|  '''website''' || &nbsp; || Any website of the landform.
+|-
+|  '''embedded''' || &nbsp; || Provides the ability to embed another infobox, such as [[:en:Template:Infobox protected area|Template:Infobox protected area]], if relevant. 
+|-
+|}
+===Mapframe maps===
+
+{{Infobox mapframe/doc/parameters
+| onByDefault = yes, unless any of the other map parameters are present: {{para|pushpin_map}}, {{para|map}}, {{para|map_image}}
+| mapframe-frame-width = 250
+| mapframe-marker = natural
+}}
+
+==Example==
+{{Infobox landform
+| water = 
+| name = Waterloo Bay
+| photo = Waterloo - geograph.org.uk - 454845.jpg
+| photo_caption = Tilted [[Mercia Mudstone Group|mudstones]] at Waterloo Bay, Larne
+| elevation = 0 m
+| elevation_ref = 
+| map = UK Northern Ireland
+| map_relief = 1 
+| map_caption = Location in Northern Ireland
+| label_position = none
+| location = [[County Antrim]], [[:en:Northern Ireland|Northern Ireland]]
+| coordinates = {{coord|54.852|-5.83}}
+| grid_ref_Ireland = D408037
+| topo = [[Ordnance Survey of Northern Ireland|OSNI]] ''Discoverer'' 9 
+| type = [[Mercia Mudstone Group]], [[Lias Group]]
+| age = [[:en:Jurassic|Jurassic]], [[:en:Triassic|Triassic]]
+| volcanic_arc/belt = 
+| last_eruption = 
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox landform
+| water = 
+| name = Waterloo Bay
+| photo = Waterloo - geograph.org.uk - 454845.jpg
+| photo_caption = Tilted [[Mercia Mudstone Group|mudstones]] at Waterloo Bay, Larne
+| elevation = 0 m
+| elevation_ref = 
+| map = UK Northern Ireland
+| map_relief = 1 
+| map_caption = Location in Northern Ireland
+| label_position = none
+| location = [[County Antrim]], [[:en:Northern Ireland|Northern Ireland]]
+| coordinates = {{coord|54.852|-5.83|display=inline,title}}
+| grid_ref_Ireland = D408037
+| topo = [[Ordnance Survey of Northern Ireland|OSNI]] ''Discoverer'' 9 
+| type = [[Mercia Mudstone Group]], [[Lias Group]]
+| age = [[:en:Jurassic|Jurassic]], [[:en:Triassic|Triassic]]
+| volcanic_arc/belt = 
+| last_eruption = 
+}}
+</syntaxhighlight>
+== Tracking categories ==
+* {{clc|Pages using infobox landform with unknown parameters}}
+* {{clc|Category:Pages using Infobox landform with no type}}
+
+== See also ==
+* {{tl|Infobox mountain}}
+* {{tl|Infobox mountain pass}}
+* {{tl|Infobox body of water}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Place infobox templates|Landform]]
+[[Category:Embeddable templates]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

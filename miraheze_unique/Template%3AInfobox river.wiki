@@ -1,0 +1,198 @@
+{{main other|{{#if:{{Has short description}} | |{{#invoke:Type in location|main|River|{{comma separated entries
+ |1= {{Plain text|{{strip tags|{{replace|{{{subdivision_name2|}}}|</li>|, </li>}}}}}}
+ |2= {{Plain text|{{strip tags|{{replace|{{{subdivision_name1|}}}|</li>|, </li>}}}}}}
+}}}}}}}}{{Infobox
+| child      = {{{embed|}}}
+| abovestyle = background-color: #CEDEFF;color: #202122;
+| above      = {{{name|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}{{#if:{{{other_name|{{{name_other|}}}}}}|<br /><div class="nickname" style="display:inline;font-size:78%">{{{other_name|{{{name_other|}}}}}}</div>}}
+| autoheaders= y
+| headerstyle= background-color: #CEDEFF;color: #202122;
+
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB |getValue|Rank=best|P18 |name=image |qid={{{qid|}}} |suppressfields={{{suppressfields|}}} |fetchwikidata={{{fetchwikidata|ALL}}} |onlysourced=no |noicon=yes |maxvals=1 |{{{image|}}}}}|size={{#if:{{{image_size|}}}|{{{image_size|}}}|250px}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{image_alt|}}}|suppressplaceholder=yes}}
+| caption    = {{#if:{{{image|}}}|{{{image_caption|}}}|{{{image_caption|{{#invoke:WikidataIB|getValue|P18|qual=P2096|qualsonly=y|fwd=ALL}}}}}}}
+
+| image2     = {{#invoke:InfoboxImage|InfoboxImage|image={{{map|}}}|size={{{map_size|}}}|sizedefault=frameless|alt={{{map_alt|}}}}}
+| caption2   = {{{map_caption|}}}
+
+| image3     = {{#if:{{both|{{{pushpin_map|}}}|{{{mouth_coordinates|}}}{{#property:P625}}}}|{{location map|{{{pushpin_map}}}
+               |border      =infobox
+               |alt         ={{{pushpin_map_alt|}}}
+               |float       =center
+               |width       ={{{pushpin_map_size|}}}
+               |coordinates ={{{mouth_coordinates|}}}
+               |relief      ={{#ifeq: {{{pushpin_map_relief|}}}| 0 || {{if empty|{{{pushpin_map_relief|}}}|1}}}}
+               |caption     ={{{pushpin_map_caption|}}} }} }}
+
+| image4 = {{#invoke:Infobox mapframe
+                     |auto
+                     |onByDefault={{#if:{{{map|}}}{{{pushpin_map|}}}|no|yes}}
+                     |mapframe-frame-width={{{mapframe-frame-width|250}}}
+                     |mapframe-stroke-color={{{mapframe-stroke-color|#0000ff}}}
+                     |mapframe-marker={{{mapframe-marker|water}}}
+                     |mapframe-type=river
+                     |mapframe-length_km={{{length_km|}}}|mapframe-length_mi={{{length_mi|}}}
+                     |mapframe-area_km2={{{basin_size_km2|}}}|mapframe-area_mi2={{{basin_size_mi2|}}}
+                     }}
+| caption4 = {{#invoke:Infobox mapframe|autocaption}}
+
+| label1     = Etymology
+| data1      = {{{etymology|{{{name_etymology|}}}}}}
+
+| class2     = nickname
+| label2     = Nickname(s)
+| data2      = {{{nickname|}}}
+
+| class3     = nickname
+| label3     = Native name
+| data3      = {{native name checker|{{{native_name|{{{name_native|}}}}}}}}
+
+| header5    = Location
+
+| label6     = {{{subdivision_type1|{{{country_type|Country}}}}}}
+| rowstyle6  = {{Infobox river/row-style}}
+| data6      = {{{subdivision_name1|{{{country|}}}}}}
+
+| label7     = {{{subdivision_type2|{{{state_type|State}}}}}}
+| rowstyle7  = {{Infobox river/row-style}}
+| data7      = {{{subdivision_name2|{{{state|}}}}}}
+
+| label8     = {{{subdivision_type3|{{{region_type|Region}}}}}}
+| rowstyle8  = {{Infobox river/row-style}}
+| data8      = {{{subdivision_name3|{{{region|}}}}}}
+
+| label9     = {{{subdivision_type4|{{{district_type|District}}}}}}
+| rowstyle9  = {{Infobox river/row-style}}
+| data9      = {{{subdivision_name4|{{{district|}}}}}}
+
+| label10    = {{{subdivision_type5|{{{municipality_type|Municipality}}}}}}
+| rowstyle10 = {{Infobox river/row-style}}
+| data10     = {{{subdivision_name5|{{{municipality|}}}}}}
+
+| header15   = Physical&nbsp;characteristics
+
+| rowstyle16 = display:none;
+| data16     = {{Infobox river/source|source={{{source1|}}}|loc={{{source1_location|}}}|elev={{{source1_elevation|}}}|coord={{{source1_coordinates|}}}|len={{{source1_length|}}}|coord_ref={{{source1_coord_ref|}}}}}
+| rowstyle17 = display:none;
+| data17     = {{Infobox river/source|2nd source|source={{{source2|}}}|loc={{{source2_location|}}}|elev={{{source2_elevation|}}}|coord={{{source2_coordinates|}}}|len={{{source2_length|}}}|coord_ref={{{source2_coord_ref|}}}}}
+| rowstyle18 = display:none;
+| data18     = {{Infobox river/source|3rd source|source={{{source3|}}}|loc={{{source3_location|}}}|elev={{{source3_elevation|}}}|coord={{{source3_coordinates|}}}|len={{{source3_length|}}}|coord_ref={{{source3_coord_ref|}}}}}
+| rowstyle19 = display:none;
+| data19     = {{Infobox river/source|4th source|source={{{source4|}}}|loc={{{source4_location|}}}|elev={{{source4_elevation|}}}|coord={{{source4_coordinates|}}}|len={{{source4_length|}}}|coord_ref={{{source4_coord_ref|}}}}}
+| rowstyle20 = display:none;
+| data20     = {{Infobox river/source|5th source|source={{{source5|}}}|loc={{{source5_location|}}}|elev={{{source5_elevation|}}}|coord={{{source5_coordinates|}}}|len={{{source5_length|}}}|coord_ref={{{source5_coord_ref|}}}}}
+| rowstyle21 = display:none;
+| data21     = {{Infobox river/source|Source confluence|source={{{source_confluence|}}}|loc={{{source_confluence_location|}}}|elev={{{source_confluence_elevation|}}}|coord={{{source_confluence_coordinates|}}}|coord_ref={{{source_confluence_coord_ref|}}}}}
+
+| label22    = [[:en:River mouth|Mouth]]
+| data22     = {{#if:{{{mouth|}}}|{{{mouth}}}|{{#if:{{{mouth_location|}}}{{{mouth_coordinates|}}}{{{mouth_elevation|}}}|&nbsp;}}}}
+| label23    = <div style="display:inline;font-weight:normal">&nbsp;&bull;&nbsp;location</div>
+| rowstyle23 = {{Infobox river/row-style}}
+| data23     = {{{mouth_location|}}}
+| label24    = <div style="display:inline;font-weight:normal">&nbsp;&bull;&nbsp;coordinates</div>
+| rowstyle24 = {{Infobox river/row-style}}
+| data24     = {{#if:{{{mouth_coordinates|}}}|{{#invoke:Coordinates|coordinsert|{{{mouth_coordinates}}}|type:river}}{{{mouth_coord_ref|}}}}}
+| label25    = <div style="display:inline;font-weight:normal">&nbsp;&bull;&nbsp;elevation</div>
+| rowstyle25 = {{Infobox river/row-style}}
+| data25     =  {{Infobox river/calcunit|free={{{mouth_elevation|}}}|met_unit=m|imp_unit=ft}}
+
+| label30    = Length
+| rowstyle30 = {{Infobox river/row-style}}
+| data30     = {{Infobox river/calcunit|free={{{length|}}}|met={{{length_km|}}}|met_unit=km|imp={{{length_mi|}}}|imp_unit=mi}}{{#if:{{{length_km|}}}{{{length_mi|}}}|{{{length_ref|}}}}}
+
+| label31    = Basin size
+| data31     = {{Infobox river/calcunit|free={{{basin_size|}}}|met={{{basin_size_km2|}}}|met_unit=km2|imp={{{basin_size_mi2|}}}|imp_unit=mi2}}{{#if:{{{basin_size_km2|}}}{{{basin_size_mi2|}}}|{{{basin_size_ref|}}}}}
+
+| label32    = Width
+| rowstyle32 = {{Infobox river/row-style}}
+| data32     = {{#if:{{{width_min|}}}{{{width_avg|}}}{{{width_max|}}}|&nbsp;}}
+| label33    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;minimum</span>
+| rowstyle33 = {{Infobox river/row-style}}
+| data33     = {{Infobox river/calcunit|free={{{width_min|}}}|met_unit=m|imp_unit=yd}}
+| label34    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;average</span>
+| rowstyle34 = {{Infobox river/row-style}}
+| data34     = {{Infobox river/calcunit|free={{{width_avg|}}}|met_unit=m|imp_unit=yd}}
+| label35    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;maximum</span>
+| rowstyle35 = {{Infobox river/row-style}}
+| data35     = {{Infobox river/calcunit|free={{{width_max|}}}|met_unit=m|imp_unit=yd}}
+
+| label36    = Depth
+| data36     = {{#if:{{{depth_min|}}}{{{depth_avg|}}}{{{depth_max|}}}|&nbsp;}}
+| label37    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;minimum</span>
+| rowstyle37 = {{Infobox river/row-style}}
+| data37     = {{{depth_min|}}}
+| label38    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;average</span>
+| rowstyle38 = {{Infobox river/row-style}}
+| data38     = {{{depth_avg|}}}
+| label39    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;maximum</span>
+| rowstyle39 = {{Infobox river/row-style}}
+| data39     = {{{depth_max|}}}
+
+| rowstyle50 = display:none;
+| data50     = {{Infobox river/discharge|loc={{{discharge1_location|}}}
+ |min={{Infobox river/calcunit|free={{{discharge1_min|}}}|met_unit=m3/s|imp_unit=cuft/s}}
+ |avg={{Infobox river/calcunit|free={{{discharge1_avg|}}}|met_unit=m3/s|imp_unit=cuft/s}}
+ |max={{Infobox river/calcunit|free={{{discharge1_max|}}}|met_unit=m3/s|imp_unit=cuft/s}}
+}}
+| rowstyle51 = display:none;
+| data51     = {{Infobox river/discharge|loc={{{discharge2_location|}}}|min={{{discharge2_min|}}}|avg={{{discharge2_avg|}}}|max={{{discharge2_max|}}}}}
+| rowstyle52 = display:none;
+| data52     = {{Infobox river/discharge|loc={{{discharge3_location|}}}|min={{{discharge3_min|}}}|avg={{{discharge3_avg|}}}|max={{{discharge3_max|}}}}}
+| rowstyle53 = display:none;
+| data53     = {{Infobox river/discharge|loc={{{discharge4_location|}}}|min={{{discharge4_min|}}}|avg={{{discharge4_avg|}}}|max={{{discharge4_max|}}}}}
+| rowstyle54 = display:none;
+| data54     = {{Infobox river/discharge|loc={{{discharge5_location|}}}|min={{{discharge5_min|}}}|avg={{{discharge5_avg|}}}|max={{{discharge5_max|}}}}}
+
+| header55   = Basin&nbsp;features
+
+| label56    = Progression
+| data56     = {{{progression|}}}
+
+| label57    = {{nowrap|[[:en:Drainage basin|River system]]}}
+| data57     = {{{river_system|{{{parent|}}}}}}
+
+| label58    = Landmarks
+| data58     = {{{basin_landmarks|{{{landmark|}}}}}}
+
+| label59    = Cities
+| data59     = {{{cities|{{{city|}}}}}}
+
+| label60    = Population
+| data60     = {{{basin_population|}}}
+
+| label61    = Tributaries
+| data61     = {{#if:{{{tributaries_left|}}}{{{tributaries_right|}}}|&nbsp;}}
+| rowstyle61 = {{Infobox river/row-style}}
+| label62    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;left</span>
+| rowstyle62 = {{Infobox river/row-style}}
+| data62     = {{{tributaries_left|}}}
+| label63    = <span style="font-weight:normal">&nbsp;&bull;&nbsp;right</span>
+| rowstyle63 = {{Infobox river/row-style}}
+| data63     = {{{tributaries_right|}}}
+
+| label64    = Waterbodies
+| data64     = {{{waterbodies|}}}
+
+| label65    = Waterfalls
+| data65     = {{{waterfalls|}}}
+
+| label66    = Bridges
+| data66     = {{{bridges|}}}
+
+| label67    = [[Inland port]]s
+| data67     = {{{ports|}}}
+
+| label68    = {{{custom_label|}}}
+| data68     = {{{custom_data|}}}
+
+| below      = {{{extra|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox river]] with unknown parameter "_VALUE_"|ignoreblank=y| basin_landmarks | basin_population | basin_size | basin_size_km2 | basin_size_mi2 | basin_size_ref | bridges | cities | city | country | country_type | custom_data | custom_label | depth_avg | depth_max | depth_min | discharge1_avg  | discharge1_location | discharge1_max | discharge1_min | discharge2_avg | discharge2_location | discharge2_max | discharge2_min | discharge3_avg | discharge3_location | discharge3_max | discharge3_min | discharge4_avg | discharge4_location | discharge4_max | discharge4_min | discharge5_avg | discharge5_location | discharge5_max | discharge5_min | district | district_type | embed | etymology | extra | fetchwikidata | image | image_alt | image_caption | image_size | image_upright | landmark | length | length_km | length_mi | length_ref | map | map_alt | map_caption | map_size | mouth | mouth_coord_ref | mouth_coordinates | mouth_elevation | mouth_location | municipality | municipality_type | name | name_etymology | name_native | name_other | native_name | nickname | other_name | parent | ports | progression | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_map_relief | pushpin_map_size | qid | region | region_type | river_system | source_confluence | source_confluence_coord_ref | source_confluence_coordinates | source_confluence_elevation | source_confluence_location | source1 | source1_coord_ref | source1_coordinates | source1_elevation | source1_length | source1_location | source2 | source2_coord_ref | source2_coordinates | source2_elevation | source2_length | source2_location | source3 | source3_coord_ref | source3_coordinates | source3_elevation | source3_length | source3_location | source4 | source4_coord_ref | source4_coordinates | source4_elevation | source4_length | source4_location | source5 | source5_coord_ref | source5_coordinates | source5_elevation | source5_length | source5_location | state | state_type | subdivision_name1 | subdivision_name2 | subdivision_name3 | subdivision_name4 | subdivision_name5 | subdivision_type1 | subdivision_type2 | subdivision_type3 | subdivision_type4 | subdivision_type5 | suppressfields | tributaries_left | tributaries_right | waterbodies | waterfalls | width_avg | width_max | width_min | mapframe | mapframe-area_km2 | mapframe-area_mi2 | mapframe-caption | mapframe-coord | mapframe-coordinates | mapframe-custom | mapframe-frame-coord | mapframe-frame-coordinates | mapframe-frame-height | mapframe-frame-width | mapframe-geomask | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-height | mapframe-id | mapframe-length_km | mapframe-length_mi | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-point | mapframe-shape | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-switcher | mapframe-width | mapframe-wikidata | mapframe-zoom }}{{main other|{{#if:{{{map|}}}{{{pushpin_map|}}}||}}}}<noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Pages using infobox river with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Pages using infobox river with mapframe]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

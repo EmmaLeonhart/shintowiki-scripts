@@ -1,0 +1,397 @@
+{{documentation subpage}}
+
+{{intricate template}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Wikidata|Module:Check for unknown parameters}}
+{{Uses Wikidata|P837}}
+
+The <code>{{tl|{{BASEPAGENAME}}}}</code> template adds an infobox with data fields for defining a particular festival or other day of observance.
+
+=== Usage ===
+
+<div style="width: 65%; overflow: auto; background: #dddddd; border: 1px solid black; padding:0.5em 1em 0.5em 1em;">
+ <nowiki>{{</nowiki>Infobox holiday
+ | holiday_name  = required
+ | type          = required
+ | image         = 
+ | imagesize     = 
+ | alt           = 
+ | caption       = 
+ | official_name =
+ | nickname      = 
+ | observedby    = 
+ | litcolor      = 
+ | longtype      = 
+ | significance  = 
+ | celebrations  = 
+ | observances   = 
+ | begins        = 
+ | ends          = 
+ | date          = 
+ | scheduling    = <nowiki></nowiki>
+ | duration      = <nowiki></nowiki>
+ | frequency     = <nowiki></nowiki>
+ <nowiki></nowiki>
+ | week_ordinal  = <nowiki></nowiki>
+ | weekday       = <nowiki></nowiki>
+ | month         = <nowiki></nowiki>
+ <nowiki></nowiki>
+ | date{{#time:Y|last year}}      = <nowiki></nowiki>
+ | date{{#time:Y}}      = <nowiki></nowiki>
+ | date{{#time:Y|next year}}      = <nowiki></nowiki>
+ | date{{#time:Y|+2 years}}      = <nowiki></nowiki>
+ | firsttime     = 
+ | lasttime      = 
+ | startedby     = 
+ | relatedto     = 
+ <nowiki>}}</nowiki>
+</div>
+
+For an annual holiday occurring on the same day each year:
+
+<div style="width: 65%; overflow: auto; background: #dddddd; border: 1px solid black; padding:0.5em 1em 0.5em 1em;">
+<syntaxhighlight lang="wikitext">
+{{Infobox holiday
+ | holiday_name  = Template Day
+ | type          = 
+ | image         = 
+ | imagesize     = 
+ | caption       = 
+ | official_name = 
+ | nickname      = 
+ | observedby    = 
+ | litcolor      = 
+ | longtype      = 
+ | significance  = 
+ | begins        = 
+ | ends          = 
+ | date          = 30 February
+ | scheduling    = same day each year
+ | duration      = 1 day
+ | frequency     = Annual
+ | celebrations  = 
+ | observances   = 
+ | relatedto     = 
+}}
+</syntaxhighlight>
+</div>
+
+=== Parameters ===
+
+==== Required ====
+;holiday_name: This is the most common holiday name, which appears at the top of the infobox. It should almost always be the name of the article.
+;type: The type of the holiday, for example: national, Judaism, Islamic, etc.
+
+;begins: Required for multi-day holidays—this is the starting date for a multi-day holiday.
+;ends: Required for multi-day holidays—this is the ending date for a multi-day holiday.
+;date: Required for single-day holidays—this is the date of a single-day holiday.  (If you use the '''week_ordinal'''/'''weekday'''/'''month''' parameters below, '''date''' will default to a phrase like "First Sunday in January".  Otherwise it has no default and is required.). Specific phrases for other rules are decoded in [[Template:Infobox holiday/date]]. Sample: "first Thursday after 18 April". If no value is given, the value of [[d:Property:P837]] of the holiday's Wikidata item is displayed instead. 
+;date{{CURRENTYEAR}}: Highly recommended for holidays that don't stay on the same [[:en:Gregorian calendar|Gregorian]] date—this is the Gregorian date on which the holiday will occur in {{CURRENTYEAR}}.  At the end of {{CURRENTYEAR}}, this will be replaced with '''date{{#expr:{{CURRENTYEAR}}+1}}''', which will later be replaced with '''date{{#expr:{{CURRENTYEAR}}+2}}'''. Therefore, it's a good idea to specify the Gregorian date for a few future years.  (Not necessary if '''week_ordinal'''/'''weekday'''/'''month''' are specified instead.)
+
+==== Optional ====
+;image: This should be an image that represents the holiday. The value is just the simple target-name, not a full wikilink.
+;imagesize: The size of the image (default is 225px).
+;caption: This is a caption that describes the image.
+;official_name: This should contain the official name of the holiday if it is not the holiday_name; this can also be the name of the holiday in its original language
+;nickname: This should hold any nicknames, alternatives, and translations for the holiday_name or official_name
+;observedby: Highly recommended—these are the people who celebrate/observe the holiday (e.g. [[:en:Muslim|Muslim]]s and [[:en:Islam|Islam]], [[:en:United States|United States]], people worldwide)
+;litcolor: This is the liturgical color of the day, if applicable to a religious holiday; or other color which is applicable to the holiday (e.g. green for [[:en:Saint Patrick's Day|Saint Patrick's Day]])
+;longtype: This is a lengthier description of the type, for example if there are two types that could be defined, for example "Cultural, Historical, Islamic"
+;significance: This is a lengthier description of the holiday's significance
+;scheduling: Define the how the date varies (not displayed). Sample value: "same day each year"
+;duration: Time the holiday or observance last. Sample values: "1 day", "1 week", "3 days"
+;frequency: The frequency with which the holiday or observance re-occurs. Sample values: "Annual", "Weekly", "Monthly"
+;week_ordinal, weekday, month: For days that are observed on the same day of the same week every year, these specify the week (week_ordinal), day of the week (weekday), and month. If you use these, you no longer have to specify '''date{{#expr:{{CURRENTYEAR}}-1}}''', '''date{{CURRENTYEAR}}''', '''date{{#expr:{{CURRENTYEAR}}+1}}''' and '''date{{#expr:{{CURRENTYEAR}}+2}}'''. If you specify '''week_ordinal''', then '''weekday''' and '''month''' are required also.
+;date{{#expr:{{CURRENTYEAR}}-1}}, date{{#expr:{{CURRENTYEAR}}+1}}, date{{#expr:{{CURRENTYEAR}}+2}}: recommended for holidays that don't stay on the same [[:en:Gregorian calendar|Gregorian]] date—the template will display the previous and next year's dates along with that of the current year, if they are provided. Again, it's a good idea to provide dates for a few years further into the future as well. (Not necessary if '''week_ordinal'''/'''weekday'''/'''month''' are specified instead.)
+;mdy: If set to a non-blank value, auto-formatted dates will be displayed in "month day, year" format instead of the default "day month year" order. 
+;firsttime: first time/year the holiday was observed (if available)
+;lasttime: last time/year the holiday was observed (if no longer observed)
+;celebrations: This contains the celebrations that occur on the holiday.
+;observances: This contains essentially the same thing as the '''celebrations''' attribute. However, the word ''observances'' is used. This may be more appropriate than '''celebrations''' when referring to prayer or more solemn observances. Most likely, you will not need both '''celebrations''' and '''observances'''.
+;relatedto: This contains holidays that relate to the current holiday.
+
+=== Examples ===
+
+==== Same date every year ====
+{|
+| style="vertical-align:top;" | <syntaxhighlight lang="wikitext">{{Infobox holiday
+| image        = Feu d'artifice du 14 juillet 2017 depuis le champ de Mars à Paris, devant la Tour Eiffel, Bastille day 2017 (35118978683).jpg
+| caption      = Fireworks at the [[:en:Eiffel Tower|Eiffel Tower]], [[:en:Paris|Paris]], 2017
+| holiday_name = Bastille Day
+| nickname     = French National Day<br />(''Fête nationale'')<br />The Fourteenth of July<br />(''Quatorze juillet'')
+| significance = Commemorates the [[:en:Storming of the Bastille|Storming of the Bastille]] on 14 July 1789, and the unity of the French people at the [[:en:Fête de la Fédération|Fête de la Fédération]] on 14 July 1790
+| observedby   = [[:en:France|France]]
+| date         = 14 July
+| frequency    = annual
+| celebrations = [[:en:Military parade|Military parade]]s, [[:en:Fireworks|Fireworks]], concerts, [[:en:Ball (dance)|ball]]s
+| type         = national
+}}</syntaxhighlight>
+| {{Infobox holiday	
+| image        = Feu d'artifice du 14 juillet 2017 depuis le champ de Mars à Paris, devant la Tour Eiffel, Bastille day 2017 (35118978683).jpg
+| caption      = Fireworks at the [[:en:Eiffel Tower|Eiffel Tower]], [[:en:Paris|Paris]], 2017
+| holiday_name = Bastille Day
+| nickname     = French National Day<br />(''Fête nationale'')<br />The Fourteenth of July<br />(''Quatorze juillet'')
+| significance = Commemorates the [[:en:Storming of the Bastille|Storming of the Bastille]] on 14 July 1789, and the unity of the French people at the [[:en:Fête de la Fédération|Fête de la Fédération]] on 14 July 1790
+| observedby   = [[:en:France|France]]
+| date         = 14 July
+| frequency    = annual
+| celebrations = [[:en:Military parade|Military parade]]s, [[:en:Fireworks|Fireworks]], concerts, [[:en:Ball (dance)|ball]]s
+| type         = national
+}}
+|}
+
+==== Same day of same week every year ====
+{|
+| style="vertical-align:top;" | <syntaxhighlight lang="wikitext">{{Infobox holiday
+| holiday_name  = Astronauts Day
+| type          = secular
+| observedby    = United States
+| week_ordinal  = last
+| weekday       = Friday
+| month         = January
+}}</syntaxhighlight>
+| {{Infobox holiday
+| holiday_name  = Astronauts Day
+| type          = secular
+| observedby    = United States
+| week_ordinal  = last
+| weekday       = Friday
+| month         = January
+}}
+|}
+
+==== Different days and dates each year ====
+{|
+| style="vertical-align:top;" | <syntaxhighlight lang="wikitext">{{Infobox holiday
+| holiday_name = Giving Tuesday
+| type         = cultural
+| duration     = 1 day
+| frequency    = annual
+| observedby   = Worldwide 
+| date         = Tuesday after Black Friday/Cyber Monday
+| date2022     = November 29
+| date2023     = November 28
+| date2024     = December 3
+| date2025     = December 2
+| relatedto    = [[:en:Thanksgiving (United States)|Thanksgiving]], [[:en:Black Friday (shopping)|Black Friday]]
+}}</syntaxhighlight>
+| {{Infobox holiday
+| holiday_name = Giving Tuesday
+| type         = cultural
+| duration     = 1 day
+| frequency    = annual
+| observedby   = Worldwide 
+| date         = Tuesday after Black Friday/Cyber Monday
+| date2022     = November 29
+| date2023     = November 28
+| date2024     = December 3
+| date2025     = December 2
+| relatedto    = [[:en:Thanksgiving (United States)|Thanksgiving]], [[:en:Black Friday (shopping)|Black Friday]]
+}}
+|}
+
+==== Formulas for calculating occurrences ====
+
+Sample formulas used in [[Template:Infobox holiday/date]]:
+
+*For [[:en:First Day of Summer|First Day of Summer]]: first Thursday after 18 April:
+*:<nowiki>{{Weekday after date|{{{year}}}|April|18|Thursday}}</nowiki>
+*:''See also:'' [[Template:Weekday after date]]
+*For [[:en:Victoria Day (Scotland)|Victoria Day (Scotland)]]: last Monday before or on 24 May
+*:<nowiki>{{Weekday before date|{{{year}}}|May|25|Monday}}</nowiki>
+*:''See also:'' [[Template:Weekday before date]]
+*For [[:en:Sexagesima|Sexagesima]]: second Sunday before [[:en:Ash Wednesday|Ash Wednesday]] (56 calendar days before Easter Sunday)
+*:<nowiki>{{#invoke:Easter|Calculate|{{{year}}}|day=-56|format=F j}}</nowiki>
+*:''See also:'' [[Module:Easter]]
+
+For some holidays, this is still defined on the holiday page itself. For [[:en:First Day of Summer|First Day of Summer]], this would be: 
+<syntaxhighlight lang="wikitext">
+| date                     = first Thursday after 18 April
+| date{{LASTYEAR}}         = {{Weekday after date|{{LASTYEAR}}|April|18|Thursday}}
+| date{{CURRENTYEAR}}      = {{Weekday after date|{{CURRENTYEAR}}|April|18|Thursday}}
+| date{{NEXTYEAR}}         = {{Weekday after date|{{NEXTYEAR}}|April|18|Thursday}}
+| date{{#time:Y|+2 years}} = {{Weekday after date|{{#time:Y|+2 years}}|April|18|Thursday}}
+</syntaxhighlight>
+
+==TemplateData==
+{{templateData header}}
+<div style="width:auto; autoflow: scroll">
+<templatedata>
+{
+	"format": "{{_\n| _____________ = _\n}}\n",
+	"params": {
+		"type": {
+			"example": "international",
+			"default": "e.g. secular, national, international, cultural, historic, ethnic, patriotic, default, asian, judaism, shinto, islam, christian, commercial",
+			"suggested": true,
+			"description": "Type of holiday",
+			"type": "string",
+			"required": true
+		},
+		"holiday_name": {
+			"suggested": true,
+			"description": "Usually the same as the page name",
+			"example": "World AIDS Day",
+			"required": true
+		},
+		"image": {
+			"description": "Do not include File: and do not wikilink",
+			"example": "Easter.svg",
+			"suggested": true
+		},
+		"image_size": {},
+		"imagesize": {},
+		"alt": {
+			"description": "Image description for visually impaired readers",
+			"example": "orange awareness ribbon",
+			"suggested": true
+		},
+		"caption": {
+			"description": "Image caption",
+			"type": "string"
+		},
+		"official_name": {
+			"suggested": true
+		},
+		"nickname": {
+			"suggested": true,
+			"description": "Nickname for the date, or translations",
+			"example": "SAAM"
+		},
+		"observedby": {
+			"description": "Countries or people who celebrate or observe the date ",
+			"example": "[[:en:Muslim|Muslim]]s and [[:en:Islam|Islam]], people worldwide",
+			"type": "string",
+			"suggested": true
+		},
+		"litcolor": {
+			"description": "Color used for the holiday",
+			"example": "Blue",
+			"type": "string",
+			"suggested": true
+		},
+		"longtype": {
+			"description": "Lengthier alternative to type",
+			"example": "Cultural, ethnic and Buddhist"
+		},
+		"significance": {
+			"description": "Lengthier description of holiday's significance",
+			"type": "string",
+			"suggested": true
+		},
+		"celebrations": {
+			"description": "What usually happens on that date. Observances can be used instead.",
+			"type": "string",
+			"suggested": true,
+			"example": "gift-giving, Church services"
+		},
+		"observances": {
+			"description": "Can be used instead of celebrations to describe what happens on the date ",
+			"type": "string"
+		},
+		"begins": {
+			"example": "1 October",
+			"suggested": true,
+			"description": "Required for multi-day holidays"
+		},
+		"ends": {
+			"example": "31 October",
+			"suggested": true,
+			"description": "Required for multi-day holidays"
+		},
+		"date": {
+			"description": "Date of event, do not use \"1st\", \"5th\" use 1, 5",
+			"example": "1 October",
+			"required": true,
+			"suggested": true
+		},
+		"week_ordinal": {
+			"description": "For the first, second etc weeks in a month ",
+			"example": "first"
+		},
+		"weekday": {
+			"description": "Day of week if always the same",
+			"example": "Sunday",
+			"suggested": true
+		},
+		"month": {
+			"description": "Use for long observances",
+			"example": "October",
+			"suggested": true
+		},
+		"date2024": {},
+		"date2023": {},
+		"date2022": {},
+		"date2021": {
+			"description": "Use when the date changes every year "
+		},
+		"scheduling": {
+			"example": "same day each year",
+			"type": "string",
+			"suggested": true,
+			"description": "Not displayed"
+		},
+		"mdy": {
+			"description": "if set auto-formatted dates will be displayed in \"month day, year\"",
+			"example": "yes",
+			"type": "string"
+		},
+		"duration": {
+			"example": "1 day",
+			"type": "string",
+			"default": "e.g. 1 day, 1 week, 1 month ",
+			"suggested": true
+		},
+		"frequency": {
+			"description": "How often it occurs",
+			"example": "Annual",
+			"default": "e.g. Annual, Every 4 years, Once",
+			"suggested": true
+		},
+		"firsttime": {
+			"suggested": true,
+			"description": "either first date or calculation of how long ago ",
+			"example": "{{start date and age|df=yes|1988}}"
+		},
+		"lasttime": {
+			"description": "Useful for events no longer held or not held every year "
+		},
+		"startedby": {
+			"suggested": true,
+			"description": "Person or organization"
+		},
+		"relatedto": {
+			"description": "Any other dates or wiki pages linked to it ",
+			"example": "[[:en:World Mental Health Day|World Mental Health Day]]",
+			"suggested": true
+		},
+		"date2007": {},
+		"date2008": {},
+		"date2009": {},
+		"date2010": {},
+		"date2011": {},
+		"date2012": {},
+		"date2013": {},
+		"date2014": {}
+	}
+}
+</templatedata>
+</div>
+
+=== Tracking categories===
+Pages using the template with unsupported parameters are tracked in {{clc|Pages using infobox holiday with unknown parameters}}.
+
+Other maintenance categories include:
+* {{clc|Infobox holiday with missing field}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Events infobox templates|Holiday]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

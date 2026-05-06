@@ -1,0 +1,76 @@
+{{infobox
+| datastyle   = text-align: left
+| title       = {{{name|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}
+| headerstyle = background:{{Infobox instrument/Color|{{{background|}}} }}
+| image       = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=250x250px|alt={{{alt|}}}}}
+| caption     = {{{caption|{{{image_capt|}}}}}}
+
+| header1     = {{Infobox instrument/Classification|{{{background|}}} }}
+
+| label2      = Other names
+| data2       = {{{names|}}}
+
+| label3      = [[:en:Musical instrument classification|Classification]]
+| data3       = {{#if:{{{classification|}}}|<span></span>
+{{{classification}}}
+}}
+| label4      = [[:en:Hornbostel–Sachs|Hornbostel–Sachs classification]]
+| data4       = {{{hornbostel_sachs|}}}{{#if:{{{hornbostel_sachs_desc|}}}|<br />({{{hornbostel_sachs_desc}}})}}
+
+| label5      = Inventor(s)
+| data5       = {{{inventors|}}}
+
+| label6      = Developed
+| data6       = {{{developed|}}}
+
+| label7      = {{#if:{{{timbre|}}}|[[:en:timbre|timbre]]}}
+| data7       = {{#if:{{{timbre|}}}|{{{timbre|}}}}}
+
+| label8      = {{#if:{{{volume|}}}|[[Loudness|Volume]]}}
+| data8       = {{#if:{{{volume|}}}|{{{volume|}}}}}
+
+| label9      = {{#if:{{{attack|}}}|[[:en:ADSR envelope|Attack]]}}
+| data9       = {{#if:{{{attack|}}}|{{{attack|}}}}}
+
+| label10     = {{#if:{{{decay|}}}|[[:en:ADSR envelope|Decay]]}}
+| data10      = {{#if:{{{decay|}}}|{{{decay|}}}}}
+
+| header11    = {{#if:{{{range|}}}|[[Range (music)|Playing range]]}}
+| data12      = {{#if:{{{range|}}}|<span></span>
+{{{range}}}
+{{#if:{{{pitch|}}}|{{{pitch}}}}}
+}}
+| header13     = {{#if:{{{related|}}}|[[Musical instrument|Related instruments]]}}
+| data14       = {{#if:{{{related|}}}|<span></span>
+{{{related}}}
+}}
+| header15     = {{#if:{{{musicians|}}}|Musicians}}
+| data16       = {{#if:{{{musicians|}}}|<span></span>
+{{{musicians}}}
+}}
+| header17     = {{#if:{{{composers|}}}|Composers}}
+| data18       = {{#if:{{{composers|}}}|<span></span>
+{{{composers}}}
+}}
+| header19     = {{#if:{{{builders|}}}|Builders}}
+| data20       = {{#if:{{{builders|}}}|<span></span>
+{{{builders}}}
+}}
+| header21     = {{#if:{{{sound sample|}}}|Sound sample}}
+| data22       = {{#if:{{{sound sample|}}}|<span></span>
+{{{sound sample}}}
+}}
+| header23     = {{#if:{{{articles|}}}|More articles or information}}
+| data24       = {{#if:{{{articles|}}}|<span></span>
+{{{articles}}}
+}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox instrument]] with unknown parameter "_VALUE_"| showblankpositional=1 | name | image | image_size | alt | caption | image_capt | background | names | classification | hornbostel_sachs | hornbostel_sachs_desc | inventors | developed | timbre | volume | attack | decay | range | pitch | related | musicians | composers | sound sample | builders | articles }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox instrument with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

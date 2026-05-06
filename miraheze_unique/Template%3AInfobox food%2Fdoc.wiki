@@ -1,0 +1,464 @@
+{{Documentation subpage}}
+
+{{#ifeq:{{SUBPAGENAME}}|sandbox||{{High-use}}}}
+{{Parameter names example
+ |name |image |image_size |image_alt |caption |alternative_name |place_of_origin |region |associated_cuisine |creator={{{creator}}} or {{{creators}}} |year |time1 |time2 |type |course |served |main_ingredient |minor_ingredient |variations |serving_size=100 g |calories |protein |fat |carbohydrate |glycemic_index |similar_dish |cookbook |commons| other 
+}}
+
+== Usage ==
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox food
+| name = 
+| name_lang =
+| name_italics =
+| image = 
+| image_upright =
+| image_alt =
+| caption = 
+| alternative_name = 
+| type = 
+| course = 
+| place_of_origin = 
+| region = 
+| associated_cuisine = 
+| creator =
+| year = 
+| mintime = 
+| maxtime = 
+| served = 
+| main_ingredient = 
+| minor_ingredient = 
+| variations = 
+| serving_size =
+| calories = 
+| calories_ref =
+| protein = 
+| fat = 
+| carbohydrate = 
+| glycemic_index = 
+| similar_dish = 
+| cookbook =
+| commons =
+| other = 
+| no_recipes =
+}}</syntaxhighlight>
+{{clear}}
+
+== Parameters ==
+Copy and paste the infobox above into the desired article and fill in the values after the equals (=) sign. All fields are optional. For questions or examples, please see the [[{{TALKSPACE}}:{{BASEPAGENAME}}|discussion page]].
+{| class="wikitable"
+! Parameter !! Description
+|-
+| name             || This comes to the top of the box. If omitted, it will be inferred from the page title.
+|-
+| name_lang        || [[:en:ISO 639|ISO 639]] language code, if the ''name'' is not in English
+|-
+| name_italics     || Set {{para|name_italics|true}} to italicise the name—if it is in a non-English language that uses the Roman alphabet, for example
+|-
+| image            || Do not prefix with <code>File:</code> or <code>Image:</code>, or surround with square brackets <code>[[]]</code>. If there is no image available, leave the field empty.
+|-
+| caption          || Leave empty for no image caption.
+|-
+| image_upright    || Optional custom image size, as fraction of default user-specified image size. <code>upright=yes</code> will specify reasonable size for images with vertical aspect ratio
+|-
+| image_alt        || Alt text for the image. See [[MOS:ALT]]
+|-
+| alternative_name   || Alternative name for the dish.
+|-
+| place_of_origin  || Place of origin of the dish.
+|-
+| region           || Region or state the dish was developed.
+|-
+| associated_cuisine || Associated cuisine, preferably linking to an existing ''Fooian cuisine'' article.
+|-
+| creator ''or'' creators || Creator or creators of the dish, for dishes with a known, well documented creator(s).
+|-
+| year             || Year dish was invented.
+|-
+| mintime (time1)  || Minimum time required to cook the dish.
+|-
+| maxtime (time2)  || Maximum time required to cook the dish.
+|-
+| type             || e.g. "pie", "biscuit", etc. 
+|-
+| course           ||  Appetizer, Dessert, Drink, Main course, Salad, Side dish.
+|-
+| served           || Serving temperature for the dish.
+|-
+| main_ingredient  || Main ingredient/s for the dish. {{tl|Plainlist}} may be used to separate multiple items.
+|-
+| minor_ingredient || Ditto minor ingredient/s for the dish.
+|-
+| variations       || Variations for making the dish.
+|-
+| serving_size     || Default serving size ("100 g" for the standard 100 [[gram|g]] serving size).
+|-
+| calories         || Calories per serving. Use a raw number for automatic conversion to kJ.
+|-
+| calories_ref     || Citation for the calories per serving.
+|-
+| protein          || The amount of protein in the dish per serving.
+|-
+| fat              || The amount of fat in the dish per serving.
+|-
+| carbohydrate     || The amount of carbohydrate in the dish per serving.
+|-
+| glycemic_index   || Glycemic index (GI). Must be a simple number (e.g., without references or standard error mean.)
+|-
+| similar_dish     || Any similar dish/es.
+|-
+| other            || Any other information.
+|-
+| cookbook         || Provides a link to the Cookbook at Wikibooks using a title other than Wikipedia's page name
+|-
+| commons          || override wikidata commons link by manually specifying commons page
+|-
+| no_recipes       || Set {{para|no_recipes|true}} to suppress the addition of recipe search links; omit to allow.
+|-
+| no_commons       || Set {{para|no_commons|true}} to suppress the addition of Commons search links; omit to allow.
+|}
+
+==Example==
+{{demo|reverse=1|<nowiki>{{Infobox food
+| name             =  Panipuri
+| image            = Gol Guppas-Noida-UP-SP001.jpg
+| alternative_name   = Sanskrit name - Jalapatra<br>
+''Paani patashi''/''Pani puri'' ([[Madhya Pradesh]], [[Uttar Pradesh]])<br>''Golgappa'', ''gol gappay'' or ''gol gappa'' ([[Haryana]], [[Delhi]], [[Punjab]], [[Karachi|Karachi or other Urdu-speaking regions of Pakistan]])<br>''Fuchka"/"Phuchka''/''Phuska/Puska''/''Fuska'' ([[Bengal]], [Bangladesh and West Bengal] [[Bihar]], [[Nepal]], [[Odisha|North Odisha]] and [[Assam]])<br>''Gupchup'' ([[Odisha]], [[Andhra Pradesh]], [[Telangana]], Southern [[Jharkhand]], [[Chhattisgarh]])
+| image_upright    = 1.1
+| caption          = Panipuri
+| place_of_origin  = [[India]] 
+| region           = [[Indian subcontinent]] 
+| type             = [[Snack]]
+| main_ingredient  = Flour, [[spiced seawater]], onions, potatoes, [[chickpea]]s
+| variations       = [[Sev puri]], [[Puri (food)|Puri]]
+| calories         =
+| other            =
+| name_italics     =
+}}</nowiki>}}
+{{clear}}
+
+== TemplateData ==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"params": {
+		"name": {
+			"label": "Name of food",
+			"description": "title on top of the infobox. If omitted, it will be default to the page title",
+			"required": false,
+			"type": "string"
+		},
+		"name_lang": {
+			"label": "Name language",
+			"description": "ISO 639 language code, if the name is not in English",
+			"required": false,
+			"type": "string"
+		},
+		"name_italics": {
+			"label": "Italicize name",
+			"description": "Set true to italicise the name—if it is in a non-English language that uses the Roman alphabet, for example",
+			"required": false,
+			"type": "string"
+		},
+		"image": {
+			"label": "Image filename",
+			"description": "Filename for image. Do not prefix with File: or Image:, or surround with square brackets [[]]. If there is no image available, leave the field empty.",
+			"suggested": true,
+			"type": "wiki-file-name"
+		},
+		"image_size": {
+			"label": "Width of image",
+			"description": "Optional custom image width, e.g. 240 'px' is not required.",
+			"required": false,
+			"type": "string",
+			"deprecated": "Use image_upright instead per [[ MOS:IMAGESIZE]]."
+		},
+		"upright": {
+			"label": "Fraction of user-specified image width",
+			"description": "Fractional width of image, where 1.0 is the user-specified default. 'yes' will set to 0.8",
+			"required": false,
+			"type": "string",
+			"default": "1",
+			"aliases": [
+				"image_upright"
+			]
+		},
+		"alt": {
+			"label": "Image alt string",
+			"description": "Alt string for image",
+			"suggested": true,
+			"type": "string",
+			"aliases": [
+				"image_alt"
+			]
+		},
+		"caption": {
+			"label": "Image caption",
+			"description": "Leave empty for no image caption.",
+			"required": false,
+			"type": "string"
+		},
+		"alternative_name": {
+			"label": "Alternative name",
+			"description": "Alternative names for the dish",
+			"required": false,
+			"type": "string",
+			"aliases": [
+				"alternate_name"
+			]
+		},
+		"type": {
+			"label": "Type of dish",
+			"description": "The dish is an instance of this kind of food",
+			"required": false,
+			"example": "pie",
+			"type": "string"
+		},
+		"course": {
+			"label": "Course served",
+			"description": "One of: Appetizer, Dessert, Drink, Main course, Salad, Side dish",
+			"required": false,
+			"type": "string"
+		},
+		"place_of_origin": {
+			"label": "Place of origin",
+			"description": "Place of origin of the dish",
+			"required": false,
+			"type": "string"
+		},
+		"region": {
+			"label": "Region of origin",
+			"description": "Region or state the dish was developed",
+			"required": false,
+			"type": "string"
+		},
+		"associated_cuisine": {
+			"label": "Associated cuisine",
+			"description": "Associated cuisine, preferably linking to an existing 'Fooian cuisine' article",
+			"required": false,
+			"type": "string"
+		},
+		"creator": {
+			"label": "Creator",
+			"description": "Creator or creators of the dish",
+			"required": false,
+			"aliases": [
+				"creators"
+			],
+			"type": "string"
+		},
+		"year": {
+			"label": "Year",
+			"description": "Year dish was invented",
+			"required": false,
+			"type": "number"
+		},
+		"mintime": {
+			"label": "Min cooking time",
+			"description": "Minimum amount of time to cook the dish",
+			"required": false,
+			"aliases": [
+				"time1"
+			],
+			"type": "string"
+		},
+		"maxtime": {
+			"label": "Max cooking time",
+			"description": "Maximum amount of time to cook the dish",
+			"required": false,
+			"aliases": [
+				"time2"
+			],
+			"type": "string"
+		},
+		"served": {
+			"label": "Serving temperature",
+			"description": "Serving temperature for the dish",
+			"required": false,
+			"type": "string"
+		},
+		"main_ingredient": {
+			"label": "Main ingredient",
+			"description": "Main ingredient(s) for the dish. {{Plainlist}} may be used to separate multiple items",
+			"required": false,
+			"type": "string"
+		},
+		"minor_ingredient": {
+			"label": "Minor ingredients",
+			"description": "Minor ingredient(s) for the dish. {{Plainlist}} may be used to separate multiple items",
+			"required": false,
+			"type": "string"
+		},
+		"variations": {
+			"label": "Variations",
+			"description": "Variations in recipe to make the dish",
+			"required": false,
+			"type": "string"
+		},
+		"serving_size": {
+			"label": "Serving size",
+			"description": "Default serving size ('100 g' for the standard 100 g serving size)",
+			"required": false,
+			"type": "string"
+		},
+		"calories": {
+			"label": "Calories per serving",
+			"description": "Use a raw number for automatic conversion to kJ.",
+			"required": false,
+			"type": "string"
+		},
+		"calories_ref": {
+			"label": "Calories reference",
+			"description": "Citation for the calories per serving",
+			"required": false,
+			"type": "string"
+		},
+		"protein": {
+			"label": "Protein per serving",
+			"description": "The amount of protein in the dish per serving.",
+			"required": false,
+			"type": "string"
+		},
+		"fat": {
+			"label": "Fat per serving",
+			"description": "The amount of fat in the dish per serving.",
+			"required": false,
+			"type": "string"
+		},
+		"carbohydrate": {
+			"label": "Carbohydrate per serving",
+			"description": "The amount of carbohydrate in the dish per serving.",
+			"required": false,
+			"type": "string"
+		},
+		"glycemic_index": {
+			"label": "Glycemic Index",
+			"description": "Glycemic index (GI). Must be a simple number (e.g., without references or standard error mean)",
+			"required": false,
+			"type": "number"
+		},
+		"similar_dish": {
+			"label": "Similar dishes",
+			"description": "Any similar dish(es)",
+			"required": false,
+			"type": "string"
+		},
+		"other": {
+			"label": "Other information",
+			"required": false,
+			"type": "string"
+		},
+		"belowstyle": {
+			"label": "Link styles",
+			"description": "CSS style for commons and cookbook links",
+			"required": false,
+			"type": "string"
+		},
+		"no_recipes": {
+			"label": "No recipes",
+			"description": "If true, suppress display of cookbook link",
+			"required": false,
+			"default": "false",
+			"type": "string"
+		},
+		"cookbook": {
+			"label": "Cookbook page",
+			"description": "Provides a link to the Cookbook at Wikibooks using a title other than Wikipedia's page name. If missing, uses wikidata.",
+			"required": false,
+			"type": "string"
+		},
+		"no_commons": {
+			"label": "No commons",
+			"description": "If true, suppress display of commons link",
+			"required": false,
+			"default": "false",
+			"type": "string"
+		},
+		"commons": {
+			"label": "Commons page",
+			"description": "Override wikidata commons link by manually specifying commons page",
+			"required": false,
+			"type": "string"
+		},
+		"country": {
+			"deprecated": "Use \"place_of_origin\" instead."
+		},
+		"national_cuisine": {
+			"deprecated": "Use \"associated_cuisine\" instead."
+		},
+		"qid": {
+			"label": "Wikidata ID",
+			"type": "string"
+		}
+	},
+	"description": "Infobox for type of food",
+	"format": "{{_\n| __________________ = _\n}}\n",
+	"paramOrder": [
+		"name",
+		"name_lang",
+		"name_italics",
+		"image",
+		"image_size",
+		"upright",
+		"alt",
+		"caption",
+		"alternative_name",
+		"type",
+		"course",
+		"place_of_origin",
+		"country",
+		"region",
+		"associated_cuisine",
+		"national_cuisine",
+		"creator",
+		"year",
+		"mintime",
+		"maxtime",
+		"served",
+		"main_ingredient",
+		"minor_ingredient",
+		"variations",
+		"serving_size",
+		"calories",
+		"calories_ref",
+		"protein",
+		"fat",
+		"carbohydrate",
+		"glycemic_index",
+		"similar_dish",
+		"other",
+		"belowstyle",
+		"no_recipes",
+		"cookbook",
+		"no_commons",
+		"commons",
+		"qid"
+	]
+}
+</templatedata>
+{{collapse bottom}}
+
+== Microformats ==
+
+===Adr===
+{{UF-adr}}
+===Recipe===
+{{UF-hrecipe}}
+
+== See also ==
+* {{clc|Pages using infobox food with unknown parameters}}
+* [[Template:Infobox nutritional value]]
+* [[:en:Template:Infobox brand|Template:Infobox brand]]
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Food infobox templates|Food]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,896 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+This infobox template is for religions or religious denominations. Some parameters are designed primarily for Christian denominations, but the template can be applicable to other religions when any inapplicable parameters are left blank.
+
+==Usage==
+To use this template, simply copy and paste the following text into the article and fill in any of the parameters. Only "name" is required.
+
+{{Parameter names example
+| icon
+| icon_width
+| icon_alt
+| name               
+| native_name
+| image               
+| imagewidth          
+| alt                 
+| caption             
+| abbreviation        
+| type                
+| main_classification 
+| orientation         
+| scripture           
+| theology           
+| polity              
+| governance         
+| structure          
+| leader_title        
+| leader_name         
+| leader_title1       
+| leader_name1        
+| leader_title2       
+| leader_name2   
+| leader_title3       
+| leader_name3       
+| fellowships_type   
+| fellowships         
+| fellowships_type1  
+| fellowships1
+| division_type
+| division     
+| division_type1
+| division1   
+| division_type2
+| division2
+| division_type3
+| division3         
+| associations
+| full_communion     
+| area                
+| language
+| liturgy
+| headquarters       
+| territory
+| possessions
+| founder             
+| founded_date        
+| founded_place
+| independence
+| reunion 
+| recognition
+| separated_from      
+| branched_from             
+| merger              
+| absorbed           
+| separations         
+| merged_into        
+| defunct            
+| congregations_type  
+| congregations       
+| members            
+| ministers_type      
+| ministers           
+| missionaries       
+| churches
+| missionary organization  
+| aid            
+| hospitals           
+| nursing_homes                       
+| primary_schools     
+| secondary_schools   
+| tax_status         
+| tertiary  
+| seminaries          
+| other_names         
+| publications        
+| website
+| website_title1
+| slogan 
+| logo      
+| module
+| footnotes           
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox religion
+| icon                    = 
+| icon_width              = 
+| icon_alt                = 
+| name                    = 
+| native_name             = 
+| native_name_lang        = 
+| image                   = 
+| imagewidth              = 
+| alt                     = 
+| caption                 = 
+| abbreviation            = 
+| type                    = 
+| main_classification     = 
+| orientation             = 
+| scripture               = 
+| theology                = 
+| polity                  = 
+| governance              = 
+| structure               = 
+| leader_title            = 
+| leader_name             = 
+| leader_title1           = 
+| leader_name1            = 
+| leader_title2           = 
+| leader_name2            = 
+| leader_title3           = 
+| leader_name3            = 
+| fellowships_type        = 
+| fellowships             = 
+| fellowships_type1       = 
+| fellowships1            = 
+| division_type           = 
+| division                = 
+| division_type1          = 
+| division1               = 
+| division_type2          = 
+| division2               = 
+| division_type3          = 
+| division3               = 
+| associations            = 
+| full_communion          = 
+| area                    = 
+| language                = 
+| liturgy                 = 
+| headquarters            = 
+| territory               = 
+| possessions             = 
+| founder                 = 
+| founded_date            = 
+| founded_place           = 
+| independence            = 
+| reunion                 = 
+| recognition             = 
+| separated_from          = 
+| branched_from           = 
+| merger                  = 
+| absorbed                = 
+| separations             = 
+| merged_into             = 
+| defunct                 = 
+| congregations_type      = 
+| congregations           = 
+| members                 = 
+| ministers_type          = 
+| ministers               = 
+| missionaries            = 
+| churches                = 
+| missionary organization = 
+| aid                     = 
+| hospitals               = 
+| nursing_homes           = 
+| primary_schools         = 
+| secondary_schools       = 
+| tax_status              = 
+| tertiary                = 
+| seminaries              = 
+| other_names             = 
+| publications            = 
+| website                 = 
+| website_title1          = 
+| slogan                  = 
+| logo                    = 
+| module                  = 
+| footnotes               = 
+}}</syntaxhighlight>
+{{Clear}}
+
+==Parameters==
+An explanation of what each parameter is. For more information, ask on the [[Template talk:Infobox religion|talk page]].
+# icon = Optional icon above the organization name (specify an image file and size)
+# name = the name of the denomination
+# native_name = the name of the denomination in the organization's native language (if it is not in English and it is not the same name used in the above field)
+# native_name_language = [[:en:ISO 639-1|ISO 639-1]] code for the language used in the above field
+# image = any image associated with the denomination (logo)
+# imagewidth = width of image, default "200px."  Recommend under 200px.  Used when available image is low-resolution.
+# alt = alternative text to be displayed describing image.
+# caption = a caption for the image
+# abbreviation = an abbreviation (such as an acronym) for the denomination
+# main_classification = (Judaism, Christianity, Islam, etc.)
+# orientation = (Catholic, Protestant, Eastern Orthodox, etc.)
+# scripture = the canon of [[:en:Religious text|Religious text]] used by the denomination, including non-Bible works
+# theology = (main theology, e.g. Calvinism, Arminianism, Baptist)
+# polity = the appropriate [[:en:Ecclesiastical polity|Ecclesiastical polity]]
+# governance = type of governance and/or governing body of the denomination
+# structure = organizational structure for groups that do not employ a standard ecclesiastical polity
+# leader_title = title of religious leader; defaults to "Moderator"
+# leader_name = name of religious leader
+# leader_title1 = title of religious leader; defaults to "Leader"
+# leader_name1 = name of religious leader
+# leader_title2 = title of religious leader; defaults to "Director"
+# leader_name2 = name of religious leader
+# leader_title3 = Custom leader title
+# leader_name3 = name of religious leader
+# fellowships_type = field to specify the type of fellowships, default "Distinct fellowships"
+# fellowships = names of distinct fellowships within the denomination
+# fellowships_type1 = Alternative fellowship description
+# fellowships_type1 = Alternative fellowships
+# division_type       = Specify a custom division
+# division            = Name or example of that division
+# division_type1      =
+# division1           =
+# division_type2      =
+# division2           =
+# division_type3      =
+# division3           =
+# associations = names of local, national, international associations the church is part of
+# area = geographical area, e.g. North America and Japan
+# language = language spoken or prevalent in liturgy, ceremonies, official documents, etc.
+# liturgy = [[:en:Liturgy|Liturgy]] employed, for instance [[Roman Rite]]
+# headquarters = Headquarters or main denominational office
+# founder = the original founder
+# founded_date = date of founding
+# founded_place = location of founding
+# separated_from = separation from (denomination)
+# branched_from = if the denomination branched off of a parent denomination
+# merger = if the denomination was the result of a merge
+# absorbed = names of denominations that were absorbed into this body
+# separations = names of denominations that have split off from this denomination
+# merged_into = name of existing denomination into which this body was merged
+# defunct = year in which this body ceased to exist if not merged with or into another denomination
+# congregations_type = type of congregation (default "Congregations")
+# congregations = number of congregations
+# members = number of members
+# ministers_type = specify the type of ministers/priests/pastors/...
+# ministers = number of ministers/priests/pastors/...
+# missionaries = number of missionaries
+# churches = number of churches
+# missionary organization = name of missionary organization
+# aid = name of humanitarian aid organization run by the church (see [[humanitarian aid]])
+# hospitals = number of church-operated hospitals
+# nursing_homes = number of church-operated nursing homes
+# primary_schools = number of church-operated primary schools
+# secondary_schools = number of church-operated secondary/high schools
+# tax_status = tax classification (e.g., [[Internal Revenue Service]] [[:en:501c3|501c3]] or equivalent) of the main body
+# tertiary = number of church-operated tertiary level colleges or universities
+# seminaries = number of church-operated seminaries 
+# publications = names of the publications made by the denomination
+# other_names = alternative name or names by which the denomination is/was known
+# website = official website
+# website_title1 = alternative website title
+# website1 = alternative web address
+# slogan= Slogan
+# logo= Logo
+# module= Used for embedding other infoboxes into this one
+# footnotes = any footnotes
+
+==Example==
+{{Infobox religion
+|name = Religion or Denomination
+|image = Example svg.svg
+|imagewidth = 150px
+|imagealttext = A typical image used as an example.
+|caption = An image caption
+|abbreviation = ABC
+|main_classification = Main classification
+|theology = Biblicist
+|governance = Government
+|founder = John Smith
+|founded_date = 2010 January
+|founded_place = Earth
+|separated_from = Parent denomination
+|leader = Joe Bloggs
+|branched_from = Big denomination
+|merger = Denomination 1 and Denomination 2
+|absorbed = Denomination 3
+|separations = Child Denominations
+|merged_into = Denomination 4
+|defunct = 2013
+|fellowships = Fellowships
+|associations = Association of Churches
+|area = Geographical area
+|language = English
+|liturgy = [[Roman Rite]]
+|headquarters = Headquarters
+|congregations = 100
+|churches = 31
+|missionary organization = 
+|members = 10000
+|ministers = 100
+|missionaries = 100
+|aid = Humanitarian Group
+|hospitals = 1
+|nursing_homes = 1
+|primary_schools = 20
+|secondary_schools = 10
+|tax_status = U.S. [[Internal Revenue Service|IRS]] 501c3
+|tertiary = 1
+|other_names = Alternative Name #1, Alternative Name #2
+|slogan="Slogan"
+|footnotes = footnote }}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox religion
+|name = Religion or Denomination
+|image = Example svg.svg
+|imagewidth = 150px
+|imagealttext = A typical image used as an example.
+|caption = An image caption
+|abbreviation = ABC
+|main_classification = Main classification
+|theology = Main theology
+|governance = Government structure
+|founder = John Smith
+|founded_date = 2010 January
+|founded_place = Geographic place
+|separated_from = Parent denomination
+|branched_from = Big denomination
+|merger = Denomination 1 and Denomination 2
+|separations = Child denominations
+|fellowships = Fellowships
+|associations = Association of Churches
+|area = Geographical area
+|language = English
+|congregations = 100
+|members = 10000
+|ministers = 100
+|missionary organization = 
+|aid = Humanitarian Group
+|hospitals = 1
+|nursing_homes = 1
+|primary_schools = 20
+|secondary_schools = 10
+|tax_status = U.S. [[Internal Revenue Service|IRS]] 501c3
+|tertiary = 1
+|publication = Publication Name #1, Publication Name #2
+|other_names = Alternative Name #1, Alternative Name #2
+|footnotes = footnote
+}}
+</syntaxhighlight>
+{{clear}}
+
+==TemplateData==
+{{collapse top|bg=#CCC}}
+{{TemplateData header}}
+<templatedata>
+{
+	"params": {
+		"icon": {
+			"label": "Icon",
+			"description": "Icon displayed above the organization name. Use in conjunction with \"Icon width\".",
+			"type": "wiki-file-name"
+		},
+		"icon_width": {
+			"label": "Icon width",
+			"description": "In pixels: \"Npx\" replacing N with some number. Use in conjunction with \"Icon\".",
+			"example": "150px",
+			"type": "string"
+		},
+		"icon_alt": {
+			"label": "Icon alt text",
+			"description": "Alternative text for the icon; for accesibility purposes. This text will be read out by screen readers in place of the image, and is invisible. Describe the contents of the image.",
+			"type": "content"
+		},
+		"name": {
+			"label": "Name",
+			"description": "Defaults to the article's name.",
+			"type": "string"
+		},
+		"native_name": {
+			"label": "Native name",
+			"description": "Name of the religion/denomination in its native language, if not in English. Use in conjunction with \"Native name language\".",
+			"type": "string"
+		},
+		"native_name_lang": {
+			"label": "Native name language",
+			"description": "ISO 639-1 code for the language used in the above field. Use in conjunction with \"Native name\".",
+			"example": "zh",
+			"type": "string"
+		},
+		"image": {
+			"label": "Image",
+			"description": "Image associated with the religion/denomination. Likely the logo.",
+			"type": "wiki-file-name",
+			"suggested": true
+		},
+		"imagewidth": {
+			"label": "Width of image",
+			"description": "Default \"200px\".",
+			"type": "string"
+		},
+		"alt": {
+			"aliases": [
+				"imagealttext"
+			],
+			"label": "Image alt text",
+			"description": "Alternative text for the image; for accesibility purposes. This text will be read out by screen readers in place of the image, and is invisible. Describe the contents of the image.",
+			"type": "content"
+		},
+		"caption": {
+			"label": "Image caption",
+			"type": "content",
+			"suggested": true
+		},
+		"abbreviation": {
+			"label": "Abbreviation",
+			"example": "ABC",
+			"type": "content"
+		},
+		"type": {
+			"label": "Type",
+			"type": "content"
+		},
+		"main_classification": {
+			"label": "Classification",
+			"description": "Judaism, Christianity, Islam, etc.",
+			"type": "content",
+			"suggested": true
+		},
+		"orientation": {
+			"label": "Orientation",
+			"description": "Catholic, Protestant, Eastern Orthodox, etc.",
+			"type": "content"
+		},
+		"scripture": {
+			"label": "Scripture",
+			"description": "The canon of religious text used.",
+			"type": "content"
+		},
+		"theology": {
+			"label": "Theology",
+			"description": "Calvinism, Arminianism, Baptist, etc.",
+			"type": "content"
+		},
+		"polity": {
+			"label": "Polity",
+			"description": "Appropriate ecclesiastical polity.",
+			"type": "content"
+		},
+		"governance": {
+			"label": "Governance",
+			"description": "Type of governance and/or governing body.",
+			"type": "content"
+		},
+		"structure": {
+			"label": "Structure",
+			"description": "Organizational structure for groups that do not employ a standard ecclesiastical polity.",
+			"type": "content"
+		},
+		"leader_title": {
+			"label": "Leader title 1",
+			"description": "Title of religious leader; defaults to \"Moderator\".",
+			"type": "string"
+		},
+		"leader_name": {
+			"aliases": [
+				"leader/moderator"
+			],
+			"label": "Name of leader 1",
+			"type": "content"
+		},
+		"leader_title1": {
+			"label": "Leader title 2",
+			"description": "Title of religious leader; defaults to \"Leader\".",
+			"type": "string"
+		},
+		"leader_name1": {
+			"aliases": [
+				"leader"
+			],
+			"label": "Name of leader 2",
+			"type": "content"
+		},
+		"leader_title2": {
+			"label": "Leader title 3",
+			"description": "Title of religious leader; defaults to \"Director\".",
+			"type": "string"
+		},
+		"leader_name2": {
+			"aliases": [
+				"director"
+			],
+			"label": "Name of leader 3",
+			"type": "content"
+		},
+		"leader_title3": {
+			"label": "Leader title 4",
+			"description": "Custom leader title.",
+			"type": "string"
+		},
+		"leader_name3": {
+			"label": "Name of leader 4",
+			"type": "content",
+			"description": "Use in conjunction with \"Leader title 4\"."
+		},
+		"fellowships_type": {
+			"label": "Fellowships type 1",
+			"description": "Type of fellowships; default is \"Distinct fellowships\".",
+			"type": "string"
+		},
+		"fellowships": {
+			"label": "Fellowships 1",
+			"description": "Names of distinct fellowships.",
+			"type": "content"
+		},
+		"fellowships_type1": {
+			"label": "Fellowships type 2",
+			"description": "Type of fellowships, if seperate from \"Fellowships type 1\"; default is \"Distinct fellowships\".",
+			"type": "string"
+		},
+		"fellowships1": {
+			"label": "Fellowships 2",
+			"description": "Names of distinct fellowships.",
+			"type": "content"
+		},
+		"division_type": {
+			"label": "Division type 1",
+			"description": "Type of divisions; default is \"Divisions\".",
+			"type": "string"
+		},
+		"division": {
+			"label": "Divisions 1",
+			"description": "Names or examples of \"Division type 1\". If \"Division type 1\" is not specified, list names or examples of divisions.",
+			"type": "content"
+		},
+		"division_type1": {
+			"label": "Division type 2",
+			"description": "Type of divisions, if different; default is \"Divisions\".",
+			"type": "string"
+		},
+		"division1": {
+			"label": "Divisions 2",
+			"description": "Names or examples of \"Division type 2\".",
+			"type": "content"
+		},
+		"division_type2": {
+			"label": "Division type 3",
+			"description": "Type of divisions, if different; default is \"Divisions\"."
+		},
+		"division2": {
+			"description": "Names or examples of \"Division type 3\".",
+			"label": "Divisions 3",
+			"type": "content"
+		},
+		"division_type3": {
+			"label": "Division type 4",
+			"description": "Type of divisions, if different; default is \"Divisions\"."
+		},
+		"division3": {
+			"label": "Divisions 4",
+			"description": "Names or examples of \"Division type 4\".",
+			"type": "content"
+		},
+		"associations": {
+			"label": "Associations",
+			"description": "Names of local, national, international associations the religion/denomination is part of.",
+			"type": "content"
+		},
+		"area": {
+			"label": "Region",
+			"description": "Geographical area.",
+			"example": "North America and Japan",
+			"type": "content"
+		},
+		"language": {
+			"label": "Language",
+			"description": "Language spoken or prevalent in liturgy, ceremonies, official documents, etc.",
+			"type": "content"
+		},
+		"liturgy": {
+			"label": "Liturgy",
+			"description": "Liturgy employed.",
+			"example": "[[Roman Rite]]",
+			"type": "content"
+		},
+		"headquarters": {
+			"label": "Headquarters",
+			"description": "Headquarters, or main office.",
+			"type": "content"
+		},
+		"territory": {
+			"label": "Territory",
+			"type": "content"
+		},
+		"possessions": {
+			"label": "Possessions",
+			"type": "content"
+		},
+		"founder": {
+			"label": "Founder",
+			"description": "The original founder.",
+			"type": "content",
+			"suggested": true
+		},
+		"founded_date": {
+			"label": "Date founded",
+			"description": "In the infobox, placed in an \"Origin\" parameter.",
+			"type": "date"
+		},
+		"founded_place": {
+			"label": "Location founded",
+			"description": "In the infobox, placed in an \"Origin\" parameter.",
+			"type": "content"
+		},
+		"independence": {
+			"label": "Independence",
+			"type": "content"
+		},
+		"reunion": {
+			"label": "Reunion",
+			"type": "content"
+		},
+		"recognition": {
+			"label": "Recognition",
+			"type": "content"
+		},
+		"separated_from": {
+			"label": "Separated from",
+			"description": "Separation from (denomination).",
+			"type": "content"
+		},
+		"branched_from": {
+			"label": "Branched from",
+			"description": "If the denomination branched off of a parent denomination.",
+			"type": "content"
+		},
+		"merger": {
+			"label": "Merger of",
+			"description": "If the denomination was the result of a merge.",
+			"type": "content"
+		},
+		"absorbed": {
+			"label": "Absorbed"
+		},
+		"separations": {
+			"label": "Separations",
+			"description": "Names of denominations that have split off from this denomination.",
+			"type": "content"
+		},
+		"merged_into": {
+			"label": "Merged into",
+			"description": "Name of existing denomination into which this body was merged.",
+			"type": "content"
+		},
+		"defunct": {
+			"label": "Defunct",
+			"description": "Year in which this body ceased to exist, if not merged with another denomination.",
+			"type": "content"
+		},
+		"congregations_type": {
+			"label": "Congregations type",
+			"description": "Type of congregation; default \"Congregations\".",
+			"type": "string"
+		},
+		"congregations": {
+			"label": "Number of congregations",
+			"type": "content"
+		},
+		"members": {
+			"aliases": [
+				"number_of_followers"
+			],
+			"label": "Members",
+			"description": "Number of members.",
+			"type": "content"
+		},
+		"ministers_type": {
+			"label": "Ministers type",
+			"description": "Specify the type of ministers, priests, pastors, etc. Default is \"Ministers\".",
+			"type": "string"
+		},
+		"ministers": {
+			"label": "Ministers",
+			"description": "Number of ministers etc.",
+			"type": "content"
+		},
+		"missionaries": {
+			"label": "Missionaries",
+			"description": "Number of missionaries.",
+			"type": "content"
+		},
+		"churches": {
+			"label": "Places of worship",
+			"description": "Number of churches.",
+			"type": "content"
+		},
+		"missionary organization": {
+			"label": "Missionary organization",
+			"description": "Name of missionary organization.",
+			"type": "content"
+		},
+		"aid": {
+			"label": "Aid organization",
+			"description": "Name of humanitarian aid organization run by the church.",
+			"type": "content"
+		},
+		"hospitals": {
+			"label": "Hospitals",
+			"description": "Number of church-operated hospitals",
+			"type": "content"
+		},
+		"nursing_homes": {
+			"label": "Nursing homes",
+			"description": "Number of church-operated nursing homes.",
+			"type": "content"
+		},
+		"primary_schools": {
+			"label": "Primary schools",
+			"description": "Number of church-operated primary schools.",
+			"type": "content"
+		},
+		"secondary_schools": {
+			"label": "Secondary schools",
+			"description": "Number of church-operated secondary/high schools.",
+			"type": "content"
+		},
+		"tax_status": {
+			"label": "Tax status",
+			"description": "Tax classification of the main body.",
+			"example": "[[:en:501(c)(3) organization|501c3]]",
+			"type": "content"
+		},
+		"tertiary": {
+			"label": "Tertiary institutions",
+			"description": "Number of church-operated tertiary level colleges or universities.",
+			"type": "content"
+		},
+		"other_names": {
+			"label": "Other name(s)",
+			"description": "Alternative name or names by which the religion/denomination is/was known.",
+			"type": "content"
+		},
+		"publications": {
+			"label": "Publications",
+			"description": "Name(s) of the publications made by the religion/denomination.",
+			"type": "content"
+		},
+		"website": {
+			"label": "Official website",
+			"type": "url"
+		},
+		"website_title1": {
+			"label": "Alternative website title",
+			"description": "Use in conjunction with \"Alternative website\".",
+			"type": "string"
+		},
+		"website1": {
+			"label": "Alternative website",
+			"description": "Use in conjunction with \"Alternative website title\".",
+			"type": "url"
+		},
+		"slogan": {
+			"label": "Slogan",
+			"type": "content"
+		},
+		"logo": {
+			"label": "Logo"
+		},
+		"module": {
+			"label": "Module",
+			"description": "Used for embedding other infoboxes. Unnecessary for most purposes.",
+			"type": "content"
+		},
+		"footnotes": {
+			"label": "Footnotes",
+			"description": "Displayed at the bottom of the infobox.",
+			"type": "content"
+		},
+		"full_communion": {
+			"label": "Full communion",
+			"type": "content"
+		},
+		"seminaries": {
+			"label": "Seminaries",
+			"description": "Number of church-operated seminaries.",
+			"type": "content"
+		},
+		"imageupright": {
+			"label": "Image upright",
+			"example": "Accessible scaling. Prefered over width"
+		}
+	},
+	"paramOrder": [
+		"icon",
+		"icon_width",
+		"icon_alt",
+		"name",
+		"native_name",
+		"native_name_lang",
+		"image",
+		"imageupright",
+		"imagewidth",
+		"alt",
+		"caption",
+		"abbreviation",
+		"type",
+		"main_classification",
+		"orientation",
+		"scripture",
+		"theology",
+		"polity",
+		"governance",
+		"structure",
+		"leader_title",
+		"leader_name",
+		"leader_title1",
+		"leader_name1",
+		"leader_title2",
+		"leader_name2",
+		"leader_title3",
+		"leader_name3",
+		"fellowships_type",
+		"fellowships",
+		"fellowships_type1",
+		"fellowships1",
+		"division_type",
+		"division",
+		"division_type1",
+		"division1",
+		"division_type2",
+		"division2",
+		"division_type3",
+		"division3",
+		"associations",
+		"full_communion",
+		"area",
+		"language",
+		"liturgy",
+		"headquarters",
+		"territory",
+		"possessions",
+		"founder",
+		"founded_date",
+		"founded_place",
+		"independence",
+		"reunion",
+		"recognition",
+		"separated_from",
+		"branched_from",
+		"merger",
+		"absorbed",
+		"separations",
+		"merged_into",
+		"defunct",
+		"congregations_type",
+		"congregations",
+		"members",
+		"ministers_type",
+		"ministers",
+		"missionaries",
+		"churches",
+		"missionary organization",
+		"aid",
+		"hospitals",
+		"nursing_homes",
+		"primary_schools",
+		"secondary_schools",
+		"tax_status",
+		"tertiary",
+		"seminaries",
+		"other_names",
+		"publications",
+		"website",
+		"website_title1",
+		"website1",
+		"slogan",
+		"logo",
+		"module",
+		"footnotes"
+	],
+	"description": "This infobox template is for religions or religious denominations. Some parameters are designed primarily for Christian denominations.",
+	"format": "{{_\n| __________________ = _\n}}\n"
+}
+</templatedata>
+{{collapse bottom}}
+
+==Tracking category==
+* {{clc|Pages using infobox religion with unknown parameters}}
+{{Organization infoboxes}}
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Religion and belief infobox templates|Religion]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

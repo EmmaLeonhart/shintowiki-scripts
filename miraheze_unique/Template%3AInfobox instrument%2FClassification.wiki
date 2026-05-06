@@ -1,0 +1,21 @@
+<includeonly>{{#if:{{{1|}}}|{{#switch: {{{1|}}}
+| keyboard                  = [[Keyboard instrument]]
+| woodwind                  = [[Woodwind instrument]]
+| brass                     = [[Brass instrument]]
+| string                    = [[String instrument]]
+| percussion                = [[Percussion instrument]]
+| electronic                = [[Electronic instrument]]
+| other                     = Other instrument
+| {{{1|}}}
+}}}}</includeonly><noinclude>
+;NOTE
+This template is an implementation detail, encapsulating the classification association we use for its parent template. It has a single unnamed parameter and expands to a link corresponding to the classification specified.
+
+[[Category: implementation details|{{PAGENAME}}]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

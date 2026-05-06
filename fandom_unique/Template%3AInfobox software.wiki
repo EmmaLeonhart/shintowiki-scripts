@@ -1,0 +1,122 @@
+<includeonly>{{Infobox
+| bodyclass  = vevent
+| bodystyle  = {{{bodystyle|}}}
+| title      = {{{title|{{{name|{{PAGENAMEBASE}}}}}}}}
+| titleclass = summary
+| labelstyle = white-space: nowrap;
+
+| imageclass = logo
+| imagestyle =
+| image      = {{#invoke:InfoboxImage |InfoboxImage |image={{{logo|}}} |size={{{logo size|{{{logo_size|}}} }}} |sizedefault=frameless |upright={{{logo upright|{{{logo_upright|{{#if:{{{screenshot|}}}|0.55|1}}}}} }}} |alt={{{logo alt|{{{logo_alt|}}} }}} |title={{{logo title|{{{logo_title|}}} }}} }}
+| caption    = {{{logo caption|{{{logo_caption|}}} }}}
+| image2     = {{#if:{{{screenshot|}}}
+  | {{#if:{{{collapsible|}}}
+    | {{Hidden begin|title={{{collapsetext|Screenshot}}}|titlestyle=background:{{{background|gainsboro}}};text-align:center|contentstyle=text-align:center}}
+  }}
+  {{#invoke:InfoboxImage |InfoboxImage |image={{{screenshot|}}} |size={{{screenshot size|{{{screenshot_size|}}} }}} |sizedefault=frameless |upright={{{screenshot upright|{{{screenshot_upright|1}}} }}} |alt={{{screenshot alt|{{{screenshot_alt|}}} }}} |title={{{screenshot title|{{{screenshot title|}}} }}} }}
+}}
+| caption2   = {{{caption|}}}{{#if:{{{screenshot|}}}|{{#if:{{{collapsible|}}}|{{hidden end}}}}}}
+
+| label1     = Other names
+| data1      = {{{other_names|}}}
+| label2     = [[:en:Programmer|Original author(s)]]
+| data2      = {{{author|}}}
+| label3     = [[:en:Programmer|Developer(s)]]
+| data3      = {{{developer|}}}
+| label4     = Initial release
+| data4      = {{{released|}}}
+| rowstyle5  = display: none;
+| data5      = {{#ifeq:{{lc:{{{ver layout|simple}}}}}|stacked
+ |{{Infobox software/stacked
+  |{{{title|{{{name|{{PAGENAME}}}}}}}}
+  |{{{discontinued|no}}}
+  |{{{latest release version|{{{latest_release_version|}}}}}}
+  |{{{latest release date   |   {{{latest_release_date|}}}}}}
+  |{{{latest preview version|{{{latest_preview_version|}}}}}}
+  |{{{latest preview date   |   {{{latest_preview_date|}}}}}}
+  }}
+ |{{Infobox software/simple
+  |{{{title|{{{name|{{PAGENAME}}}}}}}}
+  |{{{discontinued|no}}}
+  |{{{latest release version|{{{latest_release_version|}}}}}}
+  |{{{latest release date   |   {{{latest_release_date|}}}}}}
+  |{{{latest preview version|{{{latest_preview_version|}}}}}}
+  |{{{latest preview date   |   {{{latest_preview_date|}}}}}}
+  }}
+ }}
+| label6     = [[:en:Repository (version control)|Repository]]
+| data6      = {{#if:{{{repo|}}}{{#ifeq:{{{qid|}}}|none|-}}
+                  |{{{repo|}}}
+                  |{{#if: {{#property:P1324|from={{{qid|}}}}}
+                      |{{#ifeq: {{wikidata|property|{{{qid|}}}|P1324|best|format=%p}} | none
+                          |{{wikidata|property|{{{qid|}}}|P1324|best|format=%p}}{{EditAtWikidata|pid=P1324}}
+                          |{{Plainlist|<ul><li>{{URL|{{wikidata|property|{{{qid|}}}|P1324|best|format=%p}}}}{{EditAtWikidata|pid=P1324|qid={{{qid|}}}}}</li></ul>}}
+                       }}
+                   }}
+               }}
+| label7     = Written in
+| data7      = {{{programming language|{{{programming_language|}}}}}}
+| label8     = [[Middleware]]
+| data8      = {{{middleware|}}}
+| label10    = [[:en:Software engine|Engine]]{{#if: {{{engines|}}} |s}}
+| data10     = {{#if: {{{engines|}}}
+                   |{{{engines}}}
+                   |{{#if:{{{engine|}}}{{#ifeq:{{{qid|}}}|none|-}}
+                     |{{{engine|}}}
+                     |{{#if: {{#property:P408|from={{{qid|}}}}}
+                         |{{Plainlist|<ul>{{wikidata|properties|{{{qid|}}}|P408|best|format=<li>%p</li>}}</ul>}}{{EditAtWikidata|pid=P408}}
+                       }}
+                   }}
+               }}
+| label11    = [[:en:Operating system|Operating system]]
+| data11     = {{{operating system|{{{operating_system|}}}}}}
+| label12    = [[Computing platform|Platform]]
+| data12     = {{{platform|}}}
+| label13    = Included with
+| data13     = {{{included with|}}}
+| label14    = Predecessor
+| data14     = {{{replaces|}}}
+| label15    = Successor
+| data15     = {{{replaced_by|}}}
+| label16    = Service name
+| data16     = {{{service_name|}}}
+| label17    = [[File size|Size]]
+| data17     = {{{size|}}}
+| label18    = [[:en:Technical standard|Standard]](s)
+| data18     = {{{standard|}}}
+| label19    = Available in
+| data19     = {{#if:{{{language count|}}}|{{{language count}}} languages|{{{language|}}}}}{{{language footnote|}}}
+| data20     = {{#if:{{{language count|}}}|{{#if:{{{language|}}}|{{Hidden begin|title=List of languages|titlestyle=background-color: transparent;}}{{{language|}}}{{hidden end}}}}}}
+| label21    = [[Software categories#Categorization approaches|Type]]
+| data21     = {{{genre|}}}
+| label22    = [[Software license|License]]
+| data22     = {{{license|}}}
+| label23    = [[Software license|Licence]] 
+| data23     = {{{licence|}}}
+| label25    = Website
+| data25     = {{#if:{{{website|}}}{{#ifeq:{{{qid|}}}|none|-}}
+            | {{#ifeq:{{{website|}}} | hide | | {{{website|}}} }}
+            | {{#if:{{wikidata|property|raw|{{{qid|}}}|P856}}
+              | {{#invoke:WikidataIB |url2 |url={{if empty
+                |{{#invoke:WikidataIB|getValueByLang|P856|qid={{{qid|}}}|fwd=ALL|osd=no|maxvals=1}}
+                |{{Wdib|P856|qid={{{qid|}}}|fwd=ALL|osd=no|maxvals=1}}
+                }} }}
+              }}
+            }}
+| label26    = As of
+| data26     = {{{AsOf|}}}
+
+}}{{#invoke:Check for unknown parameters | check | showblankpositional=1
+| unknown = {{main other|}}
+| preview = Page using [[Template:Infobox software]] with unknown parameter "_VALUE_"|ignoreblank=y
+| AsOf | author | background | bodystyle | caption | collapsetext | collapsible | developer | discontinued | engine | engines | genre | included with | language | language count | language footnote | latest preview date | latest preview version | latest release date | latest release version | latest_preview_date | latest_preview_version | latest_release_date | latest_release_version | licence | license | logo | logo alt | logo caption | logo upright | logo size | logo title | logo_alt | logo_caption | logo_upright | logo_size | logo_title | middleware | name | operating system | operating_system | other_names | platform | programming language | programming_language | released | replaced_by | replaces | repo | screenshot | screenshot alt | screenshot upright | screenshot size | screenshot title | screenshot_alt | screenshot_upright | screenshot_size | screenshot_title | service_name | size | standard | title | ver layout | website | qid
+}}{{main other|{{#iferror: {{{latest release version|{{{latest_release_version|}}}}}} {{{latest release date   |   {{{latest_release_date|}}}}}} {{{latest preview version|{{{latest_preview_version|}}}}}} {{{latest preview date   |   {{{latest_preview_date|}}}}}} ||}}}}</includeonly><noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Pages using Infobox software with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Pages using Infobox software with version errors]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

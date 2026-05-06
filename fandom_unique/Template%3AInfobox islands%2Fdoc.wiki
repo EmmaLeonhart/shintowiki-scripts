@@ -1,0 +1,447 @@
+{{Documentation subpage}}
+{{High-use}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Check for unknown parameters}}
+{{Uses TemplateStyles|Template:Infobox islands/styles.css}}
+{{Uses Wikidata|P625}}
+
+This template is intended to be used as an infobox for an [[:en:Island|Island]], [[:en:Islet|Islet]] or an [[:en:Archipelago|Archipelago]]. For islands or archipelagos which are disputed, use {{para|disputed|yes}}
+
+==Blank infobox==
+{{Parameter names example| additional_info | archipelago | area_acre | area_code | area_code_type | area_footnotes | area_ha | area_km2 | area_m2 | area_sqft | area_sqmi | coastline_footnotes | coastline_ft | coastline_km | coastline_m | coastline_mi | coordinates = {{coord|0|0}} | country | country 1 capital type | country 1 largest city type | country 2 capital type | country 2 largest city type | country 3 capital type | country 3 largest city type | country 4 capital type | country 4 largest city type | country 5 capital type | country 5 largest city type | country 6 capital type | country 6 largest city type | country 7 capital type | country 7 largest city type | country 8 capital type | country 8 largest city type | country capital type | country largest city type | country_admin_divisions | country_admin_divisions_1 | country_admin_divisions_2 | country_admin_divisions_3 | country_admin_divisions_4 | country_admin_divisions_title | country_admin_divisions_title_1 | country_admin_divisions_title_2 | country_admin_divisions_title_3 | country_admin_divisions_title_4 | country_area | country_area_acre | country_area_ha | country_area_km2 | country_area_m2 | country_area_sqft | country_area_sqmi | country_capital | country_capital_and_largest_city | country_capital_type | country_largest_city | country_largest_city_population | country_largest_city_type | country_leader_name | country_leader_title | country1 | country1_admin_divisions | country1_admin_divisions_1 | country1_admin_divisions_title | country1_admin_divisions_title_1 | country1_area | country1_area_acre | country1_area_ha | country1_area_km2 | country1_area_m2 | country1_area_sqft | country1_area_sqmi | country1_capital | country1_capital_and_largest_city | country1_capital_type | country1_largest_city | country1_largest_city_population | country1_largest_city_type | country1_leader_name | country1_leader_title | country8 | country8_admin_divisions | country8_admin_divisions_1 | country8_admin_divisions_title | country8_admin_divisions_title_1 | country8_area | country8_area_acre | country8_area_ha | country8_area_km2 | country8_area_m2 | country8_area_sqft | country8_area_sqmi | country8_capital | country8_capital_and_largest_city | country8_capital_type | country8_largest_city | country8_largest_city_population | country8_largest_city_type | country8_leader_name | country8_leader_title | demonym | density_footnotes | density_km2 | density_Rank | density_sqmi | elevation_footnotes | elevation_ft | elevation_m | embed | ethnic_groups | etymology | footnotes | grid_reference | highest_mount | image | image_alt | image_caption | image_map | image_name | image_size | island_type | iso_code | iso_code_type | label | label_position | languages | length_footnotes | length_ft | length_km | length_m | length_mi | local_name | location | major_islands | map | map_alt | map_caption | map_image | map_mark | map_mark_width | map_relief | map_size | map_width | misc | module | name | native_name | native_name_lang | native_name_link | nickname | population | population_as_of | population_footnotes | population_Rank | population_Rank_max | postal_code | postal_code_type | pushpin_label | pushpin_label_position | pushpin_map = World| pushpin_map_alt | pushpin_map_caption | pushpin_map_label | pushpin_map_label_position | pushpin_map_mark | pushpin_map_mark_width | pushpin_map_relief | pushpin_map_width | pushpin_mark | pushpin_mark_width | pushpin_relief | Rank | registration_plate | sobriquet | timezone | timezone_DST | timezone1 | timezone1_DST | timezone2 | timezone2_DST | total_islands | treaty_system | utc_offset | utc_offset_DST | utc_offset1 | utc_offset1_DST | utc_offset2 | utc_offset2_DST | waterbody | website | width_footnotes | width_ft = 123 | width_km = 123 | width_m = 123| width_max_ft =123 | width_max_km = 123| width_max_m =123 | width_max_mi = 123| width_mi = 123 | width_min_ft = 123| width_min_km = 123 | width_min_m = 123 | width_min_mi = 123 }}
+
+{{clear}}
+
+===Metric units===
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox islands
+| name                              = {{subst:PAGENAME}}
+| native_name                       = 
+| native_name_link                  = 
+| native_name_lang                  = 
+| sobriquet                         = 
+| image_name                        = 
+| image_size                        = 
+| image_caption                     = 
+| image_alt                         = 
+| image_map                         = 
+| image_map_alt                     = 
+| image_map_size                    = 
+| image_map_caption                 = 
+| pushpin_map                       = 
+| pushpin_label                     = 
+| pushpin_label_position            = 
+| pushpin_map_alt                   = 
+| pushpin_relief                    = 
+| pushpin_map_caption               = 
+| coordinates                       = 
+| etymology                         = 
+| location                          = 
+| grid_reference                    = 
+| archipelago                       = 
+| waterbody                         = 
+| total_islands                     = 
+| major_islands                     = 
+| area_km2                          = 
+| area_footnotes                    = 
+| Rank                              = 
+| length_km                         = 
+| length_footnotes                  = 
+| width_km                          = 
+| width_footnotes                   = 
+| coastline_km                      = 
+| coastline_footnotes               = 
+| elevation_m                       = 
+| elevation_footnotes               = 
+| highest_mount                     = 
+| country                           = 
+| country_admin_divisions_title     = 
+| country_admin_divisions           = 
+| country_admin_divisions_title_1   = 
+| country_admin_divisions_1         = 
+| country_admin_divisions_title_2   = 
+| country_admin_divisions_2         = 
+| country_capital_type              = 
+| country_capital                   = 
+| country_largest_city_type         = 
+| country_largest_city              = 
+| country_capital_and_largest_city  = 
+| country_largest_city_population   = 
+| country_leader_title              = 
+| country_leader_name               = 
+| country_area_km2                  = 
+| country1                          = 
+| country1_admin_divisions_title    = 
+| country1_admin_divisions          = 
+| country1_admin_divisions_title_1  = 
+| country1_admin_divisions_1        = 
+| country1_capital_type             = 
+| country1_capital                  = 
+| country1_largest_city_type        = 
+| country1_largest_city             = 
+| country1_capital_and_largest_city = 
+| country1_largest_city_population  = 
+| country1_leader_title             = 
+| country1_leader_name              = 
+| country1_area_km2                 = 
+| demonym                           = 
+| population                        = 
+| population_as_of                  = 
+| population_footnotes              = 
+| population_Rank = 
+| population_Rank_max               = 
+| density_km2                       = 
+| density_Rank = 
+| density_footnotes                 = 
+| languages                         = 
+| ethnic_groups                     = 
+| timezone1                         = 
+| utc_offset1                       = 
+| timezone1_DST                     = 
+| utc_offset1_DST                   = 
+| website                           = 
+| additional_info                   = 
+| footnotes                         = 
+}}
+</syntaxhighlight>
+
+===Non-metric units===
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox islands
+| name                              = 
+| native_name                       = 
+| native_name_link                  = 
+| native_name_lang                  = 
+| sobriquet                         = 
+| image                             = 
+| image_size                        = 
+| image_caption                     = 
+| image_alt                         = 
+| image_map                         = 
+| image_map_alt                     = 
+| image_map_size                    = 
+| image_map_caption                 = 
+| pushpin_map                       = 
+| pushpin_label                     = 
+| pushpin_label_position            = 
+| pushpin_map_alt                   = 
+| pushpin_relief                    = 
+| pushpin_map_caption               = 
+| coordinates                       = 
+| etymology                         = 
+| location                          = 
+| grid_reference                    = 
+| archipelago                       = 
+| waterbody                         = 
+| total_islands                     = 
+| major_islands                     = 
+| area_sqmi                         = 
+| area_footnotes                    = 
+| Rank                              = 
+| length_mi                         = 
+| length_footnotes                  = 
+| width_mi                          = 
+| width_footnotes                   = 
+| coastline_mi                      = 
+| coastline_footnotes               = 
+| elevation_ft                      = 
+| elevation_footnotes               = 
+| highest_mount                     = 
+| country                           = 
+| country_admin_divisions_title     = 
+| country_admin_divisions           = 
+| country_admin_divisions_title_1   = 
+| country_admin_divisions_1         = 
+| country_admin_divisions_title_2   = 
+| country_admin_divisions_2         = 
+| country_capital_type              = 
+| country_capital                   = 
+| country_largest_city_type         = 
+| country_largest_city              = 
+| country_capital_and_largest_city  = 
+| country_largest_city_population   = 
+| country_leader_title              = 
+| country_leader_name               = 
+| country_area_sqmi                 = 
+| country1                          = 
+| country1_admin_divisions_title    = 
+| country1_admin_divisions          = 
+| country1_admin_divisions_title_1  = 
+| country1_admin_divisions_1        = 
+| country1_capital_type             = 
+| country1_capital                  = 
+| country1_largest_city_type        = 
+| country1_largest_city             = 
+| country1_capital_and_largest_city = 
+| country1_largest_city_population  = 
+| country1_leader_title             = 
+| country1_leader_name              = 
+| country1_area_sqmi                = 
+| demonym                           = 
+| population                        = 
+| population_as_of                  = 
+| population_footnotes              = 
+| population_Rank = 
+| population_Rank_max               = 
+| density_sqmi                      = 
+| density_Rank = 
+| density_footnotes                 = 
+| ethnic_groups                     = 
+| timezone1                         = 
+| utc_offset1                       = 
+| timezone1_DST                     = 
+| utc_offset1_DST                   = 
+| website                           = 
+| additional_info                   = 
+| footnotes                         = 
+}}
+</syntaxhighlight>
+
+===Width range===
+To express a width range, replace {{para|width_km}} or {{para|width_m}} or {{para|width_mi}} or {{para|width_ft}} with one of the following:
+<syntaxhighlight lang="wikitext">
+| width_min_km     = 
+| width_max_km     = 
+</syntaxhighlight>
+or
+<syntaxhighlight lang="wikitext">
+| width_min_m      = 
+| width_max_m      = 
+</syntaxhighlight>
+or
+<syntaxhighlight lang="wikitext">
+| width_min_mi     = 
+| width_max_mi     = 
+</syntaxhighlight>
+or
+<syntaxhighlight lang="wikitext">
+| width_min_ft     = 
+| width_max_ft     = 
+</syntaxhighlight>
+{{clear}}
+
+==Parameters==
+
+===Mandatory===
+* '''name''' = the official name (without the word ''island'')
+* '''location''' = the sea in which the island is located
+* '''country''' = where the island is located. Either specify the standard three-letter [[:en:ISO 3166-1 alpha-3|ISO 3166-1 alpha-3]] code for the country, or a name by which the country is commonly known (e.g., "US", "South Korea", "Democratic People's Republic of Korea"). If the island is shared, then use "country 1" and "country 2" and list them alphabetically.
+
+===Optional===
+* '''native_name''' = only when the common name is different from the native name.  To remove the "native name" prefix, use '''local_name''' instead.
+* '''native_name_link''' = link to the article about the language used for the native name.
+* '''sobriquet''' (or '''nickname''') = for a well-known [[:en:Sobriquet|Sobriquet]] or nickname
+* '''image''' = locator/satellite/other map image (without the prefix "File:" or "Image:")
+** '''image_caption''' = caption for the image
+** '''image_size''' = size of the image in [[:en:Pixel|Pixel]]s (e.g., "{{mono|100px}}")
+** '''image_alt''' = alt text for readers who cannot see the image; see [[Wikipedia:Alternative text for images]] for more information
+* '''image_map''' = locator/satellite/other map image (without the prefix "File:" or "Image:")
+** '''image_map_caption''' = caption for the image
+** '''image_map_size''' = size of the image in [[:en:Pixel|Pixel]]s (e.g., "{{mono|100px}}")
+** '''image_map_alt''' = alt text for readers who cannot see the image; see [[Wikipedia:Alternative text for images]] for more information
+* '''pushpin_map''' = the name of a location map as per [[Template:Location map]] (e.g. ''Indonesia'' or ''Russia'')
+** '''pushpin_map_alt''' = alt text for the map, primarily for visually impaired readers
+** '''pushpin_map_caption''' = a map caption if desired
+** '''pushpin_relief''' = whether to use a relief map if one is available
+** '''pushpin_map_width''' = the width of the map
+* '''coordinates''' = coordinates in the {{tl|Coord}} format (<code>type:isle</code> is added by default, unless another <code>type</code> is specified)
+* '''Grid_Reference''' = Ordnance survey grid ref (UK only)
+* '''archipelago''' = the name of the group of islands the island belongs to
+* '''total_islands''' = total number of islands (for archipelagos only)
+* '''major_islands''' = names of the major islands (for archipelagos only)
+* '''area_km2''' or '''area_sqmi''' or '''area_m2''' or '''area_sqft''' or '''area_acre''' or '''area_ha''' = the area in either square kilometres or square miles or square metres or square feet or hectares or acres without using {{tl|convert}}; the conversion will be done automatically
+** '''area_footnotes''' = references for area values using {{tag|ref}} format.
+* '''Rank''' = the island's Rank among other islands in the world in terms of size (1st being the largest island), as indicated in "[[:en:en:List of islands by area|en:List of islands by area]]"
+* '''length_km''' or '''length_mi''' or '''length_m''' or '''length_ft''' = the length in either kilometres or miles or metres or feet without using {{tl|convert}}; the conversion will be done automatically
+** '''length_footnotes''' = references for length values using {{tag|ref}} format.
+* '''width_km''' or '''width_mi''' or '''width_m''' or '''width_ft''' = the width in either kilometres or miles or metres or feet without using {{tl|convert}}; the conversion will be done automatically
+** '''width_footnotes''' = references for width values using {{tag|ref}} format.
+* '''coastline_km''' or '''coastline_mi''' or '''coastline_m''' or '''coastline_ft''' = the length of the coastline in either kilometres or miles or metres or feet without using {{tl|convert}}; the conversion will be done automatically
+** '''coastline_footnotes''' = references for coastline values using {{tag|ref}} format.
+* '''elevation_m''' or '''elevation_ft''' = the height of the highest point in either metres or feet without using {{tl|convert}}; the conversion will be done automatically
+** '''elevation_footnotes''' = references for elevation values using {{tag|ref}} format.
+* '''highest_mount''' = name of the highest point on the island, if any
+* '''country_admin_divisions_title''' = title for the administrative divisions
+* '''country_admin_divisions''' = the administrative divisions that govern the island
+* '''country_admin_divisions_title_1''' = (country admin_divisions title 1)
+* '''country_admin_divisions_1''' = (country admin divisions 1)
+* '''country_admin_divisions_title_2''' = (country admin divisions title 2)
+* '''country_admin_divisions_2''' = (country admin divisions 2)
+* '''country_capital_type''' = the capital's type of settlement (default value is "city")
+* '''country_capital'''
+* '''country_largest_city_type''' = the largest city's type of settlement (default value is "settlement")
+* '''country_largest_city'''
+* '''country_capital_and_largest_city'''
+* '''country_largest_city_population'''
+* '''country_leader_title'''
+* '''country_leader_name'''
+* '''country_area_km2''' or '''country_area_sqmi''' or '''country_area_m2''' or '''country_area_sqft''' or '''country_area_acre''' or '''country_area_ha''' = the area in either square kilometres or square miles or square metres or square feet or hectares or acres without using {{tl|convert}}; the conversion will be done automatically
+* '''country1''' = (see '''country''')
+* '''country1_admin_divisions_title''' = (country_admin_divisions_title)
+* '''country1_admin_divisions''' = (country_admin_divisions)
+* '''country1_capital_type''' = (country_capital_type)
+* '''country1_capital''' = (country_capital)
+* '''country1_largest_city type''' = (country_largest_city_type)
+* '''country1_largest_city''' = (country_largest_city)
+* '''country1_capital_and_largest_city''' = (country_capital_and_largest_city)
+* '''country1_largest_city_population''' = (country_largest_city_population)
+* '''country1_leader_title'''
+* '''country1_leader_name'''
+* '''country1_area_km2''' or '''country1_area_sqmi''' or '''country1_area_m2''' or '''country1_area_sqft''' or '''country1_area_acre''' or '''country1_area_ha''' = the area in either square kilometres or square miles or square metres or square feet or hectares or acres without using {{tl|convert}}; the conversion will be done automatically
+* '''country2''' = (see '''country''')
+* '''country2_admin_divisions_title''' = (country_admin_divisions_title)
+* '''country2_admin_divisions''' = (country_admin_divisions)
+* '''country2_capital_type''' = (country_capital_type)
+* '''country2_capital''' = (country_capital)
+* '''country2_largest_city_type''' = (country_largest_city_type)
+* '''country2_largest_city''' = (country_largest_city)
+* '''country2_capital_and_largest_city''' = (country_capital_and_largest_city)
+* '''country2_largest_city_population''' = (country_largest_city_population)
+* '''country2_leader_title'''
+* '''country2_leader_name'''
+* '''country2_area_km2''' or '''country2_area_sqmi''' or '''country2_area_m2''' or '''country2_area_sqft''' or '''country2_area_acre''' or '''country2_area_ha''' = the area in either square kilometres or square miles or square metres or square feet or hectares or acres without using {{tl|convert}}; the conversion will be done automatically
+*: '''...'''
+* '''country8''' = (see '''country''')
+* '''country8_admin_divisions_title''' = (country_admin_divisions_title)
+* '''country8_admin_divisions''' = (country_admin_divisions)
+* '''country8_capital_type''' = (country_capital_type)
+* '''country8_capital''' = (country_capital)
+* '''country8_largest_city_type''' = (country_largest_city_type)
+* '''country8_largest_city''' = (country_largest_city)
+* '''country8_capital_and_largest_city''' = (country_capital_and_largest_city)
+* '''country8_largest_city_population''' = (country_largest_city_population)
+* '''country8_leader_title'''
+* '''country8_leader_name'''
+* '''country8_area_km2''' or '''country8_area_sqmi''' or '''country8_area_m2''' or '''country8_area_sqft''' or '''country8_area_acre''' or '''country8_area_ha''' = the area in either square kilometres or square miles or square metres or square feet or hectares or acres without using {{tl|convert}}; the conversion will be done automatically
+* '''demonym''' = the name the people of the island are called that is based on location
+* '''population''' = the size of the island's population
+* '''population_as_of''' = the year when the population [[:en:Census|Census]] took place
+** '''population_footnotes''' = references for population values using {{tag|ref}} format.
+* '''density_km2''' or '''density_sqmi''' = the [[:en:Population density|Population density]] of the island expressed in either persons per square kilometres or persons per square miles without using {{tl|convert}}; the conversion will be done automatically. For example, if the number is 85, the output for <code>density km2</code> is {{convert|85|PD/km2|PD/sqmi|abbr=on}}.
+** '''density_footnotes''' = references for density values using {{tag|ref}} format.
+* '''languages''' = list of native languages spoken by the island's population
+* '''ethnic_groups''' = list the major [[:en:Ethnic group|Ethnic group]]s making up the island's population
+* '''timezone1''' = 
+* '''utc_offset1''' = 
+* '''timezone1_DST''' = 
+* '''utc_offset1_DST''' = 
+* '''timezone2''' = 
+* '''utc_offset2''' = 
+* '''timezone2_DST''' = 
+* '''utc_offset2_DST''' = 
+* '''website''' = 
+* '''additional_info''' = a space for additional information at the bottom of the infobox
+* '''footnotes''' =
+
+===Location maps===
+The <code>map</code> parameter can be used to display a map with a location marker.
+{{Infobox islands
+| name              = Santa Catalina Island
+| pushpin_map       = USA California
+| pushpin_map_width = 220
+| coordinates       = {{coord|33|23|0|N|118|25|0|W|display=inline}}
+| location          = [[:en:Pacific Ocean|Pacific Ocean]]
+| country           = United States
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; font-size: 90%;">
+{{Infobox islands
+| name              = Santa Catalina Island
+| pushpin_map       = USA California
+| pushpin_map_width = 220
+| coordinates       = {{coord|33|23|0|N|118|25|0|W|display=inline}}
+| location          = [[:en:Pacific Ocean|Pacific Ocean]]
+| country           = United States
+}}
+</syntaxhighlight>
+
+The <code>pushpin_map_caption</code> parameter can be used to display a caption below the map. A width of 220px is generally recommended but this width should be reduced for maps that are taller than they are wide. Use <code>pushpin_map_width=220</code> and not <code>pushpin_map_width=220px</code>.
+{{clear}}
+
+===Disputed territory===
+If the territory in question is disputed, use {{para|disputed|yes}}, which will add an additional header to show which other countries are making a claim.
+{{Infobox islands
+| disputed                   = yes
+| name                       = Liancourt Rocks
+| plural                     = yes
+| other_names                = Dokdo, Takeshima
+| image_name                 = Location-of-Liancourt-rocks-en.png
+| image_size                 = 300px
+| image_caption              = Location of the Liancourt Rocks in the Sea of Japan (East Sea) between South Korea and Japan
+| image_map                  = Liancourt Rocks Map.svg
+| map_caption                = Liancourt Rocks
+| location                   = [[:en:Sea of Japan|Sea of Japan]] (East Sea)
+| coordinates                = {{coord|37|14|30|N|131|52|0|E|display=inline}}
+| total_islands              = 90 (37 permanent land)
+| major_islands              = East Islet, West Islet
+| country                    = South Korea
+| country_admin_divisions_title = County
+| country_admin_divisions    = [[:en:Ulleung County|Ulleung County]]
+| country1                   = Japan
+| country1_admin_divisions_title = Town
+| country1_admin_divisions   = [[:en:Okinoshima, Shimane|Okinoshima]]
+| country2                   = South Korea
+| country2_admin_divisions_title = County
+| country2_admin_divisions   = [[:en:Ulleung County|Ulleung County]]
+| population                 = 2 + 43 support personnel
+| ethnic_groups              = [[:en:Korean people|Korean]]
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox islands
+| disputed                   = yes
+| name                       = Liancourt Rocks
+| plural                     = yes
+| other_names                = Dokdo, Takeshima
+| image_name                 = Location-of-Liancourt-rocks-en.png
+| image_size                 = 300px
+| image_caption              = Location of the Liancourt Rocks in the Sea of Japan (East Sea) between South Korea and Japan
+| image_map                  = Liancourt Rocks Map.svg
+| map_caption                = Liancourt Rocks
+| location                   = [[:en:Sea of Japan|Sea of Japan]] (East Sea)
+| coordinates                = {{coord|37|14|30|N|131|52|0|E|display=inline}}
+| total_islands              = 90 (37 permanent land)
+| major_islands              = East Islet, West Islet
+| country                    = South Korea
+| country_admin_divisions_title = County
+| country_admin_divisions    = [[:en:Ulleung County|Ulleung County]]
+| country1                   = Japan
+| country1_admin_divisions_title = Town
+| country1_admin_divisions   = [[:en:Okinoshima, Shimane|Okinoshima]]
+| country2                   = South Korea
+| country2_admin_divisions_title = County
+| country2_admin_divisions   = [[:en:Ulleung County|Ulleung County]]
+| population                 = 2 + 43 support personnel
+| ethnic_groups              = [[:en:Korean people|Korean]]
+}}
+</syntaxhighlight>
+
+==Microformat==
+This template generates an hCard microformat. More information can be found [[Template:UF-hcard-geo|here]].
+
+== Tracking categories ==
+* {{clc|Articles using infobox islands with additional info}}
+* {{clc|Pages using infobox islands with unknown parameters}}
+* {{clc|Pages using infobox islands with conflicting parameters}}
+
+== See also ==
+; Supporting templates
+* [[Template:Infobox islands/area]]
+* [[Template:Infobox islands/density]]
+* [[Template:Infobox islands/length]]
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Place infobox templates|Islands]]
+[[Category:s with coordinates fields]]
+[[Category:Island templates]]
+[[Category:Infobox templates with module parameter]]
+[[Category:Embeddable templates]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,77 @@
+{{infobox
+| bodyclass = {{#if:{{{collapsible|}}}|collapsible}}
+| bodystyle = 
+
+| abovestyle = background-color:#FFC569
+| above = Translations of<br />{{#if:{{{title|}}}|{{{title}}} | {{#if:{{{pi|}}}|{{Transliteration|pi|IAST|{{{pi}}}}} | {{#if:{{{sa|}}}|{{Transliteration|sa|IAST|{{{sa}}}}} | }} }} }}
+
+| label1 = English
+| data1 = {{{en|}}}
+
+| label2 = [[Sanskrit]]
+| data2 = {{#if:{{{sa|}}} | {{lang|sa|2= {{{sa}}}}} {{#if:{{{sa-Latn|}}} |<br/>([[International Alphabet of Sanskrit Transliteration|IAST]]: {{lang|sa-Latn|{{{sa-Latn}}}}})|}} }}
+
+| label3 = [[Assamese language|Assamese]]
+| data3 = {{#if:{{{as|}}} | {{lang|as|2= {{{as}}}}} {{#if:{{{as-Latn|}}} |<br/>({{lang|as-Latn|{{{as-Latn}}}}})|}} }}
+
+| label4 = [[Balinese language|Balinese]]
+| data4 = {{#if:{{{ban|}}} | {{lang|ban|2= {{{ban}}}}} {{#if:{{{ban-Latn|}}} |<br/>({{lang|ban-Latn|{{{ban-Latn}}}}})|}} }}
+
+| label5 = [[Bengali language|Bengali]]
+| data5 = {{#if:{{{bn|}}} | {{lang|bn|2= {{{bn}}}}} {{#if:{{{bn-Latn|}}} |<br/>({{lang|bn-Latn|{{{bn-Latn}}}}})|}} }}
+
+| label6 = [[Bhojpuri language|Bhojpuri]]
+| data6 = {{#if:{{{bho|}}} | {{lang|bho|2= {{{bho}}}}} {{#if:{{{bho-Latn|}}} |<br/>({{lang|bho-Latn|{{{bho-Latn}}}}})|}} }}
+
+| label22 = [[Gujarati language|Gujarati]]
+| data22 = {{#if:{{{gu|}}} | {{lang|gu|2= {{{gu}}}}} {{#if:{{{gu-Latn|}}} |<br/>({{lang|gu-Latn|{{{gu-Latn}}}}})|}} }}
+
+| label7 = [[Hindi]]
+| data7 = {{#if:{{{hi|}}} | {{lang|hi|2= {{{hi}}}}} {{#if:{{{hi-Latn|}}} |<br/>({{lang|hi-Latn|{{{hi-Latn}}}}})|}} }}
+
+| label8 = [[Javanese language|Javanese]]
+| data8 = {{#if:{{{jv|}}} | {{lang|jv|2= {{{jv}}}}} {{#if:{{{jv-Latn|}}} |<br/>({{lang|jv-Latn|{{{jv-Latn}}}}})|}} }}
+
+| label9 = [[Kannada]]
+| data9 = {{#if:{{{kn|}}} | {{lang|kn|2= {{{kn}}}}} {{#if:{{{kn-Latn|}}} |<br/>({{lang|kn-Latn|{{{kn-Latn}}}}})|}} }}
+
+| label10 = [[Malayalam]]
+| data10 = {{#if:{{{ml|}}} | {{lang|ml|2= {{{ml}}}}} {{#if:{{{ml-Latn|}}} |<br/>({{lang|ml-Latn|{{{ml-Latn}}}}})|}} }}
+
+| label11 = [[Marathi language|Marathi]]
+| data11 = {{#if:{{{mr|}}} | {{lang|mr|2= {{{mr}}}}} {{#if:{{{mr-Latn|}}} |<br/>({{lang|mr-Latn|{{{mr-Latn}}}}})|}} }}
+
+| label12 = [[Meitei language|Meitei]]
+| data12 = {{#if:{{{mni|}}} | {{lang|mni|2= {{{mni}}}}} {{#if:{{{mni-Latn|}}} |<br/>({{lang|mni-Latn|{{{mni-Latn}}}}})|}} }}
+
+| label13 = [[Nepali language|Nepali]]
+| data13 = {{#if:{{{ne|}}} | {{lang|ne|2= {{{ne}}}}} {{#if:{{{ne-Latn|}}} |<br/>({{lang|ne-Latn|{{{ne-Latn}}}}})|}} }}
+
+| label14 = [[Odia language|Odia]]
+| data14 = {{#if:{{{or|}}} | {{lang|or|2= {{{or}}}}} {{#if:{{{or-Latn|}}} |<br/>({{lang|or-Latn|{{{or-Latn}}}}})|}} }}
+
+| label15 = [[Punjabi language|Punjabi]]
+| data15 = {{#if:{{{pa|}}} | {{lang|pa|2= {{{pa}}}}} {{#if:{{{pa-Latn|}}} |<br/>({{lang|pa-Latn|{{{pa-Latn}}}}})|}} }}
+
+| label16 = [[Tamil language|Tamil]]
+| data16 = {{#if:{{{ta|}}} | {{lang|ta|2= {{{ta}}}}} {{#if:{{{ta-Latn|}}} |<br/>({{lang|ta-Latn|{{{ta-Latn}}}}})|}} }}
+
+| label17 = [[Telugu language|Telugu]]
+| data17 = {{#if:{{{te|}}} | {{lang|te|2= {{{te}}}}} {{#if:{{{te-Latn|}}} |<br/>({{lang|te-Latn|{{{te-Latn}}}}})|}} }}
+
+| label18 = [[Urdu]]
+| data18 = {{#if:{{{ur|}}} | {{lang|ur|2= {{{ur}}}}} {{#if:{{{ur-Latn|}}} |<br/>({{lang|ur-Latn|{{{ur-Latn}}}}})|}} }}
+
+| belowstyle = background-color:#EBEBEB; font-size:small
+| below = [[:en:Glossary of Hinduism terms|Glossary of Hinduism terms]]
+}}<noinclude>
+{{documentation}}
+[[Category:Hinduism infobox templates]]
+[[Category:Embeddable templates]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

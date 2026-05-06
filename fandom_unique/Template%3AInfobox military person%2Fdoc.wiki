@@ -1,0 +1,602 @@
+{{#ifeq:{{{noheader|}}}|yes||
+{{Documentation subpage}}
+{{Person infobox header}}
+{{High-use}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+}}
+
+A military person infobox may be used to summarize information about an individual military person, such as a soldier or military leader, or for uniformed officers in non-military branches of government.
+
+This template may be used as a module (sub-template) of {{tl|Infobox person}}; see [[Wikipedia:Infobox modules]] for guidance on such usage.
+
+== Usage ==
+
+=== Blank template ===
+The infobox should be added as shown below:
+
+{{Parameter names example|_template=|embed|width_style|honorific prefix|honorific_prefix|name|honorific suffix|honorific_suffix|image|image_size|alt|caption|native_name|native_name_lang|birth_name|other_name|nickname|birth_date|birth_place||disappeared_date|disappeared_place|death_date|death_place|death_cause|placeofburial_label|placeofburial|placeofburial_coordinates|allegiance|branch_label|branch|serviceyears_label|serviceyears|rank_label|rank|servicenumber|unit|commands|known_for|battles_label|battles|awards|memorials|alma_mater|spouse|relations|otherwork|laterwork|signature|signature_size|signature alt|signature_alt|website|homepage|URL|module}}
+
+<syntaxhighlight lang="wikitext" style=overflow:auto;>
+{{Infobox military person
+| honorific_prefix  = 
+| name              = 
+| honorific_suffix  = 
+| image             = 
+| image_upright     = 
+| alt               = 
+| caption           = 
+| native_name       = 
+| native_name_lang  = 
+| birth_name        = 
+| other_name        = 
+| nickname          = 
+| birth_date        = 
+| birth_place       = 
+| disappeared_date  = 
+| disappeared_place = 
+| death_date        = 
+| death_place       = 
+| death_cause       = 
+| placeofburial     = 
+| placeofburial_label = 
+| placeofburial_coordinates = 
+| allegiance        = 
+| branch            = 
+| branch_label      = 
+| serviceyears      = 
+| serviceyears_label = 
+| rank              = 
+| rank_label        = 
+| servicenumber     = 
+| unit              = 
+| commands          = 
+| known_for         = 
+| battles           = 
+| battles_label     = 
+| awards            = 
+| memorials         = 
+| alma_mater        = 
+| spouse            = 
+| children          = 
+| relations         = 
+| laterwork         = 
+| signature         = 
+| signature_size    = 
+| signature_alt     = 
+| website           = 
+| module            = 
+}}</syntaxhighlight>
+
+=== Parameters ===
+'''Note''': When using parameters, avoid the ambiguous abbreviation "N/A", and instead use "unknown" or "none". All subjective or qualitative judgements and numerical quantities or statistics must be cited to a reliable source (see [[WP:MILMOS#CITE]]). Please keep in mind [[WP:ICONDECORATION]] for the use of images.
+
+* '''honorific_prefix''' – titles such as "The Honourable".
+* '''name''' – the full name of the person.
+* '''honorific_suffix''' – post-nominal honours such as "OBE"
+* '''image''' – ''optional'' – an image of the person. The image must be given in the form <code><nowiki>Example.jpg</nowiki></code>; an image of a nation's highest award, such as the [[Medal of Honor]] or [[:en:Victoria Cross|Victoria Cross]], may be displayed for recipients of it, especially as a placeholder.
+* '''image_upright''' – ''optional'' – See [[WP:UPRIGHT]]
+* '''image_size''' – ''optional'' – the size of the image in px. Give the number without the px suffix (for example, ''220'' rather than ''220px''). {{para|image_upright}} is preferred.
+* '''alt''' [[Wikipedia:Alternative text for images|Alt text]], if used, must be placed here.
+* '''caption''' – ''optional'' – the text to be placed below the image.
+* '''native_name''' – the person's name in their own language
+* '''native_name_lang''' – [[:en:en:List of ISO 639-2 codes|ISO 639-2 code]] e.g. "fre" or "fra" for French. If more than one, use {{Tl|lang}} for {{Para|native_name}} instead
+* '''birth_name''' – ''optional'' – the name the person was born with, if different from that used later in life.
+* '''other_name''' – ''optional'' – other names by which the person was known.
+* '''nickname''' – ''optional'' – nickname(s) by which the person was known.
+* '''birth_date''' – ''optional'' – the date of birth, if known, using {{Tl|Birth date}} or {{Tl|Birth date and age}}.
+* '''birth_place''' – ''optional'' – the person's birthplace.
+* '''disappeared_date''' - ''optional'' when the person disappeared.
+* '''disappeared_place''' - ''optional'' where the person disappeared.
+* '''death_date''' – ''optional'' – the date of death, if applicable and known, in {{Tl|Death date and age}}.
+* '''death_place''' – ''optional'' – the place where the person died.
+* '''death_cause''' – ''optional'' – the cause of death, if notable.
+* '''placeofburial''' – ''optional'' – the place where the person's remains are buried or otherwise interred.
+* '''placeofburial_label''' – ''optional'' – the label of the ''placeofburial'' field (above). The ''placeofburial'' field is normally preceded by the label "Buried"; if this is not appropriate for the particular manner in which the remains were disposed of, a different label can be specified here.
+* '''placeofburial_coordinates''' – ''optional'' – the precise location where the person's remains are buried or otherwise interred. {{UF-coord}}
+* '''allegiance''' – ''optional'' – the country or other power the person served. Multiple countries may be indicated together with the corresponding dates. This field should not be used to indicate a particular service branch, which is better indicated by the <code>branch</code> field (below).
+* '''branch''' – ''optional'' – the service branch (Army, Navy, etc.) the person was a part of; this should be left blank for people who were not part of a formal armed service, or who predate the establishment of formal service branches.
+* '''branch_label''' – ''optional'' – the label of the ''branch'' field (above). The ''branch'' field is normally preceded by "Service/Branch"; to avoid word wrapping, one of "Service" or "Branch" can be specified.
+* '''serviceyears''' – ''optional'' – the years during which the person served.
+* '''serviceyears_label''' – ''optional'' – the label to use for the '''serviceyears''' field (above); defaults to "Years of service". 
+* '''rank''' – ''optional'' – the highest rank achieved by the person. The rank being awarded posthumously, may be noted. In cases where the person held different ranks in different armies, multiple ranks should be specified with dates and country noted for each. Separate multiple entries using {{Tl|Plainlist}}.
+* '''rank_label''' – ''optional'' – the label to use for the '''rank''' field (above); defaults to "Rank". 
+* '''service number''' – ''optional'' – the [[service number]] held by the individual during military service. Do not supply for living persons unless published by secondary sources such as the ''[[:en:London Gazette|London Gazette]]''.
+* '''unit''' – ''optional'' – for persons who are not notable as commanding officers, the unit (company, battalion, regiment, etc.) in which they served. This should be omitted if the commands are specified (as below).
+* '''commands''' – ''optional'' – for persons who are notable as commanding officers, the units they commanded. Dates should be given if multiple notable commands were held. Separate multiple entries using {{Tl|Plainlist}}.
+* '''known_for''' or '''known''' – ''optional'' – for other areas of notability such as war crimes or notable orders.
+* '''battles''' – ''optional'' – any notable battles or wars in which the person participated. This should be omitted if a {{tl|Campaignbox}} is used in conjunction with this template. Separate multiple entries using {{Tl|Plainlist}}.
+* '''battles_label''' – ''optional'' – the label to use for the '''battles''' field (above); defaults to "Battles/wars". 
+* '''awards''' – ''optional'' – any ''notable'' awards or decorations the person received; exhaustive lists should be worked into the prose. Separate multiple entries using {{Tl|Plainlist}}.
+* '''memorials''' – ''optional'' – Memorials or monuments to the subject (e.g. statues, streets named after them). Separate multiple entries using {{Tl|Plainlist}}.
+* '''alma_mater''' – ''optional'' – educational institutions the subject graduated from and degree received, in parentheses. Separate multiple entries using {{Tl|Plainlist}}
+* '''spouse''' – ''optional'' – list the service members spouse(s) if verifiable from a reliable source.
+* '''children''' – ''optional'' – Only if independently notable themselves or particularly relevant. Number of children (e.g., three or 3), or list of names if notable, in which case, separate entries using <nowiki>{{Plainlist}}</nowiki> or <nowiki>{{Unbulleted list}}</nowiki>. For privacy reasons, consider omitting the names of children of living persons, unless notable.
+* '''relations''' – ''optional'' – any notable relations. Only reasonably close ones should be indicated; an exhaustive listing of an extensive family tree should be avoided here.
+* '''laterwork''' – ''optional'' – profession or positions held by the person other than military service (displays with the label "Other work"). Separate multiple entries using {{Tl|Plainlist}}.
+* '''signature''' – ''optional'' – an image of the person's signature. The image must be given in the form <code><nowiki>example.jpg</nowiki></code>.
+* '''signature_size''' – ''optional'' – the size of the signature in px. Give the number without the px suffix.
+* '''signature_alt''' – ''optional'' – alt text for the signature.
+* '''website''' – ''optional'' – Use {{Tl|URL}}
+* '''module''' – ''optional'' – Embedded template
+
+=== Lists ===
+For parameters such as {{para|awards}}, {{para|unit}} or {{para|commands}}, which take lists of values, unbulleted or bulleted lists may be preferable. See [[MOS:VLIST]].
+
+'''Unbulleted lists''' can be created with {{tl|plainlist}} or {{tl|ublist}}. The use of {{tag|br|s}} is common but {{dcr|semantically incorrect.}} See [[MOS:NOBR]].
+
+{{markup|<nowiki>awards = {{plainlist|
+* Purple Heart (3)
+* Bronze Star (2)
+* World War II Victory Medal
+* Presidential Unit Citation
+* Orange Lanyard
+}}</nowiki>|{{plainlist|
+* Purple Heart (3)
+* Bronze Star (2)
+* World War II Victory Medal
+* Presidential Unit Citation
+* Orange Lanyard}}
+}}
+
+{{markup|<nowiki>awards = {{unbulleted list
+| Purple Heart (3)
+| Bronze Star (2)
+| World War II Victory Medal
+| Presidential Unit Citation
+| Orange Lanyard
+}}</nowiki>|{{unbulleted list
+| Purple Heart (3)
+| Bronze Star (2)
+| World War II Victory Medal
+| Presidential Unit Citation
+| Orange Lanyard}}
+}}
+
+'''Bulleted lists''' can be created with * markup.
+
+{{markup|<nowiki>awards = 
+* Purple Heart (3)
+* Bronze Star (2)
+* World War II Victory Medal
+* Presidential Unit Citation
+* Orange Lanyard
+</nowiki>|
+* Purple Heart (3)
+* Bronze Star (2)
+* World War II Victory Medal
+* Presidential Unit Citation
+* Orange Lanyard
+}}
+
+=== Embedding ===
+Many military people and uniformed officers in other services are known primarily for something other than their military service (e.g. [[Douglas Fairbanks Jr.]], [[Vivek Murthy]], or [[James Stewart]]), and hence it may be desirable to merge this infobox with another one, like {{tl|Infobox person}}. By adding {{para|embed|yes}} to the first line of the infobox code, one can embed this infobox into another, displaying one continuous infobox.
+
+Though the process is a little complicated, it is possible to insert this infobox into most if not all other infoboxes. For {{tl|Infobox person}}, this infobox is passed as a "module" using the {{para|module}} syntax. The title for the embedded section can be changed using {{para|embed_title}}.
+
+{{Infobox person
+ |name         = John Infobox
+ |birth_name   = John Military Infobox
+ |birth_date   = {{birth date|1950|5|5|df=y}}
+ |birth_place  = Template City, Country
+ |death_date   = {{death date and age|2010|6|10|1950|5|5|df=y}}
+ |occupation   = Actor
+ |years_active = 1970–1990
+ |module       =
+  {{Infobox military person
+   |embed        = yes
+   |embed_title  = Fictitious military career
+   |allegiance   = United States
+   |branch       = U.S. Army Air Forces
+   |serviceyears = 1980–1985
+   |rank         = Brigadier general
+   |website      = example.com
+  }}
+}}
+
+<syntaxhighlight lang="wikitext" style=overflow:auto;>
+{{Infobox person
+ |name         = John Infobox
+ |birth_name   = John Military Infobox
+ |birth_date   = {{birth date|1950|5|5|df=y}}
+ |birth_place  = Template City, Country
+ |death_date   = {{death date and age|2010|6|10|1950|5|5|df=y}}
+ |occupation   = Actor
+ |years_active = 1970–1990
+ |module       = 
+  {{Infobox military person
+   |embed        = yes
+   |embed_title  = Fictitious military career
+   |allegiance   = United States
+   |branch       = U.S. Army Air Forces
+   |serviceyears = 1980–1985
+   |rank         = Brigadier general
+   |website      = {{URL|example.com}}
+  }}
+}}</syntaxhighlight>
+
+=== Example ===
+'''Templates demonstrated:''' {{tl|birth date}}, {{tl|death date and age}}, {{tl|plainlist}}, {{tl|tree list}}, {{tl|tree list/end}}, and {{tl|ublist}}.
+{{Infobox military person
+ |width_style        = person
+ |name               = Carwood Lipton
+ |birth_name         = Clifford Carwood Lipton
+ |nickname           = "Lip"
+ |birth_date         = {{birth date|1920|01|30}}
+ |birth_place        = [[Huntington, West Virginia]]
+ |death_date         = {{death date and age|2001|12|16|1920|01|30}}
+ |death_place        = [[Pinehurst, North Carolina]]
+ |allegiance         = United States
+ |branch_label       = Branch
+ |branch             = [[:en:United States Army|United States Army]]
+ |serviceyears_label = Service&nbsp;years
+ |serviceyears       = 1942–1945
+ |rank               = [[First lieutenant (United States)|First lieutenant]]
+ |unit               = {{plainlist|
+* [[E Company, 506th Infantry Regiment (United States)|Easy Company]],
+* [[506th Infantry Regiment (United States)|506th Infantry Regiment]],
+* [[:en:101st Airborne Division|101st Airborne Division]]}}
+ |battles_label      = Conflict
+ |battles            = {{tree list}}
+* World War II
+** [[:en:American airborne landings in Normandy|Normandy landings]]
+** [[:en:Operation Market Garden|''Market Garden'']]
+** [[:en:Battle of the Bulge|Battle of the Bulge]]
+{{tree list/end}}
+ |awards             = {{unbulleted list|[[:en:Bronze Star|Bronze Star]] (2)|[[:en:Purple Heart|Purple Heart]] (3)}}
+ |otherwork          = Glass executive
+}}
+
+<syntaxhighlight lang="wikitext">
+{{Infobox military person
+ |width_style        = person
+ |name               = Carwood Lipton
+ |birth_name         = Clifford Carwood Lipton
+ |nickname           = "Lip"
+ |birth_date         = {{birth date|1920|01|30}}
+ |birth_place        = [[Huntington, West Virginia]]
+ |death_date         = {{death date and age|2001|12|16|1920|01|30}}
+ |death_place        = [[Pinehurst, North Carolina]]
+ |allegiance         = United States
+ |branch_label       = Branch
+ |branch             = [[:en:United States Army|United States Army]]
+ |serviceyears_label = Service&nbsp;years
+ |serviceyears       = 1942–1945
+ |rank               = [[First lieutenant (United States)|First lieutenant]]
+ |unit               = {{plainlist|
+* [[E Company, 506th Infantry Regiment (United States)|Easy Company]],
+* [[506th Infantry Regiment (United States)|506th Infantry Regiment]],
+* [[:en:101st Airborne Division|101st Airborne Division]]}}
+ |battles_label      = Conflict
+ |battles            = {{tree list}}
+* World War II
+** [[:en:American airborne landings in Normandy|Normandy landings]]
+** [[:en:Operation Market Garden|''Market Garden'']]
+** [[:en:Battle of the Bulge|Battle of the Bulge]]
+{{tree list/end}}
+ |awards             = {{unbulleted list|[[:en:Bronze Star|Bronze Star]] (2)|[[:en:Purple Heart|Purple Heart]] (3)}}
+ |otherwork          = Glass executive
+}}
+</syntaxhighlight>
+
+== TemplateData ==
+{{TemplateData header}}
+<templatedata>
+{
+	"params": {
+		"honorific_prefix": {
+			"required": false,
+			"label": "Honorific prefix",
+			"type": "string",
+			"description": "Titles such as 'The Honourable'."
+		},
+		"name": {
+			"required": false,
+			"label": "Name",
+			"type": "string",
+			"description": "The full name of the person."
+		},
+		"honorific_suffix": {
+			"required": false,
+			"label": "Honorific suffix",
+			"type": "string",
+			"description": "Post-nominal honours such as 'OBE'"
+		},
+		"native_name": {
+			"required": false,
+			"label": "Native name",
+			"type": "string",
+			"description": "The person's name in their own language"
+		},
+		"native_name_lang": {
+			"required": false,
+			"label": "Native name language",
+			"type": "string",
+			"description": "Language in which the native name is given"
+		},
+		"image": {
+			"required": false,
+			"label": "Image",
+			"type": "wiki-page-name",
+			"description": "The image must be given in the form Example.jpg"
+		},
+		"image_upright": {
+			"required": false,
+			"label": "Image scaling",
+			"type": "number",
+			"description": "Image scaling factor, see WP:UPRIGHT"
+		},
+		"image_size": {
+			"required": false,
+			"label": "Image size",
+			"type": "number",
+			"description": "Size of the image in pixels."
+		},
+		"alt": {
+			"required": false,
+			"label": "Alt",
+			"type": "string",
+			"description": "Alternative text, if used, must be placed here."
+		},
+		"caption": {
+			"required": false,
+			"label": "Caption",
+			"type": "string",
+			"description": "Caption for the image"
+		},
+		"birth_date": {
+			"required": false,
+			"label": "Birth date",
+			"type": "line",
+			"description": "The date of birth, if known,"
+		},
+		"death_date": {
+			"required": false,
+			"label": "Death date",
+			"type": "line",
+			"description": "The date of death, if applicable and known,"
+		},
+		"birth_place": {
+			"required": false,
+			"label": "Birth place",
+			"type": "string",
+			"description": "The person's birth place."
+		},
+		"death_place": {
+			"required": false,
+			"label": "Death place",
+			"type": "string",
+			"description": "The place where the person died."
+		},
+        "death_cause": {
+			"required": false,
+			"label": "Death cause",
+			"type": "string",
+			"description": "The cause of the person's death, if notable."
+        },
+        "disappeared_date": {
+			"required": false,
+			"label": "Disappeared date",
+			"type": "string",
+			"description": "When the person disappeared."
+		},
+        "disappeared_place": {
+			"required": false,
+			"label": "Disappeared place",
+			"type": "string",
+			"description": "The place where the person disappeared."
+		},
+		"placeofburial": {
+			"required": false,
+			"label": "Place of burial",
+			"type": "string",
+			"description": "The place where the person's remains are buried or otherwise interred."
+		},
+		"placeofburial_label": {
+			"required": false,
+			"label": "Place of burial label",
+			"type": "string",
+			"description": "The label to use for the place of burial field"
+		},
+		"placeofburial_coordinates": {
+			"required": false,
+			"label": "Place of burial coordinates",
+			"type": "string",
+			"description": "The precise location where the person's remains are buried or otherwise interred. "
+		},
+		"nickname": {
+			"required": false,
+			"label": "Nickname",
+			"type": "string",
+			"description": "Nickname(s) by which the person was known."
+		},
+		"birth_name": {
+			"required": false,
+			"label": "Birth name",
+			"type": "string",
+			"description": "The name of the person was born with."
+		},
+		"allegiance": {
+			"required": false,
+			"label": "Allegiance",
+			"type": "string",
+			"description": "The country or other power the person served."
+		},
+		"branch": {
+			"required": false,
+			"label": "Branch",
+			"type": "string",
+			"description": "The service branch (Army, Navy, etc.)"
+		},
+		"serviceyears": {
+			"required": false,
+			"label": "Service years",
+			"type": "number",
+			"description": "The years during which the person served."
+		},
+		"rank": {
+			"required": false,
+			"label": "Rank",
+			"type": "string",
+			"description": "The highest rank achieved by the person"
+		},
+		"servicenumber": {
+			"required": false,
+			"label": "Service number",
+			"type": "string",
+			"description": "The service number held by the individual during military service. "
+		},
+		"unit": {
+			"required": false,
+			"label": "Unit",
+			"type": "string",
+			"description": "The unit in which the person served(company, battalion, regiment, etc.)"
+		},
+		"commands": {
+			"required": false,
+			"label": "Commands",
+			"type": "string",
+			"description": "For persons who are notable as commanding officers, the units they commanded."
+		},
+		"known_for": {
+			"required": false,
+			"label": "Known for",
+			"type": "string",
+			"description": "For other areas of notability such as war crimes or notable orders."
+		},
+		"battles": {
+			"required": false,
+			"label": "Battles",
+			"type": "string",
+			"description": "Any notable battles or wars in which the person participated."
+		},
+		"battles_label": {
+			"required": false,
+			"label": "Battles label",
+			"type": "string",
+			"description": "The label to use for the battles field"
+		},
+		"awards": {
+			"required": false,
+			"label": "Awards",
+			"type": "string",
+			"description": "Any notable awards or decorations the person received"
+		},
+		"alma_mater": {
+			"required": false,
+			"label": "Alma mater",
+			"type": "string",
+			"description": "The linked name of attended higher education institution(s)."
+		},
+		"spouse": {
+			"required": false,
+			"label": "Spouse",
+			"type": "string",
+			"description": "Notable spouse if verifiable from a reliable source."
+		},
+		"children": {
+			"required": false,
+			"label": "Children",
+			"type": "string",
+			"description": "Notable children or number of children if verifiable from a reliable source."
+		},
+		"relations": {
+			"required": false,
+			"label": "Relations",
+			"type": "string",
+			"description": "Any notable relations."
+		},
+		"laterwork": {
+			"required": false,
+			"label": "Later work",
+			"type": "string",
+			"description": "Profession or positions held by the person other than military service"
+		},
+		"signature": {
+			"required": false,
+			"label": "Signature",
+			"type": "string",
+			"description": "An image of the person's signature."
+		},
+		"website": {
+			"required": false,
+			"label": "Website",
+			"type": "string",
+			"description": "Military's website"
+		},
+		"branch_label": {
+			"label": "Branch label",
+			"description": "The label of the branch field (above). The branch field is normally preceded by \"Service/Branch\"; to avoid word wrapping, one of \"Service\" or \"Branch\" can be specified.",
+			"example": "Branch",
+			"type": "string",
+			"default": "Service/Branch"
+		}
+	},
+	"format": "{{_\n| _____________ = _\n}}\n",
+	"paramOrder": [
+		"honorific_prefix",
+		"name",
+		"honorific_suffix",
+		"native_name",
+		"native_name_lang",
+		"image",
+		"image_upright",
+		"image_size",
+		"alt",
+		"caption",
+		"birth_date",
+		"death_date",
+		"birth_place",
+		"death_place",
+		"disappeared_place",
+		"disappeared_date",
+		"death_cause",
+		"placeofburial",
+		"placeofburial_label",
+		"placeofburial_coordinates",
+		"nickname",
+		"birth_name",
+		"allegiance",
+		"branch",
+		"branch_label",
+		"serviceyears",
+		"rank",
+		"servicenumber",
+		"unit",
+		"commands",
+        "known_for",
+		"battles",
+		"battles_label",
+		"awards",
+		"alma_mater",
+		"spouse",
+		"children",
+		"relations",
+		"laterwork",
+		"signature",
+		"website"
+	]
+}
+</templatedata>
+
+== Tracking category ==
+* {{Category link with count|Pages using infobox military person with unknown parameters}}
+* {{Category link with count|Infobox military person image param needs updating}}
+
+== See also ==
+* {{tlg|Infobox military unit}}
+* {{tlg|Infobox officeholder}}<includeonly>{{Sandbox other||
+
+}}</includeonly> <noinclude>
+[[Category:WikiProject Military history template instructions|Military person infobox]]
+
+[[Category:Military infobox templates|Person]]
+[[Category:People and person infobox templates|Military person]]
+[[Category:Biographical templates usable as a module|Military person]]
+[[Category:Infobox templates with module parameter|Military person]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

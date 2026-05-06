@@ -1,0 +1,446 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+{{Uses Wikidata|P856}}
+
+== Syntax ==
+{{Generic template demo |_display=italics
+ |name=''name'' |logo={{{logo}}} |logo caption |screenshot={{{screenshot}}} |screenshot caption 
+ |paradigm=''paradigm'' &nbsp;{{smaller|or}}&nbsp;&nbsp;''paradigms''
+ |family |designer=''designer'' &nbsp;{{smaller|or}}&nbsp;&nbsp;''designers''
+ |developer={{nowrap|''developer'' &nbsp;{{smaller|or}}&nbsp;&nbsp;''developers''}}
+ |released |latest release version |latest release date |latest preview version |latest preview date
+ |typing |scope |programming language |platform |operating system |license |file ext
+ |file format=''file format'' &nbsp;{{smaller|or}}&nbsp;&nbsp;''file formats''
+ |website |implementations |dialects |influenced by |influenced |wikibooks={{{wikibooks}}}
+}}
+<syntaxhighlight lang="xml" style="overflow:auto;">
+{{Infobox programming language
+| name =       
+| logo =       
+| logo caption = 
+| collapsible = 
+| screenshot = 
+| screenshot caption = 
+| sampleCode = 
+| paradigm =   
+| family =  
+| designer =   
+| developer =  
+| released =    
+| latest release version = 
+| latest release date = 
+| latest preview version = 
+| latest preview date = 
+| typing = 
+| scope = 
+| programming language = 
+| discontinued = 
+| platform = 
+| operating system = 
+| license = 
+| file ext = 
+| file format = 
+| website =     
+| implementations = 
+| dialects = 
+| influenced by = 
+| influenced = 
+}}
+</syntaxhighlight>
+
+{{Clear}}
+
+== Example ==
+{{hatnote|The following markup is included '''only for illustration purposes'''. It is not intended to provide up-to-date information about [[Python (programming language)|Python]] programming language and should not be updated for the sake of '''truth'''.}}
+{{Infobox programming language
+| name                   = Python
+| sampleCode = <syntaxhighlight lang="python">
+print("Hello, World!")
+</syntaxhighlight>
+| sampleCode caption = Hello
+| logo                   = Python logo and wordmark.svg
+| paradigm               = [[Multi-paradigm programming language|Multi-paradigm]]: [[object-oriented programming|object-oriented]], [[imperative programming|imperative]], [[functional programming|functional]], [[procedural programming|procedural]], [[reflective programming|reflective]]
+| released               = {{Start date and age|1991|df=yes}}
+| designer               = [[Guido van Rossum]]
+| developer              = [[Python Software Foundation]]
+| latest_release_version = {{Unbulleted list|3.4.3 / {{Start date|2015|02|25|df=yes}}|2.7.10 / {{Start date and age|2015|05|23|df=yes}}}}
+| latest_preview_version = 3.5.0b3 / {{Start date and age|2015|07|05|df=yes}}
+| typing                 = [[Duck typing|Duck]], [[dynamic typing|dynamic]], [[strong typing|strong]], [[gradual typing|gradual]] (as of Python 3.5)
+| implementations        = [[CPython]], [[IronPython]], [[Jython]], [[PyPy]]
+| dialects               = [[Cython]], [[RPython]], [[Stackless Python]]
+| influenced_by          = [[ABC (programming language)|ABC]], [[ALGOL 68]], [[C (programming language)|C]], [[C++]], [[Dylan (programming language)|Dylan]], [[Haskell (programming language)|Haskell]], [[Icon (programming language)|Icon]], [[Java (programming language)|Java]], [[Lisp (programming language)|Lisp]], [[Modula-3]], [[Perl]]
+| influenced             = [[Boo (programming language)|Boo]], [[Cobra (programming language)|Cobra]], [[D (programming language)|D]], [[F Sharp (programming language)|F#]], [[Go (programming language)|Go]], [[Groovy (programming language)|Groovy]], [[JavaScript]], [[Julia (programming language)|Julia]], [[Nim (programming language)|Nim]], [[Ruby (programming language)|Ruby]], [[Swift (programming language)|Swift]]
+| license                = [[Python Software Foundation License]]
+| website                = {{URL|https://www.python.org/}}
+| file_ext               = .py, .pyc, .pyd, .pyo, .pyw
+| wikibooks              = Python Programming
+}}
+
+<pre style="overflow: auto">
+{{Infobox programming language
+| name                   = Python
+| logo                   = Python logo and wordmark.svg
+| paradigm               = [[multi-paradigm programming language|multi-paradigm]]: [[object-oriented programming|object-oriented]], [[imperative programming|imperative]], [[functional programming|functional]], [[procedural programming|procedural]], [[reflective programming|reflective]]
+| released               = {{Start date and age|1991|df=yes}}
+| designer               = [[Guido van Rossum]]
+| developer              = [[Python Software Foundation]]
+| latest_release_version = {{Unbulleted list|3.4.3 / {{Start date|2015|02|25|df=yes}}|2.7.10 / {{Start date|2015|05|23|df=yes}}}}
+| latest_preview_version = 3.5.0b3 / {{Start date|2015|07|05|df=yes}}
+| typing                 = [[duck typing|duck]], [[dynamic typing|dynamic]], [[strong typing|strong]], [[gradual typing|gradual]] (as of Python 3.5)
+| implementations        = [[CPython]], [[IronPython]], [[Jython]], [[PyPy]]
+| dialects               = [[Cython]], [[RPython]], [[Stackless Python]]
+| influenced_by          = [[ABC (programming language)|ABC]], [[ALGOL 68]], [[C (programming language)|C]], [[C++]], [[Dylan (programming language)|Dylan]], [[Haskell (programming language)|Haskell]], [[Icon (programming language)|Icon]], [[Java (programming language)|Java]], [[Lisp (programming language)|Lisp]], [[Modula-3]], [[Perl]]
+| influenced             = [[Boo (programming language)|Boo]], [[Cobra (programming language)|Cobra]], [[D (programming language)|D]], [[F Sharp (programming language)|F#]], [[Go (programming language)|Go]], [[Groovy (programming language)|Groovy]], [[JavaScript]], [[Julia (programming language)|Julia]], [[Nim (programming language)|Nim]], [[Ruby (programming language)|Ruby]], [[Swift (programming language)|Swift]]
+| license                = [[Python Software Foundation License]]
+| website                = {{URL|https://www.python.org/}}
+| file_ext               = .py, .pyc, .pyd, .pyo, .pyw
+| wikibooks              = Python Programming
+}}
+</pre>
+{{-}}
+
+===Parameters===
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "An infobox for programming languages, scripting languages or computer programs directly related to software development that implement the aforementioned.",
+	"params": {
+		"title": {
+			"label": "Title",
+			"type": "string",
+			"required": false,
+			"description": "Title of the software. If not specified the 'name' parameter or the PAGENAME are used. It should be plain text, do not include a wikilink, hyperlink or image in this parameter.",
+			"default": "PAGENAME"
+		},
+		"name": {
+			"label": "Name",
+			"type": "string",
+			"required": false,
+			"description": "Name used if title not specified. This is also used internally in combination with Template:Latest stable software release/'name'. It should be plain text, do not include a wikilink, hyperlink or image in this parameter."
+		},
+		"logo": {
+			"label": "Logo",
+			"type": "string",
+			"required": false,
+			"description": "Filename for the image; e.g., 'File:Monodevelop Logo.svg'"
+		},
+		"logo size": {
+			"label": "Logo size",
+			"type": "string",
+			"required": false,
+			"description": "Size of the logo",
+			"default": "64px",
+			"aliases": [
+				"logo_size"
+			]
+		},
+		"logo alt": {
+			"label": "Logo alternative text",
+			"type": "string",
+			"required": false,
+			"description": "Alternative text for the logo (used by the blind and when web browsers cannot or do not load the image)",
+			"aliases": [
+				"logo_alt"
+			]
+		},
+		"logo caption": {
+			"label": "Logo caption",
+			"type": "string",
+			"required": false,
+			"description": "Caption for the logo. Must only be used to provide anything far more important than 'This is the logo of X'; e.g., used for inserting {{ffdc}} or {{deletable image-caption}}."
+		},
+		"collapsible": {
+			"label": "Collapsible?",
+			"type": "string",
+			"required": false,
+			"description": "Whether this screenshot is hidden by default, set to 'yes' to place the screenshot in a collapsible section"
+		},
+		"screenshot": {
+			"label": "Screenshot",
+			"type": "string",
+			"required": false,
+			"description": "File name for a screenshot of the subject of the infobox; e.g., 'File:Monodevelop-main-window.png'",
+			"default": "300px"
+		},
+		"screenshot size": {
+			"label": "Screenshot size",
+			"type": "string",
+			"required": false,
+			"description": "Size of screenshot",
+			"aliases": [
+				"screenshot_size"
+			]
+		},
+		"screenshot alt": {
+			"label": "Screenshot alternative text",
+			"type": "string",
+			"required": false,
+			"description": "Alternative text for the screenshot (used by the blind and when web browsers cannot or do not load the image)",
+			"aliases": [
+				"screenshot_alt"
+			]
+		},
+		"screenshot caption": {
+			"label": "Screenshot caption",
+			"description": "Caption for the screenshot",
+			"type": "string"
+		},
+		"paradigm": {
+			"label": "Paradigm",
+			"type": "string",
+			"required": false,
+			"description": "Programming paradigms used, implemented or mandated"
+		},
+		"family": {
+			"label": "Family",
+			"type": "string",
+			"required": false,
+			"description": "Name of the family or any other hyponymic entity, if applicable"
+		},
+		"released": {
+			"label": "Initial release date",
+			"type": "string",
+			"required": false,
+			"description": "The date in which version 1.0 (or closely-matching release) of the software product in question reaches its release to manufacturing (RTM) stage. In case the article is about a specific major release of a software product (for instance Internet Explorer 8 or Microsoft Office 2007), this field should contain the date in which that specific major release reached RTM stage. In case the software product is still in development and has not reached its RTM stage, please ignore this field; do not use this field to specify the release date of the first preview/test release of the software product; there is already another parameter for that use. The content of this field should look like the following: {{Start date and age|year|month|day}} In case the article uses DMY as date format, use this code instead: {{Start date and age|year|month|day|df=yes}} If unsure of which date format to use, then consult WP:MOSDATES.",
+			"aliases": [
+				"year"
+			]
+		},
+		"designer": {
+			"label": "Designer",
+			"type": "string",
+			"required": false,
+			"description": "Name of the designer. It can be either an individual or an organization/business."
+		},
+		"developer": {
+			"label": "Developer",
+			"type": "string",
+			"required": false,
+			"description": "Name of the current developer. It can be either an individual or an organization/business."
+		},
+		"discontinued": {
+			"label": "Is discontinued?",
+			"type": "string",
+			"required": false,
+			"description": "Whether this product is no longer being developed, thus changing the phrase 'Latest release' in the infobox to 'Final release'. For technical reasons, anything for this parameter has the same effect, be it 'yes', 'no' or anything else. To nullify the effect of this parameter, delete it."
+		},
+		"ver layout": {
+			"label": "Version info layout",
+			"description": "Defines how version number information appear in the infobox. Can be set to \"simple\" (default) or \"stacked\". \"Simple\" allocates an ordinary row to \"latest release version\" and another to \"latest preview version\". But \"stacked\" gives the full width of the row the info and adds a header, so that several version numbers can appear and use the infobox space more efficiently.",
+			"autovalue": "simple",
+			"type": "string"
+		},
+		"latest release version": {
+			"label": "Latest release version",
+			"type": "string",
+			"required": false,
+			"description": "The version number of the latest release of the software product; e.g., 'v1.5', '2008 (v12.2)'. Applicable only if the subject is a computer program; e.g., an IDE or development tool.",
+			"aliases": [
+				"latest_release_version"
+			]
+		},
+		"latest release date": {
+			"label": "Latest release date",
+			"type": "string",
+			"required": false,
+			"description": "The release date of the latest released version. If no update is released for the software since its initial release, please omit this field; filling in the released field would be enough. The content of this field should look like the following: {{Start date and age|year|month|day}}",
+			"aliases": [
+				"latest_release_date"
+			]
+		},
+		"latest preview version": {
+			"label": "Latest preview version",
+			"type": "string",
+			"required": false,
+			"description": "The version number of the latest preview version or development branch. Should only be specified when development of a new version of the software product in question (newer than one specified in latest release version) is in progress. Please consult descriptions for latest release version provided above for best practices of specifying this parameter.",
+			"aliases": [
+				"latest test version",
+				"latest_preview_version",
+				"latest_test_version"
+			]
+		},
+		"latest preview date": {
+			"label": "Latest preview date",
+			"type": "string",
+			"required": false,
+			"description": "Specifies the release date of the latest preview version or development branch. Should only be specified when development of a new version of the software product in question (newer than one specified in latest release version) is in progress. Please consult descriptions for latest release date provided above for best practices of specifying this parameter.",
+			"aliases": [
+				"latest test date",
+				"latest_preview_date",
+				"latest_test_date"
+			]
+		},
+		"typing": {
+			"label": "Typing discipline",
+			"type": "string",
+			"required": false,
+			"description": "Specifies the typing discipline implemented, used, or mandated"
+		},
+		"scope": {
+			"label": "Scope",
+			"type": "string",
+			"required": false,
+			"description": "Specifies the scope of the identifiers, if applicable"
+		},
+		"implementations": {
+			"label": "Implementations",
+			"type": "string",
+			"required": false,
+			"description": "Applies only if the subject is a programming language, scripting language or something that can be implemented. Specifies the IDEs or development tools that implement the subject of the infobox."
+		},
+		"dialects": {
+			"label": "Dialects",
+			"type": "string",
+			"required": false,
+			"description": "Applies only if the subject is a programming language or scripting language. Specifies the dialects of subject of the infobox, if any."
+		},
+		"influenced by": {
+			"label": "Influenced by",
+			"type": "string",
+			"required": false,
+			"description": "Name of notable concepts, methodologies, approaches, or practices that influenced the creation of the subject of the infobox.",
+			"aliases": [
+				"influenced_by"
+			]
+		},
+		"influenced": {
+			"label": "Influenced",
+			"type": "string",
+			"required": false,
+			"description": "Name of notable concepts, methodologies, approaches or practicies that were created under the influence of the subject of the infobox."
+		},
+		"programming language": {
+			"label": "Programming language",
+			"type": "string",
+			"required": false,
+			"description": "Applies only when the subject of the infobox is a computer program. Specifies the programming language with which the subject of the infobox is created. If the program language of the software product has a corresponding article in Wikipedia, please link to it. Example: '[[C++]] and [[C Sharp (programming language)|C#]]'.",
+			"aliases": [
+				"programming_language"
+			]
+		},
+		"platform": {
+			"label": "Platform",
+			"type": "string",
+			"required": false,
+			"description": "The computing platform for which the subject of the infobox is designed. Can be specific processors like '[[IA-32]]' (i386), '[[x86-64]]', 'Itanium', 'ARM' or 'MIPS'."
+		},
+		"operating system": {
+			"label": "Operating system",
+			"type": "string",
+			"required": false,
+			"description": "The operating system on which implementations of the language works. Please be as accurate as possible in specifying this parameter (but also be mindful of the length) and avoid specifying vague phrases such as Cross-platform (or its redirect, Multi-platform). If the software product is an operating system–independent web app, ignore this parameter. Examples of valid use cases: '[[Unix-like]]', '[[Windows]] and [[macOS]]', '[[Windows XP]] and later'.",
+			"aliases": [
+				"operating_system"
+			]
+		},
+		"license": {
+			"label": "License",
+			"type": "string",
+			"required": false,
+			"description": "Type of the software license under which the consumer is allowed to use the product; e.g., '[[Proprietary software|Proprietary]] [[commercial software]]', '[[Freeware]]', '[[Free software]]', '[[GNU General Public License]]', '[[BSDLicense]]'."
+		},
+		"File extensions": {
+			"label": "File extension",
+			"type": "string",
+			"required": false,
+			"description": "Name of the notable filename extensions associated with the subject of the infobox.",
+			"aliases": [
+				"file ext",
+				"file_ext"
+			]
+		},
+		"File format": {
+			"label": "File format",
+			"type": "string",
+			"required": false,
+			"description": "Name of the notable file formats associated with the subject of the infobox, except plain text.",
+			"aliases": [
+				"file_format",
+				"fileformat"
+			]
+		},
+		"website": {
+			"label": "Website",
+			"type": "string",
+			"required": false,
+			"description": "The web site URL of the software package. This URL must be readable in print. Thus, use the '{{tl|URL}}' template like this: '{{URL|http://www.example.com}}'. Avoid using printer-hostile forms like '[http://www.example.com Example website]'. In absence of this parameter, infobox attempts to acquire the website link form Wikidata. This parameter overrides the Wikidata link. (It is useful when a second infobox for something different is defined on a page.) In addition, the special value 'hide' suppresses this field, even in presence of a Wikidata link. (It is useful for articles that have several infoboxes and do not want all of them show a Wikidata link ad nauseam.)"
+		},
+		"bodystyle": {
+			"label": "Body style (CSS)",
+			"type": "string",
+			"required": false,
+			"description": "CSS styling for the infobox as a whole"
+		},
+		"wikibooks": {
+			"label": "Wikibook(s)",
+			"description": "Name of one or more Wikibook about this subject. If you are listing several wikibooks, separate them with {{!}}",
+			"type": "unbalanced-wikitext",
+			"deprecated": "Wikibooks should be listed in the \"External links\" section, per [[MOS:LAYOUT]]."
+		}
+	},
+	"paramOrder": [
+		"name",
+		"title",
+		"logo",
+		"logo size",
+		"logo alt",
+		"logo caption",
+		"collapsible",
+		"screenshot",
+		"screenshot size",
+		"screenshot alt",
+		"screenshot caption",
+		"paradigm",
+		"family",
+		"released",
+		"designer",
+		"developer",
+		"discontinued",
+		"ver layout",
+		"latest release version",
+		"latest release date",
+		"latest preview version",
+		"latest preview date",
+		"typing",
+		"scope",
+		"implementations",
+		"dialects",
+		"influenced by",
+		"influenced",
+		"programming language",
+		"platform",
+		"operating system",
+		"license",
+		"File extensions",
+		"File format",
+		"website",
+		"bodystyle",
+		"wikibooks"
+	],
+	"format": "block"
+}
+</templatedata>
+
+== Microformat ==
+{{UF-hcal}}
+
+== See also ==
+* {{tl|Infobox software platform}}
+* {{tl|Infobox OS}}
+* {{tl|Infobox software}}
+* {{tl|Infobox file system}}
+
+<includeonly>{{Sandbox other|
+| 
+}}</includeonly>
+<noinclude>
+[[Category:Programming language templates| ]]
+[[Category:Computing infobox templates|Programming language]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

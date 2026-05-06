@@ -1,0 +1,359 @@
+{{#if:{{Has short description}} | |{{Infobox royalty/short description|{{if empty|{{{title|}}}|{{{succession|}}}}}}}}}
+{{infobox
+| child = {{#ifeq:{{lc:{{{embed|}}}}}|yes|yes}}
+| bodyclass = vcard
+| aboveclass = fn
+| abovestyle = background-color: #cbe; color:inherit; font-size: 125%
+| above =  {{#ifeq:{{lc:{{{embed|}}}}}|yes|| {{{name|<includeonly>{{PAGENAMEBASE}}</includeonly>}}} }}
+| subheader1  = {{#if: {{{title|}}} |
+''{{{title|}}}'' {{{titletext|{{#switch:{{lc:{{{more}}}}}
+| no          = 
+| austria     = ''[[Emperor of Austria#Full titles|(more...)]]''
+| belgium     = ''[[Monarchy of Belgium#Title|(more...)]]''
+| britain     = ''[[Style of the British sovereign#Styles of British sovereigns|(more...)]]''
+| china       = ''[[Chinese sovereign|(more...)]]''
+| cyprus      = ''[[Style of the Greek Sovereign#List of changes to the royal style|(more...)]]''
+| denmark     = ''[[Style of the Danish sovereign|(more...)]]''
+| en-sco      = ''[[Style of the British sovereign#Styles of English and Scottish sovereigns|(more...)]]''
+| england     = ''[[Style of the British sovereign#Styles of English sovereigns|(more...)]]''
+| ethiopia    = ''[[Emperor of Ethiopia#Style|(more...)]]''
+| france      = ''[[Style of the French sovereign#List of changes to the royal style|(more...)]]''
+| hre         = ''[[Holy Roman Emperor#Coronation|(more...)]]''
+| hungary     = ''[[Styles of Hungarian sovereigns|(more...)]]''
+| italy       = ''[[Style of the Italian sovereign|(more...)]]''
+| jerusalem   = ''[[Kings of Jerusalem#Kings of Jerusalem (1099–1291)|(more...)]]''
+| luxembourg  = ''[[Grand Duke of Luxembourg#Full titles|(more...)]]''
+| malaysia    = ''[[Malay titles#Malay_royalty|(more...)]]''
+| monaco      = ''[[Style of the Monegasque sovereign|(more...)]]''
+| netherlands = ''[[Monarchy of the Netherlands#Full title|(more...)]]''
+| norway      = ''[[Style of the Norwegian sovereign|(more...)]]''
+| parma       = ''[[List of Dukes of Parma|(more...)]]''
+| portugal    = ''[[Style of the Portuguese sovereign|(more...)]]''
+| russia      = ''[[Tsar#Full style of Russian Sovereigns|(more...)]]''
+| scotland    = ''[[Style of the monarchs of Scotland#From the late Middle Ages to the Acts of Union|(more...)]]''
+| sicilies    = ''[[Kingdom of the Two Sicilies#Titles of King of the Two Sicilies|(more...)]]''
+| spain-crown = ''[[List of titles and honours of the Spanish Crown|(more...)]]''
+| spain-heir  = ''[[Titles held by the heir apparent to the Spanish Throne|(more...)]]''
+| sweden      = ''[[Style of the Swedish sovereign|(more...)]]''
+}}}}}
+}}
+| imageclass = photo
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|upright={{{image_upright|1.0}}}|alt={{{alt|}}}|suppressplaceholder=yes}}
+| captionstyle = line-height:normal;padding-bottom:0.2em;padding-top:0.2em;
+| caption = {{{caption|}}}
+
+| headerstyle = background-color: #e4dcf6;color:inherit;line-height:normal;padding:0.2em;
+| header1 =  {{#if:{{{succession|}}}|{{{succession}}} {{#if:{{{moretext|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext}}} </div>}}}}
+
+| label2 = {{if empty| {{{reign-type|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data2 = {{{reign|}}}
+
+| label3 = {{#switch:{{lc:{{{cor-type}}}}}
+| britain  = [[Coronation of the British monarch|Coronation]]
+| france   = [[Coronation of the French monarch|Coronation]]
+| hre      = [[Coronation of the Holy Roman Emperor|Coronation]]
+| hungary  = [[Coronation of the Hungarian monarch|Coronation]]
+| japan    = [[Enthronement of the Japanese emperor|Enthronement]]
+| malaysia = [[Installation of the Yang di-Pertuan Agong|Installation]]
+| norway   = [[Coronations in Norway|Coronation]]
+| ottoman  = [[Sword of Osman|Sword girding]]
+| poland   = [[Coronations in Poland|Coronation]]
+| russia   = [[Coronation of the Russian monarch|Coronation]]
+| #default = {{if empty|{{{cor-type|}}}|[[Coronation]]}}
+}}
+| data3 = {{{coronation|}}}
+
+| label4 = Investiture
+| data4 = {{{investiture|}}}
+
+| label5 = {{#if:{{{pre-type|}}}|{{{pre-type}}}|Predecessor}}
+| data5 = {{{predecessor|}}}
+
+| label6 = {{#if:{{{suc-type|}}}|{{{suc-type}}}|Successor}}
+| data6 = {{{successor|}}}
+
+| label7 = {{#if:{{{reg-type|}}}|{{{reg-type}}}|Regent}}
+| data7 = {{{regent|}}}
+
+| header8 =  {{#if:{{{succession1|}}}|{{{succession1}}} {{#if:{{{moretext1|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext1}}} </div>}}}}
+
+| label9 = {{if empty| {{{reign-type1|}}} | {{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data9 = {{{reign1|}}}
+
+| label10 = {{#if:{{{cor-type1|}}}|{{{cor-type1}}}|Coronation}}
+| data10 = {{{coronation1|}}}
+
+| label11 = {{#if:{{{pre-type1|}}}|{{{pre-type1}}}|Predecessor}}
+| data11 = {{{predecessor1|}}}
+
+| label12 = {{#if:{{{suc-type1|}}}|{{{suc-type1}}}|Successor}}
+| data12 = {{{successor1|}}}
+
+| label13 = {{#if:{{{reg-type1|}}}|{{{reg-type1}}}|Regent}}
+| data13 = {{{regent1|}}}
+
+| header14 =  {{#if:{{{succession2|}}}|{{{succession2}}} {{#if:{{{moretext2|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext2}}} </div>}}}}
+
+| label15 = {{if empty| {{{reign-type2|}}} | {{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data15 = {{{reign2|}}}
+
+| label16 = {{#if:{{{cor-type2|}}}|{{{cor-type2}}}|Coronation}}
+| data16 = {{{coronation2|}}}
+
+| label17 = {{#if:{{{pre-type2|}}}|{{{pre-type2}}}|Predecessor}}
+| data17 = {{{predecessor2|}}}
+
+| label18 = {{#if:{{{suc-type2|}}}|{{{suc-type2}}}|Successor}}
+| data18 = {{{successor2|}}}
+
+| label19 = {{#if:{{{reg-type2|}}}|{{{reg-type2}}}|Regent}}
+| data19 = {{{regent2|}}}
+
+| header20 =  {{#if:{{{succession3|}}}|{{{succession3}}} {{#if:{{{moretext3|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext3}}} </div>}}}}
+
+| label21 = {{if empty| {{{reign-type3|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data21 = {{{reign3|}}}
+
+| label22 = {{#if:{{{cor-type3|}}}|{{{cor-type3}}}|Coronation}}
+| data22 = {{{coronation3|}}}
+
+| label23 = {{#if:{{{pre-type3|}}}|{{{pre-type3}}}|Predecessor}}
+| data23 = {{{predecessor3|}}}
+
+| label24 = {{#if:{{{suc-type3|}}}|{{{suc-type3}}}|Successor}}
+| data24 = {{{successor3|}}}
+
+| label25 = {{#if:{{{reg-type3|}}}|{{{reg-type3}}}|Regent}}
+| data25 = {{{regent3|}}}
+
+| header26 =  {{#if:{{{succession4|}}}|{{{succession4}}} {{#if:{{{moretext4|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext4}}} </div>}}}}
+
+| label27 = {{if empty| {{{reign-type4|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data27 = {{{reign4|}}}
+
+| label28 = {{#if:{{{cor-type4|}}}|{{{cor-type4}}}|Coronation}}
+| data28 = {{{coronation4|}}}
+
+| label29 = {{#if:{{{pre-type4|}}}|{{{pre-type4}}}|Predecessor}}
+| data29 = {{{predecessor4|}}}
+
+| label30 = {{#if:{{{suc-type4|}}}|{{{suc-type4}}}|Successor}}
+| data30 = {{{successor4|}}}
+
+| label31 = {{#if:{{{reg-type4|}}}|{{{reg-type4}}}|Regent}}
+| data31 = {{{regent4|}}}
+
+| header32 =  {{#if:{{{succession5|}}}|{{{succession5}}} {{#if:{{{moretext5|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext5}}} </div>}}}}
+
+| label33 = {{if empty| {{{reign-type5|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data33 = {{{reign5|}}}
+
+| label34 = {{#if:{{{cor-type5|}}}|{{{cor-type5}}}|Coronation}}
+| data34 = {{{coronation5|}}}
+
+| label35 = {{#if:{{{pre-type5|}}}|{{{pre-type5}}}|Predecessor}}
+| data35 = {{{predecessor5|}}}
+
+| label36 = {{#if:{{{suc-type5|}}}|{{{suc-type5}}}|Successor}}
+| data36 = {{{successor5|}}}
+
+| label37 = {{#if:{{{reg-type5|}}}|{{{reg-type5}}}|Regent}}
+| data37 = {{{regent5|}}}
+
+| header38 =  {{#if:{{{succession6|}}}|{{{succession6}}} {{#if:{{{moretext6|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext6}}} </div>}}}}
+
+| label39 = {{if empty| {{{reign-type6|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data39 = {{{reign6|}}}
+
+| label40 = {{#if:{{{cor-type6|}}}|{{{cor-type6}}}|Coronation}}
+| data40 = {{{coronation6|}}}
+
+| label41 = {{#if:{{{pre-type6|}}}|{{{pre-type6}}}|Predecessor}}
+| data41 = {{{predecessor6|}}}
+
+| label42 = {{#if:{{{suc-type6|}}}|{{{suc-type6}}}|Successor}}
+| data42 = {{{successor6|}}}
+
+| label43 = {{#if:{{{reg-type6|}}}|{{{reg-type6}}}|Regent}}
+| data43 = {{{regent6|}}}
+
+| header44 =  {{#if:{{{succession7|}}}|{{{succession7}}} {{#if:{{{moretext7|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext7}}} </div>}}}}
+
+| label45 = {{if empty| {{{reign-type7|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data45 = {{{reign7|}}}
+
+| label46 = {{#if:{{{cor-type7|}}}|{{{cor-type7}}}|Coronation}}
+| data46 = {{{coronation7|}}}
+
+| label47 = {{#if:{{{pre-type7|}}}|{{{pre-type7}}}|Predecessor}}
+| data47 = {{{predecessor7|}}}
+
+| label48 = {{#if:{{{suc-type7|}}}|{{{suc-type7}}}|Successor}}
+| data48 = {{{successor7|}}}
+
+| label49 = {{#if:{{{reg-type7|}}}|{{{reg-type7}}}|Regent}}
+| data49 = {{{regent7|}}}
+
+| header50 =  {{#if:{{{succession8|}}}|{{{succession8}}} {{#if:{{{moretext8|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext8}}} </div>}}}}
+
+| label51 = {{if empty| {{{reign-type8|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data51 = {{{reign8|}}}
+
+| label52 = {{#if:{{{cor-type8|}}}|{{{cor-type8}}}|Coronation}}
+| data52 = {{{coronation8|}}}
+
+| label53 = {{#if:{{{pre-type8|}}}|{{{pre-type8}}}|Predecessor}}
+| data53 = {{{predecessor8|}}}
+
+| label54 = {{#if:{{{suc-type8|}}}|{{{suc-type8}}}|Successor}}
+| data54 = {{{successor8|}}}
+
+| label55 = {{#if:{{{reg-type8|}}}|{{{reg-type8}}}|Regent}}
+| data55 = {{{regent8|}}}
+
+| header56 =  {{#if:{{{succession9|}}}|{{{succession9}}} {{#if:{{{moretext9|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext9}}} </div>}}}}
+
+| label57 = {{if empty| {{{reign-type9|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data57 = {{{reign9|}}}
+
+| label58 = {{#if:{{{cor-type9|}}}|{{{cor-type9}}}|Coronation}}
+| data58 = {{{coronation9|}}}
+
+| label59 = {{#if:{{{pre-type9|}}}|{{{pre-type9}}}|Predecessor}}
+| data59 = {{{predecessor9|}}}
+
+| label60 = {{#if:{{{suc-type9|}}}|{{{suc-type9}}}|Successor}}
+| data60 = {{{successor9|}}}
+
+| label61 = {{#if:{{{reg-type9|}}}|{{{reg-type9}}}|Regent}}
+| data61 = {{{regent9|}}}
+
+| header62 =  {{#if:{{{succession10|}}}|{{{succession10}}} {{#if:{{{moretext10|}}}|<div style="display:inline;font-weight:normal" class="noprint">{{{moretext10}}} </div>}}}}
+
+| label63 = {{if empty| {{{reign-type10|}}} |{{#switch:{{{consort|}}}|yes=Tenure|{{#switch:{{{2}}}|consort=Tenure|Reign}}}} }}
+| data63 = {{{reign10|}}}
+
+| label64 = {{#if:{{{cor-type10|}}}|{{{cor-type10}}}|Coronation}}
+| data64 = {{{coronation10|}}}
+
+| label65 = {{#if:{{{pre-type10|}}}|{{{pre-type10}}}|Predecessor}}
+| data65 = {{{predecessor10|}}}
+
+| label66 = {{#if:{{{suc-type10|}}}|{{{suc-type10}}}|Successor}}
+| data66 = {{{successor10|}}}
+
+| label67 = {{#if:{{{reg-type10|}}}|{{{reg-type10}}}|Regent}}
+| data67 = {{{regent10|}}}
+
+| header68 = {{#if: {{{succession|}}} | <div style="height: 4px; width:100%;"></div>}}
+
+| label69 = Born
+| data69 = {{br separated entries| {{{birth_name|}}} | {{{birth_date|}}} | {{{birth_place|}}} }}
+
+| label70 = Died
+| data70 = {{br separated entries| {{{death_date|}}} | {{{death_place|}}} }}
+
+| label71 = Burial
+| data71 = {{br separated entries |1= {{{burial_date|{{{date of burial|}}}}}} |2= {{#if:{{{burial_place|{{{place of burial|}}}}}}|<div style="display:inline" class="label">{{{burial_place|{{{place of burial|}}}}}}</div>}} }}
+
+| label72 = Consort
+| data72 = {{{queen|}}}
+
+| label73 = {{{spouse-type|{{#switch:{{{type}}}|monarch={{#switch:{{{consort}}}|yes=Spouse|{{#switch:{{{2}}}|consort=Spouse|Consort}}}}|majesty={{#switch:{{{consort}}}|yes=Spouse|{{#switch:{{{2}}}|consort=Spouse|Consort}}}}|Spouse}}}}}
+| data73 = {{{spouse|}}}
+
+| label74 = {{#if:{{{spouses-type|}}}|{{{spouses-type}}}|Spouses}}
+| data74 = {{{spouses|}}}
+
+| label75 = {{#if:{{{spouse 2|}}} | Wives | Wife }}
+| data75 = {{#if: {{{spouse 1|}}}|
+{{unbulleted list
+| {{{spouse 1}}}
+| {{{spouse 2|}}}
+| {{{spouse 3|}}} 
+| {{{spouse 4|}}} 
+| {{{spouse 5|}}} 
+| {{{spouse 6|}}} 
+| {{{spouse 7|}}}
+| {{{spouse 8|}}} 
+| {{{spouse 9|}}} 
+}}}}
+
+| label76 = {{#if:{{{issue-type|}}}|{{{issue-type}}}|[[:en:Issue (genealogy)|Issue]]}}{{#if:{{{issue-link|}}}|<br><span style="font-weight:normal">''[[{{{issue-link}}}|{{#if:{{{issue-pipe|}}}|{{{issue-pipe}}}|Detail}}]]''</span>}}
+| data76 = {{{issue|}}}
+
+| data77 = {{#if:{{{full name|}}}{{{family_name|}}}{{{clan_name|}}}{{{given_name|}}}{{{era dates|}}}{{{regnal name|}}}{{{posthumous name|}}}{{{temple name|}}}|
+{{Infobox|bodystyle=border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none
+ | headerstyle = text-align:left
+ | datastyle = text-align:left; padding-left:0.7em;
+ | header1 = {{#if:{{{full name|}}}|Names}}
+ | class2 = nickname 
+ | data2 = {{{full name|}}}
+ | header3 = {{#if:{{{family_name|}}}{{{clan_name|}}}{{{given_name|}}}|Full name}}
+ | data4 = {{#if:{{{family_name|}}}{{{clan_name|}}}{{{given_name|}}}|
+{{unbulleted list
+ | 1 = {{#if: {{{family_name|}}} | [[Chinese surname|Family name]]: <div style="display:inline" class="nickname">{{{family_name}}}</div> }}
+ | 2 = {{#if: {{{clan_name|}}}   | [[Chinese surname|Clan name]]: <div style="display:inline" class="nickname">{{{clan_name}}}</div> }}
+ | 3 = {{#if: {{{given_name|}}}  | [[Chinese given name|Given name]]: <div style="display:inline" class="nickname">{{{given_name}}}</div> }}
+}}}}
+ | header5 = {{#if: {{{era dates|}}} |Era {{#if:{{{era name|}}}|name and&nbsp;}}dates}}
+ | data6 = {{#if: {{{era dates|}}} | {{#if:{{{era name|}}}|{{{era name}}}:&nbsp;}}{{{era dates}}} }}
+
+ | header7 = {{#if: {{{regnal name|}}} |[[:en:Regnal name|Regnal name]]}}
+ | data8 = {{{regnal name|}}}
+ | header9 = {{#if: {{{posthumous name|}}} | [[:en:Posthumous name|Posthumous name]]}}
+ | data10 = {{{posthumous name|}}}
+ | header11 = {{#if: {{{temple name|}}} | [[:en:Temple name|Temple name]] }}
+ | data12 = {{{temple name|}}}
+ }}
+}}
+
+| label78 = {{{native_lang1}}}
+| data78 = {{#if: {{{native_lang1|}}}|{{{native_lang1_name1|}}}}}
+
+| label79 = {{{native_lang2}}}
+| data79 = {{#if: {{{native_lang2|}}}|{{{native_lang2_name1|}}}}}
+
+| label80 = {{{native_lang3}}}
+| data80 = {{#if: {{{native_lang3|}}}|{{{native_lang3_name1|}}}}}
+
+| label81 = {{{native_lang4}}}
+| data81 = {{#if: {{{native_lang4|}}}|{{{native_lang4_name1|}}}}}
+
+| label82 = {{{native_lang5}}}
+| data82 = {{#if: {{{native_lang5|}}}|{{{native_lang5_name1|}}}}}
+
+| label83 = [[:en:Dynasty|{{#if:{{{house-type|}}}|{{{house-type}}}|House}}]]
+| data83 = {{{house|}}}
+
+| label84 = [[:en:Dynasty|{{#if:{{{house-type|}}}|{{{house-type}}}|House}}]]
+| data84 = {{{royal house|}}}
+
+| label85 = [[:en:Dynasty|Dynasty]]
+| data85 = {{{dynasty|}}}
+
+| label86 = Father
+| data86 = {{{father|}}}
+
+| label87 = Mother
+| data87 = {{{mother|}}}
+
+| label88 = Religion
+| data88 = {{{religion|}}}
+
+| label89 = Occupation
+| data89 = {{{occupation|}}}
+
+| label90 = {{#if:{{{signature_type|}}}| {{{signature_type}}} | Signature }}
+| data90 = {{#if:{{{signature|}}}|{{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size=125px|class=notpageimage infobox-signature skin-invert|alt={{{signature_alt|}}}|title={{{name<includeonly>|{{PAGENAMEBASE}}</includeonly>}}}'s signature}}}}
+
+| data91 = {{{module|}}}  
+
+}}{{#if:{{{pronunciation|}}}|}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox royalty]] with unknown parameter "_VALUE_"|ignoreblank=y| 2 | alt | birth_date | birth_name | birth_place | burial_date | burial_place | caption | clan_name | consort | cor-type | cor-type1 | cor-type2 | cor-type3 | cor-type4 | cor-type5 | cor-type6 | cor-type7 | cor-type8 | cor-type9 | coronation | coronation1 | coronation2 | coronation3 | coronation4 | coronation5 | coronation6 | coronation7 | coronation8 | coronation9 | date of burial | death_date | death_place | dynasty | embed | era dates | era name | family_name | father | full name | given_name | house | house-type | image | image_size | image_upright | investiture | issue | issue-link | issue-pipe | issue-type | module | more | moretext | moretext1 | moretext2 | moretext3 | moretext4 | moretext5 | moretext6 | moretext7 | moretext8 | moretext9 | mother | name | native_lang1 | native_lang1_name1 | native_lang2 | native_lang2_name1 | native_lang3 | native_lang3_name1 | native_lang4 | native_lang4_name1 | native_lang5 | native_lang5_name1 | occupation | place of burial | posthumous name | pre-type | pre-type1 | pre-type2 | pre-type3 | pre-type4 | pre-type5 | pre-type6 | pre-type7 | pre-type8 | pre-type9 | predecessor | predecessor1 | predecessor2 | predecessor3 | predecessor4 | predecessor5 | predecessor6 | predecessor7 | predecessor8 | predecessor9 | queen | reg-type | reg-type1 | reg-type2 | reg-type3 | reg-type4 | reg-type5 | reg-type6 | reg-type7 | reg-type8 | reg-type9 | regent | regent1 | regent2 | regent3 | regent4 | regent5 | regent6 | regent7 | regent8 | regent9 | regnal name | reign | reign-type | reign-type1 | reign-type2 | reign-type3 | reign-type4 | reign-type5 | reign-type6 | reign-type7 | reign-type8 | reign-type9 | reign1 | reign2 | reign3 | reign4 | reign5 | reign6 | reign7 | reign8 | reign9 | religion | royal house | signature | signature_alt | signature_type | spouse | spouse 1 | spouse 2 | spouse 3 | spouse 4 | spouse 5 | spouse 6 | spouse 7 | spouse 8 | spouse 9 | spouse-type | spouses | spouses-type | suc-type | suc-type1 | suc-type2 | suc-type3 | suc-type4 | suc-type5 | suc-type6 | suc-type7 | suc-type8 | suc-type9 | succession | succession1 | succession2 | succession3 | succession4 | succession5 | succession6 | succession7 | succession8 | succession9 | successor | successor1 | successor2 | successor3 | successor4 | successor5 | successor6 | successor7 | successor8 | successor9 | temple name | title | titletext | type | succession10 | moretext10 | reign-type10 | reign10 | coronation10 | cor-type10 | predecessor10 | pre-type10 | successor10 | suc-type10 | regent10 | reg-type10}}<noinclude>
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

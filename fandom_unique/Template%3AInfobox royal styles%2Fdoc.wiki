@@ -1,0 +1,119 @@
+{{Documentation subpage}}
+
+{{Wraps infobox|Infobox manner of address}}
+
+== Usage ==
+===Blank template===
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox royal styles
+| name        =
+| image       =
+| image_size  =
+| reference   = 
+| spoken      = 
+| alternative = 
+}}
+</syntaxhighlight>
+
+===Parameters===
+* '''name''' or '''royal name'''
+: Name which appears at top of infobox
+* '''image'''
+: (optional) [[:en:Coat of arms|Coat of arms]] image, should be in format <code><nowiki>Imagefilename.png</nowiki></code>
+* '''image_size'''
+: (optional) Image size, generally between 50-100px
+* '''reference''' or '''dipstyle'''
+: [[Style (form of address)|Reference style]] (originally labeled: Diplomatic style)
+* '''spoken''' or '''offstyle'''
+: Spoken style (originally labeled: Official spoken style)
+* '''alternative''' or '''altstyle'''
+: Alternative style (originally labeled: Alternative spoken style)
+
+== Examples ==
+===Commonwealth Realms===
+{{Infobox royal styles
+| name        = Queen Elizabeth II
+| image       = Personal flag of Queen Elizabeth II.svg
+| image_size  = 75px
+| reference   = [[:en:Majesty|Her Majesty]]
+| spoken      = Your Majesty
+}}
+[[:en:Elizabeth II|Elizabeth II]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox royal styles
+| name        = Queen Elizabeth II
+| image       = Personal flag of Queen Elizabeth II.svg
+| image_size  = 75px
+| reference   = [[:en:Majesty|Her Majesty]]
+| spoken      = Your Majesty
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Brazil===
+{{Infobox royal styles
+| name        = Pedro II, Emperor of Brazil
+| image       = Coat of Arms of the Empire of Brazil (1853-1889).svg
+| image_size  = 60px
+| reference   = [[Imperial Majesty (style)|His Imperial Majesty]]
+| spoken      = Your Imperial Majesty
+}}
+[[:en:Pedro II of Brazil|Pedro II of Brazil]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox royal styles
+| name        = Pedro II, Emperor of Brazil
+| image       = Coat of Arms of the Empire of Brazil (1853-1889).svg
+| image_size  = 60px
+| reference   = [[Imperial Majesty (style)|His Imperial Majesty]]
+| spoken      = Your Imperial Majesty
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Greece===
+{{Infobox royal styles
+| name        = King Alexander I of the Hellenes
+| image       = Royal Arms of Greece (1863-1936).svg
+| image_size  = 60px
+| reference   = [[:en:Majesty|His Majesty]]
+| spoken      = Your Majesty
+}}
+[[Alexander of Greece (king)]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox royal styles
+| name        = King Alexander I of the Hellenes
+| image       = Royal Arms of Greece (1863-1936).svg
+| image_size  = 60px
+| reference   = [[:en:Majesty|His Majesty]]
+| spoken      = Your Majesty
+}}
+</syntaxhighlight>
+{{clear}}
+
+== See also ==
+* [{{fullurl:index.php|title=Special%3AWhatLinksHere&target=Template%3A{{urlencode:{{BASEPAGENAME}}}}&namespace=0}} List of articles] this template
+;Additional information on styles
+* [[:en:Royal Highness|HRH]]
+* [[:en:Royal and noble styles|Royal and noble styles]]
+* [[Style (form of address)]]
+;Core template
+* [[Template:Infobox manner of address]]
+;Similar templates
+* [[:en:Template:Infobox British royalty styles|Template:Infobox British royalty styles]]
+* [[:en:Template:Infobox Dutch royalty styles|Template:Infobox Dutch royalty styles]]
+* [[:en:Template:Infobox French royalty styles|Template:Infobox French royalty styles]]
+* [[:en:Template:Infobox Portuguese royalty styles|Template:Infobox Portuguese royalty styles]]
+
+<includeonly>{{Sandbox other||
+
+{{citation needed|Royal Styles}}
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Royalty and nobility infobox templates]]
+[[Category:Independently git synced pages]][[Category:Styles infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates calling Infobox manner of address]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

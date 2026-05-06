@@ -1,0 +1,675 @@
+{{Documentation subpage}}
+
+{{#ifeq:{{SUBPAGENAME}}|sandbox||{{High-use}}}}
+{{Auto italic title}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+== Usage ==
+{{Parameter names example | italic title | title | logo | logo_size | image_size | image_file | image_alt | image_page | image_caption | editor_title | editor | editor_title2 | editor2 | editor_title3 | editor3 | editor_title4 | editor4 | editor_title5 | editor5 | editor_title6 | editor6 | previous_editor | staff_writer | photographer | category | frequency | format | circulation | publisher | paid_circulation | unpaid_circulation | circulation_year | total_circulation | founder | founded | firstdate | finalnumber | finaldate | company | country | based | language | website | issn | eissn | oclc }}
+
+To use this template please add the following code to the top of the article.
+
+''Note: If you have no information for a certain parameter please just blank it rather than removing it so that other editors can see that it needs adding at a later stage''
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox magazine
+| title           = 
+| logo            = 
+| logo_size       = 
+| image_file      = 
+| image_size      = 
+| image_alt       = 
+| image_caption   = 
+| native_name     =
+| editor          = 
+| editor_title    = 
+| previous_editor = 
+| staff_writer    = 
+| photographer    = 
+| category        = 
+| frequency       = 
+| format          = 
+| circulation     = 
+| publisher       = 
+| paid_circulation   = 
+| unpaid_circulation = 
+| circulation_year   = 
+| total_circulation  = 
+| founder         = 
+| founded         = 
+| firstdate       = 
+| finaldate       = 
+| finalnumber     = 
+| company         = 
+| country         = 
+| based           = 
+| language        = 
+| website         = 
+| issn            = 
+| eissn           =
+| oclc            = 
+}}
+</syntaxhighlight>
+{{clear}}
+If the magazine is defunct, include the '''finaldate''' and '''finalnumber''' parameters. If the magazine is still publishing, then these parameters should be omitted entirely:
+
+<syntaxhighlight lang="wikitext">
+| finaldate       = 
+| finalnumber     = 
+</syntaxhighlight>
+
+If a breakdown into paid, unpaid and total circulation figures is desired, use the following lines instead of the '''circulation''' parameter:
+
+<syntaxhighlight lang="wikitext">
+| paid_circulation   = 
+| unpaid_circulation = 
+| circulation_year   = 
+| total_circulation  = 
+</syntaxhighlight>
+
+The '''company''' parameter should list the publishing company. The '''publisher''' parameter should be the named person who publishes the magazine.
+
+The '''previous_editor''' parameter should include earlier, notable, editors. In particular, the ''founding'' editor (if different from current editor), to a reasonable maximum number.
+
+If '''image_file''' is a .djvu and a particular page is desired, then use the '''image_page''' parameter: 
+
+<syntaxhighlight lang="wikitext">
+| image_page =
+</syntaxhighlight>
+
+If other editing positions are required (e.g. Senior Editor or Associate Editor), use the additional editor fields show below.
+<syntaxhighlight lang="wikitext">
+| editor2         = 
+| editor_title2   = 
+| editor3         = 
+| editor_title3   = 
+| editor4         = 
+| editor_title4   = 
+| editor5         = 
+| editor_title5   = 
+| editor6         =
+| editor_title6   =
+</syntaxhighlight>
+
+=== Parameter explanations and examples ===
+A list of each field, what it is for and an example entry. Required parameters are asterisked (*).
+
+{| class="wikitable"
+! Parameter
+! Explanation
+! Example
+|-
+! title*
+| The name of the magazine.
+| style="text-align:center;" |<code>The Wikipedian</code>
+|-
+| '''logo'''
+| A logo relevant to the magazine.
+| style="text-align:center;" |<code>Logo.png</code>
+|-
+| '''logo_size'''
+| The size of the logo.
+| style="text-align:center;" | <code>200px</code><br />(Will default to 180px if no size is stated)
+|-
+| '''image_file'''
+| An image relevant to the magazine. ''(Usually the cover)''.
+| style="text-align:center;" |<code>Image.png</code>
+|-
+| '''image_size'''
+| The size of the image.
+| style="text-align:center;" | <code>200px</code><br />(Will default to 180px if no size is stated)
+|-
+| '''image_alt'''
+| A description of the image's visual appearance, suitable for someone who cannot see the image. See [[WP:ALT]].
+| style="text-align:center;" |<code>Mostly-assembled globe of puzzle pieces, each with a letter in a different script. The caption says "WikipediA: The Free Encyclopedia".</code>
+|-
+| '''image_page'''
+| The desired page (for .djvu files).
+| style="text-align:center;" |<code>7</code>
+|-
+| '''image_caption'''
+| A description of the image.
+| style="text-align:center;" |<code>''The Wikipedian'' Issue 169, cover dated 31 November 1909</code>
+|-
+| '''native_name'''
+| The name of the magazine in its native language and script
+| style="text-align:center;" |
+|-
+| '''editor'''
+| The name of the editor of the magazine. (Must be used in conjunction with '''editor_title''' field)
+| style="text-align:center;" |<code><nowiki>[[:en:John Smith|John Smith]]</nowiki></code>
+|-
+| '''editor_title'''
+| The editor's job title. Editor, Editor-in-Chief etc.
+| style="text-align:center;" |<code>Editor</code>
+|-
+| '''editor2'''
+| The name of second editor.
+|
+|-
+| '''editor_title2'''
+| The second editor's job title.
+|
+|-
+| '''editor3'''
+| The name of third editor.
+|
+|-
+| '''editor_title3'''
+| The third editor's job title.
+|
+|-
+| '''previous_editor'''
+| Notable preceding Editors. ''(See Long Lists section below)''
+| style="text-align:center;" |<code><nowiki>[[Jim Smith]]</nowiki></code>
+|-
+| '''staff_writer'''
+| Staff Writer(s). (Please break multiple lines with <nowiki><br /></nowiki>)<br />''(See Long Lists section below)''
+| style="text-align:center;" |<code><nowiki>[[Alan Smithee]]<br />[[Jane Smithee]]</nowiki></code>
+|-
+| '''photographer'''
+| Photographer(s). (Please break multiple lines with <nowiki><br /></nowiki>)<br />''(See Long Lists section below)''
+| style="text-align:center;" |<code><nowiki>[[Annie Smithee]]<br />[[Judy Smithee]]</nowiki></code>
+|-
+! category*
+| The subject group of the magazine, e.g., Sport, Nature, History. Use as many as necessary.
+| style="text-align:center;" |<code><nowiki>[[:en:Science|Science]], [[:en:Sport|Sport]], [[:en:History|History]]</nowiki></code>
+|-
+! frequency*
+| Monthly, weekly, daily, etc.
+| style="text-align:center;" |<code>Monthly</code>
+|-
+! format*
+| paper size
+| style="text-align:center;" |<code>A4</code>
+|-
+| '''circulation'''
+| Circulation figures.<br />''(If circulation breakdown required/available, leave this field blank and see fields lower down this table)''.
+| style="text-align:center;" |<code>50,000</code>
+|-
+| '''publisher'''
+| The '''person''' that publishes the magazine.
+(''Do not put companies in this field. Use the company field below.'')
+| style="text-align:center;" |<code><nowiki>[[:en:John Smith|John Smith]]</nowiki></code>
+|-
+| '''founder'''
+| The '''person''' that founded the magazine.
+(''Do not put companies in this field. Use the company field below.'')
+| style="text-align:center;" |<code><nowiki>[[:en:John Smith|John Smith]]</nowiki></code>
+|-
+| '''founded'''
+| The date the magazine company was founded.
+| style="text-align:center;" |<code><nowiki>{{start date|1998|3|13|df=y}}</nowiki></code>
+|-
+! firstdate*
+| The date of publication of the first issue of the magazine.
+| style="text-align:center;" |<code><nowiki>{{start date|1998|3|13|df=y}}</nowiki></code>
+|-
+| '''finaldate'''
+| The date of the final issue of the magazine.<br />''(Only use if the magazine has ceased publication)''
+| style="text-align:center;" |<code>31 April 1999</code>
+|-
+| '''finalnumber'''
+| The edition number of the final issue.<br />''(Only use if the magazine has ceased publication)''
+| style="text-align:center;" |<code>Vol 77 No 88</code>
+|-
+| '''company'''
+| The '''company''' that publishes the magazine.
+| style="text-align:center;" |<code><nowiki>[[The magazine publishing company]]</nowiki></code>
+|-
+! country*
+| Country of origin. e.g. United Kingdom
+| style="text-align:center;" |<code>United Kingdom</code>
+|-
+| '''based'''
+| The town/city that the magazine is based in.
+| style="text-align:center;" |<code><nowiki>[[Wiki Town]], [[Wikiville]]</nowiki></code>
+|-
+| '''language'''
+| The language the magazine is printed in.
+| style="text-align:center;" |<code><nowiki>English</nowiki></code> or, for language names unlikely to be familiar to readers,  <code><nowiki>[[Xyzish language|Xyzish]]</nowiki></code>
+|-
+| '''website'''
+| The official website of the magazine.
+| style="text-align:center;" |<code><nowiki>{{URL|example.com}}</nowiki></code>
+|-
+! issn
+| The [[:en:International Standard Serial Number|International Standard Serial Number]] of the magazine.  If the magazine has both a print and electronic version with separate ISSNs, use <code>issn</code> and <code>eissn</code>.
+|
+|-
+! oclc
+|  the [[:en:Online Computer Library Center|OCLC]] number of the magazine (automatically linked to http://WorldCat.org)
+|
+|-
+! colspan="3" style="background-color: #ccf;" | Circulation breakdown parameters
+|-
+| '''paid_circulation'''
+| The circulation of "paid for" copies of the magazine.
+|
+|-
+| '''unpaid_circulation'''
+| The circulation of free copies of the magazine.
+|
+|-
+| '''circulation_year'''
+| The year for which the '''total_circulation''' figure is provided
+|
+|-
+| '''total_circulation'''
+| The total circulation of the magazine.
+|
+|-
+|}
+
+=== Long lists ===
+Where long lists of names are required and may cause excessive lengthening of the Infobox, please use the {{tl|hidden}} template. An example usage is shown below.
+
+{| class="wikitable"
+|-
+|<code><nowiki>
+
+| staff_writer = {{hidden|ta1=left|Staff writers| Tim Edwards<br />Graham Smith<br />Tony
+Ellis<br />Craig Pearson<br />Tom Francis<br />Richard
+Cobbett<br />Jim Rossignol<br />John Walker<br />Alec
+Meer<br />Matt Avery<br />Chris Buxton<br />Michael
+Gapper<br />[[Kieron Gillen]]<br />Mike Channell<br />Tim
+Stone<br />Adam Oxford<br />Quintin Smith<br />[[Duncan
+Harris]]<br />Drew Northcott<br />David Lyttleton }}</nowiki></code>
+|-
+|}
+
+=== Circulation data ===
+Periodical circulation data is collected by independent auditing organizations.  Basic circulation totals are often available free of charge via the web:
+; [[:en:Alliance for Audited Media|Alliance for Audited Media]]: [https://abcas3.auditedmedia.com/ecirc/index.html Total Circ]
+; [[:en:BPA Worldwide|BPA Worldwide]]: [http://www.bpaww.com/bpaww#?targeturl=/bpaww/Content/MainContent/Resources/DataTables.htm&target=2&languageid=1&homepage=/BPAWW/Content/MainContent/Home/index.html&footerpage=/BPAWW/content/maincontent/footer/english.htm Media Stats]
+; [[:en:Audit Bureau of Circulations (UK)|Audit Bureau of Circulations (UK)]]: [https://www.abc.org.uk/verification/print-digital-events Print, Digital and Event Figures]
+
+==TemplateData==
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "Infobox for magazines.",
+	"params": {
+		"italic title": {
+			"label": "DO NOT ADD ANYTHING HERE",
+			"type": "string",
+			"required": false,
+			"description": "This is automatically filled by the template. Do not touch this."
+		},
+		"title": {
+			"label": "Title",
+			"description": "Name of the magazine.",
+			"type": "string",
+			"required": true
+		},
+		"logo": {
+			"label": "Logo",
+			"type": "wiki-file-name",
+			"required": false,
+			"suggested": true
+		},
+		"logo_size": {
+			"label": "Logo size",
+			"description": "The size of the logo image.",
+			"type": "number",
+			"required": false
+		},
+		"image_size": {
+			"label": "Image size",
+			"type": "number",
+			"required": false
+		},
+		"image_file": {
+			"label": "Image",
+			"type": "wiki-file-name",
+			"required": false,
+			"description": "An image relevant to the magazine. Usually the cover.",
+			"suggested": true
+		},
+		"image_alt": {
+			"label": "Image alt text",
+			"type": "content",
+			"required": false,
+			"description": "A description of the image's visual appearance, suitable for someone who cannot see the image.",
+			"example": "Mostly-assembled globe of puzzle pieces, each with a letter in a different script. The caption says \"WikipediA: The Free Encyclopedia\"."
+		},
+		"image_page": {
+			"label": "Page of image?",
+			"type": "string",
+			"required": false,
+			"description": "The desired page (for .djvu files).",
+			"example": "7"
+		},
+		"image_caption": {
+			"label": "Image caption",
+			"type": "content",
+			"required": false,
+			"aliases": [
+				"caption"
+			],
+			"example": "<em>The Wikipedian</em> Issue 169, cover dated 31 November 1909",
+			"suggested": true
+		},
+		"editor_title": {
+			"label": "Editor title",
+			"type": "string",
+			"required": false,
+			"description": "The editor's job title.",
+			"example": "Editor-in-Chief"
+		},
+		"editor": {
+			"label": "Editor",
+			"type": "string",
+			"required": false,
+			"description": "The name of the editor of the magazine. Must be used in conjunction with the \"Editor title\" field.",
+			"example": "[[:en:John Smith|John Smith]]",
+			"suggested": true
+		},
+		"editor_title2": {
+			"label": "Editor 2's title",
+			"type": "string",
+			"required": false,
+			"description": "The second editor's job title."
+		},
+		"editor2": {
+			"label": "Editor 2",
+			"type": "string",
+			"required": false,
+			"description": "The name of the second editor."
+		},
+		"editor_title3": {
+			"label": "Editor 3's title",
+			"type": "string",
+			"required": false
+		},
+		"editor3": {
+			"label": "Editor 3",
+			"type": "string",
+			"required": false,
+			"description": "I think you see where this is going."
+		},
+		"editor_title4": {
+			"label": "Editor 4's title",
+			"type": "string",
+			"required": false
+		},
+		"editor4": {
+			"label": "Editor 4",
+			"type": "string",
+			"required": false
+		},
+		"editor_title5": {
+			"label": "Editor 5's title",
+			"type": "string",
+			"required": false
+		},
+		"editor5": {
+			"label": "Editor 5",
+			"type": "string",
+			"required": false
+		},
+		"editor_title6": {
+			"label": "Editor 6's title",
+			"type": "string",
+			"required": false
+		},
+		"editor6": {
+			"label": "Editor 6",
+			"type": "string",
+			"required": false
+		},
+		"previous_editor": {
+			"label": "Former editor(s)",
+			"type": "content",
+			"required": false,
+			"description": "Notable preceding editor(s)."
+		},
+		"staff_writer": {
+			"label": "Staff writer(s)",
+			"type": "content",
+			"required": false
+		},
+		"photographer": {
+			"label": "Photographer(s)",
+			"type": "content",
+			"required": false
+		},
+		"category": {
+			"label": "Categories",
+			"type": "content",
+			"required": true,
+			"description": "The subject group of the magazine, e.g., Sport, Nature, History. Use as many as necessary.",
+			"example": "[[:en:Science|Science]], [[:en:Sport|Sport]], [[:en:History|History]]"
+		},
+		"frequency": {
+			"label": "Frequency",
+			"type": "string",
+			"required": true,
+			"description": "Frequency of the magazine. Monthly, weekly, daily, etc."
+		},
+		"format": {
+			"label": "Format",
+			"type": "string",
+			"description": "Paper size.",
+			"example": "A4"
+		},
+		"circulation": {
+			"label": "Circulation",
+			"type": "string",
+			"required": false,
+			"description": "Circulation figures. If circulation breakdown available, leave this field blank and see fields lower down.",
+			"example": "50,000"
+		},
+		"publisher": {
+			"label": "Publisher",
+			"type": "string",
+			"required": false,
+			"description": "The person that publishes the magazine. Do not put companies in this field."
+		},
+		"paid_circulation": {
+			"label": "Paid circulation",
+			"type": "string",
+			"required": false,
+			"description": "The circulation of \"paid for\" copies of the magazine."
+		},
+		"unpaid_circulation": {
+			"label": "Unpaid circulation",
+			"type": "string",
+			"required": false,
+			"description": "The circulation of free copies of the magazine."
+		},
+		"circulation_year": {
+			"label": "Circulation year",
+			"type": "string",
+			"required": false,
+			"description": "The year for which the \"Total circulation\" figure is provided."
+		},
+		"total_circulation": {
+			"label": "Total circulation",
+			"type": "string",
+			"required": false,
+			"description": "The total circulation of the magazine."
+		},
+		"founder": {
+			"label": "Founder",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"creator"
+			],
+			"description": "The person that founded the magazine. Do not put companies in this field."
+		},
+		"founded": {
+			"label": "Founded",
+			"type": "string",
+			"required": false,
+			"description": "The date the magazine company was founded.",
+			"example": "{{start date|1998|3|13|df=y}}",
+			"suggested": true
+		},
+		"firstdate": {
+			"label": "First issue",
+			"type": "string",
+			"required": true,
+			"description": "The date of publication of the first issue of the magazine.",
+			"example": "{{start date|1998|3|13|df=y}}"
+		},
+		"finalnumber": {
+			"label": "Final issue number",
+			"type": "string",
+			"required": false,
+			"description": "The edition number of the final issue.",
+			"example": "Vol 77 No 88"
+		},
+		"finaldate": {
+			"label": "Final issue",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"lastdate"
+			],
+			"description": "The date of the final issue of the magazine.",
+			"example": "31 April 1999"
+		},
+		"company": {
+			"label": "Company",
+			"type": "string",
+			"required": false,
+			"description": "The company that publishes the magazine.",
+			"suggested": true
+		},
+		"country": {
+			"label": "Country",
+			"type": "string",
+			"required": true,
+			"description": "Country of origin.",
+			"example": "United Kingdom"
+		},
+		"based": {
+			"label": "Based in",
+			"type": "string",
+			"required": false,
+			"description": "The town/city that the magazine is based in.",
+			"example": "[[:en:New York City|New York City]], [[:en:New York|New York]], [[:en:United States|United States]]",
+			"suggested": true
+		},
+		"language": {
+			"label": "Language",
+			"type": "string",
+			"required": false,
+			"description": "The language the magazine is printed in.",
+			"example": "English",
+			"suggested": true
+		},
+		"website": {
+			"label": "Website",
+			"type": "url",
+			"required": false,
+			"description": "The official website of the magazine."
+		},
+		"issn": {
+			"label": "ISSN",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"ISSN"
+			],
+			"description": "The International Standard Serial Number of the magazine. If the magazine has both a print and electronic version with separate ISSNs, use parameters \"ISSN\" and \"eISSN\"."
+		},
+		"eissn": {
+			"label": "eISSN",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"eISSN"
+			]
+		},
+		"oclc": {
+			"label": "OCLC",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"OCLC"
+			],
+			"description": "The OCLC number of the magazine (automatically linked to http://WorldCat.org)."
+		}
+	},
+	"paramOrder": [
+		"italic title",
+		"title",
+		"logo",
+		"logo_size",
+		"image_file",
+		"image_size",
+		"image_alt",
+		"image_page",
+		"image_caption",
+		"editor",
+		"editor_title",
+		"editor2",
+		"editor_title2",
+		"editor3",
+		"editor_title3",
+		"editor4",
+		"editor_title4",
+		"editor5",
+		"editor_title5",
+		"editor6",
+		"editor_title6",
+		"previous_editor",
+		"staff_writer",
+		"photographer",
+		"category",
+		"frequency",
+		"format",
+		"circulation",
+		"publisher",
+		"founder",
+		"founded",
+		"firstdate",
+		"finaldate",
+		"finalnumber",
+		"company",
+		"country",
+		"based",
+		"language",
+		"website",
+		"issn",
+		"eissn",
+		"oclc",
+		"paid_circulation",
+		"unpaid_circulation",
+		"circulation_year",
+		"total_circulation"
+	],
+	"format": "block"
+}
+</templatedata>
+
+== Microformat ==
+{{UF-hprod}}
+
+== Tracking category ==
+* {{clc|Pages using infobox magazine with unsupported parameters}}
+
+== See also ==
+* {{tl|Infobox journal}}
+* {{TL|Infobox newspaper}}
+
+{{Organization infoboxes}}
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Magazine templates]]
+[[Category:Organization infobox templates|Magazine]]
+[[Category:Publishing infobox templates|Magazine]]
+[[Category:WikiProject Journalism templates]]
+[[Category:WikiProject Magazines templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

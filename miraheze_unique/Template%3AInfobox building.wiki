@@ -1,0 +1,381 @@
+{{main other|{{#if:{{#invoke:Is infobox in lead|main|[Ii]nfobox [Bb]uilding}}|{{#if:{{Has short description}} | |{{#invoke:Type in location|main|{{{building_type|Building}}}|{{comma separated entries
+ |1= {{if empty|{{{location|}}}|{{{address|}}}}}
+ |2= {{if empty|{{{location_town|}}}|{{{location_city|}}}}}
+ |3= {{{location_country|}}}
+}}}}}}}}}}{{Infobox
+| child = {{#ifeq:{{{embed|}}}|yes|yes}}
+| bodyclass   = vcard
+| aboveclass  = fn org
+| headerstyle = {{#ifeq:{{{embed|}}}|yes||background-color:#ededed;color:#000;}}
+| title       = {{#ifeq:{{{embed|}}}|yes|<div style="font-weight:bold; text-align:center;">Building details</div>}}
+| above       = {{if empty|{{{building_name|}}}|{{{hotel_name|}}}|{{{name|}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}}
+| subheader   = {{#if:{{{native_building_name|{{{native_name|}}}}}}|<div class="nickname" {{#if:{{{native_name_lang|}}}| lang="{{{native_name_lang}}}"}}>{{{native_building_name|{{{native_name}}}}}}</div>}}
+
+| imagestyle = text-align: center
+| captionstyle = text-align: center
+| image1     = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo_size|{{{logo_width|}}}}}}|sizedefault=250px|upright={{{logo_upright|1.1}}}|alt={{{logo_alt|}}}}}
+| caption1   = {{{logo_caption|}}}
+
+| image2     = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|{{{image_width|}}}}}}|sizedefault=250px|upright={{{image_upright|1.1}}}|alt={{{image_alt|{{{alt|}}}}}}}}
+| caption2   = {{{caption|{{{image_caption|}}}}}}
+
+| image3     = {{#if:{{{pushpin_map|{{{map_type|}}}}}}|{{Location map|{{{pushpin_map|{{{map_type|}}}}}}
+ |alt     = {{{pushpin_map_alt|{{{map_alt|}}}}}}
+ |coordinates = {{{coordinates|}}}
+ |float   = center
+ |mark    = {{{map_dot_mark|Red pog.svg}}}
+ |marksize= 7
+ |label   = {{{pushpin_label|{{{map_dot_label|}}}}}}
+ |relief  = {{{pushpin_relief|{{{relief|}}}}}}
+ |border  = infobox
+ |caption = {{{pushpin_map_caption|{{{map_caption|Location within {{#invoke:Location map|data|{{{pushpin_map|{{{map_type}}}}}}|name}}}}}}}}
+ |width   = {{{pushpin_mapsize|{{{map_size|}}}}}}
+}} |{{#invoke:InfoboxImage|InfoboxImage|image={{{image_map|}}}|size={{{map_size|}}}|sizedefault=250px|alt={{{map_alt|}}}}}}}
+| caption3   = {{#if:{{{pushpin_map|{{{map_type|}}}}}} || {{{map_caption|}}} }}
+
+| image4      = {{#invoke:Infobox mapframe
+  | autoWithCaption
+  | onByDefault = {{#if:{{{pushpin_map|}}}{{{map_type|}}}{{{image_map|}}}|no|yes}}
+  | mapframe-frame-width = 250
+  | mapframe-wikidata = yes
+  | mapframe-type = landmark
+  | mapframe-marker = building
+  | mapframe-marker-color = #919090
+  | mapframe-stroke-color = #525252
+  | mapframe-stroke-width = 3
+  | mapframe-shape-fill = #dbdbdb
+  | mapframe-caption = Interactive map of {{if empty|{{{building_name|}}}|{{{hotel_name|}}}|{{{name|}}}|{{PAGENAMEBASE}}}}
+}}
+
+| label1    = Former names
+|  data1    = {{{former_names|{{{former_name|}}}}}}
+| class1    = nickname
+
+| label2    = Alternative names
+|  data2    = {{{alternate_names|{{{alternate_name|}}}}}}
+| class2    = nickname
+
+| label3    = Etymology
+|  data3    = {{{etymology|}}}
+
+| label4    = Hotel chain
+|  data4    = {{{hotel_chain|{{{chain|}}}}}}
+
+| header5   = {{#if:{{{highest_prev|}}}{{{highest_next|}}}{{{highest_start|}}}{{{highest_end|}}}{{{highest_region|}}}|Record height}}
+
+|  data6    = {{#if:{{{highest_start|}}}{{{highest_end|}}}
+    |Tallest in {{#if:{{{highest_region|}}}|{{{highest_region}}}|the world}} {{#if:{{both|{{{highest_start|}}}|{{{highest_end|}}}}} 
+        |from {{{highest_start|}}} to {{{highest_end|}}}
+        |{{#if:{{{highest_start|}}}|since {{{highest_start}}} }}{{#if:{{{highest_end|}}}|until {{{highest_end}}} }}}}{{ref label|{{{highest_reflabel|talleststatus}}}|I|}}
+    }}
+
+| label7    = Preceded by
+|  data7    = {{{highest_prev|}}}
+
+| label8    = Surpassed by
+|  data8    = {{{highest_next|}}}
+
+| header9   = {{#if:{{{status|}}}{{{building_type|}}}{{{architectural_style|}}}{{{style|}}}{{{classification|}}}{{{location|}}}{{{location_town|}}}{{{location_city|}}}{{{location_country|}}}{{{address|}}}{{{coordinates|}}}{{{altitude|}}}{{{start_date|}}}{{{construction_start_date|}}}{{{topped_out_date|}}}{{{est_completion|}}}{{{completion_date|}}}{{{inauguration_date|}}}{{{groundbreaking_date|}}}{{{opening_date|}}}{{{opening|}}}{{{opened|}}}{{{opened_date|}}}{{{renovation_date|}}}{{{closing_date|}}}{{{demolition_date|}}}{{{date_demolished|}}}{{{demolished_date|}}}{{{destruction_date|}}}{{{destroyed|}}}{{{cost|}}}{{{ren_cost|}}}{{{client|}}}{{{owner|}}}{{{governing_body|}}}{{{landlord|}}}{{{management|{{{operator|}}}}}}{{{affiliation|}}}|General information}}
+
+| label10   = Status
+| class10   = category
+|  data10   = {{#if:{{{status|}}}|{{#switch:{{lc:{{{status|}}}}}
+| built | completed | finished
+| complete = Completed
+| destroyed  = Destroyed
+| demolished = Demolished
+| on hold    = On hold
+| incomplete | unfinished
+| under construction = Under construction
+| cancelled | canceled
+| never built = Never built
+| topped out
+| topped-out  = [[Topping out|Topped-out]]
+| planned
+| proposed    = Proposed
+| approved    = Approved
+| #default    = {{{status|}}}
+}}|{{#if:{{{cancelled|}}}{{{canceled|}}}|Never built|{{#if:{{{topped_out|}}}|[[Topping out|Topped-out]]}} }} }}
+
+| label11   = Type
+|  data11   = {{{building_type|}}}
+| class11   = category
+
+| label12   = Architectural style
+|  data12   = {{{architectural_style|{{{style|}}}}}}
+| class12   = category
+
+| label13   = Classification
+|  data13   = {{{classification|}}}
+| class13   = category
+
+| class14   = label
+| label14   = Location
+|  data14   = {{csv|{{{location|}}}|{{{address|}}}|{{{location_town|}}}|{{{location_city|}}}|{{{location_country|}}}}}
+
+| label18   = [[Geographic coordinate system|Coordinates]]
+|  data18   = {{#if:{{{coordinates|}}}|{{#invoke:Coordinates|coordinsert|{{{coordinates|}}}|type:landmark|{{#if:{{{location_country|}}}|region:{{Country abbreviation|{{{location_country}}}}}}}}}|}}
+
+| label19   = {{if empty|{{{grid_name|}}}|Grid&nbsp;position}}
+|  data19   = {{{grid_position|}}}
+
+| label20   = Elevation
+|  data20   = {{{altitude|}}}
+
+| label21   = Current tenants
+|  data21   = {{{current_tenants|}}}
+
+| label22   = Named for
+|  data22   = {{{namesake|}}}
+
+| label23   = Year{{pluralize from text|{{{years_built|}}}|plural=s}} built
+|  data23   = {{{years_built|}}}
+
+| label24   = Groundbreaking
+|  data24   = {{{groundbreaking_date|}}}
+
+| label25   = Construction started
+|  data25   = {{{start_date|{{{construction_start_date|}}}}}}
+
+| label26   = Construction stopped
+|  data26   = {{{stop_date|{{{construction_stop_date|}}}}}}
+
+| label27   = Topped-out
+|  data27   = {{{topped_out_date|}}}
+
+| rowclass28= note
+| label28   = {{#if:{{{est_completion|}}}|Estimated completion|{{#if:{{{completion_date|}}}|Completed}} }}
+|  data28   = {{if empty|{{{est_completion|}}}|{{{completion_date|}}} }}
+
+| label29   = {{#if:{{{opened|{{{opened_date|}}}}}}|{{#iferror:{{#ifexpr: {{#time:U|{{Plain text|1={{MultiReplace|1={{{opened|{{{opened_date}}}}}}|2=%<.*%>|3=|4=%s|5=}}}}}}>{{#time:U}} |Opening|Opened}}|Opened}}|Opening}}
+|  data29   = {{if empty|{{{opened_date|}}}|{{{opened|}}}|{{{opening_date|}}}|{{{opening|}}}}}
+
+| label30   = Inaugurated
+|  data30   = {{{inauguration_date|}}}
+
+| label31   = Relocated
+|  data31   = {{{relocated_date|}}}
+
+| label32   = Renovated
+|  data32   = {{{renovation_date|}}}
+
+| label33   = Closed
+|  data33   = {{{closing_date|}}}
+
+| rowclass34= note
+| label34   = {{#if:{{{demolition_date|}}}{{{date_demolished|}}}{{{demolished_date|}}}|Demolished|Destroyed}}
+|  data34   = {{if empty|{{{demolition_date|}}}|{{{date_demolished|}}}|{{{demolished_date|}}}|{{{destruction_date|}}}|{{{destroyed|}}}}}
+
+| label35   = Cost
+|  data35   = {{{cost|}}}
+
+| label36   = Renovation cost
+|  data36   = {{{ren_cost|}}}
+
+| label37   = Client
+|  data37   = {{{client|}}}
+
+| label38   = Owner
+|  data38   = {{{owner|}}}
+
+| label39   = {{#if:{{{governing_body|}}}|Governing body|{{#if:{{{landlord|}}}|Landlord|Management}}}}
+|  data39   = {{#if:{{{governing_body|}}}|{{{governing_body|}}}|{{#if:{{{landlord|}}}|{{{landlord}}}|{{{management|{{{operator|}}}}}}}}}}
+
+| label40   = Affiliation
+|  data40   = {{{affiliation|}}}
+
+| header41  = {{#if:{{{architectural|}}}{{{tip|}}}{{{antenna_spire|}}}{{{roof|}}}{{{top_floor|}}}{{{observatory|}}}|Height}}
+
+| label42   = Height
+|  data42   = {{{height|}}}
+
+| label43   = Architectural
+|  data43   = {{{architectural|}}}
+
+| label44   = Tip
+|  data44   = {{{tip|}}}
+
+| label45   = Antenna spire
+|  data45   = {{{antenna_spire|}}}
+
+| label46   = Roof
+|  data46   = {{{roof|}}}
+
+| label47   = Top floor
+|  data47   = {{{top_floor|}}}
+
+| label48   = Observatory
+|  data48   = {{{observatory|}}}
+
+| header49  = {{#if:{{{diameter|}}}{{{circumference|}}}{{{weight|}}}{{{other_dimensions|}}}|Dimensions}}
+
+| label50   = Diameter
+|  data50   = {{{diameter|}}}
+
+| label51   = Circumference
+|  data51   = {{{circumference|}}}
+
+| label52   = Weight
+|  data52   = {{{weight|}}}
+
+| label53   = Other dimensions
+|  data53   = {{{other_dimensions|}}}
+
+| header54  = {{#if:{{{structural_system|}}}{{{material|}}}{{{size|}}}{{{floor_count|{{{floors|}}}}}}{{{floor_area|}}}{{{elevator_count|}}}|Technical details}}
+
+| label55   = Structural system
+|  data55   = {{{structural_system|}}}
+| class55   = category
+
+| label56   = Material
+|  data56   = {{{material|}}}
+| class56   = category
+
+| label57   = Size
+|  data57   = {{{size|}}}
+
+| label58   = Floor count
+|  data58   = {{{floor_count|{{{floors|}}}}}}
+
+| label59   = Floor area
+|  data59   = {{{floor_area|}}}
+
+| label60   = Lifts/elevators
+|  data60   = {{{elevator_count|}}}
+
+| label61   = Grounds
+|  data61   = {{{grounds_area|}}}
+
+| header62  = {{#if:{{{architect|}}}{{{architecture_firm|}}}{{{developer|}}}{{{engineer|}}}{{{structural_engineer|}}}{{{civil_engineer|}}}{{{other_designers|}}}{{{quantity_surveyor|}}}{{{main_contractor|}}}{{{main_contractors|}}}|Design and construction}}
+
+| label63   = Architect{{pluralize from text|{{{architect|}}}|plural=s}}
+|  data63   = {{{architect|}}}
+
+| label64   = Architecture firm
+|  data64   = {{{architecture_firm|}}}
+
+| label65   = Developer
+|  data65   = {{{developer|}}}
+
+| label66   = Engineer
+|  data66   = {{{engineer|}}}
+
+| label67   = Structural engineer
+|  data67   = {{{structural_engineer|}}}
+
+| label68   = Services engineer
+|  data68   = {{{services_engineer|}}}
+
+| label69   = Civil engineer
+|  data69   = {{{civil_engineer|}}}
+
+| label70   = Other designers
+|  data70   = {{{other_designers|}}}
+
+| label71   = Quantity surveyor
+|  data71   = {{{quantity_surveyor|}}}
+
+| label72   = Main contractor
+|  data72   = {{{main_contractor|{{{main_contractors|}}}}}}
+
+| rowclass73 = note
+| label73    = Awards and prizes
+|  data73    = {{{awards|}}}
+
+| label74    = Designations
+|  data74    = {{{designations|}}}
+
+| label75    = Known for
+|  data75    = {{{known_for|}}}
+
+| header76  = {{#if:{{{ren_architect|}}}{{{ren_firm|}}}{{{ren_engineer|}}}{{{ren_str_engineer|}}}{{{ren_serv_engineer|}}}{{{ren_civ_engineer|}}}{{{ren_oth_designers|}}}{{{ren_qty_surveyor|}}}{{{ren_contractor|}}}{{{ren_awards|}}}|Renovating team}}
+
+| rowclass77 = note
+| label77   = Architect{{pluralize from text|{{{ren_architect|}}}|plural=s}}
+|  data77   = {{{ren_architect|}}}
+
+| label78   = Renovating firm
+|  data78   = {{{ren_firm|}}}
+
+| label79   = Engineer
+|  data79   = {{{ren_engineer|}}}
+
+| label80   = Structural engineer
+|  data80   = {{{ren_str_engineer|}}}
+
+| label81   = Services engineer
+|  data81   = {{{ren_serv_engineer|}}}
+
+| label82   = Civil engineer
+|  data82   = {{{ren_civ_engineer|}}}
+
+| label83   = Other designers
+|  data83   = {{{ren_oth_designers|}}}
+
+| label84   = Quantity surveyor
+|  data84   = {{{ren_qty_surveyor|}}}
+
+| label85   = Main contractor
+|  data85   = {{{ren_contractor|}}}
+
+| rowclass86 = note
+| label86   = Awards and prizes
+|  data86   = {{{ren_awards|}}}
+
+| header87  = {{#if:{{{seating_type|}}}{{{capacity|{{{seating_capacity|}}}}}}{{{number_of_stores|}}}{{{number_of_anchors|}}}{{{unit_count|}}}{{{number_of_units|}}}{{{number_of_rooms|}}}{{{room_count|}}}{{{rooms|}}}{{{number_of_suites|}}}{{{suite_count|}}}{{{suites|}}}{{{number_of_restaurants|}}}{{{number_of_bars|}}}{{{facilities|}}}{{{parking|}}}{{{public_transit|}}}|Other information}}
+
+| label88   = Seating type
+|  data88   = {{{seating_type|}}}
+
+| label89   = Seating capacity
+|  data89   = {{{capacity|{{{seating_capacity|}}}}}}
+
+| label90   = Number of stores
+|  data90   = {{{number_of_stores|}}}
+
+| label91   = Number of anchors
+|  data91   = {{{number_of_anchors|}}}
+
+| label92   = Number of {{#if:{{{unit_count|}}}{{{number_of_units|}}}|units|rooms}}
+|  data92   = {{if empty|{{{unit_count|}}}|{{{number_of_units|}}}|{{{number_of_rooms|}}}|{{{room_count|}}}|{{{rooms|}}}}}
+
+| label93   = Number of suites
+|  data93   = {{if empty|{{{number_of_suites|}}}|{{{suite_count|}}}|{{{suites|}}}}}
+
+| label94   = Number of restaurants
+|  data94   = {{{number_of_restaurants|}}}
+
+| label95   = Number of bars
+|  data95   = {{{number_of_bars|}}}
+
+| label96   = Facilities
+|  data96   = {{{facilities|}}}
+
+| label97   = Parking
+|  data97   = {{{parking|}}}
+
+| label98   = Public transit access
+|  data98   = {{{public_transit|}}}
+
+| header99  = {{#if:{{{website|}}}|Website}}
+
+|  data100   = {{{website|}}}
+
+| header101  = {{{nrhp|{{{embedded|{{{module|}}}}}}}}}
+
+| header102 = {{#if:{{{references|}}}|References}}
+| data103   = {{{references|}}}
+
+| belowstyle = {{{belowstyle|}}}
+| below     = {{{footnotes|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox building]] with unknown parameter "_VALUE_"|ignoreblank=y|mapframe_args=y| address | affiliation | alt | alternate_name | alternate_names | altitude | antenna_spire | architect | architectural | architectural_style | architecture_firm | awards | belowstyle | building_name | building_type | canceled | cancelled | capacity | caption | chain | circumference | civil_engineer | classification | client | closing_date | completion_date | construction_start_date | construction_stop_date | coordinates | cost | current_tenants | date_demolished | demolished_date | demolition_date | designations | destroyed | destruction_date | developer | diameter | elevator_count | embed | embedded | engineer | est_completion | etymology | facilities | floor_area | floor_count | floors | footnotes | former_name | former_names | governing_body | grid_name | grid_position | groundbreaking_date | grounds_area | height | highest_end | highest_next | highest_prev | highest_reflabel | highest_region | highest_start | hotel_chain | hotel_name | image | image_alt | image_caption | image_map | image_size | image_upright | image_width | inauguration_date | known_for | landlord | location | location_city | location_country | location_town | logo | logo_alt | logo_caption | logo_size | logo_upright | logo_width | main_contractor | main_contractors | management | map_alt | map_caption | map_dot_label | map_dot_mark | map_size | map_type | material | module | name | namesake | native_building_name | native_name | native_name_lang | nrhp | number_of_anchors | number_of_bars | number_of_restaurants | number_of_rooms | number_of_stores | number_of_suites | number_of_units | observatory | opened | opened_date | opening | opening_date | operator | other_designers | other_dimensions | owner | parking | public_transit | pushpin_label | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_mapsize | pushpin_relief | quantity_surveyor | references | relief | relocated_date | ren_architect | ren_awards | ren_civ_engineer | ren_contractor | ren_cost | ren_engineer | ren_firm | ren_oth_designers | ren_qty_surveyor | ren_serv_engineer | ren_str_engineer | renovation_date | roof | room_count | rooms | seating_capacity | seating_type | services_engineer | size | start_date | status | stop_date | structural_engineer | structural_system | style | suite_count | suites | tip | top_floor | topped_out | topped_out_date | unit_count | website | weight | years_built }}{{main other|1={{#if:{{{topped_out|}}}|}}{{#if:{{{canceled|}}}{{{cancelled|}}}|}}{{#if:{{both|{{{height|}}}|{{{architectural|}}}{{{tip|}}}{{{antenna_spire|}}}{{{roof|}}}{{{top_floor|}}}{{{observatory|}}}}}|}} }}<noinclude>{{documentation}}
+[[Category:Pages using infobox building with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox building with topped out]]
+[[Category:Pages using infobox building with cancelled]]
+[[Category:Pages using infobox building with parameter errors]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

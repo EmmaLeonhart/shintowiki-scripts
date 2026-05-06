@@ -1,0 +1,286 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+To use this template, copy the wikitext below and paste it in the "Veneration" section of the article. If the article is not divided into sections, it should be placed on top. Then, fill out the data fields. You can omit any unused fields.
+
+==Usage==
+{{Generic template demo
+ |honorific_prefix |name |honorific_suffix |image |image_size |alt |caption |titles |birth_date |birth_place |home_town |residence |death_date |death_place |death_cause
+ |venerated_in |beatified_date |beatified_place |beatified_by |canonized_date |canonized_place |canonized_by
+ |major_shrine |feast_day |attributes |patronage |issues |suppressed_date |suppressed_by
+ |influences |influenced |tradition |major_works |module |misc |misc2
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox saint
+| honorific_prefix = 
+| name             = 
+| honorific_suffix = 
+| image            = 
+| imagesize        = 
+| alt              = 
+| caption          = 
+| titles           = 
+| birth_name       = 
+| birth_date       = 
+| birth_place      = 
+| home_town        = 
+| residence        = 
+| death_date       = 
+| death_place      = 
+| death_cause      =
+| venerated_in     = 
+| beatified_date   = 
+| beatified_place  = 
+| beatified_by     = 
+| canonized_date   = 
+| canonized_place  = 
+| canonized_by     = 
+| major_shrine     = 
+| feast_day        = 
+| attributes       = 
+| patronage        = 
+| issues           = 
+| suppressed_date  = 
+| suppressed_by    = 
+| influences       = 
+| influenced       = 
+| tradition        = 
+| major_works      = 
+| module           = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+== TemplateData ==
+{{TemplateData header}}
+<templatedata>
+{
+	"paramOrder": [
+		"name",
+		"image",
+		"imagesize",
+		"alt",
+		"caption",
+		"honorific prefix",
+		"honorific suffix",
+		"titles",
+		"birth_name",
+		"birth_date",
+		"birth_place",
+		"home_town",
+		"residence",
+		"death_date",
+		"death_place",
+		"death_cause",
+		"resting_place",
+		"resting_place_coordinates",
+		"feast_day",
+		"honored_in",
+		"beatified_date",
+		"beatified_place",
+		"beatified_by",
+		"canonized_date",
+		"canonized_place",
+		"canonized_by",
+		"major_shrine",
+		"attributes",
+		"patronage",
+		"issues",
+		"suppressed_date",
+		"suppressed_by",
+		"influences",
+		"tradition",
+		"influenced",
+		"major_works",
+		"module",
+		"module2",
+		"module3",
+		"module4",
+		"module5",
+		"module6",
+		"child",
+		"misc",
+		"misc2",
+		"misc3",
+		"misc4",
+		"misc5",
+		"misc6"
+	],
+	"params": {
+		"name": {
+			"description": "Name under which the saint is venerated or best known. This should usually be the same as the article name.",
+			"type": "string",
+			"required": true
+		},
+		"image": {
+			"description": "An icon, statue, etc. Use the name of the image file only; do not include \"File:\" (formerly \"Image:\").",
+			"type": "wiki-file-name"
+		},
+		"imagesize": {
+			"aliases": [
+				"image_size"
+			],
+			"description": "Width of the image. Use appropriate units, e.g. 150px for 150 pixels. If this parameter is omitted, 250px will be used.",
+			"type": "string"
+		},
+		"alt": {
+			"description": "Alt text for the image, for visually impaired readers. See [[WP:ALT]]. It should be specified if '''image''' is specified.",
+			"type": "string"
+		},
+		"caption": {
+			"description": "Caption for image, if felt useful.",
+			"type": "string"
+		},
+		"titles": {
+			"description": "Title/s under which saint is venerated. See the [[Wikipedia:WikiProject Saints/Style Guidelines#Terms and titles|Style Guidelines]] for a definition of titles.",
+			"type": "string"
+		},
+		"birth_date": {
+			"description": "Date of birth. Can be approximate.",
+			"type": "date"
+		},
+		"birth_place": {
+			"description": "Place of birth, if known.",
+			"type": "string"
+		},
+		"home_town": {
+			"type": "string"
+		},
+		"residence": {
+			"type": "string"
+		},
+		"death_date": {
+			"description": "Date of death. Can be approximate.",
+			"type": "date"
+		},
+		"death_place": {
+			"description": "Place of death, if known.",
+			"type": "string"
+		},
+		"death_cause": {
+			"description": "Cause of death. This should only be included when the cause of death has significance for the subject's notability."
+		},
+		"honored_in": {
+			"aliases": [
+				"honoured_in",
+				"venerated_in"
+			],
+			"description": "Denomination/s that recognize the saint.",
+			"type": "string"
+		},
+		"beatified_date": {
+			"description": "Date of beatification (if applicable).",
+			"type": "date"
+		},
+		"beatified_place": {
+			"description": "Place where beatification announced (if applicable).",
+			"type": "string"
+		},
+		"beatified_by": {
+			"description": "Authority for beatification. (In Catholicism, this will be a Pope.)",
+			"type": "string"
+		},
+		"canonized_date": {
+			"description": "Date of canonization (if applicable).",
+			"type": "date"
+		},
+		"canonized_place": {
+			"description": "Place of solemn canonization/glorification.",
+			"type": "string"
+		},
+		"canonized_by": {
+			"description": "Authority for canonization. In Catholicism, this will be a Pope; in Orthodoxy, usually a synod.",
+			"type": "string"
+		},
+		"major_shrine": {
+			"description": "e.g. site where saint's relics or principal icon held.",
+			"type": "string"
+		},
+		"feast_day": {
+			"description": "Saint's principal feast day. Catholic and Orthodox calendars as well as that of other denominations often have different dates for the same saint. If a saint is venerated by more than one denomination, it would be good to indicate which days belong to which. E.g., for St. John the Apostle: 27 December (Catholic), 8 May (Orthodox).",
+			"type": "date"
+		},
+		"attributes": {
+			"description": "Standard iconographic elements: pontifical, episcopal insignia etc, tools of martyrdom, etc.",
+			"type": "string"
+		},
+		"patronage": {
+			"description": "Trades, occupations, places, diseases, etc.",
+			"type": "string"
+		},
+		"issues": {
+			"description": "e.g. controversies about or associated with the saint.",
+			"type": "string"
+		},
+		"suppressed_date": {
+			"description": "Date when cult associated with this saint suppressed (Catholicism).",
+			"type": "date"
+		},
+		"suppressed_by": {
+			"description": "Pope under whose authority the saint was removed from official veneration.",
+			"type": "string"
+		},
+		"influences": {
+			"type": "string"
+		},
+		"influenced": {
+			"type": "string"
+		},
+		"tradition": {
+			"type": "string"
+		},
+		"major_works": {
+			"type": "string"
+		},
+		"module": {
+			"description": "Used for embedding other infoboxes into this one. For example, a native name of a saint",
+			"type": "wiki-template-name"
+		},
+		"child": {},
+		"honorific prefix": {},
+		"honorific suffix": {},
+		"birth_name": {},
+		"resting_place": {},
+		"resting_place_coordinates": {
+			"aliases": [
+				"resting place coordinates"
+			]
+		},
+		"misc": {},
+		"misc2": {},
+		"module2": {},
+		"misc3": {},
+		"module3": {},
+		"misc4": {},
+		"module4": {},
+		"misc5": {},
+		"module5": {},
+		"misc6": {},
+		"module6": {}
+	}
+}
+</templatedata>
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+{{Infobox tracking categories}}
+
+<includeonly>{{subpage other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:People and person infobox templates|Saint]]
+[[Category:Independently git synced pages]][[Category:Biographical templates usable as a module|Saint]]
+[[Category:Independently git synced pages]][[Category:WikiProject Saints]]
+[[Category:Independently git synced pages]][[Category:Catholic infobox templates]]
+[[Category:Independently git synced pages]][[Category:Christian infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

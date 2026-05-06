@@ -1,0 +1,432 @@
+{{Infobox
+| child = {{{embed|}}}
+| bodyclass  = ib-islands vcard
+| templatestyles = Template:Infobox islands/styles.css
+| titleclass = fn org
+| title      = {{#ifeq:{{{embed|}}}|yes|{{#if:{{{name|}}}|<div class="ib-islands-title-embed">{{{name|}}}</div>|}}|{{if empty|{{{name|}}}|{{PAGENAMEBASE}}}}}}
+| above      = {{#ifeq:{{{disputed|}}}|yes|{{#if:{{{type|}}}|[[Territorial dispute|Disputed {{{type}}}]]|[[Territorial dispute|Disputed island]]}}{{#ifeq:{{{plural}}}|yes|s<br>|<br>}}}}{{#if:{{{local_name|}}}|<div class="nickname">{{{local_name}}}</div>|{{#if:{{{native_name|}}}|<div class="ib-islands-native">{{#if:{{{native_name_link|}}}|[[{{{native_name_link|}}}|Native name]]|Native name}}: <div class="nickname" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang|}}}}}">{{{native_name|}}}</div></div>}}}}{{#if:{{{nickname|}}}{{{sobriquet|}}}|<div class="ib-islands-nick">Nickname: {{if empty|{{{nickname|}}}|{{{sobriquet|}}}}}</div>}}
+| autoheaders = y
+
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{if empty|{{{image|}}}|{{{image_name|}}}}}|size={{{image_size|}}}|sizedefault=frameless|upright=1.16|alt={{{image_alt|}}}}}
+| caption    = {{{image_caption|}}}
+
+| image2     = {{#invoke:InfoboxImage|InfoboxImage|image={{if empty|{{{image_map|}}}|{{{map_image|}}}}}|size={{if empty|{{{image_map_size|}}}|{{{map_size|}}}}}|sizedefault=frameless|upright=1.16|alt={{if empty|{{{image_map_alt|}}}|{{{map_alt|}}}}}}}
+| caption2   = {{if empty|{{{image_map_caption|}}}|{{{map_image_caption|}}}|{{{map_caption|}}}}}
+
+| image3     = {{#if:{{{pushpin_map|}}}{{{map|}}}|
+                 {{Location map|{{if empty|{{{pushpin_map|}}}|{{{map|}}}}}
+                   | float = center | border = infobox
+                   | alt = {{if empty|{{{pushpin_map_alt|}}}| {{#if:{{{image_map|}}}{{{map_image|}}}||{{{map_alt|}}}}} }}
+                   | width = {{if empty|{{{pushpin_map_width|}}}|{{{map_width|}}}}}
+                   | default_width = 260
+                   | caption = {{if empty|{{{pushpin_map_caption|}}}| {{#if:{{{image_map|}}}{{{map_image|}}}||{{{map_caption|}}}}} }}
+                   | mark = {{if empty|{{{pushpin_mark|}}}|{{{pushpin_map_mark|}}}|{{{map_mark|}}}}}
+                   | marksize = {{if empty|{{{pushpin_mark_width|}}}|{{{pushpin_map_mark_width|}}}|{{{map_mark_width|}}}}}
+                   | relief = {{if empty|{{{pushpin_relief|}}}|{{{pushpin_map_relief|}}}|{{{map_relief|}}}}}
+                   | label = {{if empty|{{if empty|{{{pushpin_label|}}}|{{{pushpin_map_label|}}}|{{{label|}}}}}|{{{name|}}}}}
+                   | position = {{if empty|{{{pushpin_label_position|}}}|{{{pushpin_map_label_position|}}}|{{{label_position|}}}}}
+                   | coordinates = {{{coordinates|}}}
+                 }}}}
+
+| image4 = {{#invoke:Infobox mapframe
+  | autoWithCaption
+  | onByDefault = {{#if:{{{pushpin_map|}}}{{{map|}}}{{{image_map|}}}{{{map_image|}}}|no|yes}}
+  | mapframe-zoom = 7
+  | mapframe-marker-color = #a8bdec
+  | mapframe-frame-width = 250
+  | mapframe-wikidata = yes
+  | mapframe-caption = Interactive map of {{if empty|{{{name|}}}|{{PAGENAMEBASE}}}}
+}}
+
+| label1     = Other names
+| data1      = {{{other_names|}}}
+
+| label2     = Etymology
+| data2      = {{{etymology|}}}
+
+| header3    = {{#ifeq:{{{embed|}}}|yes||Geography}}
+
+| label4     = Location
+| data4      = {{{location|}}}
+
+| label5     = Coordinates
+| data5      = {{#if:{{{coordinates|}}}|{{#invoke:Coordinates|coordinsert|{{{coordinates}}}|type:isle}}}}
+
+| label6     = [[Ordnance Survey National Grid|OS grid reference]]
+| data6      = {{#if:{{{grid_reference|}}}| {{gbmappingsmall|{{{grid_reference|}}}|25|{{{grid_reference|}}}|name={{if empty|{{{name|}}}|{{PAGENAMEBASE}}}} }} }}
+
+| label7     = [[Island#Types_of_islands|Type]]
+| data7      = {{{island_type|}}}
+
+| label8     = Archipelago
+| class8     = note
+| data8      = {{{archipelago|}}}
+
+| label9     = {{nowrap|Adjacent to}}
+| data9      = {{{waterbody|}}}
+
+| label10    = Total islands
+| data10     = {{{total_islands|}}}
+
+| label11    = Major islands
+| data11     = {{{major_islands|}}}
+
+| label12    = Area
+| data12     = {{Infobox islands/area| km2 = {{{area_km2|}}} | sqmi = {{{area_sqmi|}}} | m2 = {{{area_m2|}}} | sqft = {{{area_sqft|}}} | ha = {{{area_ha|}}} | acre = {{{area_acre|}}} }}{{{area_footnotes|}}}
+
+| label13    = [[List of islands by area|Area rank]]
+| data13     = {{{rank|}}}
+
+| label14    = Length
+| data14     = {{Infobox islands/length | km = {{{length_km|}}} | mi = {{{length_mi|}}} | m = {{{length_m|}}} | ft = {{{length_ft|}}} }}{{{length_footnotes|}}}
+
+| label15    = Width
+| data15     = {{#if:{{both|{{{width_min_km|}}}|{{{width_max_km|}}}}}{{both|{{{width_min_mi|}}}|{{{width_max_mi|}}}}}{{both|{{{width_min_m|}}}|{{{width_max_m|}}}}}{{both|{{{width_min_ft|}}}|{{{width_max_ft|}}}}}|{{convert|{{if empty|{{{width_min_km|}}}|{{{width_min_mi|}}}|{{{width_min_m|}}}|{{{width_min_ft|}}}}}|-|{{if empty|{{{width_max_km|}}}|{{{width_max_mi|}}}|{{{width_max_m|}}}|{{{width_max_ft|}}}}}|{{#if:{{both|{{{width_min_km|}}}|{{{width_max_km|}}}}}|km|{{#if:{{both|{{{width_min_mi|}}}|{{{width_max_mi|}}}}}|mi|{{#if:{{both|{{{width_min_m|}}}|{{{width_max_m|}}}}}|m|{{#if:{{both|{{{width_min_ft|}}}|{{{width_max_ft|}}}}}|ft}}}}}}}}|abbr=on}}|{{Infobox islands/length | km = {{{width_km|}}} | mi = {{{width_mi|}}} | m = {{{width_m|}}} | ft = {{{width_ft|}}} }}}}{{{width_footnotes|}}}
+
+| label16    = Coastline
+| data16     = {{Infobox islands/length | km = {{{coastline_km|}}} | mi = {{{coastline_mi|}}} | m = {{{coastline_m|}}} | ft = {{{coastline_ft|}}} }}{{{coastline_footnotes|}}}
+
+| label17    = Highest&nbsp;elevation
+| data17     = {{Infobox islands/length | m = {{{elevation_m|}}} | ft = {{{elevation_ft|}}} }}{{{elevation_footnotes|}}}
+
+| label18    = Highest&nbsp;point
+| data18     = {{{highest_mount|}}}
+
+| header22   = Administration
+
+| data23     = {{#switch:{{{country|}}}|=
+                 |None|none={{#if:{{{treaty_system|}}}||<div>'''{{{country}}}'''</div>}}
+                 |#default=<div>'''{{{country}}}'''</div>
+                }}
+| data24     = {{#if:{{{treaty_system|}}}|Administered under the {{{treaty_system|}}}}}
+
+| header25   = _BLANK_
+
+| label26    = {{{country_admin_divisions_title|}}}
+| data26     = {{{country_admin_divisions|}}}
+
+| label27    = {{{country_admin_divisions_title_1|}}}
+| data27     = {{{country_admin_divisions_1|}}}
+
+| label28    = {{{country_admin_divisions_title_2|}}}
+| data28     = {{{country_admin_divisions_2|}}}
+
+| label29    = {{{country_admin_divisions_title_3|}}}
+| data29     = {{{country_admin_divisions_3|}}}
+
+| label30    = {{{country_admin_divisions_title_4|}}}
+| data30     = {{{country_admin_divisions_4|}}}
+
+| label31    = Capital city
+| data31     = {{#if: {{{country_capital_and_largest_city|}}}||{{{country_capital|}}}}}
+
+| label32    = Largest {{if empty|{{{country_largest_city_type|}}}|{{{country largest city type|}}}|settlement}}
+| data32     = {{#if: {{{country_capital_and_largest_city|}}}||{{#if: {{{country_largest_city|}}}|{{{country_largest_city|}}}{{#if: {{{country_largest_city_population|}}}|&#32;(pop.&#160;{{{country_largest_city_population|}}})}}}}}}
+
+| label33    = Capital and largest {{if empty|{{{country_largest_city_type|}}}|{{{country largest city type|}}}|{{{country_capital_type|}}}|{{{country capital type|}}}|city}}
+| data33     = {{#if: {{{country_capital_and_largest_city|}}}|{{{country_capital_and_largest_city|}}}{{#if: {{{country_largest_city_population|}}}|&#32;(pop.&#160;{{{country_largest_city_population|}}})}}}}
+
+| label34    = {{{country_leader_title|}}}
+| data34     = {{{country_leader_name|}}}
+
+| label35    = Area covered
+| data35     = {{Infobox islands/area| km2 = {{{country_area_km2|}}} | sqmi = {{{country_area_sqmi|}}} | m2 = {{{country_area_m2|}}} | sqft = {{{country_area_sqft|}}} | ha = {{{country_area_ha|}}} | acre = {{{country_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country_area|}}}
+
+| header36   = {{#ifeq:{{{disputed|}}}|yes|Claimed by}}
+
+| data37     = {{#if:{{{country1|}}}|{{#ifeq:{{{disputed|}}}|yes|<div class="ib-islands-country2">|<div class="ib-islands-country">}}{{{country1|}}}</div>}}
+
+| label38    = {{{country1_admin_divisions_title|}}}
+| data38     = {{{country1_admin_divisions|}}}
+
+| label39    = {{{country1_admin_divisions_title_1|}}}
+| data39     = {{{country1_admin_divisions_1|}}}
+
+| label40    = {{{country1_admin_divisions_title_2|}}}
+| data40     = {{{country1_admin_divisions_2|}}}
+
+| label41    = Capital {{#ifeq: {{if empty|{{{country1_capital_type|}}}|{{{country 1 capital type|}}}|city}}|city|city}}
+| data41     = {{#if: {{{country1_capital_and_largest_city|}}}||{{{country1_capital|}}}}}
+
+| label42    = Largest {{if empty|{{{country1_largest_city_type|}}}|{{{country 1 largest city type|}}}|settlement}}
+| data42     = {{#if: {{{country1_capital_and_largest_city|}}}||{{#if: {{{country1_largest_city|}}}|{{{country1_largest_city|}}}{{#if: {{{country1_largest_city_population|}}}|&#32;(pop.&#160;{{{country1_largest_city_population|}}})}}}}}}
+
+| label43    = Capital and largest {{if empty|{{{country1_largest_city_type|}}}|{{{country 1 largest city type|}}}|{{{country1_capital_type|}}}|{{{country 1 capital type|}}}|city}}
+| data43     = {{#if: {{{country1_capital_and_largest_city|}}}|{{{country1_capital_and_largest_city|}}}{{#if: {{{country1_largest_city_population|}}}|&#32;(pop.&#160;{{{country1_largest_city_population|}}})}}}}
+
+| label44    = {{{country1_leader_title|}}}
+| data44     = {{{country1_leader_name|}}}
+
+| label45    = Area covered
+| data45     = {{Infobox islands/area| km2 = {{{country1_area_km2|}}} | sqmi = {{{country1_area_sqmi|}}} | m2 = {{{country1_area_m2|}}} | sqft = {{{country1_area_sqft|}}} | ha = {{{country1_area_ha|}}} | acre = {{{country1_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country1_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country1_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country1_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country1_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country1_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country1_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country1_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country1_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country1_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country1_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country1_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country1_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country1_area|}}}
+
+| data54     = {{#if:{{{country2|}}}|<div class="ib-islands-country">{{{country2|}}}</div>}}
+
+| label55    = {{{country2_admin_divisions_title|}}}
+| data55     = {{{country2_admin_divisions|}}}
+
+| label56    = {{{country2_admin_divisions_title_1|}}}
+| data56     = {{{country2_admin_divisions_1|}}}
+
+| label57    = Capital {{#ifeq: {{if empty|{{{country2_capital_type|}}}|{{{country 2 capital type|}}}|city}}|city|city}}
+| data57     = {{#if: {{{country2_capital_and_largest_city|}}}||{{{country2_capital|}}}}}
+
+| label58    = Largest {{if empty|{{{country2_largest_city_type|}}}|{{{country 2 largest city type|}}}|settlement}}
+| data58     = {{#if: {{{country2_capital_and_largest_city|}}}||{{#if: {{{country2_largest_city|}}}|{{{country2_largest_city|}}}{{#if: {{{country2_largest_city_population|}}}|&#32;(pop.&#160;{{{country2_largest_city_population|}}})}}}}}}
+
+| label59    = Capital and largest {{if empty|{{{country2_largest_city_type|}}}|{{{country 2 largest city type|}}}|{{{country2_capital_type|}}}|{{{country 2 capital type|}}}|city}}
+| data59     = {{#if: {{{country2_capital_and_largest_city|}}}|{{{country2_capital_and_largest_city|}}}{{#if: {{{country2_largest_city_population|}}}|&#32;(pop.&#160;{{{country2_largest_city_population|}}})}}}}
+
+| label60    = {{{country2_leader_title|}}}
+| data60     = {{{country2_leader_name|}}}
+
+| label61    = Area covered
+| data61     = {{Infobox islands/area| km2 = {{{country2_area_km2|}}} | sqmi = {{{country2_area_sqmi|}}} | m2 = {{{country2_area_m2|}}} | sqft = {{{country2_area_sqft|}}} | ha = {{{country2_area_ha|}}} | acre = {{{country2_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country2_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country2_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country2_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country2_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country2_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country2_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country2_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country2_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country2_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country2_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country2_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country2_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country2_area|}}}
+
+| data62     = {{#if:{{{country3|}}}|<div class="ib-islands-country">{{{country3|}}}</div>}}
+
+| label63    = {{{country3_admin_divisions_title|}}}
+| data63     = {{{country3_admin_divisions|}}}
+
+| label64    = {{{country3_admin_divisions_title_1|}}}
+| data64     = {{{country3_admin_divisions_1|}}}
+
+| label65    = Capital {{#ifeq: {{if empty|{{{country3_capital_type|}}}|{{{country 3 capital type|}}}|city}}|city|city}}
+| data65     = {{#if: {{{country3_capital_and_largest_city|}}}||{{{country3_capital|}}}}}
+
+| label66    = Largest {{if empty|{{{country3_largest_city_type|}}}|{{{country 3 largest city type|}}}|settlement}}
+| data66     = {{#if: {{{country3_capital_and_largest_city|}}}||{{#if: {{{country3_largest_city|}}}|{{{country3_largest_city|}}}{{#if: {{{country3_largest_city_population|}}}|&#32;(pop.&#160;{{{country3_largest_city_population|}}})}}}}}}
+
+| label67    = Capital and largest {{if empty|{{{country3_largest_city_type|}}}|{{{country 3 largest city type|}}}|{{{country3_capital_type|}}}|{{{country 3 capital type|}}}|city}}
+| data67     = {{#if: {{{country3_capital_and_largest_city|}}}|{{{country3_capital_and_largest_city|}}}{{#if: {{{country3_largest_city_population|}}}|&#32;(pop.&#160;{{{country3_largest_city_population|}}})}}}}
+
+| label68    = {{{country3_leader_title|}}}
+| data68     = {{{country3_leader_name|}}}
+
+| label69    = Area covered
+| data69     = {{Infobox islands/area| km2 = {{{country3_area_km2|}}} | sqmi = {{{country3_area_sqmi|}}} | m2 = {{{country3_area_m2|}}} | sqft = {{{country3_area_sqft|}}} | ha = {{{country3_area_ha|}}} | acre = {{{country3_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country3_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country3_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country3_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country3_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country3_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country3_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country3_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country3_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country3_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country3_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country3_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country3_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country3_area|}}}
+
+| data70     = {{#if:{{{country4|}}}|<div class="ib-islands-country">{{{country4|}}}</div>}}
+
+| label71    = {{{country4_admin_divisions_title|}}}
+| data71     = {{{country4_admin_divisions|}}}
+
+| label72    = {{{country4_admin_divisions_title_1|}}}
+| data72     = {{{country4_admin_divisions_1|}}}
+
+| label73    = Capital {{#ifeq: {{if empty|{{{country4_capital_type|}}}|{{{country 4 capital type|}}}|city}}|city|city}}
+| data73     = {{#if: {{{country4_capital_and_largest_city|}}}||{{{country4_capital|}}}}}
+
+| label74    = Largest {{if empty|{{{country4_largest_city_type|}}}|{{{country 4 largest city type|}}}|settlement}}
+| data74     = {{#if: {{{country4_capital_and_largest_city|}}}||{{#if: {{{country4_largest_city|}}}|{{{country4_largest_city|}}}{{#if: {{{country4_largest_city_population|}}}|&#32;(pop.&#160;{{{country4_largest_city_population|}}})}}}}}}
+
+| label75    = Capital and largest {{if empty|{{{country4_largest_city_type|}}}|{{{country 4 largest city type|}}}|{{{country4_capital_type|}}}|{{{country 4 capital type|}}}|city}}
+| data75     = {{#if: {{{country4_capital_and_largest_city|}}}|{{{country4_capital_and_largest_city|}}}{{#if: {{{country4_largest_city_population|}}}|&#32;(pop.&#160;{{{country4_largest_city_population|}}})}}}}
+
+| label76    = {{{country4_leader_title|}}}
+| data76     = {{{country4_leader_name|}}}
+
+| label77    = Area covered
+| data77     = {{Infobox islands/area| km2 = {{{country4_area_km2|}}} | sqmi = {{{country4_area_sqmi|}}} | m2 = {{{country4_area_m2|}}} | sqft = {{{country4_area_sqft|}}} | ha = {{{country4_area_ha|}}} | acre = {{{country4_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country4_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country4_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country4_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country4_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country4_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country4_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country4_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country4_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country4_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country4_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country4_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country4_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country4_area|}}}
+
+| data78    = {{#if:{{{country5|}}}|<div class="ib-islands-country">{{{country5|}}}</div>}}
+
+| label79    = {{{country5_admin_divisions_title|}}}
+| data79     = {{{country5_admin_divisions|}}}
+
+| label80    = {{{country5_admin_divisions_title_1|}}}
+| data80     = {{{country5_admin_divisions_1|}}}
+
+| label81    = Capital {{#ifeq: {{if empty|{{{country5_capital_type|}}}|{{{country 5 capital type|}}}|city}}|city|city}}
+| data81     = {{#if: {{{country5_capital_and_largest_city|}}}||{{{country5_capital|}}}}}
+
+| label82    = Largest {{if empty|{{{country5_largest_city_type|}}}|{{{country 5 largest city type|}}}|settlement}}
+| data82     = {{#if: {{{country5_capital_and_largest_city|}}}||{{#if: {{{country5_largest_city|}}}|{{{country5_largest_city|}}}{{#if: {{{country5_largest_city_population|}}}|&#32;(pop.&#160;{{{country5_largest_city_population|}}})}}}}}}
+
+| label83    = Capital and largest {{if empty|{{{country5_largest_city_type|}}}|{{{country 5 largest city type|}}}|{{{country5_capital_type|}}}|{{{country 5 capital type|}}}|city}}
+| data83     = {{#if: {{{country5_capital_and_largest_city|}}}|{{{country5_capital_and_largest_city|}}}{{#if: {{{country5_largest_city_population|}}}|&#32;(pop.&#160;{{{country5_largest_city_population|}}})}}}}
+
+| label84    = {{{country5_leader_title|}}}
+| data84     = {{{country5_leader_name|}}}
+
+| label85    = Area covered
+| data85     = {{Infobox islands/area| km2 = {{{country5_area_km2|}}} | sqmi = {{{country5_area_sqmi|}}} | m2 = {{{country5_area_m2|}}} | sqft = {{{country5_area_sqft|}}} | ha = {{{country5_area_ha|}}} | acre = {{{country5_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country5_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country5_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country5_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country5_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country5_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country5_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country5_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country5_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country5_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country5_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country5_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country5_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country5_area|}}}
+
+| data86     = {{#if:{{{country6|}}}|<div class="ib-islands-country">{{{country6|}}}</div>}}
+
+| label87    = {{{country6_admin_divisions_title|}}}
+| data87     = {{{country6_admin_divisions|}}}
+
+| label88    = {{{country6_admin_divisions_title_1|}}}
+| data88     = {{{country6_admin_divisions_1|}}}
+
+| label89    = Capital {{#ifeq: {{if empty|{{{country6_capital_type|}}}|{{{country 6 capital type|}}}|city}}|city|city}}
+| data89     = {{#if: {{{country6_capital_and_largest_city|}}}||{{{country6_capital|}}}}}
+
+| label90    = Largest {{if empty|{{{country6_largest_city_type|}}}|{{{country 6 largest city type|}}}|settlement}}
+| data90     = {{#if: {{{country6_capital_and_largest_city|}}}||{{#if: {{{country6_largest_city|}}}|{{{country6_largest_city|}}}{{#if: {{{country6_largest_city_population|}}}|&#32;(pop.&#160;{{{country6_largest_city_population|}}})}}}}}}
+
+| label91    = Capital and largest {{if empty|{{{country6_largest_city_type|}}}|{{{country 6 largest city type|}}}|{{{country6_capital_type|}}}|{{{country 6 capital type|}}}|city}}
+| data91     = {{#if: {{{country6_capital_and_largest_city|}}}|{{{country6_capital_and_largest_city|}}}{{#if: {{{country6_largest_city_population|}}}|&#32;(pop.&#160;{{{country6_largest_city_population|}}})}}}}
+
+| label92    = {{{country6_leader_title|}}}
+| data92     = {{{country6_leader_name|}}}
+
+| label93    = Area covered
+| data93     = {{Infobox islands/area| km2 = {{{country6_area_km2|}}} | sqmi = {{{country6_area_sqmi|}}} | m2 = {{{country6_area_m2|}}} | sqft = {{{country6_area_sqft|}}} | ha = {{{country6_area_ha|}}} | acre = {{{country6_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country6_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country6_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country6_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country6_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country6_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country6_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country6_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country6_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country6_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country6_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country6_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country6_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country6_area|}}}
+
+| data94     = {{#if:{{{country7|}}}|<div class="ib-islands-country">{{{country7|}}}</div>}}
+
+| label95    = {{{country7_admin_divisions_title|}}}
+| data95     = {{{country7_admin_divisions|}}}
+
+| label96    = {{{country7_admin_divisions_title_1|}}}
+| data96     = {{{country7_admin_divisions_1|}}}
+
+| label97    = Capital {{#ifeq: {{if empty|{{{country7_capital_type|}}}|{{{country 7 capital type|}}}|city}}|city|city}}
+| data97     = {{#if: {{{country7_capital_and_largest_city|}}}||{{{country7_capital|}}}}}
+
+| label98    = Largest {{if empty|{{{country7_largest_city_type|}}}|{{{country 7 largest city type|}}}|settlement}}
+| data98     = {{#if: {{{country7_capital_and_largest_city|}}}||{{#if: {{{country7_largest_city|}}}|{{{country7_largest_city|}}}{{#if: {{{country7_largest_city_population|}}}|&#32;(pop.&#160;{{{country7_largest_city_population|}}})}}}}}}
+
+| label99    = Capital and largest {{if empty|{{{country7_largest_city_type|}}}|{{{country 7 largest city type|}}}|{{{country7_capital_type|}}}|{{{country 7 capital type|}}}|city}}
+| data99     = {{#if: {{{country7_capital_and_largest_city|}}}|{{{country7_capital_and_largest_city|}}}{{#if: {{{country7_largest_city_population|}}}|&#32;(pop.&#160;{{{country7_largest_city_population|}}})}}}}
+
+| label100    = {{{country7_leader_title|}}}
+| data100     = {{{country7_leader_name|}}}
+
+| label101    = Area covered
+| data101     = {{Infobox islands/area| km2 = {{{country7_area_km2|}}} | sqmi = {{{country7_area_sqmi|}}} | m2 = {{{country7_area_m2|}}} | sqft = {{{country7_area_sqft|}}} | ha = {{{country7_area_ha|}}} | acre = {{{country7_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country7_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country7_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country7_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country7_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country7_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country7_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country7_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country7_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country7_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country7_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country7_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country7_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country7_area|}}}
+
+| data102     = {{#if:{{{country8|}}}|<div class="ib-islands-country">{{{country8|}}}</div>}}
+
+| label103    = {{{country8_admin_divisions_title|}}}
+| data103     = {{{country8_admin_divisions|}}}
+
+| label104    = {{{country8_admin_divisions_title_1|}}}
+| data104     = {{{country8_admin_divisions_1|}}}
+
+| label105    = Capital {{#ifeq: {{if empty|{{{country8_capital_type|}}}|{{{country 8 capital type|}}}|city}}|city|city}}
+| data105     = {{#if: {{{country8_capital_and_largest_city|}}}||{{{country8_capital|}}}}}
+
+| label106    = Largest {{if empty|{{{country8_largest_city_type|}}}|{{{country 8 largest city type|}}}|settlement}}
+| data106     = {{#if: {{{country8_capital_and_largest_city|}}}||{{#if: {{{country8_largest_city|}}}|{{{country8_largest_city|}}}{{#if: {{{country8_largest_city_population|}}}|&#32;(pop.&#160;{{{country8_largest_city_population|}}})}}}}}}
+
+| label107    = Capital and largest {{if empty|{{{country8_largest_city_type|}}}|{{{country 8 largest city type|}}}|{{{country8_capital_type|}}}|{{{country 8 capital type|}}}|city}}
+| data107     = {{#if: {{{country8_capital_and_largest_city|}}}|{{{country8_capital_and_largest_city|}}}{{#if: {{{country8_largest_city_population|}}}|&#32;(pop.&#160;{{{country8_largest_city_population|}}})}}}}
+
+| label108    = {{{country8_leader_title|}}}
+| data108     = {{{country8_leader_name|}}}
+
+| label109    = Area covered
+| data109     = {{Infobox islands/area| km2 = {{{country8_area_km2|}}} | sqmi = {{{country8_area_sqmi|}}} | m2 = {{{country8_area_m2|}}} | sqft = {{{country8_area_sqft|}}} | ha = {{{country8_area_ha|}}} | acre = {{{country8_area_acre|}}} | pct = {{#ifexpr: {{both|{{{country8_area_km2|}}} | {{{area_km2|}}} }} | {{pct | {{{country8_area_km2|}}} | {{{area_km2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country8_area_sqmi|}}} | {{{area_sqmi|}}} }} | {{pct | {{{country8_area_sqmi|}}} | {{{area_sqmi|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country8_area_m2|}}} | {{{area_m2|}}} }} | {{pct | {{{country8_area_m2|}}} | {{{area_m2|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country8_area_sqft|}}} | {{{area_sqft|}}} }} | {{pct | {{{country8_area_sqft|}}} | {{{area_sqft|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country8_area_ha|}}} | {{{area_ha|}}} }} | {{pct | {{{country8_area_ha|}}} | {{{area_ha|}}} | 1 |%=}} | {{#ifexpr: {{both|{{{country8_area_acre|}}} | {{{area_acre|}}} }} | {{pct | {{{country8_area_acre|}}} | {{{area_acre|}}} | 1 |%=}} | }} }} }} }} }} }} }}{{{country8_area|}}}
+
+| header110   = Demographics
+
+| label111    = Demonym
+| data111     = {{{demonym|}}}
+
+| label112   = Population
+| data112    = {{{population|}}} {{#if:{{{population_as_of|}}}|({{{population_as_of|}}})}}{{{population_footnotes|}}}
+
+| label113   = [[List of islands by population|Population rank]]
+| data113    = {{#if:{{{population_rank|}}}|{{{population_rank|}}} {{#if:{{{population_rank_max|}}}|out of {{{population_rank_max|}}} }} }}
+
+| label114   = Pop. density
+| data114    = {{Infobox islands/density| km2 = {{{density_km2|}}}| sqmi = {{{density_sqmi|}}} }}{{{density_footnotes|}}}
+
+| label115   = [[List of islands by population density|Pop. density rank]]
+| data115    = {{{density_rank|}}}
+
+| label116   = Languages
+| data116    = {{{languages|}}}
+
+| label117   = Ethnic groups
+| data117    = {{{ethnic_groups|}}}
+
+| header118   = Additional information
+
+| label119 = {{#if:{{both|{{if empty|{{{timezone1|}}}|{{{timezone|}}}}}|{{{timezone2|}}}}}|[[Time zone]]s|[[Time zone]]}}
+| data119 = {{#if:{{{timezone1|}}}{{{timezone|}}}|
+{{unbulleted list
+| 1= {{if empty|{{{timezone1|}}}|{{{timezone}}}}} {{#if:{{{utc_offset1|}}}{{{utc_offset|}}}|([[UTC{{if empty|{{{utc_offset1|}}}|{{{utc_offset}}}}}]])}}
+| 2= {{#if:{{{timezone2|}}}|{{{timezone2}}} {{#if:{{{utc_offset2|}}}|([[UTC{{{utc_offset2}}}]])}} }} }}}}
+
+| label120 = <span class="nowrap">&nbsp;•&nbsp;Summer ([[Daylight saving time|DST]])</span>
+| data120 = {{#if:{{{timezone1|}}}{{{timezone|}}}|
+{{unbulleted list
+| 1= {{#if:{{{timezone1_DST|}}}{{{timezone_DST|}}}|{{if empty|{{{timezone1_DST|}}}|{{{timezone_DST|}}}}} ([[UTC{{if empty|{{{utc_offset1_DST|}}}|{{{utc_offset_DST|}}}}}]])}}
+| 2= {{#if:{{{timezone1_DST|}}}{{{timezone_DST|}}}|{{#if:{{{timezone2_DST|}}}|{{{timezone2_DST}}} ([[UTC{{{utc_offset2_DST|}}}]])}} }}
+}}}}
+
+| label121   = {{if empty|{{{postal_code_type|}}}|Postal code}}
+| data121    = {{{postal_code|}}}
+| label122   = {{if empty|{{{area_code_type|}}}|[[Telephone numbering plan|Area code{{pluralize from text|{{{area_code|}}}|plural=s}}]]}}
+| data122    = {{{area_code|}}}
+| label123   = [[Vehicle registration plate|Vehicle registration]]
+| data123    = {{{registration_plate|}}}
+| label124   = {{if empty|{{{iso_code_type|}}}|[[ISO 3166-2|ISO code]]}}
+| data124    = {{{iso_code|}}}
+
+| label125   = Official website
+| data125    = {{{website|}}}
+
+| data126    = {{{additional_info|}}}
+
+| header127  = <nowiki />
+
+| data128   = {{{misc|}}}
+{{{module|}}}
+
+| below = {{{footnotes|}}}
+
+}}{{Main other|{{#ifeq:{{ucfirst:{{{country_admin_divisions_title|}}}}}|Country|}}{{#if:{{{additional_info|}}}|}} 
+}}{{#if:{{{embed|}}}|}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox islands]] with unknown parameter "_VALUE_"|ignoreblank=y|mapframe_args=y| additional_info | archipelago | area_acre | area_code | area_code_type | area_footnotes | area_ha | area_km2 | area_m2 | area_sqft | area_sqmi | coastline_footnotes | coastline_ft | coastline_km | coastline_m | coastline_mi | coordinates | country | country 1 capital type | country 1 largest city type | country 2 capital type | country 2 largest city type | country 3 capital type | country 3 largest city type | country 4 capital type | country 4 largest city type | country 5 capital type | country 5 largest city type | country 6 capital type | country 6 largest city type | country 7 capital type | country 7 largest city type | country 8 capital type | country 8 largest city type | country capital type | country largest city type | country_admin_divisions | country_admin_divisions_1 | country_admin_divisions_2 | country_admin_divisions_3 | country_admin_divisions_4 | country_admin_divisions_title | country_admin_divisions_title_1 | country_admin_divisions_title_2 | country_admin_divisions_title_3 | country_admin_divisions_title_4 | country_area | country_area_acre | country_area_ha | country_area_km2 | country_area_m2 | country_area_sqft | country_area_sqmi | country_capital | country_capital_and_largest_city | country_capital_type | country_largest_city | country_largest_city_population | country_largest_city_type | country_leader_name | country_leader_title | country1 | country1_admin_divisions | country1_admin_divisions_title | country1_area | country1_area_acre | country1_area_ha | country1_area_sqft | country1_area_sqmi | country1_capital | country1_capital_and_largest_city | country1_capital_type | country1_largest_city | country1_largest_city_population | country1_largest_city_type | country1_leader_name | country1_leader_title | country2 | country2_admin_divisions | country2_admin_divisions_title | country2_area | country2_area_acre | country2_area_ha | country2_area_sqft | country2_area_sqmi | country2_capital | country2_capital_and_largest_city | country2_capital_type | country2_largest_city | country2_largest_city_population | country2_largest_city_type | country2_leader_name | country2_leader_title | country3 | country3_admin_divisions | country3_admin_divisions_title | country3_area | country3_area_acre | country3_area_ha | country3_area_sqft | country3_area_sqmi | country3_capital | country3_capital_and_largest_city | country3_capital_type | country3_largest_city | country3_largest_city_population | country3_largest_city_type | country3_leader_name | country3_leader_title | country4 | country4_admin_divisions | country4_admin_divisions_title | country4_area | country4_area_acre | country4_area_ha | country4_area_sqft | country4_area_sqmi | country4_capital | country4_capital_and_largest_city | country4_capital_type | country4_largest_city | country4_largest_city_population | country4_largest_city_type | country4_leader_name | country4_leader_title | country5 | country5_admin_divisions | country5_admin_divisions_title | country5_area | country5_area_acre | country5_area_ha | country5_area_sqft | country5_area_sqmi | country5_capital | country5_capital_and_largest_city | country5_capital_type | country5_largest_city | country5_largest_city_population | country5_largest_city_type | country5_leader_name | country5_leader_title | country6 | country6_admin_divisions | country6_admin_divisions_title | country6_area | country6_area_acre | country6_area_ha | country6_area_sqft | country6_area_sqmi | country6_capital | country6_capital_and_largest_city | country6_capital_type | country6_largest_city | country6_largest_city_population | country6_largest_city_type | country6_leader_name | country6_leader_title | country7 | country7_admin_divisions | country7_admin_divisions_title | country7_area | country7_area_acre | country7_area_ha | country7_area_sqft | country7_area_sqmi | country7_capital | country7_capital_and_largest_city | country7_capital_type | country7_largest_city | country7_largest_city_population | country7_largest_city_type | country7_leader_name | country7_leader_title | country8 | country8_admin_divisions | country8_admin_divisions_title | country8_area | country8_area_acre | country8_area_ha | country8_area_sqft | country8_area_sqmi | country8_capital | country8_capital_and_largest_city | country8_capital_type | country8_largest_city | country8_largest_city_population | country8_largest_city_type | country8_leader_name | country8_leader_title | country1_admin_divisions_1 | country1_admin_divisions_2 | country1_admin_divisions_title_1 | country1_admin_divisions_title_2 | country1_area_km2 | country1_area_m2 | country2_admin_divisions_1 | country2_admin_divisions_title_1 | country2_area_km2 | country2_area_m2 | country3_admin_divisions_1 | country3_admin_divisions_title_1 | country3_area_km2 | country3_area_m2 | country4_admin_divisions_1 | country4_admin_divisions_title_1 | country4_area_km2 | country4_area_m2 | country5_admin_divisions_1 | country5_admin_divisions_title_1 | country5_area_km2 | country5_area_m2 | country6_admin_divisions_1 | country6_admin_divisions_title_1 | country6_area_km2 | country6_area_m2 | country7_admin_divisions_1 | country7_admin_divisions_title_1 | country7_area_km2 | country7_area_m2 | country8_admin_divisions_1 | country8_admin_divisions_title_1 | country8_area_km2 | country8_area_m2 | demonym | density_footnotes | density_km2 | density_rank | density_sqmi | disputed | elevation_footnotes | elevation_ft | elevation_m | embed | ethnic_groups | etymology | footnotes | grid_reference | highest_mount | image | image_alt | image_caption | image_map | image_map_alt | image_map_caption | image_map_size | image_name | image_size | island_type | iso_code | iso_code_type | label | label_position | languages | length_footnotes | length_ft | length_km | length_m | length_mi | local_name | location | major_islands | map | map_alt | map_caption | map_image | map_image_caption | map_mark | map_mark_width | map_relief | map_size | map_width | misc | module | name | native_name | native_name_lang | native_name_link | nickname | other_names | plural | population | population_as_of | population_footnotes | population_rank | population_rank_max | postal_code | postal_code_type | pushpin_label | pushpin_label_position | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_map_label | pushpin_map_label_position | pushpin_map_mark | pushpin_map_mark_width | pushpin_map_relief | pushpin_map_width | pushpin_mark | pushpin_mark_width | pushpin_relief | rank | registration_plate | sobriquet | timezone | timezone_DST | timezone1 | timezone1_DST | timezone2 | timezone2_DST | total_islands | treaty_system | type | utc_offset | utc_offset_DST | utc_offset1 | utc_offset1_DST | utc_offset2 | utc_offset2_DST | waterbody | website | width_footnotes | width_ft | width_km | width_m | width_max_ft | width_max_km | width_max_m | width_max_mi | width_mi | width_min_ft | width_min_km | width_min_m | width_min_mi }}{{#invoke:Check for conflicting parameters|check
+| template = Infobox islands
+| cat = {{main other|Category:Pages using infobox islands with conflicting parameters}}
+|local_name; native_name
+|nickname; sobriquet
+|image; image_name
+|image_map; map_image
+|image_map_caption; map_image_caption; map_caption
+|pushpin_map; map
+|pushpin_map_alt; map_alt
+|pushpin_map_width; map_width
+|pushpin_mark; pushpin_map_mark; map_mark
+|pushpin_mark_width; pushpin_map_mark_width; map_mark_width
+|pushpin_relief; pushpin_map_relief; map_relief
+|pushpin_label; pushpin_map_label; label
+|pushpin_label_position; pushpin_map_label_position; label_position
+|country_capital_type; country capital type
+|country_largest_city_type; country largest city type
+|country1_capital_type; country 1 capital type
+|country2_capital_type; country 2 capital type
+|country3_capital_type; country 3 capital type
+|country4_capital_type; country 4 capital type
+|country5_capital_type; country 5 capital type
+|country6_capital_type; country 6 capital type
+|country7_capital_type; country 7 capital type
+|country8_capital_type; country 8 capital type
+|width_min_km; width_min_mi; width_min_m; width_min_ft
+|width_max_km; width_max_mi; width_max_m; width_max_ft
+|timezone1; timezone
+|utc_offset1; utc_offset
+|timezone1_DST; timezone_DST
+|utc_offset1_DST; utc_offset_DST
+}}{{main other|{{#if:{{both|{{{pushpin_map|}}}{{{map|}}}|{{{image_map|}}}{{{map_image|}}}}}|{{#if:{{{pushpin_map_caption|}}}||{{#if:{{{map_caption|}}}||}}}}|
+}}{{#if:{{both|{{{pushpin_map|}}}{{{map|}}}|{{{image_map|}}}{{{map_image|}}}}}|{{#if:{{{pushpin_map_alt|}}}||{{#if:{{{map_alt|}}}||}}}}|
+}}}}<noinclude>
+{{documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Pages using infobox islands with unknown parameters|χ{{PAGENAME}}]]
+[[Category:Articles using infobox islands with additional info|{{#ifexpr:{{str find|{{{additional_info|}}}|Source}} >= 0 |σ}}{{#ifexpr:{{str find|{{{additional_info|}}}|anguage}} >= 0 |ψ}}{{#ifexpr:{{str find|{{{additional_info|}}}|National Geospatial}} >= 0 |ν}}{{#ifexpr:{{str find|{{{additional_info|}}}|Administered}} >= 0 |α}}{{#ifexpr:{{str find|{{{additional_info|}}}|ISO}} >= 0 |ι}}{{#ifexpr:{{str find|{{{additional_info|}}}|Literacy}} >= 0 |λ}}{{#ifexpr:{{str find|{{{additional_info|}}}|temperature}} >= 0 |τ}}{{PAGENAME}}]]
+[[Category:Pages using infobox islands with the embed parameter]]
+[[Category:Pages using infobox islands with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox islands with an ambiguous map caption]]
+[[Category:Pages using infobox islands with an ambiguous map alt]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

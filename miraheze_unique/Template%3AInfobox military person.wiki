@@ -1,0 +1,131 @@
+{{Infobox
+| child        = {{lc:{{{embed}}}}}
+
+| bodyclass    = vcard
+| bodystyle    = {{WPMILHIST Infobox style|{{#switch:{{{width_style|}}}|narrow|person|auto=main_box_raw_auto_width|wide|military|#default=main_box_raw}}}}
+
+| subheaderstyle = font-weight:bold;
+| subheader    = {{#ifeq:{{lc:{{{embed}}}}}|yes|{{if empty|{{{embed_title|}}}|{{#ifeq:{{{embed_title_large|}}}|yes|<div style="text-align: center; font-size: 125%; line-height: 1.2em; font-weight: bold;">Military career</div>|Military career}}}}}}
+| decat        = yes 
+
+| above        = {{br separated entries
+ |1={{#if:{{{honorific prefix|{{{honorific_prefix|}}}}}}|<div class="honorific-prefix" style="font-size: 77%; font-weight: normal;display:inline-block;">{{{honorific prefix|{{{honorific_prefix|}}}}}}</div>}}
+ |2={{#if:{{{name|<includeonly>{{PAGENAME}}</includeonly>}}}|<div style="display:inline-block" class="fn">{{{name|{{PAGENAMEBASE}}}}}</div>}}
+ |3={{#if:{{{honorific suffix|{{{honorific_suffix|}}}}}}|<div class="honorific-suffix" style="font-size: 77%; font-weight: normal;display:inline-block;">{{{honorific suffix|{{{honorific_suffix|}}}}}}</div>}}
+ }}
+| abovestyle   = font-size:125%; {{WPMILHIST Infobox style|header_color}} 
+
+| image        = {{#if:{{{image|}}}
+  |{{#ifeq:{{Str left | {{{image|}}} | 1 }}|[|{{main other|}}}}{{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{alt|}}}|suppressplaceholder=yes}} 
+  |{{#if:{{{medal|}}}
+  |{{#ifeq:{{Str left | {{{medal|}}} | 1 }}|[|{{main other|}}}}{{#invoke:InfoboxImage|InfoboxImage|image={{{medal|}}}|size={{{medal_size|}}}|sizedefault=frameless|upright={{{medal_upright|0.4}}}|alt={{{medal_alt|}}}|suppressplaceholder=yes}} 
+  }}
+  }}
+| imagestyle   = border-bottom: {{WPMILHIST Infobox style|section_border}}; line-height: 1.5em
+
+| caption      = {{{caption|}}}
+| captionstyle = font-size: 100%
+
+| labelstyle   = padding-right: 1em
+
+| label1       = Native name
+| data1        = {{#if:{{{native_name|}}}|<div class="nickname" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang}}}"}}>{{{native_name}}}</div> }}
+
+| label2       = Birth name
+| data2        = {{{birth_name|}}}
+| class2       = nickname
+
+| label3       = Other name(s)
+| data3        = {{{other_name|}}}
+| class3       = nickname
+
+| label4       = Nickname(s)
+| data4        = {{{nickname|}}}
+| class4       = nickname
+
+| label5       = Born
+| data5        = {{br separated entries | {{{birth_date|}}} | {{{birth_place|}}} }}
+
+| label6       = Disappeared
+| data6        = {{br separated entries|1={{{disappeared_date|}}}|2={{{disappeared_place|}}}}}
+
+| label7       = Status
+| data7        = {{{status|{{{disappeared_status|}}}}}}
+
+| label8       = Died
+| data8        = {{br separated entries | {{{death_date|}}} | {{{death_place|}}} }}
+
+| label9       = Cause&nbsp;of death
+| data9        = {{{death cause|{{{death_cause|}}}}}}
+
+| label10       = {{#if:{{{placeofburial_label|}}}|{{{placeofburial_label}}}|Buried}}
+| data10        = {{#if:{{{placeofburial|}}}{{{placeofburial_coordinates|}}}|<div style="display:inline" class="label">{{{placeofburial|}}}</div> {{#if:{{{placeofburial_coordinates|}}}|{{{placeofburial_coordinates}}}}}}}
+
+| label11      = Allegiance
+| data11       = {{{allegiance|}}}
+
+| label12      = {{#if:{{{branch_label|}}}|{{{branch_label}}}|Service <wbr/>/ branch}}
+| data12       = {{{branch|}}}
+
+| label13      = {{#if:{{{service_years_label|{{{serviceyears_label|}}}}}}|{{{service_years_label|{{{serviceyears_label|}}}}}}|Years&nbsp;of service}}
+| data13       = {{{service_years|{{{serviceyears|}}}}}}
+
+| label14      = {{#if:{{{Rank_label|}}}|{{{Rank_label|}}}|Rank}}
+| data14       = {{{Rank|}}}
+
+| label15      = [[Service number]]
+| data15       = {{{service_number|{{{servicenumber|}}}}}}
+
+| label16      = {{#if:{{{unit_label|}}}|{{{unit_label|}}}|Unit}}
+| data16       = {{{unit|}}}
+
+| label17      = Commands
+| data17       = {{{commands|}}}
+
+| label18      = Known&nbsp;for
+| data18       = {{{known for|{{{known_for|{{{known|}}}}}}}}}
+
+| label19      = {{#if:{{{battles_label|}}}|{{{battles_label|}}}|Battles / wars}}
+| data19       = {{{battles|}}}
+
+| label20      = Awards
+| data20      = {{{awards|}}}
+
+| label21      = Memorials
+| data21       = {{{memorials|}}}
+
+| label22      = [[:en:Alma mater|Alma mater]]
+| data22       = {{{alma_mater|}}}
+
+| label23      = Spouse(s)
+| data23       = {{{spouse|}}}
+
+| label24      = Children
+| data24       = {{{children|}}}
+
+| label25      = Relations
+| data25       = {{{relations|}}}
+
+| label26      = Other&nbsp;work
+| data26       = {{{other_work|{{{later_work|{{{otherwork|{{{laterwork|}}}}}}}}}}}}
+
+| label27      = Signature
+| data27       = {{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size={{{signature_size|}}}|sizedefault=100px|alt={{{signature alt|{{{signature_alt|}}}}}}}}
+
+| label28      = {{#if:{{{website|{{{homepage|{{{URL|}}}}}}}}}|Website}}
+| data28       = {{{website|{{{homepage|{{{URL|}}}}}}}}}
+
+| data29       = {{{module|}}}  
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox military person]] with unknown parameter "_VALUE_"|ignoreblank=y| allegiance | alma_mater | alt | awards | battles | battles_label | birth_date | birth_name | birth_place | disappeared_date | disappeared_place | disappeared_status | branch | branch_label | caption | children | commands | death_date | death_place |death_cause | embed | embed_title | embed_title_large | homepage | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | image | image_size | image_upright | known | known_for | later_work | laterwork | medal | medal_size | medal_upright | medal_alt | memorials | module | name | native_name | native_name_lang | nickname | other_name | other_work | otherwork | placeofburial | placeofburial_coordinates | placeofburial_label | Rank | Rank_label | relations | service_number | servicenumber | service_years | serviceyears | service_years_label | serviceyears_label | signature | signature alt | signature_alt | signature_size | spouse | unit | unit_label | URL | website | width_style }}{{#if:{{both|{{{image|}}}|{{{medal|}}}}}|}}{{main other|{{#if:{{{embed|}}}|}}}}<noinclude>{{documentation}}
+[[Category:Infobox military person image param needs updating]]
+[[Category:Infobox military person image param needs updating]]
+[[Category:Pages using infobox military person with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox military person with both image and medal]]
+[[Category:Pages using infobox military person with embed|{{#if:{{{embed_title|}}}|Τ}}{{FULLPAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

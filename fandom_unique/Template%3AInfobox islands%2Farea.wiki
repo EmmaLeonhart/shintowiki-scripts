@@ -1,0 +1,24 @@
+{{#if:{{both|{{{km2|}}}|{{{sqmi|}}}}}
+ |{{formatnum:{{{km2}}}}}&nbsp;km<sup>2</sup> ({{formatnum:{{{sqmi}}}}}&nbsp;sq&nbsp;mi)
+ |{{#if:{{{km2|}}}{{{sqmi|}}}
+   |{{convinfobox|{{{km2|}}}|km2|{{{sqmi|}}}|sqmi|disp={{#if:{{{pct|}}}|x|b}}|{{#if:{{{pct|}}}|&#32;(}}}}{{#if:{{{pct|}}}|&#59;&#160;{{{pct}}}%)}}
+   |{{#if:{{both|{{{ha|}}}|{{{acre|}}}}}
+     |{{formatnum:{{{ha}}}}}&nbsp;ha ({{formatnum:{{{acre}}}}}&nbsp;acres)
+     |{{#if:{{{ha|}}}{{{acre|}}}
+       |{{convinfobox|{{{ha|}}}|ha|{{{acre|}}}|acre|disp={{#if:{{{pct|}}}|x|b}}|{{#if:{{{pct|}}}|&#32;(}}}}{{#if:{{{pct|}}}|&#59;&#160;{{{pct}}}%)}}
+       |{{#if:{{both|{{{sqft|}}}|{{{m2|}}}}}
+         |{{formatnum:{{{m2}}}}}&nbsp;m<sup>2</sup> ({{formatnum:{{{sqft}}}}}&nbsp;sq&nbsp;ft)
+         |{{#if:{{{sqft|}}}{{{m2|}}}
+           |{{convinfobox|{{{m2|}}}|m2|{{{sqft|}}}|sqft|disp={{#if:{{{pct|}}}|x|b}}|{{#if:{{{pct|}}}|&#32;(}}}}{{#if:{{{pct|}}}|&#59;&#160;{{{pct}}}%)}}
+          }}
+        }}
+      }}
+    }}
+  }}
+}}<noinclude>{{documentation}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
