@@ -1,0 +1,726 @@
+{
+  "Category:Infobox templates": {
+    "revid": 1999610,
+    "sha": "08dd427276b3426cd5201fe9239ca3a61744fc94"
+  },
+  "Template:Commons category": {
+    "revid": 1995986,
+    "sha": "fbf35f41d46b20bdfd2e37372e47296f292060b7"
+  },
+  "Template:Infobox": {
+    "revid": 1992133,
+    "sha": "4e60c1259da2a86a969a6e7b01bbf06d8be973b2"
+  },
+  "Template:Infobox Buddha": {
+    "revid": 1992134,
+    "sha": "0fc0f3ab5e74315a82326c0f89b46f934c986e82"
+  },
+  "Template:Infobox Buddhist temple": {
+    "revid": 1992172,
+    "sha": "7b5e79dc6afcb69f9c59b59c9ac87acb9fa32c6b"
+  },
+  "Template:Infobox Buddhist term": {
+    "revid": 1992135,
+    "sha": "4c284654011949c4a72f6f5a77312f91fa01505c"
+  },
+  "Template:Infobox Chinese": {
+    "revid": 1992178,
+    "sha": "fc8f3b9c499dffe559d325eba0545aa1c14716c7"
+  },
+  "Template:Infobox Chinese/doc": {
+    "revid": 1992136,
+    "sha": "ebb5c0c6c106534c073b062be90c6df82b280e45"
+  },
+  "Template:Infobox East Asian name": {
+    "revid": 1996027,
+    "sha": "f8bb08b2c7ffa93e494ed012a3ec5a4f0ed48ba0"
+  },
+  "Template:Infobox Egyptian deity": {
+    "revid": 1996026,
+    "sha": "f4832c813c3a672c3fbdad9202f79f8deb24543f"
+  },
+  "Template:Infobox Film": {
+    "revid": 1995987,
+    "sha": "ef191b20d085a26ea19ada9063001e0cc9762f65"
+  },
+  "Template:Infobox Hieroglyphen": {
+    "revid": 1995988,
+    "sha": "d34c3f33d27c80c2cb754813a0b82edf948d2c5f"
+  },
+  "Template:Infobox Hindu term": {
+    "revid": 1995989,
+    "sha": "3bfd15418f4b84b51f3f56efd8c8ea12c93f4246"
+  },
+  "Template:Infobox Historic Site": {
+    "revid": 1996028,
+    "sha": "7437a6aa3bd0e288d423b47bf028d1e77fa6f330"
+  },
+  "Template:Infobox Holiday": {
+    "revid": 1996029,
+    "sha": "efc0babcd56fd9035be6b718c13193896bbd713c"
+  },
+  "Template:Infobox Japanese clan": {
+    "revid": 1996086,
+    "sha": "97a8d6b0744268befe03d9ef44b0a5ccb0af1846"
+  },
+  "Template:Infobox Japanese clan/doc": {
+    "revid": 1996087,
+    "sha": "64235a21c2aa08e0efd574a5703fe929a060e07c"
+  },
+  "Template:Infobox Japanese deity": {
+    "revid": 1996088,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox Kofun": {
+    "revid": 1996089,
+    "sha": "6e2d590ad91ba4767a2d4ab1b23713c6ad14c5fb"
+  },
+  "Template:Infobox Korean name": {
+    "revid": 1996090,
+    "sha": "92305e00dc4a925dacf9bc344109169164f275c1"
+  },
+  "Template:Infobox Lake": {
+    "revid": 1996128,
+    "sha": "8855e8416ea2cbd4a7d107e620534a433efec4b3"
+  },
+  "Template:Infobox Law": {
+    "revid": 1996129,
+    "sha": "ba41b71b3eb24c0c0a3285709e7be2730e9317de"
+  },
+  "Template:Infobox Monarch": {
+    "revid": 1996130,
+    "sha": "7a3d3fd8dc779894825877e618a4d493871197d9"
+  },
+  "Template:Infobox Mountain": {
+    "revid": 1996091,
+    "sha": "dcd34b9f9d6eb27788b2d382d7d9b468aa8ae8ab"
+  },
+  "Template:Infobox NRHP": {
+    "revid": 1999515,
+    "sha": "2a2bab6a9619e917cf95c0e7315fdaeb050a737c"
+  },
+  "Template:Infobox Onsen": {
+    "revid": 1999516,
+    "sha": "43b99b30db723fbce9a1f16157f81ee1c5feed6e"
+  },
+  "Template:Infobox UNESCO World Heritage Site": {
+    "revid": 1999611,
+    "sha": "b6409392a69ee9ec6e725ee133c3ea80429ca06b"
+  },
+  "Template:Infobox Wikipedia user script": {
+    "revid": 1999612,
+    "sha": "13268fea23150e2759e5184e6a02676c47a4360f"
+  },
+  "Template:Infobox Wikipedia user script/doc": {
+    "revid": 1999613,
+    "sha": "071330418b641b397c48fad51f8b2d4304ffb045"
+  },
+  "Template:Infobox YouTube personality": {
+    "revid": 1999614,
+    "sha": "8ad7c389d82c807e4f85c891c5b4ede78d55ec7b"
+  },
+  "Template:Infobox YouTube personality/doc": {
+    "revid": 1999615,
+    "sha": "b2ee4530635781db8ad9bca9e94269bfe8a03ab1"
+  },
+  "Template:Infobox academic": {
+    "revid": 1992137,
+    "sha": "7c40c9358d22c40419abea308499cbbf18924181"
+  },
+  "Template:Infobox academic/doc": {
+    "revid": 1992138,
+    "sha": "9999298f609b69804e7347b19e904a2b259f1b42"
+  },
+  "Template:Infobox ancient site": {
+    "revid": 1992139,
+    "sha": "d695a478764998b3d1385719fdbcccb1fd44d87c"
+  },
+  "Template:Infobox ancient site infobox": {
+    "revid": 1992141,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox ancient site/doc": {
+    "revid": 1992140,
+    "sha": "7b26e90c6dc71d2ee68a6bcb0917c463d9a4918a"
+  },
+  "Template:Infobox ancient sites": {
+    "revid": 1992142,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox ancient tumulus": {
+    "revid": 1992143,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox anthem": {
+    "revid": 1992144,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox architect": {
+    "revid": 1992145,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox aristocrat": {
+    "revid": 1992146,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox artifact": {
+    "revid": 1992147,
+    "sha": "803ce3ce11482d567d58ee0dd94337c5989eb68c"
+  },
+  "Template:Infobox artifact/doc": {
+    "revid": 1992148,
+    "sha": "2aa97150aa73849651ba22df5bac19f9b8595a51"
+  },
+  "Template:Infobox artist": {
+    "revid": 1992149,
+    "sha": "ee46b9428dd2be4680868506fc3198b5958a491a"
+  },
+  "Template:Infobox artist/doc": {
+    "revid": 1992150,
+    "sha": "2c18496e08bddbc305ad5669a875c31de9ee669d"
+  },
+  "Template:Infobox artwork": {
+    "revid": 1992151,
+    "sha": "05a9cf73967729445d71de8011734c7d858a5690"
+  },
+  "Template:Infobox artwork/doc": {
+    "revid": 1992152,
+    "sha": "eec1cf144a2b1ce44d1b2230d6fada9f65f8efb1"
+  },
+  "Template:Infobox baseball player": {
+    "revid": 1992153,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox body of water": {
+    "revid": 1992154,
+    "sha": "1ade1a7031aa578f9976f247fd0fc3c62702b50c"
+  },
+  "Template:Infobox body of water/doc": {
+    "revid": 1992155,
+    "sha": "4b862602fb562a32d9632d435e0c64e888e02d62"
+  },
+  "Template:Infobox book": {
+    "revid": 1992156,
+    "sha": "c8bfbf9256390d69f7ea36fc9ccbe926599fb811"
+  },
+  "Template:Infobox book/doc": {
+    "revid": 1992157,
+    "sha": "18f1ff3d00dbd36c193e043d0c0d00247c08ce7e"
+  },
+  "Template:Infobox bridge": {
+    "revid": 1992158,
+    "sha": "836a9775a7659a953d547b97c9d853a3ce549bb4"
+  },
+  "Template:Infobox building": {
+    "revid": 1992159,
+    "sha": "6c1b83eb02f29dd3d11f0f58a1ffe9c2ddc120ce"
+  },
+  "Template:Infobox building/doc": {
+    "revid": 1992160,
+    "sha": "c366a95143769884cc8773cdc970dc60f89dab06"
+  },
+  "Template:Infobox burial site": {
+    "revid": 1992161,
+    "sha": "627448bc7549ca6314c3ef6310ba47572c7b551e"
+  },
+  "Template:Infobox character": {
+    "revid": 1992162,
+    "sha": "e0cb751c0ff8ce66b2ae882b1943d34d0cd3200c"
+  },
+  "Template:Infobox character/doc": {
+    "revid": 1992163,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox chinese": {
+    "revid": 1992171,
+    "sha": "7236eaa75083220823a3c48125bc79e7dbd029e6"
+  },
+  "Template:Infobox clan": {
+    "revid": 1992164,
+    "sha": "8c3d282125498216b5beaee5bcc637b065c786b2"
+  },
+  "Template:Infobox clan/doc": {
+    "revid": 1992165,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox clergy/doc": {
+    "revid": 1992166,
+    "sha": "cee9a909fde01e7e742f43a1620399a1f8086726"
+  },
+  "Template:Infobox color": {
+    "revid": 1992167,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox company": {
+    "revid": 1992168,
+    "sha": "6e51763b6b56fe31e784eeadda00661b3897388f"
+  },
+  "Template:Infobox company/doc": {
+    "revid": 1992169,
+    "sha": "7a30e210ef32f966f6c5921bb3012308e8259168"
+  },
+  "Template:Infobox country": {
+    "revid": 1992170,
+    "sha": "e2d690befdceb9d385637f73f2e4ee3c195dbc25"
+  },
+  "Template:Infobox country/doc": {
+    "revid": 1992179,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox country/formernext": {
+    "revid": 1992180,
+    "sha": "8f2589a854d13896b2b22d0b1bdef551d564631f"
+  },
+  "Template:Infobox country/imagetable": {
+    "revid": 1992181,
+    "sha": "d1a79f2ca8651429490065f1cd66c24941ce621a"
+  },
+  "Template:Infobox country/multirow": {
+    "revid": 1992182,
+    "sha": "8da2775742a985559a422fef89af32eec36be71b"
+  },
+  "Template:Infobox country/multirow/doc": {
+    "revid": 1995990,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox deity": {
+    "revid": 1995991,
+    "sha": "f105026b026fc85be813e97d113d3110c4cb65eb"
+  },
+  "Template:Infobox deity Japan": {
+    "revid": 1995994,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox deity/color": {
+    "revid": 1995992,
+    "sha": "0829a17a43392f4a815b896cfe2aa56a807c576b"
+  },
+  "Template:Infobox deity/doc": {
+    "revid": 1995993,
+    "sha": "897020165b2cb3df4380c5a28a919004421e95b4"
+  },
+  "Template:Infobox designation list": {
+    "revid": 1995995,
+    "sha": "bf1dc800be29238a372056e62422155cd41aa8dd"
+  },
+  "Template:Infobox designation list/doc": {
+    "revid": 1995996,
+    "sha": "c8737e618c347ebaacf4791544adc697c934bdaa"
+  },
+  "Template:Infobox designation list/entry": {
+    "revid": 1995997,
+    "sha": "c7b9d17e57bfe5f0490c50faf758198a48001dc8"
+  },
+  "Template:Infobox dim": {
+    "revid": 1995998,
+    "sha": "fa12996ad909d511c1e771b5b20bd22c61b402ef"
+  },
+  "Template:Infobox dim/doc": {
+    "revid": 1995999,
+    "sha": "eb0a52f23d1509311d63999632fc0159ba82aac3"
+  },
+  "Template:Infobox drink": {
+    "revid": 1996000,
+    "sha": "625302f9c8d56b98c8f336d8c857f26f214a32e9"
+  },
+  "Template:Infobox drink/doc": {
+    "revid": 1996001,
+    "sha": "9f36ba377106a47d546d75333e7a7b46490805fc"
+  },
+  "Template:Infobox ethnic group": {
+    "revid": 1996002,
+    "sha": "e6967ca71c15f508f9bad2ed28c8908015244309"
+  },
+  "Template:Infobox ethnic group/doc": {
+    "revid": 1996003,
+    "sha": "d61d15f198d5e686b7a19b6a2336e7ddb3ac4b21"
+  },
+  "Template:Infobox event": {
+    "revid": 1996004,
+    "sha": "147ade4e76a0363d6d18d482478eb46ad698b395"
+  },
+  "Template:Infobox event/doc": {
+    "revid": 1996005,
+    "sha": "48350d4d1746a0ad069000e8849a9602c32c80ad"
+  },
+  "Template:Infobox family": {
+    "revid": 1996006,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox film": {
+    "revid": 1996007,
+    "sha": "ef191b20d085a26ea19ada9063001e0cc9762f65"
+  },
+  "Template:Infobox folk tale": {
+    "revid": 1996008,
+    "sha": "ec7df0de0fa648c17f7853f3eef809c821822ae0"
+  },
+  "Template:Infobox food": {
+    "revid": 1996009,
+    "sha": "5afc85591e8ed0163814e17c2200dc9005b711ae"
+  },
+  "Template:Infobox food/doc": {
+    "revid": 1996010,
+    "sha": "a9f1d33d85ea023385e7dc65dff6fe0469d93cbc"
+  },
+  "Template:Infobox footer": {
+    "revid": 1996011,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox forest": {
+    "revid": 1996012,
+    "sha": "a9b54078ad0fd435979b51cbd44a54a540985dd9"
+  },
+  "Template:Infobox forest/doc": {
+    "revid": 1996013,
+    "sha": "cb8cdf47c228998f623191fff0e41ed6ec608ba4"
+  },
+  "Template:Infobox former subdivision": {
+    "revid": 1996014,
+    "sha": "a793e5605b9830368e911209ea29d1d61aeb3eb2"
+  },
+  "Template:Infobox former subdivision/doc": {
+    "revid": 1996015,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox government agency": {
+    "revid": 1996016,
+    "sha": "56eb14d305106320bec3e3b3a1cae9d301875003"
+  },
+  "Template:Infobox government agency/doc": {
+    "revid": 1996017,
+    "sha": "27295c19beaa9e9afab9419c3639a0950be0cce7"
+  },
+  "Template:Infobox grapheme": {
+    "revid": 1996018,
+    "sha": "dbff4088a5b1fccac5de5640d5636f581d41fb4c"
+  },
+  "Template:Infobox hieroglyphs": {
+    "revid": 1996019,
+    "sha": "eb01462b585c16e5a5301998dd3a5c3e1cf1833f"
+  },
+  "Template:Infobox hieroglyphs two-columns": {
+    "revid": 1996021,
+    "sha": "4c58b84176a71fb02bbc1c4e839f39414a8f7e90"
+  },
+  "Template:Infobox hieroglyphs/doc": {
+    "revid": 1996020,
+    "sha": "2cff9ef3b851171c75e5dc590400f2dac9c8d21f"
+  },
+  "Template:Infobox historic site": {
+    "revid": 1996022,
+    "sha": "1f5230b4e66cc04025f09eed066de3a1603ce913"
+  },
+  "Template:Infobox historic site/doc": {
+    "revid": 1996035,
+    "sha": "47d34d9239afbde3dcdeb248507d45149e7378bf"
+  },
+  "Template:Infobox historical era": {
+    "revid": 1996023,
+    "sha": "c3e9798d18d19db392d8df19323b379cc7c4da07"
+  },
+  "Template:Infobox historical figure": {
+    "revid": 1996024,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox holiday": {
+    "revid": 1996025,
+    "sha": "e80861c0254afae318f2417707620da0190391e6"
+  },
+  "Template:Infobox holiday/date": {
+    "revid": 1996092,
+    "sha": "a5531d48aca2f938c246ca8e3ba8356b56e5b825"
+  },
+  "Template:Infobox holiday/doc": {
+    "revid": 1996093,
+    "sha": "b423403a02da76a4979c98f3b18a683d030cf276"
+  },
+  "Template:Infobox hospital": {
+    "revid": 1996094,
+    "sha": "833d6c62f480380c5965492419a3e6b5ba06e379"
+  },
+  "Template:Infobox hospital/care system": {
+    "revid": 1996095,
+    "sha": "cee81e481ad1bba1aba948a094346dd3ab26e37e"
+  },
+  "Template:Infobox hospital/doc": {
+    "revid": 1996096,
+    "sha": "9a851e230d0304f7004bbd670ff019ba45b69bdf"
+  },
+  "Template:Infobox hospital/lists": {
+    "revid": 1996097,
+    "sha": "cee81e481ad1bba1aba948a094346dd3ab26e37e"
+  },
+  "Template:Infobox hot spring": {
+    "revid": 1996098,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox instrument": {
+    "revid": 1996099,
+    "sha": "2d4480588323da8232675e57ec25861aca29cde8"
+  },
+  "Template:Infobox instrument/Classification": {
+    "revid": 1996100,
+    "sha": "bfb0771c5aaa6f5157894be44f9289d112a4d292"
+  },
+  "Template:Infobox instrument/Color": {
+    "revid": 1996101,
+    "sha": "5ca97794044b91b3801f383a0495a1fef375b459"
+  },
+  "Template:Infobox instrument/doc": {
+    "revid": 1996102,
+    "sha": "f827a684b0dc2c56f66ff6d7af6584d65bb7366a"
+  },
+  "Template:Infobox intangible heritage": {
+    "revid": 1996103,
+    "sha": "4c6162810b5843d4c7c6bdf4d8b86c82be201cd7"
+  },
+  "Template:Infobox intangible heritage/doc": {
+    "revid": 1996104,
+    "sha": "688e4e61bf071500533a603447edf2c0813502ea"
+  },
+  "Template:Infobox island": {
+    "revid": 1996126,
+    "sha": "c2d7a3a171b7686a084d2a5121f69b270be64a5f"
+  },
+  "Template:Infobox islands": {
+    "revid": 1996105,
+    "sha": "efb999801a8d598897f3d7d99b48f1944c5d8826"
+  },
+  "Template:Infobox islands/area": {
+    "revid": 1996106,
+    "sha": "aed14943eeaf35e456143ae8d82c20b385bed8ec"
+  },
+  "Template:Infobox islands/area/doc": {
+    "revid": 1996107,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox islands/density": {
+    "revid": 1996108,
+    "sha": "28607320b21d26dfe7a6b127dec1f638180c693d"
+  },
+  "Template:Infobox islands/density/doc": {
+    "revid": 1996109,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox islands/doc": {
+    "revid": 1996110,
+    "sha": "733b82cd317e3766b66282e4f1be83caa921ff85"
+  },
+  "Template:Infobox islands/length": {
+    "revid": 1996111,
+    "sha": "839b00398d5758d8fa25b41880599a4acbcefce9"
+  },
+  "Template:Infobox islands/length/doc": {
+    "revid": 1996112,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox jiscolor": {
+    "revid": 1996113,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox kofun": {
+    "revid": 1996127,
+    "sha": "c085c1e4dbeb9758badd5a66b039c3aa6729ce45"
+  },
+  "Template:Infobox koryu": {
+    "revid": 1996114,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox landform": {
+    "revid": 1996115,
+    "sha": "1306365b5a855feedea7ddff00460b6bd28f570e"
+  },
+  "Template:Infobox landform/doc": {
+    "revid": 1996116,
+    "sha": "84f1defb9660d0f69f7639b59b4eb6198cc4edf2"
+  },
+  "Template:Infobox legislation": {
+    "revid": 1996117,
+    "sha": "2f5ff0dfbf67d3463435a748ff11ab9d2d766cff"
+  },
+  "Template:Infobox legislation/doc": {
+    "revid": 1996118,
+    "sha": "5938361183bf84d31d77373d1ea36c6bb6590a35"
+  },
+  "Template:Infobox library classification": {
+    "revid": 1996119,
+    "sha": "6586fe8e3f2d8a4d9740ae43c45eaca5998c6a5a"
+  },
+  "Template:Infobox library classification/doc": {
+    "revid": 1996120,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox magazine": {
+    "revid": 1996121,
+    "sha": "eba02ea24b0b849cdc0b6cf3042288cb44015906"
+  },
+  "Template:Infobox magazine/doc": {
+    "revid": 1996122,
+    "sha": "a98dd2ab31f180b6c45200756c74eeb39d3a5847"
+  },
+  "Template:Infobox manner of address": {
+    "revid": 1996123,
+    "sha": "d7da9f5844e8216ca4c29d5afbd4335a6682bdf8"
+  },
+  "Template:Infobox manner of address/doc": {
+    "revid": 1996124,
+    "sha": "0cd4a03ecdd986b633d9553861f8deb021d8f23c"
+  },
+  "Template:Infobox mapframe": {
+    "revid": 1996125,
+    "sha": "bb2a00846c385d52afd6b3e2173ecc34311c4160"
+  },
+  "Template:Infobox mapframe/doc": {
+    "revid": 1999517,
+    "sha": "291de78022d2373ff4fd40669a486d01b721ae97"
+  },
+  "Template:Infobox mapframe/doc/parameters/doc": {
+    "revid": 1999518,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox mapframe/sandbox": {
+    "revid": 1999519,
+    "sha": "28d8a90775fea34223b936445f57adff1ee6f600"
+  },
+  "Template:Infobox military conflict": {
+    "revid": 1999520,
+    "sha": "7c66c55e89d4c0eb86e1a4ac1620cd50fb84ff57"
+  },
+  "Template:Infobox military conflict documentation": {
+    "revid": 1999522,
+    "sha": "749dd7c3ea12d635d50c7da84271772900c5ce37"
+  },
+  "Template:Infobox military conflict/doc": {
+    "revid": 1999521,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox military installation": {
+    "revid": 1999523,
+    "sha": "8afac6bc5681fb474ef597c0aab4a5353d3a4150"
+  },
+  "Template:Infobox military installation/doc": {
+    "revid": 1999524,
+    "sha": "8af4c1e5ad1ca214e681c1a923f0bed094cb06b0"
+  },
+  "Template:Infobox military person": {
+    "revid": 1999525,
+    "sha": "913b9a6c967625504b451599ddea245591199d79"
+  },
+  "Template:Infobox military person/doc": {
+    "revid": 1999526,
+    "sha": "08983c3d0684de6f85967355f3831af410beb35a"
+  },
+  "Template:Infobox mountain": {
+    "revid": 1999527,
+    "sha": "35802d8652864eeaf3184514dc883821ae8e9668"
+  },
+  "Template:Infobox mountain/doc": {
+    "revid": 1999528,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox museum": {
+    "revid": 1999529,
+    "sha": "036feee2475b3800ac45c1001475982ac7431a44"
+  },
+  "Template:Infobox museum/doc": {
+    "revid": 1999530,
+    "sha": "abedd670b79e492ea735092b92e8ead565c17b10"
+  },
+  "Template:Infobox musical artist": {
+    "revid": 1999531,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox mythical creature": {
+    "revid": 1999532,
+    "sha": "838159a67152a8a9694d471bd38baa46e47569d0"
+  },
+  "Template:Infobox mythical creature/doc": {
+    "revid": 1999533,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox noble": {
+    "revid": 1999534,
+    "sha": "31f93c61b6b822d42b8f34502cc801ff1545b4b2"
+  },
+  "Template:Infobox noble (Japan)": {
+    "revid": 1999536,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox noble family": {
+    "revid": 1999616,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox noble/doc": {
+    "revid": 1999535,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox officeholder": {
+    "revid": 1999617,
+    "sha": "f1a313decc1ccf1c845117ac890bd87a9d397729"
+  },
+  "Template:Infobox officeholder/doc": {
+    "revid": 1999618,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox officeholder/office": {
+    "revid": 1999619,
+    "sha": "c8882e42b815c7034ee52ab5598a03c38956774a"
+  },
+  "Template:Infobox officeholder/office/doc": {
+    "revid": 1999620,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox organization": {
+    "revid": 1999621,
+    "sha": "ef42622f7c1bd713185e9fa14512dd2edae641b1"
+  },
+  "Template:Infobox organization/doc": {
+    "revid": 1999622,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox park": {
+    "revid": 1999623,
+    "sha": "c62615896bd3276a8d6b4a6da83cb86abc8302e1"
+  },
+  "Template:Infobox park/doc": {
+    "revid": 1999624,
+    "sha": "4e3e6b5b238bf4d26c8494f1a77b1ad6ba26249f"
+  },
+  "Template:Infobox performing art": {
+    "revid": 1999625,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox person": {
+    "revid": 1999626,
+    "sha": "3b656de3fdb86bca6ec3537e9cee4bb4d2595047"
+  },
+  "Template:Infobox person/doc": {
+    "revid": 1999627,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox pharaoh/Golden": {
+    "revid": 1999628,
+    "sha": "a270aabe8e1c2dc810f4a36027777dfde1323cd0"
+  },
+  "Template:Infobox pharaoh/Nebty": {
+    "revid": 1999629,
+    "sha": "362708251513bc1999ec403ab31b4f7a33f2729d"
+  },
+  "Template:Infobox pharaoh/Nomen": {
+    "revid": 1999630,
+    "sha": "281b78ce87c418e0cd0ab712a00a30f23c4dc7b2"
+  },
+  "Template:Infobox pharaoh/Prenomen": {
+    "revid": 1999631,
+    "sha": "cb7c239c8659c02a90c967c9ad6a1597b946b106"
+  },
+  "Template:Infobox pharaoh/Serekh": {
+    "revid": 1999632,
+    "sha": "b4652ca77b945df49b07c6acfdb3521802c7b1ab"
+  },
+  "Template:Infobox pharaoh/doc": {
+    "revid": 1999633,
+    "sha": "7260947dd2379b86daa406453d3897ade5ec1ee5"
+  }
+}
