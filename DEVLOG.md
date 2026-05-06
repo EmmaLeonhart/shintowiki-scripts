@@ -17,6 +17,16 @@ Practical effects landing in subsequent commits:
 * The `Currently double category qids` review buffer (added below) and the Japanese-cat drain logic become the long-running cleanup pattern, replacing one-shot bulk migrations.
 * `status.md` archive-push window section is removed — the work it was tracking is done or no longer relevant.
 
+### Resolver hung on first push-triggered run — missing `site.connection.timeout`
+**Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
+**Status:** Fixed
+
+Symptom: cleanup-loop run `25408189695` (the first push-triggered run with the re-enabled resolver from commit 6c1bc3d) had its `Structural: resolve_double_category_qids` step start at 23:44:55 UTC and stay `in_progress` for 47+ minutes. EmmaBot's wiki contributions log showed exactly one edit at 23:44:57 (the `run_step.sh` "stage" marker), then nothing. The script wasn't crashing, wasn't making progress, just hung silently — as did the queued cleanup-loop runs behind it.
+
+Root cause: `mwclient.Site(...)` was constructed without setting `site.connection.timeout`. The library's default is no timeout, so a single slow miraheze response can hang the underlying HTTP request indefinitely. Every other long-running script in this repo sets `site.connection.timeout = 120` (audit_double_category_qids, find_duplicate_page_qids, fix_merged_qids, generate_p11250_quickstatements, propagate_independent_category, reimport_from_enwiki, rename_fandom_sync_category, strip_translated_char_count_cats, sync_duplicated_content, …) — the resolver simply did not, and it bit us on the first run.
+
+Fix: `site.connection.timeout = 120` after construction. Force-cancelled the stuck run via `POST .../force-cancel` (regular cancel is cooperative — won't propagate while the script is mid-API-call) so queued runs could move.
+
 ### Resolver: drain edit now also posts a merge notice on the Japanese cat page; *do not* redirect the dab page in the same cycle
 **Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
 **Status:** Complete (corrects an over-aggressive earlier change in this same session)
