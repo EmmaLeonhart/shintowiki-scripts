@@ -22,7 +22,7 @@ SPARQL_URL = "https://query.wikidata.org/sparql"
 PAGE_TITLE = "QuickStatements/P6262"
 OUTPUT_FILE = "p6262_fandom_links.txt"
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto/.+"$')
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto:.+"$')
 
 
 def fetch_redirect_qids(qids):
