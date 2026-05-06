@@ -8,7 +8,7 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 1. **Resolver run on its first real cycle.** `resolve_double_category_qids.py` re-enabled in commit 6c1bc3d, drain branch added in 12eef5a, post-drain redirect added today. First push-triggered cleanup-loop run is `25408189695` (in_progress as of writing). Once it completes, check that:
    * Single-existing-target dabs got `#REDIRECT [[Category:Foo]]` (the missing-target branch).
-   * Multi-target English+Japanese dabs got the drain (Japanese cat tagged crud + members double-categorized) AND the dab page itself ended as a redirect to the English cat.
+   * Multi-target English+Japanese dabs got the drain (Japanese cat: merge notice + crud tag in one edit; members double-categorized into the English cat). The dab page itself stays in the `Currently double category qids` review buffer; the redirect lands on a future cycle automatically once the crud-categories sweep deletes the now-empty Japanese cat. This forced multi-cycle pacing is intentional — slow enough that a human can intervene on any one case, but doesn't require them to.
    * Run did not exceed the wiki-cleanup timeout (resolver step has 200-page cap + 0.3s read throttle, but each drain can blow `--max-edits` quickly).
 
 2. **fandom-sync first run with the content-commit fix.** The next `Independent Pages Sync` run (either standalone 11:30 UTC or the cleanup-loop fan-out at 18:00 UTC) should land ~948 fandom + ~106 miraheze `.wiki` files into the repo. Confirm `fandom_unique/` count jumps from 8 to ~1000 after that run.
