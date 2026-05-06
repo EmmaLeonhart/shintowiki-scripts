@@ -17,13 +17,21 @@ Practical effects landing in subsequent commits:
 * The `Currently double category qids` review buffer (added below) and the Japanese-cat drain logic become the long-running cleanup pattern, replacing one-shot bulk migrations.
 * `status.md` archive-push window section is removed — the work it was tracking is done or no longer relevant.
 
-### Resolver: also redirect the dab page itself after a successful Japanese-cat drain
+### Resolver: drain edit now also posts a merge notice on the Japanese cat page; *do not* redirect the dab page in the same cycle
 **Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
-**Status:** Complete
+**Status:** Complete (corrects an over-aggressive earlier change in this same session)
 
-Follow-up to the drain branch added below. After surveying actual dab pages in `[[Category:Double category qids]]`, every sample was the same shape: one English-named category + one Japanese-script category for the same concept (e.g. `Category:Municipalities of Tokushima Prefecture` + `Category:徳島県の市町村`). The drain branch correctly tagged the Japanese cat as crud and double-categorized its members, but left the dab QID page itself as a numbered list awaiting human review — even though there is no review needed.
+Two intertwined changes:
 
-The QID semantically refers to the *canonical* (English) category once the Japanese duplicate is being deprecated. So when the drain completes within the per-run edit budget, the dab page is now also redirected to the English target (`#REDIRECT [[Category:English]]`). If the drain runs out of budget partway, the dab page stays in the source category and the next run picks up where this one left off; the redirect lands on whichever run completes the drain.
+1. **Merge notice on the Japanese cat page.** The drain edit now prepends a human-readable banner above the `[[Category:crud categories]]` tag: *"This Japanese-named category is being merged into [[:Category:English]]. EmmaBot is moving members to the English-named category; this page will be cleaned up once empty."* Idempotent via a marker comment (`<!-- bot-jp-cat-merge-notice -->`), so subsequent runs don't re-post. Notice + crud-cat tag land in a single save per JP cat (one edit instead of two).
+
+2. **Reverted the post-drain redirect.** A preceding commit in this session had the resolver redirect the dab QID page to the English target as the final step of the drain branch. That was too aggressive — the intended workflow is deliberately slow:
+
+   * **This run:** drain Japanese cat (notice + crud + double-categorize members). Dab page stays as-is, just retagged from legacy to `Currently double category qids`.
+   * **Subsequent runs over the next ~week:** the `crud categories` cleanup sweep deletes the now-empty Japanese cat.
+   * **Once the Japanese cat is gone:** the dab page falls into the single-existing-target branch on its next visit and gets redirected to the English cat automatically.
+
+   The forced multi-cycle pacing isn't because human review is required — it's because the slowness gives a human a clear window to intervene if any individual case is wrong, without requiring them to. The end state is the same redirect; the intermediate state is more readable.
 
 ### fandom-sync: pulled .wiki files were never committed — workflow missing the content-commit step
 **Scripts:** `.github/workflows/fandom-sync.yml`

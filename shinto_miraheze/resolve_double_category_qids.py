@@ -66,6 +66,14 @@ LEGACY_CAT_RE = re.compile(
 )
 PENDING_CAT_TAG = f"[[Category:{PENDING_CAT}]]"
 CRUD_CAT_TAG = "[[Category:crud categories]]"
+# Marker comment for idempotently detecting our merge notice on later runs.
+NOTICE_MARKER = "<!-- bot-jp-cat-merge-notice -->"
+NOTICE_TEMPLATE = (
+    "{marker}\n"
+    "'''This Japanese-named category is being merged into "
+    "[[:Category:{en}]]. EmmaBot is moving members to the English-named "
+    "category; this page will be cleaned up once empty.'''\n"
+)
 
 
 def is_japanese_only_category(full_title):
@@ -146,8 +154,17 @@ def drain_japanese_into_english(site, jp_titles, en_target, args, edits_so_far):
             print(f"  SKIP drain ({jp_full_title} no longer exists)")
             continue
 
-        if CRUD_CAT_TAG.lower() not in jp_text.lower():
-            new_jp_text = (jp_text.rstrip() + "\n" + CRUD_CAT_TAG) if jp_text else CRUD_CAT_TAG
+        # Compose the new JP cat text: prepend a human-readable merge
+        # notice (if missing) and append the crud category tag (if
+        # missing). One save per JP cat instead of two.
+        new_jp_text = jp_text
+        if NOTICE_MARKER not in new_jp_text:
+            notice = NOTICE_TEMPLATE.format(marker=NOTICE_MARKER, en=en_target)
+            new_jp_text = notice + ("\n" + new_jp_text if new_jp_text else "")
+        if CRUD_CAT_TAG.lower() not in new_jp_text.lower():
+            new_jp_text = (new_jp_text.rstrip() + "\n" + CRUD_CAT_TAG) if new_jp_text else CRUD_CAT_TAG
+
+        if new_jp_text != jp_text:
             if args.max_edits and edits_so_far + edits >= args.max_edits:
                 return edits, True
             if args.apply:
@@ -155,17 +172,17 @@ def drain_japanese_into_english(site, jp_titles, en_target, args, edits_so_far):
                     jp_cat_page.save(
                         new_jp_text,
                         summary=(
-                            f"Bot: tag Japanese-named category as crud "
-                            f"(draining members into [[:{en_target}]]) {args.run_tag}"
+                            f"Bot: tag as crud + add merge notice "
+                            f"(draining into [[:Category:{en_target}]]) {args.run_tag}"
                         ),
                     )
-                    print(f"  CRUD-TAGGED [[{jp_full_title}]]")
+                    print(f"  TAGGED+NOTICED [[{jp_full_title}]]")
                     edits += 1
                     time.sleep(THROTTLE)
                 except Exception as e:
                     print(f"  ERROR tagging {jp_full_title}: {e}")
             else:
-                print(f"  DRY: would crud-tag [[{jp_full_title}]]")
+                print(f"  DRY: would tag+notice [[{jp_full_title}]]")
                 edits += 1
 
         # 2. Iterate members and append the English category to each.
@@ -324,12 +341,15 @@ def main():
 
         # Multi-target case. If exactly one English-named target plus
         # one or more Japanese-script-only targets exist, drain the
-        # Japanese ones into the English one (tag each Japanese cat as
-        # crud, append [[Category:English]] to every member), THEN
-        # redirect the dab page itself to the English target. The QID
-        # semantically refers to the English (canonical) category once
-        # the Japanese duplicate is being deprecated, so the dab page
-        # has no further role.
+        # Japanese ones into the English one: tag each Japanese cat as
+        # crud + post a merge notice, and append [[Category:English]]
+        # to every member. Deliberately *don't* redirect the dab page
+        # itself here — the workflow is intentionally slow so a human
+        # can intervene if needed. Across subsequent cleanup-loop
+        # cycles the [[Category:crud categories]] sweep deletes the
+        # now-empty Japanese cat; once it's gone, this dab page falls
+        # into the single-existing-target branch and gets redirected
+        # automatically. Fall through to the retag block below.
         targets_list = list(existing_targets.values())
         jp_targets = [t for t in targets_list if is_japanese_only_category(t)]
         en_targets = [t for t in targets_list if not is_japanese_only_category(t)]
@@ -349,36 +369,7 @@ def main():
             if hit_budget:
                 print(f"  (hit max-edits during drain; will resume next run)")
                 break
-
-            # Drain finished within budget — now redirect the dab page
-            # itself to the English target. (If the drain ran out of
-            # budget partway, we leave the dab in the source category
-            # and the next run picks up where this one left off; once
-            # the drain completes the redirect lands here.)
-            if args.max_edits and edits >= args.max_edits:
-                print(f"  (hit max-edits before final redirect; will resume next run)")
-                break
-            new_text = f"#REDIRECT [[{en_target}]]"
-            if not args.apply:
-                print(f"{prefix} DRY: would redirect dab -> [[{en_target}]]")
-                edits += 1
-                continue
-            try:
-                page.save(
-                    new_text,
-                    summary=(
-                        f"Bot: drain Japanese duplicate -> redirect QID to "
-                        f"[[{en_target}]] {args.run_tag}"
-                    ),
-                )
-                print(f"{prefix} RESOLVED (post-drain) -> [[{en_target}]]")
-                edits += 1
-            except Exception as e:
-                print(f"{prefix} ERROR saving redirect: {e}")
-                errors += 1
-            time.sleep(THROTTLE)
-            continue
-            # Falls through only when this drain branch did NOT trigger.
+            # Fall through to the retag block (move dab off legacy cat).
 
         # Always: move multi-target dabs off the legacy category onto
         # the pending-review buffer so the legacy category drains.
