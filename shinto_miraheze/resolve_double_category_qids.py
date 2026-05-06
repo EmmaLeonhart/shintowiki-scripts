@@ -258,8 +258,17 @@ def main():
 
     site = mwclient.Site(
         WIKI_URL, path=WIKI_PATH,
-        clients_useragent="ResolveDoubleCategoryQids/1.1 (User:EmmaBot; shinto.miraheze.org)",
+        clients_useragent="ResolveDoubleCategoryQids/1.2 (User:EmmaBot; shinto.miraheze.org)",
     )
+    # Bound individual API calls. Without this, mwclient defaults to no
+    # timeout, and a single slow miraheze response can hang the whole
+    # script indefinitely — observed 2026-05-05 when run 25408189695's
+    # resolver step ran 47+ minutes with zero wiki edits after the
+    # initial stage marker, while the script silently waited on a
+    # never-returning API call. Every other long-running script in
+    # this repo sets this; we did not, and it bit us on the first
+    # post-re-enable run.
+    site.connection.timeout = 120
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
