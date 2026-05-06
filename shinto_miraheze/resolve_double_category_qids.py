@@ -35,6 +35,7 @@ did on 2026-04-24 (11+ hours, blocked everything downstream).
 
 import argparse
 import io
+import json
 import os
 import re
 import sys
@@ -51,7 +52,28 @@ PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5         # seconds between page.save() calls
 THROTTLE_API = 0.3     # seconds between read calls inside resolve_final_target
 
-MAX_PAGES_PER_RUN = 200
+MAX_PAGES_PER_RUN = 100   # bounded per-run page visits
+# Defensive cap. Real dab pages have 2-5 links; >20 means we hit a
+# stray report/audit page tagged into the category by mistake (the
+# disabled audit script wrote a 1MB page with 19,320 [[:...]] links
+# into Q* mainspace once, before we caught it). Don't let one such
+# page eat hours of API time. Skip and move on.
+MAX_LINKS_PER_PAGE = 20
+
+# Dab pages are created by create_japanese_category_qid_redirects.py
+# at the QID title (Q12345), so a real dab is a Q-page in mainspace.
+# Anything else is contamination — usually an old audit report or a
+# misplaced category tag. Skip non-Q pages.
+QID_TITLE_RE = re.compile(r"^Q\d+$")
+
+# State file: track titles already visited+resolved. Without it,
+# each run re-iterates the alphabetically-first pages of the source
+# category and spends API budget re-checking pages it already
+# decided about. The state file is the same kind orchestrators use
+# (one title per line, .state extension so commit_state.sh picks
+# it up).
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATE_FILE = os.path.join(SCRIPT_DIR, "resolve_double_category_qids.state")
 
 LEGACY_CAT = "Double category qids"
 PENDING_CAT = "Currently double category qids"
@@ -228,14 +250,24 @@ def drain_japanese_into_english(site, jp_titles, en_target, args, edits_so_far):
 
 
 def collect_pages(site):
-    """Union of pages across both source categories, deduped by title."""
+    """Union of pages across both source categories, deduped by title.
+
+    Filters to mainspace Q-pages (`^Q\\d+$`) — the only legitimate
+    members of these categories. Anything else is contamination
+    (stray audit reports, misplaced category tags, etc.) that would
+    otherwise eat the run's API budget.
+    """
     seen_titles = set()
     pages = []
+    skipped_non_qid = 0
     for cat_name in SOURCE_CATS:
         try:
             cat = site.categories[cat_name]
             for p in cat:
                 if p.namespace != 0:
+                    continue
+                if not QID_TITLE_RE.match(p.name):
+                    skipped_non_qid += 1
                     continue
                 if p.name in seen_titles:
                     continue
@@ -243,7 +275,31 @@ def collect_pages(site):
                 pages.append(p)
         except Exception as e:
             print(f"WARN: failed to read [[Category:{cat_name}]]: {e}")
+    if skipped_non_qid:
+        print(f"Skipped {skipped_non_qid} non-Q* pages (contamination in source cats)")
     return pages
+
+
+def load_state():
+    """Load the set of titles already visited+resolved.
+
+    Returns (set, bool) — the title set and whether the file existed.
+    """
+    if not os.path.exists(STATE_FILE):
+        return set(), False
+    try:
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return set(data.get("resolved", [])), True
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"WARN: state file unreadable ({e}); starting fresh")
+        return set(), False
+
+
+def save_state(resolved_titles):
+    """Persist the set of titles already resolved."""
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump({"resolved": sorted(resolved_titles)}, f, indent=2)
 
 
 def main():
@@ -272,8 +328,12 @@ def main():
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
+    visited_state, _ = load_state()
+    print(f"State: {len(visited_state)} titles previously resolved (will skip)")
+
     pages = collect_pages(site)
-    print(f"Found {len(pages)} unique dab pages across "
+    pages = [p for p in pages if p.name not in visited_state]
+    print(f"Found {len(pages)} unique dab pages to process across "
           f"[[Category:{LEGACY_CAT}]] and [[Category:{PENDING_CAT}]]\n")
 
     edits = visited = skipped = errors = 0
@@ -305,6 +365,16 @@ def main():
         links = LINK_RE.findall(text)
         if len(links) < 2:
             print(f"{prefix} SKIP (fewer than 2 links found)")
+            visited_state.add(title)
+            skipped += 1
+            continue
+        if len(links) > MAX_LINKS_PER_PAGE:
+            # Defensive cap. Real dab pages have a handful of links.
+            # Anything with hundreds is contamination (an audit report
+            # tagged into the cat by mistake) and would eat hours of
+            # API time per resolve_final_target call.
+            print(f"{prefix} SKIP (too many links: {len(links)}; not a real dab page)")
+            visited_state.add(title)
             skipped += 1
             continue
 
@@ -325,6 +395,7 @@ def main():
 
             if not args.apply:
                 print(f"{prefix} DRY: would redirect -> [[{final_target}]]")
+                visited_state.add(title)
                 edits += 1
                 continue
             try:
@@ -336,6 +407,7 @@ def main():
                     ),
                 )
                 print(f"{prefix} RESOLVED -> [[{final_target}]]")
+                visited_state.add(title)
                 edits += 1
             except Exception as e:
                 print(f"{prefix} ERROR saving: {e}")
@@ -345,6 +417,7 @@ def main():
 
         if not existing_targets:
             print(f"{prefix} SKIP (no listed target exists)")
+            visited_state.add(title)
             skipped += 1
             continue
 
@@ -418,6 +491,11 @@ def main():
             print(f"{prefix} ERROR saving: {e}")
             errors += 1
         time.sleep(THROTTLE)
+
+    # Persist state regardless of how we exited the loop, so a
+    # mid-budget halt still records the work we did.
+    save_state(visited_state)
+    print(f"\nState saved: {len(visited_state)} titles in {STATE_FILE}")
 
     print("\n" + "=" * 60)
     print(f"Visited:  {visited}")
