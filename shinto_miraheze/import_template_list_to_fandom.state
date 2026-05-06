@@ -1,8 +1,138 @@
 {
+  "Template:!((": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:57Z"
+  },
+  "Template:!bxt": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:00Z"
+  },
+  "Template:!mxt": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:31Z"
+  },
+  "Template:!xts": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:46Z"
+  },
+  "Template:'": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:17Z"
+  },
+  "Template:(Dis)establishments in decade category header/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:37Z"
+  },
   "Template:(Dis)establishments in year category header/core": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T10:59:04Z"
+  },
+  "Template:(n)": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:48Z"
+  },
+  "Template:(y)": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:50Z"
+  },
+  "Template:))!": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:00Z"
+  },
+  "Template:*": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:03Z"
+  },
+  "Template:--": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:25Z"
+  },
+  "Template:1/4": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:05Z"
+  },
+  "Template:8ball": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:53Z"
+  },
+  "Template:??": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:06Z"
+  },
+  "Template:?? ?": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:59Z"
+  },
+  "Template:?????": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:05Z"
+  },
+  "Template:?????????????": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:08Z"
+  },
+  "Template:AFC submission": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:11Z"
+  },
+  "Template:AWOL": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:14Z"
+  },
+  "Template:Absolute page title": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:38Z"
+  },
+  "Template:Accepted": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:56Z"
+  },
+  "Template:Accuracy": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:17Z"
+  },
+  "Template:Action and close": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:58Z"
+  },
+  "Template:Added": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:01Z"
+  },
+  "Template:Administrator note": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:04Z"
+  },
+  "Template:AfD count link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:29Z"
   },
   "Template:Afc comment": {
     "bytes": 12103,
@@ -12,10 +142,110 @@
     "title_imported": "Template:Afc comment",
     "ts": "2026-05-05T11:00:05Z"
   },
+  "Template:Ahnentafel/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:02Z"
+  },
   "Template:Air force/core": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-03T10:31:43Z"
+  },
+  "Template:Aka": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:34Z"
+  },
+  "Template:All": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:20Z"
+  },
+  "Template:Already declined": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:07Z"
+  },
+  "Template:Already done": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:09Z"
+  },
+  "Template:Also": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:27Z"
+  },
+  "Template:Ambox-mini": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:49Z"
+  },
+  "Template:Amtrak stations": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:22Z"
+  },
+  "Template:Anchors": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:33:12Z"
+  },
+  "Template:Ancient Japanese Clans": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:25Z"
+  },
+  "Template:Ancient Japanese clans": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:28Z"
+  },
+  "Template:And": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:30Z"
+  },
+  "Template:Angbr": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:33Z"
+  },
+  "Template:Anker": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:36Z"
+  },
+  "Template:Anl": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:39Z"
+  },
+  "Template:Approved": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:15Z"
+  },
+  "Template:Architecture of Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:42Z"
+  },
+  "Template:Archive box": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:30Z"
+  },
+  "Template:Archive now": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:18Z"
+  },
+  "Template:Archive.today": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:44Z"
   },
   "Template:Asbox": {
     "bytes": 33031,
@@ -25,6 +255,101 @@
     "title_imported": "Template:Asbox",
     "ts": "2026-05-03T10:30:25Z"
   },
+  "Template:Asia in topic": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:00:47Z"
+  },
+  "Template:Assassinated": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:50Z"
+  },
+  "Template:Astronomers by nationality and century category header": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:52Z"
+  },
+  "Template:Atsuta Shrine 45 Shrines": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:53Z"
+  },
+  "Template:Automatic category TOC stats/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:55Z"
+  },
+  "Template:Autotaxobox system nav": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:55Z"
+  },
+  "Template:Autp": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:20Z"
+  },
+  "Template:Await": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:23Z"
+  },
+  "Template:Awaiting": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:26Z"
+  },
+  "Template:Awaitingadmin": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:28Z"
+  },
+  "Template:BDDecadesInCentury": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:57Z"
+  },
+  "Template:BacklogCount": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:00:58Z"
+  },
+  "Template:Bad documentation": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:00Z"
+  },
+  "Template:Bad link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:41Z"
+  },
+  "Template:Bang": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:44Z"
+  },
+  "Template:Basepage subpage": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:33:31Z"
+  },
+  "Template:Basic information: Court Noble": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:01Z"
+  },
+  "Template:Begin hidden": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:04Z"
+  },
+  "Template:Behaviour": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:34Z"
+  },
   "Template:Beppyo Shrines": {
     "bytes": 59211,
     "ns": 10,
@@ -33,10 +358,190 @@
     "title_imported": "Template:Beppyo Shrines",
     "ts": "2026-05-03T10:30:52Z"
   },
+  "Template:Better source": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:03Z"
+  },
+  "Template:Bg": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:06Z"
+  },
+  "Template:Bi": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:09Z"
+  },
+  "Template:Big": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:03Z"
+  },
+  "Template:Birth date text": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:12Z"
+  },
+  "Template:Birth year": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:39Z"
+  },
   "Template:Birth year category header": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-04T11:22:02Z"
+  },
+  "Template:Birth, death and age templates": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:37Z"
+  },
+  "Template:Blockedandtagged": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:42Z"
+  },
+  "Template:Blockedtaggedclosing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:45Z"
+  },
+  "Template:Blockedwithouttags": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:47Z"
+  },
+  "Template:Blockindent": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:06Z"
+  },
+  "Template:Blockquote/doc/boilerplate": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:15Z"
+  },
+  "Template:Bo-textonly/fonts.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:57Z"
+  },
+  "Template:Bookdecade": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:33Z"
+  },
+  "Template:Br": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:36Z"
+  },
+  "Template:Br list": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:18Z"
+  },
+  "Template:Broken anchors": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:59Z"
+  },
+  "Template:Buddhism stub": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:20Z"
+  },
+  "Template:Buddhist Pantheon": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:02Z"
+  },
+  "Template:Bug acknowledged": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:53Z"
+  },
+  "Template:Bug assigned": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:56Z"
+  },
+  "Template:Bug closed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:58Z"
+  },
+  "Template:Bug confirmed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:01Z"
+  },
+  "Template:Bug dupe": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:04Z"
+  },
+  "Template:Bug feedback": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:06Z"
+  },
+  "Template:Bug new": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:09Z"
+  },
+  "Template:Bug pending": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:12Z"
+  },
+  "Template:Bug resolved": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:15Z"
+  },
+  "Template:BugFixed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:33:50Z"
+  },
+  "Template:Bulb": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:17Z"
+  },
+  "Template:Bulb2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:20Z"
+  },
+  "Template:Bull": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:23Z"
+  },
+  "Template:Bulletlist": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:09Z"
+  },
+  "Template:Bureaucrat note": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:23Z"
+  },
+  "Template:Buttinsky": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:26Z"
+  },
+  "Template:Bxtg": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:12Z"
   },
   "Template:C": {
     "bytes": 254085,
@@ -46,6 +551,51 @@
     "title_imported": "Template:C",
     "ts": "2026-05-04T11:23:09Z"
   },
+  "Template:C.": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:26Z"
+  },
+  "Template:CH4": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:15Z"
+  },
+  "Template:CJKV/All inline language templates": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:39Z"
+  },
+  "Template:CUnote": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:29Z"
+  },
+  "Template:Calendar, clock, date and time computing templates": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:18Z"
+  },
+  "Template:Cancelled": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:31Z"
+  },
+  "Template:Caps": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:29Z"
+  },
+  "Template:Cat": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:06Z"
+  },
+  "Template:Cat main": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:34Z"
+  },
   "Template:CatAutoTOC": {
     "bytes": 16805,
     "ns": 10,
@@ -54,10 +604,40 @@
     "title_imported": "Template:CatAutoTOC",
     "ts": "2026-05-03T10:31:37Z"
   },
+  "Template:CategoryBgColor": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:24:53Z"
+  },
   "Template:Catlink": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T11:00:56Z"
+  },
+  "Template:Catmore": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:42Z"
+  },
+  "Template:Caution sign": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:34Z"
+  },
+  "Template:Cconly": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:37Z"
+  },
+  "Template:Century births or deaths category header": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:03Z"
+  },
+  "Template:CharCode": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:32Z"
   },
   "Template:Chart": {
     "bytes": 32102,
@@ -83,6 +663,131 @@
     "title_imported": "Template:Chart/start",
     "ts": "2026-05-04T11:23:25Z"
   },
+  "Template:Check mark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:34Z"
+  },
+  "Template:Check mark-n": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:46Z"
+  },
+  "Template:Checked": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:39Z"
+  },
+  "Template:Checked box": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:49Z"
+  },
+  "Template:Checked2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:42Z"
+  },
+  "Template:Checking": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:45Z"
+  },
+  "Template:Chem/link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:37Z"
+  },
+  "Template:Chinese": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:06Z"
+  },
+  "Template:Chk": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:40Z"
+  },
+  "Template:Citation Style documentation/edit": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:42Z"
+  },
+  "Template:Citation Style documentation/opt": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:45Z"
+  },
+  "Template:Citation method": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:44Z"
+  },
+  "Template:Citation needed range": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:48Z"
+  },
+  "Template:Citation required": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:51Z"
+  },
+  "Template:Citation-needed": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:20Z"
+  },
+  "Template:Citations needed": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:34:48Z"
+  },
+  "Template:Cite": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:55Z"
+  },
+  "Template:Cite CE1913": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:01:56Z"
+  },
+  "Template:Cite book ja": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:59Z"
+  },
+  "Template:Cite database": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:02Z"
+  },
+  "Template:Cite dictionary": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:05Z"
+  },
+  "Template:Cite sources": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:09Z"
+  },
+  "Template:Cite video": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:23Z"
+  },
+  "Template:Cite-sources-needed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:01:54Z"
+  },
+  "Template:Citenews": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:08Z"
+  },
   "Template:Cl": {
     "bytes": 25121,
     "ns": 10,
@@ -90,6 +795,74 @@
     "status": "ok",
     "title_imported": "Template:Cl",
     "ts": "2026-05-04T11:22:41Z"
+  },
+  "Template:Clarification needed": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:10Z"
+  },
+  "Template:Clarifyme": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:26Z"
+  },
+  "Template:Clear left": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:13Z"
+  },
+  "Template:Clerk Request": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:53Z"
+  },
+  "Template:Clerk note": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:56Z"
+  },
+  "Template:Clerk note bot": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:59Z"
+  },
+  "Template:Clerk-Note-merged": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:34:50Z"
+  },
+  "Template:Clickable button 2": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:16Z"
+  },
+  "Template:Cloc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:52Z"
+  },
+  "Template:Close": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:01Z"
+  },
+  "Template:Clr": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:12Z"
+  },
+  "Template:Cls": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:19Z"
+  },
+  "Template:Cn": {
+    "bytes": 41825,
+    "ns": 10,
+    "revisions": 55,
+    "status": "ok",
+    "title_imported": "Template:Cn",
+    "ts": "2026-05-06T11:24:58Z"
   },
   "Template:Cob": {
     "bytes": 476549,
@@ -99,6 +872,66 @@
     "title_imported": "Template:Cob",
     "ts": "2026-05-04T11:21:35Z"
   },
+  "Template:Col": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:47Z"
+  },
+  "Template:Col div": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:29Z"
+  },
+  "Template:Col div end": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:32Z"
+  },
+  "Template:Col-list": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:22Z"
+  },
+  "Template:Colbegin": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:50Z"
+  },
+  "Template:Colend": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:53Z"
+  },
+  "Template:Collapse Templates": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:06Z"
+  },
+  "Template:Collapsed bottom": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:09Z"
+  },
+  "Template:Collapsed top": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:12Z"
+  },
+  "Template:Comment": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:04Z"
+  },
+  "Template:Commentvote": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:07Z"
+  },
+  "Template:Committed identity/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:24Z"
+  },
   "Template:Commons Category": {
     "bytes": 11806,
     "ns": 10,
@@ -106,6 +939,21 @@
     "status": "ok",
     "title_imported": "Template:Commons Category",
     "ts": "2026-05-03T10:31:15Z"
+  },
+  "Template:Commons cat": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:35:10Z"
+  },
+  "Template:Commons cat multi": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:38Z"
+  },
+  "Template:Commons+cat": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:35Z"
   },
   "Template:Commonscat": {
     "bytes": 15897,
@@ -123,10 +971,195 @@
     "title_imported": "Template:Commonscat-inline",
     "ts": "2026-05-03T10:31:53Z"
   },
+  "Template:Commonscatinline": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:08Z"
+  },
+  "Template:Compare": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:15Z"
+  },
+  "Template:Completed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:12Z"
+  },
+  "Template:Complex": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:55Z"
+  },
+  "Template:Conditional yes": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:15Z"
+  },
+  "Template:Confirmed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:18Z"
+  },
+  "Template:Confirmed-nc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:21Z"
+  },
+  "Template:Confuse": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:56Z"
+  },
+  "Template:Confused": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:59Z"
+  },
+  "Template:Confusion": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:05Z"
+  },
+  "Template:Contributing to Wikipedia/styles.css": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:02:27Z"
+  },
+  "Template:Convert/-": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:05Z"
+  },
+  "Template:Convert/PD/km2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:40Z"
+  },
+  "Template:Convert/acre": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:31Z"
+  },
+  "Template:Convert/acre.ft": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:30Z"
+  },
+  "Template:Convert/and": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:18Z"
+  },
+  "Template:Convert/by": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:02Z"
+  },
+  "Template:Convert/cm": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:48Z"
+  },
+  "Template:Convert/ft": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:11Z"
+  },
+  "Template:Convert/ha": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:23Z"
+  },
+  "Template:Convert/in": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:33Z"
+  },
+  "Template:Convert/kg": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:35Z"
+  },
+  "Template:Convert/km": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:27:02Z"
+  },
+  "Template:Convert/km2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:34Z"
+  },
   "Template:Convert/m": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-04T11:22:12Z"
+  },
+  "Template:Convert/m2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:04Z"
+  },
+  "Template:Convert/m3/s": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:43Z"
+  },
+  "Template:Convert/mm": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:07Z"
+  },
+  "Template:Convert/sqft": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:10Z"
+  },
+  "Template:Convert/sqm": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:38Z"
+  },
+  "Template:Convert/t": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:41Z"
+  },
+  "Template:Convert/to": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:46Z"
+  },
+  "Template:Convert/x": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:13Z"
+  },
+  "Template:Convert/×": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:44Z"
+  },
+  "Template:Coordinates": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:37Z"
+  },
+  "Template:Coordinator-note": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:26Z"
+  },
+  "Template:Coords": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:08Z"
+  },
+  "Template:Coptic": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:46Z"
   },
   "Template:Cot": {
     "bytes": 457357,
@@ -136,6 +1169,591 @@
     "title_imported": "Template:Cot",
     "ts": "2026-05-04T11:21:59Z"
   },
+  "Template:Country data": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:07Z"
+  },
+  "Template:Country data Aargau": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:49Z"
+  },
+  "Template:Country data Abu Dhabi": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:52Z"
+  },
+  "Template:Country data Aguascalientes": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:54Z"
+  },
+  "Template:Country data Ajman": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:02:57Z"
+  },
+  "Template:Country data Alabama": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:00Z"
+  },
+  "Template:Country data Alaska": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:03Z"
+  },
+  "Template:Country data Alawite State": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:05Z"
+  },
+  "Template:Country data Andalusia": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:08Z"
+  },
+  "Template:Country data Appenzell Ausserrhoden": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:11Z"
+  },
+  "Template:Country data Appenzell Innerrhoden": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:13Z"
+  },
+  "Template:Country data Aragon": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:16Z"
+  },
+  "Template:Country data Arizona": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:19Z"
+  },
+  "Template:Country data Arkansas": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:22Z"
+  },
+  "Template:Country data Armenian SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:24Z"
+  },
+  "Template:Country data Artigas": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:27Z"
+  },
+  "Template:Country data Asturias": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:30Z"
+  },
+  "Template:Country data Azerbaijan SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:32Z"
+  },
+  "Template:Country data Azores": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:35Z"
+  },
+  "Template:Country data BRN": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:03:38Z"
+  },
+  "Template:Country data Baja California": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:41Z"
+  },
+  "Template:Country data Baja California Sur": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:44Z"
+  },
+  "Template:Country data Balearic Islands": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:46Z"
+  },
+  "Template:Country data Banská Bystrica Region": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:49Z"
+  },
+  "Template:Country data Basel-Landschaft": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:52Z"
+  },
+  "Template:Country data Basel-Stadt": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:54Z"
+  },
+  "Template:Country data Basque Country": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:03:57Z"
+  },
+  "Template:Country data Bern": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:00Z"
+  },
+  "Template:Country data Bonaire": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:03Z"
+  },
+  "Template:Country data Bratislava Region": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:05Z"
+  },
+  "Template:Country data Byelorussian SSR": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:51Z"
+  },
+  "Template:Country data CAN": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:54Z"
+  },
+  "Template:Country data CHN": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:08Z"
+  },
+  "Template:Country data Campeche": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:08Z"
+  },
+  "Template:Country data Canary Islands": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:11Z"
+  },
+  "Template:Country data Canelones": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:13Z"
+  },
+  "Template:Country data Cantabria": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:16Z"
+  },
+  "Template:Country data Castile and León": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:19Z"
+  },
+  "Template:Country data Castilla–La Mancha": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:22Z"
+  },
+  "Template:Country data Catalonia": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:25Z"
+  },
+  "Template:Country data Cerro Largo": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:27Z"
+  },
+  "Template:Country data Ceuta": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:30Z"
+  },
+  "Template:Country data Chaguanas": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:33Z"
+  },
+  "Template:Country data Chiapas": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:35Z"
+  },
+  "Template:Country data Chihuahua": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:38Z"
+  },
+  "Template:Country data Coahuila": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:41Z"
+  },
+  "Template:Country data Colima": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:44Z"
+  },
+  "Template:Country data Colonia": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:46Z"
+  },
+  "Template:Country data Connecticut": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:49Z"
+  },
+  "Template:Country data Couva–Tabaquite–Talparo": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:52Z"
+  },
+  "Template:Country data DEU": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:53:57Z"
+  },
+  "Template:Country data Delaware": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:55Z"
+  },
+  "Template:Country data Drenthe": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:04:57Z"
+  },
+  "Template:Country data Dubai": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:00Z"
+  },
+  "Template:Country data Durango": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:03Z"
+  },
+  "Template:Country data Durazno": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:05Z"
+  },
+  "Template:Country data ENG": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:35:29Z"
+  },
+  "Template:Country data ESP": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:05:08Z"
+  },
+  "Template:Country data Eastern Cape": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:11Z"
+  },
+  "Template:Country data Estonian SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:14Z"
+  },
+  "Template:Country data Extremadura": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:17Z"
+  },
+  "Template:Country data Federal Territory (Malaysia)": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:19Z"
+  },
+  "Template:Country data Flevoland": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:22Z"
+  },
+  "Template:Country data Flores": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:25Z"
+  },
+  "Template:Country data Florida": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:27Z"
+  },
+  "Template:Country data Florida (Uruguay)": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:30Z"
+  },
+  "Template:Country data Free State": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:33Z"
+  },
+  "Template:Country data Fribourg": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:35Z"
+  },
+  "Template:Country data Friesland": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:38Z"
+  },
+  "Template:Country data Fujairah": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:41Z"
+  },
+  "Template:Country data GBR": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:05:44Z"
+  },
+  "Template:Country data GER": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:11Z"
+  },
+  "Template:Country data Galicia": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:47Z"
+  },
+  "Template:Country data Gauteng": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:49Z"
+  },
+  "Template:Country data Gelderland": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:52Z"
+  },
+  "Template:Country data Geneva": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:55Z"
+  },
+  "Template:Country data Georgian SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:05:57Z"
+  },
+  "Template:Country data Glarus": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:00Z"
+  },
+  "Template:Country data Graubünden": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:03Z"
+  },
+  "Template:Country data Groningen": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:05Z"
+  },
+  "Template:Country data Guanajuato": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:08Z"
+  },
+  "Template:Country data Guerrero": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:11Z"
+  },
+  "Template:Country data Hidalgo": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:14Z"
+  },
+  "Template:Country data ITA": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T12:06:17Z"
+  },
+  "Template:Country data Idaho": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:19Z"
+  },
+  "Template:Country data Illinois": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:22Z"
+  },
+  "Template:Country data Indiana": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T12:06:25Z"
+  },
+  "Template:Country data Johor": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:15Z"
+  },
+  "Template:Country data Kedah": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:18Z"
+  },
+  "Template:Country data Kelantan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:21Z"
+  },
+  "Template:Country data LIE": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:54:00Z"
+  },
+  "Template:Country data Latvian SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:03Z"
+  },
+  "Template:Country data Lithuanian SSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:06Z"
+  },
+  "Template:Country data Mainland China": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:08Z"
+  },
+  "Template:Country data Malacca": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:23Z"
+  },
+  "Template:Country data Negeri Sembilan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:26Z"
+  },
+  "Template:Country data Pahang": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:29Z"
+  },
+  "Template:Country data Penang": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:32Z"
+  },
+  "Template:Country data Perak": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:34Z"
+  },
+  "Template:Country data Perlis": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:37Z"
+  },
+  "Template:Country data Russian SFSR": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:11Z"
+  },
+  "Template:Country data Sarawak": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:14Z"
+  },
+  "Template:Country data Selangor": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:40Z"
+  },
+  "Template:Country data Terengganu": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:42Z"
+  },
+  "Template:Country data Texas": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:16Z"
+  },
+  "Template:Country data US": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:49:45Z"
+  },
+  "Template:Country data USA": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:10Z"
+  },
+  "Template:Country data United States Air Force": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:19Z"
+  },
+  "Template:Country data United States Army": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:22Z"
+  },
+  "Template:Country data United States Coast Guard": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:24Z"
+  },
+  "Template:Country data United States Marine Corps": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:27Z"
+  },
+  "Template:Country data United States Space Force": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:30Z"
+  },
+  "Template:CountryPrefixThe": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:53:48Z"
+  },
+  "Template:Cross": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:14Z"
+  },
+  "Template:Crossref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:05Z"
+  },
+  "Template:Crystalball": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:32Z"
+  },
+  "Template:Cs1 wrapper": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:21Z"
+  },
   "Template:Csdoc": {
     "bytes": 11245,
     "ns": 10,
@@ -144,15 +1762,280 @@
     "title_imported": "Template:Csdoc",
     "ts": "2026-05-05T11:01:09Z"
   },
+  "Template:Csv": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:11Z"
+  },
+  "Template:Ctime:01": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:33Z"
+  },
+  "Template:Ctime:02": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:35Z"
+  },
+  "Template:Ctime:03": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:38Z"
+  },
+  "Template:Ctime:06": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:41Z"
+  },
+  "Template:Ctime:07": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:44Z"
+  },
+  "Template:Ctime:08": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:46Z"
+  },
+  "Template:Ctime:09": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:49Z"
+  },
+  "Template:Ctime:10": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:52Z"
+  },
+  "Template:Ctime:11": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:54Z"
+  },
+  "Template:Ctime:12": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:54:57Z"
+  },
+  "Template:Cu-endorsed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:34Z"
+  },
+  "Template:Cudecline": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:37Z"
+  },
+  "Template:Cvt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:58Z"
+  },
+  "Template:D-A": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:09Z"
+  },
+  "Template:D-I": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:11Z"
+  },
+  "Template:D-N": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:14Z"
+  },
+  "Template:D-Nv": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:17Z"
+  },
+  "Template:D-O": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:19Z"
+  },
+  "Template:D-Out": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:22Z"
+  },
+  "Template:D-P": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:25Z"
+  },
+  "Template:D-W": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:28Z"
+  },
+  "Template:DMC": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:00Z"
+  },
+  "Template:DYK talk": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:03Z"
+  },
+  "Template:Days of the week": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:14Z"
+  },
+  "Template:Dc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:40Z"
+  },
+  "Template:Dc2": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:40Z"
+  },
+  "Template:Dcr": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:13Z"
+  },
+  "Template:Death year": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:14Z"
+  },
   "Template:Death year category header": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-04T11:22:15Z"
   },
+  "Template:Decade": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:06Z"
+  },
+  "Template:Decade births or deaths category header": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:16Z"
+  },
+  "Template:Decline": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:40Z"
+  },
+  "Template:Decline-IP": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:43Z"
+  },
+  "Template:Declined": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:45Z"
+  },
+  "Template:Deferabusefilter": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:48Z"
+  },
+  "Template:Deferblack": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:51Z"
+  },
+  "Template:Defermetablack": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:53Z"
+  },
+  "Template:Deferred": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:56Z"
+  },
+  "Template:Deferspam": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:35:59Z"
+  },
+  "Template:Deferspambot": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:01Z"
+  },
+  "Template:Deferwhite": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:04Z"
+  },
+  "Template:Deleted-image": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:07Z"
+  },
+  "Template:Delisted": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:10Z"
+  },
+  "Template:Denied": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:12Z"
+  },
   "Template:Designation/colour2": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T11:00:42Z"
+  },
+  "Template:Details": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:01Z"
+  },
+  "Template:Diffsandbox": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:48Z"
+  },
+  "Template:Disagree": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:15Z"
+  },
+  "Template:Disambig": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:09Z"
+  },
+  "Template:Discussing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:18Z"
+  },
+  "Template:DisestcatContinent/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:51Z"
+  },
+  "Template:DisestcatCountry": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:20Z"
+  },
+  "Template:Dislike": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:23Z"
+  },
+  "Template:Divbox/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:54Z"
   },
   "Template:Doc": {
     "bytes": 37770,
@@ -161,6 +2044,126 @@
     "status": "ok",
     "title_imported": "Template:Doc",
     "ts": "2026-05-05T10:59:55Z"
+  },
+  "Template:Doc subpage": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:12Z"
+  },
+  "Template:Doing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:26Z"
+  },
+  "Template:Donetask": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:28Z"
+  },
+  "Template:Double image stack": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:56Z"
+  },
+  "Template:Draft": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:24Z"
+  },
+  "Template:Dtl": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:20Z"
+  },
+  "Template:Duck": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:31Z"
+  },
+  "Template:Duck2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:34Z"
+  },
+  "Template:Dummy footnote/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:58Z"
+  },
+  "Template:Dummy ref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:23Z"
+  },
+  "Template:Duplicate bug": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:39Z"
+  },
+  "Template:DuplicateProposal": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:37Z"
+  },
+  "Template:Edit count link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:43Z"
+  },
+  "Template:Edited2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:42Z"
+  },
+  "Template:Education-stub": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:26Z"
+  },
+  "Template:Elc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:13Z"
+  },
+  "Template:Emperors of Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:49:59Z"
+  },
+  "Template:Endorse": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:45Z"
+  },
+  "Template:Endorsed+": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:47Z"
+  },
+  "Template:Equc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:03Z"
+  },
+  "Template:Escape": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:02Z"
+  },
+  "Template:Esoteric": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:05Z"
+  },
+  "Template:Establishment category in country by century/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:19Z"
+  },
+  "Template:Estcat": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:15Z"
   },
   "Template:EstcatContinent": {
     "reason": "source has no revisions (page missing on shintowiki)",
@@ -174,6 +2177,76 @@
     "status": "ok",
     "title_imported": "Template:EstcatCountry",
     "ts": "2026-05-04T11:23:41Z"
+  },
+  "Template:EstcatCountryDecade": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:27:43Z"
+  },
+  "Template:Expand language (non-Latin script)/howto": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:07Z"
+  },
+  "Template:Expired": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:50Z"
+  },
+  "Template:Facepalm": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:53Z"
+  },
+  "Template:Fact": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:13Z"
+  },
+  "Template:Failed-ga": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:56Z"
+  },
+  "Template:Fake citation needed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:10Z"
+  },
+  "Template:Fake clarify": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:13Z"
+  },
+  "Template:Fake explain": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:16Z"
+  },
+  "Template:Fake header": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:29Z"
+  },
+  "Template:Fake verification needed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:18Z"
+  },
+  "Template:Falsche ISBN": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:00Z"
+  },
+  "Template:Family tree/end": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:22Z"
+  },
+  "Template:Family tree/start": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:24Z"
   },
   "Template:Familytree": {
     "bytes": 43232,
@@ -199,6 +2272,31 @@
     "title_imported": "Template:Familytree/start",
     "ts": "2026-05-03T10:32:12Z"
   },
+  "Template:Fhead": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:32Z"
+  },
+  "Template:Fishing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:36:58Z"
+  },
+  "Template:Fixed by reporter": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:01Z"
+  },
+  "Template:Fl.": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:17Z"
+  },
+  "Template:Flagicon": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:46Z"
+  },
   "Template:Footnote help": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
@@ -212,15 +2310,145 @@
     "title_imported": "Template:Footnotes",
     "ts": "2026-05-05T11:01:03Z"
   },
+  "Template:For2": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:20Z"
+  },
+  "Template:FormatTemplateData": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:35Z"
+  },
+  "Template:FormattingError": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:17Z"
+  },
+  "Template:Frac": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:17Z"
+  },
+  "Template:Friendly standard installation": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:23Z"
+  },
+  "Template:Fullurl:": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:21Z"
+  },
+  "Template:GA2ndopinion": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:04Z"
+  },
+  "Template:GAOnHold": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:07Z"
+  },
+  "Template:Gbm4ibx": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:24Z"
+  },
   "Template:Gender": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-04T11:22:34Z"
   },
+  "Template:Generic template demo": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:16Z"
+  },
+  "Template:German coord convert": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:26Z"
+  },
   "Template:Getalias/core": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T10:59:20Z"
+  },
+  "Template:GlobalLocksRequested": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:09Z"
+  },
+  "Template:Glossary link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:27Z"
+  },
+  "Template:Glossary/doc/usage": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:29Z"
+  },
+  "Template:Go ahead": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:12Z"
+  },
+  "Template:Gokoku shrines": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:19Z"
+  },
+  "Template:Great": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:15Z"
+  },
+  "Template:H2O": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:31Z"
+  },
+  "Template:H2O-nl": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:34Z"
+  },
+  "Template:H2S": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:37Z"
+  },
+  "Template:H3O+": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:39Z"
+  },
+  "Template:Hairspace": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:38Z"
+  },
+  "Template:Half done": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:17Z"
+  },
+  "Template:Harvcol": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:29Z"
+  },
+  "Template:Harvcolnb": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:40Z"
+  },
+  "Template:Harvcoltxt": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:32Z"
   },
   "Template:Harvid": {
     "bytes": 39796,
@@ -238,6 +2466,26 @@
     "title_imported": "Template:Harvnb",
     "ts": "2026-05-04T11:22:44Z"
   },
+  "Template:Harvp": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:46Z"
+  },
+  "Template:Harvs": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:35Z"
+  },
+  "Template:Harvtxt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:22Z"
+  },
+  "Template:Help footnotes": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:42Z"
+  },
   "Template:Help navigation": {
     "bytes": 213852,
     "ns": 10,
@@ -245,6 +2493,21 @@
     "status": "ok",
     "title_imported": "Template:Help navigation",
     "ts": "2026-05-05T11:00:15Z"
+  },
+  "Template:Helpbox/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:48Z"
+  },
+  "Template:Helped": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:20Z"
+  },
+  "Template:High risk": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:51Z"
   },
   "Template:High use": {
     "bytes": 18419,
@@ -262,6 +2525,101 @@
     "title_imported": "Template:High-risk",
     "ts": "2026-05-03T10:32:09Z"
   },
+  "Template:Highly likely": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:23Z"
+  },
+  "Template:Hilite": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:27Z"
+  },
+  "Template:History-stub": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:43Z"
+  },
+  "Template:Hiyoshi Faith": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:20Z"
+  },
+  "Template:Hmbox/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:30Z"
+  },
+  "Template:IPblock": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:25Z"
+  },
+  "Template:ISBN?": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:38Z"
+  },
+  "Template:Idea": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:28Z"
+  },
+  "Template:Ifnumber": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:55:45Z"
+  },
+  "Template:Illm": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:03Z"
+  },
+  "Template:Image needed": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:37:31Z"
+  },
+  "Template:Image other": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:48Z"
+  },
+  "Template:Image request": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:46Z"
+  },
+  "Template:Implemented": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:34Z"
+  },
+  "Template:In progress": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:36Z"
+  },
+  "Template:In5": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:49Z"
+  },
+  "Template:Inconclusive": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:39Z"
+  },
+  "Template:InfoNeeded": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:42Z"
+  },
+  "Template:Infobox Ancient Aristocrat": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:51Z"
+  },
   "Template:Infobox Buddhist temple": {
     "bytes": 10775,
     "ns": 10,
@@ -278,10 +2636,91 @@
     "title_imported": "Template:Infobox Chinese",
     "ts": "2026-05-04T11:22:05Z"
   },
+  "Template:Infobox Chinese/Korean": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:41Z"
+  },
+  "Template:Infobox Japanese Kofun": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:44Z"
+  },
+  "Template:Infobox Japanese Temple": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:53Z"
+  },
+  "Template:Infobox River": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:56Z"
+  },
+  "Template:Infobox Shinto Shrine": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:47Z"
+  },
+  "Template:Infobox Shinto shrine": {
+    "bytes": 325264,
+    "ns": 10,
+    "revisions": 100,
+    "status": "ok",
+    "title_imported": "Template:Infobox Shinto shrine",
+    "ts": "2026-05-06T11:24:35Z"
+  },
+  "Template:Infobox ancient site of Japan": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:49Z"
+  },
+  "Template:Infobox holiday/wd": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:45Z"
+  },
+  "Template:Infobox kofun": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:52Z"
+  },
+  "Template:Infobox pharaoh/titulary subpage documentation": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:54Z"
+  },
   "Template:Infobox royalty/short description": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T11:00:36Z"
+  },
+  "Template:Infobox scholar": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:55:59Z"
+  },
+  "Template:Infobox settlement/metric": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:02Z"
+  },
+  "Template:Infobox shinto shrine": {
+    "bytes": 9015,
+    "ns": 10,
+    "revisions": 9,
+    "status": "ok",
+    "title_imported": "Template:Infobox shinto shrine",
+    "ts": "2026-05-06T11:24:23Z"
+  },
+  "Template:Infobox shrine": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:50:55Z"
+  },
+  "Template:Infobox/mobileviewfix.css": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:52Z"
   },
   "Template:Inline tags": {
     "bytes": 12618,
@@ -299,6 +2738,76 @@
     "title_imported": "Template:Intitle",
     "ts": "2026-05-04T11:22:21Z"
   },
+  "Template:Intro to": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:50:58Z"
+  },
+  "Template:Invalid": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:47Z"
+  },
+  "Template:Investigating": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:50Z"
+  },
+  "Template:Ipbedone": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:53Z"
+  },
+  "Template:Isdoing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:55Z"
+  },
+  "Template:J alink": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:01Z"
+  },
+  "Template:Ja link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:37:58Z"
+  },
+  "Template:Jal ink": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:03Z"
+  },
+  "Template:Jali nk": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:30Z"
+  },
+  "Template:Jalin k": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:06Z"
+  },
+  "Template:JapanEmpireNavbox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:09Z"
+  },
+  "Template:Japanese Kofun": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:16Z"
+  },
+  "Template:Japanese Kofuns": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:05Z"
+  },
+  "Template:Japanese clan name": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:00Z"
+  },
   "Template:Japanese mythology": {
     "bytes": 8040,
     "ns": 10,
@@ -306,6 +2815,21 @@
     "status": "ok",
     "title_imported": "Template:Japanese mythology",
     "ts": "2026-05-05T10:59:29Z"
+  },
+  "Template:Japanese temple infobox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:12Z"
+  },
+  "Template:JapaneseBuddhism": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:46:57Z"
+  },
+  "Template:Jmyth infobox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:03Z"
   },
   "Template:Jmyth navbox long": {
     "bytes": 15651,
@@ -315,6 +2839,21 @@
     "title_imported": "Template:Jmyth navbox long",
     "ts": "2026-05-04T11:22:25Z"
   },
+  "Template:Justcurious": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:01Z"
+  },
+  "Template:Keypress": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:06Z"
+  },
+  "Template:Kofun in Japan": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:06Z"
+  },
   "Template:Kofun navbar": {
     "bytes": 133124,
     "ns": 10,
@@ -323,10 +2862,101 @@
     "title_imported": "Template:Kofun navbar",
     "ts": "2026-05-03T10:30:30Z"
   },
+  "Template:Later": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:04Z"
+  },
+  "Template:Lc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:06Z"
+  },
+  "Template:Lcs": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:25Z"
+  },
+  "Template:Lenny": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:09Z"
+  },
+  "Template:Likely": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:12Z"
+  },
+  "Template:Link target": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:08Z"
+  },
+  "Template:List of Shinto shrines in Ibaraki Prefecture": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:15Z"
+  },
   "Template:List of coordinates": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T11:01:05Z"
+  },
+  "Template:List of shrines in Ibaraki Prefecture": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:33Z"
+  },
+  "Template:List redirects/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:51Z"
+  },
+  "Template:Lit": {
+    "bytes": 9641,
+    "ns": 10,
+    "revisions": 10,
+    "status": "ok",
+    "title_imported": "Template:Lit",
+    "ts": "2026-05-06T11:25:34Z"
+  },
+  "Template:Lit.": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:10Z"
+  },
+  "Template:Lmonth": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:09Z"
+  },
+  "Template:Lorem": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:14Z"
+  },
+  "Template:Lt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:48Z"
+  },
+  "Template:Lts": {
+    "bytes": 10834,
+    "ns": 10,
+    "revisions": 11,
+    "status": "ok",
+    "title_imported": "Template:Lts",
+    "ts": "2026-05-06T11:25:37Z"
+  },
+  "Template:Ltsmeta": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:17Z"
+  },
+  "Template:Main article": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:11Z"
   },
   "Template:Maplink2": {
     "bytes": 13815,
@@ -336,6 +2966,49 @@
     "title_imported": "Template:Maplink2",
     "ts": "2026-05-03T10:30:39Z"
   },
+  "Template:Marked": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:14Z"
+  },
+  "Template:Maybe-i": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:17Z"
+  },
+  "Template:Maybe-t": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:20Z"
+  },
+  "Template:Mbox templates (small)": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:54Z"
+  },
+  "Template:Megaphoneduck": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:22Z"
+  },
+  "Template:Merge done": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:25Z"
+  },
+  "Template:Mfl": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:06Z"
+  },
+  "Template:Middot": {
+    "bytes": 11256,
+    "ns": 10,
+    "revisions": 11,
+    "status": "ok",
+    "title_imported": "Template:Middot",
+    "ts": "2026-05-06T11:25:41Z"
+  },
   "Template:Ml": {
     "bytes": 23149,
     "ns": 10,
@@ -343,6 +3016,11 @@
     "status": "ok",
     "title_imported": "Template:Ml",
     "ts": "2026-05-05T11:00:19Z"
+  },
+  "Template:Ml-lua": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:25Z"
   },
   "Template:Mlx": {
     "bytes": 14594,
@@ -360,6 +3038,64 @@
     "title_imported": "Template:Module rating",
     "ts": "2026-05-03T10:31:07Z"
   },
+  "Template:More": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:14Z"
+  },
+  "Template:More footnotes": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:20Z"
+  },
+  "Template:MoreInfo": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:28Z"
+  },
+  "Template:Moved to commons": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:30Z"
+  },
+  "Template:Msg": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:19Z"
+  },
+  "Template:Mwl": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:28Z"
+  },
+  "Template:Myprefs": {
+    "bytes": 20690,
+    "ns": 10,
+    "revisions": 10,
+    "status": "ok",
+    "title_imported": "Template:Myprefs",
+    "ts": "2026-05-06T11:24:20Z"
+  },
+  "Template:N&": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:09Z"
+  },
+  "Template:N/A icon": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:33Z"
+  },
+  "Template:N2O": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:22Z"
+  },
+  "Template:N2O4": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:25Z"
+  },
   "Template:NDLDC": {
     "bytes": 30177,
     "ns": 10,
@@ -367,6 +3103,56 @@
     "status": "ok",
     "title_imported": "Template:NDLDC",
     "ts": "2026-05-03T10:31:46Z"
+  },
+  "Template:NDLJP": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:17Z"
+  },
+  "Template:NH3": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:27Z"
+  },
+  "Template:NOx": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:30Z"
+  },
+  "Template:Namespace category": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:17Z"
+  },
+  "Template:Nan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:24:38Z"
+  },
+  "Template:National Cultural Properties Database": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:12Z"
+  },
+  "Template:National Historic site Database": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:35Z"
+  },
+  "Template:National designation1 Database": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:33Z"
+  },
+  "Template:Nationally designated cultural properties database": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:36Z"
+  },
+  "Template:Navbox lists": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:38Z"
   },
   "Template:Navseasoncats": {
     "bytes": 18346,
@@ -381,6 +3167,56 @@
     "status": "skip",
     "ts": "2026-05-03T10:31:33Z"
   },
+  "Template:Nayc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:15Z"
+  },
+  "Template:Nayg": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:17Z"
+  },
+  "Template:Nbhyph": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:19Z"
+  },
+  "Template:Nbsp": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:17Z"
+  },
+  "Template:Nc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:36Z"
+  },
+  "Template:Ndash": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:41Z"
+  },
+  "Template:NeedsDiscussion": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:39Z"
+  },
+  "Template:NewBug": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:41Z"
+  },
+  "Template:NewProposal": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:44Z"
+  },
+  "Template:Nihongo4": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:20Z"
+  },
   "Template:Ninety-Nine Ōji": {
     "bytes": 8120,
     "ns": 10,
@@ -388,6 +3224,101 @@
     "status": "ok",
     "title_imported": "Template:Ninety-Nine Ōji",
     "ts": "2026-05-05T10:59:10Z"
+  },
+  "Template:Nmonth": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:23Z"
+  },
+  "Template:No action": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:47Z"
+  },
+  "Template:No documentation": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:09Z"
+  },
+  "Template:No problem": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:49Z"
+  },
+  "Template:No tags": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:52Z"
+  },
+  "Template:Nobr": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:20Z"
+  },
+  "Template:Nocomment": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:55Z"
+  },
+  "Template:Nojoy": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:38:58Z"
+  },
+  "Template:Nom": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:44Z"
+  },
+  "Template:Noredirect": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:23Z"
+  },
+  "Template:Nosleepers": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:00Z"
+  },
+  "Template:Nosubst": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:05Z"
+  },
+  "Template:Not done empty request": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:08Z"
+  },
+  "Template:Not done for now": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:11Z"
+  },
+  "Template:Not done not likely": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:14Z"
+  },
+  "Template:Not done unclear": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:17Z"
+  },
+  "Template:Not done-t": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:06Z"
+  },
+  "Template:Not possible": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:19Z"
+  },
+  "Template:Not sure2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:22Z"
   },
   "Template:Not to be confused with": {
     "bytes": 8171,
@@ -397,6 +3328,16 @@
     "title_imported": "Template:Not to be confused with",
     "ts": "2026-05-03T10:30:46Z"
   },
+  "Template:NotBug": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:03Z"
+  },
+  "Template:Notabug": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:25Z"
+  },
   "Template:Notelist2": {
     "bytes": 7898,
     "ns": 10,
@@ -404,6 +3345,46 @@
     "status": "ok",
     "title_imported": "Template:Notelist2",
     "ts": "2026-05-05T11:00:45Z"
+  },
+  "Template:Notes Help": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:44Z"
+  },
+  "Template:Notfixed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:28Z"
+  },
+  "Template:Ns:Wikipedia": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:26Z"
+  },
+  "Template:OSM location map": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:51Z"
+  },
+  "Template:Occupation by nationality and century category header/outercore": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:28Z"
+  },
+  "Template:Occupation by nationality and century category header/seealso": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:47Z"
+  },
+  "Template:Off-topic talk": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:30Z"
+  },
+  "Template:Officeholder table end": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:50Z"
   },
   "Template:Official": {
     "bytes": 7951,
@@ -413,6 +3394,41 @@
     "title_imported": "Template:Official",
     "ts": "2026-05-05T10:59:13Z"
   },
+  "Template:Official blog": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:52Z"
+  },
+  "Template:Old move": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:56:55Z"
+  },
+  "Template:On hold": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:36Z"
+  },
+  "Template:OnHoldUntil": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:33Z"
+  },
+  "Template:Opblocked": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:38Z"
+  },
+  "Template:Open Access": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:20Z"
+  },
+  "Template:Orz": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:41Z"
+  },
   "Template:Otheruses": {
     "bytes": 7885,
     "ns": 10,
@@ -420,6 +3436,106 @@
     "status": "ok",
     "title_imported": "Template:Otheruses",
     "ts": "2026-05-03T10:31:18Z"
+  },
+  "Template:PImplemented": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:44Z"
+  },
+  "Template:Page number": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:56:58Z"
+  },
+  "Template:Partly done": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:47Z"
+  },
+  "Template:Pass": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:49Z"
+  },
+  "Template:Passed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:52Z"
+  },
+  "Template:Pb": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:23Z"
+  },
+  "Template:Pblock": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:55Z"
+  },
+  "Template:Peanut": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:39:57Z"
+  },
+  "Template:PendingRequest": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:00Z"
+  },
+  "Template:People by nationality and century category header/core": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:31Z"
+  },
+  "Template:Pf": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:08Z"
+  },
+  "Template:Phab": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:37Z"
+  },
+  "Template:Ping": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:34Z"
+  },
+  "Template:Pixiedust": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:03Z"
+  },
+  "Template:Poemquote": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:57:01Z"
+  },
+  "Template:Portalbar": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:57:04Z"
+  },
+  "Template:Possible": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:06Z"
+  },
+  "Template:Possibly": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:08Z"
+  },
+  "Template:Possilikely": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:11Z"
+  },
+  "Template:Posted": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:14Z"
   },
   "Template:Pp": {
     "bytes": 28207,
@@ -429,6 +3545,81 @@
     "title_imported": "Template:Pp",
     "ts": "2026-05-05T10:59:51Z"
   },
+  "Template:Pp-move-indef": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:23Z"
+  },
+  "Template:Pp-protected": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:20Z"
+  },
+  "Template:Pp-semi": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:27Z"
+  },
+  "Template:Pref-stub-Kyoto Prefecture": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:57:07Z"
+  },
+  "Template:Pref-stub-Nagano Prefecture": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:37Z"
+  },
+  "Template:Pref-stub-京都府": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:10Z"
+  },
+  "Template:Prefecture stub": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:12Z"
+  },
+  "Template:Prohib": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:16Z"
+  },
+  "Template:Property": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:30Z"
+  },
+  "Template:ProposalOnHold": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:19Z"
+  },
+  "Template:ProposalOutOfScope": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:22Z"
+  },
+  "Template:Proxyip4": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:22Z"
+  },
+  "Template:Psblock": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:25Z"
+  },
+  "Template:Pulled": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:27Z"
+  },
+  "Template:Pval": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:54Z"
+  },
   "Template:Q": {
     "bytes": 38993,
     "ns": 10,
@@ -437,6 +3628,26 @@
     "title_imported": "Template:Q",
     "ts": "2026-05-03T10:30:18Z"
   },
+  "Template:Qmark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:25Z"
+  },
+  "Template:Qref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:57:15Z"
+  },
+  "Template:Question": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:30Z"
+  },
+  "Template:Question mark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:33Z"
+  },
   "Template:Quotation": {
     "bytes": 21500,
     "ns": 10,
@@ -444,6 +3655,61 @@
     "status": "ok",
     "title_imported": "Template:Quotation",
     "ts": "2026-05-04T11:21:10Z"
+  },
+  "Template:Quote/doc/boilerplate": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:18Z"
+  },
+  "Template:RM created": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:36Z"
+  },
+  "Template:Rangevandal": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:27Z"
+  },
+  "Template:Rblock": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:38Z"
+  },
+  "Template:Read": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:41Z"
+  },
+  "Template:Received": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:44Z"
+  },
+  "Template:Redflag": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:46Z"
+  },
+  "Template:Redirect belongs to category": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:40Z"
+  },
+  "Template:Redundant symbol": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:49Z"
+  },
+  "Template:Ref improve": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:42Z"
+  },
+  "Template:References": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:26Z"
   },
   "Template:Referencesの明記": {
     "bytes": 265903,
@@ -461,6 +3727,101 @@
     "title_imported": "Template:Refimprove",
     "ts": "2026-05-05T10:58:57Z"
   },
+  "Template:Regex": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:21Z"
+  },
+  "Template:Registration required": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:23Z"
+  },
+  "Template:Rel": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:26Z"
+  },
+  "Template:Relisted": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:52Z"
+  },
+  "Template:Remark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:54Z"
+  },
+  "Template:Remind": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:40:57Z"
+  },
+  "Template:Removed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:00Z"
+  },
+  "Template:Renamer note": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:03Z"
+  },
+  "Template:Replaced": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:05Z"
+  },
+  "Template:Resolved mark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:11Z"
+  },
+  "Template:Resolved1": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:08Z"
+  },
+  "Template:Responded": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:13Z"
+  },
+  "Template:Reverted": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:16Z"
+  },
+  "Template:Reviewing": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:19Z"
+  },
+  "Template:Reviewing request": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:22Z"
+  },
+  "Template:Revoked": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:24Z"
+  },
+  "Template:Rh": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:24:41Z"
+  },
+  "Template:Rh2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:25:47Z"
+  },
+  "Template:Rimshot": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:27Z"
+  },
   "Template:Rp": {
     "bytes": 15831,
     "ns": 10,
@@ -469,10 +3830,205 @@
     "title_imported": "Template:Rp",
     "ts": "2026-05-04T11:21:03Z"
   },
+  "Template:SHORTDESC:": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:29Z"
+  },
+  "Template:SHORTDESC:Ancient Japanese tomb": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:26Z"
+  },
+  "Template:SHORTDESC:Archaeological site in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:29Z"
+  },
+  "Template:SHORTDESC:Buddhist temple in Nara Prefecture, Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:32Z"
+  },
+  "Template:SHORTDESC:Burial site in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:34Z"
+  },
+  "Template:SHORTDESC:Day of the week": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:38Z"
+  },
+  "Template:SHORTDESC:God in Japanese mythology": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:37Z"
+  },
+  "Template:SHORTDESC:Japanese clan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:41Z"
+  },
+  "Template:SHORTDESC:Japanese deity": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:33Z"
+  },
+  "Template:SHORTDESC:Japanese festival": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:31Z"
+  },
+  "Template:SHORTDESC:Japanese goddess": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:34Z"
+  },
+  "Template:SHORTDESC:Japanese government agency": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:40Z"
+  },
+  "Template:SHORTDESC:Japanese noble family": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:45Z"
+  },
+  "Template:SHORTDESC:Kofun Kofun in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:22Z"
+  },
+  "Template:SHORTDESC:Kofun in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:44Z"
+  },
+  "Template:SHORTDESC:Kofun period Kofun": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:42Z"
+  },
+  "Template:SHORTDESC:Kofun period Kofun in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:24:26Z"
+  },
+  "Template:SHORTDESC:Kofun period keyhole-shaped Kofun in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:40Z"
+  },
+  "Template:SHORTDESC:Shinto Shrine": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:45Z"
+  },
+  "Template:SHORTDESC:Shinto kami": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:48Z"
+  },
+  "Template:SHORTDESC:Shinto shrine": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:29Z"
+  },
+  "Template:SHORTDESC:Shinto shrine in Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:30Z"
+  },
+  "Template:SHORTDESC:Shinto shrine in Kyoto, Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:37Z"
+  },
+  "Template:SHORTDESC:Shinto shrine in Nara Prefecture, Japan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:39Z"
+  },
   "Template:SHORTDESC:Topics referred to by the same term": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-03T10:30:55Z"
+  },
+  "Template:SHORTDESC:Wikimedia help page": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:45:46Z"
+  },
+  "Template:SHORTDESC:Wikipedia help article": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:32Z"
+  },
+  "Template:SHORTDESC:Wikipedia information page": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:26Z"
+  },
+  "Template:SO2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:51Z"
+  },
+  "Template:SULcheck": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:35Z"
+  },
+  "Template:Sblock": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:38Z"
+  },
+  "Template:Sc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:57:53Z"
+  },
+  "Template:Sc2": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:42Z"
+  },
+  "Template:Scissors": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:41Z"
+  },
+  "Template:Script/Early Cyrillic": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:51:45Z"
+  },
+  "Template:Script/Hebrew": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:56Z"
+  },
+  "Template:Script/styles syriac.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:57:59Z"
+  },
+  "Template:Section stub": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:48Z"
+  },
+  "Template:Section-stub": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:41:43Z"
+  },
+  "Template:Sectionlink": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:48Z"
   },
   "Template:See": {
     "bytes": 210075,
@@ -482,6 +4038,46 @@
     "title_imported": "Template:See",
     "ts": "2026-05-05T11:00:26Z"
   },
+  "Template:Seealso": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:28Z"
+  },
+  "Template:Self-trout": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:46Z"
+  },
+  "Template:Self-whale": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:49Z"
+  },
+  "Template:Selfref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:25Z"
+  },
+  "Template:Semi-done": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:52Z"
+  },
+  "Template:Sent": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:54Z"
+  },
+  "Template:Seven Generations of Kami": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:02Z"
+  },
+  "Template:Sfnref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:51Z"
+  },
   "Template:Shinto Horizontal": {
     "bytes": 6694,
     "ns": 10,
@@ -489,6 +4085,36 @@
     "status": "ok",
     "title_imported": "Template:Shinto Horizontal",
     "ts": "2026-05-03T10:31:21Z"
+  },
+  "Template:Shinto Navbox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:08Z"
+  },
+  "Template:Shinto Shrine": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:08Z"
+  },
+  "Template:Shinto footer": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:43Z"
+  },
+  "Template:Shinto nav": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:31Z"
+  },
+  "Template:Shinto navigation": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:12Z"
+  },
+  "Template:Shinto portal": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:58:10Z"
   },
   "Template:Shinto shrine": {
     "bytes": 11217,
@@ -498,6 +4124,36 @@
     "title_imported": "Template:Shinto shrine",
     "ts": "2026-05-03T10:31:24Z"
   },
+  "Template:Shinto side": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:54Z"
+  },
+  "Template:Shinto temples": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:53Z"
+  },
+  "Template:Shinto-Buddhism": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:05Z"
+  },
+  "Template:Shinto-navbox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:28Z"
+  },
+  "Template:Shinto/Shrine Historical Materials Collection": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:51Z"
+  },
+  "Template:Shintoism": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:56Z"
+  },
   "Template:Shrine": {
     "bytes": 6780,
     "ns": 10,
@@ -505,6 +4161,21 @@
     "status": "ok",
     "title_imported": "Template:Shrine",
     "ts": "2026-05-03T10:30:49Z"
+  },
+  "Template:Shrug": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:41:57Z"
+  },
+  "Template:Singapore legislation/index": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:58:13Z"
+  },
+  "Template:Single source": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:51:59Z"
   },
   "Template:Slink": {
     "bytes": 11536,
@@ -522,6 +4193,11 @@
     "title_imported": "Template:Smaller",
     "ts": "2026-05-04T11:24:07Z"
   },
+  "Template:Smallrejected": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:00Z"
+  },
   "Template:Snd": {
     "bytes": 22175,
     "ns": 10,
@@ -530,15 +4206,198 @@
     "title_imported": "Template:Snd",
     "ts": "2026-05-04T11:22:49Z"
   },
+  "Template:Snow": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:02Z"
+  },
+  "Template:Socks tagged": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:05Z"
+  },
+  "Template:Sorry": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:08Z"
+  },
+  "Template:Source Citation": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:42:11Z"
+  },
+  "Template:Source citation": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:37Z"
+  },
+  "Template:Source citation needed": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:47:54Z"
+  },
   "Template:Sourcecheck": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T10:59:22Z"
   },
+  "Template:Spaced ndash": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:16Z"
+  },
+  "Template:Special characters": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:57Z"
+  },
+  "Template:Spnd": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:19Z"
+  },
+  "Template:Sronly": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:22Z"
+  },
+  "Template:Stale GAN": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:16Z"
+  },
+  "Template:Stale-small": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:14Z"
+  },
+  "Template:Started": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:19Z"
+  },
+  "Template:Startflatlist": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:24Z"
+  },
+  "Template:Str ≥ len": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:40Z"
+  },
+  "Template:Stupas by number": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:02Z"
+  },
+  "Template:Subst only": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:27Z"
+  },
+  "Template:Suggestion": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:22Z"
+  },
+  "Template:Sumiyoshi Faith": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:34Z"
+  },
+  "Template:Sumiyoshi and Watatsumi Faiths": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:30Z"
+  },
+  "Template:Sure": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:24Z"
+  },
+  "Template:TOCright": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:37Z"
+  },
+  "Template:Table flip": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:27Z"
+  },
+  "Template:Taitō, Tokyo": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:33Z"
+  },
+  "Template:Talk header": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:36Z"
+  },
   "Template:Talk header/styles.css": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-03T10:30:21Z"
+  },
+  "Template:Talk quote block/styles.css": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:58:38Z"
+  },
+  "Template:Talkheader": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:15Z"
+  },
+  "Template:Talkref": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:49Z"
+  },
+  "Template:Tallyho": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:30Z"
+  },
+  "Template:Tbullet": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:58:41Z"
+  },
+  "Template:Tc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:05Z"
+  },
+  "Template:Template": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:36Z"
+  },
+  "Template:Template data header": {
+    "bytes": 7346,
+    "ns": 10,
+    "revisions": 7,
+    "status": "ok",
+    "title_imported": "Template:Template data header",
+    "ts": "2026-05-06T11:25:50Z"
+  },
+  "Template:Template doc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:30:30Z"
+  },
+  "Template:Template redirects": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:47:57Z"
+  },
+  "Template:Template shortcuts": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:40Z"
   },
   "Template:Template-inline": {
     "reason": "source has no revisions (page missing on shintowiki)",
@@ -552,6 +4411,76 @@
     "status": "ok",
     "title_imported": "Template:TemplateDataHeader",
     "ts": "2026-05-03T10:31:56Z"
+  },
+  "Template:TemplateStyles": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:39Z"
+  },
+  "Template:Templatedata header": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:52Z"
+  },
+  "Template:Th/abp": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:44Z"
+  },
+  "Template:Thank": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:33Z"
+  },
+  "Template:Thank you very much": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:35Z"
+  },
+  "Template:Thumbs down": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:38Z"
+  },
+  "Template:Thumbs up": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:41Z"
+  },
+  "Template:Ti": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:57Z"
+  },
+  "Template:Tic": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:00Z"
+  },
+  "Template:Tj": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:00Z"
+  },
+  "Template:Tji": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:18Z"
+  },
+  "Template:Tjp": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:47Z"
+  },
+  "Template:Tl-nav": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:02Z"
+  },
+  "Template:Tl1": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:08Z"
   },
   "Template:Tl2": {
     "bytes": 14359,
@@ -569,6 +4498,27 @@
     "title_imported": "Template:Tla",
     "ts": "2026-05-05T11:00:49Z"
   },
+  "Template:Tlb": {
+    "bytes": 24931,
+    "ns": 10,
+    "revisions": 27,
+    "status": "ok",
+    "title_imported": "Template:Tlb",
+    "ts": "2026-05-06T11:25:03Z"
+  },
+  "Template:Tlbare": {
+    "bytes": 18040,
+    "ns": 10,
+    "revisions": 20,
+    "status": "ok",
+    "title_imported": "Template:Tlbare",
+    "ts": "2026-05-06T11:24:44Z"
+  },
+  "Template:Tlcw": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:10Z"
+  },
   "Template:Tld": {
     "bytes": 24727,
     "ns": 10,
@@ -585,6 +4535,26 @@
     "title_imported": "Template:Tlg",
     "ts": "2026-05-05T10:59:01Z"
   },
+  "Template:Tlg/doc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:32Z"
+  },
+  "Template:Tlinv": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:50Z"
+  },
+  "Template:Tln": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:31Z"
+  },
+  "Template:Tlnull": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:53Z"
+  },
   "Template:Tlp": {
     "bytes": 15431,
     "ns": 10,
@@ -592,6 +4562,74 @@
     "status": "ok",
     "title_imported": "Template:Tlp",
     "ts": "2026-05-04T11:22:31Z"
+  },
+  "Template:Tlr": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:31:35Z"
+  },
+  "Template:Tls": {
+    "bytes": 10494,
+    "ns": 10,
+    "revisions": 10,
+    "status": "ok",
+    "title_imported": "Template:Tls",
+    "ts": "2026-05-06T11:25:53Z"
+  },
+  "Template:Tlsc": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:23Z"
+  },
+  "Template:Tlsf": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:20Z"
+  },
+  "Template:Tlsp": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:13Z"
+  },
+  "Template:Tlsu": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:23Z"
+  },
+  "Template:Tlt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:11Z"
+  },
+  "Template:Tltss": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:26Z"
+  },
+  "Template:Tlu": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:26:57Z"
+  },
+  "Template:Tlxb": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:43Z"
+  },
+  "Template:Tlxi": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:26Z"
+  },
+  "Template:Tlxs": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:25:56Z"
+  },
+  "Template:Tlxu": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:45Z"
   },
   "Template:Tn": {
     "bytes": 10312,
@@ -601,6 +4639,41 @@
     "title_imported": "Template:Tn",
     "ts": "2026-05-04T11:23:20Z"
   },
+  "Template:ToDo": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:44Z"
+  },
+  "Template:Tobedone": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:46Z"
+  },
+  "Template:Tokugawa Organization Chart": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:56Z"
+  },
+  "Template:Tokugawa chronology (Japan)": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:58:58Z"
+  },
+  "Template:Tokugawa dynasty (Japan)": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:01Z"
+  },
+  "Template:Tools": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:05Z"
+  },
+  "Template:Tq": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:43Z"
+  },
   "Template:Transl": {
     "bytes": 18715,
     "ns": 10,
@@ -608,6 +4681,11 @@
     "status": "ok",
     "title_imported": "Template:Transl",
     "ts": "2026-05-05T11:00:30Z"
+  },
+  "Template:Tree list/branching": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:04Z"
   },
   "Template:Tsh": {
     "bytes": 20317,
@@ -617,6 +4695,31 @@
     "title_imported": "Template:Tsh",
     "ts": "2026-05-03T10:31:31Z"
   },
+  "Template:Tt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:25:59Z"
+  },
+  "Template:Ttl": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:48Z"
+  },
+  "Template:Twlh": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:28:51Z"
+  },
+  "Template:Twomanrule": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:49Z"
+  },
+  "Template:Txl": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:45Z"
+  },
   "Template:Ubl": {
     "bytes": 14442,
     "ns": 10,
@@ -624,6 +4727,161 @@
     "status": "ok",
     "title_imported": "Template:Ubl",
     "ts": "2026-05-05T11:00:39Z"
+  },
+  "Template:Ublist": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:32:42Z"
+  },
+  "Template:Unapproved": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:52Z"
+  },
+  "Template:UnderReview": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:54Z"
+  },
+  "Template:Undone": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:42:57Z"
+  },
+  "Template:Unlikely": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:00Z"
+  },
+  "Template:Unnecessary": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:03Z"
+  },
+  "Template:Unprod": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:05Z"
+  },
+  "Template:Unreferenced clearly": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:07Z"
+  },
+  "Template:Unreferenceded": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:16Z"
+  },
+  "Template:Unrelated": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:08Z"
+  },
+  "Template:Unsigned-IPuser": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:19Z"
+  },
+  "Template:Unsigned2": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:22Z"
+  },
+  "Template:Uploaded": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:11Z"
+  },
+  "Template:Urgent": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:13Z"
+  },
+  "Template:Url": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:29Z"
+  },
+  "Template:User": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:24Z"
+  },
+  "Template:User Arizona": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:27Z"
+  },
+  "Template:User en-3": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:30Z"
+  },
+  "Template:User-blocked": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:16Z"
+  },
+  "Template:User-multi/link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:59Z"
+  },
+  "Template:User-multi/template": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:10Z"
+  },
+  "Template:Usergc": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:33Z"
+  },
+  "Template:Userv": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:36Z"
+  },
+  "Template:Uses Infobox person": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:33Z"
+  },
+  "Template:Uses Lua": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:35Z"
+  },
+  "Template:V": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:48Z"
+  },
+  "Template:Value color": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:02Z"
+  },
+  "Template:Vanchor": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:43:19Z"
+  },
+  "Template:Verification needed": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:10Z"
+  },
+  "Template:Verified": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:22Z"
+  },
+  "Template:WPcrystalball": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:24Z"
   },
   "Template:Warnsign": {
     "bytes": 15133,
@@ -633,6 +4891,51 @@
     "title_imported": "Template:Warnsign",
     "ts": "2026-05-05T11:00:53Z"
   },
+  "Template:Watatsumi Faith": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:13Z"
+  },
+  "Template:Wde": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:16Z"
+  },
+  "Template:When on talk page": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:19Z"
+  },
+  "Template:Wiki Portal Link": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:08Z"
+  },
+  "Template:Wiki coordinates": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:30:02Z"
+  },
+  "Template:Wiki markup": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:55Z"
+  },
+  "Template:WikiThanks": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:27Z"
+  },
+  "Template:Wikibooks-inline": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:21Z"
+  },
+  "Template:Wikidata search link": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:24Z"
+  },
   "Template:Wikipedia how to": {
     "bytes": 8810,
     "ns": 10,
@@ -641,10 +4944,128 @@
     "title_imported": "Template:Wikipedia how to",
     "ts": "2026-05-05T10:59:26Z"
   },
+  "Template:Wikiquote-inline": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:27Z"
+  },
+  "Template:Wikiquotecat": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:43:30Z"
+  },
+  "Template:Wikivoyage-inline": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:11Z"
+  },
+  "Template:Wikt": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:30Z"
+  },
+  "Template:Withdraw": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:33Z"
+  },
+  "Template:Withdrawn": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:35Z"
+  },
+  "Template:Won't fix": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:38Z"
+  },
+  "Template:Working": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:41Z"
+  },
+  "Template:Works for me": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:44Z"
+  },
+  "Template:X mark": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:46Z"
+  },
+  "Template:X mark-n": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:37Z"
+  },
+  "Template:Xed box": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:40Z"
+  },
+  "Template:Y&": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:43Z"
+  },
+  "Template:Yan": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:24:47Z"
+  },
+  "Template:Yeac": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:45Z"
+  },
+  "Template:Yeag": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:48Z"
+  },
+  "Template:Year by category": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:32:45Z"
+  },
+  "Template:Year by country category": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:41Z"
+  },
   "Template:Year category header/core": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-05T11:00:02Z"
+  },
+  "Template:Year in transport category header": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:32Z"
+  },
+  "Template:YearInCountryPortalBox": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:52:38Z"
+  },
+  "Template:Yes/no": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:43:49Z"
+  },
+  "Template:YesNo": {
+    "bytes": 12099,
+    "ns": 10,
+    "revisions": 13,
+    "status": "ok",
+    "title_imported": "Template:YesNo",
+    "ts": "2026-05-06T11:24:50Z"
+  },
+  "Template:You're welcome": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:52Z"
   },
   "Template:Zh": {
     "bytes": 8156,
@@ -654,6 +5075,16 @@
     "title_imported": "Template:Zh",
     "ts": "2026-05-05T11:00:33Z"
   },
+  "Template:±.": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:35Z"
+  },
+  "Template:Указание места в библиоссылке": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:38Z"
+  },
   "Template:ウィキ座標2段度分秒": {
     "bytes": 7810,
     "ns": 10,
@@ -661,6 +5092,21 @@
     "status": "ok",
     "title_imported": "Template:ウィキ座標2段度分秒",
     "ts": "2026-05-04T11:23:36Z"
+  },
+  "Template:オープンアクセス": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:13Z"
+  },
+  "Template:コメント": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:26:45Z"
+  },
+  "Template:リンク切れ": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:51Z"
   },
   "Template:出典の明記": {
     "bytes": 8122,
@@ -670,10 +5116,50 @@
     "title_imported": "Template:出典の明記",
     "ts": "2026-05-04T11:22:28Z"
   },
+  "Template:出典検索": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:55Z"
+  },
   "Template:削除依頼ログ": {
     "reason": "source has no revisions (page missing on shintowiki)",
     "status": "skip",
     "ts": "2026-05-04T11:22:37Z"
+  },
+  "Template:反対": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:16Z"
+  },
+  "Template:国cultural property等データベース": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:44:51Z"
+  },
+  "Template:国指定文化財等データベース": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:27:00Z"
+  },
+  "Template:報告": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:27:14Z"
+  },
+  "Template:提案": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:43:57Z"
+  },
+  "Template:日本の古墳": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:29:32Z"
+  },
+  "Template:日本の寺院": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:45:58Z"
   },
   "Template:日本の氏族": {
     "bytes": 11809,
@@ -682,6 +5168,31 @@
     "status": "ok",
     "title_imported": "Template:日本の氏族",
     "ts": "2026-05-04T11:22:52Z"
+  },
+  "Template:旧字体": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:52:44Z"
+  },
+  "Template:月 (暦)": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:59:41Z"
+  },
+  "Template:済": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:29:35Z"
+  },
+  "Template:済み": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:43Z"
+  },
+  "Template:画像提供依頼": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:46Z"
   },
   "Template:神社": {
     "bytes": 6780,
@@ -698,5 +5209,55 @@
     "status": "ok",
     "title_imported": "Template:神道 横",
     "ts": "2026-05-03T10:30:42Z"
+  },
+  "Template:神道・神社史料集成": {
+    "reason": "api: badtoken - Invalid CSRF token.",
+    "status": "error",
+    "ts": "2026-05-06T11:48:19Z"
+  },
+  "Template:終了": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:49Z"
+  },
+  "Template:脚注の不足": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:48:22Z"
+  },
+  "Template:要出典": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:28:03Z"
+  },
+  "Template:要出典範囲": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:46:00Z"
+  },
+  "Template:要検証": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:52Z"
+  },
+  "Template:解決済み": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:59:54Z"
+  },
+  "Template:賛成": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:54Z"
+  },
+  "Template:返信": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:44:54Z"
+  },
+  "Template:選考審査の記録": {
+    "reason": "source has no revisions (page missing on shintowiki)",
+    "status": "skip",
+    "ts": "2026-05-06T11:31:56Z"
   }
 }
