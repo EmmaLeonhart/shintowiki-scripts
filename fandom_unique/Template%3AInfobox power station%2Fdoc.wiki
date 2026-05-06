@@ -1,0 +1,1646 @@
+{{Documentation subpage}}
+{{High-use}}
+
+{{Lua|Module:Check for unknown parameters|Module:InfoboxImage|Module:String|Module:String2|Module:WikidataIB|Module:Infobox mapframe|Module:Infobox power station}}
+{{TOC right}}
+Use this infobox for all types of [[:en:power station|power station]]s. For [[:en:Hydroelectricity#Generating methods|hydroelectric]] power stations involving dams (except tidal facilities), please use {{Tl|Infobox dam}}.
+
+== Usage ==
+=== Wikidata-enabled ===
+Simply add <code><nowiki>{{Infobox power station}}</nowiki></code> to the top of an article belonging to any type of power station, and the data will be automatically included from [[:en:Wikidata|Wikidata]]. If necessary, these values can be overridden by passing local values to the relevant parameters in the article:
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox power station
+| name = [local value]
+}}
+</syntaxhighlight>
+To add data to Wikidata, please see the Parameters section below.
+
+=== Standard usage ===
+==== Full syntax ====
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| child = 
+| embed = 
+| qid = 
+| suppressfields = 
+| fetchwikidata = 
+| onlysourced = 
+| name = 
+| name_official = 
+| image = 
+| image_caption = 
+| image_size = 
+| image_alt = 
+| location_map_caption = 
+| location_map_zoom = 
+| location_map_geomask = 
+| location_map_marker = 
+| country = 
+| location = 
+| coordinates = 
+| status = 
+| construction_began = 
+| commissioned = 
+| decommissioned = 
+| cost = 
+| owner = 
+| operator = 
+| employees = 
+| geo_type = 
+| geo_temp_requirement = 
+| geo_well_count = 
+| geo_well_depth = 
+| geo_water_output = 
+| np_reactors = 
+| np_reactor_type = 
+| np_reactor_supplier = 
+| solar_type = 
+| solar_csp_technology = 
+| solar_collectors = 
+| solar_collectors_area = 
+| solar_site_resource = 
+| solar_tracker = 
+| th_fuel_primary = 
+| th_fuel_secondary = 
+| th_fuel_tertiary = 
+| th_technology = 
+| tide_technology = 
+| tide_tsg_type = 
+| tide_barrage_height = 
+| tide_barrage_length = 
+| tide_barrage_width = 
+| tide_crosses = 
+| tide_channel_speed = 
+| tide_channel_volume = 
+| tide_range = 
+| wave_technology = 
+| wave_water_body = 
+| wave_water_depth = 
+| wave_shore_distance = 
+| wind_farm_type = 
+| wind_site_usage = 
+| wind_offshore_depth = 
+| wind_offshore_distance = 
+| windhub_height = 
+| wind_rotor_diameter = 
+| wind_rated_speed = 
+| ps_header = 
+| ps_site_area = 
+| ps_site_elevation = 
+| ps_chimneys = 
+| ps_cooling_towers = 
+| ps_cooling_source = 
+| ps_feed-in_tariff = 
+| ps_revenue = 
+| ps_combined_cycle = 
+| ps_cogeneration = 
+| ps_trigeneration = 
+| ps_thermal_capacity = 
+| ps_label1 = 
+| ps_data1 = 
+| ps_label2 = 
+| ps_data2 = 
+| ps_label3 = 
+| ps_data3 = 
+| ps_label4 = 
+| ps_data4 = 
+| ps_label5 = 
+| ps_data5 = 
+| ps_iwpp = 
+| ps_iwpp_technology = 
+| ps_iwpp_water_output = 
+| ps_iwpp_water_tariff = 
+| ps_units_operational = 
+| ps_units_manu_model = 
+| ps_units_planned = 
+| ps_units_cancelled = 
+| ps_units_uc = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity = 
+| ps_electrical_cap_fac = 
+| ps_annual_generation = 
+| ps_storage_capacity = 
+| website = 
+| extra = 
+}}
+</syntaxhighlight>
+
+==== Geothermal power stations ====
+{{Infobox power station
+| qid                     = Q693330
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = NesjavellirPowerPlant edit2.jpg
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|64|06|29|N|21|15|23|W|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| geo_type                = {{{geo_type}}}
+| geo_temp_requirement    = {{{geo_temp_requirement}}}
+| geo_well_count          = {{{geo_well_count}}}
+| geo_well_depth          = {{{geo_well_depth}}}
+| geo_water_output        = {{{geo_water_output}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_site_elevation       = {{{ps_site_elevation}}}
+| ps_cooling_towers       = {{{ps_cooling_towers}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+| ps_combined_cycle       = {{{ps_combined_cycle}}}
+| ps_cogeneration         = {{{ps_cogeneration}}}
+| ps_thermal_capacity     = {{{ps_thermal_capacity}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| geo_type                = 
+| geo_temp_requirement    = 
+| geo_well_count          = 
+| geo_well_depth          = 
+| geo_water_output        = 
+
+| ps_site_area            = 
+| ps_site_elevation       = 
+| ps_cooling_towers       = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+| ps_combined_cycle       = 
+| ps_cogeneration         = 
+| ps_thermal_capacity     = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Nuclear power stations ====
+{{Infobox power station
+| qid                     = Q569525
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = Philippsburg2.jpg
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|49|15|09|N|08|26|11|E|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| np_reactors             = {{{np_reactors}}}
+| np_reactor_type         = {{{np_reactor_type}}}
+| np_reactor_supplier     = {{{np_reactor_supplier}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_site_elevation       = {{{ps_site_elevation}}}
+| ps_cooling_towers       = {{{ps_cooling_towers}}}
+| ps_cooling_source       = {{{ps_cooling_source}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+| ps_combined_cycle       = {{{ps_combined_cycle}}}
+| ps_cogeneration         = {{{ps_cogeneration}}}
+| ps_thermal_capacity     = {{{ps_thermal_capacity}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| np_reactors             = 
+| np_reactor_type         = 
+| np_reactor_supplier     = 
+
+| ps_site_area            = 
+| ps_site_elevation       = 
+| ps_cooling_towers       = 
+| ps_cooling_source       = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+| ps_combined_cycle       = 
+| ps_cogeneration         = 
+| ps_thermal_capacity     = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Solar power stations ====
+{{Infobox power station
+| qid                     = Q5184359
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = Crescent Dunes Solar December 2014.JPG
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|38|14|00|N|117|22|00|W|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| solar_type              = {{{solar_type}}}
+| solar_csp_technology    = {{{solar_csp_technology}}}
+| solar_collectors        = {{{solar_collectors}}}
+| solar_collectors_area   = {{{solar_collectors_area}}}
+| solar_site_resource     = {{{solar_site_resource}}}
+| solar_tracker           = {{{solar_tracker}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_site_elevation       = {{{ps_site_elevation}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+| ps_combined_cycle       = {{{ps_combined_cycle}}}
+| ps_cogeneration         = {{{ps_cogeneration}}}
+| ps_thermal_capacity     = {{{ps_thermal_capacity}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| solar_type              = 
+| solar_csp_technology    = 
+| solar_collectors        = 
+| solar_collectors_area   = 
+| solar_site_resource     = 
+| solar_tracker           = 
+
+| ps_site_area            = 
+| ps_site_elevation       = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+| ps_combined_cycle       = 
+| ps_cogeneration         = 
+| ps_thermal_capacity     = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Thermal power stations ====
+{{Infobox power station
+| qid                     = Q584095
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = Taichung Fire Power Plant.jpg
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|24|12|46|N|120|28|52|E|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| th_fuel_primary         = {{{th_fuel_primary}}}
+| th_fuel_secondary       = {{{th_fuel_secondary}}}
+| th_fuel_tertiary        = {{{th_fuel_tertiary}}}
+| th_technology           = {{{th_technology}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_site_elevation       = {{{ps_site_elevation}}}
+| ps_chimneys             = {{{ps_chimneys}}}
+| ps_cooling_towers       = {{{ps_cooling_towers}}}
+| ps_cooling_source       = {{{ps_cooling_source}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+| ps_combined_cycle       = {{{ps_combined_cycle}}}
+| ps_cogeneration         = {{{ps_cogeneration}}}
+| ps_iwpp                 = {{{ps_iwpp}}}
+| ps_iwpp_technology      = {{{ps_iwpp_technology}}}
+| ps_iwpp_water_output    = {{{ps_iwpp_water_output}}}
+| ps_iwpp_water_tariff    = {{{ps_iwpp_water_tariff}}}
+| ps_thermal_capacity     = {{{ps_thermal_capacity}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| th_fuel_primary         = 
+| th_fuel_secondary       = 
+| th_fuel_tertiary        = 
+| th_technology           = 
+
+| ps_site_area            = 
+| ps_site_elevation       = 
+| ps_chimneys             = 
+| ps_cooling_towers       = 
+| ps_cooling_source       = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+| ps_combined_cycle       = 
+| ps_cogeneration         = 
+| ps_iwpp                 = 
+| ps_iwpp_technology      = 
+| ps_iwpp_water_output    = 
+| ps_iwpp_water_tariff    = 
+| ps_thermal_capacity     = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Tidal power stations ====
+{{Infobox power station
+| qid                     = Q1521172
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = Seaflow raised 16 jun 03.jpg
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|54|22|07|N|05|32|46|W|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| tide_technology         = {{{tide_technology}}}
+| tide_tsg_type           = {{{tide_tsg_type}}}
+| tide_barrage_height     = {{{tide_barrage_height}}}
+| tide_barrage_length     = {{{tide_barrage_length}}}
+| tide_barrage_width      = {{{tide_barrage_width}}}
+| tide_crosses            = {{{tide_crosses}}}
+| tide_channel_speed      = {{{tide_channel_speed}}}
+| tide_channel_volume     = {{{tide_channel_volume}}}
+| tide_range              = {{{tide_range}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| tide_technology         = 
+| tide_tsg_type           = 
+| tide_barrage_height     = 
+| tide_barrage_length     = 
+| tide_barrage_width      = 
+| tide_crosses            = 
+| tide_channel_speed      = 
+| tide_channel_volume     = 
+| tide_range              = 
+
+| ps_site_area            = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Wave power stations ====
+{{Infobox power station
+| qid                     = Q3068978
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = Pelamis machine installed at the Agucadoura Wave Park.JPG
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|41|25|57|N|08|50|33|W|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| wave_technology         = {{{wave_technology}}}
+| wave_water_body         = {{{wave_water_body}}}
+| wave_water_depth        = {{{wave_water_depth}}}
+| wave_shore_distance     = {{{wave_shore_distance}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| wave_technology         = 
+| wave_water_body         = 
+| wave_water_depth        = 
+| wave_shore_distance     = 
+
+| ps_site_area            = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==== Wind power stations ====
+{{Infobox power station
+| qid                     = Q265281
+| name                    = {{{name}}}
+| name_official           = {{{name_official}}}
+| image                   = REpower 5 Megawatt Offshore Wind Turbines and Energy Substation (12815633564).jpg
+| image_caption           = {{{image_caption}}}
+| image_alt               = {{{image_alt}}}
+| country                 = {{{country}}}
+| location                = {{{location}}}
+| coordinates             = {{Coord|54|01|00|N|06|36|00|E|type:landmark|display=inline}}
+| status                  = {{{status}}}
+| construction_began      = {{{construction_began}}}
+| commissioned            = {{{commissioned}}}
+| decommissioned          = {{{decommissioned}}}
+| cost                    = {{{cost}}}
+| owner                   = {{{owner}}}
+| operator                = {{{operator}}}
+| employees               = {{{employees}}}
+
+| wind_farm_type          = {{{wind_farm_type}}}
+| wind_site_usage         = {{{wind_site_usage}}}
+| wind_offshore_depth     = {{{wind_offshore_depth}}}
+| wind_offshore_distance = {{{wind_offshore_distance}}}
+| wind_hub_height         = {{{wind_hub_height}}}
+| wind_rotor_diameter     = {{{wind_rotor_diameter}}}
+| wind_rated_speed        = {{{wind_rated_speed}}}
+
+| ps_site_area            = {{{ps_site_area}}}
+| ps_site_elevation       = {{{ps_site_elevation}}}
+| ps_feed-in_tariff       = {{{ps_feed-in_tariff}}}
+| ps_revenue              = {{{ps_revenue}}}
+
+| ps_units_operational    = {{{ps_units_operational}}}
+| ps_units_manu_model     = {{{ps_units_manu_model}}}
+| ps_units_planned        = {{{ps_units_planned}}}
+| ps_units_cancelled      = {{{ps_units_cancelled}}}
+| ps_units_uc             = {{{ps_units_uc}}}
+| ps_units_decommissioned = {{{ps_units_decommissioned}}}
+| ps_electrical_capacity  = {{{ps_electrical_capacity}}}
+| ps_electrical_cap_fac   = {{{ps_electrical_cap_fac}}}
+| ps_annual_generation    = {{{ps_annual_generation}}}
+| ps_storage_capacity     = {{{ps_storage_capacity}}}
+| website                 = {{{website}}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox power station
+| name                    = 
+| name_official           = 
+| image                   = 
+| image_caption           = 
+| country                 = 
+| location                = 
+| coordinates             = 
+| status                  = 
+| construction_began      = 
+| commissioned            = 
+| decommissioned          = 
+| cost                    = 
+| owner                   = 
+| operator                = 
+| employees               = 
+
+| wind_farm_type          = 
+| wind_site_usage         = 
+| wind_offshore_depth     = 
+| wind_offshore_distance  = 
+| wind_hub_height         = 
+| wind_rotor_diameter     = 
+| wind_rated_speed        = 
+
+| ps_site_area            = 
+| ps_site_elevation       = 
+| ps_feed-in_tariff       = 
+| ps_revenue              = 
+
+| ps_units_operational    = 
+| ps_units_manu_model     = 
+| ps_units_planned        = 
+| ps_units_cancelled      = 
+| ps_units_uc             = 
+| ps_units_decommissioned = 
+| ps_electrical_capacity  = 
+| ps_electrical_cap_fac   = 
+| ps_annual_generation    = 
+| ps_storage_capacity     = 
+| website                 = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== Parameters ==
+{| class="wikitable"
+|-
+! align="center" | Parameter !! align="center" | Default value !! align="center" | Description
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Lead section''' (used by all power station types)
+|-
+| '''name''' || <code>label</code> || Name of power station
+|-
+| '''name_official''' || <code>{{Property|P1705}}</code> (<code>{{Property|P17}}</code> must also be filled) || Official name in native language.
+|-
+| '''image''' || <code>{{Property|P18}}</code> || image filename without '''File:''' prefix.
+|-
+| '''image_size''' || <small>N/A</small> || Force image and location map size to a value other than 300px
+|-
+| '''image_caption''' || <code>{{Property|P2096}}</code> || Caption beneath image.
+|-
+| '''image_alt''' || <small>N/A</small> || [[Wikipedia:Manual of Style/Accessibility/Alternative text for images|Alternative text]] for image. Only local parameter supported.
+|-
+| '''location_map_caption''' || <small>N/A</small> || Force a caption below the location map
+|-
+| '''location_map_zoom''' || 5 || Force a different zoom for the location map.
+|-
+| '''location_map_geomask''' || <small>N/A</small> || Add <code>Yes</code> to darken surrounding areas, and zoom out to country-level.
+|-
+| '''location_map_marker''' || <code>industrial</code> || Use a different marker for the location map. See {{tl|infobox mapframe}} for options.
+|-
+| '''coordinates''' || <code>{{Property|P625}}</code> || Geographical coordinates. Use {{tl|Coord}} for local use.
+|-
+| '''country''' || <code>{{Property|P17}}</code> || Country where the facility is located, [[:en:MOS:FLAG|without flag icons]]
+|-
+| '''location''' || <code>{{Property|P276}}</code> || General area the power station is located. Avoid being overly-detailed.
+|-
+| '''status''' || This parameter is based on <code>construction_began</code>, <code>commissioned</code>, and <code>decommissioned</code> parameters (see the 3 next rows). <br>{{*}} If none of the above parameters are set, the status parameter will be suppressed. <br>{{*}} If <code>construction_began</code> is not empty, but <code>commissioned</code> and <code>decommissioned</code> is empty: ''Under construction'' <br>{{*}} If <code>commissioned</code> is not empty, but <code>decommissioned</code> is empty: ''Operational'' <br>{{*}} If <code>decommissioned</code> not empty: ''Decommissioned'' <br>{{*}} To set the status to ''Cancelled'', set {{Property|P5817}} as {{Q|Q30108381}}. <br>{{*}} To set the status to ''Proposed'', set {{Property|P5817}} as {{Q|Q811683}}. || Current status. Enter one of the following auto-expanding codes:<br><code>P</code>=Proposed,<br><code>UC</code>=Under construction,<br><code>O</code>=Operational,<br><code>M</code>=Mothballed,<br><code>B</code>=Being decommissioned,<br><code>D</code>=Decommissioned,<br><code>C</code>=Project cancelled.
+|-
+| '''construction_began''' || <code>{{Property|P793}}</code> with value <code>{{Q|Q385378}}</code> and qualifiers:<br><code>{{Property|P580}}</code> (and optionally, <code>{{Property|P582}}</code>) || Date construction of the first unit began. Use {{tl|Start date}}.
+|-
+| '''commissioned''' || <code>{{Property|P729}}</code> || Date first unit [[:en:Project commissioning|commissioned]]. Use {{tl|Start date}}.
+|-
+| '''decommissioned''' || <code>{{Property|P730}}</code> || Date last unit decommissioned. Use {{tl|End date}}.
+|-
+| '''cost''' || <code>{{Property|P2130}}</code> with qualifier <code>{{Property|P585}}</code>|| Total cost of development. For non-USD values, consider using: <code><nowiki>{{</nowiki>[[:en:Template:To USD|To USD]]<nowiki>|$$$$|ABC|YYYY}}</nowiki></code> using the value, [[:en:ISO 3166-1 alpha-3|country code]], and year, respectively.
+|-
+| '''owner''' || <code>{{Property|P127}}</code> || Owner(s) of the power station.
+|-
+| '''operator''' || <code>{{Property|P137}}</code> || Operator(s), if different from '''owner'''.
+|-
+| '''employees''' || <code>{{Property|P1128}}</code> with qualifier <code>{{Property|P585}}</code> || Number of employees at a given point in time.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | 
+==== Geothermal power stations ====
+|-
+| '''geo_type''' || <code>{{Property|P31}}</code>:<br>{{*}}<code>{{Q|Q41722964}}</code>, or<br>{{*}}<code>{{Q|Q41722780}}</code>, or<br>{{*}}<code>{{Q|Q4086827}}</code> || The type of geothermal power station. Enter any one of the following auto-expanding codes: <br><code>DS</code>=Dry steam, <code>FS</code>=Flash steam, <code>BC</code>=[[:en:Binary cycle|Binary cycle]].
+|-
+| '''geo_temp_requirement''' || <code>{{Property|P5066}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q1049799}}</code> || Minimum temperature requirement of geothermal source. Use {{tl|Convert}}.
+|-
+| '''geo_well_count''' || <code>{{Property|P527}}</code> as <code>{{Q|Q61846297}}</code> with qualifier as <code>{{Property|P1114}}</code> || Number of geothermal wells.
+|-
+| '''geo_well_depth''' || <code>{{Property|P527}}</code> as <code>{{Q|Q61846297}}</code> with qualifier as <code>{{Property|P4511}}</code> || Depth of the deepest well.
+|-
+| '''geo_water_output''' || <code>{{Property|1056}}</code> as <code>{{Q|Q1419245}}</code>, and qualifier as <code>{{Property|P2197}}</code> || Hot water production in litres.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | 
+==== Nuclear power stations ====
+|-
+| '''np_reactors''' || <code>{{Property|P31}}</code> should be <code>{{Q|Q134447}}</code>
+{{Dividing line}}
+<code>{{Property|P527}}</code> as one of the below, with qualifier as <code>{{Property|P1114}}</code>
+|| Number of nuclear reactors in the power station.
+|-
+| '''np_reactor_type''' || <code>{{Property|P527}}</code> as one of the following:<br>{{*}}<code>{{Q|Q377968}}</code><br>{{*}}<code>{{Q|Q468846}}</code><br>{{*}}<code>{{Q|Q558152}}</code><br>{{*}}<code>{{Q|Q558181}}</code><br>{{*}}<code>{{Q|Q319449}}</code><br>{{*}}<code>{{Q|Q3100709}}</code><br>{{*}}<code>{{Q|Q1204277}}</code><br>{{*}}<code>{{Q|Q379573}}</code><br>{{*}}<code>{{Q|Q557804}}</code><br>{{*}}<code>{{Q|Q552334}}</code><br>{{*}}<code>{{Q|Q1058741}}</code><br>{{*}}<code>{{Q|Q2058283}}</code><br>{{*}}<code>{{Q|Q1622414}}</code><br>{{*}}<code>{{Q|Q373950}}</code><br>{{*}}<code>{{Q|Q4391458}}</code><br>{{*}}<code>{{Q|Q432432}}</code><br>{{*}}<code>{{Q|Q35957}}</code> || Type of reactor currently in use:<br>{{*}}<code>PWR</code>=[[:en:Pressurized water reactor|PWR]]<br>{{*}}<code>BWR</code>=[[:en:Boiling water reactor|BWR]]<br>{{*}}<code>PHWR</code>=[[:en:Pressurised heavy water reactor|PHWR]]<br>{{*}}<code>CANDU</code>=[[:en:CANDU reactor|CANDU reactor]]<br>{{*}}<code>RBMK</code>=[[:en:RBMK|RBMK]]<br>{{*}}<code>GCR</code>=[[:en:Gas cooled reactor|GCR]]<br>{{*}}<code>VHTR</code>=[[:en:Very-high-temperature reactor|VHTR]]<br>{{*}}<code>AGR</code>=[[:en:Advanced gas-cooled reactor|AGR]]<br>{{*}}<code>GFR</code>=[[:en:Gas-cooled fast reactor|GFR]]<br>{{*}}<code>FBR</code>=[[:en:Fast breeder reactor|FBR]]<br>{{*}}<code>SFR</code>=[[:en:Sodium-cooled fast reactor|SFR]]<br>{{*}}<code>LFR</code>=[[:en:Lead-cooled fast reactor|LFR]]<br>{{*}}<code>PBR</code>=[[:en:Pebble bed reactor|PBR]]<br>{{*}}<code>MSR</code>=[[:en:Molten salt reactor|MSR]]<br>{{*}}<code>AHR</code>=[[:en:Aqueous homogeneous reactor|AHR]]<br>{{*}}<code>AHWR</code>=[[:en:Advanced heavy-water reactor|AHWR]]<br>{{*}}<code>VVER</code>=[[:en:VVER|VVER]].
+|-
+| '''np_reactor_supplier''' || Qualifier <code>{{Property|P176}}</code> on the type of reactor under <code>{{Property|P527}}</code> (see above) || Reactor supplier(s)
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | 
+==== Solar power stations ====
+|-
+| '''solar_type''' || <code>{{Property|P31}}</code>:<br>{{*}}<code>{{Q|Q1003207}}</code>, or<br>{{*}}<code>{{Q|Q61950883}}</code>, or<br>{{*}}<code>{{Q|Q285927}}</code> || The type of solar technology in use. Enter any one of the following auto-expanding codes: <br><code>PV</code>=[[:en:Photovoltaics|Flat-panel PV]], <code>CPV</code>=[[:en:Concentrated photovoltaics|CPV]], <code>CSP</code>=[[:en:Concentrated solar power|CSP]], <code>CPVCSP</code>=Combined PV and CSP plant
+|-
+| '''solar_csp_technology''' || <code>{{Property|P527}}</code> as one or more of the following:<br>{{*}}<code>{{Q|Q2051219}}</code>, or<br>{{*}}<code>{{Q|Q13847726}}</code>, or<br>{{*}}<code>{{Q|Q5155312}}</code>, or<br>{{*}}<code>{{Q|Q61954404}}</code> || The '''CSP''' technology in use (not applicable for non-concentrated solar tech and CPV). Enter any one of the following auto-expanding codes: <br><code>D</code>=[[:en:Dish Stirling|Dish Stirling]], <code>T</code>=[[:en:Solar power tower|Solar power tower]], <code>F</code>=[[:en:Fresnel reflector|Fresnel reflector]], or <code>P</code>=[[:en:Parabolic trough|Parabolic trough]].
+|-
+| '''solar_collectors''' || <code>{{Property|P527}}</code> as one of the following, with qualifier <code>{{Property|P1114}}</code>:<br>{{*}}<code>{{Q|Q2051219}}</code><br>{{*}}<code>{{Q|Q1347279}}</code><br>{{*}}<code>{{Q|Q5155312}}</code><br>{{*}}<code>{{Q|Q61954404}}</code> || Number of [[:en:heliostat|heliostat]]s or [[:en:Solar thermal collector|collectors]].
+|-
+| '''solar_collectors_area''' || <code>{{Property|P2046}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q1379273}}</code> || Total combined surface area of heliostats or collectors. If CSP technology is of the parabolic trough or dish type, the surface given should be the aperture area.
+|-
+| '''solar_site_resource''' || <code>{{Property|P6876}}</code> || Site solar resource in kWh/m2/year.
+|-
+| '''solar_tracker''' || <code>{{Property|P527}}</code> as one or more of the following:<br>{{*}}<code>{{Q|Q63199411}}</code><br>{{*}}<code>{{Q|Q63199420}}</code> || Type of solar tracker. Enter one of the following auto-expanding codes:<br><code>1A</code>=[[Solar tracker#Single axis trackers|Single-axis]], <code>2A</code>=[[Solar tracker#Dual axis trackers|Dual-axis]].
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" |
+
+==== Thermal power stations ====
+|-
+| '''th_fuel_primary''' || <code>{{Property|P31}}</code> should be one of the following:
+* <code>{{Q|Q200297}}</code>
+* <code>{{Q|Q6558431}}</code>
+* <code>{{Q|Q261604}}</code>
+* <code>{{Q|Q1434958}}</code>
+* <code>{{Q|Q3498533}}</code>
+* <code>{{Q|Q55364050}}</code>
+* <code>{{Q|Q2443965}}</code>
+* <code>{{Q|Q23583615}}</code>
+{{Dividing line}}
+<code>{{Property|P618}}</code> with qualifier <code>{{Property|P1545}}</code> as <code>1</code>.
+|| Primary fuel source
+|-
+| '''th_fuel_secondary''' || <code>{{Property|P618}}</code> with qualifier <code>{{Property|P1545}}</code> as <code>2</code>. || Secondary fuel source (optional)
+|-
+| '''th_fuel_tertiary''' || <code>{{Property|P618}}</code> with qualifier <code>{{Property|P1545}}</code> as <code>3</code>. || Tertiary fuel source (optional)
+|-
+| '''th_technology''' || <code>{{Property|P2670}}</code> as one or both:<br>{{*}}<code>{{Q|Q193470}}</code> <br>{{*}}<code>{{Q|Q189859}}</code> || The turbine technology used by the thermal power station: <br><code>GT</code>=[[:en:Gas turbine|Gas turbine]], <code>ST</code>=[[:en:Steam turbine|Steam turbine]].
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" |
+
+==== Tidal power stations ====
+|-
+| '''tide_technology''' || <code>{{Property|P31}}</code> should be <code>{{Q|Q50694621}}</code>
+{{Dividing line}}
+<code>{{Property|P527}}</code> as <code>{{Q|Q7800783}}</code> or <code>{{Q|Q3250943}}</code>
+|| The tidal technology in use. Enter any one of the following auto-expanding codes:<br><code>TB</code>=[[:en:Tidal barrage|Tidal barrage]], <code>TSG</code>=[[:en:Tidal stream generator|Tidal stream generator]]
+|-
+| '''tide_tsg_type''' || <code>{{Property|P527}}</code> as one of the following:<br>{{*}}<code>{{Q|Q63363573}}</code><br>{{*}}<code>{{Q|Q63363632}}</code><br>{{*}}<code>{{Q|Q63363679}}</code><br>{{*}}<code>{{Q|Q63363745}}</code><br>{{*}}<code>{{Q|Q63363781}}</code> || Type of [[:en:Tidal stream generator|Tidal stream generator]]. Enter any one of the following auto-expanding codes:<br><code>HA</code>=Horizontal axis<br><code>VA</code>=Vertical axis<br><code>HF</code>=Hydrofoil<br><code>AS</code>=Archimedes screw<br><code>TK</code>=Tidal kite
+|-
+| '''tide_barrage_height''' || <code>{{Property|P527}}</code> as <code>{{Q|Q7800783}}</code> with qualifier <code>{{Property|P2048}}</code> || Height of tidal barrage.
+|-
+| '''tide_barrage_length''' || <code>{{Property|P527}}</code> as <code>{{Q|Q7800783}}</code> with qualifier <code>{{Property|P2043}}</code> || Length of tidal barrage.
+|-
+| '''tide_barrage_width''' || <code>{{Property|P527}}</code> as <code>{{Q|Q7800783}}</code> with qualifier <code>{{Property|P2049}}</code> || Width of tidal barrage.
+|-
+| '''tide_crosses''' || <code>{{Property|P177}}</code> || Channel of water across which the barrage is build, or in which the tidal generators are located.
+|-
+| '''tide_channel_speed''' || <code>{{Property|P177}}</code> as the waterbody, with qualifier <code>{{Property|P2052}}</code> || Speed of water flow in the above-mentioned channel. Consider using: <code><nowiki>{{Convert|XX|m/s|ft/s|1}}</nowiki></code>
+|-
+| '''tide_channel_volume''' || <code>{{Property|P177}}</code> as the waterbody, with qualifier <code>{{Property|P2225}}</code> || Volume discharged through the barrage. Consider using: <code><nowiki>{{Convert|XX|m3/s|ft3/s|1}}</nowiki></code>
+|-
+| '''tide_range''' || <code>{{Property|P4441}}</code><br> || [[:en:Tidal range|Tidal range]] at the location of facility.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | 
+==== Wave power stations ====
+|-
+| '''wave_technology''' || <code>{{Property|P31}}</code> should be <code>{{Q|Q3068975}}</code>
+{{Dividing line}}
+<code>{{Property|P527}}</code> as one of the following:<br>{{*}}<code>{{Q|Q63367036}}</code><br>{{*}}<code>{{Q|Q63367054}}</code><br>{{*}}<code>{{Q|Q63367137}}</code><br>{{*}}<code>{{Q|Q3683519}}</code><br>{{*}}<code>{{Q|Q63367204}}</code><br>{{*}}<code>{{Q|Q63367211}}</code><br>{{*}}<code>{{Q|Q63367217}}</code><br>{{*}}<code>{{Q|Q63367226}}</code>
+|| [[Wave power#Modern technology|Wave power technology]]. Enter any one of the following auto-expanding codes:<br><code>SA</code>=Surface-following attenuator<br><code>PA</code>=Point absorber<br><code>OS</code>=Oscillating wave surge converter<br><code>OC</code>=[[:en:Oscillating water column|Oscillating water column]]<br><code>OT</code>=Overtopping/Terminator<br><code>PD</code>=Submerged pressure differential<br><code>BW</code>=Bulge wave device<br><code>RM</code>=Rotating mass
+|-
+| '''wave_water_body''' || <code>{{Property|P206}}</code> || Waterbody over/in which the wave power generator(s) are located
+|-
+| '''wave_water_depth''' || <code>{{Property|P206}}</code> with qualifier <code>{{Property|P4511}}</code> || Approximate water depth at the converter locations. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code>
+|-
+| '''wave_shore_distance''' || <code>{{Property|P206}}</code> with qualifier <code>{{Property|P2787}}</code> || Minimum distance from shore of wave farms. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code>
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" |
+
+==== Wind power stations ====
+|-
+| '''wind_farm_type''' || <code>{{Property|P31}}</code> as one of the following:<br>{{*}}<code>{{Q|Q50687555}}</code><br>{{*}}<code>{{Q|Q1357601}}</code> || Type of wind farm ('''Onshore''' or '''Offshore''').
+|-
+| '''wind_site_usage''' || <code>{{Property|P366}}</code> as one of the following:<br>{{*}}<code>{{Q|Q11451}}</code><br>{{*}}<code>{{Q|Q2153464}}</code><br>{{*}}<code>{{Q|Q911871}}</code> || Ground usage of '''Onshore''' wind farms.
+|-
+| '''wind_offshore_depth''' || <code>{{Property|P4511}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q1357601}}</code> || Average water depth of '''Offshore''' wind farms. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code>
+|-
+| '''wind_offshore_distance''' || <code>{{Property|P2043}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q1357601}}</code> || Minimum distance from shore of '''Offshore''' wind farms. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code>
+|-
+| '''wind_hub_height''' || <code>{{Property|P516}}</code> with qualifier <code>{{Property|P2048}}</code>. This is not fetched from the turbine-model Q-item as the same model can have multiple tower height options. || Height of the wind turbine towers from base to hub. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code> <br>If multiple types of turbines are in use, enter the maximum value.
+|-
+| '''wind_rotor_diameter''' || This parameter is populated from the particular turbine type Q-item: Set <code>{{Property|P2386}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q193466}}</code>. To override (useful for wind farms using modified turbines), set <code>{{Property|P516}}</code> with qualifier <code>{{Property|P2386}}</code>. || Height of the wind turbine towers from base to hub. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code> <br>If multiple types of turbines are in use, enter the maximum value.
+|-
+| '''wind_rated_speed''' || This parameter is populated from the particular turbine type Q-item: Set <code>{{Property|P5065}}</code> with qualifier <code>{{Property|P1013}}</code> as <code>{{Q|Q64441440}}</code>. To override (useful for wind farms using modified turbines), set <code>{{Property|P516}}</code> with qualifier <code>{{Property|P5065}}</code>. || Rated wind speed of the wind turbine model. Consider using: <code><nowiki>{{Convert|XX|m/s|ft/s|1}}</nowiki></code> <br>If multiple types of turbines are in use, enter the minimum value. A [[:en:Interval (mathematics)|range]] specifies both the cut in and the cut out speed, e.g. <code><nowiki>{{Convert|YY|-|XX|m/s|ft/s|1}}</nowiki></code>
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | Common information used by more than one power station type (does not generate a separate header)
+|-
+| '''ps_site_area''' || <code>{{Property|P2046}}</code> with qualifier <code>{{Property|P518}}</code> as <code>{{Q|Q159719}}</code> || Land area used for entire facility. Consider using: <code><nowiki>{{Convert|XX|km2|mi2|0}}</nowiki></code>
+|-
+| '''ps_site_elevation''' || <code>{{Property|P2044}}</code> || Highest ground altitude (don't add hub height) over which a turbine is constructed. Consider using: <code><nowiki>{{Convert|XX|m|ft|0}}</nowiki></code>
+|-
+| '''ps_chimneys''' || <code>{{Property|P527}}</code> as <code>{{Q|Q170477}}</code> with qualifier <code>{{Property|P1114}}</code> || Number of [[:en:Chimney|Chimney]]s.
+|-
+| '''ps_cooling_towers''' || <code>{{Property|P527}}</code> as <code>{{Q|Q193886}}</code> with qualifier <code>{{Property|P1114}}</code> || Number of [[:en:cooling tower|cooling tower]]s.
+|-
+| '''ps_cooling_source''' || {{*}}<code>{{Property|P588}}</code> as <code>{{Q|Q7391292}}</code> or another subject, or<br>{{*}}<code>{{Property|P527}}</code> at <code>{{Q|Q1049799}}</code>, with qualifier <code>{{Property|P885}}</code> as the waterbody. || If the power station uses [[:en:cooling water|cooling water]], add the source of the water. For other cooling technologies, add the name of technology, e.g. "air-cooled".
+|-
+| '''ps_feed-in_tariff''' || <code>{{Property|P6826}}</code> with qualifier <code>{{Property|P1013}}</code> as <code>{{Q|Q182098}}</code> or <code>{{Q|Q14787261}}</code> || [[:en:Feed-in tariff|Feed-in tariff]] of the power station.
+|-
+| '''ps_revenue''' || <code>{{Property|P2139}}</code> with qualifier <code>{{Property|P585}}</code> || Revenue for a given year.
+|-
+| '''ps_combined_cycle''' || <code>{{Property|P31}}</code> as <code>{{Q|Q900729}}</code> || Is the power station a [[:en:Combined cycle|Combined cycle]] type? Add '''<code>Yes</code>''' or '''<code>No</code>'''.
+|-
+| '''ps_cogeneration''' || <code>{{Property|P31}}</code> as <code>{{Q|Q61867910}}</code> || Is the power station a [[:en:Cogeneration|Cogeneration]] type? Add '''<code>Yes</code>''' or '''<code>No</code>'''.
+|-
+| '''ps_iwpp''' || <code>{{Property|P31}}</code> as <code>{{Q|Q64447720}}</code> || Is the power station an [[:en:Integrated water and power plant|Integrated water and power plant]]? Add '''<code>Yes</code>''' or '''<code>No</code>'''.
+|-
+| '''ps_iwpp_technology''' || <code>{{Property|1056}}</code> as <code>{{Q|Q283}}</code>, with qualifier <br><code>{{Property|P2079}}</code> as <code>{{Q|Q101017}}</code> and/or <code>{{Q|Q272175}}</code> || IWPP's water purification method. Enter any one of the following auto-expanding codes: <br><code>D</code>=[[:en:Distillation|Distillation]], <code>R</code>=[[:en:Reverse osmosis|Reverse osmosis]]
+|-
+| '''ps_iwpp_water_output''' || <code>{{Property|1056}}</code> as <code>{{Q|Q283}}</code>, with qualifier <code>{{Property|P2197}}</code> || IWPP's maximum water output. Consider using: <code><nowiki>{{Convert|XX|m3/d|ft3/d|0}}</nowiki></code>
+|-
+| '''ps_iwpp_water_tariff''' || <code>{{Property|2555}}</code>, with qualifiers <code>{{Property|P1013}}</code> as <code>{{Q|Q1463025}}</code> and<br><code>{{Property|P2210}}</code> as <code>{{Q|Q25517}}</code> || IWPP's feed-in tariff for water output.
+|-
+| '''ps_thermal_capacity''' || <code>{{Property|P2056}}</code> || The [[:en:MWt|thermal power]] input in the [[:en:thermal power station|thermal power station]] for conversion to [[:en:electric power|electric power]].
+|-
+| '''ps_label1''' and '''ps_data1''' || <small>N/A</small> || Custom data (license information, local permit number, etc.). Supports up to 5.
+|-
+| colspan="3" style="background-color:#FFFFE6;text-align:center;" | '''Power generation''' (used by all power station types)
+|-
+| '''ps_units_operational''' || For each unit, set <code>{{Property|P516}}</code> as the model of the generation unit (or unknown value), with the following qualifiers:<br>{{*}} <code>{{Property|P2109}}</code> (if different from unit's standard capacity)<br>{{*}} Set <code>{{Property|P571}}</code> for date construction began (or unknown value)<br>{{*}} Set <code>{{Property|P729}}</code> for date unit commissioned (or unknown value)<br>{{*}} Do ''not'' set <code>{{Property|P730}}</code> for date unit decommissioned. 
+{{Dividing line}}
+For facilities with large sets of identical units (i.e. in wind farms), use qualifier {{Property|P1114}} to ''multiply'' the entry.
+|| Number of currently operational turbines/generating units.
+|-
+| '''ps_units_manu_model''' || This parameter will be auto-populated based on <code>{{Property|P516}}</code> for <code>ps_units_operational</code>. <code>{{Property|P176}}</code> must be set in the generation unit model's Wikidata item. || Shortened name(s) of manufacturers and models of '''currently operational''' turbines/generating units.
+|-
+| '''ps_units_planned''' || For each unit, set <code>{{Property|P516}}</code> as the model of the generation unit (or unknown value), with the following qualifiers:<br>{{*}} <code>{{Property|P2109}}</code> (if different from unit's standard capacity)<br>{{*}} Do ''not'' set <code>{{Property|P571}}</code> for date construction began<br>{{*}} Do ''not'' set <code>{{Property|P729}}</code> for date unit commissioned<br>{{*}} Do ''not'' set <code>{{Property|P730}}</code> for date unit decommissioned. || Number of generating units currently planned/proposed for installation.
+|-
+| '''ps_units_cancelled''' || For each unit, set <code>{{Property|P516}}</code> as the model of the generation unit (or unknown value), with the following qualifiers:<br>{{*}} <code>{{Property|P2109}}</code> (if different from unit's standard capacity)<br>{{*}} Set <code>{{Property|P5817}}</code> as <code>{{Q|Q30108381}}</code> || Number of planned generating units cancelled.
+|-
+| '''ps_units_uc''' || For each unit, set <code>{{Property|P516}}</code> as the model of the generation unit (or unknown value), with the following qualifiers:<br>{{*}} <code>{{Property|P2109}}</code> (if different from unit's standard capacity)<br>{{*}} Set <code>{{Property|P571}}</code> for date construction began (or unknown value)<br>{{*}} Do ''not'' set <code>{{Property|P729}}</code> for date unit commissioned<br>{{*}} Do ''not'' set <code>{{Property|P730}}</code> for date unit decommissioned. || Number of generating units under construction.
+|-
+| '''ps_units_decommissioned''' || For each unit, set <code>{{Property|P516}}</code> as the model of the generation unit (or unknown value), with the following qualifiers:<br>{{*}} <code>{{Property|P2109}}</code> (if different from unit's standard capacity)<br>{{*}} Set <code>{{Property|P571}}</code> for date construction began (or unknown value)<br>{{*}} Set <code>{{Property|P729}}</code> for date unit commissioned (or unknown value)<br>{{*}} Set <code>{{Property|P730}}</code> for date unit decommissioned (or unknown value) || Number of generating units decommissioned or under decommissioning.
+|-
+| '''ps_electrical_capacity''' || <code>{{Property|P2109}}</code> with qualifier <code>{{Property|P459}}</code> as <code>{{Q|Q200974}}</code> || Current net installed [[:en:Nameplate capacity|capacity]] in megawatts, or planned capacity for those under development. <code>[[:en:Megawatt|MW]]</code> suffix will auto added for values without units.<br>For those which are operational, but with additional under development, please add only the current installed value.
+|-
+| '''ps_electrical_cap_fac''' || <code>{{Property|P6639}}</code> || [[:en:Capacity factor|Capacity factor]] of the power station, in percentage as given from referenced source.
+|-
+| '''ps_annual_generation''' || <code>{{Property|P4131}}</code> with optional qualifier <code>{{Property|P585}}</code> || Average annual net generation. <code>[[:en:GW·h|GW·h]]</code> suffix will auto added for number without unit or text appended.
+|-
+| '''ps_storage_capacity''' || <code>{{Property|P4140}}</code> || [[Energy storage#Storage capacity|Storage capacity]] of the power station.
+|-
+| '''website''' || <code>{{Property|P856}}</code> || Official website.
+|-
+|}
+
+== Template Data ==
+{{show
+| Click the [show] link to the right to display the [[Wikipedia:TemplateData|TemplateData]].
+|
+{{TemplateData header|nolink=1}}
+<templatedata>
+{
+	"params": {
+		"name": {
+			"label": "Name",
+			"description": "Name of power station",
+			"type": "string",
+			"suggested": true
+		},
+		"image": {
+			"label": "Image",
+			"description": "An image of the power station",
+			"type": "wiki-file-name",
+			"suggested": true
+		},
+		"image_size": {
+			"label": "Image size",
+			"description": "Force a different image size for the image and location map",
+			"type": "number",
+			"default": "300",
+			"deprecated": true
+		},
+		"image_alt": {
+			"label": "Image alternative text",
+			"description": "Alternative text for the image",
+			"type": "line"
+		},
+		"image_caption": {
+			"label": "Image caption",
+			"description": "Caption beneath image",
+			"type": "line",
+			"suggested": true
+		},
+		"coordinates": {
+			"label": "Coordinates",
+			"description": "Geographical coordinates",
+			"type": "wiki-template-name",
+			"autovalue": "{{Coord|00|00|00|N|00|00|00|E|type:landmark|display=inline,title}}",
+			"suggested": true
+		},
+		"location_map_zoom": {
+			"label": "Location map zoom",
+			"description": "Zoom level of the location map",
+			"type": "number",
+			"default": "5",
+			"deprecated": true
+		},
+		"location_map_geomask": {
+			"label": "Location map geomask",
+			"description": "Add Yes to darken surrounding areas, and zoom out to country-level",
+			"type": "string",
+			"deprecated": true
+		},
+		"location_map_caption": {
+			"label": "Location map caption",
+			"description": "Force a caption below the location map",
+			"type": "line",
+			"deprecated": true
+		},
+		"location_map_marker": {
+			"label": "Location map marker",
+			"description": "Use a different maker in the location map",
+			"type": "string"
+		},
+		"name_official": {
+			"label": "Official name",
+			"description": "Official name in native language",
+			"type": "string"
+		},
+		"country": {
+			"label": "Country",
+			"description": "Country where the facility is located, without flag icons.",
+			"type": "string",
+			"suggested": true
+		},
+		"location": {
+			"label": "Location",
+			"description": "General area the power station is located. Avoid being overly-detailed.",
+			"type": "line",
+			"suggested": true
+		},
+		"status": {
+			"label": "Status",
+			"description": "Current status of the power station",
+			"example": "Under construction, Commissioned, Decommissioned",
+			"type": "string",
+			"suggested": true
+		},
+		"construction_began": {
+			"label": "Construction began",
+			"description": "Date construction of the first unit began",
+			"type": "date",
+			"suggested": true
+		},
+		"commissioned": {
+			"label": "Commissioned",
+			"description": "Date first unit commissioned",
+			"type": "date",
+			"suggested": true
+		},
+		"decommissioned": {
+			"label": "Decommissioned",
+			"description": "Date last unit decommissioned",
+			"type": "date"
+		},
+		"cost": {
+			"label": "Cost",
+			"description": "Total incurred or predicted cost of building the power station",
+			"type": "string",
+			"suggested": true
+		},
+		"owner": {
+			"label": "Owner",
+			"description": "Owner(s) of the power station",
+			"type": "line",
+			"suggested": true
+		},
+		"operator": {
+			"label": "Operator",
+			"description": "Operator(s) of the power station",
+			"type": "line",
+			"suggested": true
+		},
+		"employees": {
+			"label": "Employees",
+			"description": "Number of employees at a given point in time",
+			"type": "line",
+			"suggested": true
+		},
+		"geo_type": {
+			"label": "Geothermal power stations - Type",
+			"description": "The type of geothermal power station",
+			"example": "Dry steam, Flash steam, Binary cycle",
+			"type": "string"
+		},
+		"geo_temp_requirement": {
+			"label": "Geothermal power stations - Min temp requirement",
+			"description": "Minimum temperature requirement of geothermal source, with converted values",
+			"example": "{{Convert|00|C|F|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"geo_well_count": {
+			"label": "Geothermal power stations - Well count",
+			"description": "Number of wells in the geothermal power station",
+			"type": "number"
+		},
+		"geo_well_depth": {
+			"label": "Geothermal power stations - Well depth",
+			"description": "Depth of the deepest well in the geothermal power station",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"geo_water_output": {
+			"label": "Geothermal power stations - Hot water output",
+			"description": "Hot water production of the geothermal power station, with converted values",
+			"example": "{{Convert|00|l/s|USgal/s|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"np_reactors": {
+			"label": "Nuclear power stations - Reactors",
+			"description": "Number of nuclear reactors in the power station",
+			"type": "number"
+		},
+		"np_reactor_type": {
+			"label": "Nuclear power stations - Reactor type(s)",
+			"description": "Type of reactor(s) currently in use",
+			"type": "string"
+		},
+		"np_reactor_supplier": {
+			"label": "Nuclear power stations - Reactor supplier",
+			"description": "Reactor supplier(s)",
+			"type": "string"
+		},
+		"solar_type": {
+			"label": "Solar power stations - Type",
+			"description": "The type of solar technology in use",
+			"example": "PV, CPV, CSP",
+			"type": "string"
+		},
+		"solar_csp_technology": {
+			"label": "Solar power stations - CSP technology",
+			"description": "The CSP technology in use (not applicable for non-concentrated solar tech and CPV)",
+			"example": "D, T, F, P",
+			"type": "string"
+		},
+		"solar_collectors": {
+			"label": "Solar power stations - Collectors",
+			"description": "Number of heliostats or collectors",
+			"type": "number"
+		},
+		"solar_collectors_area": {
+			"label": "Solar power stations - Collector area",
+			"description": "Total combined surface area of heliostats or collectors.",
+			"example": "{{Convert|00|m2|ft2|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"solar_site_resource": {
+			"label": "Solar power stations - Site resource",
+			"description": "Site solar resource in kWh/m2/year.",
+			"type": "string"
+		},
+		"solar_tracker": {
+			"label": "Solar power stations - Solar tracker type",
+			"description": "Type of solar tracker in use, if any (single-axis, dual-axis).",
+			"type": "string"
+		},
+		"th_fuel_primary": {
+			"label": "Thermal power stations - Primary fuel",
+			"description": "Primary fuel",
+			"type": "string"
+		},
+		"th_fuel_secondary": {
+			"label": "Thermal power stations - Secondary fuel",
+			"description": "Secondary fuel (optional)",
+			"type": "string"
+		},
+		"th_fuel_tertiary": {
+			"label": "Thermal power stations - Tertiary fuel",
+			"description": "Tertiary fuel (optional)",
+			"type": "string"
+		},
+		"th_technology": {
+			"label": "Thermal power stations - Thermal technology",
+			"type": "string"
+		},
+		"tide_technology": {
+			"label": "Tidal power stations - Type",
+			"description": "The tidal technology in use. ",
+			"example": "Tidal barrage, Tidal stream generator",
+			"type": "string"
+		},
+		"tide_tsg_type": {
+			"label": "Tidal power stations - TSG type",
+			"description": "Type of tidal stream generator",
+			"type": "string"
+		},
+		"tide_barrage_height": {
+			"label": "Tidal power stations - Tidal barrage height",
+			"description": "Height of tidal barrage",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"tide_barrage_length": {
+			"label": "Tidal power stations - Tidal barrage length",
+			"description": "Length of tidal barrage",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"tide_barrage_width": {
+			"label": "Tidal power stations - Tidal barrage width",
+			"description": "Width of tidal barrage",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"tide_crosses": {
+			"label": "Tidal power stations - Water body",
+			"description": "Channel of water across which the barrage is build, or in which the tidal generators are located.",
+			"type": "string"
+		},
+		"tide_channel_speed": {
+			"label": "Tidal power stations - Water body flow speed",
+			"description": "Speed of water flow in the above-mentioned channel",
+			"example": "{{Convert|00|m/s|ft/s|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"tide_range": {
+			"label": "Tidal power stations - Tidal range",
+			"description": "Tidal range at the location of facility",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"tide_channel_volume": {
+			"label": "Tidal power stations - Water body flow volume",
+			"description": "Volume of water flow in the above-mentioned channel",
+			"example": "{{Convert|00|m3/s|ft3/s|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wave_technology": {
+			"label": "Wave farms - Type",
+			"description": "The wave technology in use",
+			"type": "string"
+		},
+		"wave_water_body": {
+			"label": "Wave farms - Water body",
+			"description": "Waterbody over/in which the wave power generator(s) are located",
+			"type": "string"
+		},
+		"wave_water_depth": {
+			"label": "Wave farms - Water depth",
+			"description": "Approximate water depth at the converter locations.",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wave_shore_distance": {
+			"label": "Wave farms - Distance from shore",
+			"description": "Minimum distance from shore",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wind_farm_type": {
+			"label": "Wind farms - Type",
+			"description": "Type of wind farm",
+			"example": "Onshore, Offshore",
+			"type": "string"
+		},
+		"wind_site_usage": {
+			"label": "Wind farms - Onshore site usage",
+			"description": "Ground usage of onshore wind farms",
+			"type": "string"
+		},
+		"wind_offshore_depth": {
+			"label": "Wind farms - Offshore water depth",
+			"description": "Approximate water depth at the wind farm location",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wind_offshore_distance": {
+			"label": "Wind farms - Distance from shore",
+			"description": "Minimum distance from shore",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wind_hub_height": {
+			"label": "Wind farms - Turbine hub height",
+			"description": "Height of the wind turbine towers from base to hub",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wind_rotor_diameter": {
+			"label": "Wind farms - Turbine rotor diameter",
+			"description": "Diameter of wind turbine rotor",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"wind_rated_speed": {
+			"label": "Wind farms - Turbine rated wind speed",
+			"description": "Rated wind speed of the wind turbine model",
+			"example": "{{Convert|00|m/s|ft/s|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"ps_site_area": {
+			"label": "Power stations - Site area",
+			"description": "Area used by entire facility",
+			"example": "{{Convert|00|m2|ft2|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+                },
+		"ps_site_elevation": {
+			"label": "Power stations - Site elevation",
+			"description": "Elevation at power station site",
+			"example": "{{Convert|00|m|ft|abbr=on|lk=on|disp=br}}",
+			"type": "wiki-template-name"
+		},
+		"ps_chimneys": {
+			"label": "Power stations - Number of chimneys",
+			"description": "Number of chimneys",
+			"type": "number"
+		},
+		"ps_cooling_towers": {
+			"label": "Power stations - Number of cooling towers",
+			"description": "Number of cooling towers",
+			"type": "number"
+		},
+		"ps_cooling_source": {
+			"label": "Power stations - Cooling source",
+			"description": "If the power station uses cooling water, add the source of the water. For other cooling technologies, add the name of technology, e.g. \"air-cooled\".",
+			"type": "string"
+		},
+		"ps_feed-in_tariff": {
+			"label": "Power stations - Feed-in tariff",
+			"description": "Feed-in tariff of the power station",
+			"type": "string"
+		},
+		"ps_revenue": {
+			"label": "Power stations - Revenue for a given year",
+			"description": "Revenue for a given year",
+			"type": "string"
+		},
+		"ps_combined_cycle": {
+			"label": "Power stations - Combined cycle?",
+			"description": "Is the power station a combined cycle type?",
+			"example": "Yes or No",
+			"type": "string"
+		},
+		"ps_cogeneration": {
+			"label": "Power stations - Cogeneration?",
+			"description": "Is the power station a cogeneration type?",
+			"example": "Yes or No",
+			"type": "string"
+		},
+		"ps_trigeneration": {
+			"label": "Power stations - Trigeneration?",
+			"description": "Is the power station a trigeneration type? ",
+			"example": "Yes or No",
+			"type": "string"
+		},
+		"ps_iwpp": {
+			"label": "Power stations - IWPP?",
+			"description": "Is the power station an IWPP?",
+			"example": "Yes or No",
+			"type": "string"
+		},
+		"ps_iwpp_technology": {
+			"label": "Power stations - IWPP water purification method",
+			"description": "Water production technology of the IWPP",
+			"type": "string"
+		},
+		"ps_iwpp_water_output": {
+			"label": "Power stations - IWPP water production rate",
+			"description": "Maximum water production rate of the IWPP",
+			"example": "100,000 m3/day",
+			"type": "string"
+		},
+		"ps_iwpp_water_tariff": {
+			"label": "Power stations - IWPP water tariff",
+			"description": "Water tariff of the IWPP",
+			"example": "USD 1.00 per m3",
+			"type": "string"
+		},
+		"ps_thermal_capacity": {
+			"label": "Power stations - Thermal capacity",
+			"description": "The thermal power input in the thermal power station for conversion to electric power",
+			"type": "string"
+		},
+		"ps_units_operational": {
+			"label": "Power station - Number of active units with capacities",
+			"description": "Number of currently operational turbines/generating units",
+			"example": "3 × 100 MW",
+			"type": "string",
+			"suggested": true
+		},
+		"ps_units_manu_model": {
+			"label": "Power station - Active unit's manufacturer and model",
+			"description": "Shortened name(s) of manufacturers and models of currently operational turbines/generating units",
+			"type": "string",
+			"suggested": true
+		},
+		"ps_units_planned": {
+			"label": "Power station - Units planned or proposed",
+			"description": "Number of generating units currently planned/proposed for installation",
+			"example": "3 × 100 MW",
+			"type": "string"
+		},
+		"ps_units_cancelled": {
+			"label": "Power station - Units cancelled",
+			"description": "Number of planned generating units cancelled",
+			"type": "string"
+		},
+		"ps_units_uc": {
+			"label": "Power station - Units under construction",
+			"description": "Number of generating units under construction.",
+			"example": "3 × 100 MW",
+			"type": "string"
+		},
+		"ps_units_decommissioned": {
+			"label": "Power station - Units decommissioned",
+			"description": "Number of generating units decommissioned or under decommissioning",
+			"example": "3 × 100 MW",
+			"type": "string"
+		},
+		"ps_electrical_capacity": {
+			"label": "Power station - Installed electrical capacity",
+			"description": "Installed nameplate capacity",
+			"type": "string",
+			"suggested": true
+		},
+		"ps_electrical_cap_fac": {
+			"label": "Power station - Capacity factor",
+			"description": "Capacity factor of the power station",
+			"type": "string",
+			"suggested": true
+		},
+		"ps_storage_capacity": {
+			"label": "Power station - Energy storage capacity",
+			"description": "Storage capacity of the power station",
+			"type": "string"
+		},
+		"ps_annual_generation": {
+			"label": "Power station - Annual generation",
+			"description": "Average annual net generation",
+			"type": "string",
+			"suggested": true
+		},
+		"website": {
+			"label": "Website",
+			"description": "Official website of the power station",
+			"type": "url"
+		}
+	},
+	"description": "Infobox template for power station articles.",
+	"paramOrder": [
+		"name",
+		"name_official",
+		"image",
+		"image_size",
+		"image_caption",
+		"image_alt",
+		"coordinates",
+		"location_map_zoom",
+        "location_map_geomask",
+		"location_map_caption",
+		"location_map_marker",
+		"country",
+		"location",
+		"status",
+		"construction_began",
+		"commissioned",
+		"decommissioned",
+		"cost",
+		"owner",
+		"operator",
+		"employees",
+		"geo_type",
+		"geo_temp_requirement",
+		"geo_well_count",
+		"geo_well_depth",
+		"geo_water_output",
+		"np_reactors",
+		"np_reactor_type",
+		"np_reactor_supplier",
+		"solar_type",
+		"solar_csp_technology",
+		"solar_collectors",
+		"solar_collectors_area",
+		"solar_site_resource",
+		"solar_tracker",
+		"th_fuel_primary",
+		"th_fuel_secondary",
+		"th_fuel_tertiary",
+		"th_technology",
+		"tide_technology",
+		"tide_tsg_type",
+		"tide_barrage_height",
+		"tide_barrage_length",
+		"tide_barrage_width",
+		"tide_crosses",
+		"tide_channel_speed",
+		"tide_channel_volume",
+		"tide_range",
+		"wave_technology",
+		"wave_water_body",
+		"wave_water_depth",
+		"wave_shore_distance",
+		"wind_farm_type",
+		"wind_site_usage",
+		"wind_offshore_depth",
+		"wind_offshore_distance",
+		"wind_hub_height",
+		"wind_rotor_diameter",
+		"wind_rated_speed",
+		"ps_site_area",
+		"ps_site_elevation",
+		"ps_chimneys",
+		"ps_cooling_towers",
+		"ps_cooling_source",
+		"ps_feed-in_tariff",
+		"ps_revenue",
+		"ps_combined_cycle",
+		"ps_cogeneration",
+		"ps_trigeneration",
+        "ps_iwpp",
+        "ps_iwpp_technology",
+        "ps_iwpp_water_output",
+        "ps_iwpp_water_tariff",
+		"ps_thermal_capacity",
+		"ps_units_operational",
+		"ps_units_manu_model",
+		"ps_units_planned",
+		"ps_units_cancelled",
+		"ps_units_uc",
+		"ps_units_decommissioned",
+		"ps_electrical_capacity",
+		"ps_electrical_cap_fac",
+		"ps_storage_capacity",
+		"ps_annual_generation",
+		"website"
+	],
+	"format": "block"
+}
+</templatedata>}}
+
+== FAQ ==
+# '''The article displays little or no information when <code><nowiki>{{Infobox power station}}</nowiki></code> is added to the top of an article.'''<br>Information about the particular power station may not be added to Wikidata yet, or may not have been added correctly. Click on the "Edit on Wikidata" button on the bottom of the infobox to add or modify the necessary data. Refer to the Parameters table above for structuring format.
+# '''The Wikidata entry is accurate, but I want to override one or more parameter(s) on a particular article.'''<br>You may add the necessary parameter name and value to force a local value. See the [[#Standard usage]] section above.
+# '''I want to add unique (i.e. localised) information to a particular article, but creating a whole new parameter is redundant.'''<br>This infobox supports up to 5 special parameters in the form of <code>|ps_label1=</code> and <code>|ps_data1=</code>. You may use it for a custom label and value. The values will be appended before the "Power generation" section.
+# '''I'm not comfortable with using data from Wikidata, as that is a separate wiki and I cannot monitor changes in my local watchlist.'''<br>Wikidata edits relating to locally watched articles now show on the local watchlist. Select the <code>Show Wikidata edits in your watchlist</code> option under the "Watchlist" tab in your [[Special:Preferences|Preferences]].
+
+== Sample Wikidata items ==
+{{Incomplete list|date=October 2019}}
+The below items are some examples of populated Wikidata items.
+* Coal-fired power station: {{Q|Q6479997}}
+* Wind turbine item: {{Q|Q114672}}, {{Q|Q70677881}}
+
+== Tracking categories ==
+=== Maintenance ===
+* {{Category link with count|Pages using infobox power station with unknown parameters}}
+
+=== Statistics ===
+* {{Category link with count|Geothermal power station articles using Infobox power station}}
+* {{Category link with count|Nuclear power station articles using Infobox power station}}
+* {{Category link with count|Solar power station articles using Infobox power station}}
+* {{Category link with count|Thermal power station articles using Infobox power station}}
+* {{Category link with count|Tidal power station articles using Infobox power station}}
+* {{Category link with count|Wave power station articles using Infobox power station}}
+* {{Category link with count|Wind farm articles using Infobox power station}}
+
+== Related pages ==
+* [[Special:PrefixIndex/Template:Infobox power station/|Subpages of this infobox template]]
+* [[Module:Infobox power station]] - Wikidata support Lua code for generation units
+* [https://en.wikipedia.org/wiki/Special:ComparePages?page1=Template%3AInfobox+power+station&page2=Template%3AInfobox+power+station%2Fsandbox Compare this template with its sandbox]
+
+== Microformat ==
+{{UF-hcard-geo}}
+{{Buildings and structures infobox templates}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Buildings and structures infobox templates|Power Station]]
+[[Category:Energy templates]]
+[[Category:Technology and applied science infobox templates|Power Station]]
+[[Category:Embeddable templates]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,820 @@
+{{Documentation subpage}}
+{{High-use}}
+{{Lua|Module:Check for unknown parameters|Module:Coordinates|Module:InfoboxImage|Module:String|Module:WikidataIB|Module:Wikidata|Module:Mapframe}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+{{auto short description}}
+
+{{Parameter names example|_template=| basin_landmarks | basin_population | basin_size | basin_size_km2 | basin_size_mi2 | basin_size_ref | bridges | city | country | country_type | custom_data | custom_label | depth_avg | depth_max | depth_min  | discharge1_avg | discharge1_location | discharge1_max | discharge1_min | discharge5_avg | discharge5_location | discharge5_max | discharge5_min | district | district_type | embed | etymology | extra | image | image_alt | image_caption | image_size | landmark | length | length_km | length_mi | map | map_alt | map_caption | map_size | mapframe | mouth | mouth_coord_ref | mouth_coordinates | mouth_elevation | mouth_location | municipality | municipality_type | name | name_etymology | name_native | name_other | native_name | nickname | parent | ports | progression | pushpin_map  | pushpin_map_alt | pushpin_map_caption | pushpin_map_size | region | region_type | river_system | source1 | source1_coord_ref | source1_coordinates | source1_elevation | source1_location | source5 | source5_coord_ref | source5_coordinates | source5_elevation | source5_location | state | state_type | subdivision_name1 | subdivision_name2 | subdivision_name3 | subdivision_name4 | subdivision_name5 | subdivision_type1 | subdivision_type2 | subdivision_type3 | subdivision_type4 | subdivision_type5 | tributaries_left | tributaries_right | waterbodies | waterfalls | width_avg | width_max | width_min | source_confluence | source_confluence_location | source_confluence_elevation | source_confluence_coordinates }}
+
+== Usage ==
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox river
+| name               = 
+| native_name        = 
+| name_other         = 
+| name_etymology     = 
+| nickname           = 
+
+| image              = 
+| image_size         = 
+| image_caption      = 
+| image_alt          = 
+
+| map                = 
+| map_size           = 
+| map_caption        = 
+| map_alt            = 
+| pushpin_map        = 
+| pushpin_map_size   = 
+| pushpin_map_caption= 
+| pushpin_map_alt    = 
+| mapframe = yes
+
+| subdivision_type1  = 
+| subdivision_name1  = 
+| subdivision_type2  = 
+| subdivision_name2  = 
+| subdivision_type3  = 
+| subdivision_name3  = 
+| subdivision_type4  = 
+| subdivision_name4  = 
+| subdivision_type5  = 
+| subdivision_name5  = 
+
+| length             = 
+| width_min          = 
+| width_avg          = 
+| width_max          = 
+| depth_min          = 
+| depth_avg          = 
+| depth_max          = 
+| discharge1_location= 
+| discharge1_min     = 
+| discharge1_avg     = 
+| discharge1_max     = 
+
+| source1            = 
+| source1_location   = 
+| source1_coordinates= 
+| source1_elevation  = 
+| mouth              = 
+| mouth_location     = 
+| mouth_coordinates  = 
+| mouth_elevation    = 
+| progression        = 
+| river_system       = 
+| basin_size         = 
+| basin_landmarks    = 
+| basin_population   = 
+| tributaries_left   = 
+| tributaries_right  = 
+| waterbodies        = 
+| waterfalls         = 
+| bridges            = 
+| ports              = 
+| custom_label       = 
+| custom_data        = 
+| extra              = 
+}}
+</syntaxhighlight>{{Clear}}
+
+== Parameter names and descriptions ==
+{| class="wikitable plainrowheaders"
+|-
+! scope="col" | Parameter name
+! scope="col" | Description
+|-
+! scope="row" | '''name'''
+| The [[WP:COMMONNAME|common name]] of the river.
+|-
+! scope="row" | '''native_name'''<br> or '''name_native'''
+| The name in its official or de facto language. Use {{tlx|native name}} or, for multiple names, use {{tlx|native name list}}
+|-
+! scope="row" | '''name_other'''<br> or '''other_name'''
+| Other name(s) of the river. Use commas to enter multiple. Displayed under the infobox heading.
+|-
+! scope="row" | '''nickname'''
+| Local name(s) for the river. Use commas to enter multiple.
+|-
+! scope="row" | '''name_etymology'''<br> or '''etymology'''
+| Person, event or other entity the body is named after
+|-
+! scope="row" | '''image'''
+| Image filename without the <code>File:</code> or <code>Image:</code> prefix.
+|-
+! scope="row" | '''image_size'''
+| Width of the image in pixels (i.e. <code>200px</code>). Common sizes are usually around <code>280px</code> to <code>300px</code>.
+|-
+! scope="row" | '''image_caption'''
+| Caption for the main image.
+|-
+! scope="row" | '''image_alt'''
+| [[Wikipedia:Alternative text for images|Alt text]] for the main image.
+|-
+! scope="row" | '''map'''
+| Map image filename without the <code>File:</code> or <code>Image:</code> prefix.
+|-
+! scope="row" | '''map_size'''
+| Width of the image in pixels (i.e. <code>200px</code>). Common sizes are usually around <code>280px</code> to <code>300px</code>.
+|-
+! scope="row" | '''map_caption'''
+| Caption for the map image.
+|-
+! scope="row" | '''map_alt'''
+| [[Wikipedia:Alternative text for images|Alt text]] for the map image.
+|-
+! scope="row" | '''pushpin_map'''
+| The name of a location map to be used with {{tl|location map}}, with the pin placed at the location specified by the <code>mouth_coordinates</code> parameter, or the value from wikidata if no mouth coordinates are provided. Manually add parameter <code>pushpin_map_relief = 0</code> to disable the use of a relief location map.
+|-
+! scope="row" | '''pushpin_map_size'''
+| The width of the location map in pixels as a raw number, without any <code>px</code> suffix
+|-
+! scope="row" | '''pushpin_map_caption'''
+| Caption for the location map
+|-
+! scope="row" | '''pushpin_map_alt'''
+| [[Wikipedia:Alternative text for images|Alt text]] for the location map image.
+|-
+! scope="row" | '''pushpin_map_relief'''
+| A pushpin map will be displayed in relief by default. Use <code>pushpin_map_relief = 0</code> for a plain map.
+|-
+! scope="row" | '''mapframe'''
+| A mapframe map can be enabled with this. See [[#Mapframe parameters]] below for more information.
+|-
+! scope="row" | '''subdivision_type1'''
+| Primary political region(s), typically <code>Country</code> or <code>Countries</code>.
+|-
+! scope="row" | '''subdivision_name1'''
+| Used with above. The country/ies in which the river flows in/through. Use commas for multiple.
+|-
+! scope="row" | '''subdivision_type2'''
+| Secondary political region(s). <code>States</code>, <code>Provinces</code>, <code>Districts</code>, or <code>Regions</code>, in which the river flows through.
+|-
+! scope="row" | '''subdivision_name2'''
+| Used with above. The secondary political region(s) in which the river flows through. Use commas for multiple.
+|-
+! scope="row" | '''subdivision_type3'''
+| Tertiary political region(s), such as the <code>Cities</code> along the river.
+|-
+! scope="row" | '''subdivision_name3'''
+| Used with above. The tertiary political region(s) through which the river flows. Use commas for multiple.
+|-
+! scope="row" | '''subdivision_type4'''
+| Other types of political subdivisions.
+|-
+! scope="row" | '''subdivision_name4'''
+| Used with above. Other political subdivisions through which the river flows. Use commas for multiple.
+|-
+! scope="row" | '''subdivision_type5'''
+| Other types of political subdivisions.
+|-
+! scope="row" | '''subdivision_name5'''
+| Used with above. Other political subdivisions through which the river flows. Use commas for multiple.
+|-
+| colspan=2 bgcolor=#CEDEFF | '''{{center|PHYSICAL CHARACTERISTICS}}'''
+|-
+! scope="row" | '''length'''
+| The total length of the river's [[:en:Main stem|Main stem]]. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|km|mi|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''length_km'''
+| Total length of the river's main stem, measured in kilometers.
+|-
+! scope="row" | '''length_mi'''
+| Total length of the river's main stem, measured in miles.
+|-
+! scope="row" | '''length_ref'''
+| References or other notes for length of river, used only if {{para|length_km}} or {{para|length_mi}} are used.
+|-
+! scope="row" | '''width_min'''
+| Minimum width between banks of the river. Rarely used as it is often difficult to determine the exact source of the river. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''width_avg'''
+| Average width of the river. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''width_max'''
+| Maximum width of the river before the [[:en:River mouth|mouth]]. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''depth_min'''
+| Minimum depth of the river. Rarely used as it is often difficult to determine the exact source of the river. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''depth_avg'''
+| Average depth of the river. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''depth_max'''
+| Maximum depth of the river before the [[:en:River mouth|mouth]]. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m|ft|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''discharge1_location'''
+| Location or gauge/sensor name at which the below details are recorded. Commonly at the <code>River mouth</code>.
+|-
+! scope="row" | '''discharge1_min'''
+| Minimum discharge rate. Rarely used. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m3/s|ft3/s|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''discharge1_avg'''
+| Average discharge rate (also use if a source provides only one discharge rate without a minimum or maximum). Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m3/s|ft3/s|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''discharge1_max'''
+| Maximum discharge rate before flooding occurs in the surrounding areas. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|m3/s|ft3/s|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''discharge2_*  &rArr;  5_*'''
+| Up to four more sets of discharge parameters. '''You may add up to <code>discharge5_*</code>'''.
+|-
+| colspan=2 bgcolor=#CEDEFF | '''{{center|BASIN FEATURES}}'''
+|-
+! scope="row" | '''source1'''
+| Landform or waterbody of the primary source. For a source that is a [[:en:Confluence|Confluence]], you may add as: <code><nowiki>Confluence of [[River-A]] and [[River-B]]</nowiki></code>.
+|-
+! scope="row" | '''source1_location'''
+| Political details of the source location, such as Province, District, State, etc.
+|-
+! scope="row" | '''source1_elevation'''
+| Elevation at the main source of water
+|-
+! scope="row" | '''source1_coordinates'''
+| Coordinates of the main source, using the {{tl|coord}} template. Use {{para|display|inline}} only.
+|-
+! scope="row" | '''source1_coord_ref'''
+| Reference for the coordinates of the main source.
+|-
+! scope="row" | '''source1_length'''
+| Length from the main source. 
+|-
+! scope="row" | '''source2 &rArr; source5'''
+| Landform or waterbody of further sources. You may add up to '''<code>source5</code>'''. Also '''source2_location''', '''source2_elevation''', '''source2_coordinates''', '''source2_coord_ref''', '''source2_length''' etc.
+|-
+! scope="row" | '''mouth'''
+| Landform or waterbody of the [[:en:River mouth|River mouth]].
+|-
+! scope="row" | '''mouth_location'''
+| Political details of the mouth location, such as Province, District, State, etc.
+|-
+! scope="row" | '''mouth_coordinates'''
+| Coordinates of the river mouth, using the {{tl|coord}} template. Use {{para|display|inline,title}} if possible.
+|-
+! scope="row" | '''mouth_elevation'''
+| Elevation at the river mouth.
+|-
+! scope="row" | '''progression'''
+| Progression from the mouth of the river in the article to the sea. For example, the [[Pegnitz (river)|Pegnitz]] in Germany flows into the Regnitz, which flows into the Main, which flows into the Rhine, which flows into the North Sea. This is entered into the progression field with a special template {{tl|RRegnitz}}, but could be hard-coded as <code><nowiki>[[Regnitz]]→ [[Main (river)|Main]]→ [[Rhine]]→ [[North Sea]]</nowiki></code>. These both render as [[Regnitz]]→ [[Main (river)|Main]]→ [[Rhine]]→ [[North Sea]] in the Infobox. See {{Cl|Drainage basin succession templates}} for a list of templates that can be used with this parameter.
+|-
+! scope="row" | '''river_system'''<br> or '''parent'''
+| Name of the [[Drainage system (geomorphology)|river system]].
+|-
+! scope="row" | '''basin_landmarks'''<br> or '''landmark'''
+| Popular landmarks along the river. Use commas for multiple.
+|-
+! scope="row" | '''basin_population'''
+| Population within the river basin.
+|-
+! scope="row" | '''basin_size'''
+| Size of the river's [[:en:Drainage basin|Drainage basin]]. Consider using '''<code><nowiki>{{</nowiki>[[Template:Convert|Convert]]|1234|km2|mi2|abbr=on<nowiki>}}</nowiki></code>'''
+|-
+! scope="row" | '''basin_size_km2'''
+| Size of the river's drainage basin, in square kilometers.
+|-
+! scope="row" | '''basin_size_mi2'''
+| Size of the river's drainage basin, in square miles.
+|-
+! scope="row" | '''tributaries_left'''
+| [[:en:tributary|Tributaries]] located on the left bank of the river flowing towards the mouth. List in order from source to mouth.
+|-
+! scope="row" | '''tributaries_right'''
+| [[:en:tributary|Tributaries]] located on the right bank of the river flowing towards the mouth. List in order from source to mouth.
+|-
+! scope="row" | '''waterbodies'''
+| Water bodies located along the river (such as lakes, reservoirs, etc). List in order from source to mouth.
+|-
+! scope="row" | '''waterfalls'''
+| [[:en:Waterfall|Waterfall]]s along the river. List in order from source to mouth.
+|-
+! scope="row" | '''bridges'''
+| [[:en:Bridge|Bridge]]s along the river. List in order from source to mouth.
+|-
+! scope="row" | '''ports'''
+| [[Inland port]]s along the river. List in order from source to mouth.
+|-
+! scope="row" | '''city''' or '''cities'''
+| Cities along the river. List in order from source to mouth. Use '''city''' or '''cities''', not both.
+|-
+! scope="row" | '''custom_label'''
+| Use this to enter a custom label (such as <code>bridges</code>). To be used with the field below.
+|-
+! scope="row" | '''custom_data'''
+| Custom data parameter. See above.
+|-
+! scope="row" | '''extra'''
+| Use this parameter to add content to the very bottom of the infobox. Useful for adding maps, charts, and so on.
+|-
+|}
+
+===Mapframe parameters===
+
+{{Infobox mapframe/doc/parameters
+| onByDefault = yes, unless one of these parameters has a value: {{para|map}}, {{para|pushpin_map}}.
+| mapframe-frame-width = 250
+| mapframe-stroke-color = #0000ff
+| mapframe-marker = water
+| mapframe-type = river
+}}
+
+== Example ==
+{{Infobox river
+| name               = Amazon River (dummy data)
+| native_name        = {{native name|pt|Amazonia}}
+| name_other         = Apurímac, Ene, Tambo, Ucayali, Amazonas, Solimões
+| name_etymology     = Named after the Amazon Rainforest
+| image = Amazon River ESA387332.jpg
+| image_caption = Satellite image of the [[:en:Amazon Delta|Amazon Delta]]
+| image_alt          = Alt text for image
+| map                = Amazonrivermap.svg
+| map_caption        = Map of the Amazon basin
+| map_alt            = Alt text for map
+| pushpin_map        = Brazil
+| pushpin_map_caption= Location of the mouth in Brazil
+| pushpin_map_alt    = Map showing the location of the river mouth in Brazil
+| mapframe = yes
+| mapframe-id = Q3783
+| subdivision_type1  = Countries
+| subdivision_name1  = [[:en:Brazil|Brazil]], [[:en:Colombia|Colombia]], [[:en:Peru|Peru]], [[:en:Ecuador|Ecuador]]
+| subdivision_type2  = States
+| subdivision_name2  = [[Loreto Region|Loreto]] (Peru);<br />[[Amazonas (Colombian department)|Amazonas]] (Columbia);<br />[[North Region, Brazil|North Region]] (Brazil)
+| subdivision_type3  = Cities
+| subdivision_name3  = [[Iquitos]] (Peru); [[Leticia, Amazonas|Leticia]] (Colombia);<br /> [[Tabatinga]] (Brazil); [[Tefé]] (Brazil);<br /> [[Itacoatiara, Amazonas|Itacoatiara]] (Brazil); [[Parintins]] (Brazil);<br /> [[Óbidos, Pará|Óbidos]] (Brazil); [[Santarém, Pará|Santarém]] (Brazil);<br /> [[:en:Almeirim, Pará|Almeirim]] (Brazil); [[Macapá]] (Brazil)
+
+| length_km          = 6992
+| width_min          = {{Convert|4|km|mi|abbr=on}}
+| width_avg          = {{Convert|6|km|mi|abbr=on}}
+| width_max          = {{Convert|8|km|mi|abbr=on}}
+| depth_min          = {{Convert|3|m|ft|abbr=on}}
+| depth_avg          = {{Convert|15|m|ft|abbr=on}}
+| depth_max          = {{Convert|30|m|ft|abbr=on}}
+| discharge1_location= [[Santarém, Pará]]
+| discharge1_min     = {{Convert|109000|m3/s|ft3/s|abbr=on}}
+| discharge1_avg     = {{Convert|209000|m3/s|ft3/s|abbr=on}}
+| discharge1_max     = {{Convert|309000|m3/s|ft3/s|abbr=on}}
+
+| source1            = [[Nevado Mismi]], [[:en:Peru|Peru]]
+| source1_location   = [[:en:Arequipa Region|Arequipa Region]]
+| source1_coordinates= {{coord|15|31|05|S|71|45|55|W}}
+| source1_elevation  = {{Convert|5170|m|ft|abbr=on}}
+| mouth              = [[:en:Atlantic Ocean|Atlantic Ocean]]
+| mouth_location     = [[:en:Amapá|State of Amapá]], [[Pará|State of Pará]]
+| mouth_coordinates  = {{coord|00|42|28|S|50|05|22|W}}
+| mouth_elevation    = {{Convert|0|m|ft|abbr=on}}
+| progression        = [[:en:Apurímac River|Apurímac]]—[[Solimões River|Solimões]]—[[Marañón River|Marañón]]
+| river_system       = [[:en:Amazon Basin|Amazon Basin]]
+| basin_size_km2     = 7050000
+| basin_landmarks    = [[:en:Arena da Amazônia|Amazon Arena]]
+| basin_population   = 1,234,567
+| tributaries_left   = {{hlist|[[Marañón River|Marañón]]|[[Japurá River|Japurá]]|[[Rio Negro (Amazon)|Rio Negro]]|[[Putumayo River|Putumayo]]}}
+| tributaries_right  = {{hlist|[[Ucayali River|Ucayali]]|[[Purus River|Purus]]|[[Madeira River|Madeira]]|[[Tapajós]]|[[Xingu River|Xingu]]}}
+| waterbodies        = [[Lawriqucha|Lake Lawriqucha]]
+| waterfalls         = [[Noel Kempff Mercado National Park|Ahlfeld Waterfall]]
+| bridges            = [[Manaus–Iranduba Bridge]]
+| ports              = [[Port of Manaus]]
+| custom_label       = '''''Custom label'''''
+| custom_data        = ''Custom data''
+| extra              =
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox river
+| name               = Amazon River (dummy data)
+| name_native        = {{Native name|pt|Amazonia}}
+| name_other         = Apurímac, Ene, Tambo, Ucayali, Amazonas, Solimões
+| name_etymology     = Named after the Amazon Rainforest
+| image = Amazon River ESA387332.jpg
+| image_caption = Satellite image of the [[:en:Amazon Delta|Amazon Delta]]
+| image_alt          = Alt text for image
+| map                = Amazonrivermap.svg
+| map_caption        = Map of the Amazon basin
+| map_alt            = Alt text for map
+| pushpin_map        = Brazil
+| pushpin_map_caption= Location of the mouth in Brazil
+| pushpin_map_alt    = Map showing the location of the river mouth in Brazil
+| mapframe = yes
+| subdivision_type1  = Countries
+| subdivision_name1  = [[:en:Brazil|Brazil]], [[:en:Colombia|Colombia]], [[:en:Peru|Peru]], [[:en:Ecuador|Ecuador]]
+| subdivision_type2  = States
+| subdivision_name2  = [[Loreto Region|Loreto]] (Peru);<br />[[Amazonas (Colombian department)|Amazonas]] (Columbia);<br />[[North Region, Brazil|North Region]] (Brazil)
+| subdivision_type3  = Cities
+| subdivision_name3  = [[Iquitos]] (Peru); [[Leticia, Amazonas|Leticia]] (Colombia);<br /> [[Tabatinga]] (Brazil); [[Tefé]] (Brazil);<br /> [[Itacoatiara, Amazonas|Itacoatiara]] (Brazil); [[Parintins]] (Brazil);<br /> [[Óbidos, Pará|Óbidos]] (Brazil); [[Santarém, Pará|Santarém]] (Brazil);<br /> [[:en:Almeirim, Pará|Almeirim]] (Brazil); [[Macapá]] (Brazil)
+
+| length_km          = 6992
+| width_min          = {{Convert|4|km|mi|abbr=on}}
+| width_avg          = {{Convert|6|km|mi|abbr=on}}
+| width_max          = {{Convert|8|km|mi|abbr=on}}
+| depth_min          = {{Convert|3|m|ft|abbr=on}}
+| depth_avg          = {{Convert|15|m|ft|abbr=on}}
+| depth_max          = {{Convert|30|m|ft|abbr=on}}
+| discharge1_location= [[Santarém, Pará]]
+| discharge1_min     = {{Convert|109000|m3/s|ft3/s|abbr=on}}
+| discharge1_avg     = {{Convert|209000|m3/s|ft3/s|abbr=on}}
+| discharge1_max     = {{Convert|309000|m3/s|ft3/s|abbr=on}}
+
+| source1            = [[Nevado Mismi]], [[:en:Peru|Peru]]
+| source1_location   = [[:en:Arequipa Region|Arequipa Region]]
+| source1_coordinates= {{coord|15|31|05|S|71|45|55|W}}
+| source1_elevation  = {{Convert|5170|m|ft|abbr=on}}
+| mouth              = [[:en:Atlantic Ocean|Atlantic Ocean]]
+| mouth_location     = [[:en:Amapá|State of Amapá]], [[Pará|State of Pará]]
+| mouth_coordinates  = {{coord|00|42|28|S|50|05|22|W|display=inline,title}}
+| mouth_elevation    = {{Convert|0|m|ft|abbr=on}}
+| progression        = [[:en:Apurímac River|Apurímac]]—[[Solimões River|Solimões]]—[[Marañón River|Marañón]]
+| river_system       = [[:en:Amazon Basin|Amazon Basin]]
+| basin_size_km2     = 7050000
+| basin_landmarks    = [[:en:Arena da Amazônia|Amazon Arena]]
+| basin_population   = 1,234,567
+| tributaries_left   = {{hlist|[[Marañón River|Marañón]]|[[Japurá River|Japurá]]|[[Rio Negro (Amazon)|Rio Negro]]|[[Putumayo River|Putumayo]]}}
+| tributaries_right  = {{hlist|[[Ucayali River|Ucayali]]|[[Purus River|Purus]]|[[Madeira River|Madeira]]|[[Tapajós]]|[[Xingu River|Xingu]]}}
+| waterbodies        = [[Lawriqucha|Lake Lawriqucha]]
+| waterfalls         = [[Noel Kempff Mercado National Park|Ahlfeld Waterfall]]
+| bridges            = [[Manaus–Iranduba Bridge]]
+| ports              = [[Port of Manaus]]
+| custom_label       = '''''Custom label'''''
+| custom_data        = ''Custom data''
+| extra              = ''(optional content at the bottom – centred)''
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== Template Data ==
+{{TemplateData header}}
+{{collapse top|bg=#ccc|title=Template Data}}
+<templatedata>
+{
+    "params": {
+        "embed": {},
+        "name": {},
+        "qid": {},
+        "suppressfields": {},
+        "fetchwikidata": {},
+        "image": {
+            "type": "wiki-file-name"
+        },
+        "image_size": {},
+        "image_upright": {},
+        "image_alt": {},
+        "image_caption": {},
+        "map": {},
+        "map_size": {},
+        "map_alt": {},
+        "map_caption": {},
+        "mouth_coordinates": {},
+        "pushpin_map": {},
+        "pushpin_map_alt": {},
+        "pushpin_map_size": {},
+        "pushpin_map_relief": {},
+        "pushpin_map_caption": {},
+        "name_native": {},
+        "native_name": {},
+        "name_other": {},
+        "other_name": {},
+        "nickname": {},
+        "etymology": {},
+        "name_etymology": {},
+        "subdivision_type1": {},
+        "country_type": {},
+        "subdivision_name1": {},
+        "country": {},
+        "subdivision_type2": {},
+        "state_type": {},
+        "subdivision_name2": {},
+        "state": {},
+        "subdivision_type3": {},
+        "region_type": {},
+        "subdivision_name3": {},
+        "region": {},
+        "subdivision_type4": {},
+        "district_type": {},
+        "subdivision_name4": {},
+        "district": {},
+        "subdivision_type5": {},
+        "municipality_type": {},
+        "subdivision_name5": {},
+        "municipality": {},
+        "cities": {},
+        "city": {},
+        "source1": {},
+        "source1_location": {},
+        "source1_length": {},
+        "source1_elevation": {},
+        "source1_coordinates": {},
+        "source1_coord_ref": {},
+        "source2": {},
+        "source2_location": {},
+        "source2_length": {},
+        "source2_elevation": {},
+        "source2_coordinates": {},
+        "source2_coord_ref": {},
+        "source3": {},
+        "source3_location": {},
+        "source3_length": {},
+        "source3_elevation": {},
+        "source3_coordinates": {},
+        "source3_coord_ref": {},
+        "source4": {},
+        "source4_location": {},
+        "source4_length": {},
+        "source4_elevation": {},
+        "source4_coordinates": {},
+        "source4_coord_ref": {},
+        "source5": {},
+        "source5_location": {},
+        "source5_length": {},
+        "source5_elevation": {},
+        "source5_coordinates": {},
+        "source5_coord_ref": {},
+        "source_confluence": {},
+        "source_confluence_location": {},
+        "source_confluence_elevation": {},
+        "source_confluence_coordinates": {},
+        "source_confluence_coord_ref": {},
+        "mouth": {},
+        "mouth_location": {},
+        "mouth_elevation": {},
+        "mouth_elevation_metric": {},
+        "mouth_elevation_imperial": {},
+        "mouth_coord_ref": {},
+        "length": {},
+        "length_metric": {},
+        "length_imperial": {},
+        "width_min": {},
+        "width_min_metric": {},
+        "width_min_imperial": {},
+        "width_avg": {},
+        "width_avg_metric": {},
+        "width_avg_imperial": {},
+        "width_max": {},
+        "width_max_metric": {},
+        "width_max_imperial": {},
+        "depth_min": {},
+        "depth_avg": {},
+        "depth_max": {},
+        "discharge1_location": {},
+        "discharge1_min": {},
+        "discharge1_avg": {},
+        "discharge1_max": {},
+        "discharge1": {},
+        "discharge1_min_metric": {},
+        "discharge1_min_imperial": {},
+        "discharge1_avg_metric": {},
+        "discharge1_avg_imperial": {},
+        "discharge1_max_metric": {},
+        "discharge1_max_imperial": {},
+        "discharge2": {},
+        "discharge2_location": {},
+        "discharge2_min": {},
+        "discharge2_avg": {},
+        "discharge2_max": {},
+        "discharge3": {},
+        "discharge3_location": {},
+        "discharge3_min": {},
+        "discharge3_avg": {},
+        "discharge3_max": {},
+        "discharge4": {},
+        "discharge4_location": {},
+        "discharge4_min": {},
+        "discharge4_avg": {},
+        "discharge4_max": {},
+        "discharge5": {},
+        "discharge5_location": {},
+        "discharge5_min": {},
+        "discharge5_avg": {},
+        "discharge5_max": {},
+        "progression": {},
+        "river_system": {},
+        "basin_size": {},
+        "basin_landmarks": {},
+        "basin_population": {},
+        "tributaries_left": {},
+        "tributaries_right": {},
+        "waterbodies": {},
+        "waterfalls": {},
+        "bridges": {},
+        "ports": {},
+        "landmark": {},
+        "custom_data": {},
+        "parent": {},
+        "custom_label": {},
+        "extra": {},
+		"mapframe": {
+			"label": "Show mapframe map",
+			"description": "Specify yes or no to show or hide the map, overriding the default",
+			"example": "yes",
+			"type": "string",
+			"default": "no",
+			"suggested": true
+		},
+		"mapframe-caption": {
+			"label": "Mapframe caption",
+			"description": "Caption for the map. If mapframe-geomask is set, then the default is \"Location in <<geomask's label>>\"",
+			"type": "string"
+		},
+		"mapframe-custom": {
+			"label": "Custom mapframe",
+			"description": "Use a custom map instead of the automatic mapframe. Specify either a {{maplink}} template, or another template that generates a mapframe map, or an image name. If used, other mapframe parameters will be ignored.",
+			"type": "wiki-template-name"
+		},
+		"mapframe-id": {
+			"aliases": [
+				"id",
+				"qid"
+			],
+			"label": "Mapframe Wikidata item",
+			"description": "Id (Q-number) of Wikidata item to use.",
+			"type": "string",
+			"default": "(item for current page)"
+		},
+		"mapframe-coordinates": {
+			"aliases": [
+				"mapframe-coord",
+				"coordinates",
+				"coord"
+			],
+			"label": "Mapframe coordinates ",
+			"description": "Coordinates to use, instead of any on Wikidata. Use the {{Coord}} template.",
+			"example": "{{Coord|12.34|N|56.78|E}}",
+			"type": "wiki-template-name",
+			"default": "(coordinates from Wikidata)"
+		},
+		"mapframe-wikidata": {
+			"label": "Mapframe shapes from Wikidata",
+			"description": "et to yes to show shape/line features from the wikidata item, if any, when coordinates are specified by parameter",
+			"example": "yes",
+			"type": "string"
+		},
+		"mapframe-shape": {
+			"label": "Mapframe shape feature",
+			"description": "Override display of mapframe shape feature. Turn off by setting to \"none\". Use an inverse shape (geomask) instead of a regular shape by setting to \"inverse\"",
+			"type": "string"
+		},
+		"mapframe-point": {
+			"label": "Mapframe point feature",
+			"description": "Override display of mapframe point feature. Turn off display of point feature by setting to \"none\". Force point marker to be displayed by setting to \"on\"",
+			"type": "string"
+		},
+		"mapframe-geomask": {
+			"label": "Mapframe geomask",
+			"description": "Wikidata item to use as a geomask (everything outside the boundary is shaded darker). Can either be a specific Wikidata item (Q-number), or a property that specifies the item to use (e.g. P17 for country, or P131 for located in the administrative territorial entity)",
+			"example": "Q100",
+			"type": "wiki-page-name"
+		},
+		"mapframe-switcher": {
+			"label": "Mapframe switcher",
+			"description": "Set to \"auto\" or \"geomasks\" or \"zooms\" to enable Template:Switcher-style switching between multiple mapframes. IF SET TO auto – switch geomasks found in location (P276) and located in the administrative territorial entity (P131) statements on the page's Wikidata item, searching recursively. E.g. an item's city, that city's state, and that state's country. IF SET TO geomasks – switch between the geomasks specified as a comma-separated list of Wikidata items (Q-numbers) in the mapframe-geomask parameter. IF SET TO zooms – switch between \"zoomed in\"/\"zoomed midway\"/\"zoomed out\", where \"zoomed in\" is the default zoom (with a minimum of 3), \"zoomed out\" is 1, and \"zoomed midway\" is the average.",
+			"type": "string"
+		},
+		"mapframe-frame-width": {
+			"aliases": [
+				"mapframe-width"
+			],
+			"label": "Mapframe width",
+			"description": "Frame width in pixels",
+			"type": "number",
+			"default": "270"
+		},
+		"mapframe-frame-height": {
+			"aliases": [
+				"mapframe-height"
+			],
+			"label": "Mapframe height",
+			"description": "Frame height in pixels",
+			"type": "number",
+			"default": "200"
+		},
+		"mapframe-shape-fill": {
+			"label": "Mapframe shape fill",
+			"description": "Color used to fill shape features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-shape-fill-opacity": {
+			"label": "Mapframe shape fill opacity",
+			"description": "Opacity level of shape fill, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-stroke-color": {
+			"aliases": [
+				"mapframe-stroke-colour"
+			],
+			"label": "Mapframe stroke color",
+			"description": "Color of line features, and outlines of shape features",
+			"type": "string",
+			"default": "#ff0000"
+		},
+		"mapframe-stroke-width": {
+			"label": "Mapframe stroke width",
+			"description": "Width of line features, and outlines of shape features",
+			"type": "number",
+			"default": "5"
+		},
+		"mapframe-marker": {
+			"label": "Mapframe marker",
+			"description": "Marker symbol to use for coordinates; see [[mw:Help:Extension:Kartographer/Icons]] for options",
+			"example": "museum",
+			"type": "string"
+		},
+		"mapframe-marker-color": {
+			"aliases": [
+				"mapframe-marker-colour"
+			],
+			"label": "Mapframe marker color",
+			"description": "Background color for the marker",
+			"type": "string",
+			"default": "#5E74F3"
+		},
+		"mapframe-geomask-stroke-color": {
+			"aliases": [
+				"mapframe-geomask-stroke-colour"
+			],
+			"label": "Mapframe geomask stroke color",
+			"description": "Color of outline of geomask shape",
+			"type": "string",
+			"default": "#555555"
+		},
+		"mapframe-geomask-stroke-width": {
+			"label": "Mapframe geomask stroke width",
+			"description": "Width of outline of geomask shape",
+			"type": "number",
+			"default": "2"
+		},
+		"mapframe-geomask-fill": {
+			"label": "Mapframe geomask fill",
+			"description": "Color used to fill outside geomask features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-geomask-fill-opacity": {
+			"label": "Mapframe geomask fill opacity",
+			"description": "Opacity level of fill outside geomask features, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-zoom": {
+			"label": "Mapframe zoom",
+			"description": "Set the zoom level, from \"1\" to \"18\", to used if the zoom level cannot be determined automatically from object length or area",
+			"example": "12",
+			"type": "number",
+			"default": "10"
+		},
+		"mapframe-length_km": {
+			"label": "Mapframe length (km)",
+			"description": "Object length in kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-length_mi": {
+			"label": "Mapframe length (mi)",
+			"description": "Object length in miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_km2": {
+			"label": "Mapframe area (km^2)",
+			"description": "Object arean square kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_mi2": {
+			"label": "Mapframe area (mi^2)",
+			"description": "Object area in square miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-frame-coordinates": {
+			"aliases": [
+				"mapframe-frame-coord"
+			],
+			"label": "Mapframe frame coordinates",
+			"description": "Alternate latitude and longitude coordinates for initial placement of map, using {{coord}}",
+			"example": "{{Coord|12.35|N|56.71|E}}",
+			"type": "wiki-template-name"
+		},
+		"mapframe-line": {}
+    },
+    "format": "block"
+}
+</templatedata>
+{{collapse bottom}}
+
+== Subtemplates ==
+* {{Template link|Infobox river/discharge}}
+* {{Template link|Infobox river/row-style}}
+* {{Template link|Infobox river/calcunit}}
+* {{Template link|Infobox river/source}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox river with unknown parameters}}
+* {{clc|Pages using infobox river with mapframe}}
+
+{{When on basepage|
+
+}}
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Place infobox templates|River]]
+[[Category:Independently git synced pages]][[Category:WikiProject Rivers]]
+[[Category:Independently git synced pages]][[Category:WikiProject Rivers templates]]
+[[Category:Independently git synced pages]][[Category:Embeddable templates]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

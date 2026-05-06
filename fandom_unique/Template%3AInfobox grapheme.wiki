@@ -1,0 +1,156 @@
+{{Infobox
+|bodystyle={{#if:{{{boxsize|}}}|width:{{{boxsize}}};}}
+|autoheaders=y
+|abovestyle=background:{{#switch:{{lc:{{{type|}}}}}
+                |abjad|[[abjad]]|impure abjad|impure [[abjad]]|consonantary|[[consonantary]]=palegreen
+                |alphabet|[[alphabet]]=lightblue   |abugida|[[abugida]]=navajowhite
+                |syllabary|[[syllabary]]=pink      |semisyllabary|[[semisyllabary]]=magenta
+                |manual|[[manual]]=paleturquoise   |pictographic|[[pictographic]]=palegoldenrod
+                |ideographic|[[ideographic]]=gold  |logographic|[[logographic]]|[[logosyllabic]]=mistyrose
+                |stenography|[[stenography]] |shorthand|[[shorthand]] =
+                  {{#switch:{{lc:{{{SHtype|}}}}}
+                   |abjad|[[abjad]]|impure abjad|impure [[abjad]]|consonantal|[[consonantal]]=palegreen
+                   |alphabetic|[[alphabetic]]=lightblue   |abugida|[[abugida]]=navajowhite
+                   |syllabic|[[syllabic]]=pink            |semisyllabic|[[semisyllabic]]=magenta
+                   |undeciphered=gainsboro                |alternative=khaki
+                   |#default=turquoise
+                  }}
+                |undeciphered=gainsboro   |alternative=khaki
+                |tactile=white;font-variant:small-caps
+                |#default=white
+               }};
+         color:{{#switch:{{lc:{{{SHform|}}}}}
+                |cursive|printed=#303030  |stenographic=#405000  |geometric=#005020
+                |semi-script|elliptical|script-geometric=#600000 |script=#500030
+                |#default= #202122;
+               }};{{#switch:{{lc:{{{mode|}}}}}
+                |tactile=font-variant:small-caps
+                |stenographic|[[stenographic]]|shorthand|[[shorthand]]=font-style:italic
+                |manual=font-style:italic;font-variant:small-caps
+                |#default=
+               }};
+|headerstyle=background:{{#switch:{{lc:{{{type|}}}}}
+                |abjad|[[abjad]]|impure abjad|impure [[abjad]]|consonantary|[[consonantary]]=palegreen
+                |alphabet|[[alphabet]]=lightblue   |abugida|[[abugida]]=navajowhite
+                |syllabary|[[syllabary]]=pink      |semisyllabary|[[semisyllabary]]=magenta
+                |manual|[[manual]]=paleturquoise   |pictographic|[[pictographic]]=palegoldenrod
+                |ideographic|[[ideographic]]=gold  |logographic|[[logographic]]|[[logosyllabic]]=mistyrose
+                |stenography|[[stenography]] |shorthand|[[shorthand]] =
+                  {{#switch:{{lc:{{{SHtype|}}}}}
+                   |abjad|[[abjad]]|impure abjad|impure [[abjad]]|consonantal|[[consonantal]]=palegreen
+                   |alphabetic|[[alphabetic]]=lightblue   |abugida|[[abugida]]=navajowhite
+                   |syllabic|[[syllabic]]=pink            |semisyllabic|[[semisyllabic]]=magenta
+                   |undeciphered=gainsboro                |alternative=khaki
+                   |#default=turquoise
+                  }}
+                |undeciphered=gainsboro   |alternative=khaki
+                |tactile=white;font-variant:small-caps
+                |#default=white
+               }};
+         color:{{#switch:{{lc:{{{SHform|}}}}}
+                |cursive|printed=#303030  |stenographic=#405000  |geometric=#005020
+                |semi-script|elliptical|script-geometric=#600000 |script=#500030
+                |#default=#202122;
+               }};
+    font-variant/style:
+            {{#switch:{{lc:{{{mode|}}}}}
+                |tactile=font-variant:small-caps
+                |stenographic|[[stenographic]]|shorthand|[[shorthand]]=font-style:italic
+                |manual=font-style:italic;font-variant:small-caps
+                |#default=
+               }};
+|above={{{name|{{PAGENAME}}}}}
+|subheader=<span style="font-size: 4em; line-height: 1.2em; vertical-align: super; font-weight: normal;">{{{letter|}}}</span>
+|subheader2={{{variations|}}}
+|image={{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{imagesize|}}}|sizedefault=frameless|upright={{{imageupright|1}}}|alt={{{imagealt|}}}|class={{{imageclass|}}}|suppressplaceholder=yes}}
+|image2={{#invoke:InfoboxImage|InfoboxImage|image={{{image2|}}}|size={{{imagesize2|{{{imagesize|}}}}}}|sizedefault=frameless|upright={{{imageupright2|1}}}|alt={{{imagealt2|}}}|class={{{imageclass2|}}}|suppressplaceholder=yes}}
+|image3={{#invoke:InfoboxImage|InfoboxImage|image={{{image3|}}}|size={{{imagesize3|{{{imagesize|}}}}}}|sizedefault=frameless|upright={{{imageupright3|1}}}|alt={{{imagealt3|}}}|class={{{imageclass3|}}}|suppressplaceholder=yes}}
+|header1=Usage
+|label2=Writing system
+|data2={{{script|}}}
+|label3=Type
+|data3={{{type|}}}{{{typedesc|}}}
+|label4=Language of origin
+|data4={{{language|}}}
+|label5=Sound values
+|data5={{#ifeq:{{{type|}}}|pictographic||{{#ifeq:{{{type|}}}|[[pictographic]]||{{{phonemes|}}}}}}}
+|label6=In&nbsp;[[Unicode]]
+|data6={{#if:{{{unicode|}}}|{{#if:{{{no_unicode_code|}}}|{{{unicode|}}}|<code>{{{unicode|}}}</code>}}}}
+|label7={{#switch:{{lc:{{{type|}}}}}
+                |[[abjad]]|abjad|[[abuguida]]|abuguida|[[alphabet]]|alphabet=Alphabetical|#default=Lexicographic}} position
+|data7={{{alphanumber|}}}
+|header8=History
+|label9=Development
+|data9={{#if:{{{fam1|}}}
+|<div style="font-size: 1.25em;">{{{fam1}}}}}{{#if:{{{fam2|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam2}}}}}{{#if:{{{fam3|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam3}}}}}{{#if:{{{fam4|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam4}}}}}{{#if:{{{fam5|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam5}}}}}{{#if:{{{fam6|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam6}}}}}{{#if:{{{fam7|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam7}}}}}{{#if:{{{fam8|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam8}}}}}{{#if:{{{fam9|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam9}}}}}{{#if:{{{fam10|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam10}}}}}{{#if:{{{fam11|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam11}}}}}{{#if:{{{fam12|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam12}}}}}{{#if:{{{fam13|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam13}}}}}{{#if:{{{fam14|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam14}}}}}{{#if:{{{fam15|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam15}}}}}{{#if:{{{fam16|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam16}}}}}{{#if:{{{fam17|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam17}}}}}{{#if:{{{fam18|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam18}}}}}{{#if:{{{fam19|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam19}}}}}{{#if:{{{fam20|}}}
+|<ul style="margin-left:0.45em;"><li>{{{fam20}}}}}{{#if:{{{fam1|}}}|<ul style="margin-left:0.45em;"><li><b>{{{letter|{{PAGENAME}}}}}</b></li></ul>}}{{#if:{{{fam20|}}}
+|</li></ul>}}{{#if:{{{fam19|}}}
+|</li></ul>}}{{#if:{{{fam18|}}}
+|</li></ul>}}{{#if:{{{fam17|}}}
+|</li></ul>}}{{#if:{{{fam16|}}}
+|</li></ul>}}{{#if:{{{fam15|}}}
+|</li></ul>}}{{#if:{{{fam14|}}}
+|</li></ul>}}{{#if:{{{fam13|}}}
+|</li></ul>}}{{#if:{{{fam12|}}}
+|</li></ul>}}{{#if:{{{fam11|}}}
+|</li></ul>}}{{#if:{{{fam10|}}}
+|</li></ul>}}{{#if:{{{fam9|}}}
+|</li></ul>}}{{#if:{{{fam8|}}}
+|</li></ul>}}{{#if:{{{fam7|}}}
+|</li></ul>}}{{#if:{{{fam6|}}}
+|</li></ul>}}{{#if:{{{fam5|}}}
+|</li></ul>}}{{#if:{{{fam4|}}}
+|</li></ul>}}{{#if:{{{fam3|}}}
+|</li></ul>}}{{#if:{{{fam2|}}}
+|</li></ul>}}{{#if:{{{fam1|}}}
+|</div>}}
+|label10=Time period
+|data10={{{usageperiod|}}}
+|label11=Descendants
+|data11={{{children|}}}
+|label12=Sisters
+|data12={{{sisters|}}}
+|label13=Transliterations
+|data13={{{equivalents|}}}
+|label14=Variations
+|data14={{{variations|}}}
+|header15=Other
+|label16=Associated graphs
+|data16={{{associates|}}}
+|label17=Associated numbers
+|data17={{{number|}}}
+|label18=Writing direction
+|data18={{{direction|}}}
+|data25={{{module|}}}
+|belowclass=noprint selfref
+|belowstyle=padding:0.3em 0.5em;text-align:left;line-height:1.3;
+|below={{#if:{{{phonemes|}}}|{{IPA notice/msg}}|}}
+}}<includeonly>{{#if:{{{letter|}}}||}}</includeonly>{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox grapheme]] with unknown parameter "_VALUE_"|ignoreblank=y| alphanumber | associates | boxsize | children | direction | equivalents | fam1 | fam2 | fam3 | fam4 | fam5 | fam6 | fam7 | fam8 | fam9 | fam10 | fam11 | fam12 | fam13 | fam14 | fam15 | fam16 | fam17 | fam18 | fam19 | fam20 | image | image2 | image3 | imagealt | imagealt2 | imagealt3 | imageclass | imageclass2 | imageclass3 | imagesize | imagesize2 | imagesize3 | imageupright | imageupright2 | imageupright3 | language | letter | mode | module | name | no_unicode_code | number | phonemes | script | SHform | SHtype | sisters | type | typedesc | unicode | usageperiod | variations }}<noinclude>
+{{documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Pages using Template:Infobox grapheme without param letter]]
+[[Category:Pages using infobox grapheme with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

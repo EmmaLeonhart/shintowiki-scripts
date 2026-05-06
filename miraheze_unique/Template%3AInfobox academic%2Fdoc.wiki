@@ -1,0 +1,700 @@
+{{Documentation subpage}}
+{{High-use}}
+
+{{Person infobox header}}
+{{Uses infobox person|wrapped=1}}
+{{Lua|Module:Template wrapper|Module:Check for clobbered parameters}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+{{Parameter names example
+| honorific_prefix
+| name
+| honorific_suffix
+| image 
+| image_size 
+| alt
+| caption
+| native_name
+| native_name_lang
+| birth_name
+| birth_date
+| birth_place
+| death_date
+| death_place
+| death_cause
+| nationality 
+| citizenship 
+| other_names 
+| occupation 
+| period
+| known_for
+| title
+| boards
+| spouse
+| partner
+| children
+| parents
+| relatives
+| awards
+
+| education
+| alma_mater
+| thesis_title
+| thesis_url
+| thesis_year
+| school_tradition
+| doctoral_advisor
+| academic_advisors
+| influences
+
+| era
+| discipline
+| sub_discipline
+| workplaces 
+| doctoral_students
+| notable_students
+| main_interests
+| notable_works 
+| notable_ideas 
+| influenced
+| website
+
+| signature
+| signature_size
+| signature_alt 
+
+| footnotes
+}}
+
+{{tl|Infobox academic}} may be used to summarize information about a person who is or has been a member of an academic institution working on research-related endeavors, broadly construed.
+
+To use the template, copy the wikitext below, and paste it in the top section of the article’s main page. If the article is not divided into sections, it should be placed on top. Then, fill out the data fields. You can omit any unused fields. 
+
+== Blank template ==
+<syntaxhighlight lang="wikitext" style="overflow:auto; white-space:pre;">
+{{Infobox academic
+| honorific_prefix   = 
+| name               = 
+| honorific_suffix   = 
+| image              = 
+| image_size         = 
+| alt                = 
+| caption            = 
+| native_name        = 
+| native_name_lang   = 
+| birth_name         = 
+| birth_date         = 
+| birth_place        = 
+| death_date         = 
+| death_place        = 
+| death_cause        = 
+| nationality        = 
+| citizenship        = 
+| other_names        = 
+| occupation         = 
+| period             = 
+| known_for          = 
+| title              = 
+| boards             = 
+| spouse             = 
+| partner            = 
+| children           = 
+| parents            = 
+| relatives          = 
+| awards             = 
+| website            = 
+| education          = 
+| alma_mater         = 
+| thesis_title       = 
+| thesis_url         = 
+| thesis_year        = 
+| school_tradition   = 
+| doctoral_advisor   = 
+| academic_advisors  = 
+| influences         = 
+| era                = 
+| discipline         = 
+| sub_discipline     = 
+| workplaces         = 
+| doctoral_students  = 
+| notable_students   = 
+| main_interests     = 
+| notable_works      = 
+| notable_ideas      = 
+| influenced         = 
+| signature          = 
+| signature_alt      = 
+| signature_size     = 
+| footnotes          = 
+}}
+</syntaxhighlight>
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; white-space:pre;">
+{{Infobox academic
+| honorific_prefix   = 
+| name               = 
+| honorific_suffix   = 
+| image              = 
+| image_size         = 
+| alt                = 
+| caption            = 
+| native_name        = 
+| native_name_lang   = 
+| birth_name         = 
+| birth_date         = 
+| birth_place        = 
+| death_date         = 
+| death_place        = 
+| death_cause        = 
+| nationality        = 
+| citizenship        = 
+| other_names        = 
+| occupation         = 
+| period             = 
+| known_for          = 
+| title              = 
+| boards             = 
+| spouse             = 
+| partner            = 
+| children           = 
+| parents            = 
+| relatives          = 
+| awards             = 
+| website            = 
+| education          = 
+| alma_mater         = 
+| thesis_title       = 
+| thesis_url         = 
+| thesis_year        = 
+| school_tradition   = 
+| doctoral_advisor   = 
+| academic_advisors  = 
+| influences         = 
+| era                = 
+| discipline         = 
+| sub_discipline     = 
+| workplaces         = 
+| doctoral_students  = 
+| notable_students   = 
+| main_interests     = 
+| notable_works      = 
+| notable_ideas      = 
+| influenced         = 
+| signature          = 
+| signature_alt      = 
+| signature_size     = 
+| footnotes          = 
+}}
+</syntaxhighlight>
+
+== Parameters ==
+This is an list of commonly-used parameters. For a complete list, see [[Template:Infobox person/doc#Parameters|here]].
+; name
+: The name under which the academic is best known. This should usually be the same as the article name, and will default to <code><nowiki>{{PAGENAME}}</nowiki></code> if not specified.
+; image
+: Image. Use the name of the image file only, i.e. do not include "File:".
+; image_size
+: Width of the image. Default is <code>frameless</code> and should not normally need to be specified manually.
+; alt
+: Alt text for the image, for visually impaired readers. See [[WP:ALT]]. It should be specified if '''image''' is specified.
+; caption
+: Caption for image, if necessary; if the image is simply a headshot of the subject, a caption restating the subject's name is unnecessary
+; honorific_prefix
+: See [[MOS:CREDENTIAL]] and [[MOS:HONORIFIC]]
+; honorific_suffix
+; native_name
+: The person's name in their own language, if different.
+; native_name_lang
+:ISO 639-1 code, e.g., "fr" for French. 
+; birth_name
+: Name at birth; only use if different from <code>|name=</code> parameter
+; birth_date
+: Date of birth; can be approximate; use {{tl|birth date}} or related template where possible.  For living people supply ''only the year'' unless the exact date is already WIDELY published (per [[WP:DOB]])— treat such cases as if only the year is known, so use {{tl|birth year and age}} or a similar option
+; birth_place
+: Place of birth
+; death_date
+: Date of death. Can be approximate. Use {{tl|death date and age}} or related template where possible
+; death_place
+: Place of death; use city if possible, otherwise use country; do not give coordinates
+; death_cause
+: Cause of death, if relevant to article; e.g., accidental radiation poisoning
+; burial_place
+: Place of burial (city, administrative region, country).  Don't use flag templates, inappropriate linking, redundancy, anachronisms, "country" definitions, etc. See {{para|resting_place}} for non-burials.
+; burial_coordinates
+: Coordinates for place of burial, to accompany {{para|burial_place}}. Use the {{tl|coord}} template. 
+; resting_place
+: Location of columbarium, ash-scattering, etc. If no location, leave blank.
+; resting_place_coordinates
+: Coordinates for resting place, to accompany {{para|resting_place}}. Use the {{tl|coord}} template. 
+; nationality
+: Use only when necessary per [[WP:INFONAT]]
+; citizenship
+: Use only when necessary per [[WP:INFONAT]]
+; other_names
+: Other notable names for the person, if different from <code>|name=</code> and <code>|birth_name</code>.
+; occupation
+: Should match full occupational description of most recent employment
+; period
+; known_for
+; title
+: Should match full occupational title; e.g., Distinguished professor, Associate professor, etc.
+; boards 
+: Should be for board or similar positions extraneous to main occupation - not editorial boards in the person's subject
+; spouse
+; partner
+; children
+; parents
+; relatives
+: Should only be included if the spouse is independently notable or there is discussion in a reliable published source that confirms their name and existence
+; awards  
+: Should be restricted to only major national-level awards related to academic work   
+; website      
+: Should be only an academic's own collegiate page or personal professional page
+; education
+: Should be explained in the main text of the article; those that are not mentioned in the main text are subject to removal
+; alma_mater 
+: Will often consist of the linked name of the last-attended higher education institution
+; thesis_title     
+: Should match full thesis title
+; thesis_url    
+: Should be where the these is available freely; not for commercial advertising usage
+; thesis_year   
+: Year thesis was completed and registered with corresponding institution
+; school_tradition
+; doctoral_advisor   
+: Should be explained in the main text of the article; those that are not mentioned in the main text may be deleted
+; academic_advisors
+: Names of any significant educational advisors (other than doctoral advisor)
+; influences
+: Should be explained in the main text of the article and have a third-party source; those that are not mentioned in the main text may be deleted
+; era
+; discipline        
+: Major academic discipline - e.g. physicist, sociologist, New Testament scholar, Ancient Near Eastern linguist
+; sub_discipline 
+: Academic discipline specialist area - e.g. Sub-atomic research, 20th Century Danish specialist, Pauline research, Arcadian and Ugaritic specialist
+; workplaces
+: Should be major academic tenures; do not include student or part-time positions or postdoctoral fellowships 
+; doctoral_students 
+: Only include students who have been supervised at doctoral level by the academic and are notable enough for WP articles. Should be explained in the main text of the article; those that are not mentioned in the main text may be deleted
+; notable_students 
+: Only those students who have had substantial contact with the academic (such as through a [[tutorial system]] or undergraduate/masters thesis supervision) and are notable enough for WP articles. Should be explained in the main text of the article; those that are not mentioned in the main text may be deleted
+; main_interests  
+: Should be explained in the main text of the article; those that are not mentioned in the main text are subject to deletion
+; notable_works  
+: Should be explained in the main text of the article; those that are not mentioned in the main text are subject to deletion
+; notable_ideas
+: Should be explained in the main text of the article; those that are not mentioned in the main text are subject to deletion
+; influenced
+: Should be explained in the main text of the article and have a third-party source; those that are not mentioned in the main text are subject to deletion
+; signature
+: link to file containing subject's signature, if somehow relevant to the subject's personal history
+; signature_size
+; signature_alt
+; footnotes 
+: For any footnotes needed to clarify entries above; this section is also often used to add additional notable information, typically if the scientist is a relative of another person with a wikipedia article
+
+=== Use as a child template ===
+; child
+: For embedding this infobox into another.
+
+:{{Infobox person module documentation|Infobox academic}}
+
+== Example ==
+{{Infobox academic
+| name               = C. S. Lewis 
+| image              = Example-serious.jpg 
+| caption            = C.S. Lewis aged 50
+| birth_name         = Clive Staples Lewis 
+| birth_date         = {{birth date|1898|11|29|df=yes}} 
+| birth_place        = [[:en:Belfast|Belfast]], Ireland
+| death_date         = {{death date and age|1963|11|22|1898|11|29|df=yes}}
+| death_place        = [[Oxford]], England
+| occupation         = Novelist, academic, broadcaster
+| spouse             = {{marriage|[[Joy Davidman]]|1956|1960|reason=died}}
+| alma_mater         = Oxford University
+| influences         = 
+| workplaces         = [[Magdalen College, Oxford]]<br />[[Magdalene College, Cambridge]]
+| main_interests     = [[Christian apologetics]]
+| notable_works      = ''[[The Chronicles of Narnia]]''<br />''[[Mere Christianity]]''<br />''[[The Allegory of Love]]''<br />''[[The Screwtape Letters]]''<br />[[The Space Trilogy]]<br />''[[Till We Have Faces]]''<br />''[[Surprised by Joy: The Shape of My Early Life]]''
+| notable_ideas      = 
+| influenced         = 
+| signature          = 
+| signature_size     = 
+| footnotes          = 
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto; white-space:pre;">
+{{Infobox academic
+| name               = C. S. Lewis 
+| image              = Example-serious.jpg 
+| caption            = C.S. Lewis aged 50
+| birth_name         = Clive Staples Lewis 
+| birth_date         = {{birth date|1898|11|29|df=yes}} 
+| birth_place        = [[:en:Belfast|Belfast]], Ireland
+| death_date         = {{death date and age|1963|11|22|1898|11|29|df=yes}}
+| death_place        = [[Oxford]], England
+| occupation         = Novelist, academic, broadcaster
+| spouse             = {{marriage|[[Joy Davidman]]|1956|1960|reason=died}}
+| alma_mater         = Oxford University
+| influences         = 
+| workplaces         = [[Magdalen College, Oxford]]<br />[[Magdalene College, Cambridge]]
+| main_interests     = [[Christian apologetics]]
+| notable_works      = ''[[The Chronicles of Narnia]]''<br />''[[Mere Christianity]]''<br />''[[The Allegory of Love]]''<br />''[[The Screwtape Letters]]''<br />[[The Space Trilogy]]<br />''[[Till We Have Faces]]''<br />''[[Surprised by Joy: The Shape of My Early Life]]''
+| notable_ideas      = 
+| influenced         = 
+| signature          = 
+| signature_size     = 
+| footnotes          = 
+}}
+</syntaxhighlight>
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox academic with unknown parameters}}
+* {{clc|Pages using infobox academic with conflicting parameters}}
+* {{clc|No local image but image on Wikidata}} – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[:en:Wikidata|Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== See also ==
+* {{tl|Infobox person}}
+
+== TemplateData ==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"params": {
+		"honorific_prefix": {
+			"aliases": [
+				"honorific prefix"
+			],
+			"label": "Honorific prefix",
+			"description": "To appear on the line above the person's name"
+		},
+		"name": {
+			"label": "Name",
+			"description": "The name under which the academic is best known. This should usually be the same as the article name, and will default to {{PAGENAME}} if not specified.",
+			"suggested": true
+		},
+		"honorific_suffix": {
+			"aliases": [
+				"honorific suffix"
+			],
+			"label": "Honorific suffix",
+			"description": "To appear on the line below the person's name"
+		},
+		"native_name": {
+			"label": "Native name"
+		},
+		"native_name_lang": {
+			"label": "Native name language",
+			"description": "e.g. fr, de, ru"
+		},
+		"image": {
+			"label": "Image",
+			"description": "Use the name of the image file only, i.e. do not include \"File:\".",
+			"type": "wiki-file-name",
+			"suggested": true
+		},
+		"image_name": {
+			"label": "Image name"
+		},
+		"image_size": {
+			"label": "Image size",
+			"description": "Width of the image. Default is frameless and should not normally need to be specified manually."
+		},
+		"alt": {
+			"label": "Alt text"
+		},
+		"caption": {
+			"suggested": true,
+			"label": "Caption"
+		},
+		"birth_name": {
+			"aliases": [
+				"birth name"
+			],
+			"label": "Birth name",
+			"description": "The birth name of the academic. Only specify if different from name."
+		},
+		"birth_date": {
+			"aliases": [
+				"birth date"
+			],
+			"label": "Birth date",
+			"description": "Date of birth. Can be approximate. Use {{birth date}} or related template where possible. For living people supply only the year unless the exact date is already WIDELY published, as per WP:DOB. Treat such cases as if only the year is known, so use {{birth year and age}} or a similar option."
+		},
+		"birth_place": {
+			"aliases": [
+				"birth place"
+			],
+			"label": "Place of birth"
+		},
+		"death_date": {
+			"aliases": [
+				"death date"
+			],
+			"label": "Death date",
+			"description": "Date of death. Can be approximate. Use {{death date and age}} or related template where possible."
+		},
+		"death_place": {
+			"aliases": [
+				"death place"
+			],
+			"label": "Death place",
+			"description": "Place of death"
+		},
+		"death_cause": {
+			"label": "Death cause",
+			"description": "Only if relevant"
+		},
+		"burial_place": {
+			"label": "Burial place",
+			"description": "Place of burial, alternative to 'Resting place' Displays the label 'Burial place'.",
+			"type": "content"
+		},
+		"burial_coordinates": {
+			"label": "Burial place coordinates",
+			"description": "Coordinates for place of burial, to accompany 'Burial place'. Use {{coord}} template."
+		},
+		"resting_place": {
+			"description": "Place of burial, ash-scattering, etc. Do not use a flag template.",
+			"label": "Resting place",
+			"type": "content"
+		},
+		"resting_place_coordinates": {
+			"description": "Coordinates for place of burial, ash-scattering etc. Use Template:coord template.",
+			"label": "Resting place coordinates"
+		},
+		"citizenship": {
+			"label": "Citizenship",
+			"description": "Only use if not clear from birthplace"
+		},
+		"othernames": {},
+		"other_names": {},
+		"occupation": {
+			"label": "Occupation",
+			"description": "Should match full occupational description.",
+			"suggested": true
+		},
+		"titles": {
+			"label": "Titles",
+			"description": "Should match full occupational title."
+		},
+		"period": {},
+		"known_for": {},
+		"title": {},
+		"boards": {},
+		"spouse": {
+			"label": "Spouse"
+		},
+		"partner": {
+			"label": "Partner"
+		},
+		"children": {
+			"label": "Children",
+			"description": "Number, not names, unless the child is themself notable"
+		},
+		"parents": {
+			"label": "Parents",
+			"description": "Only include if relevant or notable"
+		},
+		"relatives": {
+			"label": "Relatives",
+			"description": "Other notable relatives"
+		},
+		"awards": {},
+		"signature": {
+			"label": "Signature"
+		},
+		"signature_size": {},
+		"signature_alt": {},
+		"education": {
+			"label": "Education",
+			"description": "Should be explained in the main text of the article; Those that are not mentioned in the main text may be deleted.",
+			"suggested": true
+		},
+		"alma_mater": {
+			"aliases": [
+				"alma mater"
+			],
+			"label": "Alma mater",
+			"description": "Will often consist of the linked name of the last-attended higher education institution.",
+			"suggested": true
+		},
+		"thesis_title": {
+			"label": "Thesis title"
+		},
+		"thesis_url": {
+			"label": "Thesis URL"
+		},
+		"thesis_year": {
+			"label": "Thesis year"
+		},
+		"school_tradition": {
+			"label": "School tradition"
+		},
+		"doctoral_advisor": {
+			"label": "Doctoral advisor"
+		},
+		"academic_advisors": {
+			"label": "Academic advisors"
+		},
+		"influences": {
+			"label": "Influences"
+		},
+		"era": {
+			"label": "Era"
+		},
+		"discipline": {
+			"label": "Discipline",
+			"description": "Major academic discipline",
+			"suggested": true,
+			"example": "e.g. Physicist, Sociologist, New Testament scholar, Ancient Near Eastern Linguist."
+		},
+		"sub_discipline": {
+			"label": "Sub-discipline",
+			"description": "Academic discipline specialist area",
+			"suggested": true,
+			"example": "e.g. Sub-atomic research, 20th Century Danish specialist, Pauline research, Arcadian and Ugaritic specialist."
+		},
+		"workplaces": {
+			"aliases": [
+				"work_institutions",
+				"work institutions",
+				"work_institution",
+				"work institution"
+			],
+			"label": "Workplace",
+			"description": "Should be major academic tenures, not student or part0-time positions or postdoctoral fellowships",
+			"suggested": true
+		},
+		"doctoral_students": {
+			"label": "Doctoral students"
+		},
+		"notable_students": {
+			"aliases": [
+				"notable students"
+			],
+			"label": "Notable students",
+			"description": "Only those notable enough for WP articles. Should be explained in the main text of the article; Those that are not mentioned in the main text may be deleted."
+		},
+		"main_interests": {
+			"label": "Main interests"
+		},
+		"notable_works": {
+			"aliases": [
+				"notable works",
+				"notableworks"
+			],
+			"label": "Notable works",
+			"description": "Should be explained in the main text of the article; Those that are not mentioned in the main text may be deleted."
+		},
+		"notable_ideas": {
+			"label": "Notable ideas"
+		},
+		"influenced": {},
+		"principal_ideas": {
+			"label": "Principal ideas"
+		},
+		"website": {
+			"label": "Website",
+			"description": "in {{URL}} or {{Official URL}} template (the latter if pulling from Wikidata)"
+		},
+		"footnotes": {
+			"label": "Footnotes"
+		},
+		"H-index": {},
+		"Citations": {},
+		"image_upright": {
+			"label": "Image upright",
+			"description": "More accessible scaling factor, preferred over pixels",
+			"example": "e.g. .7, 1.2"
+		}
+	},
+	"description": "An infobox for articles about academics",
+	"format": "block",
+	"paramOrder": [
+		"honorific_prefix",
+		"name",
+		"honorific_suffix",
+		"native_name",
+		"native_name_lang",
+		"image",
+		"image_name",
+		"image_upright",
+		"image_size",
+		"alt",
+		"caption",
+		"birth_name",
+		"birth_date",
+		"birth_place",
+		"death_date",
+		"death_place",
+		"death_cause",
+		"burial_place",
+		"burial_coordinates",
+		"resting_place",
+		"resting_place_coordinates",
+		"citizenship",
+		"othernames",
+		"other_names",
+		"occupation",
+		"titles",
+		"period",
+		"known_for",
+		"title",
+		"boards",
+		"spouse",
+		"partner",
+		"children",
+		"parents",
+		"relatives",
+		"awards",
+		"signature",
+		"signature_size",
+		"signature_alt",
+		"education",
+		"alma_mater",
+		"thesis_title",
+		"thesis_url",
+		"thesis_year",
+		"school_tradition",
+		"doctoral_advisor",
+		"academic_advisors",
+		"influences",
+		"era",
+		"discipline",
+		"sub_discipline",
+		"workplaces",
+		"doctoral_students",
+		"notable_students",
+		"main_interests",
+		"notable_works",
+		"notable_ideas",
+		"influenced",
+		"principal_ideas",
+		"website",
+		"footnotes",
+		"H-index",
+		"Citations"
+	]
+}
+</templatedata>
+{{collapse bottom}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:People and person infobox templates|Academic]]
+[[Category:Templates calling Infobox person|Academic]]
+[[Category:Biographical templates usable as a module|Academic]]
+[[Category:Infobox templates with module parameter|Academic]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

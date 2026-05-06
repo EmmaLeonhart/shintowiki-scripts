@@ -1,0 +1,176 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AInfobox_hieroglyphs_two-columns for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24938264069|time triggered pipeline]] -->
+<onlyinclude>{| class="infobox toptextcells {{#ifeq:{{{AUSRICHTUNG|right}}}|right|float-right}}" style="border:2px solid #{{Ägyptologie Farbe|6}}; border-collapse:collapse; background:#{{Ägyptologie Farbe|2}}; color:#{{Ägyptologie Farbe|6}}; width:{{{BREITE|300}}}px;" rules="all"
+|-
+! colspan="2" style="background:#{{Ägyptologie Farbe|1}}; color:inherit;"| {{{TITEL|{{PAGENAME}}}}}&nbsp;{{{TITEL-ERWEITERT|in [[:en:Egyptian hieroglyphs|Hieroglyphs]]}}}
+|-
+{{#if: {{{BILD|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD}}}|{{{BILD-BREITE|330px}}}|zentriert|alt=]] {{{BILD-BESCHREIBUNG|}}}
+{{!}}- }}
+{{#if: {{{NAME|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME}}}|center|{{{NAME-KARTUSCHE-SYMBOL|}}}|4={{{NAME-DETERMINATIV|}}}}}{{{NAME-TRANSKRIPTION|}}}{{#if: {{{NAME-TRANSKRIPTION|}}}|<br/>}}{{{NAME-ERKLÄRUNG|}}}
+| {{#if: {{{NAME-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME}}}|center|{{{NAME-SERECH-SYMBOL|}}}|4={{{NAME-DETERMINATIV|}}}}}{{{NAME-TRANSKRIPTION|}}}{{#if: {{{NAME-TRANSKRIPTION|}}}|<br/>}}{{{NAME-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME}}}</div><br/>{{{NAME-TRANSKRIPTION|}}}{{#if: {{{NAME-TRANSKRIPTION|}}}|<br/>}}{{{NAME-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME2|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME2-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME2-IN-KARTUSCHE|}}}
+|{{Hiero/Kartusche|{{{NAME2}}}|center|{{{NAME2-KARTUSCHE-SYMBOL|}}}|4={{{NAME2-DETERMINATIV|}}}}}{{{NAME2-TRANSKRIPTION|}}}{{#if: {{{NAME2-TRANSKRIPTION|}}}|<br/>}}{{{NAME2-ERKLÄRUNG|}}}
+| {{#if: {{{NAME2-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME2}}}|center|{{{NAME2-SERECH-SYMBOL|}}}|4={{{NAME2-DETERMINATIV|}}}}}{{{NAME2-TRANSKRIPTION|}}}{{#if: {{{NAME2-TRANSKRIPTION|}}}|<br/>}}{{{NAME2-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME2}}}</div><br/>{{{NAME2-TRANSKRIPTION|}}}{{#if: {{{NAME2-TRANSKRIPTION|}}}|<br/>}}{{{NAME2-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME3|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME3-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME3-IN-KARTUSCHE|}}}
+|{{Hiero/Kartusche|{{{NAME3}}}|center|{{{NAME3-KARTUSCHE-SYMBOL|}}}|4={{{NAME3-DETERMINATIV|}}}}}{{{NAME3-TRANSKRIPTION|}}}{{#if: {{{NAME3-TRANSKRIPTION|}}}|<br/>}}{{{NAME3-ERKLÄRUNG|}}}
+| {{#if: {{{NAME3-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME3}}}|center|{{{NAME3-SERECH-SYMBOL|}}}|4={{{NAME3-DETERMINATIV|}}}}}{{{NAME3-TRANSKRIPTION|}}}{{#if: {{{NAME3-TRANSKRIPTION|}}}|<br/>}}{{{NAME3-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME3}}}</div><br/>{{{NAME3-TRANSKRIPTION|}}}{{#if: {{{NAME3-TRANSKRIPTION|}}}|<br/>}}{{{NAME3-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME4|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME4-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME4-IN-KARTUSCHE|}}}
+|{{Hiero/Kartusche|{{{NAME4}}}|center|{{{NAME4-KARTUSCHE-SYMBOL|}}}|4={{{NAME4-DETERMINATIV|}}}}}{{{NAME4-TRANSKRIPTION|}}}{{#if: {{{NAME4-TRANSKRIPTION|}}}|<br/>}}{{{NAME4-ERKLÄRUNG|}}}
+| {{#if: {{{NAME4-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME4}}}|center|{{{NAME4-SERECH-SYMBOL|}}}|4={{{NAME4-DETERMINATIV|}}}}}{{{NAME4-TRANSKRIPTION|}}}{{#if: {{{NAME4-TRANSKRIPTION|}}}|<br/>}}{{{NAME4-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME4}}}</div><br/>{{{NAME4-TRANSKRIPTION|}}}{{#if: {{{NAME4-TRANSKRIPTION|}}}|<br/>}}{{{NAME4-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME5|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME5-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME5-IN-KARTUSCHE|}}}
+|{{Hiero/Kartusche|{{{NAME5}}}|center|{{{NAME5-KARTUSCHE-SYMBOL|}}}|4={{{NAME5-DETERMINATIV|}}}}}{{{NAME5-TRANSKRIPTION|}}}{{#if: {{{NAME5-TRANSKRIPTION|}}}|<br/>}}{{{NAME5-ERKLÄRUNG|}}}
+| {{#if: {{{NAME5-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME5}}}|center|{{{NAME5-SERECH-SYMBOL|}}}|4={{{NAME5-DETERMINATIV|}}}}}{{{NAME5-TRANSKRIPTION|}}}{{#if: {{{NAME5-TRANSKRIPTION|}}}|<br/>}}{{{NAME5-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME5}}}</div><br/>{{{NAME5-TRANSKRIPTION|}}}{{#if: {{{NAME5-TRANSKRIPTION|}}}|<br/>}}{{{NAME5-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME6|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME6-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME6-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME6}}}|center|{{{NAME6-KARTUSCHE-SYMBOL|}}}|4={{{NAME6-DETERMINATIV|}}}}}{{{NAME6-TRANSKRIPTION|}}}{{#if: {{{NAME6-TRANSKRIPTION|}}}|<br/>}}{{{NAME6-ERKLÄRUNG|}}}
+| {{#if: {{{NAME6-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME6}}}|center|{{{NAME6-SERECH-SYMBOL|}}}|4={{{NAME6-DETERMINATIV|}}}}}{{{NAME6-TRANSKRIPTION|}}}{{#if: {{{NAME6-TRANSKRIPTION|}}}|<br/>}}{{{NAME6-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME6}}}</div><br/>{{{NAME6-TRANSKRIPTION|}}}{{#if: {{{NAME6-TRANSKRIPTION|}}}|<br/>}}{{{NAME6-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME7|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME7-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME7-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME7}}}|center|{{{NAME7-KARTUSCHE-SYMBOL|}}}|4={{{NAME7-DETERMINATIV|}}}}}{{{NAME7-TRANSKRIPTION|}}}{{#if: {{{NAME7-TRANSKRIPTION|}}}|<br/>}}{{{NAME7-ERKLÄRUNG|}}}
+| {{#if: {{{NAME7-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME7}}}|center|{{{NAME7-SERECH-SYMBOL|}}}|4={{{NAME7-DETERMINATIV|}}}}}{{{NAME7-TRANSKRIPTION|}}}{{#if: {{{NAME7-TRANSKRIPTION|}}}|<br/>}}{{{NAME7-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME7}}}</div><br/>{{{NAME7-TRANSKRIPTION|}}}{{#if: {{{NAME7-TRANSKRIPTION|}}}|<br/>}}{{{NAME7-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME8|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME8-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME8-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME8}}}|center|{{{NAME8-KARTUSCHE-SYMBOL|}}}|4={{{NAME8-DETERMINATIV|}}}}}{{{NAME8-TRANSKRIPTION|}}}{{#if: {{{NAME-TRANSKRIPTION8|}}}|<br/>}}{{{NAME-ERKLÄRUNG8|}}}
+| {{#if: {{{NAME8-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME8}}}|center|{{{NAME8-SERECH-SYMBOL|}}}|4={{{NAME8-DETERMINATIV|}}}}}{{{NAME8-TRANSKRIPTION|}}}{{#if: {{{NAME8-TRANSKRIPTION|}}}|<br/>}}{{{NAME8-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME8}}}</div><br/>{{{NAME8-TRANSKRIPTION|}}}{{#if: {{{NAME8-TRANSKRIPTION|}}}|<br/>}}{{{NAME8-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME9|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME9-ERWEITERT|oder}}} 
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME9-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME9}}}|center|{{{NAME9-KARTUSCHE-SYMBOL|}}}|4={{{NAME9-DETERMINATIV|}}}}}{{{NAME9-TRANSKRIPTION|}}}{{#if: {{{NAME9-TRANSKRIPTION|}}}|<br/>}}{{{NAME9-ERKLÄRUNG|}}}
+| {{#if: {{{NAME9-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME9}}}|center|{{{NAME9-SERECH-SYMBOL|}}}|4={{{NAME9-DETERMINATIV|}}}}}{{{NAME9-TRANSKRIPTION|}}}{{#if: {{{NAME9-TRANSKRIPTION|}}}|<br/>}}{{{NAME9-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME9}}}</div><br/>{{{NAME9-TRANSKRIPTION|}}}{{#if: {{{NAME9-TRANSKRIPTION|}}}|<br/>}}{{{NAME9-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{NAME10|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{NAME10-ERWEITERT|oder}}}
+{{!}} style="text-align:center; padding: .2em;" {{!}}
+{{#if: {{{NAME10-IN-KARTUSCHE|}}}
+| {{Hiero/Kartusche|{{{NAME10}}}|center|{{{NAME10-KARTUSCHE-SYMBOL|}}}|4={{{NAME10-DETERMINATIV|}}}}}{{{NAME10-TRANSKRIPTION|}}}{{#if: {{{NAME10-TRANSKRIPTION|}}}|<br/>}}{{{NAME10-ERKLÄRUNG|}}}
+| {{#if: {{{NAME10-IN-SERECH|}}}
+  | {{Hiero/Serech|{{{NAME10}}}|center|{{{NAME10-SERECH-SYMBOL|}}}|4={{{NAME10-DETERMINATIV|}}}}}{{{NAME10-TRANSKRIPTION|}}}{{#if: {{{NAME10-TRANSKRIPTION|}}}|<br/>}}{{{NAME10-ERKLÄRUNG|}}}
+  | <div style="display:inline-block;">{{{NAME10}}}</div><br/>{{{NAME10-TRANSKRIPTION|}}}{{#if: {{{NAME10-TRANSKRIPTION|}}}|<br/>}}{{{NAME10-ERKLÄRUNG|}}}
+  }}
+}}
+{{!}}- }}
+{{#if: {{{ANMERKUNGEN|}}}|
+{{!}} colspan="2" style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} {{{ANMERKUNGEN}}}
+{{!}}- }}
+{{#if: {{{GRIECHISCH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Altgriechische Sprache|Griechisch]] {{{GRIECHISCH-ERWEITERT|}}} 
+{{!}} {{{GRIECHISCH}}}
+{{!}}- }}
+{{#if: {{{LATEIN|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Latein]] {{{LATEIN-ERWEITERT|}}} 
+{{!}} {{{LATEIN}}}
+{{!}}- }}
+{{#if: {{{KOPTISCH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Koptische Sprache|Koptisch]]
+{{!}} {{{KOPTISCH}}}
+{{!}}- }}
+{{#if: {{{KOPTISCH-SAHIDISCH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Koptische Sprache|Sahidisches Koptisch]]
+{{!}} {{{KOPTISCH-SAHIDISCH}}}
+{{!}}- }}
+{{#if: {{{KOPTISCH-BOHAIRISCH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Koptische Sprache|Bohairisches Koptisch]]
+{{!}} {{{KOPTISCH-BOHAIRISCH}}}
+{{!}}- }}
+{{#if: {{{KOPTISCH-ALTKOPTISCH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} [[Koptische Sprache|Altkoptisch]]
+{{!}} {{{KOPTISCH-ALTKOPTISCH}}}
+{{!}}- }}
+{{#if: {{{KEILSCHRIFTLICH|}}}|
+{{!}} style="background:#{{Ägyptologie Farbe|3}}; color:inherit; padding: 0 .5em;" {{!}} In [[Keilschrift|keilschriftlicher]] Überlieferung 
+{{!}} {{{KEILSCHRIFTLICH}}}
+{{!}}- }}
+{{#if: {{{BILD1|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller;vertical-align:top; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD1}}}|{{{BILD1-BREITE|330px}}}|zentriert|alt=]] {{{BILD1-BESCHREIBUNG|}}}
+{{!}}- }}
+{{#if: {{{BILD2|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller; vertical-align:top; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD2}}}|{{{BILD2-BREITE|330px}}}|zentriert|alt=]] {{{BILD2-BESCHREIBUNG|}}}
+{{!}}- }}
+{{#if: {{{BILD3|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller; vertical-align:top; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD3}}}|{{{BILD3-BREITE|330px}}}|zentriert|alt=]] {{{BILD3-BESCHREIBUNG|}}}
+{{!}}- }}
+{{#if: {{{BILD4|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller; vertical-align:top; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD4}}}|{{{BILD4-BREITE|330px}}}|zentriert|alt=]] {{{BILD4-BESCHREIBUNG|}}}
+{{!}}- }}
+{{#if: {{{BILD5|}}}|
+{{!}} colspan="2" style="text-align:center; font-size:smaller; vertical-align:top; background:#{{Ägyptologie Farbe|3}}; color:inherit;" {{!}} [[File:{{{BILD5}}}|{{{BILD5-BREITE|330px}}}|zentriert|alt=]] {{{BILD5-BESCHREIBUNG|}}}
+}}
+|}</onlyinclude>
+
+{{Documentation}}<noinclude>
+</noinclude>
+
+<noinclude>{{wikidata link|Q25819432|de|template:Infobox Hieroglyphen Zweispaltig}}
+[[Category:Templates with Documentation template]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

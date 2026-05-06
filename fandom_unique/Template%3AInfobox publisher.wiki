@@ -1,0 +1,62 @@
+{{Infobox
+| bodyclass  = vcard
+| titleclass = fn org
+| title      = {{{name|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image size|{{{image_size|{{{imagesize|}}}}}}}}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{alt|}}}|suppressplaceholder=yes}}
+| caption    = {{{image caption|{{{caption|{{{image_caption|}}}}}}}}}
+| label1     = [[Parent company]]
+| data1      = {{{parent|}}}
+| label2     = Status
+| class2     = category
+| data2      = {{{status|}}}
+| label3     = [[Ticker symbol|Traded&nbsp;as]]
+| data3      =  {{#if: {{{traded_as|}}}|{{{traded_as|}}}|{{#if: {{{nasdaq|}}}|{{NASDAQ|{{{nasdaq|}}}}}|}}}}
+| label4     = Predecessor
+| data4      = {{{predecessor|}}}
+| label5     = Founded
+| data5      = {{{founded|}}}
+| label6     = Founder{{#if:{{{founders|}}}|s}}
+| data6      = {{#if:{{{founders|}}} |{{{founders}}} |{{{founder|}}} }}
+| label7 = Defunct
+| data7 = {{{defunct|{{{dissolved|{{wikidata|property|edit|P576}}}}}}}}
+| label8     = Successor
+| data8      = {{{successor|}}}
+| label9     = Country of origin
+| data9     = {{{country|}}}
+| label10     = Headquarters location
+| class10     = label
+| data10      = {{{headquarters|}}}
+| label11    = Distribution
+| data11     = {{{distribution|}}}
+| label12    = Key people
+| data12     = {{{keypeople|}}}
+| label13    = Publication types
+| data13     = {{{publications|}}}
+| label14    = Nonfiction topics
+| data14     = {{{topics|}}}
+| label15    = [[Genre|Fiction genres]]
+| data15     = {{{genre|}}}
+| label16    = [[Imprint (trade name)|Imprint]]s
+| data16     = {{{imprints|}}}
+| label17    = Revenue
+| data17     = {{{revenue|}}}
+| label18    = Owner(s)
+| data18     = {{{owner|}}}
+| label19    = {{abbr|No.|Number}} of employees
+| data19     = {{{numemployees|}}}
+| label20    = Official website
+| class20    = url
+| data20     = {{#if: {{{website|{{{url|}}}}}}
+               | {{#ifeq: {{{website|{{{url|}}}}}} |hide | | {{{website|{{{url|}}}}}} }}
+               | {{#if: {{#property:P856}} | {{URL|{{#property:P856}}}} }}
+               }}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox publisher]] with unknown parameter "_VALUE_"|ignoreblank=y| alt | caption | country | defunct | dissolved | distribution | founded | founder | founders | genre | headquarters | image | image caption | image size | image_caption | image_size | image_upright | imagesize | imprints | keypeople | name | nasdaq | NASDAQ | numemployees | owner | parent | predecessor | publications | revenue | status | successor | topics | traded_as | url | website }}<noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Pages using infobox publisher with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

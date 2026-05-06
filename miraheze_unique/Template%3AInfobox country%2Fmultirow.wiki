@@ -1,0 +1,72 @@
+<noinclude><table>
+[[Category:Templates missing wikidata]]
+</noinclude>
+{{infobox | child = yes | decat=yes
+| rowclass25 = mergedrow
+| label25 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{1|}}}</div>
+| data25 = {{{2|}}}
+| rowclass26 = mergedrow
+| label26 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{3|}}}</div>
+| data26 = {{{4|}}}
+| rowclass27 = mergedrow
+| label27 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{5|}}}</div>
+| data27 = {{{6|}}}
+| rowclass28 = mergedrow
+| label28 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{7|}}}</div>
+| data28 = {{{8|}}}
+| rowclass29 = mergedrow
+| label29 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{9|}}}</div>
+| data29 = {{{10|}}}
+| rowclass30 = mergedrow
+| label30 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{11|}}}</div>
+| data30 = {{{12|}}}
+| rowclass31 = mergedrow
+| label31 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{13|}}}</div>
+| data31 = {{{14|}}}
+| rowclass32 = mergedrow
+| label32 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{15|}}}</div>
+| data32 = {{{16|}}}
+| rowclass33 = mergedrow
+| label33 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{17|}}}</div>
+| data33 = {{{18|}}}
+| rowclass34 = mergedrow
+| label34 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{19|}}}</div>
+| data34 = {{{20|}}}
+| rowclass35 = mergedrow
+| label35 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{21|}}}</div>
+| data35 = {{{22|}}}
+| rowclass36 = mergedrow
+| label36 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{23|}}}</div>
+| data36 = {{{24|}}}
+| rowclass37 = mergedrow
+| label37 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{25|}}}</div>
+| data37 = {{{26|}}}
+| rowclass38 = mergedrow
+| label38 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{27|}}}</div>
+| data38 = {{{28|}}}
+| rowclass39 = mergedrow
+| label39 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{29|}}}</div>
+| data39 = {{{30|}}}
+| rowclass40 = mergedrow
+| label40 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{31|}}}</div>
+| data40 = {{{32|}}}
+| rowclass41 = mergedrow
+| label41 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{33|}}}</div>
+| data41 = {{{34|}}}
+| rowclass42 = mergedrow
+| label42 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{35|}}}</div>
+| data42 = {{{36|}}}
+| rowclass43 = mergedrow
+| label43 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{37|}}}</div>
+| data43 = {{{38|}}}
+| rowclass44 = mergedrow
+| label44 = <div style="text-indent:-0.9em;margin-left:1.2em;font-weight:normal;">•&nbsp;{{{39|}}}</div>
+| data44 = {{{40|}}}
+}}<noinclude>
+</table>
+{{documentation}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

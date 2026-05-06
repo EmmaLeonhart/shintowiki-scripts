@@ -1,0 +1,162 @@
+{{Main other|{{Short description|Fictional character|noreplace|pagetype=Articles}}}}
+{{Infobox
+| bodyclass    = ib-character
+| templatestyles = Infobox character/styles.css
+
+| above        = {{If empty |{{{name|}}} |<includeonly>{{PAGENAMEBASE}}</includeonly> }}
+| aboveclass   = notheme
+| headerclass = notheme
+
+| subheader    = {{#if: {{{series|}}}{{{franchise|}}} | {{#if: {{{series|}}} | ''{{{series|}}}'' | {{{franchise|}}} }} character{{#if: {{{multiple|}}} | s }} }}
+
+| image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|upright={{{image_upright|}}}|alt={{{alt|}}}}}
+| caption      = {{{caption|}}}
+
+| label1       = First appearance
+| data1        = {{#if: {{{first|}}} | {{{first|}}} | {{#invoke:Formatted appearance|getFormattedAppearance|major_work={{{first_major|}}} |minor_work={{{first_minor|}}} |issue={{{first_issue|}}} |date={{{first_date|}}} }} }}
+
+| label2       = First game
+| data2        = {{{firstgame|}}}
+
+| label3       = Last appearance
+| data3        = {{#if: {{{last|}}} | {{{last|}}} | {{#invoke:Formatted appearance|getFormattedAppearance|major_work={{{last_major|}}} |minor_work={{{last_minor|}}} |issue={{{last_issue|}}} |date={{{last_date|}}} }} }}
+
+| label4       = Created by
+| data4        = {{{creator|}}}
+
+| label5       = Based on
+| data5        = {{{based_on|}}}
+
+| label6       = Adapted by
+| data6        = {{{adapted_by|}}}
+
+| label7       = Designed by
+| data7        = {{{designer|}}}
+
+| label8       = Portrayed by
+| data8        = {{{portrayer|}}}
+
+| label9       = Voiced by
+| data9        = {{{voice|}}}
+
+| label10      = Motion capture
+| data10       = {{{motion_actor|}}}
+
+| label11      = {{{lbl1|}}}
+| data11       = {{{data1|}}}
+
+| label12      = {{{lbl2|}}}
+| data12       = {{{data2|}}}
+
+| label13      = {{{lbl3|}}}
+| data13       = {{{data3|}}}
+
+| label14      = {{{lbl4|}}}
+| data14       = {{{data4|}}}
+
+| label15      = {{{lbl5|}}}
+| data15       = {{{data5|}}}
+
+| header20     = {{#if: {{{noinfo|}}} || {{#if: {{{full_name|}}} {{{alias|}}} {{{aliases|}}} {{{nickname|}}} {{{nicknames|}}} {{{race|}}} {{{species|}}} {{{gender|}}} {{{title|}}} {{{occupation|}}} {{{position|}}} {{{class|}}} {{{affiliation|}}} {{{alignment|}}} {{{fighting_style|}}} {{{weapon|}}} {{{family|}}} {{{spouse|}}} {{{spouses|}}} {{{significant_other|}}} {{{significant_others|}}} {{{children|}}} {{{relatives|}}} {{{religion|}}} {{{origin|}}} {{{home|}}} {{{nationality|}}} {{{data21|}}} {{{data22|}}} {{{data23|}}} {{{data24|}}} {{{data25|}}} | {{If empty |{{{info-hdr|}}} |In-universe information }} }} }}
+
+| label21      = Full name
+| data21       = {{{full_name|}}}
+
+| label22      = {{#if: {{{alias|}}} | Alias | Aliases }}
+| data22       = {{If empty |{{{alias|}}} |{{{aliases|}}} }}
+
+| label23      = {{#if: {{{nickname|}}} | Nickname | Nicknames }}
+| data23       = {{If empty |{{{nickname|}}} |{{{nicknames|}}} }}
+
+| label24      = {{#if: {{{race|}}} | Race | Species }}
+| data24       = {{If empty |{{{race|}}} |{{{species|}}} }}
+
+| label25      = Gender
+| data25       = {{{gender|}}}
+
+| label26      = Title
+| data26       = {{{title|}}}
+
+| label27      = {{#if: {{{occupation|}}} | Occupation | {{#if: {{{position|}}} | Position | Class }} }}
+| data27       = {{If empty |{{{occupation|}}} |{{{position|}}} |{{{class|}}} }}
+
+| label28      = {{#if: {{{affiliation|}}} | Affiliation | Alignment }}
+| data28       = {{If empty |{{{affiliation|}}} |{{{alignment|}}} }}
+
+| label29      = Fighting style
+| data29       = {{{fighting_style|}}}
+
+| label30      = Weapon
+| data30       = {{{weapon|}}}
+
+| label31      = Family
+| data31       = {{{family|}}}
+
+| label32      = {{#if: {{{spouse|}}} | Spouse | Spouses }}
+| data32       = {{If empty |{{{spouse|}}} |{{{spouses|}}} }}
+
+| label33      = {{#if: {{{significant_other|}}} | Significant {{nowrap|other}} | Significant {{nowrap|others}} }}
+| data33       = {{If empty |{{{significant_other|}}} |{{{significant_others|}}} }}
+
+| label34      = Children
+| data34       = {{{children|}}}
+
+| label35      = Relatives
+| data35       = {{{relatives|}}}
+
+| label36      = Religion
+| data36       = {{{religion|}}}
+
+| label37      = {{#if: {{{origin|}}} | Origin | Home }}
+| data37       = {{If empty |{{{origin|}}} |{{{home|}}} }}
+
+| label38      = Nationality
+| data38       = {{{nationality|}}}
+
+| label39      = {{{lbl21|}}}
+| data39       = {{{data21|}}}
+
+| label40      = {{{lbl22|}}}
+| data40       = {{{data22|}}}
+
+| label41      = {{{lbl23|}}}
+| data41       = {{{data23|}}}
+
+| label42      = {{{lbl24|}}}
+| data42       = {{{data24|}}}
+
+| label43      = {{{lbl25|}}}
+| data43       = {{{data25|}}} 
+
+| header50     = {{#if: {{{data31|}}} {{{data32|}}} {{{data33|}}} {{{data34|}}} {{{data35|}}} | {{{extra-hdr|}}} }}
+
+| label51      = {{{lbl31|}}}
+| data51       = {{{data31|}}}
+
+| label52      = {{{lbl32|}}}
+| data52       = {{{data32|}}}
+
+| label53      = {{{lbl33|}}}
+| data53       = {{{data33|}}}
+
+| label54      = {{{lbl34|}}}
+| data54       = {{{data34|}}}
+
+| label55      = {{{lbl35|}}}
+| data55       = {{{data35|}}}
+
+}}{{Main other
+|{{#if: {{{lbl35|}}} {{{data35|}}} {{{lbl25|}}} {{{data25|}}} {{{lbl5|}}} {{{data5|}}} |  | {{#if: {{{lbl34|}}} {{{data34|}}} {{{lbl24|}}} {{{data24|}}} {{{lbl4|}}} {{{data4|}}} |  | {{#if: {{{lbl33|}}} {{{data33|}}} {{{lbl23|}}} {{{data23|}}} {{{lbl3|}}} {{{data3|}}} |  | {{#if: {{{lbl32|}}} {{{data32|}}} {{{lbl22|}}} {{{data22|}}} {{{lbl2|}}} {{{data2|}}} | }} }} }} }}}}{{#invoke:Check for unknown parameters|check|unknown={{Main other|}}|preview=Page using [[Template:Infobox character]] with unknown parameter "_VALUE_"|showblankpositional=1| adapted_by | affiliation | alias | aliases | alignment | alt | caption | children | class | creator | based_on | data1 | data2 | data3 | data4 | data5 | data21 | data22 | data23 | data24 | data25 | data31 | data32 | data33 | data34 | data35 | designer | extra-hdr | family | fighting_style | first | first_date | first_issue | first_major | first_minor | firstgame | franchise | full_name | gender | home | image | image_size | image_upright | info-hdr | last | last_date | last_issue | last_major | last_minor | lbl1 | lbl2 | lbl3 | lbl4 | lbl5 | lbl21 | lbl22 | lbl23 | lbl24 | lbl25 | lbl31 | lbl32 | lbl33 | lbl34 | lbl35 | motion_actor | multiple | name | nationality | nickname | nicknames | noinfo | occupation | origin | portrayer | position | race | relatives | religion | series | significant_other | significant_others | species | spouse | spouses | title | voice | weapon }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Articles using Infobox character with multiple unlabeled fields|5{{PAGENAME}}]]
+[[Category:Articles using Infobox character with multiple unlabeled fields|4{{PAGENAME}}]]
+[[Category:Articles using Infobox character with multiple unlabeled fields|3{{PAGENAME}}]]
+[[Category:Articles using Infobox character with multiple unlabeled fields|2{{PAGENAME}}]]
+[[Category:Pages using infobox character with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

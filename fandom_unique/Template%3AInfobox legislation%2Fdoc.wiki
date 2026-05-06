@@ -1,0 +1,2193 @@
+{{Documentation subpage}}
+{{Lua|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+== Usage ==
+{{Parameter names example
+|short_title
+|legislature
+|long_title
+|citation
+|territorial_extent
+|considered_by
+|enacted_by
+|date_enacted
+|date_passed
+|considered_by2
+|enacted_by2
+|date_enacted2
+|date_passed2
+|date_assented
+|royal_assent
+|assented_by
+|date_signed
+|signed_by
+|date_vetoed
+|vetoed_by
+|veto_type
+|veto_overridden
+|reference_holding
+|date_pocket_vetoed
+|date_became_law_by_inaction
+|date_commenced
+|date_effective
+|date_of_expiry
+|date_repealed
+|date_abrogated
+|authorizing_legislation
+|administered_by
+|codification_affects
+|codification_amends
+|codification_repeals
+|code_titles_affected
+|code_titles_amended
+|code_sections_created
+|code_sections_affected
+|code_sections_amended
+|code
+|bill_history_url
+|bill
+|bill_citation
+|introduced_by
+|cosponsored_by
+|date_introduced
+|date_distributed
+|committee_responsible
+|member_in_charge
+|preliminary_reading
+|preliminary_reading_for
+|preliminary_reading_against
+|preliminary_reading_abstention
+|preliminary_reading_absent
+|preliminary_reading_presentnotvoting
+|1st_reading
+|1st_reading_for
+|1st_reading_against
+|1st_reading_abstention
+|1st_reading_absent
+|1st_reading_presentnotvoting
+|committee_post1st
+|2nd_reading
+|2nd_reading_for
+|2nd_reading_against
+|2nd_reading_abstention
+|2nd_reading_absent
+|2nd_reading_presentnotvoting
+|committee_post2nd
+|committee_whole
+|3rd_reading
+|3rd_reading_for
+|3rd_reading_against
+|3rd_reading_abstention
+|3rd_reading_absent
+|3rd_reading_presentnotvoting
+|passed
+|passed_for
+|passed_against
+|passed_abstention
+|passed_absent
+|passed_presentnotvoting
+|conf_committee_passed
+|conf_committee_passed_for
+|conf_committee_passed_against
+|conf_committee_passed_abstention
+|conf_committee_passed_absent
+|conf_committee_passed_presentnotvoting
+|committee_report
+|bill2
+|bill_citation2
+|bill_date2
+|committee_responsible2
+|member_in_charge2
+|preliminary_reading2
+|preliminary_reading2_for
+|preliminary_reading2_against
+|preliminary_reading2_abstention
+|preliminary_reading2_absent
+|preliminary_reading2_presentnotvoting
+|1st_reading2
+|1st_reading2_for
+|1st_reading2_against
+|1st_reading2_abstention
+|1st_reading2_absent
+|1st_reading2_presentnotvoting
+|committee_post1st2
+|2nd_reading2
+|2nd_reading2_for
+|2nd_reading2_against
+|2nd_reading2_abstention
+|2nd_reading2_absent
+|2nd_reading2_presentnotvoting
+|committee_post2nd2
+|committee_whole2
+|3rd_reading2
+|3rd_reading2_for
+|3rd_reading2_against
+|3rd_reading2_abstention
+|3rd_reading2_absent
+|3rd_reading2_presentnotvoting
+|passed2
+|passed2_for
+|passed2_against
+|passed2_abstention
+|passed2_absent
+|passed2_presentnotvoting
+|conf_committee_passed2
+|conf_committee_passed2_for
+|conf_committee_passed2_against
+|conf_committee_passed2_abstention
+|conf_committee_passed2_absent
+|conf_committee_passed2_presentnotvoting
+|committee_report2
+|date_conf_committee
+|white_paper
+|date_amendments_considered
+|amendments_considered_for
+|amendments_considered_against
+|amendments_considered_abstention
+|amendments_considered_absent
+|amendments_considered_presentnotvoting
+|date_amendments_considered2
+|amendments_considered2_for
+|amendments_considered2_against
+|amendments_considered2_abstention
+|amendments_considered2_absent
+|amendments_considered2_presentnotvoting
+|date_final_passage
+|date_reconsidered
+|veto_override_for
+|veto_override_against
+|veto_override_abstention
+|veto_override_absent
+|veto_override_presentnotvoting
+|date_reconsidered2
+|veto_override2_for
+|veto_override2_against
+|veto_override2_abstention
+|veto_override2_absent
+|veto_override2_presentnotvoting
+|amends
+|repeals
+|amended_by
+|repealed_by
+|related_legislation
+|related_cases
+|struck_down_by
+|supreme_court
+|summary
+|keywords
+|status
+}}
+
+This template summarizes information about a piece of [[legislation]] or a [[:en:Bill (law)|bill]]. It is designed to be generic so that it can be used for the bills, [[:en:Statute|Statute]]s and subsidiary legislation ([[delegated legislation]]) of any [[:en:Jurisdiction|Jurisdiction]]. If you have suggestions as to how the template may be improved, please leave a message on the [[Template talk:Infobox legislation|talk page]].
+
+Specific infoboxes for European Union, United Kingdom (national and devolved) and United States (federal only) legislation are at {{tl|Infobox EU legislation}}, {{tl|Infobox UK legislation}} and {{tl|Infobox U.S. legislation}} respectively (although this template also supports the latter two to a limited extent).
+
+===Legislation enacted by a legislature (e.g. an Act of Parliament/Congress)===
+See next section for bills that did not pass or is still being considered by the legislature.
+{{Hidden begin|title=Click [show] to view}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title            = 
+|legislature            = 
+|image                  = 
+|imagesize              = 
+|image_upright          = 
+|imagealt               = 
+|caption                = 
+|long_title             = 
+|citation               = 
+|territorial_extent     = 
+|enacted_by             = 
+|date_enacted           = 
+|date_passed            = 
+|enacted_by2            = 
+|date_enacted2          = 
+|date_passed2           = 
+|date_assented          = 
+|assented_by              = 
+|royal_assent           = 
+|date_signed            = 
+|signed_by              = 
+
+|date_vetoed            = 
+|vetoed_by              = 
+|veto_type              = 
+|veto_overridden        = 
+|reference_holding      = 
+|date_became_law_by_inaction = 
+|date_commenced         = 
+|date_effective         = 
+|date_of_expiry         = 
+|date_repealed          = 
+|administered_by        = 
+|bill_history_url       = 
+|bill                   = 
+|bill_citation          = 
+|bill_date              = 
+|introduced_by          = 
+|committee_responsible  = 
+|preliminary_reading    = 
+|preliminary_reading_for = 
+|preliminary_reading_against = 
+|preliminary_reading_abstention = 
+|preliminary_reading_absent = 
+|preliminary_reading_presentnotvoting = 
+|1st_reading            = 
+|1st_reading_for        = 
+|1st_reading_against    = 
+|1st_reading_abstention = 
+|1st_reading_absent     = 
+|1st_reading_presentnotvoting = 
+|committee_post1st      = 
+|2nd_reading            = 
+|2nd_reading_for        = 
+|2nd_reading_against    = 
+|2nd_reading_abstention = 
+|2nd_reading_absent     = 
+|2nd_reading_presentnotvoting = 
+|committee_post2nd      = 
+|committee_whole_label  = 
+|committee_whole        = 
+|3rd_reading            = 
+|3rd_reading_for        = 
+|3rd_reading_against    = 
+|3rd_reading_abstention = 
+|3rd_reading_absent     = 
+|3rd_reading_presentnotvoting = 
+|passed                 = 
+|passed_for             = 
+|passed_against         = 
+|passed_abstention      = 
+|passed_absent          = 
+|passed_presentnotvoting = 
+|conf_committee_passed = 
+|conf_committee_passed_for = 
+|conf_committee_passed_against = 
+|conf_committee_passed_abstention = 
+|conf_committee_passed_absent = 
+|conf_committee_passed_presentnotvoting = 
+|committee_report       = 
+|bill2                  = 
+|bill_citation2         = 
+|bill_date2             = 
+|introduced_by2         = 
+|committee_responsible2 = 
+|preliminary_reading2   = 
+|preliminary_reading2_for = 
+|preliminary_reading2_against = 
+|preliminary_reading2_abstention = 
+|preliminary_reading2_absent = 
+|preliminary_reading2_presentnotvoting = 
+|1st_reading2           = 
+|1st_reading2           = 
+|1st_reading2_for       = 
+|1st_reading2_against   = 
+|1st_reading2_abstention = 
+|1st_reading2_absent    = 
+|1st_reading2_presentnotvoting = 
+|committee_post1st2     = 
+|2nd_reading2           = 
+|2nd_reading2           = 
+|2nd_reading2_for       = 
+|2nd_reading2_against   = 
+|2nd_reading2_abstention = 
+|2nd_reading2_absent    = 
+|2nd_reading2_presentnotvoting = 
+|committee_post2nd2     = 
+|committee_whole_label2 = 
+|committee_whole2       = 
+|3rd_reading2           = 
+|3rd_reading2           = 
+|3rd_reading2_for       = 
+|3rd_reading2_against   = 
+|3rd_reading2_abstention = 
+|3rd_reading2_absent    = 
+|3rd_reading2_presentnotvoting = 
+|passed2                = 
+|passed2_for            = 
+|passed2_against        = 
+|passed2_abstention     = 
+|passed2_absent         = 
+|passed2_presentnotvoting = 
+|conf_committee_passed2 = 
+|conf_committee_passed2_for = 
+|conf_committee_passed2_against = 
+|conf_committee_passed2_abstention = 
+|conf_committee_passed2_absent = 
+|conf_committee_passed2_presentnotvoting = 
+|committee_report2      = 
+|date_conf_committee    = 
+|white_paper            = 
+|date_amendments_considered = 
+|date_final_passage     = 
+|amends                 = 
+|repeals                = 
+|amended_by             = 
+|repealed_by            = 
+|related_legislation    = 
+|summary                = 
+|keywords               = 
+|status                 = 
+}}
+</syntaxhighlight>
+{{Hidden end}}
+
+===Proposed legislation considered (but failed) or in consideration by a legislature (e.g. a bill)===
+{{Hidden begin|title=Click [show] to view}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title            = 
+|legislature            = 
+|image                  = 
+|imagesize              = 
+|image_upright          = 
+|imagealt               = 
+|caption                = 
+|long_title             = 
+|citation               = 
+|territorial_extent     = 
+|considered_by          = 
+|enacted_by             = 
+|date_enacted           = 
+|date_passed            = 
+|considered_by2         = 
+|enacted_by2            = 
+|date_enacted2          = 
+|date_passed2           = 
+|date_vetoed            = 
+|vetoed_by              = 
+|veto_type              = 
+|reference_holding      = 
+|date_pocket_vetoed     = 
+|bill_history_url       = 
+|bill                   = 
+|bill_citation          = 
+|bill_date              = 
+|introduced_by          = 
+|committee_responsible  = 
+|preliminary_reading    = 
+|preliminary_reading_for = 
+|preliminary_reading_against = 
+|preliminary_reading_abstention = 
+|preliminary_reading_absent = 
+|preliminary_reading_presentnotvoting = 
+|1st_reading            = 
+|1st_reading            = 
+|1st_reading_for        = 
+|1st_reading_against    = 
+|1st_reading_abstention = 
+|1st_reading_absent     = 
+|1st_reading_presentnotvoting = 
+|committee_post1st      = 
+|2nd_reading            = 
+|2nd_reading            = 
+|2nd_reading_for        = 
+|2nd_reading_against    = 
+|2nd_reading_abstention = 
+|2nd_reading_absent     = 
+|2nd_reading_presentnotvoting = 
+|committee_post2nd      = 
+|committee_whole_label  = 
+|committee_whole        = 
+|3rd_reading            = 
+|3rd_reading            = 
+|3rd_reading_for        = 
+|3rd_reading_against    = 
+|3rd_reading_abstention = 
+|3rd_reading_absent     = 
+|3rd_reading_presentnotvoting = 
+|passed                 = 
+|passed_for             = 
+|passed_against         = 
+|passed_abstention      = 
+|passed_absent          = 
+|passed_presentnotvoting = 
+|conf_committee_passed = 
+|conf_committee_passed_for = 
+|conf_committee_passed_against = 
+|conf_committee_passed_abstention = 
+|conf_committee_passed_absent = 
+|conf_committee_passed_presentnotvoting = 
+|committee_report       = 
+|bill2                  = 
+|bill_citation2         = 
+|bill_date2             = 
+|introduced_by2         = 
+|committee_responsible2 = 
+|1st_reading2           = 
+|committee_post1st2     = 
+|2nd_reading2           = 
+|committee_post2nd2     = 
+|committee_whole_label2 = 
+|committee_whole2       = 
+|3rd_reading2           = 
+|passed2                =  
+|conf_committee_passed2 = 
+|committee_report2      = 
+|date_conf_committee    = 
+|white_paper            = 
+|date_amendments_considered = 
+|date_final_passage     = 
+|amends                 = 
+|repeals                = 
+|related_legislation    = 
+|summary                = 
+|keywords               = 
+|status                 = 
+}}
+</syntaxhighlight>
+{{Hidden end}}
+
+===Legislation enacted or considered without going through a legislature (e.g. a regulation or an order)===
+{{Hidden begin|title=Click [show] to view}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title             = 
+|legislature             = 
+|image                  = 
+|imagesize              = 
+|image_upright          = 
+|imagealt               = 
+|caption                = 
+|long_title              = 
+|citation                = 
+|territorial_extent      = 
+|considered_by           = 
+|enacted_by              = 
+|date_enacted            = 
+|date_passed             = 
+|date_assented           = 
+|royal_assent            = 
+|date_signed             = 
+|signed_by               = 
+|date_commenced          = 
+|date_effective          = 
+|date_of_expiry          = 
+|date_repealed           = 
+|authorizing_legislation =
+|administered_by         = 
+|white_paper             = 
+|amends                  = 
+|repeals                 = 
+|amended_by              = 
+|repealed_by             = 
+|related_legislation     = 
+|summary                 = 
+|keywords                = 
+|status                  = 
+}}
+</syntaxhighlight>
+{{Hidden end}}
+
+===All available parameters===
+{{Hidden begin||title=Click [show] to view}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title            = 
+|legislature            = 
+|image                  = 
+|imagesize              = 
+|image_upright          = 
+|imagealt               = 
+|caption                = 
+|long_title             = 
+|citation               = 
+|territorial_extent     = 
+|considered_by          = 
+|enacted_by             = 
+|date_enacted           = 
+|date_passed            = 
+|considered_by2         = 
+|enacted_by2            = 
+|date_enacted2          = 
+|date_passed2           = 
+|date_assented          = 
+|assented_by              = 
+|royal_assent           = 
+|date_signed            = 
+|signed_by              = 
+|date_vetoed            = 
+|vetoed_by              = 
+|veto_type              = 
+|veto_overridden        = 
+|reference_holding      = 
+|date_pocket_vetoed     = 
+|date_became_law_by_inaction = 
+|date_commenced         = 
+|date_effective         = 
+|date_of_expiry         = 
+|date_repealed          = 
+|authorizing_legislation =
+|administered_by        = 
+|bill_history_url       = 
+|bill                   = 
+|bill_citation          = 
+|bill_date              = 
+|introduced_by          = 
+|committee_responsible  = 
+|preliminary_reading    = 
+|preliminary_reading_for = 
+|preliminary_reading_against = 
+|preliminary_reading_abstention = 
+|preliminary_reading_absent = 
+|preliminary_reading_presentnotvoting = 
+|1st_reading            = 
+|1st_reading            = 
+|1st_reading_for        = 
+|1st_reading_against    = 
+|1st_reading_abstention = 
+|1st_reading_absent     = 
+|1st_reading_presentnotvoting = 
+|committee_post1st      = 
+|2nd_reading            = 
+|2nd_reading            = 
+|2nd_reading_for        = 
+|2nd_reading_against    = 
+|2nd_reading_abstention = 
+|2nd_reading_absent     = 
+|2nd_reading_presentnotvoting = 
+|committee_post2nd      = 
+|committee_whole_label  = 
+|committee_whole        = 
+|3rd_reading            = 
+|3rd_reading            = 
+|3rd_reading_for        = 
+|3rd_reading_against    = 
+|3rd_reading_abstention = 
+|3rd_reading_absent     = 
+|3rd_reading_presentnotvoting = 
+|passed                 = 
+|passed_for             = 
+|passed_against         = 
+|passed_abstention      = 
+|passed_absent          = 
+|passed_presentnotvoting = 
+|conf_committee_passed = 
+|conf_committee_passed_for = 
+|conf_committee_passed_against = 
+|conf_committee_passed_abstention = 
+|conf_committee_passed_absent = 
+|conf_committee_passed_presentnotvoting = 
+|committee_report       = 
+|bill2                  = 
+|bill_citation2         = 
+|bill_date2             = 
+|introduced_by2         = 
+|committee_responsible2 = 
+|preliminary_reading2   = 
+|preliminary_reading2_for = 
+|preliminary_reading2_against = 
+|preliminary_reading2_abstention = 
+|preliminary_reading2_absent = 
+|preliminary_reading2_presentnotvoting = 
+|1st_reading2           = 
+|1st_reading2           = 
+|1st_reading2_for       = 
+|1st_reading2_against   = 
+|1st_reading2_abstention = 
+|1st_reading2_absent    = 
+|1st_reading2_presentnotvoting = 
+|committee_post1st2     = 
+|2nd_reading2           = 
+|2nd_reading2           = 
+|2nd_reading2_for       = 
+|2nd_reading2_against   = 
+|2nd_reading2_abstention = 
+|2nd_reading2_absent    = 
+|2nd_reading2_presentnotvoting = 
+|committee_post2nd2     = 
+|committee_whole_label2 = 
+|committee_whole2       = 
+|3rd_reading2           = 
+|3rd_reading2           = 
+|3rd_reading2_for       = 
+|3rd_reading2_against   = 
+|3rd_reading2_abstention = 
+|3rd_reading2_absent    = 
+|3rd_reading2_presentnotvoting = 
+|passed2                = 
+|passed2_for            = 
+|passed2_against        = 
+|passed2_abstention     = 
+|passed2_absent         = 
+|passed2_presentnotvoting = 
+|conf_committee_passed2 = 
+|conf_committee_passed2_for = 
+|conf_committee_passed2_against = 
+|conf_committee_passed2_abstention = 
+|conf_committee_passed2_absent = 
+|conf_committee_passed2_presentnotvoting = 
+|committee_report2      = 
+|date_conf_committee    = 
+|white_paper            = 
+|date_amendments_considered = 
+|date_final_passage     = 
+|amends                 = 
+|repeals                = 
+|amended_by             = 
+|repealed_by            = 
+|related_legislation    = 
+|summary                = 
+|keywords               = 
+|status                 = 
+}}
+</syntaxhighlight>
+{{Hidden end}}
+
+==Parameters==
+This infobox takes a number of parameters, which are all optional:
+
+{|class="wikitable"
+|-
+!Parameter
+!Description
+|-
+|colspan="2" bgcolor="silver"|'''Basic information'''
+|-
+| style="text-align:center;" |'''short_title'''
+|The [[:en:Short title|Short title]] of the legislation or bill, which should preferably be the same as the article title. If the parameter is left blank or omitted, the article name is used.
+|-
+| style="text-align:center;" |'''legislature'''
+|The name of the [[:en:Legislature|Legislature]] that enacted the legislation. You only need to use this parameter if the legislature of the jurisdiction in question is [[:en:Bicameralism|bicameral]], and you wish to state its name rather than just the names of the [[:en:upper house|upper house]] and [[:en:lower house|lower house]], which can be specified using {{para|enacted_by}} and {{para|enacted_by2}}.
+|-
+| style="text-align:center;" |'''image'''
+|An image which represents the legislation's topic or enactment process. Type the name of the image without the "{{mono|File:}}" prefix and do not [[Help:Link|wikilink]] it.
+|-
+| style="text-align:center;" |'''imagesize'''
+|The width of the image in [[:en:Pixel|Pixel]]s (px), particularly if it is less than 180 px. Type the number without the "px" suffix ("{{mono|150}}", not "{{mono|150px}}"). If this parameter is left blank or omitted, the image size defaults to 180 px.
+|-
+| style="text-align:center;" |'''image_upright'''
+|Scale factor for the image, particularly to scale tall, narrow images correctly. See [[Help:Pictures#Upright_images]] for more information.
+|-
+| style="text-align:center;" |'''imagealt'''
+|[[Wikipedia:Extended image syntax#Alt text and caption|Alt text]] for the image. For more information, see "[[Wikipedia:Alternative text for images]]".
+|-
+| style="text-align:center;" |'''caption'''
+|A caption for the image. Terms in the caption can be wikilinked, if desired.
+|-
+| style="text-align:center;" |'''long_title'''
+|The [[long title]] of the legislation.
+|-
+| style="text-align:center;" |'''citation'''
+|The citation of the legislation. If the legislation is available online, use a [[:Category:Law citation templates|citation template]] where available to generate an external link automatically, or else [[Help:Link#External links|create a link manually]]. If the citation uses square brackets, replace them with {{mono|&amp;#91;}} and {{mono|&amp;#93;}} when putting them inside an external link.
+|-
+| style="text-align:center;" |'''territorial_extent'''
+|The territorial area(s) to which the legislation extends or applies. If possible, provide a wikilink.
+|-
+| style="text-align:center;" |'''considered_by<br />enacted_by'''
+|The name of the person or institution that considered or enacted the legislation. {{para|considered_by}} is used for proposed or failed legislation (e.g. bills) in which the institution did not or has not enacted the legislation, and {{para|enacted_by}} for successful ones. Wikilink the name to a Wikipedia article about the person or institution, if there is one. In a bicameral jurisdiction, use this parameter to specify the legislative chamber that initiated the legislation.
+|-
+| style="text-align:center;" |'''date_enacted<br />date_passed'''
+|The date the legislation was enacted or passed. Select either {{para|date_enacted}} or {{para|date_passed}} depending on whether the term ''enacted'' or ''passed'' is customarily used in the jurisdiction. In line with "[[Wikipedia:Manual of Style (dates and numbers)#Linking and autoformatting of dates]]", do not wikilink dates.
+|-
+| style="text-align:center;" |'''considered_by2<br />enacted_by2<br />date_enacted2<br />date_passed2'''
+|In a bicameral legislature, use these parameters to specify the name of the legislative chamber that considered the legislation after it was initiated by the other chamber, and the date when the second chamber enacted or passed the legislation.
+|-
+| style="text-align:center;" |'''date_assented<br />royal_assent<br />date_signed'''
+|Use one of the following:
+#{{para|date_assented}} – to indicate the date when a [[:en:Head of state|Head of state]] or their representative gives formal assent to the legislation.
+#{{para|royal_assent}} – to indicate the date when a [[:en:Constitutional monarchy|constitutional monarch]] gives [[royal assent]] to legislation.
+#{{para|date_signed}} – to indicate the date when a [[:en:Head of state|Head of state]] or their representative in jurisdictions which do not use the term "assent" signs a piece of legislation (''e.g.'', the [[President of Ireland]]; the [[governor (United States)|governor of one of the US states]]; a [[:en:Constitutional monarchy|constitutional monarch]] without royal assent powers such, as the [[Grand Duke of Luxembourg]])
+
+Do not use parameter(s) from two or three of the above categories together.
+|-
+| style="text-align:center;" |'''assented_by<br />signed_by'''
+|Use one of the following:
+#{{para|assented_by}} – to indicate the assenter's identity where {{para|date_assented}} or {{para|royal_assent}} is used.
+#{{para|signed_by}} – to indicate the signer's identity where {{para|date_signed}} is used.
+
+Do not use parameter(s) from two of the above categories together. The official title should precede the full name (e.g. “President John Doe”, not “John Doe” or “President Doe”).
+|-
+| style="text-align:center;" |'''date_vetoed'''
+|The date when the legislation was [[vetoed]] by the [[:en:Head of state|Head of state]] or their representative. This does not apply to a [[pocket veto]].
+|-
+| style="text-align:center;" |'''veto_type'''
+|The type of veto applied to the law, if the [[:en:Head of state|Head of state]] or their representative has the right to veto the bill in multiple ways. This does not apply to a [[pocket veto]].
+
+Use one of the following:
+#Absolute – to indicate a veto which cannot be overridden (''e.g.'', withholding of royal assent by the [[Monarch of the United Kingdom]], or a final veto by the [[President of Cyprus]]).
+#Package – to indicate a veto where the entire bill is returned to the legislature for reconsideration.
+#Line-item – to indicate a veto where only a part of the bill is returned to the legislature for reconsideration.
+#Reservation – to indicate a veto where the bill is submitted to the decision of a third party, other than a court or other authority with judicial review powers; typically, this would be the people in a referendum (''e.g.'', a reservation of the bill to the significance of the people by the [[President of Ireland]]), though submission to a non-judicial third authority exists as well (''e.g.'' [[Disallowance and reservation in Canada|reservation in Canada]]).
+#Constitutional – to indicate a veto where the bill is referred to the supreme or constitutional court, or other authority with [[:en:Judicial review|Judicial review]] powers, to determine its constitutionality.
+|-
+| style="text-align:center;" |'''veto_overridden'''
+|The date when the veto was [[veto override|overridden]]:
+#If the veto involves returning the bill to the legislature, this is the date of the legislative vote to override the veto. If the legislative debates are available online, create external links to them.
+#If the veto involves submitting the bill to a referendum, this is the date of the referendum on that bill. Create an internal link to that Referendum's article.
+#If the veto involves submitting the bill to non-judicial third authority, this is the date that third authority overturned the veto.
+
+This does not apply to a [[pocket veto]] or a constitutional veto.
+|-
+| style="text-align:center;" |'''reference_holding'''
+|The decision of the supreme or constitutional court, or other authority with [[:en:Judicial review|Judicial review]] powers, on a vetoed bill referred to it. Create an internal link to the court ruling's article; if no such article exists but the court's decision is available online, create an external link to it.
+|-
+| style="text-align:center;" |'''date_pocket_vetoed'''
+|The date when the legislation was [[pocket veto]]ed by the [[:en:Head of state|Head of state]] or their representative (''i.e.'' the bill became ineffective because the head of state or representative did not sign/assent or veto it within an allowed time).
+|-
+| style="text-align:center;" |'''date_became_law_by_inaction'''
+|The date when the legislation bill became law because the head of state or representative did not sign/assent or veto it within an allowed time.
+|-
+| style="text-align:center;" |'''date_commenced'''<br />'''date_effective'''
+|The date when the legislation commenced ([[:en:Coming into force|came into force]]), or [[effective date|became effective]] as law. Use the parameter that corresponds to the term customary in the jurisdiction, not both the parameters.
+|-
+| style="text-align:center;" |'''date_of_expiry'''
+|Date when the legislation automatically ceases to have effect (usually, but not always, when a [[Sunset clause|sunset provision]] is included).
+|-
+| style="text-align:center;" |'''date_repealed'''
+|Date when the legislation is repealed. Note that legislation may be repealed before or after it had expired, so this parameter is not necessarily identical to {{para|date_of_expiry}}.
+|-
+| style="text-align:center;" |'''date_abrogated'''
+|Date when the legislation is abrogated without a formal repeal by the legislature, such as being struck down as unconstitutional, disallowed, or abrogated in a [[popular referendum]].
+|-
+| style="text-align:center;" |'''administered_by'''
+|The institution administering the legislation. Not necessary for most legislation. Wikilink if possible.
+|-
+|colspan="2" bgcolor="silver"|'''Legislative history'''
+|-
+| style="text-align:center;" |'''bill_history_url'''
+|URL of the webpage on the legislature's website (or equivalent) that shows the legislative history of the bill, if available. Sometimes known as the "bill homepage".
+|-
+| style="text-align:center;" |'''bill'''
+|The name of the [[:en:Bill (law)|bill]] or proposed law when the legislation was still being considered by the institution specified in {{para|enacted_by}} or {{para|considered_by}}. Wikilink the name to an article about the bill, if there is one.
+
+In a bicameral jurisdiction, use this parameter to state the name of the bill that was introduced by the legislative chamber that initiated the legislation.
+|-
+| style="text-align:center;" |'''bill_citation'''
+|The citation of the bill. If the bill is available online, create an external link to it. If the citation uses square brackets, replace them with {{mono|&amp;#91;}} and {{mono|&amp;#93;}} when putting them inside an external link.
+|-
+| style="text-align:center;" |'''introduced_by'''
+|The name of the legislator or other authority who introduced the bill.
+|-
+| style="text-align:center;" |'''cosponsored_by'''
+|The legislator(s) co-sponsoring the bill.
+|-
+| style="text-align:center;" |'''date_introduced'''
+|The date when the bill was introduced.
+
+Do not use this parameter if the introduction is considered part of another stage (e.g. First readings in Commonwealth realms, which are typically just the introduction of the bill, instead of a debate on its general outlines followed by a vote on whether or not to send it to committee form of First reading common in non-Westminster legislatures).
+|-
+| style="text-align:center;" |'''date_distributed'''
+|The date when the bill was distributed for circulation among MPs.
+|-
+| style="text-align:center;" |'''committee_responsible'''
+|The name of the Committee responsible for the topic of the bill. Use only the name of the committee itself (for example, "[[United States House Committee on Financial Services|Financial Services]]" instead of "[[United States House Committee on Financial Services]]").
+|-
+| style="text-align:center;" |'''member_in_charge<br />rapporteur'''
+|The name of the legislator responsible for handling the bill, if different from the person who introduced it. Use the parameter that corresponds to the term customary in the jurisdiction, not both the parameters.
+|-
+| style="text-align:center;" |'''preliminary_reading<br />1st_reading<br />2nd_reading<br />3rd_reading'''
+|The dates of the [[reading (legislature)#Preliminary reading|preliminary]], [[reading (legislature)#First reading|first]], [[reading (legislature)#Second reading|second]] and [[reading (legislature)#Third reading|third readings]] of the bill in the legislature. If the legislative debates are available online, create external links to them.
+|-
+| style="text-align:center;" |'''passed'''
+|The date when the bill was finally passed by the chamber in jurisdictions that do not use numbered readings (e.g. Continental European legislatures).
+
+Do not use this parameter together with the readings parameters.
+|-
+| style="text-align:center;" |'''committee_post1st<br />committee_post2nd'''
+|The date(s) when the bill was considered by a legislative committee (other than a committee of the whole) between readings. Use committee_post1st and committee_post2nd as appropriate in the jurisdiction - committee_post1st if it occurs between first and second readings (Israel, US House of Representatives), and committee_post2nd if it occurs between second and third readings (US Senate, UK, Australia), not both the parameters.
+|-
+| style="text-align:center;" |'''committee_whole_label<br />committee_whole'''
+|In some jurisdictions, name of the stage between the second and third readings where the bill is examined in detail (usually clause by clause), and the date(s) when it occurred. This is often named the "[[committee of the whole]]" (default), or sometimes the "committee stage" (Ireland, New Zealand) or "consideration in detail" (most lower houses of the bicameral parliaments in Australia). Omit if the stage was skipped (e.g. if no amendments were proposed or the chamber voted to skipped).
+|-
+| style="text-align:center;" |'''conf_committee_passed'''
+|In some jurisdictions, the date when the institution passed the version of the bill adopted by a [[conference committee]].
+|-
+| style="text-align:center;" |'''preliminary_reading_for<br />1st_reading_for<br />2nd_reading_for<br />3rd_reading_for<br />passed_for<br />conf_committee_passed_for'''
+|How many members voted for the bill in a given reading or other vote for passage.
+
+Do not use this parameter if the vote is not taken on the bill as a whole (e.g. second readings in Israel).
+|-
+| style="text-align:center;" |'''preliminary_reading_against<br />1st_reading_against<br />2nd_reading_against<br />3rd_reading_against<br />passed_against<br />conf_committee_passed_against'''
+|How many members voted against the bill in a given reading or other vote for passage.
+
+Do not use this parameter if the vote is not taken on the bill as a whole (e.g. second readings in Israel).
+|-
+| style="text-align:center;" |'''preliminary_reading_abstention<br />1st_reading_abstention<br />2nd_reading_abstention<br />3rd_reading_abstention<br />passed_abstention<br />conf_committee_passed_abstention'''
+|How many members voted to abstain (however called in the jurisdiction; e.g. "present", "blank vote") in a given reading or other vote for passage.
+
+Do not use this parameter if the vote is not taken on the bill as a whole (e.g. second readings in Israel).
+|-
+| style="text-align:center;" |'''preliminary_reading_absent<br />1st_reading_absent<br />2nd_reading_absent<br />3rd_reading_absent<br />passed_absent<br />conf_committee_passed_absent'''
+|How many members were absent from the vote in a given reading or other vote for passage.
+
+Do not use this parameter if the vote is not taken on the bill as a whole (e.g. second readings in Israel).
+|-
+| style="text-align:center;" |'''preliminary_reading_presentnotvoting<br />1st_reading_presentnotvoting<br />2nd_reading_presentnotvoting<br />3rd_reading_presentnotvoting<br />passed_presentnotvoting<br />conf_committee_passed_presentnotvoting'''
+|How many members were present at the vote in a given reading or other vote for passage, but did not vote. This does not include a vote to abstain (however called in the jurisdiction; e.g. "present", "blank vote").
+
+Do not use this parameter if the vote is not taken on the bill as a whole (e.g. second readings in Israel).
+|-
+| style="text-align:center;" |'''committee_report'''
+|The name of a report issued by a legislative committee about the bill that was eventually enacted. If the report is available online, create an external link to it.
+|-
+| style="text-align:center;" |'''bill2<br />bill_citation2<br />bill_date2<br />member_in_charge2<br />rapporteur2<br />introduced_on2<br />committee_responsible<br />preliminary_reading2<br />preliminary_reading2_for<br />preliminary_reading2_against<br />preliminary_reading2_abstention<br />preliminary_reading2_absent<br />preliminary_reading2_presentnotvoting<br />1st_reading2<br />1st_reading2_for<br />1st_reading2_against<br />1st_reading2_abstention<br />1st_reading2_absent<br />1st_reading2_presentnotvoting<br />committee_post1st2<br />2nd_reading2<br />2nd_reading2_for<br />2nd_reading2_against<br />2nd_reading2_abstention<br />2nd_reading2_absent<br />2nd_reading2_presentnotvoting<br />committee_post2nd2<br />committee_whole_label2<br />committee_whole2<br />3rd_reading2<br />3rd_reading2_for<br />3rd_reading2_against<br />3rd_reading2_abstention<br />3rd_reading2_absent<br />1st_reading2_presentnotvoting<br />passed2<br />passed2_for<br />passed2_against<br />passed2_abstention<br />passed2_absent<br />passed2_presentnotvoting<br />conf_committee_passed2<br />conf_committee_passed2_for<br />conf_committee_passed2_against<br />conf_committee_passed2_abstention<br />conf_committee_passed2_absent<br />conf_committee_passed2_presentnotvoting<br />committee_report2'''
+|In a bicameral legislature, use these parameters to specify information about the bill that was considered in one chamber after it was passed by the other chamber.
+
+In a bicameral legislature that employs an asymmetrical process, such as most Continental European legislatures, the <code>passed2</code>, <code>passed2_for</code>, <code>passed2_against</code>, <code>passed2_abstention</code>, <code>passed2_absent</code>, and <code>passed2_presentnotvoting</code> parameters apply to the decision of the second chamber to reject a bill, to pass it in an amended version, or (in the Czech Senate's case) to resolve not to consider the bill; if the second chamber didn't decide on the bill within the alloted time, <code>passed2</code> should be used to specify the date on which the time-limit ended.
+|-
+| style="text-align:center;" |'''date_conf_committee'''
+|In some jurisdictions, the date when a conference committee passed a bill. This parameter should be used together with {{para|conf_committee_passed}} and {{para|conf_committee_passed2}} – use these parameters to indicate the dates when the upper and lower legislative chambers passed the version of the bill adopted by the conference committee.
+|-
+| style="text-align:center;" |'''second_chamber_action'''
+|In a bicameral legislature that employs an asymmetrical process, the action taken by the second chamber on the bill. The possible values are:
+*rejected
+*passed after rejection
+*passed with amendments
+*amendments rejected
+*resolved not to consider
+*passed by inaction
+If {{para|second_chamber_action}} is left empty, or if some value other than the ones above is given to, "Passed" is displayed.
+|-
+| style="text-align:center;" |'''date_conf_committee'''
+|In some jurisdictions, the date when a conference committee passed a bill. This parameter should be used together with {{para|conf_committee_passed}} and {{para|conf_committee_passed2}} – use these parameters to indicate the dates when the upper and lower legislative chambers passed the version of the bill adopted by the conference committee.
+|-
+| style="text-align:center;" |'''white_paper'''
+|The name of a [[white paper#Government white papers|white paper]] relating to the legislation. If the white paper is available online, create an external link to it.
+|-
+| style="text-align:center;" |'''date_amendments_considered'''
+|In bicameral legislatures, if amendments were made to the bill by the second chamber, the date(s) when these amendments were considered by the originating chamber. This includes a rejection of the bill in bicameral legislatures that employ an asymmetrical process.
+|-
+| style="text-align:center;" |'''amendments_considered_for'''
+|In a bicameral legislature that employs an asymmetrical process, how many members voted for the first chamber's final decision on the amendments or rejection made by the second chamber.
+|-
+| style="text-align:center;" |'''amendments_considered_against'''
+|In a bicameral legislature that employs an asymmetrical process, how many members voted against the first chamber's final decision on the amendments or rejection made by the second chamber.
+|-
+| style="text-align:center;" |'''amendments_considered_abstention'''
+|In a bicameral legislature that employs an asymmetrical process, how many members voted to abstain (however called in the jurisdiction; e.g. "present", "blank vote") in the first chamber's final decision on the amendments or rejection made by the second chamber.
+|-
+| style="text-align:center;" |'''amendments_considered_absent'''
+|In a bicameral legislature that employs an asymmetrical process, how many members were absent from the vote in the first chamber's final decision on the amendments or rejection made by the second chamber.
+|-
+| style="text-align:center;" |'''amendments_considered_presentnotvoting'''
+|In a bicameral legislature that employs an asymmetrical process, how many members were present at the vote in the first chamber's final decision on the amendments or rejection made by the second chamber, but did not vote. This does not include a vote to abstain (however called in the jurisdiction; e.g. "present", "blank vote").
+|-
+| style="text-align:center;" |'''date_final_passage'''
+|In bicameral legislatures that employ a symmetrical process, the date when all amendments to the bill have been ultimately considered and the bill has finally passed both chambers.
+|-
+| style="text-align:center;" |'''date_reconsidered'''
+|The date when a vetoed bill, returned to the legislature, was reconsidered by the institution specified in {{para|enacted_by}} or {{para|considered_by}}.
+|-
+| style="text-align:center;" |'''veto_override_for'''
+|How many members voted for a veto override during the first chamber's reconsideration of a vetoed bill.
+|-
+| style="text-align:center;" |'''veto_override_against'''
+|How many members voted against a veto override during the first chamber's reconsideration of a vetoed bill.
+|-
+| style="text-align:center;" |'''veto_override_abstention'''
+|How many members voted to abstain (however called in the jurisdiction; e.g. "present", "blank vote") in the first chamber's vote on a veto override during the first chamber's reconsideration of a vetoed bill.
+|-
+| style="text-align:center;" |'''veto_override_absent'''
+|How many members were absent from the first chamber's vote on a veto override during the first chamber's reconsideration of a vetoed bill.
+|-
+| style="text-align:center;" |'''veto_override_presentnotvoting'''
+|How many members were present at the first chamber's vote on a veto override during the first chamber's reconsideration of a vetoed bill, but did not vote. This does not include a vote to abstain (however called in the jurisdiction; e.g. "present", "blank vote").
+|-
+| style="text-align:center;" |'''date_reconsidered2<br />veto_override2_for<br />veto_override2_against<br />veto_override2_abstention<br />veto_override2_absent<br />veto_override2_presentnotvoting'''
+|In a bicameral legislature, use these parameters to specify information about the second chamber's reconsideration of a vetoed bill.
+|-
+| style="text-align:center;" |'''amends'''
+|The citations of any notable legislation that this legislation amends. If available, wikilink the article or external link the texts of the amended legislation.
+|-
+| style="text-align:center;" |'''repeals'''
+|The citations of any notable legislation that this legislation repeals. If available, wikilink the article or external link the texts of the repealed legislation.
+|-
+| style="text-align:center;" |'''amended_by'''
+|The citations of any notable amendments to this legislation. If available, wikilink the article or external link the texts of the amendments.
+|-
+| style="text-align:center;" |'''repealed_by'''
+|The citations of any notable legislation repealing parts or previous versions of this legislation. If available, wikilink the article or external link the texts of the repealing legislation.
+|-
+| style="text-align:center;" |'''related_legislation'''
+|The names and citations of any related pieces of legislation. Where possible, link the name of a related piece of legislation to a Wikipedia article about it, and link the citation to an external website containing the text of the related legislation.
+|-
+| style="text-align:center;" |'''related_cases'''
+|Court cases of the jurisdiction's supreme court relating to this legislation. Where possible, link the name of a court case to a Wikipedia article about it, and link the citation to an external website containing the text of the ruling.
+|-
+| style="text-align:center;" |'''supreme_court'''
+|Name of the supreme court issuing the cases listed in {{para|related_cases}}.
+|-
+| style="text-align:center;" |'''struck_down_by'''
+|The citations of any court case striking down this legislation as unconstitutional. Where possible, link the name of a court case to a Wikipedia article about it, and link the citation to an external website containing the text of the ruling.
+|-
+| style="text-align:center;" |'''summary'''
+|A very brief summary of the subjects that the legislation deals with.
+|-
+| style="text-align:center;" |'''keywords'''
+|A list of [[:en:Index term|keywords]] that describe the legal issues dealt with by the legislation. List keywords alphabetically, separate them with commas, and link them to appropriate Wikipedia articles wherever possible; for example, "{{mono|<nowiki>[[Bailment]], [[common carrier]], [[negligence]], [[strict liability]]</nowiki>}}".
+|-
+|colspan="2" bgcolor="silver"|'''Status'''
+|-
+| style="text-align:center;" |'''status'''
+|The status of the bill or legislation. The possible values are:
+{|
+|-
+|
+*pending
+*pending first
+*pending second
+*pending referendum
+*pending assent
+*not passed
+*vetoed
+*veto override failed
+*current
+*not yet in force
+*not fully in force
+|
+*halted
+*in force
+*amended
+*expired
+*repealed
+*spent
+*struck down
+*disallowed
+*abrogated
+*void
+*void ab initio
+|}
+If some value other than the ones above is given to {{para|status}}, "Unknown" is displayed.
+|}
+
+==Examples==
+===Statute===
+{{Infobox legislation
+|short_title        = Criminal Law (Temporary Provisions) Act
+|long_title         = An Act to make temporary provisions for the maintenance of public order, the control of supplies by sea to Singapore, and the prevention of strikes and lock-outs in essential services
+|citation           = Ordinance No. 26 of 1955, now {{Singapore legislation|cap=67|ed=2000}}
+|territorial_extent = Whole of [[:en:Singapore|Singapore]]
+|enacted_by         = [[Legislative Assembly of Singapore]]
+|date_enacted       = 22 September 1955
+|date_commenced     = 21 October 1955
+|bill_date          = 31 August 1955
+|introduced_by      = Chief Secretary [[William Allmond Codrington Goode]]
+|1st_reading        = 18 August 1955
+|2nd_reading        = 22 September 1955
+|3rd_reading        = 22 September 1955
+|status             = in force
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title        = Criminal Law (Temporary Provisions) Act
+|long_title         = An Act to make temporary provisions for the maintenance of public order, the control of supplies by sea to Singapore, and the prevention of strikes and lock-outs in essential services
+|citation           = Ordinance No. 26 of 1955, now {{Singapore legislation|cap=67|ed=2000}}
+|territorial_extent = Whole of [[:en:Singapore|Singapore]]
+|enacted_by         = [[Legislative Assembly of Singapore]]
+|date_enacted       = 22 September 1955
+|date_commenced     = 21 October 1955
+|bill_date          = 31 August 1955
+|introduced_by      = Chief Secretary [[William Allmond Codrington Goode]]
+|1st_reading        = 18 August 1955
+|2nd_reading        = 22 September 1955
+|3rd_reading        = 22 September 1955
+|status             = in force
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Statute made after overridden veto===
+{{Infobox legislation
+|short_title        = Act 123/2017 Sb.
+|long_title         = Act of 1 March 2017, amending Act No. 114/1992 Sb., on Nature and Landscape Protection, as amended
+|citation           = 123/2017 Sb.
+|legislature        = [[Parliament of the Czech Republic]]
+|enacted_by         = [[:en:Chamber of Deputies of the Czech Republic|Chamber of Deputies]]
+|date_passed        = 2 December 2016
+|enacted_by2        = [[Senate of the Czech Republic|Senate]]
+|date_passed2       = 18 January 2017
+|date_vetoed        = 10 March 2017
+|vetoed_by          = President [[Miloš Zeman]]
+|veto_overridden    = 4 April 2017
+|date_effective     = 11 April 2017
+|bill_citation      = [https://www.psp.cz/sqw/historie.sqw?o=7&T=501 Sněmovní tisk č. 501 (7th Legislature)]
+|1st_reading        = 7 October 2015–20 January 2016
+|2nd_reading        = 4 May 2016–25 May 2016
+|3rd_reading        = 1 July 2016–2 December 2016
+|second_chamber_action= amendments rejected
+|passed2            = 18 January 2017
+|date_amendments_considered = {{nowrap|21 February 2017–1 March 2017}}
+|date_reconsidered  = 4 April 2017
+|veto_override_for  = 117
+|veto_override_against = 18
+|veto_override_abstention = 14
+|status             = in force
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title        = Act 123/2017 Sb.
+|long_title         = Act of 1 March 2017, amending Act No. 114/1992 Sb., on Nature and Landscape Protection, as amended
+|citation           = 123/2017 Sb.
+|legislature        = [[Parliament of the Czech Republic]]
+|enacted_by         = [[:en:Chamber of Deputies of the Czech Republic|Chamber of Deputies]]
+|date_passed        = 2 December 2016
+|enacted_by2        = [[Senate of the Czech Republic|Senate]]
+|date_passed2       = 18 January 2017
+|date_vetoed        = 10 March 2017
+|vetoed_by          = President [[Miloš Zeman]]
+|veto_overridden    = 4 April 2017
+|date_effective     = 11 April 2017
+|bill_citation      = [https://www.psp.cz/sqw/historie.sqw?o=7&T=501 Sněmovní tisk č. 501 (7th Legislature)]
+|1st_reading        = 7 October 2015–20 January 2016
+|2nd_reading        = 4 May 2016–25 May 2016
+|3rd_reading        = 1 July 2016–2 December 2016
+|second_chamber_action= amendments rejected
+|passed2            = 18 January 2017
+|date_amendments_considered = {{nowrap|21 February 2017–1 March 2017}}
+|date_reconsidered  = 4 April 2017
+|veto_override_for  = 117
+|veto_override_against = 18
+|veto_override_abstention = 14
+|status             = in force
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Unpassed bill===
+{{Infobox legislation
+|short_title   = Naval Aid Bill
+|long_title    = An Act to authorize measures for increasing the effective naval forces of the Empire. 
+|considered_by = [[Parliament of Canada]]
+|introduced_by = [[Robert Borden]]
+|1st_reading   = December 5, 1912
+|3rd_reading   = May 15, 1913
+|status        = Not passed
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title   = Naval Aid Bill
+|long_title    = An Act to authorize measures for increasing the effective naval forces of the Empire. 
+|considered_by = [[Parliament of Canada]]
+|introduced_by = [[Robert Borden]]
+|1st_reading   = December 5, 1912
+|3rd_reading   = May 15, 1913
+|status        = Not passed
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Passed but vetoed bill===
+{{Infobox legislation
+|short_title   = Lex TVN
+|long_title    = Act of 11 August 2021 on the amendment of the "Broadcasting and the Cinematography Act" 
+|legislature   = [[Parliament of Poland]]
+|considered_by = [[Sejm]]
+|passed        = 18 December 2021
+|passed_for    = 229
+|passed_against= 212
+|passed_abstention= 11
+|considered_by2= [[Senate of Poland|Senate]]
+|date_amendments_considered= 18 December 2021
+|status        = Vetoed
+|date_vetoed   = 27 December 2021
+|vetoed_by     = President [[:en:Andrzej Duda|Andrzej Duda]]
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox legislation
+|short_title   = Lex TVN
+|long_title    = Act of 11 August 2021 on the amendment of the "Broadcasting and the Cinematography Act" 
+|legislature   = [[Parliament of Poland]]
+|considered_by = [[Sejm]]
+|passed        = 18 December 2021
+|passed_for    = 229
+|passed_against= 212
+|passed_abstention= 11
+|considered_by2= [[Senate of Poland|Senate]]
+|date_amendments_considered= 18 December 2021
+|status        = Vetoed
+|date_vetoed   = 27 December 2021
+|vetoed_by     = President [[:en:Andrzej Duda|Andrzej Duda]]
+}}
+</syntaxhighlight>
+{{clear}}
+
+==Images==
+The image parameter was unilaterally removed along with supporting parameters in November 2024 because it was generally used only to display decorative logos of the legislature that considered the law (which goes against [[:en:MOS:IMAGERELEVANCE|MOS:IMAGERELEVANCE]]); it was later restored as part of a [[WP:BOLD, revert, discuss cycle]] process.
+
+In the rare cases where an image specifically illustrates the law in question, whether in its topic or in its enactment process (such as [[Enabling Act of 1933]]), or helps to differentiates between similar laws of different jurisdictions (such as [[:en:Australia Act 1986|Australia Act 1986]], where the coats of arms help tell the UK and Australian versions of the act from each other), the images in question can be displayed within the infobox.
+
+==TemplateData==
+{{TemplateData header}}
+{{Collapse top|title=TemplateData}}
+<templatedata>
+{
+	"description": "Infobox for an article about an act, statute, bill, regulation, order, measure or other legislation in any jurisdiction. European Union, United Kingdom and United States federal legislations have specialised infoboxes of their own.",
+	"format": "{{_\n| ______________ = _\n}}\n",
+	"params": {
+		"short_title": {
+			"aliases": [
+				"name"
+			],
+			"label": "Short title",
+			"description": "Short title of the legislation. If a bill, enter the bill's current or most recent short title.",
+			"type": "string",
+			"default": "{{PAGENAMEBASE}}",
+			"suggested": true
+		},
+		"legislature": {
+			"label": "Legislature",
+			"type": "content",
+			"description": "Name of the legislature or institution enacting the legislation, wikilinked. Automatically sets image if available.",
+			"suggested": true
+		},
+		"long_title": {
+			"label": "Long title",
+			"description": "The long \"official\" title of the legislation or bill, in jurisdictions that use them.",
+			"type": "string",
+			"suggested": true
+		},
+		"citation": {
+			"label": "Citation",
+			"description": "The citation of the legislation or bill. Use a template from 'Category:Law citation templates' or manually create an external link to the legislation if available online. Replace square brackets in the citation text with &#91; and &#93;",
+			"type": "content",
+			"suggested": true
+		},
+		"territorial_extent": {
+			"label": "Territorial extent",
+			"description": "The territorial area(s) to which the legislation extends or applies. Wikilink where possible.",
+			"type": "content",
+			"suggested": true
+		},
+		"considered_by": {
+			"label": "Considered by",
+			"description": "The institution (usually a debate chamber) that is considering/has considered the bill or proposed/failed legislation. If the bill was passed or enacted by this institution, use 'enacted_by' instead. Wikilink where possible.",
+			"type": "content"
+		},
+		"enacted_by": {
+			"label": "Enacted by",
+			"description": "The institution (usually a debate chamber) that enacted the legislation. For bicameral legislatures, this is the first chamber the bill was introduced in. If the legislation is still being debated by or failed to be enacted by this chamber, use 'considered_by' instead. Wikilink where possible.",
+			"type": "content",
+			"suggested": true
+		},
+		"date_passed": {
+			"label": "Date passed",
+			"description": "Date when the legislation was passed by the institution specified in 'enacted_by'. Use 'date_enacted' instead if appropriate in jurisdiction, but not both.",
+			"type": "date"
+		},
+		"date_enacted": {
+			"label": "Date enacted",
+			"description": "Date when the legislation was enacted by the institution specified in 'enacted_by'. Use 'date_passed' instead if appropriate in jurisdiction, but not both.",
+			"type": "date",
+			"suggested": true
+		},
+		"considered_by2": {
+			"label": "Considered by (second chamber)",
+			"description": "The second chamber that is considering/has considered the bill or proposed/failed legislation. For bicameral legislatures only. If the bill was passed or enacted by this chamber, use 'enacted_by2' instead. Wikilink where possible.",
+			"type": "content"
+		},
+		"enacted_by2": {
+			"label": "Enacted by (second chamber)",
+			"description": "The second chamber that enacted the legislation. For bicameral legislatures only. If the legislation is still being debated by or failed to be enacted by this chamber, use 'considered_by2' instead. Wikilink where possible.",
+			"type": "content"
+		},
+		"date_passed2": {
+			"label": "Date passed (second chamber)",
+			"description": "Date when the legislation was passed by the institution specified in 'enacted_by2'. For bicameral legislatures only. Use 'date_enacted2' instead if appropriate in jurisdiction, but not both.",
+			"type": "date"
+		},
+		"date_enacted2": {
+			"label": "Date enacted (second chamber)",
+			"description": "Date when the legislation was enacted by the chamber specified in 'enacted_by2'. For bicameral legislatures only. Use 'date_passed2' instead if appropriate in jurisdiction, but not both.",
+			"type": "date"
+		},
+		"date_assented": {
+			"label": "Date assented to",
+			"description": "Date when a head of state or their representative gave formal assent to the legislation. Use 'royal_assent' or 'date_signed' instead if appropriate in jurisdiction, but not two or all three simultaneously.",
+			"type": "date",
+			"suggested": true
+		},
+		"royal_assent": {
+			"label": "Date of royal assent",
+			"description": "Date when a monarch or their representative gave royal assent to the legislation. Use 'date_assented' or 'date_signed' instead if appropriate in jurisdiction, but not two or all three simultaneously.",
+			"type": "date"
+		},
+		"date_signed": {
+			"label": "Date signed",
+			"description": "Date when a head of state or their representative signed the legislation into law. Use 'date_assented' or 'royal_assent' instead if appropriate in jurisdiction, but not two or all three simultaneously.",
+			"type": "date"
+		},
+		"signed_by": {
+			"label": "Signed by",
+			"description": "Person who signed the legislation into law. Do not use for countersignatures (e.g. those of the responsible minister(s) or the presiding officer(s) of the legislature). Only use if 'date_signed' is used. Wikilink if possible.",
+			"type": "content"
+		},
+		"date_commenced": {
+			"aliases": [
+				"commencement"
+			],
+			"description": "Date when the legislation came into force. This may be different from the date of assent or signature. Use 'date_effective' instead if appropriate in jurisdiction, but not both.",
+			"type": "date",
+			"label": "Date commenced",
+			"suggested": true
+		},
+		"date_effective": {
+			"label": "Date effective",
+			"description": "Date when the legislation became effective as law. This may be different from the date of assent or signature. Use 'date_commenced' instead if appropriate in jurisdiction, but not both.",
+			"type": "date"
+		},
+		"date_of_expiry": {
+			"label": "Date of expiry",
+			"description": "Date when the legislation automatically ceases to have effect (usually, but not always, when a sunset provision is included).",
+			"type": "date"
+		},
+		"date_repealed": {
+			"label": "Date repealed",
+			"description": "Date when the legislation is repealed. Note that legislation may be repealed before or after it had expired, so this parameter is not necessarily identical to 'date_of_expiry'.",
+			"type": "date"
+		},
+		"date_abrogated": {
+			"label": "Date abrogated",
+			"description": "Date when the legislation is abrogated without a formal repeal by the legislature, such as judicial review, a successful abrogative referendum, or disallowance.",
+			"type": "date"
+		},
+		"administered_by": {
+			"label": "Administered by",
+			"description": "The institution administering the legislation. Not necessary for most legislation. Wikilink if possible.",
+			"type": "content"
+		},
+		"bill": {
+			"label": "Bill title",
+			"description": "Name of the bill or proposed law when the legislation was still being considered by the institution specified in 'enacted_by' or 'considered_by'. Omit if this is still a bill in this institution and the name is the same as the current 'short_title'.",
+			"type": "string",
+			"suggested": true
+		},
+		"1st_reading": {
+			"label": "First reading",
+			"description": "Date when the bill was read a first time in the chamber specified in 'enacted_by' or 'considered_by'. If in the unlikely circumstance the bill was first read over multiple days, specify a date range.",
+			"type": "date",
+			"suggested": true
+		},
+		"2nd_reading": {
+			"label": "Second reading",
+			"description": "Date(s) when the bill was read a second time in the chamber specified in 'enacted_by' or 'considered_by'. If read over multiple days, specify a date range.",
+			"type": "date",
+			"suggested": true
+		},
+		"committee_whole_label": {
+			"label": "Committee of the whole title",
+			"description": "In some jurisdictions, name of the stage between the second and third readings used by the chamber specified in 'enacted_by' or 'considered_by' in which the provisions of the bill is examined in detail (usually clause by clause) and amendments by legislators are considered.",
+			"type": "content",
+			"suggestedvalues": [
+				"Consideration in detail",
+				"Committee stage"
+			],
+			"default": "[[Committee of the whole]]",
+			"suggested": true
+		},
+		"committee_whole": {
+			"label": "Date(s) considered by committee of the whole",
+			"description": "Date(s) when the bill and its proposed amendments were considered by a committee of the whole in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this. If considered over multiple days, specify a date range. Omit if stage was skipped.",
+			"type": "date",
+			"suggested": true
+		},
+		"3rd_reading": {
+			"label": "Third reading",
+			"description": "Date when the bill was read a third time in the chamber specified in 'enacted_by' or 'considered_by'. If in the unlikely circumstance the bill was read at this stage over multiple days, specify a date range.",
+			"type": "date",
+			"suggested": true
+		},
+		"passed": {
+			"label": "Date(s) passed by the chamber (without three readings)",
+			"description": "Date(s) when the bill was passed by the chamber specified in 'enacted_by' or 'considered_by', if that chamber does not pass bills in three readings or the date of those readings is unknown.",
+			"type": "date"
+		},
+		"bill_citation": {
+			"label": "Bill citation",
+			"description": "The citation of the bill for this legislation in the institution specified in 'enacted_by' or 'considered_by'. Omit if this is still a bill in this institution and the citation is the same as the current 'citation'. Create an external link to the bill if available online. Replace square brackets in the citation text with &#91; and &#93;",
+			"suggested": true,
+			"type": "content"
+		},
+		"introduced_by": {
+			"label": "Introduced by",
+			"description": "The member of the legislature that introduced the bill into the chamber. Wikilink where possible.",
+			"type": "content",
+			"suggested": true
+		},
+		"conf_committee_passed": {
+			"label": "Date conference committee bill passed",
+			"description": "Date when the version of the bill adopted by the conference committee is passed by the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this.",
+			"type": "date"
+		},
+		"committee_report": {
+			"label": "Committee report name",
+			"description": "The name of a report issued by a committee in the chamber specified in 'enacted_by' or 'considered_by' about the bill. Create an external link to the report if available online.",
+			"type": "content"
+		},
+		"bill2": {
+			"label": "Bill title (second chamber)",
+			"type": "string",
+			"description": "Name of the bill or proposed law when the legislation was still being considered by the chamber specified in 'enacted_by2' or 'considered_by2'. For bicameral legislatures only."
+		},
+		"bill_citation2": {
+			"label": "Bill citation (second chamber)",
+			"type": "content",
+			"description": "The citation of the bill for this legislation in the second chamber. For bicameral legislatures only. Create an external link to the bill if available online. Replace square brackets in the citation text with &#91; and &#93;"
+		},
+		"introduced_by2": {
+			"label": "Member in charge (second chamber)",
+			"type": "content",
+			"description": "The member of the legislature responsible for the carriage of the bill through the chamber. For bicameral legislatures only. Wikilink where possible."
+		},
+		"1st_reading2": {
+			"label": "First reading (second chamber)",
+			"type": "date",
+			"description": "Date when the bill was read a first time in the second chamber. For bicameral legislatures that use a symmetrical legislative procedure only. If in the unlikely circumstance the bill was first read over multiple days, specify a date range."
+		},
+		"2nd_reading2": {
+			"label": "Second reading (second chamber)",
+			"type": "date",
+			"description": "Date(s) when the bill was read a second time in the second chamber. For bicameral legislatures that use a symmetrical legislative procedure only. If read over multiple days, specify a date range."
+		},
+		"committee_whole_label2": {
+			"label": "Committee of the whole title (second chamber)",
+			"description": "In some jurisdictions, name of the stage between the second and third readings used by the second chamber in which the provisions of the bill is examined in detail (usually clause by clause) and amendments by legislators are considered. For bicameral legislatures only.",
+			"type": "content",
+			"suggestedvalues": [
+				"Consideration in detail",
+				"Committee stage"
+			]
+		},
+		"committee_whole2": {
+			"label": "Date(s) considered by committee of the whole (second chamber)",
+			"description": "Date(s) when the bill and its proposed amendments were considered by a committee of the whole in the second chamber, in jurisdictions that do this. For bicameral legislatures only. If considered over multiple days, specify a date range. Omit if stage was skipped.",
+			"type": "date"
+		},
+		"3rd_reading2": {
+			"label": "Third reading (second chamber)",
+			"type": "date",
+			"description": "Date when the bill was read a third time in the second chamber. For bicameral legislatures that use a symmetrical legislative procedure only. If in the unlikely circumstance the bill was read at this stage over multiple days, specify a date range."
+		},
+		"passed2": {
+			"label": "Date(s) passed by the chamber (second chamber)",
+			"description": "Date(s) when the bill was passed by the second chamber, if that chamber does not pass bills in three readings or the date of those readings is unknown. In bicameral legislatures that use an asymmetrical legislative procedure, this includes a date where the second chamber rejected a bill or resolved not to consider it.",
+			"type": "date",
+			"suggested": true
+		},
+		"conf_committee_passed2": {
+			"label": "Date conference committee bill passed (second chamber)",
+			"type": "date",
+			"description": "Date when the version of the bill adopted by the conference committee is passed by the second chamber, in jurisdictions that do this. For bicameral legislatures only."
+		},
+		"committee_report2": {
+			"label": "Committee report name (second chamber)",
+			"type": "content",
+			"description": "The name of a report issued by a committee in the second chamber about the bill. For bicameral legislatures only. Create an external link to the report if available online."
+		},
+		"date_conf_committee": {
+			"label": "Date conference committee adopted bill",
+			"type": "date",
+			"description": "Date when the conference committee adopted their version of the bill, in jurisdictions that do this."
+		},
+		"white_paper": {
+			"label": "White paper",
+			"type": "content",
+			"description": "The name of a white paper relating to the legislation. Create an external link to the white paper if available online."
+		},
+		"date_amendments_considered": {
+			"label": "Date(s) when amendments from second chamber considered by first chamber",
+			"description": "Date(s) when amendments made by the second chamber to the bill were considered by the originating chamber. In bicameral legislatures that use an asymmetrical legislative procedure, this includes a date where the first chamber considered the second chamber's rejection of a bill. For bicameral legislatures only. If considered over multiple days, specify a date range. Omit if no amendments were made.",
+			"type": "date"
+		},
+		"date_final_passage": {
+			"label": "Date finally passed by both chambers",
+			"description": "Date when the bill, after consideration of amendments, is finally passed by both chambers, with or without amendment. For bicameral legislatures that use a symmetrical legislative procedure only. Omit if no amendments were made.",
+			"type": "date"
+		},
+		"amends": {
+			"label": "Amends",
+			"type": "content",
+			"description": "List of citations of other notable legislation that this legislation amends. Wikilink or external link where possible."
+		},
+		"repeals": {
+			"label": "Repeals",
+			"type": "content",
+			"description": "List of citations of other notable legislation that this legislation repeals. Wikilink or external link where possible."
+		},
+		"amendments": {
+			"deprecated": "Deprecated due to ambiguity. Use amends or amended_by as appropriate.",
+			"label": "Amended by",
+			"type": "content",
+			"description": "Same as 'amended_by', but this parameter is deprecated."
+		},
+		"amended_by": {
+			"label": "Amended by",
+			"type": "content",
+			"description": "List of citations of other notable legislation that amends this legislation. Wikilink or external link where possible."
+		},
+		"repealed_by": {
+			"label": "Repealed by",
+			"type": "content",
+			"description": "Citation of the legislation that repealed this legislation. Wikilink or external link if possible."
+		},
+		"related_legislation": {
+			"aliases": [
+				"related"
+			],
+			"label": "Related legislation",
+			"type": "content",
+			"description": "Names and citations of any other related legislation. Wikilink name and external link citation where possible."
+		},
+		"related_cases": {
+			"label": "Related court cases",
+			"type": "content",
+			"description": "Names and citations of any notable cases regarding this legislation in a superior court or other institution with judicial review powers. Wikilink name and external link citation where possible."
+		},
+		"supreme_court": {
+			"label": "Superior court considering this legislation",
+			"description": "Name of the court or other institution with judicial review powers that dealt with the cases listed in 'related_cases'.",
+			"type": "content"
+		},
+		"struck_down_by": {
+			"label": "Struck down by",
+			"description": "A wikilink or external link to the decision of a court or other institution with judicial review powers that struck down this bill for unconstitutionality.",
+			"type": "content"
+		},
+		"summary": {
+			"label": "Summary",
+			"type": "content",
+			"description": "A very brief summary of the subjects that the legislation deals with.",
+			"suggested": true
+		},
+		"keywords": {
+			"label": "Keywords",
+			"type": "content",
+			"description": "A comma-separated list of keywords that describe the legal issues dealt with by the legislation. List keywords alphabetically and wikilink them wherever possible.",
+			"suggested": true
+		},
+		"status": {
+			"type": "string",
+			"label": "Status",
+			"description": "The status of the legislation or bill. Select from the provided values in the \"suggested values\" list. Do not use other values—those will generate an 'unknown' status.",
+			"required": true,
+			"suggestedvalues": [
+				"pending",
+				"not passed",
+				"vetoed",
+				"veto override failed",
+				"withdrawn",
+				"blocked",
+				"not yet in force",
+				"not fully in force",
+				"current",
+				"in force",
+				"in force amended",
+				"amended",
+				"expired",
+				"spent",
+				"repealed",
+				"disallowed",
+				"abrogated",
+				"struck down",
+				"halted",
+				"void",
+				"void ab initio",
+				"pending first",
+				"pending second",
+				"pending referendum",
+				"pending assent"
+			]
+		},
+		"autocollapse_long_title": {
+			"label": "Autocollapse long title",
+			"description": "Set to any value to collapse the long title on page load. Useful for long titles that are very long.",
+			"type": "string",
+			"autovalue": "true"
+		},
+		"assented_by": {
+			"label": "Assented to by",
+			"description": "Person who gave assent to the legislation. Only use if 'date_assented' or 'royal_assent' is used. Wikilink if possible. The official title should precede the name (e.g. “President John Doe”, not “John Doe”).",
+			"type": "string"
+		},
+		"vetoed_by": {
+			"label": "Vetoed by",
+			"description": "Person who vetoed the law or otherwise prevented the bill from becoming law.",
+			"type": "content"
+		},
+		"date_vetoed": {
+			"label": "Date vetoed",
+			"description": "Date when a head of state or their representative vetoed the law or otherwise prevented the bill from becoming law.",
+			"type": "date"
+		},
+		"veto_type": {
+			"label": "Veto type",
+			"description": "In jurisdictions where multiple types of veto are possible, the type of veto used on the bill. Use one of the following: Absolute (a veto which cannot be overridden)/Package (the entire bill is returned to the legislature for reconsideration)/Line-item (only a part of the bill is returned to the legislature for reconsideration)/Reservation (the bill is submitted to a referendum, or to a third government authority without judicial review powers)/Constitutional (the bill is referred to the supreme or constitutional court for a priori judicial review).",
+			"type": "content"
+		},
+		"veto_overridden": {
+			"label": "Date veto was overriden",
+			"description": "Date when a package or line-item veto was overriden by the legislature, when a vote was held on a reserved bill which was submitted to a referendum, or when the decision was taken on a reserved bill which was brought to a third authority.",
+			"type": "date"
+		},
+		"reference_holding": {
+			"label": "Reference holding",
+			"description": "In jurisdictions where this is possible, a wikilink or external link to the decision of a court or other institution with judicial review powers that the vetoed bill was referred to.",
+			"type": "content"
+		},
+		"date_pocket_vetoed": {
+			"label": "Date pocket vetoed",
+			"description": "In jurisdictions where this is possible, the date when the bill was vetoed by inaction.",
+			"type": "date"
+		},
+		"date_became_law_by_inaction": {
+			"label": "Date when bill became law by inaction",
+			"description": "The date when the bill automatically became law without the head of state's (or other officeholder's) assent or signature.",
+			"type": "date"
+		},
+		"committee_responsible": {
+			"label": "Committee responsible",
+			"type": "content",
+			"description": "The legislative committee that the bill was referred to, if any."
+		},
+		"preliminary_reading": {
+			"label": "Preliminary reading",
+			"description": "In Israel's Knesset, date(s) when the (private member's) bill had its preliminary reading. If read over multiple days, specify a date range.",
+			"type": "date"
+		},
+		"committee_post1st": {
+			"label": "Date(s) considered in committee between first and second readings",
+			"type": "date"
+		},
+		"committee_post2nd": {
+			"label": "Date(s) considered in committee between second reading and committee of the whole/third reading",
+			"type": "date"
+		},
+		"committee_post1st2": {
+			"label": "Date(s) considered in committee between first and second readings (second chamber)",
+			"type": "date"
+		},
+		"committee_post2nd2": {
+			"label": "Date(s) considered in committee between second reading and committee of the whole/third reading (second chamber)",
+			"type": "date"
+		},
+		"date_reconsidered": {
+			"label": "Date(s) reconsidered after veto",
+			"type": "date"
+		},
+		"date_reconsidered2": {
+			"label": "Date(s) reconsidered after veto (second chamber)",
+			"description": "In some jurisdictions with a bicameral legislature that use an asymmetrical legislative procedure, such as the Czech Republic, the bill may be reconsidered only by the lower chamber.",
+			"type": "date"
+		},
+		"second_chamber_action": {
+			"label": "Action taken by second chamber (asymmetrical legislative procedure)",
+			"description": "In jurisdictions with a bicameral legislature that use an asymmetrical legislative procedure, such as Poland or the Czech Republic, the action taken by the second chamber on bills passed by the first chamber. Select from the following: rejected/passed after rejection/passed with amendments/amendments rejected/resolved not to consider/passed by inaction. Do not capitalise. Leave blank if the bill was passed without amendment. Other values will default to 'passed without amendment'.",
+			"type": "string",
+			"suggestedvalues": [
+				"rejected",
+				"passed after rejection",
+				"passed with amendments",
+				"amendments rejected",
+				"resolved not to consider",
+				"passed by inaction"
+			]
+		},
+		"preliminary_reading_for": {
+			"label": "Votes for (preliminary reading)",
+			"description": "How many members voted for the bill in its preliminary reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"1st_reading_for": {
+			"label": "Votes for (first reading)",
+			"description": "How many members voted for the bill in its first reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading_for": {
+			"label": "Votes for (second reading)",
+			"description": "How many members voted for the bill in its second reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading_for": {
+			"label": "Votes for (third reading)",
+			"description": "How many members voted for the bill in its third reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed_for": {
+			"label": "Votes for (passage without three readings)",
+			"description": "How many members voted for the bill's passage in the chamber specified in 'enacted_by' or 'considered_by', if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed_for": {
+			"label": "Votes for (conference committee)",
+			"description": "How many members voted for the version of the bill adopted by the conference committee in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"amendments_considered_for": {
+			"label": "Votes for (first chamber's final decision in an asymmetrical procedure)",
+			"description": "In bicameral legislatures that use an asymmetrical legislative procedure, how many members voted for the first chamber's final decision on the bill. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override_for": {
+			"label": "Votes for (veto override)",
+			"description": "How many members voted to override the bill's veto in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"preliminary_reading_against": {
+			"label": "Votes against (preliminary reading)",
+			"description": "How many members voted against the bill in its preliminary reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"1st_reading_against": {
+			"label": "Votes against (first reading)",
+			"description": "How many members voted against the bill in its first reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading_against": {
+			"label": "Votes against (second reading)",
+			"description": "How many members voted against the bill in its second reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading_against": {
+			"label": "Votes against (third reading)",
+			"description": "How many members voted against the bill in its third reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed_against": {
+			"label": "Votes against (passage without three readings)",
+			"description": "How many members voted against the bill's passage in the chamber specified in 'enacted_by' or 'considered_by', if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed_against": {
+			"label": "Votes against (conference committee)",
+			"description": "How many members voted against the version of the bill adopted by the conference committee in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"amendments_considered_against": {
+			"label": "Votes against (first chamber's final decision in an asymmetrical procedure)",
+			"description": "In bicameral legislatures that use an asymmetrical legislative procedure, how many members voted against the first chamber's final decision on the bill. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override_against": {
+			"label": "Votes against (veto override)",
+			"description": "How many members voted against overriding the bill's veto in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"preliminary_reading_abstention": {
+			"label": "Votes to abstain (preliminary reading)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's preliminary reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"1st_reading_abstention": {
+			"label": "Votes to abstain (first reading)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's first reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading_abstention": {
+			"label": "Votes to abstain (second reading)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's second reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading_abstention": {
+			"label": "Votes to abstain (third reading)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's third reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed_abstention": {
+			"label": "Votes to abstain (passage without three readings)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on the bill's passage in the chamber specified in 'enacted_by' or 'considered_by', if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed_abstention": {
+			"label": "Votes to abstain (conference committee)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on the version of the bill adopted by the conference committee in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"amendments_considered_abstention": {
+			"label": "Votes to abstain (first chamber's final decision in an asymmetrical procedure)",
+			"description": "In bicameral legislatures that use an asymmetrical legislative procedure, how many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on the first chamber's final decision on the bill. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override_abstention": {
+			"label": "Votes to abstain (veto override)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on overriding the bill's veto in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"preliminary_reading_absent": {
+			"label": "Members absent (preliminary reading)",
+			"description": "How many members were absent from the vote in the bill's preliminary reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"1st_reading_absent": {
+			"label": "Members absent (first reading)",
+			"description": "How many members were absent from the vote in the bill's first reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading_absent": {
+			"label": "Members absent (second reading)",
+			"description": "How many members were absent from the vote in the bill's second reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading_absent": {
+			"label": "Members absent (third reading)",
+			"description": "How many members were absent from the vote in the bill's third reading in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed_absent": {
+			"label": "Members absent (passage without three readings)",
+			"description": "How many members were absent from the vote on the bill's passage in the chamber specified in 'enacted_by' or 'considered_by', if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed_absent": {
+			"label": "Members absent (conference committee)",
+			"description": "How many members were absent from the vote on the version of the bill adopted by the conference committee in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"amendments_considered_absent": {
+			"label": "Members absent (first chamber's final decision in an asymmetrical procedure)",
+			"description": "In bicameral legislatures that use an asymmetrical legislative procedure, how many members were absent from the vote on the first chamber's final decision on the bill. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override_absent": {
+			"label": "Members absent (veto override)",
+			"description": "How many members were absent from the vote on overriding the bill's veto in the chamber specified in 'enacted_by' or 'considered_by'. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"preliminary_reading_presentnotvoting": {
+			"label": "Members present but not voting (preliminary reading)",
+			"description": "How many members were present at the vote in the bill's preliminary reading in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"1st_reading_presentnotvoting": {
+			"label": "Members present but not voting (first reading)",
+			"description": "How many members were present at the vote in the bill's first reading in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading_presentnotvoting": {
+			"label": "Members present but not voting (second reading)",
+			"description": "How many members were present at the vote in the bill's second reading in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading_presentnotvoting": {
+			"label": "Members present but not voting (third reading)",
+			"description": "How many members were present at the vote in the bill's third reading in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed_presentnotvoting": {
+			"label": "Members present but not voting (passage without three readings)",
+			"description": "How many members were present at the vote on the bill's passage in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed_presentnotvoting": {
+			"label": "Members present but not voting (conference committee)",
+			"description": "How many members were present at the vote on the version of the bill adopted by the conference committee in the chamber specified in 'enacted_by' or 'considered_by', in jurisdictions that do this, but did not cast a vote. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"amendments_considered_presentnotvoting": {
+			"label": "Members present but not voting (first chamber's final decision in an asymmetrical procedure)",
+			"description": "In bicameral legislatures that use an asymmetrical legislative procedure, how many members were present at the vote on the first chamber's final decision on the bill, but did not cast a vote. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override_presentnotvoting": {
+			"label": "Members present but not voting (veto override)",
+			"description": "How many members were present at the vote on overriding the bill's veto in the chamber specified in 'enacted_by' or 'considered_by', but did not cast a vote. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"1st_reading2_for": {
+			"label": "Votes for (first reading; second chamber)",
+			"description": "How many members voted for the bill in its first reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading2_for": {
+			"label": "Votes for (second reading; second chamber)",
+			"description": "How many members voted for the bill in its second reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading2_for": {
+			"label": "Votes for (third reading; second chamber)",
+			"description": "How many members voted for the bill in its third reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed2_for": {
+			"label": "Votes for (passage without three readings; second chamber)",
+			"description": "How many members voted for the bill's passage in the second chamber, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed2_for": {
+			"label": "Votes for (conference committee; second chamber)",
+			"description": "How many members voted for the version of the bill adopted by the conference committee in the second chamber, in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override2_for": {
+			"label": "Votes for (veto override; second chamber)",
+			"description": "How many members voted to override the bill's veto in the second chamber. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"1st_reading2_against": {
+			"label": "Votes against (first reading; second chamber)",
+			"description": "How many members voted against the bill in its first reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading2_against": {
+			"label": "Votes against (second reading; second chamber)",
+			"description": "How many members voted against the bill in its second reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading2_against": {
+			"label": "Votes against (third reading; second chamber)",
+			"description": "How many members voted against the bill in its third reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed2_against": {
+			"label": "Votes against (passage without three readings; second chamber)",
+			"description": "How many members voted against the bill's passage in the second chamber, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed2_against": {
+			"label": "Votes against (conference committee; second chamber)",
+			"description": "How many members voted against the version of the bill adopted by the conference committee in the second chamber, in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override2_against": {
+			"label": "Votes against (veto override; second chamber)",
+			"description": "How many members voted against overriding the bill's veto in the second chamber. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"1st_reading2_abstention": {
+			"label": "Votes to abstain (first reading; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's first reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading2_abstention": {
+			"label": "Votes to abstain (second reading; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's second reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading2_abstention": {
+			"label": "Votes to abstain (third reading; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the bill's third reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed2_abstention": {
+			"label": "Votes to abstain (passage without three readings; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on the bill's passage in the second chamber, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed2_abstention": {
+			"label": "Votes to abstain (conference committee; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on the version of the bill adopted by the conference committee in the second chamber, in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override2_abstention": {
+			"label": "Votes to abstain (veto override; second chamber)",
+			"description": "How many members voted to abstain (however called in the jurisdiction; e.g. 'present', 'blank vote') at the vote on overriding the bill's veto in the second chamber. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"1st_reading2_absent": {
+			"label": "Members absent (first reading; second chamber)",
+			"description": "How many members were absent from the vote in the bill's first reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading2_absent": {
+			"label": "Members absent (second reading; second chamber)",
+			"description": "How many members were absent from the vote in the bill's second reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading2_absent": {
+			"label": "Members absent (third reading; second chamber)",
+			"description": "How many members were absent from the vote in the bill's third reading in the second chamber. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed2_absent": {
+			"label": "Members absent (passage without three readings; second chamber)",
+			"description": "How many members were absent from the vote on the bill's passage in the second chamber, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed2_absent": {
+			"label": "Members absent (conference committee; second chamber)",
+			"description": "How many members were absent from the vote on the version of the bill adopted by the conference committee in the second chamber, in jurisdictions that do this. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override2_absent": {
+			"label": "Members absent (veto override; second chamber)",
+			"description": "How many members were absent from the vote on overriding the bill's veto in the second chamber. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"1st_reading2_presentnotvoting": {
+			"label": "Members present but not voting (first reading; second chamber)",
+			"description": "How many members were present at the vote in the bill's first reading in the second chamber, but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"2nd_reading2_presentnotvoting": {
+			"label": "Members present but not voting (second reading; second chamber)",
+			"description": "How many members were present at the vote in the bill's second reading in the second chamber, but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"3rd_reading2_presentnotvoting": {
+			"label": "Members present but not voting (third reading; second chamber)",
+			"description": "How many members were present at the vote in the bill's third reading in the second chamber, but did not cast a vote. Omit if no vote was taken, or if votes were only taken on amendments.",
+			"type": "number"
+		},
+		"passed2_presentnotvoting": {
+			"label": "Members present but not voting (passage without three readings; second chamber)",
+			"description": "How many members were present at the vote on the bill's passage in the second chamber, but did not cast a vote, if that chamber does not pass bills in three readings.",
+			"type": "number"
+		},
+		"conf_committee_passed2_presentnotvoting": {
+			"label": "Members present but not voting (conference committee; second chamber)",
+			"description": "How many members were present at the vote on the version of the bill adopted by the conference committee in the second chamber, in jurisdictions that do this, but did not cast a vote. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"veto_override2_presentnotvoting": {
+			"label": "Members present but not voting (veto override; second chamber)",
+			"description": "How many members were present at the vote on overriding the bill's veto in the second chamber, but did not cast a vote. Omit if no vote was taken.",
+			"type": "number"
+		},
+		"codification_affects": {
+			"label": "Acts affected by codification",
+			"type": "content"
+		},
+		"codification_repeals": {
+			"label": "Acts repealed by codification",
+			"type": "content"
+		},
+		"code_titles_affected": {
+			"label": "Code titles affected",
+			"type": "content"
+		},
+		"code_titles_amended": {
+			"label": "Code titles amended",
+			"type": "content"
+		},
+		"code_sections_created": {
+			"label": "Code sections created",
+			"type": "content"
+		},
+		"code_sections_affected": {
+			"label": "Code sections affected",
+			"type": "content"
+		},
+		"code_sections_amended": {
+			"label": "Code sections amended",
+			"type": "content"
+		},
+		"codification_amends": {
+			"label": "Acts amended by codification",
+			"type": "content"
+		},
+		"code": {
+			"label": "Name of code affected",
+			"type": "content"
+		},
+		"code_section_name": {
+			"label": "Divisions of code affected",
+			"description": "The name used for the \"base-unit\" for the Code's provisions. Leave blank if the jurisdiction calls these \"section\".",
+			"type": "string",
+			"suggestedvalues": [
+				"Article",
+				"Clause"
+			]
+		},
+		"authorizing_legislation": {
+			"label": "Authorizing legislation",
+			"description": "For secondary legislation (e.g. regulations, rules, statutory instruments), the legislation that authorizes the making/enactment of this legislation.",
+			"example": "[[Transport Integration Act 2010]]",
+			"type": "content"
+		},
+		"bill_history_url": {
+			"label": "Bill history webpage",
+			"description": "URL of the webpage on the legislature's website (or equivalent) that shows the legislative history of the bill, if available. Sometimes known as the \"bill homepage\". The \"Legislative history\" heading will be linked to that page.",
+			"example": "https://parlwork.aph.gov.au/bills/r6889",
+			"type": "url",
+			"suggested": true
+		},
+		"date_introduced2": {
+			"aliases": [
+				"bill_date2",
+				"introduced_on2"
+			],
+			"label": "Date bill received from first chamber (second chamber)",
+			"description": "Date when the second chamber received the bill from the first chamber. For bicameral legislatures only.",
+			"type": "date"
+		},
+		"date_introduced": {
+			"aliases": [
+				"introduced_on",
+				"bill_date"
+			],
+			"label": "Date introduced",
+			"description": "Date when the bill was introduced into the legislative chamber specified in 'enacted_by' or 'considered_by'.",
+			"type": "date",
+			"suggested": true
+		}
+	},
+	"paramOrder": [
+		"short_title",
+		"legislature",
+		"long_title",
+		"autocollapse_long_title",
+		"citation",
+		"territorial_extent",
+		"considered_by",
+		"enacted_by",
+		"date_passed",
+		"date_enacted",
+		"considered_by2",
+		"enacted_by2",
+		"date_passed2",
+		"date_enacted2",
+		"assented_by",
+		"date_assented",
+		"royal_assent",
+		"signed_by",
+		"date_signed",
+		"vetoed_by",
+		"date_vetoed",
+		"veto_type",
+		"veto_overridden",
+		"reference_holding",
+		"date_pocket_vetoed",
+		"date_became_law_by_inaction",
+		"date_commenced",
+		"date_effective",
+		"date_of_expiry",
+		"date_repealed",
+		"date_abrogated",
+		"authorizing_legislation",
+		"administered_by",
+		"white_paper",
+		"code",
+		"code_section_name",
+		"codification_affects",
+		"codification_amends",
+		"codification_repeals",
+		"code_titles_affected",
+		"code_titles_amended",
+		"code_sections_created",
+		"code_sections_affected",
+		"code_sections_amended",
+		"bill_history_url",
+		"bill",
+		"bill_citation",
+		"introduced_by",
+		"date_introduced",
+		"committee_responsible",
+		"preliminary_reading",
+		"preliminary_reading_for",
+		"preliminary_reading_against",
+		"preliminary_reading_abstention",
+		"preliminary_reading_absent",
+		"preliminary_reading_presentnotvoting",
+		"1st_reading",
+		"1st_reading_for",
+		"1st_reading_against",
+		"1st_reading_abstention",
+		"1st_reading_absent",
+		"1st_reading_presentnotvoting",
+		"committee_post1st",
+		"2nd_reading",
+		"2nd_reading_for",
+		"2nd_reading_against",
+		"2nd_reading_abstention",
+		"2nd_reading_absent",
+		"2nd_reading_presentnotvoting",
+		"committee_post2nd",
+		"committee_whole_label",
+		"committee_whole",
+		"3rd_reading",
+		"3rd_reading_for",
+		"3rd_reading_against",
+		"3rd_reading_abstention",
+		"3rd_reading_absent",
+		"3rd_reading_presentnotvoting",
+		"passed",
+		"passed_for",
+		"passed_against",
+		"passed_abstention",
+		"passed_absent",
+		"passed_presentnotvoting",
+		"committee_report",
+		"bill2",
+		"bill_citation2",
+		"introduced_by2",
+		"date_introduced2",
+		"second_chamber_action",
+		"1st_reading2",
+		"1st_reading2_for",
+		"1st_reading2_against",
+		"1st_reading2_abstention",
+		"1st_reading2_absent",
+		"1st_reading2_presentnotvoting",
+		"committee_post1st2",
+		"2nd_reading2",
+		"2nd_reading2_for",
+		"2nd_reading2_against",
+		"2nd_reading2_abstention",
+		"2nd_reading2_absent",
+		"2nd_reading2_presentnotvoting",
+		"committee_post2nd2",
+		"committee_whole_label2",
+		"committee_whole2",
+		"3rd_reading2",
+		"3rd_reading2_for",
+		"3rd_reading2_against",
+		"3rd_reading2_abstention",
+		"3rd_reading2_absent",
+		"3rd_reading2_presentnotvoting",
+		"passed2",
+		"passed2_for",
+		"passed2_against",
+		"passed2_abstention",
+		"passed2_absent",
+		"passed2_presentnotvoting",
+		"committee_report2",
+		"date_amendments_considered",
+		"amendments_considered_for",
+		"amendments_considered_against",
+		"amendments_considered_abstention",
+		"amendments_considered_absent",
+		"amendments_considered_presentnotvoting",
+		"date_conf_committee",
+		"conf_committee_passed",
+		"conf_committee_passed_for",
+		"conf_committee_passed_against",
+		"conf_committee_passed_abstention",
+		"conf_committee_passed_absent",
+		"conf_committee_passed_presentnotvoting",
+		"conf_committee_passed2",
+		"conf_committee_passed2_for",
+		"conf_committee_passed2_against",
+		"conf_committee_passed2_abstention",
+		"conf_committee_passed2_absent",
+		"conf_committee_passed2_presentnotvoting",
+		"date_final_passage",
+		"date_reconsidered",
+		"veto_override_for",
+		"veto_override_against",
+		"veto_override_abstention",
+		"veto_override_absent",
+		"veto_override_presentnotvoting",
+		"date_reconsidered2",
+		"veto_override2_for",
+		"veto_override2_against",
+		"veto_override2_abstention",
+		"veto_override2_absent",
+		"veto_override2_presentnotvoting",
+		"amends",
+		"repeals",
+		"amended_by",
+		"amendments",
+		"repealed_by",
+		"related_legislation",
+		"related_cases",
+		"supreme_court",
+		"struck_down_by",
+		"summary",
+		"keywords",
+		"status"
+	]
+}
+</templatedata>
+{{Collapse bottom}}
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Law infobox templates|Legislation]]
+[[Category:Politics and government infobox templates|Legislation]]
+[[Category:Embeddable templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

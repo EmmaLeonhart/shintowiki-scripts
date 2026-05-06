@@ -1,0 +1,51 @@
+{{#invoke:infobox|infoboxTemplate|child={{{child|{{{embed|}}}}}}
+| bodystyle  = {{#if:{{{infoboxwidth|}}}|width: {{px|{{{infoboxwidth}}}}}}}
+
+| above      = <includeonly>{{{ICH|{{{Name|{{PAGENAMEBASE}}}}}}}}</includeonly>
+| subheaderclass = category
+| subheader  = <includeonly><div style="padding-bottom:0.4em; text-align:center; font-size:110%;">'''[[:en:UNESCO Intangible Cultural Heritage Lists|UNESCO Intangible Cultural Heritage]]'''</div></includeonly>
+
+| imagestyle = border-top: 1px #aaa solid; padding-top:0.4em;
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{Image|}}}|size={{{imagesize|}}}|alt={{{alt|}}}}} 
+| caption    = {{#if:{{{Caption|{{{imagecaption|}}}}}} | {{{Caption|{{{imagecaption|}}}}}}<hr> }}
+| abovestyle  = background: #eee; font-size: 125%;
+| headerstyle = background:#eee; font-size:110%;
+| label1     = Country
+| data1      = {{#if:{{{State Party|}}} | [[{{{State Party|}}}]]}}{{#if:{{{Country|}}} | [[{{{Country|}}}]]}}{{#if:{{{Countries|}}} | {{{Countries|}}} }}{{#if:{{{State Parties|}}} | {{{State Parties|}}} }}
+| label2     = Domains
+| class2     = category
+| data2      = {{{Domains|}}}
+| label3     = Criteria
+| class3     = category
+| data3      = {{{Criteria|}}}
+| label4     = Reference
+| data4      = {{#if:{{{Link|}}} | [{{{Link}}} {{{ID}}}]
+| {{#if:{{{ID|}}} | [https://ich.unesco.org/en/RL/{{padleft:{{{ID}}}|5}} {{{ID}}}]}}
+}}
+| label5     = Region
+| class5     = label
+| data5      = {{#ifeq: {{{Region|}}} | AFR | [[:en:Template:UNESCO Representative List of the Intangible Cultural Heritage of Humanity/AFR|Africa]] | 
+{{#ifeq: {{{Region|}}} | APA | [[Template:UNESCO Representative List of the Intangible Cultural Heritage of Humanity/APA|Asia and the Pacific]] | 
+{{#ifeq: {{{Region|}}} | AST | [[:en:Template:UNESCO Representative List of the Intangible Cultural Heritage of Humanity/AST|Arab States]] | 
+{{#ifeq: {{{Region|}}} | ENA | [[:en:Template:UNESCO Representative List of the Intangible Cultural Heritage of Humanity/ENA|Europe and North America]] | 
+{{#ifeq: {{{Region|}}} | LAC | [[:en:Template:UNESCO Representative List of the Intangible Cultural Heritage of Humanity/LAC|Latin America and the Caribbean]] | {{{Region|}}} }}}}}}}}}}
+| label6     = [[Geographic coordinate system|Coordinates]]
+| data6      = {{{Coordinates|}}}
+| header7    = {{#if:{{{Year|}}}{{{Extension|}}}{{{List|}}}|Inscription history}}
+| label8     = Inscription
+| data8      = {{{Year|}}} {{#if:{{{Session|}}}| ({{{Session|}}} session) | }}
+| label9     = Extensions
+| data9      = {{{Extension|}}}
+| label10    = [[:en:UNESCO Intangible Cultural Heritage Lists|List]]
+| data10     = {{{List|}}}
+| below      = {{{Below|}}} {{#if:{{{Note|}}}|{{#if:{{{Below|}}}|<br/>}}}} {{{Note|}}}
+| belowstyle = line-height:150%; padding-top:0.8em; border-top: 1px #aaa solid; text-align:center;
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox intangible heritage]] with unknown parameter "_VALUE_"|ignoreblank=y| infoboxwidth | ICH | Name | image | imagesize | alt | Caption | imagecaption | State Party | Country | Countries | Domains | Criteria | Link | ID | Region | Coordinates | Year | Session | Extension | List | Below | Note }}<noinclude>
+{{documentation}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

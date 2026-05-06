@@ -1,0 +1,50 @@
+{{Infobox
+| title       = {{If empty|{{{name|}}}|{{PAGENAME}}}}
+| above       =
+| abovestyle  = font-size: smaller;
+
+| image   =  {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|center=yes|size={{{image size|{{{image_size|}}}}}}|upright={{{image upright|{{{image_upright|}}}}}}|sizedefault=frameless|alt={{{alt|}}}|suppressplaceholder=yes}}
+| caption = {{{caption|}}}
+
+| label2  = Grouping
+| data2   = {{{Grouping|}}}
+
+| label3  = Sub grouping
+| data3   = {{{Sub_Grouping|}}}
+
+| label4  = Similar entities
+| data4   = {{{Similar_entities|}}}
+
+| label5  = Family
+| data5   = {{{Family|}}}
+
+| label6  = Folklore
+| data6   = {{{Folklore|}}}
+
+| label7  = First attested
+| data7   = {{{First_Attested|}}}
+
+| label8  = Other name(s)
+| data8   = {{{AKA|}}}
+
+| label9  = Country
+| data9  = {{{Country|}}}
+
+| label10 = Region
+| data10  = {{{Region|}}}
+
+| label11 = Habitat
+| data11  = {{{Habitat|}}}
+
+| label12 = Details
+| data12  = {{{Details|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{Main other|}}|preview=Page using [[Template:Infobox mythical creature]] with unknown parameter "_VALUE_"|showblankpositional=1| name | image | image_size | image size| image_upright | image upright | alt | caption | Grouping | Sub_Grouping | Similar_entities | Family | Folklore | First_Attested | AKA | Country | Region | Habitat | Details }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+[[Category:Pages using infobox mythical creature with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

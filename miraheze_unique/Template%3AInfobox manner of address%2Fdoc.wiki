@@ -1,0 +1,188 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+__TOC__
+{{clear}}
+
+== Usage ==
+{{Parameter names example | type | name = {{{name}}} or {{{royal name}}}| image | image_alt | image_size | size | image2 | image2_alt | image2_size | size2 | caption | reference = {{{reference}}} or {{{dipstyle}}} | spoken = {{{spoken}}} or {{{offstyle}}} | religious = {{{religious}}} or {{{relstyle}}} | posthumous = {{{posthumous}}} or {{{deathstyle}}} | alternative = {{{alternative}}} or {{{altstyle}}} | informal | see
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox manner of address
+| type        = 
+| name        = 
+| consort     = 
+| image       = 
+| image_size  = 
+| image_alt   = 
+| image2      = 
+| image2_size = 
+| image2_alt  = 
+| caption     = 
+| reference   = 
+| spoken      = 
+| religious   = 
+| posthumous  = 
+| alternative = 
+| informal    = 
+| see         = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Parameters===
+; child {{nobold|or}} embed
+: Allows this template to be embedded in another template; see [[Wikipedia:WikiProject Infoboxes/embed]]
+; background
+: An alternative color for overriding the default grey background color
+; color {{nobold|or}} colour
+: An alternative text color for overriding the default black text color
+; type 
+: Can be set to "Monarchial" for "Monarchial styles" or "Papal" for "Papal styles", default is "Styles of".
+; name {{nobold|or}} royal name
+: Name which appears at top of infobox
+; consort
+: if defined, adds "as&nbsp;consort" after name
+; image
+: (optional) [[:en:Coat of arms|Coat of arms]] image
+; image_size
+: (optional) size of the image
+; image_alt
+: (optional, but recommended) alt text for accessibility
+; image2
+: (optional) second image
+; image2_size
+: (optional) size of second image
+; image2_alt
+: (optional, but recommended) alt text for accessibility
+; caption
+: (optional) caption text displayed below image(s)
+; reference {{nobold|or}} dipstyle
+: [[:en:Style (manner of address)|Reference style]] (originally labeled: Diplomatic style)
+; spoken {{nobold|or}} offstyle
+: Spoken style (originally labeled: Official spoken style)
+; religious {{nobold|or}} relstyle
+: Religious style
+; posthumous {{nobold|or}} deathstyle
+: Posthumous style
+; alternative {{nobold|or}} altstyle
+: Alternative style (originally labeled: Alternative spoken style)
+; informal
+: Informal style
+; see
+: [[Episcopal see|See]]
+
+== Examples ==
+===Belgium===
+{{Infobox manner of address
+| name        = Queen Fabiola of Belgium
+| image       = State Coat of Arms of Belgium.svg
+| image_size  = 50px
+| image_alt   = State Coat of Arms of Belgium
+| reference   = [[:en:Majesty|Her Majesty]]
+| spoken      = Your Majesty
+}}
+[[Queen Fabiola of Belgium]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox manner of address
+| name        = Queen Fabiola of Belgium
+| image       = State Coat of Arms of Belgium.svg
+| image_size  = 50px
+| image_alt   = State Coat of Arms of Belgium
+| reference   = [[:en:Majesty|Her Majesty]]
+| spoken      = Your Majesty
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Brazil===
+{{Infobox manner of address
+| name        = Pedro II, Emperor of Brazil
+| image       = Coat of Arms of the Empire of Brazil (1853-1889).svg
+| image_size  = 60px
+| image_alt   = CoA Empire of Brazil (1870-1889)
+| reference   = [[Imperial Majesty (style)|His Imperial Majesty]]
+| spoken      = Your Imperial Majesty
+| alternative = Sire
+}}
+[[:en:Pedro II of Brazil|Pedro II of Brazil]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox manner of address
+| name        = Pedro II, Emperor of Brazil
+| image       = Coat of Arms of the Empire of Brazil (1853-1889).svg
+| image_size  = 60px
+| image_alt   = CoA Empire of Brazil (1870-1889)
+| reference   = [[Imperial Majesty (style)|His Imperial Majesty]]
+| spoken      = Your Imperial Majesty
+| alternative = Sire
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Greece===
+{{Infobox manner of address
+| name        = King Alexander of the Hellenes
+| image       = Royal Arms of Greece (1863-1936).svg
+| image_size  = 40px
+| image_alt   = Royal Arms of Greece (1863-1936)
+| reference   = [[:en:Majesty|His Majesty]]
+| spoken      = Your Majesty
+}}
+[[Alexander of Greece (king)]]
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox manner of address
+| name        = King Alexander of the Hellenes
+| image       = Royal Arms of Greece (1863-1936).svg
+| image_size  = 40px
+| image_alt   = Royal Arms of Greece (1863-1936)
+| reference   = [[:en:Majesty|His Majesty]]
+| spoken      = Your Majesty
+}}
+</syntaxhighlight>
+{{clear}}
+
+== Tracking category ==
+* {{clc|Pages using infobox manner of address with unknown parameters}}
+
+== See also ==
+* [{{fullurl:index.php|title=Special%3AWhatLinksHere&target=Template%3A{{urlencode:{{BASEPAGENAME}}}}&namespace=0}} List of articles] this template
+
+'''Additional information on styles'''
+* [[:en:Royal Highness|HRH]]
+* [[:en:Royal and noble styles|Royal and noble styles]]
+* [[Style (form of address)]]
+
+'''Templates which use this one'''
+* [[Template:Infobox royal styles]]
+** [[Template:Infobox Austrian royalty styles]]
+** [[:en:Template:Infobox British royalty styles|Template:Infobox British royalty styles]]
+** [[:en:Template:Infobox Dutch royalty styles|Template:Infobox Dutch royalty styles]]
+** [[:en:Template:Infobox French royalty styles|Template:Infobox French royalty styles]]
+** [[:en:Template:Infobox Portuguese royalty styles|Template:Infobox Portuguese royalty styles]]
+** [[Template:Infobox Spanish royalty styles]]
+* Religious
+** [[Template:Infobox archbishop styles]]
+** [[Template:Infobox bishop styles]]
+** [[Template:Infobox cardinal styles]]
+** [[Template:Infobox pope styles]]
+* [[Template:Infobox consort styles]]
+* [[Template:Infobox president styles]]
+* [[Template:Infobox viceroy styles]]
+
+<includeonly>{{Sandbox other||
+
+{{citation needed|Manner Of Address}}
+
+}}</includeonly>
+<noinclude>
+[[Category:Styles infobox templates| ]]
+[[Category:Embeddable templates|{{PAGENAME}}]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

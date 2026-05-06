@@ -1,0 +1,603 @@
+{{Documentation subpage}}
+
+{{High-use|8,000}}
+{{Auto italic title}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Check for unknown parameters}}
+
+== Usage ==
+{{Parameter names example
+ |title |other_language_1 |other_title_1 |other_language_2 |other_title_2 |wikidata
+ |image |image_upright |alt |caption
+ |pushpin_map=Earth |pushpin_map_caption |coordinates={{coord|0|0|type:landmark|display=inline}}
+ |artist |year |completion_date |catalogue |medium |movement |subject
+ |height_metric |width_metric |length_metric |diameter_metric
+ |height_imperial |width_imperial |length_imperial |diameter_imperial
+ |dimensions |dimensions_ref={{zwj}}<sup>{{{dimensions_ref}}}</sup> 
+ |weight |designation |condition |museum |city |owner |accession |preceded_by |followed_by |module |website
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox artwork
+| title              = 
+| other_language_1   = 
+| other_title_1      = 
+| other_language_2   = 
+| other_title_2      = 
+| wikidata           = 
+| image              = 
+| image_upright      = 
+| alt                = 
+| caption            = 
+| artist             = 
+| year               =  
+| completion_date    =  
+| catalogue          = 
+| medium             = 
+| movement           = 
+| subject            = 
+| height_metric      =  
+| width_metric       = 
+| length_metric      = 
+| diameter_metric    = 
+| height_imperial    =  
+| width_imperial     = 
+| length_imperial    = 
+| diameter_imperial  = 
+| dimensions         = 
+| dimensions_ref     = 
+| metric_unit        = cm  
+| imperial_unit      = in  
+| weight             = 
+| designation        = 
+| condition          = 
+| museum             = 
+| city               = 
+| coordinates        =  
+| owner              = 
+| accession          = 
+| preceded_by        =  
+| followed_by        =  
+| module             = 
+| website            =  
+}}
+</syntaxhighlight>
+
+== Parameters ==
+
+; title : The title of the artwork. Defaults to the page name.
+; other_language_1 : Language of secondary title
+; other_title_1 : Secondary title. Italicized unless {{para|italic other_title_1|no}}.
+; other_language_2 : Language of tertiary title
+; other_title_2 : Tertiary title. Italicized unless {{para|italic other_title_2|no}}.
+; italic title : Special option to adjust page title italics. Set to "no" to remove all page title italics. Set to "all" to italicize the entire title, including parentheses (see, for example, ''[[Breezing Up (A Fair Wind)]]'')
+; wikidata : QID of the ''specific'' [[:en:Wikidata|Wikidata]] item
+; image : The name of the image file to display, without the "File:" prefix
+; image_upright : Image scaling factor; see [[WP:IMGSIZE]] for the image size policy
+; alt : Alternative text for image
+; caption : Caption for image
+; artist : Name of the artist(s) who created the piece
+; year : Use {{tl|start date}} unless before 1583 CE.
+; completion_date : Use {{tl|start date}}; alternative to {{para|year}}.
+; catalogue : Reference in a [[:en:Catalogue raisonné|Catalogue raisonné]].
+; <span style="color: #FF0000;">type</span> : Deprecated due to ambiguity. Use '''medium''' and '''movement''' instead.
+; medium : Material used by the artist or designer to create the work of art. Examples: "[[Oil on canvas]]", "[[:en:Bronze sculpture|Bronze sculpture]]", "[[:en:Ceramic tile|Ceramic tile]]" 
+; movement : [[:en:Art movement|Art movement]], or movements, typically associated with work of art or time during artist's career when work of art was created. Must be verifiable through sources. Examples: "[[:en:Post-Impressionism|Post-Impressionism]]", "[[Pop art]]"
+; subject : Subject(s) of the artwork
+; dimensions : See [[#Dimensional parameters]] section below
+; weight : Weight of the artwork ()
+; designation : Legal protection granted to the artwork
+; condition : Condition of the artwork
+; museum : Museum that currently houses the artwork
+; city : City in which the artwork is currently located
+; coordinates : Use {{tl|coord}}, but only for the exact coordinates (when known) of the artwork's own location, i.e. not coordinates for the site, building, structure, etc. where it is kept; leave blank otherwise.
+; owner : Current owner of the artwork
+; accession : [[Accession number (cultural property)|Accession]] or similar reference in the museum's database.
+; preceded_by : Preceding work by the same artist
+; followed_by : Next work by the same artist
+; module : an embedded template
+; website : Use {{tl|URL}}, but only for an official webpage or website.
+
+===Dimensional parameters===
+This template includes code that allows input of dimensional information: any of '''height''', '''width''', '''length''', and '''diameter''', as well as a freeform parameter for adding nonstandard information.
+
+There are 11 parameters, of which most fall into two groups of unit types:
+{{hlist |<code>height_imperial</code> |<code>width_imperial</code> |<code>length_imperial</code> |<code>diameter_imperial</code>}}
+: These define the respective values for [[:en:Imperial unit|Imperial]] or [[US customary unit|US customary]] units such as the foot or inch. If the imperial unit is set to feet, inch specification can be added with {{mono|height_inch, width_inch, length_inch}}, otherwise these {{mono|_inch}}-suffixed parameters should not be used.
+{{hlist |<code>height_metric</code> |<code>width_metric</code> |<code>length_metric</code> |<code>diameter_metric</code>}}
+: These define the respective values for [[:en:International System of Units|SI]] (metric) units such as the metre (meter) or centimetre (centimeter).
+
+Once raw numerical values are established in the above parameters, the units are set in the <code>imperial_unit</code> and <code>metric_unit</code> parameters, which default to inches and centimetres respectively.
+
+If information is provided in only one unit system, it is automatically converted to the other using the unit that is defined for that system. In general, this should be used, as for most pieces of artwork measurements will only be taken in one unit system.  Do not use a comma as decimal indicator for metric units (as used in some European and other countries) since the conversion does not recognize commas and the imperial measurement will be calculated incorrectly (e.g. use 30.8 not 30,8).
+
+Users should take care to avoid [[:en:False precision|False precision]]: measurements should be provided in the same unit, and with the same number of [[:en:Significant figures|significant digits]], as when they were taken. ("1 metre" is far less precise than "1000.00 millimetres", even though they are, in theory, the same length!)
+
+If additional dimensional data is needed, the <code>dimensions</code> parameter can be used to add freeform information to the end of the rendered string. This parameter accepts raw wikitext and is not subject to any automatic conversion or modification ({{tl|convert}} would have to be used manually).
+
+References concerning artwork dimensions can be appended to the dimensional data by placing them in the optional <code>dimensions_ref</code> parameter.
+
+===Map and coordinates===
+The <code>coordinates=</code> parameter is used to display coordinates in the infobox, and optionally at the top of the page; use the {{tl|coord}} template.
+
+Two types of maps are available: pushpin maps (static) or [[:en:Template:Mapframe|mapframe]] maps (dynamic).
+
+====Pushpin maps====
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox artwork
+...
+| coordinates         = 
+| pushpin_map         = 
+| pushpin_map_alt     = 
+| pushpin_relief      = 
+| pushpin_label_position =
+| map_dot_label       = 
+| map_size            = 
+| pushpin_map_caption = 
+...
+}}
+</syntaxhighlight>
+====Mapframe maps====
+A [[:en:Template:Mapframe|Mapframe]] map is automatically included if:
+* It has been turned on by setting {{para|mapframe|yes}}
+* There are coordinates specified in {{para|coord}}, or if the Wikidata item for the page (or as specified in {{para|qid}}) has a value for {{Q|P625}}
+* No pushpin map has been specified
+The following optional parameters can then be used to adjust the map
+{{Infobox mapframe/doc/parameters|mapframe-marker=monument}}
+
+==== Map type ====
+A list of modules containing maps that may be used can be found at:
+* [[Special:PrefixIndex/Module:Location map/data/]]
+
+== Examples ==
+{{Infobox artwork
+| title = The Potato Eaters
+| other_language_1 = [[:en:Dutch language|Dutch]]
+| other_title_1 = {{Lang|nl|De Aardappeleters}}
+| image = Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg
+| alt = Two men and three women eating potatoes
+| caption = 
+| artist = [[:en:Vincent van Gogh|Vincent van Gogh]]
+| year = {{start date|1885}}
+| catalogue = F123
+| medium = [[Oil painting|Oil on canvas]]
+| movement = [[:en:Post-Impressionism|Post-Impressionism]]
+| height_metric = 82
+| width_metric = 114
+| height_imperial = 32{{1/4}}
+| width_imperial = 45
+| condition = lost
+| museum = [[:en:Van Gogh Museum|Van Gogh Museum]]
+| city = [[:en:Amsterdam|Amsterdam]]
+| coordinates = {{coord|52|21|30|N|4|52|52|E|region:NL_type:landmark|display=inline}}
+| owner = Made-up Foundation
+| accession = 1903-1234
+| website = {{URL|example.com}}
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox artwork
+| title = The Potato Eaters
+| other_language_1 = [[:en:Dutch language|Dutch]]
+| other_title_1 = {{Lang|nl|De Aardappeleters}}
+| image = Vincent Van Gogh - The_Potato_Eaters.png
+| alt = Two men and three women eating potatoes
+| caption = 
+| artist = [[:en:Vincent van Gogh|Vincent van Gogh]]
+| year = {{start date|1885}}
+| catalogue = F123
+| medium = [[Oil painting|Oil on canvas]]
+| movement = [[:en:Post-Impressionism|Post-Impressionism]]
+| height_metric = 82
+| width_metric = 114
+| height_imperial = 32{{1/4}}
+| width_imperial = 45
+| condition = lost
+| museum = [[:en:Van Gogh Museum|Van Gogh Museum]]
+| city = [[:en:Amsterdam|Amsterdam]]
+| coordinates = {{coord|52|21|30|N|4|52|52|E|region:NL_type:landmark|display=inline,title}}
+| owner = Made-up Foundation
+| accession = 1903-1234
+| website = {{URL|example.com}}
+}}
+</syntaxhighlight>
+{{clear}}
+{{Infobox artwork
+| title = ''Manneken Pis''
+| wikidata = Q152072
+| image = Bruxelles Manneken Pis.jpg
+| image_upright = 1.1
+| artist = [[Jerome Duquesnoy]]
+| year = 1388: original version<br />{{Start date|1619}}: current version
+| medium = Bronze
+| height_metric = 61
+| city = [[:en:Brussels|Brussels]]
+| coordinates = {{coord|50.84499|4.34998|display=inline}}
+| pushpin_map = Belgium Brussels
+| map_size = 250
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox artwork
+| title = ''Manneken Pis''
+| image = Bruxelles Manneken Pis.jpg
+| image_upright = 1.1
+| wikidata = Q152072
+| artist = [[Jerome Duquesnoy]]
+| year = 1388: original version<br />{{Start date|1619}}: current version
+| medium = Bronze
+| height_metric = 61
+| city = [[:en:Brussels|Brussels]]
+| coordinates = {{coord|50.84499|4.34998|display=inline,title}} 
+| pushpin_map = Belgium Brussels
+| map_size = 250
+}}
+</syntaxhighlight>{{clear}}
+
+== TemplateData ==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "An infobox for artwork",
+	"params": {
+		"title": {
+			"label": "Title",
+			"type": "string",
+			"required": false,
+			"description": "The title of the artwork. Defaults to the page name."
+		},
+		"image_size": {
+			"label": "Image size",
+			"type": "number",
+			"required": false,
+			"description": "The size of the image in pixels, optionally suffixed by \"px\"",
+			"deprecated": "Use image_upright instead"
+		},
+		"alt": {
+			"label": "Image alternative text",
+			"type": "string",
+			"required": false,
+			"description": "A description of the image that can be displayed instead of the image and/or read by the blind"
+		},
+		"caption": {
+			"label": "Caption",
+			"type": "string",
+			"required": false,
+			"description": "A caption to be displayed under the image"
+		},
+		"other_language_1": {
+			"label": "Secondary title language",
+			"type": "string",
+			"required": false,
+			"description": "The language of a secondary title"
+		},
+		"other_title_1": {
+			"label": "Secondary title",
+			"type": "string",
+			"required": false,
+			"description": "A secondary title."
+		},
+		"other_language_2": {
+			"label": "Tertiary title language",
+			"type": "string",
+			"required": false,
+			"description": "The language of a tertiary title"
+		},
+		"other_title_2": {
+			"label": "Tertiary title",
+			"type": "string",
+			"required": false,
+			"description": "A tertiary title."
+		},
+		"wikidata": {
+			"label": "Wikidata",
+			"type": "string",
+			"required": false,
+			"description": "The QID of the specific Wikidata item"
+		},
+		"artist": {
+			"label": "Artist name",
+			"type": "string",
+			"required": false,
+			"description": "The name of the artist(s) who created the piece"
+		},
+		"year": {
+			"label": "Year",
+			"type": "string",
+			"required": false,
+			"description": "The year the artwork was created"
+		},
+		"completion_date": {
+			"label": "Completion date",
+			"type": "string",
+			"required": false,
+			"description": "The date the artwork was completed. Appears only if the year parameter is undefined."
+		},
+		"catalogue": {
+			"label": "Catalogue number",
+			"type": "string",
+			"required": false,
+			"description": "The number of the artwork in a catalogue raisonné, e.g. \"F454\""
+		},
+		"type": {
+			"label": "Type",
+			"type": "string",
+			"required": false,
+			"description": "<span style=\"color: #FF0000;\">Deprecated:</span> The type of the artwork. Use \"medium\" and \"movement\" instead.",
+			"deprecated": true
+		},
+		"subject": {
+			"label": "Subject",
+			"type": "string",
+			"required": false,
+			"description": "The subject(s) of the artwork"
+		},
+		"height_metric": {
+			"label": "Height (metric)",
+			"type": "number",
+			"required": false,
+			"description": "The height of the artwork in metres, centimetres, etc., without unit"
+		},
+		"width_metric": {
+			"label": "Width (metric)",
+			"type": "number",
+			"required": false,
+			"description": "The width of the artwork in metres, centimetres, etc., without unit"
+		},
+		"length_metric": {
+			"label": "Length (metric)",
+			"type": "number",
+			"required": false,
+			"description": "The length of the artwork in metres, centimetres, etc., without unit"
+		},
+		"height_imperial": {
+			"label": "Height (imperial)",
+			"type": "number",
+			"required": false,
+			"description": "The height of the artwork in feet, inches, etc., without unit"
+		},
+		"height_inch": {
+			"label": "Height (inch addition)",
+			"type": "number",
+			"required": false,
+			"description": "If the imperial unit is set to feet, this allows inch precision to be added to the height"
+		},
+		"width_imperial": {
+			"label": "Width (imperial)",
+			"type": "number",
+			"required": false,
+			"description": "The width of the artwork in feet, inches, etc., without unit"
+		},
+		"width_inch": {
+			"label": "Width (inch addition)",
+			"type": "number",
+			"required": false,
+			"description": "If the imperial unit is set to feet, this allows inch precision to be added to the width"
+		},
+		"length_imperial": {
+			"label": "Length (imperial)",
+			"type": "number",
+			"required": false,
+			"description": "The length of the artwork in feet, inches, etc., without unit"
+		},
+		"length_inch": {
+			"label": "Length (inch addition)",
+			"type": "number",
+			"required": false,
+			"description": "If the imperial unit is set to feet, this allows inch precision to be added to the length, without unit"
+		},
+		"diameter_metric": {
+			"label": "Diameter (metric)",
+			"type": "number",
+			"required": false,
+			"description": "The diameter of the artwork in metres, centimetres, etc., without unit"
+		},
+		"diameter_imperial": {
+			"label": "Diameter (imperial)",
+			"type": "number",
+			"required": false,
+			"description": "The diameter of the artwork in feet, inches, etc., without unit"
+		},
+		"metric_unit": {
+			"label": "Metric unit",
+			"type": "string",
+			"required": false,
+			"description": "The unit to use as the metric unit, e.g. \"m\" or \"cm\"",
+			"default": "cm"
+		},
+		"imperial_unit": {
+			"label": "Imperial unit",
+			"type": "string",
+			"required": false,
+			"description": "The unit to use as the imperial or US customary unit, e.g. \"in\" or \"ft\"",
+			"default": "in"
+		},
+		"dimensions": {
+			"label": "Dimensions",
+			"type": "string",
+			"required": false,
+			"description": "Additional or nonstandard dimensional data can be placed here as raw wikitext."
+		},
+		"dimensions_ref": {
+			"label": "Dimensions reference(s)",
+			"type": "string",
+			"required": false,
+			"description": "Any references concerning the artwork's dimensions can be placed here as raw wikitext (including \"ref\" tags)."
+		},
+		"weight": {
+			"label": "Weight",
+			"type": "string",
+			"required": false,
+			"description": "The weight of the artwork"
+		},
+		"designation": {
+			"label": "Designation",
+			"type": "string",
+			"required": false,
+			"description": "The legal protection granted to the artwork"
+		},
+		"condition": {
+			"label": "Condition",
+			"type": "string",
+			"required": false,
+			"description": "The condition of the artwork"
+		},
+		"owner": {
+			"label": "Owner",
+			"type": "string",
+			"required": false,
+			"description": "The current owner of the artwork"
+		},
+		"accession": {
+			"label": "Accession number",
+			"type": "string",
+			"required": false,
+			"description": "The accession number(s) for the artwork"
+		},
+		"museum": {
+			"label": "Museum",
+			"type": "string",
+			"required": false,
+			"description": "The museum that currently houses the artwork"
+		},
+		"city": {
+			"label": "City",
+			"type": "string",
+			"required": false,
+			"description": "The city in which the artwork is currently located"
+		},
+		"coordinates": {
+			"label": "Coordinates",
+			"type": "string",
+			"required": false,
+			"description": "Coordinates for the artwork, input as a coordinate template"
+		},
+		"module": {
+			"label": "Module",
+			"type": "string",
+			"required": false,
+			"description": "An embedded template"
+		},
+		"website": {
+			"label": "Website",
+			"type": "string",
+			"required": false,
+			"description": "Website for the artwork, input as a URL template"
+		},
+		"image_upright": {
+			"label": "Image scale",
+			"description": "Image scaling factor; reduce for portraits",
+			"example": "1.1",
+			"type": "number",
+			"default": "1.36"
+		},
+		"image": {
+			"aliases": [
+				"image_file"
+			],
+			"label": "Image file",
+			"description": "The name of the image file to display, without the \"File:\" prefix",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"medium": {
+			"label": "Medium",
+			"description": "The material used by the artist or designer to create the work of art",
+			"example": "Charcoal on paper",
+			"type": "string"
+		},
+		"movement": {
+			"label": "Movement",
+			"description": "[[:en:Art movement|Art movement]], or movements, typically associated with work of art or time during artist's career when work of art was created. Must be verifiable through sources.",
+			"example": "Post-Impressionism",
+			"type": "string",
+			"autovalue": ""
+		},
+		"italic title": {
+			"label": "Italic title",
+			"description": "Set to no if automatic title italicization is not required. Set to force if the title is not being italicized when it should be.",
+			"example": "no",
+			"type": "line"
+		}
+	},
+	"paramOrder": [
+		"title",
+		"image",
+		"image_size",
+		"image_upright",
+		"alt",
+		"caption",
+		"other_language_1",
+		"other_title_1",
+		"other_language_2",
+		"other_title_2",
+		"wikidata",
+		"artist",
+		"year",
+		"completion_date",
+		"catalogue",
+		"type",
+		"medium",
+		"movement",
+		"subject",
+		"height_metric",
+		"width_metric",
+		"length_metric",
+		"height_imperial",
+		"height_inch",
+		"width_imperial",
+		"width_inch",
+		"length_imperial",
+		"length_inch",
+		"diameter_metric",
+		"diameter_imperial",
+		"metric_unit",
+		"imperial_unit",
+		"dimensions",
+		"dimensions_ref",
+		"weight",
+		"designation",
+		"condition",
+		"museum",
+		"city",
+		"coordinates",
+		"owner",
+		"accession",
+		"module",
+		"website",
+		"italic title"
+	],
+	"format": "block"
+}
+</templatedata>
+{{collapse bottom}}
+
+== Microformat ==
+{{UF-hcal}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox artwork with unknown parameters}}
+* {{clc|Pages using infobox artwork with the backcolor parameter}} (can be safely removed or ignored)
+* {{clc|Pages using infobox artwork with the material parameter}} (can be replaced with {{para|medium}})
+* {{clc|Pages using infobox artwork with unlinked artist field}} (for potential linking)
+
+== See also ==
+* {{tl|Infobox artwork/wikidata}}
+* {{tl|Infobox artist}}
+* {{tl|Image information art}}, for [[Help:File page|image page]]s.
+
+{{Buildings and structures infobox templates}}
+
+{{#if:{{DISPLAYTITLE:{{FULLPAGENAME}}}}}}
+<includeonly>{{Sandbox other|
+| 
+}}</includeonly>
+<noinclude>
+[[Category:Arts and culture infobox templates|Artwork]]
+[[Category:Buildings and structures infobox templates|Artwork]]
+[[Category:Infobox templates with module parameter|Artwork]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

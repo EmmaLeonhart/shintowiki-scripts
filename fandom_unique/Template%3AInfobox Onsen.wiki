@@ -1,0 +1,83 @@
+{{infobox
+| bodyclass = vcard
+
+| child = {{#ifeq:{{{embed|}}}|yes|yes}}
+
+| title = <includeonly>{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</includeonly>
+| titleclass = fn org
+
+| subheader = {{#if:{{{native_name|}}}|<div class="nickname" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang}}}"}}>{{{native_name}}}</div>}}
+
+| headerstyle = background-color: #eee;
+
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|Rank=best|P18 | maxvals=1 | name=image | noicon=true | qid={{{qid|}}} | suppressfields={{{suppressfields|}}} | fetchwikidata={{{fetchwikidata|ALL}}} | onlysourced=no |{{{image|}}}}}|size={{{image_size|{{{imagewidth|}}}}}}|upright={{{image_upright|}}}|alt={{{alt|{{{imagealttext|}}}}}}}}
+| caption = {{{caption|}}}
+
+| image2 = {{#invoke:InfoboxImage|InfoboxImage|image={{{map|}}}|size={{{map_size|{{{mapwidth|}}}}}}|sizedefault=250px|alt={{{map_alt|}}}}}
+| caption2 = {{#if:{{{map_type|}}}||{{{map_caption|}}}}}
+
+| label1 = Alternative name
+| class1 = nickname
+| data1 = {{{other_name|{{{alternate_name|}}}}}}
+
+| label2 = Location
+| class2 = label
+| data2 = {{{location|}}}
+
+| label3 = Prefecture/Region
+| class3 = label
+| data3 = {{{region|}}}
+
+| label4 = Coordinates
+| data4 = {{#if:{{{coordinates|}}}|{{#invoke:coordinates|coordinsert|{{{coordinates}}}|type:landmark}} }}
+
+| label5 = Type
+| class5 = category
+| data5 = {{{type|}}}
+
+| label6 = Water Temperature
+| data6 = {{{temperature|}}}
+
+| label7 = Water Composition
+| data7 = {{{composition|}}}
+
+| label8 = pH Level
+| data8 = {{{ph|}}}
+
+| label9 = Mineral Content
+| data9 = {{{minerals|}}}
+
+| label10 = Facilities
+| data10 = {{{facilities|}}}
+
+| header11 = {{#if:{{{history|}}}{{{established|}}}{{{renovated|}}}|History}}
+| label12 = Established
+| data12 = {{{established|}}}
+
+| label13 = Renovated
+| data13 = {{{renovated|}}}
+
+| label14 = Historical Significance
+| data14 = {{{history|}}}
+
+| header15 = {{#if:{{{public_access|}}}{{{website|}}}{{{notes|}}}|Visitor Information}}
+| label15 = Public Access
+| data15 = {{{public_access|}}}
+
+| label16 = Website
+| data16 = {{{website|}}}
+
+| label17 = Notes
+| data17 = {{{notes|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox onsen]] with unknown parameter "_VALUE_"|ignoreblank=y| alt | alternate_name | composition | facilities | history | image | imagealttext | image_size | imagewidth | map | map_alt | map_caption | map_size | mapwidth | minerals | name | native_name | native_name_lang | ph | qid | region | temperature | public_access | website | notes | established | renovated }}
+<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox onsen with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,232 @@
+{{main other|{{#if:{{Has short description}}||{{if first display both|{{#invoke:Type in location|main|{{if empty|{{{lake_type|}}}|{{{ocean_type|}}}|{{{type|}}}}}|{{if empty|{{{location|}}}|{{{basin_countries|}}}|{{{countries|}}}}}|check-patterns=basin;bay;bight;channel;estuary;gulf;lagoon;lake;loch;ocean;reservoir;river;sea;sound;strait|<--
+      -->invalidadd={{if empty|{{#if:{{{lake_type|}}}|lake}}|{{#if:{{{ocean_type|}}}|sea}}|body of water}}}}|}}}}}}{{infobox
+| child          = {{lc:{{{child|{{{embed|}}}}}}}}
+| bodyclass      = vcard
+| bodystyle      = {{#ifeq:{{{align}}}|left|float: {{{align}}}; clear: {{{align}}}; margin-left:0; margin-right: 1em; }}
+| headerstyle    = border-bottom: #cedeff 1px solid
+
+| abovestyle     = background-color: #cedeff; font-size: 125%;
+| aboveclass     = fn org
+| above          = {{#if:{{{name|}}}|{{{name}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}}
+
+| titleclass     = fn org
+| title          = {{#ifeq:{{lc:{{{child|{{{embed|}}}}}}}}|yes|{{#if:{{{name|}}}|{{{name}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}}
+
+| subheaderclass = nickname
+| subheaderstyle = font-size:100%; border-bottom: 1px solid #cedeff;
+| subheader      = {{{other_name|}}}
+| subheader2     = {{native name checker|{{{native_name|}}}}}
+
+| imagestyle     = line-height: 1.2; border-bottom: 1px solid #cedeff;
+
+| image    = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=264px|maxsize=296px|border=yes|alt={{{alt|}}} }}
+| caption  = {{{caption|}}}
+
+| image2   = {{#invoke:InfoboxImage|InfoboxImage|image={{{image_map|}}}|size={{{map_size|{{{image_size|}}}}}}|sizedefault=256px|maxsize=296px|border=yes|alt={{{alt_map|}}}}}
+| caption2 = {{{caption_map|}}}
+
+| image3   = {{#if:{{both| {{{pushpin_map|}}} | {{{coordinates|}}}{{{coords|}}}{{#property:P625}} }}|
+{{location map|{{{pushpin_map|}}}
+|coordinates = {{if empty|{{{coordinates|}}}|{{{coords|}}}}}
+|border = infobox
+|alt = {{{pushpin_map_alt|}}}
+|caption = {{{pushpin_map_caption|}}}
+|float = center
+|width = {{{pushpin_mapsize|}}}
+|default_width = 256
+|max_width = 296
+|relief= {{yesno|{{{pushpin_relief|yes}}}|yes=yes|no=}}
+|AlternativeMap = {{{pushpin_image|}}}
+ |label = {{#ifeq: {{lc: {{{pushpin_label_position|}}} }} | none | | {{if empty|{{{pushpin_label|}}}|{{{name|}}}|{{PAGENAMEBASE}} }} }}
+ |marksize =6
+ |position = {{{pushpin_label_position|}}}
+}}}}
+
+| image4   = {{#invoke:InfoboxImage|InfoboxImage|image={{{image_bathymetry|}}}|size={{{bathymetry_size|{{{image_size|}}}}}}|maxsize=296px|sizedefault=256px|border=yes|alt={{{alt_bathymetry|}}}}}
+| caption4 = {{{caption_bathymetry|}}}
+
+| rowclass1 = adr
+| label1 = Location
+| class1 = region
+| data1  = {{{location|}}}
+
+| label2 = Group
+| data2  = {{{group|}}}
+| class2 = category
+
+| label3 = <span title="Geographical coordinates">Coordinates</span>
+| data3  = {{#if:{{{coordinates|}}}{{{coords|}}}
+   | {{#invoke:Coordinates|coordinsert|{{if empty|{{{coordinates|}}}|{{{coords|}}}}}|type:waterbody}}{{{coordinates_footnotes|}}}
+   }}
+
+| label4 = {{if empty|{{#if:{{{lake_type|}}}|[[Lake#Types of lakes|Lake type]]}}
+                     |{{#if:{{{ocean_type|}}}|[[Ocean#Types of oceans|Ocean type]]}}
+                     |[[Body of water#Waterbody types|Type]]}}
+| data4 = {{if empty|{{{lake_type|}}}|{{{ocean_type|}}}|{{{type|}}}}}
+| class4 = category
+
+| label6     = Etymology
+| data6      = {{{etymology|}}}
+
+| label7     = Part&nbsp;of
+| data7      = {{{part_of|{{{parent|}}}}}}
+
+| label8     = [[inflow (hydrology)|<span title="Primary inflows: rivers, streams, precipitation">Primary inflows</span>]]
+| data8      = {{{inflow|}}}
+
+| label9     = River sources
+| data9      = {{{rivers|}}}
+
+| label10     = [[:en:discharge (hydrology)|<span title="Primary outflows: rivers, streams, evaporation">Primary outflows</span>]]
+| data10      = {{{outflow|}}}
+
+| label11     = <span title="Primary outflows: oceans, seas, straights">Ocean/sea sources</span>
+| data11      = {{{oceans|}}}
+
+| label12    = [[:en:Drainage basin|Catchment area]]
+| data12     = {{{catchment|}}}
+
+| label13    = [[:en:Drainage basin|Basin]]&nbsp;countries
+| data13     = {{{basin_countries|{{{countries|}}}}}}
+
+| label14    = Managing agency
+| data14     = {{{agency|}}}
+| class14    = agent
+
+| label15    = Designation
+| data15     = {{{designation|}}}
+| class15    = category
+
+| label16    = Built
+| data16     = {{{date-built|}}}
+
+| label17    = Construction engineer
+| data17     = {{{engineer|}}}
+
+| label18    = First flooded
+| data18     = {{{date-flooded|}}}
+
+| header21   = {{#if:{{{length|}}}{{{width|}}}{{{area|}}}{{{depth|}}}{{{max-depth|}}}{{{volume|}}}{{{residence_time|}}}{{{salinity|}}}{{{shore|}}}{{{elevation|}}}|{{#ifeq:{{lc:{{{child|{{{embed|}}}}}}}}|yes||<nowiki />}}}}
+
+| label22    = Max. length
+| rowclass22 = note
+| data22     = {{{length|}}}
+
+| label23    = Max. width
+| rowclass23 = note
+| data23     = {{{width|}}}
+
+| label24    = Min. width
+| rowclass24 = note
+| data24     = {{{min_width|}}}
+
+| label25    = {{#if:{{{lake_type|}}}|[[List of lakes by area|Surface area]]|Surface area}}
+| rowclass25 = note
+| data25     = {{{area|}}}
+
+| label26    = Average depth
+| rowclass26 = note
+| data26     = {{{depth|}}}
+
+| label27    = Max. depth
+| rowclass27 = note
+| data27     = {{{max-depth|}}}
+
+| label28    = {{#if:{{{lake_type|}}}|[[List of lakes by volume|Water volume]]|Water volume}}
+| rowclass28 = note
+| data28     = {{{volume|}}}
+
+| label29    = {{#if:{{{lake_type|}}}
+  | [[Lake retention time|Residence&nbsp;time]]
+  | [[Water cycle#Residence times|Residence&nbsp;time]]
+  }}
+| rowclass29 = note
+| data29     = {{#if:{{{residence_time|}}}|{{#iferror:{{#expr:{{{residence_time}}}}}
+  |{{{residence_time}}}
+  |{{{residence_time}}} year{{#ifeq:{{{residence_time}}}|1||s}}
+  }}}}
+
+| label30    = [[Salinity]]
+| rowclass30 = note
+| data30     = {{{salinity|}}}
+
+| label31    = Shore length<sup>1</sup>
+| rowclass31 = note
+| data31     = {{{shore|}}}
+
+| label32    = Surface elevation
+| rowclass32 = note
+| data32     = {{{elevation|}}}
+
+| header36   = {{#if:{{{temperature_high|}}}{{{temperature_low|}}}{{{frozen|}}}{{{islands|}}}{{{sections|}}}{{{cities|}}}{{{website|}}}{{{reference|}}}|<nowiki />}}
+
+| label37    = Max. temperature
+| rowclass37 = note
+| data37     = {{{temperature_high|}}}
+
+| label38    = Min. temperature
+| rowclass38 = note
+| data38     = {{{temperature_low|}}}
+
+| label39    = Frozen
+| data39     = {{{frozen|}}}
+
+| label40    = Dam
+| data40     = {{{dam_name|}}}
+
+| label41    = {{#if:{{{islands_category|}}}
+  |[[:Category:{{{islands_category}}}|Islands]]
+  |{{#if:{{{lake_type|}}}
+    | [[:Category:Lake islands|Islands]]
+    | {{#if:{{{ocean_type|}}}
+      | [[:Category:Islands by ocean or sea|Islands]]
+      | [[:Category:Islands by body of water|Islands]]
+      }}
+    }}
+  }}
+| data41     = {{{islands|}}}
+
+| label42    = Sections/sub-basins
+| data42     = {{{sections|}}}
+
+| label43    = Trenches
+| rowclass43 = note
+| data43     = {{{trenches|}}}
+
+| label44    = Benches
+| rowclass44 = note
+| data44     = {{{benches|}}}
+
+| label45    = Settlements
+| data45     = {{if empty|{{{settlements|}}}|{{{cities|}}}}}
+
+| label46    = Website
+| data46     = {{{website|}}}
+
+| label47    = References
+| class47    = note
+| data47     = {{{reference|}}}
+
+| header48   = {{{extra|}}}{{{nrhp|}}}{{{embedded|}}}{{{module|}}}
+
+| header50   = {{#if:{{{mapframe|}}}|Location}}
+| data51     = {{#invoke:Infobox mapframe
+        |auto
+        |mapframe-frame-width={{{mapframe-frame-width|264}}}
+        |mapframe-marker = {{{mapframe-marker|water}}}
+}}
+| data52     = {{#invoke:Infobox mapframe|autocaption}}
+
+| belowstyle = border-bottom: 1px solid #cedeff; border-top: 1px solid #cedeff
+| below      = {{#if:{{{shore|}}}|<sup>1</sup> Shore length is [[Coastline paradox|not a well-defined measure]].}}
+}}{{#invoke:Infobox body of water tracking|tracking}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox body of water]] with unknown parameter "_VALUE_"|ignoreblank=y| agency | align | alt | alt_bathymetry | alt_map | area | basin_countries | bathymetry_size | benches | caption | caption_bathymetry | caption_map | catchment | child | cities | coordinates | coordinates_footnotes | coords | countries | dam_name | date-built | date-flooded | depth | designation | elevation | embed | embedded | engineer | etymology | extra | frozen | group | image | image_bathymetry | image_map | image_size | inflow | islands | islands_category | lake_type | length | location | map_size | max-depth | min_width | module | name | native_name | nrhp | ocean_type | oceans | other_name | outflow | parent | part_of | pushpin_image | pushpin_label | pushpin_label_position | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_mapsize | pushpin_relief | reference | residence_time | rivers | salinity | sections | settlements | shore | temperature_high | temperature_low | trenches | type | volume | website | width | mapframe | mapframe-area_km2 | mapframe-area_mi2 | mapframe-caption | mapframe-coord | mapframe-coordinates | mapframe-custom | mapframe-frame-coord | mapframe-frame-coordinates | mapframe-frame-height | mapframe-frame-width | mapframe-geomask | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-height | mapframe-id | mapframe-length_km | mapframe-length_mi | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-point | mapframe-shape | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-switcher | mapframe-width | mapframe-wikidata | mapframe-zoom }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox body of water with auto short description]]
+[[Category:Pages using infobox body of water with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

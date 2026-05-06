@@ -1,0 +1,24 @@
+{{#if:{{{km|}}}
+ |{{#if:{{{mi|}}}
+  |{{formatnum:{{{km}}}}}&nbsp;km ({{formatnum:{{{mi}}}}}&nbsp;mi)
+  |{{formatnum:{{{km}}}}}&nbsp;km ({{#expr: ({{formatnum:{{{km}}}|R}})/1.609344 round ({{precision|{{formatnum:{{{km}}}|R}}}}+1)}}&nbsp;mi)
+ }}
+ |{{#if:{{{mi|}}}
+  |{{formatnum:{{{mi}}}}}&nbsp;mi ({{#expr: ({{formatnum:{{{mi}}}|R}})*1.609344 round ({{precision|{{formatnum:{{{mi}}}|R}}}}-0)}}&nbsp;km)
+  |{{#if:{{{m|}}}
+   |{{#if:{{{ft|}}}
+    |{{formatnum:{{{m}}}}}&nbsp;m ({{formatnum:{{{ft}}}}}&nbsp;ft)
+     |{{formatnum:{{{m}}}}}&nbsp;m ({{#expr: ({{formatnum:{{{m}}}|R}})*3.2808399 round ({{precision|{{formatnum:{{{m}}}|R}}}}-0)}}&nbsp;ft)
+    }}
+   |{{#if:{{{ft|}}}
+    |{{formatnum:{{{ft}}}}}&nbsp;ft ({{#expr: ({{formatnum:{{{ft}}}|R}})/3.2808399 round ({{precision|{{formatnum:{{{ft}}}|R}}}}+1)}}&nbsp;m)
+   }}
+  }}
+ }}
+}}<noinclude>{{documentation}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

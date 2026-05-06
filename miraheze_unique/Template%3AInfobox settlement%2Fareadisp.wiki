@@ -1,0 +1,126 @@
+<includeonly>{{infobox settlement/{{infobox settlement/pref|{{{pref}}}|{{{name}}}|area}}{{#if:{{{mag|}}}|/mag}}
+   |metv={{#if:{{{ha|}}}{{{km2|}}}
+      |{{#if:{{{ha|}}}|{{{ha}}}|{{{km2}}}}}
+      |{{#if:{{{dunam|}}}
+         |{{#ifexpr:{{formatnum:{{{dunam}}}|R}}<1E3
+           |{{round
+               |{{#expr:{{formatnum:{{{dunam}}}|R}}/10}}
+               |({{precision|{{formatnum:{{{dunam}}}|R}}}}+1)
+             }}
+           |{{round
+               |{{#expr:{{formatnum:{{{dunam}}}|R}}/1E3}}
+               |({{precision|{{formatnum:{{{dunam}}}|R}}}}+3)
+             }}
+          }}
+         |{{#if:{{{acre|}}}
+            |{{round
+               |{{#expr:{{formatnum:{{{acre}}}|R}}*0.4046856422}}
+               |{{max
+                  |{{precision|{{formatnum:{{{acre}}}|R}}}}
+                  |-{{Order of magnitude|{{#expr:{{formatnum:{{{acre}}}|R}}*0.4046856422}}}}
+                }}
+             }}
+            |{{round
+               |{{#expr:{{formatnum:{{{sqmi}}}|R}}*2.589988110336}}
+               |{{max
+                  |({{precision|{{formatnum:{{{sqmi}}}|R}}}}-1)
+                  |-{{Order of magnitude|{{#expr:{{formatnum:{{{sqmi}}}|R}}*2.589988110336}}}}
+                }}
+             }}
+          }}
+       }}
+    }}
+   |metu={{#if:{{{ha|}}}{{#if:{{{km2|}}}
+              |
+              |{{#if:{{{dunam|}}}
+                 |{{#ifexpr:{{formatnum:{{{dunam}}}|R}}<1E3|X}}
+                 |{{{acre|}}}
+               }}
+            }}
+      |ha
+      |km<sup>2</sup>
+    }}
+   |impv={{#if:{{{acre|}}}{{{sqmi|}}}
+      |{{#if:{{{acre|}}}|{{{acre}}}|{{{sqmi}}}}}
+      |{{#if:{{{ha|}}}{{{km2|}}}
+         |{{#if:{{{ha|}}}
+            |{{round
+               |{{#expr:{{formatnum:{{{ha}}}|R}}/0.4046856422}}
+               |({{precision|{{formatnum:{{{ha}}}|R}}}})
+             }}
+            |{{round
+               |{{#expr:{{formatnum:{{{km2}}}|R}}/2.589988110336}}
+               |{{max
+                  |{{precision|{{formatnum:{{{km2}}}|R}}}}
+                  |-{{Order of magnitude|{{#expr:{{formatnum:{{{km2}}}|R}}/2.589988110336}}}}
+                }}
+             }}
+          }}
+         |{{#ifexpr:{{formatnum:{{{dunam}}}|R}}<2589
+            |{{round
+               |{{#expr:{{formatnum:{{{dunam}}}|R}}/4.046856422}}
+               |{{max
+                  |({{precision|{{formatnum:{{{dunam}}}|R}}}})
+                  |-{{Order of magnitude|{{#expr:{{formatnum:{{{dunam}}}|R}}/4.046856422}}}}
+                }}
+             }}
+            |{{round
+               |{{#expr:{{formatnum:{{{dunam}}}|R}}/2589.988110336}}
+               |{{max
+                  |({{precision|{{formatnum:{{{dunam}}}|R}}}}+3)
+                  |-{{Order of magnitude|{{#expr:{{formatnum:{{{dunam}}}|R}}/2589.988110336}}}}
+                }}
+             }}
+          }}
+       }}
+     }}
+   |impu={{#if:{{{acre|}}}{{#if:{{{sqmi|}}}
+              |
+              |{{{ha|}}}{{#if:{{{km2|}}}
+                 |
+                 |{{#ifexpr:{{formatnum:{{{dunam}}}|R}}<2589|X}}
+               }}
+            }}
+      |acre
+      |sq&nbsp;mi
+    }}
+   |dunv={{#if:{{#ifeq:{{lc:{{{pref}}}}}|dunam|{{{dunam|}}}|no dunams}}
+           |{{{dunam}}}
+           |{{#if:{{{ha|}}}{{{km2|}}}
+              |{{#if:{{{km2|}}}
+                 |{{round
+                    |{{#expr:{{formatnum:{{{km2}}}|R}}*1E3}}
+                    |({{precision|{{formatnum:{{{km2}}}|R}}}}-3)
+                  }}
+                 |{{round
+                    |{{#expr:{{formatnum:{{{ha}}}|R}}*10}}
+                    |({{precision|{{formatnum:{{{ha}}}|R}}}}-1)
+                  }}
+               }}
+              |{{#if:{{{sqmi|}}}
+                 |{{round
+                    |{{#expr:{{formatnum:{{{sqmi}}}|R}}*2589.988110336}}
+                    |{{max
+                       |({{precision|{{formatnum:{{{sqmi}}}|R}}}}-4)
+                       |-{{Order of magnitude|{{#expr:{{formatnum:{{{sqmi}}}|R}}*2589.988110336}}}}
+                     }}
+                  }}
+                 |{{round
+                    |{{#expr:{{formatnum:{{{acre}}}|R}}*4.046856422}}
+                    |{{max
+                       |({{precision|{{formatnum:{{{acre}}}|R}}}}-1)
+                       |-{{Order of magnitude|{{#expr:{{formatnum:{{{acre}}}|R}}*4.046856422}}}}
+                     }}
+                  }}
+               }}
+            }}
+         }}
+   |dunu={{#if:{{{link|}}}|[[dunam]]|dunam}}
+}}</includeonly><noinclude>
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,965 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters|Module:Coordinates|Module:Location map|Module:Wikidata}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+
+This template is for religious buildings other than Christian churches, or for information solely about the architectural details of a Christian church building. For the infobox that provides general information about a Christian church, including its history, architecture and staff, use {{tl|Infobox church}}.
+
+== Usage ==
+{{Infobox religious building
+| name = {{{name}}}
+| native_name = {{{native_name}}}
+| native_name_lang = {{{native_name_lang}}}
+| image = {{{image}}}
+| image_upright={{{image_upright}}} 
+| alt = {{{alt}}}
+| caption = {{{caption}}}
+| religious_affiliation = {{{religious_affiliation}}}
+| tradition={{{tradition}}}
+| sect={{{sect}}}
+| prefecture = {{{prefecture}}}
+| province = {{{province}}}
+| region = {{{region}}}
+| deity = {{{deity}}}
+| rite = {{{rite}}}
+| festival = {{{festival}}}
+| organisational_status = {{{organisational_status}}} or {{{type}}} for [[Shinto]]
+| organizational_status = {{{organizational_status}}}
+| ownership={{{ownership}}}
+| governing_body={{{governing_body}}}
+| leadership = {{{leadership}}}
+| bhattaraka={{{bhattaraka}}}
+| patron = {{{patron}}}
+| consecration_year = {{{consecration_year}}}
+| functional_status = {{{functional_status}}}
+| religious_features_label = {{{religious_features_label}}}
+| religious_features = {{{religious_features}}}
+| location = {{{location}}}
+| locale = {{{locale}}}
+| municipality = {{{municipality}}}
+| cercle = {{{cercle}}}
+| district = {{{district}}}
+| state = {{{state}}}
+| country = {{{country}}}
+| map_type = World
+| map_size = 300
+| map_relief = {{{map_relief}}}
+| relief = {{{relief}}}
+| map_caption = {{{map_caption}}}
+| mapframe = yes
+| grid_name={{{grid_name}}}
+| grid_position={{{grid_position}}}
+| sector = {{{sector}}}
+| territory = {{{territory}}}
+| administration = {{{administration}}}
+| coordinates = {{{coordinates|}}}
+| coordinates_footnotes = {{{coordinates_footnotes}}}
+| heritage_designation = {{{heritage_designation}}}
+| architect = {{{architect}}}
+| architecture_type = {{{architecture_type}}}
+| architecture_style = {{{architecture_style}}}
+| founded_by = {{{founded_by}}}
+| creator = {{{creator}}}
+| funded_by = {{{funded_by}}}
+| general_contractor = {{{general_contractor}}}
+| established={{{established}}}
+| groundbreaking = {{{groundbreaking}}}
+| year_completed = {{{year_completed}}}
+| construction_cost = {{{construction_cost}}}
+| date_demolished={{{date_demolished}}}
+| facade_direction = {{{facade_direction}}}
+| capacity = {{{capacity}}}
+| length = {{{length}}}
+| width = {{{width}}}
+| width_nave = {{{width_nave}}}
+| interior_area={{{interior_area}}}
+| height_max = {{{height_max}}}
+| dome_quantity = {{{dome_quantity}}}
+| dome_height_outer = {{{dome_height_outer}}}
+| dome_height_inner = {{{dome_height_inner}}}
+| dome_dia_outer = {{{dome_dia_outer}}}
+| dome_dia_inner = {{{dome_dia_inner}}}
+| minaret_quantity = {{{minaret_quantity}}}
+| minaret_height = {{{minaret_height}}}
+| spire_quantity = {{{spire_quantity}}}
+| spire_height = {{{spire_height}}}
+| site_area={{{site_area}}}
+| temple_quantity={{{temple_quantity}}}
+| monument_quantity={{{monument_quantity}}}
+| shrine_quantity={{{shrine_quantity}}}
+| inscriptions={{{inscriptions}}}
+| materials = {{{materials}}}
+| elevation_m = 0
+| elevation_footnotes = {{{elevation_footnotes}}}
+| nrhp = yes
+| designated = {{{designated}}}
+| added = {{{added}}}
+| refnum = {{{refnum}}}
+| designation1 = {{{designation1}}}
+| delisted1_date = {{{delisted1_date}}}
+| designation1_offname = {{{designation1_offname}}}
+| designation1_type = {{{designation1_type}}}
+| designation1_criteria = {{{designation1_criteria}}}
+| designation1_date = {{{designation1_date}}}
+| designation1_parent = {{{designation1_parent}}}
+| designation1_number = {{{designation1_number}}}
+| designation1_free1name = {{{designation1_free1name}}}
+| designation1_free1value = {{{designation1_free1value}}}
+| designation1_free2name = {{{designation1_free2name}}}
+| designation1_free2value = {{{designation1_free2value}}}
+| designation1_free3name = {{{designation1_free3name}}}
+| designation1_free3value = {{{designation1_free3value}}}
+| designation2 = {{{designation2}}}
+| delisted2_date = {{{delisted2_date}}}
+| designation2_offname = {{{designation2_offname}}}
+| designation2_type = {{{designation2_type}}}
+| designation2_criteria = {{{designation2_criteria}}}
+| designation2_date = {{{designation2_date}}}
+| designation2_parent = {{{designation2_parent}}}
+| designation2_number = {{{designation2_number}}}
+| designation2_free1name = {{{designation2_free1name}}}
+| designation2_free1value = {{{designation2_free1value}}}
+| designation2_free2name = {{{designation2_free2name}}}
+| designation2_free2value = {{{designation2_free2value}}}
+| designation2_free3name = {{{designation2_free3name}}}
+| designation2_free3value = {{{designation2_free3value}}}
+| website = {{{website}}}
+| module = {{{module}}}
+| footnotes={{{footnotes}}}
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox religious building
+| name                  = 
+| native_name           = 
+| native_name_lang      = 
+| image                 = 
+| image_upright         = 
+| alt                   = 
+| caption               = 
+| religious_affiliation = 
+| tradition             = 
+| sect                  = 
+| district              = 
+| prefecture            = 
+| province              = 
+| region                = 
+| deity                 = 
+| rite                  = 
+| festival              = 
+| organisational_status = 
+| ownership             = 
+| governing_body        = 
+| leadership            = 
+| bhattaraka            = 
+| patron                = 
+| consecration_year     = 
+| functional_status     = 
+| religious_features_label = 
+| religious_features    = 
+| location              = 
+| locale                = 
+| municipality          = 
+| cercle                = 
+| state                 = 
+| country               = 
+| map_type              = 
+| map_size              = 
+| map_alt               = 
+| map_relief            = 
+| map_caption           = 
+| mapframe = yes
+| grid_name             =
+| grid_position         =
+| sector                = 
+| territory             = 
+| administration        = 
+| coordinates           = 
+| coordinates_footnotes = 
+| heritage_designation  = 
+| architect             = 
+| architecture_type     = 
+| architecture_style    = 
+| founded_by            = 
+| creator               = 
+| funded_by             = 
+| general_contractor    = 
+| established           = 
+| groundbreaking        = 
+| year_completed        = 
+| construction_cost     = 
+| date_demolished       = 
+| facade_direction      = 
+| capacity              = 
+| length                = 
+| width                 = 
+| width_nave            = 
+| interior_area         = 
+| height_max            = 
+| dome_quantity         = 
+| dome_height_outer     = 
+| dome_height_inner     = 
+| dome_dia_outer        = 
+| dome_dia_inner        = 
+| minaret_quantity      = 
+| minaret_height        = 
+| spire_quantity        = 
+| spire_height          = 
+| site_area             = 
+| temple_quantity       = 
+| monument_quantity     = 
+| shrine_quantity       = 
+| inscriptions          = 
+| materials             = 
+| elevation_m           = 
+| elevation_footnotes   = 
+| nrhp                  = 
+| designated            = 
+| added                 = 
+| refnum                = 
+| delisted1_date        =
+| website               =
+| module                = 
+| footnotes             = 
+}}
+</syntaxhighlight>
+
+==Parameters==
+''Names:''
+* '''name''' &mdash; the name of the building
+* '''native_name''' &mdash; name in local language. If more than one, separate using {{tl|Plain list}}
+* '''native_name_lang''' &mdash; ISO 639-2 code e.g. "fr" for French. If more than one, use {{tl|lang}} instead
+''Image:''
+* '''image''' &mdash; the image file name of the building
+* '''image_upright''' &mdash; Scales the image thumbnail from its default size by the given factor. Values less than 1 scale the image down (0.9 = 90%) and values greater than 1 scale the image up (1.15 = 115%).
+* '''alt''' &mdash; alt text for image, for visually impaired readers; see [[WP:ALT]]
+* '''caption''' &mdash; descriptive caption to display under the image
+''Religion:''
+* '''religious_affiliation''' &mdash; the religion and/or denomination the building is used for
+* '''tradition''' &mdash; the branch or tradition of [[Islam]]; displayed only when {{para|religious_affiliation|[[Islam]]}}
+* '''deity''' &mdash; the primary deity to whom the building is dedicated
+* '''rite''' &mdash; the [[Nusach (Jewish custom)|rite of worship]], ''<small>(Note: for use primarily in under [[Orthodox Judaism]] synagogues; i.e. [[Ashkenazi]], [[Sephardi]], etc.)</small>''
+* '''festival''' &mdash; any major festival associated with the building
+* '''patron''' &mdash; the patron saint or title of the building, if any ''<small>(i.e. [[Saint Peter]] or The [[Sacred Heart]])</small>''
+''Location and religious organisation:''
+* '''region''' &mdash; the region the building is located in
+* '''state''' &mdash; the state that the building is in
+* '''province''' &mdash; the province the building is located in
+* '''territory''' &mdash; the territory in which the building is located
+* '''prefecture''' &mdash; the prefecture the building is located in
+* '''leadership''' &mdash; the current person in charge of the building ''<small>(i.e. Archbishop X or Reverend A.)</small>''
+* '''district''' &mdash; the district the building belongs to ''<small>(i.e. the United Methodist Church uses districts for organizational purposes)</small>''
+* '''sector''' &mdash; the sector that the building is in
+* '''cercle''' &mdash; the [[Cercle (French colonial)|cercle]] that the building is in
+* '''municipality''' &mdash; the municipality that the building is in
+''History and status:''
+* '''consecration_year''' &mdash; the year the building was consecrated
+* '''status''' &mdash; the building's current ecclesiastical or organizational status or the last previous ecclesiastical or organizational status the building held, if currently unused. ''<small>(i.e. oratory, basilica, cathedral, monastery, temple, most holy site)</small>'' Use {{para|type}} for [[Shinto]] shrines
+* '''functional_status''' &mdash; the current function or usage of the building.  ''<small>(i.e. active, abandoned, preserved, museum)</small>''
+* '''religious_features''' &mdash; architectural features related to the religion; '''religious_features_label''' - label can be set
+''Location:''
+* '''map_type''' &mdash; uses the {{tl|Location map}} format maps with the latitude and longitude fields, specify the map to use
+* '''map_size''' &mdash; ''Default: 220px'', sets a specific size to the map
+* '''map_caption''' &mdash; descriptive caption to display under the map
+* '''location''' &mdash; provide at least ''city'', ''state/province'', and ''country'' location information
+* '''coordinates''' &mdash; use the {{tl|coord}} to display the geographic location of the building
+* '''heritage_designation''' &mdash; the year the building attained Heritage Status
+''Architecture:''
+* '''architecture''' &mdash; ''Default: yes'', hide or show the architecture section by putting ''yes'' or ''no''
+* '''architect''' &mdash; the primary architects of the building, there's no need to indicate architects with minimal influence in the infobox, but the article would serve as a better place for mention of other architects
+* '''architecture_type''' &mdash; what the building was originally designed to be (i.e. Chapel, Basilica, Cathedral).
+* '''architecture_style''' &mdash; the [[architectural style]] of the building
+* '''facade_direction''' &mdash; the direction the [[facade]] ''<small>(i.e. North, South, East, West)</small>''
+* '''groundbreaking''' &mdash; the year that construction began
+* '''year_completed''' &mdash; the year that construction was completed
+* '''construction_cost''' &mdash; the total cost of construction
+* '''capacity''' &mdash; the maximum number of worshipers the building can hold
+* '''length''' &mdash; the length of the building from the outside, using {{tl|convert}}
+* '''width''' &mdash; the width of the building from the outside, using {{tl|convert}}
+* '''width_nave''' &mdash; the width of the nave, using {{tl|convert}}
+* '''height_max''' &mdash; the heights point of the building, using {{tl|convert}}
+* '''dome_quantity''' &mdash; the number of domes
+* '''dome_height_outer''' &mdash; the outer height of the dome, using {{tl|convert}}
+* '''dome_height_inner''' &mdash; the inner height of the dome, using {{tl|convert}}
+* '''dome_dia_outter''' &mdash; the outer diameter of the dome, using {{tl|convert}}
+* '''dome_dia_inner''' &mdash; the inner diameter of the dome, using {{tl|convert}}
+* '''minaret_quantity''' &mdash; the number of minarets
+* '''minaret_height''' &mdash; the minaret height, using {{tl|convert}}
+* '''spire_quantity''' &mdash; the number of spires
+* '''spire_height''' &mdash; the spire height, using {{tl|convert}}
+* '''materials''' &mdash; the materials used for construction
+''Heritage and NRHP:''
+* '''nrhp''' &mdash; put yes into this field in order to show the National Register section ''<small>(Note: the section will not display without this parameter)</small>''
+* '''added''' &mdash; when the building was added to the National Register
+* '''refnum''' &mdash; the reference number assigned by the National Register
+* '''designated''' &mdash; when the building was designated as a National Historic Landmark
+* '''elevation_m''' &mdash; elevation from sea level
+* '''elevation_footnotes''' &mdash; reference in support of elevation
+''Website''
+* '''website''' &mdash; the current and official website for the building and congregation, can use {{tl|URL}}
+* '''module''' — used to embed other infobox templates
+
+=== Mapframe maps ===
+	
+{{Infobox mapframe/doc/parameters
+| onByDefault = yes, unless any of the other map parameters are present: {{para|map_type}}
+| mapframe-marker = landmark by default, religious-something if {{para|religious_affilication}} variant that has a custom icon is detected
+| mapframe-type = landmark
+}}
+
+==Religious affiliation and its color==
+The input for {{para|religious_affiliation}} will show literally, including wikilinks and other texts, as you enter them. The lefthand label is [[List of religions and spiritual traditions|'''Affiliation''']].
+
+Also, the same input is used to set the color of the header and subheaders. If the {{para|religious_affiliation}} input matches any of the following values, the background color will be set accordingly. One can copy/paste an affiliation from this list (including the wikilink <nowiki>[[&nbsp;]]</nowiki> brackets).
+
+For Christian churches, consider using {{tl|Infobox church}} instead of this template. 
+{{Infobox religious building/doc/religious affiliation}}
+
+==Map and coordinates==
+The <code>coordinates=</code> parameter is used to display coordinates in the infobox, and optionally at the top of the page. Use the {{tl|coord}} template. 
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox religious building
+...
+| coordinates         = 
+| map_type            = 
+| map_alt             = 
+| map_caption         = 
+| relief              = 
+...
+}}
+</syntaxhighlight>
+
+==Designations==
+Detailed designation information ([[WP:NRHP]] and other):
+
+{{Infobox religious building
+| name= ''{{para|designation...}}'' parameters
+
+| nrhp                  = 
+| designated            = 
+| added                 = 
+
+| designation1 = des1
+| delisted1_date =  delisted1_date
+| designation1_offname =  des1_offname
+| designation1_type = des1_type
+| designation1_criteria = des1_criteria
+| designation1_date = des1_date
+| designation1_parent = des1_parent
+| designation1_number = des1_number
+| designation1_free1name = des1_free1name
+| designation1_free1value = des1_free1value
+| designation1_free2name = des1_free2name
+| designation1_free2value = des1_free2value
+| designation1_free3name = des1_free3name
+| designation1_free3value = des1_free3value
+
+| designation2 = des2
+| delisted2_date = delisted2_date
+| designation2_offname = des2_offname
+| designation2_type = des2_type
+| designation2_criteria = des2_criteria
+| designation2_date = des2_date
+| designation2_parent = des2_parent
+| designation2_number = des2_number
+| designation2_free1name = des2_free1name
+| designation2_free1value = des2_free1value
+| designation2_free2name = des2_free2name
+| designation2_free2value = des2_free2value
+| designation2_free3name = des2_free3name
+| designation2_free3value =des2_free3value
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+| nrhp                  = 
+| designated            = 
+| added                 = 
+
+| designation1 = 
+| delisted1_date = 
+| designation1_offname = 
+| designation1_type = 
+| designation1_criteria = 
+| designation1_date = 
+| designation1_parent = 
+| designation1_number = 
+| designation1_free1name = 
+| designation1_free1value = 
+| designation1_free2name = 
+| designation1_free2value = 
+| designation1_free3name = 
+| designation1_free3value = 
+
+| designation2 = 
+| delisted2_date = 
+| designation2_offname = 
+| designation2_type = 
+| designation2_criteria = 
+| designation2_date = 
+| designation2_parent = 
+| designation2_number = 
+| designation2_free1name = 
+| designation2_free1value = 
+| designation2_free2name = 
+| designation2_free2value = 
+| designation2_free3name = 
+| designation2_free3value = 
+</syntaxhighlight>
+
+==Religion-dependent effects==
+::''(to be described)''
+
+== Microformat ==
+{{UF-hcard-geo}}
+
+==Known issues==
+* To be documented: <s>{{para|specifications}}, {{para|architecture}}</s>
+
+== Tracking categories ==
+* {{clc|Infobox religious building with unknown affiliation}}
+* {{clc|Pages using infobox religious building with nrhp}}
+* {{clc|Pages using infobox religious building with unknown parameters}}
+* {{clc|No local image but image on Wikidata}} ([https://petscan.wmflabs.org/?language=en&project=wikipedia&categories=No%20local%20image%20but%20image%20on%20Wikidata&ns%5B0%5D=1&templates_yes=Infobox%20religious%20building&search_max_results=500&interface_language=en&active_tab= PetScan list]) – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== Supporting templates ==
+The following templates are used directly from this template:
+{{Columns-list|colwidth=20em|
+* {{tl|Infobox}}
+* {{tl|Infobox religious building/color}}
+* {{tl|Both}}
+* {{tl|Br separated entries}}
+* {{tl|Convert}}
+* {{tl|Designation/divbox}}
+* {{tl|If empty}}
+* {{tl|Location map}}
+* {{tl|Main other}}
+* {{tl|Wikidata image}}
+}}
+
+== TemplateData ==
+{{TemplateData header}}
+{{collapse top|title=TemplateData}}
+<templatedata>
+{
+	"description": "An infobox for articles about religious buildings (churches, mosques, synagogues, temples, etc.)",
+	"format": "{{_\n| _____________________ = _\n}}\n",
+	"params": {
+		"child": {},
+		"religious_affiliation": {
+			"label": "Religious affiliation",
+			"description": "Mention the name of religion",
+			"example": "Hinduism, Jainism, etc",
+			"type": "string",
+			"required": true
+		},
+		"name": {},
+		"building_name": {},
+		"native_name": {},
+		"native_name_lang": {},
+		"image": {},
+		"image_upright": {},
+		"alt": {},
+		"caption": {},
+		"map_type": {},
+		"coordinates": {},
+		"map_size": {},
+		"map_alt": {},
+		"map_relief": {},
+		"relief": {},
+		"map_caption": {},
+		"location": {},
+		"locale": {},
+		"geo": {},
+		"deity": {},
+		"rite": {},
+		"tradition": {},
+		"sect": {},
+		"festivals": {},
+		"festival": {},
+		"cercle": {},
+		"sector": {},
+		"municipality": {},
+		"district": {},
+		"territory": {},
+		"prefecture": {},
+		"state": {},
+		"province": {},
+		"region": {},
+		"country": {},
+		"administration": {},
+		"consecration_year": {},
+		"organisational_status": {},
+		"organizational_status": {},
+		"type": {},
+		"status": {},
+		"functional_status": {},
+		"heritage_designation": {},
+		"leadership": {},
+		"ownership": {},
+		"governing_body": {},
+		"bhattaraka": {},
+		"patron": {},
+		"website": {},
+		"coordinates_footnotes": {},
+		"category": {},
+		"architect": {},
+		"architecture_type": {},
+		"architecture_style": {},
+		"founded_by": {},
+		"creator": {},
+		"funded_by": {},
+		"general_contractor": {},
+		"established": {},
+		"groundbreaking": {},
+		"completed": {},
+		"year_completed": {},
+		"construction_cost": {},
+		"date_demolished": {},
+		"date_destroyed": {},
+		"facade_direction": {},
+		"capacity": {},
+		"length": {},
+		"width": {},
+		"width_nave": {},
+		"interior_area": {},
+		"height_max": {},
+		"dome_quantity": {},
+		"dome_height_outer": {},
+		"dome_height_inner": {},
+		"dome_dia_outer": {},
+		"dome_dia_inner": {},
+		"minaret_quantity": {},
+		"minaret_height": {},
+		"spire_quantity": {},
+		"spire_height": {},
+		"site_area": {},
+		"temple_quantity": {},
+		"monument_quantity": {},
+		"shrine_quantity": {},
+		"materials": {},
+		"elevation_m": {},
+		"elevation_ft": {},
+		"inscriptions": {},
+		"elevation_footnotes": {},
+		"nrhp": {},
+		"embedded": {},
+		"module": {
+			"deprecated": "Use 'footnotes'"
+		},
+		"designated": {},
+		"added": {},
+		"refnum": {},
+		"designation1": {},
+		"delisted1_date": {},
+		"designation1_offname": {},
+		"designation1_type": {},
+		"designation1_criteria": {},
+		"designation1_date": {},
+		"designation1_parent": {},
+		"designation1_number": {},
+		"designation1_free1name": {},
+		"designation1_free1value": {},
+		"designation1_free2name": {},
+		"designation1_free2value": {},
+		"designation1_free3name": {},
+		"designation1_free3value": {},
+		"designation2": {},
+		"delisted2_date": {},
+		"designation2_offname": {},
+		"designation2_type": {},
+		"designation2_criteria": {},
+		"designation2_date": {},
+		"designation2_parent": {},
+		"designation2_number": {},
+		"designation2_free1name": {},
+		"designation2_free1value": {},
+		"designation2_free2name": {},
+		"designation2_free2value": {},
+		"designation2_free3name": {},
+		"designation2_free3value": {},
+		"footnotes": {},
+		"nocat_wdimage": {},
+		"grid_name": {},
+		"grid_position": {},
+		"religious_features_label": {},
+		"religious_features": {},
+		"mapframe": {
+			"label": "Show mapframe map",
+			"description": "Specify yes or no to show or hide the map, overriding the default",
+			"example": "yes",
+			"type": "string",
+			"default": "no",
+			"suggested": true
+		},
+		"mapframe-caption": {
+			"label": "Mapframe caption",
+			"description": "Caption for the map. If mapframe-geomask is set, then the default is \"Location in <<geomask's label>>\"",
+			"type": "string"
+		},
+		"mapframe-custom": {
+			"label": "Custom mapframe",
+			"description": "Use a custom map instead of the automatic mapframe. Specify either a {{maplink}} template, or another template that generates a mapframe map, or an image name. If used, other mapframe parameters will be ignored.",
+			"type": "wiki-template-name"
+		},
+		"mapframe-id": {
+			"aliases": [
+				"id",
+				"qid"
+			],
+			"label": "Mapframe Wikidata item",
+			"description": "Id (Q-number) of Wikidata item to use.",
+			"type": "string",
+			"default": "(item for current page)"
+		},
+		"mapframe-coordinates": {
+			"aliases": [
+				"mapframe-coord",
+				"coordinates",
+				"coord"
+			],
+			"label": "Mapframe coordinates ",
+			"description": "Coordinates to use, instead of any on Wikidata. Use the {{Coord}} template.",
+			"example": "{{Coord|12.34|N|56.78|E}}",
+			"type": "wiki-template-name",
+			"default": "(coordinates from Wikidata)"
+		},
+		"mapframe-wikidata": {
+			"label": "Mapframe shapes from Wikidata",
+			"description": "et to yes to show shape/line features from the wikidata item, if any, when coordinates are specified by parameter",
+			"example": "yes",
+			"type": "string"
+		},
+		"mapframe-shape": {
+			"label": "Mapframe shape feature",
+			"description": "Override display of mapframe shape feature. Turn off by setting to \"none\". Use an inverse shape (geomask) instead of a regular shape by setting to \"inverse\"",
+			"type": "string"
+		},
+		"mapframe-point": {
+			"label": "Mapframe point feature",
+			"description": "Override display of mapframe point feature. Turn off display of point feature by setting to \"none\". Force point marker to be displayed by setting to \"on\"",
+			"type": "string"
+		},
+		"mapframe-geomask": {
+			"label": "Mapframe geomask",
+			"description": "Wikidata item to use as a geomask (everything outside the boundary is shaded darker). Can either be a specific Wikidata item (Q-number), or a property that specifies the item to use (e.g. P17 for country, or P131 for located in the administrative territorial entity)",
+			"example": "Q100",
+			"type": "wiki-page-name"
+		},
+		"mapframe-switcher": {
+			"label": "Mapframe switcher",
+			"description": "Set to \"auto\" or \"geomasks\" or \"zooms\" to enable Template:Switcher-style switching between multiple mapframes. IF SET TO auto – switch geomasks found in location (P276) and located in the administrative territorial entity (P131) statements on the page's Wikidata item, searching recursively. E.g. an item's city, that city's state, and that state's country. IF SET TO geomasks – switch between the geomasks specified as a comma-separated list of Wikidata items (Q-numbers) in the mapframe-geomask parameter. IF SET TO zooms – switch between \"zoomed in\"/\"zoomed midway\"/\"zoomed out\", where \"zoomed in\" is the default zoom (with a minimum of 3), \"zoomed out\" is 1, and \"zoomed midway\" is the average.",
+			"type": "string"
+		},
+		"mapframe-frame-width": {
+			"aliases": [
+				"mapframe-width"
+			],
+			"label": "Mapframe width",
+			"description": "Frame width in pixels",
+			"type": "number",
+			"default": "270"
+		},
+		"mapframe-frame-height": {
+			"aliases": [
+				"mapframe-height"
+			],
+			"label": "Mapframe height",
+			"description": "Frame height in pixels",
+			"type": "number",
+			"default": "200"
+		},
+		"mapframe-shape-fill": {
+			"label": "Mapframe shape fill",
+			"description": "Color used to fill shape features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-shape-fill-opacity": {
+			"label": "Mapframe shape fill opacity",
+			"description": "Opacity level of shape fill, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-stroke-color": {
+			"aliases": [
+				"mapframe-stroke-colour"
+			],
+			"label": "Mapframe stroke color",
+			"description": "Color of line features, and outlines of shape features",
+			"type": "string",
+			"default": "#ff0000"
+		},
+		"mapframe-stroke-width": {
+			"label": "Mapframe stroke width",
+			"description": "Width of line features, and outlines of shape features",
+			"type": "number",
+			"default": "5"
+		},
+		"mapframe-marker": {
+			"label": "Mapframe marker",
+			"description": "Marker symbol to use for coordinates; see [[mw:Help:Extension:Kartographer/Icons]] for options",
+			"example": "museum",
+			"type": "string"
+		},
+		"mapframe-marker-color": {
+			"aliases": [
+				"mapframe-marker-colour"
+			],
+			"label": "Mapframe marker color",
+			"description": "Background color for the marker",
+			"type": "string",
+			"default": "#5E74F3"
+		},
+		"mapframe-geomask-stroke-color": {
+			"aliases": [
+				"mapframe-geomask-stroke-colour"
+			],
+			"label": "Mapframe geomask stroke color",
+			"description": "Color of outline of geomask shape",
+			"type": "string",
+			"default": "#555555"
+		},
+		"mapframe-geomask-stroke-width": {
+			"label": "Mapframe geomask stroke width",
+			"description": "Width of outline of geomask shape",
+			"type": "number",
+			"default": "2"
+		},
+		"mapframe-geomask-fill": {
+			"label": "Mapframe geomask fill",
+			"description": "Color used to fill outside geomask features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-geomask-fill-opacity": {
+			"label": "Mapframe geomask fill opacity",
+			"description": "Opacity level of fill outside geomask features, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-zoom": {
+			"label": "Mapframe zoom",
+			"description": "Set the zoom level, from \"1\" to \"18\", to used if the zoom level cannot be determined automatically from object length or area",
+			"example": "12",
+			"type": "number",
+			"default": "10"
+		},
+		"mapframe-length_km": {
+			"label": "Mapframe length (km)",
+			"description": "Object length in kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-length_mi": {
+			"label": "Mapframe length (mi)",
+			"description": "Object length in miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_km2": {
+			"label": "Mapframe area (km^2)",
+			"description": "Object arean square kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_mi2": {
+			"label": "Mapframe area (mi^2)",
+			"description": "Object area in square miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-frame-coordinates": {
+			"aliases": [
+				"mapframe-frame-coord"
+			],
+			"label": "Mapframe frame coordinates",
+			"description": "Alternate latitude and longitude coordinates for initial placement of map, using {{coord}}",
+			"example": "{{Coord|12.35|N|56.71|E}}",
+			"type": "wiki-template-name"
+		},
+		"mapframe-line": {}
+	},
+	"paramOrder": [
+		"name",
+		"building_name",
+		"native_name",
+		"native_name_lang",
+		"child",
+		"religious_affiliation",
+		"image",
+		"image_upright",
+		"alt",
+		"caption",
+		"map_type",
+		"coordinates",
+		"map_size",
+		"map_alt",
+		"map_relief",
+		"relief",
+		"map_caption",
+		"mapframe",
+		"mapframe-caption",
+		"mapframe-custom",
+		"mapframe-id",
+		"mapframe-coordinates",
+		"mapframe-wikidata",
+		"mapframe-point",
+		"mapframe-shape",
+		"mapframe-frame-width",
+		"mapframe-frame-height",
+		"mapframe-shape-fill",
+		"mapframe-shape-fill-opacity",
+		"mapframe-stroke-color",
+		"mapframe-stroke-width",
+		"mapframe-marker",
+		"mapframe-marker-color",
+		"mapframe-geomask",
+		"mapframe-geomask-stroke-color",
+		"mapframe-geomask-stroke-width",
+		"mapframe-geomask-fill",
+		"mapframe-geomask-fill-opacity",
+		"mapframe-zoom",
+		"mapframe-length_km",
+		"mapframe-length_mi",
+		"mapframe-area_km2",
+		"mapframe-area_mi2",
+		"mapframe-frame-coordinates",
+		"mapframe-switcher",
+        "mapframe-line",
+		"location",
+		"locale",
+		"geo",
+		"deity",
+		"rite",
+		"tradition",
+		"sect",
+		"festivals",
+		"festival",
+		"cercle",
+		"sector",
+		"municipality",
+		"district",
+		"territory",
+		"prefecture",
+		"state",
+		"province",
+		"region",
+		"country",
+		"administration",
+		"consecration_year",
+		"organisational_status",
+		"organizational_status",
+		"status",
+		"type",
+		"functional_status",
+		"heritage_designation",
+		"leadership",
+		"ownership",
+		"governing_body",
+		"bhattaraka",
+		"patron",
+		"website",
+		"coordinates_footnotes",
+		"category",
+		"architect",
+		"architecture_type",
+		"architecture_style",
+		"founded_by",
+		"creator",
+		"funded_by",
+		"general_contractor",
+		"established",
+		"groundbreaking",
+		"completed",
+		"year_completed",
+		"construction_cost",
+		"date_demolished",
+		"date_destroyed",
+		"facade_direction",
+		"capacity",
+		"length",
+		"width",
+		"width_nave",
+		"interior_area",
+		"height_max",
+		"dome_quantity",
+		"dome_height_outer",
+		"dome_height_inner",
+		"dome_dia_outer",
+		"dome_dia_inner",
+		"minaret_quantity",
+		"minaret_height",
+		"spire_quantity",
+		"spire_height",
+		"site_area",
+		"temple_quantity",
+		"monument_quantity",
+		"shrine_quantity",
+		"materials",
+		"elevation_m",
+		"elevation_ft",
+		"inscriptions",
+		"elevation_footnotes",
+		"nrhp",
+		"embedded",
+		"module",
+		"designated",
+		"added",
+		"refnum",
+		"designation1",
+		"delisted1_date",
+		"designation1_offname",
+		"designation1_type",
+		"designation1_criteria",
+		"designation1_date",
+		"designation1_parent",
+		"designation1_number",
+		"designation1_free1name",
+		"designation1_free1value",
+		"designation1_free2name",
+		"designation1_free2value",
+		"designation1_free3name",
+		"designation1_free3value",
+		"designation2",
+		"delisted2_date",
+		"designation2_offname",
+		"designation2_type",
+		"designation2_criteria",
+		"designation2_date",
+		"designation2_parent",
+		"designation2_number",
+		"designation2_free1name",
+		"designation2_free1value",
+		"designation2_free2name",
+		"designation2_free2value",
+		"designation2_free3name",
+		"designation2_free3value",
+		"footnotes",
+		"nocat_wdimage",
+		"grid_name",
+		"grid_position",
+		"religious_features_label",
+		"religious_features"
+	]
+}
+</templatedata>
+{{Collapse bottom}}
+
+== See also ==
+* {{tl|Infobox church}}
+
+{{Religious infoboxes}}
+{{Buildings and structures infobox templates}}
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Buildings and structures infobox templates|Religious Building]]
+[[Category:Independently git synced pages]][[Category:Embeddable templates]]
+[[Category:Independently git synced pages]][[Category:Infobox templates with module parameter]]
+[[Category:Independently git synced pages]][[Category:Religion and belief infobox templates|Religious Building]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates with coordinates fields]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,1283 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Location map|Module:Check for unknown parameters}}
+
+{{Parameter names example
+| name
+| native_name
+| native_name_a
+| native_name_r
+| seal
+| seal_size            
+| seal_caption
+| seal_alt
+| logo
+| logo_size            
+| logo_caption
+| logo_alt
+| image
+| image_size
+| image_caption
+| image_alt
+| formed
+| preceding1
+| preceding2
+| preceding3
+| preceding4
+| preceding5
+| preceding6
+| dissolved
+| type
+| agency_type
+| superseding1
+| superseding2
+| superseding3
+| superseding4
+| superseding5
+| superseding6
+| jurisdiction 
+| status
+| headquarters 
+| coordinates
+| motto 
+| employees 
+| budget 
+| minister_type
+| minister1_name 
+| minister1_pfo 
+| minister2_name 
+| minister2_pfo 
+| deputyminister_type
+| deputyminister1_name 
+| deputyminister1_pfo 
+| deputyminister2_name 
+| deputyminister2_pfo 
+| chief1_name 
+| chief1_position 
+| chief2_name 
+| chief2_position 
+| parent_department
+| parent_agency 
+| parent_agency_type
+| child1_agency 
+| child2_agency 
+| keydocument1 
+| keydocument2 
+| website 
+| agency_id 
+| map 
+| map_size
+| map_caption 
+| map_alt
+| footnotes 
+}}
+
+{{tlg|bold=yes|Infobox government agency}} is an [[WP:infobox|infobox]] for use in articles on government agencies, departments, ministries, etc.
+
+== Usage ==
+
+=== Syntax ===
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox government agency
+| name                 = 
+| native_name          = 
+| native_name_a        = 
+| native_name_r        = 
+| type                 = 
+| seal                 = 
+| seal_size            = 
+| seal_caption         = 
+| seal_alt             = 
+| logo                 = 
+| logo_size            = 
+| logo_caption         = 
+| logo_alt             = 
+| image                = 
+| image_size           = 
+| image_caption        = 
+| image_alt            = 
+| formed               = 
+| preceding1           = 
+| preceding2           = 
+| dissolved            = 
+| superseding1         = 
+| superseding2         = 
+| agency_type          = 
+| jurisdiction         = 
+| status               = 
+| headquarters         = 
+| coordinates          = 
+| motto                = 
+| employees            = 
+| budget               = 
+| minister_type        = 
+| minister1_name       = 
+| minister1_pfo        = 
+| minister2_name       = 
+| minister2_pfo        = 
+| deputyminister_type  = 
+| deputyminister1_name = 
+| deputyminister1_pfo  = 
+| deputyminister2_name = 
+| deputyminister2_pfo  = 
+| chief1_name          = 
+| chief1_position      = 
+| chief2_name          = 
+| chief2_position      = 
+| parent_department    = 
+| parent_agency        = 
+| parent_agency_type   = 
+| child1_agency        = 
+| child2_agency        = 
+| keydocument1         = 
+| website              = 
+| agency_id            = 
+| map                  = 
+| map_size             = 
+| map_caption          = 
+| map_alt              = 
+| footnotes            = 
+| embed                = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+=== Parameters ===
+All parameters except the agency name are optional.
+
+{| class="wikitable" style="background-color: white;"
+| style="background-color: whitesmoke;" | '''Field Name'''
+| style="background-color: whitesmoke;" | '''Required'''
+| style="background-color: whitesmoke;" | '''Description'''
+| style="background-color: whitesmoke;" | '''Values'''
+|-
+| name || yes || Name of the agency || Text
+|-
+| native_name || no || Agency name in a native language using Western characters (French, German, Spanish, etc.), such as Port Lotniczy im. Fryderyka Chopina. Can also be used for two different names in the same language. || Text; wrap with {{Tl|Lang}}
+|-
+| native_name_a || no || (optional) Agency name in a native language with non-Western characters (Chinese, Japanese, Korean, Arabic, etc.), such as 北京首都国际机场. || Text; wrap with {{Tl|Lang}}
+|-
+| native_name_r || no || (optional) Use in conjunction with above for Romanized name of the agency, such as Běijīng Shǒudū Guójì Jīcháng. || Text; wrap with {{Tl|Lang}}
+|-
+| agency_type || no || Type of agency, rendered on separate line as "'''Type'''" || Text
+|-
+| type || no || Type of agency, rendered elsewhere in infobox, e.g. "''type'' overview in first line (defaults to "agency") || Text
+|-
+| seal || no || Seal for the agency || filename
+|-
+| seal_size || no || Image size for the agency seal (limited to 180 px maximum) || Numbers
+|-
+| seal_caption || no || Caption for the agency seal || Text
+|-
+| seal_alt || no || Alt caption for the agency seal || Text
+|-
+| logo || no || Logo for the agency || filename
+|-
+| logo_size || no || Image size for the agency logo (limited to 220 px maximum) || Numbers
+|-
+| logo_caption || no || Caption for the agency logo || Text
+|-
+| logo_alt || no || Alt caption for the agency logo || Text
+|-
+| image || no || Image for the agency || filename
+|-
+| image_size || no || Image size for the agency image (limited to 220 px maximum) || Numbers
+|-
+| image_caption || no || Caption for the agency image || Text
+|-
+| image_alt || no || Alt caption for the agency image || Text
+|-
+| formed || no || Date of foundation of the agency || Use {{Tl|Start date}}
+|-
+| preceding1 || no || Name of preceding agency. Can be repeated up to six times (preceding1 to preceding6).<br/>'''Note:''' Title of box will automatically pluralise upon use of preceding2. || Text
+|-
+| dissolved || no || Date of dissolution of the agency || Text e.g.; <nowiki>25 July 2005, or 1876</nowiki>
+|-
+| superseding1 || no || Name of superseding agency. Can be repeated up to six times (superseding1 to superseding6).<br/>'''Note:''' Title of box will automatically pluralise upon use of superseding2. || Text
+|-
+| jurisdiction || no || Name of the jurisdiction in which the agency resides || Text e.g.; <nowiki>[[Government of Western Australia]] or [[United States Government]]</nowiki>
+|-
+| headquarters || no || Location of the agency's headquarters. || Text e.g.; <nowiki>[[Sydney, New South Wales]]</nowiki>
+|-
+| coordinates || no || Headquarters coordinates using {{tl|coord}}. See documentation at {{tl|coord}} for fields. || <nowiki>{{coord|45|31|7|N|122|50|16|W|type:landmark_region:US|display=inline,title}}</nowiki>
+|-
+| motto || no || Official motto/slogan of the agency|| Motto/slogan
+|-
+| employees || no || Number of employees of the agency || Number
+|-
+| budget || no || Annual budget of the agency || Text e.g.; <nowiki>$95 m [[:en:United States dollar|USD]] (2006)</nowiki>
+|-
+| minister1_name || no || For [[Westminster system]]s: Name of current minister responsible for the agency. Can be repeated up to eight times (minister1_name to minister8_name).<br/>'''Note:''' Title of box will automatically pluralise upon use of minister2_name. || Text
+|-
+| minister1_pfo || no || For Westminster systems: Portfolio title of responsible minister. Can be repeated up to eight times (minister1_pfo to minister8_pfo). || Text
+|-
+| deputyminister1_name || no || For Westminster systems with deputy ministers: Name of current deputy minister responsible for the agency. Can be repeated up to eight times (deputyminister1_name to deputyminister8_name).<br/>'''Note:''' Title of box will automatically pluralise upon use of minister2_name. || Text
+|-
+| deputyminister1_pfo || no || For Westminster systems with deputy ministers: Portfolio title of responsible deputy minister. Can be repeated up to eight times (minister1_pfo to minister8_pfo). || Text
+|-
+| chief1_name || no || Name of current agency chief/director/executive director. Can be repeated up to nine times (chief1_name to chief9_name).<br/>'''Note:''' Title of box will automatically pluralise upon use of chief2_name. || Text
+|-
+| chief1_position || no || Position title of current agency chief/director/executive director. Can be repeated up to nine times (chief1_position to chief9_position). || Text
+|-
+| parent_department || no || Parent department of this agency (when the parent is not an agency) || Text
+|-
+| parent_agency || no || Parent agency of this agency (when the parent is also an agency) || Text
+|-
+| parent_agency_type || no || Parent agency type (defaults to ''type'') || Text
+|-
+| child1_agency || no || List of current child agencies reporting to this agency. Can be repeated up to twenty five times (child1_agency to child25_agency).<br/>'''Note:''' Title of box will automatically pluralise upon use of child2_agency. || Text
+|-
+| keydocument1|| no || Hyperlink of key document for organisation. Can be repeated up to six times (keydocument1 to keydocument6).<br/>'''Note:''' Title of box will automatically pluralise upon use of keydocument2. || Text
+|-
+| website || no || Web address for agency website || Use {{Tl|URL}}. '''Don't forget to take out the "example.com"!'''
+|-
+| agency_id || no || Unique identifier assigned by records office or similar organisation || Text
+|-
+| map || no || Image for the map || filename
+|-
+| map_size || no || Image size for the map (limited to 220 px maximum) || Numbers
+|-
+| map_caption || no || Caption for the map || Text
+|-
+| map_alt || no || Alt caption for the map || Text
+|-
+| footnotes || no || Footnotes or references for included information || Text
+|-
+| child || no || to make this a child (subsidiary) infobox || Infobox template
+|-
+| embed || no || to embed another child (subsidiary) infobox at the bottom || infobox template
+|}
+
+== Examples ==
+{{Infobox government agency
+| name = United States Department of Agriculture
+| type = Department
+| logo = USDA logo.svg
+| logo_size = 140 px
+| logo_caption = Logo of the USDA
+| logo_alt = USDA official logo
+| seal = Seal of the U.S. Department of Agriculture.svg
+| seal_size = 140 px
+| seal_caption = Seal of the Department of Agriculture
+| seal_alt = Department of Agriculture official seal
+| formed = {{Start date|1889|02|15}}
+| jurisdiction = [[Federal government of the United States]]
+| headquarters = 1301 [[Independence Avenue (Washington, D.C.)|Independence Avenue]], S.W., [[:en:Washington, D.C.|Washington, D.C.]]
+| coordinates = {{coord|38|53|12|N|77|01|47|W|region:US-DC_type:landmark|display=inline}}
+| employees = 105,778 (June 2007)
+| budget = $94 billion [[:en:United States dollar|USD]] (2006)
+| chief1_name = [[Mike Johanns]]
+| chief1_position = [[United States Secretary of Agriculture|Secretary of Agriculture]]
+| chief2_name = [[:en:Charles Franklin Conner|Charles F. Conner]]
+| chief2_position = Deputy Secretary of Agriculture
+| child1_agency = Several
+| website = {{URL|usda.gov}}
+}}
+For the [[United States Department of Agriculture]]:
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox government agency
+| name = United States Department of Agriculture
+| type = Department
+| logo = USDA logo.svg
+| logo_size = 140 px
+| logo_caption = Logo of the USDA
+| logo_alt = USDA official logo
+| seal = Seal of the United States Department of Agriculture.svg
+| seal_size = 140 px
+| seal_caption = Seal of the Department of Agriculture
+| seal_alt = Department of Agriculture official seal
+| formed = {{Start date|1889|02|15}}
+| jurisdiction = [[Federal government of the United States]]
+| headquarters = 1301 [[Independence Avenue (Washington, D.C.)|Independence Avenue]], S.W., [[:en:Washington, D.C.|Washington, D.C.]]
+| coordinates = {{coord|38|53|12|N|77|01|47|W|region:US-DC_type:landmark|display=inline,title}}
+| employees = 105,778 (June 2007)
+| budget = $94 billion [[:en:United States dollar|USD]] (2006)
+| chief1_name = [[Mike Johanns]]
+| chief1_position = [[United States Secretary of Agriculture|Secretary of Agriculture]]
+| chief2_name = [[:en:Charles Franklin Conner|Charles F. Conner]]
+| chief2_position = Deputy Secretary of Agriculture
+| child1_agency = Several
+| website = {{URL|usda.gov}}
+}}
+</syntaxhighlight>
+{{clear}}
+
+{{Infobox government agency
+| name = Federal Statistical Office of Germany
+| native_name = Statistisches Bundesamt Deutschland
+| logo = Logo Destatis.svg
+| logo_alt = Logo Destatis
+| headquarters = Gustav-Stresemann-Ring 11, D-65189, [[Wiesbaden]]
+| coordinates = {{coord|50|4|18.7068|N|8|15|6.2676|E|region:DE-HE_type:landmark|display=inline}}
+| formed = {{start date and age|df=yes|paren=yes|1953|07|03}}
+| jurisdiction = [[Politics of Germany|Government of Germany]]
+| employees = 2,780
+| minister1_name = [[Wolfgang Schäuble|Wolfgang Schauble]]
+| minister1_pfo = [[Federal Ministry of the Interior (Germany)|German Interior Minister]]
+| chief1_name = Walter Radermacher
+| chief1_position = Bureau president
+| parent_department = [[Federal Ministry of the Interior (Germany)|Federal Ministry of the Interior]]
+| website = {{URL|destatis.de}}
+}}
+For the [[Federal Statistical Office of Germany]]:
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox government agency
+| name = Federal Statistical Office of Germany
+| native_name = Statistisches Bundesamt Deutschland
+| logo = Logo Destatis.svg
+| logo_alt = Logo Destatis
+| headquarters = Gustav-Stresemann-Ring 11, D-65189, [[Wiesbaden]]
+| coordinates = {{coord|50|4|18.7068|N|8|15|6.2676|E|region:DE-HE_type:landmark|display=inline,title}}
+| formed = {{start date and age|df=yes|paren=yes|1953|07|03}}
+| jurisdiction = [[Politics of Germany|Government of Germany]]
+| employees = 2,780
+| minister1_name = [[Wolfgang Schäuble|Wolfgang Schauble]]
+| minister1_pfo = [[Federal Ministry of the Interior (Germany)|German Interior Minister]]
+| chief1_name = Walter Radermacher
+| chief1_position = Bureau president
+| parent_department = [[Federal Ministry of the Interior (Germany)|Federal Ministry of the Interior]]
+| website = {{URL|destatis.de}}
+}}
+</syntaxhighlight>
+{{clear}}
+
+{{Infobox government agency
+| agency_name     = Ministry of Land, Infrastructure, Transport and Tourism
+| nativename_a    = {{lang|ja|国土交通省}}
+| nativename_r    = Kokudokōtsūshō
+| logo            = Logo of MLIT.svg
+| logo_width      = 
+| logo_caption    = 
+| seal            = 
+| seal_width      = 
+| seal_caption    = 
+| picture         = Central-Government-Building-3-01.jpg
+| picture_caption = Central Government Building # 3: MLIT Headquarters
+| formed          = 
+| preceding1      = [[Ministry of Transport (Japan)|Ministry of Transport]]
+| preceding2      = [[Ministry of Construction (Japan)|Ministry of Construction]]
+| preceding3      = {{Nihongo|{{ill|Hokkaido Development Agency|ja|北海道開発庁}}|北海道開発庁|Hokkaidō-kaihatsu-chō}}
+| preceding4      = {{Nihongo|{{ill|National Land Agency|ja|国土庁}}|国土庁|Kokudo-chō}}
+| dissolved       = 
+| superseding     = 
+| jurisdiction    = [[Government of Japan]]
+| headquarters    = 2-1-3 [[:en:Kasumigaseki|Kasumigaseki]], [[:en:Chiyoda, Tokyo|Chiyoda-ku]], [[:en:Tokyo|Tokyo]] 100-8918 [[:en:Japan|Japan]]
+| coordinates     = {{coord|35.6759842|139.7502087|format=dms|type:landmark_source:wikidata_region:JP-13|display=inline,title}}
+| employees       = 
+| budget          = 
+| minister1_name  = [[Tetsuo Saito]], [[:en:Minister of Land, Infrastructure, Transport and Tourism|Minister of Land, Infrastructure, Transport and Tourism]]
+| minister2_name  = [[Takashi Ōtsuka]], State Minister of Land, Infrastructure, Transport and Tourism
+| minister3_name  = [[Ichiro Tsukada]], State Minister of Land, Infrastructure, Transport and Tourism
+| parent_agency   = 
+| child1_agency   = 
+| child2_agency   = 
+| website         = {{URL|https://www.mlit.go.jp/en/|mlit.go.jp}}
+| footnotes       = 
+}}
+
+For the [[:en:Ministry of Land, Infrastructure, Transport and Tourism|Ministry of Land, Infrastructure, Transport and Tourism]] in Japan:
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox government agency
+| agency_name     = Ministry of Land, Infrastructure, Transport and Tourism
+| nativename_a    = {{lang|ja|国土交通省}}
+| nativename_r    = Kokudokōtsūshō
+| logo            = Logo of MLIT.svg
+| logo_width      = 
+| logo_caption    = 
+| seal            = 
+| seal_width      = 
+| seal_caption    = 
+| picture         = Central-Government-Building-3-01.jpg
+| picture_caption = Central Government Building # 3: MLIT Headquarters
+| formed          = 
+| date1           = 
+| date1_name      = 
+| date2           = 
+| date2_name      = 
+| preceding1      = [[Ministry of Transport (Japan)|Ministry of Transport]]
+| preceding2      = [[Ministry of Construction (Japan)|Ministry of Construction]]
+| preceding3      = {{Nihongo|{{ill|Hokkaido Development Agency|ja|北海道開発庁}}|北海道開発庁|Hokkaidō-kaihatsu-chō}}
+| preceding4      = {{Nihongo|{{ill|National Land Agency|ja|国土庁}}|国土庁|Kokudo-chō}}
+| dissolved       = 
+| superseding     = 
+| jurisdiction    = [[Government of Japan]]
+| headquarters    = 2-1-3 [[:en:Kasumigaseki|Kasumigaseki]], [[:en:Chiyoda, Tokyo|Chiyoda-ku]], [[:en:Tokyo|Tokyo]] 100-8918 [[:en:Japan|Japan]]
+| coordinates     = {{coord|35.6759842|139.7502087|format=dms|type:landmark_source:wikidata_region:JP-13|display=inline,title}}
+| employees       = 
+| budget          = 
+| minister1_name  = [[Tetsuo Saito]], [[:en:Minister of Land, Infrastructure, Transport and Tourism|Minister of Land, Infrastructure, Transport and Tourism]]
+| minister2_name  = [[Takashi Ōtsuka]], State Minister of Land, Infrastructure, Transport and Tourism
+| minister3_name  = [[Ichiro Tsukada]], State Minister of Land, Infrastructure, Transport and Tourism
+| parent_agency   = 
+| child1_agency   = 
+| child2_agency   = 
+| website         = {{URL|https://www.mlit.go.jp/en/|mlit.go.jp}}
+| footnotes       = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+== TemplateData ==
+{{Collapse top|title=[[Wikipedia:TemplateData|TemplateData]] for this template used by [[mw:Extension:TemplateWizard|TemplateWizard]], [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "An infobox template for use in articles on government agencies",
+	"format": "{{_\n| _______________ = _\n}}\n",
+	"params": {
+		"name": {
+			"suggested": true,
+			"aliases": [
+				"agency_name"
+			],
+			"label": "Name",
+			"description": "Name of the agency",
+			"type": "line",
+			"default": "Name of the page"
+		},
+		"native_name": {
+			"aliases": [
+				"nativename"
+			],
+			"label": "Native name",
+			"description": "Agency FB as Unicode font with sub-characteristic derivated from phonetic alphanumeric dialect or characters, with new additions. (DOS Western Europe, U.S.A., Windows Greek, Hebrew etc.), such as Port Lotniczy im. Fryderyka Chopina. Can also be used for two different names in the same language.",
+			"example": "{{lang|pl|Port Lotniczy im}}",
+			"type": "line"
+		},
+		"native_name_a": {
+			"aliases": [
+				"nativename_a"
+			],
+			"label": "Direct native name",
+			"description": "Agency name in a native language with non-Western characters (Chinese, Japanese, Korean, Arabic, etc.).",
+			"example": "{{lang|zh|北京首都国际机场}}",
+			"type": "line"
+		},
+		"native_name_r": {
+			"aliases": [
+				"nativename_r"
+			],
+			"label": "Romanised native name",
+			"description": "(optional) Use in conjunction with above for Romanized name of the agency.",
+			"example": "{{lang|zh-p|Běijīng Shǒudū Guójì Jīcháng}}",
+			"type": "line"
+		},
+		"seal": {
+			"label": "Seal",
+			"description": "Seal for the agency",
+			"type": "wiki-file-name",
+			"suggested": true
+		},
+		"seal_size": {
+			"aliases": [
+				"seal_width"
+			],
+			"label": "Seal size",
+			"description": "Image size for the agency seal (limited to 180 px maximum)",
+			"type": "number"
+		},
+		"seal_caption": {
+			"label": "Seal caption",
+			"description": "Caption for the agency seal",
+			"type": "line"
+		},
+		"logo": {
+			"label": "Logo",
+			"description": "Image for the agency\t",
+			"type": "wiki-file-name",
+			"suggested": true
+		},
+		"logo_size": {
+			"aliases": [
+				"logo_width"
+			],
+			"label": "Logo size",
+			"description": "Image size for the agency image (limited to 180 px maximum)\t",
+			"type": "number"
+		},
+		"logo_caption": {
+			"description": "Caption for the agency logo",
+			"type": "line",
+			"label": "Logo caption"
+		},
+		"image": {
+			"aliases": [
+				"picture"
+			],
+			"label": "Image",
+			"description": "Image for the agency",
+			"type": "wiki-file-name"
+		},
+		"image_size": {
+			"aliases": [
+				"picture_width"
+			],
+			"label": "Image size",
+			"description": "Image size for the agency image (limited to 180 px maximum)",
+			"type": "number"
+		},
+		"image_caption": {
+			"aliases": [
+				"picture_caption"
+			],
+			"label": "Image caption",
+			"description": "Caption for the agency image\t",
+			"type": "line"
+		},
+		"formed": {
+			"label": "Date founded",
+			"description": "Date of foundation of the agency",
+			"example": "{{Start date|1066|12|25|df=yes}}",
+			"type": "line",
+			"suggested": true
+		},
+		"preceding1": {
+			"label": "Preceding agency 1",
+			"description": "Name of a preceding agency. Title of box will automatically pluralise upon use of more than one.",
+			"type": "line"
+		},
+		"preceding2": {
+			"inherits": "preceding1",
+			"label": "Preceding agency 2"
+		},
+		"preceding3": {
+			"inherits": "preceding1",
+			"label": "Preceding agency 3"
+		},
+		"preceding4": {
+			"inherits": "preceding1",
+			"label": "Preceding agency 4"
+		},
+		"preceding5": {
+			"inherits": "preceding1",
+			"label": "Preceding agency 5"
+		},
+		"preceding6": {
+			"inherits": "preceding1",
+			"label": "Preceding agency 6"
+		},
+		"dissolved": {
+			"label": "Date dissolved",
+			"description": "Date of dissolution of the agency",
+			"example": "{{end date|1782}}"
+		},
+		"superseding1": {
+			"aliases": [
+				"superseding"
+			],
+			"label": "Superseding agency 1",
+			"description": "Name of a superseding agency. Title of box will automatically pluralise upon use of more than one.",
+			"type": "line"
+		},
+		"superseding2": {
+			"inherits": "superseding1",
+			"label": "Superseding agency 2"
+		},
+		"superseding3": {
+			"inherits": "superseding1",
+			"label": "Superseding agency 3"
+		},
+		"superseding4": {
+			"inherits": "superseding1",
+			"label": "Superseding agency 4"
+		},
+		"superseding5": {
+			"inherits": "superseding1",
+			"label": "Superseding agency 5"
+		},
+		"superseding6": {
+			"inherits": "superseding1",
+			"label": "Superseding agency 6"
+		},
+		"jurisdiction": {
+			"label": "Jurisdiction",
+			"description": "Name of the jurisdiction in which the agency resides\t",
+			"example": "[[Government of Western Australia]]",
+			"type": "line",
+			"suggested": true
+		},
+		"headquarters": {
+			"label": "Headquarters",
+			"description": "Location of the agency's headquarters. Do not list country unless it is not already clear from context.",
+			"example": "[[Sydney, New South Wales]]",
+			"type": "line"
+		},
+		"latd": {
+			"label": "Latitude in degrees",
+			"description": "Headquarters co-ordinates; latitude in degrees.",
+			"type": "number"
+		},
+		"longd": {
+			"label": "Longitude in degrees.",
+			"description": "Headquarters co-ordinates; longitude in degrees.",
+			"type": "number"
+		},
+		"latm": {
+			"label": "Latitude in minutes",
+			"description": "Headquarters co-ordinates; latitude in minutes.",
+			"type": "number"
+		},
+		"lats": {
+			"label": "Latitude in seconds",
+			"description": "Headquarters co-ordinates; latitude in seconds.",
+			"type": "number"
+		},
+		"latNS": {
+			"label": "Latitude polarity",
+			"description": "Headquarters co-ordinates; specifies Northern (N) or Southern (S) latitude.",
+			"example": "N",
+			"type": "line"
+		},
+		"longm": {
+			"label": "Longitude in minutes",
+			"description": "Headquarters co-ordinates; longitude in minutes.",
+			"type": "number"
+		},
+		"longs": {
+			"label": "Longitude in seconds",
+			"description": "Headquarters co-ordinates; longitude in seconds.",
+			"type": "number"
+		},
+		"longEW": {
+			"label": "Longitude polarity",
+			"description": "Headquarters co-ordinates; specifies Western (W) or Eastern (E) latitude.",
+			"example": "W",
+			"type": "line"
+		},
+		"region_code": {
+			"label": "Region code",
+			"description": "Headquarters coordinates; sets the preferred map region of coverage, used in selecting appropriate map resources for the area. The region should be supplied as either a two character ISO 3166-1 alpha-2 country code, or an ISO 3166-2 region code.",
+			"example": "AU",
+			"type": "line"
+		},
+		"coordinates": {
+			"label": "Headquarter co-ordinates template",
+			"description": "Headquarters coordinates using {{coord}} option instead of the above. See documentation at {{coord}} for fields.\t",
+			"type": "line",
+			"deprecated": true
+		},
+		"motto": {
+			"label": "Motto or slogan",
+			"description": "Official motto/slogan of the agency",
+			"example": "Semper Occultus",
+			"type": "line"
+		},
+		"employees": {
+			"label": "Employees",
+			"description": "Number of employees of the agency",
+			"example": "3200",
+			"type": "number",
+			"suggested": true
+		},
+		"budget": {
+			"label": "Annual budget",
+			"description": "Annual budget of the agency",
+			"example": "$95 m [[:en:United States dollar|USD]] (2006)",
+			"type": "line",
+			"suggested": true
+		},
+		"minister1_name": {
+			"label": "Minister 1",
+			"description": "Name of a current minister responsible for the agency, in Westminster systems. Title of box will automatically pluralise upon use of more than one.",
+			"example": "[[The Right Honourable|Rt Hon]] [[Philip Hammond]], [[Member of parliament|MP]]",
+			"type": "line"
+		},
+		"minister1_pfo": {
+			"label": "Ministerial portfolio 1",
+			"description": "Portfolio of a current minister responsible for the agency, in Westminster systems. Title of box will automatically pluralise upon use of more than one.",
+			"example": "[[Secretary of State for Foreign and Commonwealth Affairs]]",
+			"type": "line"
+		},
+		"minister2_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 2"
+		},
+		"minister2_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 2"
+		},
+		"minister3_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 3"
+		},
+		"minister3_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 3"
+		},
+		"minister4_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 4"
+		},
+		"minister4_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 4"
+		},
+		"minister5_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 5"
+		},
+		"minister5_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 5"
+		},
+		"minister6_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 6"
+		},
+		"minister6_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 6"
+		},
+		"minister7_name": {
+			"inherits": "minister1_name",
+			"label": "Minister 7"
+		},
+		"minister7_pfo": {
+			"inherits": "minister1_pfo",
+			"label": "Ministerial portfolio 7"
+		},
+		"deputyminister1_name": {
+			"label": "Deputy minister 1",
+			"description": "Name of a current deputy minister responsible for the agency, in Westminster systems. Title of box will automatically pluralise upon use of more than one.",
+			"type": "line"
+		},
+		"deputyminister1_pfo": {
+			"label": "Deputy ministerial portfolio 1",
+			"description": "Portfolio of a current deputy minister responsible for the agency, in Westminster systems. Title of box will automatically pluralise upon use of more than one.",
+			"example": "[[Secretary of State for Foreign and Commonwealth Affairs]]",
+			"type": "line"
+		},
+		"deputyminister2_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 2"
+		},
+		"deputyminister2_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 2"
+		},
+		"deputyminister3_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 3"
+		},
+		"deputyminister3_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 3"
+		},
+		"deputyminister4_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 4"
+		},
+		"deputyminister4_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 4"
+		},
+		"deputyminister5_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 5"
+		},
+		"deputyminister5_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 5"
+		},
+		"deputyminister6_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 6"
+		},
+		"deputyminister6_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 6"
+		},
+		"deputyminister7_name": {
+			"inherits": "deputyminister1_name",
+			"label": "Deputy minister 7"
+		},
+		"deputyminister7_pfo": {
+			"inherits": "deputyminister1_pfo",
+			"label": "Deputy ministerial portfolio 7"
+		},
+		"chief1_name": {
+			"label": "Head 1",
+			"description": "Name of current agency chief/director/executive director.",
+			"example": "[[:en:Alex Younger|Alex Younger]]",
+			"type": "line",
+			"suggested": true
+		},
+		"chief1_position": {
+			"label": "Head position 1",
+			"description": "Position title of current agency chief/director/executive director.",
+			"example": "[[Chief of the Secret Intelligence Service|Chief of the SIS]]",
+			"type": "line",
+			"suggested": true
+		},
+		"chief2_name": {
+			"inherits": "chief1_name",
+			"label": "Head 2"
+		},
+		"chief2_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 2"
+		},
+		"chief3_name": {
+			"inherits": "chief1_name",
+			"label": "Head 3"
+		},
+		"chief3_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 3"
+		},
+		"chief4_name": {
+			"inherits": "chief1_name",
+			"label": "Head 4"
+		},
+		"chief4_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 4"
+		},
+		"chief5_name": {
+			"inherits": "chief1_name",
+			"label": "Head 5"
+		},
+		"chief5_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 5"
+		},
+		"chief6_name": {
+			"inherits": "chief1_name",
+			"label": "Head 6"
+		},
+		"chief6_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 6"
+		},
+		"chief7_name": {
+			"inherits": "chief1_name",
+			"label": "Head 7"
+		},
+		"chief7_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 7"
+		},
+		"chief8_name": {
+			"inherits": "chief1_name",
+			"label": "Head 8"
+		},
+		"chief8_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 8"
+		},
+		"chief9_name": {
+			"inherits": "chief1_name",
+			"label": "Head 9"
+		},
+		"chief9_position": {
+			"inherits": "chief1_position",
+			"label": "Head position 9"
+		},
+		"parent_department": {
+			"label": "Parent department",
+			"description": "Parent department of this agency (when the parent is not an agency)\t",
+			"example": "[[Home Office]]",
+			"type": "line",
+			"suggested": true
+		},
+		"parent_agency": {
+			"label": "Parent agency",
+			"description": "Parent agency of this agency (when the parent is also an agency)\t",
+			"type": "line"
+		},
+		"child1_agency": {
+			"label": "Child agency 1",
+			"description": "An agency that reports to this one.",
+			"type": "line"
+		},
+		"child2_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 2"
+		},
+		"child3_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 3"
+		},
+		"child4_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 4"
+		},
+		"child5_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 5"
+		},
+		"child6_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 6"
+		},
+		"child7_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 7"
+		},
+		"child8_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 8"
+		},
+		"child9_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 9"
+		},
+		"child10_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 10"
+		},
+		"child11_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 11"
+		},
+		"child12_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency "
+		},
+		"child13_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 13"
+		},
+		"child14_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 14"
+		},
+		"child15_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 15"
+		},
+		"child16_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 16"
+		},
+		"child17_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 17"
+		},
+		"child18_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 18"
+		},
+		"child19_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 19"
+		},
+		"child20_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 20"
+		},
+		"child31_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 31"
+		},
+		"child22_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 22"
+		},
+		"child23_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 23"
+		},
+		"child24_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 24"
+		},
+		"child25_agency": {
+			"inherits": "child1_agency",
+			"label": "Child agency 25"
+		},
+		"keydocument1": {
+			"label": "Key document 1",
+			"description": "Hyperlink to key document for the organisation.",
+			"type": "url"
+		},
+		"keydocument2": {
+			"inherits": "keydocument1",
+			"label": "Key document 2"
+		},
+		"keydocument3": {
+			"inherits": "keydocument1",
+			"label": "Key document 3"
+		},
+		"keydocument4": {
+			"inherits": "keydocument1",
+			"label": "Key document 4"
+		},
+		"keydocument5": {
+			"inherits": "keydocument1",
+			"label": "Key document 5"
+		},
+		"keydocument6": {
+			"inherits": "keydocument1",
+			"label": "Key document 6"
+		},
+		"website": {
+			"label": "Website",
+			"description": "Hyperlink to agency's website.",
+			"type": "url",
+			"suggested": true
+		},
+		"map": {
+			"label": "Map",
+			"description": "Image for the map",
+			"type": "wiki-file-name"
+		},
+		"map_size": {
+			"aliases": [
+				"map_width",
+				"pushpin_mapsize"
+			],
+			"label": "Map size",
+			"description": "Image size for the map (limited to 180 px maximum)",
+			"type": "number"
+		},
+		"map_caption": {
+			"label": "Map caption",
+			"description": "Caption for the map",
+			"type": "line",
+			"aliases": [
+				"pushpin_map_caption"
+			]
+		},
+		"footnotes": {
+			"label": "Footnotes"
+		},
+		"type": {
+			"label": "Type",
+			"description": "Type of agency",
+			"type": "line",
+			"default": "agency"
+		},
+		"service": {},
+        "agency_type": {},
+		"subbox": {},
+		"italic title": {},
+		"child": {},
+		"embed": {},
+		"seal_alt": {},
+		"logo_alt": {},
+		"image_alt": {},
+		"status": {},
+		"minister_type": {},
+		"minister8_name": {
+			"label": "Minister 8"
+		},
+		"minister8_pfo": {
+			"label": "Ministerial portfolio 8"
+		},
+		"deputyminister_type": {},
+		"deputyminister8_name": {
+			"label": "Deputy minister 8"
+		},
+		"deputyminister8_pfo": {
+			"label": "Deputy ministerial portfolio 8"
+		},
+		"parent_agency_type": {},
+		"child21_agency": {},
+		"agency_id": {},
+		"map_alt": {
+			"aliases": [
+				"pushpin_map_alt"
+			]
+		},
+		"map_type": {
+			"aliases": [
+				"pushpin_map"
+			]
+		},
+		"map_dot_mark": {},
+		"map_dot_label": {
+			"aliases": [
+				"map dot label",
+				"pushpin_label"
+			]
+		},
+		"relief": {
+			"aliases": [
+				"pushpin_relief"
+			]
+		},
+		"image_map": {}
+	},
+	"paramOrder": [
+		"name",
+		"native_name",
+		"native_name_a",
+		"native_name_r",
+		"type",
+		"seal",
+		"seal_size",
+		"seal_caption",
+		"logo",
+		"logo_size",
+		"logo_caption",
+		"image",
+		"image_size",
+		"image_caption",
+		"formed",
+		"preceding1",
+		"preceding2",
+		"preceding3",
+		"preceding4",
+		"preceding5",
+		"preceding6",
+		"dissolved",
+		"superseding1",
+		"superseding2",
+		"superseding3",
+		"superseding4",
+		"superseding5",
+		"superseding6",
+		"jurisdiction",
+		"headquarters",
+		"latd",
+		"longd",
+		"latm",
+		"lats",
+		"latNS",
+		"longm",
+		"longs",
+		"longEW",
+		"region_code",
+		"coordinates",
+		"motto",
+		"employees",
+		"budget",
+		"minister1_name",
+		"minister1_pfo",
+		"minister2_name",
+		"minister2_pfo",
+		"minister3_name",
+		"minister3_pfo",
+		"minister4_name",
+		"minister4_pfo",
+		"minister5_name",
+		"minister5_pfo",
+		"minister6_name",
+		"minister6_pfo",
+		"minister7_name",
+		"minister7_pfo",
+		"minister8_name",
+		"deputyminister1_name",
+		"deputyminister1_pfo",
+		"deputyminister2_name",
+		"deputyminister2_pfo",
+		"deputyminister3_name",
+		"deputyminister3_pfo",
+		"deputyminister4_name",
+		"deputyminister4_pfo",
+		"deputyminister5_name",
+		"deputyminister5_pfo",
+		"deputyminister6_name",
+		"deputyminister6_pfo",
+		"deputyminister7_name",
+		"deputyminister7_pfo",
+		"chief1_name",
+		"chief1_position",
+		"chief2_name",
+		"chief2_position",
+		"chief3_name",
+		"chief3_position",
+		"chief4_name",
+		"chief4_position",
+		"chief5_name",
+		"chief5_position",
+		"chief6_name",
+		"chief6_position",
+		"chief7_name",
+		"chief7_position",
+		"chief8_name",
+		"chief8_position",
+		"chief9_name",
+		"chief9_position",
+		"parent_department",
+		"parent_agency",
+		"child1_agency",
+		"child2_agency",
+		"child3_agency",
+		"child4_agency",
+		"child5_agency",
+		"child6_agency",
+		"child7_agency",
+		"child8_agency",
+		"child9_agency",
+		"child10_agency",
+		"child11_agency",
+		"child12_agency",
+		"child13_agency",
+		"child14_agency",
+		"child15_agency",
+		"child16_agency",
+		"child17_agency",
+		"child18_agency",
+		"child19_agency",
+		"child20_agency",
+		"child31_agency",
+		"child22_agency",
+		"child23_agency",
+		"child24_agency",
+		"child25_agency",
+		"keydocument1",
+		"keydocument2",
+		"keydocument3",
+		"keydocument4",
+		"keydocument5",
+		"keydocument6",
+		"website",
+		"map",
+		"map_size",
+		"map_caption",
+		"footnotes",
+        "agency_type",
+		"service",
+		"subbox",
+		"italic title",
+		"child",
+		"embed",
+		"seal_alt",
+		"logo_alt",
+		"image_alt",
+		"status",
+		"minister_type",
+		"minister8_pfo",
+		"deputyminister_type",
+		"deputyminister8_name",
+		"deputyminister8_pfo",
+		"parent_agency_type",
+		"child21_agency",
+		"agency_id",
+		"map_alt",
+		"map_type",
+		"map_dot_mark",
+		"map_dot_label",
+		"relief",
+		"image_map"
+	]
+}
+</templatedata>
+{{Collapse bottom}}
+
+== Tracking category ==
+* {{clc|Pages using infobox government agency with unknown parameters}}
+
+== See also ==
+===A related note===
+{{Note2}} 'Infobox government agency' is discouraged as the sole infobox for certain government bodies, such as law enforcement, military units, space programs, and a few others because they ''all'' have infoboxes specializing in those subjects. However, practical embedding of infoboxes ''is'' encouraged. 
+
+{{Organization infoboxes}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Organization infobox templates|Government Agency]]
+[[Category:Politics and government infobox templates|Government Agency]]
+[[Category:Embeddable templates]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

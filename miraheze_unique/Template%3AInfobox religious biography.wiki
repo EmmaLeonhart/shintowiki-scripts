@@ -1,0 +1,375 @@
+{{Infobox|child={{{child|{{{embed|}}}}}}
+| bodyclass = biography vcard
+
+| abovestyle = font-size:125%;background:{{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}; color:{{Greater color contrast ratio|{{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}}};
+
+| above      = {{#if:{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}|<div class="honorific-prefix" style="font-size: 77%; font-weight: normal;">{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}</div>}}<div class="fn">{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</div>{{#if:{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}|<div class="honorific-suffix" style="font-size: 77%; font-weight: normal;">{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}</div>}}
+
+| subheaderstyle = font-size:125%; font-weight:bold;
+| subheader = {{#if:{{{native_name|{{{native name|}}}}}}
+  |<div class="nickname" {{#if:{{{native_name_lang|{{{native name lang|}}}}}}|lang="{{{native_name_lang|{{{native name lang}}}}}}"}}>{{{native_name|{{{native name}}}}}}</div>
+  }}
+
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{alt|}}}|suppressplaceholder=yes}}
+| caption = {{{caption|}}}
+
+| headerstyle = background:{{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}; color:{{Greater color contrast ratio|{{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}}};
+| data1     = {{{module0|}}}
+| data2     = 
+{{Infobox officeholder/office|color={{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}
+| office = {{{office1|}}}
+| term = {{{term1|}}}
+| termstart = {{{term_start1|}}}
+| termend = {{{term_end1|}}}
+| predecessor = {{{predecessor1|}}}
+| successor = {{{successor1|}}}
+}}
+{{Infobox officeholder/office|color={{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}
+| office = {{{office2|}}}
+| term = {{{term2|}}}
+| termstart = {{{term_start2|}}}
+| termend = {{{term_end2|}}}
+| predecessor = {{{predecessor2|}}}
+| successor = {{{successor2|}}}
+}}
+{{Infobox officeholder/office|color={{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}
+| office = {{{office3|}}}
+| term = {{{term3|}}}
+| termstart = {{{term_start3|}}}
+| termend = {{{term_end3|}}}
+| predecessor = {{{predecessor3|}}}
+| successor = {{{successor3|}}}
+}}
+{{Infobox officeholder/office|color={{if empty|{{{background|}}}|{{Infobox religious building/color|{{{religion|}}}}}}}
+| office = {{{office4|}}}
+| term = {{{term4|}}}
+| termstart = {{{term_start4|}}}
+| termend = {{{term_end4|}}}
+| predecessor = {{{predecessor4|}}}
+| successor = {{{successor4|}}}
+}}
+
+| label3  = Title
+|  data3  = {{{title|}}}
+
+| label4  = Official name
+|  data4  = {{{official_name|}}}
+
+| header6 = {{#if:{{{birthname|}}}{{{birth_date|}}}{{{birth_place|}}}{{{nationality|}}}{{{flourished|}}}{{{home_town|}}}{{{partner|}}}{{{spouse|}}}{{{children|}}}{{{parents|}}}{{{citizenship|}}}{{{era|}}}{{{region|}}}{{{party|}}}{{{main interests|}}}{{{notable ideas|}}}{{{notable works|}}}{{{education|}}}{{{known_for|}}}{{{alias|}}}{{{pen_name|}}}{{{posthumous_name|}}}{{{occupation|}}}{{{relations|}}} |Personal life}}
+
+| label7  = Born
+|  data7  = {{br separated entries|1={{#if:{{{birth_name|{{{birthname|}}}}}}|<div style="display:inline" class="nickname">{{{birth_name|{{{birthname|}}}}}}</div>}}|2={{{birth_date|}}}|3={{{pronunciation|}}}|4={{#if:{{{birth_place|}}}|<div style="display:inline" class="birthplace">{{{birth_place|}}}</div>}}}}
+
+| label8  = Died
+|  data8  = {{br separated entries|1={{{death_date|}}}|2={{#if:{{{death_place|}}}|<div style="display:inline" class="deathplace">{{{death_place|}}}</div>}}}}
+
+| label9  = Cause of death
+|  data9  = {{{death_cause|}}}
+
+| label10 = {{#if:{{{cremation_place|}}}|Cremation place|Resting place}}
+|  data10 = {{#if:{{{cremation_place|}}}
+ |{{{cremation_place}}}
+ |{{br separated entries |{{{resting_place|{{{resting place|}}}}}} |{{{resting_place_coordinates|{{{resting place coordinates|}}}}}} }}
+ }}
+| class11 = nickname
+| label11 = Nationality
+|  data11 = {{{nationality|}}}
+
+| label12 = Flourished
+|  data12 = {{{flourished|}}}
+
+| label13 = Home town
+|  data13 = {{{home_town|}}}
+
+| label14 = {{#if:{{{partner|}}}|Partner|Spouse}}
+|  data14 = {{#if:{{{partner|}}}|{{{partner}}}|{{{spouse|}}}}}
+
+| label15 = Children
+|  data15 = {{{children|}}}
+
+| label16 = Parent{{#if:{{{parents|}}}|{{Pluralize from text|{{{parents|}}}|likely=(s)|plural=s}}|{{#ifexpr:{{count|{{{father|}}}|{{{mother|}}}}} > 1|s}}}}
+|  data16 = {{#if:{{{parents|}}}
+ |{{{parents|}}}
+ |{{#if:{{{father|}}}{{{mother|}}}
+    |{{unbulleted list|1={{#if:{{{father}}}|{{{father|}}} (father)}}|2={{#if:{{{mother|}}}|{{{mother|}}} (mother)}}}}
+  }}
+ }}
+
+| label17 = [[Citizenship]]
+|  data17 = {{{citizenship|}}}
+
+| label20 = {{#if:{{{era|}}}|Era|Dynasty}}
+|  data20 = {{#if:{{{era|}}}|{{{era|}}}|{{{dynasty|}}}}}
+
+| label21 = Region
+|  data21 = {{{region|}}}
+
+| label29 = [[Political party]]
+|  data29 = {{{political_party|{{{political party|{{{party|}}}}}}}}}
+
+| label30 = Main interest(s)
+|  data30 = {{{main_interests|{{{main interests|}}}}}}
+
+| label31 = Notable idea(s)
+|  data31 = {{{ideas|{{{notable_ideas|{{{notable ideas|}}}}}}}}}
+
+| label32 = Notable work(s)
+|  data32 = {{{works|{{{notable_works|{{{notable works|}}}}}}}}}
+
+| label33 = {{#if:{{{education|}}}|Education|[[Alma mater|Alma&nbsp;mater]]}}
+|  data33 = {{if empty|{{{education|}}}|{{{alma_mater|}}}}}
+
+| label36 = Known&nbsp;for
+|  data36 = {{{known_for|}}}
+
+| class37 = nickname
+| label37 = Other&nbsp;names
+|  data37 = {{{other_names|{{{other_name|{{{alias|}}}}}}}}}
+
+| class40 = nickname
+| label40 = Pen&nbsp;name
+|  data40 = {{{pen_name|}}}
+
+| class41 = nickname
+| label41 = Posthumous name
+|  data41 = {{{posthumous_name|}}}
+
+| label43 = Occupation
+|  data43 = {{{occupation|}}}
+
+| label44 = {{#if:{{{relations|}}}|Relations|Relatives}}
+|  data44 = {{if empty|{{{relations|}}}|{{{relatives|}}}}}
+
+|  data45 = {{{misc|}}}
+
+| label46 = {{#if:{{{honors|}}}|Honors|Honours}}
+|  data46 = {{if empty|{{{honors|}}}|{{{honours|}}}}}
+
+| label47 = Signature
+|  data47 = {{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size={{{signature_size|}}}|sizedefault=150px|alt={{{signature alt|{{{signature_alt|}}}}}}}}
+| header67 = {{#if:{{{religion|}}}{{{denomination|}}}{{{temple|}}}{{{order|}}}{{{institute|}}}{{{church|{{{churches|}}}}}}{{{founder|}}}{{{philosophy|}}}|Religious life}}
+
+| class68 = category
+| label68 = Religion
+|  data68 = {{{religion|}}}
+
+| class69 = category
+| label69 = Denomination
+|  data69 = {{{denomination|}}}
+
+| label70  = Temple
+|  data70  = {{{temple|}}}
+
+| label71 = Order
+|  data71 = {{{order|}}}
+
+| label72 = Institute
+|  data72 = {{{institute|}}}
+
+| label73 = Church
+|  data73 = {{{church|{{{churches|}}}}}}
+
+| label74 = Founder&nbsp;of
+|  data74 = {{{founder|}}}
+
+| label75 = Philosophy
+|  data75 = {{{philosophy|}}}
+
+| class76 = category
+| label76 = School
+|  data76 = {{{school|}}}
+
+| label77 = Lineage
+|  data77 = {{{lineage|}}}
+
+| class78 = category
+| label78 = Sect
+|  data78 = {{br separated entries |{{{sect|}}} |{{{subsect|}}} }}
+
+| class79 = category
+| label79 = Jurisprudence
+|  data79 = {{{Madh'hab|{{{Maddhab|{{{jurisprudence|}}}}}}}}}
+
+| label80 = Teachers
+|  data80 = {{{teachers|}}}
+
+| label81 = [[Tariqa]]
+|  data81 = {{{Sufi_order|}}}
+
+| class82 = category
+| label82 = Creed
+|  data82 = {{{school_tradition|{{{creed|}}}}}}
+
+| label83 = [[Religious movement|Movement]]
+|  data83 = {{{movement|}}}
+
+| class84 = nickname
+| label84 = [[Dharma&nbsp;name]]s
+|  data84 = {{{dharma_names|{{{dharma_name|}}}}}}
+
+| class85 = nickname
+| label85 = Monastic&nbsp;name
+|  data85 = {{{monastic_name|}}}
+
+| label86 = Profession
+|  data86 = {{{profession|}}}
+
+| label87 = Ordination
+|  data87 = {{{ordination|}}}
+
+| label88 = Consecration
+|  data88 = {{{consecration|}}}
+
+| label90 = Initiation{{#if:{{{initiation_Rank|}}}|&nbsp;as {{{initiation_Rank|}}}}}
+|  data90 = {{br separated entries|{{{initiation|}}}|{{{initiation_name|}}}|{{{initiation_date|}}}|{{{initiation_place|}}}|{{#if:{{{initiator|}}}|by {{{initiator|}}}}}}}
+
+| label91 = Initiation{{#if:{{{initiation_Rank2|}}}|&nbsp;as {{{initiation_Rank2|}}}}}
+|  data91 = {{br separated entries|{{{initiation_name2|}}}|{{{initiation_date2|}}}|{{{initiation_place2|}}}|{{#if:{{{initiator2|}}}|by {{{initiator2|}}}}}}}
+
+| header92 = {{#if:{{{teacher|}}}{{{guru|}}}{{{location|}}}{{{period|{{{Period|}}}}}}{{{consecration|}}}{{{predecessor|{{{Predecessor|}}}}}}{{{successor|{{{Successor|}}}}}}{{{reincarnation_of|{{{reincarnation of|}}}}}}{{{reason|{{{Reason|}}}}}}{{{disciple_of|}}}
+{{{disciples|}}}{{{students|}}}{{{influences|}}}{{{influenced|}}}{{{awards|}}}{{{literary_works|}}}{{{previous_post|{{{previous post|}}}}}}{{{present_post|{{{present post|}}}}}}{{{post|}}}|{{#switch:{{{religion|}}}|[[Hinduism]]|[[Jainism]]|[[Sikhism]]=Religious career|[[Judaism]]=Jewish leader|[[Islam]]=Muslim leader|#default=Senior posting}} }}
+
+| label93 = {{#if:{{{guru|}}}|Guru|Teacher}}
+|  data93 = {{#if:{{{guru|}}}|{{{guru}}}|{{{teacher|}}}}}
+
+| class94 = label
+| label94 = Based&nbsp;in
+|  data94 = {{{location|}}}
+
+| label95 = Present post
+|  data95 = {{{present_post|{{{present post|}}}}}}
+
+| label96 = Post
+|  data96 = {{{post|}}}
+
+| label97 = Period in&nbsp;office
+|  data97 = {{{period|{{{Period|}}}}}}
+
+| label98 = Predecessor
+|  data98 = {{{predecessor|{{{Predecessor|}}}}}}
+
+| label99 = Successor
+|  data99 = {{{successor|{{{Successor|}}}}}}
+
+| label100 = Reason for&nbsp;exit
+|  data100 = {{{reason|{{{Reason|}}}}}}
+
+| label101 = Previous&nbsp;post
+|  data101 = {{{previous_post|{{{previous post|}}}}}}
+
+| label102 = [[Reincarnation]]
+|  data102 = {{{reincarnation_of|{{{reincarnation of|}}}}}}
+
+| label103  = Disciple of
+|  data103  = {{{disciple_of|}}}
+
+| data104   = {{#if:{{{disciples|}}}
+                 | {{Collapsible list
+                    | expand = {{{expand_disciples|}}}
+                    | title = Disciples
+                    | frame_style = border:none; padding:0;
+                    | list_style = text-align:center;
+                    | 1 = {{{disciples}}}
+                   }}
+                }}
+
+| data105  = {{#if:{{{students|}}}
+                 | {{Collapsible list
+                    | expand = {{{expand_students|}}}
+                    | title = Students
+                    | frame_style = border:none; padding:0;
+                    | list_style = text-align:center;
+                    | 1 = {{{students}}}
+                   }}
+                }}
+
+| label106 = {{#if:{{{initiated_label|}}}|{{{initiated_label|}}}|Initiated}}
+|  data106 = {{{initiated|}}}
+
+| data107   = {{#if:{{{influences|}}}
+                 | {{Collapsible list
+                    | expand = {{{expand_influences|}}}
+                    | title = Influenced&nbsp;by
+                    | frame_style = border:none; padding:0;
+                    | list_style = text-align:center;
+                    | 1 = {{{influences}}}
+                   }}
+                }}
+
+| data108   = {{#if:{{{influenced|}}}
+                 | {{Collapsible list
+                    | expand = {{{expand_influenced|}}}
+                    | title = Influenced
+                    | frame_style = border:none; padding:0;
+                    | list_style = text-align:center;
+                    | 1 = {{{influenced}}}
+                   }}
+                }}
+| header109 = {{#if:{{{nickname|}}}{{{allegiance|}}}{{{branch|}}}{{{serviceyears|}}}{{{Rank|}}}{{{unit|}}}{{{commands|}}}{{{battles|}}}{{{mawards|}}}{{{military_blank1|}}}|Military service}}
+
+| label110 = Nickname(s)
+|  data110 = {{{nickname|}}}
+
+| label111 = Allegiance
+|  data111 = {{{allegiance|}}}
+
+| label112 = Service/branch
+|  data112 = {{{branch|}}}
+
+| label113 = Years of service
+|  data113 = {{{serviceyears|}}}
+
+| label114 = Rank
+|  data114 = {{{Rank|{{{Rank|}}}}}}
+
+| label115 = Unit
+|  data115 = {{{unit|}}}
+
+| label116 = Commands
+|  data116 = {{{commands|}}}
+
+| label117 = Battles/wars
+|  data117 = {{{battles|}}}
+
+| label118 = {{#if:{{{awards|}}}|Military awards|Awards}}
+|  data118 = {{{mawards|}}}
+
+| label119 = {{{military_blank1}}}
+|  data119 = {{{military_data1|}}}
+
+| label120 = {{{military_blank2}}}
+|  data120 = {{{military_data2|}}}
+
+| label121 = {{{military_blank3}}}
+|  data121 = {{{military_data3|}}}
+
+| label122 = {{{military_blank4}}}
+|  data122 = {{{military_data4|}}}
+
+| label123 = {{{military_blank5}}}
+|  data123 = {{{military_data5|}}}
+
+|  data124 = {{{module1|}}}
+|  data125 = {{{module2|}}}
+|  data126 = {{{module3|}}}
+|  data127 = {{{module4|}}}
+|  data128 = {{{module5|}}}
+
+| label129 = Website
+|  data129 = {{{website|}}}
+
+| belowstyle = text-align:left; border-top:1px #aaa solid;
+
+| below   = {{{footnotes|}}}
+
+}}{{#if:{{{dharma_names|}}}{{{dharma_name|}}}{{{dharma name|}}}{{{monastic_name|}}}{{{monastic name|}}}{{{posthumous_name|}}}{{{posthumous name|}}}{{{pen_name|}}}{{{pen name|}}}|}}<includeonly>{{#ifeq:{{{child|{{{embed|}}}}}}|yes||{{Wikidata image|1={{{image|}}}|2={{{nocat_wdimage|}}}}}}}</includeonly>{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox religious biography]] with unknown parameter "_VALUE_"|ignoreblank=y| alias | Allegiance | alma_mater | alt | awards | Awards | background | Battles/wars | birth_date | birth_name | birth_place | caption | child | children | church | churches | citizenship | Commands | consecration | creed | cremation_place | death_cause | death_date | death_place | denomination | dharma name | dharma_name | dharma_names | disciples | disciple_of | dynasty | education | embed | era | father | flourished | footnotes | founder | free_label | free_text | guru | home_town | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | honorific-prefix | honorific-suffix | honors | honours | image | image_size | image_upright | influenced | influences | initiated | initiated_label | initiation | initiation_date | initiation_date2 | initiation_name | initiation_name2 | initiation_place | initiation_place2 | initiation_Rank | initiation_Rank2 | initiator | initiator2 | institute | jurisprudence | known_for | lineage | literary_works | location | Maddhab | Madh'hab | main_interests | mawards | module | module0 | module1 | module2 | module3 | module4 | module5 | monastic name | monastic_name | mother | movement | name | nationality | native name | native name lang | native_name | native_name_lang | Nickname(s) | nocat_wdimage | notability | notable_ideas | notable_works | occupation | office1 | office2 | office3 | office4 | official_name | order | ordination | other name | other_name | other_names | parents | partner | party | pen name | pen_name | period | Period | philosophy | post | post-nominals | posthumous name | posthumous_name | pre-nominals | predecessor | Predecessor | predecessor1 | predecessor2 | predecessor3 | predecessor4 | present post | present_post | previous post | previous_post | profession | Rank | Rank | reason | Reason | region | reincarnation of | reincarnation_of | relations | relatives | religion | resting place | resting place coordinates | resting_place | resting_place_coordinates | school | school_tradition | sect | signature | signature_alt | spouse | students | subsect | Successor | successor | successor1 | successor2 | successor3 | successor4 | Service/branch | Sufi_order | Tariqa | teacher | teachers | temple | term_end1 | term_end2 | term_end3 | term_end4 | term_start1 | term_start2 | term_start3 | term_start4 | term1 | term2 | term3 | term4 | title | Title | Unit | website | works | Years of service}}{{#if:{{{religion|}}}||{{main other|}} }}{{compare|local={{{image|}}}}}<noinclude>
+	
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+[[Category:Independently git synced pages]][[Category:Pages using religious biography with multiple nickname parameters]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox religious biography with unsupported  parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox religious biography without religion parameter]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,37 @@
+{{#ifeq:{{lc:{{{embed}}}}}|yes|{{main other|}}<hr />{{#ifeq:{{yesno-yes|{{{child_header|}}}}}|yes|'''Theology career'''}}}}{{#invoke:Template wrapper|wrap|_template=Infobox person
+| _exclude = child_header,embed,child,religion,denomination,ordination,ordained_by,era,language,tradition_movement,school_tradition,main_interests,notable_ideas
+| _alias-map = titles:title,period:years_active,notableworks:notable_works,signature type:signature_type,module:module2,module2:module3
+| template_name = infobox theologian
+| child                     = {{lc:{{{embed}}}}}
+| name                      = <includeonly>{{PAGENAMEBASE}}</includeonly>
+| module                    = {{#if:{{{ordination|}}}{{{religion|}}}{{{denomination|}}}|{{infobox|child=yes
+| label1 = Religion
+| data1 = {{{religion|}}}
+| label2 = Denomination
+| data2 = {{{denomination|}}}
+| label3 = Ordination
+| data3 = {{br separated entries| {{{ordination|}}} | {{#if:{{{ordained_by|}}}|by&nbsp;{{{ordained_by|}}}}} }}
+}}}}
+| module2                   = {{#if:{{{era|}}}{{{language|}}}{{{tradition_movement|}}}{{{school_tradition|}}}{{{main_interests|}}}{{{notable_ideas|}}}|
+{{infobox theological work
+| era                = {{{era|}}}
+| language           = {{{language|}}}
+| tradition_movement = {{if empty|{{{tradition_movement|}}}|{{{school_tradition|}}}}}
+| main_interests     = {{{main_interests|}}}
+| notable_ideas      = {{{notable_ideas|}}}
+}}}}
+}}{{#invoke:Check for conflicting parameters|check
+| template = [[Template:Infobox theologian]]
+| cat = {{main other|Category:Pages using infobox theologian with conflicting parameters}}
+| titles;title
+| period;years_active
+| noteableworks:notable_works
+| signature type:signature_type
+| module2;module3}}<noinclude>{{documentation}}
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Pages using infobox theologian with embed equal yes]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+</noinclude>

@@ -1,0 +1,55 @@
+{{#switch: {{lc:{{{1|}}}}}
+| akan          = background-color: #FFD700;
+| albanian      = background-color: #92ffde;
+| arabian       = background-color: #CDC8B8;
+| australian | Australian = background-color: #eba9ee;
+| aztec         = background-color: #00A86B; color: #FFFFFF;
+| bantu         = background-color: #bdfdfb;
+| canaanite     = background-color: #800080; color: #FFFFFF;
+| chinese       = background-color: #C04851; color: #FFFFFF;
+| celtic        = background-color: #CE8946
+| eblaite       = background-color: #008113; color: #FFFFFF;
+| edoc          = background-color: #93C572;
+| egyptian      = background-color: #DECD87;
+| elamite       = background-color: #159E4F; color: #FFFFFF;
+| etruscan      = background-color: #F7E3CD;
+| greek         = background-color: #CEF2E0;
+| hindu         = background-color: #FFC569;
+| hittite       = background-color: #021AF2; color: #FFFFFF;
+| hurrian       = background-color: #4B539C; color: #FFFFFF;
+| igbo          = background-color: #ACE1AF;
+| indo-european |indo european = background-color: #006400; color: #FFFFFF;
+| irish         = background-color: #90DB90;
+| jain          = background-color: #F5DEB3;
+| japanese | shinto            = background-color: #A12F25; color: #FFFFFF;
+| kongo         = background-color: #D6ACE3;
+| mayan | maya                 = background-color: #50C578; color: #FFFFFF;
+| meitei        = background-color: #330055; color: #f0facf;
+| mesopotamian  = background-color: #228B22; color: #FFFFFF;
+| muisca        = background-color: #FFD500;
+| norse         = background-color: #D6DBBE;
+| nubian        = background-color: #F0E4AE;
+| phillippine   = background-color: #F6E396;
+| polynesian | hawaiian        = background-color: #AFEEEE;
+| roman         = background-color: #F0ACAC;
+| slavic        = background-color: #CD0000; color: #FFFFFF;
+| sogdian       = background-color: #326DA8
+| turkic        = background-color: #00ABC2; color: #FFFFFF;
+| ugaritic      = background-color: #00817D; color: #FFFFFF;
+| welsh         = background-color: #FF0000;
+| yoruba        = background-color: #93C572;
+}}<noinclude>
+{{documentation|content=
+This sub-template is used to determine the section coloring in {{t|Infobox deity}}.
+
+A list of the colors can be found in the corresponding [[Template:Infobox deity/doc|documentation]].
+
+[[Category:Color templates]]
+}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

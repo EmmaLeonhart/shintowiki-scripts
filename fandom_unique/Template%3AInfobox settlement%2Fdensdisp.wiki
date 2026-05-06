@@ -1,0 +1,76 @@
+<includeonly>{{#if:
+   {{#iferror:{{#expr:-{{formatnum:{{{/km2}}}|R}}}}
+     |{{#iferror:{{#expr:-{{formatnum:{{{/sqmi}}}|R}}}}
+        |{{#switch:auto
+           |{{{/km2}}}|{{{/sqmi}}}={{#iferror:{{#expr:-{{formatnum:{{{pop}}}|R}}}}
+                   ||{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{ha|}}}|R}}}}}}
+                              +{{#iferror:{{#expr:{{formatnum:{{{km2|}}}|R}}}}}}
+                              +{{#iferror:{{#expr:{{formatnum:{{{acre|}}}|R}}}}}}
+                              +{{#iferror:{{#expr:{{formatnum:{{{sqmi|}}}|R}}}}}}
+                              +{{#iferror:{{#expr:{{formatnum:{{{dunam|}}}|R}}}}}}
+                              +0
+                              >0
+                       |1}}
+                 }}
+         }}
+        |1
+      }}
+     |1
+    }}
+|{{infobox settlement/{{infobox settlement/pref|{{{pref}}}|{{{name}}}}}
+   |metv={{#iferror:{{#expr:-{{formatnum:{{{/km2}}}|R}}}}
+           |{{#iferror:{{#expr:-{{formatnum:{{{/sqmi}}}|R}}}}
+              |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{km2|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{km2}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{km2}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{ha|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:100*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{ha}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:100*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{ha}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{dunam|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:1000*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{dunam}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:1000*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{dunam}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{sqmi|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{sqmi}}}|R}}/2.589988110336}}|{{#expr:1-{{Order of magnitude|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{sqmi}}}|R}}/2.589988110336}}}}}}}}
+                 |{{round|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{acre}}}|R}}/0.004046856422}}|{{#expr:1-{{Order of magnitude|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{acre}}}|R}}/0.004046856422}}}}}}}}
+               }}}}}}}}
+              |{{round
+                 |{{#expr:{{formatnum:{{{/sqmi}}}|R}}/2.589988110336}}
+                 |{{max
+                    |{{precision|{{formatnum:{{{/sqmi}}}|R}}}}
+                    |-{{Order of magnitude|{{#expr:{{formatnum:{{{/sqmi}}}|R}}/2.589988110336}}}}
+                  }}
+               }}
+            }}
+           |{{{/km2}}}
+         }}
+   |metu=km<sup>2</sup>
+   |impv={{#iferror:{{#expr:-{{formatnum:{{{/sqmi}}}|R}}}}
+           |{{#iferror:{{#expr:-{{formatnum:{{{/km2}}}|R}}}}
+              |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{sqmi|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{sqmi}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{sqmi}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{acre|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:640*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{acre}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:640*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{acre}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{km2|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:2.589988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{km2}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:2.589988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{km2}}}|R}}}}}}}}}}
+                 |{{#ifexpr:{{#iferror:{{#expr:{{formatnum:{{{ha|}}}|R}}}}}}+0>0
+                 |{{round|{{#expr:258.9988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{ha}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:258.9988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{ha}}}|R}}}}}}}}}}
+                 |{{round|{{#expr:2589.988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{dunam}}}|R}}}}|{{#expr:1-{{Order of magnitude|{{#expr:2589.988110336*{{formatnum:{{{pop}}}|R}}/{{formatnum:{{{dunam}}}|R}}}}}}}}}}
+               }}}}}}}}
+              |{{round
+                 |{{#expr:{{formatnum:{{{/km2}}}|R}}*2.589988110336}}
+                 |{{max
+                    |{{#expr:{{precision|{{formatnum:{{{/km2}}}|R}}}}-1}}
+                    |-{{Order of magnitude|{{#expr:{{formatnum:{{{/km2}}}|R}}*2.589988110336}}}}
+                  }}
+               }}
+            }}
+           |{{{/sqmi}}}
+         }}
+   |impu=sq&nbsp;mi
+   |s=/
+  }}
+}}</includeonly><noinclude>
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

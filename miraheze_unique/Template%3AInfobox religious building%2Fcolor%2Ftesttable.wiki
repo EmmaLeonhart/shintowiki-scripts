@@ -1,0 +1,248 @@
+{{align|right|{{nowrap|1=<small>This table:</small> {{view||edit|template=Template:Infobox religious building/color/testtable}}}}}}{{hatnote|1=Complete list from [[Template:Infobox religious building/color]] {{as of|2022-10-19|lc=yes}}}}
+{| class="wikitable sortable mw-collapsible {{{state|mw-uncollapsed}}}" style="width:75%"
+|+
+! colspan="2" | Religious affiliation and color style
+|-
+! {{para|religious_affiliation}} input
+! color style
+|-
+| &lt;blank&gt; || {{Infobox religious building/color/test|1=}}
+|-
+| <nowiki>[[Abkhazian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Abkhazian Orthodox Church]]}}
+|-
+| <nowiki>[[Armenian Apostolic church]]</nowiki> || {{Infobox religious building/color/test|1=[[Armenian Apostolic church]]}}
+|-
+| <nowiki>[[Armenian Apostolic Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Armenian Apostolic Church]]}}
+|-
+| <nowiki>[[AAC]]</nowiki> || {{Infobox religious building/color/test|1=[[AAC]]}}
+|-
+| <nowiki>[[Anglican]]</nowiki> || {{Infobox religious building/color/test|1=[[Anglican]]}}
+|-
+| <nowiki>[[Anglicanism|Anglican]]</nowiki> || {{Infobox religious building/color/test|1=[[Anglicanism|Anglican]]}}
+|-
+| <nowiki>[[Anglicanism]]</nowiki> || {{Infobox religious building/color/test|1=[[Anglicanism]]}}
+|-
+| <nowiki>[[Episcopal Church in the United States of America]]</nowiki> || {{Infobox religious building/color/test|1=[[Episcopal Church in the United States of America]]}}
+|-
+| <nowiki>[[Episcopal Church in the United States of America|ECUSA]]</nowiki> || {{Infobox religious building/color/test|1=[[Episcopal Church in the United States of America|ECUSA]]}}
+|-
+| <nowiki>[[Episcopal Church (United States)]]</nowiki> || {{Infobox religious building/color/test|1=[[Episcopal Church (United States)]]}}
+|-
+| <nowiki>[[Episcopal Church (United States)|Episcopal Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Episcopal Church (United States)|Episcopal Church]]}}
+|-
+| <nowiki>[[Church of England]]</nowiki> || {{Infobox religious building/color/test|1=[[Church of England]]}}
+|-
+| <nowiki>[[Coptic Orthodox Church of Alexandria|Coptic Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Coptic Orthodox Church of Alexandria|Coptic Orthodox Church]]}}
+|-
+| <nowiki>[[Coptic Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Coptic Orthodox Church]]}}
+|-
+| <nowiki>[[Coptic]]</nowiki> || {{Infobox religious building/color/test|1=[[Coptic]]}}
+|-
+| <nowiki>[[Buddhist]]</nowiki> || {{Infobox religious building/color/test|1=[[Buddhist]]}}
+|-
+| <nowiki>[[Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Buddhism]]}}
+|-
+| <nowiki>[[Chan Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Chan Buddhism]]}}
+|-
+| <nowiki>[[Theravada]]</nowiki> || {{Infobox religious building/color/test|1=[[Theravada]]}}
+|-
+| <nowiki>[[Theravada]] [[Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Theravada]] [[Buddhism]]}}
+|-
+| <nowiki>[[Mahayana Buddhist]]</nowiki> || {{Infobox religious building/color/test|1=[[Mahayana Buddhist]]}}
+|-
+| <nowiki>[[Mahayana Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Mahayana Buddhism]]}}
+|-
+| <nowiki>[[Mahayana]]</nowiki> || {{Infobox religious building/color/test|1=[[Mahayana]]}}
+|-
+| <nowiki>[[Shingon]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon]]}}
+|-
+| <nowiki>[[Shingon-shu Buzan-ha|Shingon Buzan Sect]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon-shu Buzan-ha|Shingon Buzan Sect]]}}
+|-
+| <nowiki>[[Shingon Buddhism|Shingon]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon Buddhism|Shingon]]}}
+|-
+| <nowiki>[[Shingon Risshu|Shingon Ritsu]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon Risshu|Shingon Ritsu]]}}
+|-
+| <nowiki>[[Shingon|Kōyasan Shingon]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon|Kōyasan Shingon]]}}
+|-
+| <nowiki>[[Sōtō]]</nowiki> || {{Infobox religious building/color/test|1=[[Sōtō]]}}
+|-
+| <nowiki>[[Tendai]]</nowiki> || {{Infobox religious building/color/test|1=[[Tendai]]}}
+|-
+| <nowiki>[[Thai Forest Tradition]]</nowiki> || {{Infobox religious building/color/test|1=[[Thai Forest Tradition]]}}
+|-
+| <nowiki>[[Shingon Buddhism|Shingon]] [[Shingon-shu Buzan-ha|Buzan Sect]]</nowiki> || {{Infobox religious building/color/test|1=[[Shingon Buddhism|Shingon]] [[Shingon-shu Buzan-ha|Buzan Sect]]}}
+|-
+| <nowiki>[[Hossō]]</nowiki> || {{Infobox religious building/color/test|1=[[Hossō]]}}
+|-
+| <nowiki>[[Jōdo-shū]]</nowiki> || {{Infobox religious building/color/test|1=[[Jōdo-shū]]}}
+|-
+| <nowiki>[Jōdo Shinshū]]</nowiki> || {{Infobox religious building/color/test|1=[[Jōdo Shinshū]]}}
+|-
+| <nowiki>[[Jogye Order]]</nowiki> || {{Infobox religious building/color/test|1=[[Jogye Order]]}}
+|-
+| <nowiki>[[Jogye Order]] of Korean Buddhism</nowiki> || {{Infobox religious building/color/test|1=[[Jogye Order]] of Korean Buddhism}}
+|-
+| <nowiki>[[Zen]]</nowiki> || {{Infobox religious building/color/test|1=[[Zen]]}}
+|-
+| <nowiki>[[Zen Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Zen Buddhism]]}}
+|-
+| <nowiki>[[Tibetan Buddhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Tibetan Buddhism]]}}
+|-
+| <nowiki>[[Hinduism]], [[Ecumenism]]</nowiki> || {{Infobox religious building/color/test|1=[[Hinduism]]}}
+|-
+| <nowiki>[[Hindu]]</nowiki> || {{Infobox religious building/color/test|1=[[Hindu]]}}
+|-
+| <nowiki>[[Hinduism]]</nowiki> || {{Infobox religious building/color/test|1=[[Hinduism]]}}
+|-
+| <nowiki>[[Islam]]</nowiki> || {{Infobox religious building/color/test|1=[[Islam]]}}
+|-
+| <nowiki>[[Jainism]]</nowiki> || {{Infobox religious building/color/test|1=[[Jainism]]}}
+|-
+| <nowiki>[[Haredi Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Haredi Judaism]]}}
+|-
+| <nowiki>[[Hasidic Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Hasidic Judaism]]}}
+|-
+| <nowiki>[[Orthodox Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Orthodox Judaism]]}}
+|-
+| <nowiki>[[Modern Orthodox Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Modern Orthodox Judaism]]}}
+|-
+| <nowiki>[[Conservative Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Conservative Judaism]]}}
+|-
+| <nowiki>[[Neolog Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Neolog Judaism]]}}
+|-
+| <nowiki>[[Reconstructionist Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Reconstructionist Judaism]]}}
+|-
+| <nowiki>[[Reform Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Reform Judaism]]}}
+|-
+| <nowiki>[[Judaism]]</nowiki> || {{Infobox religious building/color/test|1=[[Judaism]]}}
+|-
+| <nowiki>[[Romanian Church United with Rome, Greek-Catholic|Romanian Greek Catholic Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Romanian Church United with Rome, Greek-Catholic|Romanian Greek Catholic Church]]}}
+|-
+| <nowiki>[[Romanian Greek Catholic Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Romanian Greek Catholic Church]]}}
+|-
+| <nowiki>[[Roman Catholic Church|Roman Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Roman Catholic Church|Roman Catholic]]}}
+|-
+| <nowiki>[[Roman Catholicism|Roman Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Roman Catholicism|Roman Catholic]]}}
+|-
+| <nowiki>[[Roman Catholic Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Roman Catholic Church]]}}
+|-
+| <nowiki>[[Roman Catholicism]]</nowiki> || {{Infobox religious building/color/test|1=[[Roman Catholicism]]}}
+|-
+| <nowiki>[[Roman Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Roman Catholic]]}}
+|-
+| <nowiki>[[Catholic Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Catholic Church]]}}
+|-
+| <nowiki>[[Catholic Church|Roman Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Catholic Church|Roman Catholic]]}}
+|-
+| <nowiki>[[Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Catholic]]}}
+|-
+| <nowiki>[[Ahmadiyya]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahmadiyya]]}}
+|-
+| <nowiki>[[Ahmadi]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahmadi]]}}
+|-
+| <nowiki>[[Ahmadiyya Islam]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahmadiyya Islam]]}}
+|-
+| <nowiki>[[Ahmadiyya|Ahmadi]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahmadiyya|Ahmadi]]}}
+|-
+| <nowiki>[[Shia Islam|Shia]]</nowiki> || {{Infobox religious building/color/test|1=[[Shia Islam|Shia]]}}
+|-
+| <nowiki>[[Shia Islam|Shia (Twelver)]]</nowiki> || {{Infobox religious building/color/test|1=[[Shia Islam|Shia (Twelver)]]}}
+|-
+| <nowiki>[[Shia Islam]]</nowiki> || {{Infobox religious building/color/test|1=[[Shia Islam]]}}
+|-
+| <nowiki>[[Shia]]</nowiki> || {{Infobox religious building/color/test|1=[[Shia]]}}
+|-
+| <nowiki>[[Ahl al-Hadith]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahl al-Hadith]]}}
+|-
+| <nowiki>[[Ahle Hadith]]</nowiki> || {{Infobox religious building/color/test|1=[[Ahle Hadith]]}}
+|-
+| <nowiki>[[Barelvi]]</nowiki> || {{Infobox religious building/color/test|1=[[Barelvi]]}}
+|-
+| <nowiki>[[Deobandi]]</nowiki> || {{Infobox religious building/color/test|1=[[Deobandi]]}}
+|-
+| <nowiki>[[Hanafi]]</nowiki> || {{Infobox religious building/color/test|1=[[Hanafi]]}}
+|-
+| <nowiki>[[Shafi'i]]</nowiki> || {{Infobox religious building/color/test|1=[[Shafi'i]]}}
+|-
+| <nowiki>[[Shafi'i|Sunni (Shafi'i)]]</nowiki> || {{Infobox religious building/color/test|1=[[Shafi'i|Sunni (Shafi'i)]]}}
+|-
+| <nowiki>[[Sunni Islam|Sunni]]</nowiki> || {{Infobox religious building/color/test|1=[[Sunni Islam|Sunni]]}}
+|-
+| <nowiki>[[Sunni Islam]]</nowiki> || {{Infobox religious building/color/test|1=[[Sunni Islam]]}}
+|-
+| <nowiki>[[Sunni]]</nowiki> || {{Infobox religious building/color/test|1=[[Sunni]]}}
+|-
+| <nowiki>[[Eastern Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Eastern Orthodox]]}}
+|-
+| <nowiki>[[Georgian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Georgian Orthodox]]}}
+|-
+| <nowiki>[[Georgian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Georgian Orthodox Church]]}}
+|-
+| <nowiki>[[Georgian Orthodox Church|Georgian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Georgian Orthodox Church|Georgian Orthodox]]}}
+|-
+| <nowiki>[[Greek Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Greek Orthodox Church]]}}
+|-
+| <nowiki>[[Russian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Russian Orthodox]]}}
+|-
+| <nowiki>[[Russian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Russian Orthodox Church]]}}
+|-
+| <nowiki>[[Belarusian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Belarusian Orthodox Church]]}}
+|-
+| <nowiki>[[Belarusian Exarchate]]</nowiki> || {{Infobox religious building/color/test|1=[[Belarusian Exarchate]]}}
+|-
+| <nowiki>[[Bulgarian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Bulgarian Orthodox Church]]}}
+|-
+| <nowiki>[[Bulgarian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Bulgarian Orthodox]]}}
+|-
+| <nowiki>[[Czech and Slovak Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Czech and Slovak Orthodox Church]]}}
+|-
+| <nowiki>[[Czech and Slovak Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Czech and Slovak Orthodox]]}}
+|-
+| <nowiki>[[Romanian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Romanian Orthodox Church]]}}
+|-
+| <nowiki>[[Romanian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Romanian Orthodox]]}}
+|-
+| <nowiki>[[Estonian Apostolic Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Estonian Apostolic Orthodox Church]]}}
+|-
+| <nowiki>[[Serbian Orthodox Church]]</nowiki> || {{Infobox religious building/color/test|1=[[Serbian Orthodox Church]]}}
+|-
+| <nowiki>[[Serbian Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Serbian Orthodox]]}}
+|-
+| <nowiki>[[Syriac Orthodox]]</nowiki> || {{Infobox religious building/color/test|1=[[Syriac Orthodox]]}}
+|-
+| <nowiki>[[Syriac Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Syriac Catholic]]}}
+|-
+| <nowiki>[[Maronite Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Maronite Catholic]]}}
+|-
+| <nowiki>[[Chaldean Catholic]]</nowiki> || {{Infobox religious building/color/test|1=[[Chaldean Catholic]]}}
+|-
+| <nowiki>[[Assyrian Church of the East]]</nowiki> || {{Infobox religious building/color/test|1=[[Assyrian Church of the East]]}}
+|-
+| <nowiki>[[Baháʼí]]</nowiki> || {{Infobox religious building/color/test|1=[[Baháʼí]]}}
+|-
+| <nowiki>[[Bahá'í]]</nowiki> || {{Infobox religious building/color/test|1=[[Bahá'í]]}}
+|-
+| <nowiki>[[Baháʼí Faith|Baháʼí]]</nowiki> || {{Infobox religious building/color/test|1=[[Baháʼí Faith|Baháʼí]]}}
+|-
+| <nowiki>[[Bahá'í Faith|Bahá'í]]</nowiki> || {{Infobox religious building/color/test|1=[[Bahá'í Faith|Bahá'í]]}}
+|-
+| <nowiki>[[Bahá'í Faith|Baháʼí]]</nowiki> || {{Infobox religious building/color/test|1=[[Bahá'í Faith|Baháʼí]]}}
+|-
+| <nowiki>[[Baháʼí Faith]]</nowiki> || {{Infobox religious building/color/test|1=[[Baháʼí Faith]]}}
+|-
+| <nowiki>[[Bahá'í Faith]]</nowiki> || {{Infobox religious building/color/test|1=[[Bahá'í Faith]]}}
+|-
+| <nowiki>[[Sikhism]]</nowiki> || {{Infobox religious building/color/test|1=[[Sikhism]]}}
+|-
+| <nowiki>[[Shinto]]</nowiki> || {{Infobox religious building/color/test|1=[[Shinto]]}}
+|-
+| <nowiki>[[Taoism]]</nowiki> || {{Infobox religious building/color/test|1=[[Taoism]]}}
+|-
+| <nowiki>anything else</nowiki> || {{Infobox religious building/color/test|1=anything else}}
+|}
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

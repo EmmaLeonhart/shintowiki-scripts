@@ -1,0 +1,1528 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:infobox|Module:Infobox multi-lingual name}}
+
+==Usage==
+Use this template to show a Chinese name, word, term or phrase in various renderings.  
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox Chinese
+| ibox-order        = 
+| title             = 
+| float             = 
+| collapse          = 
+| pic               = 
+| piccap            = 
+| picsize           = 
+| picupright        = 
+| pictooltip        = 
+| pic2              = 
+| piccap2           = 
+| picsize2          = 
+| pic2tooltip       = 
+| headercolor       = 
+
+| name1             = 
+| t                 = 
+| s                 = 
+| c                 = 
+| l                 = 
+| tp                = 
+| p                 = 
+| w                 = 
+| mi                = 
+| psp               = 
+| myr               = 
+| gr                = 
+| bpmf              = 
+| mps               = 
+| xej               = 
+| zh-dungan         = 
+| sic               = 
+| lj                = 
+| y                 = 
+| j                 = 
+| sl                = 
+| gd                = 
+| hk                = 
+| mo                = 
+| ci                = 
+| toi               = 
+| gan               = 
+| wuu               = 
+| hsn               = 
+| h                 = 
+| phfs              = 
+| poj               = 
+| tl                = 
+| bp                = 
+| buc               = 
+| hhbuc             = 
+| mblmc             =     
+| wgn               = 
+| ouji              = 
+| suz               = 
+| teo               = 
+| hain              =  
+| lizu              = 
+| mc                = 
+| emc               = 
+| lmc               = 
+| oc-b92            = 
+| oc-bs             = 
+| oc-zz             = 
+
+| altname           = 
+| c2                = 
+| t2                = 
+| s2                = 
+| l2                = 
+| tp2               = 
+| p2                = 
+| w2                = 
+| mi2               = 
+| psp2              = 
+| my2               = 
+| gr2               = 
+| mps2              = 
+| bpmf2             = 
+| xej2              = 
+| zh-dungan2        = 
+| sic2              = 
+| y2                = 
+| j2                = 
+| sl2               = 
+| gd2               = 
+| ci2               = 
+| toi2              = 
+| gan2              = 
+| wuu2              = 
+| hsn2              = 
+| h2                = 
+| phfs2             = 
+| poj2              = 
+| buc2              = 
+| hhbuc2            = 
+| mblmc2            =    
+| wgn2              = 
+| ouji2             = 
+| suz2              = 
+| teo2              = 
+| oc-bs2            = 
+| oc-zz2            = 
+
+| altname3          = 
+| c3                = 
+| t3                = 
+| s3                = 
+| l3                = 
+| tp3               = 
+| p3                = 
+| w3                = 
+| mi3               = 
+| psp3              = 
+| my3               = 
+| gr3               = 
+| mps3              = 
+| bpmf3             = 
+| xej3              = 
+| zh-dungan3        = 
+| sic3              = 
+| y3                = 
+| j3                = 
+| sl3               = 
+| gd3               = 
+| ci3               = 
+| toi3              = 
+| gan3              = 
+| wuu3              = 
+| hsn3              = 
+| h3                = 
+| phfs3             = 
+| poj3              = 
+| buc3              = 
+| hhbuc3            = 
+| mblmc3            =    
+| wng3              = 
+| ouji3             = 
+| suz3              = 
+| teo3              = 
+| oc-bs3            = 
+| oc-zz3            = 
+
+| altname4          = 
+| c4                = 
+| t4                = 
+| s4                = 
+| l4                = 
+| tp4               = 
+| p4                = 
+| w4                = 
+| mi4               = 
+| psp4              = 
+| my4               = 
+| gr4               = 
+| mps4              = 
+| bpmf4             = 
+| xej4              = 
+| zh-dungan4        = 
+| sic4              = 
+| y4                = 
+| j4                = 
+| sl4               = 
+| gd4               = 
+| ci4               = 
+| toi4              = 
+| gan4              = 
+| wuu4              = 
+| hsn4              = 
+| h4                = 
+| phfs4             = 
+| poj4              = 
+| buc4              = 
+| hhbuc4            = 
+| mblmc4            =    
+| wng4              = 
+| ouji4             = 
+| suz4              = 
+| teo4              = 
+| oc-bs4            = 
+| oc-zz4            = 
+
+| hangul            = 
+| hanja             = 
+| rr                = 
+| mr                = 
+| northkorea        = 
+| lk                = 
+| cnhangul          = 
+| cnhanja           = 
+| cnrr              = 
+| cnmr              = 
+| cnlk              = 
+| nkhangul          = 
+| nkhanja           = 
+| nkmr              = 
+| nkrr              = 
+| nklk              = 
+| skhangul          = 
+| skhanja           = 
+| skrr              = 
+| skmr              = 
+| sklk              = 
+| kanji             = 
+| kyujitai          = 
+| shinjitai         = 
+| kana              = 
+| hiragana          = 
+| katakana          = 
+| romaji            = 
+| revhep            = 
+| tradhep           = 
+| kunrei            = 
+| nihon             = 
+| tgl               = 
+| ben               = 
+| asm               = 
+| nep               = 
+| pra               = 
+| hin               = 
+| san               = 
+| pli               = 
+| ind               = 
+| lao               = 
+| li                = 
+| khm               = 
+| ki                = 
+| msa               = 
+| mnc               = 
+| mnc_rom           = 
+| mnc_a             = 
+| mnc_v             = 
+| mon               = 
+| mong              = 
+| monr              = 
+| rus               = 
+| rusr              = 
+| tam               = 
+| tha               = 
+| rtgs              = 
+| tib               = 
+| wylie             = 
+| thdl              = 
+| zwpy              = 
+| lhasa             = 
+| uig               = 
+| lu                = 
+| uly               = 
+| uyy               = 
+| sgs               = 
+| usy               = 
+| uipa              = 
+| vie               = 
+| qn                = 
+| hn                = 
+| chuhan            = 
+| chunom            = 
+| lqn               = 
+| zha               = 
+| zha57             = 
+| sd                = 
+| dungan            = 
+| dungan-xej        = 
+| dungan-han        = 
+| dungan-latin      = 
+| my                = 
+| bi                = 
+| phagspa           = 
+| phagspa-latin     = 
+| tet                = 
+| por               = 
+| lang1_content     = 
+| lang1             = 
+| lang2_content     = 
+| lang2             = 
+| lang2_content     = 
+| lang3             = 
+| lang3_content     = 
+
+| lang11            = 
+| lang11_content    = 
+}}
+</syntaxhighlight>
+
+{{Infobox Chinese|pic=Mediawiki-logo.png|picsize=60px|piccap=In this sample, the template is using '''showflag=py''' with '''order=st'''.  Simplified Chinese is shown first in order. Pinyin and Yale are displayed outside of the alphabetized hide area.
+|t=Traditional text|s=Simplified text|l=Literal text|p=pinyin|y=yale|j=jyutping|gan=gan text|order=st|showflag=py}}
+
+'''Optional flags'''
+
+* child=yes: to embed this template inside another infobox ([[WP:IEmbed]]), usually in a <code>module</code> or <code>embedded</code> parameter of the parent infobox.  If this flag is set, the <code>title</code> parameter should be omitted.
+* order=st: By default Traditional Chinese comes first on display.  If this flag is called, Simplified Chinese will be displayed first.  This is for articles having to do with PRC, Singapore, Malaysia, or Simplified Chinese. Articles that are not strictly regarding the given examples (such as ROC) or can apply to both Traditional Chinese and Simplified Chinese are strongly suggested to not use this.
+* hide=no: By default all romanizations and transcriptions are hidden.  If this flag is called, all the transcriptions will be shown.
+
+===Optional showflag===
+By default no romanization will show outside of the hide area.  You can call this flag when using the template to have certain romanizations appear permanently in favor of certain regions.
+
+'''Mandarin'''
+* showflag=p: this will show '''pinyin''' outside of the hide area.
+* showflag=bpmf: this will show '''Bopomofo''' outside of the hide area.
+* showflag=xej: this will show '''Xiao'erjing''' outside of the hide area.
+* showflag=xejp: this will show '''Xiao'erjing''', then '''pinyin''' outside of the hide area.
+* showflag=wp: this will show '''Wade–Giles''', then '''pinyin''' outside of the hide area.
+
+'''Hakka'''
+* showflag=h: this will show '''Hakka''' outside of the hide area.
+
+'''Min'''
+* showflag=poj: this will show '''Hokkien poj''' outside of the hide area.
+* showflag=teo: this will show '''Teochew Peng'im''' outside of the hide area.
+* showflag=buc: this will show '''Fuzhou buc''' outside of the hide area.
+* showflag=lizu: this will show '''Leizhou Min''' outside of the hide area.
+* showflag=hain: this will show '''Hainanese Romanised''' outside of the hide area.
+
+'''Yue'''
+* showflag=y: this will show '''Yale''' outside of the hide area.
+* showflag=yj: this will show '''Yale''', then '''Jyutping''' outside of the hide area.
+* showflag=jy: this will show '''Jyutping''', then '''Yale''' outside of the hide area.
+* showflag=j: this will show '''Jyutping''' outside of the hide area.
+* showflag=py: this will show '''pinyin''', then '''Yale''' outside of the hide area.
+* showflag=pj: this will show '''pinyin''', then '''Jyutping''' outside of the hide area.
+* showflag=jyp: this will show '''Jyutping''', '''Yale''', then '''pinyin''' outside of the hide area.
+* showflag=jp: this will show '''Jyutping''', then '''pinyin''' outside of the hide area.
+* showflag=gdp: this will show '''Guangdong Romanization''', then '''pinyin''' outside of the hide area.
+* showflag=toip: this will show '''Taishanese''', then '''pinyin''' outside of the hide area.
+
+'''Wu'''
+* showflag=wuu: this will show '''Wu''' outside of the hide area.
+* showflag=pwuu: this will show '''pinyin''', then '''Wu''' outside of the hide area.
+* showflag=wgn: this will show '''Shanghainese''' outside of the hide area.
+
+'''Xiang'''
+* showflag=hsn: this will show '''Xiang''' outside of the hide area.
+* showflag=phsn: this will show '''pinyin''', then '''Xiang''' outside of the hide area.
+
+'''Gan'''
+* showflag=gan: this will show '''Gan''' outside of the hide area.
+
+'''Sichuanese Mandarin'''
+* showflag=psic: this will show '''pinyin''' then '''Sichuanese pinyin''' outside of the hide area.
+
+==Usage inside other infoboxes==
+Alternatively, subtemplates for each language can be used inside other templates. In each subtemplate, {{para|header|none}} can be used to hide the header reading "<var>Language</var> name".
+
+<syntaxhighlight lang="wikitext">
+{{Infobox
+...
+| data =
+{{Infobox Chinese/Korean
+| hangul            =  
+| hanja             =  
+| rr                =  
+| mr                =  
+| northkorea        =  
+| lk                =  
+}}
+{{Infobox Chinese/Japanese
+| kanji             =  
+| kyujitai          =  
+| shinjitai         =  
+| kana              =  
+| hiragana          =  
+| katakana          =  
+| romaji            =  
+| revhep            =  
+| tradhep           =  
+| kunrei            =  
+| nihon             =  
+| l                 =  
+}}
+{{Infobox Chinese/Russian
+| rus               =  
+| rusr              =  
+}}
+...
+}}
+</syntaxhighlight>
+
+which gives the following result:
+
+{{Infobox|title=Infobox|data1=
+{{Infobox Chinese/Korean
+  | korean_header     = {{#if: {{{koreanname|}}}|{{{koreanname}}}|Korean name}}
+  | hangul            = {{{hangul}}}
+  | hanja             = {{{hanja}}}
+  | rr                = {{{rr}}}
+  | mr                = {{{mr}}}
+  | northkorea        = {{#switch: {{{context|}}}|n|north|North|dprk|DPRK|nk=yes}}
+  | lk                = {{{lk}}}
+  }}
+{{Infobox Chinese/Japanese
+  | japanese_header   = {{#if: {{{japanesename|}}}|{{{japanesename}}}|Japanese name}}
+  | kanji             = {{{kanji}}}
+  | kyujitai          = {{{kyujitai}}}
+  | shinjitai         = {{{shinjitai}}}
+  | kana              = {{{kana}}}
+  | hiragana          = {{{hiragana}}}
+  | katakana          = {{{katakana}}}
+  | romaji            = {{{romaji}}}
+  | revhep            = {{{hepburn}}}
+  | tradhep           = {{{tradhep}}}
+  | kunrei            = {{{kunrei}}}
+  | nihon             = {{{nihon}}}
+  }}
+{{Infobox Chinese/Russian
+  | russian_header    = {{#if: {{{russianname|}}}|{{{russianname}}}|Russian name}}
+  | rus               = {{{cyrillic}}}
+  | rusr              = {{{romanization}}}
+  }}
+}}
+
+{{clear right}}
+
+==Using the collapse parameter==
+{{Infobox Chinese|collapse=yes|pic=Mediawiki-logo.png|picsize=60px|piccap=Put caption here|pic2=Mediawiki-logo.png|picsize2=60px|piccap2=Put caption here |c=c|t=t|s=s|l=l|p=p|tp=tp|w=w|psp=psp|my=my|gr=gr|mps=mps|bpmf=bpmf|xej=xej|zh-dungan=zh-dungan|j=j|y=y|ci=ci|toi=toi|gan=gan|wuu=wuu|hsn=hsn|h=h|poj=poj|buc=buc|hhbuc=hhbuc|mblmc=mblmc|wgn=wgn|ouji=ouji|teo=teo|hain=hain|lizu=lizu|altname=altname |c2=c2|t2=t2|s2=s2|l2=l2|p2=p2|tp2=tp2|w2=w2|psp2=psp2|my2=my2|gr2=gr2|mps2=mps2|bpmf2=bpmf2|xej2=xej2|zh-dungan2=zh-dungan2|j2=j2|ci2=ci2|y2=y2|toi2=toi2|gan2=gan2|wuu2=wuu2|hsn2=hsn2|h2=h2|poj2=poj2|buc2=buc2|hhbuc2=hhbuc2|mblmc2=mblmc2|wgn2=wgn2|ouji2=ouji2|teo2=teo2 |hangul=hangul|hanja=hanja|rr=rr|mr=mr|lk=lk|kanji=kanji|kyujitai=kyujitai|shinjitai=shinjitai|kana=kana|hiragana=hiragana|katakana=katakana |romaji=romaji|revhep=revhep|tradhep=tradhep|kunrei=kunrei|nihon=nihon|tgl=tgl|hin=hin|ind=ind|lao=lao|khm=khm|msa=msa|mnc=mnc|tet=tet|por=por|mon=mon|mong=mong|monr=monr|rus=rus|rusr=rusr|tam=tam|tha=tha|rtgs=rtgs|tib=tib|wylie=wylie|thdl=tdhl|zwpy=zwpy|lhasa=lhasa|uig=uig|uly=uly|uyy=uyy|usy=usy|uipa=uipa|vie=vie |qn=qn|chunom=chunom|hantu=hantu|zha=zha|dungan=dungan|dungan-xej=dungan-xej|dungan-han=dungan-han|dungan-latin=dungan-latin |bur=bur|bur_content=Burmese_language |lang2=lang2|lang2_content=lang2_content|lang3=lang3|lang3_content=lang3_content}}
+The collapse parameter allows abbreviated, expandable versions of this template.  At right is the same template as above, with ''collapse'' set to ''yes''.
+* collapse=yes      (collapsable template, initially in collapsed state)
+* collapse=no       (collapsable template, initially in expanded state)
+* if the parameter is omitted, the standard (non-collapsable) version is used.
+{{-}}
+
+==Subtemplates used by Infobox Chinese==
+* {{tl|Infobox Chinese/Header}}
+* {{tl|Infobox Chinese/Chinese}}
+* {{tl|Infobox Chinese/Tibetan}}
+* {{tl|Infobox Chinese/Dunganese}}
+* {{tl|Infobox Chinese/Vietnamese}}
+* {{tl|Infobox Chinese/Thai}}
+* {{tl|Infobox Chinese/Korean}}
+* {{tl|Infobox Chinese/Japanese}}
+* {{tl|Infobox Chinese/Blank}}
+* {{tl|Infobox Chinese/Uyghur}}
+* {{tl|Infobox Chinese/Manchu}}
+* {{tl|Infobox Chinese/Russian}}
+* {{tl|Infobox Chinese/Footer}}
+
+==Related templates==
+* [[Template:Infobox Tibetan-Chinese]]
+* [[Template:Infobox Korean name]]
+* [[Template:Infobox Chinese emperor]]
+
+== TemplateData ==
+{{collapse top|title=TemplateData}}
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "Floating box for the name of the article's subject in non-Roman writing systems",
+	"format": "block",
+	"params": {
+		"c": {
+			"label": "Name in Chinese",
+			"description": "Name in Chinese characters when traditional and simplified coincide",
+			"type": "line",
+			"suggested": true,
+			"example": "天下"
+		},
+		"t": {
+			"label": "Name in traditional characters",
+			"description": "Name in traditional Chinese characters",
+			"type": "line",
+			"suggested": true,
+			"example": "中國"
+		},
+		"s": {
+			"label": "Name in simplified characters",
+			"description": "Name in simplified Chinese characters",
+			"type": "line",
+			"suggested": true,
+			"example": "中国"
+		},
+		"p": {
+			"label": "Pinyin transcription",
+			"description": "Transcription in Hanyu Pinyin",
+			"type": "line",
+			"suggested": true,
+			"example": "Zhōngguó"
+		},
+		"tp": {
+			"label": "Tongyong pinyin",
+			"description": "Transcription in Tongyong Pinyin",
+			"type": "line",
+			"example": "Jhōngguó"
+		},
+		"l": {
+			"label": "Literal meaning",
+			"description": "Meaning of the name in English",
+			"type": "line",
+			"example": "Central kingdom"
+		},
+		"w": {
+			"label": "Wade-Giles",
+			"description": "Transcription in Wade-Giles",
+			"type": "line",
+			"example": "Chung1-kuo2"
+		},
+		"y": {
+			"label": "Yale Romanization (Cantonese)",
+			"description": "Transcription in Cantonese Yale Romanization",
+			"type": "line",
+			"example": "Jùnggwok"
+		},
+		"j": {
+			"label": "Jyutping",
+			"description": "Transcription in Jyutping (Cantonese)",
+			"type": "line",
+			"suggested": true,
+			"example": "zung1 gwok3"
+		},
+		"mi": {
+			"label": "Mandarin IPA",
+			"description": "International phonetic alphabet pronunciation of the name in Modern Standard Mandarin",
+			"type": "content",
+			"suggested": true,
+			"example": "{{IPAc-cmn|zh|ong|1|.|g|uo|2}}"
+		},
+		"ci": {
+			"label": "Cantonese IPA",
+			"description": "International phonetic alphabet pronunciation of the name in Standard Cantonese",
+			"type": "content",
+			"suggested": true,
+			"example": "{{IPAc-yue|z|ung|1|.|g|wok|3}}"
+		},
+		"poj": {
+			"label": "Peh-oe-ji",
+			"description": "Transcription in Peh-oe-ji, as in Hokkien",
+			"type": "line",
+			"example": "Tiong-kok"
+		},
+		"tl": {
+			"label": "Tâi-Lô (Taiwanese romanization)",
+			"description": "Transcription Tâi-Lô, as in Taiwan",
+			"type": "line",
+			"example": "Tiong-kok"
+		},
+		"lj": {
+			"label": "Nanjing Mandarin",
+			"description": "Transcription in Nanjing Mandarin",
+			"type": "line"
+		},
+		"wuu": {
+			"label": "Wu Romanization",
+			"description": "Transcription in Wu (e.g. Shanghainese)",
+			"type": "line",
+			"example": "tson koq (T1)"
+		},
+		"gan": {
+			"label": "Gan romanization",
+			"example": "Tung-koe̍t",
+			"type": "line",
+			"description": "Romanization of the name for Gan Chinese dialects"
+		},
+		"gr": {
+			"label": "Gwoyeu Romatzyh",
+			"example": "Jonggwo",
+			"type": "line",
+			"description": "Gwoyeu Romatzyh Mandarin romanization of the name"
+		},
+		"mps": {
+			"label": "Mandarin Phonetic Symbols",
+			"description": "Transcription of the name in Mandarin Phonetic Symbols",
+			"example": "Jūngguó",
+			"type": "line"
+		},
+		"xej": {
+			"label": "Xiao'erjiang arabicization",
+			"description": "Name in the Xiao'erjiang \"Children's script\" Arabic script",
+			"example": "ﺟْﻮﻗُﻮَع",
+			"type": "line"
+		},
+		"zh-dungan": {
+			"label": "Name in Dungan script",
+			"description": "Name in the Cyrillic script for the Dungan Mandarin dialect",
+			"example": "Җунгуй",
+			"type": "line"
+		},
+		"sic": {
+			"label": "Sichuanese Mandarin",
+			"description": "Transcription of the name into Sichuanese Mandarin",
+			"example": "Zong1 gwe2",
+			"type": "line"
+		},
+		"bpmf": {
+			"label": "Bopomofo (Zhuyin)",
+			"description": "Zhuyin phonetic pronunciation guide of the name",
+			"example": "ㄓㄜˋ ㄐㄧㄤ",
+			"type": "line"
+		},
+		"hsn": {
+			"label": "Xiang romanization",
+			"description": "Romanization of the name for Xiang Chinese",
+			"type": "line",
+			"example": "zhong1 gue6"
+		},
+		"h": {
+			"label": "Hakka Transliteration Scheme",
+			"description": "Romanization of the name for Hakka Chinese",
+			"type": "line",
+			"example": "zung´ gued`"
+		},
+		"phfs": {
+			"label": "Pha̍k-fa-sṳ Hakka romanization",
+			"description": "Pha̍k-fa-sṳ romanization of the name for Hakka Chinese",
+			"type": "line",
+			"example": "Chûng-koet"
+		},
+		"teo": {
+			"label": "Peng'im (Teochow)",
+			"description": "Peng'im romanization of the name for Teochow Min Nan",
+			"type": "line",
+			"example": "Diê⁵ziu¹ uê⁷"
+		},
+		"bp": {
+			"label": "Hokkien Bbánlám pìngyīm (Pumindian)",
+			"description": "Bbánlám pìngyīm romanization of the name for Hokkien",
+			"type": "line",
+			"example": "Bbánlám Hōng'ggián Pìngyīm Hōng'àn"
+		},
+		"buc": {
+			"label": "Bàng-uâ-cê Eastern Min Romanization",
+			"description": "Bàng-uâ-cê (BUC) Foochow Min Dong romanization of the name for Eastern Min dialects",
+			"type": "line",
+			"example": "Dṳ̆ng-guók"
+		},
+		"hhbuc": {
+			"label": "Hinghwa Romanization, Putian Min",
+			"description": "Pu-Xian Min Báⁿ-uā-ci̍ (BUC) transcription of the name",
+			"type": "line",
+			"example": "Báⁿ-uā-ci̍"
+		},
+		"mblmc": {
+			"label": "Northern Min Jian'ou romanization",
+			"description": "Kienning Colloquial Romanization (KCR/LMC) of the name",
+			"type": "line",
+			"example": "Dô̤ng-gŏ"
+		},
+		"psp": {
+			"label": "Postal romanization",
+			"description": "Chinese postal map romanization of the name",
+			"type": "line",
+			"example": "Peking"
+		},
+		"myr": {
+			"label": "Mandarin Yale Romanization",
+			"description": "Mandarin Yale romanization of the name",
+			"example": "Hwáyǔwén Nénglì Tsèyàn",
+			"type": "line"
+		},
+		"hide": {
+			"label": "Hide romanizations?",
+			"example": "no",
+			"type": "string"
+		},
+		"showflag": {
+			"label": "Show a romanization by default?",
+			"description": "Show a chosen transcription outside of collapsed box, even when other transcriptions are collapsed",
+			"type": "string",
+			"example": "poj"
+		},
+		"order": {
+			"label": "Display order",
+			"description": "If 'st', lists the name in simplified Chinese characters first. This is recommended for Malaysia, PRC, Singapore and Simplified Chinese characters-related articles since their adoption, and strongly recommended to not be used for other articles.",
+			"example": "st",
+			"type": "string",
+			"aliases": [
+				"first"
+			]
+		},
+		"child": {
+			"label": "Is this infobox a child of another?",
+			"description": "If 'yes', allows proper formatting as a nested infobox. In this case, omit the 'title' parameter.",
+			"example": "yes",
+			"type": "string"
+		},
+		"collapse": {
+			"label": "Collapse infobox?",
+			"description": "If 'yes', allows the infobox to collapse by default. If 'no', it will not.",
+			"example": "yes",
+			"type": "string"
+		},
+		"title": {
+			"label": "Infobox title",
+			"description": "Title of this infobox; defaults to the article title.",
+			"example": "Miles Kwok",
+			"type": "line"
+		},
+		"headercolor": {
+			"label": "Header color",
+			"description": "Color for the heading",
+			"type": "line",
+			"default": "#b0c4de"
+		},
+		"pic": {
+			"label": "Picture",
+			"description": "Picture for the infobox",
+			"type": "wiki-file-name"
+		},
+		"piccap": {
+			"label": "Picture caption",
+			"description": "A caption for the first picture",
+			"example": "\"Zhejiang\" in Chinese characters",
+			"type": "content"
+		},
+		"picsize": {
+			"label": "Picture size",
+			"description": "Size of the first picture",
+			"example": "260px",
+			"type": "line"
+		},
+		"pictooltip": {
+			"label": "Picture alt text",
+			"description": "Tooltip (alt text) for the first picture",
+			"type": "line"
+		},
+		"pic2": {
+			"label": "Second picture",
+			"description": "Second picture for the infobox",
+			"type": "wiki-file-name"
+		},
+		"piccap2": {
+			"label": "Second picture caption",
+			"description": "A caption for the second picture",
+			"example": "\"Zhejiang\" in Chinese characters",
+			"type": "content"
+		},
+		"picsize2": {
+			"label": "Second picture size",
+			"description": "Size of the second picture",
+			"example": "260px",
+			"type": "line"
+		},
+		"pic2tooltip": {
+			"label": "Second picture alt text",
+			"description": "Tooltip (alt text) for the second picture",
+			"type": "line"
+		},
+		"altname": {
+			"label": "First alternative name title",
+			"example": "[[Chinese name#Milk|milk name]]",
+			"type": "unbalanced-wikitext",
+			"suggested": true
+		},
+		"altname3": {
+			"label": "Second alternative name title",
+			"example": "[[Chinese name#School name|school name]]",
+			"type": "unbalanced-wikitext"
+		},
+		"altname4": {
+			"label": "Third alternative name title",
+			"example": "[[:en:Courtesy name|Courtesy name]]",
+			"type": "unbalanced-wikitext"
+		},
+		"altname5": {
+			"label": "Fourth alternative name title",
+			"example": "[[Chinese name#Milk|milk name]]",
+			"type": "unbalanced-wikitext"
+		},
+		"lang1": {
+			"label": "First other language",
+			"example": "[[:en:English language|English]]",
+			"type": "line"
+		},
+		"lang1_content": {
+			"label": "Name in first other language",
+			"example": "Andrew Ng",
+			"type": "line"
+		},
+		"lang2": {
+			"label": "Second other language",
+			"example": "[[:en:French language|French]]",
+			"type": "line"
+		},
+		"lang2_content": {
+			"label": "Name in second other language",
+			"example": "Andrew Ng",
+			"type": "line"
+		},
+		"hangul": {
+			"label": "Korean name in Korean characters",
+			"example": "발해",
+			"type": "line",
+			"description": "Korean name in the Korean alphabet, Hangul"
+		},
+		"hanja": {
+			"label": "Korean name in Hanja",
+			"example": "渤海",
+			"type": "line",
+			"description": "Korean name in Chinese characters used to write the Korean language, known as Hanja"
+		},
+		"rr": {
+			"label": "Korean revised romanization",
+			"example": "Balhae",
+			"type": "line",
+			"description": "Revised Romanization of the Korean language name"
+		},
+		"mr": {
+			"label": "Korean McCune–Reischauer romanization",
+			"example": "Parhae",
+			"type": "line",
+			"description": "McCune–Reischauer romanization of the Korean name (as used in North Korea)"
+		},
+		"northkorea": {
+			"label": "North Korea specific name?",
+			"description": "if yes, Hangul becomes Chosŏn'gŭl and Hanja becomes Hancha; in the Korean name group",
+			"example": "yes",
+			"type": "string"
+		},
+		"lk": {
+			"label": "Literal meaning of Korean name",
+			"example": "Bohai bay",
+			"type": "line",
+			"description": "The meaning in English of the Korean name"
+		},
+		"kanji": {
+			"label": "Japanese name in Kanji",
+			"example": "日本国",
+			"type": "line",
+			"description": "Japanese name in Chinese characters used to write the Japanese language, known as Kanji"
+		},
+		"kyujitai": {
+			"label": "Traditional Japanese Kanji",
+			"description": "Traditional (Kyujitai) Kanji to write the name in Japanese",
+			"example": "日本國",
+			"type": "line"
+		},
+		"shinjitai": {
+			"label": "Japanese simplified Kanji",
+			"description": "Japanese name in Shinjitai, simplified Kanji characters",
+			"type": "line",
+			"example": "大日本帝国"
+		},
+		"kana": {
+			"label": "Japanese kana",
+			"type": "line"
+		},
+		"hiragana": {
+			"label": "Japanese hiragana",
+			"description": "Japanese name in the hiragana phonetic script",
+			"example": "にっぽんこ",
+			"type": "line"
+		},
+		"katakana": {
+			"label": "Japanese katakana",
+			"description": "Japanese name in the katakana phonetic script",
+			"example": "ニホンコク",
+			"type": "line"
+		},
+		"romaji": {
+			"label": "Japanese Rōmaji romanization",
+			"description": "Rōmaji romanization of the Japanese name",
+			"example": "Nihon-koku",
+			"type": "line"
+		},
+		"hepburn": {
+			"label": "Japanese Hepburn romanization",
+			"aliases": [
+				"revhep"
+			],
+			"description": "Revised Hepburn romanization of the Japanese name",
+			"example": "Nippon-koku",
+			"type": "line"
+		},
+		"tradhep": {
+			"label": "Japanese traditional Hepburn romanization",
+			"type": "line"
+		},
+		"kunrei": {
+			"type": "line",
+			"label": "Japanese Kunrei-shiki romanisation",
+			"description": "Kunrei-shiki romanisation of the Japanese name"
+		},
+		"nihon": {
+			"type": "line",
+			"label": "Japanese Nihon-shiki romanisation",
+			"description": "Nihon-shiki romanisation of the Japanese name"
+		},
+		"rus": {
+			"label": "Russian name",
+			"description": "Name in Russian",
+			"example": "Дунгане",
+			"type": "line"
+		},
+		"c2": {
+			"label": "Alternate name in Chinese",
+			"description": "Alternate name in Chinese characters when traditional and simplified coincide",
+			"type": "line"
+		},
+		"t2": {
+			"label": "Alternate name in traditional characters",
+			"description": "Alternate name in traditional Chinese characters",
+			"type": "line"
+		},
+		"s2": {
+			"label": "Alternate name in simplified characters",
+			"description": "Alternate name in simplified Chinese characters",
+			"type": "line"
+		},
+		"p2": {
+			"label": "Pinyin transcription 2",
+			"description": "Hanyu Pinyin transcription of the alternate name",
+			"type": "line"
+		},
+		"tp2": {
+			"label": "Tongyong pinyin 2",
+			"description": "Tongyong Pinyin transcription of the alternate name",
+			"type": "line"
+		},
+		"l2": {
+			"label": "Literal meaning 2",
+			"description": "Meaning of the alternate name in English",
+			"type": "line"
+		},
+		"w2": {
+			"label": "Wade-Giles 2",
+			"description": "Wade-Giles transcription of the alternate name",
+			"type": "line"
+		},
+		"y2": {
+			"label": "Yale Romanization 2",
+			"description": "Cantonese Yale transcription of the alternate name",
+			"type": "line"
+		},
+		"j2": {
+			"label": "Jyutping 2",
+			"description": "Jyutping transcription of the alternate name",
+			"type": "line"
+		},
+		"mi2": {
+			"label": "Mandarin IPA 2",
+			"description": "International phonetic alphabet pronunciation of the alternate name in Modern Standard Mandarin",
+			"type": "content"
+		},
+		"ci2": {
+			"label": "Cantonese IPA 2",
+			"description": "International phonetic alphabet pronunciation of the alternate name in Standard Cantonese",
+			"type": "content"
+		},
+		"poj2": {
+			"label": "Peh-oe-ji 2",
+			"description": "Peh-oe-ji transcription of the alternate name",
+			"type": "line"
+		},
+		"tl2": {
+			"label": "Tâi-Lô 2",
+			"description": "Tâi-Lô transcription of the alternate name",
+			"type": "line"
+		},
+		"lj2": {
+			"label": "Nanjing Mandarin 2",
+			"description": "Nanjing Mandarin transcription of the alternate name",
+			"type": "line"
+		},
+		"wuu2": {
+			"label": "Wu Romanization 2",
+			"description": "Wu transcription of the alternate name",
+			"type": "line"
+		},
+		"gan2": {
+			"label": "Gan romanization 2",
+			"example": "Tung-koe̍t",
+			"type": "line",
+			"description": "Romanization of the alternate name for Gan Chinese dialects"
+		},
+		"gr2": {
+			"label": "Gwoyeu Romatzyh 2",
+			"example": "Jonggwo",
+			"type": "line",
+			"description": "Gwoyeu Romatzyh Mandarin romanization of the alternate name"
+		},
+		"mps2": {
+			"label": "Mandarin Phonetic Symbols 2",
+			"description": "Transcription of the alternate name in Mandarin Phonetic Symbols",
+			"example": "Jūngguó",
+			"type": "line"
+		},
+		"xej2": {
+			"label": "Xiao'erjiang arabicization 2",
+			"description": "Alternate in the Xiao'erjiang \"Children's script\" Arabic script",
+			"example": "ﺟْﻮﻗُﻮَع",
+			"type": "line"
+		},
+		"zh-dungan2": {
+			"label": "Alternate name in Dungan script",
+			"description": "Alternate name in the Cyrillic script for the Dungan Mandarin dialect",
+			"example": "Җунгуй",
+			"type": "line"
+		},
+		"sic2": {
+			"label": "Sichuanese Mandarin 2",
+			"description": "Transcription of the alternate name into Sichuanese Mandarin",
+			"example": "Zong1 gwe2",
+			"type": "line"
+		},
+		"bpmf2": {
+			"label": "Bopomofo (Zhuyin) 2",
+			"description": "Zhuyin phonetic pronunciation guide of the alternate name",
+			"example": "ㄓㄜˋ ㄐㄧㄤ",
+			"type": "line"
+		},
+		"hsn2": {
+			"label": "Xiang romanization 2",
+			"description": "Romanization of the alternate name for Xiang Chinese",
+			"type": "line"
+		},
+		"h2": {
+			"label": "Hakka Transliteration 2",
+			"description": "Romanization of the alternate name for Hakka Chinese",
+			"type": "line"
+		},
+		"phfs2": {
+			"label": "Pha̍k-fa-sṳ 2",
+			"description": "Pha̍k-fa-sṳ romanization of the alternate name for Hakka Chinese",
+			"type": "line",
+			"example": "Mòi-yen-fa"
+		},
+		"teo2": {
+			"label": "Peng'im (Teochow) 2",
+			"description": "Peng'im romanization of the alternate name for Teochow Min Nan",
+			"type": "line",
+			"example": "Diê⁵ziu¹ uê⁷"
+		},
+		"bp2": {
+			"label": "Hokkien Bbánlám pìngyīm 2",
+			"description": "Bbánlám pìngyīm romanization of the alternate name for Hokkien",
+			"type": "line",
+			"example": "Bbánlám Hōng'ggián Pìngyīm Hōng'àn"
+		},
+		"buc2": {
+			"label": "Bàng-uâ-cê, Foochow Romanized 2",
+			"description": "Bàng-uâ-cê (BUC) romanization of the alternate name for Eastern Min dialects",
+			"type": "line",
+			"example": "Hók-ciŭ-uâ Lò̤-mā-cê"
+		},
+		"hhbuc2": {
+			"label": "Hinghwa Romanization, Putian Min 2",
+			"description": "Pu-Xian Min Báⁿ-uā-ci̍ (BUC) transcription of the alternate name",
+			"type": "line",
+			"example": "Báⁿ-uā-ci̍"
+		},
+		"mblmc2": {
+			"label": "Northern Min Jian'ou romanization 2",
+			"description": "Kienning Colloquial Romanization (LMC) of the alternate name",
+			"type": "line",
+			"example": "Gṳ̿ing-nǎing Lô̤-mǎ-cī"
+		},
+		"psp2": {
+			"label": "Postal romanization  2",
+			"description": "Chinese postal map romanization of the alternate name",
+			"type": "line",
+			"example": "Peking"
+		},
+		"myr2": {
+			"label": "Mandarin Yale Romanization 2",
+			"description": "Mandarin Yale romanization of the alternate name",
+			"example": "Hwáyǔwén Nénglì Tsèyàn",
+			"type": "line"
+		},
+		"c3": {
+			"label": "Second alternate name in Chinese",
+			"description": "Second alternate name in Chinese characters when traditional and simplified coincide",
+			"type": "line"
+		},
+		"t3": {
+			"label": "Second alternate name in traditional characters",
+			"description": "Second alternate name in traditional Chinese characters",
+			"type": "line"
+		},
+		"s3": {
+			"label": "Second alternate name in simplified characters",
+			"description": "Second alternate name in simplified Chinese characters",
+			"type": "line"
+		},
+		"p3": {
+			"label": "Pinyin transcription 3",
+			"description": "Hanyu Pinyin transcription of the second alternate name",
+			"type": "line"
+		},
+		"tp3": {
+			"label": "Tongyong pinyin 3",
+			"description": "Tongyong Pinyin transcription of the second alternate name",
+			"type": "line"
+		},
+		"l3": {
+			"label": "Literal meaning 3",
+			"description": "Meaning of the second alternate name in English",
+			"type": "line"
+		},
+		"w3": {
+			"label": "Wade-Giles 3",
+			"description": "Wade-Giles transcription of the second alternate name",
+			"type": "line"
+		},
+		"y3": {
+			"label": "Yale Romanization 3",
+			"description": "Cantonese Yale transcription of the second alternate name",
+			"type": "line"
+		},
+		"j3": {
+			"label": "Jyutping 3",
+			"description": "Jyutping transcription of the second alternate name",
+			"type": "line"
+		},
+		"mi3": {
+			"label": "Mandarin IPA 3",
+			"description": "International phonetic alphabet pronunciation of the second alternate name in Modern Standard Mandarin",
+			"type": "content"
+		},
+		"ci3": {
+			"label": "Cantonese IPA 3",
+			"description": "International phonetic alphabet pronunciation of the second alternate name in Standard Cantonese",
+			"type": "content"
+		},
+		"poj3": {
+			"label": "Peh-oe-ji 3",
+			"description": "Peh-oe-ji transcription of the second alternate name",
+			"type": "line"
+		},
+		"tl3": {
+			"label": "Tâi-Lô 3",
+			"description": "Tâi-Lô transcription of the second alternate name",
+			"type": "line"
+		},
+		"lj3": {
+			"label": "Nanjing Mandarin 3",
+			"description": "Nanjing Mandarin transcription of the second alternate name",
+			"type": "line"
+		},
+		"wuu3": {
+			"label": "Wu Romanization 3",
+			"description": "Wu transcription of the second alternate name",
+			"type": "line"
+		},
+		"gan3": {
+			"label": "Gan romanization 3",
+			"example": "Tung-koe̍t",
+			"type": "line",
+			"description": "Romanization of the second alternate name for Gan Chinese dialects"
+		},
+		"gr3": {
+			"label": "Gwoyeu Romatzyh 3",
+			"example": "Jonggwo",
+			"type": "line",
+			"description": "Gwoyeu Romatzyh Mandarin romanization of the second alternate name"
+		},
+		"mps3": {
+			"label": "Mandarin Phonetic Symbols 3",
+			"description": "Transcription of the second alternate name in Mandarin Phonetic Symbols",
+			"example": "Jūngguó",
+			"type": "line"
+		},
+		"xej3": {
+			"label": "Xiao'erjiang arabicization 3",
+			"description": "Second alternate in the Xiao'erjiang \"Children's script\" Arabic script",
+			"example": "ﺟْﻮﻗُﻮَع",
+			"type": "line"
+		},
+		"zh-dungan3": {
+			"label": "Second alternate name in Dungan script",
+			"description": "Second alternate name in the Cyrillic script for the Dungan Mandarin dialect",
+			"example": "Җунгуй",
+			"type": "line"
+		},
+		"sic3": {
+			"label": "Sichuanese Mandarin 3",
+			"description": "Transcription of the second alternate name into Sichuanese Mandarin",
+			"example": "Zong1 gwe3",
+			"type": "line"
+		},
+		"bpmf3": {
+			"label": "Bopomofo (Zhuyin) 3",
+			"description": "Zhuyin phonetic pronunciation guide of the second alternate name",
+			"example": "ㄓㄜˋ ㄐㄧㄤ",
+			"type": "line"
+		},
+		"hsn3": {
+			"label": "Xiang romanization 3",
+			"description": "Romanization of the second alternate name for Xiang Chinese",
+			"type": "line"
+		},
+		"h3": {
+			"label": "Hakka Transliteration 3",
+			"description": "Romanization of the second alternate name for Hakka Chinese",
+			"type": "line"
+		},
+		"phfs3": {
+			"label": "Pha̍k-fa-sṳ 3",
+			"description": "Pha̍k-fa-sṳ romanization of the second alternate name for Hakka Chinese",
+			"type": "line",
+			"example": "Mòi-yen-fa"
+		},
+		"teo3": {
+			"label": "Peng'im (Teochow) 3",
+			"description": "Peng'im romanization of the second alternate name for Teochow Min Nan",
+			"type": "line",
+			"example": "Diê⁵ziu¹ uê⁷"
+		},
+		"bp3": {
+			"label": "Hokkien Bbánlám pìngyīm 3",
+			"description": "Bbánlám pìngyīm romanization of the second alternate name for Hokkien",
+			"type": "line",
+			"example": "Bbánlám Hōng'ggián Pìngyīm Hōng'àn"
+		},
+		"buc3": {
+			"label": "Bàng-uâ-cê, Foochow Romanized 3",
+			"description": "Bàng-uâ-cê (BUC) romanization of the second alternate name for Eastern Min dialects",
+			"type": "line",
+			"example": "Hók-ciŭ-uâ Lò̤-mā-cê"
+		},
+		"hhbuc3": {
+			"label": "Hinghwa Romanization, Putian Min 3",
+			"description": "Pu-Xian Min Báⁿ-uā-ci̍ (BUC) transcription of the second alternate name",
+			"type": "line",
+			"example": "Báⁿ-uā-ci̍"
+		},
+		"mblmc3": {
+			"label": "Northern Min Jian'ou romanization 3",
+			"description": "Kienning Colloquial Romanization (LMC) of the second alternate name",
+			"type": "line",
+			"example": "Gṳ̿ing-nǎing Lô̤-mǎ-cī"
+		},
+		"psp3": {
+			"label": "Postal romanization  3",
+			"description": "Chinese postal map romanization of the second alternate name",
+			"type": "line",
+			"example": "Peking"
+		},
+		"myr3": {
+			"label": "Mandarin Yale Romanization 3",
+			"description": "Mandarin Yale romanization of the second alternate name",
+			"example": "Hwáyǔwén Nénglì Tsèyàn",
+			"type": "line"
+		},
+		"c4": {
+			"label": "Third alternate name in Chinese",
+			"description": "Third alternate name in Chinese characters when traditional and simplified coincide",
+			"type": "line"
+		},
+		"t4": {
+			"label": "Third alternate name in traditional characters",
+			"description": "Third alternate name in traditional Chinese characters",
+			"type": "line"
+		},
+		"s4": {
+			"label": "Third alternate name in simplified characters",
+			"description": "Third alternate name in simplified Chinese characters",
+			"type": "line"
+		},
+		"p4": {
+			"label": "Pinyin transcription 4",
+			"description": "Hanyu Pinyin transcription of the third alternate name",
+			"type": "line"
+		},
+		"tp4": {
+			"label": "Tongyong pinyin 4",
+			"description": "Tongyong Pinyin transcription of the third alternate name",
+			"type": "line"
+		},
+		"l4": {
+			"label": "Literal meaning 4",
+			"description": "Meaning of the third alternate name in English",
+			"type": "line"
+		},
+		"w4": {
+			"label": "Wade-Giles 4",
+			"description": "Wade-Giles transcription of the third alternate name",
+			"type": "line"
+		},
+		"y4": {
+			"label": "Yale Romanization 4",
+			"description": "Cantonese Yale transcription of the third alternate name",
+			"type": "line"
+		},
+		"j4": {
+			"label": "Jyutping 4",
+			"description": "Jyutping transcription of the third alternate name",
+			"type": "line"
+		},
+		"mi4": {
+			"label": "Mandarin IPA 4",
+			"description": "International phonetic alphabet pronunciation of the third alternate name in Modern Standard Mandarin",
+			"type": "content"
+		},
+		"ci4": {
+			"label": "Cantonese IPA 4",
+			"description": "International phonetic alphabet pronunciation of the third alternate name in Standard Cantonese",
+			"type": "content"
+		},
+		"poj4": {
+			"label": "Peh-oe-ji 4",
+			"description": "Peh-oe-ji transcription of the third alternate name",
+			"type": "line"
+		},
+		"tl4": {
+			"label": "Tâi-Lô 4",
+			"description": "Tâi-Lô transcription of the third alternate name",
+			"type": "line"
+		},
+		"lj4": {
+			"label": "Nanjing Mandarin 4",
+			"description": "Nanjing Mandarin transcription of the third alternate name",
+			"type": "line"
+		},
+		"wuu4": {
+			"label": "Wu Romanization 4",
+			"description": "Wu transcription of the third alternate name",
+			"type": "line"
+		},
+		"gan4": {
+			"label": "Gan romanization 4",
+			"example": "Tung-koe̍t",
+			"type": "line",
+			"description": "Romanization of the third alternate name for Gan Chinese dialects"
+		},
+		"gr4": {
+			"label": "Gwoyeu Romatzyh 4",
+			"example": "Jonggwo",
+			"type": "line",
+			"description": "Gwoyeu Romatzyh Mandarin romanization of the third alternate name"
+		},
+		"mps4": {
+			"label": "Mandarin Phonetic Symbols 4",
+			"description": "Transcription of the third alternate name in Mandarin Phonetic Symbols",
+			"example": "Jūngguó",
+			"type": "line"
+		},
+		"xej4": {
+			"label": "Xiao'erjiang arabicization 4",
+			"description": "Third alternate in the Xiao'erjiang \"Children's script\" Arabic script",
+			"example": "ﺟْﻮﻗُﻮَع",
+			"type": "line"
+		},
+		"zh-dungan4": {
+			"label": "Third alternate name in Dungan script",
+			"description": "Third alternate name in the Cyrillic script for the Dungan Mandarin dialect",
+			"example": "Җунгуй",
+			"type": "line"
+		},
+		"sic4": {
+			"label": "Sichuanese Mandarin 4",
+			"description": "Transcription of the third alternate name into Sichuanese Mandarin",
+			"example": "Zong1 gwe4",
+			"type": "line"
+		},
+		"bpmf4": {
+			"label": "Bopomofo (Zhuyin) 4",
+			"description": "Zhuyin phonetic pronunciation guide of the third alternate name",
+			"example": "ㄓㄜˋ ㄐㄧㄤ",
+			"type": "line"
+		},
+		"hsn4": {
+			"label": "Xiang romanization 4",
+			"description": "Romanization of the third alternate name for Xiang Chinese",
+			"type": "line"
+		},
+		"h4": {
+			"label": "Hakka Transliteration 4",
+			"description": "Romanization of the third alternate name for Hakka Chinese",
+			"type": "line"
+		},
+		"phfs4": {
+			"label": "Pha̍k-fa-sṳ 4",
+			"description": "Pha̍k-fa-sṳ romanization of the third alternate name for Hakka Chinese",
+			"type": "line",
+			"example": "Mòi-yen-fa"
+		},
+		"teo4": {
+			"label": "Peng'im (Teochow) 4",
+			"description": "Peng'im romanization of the third alternate name for Teochow Min Nan",
+			"type": "line",
+			"example": "Diê⁵ziu¹ uê⁷"
+		},
+		"bp4": {
+			"label": "Hokkien Bbánlám pìngyīm 4",
+			"description": "Bbánlám pìngyīm romanization of the third alternate name for Hokkien",
+			"type": "line",
+			"example": "Bbánlám Hōng'ggián Pìngyīm Hōng'àn"
+		},
+		"buc4": {
+			"label": "Bàng-uâ-cê, Foochow Romanized 4",
+			"description": "Bàng-uâ-cê (BUC) romanization of the third alternate name for Eastern Min dialects",
+			"type": "line",
+			"example": "Hók-ciŭ-uâ Lò̤-mā-cê"
+		},
+		"hhbuc4": {
+			"label": "Hinghwa Romanization, Putian Min 4",
+			"description": "Pu-Xian Min Báⁿ-uā-ci̍ (BUC) transcription of the third alternate name",
+			"type": "line",
+			"example": "Báⁿ-uā-ci̍"
+		},
+		"mblmc4": {
+			"label": "Northern Min Jian'ou romanization 4",
+			"description": "Kienning Colloquial Romanization (LMC) of the third alternate name",
+			"type": "line",
+			"example": "Gṳ̿ing-nǎing Lô̤-mǎ-cī"
+		},
+		"psp4": {
+			"label": "Postal romanization  4",
+			"description": "Chinese postal map romanization of the third alternate name",
+			"type": "line",
+			"example": "Peking"
+		},
+		"myr4": {
+			"label": "Mandarin Yale Romanization 4",
+			"description": "Mandarin Yale romanization of the third alternate name",
+			"example": "Hwáyǔwén Nénglì Tsèyàn",
+			"type": "line"
+		},
+		"dungan-xej": {
+			"label": "Dungan name in Xiao'erjiang",
+			"example": "حُوِ ذَو",
+			"type": "line",
+			"description": "Name in the Dungan language/Mandarin dialect, written in the Xiao'erjiang Arabic script"
+		},
+		"dungan": {
+			"label": "Dungan name",
+			"type": "line",
+			"example": "Хуэйзў",
+			"description": "Name in the Dungan language/Mandarin dialect, written in the Cyrillic"
+		},
+		"dungan-latin": {
+			"label": "Dungan name (latin Script)",
+			"type": "line",
+			"example": "Huejzw",
+			"description": "Name in the Dungan language/Mandarin dialect, written in the Latin script"
+		},
+		"dungan-han": {
+			"label": "Dungan name in Hanzi",
+			"type": "line",
+			"example": "回族",
+			"description": "Name in the Dungan language/Mandarin dialect, written in Chinese characters"
+		},
+		"uig": {
+			"label": "Uyghur script",
+			"description": "Uyghur language name in the Perso-Arabic script",
+			"example": "شۆھرەت زاكىر",
+			"type": "line"
+		},
+		"usy": {
+			"label": "Uyghur name (Cyrillic)",
+			"description": "Uyghur language name in the Cyrillic script (Uyghur Siril Yëziqi)",
+			"example": "Шɵһрəт Закир",
+			"type": "line"
+		},
+		"uly": {
+			"label": "Uyghur Latin script",
+			"description": "Uyghur language name in the Uyghur Latin script (Uyghur Latin Yëziqi)",
+			"type": "line"
+		},
+		"uyy": {
+			"label": "Uyghur New script",
+			"description": "Uyghur language name in the Uyghur New script (Yengi Yeziⱪ)",
+			"type": "line"
+		},
+		"lu": {
+			"label": "Uyghur name's literal meaning",
+			"description": "The literal meaning of the Uyghur language name in English",
+			"type": "line"
+		},
+		"sgs": {
+			"label": "Uyghur PRC transliteration",
+			"description": "Uyghur language name in the official PRC transliteration",
+			"type": "line"
+		},
+		"uipa": {
+			"label": "Uyghur IPA",
+			"description": "IPA pronunciation for the name in the Uyghur language",
+			"type": "line"
+		},
+		"tib": {
+			"label": "Tibetan",
+			"description": "Name in Tibetan",
+			"type": "line"
+		},
+		"wylie": {
+			"label": "Tibetan Wylie romanisation",
+			"description": "Wylie romanisation of Tibetan name",
+			"type": "line"
+		},
+		"thdl": {
+			"label": "Tibetan THL Simplified Phonetic Transcription",
+			"description": "Tibetan and Himalayan Library's simplified romanisation of the Tibetan name",
+			"type": "line"
+		},
+		"zwpy": {
+			"label": "Tibetan zangwen pinyin romanisation",
+			"description": "Chinese government's official romanisation scheme for Tibetan",
+			"type": "line"
+		},
+		"koreanname": {},
+		"context": {},
+		"japanesename": {},
+		"russianname": {},
+		"cyrillic": {},
+		"romanization": {},
+		"lhasa": {
+			"label": "Tibetan Lhasa IPA",
+			"description": "Name in the Lhasa dialect of Tibetan in the international phonetic alphabet",
+			"type": "line"
+		},
+		"Vietnamname": {},
+		"vietnam chu han": {},
+		"vietnam chu nom": {},
+		"viet nam han viet": {}
+	}
+}
+</templatedata>
+{{collapse bottom}}
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Language infobox templates|Chinese]]
+[[Category:Chinese multilingual support templates]]
+[[Category:Embeddable templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

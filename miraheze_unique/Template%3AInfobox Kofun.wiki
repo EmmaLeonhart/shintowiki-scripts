@@ -1,0 +1,216 @@
+{{infobox
+| bodyclass = vcard
+
+| child = {{#ifeq:{{{embed|}}}|yes|yes}}
+
+| title = <includeonly>{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</includeonly>
+| titleclass = fn org
+
+| subheader = {{#if:{{{native_name|}}}|<div class="nickname" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang}}}"}}>{{{native_name}}}</div>}}
+
+| headerstyle = background-color: #eee;
+
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{#invoke:WikidataIB|getValue|rank=best|P18 | maxvals=1 | name=image | noicon=true | qid={{{qid|}}} | suppressfields={{{suppressfields|}}} | fetchwikidata={{{fetchwikidata|ALL}}} | onlysourced=no |{{{image|}}}}}|size={{{image_size|{{{imagewidth|}}}}}}|upright={{{image_upright|}}}|alt={{{alt|{{{imagealttext|}}}}}}}}
+| caption = {{{caption|}}}
+
+| image2 = {{#invoke:InfoboxImage|InfoboxImage|image={{{map|}}}|size={{{map_size|{{{mapwidth|}}}}}}|sizedefault=250px|alt={{{map_alt|}}}}}
+| caption2 = {{#if: {{{map_type|}}}||{{{map_caption|}}}}}
+
+| image3 = {{#if: {{{map_type|}}}|{{Location map|{{{map_type|}}}
+ |relief      = {{{relief|}}}
+ |alt         = {{{map_alt|}}}
+ |coordinates = {{{coordinates|}}}
+ |float       = center
+ |mark        = Archaeological site icon (red).svg
+ |overlay_image = {{{map_overlay|}}}
+ |marksize    = {{{marksize|{{{marksize|}}}}}}
+ |label       = {{{map dot label|{{{map_dot_label|}}}}}}
+ |position    = {{{map_label_position|}}}
+ |border      = infobox
+ |caption     = {{#if:{{{map_caption|}}}|{{{map_caption}}}|Shown within {{#invoke:Location map|data|{{{map_type}}}|name}}}}
+ |width       = {{#if:{{{map_size|}}}|{{{map_size}}}|}}
+ |default_width= 250
+}}}}
+| caption3 = 
+
+| image4   = {{#invoke:Infobox mapframe|auto}}
+| caption4 = {{#invoke:Infobox mapframe|autocaption}}
+
+| label1 = Alternative&nbsp;name
+| class1 = nickname
+| data1 = {{{other_name|{{{alternate_name|}}}}}}
+
+| label2 = Location
+| class2 = label
+| data2 = {{{location|}}}
+
+| label3 = Region
+| class3 = label
+| data3 = {{{region|}}}
+
+| label4 = Coordinates
+| data4 = {{#if:{{{coordinates|}}}|{{#invoke:coordinates|coordinsert|{{{coordinates}}}|type:landmark}} }}
+
+| label5 = [[British national grid reference system|OS grid reference]]
+| data5 = {{#if:{{{gbgridref|}}}|{{gbmappingsmall|{{{gbgridref}}}}}}}
+
+| label6   = Altitude
+| data6    = {{#if:{{{altitude_m|}}}|{{convert|{{{altitude_m}}}|m|ft|0|abbr=on}}{{{altitude_ref|}}}|}}
+
+| label7 = {{if empty|{{{grid_name|}}}|Grid&nbsp;position}}
+| data7 = {{{grid_position|}}}
+
+| label8 = Type
+| class8 = category
+| data8 = {{{type|}}}
+
+| label9 = Part&nbsp;of
+| data9 = {{{part_of|}}}
+
+| label10 = Length
+| data10 = {{{length|}}}
+
+| label11 = Width
+| data11 = {{{width|}}}
+
+| label12 = Area
+| data12 = {{{area|}}}
+
+| label13 = Volume
+| data13 = {{{volume|}}}
+
+| label14 = Diameter
+| data14 = {{{diameter|}}}
+
+| label15 = Circumference
+| data15 = {{{circumference|}}}
+
+| label16 = Height
+| data16 = {{{height|}}}
+
+| header17 = {{#if:{{{builder|}}}{{{material|}}}{{{built|}}}{{{abandoned|}}}{{{epochs|}}}{{{cultures|}}}{{{occupants|}}}{{{event|}}}|History}}
+
+| label18 = Builder
+| data18 = {{{builder|}}}
+
+| label19 =  Material
+| class19 = category
+| data19 = {{{material|}}}
+
+| label20 =  Founded
+| data20 = {{{built|}}}
+
+| label21 = Abandoned
+| data21 = {{{abandoned|}}}
+
+| label22 =  Periods
+| data22 = {{{epochs|}}}
+
+| label23 = Cultures
+| data23 = {{{cultures|}}}
+
+| label24 =  Satellite&nbsp;of
+| data24 = {{{dependency_of|}}}
+
+| label25 = Associated&nbsp;with
+| data25 = {{{occupants|}}}
+
+| label26 =  Events
+| data26 = {{{event|}}}
+
+| header27 = {{#if:{{{excavations|}}}{{{archaeologists|}}}{{{condition|}}}{{{ownership|}}}{{{owner|}}}{{{public_access|}}}{{{website|}}}{{{notes|}}}{{{discovered|}}}| Site notes }}
+
+| label28 = Discovered
+| data28 = {{{discovered|}}}
+
+| label29 = Excavation&nbsp;dates
+| data29 = {{{excavations|}}}
+
+| label30 =  Archaeologists
+| data30 = {{{archaeologists|}}}
+
+| label31 =  Condition
+| data31 = {{{condition|}}}
+
+| label32 = Ownership
+| data32 = {{{ownership|{{{owner|}}}}}}
+
+| label33 =  Management
+| data33 = {{{management|}}}
+
+| label34 =  Public&nbsp;access
+| data34 = {{{public_access|}}}
+
+| label35 =  Website
+| data35 = {{{website|}}}
+
+| header36    = {{#if:{{{architectural_styles|}}}{{{architectural_details|}}}|Architecture}}
+
+| label37     = Architectural styles
+| data37      = {{{architectural_styles|}}}
+
+| label38     = Architectural details
+| data38      = {{{architectural_details|}}}
+
+| header39 = {{#if:{{{designation1|}}}{{{designation1_offname|}}}{{{designation1_type|}}}{{{designation1_criteria|}}}{{{designation1_date|}}}{{{delisted1_date|}}}{{{designation1_partof|}}}{{{designation1_number|}}}{{{designation1_free1value|}}}{{{designation2_free1value|}}}{{{designation1_free3value|}}}{{{designation2|}}}{{{designation2_offname|}}}{{{designation2_type|}}}{{{designation2_criteria|}}}{{{designation2_date|}}}{{{delisted1_date|}}}{{{designation2_partof|}}}{{{designation2_number|}}}{{{designation2_free1value|}}}{{{designation2_free2value|}}}{{{designation2_free3value|}}}
+   |{{Infobox designation list|embed = yes
+| designation1            = {{{designation1|}}}
+| designation1_offname    = {{{designation1_offname|}}}
+| designation1_type       = {{{designation1_type|}}}
+| designation1_criteria   = {{{designation1_criteria|}}}
+| designation1_date       = {{{designation1_date|}}}
+| delisted1_date          = {{{delisted1_date|}}}
+| designation1_partof     = {{{designation1_partof|}}}
+| designation1_number     = {{{designation1_number|}}}
+| designation1_free1name  = {{{designation1_free1name|}}}
+| designation1_free1value = {{{designation1_free1value|}}}
+| designation1_free2name  = {{{designation1_free2name|}}}
+| designation1_free2value = {{{designation1_free2value|}}}
+| designation1_free3name  = {{{designation1_free3name|}}}
+| designation1_free3value = {{{designation1_free3value|}}}
+| designation2            = {{{designation2|}}}
+| designation2_offname    = {{{designation2_offname|}}}
+| designation2_type       = {{{designation2_type|}}}
+| designation2_criteria   = {{{designation2_criteria|}}}
+| designation2_date       = {{{designation2_date|}}}
+| delisted2_date          = {{{delisted2_date|}}}
+| designation2_partof     = {{{designation2_partof|}}}
+| designation2_number     = {{{designation2_number|}}}
+| designation2_free1name  = {{{designation2_free1name|}}}
+| designation2_free1value = {{{designation2_free1value|}}}
+| designation2_free2name  = {{{designation2_free2name|}}}
+| designation2_free2value = {{{designation2_free2value|}}}
+| designation2_free3name  = {{{designation2_free3name|}}}
+| designation2_free3value = {{{designation2_free3value|}}}
+}} }}
+
+| label40 = Designation
+| data40  = {{{other_designation|}}}
+
+| header41 = {{#if: {{{nhle|}}}{{{hillfort|}}}{{{megaj|}}}{{{hes|}}} | Identifiers }}
+
+| label42 = [[National Heritage List for England|NHLE]]
+| data42  = {{#if: {{{nhle|}}} | [https://historicengland.org.uk/listing/the-list/list-entry/{{{nhle}}} {{{nhle}}}] }}
+
+| label43 = [[Atlas of Hillforts of Britain and Ireland|''Atlas of Hillforts'']]
+| data43  = {{#if: {{{hillfort|}}} | [https://hillforts.arch.ox.ac.uk/?query=Atlas_of_Hillforts_4166_0,Main_Atlas_Number,{{{hillfort}}} {{{hillfort}}}] }}
+
+| label44 = [[Middle Eastern Geodatabase for Antiquities (MEGA)|MEGA-J]]
+| data44  = {{{megaj|}}}
+
+| label45 = [[Historic Environment Scotland]]
+| data45 = {{#if: {{{hes|}}} | [https://portal.historicenvironment.scot/designation/{{{hes}}} {{{hes}}}] }}
+
+| data46 = {{{embedded|}}}
+| below = {{{notes|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox ancient site]] with unknown parameter "_VALUE_"|ignoreblank=y| abandoned | alt | alternate_name | altitude_m | altitude_ref | archaeologists | architectural_details | architectural_styles | area | builder | built | caption | circumference | condition | coordinates | cultures | delisted1_date | delisted2_date | dependency_of | designation1 | designation1_criteria | designation1_date | designation1_free1name | designation1_free1value | designation1_free2name | designation1_free2value | designation1_free3name | designation1_free3value | designation1_number | designation1_offname | designation1_partof | designation1_type | designation2 | designation2_criteria | designation2_date | designation2_free1name | designation2_free1value | designation2_free2name | designation2_free2value | designation2_free3name | designation2_free3value | designation2_number | designation2_offname | designation2_partof | designation2_type | diameter | discovered | embed | embedded | epochs | event | excavations | fetchwikidata | gbgridref | grid_name | grid_position | height | hes | hillfort | image | image_size | image_upright | imagealttext | imagewidth | length | location | management | map | map dot label | map_alt | map_caption | map_dot_label | marksize | map_size | map_type | mapwidth | material | megaj | name | native_name | native_name_lang | nhle | notes | occupants | other_designation | ownership | part_of | precolumbian | public_access | qid | region | relief | suppressfields | type | volume | website | width | mapframe | mapframe-caption | mapframe-custom | mapframe-id | mapframe-coord | mapframe-wikidata | mapframe-point | mapframe-shape | mapframe-frame-width | mapframe-frame-height | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-geomask | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-zoom | mapframe-length_km | mapframe-length_mi | mapframe-area_km2 | mapframe-area_mi2 | mapframe-frame-coordinates | mapframe-frame-coord | mapframe-switcher | map_overlay | map_label_position}}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox ancient site with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

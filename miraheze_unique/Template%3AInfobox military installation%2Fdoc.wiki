@@ -1,0 +1,787 @@
+{{#ifeq:{{{noheader|}}}|yes|
+{{#ifeq:{{#invoke:High-use|num|x|demo={{ROOTPAGENAME}}}}|many||{{High-use|demo={{ROOTPAGENAME}}}}}}
+
+==== Military installation infobox ====
+|{{Documentation subpage}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:String|Module:Check for unknown parameters}}
+
+==Usage==
+}}
+
+{{Infobox military installation
+| name = Loring Air Force Base
+| native_name = Limestone Air Force Base
+| partof = 
+| location = [[:en:Limestone, Maine|Limestone]] and [[:en:Caswell, Maine|Caswell, Maine]]
+| country = United States
+| image = Loring Air Force Base.jpg
+| alt = Aerial image of Loring Air Force Base, in black and white
+| caption = [[:en:United States Geological Survey|USGS]] 1970 Aerial Photo
+| image2 = ACC Shield.svg
+| alt2 = Shield with a sword with wings coming out of it
+| caption2 = Logo of Air Combat Command
+| type = Air Force Base
+| coordinates = {{coord|46|56|59|N|67|53|20|W|type:airport_region:US-ME|display=inline}}
+| image_map = 
+| image_mapsize = 
+| image_map_alt = 
+| image_map_caption = 
+| pushpin_map = USA Maine
+| pushpin_mapsize = 250
+| pushpin_map_alt = 
+| pushpin_map_caption = Location of Loring AFB
+| pushpin_relief = 
+| pushpin_image = 
+| pushpin_label = '''Loring AFB&nbsp;<br />(KLIZ)&nbsp;'''
+| pushpin_label_position = left
+| pushpin_mark = 
+| pushpin_marksize = 
+| mapframe = yes
+| ownership = [[:en:United States Air Force|United States Air Force]]
+| operator = [[:en:42d Air Base Wing|42nd Bomb Wing]]
+| controlledby = 
+| site_other_label = Stations
+| site_other = [[:en:Caribou Air Force Station|Caribou Air Force Station]] (East Loring), [[:en:Caswell Air Force Station|Caswell Air Force Station]] 
+| open_to_public = Yes
+| site_area = {{convert|9000|acre|ha sqmi|lk=on}}
+| code = 
+| built = {{Start date|1947}}–1953
+| used = 1950–{{End date|1994}}
+| builder = [[:en:United States Army Corps of Engineers|United States Army Corps of Engineers]]
+| materials = 
+| height = 
+| fate = Mainly intact, partial demolition
+| condition = 
+| battles = 
+| events = [[:en:Cold War|Cold War]]
+| current_commander = Robert J. Pavelko
+| past_commanders = 
+| garrison = [[:en:42d Air Base Wing|42nd Bomb Wing]]
+| occupants = [[:en:69th Bomb Squadron|69th Bombardment Squadron]], [[:en:70th Flying Training Squadron|70th Bombardment Squadron]], [[:en:75th Bombardment Squadron|75th Bombardment Squadron]], [[:en:42d Air Refueling Squadron|42d Air Refueling Squadron]], [[:en:407th Air Refueling Squadron|407th Air Refueling Squadron]], [[2192nd Communications Squadron]], [[:en:101st Intelligence Squadron|101st Fighter Squadron]]
+| designations = 
+| website = 
+
+| subcritical_tests = 
+| nuclear_tests = 
+| thermonuclear_tests = 
+| other_tests_label =  
+| other_tests = 
+| remediation = 
+| image3 = 
+| alt3 = 
+| caption3 = 
+
+| IATA = KLIZ
+| ICAO = LIZ
+| FAA = 
+| TC = 
+| LID = 
+| GPS = 
+| WMO = 
+| elevation = {{Convert|746|ft|0}}
+| r1-number = 1R/19L
+| r1-length = {{Convert|12100|ft|0}}
+| r1-surface = Asphalt/Concrete
+| r2-number = 1L/19R
+| r2-length = {{Convert|12800|ft|0}}
+| r2-surface = Asphalt
+| airfield_other_label = 
+| airfield_other = 
+
+| footnotes = 
+}}
+
+A military installation infobox may be used to summarize information about a military structure or facility, such as a fortification or military base.  
+
+The infobox should be added using the {{tl|Infobox military installation}} template, as shown below:
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox military installation
+| name                   = 
+| ensign                 = 
+| ensign_size            = 
+| native_name            = 
+| partof                 = 
+| location               = 
+| nearest_town           = 
+| country                = 
+| image                  = 
+| alt                    = 
+| caption                = 
+| image2                 = 
+| alt2                   = 
+| caption2               = 
+| coordinates            = 
+| gridref                = 
+| type                   = 
+| image_map              = 
+| image_mapsize          = 
+| image_map_alt          = 
+| image_map_caption      = 
+| pushpin_map            = 
+| pushpin_mapsize        = 
+| pushpin_map_alt        = 
+| pushpin_map_caption    = 
+| pushpin_relief         = 
+| pushpin_image          = 
+| pushpin_label          = 
+| pushpin_label_position = 
+| pushpin_mark           = 
+| pushpin_marksize       = 
+| mapframe = yes
+| code                   = 
+| site_area              = 
+| floor_area             = 
+| height                 = 
+| length                 = 
+| ownership              = 
+| operator               = 
+| controlledby           = 
+| open_to_public         = 
+| condition              = 
+| site_other_label       = 
+| site_other             =   
+| website                = 
+| built                  = 
+| built_for              = 
+| builder                = 
+| architect              = 
+| used                   = 
+| materials              = 
+| fate                   = 
+| demolished             = 
+| battles                = 
+| events                 = 
+| current_commander      = 
+| past_commanders        = 
+| garrison               = 
+| occupants              = 
+| designations           = 
+| nrhp                   = 
+| footnotes              = 
+}}
+</syntaxhighlight>
+
+The following supplemental blocks may be copied into the template above as needed, just prior to the "footnotes" parameter.
+
+'''Test sites'''
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+
+| subcritical_tests   = 
+| nuclear_tests       = 
+| thermonuclear_tests = 
+| other_tests_label   =  
+| other_tests         = 
+| remediation         = 
+| image3              = 
+| alt3                = 
+| caption3            = 
+
+</syntaxhighlight>
+
+'''Airfields'''
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+
+| IATA                 = 
+| ICAO                 = 
+| FAA                  = 
+| TC                   = 
+| LID                  = 
+| GPS                  = 
+| WMO                  = 
+| elevation            = 
+| r1-number            = 
+| r1-length            = 
+| r1-surface           = 
+| h1-number            = 
+| h1-length            = 
+| h1-surface           = 
+| airfield_other_label = 
+| airfield_other       = 
+
+</syntaxhighlight>
+
+==Parameters==
+'''Note''': When using parameters, avoid the ambiguous abbreviation "N/A", and instead use "unknown" or "none".  If a parameter is not applicable, leave it blank and it will not be displayed.  All subjective or qualitative judgements and numerical quantities or statistics must be cited to a reliable source (see [[WP:MILMOS#CITE]]).
+
+* '''name''' – the name of the installation or structure.
+* '''ensign''' – ''optional'' – a small [[:en:Ensign (flag)|ensign]] image used by the installation.
+* '''ensign_size''' – ''optional'' – size for ensign image.
+* '''native_name''' – ''optional'' – the name of the installation in the language(s) of the country which built it, or in which it is located.
+* '''partof''' – ''optional'' – the larger complex the given installation is part of, if any.  For proper grammar, it may be necessary to insert "the" before the name used here.
+* '''location''' – the geographical location of the installation.
+* '''image''' – ''optional'' – an image of the installation.  The image should be given in the form Example.jpg; other values can be inserted in the following parameters.
+* '''image_size''' – ''optional'' – width of the image in pixels (px), ''e.g.'', "150"; defaults to "220".
+* '''alt''' – ''optional'' – alt text for the image; see ''[[Wikipedia:Alternative text for images]]''.
+* '''caption''' – ''optional'' – the text to be placed below the image.
+* '''image2''' – ''optional'' – a second image of the installation.  The image should be given in the form Example.jpg; other values can be inserted in the following parameters.
+* '''image2_size''' – ''optional'' – width of the second image in pixels (px), ''e.g.'', "150"; defaults to "220".
+* '''alt2''' – ''optional'' – alt text for the second image; see ''[[Wikipedia:Alternative text for images]]''.
+* '''caption2''' – ''optional'' – the text to be placed below the second image.
+* '''map_type''' – ''optional'' – the base map to be used for the location map, ''e.g.'', "Scotland"; see {{tl|Location map}} for more details.
+* '''map_relief''' – ''optional'' – set to any non-blank value to use a relief map (if available).
+* '''map_size''' – ''optional'' – width of the location map in pixels (px), ''e.g.'', "150"; defaults to "220".
+* '''map_alt''' – ''optional'' – alt text for location map; see ''[[Wikipedia:Alternative text for images]]''.
+* '''map_caption''' – ''optional'' – caption displayed below the location map; defaults to "Shown within {{{map_type}}}", ''e.g.'', "Shown within Scotland".
+* '''coordinates''' – ''optional'' – latitude and longitude for placing the marker on the location map. Use {{tl|Coord}}; see the Coord template documentation for details. 
+* '''gridref''' – ''optional'' – map grid reference.
+* '''type''' – ''optional'' – the general type of installation ("Castle", "Fortress", "Bunker", "Military base", "Wall", "Defensive line", etc.).
+* '''code''' – ''optional'' – the location or facility code, such as the ILC or ILK code.
+* '''site_area''' – ''optional'' – where relevant (e.g. for compounds), the land area of the installation.
+* '''floor_area''' – ''optional'' – where relevant (e.g. for buildings), the interior floor area of the installation.
+* '''height''' – ''optional'' – where relevant (e.g. for towers), the height of the installation.
+* '''length''' – ''optional'' – where relevant (e.g. for fences and DMZs), the length of the installation.
+* '''ownership''' – ''optional'' – the current owner of the installation, if relevant.
+* '''operator''' – ''optional'' – where different from ownership.
+* '''controlledby''' – ''optional'' – the country or other power controlling the installation.  Multiple powers may be indicated together with the corresponding dates.
+* '''open_to_public''' – ''optional'' – whether the installation is currently open to the general public, if relevant; indicated by "yes" or "no".
+* '''condition''' – ''optional'' – the current condition of the installation.
+* '''built''' – ''optional'' – the date when the installation was built, usually given in years.  Use {{tl|start date}} if 1583 or later.
+* '''builder''' – ''optional'' – the person or group responsible for building the installation.
+* '''used''' – ''optional'' – the period during which the installation was in active military use, usually given in years.
+* '''materials''' – ''optional'' – the materials used to construct the installation.
+* '''demolished''' – ''optional'' – the date when the installation was demolished, if applicable.
+* '''battles''' – ''optional'' – any notable battles (usually sieges) that took place in or are closely associated with the installation; as above, the choice of which battles qualify as notable is left to the article editors.
+* '''events''' – ''optional'' – any notable non-battle events that took place in or are closely associated with the installation; as above, the choice of which events qualify as notable is left to the article editors.
+* '''current_commander''' – ''optional'' – for installations currently in military use, the current commanding officer.
+* '''past_commanders''' – ''optional'' – any notable individuals that commanded the forces using this installation; the choice of which commanders qualify as notable is left to the editors of a particular article.
+* '''garrison''' – ''optional'' – the military forces garrisoning the installation.  Specific units may be indicated if known; general numbers should be given otherwise.
+* '''occupants''' – ''optional'' – any notable occupants of the installation other than its commanders; as above, the choice of which occupants qualify as notable is left to the article editors.
+* '''designations''' – legal heritage protection status
+* '''module'''  – ''optional'' – to embed other templates beneath this one.
+* '''embed'''  – ''optional'' – to embed this template into another above it.
+
+=== Mapframe maps ===
+{{Infobox mapframe/doc/parameters
+| onByDefault = yes, unless any of the other map parameters are present: {{para|pushpin_map}}, {{para|map_type}}, {{para|map}}, {{para|image_map}}
+| mapframe-marker = observation-tower
+| mapframe-frame-width = 250
+}}
+
+{{#ifeq:{{{noheader|}}}|yes||
+
+==Microformat==
+{{UF-hcard-geo}}
+
+== Tracking category ==
+* {{Category link with count|Pages using infobox military installation with unknown parameters}}
+
+== TemplateData ==
+{{TemplateData header}}
+{{collapse top|title=TemplateData}}
+<templatedata>
+{
+	"description": "An infobox for a military structure or facility, such as a fortification or military base",
+	"format": "{{_\n| _____________ = _\n}}\n",
+	"params": {
+		"name": {
+			"label": "Name",
+			"description": "The name of the installation or structure",
+			"type": "string",
+			"suggested": true
+		},
+		"noheader": {},
+		"map_type": {
+			"label": "Map type",
+			"description": "the base map to be used for the location map, e.g., \"Scotland\"; see {{Location map}} for more details."
+		},
+		"ensign": {
+			"label": "Ensign",
+			"description": "a small ensign image used by the installation."
+		},
+		"ensign_size": {
+			"label": "Ensign size",
+			"description": "size for ensign image."
+		},
+		"native_name": {
+			"label": "Native Name",
+			"description": "The name of the installation in the language(s) of the country which built it, or in which it is located.",
+			"type": "string"
+		},
+		"partof": {
+			"label": "Part of",
+			"description": "The larger complex the given installation is part of, if any. For proper grammar, it may be necessary to insert \"the\" before the name used here."
+		},
+		"location": {
+			"label": "Location",
+			"description": "The geographical location of the installation."
+		},
+		"image": {
+			"label": "Image",
+			"description": "an image of the installation. The image should be given in the form Example.jpg; other values can be inserted in the following parameters.",
+			"type": "wiki-file-name"
+		},
+		"image_size": {
+			"label": "Image size",
+			"description": "width of the image in pixels (px), e.g., \"150\"; defaults to \"220\"."
+		},
+		"alt": {
+			"label": "Alt",
+			"description": "alt text for the image; see Wikipedia:Alternative text for images."
+		},
+		"caption": {
+			"label": "Caption",
+			"description": "the text to be placed below the image."
+		},
+		"image2": {
+			"label": "Image2",
+			"description": "a second image of the installation. The image should be given in the form Example.jpg; other values can be inserted in the following parameters.",
+			"type": "wiki-file-name"
+		},
+		"image2_size": {
+			"label": "Image2 size",
+			"description": "width of the second image in pixels (px), e.g., \"150\"; defaults to \"220\"."
+		},
+		"alt2": {
+			"label": "Alt2",
+			"description": "alt text for the second image; see Wikipedia:Alternative text for images."
+		},
+		"caption2": {
+			"label": "Caption2",
+			"description": "the text to be placed below the second image."
+		},
+		"map_relief": {
+			"label": "Map relief",
+			"description": "set to any non-blank value to use a relief map (if available)."
+		},
+		"map_size": {
+			"label": "Map size",
+			"description": "width of the location map in pixels (px)",
+			"example": "150",
+			"type": "number",
+			"default": "220"
+		},
+		"map_alt": {
+			"label": "Map alt",
+			"description": "alt text for location map; see Wikipedia:Alternative text for images."
+		},
+		"map_caption": {
+			"label": "Map caption",
+			"description": "caption displayed below the location map; defaults to \"Shown within {{{map_type}}}\", e.g., \"Shown within Scotland\"."
+		},
+		"coordinates": {
+			"label": "Coordinates",
+			"description": "Latitude and longitude for placing the marker on the location map. Use {{Coord}}; see the Coord template documentation for details.",
+			"example": "{{Coord|10|45|53|N|53|23|24|W|type:landmark|display=inline,title}}",
+			"type": "string",
+			"suggested": true
+		},
+		"gridref": {
+			"label": "Gridref",
+			"description": "map grid reference."
+		},
+		"type": {
+			"label": "Type",
+			"description": "The general type of installation",
+			"example": "\"Castle\", \"Fortress\", \"Bunker\", \"Military base\", \"Wall\", \"Defensive line\", etc.",
+			"type": "string",
+			"suggestedvalues": [
+				"Castle",
+				"Fortress",
+				"Bunker",
+				"Military base",
+				"Wall",
+				"Defensive line"
+			],
+			"suggested": true
+		},
+		"code": {
+			"label": "Code",
+			"description": "The location or facility code, such as the ILC or ILK code.",
+			"type": "string"
+		},
+		"site_area": {
+			"label": "Site area",
+			"description": "where relevant (e.g. for compounds), the land area of the installation."
+		},
+		"floor_area": {
+			"label": "Floor area",
+			"description": "where relevant (e.g. for buildings), the interior floor area of the installation."
+		},
+		"height": {
+			"label": "Height",
+			"description": "where relevant (e.g. for towers), the height of the installation."
+		},
+		"length": {
+			"label": "Length",
+			"description": "where relevant (e.g. for fences and DMZs), the length of the installation."
+		},
+		"ownership": {
+			"label": "Ownership",
+			"description": "The current owner of the installation, if relevant."
+		},
+		"operator": {
+			"label": "Operator",
+			"description": "where different from ownership."
+		},
+		"controlledby": {
+			"label": "Controlled by",
+			"description": "The country or other power controlling the installation. Multiple powers may be indicated together with the corresponding dates."
+		},
+		"open_to_public": {
+			"label": "Open to public",
+			"description": "Whether the installation is currently open to the general public, if relevant; indicated by \"yes\" or \"no\".",
+			"type": "string",
+			"suggestedvalues": [
+				"yes",
+				"no"
+			]
+		},
+		"condition": {
+			"label": "Condition",
+			"description": "the current condition of the installation."
+		},
+		"built": {
+			"label": "Built",
+			"description": "the date when the installation was built, usually given in years. Use {{start date}} if 1583 or later."
+		},
+		"builder": {
+			"label": "Builder",
+			"description": "The person or group responsible for building the installation."
+		},
+		"used": {
+			"label": "Used",
+			"description": "the period during which the installation was in active military use, usually given in years."
+		},
+		"materials": {
+			"label": "Materials",
+			"description": "The materials used to construct the installation."
+		},
+		"demolished": {
+			"label": "Demolished",
+			"description": "the date when the installation was demolished, if applicable."
+		},
+		"battles": {
+			"label": "Battles",
+			"description": "any notable battles (usually sieges) that took place in or are closely associated with the installation; as above, the choice of which battles qualify as notable is left to the article editors."
+		},
+		"events": {
+			"label": "Events",
+			"description": "any notable non-battle events that took place in or are closely associated with the installation; as above, the choice of which events qualify as notable is left to the article editors."
+		},
+		"current_commander": {
+			"label": "Current commander",
+			"description": "for installations currently in military use, the current commanding officer."
+		},
+		"past_commanders": {
+			"label": "Past commanders",
+			"description": "any notable individuals that commanded the forces using this installation; the choice of which commanders qualify as notable is left to the editors of a particular article."
+		},
+		"garrison": {
+			"label": "Garrison",
+			"description": "The military forces garrisoning the installation. Specific units may be indicated if known; general numbers should be given otherwise."
+		},
+		"occupants": {
+			"label": "Occupants",
+			"description": "any notable occupants of the installation other than its commanders; as above, the choice of which occupants qualify as notable is left to the article editors."
+		},
+		"designations": {
+			"label": "Designations",
+			"description": "legal heritage protection status"
+		},
+		"mapframe": {
+			"label": "Show mapframe map",
+			"description": "Specify yes or no to show or hide the map, overriding the default",
+			"example": "yes",
+			"type": "string",
+			"default": "no",
+			"suggested": true
+		},
+		"mapframe-caption": {
+			"label": "Mapframe caption",
+			"description": "Caption for the map. If mapframe-geomask is set, then the default is \"Location in <<geomask's label>>\"",
+			"type": "string"
+		},
+		"mapframe-custom": {
+			"label": "Custom mapframe",
+			"description": "Use a custom map instead of the automatic mapframe. Specify either a {{maplink}} template, or another template that generates a mapframe map, or an image name. If used, other mapframe parameters will be ignored.",
+			"type": "wiki-template-name"
+		},
+		"mapframe-id": {
+			"aliases": [
+				"id",
+				"qid"
+			],
+			"label": "Mapframe Wikidata item",
+			"description": "Id (Q-number) of Wikidata item to use.",
+			"type": "string",
+			"default": "(item for current page)"
+		},
+		"mapframe-coordinates": {
+			"aliases": [
+				"mapframe-coord",
+				"coordinates",
+				"coord"
+			],
+			"label": "Mapframe coordinates ",
+			"description": "Coordinates to use, instead of any on Wikidata. Use the {{Coord}} template.",
+			"example": "{{Coord|12.34|N|56.78|E}}",
+			"type": "wiki-template-name",
+			"default": "(coordinates from Wikidata)"
+		},
+		"mapframe-wikidata": {
+			"label": "Mapframe shapes from Wikidata",
+			"description": "et to yes to show shape/line features from the wikidata item, if any, when coordinates are specified by parameter",
+			"example": "yes",
+			"type": "string"
+		},
+		"mapframe-shape": {
+			"label": "Mapframe shape feature",
+			"description": "Override display of mapframe shape feature. Turn off by setting to \"none\". Use an inverse shape (geomask) instead of a regular shape by setting to \"inverse\"",
+			"type": "string"
+		},
+		"mapframe-point": {
+			"label": "Mapframe point feature",
+			"description": "Override display of mapframe point feature. Turn off display of point feature by setting to \"none\". Force point marker to be displayed by setting to \"on\"",
+			"type": "string"
+		},
+		"mapframe-geomask": {
+			"label": "Mapframe geomask",
+			"description": "Wikidata item to use as a geomask (everything outside the boundary is shaded darker). Can either be a specific Wikidata item (Q-number), or a property that specifies the item to use (e.g. P17 for country, or P131 for located in the administrative territorial entity)",
+			"example": "Q100",
+			"type": "wiki-page-name"
+		},
+		"mapframe-switcher": {
+			"label": "Mapframe switcher",
+			"description": "Set to \"auto\" or \"geomasks\" or \"zooms\" to enable Template:Switcher-style switching between multiple mapframes. IF SET TO auto – switch geomasks found in location (P276) and located in the administrative territorial entity (P131) statements on the page's Wikidata item, searching recursively. E.g. an item's city, that city's state, and that state's country. IF SET TO geomasks – switch between the geomasks specified as a comma-separated list of Wikidata items (Q-numbers) in the mapframe-geomask parameter. IF SET TO zooms – switch between \"zoomed in\"/\"zoomed midway\"/\"zoomed out\", where \"zoomed in\" is the default zoom (with a minimum of 3), \"zoomed out\" is 1, and \"zoomed midway\" is the average.",
+			"type": "string"
+		},
+		"mapframe-frame-width": {
+			"aliases": [
+				"mapframe-width"
+			],
+			"label": "Mapframe width",
+			"description": "Frame width in pixels",
+			"type": "number",
+			"default": "270"
+		},
+		"mapframe-frame-height": {
+			"aliases": [
+				"mapframe-height"
+			],
+			"label": "Mapframe height",
+			"description": "Frame height in pixels",
+			"type": "number",
+			"default": "200"
+		},
+		"mapframe-shape-fill": {
+			"label": "Mapframe shape fill",
+			"description": "Color used to fill shape features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-shape-fill-opacity": {
+			"label": "Mapframe shape fill opacity",
+			"description": "Opacity level of shape fill, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-stroke-color": {
+			"aliases": [
+				"mapframe-stroke-colour"
+			],
+			"label": "Mapframe stroke color",
+			"description": "Color of line features, and outlines of shape features",
+			"type": "string",
+			"default": "#ff0000"
+		},
+		"mapframe-stroke-width": {
+			"label": "Mapframe stroke width",
+			"description": "Width of line features, and outlines of shape features",
+			"type": "number",
+			"default": "5"
+		},
+		"mapframe-marker": {
+			"label": "Mapframe marker",
+			"description": "Marker symbol to use for coordinates; see [[mw:Help:Extension:Kartographer/Icons]] for options",
+			"example": "museum",
+			"type": "string"
+		},
+		"mapframe-marker-color": {
+			"aliases": [
+				"mapframe-marker-colour"
+			],
+			"label": "Mapframe marker color",
+			"description": "Background color for the marker",
+			"type": "string",
+			"default": "#5E74F3"
+		},
+		"mapframe-geomask-stroke-color": {
+			"aliases": [
+				"mapframe-geomask-stroke-colour"
+			],
+			"label": "Mapframe geomask stroke color",
+			"description": "Color of outline of geomask shape",
+			"type": "string",
+			"default": "#555555"
+		},
+		"mapframe-geomask-stroke-width": {
+			"label": "Mapframe geomask stroke width",
+			"description": "Width of outline of geomask shape",
+			"type": "number",
+			"default": "2"
+		},
+		"mapframe-geomask-fill": {
+			"label": "Mapframe geomask fill",
+			"description": "Color used to fill outside geomask features",
+			"type": "string",
+			"default": "#606060"
+		},
+		"mapframe-geomask-fill-opacity": {
+			"label": "Mapframe geomask fill opacity",
+			"description": "Opacity level of fill outside geomask features, a number between 0 and 1",
+			"type": "number",
+			"default": "0.5"
+		},
+		"mapframe-zoom": {
+			"label": "Mapframe zoom",
+			"description": "Set the zoom level, from \"1\" to \"18\", to used if the zoom level cannot be determined automatically from object length or area",
+			"example": "12",
+			"type": "number",
+			"default": "10"
+		},
+		"mapframe-length_km": {
+			"label": "Mapframe length (km)",
+			"description": "Object length in kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-length_mi": {
+			"label": "Mapframe length (mi)",
+			"description": "Object length in miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_km2": {
+			"label": "Mapframe area (km^2)",
+			"description": "Object arean square kilometres, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-area_mi2": {
+			"label": "Mapframe area (mi^2)",
+			"description": "Object area in square miles, for automatically determining zoom level. ONLY use ONE of the available parameters for length or area",
+			"type": "number"
+		},
+		"mapframe-frame-coordinates": {
+			"aliases": [
+				"mapframe-frame-coord"
+			],
+			"label": "Mapframe frame coordinates",
+			"description": "Alternate latitude and longitude coordinates for initial placement of map, using {{coord}}",
+			"example": "{{Coord|12.35|N|56.71|E}}",
+			"type": "wiki-template-name"
+		},
+		"mapframe-line": {},
+		"module": {
+			"label": "Module",
+			"description": "to embed other templates beneath this one."
+		},
+		"embed": {
+			"label": "Embed",
+			"description": "to embed this template into another above it."
+		}
+	},
+	"paramOrder": [
+		"name",
+		"ensign",
+		"ensign_size",
+		"native_name",
+		"partof",
+		"location",
+		"coordinates",
+		"image",
+		"image_size",
+		"alt",
+		"caption",
+		"image2",
+		"image2_size",
+		"alt2",
+		"caption2",
+		"map_relief",
+		"map_size",
+		"map_alt",
+		"map_caption",
+		"gridref",
+		"type",
+		"code",
+		"site_area",
+		"floor_area",
+		"height",
+		"length",
+		"ownership",
+		"operator",
+		"controlledby",
+		"open_to_public",
+		"condition",
+		"built",
+		"builder",
+		"used",
+		"materials",
+		"demolished",
+		"battles",
+		"events",
+		"current_commander",
+		"past_commanders",
+		"garrison",
+		"occupants",
+		"designations",
+		"map_type",
+		"mapframe",
+		"mapframe-caption",
+		"mapframe-custom",
+		"mapframe-id",
+		"mapframe-coordinates",
+		"mapframe-wikidata",
+		"mapframe-point",
+		"mapframe-shape",
+		"mapframe-frame-width",
+		"mapframe-frame-height",
+		"mapframe-shape-fill",
+		"mapframe-shape-fill-opacity",
+		"mapframe-stroke-color",
+		"mapframe-stroke-width",
+		"mapframe-marker",
+		"mapframe-marker-color",
+		"mapframe-geomask",
+		"mapframe-geomask-stroke-color",
+		"mapframe-geomask-stroke-width",
+		"mapframe-geomask-fill",
+		"mapframe-geomask-fill-opacity",
+		"mapframe-zoom",
+		"mapframe-length_km",
+		"mapframe-length_mi",
+		"mapframe-area_km2",
+		"mapframe-area_mi2",
+		"mapframe-frame-coordinates",
+		"mapframe-switcher",
+        "mapframe-line",
+		"embed",
+		"module",
+		"noheader"
+	]
+}
+</templatedata>
+{{collapse bottom}}
+
+== See also ==
+*{{tl|Infobox military unit}}
+{{Buildings and structures infobox templates}}
+
+}}<noinclude>
+[[Category:WikiProject Military history template instructions|Military installation infobox]]
+[[Category:Templates missing wikidata]]
+</noinclude><includeonly>{{Sandbox other||
+{{#ifeq:{{{noheader|}}}|yes||
+
+}}
+}}</includeonly>
+<noinclude>
+[[Category:Military infobox templates|Installation]]
+[[Category:Buildings and structures infobox templates|Military installation]]
+[[Category:Infobox templates with module parameter|Military installation]]
+[[Category:Embeddable templates]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates with coordinates fields]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

@@ -1,0 +1,154 @@
+{{Infobox
+| bodyclass   = vcard
+ 
+| headerstyle = background-color:#ccc
+
+| title       = {{If empty|{{{name|{{{stadium_name|{{{centre_name|}}}}}}}}}<includeonly>|{{PAGENAMEBASE}}</includeonly>}}
+| titleclass  = fn org
+
+| subheader   = {{#if:{{{native_name|}}}|{{#if:{{{native_name_lang|}}}|<div class="nickname" lang="{{{native_name_lang}}}">}}{{{native_name}}}{{#if:{{{native_name_lang|}}}|</div>}} }}
+| subheader2  = {{#if:{{{nickname|{{{othernames|}}}}}}|<div class="nickname">{{{nickname|{{{othernames|}}}}}}</div>}}
+ 
+| image       = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo_image|}}}|size={{{logo_size|}}}|sizedefault=frameless|upright={{{logo_upright|1}}}|alt={{{logo_alt|}}}}}
+| caption     = {{{logo_caption|}}}
+ 
+|   image2    = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|upright={{{image_upright|1.14}}}|alt={{{image_alt|}}}}}
+| caption2    = {{{image_caption|{{{caption|}}}}}}
+   
+|   image3    = {{#invoke:InfoboxImage|InfoboxImage|image={{{image_map|}}}|size={{{map_size|{{{image_size|}}}}}}|sizedefault=frameless|upright=1|alt={{{map_alt|}}}}}
+| caption3    = {{{map_caption|}}}
+   
+|   image4    = {{#if:{{{pushpin_map|}}}|{{Location map|{{{pushpin_map}}}
+ | alt      = 
+ | coordinates = {{{coordinates|}}}
+ | float    = center
+ | border   = infobox
+ | caption  = {{#if:{{{pushpin_map_caption|}}}|{{{pushpin_map_caption}}}|Location within {{#invoke:Location map|data|{{{pushpin_map}}}|name}} }}
+ | mark     = Red pog.svg
+ | marksize = 7
+ | position = {{{pushpin_label_position|}}}
+ | relief   = {{{pushpin_relief|}}}
+ | label    = {{If empty|{{{pushpin_label|}}}|{{{name|{{{stadium_name|{{{centre_name|}}}}}}}}}<includeonly>|{{PAGENAMEBASE}}</includeonly>}}
+ | width    = {{If empty|{{{pushpin_mapsize|}}}|{{{map_size|}}}|250}}
+ }}}} 
+
+| image5    = {{#invoke:Infobox mapframe|auto|onByDefault={{#if:{{{pushpin_map|}}}{{{image_map|}}}|no|yes}}|mapframe-frame-width={{{mapframe-frame-width|250}}}|mapframe-wikidata={{{mapframe-wikidata|yes}}}|mapframe-zoom={{{mapframe-zoom|13}}}}}
+| caption5  = {{#invoke:Infobox mapframe|autocaption|onByDefault={{#if:{{{pushpin_map|}}}{{{image_map|}}}|no|yes}}}}
+
+|  label1     = Full name
+|   data1     = {{{fullname|}}}
+|  label2     = Former names
+|   data2     = {{{former names|{{{former_names|{{{formernames|}}}}}}}}}
+|  class2     = nickname
+|  label3     = Address
+|   data3     = {{br separated entries|1={{{address|}}}|2={{{city|}}}|3={{{country|}}} }}
+|  class3     = label
+|  label4     = Location
+|   data4     = {{{location|}}}
+|  class4     = label
+|  label5     = [[Geographic coordinate system|Coordinates]]
+|   data5     = {{{coordinates|}}}
+|  label6     = Elevation
+|   data6     = {{{elevation|{{{altitude|}}}}}}
+|  label7     = Public transit
+|   data7     = {{{publictransit|}}}
+|  label8     = Parking
+|   data8     = {{{parking|}}}
+|  label9     = Owner
+|   data9     = {{{owner|}}}
+|  class9     = agent
+|  label10    = Operator
+|   data10    = {{{operator|}}}
+|  class10    = agent
+|  label11    = Designation
+|   data11    = {{{designation|}}}
+|  label12    = Type
+|   data12    = {{{type|}}}
+|  class12    = category
+|  label13    = Genre(s)
+|   data13    = {{{genre|}}}
+|  label14    = Seating type
+|   data14    = {{{seating_type|}}}
+|  label15    = Executive suites
+|   data15    = {{{Suites|{{{suites|}}}}}}
+|  label16    = [[Seating capacity|Capacity]]
+|   data16    = {{{capacity|{{{seating_capacity|}}}}}}
+|  label17    = Record attendance
+|   data17    = {{{record_attendance|}}}
+|  label18    = Field size
+|   data18    = {{{dimensions|}}}
+|  label19    = Field shape
+|   data19    = {{{field_shape|}}}
+|  label20    = [[Area|Acreage]]
+|   data20    = {{{Acreage|{{{acreage|}}}}}}
+|  label21    = Surface
+|   data21    = {{{surface|}}}
+|  label22    = Scoreboard
+|   data22    = {{{scoreboard|}}}
+|  label23    = Screens
+|   data23    = {{{screens|}}}
+|  label24    = Current use
+|   data24    = {{{currentuse|}}}
+|  class24    = category
+|  label25    = Production
+|   data25    = {{{production|}}}
+
+| header26    = {{#if:{{{broke ground|{{{broke_ground|}}}}}}{{{built|}}}{{{renovated|{{{rebuilt|}}}}}}{{{expanded|}}}{{{reopened|}}}{{{demolished|}}}{{{rebuilt|}}}{{{cost|{{{construction_cost|}}}}}}{{{architect|}}}{{{project manager|{{{project_manager|}}}}}}{{{structural engineer|}}}{{{services engineer|}}}{{{general contractor|{{{general_contractor|}}}}}}{{{main contractors|{{{main_contractors|}}}}}}|Construction}}
+|  label27    = [[Groundbreaking|Broke ground]]
+|   data27    = {{{broke ground|{{{broke_ground|}}}}}}
+|  label28    = Built
+|   data28    = {{{built|}}}
+|  label29    = Opened
+|   data29    = {{{opened|}}}
+|  label30    = Renovated
+|   data30    = {{{renovated|}}}
+|  label31    = Expanded
+|   data31    = {{{expanded|}}}
+|  label32    = Closed
+|   data32    = {{{closed|}}}
+|  label33    = Reopened
+|   data33    = {{{reopened|}}}
+|  label34    = Demolished
+|   data34    = {{{demolished|}}}
+|  label35    = Rebuilt
+|   data35    = {{{rebuilt|}}}
+|  label36    = Years active
+|   data36    = {{{yearsactive|}}}
+|  label37    = Construction cost
+|   data37    = {{{cost|{{{construction_cost|}}}}}}
+|  label38    = Architect
+|   data38    = {{{architect|}}}
+|  label39    = Builder
+|   data39    = {{{builder|}}}
+|  label40    = Project manager
+|   data40    = {{{project manager|{{{project_manager|}}}}}}
+|  label41    = Structural engineer
+|   data41    = {{{structural engineer|}}}
+|  label42    = Services engineer
+|   data42    = {{{services engineer|}}}
+|  label43    = General contractor
+|   data43    = {{{general contractor|{{{general_contractor|}}}}}}
+|  label44    = Main contractors
+|   data44    = {{{main contractors|{{{main_contractors|}}}}}}
+
+| header45    = {{#if:{{{tenants|{{{tenant|}}}}}}|Tenants}}
+|   data46    = {{{tenants|{{{tenant|}}}}}}
+
+| header47    = {{#if:{{{website|{{{Website|}}}}}}{{{homepage|}}}{{{URL|}}}|Website}}
+|   data48    = {{{website|{{{Website|{{{homepage|{{{URL|}}}}}}}}}}}}
+
+| header49    = {{{nrhp|{{{embedded|}}}}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox venue]] with unknown parameter "_VALUE_"|ignoreblank=y| Acreage | acreage | address | altitude | architect | broke ground | broke_ground | builder | built | capacity | caption | centre_name | city | closed | construction_cost | coordinates  | cost | country | currentuse | demolished | designation | dimensions | elevation | embedded | expanded | field_shape | former names | former_names | formernames | fullname | general contractor | general_contractor | genre | homepage | image | image_alt | image_caption | image_map | image_size | image_upright | location | logo_alt | logo_caption | logo_image | logo_size | logo_upright | main contractors | main_contractors | map_alt | map_caption | map_size | name | native_name | native_name_lang | nickname | nrhp | opened | operator | othernames | owner | parking | production | project manager | project_manager | publictransit | pushpin_label | pushpin_label_position | pushpin_map | pushpin_map_caption | pushpin_mapsize | pushpin_relief | rebuilt | record_attendance | renovated | reopened | scoreboard | screens | seating_capacity | seating_type | services engineer | stadium_name | structural engineer | Suites | suites | surface | tenant | tenants | type | URL | website | Website | yearsactive 
+| mapframe | mapframe-caption | mapframe-custom | mapframe-id | mapframe-coord | mapframe-wikidata | mapframe-point | mapframe-shape | mapframe-frame-width | mapframe-frame-height | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-geomask | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-zoom | mapframe-length_km | mapframe-length_mi | mapframe-area_km2 | mapframe-area_mi2 | mapframe-frame-coordinates | mapframe-frame-coord | mapframe-switcher
+}}{{main other|{{#if:{{both|{{{image_map|}}}|{{{pushpin_map|}}}}}|}}{{#if:{{both|{{{map_caption|}}}|{{{pushpin_map|}}}}}|}}}}<noinclude>
+
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Pages using infobox venue with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox venue with both image_map and pushpin_map]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox venue with both map_caption and pushpin_map]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

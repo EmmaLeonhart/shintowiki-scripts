@@ -1,0 +1,39 @@
+{{#invoke:Template wrapper|wrap|_template=infobox person
+| _alias-map = field:known_for,training:education,works:notable_works,module:module2
+| _exclude = patron,patrons,memorial,memorials,elected
+| template_name             = infobox artist
+| name                      = {{PAGENAMEBASE}}
+| signature_type            = Signature
+| module                    = {{#if:{{{patron|}}}{{{patrons|}}}{{{memorial|}}}{{{memorials|}}}{{{elected|}}}|
+                                {{ infobox
+                                | child     = yes
+                                | decat     = yes 
+                                | title     = 
+                                | label1    = Elected
+                                | data1     = {{{elected|}}}
+                                | class1    = org
+                                | label2    = <span style="white-space:nowrap;">Patron(s)</span>
+                                | data2     = {{if empty|{{{patron|}}}|{{{patrons|}}}}}
+                                | label3    = <span style="white-space:nowrap;">Memorial(s)</span>
+                                | data3     = {{if empty|{{{memorial|}}}|{{{memorials|}}}}}
+                                | rowclass3 = note
+                                }}
+                              }}
+}}{{#invoke:Check for clobbered parameters|check
+| template = [[Template:Infobox artist]]
+| cat = {{main other|Category:Pages using infobox artist with conflicting parameters}}
+| field; known_for
+| training; education
+| works; notable_works
+| module; module2
+| patron; patrons
+| memorial; memorials
+}}<noinclude>
+{{documentation}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

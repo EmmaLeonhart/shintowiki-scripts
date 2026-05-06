@@ -1,0 +1,74 @@
+{{#ifeq:{{lc:{{{embed}}}}}|yes|<hr />'''Philosophy career'''}}{{#invoke:Template wrapper|wrap|_template=Infobox person
+ | _exclude         = era,region,school_tradition,institutions,thesis1_title,thesis1_url,thesis1_year,thesis2_title,thesis2_url,thesis2_year,thesis_title,thesis_url,thesis_year,doctoral_advisors,doctoral_advisor,academic_advisors,doctoral_students,notable_students,language,main_interests,notable_ideas,embed
+ | _alias-map       = books:notable_works,module:module2
+ | template_name    = infobox philosopher
+ | child            = {{lc:{{{embed}}}}}
+ | name             = <includeonly>{{PAGENAMEBASE}}</includeonly>
+ | signature_type   = Signature
+ | module           =
+    {{#if:{{{era|}}}{{{region|}}}{{{school_tradition|}}}{{{institutions|}}}{{{thesis1_title|}}}{{{thesis2_title|}}}{{{thesis_title|}}}{{{doctoral_advisors|}}}{{{doctoral_advisor|}}}{{{academic_advisors|}}}{{{doctoral_students|}}}{{{language|}}}{{{main_interests|}}}{{{notable_ideas|}}}
+     | {{Infobox |child=yes
+        | label1     = Era
+        | class1     = category
+        |  data1     = {{{era|}}}
+        | label2     = Region
+        | class2     = category
+        |  data2     = {{{region|}}}
+        | label3     = [[List of schools of philosophy|School]]
+        | class3     = category
+        |  data3     = {{{school_tradition|}}}
+        | label4     = Institutions
+        | class4     = org
+        |  data4     = {{{institutions|}}}
+
+        | label5     = {{#if:{{{thesis2_title|}}} |[[Thesis|Theses]] |[[Thesis]]}}
+        |  data5     = {{#if:{{{thesis1_title|}}}{{{thesis2_title|}}}
+             | {{plainlist|
+* {{#if:{{{thesis1_title|}}}
+   |   {{#if:{{{thesis1_url|}}}  |[{{{thesis1_url}}} ''{{{thesis1_title}}}''] |''{{{thesis1_title}}}''}}}}{{#if:{{{thesis1_year|}}} |&nbsp;({{{thesis1_year}}})
+  }}
+* {{#if:{{{thesis2_title|}}}
+   |   {{#if:{{{thesis2_url|}}}  |[{{{thesis2_url}}} ''{{{thesis2_title}}}''] |''{{{thesis2_title}}}''}}}}{{#if:{{{thesis2_year|}}} |&nbsp;({{{thesis2_year}}})
+  }}
+}}
+             | {{#if:{{{thesis_title|}}}
+                |   {{#if:{{{thesis_url|}}}  |[{{{thesis_url}}} ''{{{thesis_title}}}''] |''{{{thesis_title}}}''}}}}{{#if:{{{thesis_year|}}} |&nbsp;({{{thesis_year}}})
+            }} }}
+        | label6     = [[Doctoral advisor]]{{#if:{{{doctoral_advisors|}}}|s}}
+        |  data6     = {{if empty|{{{doctoral_advisors|}}}|{{{doctoral_advisor|}}}}}
+
+        | label7     = {{#if:{{{doctoral_advisors|}}}{{{doctoral_advisor|}}} |Other&nbsp;academic advisors |Academic advisors}}
+        |  data7     = {{{academic_advisors|}}}
+
+        | label8     = Doctoral students
+        |  data8     = {{{doctoral_students|}}}
+
+        | label9     = {{#if:{{{doctoral_students|}}} |Other&nbsp;notable students |Notable students}}
+        |  data9     = {{{notable_students|}}}
+
+        | label10    = Language
+        |  data10    = {{{language|}}}
+
+        | label11    = {{longitem|Main interests}}
+        |  data11    = {{{main_interests|}}}
+
+        | rowclass12 = note
+        | label12    = {{longitem|Notable ideas}}
+        |  data12    = {{{notable_ideas|}}}
+    }} }}
+}}{{#invoke:Check for clobbered parameters|check
+| template = [[Template:Infobox philosopher]]
+| cat = {{main other|Category:Pages using infobox philosopher with conflicting parameters}}
+| books; notable_works
+| doctoral_advisors; doctoral_advisor
+| module; module2
+}}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox philosopher with embed equal yes]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

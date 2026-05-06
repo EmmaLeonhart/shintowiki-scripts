@@ -1,0 +1,40 @@
+{{Documentation subpage}}
+{{High-use}}
+{{notice|'''This subtemplate is not intended to be used directly'''}}
+
+This subtemplate of {{tl|Infobox settlement}} is used for automatic linking for various image captions.  It is not meant to be used directly.
+
+=== Usage ===
+
+{| class="wikitable"
+|-
+! Code !! Result
+|-
+| <code><nowiki>{{Infobox settlement/link}}</nowiki></code> || {{Infobox settlement/link}}
+|-
+| <code><nowiki>{{Infobox settlement/link|type=Flag}}</nowiki></code> || {{Infobox settlement/link|type=Flag}}
+|-
+| <code><nowiki>{{Infobox settlement/link|type=Flag|link=Template:Infobox settlement}}</nowiki></code> || {{Infobox settlement/link|type=Flag|link=Template:Infobox settlement}}
+|-
+| <code><nowiki>{{Infobox settlement/link|type=Flag|name= }}</nowiki></code> || {{Infobox settlement/link|type=Flag|name= }}
+|-
+| <code><nowiki>{{Infobox settlement/link|type=Flag|name=the United States}}</nowiki></code> || {{Infobox settlement/link|type=Flag|name=the United States}}
+|-
+|}
+
+=== See also ===
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Place infobox subtemplates]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+</noinclude>
+<noinclude>
+{{wikidata link||bn|টেমপ্লেট:Infobox settlement/link|sl|Predloga:Infopolje Naselje/link}}
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+</noinclude>

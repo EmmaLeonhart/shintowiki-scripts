@@ -1,0 +1,16 @@
+{{Infobox manner of address
+| background  = #CCBBEE
+| colour      = #000066
+| name        = {{{name<includeonly>|{{{royal name|}}}</includeonly>}}}
+| image       = {{{image|}}} 
+| size        = {{{image_size|}}}
+| image_alt   = {{{image_alt|}}}
+| reference   = {{{reference<includeonly>|{{{dipstyle|}}}</includeonly>}}}
+| spoken      = {{{spoken<includeonly>|{{{offstyle|}}}</includeonly>}}}
+| alternative = {{br separated entries | {{{alternative<includeonly>|{{{altstyle|}}}</includeonly>}}} | {{{{{|safesubst:}}}#if:{{{lang|}}}| {{{lang}}}: {{{altlang|}}} }} }}
+}}<noinclude>{{documentation}}
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

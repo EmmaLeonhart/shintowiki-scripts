@@ -1,0 +1,266 @@
+{{#invoke:infobox|infoboxTemplate|child={{{child|{{{embed|}}}}}}
+| bodyclass  = biography vcard
+
+| above      = {{#if:{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}|<div class="honorific-prefix" style="font-size: 80%; font-weight: normal;">{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}</div>}}<div class="fn">{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</div>{{#if:{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}|<div class="honorific-suffix" style="font-size: 80%; font-weight: normal;">{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}</div>}}
+
+| subheader    = {{#ifeq:{{lc: {{{child|{{{embed|}}}}}}}}|yes|{{#if:{{{embed_title|}}}|'''{{{embed_title|}}}'''}}}}
+| subheader2  = {{#switch:{{{child|{{{embed|}}}}}}|yes=|#default={{#if:{{{native_name|}}}|{{#if:{{{native_name_lang|}}}|<div class="nickname" lang="{{{native_name_lang}}}">}}{{{native_name}}}{{#if:{{{native_name_lang|}}}|</div>}} }} }}
+| subheaderstyle2 = font-size: 125%
+
+| image      = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{#ifeq:{{lc:{{{landscape|}}}}}|yes|{{min|300|{{#if:{{#ifexpr:{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}|300|{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}}}x200px|{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{alt|{{{image_alt|}}}}}}|suppressplaceholder=yes}}
+| caption    = {{{image caption|{{{caption|{{{image_caption|}}}}}}}}}
+
+| label2     = Pronunciation
+| data2      = {{{pronunciation|}}}
+
+| label10    = Born
+| data10     = {{br separated entries
+   |1={{#if:{{{birth_name|}}}{{{birthname|}}}|<div style="display:inline" class="nickname">{{{birth_name|{{{birthname|}}}}}}</div>}}
+   |2={{#invoke:person date|birth}}
+   |3={{#if:{{{birth_place|}}}|<div style="display:inline" class="birthplace">{{{birth_place|}}}</div>}}
+}}
+
+| label11    = Bapti{{#if:{{{baptized|}}}|z|s}}ed
+| data11     = {{#if:{{{birth_date|}}}||{{{baptized|{{{baptised|}}}}}}}}
+
+| label12    = Disappeared
+| data12     = {{Br separated entries|1={{{disappeared_date|}}}|2={{{disappeared_place|}}}}}
+
+| label13    = Status
+| data13     = {{{status|{{{disappeared_status|}}}}}}
+
+| label14    = Died
+| data14     = {{br separated entries
+  |1={{#invoke:person date|death}}
+  |2={{#if:{{{death_place|}}}|<div style="display:inline" class="deathplace">{{{death_place|}}}</div>}}
+}}
+
+| label15    = Cause&nbsp;of death
+| data15     = {{{death cause|{{{death_cause|}}}}}}
+
+| label16    = Body discovered
+| data16     = {{{body discovered|{{{body_discovered|}}}}}}
+
+| label17    = {{#if:{{{burial_place|}}}|Burial place|Resting place}}
+| data17     = {{#if:{{{burial_place|}}}|{{Br separated entries|1={{{burial_place|}}}|2={{{burial_coordinates|}}}}}|{{Br separated entries|1={{{resting place|{{{resting_place|{{{restingplace|}}}}}}}}}|2={{{resting place coordinates|{{{resting_place_coordinates|{{{restingplacecoordinates|}}}}}}}}}}}}}
+| class17    = label
+
+| label18    = Monuments
+| data18     = {{{monuments|}}}
+
+| label21    = Other&nbsp;names
+| data21     = {{{other names|{{{other_names|{{{othername|{{{nickname|{{{alias|}}}}}}}}}}}}}}}
+| class21    = nickname
+
+| label22    = Siglum
+| data22     = {{{siglum|}}}
+
+| label23    = Citizenship
+| data23     = {{{citizenship|}}}
+| class23    = category
+
+| label24    = Education
+| data24     = {{{education|}}}
+
+| label25    = Alma&nbsp;mater
+| data25     = {{{alma mater|{{{alma_mater|}}}}}}
+
+| label26    = Occupation{{Pluralize from text|{{{occupation|}}}|plural=s}}
+| data26     = {{{occupation|}}}
+| class26    = role
+
+| label27    = Years&nbsp;active
+| data27     = {{{years active|{{{years_active|{{{yearsactive|}}}}}}}}}
+
+| label28    = Era
+| data28     = {{{era|}}}
+| class28    = category
+
+| label29    = Employer{{Pluralize from text|{{{employer|}}}|likely=(s)|plural=s}}
+| data29     = {{{employer|}}}{{main other|{{Pluralize from text| {{{employer|}}}|likely=}}}}
+| class29    = org
+
+| label30    = {{#if:{{{organisation|}}}|Organisation|Organization}}{{#if:{{{organizations|}}}|s|{{pluralize from text|{{{organization|{{{organisation|}}}}}}|likely=(s)|plural=s}}}}
+| data30     = {{{organisation|{{{organization|{{{organizations|}}}}}}}}}{{main other|{{Pluralize from text|{{{organization|{{{organisation|}}}}}}|likely=}}}}
+| class30    = org
+
+| label31    = Agent{{Pluralize from text|{{{agent|}}}|likely=(s)|plural=s}}
+| data31     = {{{agent|}}}{{main other|{{Pluralize from text|{{{agent|}}}|likely=}}}}
+| class31    = agent
+
+| label32    = Known&nbsp;for
+| data32     = {{{known for|{{{known_for|{{{known|}}}}}}}}}
+
+| label33    = Works
+| data33     = {{{works|}}}
+
+| label34    = <span style="white-space:nowrap;">Notable credit{{Pluralize from text|{{{credits|}}}|likely=(s)|plural=s}}</span>
+| data34     = {{#if:{{{works|}}}||{{{credits|}}}{{main other|{{Pluralize from text|{{{credits|}}}|likely=}}}}}}
+
+| label35    = Label{{Pluralize from text|{{{label_name|}}}|likely=(s)|plural=s}}
+| data35     = {{#if:{{{works|}}}{{{credits|}}}||{{{label_name|}}}{{main other|{{Pluralize from text|{{{label_name|}}}|likely=}}}}}}
+
+| label36    = <span style="white-space:nowrap;">Notable work</span>
+| data36     = {{#if:{{{works|}}}{{{credits|}}}{{{label_name|}}}||{{{notable works|{{{notable_works|}}}}}}}}
+
+| label37    = Style
+| data37     = {{{style|}}}
+| class37    = category
+
+| label40    = Television
+| data40     = {{{television|}}}
+
+| label41    = Height
+| data41     = {{#if:{{{height_m|{{{height_cm|}}}}}}{{{height_ft|}}}{{{height_in|}}} | {{convinfobox|{{{height_m|{{{height_cm|}}}}}}|{{#if:{{{height_m|}}}|m|cm}}|{{{height_ft|}}}|ft|{{{height_in|}}}|in}}}}{{#if:{{{height|}}} | {{infobox person/height|{{{height|}}}}}}}
+
+| label42    = {{#if:{{{office|}}}|Office|Title}}
+| data42     = {{{office|{{{title|}}}}}}
+| class42    = title
+
+| label43    = Term
+| data43     = {{{term|}}}
+
+| label44    = Predecessor
+| data44     = {{{predecessor|}}}
+
+| label45    = Successor
+| data45     = {{{successor|}}}
+
+| label46    = {{longitem|Political party}}
+| data46     = {{{party|{{{political_party|}}}}}}
+| class46    = org
+
+| label47    = {{longitem|Other political<br />affiliations}}
+| data47     = {{{otherparty|}}}
+| class47    = org
+
+| label48    = Movement
+| data48     = {{{movement|}}}
+| class48    = category
+
+| label49    = Opponent{{Pluralize from text|{{{opponents|}}}|likely=(s)|plural=s}}
+| data49     = {{{opponents|}}}{{main other|{{Pluralize from text|{{{opponents|}}}|likely=}}}}
+
+| label50    = Board member&nbsp;of
+| data50     = {{{boards|}}}
+
+| label51    = {{longitem|{{#if:{{{criminal_charges|}}}|Criminal charges|Criminal charge{{pluralize from text|{{{criminal charge|{{{criminal_charge|}}}}}}|likely=(s)|plural=s}}}}}}
+| data51     = {{{criminal_charges|{{{criminal charge|{{{criminal_charge|}}}}}}}}}{{main other|{{Pluralize from text|{{{criminal charge|{{{criminal_charge|}}}}}}|likely=}}}}
+
+| label52    = {{longitem|Criminal penalty}}
+| data52     = {{{criminal penalty|{{{criminal_penalty|}}}}}}
+
+| label53    = {{longitem|{{#if:{{{judicial status|{{{judicial_status|}}}}}}|Judicial status|Criminal status}}}}
+| data53     = {{#if:{{{judicial status|{{{judicial_status|}}}}}} | {{{judicial status|{{{judicial_status}}}}}} | {{{criminal status|{{{criminal_status|}}}}}}}}
+| class53    = category
+
+| label54    = Spouse{{#if:{{{spouses|}}}|s|{{Pluralize from text|{{{spouse|{{{spouse(s)|}}}}}}|likely=(s)|plural=s}}}}
+| data54     = {{{spouse|{{{spouses|{{{spouse(s)|}}}}}}}}}{{main other|{{Pluralize from text| {{{spouse|{{{spouse(s)|}}}}}} |likely=}}}}
+
+| label55    = Partner{{#if:{{{partners|}}}|s|{{Pluralize from text|{{{partner|{{{domesticpartner|{{{domestic_partner|{{{partner(s)|}}}}}}}}}}}} |likely=(s)|plural=s}}}}
+| data55     = {{{partner|{{{domesticpartner|{{{domestic_partner|{{{partners|{{{partner(s)|}}}}}}}}}}}}}}}{{main other|{{Pluralize from text| {{{partner|{{{domesticpartner|{{{domestic_partner|{{{partner(s)|}}}}}}}}}}}} |likely=}}}}
+
+| label56    = Children
+| data56     = {{{children|}}}
+
+| label57    = {{#if:{{{parents|}}}|Parent{{Pluralize from text|{{{parents|}}}|likely=(s)|plural=s}}|{{#ifexpr:{{count|{{{father|}}}|{{{mother|}}}}} > 1|Parents|{{#if:{{{father|}}}|Father|{{#if:{{{mother|}}}|Mother}}}}}}}}
+| data57     = {{#if:{{{parents|}}}|{{{parents}}}|{{#ifexpr:{{count|{{{father|}}}|{{{mother|}}}}} > 1|{{Unbulleted list|{{{father}}} (father)|{{{mother}}} (mother)}}|{{{mother|}}}{{{father|}}}}}}}{{main other|{{Pluralize from text|{{{parents|}}}|likely=}}}}
+
+| label58    = Relatives
+| data58     = {{{relations|{{{relatives|}}}}}}
+
+| label59    = Family
+| data59     = {{{family|}}}
+
+| label60    = Call sign
+| data60     = {{{callsign|}}}
+
+| label61    = Awards
+| data61     = {{{awards|}}}
+
+| label62    = {{#if:{{{honours|}}}|Honours|Honors}}
+| data62     = {{{honours|{{{honors|}}}}}}
+
+| data64     = {{{misc|{{{module|}}}}}}
+| data65     = {{{misc2|{{{module2|}}}}}}
+| data66     = {{{misc3|{{{module3|}}}}}}
+| data67     = {{{misc4|{{{module4|}}}}}}
+| data68     = {{{misc5|{{{module5|}}}}}}
+| data69     = {{{misc6|{{{module6|}}}}}}
+
+| label70    = Website
+| data70     = {{{website|{{{homepage|{{{URL|{{{url|}}}}}}}}}}}}
+
+| header71   = {{#if:{{{signature|}}}|{{if empty|{{{signature_type|}}}|Signature}}}}
+| data72     = {{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size={{{signature_size|}}}|class=infobox-signature skin-invert|sizedefault=150px|alt={{{signature alt|{{{signature_alt|}}}}}}}}
+
+| header73   = {{#if:{{{footnotes|}}}|Notes}}
+| data74     = {{#if:{{{footnotes|}}}|<div style="text-align: left;">{{{footnotes}}}</div>}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview = Page using [[Template:{{#if:{{{template_name|}}}|{{ucfirst:{{{template_name|}}}}}|Infobox person}}]] with unknown parameter "_VALUE_"|ignoreblank=n
+| abovestyle | agent | alias | alma mater | alma_mater | alt | awards | baptised | baptized | birth_date | birth_name | birth_place | birthname | boards | body discovered | body_discovered | burial_coordinates | burial_place | callsign | caption | child | children | citizenship | credits | criminal charge | criminal penalty | criminal status | criminal_charge | criminal_charges | criminal_penalty | criminal_status | death cause | death_cause | death_date | death_place | disappeared_date | disappeared_place | disappeared_status | domestic_partner | domesticpartner | education | embed | embed_title | employer | era | family | father | footnotes | height | height_cm | height_ft | height_in | height_m | homepage | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | honorific-prefix | honorific-suffix | honors | honours | image | image caption | image size | image_alt | image_caption | image_size | image_upright | imagesize | judicial status | judicial_status | known | known for | known_for | label_name | landscape | misc | misc2 | misc3 | misc4 | misc5 | misc6 | module | module2 | module3 | module4 | module5 | module6 | monuments | mother | movement | name | native_name | native_name_lang | nickname | nocat_wdimage | notable works | notable_works | occupation | office | opponents | organisation | organization | organizations | other names | other_names | othername | otherparty | parents | partner | partners | partner(s) | party | predecessor | pre-nominals | political_party | post-nominals | pronunciation | relations | relatives | resting place | resting place coordinates | resting_place | resting_place_coordinates | restingplace | restingplacecoordinates | siglum | signature | signature alt | signature_alt | signature_size | signature_type | spouse | spouses | spouse(s) | status | style | successor | template_name | television | term | title | URL | url | website | works | years active | years_active | yearsactive }}{{Main other|{{#if:{{{pronunciation|}}}|}}{{#if:{{{signature|}}}|}}}}{{#invoke:Check for conflicting parameters|check
+| nested = 1
+| template = [[Template:{{#if:{{{template_name|}}}|{{ucfirst:{{{template_name|}}}}}|Infobox person}}]]
+| cat = {{main other|Category:Pages using {{if empty|{{{template_name|}}}|infobox person}} with conflicting parameters}}
+| child; embed
+| honorific prefix; honorific_prefix; honorific-prefix; pre-nominals
+| honorific suffix; honorific_suffix; honorific-suffix; post-nominals
+| image_alt; alt
+| image size; image_size; imagesize
+| image caption; caption; image_caption
+| birth_name; birthname
+| baptized; baptised
+| status; disappeared_status
+| death cause; death_cause
+| body discovered; body_discovered
+| resting place; resting_place; restingplace
+| resting place coordinates; resting_place_coordinates; restingplacecoordinates
+| other names; other_names; othername; nickname; alias
+| alma mater; alma_mater
+| years active; years_active; yearsactive
+| organisation; organization; organizations
+| political_party; party
+| known for= known_for; known
+| {{#if:{{{works|}}}|works;}} {{#if:{{{credits|}}}|credits;}} {{#if:{{{label_name|}}}|label_name;}} notable works; notable_works
+| height_m; height_cm
+| office; title
+| criminal_charges; criminal charge; criminal_charge
+| criminal penalty; criminal_penalty
+| judicial status; judicial_status
+| criminal status; criminal_status
+| spouse; spouses; spouse(s)
+| partner; domesticpartner; domestic_partner; partners; partner(s)
+| {{#if:{{{parents|}}}||NULL_}}parents; {{#if:{{{father|}}}||NULL_}}father
+| {{#if:{{{parents|}}}||NULL_}}parents; {{#if:{{{mother|}}}||NULL_}}mother
+| relations; relatives
+| honours; honors
+| misc; module
+| misc2; module2
+| misc3; module3
+| misc4; module4
+| misc5; module5
+| misc6; module6
+| website; homepage; URL; url
+}}<includeonly>{{#ifeq:{{{child|{{{embed|}}}}}}|yes||{{Wikidata image|1={{{image|}}}|2={{{nocat_wdimage|}}}}}}}</includeonly><noinclude>
+{{documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Pages using infobox person with multiple employers]]
+[[Category:Pages using infobox person with multiple organizations]]
+[[Category:Pages using infobox person with multiple agents]]
+[[Category:Pages using infobox person with multiple credits]]
+[[Category:Pages using infobox person with multiple labels]]
+[[Category:Pages using infobox person with multiple opponents]]
+[[Category:Pages using infobox person with multiple criminal charges]]
+[[Category:Pages using infobox person with multiple spouses]]
+[[Category:Pages using infobox person with multiple partners]]
+[[Category:Pages using infobox person with multiple parents]]
+[[Category:Pages using {{if empty|{{lcfirst:{{{template_name|}}}}}|infobox person}} with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Biography template using pronunciation]]
+[[Category:Biography with signature]]
+[[Category:Articles with hCards]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

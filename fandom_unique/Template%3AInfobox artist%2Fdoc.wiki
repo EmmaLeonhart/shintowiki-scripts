@@ -1,0 +1,525 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Person infobox header}}
+{{Uses Infobox person|wrapped=1}}
+{{Lua|Module:Template wrapper|Module:Check for clobbered parameters}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+
+{{tl|Infobox artist}} may be used in an article about a person who is an [[:en:Artist|Artist]].
+
+== Usage ==
+
+The infobox may be added to an article by pasting a version of the template as shown below.
+
+{{Parameter names example |honorific_prefix |name |honorific_suffix |image |image_size={{{image_size}}}<br/> |alt |caption |native_name |native_name_lang |birth_name |birth_date |birth_place |baptised |death_date |death_place |resting_place |resting_place_coordinates |nationality |education |alma_mater |known_for |notable_works |style |movement |spouse |partner | children | parents | father | mother | relatives | family | awards |elected | patrons | memorials | signature | signature_type | signature_alt | signature_size |website |module}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox artist
+| honorific_prefix = 
+| name             = 
+| honorific_suffix = 
+| image            = 
+| image_size       = 
+| alt              = 
+| caption          = 
+| native_name      = 
+| native_name_lang = 
+| birth_name       = 
+| birth_date       = 
+| birth_place      = 
+| baptised         = 
+| death_date       =  
+| death_place      = 
+| resting_place    = 
+| resting_place_coordinates = 
+| nationality      = 
+| education        = 
+| alma_mater       = 
+| known_for        = 
+| notable_works    = 
+| style            = 
+| movement         = 
+| spouse           = 
+| partner          = 
+| children         = 
+| parents          = 
+| father           = 
+| mother           = 
+| relatives        = 
+| family           = 
+| awards           = 
+| signature        = 
+| signature_type   =
+| signature_size   = 
+| signature_alt    = 
+| elected          = 
+| patrons          = 
+| memorials        = 
+| website          = 
+| module           = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox artist
+| honorific_prefix = 
+| name             = 
+| honorific_suffix = 
+| image            = 
+| image_size       = 
+| alt              = 
+| caption          = 
+| native_name      = 
+| native_name_lang = 
+| birth_name       = 
+| birth_date       = 
+| birth_place      = 
+| baptised         = 
+| death_date       = 
+| death_place      = 
+| resting_place    = 
+| resting_place_coordinates = 
+| nationality      = 
+| education        = 
+| alma_mater       = 
+| known_for        = 
+| notable_works    = 
+| style            = 
+| movement         = 
+| spouse           = 
+| partner          = 
+| children         = 
+| parents          = 
+| father           = 
+| mother           = 
+| relatives        = 
+| family           = 
+| awards           = 
+| signature        = 
+| signature_type   =
+| signature_size   = 
+| signature_alt    = 
+| elected          = 
+| patrons          = 
+| memorials        = 
+| website          = 
+| module           = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+=== Parameters ===
+This is an list of commonly-used parameters. For a complete list, see [[Template:Infobox person/doc#Parameters|here]].
+{{Aligned table
+| class = wikitable
+| row1header = y
+| cols = 2
+| col1style = font-style:italic;padding-right:1.0em;
+| {{noitalic|Parameter}} | Description
+| honorific_prefix
+|  Displayed on the line above the person's name (title, e.g. "Sir", "Lord")
+| name
+|  Commonly-known name of person (defaults to article name, without disambiguation)
+| honorific_suffix
+|  Displayed on the line below the person's name (initials like "OBE", "FRSA")
+| image&nbsp;*
+|  A picture of or including the person. Use file name only, without the [[:en:Bracket|Bracket]]s and File: or Image: prefix (abc.jpg, xyz.png, etc.)
+| image_size&nbsp;*
+|  Size to display image: ''200px'' (set width), ''x300px'' (set height), or ''200x300px'' (max width & max height). This defaults to ''frameless'' (default is 220px, but logged in users can change this by clicking on "my preferences" and adjusting thumbnail size) if empty or omitted. This parameter should not normally need to be set.
+| alt&nbsp;*
+|   Alternative text for image, for visually impaired readers (see [[WP:ALT]])
+| caption&nbsp;*
+|   Caption to accompany image. If a (portrait) photograph of the person, try to include date of photo and photographer's name.
+| native_name
+|  Name in the person's [[native language]]. If more than one, separate using {{tl|plainlist}}.
+| native_name_lang
+|  [[:en:ISO 639-1|ISO 639-1]] two-letter code for person's native language (e.g. "fr" for French). If more than one, use {{tl|lang}} in {{para|native_name}} instead.
+| birth_name
+|  Name at birth,  if different from ''name''
+| birth_date
+|  Date of birth. If the person is living, use {{tl|Birth date and age}}, {{tl|Birth-date and age}}, or {{tl|Birth year and age}}. If deceased, use {{tl|Birth date}} or {{tl|Birth date text}}. Use plain text for partial dates. <br />Example: <nowiki>{{Birth date and age|1950|8|26}}</nowiki> if born August 26, 1950 <br />Example: <nowiki>{{Birth date and age|df=yes|1950|8|26}}</nowiki> to display birth date as 26 August 1950
+| birth_place
+|  Place of birth (town/city, state/province, country)
+| death_date
+|  Date of death. If the date of birth is known, use {{tl|Death date and age}}, {{tl|Death-date and age}}, or {{tl|Death year and age}}. Otherwise, use {{tl|Death date}} or {{tl|Death date text}}. Use plain text for partial dates. <br />Example: <nowiki>{{Death date and age|1993|2|24|1950|8|26}}</nowiki> if died February 24, 1993 and born August 26, 1950 <br />Example: <nowiki>{{Death date and age|df=yes|1993|2|24|1941|4|12}}</nowiki> to display death date as 24 February 1993
+| death_place
+|  Place of death (town/city, state/province, country)
+| death_cause
+| Cause of death. Should be clearly defined and sourced, and should only be included when the cause of death has significance for the subject's notability, e.g. [[James Dean]], [[John Lennon]]. 
+| resting_place
+|  Place of burial, ash-scattering, etc.
+| resting_place_coordinates
+|  Precise coordinates for place of burial, ash-scattering etc. Use {{tl|coord}} template.
+| nationality
+|  Nationality of the person. Use only when necessary per [[WP:INFONAT]], [[Wikipedia:Manual of Style (icons)#Biographical use|Do not use a flag template]].
+| education
+|  Where or with whom the artist trained
+| alma_mater
+|  The linked name of attended higher education institution(s). See ''[[:en:Alma mater|Alma mater]]''
+| known_for
+|  Main fields in which the artist works (i.e. photography, painting, sculpture, drawing, ceramics, graphic design)
+| notable_works
+|  Famous/significant/representative works. Works with their own articles should take priority (please limit to 5 at most)
+| style
+|  Artistic style which the artist employs
+| movement
+|  Artistic movement or school with which artist is associated.
+| spouse
+|  Name of spouse, if notable
+| partner
+|  Name of unmarried domestic partner, if notable
+| children
+|  Name of children, if any
+| awards
+|  Significant awards the artist has won. Consider using the template: {{tlx|awd|award|year|title|role|name}}
+| signature
+|  An image of the person's signature. Please use image name: {{pval|abc.jpg}}, {{pval|xpz.png}}, {{pval|123.gif}}, etc., without the {{samp|File:}} or {{samp|Image:}} prefix
+| signature_type
+|  Changes the '''Signature''' label to the preferred argument, such as '''Seal'''
+| signature_size
+|  Default is {{samp|150px}}. If necessary, a signature can be resized manually as per the {{para|image_size}} parameter.
+| signature_alt
+|  Alt text for the signature image. For example, for {{samp|[[:File:Thomas Jefferson Signature.svg]]}}, the alt text might be {{para|signature_alt| Th: Jefferson}}, spelling out the signature 
+| elected
+|  Bodies to which the artist has been elected member
+| patrons
+|  Patrons of the artist
+| memorials
+|  Monuments, plaques, entities named after the subject, etc.
+| website
+|  Official website only. Unofficial websites should be placed under <nowiki>==External links==</nowiki> in the body of the article. Use {{tl|URL}} as in <nowiki>{{URL|Example.com}}</nowiki>. Do not include the <code>www.</code> part unless the server requires it. Use [[:en:Camel case|Camel case]] capitalization to make multiword domain names easier to read.
+| module
+|  Used for embedding other templates into this infobox (see [[#module|below]] for more details).
+}}
+<nowiki>*</nowiki> Only used if the {{{image}}} parameter used.
+
+{{Anchor|module}}
+
+=== Embedding other templates via ''module'' parameter=== 
+The ''module'' parameter is used for embedding other templates into this infobox (see [[Wikipedia:Infobox modules]] and [[:Category:Biographical templates usable as a module]]).
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox artist
+| name = 
+| 
+| module = 
+  {{Infobox football biography | embed = yes
+  | 
+  }}
+}}
+</syntaxhighlight>
+
+== Example ==
+{{Infobox artist
+| name             = Salvador Dalí
+| image            = Salvador Dalí 1939.jpg
+| caption          = Dalí in 1939 (photo by [[:en:Carl Van Vechten|Carl Van Vechten]])
+| birth_name       = Salvador Domingo Felipe Jacinto Dalí i Domènech
+| birth_date       = {{birth date|1904|5|11}}
+| birth_place      = [[Figueres]], [[:en:Catalonia|Catalonia]], Spain
+| death_date       = {{death date and age|1989|01|23|1904|05|11}}
+| death_place      = Figueres, Catalonia, Spain
+| resting_place    = Crypt at [[Dalí Theatre and Museum]], Figueres, Spain
+| education        = [[Real Academia de Bellas Artes de San Fernando|San Fernando School of Fine Arts]], [[Madrid]], Spain
+| known_for        = Painting, drawing, photography, sculpture, writing, film
+| notable_works    = {{unbulleted list
+  | ''[[The Persistence of Memory]]'' (1931)
+  | ''[[Soft Construction with Boiled Beans (Premonition of Civil War)]]'' (1936)
+  | ''[[Swans Reflecting Elephants]]'' (1937)
+  | ''[[Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening]]'' (1944)
+  | ''[[The Temptation of St. Anthony (Dalí)|The Temptation of St. Anthony]]'' (1946)
+  }}
+| movement         = [[Cubism]], [[:en:Dada|Dada]], [[Surrealism]]
+| spouse           = [[Gala Dalí]] (Elena Ivanovna Diakonova)
+| signature        = Salvador dali signature.svg
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox artist
+| name             = Salvador Dalí
+| image            = Salvador Dalí 1939.jpg
+| caption          = Dalí in 1939 (photo by [[:en:Carl Van Vechten|Carl Van Vechten]])
+| birth_name       = Salvador Domingo Felipe Jacinto Dalí i Domènech
+| birth_date       = {{birth date|1904|5|11}}
+| birth_place      = [[Figueres]], [[:en:Catalonia|Catalonia]], Spain
+| death_date       = {{death date and age|1989|01|23|1904|05|11}}
+| death_place      = Figueres, Catalonia, Spain
+| resting_place    = Crypt at [[Dalí Theatre and Museum]], Figueres, Spain
+| education        = [[Real Academia de Bellas Artes de San Fernando|San Fernando School of Fine Arts]], [[Madrid]], Spain
+| known_for        = Painting, drawing, photography, sculpture, writing, film
+| notable_works    = {{unbulleted list
+  | ''[[The Persistence of Memory]]'' (1931)
+  | ''[[Soft Construction with Boiled Beans (Premonition of Civil War)]]'' (1936)
+  | ''[[Swans Reflecting Elephants]]'' (1937)
+  | ''[[Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening]]'' (1944)
+  | ''[[The Temptation of St. Anthony (Dalí)|The Temptation of St. Anthony]]'' (1946)
+  }}
+| movement         = [[Cubism]], [[:en:Dada|Dada]], [[Surrealism]]
+| spouse           = [[Gala Dalí]] (Elena Ivanovna Diakonova)
+| signature        = Salvador dali signature.svg
+}}
+</syntaxhighlight>
+{{clear}}
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox artist with unknown parameters}}
+* {{clc|Pages using infobox artist with conflicting parameters}}
+* {{clc|Biography template using pronunciation}}
+* {{clc|No local image but image on Wikidata}} – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[:en:Wikidata|Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== See also ==
+* {{tl|Infobox person}}
+* {{tl|Infobox musical artist}}
+* {{tl|Infobox artwork}}
+* {{tl|Image information art}} – for image pages
+
+== TemplateData==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "An infobox for artists",
+	"format": "{{_\n| ________________ = _\n}}\n",
+	"params": {
+		"honorific_prefix": {
+			"label": "Honorific prefix",
+			"description": "Title such as 'Sir', 'Lord'",
+			"type": "wiki-page-name",
+			"required": false
+		},
+		"name": {
+			"label": "Name",
+			"description": "Commonly-known name of person (defaults to article name, without disambiguation)",
+			"type": "string/line",
+			"default": "PAGENAME",
+			"required": false
+		},
+		"honorific_suffix": {
+			"label": "Honorific suffix",
+			"description": "Initials such as 'OBE', 'FRSA'",
+			"type": "wiki-page-name",
+			"required": false
+		},
+		"image": {
+			"label": "Image",
+			"description": "Filename for the image (e.g. 'Example.jpg').",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"image_size": {
+			"label": "Image size",
+			"description": "Size of the image (e.g. '220px').",
+			"type": "string/line",
+			"default": "varies",
+			"required": false,
+			"aliases": [
+				"imagesize"
+			]
+		},
+		"alt": {
+			"label": "Alternative text",
+			"description": "Alternative text for the image.",
+			"type": "string/line",
+			"required": false
+		},
+		"caption": {
+			"label": "Caption",
+			"description": "Caption for the image.",
+			"type": "string",
+			"required": false
+		},
+		"birth_name": {
+			"label": "Birth name",
+			"description": "Name at birth, if different from 'name'.",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"birthname"
+			]
+		},
+		"birth_date": {
+			"label": "Birth date",
+			"description": "Date of birth. Use {{birth date and age}} (for living artists) or {{birth date}} for the deceased.",
+			"type": "string/line",
+			"required": false
+		},
+		"birth_place": {
+			"label": "Birth place",
+			"description": "Place of birth.",
+			"type": "string/line",
+			"required": false
+		},
+		"baptised": {
+			"label": "Baptised",
+			"description": "| Date of baptism, will not display if birth_date is entered.",
+			"type": "string/line",
+			"required": false
+		},
+		"death_date": {
+			"label": "Death date",
+			"description": "Date of death. Use {{death date and age}}. Use {{death date}} if birth date unknown or incomplete.",
+			"type": "string/line",
+			"required": false
+		},
+		"death_place": {
+			"label": "Death place",
+			"description": "Place of death.",
+			"type": "string/line",
+			"required": false
+		},
+		"resting_place": {
+			"label": "Resting place",
+			"description": "Artist's grave, etc.",
+			"type": "string/line",
+			"required": false
+		},
+		"resting_place_coordinates": {
+			"label": "Resting place",
+			"description": "Coordinates of grave, etc. Use {{Coord|LAT|LONG|type:landmark|display=inline}}",
+			"type": "string/line",
+			"required": false
+		},
+		"nationality": {
+			"label": "Nationality",
+			"description": "Nationality.",
+			"type": "string/line",
+			"required": false
+		},
+		"education": {
+			"label": "Education",
+			"description": "Where or with whom the artist trained.",
+			"type": "string/line",
+			"required": false
+		},
+		"alma_mater": {
+			"label": "Alma mater",
+			"description": "The linked name of attended higher education institution(s).",
+			"type": "string/line",
+			"required": false
+		},
+		"known_for": {
+			"label": "Known for",
+			"description": "Main field(s) in which the artist works or worked (e.g. photography, painting, drawing, etc.).",
+			"type": "string/line",
+			"required": false
+		},
+		"notable_works": {
+			"label": "Notable work(s)",
+			"description": "Famous/significant/representative works. Please limit to five works.",
+			"type": "string/line",
+			"required": false
+		},
+		"style": {
+			"label": "Style",
+			"description": "Artistic style which the artist employs.",
+			"type": "string/line",
+			"required": false
+		},
+		"movement": {
+			"label": "Movement",
+			"description": "Artistic movement or school with which artist is associated.",
+			"type": "string/line",
+			"required": false
+		},
+		"spouse": {
+			"label": "Spouse(s)",
+			"description": "Spouse(s), if notable.",
+			"type": "string/line",
+			"required": false
+		},
+		"partner": {
+			"label": "Partner(s)",
+			"description": "Domestic partner(s), if notable.",
+			"type": "string/line",
+			"required": false
+		},
+        "children": {
+			"label": "Children",
+			"description": "Children, if any.",
+			"type": "string/line",
+			"required": false
+		},
+		"awards": {
+			"label": "Awards",
+			"description": "Significant awards won by the artist. Consider using {{awards}}.",
+			"type": "string/line",
+			"required": false
+		},
+		"signature": {
+			"description": "An image of the person's signature. Please use image name: abc.jpg, xpz.png, 123.gif, etc.",
+			"label": "Signature",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"signature_type": {
+			"description": "Alter from Signature to, for example, Seal",
+			"label": "Signature type",
+			"type": "string",
+			"required": false
+		},
+		"signature_size": {
+			"description": "Default is 150px. If necessary, a signature can be resized manually as per the \"image_size\" parameter.",
+			"label": "Signature size",
+			"required": false
+		},
+		"signature_alt": {
+			"description": "Alt text for the signature image. For example, for :File:Thomas Jefferson Signature.svg, the alt text might be |signature_alt= Th: Jefferson, spelling out the signature exactly as it appears in the image.",
+			"label": "Signature alt",
+			"aliases": [
+				"signature alt"
+			],
+			"type": "string",
+			"required": false
+		},
+		"elected": {
+			"label": "Elected bodies",
+			"description": "Bodies to which the artist has been elected.",
+			"type": "string/line",
+			"required": false
+		},
+		"patrons": {
+			"label": "Patron(s)",
+			"description": "Patrons of the artist.",
+			"type": "string/line",
+			"required": false
+		},
+		"memorials": {
+			"label": "Memorial(s)",
+			"description": "Monuments, plaques, entities named after the subject, etc.",
+			"type": "string/line",
+			"required": false
+		},
+		"website": {
+			"label": "Official website",
+			"description": "Artist's official website. Consider using {{URL}}.",
+			"type": "string/line",
+			"required": false
+		}
+	}
+}
+</templatedata>
+{{collapse bottom}}
+
+<includeonly>{{Sandbox other||
+{{Basepage subpage|
+
+{{citation needed|Artist}}
+
+}}
+}}</includeonly>
+<noinclude>
+[[Category:People and person infobox templates]]
+[[Category:Arts and culture infobox templates]]
+[[Category:Infobox templates with module parameter]]
+[[Category:Templates calling Infobox person]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

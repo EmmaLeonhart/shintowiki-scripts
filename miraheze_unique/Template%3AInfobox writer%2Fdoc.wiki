@@ -1,0 +1,702 @@
+{{Documentation subpage}}
+
+{{Person infobox header}}
+{{high-use}}
+{{auto short description}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+'''Infobox writer''' may be used to summarize information about a person who is a writer/author (includes screenwriters).
+
+If the writer-specific fields here are not needed, consider using the more general {{Tl|Infobox person}}; other infoboxes there can be found in [[:Category:People and person infobox templates]].
+
+This template may also be used as a module (or sub-template) of {{Tl|Infobox person}}; see [[Wikipedia:WikiProject Infoboxes/embed|WikiProject Infoboxes/embed]] for guidance on such usage.
+
+== Syntax ==
+{{Parameter names example
+|embed |honorific_prefix |name |honorific_suffix |image |image_size={{{image_size}}} |image_upright |landscape |alt |caption |native_name |native_name_lang |pseudonym |birth_name |birth_date |birth_place |death_date |death_place |resting_place |occupation |language |nationality |citizenship |education |alma_mater | |period |genre={{{genre}}} or {{{genres}}} |subject={{{subject}}} or {{{subjects}}} |movement |notable_works={{{notable_works}}} |spouse={{{spouse}}} or {{{spouses}}} |partner={{{partner}}} or {{{partners}}} |children |relatives |awards |signature={{{signature}}}<br /> |signature_alt |signature_size |signature_type |years_active |module |website={{{website}}} |portaldisp
+}}
+
+The infobox may be added by pasting the template as shown below into an article. All fields are optional. Any unused parameter names can be left blank or omitted.
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox writer
+| embed            = 
+| honorific_prefix = 
+| name             = 
+| honorific_suffix = 
+| image            = 
+| image_size       = 
+| image_upright    = 
+| landscape        = 
+| alt              = 
+| caption          = 
+| native_name      = 
+| native_name_lang = 
+| pseudonym        = 
+| birth_name       = 
+| birth_date       = 
+| birth_place      = 
+| death_date       = 
+| death_place      = 
+| resting_place    = 
+| occupation       = 
+| language         = 
+| nationality      = 
+| citizenship      = 
+| education        = 
+| alma_mater       = 
+| period           = 
+| genre            = 
+| subject          = 
+| movement         = 
+| notable_works    = 
+| spouse           = 
+| partner          = 
+| children         = 
+| relatives        = 
+| awards           = 
+| signature        = 
+| signature_alt    = 
+| signature_size   = 
+| signature_type   = 
+| years_active     = 
+| module           = 
+| website          = 
+| portaldisp       = 
+}}
+</syntaxhighlight>
+
+{{clear}}
+
+== Parameters ==
+Please remove any parameters from an article's infobox that are unlikely to be used.
+
+All parameters are optional. 
+
+Unless otherwise specified, if a parameter has multiple values, they should be comma-separated using the {{Tlx|Cslist}} template: 
+: {{Para|language|{{Tlx|Cslist|French|Spanish|English}}}}
+which produces:
+: |language={{Cslist|French|Spanish|English}}
+
+If any of the individual values contain commas already, add {{Para|semi|true}} to use semi-colons as separators:
+: {{Para|pseudonym|{{Tlx|Cslist|Smith, Bob|DaveyJones|Adams, Fred|semi{{=}}true}}}}
+which produces:
+: |pseudonym={{Cslist|Smith, Bob|DaveyJones|Adams, Fred|semi=true}}
+
+For more information, see [[Template:Infobox person#Inline lists]].
+
+{| class="wikitable"
+! style="text-align: left" | Parameter
+! style="text-align: left" | Explanation
+|-
+| '''name'''
+| Insert name of the person. Use the common name, typically name of article. If omitted it defaults to the name of the article; if present but blank, the header is omitted. Note: '''<ins>Do not</ins>''' add icons or other images.
+|-
+| '''embed '''
+| Set to "yes" if embedded in another infobox template.
+|-
+| '''honorific_prefix'''
+| Honorifics that go before the name, e.g. "Lady", "Sir"
+|-
+| '''honorific_suffix'''
+| Honorifics that go after the name, e.g. "MBE"
+|-
+| '''image'''
+| Insert image name. Use only the file name such as {{highlight|abc.jpg}}, {{highlight|xyz.png}}, {{highlight|123.gif}}, etc. Do not use syntax such as <nowiki>[[File:abc.jpg]]</nowiki> or <nowiki>[[File:abc.jpg|200px]]</nowiki><br />
+Only free-content images are allowed for depicting living people. Non-free and "fair use" images, e.g., promo photos, CD/DVD covers, posters, screen captures, etc., will be deleted.  See [[WP:NONFREE]].
+|-
+| '''image_upright'''
+| Scales the image thumbnail from its default size by the given factor. Values less than 1 scale the image down (0.9 = 90%) and values greater than 1 scale the image up (1.15 = 115%).
+|-
+| '''image_size'''
+| Size to display image: ''200px'' (set width), or ''200x300px'' (max width & max height). This defaults to 200px if empty or omitted.
+|-
+| '''landscape'''
+| Set to "yes" when using wide, short images. The image height (rather than width) will be limited to 200 pixels. 
+|-
+| '''alt'''
+| The [[:en:Alt attribute|Alt attribute]] for the image, for readers who cannot see the image. See [[WP:ALT]].
+|-
+| '''caption'''
+| Caption for the image. Try to include the date the image was created.
+|-
+| '''native_name'''
+| Name in local language. Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''native_name_lang'''
+| A [[language tag]], e.g. "fr" for French. If more than one, use {{tl|lang}} inside native_name instead
+|-
+| '''pseudonym'''
+| Any of the person's aliases or pen names. Use {{Tlx|Cslist}} for multiple values (see information at the [[#Parameters|top of this section]]).
+|-
+| '''nickname'''
+| Nickname(s) other than pen names.
+|-
+| '''birth_name'''
+| Insert person's name at birth (or christening if name at birth is unavailable).
+|-
+| '''birth_date'''
+| Insert the person's birth date if known as: month day, year or day month year as appropriate.
+
+For a living person consider using:
+:{{tlx|Birth date and age|year of birth|month of birth|day of birth}}
+
+Otherwise use:
+:{{tlx|Birth date|year of birth|month of birth|day of birth}}.
+
+In either case, add {{para|df|yes}} to show date as [[WP:DATES#Full date formatting|day before month]]; otherwise format is month before day.
+|-
+| '''birth_place'''
+| Insert the person's place of birth if known as: town, city, state, country. Note: '''<ins>Do not</ins>''' add flag icons to the birthplace. See: [[Wikipedia:Manual of Style (flags)]].
+|-
+| '''death_date'''
+| Note: Using this field will also change the background display color of the name at the top of the infobox to <span style="background:silver">silver</span>.
+
+If the person is still living, leave this parameter blank.
+
+Insert the person's date of death if known as: month day, year or day month year as appropriate.
+
+When the full birth date and death date are known, use the following:
+:{{Tlx|Death date and age|yr died|mo died|da died|yr born|mo born|da born}}
+
+Add {{para|df|yes}} to show date as [[WP:DATES#Full date formatting|day before month]]; otherwise format is month before day.
+
+::'''''example'''''
+:::<small><nowiki>{{Death date and age|</nowiki>{{CURRENTYEAR}}|{{CURRENTMONTH}}|{{CURRENTDAY}}|1950|12|31|df=yes<nowiki>}}</nowiki></small>
+
+::'''''output display results'''''
+:::<small>{{Death date and age|{{CURRENTYEAR}}|{{CURRENTMONTH}}|{{CURRENTDAY}}|1950|12|31|df=yes}}</small>
+
+*When only the birth and death years are known, use:
+:<small><nowiki>{{</nowiki>Death year and age|year died|year born<nowiki>}}</nowiki></small>
+::'''''example'''''
+:::<small><nowiki>{{</nowiki>Death year and age|{{CURRENTYEAR}}|1950<nowiki>}}</nowiki></small>
+::'''''output display results'''''
+:::<small>{{Death year and age|{{CURRENTYEAR}}|1950}}</small>
+
+*When only the birth month, birth year and death year are known, use:
+:<small>birth month, <nowiki>{{</nowiki>Death year and age|year died|year born<nowiki>}}</nowiki></small>
+::'''''example'''''
+:::<small>{{CURRENTMONTHNAME}}, <nowiki>{{</nowiki>Death year and age|{{CURRENTYEAR}}|1950<nowiki>}}</nowiki></small>
+::'''''output display results'''''
+:::<small>{{CURRENTMONTHNAME}}, {{Death year and age|{{CURRENTYEAR}}|1950}}</small>
+
+*When only the death year is known, use:
+:<small>death year</small>
+::'''''example'''''
+:::<small>{{CURRENTYEAR}}</small>
+::'''''output display results'''''
+:::<small>{{CURRENTYEAR}}</small>
+
+*When the date of death is unknown, but the person is certainly now dead use the following (case is insensitive):
+::'''''example'''''
+:::unknown
+::'''''output display results'''''
+:::date of death unknown
+
+*When the date of death is unknown, and it is preferable not to display anything and just change the background display color of the infobox. Enter the following (case is insensitive):
+::'''''example'''''
+:::died
+::'''''output display results'''''
+:::nothing will be displayed.
+
+*When the date of death is only known approximately.
+
+:Preface the entry with a wikilink <nowiki>[[</nowiki>Circa|c. <nowiki>]]</nowiki> or c. 
+::'''''examples'''''
+:::<small><nowiki>[[</nowiki>Circa|c.<nowiki>]]</nowiki> <nowiki>{{</nowiki>Death year and age|{{CURRENTYEAR}}|1950<nowiki>}}</nowiki></small>
+:::<small><nowiki>[[</nowiki>Circa|c.<nowiki>]]</nowiki> year died</small>
+::'''''output display results'''''
+:::<small>[[Wiktionary:circa|c.]] {{Death year and age|{{CURRENTYEAR}}|1950}}</small>
+:::<small>[[Wiktionary:circa|c.]] {{CURRENTYEAR}}</small>
+|-
+| '''death_place'''
+| Insert the person's place of death if known as: town, city, state, country. Note: '''<ins>Do not</ins>''' add flag icons to the deathplace. See: [[Wikipedia:Manual of Style (flags)]].
+|-
+| '''resting_place'''
+| Place of burial, ash-scattering, etc.
+|-
+|-
+| '''occupation'''
+| Insert the type of person: novelist, short story person, journalist, etc. Use {{Tlx|Cslist}} for multiple values (see information at the [[#Parameters|top of this section]]).
+|-
+| '''language'''
+| Language of published writings.
+|-
+| '''nationality'''
+| Nationality of person, use only when necessary per [[WP:INFONAT]].
+|-
+| '''citizenship'''
+| Citizenship of person., use only when necessary per [[WP:INFONAT]].
+|-
+| '''education'''
+| Use per [[MOS:INFOEDU]] ie. a list of higher ed institutions, degrees and dates. Use 'education' or 'alma mater', not both.
+|-
+| '''alma_mater'''
+| Use per [[MOS:INFOEDU]] ie. name only (not degree or date) of ONE place, the last attended higher ed institution. Use 'education' or 'alma mater', not both.
+|-
+| '''period'''
+| Dates from first publication to last publication.
+|-
+| '''genre'''
+| Fiction persons: All genres that the person wrote in. Use {{Tlx|Cslist}} for multiple values (see information at the [[#Parameters|top of this section]]).
+|-
+| '''subject'''
+| Non-fiction persons: All subjects that the person wrote about. Use {{Tlx|Cslist}} for multiple values (see information at the [[#Parameters|top of this section]]).
+|-
+| '''movement'''
+| Insert the literary movement associated with or involving the person. Use {{Tlx|Cslist}} for multiple values (see information at the [[#Parameters|top of this section]]).
+|-
+| '''notable_works'''
+| Names of '''notable''' works ([[WP:NN]]).
+
+Use {{Tlx|Unbulleted list}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+
+<small>If there is a dispute between editors over what is or is not a notable work, it should be brought up on the article's talk page. If no consensus can be developed for a particular person, the notable_works parameter should be marked with:</small>
+
+<small>{{highlight|<nowiki></nowiki>}}</small>
+|-
+| '''spouse'''
+| Name of spouse(s), followed by years of marriage. Use the format ''Name (1950–present)'' for current spouse and ''Name (1970–1999)'' for former spouse(s). Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''partner'''
+| Name of long-term unmarried partner(s) (e.g., [[domestic partner]]). Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''children'''
+| Number of children (e.g., 3), or list of children names. Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''relatives'''
+| Names of parents, siblings or other relatives; include only if they are independently notable or particularly relevant. Include the relationship in parentheses after the name (father, sister, uncle, etc.). Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''parents'''
+| Names of parents; include only if they are independently notable or particularly relevant. This parameter may be used for biological, adoptive, foster, or step-parents. Use {{Tlx|Unbulleted list}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+|-
+| '''influences'''
+| No longer supported. Please move cited/citable instances into prose.
+|-
+| '''influenced'''
+| No longer supported. Please move cited/citable instances into prose.
+|-
+| '''awards'''
+| Insert any '''notable''' awards the person has won.
+
+Consider using the template: {{tlx|Awards|award|year|title|role}}
+
+Use {{Tlx|Plainlist}} for multiple values (see information at [[Template:Infobox person#Inline lists]]).
+
+Note: '''<ins>Do not</ins>''' add icons or other images.
+|-
+| '''signature'''
+| An image of the person's signature. Image is displayed at a width of 128px, same format as {{Tl|Infobox person}}, {{Tl|Infobox officeholder}} and {{Tl|Infobox philosopher}}.
+|-
+| '''signature_type'''
+| Changes the '''Signature''' label to the preferred argument, such as '''Seal'''
+|-
+| '''signature_size'''
+| Default is {{samp|150px}}. If necessary, a signature can be resized manually as per the {{para|image_size}} parameter.
+|-
+| '''signature_alt'''
+| [[WP:Alternative text for images|Alternative text]] for signature. Write out the signature exactly as it appears in the image, including punctuation. For [[WP:ACCESSIBILITY|accessibility]].
+|-
+| '''years_active'''
+| Date range in years during which the subject was active in their principal occupation(s) and/or other activity for which they are notable. Use the format 1950–2000, or 1970–present if still active (note the use of an en dash, not hyphen). If no dates of birth and/or death are known for the subject, only a [[:en:Floruit|Floruit]] date range, as is common with ancient subjects, this parameter can be used for it. If approximate (circa) dates are known for either or both, put them in the birth_date and death_date parameters.
+|-
+| '''module'''
+| Used for embedding other infoboxes into this one.
+|-
+| '''website'''
+| If the person has an '''official''' website enter it here. '''<ins>Do not</ins>''' enter unofficial, blogs or fan websites. Only one '''official''' website is allowed. If the person has more than one '''official''' website, only the most prominent should be listed in the infobox. All other websites should be listed in the article under ==External links==.
+
+Use {{T|URL}} as in <nowiki>{{URL|ExampleCompany.com}}</nowiki>. Do not include the "<nowiki>http[s]://</nowiki>" or "www." parts unless the server requires it. Use [[:en:Camel case|Camel case]] capitalization to make multiword domain names easier to read.
+|-
+| '''portaldisp'''
+| This is an optional parameter to display the literature portal link at the bottom of the infobox. Leaving this parameter blank will cause the literature portal link '''not''' to display. Setting this parameter to '''yes''' or '''y''' (case is insensitive) will display the literature portal link.
+
+::::::[[File:Portal-puzzle.svg|frameless|upright=0.11|link=|alt=]] [[Portal:Literature|Literature portal]]
+
+If there is a dispute between editors over whether this parameter should be used in the article, it should be brought up on the article's talk page. If no consensus can be developed for a particular person, the portaldisp parameter should be marked with:
+
+{{highlight|<nowiki></nowiki>}}
+|-
+
+|}
+
+== Use as a child template ==
+The '''embed''' parameter is used when embedding this infobox into another.
+
+{{Infobox person module documentation |template=Infobox writer |parameter=embed |example_parameter1=genre}}
+
+== TemplateData ==
+{{TemplateData header}}
+{{collapse top|title=TemplateData}}
+<templatedata>
+{
+	"description": "Infobox writer may be used to summarize information about a person who is a writer/author (includes screenwriters).",
+	"format": "{{_\n| ________________ = _\n}}\n",
+	"params": {
+		"name": {
+			"required": false,
+			"label": "Name",
+			"type": "string",
+			"description": "Insert name of the person. Use the common name, typically name of article. If omitted it defaults to the name of the article; if present but blank, the header is omitted. Note: Do not add icons or other images.",
+			"suggested": true
+		},
+		"embed": {
+			"label": "Embedded",
+			"description": "Set to 'yes' if embedded in another infobox template.",
+			"type": "string",
+			"required": false,
+			"suggestedvalues": [
+				"Yes"
+			]
+		},
+		"honorific_prefix": {
+			"required": false,
+			"label": "Honorific (prefix)",
+			"type": "string",
+			"description": "Honorifics that go before the name, e.g. 'Lady', 'Sir', 'Dr'."
+		},
+		"honorific_suffix": {
+			"required": false,
+			"label": "Honorific (suffix)",
+			"type": "string",
+			"description": "Honorifics that go after the name, e.g. 'MBE'."
+		},
+		"native_name": {
+			"required": false,
+			"label": "Native name",
+			"type": "string",
+			"description": "Name of the writer in their native languages(s).  Use {{Plainlist}} for multiple values."
+		},
+		"native_name_lang": {
+			"required": false,
+			"label": "Native name language",
+			"type": "string",
+			"description": "A language tag e.g. 'fr' for French. If more than one, use {{lang}} inside native_name instead"
+		},
+		"image": {
+			"required": false,
+			"label": "Image",
+			"type": "wiki-file-name",
+			"description": "Image of the writer. Insert image name. Use only the file name such as abc.jpg, xyz.png, 123.gif, etc. Do not use syntax such as [[File:abc.jpg]] or [[File:abc.jpg|200px]]\nOnly free-content images are allowed for depicting living people. Non-free and \"fair use\" images, e.g., promo photos, CD/DVD covers, posters, screen captures, etc., will be deleted. See WP:NONFREE.",
+			"suggested": true
+		},
+		"image_size": {
+			"required": false,
+			"label": "Image size",
+			"type": "string",
+			"description": "Size to display image.",
+			"aliases": [
+				"image size",
+				"imagesize"
+			],
+			"example": "Format: 250px (set width), or 200x300px (max width & max height).",
+			"default": "200px if empty or omitted."
+		},
+		"image_upright": {
+			"required": false,
+			"label": "Image upright",
+			"type": "string",
+			"description": "Scales the image thumbnail from its default size by the given factor. Values less than 1 scale the image down (0.9 = 90%) and values greater than 1 scale the image up (1.15 = 115%)."
+		},
+		"landscape": {
+			"label": "Landscape",
+			"description": "Set to 'yes' when using wide, short images. The image height (rather than width) will be limited to 200 pixels.",
+			"type": "boolean"
+		},
+		"alt": {
+			"required": false,
+			"label": "Image alternative text",
+			"type": "string",
+			"description": "The alt attribute for the image, for readers who cannot see the image. See WP:ALT."
+		},
+		"caption": {
+			"required": false,
+			"label": "Image caption",
+			"aliases": [
+				"image caption",
+				"image_caption"
+			],
+			"type": "string",
+			"description": "Caption for the image. Try to include the date the image was created.",
+			"suggested": true
+		},
+		"pseudonym": {
+			"required": false,
+			"label": "Pseudonym",
+			"type": "string",
+			"description": "Any of the person's aliases or pen names. Use {{Cslist}} for multiple values"
+		},
+		"birth_name": {
+			"required": false,
+			"label": "Birth name",
+			"type": "string",
+			"description": "Insert person's name at birth (or christening if name at birth is unavailable)."
+		},
+		"birth_date": {
+			"required": false,
+			"label": "Birth date",
+			"type": "line",
+			"description": "Insert the person's birth date if known as: month day, year or day month year as appropriate.\nFor a living person consider using:\n\n{{Birth date and age|year of birth|month of birth|day of birth}}\nOtherwise use:\n\n{{Birth date|year of birth|month of birth|day of birth}}.\nIn either case, add |df=yes to show date as day before month; otherwise format is month before day.",
+			"suggested": true
+		},
+		"birth_place": {
+			"required": false,
+			"label": "Birth place",
+			"type": "string",
+			"description": "Insert the person's place of birth if known as: town, city, state, country. Note: Do not add flag icons to the birthplace."
+		},
+		"death_date": {
+			"required": false,
+			"label": "Death date",
+			"type": "line",
+			"description": "If the person is still living, leave this parameter blank.\n\nInsert the person's date of death if known as: month day, year or day month year as appropriate.\n\nWhen the full birth date and death date are known, use the following:\n\n{{Death date and age|yr died|mo died|da died|yr born|mo born|da born}} - See template page for more details about formatting options.",
+			"suggested": true
+		},
+		"death_place": {
+			"required": false,
+			"label": "Death place",
+			"type": "string",
+			"description": "Insert the person's place of death if known as: town, city, state, country. Note: Do not add flag icons to the deathplace."
+		},
+		"resting_place": {
+			"required": false,
+			"label": "Resting place",
+			"type": "string",
+			"description": "Place of writer's grave or ash scattering"
+		},
+		"occupation": {
+			"required": false,
+			"label": "Occupation",
+			"type": "string",
+			"description": "Insert the type of person: novelist, short story person, journalist, etc. Use {{Cslist}} for multiple values",
+			"suggested": true
+		},
+		"language": {
+			"required": false,
+			"label": "Language",
+			"type": "string",
+			"description": "Language of published writings"
+		},
+		"nationality": {
+			"required": false,
+			"label": "Nationality",
+			"type": "string",
+			"description": "Nationality of writer, use only when necessary per [[WP:INFONAT]]"
+		},
+		"citizenship": {
+			"required": false,
+			"label": "Citizenship",
+			"type": "string",
+			"description": "Writer's country of citizenship"
+		},
+		"education": {
+			"required": false,
+			"label": "Education",
+			"type": "string",
+			"description": "Education, e.g., degree, institution and graduation year, if relevant. If very little information is available or relevant, the 'alma_mater' parameter may be more appropriate."
+		},
+		"alma_mater": {
+			"required": false,
+			"label": "Alma mater",
+			"type": "string",
+			"description": "University or school that writer attended. If more than one, indicate ones where they obtained their degree(s) or graduated from."
+		},
+		"period": {
+			"required": false,
+			"label": "Period",
+			"type": "line",
+			"description": "Dates from first publication to last publication",
+			"suggested": true
+		},
+		"genre": {
+			"required": false,
+			"label": "Genre",
+			"type": "string",
+			"description": "Use for fiction writers: All genres that the person wrote in. Use {{Cslist}} for multiple values"
+		},
+		"subject": {
+			"required": false,
+			"label": "Subject",
+			"type": "string",
+			"description": "Use for non-fiction writers: All subjects that the person wrote about. Use {{Cslist}} for multiple values",
+			"suggested": true
+		},
+		"movement": {
+			"required": false,
+			"label": "Movement",
+			"type": "string",
+			"description": "Insert the literary movement associated with or involving the person. Use {{Cslist}} for multiple values"
+		},
+		"notable_works": {
+			"required": false,
+			"label": "Notable works",
+			"type": "string",
+			"description": "Names of notable works (see WP:NN). Use {{Unbulleted list}} for multiple values.",
+			"aliases": [
+				"notableworks"
+			],
+			"suggested": true
+		},
+		"spouse": {
+			"required": false,
+			"label": "Spouse",
+			"type": "string",
+			"description": "Name of spouse(s), followed by years of marriage. Use the format Name (1950–present) for current spouse and Name (1970–1999) for former spouse(s). Use {{Plainlist}} for multiple values."
+		},
+		"partner": {
+			"required": false,
+			"label": "Partner",
+			"type": "string",
+			"description": "Name of long-term unmarried partner(s) (e.g., domestic partner). Use {{Plainlist}} for multiple values."
+		},
+		"children": {
+			"required": false,
+			"label": "Children",
+			"type": "string",
+			"description": "Number of children (e.g., 3), or list of children names. Use {{Plainlist}} for multiple values."
+		},
+		"relatives": {
+			"required": false,
+			"label": "Relatives",
+			"type": "string",
+			"description": "Names of parents, siblings or other relatives; include only if they are independently notable or particularly relevant. Include the relationship in parentheses after the name (father, sister, uncle, etc.). Use {{Plainlist}} for multiple values."
+		},
+		"awards": {
+			"required": false,
+			"label": "Awards",
+			"type": "string",
+			"description": "Insert any notable awards the person has won.\nConsider using the template: {{Awards|award|year|title|role}}\n\nUse {{Plainlist}} for multiple values.",
+			"suggested": true
+		},
+		"signature": {
+			"required": false,
+			"label": "Signature",
+			"type": "wiki-page-name",
+			"description": "File name of the writer's signature. Image is displayed at a width of 128px."
+		},
+		"signature_type": {
+			"description": "Alter from Signature to, for example, Seal",
+			"label": "Signature type",
+			"type": "string"
+		},
+		"signature_size": {
+			"description": "Default is 150px. If necessary, a signature can be resized manually as per the \"image_size\" parameter.",
+			"label": "Signature size"
+		},
+		"signature_alt": {
+			"required": false,
+			"label": "Signature (alternative)",
+			"type": "string",
+			"description": "Alternative text for signature. Write out the signature exactly as it appears in the image, including punctuation. (For accessibility, to be read by screen readers.)"
+		},
+		"years_active": {
+			"description": "Date range in years during which the subject was active in their principal occupation(s) and/or other activity for which they are notable. Use the format 1950–2000, or 1970–present if still active (note the use of an en dash, not hyphen). If no dates of birth and/or death are known for the subject, only a floruit date range, as is common with ancient subjects, this parameter can be used for it. If approximate (circa) dates are known for either or both, put them in the birth_date and death_date parameters.",
+			"label": "Years Active",
+			"type": "string",
+			"required": false
+		},
+		"module": {
+			"required": false,
+			"label": "Module",
+			"type": "string",
+			"description": "Used for embedding other infoboxes into this one"
+		},
+		"website": {
+			"required": false,
+			"label": "Website",
+			"type": "string",
+			"description": "If the person has an official website enter it here. Do not enter unofficial, blogs or fan websites. Only one official website is allowed. If the person has more than one official website, only the most prominent should be listed in the infobox. All other websites should be listed in the article under ==External links==.\nUse {{URL}}. Do not include the \"http[s]://\" or \"www.\" parts unless the server requires it. Use camel case capitalization to make multiword domain names easier to read.",
+			"example": "{{URL|ExampleCompany.com}}",
+			"suggested": true
+		},
+		"portaldisp": {
+			"required": false,
+			"label": "Portal link",
+			"type": "string",
+			"description": "This is an optional parameter to display the literature portal link at the bottom of the infobox. Set this parameter to yes or y for enabling the portal link.",
+			"suggestedvalues": [
+				"yes"
+			]
+		}
+	}
+}
+</templatedata>
+{{Collapse bottom}}
+
+==Example==
+{{Infobox writer
+| name             = J. K. Rowling
+| honorific_suffix = {{post-nominals|country=GBR|CH|OBE|HonFRSE|FRCPE|FRSL|size=100%}}
+| image            = J. K. Rowling 2010.jpg
+| caption          = Rowling at the [[White House]] in 2010
+| birth_name       = Joanne Rowling
+| birth_date       = {{Birth date and age|df=yes|1965|7|31}}
+| birth_place      = [[Yate]], Gloucestershire, England
+| pseudonym        = {{unbulleted list|J. K. Rowling|Robert Galbraith}}
+| occupation       = {{hlist|Author|philanthropist}}
+| alma_mater       = {{ubl|[[University of Exeter]]|[[Moray House School of Education|Moray House]]}}
+| period           = [[Contemporary literature|Contemporary]]
+| years_active     = 1997–present
+| genres           = {{hlist|[[:en:Fantasy|Fantasy]]|[[drama]]|[[young adult fiction]]|[[:en:crime fiction|crime fiction]]}}
+| subject          =
+| movement         =
+| spouse           = {{unbulleted list|{{marriage|Jorge Arantes|1992|1995|end=divorced}}|{{marriage|Neil Murray|26 December 2001}}}}
+| children         = 3
+| relatives        =
+| website          = {{URL|jkrowling.com}}
+| signature        = JKRowlingsignature.svg
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox writer
+| name             = J. K. Rowling
+| honorific_suffix = {{post-nominals|country=GBR|CH|OBE|HonFRSE|FRCPE|FRSL|size=100%}}
+| image            = J. K. Rowling 2010.jpg
+| caption          = Rowling at the [[White House]] in 2010
+| birth_name       = Joanne Rowling
+| birth_date       = {{Birth date and age|df=yes|1965|7|31}}
+| birth_place      = [[Yate]], Gloucestershire, England
+| pseudonym        = {{unbulleted list|J. K. Rowling|Robert Galbraith}}
+| occupation       = {{hlist|Author|philanthropist}}
+| alma_mater       = {{ubl|[[University of Exeter]]|[[Moray House School of Education|Moray House]]}}
+| period           = [[Contemporary literature|Contemporary]]
+| years_active     = 1997–present
+| genres           = {{hlist|[[:en:Fantasy|Fantasy]]|[[drama]]|[[young adult fiction]]|[[:en:crime fiction|crime fiction]]}}
+| subject          =
+| movement         =
+| spouse           = {{unbulleted list|{{marriage|Jorge Arantes|1992|1995|end=divorced}}|{{marriage|Neil Murray|26 December 2001}}}}
+| children         = 3
+| relatives        =
+| website          = {{URL|jkrowling.com}}
+| signature        = JKRowlingsignature.svg
+}}
+</syntaxhighlight>
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{Category link with count|Biography template using pronunciation}}
+* {{Category link with count|Pages using Infobox writer with unknown parameters}}
+
+== See also ==
+* {{tl|Infobox person}}
+
+<includeonly>
+{{Sandbox other||
+
+{{citation needed|Writer}}
+}}
+</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Publishing infobox templates]]
+[[Category:Independently git synced pages]][[Category:People and person infobox templates|Writer]]
+[[Category:Independently git synced pages]][[Category:Biographical templates usable as a module]]
+[[Category:Independently git synced pages]][[Category:Infobox templates with module parameter|Writer]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

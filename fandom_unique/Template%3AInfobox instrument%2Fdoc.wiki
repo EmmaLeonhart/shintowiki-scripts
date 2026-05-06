@@ -1,0 +1,334 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+==Code==
+{{Infobox instrument
+| name                  = Electronic musical piano keyboard
+| image                 = Example-serious.jpg
+| caption               = ''image caption''
+| background            = ''background''
+| names                 = ''names''
+| classification        = ''classification''
+| hornbostel_sachs      = ''hombostel_sachs''
+| hornbostel_sachs_desc = ''hombostel_sachs_desc''
+| inventors             = ''inventors''
+| developed             = ''developed''
+| timbre                = ''timbre''
+| volume                = ''volume''
+| attack                = 0
+| decay                 = 0.012
+| range                 = ''range'' [music notation]
+| pitch                 = E1-G7 ["low"/"medium"/"high"]
+| related               = ''related''
+| musicians             = ''musicians''
+| composers             = ''composers''
+| builders              = ''builders''
+| sound sample          = ''sound sample''   
+| articles              = ''articles''
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox instrument
+| name                  = {{subst:PAGENAMEBASE}}
+| image                 = Replace this image butterfly.png
+| image_size            = 
+| alt                   = 
+| caption               = 
+| background            = 
+| names                 = 
+| classification        = 
+| hornbostel_sachs      = 
+| hornbostel_sachs_desc = 
+| inventors             = 
+| developed             = 
+| timbre                = 
+| volume                = 
+| attack                = 
+| decay                 = 
+| range                 = 
+| pitch                 = 
+| related               = {{bulleted list|x|y}}
+| musicians             = 
+| builders              = 
+| articles              = 
+}}
+</syntaxhighlight>
+
+== Usage ==
+This template, meant to be used on all musical instrument pages, takes the following parameters (bold parameters are required, others are optional):
+
+{| class="wikitable"
+|-
+|'''name'''|| – full name of the instrument – using WikiProject Musical Instruments/Templates/Infobox instrument/doc will set this field to the name of the article
+|-
+|image|| – the filename of a photo of the instrument
+|-
+|caption|| – a caption for the photo of the instrument
+|-
+|background|| – the general classification of the instrument ('keyboard', 'woodwind', 'brass', 'string', 'percussion', 'electronic', or 'other') used to choose the color scheme of the infobox and populate a simple classification link-header below the image caption
+|-
+|names|| – other name/names
+|-
+|'''classification'''|| – the classification of the instrument (such as string, woodwind, etc.)
+|-
+|hornbostel_sachs|| – the [[:en:Hornbostel–Sachs|Hornbostel–Sachs]] classification of the instrument (or 'NaN', if not specified, such as for the [[:en:Hydraulophone|Hydraulophone]])
+|-
+|hornbostel_sachs_desc|| – a textual description of the Hornbostel–Sachs classification
+|-
+|inventors|| – the inventor(s) of the instrument, if known
+|-
+|developed|| – the rough time period (and instrument from which) the instrument was developed (e.g. "Early [[:en:16th century|16th century]]" for the [[:en:Violin|Violin]], "Early [[:en:18th century|18th century]] from the [[:en:Chalumeau|Chalumeau]]" for the [[clarinet]], etc.)
+|-
+|timbre|| – the sound quality of the instrument
+|-
+|volume|| – how loud the instrument is: "low", "medium", "high"
+|-
+|attack|| – how quickly the instrument begins making sound when it starts being played: "slow", "medium", "fast"
+|-
+|decay|| – how long the sound fades after the instrument stops being played: "slow", "medium", "fast"
+|-
+|range|| – the playing range of the instrument (an image is preferred; many are already created, see [[co:commons:Category:Instrument ranges]])
+|-
+|pitch|| – the playing range of the instrument, with''out'' image: "low", "medium", "high"
+|-
+|related|| – related musical instruments. Use {{tl|bulleted list}} to list multiple instruments.
+|-
+|musicians|| – related musicians. Use {{tl|bulleted list}} to list multiple musicians.
+|-
+|composers|| – related composers. 
+|-
+|builders|| – related musical instrument makers. Use {{tl|bulleted list}} to list multiple makers.
+|-
+|sound sample|| – related sample.
+|-
+|articles|| – more information or other articles which may be of interest. Use {{tl|bulleted list}} to list multiple articles.
+|-
+|}
+
+== TemplateData ==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "An infobox for articles about musical instruments",
+	"params": {
+		"name": {
+			"label": "Name",
+			"description": "The name of the instrument",
+			"type": "string",
+			"required": false
+		},
+		"image": {
+			"label": "Image",
+			"description": "The file name for an image of the instrument",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"caption": {
+			"label": "Caption",
+			"description": "An description of the image",
+			"type": "string",
+			"required": false,
+			"aliases": [
+				"image_capt"
+			]
+		},
+		"background": {
+			"label": "Background",
+			"description": "The general classification of the instrument ('keyboard', 'woodwind', 'brass', 'string', 'percussion', 'electronic', or 'other') used to choose the color scheme of the infobox and populate a simple classification link-header below the image caption",
+			"type": "line",
+			"required": false,
+			"suggestedvalues": [
+				"keyboard",
+				"woodwind",
+				"brass",
+				"string",
+				"percussion",
+				"electronic",
+				"other"
+			]
+		},
+		"names": {
+			"label": "Names",
+			"description": "Alternative names for the instrument",
+			"type": "string",
+			"required": false
+		},
+		"classification": {
+			"label": "Classification",
+			"description": "The general classification of the instrument - Idiophone, Membranophone, Chordophone, Aerophone, Electrophone",
+			"type": "string",
+			"required": false
+		},
+		"inventors": {
+			"label": "Inventors",
+			"description": "The inventor(s) of the instrument, if known",
+			"type": "string",
+			"required": false
+		},
+		"pitch": {
+			"label": "Pitch",
+			"description": "The playing range of the instrument, without image: 'low', 'medium', 'high'",
+			"type": "string",
+			"required": false,
+			"suggestedvalues": [
+				"low",
+				"medium",
+				"high"
+			]
+		},
+		"related": {
+			"label": "Related",
+			"description": "Related musical instruments",
+			"type": "string",
+			"required": false
+		},
+		"musicians": {
+			"label": "Musicians",
+			"description": "Notable musicians",
+			"type": "string",
+			"required": false
+		},
+		"composers": {
+			"label": "Composers",
+			"description": "Notable composers",
+			"type": "string",
+			"required": false
+		},
+		"builders": {
+			"label": "Builders",
+			"description": "Notable music instrument makers",
+			"type": "string",
+			"required": false
+		},
+		"sound sample": {
+			"label": "Sound sample",
+			"description": "Notable sample",
+			"type": "string",
+			"required": false
+		},
+		"developed": {
+			"label": "Developed",
+			"description": "The rough time period (and instrument from which) the instrument was developed (e.g. 'Early 16th century' for the violin, 'Early 18th century from the chalumeau' for the clarinet, etc.)",
+			"type": "string",
+			"required": false
+		},
+		"timbre": {
+			"label": "Timbre",
+			"description": "The sound quality of the instrument",
+			"type": "string",
+			"required": false
+		},
+		"volume": {
+			"label": "Volume",
+			"description": "How loud the instrument is - 'low', 'medium', 'high'",
+			"type": "string",
+			"required": false,
+			"suggestedvalues": [
+				"low",
+				"medium",
+				"high"
+			]
+		},
+		"attack": {
+			"label": "Attack",
+			"description": "How quickly the instrument begins making sound when it starts being played - 'slow', 'medium', 'fast'",
+			"type": "string",
+			"required": false,
+			"suggestedvalues": [
+				"slow",
+				"medium",
+				"fast"
+			]
+		},
+		"decay": {
+			"label": "Decay",
+			"description": "How long the sound fades after the instrument stops being played: 'slow', 'medium', 'fast'",
+			"type": "string",
+			"required": false,
+			"suggestedvalues": [
+				"slow",
+				"medium",
+				"fast"
+			]
+		},
+		"range": {
+			"label": "Range",
+			"description": "The playing range of the instrument (an image is preferred, many are already created, see [[co:commons:Category:Instrument ranges]]')",
+			"type": "string",
+			"required": false
+		},
+		"articles": {
+			"label": "Articles",
+			"description": "Other articles which may be of interest or more information",
+			"type": "string",
+			"required": false
+		},
+		"image_size": {
+			"label": "Image size",
+			"description": "Size of the image",
+			"type": "number"
+		},
+		"alt": {
+			"label": "Image alt text",
+			"description": "Alt text for the image, for visually impaired and other readers who cannot see the image.",
+			"type": "string"
+		},
+		"hornbostel_sachs": {
+			"label": "Hornbostel-Sachs",
+			"description": "The Hornbostel-Sachs number of the instrument ",
+			"type": "string"
+		},
+		"hornbostel_sachs_desc": {
+			"label": "Hornbostel-Sachs Description",
+			"description": "The name of the Hornbostel-Sachs subcategory of the instrument ",
+			"type": "string"
+		}
+	},
+	"paramOrder": [
+		"name",
+		"background",
+		"image",
+		"image_size",
+		"alt",
+		"caption",
+		"names",
+		"classification",
+		"hornbostel_sachs",
+		"hornbostel_sachs_desc",
+		"inventors",
+		"developed",
+		"timbre",
+		"volume",
+		"attack",
+		"decay",
+		"range",
+		"pitch",
+		"related",
+		"musicians",
+		"composers",
+		"builders",
+		"sound sample",
+		"articles"
+	],
+	"format": "{{_\n| ______________ = _\n}}\n"
+}</templatedata>
+{{Collapse bottom}}
+
+==Tracking category==
+* {{clc|Pages using infobox instrument with unknown parameters}}
+
+== See also ==
+*{{tl|Infobox musical artist}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Music infobox templates|Instrument]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

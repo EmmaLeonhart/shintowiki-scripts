@@ -1,0 +1,139 @@
+{{Infobox
+| bodyclass = hrecipe adr
+
+| titleclass = fn
+| titlestyle =
+| title = <includeonly><span {{#if:{{{name_lang|}}}|lang="{{{name_lang}}}"}} {{#ifeq:{{{name_italics|false}}}|true|style="font-style: italic;"|}}>{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</span></includeonly>
+
+| image = {{#invoke:InfoboxImage|InfoboxImage |image={{{image|}}} |size={{{image_size|}}} |upright={{#if:{{{image_size|}}}||{{if empty|{{{image_upright|}}}|{{{upright|}}}|1}}}} |alt={{{image_alt|{{{alt|}}}}}} |title={{{image_alt|{{{alt|}}}}}} }}
+| captionstyle = {{#if:{{{caption|}}} |padding-bottom:0.25em;border-bottom:1px solid #aaa;}}
+| caption = {{{caption|}}}
+
+| labelstyle = line-height:1.15em;
+               padding-right:0.65em;
+
+| rowclass2 = note
+| label2  = Alternative names
+|  data2  = {{{alternate_name|{{{alternate name|}}}}}}
+
+| label3  = Type
+|  data3  = {{{type|}}}
+
+| label4  = Course
+|  data4  = {{{course|}}}
+
+| rowclass5 = note
+| label5  = Place of origin
+| class5  = country-name
+|  data5  = {{{place_of_origin|{{{country|}}}}}}
+
+| rowclass7 = note
+| label7  = Region or state
+| class7  = region
+|  data7  = {{{region|}}}
+
+| label9  = Associated [[:en:List of cuisines|cuisine]]
+|  data9  = {{{associated_cuisine|{{{national_cuisine|}}}}}}
+
+| rowclass11 = note
+| label11 = Created by
+| class11 = author
+|  data11 = {{#if:{{{creators|}}} |{{{creators}}} |{{{creator|}}} }}
+
+| label13 = Invented
+|  data13 = {{{year|}}}
+
+| label15 = Cooking time
+|  data15 = {{#if:{{{mintime|{{{time1|}}}}}}{{{maxtime|{{{time2|}}}}}}
+             | {{nowrap
+                | {{#iferror: 
+                     {{#if:{{{mintime|{{{time1|}}}}}}
+                      | {{#ifexpr:{{#expr:{{{mintime|{{{time1|}}}}}}>60}}
+                         
+                         | {{rounddown|{{#expr:{{{mintime|{{{time1|}}}}}}/60}}}} [[hour]]{{#ifeq:{{rounddown|{{#expr:{{{mintime|{{{time1|}}}}}}/60}}}}|1 | |s}} {{#ifeq:{{#expr:{{{mintime|{{{time1|}}}}}} mod 60}}|0 |
+                                           | {{#expr:{{{mintime|{{{time1|}}}}}} mod 60}} [[Minute|min]]
+                                          }}
+                         
+                         | {{{mintime|{{{time1|}}}}}} [[minute]]{{#ifeq:{{{mintime|{{{time1|}}}}}}|1 | |s}}
+                  }} }} }}{{#iferror:
+                     {{#if:{{{maxtime|{{{time2|}}}}}}
+                      | {{#if:{{{mintime|{{{time1|}}}}}} |&nbsp;to}} {{#ifexpr:{{#expr:{{{maxtime|{{{time2|}}}}}}>60}} 
+                              | {{rounddown|{{#expr:{{{maxtime|{{{time2|}}}}}}/60}}}} hour{{#ifeq:{{rounddown|{{#expr:{{{maxtime|{{{time2|}}}}}}/60}}}}|1 | |s}} {{#ifeq:{{#expr:{{{maxtime|{{{time2|}}}}}} mod 60}}|0 | |{{#expr:{{{maxtime|{{{time2|}}}}}} mod 60}} min}}
+                              | {{{maxtime|{{{time2|}}}}}} minute{{#ifeq:{{{maxtime|{{{time2|}}}}}}|1 | |s}}
+                  }} }}      }}}} }}
+
+| label17 = Serving temperature
+|  data17 = {{{served|}}}
+
+| label19 = Main ingredients
+| class19 = ingredient
+|  data19 = {{{main_ingredient|}}}
+
+| label21 = Ingredients generally&nbsp;used
+| class21 = ingredient
+|  data21 = {{{minor_ingredient|}}}
+
+| label23 = Variations
+|  data23 = {{{variations|}}}
+
+| label25 = {{longitem|style=line-height:1.1em;white-space:nowrap;
+             | 1 = [[Food energy]]<br/><span style="font-size:90%;font-weight:normal;">(per {{#switch:{{{serving_size|}}}
+                              | 100 grams |100 [[Gram|g]] |100 g |100g = 100&nbsp;[[Gram|g]] serving)
+                              | #default = {{{serving_size|}}} serving)
+                             }}</span>
+            }}
+| class25 = nutrition
+|  data25 = {{#if:{{{calories|}}}
+             | {{{calories}}}&nbsp;[[:en:Calorie|kcal]]{{#iferror:&nbsp;({{#expr:{{{calories}}}*4.1868 round 0}} [[kilojoule|kJ]])}}{{{calories_ref|}}}
+            }}
+
+| label27 = {{longitem|style=line-height:1.1em;white-space:nowrap;
+             | 1 = [[Nutrition|Nutritional value]]<br/><span style="font-size:90%;font-weight:normal;">(per {{#switch:{{{serving_size|}}}
+                              | 100 grams |100 [[Gram|g]] |100 g |100g = 100&nbsp;[[Gram|g]] serving)
+                              | #default = {{{serving_size|}}} serving)
+                             }}</span>
+            }}
+|  data27 = {{#if:{{{protein|}}}{{{fat|}}}{{{carbohydrate|}}}
+             | {{Infobox
+                |bodystyle={{infobox subbox bodystyle}}
+                |labelstyle=width:6.75em;padding-right:0.35em;line-height:1.3em;font-weight:normal;
+                |datastyle=line-height:1.3em;
+                |label1=[[Protein (nutrient)|Protein]] |data1={{{protein}}}&nbsp;[[Gram|g]]
+                |label2=[[Fat]]          |data2={{{fat}}}&nbsp;[[Gram|g]]
+                |label3=[[:en:Carbohydrate|Carbohydrate]] |data3={{{carbohydrate}}}&nbsp;[[Gram|g]]
+            }} }}
+
+| label32 = [[Glycemic index|{{allow wrap|Glycemic index}}]]
+|  data32 = {{#iferror:
+               {{#if:{{{glycemic_index|}}}
+                | {{small
+                   | {{#ifexpr:{{#expr:{{{glycemic_index}}}<56}}
+                      | {{{glycemic_index}}}&nbsp;({{background|#ccffcc|low}})
+                      | {{#ifexpr:{{#expr:{{{glycemic_index}}}<70}}
+                         | {{{glycemic_index}}}&nbsp;({{background|#ffff99|medium}})
+                         | {{{glycemic_index}}}&nbsp;({{background|#ffcc99|high}})
+            }} }} }} }} }}
+
+| label34 = Similar dishes
+|  data34 = {{{similar_dish|}}}
+
+| label36 = Other information
+|  data36 = {{{other|}}}
+| belowstyle = border-top:1px solid #aaa;padding-top:0.25em;{{{belowstyle|}}}
+| below = {{Unbulleted list
+  | {{#if:{{Yesno|{{{no_recipes|}}}}} <includeonly>|</includeonly> |{{#if:{{{cookbook|}}}|{{sister-inline|project=wikibooks|short=yes|links=[[:b:Cookbook:{{{cookbook}}}|Cookbook: {{{cookbook}}}]]}}| {{#if:{{#invoke:WikidataIB|getSiteLink|wiki=enwikibooks|qid={{{qid|}}}}}|{{sister-inline|project=wikibooks|short=yes|links=[[:b:{{#invoke:WikidataIB|getSiteLink|wiki=enwikibooks|qid={{{qid|}}}}}|Cookbook: {{if empty|{{{name|}}}|{{PAGENAME}}}}]]}}}}}}}}
+  | {{#if:{{Yesno|{{{no_commons|}}}}} <includeonly>|</includeonly> |{{#if:{{{commons|}}}{{#invoke:Commons link|hasGalleryOrCategory|qid={{{qid|}}}}}|&nbsp;{{Commons-inline|short=yes|{{{commons|}}}|qid={{{qid|}}}|notrack=1|Media{{colon}} {{#if:{{{name|}}}|{{{name}}}|{{PAGENAME}}}}}} }} }}
+}}}}{{#invoke:check for unknown parameters|check
+|unknown={{main other|}}
+|preview=unknown parameter "_VALUE_"
+|alt|alternate name|alternate_name|associated_cuisine|belowstyle|calories|calories_ref|caption|carbohydrate|commons|cookbook|country
+|course|creator|creators|fat|glycemic_index|image|image_alt|image_size|image_upright|main_ingredient|maxtime|minor_ingredient|mintime
+|name|name_italics|name_lang|national_cuisine|no_commons|no_recipes|other|place_of_origin|protein|qid|region|served|serving_size
+|similar_dish|time1|time2|type|upright|variations|year}}<noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
+[[Category:Pages using infobox food with unknown parameters|_VALUE_]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

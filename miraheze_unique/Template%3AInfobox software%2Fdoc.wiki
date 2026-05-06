@@ -1,0 +1,701 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Lua|Module:InfoboxImage|Module:Check for unknown parameters}}
+{{Uses Wikidata|P856|P1324|P408}}
+
+== Usage ==
+The following is the base code required to generate an infobox. One can copy and paste the base code into an article and insert relevant information in front of the <code>=</code> signs. Removing [[HTML element#Comments|HTML comments]] (<code>&lt;!-- anything --&gt;</code>) is optional. To avoid accidental misuse, this base code does not have a handful of parameters that must be handled with absolute care and are not normally needed, such as {{param|bodystyle}}.
+
+{{Parameter names example|name|logo|logo alt|logo upright|logo size|logo caption|screenshot|screenshot upright|screenshot size|screenshot alt|caption|other_names|author|developer|released|ver layout|discontinued|latest release version|latest release date|latest preview version|latest preview date|repo|qid|programming language|middleware|engine|operating system|platform|included with|replaces|replaced_by|service_name|size|language count|language|language footnote|genre|license|website|standard|AsOf}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox software
+| title = 
+| logo = 
+| logo caption = 
+| logo alt = 
+| logo upright =
+| logo size =
+| collapsible = 
+| screenshot = 
+| screenshot upright =
+| screenshot size =
+| screenshot alt = 
+| caption = 
+| other_names =
+| author = 
+| developer = 
+| released = 
+| ver layout = 
+| discontinued = 
+| latest release version = 
+| latest release date = 
+| latest preview version = 
+| latest preview date = 
+| repo = 
+| qid = 
+| programming language = 
+| middleware =
+| engine = 
+| operating system = 
+| platform = 
+| included with = 
+| replaces =
+| replaced_by =
+| service_name = 
+| size = 
+| standard = 
+| language = 
+| language count = 
+| language footnote = 
+| genre = 
+| license = 
+| website = 
+| AsOf = 
+| module = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+== Example ==
+{{hatnote|The following markup is included '''only for illustration purposes'''. It is not intended to provide up-to-date information about [[:en:GIMP|GIMP]] software and should not be updated for the sake of '''truth'''.}}
+
+{{demo|reverse=1|<nowiki>{{Infobox software
+| title = GIMP
+| logo = The GIMP icon - gnome.svg
+| screenshot = GIMP 2.10.jpg
+| caption = GIMP version 2.10
+| author = [[Spencer Kimball (computer programmer)|Spencer Kimball]], [[Peter Mattis]]
+| developer = GIMP Development Team
+| released = {{Start date and age|1998|06|02|df=yes}}
+| latest release version = {{wikidata|property|preferred|references|edit|Q8038|P348|P548=Q2804309}}
+| latest release date = {{wikidata|qualifier|preferred|single|Q8038|P348|P548=Q2804309|P577}}
+| latest preview version = {{wikidata|property|preferred|references|edit|Q8038|P348|P548=Q51930650}}
+| latest preview date = {{wikidata|qualifier|preferred|single|Q8038|P348|P548=Q51930650|P577}}
+| repo = {{URL|https://gitlab.gnome.org/GNOME/gimp}}
+| programming language = [[C (programming language)|C]]
+| operating system = [[:en:Linux|Linux]], [[macOS]], [[:en:Windows|Windows]], [[FreeBSD]], [[Solaris (operating system)|Solaris]], [[AmigaOS 4]]
+| language count = 82
+| language footnote = <ref>{{cite web |url=https://l10n.gnome.org/module/gimp/ |title=Module Statistics: gimp |website=l10n.gnome.org |publisher=[[GNOME Project]] |access-date=7 March 2022}}</ref>
+| language = [[Amharic]], [[Arabic]], [[Asturian language|Asturian]], [[Azerbaijani language|Azerbaijani]], [[Basque language|Basque]], [[Belarusian language|Belarusian]], [[Bosnian language|Bosnian]], [[Brazilian Portuguese]], [[Breton language|Breton]], [[British English]], [[Bulgarian language|Bulgarian]], [[Burmese language|Burmese]], [[Canadian English]], [[Catalan language|Catalan]], [[Central Kurdish]], [[Chinese language|Chinese (China)]], [[Chinese language|Chinese (Hong Kong)]], [[Chinese language|Chinese (Taiwan)]], [[Croatian language|Croatian]], [[Czech language|Czech]], [[Danish language|Danish]], [[Dutch language|Dutch]], [[Dzongkha]], [[Esperanto]], [[Estonian language|Estonian]], [[Finnish language|Finnish]], [[French language|French]], [[Galician language|Galician]], [[Georgian language|Georgian]], [[German language|German]], [[Greek language|Greek]], [[Gujarati language|Gujarati]], [[Hebrew language|Hebrew]], [[Hindi]], [[Hungarian language|Hungarian]], [[Icelandic language|Icelandic]], [[Indonesian language|Indonesian]], [[Irish language|Irish]], [[Italian language|Italian]], [[Japanese language|Japanese]], [[Kabyle language|Kabyle]], [[Kannada]], [[Kashubian language|Kashubian]], [[Kazakh language|Kazakh]], [[Khmer language|Khmer]], [[Kinyarwanda]], [[Kyrgyz language|Kirghiz]], [[Korean language|Korean]], [[Latvian language|Latvian]], [[Lithuanian language|Lithuanian]], [[Low German]], [[Macedonian language|Macedonian]], [[Malay language|Malay]], [[Malayalam]], [[Marathi language|Marathi]], [[Nepali language|Nepali]], [[Bokmål|Norwegian (Bokmål)]], [[Nynorsk|Norwegian (Nynorsk)]], [[Occitan language|Occitan]], [[Persian language|Persian]], [[Polish language|Polish]], [[Portuguese language|Portuguese]], [[Punjabi language|Punjabi]], [[Romanian language|Romanian]], [[Russian language|Russian]], [[Scottish Gaelic]], [[Serbian language|Serbian (Cyrillic script)]], [[Serbian language|Serbian (Latin script)]], [[Sinhala language|Sinhala]], [[Slovak language|Slovak]], [[Slovene language|Slovene]], [[Spanish language|Spanish]], [[Swedish language|Swedish]], [[Tamil language|Tamil]], [[Tatar language|Tatar]], [[Telugu language|Telugu]], [[Thai language|Thai]], [[Turkish language|Turkish]], [[Ukrainian language|Ukrainian]], [[Valencian language|Valencian]], [[Vietnamese language|Vietnamese]], [[Xhosa language|Xhosa]], [[Yiddish]]
+| genre = [[Raster graphics editor]]
+| license = [[:en:GNU General Public License|GPL-3.0-or-later]]
+| website = {{URL|https://www.gimp.org/|gimp.org}}
+}}</nowiki>}}
+{{Reflist}}
+{{Clear}}
+
+=== Conditional formatting parameters ===
+The following shows the effect of three parameters which change the formatting of certain infobox fields: {{para|collapsible}}, {{para|discontinued}}, {{para|ver layout}}.
+
+{{demo|reverse=1|<nowiki>{{Infobox software
+| title = GIMP
+| logo = The GIMP icon - gnome.svg
+| screenshot = GIMP 2.10.jpg
+| caption = GIMP version 2.10
+| collapsible = yes
+| ver layout = stacked
+| discontinued = yes
+| latest release version = {{wikidata|property|preferred|references|edit|Q8038|P348|P548=Q2804309}}
+| latest release date = {{wikidata|qualifier|preferred|single|Q8038|P348|P548=Q2804309|P577}}
+| latest preview version = {{wikidata|property|preferred|references|edit|Q8038|P348|P548=Q51930650}}
+| latest preview date = {{wikidata|qualifier|preferred|single|Q8038|P348|P548=Q51930650|P577}}
+}}</nowiki>}}
+{{Reflist}}
+{{Clear}}
+
+== Parameters ==
+All parameters are optional.
+; bodystyle
+: CSS styling for the infobox as a whole
+; title
+: Name of the software as displayed above the infobox. Defaults to <syntaxhighlight lang="wikitext" inline>{{PAGENAMEBASE}}</syntaxhighlight>
+; logo
+: Code for a small image to be displayed as the [[:en:logo|logo]] or [[computer icon]] of the software. You may specify a file name, with or without namespace prefix. In other words, the following examples are all acceptable:
+::The GIMP icon - gnome.svg
+::File:The GIMP icon - gnome.svg
+; logo upright
+: Scaling size factor of the logo. This allows the size of the logo to be controlled by a multiple of the user thumbnail size preference. For examples, see [[MOS:UPRIGHT]].
+; logo size
+: Size of the logo.
+; logo caption
+: Caption of the logo that appears below it. Should not be used to provide trivial captions, such as "This is the logo of X", which is automatically assumed. Reserved for special cases when a description beyond telling the obvious is needed, or for inserting {{tl|ffdc}} or {{tl|deletable image-caption}}.
+; logo alt
+: [[WP:ALTTEXT|Alternative text]] of the logo; very important.
+; collapsible
+: Whether this screenshot is by default hidden and is only shown when user clicks on a minuscule "Expand" button. Can be set to "yes". Especially useful in case of long vertical screenshot
+; screenshot
+: Code for an image to be displayed as a [[screenshot]] of the software. You may specify a file name, with or without namespace prefix. In other words, the following examples are all acceptable:
+::GIMP screenshot.png
+::File:GIMP screenshot.png
+; screenshot upright
+: Scaling size factor of the screenshot. This allows the size of the screenshot to be controlled by a multiple of the user thumbnail size preference.
+; screenshot size
+: Size of the screenshot.
+; screenshot alt
+: [[WP:ALTTEXT|Alternative text]] of the screenshot; very important. Defaults to image caption.
+; caption
+: A caption for screenshot that appears below it. Please include this parameter only when there is an image to display.
+; other_names
+: Other names for the software.
+; author
+: Name of the original author(s) or publisher(s) of the software. It can be an individual or organization. Most of the time, it only needs to be specified when {{para|developer}} field is populated.
+; developer
+: Name of the current developer of the software. It can be an individual or organization.
+; released
+: The date in which version 1.0 (or closely-matching release) of the software in question reaches its [[release to manufacturing]] (RTM) stage. In case the article is about a specific major release of a piece of software (for instance [[Internet Explorer 8]] or [[Microsoft Office 2007]]), this field should contain the date in which that specific major release reached RTM stage. In case the software is still in development and has not reached its RTM stage, please ignore this field; do not use this field to specify the release date of the first preview/test release of the software; there is already another parameter for that use.
+:The content of this field should look like the following:
+::{{tlx|Start date and age|''year''|''month''|''day''}}
+:In case the article uses DMY as date format, use this code instead:
+::{{tlx|Start date and age|''year''|''month''|''day''|df&#61;yes}}
+:If you are unsure which date format to use, please consult [[WP:MOSDATES]].
+; ver layout
+: Defines how version number information appear in the infobox. Can be set to "simple" (default) or "stacked". "Simple" allocates an ordinary row to "latest release version" and another to "latest preview version". But "stacked" gives the full width of the row the info and adds a header, so that several version numbers can appear and use the infobox space more efficiently. Additionally, "stacked" could automately generate an edit link at the header to allow editors to update the version number.
+; discontinued
+: Whether this software is no longer being developed, thus changing the phrase "Latest release" in the infobox to "Last release". For technical reasons, anything for this parameter has the same effect, be it "yes", "no" or anything else. To nullify the effect of this parameter, you need to omit it.
+; latest release version
+: The version number of the latest release of the software. Please observe the following examples:
+:* Example #1: If the article is about ''Example Software'' whose latest version is 1.5, specify:
+:*:1.5
+:* Example #2: If the article is about ''Example Software'' whose latest release is called ''Example Software 2008'' and whose latest version number is 12.2, specify:
+:*:2008 (12.2)
+:* Example #3: If the article is about ''Famous Example Software 2010'', which is a significant release of ''Famous Example Software'' and whose latest version number is 14.0.0.25, just specify:
+:*:14.0.0.25
+:* Example #4: If the article is about ''Famous Example Software 2010'' for which no update is released since its initial release-to-manufacturing (RTM), please omit this parameter unless there is an evidence that it is necessary for the reader to know this number. One reason would be the presence of preview releases of the software which can only be distinguished from the RTM by their version number.
+:<code>latest release date</code> depends on this parameter.
+; latest release date
+: The release date of the latest released version. If no update is released for the software since its initial release, please omit this field; filling in the <code>released</code> field would be enough. The content of this field should look like the following:
+::{{tlx|Start date and age|''year''|''month''|''day''}}
+:In case the article uses DMY as date format, use this code instead:
+::{{tlx|Start date and age|''year''|''month''|''day''|df&#61;yes}}
+:If you are unsure which date format to use, please consult [[WP:MOSDATES]].
+:This parameter only works when a <code>latest release version</code> is present.
+; latest preview version
+: The version number of the latest preview version or development branch. Should only be specified when development of a new version of the software in question (newer than one specified in <code>latest release version</code>) is in progress. Please consult descriptions for <code>latest release version</code> provided above for best practices of specifying this parameter.
+; latest preview date
+: Specifies the release date of the latest preview version or development branch. Should only be specified when development of a new version of the software in question (newer than one specified in <code>latest release version</code>) is in progress. Please consult descriptions for <code>latest release date</code> provided above for best practices of specifying this parameter.
+; repo
+: The online [[:en:Repository (version control)|source code repository]], if available. For example, the sourceforge or github project page. As with the <code>website</code> parameter, this should use the {{tl|URL}} template. In the absence of this parameter, infobox attempts to acquire the repository link from Wikidata. This parameter overrides the Wikidata link.
+; qid
+: Q-identifier from Wikidata.
+; programming language
+: The [[programming language]] of that subject of the article. If the program language of the software has a corresponding article in Wikipedia, please link to it. Here is an example:
+::Code: <syntaxhighlight lang="wikitext" inline>[[:en:C++|C++]] and [[C Sharp (programming language)|C#]]</syntaxhighlight>
+::Result: [[:en:C++|C++]] and [[C Sharp (programming language)|C#]]
+:When specifying the name of the programming language please make sure that you [[WP:V|cite your source]]. Unreferenced assertions in Wikipedia may be challenged or removed. If you do not have a source, do not include this parameter.
+; middleware
+: Middleware for the software.
+; engine
+: [[:en:Software engine|Software engine]] that is used by this software. In absence of this parameter, infobox attempts to acquire the {{Wikidata property link|P408}} from Wikidata. This parameter overrides the Wikidata engine.
+; engines
+: List of software engines, if multiple are used.
+; operating system
+: The [[:en:Operating system|Operating system]] on which the given software works. Please be as accurate as possible but also be mindful of the length and avoid specifying vague phrases such as "[[Cross-platform]]", "[[Multi-platform]]", "all" or "none". If the project is a [[web app]] or if only an OS-agnostic [[:en:Source code|Source code]] is released, ignore. Please consider these examples:
+:*If the software works on all incarnations of [[:en:Unix|Unix]], [[:en:Linux|Linux]] and derived operating systems, please specify:
+:**<syntaxhighlight lang="wikitext" inline>[[Unix-like]]</syntaxhighlight>
+:*If the software works unconditionally on ALL incarnations of [[:en:Microsoft Windows|Microsoft Windows]], please specify:
+:**<syntaxhighlight lang="wikitext" inline>[[:en:Microsoft Windows|Microsoft Windows]]</syntaxhighlight> or simply <syntaxhighlight lang="wikitext" inline>[[:en:Windows|Windows]]</syntaxhighlight>
+:*If the software works only on [[:en:Windows XP|Windows XP]] and all subsequent releases of Microsoft Windows, please specify:
+:**<syntaxhighlight lang="wikitext" inline>[[:en:Windows XP|Windows XP]] and later</syntaxhighlight>
+:*If the software is released for various families of different operating systems, (such as specific versions of BSD, Linux, macOS and Microsoft Windows) so that listing them in the infobox gives it undue length, please leave the details to article body and specify:
+:**<syntaxhighlight lang="wikitext" inline>[[BSD]], [[:en:Linux|Linux]], [[macOS]] and [[:en:Microsoft Windows|Microsoft Windows]]</syntaxhighlight>
+; platform
+: The [[computing platform]] on which the software runs. You might like to include the following information:
+:*'''Processor architecture:''' Some software runs on a certain processor architecture such as [[IA-32]] (also known as ''x86'' an ''i386''), [[x86-64]] (also known as ''x64'', ''AMD64'' and ''EM64T''), [[Itanium]], [[:en:ARM architecture family|ARM]] and [[MIPS architecture|MIPS]]. 
+:*'''Software frameworks:''' Some software runs on [[Java (software platform)|Java platform]], [[:en:.NET Framework|.NET Framework]], [[:en:Adobe Flash|Adobe Flash]], [[:en:Adobe AIR|Adobe AIR]], [[Microsoft Silverlight]] or [[:en:XUL|XUL]] without regard to the processor architecture. If so, you may ignore processor architecture and instead specify the framework.
+:Please avoid specifying vague phrases such as "[[cross-platform]]" unless the following conditions meet:
+:# The software has been released for numerous different platforms, so much so that including all of them causes the infobox size to grow unduly large.
+:# The article body lists the platforms under which the software runs.
+:If the above do not meet, then specifying such a vague phrase is the same as not specifying it.
+; included with
+: Devices and operating systems that come preloaded with this browser.
+; replaces
+: What the software replaces, if applicable.
+; replaced_by
+: What the software has been replaced with.
+; service_name
+: Service name for the software.
+; size
+: Size of the installer package. Only applies to software available via download. For software distributed physically in boxes or other packages, ignore this parameter. Do not forget to include your unit of measurements (i.e. kilobytes, megabytes or gigabytes).
+:'''Note:''' Use a [[:en:Non-breaking space|Non-breaking space]] ("&amp;nbsp;") to prevent numbers and units of measurements from separating when "[[word wrapping]]" occurs. You can also use {{tl|Nowrap}} template to produce the same effect.
+:Observe the following examples:
+:{|
+| width = "50%" |
+* <syntaxhighlight lang="wikitext" inline>760&amp;nbsp;KB</syntaxhighlight> → 760&nbsp;KB
+* <syntaxhighlight lang="wikitext" inline>32&amp;nbsp;MB</syntaxhighlight> → 32&nbsp;MB
+| width = "50%" |
+* <syntaxhighlight lang="wikitext" inline>{{Nowrap|842 KB}}</syntaxhighlight> → {{Nowrap|842 KB}}
+* <syntaxhighlight lang="wikitext" inline>{{Nowrap|48.5 MB}}</syntaxhighlight> → {{Nowrap|48.5 MB}}
+|}
+:For more information, visit [[WP:UNITS]]
+; standard
+: [[:en:Technical standard|Technical standard]] of the subject of the article adheres.
+; language
+: Lists the natural languages in which the software's user interface can interact with user. Please do not supply vague phrases, such as "multilingual", which do not add to the knowledge of the reader. Also please do not wikilink the name of languages; readers are most likely uninterested in reading about those languages. For a comprehensive list of items that should not be generally linked to, see {{Section link|Wikipedia:Manual of Style/Linking|What generally should not be linked}}. A large list of languages can disrupt the natural flow of the article. When the list of languages grows large, consider one of the following measures:
+:*Use {{para|language count}} parameter in conjunction with this parameter. This will allow the list of languages to be hidden and revealed with the click of a mouse. This method is not printer-friendly: A collapsed list does not appear on print and an expanded list may disrupt the natural flow of the article.
+:*Add a link to a section of the article which lists languages. Please keep the link printer-friendly. For example, instead of "<syntaxhighlight lang="wikitext" inline>[[#Localization|Click here to see the list of languages]]</syntaxhighlight>", consider "<syntaxhighlight lang="wikitext" inline>35 languages; see [[#Localization|§ Localization]]</syntaxhighlight>". This solution is useful when the inclusion of a list of languages is important or when the localization of the subject of the article is discussed.
+:*Ignore this parameter and use {{para|language count}} and {{para|language footnote}} instead. This approach is useful when the article is short and inclusion of the list of languages is unwanted or contested.
+; language count
+: Number of natural languages in which the software's user interface can interact with user. Please supply a number only. Don't use this parameter if the list of languages includes fewer than five entries. (Please see: {{Section link|Wikipedia:Manual of Style/Dates and numbers|Numbers}})
+: If both {{para|language}} and {{para|language count}} parameters are present, the value of {{para|language}} will be collapsed under "List of languages" title.
+; language footnote
+: Use this parameter to supply citation on available translations, especially when {{para|language}} is not specified. Use of this parameter is not mandatory, as long as appropriate citation information is attached to the text. For instance, citation information may be attached to text itself in the article body or {{para|language}}, especially when there are more than one source for it information given. (E.g. when one source includes full translations and another includes partial translations; or when one source specifies the translations of one given version and another discusses what is added to that version after an update.) As a general rule, avoid citing automatically generated reports, statements about development versions or other sources of time-sensitive information.
+; genre
+: Type of program. Should be wikilinked to an article such as [[Geographic information system]]. For more information, consult [[List of software categories]]. Please do not use this field to briefly describe the role and function of the subject of the article. For example, instead of "SVG creator, editor and converter", consider using "[[Vector graphics editor]]". Instead of "PDF creator, editor, converter and viewer", consider using "[[Desktop publishing software]]". Instead of "DWG creator/editor", consider using "[[Computer-aided design]]".
+; license
+: {{Further|Wikipedia:Software licenses}}
+: The [[software license]] under which the user is allowed to use the software. It is recommended to specify the specific license the software is released under by name. See [[:Category:Software licensing]]. For example:
+:*[[Proprietary license|Proprietary]] (<syntaxhighlight lang="wikitext" inline>[[Proprietary license|Proprietary]]</syntaxhighlight>): Software with a license which prohibits modifying the software and sharing copies, and where generally a copy of the source code cannot be obtained by the user. (As in this example, please be sure to link to <syntaxhighlight lang="wikitext" inline>[[Proprietary license]]</syntaxhighlight>, which is an article about this type of software, and ''not'' to <syntaxhighlight lang="wikitext" inline>[[Proprietary]]</syntaxhighlight>, which is a disambiguation page.)
+:*[[:en:GNU General Public License|GNU General Public License]]s, [[GNU Lesser General Public License]]s, [[:en:BSD License|BSD License]]s, and other [[:en:Free software|Free software]] licenses: pieces of software released under a free software license provide copies of the source code to users, and give users the freedom to modify and share copies of their copy of the source code. The GNU licenses mentioned have multiple versions each; there are multiple BSD licenses. Please make sure to specify which one.
+; licence
+: Same as {{para|license}}. Pick either ''license'' (American English) or ''licence'' (Commonwealth English), not both{{snd}}select the one which matches the content of the article the template is used in.
+; website
+: The web site URL of the software package, if one wants to override the Wikidata official URL value. This URL must be readable in print. Therefore, you should use {{tl|URL}} template like this: "{{tl2|URL|<nowiki>http://www.example.com</nowiki>}}". Avoid using printer-hostile forms like "<syntaxhighlight lang="wikitext" inline>[http://www.example.com Example website]</syntaxhighlight>". In addition, the special value "hide" suppresses this field, even in presence of a Wikidata link. This is useful for articles with several infoboxes, to avoid repeating one Wikidata link. If left blank, the Wikidata official website value will display by default.
+; AsOf
+: A pseudo-parameter populated by bots and users tending to maintenance categories. The intricacies of this parameter are not included here. If you don't know what it does, please do not touch.
+; module
+: For embedding other templates (see [[WP:IEmbed]]).
+
+== Moving release data outside the article ==
+<section begin="release version data" />
+The subject's latest release version, latest release date, latest preview version and latest preview date can be moved outside the article.
+
+=== Template method (single wiki)===
+
+Users visiting the article may click the version number or "[±]" link in the infobox to edit that external source. This mode is very useful for articles about software products whose vendors keep releasing updates or newer versions. With this mode is enabled, users can quickly and effectively edit the release data without editing the article proper (and cluttering its edit history with inconsequential edits).
+
+Note, however, that if {{para|latest release version}} or {{para|latest preview version}} parameters are explicitly specified, the infobox does not look for external sources. (This can be useful if, for example, the preview version is frequently updated, but the release version is not.)
+
+To make the infobox retrieve release data from outside the article:
+#Create an external source that supplies data for latest stable release. To do so:
+##Copy and paste the following URL into your browser's address bar, replacing ''INFOBOX_NAME'' with the value supplied in {{para|name}} parameter of the infobox: <br/><code>{{fullurl:Template:Latest stable software release/INFOBOX_NAME|action=edit&preload=Template:LSR/syntax}}</code>
+##In the page that opens, fill in the required information.
+##Save the page.
+#Create an external source that supplies data for latest preview release. To do so:
+##Copy and paste the following URL into your browser's address bar, replacing ''INFOBOX_NAME'' with the value suppplied in {{para|name}} parameter of the infobox: <br/><code>{{fullurl:Template:Latest preview software release/INFOBOX_NAME|action=edit&preload=Latest preview release/syntax}}</code>
+##In the page that opens, fill in the required information.
+##Save the page.
+#In the main article, delete {{para|latest release version}}, {{para|latest release date}}, {{para|latest preview version}} or {{para|latest preview date}} parameters.
+#Save the article.
+#Refresh the article.
+
+=== Wikidata method (multi-language, potentially all wikis) ===
+
+With a Wikidata entry, OS version information can be input once, and then automatically transcluded to any Wikipedia in any language, as long as they are using a Wikidata template for their data.
+
+* See: [[Template:Wikidata]] for usage information<section end="release version data" />
+* See: [[Template:Infobox software#Example]] for a usage example. (The Infobox:software example uses this method.)
+
+== Microformat ==
+{{UF-hcal}}
+
+== TemplateData ==
+{{Collapse top|title=[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "An infobox for computer software",
+	"format": "block",
+	"params": {
+		"title": {
+			"label": "Title",
+			"type": "string",
+			"required": false,
+			"description": "Name of the computer program. Displayed at the top of the infobox.",
+			"aliases": [
+				"name"
+			],
+			"default": "{{PAGENAMEBASE}}"
+		},
+		"logo": {
+			"label": "Logo",
+			"type": "wiki-file-name",
+			"required": false,
+			"description": "Filename for the image e.g. 'The GIMP icon - gnome.svg' ",
+			"default": "{{#Property:P154}}"
+		},
+		"logo upright": {
+			"label": "Logo scaling",
+			"type": "string",
+			"required": false,
+			"description": "Size of the logo as a scaling factor of user thumbnail size preference.",
+			"aliases": [
+				"logo_upright"
+			]
+		},
+		"logo size": {
+			"label": "Logo size",
+			"type": "string",
+			"required": false,
+			"description": "Size of the logo.",
+			"aliases": [
+				"logo_size"
+			]
+		},
+		"logo alt": {
+			"label": "Logo alternative text",
+			"type": "string",
+			"required": false,
+			"description": "Alternative text for the logo (used by the blind and when web browsers cannot or do not load the image)",
+			"aliases": [
+				"logo_alt"
+			]
+		},
+		"logo caption": {
+			"label": "Logo caption",
+			"type": "string",
+			"required": false,
+			"description": "Caption for the logo. Must only be used to provide anything far more important than 'This is the logo of X'. e.g. used for inserting {{ffdc}} or {{deletable image-caption}}.",
+			"aliases": [
+				"logo_caption"
+			]
+		},
+		"screenshot": {
+			"label": "Screenshot",
+			"type": "wiki-file-name",
+			"required": false,
+			"description": "File name for a screenshot of the image, e.g. 'GIMP screenshot.png'"
+		},
+		"screenshot upright": {
+			"label": "Screenshot scaling",
+			"type": "string",
+			"required": false,
+			"description": "Size of the screenshot as a scaling factor of user thumbnail size preference.",
+			"aliases": [
+				"screenshot_upright"
+			]
+		},
+		"screenshot size": {
+			"label": "Screenshot size",
+			"type": "string",
+			"required": false,
+			"description": "Size of screenshot",
+			"aliases": [
+				"screenshot_size"
+			]
+		},
+		"screenshot alt": {
+			"label": "Screenshot alternative text",
+			"type": "string",
+			"required": false,
+			"description": "Alternative text for the screenshot (used by the blind and when web browsers cannot or do not load the image)",
+			"aliases": [
+				"screenshot_alt"
+			]
+		},
+		"caption": {
+			"label": "Caption",
+			"type": "string",
+			"required": false,
+			"description": "Caption for the screenshot"
+		},
+		"collapsible": {
+			"label": "Collapsible?",
+			"type": "string",
+			"required": false,
+			"description": "Whether this screenshot is hidden by default, set to 'yes' to place the screenshot in a collapsible section"
+		},
+		"collapsetext": {
+			"label": "Collapsed text title",
+			"type": "string"
+		},
+		"background": {
+			"label": "Collaped text background colour",
+			"type": "string"
+		},
+		"author": {
+			"label": "Original author",
+			"type": "string",
+			"required": false,
+			"description": "Name of the original author or publisher of the software. It can be either an individual or an organization/business. Most of the time, it only needs to be specified when developer field is populated."
+		},
+		"developer": {
+			"label": "Developer",
+			"type": "string",
+			"required": false,
+			"description": "Name of the current developer of the software. It can be either an individual or an organization/business."
+		},
+		"released": {
+			"label": "Initial release date",
+			"type": "string",
+			"required": false,
+			"description": "The date in which version 1.0 (or closely-matching release) of the software in question reaches its release to manufacturing (RTM) stage. In case the article is about a specific major release of a piece of software (for instance Internet Explorer 8 or Microsoft Office 2007), this field should contain the date in which that specific major release reached RTM stage. In case the software is still in development and has not reached its RTM stage, please ignore this field; do not use this field to specify the release date of the first preview/test release of the software; there is already another parameter for that use. The content of this field should look like the following: {{Start date and age|year|month|day}} In case the article uses DMY as date format, use this code instead: {{Start date and age|year|month|day|df=yes}} If you are unsure which date format to use, please consult WP:MOSDATES."
+		},
+		"discontinued": {
+			"label": "Discontinued?",
+			"type": "boolean",
+			"required": false,
+			"description": "Whether this software is no longer being developed, thus changing the phrase 'Latest release' in the infobox to 'Final release'. For technical reasons, anything for this parameter has the same effect, be it 'yes', 'no' or anything else. To nullify the effect of this parameter, you need to omit it."
+		},
+		"ver layout": {
+			"label": "Version info layout",
+			"description": "Defines how version number information appear in the infobox. Can be set to \"simple\" (default) or \"stacked\". \"Simple\" allocates an ordinary row to \"latest release version\" and another to \"latest preview version\". But \"stacked\" gives the full width of the row the info and adds a header, so that several version numbers can appear and use the infobox space more efficiently. Additionally, \"stacked\" could automately generate an edit link at the header to allow editors to update the version number.",
+			"autovalue": "simple",
+			"type": "string",
+			"suggestedvalues": [
+				"simple",
+				"stacked"
+			]
+		},
+		"latest release version": {
+			"label": "Latest release version",
+			"type": "string",
+			"required": false,
+			"description": "The version number of the latest release of the software. E.g. 'v1.5', '2008 (v12.2)', ",
+			"aliases": [
+				"latest_release_version"
+			]
+		},
+		"latest release date": {
+			"label": "Latest release date",
+			"type": "string",
+			"required": false,
+			"description": "The release date of the latest released version. If no update is released for the software since its initial release, please omit this field; filling in the released field would be enough. The content of this field should look like the following: {{Start date and age|year|month|day}}",
+			"aliases": [
+				"latest_release_date"
+			]
+		},
+		"latest preview version": {
+			"label": "Latest preview version",
+			"type": "string",
+			"required": false,
+			"description": "The version number of the latest preview version or development branch. Should only be specified when development of a new version of the software in question (newer than one specified in latest release version) is in progress. Please consult descriptions for latest release version provided above for best practices of specifying this parameter.",
+			"aliases": [
+				"latest_preview_version"
+			]
+		},
+		"latest preview date": {
+			"label": "Latest preview date",
+			"type": "string",
+			"required": false,
+			"description": "Specifies the release date of the latest preview version or development branch. Should only be specified when development of a new version of the software in question (newer than one specified in latest release version) is in progress. Please consult descriptions for latest release date provided above for best practices of specifying this parameter.",
+			"aliases": [
+				"latest_preview_date"
+			]
+		},
+		"programming language": {
+			"label": "Programming language",
+			"type": "string",
+			"required": false,
+			"description": "The programming language in which the subject of the infobox is created. If the programming language of the software has a corresponding article on Wikipedia, please link to it. E.g. '[[:en:C++|C++]] and [[C Sharp (programming language)|C#]]'. Be advised that Wikipedia policies such as [[Wikipedia:Verifiability]] and [[Wikipedia:No original research]] also apply here.",
+			"aliases": [
+				"programming_language"
+			]
+		},
+		"engine": {
+			"label": "Software engine",
+			"description": "[[:en:Software engine|Software engine]] used by this program. In absence of this parameter, infobox attempts to acquire the engine from Wikidata. This parameter overrides the Wikidata engine. May also use plural.",
+			"type": "wiki-page-name",
+			"aliases": [
+				"engines"
+			]
+		},
+		"operating system": {
+			"label": "Operating system",
+			"type": "string",
+			"required": false,
+			"description": "The operating system on which the given software works. E.g. '[[:en:Microsoft Windows|Microsoft Windows]]' or '[[:en:Windows|Windows]]', '[[:en:Windows XP|Windows XP]] and later'. If the subject of the article is a web app, library or an SO-agnostic source code, ignore this parameter. Please be as accurate as possible in specifying this parameter (but also be mindful of the length) and avoid specifying vague phrases such as 'Cross-platform' (or its redirect, Multi-platform) or 'Unix-like' (implies that the subject runs on most desktops, server and mobile devices).",
+			"aliases": [
+				"operating_system"
+			]
+		},
+		"platform": {
+			"label": "Platform",
+			"type": "string",
+			"required": false,
+			"description": "The computing platform on which the software runs. Can be specific processors like '[[IA-32]]' (i386), '[[x86-64]]' 'Itanium', 'ARM' or 'MIPS'."
+		},
+		"included with": {
+			"label": "Included with",
+			"description": "Devices and operating systems that come preloaded with this browser.",
+			"type": "string"
+		},
+		"size": {
+			"label": "Size",
+			"type": "string",
+			"required": false,
+			"description": "Size of the installer package. Only applies to software available via download. E.g. '{{Nowrap|48 MB}}'."
+		},
+		"language": {
+			"label": "Language",
+			"type": "string",
+			"required": false,
+			"description": "Lists the natural languages in which the software's user interface can interact with user. Please do not supply 'Multilingual' or such vague phrases."
+		},
+		"language count": {
+			"label": "Language count",
+			"type": "number",
+			"required": false,
+			"description": "Number of natural languages in which the software's user interface can interact with user."
+		},
+		"language footnote": {
+			"label": "Language footnote",
+			"type": "string",
+			"required": false,
+			"description": "Use this parameter to supply citation on available translations."
+		},
+		"genre": {
+			"label": "Genre",
+			"type": "wiki-page-name",
+			"required": false,
+			"description": "Type of program. Should be wikilinked to an article such as '[[Geographic information system]]'. For more information, consult List of software categories."
+		},
+		"license": {
+			"label": "License",
+			"type": "string",
+			"required": false,
+			"description": "Name of the software license under which the user is allowed to use the software. E.g. '[[:en:Proprietary software|Proprietary]]', '[[:en:GNU General Public License|GNU General Public License]] version 3', '[[Modified BSD License]]'. May also use Commonwealth English spelling.",
+			"aliases": [
+				"licence"
+			]
+		},
+		"website": {
+			"label": "Website",
+			"type": "string",
+			"required": false,
+			"description": "The web site URL of the software package. This URL must be readable in print. Therefore, you should use '{{URL}}' template like this: '{{URL|http://www.example.com}}'. Avoid using printer-hostile forms like '[http://www.example.com Example website]'. In absence of this parameter, infobox attempts to acquire the website link form Wikidata. This parameter overrides the Wikidata link. (It is useful when a second infobox for something different is defined on a page.) In addition, the special value 'hide' suppresses this field, even in presence of a Wikidata link. This is useful for articles with several infoboxes, to avoid repeating one Wikidata link."
+		},
+		"repo": {
+			"label": "Source code repository",
+			"type": "string",
+			"required": false,
+			"description": "The online source code repository, if available. For example, the sourceforge or github project page. As with the website parameter, this should use the {{URL}} template. In the absence of this parameter, infobox attempts to acquire the repository link from Wikidata. This parameter overrides the Wikidata link."
+		},
+		"standard": {
+			"label": "Standard(s)",
+			"type": "string",
+			"required": false,
+			"description": "Technical standard of the software."
+		},
+		"AsOf": {
+			"label": "Infobox timestamp (AsOf)",
+			"type": "string",
+			"required": false,
+			"description": "Infobox timestamp in the form of month name, space character, year (four digits). Used by maintenance procedures and bots."
+		},
+		"bodystyle": {
+			"label": "Body style (CSS)",
+			"type": "string",
+			"required": false,
+			"description": "CSS styling for the infobox as a whole"
+		},
+		"other_names": {
+			"type": "string",
+			"label": "Other names",
+			"description": "Other (or former) names for the software"
+		},
+		"qid": {
+			"type": "string",
+			"description": "Wikidata QID"
+		},
+		"middleware": {
+			"type": "string",
+			"label": "Middleware",
+			"description": "The middleware used by the software",
+			"example": "Havok"
+		},
+		"replaces": {
+			"type": "string",
+			"label": "Replaces",
+			"description": "What the software replaces"
+		},
+		"replaced_by": {
+			"type": "wiki-page-name",
+			"label": "Replaced by",
+			"description": "Software that replaces this one"
+		},
+		"service_name": {
+			"type": "string",
+			"label": "Service name",
+			"description": "The service name for the software"
+		},
+		"logo title": {
+			"label": "Logo title",
+			"type": "string"
+		},
+		"screenshot title": {
+			"label": "Screenshot title",
+			"type": "string"
+		}
+	},
+	"paramOrder": [
+		"bodystyle",
+		"title",
+		"logo",
+		"logo upright",
+		"logo size",
+		"logo title",
+		"logo alt",
+		"logo caption",
+		"screenshot",
+		"collapsible",
+		"collapsetext",
+		"background",
+		"screenshot upright",
+		"screenshot size",
+		"screenshot alt",
+		"screenshot title",
+		"caption",
+		"other_names",
+		"author",
+		"developer",
+		"released",
+		"ver layout",
+		"discontinued",
+		"latest release version",
+		"latest release date",
+		"latest preview version",
+		"latest preview date",
+		"repo",
+		"qid",
+		"programming language",
+		"middleware",
+		"engine",
+		"operating system",
+		"platform",
+		"included with",
+		"replaces",
+		"replaced_by",
+		"service_name",
+		"size",
+		"standard",
+		"language",
+		"language count",
+		"language footnote",
+		"genre",
+		"license",
+		"website",
+		"AsOf"
+	]
+}
+</templatedata>
+{{Collapse bottom}}
+
+== Tracking categories ==
+* {{clc|Pages using Infobox software with unknown parameters}}
+* {{clc|Pages using Infobox software with version errors}}
+
+== See also ==
+'''Compatible derivatives'''
+* {{Lts|Infobox programming language}} – [[programming language]]s, [[integrated development environment]]s and [[development tool]]s
+
+=== Related ===
+* {{Lts|Infobox OS}} for [[:en:Operating system|Operating system]]s
+* {{Lts|Infobox software platform}} for [[software platform]]s
+* {{Lts|Infobox video game}} for [[:en:Video game|Video game]]s
+* {{Lts|Infobox website}} for [[:en:Website|Website]]s and [[web application]]s
+* [[WP:IB]] - list of infoboxes
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Software infobox templates|Software]]
+[[Category:Independently git synced pages]][[Category:Infobox templates using Wikidata|Software]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

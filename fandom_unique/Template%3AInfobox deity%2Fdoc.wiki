@@ -1,0 +1,559 @@
+{{Documentation subpage}}
+
+{{Lua|Module:InfoboxImage|Module:WikidataIB|Module:Check for unknown parameters}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+
+The template can be used for any god, deity or mythological figure who is worshiped in a religion or cult. For other mythological figures, please consider other templates like [[Template:Infobox mythical creature]] or [[Template:Infobox character]].
+
+== All fields ==
+{{Parameter names example| abode | abodes | adherents | affiliation | age | alt | alusi_of | animals | army | artefacts | artifacts | associate | battles | birth_date | birth_name | birth_place | birthname | avatar_birth | avatar_end | Canaanite_equivalent | canaanite_equivalent | caption | children | Christian_equivalent | christian_equivalent | color | colour | complexion | consort | consorts | cult_center | cult_centre | day | death_date | death_place | deity_of | Devanagari | devanagari | dynasty | ethnic_group | Etruscan_equivalent | etruscan_equivalent | equivalent1 | equivalent1_type | equivalent2 | equivalent2_type | equivalent3 | equivalent3_type | equivalent4 | equivalent4_type | equivalent5 | equivalent5_type | father | festivals | gender | god_of | Greek_equivalent | greek_equivalent | Aztec_equivalent | aztec_equivalent | Maya_equivalent | maya_equivalent | height | Hinduism_equivalent | hinduism_equivalent | Hindu_equivalent | hindu_equivalent | hiero | image | image_upright | mantra | member_of | moksha_date | moksha_place | mother | mount | name | Norse_equivalent | norse_equivalent | number | offspring | Old_Norse | old_norse | enemy | other_names | parents | planet | predecessor | region | Roman_equivalent | roman_equivalent | Manipuri_equivalent | manipuri_equivalent | indo-european_equivalent | Indo-european_equivalent | Albanian_equivalent | albanian_equivalent | Celtic_equivalent | celtic_equivalent | sacred_flower | Sanskrit_transliteration | sanskrit_transliteration | attributes | associated_deities | script | script_name | siblings | Slavic_equivalent | slavic_equivalent | spouse | successor | symbol | symbols | temple | temples | texts | tree | type | venerated_in | weapon | weapons | world }}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+{{Infobox deity
+| type = 
+| name = 
+| deity_of = 
+| member_of = 
+| image = 
+| image_upright =
+| alt = 
+| caption = 
+| other_names = 
+| hiero = 
+| old_norse = 
+| devanagari =
+| sanskrit_transliteration =
+| script_name = 
+| script = 
+| venerated_in =
+| associate = 
+| cult_centre = 
+| predecessor =
+| successor =
+| abode = 
+| planet = 
+| mantra = 
+| weapon = 
+| army =
+| battles = 
+| artifacts = 
+| animals = 
+| symbol = 
+| adherents = 
+| height =
+| age =
+| tree =
+| sacred_flower =
+| attributes =
+| enemy =
+| day = 
+| complexion = 
+| number = 
+| mount = 
+| texts = 
+| gender = 
+| region =
+| ethnic_group =
+| temples =
+| festivals = 
+| associated_deities =
+| birth_name =
+| birth_date =
+| birth_place =
+| death_date =
+| death_place =
+| avatar_birth = 
+| avatar_end = 
+| parents = 
+| siblings = 
+| consort = 
+| offspring = 
+| dynasty = 
+| Albanian_equivalent = 
+| aztec_equivalent = 
+| canaanite_equivalent = 
+| Celtic_equivalent = 
+| christian_equivalent = 
+| etruscan_equivalent = 
+| greek_equivalent =
+| Hinduism_equivalent = 
+| Indo-european_equivalent = 
+| manipuri_equivalent = 
+| maya_equivalent = 
+| norse_equivalent = 
+| roman_equivalent = 
+| slavic_equivalent = 
+| equivalent1_type = 
+| equivalent1 =
+| equivalent2_type = 
+| equivalent2 =
+| equivalent3_type = 
+| equivalent3 =
+| equivalent4_type = 
+| equivalent4 =
+| equivalent5_type = 
+| equivalent5 = 
+}}
+
+</syntaxhighlight>
+{{clear}}
+
+==Examples==
+{{Infobox deity
+| type = Hindu
+| name = Ganesha
+| gender = Male
+| father = [[:en:Shiva|Shiva]]
+| mother = [[:en:Parvati|Parvati]]
+| siblings = [[:en:Kartikeya|Kartikeya]] 
+| deity_of = {{ubl
+ |God of New Beginnings, Success and Wisdom
+ |Remover of Obstacles}}
+| image = Ganesha Basohli miniature circa 1730 Dubost p73.jpg
+| caption = [[:en:Basohli|Basohli]] miniature, c. 1730. [[:en:National Museum, New Delhi|National Museum, New Delhi]].
+| alt = Attired in an orange dhoti, an elephant-headed man sits on a large lotus. His body is red in colour and he wears various golden necklaces and bracelets and a snake around his neck. On the three points of his crown, budding lotuses have been fixed. He holds in his two right hands the rosary (lower hand) and a cup filled with three modakas (round yellow sweets), a fourth modaka held by the curving trunk is just about to be tasted. In his two left hands, he holds a lotus in the upper hand and an axe in the lower one, with its handle leaning against his shoulder.
+| affiliation = [[:en:Deva (Hinduism)|Deva]], [[:en:Brahman|Brahman]] ([[:en:Ganapatya|Ganapatya]]), [[Saguna Brahman]] ([[:en:Panchayatana puja|Panchayatana puja]])
+| mantra = {{IAST|Oṃ Shri Gaṇeśāya Namaḥ<br>Oṃ Gaṃ Gaṇapataye Namaḥ}}
+| abode =• '''[[:en:Mount Kailash|Mount Kailash]]''' (with parents [[:en:Shiva|Shiva]] and [[:en:Parvati|Parvati]]) ,<br>• '''Ganeshloka'''
+| weapon = [[:en:Parashu|{{IAST|Paraśu}} (axe)]], [[Pasha (Hinduism)|{{IAST|pāśa}} (noose)]], [[Elephant goad|{{IAST|aṅkuśa}} (elephant goad)]]
+| consorts = {{ubl
+ | [[Riddhi]] (Prosperity)
+ | [[:en:Siddhi|Siddhi]] (Attainment)
+ | [[:en:Buddhi|Buddhi]] (Intelligence) 
+  }}
+| mount = [[:en:Mouse|Mouse]]
+| symbols = [[:en:Swastika|Swastika]], [[Om]], [[Modak]]
+| festivals = [[:en:Ganesh Chaturthi|Ganesh Chaturthi]]
+| texts = ''[[Ganesha Purana]]'', ''[[Mudgala Purana]]'', ''[[Ganapati Atharvashirsa]]''
+| children = Shubha, Labha, [[Santoshi Mata]] 
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto">
+{{Infobox deity
+| type = Hindu
+| name = Ganesha
+| gender = Male
+| father = [[:en:Shiva|Shiva]]
+| mother = [[:en:Parvati|Parvati]]
+| siblings = [[:en:Kartikeya|Kartikeya]] 
+| deity_of = {{ubl
+ |God of New Beginnings, Success and Wisdom
+ |Remover of Obstacles}}
+| image = Ganesha Basohli miniature circa 1730 Dubost p73.jpg
+| caption = [[:en:Basohli|Basohli]] miniature, c. 1730. [[:en:National Museum, New Delhi|National Museum, New Delhi]].
+| alt = Attired in an orange dhoti, an elephant-headed man sits on a large lotus. His body is red in colour and he wears various golden necklaces and bracelets and a snake around his neck. On the three points of his crown, budding lotuses have been fixed. He holds in his two right hands the rosary (lower hand) and a cup filled with three modakas (round yellow sweets), a fourth modaka held by the curving trunk is just about to be tasted. In his two left hands, he holds a lotus in the upper hand and an axe in the lower one, with its handle leaning against his shoulder.
+| affiliation = [[:en:Deva (Hinduism)|Deva]], [[:en:Brahman|Brahman]] ([[:en:Ganapatya|Ganapatya]]), [[Saguna Brahman]] ([[:en:Panchayatana puja|Panchayatana puja]])
+| mantra = {{IAST|Oṃ Shri Gaṇeśāya Namaḥ<br>Oṃ Gaṃ Gaṇapataye Namaḥ}}
+| abode =• '''[[:en:Mount Kailash|Mount Kailash]]''' (with parents [[:en:Shiva|Shiva]] and [[:en:Parvati|Parvati]]) ,<br>• '''Ganeshloka'''
+| weapon = [[:en:Parashu|{{IAST|Paraśu}} (axe)]], [[Pasha (Hinduism)|{{IAST|pāśa}} (noose)]], [[Elephant goad|{{IAST|aṅkuśa}} (elephant goad)]]
+| consorts = {{ubl
+ | [[Riddhi]] (Prosperity)
+ | [[:en:Siddhi|Siddhi]] (Attainment)
+ | [[:en:Buddhi|Buddhi]] (Intelligence) 
+  }}
+| mount = [[:en:Mouse|Mouse]]
+| symbols = [[:en:Swastika|Swastika]], [[Om]], [[Modak]]
+| festivals = [[:en:Ganesh Chaturthi|Ganesh Chaturthi]]
+| texts = ''[[Ganesha Purana]]'', ''[[Mudgala Purana]]'', ''[[Ganapati Atharvashirsa]]''
+| children = Shubha, Labha, [[Santoshi Mata]] 
+}}
+</syntaxhighlight>
+{{clear}}
+
+==TemplateData==
+{{Collapse top|title=TemplateData}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "",
+	"params": {
+		"name": {
+			"label": "Name",
+			"type": "string",
+			"required": false,
+			"suggested": false,
+			"deprecated": false,
+			"description": "Character name to display in top header (default = PAGENAME)."
+		},
+		"image": {
+			"label": "Image",
+			"type": "wiki-file-name",
+			"required": false,
+			"suggested": false,
+			"deprecated": false,
+			"description": "Image of the character. \"File:\" and wikilinking is not required. i.e. use {{para|image|Example.png}}."
+		},
+		"image_upright": {
+			"label": "Image upright",
+			"type": "string",
+			"required": false,
+			"suggested": false,
+			"deprecated": false,
+			"description": "The image size defaults to frameless (220px). The size should not be set to a value that would result in an image width greater than 270px. See [[#Calculating \"image_upright\"|help below]] for guidance on determining the value to be used."
+		},
+		"alt": {
+			"label": "Alt",
+			"type": "string",
+			"required": false,
+			"suggested": false,
+			"deprecated": false,
+			"description": "Alt text for image per [[WP:MOSALT]]."
+		},
+		"caption": {
+			"label": "Caption",
+			"type": "string",
+			"required": false,
+			"suggested": false,
+			"deprecated": false,
+			"description": "A caption explaining the image."
+		},
+		"type": {
+			"label": "Type",
+			"description": "Religion in which the deity is worshipped",
+			"example": "Hindu for Rama",
+			"type": "string",
+			"required": true
+		},
+        "avatar_birth" : {},
+        "avatar_end": {},
+		"deity_of": {},
+		"god_of": {},
+		"alusi_of": {},
+		"member_of": {},
+		"qid": {},
+		"suppressfields": {},
+		"fetchwikidata": {},
+		"image_size": {},
+		"other_names": {},
+		"hiero": {},
+		"old_norse": {},
+		"script_name": {},
+		"script": {},
+		"venerated_in": {},
+		"associate": {},
+		"affiliation": {},
+		"cult_centre": {},
+		"cult_center": {},
+		"predecessor": {},
+		"successor": {},
+		"abode": {},
+		"abodes": {},
+		"planet": {},
+		"world": {},
+		"mantra": {},
+		"weapon": {},
+		"weapons": {},
+		"army": {},
+		"battles": {},
+		"artefacts": {},
+		"artifacts": {},
+		"animals": {},
+		"symbol": {},
+		"symbols": {},
+		"adherents": {},
+		"height": {},
+		"age": {},
+		"tree": {},
+		"day": {},
+		"complexion": {},
+		"colour": {},
+		"color": {},
+		"number": {},
+		"mount": {},
+		"texts": {},
+		"gender": {},
+		"region": {},
+		"ethnic_group": {},
+		"temples": {},
+		"temple": {},
+		"festivals": {},
+		"birth_name": {},
+		"birth_date": {},
+		"birth_place": {},
+		"death_date": {},
+		"death_place": {},
+		"spouse": {},
+		"children": {},
+		"father": {},
+		"mother": {},
+		"siblings": {},
+		"dynasty": {},
+		"birthname": {},
+		"moksha_date": {},
+		"moksha_place": {},
+		"parents": {},
+		"consort": {},
+		"consorts": {},
+		"offspring": {},
+		"greek_equivalent": {},
+		"roman_equivalent": {},
+		"norse_equivalent": {},
+		"etruscan_equivalent": {},
+		"christian_equivalent": {},
+		"slavic_equivalent": {},
+		"hinduism_equivalent": {},
+		"canaanite_equivalent": {},
+        "indo-european_equivalent": {},
+        "albanian_equivalent": {},
+		"celtic_equivalent": {},
+		"equivalent1": {},
+		"equivalent2": {},
+		"equivalent3": {},
+		"equivalent4": {},
+		"equivalent5": {},
+		"equivalent1_type": {},
+		"equivalent2_type": {},
+		"equivalent3_type": {},
+		"equivalent4_type": {},
+		"equivalent5_type": {},
+		"child": {},
+		"nocat_wdimage": {}
+	},
+	"format": "{{_\n| _ = _\n}}"
+}
+</templatedata>
+{{Collapse bottom}}
+
+==Color template ==
+If “|type= “ is filled with any of the following inputs, it will use colors from the infobox drawn from [[Template:Infobox deity/color]]
+{| class="wikitable"
+|+Deity type and color style
+!<nowiki>|type = Input</nowiki>
+!Color style output
+!Sidebar matching?
+!Footer matching?
+|-
+|Akan
+|style="background-color:#FFD700;" | '''#FFD700'''
+|No
+|{{Tick}} [[Template:Akan topics|Yes]]
+|-
+|Albanian
+|style="background-color:#92ffde;" | '''#92ffde'''
+|
+|
+|-
+|Arabian
+|style="background-color:#cdc8b8;" | '''#CDC8B8'''
+|
+|
+|-
+|Armenian
+|style="background-color:#ffff00;" | '''#FFFF00'''
+|
+|
+|-
+|Australian
+|style="background-color:#eba9ee"|'''#EBA9EE'''
+|
+|
+|-
+|Aztec
+|style="background-color:#00a86b; color: #FFFFFF;" | '''#00A86B'''
+|
+|
+|-
+|Bantu
+|style="background-color:#bdfdfb" | '''#BDFDFB'''
+|
+|
+|-
+|Canaanite
+|style="background-color:#800080; color: #FFFFFF;" | '''#800080'''
+|
+|
+|-
+|Celtic
+|style="background-color:#CE8946; color: #FFFFFF;" | '''#CE8946'''
+|
+|
+|-
+|Chinese
+|style="background-color:#C04851; color: #FFFFFF;" | '''#C04851'''
+|
+|
+|-
+|Eblaite
+|style="background-color:#008113; color: #FFFFFF;" | '''#008113'''
+|
+|
+|-
+|Edo
+|style="background-color:#93C572;" | '''#93C572'''
+|
+|
+|-
+|Egyptian
+|style="background-color:#decd87;" | '''#DECD87'''
+|{{Tick}} [[Template:Ancient Egyptian religion|Yes]]
+|{{Tick}} [[Template:Ancient Egyptian religion footer|Yes]]
+|-
+|Elamite
+|style="background-color:#159e4f; color: #FFFFFF;" | '''#159E4F'''
+|
+|
+|-
+|Etruscan
+|style="background-color:#f7e3cd;" | '''#F7E3CD'''
+|
+|
+|-
+|Greek
+|style="background-color:#cef2e0;" | '''#CEF2E0'''
+|
+|
+|-
+|Hindu
+|style="background-color:#FFC569;" | '''#FFC569'''
+|{{Tick}} [[template:Hinduism|Yes]]
+|{{Tick}} [[Template:Hindudharma|Yes]]
+|-
+|Hittite
+|style="background-color:#021af2; color: #FFFFFF;" | '''#021AF2'''
+|
+|
+|-
+|Hurrian
+|style="background-color:#4b539c; color: #FFFFFF;" | '''#4B539C'''
+|
+|
+|-
+|Igbo
+|style="background-color:#ACE1AF;" | '''#ACE1AF'''
+|{{Tick}} [[Template:Odinala sidebar|Yes]]
+|{{Tick}} [[Template:Odinala|Yes]]
+|-
+|Indo-European
+|style="background-color:#006400; color: #FFFFFF;" | '''#006400'''
+|
+|
+|-
+|Irish
+|style="background-color:#90db90;" | '''#90DB90'''
+|
+|
+|-
+|Jain
+|style="background-color:#F5DEB3;" | '''#F5DEB3'''
+|
+|
+|-
+|Japanese, Shinto
+|style="background-color:#A12F25; color: #FFFFFF;" | '''#A12F25'''
+| {{Tick}} [[Template:Shinto|Yes]]
+|No
+|-
+|Kongo
+|style="background-color:#E1BAE7;" | '''#E1BAE7'''
+|{{Tick}} [[Template:Kongo religion sidebar|Yes]]
+|{{Tick}} [[:en:Template:Kongo religion footer|Yes]]
+|-
+|Mayan
+|style="background-color:#50C578; color: #FFFFFF;" | '''#50C578'''
+|
+|
+|-
+|Meitei
+|style="background-color:#330055; color: #F0FACF;" | '''#330055'''
+|
+|
+|-
+|Mesopotamian
+|style="background-color:#228b22; color: #FFFFFF;" | '''#228B22'''
+|
+|
+|-
+|Muisca
+|style="background-color:#FFD500;" | '''#FFD500'''
+|
+|
+|-
+|Norse, Germanic
+|style="background-color:#d6dbbe;" | '''#D6DBBE'''
+|
+|{{Tick}} [[Template:Norse paganism footer|Yes]]
+|-
+|Nubian
+|style="background-color:#f0e4ae;" | '''#F0E4AE'''
+|
+|
+|-
+|Ossetian
+|style="background-color:#FFE8D0;" | '''#FFE8D0'''
+|
+|
+|-
+|Phillippine
+|style="background-color:#F6E396;" | '''#F6E396'''
+|
+|
+|-
+|Polynesian, Hawaiian
+|style="background-color:#AFEEEE;" | '''#AFEEEE'''
+|No
+|No
+|-
+|Roman
+|style="background-color:#F0ACAC;" | '''#F0ACAC'''
+|{{Tick}} [[Template:Ancient Roman religion sidebar|Yes]] {{Tick}} [[Template:Priesthoods of ancient Rome|Yes]]
+|
+|-
+|Slavic
+|style="background-color:#CD0000; color: #FFFFFF;" | '''#CD0000'''
+|No sidebar
+|No
+|-
+| Sogdian
+|style="background-color:#295A8A; color: #FFFFFF;" | '''#295A8A'''
+|
+|
+|-
+|Turkic
+|style="background-color:#00ABC2; color: #FFFFFF;" | '''#00ABC2'''
+|
+|
+|-
+|Ugaritic
+|style="background-color:#00817d; color: #FFFFFF;" | '''#00817D'''
+|
+|
+|-
+|Welsh
+|style="background-color: #B30024; color: #FFFFFF;;" | '''#B30024'''
+|
+|
+|-
+|Yoruba
+|style="background-color:#93C572;" | '''#93C572'''
+|{{Tick}} [[Template:Orisa-Ifá sidebar|Yes]]
+|{{Tick}} [[Template:Orisa-Ifá|Yes]]
+|-
+|Zoroastrian
+|style="background-color:#990955; color: #FFFFFF;" | '''#990955'''
+|
+|
+|-
+|}
+
+== Tracking categories ==
+* {{clc|Pages using infobox deity with unknown parameters}}
+* {{clc|Pages using infobox deity with color param}}
+* {{clc|Pages using infobox deity without type param}}
+
+{{Religious infoboxes}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Hinduism infobox templates|Deity]]
+[[Category:Igbo templates|Deity]]
+[[Category:Egypt infobox templates|Deity]]
+[[Category:Religion and belief infobox templates|Deity]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

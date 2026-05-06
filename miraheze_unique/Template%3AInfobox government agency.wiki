@@ -1,0 +1,197 @@
+{{ infobox
+| child        = {{{child|}}}
+| subbox       = {{{subbox|}}}
+| italic title = {{{italic title|no}}}
+
+| titlestyle   = font-size: 125%;
+| title        = {{{name|{{{agency_name|{{PAGENAMEBASE}}}}}}}}
+| subheader    = {{Br separated entries
+ | 1 = {{{native_name|{{{nativename|}}}}}}
+ | 2 = {{{native_name_a|{{{nativename_a|}}}}}}
+ | 3 = {{{native_name_r|{{{nativename_r|}}}}}}
+ }}
+
+| image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{seal|}}}|size={{{seal_size|{{{seal_width|}}}}}}| alt={{{seal_alt|}}}|sizedefault=frameless|class=skin-invert}}
+| caption      = {{{seal_caption|}}}
+
+| image2       = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo_size|{{{logo_width|}}}}}}| alt={{{logo_alt|}}}|sizedefault=frameless|class=skin-invert}}
+| caption2     = {{{logo_caption|}}}
+
+| headerstyle  = background-color: #efefef
+
+| data1        = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|{{{picture|}}}}}}|size={{{image_size|{{{picture_width|}}}}}}|alt={{{image_alt|}}}|sizedefault=frameless}}{{#if: {{{image_caption|{{{picture_caption|}}}}}} | {{break}}{{{image_caption|{{{picture_caption}}}}}} }}
+
+| header2      = {{#if: {{{formed|}}}{{{preceding1|}}}{{{dissolved|}}}{{{superseding|}}}{{{jurisdiction|}}}{{{headquarters|}}}{{{motto|}}}{{{employees|}}}{{{budget|}}}{{{minister1_name|}}}{{{chief1_name|}}}{{{parent_agency|}}}{{{child1_agency|}}}{{{keydocument1|}}}{{{website|}}}{{{footnotes|}}}{{{map|}}}{{{map_caption|}}} | {{ucfirst: {{#if:{{{type|}}}|{{{type}}}|Agency }} }} overview }}
+
+| label3       = Formed
+| data3        = {{{formed|}}}
+
+| label4       = {{#if:{{{preceding1|}}} | {{#if:{{{preceding2|}}}|Preceding agencies|Preceding {{#if:{{{type|}}}|{{{type}}}|agency}} }} }}
+| data4        = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{{preceding1|}}}
+ | 2 = {{{preceding2|}}}
+ | 3 = {{{preceding3|}}}
+ | 4 = {{{preceding4|}}}
+ | 5 = {{{preceding5|}}}
+ | 6 = {{{preceding6|}}}
+ }}
+
+| label5       = Dissolved
+| data5        = {{{dissolved|}}}
+
+| label6       = {{#if:{{{superseding|{{{superseding1|}}}}}} | {{#if:{{{superseding2|}}}|Superseding agencies|Superseding {{#if:{{{type|}}}|{{{type}}}|agency}} }} }}
+| data6        = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{{superseding|{{{superseding1|}}}}}}
+ | 2 = {{{superseding2|}}}
+ | 3 = {{{superseding3|}}}
+ | 4 = {{{superseding4|}}}
+ | 5 = {{{superseding5|}}}
+ | 6 = {{{superseding6|}}}
+ }}
+
+| label7       = Type
+| data7        = {{{agency_type|}}}
+| class7       = category
+
+| label8       = Jurisdiction
+| data8        = {{{jurisdiction|}}}
+
+| label9       = Status
+| data9        = {{{status|}}}
+
+| label10      = Headquarters
+| data10       = {{{headquarters|}}}{{#if: {{{coordinates|}}}|{{break}}{{{coordinates|}}} }}
+
+| label11      = Motto
+| data11       = {{{motto|}}}
+
+| label12      = Employees
+| data12       = {{{employees|}}}
+
+| label13      = Annual budget
+| data13       = {{{budget|}}}
+
+| label14      = {{#if:{{{minister2_name|}}}|{{#if:{{{minister_type|}}}|{{{minister_type}}}|Ministers}} responsible|{{#if:{{{minister_type|}}}|{{{minister_type}}}|Minister}} responsible}}
+| data14       = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{#if:{{{minister1_name|}}}|{{{minister1_name|}}}{{#if:{{{minister1_pfo|}}}|, {{{minister1_pfo}}}}}|{{#if:{{{minister1_pfo|}}}|{{{minister1_pfo}}}}}}}
+ | 2 = {{#if:{{{minister2_name|}}}|{{{minister2_name|}}}{{#if:{{{minister2_pfo|}}}|, {{{minister2_pfo}}}}}|{{#if:{{{minister2_pfo|}}}|{{{minister2_pfo}}}}}}}
+ | 3 = {{#if:{{{minister3_name|}}}|{{{minister3_name|}}}{{#if:{{{minister3_pfo|}}}|, {{{minister3_pfo}}}}}|{{#if:{{{minister3_pfo|}}}|{{{minister3_pfo}}}}}}}
+ | 4 = {{#if:{{{minister4_name|}}}|{{{minister4_name|}}}{{#if:{{{minister4_pfo|}}}|, {{{minister4_pfo}}}}}|{{#if:{{{minister4_pfo|}}}|{{{minister4_pfo}}}}}}}
+ | 5 = {{#if:{{{minister5_name|}}}|{{{minister5_name|}}}{{#if:{{{minister5_pfo|}}}|, {{{minister5_pfo}}}}}|{{#if:{{{minister5_pfo|}}}|{{{minister5_pfo}}}}}}}
+ | 6 = {{#if:{{{minister6_name|}}}|{{{minister6_name|}}}{{#if:{{{minister6_pfo|}}}|, {{{minister6_pfo}}}}}|{{#if:{{{minister6_pfo|}}}|{{{minister6_pfo}}}}}}}
+ | 7 = {{#if:{{{minister7_name|}}}|{{{minister7_name|}}}{{#if:{{{minister7_pfo|}}}|, {{{minister7_pfo}}}}}|{{#if:{{{minister7_pfo|}}}|{{{minister7_pfo}}}}}}}
+ | 8 = {{#if:{{{minister8_name|}}}|{{{minister8_name|}}}{{#if:{{{minister8_pfo|}}}|, {{{minister8_pfo}}}}}|{{#if:{{{minister8_pfo|}}}|{{{minister8_pfo}}}}}}}
+ }}
+
+| label15      = {{#if:{{{deputyminister2_name|}}}|{{#if:{{{deputyminister_type|}}}|{{{deputyminister_type}}}|Deputy Ministers}} responsible|{{#if:{{{deputyminister_type|}}}|{{{deputyminister_type}}}|Deputy Minister}} responsible}}
+| data15       = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{#if:{{{deputyminister1_name|}}}|{{{deputyminister1_name|}}}{{#if:{{{deputyminister1_pfo|}}}|, {{{deputyminister1_pfo}}}}}|{{#if:{{{deputyminister1_pfo|}}}|{{{deputyminister1_pfo}}}}}}}
+ | 2 = {{#if:{{{deputyminister2_name|}}}|{{{deputyminister2_name|}}}{{#if:{{{deputyminister2_pfo|}}}|, {{{deputyminister2_pfo}}}}}|{{#if:{{{deputyminister2_pfo|}}}|{{{deputyminister2_pfo}}}}}}}
+ | 3 = {{#if:{{{deputyminister3_name|}}}|{{{deputyminister3_name|}}}{{#if:{{{deputyminister3_pfo|}}}|, {{{deputyminister3_pfo}}}}}|{{#if:{{{deputyminister3_pfo|}}}|{{{deputyminister3_pfo}}}}}}}
+ | 4 = {{#if:{{{deputyminister4_name|}}}|{{{deputyminister4_name|}}}{{#if:{{{deputyminister4_pfo|}}}|, {{{deputyminister4_pfo}}}}}|{{#if:{{{deputyminister4_pfo|}}}|{{{deputyminister4_pfo}}}}}}}
+ | 5 = {{#if:{{{deputyminister5_name|}}}|{{{deputyminister5_name|}}}{{#if:{{{deputyminister5_pfo|}}}|, {{{deputyminister5_pfo}}}}}|{{#if:{{{deputyminister5_pfo|}}}|{{{deputyminister5_pfo}}}}}}}
+ | 6 = {{#if:{{{deputyminister6_name|}}}|{{{deputyminister6_name|}}}{{#if:{{{deputyminister6_pfo|}}}|, {{{deputyminister6_pfo}}}}}|{{#if:{{{deputyminister6_pfo|}}}|{{{deputyminister6_pfo}}}}}}}
+ | 7 = {{#if:{{{deputyminister7_name|}}}|{{{deputyminister7_name|}}}{{#if:{{{deputyminister7_pfo|}}}|, {{{deputyminister7_pfo}}}}}|{{#if:{{{deputyminister7_pfo|}}}|{{{deputyminister7_pfo}}}}}}}
+ | 8 = {{#if:{{{deputyminister8_name|}}}|{{{deputyminister8_name|}}}{{#if:{{{deputyminister8_pfo|}}}|, {{{deputyminister8_pfo}}}}}|{{#if:{{{deputyminister8_pfo|}}}|{{{deputyminister8_pfo}}}}}}}
+ }}
+
+| label16      = {{ucfirst: {{#if:{{{type|}}}|{{{type}}}|Agency}}}} executive{{#if:{{{chief2_name|}}}|s}}
+| data16       = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{#if:{{{chief1_name|}}}|{{{chief1_name|}}}{{#if:{{{chief1_position|}}}|, {{{chief1_position}}}}}|{{#if:{{{chief1_position|}}}|{{{chief1_position}}}}}}}
+ | 2 = {{#if:{{{chief2_name|}}}|{{{chief2_name|}}}{{#if:{{{chief2_position|}}}|, {{{chief2_position}}}}}|{{#if:{{{chief2_position|}}}|{{{chief2_position}}}}}}}
+ | 3 = {{#if:{{{chief3_name|}}}|{{{chief3_name|}}}{{#if:{{{chief3_position|}}}|, {{{chief3_position}}}}}|{{#if:{{{chief3_position|}}}|{{{chief3_position}}}}}}}
+ | 4 = {{#if:{{{chief4_name|}}}|{{{chief4_name|}}}{{#if:{{{chief4_position|}}}|, {{{chief4_position}}}}}|{{#if:{{{chief4_position|}}}|{{{chief4_position}}}}}}}
+ | 5 = {{#if:{{{chief5_name|}}}|{{{chief5_name|}}}{{#if:{{{chief5_position|}}}|, {{{chief5_position}}}}}|{{#if:{{{chief5_position|}}}|{{{chief5_position}}}}}}}
+ | 6 = {{#if:{{{chief6_name|}}}|{{{chief6_name|}}}{{#if:{{{chief6_position|}}}|, {{{chief6_position}}}}}|{{#if:{{{chief6_position|}}}|{{{chief6_position}}}}}}}
+ | 7 = {{#if:{{{chief7_name|}}}|{{{chief7_name|}}}{{#if:{{{chief7_position|}}}|, {{{chief7_position}}}}}|{{#if:{{{chief7_position|}}}|{{{chief7_position}}}}}}}
+ | 8 = {{#if:{{{chief8_name|}}}|{{{chief8_name|}}}{{#if:{{{chief8_position|}}}|, {{{chief8_position}}}}}|{{#if:{{{chief8_position|}}}|{{{chief8_position}}}}}}}
+ | 9 = {{#if:{{{chief9_name|}}}|{{{chief9_name|}}}{{#if:{{{chief9_position|}}}|, {{{chief9_position}}}}}|{{#if:{{{chief9_position|}}}|{{{chief9_position}}}}}}}
+ }}
+
+| label17      = Parent department
+| data17       = {{{parent_department|}}}
+
+| label18      = Parent {{#if:{{{parent_agency_type|}}}|{{{parent_agency_type}}}|{{#if:{{{type|}}}|{{{type}}}|agency}}}}
+| data18       = {{{parent_agency|}}}
+
+| label19      = {{#if:{{{child2_agency|}}}|Child agencies|Child {{#if:{{{type|}}}|{{{type}}}|agency}}}}
+| data19       = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1  = {{{child1_agency|}}}
+ | 2  = {{{child2_agency|}}}
+ | 3  = {{{child3_agency|}}}
+ | 4  = {{{child4_agency|}}}
+ | 5  = {{{child5_agency|}}}
+ | 6  = {{{child6_agency|}}}
+ | 7  = {{{child7_agency|}}}
+ | 8  = {{{child8_agency|}}}
+ | 9  = {{{child9_agency|}}}
+ | 10 = {{{child10_agency|}}}
+ | 11 = {{{child11_agency|}}}
+ | 12 = {{{child12_agency|}}}
+ | 13 = {{{child13_agency|}}}
+ | 14 = {{{child14_agency|}}}
+ | 15 = {{{child15_agency|}}}
+ | 16 = {{{child16_agency|}}}
+ | 17 = {{{child17_agency|}}}
+ | 18 = {{{child18_agency|}}}
+ | 19 = {{{child19_agency|}}}
+ | 20 = {{{child20_agency|}}}
+ | 21 = {{{child21_agency|}}}
+ | 22 = {{{child22_agency|}}}
+ | 23 = {{{child23_agency|}}}
+ | 24 = {{{child24_agency|}}}
+ | 25 = {{{child25_agency|}}}
+ }}
+
+| label20      = {{#if:{{{keydocument2|}}}|Key documents|Key document}}
+| data20       = {{#invoke:list|unbulleted|item_style=text-indent: -1em; padding-left: 1em;
+ | 1 = {{{keydocument1|}}}
+ | 2 = {{{keydocument2|}}}
+ | 3 = {{{keydocument3|}}}
+ | 4 = {{{keydocument4|}}}
+ | 5 = {{{keydocument5|}}}
+ | 6 = {{{keydocument6|}}}
+ | 7 = {{{keydocument7|}}}
+ | 8 = {{{keydocument8|}}}
+ }}
+
+| label21      = Website
+| data21       = {{{website|}}}
+
+| label22      = Agency ID
+| data22       = {{{agency_id|}}}
+
+| header23     = {{#if:{{{map|}}}|{{Infobox|child=yes|decat=yes
+ | title   = Map
+ | image   = {{#invoke:InfoboxImage|InfoboxImage|image={{{map|}}}|alt={{{map_alt}}}|size={{{map_size|{{{map_width|}}}}}}|sizedefault=frameless}}
+ | caption = {{{map_caption|}}}
+ }}}}
+
+| image3     = {{#if:{{{pushpin_map|{{{map_type|}}}}}}|{{Location map|{{{pushpin_map|{{{map_type|}}}}}}
+ |alt     = {{{pushpin_map_alt|{{{map_alt|}}}}}}
+ |coordinates = {{{coordinates|}}}
+ |float   = center
+ |mark    = {{{map_dot_mark|Red pog.svg}}}
+ |marksize= 7
+ |label   = {{{pushpin_label|{{{map dot label|{{{map_dot_label|}}}}}}}}}
+ |relief  = {{{pushpin_relief|{{{relief|}}}}}}
+ |border  = none
+ |caption = 
+ |width   = {{{pushpin_mapsize|{{{map_size|}}}}}}
+}} |{{#invoke:InfoboxImage|InfoboxImage|image={{{image_map|}}}|size={{{map_size|}}}|sizedefault=frameless|alt={{{map_alt|}}}}}}}
+| caption3   = {{#if:{{{pushpin_map|{{{map_type|}}}}}} |{{{pushpin_map_caption|{{{map_caption|Location within {{#invoke:Location map|data|{{{pushpin_map|{{{map_type}}}}}}|name}}}}}}}} |{{#if:{{{image_map|}}} |{{{map_caption|}}} }}}}
+| header24     = {{#if:{{{footnotes|}}}|Footnotes}}
+| data25       = {{{footnotes|}}}
+
+| data26     = {{{embed|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox government agency]] with unknown parameter "_VALUE_"|ignoreblank=y| agency_id | agency_name | agency_type | budget | chief1_name | chief1_position | chief2_name | chief2_position | chief3_name | chief3_position | chief4_name | chief4_position | chief5_name | chief5_position | chief6_name | chief6_position | chief7_name | chief7_position | chief8_name | chief8_position | chief9_name | chief9_position | child | child1_agency | child10_agency | child11_agency | child12_agency | child13_agency | child14_agency | child15_agency | child16_agency | child17_agency | child18_agency | child19_agency | child2_agency | child20_agency | child21_agency | child22_agency | child23_agency | child24_agency | child25_agency | child3_agency | child4_agency | child5_agency | child6_agency | child7_agency | child8_agency | child9_agency | coordinates | deputyminister_type | deputyminister1_name | deputyminister1_pfo | deputyminister2_name | deputyminister2_pfo | deputyminister3_name | deputyminister3_pfo | deputyminister4_name | deputyminister4_pfo | deputyminister5_name | deputyminister5_pfo | deputyminister6_name | deputyminister6_pfo | deputyminister7_name | deputyminister7_pfo | deputyminister8_name | deputyminister8_pfo | dissolved | embed | employees | footnotes | formed | headquarters | image | image_caption |image_alt | image_map | image_size | italic title | jurisdiction | keydocument1 | keydocument2 | keydocument3 | keydocument4 | keydocument5 | keydocument6 | keydocument7 | keydocument8 | logo | logo_caption |logo_alt| logo_size | logo_width | map | map_alt | map_caption | map_dot_label | map_dot_mark | map_size | map_type | map_width | minister_type | minister1_name | minister1_pfo | minister2_name | minister2_pfo | minister3_name | minister3_pfo | minister4_name | minister4_pfo | minister5_name | minister5_pfo | minister6_name | minister6_pfo | minister7_name | minister7_pfo | minister8_name | minister8_pfo | motto | name | native_name | native_name_a | native_name_r | nativename | nativename_a | nativename_r | parent_agency | parent_agency_type | parent_department | picture | picture_caption | picture_width | preceding1 | preceding2 | preceding3 | preceding4 | preceding5 | preceding6 | region_code | seal |seal_alt | seal_caption | seal_size | seal_width | status | subbox | superseding | superseding1 | superseding2 | superseding3 | superseding4 | superseding5 | superseding6 | type | website }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox government agency with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,25 @@
+<includeonly>{{#switch: {{{1|}}}
+| keyboard                  = #f0e68c 
+| woodwind                  = #f4bf92 
+| brass                     = #bfe0bf 
+| string                    = #b0c4de 
+| percussion                = #d8bfd8 
+| electronic                = #b0e0e6 
+| other                     = #d3d3d3 
+| {{{1|#a9a9a9}}}
+}}</includeonly><noinclude>
+;NOTE
+This template is an implementation detail, encapsulating the color association we use for its parent template. It has a single unnamed parameter and expands to
+* <code><color name></code> if a name exists among the 16 names supported by the HTML 4.0 standard (aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, yellow)
+* <code>#<color hex></code> otherwise.
+
+<em>No final semicolon is included, ever</em>.
+
+[[Category: implementation details|{{PAGENAME}}]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

@@ -1,0 +1,142 @@
+<includeonly>{{Infobox
+| child       = {{Yesno|{{{subbox|{{{embed|}}}}}}}}
+| templatestyles = Template:Infobox YouTube personality/styles.css
+| bodyclass   = ib-youtube biography vcard
+
+| title       = {{#if:{{Yesno|{{{subbox|{{{embed|}}}}}}}}|<div {{#if:{{Yesno|{{{subbox|}}}}}|class="ib-youtube-title"}}>'''YouTube information'''</div>}}
+
+| aboveclass  = ib-youtube-above
+| above       = {{#if:{{Yesno|{{{subbox|{{{embed|}}}}}}}}||{{br separated entries
+ |1={{#if:{{{honorific_prefix|{{{honorific prefix|}}}}}}|<span class="honorific-prefix">{{{honorific_prefix|{{{honorific prefix|}}}}}}</span>}}
+ |2=<span class="fn">{{{name|{{PAGENAMEBASE}}}}}</span>
+ |3={{#if:{{{honorific_suffix|{{{honorific suffix|}}}}}}|<span class="honorific-suffix">{{{honorific_suffix|{{{honorific suffix|}}}}}}</span>}}
+ }}
+}}
+
+| image       = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{logo_size|}}}|sizedefault=250px|alt={{{logo_alt|}}}}}
+| caption     = {{{logo_caption|{{{logo caption|}}}}}}
+
+| image2      = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|{{{image size|{{{imagesize|}}}}}}}}}|sizedefault=frameless|upright={{{image_upright|{{{upright|1}}}}}}|alt={{{alt|}}}|suppressplaceholder=yes}}
+| caption2    = {{{image_caption|{{{caption|{{{image caption|}}}}}}}}}
+
+| headerclass = ib-youtube-header
+| header1     = {{#if:{{{birth_name|}}}{{{birth_date|}}}{{{birth_place|}}}{{{death_date|}}}{{{death_place|}}}{{{nationality|}}}{{{occupation|{{{occupations|}}}}}}|Personal information}}
+
+| label2      = Born
+| data2       = {{br separated entries|1={{#if:{{{birth_name|}}}|<div class="nickname">{{{birth_name}}}</div>}}|2={{{birth_date|}}}|3={{#if:{{{birth_place|}}}|<div class="birthplace">{{{birth_place|}}}</div>}}}}
+
+| label3      = Died
+| data3       = {{br separated entries|1={{{death_date|}}}|2={{#if:{{{death_place|}}}|<div class="deathplace">{{{death_place|}}}</div>}}}}
+
+| label4      = Origin
+| data4       = {{{origin|}}}
+
+| label5      = Nationality
+| data5       = {{{nationality|}}}
+| class5      = category
+
+| label6      = Other&nbsp;names
+| data6       = {{{other_names|}}}
+| class6      = nickname
+
+| label7      = Education
+| data7       = {{{education|}}}
+
+| label8      = Occupation{{#if:{{{occupations|}}}|s|{{Pluralize from text|{{{occupation|}}}|likely=(s)|plural=s}}}}
+| data8       = {{{occupation|{{{occupations|}}}}}}
+| class8      = role
+
+| label9      = Spouse{{#if:{{{spouses|}}}|s|{{Pluralize from text|{{{spouse|}}}|likely=(s)|plural=s}}}}
+| data9       = {{{spouse|{{{spouses|}}}}}}
+
+| label10     = Partner{{#if:{{{partners|}}}|s|{{Pluralize from text|{{{partner|}}}|likely=(s)|plural=s}}}}
+| data10      = {{{partner|{{{partners|}}}}}}
+
+| label11     = Children
+| data11      = {{{children|}}}
+
+| label12     = Parent{{if either|{{{parents|}}}|{{if both|{{{mother|}}}|{{{father|}}}|true}}|s|{{Pluralize from text|{{{parent|}}}|likely=(s)|plural=s}}}}
+| data12      = {{#if:{{{parent|{{{parents|}}}}}}|{{{parent|{{{parents}}}}}}|{{Unbulleted list|{{#if:{{{father|}}}|{{{father}}} (father)}}|{{#if:{{{mother|}}}|{{{mother}}} (mother)}}}}}}
+
+| label13     = Relatives
+| data13      = {{{relatives|}}}
+
+| label14     = Organi{{#if:{{{organisation|{{{organisations|}}}}}}|s|z}}ation{{#if:{{{organizations|{{{organisations|}}}}}}|s|{{pluralize from text|{{{organization|{{{organisation|}}}}}}|likely=(s)|plural=s}}}}
+| data14      = {{{organization|{{{organisation|{{{organizations|{{{organisations|}}}}}}}}}}}}
+| class14     = org
+
+| label15     = Signature
+| data15      = {{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size={{{signature_size|}}}|sizedefault=150px|alt={{{signature_alt|{{{signature alt|}}}}}}}}
+
+| label16     = Website
+| data16      = {{{website|{{{homepage|{{{URL|}}}}}}}}}
+
+| data17      = {{{module_personal|}}}
+
+| header20    = {{#if:{{Yesno|{{{subbox|{{{embed|}}}}}}}}||{{#if:{{{pseudonym|}}}{{{channel_name|}}}{{{channel_url|}}}{{{channel_direct_url|}}}{{{channels|}}}{{{years_active|{{{years active|{{{yearsactive|}}}}}}}}}{{{genre|{{{genres|}}}}}}{{#switch:{{#invoke:YouTubeSubscribers|subCountNice}}|-404|-412|-424={{{subscribers|}}}|{{#invoke:YouTubeSubscribers|subCountNice}}}}{{{views|}}}{{{network|}}}{{{associated_acts|}}}|YouTube information}}}}
+
+| label21     = {{Nowrap|Also known as}}
+| data21      = {{{pseudonym|}}}
+| class21     = nickname
+
+| label22     = Channel{{#if:{{{channels|}}}{{{channel_name2|}}}{{{channel_url2|}}}{{{channel_direct_url2|}}}|s}}
+| data22      = {{#if:{{{channel_name|}}}{{{channel_url|}}}{{{channel_direct_url|}}}|{{flatlist|
+* [https://www.youtube.com/{{#switch:{{if empty|{{{channel_name|}}}|{{{channel_url|}}}|{{{channel_direct_url|}}}}}|{{{channel_name}}}=user/{{{channel_name}}}|{{{channel_url}}}=channel/{{{channel_url}}}|{{{channel_direct_url}}}}} {{if empty|{{{channel_display_name|}}}|{{{channel_name|}}}|{{{channel_direct_url|}}}|YouTube channel}}]{{#if:{{{channel_name2|}}}{{{channel_url2|}}}{{{channel_direct_url2|}}}|
+* [https://www.youtube.com/{{#switch:{{if empty|{{{channel_name2|}}}|{{{channel_url2|}}}|{{{channel_direct_url2|}}}}}|{{{channel_name2}}}=user/{{{channel_name2}}}|{{{channel_url2}}}=channel/{{{channel_url2}}}|{{{channel_direct_url2}}}}} {{if empty|{{{channel_display_name2|}}}|{{{channel_name2|}}}|{{{channel_direct_url2|}}}|YouTube channel}}]{{#if:{{{channel_name3|}}}{{{channel_url3|}}}{{{channel_direct_url3|}}}|
+* [https://www.youtube.com/{{#switch:{{if empty|{{{channel_name3|}}}|{{{channel_url3|}}}|{{{channel_direct_url3|}}}}}|{{{channel_name3}}}=user/{{{channel_name3}}}|{{{channel_url3}}}=channel/{{{channel_url3}}}|{{{channel_direct_url3}}}}} {{if empty|{{{channel_display_name3|}}}|{{{channel_name3|}}}|{{{channel_direct_url3|}}}|YouTube channel}}]}} }} }}|{{{channels|}}} }}
+
+| label23     = Created&nbsp;by
+| data23      = {{{creator|{{{creators|{{{created_by|}}}}}}}}}
+
+| label24     = Presented&nbsp;by
+| data24      = {{{presenter|{{{presenters|{{{presented_by|}}}}}}}}}
+
+| label25     = Location
+| data25      = {{{location|}}}
+
+| label26     = Years&nbsp;active
+| data26      = {{{years_active|{{{years active|{{{yearsactive|}}}}}}}}}
+
+| label27     = Genre{{#if:{{{genres|}}}|s|{{Pluralize from text|{{{genre|}}}|likely=(s)|plural=s}}}}
+| data27      = {{{genre|{{{genres|}}}}}}
+
+| label28     = Subscribers
+| data28      = {{#if:{{#switch:{{#invoke:YouTubeSubscribers|subCountNice}}|-404|-412|-424={{{subscribers|}}}|{{#invoke:YouTubeSubscribers|subCountNice}}}}|{{br separated entries|1={{#if:{{{subscribers|}}}|{{{subscribers}}}|{{#switch:{{#invoke:YouTubeSubscribers|subCountNice}}|-404|-412|-424={{main other|}}|{{#invoke:YouTubeSubscribers|subCountNice}}{{EditAtWikidata|pid=P8687}}}}}}{{#if:{{{channel_name|}}}{{{channel_url|}}}{{{channel_direct_url|}}}|{{#tag:ref|{{Cite web|title=About {{if empty|{{{channel_display_name|}}}|{{{channel_name|}}}|{{{channel_direct_url|}}}|YouTube channel}}|url=https://www.youtube.com/{{#switch:{{if empty|{{{channel_name|}}}|{{{channel_url|}}}|{{{channel_direct_url|}}}}}|{{{channel_name}}}=user/{{{channel_name}}}|{{{channel_url}}}=channel/{{{channel_url}}}|{{{channel_direct_url}}}}}/about |publisher=[[YouTube]]}}|name="YouTubeStats{{Plain text|{{if empty|{{{channel_display_name|}}}|{{{channel_name|}}}|{{{name|}}}}}}}"}} }}|2={{#if:{{{subscriber_date|}}}|({{{subscriber_date}}})|{{#if:{{{subscribers|}}}||{{#iferror:{{#invoke:YouTubeSubscribers|dateNice}}||({{#invoke:YouTubeSubscribers|dateNice}})}}}}}}}}}}
+
+| label29     = Total&nbsp;views
+| data29      = {{#if:{{{views|}}}|{{br separated entries|1={{{views}}}{{if both|{{#switch:{{#invoke:YouTubeSubscribers|subCountNice}}|-404|-412|-424={{{subscribers|}}}|{{#invoke:YouTubeSubscribers|subCountNice}}}}|{{{channel_name|}}}{{{channel_url|}}}{{{channel_direct_url|}}}|{{#tag:ref||name="YouTubeStats{{Plain text|{{if empty|{{{channel_display_name|}}}|{{{channel_name|}}}|{{{name|}}}}}}}"}} }}|2={{#if:{{{view_date|}}}|({{{view_date|}}})}} }} }}
+
+| label30     = [[Multi-channel network|Network]]
+| data30      = {{{network|}}}
+
+| label31     = Contents are&nbsp;in
+| data31      = {{{language|}}}
+
+| label32     = Associated acts
+| data32      = {{{associated_acts|}}}
+
+| label33     = Website
+| data33      = {{{channel_website|}}}
+
+| data42      = {{#if:{{{silver_year|}}}{{{silver_button|}}}{{{gold_year|}}}{{{gold_button|}}}{{{diamond_year|}}}{{{diamond_button|}}}{{{ruby_year|}}}{{{ruby_button|}}}{{{red_diamond_year|}}}{{{red_diamond_button|}}}|
+<table class="ib-youtube-awards {{#if:{{Yesno|{{{expand|}}}}}||mw-collapsible mw-collapsed}}">
+<tr><th colspan="3" {{#if:{{Yesno|{{{embed|}}}}}||class="ib-youtube-awards-color"}}><div>[[YouTube Creator Awards|Creator Awards]]</div></th></tr>
+{{If either|{{{silver_year|}}}|{{Yesno|{{{silver_button|}}}}}|then=<tr><td>[[File:YouTube Silver Play Button 2.svg|32px|link=]]</td><td>100,000 subscribers</td><td>{{{silver_year|}}}</td></tr>}}
+{{If either|{{{gold_year|}}}|{{Yesno|{{{gold_button|}}}}}|then=<tr><td>[[File:YouTube Gold Play Button 2.svg|32px|link=]]</td><td>1,000,000 subscribers</td><td>{{{gold_year|}}}</td></tr>}}
+{{If either|{{{diamond_year|}}}|{{Yesno|{{{diamond_button|}}}}}|then=<tr><td>[[File:YouTube Diamond Play Button.svg|32px|link=]]</td><td>10,000,000 subscribers</td><td>{{{diamond_year|}}}</td></tr>}}
+{{If either|{{{ruby_year|}}}|{{Yesno|{{{ruby_button|}}}}}|then=<tr><td>[[File:YouTube Ruby Play Button 2.svg|32px|link=]]</td><td>50,000,000 subscribers</td><td>{{{ruby_year|}}}</td></tr>}}
+{{If either|{{{red_diamond_year|}}}|{{Yesno|{{{red_diamond_button|}}}}}|then=<tr><td>[[File:YouTube Red Diamond Play Button.svg|32px|link=]]</td><td>100,000,000 subscribers</td><td>{{{red_diamond_year|}}}</td></tr>}}
+</table>}}
+
+| data52      = {{{module|}}}
+
+| belowclass  = ib-youtube-below
+| below       = {{#if:{{{stats_update|}}}|{{hr}}''Last updated:'' {{{stats_update}}}}}{{#if:{{{extra_information|}}}|{{hr}}{{{extra_information}}}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox YouTube personality]] with unknown parameter "_VALUE_"|ignoreblank=y| alt | associated_acts | birth_date | birth_name | birth_place | caption | channel_name | channel_name2 | channel_name3 | channel_url | channel_url2 | channel_url3 | channel_direct_url | channel_direct_url2 | channel_direct_url3 | channels | channel_display_name | channel_display_name2 | channel_display_name3 | channel_website | children | created_by | creator | creators | father | presented_by | presenter | presenters | death_date | death_place | diamond_button | diamond_year | education | embed | expand | extra_information | genre | genres | gold_button | gold_year | homepage | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | image | image caption | image size | image_caption | image_size | image_upright | imagesize | language | location | logo | logo caption | logo_caption | logo_alt | logo_size | module | module_personal | mother | name | nationality | network | occupation | occupations | organisation | organisations | organization | organizations | origin | other_names | parent | parents | partner | partners | pseudonym | red_diamond_button | red_diamond_year | relatives | ruby_button | ruby_year | subbox | signature | signature alt | signature_alt | signature_size | silver_button | silver_year | spouse | spouses | stats_update | subscriber_date | subscribers | upright | URL | view_date | views | website | years active | years_active | yearsactive }}</includeonly><noinclude>{{documentation}}
+[[Category:Independently git synced pages]][[Category:Pages with YouTubeSubscribers module errors]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox YouTube personality with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

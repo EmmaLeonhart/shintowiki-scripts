@@ -1,0 +1,144 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+{{Generic template demo
+ |name |alt_name |image |image_alt=<br/>{{{image_alt}}} |caption |role={{{role{{!}}[[:en:Pharaoh|Pharaoh]]}}} |reign |dynasty |coregency |predecessor |successor |titulary_notes |prenomen |prenomen_hiero |nomen |nomen_hiero |horus  |horus_hiero |nebty |nebty_hiero |golden |golden_hiero |consorts={{longitem|{{{consorts}}}{{\}}{{{spouses}}}{{\}}{{{consort}}}{{\}}{{{spouse}}}}} |children |father |mother |birth_date | birth_place |death_date | death_place |burial |monuments
+}}
+== Usage ==
+
+This template is designed to display information about an Egyptian pharaoh, including [[:en:Ancient Egyptian royal titulary|their names]] in hieroglyphs.
+
+Other than ''name'', all parameters listed below are optional. To see a near-full example of the template's use within the encyclopedia, visit [[:en:Thutmose III|Thutmose III]].
+
+===Full syntax===
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox pharaoh
+| name           =
+| alt_name       =
+| image          =
+| image_alt      =
+| caption        =
+| role           =  
+| reign          =
+| coregency      =
+| predecessor    =
+| successor      =
+
+| notes          =
+| prenomen       =
+| prenomen_hiero =
+| nomen          =
+| nomen_hiero    =
+| horus          =
+| horus_prefix   =  
+| horus_hiero    =
+| nebty          =
+| nebty_hiero    =
+| golden         =
+| golden_hiero   =
+
+| spouse         =
+| children       =
+| dynasty        =
+| father         =
+| mother         =
+| birth_date     =
+| birth_place    = 
+| death_date     =
+| death_place    = 
+| burial         =
+| monuments      =
+| module         = 
+}}
+</syntaxhighlight>
+
+===Parameters===
+All optional other than ''name''.
+{| class="wikitable" 
+|- 
+! Parameter !! Function
+|- 
+| <code>name </code>|| Name by which pharaoh commonly known
+|- 
+| <code>alt_name </code>|| Alternative names
+|- 
+| <code>image </code>|| Infobox image (headshot, if possible)
+|- 
+| <code>image_alt </code>|| Alternative text for the image
+|- 
+| <code>caption </code>|| Caption for the image
+|- 
+| <code>align </code>|| Template's position: left, center or right
+|- 
+| <code>nomen </code>|| Pharaoh's nomen; use {{tag|hiero}} format, followed by transliteration, followed by translation
+|- 
+| <code>prenomen </code>|| Pharaoh's prenomen (see above)
+|- 
+| <code>golden </code>|| Pharaoh's Golden Horus name
+|- 
+| <code>nebty </code>|| Pharaoh's Nebty name
+|- 
+| <code>horus </code>|| Pharaoh's Horus
+|- 
+| <code>reign </code>|| Dates of pharaoh's reign (use alternatives, if known)
+|- 
+| <code>predecessor </code>|| Name of pharaoh's predecessor
+|- 
+| <code>successor </code>|| Name of pharaoh's successor
+|- 
+| <code> consorts</code> or <code>consort</code><br/><code>spouses</code> or <code>spouse</code> || Names of pharaoh's consorts/spouses
+|- 
+| <code>children </code>|| Names of pharaoh's children
+|- 
+| <code>dynasty </code>|| Name of pharaoh's dynasty
+|- 
+| <code>coregency </code>|| [[:en:Coregency|Coregency]] (if applicable)
+|- 
+| <code>father </code>|| Name of pharah's father (if known)
+|- 
+| <code>mother </code>|| Name of pharah's mother (if known)
+|- 
+| <code>birth_date </code>|| Year of pharaoh's birth
+|- 
+| <code>birth_place </code>|| Place of pharaoh's birth (if known)
+|- 
+| <code>death_date </code>|| Year of pharaoh's death
+|- 
+| <code>death_place </code>|| Place of pharaoh's death (if known)
+|- 
+| <code>burial </code>|| Place where pharaoh buried and/or pharaoh's tomb/body found
+|- 
+| <code>monuments </code>|| Names of any significant monuments dedicated to the pharaoh
+|- 
+| <code>role </code>|| Defaults to "[[:en:Pharaoh|Pharaoh]]"
+|- 
+| <code>golden_hiero </code>|| Pharaoh's hieroglyphic Golden Horus name (see above)
+|- 
+| <code>nebty_hiero </code>|| Pharaoh's hieroglyphic Nebty name (see above)
+|- 
+| <code>horus_hiero </code>|| Pharaoh's hieroglyphic Horus (see above)
+|-
+| <code>module</code> || ''optional'' – Embedded template
+|}
+
+== Microformat ==
+{{UF-hcard-person}}
+
+== Tracking categories ==
+* {{clc|Pages using infobox pharaoh with unknown parameters}}
+
+{{Ancient Egypt template list}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Royalty and nobility infobox templates|Pharaoh]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

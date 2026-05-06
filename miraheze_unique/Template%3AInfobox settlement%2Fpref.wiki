@@ -1,0 +1,22 @@
+<includeonly>{{#switch:{{ucfirst:{{{1}}}}}
+  |Imperial
+  |English
+  |UK|US|U.S.
+  |US Customary|U.S. Customary
+  |Standard = impus
+  |{{#switch:{{{2}}}
+     |[[United Kingdom]]|United Kingdom
+     |[[United States]]|United States
+     |[[United States of America]]|United States of America
+     |[[United States|United States of America]]
+     |[[Image:Flag of the United States.svg|20px]] [[United States]] = impus
+     |{{#ifeq:{{{3}}}_{{lc:{{{1}}}}}|area_dunam|dunam|metric}}
+   }}
+}}</includeonly><noinclude>
+{{documentation}}
+
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

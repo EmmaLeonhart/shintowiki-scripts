@@ -1,0 +1,54 @@
+{{tmbox
+ |name=translated-page
+ |type=notice
+ |image=[[File:WP-TranslationProject TwoFlags.svg|50px]]
+ |text={{#if:{{{section|}}}
+  |The section "[[{{SUBJECTSPACE}}:{{PAGENAME}}#{{{section}}}|{{{section}}}]]" of t|T
+ }}his {{pagetype}} was edited to contain a {{#if:{{{partial|}}}|partial|total or partial}} [[Wikipedia:Translation|translation]] of {{#if:{{{2|}}}
+  |[{{localurle:{{{1}}}:{{{2}}}|{{#if:{{{version|}}}|oldid={{{version}}}}}}} {{{2}}}]
+  |an {{#if:{{{version|}}}
+   |[{{localurle:{{{1}}}:|oldid={{{version|}}}}} article]
+   |<span class="error">Unspecified article</span>
+  }}
+ }} from {{#if:{{{1|}}}
+  |the [{{localurle:{{{1}}}:}} {{#language:{{lc:{{{1}}}}}|{{CONTENTLANGUAGE}}}} Wikipedia]
+  |<span class="error">Please provide the [[m:List of Wikipedias|language code of the source wiki]]</span>
+ }}. Consult the [{{#if:{{{2|}}}
+  |{{localurle:{{{1}}}:{{{2}}}|action=history}}
+  |{{localurle:{{{1}}}:|oldid={{{version|}}}&action=history}}
+ }} history of the original page] to see a list of its authors. {{#if:{{{insertversion|}}}
+  |<small>(This notice applies to [{{fullurle:{{PAGENAMEE}}|oldid={{{insertversion}}}}} version {{{insertversion}}}] and subsequent versions of this page.) </small>
+ }}{{{3|}}}
+ |small={{#ifeq:{{{large|}}}|yes|no|{{{small|yes}}}}}
+ |smallimage=[[File:WP-TranslationProject TwoFlags.svg|30px]]
+ |smalltext=This {{pagetype}} {{#if:{{{section|}}}
+  |[[{{SUBJECTSPACE}}:{{PAGENAME}}#{{{section}}}|contains]]
+  |contains
+ }} {{#if:{{{partial|}}}|a partial|a}} [[Wikipedia:Translation|translation]] of {{#if:{{{2|}}}
+  |[{{localurle:{{{1}}}:{{{2}}}|{{#if:{{{version|}}}|oldid={{{version}}}}}}} {{{2}}}]
+  |an {{#if:{{{version|}}}
+   |[{{localurle:{{{1}}}:|oldid={{{version|}}}}} article]
+   |<span class="error">Unspecified article</span>
+  }}
+ }} from {{#if:{{{1|}}}
+  |[{{localurle:{{{1}}}:}} {{lc:{{{1}}}}}.wikipedia]
+  |<span class="error">Please provide the [[m:List of Wikipedias|language code of the source wiki]]</span>
+ }}. {{#if:{{{insertversion|}}}
+  |<small>([{{fullurle:{{PAGENAMEE}}|oldid={{{insertversion}}}}} {{{insertversion}}}] ''et seq''.) </small>
+ }}{{{3|}}}
+}}<includeonly>{{#ifeq:{{lc:{{{nocat|false}}}}}|false
+ |{{#ifexpr:{{#if:{{{1|}}}|1|0}}+{{#if:{{{2|}}}|1|0}}+{{#if:{{NAMESPACE}}|1|0}}=3
+  |{{#ifexist:Category:Pages translated from {{#language:{{lc:{{{1}}}}}|{{CONTENTLANGUAGE}}}} Wikipedia
+   |   |  }}
+  | }}
+}}</includeonly><noinclude>
+{{documentation}}
+
+[[Category:Pages translated from {{#language:{{lc:{{{1}}}}}|{{CONTENTLANGUAGE}}}} Wikipedia]]
+[[Category:Translated pages]]
+[[Category:Pages with translated page tag]]
+[[Category:Templates]]
+[[Category:Translated pages]][[Category:Independently git synced pages]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+</noinclude>

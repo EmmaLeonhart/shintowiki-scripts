@@ -1,0 +1,97 @@
+{{Infobox
+|templatestyles =Infobox road/styles.css
+|headerclass={{#invoke:Infobox road|headerStyle}}
+|belowstyle=line-height:150%
+
+|above={{#switch:{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}
+|USA|CAN={{#invoke:Infobox road/route|routeInfo}}
+|#default={{#ifeq:{{{country|}}}|AUS
+|{{#if:{{{name|}}}|{{{name}}}|{{#ifeq:{{Infobox road/name/AUS|state={{{state|¬}}}|type={{{type|}}}|route={{{route}}}}}|none||{{Infobox road/name/AUS|state={{{state|¬}}}|type={{{type|}}}|route={{{route}}}}}|}}}}{{#if:{{{alternate_name|}}}|<br /><div style="font-weight:normal;display:inline;">{{{alternate_name|}}}</div>}}
+{{#if:{{{marker_image|}}}|{{#ifeq:{{{marker_image|}}}|none||<div style="margin:6px 0 2px 0">{{{marker_image}}}</div>}}|{{#if:{{{state|{{{province|{{{country|}}}}}}}}}|{{#ifeq:{{Infobox road/shieldmain/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|county={{{county|}}}|route={{{route|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}}}|none||<div style="margin:6px 0 2px 0">{{Infobox road/shieldmain/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|county={{{county|}}}|route={{{route|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}}}</div>}}}}}}
+|{{#if:{{{marker_image|}}}|{{#ifeq:{{{marker_image|}}}|none||<div style="margin:0 0 4px 0">{{{marker_image}}}</div>}}|{{#if:{{{state|{{{province|{{{country|}}}}}}}}}|{{#ifeq:{{Infobox road/shieldmain/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|county={{{county|}}}|route={{{route|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}}}|none||<div style="margin:0 0 4px 0">{{Infobox road/shieldmain/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|county={{{county|}}}|route={{{route|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}}}</div>}}}}}}
+{{#if:{{{name|}}}|{{{name}}}|{{#if:{{{state|{{{province|{{{country|}}}}}}}}}|{{#ifeq:{{Infobox road/name/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}|route={{{route}}}|county={{{county|}}}}}|none||{{Infobox road/name/{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|province={{{province|¬}}}|state={{{state|¬}}}|type={{{type|}}}|subtype={{Infobox road/meta/mask/subtype1|{{{subtype|}}}}}|route={{{route}}}|county={{{county|}}}}}|}}}}}}}}
+}}
+|subheaderstyle1 = font-size: 125%;
+|subheader={{#invoke:Infobox road|translate}}
+|subheader2={{#ifeq:{{{country|}}}|AUS||{{{alternate_name|}}}}}
+
+|image={{#invoke:Infobox road/map|map}}
+|caption={{{map_notes|}}}
+|image2={{#invoke:Infobox road|photo}}
+|caption2={{{photo_notes|}}}{{{image_notes|}}}
+
+|header1= {{#invoke:Infobox road|info}}
+|data2  = {{#if:{{{spur_of|}}}|{{Infobox road/meta/spur of|1={{{type|}}}|2={{{subtype|}}}|spur_type={{{spur_type|}}}|spur_route={{{spur_of|}}}|country={{{country|}}}|province={{{province|}}}|state={{{state|}}}|county={{{county|}}}}}|}}
+|data3  = {{#invoke:Infobox road|partOf}}
+|data4  = 
+|data5  = {{#invoke:Infobox road|maint}}
+|data6  = {{#if:{{{time_period|}}}|{{#if:{{{established_by|}}}|Established by {{{established_by}}}|}}|}}
+|label7 = Length
+|data7  = {{#invoke:Infobox road/length|length}}
+|class8 = plainlist
+|label8= Status
+|data8= {{{status|}}}
+|class9= plainlist
+|label9= Existed
+|data9= {{#invoke:Infobox road|existed}}
+|class11 = plainlist
+|label11= History
+|data11= {{{history|}}}
+|data12  = {{#invoke:Infobox road|period}}
+|class16 = plainlist
+|label16 = {{#invoke:Infobox road|allocation}}
+|data16  = {{{allocation|}}}
+|class17 = plainlist
+|label17 = Tourist<br>routes
+|data17  = {{{tourist|}}}
+|class18 = plainlist
+|label18 = {{abbr|NHS|National Highway System}}
+|data18  = {{#ifeq:{{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}}|USA|{{#switch:{{{type|}}}
+ |I = Entire route
+ |#default = {{{nhs|}}}
+}}}}
+|class19 = plainlist
+|label19 = Restrictions
+|data19  = {{{restrictions|}}}
+|label20 = [[:en:Margary numbers|Margary number]]
+|data20  = {{{margary|}}}
+
+|header30= {{#invoke:Infobox road/sections|main}}
+
+|header31= {{#invoke:Infobox road/sections|section}}
+
+|header35={{#invoke:Infobox road/locations|location}}
+
+|header50= {{#invoke:Infobox road|highwaySystem}}
+
+|class52 = hlist
+|data52 = {{#if:{{{system|}}}|{{{system}}}|{{#invoke:Infobox road/browselinks|browselinks}}}}
+|rowstyle54 = display: none
+|header54  = {{#invoke:Infobox road|system}}
+
+|data56  = {{#invoke:Infobox road|browse}}
+|data58  = {{#invoke:Infobox road|extended}}
+
+|data60={{{nrhp|{{{embedded|}}}}}}
+|subbox={{yesno|{{{child|}}}}}
+}}{{#if:{{{country|}}}{{{state|}}}{{{province|}}}|{{#if:{{{type|}}}|{{#if:{{{route|}}}|{{#if:{{{translation|}}}{{{name|}}}|{{main other|}}}}|}}}}}}{{main other|{{#if:{{{subtype|}}}||}}}}{{#invoke:Infobox road/errors|errors}}{{#if:{{{header_type|}}}|{{#switch:{{lc:{{{header_type}}}}} |under construction|const|uc={{main other|}} |scenic|historic|historical|hist={{main other|}} |decommissioned|former={{main other|}} |minor= |#default={{main other|}}}}}}{{#if:{{{country|}}}{{{state|}}}{{{province|}}}|{{#if:{{{type|}}}|{{#if:{{{marker_image|}}}| {{main other|}}}}}}}}{{#if:{{{map_custom|}}}||{{#ifeq:{{#property:P15}}||{{main other|}}|}}}}{{#if:{{{map_custom|}}}||{{#ifeq:{{{map|}}}|{{#property:P15}}||{{main other|}}|}}}}{{main other|{{#ifeq:{{#property:P17}}||}}{{#ifeq:{{#property:P31}}||{{main other|}}}}}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox road]] with unknown parameter "_VALUE_"|ignoreblank=y|  above | ahn-shield | ahn | allocation | alternate_name | areas | beltway_city | bodystyle | borough | boroughs | browse_route | browse | cantons | child | cities | communes | community | communities | counties | countries | county | country | decommissioned | deleted | departments | destinations | direction_a | direction_a1 | direction_a2 | direction_a3 | direction_a4 | direction_a5 | direction_a6 | direction_a7 | direction_a8 | direction_a9 | direction_a10 | direction_b | direction_b1 | direction_b2 | direction_b3 | direction_b4 | direction_b5 | direction_b6 | direction_b7 | direction_b8 | direction_b9 | direction_b10 | districts | divisions | e-road | e-road-shield | embedded | end_a | end_a1 | end_a2 | end_a3 | end_a4 | end_a5 | end_a6 | end_a7 | end_a8 | end_a9 | end_a10 | end_b | end_b1 | end_b2 | end_b3 | end_b4 | end_b5 | end_b6 | end_b7 | end_b8 | end_b9 | end_b10 | established | established_by | federal_cities | formed | governorates | header_color | header_type | history | image | image_alt | image_notes | image_width | indep_city | indep_cities | island | junction | junctions | junction1 | junction2 | junction3 | junction4 | junction5 | junction6 | junction7 | junction8 | junction9 | junction10 | known_for | krais | label1 | label2 | label3 | label4 | label5 | labelstyle | lang | length_km | length_km1 | length_km2 | length_km3 | length_km4 | length_km5 | length_km6 | length_km7 | length_km8 | length_km9 | length_km10 | length_mi | length_mi1 | length_mi2 | length_mi3 | length_mi4 | length_mi5 | length_mi6 | length_mi7 | length_mi8 | length_mi9 | length_mi10 | length_nmi | length_notes | length_notes1 | length_notes2 | length_notes3 | length_notes4 | length_notes5 | length_notes6 | length_notes7 | length_notes8 | length_notes9 | length_notes10 | length_ref | length_ref1 | length_ref2 | length_ref3 | length_ref4| length_ref5 | length_ref6 | length_ref7 | length_ref8 | length_ref9 | length_ref10 | length_round | lga | location | location1 | location2 | location3 | location4 | location5 | locations | loop | maint | map | mapframe | mapframe-id | mapframe-geomask | mapframe-zoom | mapframe-width | mapframe-height | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-lat | mapframe-latitude | mapframe-long | mapframe-longitude | mapframe-raw | map_alt | map_custom | map_notes | margary | marker_image | mrn | mrn-shield | municipalities | municipality | name | next_dab | next_route | next_type | nhs | nobrowse | nrhp | oblasts | okrugs | orbital | parish | parishes | photo | photo_alt | photo_notes | photo_width | prefectures | previous_dab | previous_route | previous_type | province | provinces | regions | republics | related | restrictions | ring_road | route | rural_municipalities | section | section0 | section1 | section2 | section3 | section4 | section5 | section6 | section6 | section7 | section8 | section9 | section10 | sheadings | significance | spur_of | spur_type | state | states | state2 | status | subcounties | subprefectures | subregions | subsection | system | system1 | system2 | system3| system4 | system5 | system6 | system7 | system8 | system9 | system10 | tahn | tahn-shield | terminus_a | terminus_a1 | terminus_a2 | terminus_a3 | terminus_a4 | terminus_a5 | terminus_a6 | terminus_a7 | terminus_a8 | terminus_a9 | terminus_a10 | terminus_b | terminus_b1 | terminus_b2 | terminus_b3 | terminus_b4 | terminus_b5 | terminus_b6 | terminus_b7 | terminus_b8 | terminus_b9 | terminus_b10 | territories | time_period | tloop | tourist | towns | translation | type | villages | categories | nocat | demo }}<includeonly>{{main other|}}</includeonly><noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|{{#if:{{{name|}}}|†|{{#if:{{{translation|}}}|@}}}} {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 2|Ω {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|ƒ {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|¶ {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|∆ {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|£ {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road temporary tracking category 1|{{#ifeq:{{{marker_image}}}|none|&|$}} {{Infobox road/meta/mask/country|{{{state|}}}{{{province|}}}|{{{country|}}}}} {{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road maps tracking category]]
+[[Category:Independently git synced pages]][[Category:Infobox road maps for Wikidata migration]]
+[[Category:Independently git synced pages]][[Category:Infobox road articles without Wikidata country]]
+[[Category:Independently git synced pages]][[Category:Infobox road articles without Wikidata instance of]]
+[[Category:Independently git synced pages]][[Category:Pages using infobox road with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Infobox road instances {{Infobox road/meta/mask/category|1={{{country|}}}|2={{{state|}}}|3={{{province|}}}}}]]
+[[Category:Independently git synced pages]][[Category:Templates]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

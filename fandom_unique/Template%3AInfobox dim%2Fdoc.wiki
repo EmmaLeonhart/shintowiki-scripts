@@ -1,0 +1,39 @@
+{{Documentation subpage}}
+{{High-use}}
+{{Lua|Module:Infobox dim}}
+
+== Usage ==
+{{tl|Infobox dim}} is used inside infoboxes to generate the dim argument for geohack links. The template accepts a number of (optional) parameters that describe the physical dimensions of an object:
+{{div col|colwidth=15em}}
+* length_mi
+* length_km
+* width_mi
+* width_km
+* area_mi2
+* area_km2
+* area_acre
+* area_ha
+{{div col end}}
+The template also accepts other geohack parameters to generate the dim argument:
+* scale
+* type (e.g., "mountain" or "city")
+* population (for type="city" only)
+
+== See also ==
+*{{tl|Infobox mountain}}
+*{{tl|Infobox ecoregion}}
+*{{tl|Infobox protected area}}
+<includeonly>
+
+{{Sandbox other||
+}}
+</includeonly>
+<noinclude>
+[[Category:Map formatting and function templates]]
+[[Category:Place-related infobox templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

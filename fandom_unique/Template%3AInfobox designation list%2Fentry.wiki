@@ -1,0 +1,48 @@
+{{Infobox
+| child = yes
+| decat = yes
+
+| title      = {{Designation/divbox|{{{designation|}}}|delisted={{{delisted|}}}}}
+
+|    label1  = Official name
+|     data1  = {{{offname|}}}
+| rowclass1  = mergedrow
+|    label2  = Type
+|     data2  = {{{type|}}}
+| rowclass2  = mergedrow
+|    label3  = Criteria
+|     data3  = {{{criteria|}}}
+| rowclass3  = mergedrow
+|    label4  = Feature
+|     data4  = {{{feature|}}}
+| rowclass4  = mergedrow
+|    label5  = Designated
+|     data5  = {{{date|}}}
+| rowclass5  = mergedrow
+|    label6  = Delisted
+|     data6  = {{{delisted|}}}
+| rowclass6  = mergedrow
+|    label7  = Part of
+|     data7  = {{{partof|}}}
+| rowclass7  = mergedrow
+|    label8  = Reference&nbsp;no.
+|     data8  = {{{number|}}}
+| rowclass8  = mergedrow
+|    label9  = {{{free1name|}}}
+|     data9  = {{{free1value|}}}
+| rowclass9  = mergedrow
+|    label10 = {{{free2name|}}}
+|     data10 = {{{free2value|}}}
+| rowclass10 = mergedrow
+|    label11 = {{{free3name|}}}
+|     data11 = {{{free3value|}}}
+| rowclass11 = mergedrow
+}}<noinclude>
+{{Documentation|content=This is an internal template used in {{tl|Infobox designation list}} to produce individual entries.}}
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

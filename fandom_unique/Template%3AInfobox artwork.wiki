@@ -1,0 +1,129 @@
+{{Infobox
+| bodyclass = vevent
+| bodystyle = width: 22em; line-height: 1.4em; text-align: left;
+
+| abovestyle = font-size: 125%; font-weight: bold; {{#switch:{{lc:{{{italic title|¬}}}}}
+ |no       = 
+ ||¬|all|yes = font-style: italic
+ }}
+| aboveclass = summary
+| above = {{{title|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}
+
+| subheader =  {{comma separated entries
+ | 1 = {{#if:{{{other_title_1|}}}|{{#if:{{{other_language_1|}}}|{{{other_language_1|}}}: }} {{#ifeq:{{lc:{{{italic other_title_1|}}}}}|no|{{{other_title_1|}}}|''{{{other_title_1|}}}''}} }}
+ | 2 = {{#if:{{{other_title_2|}}}|{{#if:{{{other_language_2|}}}| {{{other_language_2|}}}: }} {{#ifeq:{{lc:{{{italic other_title_2|}}}}}|no|{{{other_title_1|}}}|''{{{other_title_2|}}}''}} }}
+ }}
+
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{#if:{{{image|}}}|{{{image}}}|{{{image_file|}}}}}|size={{{image_size|}}}|sizedefault=frameless|upright={{#if:{{{image_upright|}}}|{{{image_upright}}}|1.22}}|alt={{{alt|}}}}}
+| caption = {{{caption|}}}
+
+| image2 = {{#if:{{{pushpin_map|}}}|{{Location map|{{{pushpin_map}}}
+ | coordinates = {{{coordinates|}}}
+ |alt = {{{pushpin_map_alt|}}}
+ |float      = center
+ |caption    = {{{pushpin_map_caption|}}}
+ |border     = infobox
+ |relief     = {{{pushpin_relief|}}}
+ |position   = {{{pushpin_label_position|}}}
+ |label      = {{#if:{{{map_dot_label|}}}|{{{map_dot_label}}}|{{{title}}}}}
+ |width      = {{#if:{{{map_size|}}}|{{{map_size}}}|280}}
+ }}}}
+| caption2 = 
+
+| image3    = {{#if:{{{pushpin_map|}}}||{{yesno|{{{mapframe|no}}}|no=|yes={{#invoke:Infobox mapframe|auto|mapframe-marker=monument}}}}}}
+
+| caption3 = {{#if:{{{pushpin_map|}}}||{{yesno|{{{mapframe|no}}}|no=|yes={{#invoke:Infobox mapframe|autocaption}}}}}}
+
+| labelstyle = padding-right:0.65em;
+
+| label1 = {{#if:{{{artist|}}}|Artist|Designer}}
+| class1 = attendee
+| data1 = {{#switch:{{lc:{{{artist|}}}}}
+   |={{{designer|}}}
+   |unknown = Unknown
+   |#default = {{{artist|}}}
+  }}{{#switch:{{lc:{{{artist|}}}}}
+   |=
+   |unknown = 
+   |unknown artist = 
+   |anon. = 
+   |anonymous work = 
+   |{{lc:{{PAGENAME}}}} = 
+   |#default = {{#ifexist: {{{artist}}}|{{main other|}}|}}
+   }}
+
+| label2 = {{#if:{{{year|}}}|Year|Completion date}}
+| data2 = {{#if:{{{year|}}}|{{{year|}}}|{{{completion_date|}}}}}
+
+| label3 = {{#if:{{{catalog|}}}|Catalog|Catalogue}}
+| data3 = {{#if:{{{catalog|}}}|{{{catalog}}}|{{{catalogue|}}}}}
+
+| label4 = Type
+| class4 = category
+| data4 = {{{type|}}}
+
+| label5 = Medium 
+| class5 = category
+| data5 = {{if empty|{{{medium|}}}|{{{material|}}}}}
+
+| label6 = [[:en:Art movement|Movement]]
+| class6 = category
+| data6 = {{{movement|}}}
+
+| label7 = Subject
+| data7 = {{{subject|}}}
+
+| label8 = Dimensions
+
+| data8 = {{#if:{{{height_metric|}}}{{{height_imperial|}}}{{{width_metric|}}}{{{width_imperial|}}}{{{length_metric|}}}{{{length_imperial|}}}{{{diameter_metric|}}}{{{diameter_imperial|}}}{{{dimensions|}}}|{{#if:{{{height_metric|}}}{{{height_imperial|}}}{{{width_metric|}}}{{{width_imperial|}}}{{{length_metric|}}}{{{length_imperial|}}}|{{#if:{{{height_inch|}}}{{{height_metric|}}}{{{height_imperial|}}}|{{#if:{{{height_metric|}}}|{{{height_metric|}}}&nbsp;{{{metric_unit|cm}}}|{{#if:{{isnumeric|{{{height_imperial|}}}}}|{{#ifeq:{{#if:{{isnumeric|{{{height_imperial|}}}}}|{{#if:{{isnumeric|{{{height_inch|}}}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{convert|{{{height_imperial}}}|ft|{{{height_inch}}}|in|{{{metric_unit|cm}}}|abbr=on|disp=output only}}|{{convert|{{formatnum:{{{height_imperial}}}|R}}|{{{imperial_unit|in}}}|{{{metric_unit|cm}}}||disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}}}{{#if:{{{height_metric|}}}{{isnumeric|{{{height_imperial|}}}}}|{{#if:{{{width_metric|}}}{{isnumeric|{{{width_imperial|}}}}}{{{length_metric|}}}{{isnumeric|{{{length_imperial|}}}}}|&#32;×&nbsp;}}}}{{#if:{{{width_metric|}}}{{{width_imperial|}}}|{{#if:{{{width_metric|}}}|{{{width_metric|}}}&nbsp;{{{metric_unit|cm}}}|{{#if:{{isnumeric|{{{width_imperial|}}}}}|{{#ifeq:{{#if:{{isnumeric|{{{width_imperial|}}}}}|{{#if:{{isnumeric|{{{width_inch|}}}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{convert|{{{width_imperial}}}|ft|{{{width_inch}}}|in|{{{metric_unit|cm}}}|abbr=on|disp=output only}}|{{convert|{{formatnum:{{{width_imperial}}}|R}}|{{{imperial_unit|in}}}|{{{metric_unit|cm}}}||disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}}}{{#if:{{{width_metric|}}}{{isnumeric|{{{width_imperial|}}}}}|{{#if:{{{length_metric|}}}{{isnumeric|{{{length_imperial|}}}}}|&#32;×&nbsp;}}}}{{#if:{{{length_metric|}}}{{{length_imperial|}}}|{{#if:{{{length_metric|}}}|{{{length_metric|}}}&nbsp;{{{metric_unit|cm}}}|{{#if:{{isnumeric|{{{length_imperial|}}}}}|{{#ifeq:{{#if:{{isnumeric|{{{length_imperial|}}}}}|{{#if:{{isnumeric|{{{length_inch|}}}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{convert|{{{length_imperial}}}|ft|{{{length_inch}}}|in|{{{metric_unit|cm}}}|abbr=on|disp=output only}}|{{convert|{{formatnum:{{{length_imperial}}}|R}}|{{{imperial_unit|in}}}|{{{metric_unit|cm}}}||disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}}}&#32;({{#if:{{{height_metric|}}}{{{height_imperial|}}}|{{#if:{{{height_imperial|}}}|{{#ifeq:{{#if:{{{height_imperial|}}}|{{#if:{{{height_inch|}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{{height_imperial}}}&nbsp;ft {{{height_inch}}}&nbsp;in|{{{height_imperial|}}}&nbsp;{{{imperial_unit|in}}}}}|{{#if:{{isnumeric|{{{height_metric|}}}}}|{{convert|{{formatnum:{{{height_metric|}}}|R}}|{{{metric_unit|cm}}}|{{{imperial_unit|in}}}|disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}{{#if:{{{height_imperial|}}}{{{height_metric|}}}|{{#if:{{{width_imperial|}}}{{{width_metric|}}}{{{length_imperial|}}}{{{length_metric|}}}|&#32;×&nbsp;}}}}{{#if:{{{width_metric|}}}{{{width_imperial|}}}|{{#if:{{{width_imperial|}}}|{{#ifeq:{{#if:{{{width_imperial|}}}|{{#if:{{{width_inch|}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{{width_imperial}}}&nbsp;ft {{{width_inch}}}&nbsp;in|{{{width_imperial|}}}&nbsp;{{{imperial_unit|in}}}}}|{{#if:{{isnumeric|{{{width_metric|}}}}}|{{convert|{{formatnum:{{{width_metric|}}}|R}}|{{{metric_unit|cm}}}|{{{imperial_unit|in}}}|disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}{{#if:{{{width_imperial|}}}{{{width_metric|}}}|{{#if:{{{length_imperial|}}}{{{length_metric|}}}|&#32;×&nbsp;}}}}{{#if:{{{length_metric|}}}{{{length_imperial|}}}|{{#if:{{{length_imperial|}}}|{{#ifeq:{{#if:{{{length_imperial|}}}|{{#if:{{{length_inch|}}}| {{#ifeq:{{{imperial_unit|in}}}|ft|SPECIAL|NORMAL}}|NORMAL}}|NORMAL}}|SPECIAL|{{{length_imperial}}}&nbsp;ft {{{length_inch}}}&nbsp;in|{{{length_imperial}}}&nbsp;{{{imperial_unit|in}}}}}|{{#if:{{isnumeric|{{{length_metric|}}}}}|{{convert|{{formatnum:{{{length_metric|}}}|R}}|{{{metric_unit|cm}}}|{{{imperial_unit|in}}}|disp=output only}}|<span class="error" style="white-space:nowrap; font-size:inherit;">??</span>}}}}}}){{#if:{{{diameter_metric|}}}{{{diameter_imperial|}}}{{{dimensions|}}}|<nowiki>;</nowiki>&#32;}}|}}{{#switch:0{{#if:{{{diameter_metric|}}}|c}}{{#if:{{{diameter_imperial|}}}|i}}|0c={{#if:{{isnumeric|{{{diameter_metric}}}}}|{{{diameter_metric}}}&nbsp;{{{metric_unit|cm}}} diameter ({{convert|{{formatnum:{{{diameter_metric}}}|R}}|{{{metric_unit|cm}}}|{{{imperial_unit|in}}}|disp=output only}})|{{{diameter_metric}}}&nbsp;{{{metric_unit|cm}}} diameter}}{{#if:{{{dimensions|}}}|<nowiki>;</nowiki>&#32;}}|0i={{#if:{{isnumeric|{{{diameter_imperial}}}}}|{{convert|{{formatnum:{{{diameter_imperial}}}|R}}|{{{imperial_unit|in}}}|{{{metric_unit|cm}}}|disp=output only}} diameter ({{{diameter_imperial}}}&nbsp;{{{imperial_unit|in}}})|{{{diameter_imperial}}}&nbsp;{{{imperial_unit|in}}} diameter}}{{#if:{{{dimensions|}}}|<nowiki>;</nowiki>&#32;}}|0ci={{{diameter_metric}}}&nbsp;{{{metric_unit|cm}}} diameter ({{{diameter_imperial}}}&nbsp;{{{imperial_unit|in}}}){{#if:{{{dimensions|}}}|<nowiki>;</nowiki>&#32;}}|0|#default=}}{{{dimensions|}}}{{{dimensions_ref|}}}}}
+
+| label11 = Weight
+| data11 = {{{weight|}}}
+
+| label12 = Designation
+| data12 = {{{designation|}}}
+
+| label13 = Condition
+| data13 = {{{condition|}}}
+
+| label14 = Location
+| data14 = {{comma separated entries|{{{museum|}}}|{{{city|}}}}}
+
+| label15 = <span style="display:none">[[:en:Geographic coordinate system|Coordinates]]</span>
+| data15 = {{#if:{{{coordinates|}}}|{{#invoke:Coordinates|coordinsert|{{{coordinates|}}}|type:landmark}}}}
+
+| label16 = Owner
+| data16 = {{{owner|}}}
+
+| label20 = Accession
+| data20 = {{{accession|}}}
+
+| label21 = Preceded&nbsp;by
+|  data21 = {{{preceded_by|}}}
+
+| label22 = Followed&nbsp;by
+|  data22 = {{{followed_by|}}}
+
+| header23  = {{{module|}}}
+
+| label24 = Website
+| data24  = {{{website|{{{url|}}}}}}
+
+}}{{#switch:{{lc:{{{italic title|¬}}}}}
+|no       = 
+||¬|all|yes = {{italic title|all={{#ifeq:{{lc:{{{italic title|}}}}}|all|true}}}}
+}}{{main other|{{#if:{{{backcolor|}}}
+  |  }}{{#if:{{{material|}}}
+  |}}}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox artwork]] with unknown parameter "_VALUE_"|ignoreblank=y| accession | alt | artist | backcolor | caption | catalog | catalogue | city | completion_date | condition | coordinates | designation | designer | diameter_imperial | diameter_metric | dimensions | dimensions_ref | followed_by | height_imperial | height_inch | height_metric | image | image_file | image_size | image_upright | imperial_unit | italic other_title_1 | italic other_title_2 | italic title | length_imperial | length_inch | length_metric | map_dot_label | map_size | mapframe | mapframe-caption | mapframe-custom | mapframe-id | mapframe-coord | mapframe-wikidata | mapframe-point | mapframe-shape | mapframe-frame-width | mapframe-frame-height | mapframe-shape-fill | mapframe-shape-fill-opacity | mapframe-stroke-color | mapframe-stroke-colour | mapframe-stroke-width | mapframe-marker | mapframe-marker-color | mapframe-marker-colour | mapframe-geomask | mapframe-geomask-stroke-color | mapframe-geomask-stroke-colour | mapframe-geomask-stroke-width | mapframe-geomask-fill | mapframe-geomask-fill-opacity | mapframe-zoom | mapframe-length_km | mapframe-length_mi | mapframe-area_km2 | mapframe-area_mi2 | mapframe-frame-coordinates | mapframe-frame-coord | mapframe-switcher | material | medium | metric_unit | module | movement | museum | other_language_1 | other_language_2 | other_title_1 | other_title_2 | owner | preceded_by | pushpin_label_position | pushpin_map | pushpin_map_alt | pushpin_map_caption | pushpin_relief | qid | subject | title | type | url | website | weight | width_imperial | width_inch | width_metric | wikidata | year }}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox artwork with unlinked artist field|{{{artist}}} ]]
+[[Category:Pages using infobox artwork with the backcolor parameter]]
+[[Category:Pages using infobox artwork with the material parameter]]
+[[Category:Pages using infobox artwork with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

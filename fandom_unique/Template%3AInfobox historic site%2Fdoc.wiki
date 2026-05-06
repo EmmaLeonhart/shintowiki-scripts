@@ -1,0 +1,1622 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{auto short description}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Location map|Module:Check for unknown parameters}}
+
+<div style="height:70ex; width:auto; border:1px #aaa solid; margin-left:5px; float:right; clear:right; overflow:auto; padding:5px;">{{Infobox historic site
+| name = {{{name}}}
+| native_name = {{{native_name}}}
+| native_language = 
+| native_name2 = {{{native_name2}}}
+| native_language2 = 
+| native_name3 = {{{native_name3}}}
+| native_language3 = 
+| other_name = {{{other_name}}}
+| image = {{{image}}}
+| image_size = {{{image_size}}}
+| alt = {{{alt}}}
+| caption = {{{caption}}}
+| image_map = {{{image_map}}}
+| image_map_size = {{{image_map_size}}}
+| image_map_alt = {{{image_map_alt}}}
+| image_map_caption = {{{image_map_caption}}}
+| locmapin = World
+| map_relief = {{{map_relief}}}
+| map_width = 300
+| map_caption = {{{map_caption}}}
+| coordinates = {{coord|0|0}}
+| gbgridref = {{{gbgridref}}}
+| type = {{{type}}}
+| etymology = {{{etymology}}}
+| location = {{{location}}}
+| nearest_city = {{{nearest_city}}}
+| area = {{{area}}}
+| elevation = {{{elevation}}}
+| height = {{{height}}}
+| beginning_label = {{{beginning_label}}}
+| beginning_date = {{{beginning_date}}}
+| formed = {{{formed}}}
+| founded = {{{founded}}}
+| founder = {{{founder}}}
+| built = {{{built}}}
+| built_for = {{{built_for}}}
+| original_use = {{{original_use}}}
+| demolished = {{{demolished}}}
+| rebuilt = {{{rebuilt}}}
+| restored = {{{restored}}}
+| restored_by = {{{restored_by}}}
+| current_use = {{{current_use}}}
+| architect = {{{architect}}}
+| sculptor = {{{sculptor}}}
+| architecture = {{{architecture}}}
+| visitors_num = {{{visitors_num}}}
+| visitors_year = {{{visitors_year}}}
+| visitors_ref = {{{visitors_ref}}}
+| governing_body = {{{governing_body}}}
+| owner = {{{owner}}}
+| website = {{{website}}}
+| designation1 = {{{designation1}}}
+| designation1_offname = {{{designation1_offname}}}
+| designation1_type = {{{designation1_type}}}
+| designation1_criteria = {{{designation1_criteria}}}
+| designation1_date = {{{designation1_date}}}
+| delisted1_date = {{{delisted1_date}}}
+| designation1_partof = {{{designation1_partof}}}
+| designation1_number = {{{designation1_number}}}
+| designation1_free1name = {{{designation1_free1name}}}
+| designation1_free1value = {{{designation1_free1value}}}
+| designation1_free2name = {{{designation1_free2name}}}
+| designation1_free2value = {{{designation1_free2value}}}
+| designation1_free3name = {{{designation1_free3name}}}
+| designation1_free3value = {{{designation1_free3value}}}
+| designation2 = {{{designation2}}}
+| designation2_offname = {{{designation2_offname}}}
+| designation2_type = {{{designation2_type}}}
+| designation2_criteria = {{{designation2_criteria}}}
+| designation2_date = {{{designation2_date}}}
+| delisted2_date = {{{delisted2_date}}}
+| designation2_partof = {{{designation2_partof}}}
+| designation2_number = {{{designation2_number}}}
+| designation2_free1name = {{{designation2_free1name}}}
+| designation2_free1value = {{{designation2_free1value}}}
+| designation2_free2name = {{{designation2_free2name}}}
+| designation2_free2value = {{{designation2_free2value}}}
+| designation2_free3name = {{{designation2_free3name}}}
+| designation2_free3value = {{{designation2_free3value}}}
+| designation3 = {{{designation3}}}
+| designation3_offname = {{{designation3_offname}}}
+| designation3_type = {{{designation3_type}}}
+| designation3_criteria = {{{designation3_criteria}}}
+| designation3_date = {{{designation3_date}}}
+| delisted3_date = {{{delisted3_date}}}
+| designation3_partof = {{{designation3_partof}}}
+| designation3_number = {{{designation3_number}}}
+| designation3_free1name = {{{designation3_free1name}}}
+| designation3_free1value = {{{designation3_free1value}}}
+| designation3_free2name = {{{designation3_free2name}}}
+| designation3_free2value = {{{designation3_free2value}}}
+| designation3_free3name = {{{designation3_free3name}}}
+| designation3_free3value = {{{designation3_free3value}}}
+| designation4 = {{{designation4}}}
+| designation4_offname = {{{designation4_offname}}}
+| designation4_type = {{{designation4_type}}}
+| designation4_criteria = {{{designation4_criteria}}}
+| designation4_date = {{{designation4_date}}}
+| delisted4_date = {{{delisted4_date}}}
+| designation4_partof = {{{designation4_partof}}}
+| designation4_number = {{{designation4_number}}}
+| designation4_free1name = {{{designation4_free1name}}}
+| designation4_free1value = {{{designation4_free1value}}}
+| designation4_free2name = {{{designation4_free2name}}}
+| designation4_free2value = {{{designation4_free2value}}}
+| designation4_free3name = {{{designation4_free3name}}}
+| designation4_free3value = {{{designation4_free3value}}}
+| designation5 = {{{designation5}}}
+| designation5_offname = {{{designation5_offname}}}
+| designation5_type = {{{designation5_type}}}
+| designation5_criteria = {{{designation5_criteria}}}
+| designation5_date = {{{designation5_date}}}
+| delisted5_date = {{{delisted5_date}}}
+| designation5_partof = {{{designation5_partof}}}
+| designation5_number = {{{designation5_number}}}
+| designation5_free1name = {{{designation5_free1name}}}
+| designation5_free1value = {{{designation5_free1value}}}
+| designation5_free2name = {{{designation5_free2name}}}
+| designation5_free2value = {{{designation5_free2value}}}
+| designation5_free3name = {{{designation5_free3name}}}
+| designation5_free3value = {{{designation5_free3value}}}
+| designation6 = {{{designation6}}}
+| designation6_offname = {{{designation6_offname}}}
+| designation6_type = {{{designation6_type}}}
+| designation6_criteria = {{{designation6_criteria}}}
+| designation6_date = {{{designation6_date}}}
+| delisted6_date = {{{delisted6_date}}}
+| designation6_partof = {{{designation6_partof}}}
+| designation6_number = {{{designation6_number}}}
+| designation6_free1name = {{{designation6_free1name}}}
+| designation6_free1value = {{{designation6_free1value}}}
+| designation6_free2name = {{{designation6_free2name}}}
+| designation6_free2value = {{{designation6_free2value}}}
+| designation6_free3name = {{{designation6_free3name}}}
+| designation6_free3value = {{{designation6_free3value}}}
+}}</div>
+This infobox is part of [[Wikipedia:WikiProject Historic sites|WikiProject Historic sites]]. The infobox is meant for use on articles about sites which have been deemed worthy of protection by local, state, provincial, national, or other governmental bodies. Supported designations are listed at the WikiProject's home page. If you would like to add a new designation, contact members of the WikiProject by leaving a comment at the [[Wikipedia talk:WikiProject Historic sites|WikiProject talk page]] and/or see [[:en:Template:Designation/doc|Template:Designation/doc]]. An explanation of how to use this infobox and what each parameter does is listed below, including examples.
+
+== Usage ==
+To get started, copy and paste one of the following blank templates into the top of the article.
+
+{{col-begin}}
+{{col-break}}
+===Blank template with ALL possible parameters===
+<syntaxhighlight lang="wikitext" style="overflow:auto; width:75%">
+{{Infobox historic site
+| name                    = 
+| native_name             = 
+| native_language         = 
+| native_name2            = 
+| native_language2        = 
+| native_name3            = 
+| native_language3        = 
+| other_name              = 
+| image                   = 
+| image_size              = 
+| alt                     = 
+| caption                 = 
+| mapframe                = 
+| locmapin                = 
+| map_relief              = 
+| map_width               = 
+| map_caption             = 
+| map_dot_mark            = 
+| map_dot_label           = 
+| coordinates             = 
+| gbgridref               = 
+| gbgridref_note          = 
+| type                    = 
+| etymology               = 
+| location                = 
+| nearest_city            = 
+| area                    = 
+| elevation               = 
+| height                  = 
+| beginning_label         = 
+| beginning_date          = 
+| formed                  = 
+| founded                 = 
+| founder                 = 
+| built                   = 
+| built_for               = 
+| original_use            = 
+| demolished              = 
+| rebuilt                 = 
+| restored                = 
+| restored_by             = 
+| current_use             = 
+| architect               = 
+| sculptor                = 
+| architecture            = 
+| visitors_num            = 
+| visitors_year           = 
+| visitors_ref            = 
+| governing_body          = 
+| owner                   = 
+| website                 = 
+| designation1            = 
+| designation1_offname    = 
+| designation1_type       = 
+| designation1_criteria   = 
+| designation1_date       = 
+| delisted1_date          = 
+| designation1_partof     = 
+| designation1_number     = 
+| designation1_free1name  = 
+| designation1_free1value = 
+| designation1_free2name  = 
+| designation1_free2value = 
+| designation1_free3name  = 
+| designation1_free3value = 
+| designation2            = 
+| designation2_offname    = 
+| designation2_type       = 
+| designation2_criteria   = 
+| designation2_date       = 
+| delisted2_date          = 
+| designation2_partof     = 
+| designation2_number     = 
+| designation2_free1name  = 
+| designation2_free1value = 
+| designation2_free2name  = 
+| designation2_free2value = 
+| designation2_free3name  = 
+| designation2_free3value = 
+| designation3            = 
+| designation3_offname    = 
+| designation3_type       = 
+| designation3_criteria   = 
+| designation3_date       = 
+| delisted3_date          = 
+| designation3_partof     = 
+| designation3_number     = 
+| designation3_free1name  = 
+| designation3_free1value = 
+| designation3_free2name  = 
+| designation3_free2value = 
+| designation3_free3name  = 
+| designation3_free3value = 
+| designation4            = 
+| designation4_offname    = 
+| designation4_type       = 
+| designation4_criteria   = 
+| designation4_date       = 
+| delisted4_date          = 
+| designation4_partof     = 
+| designation4_number     = 
+| designation4_free1name  = 
+| designation4_free1value = 
+| designation4_free2name  = 
+| designation4_free2value = 
+| designation4_free3name  = 
+| designation4_free3value = 
+| designation5            = 
+| designation5_offname    = 
+| designation5_type       = 
+| designation5_criteria   = 
+| designation5_date       = 
+| delisted5_date          = 
+| designation5_partof     = 
+| designation5_number     = 
+| designation5_free1name  = 
+| designation5_free1value = 
+| designation5_free2name  = 
+| designation5_free2value = 
+| designation5_free3name  = 
+| designation5_free3value = 
+| designation6            = 
+| designation6_offname    = 
+| designation6_type       = 
+| designation6_criteria   = 
+| designation6_date       = 
+| delisted6_date          = 
+| designation6_partof     = 
+| designation6_number     = 
+| designation6_free1name  = 
+| designation6_free1value = 
+| designation6_free2name  = 
+| designation6_free2value = 
+| designation6_free3name  = 
+| designation6_free3value = 
+| embed                   = 
+| embedded                = 
+}}
+</syntaxhighlight>
+{{col-break}}
+
+===Blank template with most used parameters===
+<syntaxhighlight lang="wikitext" style="overflow:auto; width:75%">
+{{Infobox historic site
+| name                 = 
+| native_name          = 
+| native_language      = 
+| image                = 
+| caption              = 
+| type                 = 
+| mapframe             = 
+| coordinates          = 
+| location             = 
+| area                 = 
+| built                = 
+| architect            = 
+| architecture         = 
+| governing_body       = 
+| owner                = 
+| designation1         = 
+| designation1_offname = 
+| designation1_date    = 
+| designation1_number  = 
+| designation2         = 
+| designation2_offname = 
+| designation2_date    = 
+| designation2_number  = 
+| designation3         = 
+| designation3_offname = 
+| designation3_date    = 
+| designation3_number  = 
+| designation4         = 
+| designation4_offname = 
+| designation4_date    = 
+| designation4_number  = 
+| designation5         = 
+| designation5_offname = 
+| designation5_date    = 
+| designation5_number  = 
+| designation6         = 
+| designation6_offname = 
+| designation6_date    = 
+| designation6_number  = 
+}}
+</syntaxhighlight>
+{{col-end}}
+
+==Parameters==
+All fields are optional because they use [[mw:Help:Extension:ParserFunctions|ParserFunctions]], which allow fields to be hidden if no value is set. The infobox is segmented into several basic parts, including the name of the site, an image, a map of the site's location, basic information about the site, and information pertaining to the registers on which the site is listed. Wikilinks and other formatting are acceptable in any of the Infobox fields except map/image and coordinate parameters.
+
+Please spend some time at the [[Wikipedia:WikiProject Historic sites|Historic sites WikiProject]] and its [[Wikipedia talk:WikiProject Historic sites|talk page]] for standards on presenting names, designations, and other data.
+
+{{Infobox historic site
+| name = Arles Obelisk
+| native_name = Obélisque d'Arles
+| native_language = French
+| image = Arles obelisque.jpg
+| caption = The Arles Obelisk in front of the Arles town hall (right)
+| designation1 = WHS
+| designation1_date = 1981 <small>(5th [[:en:World Heritage Committee|session]])</small>
+| designation1_partof = [[:en:Arles, Roman and Romanesque Monuments|Arles, Roman and Romanesque Monuments]]
+| designation1_number = [http://whc.unesco.org/en/list/164 164]
+| designation1_criteria = ii, iv
+| designation1_type = Cultural
+| designation1_free1name = Region
+| designation1_free1value = [[:en:List of World Heritage Sites in Europe|Europe and North America]]
+| designation2 = Monument historique
+| designation2_date = 1840
+| designation2_number = PA00081180
+| designation2_offname = Obélisque antique
+| location = Place de la République<br/>13200 [[:en:Arles, France|Arles, France]]
+| height= {{convert|15.26|m}}<br/>With pedestal: {{convert|19.81|m}}
+| built = 4th century
+| rebuilt = March 26, 1676
+| architect = Jacques Peytret
+| coordinates = {{coord|43.67636|4.627594|display=inline}}
+| locmapin = France
+| map_relief = yes
+}}
+
+===Basic information===
+Basic information consists of information that can apply to any site, regardless of what it has been designated. This includes information like the site's location; when the site was built, formed, or founded; and information about who built it and how it was built. Basic information parameters are as follows:
+{{glossary}}
+{{term|name}} {{defn|Most recognizable name of the site. This may or may not be the official name given by any designation registers. See [[WP:TITLE]] for more information.}}
+{{quote|{{para|name|Arles Obelisk}}}}
+{{term|native_name}} {{defn|The name of the site in its native language. For sites in countries that have more than one common language, choose the language most closely associated with the specific region of the country in which the site is located, and use the native_name2 and native_name3 parameters for other languages. Only three languages are supported at this time.}}
+{{quote|{{para|native_name|Obélisque d'Arles}}}}
+{{term|native_language}} {{defn|The language of the native name or its corresponding [[:en:ISO 639-1|ISO 639-1]], [[:en:ISO 639-2|ISO 639-2]] or [[:en:ISO 639-3|ISO 639-3]] language code. This uses the {{tl|lang}} templates to display a link to the article about the language. If a language name (e.g. "French", "Russian", etc.) is specified, {{tl|Lang2iso}} converts it into its ISO abbreviation.}}
+{{quote|{{para|native_language | French}}}}
+{{term|native_name2}} {{defn|The same as the native_name parameter above.}}
+{{quote|{{para|native_name2|Obelisco de Arles}}}}
+{{term|native_language2}} {{defn|The same as the native_language parameter above.}}
+{{quote|{{para|native_language2|Spanish}} or {{para|native_language2 | es}}}}
+{{term|native_name3}} {{defn|The same as the native_name parameter above.}}
+{{quote|{{para|native_name3|Арль Обелиск}}}}
+{{term|native_language3}} {{defn|The same as the native_language parameter above.}}
+{{quote|{{para|native_language3|Russian}} or {{para|native_language3 | ru}}}}
+{{term|type}} {{defn|Type of object}}
+{{quote|{{para|type|burial mound}}, {{para|type|church}}}}
+{{term|location}} {{defn|City, country, state, province, etc. in which site is located. If known, the postal address of the site can be included here as well. It is suggested that links are provided to the cities and countries.}}
+{{quote|{{para|location|<nowiki>Place de la République<br/>13200 [[:en:Arles, France|Arles, France]]</nowiki>}}}}
+{{term|area}} {{defn|Land area of the site. Mostly used with districts, parks, and other extended areas. {{tl|Convert}} tags may be used to display English alongside metric measurements.}}
+{{quote|{{para|area|814 acres}}}}
+{{quote|{{para|area|<nowiki>{{convert|814|acre|ha}}</nowiki>}}}}
+{{term|elevation}} {{defn|Elevation above sea level. {{tl|Convert}} tags may be used to display English alongside metric measurements.}}
+{{quote|{{para|elevation|2,400 ft}}}}
+{{quote|{{para|elevation|<nowiki>{{convert|2400|ft}}</nowiki>}}}}
+{{term|height}} {{defn|Height of designated object, if applicable. Mostly used with statues, obelisks, and some buildings. {{tl|Convert}} tags may be used to display English alongside metric measurements.}}
+{{quote|{{para|elevation|151 feet 1 inch}}}}
+{{quote|{{para|elevation|<nowiki>{{convert|151|ft|1|in}}</nowiki>}}}}
+{{term|formed}} {{defn|If the site is a natural land formation or habitat, this parameter describes when it was formed.}}
+{{quote|{{para|formed|<nowiki>[[Cretaceous period]]</nowiki>}}}}
+{{term|founded}} {{defn|If the site is a city or locality which was founded by a group of people, this parameter describes when it was founded.}}
+{{quote|{{para|founded|March 14, 1698}}}}
+{{term|built}} {{defn|If the site is a building or manmade structure, this parameter describes when it was built.}}
+{{quote|{{para|built|4th century}}}}
+{{term|beginning_label}} {{defn|If none of the above labels quite apply to the article's subject (i.e. if the place was "settled" or "discovered"), this parameter can be used in conjunction with ''beginning_date'' to show a customized date.}}
+{{quote|{{para|beginning_label|Settled}} and {{para|beginning_date|15th century}}}}
+{{term|built_for}} {{defn|If a building or structure was built for a specific person (such as a king or queen) or organization, this parameter identifies them.}}
+{{quote|{{para|built_for|King Alexander I}}}}
+{{term|demolished}} {{defn|If the site is no longer standing because it has been demolished, this is the date of demolition.}}
+{{quote|{{para|demolished|August 22, 2001}}}}
+{{term|rebuilt}} {{defn|If the site was rebuilt after being demolished or destroyed, this is the date the site was rebuilt.}}
+{{quote|{{para|rebuilt|December 14, 2007}}}}
+{{term|restored}} {{defn|If the site was remodelled or restored to its original condition, this is the date of restoration.}}
+{{quote|{{para|restored|January 7, 1987}}}}
+{{term|restored_by}} {{defn|The person who restored or remodelled the building.}}
+{{quote|{{para|restored_by|Natchez Garden Club, Inc.}}}}
+{{term|architect}} {{defn|If the site is a building or manmade structure, this parameter names the architect. If Wikipedia contains an article about the architect, link to that article.}}
+{{quote|{{para|architect|Jacques Peytret}}}}
+{{term|architecture}} {{defn|If the site is a building or manmade structure, this parameter describes the architectural style. Links are encouraged.}}
+{{quote|{{para|architecture|<nowiki>[[Classical Revival]], Other</nowiki>}}}}
+{{term|visitors_num}} {{defn|Most recent figure describing the number of visitors to the site in a given year. If a specific year is not known, an estimated annual number of visitors can be included.}}
+{{quote|{{para|visitors_num|81,344}}}}
+{{quote|{{para|visitors_num|80,000 annually}}}}
+{{term|visitors_year}} {{defn|If a specific year was used for ''visitors_num'', the year goes here. If there is a reference, include it in this parameter, making sure to properly format it.}}
+{{quote|{{para|visitors_ref|<nowiki><ref>{{cite web|...}}</ref></nowiki>}}}}
+{{term|governing_body}} {{defn|Body that owns/operates the historic site. If there is a Wikipedia article about the governing body, link to it. If the site is owned by a local or national government, be sure to provide adequate regional information.}}
+{{quote|{{para|governing_body|<nowiki>[[Government of France]]</nowiki>}}}}
+{{glossary end}}
+
+===Image/Map===
+The infobox can display both an image and a map. If an image is present, the map will be displayed at the bottom of the infobox, and if no image is specified, the map will take its place at the top of the infobox. Image/Map parameters are as follows:
+
+====Image====
+{{glossary}}
+{{term|image}} {{defn|Name of main image displayed. Only the title of the image (i.e. Don't include "File:" or "Image:").}}
+{{quote|{{para|image|Arles obelisque.jpg}}}}
+
+{{term|image_size}} {{defn|Width of main image in pixels ('''Do not include "px"'''). Default 250.}}
+{{quote|{{para|image_size|300}}}}
+
+{{term|caption}} {{defn|Caption for main image. Links can be included in this text.}}
+{{quote|{{para|caption|Arles Obelisk in front of the Arles Town Hall}}}}
+
+{{term|alt}} {{defn|Alt text for image. For more information see [[WP:ALT]].}}
+{{quote|{{para|alt|Obelisk in front of two buildings.}}}}
+{{glossary end}}
+
+====Site map====
+{{glossary}}
+{{term|image_map}} {{defn|Name of site map image displayed. Only the title of the image (i.e. Don't include "File:" or "Image:").}}
+{{quote|{{para|image_map|Historic_site_plan.jpg}}}}
+
+{{term|image_map_size}} {{defn|Width of site map image in pixels ('''Do not include "px"'''). Default 250.}}
+{{quote|{{para|image_map_size|300}}}}
+
+{{term|image_map_caption}} {{defn|Caption for site map image. Links can be included in this text.}}
+{{quote|{{para|image_map_caption|Archaeological map of the historic site}}}}
+
+{{term|image_map_alt}} {{defn|Alt text for image. For more information see [[WP:ALT]].}}
+{{quote|{{para|image_map_alt|An archaeological map of the historic site with circles marking the locations of major finds}}}}
+{{glossary end}}
+
+====Map====
+{{glossary}}
+{{term|locmapin}} {{defn|If you want a map to be displayed, set this parameter to the region in which the site is located. See {{tl|Location map}} for valid regions. If the parameter is left blank, no map will be displayed.}}
+{{quote|{{para|locmapin|France}}}}
+
+{{term|map_relief}} {{defn|Any non-blank value (<code>yes</code>, <code>1</code>, etc.) will cause the template to display a [[:en:relief mapping (computer graphics)|relief map]] image, where available. For additional information, see [[Template:Location map#Relief parameter]].}}
+{{quote|{{para|map_relief|yes}}}}
+
+{{term|map_width}} {{defn|Width of the map in pixels ('''Do not include "px"'''). Default 235.}}
+{{quote|{{para|map_width|275}}}}
+
+{{term|map_caption}} {{defn|Caption displayed under the map. The default caption (automatically displayed) is "Location of ''name'' in ''region''", where ''name'' is controlled by the {{para|name}} parameter and ''region'' is controlled by the {{para|locmapin}} parameter. If you want to display something different, type it here. Links can be included in this text.}}
+{{quote|{{para|map_caption|<nowiki>Arles Obelisk is in [[:en:Arles, France|Arles, France]]</nowiki>}}}}
+
+{{term|map_dot_mark}} {{defn|Pin color for use on the map. Defaults to [[:File:Red pog.svg]] if left blank. See [[:Commons:Category:Map pointers, dotset 1]] for alternate images to use. }}
+{{quote|{{para|map_dot_mark|Blue pog.svg}}}}
+
+{{term|map_dot_label}} {{defn|Label for use with the pin on the map. Defaults to blank. }}
+{{quote|{{para|map_dot_label|Approximate location.svg}}}}
+{{glossary end}}
+
+=====Mapframe parameters=====
+{{Infobox mapframe/doc/parameters
+  | mapframe-frame-width = 250
+  | mapframe-type = landmark
+  | onByDefault = yes, unless any of these are set: {{para|locmapin}}, {{para|image_map}}, {{para|embed}}
+}}
+
+===Coordinates===
+To display the site's location on the map, coordinates are needed. Use the {{tl|Coord}} template. See the Coord template documentation for details on format, display, and other options. 
+
+Without coordinates, the map will not display even if a value is present in <code>|&nbsp;locmapin =</code>.
+
+=== Grid references ===
+For sites in Great Britain an [[:en:British national grid reference system|Ordnance Survey grid reference]] may be given. Spaces are allowed - see [[template:OS coord/doc|details of format]].
+::'''Example –''' <code>|&nbsp;gbgridref = TQ 306 815</code>
+
+{{Infobox historic site
+| name = Statue of Liberty
+| image = Statue of Liberty, NY.jpg
+| caption = The Statue of Liberty in [[New York Harbor]]
+| location =  [[Liberty Island]], [[:en:New York City|New York City]], [[New York (state)|New York]], U.S.
+| coordinates = {{coord|40|41|38|N|74|2|37|W|display = inline}}
+| locmapin = USA New York City
+| built =October 28, 1886
+| architect= [[Frederic Auguste Bartholdi]]
+| architecture= 
+| area = {{convert|12|acre|m2}}
+| visitors_num = 4,235,595 (includes [[:en:Ellis Island|Ellis Island NM]])
+| visitors_year = 2005
+| governing_body = [[:en:United States|U.S.]] [[National Park Service]]
+| designation1 = WHS
+| designation1_date = 1984 <small>(8th [[:en:World Heritage Committee|session]])</small>
+| designation1_type = Cultural
+| designation1_criteria = i, vi
+| designation1_number = [http://whc.unesco.org/en/list/307 307]
+| designation1_free1name = Region
+| designation1_free1value = [[List of World Heritage Sites in the Americas|Europe and North America]]
+| designation2 = NRHP
+| designation2_offname = Statue of Liberty National Monument, Ellis Island and Liberty Island
+| designation2_date = October 15, 1966
+| designation2_number = 66000058
+| designation3 = NMON
+| designation3_date = October 15, 1924
+| designation3_free1name = Designated by
+| designation3_free1value = President [[:en:Calvin Coolidge|Calvin Coolidge]]
+| designation4 = NYC Landmark
+| designation4_date = September 14, 1976
+| designation4_type = Individual
+}}
+
+===Designations===
+The main focus of this infobox is on the designations, which are displayed hereafter the basic information about the site; up to 5 are allowed. Normally designations are listed in decreasing scope (i.e. an international designation first, followed by a national one, etc.). Each designation is represented by a colored bar, controlled by the {{tl|Designation}} template. Though the Designation template is used in the background here, it can be used as a stand-alone template to create tables, lists, and even other infoboxes. For more information see [[:en:Template:Designation/doc|Template:Designation/doc]].
+
+To display a designation, there are several templates. While no parameters are necessary, it is recommended that at least the designation date and reference number (if applicable) are known before adding the designation. For each designation (1-5) the following parameters may be used:
+{{glossary}}
+{{term|designation1}} {{defn|Input the callname of the designation here. For a list of supported callnames, see [[Template:Designation/doc#Supported designations]].}}
+{{quote|{{para|designation1|World Heritage Site}}}}
+{{term|designation1_offname}} {{defn|The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.}}
+{{quote|{{para|designation1_offname|Obélisque antique}}}}
+{{term|designation1_type}} {{defn|Some registers have certain types of designations (i.e. "Natural" and "Cultural", "Grade I" and "Grade II", etc.). If the type is closely associated with the designation, input that type here.}}
+{{quote|{{para|designation1_type|Cultural}}}}
+{{term|designation1_criteria}} {{defn|Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.}}
+{{quote|{{para|designation1_criteria|ii, iv}}}}
+{{term|designation1_date}} {{defn|Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).}}
+{{quote|{{para|designation1_date|<syntaxhighlight lang="wikitext" inline>March 4, 1972<ref>{{cite web|...}}</ref></syntaxhighlight>}}}}
+{{term|delisted1_date}} {{defn|If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word "Former" to the beginning. This parameter also needs a reference.}}
+{{quote|{{para|delisted1_date|<syntaxhighlight lang="wikitext" inline>March 5, 1972<ref>{{cite web|...}}</ref></syntaxhighlight>}}}}
+{{term|designation1_partof}} {{defn|Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). For example, [[:en:Ellis Island|Ellis Island]] is a part of the [[:en:Statue of Liberty National Monument|Statue of Liberty National Monument]]; both are listed as [[:en:New York City Landmark|New York City Landmark]]s. If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.}}
+{{quote|{{para|designation1_partof|<syntaxhighlight lang="wikitext" inline>[[:en:Statue of Liberty National Monument|Statue of Liberty National Monument]]</syntaxhighlight>}}}}
+{{term|designation1_number}} {{defn|Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.}}
+{{quote|{{para|designation1_number|70010045}}}}
+{{glossary end}}
+For designations 2-5, these same parameters are used, only "designation1" in all the parameters is replaced by "designation2", "designation3", etc.
+
+;Custom parameters:
+Besides all of these hard-coded parameters there is also the possibility of adding up to 3 custom parameters for each designation. These can be used for information specific to that single register (such as "Region" for World Heritage Sites or "Multiple Property Submission" to the U.S. National Register of Historic Places). If there is anything extra needed to fully identify the designated site, include it here.
+{{glossary}}
+{{term|designation1_free1name}} {{defn|The name (bolded part) of the 1st custom parameter you would like to identify.}}
+{{quote|{{para|designation1_free1name|Region}}}}
+{{term|designation1_free1value}} {{defn|The value to which you want to set the custom parameter.}}
+{{quote|{{para|<syntaxhighlight lang="wikitext" inline>designation1_free1value|[[World Heritage Sites in Europe|Europe and North America]]</syntaxhighlight>}}}}
+{{glossary end}}
+Up to three custom parameters can be named and defined for each parameter (<code>|&nbsp;designation1_free2name =</code>, <code>|&nbsp;designation1_free2value =</code>, etc.).
+
+=== Use as a child template ===
+The '''embed''' parameter is used when embedding this infobox into another (see the [[Template:Infobox]] documentation which explains [[Template:Infobox/doc#Embedding|embedding]] and [[Template:Infobox/doc#Subboxes|subboxes]]).
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox ABC
+| name        = 
+| 
+| embedded    = 
+  {{Infobox historic site
+  | embed = yes
+  | 
+  }}
+}}
+</syntaxhighlight>
+
+=== Embedding other templates ===
+The '''embedded''' parameter is used for embedding other templates into this infobox (see [[Wikipedia:Infobox modules]]).
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox historic site
+| name =
+| 
+| embedded = 
+  {{Infobox ABC
+  | embed = yes 
+  | 
+  }}
+}}
+</syntaxhighlight>
+
+==Examples==
+The two infoboxes shown above are two great examples of this infobox in action. The Arles Obelisk infobox shows a site which makes use of a native name, and the Statue of Liberty infobox shows four separate designations. The infoboxes are repeated here, along with more examples, showing the code behind them:
+
+===Arles Obelisk===
+{{Infobox historic site
+| name = Arles Obelisk
+| native_name = Obélisque d'Arles
+| native_language = French
+| image = Arles obelisque.jpg
+| caption = The Arles Obelisk in front of the Arles town hall (right).
+| designation1 = WHS
+| designation1_date = 1981 {{small|(5th [[:en:World Heritage Committee|session]])}}
+| designation1_partof = [[:en:Arles, Roman and Romanesque Monuments|Arles, Roman and Romanesque Monuments]]
+| designation1_number = [http://whc.unesco.org/en/list/164 164]
+| designation1_criteria = ii, iv
+| designation1_type = Cultural
+| designation1_free1name = Region
+| designation1_free1value = [[:en:List of World Heritage Sites in Europe|Europe and North America]]
+| designation2 = Monument historique
+| designation2_date = 1840
+| designation2_number = PA00081180
+| designation2_offname = Obélisque antique
+| location = Place de la République{{br}}13200 [[:en:Arles, France|Arles, France]]
+| built = 4th century
+| rebuilt = March 26, 1676
+| architect = Jacques Peytret
+| coordinates = {{coord|43.67636|4.627594|display=inline}}
+| locmapin = France
+}}
+
+This is an example of a standard infobox with two designations. Notice in the World Heritage Site designation, an external link to a page describing the site is provided in the reference number section. Also, in the date section, a small link (such as those seen in {{tl|Infobox World Heritage Site}}) is provided detailing the [[:en:World Heritage Committee|World Heritage Committee]] session in which the obelisk was designated. The ''location'' parameter includes a line break ({{tag|br|s}} or {{tlx|br}}); this is perfectly acceptable in all infobox fields except map/image and coordinate fields.
+
+<syntaxhighlight lang="wikitext" style="width:50%; overflow:auto">
+{{Infobox historic site
+| name = Arles Obelisk
+| native_name = Obélisque d'Arles
+| native_language = French
+| image = Arles obelisque.jpg
+| caption = The Arles Obelisk in front of the Arles town hall (right).
+| designation1 = WHS
+| designation1_date = 1981 {{small|(5th [[:en:World Heritage Committee|session]])}}
+| designation1_partof = [[:en:Arles, Roman and Romanesque Monuments|Arles, Roman and Romanesque Monuments]]
+| designation1_number = [http://whc.unesco.org/en/list/164 164]
+| designation1_criteria = ii, iv
+| designation1_type = Cultural
+| designation1_free1name = Region
+| designation1_free1value = [[:en:List of World Heritage Sites in Europe|Europe and North America]]
+| designation2 = Monument historique
+| designation2_date = 1840
+| designation2_number = PA00081180
+| designation2_offname = Obélisque antique
+| location = Place de la République{{br}}13200 [[:en:Arles, France|Arles, France]]
+| built = 4th century
+| rebuilt = March 26, 1676
+| architect = Jacques Peytret
+| coordinates = {{coord|43.67636|4.627594|display=inline}}
+| locmapin = France
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Statue of Liberty===
+{{Infobox historic site
+| name = Statue of Liberty
+| image = Statue of Liberty, NY.jpg
+| caption = The Statue of Liberty in [[New York Harbor]]
+| location =  [[Liberty Island]], [[:en:New York City|New York City]], [[New York (state)|New York]], U.S.
+| coordinates = {{coord|40|41|38|N|74|2|37|W|display = inline}}
+| locmapin = USA New York City
+| built =October 28, 1886
+| architect= [[Frederic Auguste Bartholdi]]
+| architecture= 
+| area = {{convert|12|acre|m2}}
+| visitors_num = 4,235,595 (includes [[:en:Ellis Island|Ellis Island NM]])
+| visitors_year = 2005
+| governing_body = [[:en:United States|U.S.]] [[National Park Service]]
+| designation1 = WHS
+| designation1_date = 1984 <small>(8th [[:en:World Heritage Committee|session]])</small>
+| designation1_type = Cultural
+| designation1_criteria = i, vi
+| designation1_number = [http://whc.unesco.org/en/list/307 307]
+| designation1_free1name = Region
+| designation1_free1value = [[List of World Heritage Sites in the Americas|Europe and North America]]
+| designation2 = NRHP
+| designation2_offname = Statue of Liberty National Monument, Ellis Island and Liberty Island
+| designation2_date = October 15, 1966
+| designation2_number = 66000058
+| designation3 = NMON
+| designation3_date = October 15, 1924
+| designation3_free1name = Designated by
+| designation3_free1value = President [[:en:Calvin Coolidge|Calvin Coolidge]]
+| designation4 = NYC Landmark
+| designation4_date = September 14, 1976
+| designation4_type = Individual
+}}
+
+The Statue of Liberty has been designated as four different things; with this infobox, they can all be shown in the same place. Notice the National Monument section makes use of one of the free parameters by stating under which U.S. President the monument was designated.
+
+<syntaxhighlight lang="wikitext" style="width:50%; overflow:auto">
+{{Infobox historic site
+| name = Statue of Liberty
+| image = Statue of Liberty, NY.jpg
+| caption = The Statue of Liberty in [[New York Harbor]]
+| location =  [[Liberty Island]], [[:en:New York City|New York City]], [[New York (state)|New York]], U.S.
+| coordinates = {{coord|40|41|38|N|74|2|37|W|display = inline}}
+| locmapin = USA New York City
+| built =October 28, 1886
+| architect= [[Frederic Auguste Bartholdi]]
+| architecture= 
+| area = {{convert|12|acre|m2}}
+| visitors_num = 4,235,595 (includes [[:en:Ellis Island|Ellis Island NM]])
+| visitors_year = 2005
+| governing_body = [[:en:United States|U.S.]] [[National Park Service]]
+| designation1 = WHS
+| designation1_date = 1984 {{small|(8th [[:en:World Heritage Committee|session]])}}
+| designation1_type = Cultural
+| designation1_criteria = i, vi
+| designation1_number = [http://whc.unesco.org/en/list/307 307]
+| designation1_free1name = Region
+| designation1_free1value = [[List of World Heritage Sites in the Americas|Europe and North America]]
+| designation2 = NRHP
+| designation2_offname = Statue of Liberty National Monument, Ellis Island and Liberty Island
+| designation2_date = October 15, 1966
+| designation2_number = 66000058
+| designation3 = NMON
+| designation3_date = October 15, 1924
+| designation3_free1name = Designated by
+| designation3_free1value = President [[:en:Calvin Coolidge|Calvin Coolidge]]
+| designation4 = NYC Landmark
+| designation4_date = September 14, 1976
+| designation4_type = Individual
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Chaco Culture – Former designation===
+
+{{Infobox historic site
+| name = Chaco Culture National Historical Park
+| image = Chaco Canyon Chetro Ketl great kiva plaza NPS.jpg
+| caption = The Great Kiva of Chetro Ketl
+| location = [[San Juan County, New Mexico|San Juan County]] and [[McKinley County, New Mexico|McKinley County]], [[New Mexico]], [[:en:United States|USA]]
+| coordinates = {{coord|36.058333|-107.958889|display = inline}}
+| locmapin =
+| area = {{convert|33977.8|acre}}
+| visitors_num = 45,539
+| visitors_year = 2005
+| governing_body = National Park Service
+| designation1 = WHS
+| designation1_offname = Chaco Culture
+| designation1_type = Cultural
+| designation1_criteria = iii
+| designation1_number = [http://whc.unesco.org/en/list/353 353]
+| designation1_date = 1987 <small>(11th [[:en:World Heritage Committee|session]])</small>
+| designation1_free1name = Region
+| designation1_free1value = Europe and North America
+| designation2 = NRHP
+| designation2_date = October 15, 1966
+| designation2_type = [[U.S. historic district]]
+| designation2_number = 66000895
+| designation3 = NMON
+| designation3_date = March 11, 1907
+| delisted3_date = December 19, 1980
+| designation3_free1name = Designated by
+| designation3_free1value = President [[:en:Theodore Roosevelt|Theodore Roosevelt]]
+| designation4 = NHP
+| designation4_date = December 19, 1980
+}}
+
+The Choco Culture National Historical Park has also been designated four different things, but one is no longer active. The park used to be a U.S. National Monument but was delisted in 1980 and converted into a National Historical Park. To show the former designation, notice that the infobox greys out the National Monument bar and adds the word "Former" to the beginning of the designation. Notice also that the locator map is not displayed since the ''locmapin'' parameter is left blank.
+
+<syntaxhighlight lang="wikitext" style="width:50%; overflow:auto">
+{{Infobox historic site
+| name = Chaco Culture National Historical Park
+| image = Chaco Canyon Chetro Ketl great kiva plaza NPS.jpg
+| caption = The Great Kiva of Chetro Ketl
+| location = [[San Juan County, New Mexico|San Juan County]] and [[McKinley County, New Mexico|McKinley County]], [[New Mexico]], [[:en:United States|USA]]
+| coordinates = {{coord|36.058333|-107.958889|display = inline}}
+| locmapin =
+| area = {{convert|33977.8|acre}}
+| visitors_num = 45,539
+| visitors_year = 2005
+| governing_body = National Park Service
+| designation1 = WHS
+| designation1_offname = Chaco Culture
+| designation1_type = Cultural
+| designation1_criteria = iii
+| designation1_number = [http://whc.unesco.org/en/list/353 353]
+| designation1_date = 1987 {{small|(11th [[:en:World Heritage Committee|session]])}}
+| designation1_free1name = Region
+| designation1_free1value = Europe and North America
+| designation2 = NRHP
+| designation2_date = October 15, 1966
+| designation2_type = [[U.S. historic district]]
+| designation2_number = 66000895
+| designation3 = NMON
+| designation3_date = March 11, 1907
+| delisted3_date = December 19, 1980
+| designation3_free1name = Designated by
+| designation3_free1value = President [[:en:Theodore Roosevelt|Theodore Roosevelt]]
+| designation4 = NHP
+| designation4_date = December 19, 1980
+}}
+</syntaxhighlight>
+{{clear}}
+
+===No image included – Map at top===
+{{Infobox historic site
+| name = Tintinhull House and Garden
+| native_name =
+| locmapin = United Kingdom Somerset
+| coordinates = {{coord|50|58|28|N|2|42|26|W|display = inline}}
+| gbgridref = ST 503 197
+| location = [[Somerset]], England 
+| area =
+| built = 17th century
+| architect =
+| architecture =
+| governing_body =
+| designation1 = Grade I Listed Building
+| designation1_date = 19 April 1961
+| designation1_number =425669
+| designation2 = National Register of Historic Parks and Gardens
+| designation2_date = 12 April 2005
+| designation2_type = Grade II
+}}
+
+This infobox does not specify an image, causing the map to be displayed at the top of the infobox instead of at the bottom. You can also choose to display an image with no map (by leaving the ''locmapin'' parameter blank as in the above example) or to display neither. If, however, coordinates are known, it is suggested that a map be included.
+
+<syntaxhighlight lang="wikitext" style="width:50%; overflow:auto">
+{{Infobox historic site
+| name = Tintinhull House and Garden
+| native_name =
+| locmapin = United Kingdom Somerset
+| coordinates = {{coord|50|58|28|N|2|42|26|W|display = inline}}
+| gbgridref = ST 503 197
+| location = [[Somerset]], England 
+| area =
+| built = 17th century
+| architect =
+| architecture =
+| governing_body =
+| designation1 = Grade I Listed Building
+| designation1_date = 19 April 1961
+| designation1_number =425669
+| designation2 = National Register of Historic Parks and Gardens
+| designation2_date = 12 April 2005
+| designation2_type = Grade II
+}}
+</syntaxhighlight>
+
+==Tracking category==
+* {{clc|Pages using infobox historic site with unknown parameters}}
+
+==TemplateData==
+{{Collapse top|title=[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "This infobox is part of WikiProject Historic sites. The infobox is meant for use on articles about sites which have been deemed worthy of protection by local, state, provincial, national, or other governmental bodies. Supported designations are listed at the WikiProject's home page. If you would like to add a new designation, contact members of the WikiProject by leaving a comment at the WikiProject talk page and/or see Template:Designation/doc.",
+	"params": {
+		"name": {
+			"label": "name",
+			"description": "Most recognizable name of the site. This may or may not be the official name given by any designation registers. See WP:TITLE for more information.",
+			"type": "string",
+			"required": false
+		},
+		"native_name": {
+			"label": "native name",
+			"description": "The name of the site in its native language. For sites in countries that have more than one common language, choose the language most closely associated with the specific region of the country in which the site is located, and use the native_name2 and native_name3 parameters for other languages. Only three languages are supported at this time.",
+			"type": "string",
+			"required": false
+		},
+		"native_language": {
+			"label": "native language",
+			"description": "The language of the native name or its corresponding ISO 639-1, ISO 639-2 or ISO 639-3language code. This uses the {{lang}} templates to display a link to the article about the language. If a language name (e.g. 'French', 'Russian', etc.) is specified, {{ConvertAbbrev}} converts it into its ISO abbreviation.",
+			"type": "string",
+			"required": false
+		},
+		"native_name2": {
+			"label": "native name2",
+			"description": "The same as the native_name parameter",
+			"type": "string",
+			"required": false
+		},
+		"native_language2": {
+			"label": "native language2",
+			"description": "The same as the native_language parameter ",
+			"type": "string",
+			"required": false
+		},
+		"native_name3": {
+			"label": "native name3",
+			"description": "The same as the native_name parameter",
+			"type": "string",
+			"required": false
+		},
+		"native_language3": {
+			"label": "native language3",
+			"description": "The same as the native_language parameter ",
+			"type": "string",
+			"required": false
+		},
+		"image": {
+			"label": "image",
+			"description": "Name of main image displayed. Only the title of the image (i.e. Don't include 'File:' or 'Image:').",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"image_size": {
+			"label": "image size",
+			"description": "Width of main image in pixels (Do not include 'px'). Default 250.",
+			"type": "number",
+			"required": false
+		},
+		"caption": {
+			"label": "caption",
+			"description": "Caption for main image. Links can be included in this text.",
+			"type": "string",
+			"required": false
+		},
+		"alt": {
+			"label": "alt",
+			"description": "Alt text for image. For more information see WP:ALT.",
+			"type": "string",
+			"required": false
+		},
+		"locmapin": {
+			"label": "locmapin",
+			"description": "If you want a map to be displayed, set this parameter to the region in which the site is located. See {{Location map}} for valid regions. If the parameter is left blank, no map will be displayed.",
+			"type": "string",
+			"required": false
+		},
+		"map_relief": {
+			"label": "map relief",
+			"description": "Any non-blank value (yes, 1, etc.) will cause the template to display a relief map image, where available. For additional information, seeTemplate:Location map#Relief parameter.",
+			"type": "string",
+			"required": false
+		},
+		"map_width": {
+			"label": "map width",
+			"description": "Width of the map in pixels (Do not include 'px'). Default 235.",
+			"type": "string",
+			"required": false
+		},
+		"map_caption": {
+			"label": "map caption",
+			"description": "Caption displayed under the map. The default caption (automatically displayed) is 'Location of name in region', where name is controlled by the| name = parameter and region is controlled by the | locmapin = parameter. If you want to display something different, type it here. Links can be included in this text.",
+			"type": "string",
+			"required": false
+		},
+		"coordinates": {
+			"label": "coordinates",
+			"description": "coordinates",
+			"type": "string",
+			"required": false
+		},
+		"gbgridref": {
+			"label": "gbgridref",
+			"description": "For sites in Great Britain an Ordnance Survey grid reference may be given. Spaces are allowed",
+			"type": "string",
+			"required": false
+		},
+		"gbgridref_note": {
+			"label": "gbgridref",
+			"description": "Additional notes (e.g., a citation) for gbgridref.",
+			"type": "string",
+			"required": false
+		},
+		"location": {
+			"label": "location",
+			"description": "City, country, state, province, etc. in which site is located. If known, the postal address of the site can be included here as well. It is suggested that links are provided to the cities and countries.",
+			"type": "string",
+			"required": false
+		},
+		"area": {
+			"label": "area",
+			"description": "Land area of the site. Mostly used with districts, parks, and other extended areas. {{Convert}} tags may be used to display English alongside metric measurements.",
+			"type": "string",
+			"required": false
+		},
+		"elevation": {
+			"label": "elevation",
+			"description": "Elevation above sea level. {{Convert}} tags may be used to display English alongside metric measurements.",
+			"type": "string",
+			"required": false
+		},
+		"height": {
+			"label": "height",
+			"description": "Height of designated object, if applicable. Mostly used with statues, obelisks, and some buildings. {{Convert}} tags may be used to display English alongside metric measurements.",
+			"type": "string",
+			"required": false
+		},
+		"beginning_label": {
+			"label": "beginning label",
+			"description": "this parameter can be used in conjunction with beginning_date to show a customized date.",
+			"type": "string",
+			"required": false
+		},
+		"beginning_date": {
+			"label": "beginning date",
+			"description": "this parameter can be used in conjunction with beginning_label to show a customized date.",
+			"type": "string",
+			"required": false
+		},
+		"formed": {
+			"label": "formed",
+			"description": "If the site is a natural land formation or habitat, this parameter describes when it was formed.",
+			"type": "string",
+			"required": false
+		},
+		"founded": {
+			"label": "founded",
+			"description": "If the site is a city or locality which was founded by a group of people, this parameter describes when it was founded.",
+			"type": "string",
+			"required": false
+		},
+		"built": {
+			"label": "built",
+			"description": "If the site is a building or manmade structure, this parameter describes when it was built.",
+			"type": "string",
+			"required": false
+		},
+		"built_for": {
+			"label": "built for",
+			"description": "If a building or structure was built for a specific person (such as a king or queen) or organization, this parameter identifies them.",
+			"type": "string",
+			"required": false
+		},
+		"demolished": {
+			"label": "demolished",
+			"description": "If the site is no longer standing because it has been demolished, this is the date of demolition.",
+			"type": "string",
+			"required": false
+		},
+		"rebuilt": {
+			"label": "rebuilt",
+			"description": "If the site was rebuilt after being demolished or destroyed, this is the date the site was rebuilt.",
+			"type": "string",
+			"required": false
+		},
+		"restored": {
+			"label": "restored",
+			"description": "If the site was remodelled or restored to its original condition, this is the date of restoration.",
+			"type": "string",
+			"required": false
+		},
+		"restored_by": {
+			"label": "restored by",
+			"description": "The person who restored or remodelled the building.",
+			"type": "string",
+			"required": false
+		},
+		"architect": {
+			"label": "architect",
+			"description": "If the site is a building or manmade structure, this parameter names the architect. If Wikipedia contains an article about the architect, link to that article.",
+			"type": "string",
+			"required": false
+		},
+		"architecture": {
+			"label": "architecture",
+			"description": " If the site is a building or manmade structure, this parameter describes the architectural style. Links are encouraged.",
+			"type": "string",
+			"required": false
+		},
+		"visitors_num": {
+			"label": "visitors num",
+			"description": "Most recent figure describing the number of visitors to the site in a given year. If a specific year is not known, an estimated annual number of visitors can be included.",
+			"type": "string",
+			"required": false
+		},
+		"visitors_year": {
+			"label": "visitors year",
+			"description": "If a specific year was used for visitors_num, the year goes here. If there is a reference, include it in this parameter, making sure to properly format it.",
+			"type": "string",
+			"required": false
+		},
+		"governing_body": {
+			"label": "governing body",
+			"description": "Body that owns/operates the historic site. If there is a Wikipedia article about the governing body, link to it. If the site is owned by a local or national government, be sure to provide adequate regional information.",
+			"type": "string",
+			"required": false
+		},
+		"owner": {
+			"label": "owner",
+			"description": "owner",
+			"type": "string",
+			"required": false
+		},
+		"designation1": {
+			"label": "designation1",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_offname": {
+			"label": "designation1 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_type": {
+			"label": "designation1 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_criteria": {
+			"label": "designation1 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_date": {
+			"label": "designation1 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted1_date": {
+			"label": "delisted1 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_partof": {
+			"label": "designation1 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_number": {
+			"label": "designation1 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free1name": {
+			"label": "designation1 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free1value": {
+			"label": "designation1 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free2name": {
+			"label": "designation1 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free2value": {
+			"label": "designation1 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free3name": {
+			"label": "designation1 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation1_free3value": {
+			"label": "designation1 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation2": {
+			"label": "designation2",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_offname": {
+			"label": "designation2 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_type": {
+			"label": "designation2 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_criteria": {
+			"label": "designation2 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_date": {
+			"label": "designation2 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted2_date": {
+			"label": "delisted2 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_partof": {
+			"label": "designation2 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_number": {
+			"label": "designation2 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free1name": {
+			"label": "designation2 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free1value": {
+			"label": "designation2 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free2name": {
+			"label": "designation2 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free2value": {
+			"label": "designation2 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free3name": {
+			"label": "designation2 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation2_free3value": {
+			"label": "designation2 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation3": {
+			"label": "designation3",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_offname": {
+			"label": "designation3 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_type": {
+			"label": "designation3 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_criteria": {
+			"label": "designation3 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_date": {
+			"label": "designation3 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted3_date": {
+			"label": "delisted3 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_partof": {
+			"label": "designation3 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_number": {
+			"label": "designation3 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free1name": {
+			"label": "designation3 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free1value": {
+			"label": "designation3 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free2name": {
+			"label": "designation3 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free2value": {
+			"label": "designation3 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free3name": {
+			"label": "designation3 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation3_free3value": {
+			"label": "designation3 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation4": {
+			"label": "designation4",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_offname": {
+			"label": "designation4 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_type": {
+			"label": "designation4 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_criteria": {
+			"label": "designation4 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_date": {
+			"label": "designation4 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted4_date": {
+			"label": "delisted4 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_partof": {
+			"label": "designation4 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_number": {
+			"label": "designation4 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free1name": {
+			"label": "designation4 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free1value": {
+			"label": "designation4 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free2name": {
+			"label": "designation4 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free2value": {
+			"label": "designation4 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free3name": {
+			"label": "designation4 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation4_free3value": {
+			"label": "designation4 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation5": {
+			"label": "designation5",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_offname": {
+			"label": "designation5 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_type": {
+			"label": "designation5 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_criteria": {
+			"label": "designation5 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_date": {
+			"label": "designation5 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted5_date": {
+			"label": "delisted5 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_partof": {
+			"label": "designation5 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_number": {
+			"label": "designation5 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free1name": {
+			"label": "designation5 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free1value": {
+			"label": "designation5 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free2name": {
+			"label": "designation5 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free2value": {
+			"label": "designation5 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free3name": {
+			"label": "designation5 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation5_free3value": {
+			"label": "designation5 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+	},
+		"designation6": {
+			"label": "designation6",
+			"description": "Input the callname of the designation here. For a list of supported callnames, seeTemplate:Designation/doc#Supported designations.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_offname": {
+			"label": "designation6 offname",
+			"description": "The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_type": {
+			"label": "designation6 type",
+			"description": "Some registers have certain types of designations (i.e. 'Natural' and 'Cultural', 'Grade I' and 'Grade II', etc.). If the type is closely associated with the designation, input that type here.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_criteria": {
+			"label": "designation6 criteria",
+			"description": "Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_date": {
+			"label": "designation6 date",
+			"description": "Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).",
+			"type": "string",
+			"required": false
+		},
+		"delisted6_date": {
+			"label": "delisted6 date",
+			"description": "If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word 'Former' to the beginning. This parameter also needs a reference.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_partof": {
+			"label": "designation6 partof",
+			"description": "Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_number": {
+			"label": "designation6 number",
+			"description": "Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free1name": {
+			"label": "designation6 free1name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free1value": {
+			"label": "designation6 free1value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free2name": {
+			"label": "designation6 free2name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free2value": {
+			"label": "designation6 free2value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free3name": {
+			"label": "designation6 free3name",
+			"description": "The name (bolded part) of the 1st custom parameter you would like to identify.",
+			"type": "string",
+			"required": false
+		},
+		"designation6_free3value": {
+			"label": "designation6 free3value",
+			"description": "The value to which you want to set the custom parameter.",
+			"type": "string",
+			"required": false
+		}
+	},
+	"format": "block"
+}
+</templatedata>
+{{Collapse bottom}}
+
+==See also==
+*[[Template:Infobox ancient site]]
+*[[Template:Infobox NRHP]]
+{{Buildings and structures infobox templates}}
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Buildings and structures infobox templates|Historic Site]]
+[[Category:Place infobox templates|Historic site]]
+[[Category:History and events infobox templates|Historic site]]
+[[Category:Templates with coordinates fields]]
+[[Category:Embeddable templates]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
