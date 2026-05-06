@@ -10,9 +10,13 @@ in ``shinto_miraheze/orchestrators/duplicate_qids.state`` (JSON). This
 renderer groups that dict by QID and writes any QID claimed by more
 than one title to the report page.
 
-No wiki scan happens here — everything is read from the state file
-accumulated by the four orchestrators. Runs ONCE per cleanup-loop
-cycle, after the last orchestrator (miscellaneous) finishes.
+Before rendering, every title in a duplicate group is re-verified
+against the live wiki — entries that are now redirects, deleted, or
+no longer carry ``{{wikidata link|Q...}}`` are pruned from the state.
+Without this, the orchestrators' slow per-namespace sweep (capped at
+1000 pages/run) leaves stale entries on the report for many cycles
+after a merge or deletion, and deleted pages NEVER get cleaned up by
+the orchestrator (the per-page op is skipped for non-existent pages).
 
 Standard flags: ``--apply`` (default dry-run), ``--max-edits`` (always
 1 — there is one write, to the report page), ``--run-tag``.
@@ -22,6 +26,7 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 import time
 from collections import defaultdict
@@ -29,6 +34,15 @@ from collections import defaultdict
 import mwclient
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+WDLINK_RE = re.compile(r"\{\{\s*wikidata\s*link\s*\|\s*(Q\d+)", re.IGNORECASE)
+# Light read throttle for the verification pass — dozens to a few
+# hundred titles in batches of 50 is small compared to the per-page
+# orchestrator walks, but we still pace API queries.
+READ_THROTTLE = 0.3
+# Max titles per `query&titles=...` API call. MediaWiki accepts up to
+# 50 for normal users, 500 for bots. EmmaBot has the bot flag.
+QUERY_BATCH = 50
 
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL = "shinto.miraheze.org"
@@ -77,6 +91,112 @@ def build_report(duplicates, total_tracked, unique_qids):
     return "\n".join(lines) + "\n"
 
 
+def verify_duplicate_groups(site, state: dict) -> tuple[dict, dict]:
+    """Re-check every title that's part of a duplicate group against the
+    live wiki. Mutates and returns (cleaned_state, stats).
+
+    For each suspect title we ask: does the page exist, is it a hard
+    redirect, and what QID (if any) does its current ``{{wikidata
+    link|...}}`` template carry? Then:
+
+      - missing/deleted page  → drop entry
+      - hard redirect         → drop entry (it isn't a real duplicate any
+                                 more — the merge succeeded)
+      - no wikidata link      → drop entry
+      - different QID         → update entry to the current QID
+      - same QID, real page   → keep
+
+    Done in batches of QUERY_BATCH titles per API call, with a small
+    READ_THROTTLE between calls so this stays well under the wiki's
+    read budget.
+    """
+    qid_to_pages: dict[str, list[str]] = defaultdict(list)
+    for title, qid in state.items():
+        qid_to_pages[qid].append(title)
+    suspect_titles = sorted(
+        {t for ts in qid_to_pages.values() if len(ts) > 1 for t in ts}
+    )
+    stats = {"checked": len(suspect_titles), "removed_missing": 0,
+             "removed_redirect": 0, "removed_no_link": 0,
+             "updated_qid": 0, "kept": 0}
+    if not suspect_titles:
+        return state, stats
+
+    print(f"Verifying {len(suspect_titles)} titles across "
+          f"{sum(1 for ts in qid_to_pages.values() if len(ts) > 1)} "
+          f"duplicate groups against live wiki")
+
+    for i in range(0, len(suspect_titles), QUERY_BATCH):
+        batch = suspect_titles[i:i + QUERY_BATCH]
+        try:
+            result = site.api(
+                "query",
+                titles="|".join(batch),
+                prop="info|revisions",
+                rvprop="content",
+                rvslots="main",
+                # NOTE: do NOT set redirects=1. We want to see the redirect
+                # page itself (so we can detect "this title is now a
+                # redirect"), not silently follow to the target.
+                formatversion="2",
+            )
+        except Exception as e:
+            print(f"  API error on batch {i // QUERY_BATCH}: {e}; "
+                  f"skipping {len(batch)} titles this run")
+            time.sleep(READ_THROTTLE)
+            continue
+
+        seen_titles: set[str] = set()
+        for page in result.get("query", {}).get("pages", []):
+            title = page.get("title", "")
+            seen_titles.add(title)
+            if page.get("missing"):
+                if title in state:
+                    state.pop(title, None)
+                    stats["removed_missing"] += 1
+                continue
+            if "redirect" in page:
+                if title in state:
+                    state.pop(title, None)
+                    stats["removed_redirect"] += 1
+                continue
+            revs = page.get("revisions") or []
+            content = ""
+            if revs:
+                slots = revs[0].get("slots") or {}
+                main = slots.get("main") or {}
+                content = main.get("content", "") or revs[0].get("content", "") or ""
+            m = WDLINK_RE.search(content)
+            if not m:
+                if title in state:
+                    state.pop(title, None)
+                    stats["removed_no_link"] += 1
+                continue
+            current_qid = m.group(1).upper()
+            if state.get(title) != current_qid:
+                state[title] = current_qid
+                stats["updated_qid"] += 1
+            else:
+                stats["kept"] += 1
+
+        # Titles the API didn't return at all (rare — usually a
+        # normalization mismatch). Treat as missing so they don't
+        # linger forever.
+        for t in batch:
+            if t not in seen_titles and t in state:
+                state.pop(t, None)
+                stats["removed_missing"] += 1
+
+        time.sleep(READ_THROTTLE)
+
+    return state, stats
+
+
+def save_state(path: str, state: dict) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
 def load_state(path: str) -> dict:
     if not os.path.exists(path):
         print(f"State file not found: {path}")
@@ -102,12 +222,40 @@ def main():
     args = parser.parse_args()
 
     state = load_state(STATE_FILE)
-    total_tracked = len(state)
+    print(f"Loaded state: {len(state)} tracked titles before verification")
 
+    # Login before verification — the verification pass needs API
+    # access, and we want the same Site for the eventual report save.
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+    site.connection.timeout = 120
+    site.login(USERNAME, PASSWORD)
+    print(f"Logged in as {USERNAME}")
+
+    # Re-verify every title in any duplicate group against the live
+    # wiki and prune stale entries. Without this, redirects/deletions
+    # from completed merges linger on the report for many cycles
+    # (deletions never resolve, since the orchestrator's per-page op
+    # is skipped for non-existent pages).
+    state, verify_stats = verify_duplicate_groups(site, state)
+    print(f"Verification: checked={verify_stats['checked']} "
+          f"removed_missing={verify_stats['removed_missing']} "
+          f"removed_redirect={verify_stats['removed_redirect']} "
+          f"removed_no_link={verify_stats['removed_no_link']} "
+          f"updated_qid={verify_stats['updated_qid']} "
+          f"kept={verify_stats['kept']}")
+    if any(verify_stats[k] for k in
+           ("removed_missing", "removed_redirect",
+            "removed_no_link", "updated_qid")):
+        if args.apply:
+            save_state(STATE_FILE, state)
+            print(f"Saved cleaned state: {len(state)} tracked titles")
+        else:
+            print(f"[DRY] would save cleaned state: {len(state)} tracked titles")
+
+    total_tracked = len(state)
     qid_to_pages: dict[str, list[str]] = defaultdict(list)
     for title, qid in state.items():
         qid_to_pages[qid].append(title)
-
     duplicates = {q: ps for q, ps in qid_to_pages.items() if len(ps) > 1}
     unique_qids = len(qid_to_pages)
 
@@ -120,11 +268,6 @@ def main():
     if not args.apply:
         print(f"[DRY] would write {len(duplicates)} dupe entries to [[{REPORT_TITLE}]]")
         return
-
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
-    site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
-    print(f"Logged in as {USERNAME}")
 
     page = site.pages[REPORT_TITLE]
     summary = (f"Bot: refresh duplicate page QID report "
