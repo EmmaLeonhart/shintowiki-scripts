@@ -27,6 +27,10 @@ jobs:
         working-directory: modern-quickstatements
         run: python fetch_p11250_from_wiki.py
 
+      - name: Fetch P6262 from wiki
+        working-directory: modern-quickstatements
+        run: python fetch_p6262_from_wiki.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         continue-on-error: true

@@ -39,6 +39,7 @@ ATOMIC_FILES = [
     "remove_shikinaisha.txt",
     "engishiki_add_references.txt",
     "p11250_miraheze_links.txt",
+    "p6262_fandom_links.txt",
 ]
 
 
