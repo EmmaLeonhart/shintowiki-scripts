@@ -17,6 +17,24 @@ Practical effects landing in subsequent commits:
 * The `Currently double category qids` review buffer (added below) and the Japanese-cat drain logic become the long-running cleanup pattern, replacing one-shot bulk migrations.
 * `status.md` archive-push window section is removed — the work it was tracking is done or no longer relevant.
 
+### Resolver was actually hanging on a 1MB / 19,320-link audit page that contaminated the source category (timeout fix wasn't enough)
+**Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
+**Status:** Fixed (the real bug)
+
+The `site.connection.timeout = 120` fix from a prior commit didn't help — runs still ran for hours with one wiki edit (the stage marker) and nothing else. After the timeout fix landed, run `25410343874`'s resolver step started 02:00:23 UTC and stayed `in_progress` ~3.5+ hours with the same signature.
+
+Real cause: the FIRST page in `[[Category:Double category qids]]` alphabetically is `[[Double category QIDs audit]]` — a 1MB page with **19,320** `[[:...]]` links. It was written there at some point by the disabled `audit_double_category_qids.py` script, before that script was disabled for being unbounded. My resolver iterated this page first, ran `LINK_RE.findall()` (got 19,320 hits), then called `resolve_final_target` on each — 2+ API calls × 0.3s sleep × 19,320 ≈ 2.7 hours per resolver call, all on one page, never reaching `--max-edits` because zero edits were being made.
+
+Three layered fixes:
+
+1. **QID-only filter in `collect_pages`.** Real dab pages are by definition `Q\d+` named (the generator script writes them at QID titles). Filter to `^Q\d+$`; everything else is contamination. The audit page's title `Double category QIDs audit` doesn't match and is dropped at enumeration time.
+
+2. **`MAX_LINKS_PER_PAGE = 20` defensive cap.** Real dab pages have 2–5 links. Anything with hundreds is misplaced content. Skip-and-add-to-state on overflow so we never try to resolve thousands of links again.
+
+3. **State file (`resolve_double_category_qids.state`).** Tracks titles already resolved (or skip-decided), so subsequent runs don't re-iterate the alphabetically-first pages of the source cat. Same pattern as the other legacy scripts; picked up by `commit_state.sh` automatically.
+
+Multi-target/drain pages are deliberately *not* added to state — they need re-visiting on subsequent cycles to detect when the unused-cat sweep has finally cleaned up the Japanese cat.
+
 ### Resolver hung on first push-triggered run — missing `site.connection.timeout`
 **Scripts:** `shinto_miraheze/resolve_double_category_qids.py`
 **Status:** Fixed
