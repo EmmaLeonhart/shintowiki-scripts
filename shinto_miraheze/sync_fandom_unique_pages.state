@@ -722,5 +722,205 @@
   "Template:Infobox pharaoh/doc": {
     "revid": 1999633,
     "sha": "7260947dd2379b86daa406453d3897ade5ec1ee5"
+  },
+  "Template:Infobox philosopher": {
+    "revid": 1999648,
+    "sha": "6f6a48328418eca28d1ef7d409f9ee584c7122f2"
+  },
+  "Template:Infobox philosopher/doc": {
+    "revid": 1999649,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox political system": {
+    "revid": 1999650,
+    "sha": "b6e5aede4a99059c16f0e6ae903abc802473d531"
+  },
+  "Template:Infobox politician": {
+    "revid": 1999651,
+    "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
+  },
+  "Template:Infobox power station": {
+    "revid": 1999652,
+    "sha": "0c9251addc0d6b69a3d140bb2dafd4dd18e9eed6"
+  },
+  "Template:Infobox power station/doc": {
+    "revid": 1999653,
+    "sha": "c0294a67136d55e1a33273b16d50d37cadcbe9a3"
+  },
+  "Template:Infobox prepared food": {
+    "revid": 1999654,
+    "sha": "627448bc7549ca6314c3ef6310ba47572c7b551e"
+  },
+  "Template:Infobox programming language": {
+    "revid": 1999655,
+    "sha": "131e29b342ac14d465248f9db4de376be7cadf4c"
+  },
+  "Template:Infobox programming language/doc": {
+    "revid": 1999656,
+    "sha": "bc17640e00146ad5447fb1a60eead3b7f5223b91"
+  },
+  "Template:Infobox publisher": {
+    "revid": 1999657,
+    "sha": "eaa3c88f227b6ba15ecc5cb53b1d1de8a239dd4c"
+  },
+  "Template:Infobox publisher2": {
+    "revid": 1999658,
+    "sha": "6f99f4273d5a28473aeed9cefcbc88fe6373ffa7"
+  },
+  "Template:Infobox recurring event": {
+    "revid": 1999659,
+    "sha": "d4647a08e817f430c26974ec4dd39e1079d6ebe1"
+  },
+  "Template:Infobox religion": {
+    "revid": 1999660,
+    "sha": "6ceac95e87f8f319fe7c375944c5b4edf68818ac"
+  },
+  "Template:Infobox religion/doc": {
+    "revid": 1999661,
+    "sha": "8a72d97b502c490ab3d9cc2f38cdb42ddc505011"
+  },
+  "Template:Infobox religious biography": {
+    "revid": 1999662,
+    "sha": "ca2a0ff9795fa1d960e37e6dae4b16a9c83c3250"
+  },
+  "Template:Infobox religious biography/doc": {
+    "revid": 1999663,
+    "sha": "2007cc0d0509187b1d8bca454c1492f46839695f"
+  },
+  "Template:Infobox religious building": {
+    "revid": 1999664,
+    "sha": "8f687e34f5168877d64beda97fbc9759d62ff742"
+  },
+  "Template:Infobox religious building/color/doc": {
+    "revid": 1999665,
+    "sha": "6c607aea8f9d03fb12f52775e44d321b7513c5a6"
+  },
+  "Template:Infobox religious building/color/test/doc": {
+    "revid": 1999666,
+    "sha": "2007cc0d0509187b1d8bca454c1492f46839695f"
+  },
+  "Template:Infobox religious building/color/testtable": {
+    "revid": 1999667,
+    "sha": "18d3f107644b0ec98c9276c617c4ee8d0ac07de1"
+  },
+  "Template:Infobox religious building/doc": {
+    "revid": 1999668,
+    "sha": "c406ca786827e3456b652cf8000b93ceefd04522"
+  },
+  "Template:Infobox river": {
+    "revid": 1999669,
+    "sha": "55b2d4ae79b034229306ac65b5d2ffd5d770b93e"
+  },
+  "Template:Infobox river/calcunit": {
+    "revid": 1999670,
+    "sha": "5ea372179f06847a418b4eeb2dde31478a613773"
+  },
+  "Template:Infobox river/discharge": {
+    "revid": 1999671,
+    "sha": "1b85e0628592f7af5028925d1900bdad18880eab"
+  },
+  "Template:Infobox river/discharge/doc": {
+    "revid": 1999672,
+    "sha": "9adea25760d33bc19fdd4ca754887e5827d0ab46"
+  },
+  "Template:Infobox river/doc": {
+    "revid": 1999673,
+    "sha": "acbe19a33fe3bc7909ab806adb2ad2c774aec1b2"
+  },
+  "Template:Infobox river/row-style": {
+    "revid": 1999674,
+    "sha": "f21886b01972dd8561abad65f81be4699aa95cdc"
+  },
+  "Template:Infobox river/source": {
+    "revid": 1999675,
+    "sha": "f9e24caa87e647eb1ac51fd88b3683bf2a63a305"
+  },
+  "Template:Infobox road": {
+    "revid": 1999676,
+    "sha": "674ab8a8c80375f721433bc6b1c286ae7894456e"
+  },
+  "Template:Infobox road/doc": {
+    "revid": 1999677,
+    "sha": "a01f452e2343bb693ca47e329ed5a5e9d6f1e1d5"
+  },
+  "Template:Infobox road/meta/mask/category": {
+    "revid": 1999678,
+    "sha": "ceb7cc643a03f0f3deba0a0fb5fd14e0dc6f787a"
+  },
+  "Template:Infobox road/meta/mask/country": {
+    "revid": 1999679,
+    "sha": "ae3e463501ec4a8136d7d9ef22381f1d98f0c2de"
+  },
+  "Template:Infobox royal styles": {
+    "revid": 1999680,
+    "sha": "550964071eb1691ef0d324bcff69e70fa1b4e4f0"
+  },
+  "Template:Infobox royal styles/doc": {
+    "revid": 1999681,
+    "sha": "c77a3c8c6405c23ef9111c46f11b226ea24f04df"
+  },
+  "Template:Infobox royalty": {
+    "revid": 1999682,
+    "sha": "0e071aa09490c4692e97b51cde640b5296394255"
+  },
+  "Template:Infobox royalty/doc": {
+    "revid": 1999683,
+    "sha": "075fadb8868d194a505ff10c218779cd456174ab"
+  },
+  "Template:Infobox saint": {
+    "revid": 1999684,
+    "sha": "0ac7e2c795907e3bb5c7d30d2af67e165b3c13f8"
+  },
+  "Template:Infobox saint/doc": {
+    "revid": 1999685,
+    "sha": "0825db12694d42dedb1f60a52f2f00247af959e8"
+  },
+  "Template:Infobox samurai": {
+    "revid": 1999686,
+    "sha": "d4647a08e817f430c26974ec4dd39e1079d6ebe1"
+  },
+  "Template:Infobox settlement": {
+    "revid": 1999687,
+    "sha": "3089f403ae6b6db8e10c68d7dd85eac18681772a"
+  },
+  "Template:Infobox settlement/areadisp": {
+    "revid": 1999688,
+    "sha": "83e7f6747eadfc176fbfb02dc13629272e149760"
+  },
+  "Template:Infobox settlement/areadisp/doc": {
+    "revid": 1999689,
+    "sha": "2007cc0d0509187b1d8bca454c1492f46839695f"
+  },
+  "Template:Infobox settlement/densdisp": {
+    "revid": 1999690,
+    "sha": "7eaf4e3fe05fc4b76071d61325989b8cc499c07c"
+  },
+  "Template:Infobox settlement/densdisp/doc": {
+    "revid": 1999691,
+    "sha": "2007cc0d0509187b1d8bca454c1492f46839695f"
+  },
+  "Template:Infobox settlement/doc": {
+    "revid": 1999692,
+    "sha": "2007cc0d0509187b1d8bca454c1492f46839695f"
+  },
+  "Template:Infobox settlement/lengthdisp": {
+    "revid": 1999693,
+    "sha": "a6b9f1038149c6c381efa75d5b1030b17d039ac8"
+  },
+  "Template:Infobox settlement/lengthdisp/doc": {
+    "revid": 1999694,
+    "sha": "e9f1af330274b4fbd3a4ea39bb36dbd858f60684"
+  },
+  "Template:Infobox settlement/link": {
+    "revid": 1999695,
+    "sha": "1fa0bfba904470f32c28d38d972524706d1393df"
+  },
+  "Template:Infobox settlement/link/doc": {
+    "revid": 1999696,
+    "sha": "aa269a14bfcb2440c4136db9589fc26f0a205efe"
+  },
+  "Template:Infobox/doc": {
+    "revid": 1999647,
+    "sha": "26cae3869c26564545c06c07ead980d187fc0d6a"
   }
 }
