@@ -72,8 +72,8 @@
     "sha": "c7864b021079aa1d0f6f7c52403a01ccd6334ee5"
   },
   "Danbara Kofun": {
-    "revid": 3670262,
-    "sha": "001c087dd7960367cf17d8f0a4b3cdb4ae87ebb5"
+    "revid": 3712656,
+    "sha": "421208c2e6f7aaa98d9eb25993dd2648c12f7f71"
   },
   "Engishiki Ranks": {
     "revid": 3670678,
@@ -128,8 +128,8 @@
     "sha": "02a2619d2957a37e6bf8da7e440dca8618c35048"
   },
   "Hijiri Shrine (Izumi, Osaka)": {
-    "revid": 3674413,
-    "sha": "4fde272d9bdf9df745f3c32075ff2e3b7f8de7a4"
+    "revid": 3713185,
+    "sha": "d7db00319097facb22c29d1eb629bf06ed8ec28f"
   },
   "Himukai-daijingū": {
     "revid": 3710105,
@@ -156,8 +156,8 @@
     "sha": "e4e4f653408ce800416697b91408a81bc1af2b09"
   },
   "Iino Hachimangū": {
-    "revid": 3676500,
-    "sha": "5d140ce14c6a9b5f3c3a05b08d94cc999a6be37c"
+    "revid": 3713189,
+    "sha": "c5700439caedd5595e3ece3256b728268e86d39f"
   },
   "Iizuna Shrine (Mount Iizuna)": {
     "revid": 3707737,
@@ -308,12 +308,12 @@
     "sha": "390bc6ecee83b81f31168530ae5ccf29be165eb9"
   },
   "Kurume Suitengū": {
-    "revid": 3708266,
-    "sha": "dc5b5d9399d2928c50771e4a869a23c538048871"
+    "revid": 3713161,
+    "sha": "98fb041a35e9b44122e5e8d237558abb7200fd0b"
   },
   "Kushihiki Hachimangū": {
-    "revid": 3708274,
-    "sha": "932745776fb5e7083fceab50188d8f5ad66f79a8"
+    "revid": 3713193,
+    "sha": "20caa58764b900a07fe10249701e7a9cb0437d0b"
   },
   "List of Shikinaisha in Awa Province": {
     "revid": 3701146,
@@ -336,20 +336,20 @@
     "sha": "75fd25ea3ff79d3593cab352ce1f8d9dfe6e9c4e"
   },
   "Mononobe Shrine (Kashiwazaki)": {
-    "revid": 3687087,
-    "sha": "26d8aa1d00e13d1ea49cb9075208f0250a9b24bb"
+    "revid": 3712403,
+    "sha": "9b7877b53bdac68b9516185a057ad7aa97e778a4"
   },
   "Mononobe Shrine (Nagoya)": {
-    "revid": 3708453,
-    "sha": "86479f800b136473b348782d11f41839112e111a"
+    "revid": 3712393,
+    "sha": "647bee2fa2751fb7c006359fb8f61a37353b042e"
   },
   "Mononobe Shrine (Oda)": {
-    "revid": 3708454,
-    "sha": "d6c135f99932c25153bfb3318c381849a8108f03"
+    "revid": 3712396,
+    "sha": "c3f330c8cf0a592b305389b07e50d85213832769"
   },
   "Mononobe Shrine (Ōda)": {
-    "revid": 3708455,
-    "sha": "4ca14db51e3fe4b8a9511115dad1f11f30a2d002"
+    "revid": 3712397,
+    "sha": "000452e62fad539cb94378eb211436869927490f"
   },
   "Mount Goken": {
     "revid": 3708465,
@@ -488,12 +488,16 @@
     "sha": "3507c932f0a659c699553f0671e46dd71310dee9"
   },
   "Ōku no Kuni no Miyatsuko": {
-    "revid": 3663223,
-    "sha": "6d764263147b02ebb7877a4ea97b0aeb24e36e92"
+    "revid": 3712416,
+    "sha": "7ed8ec07082cc4c109be9ccd40ab085580993ba9"
   },
   "Ōmi no Kuni no Miyatsuko": {
     "revid": 3663265,
     "sha": "e73a5b02de5baff8bf1235c8a433ee184a4984e3"
+  },
+  "Ōshikōchi clan": {
+    "revid": 3712422,
+    "sha": "30270a4e08b8f959f83a6906cf305d863b82018e"
   },
   "Ōyamato Shrine": {
     "revid": 3709734,
@@ -508,8 +512,8 @@
     "sha": "d251973f763dc3450296b6df424320cbb46e6e5a"
   },
   "三野後国造": {
-    "revid": 3664684,
-    "sha": "8fb6f365e1effff5108348fb967331581eee6839"
+    "revid": 3712392,
+    "sha": "c607dbae014d483dee3e3c7dc1d8adfcb8e38845"
   },
   "上毛野国造": {
     "revid": 3664686,
@@ -570,10 +574,6 @@
   "凡河内国造": {
     "revid": 3664756,
     "sha": "a36f1aa75b0344da38939596252865659acaa645"
-  },
-  "凡河内氏": {
-    "revid": 3664759,
-    "sha": "960b340967fe5c4d6d08c933a179cdaa6047e4d7"
   },
   "凡河内香賜": {
     "revid": 3664762,
@@ -736,16 +736,16 @@
     "sha": "3a1f688b96d5e409af46cf9cc6267a3f5e2e5143"
   },
   "熊野国造": {
-    "revid": 3664897,
-    "sha": "7bb33498f7d12933321f75b5623dde4f07f9f8e7"
+    "revid": 3712388,
+    "sha": "c4ef9fc21ee16bfd2d54833d93954909e298194a"
   },
   "牟義都国造": {
     "revid": 3664900,
     "sha": "b249ca7de4c1ac398b5d4ef5d8c50d3bdff8ce62"
   },
   "珠流河国造": {
-    "revid": 3664903,
-    "sha": "5c961074e1644bc3d2e7747adf8063556be2ba60"
+    "revid": 3712390,
+    "sha": "fb52e03b4b35bb625d80dc487e1b99c477808f70"
   },
   "甘露の法雨": {
     "revid": 3664905,
@@ -776,8 +776,8 @@
     "sha": "38139acb8eb6bf410a9f587b1ca1d52e307cd314"
   },
   "素賀国造": {
-    "revid": 3664938,
-    "sha": "517b0f71650e52c5940370653c5169958caf8652"
+    "revid": 3712389,
+    "sha": "8786d6aa8c89a7bfacb87432f7f6fda149aa11e8"
   },
   "胸刺国造": {
     "revid": 3664941,
@@ -808,8 +808,8 @@
     "sha": "b5cc970839cecdf0a7d348f1170b2c25b8cc56cd"
   },
   "遠淡海国造": {
-    "revid": 3664969,
-    "sha": "268880f17ded091fa246a5759f2c2913dbe4c80c"
+    "revid": 3712391,
+    "sha": "5f2aba65e348b2407fc5737116332d1a17e8b81e"
   },
   "那須国造": {
     "revid": 3664972,
