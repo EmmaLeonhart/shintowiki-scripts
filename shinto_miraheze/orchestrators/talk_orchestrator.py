@@ -27,6 +27,7 @@ from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
+    ill_category_to_link,
     interlang_consolidate,
     strip_html_comments,
     wikidata_lookup,
@@ -50,7 +51,7 @@ TALK_NAMESPACES: list[tuple[int, str]] = [
     (863, "property_talk"),
 ]
 
-OPS = [strip_html_comments, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
+OPS = [strip_html_comments, ill_category_to_link, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
 
 STATE_NAME = "talk_orchestrator"
 CURSOR_NAME = "talk_orchestrator_cursor"

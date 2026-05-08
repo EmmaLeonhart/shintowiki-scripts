@@ -14,6 +14,7 @@ from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
+    ill_category_to_link,
     interlang_consolidate,
     normalize_category_page,
     remove_legacy_cat_templates,
@@ -32,6 +33,7 @@ from shinto_miraheze.orchestrators.ops import (
 # stripped templates don't end up in the normalized output.
 OPS = [
     strip_html_comments,
+    ill_category_to_link,
     interlang_consolidate,
     wikidata_lookup,
     history_offload,
