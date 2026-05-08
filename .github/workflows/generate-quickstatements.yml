@@ -31,6 +31,10 @@ jobs:
         working-directory: modern-quickstatements
         run: python fetch_p6262_from_wiki.py
 
+      - name: Fetch en-labels from wiki
+        working-directory: modern-quickstatements
+        run: python fetch_en_labels_from_wiki.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         continue-on-error: true
