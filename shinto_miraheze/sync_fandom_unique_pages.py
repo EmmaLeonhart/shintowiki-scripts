@@ -351,7 +351,16 @@ def main():
     print(f"Skipped (edit limit):            {skipped}")
     print(f"Conflicts (repo wins):           {conflicts}")
     print(f"Errors:                          {errors}")
-    return 0 if errors == 0 else 1
+    # Per-page save failures (e.g. Fandom's Maps extension rejecting a save
+    # because an <embedmap> on the page references a map that doesn't exist
+    # — fandom-side data quality, not something we can fix from the bot)
+    # are best-effort: surfaced in the printed summary, but they must not
+    # fail the workflow. Otherwise a single broken remote page blocks the
+    # entire daily sync indefinitely. Infrastructure-level failures (login
+    # error, network outage) raise out unhandled and crash the script,
+    # which is the right behavior. Mirrors the policy already used by
+    # sync_miraheze_unique_pages.py.
+    return 0
 
 
 if __name__ == "__main__":
