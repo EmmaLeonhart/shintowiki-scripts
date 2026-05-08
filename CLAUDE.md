@@ -40,14 +40,32 @@ Every step is reversible by a human, but no step requires a human.
 
 ## Orchestrators (the load-bearing model)
 
-Four per-page orchestrators sweep every wikitext namespace:
+Twelve per-page orchestrators sweep every wikitext namespace:
 
 | Orchestrator | Namespace(s) | State file |
 |---|---|---|
 | `mainspace_orchestrator`  | 0 | `orchestrators/mainspace_orchestrator.state` |
 | `category_orchestrator`   | 14 | `orchestrators/category_orchestrator.state` |
 | `template_orchestrator`   | 10 | `orchestrators/template_orchestrator.state` |
-| `miscellaneous_orchestrator` | 2, 4, 6, 12, 420, 828, 860, 862 (subject-side only; talk excluded; ns=8 MediaWiki excluded as too sensitive; last four are non-wikitext — history_offload only, no banner) | `orchestrators/misc_orchestrator.state` + `misc_orchestrator_cursor.state` |
+| `user_orchestrator`       | 2 | `orchestrators/user_orchestrator.state` |
+| `project_orchestrator`    | 4 | `orchestrators/project_orchestrator.state` |
+| `file_orchestrator`       | 6 | `orchestrators/file_orchestrator.state` |
+| `help_orchestrator`       | 12 | `orchestrators/help_orchestrator.state` |
+| `geojson_orchestrator`    | 420 (non-wikitext — history_offload only, no banner) | `orchestrators/geojson_orchestrator.state` |
+| `module_orchestrator`     | 828 (non-wikitext — Lua/Scribunto) | `orchestrators/module_orchestrator.state` |
+| `item_orchestrator`       | 860 (non-wikitext — Wikibase Item) | `orchestrators/item_orchestrator.state` |
+| `property_orchestrator`   | 862 (non-wikitext — Wikibase Property) | `orchestrators/property_orchestrator.state` |
+| `talk_orchestrator`       | 1, 3, 5, 7, 9, 11, 13, 15, 421, 829, 861, 863 (all 12 talk namespaces share one budget; low-stakes content) | `orchestrators/talk_orchestrator.state` + `talk_orchestrator_cursor.state` |
+
+ns=8 MediaWiki is intentionally excluded from every orchestrator —
+interface messages and system pages there are too sensitive to touch
+with the space-saving ops.
+
+Per-namespace edit budgets are set in `cleanup-loop.yml`'s window-gate:
+mainspace 100, template 100, category 500 (catch-up window 2026-04-23 →
+2026-06-01: it has never completed a full cycle), and each misc
+namespace 10. The 9 misc orchestrators (8 subject-side + talk) cost ~80
+edits per cleanup-loop fire combined.
 
 Each orchestrator walks `allpages(ns)` and runs every op in its `OPS`
 list against every non-redirect page. Ops are either:

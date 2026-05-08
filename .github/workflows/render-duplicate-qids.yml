@@ -1,0 +1,63 @@
+name: Render Duplicate QIDs
+
+# Renders the duplicate-QIDs wiki report from the shared dict that the
+# `duplicate_qids` op populates across every orchestrator. Must run
+# AFTER all orchestrators have finished their sweep so the dict reflects
+# the whole wiki, not just one namespace.
+#
+# Previously this step lived inline at the end of
+# miscellaneous-orchestrator.yml. After that workflow was split into
+# per-namespace orchestrators, this step was extracted to its own
+# workflow so it can be invoked once at the end of the chain.
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch, not trigger SHA)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh shinto_miraheze/run_step.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: "Render: find_duplicate_page_qids"
+        run: |
+          shinto_miraheze/run_step.sh "Render: find_duplicate_page_qids" \
+            python3 shinto_miraheze/find_duplicate_page_qids.py --apply --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Render Duplicate QIDs"
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Render Duplicate QIDs"

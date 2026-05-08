@@ -58,12 +58,18 @@ jobs:
     steps:
       - id: check
         run: |
-          # Per-orchestrator edit limits. Uniform 100/run baseline.
+          # Per-orchestrator edit limits. Mainspace/template at 100,
+          # category at 500 (catch-up window 2026-04-23 → 2026-06-01: it
+          # has never completed a full cycle and growth is slow). The
+          # per-namespace misc orchestrators (user/project/file/help/
+          # geojson/module/item/property/talk) each take 10/run via the
+          # ns-orchestrator-runner; misc-edit-limit below is just the
+          # uniform per-namespace cap.
           echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
           echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
-          echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
-          echo "misc-edit-limit=100"      >> "$GITHUB_OUTPUT"
-          echo "Default: uniform 100 budget per orchestrator."
+          echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
+          echo "misc-edit-limit=10"       >> "$GITHUB_OUTPUT"
+          echo "Default: mainspace/template 100, category 500 (catch-up), misc 10/ns."
 
           # Wikidata-edit daily gate: only fire on 00:00 UTC schedule, or
           # on any non-schedule trigger (workflow_dispatch / push).
@@ -158,14 +164,19 @@ jobs:
       edit_limit: ${{ needs.window-gate.outputs.template-edit-limit }}
     secrets: inherit
 
-  # Sweeps every other wikitext namespace (User, Talk, Project, File,
-  # MediaWiki, Help, and all remaining Talk spaces) with one shared
-  # edit budget. Runs last among the orchestrators.
-  miscellaneous-orchestrator:
+  # Per-namespace orchestrators for the misc namespaces. Replaces the
+  # old monolithic miscellaneous-orchestrator (which swept 9 namespaces
+  # under one shared budget) with one orchestrator per namespace, each
+  # at 10 edits/run. Talk pages are bundled into a single orchestrator
+  # (low-stakes, 12 talk namespaces sharing one budget). MediaWiki (ns=8)
+  # is intentionally excluded — interface messages too sensitive.
+  user-orchestrator:
     needs: [window-gate, template-orchestrator]
     if: always()
-    uses: ./.github/workflows/miscellaneous-orchestrator.yml
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
     with:
+      module_name: user_orchestrator
+      display_name: "User Orchestrator"
       enable_history_offload: true
       enable_revdel: true
       enable_fandom_mirror: true
@@ -173,9 +184,134 @@ jobs:
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
+  project-orchestrator:
+    needs: [window-gate, user-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: project_orchestrator
+      display_name: "Project Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  file-orchestrator:
+    needs: [window-gate, project-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: file_orchestrator
+      display_name: "File Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  help-orchestrator:
+    needs: [window-gate, file-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: help_orchestrator
+      display_name: "Help Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  geojson-orchestrator:
+    needs: [window-gate, help-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: geojson_orchestrator
+      display_name: "GeoJson Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  module-orchestrator:
+    needs: [window-gate, geojson-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: module_orchestrator
+      display_name: "Module Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  item-orchestrator:
+    needs: [window-gate, module-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: item_orchestrator
+      display_name: "Item Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  property-orchestrator:
+    needs: [window-gate, item-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: property_orchestrator
+      display_name: "Property Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  # Talk pages combined: 12 talk namespaces share one 10-edit budget,
+  # cycling via talk_orchestrator_cursor.state. Last orchestrator in the
+  # chain — the duplicate-QIDs render that follows depends on every
+  # orchestrator having finished its sweep.
+  talk-orchestrator:
+    needs: [window-gate, property-orchestrator]
+    if: always()
+    uses: ./.github/workflows/ns-orchestrator-runner.yml
+    with:
+      module_name: talk_orchestrator
+      display_name: "Talk Orchestrator"
+      enable_history_offload: true
+      enable_revdel: true
+      enable_fandom_mirror: true
+      enable_interlang_consolidate: true
+      edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
+    secrets: inherit
+
+  # Render duplicate-QIDs wiki report from the shared dict populated by
+  # every orchestrator's duplicate_qids op. Must run after the last
+  # orchestrator in the chain so the dict is whole-wiki, not partial.
+  render-duplicate-qids:
+    needs: [window-gate, talk-orchestrator]
+    if: always()
+    uses: ./.github/workflows/render-duplicate-qids.yml
+    secrets: inherit
+
   # Random delay only on cron schedule, not on push.
   random-wait:
-    needs: [window-gate, miscellaneous-orchestrator]
+    needs: [window-gate, render-duplicate-qids]
     if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
 
@@ -183,7 +319,7 @@ jobs:
   # On cron: submit after random wait
   # Daily-fire gate keeps total wikidata edits/day bounded.
   submit-quickstatements:
-    needs: [window-gate, miscellaneous-orchestrator, random-wait, cleanup]
+    needs: [window-gate, talk-orchestrator, random-wait, cleanup]
     if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
