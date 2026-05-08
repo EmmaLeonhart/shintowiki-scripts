@@ -15,6 +15,7 @@ from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     enwiki_wikidata_link,
     history_offload,
+    ill_category_to_link,
     interlang_consolidate,
     noinclude_wrap,
     strip_html_comments,
@@ -34,6 +35,7 @@ from shinto_miraheze.orchestrators.ops import (
 # template_mainspace_usage is a no-op unless ENABLE_TEMPLATE_USAGE_CHECK=1.
 OPS = [
     strip_html_comments,
+    ill_category_to_link,
     interlang_consolidate,
     enwiki_wikidata_link,
     wikidata_lookup,

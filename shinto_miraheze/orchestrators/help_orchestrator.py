@@ -14,12 +14,13 @@ from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
     duplicate_qids,
     history_offload,
+    ill_category_to_link,
     interlang_consolidate,
     strip_html_comments,
     wikidata_lookup,
 )
 
-OPS = [strip_html_comments, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
+OPS = [strip_html_comments, ill_category_to_link, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
 
 
 def main():
