@@ -10,28 +10,30 @@ sitelinks API. Two resolutions can happen on a single page:
    ``wbgetentities?sites=<lang>wiki&titles=<target>&props=info`` for
    each pair until one resolves, then drop that QID into the template.
 
-2. Template has a real QID but few/no language pairs (the user's
-   primary motivating case — "where the wiki link doesn't have any
-   actual articles linked"): fetch the entity's sitelinks via
+2. Template has a real QID: fetch the entity's sitelinks via
    ``wbgetentities&props=sitelinks`` and append any (lang, title) pair
    not already present, capped at MAX_PAIRS to keep the template
    readable.
 
-The op only acts on pages that already carry a {{wikidata link|...}}
-template — interlang_consolidate (which runs first as PRE_HEAVY) is
-responsible for creating the template + folding standalone interwikis
-into pair slots, including the empty-QID case. This op then converts
-that placeholder into a real wikidata link.
+After processing, the op stamps a ``check_date=YYYY-MM-DD`` named
+parameter on the template. On future runs, pages whose ``check_date``
+is younger than ``CHECK_INTERVAL_DAYS`` are skipped entirely — most
+content settles for months at a time, so re-querying every 6h cron
+fire just burns API quota. The user-stated rationale: "for the most
+part for a lot of things they might get a new article or something
+every six months but not otherwise."
 
-Cost: 0–2 Wikidata API calls per page, throttled at 0.3s between calls
-and cached within a single run so pages sharing a QID don't refetch
-sitelinks.
+Cost: 0–2 Wikidata API calls per page on the first visit (resolve QID
++ fetch sitelinks), then 0 calls for ~6 months until check_date
+expires. Per-run caches keep repeated lookups cheap when many pages
+share a QID within a single run.
 
 Disabled unless ``ENABLE_WIKIDATA_LOOKUP=1``. Marked PRE_HEAVY so the
 filled-in template is what fandom_mirror and the XML archive snapshot
 in the same cycle.
 """
 
+import datetime
 import os
 import re
 import time
@@ -62,9 +64,11 @@ _API_THROTTLE = 0.3
 # accepts up to 20 positional pair slots.
 _MAX_PAIRS = 20
 
-# Skip the sitelinks merge once a page has this many pairs already —
-# diminishing returns vs cost of the API call.
-_PAIRS_SATURATED = 5
+# Skip-recheck window. A page whose ``check_date`` is younger than this
+# (in days) is skipped without an API call — six months matches the
+# user's heuristic for how often Wikidata picks up new sitelinks for
+# the kind of content shintowiki tracks.
+_CHECK_INTERVAL_DAYS = 180
 
 # Try these languages first when resolving an unknown QID; English and
 # Japanese tend to have the highest hit rate for shintowiki content.
@@ -85,24 +89,58 @@ _qid_cache: dict[tuple[str, str], "str | None"] = {}
 _sitelinks_cache: dict[str, list[tuple[str, str]]] = {}
 
 
-def _parse_wd_params(raw: str) -> tuple[str, list[tuple[str, str]]]:
+def _check_date_is_recent(date_str: str) -> bool:
+    """True if the ISO date is within ``_CHECK_INTERVAL_DAYS`` of today."""
+    if not date_str:
+        return False
+    try:
+        d = datetime.date.fromisoformat(date_str.strip())
+    except ValueError:
+        return False
+    age = (datetime.date.today() - d).days
+    return 0 <= age < _CHECK_INTERVAL_DAYS
+
+
+def _parse_wd_params(raw: str) -> tuple[str, list[tuple[str, str]], dict[str, str]]:
+    """Split ``|Q|lang|title|...|key=val`` into (qid, pairs, named).
+
+    Named parameters (anything containing ``=``) are pulled out into a
+    dict so they don't get treated as positional. Order of the named
+    dict is preserved (insertion-ordered since Python 3.7).
+    """
     parts = [p.strip() for p in raw.split("|")[1:]]
-    qid = parts[0] if parts else ""
-    pair_parts = parts[1:]
+    named: dict[str, str] = {}
+    positional: list[str] = []
+    for p in parts:
+        if "=" in p:
+            name, _, value = p.partition("=")
+            named[name.strip()] = value.strip()
+        else:
+            positional.append(p)
+    qid = positional[0] if positional else ""
+    pair_parts = positional[1:]
     pairs: list[tuple[str, str]] = []
     i = 0
     while i + 1 < len(pair_parts):
         pairs.append((pair_parts[i], pair_parts[i + 1]))
         i += 2
-    return qid, pairs
+    return qid, pairs, named
 
 
-def _build_wd_template(qid: str, pairs: list[tuple[str, str]]) -> str:
+def _build_wd_template(
+    qid: str,
+    pairs: list[tuple[str, str]],
+    named: "dict[str, str] | None" = None,
+) -> str:
     parts = [qid]
     for lang, t in pairs:
         parts.append(lang)
         parts.append(t)
-    return "{{wikidata link|" + "|".join(parts) + "}}"
+    body = "|".join(parts)
+    if named:
+        for key, value in named.items():
+            body += f"|{key}={value}"
+    return "{{wikidata link|" + body + "}}"
 
 
 def _resolve_qid_from_sitelink(lang: str, target: str) -> "str | None":
@@ -211,24 +249,39 @@ def apply(title: str, text: str):
         # it didn't, there's nothing for us to do here.
         return None, None
 
-    qid, pairs = _parse_wd_params(wd_match.group(1))
+    qid, pairs, named = _parse_wd_params(wd_match.group(1))
+
+    # Skip pages we already touched recently. Pair count is no longer a
+    # gate — even a 10-pair page is worth re-checking after 6 months
+    # since Wikidata may have added a new sitelink.
+    if _check_date_is_recent(named.get("check_date", "")):
+        return None, None
 
     # Phase 1: resolve QID if missing and we have at least one interwiki pair.
     new_qid = qid
     if not qid:
         if not pairs:
-            return None, None  # nothing to look up by
+            # No QID and no pairs to look up by. Stamp the check_date
+            # anyway so we don't re-evaluate every cycle for a page
+            # that has no signal to act on.
+            new_named = dict(named)
+            new_named["check_date"] = datetime.date.today().isoformat()
+            if new_named == named:
+                return None, None
+            new_template = _build_wd_template(qid, pairs, new_named)
+            new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
+            return new_text, f"stamp check_date={new_named['check_date']} (no signal to resolve)"
         for (lang, target) in _ordered_pairs_for_resolution(pairs):
             resolved = _resolve_qid_from_sitelink(lang, target)
             if resolved:
                 new_qid = resolved
                 break
 
-    # Phase 2: merge sitelinks if the page would benefit. Skip if pairs
-    # already saturated to avoid spending an API call for diminishing
-    # returns.
+    # Phase 2: fetch sitelinks and merge missing pairs. Always done
+    # when a QID is known — pair count is no longer a gate; the
+    # check_date stamp prevents re-fetching for ~6 months.
     new_pairs = list(pairs)
-    if new_qid and len(new_pairs) < _PAIRS_SATURATED:
+    if new_qid:
         sitelinks = _fetch_sitelinks(new_qid)
         existing = {(l.lower(), t) for l, t in new_pairs}
         for (lang, t) in sitelinks:
@@ -238,10 +291,15 @@ def apply(title: str, text: str):
                 new_pairs.append((lang, t))
                 existing.add((lang.lower(), t))
 
-    if new_qid == qid and new_pairs == pairs:
+    # Always stamp check_date so the next 6 months of cycles skip this page.
+    today = datetime.date.today().isoformat()
+    new_named = dict(named)
+    new_named["check_date"] = today
+
+    if new_qid == qid and new_pairs == pairs and new_named == named:
         return None, None
 
-    new_template = _build_wd_template(new_qid, new_pairs)
+    new_template = _build_wd_template(new_qid, new_pairs, new_named)
     new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
 
     bits: list[str] = []
@@ -250,4 +308,5 @@ def apply(title: str, text: str):
     added = len(new_pairs) - len(pairs)
     if added > 0:
         bits.append(f"add {added} sitelink pair(s) from Wikidata")
-    return new_text, "; ".join(bits) or "wikidata lookup update"
+    bits.append(f"check_date={today}")
+    return new_text, "; ".join(bits)
