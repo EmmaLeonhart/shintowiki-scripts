@@ -34,6 +34,9 @@ on:
       enable_fandom_mirror:
         type: boolean
         default: false
+      enable_wikidata_lookup:
+        type: boolean
+        default: false
       edit_limit:
         type: string
         default: "10"
@@ -57,6 +60,9 @@ on:
       enable_fandom_mirror:
         type: boolean
         default: false
+      enable_wikidata_lookup:
+        type: boolean
+        default: false
       edit_limit:
         type: string
         default: "10"
@@ -76,6 +82,7 @@ jobs:
       ENABLE_REVDEL: ${{ inputs.enable_revdel && '1' || '' }}
       ENABLE_INTERLANG_CONSOLIDATE: ${{ inputs.enable_interlang_consolidate && '1' || '' }}
       ENABLE_FANDOM_MIRROR: ${{ inputs.enable_fandom_mirror && '1' || '' }}
+      ENABLE_WIKIDATA_LOOKUP: ${{ inputs.enable_wikidata_lookup && '1' || '' }}
       FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
       FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
     steps:
