@@ -5,8 +5,13 @@ miscellaneous_orchestrator.py
 Cycles through every subject-side namespace that isn't already owned by
 the three main orchestrators (mainspace ns=0, template ns=10,
 category ns=14).
-Canonical order: User (ns=2), Project, File, MediaWiki, Help, GeoJson,
+Canonical order: User (ns=2), Project, File, Help, GeoJson,
 Module, Item, Property.
+
+MediaWiki (ns=8) is intentionally excluded — interface messages and
+system pages there are sensitive and edits to them have outsized
+visible effect on the wiki UI; the orchestrator's space-saving ops
+aren't worth that risk.
 
 Talk namespaces (odd-numbered: ns=1, 3, 5, 7, 9, 11, 13, 15, 421, 829,
 861, 863) are intentionally excluded — the orchestrator only runs on
@@ -46,6 +51,7 @@ three main orchestrators (~2h vs ~11min).
 
 Omitted namespaces:
   * -2 Media, -1 Special     (virtual, not real pages)
+  * 8 MediaWiki              (interface/system messages — too sensitive)
   * All odd-numbered talk namespaces (subject-side sweep only)
 
 Included non-wikitext namespaces (history_offload only; no banner):
@@ -78,7 +84,6 @@ MISC_NAMESPACES: list[tuple[int, str]] = [
     (2,   "user"),
     (4,   "project"),
     (6,   "file"),
-    (8,   "mediawiki"),
     (12,  "help"),
     (420, "geojson"),
     (828, "module"),
