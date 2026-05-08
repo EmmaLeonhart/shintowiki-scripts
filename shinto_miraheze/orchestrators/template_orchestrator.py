@@ -20,6 +20,7 @@ from shinto_miraheze.orchestrators.ops import (
     strip_html_comments,
     template_mainspace_usage,
     wikidata_link,
+    wikidata_lookup,
 )
 
 # history_offload is first and runs in a pre-pass; it is a no-op unless
@@ -35,6 +36,7 @@ OPS = [
     strip_html_comments,
     interlang_consolidate,
     enwiki_wikidata_link,
+    wikidata_lookup,
     history_offload,
     duplicate_qids,
     noinclude_wrap,

@@ -157,6 +157,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.mainspace-edit-limit }}
     secrets: inherit
 
@@ -169,6 +170,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.category-edit-limit }}
     secrets: inherit
 
@@ -183,6 +185,7 @@ jobs:
       enable_interlang_consolidate: true
       enable_template_usage_check: true
       enable_enwiki_wikidata_link: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.template-edit-limit }}
     secrets: inherit
 
@@ -203,6 +206,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -217,6 +221,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -231,6 +236,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -245,6 +251,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -259,6 +266,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -273,6 +281,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -287,6 +296,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -301,6 +311,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 
@@ -319,6 +330,7 @@ jobs:
       enable_revdel: true
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
+      enable_wikidata_lookup: true
       edit_limit: ${{ needs.window-gate.outputs.misc-edit-limit }}
     secrets: inherit
 

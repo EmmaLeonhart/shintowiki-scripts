@@ -29,6 +29,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     interlang_consolidate,
     strip_html_comments,
+    wikidata_lookup,
 )
 
 # Odd-numbered talk namespaces, swept in order. ns=11 (Template talk) and
@@ -49,7 +50,7 @@ TALK_NAMESPACES: list[tuple[int, str]] = [
     (863, "property_talk"),
 ]
 
-OPS = [strip_html_comments, interlang_consolidate, history_offload, duplicate_qids]
+OPS = [strip_html_comments, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
 
 STATE_NAME = "talk_orchestrator"
 CURSOR_NAME = "talk_orchestrator_cursor"

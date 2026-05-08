@@ -16,9 +16,10 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     interlang_consolidate,
     strip_html_comments,
+    wikidata_lookup,
 )
 
-OPS = [strip_html_comments, interlang_consolidate, history_offload, duplicate_qids]
+OPS = [strip_html_comments, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
 
 
 def main():
