@@ -20,6 +20,14 @@ for namespace), the P11250 generator stops emitting both lines —
 including the en-label line. This script fills the gap by checking
 EVERY tracked QID for a missing en label, regardless of P11250 state.
 
+Wikidata-side query
+-------------------
+Single SPARQL POST to WDQS that returns ``(item, en_label)`` rows for
+every QID in one VALUES clause. Live-tested at ~4s for 5000 QIDs vs
+~60s for the previous 120 batches of wbgetentities. Per CLAUDE.md:
+cleanup-loop scripts query collectively (bulk SPARQL); per-page
+individual queries belong only in the orchestrator ops.
+
 Cleanup pass
 ------------
 Lines currently on [[QuickStatements/En labels]] whose item now has
@@ -70,7 +78,8 @@ QS_LINE_RE = re.compile(r'^(Q\d+)\|Len\|"(.+)"$')
 SKIP_PREFIXES = ("Template:",)
 
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-WD_API = "https://www.wikidata.org/w/api.php"
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+QID_RE = re.compile(r"^Q\d+$")
 
 # Retry transient errors — but 429 is deliberately NOT in the list; a
 # 429 propagates up and aborts the script (status.md pinned policy).
@@ -99,8 +108,8 @@ def log_error(message, *, fatal=False):
         f.write(entry)
 
 
-def checked_get(url, **kwargs):
-    resp = _http.get(url, **kwargs)
+def checked_post(url, **kwargs):
+    resp = _http.post(url, **kwargs)
     if resp.status_code == 429:
         log_error(
             f"429 Too Many Requests from {resp.url} — terminating immediately",
@@ -124,46 +133,56 @@ QS_PAGE_FOOTER = "</pre>"
 # ─── WIKIDATA ───────────────────────────────────────────────
 
 def fetch_en_labels(qids: list[str]) -> dict[str, "str | None"]:
-    """Batch-query Wikidata for the en label of each QID.
+    """Bulk-fetch en labels for every QID via ONE SPARQL POST.
 
-    Returns ``{qid: en_label or None}``. ``None`` means the item is
-    missing on Wikidata or the en label is empty/unset. A failed batch
-    leaves the qid out of the dict entirely (caller treats absence as
-    "unknown — don't infer either way").
-    """
-    out: dict[str, "str | None"] = {}
-    for i in range(0, len(qids), 50):
-        batch = qids[i : i + 50]
-        try:
-            resp = checked_get(
-                WD_API,
-                params={
-                    "action": "wbgetentities",
-                    "ids": "|".join(batch),
-                    "props": "labels",
-                    "languages": "en",
-                    "format": "json",
-                },
-                headers={"User-Agent": USER_AGENT},
-                timeout=30,
-            )
-            resp.raise_for_status()
-            entities = resp.json().get("entities", {})
-        except RateLimitError:
-            raise
-        except Exception as e:
-            log_error(f"wbgetentities batch failed ({batch[0]}...): {e}")
+    Returns ``{qid: en_label or None}``:
+        * en label string if Wikidata has one set
+        * ``None`` when the item exists but has no en label
+
+    On query failure, returns ``{}`` — caller treats absence as
+    "unknown — don't infer either way", matching the previous batched
+    code's per-batch failure mode (just at whole-query granularity)."""
+    qids = [q for q in qids if QID_RE.match(q)]
+    if not qids:
+        return {}
+
+    values_clause = " ".join(f"wd:{q}" for q in qids)
+    query = f"""
+SELECT ?item ?label WHERE {{
+  VALUES ?item {{ {values_clause} }}
+  OPTIONAL {{ ?item rdfs:label ?label . FILTER(LANG(?label) = "en") }}
+}}
+"""
+    try:
+        resp = checked_post(
+            SPARQL_ENDPOINT,
+            data={"query": query, "format": "json"},
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/sparql-results+json",
+            },
+            timeout=180,
+        )
+        resp.raise_for_status()
+        bindings = resp.json().get("results", {}).get("bindings", [])
+    except RateLimitError:
+        raise
+    except Exception as e:
+        log_error(f"SPARQL query failed: {e}")
+        return {}
+
+    # Default everyone to None (no en label); upgrade to the actual
+    # string when we see a binding. Cross-product safety: iterate every
+    # row, last non-empty value wins (in practice rdfs:label en is
+    # single-valued, so this is just defensive).
+    out: dict[str, "str | None"] = {q: None for q in qids}
+    for row in bindings:
+        qid = row["item"]["value"].rsplit("/", 1)[-1]
+        if qid not in out:
             continue
-
-        for qid in batch:
-            entity = entities.get(qid, {})
-            if "missing" in entity:
-                out[qid] = None
-                continue
-            labels = entity.get("labels", {})
-            en_label = (labels.get("en", {}) or {}).get("value", "").strip()
-            out[qid] = en_label or None
-        time.sleep(0.5)
+        val = row.get("label", {}).get("value", "").strip()
+        if val:
+            out[qid] = val
     return out
 
 

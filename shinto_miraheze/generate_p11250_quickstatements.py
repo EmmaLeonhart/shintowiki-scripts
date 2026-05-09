@@ -14,8 +14,12 @@ For each (title, qid) in the shared state:
   * Skip any ``Template:`` titles — too many existing template-namespace
     items on Wikidata for blanket P11250 linking to be safe right now.
     Mainspace and Category-namespace titles only.
-  * Batch-query Wikidata (wbgetentities, 50 QIDs per call) for
-    existing P11250 values **and** English labels.
+  * Single SPARQL POST to WDQS that returns ``(item, p11250, en_label)``
+    rows for every QID in one VALUES clause — both pieces in one query.
+    Live-tested at ~5s for 5000 QIDs vs ~60s for the previous 120 batches
+    of wbgetentities. Per CLAUDE.md: cleanup-loop scripts query
+    collectively (bulk SPARQL); per-page individual queries belong only
+    in the orchestrator ops.
   * If ``shinto:<title>`` is already among the P11250 values, skip the
     P11250 emission.
   * Otherwise emit ``Qxxx|P11250|"shinto:<title>"``.
@@ -85,7 +89,8 @@ QS_LABEL_RE = re.compile(r'^(Q\d+)\|Len\|"(.+)"$')
 SKIP_PREFIXES = ("Template:",)
 
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-WD_API = "https://www.wikidata.org/w/api.php"
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+QID_RE = re.compile(r"^Q\d+$")
 
 # Retry transient errors — but 429 is deliberately NOT in the list; a
 # 429 propagates up and aborts the script (status.md pinned policy).
@@ -114,8 +119,8 @@ def log_error(message, *, fatal=False):
         f.write(entry)
 
 
-def checked_get(url, **kwargs):
-    resp = _http.get(url, **kwargs)
+def checked_post(url, **kwargs):
+    resp = _http.post(url, **kwargs)
     if resp.status_code == 429:
         log_error(
             f"429 Too Many Requests from {resp.url} — terminating immediately",
@@ -139,58 +144,69 @@ QS_PAGE_FOOTER = "</pre>"
 # ─── WIKIDATA ───────────────────────────────────────────────
 
 def fetch_p11250_and_labels(qids: list[str]) -> tuple[dict[str, list[str]], set[str]]:
-    """Batch-query Wikidata for the given QIDs.
+    """Bulk-fetch P11250 values + en labels for every QID via ONE
+    SPARQL POST against WDQS.
 
     Returns:
-        p11250: {qid: [P11250 values]} (empty list if missing/unknown)
-        missing_en_label: set of qids that lack an English label
-    """
-    p11250: dict[str, list[str]] = {}
-    missing_en_label: set[str] = set()
-    for i in range(0, len(qids), 50):
-        batch = qids[i : i + 50]
-        try:
-            resp = checked_get(
-                WD_API,
-                params={
-                    "action": "wbgetentities",
-                    "ids": "|".join(batch),
-                    "props": "claims|labels",
-                    "languages": "en",
-                    "format": "json",
-                },
-                headers={"User-Agent": USER_AGENT},
-                timeout=30,
-            )
-            resp.raise_for_status()
-            entities = resp.json().get("entities", {})
-        except RateLimitError:
-            raise
-        except Exception as e:
-            log_error(f"wbgetentities batch failed ({batch[0]}...): {e}")
-            for qid in batch:
-                p11250[qid] = []  # unknown — treat as "claim not present"
-                # don't infer en-label state when the fetch failed
-            continue
+        p11250: {qid: [P11250 values]} — empty list when the item has
+                no P11250 (or doesn't exist on Wikidata at all; the
+                wdt:P11250 OPTIONAL just doesn't bind in that case).
+        missing_en_label: set of QIDs that don't have an English label.
 
-        for qid in batch:
-            entity = entities.get(qid, {})
-            if "missing" in entity:
-                p11250[qid] = []
-                continue
-            claims = entity.get("claims", {}).get("P11250", [])
-            values = []
-            for c in claims:
-                dv = c.get("mainsnak", {}).get("datavalue", {})
-                if dv.get("type") == "string":
-                    values.append(dv.get("value"))
-            p11250[qid] = [v for v in values if v]
+    Cross-product behavior: an item with multiple P11250 values, or a
+    multi-language label set with en being one of several, can produce
+    multiple result rows. The aggregation below collects values into a
+    list and treats a single en-label match anywhere across an item's
+    rows as "has en label".
 
-            labels = entity.get("labels", {})
-            en_label = labels.get("en", {}).get("value", "").strip()
-            if not en_label:
-                missing_en_label.add(qid)
-        time.sleep(0.5)
+    Failure mode mirrors the previous batched code: on exception we
+    return ``{qid: []}`` for every QID and an empty
+    ``missing_en_label`` (i.e. don't infer either way), so downstream
+    logic conservatively skips those items rather than emitting bogus
+    QS lines."""
+    qids = [q for q in qids if QID_RE.match(q)]
+    if not qids:
+        return {}, set()
+
+    values_clause = " ".join(f"wd:{q}" for q in qids)
+    query = f"""
+SELECT ?item ?p11250 ?label WHERE {{
+  VALUES ?item {{ {values_clause} }}
+  OPTIONAL {{ ?item wdt:P11250 ?p11250 . }}
+  OPTIONAL {{ ?item rdfs:label ?label . FILTER(LANG(?label) = "en") }}
+}}
+"""
+    try:
+        resp = checked_post(
+            SPARQL_ENDPOINT,
+            data={"query": query, "format": "json"},
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/sparql-results+json",
+            },
+            timeout=180,
+        )
+        resp.raise_for_status()
+        bindings = resp.json().get("results", {}).get("bindings", [])
+    except RateLimitError:
+        raise
+    except Exception as e:
+        log_error(f"SPARQL query failed: {e}")
+        return {q: [] for q in qids}, set()
+
+    p11250: dict[str, list[str]] = {q: [] for q in qids}
+    has_en_label: set[str] = set()
+    for row in bindings:
+        qid = row["item"]["value"].rsplit("/", 1)[-1]
+        if qid not in p11250:
+            continue  # defensive: VALUES set should bound the result
+        p_val = row.get("p11250", {}).get("value")
+        if p_val and p_val not in p11250[qid]:
+            p11250[qid].append(p_val)
+        if row.get("label", {}).get("value", "").strip():
+            has_en_label.add(qid)
+
+    missing_en_label = {q for q in qids if q not in has_en_label}
     return p11250, missing_en_label
 
 
