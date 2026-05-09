@@ -82,8 +82,10 @@ def sparql_query(query):
         timeout=120,
     )
     if resp.status_code == 429:
-        print("   ! FATAL: 429 Too Many Requests from SPARQL — terminating", file=sys.stderr)
-        sys.exit(1)
+        # Pinned policy: bail on 429, no retry. Exit 0 so the cleanup-loop
+        # CI step doesn't fail — the next scheduled run picks up.
+        print("   ! 429 Too Many Requests from SPARQL — terminating cleanly (next run resumes)", file=sys.stderr)
+        sys.exit(0)
     resp.raise_for_status()
     return resp.json().get("results", {}).get("bindings", [])
 

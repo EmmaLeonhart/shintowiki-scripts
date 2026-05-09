@@ -353,7 +353,9 @@ if __name__ == "__main__":
     try:
         main()
     except RateLimitError:
-        sys.exit(1)
+        # Pinned policy: bail on 429, no retry. Exit 0 so the cleanup-loop
+        # CI step doesn't fail — the next scheduled run picks up.
+        sys.exit(0)
     except Exception:
         log_error(f"Unhandled exception:\n{traceback.format_exc()}")
         sys.exit(1)
