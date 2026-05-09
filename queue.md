@@ -12,9 +12,7 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 3. **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
 
-4. **Verify all fandom `Template:Infobox X` pages are converted to Portable Infobox.** `fandom_unique/` has 255 `Template%3AInfobox*.wiki` files; previously identified ~250 needing hand-conversion. Confirm completion; finish any stragglers.
-
-5. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing. Script runs with orchestrator per page and creates the wikidata item.
+4. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing. Script runs with orchestrator per page and creates the wikidata item.
 
 ## Pinned notes
 
