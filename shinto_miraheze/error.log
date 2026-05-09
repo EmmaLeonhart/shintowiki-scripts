@@ -25,3 +25,6 @@
 [2026-05-09 07:44:55 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
 [2026-05-09 07:47:11 UTC] [FATAL] generate_p6262_quickstatements: 429 Too Many Requests from https://query.wikidata.org/sparql — terminating immediately
 [2026-05-09 07:48:15 UTC] [ERROR] generate_en_labels_quickstatements: SPARQL query failed: Response ended prematurely
+[2026-05-09 10:42:40 UTC] [FATAL] generate_p11250_quickstatements: 429 Too Many Requests from https://query.wikidata.org/sparql — terminating immediately
+[2026-05-09 10:44:40 UTC] [ERROR] generate_p6262_quickstatements: SPARQL query failed: 504 Server Error: Gateway Timeout for url: https://query.wikidata.org/sparql
+[2026-05-09 10:45:21 UTC] [ERROR] generate_en_labels_quickstatements: SPARQL query failed: 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
