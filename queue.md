@@ -6,7 +6,8 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Action items
 
-(empty — see todo.md for postponed work)
+Go through the notes of the [[Category:git synced pages]]
+Translate all of the [[Category:Need translation]]
 
 ## Pinned notes
 
