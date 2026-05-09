@@ -21,6 +21,7 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 7. **Bump deprecated Node 20 actions** — `actions/checkout@v4` and `actions/setup-python@v5` will be force-migrated to Node 24 by 2026-06-02. Update before then.
 
 8. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing.
+Script runs with orchestrator per page and creates the wikidata item.
 
 ## Pinned notes
 
