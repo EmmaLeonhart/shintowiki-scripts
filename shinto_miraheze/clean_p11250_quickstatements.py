@@ -2,13 +2,25 @@
 """
 clean_p11250_quickstatements.py
 ================================
-Reads [[QuickStatements/P11250]] on shintowiki and bulk-checks all QS lines
-against Wikidata using SPARQL. If a Wikidata item already has the correct
-P11250 value, the line is removed from the page.
+Reads [[QuickStatements/P11250]] on shintowiki and removes lines whose
+Wikidata item already carries the same P11250 value.
 
-Uses a single SPARQL query to check all QIDs at once (batched in groups of
-200 to stay within query limits), replacing the old one-by-one approach that
-was too slow to keep up and caused duplicate submissions.
+Strategy: ONE SPARQL query that returns every (item, value) pair on
+Wikidata where ``P11250`` starts with ``"shinto:"``. The QS page lines
+are filtered locally against that result set — no per-QID API traffic.
+
+This replaces an earlier approach that batched the QS page's QIDs into
+groups of 200 and issued one SPARQL query per batch (~30 batches for
+~6000 lines). When WDQS was under load, individual batch queries took
+30-60 seconds each, so the step routinely ran 25+ minutes wall clock
+for what is fundamentally a set-difference computation. One query that
+returns the global ``shinto:``-prefixed P11250 set (a few hundred rows
+at most, bounded by the size of our own QS page over time) does the
+same work in seconds.
+
+Per CLAUDE.md: nothing outside the orchestrator ops should be doing
+per-QID Wikidata API calls. SPARQL set-fetch + local filter is the
+right shape for this kind of bulk reconciliation.
 
 Default mode is dry-run. Use --apply to actually edit the wiki page.
 """
@@ -51,7 +63,11 @@ Each line below adds a <code>P11250</code> claim linking a Wikidata item to its 
 QS_PAGE_FOOTER = "</pre>"
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
-SPARQL_BATCH_SIZE = 200  # max QIDs per SPARQL query to stay within limits
+# Prefix the P11250 value must start with for us to count it as "the
+# same shintowiki page" — the QS page only ever generates lines with
+# this prefix, so any other value on the same QID is from a different
+# Miraheze wiki and not relevant to our reconciliation.
+P11250_PREFIX = "shinto:"
 
 # Retry session — 429 is excluded (immediate termination)
 _retry_strategy = Retry(
@@ -81,36 +97,30 @@ def sparql_query(query):
     return resp.json().get("results", {}).get("bindings", [])
 
 
-def bulk_check_p11250(qids):
-    """
-    Given a list of QIDs, returns a dict of {qid: [p11250_value, ...]} for
-    items that already have P11250 on Wikidata. Uses SPARQL in batches.
-    """
-    result = {}
-    batches = [qids[i:i + SPARQL_BATCH_SIZE] for i in range(0, len(qids), SPARQL_BATCH_SIZE)]
+def fetch_existing_p11250() -> dict[str, list[str]]:
+    """Single SPARQL query: every (item, value) pair on Wikidata where
+    P11250 starts with ``shinto:``. Returns a ``{qid: [values...]}``
+    dict that the caller filters QS lines against locally.
 
-    for batch_num, batch in enumerate(batches, 1):
-        print(f"  SPARQL batch {batch_num}/{len(batches)} ({len(batch)} QIDs)...")
-        values_clause = " ".join(f"wd:{qid}" for qid in batch)
-        query = f"""
+    The result set is bounded by the number of Wikidata items that
+    already point at a shintowiki page — at most a small multiple of
+    the QS page's own size, well under WDQS's 50k-row response limit
+    and typical query-time limit."""
+    query = f"""
 SELECT ?item ?value WHERE {{
-  VALUES ?item {{ {values_clause} }}
   ?item wdt:P11250 ?value .
+  FILTER(STRSTARTS(?value, "{P11250_PREFIX}"))
 }}
 """
-        try:
-            bindings = sparql_query(query)
-            for row in bindings:
-                qid = row["item"]["value"].rsplit("/", 1)[-1]
-                value = row["value"]["value"]
-                result.setdefault(qid, []).append(value)
-        except Exception as e:
-            print(f"   ! SPARQL batch {batch_num} failed: {e}", file=sys.stderr)
-            # On failure, skip this batch — items won't be removed, so it's safe
-
-        if batch_num < len(batches):
-            time.sleep(2)  # be polite to WDQS
-
+    print(f"  one SPARQL query: all P11250 values starting {P11250_PREFIX!r} ...")
+    bindings = sparql_query(query)
+    result: dict[str, list[str]] = {}
+    for row in bindings:
+        qid = row["item"]["value"].rsplit("/", 1)[-1]
+        value = row["value"]["value"]
+        result.setdefault(qid, []).append(value)
+    print(f"  got {sum(len(v) for v in result.values())} (item, value) row(s) "
+          f"across {len(result)} item(s)")
     return result
 
 
@@ -154,10 +164,11 @@ def main():
         print("Nothing to check.")
         return
 
-    # Bulk check all QIDs via SPARQL
-    print(f"\nBulk checking {len(qs_entries)} items via SPARQL...")
-    existing_p11250 = bulk_check_p11250(list(qs_entries.keys()))
-    print(f"SPARQL found P11250 values on {len(existing_p11250)} items")
+    # Single SPARQL fetch of every P11250 value on Wikidata that starts
+    # with ``shinto:``. We then filter the QS page's QIDs against this
+    # global dict locally — no per-QID API traffic.
+    print(f"\nFetching all P11250 ({P11250_PREFIX!r}-prefixed) values on Wikidata via SPARQL...")
+    existing_p11250 = fetch_existing_p11250()
 
     # Determine which lines to remove
     removed = []
