@@ -6,7 +6,14 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ## Current session work
 
-Active work queue lives in [status.md](status.md) (Sutra-style queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
+Active work queue lives in [queue.md](queue.md) (queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
+
+## Postponed (moved from queue.md 2026-05-08)
+
+- [ ] **Translate the remaining ~290 untranslated `need_translation/` files** (most are done; remainder postponed). Blocked on history_offload completion for those pages — translating first would force the archive + revdel step to re-archive a longer history than necessary. See the more detailed entry under "Requires manual intervention" below for the prioritized list.
+- [ ] **ILLs without `WD=`** — ILL templates missing a `WD=` parameter are broken by design. Run `fix_ill_destinations.py` or a new script to identify and fill in missing `WD=` values. Do not blindly overwrite — check the local context of each. Deferred — lower priority than the active queue.
+- [ ] **`commit_state.sh` rebase-conflict fix** — the retry loop handles push rejection but if the rebase itself conflicts, it runs `git rebase --abort` and gives up. Likely fix: add a `.gitattributes` entry setting `merge=union` on the append-mostly orchestrator state files. Deferred — non-fatal (state retried on next run; ops are idempotent).
+- [ ] **Retrofit `populate_namespace_layers.py` → `ops/namespace_layers.py`** — mainspace only; creates/edits sibling pages in Data:/Export: namespaces; `HANDLES_SAVE = True`. Blocked on the wiki-side namespace creation.
 
 ## Scheduled review — July 2026
 
