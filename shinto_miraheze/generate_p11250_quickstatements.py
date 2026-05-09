@@ -38,6 +38,9 @@ over successive cycles as the orchestrators sweep the wiki.
 
 429 policy: any HTTP 429 from Wikidata terminates the script
 immediately (no retries), consistent with the pinned note in status.md.
+Termination is a clean exit (status 0) — the next scheduled run picks
+up where state left off, so a transient throttle should not mark the
+cleanup-loop CI job as failed.
 
 Standard flags: ``--apply`` (default dry-run), ``--max-edits`` (kept
 for CLI parity — only one wiki write happens, so effective value is 1),
@@ -93,7 +96,8 @@ SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 QID_RE = re.compile(r"^Q\d+$")
 
 # Retry transient errors — but 429 is deliberately NOT in the list; a
-# 429 propagates up and aborts the script (status.md pinned policy).
+# 429 propagates up and aborts the script with a clean exit
+# (status.md pinned policy: terminate, no retry, next run resumes).
 _retry_strategy = Retry(
     total=5,
     backoff_factor=2,
@@ -399,7 +403,9 @@ if __name__ == "__main__":
     try:
         main()
     except RateLimitError:
-        sys.exit(1)
+        # Pinned policy: bail on 429, no retry. Exit 0 so the cleanup-loop
+        # CI step doesn't fail — the next scheduled run picks up.
+        sys.exit(0)
     except Exception:
         log_error(f"Unhandled exception:\n{traceback.format_exc()}")
         sys.exit(1)
