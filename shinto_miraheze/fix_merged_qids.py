@@ -10,6 +10,15 @@ For each merged QID, fetches the referenced shintowiki page and rewrites
 references to the old QID (``{{wikidata link|Qold}}``, ``WD=Qold``,
 ``qid=Qold``) to the merge target, then saves.
 
+Wikidata-side query
+-------------------
+Issues ONE SPARQL POST against WDQS with every QID from the QS page in a
+single ``VALUES`` clause, asking for ``?old owl:sameAs ?new`` matches.
+Live-tested at ~1.3s for 6000 QIDs vs the previous ~120 batched
+action=query roundtrips at ~60s. Per CLAUDE.md: cleanup-loop scripts
+process collectively, so collective bulk SPARQL is the right shape;
+per-page individual queries belong only in the orchestrator ops.
+
 Runs in CI on the EmmaBot schedule — uses the standard
 ``WIKI_USERNAME`` / ``WIKI_PASSWORD`` environment variables. Standard
 ``--apply``, ``--max-edits``, ``--run-tag`` flags. Default is dry-run.
@@ -44,7 +53,7 @@ THROTTLE = 2.5
 QS_PAGE_TITLE = "QuickStatements/P11250"
 
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-WD_API = "https://www.wikidata.org/w/api.php"
+SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
 QS_LINE_RE = re.compile(r'^\s*(Q\d+)\s*\|\s*P\d+\s*\|\s*"shinto:(.+?)"\s*$')
 QID_RE = re.compile(r'^Q\d+$')
@@ -53,42 +62,53 @@ QID_RE = re.compile(r'^Q\d+$')
 # ─── WIKIDATA REDIRECT LOOKUP ──────────────────────────────
 
 def resolve_redirects(qids):
-    """
-    Ask Wikidata which QIDs redirect elsewhere. Returns dict
-    {old_qid: new_qid} for QIDs that are merged. Bail on 429 per policy.
-    """
-    mapping = {}
+    """Ask Wikidata which QIDs are now redirects. Returns
+    ``{old_qid: new_qid}`` for the subset that have been merged.
+
+    Single SPARQL POST: every QID goes into one ``VALUES`` clause and
+    matches against ``owl:sameAs`` to find merge targets. Live-tested at
+    1.3s for 6000 QIDs (Q1..Q6000 sample → 40 redirects). Body size
+    grows ~9 bytes/QID, comfortably under WDQS's POST limit.
+
+    POST (not GET) so a 6000-QID body doesn't blow the URL length cap.
+    Bail on 429 per the standing wiki policy."""
     qids = list(qids)
-    for i in range(0, len(qids), 50):
-        batch = qids[i:i + 50]
-        try:
-            resp = requests.get(
-                WD_API,
-                params={
-                    "action": "query",
-                    "titles": "|".join(batch),
-                    "redirects": 1,
-                    "format": "json",
-                    "formatversion": "2",
-                },
-                headers={"User-Agent": USER_AGENT},
-                timeout=30,
-            )
-            if resp.status_code == 429:
-                print("  [bail] HTTP 429 from Wikidata; stopping.")
-                sys.exit(0)
-            resp.raise_for_status()
-            data = resp.json().get("query", {})
-            for r in data.get("redirects", []) or []:
-                src = r.get("from")
-                dst = r.get("to")
-                if src and dst and QID_RE.match(src) and QID_RE.match(dst):
-                    mapping[src] = dst
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [warn] Wikidata query failed for batch starting {batch[0]}: {e}")
-        time.sleep(0.4)
+    if not qids:
+        return {}
+
+    values_clause = " ".join(f"wd:{q}" for q in qids if QID_RE.match(q))
+    query = f"""
+SELECT ?old ?new WHERE {{
+  VALUES ?old {{ {values_clause} }}
+  ?old owl:sameAs ?new .
+}}
+"""
+    try:
+        resp = requests.post(
+            SPARQL_ENDPOINT,
+            data={"query": query, "format": "json"},
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/sparql-results+json",
+            },
+            timeout=120,
+        )
+    except Exception as e:
+        print(f"  [warn] SPARQL request failed: {e}")
+        return {}
+    if resp.status_code == 429:
+        print("  [bail] HTTP 429 from WDQS; stopping.")
+        sys.exit(0)
+    if not resp.ok:
+        print(f"  [warn] SPARQL HTTP {resp.status_code}: {resp.text[:200]}")
+        return {}
+
+    mapping: dict[str, str] = {}
+    for row in resp.json().get("results", {}).get("bindings", []):
+        old = row["old"]["value"].rsplit("/", 1)[-1]
+        new = row["new"]["value"].rsplit("/", 1)[-1]
+        if QID_RE.match(old) and QID_RE.match(new):
+            mapping[old] = new
     return mapping
 
 
