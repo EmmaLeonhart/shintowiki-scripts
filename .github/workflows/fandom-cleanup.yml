@@ -1,0 +1,96 @@
+name: fandom-cleanup-loop
+
+# General fandom cleanup loop — sits between the miraheze cleanup loop
+# and the mainspace orchestrator. Currently does ONE thing: drains the
+# first 500 entries of [[Special:WantedFiles]] on shinto.fandom.com by
+# importing them from Wikimedia Commons (when available) with attribution.
+#
+# Bounded per run by design: we never iterate the whole wanted-files
+# list. The wiki regenerates the list every few days, so successive
+# fires see new prefixes and the queue drains gradually. This keeps each
+# CI fire fast on our end at the cost of slow wiki-side progress — a
+# trade-off the user explicitly chose ("It's going to be slower as far
+# as getting the wiki gradually to reach the point that we want but we
+# don't really care about that that much").
+#
+# Intentionally separate from wiki-cleanup.yml (which is miraheze-side)
+# and from import-templates-to-fandom.yml (which drains a static
+# pre-computed list of templates, not a live wiki query page).
+
+on:
+  workflow_call:
+    inputs:
+      max_edits:
+        description: "Per-run cap on entries CONSIDERED from WantedFiles (default 500)"
+        type: string
+        default: "500"
+      max_uploads:
+        description: "Optional cap on successful uploads per run (0 = unbounded within max_edits)"
+        type: string
+        default: "0"
+
+permissions:
+  contents: write
+
+jobs:
+  fandom-wantedfiles-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+      FANDOM_USERNAME: ${{ secrets.FANDOM_USERNAME }}
+      FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
+      MAX_EDITS: ${{ inputs.max_edits || '500' }}
+      MAX_UPLOADS: ${{ inputs.max_uploads || '0' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate fandom credentials
+        run: |
+          if [ -z "${FANDOM_USERNAME}" ] || [ -z "${FANDOM_PASSWORD}" ]; then
+            echo "FANDOM_USERNAME / FANDOM_PASSWORD secrets are required."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          case "${GITHUB_EVENT_NAME}" in
+            push)              CAUSE="commit triggered pipeline" ;;
+            schedule)          CAUSE="time triggered pipeline" ;;
+            workflow_dispatch) CAUSE="manual triggered pipeline" ;;
+            *)                 CAUSE="pipeline run" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
+
+      - name: Import Commons wanted-files to fandom
+        run: |
+          MAX_UPLOADS_FLAG=""
+          if [ "${MAX_UPLOADS}" != "0" ] && [ -n "${MAX_UPLOADS}" ]; then
+            MAX_UPLOADS_FLAG="--max-uploads ${MAX_UPLOADS}"
+          fi
+          python3 import_commons_wantedfiles_to_fandom.py \
+            --apply \
+            --max-edits "${MAX_EDITS}" \
+            ${MAX_UPLOADS_FLAG} \
+            --run-tag "${RUN_TAG}"
+
+      - name: Commit state
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Fandom Cleanup Loop"
