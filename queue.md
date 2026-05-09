@@ -6,8 +6,7 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Action items
 
-1. **Review the 4667 files in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. Siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
-
+(empty — see todo.md for postponed work)
 
 ## Pinned notes
 
