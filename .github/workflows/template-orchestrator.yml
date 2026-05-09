@@ -93,12 +93,12 @@ jobs:
         # this, a later checkout is still at the original push SHA and
         # its first attempt to commit duplicate_qids.state conflicts
         # (add/add) on rebase — which commit_state.sh bails on.
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 

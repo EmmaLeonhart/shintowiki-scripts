@@ -57,7 +57,7 @@ jobs:
       wikidata-daily-fire: ${{ steps.check.outputs.wikidata-daily-fire }}
     steps:
       - name: Checkout (needed to read modern-quickstatements/reports/)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
 
