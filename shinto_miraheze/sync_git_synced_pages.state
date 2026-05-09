@@ -3,13 +3,29 @@
     "revid": 3685297,
     "sha": "bef90367a4767f874e6048e3f998e9367d29760e"
   },
+  "Template:Fuken-sha": {
+    "revid": 3719614,
+    "sha": "39d0ee4692e4bef4f760e4c64ea89112bc963a81"
+  },
   "Template:GaiadDate": {
-    "revid": 3657553,
-    "sha": "58fbf987f05579c0a9e82e5fa9f2e2925ed86d0f"
+    "revid": 3720367,
+    "sha": "91d96d29d2552c6333754bdd77e4635bd28a3cb7"
   },
   "Template:GaiadToday": {
-    "revid": 3657555,
-    "sha": "bfa9e84855174c70869ae4acd26717fca1360c26"
+    "revid": 3720368,
+    "sha": "651796231adaa550c172876b487ac1a6ed8996a1"
+  },
+  "Template:Gō-sha": {
+    "revid": 3719615,
+    "sha": "e04b37298d35c7d9823b27c3ceda8eb0f54c6a7f"
+  },
+  "Template:Mura-sha": {
+    "revid": 3719616,
+    "sha": "b90a4781d50a2fcc3b98a87eddb24d047a396657"
+  },
+  "Template:Son-sha": {
+    "revid": 3719617,
+    "sha": "705dfdacdbc4dd967129edaeddcd80984f80e653"
   },
   "Yang Earth Dog": {
     "revid": 3661267,
