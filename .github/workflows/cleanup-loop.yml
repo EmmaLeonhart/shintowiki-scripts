@@ -145,6 +145,19 @@ jobs:
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit
 
+  # General fandom cleanup loop — sits between the miraheze-side cleanup
+  # job above (`wiki-cleanup.yml`) and the per-namespace orchestrators
+  # below. Currently does ONE thing: drains the first 500 entries of
+  # [[Special:WantedFiles]] on shinto.fandom.com by importing them from
+  # Wikimedia Commons (when a corresponding file exists there) with
+  # attribution. Bounded per-run by design — never iterates the whole
+  # list. See .github/workflows/fandom-cleanup.yml for rationale.
+  fandom-cleanup:
+    needs: [window-gate, cleanup]
+    if: always()
+    uses: ./.github/workflows/fandom-cleanup.yml
+    secrets: inherit
+
   # sync_git_synced_pages: bidirectional sync between
   # [[Category:Git synced pages]] on miraheze and the repo's git_synced/
   # directory.
@@ -172,7 +185,7 @@ jobs:
   # so enable_interlang_consolidate is now on for all four orchestrators.
 
   mainspace-orchestrator:
-    needs: [window-gate, cleanup]
+    needs: [window-gate, cleanup, fandom-cleanup]
     if: always()
     uses: ./.github/workflows/mainspace-orchestrator.yml
     with:
