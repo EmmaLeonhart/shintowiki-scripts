@@ -8,20 +8,17 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 1. **Review the 4667 files in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. Siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
 
-2. **Investigate `fix_double_redirects` flailing.** Run https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/24744680692/job/72417848749 had `mainspace-orchestrator` hit the 2h timeout. If `Special:DoubleRedirects` keeps producing the same pages run after run, the script is fighting itself. Check whether this is still happening on recent runs and fix.
+2. **Fix Shikinaisha pages with broken ILL "Unknown" destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
 
-3. **Fix Shikinaisha pages with broken ILL "Unknown" destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
+3. **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
 
-4. **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
+4. **Investigate `replace_p1027_with_p459.txt`** — file exists in `modern-quickstatements/`, purpose unclear. Determine origin, whether ever submitted; remove or integrate.
 
-5. **Investigate `replace_p1027_with_p459.txt`** — file exists in `modern-quickstatements/`, purpose unclear. Determine origin, whether ever submitted; remove or integrate.
+5. **Verify all fandom `Template:Infobox X` pages are converted to Portable Infobox.** `fandom_unique/` has 255 `Template%3AInfobox*.wiki` files; previously identified ~250 needing hand-conversion. Confirm completion; finish any stragglers.
 
-6. **Verify all fandom `Template:Infobox X` pages are converted to Portable Infobox.** `fandom_unique/` has 255 `Template%3AInfobox*.wiki` files; previously identified ~250 needing hand-conversion. Confirm completion; finish any stragglers.
+6. **Bump deprecated Node 20 actions** — `actions/checkout@v4` and `actions/setup-python@v5` will be force-migrated to Node 24 by 2026-06-02. Update before then.
 
-7. **Bump deprecated Node 20 actions** — `actions/checkout@v4` and `actions/setup-python@v5` will be force-migrated to Node 24 by 2026-06-02. Update before then.
-
-8. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing.
-Script runs with orchestrator per page and creates the wikidata item.
+7. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing. Script runs with orchestrator per page and creates the wikidata item.
 
 ## Pinned notes
 
