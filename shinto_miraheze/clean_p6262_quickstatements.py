@@ -2,15 +2,19 @@
 """
 clean_p6262_quickstatements.py
 ===============================
-Reads [[QuickStatements/P6262]] on shintowiki and bulk-checks all QS lines
-against Wikidata using SPARQL. If a Wikidata item already has the correct
-P6262 (Fandom article ID) value, the line is removed from the page.
+Reads [[QuickStatements/P6262]] on shintowiki and removes lines whose
+Wikidata item already carries the same P6262 (Fandom article ID) value.
 
-Mirror of clean_p11250_quickstatements.py — same shape, only the
-property differs (P6262 vs P11250). Both use the same colon-separated
-value form ``shinto:Title``; the property itself is what discriminates
-the Fandom link from the Miraheze one. See clean_p11250_quickstatements
-for the design rationale.
+Strategy: ONE SPARQL query that returns every (item, value) pair on
+Wikidata where ``P6262`` starts with ``"shinto:"`` (the Fandom subdomain
+identifier). The QS page lines are filtered locally against that result
+set — no per-QID API traffic.
+
+Mirror of clean_p11250_quickstatements.py — same shape and rationale,
+only the property differs (P6262 = Fandom article ID; P11250 = Miraheze
+article ID). Both use the same colon-separated value form
+``shinto:Title``; the property is what discriminates the Fandom link
+from the Miraheze one.
 
 Default mode is dry-run. Use --apply to actually edit the wiki page.
 """
@@ -54,7 +58,11 @@ Each line below adds a <code>P6262</code> claim linking a Wikidata item to its c
 QS_PAGE_FOOTER = "</pre>"
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
-SPARQL_BATCH_SIZE = 200
+# Prefix the P6262 value must start with for us to count it as "the
+# same shinto.fandom.com page" — the QS page only ever generates lines
+# with this prefix, and any other value on the same QID belongs to a
+# different Fandom subdomain and is not relevant to our reconciliation.
+P6262_PREFIX = f"{FANDOM_SUBDOMAIN}:"
 
 _retry_strategy = Retry(
     total=5,
@@ -80,28 +88,28 @@ def sparql_query(query):
     return resp.json().get("results", {}).get("bindings", [])
 
 
-def bulk_check_p6262(qids):
-    result = {}
-    batches = [qids[i:i + SPARQL_BATCH_SIZE] for i in range(0, len(qids), SPARQL_BATCH_SIZE)]
-    for batch_num, batch in enumerate(batches, 1):
-        print(f"  SPARQL batch {batch_num}/{len(batches)} ({len(batch)} QIDs)...")
-        values_clause = " ".join(f"wd:{qid}" for qid in batch)
-        query = f"""
+def fetch_existing_p6262() -> dict[str, list[str]]:
+    """Single SPARQL query: every (item, value) pair on Wikidata where
+    P6262 starts with ``shinto:``. Returns a ``{qid: [values...]}``
+    dict that the caller filters QS lines against locally.
+
+    See clean_p11250_quickstatements.fetch_existing_p11250 for the
+    design rationale — this is the P6262 mirror of that function."""
+    query = f"""
 SELECT ?item ?value WHERE {{
-  VALUES ?item {{ {values_clause} }}
   ?item wdt:P6262 ?value .
+  FILTER(STRSTARTS(?value, "{P6262_PREFIX}"))
 }}
 """
-        try:
-            bindings = sparql_query(query)
-            for row in bindings:
-                qid = row["item"]["value"].rsplit("/", 1)[-1]
-                value = row["value"]["value"]
-                result.setdefault(qid, []).append(value)
-        except Exception as e:
-            print(f"   ! SPARQL batch {batch_num} failed: {e}", file=sys.stderr)
-        if batch_num < len(batches):
-            time.sleep(2)
+    print(f"  one SPARQL query: all P6262 values starting {P6262_PREFIX!r} ...")
+    bindings = sparql_query(query)
+    result: dict[str, list[str]] = {}
+    for row in bindings:
+        qid = row["item"]["value"].rsplit("/", 1)[-1]
+        value = row["value"]["value"]
+        result.setdefault(qid, []).append(value)
+    print(f"  got {sum(len(v) for v in result.values())} (item, value) row(s) "
+          f"across {len(result)} item(s)")
     return result
 
 
@@ -139,9 +147,11 @@ def main():
         print("Nothing to check.")
         return
 
-    print(f"\nBulk checking {len(qs_entries)} items via SPARQL...")
-    existing_p6262 = bulk_check_p6262(list(qs_entries.keys()))
-    print(f"SPARQL found P6262 values on {len(existing_p6262)} items")
+    # Single SPARQL fetch of every P6262 value on Wikidata that starts
+    # with ``shinto:``. We then filter the QS page's QIDs against this
+    # global dict locally — no per-QID API traffic.
+    print(f"\nFetching all P6262 ({P6262_PREFIX!r}-prefixed) values on Wikidata via SPARQL...")
+    existing_p6262 = fetch_existing_p6262()
 
     removed = []
     for qid, expected in qs_entries.items():
