@@ -6,23 +6,21 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Action items
 
-1. **Enable `interlang_consolidate` in cleanup-loop.** The op is implemented on all four orchestrators and gated by `ENABLE_INTERLANG_CONSOLIDATE=1`. The original blocker was `Template:Wikidata link` not supporting the new positional `|lang|title` pairs; the template is now in `git_synced/` so edits can be made locally and CI-pushed. Flip `enable_interlang_consolidate: true` on the four orchestrator calls in `.github/workflows/cleanup-loop.yml` once the template has been updated.
+1. **Review the 4667 files in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. Siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
 
-2. **Review the 4667 files in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. Siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
+2. **Investigate `fix_double_redirects` flailing.** Run https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/24744680692/job/72417848749 had `mainspace-orchestrator` hit the 2h timeout. If `Special:DoubleRedirects` keeps producing the same pages run after run, the script is fighting itself. Check whether this is still happening on recent runs and fix.
 
-3. **Investigate `fix_double_redirects` flailing.** Run https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/24744680692/job/72417848749 had `mainspace-orchestrator` hit the 2h timeout. If `Special:DoubleRedirects` keeps producing the same pages run after run, the script is fighting itself. Check whether this is still happening on recent runs and fix.
+3. **Fix Shikinaisha pages with broken ILL "Unknown" destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
 
-4. **Fix Shikinaisha pages with broken ILL "Unknown" destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
+4. **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
 
-5. **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
+5. **Investigate `replace_p1027_with_p459.txt`** — file exists in `modern-quickstatements/`, purpose unclear. Determine origin, whether ever submitted; remove or integrate.
 
-6. **Investigate `replace_p1027_with_p459.txt`** — file exists in `modern-quickstatements/`, purpose unclear. Determine origin, whether ever submitted; remove or integrate.
+6. **Verify all fandom `Template:Infobox X` pages are converted to Portable Infobox.** `fandom_unique/` has 255 `Template%3AInfobox*.wiki` files; previously identified ~250 needing hand-conversion. Confirm completion; finish any stragglers.
 
-7. **Verify all fandom `Template:Infobox X` pages are converted to Portable Infobox.** `fandom_unique/` has 255 `Template%3AInfobox*.wiki` files; previously identified ~250 needing hand-conversion. Confirm completion; finish any stragglers.
+7. **Bump deprecated Node 20 actions** — `actions/checkout@v4` and `actions/setup-python@v5` will be force-migrated to Node 24 by 2026-06-02. Update before then.
 
-8. **Bump deprecated Node 20 actions** — `actions/checkout@v4` and `actions/setup-python@v5` will be force-migrated to Node 24 by 2026-06-02. Update before then.
-
-9. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing.
+8. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing.
 
 ## Pinned notes
 
