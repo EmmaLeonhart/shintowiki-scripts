@@ -43,11 +43,12 @@ import requests
 from ..common import REDIRECT_RE
 
 NAME = "wikidata_lookup"
-# Same coverage as interlang_consolidate — every wikitext namespace.
-NAMESPACES = (
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-    421, 829, 861, 863,
-)
+# Mainspace, Template, Category only — matches interlang_consolidate's
+# scope and the user directive (2026-05-08): wikidata links are only
+# meaningful on these three namespaces, so don't fill/refresh them on
+# User/Project/File/Help/Talk pages even if older runs left a template
+# there.
+NAMESPACES = (0, 10, 14)
 PRE_HEAVY = True
 
 WD_LINK_RE = re.compile(

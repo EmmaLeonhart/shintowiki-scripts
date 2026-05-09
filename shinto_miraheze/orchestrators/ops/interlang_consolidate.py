@@ -50,11 +50,12 @@ import os
 import re
 
 NAME = "interlang_consolidate"
-# Every wikitext namespace — same coverage as history_offload.
-NAMESPACES = (
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-    421, 829, 861, 863,
-)
+# Mainspace, Template, Category only. The op's main side effect when a
+# page has interwikis but no existing {{wikidata link}} template is to
+# CREATE one — and per user directive (2026-05-08), wikidata links are
+# only meaningful on these three namespaces. User/Project/File/Help/
+# Talk pages that happen to carry stray interwikis are left alone.
+NAMESPACES = (0, 10, 14)
 
 # Run before heavy ops so the consolidated text (no stranded interwikis)
 # is what fandom_mirror and the XML archive capture inside history_offload.
