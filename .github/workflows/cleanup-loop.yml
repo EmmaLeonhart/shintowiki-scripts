@@ -63,18 +63,33 @@ jobs:
 
       - id: check
         run: |
-          # Per-orchestrator edit limits. Mainspace/template at 100,
-          # category at 500 (catch-up window 2026-04-23 → 2026-06-01: it
-          # has never completed a full cycle and growth is slow). The
-          # per-namespace misc orchestrators (user/project/file/help/
-          # geojson/module/item/property/talk) each take 10/run via the
-          # ns-orchestrator-runner; misc-edit-limit below is just the
-          # uniform per-namespace cap.
-          echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
-          echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
-          echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
-          echo "misc-edit-limit=10"       >> "$GITHUB_OUTPUT"
-          echo "Default: mainspace/template 100, category 500 (catch-up), misc 10/ns."
+          # Per-orchestrator edit limits.
+          #
+          # Pre-June-2026 push (window 2026-05-08 → 2026-06-01):
+          #   mainspace 500 (history-offload catch-up — fandom mirroring
+          #     is mostly done and we want to flush the remaining queue
+          #     before history_offload's June cutoff)
+          #   category  500 (catch-up window: never completed a full cycle)
+          #   template   10 (low-priority: small namespace, mostly stable)
+          #   misc       10 per ns (low-stakes content)
+          #
+          # On/after 2026-06-01: revert mainspace and template to the
+          # steady-state cap of 100 each. Category catch-up also ends
+          # naturally — drop it back to 100.
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "$TODAY" \< "2026-06-01" ]; then
+            echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=10"   >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
+            echo "misc-edit-limit=10"       >> "$GITHUB_OUTPUT"
+            echo "Pre-June push (until 2026-06-01): mainspace 500, category 500, template 10, misc 10/ns."
+          else
+            echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
+            echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=100"  >> "$GITHUB_OUTPUT"
+            echo "misc-edit-limit=10"       >> "$GITHUB_OUTPUT"
+            echo "Steady state (post-2026-06-01): mainspace/template/category 100, misc 10/ns."
+          fi
 
           # Wikidata-edit daily gate: fire on the FIRST cron run of each
           # UTC day, or any non-schedule trigger (workflow_dispatch / push).

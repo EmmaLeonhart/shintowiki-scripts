@@ -44,6 +44,7 @@ apply() ops see the page — so downstream per-page ops act on the
 recreated banner-only version.
 """
 
+import datetime
 import os
 import re
 import urllib.parse
@@ -51,6 +52,15 @@ import urllib.parse
 from . import _archive_repo, fandom_mirror
 
 NAME = "history_offload"
+
+# Hard cutoff date: starting on this UTC date, the op becomes a permanent
+# no-op even if ENABLE_HISTORY_OFFLOAD=1 is still set. Fandom offloading
+# is essentially complete; once we've drained the remaining queue with
+# the pre-June mainspace 500-edit budget (see cleanup-loop.yml's
+# window-gate), we don't want orchestrator cycles continuing to mirror +
+# archive + delete-recreate forever. Override by editing this constant
+# (or setting FORCE_HISTORY_OFFLOAD_PAST_CUTOFF=1) if needed later.
+CUTOFF_DATE = datetime.date(2026, 6, 1)
 
 # Belt-and-suspenders redirect guard. common.run_orchestrator already
 # skips redirects before any op runs, but offloading a redirect page's
@@ -207,6 +217,17 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
     """
     if os.getenv("ENABLE_HISTORY_OFFLOAD") != "1":
         return False, "history_offload disabled (set ENABLE_HISTORY_OFFLOAD=1 to enable)"
+
+    # June 2026 cutoff: fandom offloading is wrapping up and we don't
+    # want orchestrator cycles continuing to mirror + delete-recreate
+    # past that date. Override with FORCE_HISTORY_OFFLOAD_PAST_CUTOFF=1
+    # if a one-off backfill run is needed after the cutoff.
+    today = datetime.datetime.utcnow().date()
+    if today >= CUTOFF_DATE and os.getenv("FORCE_HISTORY_OFFLOAD_PAST_CUTOFF") != "1":
+        return False, (
+            f"history_offload disabled past cutoff {CUTOFF_DATE.isoformat()} "
+            f"(set FORCE_HISTORY_OFFLOAD_PAST_CUTOFF=1 to override for a one-off run)"
+        )
 
     # Use the full title (with namespace prefix); the archive repo shards
     # files by namespace folder to avoid collisions between e.g. mainspace
