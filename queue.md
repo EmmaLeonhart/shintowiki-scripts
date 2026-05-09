@@ -8,7 +8,6 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 1. **Review the 4667 files in `xml/unknown/`** in EmmaLeonhart/shintowiki-xml-archives. Siteinfo-only placeholders from runs where Special:Export returned empty. Confirm none contain real data; delete as a batch once verified. The `history_offload` guard added in 845da03 prevents new placeholders from accumulating.
 
-2. **Script to recreate deleted Wikidata items** — a batch of items created for ILL targets were deleted by another editor on Wikidata. Build a script that re-creates items for the deleted QIDs we still reference locally, with stronger sourcing. Script runs with orchestrator per page and creates the wikidata item.
 
 ## Pinned notes
 
