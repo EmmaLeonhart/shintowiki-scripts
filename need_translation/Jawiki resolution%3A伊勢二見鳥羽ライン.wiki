@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Jawiki_resolution%3A%E4%BC%8A%E5%8B%A2%E4%BA%8C%E8%A6%8B%E9%B3%A5%E7%BE%BD%E3%83%A9%E3%82%A4%E3%83%B3 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25075158020|manual triggered pipeline]] -->
-Tracking page for resolving the Japanese Wikipedia article [[:ja:伊勢二見鳥羽ライン]] against the shinto wiki.
+Tracking page for resolving the Japanese Wikipedia article {{ill|Ise-Futami-Toba Line|ja|伊勢二見鳥羽ライン}} against the shinto wiki.
 
 {{stub}}
 [[Category:Pages without wikidata]]
-[[Category:Need translation]]
 [[Category:Translated pages]]
