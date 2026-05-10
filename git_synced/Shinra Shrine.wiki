@@ -20,7 +20,16 @@
 * {{ill|Shinra Shrine (Tome City)|ja|新羅神社 (登米市)|12=simple|13=User:Immanuelle/Shinra Shrine (Tome City)|ja_comment=jawiki link invalid}} - Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome City}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}.  
 * {{ill|Shinra Shrine (Himeji City)|ja|新羅神社 (姫路市)|12=simple|13=User:Immanuelle/Shinra Shrine (Himeji City)|ja_comment=jawiki link invalid}} - Located in {{ill|Himeji|en|Himeji|qid=Q209801|lt=Himeji}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}.  
 
-{{disambiguation}}  
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines on Wikidata with this name ==
+
+* {{ill|Shinra Shrine (Q134988845)|lt=Shinra Shrine|qid=Q134988845}} — Zentsūji-shi
+* {{ill|Shinra Shrine (Q134989175)|lt=Shinra Shrine|qid=Q134989175}} — Zentsūji-shi
+* {{ill|Shiragi Shrine (Q135069904)|lt=Shiragi Shrine|qid=Q135069904}} — Echizen Province
+* {{ill|新羅神社 (Q134958253)|lt=新羅神社|qid=Q134958253}} — Chūō Ward
+<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|新羅神社|version=102227808|comment=Imported full ja history}}
 

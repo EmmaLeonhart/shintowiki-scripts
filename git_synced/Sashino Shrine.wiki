@@ -12,6 +12,18 @@
 
 {{disambiguation}}
 
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines on Wikidata with this name ==
+
+* {{ill|Sashino Shrine (Q135154243)|lt=Sashino Shrine|qid=Q135154243}} — Ishioka
+* {{ill|Sashino Shrine (Q17225838)|lt=Sashino Shrine|qid=Q17225838}} — Ishioka
+* {{ill|Sashinono Shrine (Q135039768)|lt=Sashinono Shrine|qid=Q135039768}} — Hitachi Province
+* {{ill|Sashinou Shrine (Q135069600)|lt=Sashinou Shrine|qid=Q135069600}}
+* {{ill|Sashinou Shrine (Hitachi Province) (Q135069601)|lt=Sashinou Shrine (Hitachi Province)|qid=Q135069601}} — Hitachi Province
+* {{ill|Sashinō Shrine (Q28684144)|lt=Sashinō Shrine|qid=Q28684144}} — Hitachi Province
+* {{ill|佐志能神社 (Q135153954)|lt=佐志能神社|qid=Q135153954}} — Ishioka
+<!-- END: auto-generated Wikidata shrine list -->
+
 {{translated page|ja|佐志能神社|version=72754582|comment=Imported full ja history}}
 
 {{wikidata link|Q27500771|ja|佐志能神社|ja|%E4%BD%90%E5%BF%97%E8%83%BD%E7%A5%9E%E7%A4%BE (%E7%AC%A0%E9%96%93%E5%B8%82)|ja|佐志能神社 (笠間市)|check_date=2026-05-09}}
