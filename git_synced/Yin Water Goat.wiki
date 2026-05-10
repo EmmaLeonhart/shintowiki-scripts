@@ -1,16 +1,16 @@
 <!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
-{{infobox Chinese|l=Yin Water Goat|kanji=癸未|romaji=mizunoto hitsuji|onyomi=kimbi|p=guǐwèi|w=kuei-wei|mi=kʷeɪ̯²¹ weɪ̯|y=gwai2 mei6|j=gwai2 mei6|ci=kʷɐi mei|mc=kjwɨj mei|oc-bs=kʷeʔ mei|qq=}}
-{{Sexagenary cycle|qq=}}
-'''Yin Water Goat also known as  癸未''' (Mizunoto-hitsuji, Kisui-no-hitsuji, Kibi) is one of the [[Sexagenary cycle|Chinese sexagenary cycle signs]].
+{{infobox Chinese|l=Yin Water Goat|kanji=癸未|romaji=mizunoto hitsuji|onyomi=kimbi|p=guǐwèi|w=kuei-wei|mi=kʷeɪ̯²¹ weɪ̯|y=gwai2 mei6|j=gwai2 mei6|ci=kʷɐi mei|mc=kjwɨj mei|oc-bs=kʷeʔ mei}}
+{{Sexagenary cycle}}
+'''Yin Water Goat''' (癸未, ''mizunoto hitsuji''; onyomi ''kimbi'') is the 20th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 20th in the cycle of combinations. The preceding sign is {{ill|Yang Water Horse|ja|1=Yang Water Horse|2=ja|壬午|12=simple|13=User:Immanuelle/Yang Water Horse|ja_comment=jawiki link invalid}}, and the following sign is {{ill|Jia Shen|ja|1=Yang Wood Monkey|2=ja|甲申|1=Yang Wood Monkey|12=simple|13=User:Immanuelle/Jia Shen|13=User:Immanuelle/Yang Wood Monkey|ja_comment=jawiki link invalid}}. According to the [[Yin-yang and the Five Elements theory|Yin-Yang and Five Elements theory]], the [[Ten Heavenly Stems|Heavenly Stem]] 癸 represents Yin Water, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} 未 represents Yin Earth, forming a relationship of [[Five Elements#Controlling cycle|mutual restraint]] (Earth restrains Water).
+It is the 20th in the cycle of combinations. The preceding sign is {{ill|Yang Water Horse|ja|壬午|1=Yang Water Horse|2=ja|12=simple|13=User:Immanuelle/Yang Water Horse|ja_comment=jawiki link invalid}}, and the following sign is {{ill|Jia Shen|ja|甲申|1=Yang Wood Monkey|2=ja|12=simple|13=User:Immanuelle/Jia Shen|ja_comment=jawiki link invalid}}. According to the [[Yin-yang and the Five Elements theory|Yin-Yang and Five Elements theory]], the [[Ten Heavenly Stems|Heavenly Stem]] 癸 represents Yin Water, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} 未 represents Yin Earth, forming a relationship of [[Five Elements#Controlling cycle|mutual restraint]] (Earth restrains Water).
 
 ==Pronunciation==
 * English: Yin Water Goat (癸未)
 ** Chinese (Mandarin Pinyin): guǐwèi
 ** Cantonese (Jyutping): gwai2 mei6
-**  Japanese:
+** Japanese:
 ***Kunyomi 1: Mizunoto-hitsuji
 ***Kunyomi 2: Kisui-no-hitsuji
 ***Onyomi 1: kingi
@@ -81,7 +81,7 @@ Years in which the remainder when divided by 60 is 23 correspond to 癸未 in th
 |}
 
 ==Months of Yin Water Goat==
-The sixth month in years where the last digit of the Western year is 0 or 5 (corresponding to the Heavenly Stems {{ill|Geng|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|1=Kanoe (庚)|12=simple|13=User:Immanuelle/Geng|13=User:Immanuelle/Kanoe (庚)|qq=}} and {{ill|Yi|ja|乙|1=Kinoto (乙)|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|1=Kinoto (乙)|12=simple|13=User:Immanuelle/Yi|13=User:Immanuelle/Kinoto (乙)|qq=}}) is a 癸未 month. This month may also refer to [[Japanese Lunisolar Calendar|lunar months]] or [[solar term months]] (from [[:en:Lesser Heat|Lesser Heat]] to the day before [[:en:Beginning of Autumn|Beginning of Autumn]]).
+The sixth month in years where the last digit of the Western year is 0 or 5 (corresponding to the Heavenly Stems {{ill|Geng|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|12=simple|13=User:Immanuelle/Geng}} and {{ill|Yi|ja|乙|1=Kinoto (乙)|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Yi}}) is a 癸未 month. This month may also refer to [[Japanese Lunisolar Calendar|lunar months]] or [[solar term months]] (from [[:en:Lesser Heat|Lesser Heat]] to the day before [[:en:Beginning of Autumn|Beginning of Autumn]]).
 
 ==Days of Yin Water Goat==
 Days with the 癸未 combination are designated as the sixth day of {{ill|Xiaodu|ja|犯土|12=simple|13=User:Immanuelle/Xiaodu|1=Tsuchi (Japanese term)|comment=changed title based on wikidata|qid=Q11571306}}.
@@ -90,14 +90,13 @@ Days with the 癸未 combination are designated as the sixth day of {{ill|Xiaodu
 Days of 癸未 carry special selection rules under the calendar system.
 
 == Related Articles ==
-* {{prefix|qq=}}
-* {{intitle|qq=}}
+* {{prefix}}
+* {{intitle}}
 
-{{translated page|ja|qq=Yin Water Goat|qq=ja|癸未|version=84123771|comment=Imported full ja history}}
+{{translated page|ja|qq=Yin Water Goat|癸未|version=84123771|comment=Imported full ja history}}
 
-{{wikidata link|Q1062599|af|Waterbok (astrologie)|cdo|Gŭi-ê|de|Wasser-Schaf|fr|Chèvre d'eau|hak|Kui-vi|ja|癸未|ko|계미|nds|Water-Schaap|vi|Quý Mùi|za|Gveiqmeih|zh-min-nan|Kùi-bī|zh-yue|癸未|zh|癸未|zh-min-nan|Kui-chhiū|cdo|Kui-cṳ̄de|nds|Wasser-Ziegenevi|de|Yin Water Goat|fr|Chèvre de eau|fr|Ch%C3%A8vre d%27eau|zh|%E7%99%B8%E6%9C%AA|de|Wasser-Ziegeneen|en|Water Goat|fr|Chèvre de eauboishak|it|Kui-chṳ́id|za|Gueiceij|ar|Yin Water Goat}}
+{{wikidata link|Q1062599|af|Waterbok (astrologie)|cdo|Gŭi-ê|de|Wasser-Schaf|fr|Chèvre d'eau|hak|Kui-vi|ja|癸未|ko|계미|nds|Water-Schaap|vi|Quý Mùi|za|Gveiqmeih|zh-min-nan|Kùi-bī|zh-yue|癸未|zh|癸未|en|Water Goat|it|Kui-chṳ́id|ar|Yin Water Goat}}
 [[Category:Sexagenary cycle]]
-[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]
