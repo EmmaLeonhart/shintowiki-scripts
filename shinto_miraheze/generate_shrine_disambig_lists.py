@@ -353,20 +353,58 @@ SECTION_BLOCK_RE = re.compile(
 
 def insert_or_replace_block(text: str, block_body: str) -> str:
     """Replace the existing auto-generated block, or insert one
-    just before the page's categories (so the section sits between
-    the curated body and the wiki-syntax footer)."""
+    just before the page's *footer* — the trailing block of
+    {{translated page}} / {{wikidata link}} / [[Category:...]] lines
+    that sits after the article body.
+
+    Earlier version inserted before the first [[Category:...]] line,
+    which bit us because most shrine pages carry
+    [[Category:git synced pages]] up top (right after the syncing
+    instruction comment) — that's not the footer category block, so
+    the auto-generated section ended up above the actual page body.
+    """
     block = f"{BEGIN_MARKER}\n{block_body}{END_MARKER}\n"
 
     if SECTION_BLOCK_RE.search(text):
         return SECTION_BLOCK_RE.sub(block.rstrip(), text)
 
-    # Find the first [[Category:...]] line and insert before it
-    cat_match = re.search(r"^\[\[Category:", text, re.M)
-    if cat_match:
-        i = cat_match.start()
+    # Prefer inserting just before the {{translated page}} or
+    # {{wikidata link}} template — these consistently mark the start
+    # of the trailing footer block.
+    for pat in (
+        r"\n\{\{translated page\b",
+        r"\n\{\{wikidata link\b",
+    ):
+        m = re.search(pat, text)
+        if m:
+            i = m.start() + 1  # keep the preceding newline attached to body
+            return text[:i].rstrip() + "\n\n" + block + "\n" + text[i:]
+
+    # Otherwise locate the FINAL contiguous block of `[[Category:...]]`
+    # lines: find the last category line, walk back through any
+    # preceding Category lines + blank-line gaps, then insert just
+    # before the start of that block.
+    cats = list(re.finditer(r"^\[\[Category:[^\]]*\]\]\s*$", text, re.M))
+    if cats:
+        # Walk forward from each Category match: the "footer block" is
+        # the maximal trailing run of Category-only lines (allowing
+        # blank lines and trailing whitespace). Start from the last
+        # match and walk backward through prior Category-lines.
+        last = cats[-1]
+        start_idx = last.start()
+        # Scan upwards for prior consecutive Category lines
+        prior_idx = start_idx
+        for cm in reversed(cats[:-1]):
+            between = text[cm.end():prior_idx]
+            # Allow only whitespace/newlines between categories
+            if re.fullmatch(r"\s*", between):
+                prior_idx = cm.start()
+            else:
+                break
+        i = prior_idx
         return text[:i].rstrip() + "\n\n" + block + "\n" + text[i:]
 
-    # No categories — append at end
+    # No categories at all — append at end
     return text.rstrip() + "\n\n" + block
 
 
