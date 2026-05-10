@@ -1,0 +1,19 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Ōmushi Jinja''' (大虫神社) is the name of several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}}.
+
+* {{ill|Ōmushi Shrine (Echizen)|ja|大虫神社|3=大虫神社 (越前市)|12=simple|13=User:Immanuelle/Ōmushi Shrine (Echizen)|qq=}} - Located in Echizen City, Fukui Prefecture.
+* {{ill|Ōmushi Shrine (Yosano)|ja|大虫神社 (与謝野町)|12=simple|13=User:Immanuelle/Ōmushi Shrine (Yosano)|qq=}} - Located in Yosano, Yosa District, Kyoto Prefecture.
+
+{{disambiguation}}
+
+{{translated page|ja|大虫神社|version=39256620|comment=Imported full ja history}}
+
+{{wikidata link|Q11438781|ja|大虫神社}}
+[[Category: disambiguation pages]]
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

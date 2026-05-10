@@ -1,0 +1,25 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shikobuchi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25602223329|time triggered pipeline]] -->
+
+'''Shikobuchi Jinja''' (思子淵神社) refers to multiple {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shrines}} located in the {{ill|Ado River|ja|安曇川|12=simple|13=User:Immanuelle/Azumi River|comment=changed title based on wikidata|qid=Q11450763}} basin, including {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}}'s {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima City}} and {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}}.
+
+* {{ill|Shikobuchi Shrine (Takashima City)|ja|思子淵神社 (高島市安曇川町中野)|12=simple|13=User:Immanuelle/Shikobuchi Shrine (Takashima City)|qq=}} - Located in Azumi-gawa Town.
+* {{ill|Shikobuchi Jinja (Takashima City, Kutsuki Ogawa)|ja|思子淵神社 (高島市朽木小川)|12=simple|13=User:Immanuelle/Shikobuchi Jinja (Takashima City, Kutsuki Ogawa)|ja_comment=jawiki link invalid}} - Located in Kutsuki Ogawa.
+* {{ill|Shikobuchi Jinja (Takashima City, Kutsuki Taira)|ja|思子淵神社 (高島市朽木平良)|12=simple|13=User:Immanuelle/Shikobuchi Jinja (Takashima City, Kutsuki Taira)|ja_comment=jawiki link invalid}} - Located in Kutsuki Taira.
+* {{ill|Shikobuchi Shrine (Kyoto City, Sakyo-ku, Kuta)|ja|思古渕社|12=simple|13=User:Immanuelle/Shikobuchi Shrine (Kyoto City, Sakyo-ku, Kuta)|qq=}} - Located in Kuta, Sakyo-ku, Kyoto.
+
+== Related Articles ==
+* {{ill|Seven Shikobuchi Shrines|lt=Seven Shikobuchi Shrines|lt=Seven Shikobuchi|ja|七シコブチ|12=simple|13=User:Immanuelle/Seven Shikobuchi|qq=}}
+
+{{disambiguation}}
+
+{{translated page|ja|思子淵神社|version=101902228|comment=Imported full ja history}}
+
+{{wikidata link|Q11491513|ja|思子淵神社|check_date=2026-05-09}}
+[[Category:All disambiguation pages]]
+[[Category:Shinto shrines by tradition]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

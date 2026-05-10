@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Water Rooster|kanji=癸酉|romaji=mizunoto tori|onyomi=kiyū|p=guǐyǒu|w=kuei-yu|mi=kʷeɪ̯²¹ i̯ɤʊ̯²¹|y=gwai2 jau5|j=gwai2 jau5|ci=kʷɐi jɐu²|mc=kjwɨj jɨuX|oc-bs=kʷeʔ ɢʷɯʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -92,6 +93,7 @@ The day of {{ill|Kiyuu|ja|癸酉|1=Yin Water Rooster|2=ja|3=癸酉|4=zh|5-癸酉
 
 {{wikidata link|Q655662|af|Waterhaan (astrologie)|cdo|Gŭi-iū|de|Wasser-Hahn|fr|Coq d'eau|hak|Kui-yû|ja|癸酉|ko|계유|nds|Water-Hahn|vi|Quý Dậu|za|Gveiqyoux|zh-min-nan|Kùi-iú|zh-yue|癸酉|zh|癸酉|zh-min-nan|Kui-chhiū|cdo|Kui-cṳ̄de|nds|Wasser-Hahnvi|de|Yin Water Rooster|fr|Coq de eau|de|Wasser-Hahneen|en|Water Rooster|fr|Coq de eauboishak|it|Kui-chṳ́id|za|Gueiceij|ar|Yin Water Rooster}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

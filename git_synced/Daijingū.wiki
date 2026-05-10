@@ -1,0 +1,74 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Daijing%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24975162458|time triggered pipeline]] -->
+
+'''Daijingu''' (大神宮) is a name for shrines which are franches of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}. While the name implies a higher Rank than {{ill|List of Jingū|en|List of Jingū|qid=Q120680118|lt=Jingu|1=List of Jingū}}, they are named in reference to [[Ise Grand Shrine]] and are different from the independently highly Ranked {{ill|List of Jingū|en|List of Jingū|qid=Q120680118|lt=Jingu|1=List of Jingū}} Shrines on that article.
+== List of Daijingu Shrines by Founding Year ==
+* {{ill|Ōhi Shrine|en|Ōhi Shrine|qid=Q3090870|lt='''Funabashi Daijingū'''|1=Ōhi Shrine}}
+* {{ill|Tensho Kotaijingu|ja伊勢山皇大神宮|1=Ino Tenshō Kōtai Jingū|2=ja|3=天照皇大神宮|12=simple|13=User:Immanuelle/Tensho Kotaijingu|13=User:Immanuelle/Tenshō Kōtai Jingū|comment=changed title based on wikidata|qid=Q17218394}} (天照皇大神宮)
+** Location: {{ill|Kasuyagun Hisayamamachi|ja|糟屋郡久山町|12=simple|13=User:Immanuelle/Kasuyagun Hisayamamachi|ja_comment=jawiki link invalid}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}, Ino 604
+** Nicknamed "Kyushu's Ise Shrine."
+** Tradition holds that it was enshrined by {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū|1=Empress Jingū}}, the consort of the 14th Emperor {{ill|Emperor Chūai|en|Emperor Chūai|qid=Q179971|lt=Chūai|1=Emperor Chūai}} and mother of the 15th Emperor {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Ōjin|1=Emperor Ōjin}}.
+** Moved to its current location around 1677 by {{ill|Kuroda Mitsuyuki|ja|黒田光之|12=simple|13=User:Immanuelle/Kuroda Mitsuyuki|1=Kuroda Mitsuyuki|comment=changed title based on wikidata|qid=Q11678571}}.
+* {{ill|Himukai-daijingū|ja|日向大神宮|12=simple|13=User:Immanuelle/Himukai-daijingū|qq=}} (日向大神宮)
+** Nicknamed "Kyoto's Ise Shrine."
+** Tradition states it was established by imperial decree of the 23rd Emperor {{ill|Emperor Kenzō|en|Emperor Kenzō|qid=Q360966|lt=Kenzo|1=Emperor Kenzō}}, enshrining the deity from the sacred site of Takachiho in Hyūga (modern-day {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture|1=Miyazaki Prefecture}}).
+* {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}
+** The Inner Shrine of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}.
+** The system of {{ill|Jingū Shikinen Sengū|lt=Shikinen Sengū|ja|式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|ja_comment=jawiki redirects to 遷宮}} was established in the 14th year of Emperor {{ill|Tenmu|ja|Emperor Tenmu|1=Emperor Tenmu|2=ja|3=天武天皇|1=Emperor Tenmu|12=simple|13=User:Immanuelle/Tenmu|13=User:Immanuelle/Emperor Tenmu|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q335181}} (685), with the first ceremony held in the 4th year of Emperor {{ill|Empress Jitō|en|Empress Jitō|qid=Q232026|lt=Jitō|1=Empress Jitō}} (690).
+* {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}}
+** The Outer Shrine of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}.
+** The first {{ill|Jingū Shikinen Sengū|lt=Shikinen Sengū|ja|式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|ja_comment=jawiki redirects to 遷宮}} was held in the 6th year of Emperor Jitō (692).
+* {{ill|Yamaguchi Daijingu|ja|山口大神宮|12=simple|13=User:Immanuelle/Yamaguchi Daijingu|qq=}}
+** Nicknamed "The Ise Shrine of the West."
+** Founded in 1520 (Eishō 17) by {{ill|Ōuchi Yoshioki|en|Ōuchi Yoshioki|qid=Q909270|lt=Ōuchi Yoshioki|1=Ōuchi Yoshioki}}, the 30th head of the Ōuchi clan, who enshrined the deity of Ise Grand Shrine.
+* {{ill|Isehara Daijingu|ja|伊勢原大神宮|12=simple|13=User:Immanuelle/Isehara Daijingu|1=Isehara Daijingu|comment=changed title based on wikidata|qid=Q11378955}}
+** Nicknamed "The Ise Shrine of Kanto."
+** Enshrined around 1620 by Yamada Soemon and others. There is no record of an imperial decree from {{ill|Emperor Go-Mizunoo|en|Emperor Go-Mizunoo|qid=Q320229|lt=Emperor Gomizunoo|1=Emperor Go-Mizunoo}}.
+* {{ill|Kaiseizan Daijingu|ja|開成山大神宮|12=simple|13=User:Immanuelle/Kaiseizan Daijingu|1=Kaiseizan Daijingū|comment=changed title based on wikidata|qid=Q11655234}}
+** Nicknamed "The Ise Shrine of Tohoku."
+** Authorized by the Shrine Bureau in 1876 through the efforts of Chūjō Masatsune.
+* {{ill|Tokyo Daijingu|en|Tokyo Daijingu|qid=Q11524717|lt=Tokyo Daijingu|1=Tokyo Daijingu}}
+** Nicknamed "The Ise Shrine of Tokyo."
+** Established in 1880 as a remote worship hall of the Inner Shrine of Ise. Burned down in the 1923 {{ill|Great Kanto Earthquake|ja|関東大震災|12=simple|13=User:Immanuelle/Great Kanto Earthquake|1=aftermath of 1923 Great Kantō earthquake|comment=changed title based on wikidata|qid=Q3742341}} and relocated to {{ill|Iidabashi|en|Iidabashi|qid=Q5994914|lt=Iidabashi|1=Iidabashi}} in 1928.
+* [[Ubagami Daijingū]]
+** Located in Esahi Hokkaido
+* {{ill|Iseyama Kōtai Jingu|ja伊勢山皇大神宮|1=Iseyama Kōtai Jingū|2=fr|3=Iseyama Kotai Jingu|4=ja|5=伊勢山皇大神宮|6=zh|7=伊勢山皇大神宮|12=simple|13=User:Immanuelle/Iseyama Kōtai Jingu|13=User:Immanuelle/Iseyama Kōtai Jingū|qq=}}
+** Location: 64 Miyazaki-chō, Nishi-ku, Yokohama, Kanagawa Prefecture
+** Nicknamed "The Ise Shrine of Kanto."
+** Relocated to its current site in April 1870. Designated the principal shrine of Kanagawa Prefecture by the Meiji government in December 1870.
+* Tensho Kotaijingu (てんしょうこうたいじんぐう)
+** Location: Ida Nakanomachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture
+* Tensho Kotaijingu (てんしょうこうたいじんぐう)
+** Location: Oaza Kurakake, Azakamiwara, Tōmi City, Nagano Prefecture
+*
+== Unsorted translated ==
+* [[Nakatsu Daijingū]]
+* {{ill|Daijingu Shrine|ja|大神宮神社|12=simple|13=User:Immanuelle/Daijingu Shrine|1=Daijingu Shrine|comment=changed title based on wikidata|qid=Q22119221}}
+* {{ill|Shiba Dai-jingū|pl|4=ja|5=芝大神宮|12=simple|13=User:Immanuelle/Shiba Dai-jingū|qq=}}
+* {{ill|Wakamiya Hachiman Daijingū|ja|若宮八幡大神宮|12=simple|13=User:Immanuelle/Wakamiya Hachiman Daijingū|qq=}} (note not for amaterasu)
+
+*
+*
+== Other ==
+* {{ill|Daijingu (Sakuragawa)|ja|大神宮 (桜川市)|12=simple|13=User:Immanuelle/Daijingu (Sakuragawa)|qq=}}
+* {{ill|Daijingu (Tateyama)|ja|大神宮 (館山市)|12=simple|13=User:Immanuelle/Daijingu (Tateyama)|ja_comment=jawiki link invalid}} - A place name in {{ill|Tateyama, Chiba|en|Tateyama, Chiba|qid=Q646755|lt=Tateyama, Chiba Prefecture|1=Tateyama, Chiba}}, derived from the local {{ill|Awa Shrine|en|Awa Shrine|qid=Q705547|lt=Awa Shrine|1=Awa Shrine}}.
+== Related Articles ==
+* {{ill|List of Jingū|en|List of Jingū|qid=Q120680118|lt=Jingu|1=List of Jingū}}
+* {{ill|Kōtai Jingū (disambiguation)|ja|皇大神宮 (曖昧さ回避)|12=simple|13=User:Immanuelle/Kōtai Jingū (disambiguation)|qq=}}
+* [[Hachiman Daijingū]]
+{{disambiguation}}
+
+Category:Daijingū
+Category:Daijingū
+
+{{translated page|ja|大神宮|version=104251241|comment=Imported full ja history}}
+
+{{wikidata link|Q109420327|ja|大神宮}}
+[[Category:All disambiguation pages]]
+[[Category:Shinto]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Translated pages]]

@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Wood Ox|kanji=乙丑|romaji=kinoto ushi|onyomi=otsuchū|p=yǐchǒu|w=i-ch'ou|mi=i²¹ ʈʂʰoʊ̯²¹|y=jyut6 cau2|j=jyut6 cau2|ci=jyt̚ tsʰɐu̯²|mc=ʔit tʂʰjuwX|oc-bs=Ɂik ʈʰuʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -97,6 +98,7 @@ Days of Kinoto-Ushi are associated with the following annotations in the {{ill|J
 
 {{wikidata link|Q599762|af|Houtos (astrologie)|cdo|Ĭk-tiū|de|Holz-Büffel|fr|Buffle de bois|hak|Yet-chhiú|ja|乙丑|ko|을축|nds|Holt-Oss|vi|Ất Sửu|za|Ietcouj|zh-min-nan|It-thiú|zh-yue|乙丑|zh|乙丑|zh-min-nan|Īt-chú|ceb|Wood Ox|cdo|Ék-cṳ̄de|nds|Holt-Büffelvi|de|Yin Wood Ox|de|Holz-Büffelen|en|Wood Ox|fr|Buffle de boishak|it|Yit-chṳ́id|vi|Ất Sửuza|za|Ietceij|ar|Yin Wood Ox}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Earth Goat|kanji=己未|romaji=tsuchinoto hitsuji|onyomi=kibi|p=jǐwèi|w=chi-wei|mi=t͡ɕi³⁵ weɪ̯|y=gei2 mei6|j=gei2 mei6|ci=kei mei|mc=kɨj mei|oc-bs=kɯʔ mei|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -93,6 +94,7 @@ The day of {{ill|Kibi|ja|1=Yin Earth Goat|2=ja|己未|12=simple|13=User:Immanuel
 
 {{wikidata link|Q904801|af|Aardbok (astrologie)|cdo|Gī-ê|de|Erde-Schaf|hak|Kí-vi|ja|己未|ko|기미|vi|Kỷ Mùi|za|Geijmeih|zh-min-nan|Kí-bī|zh-yue|己未|zh|己未|zh-min-nan|Teng-chik|zh-yue|丁亥|cdo|Dĭng-cṳ̄de|nds|Feuer-Varkvi|de|Yin Earth Goat|fr|Chèvre de terre|af|Vuurvark (astrologie)|de|Feuer-Schweineen|en|Fire Pig|fr|Cochon de feushak|it|Ding-chṳ́id|ko|정해|vi|Đinh Hợi|za|Dingceij|zh|丁亥|ar|Yin Earth Goat}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

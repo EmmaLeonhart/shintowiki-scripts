@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Wood Dragon|kanji=甲辰|romaji=kinoe tatsu|onyomi=kōshin|p=jiǎchén|w=chia-ch'en|mi=ʈ͡ʂja̠²¹ ʈʂʰən|y=gaap6 san4|j=gaap6 san4|ci=kaːp̚ sɐn|mc=kæp ɖin|oc-bs=kaːp ɖiŋ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -92,6 +93,7 @@ A Kōshin day is the 12th day of {{ill|Tennichitenjō|ja|天一天上|12=simple|
 
 {{wikidata link|Q904754|af|Houtdraak (astrologie)|cdo|Gák-sìng|de|Holz-Drache|hak|Kap-sìn|ja|甲辰|ko|갑진|vi|Giáp Thìn|za|Gyapsaenz|zh-min-nan|Kap-sîn|zh-yue|甲辰|zh|甲辰|zh-min-nan|Lîm-chin|zh-yue|壬申|cdo|Yîm-cṳ̄de|nds|Erd-Affenvi|de|Yang Wood Dragon|fr|Dragon de bois|af|Aardeaap (astrologie)|de|Erde-Affeneen|en|Earth Monkey|fr|Singe de terreboishak|it|Yim-chṳ́id|ko|임신 (간지)|vi|Nhâm Thân|za|Yimceij|zh|壬申|ar|Yang Wood Dragon}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

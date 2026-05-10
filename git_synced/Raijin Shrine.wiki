@@ -1,0 +1,45 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Raijin_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25518276466|time triggered pipeline]] -->
+
+'''Raijin Shrine''' (雷神社, Ikazuchi-jinja, Raijin-jinja, Kaminari-jinja) refers to Shinto shrines located throughout Japan.
+
+== Hokkaidō and Tōhoku Region ==
+* {{ill|Raijin Shrine (Daisen)|ja|雷神社 (大仙市)|12=simple|13=User:Immanuelle/Raijin Shrine (Daisen)|ja_comment=jawiki link invalid}} (Ikazuchi-jinja) - Located in {{ill|Daisen, Akita|en|Daisen, Akita|qid=Q695920|lt=Daisen}}, {{ill|Akita Prefecture|en|Akita Prefecture|qid=Q81863|lt=Akita Prefecture}}.
+* {{ill|Raijin Shrine (Kaminoyama)|ja|雷神社 (上山市)|12=simple|13=User:Immanuelle/Raijin Shrine (Kaminoyama)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Kaminoyama|en|Kaminoyama|qid=Q770187|lt=Kaminoyama}}, {{ill|Yamagata Prefecture|en|Yamagata Prefecture|qid=Q125863|lt=Yamagata Prefecture}}.
+* {{ill|Raijin Shrine (Kaneyama, Yamagata)|ja|雷神社 (山形県金山町)|12=simple|13=User:Immanuelle/Raijin Shrine (Kaneyama, Yamagata)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Kaneyama, Yamagata|en|Kaneyama, Yamagata|qid=Q1347444|lt=Kaneyama, Mogami District}}, Mogami District, Yamagata Prefecture.
+* {{ill|Raijin Shrine (Kawanishi, Yamagata)|ja|雷神社 (山形県川西町)|12=simple|13=User:Immanuelle/Raijin Shrine (Kawanishi, Yamagata)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Kawanishi, Yamagata|en|Kawanishi, Yamagata|qid=Q1349146|lt=Kawanishi, Higashiokitama District}}, Higashiokitama District, Yamagata Prefecture.
+* {{ill|Raijin Shrine (Shirataka)|ja|雷神社 (白鷹町)|12=simple|13=User:Immanuelle/Raijin Shrine (Shirataka)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Shirataka|en|Shirataka|qid=Q1354787|lt=Shirataka, Nishiokitama District}}, Nishiokitama District, Yamagata Prefecture.
+* {{ill|Raijin Shrine (Fukushima)|ja|雷神社 (福島市)|12=simple|13=User:Immanuelle/Raijin Shrine (Fukushima)|ja_comment=jawiki link invalid}} - Located in {{ill|Fukushima (city)|en|Fukushima (city)|qid=Q161176|lt=Fukushima}}, {{ill|Fukushima Prefecture|en|Fukushima Prefecture|qid=Q71707|lt=Fukushima Prefecture}}, at Ōtamachi 7.
+* {{ill|Raijin Shrine (Fukushima)|ja|雷神社 (福島市)|12=simple|13=User:Immanuelle/Raijin Shrine (Fukushima)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Another location in Fukushima City, at Okabemachi Uchi.
+* {{ill|Raijin Shrine (Kōriyama)|ja|雷神社 (郡山市)|12=simple|13=User:Immanuelle/Raijin Shrine (Kōriyama)|ja_comment=jawiki link invalid}} (Kaminari-jinja) - Located in {{ill|Kōriyama|en|Kōriyama|qid=Q264206|lt=Kōriyama}}, Fukushima Prefecture, at Narukami 3-chōme.
+* {{ill|Asaka Raijin Shrine|ja|安積雷神社 (郡山市)|12=simple|13=User:Immanuelle/Asaka Raijin Shrine|ja_comment=jawiki link invalid}} (Asaka Kaminari-jinja) - Located in Kōriyama, at Hosonuma-chō.
+
+== Kantō Region ==
+* {{ill|Raijin Shrine (Chikusei)|ja|雷神社 (筑西市)|12=simple|13=User:Immanuelle/Raijin Shrine (Chikusei)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Chikusei|en|Chikusei|qid=Q694322|lt=Chikusei}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture}}.
+* {{ill|Mikurayama Kofun|ja|御蔵山古墳#雷神社|12=simple|13=User:Immanuelle/Raijin Shrine (Utsunomiya)|comment=changed title based on wikidata|qid=Q115978238}} (Ikazuchi-jinja/Raijin-jinja) - Located in {{ill|Utsunomiya|en|Utsunomiya|qid=Q200589|lt=Utsunomiya}}, {{ill|Tochigi Prefecture|en|Tochigi Prefecture|qid=Q44843|lt=Tochigi Prefecture}}.
+* {{ill|Ikazuchi Shrine|ja|雷神社 (流山市)|12=simple|13=User:Immanuelle/Raijin Shrine (Nagareyama)|comment=changed title based on wikidata|qid=Q97311704}} (Ikazuchi-jinja) - Located in {{ill|Nagareyama|en|Nagareyama|qid=Q328625|lt=Nagareyama}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}.
+* {{ill|Raijin Shrine (Chiba City)|ja|雷神社 (千葉市)|12=simple|13=User:Immanuelle/Raijin Shrine (Chiba City)|ja_comment=jawiki link invalid}} (Ikazuchi-jinja) - Located in {{ill|Chiba (city)|en|Chiba (city)|qid=Q170616|lt=Chiba}}.
+* {{ill|Raijin Shrine (Ichihara)|ja|雷神社 (市原市)|12=simple|13=User:Immanuelle/Raijin Shrine (Ichihara)|ja_comment=jawiki link invalid}} (Ikazuchi-jinja) - Located in {{ill|Ichihara, Chiba|en|Ichihara, Chiba|qid=Q207881|lt=Ichihara}}, Chiba Prefecture.
+* {{ill|Raijin Shrine (Katori)|ja|雷神社 (香取市)|12=simple|13=User:Immanuelle/Raijin Shrine (Katori)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Katori, Chiba|en|Katori, Chiba|qid=Q858357|lt=Katori}}, Chiba Prefecture.
+* {{ill|Raijin Shrine (Asahi City)|ja|雷神社 (旭市)|12=simple|13=User:Immanuelle/Raijin Shrine (Asahi City)|qq=}} (Raijin-jinja) - Located in {{ill|Asahi, Chiba|en|Asahi, Chiba|qid=Q637868|lt=Asahi}}, Chiba Prefecture.
+* {{ill|Raijin Shrine (Narita)|ja|雷神社 (成田市)|12=simple|13=User:Immanuelle/Raijin Shrine (Narita)|ja_comment=jawiki link invalid}} (Raijin-jinja) - Located in {{ill|Narita, Chiba|en|Narita, Chiba|qid=Q273798|lt=Narita}}, Chiba Prefecture, at Yamaguchi 1205. Annual festival held on July 24.
+* {{ill|Raijin Shrine (Adachi)|ja|雷神社 (足立区)|12=simple|13=User:Immanuelle/Raijin Shrine (Adachi)|ja_comment=jawiki link invalid}} (Ikazuchi-jinja) - Located in {{ill|Adachi, Tokyo|en|Adachi, Tokyo|qid=Q213464|lt=Adachi}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis}}, in Nishiarai.
+* {{ill|Ikazuchi Shrine(Yokosuka)|ja|雷神社 (横須賀市)|12=simple|13=User:Immanuelle/Raijin Shrine (Yokosuka)|comment=changed title based on wikidata|qid=Q11660191}} (Ikazuchi-jinja) - Located in {{ill|Yokosuka|en|Yokosuka|qid=Q200578|lt=Yokosuka}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}.
+
+== Hokuriku, Kōshin, Tōkai Region and Beyond ==
+* {{ill|Raijin Shrine (Toyooka)|ja|雷神社 (豊岡市)|12=simple|13=User:Immanuelle/Raijin Shrine (Toyooka)|qq=}} (Ikazuchi-jinja) - Located in {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka, Hyōgo}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}. A {{ill|Myōjin Taisha|ja|名神大社|式内名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}}.
+* {{ill|Ikazuchi Shrine|ja|雷神社 (糸島市)|12=simple|13=User:Immanuelle/Raijin Shrine (Itoshima)|comment=changed title based on wikidata|qid=Q11660192}} (Ikazuchi-jinja) - Located in {{ill|Itoshima|en|Itoshima, Fukuoka|qid=Q1011145|lt=Itoshima}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}.
+
+== Related Articles ==
+* {{ill|Raiden Shrine|ja|雷電神社|12=simple|13=User:Immanuelle/Raiden Shrine|qq=}}
+* {{ill|Ikazuchi|en|Ikazuchi|qid=Q5995517|lt=Ikazuchi}}
+{{disambiguation}}
+
+{{translated page|ja|雷神社|version=103893056|comment=Imported full ja history}}
+
+{{wikidata link|Q11660190|ja|雷神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

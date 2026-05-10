@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Fire Monkey|kanji=丙申|romaji=hinoe saru|onyomi=heishin|p=bǐngshēn|w=ping-shen|mi=pʰiŋ²¹ ʂən|y=bing2 san1|j=bing2 san1|ci=pɪŋ ʂɐn|mc=pæŋ ʂin|oc-bs=praŋ ʂin|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -94,6 +95,7 @@ Heishin day is the 4th day of {{ill|Ten Ten Ichijō|ja|天一天上|12=simple|13
 
 {{wikidata link|Q1061831|af|Vuuraap (astrologie)|cdo|Bīng-sĭng|de|Feuer-Affe|fr|Singe de feu|hak|Piáng-sṳ̂n|ja|丙申|ko|병신|nds|Füür-Aap|vi|Bính Thân|za|Bingjsaen|zh-min-nan|Péng-sin|zh-yue|丙申|zh|丙申|zh-min-nan|Kap-chú|zh-yue|甲子|cdo|Gák-cṳ̄de|nds|Holt-Röttvi|de|Yang Fire Monkey|af|Metaalrot (astrologie)|de|Metall-Ratteen|en|Metal Rat|fr|Rat de métalboishak|it|Kap-chṳ́id|ko|갑자|vi|Giáp Tý|za|Gyapceij|zh|甲子|ar|Yang Fire Monkey}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

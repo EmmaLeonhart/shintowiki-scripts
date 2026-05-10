@@ -1,0 +1,108 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Ōyamazumi Shrine''' (大山祇神社, Ōyamazumi Jinja)
+
+Ōyamazumi Shrine is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} dedicated to {{ill|Ōyamatsumi|en|Ōyamatsumi|qid=Q386563|qid=Q386563|lt=Ōyamatsumi|1=Ōyamatsumi}}, associated with the [[Mishima–Ōyamazumi cult]]. As of 1973, 897 shrines existed across Japan, from [[:en:Hokkaidō|Hokkaidō]] to {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture|1=Kagoshima Prefecture}}. According to a 1995 survey by the Association of Shinto Shrines, there were 293 shrines, while a 2019 study by {{ill|Kanazawa Institute of Technology|en|Kanazawa Institute of Technology|qid=Q6360885|lt=Kanazawa Institute of Technology|1=Kanazawa Institute of Technology}} reported 960 shrines. The shrine may also be written as '''Ōyamazumi Shrine''', '''Ōyamatsumi Shrine''', '''Yamazumi Shrine''', or '''Yamatsumi Shrine'''.
+
+The head shrine is the {{ill|Ōyamazumi Shrine|ja|大山祇神社 (今治市大三島)|Ōyamazumi Shrine=Ōyamazumi Shrine|lt=Ōyamazumi Shrine (Ōmishima)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine|ja_comment=jawiki link invalid}} in [[:en:Ōmishima|Ōmishima]], [[:en:Imabari|Imabari]], {{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture|1=Ehime Prefecture}}. Other related shrine names under the [[Mishima–Ōyamazumi cult]] include {{ill|Mishima Taisha|lt=Mishima Taisha|lt=Mishima Shrine|ja|三島神社|12=simple|13=User:Immanuelle/Mishima Shrine|qq=}}.
+
+== Shrines with Articles ==
+* {{ill|Ōyamazumi Shrine (Nishiaizu)|ja|大山祇神社 (西会津町)|1=Oyamatsumi Shrine (Nishi Aizu)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Nishiaizu)|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|qq=}} (Nishiaizu, Fukushima Prefecture)
+* {{ill|Yamatsumi Shrine (Iitate)|ja|山津見神社 (飯舘村)|12=simple|13=User:Immanuelle/Yamatsumi Shrine (Iitate)|ja_comment=jawiki redirects to 山津見神社|1=Yamatsumi Shrine|comment=changed title based on wikidata|qid=Q11469987}} (Iitate, Fukushima Prefecture)
+* {{ill|Yamazu Shrine (Hamamatsu)|ja|山住神社|12=simple|13=User:Immanuelle/Yamazu Shrine (Hamamatsu)|1=Yamazumi Shrine|comment=changed title based on wikidata|qid=Q11466290}} (Hamamatsu, Shizuoka Prefecture)
+* {{ill|Ōyamazumi Shrine (Sado)|ja|大山祇神社 (佐渡市)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Sado)|1=Oyamazumi Shrine|comment=changed title based on wikidata|qid=Q124496789}} (Sado, Niigata Prefecture) - Former Prefectural shrine; associated with the [[Sado Gold Mine]].
+* {{ill|Ōyamazumi Shrine (Ise)|ja|大山祇神社 (伊勢市)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Ise)|qq=}} (Ise, Mie Prefecture) - A subsidiary shrine within the [[Ise Grand Shrines]] precincts.
+* {{ill|Ōyamazumi Shrine (Nantan)|ja|大山祇神社 (南丹市)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Nantan)|qq=}} (Nantan, Kyoto Prefecture) - Not dedicated to Ōyamazumi.
+* {{ill|Bekkyū Ōyamazumi Shrine|ja|別宮大山祇神社|1=Bekkyū Ōyamazumi Shrine|12=simple|13=User:Immanuelle/Bekkyū Ōyamazumi Shrine|13=User:Immanuelle/Betsugu Oyamatsumi Shrine|qq=}} (Bekkyū, Imabari, Ehime Prefecture) - Former Prefectural shrine.
+* {{ill|Ōyamazumi Shrine|ja|大山祇神社 (今治市大三島)|Ōyamazumi Shrine=Ōyamazumi Shrine|lt=Ōyamazumi Shrine (Ōmishima)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine|ja_comment=jawiki link invalid}} - Head shrine of all Ōyamazumi shrines nationwide.
+* {{ill|Ōyamazumi Shrine (Nishi no Tani)|ja|大山祇神社 (西の谷)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Nishi no Tani)|qq=}} (Niihama, Ehime Prefecture)
+* {{ill|Ōyamatsumi Shrine (Niihama)|ja|大山積神社 (新居浜市)|12=simple|13=User:Immanuelle/Ōyamatsumi Shrine (Niihama)|qq=}} (Niihama, Ehime Prefecture) - Associated with the [[Besshi Copper Mine]].
+* {{ill|Ōyamazumi Shrine (Michidoi, Shinkamigoto)|ja|大山祇神社 (新上五島町道土井郷)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Michidoi, Shinkamigoto)|qq=}} (Dōdoigō, Shinkamigoto, Nagasaki Prefecture)
+* {{ill|Ōyamazumi Shrine (Imazatogō)|ja|大山祇神社 (新上五島町今里郷)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Imazatogō)|qq=}} (Imazatogō, Shinkamigoto, Nagasaki Prefecture)
+* {{ill|Ōyamazumi Shrine (Saikai)|ja|大山祇神社 (西海市)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Saikai)|qq=}} (Saikai, Nagasaki Prefecture) - Associated with the [[Nishisonogi Coalfield]].
+
+== Regional Distribution ==
+=== Hokkaido and Tohoku Region ===
+==== Hokkaido ====
+* Ōyamazumi Shrine (Hakodate)
+* Ōyamazumi Shrine (Assabu)
+
+==== Aomori Prefecture ====
+* Ōyamazumi Shrine (Aomori City)
+* Yamazumi Shrine (Hiranai)
+* Ōyamazumi Shrine (Sōma Village)
+* Ōyamazumi Shrine (Goshogawara)
+* Ōyamazumi Shrine (Kawauchi)
+* Ōyamazumi Shrine (Ōhata, Komemura)
+* Ōyamazumi Shrine (Ōhata, Takahashigawa)
+* Ōyamazumi Shrine (Wakinosawa)
+* Ōyamazumi Shrine (Ajigasawa)
+* Ōyamazumi Shrine (Kizukuri)
+* Ōyamazumi Shrine (Shariki)
+* Ōyamazumi Shrine (Kuroishi)
+* Yamazumi Shrine (Kuroishi)
+
+==== Akita Prefecture ====
+* Ōyamazumi Shrine (Kamikoani)
+* Ōyamazumi Shrine (Yurihonjō)
+* Ōyamazumi Shrine (Nikaho)
+* Ōyamazumi Shrine (Daisen)
+
+==== Iwate Prefecture ====
+* Yamazumi Shrine (Shizukuishi, Minamihata)
+* Yamazumi Shrine (Shizukuishi, Omaegami-domae)
+* Yamazumi Shrine (Shizukuishi, Kosaka)
+* Yamazumi Shrine (Shizukuishi, Nishine)
+* Yamazumi Shrine (Morioka, Sunagosawa)
+* Yamazumi Shrine (Morioka, Kuroishino)
+* Yamazumi Shrine (Shiwa, Katayose)
+* Yamazumi Shrine (Shiwa, Yamaya)
+* Yamazumi Shrine (Nishiwaga, Sawauchi, Kawafune)
+* Yamazumi Shrine (Nishiwaga, Sawauchi, Kaisawa)
+* Yamazumi Shrine (Nishiwaga, Yunosawa)
+* Yamazumi Shrine (Nishiwaga, Konagase)
+* Yamazumi Shrine (Nishiwaga, Yanagisawa)
+* Yamazumi Shrine (Nishiwaga, Mimizu)
+* Yamazumi Shrine (Nishiwaga, Sawauchi)
+* Yamazumi Shrine (Nishiwaga, Sasō)
+* Yamazumi Shrine (Nishiwaga, Shitamae)
+* Yamazumi Shrine (Hanamaki, Ishidōya)
+* Yamazumi Shrine (Hanamaki, Shitashizawa)
+* Yamazumi Shrine (Hanamaki, Namari)
+* Yamazumi Shrine (Hanamaki, Matsuzono)
+* Yamazumi Shrine (Hanamaki, Shirihirakawa)
+* Yamazu Shrine (Kamaishi)
+* Yamazumi Shrine (Kitakami, Hato-oka)
+* Ōyamazumi Shrine (Ōshū)
+
+==== Yamagata Prefecture ====
+* Ōyamazumi Shrine (Kaminoyama)
+* Ōyamazumi Shrine (Sakata)
+
+==== Miyagi Prefecture ====
+* Ōyamazumi Shrine (Sendai)
+* Yamazumi Shrine (Higashimatsuyama)
+* Yamazumi Shrine (Ishinomaki)
+
+==== Fukushima Prefecture ====
+* {{ill|Ōyamazumi Shrine (Nishiaizu)|ja|大山祇神社 (西会津町)|1=Oyamatsumi Shrine (Nishi Aizu)|12=simple|13=User:Immanuelle/Ōyamazumi Shrine (Nishiaizu)|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|qq=}}
+* {{ill|Yamatsumi Shrine (Iitate)|ja|山津見神社 (飯舘村)|12=simple|13=User:Immanuelle/Yamatsumi Shrine (Iitate)|ja_comment=jawiki redirects to 山津見神社|1=Yamatsumi Shrine|comment=changed title based on wikidata|qid=Q11469987}}
+* Ōyamazumi Shrine (Kōriyama)
+
+== Related Articles ==
+* {{ill|Mishima Taisha|lt=Mishima Taisha|lt=Mishima Shrine|ja|三島神社|12=simple|13=User:Immanuelle/Mishima Shrine|qq=}}
+* [[Shinto shrines by name]]
+
+{{disambiguation}}
+
+{{translated page|ja|大山祇神社 (曖昧さ回避)|version=104174104|comment=Imported full ja history}}
+
+{{wikidata link|Q16278443|ja|大山祇神社 (曖昧さ回避)}}
+[[Category:All disambiguation pages]]
+[[Category:Mishima–Ōyamazumi cult]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

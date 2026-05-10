@@ -1,0 +1,19 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Yamamoto Hachimangū''' (山本八幡宮) refers to several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} of the {{ill|Hachiman shrine|en|Hachiman shrine|qid=Q11390939|lt=Hachiman Shrine|1=Hachiman shrine}} type.
+
+* {{ill|Yamamoto Hachimangū (Fujinomiya City)|ja|山本八幡宮 (富士宮市)|12=simple|13=User:Immanuelle/Yamamoto Hachimangū (Fujinomiya City)|qq=}} - Located in {{ill|Fujinomiya, Shizuoka|en|Fujinomiya, Shizuoka|qid=Q496072|lt=Fujinomiya City|1=Fujinomiya, Shizuoka}}, {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}.
+* {{ill|Yamamoto Hachimangū (Yao City)|ja|山本八幡宮 (八尾市)|12=simple|13=User:Immanuelle/Yamamoto Hachimangū (Yao City)|qq=}} - Located in {{ill|Yao, Osaka|en|Yao, Osaka|qid=Q490872|lt=Yao City|1=Yao, Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}.
+
+{{disambiguation}}
+
+{{translated page|ja|山本八幡宮|version=40698200|comment=Imported full ja history}}
+
+{{wikidata link|Q11468880|ja|山本八幡宮}}
+[[Category:Shrine disambiguations]]
+[[Category:Special:LonelyPages 22 May 2025]]
+[[Category:Special:LonelyPages 26 May 2025]]
+[[Category:Wikidata has short description]]

@@ -1,0 +1,16 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''{{ill|Nomi no Sukune Shrine|ja|野見宿禰神社|12=simple|13=User:Immanuelle/Nomi no Sukune Shrine|qq=}}'''  is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} enshrining {{ill|Nomi no Sukune|en|Nomi no Sukune|qid=Q965742|lt=Nomi no Sukune|1=Nomi no Sukune}}, who is regarded as the progenitor of {{ill|Sumo|en|Sumo|qid=Q40561|lt=sumo|1=Sumo}} and the ancestor of the {{ill|Haji clan|en|Haji clan|qid=Q10927758|lt=Haji clan|1=Haji clan}}. There are shrines with the same name in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}} ({{ill|Tatsuno, Hyōgo|en|Tatsuno, Hyōgo|qid=Q877190|lt=Tatsuno City|1=Tatsuno, Hyōgo}}) and in {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}} ({{ill|Sumida, Tokyo|en|Sumida, Tokyo|qid=Q235135|lt=Sumida Ward|1=Sumida, Tokyo}}).
+* {{ill|Nomisukune Shrine (Sumida Ward)|ja|野見宿禰神社 (墨田区)|12=simple|13=User:Immanuelle/Nomisukune Shrine (Sumida Ward)|1=Nomi no Sukune Shrine|comment=changed title based on wikidata|qid=Q106852594}}
+* {{ill|Nomisukune Shrine (Tatsuno City)|ja|野見宿禰神社 (たつの市)|12=simple|13=User:Immanuelle/Nomisukune Shrine (Tatsuno City)|1=Nomi no Sukune Shrine|comment=changed title based on wikidata|qid=Q106852595}}
+
+{{disambiguation}}
+
+{{translated page|ja|野見宿禰神社|version=103146992|comment=Imported full ja history}}
+
+{{wikidata link|Q11646121|ja|野見宿禰神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

@@ -1,0 +1,17 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Tate Jinja''' (建神社)
+
+* {{ill|Tate Shrine (Mima)|ja|建神社 (美馬市)|12=simple|13=User:Immanuelle/Tate Shrine (Mima)|qq=}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, [[Mima City]].
+* {{ill|Tate Shrine (Tsurugi)|ja|建神社 (つるぎ町)|12=simple|13=User:Immanuelle/Tate Shrine (Tsurugi)|qq=}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, [[:en:Mima District|Mima District]], [[Tsurugi Town]].
+
+{{disambiguation}}
+
+{{translated page|ja|建神社|version=102027230|comment=Imported full ja history}}
+
+{{wikidata link|Q107022358|ja|建神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

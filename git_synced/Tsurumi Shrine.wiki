@@ -1,0 +1,17 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Tsurumi Shrine''' (鶴見神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}.
+
+* {{ill|Tsurumi Shrine (Yokohama)|ja|鶴見神社 (横浜市)|1=Tsurumi Shrine|commons=Tsurumi-jinja, Yokohama|2=ja|3=鶴見神社 (横浜市)|12=simple|13=User:Immanuelle/Tsurumi Shrine (Yokohama)|comment=changed title based on wikidata|qid=Q11676163}} - Located in {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture|1=Kanagawa Prefecture}}'s {{ill|Yokohama|en|Yokohama|qid=Q38283|lt=Yokohama|1=Yokohama}} [[Tsurumi Ward (Yokohama)|Tsurumi Ward]].
+* {{ill|Tsurumi Shrine (Osaka)|ja|鶴見神社 (大阪市)|12=simple|13=User:Immanuelle/Tsurumi Shrine (Osaka)|1=Tsurumi Shrine (Osaka)|comment=changed title based on wikidata|qid=Q11676164}} - Located in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}'s {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka|1=Osaka}} [[Tsurumi Ward (Osaka)|Tsurumi Ward]].
+
+{{disambiguation}}
+
+{{translated page|ja|鶴見神社|version=43030629|comment=Imported full ja history}}
+
+{{wikidata link|Q11676162|ja|鶴見神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

@@ -1,0 +1,32 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sann%C5%8D_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
+
+'''Sannō Shrine''' (山王神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}} across Japan based on {{ill|Sannō Faith|ja|山王信仰|12=simple|13=User:Immanuelle/Sannō faith|qq=}}.
+
+* '''Hokkaido and Tōhoku Region'''
+**  {{ill|Sannō Shrine (Tomakomai City)|ja|山王神社 (苫小牧市)|12=simple|13=User:Immanuelle/Sannō Shrine (Tomakomai City)|ja_comment=jawiki link invalid}} - Located adjacent to Hokkaido University’s experimental forest. In recent years, a large torii gate was damaged by a typhoon, leaving only its base.
+**  {{ill|Sannō Shrine (Takahata Town)|ja|山王神社 (高畠町)|12=simple|13=User:Immanuelle/Sannō Shrine (Takahata Town)|ja_comment=jawiki link invalid}} - Located in {{ill|Takahata, Yamagata|en|Takahata, Yamagata|qid=Q772103|lt=Takahata Town}}, Higashiokitama District, Yamagata Prefecture.
+
+* '''Kantō and Kōshin Region'''
+**  {{ill|Sannō Shrine|ja|山王神社 (桜川市)|12=simple|13=User:Immanuelle/Sannō Shrine (Sakuragawa City)|comment=changed title based on wikidata|qid=Q119929523}} - Located in {{ill|Sakuragawa, Ibaraki|en|Sakuragawa, Ibaraki|qid=Q990350|lt=Sakuragawa City}}, Ibaraki Prefecture.
+**  {{ill|Sannō Shrine (Edogawa Ward)|ja|山王神社 (江戸川区)|12=simple|13=User:Immanuelle/Sannō Shrine (Edogawa Ward)|ja_comment=jawiki link invalid}} - Located in {{ill|Edogawa, Tokyo|en|Edogawa, Tokyo|qid=Q214056|lt=Edogawa Ward}}, Tokyo Metropolis.
+**  {{ill|Sannō Shrine (Hachiōji City)|ja|山王神社 (八王子市)|12=simple|13=User:Immanuelle/Sannō Shrine (Hachiōji City)|ja_comment=jawiki link invalid}} - Located in {{ill|Hachiōji|en|Hachiōji|qid=Q208863|lt=Hachiōji City}}, Tokyo Metropolis.
+**  {{ill|Sannō Shrine|ja|山王神社 (小田原市)|12=simple|13=User:Immanuelle/Sannō Shrine (Odawara City)|comment=changed title based on wikidata|qid=Q134892431}} - Located in {{ill|Odawara|en|Odawara|qid=Q267258|lt=Odawara City}}, Kanagawa Prefecture.
+
+* '''Kyushu and Okinawa Region'''
+**  {{ill|Sannō Shrine|en|Sannō Shrine|qid=Q211522|lt=Sannō Shrine}} - Located in {{ill|Nagasaki|en|Nagasaki|qid=Q38234|lt=Nagasaki City}}, Nagasaki Prefecture.
+
+{{disambiguation}}
+
+{{translated page|ja|山王神社|version=103399729|comment=Imported full ja history}}
+
+{{wikidata link|Q11470057|ja|山王神社|check_date=2026-05-09}}
+[[Category:All disambiguation pages]]
+[[Category:Sannō Ichijitsu Shintō]]
+[[Category:Sannō Shrines]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

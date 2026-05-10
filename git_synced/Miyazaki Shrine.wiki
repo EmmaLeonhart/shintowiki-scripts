@@ -1,0 +1,26 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Miyazaki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25130039306|time triggered pipeline]] -->
+
+'''Miyazaki Shrine''' (宮崎神社, pronounced *Miyazaki Jinja*) refers to various Shinto shrines across Japan.
+
+* {{ill|Miyazaki Jingū|en|Miyazaki Jingū|qid=Q704686|lt=Miyazaki Jingū|1=Miyazaki Jingū}} - Formerly known as Miyazaki Jingu.
+* {{ill|Miyazaki Shrine (Rikuzentakata)|ja|宮崎神社 (陸前高田市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Rikuzentakata)|ja_comment=jawiki link invalid}} - Located in {{ill|Rikuzentakata, Iwate|en|Rikuzentakata, Iwate|qid=Q270463|lt=Rikuzentakata|1=Rikuzentakata, Iwate}}, {{ill|Iwate Prefecture|en|Iwate Prefecture|qid=Q48326|lt=Iwate Prefecture|1=Iwate Prefecture}}.
+* {{ill|Miyazaki Shrine (Okazaki)|ja|宮崎神社 (岡崎市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Okazaki)|1=Miyazaki Shrine|comment=changed title based on wikidata|qid=Q11454563}} - Located in {{ill|Okazaki, Aichi|en|Okazaki, Aichi|qid=Q242783|lt=Okazaki|1=Okazaki, Aichi}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}.
+* {{ill|Miyazaki Shrine (Akitakata)|ja|宮崎神社 (安芸高田市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Akitakata)|1=Miyazaki Shrine|comment=changed title based on wikidata|qid=Q124496774}} - Located in {{ill|Akitakata|en|Akitakata|qid=Q419392|lt=Akitakata|1=Akitakata}}, {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture|1=Hiroshima Prefecture}}.
+* {{ill|Miyazaki Shrine (Akune)|ja|宮崎神社 (阿久根市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Akune)|ja_comment=jawiki link invalid}} - Located in {{ill|Akune, Kagoshima|en|Akune, Kagoshima|qid=Q15732|lt=Akune|1=Akune, Kagoshima}}, {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture|1=Kagoshima Prefecture}}.
+* {{ill|Miyazaki Shrine (Kagoshima)|ja|宮崎神社 (鹿児島市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Kagoshima)|ja_comment=jawiki link invalid}} - Located in {{ill|Kagoshima|en|Kagoshima|qid=Q15674|lt=Kagoshima|1=Kagoshima}}, Kagoshima Prefecture.
+* {{ill|Miyazaki Shrine (Higashihiroshima)|ja|宮崎神社 (東広島市)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Higashihiroshima)|1=Miyazaki Shrine|comment=changed title based on wikidata|qid=Q11454564}} - Located in {{ill|Higashihiroshima|en|Higashihiroshima|qid=Q653372|lt=Higashihiroshima|1=Higashihiroshima}}, Hiroshima Prefecture.
+* {{ill|Miyazaki Shrine (Daisen)|ja|宮崎神社 (大栄町)|12=simple|13=User:Immanuelle/Miyazaki Shrine (Daisen)|ja_comment=jawiki link invalid}} - Located in {{ill|Daisen|ja|大栄町|12=simple|13=User:Immanuelle/Daisen|1=Q11436251|comment=changed title based on wikidata|qid=Q11436251}}, {{ill|Tottori Prefecture|en|Tottori Prefecture|qid=Q133935|lt=Tottori Prefecture|1=Tottori Prefecture}}.
+
+{{disambiguation}}
+
+{{translated page|ja|宮崎神社|version=93512662|comment=Imported full ja history}}
+
+{{wikidata link|Q11454562|ja|宮崎神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

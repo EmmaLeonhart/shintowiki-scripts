@@ -1,0 +1,54 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--interwikis from wikidata-->[[ja:菅原神社]]
+<!--interwikis from wikidata-->[[ja:菅原神社]]
+<!--interwikis from wikidata-->[[ja:菅原神社]]
+
+'''Sugawara Shrine''' (菅原神社) is the name of a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} dedicated to {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}} as its enshrined deity.
+
+== Tōhoku Region ==
+* {{ill|Matsudate Sugawara Shrine|ja|松舘菅原神社|12=simple|13=User:Immanuelle/Matsudate Sugawara Shrine|1=Matsudate Sugawara Shrine|comment=changed title based on wikidata|qid=Q11532218}} - Hachiman, Kazuno City, Akita Prefecture.
+
+== Kantō Region ==
+* {{ill|Sugawara Shrine (Saitama)|ja|菅原神社 (さいたま市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Saitama)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q114632288}} - Minuma Ward, Saitama City, Saitama Prefecture.
+* {{ill|Sugawara Shrine (Setagaya)|ja|菅原神社 (世田谷区)|12=simple|13=User:Immanuelle/Sugawara Shrine (Setagaya)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q97173397}} - Setagaya Ward, Tokyo.
+* {{ill|Sugawara Shrine (Itabashi)|ja|菅原神社 (板橋区)|12=simple|13=User:Immanuelle/Sugawara Shrine (Itabashi)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q97613695}} - Itabashi Ward, Tokyo.
+* {{ill|Sugawara Shrine (Machida)|ja|菅原神社 (町田市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Machida)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q11619212}} - Honmachida, Machida City, Tokyo.
+* {{ill|Sugawara Shrine (Odawara)|ja|菅原神社 (小田原市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Odawara)|1=Sugawara Shrine (256-0812)|comment=changed title based on wikidata|qid=Q85883457}} - Kōzu, Odawara City, Kanagawa Prefecture.
+
+== Chūbu Region ==
+* {{ill|Sugawara Shrine (Iga)|ja|菅原神社 (伊賀市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Iga)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q17218755}} - Ueno Higashimachi, Iga City, Mie Prefecture.
+
+== Kinki Region ==
+* {{ill|Sugawara Shrine (Osaka)|ja|菅原神社 (大阪市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Osaka)|qq=}} - Kamikuratsukuri, Hirano Ward, Osaka City, Osaka Prefecture.
+* {{ill|Sugawara Shrine (Sakai)|ja|菅原神社 (堺市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Sakai)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q11619211}} - Ebisunochō, Sakai Ward, Sakai City, Osaka Prefecture.
+* {{ill|Sanga Sugawara Shrine|ja|三箇菅原神社|12=simple|13=User:Immanuelle/Sanga Sugawara Shrine|1=Sangasugawara Shrine|comment=changed title based on wikidata|qid=Q11356937}} - Sanga, Daitō City, Osaka Prefecture.
+* {{ill|Sugawara Shrine (Nara Higashikujō)|ja|菅原神社 (奈良市東九条町)|12=simple|13=User:Immanuelle/Sugawara Shrine (Nara Higashikujō)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q48754595}} - Higashikujōchō, Nara City, Nara Prefecture.
+
+== Chūgoku Region ==
+* {{ill|Sugawara Shrine (Yanai)|ja|菅原神社 (柳井市)|12=simple|13=User:Immanuelle/Sugawara Shrine (Yanai)|1=Sugawara Shrine (Yanai)|comment=changed title based on wikidata|qid=Q123748766}} - Yanai City, Yamaguchi Prefecture. Also known as {{ill|Yanai Tenmangū|ja|柳井天満宮|12=simple|13=User:Immanuelle/Yanai Tenmangū|ja_comment=jawiki redirects to 菅原神社 (柳井市)|1=Sugawara Shrine (Yanai)|comment=changed title based on wikidata|qid=Q123748766}}.
+
+== Kyūshū Region ==
+* {{ill|Hagiwara Sugawara Shrine|ja|萩原菅原神社|12=simple|13=User:Immanuelle/Hagiwara Sugawara Shrine|1=Hagiwara sugawara Shrine|comment=changed title based on wikidata|qid=Q11620370}} - Hagiwara Town, Yatsushiro City, Kumamoto Prefecture.
+* {{ill|Sugawara Shrine (Kitakyushu Tobata)|ja|菅原神社 (北九州市戸畑区)|12=simple|13=User:Immanuelle/Sugawara Shrine (Kitakyushu Tobata)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q17218762}} - Sugawara, Tobata Ward, Kitakyushu City, Fukuoka Prefecture.
+* {{ill|Sugawara Shrine (Kitakyushu Kokura Kita)|ja|菅原神社 (北九州市小倉北区)|12=simple|13=User:Immanuelle/Sugawara Shrine (Kitakyushu Kokura Kita)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q11619209}} - Kofunaba Town, Kokura Kita Ward, Kitakyushu City, Fukuoka Prefecture.
+* {{ill|Sugawara Shrine (Satsumasendai Tōgō Fujikawa)|ja|菅原神社 (薩摩川内市東郷町藤川)|12=simple|13=User:Immanuelle/Sugawara Shrine (Satsumasendai Tōgō Fujikawa)|1=Sugawara Shrine|comment=changed title based on wikidata|qid=Q11619213}} - Fujikawa, Tōgō Town, Satsumasendai City, Kagoshima Prefecture.
+* {{ill|Arahira Tenjin|ja|荒平天神|12=simple|13=User:Immanuelle/Arahira Tenjin|1=Arahira-tenjin|comment=changed title based on wikidata|qid=Q20038554}} - Tenjin Town, Kanoya City, Kagoshima Prefecture. Officially named "Sugawara Shrine."
+== See Also ==
+* {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Tenmangū|1=Tenmangū}}
+
+{{disambiguation}}
+
+{{translated page|ja|菅原神社|version=103660001|comment=Imported full ja history}}
+
+<!--note do not remove this category during translation--><!--Sugawara Shrine (disambiguation)--><!--Sugawara Shrine (disambiguation)-->
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q48532247|ja|菅原神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shinto shrines in Japan]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Sugawara no Michizane]]
+[[Category:Wikidata has short description]]

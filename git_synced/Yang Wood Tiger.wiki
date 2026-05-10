@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Wood Tiger|kanji=甲寅|romaji=kinoe tora|onyomi=kōin|p=jiǎyín|w=chia-yin|mi=ʈ͡ʂja̠²¹ ȵin²¹|y=gaap6 jan4|j=gaap6 jan4|ci=kaːp̚ jɐn|mc=kæp ŋin|oc-bs=kaːp ŋin|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -119,6 +120,7 @@ Kinoe-tora days are the second day of {{ill|Hassō|ja|八専|12=simple|13=User:I
 
 {{wikidata link|Q904409|af|Houttier (astrologie)|cdo|Gák-ìng|de|Holz-Tiger|hak|Kap-yìm|ja|甲寅|ko|갑인|vi|Giáp Dần|za|Gyapyinz|zh-min-nan|Kap-în|zh-yue|甲寅|zh|甲寅|zh-min-nan|Bó͘-chîn|zh-yue|戊午|cdo|Tsuch-cṳ̄de|nds|Wasser-Pferdevi|de|Yang Wood Tiger|fr|Tigre de bois|af|Waterperd (astrologie)|de|Wasser-Pferdeen|en|Water Horse|fr|Cheval de eauboishak|it|Tsu-chṳ́id|ko|무오|vi|Mậu Ngọ|za|Mouzceij|zh|戊午|ar|Yang Wood Tiger}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

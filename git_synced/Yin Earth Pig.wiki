@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Earth Pig|kanji=己亥|romaji=tsuchinoto i|onyomi=kigai|p=jǐhài|w=chi-hai|mi=t͡ɕi³⁵ xaɪ̯|y=gei2 hoi6|j=gei2 hoi6|ci=kei hɐi|mc=kɨj ɣəi|oc-bs=kɯʔ ɢəʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -97,6 +98,7 @@ Yin Earth Pig days are the 7th day of the {{ill|Ten'ichi Tenjō|ja|天一天上|
 
 {{wikidata link|Q904335|af|Aardvark (astrologie)|cdo|Gī-hâi|de|Erde-Schwein|fr|Cochon de terre (Cycle sexagésimal chinois)|hak|Kí-hoi|ja|己亥|ko|기해|nds|Eer-Swien|vi|Kỷ Hợi|za|Geijhaih|zh-min-nan|Kí-hāi|zh-yue|己亥|zh|己亥|zh-min-nan|Teng-chháu|zh-yue|丁卯|cdo|Dĭng-cṳ̄de|nds|Wasser-Haseni|de|Yin Earth Pig|fr|Cochon de terre|af|Waterhaas (astrologie)|de|Wasser-Hasenei|en|Water Rabbit|fr|Lièvre de eauboishak|it|Ding-chṳ́id|ko|정묘|vi|Đinh Mão|za|Dingceij|zh|丁卯|ar|Yin Earth Pig}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

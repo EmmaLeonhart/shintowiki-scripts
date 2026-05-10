@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Earth Horse|kanji=戊午|romaji=tsuchinoe uma|onyomi=bogo|p=wùwǔ|w=wu-wu|mi=u⁵⁵ u²¹|y=mou6 ng5|j=mou6 ng5|ci=mɐu ŋo|mc=məu ŋo|oc-bs=mə ŋaʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -93,6 +94,7 @@ Bokugo day is the gap day of {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle
 
 {{wikidata link|Q905011|af|Aardperd (astrologie)|cdo|Muô-ngū|de|Erde-Pferd|hak|Vú-ńg|ja|戊午|ko|무오|vi|Mậu Ngọ|za|Fouhngux|zh-min-nan|Bō͘-ngó͘|zh-yue|戊午|zh|戊午|zh-min-nan|Pêng-chún|zh-yue|丙戌|cdo|Bîng-cṳ̄de|nds|Feuer-Hundvi|de|Yang Earth Horse|fr|Cheval de terre|af|Vuurchond (astrologie)|de|Feuer-Hundeen|en|Fire Dog|fr|Chien de feushak|it|Bing-chṳ́id|ko|병술|vi|Bính Tuất|za|Bingceij|zh|丙戌|ar|Yang Earth Horse}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Metal Dragon|kanji=庚辰|romaji=kanoe tatsu|onyomi=kōshin|p=gēngchén|w=keng-ch'en|mi=kɤŋ⁵³ ʈ͡ʂʰən|y=geng1 san4|j=geng1 san4|ci=kɪŋ sɐn|mc=kæŋ ɖin|oc-bs=kˤraŋ ɖiŋ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -112,6 +113,7 @@ The day of {{ill|Koushin|ja|1=Yang Metal Dragon|2=ja|庚辰|1=Yang Metal Dragon|
 
 {{wikidata link|Q1062146|af|Metaaldraak (astrologie)|cdo|Gĕng-sìng|de|Metall-Drache|fr|Dragon de métal|hak|Kâng-sìn|ja|庚辰|ko|경진|nds|Metall-Draken|vi|Canh Thìn|za|Gengsaenz|zh-min-nan|Keng-sîn|zh-yue|庚辰|zh|庚辰|zh-min-nan|Keng-chá|cdo|Káng-cṳ̄de|nds|Metall-Drachteen|de|Yang Metal Dragon|de|Metall-Drachteen|en|Metal Dragon|fr|Dragon de métalboishak|it|Kang-chṳ́id|za|Gengceij|ar|Yang Metal Dragon}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

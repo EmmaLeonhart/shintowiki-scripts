@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Earth Rat|kanji=戊子|romaji=tsuchinoe nezumi|onyomi=boshi|p=wùzǐ|w=wu-tzŭ|mi=u⁵⁵ tsɨ|y=mou6 zi2|j=mou6 zi2|ci=mɐu tsi|mc=məu tsi|oc-bs=mə tsi|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -93,6 +94,7 @@ The Yang Earth Rat day is the 5th day of {{ill|Tenpōgure|ja|十方暮|12=simple
 
 {{wikidata link|Q1062052|af|Aardrot (astrologie)|cdo|Muô-cṳ̄|de|Erde-Ratte|fr|Rat de terre|hak|Vú-chṳ́|ja|戊子|ko|무자|nds|Eer-Rött|vi|Mậu Tý|za|Fouhceij|zh-min-nan|Bō͘-chú|zh-yue|戊子|zh|戊子|zh-min-nan|Bó͘-chîn|cdo|Tsuch-cṳ̄de|nds|Erd-Röttvi|de|Yang Earth Rat|af|Aarderot (astrologie)|de|Erde-Ratteen|en|Earth Rat|fr|Rat de terreboishak|it|Tsu-chṳ́id|za|Mouzceij|ar|Yang Earth Rat}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

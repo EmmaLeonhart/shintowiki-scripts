@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Water Tiger|kanji=壬寅|romaji=mizunoe tora|onyomi=jin’in|p=rényín|w=jen-yin|mi=ʐən³⁵ ȵin²¹|y=jam4 jan4|j=jam4 jan4|ci=jɐm jɐn|mc=ɲiɪm in|oc-bs=ɲɨm in|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -92,6 +93,7 @@ The Yang Water Tiger day is the 10th day of {{ill|Tian Yi Tianshang|ja|天一天
 
 {{wikidata link|Q1062922|af|Watertier (astrologie)|cdo|Ìng-ìng|de|Wasser-Tiger|fr|Tigre d'eau|hak|Ngìm-yìm|ja|壬寅|ko|임인|vi|Nhâm Dần|za|Nyaemzyinz|zh-min-nan|Jîm-în|zh-yue|壬寅|zh|壬寅|zh-min-nan|Keng-chá|zh-yue|庚午|cdo|Káng-cṳ̄de|nds|Feuer-Pferdevi|de|Yang Water Tiger|fr|Tigre de eau|af|Vuurperd (astrologie)|de|Feuer-Pferdeen|en|Fire Horse|fr|Cheval de feushak|it|Kang-chṳ́id|ko|경오|vi|Bình Ngọ|za|Gengceij|zh|庚午|ar|Yang Water Tiger}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

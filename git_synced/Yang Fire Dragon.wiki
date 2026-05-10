@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Fire Dragon|kanji=丙辰|romaji=hinoe tatsu|onyomi=heishin|p=bǐngchén|w=ping-ch'en|mi=pʰiŋ²¹ ʈ͡ʂʰən|y=bing2 san4|j=bing2 san4|ci=pɪŋ sɐn|mc=pæŋ ɖin|oc-bs=praŋ ɖiŋ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -91,6 +92,7 @@ The selected day for {{ill|Yang Fire Dragon|ja|1=Yang Fire Dragon|2=ja|丙辰|1=
 
 {{wikidata link|Q904721|af|Vuurdraak (astrologie)|cdo|Bīng-sìng|de|Feuer-Drache|hak|Piáng-sìn|ja|丙辰|ko|병진 (간지)|vi|Bính Thìn|za|Bingjsaenz|zh-min-nan|Péng-sîn|zh-yue|丙辰|zh|丙辰|zh-min-nan|Keng-chá|zh-yue|庚申|cdo|Káng-cṳ̄de|nds|Holt-Affenvi|de|Yang Fire Dragon|fr|Dragon de feu|af|Houtaap (astrologie)|de|Holz-Affeneen|en|Wood Monkey|fr|Singe de boisboishak|it|Kang-chṳ́id|ko|경신|vi|Giáp Thân|za|Gengceij|zh|庚申|ar|Yang Fire Dragon}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]
