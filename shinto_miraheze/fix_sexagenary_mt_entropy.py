@@ -286,10 +286,125 @@ INTRA_LINE_DOUBLE_SPACE_RE = re.compile(r"(?<=\S) {2,}")
 MULTI_BLANK_LINE_RE = re.compile(r"\n{3,}")
 
 
+# ─── Lede prose normalization ─────────────────────────────────────────────────
+# Every page's first prose line is a single-sentence lede introducing the
+# combination. The 60 files have it phrased five+ different ways ("is one of
+# the", "is one element of", "is the Nth combination of", "is one of the
+# stems-and-branches combinations in the traditional Chinese calendar", etc.)
+# — pure machine-translation entropy. The canonical fields live in the
+# preceding ``{{infobox Chinese|l=…|kanji=…|romaji=…|onyomi=…}}`` so we
+# regenerate the lede deterministically from those.
+
+INFOBOX_CHINESE_RE = re.compile(r"\{\{infobox Chinese\s*\|", re.IGNORECASE)
+
+STEMS_KANJI = "甲乙丙丁戊己庚辛壬癸"      # 1-10
+BRANCHES_KANJI = "子丑寅卯辰巳午未申酉戌亥"  # 1-12
+
+
+def parse_infobox_chinese(text: str) -> dict[str, str] | None:
+    m = INFOBOX_CHINESE_RE.search(text)
+    if not m:
+        return None
+    start = m.end()
+    depth = 1
+    i = start
+    n = len(text)
+    while i < n:
+        if text[i:i + 2] == "{{":
+            depth += 1
+            i += 2
+        elif text[i:i + 2] == "}}":
+            depth -= 1
+            if depth == 0:
+                break
+            i += 2
+        else:
+            i += 1
+    body = text[start:i]
+    params: dict[str, str] = {}
+    for p in split_top_level(body, "|"):
+        if "=" in p:
+            k, _, v = p.partition("=")
+            params[k.strip()] = v.strip()
+    return params
+
+
+def sexagenary_ordinal(kanji: str) -> int | None:
+    """Return the 1-based ordinal (1..60) for a stem+branch kanji pair."""
+    if not kanji or len(kanji) != 2:
+        return None
+    s = STEMS_KANJI.find(kanji[0])
+    b = BRANCHES_KANJI.find(kanji[1])
+    if s < 0 or b < 0:
+        return None
+    for x in range(60):
+        if x % 10 == s and x % 12 == b:
+            return x + 1
+    return None
+
+
+def english_ordinal(n: int) -> str:
+    if 10 <= n % 100 <= 20:
+        return f"{n}th"
+    suffix = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def build_canonical_lede(params: dict[str, str]) -> str | None:
+    l = params.get("l", "").strip()
+    kanji = params.get("kanji", "").strip()
+    romaji = params.get("romaji", "").strip()
+    onyomi = params.get("onyomi", "").strip()
+    if not l or not kanji:
+        return None
+    ord_n = sexagenary_ordinal(kanji)
+    position = f"the {english_ordinal(ord_n)} of the sixty combinations" if ord_n else "one of the sixty combinations"
+    paren_bits: list[str] = [kanji]
+    if romaji:
+        paren_bits.append(f"''{romaji}''")
+    paren = ", ".join(paren_bits)
+    if onyomi:
+        paren = f"{paren}; onyomi ''{onyomi}''"
+    return (
+        f"'''{l}''' ({paren}) is {position} of the "
+        f"{{{{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658"
+        f"|lt=Sexagenary cycle|1=Sexagenary cycle}}}}."
+    )
+
+
+def replace_lede(text: str) -> str:
+    """Replace the first prose paragraph (from the first line starting with
+    ``'''`` until the first blank line) with a canonical lede derived from
+    ``{{infobox Chinese|...}}``. No-op if the infobox is missing required
+    fields or no ``'''`` lede line is found."""
+    params = parse_infobox_chinese(text)
+    if not params:
+        return text
+    canonical = build_canonical_lede(params)
+    if not canonical:
+        return text
+
+    lines = text.split("\n")
+    # Find first line that opens with '''
+    i = 0
+    while i < len(lines) and not lines[i].lstrip().startswith("'''"):
+        i += 1
+    if i >= len(lines):
+        return text
+    # Find end of paragraph (first subsequent blank line)
+    j = i
+    while j < len(lines) and lines[j].strip() != "":
+        j += 1
+    # Replace lines[i:j] with the single canonical line
+    new_lines = lines[:i] + [canonical] + lines[j:]
+    return "\n".join(new_lines)
+
+
 def clean_file_text(text: str) -> str:
     text = transform_text(text)
     text = CATEGORY_QQ_RE.sub("", text)
     text = INTRA_LINE_DOUBLE_SPACE_RE.sub(" ", text)
+    text = replace_lede(text)
     text = MULTI_BLANK_LINE_RE.sub("\n\n", text)
     return text
 

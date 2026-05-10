@@ -50,8 +50,22 @@ all, not deleted from it.
     repopulated git_synced/, and additionally tags any unknown-why page
     with `[[Category:Git synced pages without explanation]]`.
 
-Go through the notes of the [[Category:git synced pages]]
-Translate all of the [[Category:Need translation]]
+Go through the notes of the [[Category:git synced pages]] — each
+git_synced/ page has a leading `<!--...-->` instruction comment, and
+those instructions must actually be executed, not just present. The
+60 Sexagenary cycle pages have had their MT-entropy cleanup applied
+(`fix_sexagenary_mt_entropy.py`); the remaining ~165 Shrine pages
+still need their instruction followed: run SPARQL queries on Wikidata
+that generate actual per-shrine reference lists and weave the
+generated output back into each page. This and the translation item
+below are to be done; the cron job that was meant to follow these
+instructions never existed, so this is real work, not a re-run.
+
+Translate all of the [[Category:Need translation]] —
+`sync_need_translation.py` is a bidirectional file ↔ wiki mirror only;
+it does not translate. 215 of 216 files under `need_translation/`
+still contain CJK awaiting English translation. Per-page LLM work,
+batchable but judgement-heavy.
 
 ## Pinned notes
 
