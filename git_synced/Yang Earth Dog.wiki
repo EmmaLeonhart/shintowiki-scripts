@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Earth Dog|kanji=戊戌|romaji=tsuchinoe inu|onyomi=bojutsu|p=wùxū|w=wu-hsü|mi=u⁵⁵ ɕy|y=mou6 seot1|j=mou6 seot1|ci=mɐu sœt̚|mc=məu syt|oc-bs=mə ssu|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -95,6 +96,7 @@ A Wuxu day is the 6th day of {{ill|Ten Heaven, One Heaven|ja|天一天上|12=sim
 
 {{wikidata link|Q904922|af|Aardhond (astrologie)|cdo|Muô-sáe̤k|de|Erde-Hund|hak|Vú-sut|ja|戊戌|ko|무술 (간지)|nds|Eer-Hund|vi|Mậu Tuất|za|Fouhswt|zh-min-nan|Bō͘-sut|zh-yue|戊戌|zh|戊戌|zh-min-nan|Pêng-chún|zh-yue|丙寅|cdo|Bîng-cṳ̄de|nds|Wasser-Tigeri|de|Yang Earth Dog|fr|Chien de terre|af|Watertier (astrologie)|de|Wasser-Tigreen|en|Water Tiger|fr|Tigre de eauboishak|it|Bing-chṳ́id|ko|병인|vi|Bính Dần|za|Bingceij|zh|丙寅|ar|Yang Earth Dog}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

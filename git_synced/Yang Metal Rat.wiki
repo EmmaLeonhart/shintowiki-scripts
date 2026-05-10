@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Metal Rat|kanji=庚子|romaji=kanoe nezumi|onyomi=kōshi|p=gēngzǐ|w=keng-tzŭ|mi=kɤŋ⁵³ tsɨ|y=geng1 zi2|j=geng1 zi2|ci=kɪŋ tsi|mc=kæŋ tsi|oc-bs=kˤraŋ tsi|qq=}}
 {{Otheruses|Sexagenary cycle|西涼の元号|庚子 (西涼)|qq=}}
@@ -96,6 +97,7 @@ The day of {{ill|Koushi|ja|1=Yang Metal Rat|2=ja|庚子|1=Yang Metal Rat|12=simp
 
 {{wikidata link|Q904964|af|Metaalrot (astrologie)|cdo|Gĕng-cṳ̄|de|Metall-Ratte|hak|Kâng-chṳ́|ja|庚子|ko|경자|vi|Canh Tý|za|Gengceij|zh-min-nan|Keng-chú|zh-yue|庚子|zh|庚子|zh-min-nan|Bó͘-chîn|zh-yue|戊辰|cdo|Tsuch-cṳ̄de|nds|Holt-Drachteen|de|Yang Metal Rat|fr|Rat de métal|af|Houtdraak (astrologie)|de|Holz-Drachteen|en|Wood Dragon|fr|Dragon de boisboishak|it|Tsu-chṳ́id|ko|무진 (간지)|vi|Mậu Thìn|za|Mouzceij|zh|戊辰|ar|Yang Metal Rat}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

@@ -1,0 +1,31 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Haguro_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
+
+'''Haguro Shrine''' (羽黒神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} across Japan. Many are considered to have been established through the {{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Enshrinement|1=Bunrei}} of {{ill|Dewa Shrine|en|Dewa Shrine|qid=Q11395802|lt=Dewa Shrine|1=Dewa Shrine}} in {{ill|Tsuruoka|en|Tsuruoka|qid=Q734416|lt=Tsuruoka City|1=Tsuruoka}}, {{ill|Yamagata Prefecture|en|Yamagata Prefecture|qid=Q125863|lt=Yamagata Prefecture|1=Yamagata Prefecture}}, which enshrines {{ill|Haguro Gongen|ja|羽黒権現|12=simple|13=User:Immanuelle/Haguro Gongen|qq=}}.
+
+* {{ill|Haguro Shrine (Fukushima City)|ja|羽黒神社 (福島市)|12=simple|13=User:Immanuelle/Haguro Shrine (Fukushima City)|ja_comment=jawiki link invalid|qid=Q135504565|1=Haguro Shrine (Fukushima City)}} - Located in {{ill|Fukushima (city)|en|Fukushima (city)|qid=Q161176|lt=Fukushima City|1=Fukushima (city)}}, {{ill|Fukushima Prefecture|en|Fukushima Prefecture|qid=Q71707|lt=Fukushima Prefecture|1=Fukushima Prefecture}}.
+* {{ill|Haguro Shrine (Motegi Town)|ja|羽黒神社 (茂木町)|12=simple|13=User:Immanuelle/Haguro Shrine (Motegi Town)|ja_comment=jawiki link invalid|qid=Q135504566|1=Haguro Shrine (Motegi Town)}} - Located in {{ill|Motegi, Tochigi|en|Motegi, Tochigi|qid=Q644327|lt=Motegi Town|1=Motegi, Tochigi}}, {{ill|Haga District, Tochigi|en|Haga District, Tochigi|qid=Q1192087|lt=Haga District|1=Haga District, Tochigi}}, {{ill|Tochigi Prefecture|en|Tochigi Prefecture|qid=Q44843|lt=Tochigi Prefecture|1=Tochigi Prefecture}}.
+* {{ill|Haguro Shrine (Funabashi City)|ja|羽黒神社 (船橋市)|12=simple|13=User:Immanuelle/Haguro Shrine (Funabashi City)|qq=}} - Located in {{ill|Funabashi|en|Funabashi|qid=Q271417|lt=Funabashi City|1=Funabashi}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}.
+* {{ill|Haguro Shrine (Nagaoka City, Onuki)|ja|羽黒神社 (長岡市小貫)|12=simple|13=User:Immanuelle/Haguro Shrine (Nagaoka City, Onuki)|qq=}} - Located in Onuki, {{ill|Nagaoka, Niigata|en|Nagaoka, Niigata|qid=Q540312|lt=Nagaoka City|1=Nagaoka, Niigata}}, {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}.
+* {{ill|Haguro Shrine (Nyuzen Town)|ja|羽黒神社 (入善町)|12=simple|13=User:Immanuelle/Haguro Shrine (Nyuzen Town)|ja_comment=jawiki link invalid|qid=Q135504568|1=Haguro Shrine (Nyuzen Town)}} - Located in {{ill|Nyūzen|en|Nyūzen|qid=Q1203765|lt=Nyuzen Town|1=Nyūzen}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}}.
+* {{ill|Haguro Shrine (Suzu City)|ja|羽黒神社 (珠洲市)|12=simple|13=User:Immanuelle/Haguro Shrine (Suzu City)|qq=}} - Located in {{ill|Shoin Town|ja|正院町|12=simple|13=User:Immanuelle/Shoin Town|1=Shōin|comment=changed title based on wikidata|qid=Q11545716}}, {{ill|Suzu, Ishikawa|en|Suzu, Ishikawa|qid=Q846345|lt=Suzu City|1=Suzu, Ishikawa}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture|1=Ishikawa Prefecture}}.
+* {{ill|Haguro Shrine (Kurashiki City)|ja|羽黒神社 (倉敷市)|12=simple|13=User:Immanuelle/Haguro Shrine (Kurashiki City)|qq=}} - Located in {{ill|Kurashiki|en|Kurashiki|qid=Q467487|lt=Kurashiki City|1=Kurashiki}}, {{ill|Okayama Prefecture|en|Okayama Prefecture|qid=Q132936|lt=Okayama Prefecture|1=Okayama Prefecture}}.
+* {{ill|Haguro Shrine (Fukuoka City)|ja|羽黒神社 (福岡市)|12=simple|13=User:Immanuelle/Haguro Shrine (Fukuoka City)|ja_comment=jawiki link invalid|qid=Q135504572|1=Haguro Shrine (Fukuoka City)}} - Located in {{ill|Minami Ward|ja|南区|12=simple|13=User:Immanuelle/Minami Ward|1=Southern District|comment=changed title based on wikidata|qid=Q411052}}, {{ill|Fukuoka|en|Fukuoka|qid=Q26600|lt=Fukuoka City|1=Fukuoka}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}.
+
+== Related Items ==
+* {{ill|Shimodate Haguro Shrine|ja|下館羽黒神社|12=simple|13=User:Immanuelle/Shimodate Haguro Shrine|1=Shimodate Haguro Shrine|comment=changed title based on wikidata|qid=Q11361494}}
+* {{ill|Senami Haguro Shrine|ja|西奈弥羽黒神社|12=simple|13=User:Immanuelle/Senami Haguro Shrine|qq=}}
+
+{{disambiguation}}
+
+{{translated page|ja|羽黒神社|version=101795435|comment=Imported full ja history}}
+
+{{wikidata link|Q11610434|ja|羽黒神社}}
+[[Category:All disambiguation pages]]
+[[Category:Haguro Shrines]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

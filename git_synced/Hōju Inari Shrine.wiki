@@ -1,0 +1,21 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=H%C5%8Dju_Inari_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
+
+'''Hōju Inari Shrine''' (宝珠稲荷神社, Hōju Inari Jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} in {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}.
+
+* {{ill|Hōju Inari Shrine (Taitō, Tokyo)|ja|宝珠稲荷神社 (東京都台東区)|12=simple|13=User:Immanuelle/Hōju Inari Shrine (Taitō, Tokyo)|ja_comment=jawiki link invalid|qid=Q135579145|1=Hōju Inari Shrine (Taitō, Tokyo)}} - Located in [[Taitō Ward]], {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}, in the {{ill|Kiyokawa|en|Kiyokawa|qid=Q11560609|lt=Kiyokawa|1=Kiyokawa}} district.
+* {{ill|Hōju Inari Shrine (Chūō, Tokyo)|ja|宝珠稲荷神社 (東京都中央区)|12=simple|13=User:Immanuelle/Hōju Inari Shrine (Chūō, Tokyo)|1=Hōju Inari Shrine|comment=changed title based on wikidata|qid=Q11452618}} - Located in [[:en:Chūō Ward|Chūō Ward]], Tokyo, in the {{ill|Ginza|en|Ginza|qid=Q746052|lt=Ginza|1=Ginza}} district.
+* {{ill|Fuchi Shrine|lt=Fuchi Shrine|lt=Hōju Inari Shrine (Nagasaki)|ja|宝珠稲荷神社 (長崎市)|12=simple|13=User:Immanuelle/Hōju Inari Shrine (Nagasaki)|ja_comment=jawiki redirects to 淵神社}} - Located in [[:en:Nagasaki City|Nagasaki City]], {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}, as a subordinate shrine of [[Fuchi Shrines]].
+
+{{disambiguation}}
+
+{{translated page|ja|宝珠稲荷神社|version=89278123|comment=Imported full ja history}}
+
+{{wikidata link|Q11452617|ja|宝珠稲荷神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

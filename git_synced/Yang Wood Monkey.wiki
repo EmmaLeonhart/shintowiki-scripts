@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Wood Monkey|kanji=甲申|romaji=kinoe saru|onyomi=kōshin|p=jiǎshēn|w=chia-shen|mi=ʈ͡ʂja̠²¹ ʂən|y=gaap6 san1|j=gaap6 san1|ci=kaːp̚ ʂɐn|mc=kæp ʂin|oc-bs=kaːp ʔʂin|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -96,6 +97,7 @@ The day of {{ill|Koushin|ja|1=Yang Wood Monkey|2=ja|甲申|1=Yang Wood Monkey|12
 
 {{wikidata link|Q1062011|af|Houtaap (astrologie)|cdo|Gák-sĭng|de|Holz-Affe|fr|Singe de bois|hak|Kap-sṳ̂n|ja|甲申|ko|갑신|nds|Holt-Aap|vi|Giáp Thân|za|Gyapsaen|zh-min-nan|Kap-sin|zh-yue|甲申|zh|甲申|zh-min-nan|Kap-chú|cdo|Gák-cṳ̄de|nds|Holt-Affenvi|de|Yang Wood Monkey|de|Holz-Affeneen|en|Wood Monkey|fr|Singe de boisboishak|it|Kap-chṳ́id|za|Gyapceij|ar|Yang Wood Monkey}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

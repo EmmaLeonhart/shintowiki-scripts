@@ -1,0 +1,22 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Furukusu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
+
+Furukusu Shrine is a shrine
+
+*{{ill|8=ja|9=古楠神社 (掛川市)|Furukusu Shrine (Kakegawa City)|12=simple|13=User:Immanuelle/8=ja|qq=}} - Located in Kakegawa City, Shizuoka Prefecture
+* {{ill|8=ja|9=古楠神社 (袋井市)|Furukusu Shrine (Fukuroi City)|12=simple|13=User:Immanuelle/8=ja|ja_comment=jawiki link invalid|qid=Q135504167|1=Furukusu Shrine (Fukuroi City)}} - Located in Fukuroi City, Shizuoka Prefecture
+
+{{disambiguation}}
+
+*
+* 
+{{disambiguation}}
+
+{{translated page|ja|古楠神社|version=40563124|comment=Imported full ja history}}
+
+{{wikidata link|Q11411303|ja|古楠神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

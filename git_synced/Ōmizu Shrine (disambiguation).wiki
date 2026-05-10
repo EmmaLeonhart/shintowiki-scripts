@@ -1,0 +1,27 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+Ōmizu Shrine can refer to the following
+
+*{{ill|Ōmizu Shrine|ja|大水神社|12=simple|13=User:Immanuelle/Ōmizu Shrine|qq=}}   
+*{{ill|8=ja|9=田上大水神社|Tanoe-Ōmizu Shrine|12=simple|13=User:Immanuelle/8=ja|qq=}}
+== See Also ==
+* [[Suijin]]
+* {{ill|Mikumari|ja|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|zh|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|Mikumari|sv|Mikumari-no-Kami|ja|天水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|lt=Mikumari-no-Kami|12=simple|13=User:Immanuelle/Mikumari|qq=}}
+* {{ill|Suitengū|en|Suitengū|qid=Q125319456|lt=Suitengū|1=Suitengū}}
+
+{{disambiguation}}
+
+{{translated page|ja|大水神社 (曖昧さ回避)|version=101890769|comment=Imported full ja history}}
+
+{{draft categories|
+
+{{wikidata link|Q55522726|ja|大水神社 (曖昧さ回避)}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Special:LonelyPages 22 May 2025]]
+[[Category:Special:LonelyPages 26 May 2025]]
+[[Category:Wikidata has short description]]

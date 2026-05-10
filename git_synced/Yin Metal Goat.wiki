@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Metal Goat|kanji=辛未|romaji=kanoto hitsuji|onyomi=shimmu|p=xīnwèi|w=hsin-wei|mi=ɕin⁵³ weɪ̯⁵³|y=san1 mei6|j=san1 mei6|ci=sɐn mei²|mc=sin mjɨjH|oc-bs=sin məɯʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -95,6 +96,7 @@ A Xīnwèi day is the second day of the {{ill|Great Earth Period|ja|犯土|lt=�
 
 {{wikidata link|Q1062873|af|Metaalbok (astrologie)|cdo|Sĭng-ê|de|Metall-Schaf|fr|Chèvre de métal|hak|Sîn-vi|ja|辛未|ko|신미 (간지)|nds|Metall-Schaap|vi|Tân Mùi|za|Sinmeih|zh-min-nan|Sin-bī|zh-yue|辛未|zh|辛未|zh-min-nan|Sin-chá|cdo|Sin-cṳ̄de|nds|Metall-Bokenevi|de|Yin Metal Goat|de|Metall-Bokeen|en|Metal Goat|fr|Chèvre de métalboishak|it|Sin-chṳ́id|za|Sincceij|ar|Yin Metal Goat}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

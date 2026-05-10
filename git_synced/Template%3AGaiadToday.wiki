@@ -4,6 +4,7 @@
  | months   = {{{months|Capricorn,Aquarius,Pisces,Aries,Taurus,Gemini,Cancer,Leo,Virgo,Libra,Scorpio,Sagittarius,Ophiuchus}}}
  | weekdays = {{{weekdays|Sun,Mon,Tue,Wed,Thu,Fri,Sat}}}
 }}
-<noinclude>[[Category:git synced pages]]
+<noinclude>[[Category:Git synced pages]]
+[[Category:git synced templates]]
 [[Category:Templates missing wikidata]]
 </noinclude>

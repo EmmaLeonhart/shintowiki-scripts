@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Fire Snake|kanji=丁巳|romaji=hinoto mi|onyomi=teishi|p=dīsì|w=ting-ssu|mi=tʰiŋ⁵³ sɨ|y=deng1 si6|j=deng1 si6|ci=tɛŋ siː|mc=tæŋ si|oc-bs=tæŋ si|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -94,6 +95,7 @@ The selected day for {{ill|Teishi|ja|1=Yin Fire Snake|2=ja|丁巳|12=simple|13=U
 
 {{wikidata link|Q905311|af|Vuurslang (astrologie)|cdo|Dĭng-sê̤ṳ|de|Feuer-Schlange|hak|Tên-sṳ|ja|丁巳|ko|정사 (간지)|vi|Đinh Tỵ|za|Dingceih|zh-min-nan|Teng-sū|zh-yue|丁巳|zh|丁巳|zh-min-nan|Sin-chá|zh-yue|辛酉|cdo|Sin-cṳ̄de|nds|Holt-Hahnvi|de|Yin Fire Snake|fr|Serpent de feu|af|Houthaan (astrologie)|de|Holz-Hahneen|en|Wood Rooster|fr|Coq de boisboishak|it|Sin-chṳ́id|ko|신유|vi|Ất Dậu|za|Sincceij|zh|辛酉|ar|Yin Fire Snake}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

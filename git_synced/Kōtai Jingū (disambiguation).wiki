@@ -1,0 +1,37 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=K%C5%8Dtai_Jing%C5%AB_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
+
+'''Kōtai Jingū''' (皇大神宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} that enshrines {{ill|Amaterasu|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|lt=Amaterasu-ōmikami|12=simple|13=User:Immanuelle/Amaterasu|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to 天照大神}}. 
+
+The Main shrine is the {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} of [[Ise Grand Shrines]] and shrines with the same name are Branch shrines of that shrine. Similar to shrines called {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}. While {{ill|List of Jingū|en|List of Jingū|qid=Q120680118|lt=Jingu|1=List of Jingū}} is a highly prestigious title limited to only a few shrines. Kotai Jingus and Daijingus (皇大神宮 and 大神宮) are often much less prestigious and have that title by virtue of being branch shrines of a highly prestigious shrine
+
+==List==
+* {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} - Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}. The Inner Shrine (Naikū) of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}.
+* {{ill|Iseyama Kōtai Jingu|ja伊勢山皇大神宮|1=Iseyama Kōtai Jingū|2=fr|3=Iseyama Kotai Jingu|4=ja|5=伊勢山皇大神宮|6=zh|7=伊勢山皇大神宮|12=simple|13=User:Immanuelle/Iseyama Kōtai Jingu|13=User:Immanuelle/Iseyama Kōtai Jingū|qq=}} - Located in {{ill|Nishi-ku, Yokohama|en|Nishi-ku, Yokohama|qid=Q1203393|lt=Nishi-ku, Yokohama|1=Nishi-ku, Yokohama}}, {{ill|Yokohama|en|Yokohama|qid=Q38283|lt=Yokohama|1=Yokohama}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture|1=Kanagawa Prefecture}}.
+* {{ill|Kōdai-jingū|ja|皇大神宮 (藤沢市)|12=simple|13=User:Immanuelle/Kōdai-jingū|qq=}} - Located in {{ill|Fujisawa, Kanagawa|en|Fujisawa, Kanagawa|qid=Q386661|lt=Fujisawa|1=Fujisawa, Kanagawa}}, Kanagawa Prefecture.
+* {{ill|Kōtaijingū (Osaka)|ja|皇大神宮 (大阪市)|1=Kōtai Jingū (Osaka)|12=simple|13=User:Immanuelle/Kōtaijingū (Osaka)|13=User:Immanuelle/Kōtai Jingū (Osaka)|qq=}} - Located in {{ill|Jōtō-ku, Osaka|en|Jōtō-ku, Osaka|qid=Q490508|lt=Jōtō-ku, Osaka|1=Jōtō-ku, Osaka}}, {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka|1=Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, specifically in {{ill|Imafuku Minami|ja|今福南|12=simple|13=User:Immanuelle/Imafuku Minami|1=Imafuku-minami|comment=changed title based on wikidata|qid=Q76307293}}.
+* {{ill|Kōtai Jingū (Ishii)|ja|皇大神宮 (石井町)|12=simple|13=User:Immanuelle/Kōtai Jingū (Ishii)|qq=}} - Located in {{ill|Ishii, Tokushima|en|Ishii, Tokushima|qid=Q1205943|lt=Ishii|1=Ishii, Tokushima}}, {{ill|Myōzai District, Tokushima|en|Myōzai District, Tokushima|qid=Q1155732|lt=Myōzai District|1=Myōzai District, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}.
+* {{ill|Amaterasu Kōtaijingū|ja伊勢山皇大神宮|1=Ino Tenshō Kōtai Jingū|2=ja|3=天照皇大神宮|12=simple|13=User:Immanuelle/Amaterasu Kōtaijingū|13=User:Immanuelle/Tenshō Kōtai Jingū|comment=changed title based on wikidata|qid=Q17218394}} - Located in {{ill|Hisayama, Fukuoka|en|Hisayama, Fukuoka|qid=Q1206089|lt=Hisayama|1=Hisayama, Fukuoka}}, {{ill|Kasuya District, Fukuoka|en|Kasuya District, Fukuoka|qid=Q1206294|lt=Kasuya District|1=Kasuya District, Fukuoka}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}.
+* {{ill|Urakami Kōtaijingū|ja|浦上皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Urakami Kōtaijingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} - Located in {{ill|Nagasaki|en|Nagasaki|qid=Q38234|lt=Nagasaki|1=Nagasaki}}, {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}. → {{ill|Sannō Shrine|en|Sannō Shrine|qid=Q211522|lt=Sannō Shrine (Nagasaki)|1=Sannō Shrine}}
+
+==See also==
+* {{ill|Shinmei shrines|en|Shinmei shrines|qid=Q11590310|lt=Shinmei shrines|1=Shinmei shrines}}
+* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}
+* {{ill|Tenshō Kōtai Jingūkyō|en|Tenshō Kōtai Jingūkyō|qid=Q1788105|lt=Tenshō Kōtai Jingūkyō|1=Tenshō Kōtai Jingūkyō}}
+* {{ill|Kōtai Shrine|ja|皇大神社|12=simple|13=User:Immanuelle/Kōtai Shrine|ja_comment=jawiki redirects to 神明神社}}
+* {{ill|Tenso Shrine|ja|天祖神社 (曖昧さ回避)|zh|天祖神社|12=simple|13=User:Immanuelle/Tenso Shrine|qq=}}
+* [[Kotai_Shrine_(disambiguation)]]
+
+{{disambiguation}}
+
+{{translated page|ja|皇大神宮 (曖昧さ回避)|version=104245798|comment=Imported full ja history}}
+
+{{wikidata link|Q20037429|ja|皇大神宮 (曖昧さ回避)}}
+[[Category:All disambiguation pages]]
+[[Category:Shinmei shrines]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

@@ -1,0 +1,199 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+* changes.
+* {{ill|Ōi Shrine (Kasama)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kasama)|qq=}}
+（Ibaraki Prefecture [[Kasama, Ibaraki|Kasama City]]） - Shikinaisha candidate shrine.
+* {{ill|Oi Shrine|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
+（[[Shizuoka Prefecture|Shizuoka]] [[Shimada, Shizuoka|Shimada City]]） - Kokushi Genzaisha (国史見在社) and Beppyo Shrine (別表神社). Famous for the [[Shimada Obi Festival|Shimada no Obi Matsuri]]. There are several other shrines with the same name along the [[Ōi River (Shizuoka)|Ōi River]] basin.
+* {{ill|Ōi Shrine (Nagoya)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Nagoya)|qq=}}
+（[[Aichi Prefecture|Aichi]] [[Nagoya|Nagoya City]]）
+* {{ill|Ōi Shrine (Aisai)|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōi Shrine (Aisai)|qq=}}
+（Aichi Prefecture [[Aisai, Aichi|Aisai City]]）
+* {{ill|Ōi Shrine (Kitagata)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kitagata)|qq=}}
+（[[Gifu Prefecture|Gifu]] [[Kitagata, Gifu|Kitagata Town]] [[Motosu District, Gifu|Motosu District]]）
+* {{ill|Ōi Shrine (Kyoto)|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōi Shrine (Kyoto)|qq=}}
+（[[Kyoto Prefecture|Kyoto]] [[Kyoto|Kyoto City]] [[Ukyō-ku, Kyoto|Ukyō Ward]]） - Shikinaisha candidate shrine. Named after the [[Ōigawa (Kyoto)|Ōi River (Kyoto)]].
+* {{ill|Ōi Shrine (Kameoka)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kameoka)|qq=}}
+（Kyoto Prefecture [[Kameoka, Kyoto|Kameoka City]]） - Shikinaisha.
+== See Also ==
+* [[Ōi (disambiguation)]]
+* [[Ōimachi (disambiguation)]]
+* [[Ōi River (disambiguation)]]
+
+{{Disambiguation]]
+{{translated page|ja|大井神社 (笠間市)|version=91161247|comment=Imported full ja history}}
+
+{{draft categories|
+
+{{draft categories|
+
+{{wikidata link|Q66564749|co|commons:Category:Oi-jinja (Kasama)|ja|大井神社 (笠間市)|ja|大井神社 (島田市)|ja|大井神社 (名古屋市)|ja|大井神社 (愛西市)|ja|大井神社 (北方町)|ja|大井神社 (京都市)|ja|大井神社 (亀岡市)|ja|大井神社|en|Ōi Shrine (Kasama)}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama|qid=Q845851|1=Kasama, Ibaraki}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
+
+{{Shrine
+|Name   = Ōi Shrine
+|Image  = [[File:Oi Jinja Kasama Haiden.jpg|270px]]<br />Haiden
+|Location = {{ill|Ibaraki Prefecture|ja|茨城県}}{{ill|Kasama, Ibaraki|ja|笠間市}} Ōbuchi Aza Wadain 1652
+|LatitudeDeg = 36 | LatitudeMin = 24 | LatitudeSec = 4 | N/S = N 
+|LongitudeDeg = 140 | LongitudeMin = 16 | LongitudeSec = 13 | E/W = E
+|Deity   = {{ill|Kamiyai-mimi no Mikoto|ja|神八井耳命}}
+|Shintai   = 
+|Rank   = {{ill|Shikinaisha|ja|式内社}} (small) {{ill|theoretical shrine|ja|論社}}<br/>Former {{ill|village shrine|ja|村社}}
+|Founded   = {{ill|Daidō (Japan)|ja|大同}} 1 ({{ill|806|ja|806年}})
+|Honden   = {{ill|Nagare-zukuri|ja|流造}}
+|OtherNames   = Tarō Myōjin, Ichinomiya Myōjin (Shisho Ichinomiya)
+|Pilgrimage   = 
+|AnnualFestival   = {{ill|November 12|ja|11月12日}}
+|Rituals   = 
+|Map   = Japan Ibaraki
+}}
+{{coord list}}
+[[File:Oi Jinja Kasama Torii.jpg|250px|thumb|<center>Torii</center>]]
+'''Ōi Shrine''' (おおいじんじゃ) is a {{ill|Shinto shrine|ja|神社}} located in {{ill|Kasama, Ibaraki|ja|笠間市}}, {{ill|Ibaraki Prefecture|ja|茨城県}}. It is a {{ill|Shikinaisha|ja|式内社}} {{ill|theoretical shrine|ja|論社}} and was formerly ranked as a {{ill|village shrine|ja|村社}} under the {{ill|Modern system of ranked Shinto shrines|ja|近代社格制度}}.
+
+== Deity ==
+* '''{{ill|Kamiyai-mimi no Mikoto|ja|神八井耳命}}'''
+
+=== About the enshrined deity ===
+The enshrined deity, Kamiyai-mimi no Mikoto, was a son of the first {{ill|Emperor Jimmu|ja|神武天皇}} and elder brother of the second {{ill|Emperor Suizei|ja|綏靖天皇}}. According to the {{ill|Nihon Shoki|ja|日本書紀}}, Kamiyai-mimi no Mikoto was the ancestor of the {{ill|Tomo clan|ja|多氏}} (descendants of Ōtomo). The {{ill|Kojiki|ja|古事記}} records him as the ancestor of nineteen clans, including the Ōomi, the Oko-be no Muraji, Sakaai-be no Muraji, Hi no Kimi, Ōita no Kimi, Aso no Kimi, Chikushi Mikeno Muraji, Suzume no Omi, Suzume no Miyatsuko, Onagaya no Miyatsuko, Tsuge no Naori, Iyokuni no Miyatsuko, Shinano no Kuni no Miyatsuko, Michinoku Ishijō no Kuni no Miyatsuko, Jōdō Naka no Kuni no Miyatsuko, Nagasa no Kuni no Miyatsuko, Ise Funaki no Naori, Owari Niwa no Omi, and Shimada no Omi.
+
+Among these, the area near this shrine is thought to have been governed by the {{ill|Nakakuni no Miyatsuko|ja|仲国造}} (Lord of Nakakuni), and it is believed that the shrine was established by the Nakakuni clan to worship their ancestor, Kamiyai-mimi no Mikoto.
+
+== History ==
+=== Foundation ===
+According to shrine tradition, the shrine was built in {{ill|Daidō (Japan)|ja|大同}} 1 ({{ill|806|ja|806年}}) by imperial decree at Watai-ga-mine in Ōi Village, Naka District, Hitachi Province, and was called Ōi Daimyōjin.
+
+=== Outline of history ===
+In the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}, it is listed as “Ōi Shrine, Naka District, Hitachi Province,” included among the {{ill|Shikinaisha|ja|式内社}}. In the Middle Ages, it was called “Tarō Myōjin” and revered as the general guardian shrine of the five villages of Fukuda, Iida, Ishidera, Terasaki, and Hizawa. Among the four shrines of Ōi, Hakoda, Ishii, and Kurusu, this shrine was regarded as the foremost and worshiped as “Ichinomiya Myōjin” (Shisho Ichinomiya).
+
+== Grounds ==
+The main hall (honden) was rebuilt in {{ill|Meiwa|ja|明和}} 6 ({{ill|1769|ja|1769年}}). The sacred tree is a group of three cedar trees joined at the base, known as the “Parent and Child Cedars.”
+
+<gallery>
+File:Oi Jinja Kasama Honden.jpg|Main Hall (Honden)
+File:Oi Jinja Kasama Oyakosugi.jpg|Parent and Child Cedars (Sacred tree)
+</gallery>
+
+== Festivals ==
+* New Year’s Festival ({{ill|January 1|ja|1月1日}})
+* Spring Festival ({{ill|January 7|ja|1月7日}})
+* Setsubun Festival ({{ill|February 3|ja|2月3日}})
+* Rice-Planting Festival ({{ill|July 19|ja|7月19日}})
+* Autumn Festival ({{ill|November 12|ja|11月12日}})
+
+== References ==
+* Shrine information board
+* History brochure
+
+== See also ==
+* {{ill|Nakakuni no Miyatsuko|ja|仲国造}}
+* {{ill|Ōi Shrine (Mito, Ibaraki)|ja|大井神社 (水戸市)}} – another shrine regarded as a theoretical candidate for the “Ōi Shrine, Naka District, Hitachi Province” of the {{ill|Engishiki|ja|延喜式}}.
+
+{{Shinto footer}}{{Ibaraki shrines list index}}
+
+== See Also ==
+* [[:en:Ōi (disambiguation)|Ōi (disambiguation)]]
+* [[:en:Ōimachi (disambiguation)|Ōimachi (disambiguation)]]
+* [[Ōi River (disambiguation)]]
+
+{{translated page|ja|大井神社 (笠間市)|version=91161247|comment=Imported full ja history}}
+
+{{Commons category|Oi-jinja (Kasama)}}
+{{wikidata link|Q66564749}}
+== Accidentally Overwritten Content ==
+{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama|qid=Q845851|1=Kasama, Ibaraki}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
+
+{{Shrine
+|Name   = Ōi Shrine
+|Image  = [[File:Oi Jinja Kasama Haiden.jpg|270px]]<br />Haiden
+|Location = {{ill|Ibaraki Prefecture|ja|茨城県}}{{ill|Kasama, Ibaraki|ja|笠間市}} Ōbuchi Aza Wadain 1652
+|LatitudeDeg = 36 | LatitudeMin = 24 | LatitudeSec = 4 | N/S = N 
+|LongitudeDeg = 140 | LongitudeMin = 16 | LongitudeSec = 13 | E/W = E
+|Deity   = {{ill|Kamiyai-mimi no Mikoto|ja|神八井耳命}}
+|Shintai   = 
+|Rank   = {{ill|Shikinaisha|ja|式内社}} (small) {{ill|theoretical shrine|ja|論社}}<br/>Former {{ill|village shrine|ja|村社}}
+|Founded   = {{ill|Daidō (Japan)|ja|大同}} 1 ({{ill|806|ja|806年}})
+|Honden   = {{ill|Nagare-zukuri|ja|流造}}
+|OtherNames   = Tarō Myōjin, Ichinomiya Myōjin (Shisho Ichinomiya)
+|Pilgrimage   = 
+|AnnualFestival   = {{ill|November 12|ja|11月12日}}
+|Rituals   = 
+|Map   = Japan Ibaraki
+}}
+{{coord list}}
+[[File:Oi Jinja Kasama Torii.jpg|250px|thumb|<center>Torii</center>]]
+'''Ōi Shrine''' (おおいじんじゃ) is a {{ill|Shinto shrine|ja|神社}} located in {{ill|Kasama, Ibaraki|ja|笠間市}}, {{ill|Ibaraki Prefecture|ja|茨城県}}. It is a {{ill|Shikinaisha|ja|式内社}} {{ill|theoretical shrine|ja|論社}} and was formerly ranked as a {{ill|village shrine|ja|村社}} under the {{ill|Modern system of ranked Shinto shrines|ja|近代社格制度}}.
+
+== Deity ==
+* '''{{ill|Kamiyai-mimi no Mikoto|ja|神八井耳命}}'''
+
+=== About the enshrined deity ===
+The enshrined deity, Kamiyai-mimi no Mikoto, was a son of the first {{ill|Emperor Jimmu|ja|神武天皇}} and elder brother of the second {{ill|Emperor Suizei|ja|綏靖天皇}}. According to the {{ill|Nihon Shoki|ja|日本書紀}}, Kamiyai-mimi no Mikoto was the ancestor of the {{ill|Tomo clan|ja|多氏}} (descendants of Ōtomo). The {{ill|Kojiki|ja|古事記}} records him as the ancestor of nineteen clans, including the Ōomi, the Oko-be no Muraji, Sakaai-be no Muraji, Hi no Kimi, Ōita no Kimi, Aso no Kimi, Chikushi Mikeno Muraji, Suzume no Omi, Suzume no Miyatsuko, Onagaya no Miyatsuko, Tsuge no Naori, Iyokuni no Miyatsuko, Shinano no Kuni no Miyatsuko, Michinoku Ishijō no Kuni no Miyatsuko, Jōdō Naka no Kuni no Miyatsuko, Nagasa no Kuni no Miyatsuko, Ise Funaki no Naori, Owari Niwa no Omi, and Shimada no Omi.
+
+Among these, the area near this shrine is thought to have been governed by the {{ill|Nakakuni no Miyatsuko|ja|仲国造}} (Lord of Nakakuni), and it is believed that the shrine was established by the Nakakuni clan to worship their ancestor, Kamiyai-mimi no Mikoto.
+
+== History ==
+=== Foundation ===
+According to shrine tradition, the shrine was built in {{ill|Daidō (Japan)|ja|大同}} 1 ({{ill|806|ja|806年}}) by imperial decree at Watai-ga-mine in Ōi Village, Naka District, Hitachi Province, and was called Ōi Daimyōjin.
+
+=== Outline of history ===
+In the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}, it is listed as “Ōi Shrine, Naka District, Hitachi Province,” included among the {{ill|Shikinaisha|ja|式内社}}. In the Middle Ages, it was called “Tarō Myōjin” and revered as the general guardian shrine of the five villages of Fukuda, Iida, Ishidera, Terasaki, and Hizawa. Among the four shrines of Ōi, Hakoda, Ishii, and Kurusu, this shrine was regarded as the foremost and worshiped as “Ichinomiya Myōjin” (Shisho Ichinomiya).
+
+== Grounds ==
+The main hall (honden) was rebuilt in {{ill|Meiwa|ja|明和}} 6 ({{ill|1769|ja|1769年}}). The sacred tree is a group of three cedar trees joined at the base, known as the “Parent and Child Cedars.”
+
+<gallery>
+File:Oi Jinja Kasama Honden.jpg|Main Hall (Honden)
+File:Oi Jinja Kasama Oyakosugi.jpg|Parent and Child Cedars (Sacred tree)
+</gallery>
+
+== Festivals ==
+* New Year’s Festival ({{ill|January 1|ja|1月1日}})
+* Spring Festival ({{ill|January 7|ja|1月7日}})
+* Setsubun Festival ({{ill|February 3|ja|2月3日}})
+* Rice-Planting Festival ({{ill|July 19|ja|7月19日}})
+* Autumn Festival ({{ill|November 12|ja|11月12日}})
+
+== References ==
+* Shrine information board
+* History brochure
+
+== See also ==
+* {{ill|Nakakuni no Miyatsuko|ja|仲国造}}
+* {{ill|Ōi Shrine (Mito, Ibaraki)|ja|大井神社 (水戸市)}} – another shrine regarded as a theoretical candidate for the “Ōi Shrine, Naka District, Hitachi Province” of the {{ill|Engishiki|ja|延喜式}}.
+
+{{Shinto footer}}{{Ibaraki shrines list index}}
+
+== See Also ==
+* [[:en:Ōi (disambiguation)|Ōi (disambiguation)]]
+* [[:en:Ōimachi (disambiguation)|Ōimachi (disambiguation)]]
+* [[Ōi River (disambiguation)]]
+
+{{translated page|ja|大井神社 (笠間市)|version=91161247|comment=Imported full ja history}}
+
+{{Commons category|Oi-jinja (Kasama)}}
+{{wikidata link|Q66564749}}
+[[Category:Architecture of Kasama City]]
+[[Category:Beppyo shrines]]
+[[Category:Buildings and structures in Kasama, Ibaraki]]
+[[Category:History of Kasama, Ibaraki]]
+[[Category:Municipal History of Kasama]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hitachi Province]]
+[[Category:Shinto shrines in Ibaraki Prefecture]]
+[[Category:Shrine disambiguations]]
+[[Category:Son-sha in Ibaraki Prefecture]]
+[[Category:Wikidata has short description]]
+[[Category:Ōi Shrine (Kasama)}}
+
+[[Category:笠間市の建築物]]
+[[Category:笠間市の歴史]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Pages with interwikis with duplicate languages]]

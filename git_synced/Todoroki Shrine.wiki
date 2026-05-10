@@ -1,0 +1,19 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Todoroki Shrine''' (轟神社, Todoroki Jinja)
+* {{ill|Todoroki Shrine (Anan)|ja|轟神社 (阿南市)|12=simple|13=User:Immanuelle/Todoroki Shrine (Anan)|qq=}} - A shrine located in {{ill|Anan, Tokushima|en|Anan, Tokushima|qid=Q485583|lt=Anan, Tokushima|1=Anan, Tokushima}}, Tokushima Prefecture, in Niino Town.
+* {{ill|Todoroki Shrine (Kaiyo)|ja|轟神社 (海陽町)|12=simple|13=User:Immanuelle/Todoroki Shrine (Kaiyo)|qq=}} - A shrine located in {{ill|Kaiyō, Tokushima|en|Kaiyō, Tokushima|qid=Q1205954|lt=Kaiyo, Tokushima|1=Kaiyō, Tokushima}}, Tokushima Prefecture, in Hirai.
+
+{{disambiguation}}
+
+{{translated page|ja|轟神社|version=84061180|comment=Imported full ja history}}
+
+{{wikidata link|Q108779158|ja|轟神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Special:LonelyPages 22 May 2025]]
+[[Category:Special:LonelyPages 26 May 2025]]
+[[Category:Wikidata has short description]]
+[[Category:Wikidata no English label]]

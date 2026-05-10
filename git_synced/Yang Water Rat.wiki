@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Water Rat|kanji=壬子|romaji=mizunoe nezumi|onyomi=jinshi|p=rénzǐ|w=jen-tzŭ|mi=ʐən³⁵ tsɨ|y=jam4 zi2|j=jam4 zi2|ci=jɐm tsi|mc=ɲiɪm tsi|oc-bs=ɲɨm tsi|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -103,6 +104,7 @@ The selected day for {{ill|Jinshi|ja|1=Yang Water Rat|2=ja|壬子|1=Yang Water R
 {{wikidata link|Q904972|af|Waterrot (astrologie)|cdo|Ìng-cṳ̄ (găng-ciĕ)|de|Wasser-Ratte|fr|Rat d'eau (astrologie)|hak|Ngìm-chṳ́|ja|壬子|ko|임자|vi|Nhâm Tý|za|Nyaemzceij|zh-min-nan|Jîm-chú|zh-yue|壬子|zh|壬子|zh-min-nan|Pêng-chún|zh-yue|丙辰|cdo|Bîng-cṳ̄de|nds|Metall-Drachteen|de|Yang Water Rat|fr|Rat de eau|af|Metaaldraak (astrologie)|de|Metall-Drachteen|en|Metal Dragon|fr|Dragon de métalboishak|it|Bing-chṳ́id|ko|병진|vi|Bính Thìn|za|Bingceij|zh|丙辰|ar|Yang Water Rat}}
 [[Category:East Asian folk religion]]
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

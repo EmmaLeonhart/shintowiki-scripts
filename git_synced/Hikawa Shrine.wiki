@@ -1,0 +1,285 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hikawa_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
+
+'''Hikawa Shrine''' may refer to:
+
+* [[Hikawa Shrine (Saitama)]], the main Shinto shrine in Saitama Prefecture, which has several branch shrines, including:
+''' [[Hikawa Shrine (Akasaka)]], in Akasaka, Minato, Tokyo
+''' [[Hikawa Shrine (Kawagoe)]]
+
+'''Hikawa Shrine''' (氷川神社) is a [[kami (Shinto)]] shrine dedicated to {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=draft}} as its primary deity. It is central to the {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}, with over 200 shrines bearing the Hikawa name, primarily located along the {{ill|Arakawa River (Kantō)|ja|荒川 (関東)|12=draft}} in the former {{ill|Musashi Province|ja|武蔵国|12=draft}}, which includes present-day {{ill|Saitama Prefecture|ja|埼玉県|12=draft}} and {{ill|Tokyo|ja|東京都|12=draft}}. Including shrines without the Hikawa name, there are over 260 associated shrines, some of which are written as "簸川神社."
+
+== Hokkaido ==
+=== Niika11u Town ===
+* {{ill|Hikawa Shrine (Niika11u)|ja|氷川神社 (新冠町)|12=draft}} ({{ill|Niika11u District|ja|新冠郡|12=draft}}, {{ill|Niika11u, Hokkaido|ja|新冠町|12=draft}})
+
+== Saitama Prefecture ==
+=== Saitama City ===
+* {{ill|Hikawa Shrine|ja|氷川神社|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Takanohanasaka|ja|高鼻町|12=draft}}) – Head shrine of the Hikawa network.
+* {{ill|Hikawa-Nyojin Shrine|ja|氷川女体神社|12=draft}} ({{ill|Midori Ward (Saitama)|ja|緑区|12=draft}}, {{ill|Mimuro (Saitama)|ja|三室|12=draft}})
+* {{ill|Nakayama Shrine (Saitama)|ja|中山神社 (さいたま市)|12=draft}} ({{ill|Minuma Ward|ja|見沼区|12=draft}}, {{ill|Nakagawa (Saitama)|ja|中川|12=draft}})
+* {{ill|Hikawa Shrine (Bonta, Saitama)|ja|氷川神社 (さいたま市浦和区)|12=draft}} ({{ill|Urawa Ward|ja|浦和区|12=draft}}, {{ill|Bonta|ja|本太|12=draft}})
+* {{ill|Hikawa Shrine (Komurada, Ōmiya)|ja|氷川神社 (さいたま市大宮区上小町)|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Komurada|ja|上小町|12=draft}})
+* {{ill|Nishihori Hikawa Shrine|ja|氷川神社 (さいたま市桜区西堀)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Nishihori (Saitama)|ja|西堀|12=draft}})
+* {{ill|Tajima Hikawa Shrine|ja|田島氷川社|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Tajima (Saitama)|ja|田島|12=draft}})
+* {{ill|Kami-Ōkubo Hikawa Shrine|ja|氷川神社 (さいたま市桜区上大久保)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Kami-Ōkubo (Saitama)|ja|上大久保|12=draft}})
+* {{ill|Ōtakubo Hikawa Shrine|ja|氷川神社 (さいたま市南区太田窪)|12=draft}} ({{ill|Minami Ward (Saitama)|ja|南区|12=draft}}, {{ill|Ōtakubo|ja|太田窪|12=draft}})
+* {{ill|Hikawa Shrine (Futamiya, Nishi Ward)|ja|氷川神社 (さいたま市西区二ツ宮)|12=draft}}
+* {{ill|Hikawa Shrine (Tsuchiya, Nishi Ward)|ja|氷川神社 (さいたま市西区土屋)|12=draft}}
+* {{ill|Hikawa Shrine (Nishi Asuma, Nishi Ward)|ja|氷川神社 (さいたま市西区西遊馬)|12=draft}}
+* {{ill|Hikawa Shrine (Shimane, Nishi Ward)|ja|氷川神社 (さいたま市西区島根)|12=draft}}
+* {{ill|Hikawa Shrine (Takagi, Nishi Ward)|ja|氷川神社 (さいたま市西区高木)|12=draft}}
+
+=== Toda City ===
+* {{ill|Hikawa Shrine (Hikawa Town, Toda)|ja|氷川社 (戸田市氷川町)|12=draft}} ({{ill|Hikawa Town, Toda|ja|氷川町|12=draft}})
+* {{ill|Hikawa Shrine (Kametoda)|ja|氷川神社 (戸田市)|12=draft}} ({{ill|Kametoda|ja|上戸田|12=draft}})
+* {{ill|Hikawa Shrine (Shimo-Toda)|ja|氷川社 (戸田市中町)|12=draft}} ({{ill|Shimo-Toda|ja|下戸田|12=draft}})
+
+=== Kawagoe City ===
+* {{ill|Hikawa Shrine (Kawagoe)|ja|氷川神社 (川越市)|12=draft}} ({{ill|Kawagoe|ja|川越市|12=draft}})
+
+=== Kawaguchi City ===
+* {{ill|Motogō Hikawa Shrine|ja|元郷氷川神社|12=draft}} ({{ill|Motogō|ja|元郷|12=draft}})
+* {{ill|Chinju Hikawa Shrine|ja|鎮守氷川神社|12=draft}} ({{ill|Aoki|ja|青木|12=draft}})
+* {{ill|Kami-Aoki Hikawa Shrine|ja|氷川神社 (川口市上青木)|12=draft}} ({{ill|Kami-Aoki|ja|上青木|12=draft}})
+* {{ill|Nishi-Arajuku Hikawa Shrine|ja|氷川社 (川口市西新井宿)|12=draft}} ({{ill|Nishi-Arajuku|ja|西新井宿|12=draft}})
+* {{ill|Hikawa Shrine (Higashihongi)|ja|氷川神社 (川口市鳩ヶ谷本町)|12=draft}} ({{ill|Higashihongi|ja|鳩ヶ谷本町|12=draft}})
+* {{ill|Hikawa Shrine (Anryū)|ja|氷川神社 (川口市安行)|12=draft}}
+
+=== Tokyo ===
+=== 23 Special Wards ===
+==== Bunkyō Ward ====
+* {{ill|Hikawa Shrine (Bunkyō)|ja|簸川神社 (文京区)|12=draft}} ({{ill|Sengoku (Bunkyō)|ja|千石|12=draft}})
+
+==== Nakano Ward ====
+* {{ill|Hikawa Shrine (Higashinakano)|ja|氷川神社 (中野区東中野)|12=draft}} ({{ill|Higashinakano|ja|東中野|12=draft}})
+* {{ill|Hikawa Shrine (Numabukuro)|ja|氷川神社 (中野区沼袋)|12=draft}} ({{ill|Numabukuro|ja|沼袋|12=draft}})
+* {{ill|Hikawa Shrine (Egota)|ja|氷川神社 (中野区江古田)|12=draft}} ({{ill|Egota|ja|江古田|12=draft}})
+* {{ill|Shinmei Hikawa Shrine|ja|神明氷川神社|12=draft}} ({{ill|Yayoichō (Nakano)|ja|弥生町|12=draft}})
+
+==== Shinjuku Ward ====
+* {{ill|Hikawa Shrine (Shinjuku)|ja|氷川神社 (新宿区)|12=draft}} ({{ill|Shimo-Ochiai|ja|下落合|12=draft}})
+
+==== Toshima Ward ====
+* {{ill|Hikawa Shrine (Takada, Toshima)|ja|氷川神社 (豊島区高田)|12=draft}} ({{ill|Takada (Toshima)|ja|高田|12=draft}})
+* {{ill|Ikebukuro Hikawa Shrine|ja|池袋氷川神社|12=draft}} ({{ill|Ikebukurohonchō|ja|池袋本町|12=draft}})
+
+== See Also ==
+* {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}
+* {{ill|Hikawa Maru|ja|氷川丸|12=draft}}
+
+{{Ambox}}
+{{citation needed|ひかわしんしや}}
+{{Disambiguation}}
+]]
+
+]]
+
+{{citation needed|Hikawa Shrine
+
+{{citation needed|Hikawa Shrine}}
+
+== Accidentally Overwritten Content ==
+
+'''Hikawa Shrine''' may refer to:
+
+* [[Hikawa Shrine (Saitama)]], the main Shinto shrine in Saitama Prefecture, which has several branch shrines, including:
+''' [[Hikawa Shrine (Akasaka)]], in Akasaka, Minato, Tokyo
+''' [[Hikawa Shrine (Kawagoe)]]
+
+'''Hikawa Shrine''' (氷川神社) is a [[kami (Shinto)]] shrine dedicated to {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=draft}} as its primary deity. It is central to the {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}, with over 200 shrines bearing the Hikawa name, primarily located along the {{ill|Arakawa River (Kantō)|ja|荒川 (関東)|12=draft}} in the former {{ill|Musashi Province|ja|武蔵国|12=draft}}, which includes present-day {{ill|Saitama Prefecture|ja|埼玉県|12=draft}} and {{ill|Tokyo|ja|東京都|12=draft}}. Including shrines without the Hikawa name, there are over 260 associated shrines, some of which are written as "簸川神社."
+
+== Hokkaido ==
+=== Niika11u Town ===
+* {{ill|Hikawa Shrine (Niika11u)|ja|氷川神社 (新冠町)|12=draft}} ({{ill|Niika11u District|ja|新冠郡|12=draft}}, {{ill|Niika11u, Hokkaido|ja|新冠町|12=draft}})
+
+== Saitama Prefecture ==
+=== Saitama City ===
+* {{ill|Hikawa Shrine|ja|氷川神社|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Takanohanasaka|ja|高鼻町|12=draft}}) – Head shrine of the Hikawa network.
+* {{ill|Hikawa-Nyojin Shrine|ja|氷川女体神社|12=draft}} ({{ill|Midori Ward (Saitama)|ja|緑区|12=draft}}, {{ill|Mimuro (Saitama)|ja|三室|12=draft}})
+* {{ill|Nakayama Shrine (Saitama)|ja|中山神社 (さいたま市)|12=draft}} ({{ill|Minuma Ward|ja|見沼区|12=draft}}, {{ill|Nakagawa (Saitama)|ja|中川|12=draft}})
+* {{ill|Hikawa Shrine (Bonta, Saitama)|ja|氷川神社 (さいたま市浦和区)|12=draft}} ({{ill|Urawa Ward|ja|浦和区|12=draft}}, {{ill|Bonta|ja|本太|12=draft}})
+* {{ill|Hikawa Shrine (Komurada, Ōmiya)|ja|氷川神社 (さいたま市大宮区上小町)|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Komurada|ja|上小町|12=draft}})
+* {{ill|Nishihori Hikawa Shrine|ja|氷川神社 (さいたま市桜区西堀)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Nishihori (Saitama)|ja|西堀|12=draft}})
+* {{ill|Tajima Hikawa Shrine|ja|田島氷川社|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Tajima (Saitama)|ja|田島|12=draft}})
+* {{ill|Kami-Ōkubo Hikawa Shrine|ja|氷川神社 (さいたま市桜区上大久保)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Kami-Ōkubo (Saitama)|ja|上大久保|12=draft}})
+* {{ill|Ōtakubo Hikawa Shrine|ja|氷川神社 (さいたま市南区太田窪)|12=draft}} ({{ill|Minami Ward (Saitama)|ja|南区|12=draft}}, {{ill|Ōtakubo|ja|太田窪|12=draft}})
+* {{ill|Hikawa Shrine (Futamiya, Nishi Ward)|ja|氷川神社 (さいたま市西区二ツ宮)|12=draft}}
+* {{ill|Hikawa Shrine (Tsuchiya, Nishi Ward)|ja|氷川神社 (さいたま市西区土屋)|12=draft}}
+* {{ill|Hikawa Shrine (Nishi Asuma, Nishi Ward)|ja|氷川神社 (さいたま市西区西遊馬)|12=draft}}
+* {{ill|Hikawa Shrine (Shimane, Nishi Ward)|ja|氷川神社 (さいたま市西区島根)|12=draft}}
+* {{ill|Hikawa Shrine (Takagi, Nishi Ward)|ja|氷川神社 (さいたま市西区高木)|12=draft}}
+
+=== Toda City ===
+* {{ill|Hikawa Shrine (Hikawa Town, Toda)|ja|氷川社 (戸田市氷川町)|12=draft}} ({{ill|Hikawa Town, Toda|ja|氷川町|12=draft}})
+* {{ill|Hikawa Shrine (Kametoda)|ja|氷川神社 (戸田市)|12=draft}} ({{ill|Kametoda|ja|上戸田|12=draft}})
+* {{ill|Hikawa Shrine (Shimo-Toda)|ja|氷川社 (戸田市中町)|12=draft}} ({{ill|Shimo-Toda|ja|下戸田|12=draft}})
+
+=== Kawagoe City ===
+* {{ill|Hikawa Shrine (Kawagoe)|ja|氷川神社 (川越市)|12=draft}} ({{ill|Kawagoe|ja|川越市|12=draft}})
+
+=== Kawaguchi City ===
+* {{ill|Motogō Hikawa Shrine|ja|元郷氷川神社|12=draft}} ({{ill|Motogō|ja|元郷|12=draft}})
+* {{ill|Chinju Hikawa Shrine|ja|鎮守氷川神社|12=draft}} ({{ill|Aoki|ja|青木|12=draft}})
+* {{ill|Kami-Aoki Hikawa Shrine|ja|氷川神社 (川口市上青木)|12=draft}} ({{ill|Kami-Aoki|ja|上青木|12=draft}})
+* {{ill|Nishi-Arajuku Hikawa Shrine|ja|氷川社 (川口市西新井宿)|12=draft}} ({{ill|Nishi-Arajuku|ja|西新井宿|12=draft}})
+* {{ill|Hikawa Shrine (Higashihongi)|ja|氷川神社 (川口市鳩ヶ谷本町)|12=draft}} ({{ill|Higashihongi|ja|鳩ヶ谷本町|12=draft}})
+* {{ill|Hikawa Shrine (Anryū)|ja|氷川神社 (川口市安行)|12=draft}}
+
+=== Tokyo ===
+=== 23 Special Wards ===
+==== Bunkyō Ward ====
+* {{ill|Hikawa Shrine (Bunkyō)|ja|簸川神社 (文京区)|12=draft}} ({{ill|Sengoku (Bunkyō)|ja|千石|12=draft}})
+
+==== Nakano Ward ====
+* {{ill|Hikawa Shrine (Higashinakano)|ja|氷川神社 (中野区東中野)|12=draft}} ({{ill|Higashinakano|ja|東中野|12=draft}})
+* {{ill|Hikawa Shrine (Numabukuro)|ja|氷川神社 (中野区沼袋)|12=draft}} ({{ill|Numabukuro|ja|沼袋|12=draft}})
+* {{ill|Hikawa Shrine (Egota)|ja|氷川神社 (中野区江古田)|12=draft}} ({{ill|Egota|ja|江古田|12=draft}})
+* {{ill|Shinmei Hikawa Shrine|ja|神明氷川神社|12=draft}} ({{ill|Yayoichō (Nakano)|ja|弥生町|12=draft}})
+
+==== Shinjuku Ward ====
+* {{ill|Hikawa Shrine (Shinjuku)|ja|氷川神社 (新宿区)|12=draft}} ({{ill|Shimo-Ochiai|ja|下落合|12=draft}})
+
+==== Toshima Ward ====
+* {{ill|Hikawa Shrine (Takada, Toshima)|ja|氷川神社 (豊島区高田)|12=draft}} ({{ill|Takada (Toshima)|ja|高田|12=draft}})
+* {{ill|Ikebukuro Hikawa Shrine|ja|池袋氷川神社|12=draft}} ({{ill|Ikebukurohonchō|ja|池袋本町|12=draft}})
+
+== See Also ==
+* {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}
+* {{ill|Hikawa Maru|ja|氷川丸|12=draft}}
+
+{{Ambox}}
+{{citation needed|ひかわしんしや}}
+{{Disambiguation}}
+]]
+
+]]
+
+{{citation needed|Hikawa Shrine
+
+{{citation needed|Hikawa Shrine}}
+
+== Accidentally Overwritten Content ==
+
+'''Hikawa Shrine''' may refer to:
+
+* [[Hikawa Shrine (Saitama)]], the main Shinto shrine in Saitama Prefecture, which has several branch shrines, including:
+''' [[Hikawa Shrine (Akasaka)]], in Akasaka, Minato, Tokyo
+''' [[Hikawa Shrine (Kawagoe)]]
+
+'''Hikawa Shrine''' (氷川神社) is a [[kami (Shinto)]] shrine dedicated to {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=draft}} as its primary deity. It is central to the {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}, with over 200 shrines bearing the Hikawa name, primarily located along the {{ill|Arakawa River (Kantō)|ja|荒川 (関東)|12=draft}} in the former {{ill|Musashi Province|ja|武蔵国|12=draft}}, which includes present-day {{ill|Saitama Prefecture|ja|埼玉県|12=draft}} and {{ill|Tokyo|ja|東京都|12=draft}}. Including shrines without the Hikawa name, there are over 260 associated shrines, some of which are written as "簸川神社."
+
+== Hokkaido ==
+=== Niika11u Town ===
+* {{ill|Hikawa Shrine (Niika11u)|ja|氷川神社 (新冠町)|12=draft}} ({{ill|Niika11u District|ja|新冠郡|12=draft}}, {{ill|Niika11u, Hokkaido|ja|新冠町|12=draft}})
+
+== Saitama Prefecture ==
+=== Saitama City ===
+* {{ill|Hikawa Shrine|ja|氷川神社|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Takanohanasaka|ja|高鼻町|12=draft}}) – Head shrine of the Hikawa network.
+* {{ill|Hikawa-Nyojin Shrine|ja|氷川女体神社|12=draft}} ({{ill|Midori Ward (Saitama)|ja|緑区|12=draft}}, {{ill|Mimuro (Saitama)|ja|三室|12=draft}})
+* {{ill|Nakayama Shrine (Saitama)|ja|中山神社 (さいたま市)|12=draft}} ({{ill|Minuma Ward|ja|見沼区|12=draft}}, {{ill|Nakagawa (Saitama)|ja|中川|12=draft}})
+* {{ill|Hikawa Shrine (Bonta, Saitama)|ja|氷川神社 (さいたま市浦和区)|12=draft}} ({{ill|Urawa Ward|ja|浦和区|12=draft}}, {{ill|Bonta|ja|本太|12=draft}})
+* {{ill|Hikawa Shrine (Komurada, Ōmiya)|ja|氷川神社 (さいたま市大宮区上小町)|12=draft}} ({{ill|Ōmiya Ward|ja|大宮区|12=draft}}, {{ill|Komurada|ja|上小町|12=draft}})
+* {{ill|Nishihori Hikawa Shrine|ja|氷川神社 (さいたま市桜区西堀)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Nishihori (Saitama)|ja|西堀|12=draft}})
+* {{ill|Tajima Hikawa Shrine|ja|田島氷川社|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Tajima (Saitama)|ja|田島|12=draft}})
+* {{ill|Kami-Ōkubo Hikawa Shrine|ja|氷川神社 (さいたま市桜区上大久保)|12=draft}} ({{ill|Sakura Ward (Saitama)|ja|桜区|12=draft}}, {{ill|Kami-Ōkubo (Saitama)|ja|上大久保|12=draft}})
+* {{ill|Ōtakubo Hikawa Shrine|ja|氷川神社 (さいたま市南区太田窪)|12=draft}} ({{ill|Minami Ward (Saitama)|ja|南区|12=draft}}, {{ill|Ōtakubo|ja|太田窪|12=draft}})
+* {{ill|Hikawa Shrine (Futamiya, Nishi Ward)|ja|氷川神社 (さいたま市西区二ツ宮)|12=draft}}
+* {{ill|Hikawa Shrine (Tsuchiya, Nishi Ward)|ja|氷川神社 (さいたま市西区土屋)|12=draft}}
+* {{ill|Hikawa Shrine (Nishi Asuma, Nishi Ward)|ja|氷川神社 (さいたま市西区西遊馬)|12=draft}}
+* {{ill|Hikawa Shrine (Shimane, Nishi Ward)|ja|氷川神社 (さいたま市西区島根)|12=draft}}
+* {{ill|Hikawa Shrine (Takagi, Nishi Ward)|ja|氷川神社 (さいたま市西区高木)|12=draft}}
+
+=== Toda City ===
+* {{ill|Hikawa Shrine (Hikawa Town, Toda)|ja|氷川社 (戸田市氷川町)|12=draft}} ({{ill|Hikawa Town, Toda|ja|氷川町|12=draft}})
+* {{ill|Hikawa Shrine (Kametoda)|ja|氷川神社 (戸田市)|12=draft}} ({{ill|Kametoda|ja|上戸田|12=draft}})
+* {{ill|Hikawa Shrine (Shimo-Toda)|ja|氷川社 (戸田市中町)|12=draft}} ({{ill|Shimo-Toda|ja|下戸田|12=draft}})
+
+=== Kawagoe City ===
+* {{ill|Hikawa Shrine (Kawagoe)|ja|氷川神社 (川越市)|12=draft}} ({{ill|Kawagoe|ja|川越市|12=draft}})
+
+=== Kawaguchi City ===
+* {{ill|Motogō Hikawa Shrine|ja|元郷氷川神社|12=draft}} ({{ill|Motogō|ja|元郷|12=draft}})
+* {{ill|Chinju Hikawa Shrine|ja|鎮守氷川神社|12=draft}} ({{ill|Aoki|ja|青木|12=draft}})
+* {{ill|Kami-Aoki Hikawa Shrine|ja|氷川神社 (川口市上青木)|12=draft}} ({{ill|Kami-Aoki|ja|上青木|12=draft}})
+* {{ill|Nishi-Arajuku Hikawa Shrine|ja|氷川社 (川口市西新井宿)|12=draft}} ({{ill|Nishi-Arajuku|ja|西新井宿|12=draft}})
+* {{ill|Hikawa Shrine (Higashihongi)|ja|氷川神社 (川口市鳩ヶ谷本町)|12=draft}} ({{ill|Higashihongi|ja|鳩ヶ谷本町|12=draft}})
+* {{ill|Hikawa Shrine (Anryū)|ja|氷川神社 (川口市安行)|12=draft}}
+
+=== Tokyo ===
+=== 23 Special Wards ===
+==== Bunkyō Ward ====
+* {{ill|Hikawa Shrine (Bunkyō)|ja|簸川神社 (文京区)|12=draft}} ({{ill|Sengoku (Bunkyō)|ja|千石|12=draft}})
+
+==== Nakano Ward ====
+* {{ill|Hikawa Shrine (Higashinakano)|ja|氷川神社 (中野区東中野)|12=draft}} ({{ill|Higashinakano|ja|東中野|12=draft}})
+* {{ill|Hikawa Shrine (Numabukuro)|ja|氷川神社 (中野区沼袋)|12=draft}} ({{ill|Numabukuro|ja|沼袋|12=draft}})
+* {{ill|Hikawa Shrine (Egota)|ja|氷川神社 (中野区江古田)|12=draft}} ({{ill|Egota|ja|江古田|12=draft}})
+* {{ill|Shinmei Hikawa Shrine|ja|神明氷川神社|12=draft}} ({{ill|Yayoichō (Nakano)|ja|弥生町|12=draft}})
+
+==== Shinjuku Ward ====
+* {{ill|Hikawa Shrine (Shinjuku)|ja|氷川神社 (新宿区)|12=draft}} ({{ill|Shimo-Ochiai|ja|下落合|12=draft}})
+
+==== Toshima Ward ====
+* {{ill|Hikawa Shrine (Takada, Toshima)|ja|氷川神社 (豊島区高田)|12=draft}} ({{ill|Takada (Toshima)|ja|高田|12=draft}})
+* {{ill|Ikebukuro Hikawa Shrine|ja|池袋氷川神社|12=draft}} ({{ill|Ikebukurohonchō|ja|池袋本町|12=draft}})
+
+== See Also ==
+* {{ill|Hikawa Faith|ja|氷川信仰|12=draft}}
+* {{ill|Hikawa Maru|ja|氷川丸|12=draft}}
+
+{{Ambox}}
+{{citation needed|ひかわしんしや}}
+{{Disambiguation}}
+]]
+
+]]
+
+{{citation needed|Hikawa Shrine
+
+{{citation needed|Hikawa Shrine}}
+
+[[ja:氷川神社]]==Notes==
+<references group="lower-alpha"/>
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]][[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Shrine disambiguations]]
+{{wikidata link|Q5760456|en|Hikawa Shrine|ja|氷川神社 (曖昧さ回避)|th|ศาลเจ้าฮิกาวะ|simple|user:immanuelle/Hikawa Shrines|en|Hikawa Shrines|en|draft:Hikawa Shrines|ja|氷川神社}}[[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]
+[[Category:Pages with interwikis with duplicate languages]]

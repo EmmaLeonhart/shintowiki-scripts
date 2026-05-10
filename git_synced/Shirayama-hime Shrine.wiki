@@ -1,0 +1,32 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--interwikis from wikidata-->[[ja:白山比咩神社 (曖昧さ回避)]]
+<!--interwikis from wikidata-->[[ja:白山比咩神社 (曖昧さ回避)]]
+<!--interwikis from wikidata-->[[ja:白山比咩神社 (曖昧さ回避)]]
+
+'''Shirayama-hime Shrine''' (白山比咩神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}} in Japan.
+
+* {{ill|Shirayama Hime Shrine|en|Shirayama Hime Shrine|qid=Q704702|lt=Shirayama Hime Shrine|1=Shirayama Hime Shrine}} - Located in {{ill|Hakusan, Ishikawa|en|Hakusan, Ishikawa|qid=Q696407|lt=Hakusan|1=Hakusan, Ishikawa}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture|1=Ishikawa Prefecture}}, in Sannomiya-chō. The head shrine of all {{ill|Hakusan Shrines|ja|白山神社|12=simple|13=User:Immanuelle/Hakusan Shrines|1=Hakusan Shrine|comment=changed title based on wikidata|qid=Q11579587}} in Japan.
+* {{ill|Shirayama-hime Shrine (Ena)|ja|白山比咩神社 (恵那市)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Ena)|1=Shirayama Hime Shrine|comment=changed title based on wikidata|qid=Q119929596}} - Located in {{ill|Ena, Gifu|en|Ena, Gifu|qid=Q819653|lt=Ena|1=Ena, Gifu}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}.
+* {{ill|Shirayama-hime Shrine (Takaoka)|ja|白山比咩神社 (高岡市)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Takaoka)|ja_comment=jawiki link invalid}} - Located in {{ill|Takaoka, Toyama|en|Takaoka, Toyama|qid=Q502988|lt=Takaoka|1=Takaoka, Toyama}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}}, in Ejiri.
+* {{ill|Shirayama-hime Shrine (Tsu Ichishi-chō Iō)|ja|白山比咩神社 (津市一志町井生)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Tsu Ichishi-chō Iō)|ja_comment=jawiki link invalid}} - Located in {{ill|Tsu, Mie|en|Tsu, Mie|qid=Q203027|lt=Tsu|1=Tsu, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, in Ichishi-chō Iō.
+* {{ill|Shirayama-hime Shrine (Tsu Hakusan-chō Kawaguchi)|ja|白山比咩神社 (津市白山町川口)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Tsu Hakusan-chō Kawaguchi)|ja_comment=jawiki link invalid}} - Located in Tsu, Mie Prefecture, in Hakusan-chō Kawaguchi.
+* {{ill|Shirayama-hime Shrine (Tsu Hakusan-chō Minamide)|ja|白山比咩神社 (津市白山町南出)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Tsu Hakusan-chō Minamide)|ja_comment=jawiki link invalid}} - Located in Tsu, Mie Prefecture, in Hakusan-chō Minamide.
+* {{ill|Shirayama-hime Shrine (Tsu Hakusan-chō Yamadano)|ja|白山比咩神社 (津市白山町山田野)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Tsu Hakusan-chō Yamadano)|ja_comment=jawiki link invalid}} - Located in Tsu, Mie Prefecture, in Hakusan-chō Yamadano.
+* {{ill|Shirayama-hime Shrine (Nishinomiya)|ja|白山姫神社 (西宮市)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Nishinomiya)|ja_comment=jawiki link invalid}} - Located in {{ill|Nishinomiya|en|Nishinomiya|qid=Q243853|lt=Nishinomiya|1=Nishinomiya}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, in Kozone-chō.
+* {{ill|Shirayama-hime Shrine (Iwakuni)|ja|白山比咩神社 (岩国市)|12=simple|13=User:Immanuelle/Shirayama-hime Shrine (Iwakuni)|ja_comment=jawiki link invalid}} - Located in {{ill|Iwakuni|en|Iwakuni|qid=Q329797|lt=Iwakuni|1=Iwakuni}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture|1=Yamaguchi Prefecture}}, in Yokoyama.
+
+{{disambiguation}}
+
+{{translated page|ja|白山比咩神社 (曖昧さ回避)|version=103665500|comment=Imported full ja history}}
+
+<!--note do not remove this category during translation--><!--Shirayama-hime Shrine--><!--Shirayama-hime Shrine-->
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q11579579|ja|白山比咩神社 (曖昧さ回避)}}
+[[Category:All disambiguation pages]]
+[[Category:Hakusan-jinja]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

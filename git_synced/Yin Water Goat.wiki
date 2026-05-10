@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Water Goat|kanji=癸未|romaji=mizunoto hitsuji|onyomi=kimbi|p=guǐwèi|w=kuei-wei|mi=kʷeɪ̯²¹ weɪ̯|y=gwai2 mei6|j=gwai2 mei6|ci=kʷɐi mei|mc=kjwɨj mei|oc-bs=kʷeʔ mei|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -96,6 +97,7 @@ Days of 癸未 carry special selection rules under the calendar system.
 
 {{wikidata link|Q1062599|af|Waterbok (astrologie)|cdo|Gŭi-ê|de|Wasser-Schaf|fr|Chèvre d'eau|hak|Kui-vi|ja|癸未|ko|계미|nds|Water-Schaap|vi|Quý Mùi|za|Gveiqmeih|zh-min-nan|Kùi-bī|zh-yue|癸未|zh|癸未|zh-min-nan|Kui-chhiū|cdo|Kui-cṳ̄de|nds|Wasser-Ziegenevi|de|Yin Water Goat|fr|Chèvre de eau|fr|Ch%C3%A8vre d%27eau|zh|%E7%99%B8%E6%9C%AA|de|Wasser-Ziegeneen|en|Water Goat|fr|Chèvre de eauboishak|it|Kui-chṳ́id|za|Gueiceij|ar|Yin Water Goat}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

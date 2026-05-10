@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Wood Dog|kanji=甲戌|romaji=kinoe inu|onyomi=kōjutsu|p=jiǎxū|w=chia-hsü|mi=ʈ͡ʂja̠²¹ ɕy⁵³|y=gaap6 seot1|j=gaap6 seot1|ci=kaːp̚ sœt̚|mc=kæp syt|oc-bs=kaːp ʔsuʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -91,6 +92,7 @@ The day of 甲戌 is the 5th day of {{ill|Large Earth|ja|犯土|lt=Large Earth|l
 
 {{wikidata link|Q1062917|af|Houthond (astrologie)|cdo|Gák-sáe̤k|de|Holz-Hund|fr|Chien de bois|hak|Kap-sut|ja|甲戌|ko|갑술|nds|Holt-Hund|vi|Giáp Tuất|za|Gyapswt|zh-min-nan|Kap-sut|zh-yue|甲戌|zh|甲戌|zh-min-nan|Kap-chik|cdo|Gák-cṳ̄de|nds|Holt-Hundvi|de|Yang Wood Dog|de|Holz-Hundeen|en|Wood Dog|fr|Chien de boisboishak|it|Kap-chṳ́id|za|Kanceij|ar|Yang Wood Dog}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

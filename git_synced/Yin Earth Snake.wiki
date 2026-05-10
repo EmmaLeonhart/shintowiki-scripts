@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Earth Snake|kanji=己巳|romaji=tsuchinoto mi|onyomi=ki shi|p=jǐsì|w=chi-ssu|mi=t͡ɕi³⁵ sɨ²¹|y=gei2 si6|j=gei2 si6|ci=kei siː²|mc=kɨj si|oc-bs=kɯʔ slɯʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -101,6 +102,7 @@ The day of {{ill|Kishii|ja|1=Yin Earth Snake|己巳|12=simple|13=User:Immanuelle
 
 {{wikidata link|Q1062039|af|Aardslang (astrologie)|cdo|Gī-sê̤ṳ|de|Erde-Schlange|fr|Serpent de terre|hak|Kí-sṳ|ja|己巳|ko|기사 (간지)|nds|Eer-Snaak|vi|Kỷ Tỵ|za|Geijceih|zh-min-nan|Kí-sū|zh-yue|己巳|zh|己巳|zh-min-nan|Kí-chhá|cdo|Kí-cṳ̄de|nds|Erd-Schlangeni|de|Yin Earth Snake|af|Aardeslang (astrologie)|de|Erde-Schlangeni|en|Earth Snake|fr|Serpent de terreboishak|it|Ki-chṳ́id|za|Keiceij|ar|Yin Earth Snake}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

@@ -1,0 +1,28 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izumo_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
+
+'''Izumo Shrine''' (出雲神社)
+
+* {{ill|Izumo-taisha|en|Izumo-taisha|qid=Q696362|lt=Izumo Taisha|1=Izumo-taisha}} – Located in {{ill|Izumo, Shimane|en|Izumo, Shimane|qid=Q825166|lt=Izumo, Shimane|1=Izumo, Shimane}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}.
+* {{ill|Izumo-daijingū|en|Izumo-daijingū|qid=Q10896675|lt=Izumo-daijingū|1=Izumo-daijingū}} – Located in {{ill|Kameoka, Kyoto|en|Kameoka, Kyoto|qid=Q633996|lt=Kameoka, Kyoto|1=Kameoka, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}.
+* {{ill|Izumo Shrine (Tanba-Sasayama, Hyōgo)|ja|出雲神社 (丹波篠山市)|12=simple|13=User:Immanuelle/Izumo Shrine (Tanba-Sasayama, Hyōgo)|ja_comment=jawiki link invalid|qid=Q135579320|1=Izumo Shrine (Tanba-Sasayama, Hyōgo)}} – Located in [[:en:Tanba-Sasayama|Tanba-Sasayama, Hyōgo]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, Haga-no.
+* {{ill|Izumo Shrine (Miyoshi, Tokushima)|ja|出雲神社 (三好市)|12=simple|13=User:Immanuelle/Izumo Shrine (Miyoshi, Tokushima)|qq=}} – Located in {{ill|Miyoshi, Tokushima|en|Miyoshi, Tokushima|qid=Q990371|lt=Miyoshi, Tokushima|1=Miyoshi, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, Minochō Tachino.
+* {{ill|Izumo Shrine (Yamaguchi, Yamaguchi)|ja|出雲神社（山口市）|12=simple|13=User:Immanuelle/Izumo Shrine (Yamaguchi, Yamaguchi)|ja_comment=jawiki link invalid|qid=Q135579321|1=Izumo Shrine (Yamaguchi, Yamaguchi)}} – Located in {{ill|Yamaguchi (city)|en|Yamaguchi (city)|qid=Q207876|lt=Yamaguchi, Yamaguchi|1=Yamaguchi (city)}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture|1=Yamaguchi Prefecture}}, Tokuchi.
+
+{{disambiguation}}
+
+{{translated page|ja|出雲神社|version=102027384|comment=Imported full ja history}}
+
+{{wikidata link|Q131226834|ja|出雲神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shinto shrines in Hyōgo Prefecture]]
+[[Category:Shinto shrines in Kyoto Prefecture]]
+[[Category:Shinto shrines in Shimane Prefecture]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:Shinto shrines in Yamaguchi Prefecture]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

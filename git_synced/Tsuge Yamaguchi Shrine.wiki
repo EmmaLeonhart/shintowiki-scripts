@@ -1,0 +1,17 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Tsuge Yamaguchi Shrine''' (都祁山口神社) refers to Shinto shrines in the {{ill|Yamato Province|en|Yamato Province|qid=Q907495|lt=Yamato Province|1=Yamato Province}}'s [[Yamabe District]].
+
+* {{ill|Tsuge Yamaguchi Shrine (Nara)|ja|都祁山口神社 (奈良市)|12=simple|13=User:Immanuelle/Tsuge Yamaguchi Shrine (Nara)|qq=}} - Located in [[:en:Nara City|Nara City]], {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, in the Tsuge Koyamado area.
+* {{ill|Tsuge Yamaguchi Shrine (Tenri)|ja|都祁山口神社 (天理市)|12=simple|13=User:Immanuelle/Tsuge Yamaguchi Shrine (Tenri)|qq=}} - Located in [[:en:Tenri|Tenri]], Nara Prefecture, in the Somanouchi area.
+
+{{disambiguation}}
+
+{{translated page|ja|都祁山口神社|version=69844223|comment=Imported full ja history}}
+
+{{wikidata link|Q60985642|ja|都祁山口神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]

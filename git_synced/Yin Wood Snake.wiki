@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Wood Snake|kanji=乙巳|romaji=kinoto mi|onyomi=otsushi|p=yǐsì|w=i-ssu|mi=i²¹ sɨ|y=jyut6 si6|j=jyut6 si6|ci=jyt̚ siː|mc=ʔit si|oc-bs=Ɂik si|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -99,6 +100,7 @@ April of years ending in 2 or 7 (where the {{ill|Heavenly Stems|en|Heavenly Stem
 
 {{wikidata link|Q905031|af|Houtslang (astrologie)|cdo|Ĭk-sê̤ṳ|de|Holz-Schlange|fr|Serpent de bois|hak|Yet-sṳ|ja|乙巳|ko|을사|vi|Ất Tỵ|za|Ietceih|zh-min-nan|It-sū|zh-yue|乙巳|zh|乙巳|zh-min-nan|Kui-chhiū|zh-yue|癸酉|cdo|Kui-cṳ̄de|nds|Erd-Hahnvi|de|Yin Wood Snake|af|Aardehaan (astrologie)|de|Erde-Hahneen|en|Earth Rooster|fr|Coq de terreboishak|it|Kui-chṳ́id|ko|계유|vi|Quý Dậu|za|Gueiceij|zh|癸酉|ar|Yin Wood Snake}}
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Metal Rooster|kanji=辛酉|romaji=kanoto tori|onyomi=shinyū|p=xīyǒu|w=hsin-yu|mi=ɕin⁵³ i̯ɤʊ̯²¹|y=san1 jau5|j=san1 jau5|ci=sɐn jɐu|mc=sin jɨu|oc-bs=sin jɯʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -132,6 +133,7 @@ A '''Yin Metal Rooster day''' is the 7th day in the {{ill|Hassen|ja|八専|12=si
 {{wikidata link|Q904743|af|Metaalhaan (astrologie)|cdo|Sĭng-iū|de|Metall-Hahn|hak|Sîn-yû|ja|辛酉|ko|신유|vi|Tân Dậu|za|Sinyoux|zh-min-nan|Sin-iú|zh-yue|辛酉|zh|辛酉|zh-min-nan|Īt-chú|zh-yue|乙未|cdo|Ék-cṳ̄de|nds|Holt-Ziegenevi|de|Yin Metal Rooster|fr|Coq de métal|af|Houtbok (astrologie)|de|Holz-Ziegeneen|en|Wood Goat|fr|Chèvre de boisboishak|it|Yit-chṳ́id|ko|을미|vi|Ất Mùi|za|Yitceij|zh|乙未|ar|Yin Metal Rooster}}
 [[Category:Chinese astrology]]
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

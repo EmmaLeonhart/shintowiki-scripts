@@ -1,0 +1,28 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--interwikis from wikidata-->[[ja:白皇神社]]
+<!--interwikis from wikidata-->[[ja:白皇神社]]
+<!--interwikis from wikidata-->[[ja:白皇神社]]
+
+'''Shiraō Shrine''' (白皇神社 / 白王神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}. 
+
+* {{ill|Shiraō Shrine (Nishitosa Egawa, Shimanto)|ja|白皇神社 (四万十市西土佐江川)|12=simple|13=User:Immanuelle/Shiraō Shrine (Nishitosa Egawa, Shimanto)|ja_comment=jawiki link invalid}} - Located in Nishitosa Egawa, Shimanto City, Kōchi Prefecture.
+* {{ill|Shiraō Shrine (Futami, Shimanto)|ja|白皇神社 (四万十市双海)|12=simple|13=User:Immanuelle/Shiraō Shrine (Futami, Shimanto)|ja_comment=jawiki link invalid}} - Located in Futami, Shimanto City, Kōchi Prefecture.
+* {{ill|Shiraō Shrine (Hassenzū, Shimanto Town)|ja|白皇神社 (四万十町八千数)|12=simple|13=User:Immanuelle/Shiraō Shrine (Hassenzū, Shimanto Town)|ja_comment=jawiki link invalid}} - Located in Hassenzū (八千数), Shimanto Town, Takaoka District, Kōchi Prefecture.
+* {{ill|Shiraō Shrine (Miyauchi, Shimanto Town)|ja|白皇神社 (四万十町宮内)|12=simple|13=User:Immanuelle/Shiraō Shrine (Miyauchi, Shimanto Town)|ja_comment=jawiki link invalid}} - Located in Miyauchi, Shimanto Town, Takaoka District, Kōchi Prefecture.
+* Shiraō Shrine (Tosa-Shimizu City) - Formerly located at the summit of Mount Shiraō (白皇山), Tosa-Shimizu City, Kōchi Prefecture ⇒ {{ill|Hakusan Shrine (Tosa-Shimizu City)|ja|白山神社 (土佐清水市)|12=simple|13=User:Immanuelle/Hakusan Shrine (Tosa-Shimizu City)|1=Hakusan Shrine|comment=changed title based on wikidata|qid=Q11579593}}.
+* {{ill|Shiraō Shrine (Kuroshio Town)|ja|白皇神社 (黒潮町)|12=simple|13=User:Immanuelle/Shiraō Shrine (Kuroshio Town)|ja_comment=jawiki link invalid}} - Located in Tanoura, Kuroshio Town, Hata District, Kōchi Prefecture.
+
+{{disambiguation}}
+
+{{translated page|ja|白皇神社|version=41195344|comment=Imported full ja history}}
+
+<!--note do not remove this category during translation--><!--Shiraō Shrine--><!--Shiraō Shrine-->
+<!--jawiki derived wikidata interwikis-->
+{{wikidata link|Q11580106|ja|白皇神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]

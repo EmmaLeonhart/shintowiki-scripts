@@ -1,3 +1,4 @@
+<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yin Wood Pig|kanji=乙亥|romaji=kinoto i|onyomi=otsugai|p=yǐhài|w=i-hai|mi=i²¹ xaɪ̯⁵³|y=jyut6 hoi6|j=jyut6 hoi6|ci=jyt̚ hɐi²|mc=ʔit ɣəiH|oc-bs=Ɂik ɢˤəʔ|qq=}}
 {{Sexagenary cycle|qq=}}
@@ -96,6 +97,7 @@ Etsugai day is the 6th day of the {{ill|Hando|ja|犯土|lt=Hando|lt_ja=大土|12
 {{wikidata link|Q1062067|af|Houtvark (astrologie)|cdo|Ĭk-hâi|de|Holz-Schwein|fr|Cochon de bois|hak|Yet-hoi|ja|乙亥|ko|을해|nds|Holt-Swien|vi|Ất Hợi|za|Iethaih|zh-min-nan|It-hāi|zh-yue|乙亥|zh|乙亥|zh-min-nan|Īt-chik|cdo|Ék-cṳ̄de|nds|Holt-Varkvi|de|Yin Wood Pig|de|Holz-Schweineen|en|Wood Pig|fr|Cochon de boisboishak|it|Yit-chṳ́id|za|Yitceij|ar|Yin Wood Pig}}
 [[Category: ]]
 [[Category:Sexagenary cycle]]
+[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

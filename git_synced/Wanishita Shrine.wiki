@@ -1,0 +1,18 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:git synced pages]]
+
+'''Wanishita Shrine (和爾下神社) can refer to'''
+* {{ill|Wanishita Shrine (Yamatokoriyama)|ja|和爾下神社 (大和郡山市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Yamatokoriyama)|1=Wanishita Shrine (Q59282593)|comment=changed title based on wikidata|qid=Q59282593}}
+* {{ill|Wanishita Shrine (Tenri)|lt2=Wanishita Shrine|ja|和爾下神社_(天理市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Tenri)|1=Wanishita Shrine (Ichinomoto)|comment=changed title based on wikidata|qid=Q59282589}}
+
+{{disambiguation}}
+
+{{translated page|ja|和爾下神社|version=70321170|comment=Imported full ja history}}
+
+{{wikidata link|Q60986783|ja|和爾下神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Special:LonelyPages 22 May 2025]]
+[[Category:Special:LonelyPages 26 May 2025]]
+[[Category:Wikidata has short description]]
