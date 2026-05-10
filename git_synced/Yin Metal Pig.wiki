@@ -29,9 +29,8 @@ It is the 48th of the sixty stem-branch combinations, preceded by {{ill|Yang Met
 ** Chinese (Mandarin Pinyin): xīnhài
 ** Cantonese (Jyutping): san1 hoi6
 ** Japanese:
-***Kunyomi 1: Kanoto-i
-***Kunyomi 2: Shinkin-no-inoshishi
-***Onyomi 1: shinkai
+*** Kun'yomi: kanoto-i
+*** On'yomi: shingai
 ** Korean (Revised Romanization, Hangul): sinhhae (신해)
 ** Vietnamese (Hán-Việt): Tân Hợi
 
@@ -98,7 +97,7 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 === Events ===
-* {{ill|1911|en|1911|qid=Q2076|lt=1911 AD|1=1911}} – {{ill|1911 Revolution|en|1911 Revolution|qid=Q190517|lt=Xinhai Revolution|1=1911 Revolution}}
+* {{ill|1911|en|1911|qid=Q2076|lt=1911 AD|1=1911}} – {{ill|1911 Revolution|en|1911 Revolution|qid=Q190517|lt=Xinhai Revolution|1=1911 Revolution}}.
 
 ==Months of Yin Metal Pig==
 In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 2 or 7 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} are {{ill|Ren|ja|壬|1=Mizunoe (壬)|lt=Mizunoe (壬)|2=ja|3=壬|4=zh|5=壬|12=simple|13=User:Immanuelle/Ren}} or {{ill|Tei|ja|丁|1=Hinoto (丁)|lt=Hinoto (丁)|2=ja|3=丁|4=zh|5=丁|12=simple|13=User:Immanuelle/Tei}}), the month of {{ill|October|en|October|qid=Q124|lt=October|1=October}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)|1=Month}} of {{ill|Xinhai|ja|辛亥|1=Yin Metal Pig|2=ja|12=simple|13=User:Immanuelle/Xinhai|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Lidong|en|Lidong|qid=Q1191018|lt=Beginning of Winter|1=Lidong}} until the day before {{ill|Daxue (solar term)|en|Daxue (solar term)|qid=Q337815|lt=Heavy Snow|1=Daxue (solar term)}}) as applicable.
@@ -113,7 +112,7 @@ None.
 
 {{translated page|ja|qq=Yin Metal Pig|辛亥|version=101506609|comment=Imported full ja history}}
 
-{{wikidata link|Q905052|af|Metaalvark (astrologie)|cdo|Sĭng-hâi|de|Metall-Schwein|eo|Xinhai|hak|Sîn-hoi|ja|辛亥|ko|신해|vi|Tân Hợi|za|Sinhaih|zh-min-nan|Sin-hāi|zh-yue|辛亥|zh|辛亥|nds|Erd-Haseni|fr|Cochon de métal|en|Earth Rabbit|it|Yit-chṳ́id|ar|Yin Metal Pig}}
+{{wikidata link|Q905052|af|Metaalvark (astrologie)|cdo|Sĭng-hâi|de|Metall-Schwein|eo|Xinhai|hak|Sîn-hoi|ja|辛亥|ko|신해|vi|Tân Hợi|za|Sinhaih|zh-min-nan|Sin-hāi|zh-yue|辛亥|zh|辛亥|fr|Cochon de métal|ar|Yin Metal Pig}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
