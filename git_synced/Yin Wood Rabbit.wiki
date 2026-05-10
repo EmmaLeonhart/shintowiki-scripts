@@ -5,25 +5,23 @@
 
 '''Yin Wood Rabbit''' (乙卯, ''kinoto usagi''; onyomi ''otsubō'') is the 52nd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 52nd combination in the Sexagenary cycle, following {{ill|Jia Yin|ja|甲寅|1=Yang Wood Tiger|2=ja|3=甲寅|12=simple|13=User:Immanuelle/Jia Yin}} and preceding {{ill|Bing Chen|ja|丙辰|1=Yang Fire Dragon|2=ja|12=simple|13=User:Immanuelle/Bing Chen|ja_comment=jawiki link invalid}}. According to {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} {{ill|Yi|ja|乙|1=Kinoto (乙)|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Yi}} corresponds to Yin {{ill|Wood (Wu Xing)|ja|Wood (木)|1=Wood (wuxing)|lt=Wood (木)|2=uk|3=Дерево (елемент)|4=id|5=Kayu (Wu Xing)|6=ms|7=Kayu (Wu Xing)|8=bcl|9=Kahoy (wuxing)|10=ca|11=Fusta (wuxing)|12=it|13=Legno (elemento)|14=es|15=Madera (Wu Xing)|16=nl|17=Hout (element)|18=vi|19=Mộc (Ngũ hành)|20=tr|21=Tahta (klasik element)|22=ta|23=மரம் (சீன மெய்யியல்)|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} {{ill|Mao|ja|卯|1=mǎo|lt=Rabbit (卯)|2=ja|3=卯|4=fr|5=Lapin (astrologie chinoise)|6=nl|7=Konijn (astrologie)|12=simple|13=User:Immanuelle/Mao|comment=changed title based on wikidata|qid=Q16662792}} also corresponds to Yin Wood, making it a {{ill|Bihe (Five Elements)|ja|比和|1=Wuxing (Chinese philosophy)|2=ja|3=五行思想#比和（ひわ）|lt=Harmonious Relationship (Five Elements)|qq=Harmonious Relationship (Five Elements)|4=el|5=Ου Σιν|12=simple|13=User:Immanuelle/Bihe (Five Elements)|comment=changed title based on wikidata|qid=Q218652}} combination.
+It is the 52nd of the sixty stem-branch combinations, preceded by {{ill|Yang Wood Tiger|ja|甲寅|1=Yang Wood Tiger}} and followed by {{ill|Yang Fire Dragon|ja|丙辰|1=Yang Fire Dragon}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''乙'' is Yin Wood, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''卯'' (Rabbit) is Yin Wood; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Wood Rabbit (乙卯)
 ** Chinese (Mandarin Pinyin): yǐmǎo
 ** Cantonese (Jyutping): jyut3 maau5
 ** Japanese:
-***Kunyomi 1: Kinoto-u
-***Kunyomi 2: Otsuboku-no-u
-***Kunyomi 3: Otsuboku-no-usagi
-***Onyomi 1: itsumi
+*** Kun'yomi: kinoto-usagi
+*** On'yomi: otsubō
 ** Korean (Revised Romanization, Hangul): eulmyo (을묘)
 ** Vietnamese (Hán-Việt): Ất Mão
 
 ==Years of Yin Wood Rabbit==
-Years in which the remainder when divided by 60 is 55 are considered Yin Wood Rabbit years.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 55 when divided by 60 is a year of Yin Wood Rabbit (乙卯).
 
 {| class="wikitable"
-|+'''Years of the Yin Wood Rabbit'''
+|+ '''Years of Yin Wood Rabbit (乙卯)'''
 |-
 !{{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium|1=1st millennium}}!!{{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium|1=2nd millennium}}!!{{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium|1=3rd millennium}}
 |-
@@ -94,7 +92,7 @@ Yin Wood Rabbit days are the third day of the {{ill|Hassen|ja|八専|12=simple|1
 
 {{translated page|ja|qq=Yin Wood Rabbit|乙卯|version=86230580|comment=Imported full ja history}}
 
-{{wikidata link|Q904791|af|Houtkonyn (astrologie)|cdo|Ĭk-māu|de|Holz-Hase|hak|Yet-mâu|ja|乙卯|ko|을묘|vi|Ất Mão|za|Ietmaux|zh-min-nan|It-báu|zh-yue|乙卯|zh|乙卯|nds|Wasser-Ziegenevi|fr|Lièvre de bois|en|Water Goat|it|Ki-chṳ́id|ar|Yin Wood Rabbit}}
+{{wikidata link|Q904791|af|Houtkonyn (astrologie)|cdo|Ĭk-māu|de|Holz-Hase|hak|Yet-mâu|ja|乙卯|ko|을묘|vi|Ất Mão|za|Ietmaux|zh-min-nan|It-báu|zh-yue|乙卯|zh|乙卯|fr|Lièvre de bois|ar|Yin Wood Rabbit}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

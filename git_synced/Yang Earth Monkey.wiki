@@ -10,16 +10,15 @@ It is the 45th combination in the comprehensive sexagenary cycle, preceded by {{
 ** Chinese (Mandarin Pinyin): wùshēn
 ** Cantonese (Jyutping): mou6 san1
 ** Japanese:
-***Kunyomi 1: Tsuchinoe-saru
-***Kunyomi 2: Bodo-no-saru
-***Onyomi 1: boshi
+*** Kun'yomi: tsuchinoe-saru
+*** On'yomi: bojin
 ** Korean (Revised Romanization, Hangul): musin (무신)
 ** Vietnamese (Hán-Việt): Mậu Thân
 
 ==Years of Yang Earth Monkey==
-A year is designated as a Wushen year if, when the Western calendar year is divided by 60, the remainder is 48.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 48 when divided by 60 is a year of Yang Earth Monkey (戊申).
 {| class="wikitable"
-|+'''Years of Wushen'''
+|+ '''Years of Yang Earth Monkey (戊申)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
@@ -80,8 +79,8 @@ A year is designated as a Wushen year if, when the Western calendar year is divi
 * {{ill|2988 AD|ja|2988年|12=simple|13=User:Immanuelle/2988 AD|ja_comment=jawiki link invalid}}
 |}
 === Events ===
-* In {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 41 (1908) – the issuance of the {{ill|Wushen Edict|ja|戊申詔書|12=simple|13=User:Immanuelle/Wushen Edict|1=Q17641335|comment=changed title based on wikidata|qid=Q17641335}}.
-* In 1968 – the Tet Offensive during the {{ill|Vietnam War|en|Vietnam War|qid=Q8740|lt=Vietnam War|1=Vietnam War}}. In Vietnamese, it is referred to as {{Unicode|Sự kiện Tết Mậu Thân}} (Incident Festival Wushen).
+* In {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 41 (1908), the {{ill|Wushen Edict|ja|戊申詔書|12=simple|13=User:Immanuelle/Wushen Edict|1=Q17641335|comment=changed title based on wikidata|qid=Q17641335}} was issued.
+* In 1968, the Tet Offensive took place during the {{ill|Vietnam War|en|Vietnam War|qid=Q8740|lt=Vietnam War|1=Vietnam War}}. In Vietnamese, it is referred to as {{Unicode|Sự kiện Tết Mậu Thân}} (the Wushen New Year Incident).
 
 ==Months of Yang Earth Monkey==
 In years whose last digit in the Western calendar is 2 or 7 (corresponding to the heavenly stems {{ill|Ren|ja|壬|1=Mizunoe (壬)|lt=Mizunoe (壬)|2=ja|3=壬|4=zh|5=壬|12=simple|13=User:Immanuelle/Ren}} and {{ill|Ding|ja|丁|1=Hinoto (丁)|lt=Hinoto (丁)|2=ja|3=丁|4=zh|5=丁|12=simple|13=User:Immanuelle/Ding}}), the month of July is designated as the month of Wushen. (Note that in this context, “month” may refer to a lunar month or a seasonal period [from {{ill|Liqiu|en|Liqiu|qid=Q1147421|lt=Risshū|1=Liqiu}} to the day before {{ill|Bailu (solar term)|en|Bailu (solar term)|qid=Q1191003|lt=Hakuro|1=Bailu (solar term)}}].)
@@ -96,7 +95,7 @@ The day of Wushen is the 16th day (the final day) of the {{ill|Tengitenjō|ja|�
 
 {{translated page|ja|qq=Yang Earth Monkey|戊申|version=98657993|comment=Imported full ja history}}
 
-{{wikidata link|Q904781|af|Aardaap (astrologie)|cdo|Muô-sĭng|de|Erde-Affe|hak|Vú-sṳ̂n|ja|戊申|ko|무신 (간지)|vi|Mậu Thân|za|Fouhsaen|zh-min-nan|Bō͘-sin|zh-yue|戊申|zh|戊申|nds|Feuer-Röttvi|fr|Singe de terre|en|Fire Rat|it|Bing-chṳ́id|ar|Yang Earth Monkey}}
+{{wikidata link|Q904781|af|Aardaap (astrologie)|cdo|Muô-sĭng|de|Erde-Affe|hak|Vú-sṳ̂n|ja|戊申|ko|무신 (간지)|vi|Mậu Thân|za|Fouhsaen|zh-min-nan|Bō͘-sin|zh-yue|戊申|zh|戊申|fr|Singe de terre|ar|Yang Earth Monkey}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

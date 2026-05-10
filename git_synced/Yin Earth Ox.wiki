@@ -4,23 +4,22 @@
 {{Sexagenary cycle}}
 '''Yin Earth Ox''' (己丑, ''tsuchinoto ushi''; onyomi ''kichū'') is the 26th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 26th combination of the [[Sexagenary cycle|Sexagenary cycle]], preceded by {{ill|Wuzi (戊子)|ja|戊子|1=Yang Earth Rat|2=ja|12=simple|13=User:Immanuelle/Wuzi (戊子)|ja_comment=jawiki link invalid}} and followed by {{ill|Gengyin (庚寅)|ja|庚寅|1=Yang Metal Tiger|2=ja|12=simple|13=User:Immanuelle/Gengyin (庚寅)|ja_comment=jawiki link invalid}}. According to [[Yin-Yang and Wuxing Theory]] theory, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} {{ill|Ji (己)|ja|己|1=Tsuchinoto (己)|lt=Tsuchinoto (己)|2=ja|3=己|4=zh|5=己|12=simple|13=User:Immanuelle/Ji (己)}} represents yin {{ill|Earth|en|Earth|qid=Q2|lt=Earth|1=Earth}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} {{ill|Chou (丑)|ja|丑|1=chǒu|lt=Ox (丑)|2=ja|3=丑|12=simple|13=User:Immanuelle/Chou (丑)|comment=changed title based on wikidata|qid=Q16539206}} also represents yin {{ill|Earth|en|Earth|qid=Q2|lt=Earth|1=Earth}}, making this a [[:en:Five Elements|harmonious combination]].
+It is the 26th of the sixty stem-branch combinations, preceded by {{ill|Yang Earth Rat|ja|戊子|1=Yang Earth Rat}} and followed by {{ill|Yang Metal Tiger|ja|庚寅|1=Yang Metal Tiger}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''己'' is Yin Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''丑'' (Ox) is Yin Earth; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Earth Ox (己丑)
 ** Chinese (Mandarin Pinyin): jǐchǒu
 ** Cantonese (Jyutping): gei2 cau2
 ** Japanese:
-***Kunyomi 1: Tsuchinoto-ushi
-***Kunyomi 2: Kido-no-ushi
-***Onyomi 1: kichū
+*** Kun'yomi: tsuchinoto-ushi
+*** On'yomi: kichū
 ** Korean (Revised Romanization, Hangul): gichuk (기축)
 ** Vietnamese (Hán-Việt): Kỷ Sửu
 
 ==Years of Yin Earth Ox==
-A year is Jichou if the remainder when divided by 60 is 29.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 29 when divided by 60 is a year of Yin Earth Ox (己丑).
 {| class="wikitable"
-|+'''Years of Jichou'''
+|+ '''Years of Yin Earth Ox (己丑)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium|1=3rd millennium}}
 |-
@@ -87,13 +86,14 @@ A Jichou day follows a 60-day cycle.
 
 === Special Characteristics ===
 Jichou days are the 6th day in the [[Ten Days of Mourning|Ten Days of Mourning]] (十方暮).
+
 == See Also ==
 * {{ill|Sexagenary cycle|ja|Sexagenary cycle|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=jawiki link invalid}}
 * {{ill|Chinese calendar|en|Chinese calendar|qid=Q134032|lt=Chinese calendar|1=Chinese calendar}}
 
 {{translated page|ja|qq=Yin Earth Ox|己丑|version=85986875|comment=Imported full ja history}}
 
-{{wikidata link|Q1061992|af|Aardos (astrologie)|cdo|Gī-tiū|de|Erde-Büffel|fr|Buffle de terre|hak|Kí-chhiú|ja|己丑|ko|기축|nds|Eer-Oss|vi|Kỷ Sửu|za|Geijcouj|zh-min-nan|Kí-thiú|zh-yue|己丑|zh|己丑|en|Earth Ox|it|Ki-chṳ́id|ar|Yin Earth Ox}}
+{{wikidata link|Q1061992|af|Aardos (astrologie)|cdo|Gī-tiū|de|Erde-Büffel|fr|Buffle de terre|hak|Kí-chhiú|ja|己丑|ko|기축|nds|Eer-Oss|vi|Kỷ Sửu|za|Geijcouj|zh-min-nan|Kí-thiú|zh-yue|己丑|zh|己丑|en|Earth Ox|ar|Yin Earth Ox}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

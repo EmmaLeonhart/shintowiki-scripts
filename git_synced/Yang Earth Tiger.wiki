@@ -4,23 +4,22 @@
 {{Sexagenary cycle}}
 '''Yang Earth Tiger''' (戊寅, ''tsuchinoe tora''; onyomi ''boin'') is the 15th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 15th combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=fixed jawiki redirect|3=干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}, preceded by {{ill|Teiushi|ja|丁丑|1=Yin Fire Ox|2=ja|12=simple|13=User:Immanuelle/Teiushi|ja_comment=jawiki link invalid}} and followed by {{ill|Kibō|ja|己卯|1=Yin Earth Rabbit|2=ja|12=simple|13=User:Immanuelle/Kibō|ja_comment=jawiki link invalid}}. In the framework of {{ill|Yin Yang Five Elements Thought|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin Yang Five Elements Thought}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} symbol {{ill|Bo|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Bo}} represents yang {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}} symbol {{ill|Tiger|ja|寅|1=yín|lt=Tiger (寅)|2=ja|3=寅|12=simple|13=User:Immanuelle/Tiger|comment=changed title based on wikidata|qid=Q16683683}} represents yang {{ill|Wood|ja|Wood (木)|1=Wood (wuxing)|lt=Wood (木)|2=uk|3=Дерево (елемент)|4=id|5=Kayu (Wu Xing)|6=ms|7=Kayu (Wu Xing)|8=bcl|9=Kahoy (wuxing)|10=ca|11=Fusta (wuxing)|12=it|13=Legno (elemento)|14=es|15=Madera (Wu Xing)|16=nl|17=Hout (element)|18=vi|19=Mộc (Ngũ hành)|20=tr|21=Tahta (klasik element)|22=ta|23=மரம் (சீன மெய்யியல்)|ja_comment=jawiki link invalid}}, establishing a restraining relationship ({{ill|Mutual Restraint|ja|五行思想#相剋（そうこく）|lt=Mutual Restraint|lt_ja=相剋|12=simple|13=User:Immanuelle/Mutual Restraint|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}) (Wood overcomes Earth).
+It is the 15th of the sixty stem-branch combinations, preceded by {{ill|Yin Fire Ox|ja|丁丑|1=Yin Fire Ox}} and followed by {{ill|Yin Earth Rabbit|ja|己卯|1=Yin Earth Rabbit}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''戊'' is Yang Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''寅'' (Tiger) is Yang Wood; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Earth Tiger (戊寅)
 ** Chinese (Mandarin Pinyin): wùyín
 ** Cantonese (Jyutping): mou6 jan4
 ** Japanese:
-***Kunyomi 1: Tsuchinoe-tora
-***Kunyomi 2: Bodo-no-tora
-***Onyomi 1: boshi
+*** Kun'yomi: tsuchinoe-tora
+*** On'yomi: boin
 ** Korean (Revised Romanization, Hangul): muin (무인)
 ** Vietnamese (Hán-Việt): Mậu Dần
 
 ==Years of Yang Earth Tiger==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 18 when divided by 60 is a year of Bointora ({{ill|Year|en|Year|qid=Q577|lt=year|1=Year}}).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 18 when divided by 60 is a year of Yang Earth Tiger (戊寅).
 {| class="wikitable"
-|+'''Years of Bointora (戊寅の年)'''
+|+ '''Years of Yang Earth Tiger (戊寅)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
@@ -92,7 +91,7 @@ Bointora day is the 1st day of {{ill|Hando|ja|犯土|lt=Small Earth|lt_ja=小土
 
 {{translated page|ja|qq=Yang Earth Tiger|戊寅|version=84123757|comment=Imported full ja history}}
 
-{{wikidata link|Q1061986|af|Aardtier (astrologie)|cdo|Muô-ìng|de|Erde-Tiger|fr|Tigre de terre|hak|Vú-yìm|ja|戊寅|ko|무인 (간지)|nds|Eer-Tiger|vi|Mậu Dần|za|Fouhyinz|zh-min-nan|Bō͘-în|zh-yue|戊寅|zh|戊寅|en|Earth Tiger|it|Tsu-chṳ́id|ar|Yang Earth Tiger}}
+{{wikidata link|Q1061986|af|Aardtier (astrologie)|cdo|Muô-ìng|de|Erde-Tiger|fr|Tigre de terre|hak|Vú-yìm|ja|戊寅|ko|무인 (간지)|nds|Eer-Tiger|vi|Mậu Dần|za|Fouhyinz|zh-min-nan|Bō͘-în|zh-yue|戊寅|zh|戊寅|en|Earth Tiger|ar|Yang Earth Tiger}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

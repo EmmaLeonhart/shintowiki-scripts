@@ -5,23 +5,22 @@
 
 '''Yang Fire Monkey''' (丙申, ''hinoe saru''; onyomi ''heishin'') is the 33rd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 33rd combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=fixed jawiki redirect|3=干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}, preceded by {{ill|Otsumi|ja|乙未|1=Yin Wood Goat|2=ja|12=simple|13=User:Immanuelle/Otsumi|ja_comment=jawiki link invalid}} and followed by {{ill|Teiyuu|ja|丁酉|1=Yin Fire Rooster|2=ja|12=simple|13=User:Immanuelle/Teiyuu|ja_comment=jawiki link invalid}}. In the framework of {{ill|Yin Yang Five Elements Thought|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin Yang Five Elements Thought}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} symbol {{ill|Hei|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Hei}} represents yang {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}} symbol {{ill|Monkey (zodiac)|en|Monkey (zodiac)|qid=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}} represents yang {{ill|Metal|ja|Metal (金)|1=Metal (wuxing)|lt=Metal (金)|2=es|3=Metal (Wu Xing)|4=it|5=Metallo (elemento)|6=vi|7=Kim (Ngũ hành)|8=tr|9=Metal (klasik element)|10=uk|11=Метал (У-сін)|12=simple|13=User:Immanuelle/Metal|ja_comment=jawiki link invalid}}, establishing a restraining relationship ({{ill|Mutual Restraint|ja|五行思想#相剋（そうこく）|12=simple|13=User:Immanuelle/Mutual Restraint|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}) (i.e. Fire overcomes Metal).
+It is the 33rd of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Goat|ja|乙未|1=Yin Wood Goat}} and followed by {{ill|Yin Fire Rooster|ja|丁酉|1=Yin Fire Rooster}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''申'' (Monkey) is Yang Metal; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Fire Monkey (丙申)
 ** Chinese (Mandarin Pinyin): bǐngshēn
 ** Cantonese (Jyutping): bing3 san1
 ** Japanese:
-***Kunyomi 1: Hinoe-saru
-***Kunyomi 2: Heika-no-saru
-***Onyomi 1: heishin
+*** Kun'yomi: hinoe-saru
+*** On'yomi: heishin
 ** Korean (Revised Romanization, Hangul): byeongsin (병신)
 ** Vietnamese (Hán-Việt): Bính Thân
 
 ==Years of Yang Fire Monkey==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 36 when divided by 60 is a year of Heishin ({{ill|Year|en|Year|qid=Q577|lt=year|1=Year}}).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 36 when divided by 60 is a year of Yang Fire Monkey (丙申).
 {| class="wikitable"
-|+'''Years of Heishin (丙申の年)'''
+|+ '''Years of Yang Fire Monkey (丙申)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
@@ -93,7 +92,7 @@ Heishin day is the 4th day of {{ill|Ten Ten Ichijō|ja|天一天上|12=simple|13
 
 {{translated page|ja|qq=Yang Fire Monkey|丙申|version=84123806|comment=Imported full ja history}}
 
-{{wikidata link|Q1061831|af|Vuuraap (astrologie)|cdo|Bīng-sĭng|de|Feuer-Affe|fr|Singe de feu|hak|Piáng-sṳ̂n|ja|丙申|ko|병신|nds|Füür-Aap|vi|Bính Thân|za|Bingjsaen|zh-min-nan|Péng-sin|zh-yue|丙申|zh|丙申|en|Metal Rat|it|Kap-chṳ́id|ar|Yang Fire Monkey}}
+{{wikidata link|Q1061831|af|Vuuraap (astrologie)|cdo|Bīng-sĭng|de|Feuer-Affe|fr|Singe de feu|hak|Piáng-sṳ̂n|ja|丙申|ko|병신|nds|Füür-Aap|vi|Bính Thân|za|Bingjsaen|zh-min-nan|Péng-sin|zh-yue|丙申|zh|丙申|ar|Yang Fire Monkey}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

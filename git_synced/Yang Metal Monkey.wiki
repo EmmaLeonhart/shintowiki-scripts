@@ -8,16 +8,15 @@ Might be worth moving to or merging with {{ill|Kōshin|ja|こうしん|12=simple
 {{Sexagenary cycle}}
 '''Yang Metal Monkey''' (庚申, ''kanoe saru''; onyomi ''kōshin'') is the 57th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 57th combination in the Sexagenary cycle, preceded by {{ill|Kimi|ja|己未|1=Yin Earth Goat|2=ja|12=simple|13=User:Immanuelle/Kimi|ja_comment=jawiki link invalid}} and followed by {{ill|Shinyuu|ja|辛酉|1=Yin Metal Rooster|2=ja|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang Five Elements|ja|陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang Five Elements|ja_comment=jawiki redirects to 陰陽五行思想|1=Yin-Yang and Wuxing Theory|comment=changed title based on wikidata|qid=Q11265234}}, the stem {{ill|Geng|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|12=simple|13=User:Immanuelle/Geng}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents Yang Metal, and the branch {{ill|Monkey (zodiac)|en|Monkey (zodiac)|qid=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} also represents Yang Metal, a state referred to as {{ill|Bihwa|ja|五行思想#比和（ひわ）|1=Wuxing (Chinese philosophy)|2=ja|3=五行思想#比和（ひわ）|lt=Harmonious Relationship (Five Elements)|qq=Bihwa|lt_ja=比和|12=simple|13=User:Immanuelle/Bihwa|comment=changed title based on wikidata|qid=Q218652}}.
+It is the 57th of the sixty stem-branch combinations, preceded by {{ill|Yin Earth Goat|ja|己未|1=Yin Earth Goat}} and followed by {{ill|Yin Metal Rooster|ja|辛酉|1=Yin Metal Rooster}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''庚'' is Yang Metal, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''申'' (Monkey) is Yang Metal; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Metal Monkey (庚申)
 ** Chinese (Mandarin Pinyin): gēngshēn
 ** Cantonese (Jyutping): gaang1 san1
 ** Japanese:
-***Kunyomi 1: Kanoe-saru
-***Kunyomi 2: koukin-no-saru
-***Onyomi 1: koushin
+*** Kun'yomi: kanoe-saru
+*** On'yomi: kōshin
 ** Korean (Revised Romanization, Hangul): gyeongsin (경신)
 ** Vietnamese (Hán-Việt): Canh Thân
 
@@ -28,7 +27,7 @@ It is the 57th combination in the Sexagenary cycle, preceded by {{ill|Kimi|ja|�
 Because both the heavenly stem and earthly branch of Kōshin are of {{ill|Metal|en|Metal|qid=Q11426|lt=Metal|1=Metal}} nature, it was believed that the metal energy pervading the universe in a Kōshin year or day would render human hearts cold and unfeeling. The following combination, {{ill|Shinyuu|ja|辛酉|1=Yin Metal Rooster|2=ja|12=simple|13=User:Immanuelle/Shinyuu|ja_comment=jawiki link invalid}}, also being metal in nature—with Xin being of Yin energy—was thought to intensify this coldness. Consequently, Kōshin and Shinyuu were considered harbingers of political upheaval, and to avert such changes it was not uncommon to change eras for two consecutive years. For example, this occurred in the first years of {{ill|Man'en|en|Man'en|qid=Q1193862|lt=Man'en|1=Man'en}} ({{ill|1860|en|1860|qid=Q7691|lt=1860|1=1860}}) and {{ill|Bunkyū|en|Bunkyū|qid=Q730266|lt=Bunkyu|1=Bunkyū}} ({{ill|1861|en|1861|qid=Q7693|lt=1861|1=1861}}).
 
 {| class="wikitable"
-|+ '''Kōshin Years'''
+|+ '''Years of Yang Metal Monkey (庚申)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
@@ -150,7 +149,7 @@ In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, 
 
 {{translated page|ja|庚申信仰|version=102438991|comment=Imported full ja history}}
 
-{{wikidata link|Q798775|af|Metaalaap (astrologie)|cdo|Gĕng-sĭng|de|Metall-Affe|en|Metal Monkey|fr|Singe de métal|hak|Kâng-sṳ̂n|ja|庚申|ko|경신|vi|Canh Thân|za|Gengsaen|zh-min-nan|Keng-sin|zh-yue|庚申|zh|庚申|nds|Holt-Pferdevi|fa|کوشین شینکو|ru|Косин|it|Kap-chṳ́id|ar|Kōshin}}
+{{wikidata link|Q798775|af|Metaalaap (astrologie)|cdo|Gĕng-sĭng|de|Metall-Affe|en|Metal Monkey|fr|Singe de métal|hak|Kâng-sṳ̂n|ja|庚申|ko|경신|vi|Canh Thân|za|Gengsaen|zh-min-nan|Keng-sin|zh-yue|庚申|zh|庚申|fa|کوشین شینکو|ru|Косин|it|Kap-chṳ́id|ar|Kōshin}}
 [[Category:Japanese folk religion]]
 [[Category:Japanese words and phrases]]
 [[Category:Kōshin]]
