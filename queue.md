@@ -15,22 +15,40 @@ caps at ~50 pages per batch — pages outside the current 50-slice came
 back without a `revisions` field, the script's `if not revs: continue`
 swallowed them, and the downstream "page no longer in category → delete
 local file" branch then deleted them on the next run. Confirmed
-casualties in `git log -- git_synced/`: `Shinto Wiki.wiki`,
-`Christianity.wiki`, `Template%3AWikidata link.wiki`, and many others
-were deleted across the recent sync commits.
+casualties in `git log -- git_synced/`: only 3 files actually deleted
+(`Shinto Wiki.wiki`, `Christianity.wiki`, `Template%3AWikidata link.wiki`)
+— most of the ~171 missing pages were never pulled into the repo at
+all, not deleted from it.
 
-  * **Fixed in commit on 2026-05-10**: switched the iter to a two-pass
-    design — pass 1 lists every category member's title only, pass 2
-    fetches revisions+content in batches of 50 using `titles=` instead
-    of a generator. No silent drops.
+  * **Fixed in commit 8b6651d (2026-05-10)**: switched the iter to a
+    two-pass design — pass 1 lists every category member's title only,
+    pass 2 fetches revisions+content in batches of 50 using `titles=`
+    instead of a generator. No silent drops.
   * **In-flight follow-up**: the user touch-edited every wiki page in
     the category right after the bug was found, so the next git-synced
     sync run will see `wiki_changed=True, local_changed=False` for the
-    missing ~172 pages and pull them cleanly (no clash with the recent
+    missing ~171 pages and pull them cleanly (no clash with the recent
     annotation work because that commit was reverted).
-  * **Then**: a follow-up cron job (scheduled separately) re-runs the
-    "annotate or instruction-apply" pass on the freshly-repopulated
-    git_synced/ folder.
+  * **Templates migrated out of git_synced/**: the 6 Template%3A* files
+    that had been in git_synced/ were copied into both miraheze_unique/
+    and fandom_unique/, and their git_synced/ copies had the category
+    swapped to `[[Category:Independently git synced pages]]`. Templates
+    work fundamentally differently between miraheze and fandom, so they
+    should never have been in git_synced/. Two-cycle migration: next
+    sync run pushes the swap to the wiki, the cycle after deletes the
+    git_synced/ copy via the orphan branch (cat_still_present=False,
+    base_sha==local_sha → unlink without re-pushing).
+  * **Did NOT restore the 3 deleted files** (Shinto Wiki, Christianity,
+    Template%3AWikidata link). Restoring with stale git-history content
+    would push that stale content over the user's recent wiki edits via
+    the conflict-resolution branch ("both changed → push local wins").
+    The fixed sync will pull the current wiki content into local
+    cleanly on its next run for the first two; the template was
+    intentionally excluded per the migration rule above.
+  * **Then**: a follow-up cron (5a9fca89, fires 2026-05-09 22:07 local)
+    re-runs the "annotate or instruction-apply" pass on the freshly-
+    repopulated git_synced/, and additionally tags any unknown-why page
+    with `[[Category:Git synced pages without explanation]]`.
 
 Go through the notes of the [[Category:git synced pages]]
 Translate all of the [[Category:Need translation]]
