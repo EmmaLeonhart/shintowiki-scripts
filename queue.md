@@ -10,12 +10,23 @@ Go through the notes of the [[Category:git synced pages]] — each
 git_synced/ page has a leading `<!--...-->` instruction comment, and
 those instructions must actually be executed, not just present. The
 60 Sexagenary cycle pages have been fully standardized (commit 208006f
-on 2026-05-10 closed out the MT-entropy cleanup). The remaining ~165
-Shrine pages still need their per-page instruction followed: run SPARQL
-queries on Wikidata that generate actual per-shrine reference lists and
-weave the generated output back into each page. The cron job that was
-meant to follow these instructions never existed, so this is real work,
-not a re-run.
+on 2026-05-10). The ~165 Shrine disambiguation pages got their first
+SPARQL pass on 2026-05-10 (commit 0a67a90): `generate_shrine_disambig_lists.py`
+extracts kanji from each page and writes an auto-managed
+`== Shrines on Wikidata with this name ==` section, idempotent on
+re-run. 146/165 pages now carry generated bullet lists. Follow-ups
+on the remaining 19:
+  * 4 pages skipped — no kanji extracted (Kobe (disambiguation),
+    Kōtai Shrine (disambiguation), Meiji, Nitta Shrine). These have
+    unusual lede formats; extract by hand or extend the script.
+  * 15 pages skipped — kanji extracted but Wikidata returned 0
+    exact-label matches. The script's SPARQL uses exact `rdfs:label`
+    match — adding `skos:altLabel` and disambiguator-suffixed prefix
+    matching would catch more (was tried, timed out at >60s for the
+    full subclass tree; needs query optimization).
+  * The script could also be wired into a cron so new Wikidata
+    additions automatically appear on the disambig pages over time —
+    currently it's a one-shot.
 
 Translate all of the [[Category:Need translation]] —
 `sync_need_translation.py` is a bidirectional file ↔ wiki mirror only;
