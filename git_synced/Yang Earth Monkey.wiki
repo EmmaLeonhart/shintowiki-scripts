@@ -1,9 +1,10 @@
 <!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
 {{infobox Chinese|l=Yang Earth Monkey|kanji=戊申|romaji=tsuchinoe saru|onyomi=bojin|p=wùshēn|w=wu-shen|mi=u⁵⁵ ʂən|y=mou6 san1|j=mou6 san1|ci=mɐu ʂɐn|mc=məu ʂin|oc-bs=mə ʂin}}
-{{Sexagenary cycle}}'''Yang Earth Monkey'''{{拼音|wùshēn}}、{{注音|ㄨˋ ㄕㄣ}}、{{lang-ko|무신}}、{{lang-vi|{{Unicode|Mậu Thân}}}}) is one of the components of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=fixed jawiki redirect|3=干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}.
+{{Sexagenary cycle}}
+'''Yang Earth Monkey''' (戊申, ''tsuchinoe saru''; onyomi ''bojin'') is the 45th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 45th combination in the comprehensive sexagenary cycle, preceded by {{ill|Dingwei|ja|丁未|1=Yin Fire Goat|2=ja|12=simple|13=User:Immanuelle/Dingwei|ja_comment=jawiki link invalid}} and followed by {{ill|Jiyou|ja|己酉|1=Yin Earth Rooster|2=ja|12=simple|13=User:Immanuelle/Jiyou|ja_comment=jawiki link invalid}}. In the {{ill|Yin-Yang Five Elements theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang Five Elements theory}}, the heavenly stem {{ill|Wu|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Wu}} represents yang earth, and the earthly branch {{ill|Monkey (zodiac)|en|Monkey (zodiac)|qid=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}} represents yang metal; according to the principle of {{ill|Aioi|en|Aioi|qid=Q4697552|lt=phase generation|1=Aioi}} (earth producing metal).
+It is the 45th of the sixty stem-branch combinations, preceded by {{ill|Yin Fire Goat|ja|丁未|1=Yin Fire Goat}} and followed by {{ill|Yin Earth Rooster|ja|己酉|1=Yin Earth Rooster}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''戊'' is Yang Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''申'' (Monkey) is Yang Metal; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Earth Monkey (戊申)
@@ -89,7 +90,7 @@ In years whose last digit in the Western calendar is 2 or 7 (corresponding to th
 === Date Selection ===
 The day of Wushen is the 16th day (the final day) of the {{ill|Tengitenjō|ja|天一天上|12=simple|13=User:Immanuelle/Tengitenjō|ja_comment=天一神|1=Tenitsu-shin|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 
-== Related Articles ==
+== See Also ==
 * {{prefix}}
 * {{intitle}}
 
