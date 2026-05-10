@@ -11,6 +11,22 @@
     "revid": 1995986,
     "sha": "fbf35f41d46b20bdfd2e37372e47296f292060b7"
   },
+  "Template:Fuken-sha": {
+    "revid": 2055976,
+    "sha": "f860b85590b3c4938c1c461ffd4e2756c18dc292"
+  },
+  "Template:GaiadDate": {
+    "revid": 2055977,
+    "sha": "a4ec70a6051e2d512336318e157b802461181914"
+  },
+  "Template:GaiadToday": {
+    "revid": 2055978,
+    "sha": "c80186099e3fd5d8993ac1727f6bc93a0cc403e5"
+  },
+  "Template:Gō-sha": {
+    "revid": 2055979,
+    "sha": "cc684912819caff5277464c27dc56700b06384d4"
+  },
   "Template:Infobox": {
     "revid": 1992133,
     "sha": "4e60c1259da2a86a969a6e7b01bbf06d8be973b2"
@@ -1074,6 +1090,14 @@
   "Template:Manichaeism": {
     "revid": 2002782,
     "sha": "84488d6927f7dc9dc8b2756c658392770728a4e7"
+  },
+  "Template:Mura-sha": {
+    "revid": 2055980,
+    "sha": "eb636e753caedc4e7ad2745ac5df7359c48d2da2"
+  },
+  "Template:Son-sha": {
+    "revid": 2055981,
+    "sha": "33aa802587653d96e9f05d2791a3a79b82854d90"
   },
   "Template:Translated page": {
     "revid": 2002783,
