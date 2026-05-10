@@ -4,23 +4,22 @@
 {{Sexagenary cycle}}
 '''Yang Earth Dragon''' (戊辰, ''tsuchinoe tatsu''; onyomi ''bo shin'') is the 5th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the fifth of the Chinese zodiac combinations, the previous being Ding-U and the next being Ji-snake. The dragon (龍) is the only fictional animal in the zodiac. In the Yin-Yang Five Elements, Boshi in the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=the ten signs of the zodiac|1=Heavenly Stems}} is Yang {{ill|Soil (disambiguation)|en|Soil (disambiguation)|qid=Q3199973|lt=Earth|1=Soil (disambiguation)}}, {{ill|Dragon (zodiac)|en|Dragon (zodiac)|qid=Q731434|lt=Dragon|1=Dragon (zodiac)}} in the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=the twelve signs of the zodiac|1=Earthly Branches}} is Yang {{ill|Soil (disambiguation)|en|Soil (disambiguation)|qid=Q3199973|lt=Earth|1=Soil (disambiguation)}} {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Hiwa|1=Wuxing (Chinese philosophy)}}, which is {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Hiwa|1=Wuxing (Chinese philosophy)}}.
+It is the 5th of the sixty stem-branch combinations, preceded by {{ill|Yin Fire Rabbit|ja|丁卯|1=Yin Fire Rabbit}} and followed by {{ill|Yin Earth Snake|ja|己巳|1=Yin Earth Snake}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''戊'' is Yang Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''辰'' (Dragon) is Yang Earth; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Earth Dragon (戊辰)
 ** Chinese (Mandarin Pinyin): wùchén
 ** Cantonese (Jyutping): mou6 san4
 ** Japanese:
-***Kunyomi 1: Tsuchinoe-tatsu
-***Kunyomi 2: Bodo-no-tatsu
-***Onyomi 1: boshin
+*** Kun'yomi: tsuchinoe-tatsu
+*** On'yomi: boshin
 ** Korean (Revised Romanization, Hangul): mujin (무진)
 ** Vietnamese (Hán-Việt): Mậu Thìn
 
 ==Years of Yang Earth Dragon==
-The year in which the Western year is divided by 60 and the number 8 is left over is the year of Earth Dragon.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 8 when divided by 60 is a year of Yang Earth Dragon (戊辰).
 {| class="wikitable"
-|+'''Associated years'''
+|+ '''Years of Yang Earth Dragon (戊辰)'''
 !{{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millenium|1=1st millennium}}
 !{{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millenium|1=2nd millennium}}
 !{{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millenium|1=3rd millennium}}
@@ -82,9 +81,8 @@ The year in which the Western year is divided by 60 and the number 8 is left ove
 
 === Events ===
 
-* In 1868 the {{ill|Boshin War|en|Boshin War|qid=Q309184|lt=Boshin War|1=Boshin War}} occurred marking the beginning of the [[Meiji Restoration]]
+* In 1868 the {{ill|Boshin War|en|Boshin War|qid=Q309184|lt=Boshin War|1=Boshin War}} occurred, marking the beginning of the [[Meiji Restoration]].
 
-*
 ==Months of Yang Earth Dragon==
 
 * {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}
@@ -92,7 +90,7 @@ The year in which the Western year is divided by 60 and the number 8 is left ove
 
 {{translated page|ja|戊辰|qq=Yang Earth Dragon|version=84123735|comment=Imported full ja history}}
 
-{{wikidata link|Q118701|af|Aarddraak (astrologie)|cdo|Muô-sìng|de|Erde-Drache|en|Earth Dragon (Chinese Zodiac)|fr|Dragon de terre|hak|Vú-sìn|ja|戊辰|ko|무진 (간지)|nds|Eer-Draken|vi|Mậu Thìn|za|Fouhsaenz|zh-min-nan|Bō͘-sîn|zh-yue|戊辰|zh|戊辰|it|Tsu-chṳ́id|ar|Yang Earth Dragon}}
+{{wikidata link|Q118701|af|Aarddraak (astrologie)|cdo|Muô-sìng|de|Erde-Drache|en|Earth Dragon (Chinese Zodiac)|fr|Dragon de terre|hak|Vú-sìn|ja|戊辰|ko|무진 (간지)|nds|Eer-Draken|vi|Mậu Thìn|za|Fouhsaenz|zh-min-nan|Bō͘-sîn|zh-yue|戊辰|zh|戊辰|ar|Yang Earth Dragon}}
 [[Category:Pages with unreviewed translations]]
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]

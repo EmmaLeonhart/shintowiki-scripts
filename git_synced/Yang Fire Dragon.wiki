@@ -4,21 +4,20 @@
 {{Sexagenary cycle}}
 '''Yang Fire Dragon''' (丙辰, ''hinoe tatsu''; onyomi ''heishin'') is the 53rd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 53rd combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=fixed jawiki redirect|3=干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}, preceded by {{ill|Yin Wood Rabbit|ja|乙卯|1=Yin Wood Rabbit|2=ja|12=simple|13=User:Immanuelle/Yin Wood Rabbit|ja_comment=jawiki link invalid}} and followed by {{ill|Yang Fire Snake|ja|丁巳|1=Yin Fire Snake|2=ja|12=simple|13=User:Immanuelle/Yang Fire Snake|ja_comment=jawiki link invalid}}. In the context of {{ill|Yin Yang Five Elements Thought|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin Yang Five Elements|12=simple|13=User:Immanuelle/Yin Yang Five Elements Thought}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} symbol {{ill|Yang Fire|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Yang Fire}} represents yang {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}} symbol {{ill|Dragon|ja|辰|1=chén|lt=Dragon (辰)|2=ja|3=辰|12=simple|13=User:Immanuelle/Dragon|comment=changed title based on wikidata|qid=Q16538966}} represents yang {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, establishing a generating relationship ({{ill|Mutual Generation|ja|五行思想#相生（そうじょう）|lt=Mutual Generation|12=simple|13=User:Immanuelle/Mutual Generation|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}) (火生土).
+It is the 53rd of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Rabbit|ja|乙卯|1=Yin Wood Rabbit}} and followed by {{ill|Yin Fire Snake|ja|丁巳|1=Yin Fire Snake}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''辰'' (Dragon) is Yang Earth; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Fire Dragon (丙辰)
 ** Chinese (Mandarin Pinyin): bǐngchén
 ** Cantonese (Jyutping): bing3 san4
 ** Japanese:
-***Kunyomi 1: Hinoe-tatsu
-***Kunyomi 2: Heika-no-tatsu
-***Onyomi 1: heishin
+*** Kun'yomi: hinoe-tatsu
+*** On'yomi: heishin
 ** Korean (Revised Romanization, Hangul): byeongjin (병진)
 ** Vietnamese (Hán-Việt): Bính Thìn
 
 ==Years of Yang Fire Dragon==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that, when divided by 60, leaves a remainder of 56 is a {{ill|Year|en|Year|qid=Q577|lt=year|1=Year}} of {{ill|Yang Fire Dragon|ja|丙辰|1=Yang Fire Dragon|2=ja|12=simple|13=User:Immanuelle/Yang Fire Dragon|ja_comment=jawiki link invalid}}.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 56 when divided by 60 is a year of Yang Fire Dragon (丙辰).
 {| class="wikitable"
 |+'''Yang Fire Dragon (丙辰)'s years table'''
 |-
@@ -90,7 +89,7 @@ The selected day for {{ill|Yang Fire Dragon|ja|丙辰|1=Yang Fire Dragon|2=ja|12
 
 {{translated page|ja|qq=Yang Fire Dragon|丙辰|version=98658301|comment=Imported full ja history}}
 
-{{wikidata link|Q904721|af|Vuurdraak (astrologie)|cdo|Bīng-sìng|de|Feuer-Drache|hak|Piáng-sìn|ja|丙辰|ko|병진 (간지)|vi|Bính Thìn|za|Bingjsaenz|zh-min-nan|Péng-sîn|zh-yue|丙辰|zh|丙辰|nds|Holt-Affenvi|fr|Dragon de feu|en|Wood Monkey|it|Kang-chṳ́id|ar|Yang Fire Dragon}}
+{{wikidata link|Q904721|af|Vuurdraak (astrologie)|cdo|Bīng-sìng|de|Feuer-Drache|hak|Piáng-sìn|ja|丙辰|ko|병진 (간지)|vi|Bính Thìn|za|Bingjsaenz|zh-min-nan|Péng-sîn|zh-yue|丙辰|zh|丙辰|fr|Dragon de feu|ar|Yang Fire Dragon}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

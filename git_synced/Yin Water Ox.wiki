@@ -4,24 +4,23 @@
 {{Sexagenary cycle}}
 '''Yin Water Ox''' (癸丑, ''mizunoto ushi''; onyomi ''kichū'') is the 50th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 50th combination in the cycle, following {{ill|Mizunoe-Ne|ja|壬子|1=Yang Water Rat|2=ja|3=壬子|4=zh|5=壬子|6=ko|7=임자|lt_ko=임자|8=fr|9=Rat de eau|10=de|11=Wasser-Ratte|12=en|13=User:Immanuelle/Yang Water Rat}} and preceding {{ill|Kō-Inu|ja|甲寅|1=Yang Wood Tiger|2=ja|3=甲寅|12=simple|13=User:Immanuelle/Kō-Inu}}. According to {{ill|Yin-Yang and Five Elements|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Five Elements}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} {{ill|Mizunoto (癸)|ja|癸|zh|癸|gan|癸|hak|Kui (thiên-kôn)|simple|User:Immanuelle/Mizunoto (癸)|vi|Quý (Thiên can)|wuu|癸|za|Gveiq (diengan)|zh-min-nan|Kúi (Thian-kan)|zh-yue|癸|lt=Mizunoto (癸)}} represents Yin Water, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}} {{ill|Ox (zodiac)|en|Ox (zodiac)|qid=Q599644|lt=Ox (丑)|1=Ox (zodiac)}} represents Yin Earth, creating a {{ill|Conquest in Five Elements|ja|五行思想#相剋（そうこく）|lt=relationship of conquest|12=simple|13=User:Immanuelle/Conquest in Five Elements|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (Earth conquers Water).
+It is the 50th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Rat|ja|壬子|1=Yang Water Rat}} and followed by {{ill|Yang Wood Tiger|ja|甲寅|1=Yang Wood Tiger}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''丑'' (Ox) is Yin Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Water Ox (癸丑)
 ** Chinese (Mandarin Pinyin): guǐchǒu
 ** Cantonese (Jyutping): gwai2 cau2
 ** Japanese:
-***Kunyomi 1: Mizunoto-ushi
-***Kunyomi 2: Kisui-no-ushi
-***Onyomi 1: kichi
+*** Kun'yomi: mizunoto-ushi
+*** On'yomi: kichū
 ** Korean (Revised Romanization, Hangul): gyechuk (계축)
 ** Vietnamese (Hán-Việt): Quý Sửu
 
 ==Years of Yin Water Ox==
-Gregorian calendar years that leave a remainder of 53 when divided by 60 correspond to years of Kinoe-Ushi.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 53 when divided by 60 is a year of Yin Water Ox (癸丑).
 
 {| class="wikitable"
-|+ '''Years of Kinoe-Ushi'''
+|+ '''Years of Yin Water Ox (癸丑)'''
 |-
 ! [[:en:1st Millennium|1st Millennium]] !! [[2nd Millennium]] !! [[3rd Millennium]]
 |-
@@ -81,18 +80,18 @@ Gregorian calendar years that leave a remainder of 53 when divided by 60 corresp
 |}
 
 ==Months of Yin Water Ox==
-The twelfth month (December) of Gregorian calendar years ending in 2 or 7 (Heavenly Stems 壬 or 丁) corresponds to Kinoe-Ushi months. However, this applies to the {{ill|Lunar calendar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar terms|1=Solar term}} (from {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Shōkan|1=Xiaohan}} to the day before {{ill|Lichun|en|Lichun|qid=Q1364685|lt=Risshun|1=Lichun}}) in traditional contexts.
+The twelfth month (December) of Gregorian calendar years ending in 2 or 7 (Heavenly Stems 壬 or 丁) corresponds to Mizunoto-Ushi months. However, this applies to the {{ill|Lunar calendar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar terms|1=Solar term}} (from {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Shōkan|1=Xiaohan}} to the day before {{ill|Lichun|en|Lichun|qid=Q1364685|lt=Risshun|1=Lichun}}) in traditional contexts.
 
 ==Days of Yin Water Ox==
 === Auspicious Dates ===
-Days of Kinoe-Ushi are noted as intercalary days during the {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle/Hassen}} period.
+Days of Mizunoto-Ushi are noted as intercalary days during the {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle/Hassen}} period.
 == See Also ==
 * {{prefix}}
 * {{intitle}}
 
 {{translated page|ja|qq=Yin Water Ox|癸丑|version=84123844|comment=Imported full ja history}}
 
-{{wikidata link|Q267521|af|Wateros (astrologie)|cdo|Gŭi-tiū|de|Wasser-Büffel|hak|Kui-chhiú|ja|癸丑|ko|계축|vi|Quý Sửu|za|Gveiqcouj|zh-min-nan|Kùi-thiú|zh-yue|癸丑|zh|癸丑|nds|Metall-Schlangeni|en|Water Ox|fr|Buffle de eau|it|Ding-chṳ́id|ar|Yin Water Ox}}
+{{wikidata link|Q267521|af|Wateros (astrologie)|cdo|Gŭi-tiū|de|Wasser-Büffel|hak|Kui-chhiú|ja|癸丑|ko|계축|vi|Quý Sửu|za|Gveiqcouj|zh-min-nan|Kùi-thiú|zh-yue|癸丑|zh|癸丑|en|Water Ox|fr|Buffle de eau|ar|Yin Water Ox}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

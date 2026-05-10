@@ -5,25 +5,24 @@
 {{Sexagenary cycle}}
 '''Yang Metal Horse''' (庚午, ''kanoe uma''; onyomi ''kōgo'') is the 7th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 7th combination in the sexagenary cycle, following {{ill|Tsuchinoe-mi|ja|己巳|1=Yin Earth Snake|12=simple|13=User:Immanuelle/Tsuchinoe-mi}} and preceding {{ill|Kanoto-hitsuji|ja|辛未|1=Yin Metal Goat|2=ja|12=simple|13=User:Immanuelle/Kanoto-hitsuji|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} '''Kanoe''' (庚) represents Yang {{ill|Metal|ja|Metal (金)|1=Metal (wuxing)|lt=Metal (金)|2=es|3=Metal (Wu Xing)|4=it|5=Metallo (elemento)|6=vi|7=Kim (Ngũ hành)|8=tr|9=Metal (klasik element)|10=uk|11=Метал (У-сін)|12=simple|13=User:Immanuelle/Metal|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} '''Uma''' (午) represents Yang {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, resulting in a {{ill|Destructive cycle|ja|五行思想#相剋（そうこく）|相剋|12=simple|13=User:Immanuelle/Destructive cycle|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (Fire overcomes Metal).
+It is the 7th of the sixty stem-branch combinations, preceded by {{ill|Yin Earth Snake|ja|己巳|1=Yin Earth Snake}} and followed by {{ill|Yin Metal Goat|ja|辛未|1=Yin Metal Goat}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''庚'' is Yang Metal, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''午'' (Horse) is Yang Fire; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Metal Horse (庚午)
 ** Chinese (Mandarin Pinyin): gēngwǔ
 ** Cantonese (Jyutping): gaang1 ng5
 ** Japanese:
-***Kunyomi 1: Kanoe-uma
-***Kunyomi 2: koukin-no-uma
-***Onyomi 1: kougo
+*** Kun'yomi: kanoe-uma
+*** On'yomi: kōgo
 ** Korean (Revised Romanization, Hangul): gyeongo (경오)
 ** Vietnamese (Hán-Việt): Canh Ngọ
 
 ==Years of Yang Metal Horse==
-For years in the Common Era, a year is a Kanoe-uma year if, when divided by 60, the remainder is 10.<br>
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 10 when divided by 60 is a year of Yang Metal Horse (庚午).
 For years before the Common Era, a year is a Kanoe-uma year if, when divided by 60, the remainder is 51.
 
 {| class="wikitable"
-|+'''Kanoe-uma Years'''
+|+ '''Years of Yang Metal Horse (庚午)'''
 |-
 ![[1st Millennium BC]]!![[1st Millennium AD]]!![[2nd Millennium AD]]!![[3rd Millennium AD]]
 |-

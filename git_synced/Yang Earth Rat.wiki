@@ -4,23 +4,22 @@
 {{Sexagenary cycle}}
 '''Yang Earth Rat''' (戊子, ''tsuchinoe nezumi''; onyomi ''boshi'') is the 25th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 25th combination in the Sexagenary Cycle Comprehensive, preceded by {{ill|Ding Hai|ja|丁亥|1=Yin Fire Pig|2=ja|12=simple|13=User:Immanuelle/Ding Hai|ja_comment=jawiki link invalid}} and followed by {{ill|Ki Chou|ja|己丑|1=Yin Earth Ox|2=ja|12=simple|13=User:Immanuelle/Ki Chou|ja_comment=jawiki link invalid}}. In the {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Wu|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Wu}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents yang earth, while the {{ill|Rat (zodiac)|en|Rat (zodiac)|qid=Q721997|lt=Rat (子)|1=Rat (zodiac)}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} represents yang water, and according to the principle of mutual overcoming ({{ill|Sōkoku|ja|相剋|12=simple|13=User:Immanuelle/Sōkoku|ja_comment=fixed jawiki redirect|3=五行思想|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}; earth overcomes water).
+It is the 25th of the sixty stem-branch combinations, preceded by {{ill|Yin Fire Pig|ja|丁亥|1=Yin Fire Pig}} and followed by {{ill|Yin Earth Ox|ja|己丑|1=Yin Earth Ox}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''戊'' is Yang Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''子'' (Rat) is Yang Water; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Earth Rat (戊子)
 ** Chinese (Mandarin Pinyin): wùzǐ
 ** Cantonese (Jyutping): mou6 zi2
 ** Japanese:
-***Kunyomi 1: Tsuchinoe-ne
-***Kunyomi 2: Bodo-no-ne
-***Onyomi 1: boshi
+*** Kun'yomi: tsuchinoe-nezumi
+*** On'yomi: boshi
 ** Korean (Revised Romanization, Hangul): muja (무자)
 ** Vietnamese (Hán-Việt): Mậu Tý
 
 ==Years of Yang Earth Rat==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 28 when divided by 60 is considered a Yang Earth Rat {{ill|Year|en|Year|qid=Q577|lt=year|1=Year}}.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 28 when divided by 60 is a year of Yang Earth Rat (戊子).
 {| class="wikitable"
-|+'''Year of Yang Earth Rat'''
+|+ '''Years of Yang Earth Rat (戊子)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
@@ -92,7 +91,7 @@ The Yang Earth Rat day is the 5th day of {{ill|Tenpōgure|ja|十方暮|12=simple
 
 {{translated page|ja|qq=Yang Earth Rat|戊子|version=84827483|comment=Imported full ja history}}
 
-{{wikidata link|Q1062052|af|Aardrot (astrologie)|cdo|Muô-cṳ̄|de|Erde-Ratte|fr|Rat de terre|hak|Vú-chṳ́|ja|戊子|ko|무자|nds|Eer-Rött|vi|Mậu Tý|za|Fouhceij|zh-min-nan|Bō͘-chú|zh-yue|戊子|zh|戊子|en|Earth Rat|it|Tsu-chṳ́id|ar|Yang Earth Rat}}
+{{wikidata link|Q1062052|af|Aardrot (astrologie)|cdo|Muô-cṳ̄|de|Erde-Ratte|fr|Rat de terre|hak|Vú-chṳ́|ja|戊子|ko|무자|nds|Eer-Rött|vi|Mậu Tý|za|Fouhceij|zh-min-nan|Bō͘-chú|zh-yue|戊子|zh|戊子|en|Earth Rat|ar|Yang Earth Rat}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
