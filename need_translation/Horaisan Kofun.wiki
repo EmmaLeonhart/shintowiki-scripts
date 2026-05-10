@@ -1,6 +1,8 @@
 <!--interwikis from wikidata-->[[ja:宝萊山古墳]]
 {{Infobox ancient site|image=File:Horaisan Kofun (Ota), funkyu.jpg|location={{ill|Den'en Chōfu|qid=Q2613265|1=Den-en-chōfu}}|coordinates={{Coord|35.593153|N|139.663358|E|region:JP_type:landmark|display=inline,title}}|architectural_styles={{ill|keyhole-shaped kofun|qid=Q11268718|1=Zenpōkōenfun|2=ja|3=前方後円墳|4=ko|5=전방후원분|6=zh|7=前方後圓墳}}|part_of={{ill|Ebaradai kofun-gun|qid=Q11618305|1=Ebaradai kofun-gun}}}}
 
+'''{{nihongo|Horaisan Kofun|宝萊山古墳|Hōraisan Kofun}}''' is a {{ill|keyhole-shaped kofun|qid=Q11268718|1=Zenpōkōenfun|lt=keyhole-shaped tumulus}} located in {{ill|Den'en Chōfu|qid=Q2613265|1=Den-en-chōfu}}, {{ill|Ōta, Tokyo|en|Ōta, Tokyo|qid=Q391005|lt=Ōta Ward}}, Tokyo. It forms part of the {{ill|Ebaradai kofun-gun|qid=Q11618305|1=Ebaradai kofun-gun|lt=Ebaradai burial mound group}} and is designated a Tokyo Metropolitan Historic Site.
+
 {{translated page|ja|宝萊山古墳|version=99994994|comment=Imported full ja history}}
 
 [[ja:宝萊山古墳]]
@@ -14,4 +16,3 @@
 [[Category:Kofun of Tokyo]]
 [[Category:Wikidata no short description]]
 [[Category:Zenpokoenfun]]
-[[Category:Need translation]]
