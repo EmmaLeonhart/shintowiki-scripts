@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yin Earth Snake''' (己巳, ''tsuchinoto mi''; onyomi ''ki shi'') is the 6th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 6th combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=jawiki redirects to 干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}, preceded by {{ill|Boshin|ja|戊辰|1=Yang Earth Dragon|12=simple|13=User:Immanuelle/Boshin|comment=enwiki is a redirect}} and followed by {{ill|Kougo|ja|庚午|1=Yang Metal Horse|12=simple|13=User:Immanuelle/Kougo}}. In the context of {{ill|Yin Yang Five Elements Thought|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin Yang Five Elements|12=simple|13=User:Immanuelle/Yin Yang Five Elements Thought}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} symbol {{ill|Ki|ja|己|1=Tsuchinoto (己)|lt=Tsuchinoto (己)|2=ja|3=己|4=zh|5=己|12=simple|13=User:Immanuelle/Ki}} represents yin {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}} symbol {{ill|Snake|ja|巳|1=Snake (Zodiac)|lt=Snake (巳)|2=ja|3=巳|12=simple|13=User:Immanuelle/Snake}} represents yin {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, establishing a generating relationship ({{ill|Mutual Generation|ja|五行思想#相生（そうじょう）|lt=Mutual Generation|12=simple|13=User:Immanuelle/Mutual Generation|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}) (i.e. Fire gives rise to Earth).
+It is the 6th of the sixty stem-branch combinations, preceded by {{ill|Yang Earth Dragon|ja|戊辰|1=Yang Earth Dragon}} and followed by {{ill|Yang Metal Horse|ja|庚午|1=Yang Metal Horse}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''己'' is Yin Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''巳'' (Snake) is Yin Fire; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Earth Snake (己巳)
@@ -18,7 +18,7 @@ It is the 6th combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simpl
 ** Vietnamese (Hán-Việt): Kỷ Tỵ
 
 ==Years of Yin Earth Snake==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 9 when divided by 60 is a {{ill|Year|en|Year|qid=Q577|lt=year|1=Year}} of {{ill|Kishii|ja|己巳|1=Yin Earth Snake|12=simple|13=User:Immanuelle/Kishii}}.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 9 when divided by 60 is a year of Yin Earth Snake (己巳).
 {| class="wikitable"
 |+'''Yin Earth Snake (己巳)'s years table'''
 |-

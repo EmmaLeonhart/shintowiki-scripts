@@ -5,7 +5,7 @@
 
 '''Yang Fire Rat''' (丙子, ''hinoe nezumi''; onyomi ''heishi'') is the 13th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 13th combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=fixed jawiki redirect|3=干支|1=Sexagenary cycle|comment=changed title based on wikidata|qid=Q246658}}, preceded by {{ill|Otsugai|ja|乙亥|1=Yin Wood Pig|2=ja|12=simple|13=User:Immanuelle/Otsugai|ja_comment=jawiki link invalid}} and followed by {{ill|Teichuu|ja|丁丑|1=Yin Fire Ox|2=ja|12=simple|13=User:Immanuelle/Teichuu|ja_comment=jawiki link invalid}}. In {{ill|Yin Yang Five Elements|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin Yang Five Elements}}, the heavenly stem {{ill|Hei|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Hei}} represents yang {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, while the earthly branch {{ill|Rat (zodiac)|en|Rat (zodiac)|qid=Q721997|lt=Rat|1=Rat (zodiac)}} represents yang water, establishing a restraining relationship ({{ill|Mutual Restraint|ja|五行思想#相剋（そうこく）|lt=Mutual Restraint|lt_ja=相剋|12=simple|13=User:Immanuelle/Mutual Restraint|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}, i.e. water overcomes fire).
+It is the 13th of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Pig|ja|乙亥|1=Yin Wood Pig}} and followed by {{ill|Yin Fire Ox|ja|丁丑|1=Yin Fire Ox}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''子'' (Rat) is Yang Water; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Fire Rat (丙子)
@@ -19,9 +19,9 @@ It is the 13th combination of the {{ill|Sexagenary cycle|ja|六十干支|12=simp
 ** Vietnamese (Hán-Việt): Bính Tý
 
 ==Years of Yang Fire Rat==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 16 when divided by 60 is a Besshi {{ill|Year|en|Year|qid=Q577|lt=year|1=Year}}.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 16 when divided by 60 is a year of Yang Fire Rat (丙子).
 {| class="wikitable"
-|+'''Years of Besshi (丙子の年)'''
+|+ '''Years of Yang Fire Rat (丙子)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}}
 !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}}

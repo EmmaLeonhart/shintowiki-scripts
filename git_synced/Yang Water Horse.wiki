@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yang Water Horse''' (壬午, ''mizunoe uma''; onyomi ''jingo'') is the 19th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 19th combination in the Sexagenary cycle; the preceding combination is {{ill|Xinsi|ja|辛巳|1=Yin Metal Snake|2=ja|3=辛巳|4=zh|5=辛巳|6=ko|7=신사 (간지)|lt_ko=신사|8=fr|9=Serpent de métal|10=de|11=Metall-Schlange|12=simple|13=User:Immanuelle/Xinsi}} and the following combination is {{ill|Guimi|ja|癸未|1=Yin Water Goat|2=ja|12=simple|13=User:Immanuelle/Guimi|ja_comment=jawiki link invalid}}. In the system of {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin-Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}}’ {{ill|Ren|ja|壬|1=Mizunoe (壬)|lt=Mizunoe (壬)|2=ja|3=壬|4=zh|5=壬|12=simple|13=User:Immanuelle/Ren}} represents yang {{ill|Water|zh|Water (水)|comment=doing this to prevent wrong interwiki linking by bot|1=Water (wuxing)|lt=Water (水)|2=uk|3=Вода (У-сін)|4=als|5=Wasser in dr chinesische Fümf-Elemänt-Leer|6=bcl|7=Tubig (wuxing)|8=vi|9=Thủy (Ngũ hành)|10=pt|11=Água (astrologia)|12=simple|13=User:Immanuelle/Water}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}}’ {{ill|Horse|ja|午|1=wǔ|lt=Horse (午)|2=ja|3=午|12=simple|13=User:Immanuelle/Horse|comment=changed title based on wikidata|qid=Q16683439}} represents yang {{ill|Fire|ja|Fire (火)|1=Fire (wuxing)|lt=Fire (火)|2=uk|3=Вогонь (У-сін)|4=bcl|5=Kalayo (wuxing)|6=pt|7=Fogo (astrologia)|8=vi|9=Hỏa (Ngũ hành)|10=ar|11=النار (وو شينغ)|12=simple|13=User:Immanuelle/Fire|ja_comment=jawiki link invalid}}, and they interact by {{ill|Mutual Overcoming|ja|相剋|12=simple|13=User:Immanuelle/Mutual Overcoming|ja_comment=fixed jawiki redirect|3=五行思想|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (Water overcomes Fire).
+It is the 19th of the sixty stem-branch combinations, preceded by {{ill|Yin Metal Snake|ja|辛巳|1=Yin Metal Snake}} and followed by {{ill|Yin Water Goat|ja|癸未|1=Yin Water Goat}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''壬'' is Yang Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''午'' (Horse) is Yang Fire; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Water Horse (壬午)
@@ -18,9 +18,9 @@ It is the 19th combination in the Sexagenary cycle; the preceding combination is
 ** Vietnamese (Hán-Việt): Nhâm Ngọ
 
 ==Years of Yang Water Horse==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 22 when divided by 60 is a {{ill|Year|en|Year|qid=Q577|lt=Year|1=Year}} of Ren-Go.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 22 when divided by 60 is a year of Yang Water Horse (壬午).
 {| class="wikitable"
-|+ '''Years of Ren-Go'''
+|+ '''Years of Yang Water Horse (壬午)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-

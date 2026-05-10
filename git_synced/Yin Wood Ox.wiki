@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yin Wood Ox''' (乙丑, ''kinoto ushi''; onyomi ''otsuchū'') is the 2nd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the second combination in the cycle, following {{ill|Wood Rat|en|Wood Rat|qid=Q1190890|lt=Yang Wood Rat|1=Yang Wood Rat}} and preceding {{ill|Fire Tiger|ja|丙寅|1=Yang Fire Tiger|12=simple|13=User:Immanuelle/Fire Tiger}}. According to the {{ill|Yin-Yang and Five Elements|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Five Elements}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} {{ill|Kinoto (乙)|ja|乙|zh|乙|gan|乙|hak|Yet (thiên-kôn)|simple|User:Immanuelle/Kinoto (乙)|vi|Ất|za|Iet (diengan)|zh-min-nan|It (Thian-kan)|zh-yue|乙|lt=Kinoto (乙)|12=simple|13=User:Immanuelle/Kinoto (乙)}} represents {{ill|yin|en|yin|qid=Q295951|lt=yin|1=Yin}} {{ill|Wood (wuxing)|1=Wood (wuxing)|lt=Wood (木)|2=uk|3=Дерево (елемент)|4=id|5=Kayu (Wu Xing)|6=ms|7=Kayu (Wu Xing)|8=bcl|9=Kahoy (wuxing)|10=ca|11=Fusta (wuxing)|12=it|13=Legno (elemento)|14=es|15=Madera (Wu Xing)|16=nl|17=Hout (element)|18=vi|19=Mộc (Ngũ hành)|20=tr|21=Tahta (klasik element)|22=ta|23=மரம் (சீன மெய்யியல்)}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} [[Ox (zodiac)|Ox (丑)]] represents {{ill|yin|en|yin|qid=Q295951|lt=yin|1=Yin}} {{ill|Earth (wuxing)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)}}, creating a relationship of {{ill|Conquest in Five Elements|ja|五行思想#相剋（そうこく）|lt=conquest|12=simple|13=User:Immanuelle/Conquest in Five Elements|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (Wood conquers Earth).
+It is the 2nd of the sixty stem-branch combinations, preceded by {{ill|Yang Wood Rat|ja|甲子|1=Yang Wood Rat}} and followed by {{ill|Yang Fire Tiger|ja|丙寅|1=Yang Fire Tiger}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''乙'' is Yin Wood, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''丑'' (Ox) is Yin Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Wood Ox (乙丑)
@@ -18,10 +18,10 @@ It is the second combination in the cycle, following {{ill|Wood Rat|en|Wood Rat|
 ** Vietnamese (Hán-Việt): Ất Sửu
 
 ==Years of Yin Wood Ox==
-Gregorian calendar years that leave a remainder of 5 when divided by 60 are years of Kinoto-Ushi.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 5 when divided by 60 is a year of Yin Wood Ox (乙丑).
 
 {| class="wikitable"
-|+'''Years of Kinoto-Ushi'''
+|+ '''Years of Yin Wood Ox (乙丑)'''
 |-
 ! [[:en:1st Millennium|1st Millennium]] !! [[2nd Millennium]] !! [[3rd Millennium]]
 |-

@@ -5,7 +5,7 @@
 
 '''Yang Wood Dragon''' (甲辰, ''kinoe tatsu''; onyomi ''kōshin'') is the 41st of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 41st combination in the Sexagenary cycle, following {{ill|1=Yin Water Rabbit|癸卯|ja|癸卯|2=ja|1=Yin Water Rabbit|12=simple|13=User:Immanuelle/癸卯}} and preceding {{ill|1=Yin Wood Snake|乙巳|ja|乙巳|2=ja|1=Yin Wood Snake|12=simple|13=User:Immanuelle/乙巳}}. In {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Kinoe (甲)|1=Heavenly Stems}} represents the {{ill|Yang|ja|陽|12=simple|13=User:Immanuelle/Yang|ja_comment=fixed jawiki redirect|3=陰陽|comment=changed title based on wikidata|1=Yin and yang|qid=Q62744}} aspect of {{ill|Wood|ja|Wood (木)|1=Wood (wuxing)|lt=Wood (木)|2=uk|3=Дерево (елемент)|4=id|5=Kayu (Wu Xing)|6=ms|7=Kayu (Wu Xing)|8=bcl|9=Kahoy (wuxing)|10=ca|11=Fusta (wuxing)|12=it|13=Legno (elemento)|14=es|15=Madera (Wu Xing)|16=nl|17=Hout (element)|18=vi|19=Mộc (Ngũ hành)|20=tr|21=Tahta (klasik element)|22=ta|23=மரம் (சீன மெய்யியல்)|ja_comment=jawiki link invalid}}, while {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Dragon (辰)|1=Earthly Branches}} represents the Yang aspect of {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}. This combination is classified as an instance of {{ill|Mutual Controlling (Wood Controls Earth)|ja|五行思想#相剋（そうこく）|lt=相剋|12=simple|13=User:Immanuelle/Mutual Controlling (Wood Controls Earth)|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}}.
+It is the 41st of the sixty stem-branch combinations, preceded by {{ill|Yin Water Rabbit|ja|癸卯|1=Yin Water Rabbit}} and followed by {{ill|Yin Wood Snake|ja|乙巳|1=Yin Wood Snake}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''甲'' is Yang Wood, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''辰'' (Dragon) is Yang Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Wood Dragon (甲辰)
@@ -18,9 +18,9 @@ It is the 41st combination in the Sexagenary cycle, following {{ill|1=Yin Water 
 ** Vietnamese (Hán-Việt): Giáp Thìn
 
 ==Years of Yang Wood Dragon==
-A year in which the remainder when divided by 60 is 44 corresponds to the year of Kōshin.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 44 when divided by 60 is a year of Yang Wood Dragon (甲辰).
 {| class="wikitable"
-|+'''Years of Kōshin'''
+|+ '''Years of Yang Wood Dragon (甲辰)'''
 |-
 ![[:en:1st Millennium|1st Millennium]]!![[2nd Millennium]]!![[3rd Millennium]]
 |-
