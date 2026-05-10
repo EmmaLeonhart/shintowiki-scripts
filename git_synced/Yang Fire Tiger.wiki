@@ -1,9 +1,9 @@
 <!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
-{{infobox Chinese|l=Yang Fire Tiger|kanji=丙寅|romaji=hinoe tora|onyomi=heiin|p=bǐngyín|w=ping-yin|mi=pʰiŋ²¹ ȵiŋ²¹|y=bing2 jan4|j=bing2 jan4|ci=pɪŋ jɐn²|mc=pæŋ ŋin|oc-bs=praŋ ŋin|qq=}}
+{{infobox Chinese|l=Yang Fire Tiger|kanji=丙寅|romaji=hinoe tora|onyomi=heiin|p=bǐngyín|w=ping-yin|mi=pʰiŋ²¹ ȵiŋ²¹|y=bing2 jan4|j=bing2 jan4|ci=pɪŋ jɐn²|mc=pæŋ ŋin|oc-bs=praŋ ŋin}}
 markdown
-{{Sexagenary cycle|qq=}}
-'''Yang Fire Tiger also known as  Heiin''' (丙寅, ひのえとら, へいかのとら, へいいん) is one of the [[Sexagenary cycle|stems-and-branches]] combinations in the traditional {{ill|Chinese calendar|en|Chinese calendar|qid=Q134032|lt=Chinese calendar|1=Chinese calendar}}.
+{{Sexagenary cycle}}
+'''Yang Fire Tiger also known as Heiin''' (丙寅, ひのえとら, へいかのとら, へいいん) is one of the [[Sexagenary cycle|stems-and-branches]] combinations in the traditional {{ill|Chinese calendar|en|Chinese calendar|qid=Q134032|lt=Chinese calendar|1=Chinese calendar}}.
 
 It is the third in the sequence of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}, following [[乙丑|Otsuchū]] and preceding [[丁卯|Teibō]]. In the [[Yin-yang and the Five Elements|Yin-Yang and Five Elements theory]], the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=stem|1=Heavenly Stems}} 丙 represents Yang and Fire, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=branch|1=Earthly Branches}} 寅 represents Yang and Wood, forming a [[Five Elements#Mutual Generation|mutual generation (Wood generates Fire)]] relationship.
 
@@ -11,7 +11,7 @@ It is the third in the sequence of the {{ill|Sexagenary cycle|en|Sexagenary cycl
 * English: Yang Fire Tiger (丙寅)
 ** Chinese (Mandarin Pinyin): bǐngyín
 ** Cantonese (Jyutping): bing3 jan4
-**  Japanese:
+** Japanese:
 ***Kunyomi 1: Hinoe-tora
 ***Kunyomi 2: Heika-no-tora
 ***Onyomi 1: Heiin
@@ -88,14 +88,13 @@ The first month (January) of a year ending in 4 or 9 in the Western calendar (wh
 Heiin days in the [[Lower Section rekichū]] are as follows:
 * [[Unlucky Meeting Days]] (for the [[:en:Chinese lunar calendar|lunar]] months of 3 and 9)
 == See Also ==
-*{{prefix|qq=}}
-*{{intitle|qq=}}
+*{{prefix}}
+*{{intitle}}
 
 {{translated page|ja|丙寅|qq=Yang Fire Tiger|version=98658211|comment=Imported full ja history}}
 
-{{wikidata link|Q767248|af|Vuurtier (astrologie)|cdo|Bīng-ìng|de|Feuer-Tiger|fr|Tigre de feu|hak|Piáng-yìm|ja|丙寅|ko|병인|nds|Füür-Tiger|vi|Bính Dần|za|Bingjyinz|zh-min-nan|Péng-în|zh-yue|丙寅|zh|丙寅|zh-min-nan|Pêng-chún|cdo|Bîng-cṳ̄de|nds|Holt-Tigeri|de|Yang Fire Tiger|de|Feuer-Tigreen|en|Fire Tiger|fr|Tigre de feushak|it|Bing-chṳ́id|za|Bingceij|ar|Yang Fire Tiger}}
+{{wikidata link|Q767248|af|Vuurtier (astrologie)|cdo|Bīng-ìng|de|Feuer-Tiger|fr|Tigre de feu|hak|Piáng-yìm|ja|丙寅|ko|병인|nds|Füür-Tiger|vi|Bính Dần|za|Bingjyinz|zh-min-nan|Péng-în|zh-yue|丙寅|zh|丙寅|en|Fire Tiger|it|Bing-chṳ́id|ar|Yang Fire Tiger}}
 [[Category:Sexagenary cycle]]
-[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]

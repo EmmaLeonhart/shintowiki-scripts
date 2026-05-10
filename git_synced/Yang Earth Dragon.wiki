@@ -1,8 +1,8 @@
 <!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
-{{infobox Chinese|l=Yang Earth Dragon|kanji=戊辰|romaji=tsuchinoe tatsu|onyomi=bo shin|p=wùchén|w=wu-ch'en|mi=u⁵⁵ ʈ͡ʂʰən³⁵|y=mou6 san4|j=mou6 san4|ci=mɐu sɐn²|mc=məu ɖin|oc-bs=mə ɖiŋ|qq=}}
-{{Sexagenary cycle|qq=}}
-'''Yang Earth Dragon also known as  ''Earth Dragon''''' is the 5th combination of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}} of the {{ill|Chinese zodiac|en|Chinese zodiac|qid=Q1976204|lt=Chinese zodiac|1=Chinese zodiac}}. 
+{{infobox Chinese|l=Yang Earth Dragon|kanji=戊辰|romaji=tsuchinoe tatsu|onyomi=bo shin|p=wùchén|w=wu-ch'en|mi=u⁵⁵ ʈ͡ʂʰən³⁵|y=mou6 san4|j=mou6 san4|ci=mɐu sɐn²|mc=məu ɖin|oc-bs=mə ɖiŋ}}
+{{Sexagenary cycle}}
+'''Yang Earth Dragon also known as ''Earth Dragon''''' is the 5th combination of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}} of the {{ill|Chinese zodiac|en|Chinese zodiac|qid=Q1976204|lt=Chinese zodiac|1=Chinese zodiac}}. 
 
 It is the fifth of the Chinese zodiac combinations, the previous being Ding-U and the next being Ji-snake. The dragon (龍) is the only fictional animal in the zodiac. In the Yin-Yang Five Elements, Boshi in the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=the ten signs of the zodiac|1=Heavenly Stems}} is Yang {{ill|Soil (disambiguation)|en|Soil (disambiguation)|qid=Q3199973|lt=Earth|1=Soil (disambiguation)}}, {{ill|Dragon (zodiac)|en|Dragon (zodiac)|qid=Q731434|lt=Dragon|1=Dragon (zodiac)}} in the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=the twelve signs of the zodiac|1=Earthly Branches}} is Yang {{ill|Soil (disambiguation)|en|Soil (disambiguation)|qid=Q3199973|lt=Earth|1=Soil (disambiguation)}} {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Hiwa|1=Wuxing (Chinese philosophy)}}, which is {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Hiwa|1=Wuxing (Chinese philosophy)}}.
 
@@ -10,7 +10,7 @@ It is the fifth of the Chinese zodiac combinations, the previous being Ding-U an
 * English: Yang Earth Dragon (戊辰)
 ** Chinese (Mandarin Pinyin): wùchén
 ** Cantonese (Jyutping): mou6 san4
-**  Japanese:
+** Japanese:
 ***Kunyomi 1: Tsuchinoe-tatsu
 ***Kunyomi 2: Bodo-no-tatsu
 ***Onyomi 1: boshin
@@ -88,14 +88,13 @@ The year in which the Western year is divided by 60 and the number 8 is left ove
 ==Months of Yang Earth Dragon==
 
 * {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}
-* {{In title|qq=}}
+* {{In title}}
 
 {{translated page|ja|戊辰|qq=Yang Earth Dragon|version=84123735|comment=Imported full ja history}}
 
-{{wikidata link|Q118701|af|Aarddraak (astrologie)|cdo|Muô-sìng|de|Erde-Drache|en|Earth Dragon (Chinese Zodiac)|fr|Dragon de terre|hak|Vú-sìn|ja|戊辰|ko|무진 (간지)|nds|Eer-Draken|vi|Mậu Thìn|za|Fouhsaenz|zh-min-nan|Bō͘-sîn|zh-yue|戊辰|zh|戊辰|zh-min-nan|Bó͘-chîn|cdo|Tsuch-cṳ̄de|nds|Erd-Drachteen|de|Yang Earth Dragon|en|Earth Dragon|af|Aardedraak (astrologie)|de|Erde-Drachteen|fr|Dragon de terreboishak|it|Tsu-chṳ́id|za|Mouzceij|ar|Yang Earth Dragon}}
+{{wikidata link|Q118701|af|Aarddraak (astrologie)|cdo|Muô-sìng|de|Erde-Drache|en|Earth Dragon (Chinese Zodiac)|fr|Dragon de terre|hak|Vú-sìn|ja|戊辰|ko|무진 (간지)|nds|Eer-Draken|vi|Mậu Thìn|za|Fouhsaenz|zh-min-nan|Bō͘-sîn|zh-yue|戊辰|zh|戊辰|it|Tsu-chṳ́id|ar|Yang Earth Dragon}}
 [[Category:Pages with unreviewed translations]]
 [[Category:Sexagenary cycle]]
-[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]
