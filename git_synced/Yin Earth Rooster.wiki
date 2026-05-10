@@ -11,9 +11,8 @@ It is the 46th of the sixty stem-branch combinations, preceded by {{ill|Yang Ear
 ** Chinese (Mandarin Pinyin): jǐyǒu
 ** Cantonese (Jyutping): gei2 jau5
 ** Japanese:
-***Kunyomi 1: Tsuchinoto-tori
-***Kunyomi 2: Kido-no-tori
-***Onyomi 1: kiki
+*** Kun'yomi: tsuchinoto-tori
+*** On'yomi: kishū
 ** Korean (Revised Romanization, Hangul): giyu (기유)
 ** Vietnamese (Hán-Việt): Kỷ Dậu
 
@@ -79,21 +78,19 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 *[[:en:2989|2989]]
 |}
 === Events ===
-* The {{ill|Keichō|en|Keichō|qid=Q1328185|lt=Keichō era|1=Keichō}} 14th year (1609) - The {{ill|Treaty of Tsuchinoto-tori|ja|己酉約条|12=simple|13=User:Immanuelle/Treaty of Tsuchinoto-tori|1=Japan–Korea Agreement of 1609|comment=changed title based on wikidata|qid=Q11479876}} (Keichō Treaty) was concluded.
+* In {{ill|Keichō|en|Keichō|qid=Q1328185|lt=Keichō era|1=Keichō}} 14 (1609 AD), the {{ill|Treaty of Tsuchinoto-tori|ja|己酉約条|12=simple|13=User:Immanuelle/Treaty of Tsuchinoto-tori|1=Japan–Korea Agreement of 1609|comment=changed title based on wikidata|qid=Q11479876}} (Keichō Treaty) was concluded.
 
 ==Months of Yin Earth Rooster==
 In years where the last digit is 2 or 7 (where the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} is {{ill|Rin|ja|壬|1=Mizunoe (壬)|lt=Mizunoe (壬)|2=ja|3=壬|4=zh|5=壬|12=simple|13=User:Immanuelle/Rin}} or {{ill|Tei|ja|丁|1=Hinoto (丁)|lt=Hinoto (丁)|2=ja|3=丁|4=zh|5=丁|12=simple|13=User:Immanuelle/Tei}}), the eighth month corresponds to the month of Tsuchinoto-tori. However, this may refer to the {{ill|Lunisolar calendar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar calendar}} or the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Bailu (solar term)|en|Bailu (solar term)|qid=Q1191003|lt=Hakuro (solar term)|1=Bailu (solar term)}} to the day before {{ill|Hanlu|en|Hanlu|qid=Q1193124|lt=Kanro|1=Hanlu}}).
 
 ==Days of Yin Earth Rooster==
-=== Selection ===
-=== 2 ===
 == See Also ==
 * {{prefix}}
 * {{intitle}}
 
 {{translated page|ja|qq=Yin Earth Rooster|己酉|version=98658250|comment=Imported full ja history}}
 
-{{wikidata link|Q905305|af|Aardhaan (astrologie)|cdo|Gī-iū|de|Erde-Hahn|hak|Kí-yû|ja|己酉|ko|기유|vi|Kỷ Dậu|za|Geijyoux|zh-min-nan|Kí-iú|zh-yue|己酉|zh|己酉|nds|Feuer-Büffelvi|fr|Coq de terre|en|Fire Ox|it|Ding-chṳ́id|ar|Yin Earth Rooster}}
+{{wikidata link|Q905305|af|Aardhaan (astrologie)|cdo|Gī-iū|de|Erde-Hahn|hak|Kí-yû|ja|己酉|ko|기유|vi|Kỷ Dậu|za|Geijyoux|zh-min-nan|Kí-iú|zh-yue|己酉|zh|己酉|fr|Coq de terre|ar|Yin Earth Rooster}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
