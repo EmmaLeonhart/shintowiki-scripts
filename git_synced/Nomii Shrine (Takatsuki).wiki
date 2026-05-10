@@ -93,6 +93,16 @@ Tessen.png|Nagai Shrine {{ill|Mon (emblem)|en|Mon (emblem)|qid=Q600964|lt=Family
 
 {{Iwanaga Faith}}
 
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines on Wikidata with this name ==
+
+* {{ill|Nomi Shrine (Q11646130)|lt=Nomi Shrine|qid=Q11646130}} — Takatsuki
+* {{ill|Nomi Shrine (Q135190182)|lt=Nomi Shrine|qid=Q135190182}} — Kamo district
+* {{ill|Nomi Shrine (Q135190183)|lt=Nomi Shrine|qid=Q135190183}} — Kamo district
+* {{ill|Nomino Shrine (Q135039467)|lt=Nomino Shrine|qid=Q135039467}} — Nakashima district
+* {{ill|Nomino Shrine (Q135039563)|lt=Nomino Shrine|qid=Q135039563}} — Kamo district
+<!-- END: auto-generated Wikidata shrine list -->
+
 {{translated page|ja|野見神社|version=54014655|comment=Imported full ja history}}
 
 {{wikidata link|Q11646127|ja|野見神社}}

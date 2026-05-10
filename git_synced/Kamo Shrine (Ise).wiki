@@ -95,6 +95,27 @@ From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=Use
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kamo Shrine (Ise)|lt=Kamo Shrine (Tamaki)|ja|鴨神社 (玉城町)|qid=Q17226771|1=Kamo Shrine (Ise)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.461338|136.607554|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181117 DB]
 |}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines on Wikidata with this name ==
+
+* {{ill|Kamo Shrine (Q106852684)|lt=Kamo Shrine|qid=Q106852684}} — Higashimiyoshi
+* {{ill|Kamo Shrine (Q11675602)|lt=Kamo Shrine|qid=Q11675602}} — Settsu Province
+* {{ill|Kamo Shrine (Q134989361)|lt=Kamo Shrine|qid=Q134989361}} — Sakaide
+* {{ill|Kamo Shrine (Q135039165)|lt=Kamo Shrine|qid=Q135039165}} — Izumi Province
+* {{ill|Kamo Shrine (Q135195211)|lt=Kamo Shrine|qid=Q135195211}} — Hikami district
+* {{ill|Kamo Shrine (Ise) (Q11675601)|lt=Kamo Shrine (Ise)|qid=Q11675601}}
+* {{ill|Kamo Shrine (Tamaki) (Q17226771)|lt=Kamo Shrine (Tamaki)|qid=Q17226771}} — Tamaki
+* {{ill|Kamogami Shrine (Q135070272)|lt=Kamogami Shrine|qid=Q135070272}} — Awa Province
+* {{ill|Kamono Shrine (Q135039432)|lt=Kamono Shrine|qid=Q135039432}} — Inabe district
+* {{ill|Kamono Shrine (Q135041197)|lt=Kamono Shrine|qid=Q135041197}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041213)|lt=Kamono Shrine|qid=Q135041213}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041214)|lt=Kamono Shrine|qid=Q135041214}} — Bizen Province
+* {{ill|Kamono Shrine (Q135098878)|lt=Kamono Shrine|qid=Q135098878}} — Takayasu district
+* {{ill|鴨神社 (Q134988777)|lt=鴨神社|qid=Q134988777}} — Sakaide
+* {{ill|鴨神社 (Q137682633)|lt=鴨神社|qid=Q137682633}} — Inabe
+<!-- END: auto-generated Wikidata shrine list -->
+
 {{wikidata link|Q17226771|ja|鴨神社 (玉城町)}}
 [[Category:125 Shrines of Ise]]
 [[Category:Kamo Shrines]]
