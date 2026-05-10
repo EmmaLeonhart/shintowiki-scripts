@@ -11,6 +11,22 @@
     "revid": 3707126,
     "sha": "fbf35f41d46b20bdfd2e37372e47296f292060b7"
   },
+  "Template:Fuken-sha": {
+    "revid": 3724595,
+    "sha": "f860b85590b3c4938c1c461ffd4e2756c18dc292"
+  },
+  "Template:GaiadDate": {
+    "revid": 3724599,
+    "sha": "a4ec70a6051e2d512336318e157b802461181914"
+  },
+  "Template:GaiadToday": {
+    "revid": 3724600,
+    "sha": "c80186099e3fd5d8993ac1727f6bc93a0cc403e5"
+  },
+  "Template:Gō-sha": {
+    "revid": 3724596,
+    "sha": "cc684912819caff5277464c27dc56700b06384d4"
+  },
   "Template:Infobox": {
     "revid": 3723914,
     "sha": "2f91e02c3dbfc838aba1f6d2b8a00670293b9754"
@@ -268,8 +284,8 @@
     "sha": "249bdf9c74ddf8c5c3a64d998af03247fc250d97"
   },
   "Template:Infobox chinese": {
-    "revid": 3707098,
-    "sha": "7236eaa75083220823a3c48125bc79e7dbd029e6"
+    "revid": 3724594,
+    "sha": "69898c99685d5d9a53fe27563b5cdf013cbbe3bf"
   },
   "Template:Infobox clan": {
     "revid": 3707101,
@@ -1066,6 +1082,14 @@
   "Template:Manichaeism": {
     "revid": 3707125,
     "sha": "84488d6927f7dc9dc8b2756c658392770728a4e7"
+  },
+  "Template:Mura-sha": {
+    "revid": 3724597,
+    "sha": "eb636e753caedc4e7ad2745ac5df7359c48d2da2"
+  },
+  "Template:Son-sha": {
+    "revid": 3724598,
+    "sha": "33aa802587653d96e9f05d2791a3a79b82854d90"
   },
   "Template:Translated page": {
     "revid": 3707127,
