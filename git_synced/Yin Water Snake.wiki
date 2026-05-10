@@ -1,16 +1,16 @@
 <!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
 
-{{infobox Chinese|l=Yin Water Snake|kanji=癸巳|romaji=mizunoto mi|onyomi=kishi|p=guǐsì|w=kuei-ssu|mi=kʷeɪ̯²¹ sɨ|y=gwai2 si6|j=gwai2 si6|ci=kʷɐi siː|mc=kjwɨj si|oc-bs=kʷeʔ si|qq=}}
-{{Sexagenary cycle|qq=}}
-'''Yin Water Snake also known as  Mizunotomi''' (癸巳) is one element of the {{ill|Sexagenary Cycle Comprehensive|ja|Sexagenary Cycle Comprehensive|12=simple|13=User:Immanuelle/Sexagenary Cycle Comprehensive|ja_comment=jawiki link invalid}}.
+{{infobox Chinese|l=Yin Water Snake|kanji=癸巳|romaji=mizunoto mi|onyomi=kishi|p=guǐsì|w=kuei-ssu|mi=kʷeɪ̯²¹ sɨ|y=gwai2 si6|j=gwai2 si6|ci=kʷɐi siː|mc=kjwɨj si|oc-bs=kʷeʔ si}}
+{{Sexagenary cycle}}
+'''Yin Water Snake''' (癸巳, ''mizunoto mi''; onyomi ''kishi'') is the 30th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 30th combination in the Sexagenary Cycle Comprehensive, preceded by {{ill|Renchen|ja|1=Yang Water Dragon|2=ja|壬辰|12=simple|13=User:Immanuelle/Renchen|ja_comment=jawiki link invalid}} and followed by {{ill|Kougo|ja|1=Yang Wood Horse|2=ja|甲午|12=simple|13=User:Immanuelle/Kougo|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin-Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory|qq=}}, the {{ill|Gui|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|1=Mizunoto (癸)|12=simple|13=User:Immanuelle/Gui|13=User:Immanuelle/Mizunoto (癸)|qq=}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents yin water, while the {{ill|Snake|ja|巳|1=Snake (Zodiac)|lt=Snake (巳)|2=ja|3=巳|1=Snake (zodiac)|lt=Snake (巳)|12=simple|13=User:Immanuelle/Snake|13=User:Immanuelle/Snake (zodiac)|qq=}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} represents yin fire, and according to the principle of {{ill|Five Elements Theory: Mutual Destruction|ja|五行思想#相剋（そうこく）|lt=Mutual Destruction|lt_ja=相剋|12=simple|13=User:Immanuelle/Five Elements Theory: Mutual Destruction|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (water overcomes fire).
+It is the 30th combination in the Sexagenary Cycle Comprehensive, preceded by {{ill|Renchen|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Immanuelle/Renchen|ja_comment=jawiki link invalid}} and followed by {{ill|Kougo|ja|甲午|1=Yang Wood Horse|2=ja|12=simple|13=User:Immanuelle/Kougo|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin-Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Gui|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|12=simple|13=User:Immanuelle/Gui}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents yin water, while the {{ill|Snake|ja|巳|1=Snake (Zodiac)|lt=Snake (巳)|2=ja|3=巳|12=simple|13=User:Immanuelle/Snake}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} represents yin fire, and according to the principle of {{ill|Five Elements Theory: Mutual Destruction|ja|五行思想#相剋（そうこく）|lt=Mutual Destruction|lt_ja=相剋|12=simple|13=User:Immanuelle/Five Elements Theory: Mutual Destruction|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (water overcomes fire).
 
 ==Pronunciation==
 * English: Yin Water Snake (癸巳)
 ** Chinese (Mandarin Pinyin): guǐsì
 ** Cantonese (Jyutping): gwai2 si6
-**  Japanese:
+** Japanese:
 ***Kunyomi 1: Mizunoto-mi
 ***Kunyomi 2: Kisui-no-mi
 ***Onyomi 1: kisi
@@ -80,7 +80,7 @@ A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common 
 |}
 
 ==Months of Yin Water Snake==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 1 or 6 (when the Heavenly Stem is {{ill|Xin|ja|辛|1=Kanoto (辛)|lt=Kanoto (辛)|2=ja|3=辛|4=zh|5=辛|1=Kanoto (辛)|12=simple|13=User:Immanuelle/Xin|13=User:Immanuelle/Kanoto (辛)|qq=}} or {{ill|Bing|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|1=Hinoe (丙)|12=simple|13=User:Immanuelle/Bing|13=User:Immanuelle/Hinoe (丙)|qq=}}), the month of {{ill|April|en|April|qid=Q118|lt=April|1=April}} is considered the Mizunotomi {{ill|Month|en|Month|qid=Q5151|lt=Month|1=Month}}. However, the month referred to here may also be based on the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar|13=User:Immanuelle/Japanese Lunisolar Calendar|qq=}} or on the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Lixia|en|Lixia|qid=Q1191007|lt=Lixia|1=Lixia}} to the day before {{ill|Mangzhong|en|Mangzhong|qid=Q1147880|lt=Bōshu|1=Mangzhong}}).
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 1 or 6 (when the Heavenly Stem is {{ill|Xin|ja|辛|1=Kanoto (辛)|lt=Kanoto (辛)|2=ja|3=辛|4=zh|5=辛|12=simple|13=User:Immanuelle/Xin}} or {{ill|Bing|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Bing}}), the month of {{ill|April|en|April|qid=Q118|lt=April|1=April}} is considered the Mizunotomi {{ill|Month|en|Month|qid=Q5151|lt=Month|1=Month}}. However, the month referred to here may also be based on the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or on the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Lixia|en|Lixia|qid=Q1191007|lt=Lixia|1=Lixia}} to the day before {{ill|Mangzhong|en|Mangzhong|qid=Q1147880|lt=Bōshu|1=Mangzhong}}).
 
 ==Days of Yin Water Snake==
 The selection of auspicious days for Mizunotomi is as follows.
@@ -88,14 +88,13 @@ The selection of auspicious days for Mizunotomi is as follows.
 The Mizunotomi day is the 10th (final) day of {{ill|Ten Directions|ja|十方暮|12=simple|13=User:Immanuelle/Ten Directions|1=Ten directions|comment=changed title based on wikidata|qid=Q11405067}} and the 1st day of {{ill|Tian Yi Tianshang|ja|天一天上|12=simple|13=User:Immanuelle/Tian Yi Tianshang|ja_comment=天一神|1=Tenitsu-shin|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 
 ==Related Topics==
-* {{prefix|qq=}}
-* {{intitle|qq=}}
+* {{prefix}}
+* {{intitle}}
 
 {{translated page|ja|癸巳|version=84123801|comment=Imported full ja history}}
 
-{{wikidata link|Q905297|af|Waterslang (astrologie)|cdo|Gŭi-sê̤ṳ|de|Wasser-Schlange|en|Water Snake (Chinese zodiac)|fr|Serpent d'eau (astrologie)|hak|Kui-sṳ|ja|癸巳|ko|계사 (간지)|nds|Water-Snaak|vi|Quý Tỵ|za|Gveiqceih|zh-min-nan|Kùi-sū|zh-yue|癸巳|zh|癸巳|zh-min-nan|Teng-chháu|zh-yue|丁酉|cdo|Dĭng-cṳ̄de|nds|Holt-Hahnvi|de|Yin Water Snake|fr|Serpent de eau|af|Vuurhaan (astrologie)|de|Feuer-Hahneen|en|Fire Rooster|fr|Coq de feushak|it|Ding-chṳ́id|ko|정유 (간지)|vi|Đinh Dậu|za|Dingceij|zh|丁酉|ar|Yin Water Snake}}
+{{wikidata link|Q905297|af|Waterslang (astrologie)|cdo|Gŭi-sê̤ṳ|de|Wasser-Schlange|en|Water Snake (Chinese zodiac)|fr|Serpent d'eau (astrologie)|hak|Kui-sṳ|ja|癸巳|ko|계사 (간지)|nds|Water-Snaak|vi|Quý Tỵ|za|Gveiqceih|zh-min-nan|Kùi-sū|zh-yue|癸巳|zh|癸巳|it|Ding-chṳ́id|ar|Yin Water Snake}}
 [[Category:Sexagenary cycle]]
-[[Category:qq]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
 [[Category:translated pages with valid en interwikis]]
