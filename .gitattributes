@@ -1,2 +1,30 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Orchestrator state files: line-based title queues with append-mostly
+# semantics. When concurrent CI runs both extend the same state file
+# and one rebases on top of the other, default merge produces a
+# conflict that commit_state.sh's retry loop currently bails on
+# (git rebase --abort) — losing that run's state. `merge=union`
+# concatenates both sides' new lines, which is the correct semantics
+# for these queues (ops are idempotent against title duplication).
+shinto_miraheze/orchestrators/mainspace_orchestrator.state    merge=union
+shinto_miraheze/orchestrators/category_orchestrator.state     merge=union
+shinto_miraheze/orchestrators/template_orchestrator.state     merge=union
+shinto_miraheze/orchestrators/user_orchestrator.state         merge=union
+shinto_miraheze/orchestrators/project_orchestrator.state      merge=union
+shinto_miraheze/orchestrators/file_orchestrator.state         merge=union
+shinto_miraheze/orchestrators/help_orchestrator.state         merge=union
+shinto_miraheze/orchestrators/geojson_orchestrator.state      merge=union
+shinto_miraheze/orchestrators/module_orchestrator.state       merge=union
+shinto_miraheze/orchestrators/item_orchestrator.state         merge=union
+shinto_miraheze/orchestrators/property_orchestrator.state     merge=union
+shinto_miraheze/orchestrators/talk_orchestrator.state         merge=union
+
+# Excluded from union-merge:
+# - duplicate_qids.state: JSON dict, union would corrupt structure.
+# - talk_orchestrator_cursor.state: single integer (namespace cursor),
+#   union would produce garbage like "0\n1".
+# Leave them with the default merge driver; conflicts there are real
+# and should be resolved (or the retry loop's --abort path is fine
+# since the cursor is monotonic and the JSON collector is idempotent).
