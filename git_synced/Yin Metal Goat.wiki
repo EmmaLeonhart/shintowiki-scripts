@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yin Metal Goat''' (辛未, ''kanoto hitsuji''; onyomi ''shimmu'') is the 8th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 8th combination in the Sexagenary cycle, following {{ill|Gēngwǔ|ja|庚午|1=Yang Metal Horse|12=simple|13=User:Immanuelle/Gēngwǔ}} and preceding {{ill|Rénshēn|ja|壬申|1=Yang Water Monkey|2=ja|12=simple|13=User:Immanuelle/Rénshēn|ja_comment=jawiki link invalid}}. In the {{ill|Yin-Yang and Five Elements theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|12=simple|13=User:Immanuelle/Yin-Yang and Five Elements theory}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} {{ill|Xīn|ja|辛|1=Kanoto (辛)|lt=Kanoto (辛)|2=ja|3=辛|4=zh|5=辛|12=simple|13=User:Immanuelle/Xīn}} represents Yin {{ill|Metal|ja|Metal (金)|1=Metal (wuxing)|lt=Metal (金)|2=es|3=Metal (Wu Xing)|4=it|5=Metallo (elemento)|6=vi|7=Kim (Ngũ hành)|8=tr|9=Metal (klasik element)|10=uk|11=Метал (У-сін)|12=simple|13=User:Immanuelle/Metal|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} {{ill|Wèi|ja|未|1=wèi|lt=Goat (未)|2=ja|3=未|12=simple|13=User:Immanuelle/Wèi|comment=changed title based on wikidata|qid=Q20128396}} represents Yin {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, forming a {{ill|Aioi|en|Aioi|qid=Q4697552|lt=Generating Cycle (Wuxing)|1=Aioi}} (Earth generating Metal).
+It is the 8th of the sixty stem-branch combinations, preceded by {{ill|Yang Metal Horse|ja|庚午|1=Yang Metal Horse}} and followed by {{ill|Yang Water Monkey|ja|壬申|1=Yang Water Monkey}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''辛'' is Yin Metal, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''未'' (Goat) is Yin Earth; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Metal Goat (辛未)
@@ -18,10 +18,10 @@ It is the 8th combination in the Sexagenary cycle, following {{ill|Gēngwǔ|ja|�
 ** Vietnamese (Hán-Việt): Tân Mùi
 
 ==Years of Yin Metal Goat==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} where the remainder when divided by 60 is 11 is a Xīnwèi year.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 11 when divided by 60 is a year of Yin Metal Goat (辛未).
 
 {| class="wikitable"
-|+'''Xīnwèi Years'''
+|+ '''Years of Yin Metal Goat (辛未)'''
 |-
 ![[:en:1st Millennium|1st Millennium]]!![[2nd Millennium]]!![[3rd Millennium]]
 |-

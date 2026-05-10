@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yin Water Snake''' (癸巳, ''mizunoto mi''; onyomi ''kishi'') is the 30th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 30th combination in the Sexagenary Cycle Comprehensive, preceded by {{ill|Renchen|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Immanuelle/Renchen|ja_comment=jawiki link invalid}} and followed by {{ill|Kougo|ja|甲午|1=Yang Wood Horse|2=ja|12=simple|13=User:Immanuelle/Kougo|ja_comment=jawiki link invalid}}. In {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin-Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Gui|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|12=simple|13=User:Immanuelle/Gui}} of the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}} represents yin water, while the {{ill|Snake|ja|巳|1=Snake (Zodiac)|lt=Snake (巳)|2=ja|3=巳|12=simple|13=User:Immanuelle/Snake}} of the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}} represents yin fire, and according to the principle of {{ill|Five Elements Theory: Mutual Destruction|ja|五行思想#相剋（そうこく）|lt=Mutual Destruction|lt_ja=相剋|12=simple|13=User:Immanuelle/Five Elements Theory: Mutual Destruction|1=Wuxing (Chinese philosophy)|comment=changed title based on wikidata|qid=Q218652}} (water overcomes fire).
+It is the 30th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Dragon|ja|壬辰|1=Yang Water Dragon}} and followed by {{ill|Yang Wood Horse|ja|甲午|1=Yang Wood Horse}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''巳'' (Snake) is Yin Fire; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yin Water Snake (癸巳)
@@ -18,9 +18,9 @@ It is the 30th combination in the Sexagenary Cycle Comprehensive, preceded by {{
 ** Vietnamese (Hán-Việt): Quý Tỵ
 
 ==Years of Yin Water Snake==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that yields a remainder of 33 when divided by 60 is considered a Mizunotomi {{ill|Year|en|Year|qid=Q577|lt=year|1=Year}}.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 33 when divided by 60 is a year of Yin Water Snake (癸巳).
 {| class="wikitable"
-|+'''Year of Mizunotomi'''
+|+ '''Years of Yin Water Snake (癸巳)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-

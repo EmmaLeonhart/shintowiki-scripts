@@ -4,7 +4,7 @@
 {{Sexagenary cycle}}
 '''Yang Earth Dog''' (戊戌, ''tsuchinoe inu''; onyomi ''bojutsu'') is the 35th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
 
-It is the 35th combination in the Sexagenary cycle; the preceding combination is {{ill|Dingyou|ja|丁酉|1=Yin Fire Rooster|2=ja|12=simple|13=User:Immanuelle/Dingyou|ja_comment=jawiki link invalid}} and the following combination is {{ill|Jihai|ja|己亥|1=Yin Earth Pig|2=ja|12=simple|13=User:Immanuelle/Jihai|ja_comment=jawiki link invalid}}. In the system of {{ill|Yin-Yang and Wuxing Theory|ja|陰陽五行思想|1=Yin-Yang and Wuxing Theory|lt=Yin-Yang Five Elements|lt_ja=陰陽五行|12=simple|13=User:Immanuelle/Yin-Yang and Wuxing Theory}}, the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Ten Heavenly Stems|1=Heavenly Stems}}’ {{ill|Wu|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Wu}} represents yang {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, while the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Twelve Earthly Branches|1=Earthly Branches}}’ {{ill|Dog (zodiac)|en|Dog (zodiac)|qid=Q755126|lt=Dog (戌)|1=Dog (zodiac)}} also represents yang {{ill|Earth|ja|Earth (土)|zh|Earth (土)|comment=doing this to prevent wrong interwiki linking by bot|1=Earth (wuxing)|lt=Earth (土)|2=ru|3=Земля (у-син)|4=mn|5=Шороо (махбод)|6=uk|7=Земля (У-сін)|8=als|9=Ärde in dr chinesische Fümf-Elemänt-Leer|10=bcl|11=Daga (wuxing)|12=vi|13=Thổ (Ngũ hành)|ja_comment=jawiki link invalid}}, and together they exhibit a relationship of {{ill|Biwa (Mutual Harmony)|ja|五行思想#比和（ひわ）|1=Wuxing (Chinese philosophy)|2=ja|3=五行思想#比和（ひわ）|lt=Harmonious Relationship (Five Elements)|qq=Biwa|lt_ja=比和|12=simple|13=User:Immanuelle/Biwa (Mutual Harmony)|comment=changed title based on wikidata|qid=Q218652}}.
+It is the 35th of the sixty stem-branch combinations, preceded by {{ill|Yin Fire Rooster|ja|丁酉|1=Yin Fire Rooster}} and followed by {{ill|Yin Earth Pig|ja|己亥|1=Yin Earth Pig}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''戊'' is Yang Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''戌'' (Dog) is Yang Earth; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
 
 ==Pronunciation==
 * English: Yang Earth Dog (戊戌)
@@ -18,9 +18,9 @@ It is the 35th combination in the Sexagenary cycle; the preceding combination is
 ** Vietnamese (Hán-Việt): Mậu Tuất
 
 ==Years of Yang Earth Dog==
-A year in the {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} that leaves a remainder of 38 when divided by 60 is a {{ill|Year|en|Year|qid=Q577|lt=Year|1=Year}} of Wuxu.
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 38 when divided by 60 is a year of Yang Earth Dog (戊戌).
 {| class="wikitable"
-|+ '''Years of Wuxu'''
+|+ '''Years of Yang Earth Dog (戊戌)'''
 |-
 ! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
 |-
