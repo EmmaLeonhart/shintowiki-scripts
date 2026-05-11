@@ -14,7 +14,7 @@ __TOC__
 
 == Overview ==
 === Name ===
-In the ''{{ill|Nihon Shoki|ja|日本書紀}}'' it is '''Tsuge no Kuni no Miyatsuko''' (闘鶏国造); also written '''Tsuge no Kuni no Miyatsuko''' (都祁国造) or '''Tsuge no Kuni no Miyatsuko''' (都下国造).
+In the ''{{ill|Nihon Shoki|ja|日本書紀}}'' it is '''Tsuge no Kuni no Miyatsuko''' ({{lang|ja|闘鶏国造}}); also written '''Tsuge no Kuni no Miyatsuko''' ({{lang|ja|都祁国造}}) or '''Tsuge no Kuni no Miyatsuko''' ({{lang|ja|都下国造}}).
 
 === Ancestry ===
 Unknown.
@@ -60,5 +60,4 @@ Possibly '''{{ill|Tsuge-Mikumari Shrine|ja|都祁水分神社}}'''. Enshrined de
 [[Category:奈良県の歴史]]
 [[Category:多氏|#つけのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 {{wikidata link||ja|闘鶏国造}}
