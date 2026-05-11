@@ -8,25 +8,24 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 Go through the notes of the [[Category:git synced pages]] — each
 git_synced/ page has a leading `<!--...-->` instruction comment, and
-those instructions must actually be executed, not just present. The
-60 Sexagenary cycle pages have been fully standardized (commit 208006f
-on 2026-05-10). The ~165 Shrine disambiguation pages got their first
-SPARQL pass on 2026-05-10 (commit 0a67a90): `generate_shrine_disambig_lists.py`
-extracts kanji from each page and writes an auto-managed
-`== Shrines on Wikidata with this name ==` section, idempotent on
-re-run. 146/165 pages now carry generated bullet lists. Follow-ups
-on the remaining 19:
-  * 4 pages skipped — no kanji extracted (Kobe (disambiguation),
-    Kōtai Shrine (disambiguation), Meiji, Nitta Shrine). These have
-    unusual lede formats; extract by hand or extend the script.
-  * 15 pages skipped — kanji extracted but Wikidata returned 0
-    exact-label matches. The script's SPARQL uses exact `rdfs:label`
-    match — adding `skos:altLabel` and disambiguator-suffixed prefix
-    matching would catch more (was tried, timed out at >60s for the
-    full subclass tree; needs query optimization).
-  * The script could also be wired into a cron so new Wikidata
-    additions automatically appear on the disambig pages over time —
-    currently it's a one-shot.
+those instructions must actually be executed, not just present.
+* **60 Sexagenary cycle pages**: fully standardized (commit 208006f
+  on 2026-05-10).
+* **~165 Shrine disambig pages**: migrated to the dual-sync model on
+  2026-05-10 (commit c73d144). Pages now live in BOTH miraheze_unique/
+  and fandom_unique/ instead of git_synced/. `generate_shrine_disambig_lists.py`
+  runs as a step in the Independent Pages Sync workflow on every daily
+  cleanup-loop cycle — pulls the Japanese kanji name(s) from each
+  page, SPARQLs Wikidata for shrines with that label, writes the
+  `== Shrines with this name ==` block to BOTH miraheze_unique/ and
+  fandom_unique/, and the per-wiki syncs push to both wikis in the
+  same cycle. Follow-ups:
+  * 4 pages need manual kanji extraction (unusual lede formats:
+    Kobe (disambiguation), Kōtai Shrine (disambiguation), Meiji,
+    Nitta Shrine)
+  * 15 pages had 0 exact-label SPARQL matches — extending the query
+    with UNION over skos:altLabel + prefix matching would catch more
+    but the broader query timed out at >60s; needs optimization
 
 Translate all of the [[Category:Need translation]] —
 `sync_need_translation.py` is a bidirectional file ↔ wiki mirror only;
