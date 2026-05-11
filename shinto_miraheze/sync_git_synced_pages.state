@@ -1,423 +1,35 @@
 {
-  "Daijingū": {
-    "revid": 3728610,
-    "sha": "2cb79be56bc2cb22f12b0392506a69064355a6ef"
-  },
-  "Dairokuten Shrine": {
-    "revid": 3728611,
-    "sha": "40eb5f0f0f8e5622f5b27bd0f128026f3983ef7f"
-  },
-  "Daishōgun Shrine": {
-    "revid": 3728613,
-    "sha": "e841301252ad6511c92eed0d85291e028f122690"
-  },
-  "Ebisu Shrine": {
-    "revid": 3723356,
-    "sha": "ce0923d95f7a4ee4543f5bbb8cf0bbc83faf9476"
-  },
-  "Fuji Sengen Shrine": {
-    "revid": 3728615,
-    "sha": "8363b97c8f04dfdeae42f4a6abdc3c76a8d085fe"
-  },
-  "Fujinomori Shrine": {
-    "revid": 3728617,
-    "sha": "876a4f76e088afacf1baa959612afb751524475d"
-  },
-  "Furukusu Shrine": {
-    "revid": 3728619,
-    "sha": "4b8f357af2f3aa8794fec83902afc490bf1b1a48"
-  },
-  "Fuse Shrine": {
-    "revid": 3728621,
-    "sha": "8dcf34604676c18cbe1a1039749a337ca60c5ec0"
-  },
-  "Gojō Tenjin Shrine": {
-    "revid": 3728623,
-    "sha": "4492f7fe8bd0653edf90673a1171a5e3d3a2b748"
-  },
-  "Goryo Shrine": {
-    "revid": 3723362,
-    "sha": "9062e825b772e2da0782f63e34e1b4000fe7056b"
-  },
-  "Hachiman Daijingū": {
-    "revid": 3728625,
-    "sha": "89087815737efe052e188b52b0c8adbc4bc88101"
-  },
-  "Hachioji Shrine": {
-    "revid": 3723364,
-    "sha": "0804e9eea5fc1f6cdce1905ec5f168085ee65284"
-  },
-  "Haguro Shrine": {
-    "revid": 3728627,
-    "sha": "5cba53401a07dcfc21d6e468cb64a1592296648c"
-  },
-  "Hashirimizu Shrine": {
-    "revid": 3728629,
-    "sha": "663853f5b759c24de5cddeba0c746298f0f9578b"
-  },
-  "Hayabusa Shrine": {
-    "revid": 3728631,
-    "sha": "c426ec9670a5bc612637427058cb0522296ad879"
-  },
-  "Hayakawa Shrine": {
-    "revid": 3728633,
-    "sha": "71fe598db2a21a055b6690e25fff42738a4fa241"
-  },
-  "Hayashi Shrine": {
-    "revid": 3728635,
-    "sha": "8143a18ff7c94e3d2fdc8b23f3dd44ec11b8982f"
-  },
-  "Hijiri Shrine": {
-    "revid": 3723370,
-    "sha": "4a54d7394f53f8f71cb294ef1f4239333a397ba1"
-  },
-  "Hikawa Shrine": {
-    "revid": 3728637,
-    "sha": "95299838078b5b4033c953aab9d47eca28dd4815"
-  },
-  "Himuro Shrines": {
-    "revid": 3728639,
-    "sha": "18edc3f8ee47685a18b7d7ca249700446ce55e97"
-  },
-  "Hoshimiya Shrine": {
-    "revid": 3723373,
-    "sha": "831ed06fdcbb540410c28d9c2908b767d88c8fa0"
-  },
-  "Hozumi Shrine": {
-    "revid": 3728641,
-    "sha": "d385e746c9e7e2da39e39880c4d06f5265be14a9"
-  },
-  "Hyōzu Shrine (disambiguation)": {
-    "revid": 3728643,
-    "sha": "5e43ad05f7f4b187d3e66fd4d93e0d1d7cd75169"
-  },
-  "Hōju Inari Shrine": {
-    "revid": 3728645,
-    "sha": "ed0f1c4c7648dfdf3a440aeb3428470843d32cf3"
-  },
-  "Ichikishima Shrines": {
-    "revid": 3723377,
-    "sha": "ae930e7a37165440094f8c4948644c49bce03ddf"
-  },
-  "Inari Shrine (disambiguation)": {
-    "revid": 3728647,
-    "sha": "bef066191a2dc00c337b57d56a4689088324511b"
-  },
-  "Ishii Shrine": {
-    "revid": 3728649,
-    "sha": "a4541e6ff5582ee7ab37c7a4066207ff1067b510"
-  },
-  "Isobe Shrine (disambiguation)": {
-    "revid": 3728651,
-    "sha": "60c1cc3e5b29c8ea6f436cdf589cc245db8a0e58"
-  },
-  "Itsukushima Shrines (disambiguation)": {
-    "revid": 3723381,
-    "sha": "f7ee235443173dced62000904ea027eefde4f91a"
-  },
-  "Iwatate Shrine (Katano City)": {
-    "revid": 3728653,
-    "sha": "cdc6a13337d8a975069bc63c5d5c3544e17e5839"
-  },
-  "Izumi Shrine": {
-    "revid": 3728655,
-    "sha": "a3f589429c3000a42b67bb99d9c5543e51d561ec"
-  },
-  "Izumo Iwai Shrine (disambiguation)": {
-    "revid": 3728657,
-    "sha": "23f2d390812e3266aff5bad6c4e268552dcc040f"
-  },
-  "Izumo Shrine (disambiguation)": {
-    "revid": 3728659,
-    "sha": "7f5e034e7e29ab769aa820323ad75ee9bf5b2ef4"
-  },
-  "Izumo no Iwai Shrine (disambiguation)": {
-    "revid": 3728661,
-    "sha": "2f965ddfcef831f48d7c02984700d6f3f2216caa"
-  },
-  "Jūnisho Shrine": {
-    "revid": 3728663,
-    "sha": "5de44e2554157b0221a7b2cb519fb7e3a486c6f4"
-  },
-  "Kagami-no-Miya Shrine": {
-    "revid": 3728665,
-    "sha": "81573c2a9b8cdfab071f8c327790c8df8893229d"
-  },
-  "Kagoshima Shrine (disambiguation)": {
-    "revid": 3728667,
-    "sha": "b3e1405c7fc0e7c3fa97ca8f6f743b33806064b5"
-  },
-  "Kamo Shrine (Ise)": {
-    "revid": 3723391,
-    "sha": "2f286df5537fed93a977569cae596c51d7cd4614"
-  },
-  "Kamo Shrine (disambiguation)": {
-    "revid": 3728669,
-    "sha": "07b9287d4eb0a857e9fca3312602c8311f7b4191"
-  },
-  "Kamō Hachiman Shrine": {
-    "revid": 3728671,
-    "sha": "b83fa1388a916d0fdd3bd2f9ef13c03f09e77a0d"
-  },
-  "Kanasana Shrine (disambiguation)": {
-    "revid": 3728673,
-    "sha": "36352efe62daf31fe9d34df4441e6e542715ddf7"
-  },
-  "Kashima Shrines": {
-    "revid": 3728675,
-    "sha": "844aa228f1f6790cd9757c7bcf09a5e02ab52442"
-  },
-  "Katayama Shrine": {
-    "revid": 3728677,
-    "sha": "49f7b866c24982c9376aec21ba88f71dd00d8bf1"
-  },
-  "Katori Shrines": {
-    "revid": 3728679,
-    "sha": "42c95fff549a8b66a9b66fde72220d9f46e17e54"
-  },
-  "Kawara Shrine": {
-    "revid": 3728681,
-    "sha": "d1ca5fe25e3b8766e80c0271b2ab980d54797285"
-  },
-  "Kawashimo Shrine": {
-    "revid": 3728683,
-    "sha": "89c3e8d9535ae17f97f76dc05ee6fe9c1022e3ce"
-  },
-  "Kawasukune Shrine": {
-    "revid": 3728685,
-    "sha": "936da1021001e2f170e3c575452aae4305fada16"
-  },
-  "Kibitsu Shrine": {
-    "revid": 3728687,
-    "sha": "9407b354d05edafa665f82466a186ab095937123"
-  },
-  "Kikuchi Shrine (disambiguation)": {
-    "revid": 3728689,
-    "sha": "b732df22f39442023d07e645e434400da41e1c70"
-  },
-  "Kitano Tenjinsha (Tokorozawa)": {
-    "revid": 3723402,
-    "sha": "b6cdad959f17efa25ba89ec698dc3d4ceb6a9eed"
-  },
-  "Kiyotaki Shrine": {
-    "revid": 3728691,
-    "sha": "401a514b4a7e31e05dc917fa7f39bae6b7976e89"
-  },
-  "Kobe (disambiguation)": {
-    "revid": 3728693,
-    "sha": "1904abca4d70392005af4482c5cdded378628b8e"
-  },
-  "Koganeyama Shrine (disambiguation)": {
-    "revid": 3728695,
-    "sha": "e7a60e07c1977ac6de570c9fbbd5447db56ceb99"
-  },
-  "Kokufu Shrine": {
-    "revid": 3728697,
-    "sha": "47163a2d4b6bb1d5e129e67a7ccb2cd315ee7c0d"
-  },
-  "Komori Shrine": {
-    "revid": 3728699,
-    "sha": "b1ca6f23adcafaaeabf724917ef721e8b7f54eee"
-  },
-  "Kosuge Shrine": {
-    "revid": 3728701,
-    "sha": "4120174197d7e84fc7898ee1f35b3448d51bd298"
-  },
-  "Kotoshironushi Shrine": {
-    "revid": 3728703,
-    "sha": "7bd17055e20eb78b924d28157e087550df4b6d9b"
-  },
   "Koyasu Shrine": {
-    "revid": 3723410,
-    "sha": "b63727d9817b91e27bf80debb51efe18c97a2b1c"
-  },
-  "Kurihara Shrine": {
-    "revid": 3728705,
-    "sha": "1ea006efe059fa5c02ea5403c3f80405e1c47a6f"
+    "revid": 3729752,
+    "sha": "62e188d2f460f054150f2d41b5dc85d6f00c841d"
   },
   "Kushida Shrine": {
-    "revid": 3723412,
-    "sha": "1ad240f3fb7c80005936ff15d3bced036fbfa12a"
-  },
-  "Kōjin Shrine": {
-    "revid": 3728707,
-    "sha": "e6a582750c5b3eac643b751074632462de842eb9"
-  },
-  "Kōtai Jingū (disambiguation)": {
-    "revid": 3728709,
-    "sha": "7dd95241cb4ca848b062c72c6d0397e237718ee5"
-  },
-  "Kōtai Shrine (disambiguation)": {
-    "revid": 3728711,
-    "sha": "fcd10cc9def642908479c772dda251e4fd09d04c"
+    "revid": 3729753,
+    "sha": "7a053d75a972f404d140d3b0e956e558cfdaa1f5"
   },
   "Main Page": {
     "revid": 3685297,
     "sha": "bef90367a4767f874e6048e3f998e9367d29760e"
   },
-  "Matsuyama Shrine": {
-    "revid": 3728712,
-    "sha": "b9210b353ed0b9c75dfdcde91200549ca7cd4b3e"
-  },
-  "Meiji": {
-    "revid": 3728713,
-    "sha": "924837a2b8df13d0d13f5703589453d6c7371ee0"
-  },
-  "Mifune Shrine": {
-    "revid": 3728714,
-    "sha": "b8a468d11776662d7ed24c52e57a520c13ea93e0"
-  },
-  "Mikumano Shrine": {
-    "revid": 3728715,
-    "sha": "9b27743eb0cf1e5dbc2d522f29214d44d97f6808"
-  },
-  "Miwa Shrine (disambiguation)": {
-    "revid": 3728716,
-    "sha": "6ec31b3d866bfdd015b1c1dc3fe6fc2f9d1095ea"
-  },
-  "Miyake Shrine": {
-    "revid": 3728717,
-    "sha": "3a0789403b0e9045091fd0c2ff5a79f5f459e384"
-  },
-  "Miyazaki Shrine": {
-    "revid": 3728718,
-    "sha": "32b9a653b21df3a9dfd74c5c38f078b7833d5cbb"
-  },
-  "Mononobe Shrine (disambiguation)": {
-    "revid": 3728719,
-    "sha": "501cfc132d49af3b3e66ca659b9ea642625b82c0"
-  },
-  "Mountain Shrine": {
-    "revid": 3728720,
-    "sha": "3796836ec370e3b7538a616fa3cfe06fca1cfb8e"
-  },
-  "Musubi Shrine": {
-    "revid": 3728721,
-    "sha": "af9039d1fafc4f889447b973aa1c98dd9a69d1e2"
-  },
-  "Myōken Shrine": {
-    "revid": 3728722,
-    "sha": "54c19c760dfa74522b6e9727cedc3738acd3ce74"
-  },
-  "Nagahama Shrine (disambiguation)": {
-    "revid": 3728723,
-    "sha": "2735af123ec3d0cef27e1547792562ffc110fc28"
-  },
-  "Nagahatabe Shrine": {
-    "revid": 3728724,
-    "sha": "246ea206eaa81428b1fe0ca5add4651544412338"
-  },
-  "Nakatsu Daijingū": {
-    "revid": 3728725,
-    "sha": "81addadfb0cdd8fbba6717b739cbb4f7a3c8ec00"
-  },
-  "Nakatsu Shrine": {
-    "revid": 3728726,
-    "sha": "5258fcc2fc30ee1d7ae647597cb24ff14da20dfa"
-  },
-  "Nitta Shrine": {
-    "revid": 3728727,
-    "sha": "876e945fa05129da1b80882fd0c58bd9db1813ca"
-  },
-  "Nomi no Sukune Shrine": {
-    "revid": 3728728,
-    "sha": "43d262b41ddd2b23a5ff772314eca9ef805cdaf7"
-  },
-  "Nomii Shrine (Takatsuki)": {
-    "revid": 3728729,
-    "sha": "7ff6570941396930c42adfa2ed21c061eea5dde3"
-  },
-  "Ogami Shrine (disambiguation)": {
-    "revid": 3728730,
-    "sha": "ccdaf1cca1a313ca8f79cdd1009d0cb54025eaf8"
-  },
-  "Oi Shrine (disambiguation)": {
-    "revid": 3728731,
-    "sha": "f8a8d10b8209346ecd2be1578014f61ecae1f383"
-  },
-  "Okanoue Shrine (disambiguation)": {
-    "revid": 3728732,
-    "sha": "4667127bc89d997ef9fa5085ce60ab173fde7a3b"
-  },
-  "Omuro Sengen Shrine": {
-    "revid": 3728733,
-    "sha": "bb55a82edd3ccd92d56870fb305b21177f99bcb9"
-  },
-  "Omushi Shrine": {
-    "revid": 3728734,
-    "sha": "4c25988508fb9166500365cf7a81eb7332144ac4"
-  },
-  "Ono Shrine (Ichinomiya)": {
-    "revid": 3728735,
-    "sha": "30952687caa5d80c6099b0892231d1da2f689434"
-  },
-  "Otomiya Shrine": {
-    "revid": 3728736,
-    "sha": "0049163bd53405f86b3e4473d5b5cd119d082606"
-  },
-  "Oyama Shrine": {
-    "revid": 3728737,
-    "sha": "0416f6c632967efc467ce04beaa9160375b2ab47"
-  },
-  "Raiden Shrine": {
-    "revid": 3728738,
-    "sha": "e728767554d1ae371dded25439918cb607b1330a"
-  },
-  "Raijin Shrine": {
-    "revid": 3728739,
-    "sha": "9795f43110b29b5fefcddc55a611468b3b74baf9"
-  },
-  "Railway Shrine": {
-    "revid": 3728740,
-    "sha": "f248f7e5b1ae5891bfa5a459472a08827d92f205"
-  },
-  "Reiyosaki Shrine": {
-    "revid": 3728741,
-    "sha": "7136ae1bdcb047438d72a3f149faeca7617275dd"
-  },
-  "Roku Shrine": {
-    "revid": 3728742,
-    "sha": "0b3aed1c7fa95cd938a9982233cf49b02c41af4d"
-  },
-  "Rokusho Shrines": {
-    "revid": 3728743,
-    "sha": "3f437f915322629601d506c91a0b3d9ffe1331d2"
-  },
-  "Saku Shrine": {
-    "revid": 3728744,
-    "sha": "f5a9789dccc2743d3f7ca1e8d4e3a75981cac166"
-  },
-  "Sakurai Koyasu Shrine": {
-    "revid": 3728745,
-    "sha": "2810a90918ef7bdf39145bcfd1d2bb827c1aad27"
-  },
-  "Sannō Shrine (disambiguation)": {
-    "revid": 3728746,
-    "sha": "6f29fe04178922a5a1719a71edd8ef78b24cbd11"
-  },
-  "Sarutahiko Shrine (disambiguation)": {
-    "revid": 3728747,
-    "sha": "e5c2584eb76086507491db8167470a849acc1cea"
-  },
   "Sashino Shrine": {
-    "revid": 3723452,
-    "sha": "3b8827b4317129c1c12a1264c3d4b37b64a718b4"
+    "revid": 3729754,
+    "sha": "60546f79169c2efa028eff6ee63366cb668f1bf2"
   },
   "Seibo Shrine": {
-    "revid": 3723453,
-    "sha": "9783217e28bf146fc173193aa160a68fd12d849f"
+    "revid": 3729755,
+    "sha": "0d9cd2eba6c2b086cd235c47412131590a09788e"
   },
   "Shikobuchi Shrine": {
-    "revid": 3723454,
-    "sha": "a0fa5fb003dd2b371dddae8c645f04a134968418"
+    "revid": 3729756,
+    "sha": "9ab2297cb830c672f89a47f0d04da48a30981547"
   },
   "Shinra Shrine": {
-    "revid": 3723455,
-    "sha": "c1bcd01b533fc084d041a254b011ca7e127af47c"
+    "revid": 3729757,
+    "sha": "b75df34e9fec464133e82dee7bca45953a468e89"
   },
   "Shiratori Shrine (disambiguation)": {
-    "revid": 3723952,
-    "sha": "4d1c03c6f9b3f86e56dc011caebab8c77547c6e2"
+    "revid": 3729758,
+    "sha": "981c3e09ef713cef3e2cfc330096de3512b9db0c"
   },
   "Shirayama-hime Shrine": {
     "revid": 3724066,
@@ -444,196 +56,64 @@
     "sha": "7b885eba49d5e09c0feff63abb8f0eeae27c1516"
   },
   "Sumiyoshi Shrine": {
-    "revid": 3723463,
-    "sha": "019a450b6c7a90f45af7c64e347003eb7fb51ccc"
+    "revid": 3729759,
+    "sha": "3274ebd9d9e625dcbeeeb19ecb7b0717d5b16baf"
   },
   "Susanoo Shrine": {
-    "revid": 3723464,
-    "sha": "29967911a4e6db9c35e8dfbffefe20703c125e81"
+    "revid": 3729760,
+    "sha": "95da98aa8fc6bab1d8a50b40813375e966c7e2a5"
   },
   "Susukigawa Shrine": {
-    "revid": 3723465,
-    "sha": "7e1e9931f2a21959d79304d9a4de9a1cbad0fb04"
+    "revid": 3729761,
+    "sha": "2673cddc2fc5c4fb0f7d57770497159f26dbb5fe"
   },
   "Tachibana Shrine (disambiguation)": {
-    "revid": 3723466,
-    "sha": "17266e8736ad7534b5c6f1ddbe09f6e1eacbe4a8"
+    "revid": 3729762,
+    "sha": "78711995119a2f1d3c54d76cbb0763ef642f715e"
   },
   "Tajikarao Shrine": {
-    "revid": 3723467,
-    "sha": "88377ddf3bbd02a1df0ceaaf73067f5bcb35c010"
+    "revid": 3729763,
+    "sha": "c1928b22efdd4ca429c57b93b346dded8d5ecaaf"
   },
   "Takada Kumano Shrine": {
-    "revid": 3723468,
-    "sha": "75e784f884df93cef2e5df5061acbfb1c1426dda"
+    "revid": 3729764,
+    "sha": "eade125e7522b252a19ae6c23b9faacd750d04ea"
   },
   "Takahama Shrine": {
-    "revid": 3723469,
-    "sha": "02745481608fad329b20757e2db2b1e148e2be0d"
+    "revid": 3729765,
+    "sha": "c5ff4974e7b16cb0cb0d4a5e114cb3e14c0043b9"
   },
   "Takamuku Shrine": {
-    "revid": 3723470,
-    "sha": "3c230e773f7cc49bd4205775a6865aae0e0ae5c6"
+    "revid": 3729766,
+    "sha": "ef44b62bc8bbbd90f13cd972afd697c5f2a63129"
   },
   "Takasago Shrine": {
-    "revid": 3723471,
-    "sha": "1e8ee87471aee78512f0d0a955c89c9225dc71ab"
+    "revid": 3729767,
+    "sha": "7006e728f864222536c4833c4cbac7eadd3d5354"
   },
   "Takata Shrine": {
-    "revid": 3723472,
-    "sha": "46e5197b7b2680a8f9f48165554a362c78a031be"
+    "revid": 3729768,
+    "sha": "b7769bebfbb106924c4bf1ee153613e39e458b33"
   },
   "Takeminakata & Minomikotohikokamiwake Shrine": {
-    "revid": 3723473,
-    "sha": "ea585a8bb23c7f3f5366af6f0ee919e9d86f52b8"
-  },
-  "Takio Shrine": {
-    "revid": 3728748,
-    "sha": "d9c08d455ed3862aaebf4bb7967e3722cc9697c3"
-  },
-  "Tate Shrine": {
-    "revid": 3728749,
-    "sha": "60cf988a0f0d535c1bf61231049ef92db294bd51"
-  },
-  "Tenjin Jinja": {
-    "revid": 3728750,
-    "sha": "f73ddce12c2e148228bbee68ab2b9f065bf1f464"
-  },
-  "Tenjinsha": {
-    "revid": 3728751,
-    "sha": "3c5c4188466f2065d7c29767f77f00ecd3bbaf80"
-  },
-  "Tenman Tenjingu": {
-    "revid": 3728752,
-    "sha": "c6ac4bdd7189d7d247ca2b0beb2ed03ee12cb61d"
-  },
-  "Tenno Shrine": {
-    "revid": 3728753,
-    "sha": "ff1657ba7b11beab789742118dc2b4cc10def5f6"
-  },
-  "Tenno Shrine (Otsu)": {
-    "revid": 3728754,
-    "sha": "46e358f80ba2fe1c53946d9bd9fe63b5fe140500"
-  },
-  "Tenso Shrine": {
-    "revid": 3728755,
-    "sha": "6b6227cd9cfe1f8eeac14844b5d317bb2a047bc2"
-  },
-  "Tenzan Shrine": {
-    "revid": 3728756,
-    "sha": "2309abc0068b72d067dec9cb697600c4e560c017"
-  },
-  "Todoroki Shrine": {
-    "revid": 3728757,
-    "sha": "7df253d844fe79e5f6323c1213aac6cd46b5b621"
-  },
-  "Toyota Shrine": {
-    "revid": 3728758,
-    "sha": "f4deb90a20693ce4b1c3c9a23d2a5b5f3e36a8e0"
-  },
-  "Toyouke Shrine": {
-    "revid": 3728759,
-    "sha": "a6e12682a7754aec3250505077637b1782f8f5a4"
-  },
-  "Tsubaki Shrine (disambiguation)": {
-    "revid": 3723486,
-    "sha": "39d971ff5339208153ddc16207f3cc0f45ba5aff"
-  },
-  "Tsuge Yamaguchi Shrine": {
-    "revid": 3723487,
-    "sha": "901423c178728551fe37804c79759255949fff36"
-  },
-  "Tsurugi Shrine (disambiguation)": {
-    "revid": 3723488,
-    "sha": "aa00c95ece3620f75353327ba7a629ffbc75ae93"
-  },
-  "Tsurumi Shrine": {
-    "revid": 3723489,
-    "sha": "bd8594f60f68dd01efb647ad6b7adb38aab2108f"
-  },
-  "Tōgō Shrine (disambiguation)": {
-    "revid": 3723490,
-    "sha": "f1ded8d51083f053c2002fe3b63acdbe92aeba48"
-  },
-  "Tōsho Shrine": {
-    "revid": 3723491,
-    "sha": "2245d31263eba378f39f95139a530e1be086c52e"
-  },
-  "Ubusuna Shrine": {
-    "revid": 3723492,
-    "sha": "6212101b430970bf6ec0b48366aeb6c3290c828c"
-  },
-  "Uga Shrine": {
-    "revid": 3723493,
-    "sha": "c92c83ea83478bd13e2cc20064281476f885369d"
-  },
-  "Utsunomiya Shrine": {
-    "revid": 3723494,
-    "sha": "62cf2608a46d2cd65a81ccbe31680c3e6c28e8b0"
-  },
-  "Wakamiya Hachiman Jinja": {
-    "revid": 3723495,
-    "sha": "9c70d63c1203a84cd42c5cf01ed67da688010571"
-  },
-  "Wakamiya Inari Shrine (disambiguation)": {
-    "revid": 3723496,
-    "sha": "e4a1d033e86e4c77bd3b16d6cd1437395c1f8d6b"
-  },
-  "Wakamiya Sha (disambiguation)": {
-    "revid": 3723497,
-    "sha": "8519633df028144426e2beb6e31f02b5169ff0b8"
-  },
-  "Wakamiya Shrine": {
-    "revid": 3723498,
-    "sha": "df9d31cc7125020f8997edbac346fcd73171efd1"
-  },
-  "Wanishita Shrine": {
-    "revid": 3723499,
-    "sha": "57b30e691b6f3fd2c508b12e02282f56ae91b9ce"
-  },
-  "Washi Shrine (disambiguation)": {
-    "revid": 3723500,
-    "sha": "95a4e7e186c5f4e12d3213a9a086e04c121495b7"
-  },
-  "Washi-no-Miya Shrine (disambiguation)": {
-    "revid": 3723501,
-    "sha": "10245236825aed1eb5ddd2004402bc30c65b3f69"
-  },
-  "Watatsumi Shrine (disambiguation)": {
-    "revid": 3723502,
-    "sha": "dcce020b6030117b9291d4bd306c1f1bc7a2e20b"
-  },
-  "Yamada Shrine": {
-    "revid": 3723503,
-    "sha": "48bda3d057e9191bffc2d5c82d1603cfe1f43f05"
-  },
-  "Yamamiya Shrine": {
-    "revid": 3723504,
-    "sha": "92ca4255d7572b49f26c68d26d1a8e62f781f380"
-  },
-  "Yamamoto Hachimangū": {
-    "revid": 3723505,
-    "sha": "07fcf4dc19038759a456b4498715ea6d51137bd6"
-  },
-  "Yamamoto Hachimangū (Fujinomiya City)": {
-    "revid": 3723506,
-    "sha": "c3f3e6718ae824f89bc648f178e714c3e3d9e6e7"
+    "revid": 3729769,
+    "sha": "b1d45fc85e9f8e1b0196772bac4bacbc470b773b"
   },
   "Yang Earth Dog": {
     "revid": 3725272,
     "sha": "f0513467e54ede09ff057b9693e13a51ee893d28"
   },
   "Yang Earth Dragon": {
-    "revid": 3723841,
-    "sha": "6583e628796068c2300c791bbbe432c933c6a848"
+    "revid": 3729737,
+    "sha": "75e2f0d8ab695e9ba464e0c9caf34f79b5c87bb1"
   },
   "Yang Earth Horse": {
     "revid": 3725274,
     "sha": "2932ef29e9a40429cf3389809f332d14780b30d4"
   },
   "Yang Earth Monkey": {
-    "revid": 3723849,
-    "sha": "c86c5d4b03cc90d81c77af8993fee52b4c554df5"
+    "revid": 3729740,
+    "sha": "11bd0a566e6b2806a7b04e5cd77745a4258cdaa0"
   },
   "Yang Earth Rat": {
     "revid": 3725276,
@@ -664,32 +144,32 @@
     "sha": "b483241fa3ae6872bdb87281ec9353e3f3f48339"
   },
   "Yang Fire Tiger": {
-    "revid": 3723842,
-    "sha": "278c45882865f2ec1884e8d16e99a9888d219afe"
+    "revid": 3729742,
+    "sha": "84a38d7dcac5eb6b2f060d501b1bacd989808197"
   },
   "Yang Metal Dog": {
-    "revid": 3723855,
-    "sha": "a2b37a4b8167a8bdcdccf6ee3cb35ceb8e1c6231"
+    "revid": 3729743,
+    "sha": "9fc1085638170b5b8920369e036b9e3e3f7e6c7d"
   },
   "Yang Metal Dragon": {
-    "revid": 3723848,
-    "sha": "6d6ed255e9e34c9897abb55eae56c4fe145bb687"
+    "revid": 3729744,
+    "sha": "216887bee3a69e9650169365bfa3208a4750d221"
   },
   "Yang Metal Horse": {
-    "revid": 3723854,
-    "sha": "25e8ab1c4bf23c5c08f7359f28f7da28043788c7"
+    "revid": 3729745,
+    "sha": "41e9356c8302144a7633866fc016ec04eefaadf4"
   },
   "Yang Metal Monkey": {
-    "revid": 3723857,
-    "sha": "50f3b168f837de4cefd4cfe7b71aa9842e7278f4"
+    "revid": 3729746,
+    "sha": "e4b880ea7881fd8459d2ef305f201ee6c65ed5b1"
   },
   "Yang Metal Rat": {
     "revid": 3725294,
     "sha": "72a0c19bf81b1041298ba3ca1279824bab4ac098"
   },
   "Yang Metal Tiger": {
-    "revid": 3723858,
-    "sha": "89062959d03f95b0175c3be7efc8c842d0cfc367"
+    "revid": 3729747,
+    "sha": "f0a594d7d73c3223025eba766f0dd1bff1b60b36"
   },
   "Yang Water Dog": {
     "revid": 3725299,
@@ -700,24 +180,24 @@
     "sha": "ad2827c78a5871de1e0e57432402ed36cb2bc187"
   },
   "Yang Water Horse": {
-    "revid": 3723861,
-    "sha": "5597af597c94c52d981561a39162b4a9c74f7c89"
+    "revid": 3729748,
+    "sha": "7d287827decae4f406fc3f82f70ec9f028af19c6"
   },
   "Yang Water Monkey": {
-    "revid": 3723862,
-    "sha": "f1a1d74568ca1b7cd5a6c3277813117d88526e64"
+    "revid": 3729749,
+    "sha": "870d6ccef7b8ed75eb09f174a8aafa04e6d2379e"
   },
   "Yang Water Rat": {
     "revid": 3725309,
     "sha": "6a6212ca11bf106610298e4ae4e395105c304c22"
   },
   "Yang Water Tiger": {
-    "revid": 3723863,
-    "sha": "94c3fba6b831d6d29a61a2fe8a6648e29746981b"
+    "revid": 3729750,
+    "sha": "55be03ebf02c2aedf65448d8838f8bd554701b3b"
   },
   "Yang Wood Dog": {
-    "revid": 3723864,
-    "sha": "07540a3110bccc0403abc269a93aa3a400208848"
+    "revid": 3729751,
+    "sha": "d952fb579717b1ce77a3e0991a85e6481eb8d770"
   },
   "Yang Wood Dragon": {
     "revid": 3725316,
@@ -728,28 +208,16 @@
     "sha": "b7ed9af4050aa8fb50fa5619683f4c704f2bbb77"
   },
   "Yang Wood Monkey": {
-    "revid": 3723868,
-    "sha": "9292eb8dc6f6cf74d2ac688cd8ff889ee677e0c0"
+    "revid": 3729770,
+    "sha": "0b335440ced1a58a463eba7ea2802ff3b71cf847"
   },
   "Yang Wood Rat": {
-    "revid": 3723869,
-    "sha": "7265702ed751609ccdd3a44dbc77adcfd382cda0"
+    "revid": 3729771,
+    "sha": "6c1dd30f935d0c61c72086160182dd6ff612abef"
   },
   "Yang Wood Tiger": {
     "revid": 3725325,
     "sha": "d1f1602a109788bc672c77b69e8d88a8120d805c"
-  },
-  "Yasaka Shrine (disambiguation)": {
-    "revid": 3723507,
-    "sha": "d379518e0aa016232557ada196fa96e88d73b048"
-  },
-  "Yatsurugi Shrine (disambiguation)": {
-    "revid": 3723508,
-    "sha": "7161b1348cc77e47b8ea629e7f47a966a37b5b43"
-  },
-  "Yawata Hachimangū": {
-    "revid": 3723509,
-    "sha": "6ca36e1ad80cf2e4947ab2d8a416807630ceda8e"
   },
   "Yin Earth Goat": {
     "revid": 3725327,
@@ -780,16 +248,16 @@
     "sha": "1d5fd82d9da54d18ac28ba5a2b0553392713461b"
   },
   "Yin Fire Ox": {
-    "revid": 3723878,
-    "sha": "bb5e23bbabf3238ec8e9ff6d138a8a2da1350b39"
+    "revid": 3729772,
+    "sha": "67408737dfdb6288897b0fbc4ba4e8345e6dc902"
   },
   "Yin Fire Pig": {
     "revid": 3725347,
     "sha": "2eb2e1d6af711737e9b7fc383d257efae9fa1f92"
   },
   "Yin Fire Rabbit": {
-    "revid": 3723881,
-    "sha": "9849b84fb7b44fc3caadfd4234ae08664150de53"
+    "revid": 3729773,
+    "sha": "a81256e2680549ab6a0cc4e48c5bbcdca47d8cb1"
   },
   "Yin Fire Rooster": {
     "revid": 3725351,
@@ -800,32 +268,32 @@
     "sha": "3ab01c89a58f9cf220ffd61a5e81e17a5e7bc93e"
   },
   "Yin Metal Goat": {
-    "revid": 3723883,
-    "sha": "635ec81cff560e03eb42a538bdf97bb78101d78c"
+    "revid": 3729774,
+    "sha": "668c8b6191c40516cbb5b3b23aeef80200232846"
   },
   "Yin Metal Ox": {
     "revid": 3725359,
     "sha": "9266b7b350a2fb18ac6211879f32446850d046d6"
   },
   "Yin Metal Pig": {
-    "revid": 3723885,
-    "sha": "9dda076d9d8bec35059ef913e6f73c1e6a03a8b4"
+    "revid": 3729775,
+    "sha": "f8b1dad1d08ec889d8d0ae4009956847ac01ad7a"
   },
   "Yin Metal Rabbit": {
-    "revid": 3723886,
-    "sha": "974b943a7d8b33eff0b47e3ff961a6e014ca3c8c"
+    "revid": 3729776,
+    "sha": "9a8b9a0dac34df2c5262d920b1174406a941ca2f"
   },
   "Yin Metal Rooster": {
     "revid": 3725366,
     "sha": "ebf66b1c04efe6f62df4e0c44764803b807d2dee"
   },
   "Yin Metal Snake": {
-    "revid": 3723887,
-    "sha": "419fa11fc7f017ce260685890c06840fbf3b2c75"
+    "revid": 3729777,
+    "sha": "53abcd971294c8c6155f63af121578f17f389b06"
   },
   "Yin Water Goat": {
-    "revid": 3723888,
-    "sha": "fe83e6e1494507b143701ba40dfd1f6cd9ea27e7"
+    "revid": 3729778,
+    "sha": "0a09000eb40fc06420c93367f428432e38ddd99a"
   },
   "Yin Water Ox": {
     "revid": 3725373,
@@ -840,8 +308,8 @@
     "sha": "9dfa1c6705df4c76dd47a5bcdf610671f690ac7d"
   },
   "Yin Water Rooster": {
-    "revid": 3723893,
-    "sha": "69ea4061516c9060d8d259c5c1c304a8d2cc671e"
+    "revid": 3729779,
+    "sha": "12d5595f7f59b268cf6e60413a92c5f14520d73d"
   },
   "Yin Water Snake": {
     "revid": 3725383,
@@ -856,75 +324,35 @@
     "sha": "aaf3e1fd6d9aafe19cf693b2d1a653c37aa4c7d9"
   },
   "Yin Wood Pig": {
-    "revid": 3723897,
-    "sha": "2179bb17cdb98c9a4a367fabe419f94b282aa034"
+    "revid": 3729780,
+    "sha": "163486736c0bc45e6978d4f08d81eac186833be0"
   },
   "Yin Wood Rabbit": {
     "revid": 3725392,
     "sha": "cc4e3d0f70a23590f6eff45c5bd8cc2b47e3b1b4"
   },
   "Yin Wood Rooster": {
-    "revid": 3723899,
-    "sha": "a3bbb211cb25e64f03e8f6f4d790bdd1bae1ac72"
+    "revid": 3729781,
+    "sha": "5a5a3fda34ef398b390d9827bc99094542252ec6"
   },
   "Yin Wood Snake": {
     "revid": 3725397,
     "sha": "cc8f3ac04f6a509cc6fd2f254d8e3a78e164adac"
   },
-  "Yuga Shrine (disambiguation)": {
-    "revid": 3723510,
-    "sha": "d48c1c43ec7de833bcd8ca9da8aec0401213987e"
-  },
-  "Yutani Shrine": {
-    "revid": 3723511,
-    "sha": "e8f3a148e901c837a2dec441c723be6bb638acbb"
-  },
-  "Ōi Shrine (Kasama)": {
-    "revid": 3723512,
-    "sha": "dacaba55115b963b6e57247541383ef274bbec46"
-  },
-  "Ōji Shrine (disambiguation)": {
-    "revid": 3723513,
-    "sha": "8b9a06a3421662901ee40d4818c18b249a406511"
-  },
-  "Ōkunitama Shrine (disambiguation)": {
-    "revid": 3723514,
-    "sha": "2d39b2e75cb5e9be71defd3783a790a00e7cb506"
-  },
-  "Ōmiwa Shrine (disambiguation)": {
-    "revid": 3723515,
-    "sha": "6f71e05669703b997eca4392d1916162f071137f"
-  },
-  "Ōmizu Shrine (disambiguation)": {
-    "revid": 3723516,
-    "sha": "c224b29cf0f9bd61bdeaab48ac30286f7996aadc"
-  },
-  "Ōtaki Shrine": {
-    "revid": 3723517,
-    "sha": "2851e0af2add8ea3ee524c71accf2bee4db5be18"
-  },
-  "Ōtomo Shrine (Saku)": {
-    "revid": 3723518,
-    "sha": "123f6736cf8a7a2e1072ec4efd72c492b0e2a55c"
-  },
-  "Ōtori Shrine": {
-    "revid": 3723519,
-    "sha": "a06d7a3b05cd76ace2902a97141730bc33588f8b"
-  },
   "Ōtoshi Shrines": {
-    "revid": 3723520,
-    "sha": "262c29d3cd4b0982d7428904a3302c992a7b79ed"
+    "revid": 3729782,
+    "sha": "4daf5de795553d606432bedca9c95328a53a81ba"
   },
   "Ōtsu Shrine": {
-    "revid": 3723521,
-    "sha": "54b4c4bac285bcfaf8f31217140a84dea08dc498"
+    "revid": 3729783,
+    "sha": "c8c6e1ec21a980255e31a7c05345938f90007f21"
   },
   "Ōyamadera": {
-    "revid": 3723522,
-    "sha": "0f29de3e6ce6971d2ee794c6c582c82fc1326dd1"
+    "revid": 3729784,
+    "sha": "7cc74bee07a4e01a3aecffb5f8f66191e0fecf5e"
   },
   "Ōyamazumi Shrine (disambiguation)": {
-    "revid": 3723524,
-    "sha": "0d9b76f8c88287037a5f0b1fdce53911337780c7"
+    "revid": 3729785,
+    "sha": "ff5985754c22fc9ebdee5fa1add272f4aa046c56"
   }
 }
