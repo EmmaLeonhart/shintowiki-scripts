@@ -85,7 +85,7 @@ SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 # inserted something on a previous pass.
 BEGIN_MARKER = "<!-- BEGIN: auto-generated Wikidata shrine list -->"
 END_MARKER = "<!-- END: auto-generated Wikidata shrine list -->"
-SECTION_HEADER = "== Shrines on Wikidata with this name =="
+SECTION_HEADER = "== Shrines with this name =="
 
 # The instruction-comment prefix that identifies shrine disambig pages
 # wanting SPARQL treatment. Must match exactly — the prefix is long
