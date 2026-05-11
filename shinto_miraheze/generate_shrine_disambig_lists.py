@@ -69,7 +69,13 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
-GIT_SYNCED_DIR = os.path.join(REPO_ROOT, "git_synced")
+# Shrine disambig pages live in BOTH miraheze_unique/ and fandom_unique/
+# under the dual-sync model (migrated out of git_synced/ on 2026-05-10).
+# We walk miraheze_unique/ to find candidates (canonical source of truth
+# for membership), and write the auto-generated block to BOTH directories
+# so each per-wiki sync picks up the change on its next cycle.
+MIRAHEZE_UNIQUE_DIR = os.path.join(REPO_ROOT, "miraheze_unique")
+FANDOM_UNIQUE_DIR = os.path.join(REPO_ROOT, "fandom_unique")
 STATE_FILE = os.path.join(SCRIPT_DIR, "generate_shrine_disambig_lists.state")
 ERROR_LOG = os.path.join(SCRIPT_DIR, "generate_shrine_disambig_lists.errors")
 
@@ -87,13 +93,13 @@ BEGIN_MARKER = "<!-- BEGIN: auto-generated Wikidata shrine list -->"
 END_MARKER = "<!-- END: auto-generated Wikidata shrine list -->"
 SECTION_HEADER = "== Shrines with this name =="
 
-# The instruction-comment prefix that identifies shrine disambig pages
-# wanting SPARQL treatment. Must match exactly — the prefix is long
-# enough to avoid false positives.
-INSTRUCTION_PREFIX = (
-    "<!--I am adding this comment because I am now syncing these "
-    "pages with git."
-)
+# Marker line inserted at the top of each shrine disambig page during
+# the dual-sync migration (commit ?). Pages carrying this marker are
+# the SPARQL refresh's targets — much narrower than the old
+# "<!--I am adding this comment..." detection which only matched the
+# legacy git_synced/ instruction comment that's no longer present
+# after migration.
+INSTRUCTION_PREFIX = "<!-- shrine-disambig-page: refresh wikidata list -->"
 
 # Skip pages whose kanji name is shorter than this — single-character
 # CJK names like 国 produce thousands of SPARQL hits, mostly noise.
@@ -411,17 +417,22 @@ def insert_or_replace_block(text: str, block_body: str) -> str:
 # ─── PAGE WALKING ─────────────────────────────────────────────────
 
 def find_target_pages() -> list[str]:
-    """List git_synced/*.wiki paths whose leading content matches the
-    shrine-SPARQL instruction marker. Strips off the leading category
-    line before checking."""
+    """List miraheze_unique/*.wiki paths whose leading marker
+    identifies them as shrine disambig pages — these are the
+    canonical source-of-truth for the refresh. Each match's
+    counterpart in fandom_unique/ is updated alongside in write
+    time.
+    """
     out = []
-    for fn in sorted(os.listdir(GIT_SYNCED_DIR)):
+    if not os.path.isdir(MIRAHEZE_UNIQUE_DIR):
+        return out
+    for fn in sorted(os.listdir(MIRAHEZE_UNIQUE_DIR)):
         if not fn.endswith(".wiki"):
             continue
-        p = os.path.join(GIT_SYNCED_DIR, fn)
+        p = os.path.join(MIRAHEZE_UNIQUE_DIR, fn)
         try:
             with open(p, encoding="utf-8") as f:
-                head = f.read(500)
+                head = f.read(200)
         except OSError:
             continue
         if INSTRUCTION_PREFIX in head:
@@ -507,12 +518,28 @@ def main():
             processed.add(fn)
             continue
 
+        # Compute the fandom_unique/ counterpart's content. If that
+        # file exists, replay the same block-insert against ITS text
+        # so we don't clobber any intentional fandom-side overrides;
+        # if it doesn't exist yet, just write the same content as
+        # miraheze (bootstrap-seed will eventually do this anyway, but
+        # writing it here keeps both sides in lock-step on this cycle).
+        fd_path = os.path.join(FANDOM_UNIQUE_DIR, fn)
+        if os.path.exists(fd_path):
+            with open(fd_path, encoding="utf-8") as f:
+                fd_text = f.read()
+            new_fd_text = insert_or_replace_block(fd_text, block_body)
+        else:
+            new_fd_text = new_text
+
         if args.apply:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(new_text)
-            print(f"  wrote {fn}")
+            with open(fd_path, "w", encoding="utf-8") as f:
+                f.write(new_fd_text)
+            print(f"  wrote miraheze_unique/{fn} + fandom_unique/{fn}")
         else:
-            print(f"  DRY-RUN: would write {fn}")
+            print(f"  DRY-RUN: would write miraheze_unique/{fn} + fandom_unique/{fn}")
             # Print a tiny preview
             preview = block_body.split("\n")[:8]
             for line in preview:

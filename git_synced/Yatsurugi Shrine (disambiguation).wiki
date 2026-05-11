@@ -1,7 +1,7 @@
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 
 '''Yatsurugi Shrines''' (八剣神社, also written as 剱神社, 劔神社, or 劍神社) also read as Yatsurugi Shrines refer to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}}. These shrines often enshrine eight swords as sacred objects or deities, including {{ill|Susanoo|1=Susanoo-no-Mikoto|ja|素戔嗚尊|12=simple|13=User:Immanuelle/Susanoo|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}, {{ill|Ōkuninushi|ja|大国主神|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}, and {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}.
 

@@ -1,0 +1,34 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izumo_Iwai_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
+
+'''Izumo Iwai Shrine''' (出雲伊波比神社, Izumo no Iwai no Kamuyashiro or Izumo Iwai Jinja) refers to several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}}.
+
+* Izumo Iwai Shrine - An {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}}-listed minor shrine (小社) located in {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province|1=Musashi Province}}, Iruma District. There are four candidate shrines for this designation.
+* {{ill|Izumo Iwai Shrine (Miyadera)|ja|出雲祝神社|12=simple|13=User:Immanuelle/Izumo Iwai Shrine (Miyadera)|qq=}} - Located in Miyadera, Iruma City, Saitama Prefecture (formerly Iruma District). One of the candidate shrines.
+* {{ill|Izumo Iwai Shrine (Moroyama)|ja|出雲伊波比神社|12=simple|13=User:Immanuelle/Izumo Iwai Shrine (Moroyama)|1=Izumoiwai Shrine, Moroyama|comment=changed title based on wikidata|qid=Q30933323}} - Located in Moroyama Town, Iruma District, Saitama Prefecture. One of the candidate shrines.
+* {{ill|Kitano Tenjinsha (Tokorozawa)|ja|北野天神社 (所沢市)|12=simple|13=User:Immanuelle/Kitano Tenjinsha (Tokorozawa)|qq=}} (also known as Mononobe Tenjinsha, Kuniichi Jinja, or Tenman Tenjinsha) - Located in Tokorozawa City, Saitama Prefecture (formerly Iruma District). One of the candidate shrines, enshrined within Mononobe Tenjinsha.
+* {{ill|Hikawa Shrine (Kawagoe, Miyashita)|ja|氷川神社 (川越市宮下町)|12=simple|13=User:Immanuelle/Hikawa Shrine (Kawagoe, Miyashita)|ja_comment=jawiki link invalid}} - Located in Miyashita Town, Kawagoe City, Saitama Prefecture (formerly Iruma District). One of the candidate shrines.
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Musashi Province|ja|武蔵国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Musashi Province|qq=}}
+* {{ill|Iwai Shrine|ja|伊波比神社|12=simple|13=User:Immanuelle/Iwai Shrine|ja_comment=jawiki link invalid}} - An {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}}-listed minor shrine in Yokomi District, Musashi Province. Located in Yoshimi Town, Hiki District, Saitama Prefecture.
+* {{ill|Izumo no Iwai Shrine (disambiguation)|ja|出雲乃伊波比神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Izumo no Iwai Shrine (disambiguation)|ja_comment=jawiki redirects to 出雲乃伊波比神社}} - An {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}}-listed minor shrine in Obusuma District, Musashi Province. There are two candidate shrines.
+
+{{disambiguation}}
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Itsumono- Shrine (Q135039738)|lt=Itsumono- Shrine|qid=Q135039738}} — Musashi Province
+* {{ill|Izumoiwai Shrine, Moroyama (Q30933323)|lt=Izumoiwai Shrine, Moroyama|qid=Q30933323}} — Iruma district
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|出雲伊波比神社 (曖昧さ回避)|version=79966592|comment=Imported full ja history}}
+
+{{wikidata link|Q104539298|ja|出雲伊波比神社 (曖昧さ回避)}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

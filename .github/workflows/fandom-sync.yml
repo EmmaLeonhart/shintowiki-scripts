@@ -107,6 +107,20 @@ jobs:
           shinto_miraheze/run_step.sh "Independent Sync: propagate_independent_category" \
             python3 shinto_miraheze/propagate_independent_category.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      # Refresh the auto-generated "== Shrines with this name ==" block
+      # on every shrine disambig page BEFORE the per-wiki sync steps,
+      # so that any Wikidata-side additions propagate to BOTH wikis in
+      # the same cycle. The script walks miraheze_unique/ for pages
+      # carrying the `<!-- shrine-disambig-page -->` marker, SPARQLs
+      # Wikidata for each kanji name, and writes the marked block to
+      # both miraheze_unique/<name>.wiki and fandom_unique/<name>.wiki.
+      # No shintowiki / fandom load — Wikidata-only.
+      - name: "Independent sync: refresh shrine disambig Wikidata lists"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Independent Sync: generate_shrine_disambig_lists" \
+            python3 shinto_miraheze/generate_shrine_disambig_lists.py --apply --max-edits 200 --run-tag "${RUN_TAG}"
+
       - name: "Independent sync: sync_miraheze_unique_pages"
         if: always() && steps.*.outcome != 'cancelled'
         run: |

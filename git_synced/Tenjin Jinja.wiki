@@ -1,7 +1,7 @@
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 
 '''Tenjin Shrine''' (天神神社) is a shrine dedicated to the {{ill|Tenjin faith|ja|天神信仰|1=Tenjin faith|12=simple|13=User:Immanuelle/Tenjin faith|13=User:Immanuelle/Tenjin faith|comment=enwiki is a redirect}}, often worshiping {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}} as the deity.
 

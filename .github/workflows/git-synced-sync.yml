@@ -62,17 +62,10 @@ jobs:
           esac
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
-      # Refresh the auto-generated "== Shrines with this name ==" block
-      # on shrine disambig pages before the sync runs. The SPARQL hits
-      # Wikidata only (no shintowiki load); changes land in git_synced/
-      # files and the immediately-following sync step pushes them up.
-      # --max-edits 200 covers the full ~165 candidate set; the script
-      # is a no-op for pages whose Wikidata results haven't changed.
-      - name: "Git synced: refresh shrine disambig Wikidata lists"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Git Synced Sync: generate_shrine_disambig_lists" \
-            python3 shinto_miraheze/generate_shrine_disambig_lists.py --apply --max-edits 200 --run-tag "${RUN_TAG}"
+      # NOTE: the shrine-disambig SPARQL refresh used to live here but
+      # was moved to fandom-sync.yml (Independent Pages Sync) when the
+      # ~165 shrine pages migrated out of git_synced/ into the dual-
+      # sync miraheze_unique/ + fandom_unique/ dirs. See commit (TBD).
 
       - name: "Git synced: sync_git_synced_pages"
         if: always() && steps.*.outcome != 'cancelled'

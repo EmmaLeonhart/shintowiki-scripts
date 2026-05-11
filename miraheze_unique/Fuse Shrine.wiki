@@ -1,0 +1,36 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Fuse_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
+
+'''Fuse Shrine''' (布勢神社, Fuse Jinja) refers to several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrines|1=Shinto shrine}}.
+
+* {{ill|Fuse Shrine (Uozu, Toyama)|ja|布勢神社 (魚津市)|12=simple|13=User:Immanuelle/Fuse Shrine (Uozu, Toyama)|ja_comment=jawiki link invalid|qid=Q135504183|1=Fuse Shrine (Uozu, Toyama)}} - Located in {{ill|Uozu, Toyama|en|Uozu, Toyama|qid=Q819613|lt=Uozu, Toyama|1=Uozu, Toyama}}, Toyama Prefecture. One of the candidate sites for a {{ill|Shikinai shrine|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinai shrine|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
+* {{ill|Fuse Shrine (Himi, Toyama)|ja|布勢神社 (氷見市)|12=simple|13=User:Immanuelle/Fuse Shrine (Himi, Toyama)|ja_comment=jawiki link invalid|qid=Q135504186|1=Fuse Shrine (Himi, Toyama)}} - Located in {{ill|Himi, Toyama|en|Himi, Toyama|qid=Q646886|lt=Himi, Toyama|1=Himi, Toyama}}, Toyama Prefecture. Another candidate site for a Shikinai shrine.
+* {{ill|Fuse Shrine (Akaiwa, Okayama)|ja|布勢神社 (赤磐市)|12=simple|13=User:Immanuelle/Fuse Shrine (Akaiwa, Okayama)|ja_comment=jawiki link invalid|qid=Q135504187|1=Fuse Shrine (Akaiwa, Okayama)}} - Located in {{ill|Akaiwa|en|Akaiwa|qid=Q415372|lt=Akaiwa, Okayama|1=Akaiwa}}, Okayama Prefecture. One of the candidate sites for a Shikinai shrine.
+** {{ill|Fuse Kyo Shrine|ja|布勢巨神社|12=simple|13=User:Immanuelle/Fuse Kyo Shrine|ja_comment=jawiki link invalid|qid=Q135504189|1=Fuse Kyo Shrine}} - Located in {{ill|Akaiwa|en|Akaiwa|qid=Q415372|lt=Akaiwa, Okayama|1=Akaiwa}}, at Naka-sejitsu. A candidate for a Shikinai shrine at the former site of the above shrine.
+* Fuse Shrine - A Shikinai shrine in {{ill|Sanuki Province|en|Sanuki Province|qid=Q929682|lt=Sanuki Province|1=Sanuki Province}}, Samukawa District.
+** {{ill|Fuse Shrine (Sanuki, Kagawa)|ja|布勢神社 (さぬき市)|12=simple|13=User:Immanuelle/Fuse Shrine (Sanuki, Kagawa)|qq=}} - Located in {{ill|Sanuki, Kagawa|en|Sanuki, Kagawa|qid=Q857202|lt=Sanuki, Kagawa|1=Sanuki, Kagawa}}, Kagawa Prefecture. A candidate site for the above shrine.
+** {{ill|Zoda Shrine|ja|造田神社|12=simple|13=User:Immanuelle/Zoda Shrine|ja_comment=jawiki link invalid|qid=Q135504190|1=Zoda Shrine}} - Located in {{ill|Sanuki, Kagawa|en|Sanuki, Kagawa|qid=Q857202|lt=Sanuki, Kagawa|1=Sanuki, Kagawa}}, Kagawa Prefecture. Another candidate for the above shrine.
+* {{ill|Fuse Shrine (Nagano)|ja|布制神社 (長野市)|12=simple|13=User:Immanuelle/Fuse Shrine (Nagano)|ja_comment=jawiki link invalid|qid=Q135504192|1=Fuse Shrine (Nagano)}} - Located in {{ill|Nagano (city)|en|Nagano (city)|qid=Q128849|lt=Nagano, Nagano|1=Nagano (city)}}, Nagano Prefecture, in Shino-no-i Fushigomi-shimo-rokutan.
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Fuse Shrine (Q135041199)|lt=Fuse Shrine|qid=Q135041199}} — Akasaka district
+* {{ill|Fuse Shrine (Q135070316)|lt=Fuse Shrine|qid=Q135070316}} — Samukawa district
+* {{ill|Fuse Shrine (Q135195020)|lt=Fuse Shrine|qid=Q135195020}} — Niikawa district
+* {{ill|Fuseno Shrine (Q134892521)|lt=Fuseno Shrine|qid=Q134892521}} — Sanuki
+* {{ill|Fuseno Shrine (Q135040368)|lt=Fuseno Shrine|qid=Q135040368}} — Imizu district
+* {{ill|Fuseno Shrine (Q135040396)|lt=Fuseno Shrine|qid=Q135040396}} — Niikawa district
+* {{ill|Fuseno Shrine (Q135041037)|lt=Fuseno Shrine|qid=Q135041037}} — Izumo district
+* {{ill|Fuseno Shrine (Q135041383)|lt=Fuseno Shrine|qid=Q135041383}} — Samukawa district
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|布勢神社|version=100150238|comment=Imported full ja history}}
+
+{{wikidata link|Q11480766|ja|布勢神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]
