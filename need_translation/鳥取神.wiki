@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E9%B3%A5%E5%8F%96%E7%A5%9E for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
-{{基礎情報 日本の神
+{{Infobox Japanese kami
 | 名 = Totori-no-Kami
 | 世代名 =
 | 先代=
@@ -54,5 +54,4 @@ Daughter of Yashimamuji-no-Kami; she bore Torinarumi-no-Kami with Ōkuninushi-no
 [[Category:長門国の人物]]
 [[Category:十七世神]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 {{wikidata link||ja|鳥取神}}
