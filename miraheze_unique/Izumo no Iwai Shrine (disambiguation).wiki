@@ -1,0 +1,33 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izumo_no_Iwai_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
+
+'''Izumo-no-Iwai Shrine''' (出雲乃伊波比神社, いづものいわいのかむやしろ, いずものいわいじんじゃ) refers to the name of a Shinto shrine.
+
+* '''Izumo-no-Iwai Shrine''' - A small shrine listed under the ''Engishiki'' in {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province|1=Musashi Province}} {{ill|Obusuma District|ja|男衾郡|12=simple|13=User:Immanuelle/Obusuma District|1=Obusuma district|comment=changed title based on wikidata|qid=Q11578175}}. There are two candidate shrines.
+* {{ill|Izumo-no-Iwai Shrine (Yorii Town)|ja|出雲乃伊波比神社 (寄居町)|12=simple|13=User:Immanuelle/Izumo-no-Iwai Shrine (Yorii Town)|qq=}} - Located in {{ill|Yorii, Saitama|en|Yorii, Saitama|qid=Q961604|lt=Yorii Town|1=Yorii, Saitama}}, {{ill|Ōsato District, Saitama|en|Ōsato District, Saitama|qid=Q1075196|lt=Ōsato District|1=Ōsato District, Saitama}}, {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture|1=Saitama Prefecture}} (formerly Obusuma District). One of the candidate shrines.
+* {{ill|Izumo-no-Iwai Shrine (Kumagaya City)|ja|出雲乃伊波比神社 (熊谷市)|12=simple|13=User:Immanuelle/Izumo-no-Iwai Shrine (Kumagaya City)|ja_comment=jawiki link invalid}} - Located in {{ill|Kumagaya|en|Kumagaya|qid=Q41106|lt=Kumagaya City|1=Kumagaya}}, Saitama Prefecture (formerly Obusuma District). Another of the candidate shrines.
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Musashi Province|ja|武蔵国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Musashi Province|qq=}}
+* {{ill|Iwai Shrine|ja|伊波比神社|12=simple|13=User:Immanuelle/Iwai Shrine|ja_comment=jawiki link invalid}} - A small shrine listed under the ''Engishiki'' in {{ill|Yokomi District|ja|横見郡|12=simple|13=User:Immanuelle/Yokomi District|1=Yokomi district|comment=changed title based on wikidata|qid=Q11543466}}, Musashi Province. Located in {{ill|Yoshimi, Saitama|en|Yoshimi, Saitama|qid=Q543313|lt=Yoshimi Town|1=Yoshimi, Saitama}}, {{ill|Hiki District, Saitama|en|Hiki District, Saitama|qid=Q1075201|lt=Hiki District|1=Hiki District, Saitama}}, Saitama Prefecture.
+* {{ill|Izumo Iwai Shrine (disambiguation)|ja|出雲伊波比神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Izumo Iwai Shrine (disambiguation)|qq=}} - A small shrine listed under the ''Engishiki'' in {{ill|Iruma District, Saitama|en|Iruma District, Saitama|qid=Q1153801|lt=Iruma District|1=Iruma District, Saitama}}, Musashi Province. There are four candidate shrines.
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Itsumonoihahino Shrine (Q135039741)|lt=Itsumonoihahino Shrine|qid=Q135039741}} — Musashi Province
+* {{ill|Izumonoinamihi Shrine (Q135069545)|lt=Izumonoinamihi Shrine|qid=Q135069545}} — Obusuma district
+* {{ill|Izumonoiwai Shrine (Q66085122)|lt=Izumonoiwai Shrine|qid=Q66085122}} — Obusuma district
+* {{ill|出雲乃伊波比神社 (Q134887220)|lt=出雲乃伊波比神社|qid=Q134887220}} — Kumagaya
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|出雲乃伊波比神社|version=79966660|comment=Imported full ja history}}
+
+{{wikidata link|Q104539297|ja|出雲乃伊波比神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

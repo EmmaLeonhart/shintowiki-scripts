@@ -1,0 +1,150 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kashima_Shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
+
+and {{ill|Katori Shrines|ja|香取神社|12=simple|13=User:Immanuelle/Katori Shrines|qq=}} are not common enough to bother making all the articles but making these lists is good because I think a lot of westerners do not understand the sheer quantity of them[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|talk]]) 06:07, 24 March 2025 (UTC)}}
+
+'''Kashima Shrine''' (鹿島神社, [[:en:Kyujitai|Kyujitai]]: 鹿嶋神社) is a type of Shinto shrine named "Kashima" dedicated to the deity {{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi|1=Takemikazuchi}}.
+
+There are approximately 600 Kashima Shrines nationwide, concentrated primarily in the {{ill|Tōhoku region|en|Tōhoku region|qid=Q129465|lt=Tōhoku region|1=Tōhoku region}} and the {{ill|Kantō region|en|Kantō region|qid=Q132480|lt=Kantō region|1=Kantō region}}, with the head shrine being {{ill|Kashima Shrine|en|Kashima Shrine|qid=Q706499|lt=Kashima Jingū|1=Kashima Jingū}} in {{ill|Kashima, Ibaraki|en|Kashima, Ibaraki|qid=Q467471|lt=Kashima, Ibaraki|1=Kashima, Ibaraki}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}. Most of these shrines were established by inviting the deity from Kashima Jingū, worshipping the same deity, Takemikazuchi.
+
+Takemikazuchi, together with {{ill|Futsunushi|en|Futsunushi|qid=Q1107286|qid=Q1107286|lt=Futsunushi|1=Futsunushi}} of {{ill|Katori Shrine|en|Katori Shrine|qid=Q372380|lt=Katori Jingū|1=Katori Jingū}} ({{ill|Katori, Chiba|en|Katori, Chiba|qid=Q858357|lt=Katori, Chiba|1=Katori, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}), was revered by the Imperial court and central aristocracy as the ancestral deity of the {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan|1=Nakatomi clan}} and {{ill|Fujiwara clan|en|Fujiwara clan|qid=Q641628|lt=Fujiwara clan|1=Fujiwara clan}}. Being a god of martial prowess, Takemikazuchi was also worshipped by samurai families ('''Kashima belief''').
+
+==Tōhoku region==
+* {{ill|Kashima Shrine (Mashiba, Ichinoseki)|ja|鹿島神社 (一関市真柴)|12=simple|13=User:Immanuelle/Kashima Shrine (Mashiba, Ichinoseki)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q123398290}} (Mashiba, {{ill|Ichinoseki, Iwate|en|Ichinoseki, Iwate|qid=Q390817|lt=Ichinoseki, Iwate|1=Ichinoseki, Iwate}}, {{ill|Iwate Prefecture|en|Iwate Prefecture|qid=Q48326|lt=Iwate Prefecture|1=Iwate Prefecture}})
+* {{ill|Kashima Shrine (Ishinomaki)|ja|鹿嶋神社 (石巻市)|12=simple|13=User:Immanuelle/Kashima Shrine (Ishinomaki)|ja_comment=jawiki link invalid|qid=Q135506078|1=Kashima Shrine (Ishinomaki)}} ({{ill|Ishinomaki|en|Ishinomaki|qid=Q270814|lt=Ishinomaki, Miyagi|1=Ishinomaki}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture|1=Miyagi Prefecture}})
+* {{ill|Kashima Shrine (Igu District)|ja|鹿島神社 (伊具郡)|12=simple|13=User:Immanuelle/Kashima Shrine (Igu District)|ja_comment=jawiki link invalid|qid=Q135506080|1=Kashima Shrine (Igu District)}} ({{ill|Igu District, Miyagi|en|Igu District, Miyagi|qid=Q1155531|lt=Igu District, Miyagi|1=Igu District, Miyagi}})
+* {{ill|Kashima Daijingū (Kōriyama)|ja|鹿島大神宮 (郡山市)|lt=Kashima Daijingū|lt_ja=鹿島大神宮|12=simple|13=User:Immanuelle/Kashima Daijingū (Kōriyama)|1=Kashima Shrine (Fukushima)|comment=changed title based on wikidata|qid=Q28687197}} ({{ill|Kōriyama|en|Kōriyama|qid=Q264206|lt=Kōriyama, Fukushima|1=Kōriyama}}, {{ill|Fukushima Prefecture|en|Fukushima Prefecture|qid=Q71707|lt=Fukushima Prefecture|1=Fukushima Prefecture}})
+* {{ill|Kashima Shrine (Shirakawa)|ja|鹿嶋神社 (白河市)|lt=Kashima Shrine|lt_ja=鹿嶋神社|12=simple|13=User:Immanuelle/Kashima Shrine (Shirakawa)|ja_comment=jawiki link invalid|qid=Q135506081|1=Kashima Shrine (Shirakawa)}} ({{ill|Shirakawa, Fukushima|en|Shirakawa, Fukushima|qid=Q750587|lt=Shirakawa, Fukushima|1=Shirakawa, Fukushima}})
+
+==Kantō region==
+* {{ill|Kashima Shrine (Mashiko)|ja|鹿島神社 (益子町)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Mashiko)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q134891806}} ({{ill|Mashiko, Tochigi|en|Mashiko, Tochigi|qid=Q1346925|lt=Mashiko, Tochigi|1=Mashiko, Tochigi}}, {{ill|Haga District, Tochigi|en|Haga District, Tochigi|qid=Q1192087|lt=Haga District|1=Haga District, Tochigi}}, {{ill|Tochigi Prefecture|en|Tochigi Prefecture|qid=Q44843|lt=Tochigi Prefecture|1=Tochigi Prefecture}})
+* {{ill|Kashima Shrine (Fujioka, Tochigi)|ja|鹿島神社 (栃木県栃木市藤岡町部屋)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Fujioka, Tochigi)|ja_comment=jawiki link invalid|qid=Q135506083|1=Kashima Shrine (Fujioka, Tochigi)}} (Fujioka, {{ill|Tochigi (city)|en|Tochigi (city)|qid=Q44830|lt=Tochigi City|1=Tochigi (city)}})
+* {{ill|Kashima Shrine (Naka)|ja|鹿島神社 (那珂市菅谷)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Naka)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q119929514}} ({{ill|Naka, Ibaraki|en|Naka, Ibaraki|qid=Q633647|lt=Naka, Ibaraki|1=Naka, Ibaraki}})
+* {{ill|Kashima Shrine (Tsuchiura)|ja|鹿島神社 (土浦市沖宿町)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Tsuchiura)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q65293934}} ({{ill|Tsuchiura|en|Tsuchiura|qid=Q653446|lt=Tsuchiura, Ibaraki|1=Tsuchiura}})
+* {{ill|Kashima Shrine (Hitachinaka)|ja|鹿嶋神社 (ひたちなか市)|lt=Kashima Shrine|lt_ja=鹿嶋神社|12=simple|13=User:Immanuelle/Kashima Shrine (Hitachinaka)|ja_comment=jawiki link invalid|qid=Q135506085|1=Kashima Shrine (Hitachinaka)}} ({{ill|Hitachinaka, Ibaraki|en|Hitachinaka, Ibaraki|qid=Q696772|lt=Hitachinaka, Ibaraki|1=Hitachinaka, Ibaraki}})
+* {{ill|Sukegawa Kashima Shrine|ja|助川鹿嶋神社|12=simple|13=User:Immanuelle/Sukegawa Kashima Shrine|ja_comment=jawiki link invalid}} ({{ill|Hitachi, Ibaraki|en|Hitachi, Ibaraki|qid=Q633922|lt=Hitachi, Ibaraki|1=Hitachi, Ibaraki}})
+* {{ill|Kashima Shrine (Katsuura)|ja|鹿島神社 (勝浦市)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Katsuura)|ja_comment=jawiki link invalid|qid=Q135506086|1=Kashima Shrine (Katsuura)}} ({{ill|Katsuura, Chiba|en|Katsuura, Chiba|qid=Q696418|lt=Katsuura, Chiba|1=Katsuura, Chiba}})
+* {{ill|Kashima Shrine (Shinagawa)|ja|鹿嶋神社 (品川区)|lt=Kashima Shrine|lt_ja=鹿嶋神社|12=simple|13=User:Immanuelle/Kashima Shrine (Shinagawa)|1=Kashima Shrine (Shinagawa-ku)|comment=changed title based on wikidata|qid=Q11677182}} ({{ill|Shinagawa|en|Shinagawa|qid=Q233495|lt=Shinagawa, Tokyo|1=Shinagawa}})
+* {{ill|Kashima Shrine (Edogawa)|ja|鹿島神社 (江戸川区)|12=simple|13=User:Immanuelle/Kashima Shrine (Edogawa)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q106852629}}
+* {{ill|Kashima Shrine (Yokohama)|ja|鹿島神社 (横浜市)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Yokohama)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q11677153}} ({{ill|Yokohama|en|Yokohama|qid=Q38283|lt=Yokohama, Kanagawa|1=Yokohama}})
+* {{ill|Kashima Shrine (Sagamihara)|ja|鹿島神社 (相模原市)|lt=Kashima Shrine|lt_ja=鹿島神社|12=simple|13=User:Immanuelle/Kashima Shrine (Sagamihara)|ja_comment=jawiki link invalid|qid=Q135506088|1=Kashima Shrine (Sagamihara)}} ({{ill|Sagamihara|en|Sagamihara|qid=Q209779|lt=Sagamihara, Kanagawa|1=Sagamihara}})
+* {{ill|Kashima Shrine (Yokosuka)|ja|鹿島神社 (横須賀市)|12=simple|13=User:Immanuelle/Kashima Shrine (Yokosuka)|1=Kashima Shrine|comment=changed title based on wikidata|qid=Q110610133}}
+
+==Chūbu region==
+* {{ill|Kashima Shrine (Asahi, Toyama)|ja|鹿嶋神社 (朝日町)|lt=Kashima Shrine|lt_ja=鹿嶋神社|12=simple|13=User:Immanuelle/Kashima Shrine (Asahi, Toyama)|ja_comment=jawiki link invalid|qid=Q135506091|1=Kashima Shrine (Asahi, Toyama)}} ({{ill|Asahi, Toyama|ja|朝日町|12=simple|13=User:Immanuelle/Asahi, Toyama|1=Q1206007|comment=changed title based on wikidata|qid=Q1206007}}, {{ill|Shimoniikawa District, Toyama|en|Shimoniikawa District, Toyama|qid=Q634439|lt=Shimoniikawa District|1=Shimoniikawa District, Toyama}})
+
+==References==
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Kashima Shrine (Q106852629)|lt=Kashima Shrine|qid=Q106852629}} — Shishibone
+* {{ill|Kashima Shrine (Q110610133)|lt=Kashima Shrine|qid=Q110610133}} — Yokosuka
+* {{ill|Kashima Shrine (Q110994902)|lt=Kashima Shrine|qid=Q110994902}} — Matsudo
+* {{ill|Kashima Shrine (Q111024059)|lt=Kashima Shrine|qid=Q111024059}} — Ichihara
+* {{ill|Kashima Shrine (Q123398290)|lt=Kashima Shrine|qid=Q123398290}} — Ichinoseki
+* {{ill|Kashima Shrine (Q135153620)|lt=Kashima Shrine|qid=Q135153620}} — Mito
+* {{ill|Kashima Shrine (Q135153636)|lt=Kashima Shrine|qid=Q135153636}} — Ibaraki
+* {{ill|Kashima Shrine (Q135153640)|lt=Kashima Shrine|qid=Q135153640}} — Naka
+* {{ill|Kashima Shrine (Q135153654)|lt=Kashima Shrine|qid=Q135153654}} — Tsuchiura
+* {{ill|Kashima Shrine (Q135153656)|lt=Kashima Shrine|qid=Q135153656}} — Ami
+* {{ill|Kashima Shrine (Q135153709)|lt=Kashima Shrine|qid=Q135153709}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153710)|lt=Kashima Shrine|qid=Q135153710}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153711)|lt=Kashima Shrine|qid=Q135153711}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153712)|lt=Kashima Shrine|qid=Q135153712}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153713)|lt=Kashima Shrine|qid=Q135153713}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153714)|lt=Kashima Shrine|qid=Q135153714}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153777)|lt=Kashima Shrine|qid=Q135153777}} — Ryūgasaki-shi
+* {{ill|Kashima Shrine (Q135153786)|lt=Kashima Shrine|qid=Q135153786}} — Inashiki
+* {{ill|Kashima Shrine (Q135153793)|lt=Kashima Shrine|qid=Q135153793}} — Inashiki
+* {{ill|Kashima Shrine (Q135153795)|lt=Kashima Shrine|qid=Q135153795}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q135153799)|lt=Kashima Shrine|qid=Q135153799}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q135153808)|lt=Kashima Shrine|qid=Q135153808}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135153809)|lt=Kashima Shrine|qid=Q135153809}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135153822)|lt=Kashima Shrine|qid=Q135153822}} — Toride
+* {{ill|Kashima Shrine (Q135153831)|lt=Kashima Shrine|qid=Q135153831}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135153833)|lt=Kashima Shrine|qid=Q135153833}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135153849)|lt=Kashima Shrine|qid=Q135153849}} — Jōsō-shi
+* {{ill|Kashima Shrine (Q135153855)|lt=Kashima Shrine|qid=Q135153855}} — Chikusei
+* {{ill|Kashima Shrine (Q135153860)|lt=Kashima Shrine|qid=Q135153860}} — Sakuragawa
+* {{ill|Kashima Shrine (Q135153864)|lt=Kashima Shrine|qid=Q135153864}} — Chikusei
+* {{ill|Kashima Shrine (Q135153868)|lt=Kashima Shrine|qid=Q135153868}} — Sakuragawa
+* {{ill|Kashima Shrine (Q135153885)|lt=Kashima Shrine|qid=Q135153885}} — Mito
+* {{ill|Kashima Shrine (Q135153886)|lt=Kashima Shrine|qid=Q135153886}} — Mito
+* {{ill|Kashima Shrine (Q135153887)|lt=Kashima Shrine|qid=Q135153887}} — Shirosato
+* {{ill|Kashima Shrine (Q135153928)|lt=Kashima Shrine|qid=Q135153928}} — Tsuchiura
+* {{ill|Kashima Shrine (Q135153933)|lt=Kashima Shrine|qid=Q135153933}} — Ami
+* {{ill|Kashima Shrine (Q135153937)|lt=Kashima Shrine|qid=Q135153937}} — Miho
+* {{ill|Kashima Shrine (Q135153962)|lt=Kashima Shrine|qid=Q135153962}} — Shimotsuma
+* {{ill|Kashima Shrine (Q135153968)|lt=Kashima Shrine|qid=Q135153968}} — Yachiyo
+* {{ill|Kashima Shrine (Q135153989)|lt=Kashima Shrine|qid=Q135153989}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153990)|lt=Kashima Shrine|qid=Q135153990}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153991)|lt=Kashima Shrine|qid=Q135153991}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153992)|lt=Kashima Shrine|qid=Q135153992}} — Tsukuba
+* {{ill|Kashima Shrine (Q135153993)|lt=Kashima Shrine|qid=Q135153993}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154047)|lt=Kashima Shrine|qid=Q135154047}} — Hitachi
+* {{ill|Kashima Shrine (Q135154057)|lt=Kashima Shrine|qid=Q135154057}} — Ryūgasaki-shi
+* {{ill|Kashima Shrine (Q135154067)|lt=Kashima Shrine|qid=Q135154067}} — Kawachi
+* {{ill|Kashima Shrine (Q135154082)|lt=Kashima Shrine|qid=Q135154082}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q135154087)|lt=Kashima Shrine|qid=Q135154087}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q135154094)|lt=Kashima Shrine|qid=Q135154094}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135154095)|lt=Kashima Shrine|qid=Q135154095}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135154126)|lt=Kashima Shrine|qid=Q135154126}} — Ushiku
+* {{ill|Kashima Shrine (Q135154128)|lt=Kashima Shrine|qid=Q135154128}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135154129)|lt=Kashima Shrine|qid=Q135154129}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135154135)|lt=Kashima Shrine|qid=Q135154135}} — Jōsō-shi
+* {{ill|Kashima Shrine (Q135154153)|lt=Kashima Shrine|qid=Q135154153}} — Chikusei
+* {{ill|Kashima Shrine (Q135154179)|lt=Kashima Shrine|qid=Q135154179}} — Mito
+* {{ill|Kashima Shrine (Q135154180)|lt=Kashima Shrine|qid=Q135154180}} — Mito
+* {{ill|Kashima Shrine (Q135154181)|lt=Kashima Shrine|qid=Q135154181}} — Shirosato
+* {{ill|Kashima Shrine (Q135154213)|lt=Kashima Shrine|qid=Q135154213}} — Tsuchiura
+* {{ill|Kashima Shrine (Q135154218)|lt=Kashima Shrine|qid=Q135154218}} — Ami
+* {{ill|Kashima Shrine (Q135154250)|lt=Kashima Shrine|qid=Q135154250}} — Shimotsuma
+* {{ill|Kashima Shrine (Q135154273)|lt=Kashima Shrine|qid=Q135154273}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154274)|lt=Kashima Shrine|qid=Q135154274}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154275)|lt=Kashima Shrine|qid=Q135154275}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154276)|lt=Kashima Shrine|qid=Q135154276}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154277)|lt=Kashima Shrine|qid=Q135154277}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154278)|lt=Kashima Shrine|qid=Q135154278}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154292)|lt=Kashima Shrine|qid=Q135154292}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154351)|lt=Kashima Shrine|qid=Q135154351}} — Ryūgasaki-shi
+* {{ill|Kashima Shrine (Q135154352)|lt=Kashima Shrine|qid=Q135154352}} — Ryūgasaki-shi
+* {{ill|Kashima Shrine (Q135154389)|lt=Kashima Shrine|qid=Q135154389}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q135154397)|lt=Kashima Shrine|qid=Q135154397}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135154398)|lt=Kashima Shrine|qid=Q135154398}} — Hitachiōmiya-shi
+* {{ill|Kashima Shrine (Q135154408)|lt=Kashima Shrine|qid=Q135154408}} — Daigo
+* {{ill|Kashima Shrine (Q135154423)|lt=Kashima Shrine|qid=Q135154423}} — Ushiku
+* {{ill|Kashima Shrine (Q135154424)|lt=Kashima Shrine|qid=Q135154424}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135154430)|lt=Kashima Shrine|qid=Q135154430}} — Tsukubamirai
+* {{ill|Kashima Shrine (Q135154433)|lt=Kashima Shrine|qid=Q135154433}} — Jōsō-shi
+* {{ill|Kashima Shrine (Q135154451)|lt=Kashima Shrine|qid=Q135154451}} — Chikusei
+* {{ill|Kashima Shrine (Q135154452)|lt=Kashima Shrine|qid=Q135154452}} — Chikusei
+* {{ill|Kashima Shrine (Q135154462)|lt=Kashima Shrine|qid=Q135154462}} — Sakuragawa
+* {{ill|Kashima Shrine (Q135154464)|lt=Kashima Shrine|qid=Q135154464}} — Sakuragawa
+* {{ill|Kashima Shrine (Q135154479)|lt=Kashima Shrine|qid=Q135154479}} — Mito
+* {{ill|Kashima Shrine (Q135154480)|lt=Kashima Shrine|qid=Q135154480}} — Mito
+* {{ill|Kashima Shrine (Q135154525)|lt=Kashima Shrine|qid=Q135154525}} — Tsuchiura
+* {{ill|Kashima Shrine (Q135154528)|lt=Kashima Shrine|qid=Q135154528}} — Ami
+* {{ill|Kashima Shrine (Q135154529)|lt=Kashima Shrine|qid=Q135154529}} — Ami
+* {{ill|Kashima Shrine (Q135154537)|lt=Kashima Shrine|qid=Q135154537}} — Tsuchiura
+* {{ill|Kashima Shrine (Q135154555)|lt=Kashima Shrine|qid=Q135154555}} — Shimotsuma
+* {{ill|Kashima Shrine (Q135154581)|lt=Kashima Shrine|qid=Q135154581}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154583)|lt=Kashima Shrine|qid=Q135154583}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154584)|lt=Kashima Shrine|qid=Q135154584}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154585)|lt=Kashima Shrine|qid=Q135154585}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154586)|lt=Kashima Shrine|qid=Q135154586}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154598)|lt=Kashima Shrine|qid=Q135154598}} — Tsukuba
+* {{ill|Kashima Shrine (Q135154602)|lt=Kashima Shrine|qid=Q135154602}} — Koga
+* {{ill|Kashima Shrine (Q135154646)|lt=Kashima Shrine|qid=Q135154646}} — Ryūgasaki-shi
+* {{ill|Kashima Shrine (Q135154671)|lt=Kashima Shrine|qid=Q135154671}} — Hitachiōta-shi
+* {{ill|Kashima Shrine (Q65293934)|lt=Kashima Shrine|qid=Q65293934}} — Tsuchiura
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|鹿島神社|version=102220507|comment=Imported full ja history}}
+
+{{wikidata link|Q11677154|ja|鹿島神社}}
+[[Category:Kashima Shrines]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

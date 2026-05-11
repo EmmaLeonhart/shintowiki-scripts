@@ -1,0 +1,15 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+'''Tōsho Shrine''' (當所神社 / 当所神社) refers to Shinto shrines located in Japan.
+
+* {{ill|Tōsho Shrine (Fujinomiya City)|ja|當所神社 (富士宮市)|12=simple|13=User:Immanuelle/Tōsho Shrine (Fujinomiya City)|qq=}} - Located in Kitayama, {{ill|Fujinomiya, Shizuoka|en|Fujinomiya, Shizuoka|qid=Q496072|lt=Fujinomiya City|1=Fujinomiya, Shizuoka}}, {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}.
+* {{ill|Tōsho Shrine (Anan City)|ja|當所神社 (阿南市)|12=simple|13=User:Immanuelle/Tōsho Shrine (Anan City)|qq=}} - Located in {{ill|Ishima Town (Anan City)|ja|伊島町 (阿南市)|12=simple|13=User:Immanuelle/Ishima Town (Anan City)|1=Ishimachō|comment=changed title based on wikidata|qid=Q28686952}}, {{ill|Anan, Tokushima|en|Anan, Tokushima|qid=Q485583|lt=Anan City|1=Anan, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}.
+
+{{disambiguation}}
+
+{{translated page|ja|當所神社|version=100601975|comment=Imported full ja history}}
+
+{{wikidata link|Q128845663|ja|當所神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Wikidata no English label]]
+[[Category:Independently git synced pages]]

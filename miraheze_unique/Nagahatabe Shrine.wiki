@@ -1,0 +1,25 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Nagahatabe_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
+
+'''Nagahatabe Shrine''' (長幡部神社)
+
+* {{ill|Nagahatabe Shrine (Hitachiota)|ja|長幡部神社 (常陸太田市)|12=simple|13=User:Immanuelle/Nagahatabe Shrine (Hitachiota)|qq=}} - {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}, {{ill|Hitachiōta, Ibaraki|en|Hitachiōta, Ibaraki|qid=Q838663|lt=Hitachiota|1=Hitachiōta, Ibaraki}}
+* {{ill|Nagahatabe Shrine (Kamisato)|ja|長幡部神社 (上里町)|12=simple|13=User:Immanuelle/Nagahatabe Shrine (Kamisato)|1=Nagahatabe Shrine (Q72727981)|comment=changed title based on wikidata|qid=Q72727981}} - {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture|1=Saitama Prefecture}}, {{ill|Kodama District, Saitama|en|Kodama District, Saitama|qid=Q938038|lt=Kodama District|1=Kodama District, Saitama}}, {{ill|Kamisato, Saitama|en|Kamisato, Saitama|qid=Q1345287|lt=Kamisato|1=Kamisato, Saitama}}
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Nagahatabe Shrine (Q17227113)|lt=Nagahatabe Shrine|qid=Q17227113}} — Hitachi Province
+* {{ill|Nagahatabe Shrine (Q72727981)|lt=Nagahatabe Shrine|qid=Q72727981}} — Kamisato
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|長幡部神社|version=102027233|comment=Imported full ja history}}
+
+{{wikidata link|Q85884222|ja|長幡部神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

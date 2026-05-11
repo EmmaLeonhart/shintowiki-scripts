@@ -1,0 +1,43 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+'''Yamada Shrine''' (山田神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} located across Japan.
+
+* '''Kanagawa Prefecture'''
+** {{ill|Yamada Shrine (Yokohama City)|ja|山田神社 (横浜市)|12=simple|13=User:Immanuelle/Yamada Shrine (Yokohama City)|ja_comment=jawiki link invalid}} - Located in Minamiyamada Town, {{ill|Tsuzuki-ku, Yokohama|en|Tsuzuki-ku, Yokohama|qid=Q1153920|lt=Tsuzuki Ward|1=Tsuzuki-ku, Yokohama}}, Yokohama City. A shrine designated for offerings and former village shrine.
+
+* '''Osaka Prefecture'''
+** {{ill|Yamada Shrine (Hirakata City Yamanoue)|ja|山田神社 (枚方市山之上)|12=simple|13=User:Immanuelle/Yamada Shrine (Hirakata City Yamanoue)|1=Yamada Shrine (Hirataka)|comment=changed title based on wikidata|qid=Q11470582}} - Located in Yamanoue, {{ill|Hirakata|en|Hirakata|qid=Q270912|lt=Hirakata City|1=Hirakata}}. A former village shrine.
+** {{ill|Yamada Shrine (Hirakata City Taguchi)|ja|山田神社 (枚方市田口)|12=simple|13=User:Immanuelle/Yamada Shrine (Hirakata City Taguchi)|1=Yamada Shrine|comment=changed title based on wikidata|qid=Q11470583}} - Located in Taguchi, Hirakata City. A former village shrine.
+
+* '''Yamaguchi Prefecture'''
+** {{ill|Yamada Shrine (Yamaguchi City)|ja|山田神社 (山口市)|12=simple|13=User:Immanuelle/Yamada Shrine (Yamaguchi City)|ja_comment=jawiki link invalid}} - Located in Ato Jifuku Kami, {{ill|Yamaguchi (city)|en|Yamaguchi (city)|qid=Q207876|lt=Yamaguchi City|1=Yamaguchi (city)}}.
+** '''Yamada Shrine (Suō Province)''' - A shrine listed in the historical records of Suō Province.
+*** {{ill|Yamada Shrine (Suō-Ōshima Town)|ja|山田神社 (周防大島町)|12=simple|13=User:Immanuelle/Yamada Shrine (Suō-Ōshima Town)|ja_comment=jawiki link invalid}} - Located in Sotoiri, Suō-Ōshima Town, Ōshima District, Yamaguchi Prefecture. A candidate for the above shrine.
+*** {{ill|Yamada Shrine (Shikano Town)|ja|山田神社 (鹿野町)|12=simple|13=User:Immanuelle/Yamada Shrine (Shikano Town)|ja_comment=jawiki link invalid}} - Previously located in Shikano Town, now part of Shunan City, Yamaguchi Prefecture. Referred to as {{ill|Nisho Yamada Shrine|ja|二所山田神社|12=simple|13=User:Immanuelle/Nisho Yamada Shrine|qq=}}.
+
+* '''Kagawa Prefecture'''
+** {{ill|Yamada Shrine (Kanonji City)|ja|山田神社 (観音寺市)|12=simple|13=User:Immanuelle/Yamada Shrine (Kanonji City)|ja_comment=jawiki link invalid}} - Located in Kuda Town, {{ill|Kan'onji, Kagawa|en|Kan'onji, Kagawa|qid=Q861270|lt=Kanonji City|1=Kan'onji, Kagawa}}. A former village shrine and a {{ill|Shikinai shrine|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinai shrine|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Yamada Shrine (Q111024431)|lt=Yamada Shrine|qid=Q111024431}} — Ichihara
+* {{ill|Yamatano Shrine (Q135039817)|lt=Yamatano Shrine|qid=Q135039817}} — Inukami district
+* {{ill|Yamatano Shrine (Q135039818)|lt=Yamatano Shrine|qid=Q135039818}} — Sakata district
+* {{ill|Yamatano Shrine (Q135041395)|lt=Yamatano Shrine|qid=Q135041395}} — Toyota district
+* {{ill|山田神社 (Q134594949)|lt=山田神社|qid=Q134594949}} — Isumi
+* {{ill|山田神社 (Q134988864)|lt=山田神社|qid=Q134988864}} — Kan'onji
+* {{ill|山田神社 (Q135154387)|lt=山田神社|qid=Q135154387}} — Hitachiōta-shi
+* {{ill|山田神社 (Q135259958)|lt=山田神社|qid=Q135259958}} — Oyama
+* {{ill|山田神社 (Q135462807)|lt=山田神社|qid=Q135462807}} — Nishi-ku
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|山田神社|version=40698082|comment=Imported full ja history}}
+
+{{wikidata link|Q11470580|ja|山田神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

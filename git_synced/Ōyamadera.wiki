@@ -1,7 +1,7 @@
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:git synced pages]]
+[[Category:Independently git synced pages]]
 
 '''Ōyamadera''' (大山寺, also read as Oyamaji, Daisenji, and Taisanji) is a {{ill|Buddhism|en|Buddhism|qid=Q748|lt=Buddhist|1=Buddhism}} {{ill|Temple|en|Temple|qid=Q44539|lt=Temple|1=Temple}}. Temples with this name exist in various locations across Japan.
 

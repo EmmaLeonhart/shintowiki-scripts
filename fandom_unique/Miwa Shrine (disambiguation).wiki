@@ -1,0 +1,35 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Miwa_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25130039306|time triggered pipeline]] -->
+
+'''Miwa Shrine''' (美和神社) refers to multiple {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} with the name "Miwa."
+
+* {{ill|Miwa Shrine (Kiryu)|ja|美和神社 (桐生市)|12=simple|13=User:Immanuelle/Miwa Shrine (Kiryū)|qq=}} (Miyamoto Town, [[Kiryū City]], {{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture|1=Gunma Prefecture}}) - A {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} of [[Yamato District]], {{ill|Kōzuke Province|en|Kōzuke Province|qid=Q1054838|lt=Kōzuke Province|1=Kōzuke Province}}.
+* {{ill|Miwa Shrine (Fuefuki City)|ja|美和神社 (笛吹市)|1=Miwa Shrine (Fuefuki City)|12=simple|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|qq=}} ([[Misaka Town]], [[Fuefuki City]], {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}) - A [[Kokushi Genzaisha]] of {{ill|Kai Province|en|Kai Province|qid=Q858076|lt=Kai Province|1=Kai Province}}.
+* {{ill|Miwa Shrine (Nagano)|ja|美和神社 (長野市)|12=simple|13=User:Immanuelle/Miwa Shrine (Nagano)|qq=}} ({{ill|Miwa|en|Miwa|qid=Q23538316|lt=Miwa|1=Miwa}}, [[:en:Nagano City|Nagano City]], {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}) - A {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} of [[Mizunai District]], {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province|1=Shinano Province}}.
+* {{ill|Miwa Shrine (Setouchi, Higashisue)|ja|美和神社 (瀬戸内市長船町東須恵)|12=simple|13=User:Immanuelle/Miwa Shrine (Setouchi, Higashisue)|1=Miwa Shrine (Higashisue, Setouchi)|comment=changed title based on wikidata|qid=Q11608847}} ([[Higashisue]], [[Osafune Town]], [[Setouchi City]], {{ill|Okayama Prefecture|en|Okayama Prefecture|qid=Q132936|lt=Okayama Prefecture|1=Okayama Prefecture}}) - A {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} of [[Oku District]], {{ill|Bizen Province|en|Bizen Province|qid=Q1053688|lt=Bizen Province|1=Bizen Province}}.
+* {{ill|Miwa Shrine (Setouchi, Fukusato)|ja|美和神社 (瀬戸内市長船町福里)|12=simple|13=User:Immanuelle/Miwa Shrine (Setouchi, Fukusato)|1=Miwa Shrine (Fukusato, Setouchi)|comment=changed title based on wikidata|qid=Q11608849}} (Fukusato, Osafune Town, Setouchi City, Okayama Prefecture) - A reference site for the above Shikinaisha.
+
+== See Also ==
+* [[Ōmiwa Shrines]]
+* [[Miwa Shrines]]
+* {{ill|Mitsutorii|ja|三ツ鳥居|12=simple|13=User:Immanuelle/Mitsutorii|qq=}}
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Miwa Shrine (Q11608851)|lt=Miwa Shrine|qid=Q11608851}} — Shinano Province
+* {{ill|Miwa Shrine (Fukusato, Setouchi) (Q11608849)|lt=Miwa Shrine (Fukusato, Setouchi)|qid=Q11608849}} — Setouchi
+* {{ill|Miwa Shrine (Higashisue, Setouchi) (Q11608847)|lt=Miwa Shrine (Higashisue, Setouchi)|qid=Q11608847}} — Oku district
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|美和神社|version=103356498|comment=Imported full ja history}}
+
+{{wikidata link|Q11608846|ja|美和神社}}
+[[Category:Miwa Shrines]]
+[[Category:Miwa shrines]]
+[[Category:Shinto shrines by tradition]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

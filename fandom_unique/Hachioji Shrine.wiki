@@ -1,0 +1,141 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hachioji_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
+
+[[File:Hachioji Jinjya.JPG|250px|thumb|Hachioji Shrine at Fukazawa Mountain (Hachioji City)]]
+'''Hachioji Shrine''' (八王子神社) enshrines the {{ill|lt=Eight Princes (Hachioji Gongen)|Hachioji Gongen|ja|八王子権現|1=Hachiōji Gongen|12=simple|13=User:Immanuelle/lt=Eight Princes (Hachioji Gongen)|13=User:Immanuelle/Hachiōji Gongen|qq=}} (八柱の御子神) of {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}} (also known as {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}}). It is also referred to as '''Hachioji-miya''' or '''Yahashira Shrine''' (八柱神社), and there are numerous such shrines across Japan.
+
+== Overview ==
+
+Hachioji Shrines originated from the syncretic belief in {{ill|Hachioji Gongen|ja|八王子権現|1=Hachiōji Gongen|12=simple|13=User:Immanuelle/Hachioji Gongen|13=User:Immanuelle/Hachiōji Gongen|qq=}} under the system of {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu-shūgō|1=Shinbutsu-shūgō}}. 
+
+In {{ill|913|en|913|qid=Q24860|lt=913|1=913}}, Buddhist monk Kegon Bosatsu Myōgyō had a vision of Gozu Tennō and eight princes while practicing asceticism at Fukazawa Mountain, currently {{ill|Shiroyama (Hachioji City)|ja|城山 (八王子市)|12=simple|13=User:Immanuelle/Shiroyama (Hachioji City)|1=Mount Shiroyama|comment=changed title based on wikidata|qid=Q11426084}} in {{ill|Hachiōji|en|Hachiōji|qid=Q208863|lt=Hachioji City|1=Hachiōji}}, Tokyo. Inspired by this revelation, he enshrined {{ill|Hachioji Gongen|ja|八王子権現|1=Hachiōji Gongen|12=simple|13=User:Immanuelle/Hachioji Gongen|13=User:Immanuelle/Hachiōji Gongen|qq=}} at Fukazawa Mountain in {{ill|916|en|916|qid=Q24886|lt=916|1=916}}.
+
+Gozu Tennō, regarded as a Buddhist guardian deity, is believed to have had eight children with {{ill|Hariti|ja|頗梨采女|12=simple|13=User:Immanuelle/Hariti|1=Harisai-sho|comment=changed title based on wikidata|qid=Q1654753}}. These children are enshrined as the Hachioji deities.
+
+The eight princes were later associated with eight directions and calendar deities, also known as {{ill|Hasshōshin|ja|八将神|1=Eight Directional Deities|12=simple|13=User:Immanuelle/Hasshōshin|13=User:Immanuelle/Eight Directional Deities|qq=}}:
+* {{ill|Taisai-shin|ja|太歳神|1=Taisaijin|12=simple|13=User:Immanuelle/Taisai-shin|13=User:Immanuelle/Taisaijin|qq=}} (Jupiter, Sōkō Tennō)
+* {{ill|Daishōgun|ja|大将軍 (方位神)|1=Daishōgun (directional deity)|lt=Daishōgun|12=simple|13=User:Immanuelle/Daishōgun|13=User:Immanuelle/Daishōgun (directional deity)|qq=}} (Venus, Maō Tennō)
+* {{ill|Taion-shin|ja|太陰神|1=Taionjin|12=simple|13=User:Immanuelle/Taion-shin|13=User:Immanuelle/Taionjin|qq=}} (Saturn, Kumara Tennō)
+* {{ill|Saigyōshin|ja|歳刑神|12=simple|13=User:Immanuelle/Saigyōshin|qq=}} (Mercury, Tokutatsu Tennō)
+* {{ill|Saiha Shin|ja|歳破神|12=simple|13=User:Immanuelle/Saiha Shin|qq=}} (Saturn, Ryōji Tennō)
+* {{ill|Saisetsujin|ja|歳殺神|12=simple|13=User:Immanuelle/Saisetsujin|qq=}} (Mars, Jishin Tennō)
+* {{ill|Ōbanjin|ja|黄幡神|12=simple|13=User:Immanuelle/Ōbanjin|qq=}} (Rahu, Takushin Tennō)
+* {{ill|Hyōbijin|ja|豹尾神|12=simple|13=User:Immanuelle/Hyōbijin|qq=}} (Ketu, Jakidokikami Tennō)
+
+During the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu bunri|1=Shinbutsu bunri}} of the Meiji era, the eight princes were redefined as the {{ill|Five Male and Three Female Deities|ja|五男三女神|12=simple|13=User:Immanuelle/Five Male and Three Female Deities|ja_comment=jawiki redirects to アマテラスとスサノオの誓約}}, born from the {{ill|Ukei|ja|誓約|12=simple|13=User:Immanuelle/Ukei|ja_comment=jawiki redirects to 宣誓|1=Oath|comment=changed title based on wikidata|qid=Q381045}} between {{ill|Amaterasu|ja|アマテラス|12=simple|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to 天照大神}} and Susanoo:
+* {{ill|Ame-no-Oshihomimi|ja|正勝吾勝勝速日天之忍穂耳命|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|1=Ame-no-oshihomimi|comment=changed title based on wikidata|qid=Q462555}}
+* {{ill|Ame-no-Hohi|ja|天之菩卑能命|1=Ame no Hohi|12=simple|13=User:Immanuelle/Ame-no-Hohi|13=User:Immanuelle/Ame no Hohi|ja_comment=jawiki redirects to アメノホヒ}}
+* {{ill|Amatsuhikone|ja|天津日子根命|1=Amatsuhikone|12=simple|13=User:Immanuelle/Amatsuhikone|13=User:Immanuelle/Amatsuhikone|ja_comment=jawiki redirects to アマツヒコネ}}
+* {{ill|Ikutsuhikone|ja|活津日子根命|12=simple|13=User:Immanuelle/Ikutsuhikone|ja_comment=jawiki redirects to イクツヒコネ|1=Ikutsuhikone|comment=changed title based on wikidata|qid=Q11147583}}
+* {{ill|Kumanokusubi|ja|熊野久須毘命|12=simple|13=User:Immanuelle/Kumanokusubi|ja_comment=jawiki redirects to クマノクスビ}}
+* {{ill|Takiribime|ja|多紀理毘売命|1=Tagorihime|2=ja|3=タキリビメ|4=fr|5=Takiribime|6=zh|7=多紀理毘賣命|1=Tagorihime|12=simple|13=User:Immanuelle/Takiribime|13=User:Immanuelle/Tagorihime|comment=enwiki is a redirect}}
+* {{ill|Ichikishima-hime|ja|市寸島比売命|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}}
+* {{ill|Tagitsuhime|ja|多岐都比売命|1=Tagitsuhime|12=simple|13=User:Immanuelle/Tagitsuhime|13=User:Immanuelle/Tagitsuhime|ja_comment=jawiki redirects to タギツヒメ}}
+
+Certain shrines enshrine different deities. For example, at {{ill|Yasaka Shrine|en|Yasaka Shrine|qid=Q692714|lt=Yasaka Shrine|1=Yasaka Shrine}}, the eight princes are identified as [[Yashimajinumi]], {{ill|Isotakeru-no-Mikoto|ja|五十猛神|simple|User:Immanuelle/Isotakeru-no-kami|en:draft|10=fr|11=Isotakeru-no-kami|qid=Q10881556|lt=Isotakeru-no-kami|12=simple|13=User:Immanuelle/Isotakeru-no-Mikoto|qq=|1=Isotakeru-no-Mikoto}}, and other deities.
+
+{{ill|11|ja|大将軍八神社|1=Daishōgun Hachi Shrine|12=simple|13=User:Immanuelle/11|13=User:Immanuelle/Daishōgun Hachi Shrine|qq=}} identifies the two as such
+
+* {{ill|Taisaijin|ja|太歳神|12=simple|13=User:Immanuelle/Taisaijin|qq=}} ({{ill|Ame-no-oshihomimi|en|Ame-no-oshihomimi|qid=Q462555|lt=Ame-no-oshihomimi|1=Ame-no-oshihomimi}})
+* {{ill|Taionjin|ja|太陰神|12=simple|13=User:Immanuelle/Taionjin|qq=}} ({{ill|Ichikishima-hime|ja|市杵嶋姫命|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}})
+* {{ill|Saigyōshin|ja|歳刑神|12=simple|13=User:Immanuelle/Saigyōshin|qq=}} ({{ill|Tagorihime|ja|田心媛命|12=simple|13=User:Immanuelle/Tagorihime|ja_comment=jawiki redirects to タキリビメ}})
+* {{ill|Saiha Shin|ja|歳破神|12=simple|13=User:Immanuelle/Saiha Shin|qq=}} ({{ill|Tagitsuhime|ja|湍津姫命|1=Tagitsuhime|2=ja|3=タギツヒメ|4=zh|5=多岐都比賣命|6=fr|7=Tagitsuhime|12=simple|13=User:Immanuelle/Tagitsuhime|13=User:Immanuelle/Tagitsuhime|qq=}})
+* {{ill|Saisetsujin|ja|歳殺神|12=simple|13=User:Immanuelle/Saisetsujin|qq=}} ({{ill|Ame no Hohi|ja|天穂日神|12=simple|13=User:Immanuelle/Ame no Hohi|ja_comment=jawiki redirects to アメノホヒ}})
+* {{ill|Ōbanjin|ja|黄幡神|12=simple|13=User:Immanuelle/Ōbanjin|qq=}} ({{ill|Ikutsuhikone|ja|活津彦根神|12=simple|13=User:Immanuelle/Ikutsuhikone|ja_comment=jawiki redirects to イクツヒコネ|1=Ikutsuhikone|comment=changed title based on wikidata|qid=Q11147583}})
+* {{ill|Hyōbijin|ja|豹尾神|12=simple|13=User:Immanuelle/Hyōbijin|qq=}} ({{ill|Kumanokusubi|ja|熊野櫲樟日命|12=simple|13=User:Immanuelle/Kumanokusubi|ja_comment=jawiki redirects to クマノクスビ}})
+
+== Other Notable Hachioji Shrines ==
+; Kantō Region
+* {{ill|Hachioji Shrine (Saitama)|ja|八王子神社 (さいたま市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Saitama)|qq=}}
+* {{ill|Hachioji Shrine|lt=Hachioji Shrine|lt=Hachioji Shrine (Hachioji City)|ja|八王子神社 (八王子市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Hachioji City)|qq=}} - Located in {{ill|Motohachioji Town|ja|元八王子町|12=simple|13=User:Immanuelle/Motohachioji Town|1=Moto-Hachiōjimachi|comment=changed title based on wikidata|qid=Q11387784}}, Hachioji City, Tokyo (3-2735). Former site of {{ill|Hachiōji Castle|en|Hachiōji Castle|qid=Q2969389|lt=Hachioji Castle|1=Hachiōji Castle}}. Origin of the name "Hachioji City."
+* {{ill|Hachioji Shrine (Funabashi)|ja|八王子神社 (船橋市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Funabashi)|qq=}} - Located in {{ill|Kowagama Town|ja|古和釜町|12=simple|13=User:Immanuelle/Kowagama Town|1=Kowagamachō|comment=changed title based on wikidata|qid=Q11410982}}, Funabashi City, Chiba Prefecture.
+* {{ill|Hachioji Shrine (Chigasaki)|ja|八王子神社 (茅ヶ崎市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Chigasaki)|qq=}} - Located in {{ill|Motomura|ja|本村 (茅ヶ崎市)|12=simple|13=User:Immanuelle/Motomura|1=Honson|comment=changed title based on wikidata|qid=Q121603881}}, Chigasaki City, Kanagawa Prefecture.
+
+; Chūbu Region
+* {{ill|Hachioji Shrine (Iida City)|ja|八王子神社 (飯田市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Iida City)|ja_comment=jawiki link invalid|qid=Q135504531|1=Hachioji Shrine (Iida City)}}
+* {{ill|Hachioji Shrine (Omachi City)|ja|八王子神社 (大町市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Omachi City)|ja_comment=jawiki link invalid|qid=Q135504533|1=Hachioji Shrine (Omachi City)}} - Located in Tokiwa, Omachi City, Nagano Prefecture.
+* {{ill|Hachioji Shrine (Tatsuno Town, Nagano Prefecture)|ja|八王子神社 (長野県辰野町)|12=simple|13=User:Immanuelle/Hachioji Shrine (Tatsuno Town, Nagano Prefecture)|ja_comment=jawiki link invalid|qid=Q135504535|1=Hachioji Shrine (Tatsuno Town, Nagano Prefecture)}}
+* {{ill|Yahashira Shrine (Neba Village, Nagano Prefecture)|ja|八柱神社 (長野県根羽村)|12=simple|13=User:Immanuelle/Yahashira Shrine (Neba Village, Nagano Prefecture)|ja_comment=jawiki link invalid|qid=Q135504537|1=Yahashira Shrine (Neba Village, Nagano Prefecture)}} - Located in Mambase, Neba Village, Shimoina District, Nagano Prefecture.
+* {{ill|Hachioji Shrine (Ena City)|ja|八王子神社 (恵那市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Ena City)|qq=}}
+* {{ill|Hachioji Shrine (Iwata City)|ja|八王子神社 (磐田市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Iwata City)|ja_comment=jawiki link invalid|qid=Q135504539|1=Hachioji Shrine (Iwata City)}}
+* {{ill|Yahashira Shrine (Hamamatsu City)|ja|八柱神社 (浜松市)|12=simple|13=User:Immanuelle/Yahashira Shrine (Hamamatsu City)|ja_comment=jawiki link invalid|qid=Q135504540|1=Yahashira Shrine (Hamamatsu City)}} - Located in Irino Town, Nishi Ward, Hamamatsu City, Shizuoka Prefecture.
+* {{ill|Yahashira Shrine (Okazaki City)|ja|八柱神社 (岡崎市)|12=simple|13=User:Immanuelle/Yahashira Shrine (Okazaki City)|qq=}}
+* {{ill|Hachioji Shrine (Kariya City)|ja|八王子神社 (刈谷市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Kariya City)|qq=}}
+* {{ill|Yahashira Shrine (Hekinan)|ja|八柱神社 (碧南市)|12=simple|13=User:Immanuelle/Yahashira Shrine (Hekinan City)|qq=}}
+* {{ill|Yahashira Shrine (Toei Town, Aichi Prefecture)|ja|八柱神社 (愛知県東栄町)|12=simple|13=User:Immanuelle/Yahashira Shrine (Toei Town, Aichi Prefecture)|ja_comment=jawiki link invalid|qid=Q135504542|1=Yahashira Shrine (Toei Town, Aichi Prefecture)}}
+* {{ill|Hachioji Shrine (Minamichita Town)|ja|八王子社 (南知多町)|12=simple|13=User:Immanuelle/Hachioji Shrine (Minamichita Town)|qq=}}
+
+; Kinki Region
+* {{ill|Yahashira Shrine (Taiki Town)|ja|八柱神社 (大紀町)|12=simple|13=User:Immanuelle/Yahashira Shrine (Taiki Town)|ja_comment=jawiki link invalid|qid=Q135504544|1=Yahashira Shrine (Taiki Town)}} - Located in Ouchiyama 1138, Taiki Town, Watarai District, Mie Prefecture.
+* {{ill|Yahashira Shrine (Nara City)|ja|八柱神社 (奈良市)|12=simple|13=User:Immanuelle/Yahashira Shrine (Nara City)|ja_comment=jawiki link invalid|qid=Q135504546|1=Yahashira Shrine (Nara City)}}
+* {{ill|Hachioji Shrine (Nara)|ja|八王子社 (奈良市納院町)|12=simple|13=User:Immanuelle/Hachioji Shrine (Nara)|qq=}} - Located in Noincho, Nara City, Nara Prefecture. Enshrines {{ill|Oyamakui no Kami|en|Oyamakui no Kami|qid=Q10935105|lt=Oyamakui-no-Kami|1=Oyamakui no Kami}}.
+* {{ill|Hachioji Shrine (Kashihara City)|ja|八王子神社（橿原市）|12=simple|13=User:Immanuelle/Hachioji Shrine (Kashihara City)|ja_comment=jawiki link invalid|qid=Q135504549|1=Hachioji Shrine (Kashihara City)}} - Located at 336 Koyocho, Kashihara City, Nara Prefecture. Situated on the southern foothills of Ibe Mountain in southwestern Kashihara City.
+* {{ill|Hachioji Shrine (Kasai City)|ja|八王子神社 (加西市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Kasai City)|ja_comment=jawiki link invalid|qid=Q135504550|1=Hachioji Shrine (Kasai City)}} - Located in Taya Town, Kasai City, Hyōgo Prefecture.
+* {{ill|Hachioji Shrine (Osaka)|ja|八王子神社 (大阪市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Osaka City)|qid=Q135504552|1=Hachioji Shrine (Osaka)}} - Located in Nakamoto 4-chome, Higashinari Ward, Osaka City, Osaka Prefecture.
+* {{ill|Tokoyoki-hime Shrine|ja|常世岐姫神社|12=simple|13=User:Immanuelle/Tokoyoki-hime Shrine|qq=}} - Located in Jinguji 5-chome, Yao City, Osaka Prefecture. Formerly known as Hachioji Shrine.
+
+; Shikoku Region
+* {{ill|Hachioji Shrine (Muroto City)|ja|八王子宮 (室戸市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Muroto City)|ja_comment=jawiki link invalid|qid=Q135504554|1=Hachioji Shrine (Muroto City)}}
+* {{ill|Hachioji Shrine (Kami City)|ja|八王子宮 (香美市)|12=simple|13=User:Immanuelle/Hachioji Shrine (Kami City)|ja_comment=jawiki link invalid|qid=Q135504556|1=Hachioji Shrine (Kami City)}}
+* {{ill|Hachioji Shrine (Tosa-Yamada Town, Kochi Prefecture)|ja|八王子宮 (高知県土佐山田町)|12=simple|13=User:Immanuelle/Hachioji Shrine (Tosa-Yamada Town, Kochi Prefecture)|ja_comment=jawiki link invalid|qid=Q135504557|1=Hachioji Shrine (Tosa-Yamada Town, Kochi Prefecture)}}
+
+== Origin of Hachioji City ==
+The name "Hachioji City" originated during the Sengoku period when {{ill|Hōjō Ujiteru|en|Hōjō Ujiteru|qid=Q2790462|lt=Hōjō Ujiteru|1=Hōjō Ujiteru}} named his castle {{ill|Hachiōji Castle|en|Hachiōji Castle|qid=Q2969389|lt=Hachioji Castle|1=Hachiōji Castle}} after the legends of the eight princes.
+
+== See Also ==
+* {{ill|Ōji-no-Kami|ja|王子神|12=simple|13=User:Immanuelle/Ōji-no-Kami|qq=}}
+* {{ill|Hachi Shrine|ja|八神社|12=simple|13=User:Immanuelle/Hachi Shrine|qq=}}
+* {{ill|Gion cult|en|Gion cult|qid=Q11588425|lt=Gion Faith|1=Gion Faith}}
+
+{{Shinto}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Hachiōji Shrine (Q11391619)|lt=Hachiōji Shrine|qid=Q11391619}} — Funabashi
+* {{ill|Hachiōji Shrine (Q119929568)|lt=Hachiōji Shrine|qid=Q119929568}} — Chigasaki
+* {{ill|Hachiōji Shrine (Q119929597)|lt=Hachiōji Shrine|qid=Q119929597}} — Ena
+* {{ill|Hachiōji Shrine (Q124482330)|lt=Hachiōji Shrine|qid=Q124482330}} — Chūō-ku
+* {{ill|Hachiōji Shrine (Q124751666)|lt=Hachiōji Shrine|qid=Q124751666}} — Fujikawaguchiko
+* {{ill|Hachiōji Shrine (Q128755659)|lt=Hachiōji Shrine|qid=Q128755659}} — Higashinari-ku
+* {{ill|Hachiōji Shrine (Q132042040)|lt=Hachiōji Shrine|qid=Q132042040}} — Moto-Hachiōjimachi
+* {{ill|Hachiōji Shrine (Q134887404)|lt=Hachiōji Shrine|qid=Q134887404}} — Fukaya
+* {{ill|Hachiōji Shrine (Q134955675)|lt=Hachiōji Shrine|qid=Q134955675}} — Tenryū-ku
+* {{ill|Hachiōji Shrine (Q134955697)|lt=Hachiōji Shrine|qid=Q134955697}} — Kakegawa
+* {{ill|Hachiōji Shrine (Q134955731)|lt=Hachiōji Shrine|qid=Q134955731}} — Iwata
+* {{ill|Hachiōji Shrine (Q134956038)|lt=Hachiōji Shrine|qid=Q134956038}} — Tenryū-ku
+* {{ill|Hachiōji Shrine (Q134956071)|lt=Hachiōji Shrine|qid=Q134956071}} — Iwata
+* {{ill|Hachiōji Shrine (Q134956076)|lt=Hachiōji Shrine|qid=Q134956076}} — Iwata
+* {{ill|Hachiōji Shrine (Q134956333)|lt=Hachiōji Shrine|qid=Q134956333}} — Tenryū-ku
+* {{ill|Hachiōji Shrine (Q134956412)|lt=Hachiōji Shrine|qid=Q134956412}} — Aoi-ku
+* {{ill|Hachiōji Shrine (Q134956438)|lt=Hachiōji Shrine|qid=Q134956438}} — Shimada
+* {{ill|Hachiōji Shrine (Q134957147)|lt=Hachiōji Shrine|qid=Q134957147}} — Gotemba
+* {{ill|Hachiōji Shrine (Q134957315)|lt=Hachiōji Shrine|qid=Q134957315}} — Kakegawa
+* {{ill|Hachiōji Shrine (Q134957352)|lt=Hachiōji Shrine|qid=Q134957352}} — Fukuroi
+* {{ill|Hachiōji Shrine (Q134957438)|lt=Hachiōji Shrine|qid=Q134957438}} — Yaizu
+* {{ill|Hachiōji Shrine (Q134957678)|lt=Hachiōji Shrine|qid=Q134957678}} — Fukuroi
+* {{ill|Hachiōji Shrine (Q134957852)|lt=Hachiōji Shrine|qid=Q134957852}} — Fuji
+* {{ill|Hachiōji Shrine (Q134958189)|lt=Hachiōji Shrine|qid=Q134958189}} — Mishima
+* {{ill|Hachiōji Shrine (Q134958211)|lt=Hachiōji Shrine|qid=Q134958211}} — Fuji
+* {{ill|Hachiōji Shrine (Q134958261)|lt=Hachiōji Shrine|qid=Q134958261}} — Chūō Ward
+* {{ill|Hachiōji Shrine (Q134958340)|lt=Hachiōji Shrine|qid=Q134958340}} — Iwata
+* {{ill|Hachiōji Shrine (Q135153743)|lt=Hachiōji Shrine|qid=Q135153743}} — Namegata
+* {{ill|Hachiōji Shrine (Q135425222)|lt=Hachiōji Shrine|qid=Q135425222}} — Fujioka
+* {{ill|Hachiōji Shrine (Q135426011)|lt=Hachiōji Shrine|qid=Q135426011}} — Kiryū
+* {{ill|Hachiōji Shrine (Q96820108)|lt=Hachiōji Shrine|qid=Q96820108}} — Kariya
+* {{ill|八王子神社 (Q135463009)|lt=八王子神社|qid=Q135463009}} — Murakami
+* {{ill|八王子神社 (Q135463714)|lt=八王子神社|qid=Q135463714}} — Myōkō
+* {{ill|八王子神社 (Q135463771)|lt=八王子神社|qid=Q135463771}} — Nagaoka
+* {{ill|八王子神社 (Q135464448)|lt=八王子神社|qid=Q135464448}} — Kashiwazaki
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|八王子神社|version=102055341|comment=Imported full ja history}}
+
+{{wikidata link|Q11391618|ja|八王子神社}}
+[[Category:All disambiguation pages]]
+[[Category:Gion cult]]
+[[Category:Pages linked to by wikidata]]
+[[Category:Shinto shrines by tradition]]
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata no short description]]
+[[Category:Independently git synced pages]]

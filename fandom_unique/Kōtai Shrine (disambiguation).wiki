@@ -1,0 +1,28 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=K%C5%8Dtai_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
+
+
+{{Nihongo|'''Kōtai Shrine'''|皇大神社|Kōtai jinja}} is a name used by some {{ill|Shinmei shrines|en|Shinmei shrines|qid=Q11590310|lt=Shinmei shrines|1=Shinmei shrines}}
+
+== Main Kōtai Shrine ==  
+
+* {{ill|Tenshō Kōtai Shrine|ja|天照皇大神社 (伊東市)|12=simple|13=User:Immanuelle/Tenshō Kōtai Shrine|1=Tensho-Kotai Shrine|comment=changed title based on wikidata|qid=Q131925933}} – Shizuoka Prefecture, {{ill|Itō, Shizuoka|en|Itō, Shizuoka|qid=Q721163|lt=Itō|1=Itō, Shizuoka}} Shibamachi: Kusumi Shrine  
+* {{ill|Kōtai Shrine|ja|皇大神社 (福知山市)|lt=Kotai Shrine (Fukuchiyama)|12=simple|13=User:Immanuelle/Kōtai Shrine|qq=}} – Kyoto Prefecture, {{ill|Fukuchiyama, Kyoto|en|Fukuchiyama, Kyoto|qid=Q3355306|lt=Fukuchiyama|1=Fukuchiyama, Kyoto}} Ōe-chō Naikū: Motoise Kōdaijingū  
+* {{ill|Obama Kōtai Shrine|ja|小浜皇大神社|12=simple|13=User:Immanuelle/Obama Kōtai Shrine|1=Kohama Kōtai Shrine|comment=changed title based on wikidata|qid=Q11462621}} – Hyōgo Prefecture, {{ill|Takarazuka, Hyōgo|en|Takarazuka, Hyōgo|qid=Q823967|lt=Takarazuka|1=Takarazuka, Hyōgo}} Obama  
+* {{ill|Kōtai Shrine (Hiramatsuchō, Nara)|ja|皇大神社 (奈良市平松町)|lt=Kōtai Shrine (Hiramatsuchō, Nara)|12=simple|13=User:Immanuelle/Kōtai Shrine (Hiramatsuchō, Nara)|1=Kōtai Shrine (Shijōōji, Nara)|comment=changed title based on wikidata|qid=Q48754918}} – Nara Prefecture, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara|1=Nara (city)}} Hiramatsuchō  
+* {{ill|Kōtai Shrine (Shijōōji, Nara)|ja|皇大神社 (奈良市四条大路)|lt=Kōtai Shrine (Shijōōji, Nara)|12=simple|13=User:Immanuelle/Kōtai Shrine (Shijōōji, Nara)|qq=}} – Nara Prefecture, Nara City Shijōōji  
+
+==See Also==
+* {{ill|Tenso Shrine|ja|天祖神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Tenso Shrine|qq=}}
+* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}
+* {{ill|Kōtai Jingū (disambiguation)|ja|皇大神宮 (曖昧さ回避)|12=simple|13=User:Immanuelle/Kōtai Jingū (disambiguation)|qq=}}
+
+{{disambiguation}}
+{{draft categories|
+
+[[Category:shrine disambiguations]]
+
+}}
+[[Category:Pages without wikidata]]
+[[Category:Independently git synced pages]]
+{{wikidata link||en|Kōtai Shrine (disambiguation)}}
