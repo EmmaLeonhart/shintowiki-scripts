@@ -190,15 +190,24 @@ def extract_kanji_names(text: str) -> list[str]:
     seen = set()
     out = []
 
-    def add(s: str):
+    def add(s: str, *, min_len: int = MIN_KANJI_LEN):
+        """Validate and accept a candidate name.
+
+        `min_len` defaults to MIN_KANJI_LEN (3) — the standard
+        `<name>神社` shape needs at least 3 chars. Fallback paths
+        (template-driven extraction) pass min_len=2 so that 2-kanji
+        explicit mentions like `明治` (Meiji era) survive — at that
+        point the kanji has been deliberately surfaced by the page,
+        not heuristically picked up from the prose.
+        """
         s = s.strip()
         # Strip leading/trailing parentheticals and whitespace
         s = re.sub(r"\s*\([^)]*\)\s*$", "", s)
-        if len(s) < MIN_KANJI_LEN:
+        if len(s) < min_len:
             return
         # Must be majority CJK
         cjk_count = sum(1 for c in s if "一" <= c <= "鿿" or "぀" <= c <= "ヿ")
-        if cjk_count < MIN_KANJI_LEN:
+        if cjk_count < min_len:
             return
         # Must contain at least one kanji ideograph. Names that are
         # all hiragana/katakana (e.g. `いつくしまじんじゃ`,
@@ -207,7 +216,7 @@ def extract_kanji_names(text: str) -> list[str]:
         # rdfs:label values on Wikidata shrine items, so SPARQL would
         # return 0 hits. Filtering them out avoids burning a query.
         kanji_count = sum(1 for c in s if "一" <= c <= "鿿" or c in "々〆〇")
-        if kanji_count < 2:
+        if kanji_count < min(2, min_len):
             return
         # Reject if it contains characters that don't belong in a shrine name
         if any(c in s for c in "[]{}|=<>"):
@@ -230,19 +239,33 @@ def extract_kanji_names(text: str) -> list[str]:
         add(m.group(1))
 
     # 3) Fallback for pages without a bold lede: pull the canonical
-    # Japanese name out of {{translated page|ja|<kanji>|...}} or
-    # {{wikidata link|Q...|ja|<kanji>}} — both sit at the bottom of
-    # most pages and the second param after `ja` is the title on
-    # ja.wikipedia, which IS the canonical kanji form.
+    # Japanese name out of one of several templates that consistently
+    # carry the page's kanji form somewhere in their parameters.
     if not out:
-        for pat in (
-            r"\{\{translated page\|ja\|([^|}]+)",
-            r"\{\{wikidata link\|Q\d+\|ja\|([^|}]+)",
+        # 3a) {{translated page|ja|<kanji>|...}} — bottom-of-page
+        for m in re.finditer(r"\{\{translated page\|ja\|([^|}]+)", text):
+            add(m.group(1), min_len=2)
+    if not out:
+        # 3b) {{wikidata link|...|ja|<kanji>|...}} — `ja` may sit
+        # anywhere after the QID, not just immediately after.
+        # Handles e.g. {{wikidata link|Q1|en|Foo|ja|<kanji>|...}}
+        for m in re.finditer(r"\{\{wikidata link\|[^{}]*?\|ja\|([^|}]+)", text):
+            add(m.group(1), min_len=2)
+    if not out:
+        # 3c) Lede {{Nihongo|<en>|<kanji>|<romaji>}} as the first
+        # bold marker on pages like Kōtai Shrine (disambiguation),
+        # where there is no `'''<en>''' (<kanji>)` form.
+        for m in re.finditer(r"\{\{[Nn]ihongo\|[^|}]+\|([^|}]+)", text):
+            add(m.group(1), min_len=2)
+    if not out:
+        # 3d) Inline "the Japanese characters <kanji>" mentions —
+        # catches Meiji-style ledes that name the kanji in prose
+        # without bolding or templating them.
+        for m in re.finditer(
+            r"(?:Japanese characters?|kanji|written\s+(?:as|in)\s+(?:Japanese\s+as\s+)?)\s+([一-鿿々〆〇]{2,})",
+            text,
         ):
-            for m in re.finditer(pat, text):
-                add(m.group(1))
-            if out:
-                break
+            add(m.group(1), min_len=2)
 
     return out
 
