@@ -439,6 +439,12 @@ def main():
     ap.add_argument("--page", default=None, help="restrict to a single page (filename without .wiki or basename)")
     args = ap.parse_args()
 
+    # State here is purely for 429-recovery within a single sweep:
+    # if Wikidata starts 429-ing, we save progress and the NEXT
+    # invocation skips the pages we already handled in this sweep.
+    # Once a sweep completes cleanly (no 429), the state is reset so
+    # the next CI cycle re-processes every page from scratch — that's
+    # how new Wikidata shrine items get picked up automatically.
     state = load_state()
     processed: set[str] = set(state.get("processed", []))
 
@@ -450,6 +456,8 @@ def main():
             return 1
 
     print(f"Found {len(targets)} candidate shrine-disambig pages")
+    if processed:
+        print(f"Resuming: skipping {len(processed)} pages handled in a prior 429-aborted sweep")
     edits = 0
 
     for path in targets:
@@ -516,8 +524,13 @@ def main():
         # queries within a page).
         time.sleep(THROTTLE)
 
-    save_state({"processed": sorted(processed)})
-    print(f"\nDone. Edits this run: {edits}.")
+    # Clean sweep — reset state so the next CI cycle re-processes
+    # every page from the top and picks up any new Wikidata items.
+    # If we'd 429-aborted mid-sweep, we'd have already returned 0
+    # above with `save_state` carrying the partial progress.
+    if os.path.exists(STATE_FILE):
+        os.remove(STATE_FILE)
+    print(f"\nDone. Edits this run: {edits}. State cleared.")
     return 0
 
 
