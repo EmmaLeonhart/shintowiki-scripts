@@ -2,7 +2,7 @@
 {{出典の明記|date=2017年4月}}
 '''Kai clan''' (''kai-shi'') is one of the {{ill|clans|ja|氏族}} of {{ill|Japan|ja|日本}}. Three main branches and others are identified: the {{ill|Kai no Kuni no Miyatsuko|ja|甲斐国造}} lineage of {{ill|Kai Province|ja|甲斐}}, the {{ill|Fujiwara Northern House|ja|藤原北家}} {{ill|Kikuchi clan|ja|菊池氏}} lineage of {{ill|Higo|ja|肥後}}, and the {{ill|shugodai|ja|守護代}} '''Kai clan''' of {{ill|Echizen Province|ja|越前国|lt=Echizen|lt_ja=越前}}.
 == Kai clan (Kai no Kuni no Miyatsuko) ==
-{{日本の氏族
+{{Infobox Japanese clan
 |家名 = Kai clan
 |家紋 = 
 |家紋名称 =
@@ -17,7 +17,7 @@
 Begins with {{ill|Shiomi-no-Sukune|ja|塩海足尼}}, 4th-generation descendant of {{ill|Sahohiko-no-Mikoto|ja|狭穂彦命}}.
 
 == Kai clan (Kikuchi clan lineage) ==
-{{日本の氏族
+{{Infobox Japanese clan
 |家名= Kai clan
 |家紋= Chigai-taka-no-ha.svg
 |家紋名称= {{ruby|違い鷹の羽|Chigai-taka-no-ha}}
