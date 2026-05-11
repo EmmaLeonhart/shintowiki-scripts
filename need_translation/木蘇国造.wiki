@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E6%9C%A8%E8%98%87%E5%9B%BD%E9%80%A0 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
-{{日本の氏族
+{{Infobox Japanese clan
 |家名 = Kiso no Kuni no Miyatsuko
 |家紋 = 
 |家紋名称 =
@@ -43,5 +43,4 @@ Considering the ''{{ill|Wagaku Sōran|ja|和学総覧}}'', Iida and Nakada, and 
 [[Category:長野県の歴史|偽きそのくにのみやつこ]]
 [[Category:信濃国|偽きそのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 {{wikidata link||ja|木蘇国造}}

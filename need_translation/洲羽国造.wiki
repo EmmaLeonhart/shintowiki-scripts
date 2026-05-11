@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E6%B4%B2%E7%BE%BD%E5%9B%BD%E9%80%A0 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
-{{日本の氏族
+{{Infobox Japanese clan
 |家名 = Suwa no Kuni no Miyatsuko
 |家紋 = 
 |家紋名称 =
@@ -45,5 +45,4 @@ From the {{ill|Yayoi period|ja|弥生時代}} through the {{ill|Kofun period|ja|
 [[Category:長野県の歴史|偽すわのくにのみやつこ]]
 [[Category:信濃国|偽すわのくにのみやつこ]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
 {{wikidata link||ja|洲羽国造}}
