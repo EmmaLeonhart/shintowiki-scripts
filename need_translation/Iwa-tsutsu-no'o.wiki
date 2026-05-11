@@ -1,11 +1,9 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iwa-tsutsu-no%27o for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 {{Infobox deity|gender={{ill|male|qid=Q6581097|1=Male (gender)}}|parents={{ill|Kagu-tsuchi|qid=Q1640658|1=Kagu-tsuchi}}|offspring={{ill|Futsunushi|qid=Q1107286|1=Futsunushi}}}}
 
-'''イワツツノオ'''（イハツツノヲ）は、[[日本神話]]に登場する[[神 (神道)|神]]である。
-
 [[Image:Descendants of Izanagi and Izanami.svg|thumb|right|250px|Myth of the Birth of the Gods (The deities born by Izanagi and Izanami) [[Media:Descendants of Izanagi and Izanami.svg|View in SVG (supported browsers only)]]]]
 
-'''Iwatsutsunoo''' (also read Iwatsutsunowo) is a [[kami (Shinto)|deity]] appearing in [[Japanese mythology]].
+'''{{nihongo|Iwatsutsunoo|イワツツノオ|Iwatsutsunoo}}''' (also read Iwatsutsunowo; alternate kana form {{lang|ja|イハツツノヲ}}) is a [[kami (Shinto)|deity]] appearing in [[Japanese mythology]].
 
 == Overview ==
 In the ''[[Kojiki]]'' it is written as '''Ishitsutsu no O no Kami''', and in the ''[[Nihon Shoki]]'' as '''Iwatsutsu no O no Kami'''.
@@ -41,5 +39,3 @@ In a fragment of the {{ill|Tensho|qid=太白星}} quoted in works such as the ''
 [[Category:Japanese deities]]
 [[Category:War deities]]
 [[Category:Wikidata no short description]]
-[[Category:need translation]]
-[[Category:Need translation]]
