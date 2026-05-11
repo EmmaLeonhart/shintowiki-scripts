@@ -8,48 +8,48 @@
 !Ranking 3
 !
 |-
-|Myōjin Taisha
-|名神大社
+|Myōjin Taisha
+|{{lang|ja|名神大社}}
 |Kanpei-sha
-|官幣社
+|{{lang|ja|官幣社}}
 |Tsukinami-sai and Niiname-sai and Ainame-sai
-|月次相嘗新嘗
+|{{lang|ja|月次相嘗新嘗}}
 |-
 |Shikinai Taisha
-|式内大社
+|{{lang|ja|式内大社}}
 |Kokuhei-sha
-|国幣社
+|{{lang|ja|国幣社}}
 |Tsukinami-sai and Niiname-sai offerings
-|月次新嘗
+|{{lang|ja|月次新嘗}}
 |-
 |Shikinai Shōsha
-|式内小社
+|{{lang|ja|式内小社}}
 |
 |
 |Hoe and Quiver
-|鍬靫
+|{{lang|ja|鍬靫}}
 |-
 |
 |
 |
 |
 |Hoe
-|鍬
+|{{lang|ja|鍬}}
 |-
 |
 |
 |
 |
 |Quiver
-|靫
+|{{lang|ja|靫}}
 |}
 {| class="wikitable"
 |+Engishiki Combinations?
 |-
 | rowspan="3" |Kanpei-sha
-|Myōjin Taisha
+|Myōjin Taisha
 | rowspan="2" |Kanpei Taisha
-|Kanpei Myōjin Taisha?
+|Kanpei Myōjin Taisha?
 |-
 |Shikinai Taisha
 |Kanpei Shikinai Taisha?
@@ -58,9 +58,9 @@
 | colspan="2" |Kanpei Shosha
 |-
 | rowspan="3" |Kokuhei-sha
-|Myōjin Taisha
+|Myōjin Taisha
 | rowspan="2" |Kokuhei Taisha
-|Kokuhei Myōjin Taisha?
+|Kokuhei Myōjin Taisha?
 |-
 |Shikinai Taisha
 |Kokuhei Shikinai Taisha?
@@ -76,39 +76,38 @@
 |-
 | rowspan="3" |Kanpei-sha
 |Kanpei Taisha
-|官幣大社
+|{{lang|ja|官幣大社}}
 |-
 |Kanpei Chusha
-|官幣中社
+|{{lang|ja|官幣中社}}
 |-
 |Kanpei Shosha
-|官幣小社
+|{{lang|ja|官幣小社}}
 |-
 | rowspan="3" |Kokuhei-sha
 |Kokuhei Taisha
-|国幣大社
+|{{lang|ja|国幣大社}}
 |-
 |Kokuhei Chusha
-|国幣中社
+|{{lang|ja|国幣中社}}
 |-
 |Kokuhei Shosha
-|国幣小社
+|{{lang|ja|国幣小社}}
 |-
 | rowspan="4" |Min-sha
 |Fuken-sha
-|府県社
+|{{lang|ja|府県社}}
 |-
 |Gō-sha
-|郷社
+|{{lang|ja|郷社}}
 |-
 |Son-sha
-|村社
+|{{lang|ja|村社}}
 |-
 |Hokora
-|祠
+|{{lang|ja|祠}}
 |}
 [[Category:Special:LonelyPages November 4 2025]]
 
 [[Category:Pages without wikidata]]
-[[Category:Need translation]]
 {{wikidata link||en|Engishiki Ranks}}
