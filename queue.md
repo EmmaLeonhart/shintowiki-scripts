@@ -29,9 +29,13 @@ those instructions must actually be executed, not just present.
 
 Translate all of the [[Category:Need translation]] —
 `sync_need_translation.py` is a bidirectional file ↔ wiki mirror only;
-it does not translate. 215 of 216 files under `need_translation/`
-still contain CJK awaiting English translation. Per-page LLM work,
-batchable but judgement-heavy.
+it does not translate. As of 2026-05-10, 134 of 216 files under
+`need_translation/` still contain CJK awaiting English translation
+(down from 215; 81 cleared this session across commits 629e581
+through 40c519e). Per-page LLM work, batchable but judgement-heavy.
+The big remaining shape is genuine Japanese-prose kokuzo articles —
+the simpler "swap template name + drop category" cases were done in
+bulk via the maintenance-template renames in 40c519e.
 
 ## Pinned notes
 
