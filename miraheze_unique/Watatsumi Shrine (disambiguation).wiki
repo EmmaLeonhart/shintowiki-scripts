@@ -1,30 +1,30 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+
 The main shrine of Watatsumi is [[Shikaumi Shrines]] the ancestral shrine of the [[Azumi people]]
 
 '''Kaijin Shrine''' (海神社, also read as Amajinja, Kaijinja, or Watatsumijinja) refers to various [[Shrine|Shinto shrines]]:
 
-* [[Watatsumi Shrine_(Kobe)|Watatsumi Shrines]] - Located in {{ill|Tarumi-ku, Kobe|en|Tarumi-ku, Kobe|qid=Q1078806|lt=Tarumi-ku, Kobe|1=Tarumi-ku, Kobe}}, {{ill|Kobe|en|Kobe|qid=Q48320|lt=Kobe|1=Kobe}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}. It is a {{ill|Myōjin Taisha|ja|名神大社|lt=Shikinaisha Myōjin Taisha|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}} and a former {{ill|Kanpeichūsha|ja|官幣中社|12=simple|13=User:Immanuelle/Kanpeichūsha|ja_comment=jawiki redirects to 近代社格制度|1=Modern system of ranked Shinto shrines|comment=changed title based on wikidata|qid=Q712534}}.
-* {{ill|Kaijin Shrine (Toyooka)|ja|海神社 (豊岡市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Toyooka)|ja_comment=jawiki link invalid}} - Located in {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka City|1=Toyooka, Hyōgo}}, Hyōgo Prefecture. It is a Shikinaisha Myōjin Taisha and a former {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|lt=Sonsha|12=simple|13=User:Immanuelle/Village Shrine|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
-* {{ill|Kaijin Shrine (Kinokawa)|ja|海神社 (紀の川市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Kinokawa)|qq=}} - Located in {{ill|Kinokawa, Wakayama|en|Kinokawa, Wakayama|qid=Q697002|lt=Kinokawa, Wakayama|1=Kinokawa, Wakayama}}, {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture|1=Wakayama Prefecture}}. It is a former {{ill|Prefectural Shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|lt=Kensha|12=simple|13=User:Immanuelle/Prefectural Shrine|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
-* {{ill|Kaijin Shrine (Nishinoshima)|ja|海神社 (西ノ島町)|12=simple|13=User:Immanuelle/Kaijin Shrine (Nishinoshima)|1=Kai Shrine|comment=changed title based on wikidata|qid=Q11559097}} - Located in {{ill|Nishinoshima, Shimane|en|Nishinoshima, Shimane|qid=Q543193|lt=Nishinoshima, Shimane|1=Nishinoshima, Shimane}}, [[:en:Oki District|Oki District]], {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}. It is a Shikinaisha Shōsha (minor shrine) and a former Village Shrine.
-* {{ill|Kaijin Shrine (Iki)|ja|海神社 (壱岐市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Iki)|ja_comment=jawiki link invalid}} - Located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City|1=Iki, Nagasaki}}, {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}. It is a Shikinaisha Taisha and a former Village Shrine.
+* [[Watatsumi Shrine_(Kobe)|Watatsumi Shrines]] - Located in {{ill|Tarumi-ku, Kobe|en|Tarumi-ku, Kobe|qid=Q1078806|lt=Tarumi-ku, Kobe}}, {{ill|Kobe|en|Kobe|qid=Q48320|lt=Kobe}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}. It is a {{ill|Myōjin Taisha|ja|名神大社|lt=Shikinaisha Myōjin Taisha|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}} and a former {{ill|Modern system of ranked Shinto shrines|ja|官幣中社|12=simple|13=User:Immanuelle/Kanpeichūsha|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}.
+* {{ill|Kaijin Shrine (Toyooka)|ja|海神社 (豊岡市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Toyooka)|ja_comment=jawiki link invalid}} - Located in {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka City}}, Hyōgo Prefecture. It is a Shikinaisha Myōjin Taisha and a former {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|lt=Sonsha|12=simple|13=User:Immanuelle/Village Shrine|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+* {{ill|Kaijin Shrine (Kinokawa)|ja|海神社 (紀の川市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Kinokawa)|qq=}} - Located in {{ill|Kinokawa, Wakayama|en|Kinokawa, Wakayama|qid=Q697002|lt=Kinokawa, Wakayama}}, {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}. It is a former {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|lt=Kensha|12=simple|13=User:Immanuelle/Prefectural Shrine|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+* {{ill|Kai Shrine|ja|海神社 (西ノ島町)|12=simple|13=User:Immanuelle/Kaijin Shrine (Nishinoshima)|comment=changed title based on wikidata|qid=Q11559097}} - Located in {{ill|Nishinoshima, Shimane|en|Nishinoshima, Shimane|qid=Q543193|lt=Nishinoshima, Shimane}}, [[:en:Oki District|Oki District]], {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}. It is a Shikinaisha Shōsha (minor shrine) and a former Village Shrine.
+* {{ill|Kaijin Shrine (Iki)|ja|海神社 (壱岐市)|12=simple|13=User:Immanuelle/Kaijin Shrine (Iki)|ja_comment=jawiki link invalid}} - Located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City}}, {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}. It is a Shikinaisha Taisha and a former Village Shrine.
 
 Watatsumi Shrine can refer to the following
 
 * [[Watatsumi Shrine_(Kobe)|Watatsumi Shrines]]
 * [[Watazumi Shrines]] sometimes read as Watatsumi Shrine
 * [[Kaijin Shrines]] sometimes read as Watatsumi Shrine
-* Another shrine to {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi|1=Watatsumi}}
+* Another shrine to {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi}}
 
 == Other shrines ==
 
-* {{ill|Kaido Shrine|ja|海童神社|12=simple|13=User:Immanuelle/Kaido Shrine|ja_comment=jawiki redirects to 海童神社 (新上五島町)}} - known for its whalebone torii, Located in {{ill|Kawasoe, Saga|en|Kawasoe, Saga|qid=Q6379877|lt=Kawasoemachi|1=Kawasoe, Saga}}, {{ill|Saga District, Saga|en|Saga District, Saga|qid=Q1049340|lt=Saga District|1=Saga District, Saga}}, {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga Prefecture|1=Saga Prefecture}}. Former Gō-sha.
+* {{ill|Kaido Shrine|ja|海童神社|12=simple|13=User:Immanuelle/Kaido Shrine|ja_comment=jawiki redirects to 海童神社 (新上五島町)}} - known for its whalebone torii, Located in {{ill|Kawasoe, Saga|en|Kawasoe, Saga|qid=Q6379877|lt=Kawasoemachi}}, {{ill|Saga District, Saga|en|Saga District, Saga|qid=Q1049340|lt=Saga District}}, {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga Prefecture}}. Former Gō-sha.
 
 == Related Articles ==
 There are also shrines with similar names, such as '''Kaijin Shrine''' and '''Watatsumi Shrine''' (綿津見神社, Watatsumijinja).
 *
-* {{ill|Kaizumi Shrine|ja|海積神社|12=simple|13=User:Immanuelle/Kaizumi Shrine|ja_comment=jawiki link invalid}} - Located in {{ill|Okazaki, Aichi|en|Okazaki, Aichi|qid=Q242783|lt=Okazaki, Aichi|1=Okazaki, Aichi}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}. Former Village Shrine.
-* {{ill|Kaitomi Shrine|ja|海都見神社|12=simple|13=User:Immanuelle/Kaitomi Shrine|ja_comment=jawiki link invalid}} - Located in {{ill|Yusuhara|en|Yusuhara|qid=Q1206286|lt=Yusuhara, Kōchi|1=Yusuhara}}, {{ill|Takaoka District, Kōchi|en|Takaoka District, Kōchi|qid=Q736755|lt=Takaoka District|1=Takaoka District, Kōchi}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture|1=Kōchi Prefecture}}. Former Gō-sha (district shrine).
+* {{ill|Kaizumi Shrine|ja|海積神社|12=simple|13=User:Immanuelle/Kaizumi Shrine|ja_comment=jawiki link invalid}} - Located in {{ill|Okazaki, Aichi|en|Okazaki, Aichi|qid=Q242783|lt=Okazaki, Aichi}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}. Former Village Shrine.
+* {{ill|Kaitomi Shrine|ja|海都見神社|12=simple|13=User:Immanuelle/Kaitomi Shrine|ja_comment=jawiki link invalid}} - Located in {{ill|Yusuhara|en|Yusuhara|qid=Q1206286|lt=Yusuhara, Kōchi}}, {{ill|Takaoka District, Kōchi|en|Takaoka District, Kōchi|qid=Q736755|lt=Takaoka District}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture}}. Former Gō-sha (district shrine).
 *
 
 == See Also different title https://ja.wikipedia.org/wiki/%E7%B6%BF%E6%B4%A5%E8%A6%8B%E7%A5%9E%E7%A4%BE ==
@@ -39,7 +39,6 @@ There are also shrines with similar names, such as '''Kaijin Shrine''' and '''Wa
 * https://ja.wikipedia.org/wiki/%E7%A3%AF%E8%89%AF%E7%A5%9E%E7%A4%BE_(%E8%8C%A8%E6%9C%A8%E5%B8%82)
 {{disambiguation}}{{Watatsumi and Sumiyoshi Faiths}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Amano Shrine (Q135040693)|lt=Amano Shrine|qid=Q135040693}} — Kinosaki district
@@ -52,11 +51,10 @@ There are also shrines with similar names, such as '''Kaijin Shrine''' and '''Wa
 * {{ill|Watatsumi Shrine (Kobe) (Q11559098)|lt=Watatsumi Shrine (Kobe)|qid=Q11559098}} — Akashi district
 * {{ill|海神社 (Q134603206)|lt=海神社|qid=Q134603206}} — Chōsei-mura
 * {{ill|海神社 (Q134603218)|lt=海神社|qid=Q134603218}} — Chōsei-mura
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|海神社|version=101902230|comment=Imported full ja history}}
 
-{{wikidata link|Q123530063|en|Watatsumi Shrine|ja|海神社}}
+{{wikidata link|Q123530063|en|Watatsumi Shrine|ja|海神社|check_date=2026-05-12}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

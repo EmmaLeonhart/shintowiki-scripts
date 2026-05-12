@@ -1,13 +1,13 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+
 '''Wakamiya-sha''' (若宮社) refers to Shinto shrines across Japan. Some are distinguished by additional place names.
 
-* {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachiman Shrine|1=Iwashimizu Hachimangū}} subsidiary shrine - Kyoto Prefecture, Yawata City; shrine building designated as an Important Cultural Property.
-* {{ill|Yoshida Shrine|en|Yoshida Shrine|qid=Q713177|lt=Yoshida Shrine|1=Yoshida Shrine}} subsidiary shrine - Kyoto Prefecture, Kyoto City, Sakyo Ward.
-* {{ill|Ōmiwa Shrine|en|Ōmiwa Shrine|qid=Q705542|lt=Ōmiwa Shrine|1=Ōmiwa Shrine}} subsidiary shrine; another name for {{ill|Ōtataneko Shrine|ja|大直禰子神社|12=simple|13=User:Immanuelle/Ōtataneko Shrine|qq=}} - Nara Prefecture, Sakurai City.
-* {{ill|Hiro Hachiman Shrine|en|Hiro Hachiman Shrine|qid=Q391335|lt=Hiro Hachiman Shrine|1=Hiro Hachiman Shrine}} subsidiary shrine - Wakayama Prefecture, Hirogawa Town; shrine building designated as an Important Cultural Property.
+* {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachiman Shrine}} subsidiary shrine - Kyoto Prefecture, Yawata City; shrine building designated as an Important Cultural Property.
+* {{ill|Yoshida Shrine|en|Yoshida Shrine|qid=Q713177|lt=Yoshida Shrine}} subsidiary shrine - Kyoto Prefecture, Kyoto City, Sakyo Ward.
+* {{ill|Ōmiwa Shrine|en|Ōmiwa Shrine|qid=Q705542|lt=Ōmiwa Shrine}} subsidiary shrine; another name for {{ill|Ōtataneko Shrine|ja|大直禰子神社|12=simple|13=User:Immanuelle/Ōtataneko Shrine|qq=}} - Nara Prefecture, Sakurai City.
+* {{ill|Hiro Hachiman Shrine|en|Hiro Hachiman Shrine|qid=Q391335|lt=Hiro Hachiman Shrine}} subsidiary shrine - Wakayama Prefecture, Hirogawa Town; shrine building designated as an Important Cultural Property.
 * {{ill|Wakamiya-sha (Gosen)|ja|若宮社（五泉市)|12=simple|13=User:Immanuelle/Wakamiya-sha (Gosen)|ja_comment=jawiki link invalid}} - Niigata Prefecture, Gosen City.
 * {{ill|Suzumemori Wakamiya-sha|ja|雀森若宮社|12=simple|13=User:Immanuelle/Suzumemori Wakamiya-sha|ja_comment=jawiki link invalid}} - Niigata Prefecture, Tsubame City.
-* {{ill|Wakamiya-sha (Okazaki)|ja|若宮社 (岡崎市)|12=simple|13=User:Immanuelle/Wakamiya-sha (Okazaki)|ja_comment=jawiki redirects to 額田地区|1=Q17214124|comment=changed title based on wikidata|qid=Q17214124}} - Aichi Prefecture, Okazaki City.
+* {{ill|Q17214124|ja|若宮社 (岡崎市)|12=simple|13=User:Immanuelle/Wakamiya-sha (Okazaki)|ja_comment=jawiki redirects to 額田地区|comment=changed title based on wikidata|qid=Q17214124}} - Aichi Prefecture, Okazaki City.
 * {{ill|Hakusan Shrine (Heguri)|ja|白山神社 (平群町)|12=simple|13=User:Immanuelle/Hakusan Shrine (Heguri)|qq=}} subsidiary shrine - Nara Prefecture, Heguri Town.
 * {{ill|Chinjyu Wakamiya-sha|ja|鎮守若宮社|12=simple|13=User:Immanuelle/Chinjyu Wakamiya-sha|ja_comment=jawiki link invalid}} - Ehime Prefecture, Matsuyama City.
 * {{ill|Wakamiya-sha (Saga)|ja|若宮社 (佐賀市)|12=simple|13=User:Immanuelle/Wakamiya-sha (Saga)|ja_comment=jawiki link invalid}} - Saga Prefecture, Saga City.
@@ -19,7 +19,6 @@
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Wakamiya Shrine (Q134956116)|lt=Wakamiya Shrine|qid=Q134956116}} — Aoi-ku
@@ -43,11 +42,10 @@
 * {{ill|Wakamiya Shrine (Q135464318)|lt=Wakamiya Shrine|qid=Q135464318}} — Nagaoka
 * {{ill|Wakamiya Shrine (Q135464535)|lt=Wakamiya Shrine|qid=Q135464535}} — Kashiwazaki
 * {{ill|Wakamiya-sha (Q139661011)|lt=Wakamiya-sha|qid=Q139661011}} — Hikari
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|若宮社|version=103429407|comment=Imported full ja history}}
 
-{{wikidata link|Q11616278|ja|若宮社}}
+{{wikidata link|Q11616278|ja|若宮社|check_date=2026-05-12}}
 [[Category: disambiguation pages]]
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
