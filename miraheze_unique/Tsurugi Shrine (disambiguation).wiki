@@ -1,24 +1,25 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-'''Tsurugi Shrine''' (剣神社・剱神社・劔神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}}.
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsurugi_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
 
-* {{ill|Tsurugi Shrine (Yokohama)|ja|劔神社 (横浜市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Yokohama)|ja_comment=jawiki link invalid}} - Located in {{ill|Aoba-ku, Yokohama|en|Aoba-ku, Yokohama|qid=Q1203361|lt=Aoba Ward, Yokohama|1=Aoba-ku, Yokohama}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture|1=Kanagawa Prefecture}}.
-* {{ill|Tsurugi Shrine|lt=Tsurugi Shrine (Echizen)|ja|劔神社|12=simple|13=User:Immanuelle/Tsurugi Shrine|qq=}} - Located in {{ill|Echizen, Fukui (town)|en|Echizen, Fukui (town)|qid=Q1280737|lt=Echizen, Fukui|1=Echizen, Fukui (town)}}, {{ill|Nyū District, Fukui|en|Nyū District, Fukui|qid=Q1204551|lt=Nyu District, Fukui|1=Nyū District, Fukui}}, {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture|1=Fukui Prefecture}}.
-* {{ill|Tsurugi Shrine (Sabae)|ja|劔神社 (鯖江市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Sabae)|ja_comment=jawiki link invalid}} - Located in {{ill|Sabae, Fukui|en|Sabae, Fukui|qid=Q847598|lt=Sabae, Fukui|1=Sabae, Fukui}}, Fukui Prefecture.
-* {{ill|Tsurugi Shrine (Tsuruga Azouno)|ja|劒神社 (敦賀市莇生野)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Azouno)|ja_comment=jawiki link invalid}} - Located in {{ill|Tsuruga, Fukui|en|Tsuruga, Fukui|qid=Q847581|lt=Tsuruga, Fukui|1=Tsuruga, Fukui}}, Azouno, Fukui Prefecture.
+'''Tsurugi Shrine''' (剣神社・剱神社・劔神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}}.
+
+* {{ill|Tsurugi Shrine (Yokohama)|ja|劔神社 (横浜市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Yokohama)|ja_comment=jawiki link invalid}} - Located in {{ill|Aoba-ku, Yokohama|en|Aoba-ku, Yokohama|qid=Q1203361|lt=Aoba Ward, Yokohama}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}.
+* {{ill|Tsurugi Shrine|lt=Tsurugi Shrine (Echizen)|ja|劔神社|12=simple|13=User:Immanuelle/Tsurugi Shrine|qq=}} - Located in {{ill|Echizen, Fukui (town)|en|Echizen, Fukui (town)|qid=Q1280737|lt=Echizen, Fukui}}, {{ill|Nyū District, Fukui|en|Nyū District, Fukui|qid=Q1204551|lt=Nyu District, Fukui}}, {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}.
+* {{ill|Tsurugi Shrine (Sabae)|ja|劔神社 (鯖江市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Sabae)|ja_comment=jawiki link invalid}} - Located in {{ill|Sabae, Fukui|en|Sabae, Fukui|qid=Q847598|lt=Sabae, Fukui}}, Fukui Prefecture.
+* {{ill|Tsurugi Shrine (Tsuruga Azouno)|ja|劒神社 (敦賀市莇生野)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Azouno)|ja_comment=jawiki link invalid}} - Located in {{ill|Tsuruga, Fukui|en|Tsuruga, Fukui|qid=Q847581|lt=Tsuruga, Fukui}}, Azouno, Fukui Prefecture.
 * {{ill|Tsurugi Shrine (Tsuruga Urasoko)|ja|劒神社 (敦賀市浦底)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Urasoko)|ja_comment=jawiki link invalid}} - Located in Tsuruga, Urasoko, Fukui Prefecture.
 * {{ill|Tsurugi Shrine (Tsuruga Yokohama)|ja|劒神社 (敦賀市横浜)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Yokohama)|ja_comment=jawiki link invalid}} - Located in Tsuruga, Yokohama, Fukui Prefecture.
 * {{ill|Tsurugi Shrine (Tsuruga Wakuno)|ja|劒神社 (敦賀市和久野)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Wakuno)|ja_comment=jawiki link invalid}} - Located in Tsuruga, Wakuno, Fukui Prefecture.
 * {{ill|Tsurugi Shrine (Tsuruga Te)|ja|劒神社 (敦賀市手)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Tsuruga Te)|ja_comment=jawiki link invalid}} - Located in Tsuruga, Te, Fukui Prefecture.
-* {{ill|Tsurugi Shrine (Kyoto)|ja|剣神社 (京都市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Kyoto)|ja_comment=jawiki link invalid}} - Located in {{ill|Higashiyama-ku, Kyoto|en|Higashiyama-ku, Kyoto|qid=Q1203862|lt=Higashiyama Ward, Kyoto|1=Higashiyama-ku, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}.
-* {{ill|Tsurugi Shrine (Miyoshi)|ja|劔神社 (三好市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Miyoshi)|1=Tsurugi Shrine|comment=changed title based on wikidata|qid=Q65249387}} - Located in {{ill|Miyoshi, Tokushima|en|Miyoshi, Tokushima|qid=Q990371|lt=Miyoshi, Tokushima|1=Miyoshi, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}.
-* {{ill|Tsurugi Sanhonzan Hongū Shrine|ja|劔山本宮劔神社|12=simple|13=User:Immanuelle/Tsurugi Sanhonzan Hongū Shrine|1=Hozoseki Shrine|comment=changed title based on wikidata|qid=Q134926274}} - Located in {{ill|Mima, Tokushima|en|Mima, Tokushima|qid=Q857828|lt=Mima, Tokushima|1=Mima, Tokushima}}, Tokushima Prefecture.
-* {{ill|Tsurugi Shrine (Matsue)|ja|劔神社 (松江市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Matsue)|ja_comment=jawiki link invalid}} - Located in {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue, Shimane|1=Matsue}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}.
-* {{ill|Tsurugi Shrine (Hōfu)|ja|劔神社 (防府市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Hōfu)|qq=}} - Located in {{ill|Hōfu|en|Hōfu|qid=Q502209|lt=Hōfu, Yamaguchi|1=Hōfu}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture|1=Yamaguchi Prefecture}}.
-* Tsurugi Shrine - Located in {{ill|Kurate, Fukuoka|en|Kurate, Fukuoka|qid=Q629799|lt=Kurate, Fukuoka|1=Kurate, Fukuoka}}, {{ill|Kurate District, Fukuoka|en|Kurate District, Fukuoka|qid=Q1206433|lt=Kurate District, Fukuoka|1=Kurate District, Fukuoka}}, Fukuoka Prefecture (Kizuki 1349).
+* {{ill|Tsurugi Shrine (Kyoto)|ja|剣神社 (京都市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Kyoto)|ja_comment=jawiki link invalid}} - Located in {{ill|Higashiyama-ku, Kyoto|en|Higashiyama-ku, Kyoto|qid=Q1203862|lt=Higashiyama Ward, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}.
+* {{ill|Tsurugi Shrine|ja|劔神社 (三好市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Miyoshi)|comment=changed title based on wikidata|qid=Q65249387}} - Located in {{ill|Miyoshi, Tokushima|en|Miyoshi, Tokushima|qid=Q990371|lt=Miyoshi, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}.
+* {{ill|Hozoseki Shrine|ja|劔山本宮劔神社|12=simple|13=User:Immanuelle/Tsurugi Sanhonzan Hongū Shrine|comment=changed title based on wikidata|qid=Q134926274}} - Located in {{ill|Mima, Tokushima|en|Mima, Tokushima|qid=Q857828|lt=Mima, Tokushima}}, Tokushima Prefecture.
+* {{ill|Tsurugi Shrine (Matsue)|ja|劔神社 (松江市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Matsue)|ja_comment=jawiki link invalid}} - Located in {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue, Shimane}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}.
+* {{ill|Tsurugi Shrine (Hōfu)|ja|劔神社 (防府市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Hōfu)|qq=}} - Located in {{ill|Hōfu|en|Hōfu|qid=Q502209|lt=Hōfu, Yamaguchi}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture}}.
+* Tsurugi Shrine - Located in {{ill|Kurate, Fukuoka|en|Kurate, Fukuoka|qid=Q629799|lt=Kurate, Fukuoka}}, {{ill|Kurate District, Fukuoka|en|Kurate District, Fukuoka|qid=Q1206433|lt=Kurate District, Fukuoka}}, Fukuoka Prefecture (Kizuki 1349).
 * Tsurugi Shrine - Located in Kurate, Fukuoka Prefecture (Niibi 1998).
-* {{ill|Tsurugi Shrine (Nogata)|ja|劔神社 (直方市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Nogata)|qq=}} - Located in {{ill|Nōgata, Fukuoka|en|Nōgata, Fukuoka|qid=Q861296|lt=Nogata, Fukuoka|1=Nōgata, Fukuoka}}, Fukuoka Prefecture.
-* Tsurugi Shrine - Located in {{ill|Miyawaka|en|Miyawaka|qid=Q990431|lt=Miyawaka, Fukuoka|1=Miyawaka}}, Ryūtoku 1639, Fukuoka Prefecture.
-* {{ill|Tsurugi Shrine (Kirishima)|ja|剱神社|12=simple|13=User:Immanuelle/Tsurugi Shrine (Kirishima)|qq=}} - Located in {{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima, Kagoshima|1=Kirishima, Kagoshima}}, Shikine, Kagoshima Prefecture.
+* {{ill|Tsurugi Shrine (Nogata)|ja|劔神社 (直方市)|12=simple|13=User:Immanuelle/Tsurugi Shrine (Nogata)|qq=}} - Located in {{ill|Nōgata, Fukuoka|en|Nōgata, Fukuoka|qid=Q861296|lt=Nogata, Fukuoka}}, Fukuoka Prefecture.
+* Tsurugi Shrine - Located in {{ill|Miyawaka|en|Miyawaka|qid=Q990431|lt=Miyawaka, Fukuoka}}, Ryūtoku 1639, Fukuoka Prefecture.
+* {{ill|Tsurugi Shrine (Kirishima)|ja|剱神社|12=simple|13=User:Immanuelle/Tsurugi Shrine (Kirishima)|qq=}} - Located in {{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima, Kagoshima}}, Shikine, Kagoshima Prefecture.
 
 {{disambiguation}}
 
@@ -28,7 +29,7 @@
 
 {{Commons category|Tsurugi-jinja}}
 
-{{wikidata link|Q11397926|co|commons:Category:Tsurugi-jinja|ja|剣神社}}
+{{wikidata link|Q11397926|co|commons:Category:Tsurugi-jinja|ja|剣神社|check_date=2026-05-12}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
