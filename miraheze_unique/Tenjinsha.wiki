@@ -1,67 +1,86 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-{{otheruses||Shrines enshrining {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}|Tenmangū}}
-'''Tenjinja''' (天神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}. The name is read as "Tenjinja" or "Amatsukamuyashiro."
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tenjinsha for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+
+{{otheruses||Shrines enshrining {{ill|Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}|Tenmangū}}
+'''Tenjinja''' (天神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}. The name is read as "Tenjinja" or "Amatsukamuyashiro."
 
 == Tohoku Region ==
-* {{ill|Tenjinja (Tome)|ja|天神社 (登米市)|12=simple|13=User:Immanuelle/Tenjinja (Tome)|ja_comment=jawiki link invalid}} - Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome, Miyagi|1=Tome, Miyagi}}, Miyagi Prefecture.
+* {{ill|Tenjinja (Tome)|ja|天神社 (登米市)|12=simple|13=User:Immanuelle/Tenjinja (Tome)|ja_comment=jawiki link invalid}} - Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome, Miyagi}}, Miyagi Prefecture.
 
 == Kanto Region ==
-* {{ill|Tenjinja (Shiroi)|ja|天神社 (白井市)|12=simple|13=User:Immanuelle/Tenjinja (Shiroi)|1=Tenjinsha (Shiroi)|comment=changed title based on wikidata|qid=Q17191784}} - Located in {{ill|Shiroi|en|Shiroi|qid=Q519187|lt=Shiroi, Chiba|1=Shiroi}}, Chiba Prefecture.
+* {{ill|Tenjinsha (Shiroi)|ja|天神社 (白井市)|12=simple|13=User:Immanuelle/Tenjinja (Shiroi)|comment=changed title based on wikidata|qid=Q17191784}} - Located in {{ill|Shiroi|en|Shiroi|qid=Q519187|lt=Shiroi, Chiba}}, Chiba Prefecture.
 * Tenjinja (Isumi) - Located in Isumi, Chiba Prefecture, in Misaki Town, Choja.
-* {{ill|Tenjinja (Nishitokyo)|ja|天神社 (西東京市)|12=simple|13=User:Immanuelle/Tenjinja (Nishitokyo)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q11443284}} - Located in {{ill|Nishitokyo|en|Nishitokyo|qid=Q242882|lt=Nishitokyo|1=Nishitokyo}}, Tokyo.
-* {{ill|Tenjinja (Mitaka)|ja|天神社 (三鷹市)|12=simple|13=User:Immanuelle/Tenjinja (Mitaka)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q119929555}} - Located in {{ill|Mitaka, Tokyo|en|Mitaka, Tokyo|qid=Q242885|lt=Mitaka, Tokyo|1=Mitaka, Tokyo}}, Tokyo.
-* {{ill|Tenjinja (Shiki)|ja|天神社 (志木市)|12=simple|13=User:Immanuelle/Tenjinja (Shiki)|1=Tenjinsha (Shiki)|comment=changed title based on wikidata|qid=Q128866564}} - Located in {{ill|Shiki, Saitama|en|Shiki, Saitama|qid=Q877202|lt=Shiki, Saitama|1=Shiki, Saitama}}, Saitama Prefecture.
-* {{ill|Tenjinja (Kamisato)|ja|天神社 (上里町五明)|12=simple|13=User:Immanuelle/Tenjinja (Kamisato)|1=Tenjin-sha (Q70725130)|comment=changed title based on wikidata|qid=Q70725130}} - Located in Kamisato, Saitama.
-* {{ill|Tenjinja (Saitama-Chuo)|ja|天神社 (さいたま市中央区)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Chuo)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q134886924}} - Located in Saitama City, Chuo Ward.
-* {{ill|Tenjinja (Saitama-Minamiku-Futonoya)|ja|天神社 (さいたま市見沼区風渡野)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Minamiku-Futonoya)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q124482321}} - Located in Futonoya, Minamiku, Saitama City.
-* {{ill|Tenjinja (Saitama-Midoriku-Terayama)|ja|天神社 (さいたま市緑区寺山)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Midoriku-Terayama)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q124482332}} - Located in Terayama, Midoriku, Saitama City.
-* {{ill|Tenjinja (Kuki-Kitahiroshima)|ja|天神社 (久喜市北広島)|12=simple|13=User:Immanuelle/Tenjinja (Kuki-Kitahiroshima)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q124482384}} - Located in Kitahiroshima, Kuki City.
-* {{ill|Tenjinja (Hanyu-Kamikawasaki)|ja|天神社 (羽生市上川崎)|12=simple|13=User:Immanuelle/Tenjinja (Hanyu-Kamikawasaki)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q128866707}} - Located in Kamikawasaki, Hanyu City.
-* {{ill|Tenjinja (Kazo-Hiranaga)|ja|天神社 (加須市平永)|12=simple|13=User:Immanuelle/Tenjinja (Kazo-Hiranaga)|1=Tenjinsha (Kazo-Hiranaga)|comment=changed title based on wikidata|qid=Q131900999}} - Located in Hiranaga, Kazo City.
-* {{ill|Tenjinja (Yokosuka)|ja|天神社 (横須賀市)|12=simple|13=User:Immanuelle/Tenjinja (Yokosuka)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q134892406}} ({{ill|Kurihama Tenjinja|ja|久里浜天神社|12=simple|13=User:Immanuelle/Kurihama Tenjinja|ja_comment=jawiki redirects to 天神社 (横須賀市)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q134892406}}) - Located in {{ill|Yokosuka|en|Yokosuka|qid=Q200578|lt=Yokosuka|1=Yokosuka}}, Kanagawa Prefecture.
+* {{ill|Tenjin-sha|ja|天神社 (西東京市)|12=simple|13=User:Immanuelle/Tenjinja (Nishitokyo)|comment=changed title based on wikidata|qid=Q11443284}} - Located in {{ill|Nishitokyo|en|Nishitokyo|qid=Q242882|lt=Nishitokyo}}, Tokyo.
+* {{ill|Tenjin-sha|ja|天神社 (三鷹市)|12=simple|13=User:Immanuelle/Tenjinja (Mitaka)|comment=changed title based on wikidata|qid=Q119929555}} - Located in {{ill|Mitaka, Tokyo|en|Mitaka, Tokyo|qid=Q242885|lt=Mitaka, Tokyo}}, Tokyo.
+* {{ill|Tenjinsha (Shiki)|ja|天神社 (志木市)|12=simple|13=User:Immanuelle/Tenjinja (Shiki)|comment=changed title based on wikidata|qid=Q128866564}} - Located in {{ill|Shiki, Saitama|en|Shiki, Saitama|qid=Q877202|lt=Shiki, Saitama}}, Saitama Prefecture.
+* {{ill|Tenjin-sha (Q70725130)|ja|天神社 (上里町五明)|12=simple|13=User:Immanuelle/Tenjinja (Kamisato)|comment=changed title based on wikidata|qid=Q70725130}} - Located in Kamisato, Saitama.
+* {{ill|Tenjin-sha|ja|天神社 (さいたま市中央区)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Chuo)|comment=changed title based on wikidata|qid=Q134886924}} - Located in Saitama City, Chuo Ward.
+* {{ill|Tenjin-sha|ja|天神社 (さいたま市見沼区風渡野)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Minamiku-Futonoya)|comment=changed title based on wikidata|qid=Q124482321}} - Located in Futonoya, Minamiku, Saitama City.
+* {{ill|Tenjin-sha|ja|天神社 (さいたま市緑区寺山)|12=simple|13=User:Immanuelle/Tenjinja (Saitama-Midoriku-Terayama)|comment=changed title based on wikidata|qid=Q124482332}} - Located in Terayama, Midoriku, Saitama City.
+* {{ill|Tenjin-sha|ja|天神社 (久喜市北広島)|12=simple|13=User:Immanuelle/Tenjinja (Kuki-Kitahiroshima)|comment=changed title based on wikidata|qid=Q124482384}} - Located in Kitahiroshima, Kuki City.
+* {{ill|Tenjin-sha|ja|天神社 (羽生市上川崎)|12=simple|13=User:Immanuelle/Tenjinja (Hanyu-Kamikawasaki)|comment=changed title based on wikidata|qid=Q128866707}} - Located in Kamikawasaki, Hanyu City.
+* {{ill|Tenjinsha (Kazo-Hiranaga)|ja|天神社 (加須市平永)|12=simple|13=User:Immanuelle/Tenjinja (Kazo-Hiranaga)|comment=changed title based on wikidata|qid=Q131900999}} - Located in Hiranaga, Kazo City.
+* {{ill|Tenjin-sha|ja|天神社 (横須賀市)|12=simple|13=User:Immanuelle/Tenjinja (Yokosuka)|comment=changed title based on wikidata|qid=Q134892406}} ({{ill|Tenjin-sha|ja|久里浜天神社|12=simple|13=User:Immanuelle/Kurihama Tenjinja|ja_comment=jawiki redirects to 天神社 (横須賀市)|comment=changed title based on wikidata|qid=Q134892406}}) - Located in {{ill|Yokosuka|en|Yokosuka|qid=Q200578|lt=Yokosuka}}, Kanagawa Prefecture.
 
 == Chubu Region ==
-* {{ill|Tenjinja (Kurobe)|ja|天神社 (黒部市)|12=simple|13=User:Immanuelle/Tenjinja (Kurobe)|qq=}} - Located in {{ill|Kurobe, Toyama|en|Kurobe, Toyama|qid=Q753864|lt=Kurobe, Toyama|1=Kurobe, Toyama}}, Toyama Prefecture.
-* {{ill|Tenjinja (Fujikawaguchiko-Oarashi)|ja|天神社 (富士河口湖町大嵐)|12=simple|13=User:Immanuelle/Tenjinja (Fujikawaguchiko-Oarashi)|ja_comment=jawiki link invalid}} - Located in Oarashi, {{ill|Fujikawaguchiko|en|Fujikawaguchiko|qid=Q1004231|lt=Fujikawaguchiko|1=Fujikawaguchiko}}, Yamanashi Prefecture. ⇒ {{ill|Oarashi Tenjinja|ja|大嵐天神社|12=simple|13=User:Immanuelle/Oarashi Tenjinja|1=Ōarashi Tenjin Shrine|comment=changed title based on wikidata|qid=Q11435083}}
-* {{ill|Tenmantenjinja (Iida)|ja|天満天神社 (飯田市)|12=simple|13=User:Immanuelle/Tenmantenjinja (Iida)|ja_comment=jawiki link invalid}} - Located in Nakanomachi, {{ill|Iida, Nagano|en|Iida, Nagano|qid=Q841129|lt=Iida, Nagano|1=Iida, Nagano}}, Nagano Prefecture. ⇒ {{ill|Fumon-in (Iida)|ja|普門院 (飯田市)|12=simple|13=User:Immanuelle/Fumon-in (Iida)|1=Fumonin Tenmangu|comment=changed title based on wikidata|qid=Q38266934}}
-* {{ill|Tenjinja (Nagoya)|ja|天神社 (名古屋市中区)|12=simple|13=User:Immanuelle/Tenjinja (Nagoya)|ja_comment=jawiki link invalid}} - Located in {{ill|Naka-ku, Nagoya|en|Naka-ku, Nagoya|qid=Q1207921|lt=Naka-ku, Nagoya|1=Naka-ku, Nagoya}}, Aichi Prefecture. ⇒ {{ill|Sakura Tenjinja|ja|桜天神社|12=simple|13=User:Immanuelle/Sakura Tenjinja|1=Sakura-tenjinsha|comment=changed title based on wikidata|qid=Q11537963}}
-* {{ill|Tenjinja (Obu)|ja|天神社 (大府市)|12=simple|13=User:Immanuelle/Tenjinja (Obu)|ja_comment=jawiki link invalid}} - Located in Nagasago, {{ill|Ōbu|en|Ōbu|qid=Q384809|lt=Obu, Aichi|1=Ōbu}}, Aichi Prefecture. ⇒ {{ill|Nagakusa Tenjin Shrine|en|Nagakusa Tenjin Shrine|qid=Q11653648|lt=Nagasago Tenjinja|1=Nagakusa Tenjin Shrine}}
-* {{ill|Tenjinja (Toyokawa)|ja|天神社 (豊川市)|12=simple|13=User:Immanuelle/Tenjinja (Toyokawa)|ja_comment=jawiki link invalid}} - Located in Mikamicho, {{ill|Toyokawa, Aichi|en|Toyokawa, Aichi|qid=Q389495|lt=Toyokawa, Aichi|1=Toyokawa, Aichi}}, Aichi Prefecture.
-* {{ill|Tenjinja (Komaki)|ja|天神社 (小牧市)|12=simple|13=User:Immanuelle/Tenjinja (Komaki)|ja_comment=jawiki link invalid}} - Located in Shimazu, {{ill|Komaki|en|Komaki|qid=Q389537|lt=Komaki|1=Komaki}}, Aichi Prefecture. ⇒ Tenmantenjinja
-* {{ill|Tenjinja (Kasukawa)|ja|天神社 (春日井市勝川町)|12=simple|13=User:Immanuelle/Tenjinja (Kasukawa)|1=Ten Shrine|comment=changed title based on wikidata|qid=Q65259331}} - Located in Katsukawacho, {{ill|Kasugai, Aichi|en|Kasugai, Aichi|qid=Q26101|lt=Kasugai|1=Kasugai, Aichi}}, Aichi Prefecture.
-* {{ill|Tenjinja (Kiyosu)|ja|天神社 (清須市)|12=simple|13=User:Immanuelle/Tenjinja (Kiyosu)|ja_comment=jawiki link invalid}} - Located in {{ill|Kiyosu|en|Kiyosu|qid=Q502407|lt=Kiyosu|1=Kiyosu}}, Aichi Prefecture.
-* {{ill|Tenjinja (Mihama)|ja|天神社 (愛知県美浜町)|12=simple|13=User:Immanuelle/Tenjinja (Mihama)|ja_comment=jawiki link invalid}} - Located in {{ill|Mihama, Aichi|en|Mihama, Aichi|qid=Q1203828|lt=Mihama, Aichi|1=Mihama, Aichi}}, Aichi Prefecture. ⇒ {{ill|Kowa Tenjinja|ja|河和天神社|12=simple|13=User:Immanuelle/Kowa Tenjinja|ja_comment=jawiki link invalid}}
-* {{ill|Kitano Tenjinja (Konan)|ja|北野天神社 (江南市)|12=simple|13=User:Immanuelle/Kitano Tenjinja (Konan)|1=Kitano Tenjinsha (Konan)|comment=changed title based on wikidata|qid=Q11404278}} - Located in Kitanocho, {{ill|Kōnan, Aichi|en|Kōnan, Aichi|qid=Q820496|lt=Konan, Aichi|1=Kōnan, Aichi}}, Aichi Prefecture.
-* {{ill|Hokai Tenjinja|ja|宝海天神社|12=simple|13=User:Immanuelle/Hokai Tenjinja|1=Hōmi Tenjinsha|comment=changed title based on wikidata|qid=Q44393958}} - Located in Homi Town, {{ill|Tahara, Aichi|en|Tahara, Aichi|qid=Q501891|lt=Tahara, Aichi|1=Tahara, Aichi}}, Aichi Prefecture.
-* {{ill|Yoshida Tenjinja|ja|吉田天神社|12=simple|13=User:Immanuelle/Yoshida Tenjinja|1=Yoshida Tenmangū|comment=changed title based on wikidata|qid=Q18054946}} - Located in Hirokoji, {{ill|Toyohashi|en|Toyohashi|qid=Q336431|lt=Toyohashi, Aichi|1=Toyohashi}}, Aichi Prefecture.
+* {{ill|Tenjinja (Kurobe)|ja|天神社 (黒部市)|12=simple|13=User:Immanuelle/Tenjinja (Kurobe)|qq=}} - Located in {{ill|Kurobe, Toyama|en|Kurobe, Toyama|qid=Q753864|lt=Kurobe, Toyama}}, Toyama Prefecture.
+* {{ill|Tenjinja (Fujikawaguchiko-Oarashi)|ja|天神社 (富士河口湖町大嵐)|12=simple|13=User:Immanuelle/Tenjinja (Fujikawaguchiko-Oarashi)|ja_comment=jawiki link invalid}} - Located in Oarashi, {{ill|Fujikawaguchiko|en|Fujikawaguchiko|qid=Q1004231|lt=Fujikawaguchiko}}, Yamanashi Prefecture. ⇒ {{ill|Ōarashi Tenjin Shrine|ja|大嵐天神社|12=simple|13=User:Immanuelle/Oarashi Tenjinja|comment=changed title based on wikidata|qid=Q11435083}}
+* {{ill|Tenmantenjinja (Iida)|ja|天満天神社 (飯田市)|12=simple|13=User:Immanuelle/Tenmantenjinja (Iida)|ja_comment=jawiki link invalid}} - Located in Nakanomachi, {{ill|Iida, Nagano|en|Iida, Nagano|qid=Q841129|lt=Iida, Nagano}}, Nagano Prefecture. ⇒ {{ill|Fumonin Tenmangu|ja|普門院 (飯田市)|12=simple|13=User:Immanuelle/Fumon-in (Iida)|comment=changed title based on wikidata|qid=Q38266934}}
+* {{ill|Tenjinja (Nagoya)|ja|天神社 (名古屋市中区)|12=simple|13=User:Immanuelle/Tenjinja (Nagoya)|ja_comment=jawiki link invalid}} - Located in {{ill|Naka-ku, Nagoya|en|Naka-ku, Nagoya|qid=Q1207921|lt=Naka-ku, Nagoya}}, Aichi Prefecture. ⇒ {{ill|Sakura-tenjinsha|ja|桜天神社|12=simple|13=User:Immanuelle/Sakura Tenjinja|comment=changed title based on wikidata|qid=Q11537963}}
+* {{ill|Tenjinja (Obu)|ja|天神社 (大府市)|12=simple|13=User:Immanuelle/Tenjinja (Obu)|ja_comment=jawiki link invalid}} - Located in Nagasago, {{ill|Ōbu|en|Ōbu|qid=Q384809|lt=Obu, Aichi}}, Aichi Prefecture. ⇒ {{ill|Nagakusa Tenjin Shrine|en|Nagakusa Tenjin Shrine|qid=Q11653648|lt=Nagasago Tenjinja}}
+* {{ill|Tenjinja (Toyokawa)|ja|天神社 (豊川市)|12=simple|13=User:Immanuelle/Tenjinja (Toyokawa)|ja_comment=jawiki link invalid}} - Located in Mikamicho, {{ill|Toyokawa, Aichi|en|Toyokawa, Aichi|qid=Q389495|lt=Toyokawa, Aichi}}, Aichi Prefecture.
+* {{ill|Tenjinja (Komaki)|ja|天神社 (小牧市)|12=simple|13=User:Immanuelle/Tenjinja (Komaki)|ja_comment=jawiki link invalid}} - Located in Shimazu, {{ill|Komaki|en|Komaki|qid=Q389537|lt=Komaki}}, Aichi Prefecture. ⇒ Tenmantenjinja
+* {{ill|Ten Shrine|ja|天神社 (春日井市勝川町)|12=simple|13=User:Immanuelle/Tenjinja (Kasukawa)|comment=changed title based on wikidata|qid=Q65259331}} - Located in Katsukawacho, {{ill|Kasugai, Aichi|en|Kasugai, Aichi|qid=Q26101|lt=Kasugai}}, Aichi Prefecture.
+* {{ill|Tenjinja (Kiyosu)|ja|天神社 (清須市)|12=simple|13=User:Immanuelle/Tenjinja (Kiyosu)|ja_comment=jawiki link invalid}} - Located in {{ill|Kiyosu|en|Kiyosu|qid=Q502407|lt=Kiyosu}}, Aichi Prefecture.
+* {{ill|Tenjinja (Mihama)|ja|天神社 (愛知県美浜町)|12=simple|13=User:Immanuelle/Tenjinja (Mihama)|ja_comment=jawiki link invalid}} - Located in {{ill|Mihama, Aichi|en|Mihama, Aichi|qid=Q1203828|lt=Mihama, Aichi}}, Aichi Prefecture. ⇒ {{ill|Kowa Tenjinja|ja|河和天神社|12=simple|13=User:Immanuelle/Kowa Tenjinja|ja_comment=jawiki link invalid}}
+* {{ill|Kitano Tenjinsha (Konan)|ja|北野天神社 (江南市)|12=simple|13=User:Immanuelle/Kitano Tenjinja (Konan)|comment=changed title based on wikidata|qid=Q11404278}} - Located in Kitanocho, {{ill|Kōnan, Aichi|en|Kōnan, Aichi|qid=Q820496|lt=Konan, Aichi}}, Aichi Prefecture.
+* {{ill|Hōmi Tenjinsha|ja|宝海天神社|12=simple|13=User:Immanuelle/Hokai Tenjinja|comment=changed title based on wikidata|qid=Q44393958}} - Located in Homi Town, {{ill|Tahara, Aichi|en|Tahara, Aichi|qid=Q501891|lt=Tahara, Aichi}}, Aichi Prefecture.
+* {{ill|Yoshida Tenmangū|ja|吉田天神社|12=simple|13=User:Immanuelle/Yoshida Tenjinja|comment=changed title based on wikidata|qid=Q18054946}} - Located in Hirokoji, {{ill|Toyohashi|en|Toyohashi|qid=Q336431|lt=Toyohashi, Aichi}}, Aichi Prefecture.
 
 == Kinki Region ==
-* {{ill|Tenjinja (Osaka-Fukushima)|ja|天神社 (大阪市福島区)|12=simple|13=User:Immanuelle/Tenjinja (Osaka-Fukushima)|1=Tenjinsha (Osaka-Fukushima)|comment=changed title based on wikidata|qid=Q11443281}} - Located in {{ill|Fukushima-ku, Osaka|en|Fukushima-ku, Osaka|qid=Q985728|lt=Fukushima-ku, Osaka|1=Fukushima-ku, Osaka}}, Osaka Prefecture.
-* Tenjinja (Osaka Kita-ku) - Located in Kokubunji, Kita-ku, Osaka. ⇒ {{ill|Yodogawa Tenjinja|ja|淀川天神社|12=simple|13=User:Immanuelle/Yodogawa Tenjinja|1=Yodogawatenjin Shrine|comment=changed title based on wikidata|qid=Q11559710}}
-* Tenjinja (Osaka Higashisumiyoshi-ku) - Located in Kuwazu, Higashisumiyoshi-ku, Osaka. ⇒ {{ill|Kuwazu Tenjinja|ja|桑津天神社|12=simple|13=User:Immanuelle/Kuwazu Tenjinja|1=Kuwazu Tenjinsha|comment=changed title based on wikidata|qid=Q11537573}}
-* Tenjinja (Toyonaka) - Located in Kamishinden, {{ill|Toyonaka|en|Toyonaka|qid=Q467479|lt=Toyonaka|1=Toyonaka}}, Osaka Prefecture. ⇒ {{ill|Kamishinden Tenjinja|ja|上新田天神社|12=simple|13=User:Immanuelle/Kamishinden Tenjinja|1=Kamishinden Tenjinsha|comment=changed title based on wikidata|qid=Q11359060}}
-* {{ill|Tenjinja (Kawachinagano)|ja|天神社 (河内長野市)|12=simple|13=User:Immanuelle/Tenjinja (Kawachinagano)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q11443280}} - Located in {{ill|Kawachinagano|en|Kawachinagano|qid=Q819572|lt=Kawachinagano|1=Kawachinagano}}, Osaka Prefecture.
-* {{ill|Tenjinja (Kadoma)|ja|天神社 (門真市)|12=simple|13=User:Immanuelle/Tenjinja (Kadoma)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q17218451}} - Located in Tsukidecho, {{ill|Kadoma, Osaka|en|Kadoma, Osaka|qid=Q496080|lt=Kadoma|1=Kadoma, Osaka}}, Osaka Prefecture.
-* {{ill|Tenjinja (Kizugawa)|ja|天神社 (木津川市)|12=simple|13=User:Immanuelle/Tenjinja (Kizugawa)|ja_comment=jawiki link invalid}} - Located in Yamashiro, {{ill|Kizugawa, Kyoto|en|Kizugawa, Kyoto|qid=Q990352|lt=Kizugawa|1=Kizugawa, Kyoto}}, Kyoto Prefecture.
-* {{ill|Tenjinja (Nara-Takabatake)|ja|天神社 (奈良市高畑町)|12=simple|13=User:Immanuelle/Tenjinja (Nara-Takabatake)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q22119505}} - Located in Takabatakecho, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara|1=Nara (city)}}, Nara Prefecture.
-* {{ill|Tenjinja (Yamatotakada)|ja|天神社 (大和高田市)|12=simple|13=User:Immanuelle/Tenjinja (Yamatotakada)|1=Tenjin-sha|comment=changed title based on wikidata|qid=Q30924881}} - Located in Miwacho, {{ill|Yamatotakada, Nara|en|Yamatotakada, Nara|qid=Q838669|lt=Yamatotakada|1=Yamatotakada, Nara}}, Nara Prefecture.
-* Tenjinja (Sakurai) - Located in Saimiyama, {{ill|Sakurai, Nara|en|Sakurai, Nara|qid=Q127026|lt=Sakurai, Nara|1=Sakurai, Nara}}, Nara Prefecture.
+* {{ill|Tenjinsha (Osaka-Fukushima)|ja|天神社 (大阪市福島区)|12=simple|13=User:Immanuelle/Tenjinja (Osaka-Fukushima)|comment=changed title based on wikidata|qid=Q11443281}} - Located in {{ill|Fukushima-ku, Osaka|en|Fukushima-ku, Osaka|qid=Q985728|lt=Fukushima-ku, Osaka}}, Osaka Prefecture.
+* Tenjinja (Osaka Kita-ku) - Located in Kokubunji, Kita-ku, Osaka. ⇒ {{ill|Yodogawatenjin Shrine|ja|淀川天神社|12=simple|13=User:Immanuelle/Yodogawa Tenjinja|comment=changed title based on wikidata|qid=Q11559710}}
+* Tenjinja (Osaka Higashisumiyoshi-ku) - Located in Kuwazu, Higashisumiyoshi-ku, Osaka. ⇒ {{ill|Kuwazu Tenjinsha|ja|桑津天神社|12=simple|13=User:Immanuelle/Kuwazu Tenjinja|comment=changed title based on wikidata|qid=Q11537573}}
+* Tenjinja (Toyonaka) - Located in Kamishinden, {{ill|Toyonaka|en|Toyonaka|qid=Q467479|lt=Toyonaka}}, Osaka Prefecture. ⇒ {{ill|Kamishinden Tenjinsha|ja|上新田天神社|12=simple|13=User:Immanuelle/Kamishinden Tenjinja|comment=changed title based on wikidata|qid=Q11359060}}
+* {{ill|Tenjin-sha|ja|天神社 (河内長野市)|12=simple|13=User:Immanuelle/Tenjinja (Kawachinagano)|comment=changed title based on wikidata|qid=Q11443280}} - Located in {{ill|Kawachinagano|en|Kawachinagano|qid=Q819572|lt=Kawachinagano}}, Osaka Prefecture.
+* {{ill|Tenjin-sha|ja|天神社 (門真市)|12=simple|13=User:Immanuelle/Tenjinja (Kadoma)|comment=changed title based on wikidata|qid=Q17218451}} - Located in Tsukidecho, {{ill|Kadoma, Osaka|en|Kadoma, Osaka|qid=Q496080|lt=Kadoma}}, Osaka Prefecture.
+* {{ill|Tenjinja (Kizugawa)|ja|天神社 (木津川市)|12=simple|13=User:Immanuelle/Tenjinja (Kizugawa)|ja_comment=jawiki link invalid}} - Located in Yamashiro, {{ill|Kizugawa, Kyoto|en|Kizugawa, Kyoto|qid=Q990352|lt=Kizugawa}}, Kyoto Prefecture.
+* {{ill|Tenjin-sha|ja|天神社 (奈良市高畑町)|12=simple|13=User:Immanuelle/Tenjinja (Nara-Takabatake)|comment=changed title based on wikidata|qid=Q22119505}} - Located in Takabatakecho, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara}}, Nara Prefecture.
+* {{ill|Tenjin-sha|ja|天神社 (大和高田市)|12=simple|13=User:Immanuelle/Tenjinja (Yamatotakada)|comment=changed title based on wikidata|qid=Q30924881}} - Located in Miwacho, {{ill|Yamatotakada, Nara|en|Yamatotakada, Nara|qid=Q838669|lt=Yamatotakada}}, Nara Prefecture.
+* Tenjinja (Sakurai) - Located in Saimiyama, {{ill|Sakurai, Nara|en|Sakurai, Nara|qid=Q127026|lt=Sakurai, Nara}}, Nara Prefecture.
 * Tenjinja - Located in Kawahara 4-chome, Kusatsu, Shiga Prefecture.
-* {{ill|Tenjinja (Akashi)|ja|天神社 (明石市)|12=simple|13=User:Immanuelle/Tenjinja (Akashi)|qq=}} - Located in {{ill|Akashi, Hyōgo|en|Akashi, Hyōgo|qid=Q26406|lt=Akashi|1=Akashi, Hyōgo}}, Hyōgo Prefecture.
+* {{ill|Tenjinja (Akashi)|ja|天神社 (明石市)|12=simple|13=User:Immanuelle/Tenjinja (Akashi)|qq=}} - Located in {{ill|Akashi, Hyōgo|en|Akashi, Hyōgo|qid=Q26406|lt=Akashi}}, Hyōgo Prefecture.
 
 == Shikoku Region ==
-* {{ill|Tokushima Bizen Tenjinja|ja|徳島眉山天神社|12=simple|13=User:Immanuelle/Tokushima Bizen Tenjinja|1=Tokushima Bizan Tenjinsha|comment=changed title based on wikidata|qid=Q11489852}} - Located in {{ill|Bizencho|ja|眉山町|12=simple|13=User:Immanuelle/Bizencho|1=Bizanchō|comment=changed title based on wikidata|qid=Q11582582}}, {{ill|Tokushima (city)|en|Tokushima (city)|qid=Q207309|lt=Tokushima|1=Tokushima (city)}}, Tokushima Prefecture.
+* {{ill|Tokushima Bizan Tenjinsha|ja|徳島眉山天神社|12=simple|13=User:Immanuelle/Tokushima Bizen Tenjinja|comment=changed title based on wikidata|qid=Q11489852}} - Located in {{ill|Bizanchō|ja|眉山町|12=simple|13=User:Immanuelle/Bizencho|comment=changed title based on wikidata|qid=Q11582582}}, {{ill|Tokushima (city)|en|Tokushima (city)|qid=Q207309|lt=Tokushima}}, Tokushima Prefecture.
 * {{ill|Tenjinja (Tokushima)|ja|天神社 (徳島市)|12=simple|13=User:Immanuelle/Tenjinja (Tokushima)|qq=}} - Located in Kitamiya, Tokushima.
 * {{ill|Tenjinja (Tokushima-Iritacho)|ja|天神社 (徳島市入田町)|12=simple|13=User:Immanuelle/Tenjinja (Tokushima-Iritacho)|qq=}} - Located in Irita, Tokushima.
 
 == Kyushu Region ==
-* {{ill|Tenjinja (Itoshima)|ja|天神社 (糸島市)|12=simple|13=User:Immanuelle/Tenjinja (Itoshima)|1=Tenjinsha (Itoshima)|comment=changed title based on wikidata|qid=Q22119506}} - Located in Kamiaru, {{ill|Itoshima, Fukuoka|en|Itoshima, Fukuoka|qid=Q1011145|lt=Itoshima, Fukuoka|1=Itoshima}}, Fukuoka Prefecture.
+* {{ill|Tenjinsha (Itoshima)|ja|天神社 (糸島市)|12=simple|13=User:Immanuelle/Tenjinja (Itoshima)|comment=changed title based on wikidata|qid=Q22119506}} - Located in Kamiaru, {{ill|Itoshima|en|Itoshima, Fukuoka|qid=Q1011145|lt=Itoshima, Fukuoka}}, Fukuoka Prefecture.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
+* {{ill|Ten Shrine (Q65259331)|lt=Ten Shrine|qid=Q65259331}} — Kasugai
+* {{ill|Tenjin-sha (Q11443280)|lt=Tenjin-sha|qid=Q11443280}} — Kawachinagano
+* {{ill|Tenjin-sha (Q11443281)|lt=Tenjin-sha|qid=Q11443281}} — Tamagawa
+* {{ill|Tenjin-sha (Q11443284)|lt=Tenjin-sha|qid=Q11443284}} — Nishitōkyō-shi
+* {{ill|Tenjin-sha (Q119929468)|lt=Tenjin-sha|qid=Q119929468}} — Yashio
+* {{ill|Tenjin-sha (Q119929555)|lt=Tenjin-sha|qid=Q119929555}} — Mitaka
+* {{ill|Tenjin-sha (Q119929658)|lt=Tenjin-sha|qid=Q119929658}} — Akashi
+* {{ill|Tenjin-sha (Q124482321)|lt=Tenjin-sha|qid=Q124482321}} — Minuma-ku
+* {{ill|Tenjin-sha (Q124482332)|lt=Tenjin-sha|qid=Q124482332}} — Midori-ku
+* {{ill|Tenjin-sha (Q124482384)|lt=Tenjin-sha|qid=Q124482384}} — Kuki
+* {{ill|Tenjin-sha (Q128866564)|lt=Tenjin-sha|qid=Q128866564}} — Shiki
+* {{ill|Tenjin-sha (Q128866623)|lt=Tenjin-sha|qid=Q128866623}} — Kitamoto
+* {{ill|Tenjin-sha (Q131900983)|lt=Tenjin-sha|qid=Q131900983}} — Kazo
+* {{ill|Tenjin-sha (Q131900999)|lt=Tenjin-sha|qid=Q131900999}} — Kazo
+* {{ill|Tenjin-sha (Q134594961)|lt=Tenjin-sha|qid=Q134594961}} — Isumi
+* {{ill|Tenjin-sha (Q134594978)|lt=Tenjin-sha|qid=Q134594978}} — Isumi
+* {{ill|Tenjin-sha (Q134595033)|lt=Tenjin-sha|qid=Q134595033}} — Chūō-ku
+* {{ill|Tenjin-sha (Q134595385)|lt=Tenjin-sha|qid=Q134595385}} — Sōsa-shi
+* {{ill|Tenjin-sha (Q134595423)|lt=Tenjin-sha|qid=Q134595423}} — Sōsa-shi
 * {{ill|Tenjin-sha (Q134595599)|lt=Tenjin-sha|qid=Q134595599}} — Minamiboso
 * {{ill|Tenjin-sha (Q134596582)|lt=Tenjin-sha|qid=Q134596582}} — Futtsu
 * {{ill|Tenjin-sha (Q134596583)|lt=Tenjin-sha|qid=Q134596583}} — Futtsu
@@ -87,6 +106,7 @@
 * {{ill|Tenjin-sha (Q134603021)|lt=Tenjin-sha|qid=Q134603021}} — Kōzaki-machi
 * {{ill|Tenjin-sha (Q134604592)|lt=Tenjin-sha|qid=Q134604592}} — Sanmu
 * {{ill|Tenjin-sha (Q134885975)|lt=Tenjin-sha|qid=Q134885975}} — Kazo
+* {{ill|Tenjin-sha (Q134885979)|lt=Tenjin-sha|qid=Q134885979}} — Hanyū-shi
 * {{ill|Tenjin-sha (Q134886023)|lt=Tenjin-sha|qid=Q134886023}} — Kōnosu-shi
 * {{ill|Tenjin-sha (Q134886048)|lt=Tenjin-sha|qid=Q134886048}} — Higashimatsuyama
 * {{ill|Tenjin-sha (Q134886089)|lt=Tenjin-sha|qid=Q134886089}} — Gyōda-shi
@@ -95,13 +115,18 @@
 * {{ill|Tenjin-sha (Q134886168)|lt=Tenjin-sha|qid=Q134886168}} — Sugito
 * {{ill|Tenjin-sha (Q134886204)|lt=Tenjin-sha|qid=Q134886204}} — Yoshikawa
 * {{ill|Tenjin-sha (Q134886253)|lt=Tenjin-sha|qid=Q134886253}} — Gyōda-shi
+* {{ill|Tenjin-sha (Q134886307)|lt=Tenjin-sha|qid=Q134886307}} — Hanyū-shi
 * {{ill|Tenjin-sha (Q134886372)|lt=Tenjin-sha|qid=Q134886372}} — Higashichichibu
+* {{ill|Tenjin-sha (Q134886397)|lt=Tenjin-sha|qid=Q134886397}} — Gyōda-shi
 * {{ill|Tenjin-sha (Q134886427)|lt=Tenjin-sha|qid=Q134886427}} — Hasuda
 * {{ill|Tenjin-sha (Q134886454)|lt=Tenjin-sha|qid=Q134886454}} — Kazo
+* {{ill|Tenjin-sha (Q134886457)|lt=Tenjin-sha|qid=Q134886457}} — Hanyū-shi
 * {{ill|Tenjin-sha (Q134886488)|lt=Tenjin-sha|qid=Q134886488}} — Kawajima
 * {{ill|Tenjin-sha (Q134886581)|lt=Tenjin-sha|qid=Q134886581}} — Hannō
 * {{ill|Tenjin-sha (Q134886616)|lt=Tenjin-sha|qid=Q134886616}} — Kuki
+* {{ill|Tenjin-sha (Q134886632)|lt=Tenjin-sha|qid=Q134886632}} — Hanyū-shi
 * {{ill|Tenjin-sha (Q134886660)|lt=Tenjin-sha|qid=Q134886660}} — Kawagoe
+* {{ill|Tenjin-sha (Q134886729)|lt=Tenjin-sha|qid=Q134886729}} — Gyōda-shi
 * {{ill|Tenjin-sha (Q134886735)|lt=Tenjin-sha|qid=Q134886735}} — Hidaka
 * {{ill|Tenjin-sha (Q134886748)|lt=Tenjin-sha|qid=Q134886748}} — Urawa-ku
 * {{ill|Tenjin-sha (Q134886762)|lt=Tenjin-sha|qid=Q134886762}} — Tokorozawa
@@ -128,45 +153,17 @@
 * {{ill|Tenjin-sha (Q134887317)|lt=Tenjin-sha|qid=Q134887317}} — Sugito
 * {{ill|Tenjin-sha (Q134887369)|lt=Tenjin-sha|qid=Q134887369}} — Higashimatsuyama
 * {{ill|Tenjin-sha (Q134892406)|lt=Tenjin-sha|qid=Q134892406}} — Yokosuka
-* {{ill|Tenjin-sha (Q134955619)|lt=Tenjin-sha|qid=Q134955619}} — Nishiizu
-* {{ill|Tenjin-sha (Q134956037)|lt=Tenjin-sha|qid=Q134956037}} — Tenryū-ku
-* {{ill|Tenjin-sha (Q134956075)|lt=Tenjin-sha|qid=Q134956075}} — Iwata
 * {{ill|Tenjin-sha (Q134956123)|lt=Tenjin-sha|qid=Q134956123}} — Shimizu-ku
-* {{ill|Tenjin-sha (Q134956312)|lt=Tenjin-sha|qid=Q134956312}} — Chūō Ward
-* {{ill|Tenjin-sha (Q134956352)|lt=Tenjin-sha|qid=Q134956352}} — Kikugawa
-* {{ill|Tenjin-sha (Q134956364)|lt=Tenjin-sha|qid=Q134956364}} — Iwata
-* {{ill|Tenjin-sha (Q134956375)|lt=Tenjin-sha|qid=Q134956375}} — Iwata
-* {{ill|Tenjin-sha (Q134956436)|lt=Tenjin-sha|qid=Q134956436}} — Shimada
-* {{ill|Tenjin-sha (Q134956574)|lt=Tenjin-sha|qid=Q134956574}} — Fujinomiya
-* {{ill|Tenjin-sha (Q134956636)|lt=Tenjin-sha|qid=Q134956636}} — Kosai
-* {{ill|Tenjin-sha (Q134956681)|lt=Tenjin-sha|qid=Q134956681}} — Kakegawa
-* {{ill|Tenjin-sha (Q134956698)|lt=Tenjin-sha|qid=Q134956698}} — Iwata
-* {{ill|Tenjin-sha (Q134956794)|lt=Tenjin-sha|qid=Q134956794}} — Fujieda
-* {{ill|Tenjin-sha (Q134956898)|lt=Tenjin-sha|qid=Q134956898}} — Kawazu
-* {{ill|Tenjin-sha (Q134956922)|lt=Tenjin-sha|qid=Q134956922}} — Chūō Ward
-* {{ill|Tenjin-sha (Q134956923)|lt=Tenjin-sha|qid=Q134956923}} — Hamana-ku
-* {{ill|Tenjin-sha (Q134956977)|lt=Tenjin-sha|qid=Q134956977}} — Kakegawa
-* {{ill|Tenjin-sha (Q134956987)|lt=Tenjin-sha|qid=Q134956987}} — Kakegawa
-* {{ill|Tenjin-sha (Q134957120)|lt=Tenjin-sha|qid=Q134957120}} — Fujieda
-* {{ill|Tenjin-sha (Q134957163)|lt=Tenjin-sha|qid=Q134957163}} — Izu
-* {{ill|Tenjin-sha (Q134957236)|lt=Tenjin-sha|qid=Q134957236}} — Kawazu
-* {{ill|Tenjin-sha (Q134957256)|lt=Tenjin-sha|qid=Q134957256}} — Chūō Ward
-* {{ill|Tenjin-sha (Q134957273)|lt=Tenjin-sha|qid=Q134957273}} — Kosai
-* {{ill|Tenjin-sha (Q134957281)|lt=Tenjin-sha|qid=Q134957281}} — Hamana-ku
-* {{ill|Tenjin-sha (Q134957312)|lt=Tenjin-sha|qid=Q134957312}} — Kakegawa
-* {{ill|Tenjin-sha (Q134957319)|lt=Tenjin-sha|qid=Q134957319}} — Kakegawa
-* {{ill|Tenjin-sha (Q134957461)|lt=Tenjin-sha|qid=Q134957461}} — Numazu
-* {{ill|Tenjin-sha (Q134957510)|lt=Tenjin-sha|qid=Q134957510}} — Kannami
-* {{ill|Tenjin-sha (Q134957584)|lt=Tenjin-sha|qid=Q134957584}} — Chūō Ward
-* {{ill|Tenjin-sha (Q134957607)|lt=Tenjin-sha|qid=Q134957607}} — Hamana-ku
-* {{ill|Tenjin-sha (Q134957644)|lt=Tenjin-sha|qid=Q134957644}} — Kikugawa
-* {{ill|Tenjin-sha (Q134957655)|lt=Tenjin-sha|qid=Q134957655}} — Iwata
-* {{ill|Tenjin-sha (Q134957677)|lt=Tenjin-sha|qid=Q134957677}} — Fukuroi
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|Tenjin-sha (Q17218451)|lt=Tenjin-sha|qid=Q17218451}} — Kadoma
+* {{ill|Tenjin-sha (Q22119505)|lt=Tenjin-sha|qid=Q22119505}} — Takabatakechō
+* {{ill|Tenjin-sha (Q30924881)|lt=Tenjin-sha|qid=Q30924881}} — Yamatotakada
+* {{ill|Tenjin-sha (Q70725130)|lt=Tenjin-sha|qid=Q70725130}} — Kamisato
+* {{ill|Tenjin-sha (Q99688954)|lt=Tenjin-sha|qid=Q99688954}} — Sennonji
+* {{ill|Tenjinsha (Q17191784)|lt=Tenjinsha|qid=Q17191784}} — Shiroi
 
 {{translated page|ja|天神社|version=104112589|comment=Imported full ja history}}
 
-{{wikidata link|Q11443279|ja|天神社|simple|Tenjinja}}
+{{wikidata link|Q11443279|ja|天神社|simple|Tenjinja|check_date=2026-05-11}}
 [[Category:Shrine disambiguations]]
 [[Category:Tenjin (kami)]]
 [[Category:Wikidata has short description]]
