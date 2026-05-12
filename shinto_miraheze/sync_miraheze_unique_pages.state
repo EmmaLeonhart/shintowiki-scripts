@@ -76,16 +76,16 @@
     "sha": "8c79dd7937f96837e7430083479cabb17aa104bc"
   },
   "Hikawa Shrine": {
-    "revid": 3729830,
-    "sha": "e496b4d2355915aea8fcf3b71350d54180ada1fa"
+    "revid": 3731310,
+    "sha": "df492b35f418211d5357411e91f0e36a82d44adc"
   },
   "Himuro Shrines": {
     "revid": 3728791,
     "sha": "477a1544ac4a9536ba140aea8ae2b62325236465"
   },
   "Hoshimiya Shrine": {
-    "revid": 3730612,
-    "sha": "3049c530874cb7bd826c21b7ab5c02a308a8bdd7"
+    "revid": 3731311,
+    "sha": "2b4c467f080d2bfe60c94e771c0682eeaf561b9f"
   },
   "Hozumi Shrine": {
     "revid": 3728793,
@@ -168,16 +168,16 @@
     "sha": "4850074f09ef8950a2a782b88182884ca0cc4ab9"
   },
   "Kashima Shrines": {
-    "revid": 3730613,
-    "sha": "de6fb6d41fe0d11590da4e3a01ff385ec833d426"
+    "revid": 3731312,
+    "sha": "2644edf3a03303f4f5bcff7da7a153338b386524"
   },
   "Katayama Shrine": {
     "revid": 3729726,
     "sha": "5b3078a240df43c94e4d19a5f2cddb1397083764"
   },
   "Katori Shrines": {
-    "revid": 3730614,
-    "sha": "02c7d9c47d069e0c18ec6f4d8e7b7648c47c972e"
+    "revid": 3731313,
+    "sha": "3d326a4a633103fac55089b3b176990f4d20a676"
   },
   "Kawara Shrine": {
     "revid": 3729728,
@@ -288,8 +288,8 @@
     "sha": "ac1263ce27b9193c4cc1c0777bcb77c9098682df"
   },
   "Mountain Shrine": {
-    "revid": 3730616,
-    "sha": "1d14059988f0b56a24649ae38e0d577dee90c528"
+    "revid": 3731314,
+    "sha": "97aacb14bb9c665392a51cf282779d91e6b47f34"
   },
   "Musubi Shrine": {
     "revid": 3729867,
@@ -418,6 +418,54 @@
   "Shinto Wiki": {
     "revid": 3723034,
     "sha": "0c007564550cd8f1e8722e6ca930279a55f7ab01"
+  },
+  "Shiratori Shrine (disambiguation)": {
+    "revid": 3731315,
+    "sha": "74c7c231bea0cf6ba017c25eefd7a6549bf529b3"
+  },
+  "Sumiyoshi Shrine": {
+    "revid": 3731316,
+    "sha": "f2fef51a3368eb141361cc05ffe33c79d7ce5c8a"
+  },
+  "Susanoo Shrine": {
+    "revid": 3731317,
+    "sha": "4bac0d82e1a780b57ca7b31d37202d43ec7cd760"
+  },
+  "Susukigawa Shrine": {
+    "revid": 3731318,
+    "sha": "f8601d049ff37c7b8817530ecd54c668b9aa78e6"
+  },
+  "Tachibana Shrine (disambiguation)": {
+    "revid": 3731319,
+    "sha": "0f9992a6b0b6a3442ccea8f65cc25b092c85d21c"
+  },
+  "Tajikarao Shrine": {
+    "revid": 3731320,
+    "sha": "24fbc349807f1713b6d7519a0ab5560952596d8e"
+  },
+  "Takada Kumano Shrine": {
+    "revid": 3731321,
+    "sha": "1ba8a14ea0505e506cde8d93a2d6755cd260638c"
+  },
+  "Takahama Shrine": {
+    "revid": 3731322,
+    "sha": "02c75349d6eba597e9851831776d6bbc987af575"
+  },
+  "Takamuku Shrine": {
+    "revid": 3731323,
+    "sha": "206d7cdc4dfffec52280dbd49971d0d552c27857"
+  },
+  "Takasago Shrine": {
+    "revid": 3731324,
+    "sha": "e7543913c29db7735e6f9bfe2c38b545c7959fc5"
+  },
+  "Takata Shrine": {
+    "revid": 3731325,
+    "sha": "b7cf7b3102f565c280b800a3c5d14cdb483bb662"
+  },
+  "Takeminakata & Minomikotohikokamiwake Shrine": {
+    "revid": 3731326,
+    "sha": "2ececc59418b04151f9bebf48ac73c6c82e7ab77"
   },
   "Takio Shrine": {
     "revid": 3729155,
@@ -1528,8 +1576,8 @@
     "sha": "b76fc11b3a80e2a273ee1059f1c3f7a87abcaf28"
   },
   "Tenjinsha": {
-    "revid": 3728763,
-    "sha": "94cc76677cfaf9f4b2279dd1834931302c32bdfa"
+    "revid": 3729586,
+    "sha": "f6d5d39b2af4340b6221f2f9ccde57605d9cb39f"
   },
   "Tenman Tenjingu": {
     "revid": 3730063,
@@ -1564,32 +1612,32 @@
     "sha": "f5d1b1d316442f6d544afaff622df5239ce077c4"
   },
   "Tsubaki Shrine (disambiguation)": {
-    "revid": 3729804,
-    "sha": "15ed07dc7343dcdff75533a524c747eefc8264b1"
+    "revid": 3730797,
+    "sha": "514cdb92364ff67aaea699c9d68567bb3942718a"
   },
   "Tsuge Yamaguchi Shrine": {
-    "revid": 3729806,
-    "sha": "d5390b29ca1f1b93338f592391ea689f9025966a"
+    "revid": 3730873,
+    "sha": "3a6a744880ca7e2605ef97c4e80540cb3a5d283b"
   },
   "Tsurugi Shrine (disambiguation)": {
-    "revid": 3729808,
-    "sha": "f7d55a9b062643a3cad8b01b48b2b2405065e0db"
+    "revid": 3731107,
+    "sha": "c18b268707d60ab47ae32c67cbea3fa39cf763c2"
   },
   "Tsurumi Shrine": {
-    "revid": 3729810,
-    "sha": "a48a156f810acc0d732fce3889c07ebb7f013fe3"
+    "revid": 3731131,
+    "sha": "ccfc53f9f67bab0fbef8ecf282a898426f9c1c3f"
   },
   "Tōgō Shrine (disambiguation)": {
-    "revid": 3729812,
-    "sha": "e4116b96334b05dfa6b6fb3c81e04cab69bdf085"
+    "revid": 3731230,
+    "sha": "a476305ddb68e08e0f3625ebf0ea9f58b4d41046"
   },
   "Tōsho Shrine": {
-    "revid": 3729814,
-    "sha": "d23c181a0611388dbd1fc91b4f31caff4ef0a4d8"
+    "revid": 3731242,
+    "sha": "9844a12b2e8dd3e1957b99d4ea48fe889b65fc1d"
   },
   "Ubusuna Shrine": {
-    "revid": 3729815,
-    "sha": "42759dbd32851b7da2957e1894ffd69eb9fad895"
+    "revid": 3731266,
+    "sha": "99d1c292099f6c6b8b7b1d69769581466232af58"
   },
   "Uga Shrine": {
     "revid": 3729817,
