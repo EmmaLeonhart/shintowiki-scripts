@@ -123,14 +123,6 @@
     "revid": 3607727,
     "sha": "93bc4747952f57d04c3d49d24a681fe6f90185cf"
   },
-  "Hozumi Iwayumi": {
-    "revid": 3730015,
-    "sha": "1080da9b634971c0b396716b4e2b949d6fff882b"
-  },
-  "Ichikishima-hime": {
-    "revid": 3730016,
-    "sha": "de49b6d625c85e88a5c40be0cd1323417aca079c"
-  },
   "Iino Hachimangū": {
     "revid": 3729977,
     "sha": "c5700439caedd5595e3ece3256b728268e86d39f"
@@ -158,30 +150,6 @@
   "Inaba Shrine (Gifu)": {
     "revid": 3730019,
     "sha": "3592b48a8663014d7695e333654a5663c65bfa29"
-  },
-  "Isachi-no-Sukune": {
-    "revid": 3730020,
-    "sha": "6f9c38c3dd441e174d9c6e8466d07fa63bd8ab45"
-  },
-  "Iwa-tsutsu-no'o": {
-    "revid": 3730021,
-    "sha": "287c801d863e342deaf1247fb5718d23664b3e40"
-  },
-  "Izu Shrine": {
-    "revid": 3730022,
-    "sha": "85d3495f7508eebfd7bd75106bd554c4a67e73a0"
-  },
-  "Jawiki resolution:伊加加志神社": {
-    "revid": 3730023,
-    "sha": "3067086c98740b6060ff484e5c01a97991729905"
-  },
-  "Jawiki resolution:伊加麻志神社": {
-    "revid": 3730024,
-    "sha": "6357d1bff686129fc7e46b83bd33c7f46b2a040c"
-  },
-  "Jawiki resolution:伊勢二見鳥羽ライン": {
-    "revid": 3730025,
-    "sha": "2e4c53e765cbd071a4b08e26a03b97f8705045b5"
   },
   "Juniso Kumano Shrine": {
     "revid": 3730026,
@@ -211,17 +179,9 @@
     "revid": 3730029,
     "sha": "50ec8a84696492bd26b13a629a89bd6fc7906f7c"
   },
-  "Kanasana Shrine": {
-    "revid": 3730030,
-    "sha": "bd4c1a6659fc99cda5c8d507d995a5147d609421"
-  },
   "Kanbara Shrine (Niigata)": {
     "revid": 3708012,
     "sha": "56c14b77bc9d500ff5ae4415f02882fe7ef6e009"
-  },
-  "Kanesune-no-Mikoto": {
-    "revid": 3730031,
-    "sha": "3b25b4247d944b583a7451fb0b4a103aaa616fe3"
   },
   "Kashii-gū": {
     "revid": 3710369,
@@ -231,17 +191,9 @@
     "revid": 3708046,
     "sha": "50e0286a7348af3f7cd3dd3a2ffb1f5127f93944"
   },
-  "Kashiwade-no-Areshi": {
-    "revid": 3730032,
-    "sha": "ea48224f6efdb89243ed3841e860ce8b81ea2127"
-  },
   "Kawahara Shrine": {
-    "revid": 3728251,
-    "sha": "35e88a0ad259664ebb644b9eac65b170d92761af"
-  },
-  "Kaya-no-hime": {
-    "revid": 3730033,
-    "sha": "576bc3dc54b97750830fcad5de12fa35593c27eb"
+    "revid": 3730674,
+    "sha": "835f98a804bcad36f03ecd43a2373d510f9776ee"
   },
   "Kehi Shrine": {
     "revid": 3714798,
@@ -262,10 +214,6 @@
   "Kishiwada Danjiri Festival": {
     "revid": 3683135,
     "sha": "3e6551f061f3e818934e558fb4f3ad1fef0de377"
-  },
-  "Kofun interior gallery": {
-    "revid": 3730034,
-    "sha": "5a85a90fea997fdf7ff282c9924cadb909d30e39"
   },
   "Konpira Gongen": {
     "revid": 3683769,
@@ -290,10 +238,6 @@
   "Kushihiki Hachimangū": {
     "revid": 3713193,
     "sha": "20caa58764b900a07fe10249701e7a9cb0437d0b"
-  },
-  "List of Shikinaisha in Awa Province": {
-    "revid": 3730035,
-    "sha": "2b7be7ec127f9e6088e3ae57835aa4ab0ef7e9fb"
   },
   "Magaibutsu": {
     "revid": 3685271,
@@ -327,14 +271,6 @@
     "revid": 3730039,
     "sha": "2c1a6d41019beb86621984414ae33ff04cc1dc44"
   },
-  "Mount Goken": {
-    "revid": 3730040,
-    "sha": "c75efc00624a3b7e1f236eaef44d0fb7b72db465"
-  },
-  "Mukuda no Kuni no Miyatsuko": {
-    "revid": 3730041,
-    "sha": "9a272dfe8cea131031563c27e261d0bd013acb0d"
-  },
   "Munakata clan": {
     "revid": 3687394,
     "sha": "48640a598206137f409d208d06983a78bf2f701b"
@@ -347,17 +283,9 @@
     "revid": 3708548,
     "sha": "369e3200816c2cea8580bfe5dbdfff7d4ec02b5a"
   },
-  "Nanshoku": {
-    "revid": 3730042,
-    "sha": "d59d9950ac40d6be5a016e764f6061409e1f964e"
-  },
   "Nigihayahi": {
     "revid": 3688518,
     "sha": "4ceff6228be7f6dcccabe3ab540ad4ff8f8e8218"
-  },
-  "Nikken": {
-    "revid": 3730043,
-    "sha": "e9104324d280188f3b0a27838de8f42dc6821370"
   },
   "Ninomiya Shrine (Miyake)": {
     "revid": 3708595,
@@ -387,14 +315,6 @@
     "revid": 3708857,
     "sha": "dbe9a56f6f0002af237fe07f4af36e9f4c70be70"
   },
-  "Osashi": {
-    "revid": 3730045,
-    "sha": "af75d4fb60b0273672cb0e65f42749d39a6f1264"
-  },
-  "Otokuni-nimasuohoikatsuchino Shrine": {
-    "revid": 3730046,
-    "sha": "5400ab97d3f86bacc6acf085dba119cc2d8eb72a"
-  },
   "Saonetsuhiko": {
     "revid": 3720940,
     "sha": "d6b9d41e6f0342e21cdc47a74f9683188a44ec88"
@@ -420,16 +340,16 @@
     "sha": "46cb4ee4129c2f3ff71a272206f67a1a6eb844d3"
   },
   "Tenson-zoku": {
-    "revid": 3654187,
-    "sha": "658bb61a264b1a20734d198d9777aaadd2bf2f84"
+    "revid": 3730136,
+    "sha": "52454d2a59782a5b8e3c83836e889cdf97a12db4"
   },
   "The Warring States Period in Kinai and Kinki": {
-    "revid": 3654247,
-    "sha": "5a04d9e821d65193a3351d3d4686b370a05c9280"
+    "revid": 3730176,
+    "sha": "0d79275d728c3e3ca4b3651269d90156a81b936e"
   },
   "Triangular-Rimmed Divine Beast Mirror": {
-    "revid": 3727408,
-    "sha": "392ddd490d43a7eb040936fe91e62bbffc40b82c"
+    "revid": 3730547,
+    "sha": "6eea8aebbd90009bf49c109d6345796d57da3fa8"
   },
   "Tsukubusuma Shrine": {
     "revid": 3711247,
@@ -488,8 +408,8 @@
     "sha": "f7654d0b4b55e180234a7bdd1ad68fb9ffb9e28c"
   },
   "伊豆国造": {
-    "revid": 3729016,
-    "sha": "8091de074c079d0c92e105d4a9eee0a694db04d8"
+    "revid": 3730772,
+    "sha": "86d7d476a390c565fa8c1e07aa570a7ae42b406c"
   },
   "倭国造": {
     "revid": 3729018,
@@ -512,32 +432,32 @@
     "sha": "a36f1aa75b0344da38939596252865659acaa645"
   },
   "凡河内香賜": {
-    "revid": 3729023,
-    "sha": "5a3bddae55723e35c1bf038fd890316a961f268d"
+    "revid": 3730773,
+    "sha": "9596fe271fbed91e6d606cb5e083460ec444372e"
   },
   "千葉国造": {
     "revid": 3729024,
     "sha": "9a65e618e4ea72079c2135f11a75766a467bcfe6"
   },
   "印波国造": {
-    "revid": 3729025,
-    "sha": "f9ac20928f61066a29070fdea4c478d5a31d6186"
+    "revid": 3730774,
+    "sha": "45a04d4a57ba46e06c23fc2cb81a84ce1e1ec647"
   },
   "国造": {
     "revid": 3664777,
     "sha": "b4621eecf92f0102869b04adb5a6f9b87b8e2cb0"
   },
   "塩海足尼": {
-    "revid": 3729027,
-    "sha": "65a30865cddb889251e0109cde93e9fbd9554152"
+    "revid": 3730775,
+    "sha": "25bbec8928d1b213364926a264137da072ae1010"
   },
   "大河内味張": {
     "revid": 3729028,
     "sha": "f2cf4bc261f4b0ca68d2010d358797d5f725b63e"
   },
   "天日別命": {
-    "revid": 3729031,
-    "sha": "fb34cf327f6b282cd067192df51572bddcd951c0"
+    "revid": 3730776,
+    "sha": "40ce2ee0e6a3f0f39d31b4b8e394fccd812f9a71"
   },
   "天道根命": {
     "revid": 3729032,
@@ -552,16 +472,16 @@
     "sha": "51bae8ca41cf735a4355b68efc629fc6bde9c50a"
   },
   "山背久我国造": {
-    "revid": 3729036,
-    "sha": "bca653c2d9a43634f035bb2366d0d0e09a6db599"
+    "revid": 3730777,
+    "sha": "07bdccd682ae95cfb04f67b574ee3d3d999c5256"
   },
   "山背国造": {
-    "revid": 3729037,
-    "sha": "bc00d6fa7dfa1038ad6e38515e8d1d857dab21df"
+    "revid": 3730778,
+    "sha": "3c9a19b055275c948d4d1d14cbe9a337049a940b"
   },
   "市磯長尾市": {
-    "revid": 3729039,
-    "sha": "231c74a7bccb3372195bee86c9ff1d31d681cd8b"
+    "revid": 3730779,
+    "sha": "2d4156ac1200bcfd112e0eaa55158fb5b7035e6f"
   },
   "師長国造": {
     "revid": 3664825,
@@ -576,12 +496,12 @@
     "sha": "0aebac9ffbb414d3b0c0e74ade7f4088dc4d4521"
   },
   "建稲種命": {
-    "revid": 3717739,
-    "sha": "567a734acbfa1c90b98dc8da4c784d63babb4c5d"
+    "revid": 3730780,
+    "sha": "c3b2af3f3a6360481c329b07c79458ffdafc6044"
   },
   "彦狭島王": {
-    "revid": 3729044,
-    "sha": "a0c55ce478c440e8ed76b6dd06d3618ebcbe3068"
+    "revid": 3730781,
+    "sha": "b3c4964c75e4e04efac7c104f8d8840ed9c6d746"
   },
   "御神書": {
     "revid": 3664845,
@@ -652,19 +572,19 @@
     "sha": "6ab8e61865bf7b9cb4e328888609c8d57680e2a8"
   },
   "闘鶏国造": {
-    "revid": 3729075,
-    "sha": "dd029741cefae452ce5f8b1bec8dfe131a5b8c28"
+    "revid": 3730782,
+    "sha": "ae24ece639a2696950b5aab312a3ad8bf2c8fd50"
   },
   "須恵国造": {
-    "revid": 3729077,
-    "sha": "a8a29d7c8015ba899d15840d56f6cefc53793c49"
+    "revid": 3730783,
+    "sha": "3932936f6053d4afdc22ac936d1793d859488d27"
   },
   "額田国造": {
     "revid": 3665005,
     "sha": "6f394c7e03faa9be324c2636575e060028ff6524"
   },
   "高国造": {
-    "revid": 3665011,
-    "sha": "5dc8ba9e68bf243fb2f3bd80d1a1644fc8e0d21f"
+    "revid": 3730784,
+    "sha": "c7338e8460f8f1495bf805c0d7afc485090dbbe7"
   }
 }
