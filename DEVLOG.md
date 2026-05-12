@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-12
+
+### `{{ill}}` template normalization: qid is the authoritative signal
+**Files:** `shinto_miraheze/orchestrators/ops/normalize_ill_positional.py`, `shinto_miraheze/orchestrators/ops/normalize_ill_wikidata.py` (new), `shinto_miraheze/orchestrators/mainspace_orchestrator.py`
+**Status:** Both ops gated on qid; new op gated by `ENABLE_NORMALIZE_ILL_WIKIDATA=1`
+
+The mainspace orchestrator gets two `{{ill}}` cleanup ops now. Both run PRE_HEAVY (so the cleaned text propagates into history_offload's fandom mirror and XML archive in the same cycle). Together they replace the previous half-done normalize_ill_positional with a complete pipeline:
+
+1. **`normalize_ill_positional`** — cheap, no API calls. If a call has `qid=Q…` AND a `|1=X` named override, promote the last `1=` to the bare positional and drop every `1=` entry. The qid gate is new on this op: previously it ran unconditionally and would mangle calls that lacked a qid. The user's mental model is that **a qid is proof that the link has been reconciled against Wikidata**; an ill template without a qid is the deliberate human signal that something is unresolved (target ambiguous, no Wikidata entity yet, CJK sources conflict), and the previous behaviour of silently promoting a `1=` on those was overwriting human notes.
+
+2. **`normalize_ill_wikidata`** (new) — expensive, hits Wikidata. If a call has `qid=Q…` and any junk (a named param other than `qid`/`lt`, or >1 positional), rewrite the entire call into a clean form: positional[0] + sorted `lang|title` pairs from the Wikidata sitelinks (enwiki excluded — already the positional, sister projects excluded, underscored codes like `zh_classical` kept) + `qid=` + optional `lt=`. The last `1=` value (if any) wins as the new positional[0], same last-wins rule as MediaWiki uses. Gated by `ENABLE_NORMALIZE_ILL_WIKIDATA=1` so the API churn isn't on by default. Per-run cache means each unique QID costs at most one API call per orchestrator run.
+
+**The "redirects to" exception got walked back.** An earlier scoping pass had `normalize_ill_wikidata` refuse to touch calls whose body contained `redirects to` (case-insensitive) — the worry was that human notes like `ja_comment=jawiki redirects to スクナビコナ` flagged a real conflict the bot shouldn't paper over. After a closer look, the user reversed this: **if a qid is present we trust it.** The historical reason for caution about redirects was that during the early enwiki/jawiki import wave, some auto-attached interlanguage links pointed at redirect pages that landed in the wrong place — and the fix was to manually attach the correct QID via replaced text. Now that those manual QIDs are in place, the qid is the canonical signal: a redirect-target note in the body is just legacy commentary, and the rebuild from sitelinks is the right thing to do.
+
+Order in `mainspace_orchestrator.OPS`:
+
+```
+strip_html_comments,           # PRE_HEAVY
+ill_category_to_link,          # PRE_HEAVY
+normalize_ill_positional,      # PRE_HEAVY  ← promotes 1= to positional, drops 1=
+normalize_ill_wikidata,        # PRE_HEAVY  ← rebuilds from Wikidata when qid + junk
+interlang_consolidate,         # PRE_HEAVY (gated)
+wikidata_lookup,               # PRE_HEAVY (gated)
+history_offload,               # heavy
+…
+```
+
+Pages already touched by old `normalize_ill_positional` are unaffected. Pages that hadn't been visited yet (e.g. [[Agata Shrine (Gero City)]] which still carried the full junk form on 2026-05-12) will get the full clean-up next time they come up in the alphabetic sweep — the orchestrator runs ~100 pages per cycle with a 1000-page state-growth cap, so it can take many cycles to walk the whole namespace.
+
+### Duplicated content: sync wired, agentic resolution scheduled
+**Files:** `.github/workflows/wiki-cleanup.yml`, `SYNCING.md` (new)
+**Status:** Live
+
+`sync_duplicated_content.py` was implemented for `[[Category:Pages with duplicated content]]` months ago but never invoked by any workflow — the local `duplicated_content/` directory didn't exist because the script had never been run with `--apply`. Wired it into `wiki-cleanup.yml` in a new Duplicated Content Sync block between the Translation Sync and Git-Synced Pages sections. Same pattern as `sync_need_translation`: pull → commit `duplicated_content/` → commit state.
+
+Resolution loop is two-stage: CI sync pulls wiki pages into `duplicated_content/`, then a series of scheduled remote agents (six one-shot routines, 12 hours apart starting 2026-05-13T21:18Z) reorganize the paragraphs into single coherent merged articles and strip the `[[Category:Pages with duplicated content]]` line from each file as it finishes. The next CI sync cycle sees the missing cat line, pushes the cleaned content to the wiki (which removes the category there too), and deletes the local file.
+
+`SYNCING.md` at the repo root documents this and every other wiki↔repo / wiki↔wiki sync pathway.
+
+### `categories_to_bottom` op — move stray cats to page bottom on non-template namespaces
+**File:** `shinto_miraheze/orchestrators/ops/categories_to_bottom.py` (new)
+**Status:** Live, registered on mainspace, user, project, file, help, and talk orchestrators
+
+`noinclude_wrap` already does this for template pages (wraps stray cats inside `<noinclude>`). `normalize_category_page` already does it for category pages (rebuilds the whole page into a canonical templates/interwikis/categories block). For every other wikitext namespace there was no equivalent — own-line `[[Category:…]]` tags imported into the middle of pages from enwiki/jawiki stayed where they were.
+
+The new op finds own-line cat tags whose page position is NOT inside the trailing category block (walks backwards from EOF over consecutive cat lines + whitespace to identify the trailing block, anything before that is stray) and moves them to the bottom in original order. Inline cats inside a sentence / ref tag / template parameter are deliberately not matched — moving those could wreck the surrounding wikitext.
+
+---
+
 ## 2026-05-05
 
 ### Wiki shutdown threat from yesterday did not materialize — exiting desperation mode
