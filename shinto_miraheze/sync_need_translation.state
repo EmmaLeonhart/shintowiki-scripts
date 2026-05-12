@@ -32,8 +32,8 @@
     "sha": "436ee5559ad9c2ba348dbeb436e42094a193e465"
   },
   "Ame no Wakahiko": {
-    "revid": 3729086,
-    "sha": "dee997fe41a6624c15bf91307185da185e4b9696"
+    "revid": 3733998,
+    "sha": "1ff9aa94fc50724026663435b90a39b23ecf82d5"
   },
   "Ame-no-ohabari": {
     "revid": 3729084,
@@ -56,8 +56,8 @@
     "sha": "6915c6e845fcb6e00c7ec45515c8446e5094de9a"
   },
   "Chokusaisha": {
-    "revid": 3729092,
-    "sha": "2f8368d8c4c26eac2a481ca643a2323664c049ff"
+    "revid": 3732691,
+    "sha": "98bb9acb652ff5e58cf69a1dcfd95541e307939b"
   },
   "Dai Nippon Koku Ichinomiya Ki": {
     "revid": 3670138,
@@ -108,8 +108,8 @@
     "sha": "1bd5f5bd924ed76cb38dac75ad3b25d9bb15e4fa"
   },
   "Himukai-daijingū": {
-    "revid": 3710105,
-    "sha": "653035887ba0a700301434f667a5bafa5790fb62"
+    "revid": 3734184,
+    "sha": "cf37ad0355454d677a06edf1efd07ac003b7cbfa"
   },
   "Hinama-ji Hime-no-Mikoto Shrine": {
     "revid": 3707626,
@@ -360,8 +360,8 @@
     "sha": "48111780868bc36939a4164a46126e0fb5888db0"
   },
   "Ukita no Kuni no Miyatsuko": {
-    "revid": 3729005,
-    "sha": "3b33c90c68a5acbe617ee21ca08e4ac95142df5f"
+    "revid": 3731545,
+    "sha": "147f1acedb3798ac281ed3ed46c999e30d65eff5"
   },
   "YOSAKOI Festival": {
     "revid": 3607739,
@@ -407,10 +407,6 @@
     "revid": 3729015,
     "sha": "f7654d0b4b55e180234a7bdd1ad68fb9ffb9e28c"
   },
-  "伊豆国造": {
-    "revid": 3730772,
-    "sha": "86d7d476a390c565fa8c1e07aa570a7ae42b406c"
-  },
   "倭国造": {
     "revid": 3729018,
     "sha": "a2696372df0891c26a6de39887ce4d988b468a70"
@@ -431,33 +427,17 @@
     "revid": 3664756,
     "sha": "a36f1aa75b0344da38939596252865659acaa645"
   },
-  "凡河内香賜": {
-    "revid": 3730773,
-    "sha": "9596fe271fbed91e6d606cb5e083460ec444372e"
-  },
   "千葉国造": {
     "revid": 3729024,
     "sha": "9a65e618e4ea72079c2135f11a75766a467bcfe6"
-  },
-  "印波国造": {
-    "revid": 3730774,
-    "sha": "45a04d4a57ba46e06c23fc2cb81a84ce1e1ec647"
   },
   "国造": {
     "revid": 3664777,
     "sha": "b4621eecf92f0102869b04adb5a6f9b87b8e2cb0"
   },
-  "塩海足尼": {
-    "revid": 3730775,
-    "sha": "25bbec8928d1b213364926a264137da072ae1010"
-  },
   "大河内味張": {
     "revid": 3729028,
     "sha": "f2cf4bc261f4b0ca68d2010d358797d5f725b63e"
-  },
-  "天日別命": {
-    "revid": 3730776,
-    "sha": "40ce2ee0e6a3f0f39d31b4b8e394fccd812f9a71"
   },
   "天道根命": {
     "revid": 3729032,
@@ -471,18 +451,6 @@
     "revid": 3729035,
     "sha": "51bae8ca41cf735a4355b68efc629fc6bde9c50a"
   },
-  "山背久我国造": {
-    "revid": 3730777,
-    "sha": "07bdccd682ae95cfb04f67b574ee3d3d999c5256"
-  },
-  "山背国造": {
-    "revid": 3730778,
-    "sha": "3c9a19b055275c948d4d1d14cbe9a337049a940b"
-  },
-  "市磯長尾市": {
-    "revid": 3730779,
-    "sha": "2d4156ac1200bcfd112e0eaa55158fb5b7035e6f"
-  },
   "師長国造": {
     "revid": 3664825,
     "sha": "686ec3e615b67cb45cd1781af64dcd6ff4c31f77"
@@ -494,14 +462,6 @@
   "建比良鳥命": {
     "revid": 3729042,
     "sha": "0aebac9ffbb414d3b0c0e74ade7f4088dc4d4521"
-  },
-  "建稲種命": {
-    "revid": 3730780,
-    "sha": "c3b2af3f3a6360481c329b07c79458ffdafc6044"
-  },
-  "彦狭島王": {
-    "revid": 3730781,
-    "sha": "b3c4964c75e4e04efac7c104f8d8840ed9c6d746"
   },
   "御神書": {
     "revid": 3664845,
@@ -571,20 +531,8 @@
     "revid": 3729074,
     "sha": "6ab8e61865bf7b9cb4e328888609c8d57680e2a8"
   },
-  "闘鶏国造": {
-    "revid": 3730782,
-    "sha": "ae24ece639a2696950b5aab312a3ad8bf2c8fd50"
-  },
-  "須恵国造": {
-    "revid": 3730783,
-    "sha": "3932936f6053d4afdc22ac936d1793d859488d27"
-  },
   "額田国造": {
     "revid": 3665005,
     "sha": "6f394c7e03faa9be324c2636575e060028ff6524"
-  },
-  "高国造": {
-    "revid": 3730784,
-    "sha": "c7338e8460f8f1495bf805c0d7afc485090dbbe7"
   }
 }
