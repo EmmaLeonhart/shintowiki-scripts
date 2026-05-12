@@ -1,31 +1,7 @@
 {
-  "Koyasu Shrine": {
-    "revid": 3729752,
-    "sha": "62e188d2f460f054150f2d41b5dc85d6f00c841d"
-  },
-  "Kushida Shrine": {
-    "revid": 3729753,
-    "sha": "7a053d75a972f404d140d3b0e956e558cfdaa1f5"
-  },
   "Main Page": {
     "revid": 3685297,
     "sha": "bef90367a4767f874e6048e3f998e9367d29760e"
-  },
-  "Sashino Shrine": {
-    "revid": 3729754,
-    "sha": "60546f79169c2efa028eff6ee63366cb668f1bf2"
-  },
-  "Seibo Shrine": {
-    "revid": 3729755,
-    "sha": "0d9cd2eba6c2b086cd235c47412131590a09788e"
-  },
-  "Shikobuchi Shrine": {
-    "revid": 3729756,
-    "sha": "9ab2297cb830c672f89a47f0d04da48a30981547"
-  },
-  "Shinra Shrine": {
-    "revid": 3729757,
-    "sha": "b75df34e9fec464133e82dee7bca45953a468e89"
   },
   "Shiratori Shrine (disambiguation)": {
     "revid": 3729758,
@@ -54,50 +30,6 @@
   "Sugiyama Shrine (Shrine, Shinyoshida-cho)": {
     "revid": 3724529,
     "sha": "7b885eba49d5e09c0feff63abb8f0eeae27c1516"
-  },
-  "Sumiyoshi Shrine": {
-    "revid": 3729759,
-    "sha": "3274ebd9d9e625dcbeeeb19ecb7b0717d5b16baf"
-  },
-  "Susanoo Shrine": {
-    "revid": 3729760,
-    "sha": "95da98aa8fc6bab1d8a50b40813375e966c7e2a5"
-  },
-  "Susukigawa Shrine": {
-    "revid": 3729761,
-    "sha": "2673cddc2fc5c4fb0f7d57770497159f26dbb5fe"
-  },
-  "Tachibana Shrine (disambiguation)": {
-    "revid": 3729762,
-    "sha": "78711995119a2f1d3c54d76cbb0763ef642f715e"
-  },
-  "Tajikarao Shrine": {
-    "revid": 3729763,
-    "sha": "c1928b22efdd4ca429c57b93b346dded8d5ecaaf"
-  },
-  "Takada Kumano Shrine": {
-    "revid": 3729764,
-    "sha": "eade125e7522b252a19ae6c23b9faacd750d04ea"
-  },
-  "Takahama Shrine": {
-    "revid": 3729765,
-    "sha": "c5ff4974e7b16cb0cb0d4a5e114cb3e14c0043b9"
-  },
-  "Takamuku Shrine": {
-    "revid": 3729766,
-    "sha": "ef44b62bc8bbbd90f13cd972afd697c5f2a63129"
-  },
-  "Takasago Shrine": {
-    "revid": 3729767,
-    "sha": "7006e728f864222536c4833c4cbac7eadd3d5354"
-  },
-  "Takata Shrine": {
-    "revid": 3729768,
-    "sha": "b7769bebfbb106924c4bf1ee153613e39e458b33"
-  },
-  "Takeminakata & Minomikotohikokamiwake Shrine": {
-    "revid": 3729769,
-    "sha": "b1d45fc85e9f8e1b0196772bac4bacbc470b773b"
   },
   "Yang Earth Dog": {
     "revid": 3725272,
@@ -338,21 +270,5 @@
   "Yin Wood Snake": {
     "revid": 3725397,
     "sha": "cc8f3ac04f6a509cc6fd2f254d8e3a78e164adac"
-  },
-  "Ōtoshi Shrines": {
-    "revid": 3729782,
-    "sha": "4daf5de795553d606432bedca9c95328a53a81ba"
-  },
-  "Ōtsu Shrine": {
-    "revid": 3729783,
-    "sha": "c8c6e1ec21a980255e31a7c05345938f90007f21"
-  },
-  "Ōyamadera": {
-    "revid": 3729784,
-    "sha": "7cc74bee07a4e01a3aecffb5f8f66191e0fecf5e"
-  },
-  "Ōyamazumi Shrine (disambiguation)": {
-    "revid": 3729785,
-    "sha": "ff5985754c22fc9ebdee5fa1add272f4aa046c56"
   }
 }
