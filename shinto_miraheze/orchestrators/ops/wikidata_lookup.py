@@ -8,12 +8,22 @@ sitelinks API. Two resolutions can happen on a single page:
    shape after interlang_consolidate folded raw [[ja:X]] interwikis but
    left the QID blank): query
    ``wbgetentities?sites=<lang>wiki&titles=<target>&props=info`` for
-   each pair until one resolves, then drop that QID into the template.
+   EVERY pair, collect every resolved QID, then:
+     * Exactly 1 unique QID resolved → use it (the interwikis agree).
+     * 2+ unique QIDs resolved → leave the QID slot empty and stamp
+       ``|consistent_qid=false`` on the template so the disagreement
+       is visible. The user's stated rule: if the interwikis disagree
+       we don't auto-pick — surface the conflict for human review.
+     * 0 resolved → leave the QID slot empty, no flag.
+   If a later run finds the interwikis now do agree (e.g. one of them
+   got renamed Wikidata-side), the QID resolves normally and the
+   ``consistent_qid=false`` flag is dropped.
 
 2. Template has a real QID: fetch the entity's sitelinks via
    ``wbgetentities&props=sitelinks`` and append any (lang, title) pair
    not already present, capped at MAX_PAIRS to keep the template
-   readable.
+   readable. A pre-existing ``consistent_qid=false`` is dropped (the
+   manual fix is in — the flag was a question, not an answer).
 
 After processing, the op stamps a ``check_date=YYYY-MM-DD`` named
 parameter on the template. On future runs, pages whose ``check_date``
@@ -71,9 +81,12 @@ _MAX_PAIRS = 20
 # the kind of content shintowiki tracks.
 _CHECK_INTERVAL_DAYS = 180
 
-# Try these languages first when resolving an unknown QID; English and
-# Japanese tend to have the highest hit rate for shintowiki content.
-_PREFERRED_LANGS = ("en", "ja", "de", "fr", "zh", "ko")
+# Cutover: stamps from BEFORE this date are treated as stale regardless
+# of age. Set to the date the consistency-check Phase 1 rewrite landed
+# (2026-05-15), so every page that was stamped under the old
+# "take first hit" logic gets re-evaluated under the new
+# "collect-all-then-vote" logic the next time it's visited.
+_CHECK_DATE_CUTOVER = datetime.date(2026, 5, 15)
 
 # Sites to skip when reading sitelinks back into pair form — sister
 # projects (Commons, Wikidata itself, Species) and meta-wikis aren't
@@ -91,12 +104,18 @@ _sitelinks_cache: dict[str, list[tuple[str, str]]] = {}
 
 
 def _check_date_is_recent(date_str: str) -> bool:
-    """True if the ISO date is within ``_CHECK_INTERVAL_DAYS`` of today."""
+    """True if the ISO date is within ``_CHECK_INTERVAL_DAYS`` of today
+    AND on/after the cutover date. Stamps from before the cutover are
+    treated as stale — they came from the pre-2026-05-15 Phase 1
+    logic which only looked at the first interwiki match, so the
+    consistency rule didn't get a chance to run on them."""
     if not date_str:
         return False
     try:
         d = datetime.date.fromisoformat(date_str.strip())
     except ValueError:
+        return False
+    if d < _CHECK_DATE_CUTOVER:
         return False
     age = (datetime.date.today() - d).days
     return 0 <= age < _CHECK_INTERVAL_DAYS
@@ -222,19 +241,6 @@ def _fetch_sitelinks(qid: str) -> list[tuple[str, str]]:
     return pairs
 
 
-def _ordered_pairs_for_resolution(pairs: list[tuple[str, str]]) -> list[tuple[str, str]]:
-    """Try preferred languages first, then everything else."""
-    ordered: list[tuple[str, str]] = []
-    for lang in _PREFERRED_LANGS:
-        for p in pairs:
-            if p[0].lower() == lang and p not in ordered:
-                ordered.append(p)
-    for p in pairs:
-        if p not in ordered:
-            ordered.append(p)
-    return ordered
-
-
 def apply(title: str, text: str):
     if os.getenv("ENABLE_WIKIDATA_LOOKUP") != "1":
         return None, None
@@ -258,8 +264,20 @@ def apply(title: str, text: str):
     if _check_date_is_recent(named.get("check_date", "")):
         return None, None
 
-    # Phase 1: resolve QID if missing and we have at least one interwiki pair.
+    # Phase 1: resolve QID if missing.
+    #
+    # Query every (lang, target) pair on the template and collect the
+    # set of QIDs they resolve to. Three outcomes:
+    #   * |resolved| == 1: interwikis agree → use that QID.
+    #   * |resolved| > 1: interwikis disagree → leave QID empty,
+    #     stamp consistent_qid=false so the conflict is visible.
+    #   * |resolved| == 0: nothing matched → leave QID empty, no flag.
+    # On a subsequent run, if the interwikis come into agreement (e.g.
+    # one of them got renamed Wikidata-side and now points at the
+    # majority QID), the consistent_qid=false flag is dropped.
     new_qid = qid
+    phase1_ran = False
+    phase1_resolved: set[str] = set()
     if not qid:
         if not pairs:
             # No QID and no pairs to look up by. Stamp the check_date
@@ -272,11 +290,13 @@ def apply(title: str, text: str):
             new_template = _build_wd_template(qid, pairs, new_named)
             new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
             return new_text, f"stamp check_date={new_named['check_date']} (no signal to resolve)"
-        for (lang, target) in _ordered_pairs_for_resolution(pairs):
+        phase1_ran = True
+        for (lang, target) in pairs:
             resolved = _resolve_qid_from_sitelink(lang, target)
             if resolved:
-                new_qid = resolved
-                break
+                phase1_resolved.add(resolved)
+        if len(phase1_resolved) == 1:
+            new_qid = next(iter(phase1_resolved))
 
     # Phase 2: fetch sitelinks and merge missing pairs. Always done
     # when a QID is known — pair count is no longer a gate; the
@@ -297,6 +317,23 @@ def apply(title: str, text: str):
     new_named = dict(named)
     new_named["check_date"] = today
 
+    # consistent_qid flag handling:
+    #   * If we now have a resolved QID, drop the flag (resolved or
+    #     never set — either way, no longer a question).
+    #   * If Phase 1 ran and produced 2+ disagreeing QIDs, set the flag.
+    #   * Otherwise leave the flag as-is (Phase 1 found nothing, or
+    #     Phase 1 didn't run because qid was already set going in).
+    flag_set = False
+    flag_cleared = False
+    if new_qid:
+        if "consistent_qid" in new_named:
+            new_named.pop("consistent_qid")
+            flag_cleared = True
+    elif phase1_ran and len(phase1_resolved) > 1:
+        if new_named.get("consistent_qid") != "false":
+            flag_set = True
+        new_named["consistent_qid"] = "false"
+
     if new_qid == qid and new_pairs == pairs and new_named == named:
         return None, None
 
@@ -309,5 +346,11 @@ def apply(title: str, text: str):
     added = len(new_pairs) - len(pairs)
     if added > 0:
         bits.append(f"add {added} sitelink pair(s) from Wikidata")
+    if flag_set:
+        bits.append(
+            f"flag consistent_qid=false ({len(phase1_resolved)} disagreeing QIDs from interwikis)"
+        )
+    if flag_cleared:
+        bits.append("clear consistent_qid flag (now resolved)")
     bits.append(f"check_date={today}")
     return new_text, "; ".join(bits)

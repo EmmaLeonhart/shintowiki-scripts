@@ -12,6 +12,7 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    categories_to_bottom,
     duplicate_qids,
     history_offload,
     ill_category_to_link,
@@ -20,7 +21,7 @@ from shinto_miraheze.orchestrators.ops import (
     wikidata_lookup,
 )
 
-OPS = [strip_html_comments, ill_category_to_link, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids]
+OPS = [strip_html_comments, ill_category_to_link, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids, categories_to_bottom]
 
 
 def main():

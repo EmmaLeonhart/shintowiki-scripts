@@ -18,12 +18,14 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    categories_to_bottom,
     deleted_qids_in_ill,
     duplicate_qids,
     history_offload,
     ill_category_to_link,
     interlang_consolidate,
     normalize_ill_positional,
+    normalize_ill_wikidata,
     remove_defaultsort,
     shikinaisha_talk,
     strip_char_count_cats,
@@ -46,6 +48,7 @@ OPS = [
     strip_html_comments,
     ill_category_to_link,
     normalize_ill_positional,
+    normalize_ill_wikidata,
     interlang_consolidate,
     wikidata_lookup,
     history_offload,
@@ -56,6 +59,7 @@ OPS = [
     untranslated_japanese,
     strip_char_count_cats,
     wikidata_link,
+    categories_to_bottom,
 ]
 
 
