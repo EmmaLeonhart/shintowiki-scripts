@@ -18,6 +18,11 @@ Safety:
   * The destructive delete+recreate runs only when ENABLE_REVDEL=1 (the
     gate is named for historical reasons — we used to revdel here, now we
     delete+recreate for a cleaner page-history UI).
+  * The destructive delete+recreate stage additionally only fires on
+    namespaces listed in DESTRUCTIVE_NAMESPACES. As of 2026-05-11 that's
+    just category (14) — history clearing on the other namespaces is
+    considered done, and continuing was getting disruptive. Fandom
+    mirroring + XML archive still run on every namespace.
   * ENABLE_FANDOM_MIRROR=1 additionally makes a fandom mirror required;
     if the mirror fails, the op aborts for that page and nothing
     destructive happens.
@@ -89,6 +94,12 @@ NAMESPACES = (
 # Subject-side namespaces whose content isn't wikitext. We still archive +
 # delete + recreate their history; we just recreate without a banner.
 NON_WIKITEXT_NAMESPACES = frozenset({420, 828, 860, 862})
+# Namespaces where the destructive delete+recreate stage is still allowed.
+# History clearing on mainspace/template/user/etc. is considered done and
+# was getting disruptive; category space is still bloated, so we keep
+# delete+recreate active there. Fandom mirroring and XML archiving still
+# run on every namespace — only the delete+recreate stage is gated here.
+DESTRUCTIVE_NAMESPACES = frozenset({14})
 HANDLES_SAVE = True
 
 VIEWER_URL = "https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html"
@@ -307,6 +318,13 @@ def run(site, page, run_tag: str, apply: bool) -> tuple[bool, str]:
 
     if not enable_destructive:
         return False, "archive+mirror done; delete+recreate skipped (ENABLE_REVDEL not set)"
+
+    if ns not in DESTRUCTIVE_NAMESPACES:
+        return False, (
+            f"archive+mirror done; delete+recreate skipped "
+            f"(ns={ns} not in DESTRUCTIVE_NAMESPACES; history clearing now "
+            f"only runs on category space)"
+        )
 
     # Compute the recreate payload BEFORE deletion so we don't lose content
     # if delete succeeds but we then fail computing the new text.
