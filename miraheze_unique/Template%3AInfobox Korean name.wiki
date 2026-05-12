@@ -143,7 +143,7 @@
 {{Infobox Korean name/categories|hangul={{{hangul2|}}}|hanja={{{hanja2|}}}|rr={{{rr2|}}}|mr={{{mr2|}}} }}
 {{Infobox Korean name/categories|hangul={{{hangul3|}}}|hanja={{{hanja3|}}}|rr={{{rr3|}}}|mr={{{mr3|}}} }}
 
-</includeonly>|<includeonly></includeonly>}}<includeonly>{{#if:{{{tablewidth|}}}|}}{{#if:{{{logo|}}}|}}{{#if:{{{text|}}}|}}{{#if:{{{fontcolor|}}}|}}</includeonly><noinclude>{{documentation}}
+</includeonly>|}}<includeonly>{{#if:{{{tablewidth|}}}|}}{{#if:{{{logo|}}}|}}{{#if:{{{text|}}}|}}{{#if:{{{fontcolor|}}}|}}</includeonly><noinclude>{{documentation}}
 [[Category:Articles needing Korean script or text|{{PAGENAME}}]]
 [[Category:Wikipedia articles needing romanized Korean|{{PAGENAME}}]]
 [[Category:Use of the tablewidth parameter in Infobox Korean name|{{PAGENAME}}]]

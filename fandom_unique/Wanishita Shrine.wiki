@@ -1,20 +1,18 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+
 '''Wanishita Shrine (和爾下神社) can refer to'''
-* {{ill|Wanishita Shrine (Yamatokoriyama)|ja|和爾下神社 (大和郡山市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Yamatokoriyama)|1=Wanishita Shrine (Q59282593)|comment=changed title based on wikidata|qid=Q59282593}}
-* {{ill|Wanishita Shrine (Tenri)|lt2=Wanishita Shrine|ja|和爾下神社_(天理市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Tenri)|1=Wanishita Shrine (Ichinomoto)|comment=changed title based on wikidata|qid=Q59282589}}
+* {{ill|Wanishita Shrine (Q59282593)|ja|和爾下神社 (大和郡山市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Yamatokoriyama)|comment=changed title based on wikidata|qid=Q59282593}}
+* {{ill|Wanishita Shrine (Ichinomoto)|lt2=Wanishita Shrine|ja|和爾下神社_(天理市)|12=simple|13=User:Immanuelle/Wanishita Shrine (Tenri)|comment=changed title based on wikidata|qid=Q59282589}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Wanishita Shrine (Q59282593)|lt=Wanishita Shrine|qid=Q59282593}} — Yamatokōriyama
 * {{ill|Wanishita Shrine (Ichinomoto) (Q59282589)|lt=Wanishita Shrine (Ichinomoto)|qid=Q59282589}} — Tenri
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|和爾下神社|version=70321170|comment=Imported full ja history}}
 
-{{wikidata link|Q60986783|ja|和爾下神社}}
+{{wikidata link|Q60986783|ja|和爾下神社|check_date=2026-05-12}}
 [[Category:Shrine disambiguations]]
 [[Category:Special:LonelyPages 22 May 2025]]
 [[Category:Special:LonelyPages 26 May 2025]]
