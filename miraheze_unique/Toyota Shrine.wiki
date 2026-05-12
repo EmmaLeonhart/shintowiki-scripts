@@ -1,26 +1,25 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Toyota_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+
 '''Toyota Shrine''' (豊田神社)
 
-* {{ill|Toyota Shrine (Shibata City)|ja|豊田神社 (新発田市)|12=simple|13=User:Immanuelle/Toyota Shrine (Shibata City)|ja_comment=jawiki link invalid}} - Located in {{ill|Shibata, Niigata|en|Shibata, Niigata|qid=Q601950|lt=Shibata City|1=Shibata, Niigata}}, {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}.
-* {{ill|Toyota Shrine (Edogawa Ward)|ja|豊田神社 (江戸川区)|12=simple|13=User:Immanuelle/Toyota Shrine (Edogawa Ward)|qq=}} - Located in {{ill|Edogawa, Tokyo|en|Edogawa, Tokyo|qid=Q214056|lt=Edogawa Ward|1=Edogawa, Tokyo}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis|1=Tokyo}}.
-* {{ill|Toyota Shrine (Masuda City)|ja|豊田神社 (益田市)|12=simple|13=User:Immanuelle/Toyota Shrine (Masuda City)|ja_comment=jawiki link invalid}} - Located in {{ill|Masuda, Shimane|en|Masuda, Shimane|qid=Q753731|lt=Masuda City|1=Masuda, Shimane}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}.
-* {{ill|Toyota Shrine (Shimonoseki City)|ja|豊田神社 (下関市)|12=simple|13=User:Immanuelle/Toyota Shrine (Shimonoseki City)|ja_comment=jawiki link invalid}} - Located in {{ill|Shimonoseki|en|Shimonoseki|qid=Q203308|lt=Shimonoseki City|1=Shimonoseki}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture|1=Yamaguchi Prefecture}}.
-* {{ill|Toyota Shrine (Karenkō Prefecture)|ja|豊田神社 (花蓮港庁)|12=simple|13=User:Immanuelle/Toyota Shrine (Karenkō Prefecture)|qq=}} - Formerly located in {{ill|Shoufeng|en|Shoufeng|qid=Q707988|lt=Shoufeng Township|1=Shoufeng}}, {{ill|Hualien County|en|Hualien County|qid=Q249868|lt=Hualien County|1=Hualien County}}, {{ill|Taiwan|ja|台湾|12=simple|13=User:Immanuelle/Taiwan|comment=changed title based on wikidata|1=Taiwan (island)|qid=Q22502}}.
+* {{ill|Toyota Shrine (Shibata City)|ja|豊田神社 (新発田市)|12=simple|13=User:Immanuelle/Toyota Shrine (Shibata City)|ja_comment=jawiki link invalid}} - Located in {{ill|Shibata, Niigata|en|Shibata, Niigata|qid=Q601950|lt=Shibata City}}, {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}.
+* {{ill|Toyota Shrine (Edogawa Ward)|ja|豊田神社 (江戸川区)|12=simple|13=User:Immanuelle/Toyota Shrine (Edogawa Ward)|qq=}} - Located in {{ill|Edogawa, Tokyo|en|Edogawa, Tokyo|qid=Q214056|lt=Edogawa Ward}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis}}.
+* {{ill|Toyota Shrine (Masuda City)|ja|豊田神社 (益田市)|12=simple|13=User:Immanuelle/Toyota Shrine (Masuda City)|ja_comment=jawiki link invalid}} - Located in {{ill|Masuda, Shimane|en|Masuda, Shimane|qid=Q753731|lt=Masuda City}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}.
+* {{ill|Toyota Shrine (Shimonoseki City)|ja|豊田神社 (下関市)|12=simple|13=User:Immanuelle/Toyota Shrine (Shimonoseki City)|ja_comment=jawiki link invalid}} - Located in {{ill|Shimonoseki|en|Shimonoseki|qid=Q203308|lt=Shimonoseki City}}, {{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture}}.
+* {{ill|Toyota Shrine (Karenkō Prefecture)|ja|豊田神社 (花蓮港庁)|12=simple|13=User:Immanuelle/Toyota Shrine (Karenkō Prefecture)|qq=}} - Formerly located in {{ill|Shoufeng|en|Shoufeng|qid=Q707988|lt=Shoufeng Township}}, {{ill|Hualien County|en|Hualien County|qid=Q249868|lt=Hualien County}}, {{ill|Taiwan (island)|ja|台湾|12=simple|13=User:Immanuelle/Taiwan|comment=changed title based on wikidata|qid=Q22502}}.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Toyota Shrine (Q97193373)|lt=Toyota Shrine|qid=Q97193373}} — Higashi-Mizue
 * {{ill|豊田神社 (Q135459967)|lt=豊田神社|qid=Q135459967}} — Agano
 * {{ill|豊田神社 (Q135462850)|lt=豊田神社|qid=Q135462850}} — Shibata
 * {{ill|豊田神社 (Q135463071)|lt=豊田神社|qid=Q135463071}} — Kita-ku
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|豊田神社|version=98409824|comment=Imported full ja history}}
 
-{{wikidata link|Q131226889|ja|豊田神社}}
+{{wikidata link|Q131226889|ja|豊田神社|check_date=2026-05-11}}
 [[Category:Shrine disambiguations]]
 [[Category:Special:LonelyPages 22 May 2025]]
 [[Category:Special:LonelyPages 26 May 2025]]

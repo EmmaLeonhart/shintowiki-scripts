@@ -1,0 +1,2 @@
+[2026-05-12 01:11:34 UTC] [ERROR] generate_shrine_disambig_lists: SPARQL failed for '十二所神社': 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
+[2026-05-12 01:11:34 UTC] [ERROR] generate_shrine_disambig_lists: SPARQL failed for '鹿児島神社': 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
