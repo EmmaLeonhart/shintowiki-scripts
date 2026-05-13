@@ -71,7 +71,11 @@ to the end of all the untranslated Japanese character counting stuff and disable
 
 Also set up remote claude cron jobs to go through a programmatically generated queue of agentic stuff it needs to do. Including pretty much all of the git synced pages. Moving the Japanese titled pages is a bit of a different additional thing that I think I will be doing manually. But apparently this is possible and will make it much easier for me to finally drop this project altogether and make it autonomous
 
-Run a onetime script here https://shinto.miraheze.org/wiki/Category:Templates_not_transcluded_in_mainspace because basically an issue I have been having is essentially such: Templates transluded in categoryspace are ones worth preserving too. So the ideal here would be to run through all of the pages here and adding [[Category:Templates not transcluded in mainspace or categoryspace]] to the applicable ones. And then setting it up so that on July 1st 2027 we add that category to [[Category:crud categories]] to sunset it. 
+So there will be a file called remote_queue.py that using github actions puts together a list of pages with the instructions of how to change them. So it automatically queues the work and then claude on remote does the work to make the wiki somewhat self healing moving into the future.
+
+Run a onetime script here https://shinto.miraheze.org/wiki/Category:Templates_not_transcluded_in_mainspace because basically an issue I have been having is essentially such: Templates transluded in categoryspace are ones worth preserving too. So the ideal here would be to run through all of the pages here and adding [[Category:Templates not transcluded in mainspace or categoryspace]] to the applicable ones. And then setting it up so that on July 1st 2027 we add the older category to [[Category:crud categories]] to sunset it. 
+
+Meanwhile once this is through and we are sure about it, we can start deleting all the members of [[Category:Templates not transcluded in mainspace or categoryspace]] since they are a waste of wiki space
 
 
 ## Pinned notes
