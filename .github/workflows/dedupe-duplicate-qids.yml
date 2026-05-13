@@ -1,0 +1,64 @@
+name: Dedupe Duplicate QIDs
+
+# One-shot workflow: moves non-canonical duplicate-QID pages to redirects.
+# DO NOT add a schedule — this is a one-off operation.
+# Trigger manually via: gh workflow run dedupe-duplicate-qids.yml
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh shinto_miraheze/run_step.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Dedupe: move non-canonical duplicate-QID pages to redirects"
+        run: |
+          shinto_miraheze/run_step.sh "Dedupe: dedupe_duplicate_qids" \
+            python3 shinto_miraheze/dedupe_duplicate_qids.py \
+              --apply \
+              --max-edits 50 \
+              --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Dedupe Duplicate QIDs"
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Dedupe Duplicate QIDs"
