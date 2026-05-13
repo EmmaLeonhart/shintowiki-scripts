@@ -27,6 +27,7 @@ Default mode is dry-run. Use --apply to actually edit.
 """
 
 import argparse
+import datetime
 import io
 import os
 import re
@@ -35,6 +36,14 @@ import time
 import unicodedata
 
 import mwclient
+
+# Counter-family sunset: bail out without editing on/after this date.
+# Coordinated with ``sunset_jp_char_count_cats.py`` (which marks the
+# bucket categories themselves as crud) and the
+# ``untranslated_japanese`` orchestrator op (same gate). Once the date
+# passes the orchestrator and this script stop adding the tags so the
+# crud cleanup pipeline can drain the categories without contention.
+SUNSET_DATE = datetime.date(2027, 9, 1)
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -234,6 +243,14 @@ def main():
                              "Useful for re-bucketing a specific tier with new thresholds. "
                              "Ignores state file — always processes all members.")
     args = parser.parse_args()
+
+    if datetime.datetime.utcnow().date() >= SUNSET_DATE:
+        print(
+            f"tag_untranslated_japanese is sunset (SUNSET_DATE={SUNSET_DATE.isoformat()}); "
+            f"no-op. The crud cleanup pipeline now owns these categories — "
+            f"see sunset_jp_char_count_cats.py."
+        )
+        return
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent=USER_AGENT)
