@@ -1,0 +1,66 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Myokenji_Temple_%28Hikimacho%2C_Takasaki_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
+
+{{Infobox Buddhist temple
+| name          = Myōken-ji
+| religious_affiliation = {{ill|Tendai|qid=Q855964|1=Tendai}}
+|image         = File:Myokenji.jpg|250px
+| location      = 213 Hikima-machi, Takasaki City, Gunma Prefecture, Japan
+| latd          = 36 |latm = 23 |lats = 35.2 |latNS = N
+| longd         = 139 |longm = 01 |longs = 11.8 |longEW = E
+| mount         = Sankosan
+| sect          = Tendai
+| deity         = Shakyamuni Tathāgata Buddha
+| established   = 715
+| founder       = Fujiwara no Tadaaki
+| alias         = Shichiseizan Sokusaiji, Hitsuji Myōken
+| cultural_properties = Myōken-sha Main Hall
+| map2          = {{Maplink2|frame=yes|plain=yes|frame-align=center|type=point|zoom=12}}
+| prefecture= {{ill|Takasaki|qid=Q336438|1=Takasaki}}
+| coordinates= {{Coord|36.39311111111111|N|139.01994444444443|E|region:JP_type:landmark|display=inline,title}}
+}}
+
+'''Myōken-ji''' (妙見寺) is a {{ill|Tiantai|en|Tiantai|qid=Q668188|lt=Tendai Buddhism|1=Tiantai}} temple located in {{ill|Takasaki|en|Takasaki|qid=Q336438|lt=Takasaki|1=Takasaki}}, Gunma Prefecture, Japan. Its mountain name (''sangō'') is Sankosan, and its cloister name (''ingō'') is Kisshōin. The temple's principal image is {{ill|Shakyamuni Tathāgata Buddha|ja|釈迦如来|1=Shakyamuni Tathāgata|12=simple|13=User:Immanuelle/Shakyamuni Tathāgata Buddha|qq=}}.
+
+== History ==
+The founding date of this temple is unclear, but it is traditionally said to have been established in either [[:en:Wadō|Wadō]] 7 (714) or {{ill|Reiki|en|Reiki|qid=Q183057|lt=Reiki|1=Reiki}} 1 (715) by {{ill|Fujiwara no Tadaaki|ja|藤原忠明|12=simple|13=User:Immanuelle/Fujiwara no Tadaaki|ja_comment=jawiki link invalid}}, a local official in {{ill|Kōzuke Province|en|Kōzuke Province|qid=Q1054838|lt=Kōzuke Province|1=Kōzuke Province}}.
+
+According to the "Hanazono Star God Record" (花園星神記), Tadaaki once stayed at the temple. Awakening at midnight, he noticed a bright light rising in the northwest direction. Curious, he sent retainers to investigate and discovered the light emanated from the Kobushi Pond in Reimizu Town. They retrieved a rare turtle with red eyes and a white neck from the water. When Tadaaki presented this turtle to the emperor, it was so highly esteemed that the era name was changed to Reiki ("Holy Turtle").
+
+The temple is mentioned in the {{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi|1=Shoku Nihongi}}, compiled in {{ill|Enryaku|en|Enryaku|qid=Q1373176|lt=Enryaku|1=Enryaku}} 16 (797), confirming its long-standing history. Previously known as "Shichiseizan Sokusaiji," it has been a site of devotion to {{ill|Myōken|en|Myōken|qid=Q10960623|lt=Myōken Bosatsu|1=Myōken}} and was also called "Hitsuji Myōken" (Sheep Myōken). Some scholars link the temple to the {{ill|Tago Stele|en|Tago Stele|qid=Q11431029|lt=Tako Kō Monument|1=Tago Stele}}, particularly its reference to "sheep."
+
+During the {{ill|Tengyō no Ran|en|Tengyō no Ran|qid=Q2975322|lt=Jōhei-Tengyō War|1=Tengyō no Ran}}, {{ill|Taira no Yoshifumi|en|Taira no Yoshifumi|qid=Q11483528|lt=Taira no Yoshifumi|1=Taira no Yoshifumi}}, cornered in the Battle of Someyagawa, followed a mysterious voice to the temple. There, a monk entrusted him with the "Seven-Star Sword," enabling him to gain the protection of Myōken Bosatsu. Myōken deities revered at {{ill|Chichibu Shrine|en|Chichibu Shrine|qid=Q2963366|lt=Chichibu Shrine|1=Chichibu Shrine}} and {{ill|Chiba Shrine|en|Chiba Shrine|qid=Q11406700|lt=Chiba Shrine|1=Chiba Shrine}} were enshrined from this temple.
+
+In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, the temple received a red-seal letter from the {{ill|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|ja|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|12=simple|13=User:Immanuelle/Tokugawa shogunate|ja_comment=jawiki link invalid}}, granting it official recognition and support.
+
+<gallery>
+myokenji2.jpg|Entrance
+myokenji3.jpg|Someyagawa River
+myokenji4.jpg|Temple grounds
+</gallery>
+
+== Cultural Properties ==
+* Gunma Prefecture Cultural Properties
+** Myōken-sha Main Hall (designated by Takasaki City)
+
+== Access ==
+* Take a bus bound for Gunma Onsen from JR Maebashi Station, and alight at "Myōken-mae."
+
+== External Links ==
+* [http://www.city.takasaki.gunma.jp/docs/2013121800907/ Myōken-sha Main Hall] - Takasaki City Official Site
+
+==References==
+{{reflist}}
+{{Myōken Faith}}
+
+==References==
+{{reflist}}
+
+{{translated page|ja|妙見寺 (高崎市引間町)|version=90308691|comment=Imported full ja history}}
+
+{{wikidata link|Q11447022|ja|妙見寺 (高崎市引間町)|de|Yatsushiro Shrine}}
+[[Category:Buddhist temples in Gunma Prefecture]]
+[[Category:Buildings and structures in Takasaki]]
+[[Category:History of Takasaki]]
+[[Category:Tendai temples]]
+[[Category:Tiantai temples]]
+[[Category:Wikidata has short description]]
