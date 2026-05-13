@@ -1,11 +1,9 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=20-Year_Plan_for_One_Million_Families for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 {{Expand Japanese|二十カ年百万戸送出計画|date=November 2025}}
 
-{{wikidata link|Q18234309|ja|二十カ年百万戸送出計画|zh|二十年百万户送出计划|en|20-Year Plan for One Million Families}}
+{{wikidata link|Q18234309|ja|二十カ年百万戸送出計画|zh|二十年百万户送出计划|en|20-Year Plan for One Million Families|check_date=2026-05-13}}
 
 {{translated page|ja|二十カ年百万戸送出計画|version=88308256|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 '''二十カ年百万戸送出計画'''（にじっかねんひゃくまんこそうしゅつけいかく）とは、{{jalink|1936年|Q18649}}（昭和11年）8月11日に、{{jalink|拓務省|Q3315484}}が作成し、{{jalink|廣田内閣|Q11486424|広田弘毅内閣}}により国策として確定した、{{jalink|満州国}}への大規模な日本人農民の{{jalink|移住|Q187668}}計画である。同年5月に、{{jalink|関東軍|Q646394}}が作成していた、「{{jalink|満州農業移民百万戸移住計画}}」を骨子として作成された。
 
@@ -116,4 +114,6 @@
 [[Category:Pages with 500+ untranslated japanese characters]]
 [[Category:Pages with 750+ untranslated japanese characters]]
 [[Category:Pages with 1000+ untranslated japanese characters]]
+[[Category:Need translation]]
+[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
