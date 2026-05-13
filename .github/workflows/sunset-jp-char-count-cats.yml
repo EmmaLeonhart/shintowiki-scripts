@@ -1,0 +1,66 @@
+name: Sunset JP Char Count Categories
+
+# One-shot workflow: adds [[Category:crud categories]] to each of the
+# "Pages with N+ untranslated japanese characters" bucket category
+# pages so the counter family enters the crud-sunset pipeline.
+# Coordinated with SUNSET_DATE = 2027-09-01 in
+# orchestrators/ops/untranslated_japanese.py and
+# tag_untranslated_japanese.py — both stop adding the tags on that date.
+#
+# DO NOT add a schedule — this is a one-off. Trigger manually via:
+#   gh workflow run sunset-jp-char-count-cats.yml
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sunset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh shinto_miraheze/run_step.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Sunset: tag JP-char-count category pages as crud"
+        run: |
+          shinto_miraheze/run_step.sh "Sunset: sunset_jp_char_count_cats" \
+            python3 shinto_miraheze/sunset_jp_char_count_cats.py \
+              --apply \
+              --max-edits 50 \
+              --run-tag "${RUN_TAG}"

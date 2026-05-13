@@ -6,83 +6,90 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Action items
 
-TRY TO CLEAR THE BLOAT FROM THIS PAGE IT IS WAY TOO HIGH and involves already completed stuff
-
-Go through the notes of the [[Category:git synced pages]] — each
-git_synced/ page has a leading `<!--...-->` instruction comment, and
-those instructions must actually be executed, not just present.
-* **60 Sexagenary cycle pages**: fully standardized (commit 208006f
-  on 2026-05-10).
-* **~165 Shrine disambig pages**: migrated to the dual-sync model on
-  2026-05-10 (commit c73d144). Pages now live in BOTH miraheze_unique/
-  and fandom_unique/ instead of git_synced/. `generate_shrine_disambig_lists.py`
-  runs as a step in the Independent Pages Sync workflow on every daily
-  cleanup-loop cycle — pulls the Japanese kanji name(s) from each
-  page, SPARQLs Wikidata for shrines with that label, writes the
-  `== Shrines with this name ==` block to BOTH miraheze_unique/ and
-  fandom_unique/, and the per-wiki syncs push to both wikis in the
-  same cycle. Follow-ups:
-  * 4 pages need manual kanji extraction (unusual lede formats:
-    Kobe (disambiguation), Kōtai Shrine (disambiguation), Meiji,
-    Nitta Shrine)
-  * 15 pages had 0 exact-label SPARQL matches — extending the query
-    with UNION over skos:altLabel + prefix matching would catch more
-    but the broader query timed out at >60s; needs optimization
+Shrine-disambig follow-ups (rest of `[[Category:git synced pages]]` work
+is done — 60 sexagenary + 165 disambig pages migrated to dual-sync on
+2026-05-10): 4 disambig pages have unusual ledes the kanji extractor
+can't parse (Kobe disambiguation, Kōtai Shrine disambiguation, Meiji,
+Nitta Shrine — Nitta and Kōtai now have the auto-generated block,
+Kobe and Meiji still don't); 15 pages had 0 exact-label SPARQL matches
+and need a broader query (UNION over skos:altLabel + prefix matching;
+the broader query timed out at >60s and needs WDQS optimization).
 
 Translate all of the [[Category:Need translation]] —
 `sync_need_translation.py` is a bidirectional file ↔ wiki mirror only;
 it does not translate. As of 2026-05-11, 121 of ~167 files under
 `need_translation/` still contain CJK awaiting English translation
-(down from 215 on 2026-05-10; 94 cleared so far across multiple sessions).
-Per-page LLM work, batchable but judgement-heavy.
-The big remaining shape is genuine Japanese-prose kokuzo articles —
-the simpler "swap template name + drop category" cases were done in
-bulk via the maintenance-template renames in 40c519e.
+(down from 215 on 2026-05-10). Per-page LLM work, batchable but
+judgement-heavy. The big remaining shape is genuine Japanese-prose
+kokuzo articles — the simpler "swap template name + drop category"
+cases were done in bulk via 40c519e.
 
 Reorganize the pages in `duplicated_content/` to remove duplicated
-content and turn each one into a single coherent article. This is an
-agentic task — not scriptable. The duplicated-content sync (per
+content and turn each one into a single coherent article. Agentic
+task — not scriptable. The duplicated-content sync (per
 [[project_duplicated_content_not_wired]]) has already pulled each
-listed page into the local repo as a `.wiki` file; the work is to
-move paragraphs around, dedupe overlapping prose, drop boilerplate
-inherited from the source-of-duplication, and end up with a
-relatively organized article. When a page is done, the per-page
-opt-out signal (remove `[[Category:Currently duplicated content]]`
-from the file) lets the next CI sync push the cleaned version to the
-wiki and delete the file from the repo. Process pages in batches;
-commit and push after each batch.
+page into the local repo as a `.wiki` file; the work is to move
+paragraphs around, dedupe overlapping prose, drop boilerplate, and
+end up with an organized article. When a page is done, removing
+`[[Category:Pages with duplicated content]]` from the file is the
+opt-out signal — next CI sync pushes the cleaned version and deletes
+the local file. ~353 pages remaining; this is the largest LLM-time
+sink on the queue and is the strongest candidate for the autonomous
+remote-claude flow below.
 
 Edit up the templates on the new independently-synced
 miraheze_unique/ and fandom_unique/ disambig pages so they render
 correctly on shinto.fandom.com. The dual-sync model (commit c73d144,
 2026-05-10) pushes the same content to both wikis, but a number of
 templates that work on miraheze haven't been ported to fandom — go
-through each fandom_unique/ file and adjust template usage so it
-renders. Commit and push once done.
+through each fandom_unique/ file and convert `{{ill|...}}` →
+`[[...]]` etc. ~600 pages; mostly mechanical but each page needs
+review.
 
 ## Stuff added by web during session
 
-Here's stuff added by web during an autonomous agentic session
+Stuff added by web during an autonomous agentic session. When
+resolving changes keep these at the end of the queue and execute
+on them.
 
-when resolving changes keep these at the end of the queue and execute on them
+Crud-cats sunset for untranslated-Japanese character-counter
+categories. Add `[[Category:crud categories]]` to each
+``Pages with N+ untranslated japanese characters`` category page so
+the whole counter family enters the crud-deletion pipeline, and
+disable the orchestrator op + the standalone `tag_untranslated_japanese.py`
+sweep that adds them, on 2027-09-01.
 
-I want an action added that adds [[Category:crud categories]] 
-to the end of all the untranslated Japanese character counting stuff and disables the actions that add them on September 1, 2027
+Set up remote claude cron jobs that work a programmatically generated
+queue of agentic page changes. `remote_queue.py` runs in GitHub
+Actions, produces a queue (page + instruction list) covering most of
+the git_synced/ work and the duplicated_content/ reorganization, and
+a scheduled remote claude pulls items off and edits them. Moving the
+Japanese-titled pages is a separate manual task and is **not**
+covered by this. Goal: the wiki gets self-healing enough that I can
+finally drop the project and have it stay in a decent state for the
+archives, regardless of whether the wiki itself stays up long-term.
 
-Also set up remote claude cron jobs to go through a programmatically generated queue of agentic stuff it needs to do. Including pretty much all of the git synced pages. Moving the Japanese titled pages is a bit of a different additional thing that I think I will be doing manually. But apparently this is possible and will make it much easier for me to finally drop this project altogether and make it autonomous
-
-So there will be a file called remote_queue.py that using github actions puts together a list of pages with the instructions of how to change them. So it automatically queues the work and then claude on remote does the work to make the wiki somewhat self healing moving into the future.
-
-Key thing is the better the state it is in when I finally have to ignore it the better. I am not sure if the wiki will stay up long term, but it can at least get into archives as a decent thing.
-
-Run a onetime script here https://shinto.miraheze.org/wiki/Category:Templates_not_transcluded_in_mainspace because basically an issue I have been having is essentially such: Templates transluded in categoryspace are ones worth preserving too. So the ideal here would be to run through all of the pages here and adding [[Category:Templates not transcluded in mainspace or categoryspace]] to the applicable ones. And then setting it up so that on July 1st 2027 we add the older category to [[Category:crud categories]] to sunset it. 
-
-Meanwhile once this is through and we are sure about it, we can start deleting all the members of [[Category:Templates not transcluded in mainspace or categoryspace]] since they are a waste of wiki space
+Run a one-time sweep over
+[[Category:Templates not transcluded in mainspace]]: for each
+template, check whether it's transcluded in category space too, and
+if not add `[[Category:Templates not transcluded in mainspace or
+categoryspace]]`. Then queue a 2027-07-01 step that adds the older
+"in mainspace" category to `[[Category:crud categories]]` to sunset
+it. Once the new category is settled, start deleting its members —
+templates with no transclusions in mainspace or categoryspace are
+wiki-space waste.
 
 ## More stuff
-I think that in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations these ones kinda need their content  more removed from the old things since they cause issues
 
-Should have a generic intro or nearly generic intro (maybe some custom content) but definitely the old lists go since they are actively confusing
+The pages in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations
+need their content stripped harder — the old lists they inherited
+from the source pages cause active confusion. Each should have a
+generic-ish intro (a tiny amount of custom content per shrine name
+is OK), and the old human-curated lists should be dropped; what
+stays is the auto-generated `== Shrines with this name ==` block
+that `generate_shrine_disambig_lists.py` writes. Process these from
+miraheze_unique/ (canonical source per the dual-sync model) so the
+next sync pushes the cleanup to both wikis.
 
 ## Pinned notes
 

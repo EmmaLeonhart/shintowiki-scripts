@@ -24,10 +24,18 @@ repo for the one-off ``--category`` re-bucketing mode that
 replaced by this op.
 """
 
+import datetime
 import re
 
 NAME = "untranslated_japanese"
 NAMESPACES = (0,)
+
+# Counter-family sunset: stop adding bucket categories on this date.
+# Coordinated with ``sunset_jp_char_count_cats.py``, which marks the
+# bucket category pages themselves as crud — once that sweep has run
+# and SUNSET_DATE passes, the orchestrator stops feeding the system
+# and the crud cleanup can drain the categories without contention.
+SUNSET_DATE = datetime.date(2027, 9, 1)
 
 THRESHOLDS = [50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000]
 
@@ -99,6 +107,9 @@ def _desired_cats(jp_count: int) -> list[str]:
 
 
 def apply(title: str, text: str):
+    if datetime.datetime.utcnow().date() >= SUNSET_DATE:
+        return None, None
+
     jp_count = _count_after_strip(text)
     desired = _desired_cats(jp_count)
 
