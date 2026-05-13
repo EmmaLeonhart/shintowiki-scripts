@@ -1,0 +1,91 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hokke-ji_%28Suwa%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
+{{Infobox Buddhist temple|image=File:法華寺山門.jpg|religious_affiliation={{ill|Rinzai school|qid=Q639625|1=Rinzai school}}|prefecture={{ill|Suwa|qid=Q846338|1=Suwa, Nagano}}|coordinates={{Coord|35.99772222222222|N|138.11988888888888}}|deity={{ill|Shakyamuni Tathāgata|qid=Q11644537|1=Shakyamuni Tathāgata}}}}
+
+{{Other uses|{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=長野県|1=Nagano Prefecture}}[[:en:Suwa City|諏訪市]]'s {{ill|Temple|en|Temple|qid=Q44539|lt=Temple|1=Temple}}|Other uses|Hokkeji (disambiguation)}}
+{{Infobox religious building
+| name       = Hokkeji
+| religious_affiliation = [[Shinto]]
+|image      = 法華寺山門.jpg
+| religious_affiliation = [[Shinto]]
+|image_desc = Hokkeji Sanmon (Mountain Gate)
+| location   = {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa City|1=Suwa, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, [[Nakasu (Suwa City)|Nakasu]] ({{small|[[Small area|小字]]}} {{ill|Shinjūji Nakasu|ja|中洲神宮寺|lt=Shinjūji Nakasu|12=simple|13=User:Immanuelle/Shinjūji Nakasu|ja_comment=jawiki redirects to 中洲村 (長野県)|ja_comment=jawiki redirects to 中洲村 (長野県)|1=Nakasu|comment=changed title based on wikidata|qid=Q17174642}}) 856
+| coordinates= 
+| Latitude_deg = 35 | Latitude_min = 59 | Latitude_sec = 51.8
+| Longitude_deg = 138 | Longitude_min = 07 | Longitude_sec = 11.6
+| Mountain   = {{ill|Washineyama|ja|鷲峰山|lt=Washineyama|12=simple|13=User:Immanuelle/Washineyama|1=Washineyama|comment=changed title based on wikidata|qid=Q11676251}}
+| Sect       = {{ill|Zen|en|Zen|qid=Q7953|lt=Zen Buddhism|1=Zen}} ← {{ill|Tiantai|en|Tiantai|qid=Q668188|lt=Tendai Buddhism|1=Tiantai}}
+| Sectary    = {{ill|Rinzai School Myoshinji branch|ja|臨済宗妙心寺派|lt=Rinzai School Myoshinji branch|12=simple|13=User:Immanuelle/Rinzai School Myoshinji branch|1=Myōshin-ji sect|comment=changed title based on wikidata|qid=Q108821667}}
+| Shrine_Rank= 
+| Guardian_deity = 
+| deity = {{ill|Shakyamuni Tathāgata Buddha|ja|釈迦如来|1=Shakyamuni Tathāgata|lt=Shakyamuni Tathāgata Buddha|12=simple|13=User:Immanuelle/Shakyamuni Tathāgata Buddha|qq=}} (in a {{ill|Sanmon format|ja|釈迦三尊|1=Shakyamuni Triad|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|qq=Sanmon format|12=simple|13=User:Immanuelle/Sanmon format|comment=changed title based on wikidata|qid=Q11071530}} holding {{ill|Samantabhadra (Bodhisattva)|en|Samantabhadra (Bodhisattva)|qid=Q868306|lt=Fugen Bosatsu|1=Samantabhadra (Bodhisattva)}} and {{ill|Manjushri|en|Manjushri|qid=Q471696|lt=Monju Bosatsu|1=Manjushri}} as attendants)
+| consecration_year_year = 
+| Founder    = 
+| Established = 
+| Reestablished_year = 
+| Revival    = {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}
+| Revival_by = {{ill|Suwa Morishige|ja|諏訪盛重|lt=Suwa Morishige|12=simple|13=User:Immanuelle/Suwa Morishige|1=Suwa Morishige|comment=changed title based on wikidata|qid=Q11631913}}
+| Official_name = Washineyama Hokkezenji
+| Alias      = Suwa Hokakeji
+| Temple_code= {{ill|Eishiji pilgrimage|ja|伊那諏訪八十八霊場|12=simple|13=User:Immanuelle/Eishiji pilgrimage|1=Ina Suwa 88 Pilgrimage|comment=changed title based on wikidata|qid=Q128866411}} No.25
+| Cultural_properties = 
+| Official_HP = 
+| Official_HP_name = 
+| Map        = {{location map|Japan Nagano Prefecture|label=Hokkeji|float=center|relief=1|width=256}}
+}}
+
+'''Hokkeji''' (法華寺) is a {{ill|Rinzai school|en|Rinzai school|qid=Q639625|lt=Zen Buddhist temple|1=Rinzai school}} of the {{ill|Rinzai School Myoshinji branch|ja|臨済宗妙心寺派|12=simple|13=User:Immanuelle/Rinzai School Myoshinji branch|1=Myōshin-ji sect|comment=changed title based on wikidata|qid=Q108821667}} located in {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa City|1=Suwa, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, in the {{ill|Nakasu Shinjūji|ja|中洲神宮寺|lt=Shinjūji Nakasu|12=simple|13=User:Immanuelle/Nakasu Shinjūji|ja_comment=jawiki redirects to 中洲村 (長野県)|ja_comment=jawiki redirects to 中洲村 (長野県)|1=Nakasu|comment=changed title based on wikidata|qid=Q17174642}} area of Nakasu (中洲) with the address 856.
+
+== History ==
+In the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}, {{ill|Suwa Morishige|ja|諏訪盛重|12=simple|13=User:Immanuelle/Suwa Morishige|1=Suwa Morishige|comment=changed title based on wikidata|qid=Q11631913}} served as a {{ill|Naishi (court lady)|lt=Naishi (court lady)|lt=Court lady|ja|御内人|12=simple|13=User:Immanuelle/court lady|qq=}} to the {{ill|Kamakura shogunate|en|Kamakura shogunate|qid=Q736839|lt=Kamakura Shogunate|1=Kamakura shogunate}}. He practiced Zen under {{ill|Lanxi Daolong|en|Lanxi Daolong|qid=Q357988|lt=Daikaku Zendo Doryu|1=Lanxi Daolong}}, reforming from the previous {{ill|Tiantai|en|Tiantai|qid=Q668188|lt=Tendai School|1=Tiantai}} to establish the temple's revival and founding.
+
+During the {{ill|Tenshō (Momoyama period)|en|Tenshō (Momoyama period)|qid=Q1145058|lt=Tenshō Era|1=Tenshō (Momoyama period)}} 10 (1582) {{ill|Koshu campaign|ja|甲州征伐|12=simple|13=User:Immanuelle/Koshu campaign|1=Kōshū Conquest|comment=changed title based on wikidata|qid=Q55713231}}, {{ill|Oda Nobunaga|en|Oda Nobunaga|qid=Q171411|lt=Oda Nobunaga|1=Oda Nobunaga}} stayed at Hokkeji from March 19 to April 2, conducting the {{ill|Koshin region|ja|甲信地方|12=simple|13=User:Immanuelle/Koshin region|1=Kōshin region|comment=changed title based on wikidata|qid=Q3209390}} land distribution and issuing national laws. The ''{{ill|Nobunaga ki|ja|信長記|12=simple|13=User:Immanuelle/Nobunaga ki|1=shinchouki|comment=changed title based on wikidata|qid=Q97379329}}'' records, "On March 19, I stayed at Suwa Hokkeji, commanding my men on the Ranks as I instructed."
+
+During the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration|1=Meiji Restoration}}, the temple was largely destroyed except for the main hall and kitchen due to {{ill|Haibutsu kishaku|en|Haibutsu kishaku|qid=Q702298|lt=Haibutsu kishaku|1=Haibutsu kishaku}}. However, it was restored in {{ill|1899|en|1899|qid=Q7851|lt=Meiji 32|1=1899}} (1899).
+
+== Overview ==
+Adjacent to the {{ill|Suwa Taisha Upper Shrine|ja|諏訪大社上社|12=simple|13=User:Immanuelle/Suwa Taisha Upper Shrine|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid|qid=Q135579023|1=Suwa Taisha Upper Shrine}}, Hokkeji enshrines the main deity {{ill|Shakyamuni Tathāgata Buddha|ja|釈迦如来|1=Shakyamuni Tathāgata|lt=Shakyamuni Tathāgata Buddha|12=simple|13=User:Immanuelle/Shakyamuni Tathāgata Buddha|qq=}} with an inscription from {{ill|Einin|en|Einin|qid=Q1327307|lt=Eiji era|1=Einin}} 2 (1294), depicted in a {{ill|Sanmon format|ja|釈迦三尊|1=Shakyamuni Triad|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|1=Three Sages of Avatamsaka|2=ja|3=釈迦三尊|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|4=zh|5=華嚴三聖|6=commons|7=Category:Three Sages of Avatamsaka|qq=Sanmon format|12=simple|13=User:Immanuelle/Sanmon format|comment=changed title based on wikidata|qid=Q11071530}} holding {{ill|Samantabhadra (Bodhisattva)|en|Samantabhadra (Bodhisattva)|qid=Q868306|lt=Fugen Bosatsu|1=Samantabhadra (Bodhisattva)}} and {{ill|Manjushri|en|Manjushri|qid=Q471696|lt=Monju Bosatsu|1=Manjushri}} as attendants.
+
+At the top of the stone steps stands an {{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=Irimoya-zukuri|1=East Asian hip-and-gable roof}} style two-story gate, and the main hall facing front was rebuilt in {{ill|Meiwa|en|Meiwa|qid=Q1146161|lt=Meiwa era|1=Meiwa}} 2 (1765). Behind the Sutra Platform (須弥壇), there is a hall of tablets (位牌堂) housing a wooden statue of {{ill|Daikaku Zendo|ja|大覚禅師|lt=Daikaku Zendo|12=simple|13=User:Immanuelle/Daikaku Zendo|ja_comment=jawiki redirects to 蘭渓道隆|ja_comment=jawiki redirects to 蘭渓道隆|1=Lanxi Daolong|comment=changed title based on wikidata|qid=Q357988}} as a {{ill|Chinsō|en|Chinsō|qid=Q11664408|lt=Daiyō|1=Chinsō}}, along with statues of {{ill|Daruma Daishi|ja|達磨大師|lt=Daruma Daishi|12=simple|13=User:Immanuelle/Daruma Daishi|ja_comment=jawiki redirects to 達磨|ja_comment=jawiki redirects to 達磨|1=Bodhidharma|comment=changed title based on wikidata|qid=Q187172}} and {{ill|Dentai Daishi|ja|伝大師|lt=Dentai Daishi|12=simple|13=User:Immanuelle/Dentai Daishi|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid}}.
+
+On the rear mountain of the temple lies the grave of {{ill|Yoshinobu Kira|ja|吉良義周|lt=Yoshinobu Kira|12=simple|13=User:Immanuelle/Yoshinobu Kira|1=Kira Yoshichika|comment=changed title based on wikidata|qid=Q11414256}}, who was exiled following the {{ill|Forty-seven rōnin|en|Forty-seven rōnin|qid=Q822472|lt=Ako Incident|1=Forty-seven rōnin}} and entrusted to the {{ill|Suwa Domain|en|Suwa Domain|qid=Q3034531|lt=Suwa Domain|1=Suwa Domain}}.
+
+== Access ==
+* From {{ill|Chūō Main Line|en|Chūō Main Line|qid=Q1078110|lt=JR Chuo Line|1=Chūō Main Line}} {{ill|Kami-Suwa Station|en|Kami-Suwa Station|qid=Q844049|lt=Kami-Suwa Station|1=Kami-Suwa Station}} via {{ill|Suwa Bus|en|Suwa Bus|qid=Q7650538|lt=Suwa Bus|1=Suwa Bus}} "Jousha" stop, approximately 3 minutes.
+
+== References ==
+* ''Cultural Series of Shinshu: Temples and Shrines'' (信州の文化シリーズ 寺と神社), 1981, {{ill|Shinano Mainichi Shimbun|ja|信濃毎日新聞|lt=Shinano Mainichi Shimbun|12=simple|13=User:Immanuelle/Shinano Mainichi Shimbun|1=Shinano Mainichi Shimbun|comment=changed title based on wikidata|qid=Q11386181}}
+* ''Exploration of Shinshu's Ancient Temples: Pure Land and Nichiren Buddhism'' (探訪 信州の古寺 浄土教・Nichiren宗), 1996, {{ill|Godo Publishing|ja|郷土出版社|lt=Godo Publishing|12=simple|13=User:Immanuelle/Godo Publishing|1=Kyōdo Publishing|comment=changed title based on wikidata|qid=Q11643407}}
+
+== See Also ==
+* [[Suwa City#Temples|Temples of Suwa City]]
+
+== External Links ==
+* [https://suwa-tabi.jp/feature/suwa-shinbutsupj/ Suwa Shimbutsu Project] - A project on {{ill|Suwa Shrine|lt=Suwa Shrine|lt=Suwa faith|ja|諏訪信仰|lt=Suwa Shrine|lt=Suwa faith|12=simple|13=User:Immanuelle/Suwa faith|ja_comment=jawiki redirects to 諏訪神社|ja_comment=jawiki redirects to 諏訪神社}}, {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu Shūgō|1=Shinbutsu-shūgō}}, and {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu Bunri|1=Shinbutsu bunri}} history.
+
+== Footnotes ==
+{{Reflist}}
+
+{{Suwa Faith}}{{pref-stub-Nagano Prefecture}}
+{{Japan-hist-stub}}
+{{Buddhism-stub}}
+
+==References==
+{{reflist}}
+{{Suwa Faith}}
+
+{{translated page|ja|法華寺 (諏訪市)|version=101610906|comment=Imported full ja history}}
+
+{{Commons category|Hokke-ji (Suwa)}}
+{{wikidata link|Q106836915|ja|法華寺 (諏訪市)}}
+[[Category:Buddhist temples in Nagano Prefecture]]
+[[Category:Buildings and structures in Suwa]]
+[[Category:Buildings and structures in Suwa City]]
+[[Category:History of Suwa]]
+[[Category:History of Suwa City]]
+[[Category:Jingū-ji]]
+[[Category:Myoshin-ji temples]]
+[[Category:Shinto shrines]]
+[[Category:Suwa faith]]
+[[Category:Wikidata has short description]]
+[[Category:Zen Buddhism]]
+[[Category:Independently git synced pages]]

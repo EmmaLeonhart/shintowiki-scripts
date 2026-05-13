@@ -1,0 +1,67 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame-no-Mahitotsu-no-Mikoto for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
+
+{{Distinguish|Ame no Mikage no Kami|qq=}}{{Infobox deity
+| name        = Ame-no-Mahitotsu-no-Kami
+| generation  = 
+| predecessor = 
+| successor   = 
+| deity_type  = [[Amatsukami]]
+| full_name   = Ame-no-Mahitotsu-no-Kami
+| alternate_name = 
+| divine_Rank = 
+| role        = [[:en:ironworking|ironworking]]
+| burial_site = 
+| father      = [[Amatsuhikone|Amatsu-Hikone-no-Mikoto]]
+| mother      = 
+| progenitor  = 
+| siblings    = 
+| spouse      = 
+| shrine      = [[Mikami Shrine]], [[Tado Taisha Shrine]], among others
+| gender= {{ill|male|qid=Q6581097|1=Male (gender)}}
+| parents= {{ill|Amatsuhikone|qid=Q10940228|1=Amatsuhikone}}
+| relatives= {{ill|Q106106938|qid=Q106106938|1=Sakado no Yuratsuhime no Mikoto}}; {{ill|Q106111757|qid=Q106111757|1=Nagamizo no Mikoto}}
+| equivalent5= {{ill|Ame-no-Mikage-no-Kami|qid=Q134879671|1=Ame-no-Mikage-no-Kami}}
+}}
+'''Ame-no-Mahitotsu-no-Kami''' (天目一箇神) is a deity in [[Japanese mythology]] associated with [[:en:ironworking|ironworking]] and [[:en:blacksmithing|blacksmithing]].
+== Overview ==
+Ame-no-Mahitotsu-no-Kami appears in ''{{ill|Kogo Shūi|en|Kogo Shūi|qid=Q531555|lt=Kogo Shūi|1=Kogo Shūi}}'', ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}}'', and ''{{ill|Harima no Kuni Fudoki|en|Harima no Kuni Fudoki|qid=Q11498726|lt=Harima no Kuni Fudoki|1=Harima no Kuni Fudoki}}''. alternate_name include '''Ame-no-Mahitotsune-no-Mikoto''' (天之麻比止都禰命), '''Ame-no-Kushima-Hitotsu-no-Mikoto''' (天久斯麻比止都命), '''Amatsu-Mara''' (天津麻羅), and several others.<ref name=":0">[https://dl.ndl.go.jp/info:ndljp/pid/816099 「御上神社沿革考 : 近江国野洲郡三上村鎮座」 大谷治作 編 / 出版: 太田治左衛門 / 出版年月日: 明32.2]（National Diet Library Digital Collections）</ref> The deity is considered the origin of ''{{ill|Hyottoko|en|Hyottoko|qid=Q795293|lt=Hyottoko|1=Hyottoko}}'' (fire man).
+According to the ''{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku|1=Shinsen Shōjiroku}}''<ref>中田憲信「東国諸国造（天津彦根命裔）」『諸系譜』第一冊。</ref>, Ame-no-Mahitotsu-no-Kami is a child of [[Amatsuhikone|Amatsu-Hikone-no-Mikoto]]. Descendants include the {{ill|Inbe clan|en|Inbe clan|qid=Q8189229|lt=Imibe clan|1=Inbe clan}} of Tsukushi and Ise Provinces, the Sugada chiefs of Yamashiro Province, and other clans.<ref>『新撰姓氏録』</ref><ref>『先代旧事本紀』 巻第十 国造本紀</ref>
+== Analysis ==
+As the god of blacksmithing, Ame-no-Mahitotsu-no-Kami is often identified with {{ill|Ama-Tsu-Mara|en|Ama-Tsu-Mara|qid=Q10940368|lt=Ama-Tsu-Mara|1=Ama-Tsu-Mara}}, a figure appearing in the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki|1=Kojiki}}''. The name "Mahitotsu" (one eye) refers to the blacksmith's practice of closing one eye while gauging metal temperature or a common occupational hazard among smiths.
+The deity is also mentioned in the ''{{ill|Harima no Kuni Fudoki|en|Harima no Kuni Fudoki|qid=Q11498726|lt=Harima no Kuni Fudoki|1=Harima no Kuni Fudoki}}'', where he appears as the father of a child borne by the local goddess Michinushi-Hime. This narrative is interpreted as symbolizing the integration of agricultural and metallurgical societies. At the {{ill|Ameichi Shrine|ja|天目一神社|12=simple|13=User:Immanuelle/Ameichi Shrine|qq=}} in present-day {{ill|Nishiwaki|en|Nishiwaki|qid=Q17124933|lt=Nishiwaki|1=Nishiwaki}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, he is venerated as the god of ironworking.
+== Ichimoku Ren ==
+{{ill|Ichimoku Ren|ja|一目連|12=simple|13=User:Immanuelle/Ichimoku Ren|ja_comment=jawiki redirects to 天目一箇神|1=Ame-no-Mahitotsu-no-Mikoto|comment=changed title based on wikidata|qid=Q10016750}} (One-Eyed Ren) is the deity enshrined at {{ill|Tado Taisha|en|Tado Taisha|qid=Q116140|lt=Tado Taisha|1=Tado Taisha}}'s Ichimoku Shrine. While often equated with Ame-no-Mahitotsu-no-Kami, Ichimoku Ren originated as a {{ill|Ryujin (disambiguation)|en|Ryujin (disambiguation)|qid=Q123290706|lt=Ryujin (disambiguation)|1=Ryujin (disambiguation)}} associated with weather control. Over time, the two deities merged.
+Ichimoku Ren is revered as a wind god. During the Edo period, sailors prayed to him for protection from storms. {{ill|Kunio Yanagita|en|Kunio Yanagita|qid=Q971687|lt=Kunio Yanagita|1=Kunio Yanagita}} theorized that seafarers derived this faith from observing [[Tado Mountain]]’s weather patterns.<ref>『一目小僧その他』</ref>
+The ''{{ill|Wakan Sansai Zue|en|Wakan Sansai Zue|qid=Q1135803|lt=Wakan Sansai Zue|1=Wakan Sansai Zue}}'' records, "Violent winds in Ise, Owari, Mino, and Hida are attributed to Ichimoku Ren, believed to be a divine wind."<ref>『[{{NDLDC|898160/69|qq=}} 和漢三才図会巻第三 天部 颶]』</ref>
+*
+According to traditions of the {{ill|Okinaga Clan|ja|息長氏|12=simple|13=User:Immanuelle/Okinaga Clan|qq=}} {{ill|Ame-no-Mikage-no-Kami|ja|天之御影神|12=simple|13=User:Immanuelle/Ame no Mikage no Kami|qq=}} and {{ill|Ame-no-Mahitotsu-no-Mikoto|ja|天之御影神|12=simple|13=User:Immanuelle/Ame-no-Mahitotsu-no-Mikoto|qq=}} may be the same god.
+
+== See Also ==
+* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities|1=List of Japanese deities}}
+* {{ill|Cyclopes|en|Cyclopes|qid=Q128430|lt=Cyclopes|1=Cyclopes}} – blacksmith deities with a single eye in Greek mythology
+* [[Mikami Shrine]] – Enshrines Ame-no-Mikage-no-Kami and Amatsu-Hikone-no-Mikoto.
+== Notes ==
+=== Annotations ===
+{{Notelist|qq=}}
+=== References ===
+{{reflist|qq=}}
+== References ==
+* ''History of Tado Town'' (Tado Town)
+* ''Footprints of the Bronze God'' by [[Kenichi Tanigawa]]
+* ''Mikami Shrine Historical Analysis'' by Harusaku Ōtani<ref name=":0" />
+== Notes ==
+== External Links ==
+* [https://dl.ndl.go.jp/info:ndljp/pid/816099 "Mikami Shrine Historical Analysis" (National Diet Library)]
+{{神道 横|qq=}}
+{{Shinto-stub|qq=}}
+{{Mikami Faith|qq=}}
+
+{{translated page|ja|天目一箇神|version=103799540|comment=Imported full ja history}}
+
+{{wikidata link|Q10016750|ja|天目一箇神|ko|아메노마히토쓰노카미|zh|天目一箇神|ja|天之御影神}}
+[[Category:Amatsukami]]
+[[Category:Inbe clan]]
+[[Category:Japanese deities]]
+[[Category:Smithing deities]]
+[[Category:Pages with interwikis with duplicate languages]]
+[[Category:Independently git synced pages]]
