@@ -64,8 +64,8 @@
     "sha": "77d76c4fb8878228bd9931a1c7a3cfdb5d0a3e1e"
   },
   "Ame-no-Tanagao Shrine": {
-    "revid": 3717178,
-    "sha": "3cd1e572d6d7e8bc2cf48a2b1ee7c005381437fd"
+    "revid": 3736018,
+    "sha": "f21ddbf25fbd532140c9ac86086a7db51cd60820"
   },
   "Ame-no-ohabari": {
     "revid": 3729084,
@@ -788,8 +788,8 @@
     "sha": "90020b0c330e075a55650db999e56c715510d779"
   },
   "Kō Shrine": {
-    "revid": 3710529,
-    "sha": "e0379d40023f70b25bc639def26664d4d5ce4c74"
+    "revid": 3736022,
+    "sha": "42b6c11a16e798727f83f8c259c6fc8a47f92fbb"
   },
   "Kōtai Jingū": {
     "revid": 3684668,
@@ -1232,20 +1232,20 @@
     "sha": "c872361ca370409244a437ab8d0ed2edaa8052f7"
   },
   "Todoroki-hime-no-Mikoto Shrine": {
-    "revid": 3734810,
-    "sha": "a9c8e66b8ec3b5e050c0137eb936d42318628066"
+    "revid": 3736098,
+    "sha": "5899412b28fe9db99a81a8682838d64a6df8b408"
   },
   "Togami Shrine": {
-    "revid": 3730267,
-    "sha": "74be912be3c0db671f7f772f52967d8f150ae136"
+    "revid": 3736103,
+    "sha": "e76df81577d02b4c21e163de0491d95f4cd4c926"
   },
   "Tokoyoki-hime Shrine": {
-    "revid": 3730305,
-    "sha": "d1df5b70568e7ea75dc277bc0e6470328084fe49"
+    "revid": 3736113,
+    "sha": "712746dbe1dc3958209b1102e553d07c3bdbdc59"
   },
   "Tonoki Shrine": {
-    "revid": 3730394,
-    "sha": "82779d3b0ddc2ecda0255d989b74f68a2dbfbaa8"
+    "revid": 3736139,
+    "sha": "fa0ca03e4351dfcb4c6dbeefbd8ee434808ee5db"
   },
   "Toyōke Daijingū": {
     "revid": 3734127,
@@ -1440,15 +1440,15 @@
     "sha": "905d7d00d482a898a117a75e1d2e96fad9bcf51e"
   },
   "Ōtsu Shrine (Habikino)": {
-    "revid": 3734528,
-    "sha": "a6300ab0e2beba8ce20095994efd7a68ac1ec3f6"
+    "revid": 3735704,
+    "sha": "9fc0141bb55961d4e06258c2984ccf6062b6c1f0"
   },
   "Ōtsu Shrine (Hida)": {
-    "revid": 3734139,
-    "sha": "32a3034654404ccf6ebf0df672617036658ff47b"
+    "revid": 3735706,
+    "sha": "21d04381536a12355e8ea4fb4dfc86a79d50dd38"
   },
   "Ōyamazumi Shrine": {
-    "revid": 3664610,
-    "sha": "e2135e89f37813a02664d1f6fbac60ee7318404f"
+    "revid": 3735731,
+    "sha": "5d5c426bc59a6fda67b5fef9d8425016fc4a56f0"
   }
 }
