@@ -82,6 +82,8 @@ Meanwhile once this is through and we are sure about it, we can start deleting a
 ## More stuff
 I think that in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations these ones kinda need their content  more removed from the old things since they cause issues
 
+Should have a generic intro or nearly generic intro (maybe some custom content) but definitely the old lists go since they are actively confusing
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
