@@ -1,10 +1,10 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yang Water Dragon|kanji=壬辰|romaji=mizunoe tatsu|onyomi=jishin|p=rénchén|w=jen-ch'en|mi=ʐən³⁵ ʈ͡ʂʰən|y=jam4 san4|j=jam4 san4|ci=jɐm sɐn|mc=ɲiɪm ɖin|oc-bs=ɲɨm ɖiŋ}}
 {{Sexagenary cycle}}
-'''Yang Water Dragon''' (壬辰, ''mizunoe tatsu''; onyomi ''jishin'') is the 29th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yang Water Dragon''' (壬辰, ''mizunoe tatsu''; onyomi ''jishin'') is the 29th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 29th of the sixty stem-branch combinations, preceded by {{ill|Yin Metal Rabbit|ja|辛卯|1=Yin Metal Rabbit}} and followed by {{ill|Yin Water Snake|ja|癸巳|1=Yin Water Snake}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''壬'' is Yang Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''辰'' (Dragon) is Yang Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 29th of the sixty stem-branch combinations, preceded by {{ill|Yin Metal Rabbit|ja|辛卯}} and followed by {{ill|Yin Water Snake|ja|癸巳}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''壬'' is Yang Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''辰'' (Dragon) is Yang Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yang Water Dragon (壬辰)
@@ -17,60 +17,60 @@ It is the 29th of the sixty stem-branch combinations, preceded by {{ill|Yin Meta
 ** Vietnamese (Hán-Việt): Nhâm Thìn
 
 ==Years of Yang Water Dragon==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 32 when divided by 60 is a year of Yang Water Dragon (壬辰).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 32 when divided by 60 is a year of Yang Water Dragon (壬辰).
 
 That is, if a Western calendar year N (N>0) is a year of Renchin, then
 
 <math> N - \lfloor{N/60}\rfloor * 60 = 32 </math>
-Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor function|ja|床関数|12=simple|13=User:Immanuelle/Floor function|ja_comment=fixed jawiki redirect|3=床関数と天井関数|1=Floor and ceiling functions|comment=changed title based on wikidata|qid=Q215193}}.
+Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor and ceiling functions|ja|床関数|12=simple|13=User:Immanuelle/Floor function|ja_comment=fixed jawiki redirect|3=床関数と天井関数|comment=changed title based on wikidata|qid=Q215193}}.
 
 {| class="wikitable"
 |+'''Yang Water Dragon (壬辰)'s years table'''
 |-
-! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium}}
 |-
 |
-* {{ill|AD 32|en|AD 32|qid=Q23778|lt=32 AD|1=AD 32}}
-* {{ill|AD 92|en|AD 92|qid=Q31444|lt=92 AD|1=AD 92}}
-* {{ill|152|en|152|qid=Q30023|lt=152 AD|1=152}}
-* {{ill|212|en|212|qid=Q32974|lt=212 AD|1=212}}
-* {{ill|272|en|272|qid=Q31262|lt=272 AD|1=272}}
-* {{ill|332|en|332|qid=Q31568|lt=332 AD|1=332}}
-* {{ill|392|en|392|qid=Q48117|lt=392 AD|1=392}}
-* {{ill|452|en|452|qid=Q30445|lt=452 AD|1=452}}
-* {{ill|512|en|512|qid=Q31993|lt=512 AD|1=512}}
-* {{ill|572|en|572|qid=Q49189|lt=572 AD|1=572}}
-* {{ill|632|en|632|qid=Q23887|lt=632 AD|1=632}}
-* {{ill|692|en|692|qid=Q23477|lt=692 AD|1=692}}
-* {{ill|752|en|752|qid=Q23639|lt=752 AD|1=752}}
-* {{ill|812|en|812|qid=Q31114|lt=812 AD|1=812}}
-* {{ill|872|en|872|qid=Q30368|lt=872 AD|1=872}}
-* {{ill|932|en|932|qid=Q23656|lt=932 AD|1=932}}
-* {{ill|992|en|992|qid=Q23724|lt=992 AD|1=992}}
+* {{ill|AD 32|en|AD 32|qid=Q23778|lt=32 AD}}
+* {{ill|AD 92|en|AD 92|qid=Q31444|lt=92 AD}}
+* {{ill|152|en|152|qid=Q30023|lt=152 AD}}
+* {{ill|212|en|212|qid=Q32974|lt=212 AD}}
+* {{ill|272|en|272|qid=Q31262|lt=272 AD}}
+* {{ill|332|en|332|qid=Q31568|lt=332 AD}}
+* {{ill|392|en|392|qid=Q48117|lt=392 AD}}
+* {{ill|452|en|452|qid=Q30445|lt=452 AD}}
+* {{ill|512|en|512|qid=Q31993|lt=512 AD}}
+* {{ill|572|en|572|qid=Q49189|lt=572 AD}}
+* {{ill|632|en|632|qid=Q23887|lt=632 AD}}
+* {{ill|692|en|692|qid=Q23477|lt=692 AD}}
+* {{ill|752|en|752|qid=Q23639|lt=752 AD}}
+* {{ill|812|en|812|qid=Q31114|lt=812 AD}}
+* {{ill|872|en|872|qid=Q30368|lt=872 AD}}
+* {{ill|932|en|932|qid=Q23656|lt=932 AD}}
+* {{ill|992|en|992|qid=Q23724|lt=992 AD}}
 |
-* {{ill|1052|en|1052|qid=Q19366|lt=1052 AD|1=1052}}
-* {{ill|1112|en|1112|qid=Q19525|lt=1112 AD|1=1112}}
-* {{ill|1172|en|1172|qid=Q19687|lt=1172 AD|1=1172}}
-* {{ill|1232|en|1232|qid=Q5418|lt=1232 AD|1=1232}}
-* {{ill|1292|en|1292|qid=Q5555|lt=1292 AD|1=1292}}
-* {{ill|1352|en|1352|qid=Q6112|lt=1352 AD|1=1352}}
-* {{ill|1412|en|1412|qid=Q6162|lt=1412 AD|1=1412}}
-* {{ill|1472|en|1472|qid=Q6589|lt=1472 AD|1=1472}}
-* {{ill|1532|en|1532|qid=Q6436|lt=1532 AD|1=1532}}
-* {{ill|1592|en|1592|qid=Q6769|lt=1592 AD|1=1592}}
-* {{ill|1652|en|1652|qid=Q6962|lt=1652 AD|1=1652}}
-* {{ill|1712|en|1712|qid=Q6871|lt=1712 AD|1=1712}}
-* {{ill|1772|en|1772|qid=Q7690|lt=1772 AD|1=1772}}
-* {{ill|1832|en|1832|qid=Q7584|lt=1832 AD|1=1832}}
-* {{ill|1892|en|1892|qid=Q7839|lt=1892 AD|1=1892}}
-* {{ill|1952|en|1952|qid=Q5272|lt=1952 AD|1=1952}}
+* {{ill|1052|en|1052|qid=Q19366|lt=1052 AD}}
+* {{ill|1112|en|1112|qid=Q19525|lt=1112 AD}}
+* {{ill|1172|en|1172|qid=Q19687|lt=1172 AD}}
+* {{ill|1232|en|1232|qid=Q5418|lt=1232 AD}}
+* {{ill|1292|en|1292|qid=Q5555|lt=1292 AD}}
+* {{ill|1352|en|1352|qid=Q6112|lt=1352 AD}}
+* {{ill|1412|en|1412|qid=Q6162|lt=1412 AD}}
+* {{ill|1472|en|1472|qid=Q6589|lt=1472 AD}}
+* {{ill|1532|en|1532|qid=Q6436|lt=1532 AD}}
+* {{ill|1592|en|1592|qid=Q6769|lt=1592 AD}}
+* {{ill|1652|en|1652|qid=Q6962|lt=1652 AD}}
+* {{ill|1712|en|1712|qid=Q6871|lt=1712 AD}}
+* {{ill|1772|en|1772|qid=Q7690|lt=1772 AD}}
+* {{ill|1832|en|1832|qid=Q7584|lt=1832 AD}}
+* {{ill|1892|en|1892|qid=Q7839|lt=1892 AD}}
+* {{ill|1952|en|1952|qid=Q5272|lt=1952 AD}}
 |
-* {{ill|2012|en|2012|qid=Q1990|lt=2012 AD|1=2012}}
+* {{ill|2012|en|2012|qid=Q1990|lt=2012 AD}}
 * {{ill|2072 AD|ja|2072年|12=simple|13=User:Immanuelle/2072|comment=likely broken Sexagenary year|lt=2072 AD|ja_comment=fixed jawiki redirect|3=2070年代}}
-* {{ill|2132 AD|ja|2132年|12=simple|13=User:Immanuelle/2132|comment=changed title based on wikidata|lt=2132 AD|ja_comment=fixed jawiki redirect|3=22世紀|1=22nd century|qid=Q11177}}
-* {{ill|2192 AD|ja|2192年|12=simple|13=User:Immanuelle/2192|comment=changed title based on wikidata|lt=2192 AD|ja_comment=fixed jawiki redirect|3=22世紀|1=22nd century|qid=Q11177}}
-* {{ill|2252 AD|ja|2252年|12=simple|13=User:Immanuelle/2252|comment=changed title based on wikidata|lt=2252 AD|ja_comment=fixed jawiki redirect|3=23世紀|1=23rd century|qid=Q49832}}
-* {{ill|2312 AD|ja|2312年|12=simple|13=User:Immanuelle/2312|comment=changed title based on wikidata|lt=2312 AD|ja_comment=fixed jawiki redirect|3=24世紀|1=24th century|qid=Q49838}}
+* {{ill|22nd century|ja|2132年|12=simple|13=User:Immanuelle/2132|comment=changed title based on wikidata|lt=2132 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2192年|12=simple|13=User:Immanuelle/2192|comment=changed title based on wikidata|lt=2192 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2252年|12=simple|13=User:Immanuelle/2252|comment=changed title based on wikidata|lt=2252 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2312年|12=simple|13=User:Immanuelle/2312|comment=changed title based on wikidata|lt=2312 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2372 AD|ja|2372年|12=simple|13=User:Immanuelle/2372|comment=likely broken Sexagenary year|lt=2372 AD|ja_comment=jawiki link invalid}}
 * {{ill|2432 AD|ja|2432年|12=simple|13=User:Immanuelle/2432|comment=likely broken Sexagenary year|lt=2432 AD|ja_comment=jawiki link invalid}}
 * {{ill|2492 AD|ja|2492年|12=simple|13=User:Immanuelle/2492|comment=likely broken Sexagenary year|lt=2492 AD|ja_comment=jawiki link invalid}}
@@ -85,15 +85,15 @@ Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor functio
 |}
 
 ===Events===
-* In {{ill|Bunroku|en|Bunroku|qid=Q1373039|lt=Bunroku|1=Bunroku}} 1 (1592 AD), the campaign known as {{ill|Bunroku Campaign|ja|文禄・慶長の役#文禄の役|lt=Bunroku Campaign|lt_ja=文禄の役|12=simple|13=User:Immanuelle/Bunroku Campaign|1=Imjin War|comment=changed title based on wikidata|qid=Q576338}} took place, which is known in Korea as the {{ill|Imjin War|ja|壬辰倭乱|12=simple|13=User:Immanuelle/Imjin War|ja_comment=fixed jawiki redirect|3=文禄・慶長の役|1=Imjin War|comment=changed title based on wikidata|qid=Q576338}}.
+* In {{ill|Bunroku|en|Bunroku|qid=Q1373039|lt=Bunroku}} 1 (1592 AD), the campaign known as {{ill|Imjin War|ja|文禄・慶長の役#文禄の役|lt=Bunroku Campaign|lt_ja=文禄の役|12=simple|13=User:Immanuelle/Bunroku Campaign|comment=changed title based on wikidata|qid=Q576338}} took place, which is known in Korea as the {{ill|Imjin War|ja|壬辰倭乱|12=simple|13=User:Immanuelle/Imjin War|ja_comment=fixed jawiki redirect|3=文禄・慶長の役|comment=changed title based on wikidata|qid=Q576338}}.
 
 ==Months of Yang Water Dragon==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 1 or 6 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} are {{ill|Sin|ja|辛|1=Kanoto (辛)|lt=Kanoto (辛)|2=ja|3=辛|4=zh|5=辛|12=simple|13=User:Immanuelle/Sin}} and {{ill|Hei|ja|丙|1=Hinoe (丙)|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Hei}}), the month of {{ill|March|en|March|qid=Q110|lt=March|1=March}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=Month|1=Month}} of {{ill|Renchin|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Qingming (solar term)|en|Qingming (solar term)|qid=Q1680269|lt=Qingming|1=Qingming (solar term)}} until the day before {{ill|Lixia|en|Lixia|qid=Q1191007|lt=Lixia|1=Lixia}}) as applicable.
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 1 or 6 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Kanoto (辛)|ja|辛|lt=Kanoto (辛)|2=ja|3=辛|4=zh|5=辛|12=simple|13=User:Immanuelle/Sin}} and {{ill|Hinoe (丙)|ja|丙|lt=Hinoe (丙)|2=ja|3=丙|4=zh|5=丙|12=simple|13=User:Immanuelle/Hei}}), the month of {{ill|March|en|March|qid=Q110|lt=March}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=Month}} of {{ill|Yang Water Dragon|ja|壬辰|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term}} (from {{ill|Qingming (solar term)|en|Qingming (solar term)|qid=Q1680269|lt=Qingming}} until the day before {{ill|Lixia|en|Lixia|qid=Q1191007|lt=Lixia}}) as applicable.
 
 ==Days of Yang Water Dragon==
-The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selected day}} for {{ill|Renchin|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}} is as follows.
+The {{ill|Senjitsu|ja|選日|12=simple|13=User:Immanuelle/selected day}} for {{ill|Yang Water Dragon|ja|壬辰|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}} is as follows.
 ==={{nihongo|selection days|選日|senjitsu}}===
-The day of {{ill|Renchin|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}} is the 9th day of {{ill|Shihoumoku|ja|十方暮|12=simple|13=User:Immanuelle/Shihoumoku|1=Ten directions|comment=changed title based on wikidata|qid=Q11405067}}.
+The day of {{ill|Yang Water Dragon|ja|壬辰|2=ja|12=simple|13=User:Immanuelle/Renchin|ja_comment=jawiki link invalid}} is the 9th day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Shihoumoku|comment=changed title based on wikidata|qid=Q11405067}}.
 
 ==See Also==
 *{{prefix}}
@@ -101,7 +101,7 @@ The day of {{ill|Renchin|ja|壬辰|1=Yang Water Dragon|2=ja|12=simple|13=User:Im
 
 {{translated page|ja|qq=Yang Water Dragon|壬辰|version=84123798|comment=Imported full ja history}}
 
-{{wikidata link|Q1062581|af|Waterdraak (astrologie)|cdo|Ìng-sìng|de|Wasser-Drache|fr|Dragon d'eau (astrologie)|hak|Ngìm-sìn|ja|壬辰|ko|임진|nds|Water-Draken|vi|Nhâm Thìn|za|Nyaemzsaenz|zh-min-nan|Jîm-sîn|zh-yue|壬辰|zh|壬辰|ar|Yang Water Dragon}}
+{{wikidata link|Q1062581|af|Waterdraak (astrologie)|cdo|Ìng-sìng|de|Wasser-Drache|fr|Dragon d'eau (astrologie)|hak|Ngìm-sìn|ja|壬辰|ko|임진|nds|Water-Draken|vi|Nhâm Thìn|za|Nyaemzsaenz|zh-min-nan|Jîm-sîn|zh-yue|壬辰|zh|壬辰|ar|Yang Water Dragon|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

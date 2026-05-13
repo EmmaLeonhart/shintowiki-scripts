@@ -1,11 +1,11 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yang Metal Horse|kanji=庚午|romaji=kanoe uma|onyomi=kōgo|p=gēngwǔ|w=keng-wu|mi=kɤŋ⁵³ u²¹|y=geng1 ng5|j=geng1 ng5|ci=kɪŋ ŋoː²|mc=kæŋ ŋoX|oc-bs=kˤraŋ ŋˤaʔ}}
 {{Otheruses|Sexagenary cycle|広島市の地名|庚午 (広島市)|北海道の「庚午三ノ村」|円山町 (北海道)}}
 {{Sexagenary cycle}}
-'''Yang Metal Horse''' (庚午, ''kanoe uma''; onyomi ''kōgo'') is the 7th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yang Metal Horse''' (庚午, ''kanoe uma''; onyomi ''kōgo'') is the 7th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 7th of the sixty stem-branch combinations, preceded by {{ill|Yin Earth Snake|ja|己巳|1=Yin Earth Snake}} and followed by {{ill|Yin Metal Goat|ja|辛未|1=Yin Metal Goat}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''庚'' is Yang Metal, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''午'' (Horse) is Yang Fire; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 7th of the sixty stem-branch combinations, preceded by {{ill|Yin Earth Snake|ja|己巳}} and followed by {{ill|Yin Metal Goat|ja|辛未}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''庚'' is Yang Metal, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''午'' (Horse) is Yang Fire; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yang Metal Horse (庚午)
@@ -18,7 +18,7 @@ It is the 7th of the sixty stem-branch combinations, preceded by {{ill|Yin Earth
 ** Vietnamese (Hán-Việt): Canh Ngọ
 
 ==Years of Yang Metal Horse==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 10 when divided by 60 is a year of Yang Metal Horse (庚午).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 10 when divided by 60 is a year of Yang Metal Horse (庚午).
 For years before the Common Era, a year is a Kanoe-uma year if, when divided by 60, the remainder is 51.
 
 {| class="wikitable"
@@ -30,19 +30,19 @@ For years before the Common Era, a year is a Kanoe-uma year if, when divided by 
 *[[:en:951 BC|951 BC]]
 *[[:en:891 BC|891 BC]]
 *[[:en:831 BC|831 BC]]
-*{{ill|771 BC|en|771 BC|qid=Q588810|lt=771 BC|1=771 BC}}
-*{{ill|711 BC|en|711 BC|qid=Q1065561|lt=711 BC|1=711 BC}}
-*{{ill|651 BC|en|651 BC|qid=Q253432|lt=651 BC|1=651 BC}}
-*{{ill|591 BC|en|591 BC|qid=Q245047|lt=591 BC|1=591 BC}}
-*{{ill|531 BC|en|531 BC|qid=Q242968|lt=531 BC|1=531 BC}}
-*{{ill|471 BC|en|471 BC|qid=Q236158|lt=471 BC|1=471 BC}}
-*{{ill|411 BC|en|411 BC|qid=Q232493|lt=411 BC|1=411 BC}}
-*{{ill|351 BC|en|351 BC|qid=Q226605|lt=351 BC|1=351 BC}}
-*{{ill|291 BC|en|291 BC|qid=Q80161|lt=291 BC|1=291 BC}}
-*{{ill|231 BC|en|231 BC|qid=Q45437|lt=231 BC|1=231 BC}}
-*{{ill|171 BC|en|171 BC|qid=Q45454|lt=171 BC|1=171 BC}}
-*{{ill|111 BC|en|111 BC|qid=Q47003|lt=111 BC|1=111 BC}}
-*{{ill|51 BC|en|51 BC|qid=Q41544|lt=51 BC|1=51 BC}}
+*{{ill|771 BC|en|771 BC|qid=Q588810|lt=771 BC}}
+*{{ill|711 BC|en|711 BC|qid=Q1065561|lt=711 BC}}
+*{{ill|651 BC|en|651 BC|qid=Q253432|lt=651 BC}}
+*{{ill|591 BC|en|591 BC|qid=Q245047|lt=591 BC}}
+*{{ill|531 BC|en|531 BC|qid=Q242968|lt=531 BC}}
+*{{ill|471 BC|en|471 BC|qid=Q236158|lt=471 BC}}
+*{{ill|411 BC|en|411 BC|qid=Q232493|lt=411 BC}}
+*{{ill|351 BC|en|351 BC|qid=Q226605|lt=351 BC}}
+*{{ill|291 BC|en|291 BC|qid=Q80161|lt=291 BC}}
+*{{ill|231 BC|en|231 BC|qid=Q45437|lt=231 BC}}
+*{{ill|171 BC|en|171 BC|qid=Q45454|lt=171 BC}}
+*{{ill|111 BC|en|111 BC|qid=Q47003|lt=111 BC}}
+*{{ill|51 BC|en|51 BC|qid=Q41544|lt=51 BC}}
 |
 *[[:en:10 AD|10 AD]]
 *[[:en:70 AD|70 AD]]
@@ -99,30 +99,30 @@ For years before the Common Era, a year is a Kanoe-uma year if, when divided by 
 |}
 
 === Notable Events ===
-* Birth year of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu|1=Emperor Jimmu}}, the legendary first emperor of Japan.
-* Year 670 AD - {{ill|Kōgo Nenjaku|ja|庚午年籍|12=simple|13=User:Immanuelle/Kōgo Nenjaku|ja_comment=fixed jawiki redirect|3=古代日本の戸籍制度|1=Koseki system in classical Japan|comment=changed title based on wikidata|qid=Q11410913}}, an important early census system in Japan under {{ill|Emperor Tenji|en|Emperor Tenji|qid=Q314802|lt=Emperor Tenji|1=Emperor Tenji}}.
-* Year 1870 AD - {{ill|Kōgo Incident|ja|庚午事変|12=simple|13=User:Immanuelle/Kōgo Incident|1=Q11485995|comment=changed title based on wikidata|qid=Q11485995}}.
+* Birth year of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}}, the legendary first emperor of Japan.
+* Year 670 AD - {{ill|Koseki system in classical Japan|ja|庚午年籍|12=simple|13=User:Immanuelle/Kōgo Nenjaku|ja_comment=fixed jawiki redirect|3=古代日本の戸籍制度|comment=changed title based on wikidata|qid=Q11410913}}, an important early census system in Japan under {{ill|Emperor Tenji|en|Emperor Tenji|qid=Q314802|lt=Emperor Tenji}}.
+* Year 1870 AD - {{ill|Q11485995|ja|庚午事変|12=simple|13=User:Immanuelle/Kōgo Incident|comment=changed title based on wikidata|qid=Q11485995}}.
 
 ==Months of Yang Metal Horse==
-In years where the last digit is 4 or 9 (corresponding to the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} of Kō (甲) or Ki (己)), the fifth month (May) is a Kanoe-uma month. However, the definition may apply to the {{ill|Lunisolar calendar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Mangzhong|en|Mangzhong|qid=Q1147880|lt=Mangzhong|1=Mangzhong}} to the day before {{ill|Xiaoshu|en|Xiaoshu|qid=Q1190976|lt=Xiaoshu|1=Xiaoshu}}).
+In years where the last digit is 4 or 9 (corresponding to the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems}} of Kō (甲) or Ki (己)), the fifth month (May) is a Kanoe-uma month. However, the definition may apply to the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term}} (from {{ill|Mangzhong|en|Mangzhong|qid=Q1147880|lt=Mangzhong}} to the day before {{ill|Xiaoshu|en|Xiaoshu|qid=Q1190976|lt=Xiaoshu}}).
 
 ==Days of Yang Metal Horse==
 === Special Calendar Significance ===
 Kanoe-uma days have the following calendar attributes:
-* {{ill|Hando|ja|犯土|12=simple|13=User:Immanuelle/Hando|1=Tsuchi (Japanese term)|comment=changed title based on wikidata|qid=Q11571306}} (First day of major land restriction periods)
-* {{ill|Shinkichi-nichi|ja|神吉日|12=simple|13=User:Immanuelle/Shinkichi-nichi|ja_comment=fixed jawiki redirect|3=暦注下段|1=Rekichū Gedan|comment=changed title based on wikidata|qid=Q11514957}} (Auspicious day for shrine visits)
-* {{ill|Daimyō-nichi|ja|大明日|12=simple|13=User:Immanuelle/Daimyō-nichi|ja_comment=fixed jawiki redirect|3=暦注下段|1=Rekichū Gedan|comment=changed title based on wikidata|qid=Q11514957}} (Auspicious day for general affairs)
+* {{ill|Tsuchi (Japanese term)|ja|犯土|12=simple|13=User:Immanuelle/Hando|comment=changed title based on wikidata|qid=Q11571306}} (First day of major land restriction periods)
+* {{ill|Rekichū Gedan|ja|神吉日|12=simple|13=User:Immanuelle/Shinkichi-nichi|ja_comment=fixed jawiki redirect|3=暦注下段|comment=changed title based on wikidata|qid=Q11514957}} (Auspicious day for shrine visits)
+* {{ill|Rekichū Gedan|ja|大明日|12=simple|13=User:Immanuelle/Daimyō-nichi|ja_comment=fixed jawiki redirect|3=暦注下段|comment=changed title based on wikidata|qid=Q11514957}} (Auspicious day for general affairs)
 
 == Other Uses ==
-In {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima|1=Hiroshima}}, the {{ill|Kōgo district|ja|庚午 (広島市)|12=simple|13=User:Immanuelle/Kōgo district|1=Q11485994|comment=changed title based on wikidata|qid=Q11485994}} was named after the year 1870, in which it was developed.
+In {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima}}, the {{ill|Q11485994|ja|庚午 (広島市)|12=simple|13=User:Immanuelle/Kōgo district|comment=changed title based on wikidata|qid=Q11485994}} was named after the year 1870, in which it was developed.
 == See Also ==
 * {{ill|Sexagenary cycle|ja|Sexagenary cycle|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=jawiki link invalid}}
-* {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}}
-* {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches|1=Earthly Branches}}
+* {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems}}
+* {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branches}}
 
 {{translated page|ja|庚午|qq=Yang Metal Horse|version=97212183|comment=Imported full ja history}}
 
-{{wikidata link|Q1062141|af|Metaalperd (astrologie)|cdo|Gĕng-ngū|de|Metall-Pferd|fr|Cheval de métal|hak|Kâng-ńg|ja|庚午|ko|경오|nds|Metall-Peerd|vi|Canh Ngọ|za|Gengngux|zh-min-nan|Keng-ngó͘|zh-yue|庚午|zh|庚午|en|Metal Horse|ar|Yang Metal Horse}}
+{{wikidata link|Q1062141|af|Metaalperd (astrologie)|cdo|Gĕng-ngū|de|Metall-Pferd|fr|Cheval de métal|hak|Kâng-ńg|ja|庚午|ko|경오|nds|Metall-Peerd|vi|Canh Ngọ|za|Gengngux|zh-min-nan|Keng-ngó͘|zh-yue|庚午|zh|庚午|en|Metal Horse|ar|Yang Metal Horse|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

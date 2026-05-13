@@ -1,10 +1,10 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yin Earth Ox|kanji=己丑|romaji=tsuchinoto ushi|onyomi=kichū|p=jǐchǒu|w=chi-ch'ou|mi=t͡ɕi³⁵ ʈʂʰoʊ̯|y=gei2 chau2|j=gei2 chau2|ci=kei tsʰɐu̯|mc=kɨj tʂʰjuw|oc-bs=kɯʔ ʈʂʰuʔ}}
 {{Sexagenary cycle}}
-'''Yin Earth Ox''' (己丑, ''tsuchinoto ushi''; onyomi ''kichū'') is the 26th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yin Earth Ox''' (己丑, ''tsuchinoto ushi''; onyomi ''kichū'') is the 26th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 26th of the sixty stem-branch combinations, preceded by {{ill|Yang Earth Rat|ja|戊子|1=Yang Earth Rat}} and followed by {{ill|Yang Metal Tiger|ja|庚寅|1=Yang Metal Tiger}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''己'' is Yin Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''丑'' (Ox) is Yin Earth; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 26th of the sixty stem-branch combinations, preceded by {{ill|Yang Earth Rat|ja|戊子}} and followed by {{ill|Yang Metal Tiger|ja|庚寅}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''己'' is Yin Earth, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''丑'' (Ox) is Yin Earth; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yin Earth Ox (己丑)
@@ -17,11 +17,11 @@ It is the 26th of the sixty stem-branch combinations, preceded by {{ill|Yang Ear
 ** Vietnamese (Hán-Việt): Kỷ Sửu
 
 ==Years of Yin Earth Ox==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 29 when divided by 60 is a year of Yin Earth Ox (己丑).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 29 when divided by 60 is a year of Yin Earth Ox (己丑).
 {| class="wikitable"
 |+ '''Years of Yin Earth Ox (己丑)'''
 |-
-! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium}}
 |-
 |
 * 29
@@ -79,7 +79,7 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 ==Months of Yin Earth Ox==
-In years ending in 0 or 5 (when the Heavenly Stem is {{ill|Geng (庚)|ja|庚|1=Kanoe (庚)|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|12=simple|13=User:Immanuelle/Geng (庚)}} or {{ill|Yi (乙)|ja|乙|1=Kinoto (乙)|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Yi (乙)}}), the twelfth lunar month is a Jichou month. This is determined based on the [[:en:Chinese lunisolar calendar|Chinese lunisolar calendar]], meaning it may also be calculated using the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} system (from [[:en:Lesser Cold|Lesser Cold]] to the day before [[:en:Beginning of Spring|Beginning of Spring]]).
+In years ending in 0 or 5 (when the Heavenly Stem is {{ill|Kanoe (庚)|ja|庚|lt=Kanoe (庚)|2=ja|3=庚|4=zh|5=庚|12=simple|13=User:Immanuelle/Geng (庚)}} or {{ill|Kinoto (乙)|ja|乙|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Yi (乙)}}), the twelfth lunar month is a Jichou month. This is determined based on the [[:en:Chinese lunisolar calendar|Chinese lunisolar calendar]], meaning it may also be calculated using the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term}} system (from [[:en:Lesser Cold|Lesser Cold]] to the day before [[:en:Beginning of Spring|Beginning of Spring]]).
 
 ==Days of Yin Earth Ox==
 A Jichou day follows a 60-day cycle.
@@ -89,11 +89,11 @@ Jichou days are the 6th day in the [[Ten Days of Mourning|Ten Days of Mourning]]
 
 == See Also ==
 * {{ill|Sexagenary cycle|ja|Sexagenary cycle|12=simple|13=User:Immanuelle/Sexagenary cycle|ja_comment=jawiki link invalid}}
-* {{ill|Chinese calendar|en|Chinese calendar|qid=Q134032|lt=Chinese calendar|1=Chinese calendar}}
+* {{ill|Chinese calendar|en|Chinese calendar|qid=Q134032|lt=Chinese calendar}}
 
 {{translated page|ja|qq=Yin Earth Ox|己丑|version=85986875|comment=Imported full ja history}}
 
-{{wikidata link|Q1061992|af|Aardos (astrologie)|cdo|Gī-tiū|de|Erde-Büffel|fr|Buffle de terre|hak|Kí-chhiú|ja|己丑|ko|기축|nds|Eer-Oss|vi|Kỷ Sửu|za|Geijcouj|zh-min-nan|Kí-thiú|zh-yue|己丑|zh|己丑|en|Earth Ox|ar|Yin Earth Ox}}
+{{wikidata link|Q1061992|af|Aardos (astrologie)|cdo|Gī-tiū|de|Erde-Büffel|fr|Buffle de terre|hak|Kí-chhiú|ja|己丑|ko|기축|nds|Eer-Oss|vi|Kỷ Sửu|za|Geijcouj|zh-min-nan|Kí-thiú|zh-yue|己丑|zh|己丑|en|Earth Ox|ar|Yin Earth Ox|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

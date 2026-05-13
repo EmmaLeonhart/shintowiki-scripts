@@ -1,11 +1,11 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yang Fire Tiger|kanji=丙寅|romaji=hinoe tora|onyomi=heiin|p=bǐngyín|w=ping-yin|mi=pʰiŋ²¹ ȵiŋ²¹|y=bing2 jan4|j=bing2 jan4|ci=pɪŋ jɐn²|mc=pæŋ ŋin|oc-bs=praŋ ŋin}}
 markdown
 {{Sexagenary cycle}}
-'''Yang Fire Tiger''' (丙寅, ''hinoe tora''; onyomi ''heiin'') is the 3rd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yang Fire Tiger''' (丙寅, ''hinoe tora''; onyomi ''heiin'') is the 3rd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 3rd of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Ox|ja|乙丑|1=Yin Wood Ox}} and followed by {{ill|Yin Fire Rabbit|ja|丁卯|1=Yin Fire Rabbit}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''寅'' (Tiger) is Yang Wood; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 3rd of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Ox|ja|乙丑}} and followed by {{ill|Yin Fire Rabbit|ja|丁卯}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''寅'' (Tiger) is Yang Wood; together they form a Mutual Generation relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yang Fire Tiger (丙寅)
@@ -18,61 +18,61 @@ It is the 3rd of the sixty stem-branch combinations, preceded by {{ill|Yin Wood 
 ** Vietnamese (Hán-Việt): Bính Dần
 
 ==Years of Yang Fire Tiger==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 6 when divided by 60 is a year of Yang Fire Tiger (丙寅).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 6 when divided by 60 is a year of Yang Fire Tiger (丙寅).
 {| class="wikitable"
 |+ '''Years of Yang Fire Tiger (丙寅)'''
 |-
-!{{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium|1=1st millennium}}!!{{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium|1=2nd millennium}}!!{{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium|1=3rd millennium}}
+!{{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st millennium}}!!{{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd millennium}}!!{{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd millennium}}
 |-
 |
-*{{ill|6|en|6|qid=Q23488|lt=6|1=6}}
-*{{ill|66|en|66|qid=Q4642187|lt=66|1=66}}
-*{{ill|126|en|126|qid=Q395837|lt=126|1=126}}
-*{{ill|186|en|186|qid=Q33222|lt=186|1=186}}
-*{{ill|246|en|246|qid=Q33855|lt=246|1=246}}
-*{{ill|306|en|306|qid=Q33542|lt=306|1=306}}
-*{{ill|366|en|366|qid=Q32844|lt=366|1=366}}
-*{{ill|426|en|426|qid=Q31168|lt=426|1=426}}
-*{{ill|486|en|486|qid=Q32541|lt=486|1=486}}
-*{{ill|546|en|546|qid=Q31010|lt=546|1=546}}
-*{{ill|606|en|606|qid=Q31043|lt=606|1=606}}
-*{{ill|666|en|666|qid=Q232189|lt=666|1=666}}
-*{{ill|726|en|726|qid=Q23555|lt=726|1=726}}
-*{{ill|786|en|786|qid=Q30307|lt=786|1=786}}
-*{{ill|846|en|846|qid=Q30454|lt=846|1=846}}
-*{{ill|906|en|906|qid=Q24875|lt=906|1=906}}
-*{{ill|966|en|966|qid=Q23743|lt=966|1=966}}
+*{{ill|6|en|6|qid=Q23488|lt=6}}
+*{{ill|66|en|66|qid=Q4642187|lt=66}}
+*{{ill|126|en|126|qid=Q395837|lt=126}}
+*{{ill|186|en|186|qid=Q33222|lt=186}}
+*{{ill|246|en|246|qid=Q33855|lt=246}}
+*{{ill|306|en|306|qid=Q33542|lt=306}}
+*{{ill|366|en|366|qid=Q32844|lt=366}}
+*{{ill|426|en|426|qid=Q31168|lt=426}}
+*{{ill|486|en|486|qid=Q32541|lt=486}}
+*{{ill|546|en|546|qid=Q31010|lt=546}}
+*{{ill|606|en|606|qid=Q31043|lt=606}}
+*{{ill|666|en|666|qid=Q232189|lt=666}}
+*{{ill|726|en|726|qid=Q23555|lt=726}}
+*{{ill|786|en|786|qid=Q30307|lt=786}}
+*{{ill|846|en|846|qid=Q30454|lt=846}}
+*{{ill|906|en|906|qid=Q24875|lt=906}}
+*{{ill|966|en|966|qid=Q23743|lt=966}}
 |
-*{{ill|1026|en|1026|qid=Q19269|lt=1026|1=1026}}
-*{{ill|1086|en|1086|qid=Q19460|lt=1086|1=1086}}
-*{{ill|1146|en|1146|qid=Q19627|lt=1146|1=1146}}
-*{{ill|1206|en|1206|qid=Q5230|lt=1206|1=1206}}
-*{{ill|1266|en|1266|qid=Q5517|lt=1266|1=1266}}
-*{{ill|1326|en|1326|qid=Q5782|lt=1326|1=1326}}
-*{{ill|1386|en|1386|qid=Q6355|lt=1386|1=1386}}
-*{{ill|1446|en|1446|qid=Q6430|lt=1446|1=1446}}
-*{{ill|1506|en|1506|qid=Q6154|lt=1506|1=1506}}
-*{{ill|1566|en|1566|qid=Q6638|lt=1566|1=1566}}
-*{{ill|1626|en|1626|qid=Q6831|lt=1626|1=1626}}
-*{{ill|1686|en|1686|qid=Q7664|lt=1686|1=1686}}
-*{{ill|1746|en|1746|qid=Q7589|lt=1746|1=1746}}
-*{{ill|1806|en|1806|qid=Q6903|lt=1806|1=1806}}
-*{{ill|1866|en|1866|qid=Q7712|lt=1866|1=1866}}
-*{{ill|1926|en|1926|qid=Q5259|lt=1926|1=1926}}
-*{{ill|1986|en|1986|qid=Q2430|lt=1986|1=1986}}
+*{{ill|1026|en|1026|qid=Q19269|lt=1026}}
+*{{ill|1086|en|1086|qid=Q19460|lt=1086}}
+*{{ill|1146|en|1146|qid=Q19627|lt=1146}}
+*{{ill|1206|en|1206|qid=Q5230|lt=1206}}
+*{{ill|1266|en|1266|qid=Q5517|lt=1266}}
+*{{ill|1326|en|1326|qid=Q5782|lt=1326}}
+*{{ill|1386|en|1386|qid=Q6355|lt=1386}}
+*{{ill|1446|en|1446|qid=Q6430|lt=1446}}
+*{{ill|1506|en|1506|qid=Q6154|lt=1506}}
+*{{ill|1566|en|1566|qid=Q6638|lt=1566}}
+*{{ill|1626|en|1626|qid=Q6831|lt=1626}}
+*{{ill|1686|en|1686|qid=Q7664|lt=1686}}
+*{{ill|1746|en|1746|qid=Q7589|lt=1746}}
+*{{ill|1806|en|1806|qid=Q6903|lt=1806}}
+*{{ill|1866|en|1866|qid=Q7712|lt=1866}}
+*{{ill|1926|en|1926|qid=Q5259|lt=1926}}
+*{{ill|1986|en|1986|qid=Q2430|lt=1986}}
 |
-*{{ill|2046|en|2046|qid=Q49921|lt=2046|1=2046}}
+*{{ill|2046|en|2046|qid=Q49921|lt=2046}}
 *[[:en:2106|2106]]
 *[[:en:2166|2166]]
-*{{ill|2226|en|2226|qid=Q12379772|lt=2226|1=2226}}
-*{{ill|2286|en|2286|qid=Q97232321|lt=2286|1=2286}}
+*{{ill|2226|en|2226|qid=Q12379772|lt=2226}}
+*{{ill|2286|en|2286|qid=Q97232321|lt=2286}}
 *[[:en:2346|2346]]
 *[[:en:2406|2406]]
 *[[:en:2466|2466]]
 *[[2526]]
 *[[2586]]
 *[[2646]]
-*{{ill|2706|en|2706|qid=Q4632514|lt=2706|1=2706}}
+*{{ill|2706|en|2706|qid=Q4632514|lt=2706}}
 *[[2766]]
 *[[2826]]
 *[[2886]]
@@ -80,7 +80,7 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 ==Months of Yang Fire Tiger==
-The first month (January) of a year ending in 4 or 9 in the Western calendar (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=stem|1=Heavenly Stems}} is [[:en:甲|Kō]] or [[:en:己|Ki]]) is designated as a Heiin month. However, this is based on the [[:en:Chinese lunar calendar|lunar calendar]] or the [[solar term calendar]], where the month may start from [[:en:Lìchūn|Risshun]] to the day before {{ill|Jingzhe|en|Jingzhe|qid=Q1306596|lt=Keichitsu|1=Jingzhe}}.
+The first month (January) of a year ending in 4 or 9 in the Western calendar (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=stem}} is [[:en:甲|Kō]] or [[:en:己|Ki]]) is designated as a Heiin month. However, this is based on the [[:en:Chinese lunar calendar|lunar calendar]] or the [[solar term calendar]], where the month may start from [[:en:Lìchūn|Risshun]] to the day before {{ill|Jingzhe|en|Jingzhe|qid=Q1306596|lt=Keichitsu}}.
 
 ==Days of Yang Fire Tiger==
 === Rekichū (Lower Section) ===
@@ -92,7 +92,7 @@ Heiin days in the [[Lower Section rekichū]] are as follows:
 
 {{translated page|ja|丙寅|qq=Yang Fire Tiger|version=98658211|comment=Imported full ja history}}
 
-{{wikidata link|Q767248|af|Vuurtier (astrologie)|cdo|Bīng-ìng|de|Feuer-Tiger|fr|Tigre de feu|hak|Piáng-yìm|ja|丙寅|ko|병인|nds|Füür-Tiger|vi|Bính Dần|za|Bingjyinz|zh-min-nan|Péng-în|zh-yue|丙寅|zh|丙寅|en|Fire Tiger|ar|Yang Fire Tiger}}
+{{wikidata link|Q767248|af|Vuurtier (astrologie)|cdo|Bīng-ìng|de|Feuer-Tiger|fr|Tigre de feu|hak|Piáng-yìm|ja|丙寅|ko|병인|nds|Füür-Tiger|vi|Bính Dần|za|Bingjyinz|zh-min-nan|Péng-în|zh-yue|丙寅|zh|丙寅|en|Fire Tiger|ar|Yang Fire Tiger|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
