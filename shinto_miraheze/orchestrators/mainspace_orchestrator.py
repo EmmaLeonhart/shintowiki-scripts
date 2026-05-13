@@ -28,6 +28,7 @@ from shinto_miraheze.orchestrators.ops import (
     normalize_ill_wikidata,
     remove_defaultsort,
     shikinaisha_talk,
+    strip_afc_templates,
     strip_char_count_cats,
     strip_html_comments,
     untranslated_japanese,
@@ -46,6 +47,7 @@ from shinto_miraheze.orchestrators.ops import (
 # category; returns no-op for every other page.
 OPS = [
     strip_html_comments,
+    strip_afc_templates,
     ill_category_to_link,
     normalize_ill_positional,
     normalize_ill_wikidata,

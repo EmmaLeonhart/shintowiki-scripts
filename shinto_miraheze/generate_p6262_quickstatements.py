@@ -206,6 +206,47 @@ def fandom_value(title: str) -> str:
     return f"{FANDOM_SUBDOMAIN}:{title}"
 
 
+def filter_existing_on_miraheze(site, titles: list[str]) -> set[str]:
+    """Return the subset of `titles` that exist on shinto.miraheze.org
+    as non-redirect pages.
+
+    Per the queue plan: miraheze is the source of truth for whether a
+    page exists, even when emitting P6262 (Fandom article ID). The
+    fandom mirror copies miraheze 1:1 under the same title, so a
+    miraheze deletion implies the fandom copy is also stale.
+
+    Bulk-queries in batches of 50.
+    """
+    if not titles:
+        return set()
+    existing: set[str] = set()
+    BATCH = 50
+    titles_list = list(titles)
+    for i in range(0, len(titles_list), BATCH):
+        batch = titles_list[i:i + BATCH]
+        try:
+            result = site.api(
+                "query",
+                titles="|".join(batch),
+                prop="info",
+                formatversion="2",
+            )
+        except Exception as e:
+            log_error(
+                f"Page-existence check failed for batch starting "
+                f"{batch[0]!r}: {e}"
+            )
+            existing.update(batch)  # conservative on failure
+            continue
+        for page in result.get("query", {}).get("pages", []):
+            if page.get("missing"):
+                continue
+            if page.get("redirect"):
+                continue
+            existing.add(page["title"])
+    return existing
+
+
 def parse_qs_page(text: str) -> dict[str, str]:
     """Return {qid: "shinto:Title"} for every QS line on the page."""
     existing = {}
@@ -293,6 +334,25 @@ def main():
     site.connection.timeout = 120
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
+
+    # Source-of-truth check: drop QS lines for pages that no longer
+    # exist on miraheze (the orchestrator-collected state can lag
+    # deletes by a full sweep cycle). Applied to ``new_qs`` only —
+    # preserved existing lines are left alone.
+    candidate_titles = [
+        qid_to_title[qid]
+        for qid in new_qs.keys()
+        if qid in qid_to_title
+    ]
+    existing_titles = filter_existing_on_miraheze(site, candidate_titles)
+    dropped_for_missing = 0
+    for qid in list(new_qs.keys()):
+        title = qid_to_title.get(qid)
+        if title and title not in existing_titles:
+            new_qs.pop(qid)
+            dropped_for_missing += 1
+    if dropped_for_missing:
+        print(f"  Dropped (page missing on miraheze): {dropped_for_missing}")
 
     qs_page = site.pages[QS_PAGE_TITLE]
     try:
