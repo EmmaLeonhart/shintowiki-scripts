@@ -81,7 +81,7 @@ wiki-space waste.
 
 ## More stuff
 
-We need to add to the mainspace orchestrator for it to remove the {{AfC submission}} template from pages. We also need to have it so that the quickstatements run wikidata editing checks whether a page exists before adding it. Fandom pages and miraheze pages both, but whether it exists on miraheze is the source of truth.
+We need to add to the mainspace orchestrator for it to remove the {{AfC submission}} and {{AfC topic}} templates from pages. We also need to have it so that the quickstatements run wikidata editing checks whether a page exists before adding it. Fandom pages and miraheze pages both, but whether it exists on miraheze is the source of truth.
 
 The pages in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations
 need their content stripped harder — the old lists they inherited
