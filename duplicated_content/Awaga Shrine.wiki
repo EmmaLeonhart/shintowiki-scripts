@@ -1,0 +1,87 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Awaga_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
+
+{{Infobox religious building
+| name = Awaga Jinja <br>粟鹿神社
+| image = File:Awaga Jinja 09.JPG
+| caption = Haiden of Awaga Jinja
+{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240|qq=}}
+| map_type = Japan Hyōgo Prefecture#Japan
+| map_alt = 
+| coordinates =  {{Coord|35.300803|N|134.904811}}
+| map_relief  = 1
+| map_size = 秒
+| map_caption = 
+| religious_affiliation = [[Shinto]]
+| type = 
+| deity = {{ill|Hoori|qid=Q1051960|1=Hoori}}
+| founded_by = 
+| established = unknown
+| date_destroyed = 
+| location =2152 Awaga, Santocho, Asago-shi, Hyōgo-ken
+| website =
+| architecture_style = {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
+| festival = October 17
+| leadership = 
+| location = {{ill|Asago|qid=Q720402|1=Asago, Hyōgo}}
+}}
+{{nihongo|'''Awaga Jinja'''|粟鹿神社|qq=}} is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} in the Santocho Awaga neighborhood of the city of {{ill|Asago, Hyōgo|en|Asago, Hyōgo|qid=Q720402|lt=Asago|1=Asago, Hyōgo}} in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}. It is one of the two shrines (along with [[Izushi Shrine|Izushi Jinja]]) which claim the title of ''[[ichinomiya]]'' of former {{ill|Tajima Province|en|Tajima Province|qid=Q1053727|lt=Tajima Province|1=Tajima Province}}. The main festival of the shrine is held annually on October 17.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese|qq=}}</ref>
+==Enshrined ''kami''==
+The main ''[[kami]]'' enshrined at Awaga Jinja are:
+* {{nihongo|'''Amenomisari'''|天美佐利命||qq=}}
+* {{nihongo|'''Hiko imasu no Ōkimi'''|日子坐王命||qq=}}, the third prince of the 9th {{ill|Emperor Kaika|en|Emperor Kaika|qid=Q333548|lt=Emperor Kaika|1=Emperor Kaika}} and the great-grandfather of the 12th {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Emperor Keikō|1=Emperor Keikō}}.
+* {{nihongo|'''[[Hoori|Hoori]]'''|日子穂穂手見尊||qq=}}, third son of [[Ninigi-no-Mikoto|Ninigi]] and [[Konohanasakuya-hime]]; grandfather of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu|1=Emperor Jimmu}}.
+==History==
+The origins of Awaga Jinja are unknown. According to the shrine's legend, it was founded during the reign of the legendary {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin|1=Emperor Suinin}}. A local noble, Ohiko Hayami offered to the Imperial Court to build a shrine to worship the Amenomisari, as this ''kami'' was an [[Mitama#Ara-mitama and nigi-mitama|''arashin'']] (rough deity) which needed placating. His great-grandson took the surname "Kambe" and was the ''[[kuni no miyatsuko]]'' of Tajima.  The shrine first appears in the historical documents in tax records for Tajima Province dated 737. It appears thereafter in the various historical chronicles in the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}}, including the ''[[Engishiki]]'' and the ''[[Wamyō Ruijushō]]''. The ''Engishiki'' lists it as a {{nihongo|''Myōjin Taisha''|名神大社|||qq=}}. During the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period|1=Sengoku period}},  {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi|1=Toyotomi Hideyoshi}} occupied the area in 1580, he confiscated the territory of the shrine, which fell into decline. Under then [[:en:Edo Period|Edo Period]] [[Tokugawa shogunate]], the area became {{ill|Izushi Domain|en|Izushi Domain|qid=Q10863249|lt=Izushi Domain|1=Izushi Domain}}, ruled by the [[Koide clan]] followed by the {{ill|Sengoku clan|en|Sengoku clan|qid=Q11378184|lt=Sengoku clan|1=Sengoku clan}}.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese|qq=}}</ref>
+During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto|1=State Shinto}}, the shrine was rated as a village shrine in 1872 and promoted to a prefectural shrine in 1879 under the [[Modern system of Ranked Shinto Shrines]].<ref>Ponsonby-Fane, Richard. (1959). ''The Imperial House of Japan,'' pp. 125.</ref><ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese|qq=}}</ref>
+The [[Honden]] was built in 1880 in the ''[[Nagare-zukuri]]'' style and is a three by two bay building. The [[Haiden (Shinto)|Haiden]] is a four by three bay building. There is a small hill behind the main shrine which has what appears to be the remnants of a moat. The shrine refers to this as the "tomb of the god", but it is not certain if this is an ancient ''[[kofun]]'' or not, as it has never been excavation. However, from 1999 to 2004, an [[archaeological excavation]] was conducted in the vicinity of the precincts due to the construction of the Kitakinki Toyooka Expressway, and the foundations of structures and a medieval stone paved approach have been found, indicating that the shrine was once much larger than it is at present.
+The shrine is located about 30-minutes on foot from {{ill|Yanase Station|en|Yanase Station|qid=Q870907|lt=Yanase Station|1=Yanase Station}} on the {{ill|West Japan Railway Company|en|West Japan Railway Company|qid=Q502125|lt=West Japan Railway Company|1=West Japan Railway Company}} [[:en:Sanin Main Line|Sanin Main Line]].
+==Gallery==
+<gallery>
+Awaga-jinja, keidai.jpg|precincts
+Awaga-jinja, shaden.jpg|Shaden
+File:Awaga-jinja, honden-2.jpg|Honden
+File:Awaga-jinja, chokushimon.jpg|Chokushimon (Asago City ICP)
+File:Awaga-jinja, shinmon.jpg|Shinmon
+</gallery>
+==See also==
+*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
+*[[Ichinomiya]]
+==References==
+* Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. RoutledgeCurzon (1996) {{ISBN|1-873410-63-8|qq=}}
+* {{ill|Richard Ponsonby-Fane|en|Richard Ponsonby-Fane|qid=Q3246771|lt=Ponsonby-Fane|1=Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
+==External links==
+{{commons Category|Awaga-jinja|qq=}}
+*[https://www.asabura.jp/sspot/754 Asago City home page]
+*[https://www.hyogo-jinjacho.com/data/6325071.html Hyōgo Jinjacho home page]
+==Notes==
+{{reflist|qq=}}
+{{Shinto shrine|qq=}}
+{{Ichinomiya|qq=}}
+
+{{Commons category|Awaga-jinja}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Awaga Shrine (Q11604651)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Asago District, Hyōgo|en|Asago District, Hyōgo|ja|朝来郡|ceb|Asako-gun|fa|شهرستان آساگو، هیوگو|zh|朝來郡|lt=Asago district|qid=Q4803324|1=Asago District, Hyōgo}} || {{ill|Awaga Shrine|lt=Awaga Shrine|en|Awaga Shrine|ja|粟鹿神社|commons|Category:Awaga-jinja|zh|粟鹿神社|qid=Q11604651|1=Awaga Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Myōjin Taisha|qid=Q9610964|1=Myōjin Taisha}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya|1=Ni-no-Miya}} || — || {{coord|35.300668|134.904945|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182615 DB]
+|}
+{{wikidata link|Q11604651|en|Awaga Shrine|ja|粟鹿神社|zh|粟鹿神社}}
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Tajima Province]]
+[[Category:Myōjin Taisha]]
+[[Category:Junior Fifth Rank]]
+[[Category:Senior Fifth Rank]]
+[[Category:Kokuhei-sha]]
+[[Category:Ichinomiya]]
+[[Category:Tajima Province]]
+[[Category:Shikinaisha in Tajima Province]]
+[[Category:Former Prefectural Shrines in Hyōgo Prefecture]]
+[[Category:Shinto shrines in Hyōgo Prefecture]]
+[[Category:朝来市の建築物]]
+[[Category:朝来市の歴史]]

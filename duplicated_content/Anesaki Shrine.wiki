@@ -1,0 +1,114 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Anesaki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
+
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name = Anesaki Shrine
+| religious_affiliation = [[Shinto]]
+|image = File:Anesaki-jinja, haiden.JPG
+| location = {{ill|Ichihara, Chiba|en|Ichihara, Chiba|qid=Q207881|lt=Ichihara, Chiba|1=Ichihara, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}, Japan
+| ISO = JP-12
+| latitude_deg = 35 | latitude_min = 28 | latitude_sec = 24.32
+| longitude_deg = 140 | longitude_min = 2 | longitude_sec = 53.38
+| deity = {{ill|Shinatsuhiko|qid=Q1073925|1=Shinatsuhiko}}
+| status = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|lt=Shikinaisha|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki_Jinmyocho}} (minor), Former {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226|comment=changed title based on wikidata|qid=Q712534}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}
+| established = Traditional: 40th year of Emperor {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Keikō|1=Emperor Keikō}}
+| festivals = {{ill|October 20|en|October 20|qid=Q2959|lt=October 20|1=October 20}}
+| map = Japan Chiba
+| location = {{ill|Ichihara|qid=Q207881|1=Ichihara, Chiba}}
+| coordinates = {{Coord|35.473428|N|140.048161}}
+}}
+'''Anesaki Shrine''' ({{ill|Anesaki Shrine|ja|姉埼神社|12=simple|13=User:Immanuelle/Anesaki Shrine|qq=}}, Anesaki-jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Ichihara, Chiba|en|Ichihara, Chiba|qid=Q207881|lt=Ichihara, Chiba|1=Ichihara, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}, Japan. It is a designated {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|lt=Shikinaisha|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki_Jinmyocho}} listed in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} and a former {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226|comment=changed title based on wikidata|qid=Q712534}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|qid=Q712534}} under the modern shrine Ranking system. 
+While the local area name is written as "姉崎" (Anesaki), the shrine’s name is written as "姉埼" (Anesaki).
+== Deities ==
+The shrine enshrines the following five deities:<ref name="shrine-history">Shrine historical pamphlet.</ref>
+; Main deity
+:* '''{{ill|Shinatsuhiko|en|Shinatsuhiko|qid=Q1073925|lt=Shinatsuhiko|1=Shinatsuhiko}}''' (Shinatobe-no-Mikoto) - A god of wind. The shrine’s tradition identifies this deity as either the wife or elder sister of the deity enshrined at {{ill|Shimana Shrine|ja|島穴神社|12=simple|13=User:Immanuelle/Shimana Shrine|1=Shimaana Shrine|comment=changed title based on wikidata|qid=Q11477020}}.
+; Associated deities
+:* {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}} (Yamato Takeru no Mikoto)
+:* {{ill|Ame-no-Koyane|ja|天児屋根命|1=Ame-no-Koyane|12=simple|13=User:Immanuelle/Ame-no-Koyane|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508|qid=Q2564508}} (Ame-no-Koyane no Mikoto)
+:* {{ill|Kunado-no-Kami|en|Kunado-no-Kami|qid=Q2963653|lt=Kuni-no-Sakimatsuri|1=Kunado-no-Kami}} (Saenomihashira no Kami)
+:* Ōsasaki no Mikoto (大雀命) - Identified as Emperor {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Nintoku|1=Emperor Nintoku}}.
+== History ==
+=== Founding ===
+According to the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki|1=Kojiki}} and {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}}, Emperor {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Keikō|1=Emperor Keikō}} (12th emperor) dispatched {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}} to suppress revolts in the eastern provinces. The texts describe a storm that endangered Yamato Takeru’s crossing at {{ill|Uraga Channel|en|Uraga Channel|qid=Q723431|lt=Uraga Channel|1=Uraga Channel}} until his wife, Princess {{ill|Ototachibana|ja|弟橘姫|12=simple|13=User:Immanuelle/Ototachibana|ja_comment=jawiki redirects to 弟橘媛|ja_comment=jawiki redirects to 弟橘媛|1=Tachibanahime-no-Mikoto|comment=changed title based on wikidata|qid=Q11487396}}, sacrificed herself to calm the seas. According to shrine lore, Yamato Takeru subsequently enshrined Shinatobe-no-Mikoto, a wind deity, at the present shrine location in memory of his wife.
+Later legends recount Emperor Keikō’s visit to the shrine to honor his son Yamato Takeru. Further additions to the shrine’s pantheon are attributed to successive generations of the {{ill|Shanghai-kamiko|ja|上海上国造|1=Kamitsu Unakami no Kuni Miyatsuko|12=simple|13=User:Immanuelle/Shanghai-kamiko|13=User:Immanuelle/Kamitsu Unakami no Kuni Miyatsuko|qq=}} clan, with key events recorded during the reigns of Emperor {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Seimu|1=Emperor Seimu}} (13th emperor) and Emperor {{ill|Emperor Richū|en|Emperor Richū|qid=Q329704|lt=Ritchū|1=Emperor Richū}} (17th emperor). Although these traditions remain unverifiable, the area around the shrine, known for the {{ill|Anesaki Kofun Group|ja|姉崎古墳群|12=simple|13=User:Immanuelle/Anesaki Kofun Group|qq=}}, suggests the region was a power center for the Shanghai-kamiko clan.<ref>{{harvid|Anesaki Shrine・Shimana Shrine (Kami)|1984|qq=}}</ref>
+=== Historical development ===
+The shrine is recorded in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku|1=Nihon Sandai Jitsuroku}} as receiving divine Rankings in the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}}:
+* In {{ill|877|en|877|qid=Q23905|lt=877|1=877}}, it was elevated to "Senior Fifth Rank, Lower Grade."
+* In {{ill|884|en|884|qid=Q23895|lt=884|1=884}}, it was elevated to "Senior Fifth Rank, Upper Grade."
+The shrine is also listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|lt=Shikinaisha|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki_Jinmyocho}} in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} of {{ill|927|en|927|qid=Q30470|lt=927|1=927}}.<ref>{{harvid|Anesaki Shrine・Shimana Shrine (Kami)|1984|qq=}}</ref>
+In modern times, the shrine achieved {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226|comment=changed title based on wikidata|qid=Q712534}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|qid=Q712534}} status during the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji period|1=Meiji era}}. However, a fire in {{ill|1986|en|1986|qid=Q2430|lt=Showa 61|1=1986}} destroyed its main building and sacred tree. Both have since been restored.
+=== Divine Rankings ===
+* {{ill|877|en|877|qid=Q23905|lt=877|1=877}}: "Senior Fifth Rank, Lower Grade" (Nihon Sandai Jitsuroku).
+* {{ill|884|en|884|qid=Q23895|lt=884|1=884}}: Promoted to "Senior Fifth Rank, Upper Grade."
+== Precincts ==
+<gallery>
+File:Anesaki-jinja, shaden.JPG|Shrine building<br />{{small|The connected structure includes the haiden and honden.|qq=}}
+File:Anesaki-jinja, honden.JPG|Honden (main shrine building)
+File:姉埼神社 正面鳥居.JPG|Main torii gate
+</gallery>
+== Subsidiary Shrines ==
+Several smaller shrines, including an Asama Shrine on a {{ill|Fujizuka|en|Fujizuka|qid=Q5507555|lt=Fujizuka|1=Fujizuka}}, are located within the precincts.
+<gallery>
+File:姉埼神社 富士塚.JPG|Asama Shrine (on Fujizuka)
+File:姉埼神社 摂末社.JPG|Subsidiary shrines
+</gallery>
+== Legends ==
+The shrine precincts notably lack pine trees, and this absence is linked to local legends explaining the shrine’s name and customs:
+* Shinatobe-no-Mikoto, mourning the prolonged absence of Shinatsuhiko, lamented, "Waiting is hard," leading to the taboo against "matsu" (pine, but also "to wait").
+* The place name "Anesaki" is said to originate from the elder sister (ane) awaiting her younger brother (saki) in this location.
+In the shrine's surrounding area, New Year’s decorations traditionally avoid using pine. Instead, branches of {{ill|sakaki|ja|榊|12=simple|13=User:Immanuelle/sakaki|ja_comment=jawiki redirects to サカキ|ja_comment=jawiki redirects to サカキ|1=Cleyera japonica|comment=changed title based on wikidata|qid=Q775470}} are used, referred to as "kado-sakaki."
+== Access ==
+'''Address:'''
+* Anesaki 2270, Ichihara, Chiba Prefecture, Japan
+'''Transportation:'''
+* 10-minute walk from {{ill|Anegasaki Station|en|Anegasaki Station|qid=Q573432|lt=Anegasaki Station|1=Anegasaki Station}} on the {{ill|Uchibō Line|en|Uchibō Line|qid=Q1142964|lt=Uchibō Line|1=Uchibō Line}}, {{ill|East Japan Railway Company|ja|JR東日本|12=simple|13=User:Immanuelle/East Japan Railway Company|ja_comment=jawiki redirects to 東日本旅客鉄道|ja_comment=jawiki redirects to 東日本旅客鉄道|1=East Japan Railway Company|comment=changed title based on wikidata|qid=Q499071}}.
+'''Nearby landmarks:'''
+* {{ill|Anesaki Kofun Group|ja|姉崎古墳群|12=simple|13=User:Immanuelle/Anesaki Kofun Group|qq=}} - Includes {{ill|Anegasaki Tenjinyama Kofun|ja|姉崎天神山古墳|12=simple|13=User:Immanuelle/Anesaki Tenjinyama Kofun|qq=}} and {{ill|Anesaki Futago-zuka Kofun|ja|姉崎二子塚古墳|1=Anesaki Futagozuka Kofun|12=simple|13=User:Immanuelle/Anesaki Futago-zuka Kofun|13=User:Immanuelle/Anesaki Futagozuka Kofun|qq=}}.
+== Notes ==
+{{Footnotes|qq=}}
+{{Reflist|qq=}}
+== References ==
+* Shrine historical pamphlet, ''Anesaki Shrine Visitor’s Guide''.
+* {{Cite book|editor=Meiji Shrine Records Compilation Office|title={{ill|Fuken Gōsha Meiji Jinja Shiryō|ja|府県郷社明治神社誌料|12=simple|13=User:Immanuelle/Fuken Gōsha Meiji Jinja Shiryō|1=Fuken Gōsha Meiji Jinja Shiryō|comment=changed title based on wikidata|qid=Q11486103}}|year=1912|publisher=Meiji Jinja Shiryō Compilation Office|ref={{Harvid|Meiji Shrine Records|1912|qq=}}|qq=}}
+* {{Cite book|editor=[[Ken'ichi Tanigawa]]|author=Suzuki Nakaaki|title=Japan's Gods - Shrines and Sacred Sites|year=1984|publisher=Hakusuisha|ref={{Harvid|Anesaki Shrine・Shimana Shrine (Kami)|1984|qq=}}|qq=}}
+
+== See Also ==
+* {{ill|Shimana Shrine|ja|島穴神社|12=simple|13=User:Immanuelle/Shimana Shrine|1=Shimaana Shrine|comment=changed title based on wikidata|qid=Q11477020}}
+* {{ill|Shanghai-kamiko|ja|上海上国造|1=Kamitsu Unakami no Kuni Miyatsuko|12=simple|13=User:Immanuelle/Shanghai-kamiko|13=User:Immanuelle/Kamitsu Unakami no Kuni Miyatsuko|qq=}}
+== External Links ==
+{{Commonscat|Anesaki-jinja|qq=}}
+* [http://www.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_detail.html?mode:search=1&search:method=1&search:field=jinja_id&search:expr=^$&search:word=2030 Anesaki Shrine] - Chiba Shrine Bureau official website
+{{Shinto Horizontal|qq=}}
+
+{{translated page|ja|姉埼神社|version=101197973|comment=Imported full ja history}}
+
+{{Commons category|Anesaki-jinja}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Anesaki Shrine (Q11447235)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kazusa Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Unakami district|ja|海上郡 (上総国)|qid=Q11558726|1=Unakami district}} || {{ill|Anesaki Shrine|lt=Anesaki Shrine|ja|姉埼神社|commons|Category:Anesaki-jinja|sv|Anesaki-jinja|qid=Q11447235|1=Anesaki Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|35.473409|140.048357|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181741 DB]
+|}
+{{wikidata link|Q11447235|da|d:Q11447235|ja|姉埼神社|sv|Anesaki-jinja}}
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Kazusa Province]]==Notes==
+<references group="lower-alpha"/>
+[[Category:Junior Fifth Rank]]
+[[Category:Senior Fifth Rank]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Yamato Takeru Legend]]
+[[Category:Shikinaisha in Kazusa Province]]
+[[Category:Former Prefectural Shrines in Chiba Prefecture]]
+[[Category:Shinto shrines in Chiba Prefecture]]
+[[Category:Fujizuka]]
+[[Category:Buildings and structures in Ichihara, Chiba]]
+[[Category:市原市の歴史]]

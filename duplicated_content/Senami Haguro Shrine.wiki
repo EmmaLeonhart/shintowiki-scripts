@@ -1,0 +1,150 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Senami_Haguro_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25595991611|time triggered pipeline]] -->
+'''Senami Haguro Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Echigo Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| RONSHA || {{ill|Senami Haguro Shrine|lt=Senamihaguro Shrine|ja|西奈弥羽黒神社|qid=Q11627587}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Nishinamino Shrine|lt=Nishinamino Shrine|qid=Q135040474}} || {{coord|38.217522|139.478242|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182467 DB]
+|}
+
+{{wikidata link|Q11627587|ja|西奈彌羽黒神社|ja|%E8%A5%BF%E5%A5%88%E5%BC%A5%E7%BE%BD%E9%BB%92%E7%A5%9E%E7%A4%BE|ja|西奈弥羽黒神社|check_date=2026-05-09}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox Shinto shrine
+ | Name = Senami Haguro Shrine
+ | image = [[File:Senami-Haguro Jinja Shrine, Murakami, Niigata, Japan, October 2021.jpg|250px|Senami Haguro Shrine]]{{Infobox mapframe|zoom=13|marker=building}}
+ | location = {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}, {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, Hagurocho 6-16
+ | coordinates = {{ウィキ座標2段度分秒|38|13|3.08|N|139|28|41.67|E|scale:10000}}
+ | deity = Natsu-hime no Ōkami<br />Ukanomitama no Mikoto<br />Tsukuyomi no Mikoto
+ | type = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft}} (minor)・{{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}
+ | Established = First year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD)
+ | festival = July 7
+}}
+
+'''Senami Haguro Shrine''' (西奈彌羽黒神社) is a {{ill|Shinto shrine|ja|神社|qq=draft|qq=draft}} located in {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}. Along with {{ill|Senami Shrine|ja|西奈彌神社|qq=draft|qq=draft}} in Senami Hamamachi, it is considered a possible location of the "Senami Shrine" mentioned in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|qq=draft|qq=draft}} as a shrine of {{ill|Echigo Province|ja|越後国磐船郡|qq=draft|qq=draft}}. The former shrine Ranking was {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}. Locally, it is simply called '''Haguro Shrine'''.
+
+The original deity enshrined was Natsu-hime no Ōkami, and later, Ukanomitama no Mikoto and Tsukuyomi no Mikoto were added from {{ill|Dewa Sanzan|ja|出羽三山|qq=draft|qq=draft}}. During the Edo period, the shrine was known as "Haguro Sansho Gongen." Natsu-hime no Kami is believed to be the daughter of {{ill|Hayamato|ja|羽戸山命|qq=draft|qq=draft}}, the grandson of {{ill|Susanoo|ja|スサノオ|qq=draft|qq=draft}}, and is considered the deity who developed the area.
+
+== History ==
+The shrine was established in the first year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD) and was originally located at the summit of Mount Senami.
+
+During the {{ill|Tenshō (Momoyama period)|ja|天正|lt=Tenshō Era|qq=draft|qq=draft}} (1573–1592), {{ill|Honjō Shigenaga|ja|本庄繁長|qq=draft|qq=draft}}, who ruled the area, went to the aid of the {{ill|Daibōji clan|ja|大宝寺氏|qq=draft|qq=draft}} in Dewa Shōnai, leading to conflict with the {{ill|Mogami clan|ja|最上氏|qq=draft|qq=draft}} and the Tōzenji clan (vassals of the Daibōji). Shigenaga prayed at the {{ill|Dewa Shrine|ja|出羽神社|qq=draft|qq=draft}} and, after his victory, enshrined part of its deity in Senami Haguro Shrine. The shrine then became the region’s main shrine. Later, under the rule of {{ill|Murakami Tadakatsu|ja|村上忠勝|qq=draft|qq=draft}}, the shrine was relocated from the summit to its current location midway up Mount Senami.
+
+Despite the transition from the Honjō to the {{ill|Hori clan|ja|堀氏|qq=draft|qq=draft}}, the shrine continued to receive veneration. {{ill|Hori Naomune|ja|堀直寄|qq=draft|qq=draft}}, who renovated {{ill|Murakami Castle|ja|村上城|qq=draft|qq=draft}}, built a three-story keep that overlooked the shrine. Finding this disrespectful, he ordered the shrine relocated to its present site in 1632 (Kan'ei 10). At this time, the shrine adopted the name "Haguro Sansho Gongen." The relocation date was recorded as the 7th day of the 6th lunar month, which became the annual festival date. After Japan adopted the solar calendar in the Meiji era, the festival was shifted to July 7.
+
+In 1870 (Meiji 3), the shrine was renamed to its current name. In 1894 (Meiji 27), it was designated a Gōsha (village shrine), and in 1928 (Shōwa 3), it was promoted to a {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}.
+
+== Major Annual Events ==
+* {{ill|Murakami Grand Festival|ja|村上大祭|qq=draft|qq=draft}} (July 7)
+
+== location and Access ==
+Senami Haguro Shrine is located in the southern part of Murakami city, midway up Mount Sankyo.
+
+; Transportation
+* 3-minute walk from the "Hagurocho" bus stop on the Murakami City Loop Bus.
+
+== External Links ==
+* [https://www.sake3.com/spot/54 Senami Haguro Shrine] - Murakami City Tourism Association
+* [https://niigata-kankou.or.jp/spot/7176 Niigata Sightseeing Navi: Senami Haguro Shrine] - Niigata Prefecture Tourism Association
+* [https://web.archive.org/web/20071024101757/http://www.iwafune.ed.jp/t/kyoudo/t.haguro1.html "Haguro Shrine and its Festivals" (Archived)] - Iwafune Regional Library via Wayback Machine
+
+{{translated page|ja|西奈彌羽黒神社|version=7275903|comment=Imported full ja history}}
+
+== Accidentally Overwritten Content ==
+{{Infobox Shinto shrine
+ | Name = Senami Haguro Shrine
+ | image = [[File:Senami-Haguro Jinja Shrine, Murakami, Niigata, Japan, October 2021.jpg|250px|Senami Haguro Shrine]]{{Infobox mapframe|zoom=13|marker=building}}
+ | location = {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}, {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, Hagurocho 6-16
+ | coordinates = {{ウィキ座標2段度分秒|38|13|3.08|N|139|28|41.67|E|scale:10000}}
+ | deity = Natsu-hime no Ōkami<br />Ukanomitama no Mikoto<br />Tsukuyomi no Mikoto
+ | type = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft}} (minor)・{{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}
+ | Established = First year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD)
+ | festival = July 7
+}}
+
+'''Senami Haguro Shrine''' (西奈彌羽黒神社) is a {{ill|Shinto shrine|ja|神社|qq=draft|qq=draft}} located in {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}. Along with {{ill|Senami Shrine|ja|西奈彌神社|qq=draft|qq=draft}} in Senami Hamamachi, it is considered a possible location of the "Senami Shrine" mentioned in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|qq=draft|qq=draft}} as a shrine of {{ill|Echigo Province|ja|越後国磐船郡|qq=draft|qq=draft}}. The former shrine Ranking was {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}. Locally, it is simply called '''Haguro Shrine'''.
+
+The original deity enshrined was Natsu-hime no Ōkami, and later, Ukanomitama no Mikoto and Tsukuyomi no Mikoto were added from {{ill|Dewa Sanzan|ja|出羽三山|qq=draft|qq=draft}}. During the Edo period, the shrine was known as "Haguro Sansho Gongen." Natsu-hime no Kami is believed to be the daughter of {{ill|Hayamato|ja|羽戸山命|qq=draft|qq=draft}}, the grandson of {{ill|Susanoo|ja|スサノオ|qq=draft|qq=draft}}, and is considered the deity who developed the area.
+
+== History ==
+The shrine was established in the first year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD) and was originally located at the summit of Mount Senami.
+
+During the {{ill|Tenshō (Momoyama period)|ja|天正|lt=Tenshō Era|qq=draft|qq=draft}} (1573–1592), {{ill|Honjō Shigenaga|ja|本庄繁長|qq=draft|qq=draft}}, who ruled the area, went to the aid of the {{ill|Daibōji clan|ja|大宝寺氏|qq=draft|qq=draft}} in Dewa Shōnai, leading to conflict with the {{ill|Mogami clan|ja|最上氏|qq=draft|qq=draft}} and the Tōzenji clan (vassals of the Daibōji). Shigenaga prayed at the {{ill|Dewa Shrine|ja|出羽神社|qq=draft|qq=draft}} and, after his victory, enshrined part of its deity in Senami Haguro Shrine. The shrine then became the region’s main shrine. Later, under the rule of {{ill|Murakami Tadakatsu|ja|村上忠勝|qq=draft|qq=draft}}, the shrine was relocated from the summit to its current location midway up Mount Senami.
+
+Despite the transition from the Honjō to the {{ill|Hori clan|ja|堀氏|qq=draft|qq=draft}}, the shrine continued to receive veneration. {{ill|Hori Naomune|ja|堀直寄|qq=draft|qq=draft}}, who renovated {{ill|Murakami Castle|ja|村上城|qq=draft|qq=draft}}, built a three-story keep that overlooked the shrine. Finding this disrespectful, he ordered the shrine relocated to its present site in 1632 (Kan'ei 10). At this time, the shrine adopted the name "Haguro Sansho Gongen." The relocation date was recorded as the 7th day of the 6th lunar month, which became the annual festival date. After Japan adopted the solar calendar in the Meiji era, the festival was shifted to July 7.
+
+In 1870 (Meiji 3), the shrine was renamed to its current name. In 1894 (Meiji 27), it was designated a Gōsha (village shrine), and in 1928 (Shōwa 3), it was promoted to a {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}.
+
+== Major Annual Events ==
+* {{ill|Murakami Grand Festival|ja|村上大祭|qq=draft|qq=draft}} (July 7)
+
+== location and Access ==
+Senami Haguro Shrine is located in the southern part of Murakami city, midway up Mount Sankyo.
+
+; Transportation
+* 3-minute walk from the "Hagurocho" bus stop on the Murakami City Loop Bus.
+
+== External Links ==
+* [https://www.sake3.com/spot/54 Senami Haguro Shrine] - Murakami City Tourism Association
+* [https://niigata-kankou.or.jp/spot/7176 Niigata Sightseeing Navi: Senami Haguro Shrine] - Niigata Prefecture Tourism Association
+* [https://web.archive.org/web/20071024101757/http://www.iwafune.ed.jp/t/kyoudo/t.haguro1.html "Haguro Shrine and its Festivals" (Archived)] - Iwafune Regional Library via Wayback Machine
+
+{{translated page|ja|西奈彌羽黒神社|version=7275903|comment=Imported full ja history}}
+
+== Accidentally Overwritten Content ==
+{{Infobox Shinto shrine
+ | Name = Senami Haguro Shrine
+ | image = [[File:Senami-Haguro Jinja Shrine, Murakami, Niigata, Japan, October 2021.jpg|250px|Senami Haguro Shrine]]{{Infobox mapframe|zoom=13|marker=building}}
+ | location = {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}, {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, Hagurocho 6-16
+ | coordinates = {{ウィキ座標2段度分秒|38|13|3.08|N|139|28|41.67|E|scale:10000}}
+ | deity = Natsu-hime no Ōkami<br />Ukanomitama no Mikoto<br />Tsukuyomi no Mikoto
+ | type = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft}} (minor)・{{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}
+ | Established = First year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD)
+ | festival = July 7
+}}
+
+'''Senami Haguro Shrine''' (西奈彌羽黒神社) is a {{ill|Shinto shrine|ja|神社|qq=draft|qq=draft}} located in {{ill|Murakami, Niigata|ja|村上市|qq=draft|qq=draft}}, {{ill|Niigata Prefecture|ja|新潟県|qq=draft|qq=draft}}. Along with {{ill|Senami Shrine|ja|西奈彌神社|qq=draft|qq=draft}} in Senami Hamamachi, it is considered a possible location of the "Senami Shrine" mentioned in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|qq=draft|qq=draft}} as a shrine of {{ill|Echigo Province|ja|越後国磐船郡|qq=draft|qq=draft}}. The former shrine Ranking was {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}. Locally, it is simply called '''Haguro Shrine'''.
+
+The original deity enshrined was Natsu-hime no Ōkami, and later, Ukanomitama no Mikoto and Tsukuyomi no Mikoto were added from {{ill|Dewa Sanzan|ja|出羽三山|qq=draft|qq=draft}}. During the Edo period, the shrine was known as "Haguro Sansho Gongen." Natsu-hime no Kami is believed to be the daughter of {{ill|Hayamato|ja|羽戸山命|qq=draft|qq=draft}}, the grandson of {{ill|Susanoo|ja|スサノオ|qq=draft|qq=draft}}, and is considered the deity who developed the area.
+
+== History ==
+The shrine was established in the first year of {{ill|Empress Jitō|ja|持統天皇|qq=draft|qq=draft}} (687 AD) and was originally located at the summit of Mount Senami.
+
+During the {{ill|Tenshō (Momoyama period)|ja|天正|lt=Tenshō Era|qq=draft|qq=draft}} (1573–1592), {{ill|Honjō Shigenaga|ja|本庄繁長|qq=draft|qq=draft}}, who ruled the area, went to the aid of the {{ill|Daibōji clan|ja|大宝寺氏|qq=draft|qq=draft}} in Dewa Shōnai, leading to conflict with the {{ill|Mogami clan|ja|最上氏|qq=draft|qq=draft}} and the Tōzenji clan (vassals of the Daibōji). Shigenaga prayed at the {{ill|Dewa Shrine|ja|出羽神社|qq=draft|qq=draft}} and, after his victory, enshrined part of its deity in Senami Haguro Shrine. The shrine then became the region’s main shrine. Later, under the rule of {{ill|Murakami Tadakatsu|ja|村上忠勝|qq=draft|qq=draft}}, the shrine was relocated from the summit to its current location midway up Mount Senami.
+
+Despite the transition from the Honjō to the {{ill|Hori clan|ja|堀氏|qq=draft|qq=draft}}, the shrine continued to receive veneration. {{ill|Hori Naomune|ja|堀直寄|qq=draft|qq=draft}}, who renovated {{ill|Murakami Castle|ja|村上城|qq=draft|qq=draft}}, built a three-story keep that overlooked the shrine. Finding this disrespectful, he ordered the shrine relocated to its present site in 1632 (Kan'ei 10). At this time, the shrine adopted the name "Haguro Sansho Gongen." The relocation date was recorded as the 7th day of the 6th lunar month, which became the annual festival date. After Japan adopted the solar calendar in the Meiji era, the festival was shifted to July 7.
+
+In 1870 (Meiji 3), the shrine was renamed to its current name. In 1894 (Meiji 27), it was designated a Gōsha (village shrine), and in 1928 (Shōwa 3), it was promoted to a {{ill|Prefectural shrine|ja|県社|qq=draft|qq=draft}}.
+
+== Major Annual Events ==
+* {{ill|Murakami Grand Festival|ja|村上大祭|qq=draft|qq=draft}} (July 7)
+
+== location and Access ==
+Senami Haguro Shrine is located in the southern part of Murakami city, midway up Mount Sankyo.
+
+; Transportation
+* 3-minute walk from the "Hagurocho" bus stop on the Murakami City Loop Bus.
+
+== External Links ==
+* [https://www.sake3.com/spot/54 Senami Haguro Shrine] - Murakami City Tourism Association
+* [https://niigata-kankou.or.jp/spot/7176 Niigata Sightseeing Navi: Senami Haguro Shrine] - Niigata Prefecture Tourism Association
+* [https://web.archive.org/web/20071024101757/http://www.iwafune.ed.jp/t/kyoudo/t.haguro1.html "Haguro Shrine and its Festivals" (Archived)] - Iwafune Regional Library via Wayback Machine
+
+{{translated page|ja|西奈彌羽黒神社|version=7275903|comment=Imported full ja history}}
+
+==Notes==
+<references group="lower-alpha"/>
+[[Category:Buildings and structures in Murakami, Niigata]]
+[[Category:Former Prefectural Shrines in Niigata Prefecture]]
+[[Category:Haguro Shrines]]
+[[Category:History of Murakami, Niigata]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Echigo Province]]
+[[Category:Shinto shrines in Niigata Prefecture]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Pages with interwikis with duplicate languages]]

@@ -1,0 +1,260 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Nagahatabe_Shrine_%28Hitachiota%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
+
+
+'''Nagahatabe Shrine (Hitachiota)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Kuji District, Ibaraki|en|Kuji District, Ibaraki|ja|久慈郡|ceb|Kuji-gun|es|Distrito de Kuji (Ibaraki)|fr|District de Kuji|id|Distrik Kuji, Ibaraki|it|Distretto di Kuji|ko|구지군|pl|Powiat Kuji|th|อำเภอคูจิ|uk|Повіт Кудзі|vi|Kuji, Ibaraki|zh|久慈郡|lt=Kuji district|qid=Q1075212|1=Kuji District, Ibaraki}} || {{ill|Nagahatabe Shrine (Hitachiota)|lt=Nagahatabe Shrine|ja|長幡部神社 (常陸太田市)|commons|Category:Nagahatabe-jinja (Hitachiota)|qid=Q17227113|1=Nagahatabe Shrine (Hitachiota)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|36.536129|140.545339|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181759 DB]
+|}
+
+{{wikidata link|Q17227113|co|commons:Category:Nagahatabe-jinja (Hitachiota)|ja|長幡部神社 (常陸太田市)}}
+
+== Accidentally Overwritten Content ==
+
+{{Shrine
+| name = Nagahatabe Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Nagahatabe-jinja (Hitachiota) haiden.JPG|280px]]<br/>Haiden
+| location = 539 Hata-cho, [[Hitachiota]], [[Ibaraki Prefecture]]
+| coordinates = {{Coord|36|32|9|N|140|32|43|E|landmark_region:JP-08}}
+| deity = {{Ublist|Kihime-no-Mikoto|Tate-no-Mikoto}}
+| Sacred Object = 
+| Shrine Rank = [[Shikinaisha|Shikinaisha]] (minor) <br /> Former [[Gōsha|village shrine]]
+| Foundation = (Tradition) During the reign of the 10th emperor, [[Emperor Sujin]]
+| Main Hall = [[Nagare-zukuri]]
+| alternate_name = 
+| Annual festival = April 9
+| Rituals = 
+| Map = Japan Ibaraki
+| Map label position = left
+}}
+[[File:Nagahatabe-jinja (Hitachiota) torii.JPG|thumb|200px|right|Torii]]
+[[File:Nagahatabe-jinja (Hitachiota) honden.JPG|thumb|200px|right|Honden]]
+'''Nagahatabe Shrine''' (長幡部神社, Nagahatabe Jinja) is a {{ill|Shinto shrine|ja|神社|qq=draft|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in [[Hitachiota]], [[Ibaraki Prefecture]]. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} and was Ranked as a village shrine under the [[modern shrine Ranking system]].
+
+== Deities ==
+The shrine enshrines the following two deities, considered ancestral gods of the Nagahatabe clan according to the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}<ref name="ShrineHistory">Shrine's historical documents.</ref>:
+* '''Kihime-no-Mikoto''' (綺日女命)
+* '''Tate-no-Mikoto''' (多弖命)
+
+== History ==
+=== About Nagahatabe ===
+The term "Nagahata" refers to a type of silk fabric called {{ill|Ashiginu|ja|絁|qq=draft|12=simple|13=User:Immanuelle/Ashiginu|qq=}}, and the "Nagahatabe" represents a group of artisans skilled in weaving this fabric<ref name="Deities"/>. Historical records such as the {{ill|Nihon Shoki|ja|日本書紀|qq=draft|12=simple|13=User:Immanuelle/Nihon Shoki|qq=}} and {{ill|Kojiki|ja|古事記|qq=draft|12=simple|13=User:Immanuelle/Kojiki|qq=}} indicate that the Nagahatabe clan may have roots in both imperial and immigrant lineages. According to the {{ill|Shinsen Shōjiroku|ja|新撰姓氏録|1=Shinsen Shōjiroku|qq=draft|12=simple|13=User:Immanuelle/Shinsen Shōjiroku|13=User:Immanuelle/Shinsen Shōjiroku|qq=}}, one lineage traces its origin to the immigrant "Seven Surnamed Han People" led by {{ill|Achi no Omi|ja|阿知使主|qq=draft|12=simple|13=User:Immanuelle/Achi no Omi|qq=}}<ref name="Deities"/>.
+
+=== Foundation ===
+The shrine's foundation is described in the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}, which states that Kihime-no-Mikoto accompanied {{ill|Ninigi|ja|ニニギ|qq=draft|12=simple|13=User:Immanuelle/Ninigi|qq=}} on his descent from the heavens and later moved to Hitachi under the guidance of Tate-no-Mikoto during the reign of {{ill|Emperor Sujin|ja|崇神天皇|qq=draft|12=simple|13=User:Immanuelle/Emperor Sujin|qq=}}. It is believed that Tate-no-Mikoto established a weaving facility and began the practice of weaving at this location.
+
+=== Later History ===
+According to the {{ill|Jinshin Jitsuroku|ja|日本文徳天皇実録|qq=draft|12=simple|13=User:Immanuelle/Jinshin Jitsuroku|qq=}}, the shrine received a Rank of Senior Sixth Rank Upper in {{ill|Ninju|ja|仁寿|qq=draft|12=simple|13=User:Immanuelle/Ninju|qq=}} 1 (851). The {{ill|Engishiki|ja|延喜式|qq=draft|12=simple|13=User:Immanuelle/Engishiki|qq=}} lists it as "Nagahatabe Shrine" under {{ill|Kujigun|ja|久慈郡|qq=draft|12=simple|13=User:Immanuelle/Kujigun|qq=}} in Hitachi Province<ref group="note">Another shrine with the same name, Nagahatabe Shrine, is listed in Musashi Province.</ref>.
+
+During the {{ill|Heian period|ja|平安時代|qq=draft|12=simple|13=User:Immanuelle/Heian period|qq=}}, {{ill|Minamoto no Yoriyoshi|ja|源頼義|qq=draft|12=simple|13=User:Immanuelle/Minamoto no Yoriyoshi|qq=}} prayed for victory at this shrine during his campaign and dedicated a flag. Later, the shrine's prominence declined, and it was renamed several times, including "Komaata Shrine." In the {{ill|Edo period|ja|江戸時代|qq=draft|12=simple|13=User:Immanuelle/Edo period|qq=}}, the shrine was restored to its original name "Nagahatabe Shrine" based on oral traditions.
+
+In the {{ill|Meiji period|ja|明治|lt=Meiji period|1=Meiji era|2=ja|3=明治|qq=draft|12=simple|13=User:Immanuelle/Meiji period|qq=}}, the shrine was Ranked as a village shrine in the modern shrine Ranking system<ref name="ShrineHistory"/>.
+
+== Related Sites ==
+* '''Former Shrine Site:''' Located about 700 meters northwest of the current location.
+* '''Hata Yama Kofun Cluster:''' A group of Kofuns on the shrine's grounds, designated as a historic site by Hitachiota City.
+
+== Festivals ==
+The shrine holds several annual festivals, including:
+* '''New Year Festival''' (January 1)<ref>Shrine's historical documents.</ref>
+* '''Prayer Festival''' (February 20)
+* '''Spring Festival''' (April 9)
+* '''Autumn Festival''' (Lunisolar September 29)
+* '''Harvest Festival''' (November 30)
+
+== Current Information ==
+'''Address:'''
+539 Hata-cho, Hitachiota, Ibaraki Prefecture
+
+'''Nearby:'''
+* Hata Yama Kofun Cluster
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== Further Reading ==
+* Shrine historical documents and site plaques
+* "Nagahatabe Shrine" in {{ill|Japanese Place name Dictionary|ja|日本歴史地名大系|qq=draft|12=simple|13=User:Immanuelle/Japanese Place name Dictionary|qq=}} (Heibonsha)
+* Katsumi Kitabatake, "Nagahatabe Shrine," in {{ill|The Gods of Japan - Shrines and Sacred Sites|ja|日本の神々 -神社と聖地-|qq=draft|12=simple|13=User:Immanuelle/The Gods of Japan - Shrines and Sacred Sites|qq=}} Vol. 11, Kanto (Hakusuisha, 1984)
+== See Also ==
+* {{ill|Nagahatabe Shrine (Kamisato)|en|Nagahatabe Shrine (上里町)|qq=draft|12=simple|13=User:Immanuelle/Nagahatabe Shrine (Kamisato)|qq=}}
+
+{{Shinto Horizontal}}{{Ibaraki Shrine Index}}
+
+{{translated page|ja|長幡部神社 (常陸太田市)|version=86946502|comment=Imported full ja history}}
+
+== Accidentally Overwritten Content ==
+{{Shrine
+| name = Nagahatabe Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Nagahatabe-jinja (Hitachiota) haiden.JPG|280px]]<br/>Haiden
+| location = 539 Hata-cho, [[Hitachiota]], [[Ibaraki Prefecture]]
+| coordinates = {{Coord|36|32|9|N|140|32|43|E|landmark_region:JP-08}}
+| deity = {{Ublist|Kihime-no-Mikoto|Tate-no-Mikoto}}
+| Sacred Object = 
+| Shrine Rank = [[Shikinaisha|Shikinaisha]] (minor) <br /> Former [[Gōsha|village shrine]]
+| Foundation = (Tradition) During the reign of the 10th emperor, [[Emperor Sujin]]
+| Main Hall = [[Nagare-zukuri]]
+| alternate_name = 
+| Annual festival = April 9
+| Rituals = 
+| Map = Japan Ibaraki
+| Map label position = left
+}}
+[[File:Nagahatabe-jinja (Hitachiota) torii.JPG|thumb|200px|right|Torii]]
+[[File:Nagahatabe-jinja (Hitachiota) honden.JPG|thumb|200px|right|Honden]]
+'''Nagahatabe Shrine''' (長幡部神社, Nagahatabe Jinja) is a {{ill|Shinto shrine|ja|神社|qq=draft|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in [[Hitachiota]], [[Ibaraki Prefecture]]. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} and was Ranked as a village shrine under the [[modern shrine Ranking system]].
+
+== Deities ==
+The shrine enshrines the following two deities, considered ancestral gods of the Nagahatabe clan according to the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}<ref name="ShrineHistory">Shrine's historical documents.</ref>:
+* '''Kihime-no-Mikoto''' (綺日女命)
+* '''Tate-no-Mikoto''' (多弖命)
+
+== History ==
+=== About Nagahatabe ===
+The term "Nagahata" refers to a type of silk fabric called {{ill|Ashiginu|ja|絁|qq=draft|12=simple|13=User:Immanuelle/Ashiginu|qq=}}, and the "Nagahatabe" represents a group of artisans skilled in weaving this fabric<ref name="Deities"/>. Historical records such as the {{ill|Nihon Shoki|ja|日本書紀|qq=draft|12=simple|13=User:Immanuelle/Nihon Shoki|qq=}} and {{ill|Kojiki|ja|古事記|qq=draft|12=simple|13=User:Immanuelle/Kojiki|qq=}} indicate that the Nagahatabe clan may have roots in both imperial and immigrant lineages. According to the {{ill|Shinsen Shōjiroku|ja|新撰姓氏録|1=Shinsen Shōjiroku|qq=draft|12=simple|13=User:Immanuelle/Shinsen Shōjiroku|13=User:Immanuelle/Shinsen Shōjiroku|qq=}}, one lineage traces its origin to the immigrant "Seven Surnamed Han People" led by {{ill|Achi no Omi|ja|阿知使主|qq=draft|12=simple|13=User:Immanuelle/Achi no Omi|qq=}}<ref name="Deities"/>.
+
+=== Foundation ===
+The shrine's foundation is described in the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}, which states that Kihime-no-Mikoto accompanied {{ill|Ninigi|ja|ニニギ|qq=draft|12=simple|13=User:Immanuelle/Ninigi|qq=}} on his descent from the heavens and later moved to Hitachi under the guidance of Tate-no-Mikoto during the reign of {{ill|Emperor Sujin|ja|崇神天皇|qq=draft|12=simple|13=User:Immanuelle/Emperor Sujin|qq=}}. It is believed that Tate-no-Mikoto established a weaving facility and began the practice of weaving at this location.
+
+=== Later History ===
+According to the {{ill|Jinshin Jitsuroku|ja|日本文徳天皇実録|qq=draft|12=simple|13=User:Immanuelle/Jinshin Jitsuroku|qq=}}, the shrine received a Rank of Senior Sixth Rank Upper in {{ill|Ninju|ja|仁寿|qq=draft|12=simple|13=User:Immanuelle/Ninju|qq=}} 1 (851). The {{ill|Engishiki|ja|延喜式|qq=draft|12=simple|13=User:Immanuelle/Engishiki|qq=}} lists it as "Nagahatabe Shrine" under {{ill|Kujigun|ja|久慈郡|qq=draft|12=simple|13=User:Immanuelle/Kujigun|qq=}} in Hitachi Province<ref group="note">Another shrine with the same name, Nagahatabe Shrine, is listed in Musashi Province.</ref>.
+
+During the {{ill|Heian period|ja|平安時代|qq=draft|12=simple|13=User:Immanuelle/Heian period|qq=}}, {{ill|Minamoto no Yoriyoshi|ja|源頼義|qq=draft|12=simple|13=User:Immanuelle/Minamoto no Yoriyoshi|qq=}} prayed for victory at this shrine during his campaign and dedicated a flag. Later, the shrine's prominence declined, and it was renamed several times, including "Komaata Shrine." In the {{ill|Edo period|ja|江戸時代|qq=draft|12=simple|13=User:Immanuelle/Edo period|qq=}}, the shrine was restored to its original name "Nagahatabe Shrine" based on oral traditions.
+
+In the {{ill|Meiji period|ja|明治|lt=Meiji period|1=Meiji era|2=ja|3=明治|qq=draft|12=simple|13=User:Immanuelle/Meiji period|qq=}}, the shrine was Ranked as a village shrine in the modern shrine Ranking system<ref name="ShrineHistory"/>.
+
+== Related Sites ==
+* '''Former Shrine Site:''' Located about 700 meters northwest of the current location.
+* '''Hata Yama Kofun Cluster:''' A group of Kofuns on the shrine's grounds, designated as a historic site by Hitachiota City.
+
+== Festivals ==
+The shrine holds several annual festivals, including:
+* '''New Year Festival''' (January 1)<ref>Shrine's historical documents.</ref>
+* '''Prayer Festival''' (February 20)
+* '''Spring Festival''' (April 9)
+* '''Autumn Festival''' (Lunisolar September 29)
+* '''Harvest Festival''' (November 30)
+
+== Current Information ==
+'''Address:'''
+539 Hata-cho, Hitachiota, Ibaraki Prefecture
+
+'''Nearby:'''
+* Hata Yama Kofun Cluster
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== Further Reading ==
+* Shrine historical documents and site plaques
+* "Nagahatabe Shrine" in {{ill|Japanese Place name Dictionary|ja|日本歴史地名大系|qq=draft|12=simple|13=User:Immanuelle/Japanese Place name Dictionary|qq=}} (Heibonsha)
+* Katsumi Kitabatake, "Nagahatabe Shrine," in {{ill|The Gods of Japan - Shrines and Sacred Sites|ja|日本の神々 -神社と聖地-|qq=draft|12=simple|13=User:Immanuelle/The Gods of Japan - Shrines and Sacred Sites|qq=}} Vol. 11, Kanto (Hakusuisha, 1984)
+== See Also ==
+* {{ill|Nagahatabe Shrine (Kamisato)|en|Nagahatabe Shrine (上里町)|qq=draft|12=simple|13=User:Immanuelle/Nagahatabe Shrine (Kamisato)|qq=}}
+
+{{Shinto Horizontal}}{{Ibaraki Shrine Index}}
+
+{{translated page|ja|長幡部神社 (常陸太田市)|version=86946502|comment=Imported full ja history}}
+
+== Accidentally Overwritten Content ==
+{{Shrine
+| name = Nagahatabe Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Nagahatabe-jinja (Hitachiota) haiden.JPG|280px]]<br/>Haiden
+| location = 539 Hata-cho, [[Hitachiota]], [[Ibaraki Prefecture]]
+| coordinates = {{Coord|36|32|9|N|140|32|43|E|landmark_region:JP-08}}
+| deity = {{Ublist|Kihime-no-Mikoto|Tate-no-Mikoto}}
+| Sacred Object = 
+| Shrine Rank = [[Shikinaisha|Shikinaisha]] (minor) <br /> Former [[Gōsha|village shrine]]
+| Foundation = (Tradition) During the reign of the 10th emperor, [[Emperor Sujin]]
+| Main Hall = [[Nagare-zukuri]]
+| alternate_name = 
+| Annual festival = April 9
+| Rituals = 
+| Map = Japan Ibaraki
+| Map label position = left
+}}
+[[File:Nagahatabe-jinja (Hitachiota) torii.JPG|thumb|200px|right|Torii]]
+[[File:Nagahatabe-jinja (Hitachiota) honden.JPG|thumb|200px|right|Honden]]
+'''Nagahatabe Shrine''' (長幡部神社, Nagahatabe Jinja) is a {{ill|Shinto shrine|ja|神社|qq=draft|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in [[Hitachiota]], [[Ibaraki Prefecture]]. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} and was Ranked as a village shrine under the [[modern shrine Ranking system]].
+
+== Deities ==
+The shrine enshrines the following two deities, considered ancestral gods of the Nagahatabe clan according to the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}<ref name="ShrineHistory">Shrine's historical documents.</ref>:
+* '''Kihime-no-Mikoto''' (綺日女命)
+* '''Tate-no-Mikoto''' (多弖命)
+
+== History ==
+=== About Nagahatabe ===
+The term "Nagahata" refers to a type of silk fabric called {{ill|Ashiginu|ja|絁|qq=draft|12=simple|13=User:Immanuelle/Ashiginu|qq=}}, and the "Nagahatabe" represents a group of artisans skilled in weaving this fabric<ref name="Deities"/>. Historical records such as the {{ill|Nihon Shoki|ja|日本書紀|qq=draft|12=simple|13=User:Immanuelle/Nihon Shoki|qq=}} and {{ill|Kojiki|ja|古事記|qq=draft|12=simple|13=User:Immanuelle/Kojiki|qq=}} indicate that the Nagahatabe clan may have roots in both imperial and immigrant lineages. According to the {{ill|Shinsen Shōjiroku|ja|新撰姓氏録|1=Shinsen Shōjiroku|qq=draft|12=simple|13=User:Immanuelle/Shinsen Shōjiroku|13=User:Immanuelle/Shinsen Shōjiroku|qq=}}, one lineage traces its origin to the immigrant "Seven Surnamed Han People" led by {{ill|Achi no Omi|ja|阿知使主|qq=draft|12=simple|13=User:Immanuelle/Achi no Omi|qq=}}<ref name="Deities"/>.
+
+=== Foundation ===
+The shrine's foundation is described in the {{ill|Hitachi Fudoki|ja|常陸国風土記|qq=draft|12=simple|13=User:Immanuelle/Hitachi Fudoki|qq=}}, which states that Kihime-no-Mikoto accompanied {{ill|Ninigi|ja|ニニギ|qq=draft|12=simple|13=User:Immanuelle/Ninigi|qq=}} on his descent from the heavens and later moved to Hitachi under the guidance of Tate-no-Mikoto during the reign of {{ill|Emperor Sujin|ja|崇神天皇|qq=draft|12=simple|13=User:Immanuelle/Emperor Sujin|qq=}}. It is believed that Tate-no-Mikoto established a weaving facility and began the practice of weaving at this location.
+
+=== Later History ===
+According to the {{ill|Jinshin Jitsuroku|ja|日本文徳天皇実録|qq=draft|12=simple|13=User:Immanuelle/Jinshin Jitsuroku|qq=}}, the shrine received a Rank of Senior Sixth Rank Upper in {{ill|Ninju|ja|仁寿|qq=draft|12=simple|13=User:Immanuelle/Ninju|qq=}} 1 (851). The {{ill|Engishiki|ja|延喜式|qq=draft|12=simple|13=User:Immanuelle/Engishiki|qq=}} lists it as "Nagahatabe Shrine" under {{ill|Kujigun|ja|久慈郡|qq=draft|12=simple|13=User:Immanuelle/Kujigun|qq=}} in Hitachi Province<ref group="note">Another shrine with the same name, Nagahatabe Shrine, is listed in Musashi Province.</ref>.
+
+During the {{ill|Heian period|ja|平安時代|qq=draft|12=simple|13=User:Immanuelle/Heian period|qq=}}, {{ill|Minamoto no Yoriyoshi|ja|源頼義|qq=draft|12=simple|13=User:Immanuelle/Minamoto no Yoriyoshi|qq=}} prayed for victory at this shrine during his campaign and dedicated a flag. Later, the shrine's prominence declined, and it was renamed several times, including "Komaata Shrine." In the {{ill|Edo period|ja|江戸時代|qq=draft|12=simple|13=User:Immanuelle/Edo period|qq=}}, the shrine was restored to its original name "Nagahatabe Shrine" based on oral traditions.
+
+In the {{ill|Meiji period|ja|明治|lt=Meiji period|1=Meiji era|2=ja|3=明治|qq=draft|12=simple|13=User:Immanuelle/Meiji period|qq=}}, the shrine was Ranked as a village shrine in the modern shrine Ranking system<ref name="ShrineHistory"/>.
+
+== Related Sites ==
+* '''Former Shrine Site:''' Located about 700 meters northwest of the current location.
+* '''Hata Yama Kofun Cluster:''' A group of Kofuns on the shrine's grounds, designated as a historic site by Hitachiota City.
+
+== Festivals ==
+The shrine holds several annual festivals, including:
+* '''New Year Festival''' (January 1)<ref>Shrine's historical documents.</ref>
+* '''Prayer Festival''' (February 20)
+* '''Spring Festival''' (April 9)
+* '''Autumn Festival''' (Lunisolar September 29)
+* '''Harvest Festival''' (November 30)
+
+== Current Information ==
+'''Address:'''
+539 Hata-cho, Hitachiota, Ibaraki Prefecture
+
+'''Nearby:'''
+* Hata Yama Kofun Cluster
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== Further Reading ==
+* Shrine historical documents and site plaques
+* "Nagahatabe Shrine" in {{ill|Japanese Place name Dictionary|ja|日本歴史地名大系|qq=draft|12=simple|13=User:Immanuelle/Japanese Place name Dictionary|qq=}} (Heibonsha)
+* Katsumi Kitabatake, "Nagahatabe Shrine," in {{ill|The Gods of Japan - Shrines and Sacred Sites|ja|日本の神々 -神社と聖地-|qq=draft|12=simple|13=User:Immanuelle/The Gods of Japan - Shrines and Sacred Sites|qq=}} Vol. 11, Kanto (Hakusuisha, 1984)
+== See Also ==
+* {{ill|Nagahatabe Shrine (Kamisato)|en|Nagahatabe Shrine (上里町)|qq=draft|12=simple|13=User:Immanuelle/Nagahatabe Shrine (Kamisato)|qq=}}
+
+{{Shinto Horizontal}}{{Ibaraki Shrine Index}}
+
+{{translated page|ja|長幡部神社 (常陸太田市)|version=86946502|comment=Imported full ja history}}
+
+==Notes==
+<references group="lower-alpha"/>
+[[Nagahatabe Shrine (Hitachiota)]]
+[[Category:Buildings and structures in Hitachiota]]
+[[Category:History of Hitachiota]]
+[[Category:Kokuhei-sha]]
+[[Category:Nagahatabe Shrine (Hitachiota)]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hitachi Province]]
+[[Category:Shrines in Ibaraki Prefecture]]
+[[Category:Son-sha]]
+[[Category:長幡部神社 (常陸太田市)]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
