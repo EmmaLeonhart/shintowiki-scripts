@@ -1,0 +1,38 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AKotohira_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24945162515|manual triggered pipeline]] -->
+{{Navbox
+| name  = Kotohira Faith
+| title = [[Kotohira shrines|Kotohira Faith]]
+| listclass = hlist
+| image = [[File:Hiroshige27 kakegawa.jpg|150px|link=|alt=]]
+ |group1 = Main Deities
+ |list1 =
+* [[Ōmononushi]]
+* [[Konpira Gongen]]
+* [[:en:Bhaisajyaguru|Bhaisajyaguru]]
+* {{ill|Kumbhīra|ja|宮比羅|12=simple|13=User:Immanuelle/Kumbhīra|12=simple|13=User:Immanuelle/Kumbhīra|qq=}}
+
+ |group2 = Main shrines
+ |list2 =
+* [[Kotohira-gū]]
+* [[Matsuo-ji]]
+
+|group3 = Branch shrines
+|list3=
+* [[Hakodate Hachimangū]]
+* [[Ryūtōsan Shrine]]
+* [[:en:Sapporo Hachimangū|Sapporo Hachimangū]]
+
+|group4=misc
+|list4=
+* {{ill|Kamiyo Ame Candy|ja|加美代飴|12=simple|13=User:Immanuelle/Kamiyo Ame Candy|12=simple|13=User:Immanuelle/Kamiyo Ame Candy|qq=}}
+
+}}<noinclude>
+
+[[en:Template:Kotohira Faith]]{{wikidata link|Q125475314}}
+[[Category:Akiha faith]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

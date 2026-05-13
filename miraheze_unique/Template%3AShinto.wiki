@@ -1,0 +1,96 @@
+{{sidebar with collapsible lists
+| name=Shinto
+| bodyclass = hlist
+| width = {{{width|16.0em}}}
+| pretitle = {{white|Part of [[:Category:Shinto| <span style="color:White;">a series</span>]] on}}
+|titlestyle = font-size:150%; color:#b0000f
+| title = [[Shinto|<span style="color:White;">Shinto</span>]]
+
+| image = [[File:Shinto torii vermillion.svg|90px|Shinto]]
+| basestyle = background:#b0000f;
+| listtitlestyle = background:#FFCCCB;
+| contentclass = hlist
+| expanded = {{{expand|{{{1|}}}}}}
+
+| list1name = Beliefs
+| list1title = Beliefs
+| list1 =
+* [[:en:Animism|Animism]]/[[:en:Animatism|Animatism]]
+* [[Kami]]
+* [[:en:List of Japanese deities|List of deities]]
+* [[Japanese mythology|Mythology]]
+* [[:en:Polytheism|Polytheism]]
+* [[:en:List of sacred objects in Japanese mythology|Sacred objects]]
+* [[:en:Shinto sects and schools|Sects and schools]]
+
+| list2name = Major kami
+| list2title = [[List of Japanese deities#Major kami|Major kami]]
+| list2 =
+* [[Amaterasu]]
+* [[Ame-no-Uzume]]
+* [[:en:Inari Ōkami|Inari]]
+* [[Izanagi]]
+* [[:en:Izanami|Izanami]]
+* [[Susanoo-no-Mikoto|Susanoo]]
+* [[Tsukuyomi-no-Mikoto|Tsukuyomi]]
+
+| list3name = Important literature
+| list3title = [[:en:Shinto texts|Important literature]]
+| list3 = 
+* {{longlink|''[[Kojiki]]'' ({{circa|711 CE|lk=no}})}}
+* {{longlink|''[[Nihon Shoki]]'' (720 CE)}}
+* {{longlink|''[[Fudoki]]''  (713–723 CE)}}
+* {{longlink|''[[Shoku Nihongi]]''  (797 CE)}}
+* {{longlink|''[[Kogo Shūi]]''  (807 CE)}}
+* {{longlink|''[[Kujiki]]''  (807–936 CE)}}
+* {{longlink|''[[Engishiki]]'' (927 CE)}}
+
+| list4name = Shinto shrines
+| list4title = [[:en:Shinto shrine|Shinto shrine]]s
+| list4 = 
+* [[Association of Shinto Shrines]]
+* [[Ichinomiya]]
+* [[:en:List of Shinto shrines|List of Shinto shrines]]
+* [[Modern system of Ranked Shinto shrines]]
+* [[:en:Shinto architecture|Shinto architecture]]
+* [[:en:Twenty-Two Shrines|Twenty-Two Shrines]]
+
+| list5name = Practices
+| list5title = Practices
+| list5 = 
+* [[Japanese festivals|Festivals]]
+* [[Kannushi]]
+* [[Miko]]
+* [[Shinto_music|Music]]
+* [[Kagura|Ritual dance]]
+* [[Norito|Ritual incantations]]
+* [[Misogi|Ritual purification]]
+
+| list6name = See also
+| list6title = [[:Category:Shinto|See also]]
+| list6 = 
+* [[:en:Edo neo-Confucianism|Edo neo-Confucianism]]
+* [[Glossary of Shinto]]
+* [[:en:History of Shinto|History]]
+* [[:en:Kokugaku|Kokugaku]]
+* [[Ko-Shintō]]
+* [[:en:List of legendary creatures from Japan|Mythical creatures]]
+* [[:en:Nippon Kaigi|Nippon Kaigi]]
+* [[:en:Religion in Japan|Religion in Japan]]
+* [[Secular Shrine Theory]]
+* [[:en:State Shinto|State Shinto]]
+* [[Shinbutsu-shūgō|Syncretism of Shinto and Buddhism]]
+| belowclass = hlist
+| below =
+* {{Portal-inline|Religion|size=tiny}}
+
+}}<noinclude>
+[[Category:Shinto templates| ]]
+[[Category:Independently git synced pages| ]]
+[[Category:Religion and belief sidebar templates]]
+[[Category:Japan sidebar templates]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+</noinclude>

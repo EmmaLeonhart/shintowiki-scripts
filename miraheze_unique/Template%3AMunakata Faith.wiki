@@ -1,0 +1,204 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AMunakata_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24947213578|time triggered pipeline]] -->
+{{Navbox with collapsible groups
+| name = Munakata Faith
+| title = {{ill|Three Munakata Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|lt=Munakata Faith|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|qq=}} and the {{ill|Four Purification Deities|ja|祓戸大神|1=Haraedo no Kami|lt=Four Purification Deities|zh|祓戶大神|12=simple|13=User:Immanuelle/Four Purification Deities|13=User:Immanuelle/Haraedo no Kami|12=simple|13=User:Immanuelle/Four Purification Deities|13=User:Immanuelle/Haraedo no Kami|qq=}}
+| listclass = hlist
+| basestyle = background:#000080;
+| groupstyle = background:#CCCCFF;
+| state = autocollapse
+
+| group1 = Munakata Faith
+| list1 = {{Navbox|child
+ | groupstyle = background:#B0E0E6; color:#fff;
+ | group1 = {{ill|Three Munakata Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|lt=Main Deities|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|qq=}} and their syncretisms
+ | list1 =
+* {{ill|Ichikishima-hime|ja|イチキシマヒメ|1=Ichikishima-hime|lt=Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|qq=}}
+** [[Benzaiten]]
+** {{ill|Seoritsu Hime|ja|瀬織津姫|1=Seoritsu-hime|12=simple|13=User:Immanuelle/Seoritsu Hime|13=User:Immanuelle/Seoritsu-hime|12=simple|13=User:Immanuelle/Seoritsu Hime|13=User:Immanuelle/Seoritsu-hime|qq=}}
+** [[Saraswati|Sarasvatī]]
+* {{ill|Tagitsuhime|ja|タギツヒメ|12=simple|13=User:Immanuelle/Tagitsuhime|12=simple|13=User:Immanuelle/Tagitsuhime|qq=}}
+** [[Kisshōten]]
+** [[:en:Lakshmi|Lakṣmī]]
+* {{ill|Tagorihime|ja|タキリビメ|12=simple|13=User:Immanuelle/Tagorihime|12=simple|13=User:Immanuelle/Tagorihime|qq=}}
+** [[Daikokuten#Goddess Daikokutennyo|Daikokutennyo]]
+** [[:en:Mahakali|Mahakali]] 
+** [[:en:Parvati|Parvati]]
+** [[:en:Durga|Durga]]
+
+| group2 = {{ill|Three Munakata Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|lt=Main Deities|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|qq=}} and their {{ill|Mikogami|de|Mikokami|ja|御子神|lt=child deities|12=simple|13=User:Immanuelle/Mikogami|12=simple|13=User:Immanuelle/Mikogami|qq=}}
+| list2=
+* {{ill|Ichikishima-hime|ja|イチキシマヒメ|1=Ichikishima-hime|lt=Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|qq=}}
+* {{ill|Tagitsuhime|ja|タギツヒメ|12=simple|13=User:Immanuelle/Tagitsuhime|12=simple|13=User:Immanuelle/Tagitsuhime|qq=}}
+** [[Kotoshironushi-no-Mikoto|Kotoshironushi]] 
+** {{ill|Takateruhime|ja|高照光姫命|12=simple|13=User:Immanuelle/Takateruhime|12=simple|13=User:Immanuelle/Takateruhime|qq=}}
+* {{ill|Tagorihime|ja|タキリビメ|12=simple|13=User:Immanuelle/Tagorihime|12=simple|13=User:Immanuelle/Tagorihime|qq=}}
+** [[Ajisukitakahikone]]
+** {{ill|Shitateruhime|ja|下照比売|lt=Shitateruhime-no-Mikoto|simple|User:Immanuelle/Shitateruhime|fr|12=simple|13=User:Immanuelle/Shitateruhime|12=simple|13=User:Immanuelle/Shitateruhime|qq=}}/{{ill|Takehazuchi|ja|天羽槌雄神|1=Takehazuchi|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|simple|User:Immanuelle/Takehazuchi|fr|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|qq=}}
+
+ | group3 = Head Shrines
+ | list3 =
+* [[Munakata Taisha]]
+* [[Itsukushima Shrine]]
+
+ | group4 = Other Shrines
+ | list4 =
+* {{ill|Tashima Shrine (Saga)|ja|田島神社|en|Tashima Shrine|12=simple|13=User:Immanuelle/Tashima Shrine (Saga)|12=simple|13=User:Immanuelle/Tashima Shrine (Saga)|qq=}}
+* {{ill|Fuchi Shrine|ja|淵神社|12=simple|13=User:Immanuelle/Fuchi Shrine|12=simple|13=User:Immanuelle/Fuchi Shrine|qq=}}
+* {{ill|Fujikiri Shrine|ja|藤切神社|12=simple|13=User:Immanuelle/Fujikiri Shrine|12=simple|13=User:Immanuelle/Fujikiri Shrine|qq=}}
+ | group5 = Misc
+ | list5 =
+* {{ill|Munakata clan|ja|宗像氏|1=Munakata clan|fr|Clan Munakata|12=simple|13=User:Immanuelle/Munakata clan|13=User:Immanuelle/Munakata clan|12=simple|13=User:Immanuelle/Munakata clan|13=User:Immanuelle/Munakata clan|qq=}}
+* [[Heike Nokyo]]
+
+ | group6 = {{ill|Three Great Shrines of Benzaiten|ja|日本三大弁天|12=simple|13=User:Immanuelle/Three Great Shrines of Benzaiten|12=simple|13=User:Immanuelle/Three Great Shrines of Benzaiten|qq=}}
+ | list6 =
+* {{ill|Daigan-ji Temple|ja|大願寺 (廿日市市)|12=simple|13=User:Immanuelle/Daigan-ji Temple|12=simple|13=User:Immanuelle/Daigan-ji Temple|qq=}} / [[Itsukushima Shrine]]
+* [[Enoshima Shrine]]
+* [[:en:Hōgon-ji|Hōgon-ji Temple]] / [[Tsukubusuma Shrine]]
+
+ | group7 = [[Benzaiten shrines]]
+ | list7 =
+* {{ill|Zeniarai Benzaiten Ugafuku Shrine|ja|銭洗弁財天宇賀福神社|12=simple|13=User:Immanuelle/Zeniarai Benzaiten Ugafuku Shrine|12=simple|13=User:Immanuelle/Zeniarai Benzaiten Ugafuku Shrine|qq=}}
+* {{ill|Tenkawa Daibenzaiten Shrine|ja|天河大弁財天社|12=simple|13=User:Immanuelle/Tenkawa Daibenzaiten Shrine|12=simple|13=User:Immanuelle/Tenkawa Daibenzaiten Shrine|qq=}}
+* {{ill|Koganeyama Shrine (Ishinomaki)|ja|黄金山神社 (石巻市)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|qq=}}
+* {{ill|Rokkō Hime Daizen Shrine|ja|六甲比命神社|12=simple|13=User:Immanuelle/Rokkō Hime Daizen Shrine|12=simple|13=User:Immanuelle/Rokkō Hime Daizen Shrine|qq=}}
+* {{ill|Benzaiten Shrine|ja|弁財天宮|12=simple|13=User:Immanuelle/Benzaiten Shrine|12=simple|13=User:Immanuelle/Benzaiten Shrine|qq=}}
+* {{ill|Benzaiten (Shiroi)|ja|弁財天 (白井市)|12=simple|13=User:Immanuelle/Benzaiten (Shiroi)|12=simple|13=User:Immanuelle/Benzaiten (Shiroi)|qq=}}
+* {{ill|Chinkoku-ji|ja|鎮国寺|12=simple|13=User:Immanuelle/Chinkoku-ji|12=simple|13=User:Immanuelle/Chinkoku-ji|qq=}}
+
+ | group8 = {{ill|Ichikishima Shrines|ja|市杵島神社|12=simple|13=User:Immanuelle/Ichikishima Shrines|12=simple|13=User:Immanuelle/Ichikishima Shrines|qq=}}
+ | list8 =
+* {{ill|Bentenjima (Nemuro)|ja|市杵島神社 (根室市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Nemuro)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Nemuro)|qq=}}
+* {{ill|Ichikishima Shrine (Suginami)|ja|市杵嶋神社 (杉並区)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Suginami)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Suginami)|qq=}}
+* {{ill|Ichikishima-hime Shrine (Naruto Muya)|ja|市杵島姫神社 (鳴門市)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Muya)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Muya)|qq=}}
+* {{ill|Ichikishima-hime Shrine (Naruto Minamihama)|ja|市杵島姫神社 (鳴門市撫養町南浜)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Minamihama)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Minamihama)|qq=}}
+
+ | group9 = {{ill|Munakata Shrines|ja|宗像神社|12=simple|13=User:Immanuelle/Munakata Shrines|12=simple|13=User:Immanuelle/Munakata Shrines|qq=}}
+ | list9 =
+* {{ill|Munakata Shrine (Hirosaki)|ja|胸肩神社 (青森県弘前市)|12=simple|13=User:Immanuelle/Munakata Shrine (Hirosaki)|12=simple|13=User:Immanuelle/Munakata Shrine (Hirosaki)|qq=}}
+* {{ill|Munakata Shrine (Oyama)|ja|胸形神社 (小山市)|12=simple|13=User:Immanuelle/Munakata Shrine (Oyama)|12=simple|13=User:Immanuelle/Munakata Shrine (Oyama)|qq=}}
+* {{ill|Munakata Shrine (Shiroi)|ja|宗像神社 (白井市)|12=simple|13=User:Immanuelle/Munakata Shrine (Shiroi)|12=simple|13=User:Immanuelle/Munakata Shrine (Shiroi)|qq=}}
+* {{ill|Amanomiya Shrine|ja|天宮神社|1=Ame-no-Miya Shrine|12=simple|13=User:Immanuelle/Amanomiya Shrine|13=User:Immanuelle/Ame-no-Miya Shrine|12=simple|13=User:Immanuelle/Amanomiya Shrine|13=User:Immanuelle/Ame-no-Miya Shrine|qq=}}
+* {{ill|Munakata Shrine (Kyoto)|ja|宗像神社 (京都市)|12=simple|13=User:Immanuelle/Munakata Shrine (Kyoto)|12=simple|13=User:Immanuelle/Munakata Shrine (Kyoto)|qq=}}
+* {{ill|Ichitani Munakata Shrine|ja|櫟谷宗像神社|12=simple|13=User:Immanuelle/Ichitani Munakata Shrine|12=simple|13=User:Immanuelle/Ichitani Munakata Shrine|qq=}}
+* {{ill|Munakata Shrine (Sakurai)|ja|宗像神社 (桜井市)|12=simple|13=User:Immanuelle/Munakata Shrine (Sakurai)|12=simple|13=User:Immanuelle/Munakata Shrine (Sakurai)|qq=}}
+* {{ill|Munakata Shrine (Kita-ku, Okayama)|ja|宗形神社 (岡山市北区)|12=simple|13=User:Immanuelle/Munakata Shrine (Kita-ku, Okayama)|12=simple|13=User:Immanuelle/Munakata Shrine (Kita-ku, Okayama)|qq=}}
+
+ | group10 = {{ill|Itsukushima Shrine (disambiguation)|ja|厳島神社 (曖昧さ回避)|lt=Itsukushima Shrines|12=simple|13=User:Immanuelle/Itsukushima Shrine (disambiguation)|12=simple|13=User:Immanuelle/Itsukushima Shrine (disambiguation)|qq=}}
+ | list10 =
+* [[Itsukushima shrine (Kushiro)]]
+* [[:en:Itsukushima Shrine (Kyoto)|Itsukushima Shrine (Kyoto)]]
+}}
+
+| group2 = {{ill|Four Purification Deities|ja|祓戸大神|1=Haraedo no Kami|lt=Four Purification Deities|zh|祓戶大神|12=simple|13=User:Immanuelle/Four Purification Deities|13=User:Immanuelle/Haraedo no Kami|12=simple|13=User:Immanuelle/Four Purification Deities|13=User:Immanuelle/Haraedo no Kami|qq=}}
+| list2 = {{Navbox|child
+ | groupstyle = background:#B0E0E6; color:#fff;
+
+|group1 = Shrines for all four
+| list1=
+* {{ill|Sakunado Shrine|ja|佐久奈度神社|12=simple|13=User:Immanuelle/Sakunado Shrine|12=simple|13=User:Immanuelle/Sakunado Shrine|qq=}} 
+* {{ill|Hibiya Shrine|ja|日比谷神社|12=simple|13=User:Immanuelle/Hibiya Shrine|12=simple|13=User:Immanuelle/Hibiya Shrine|qq=}} 
+* {{ill|Urashima Shrine|ja|浦嶋神社|12=simple|13=User:Immanuelle/Urashima Shrine|12=simple|13=User:Immanuelle/Urashima Shrine|qq=}} 
+
+ 
+ | group11 = {{ill|Seoritsu-hime|ja|瀬織津姫|1=Seoritsu-hime|12=simple|13=User:Immanuelle/Seoritsu-hime|13=User:Immanuelle/Seoritsu-hime|12=simple|13=User:Immanuelle/Seoritsu-hime|13=User:Immanuelle/Seoritsu-hime|qq=}}
+ | list11 = {{Navbox|child
+|group1 = role
+|list1 = Carries away all calamities, sins, and impurities to rivers and the sea.
+   | group11 = Aliases
+   | list11 = 
+* [[Amaterasu]]'s [[:en:Aramitama|Aramitama]]
+* {{ill|Kumano Gongen|ja|熊野権現|12=simple|13=User:Immanuelle/Kumano Gongen|12=simple|13=User:Immanuelle/Kumano Gongen|qq=}}
+* [[:en:Hashihime|Hashihime]]
+* {{ill|Ichikishima-hime|ja|イチキシマヒメ|1=Ichikishima-hime|lt=Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime|qq=}}
+* [[Benzaiten]]
+   | group12 = Shrines
+   | list12 =
+* {{ill|Hayachine Shrine|ja|早池峰神社|12=simple|13=User:Immanuelle/Hayachine Shrine|12=simple|13=User:Immanuelle/Hayachine Shrine|qq=}}
+* {{ill|Taki Shrine|ja|瀧澤神社|12=simple|13=User:Immanuelle/Taki Shrine|12=simple|13=User:Immanuelle/Taki Shrine|qq=}}
+* {{ill|Unakorowake Shrine|ja|宇奈己呂和気神社|12=simple|13=User:Immanuelle/Unojiro Wake Shrine|12=simple|13=User:Immanuelle/Unojiro Wake Shrine|qq=}}
+* {{ill|Hibiya Shrine|ja|日比谷神社|12=simple|13=User:Immanuelle/Hibiya Shrine|12=simple|13=User:Immanuelle/Hibiya Shrine|qq=}}
+* {{ill|Kifune Shrine|ja|貴船神社|12=simple|13=User:Immanuelle/Kifune Shrine|12=simple|13=User:Immanuelle/Kifune Shrine|qq=}}
+* {{ill|Rokkō Hime Daizen Shrine|lt=Rokkō Hime Daizen Shrine|lt=Rokkohime Shrine|ja|六甲比命神社|12=simple|13=User:Immanuelle/Rokkohime Shrine|12=simple|13=User:Immanuelle/Rokkohime Shrine|qq=}}
+* {{ill|Hashihime Shrine|ja|橋姫神社|12=simple|13=User:Immanuelle/Hashihime Shrine|12=simple|13=User:Immanuelle/Hashihime Shrine|qq=}}
+|group13 = Shrines linked to Amaterasu
+|list13 =
+* {{ill|Ise Grand Shrine|ja|伊勢神宮|12=simple|13=User:Immanuelle/Ise Grand Shrine|12=simple|13=User:Immanuelle/Ise Grand Shrine|qq=}} ({{ill|Aramatsuri-no-Miya|ja|荒祭宮|fr|Aramatsuri_no_miya|es|Aramatsuri no miya|12=simple|13=User:Immanuelle/Aramatsuri-no-Miya|12=simple|13=User:Immanuelle/Aramatsuri-no-Miya|qq=}}) -
+* {{ill|Hirota Shrine|ja|廣田神社|12=simple|13=User:Immanuelle/Hirota Shrine|12=simple|13=User:Immanuelle/Hirota Shrine|qq=}} 
+* {{ill|Yamaguchi Daijingu|ja|山口大神宮|12=simple|13=User:Immanuelle/Yamaguchi Daijingu|12=simple|13=User:Immanuelle/Yamaguchi Daijingu|qq=}}
+ }}
+
+ 
+ | group13 = {{ill|Hayakitsuhiko and Hayakitsuhime|ja|ハヤアキツヒコ・ハヤアキツヒメ|12=simple|13=User:Immanuelle/Hayakitsuhiko and Hayakitsuhime|12=simple|13=User:Immanuelle/Hayakitsuhiko and Hayakitsuhime|qq=}}
+ | list13 = {{Navbox|child
+|group1 = role
+|list1 = Awaits at river mouths or the ocean floor to swallow the impurities.
+   | group11 = Children
+   | list11 = 
+* {{ill|Mikumari|ja|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|zh|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|Mikumari|sv|Mikumari-no-Kami|lt=Ame-no-Mikumari-no-Kami|ja|天水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} (Heavenly Water Distribution Deity)
+* {{ill|Mikumari|ja|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|zh|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|Mikumari|sv|Mikumari-no-Kami|lt=Kuni-no-Mikumari-no-Kami|ja|国水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} (Earthly Water Distribution Deity)
+   | group12 = Mikumari Shrines
+   | list12 =
+* {{ill|Kono Shrine|ja|籠神社|12=simple|13=User:Immanuelle/Kono Shrine|12=simple|13=User:Immanuelle/Kono Shrine|qq=}}
+* {{ill|Uda Mikumari Shrine|ja|宇陀水分神社|12=simple|13=User:Immanuelle/Uda Mikumari Shrine|12=simple|13=User:Immanuelle/Uda Mikumari Shrine|qq=}}
+* {{ill|Yoshino Mikumari Shrine|ja|吉野水分神社|12=simple|13=User:Immanuelle/Yoshino Mikumari Shrine|12=simple|13=User:Immanuelle/Yoshino Mikumari Shrine|qq=}}
+* {{ill|Katsuragi Mikumari Shrine|ja|葛木水分神社|12=simple|13=User:Immanuelle/Katsuragi Mikumari Shrine|12=simple|13=User:Immanuelle/Katsuragi Mikumari Shrine|qq=}}
+* {{ill|Tsuge Mikumari Shrine|ja|都祁水分神社|12=simple|13=User:Immanuelle/Tsuge Mikumari Shrine|12=simple|13=User:Immanuelle/Tsuge Mikumari Shrine|qq=}}
+* {{ill|Take Mikumari Shrine|ja|建水分神社|1=Take Mikumari Shrine|12=simple|13=User:Immanuelle/Take Mikumari Shrine|13=User:Immanuelle/Take Mikumari Shrine|12=simple|13=User:Immanuelle/Take Mikumari Shrine|13=User:Immanuelle/Take Mikumari Shrine|qq=}}
+* {{ill|Todoroki-hime-no-Mikoto Shrine|ja|止止呂支比売命神社|12=simple|13=User:Immanuelle/Todoroki-hime-no-Mikoto Shrine|12=simple|13=User:Immanuelle/Todoroki-hime-no-Mikoto Shrine|qq=}}
+* {{ill|Sōja Mikumari Shrine|ja|惣社水分神社|12=simple|13=User:Immanuelle/Sōja Mikumari Shrine|12=simple|13=User:Immanuelle/Sōja Mikumari Shrine|qq=}}
+* {{ill|Migukurumitama Shrine|ja|美具久留御魂神社|12=simple|13=User:Immanuelle/Migukurumitama Shrine|12=simple|13=User:Immanuelle/Migukurumitama Shrine|qq=}}
+ }}
+
+ 
+ | group14 = {{ill|Ibukidonushi no Kami|lt=Ibukidonushi no Kami|lt=Ibukidonushi|ja|気吹戸主神|12=simple|13=User:Immanuelle/Ibukidonushi|12=simple|13=User:Immanuelle/Ibukidonushi|qq=}}
+ | list14 = {{Navbox|child
+|group1 = role
+|list1 = Expels the absorbed impurities to {{ill|Ne-no-kuni|ja|根の国|12=simple|13=User:Immanuelle/Ne-no-kuni|12=simple|13=User:Immanuelle/Ne-no-kuni|qq=}} (the underworld).
+   | group11 = Aliases
+   | list11 = 
+* {{ill|Kamuna'obi|ja|神直日神|12=simple|13=User:Immanuelle/Kamunaobi no Kami|12=simple|13=User:Immanuelle/Kamunaobi no Kami|qq=}}
+* {{ill|Ōnaobi no Kami|ja|大直日神|12=simple|13=User:Immanuelle/Ōnaobi no Kami|12=simple|13=User:Immanuelle/Ōnaobi no Kami|qq=}}
+   | group12 = Shrines
+   | list12 =
+* {{ill|Kego Shrine|ja|警固神社|12=simple|13=User:Immanuelle/Kego Shrine|12=simple|13=User:Immanuelle/Kego Shrine|qq=}}
+* {{ill|Sakurai Shrine (Itoshima)|ja|桜井神社 (糸島市)|12=simple|13=User:Immanuelle/Sakurai Shrine (Itoshima)|12=simple|13=User:Immanuelle/Sakurai Shrine (Itoshima)|qq=}}
+* {{ill|Hayasuhime Shrine|ja|早吸日女神社|12=simple|13=User:Immanuelle/Hayasuhime Shrine|12=simple|13=User:Immanuelle/Hayasuhime Shrine|qq=}}
+* {{ill|Sasamuta Shrine|ja|西寒多神社|1=Sasamuta Shrine|12=simple|13=User:Immanuelle/Sasamuta Shrine|13=User:Immanuelle/Sasamuta Shrine|12=simple|13=User:Immanuelle/Sasamuta Shrine|13=User:Immanuelle/Sasamuta Shrine|qq=}}
+* {{ill|Dewa Shrine|ja|出羽神社|12=simple|13=User:Immanuelle/Dewa Shrine|12=simple|13=User:Immanuelle/Dewa Shrine|qq=}}
+* {{ill|Udo Jingū|ja|鵜戸神宮|12=simple|13=User:Immanuelle/Udo Jingū|12=simple|13=User:Immanuelle/Udo Jingū|qq=}}
+|group13 = Shrines enshrined in Sessha
+|list13 =
+* {{ill|Ikasuri Shrine|ja|坐摩神社|12=simple|13=User:Immanuelle/Ikasuri Shrine|12=simple|13=User:Immanuelle/Ikasuri Shrine|qq=}}
+* {{ill|Ayatokunaka Shrine|ja|綾戸国中神社|12=simple|13=User:Immanuelle/Ayatokunaka Shrine|12=simple|13=User:Immanuelle/Ayatokunaka Shrine|qq=}}
+* {{ill|Itsukushima Shrine|ja|厳島神社|12=simple|13=User:Immanuelle/Itsukushima Shrine|12=simple|13=User:Immanuelle/Itsukushima Shrine|qq=}}
+* {{ill|Isonokami Jingu|lt=Isonokami Jingu|lt=Isonokami Shrine|ja|石上神宮|12=simple|13=User:Immanuelle/Isonokami Shrine|12=simple|13=User:Immanuelle/Isonokami Shrine|qq=}}
+ }}
+
+ 
+ | group15 = {{ill|Hayasasurahime|ja|速佐須良比売神|12=simple|13=User:Immanuelle/Hayasasurahime|12=simple|13=User:Immanuelle/Hayasasurahime|qq=}}
+ | list15 = {{Navbox|child
+|group1=role
+|list1 = Wanders through the underworld to dissolve the impurities entirely.
+   | group11 = Aliases
+   | list11 = 速佐須良比売
+   | group12 = Shrines
+   | list12 =
+* {{ill|Hibiya Shrine|ja|日比谷神社|12=simple|13=User:Immanuelle/Hibiya Shrine|12=simple|13=User:Immanuelle/Hibiya Shrine|qq=}}
+* {{ill|Katayama Shrine (Kameyama)|ja|片山神社|12=simple|13=User:Immanuelle/Katayama Shrine (Kameyama)|12=simple|13=User:Immanuelle/Katayama Shrine (Kameyama)|qq=}}
+* {{ill|Nijūgohashira Shrine|ja|二十五柱神社|12=simple|13=User:Immanuelle/Nijūgohashira Shrine|12=simple|13=User:Immanuelle/Nijūgohashira Shrine|qq=}}
+* {{ill|Urashima Shrine|ja|浦嶋神社|12=simple|13=User:Immanuelle/Urashima Shrine|12=simple|13=User:Immanuelle/Urashima Shrine|qq=}}
+* {{ill|Sakunado Shrine|ja|佐久奈度神社|12=simple|13=User:Immanuelle/Sakunado Shrine|12=simple|13=User:Immanuelle/Sakunado Shrine|qq=}}
+* {{ill|Hayakawa Shrine (Saito)|ja|速川神社|12=simple|13=User:Immanuelle/Hayakawa Shrine (Saito)|12=simple|13=User:Immanuelle/Hayakawa Shrine (Saito)|qq=}}
+ }}
+}}
+}}
+<noinclude>
+
+[[en:Template:Munakata Faith]]{{wikidata link|Q123982008|en|template:Munakata Faith}}
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

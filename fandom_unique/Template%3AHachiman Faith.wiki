@@ -1,0 +1,102 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AHachiman_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+{{Navbox
+| name  = Hachiman Faith
+| title = [[Hachiman shrine|Hachiman shrines]]
+| titlestyle= background:#767C6B; color:#fff;
+| listclass = hlist
+| image = [[File:Sōgyō Hachiman.jpg|150px|link=|alt=]]
+|groupstyle = background:#8f9484; color:#fff;
+| group1 = Gods
+| list1 = {{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Main Deities
+ |list1 =
+* [[Hachiman]]
+** [[:en:Emperor Ōjin|Emperor Ōjin]]
+ |group2 = Minor gods
+ |list2 =
+* [[:en:Emperor Chūai|Emperor Chūai]]
+* [[:en:Empress Jingū|Empress Jingū]]
+* [[Takenouchi no Sukune]]
+* [[Nakatsuhime]]
+* [[:en:Minamoto no Yoshiie|Minamoto no Yoshiie]]
+
+}}
+| group2 = Places
+| list2 ={{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Three Major Hachiman<br> Shrines of Japan<br> ({{linktext|三|大|八幡|宮}})<br>‡not always included
+ |list1 =
+* [[Usa Jingū]]
+* [[Iwashimizu Hachimangū]]
+* [[Hakozaki Shrine]]‡
+* [[Tsurugaoka Hachimangū]]‡
+
+ |group2 = [[Beppyo Shrine]]
+ |list2 =
+* {{ill|Igusa Hachimangu|ja|井草八幡宮|12=simple|13=User:Immanuelle/Igusa Hachimangu|12=simple|13=User:Immanuelle/Igusa Hachimangu|qq=}}
+* [[Fukuyama Hachimangū]] 
+* [[Hakodate Hachimangū|Hakodate Hachiman Shrine]] 
+* [[Kameyama Hachimangū]] 
+* [[Kōzu-gū]]
+* [[Morioka Hachimangū]] 
+* [[:en:Ōmiya Hachimangū (Tokyo)|Ōmiya Hachimangū (Tokyo)]] 
+* [[Ōsaki Hachimangū]] 
+* [[Shikaumi Shrine]]
+* [[Umi Hachiman-gū]] 
+* [[Fujisaki Hachimangū]]
+* {{ill|Sakurayama Hachimangu|ja|桜山八幡宮|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|qq=}}
+
+|group3= other shrines
+|list3=
+* [[:en:Hatogamine Hachiman Shrine|Hatogamine Hachiman Shrine]] 
+* [[Iino Hachimangū]] 
+* [[Kotohiki Hachimangū]]
+* [[Miyake Hachimangū]] 
+* [[:en:Shiraoi Hachiman Shrine|Shiraoi Hachiman Shrine]] 
+* [[Shiroyama Hachimangū]] 
+* [[Suda Hachiman Shrine]]
+* [[Tomioka Hachiman Shrine]] 
+* [[:en:Tamukeyama Hachiman Shrine|Tamukeyama Hachiman Shrine]] 
+* [[:en:Tsuboi Hachimangū|Tsuboi Hachimangū]]
+* [[Ōmiya Hachiman Shrine (Hyōgo)]] 
+* [[:en:Ōshio Hachiman Shrine|Ōshio Hachiman Shrine]] 
+* [[:en:Sapporo Hachimangū|Sapporo Hachimangū]] 
+* [[:en:Hachiman Jinja (Saipan)|Saipan Hachiman Shrine]] 
+ |group4= Misc
+ |list4=
+* [[Kōra taisha]]
+* [[:en:Mount Hachimantai|Mount Hachimantai]]
+* [[:en:Jōten-ji|Jōten-ji]]
+* [[Kaijin Shrine]]
+}}
+
+|group3= [[:Category:Shrines_dedicated_to_empress_Jingū|Shrines dedicated to empress Jingū]]
+|list3=
+* [[Furogu Shrine]]
+* [[Fuyo Jingū]]
+* [[Kashii-gū]]
+* [[Kehi Jingū|Kehi Shrine]]
+* [[Kotohiki Hachimangū]]
+* [[Miyajidake Shrine]]
+* [[Moto-Sumiyoshi Shrine]]
+* {{ill|Mukuhashi Sōja|ja|椋橋総社|12=simple|13=User:Immanuelle/Mukuhashi Sōja|12=simple|13=User:Immanuelle/Mukuhashi Sōja|qq=}}
+* [[Shikaumi Shrine]]
+* [[Suda Hachiman Shrine]]
+* [[Sumiyoshi sanjin]]
+* [[Sumiyoshi Shrine (Fukuoka)]]
+* [[Sumiyoshi Shrine (Shimonoseki)]]
+* [[Sumiyoshi-taisha]]
+* [[:en:Tsuboi Hachimangū|Tsuboi Hachimangū]]
+* [[Umi Hachiman-gū]]
+* [[Kōzu-gū]]
+* {{ill|Yagi Shrine|ja|夜疑神社|12=simple|13=User:Immanuelle/Yagi Shrine|12=simple|13=User:Immanuelle/Yagi Shrine|qq=}}
+}}
+<noinclude>{{wikidata link|Q125475202|en|Hachiman Faith|en|Template:Hachiman Faith|fr|Modèle:Palette Foi Hachiman|check_date=2026-05-12}}
+[[Category:Buddhism in Japan templates]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

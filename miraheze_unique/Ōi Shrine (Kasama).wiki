@@ -1,4 +1,4 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+
 * changes.
 * {{ill|Ōi Shrine (Kasama)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kasama)|qq=}}
 （Ibaraki Prefecture [[Kasama, Ibaraki|Kasama City]]） - Shikinaisha candidate shrine.
@@ -21,7 +21,6 @@
 
 {{Disambiguation]]
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Oi Shrine (Q11432215)|lt=Oi Shrine|qid=Q11432215}} — Kitagata
@@ -64,7 +63,6 @@
 * {{ill|Ōi Shrine (Q134957747)|lt=Ōi Shrine|qid=Q134957747}} — Kawanehon
 * {{ill|Ōi Shrine (Q134958111)|lt=Ōi Shrine|qid=Q134958111}} — Kawanehon
 * {{ill|Ōi Shrine (Q134989346)|lt=Ōi Shrine|qid=Q134989346}} — Mannō-chō
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|大井神社 (笠間市)|version=91161247|comment=Imported full ja history}}
 
@@ -72,11 +70,11 @@
 
 {{draft categories|
 
-{{wikidata link|Q66564749|co|commons:Category:Oi-jinja (Kasama)|ja|大井神社 (笠間市)|ja|大井神社 (島田市)|ja|大井神社 (名古屋市)|ja|大井神社 (愛西市)|ja|大井神社 (北方町)|ja|大井神社 (京都市)|ja|大井神社 (亀岡市)|ja|大井神社|en|Ōi Shrine (Kasama)}}
+{{wikidata link|Q66564749|co|commons:Category:Oi-jinja (Kasama)|ja|大井神社 (笠間市)|ja|大井神社 (島田市)|ja|大井神社 (名古屋市)|ja|大井神社 (愛西市)|ja|大井神社 (北方町)|ja|大井神社 (京都市)|ja|大井神社 (亀岡市)|ja|大井神社|en|Ōi Shrine (Kasama)|check_date=2026-05-12}}
 
 == Accidentally Overwritten Content ==
 
-{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama|qid=Q845851|1=Kasama, Ibaraki}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
+{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama, Ibaraki|qid=Q845851}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
 
 {{Shrine
 |Name   = Ōi Shrine
@@ -149,7 +147,7 @@ File:Oi Jinja Kasama Oyakosugi.jpg|Parent and Child Cedars (Sacred tree)
 {{Commons category|Oi-jinja (Kasama)}}
 {{wikidata link|Q66564749}}
 == Accidentally Overwritten Content ==
-{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama|qid=Q845851|1=Kasama, Ibaraki}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
+{{Infobox religious building|image=File:Oi Jinja Kasama Haiden.jpg|prefecture={{ill|Kasama, Ibaraki|qid=Q845851}}|coordinates={{Coord|36.40111111111111|N|140.27027777777778|E|region:JP_type:landmark}}}}
 
 {{Shrine
 |Name   = Ōi Shrine

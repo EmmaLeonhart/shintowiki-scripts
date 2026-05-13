@@ -1,0 +1,103 @@
+{{Navbox
+| name  = Japanese new religions
+| title = [[:en:Japanese new religions|Japanese new religions]]
+| listclass = hlist
+| state  = {{{state|autocollapse}}}
+
+| group1 = [[Shinto]]-based
+| list1  =
+* [[Ijun]]
+* [[Makoto no Michi]]
+* [[Ōyamanezunomikoto Shinji Kyōkai]]
+* [[Shinmei Aishinkai]]
+* [[Shinreikyo]]
+* [[Shōroku Shintō Yamatoyama]]
+* [[Tenshō Kōtai Jingūkyō]]
+* [[Uchūshinkyō Kōmyōjin]]
+* [[Zenrinkyō]]
+
+{{Navbox|subgroup
+|group1 = [[Sect Shinto]]
+|list1 =
+* [[:en:Konkokyo|Konkokyo]]
+* [[Kurozumikyō]]
+
+|group2 = [[Tenrikyo]]-based
+|list2 =
+* [[Tenrikyo]]
+* [[:en:Honmichi|Honmichi]]
+* [[Honbushin]]
+* [[Kami Ichijokyo]]
+* [[Sekai Shindokyo]]
+* [[:en:Tenrin-Ō Meisei Kyōdan|Tenrin-Ō Meisei Kyōdan]]
+* [[Ide Kuniko|Asahi Jinja]]
+
+|group3 = [[Oomoto]]-based
+|list3 =
+* [[Oomoto]]
+* [[:en:Ananaikyo|Ananaikyo]]
+* [[Shintō Tenkōkyo]]
+* [[:en:Seicho-no-Ie|Seicho-no-Ie]]
+* [[World Mate]]
+
+{{Navbox|subgroup
+|group1 = "[[Johrei|Divine light]]" religions
+|list1 =
+* [[:en:Church of World Messianity|Church of World Messianity]]
+* [[:en:Shinji Shumeikai|Shinji Shumeikai]]
+* [[Mahikari movement]]
+** [[:en:Sukyo Mahikari|Sukyo Mahikari]]
+** [[World Divine Light]]
+}}
+}}
+
+| group2 = [[:en:Buddhism in Japan|Buddhism]]-based
+| list2  =
+* [[:en:Agon Shu|Agon Shu]]
+* [[Gedatsukai]]
+* [[Higashikuni-kyo]]
+* [[:en:Shinnyo-en|Shinnyo-en]]
+
+{{Navbox|subgroup
+|group1 = [[:en:Nichiren Buddhism|Nichiren]]-based
+|list1 =
+* [[:en:Honmon Butsuryū-shū|Honmon Butsuryū-shū]]
+* [[Kenshōkai]]
+* [[:en:Kokuchūkai|Kokuchūkai]]
+* [[Nipponzan-Myōhōji-Daisanga]]
+* [[Shōshinkai]]
+* [[:en:Soka Gakkai|Soka Gakkai]]
+
+{{Navbox|subgroup
+|group1 = [[Reiyūkai]]-based
+|list1 =
+* [[Reiyūkai]]
+* [[:en:Bussho Gonenkai Kyōdan|Bussho Gonenkai Kyōdan]]
+* [[Myōchikai Kyōdan]]
+* [[Myōdōkai Kyōdan]]
+* [[:en:Risshō Kōsei Kai|Risshō Kōsei Kai]]
+}}
+}}
+
+| group3 = Others
+| list3  =
+* [[:en:Aum Shinrikyo|Aum Shinrikyo]]
+* [[Ennokyo]]
+* [[Happy Science]]
+* [[Hikari no Wa]]
+* [[Ho No Hana]]
+* [[PL Kyodan]]
+* [[Pana Wave]]
+* [[Tensokokyo]]
+
+}}<noinclude>
+
+[[Category:Religion and belief navigational boxes]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Japan navigational boxes]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+</noinclude>

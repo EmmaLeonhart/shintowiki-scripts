@@ -1,4 +1,4 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Yutani_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24947213578|time triggered pipeline]] -->
 
 '''Yutani Shrine''' (湯谷神社)
@@ -13,15 +13,13 @@
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|湯谷神社 (Q134955542)|lt=湯谷神社|qid=Q134955542}} — Izunokuni
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|湯谷神社|version=99864196|comment=Imported full ja history}}
 
-{{wikidata link|Q128845623|ja|湯谷神社}}
+{{wikidata link|Q128845623|ja|湯谷神社|check_date=2026-05-12}}
 [[Category:Shrine disambiguations]]
 [[Category:Special:LonelyPages 26 May 2025]]
 [[Category:Wikidata has short description]]

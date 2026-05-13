@@ -291,9 +291,6 @@
 * {{ill|Hikawa Shrine (Q11391840)|lt=Hikawa Shrine|qid=Q11391840}} — Yakumo 2-chōme
 * {{ill|Hikawa Shrine (Q115033516)|lt=Hikawa Shrine|qid=Q115033516}} — Kawaguchi
 * {{ill|Hikawa Shrine (Q115034435)|lt=Hikawa Shrine|qid=Q115034435}} — Kawaguchi
-* {{ill|Hikawa Shrine (Q115041266)|lt=Hikawa Shrine|qid=Q115041266}} — Kawaguchi
-* {{ill|Hikawa Shrine (Q115063604)|lt=Hikawa Shrine|qid=Q115063604}} — Minuma-ku
-* {{ill|Hikawa Shrine (Q115063644)|lt=Hikawa Shrine|qid=Q115063644}} — Minuma-ku
 * {{ill|Hikawa Shrine (Q11549603)|lt=Hikawa Shrine|qid=Q11549603}} — Ageo
 * {{ill|Hikawa Shrine (Q11549604)|lt=Hikawa Shrine|qid=Q11549604}} — Nakano
 * {{ill|Hikawa Shrine (Q11549605)|lt=Hikawa Shrine|qid=Q11549605}} — Nakano
@@ -304,24 +301,6 @@
 * {{ill|Hikawa Shrine (Q11549611)|lt=Hikawa Shrine|qid=Q11549611}} — Minato
 * {{ill|Hikawa Shrine (Q11549612)|lt=Hikawa Shrine|qid=Q11549612}} — Minato
 * {{ill|Hikawa Shrine (Q11549614)|lt=Hikawa Shrine|qid=Q11549614}} — Hikawachō
-* {{ill|Hikawa Shrine (Q117413141)|lt=Hikawa Shrine|qid=Q117413141}} — Sōka-shi
-* {{ill|Hikawa Shrine (Q117864770)|lt=Hikawa Shrine|qid=Q117864770}} — Yashio
-* {{ill|Hikawa Shrine (Q119929559)|lt=Hikawa Shrine|qid=Q119929559}} — Kodaira
-* {{ill|Hikawa Shrine (Q124482354)|lt=Hikawa Shrine|qid=Q124482354}} — Hasuda
-* {{ill|Hikawa Shrine (Q125880913)|lt=Hikawa Shrine|qid=Q125880913}} — Fujimino
-* {{ill|Hikawa Shrine (Q128866573)|lt=Hikawa Shrine|qid=Q128866573}} — Fujimi
-* {{ill|Hikawa Shrine (Q128866575)|lt=Hikawa Shrine|qid=Q128866575}} — Fujimi
-* {{ill|Hikawa Shrine (Q128866577)|lt=Hikawa Shrine|qid=Q128866577}} — Fujimi
-* {{ill|Hikawa Shrine (Q128866594)|lt=Hikawa Shrine|qid=Q128866594}} — Ageo
-* {{ill|Hikawa Shrine (Q128866597)|lt=Hikawa Shrine|qid=Q128866597}} — Ageo
-* {{ill|Hikawa Shrine (Q128866599)|lt=Hikawa Shrine|qid=Q128866599}} — Ageo
-* {{ill|Hikawa Shrine (Q128866605)|lt=Hikawa Shrine|qid=Q128866605}} — Ageo
-* {{ill|Hikawa Shrine (Q128866608)|lt=Hikawa Shrine|qid=Q128866608}} — Ageo
-* {{ill|Hikawa Shrine (Q128866612)|lt=Hikawa Shrine|qid=Q128866612}} — Ageo
-* {{ill|Hikawa Shrine (Q128866627)|lt=Hikawa Shrine|qid=Q128866627}} — Kitamoto
-* {{ill|Hikawa Shrine (Q128866630)|lt=Hikawa Shrine|qid=Q128866630}} — Kitamoto
-* {{ill|Hikawa Shrine (Q128866634)|lt=Hikawa Shrine|qid=Q128866634}} — Kitamoto
-* {{ill|Hikawa Shrine (Q128866637)|lt=Hikawa Shrine|qid=Q128866637}} — Kitamoto
 * {{ill|Hikawa Shrine (Q128866657)|lt=Hikawa Shrine|qid=Q128866657}} — Kōnosu-shi
 * {{ill|Hikawa Shrine (Q128866665)|lt=Hikawa Shrine|qid=Q128866665}} — Kōnosu-shi
 * {{ill|Hikawa Shrine (Q128866863)|lt=Hikawa Shrine|qid=Q128866863}} — Asaka
@@ -341,6 +320,30 @@
 * {{ill|Hikawa Shrine (Q128866909)|lt=Hikawa Shrine|qid=Q128866909}} — Okegawa
 * {{ill|Hikawa Shrine (Q128866912)|lt=Hikawa Shrine|qid=Q128866912}} — Okegawa
 * {{ill|Hikawa Shrine (Q134602897)|lt=Hikawa Shrine|qid=Q134602897}} — Inzai
+* {{ill|Hikawa Shrine (Q134885958)|lt=Hikawa Shrine|qid=Q134885958}} — Tokorozawa
+* {{ill|Hikawa Shrine (Q134885984)|lt=Hikawa Shrine|qid=Q134885984}} — Kazo
+* {{ill|Hikawa Shrine (Q134887141)|lt=Hikawa Shrine|qid=Q134887141}} — Niiza
+* {{ill|Hikawa Shrine (Q134887162)|lt=Hikawa Shrine|qid=Q134887162}} — Fujimino
+* {{ill|Hikawa Shrine (Q134887202)|lt=Hikawa Shrine|qid=Q134887202}} — Higashimatsuyama
+* {{ill|Hikawa Shrine (Q134887203)|lt=Hikawa Shrine|qid=Q134887203}} — Yoshimi
+* {{ill|Hikawa Shrine (Q134887212)|lt=Hikawa Shrine|qid=Q134887212}} — Kawaguchi
+* {{ill|Hikawa Shrine (Q134887331)|lt=Hikawa Shrine|qid=Q134887331}} — Kawagoe
+* {{ill|Hikawa Shrine (Q134887332)|lt=Hikawa Shrine|qid=Q134887332}} — Kawajima
+* {{ill|Hikawa Shrine (Q134887346)|lt=Hikawa Shrine|qid=Q134887346}} — Kōnosu-shi
+* {{ill|Hikawa Shrine (Q134887363)|lt=Hikawa Shrine|qid=Q134887363}} — Hatoyama
+* {{ill|Hikawa Shrine (Q134887372)|lt=Hikawa Shrine|qid=Q134887372}} — Higashimatsuyama
+* {{ill|Hikawa Shrine (Q134887373)|lt=Hikawa Shrine|qid=Q134887373}} — Yoshimi
+* {{ill|Hikawa Shrine (Q134887377)|lt=Hikawa Shrine|qid=Q134887377}} — Ogawa
+* {{ill|Hikawa Shrine (Q135000783)|lt=Hikawa Shrine|qid=Q135000783}} — Fujimi
+* {{ill|Hikawa Shrine (Q135000794)|lt=Hikawa Shrine|qid=Q135000794}} — Kawagoe
+* {{ill|Hikawa Shrine (Q135000818)|lt=Hikawa Shrine|qid=Q135000818}} — Okegawa
+* {{ill|Hikawa Shrine (Q135069537)|lt=Hikawa Shrine|qid=Q135069537}} — Iruma district
+* {{ill|Hikawa Shrine (Q135153703)|lt=Hikawa Shrine|qid=Q135153703}} — Bando
+* {{ill|Hikawa Shrine (Q135155497)|lt=Hikawa Shrine|qid=Q135155497}} — Hokota
+* {{ill|Hikawa Shrine (Q135194738)|lt=Hikawa Shrine|qid=Q135194738}} — Echizen Province
+* {{ill|Hikawa Shrine (Q135194744)|lt=Hikawa Shrine|qid=Q135194744}} — Echizen Province
+* {{ill|Hikawa Shrine (Q135259409)|lt=Hikawa Shrine|qid=Q135259409}} — Sakura
+* {{ill|Hikawa Shrine (Q135260590)|lt=Hikawa Shrine|qid=Q135260590}} — Oyama
 * {{ill|Hikawa Shrine (Q21019410)|lt=Hikawa Shrine|qid=Q21019410}} — Setagaya
 * {{ill|Hikawa Shrine (Q5760456)|lt=Hikawa Shrine|qid=Q5760456}}
 * {{ill|Hikawa Shrine (Q703633)|lt=Hikawa Shrine|qid=Q703633}} — Adachi district
@@ -357,29 +360,23 @@
 * {{ill|Hikawa Shrine (Q97613675)|lt=Hikawa Shrine|qid=Q97613675}} — Itabashi
 * {{ill|Hikawa Shrine (Q97613676)|lt=Hikawa Shrine|qid=Q97613676}} — Itabashi
 * {{ill|Hikawa Shrine (Q97613677)|lt=Hikawa Shrine|qid=Q97613677}} — Itabashi
-* {{ill|Hikawa Shrine (Chuo-ku) (Q115040653)|lt=Hikawa Shrine (Chuo-ku)|qid=Q115040653}} — Chūō-ku
 * {{ill|Hikawa Shrine (Kamiokubo, Sakura, Saitama) (Q114977674)|lt=Hikawa Shrine (Kamiokubo, Sakura, Saitama)|qid=Q114977674}} — Sakura-ku
 * {{ill|Hikawa Shrine (Kawaguchi) (Q114978195)|lt=Hikawa Shrine (Kawaguchi)|qid=Q114978195}} — Kawaguchi
+* {{ill|Hikawa Shrine (Kugedo, Kawagoe) (Q134887161)|lt=Hikawa Shrine (Kugedo, Kawagoe)|qid=Q134887161}} — Kawagoe
 * {{ill|Hikawa Shrine (Minami-ku) (Q114801516)|lt=Hikawa Shrine (Minami-ku)|qid=Q114801516}} — Minami-ku
 * {{ill|Hikawa Shrine (Minuma-ku) (Q115038685)|lt=Hikawa Shrine (Minuma-ku)|qid=Q115038685}} — Minuma-ku
 * {{ill|Hikawa Shrine (Nerima-ku) (Q11549615)|lt=Hikawa Shrine (Nerima-ku)|qid=Q11549615}} — Nerima
-* {{ill|Hikawa Shrine (Nishi-ku) (Q115114114)|lt=Hikawa Shrine (Nishi-ku)|qid=Q115114114}} — Nishi-ku
 * {{ill|Hikawa Shrine (Sakura-ku) (Q114950306)|lt=Hikawa Shrine (Sakura-ku)|qid=Q114950306}} — Sakura-ku
 * {{ill|Hikawa Shrine (Shibuya-ku) (Q11549613)|lt=Hikawa Shrine (Shibuya-ku)|qid=Q11549613}} — Shibuya
 * {{ill|Hikawa Shrine (Toda) (Q114978113)|lt=Hikawa Shrine (Toda)|qid=Q114978113}} — Toda
 * {{ill|Hikawa Shrine (Urawa-ku) (Q22120087)|lt=Hikawa Shrine (Urawa-ku)|qid=Q22120087}} — Urawa-ku
 * {{ill|Hikawa Shrine (Ōmiya-ku) (Q114978615)|lt=Hikawa Shrine (Ōmiya-ku)|qid=Q114978615}} — Ōmiya-ku
-* {{ill|Komurada Hikawa Shrine (Q115194250)|lt=Komurada Hikawa Shrine|qid=Q115194250}} — Ōmiya-ku
 * {{ill|Nakacho Hikawa Shrine (Q97203419)|lt=Nakacho Hikawa Shrine|qid=Q97203419}} — Adachi
 * {{ill|Nishiasuma Hikawa Shrine (Q115034565)|lt=Nishiasuma Hikawa Shrine|qid=Q115034565}} — Nishi-ku
-* {{ill|Oto Hikawa Shrine (Q115040730)|lt=Oto Hikawa Shrine|qid=Q115040730}} — Chūō-ku
 * {{ill|Oyaba Hikawa Shrine (Q115038589)|lt=Oyaba Hikawa Shrine|qid=Q115038589}} — Minami-ku
-* {{ill|Oyaguchi Hikawa Shrine (Q115040917)|lt=Oyaguchi Hikawa Shrine|qid=Q115040917}} — Minami-ku
 * {{ill|Sagamihara Hikawa Shrine (Q38277009)|lt=Sagamihara Hikawa Shrine|qid=Q38277009}} — Sagamihara
-* {{ill|Takagi Hikawa Shrine (Q115041081)|lt=Takagi Hikawa Shrine|qid=Q115041081}} — Nishi-ku
 * {{ill|Takao Hikawa Shrine (Q44393950)|lt=Takao Hikawa Shrine|qid=Q44393950}} — Takaomachi
 * {{ill|Toyotama Hikawa Shrine (Q11549616)|lt=Toyotama Hikawa Shrine|qid=Q11549616}} — Nerima
-* {{ill|Tsuchiya Hikawa Shrine (Q115194219)|lt=Tsuchiya Hikawa Shrine|qid=Q115194219}} — Nishi-ku
 <!-- END: auto-generated Wikidata shrine list -->
 
 {{wikidata link|Q5760456|en|Hikawa Shrine|ja|氷川神社 (曖昧さ回避)|th|ศาลเจ้าฮิกาวะ|simple|user:immanuelle/Hikawa Shrines|en|Hikawa Shrines|en|draft:Hikawa Shrines|ja|氷川神社}}[[ja:氷川神社 (曖昧さ回避)]][[en:Hikawa Shrine]][[th:ศาลเจ้าฮิกาวะ]][[da:Q5760456]]

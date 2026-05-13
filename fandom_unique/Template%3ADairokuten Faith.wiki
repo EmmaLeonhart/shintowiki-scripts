@@ -1,0 +1,38 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3ADairokuten_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25397554627|time triggered pipeline]] -->
+{{Navbox
+| name  = Dairokuten Faith
+| title = {{ill|Demon King of the Sixth Heaven (Dairokuten Mao)|ja|天魔|1=Demon King of the Sixth Heaven|lt=Demon King of the Sixth Heaven|lt=Sixth Heavenly Demon King|lt_ja=第六天魔王|lt=Dairokuten Faith|12=simple|13=User:Immanuelle/Demon King of the Sixth Heaven (Dairokuten Mao)|13=User:Immanuelle/Demon King of the Sixth Heaven|12=simple|13=User:Immanuelle/Demon King of the Sixth Heaven (Dairokuten Mao)|13=User:Immanuelle/Demon King of the Sixth Heaven|qq=}}
+| titlestyle = background:#767C6B; color:#fff;
+| listclass = hlist
+| image = [[File:Dairokuten jinjya (Natori, Miyagi) 01.jpg|150px|link=|alt=]]
+| groupstyle = background:#8f9484; color:#fff;
+
+ | group1 = Deities
+ | list1 =
+* {{ill|Omodaru and Ayakashikone|ja|阿夜訶志古泥神|12=simple|13=User:Immanuelle/Omodaru and Ayakashikone|12=simple|13=User:Immanuelle/Omodaru and Ayakashikone|qq=}} 
+* {{ill|Demon King of the Sixth Heaven (Dairokuten Mao)|ja|天魔|1=Demon King of the Sixth Heaven|lt=Demon King of the Sixth Heaven|lt=Sixth Heavenly Demon King|lt_ja=第六天魔王|12=simple|13=User:Immanuelle/Demon King of the Sixth Heaven (Dairokuten Mao)|13=User:Immanuelle/Demon King of the Sixth Heaven|12=simple|13=User:Immanuelle/Demon King of the Sixth Heaven (Dairokuten Mao)|13=User:Immanuelle/Demon King of the Sixth Heaven|qq=}}
+
+| group2 = {{ill|Dairokuten Shrine|ja|第六天神社|lt=Dairokuten Shrines|12=simple|13=User:Immanuelle/Dairokuten Shrine|12=simple|13=User:Immanuelle/Dairokuten Shrine|qq=}}
+| list2 = 
+* {{ill|Dairokuten (Hannō)|ja|大六天 (飯能市)|12=simple|13=User:Immanuelle/Dairokuten (Hannō)|12=simple|13=User:Immanuelle/Dairokuten (Hannō)|qq=}}
+
+* {{ill|Dairokuten Sakaki Shrine|ja|第六天榊神社|12=simple|13=User:Immanuelle/Dairokuten Sakaki Shrine|12=simple|13=User:Immanuelle/Dairokuten Sakaki Shrine|qq=}}
+* 
+* {{ill|Dairokuten Shrine (Chigasaki)|ja|第六天神社 (茅ヶ崎市)|12=simple|13=User:Immanuelle/Dairokuten Shrine (Chigasaki)|12=simple|13=User:Immanuelle/Dairokuten Shrine (Chigasaki)|qq=}}
+* {{ill|Dairokuten Shrine (Suginami)|ja|第六天神社 (杉並区)|12=simple|13=User:Immanuelle/Dairokuten Shrine (Suginami)|12=simple|13=User:Immanuelle/Dairokuten Shrine (Suginami)|qq=}}
+* {{ill|Musashi Dairokuten Shrine|ja|武蔵第六天神社|12=simple|13=User:Immanuelle/Musashi Dairokuten Shrine|12=simple|13=User:Immanuelle/Musashi Dairokuten Shrine|qq=}}
+| group3 = other
+|list3=
+* {{ill|Dairokuten Kofun|ja|第六天古墳|12=simple|13=User:Immanuelle/Dairokuten Kofun|12=simple|13=User:Immanuelle/Dairokuten Kofun|qq=}}
+
+}}
+<noinclude>
+
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Shinto cult templates]]
+[[Category:Templates missing wikidata]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

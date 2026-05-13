@@ -1,0 +1,93 @@
+{{Navbox
+|name = 中世神道
+|title = [[神道の歴史#中世|中世神道]]
+|listclass = hlist hlist-hyphen
+
+|group1 = 世界観
+|list1 = {{Navbox|child
+|group1 = 哲学
+|list1 = {{Navbox|child
+|group1 = [[神仏習合]]
+|list1 = 
+* [[護法善神]]
+* [[神仏習合#神宮寺の建立|神宮寺]]
+* [[本地垂迹説]]
+** [[神道集]]
+* [[神道灌頂]]
+* [[御霊信仰]]
+* [[神国思想]]
+** [[慈遍]]
+|group2 = 流派
+|list2 =
+* [[両部神道]]
+* [[伊勢神道]]
+** [[度会常昌]]
+** [[度会家行]]
+** [[倭姫命世記]]
+* [[山王神道]]
+* [[吉田神道]]
+** [[吉田兼倶]]
+** [[神道大意]]
+* [[三輪流神道]]
+* [[御流神道]]
+}}
+|group2 = 神話
+|list2 =
+* [[中世日本紀]]
+* [[神皇正統記]]
+** [[北畠親房]]
+
+|group3 = 神々
+|list3 =
+* [[牛頭天王]]
+* [[蔵王権現]]
+* [[清瀧権現]]
+* [[赤山明神]]
+* [[新羅明神]]
+* [[摩多羅神]]
+* [[宇賀神]]
+* [[荒神]]
+* [[妙見]]
+* [[三十番神]]
+}}
+
+|group3 = 信仰
+|list3 =
+* [[八幡信仰]]
+* [[春日信仰]]
+** [[春日権現]]
+* [[住吉信仰]]
+* [[稲荷信仰]]
+* [[三輪明神]]
+* [[山王信仰]]
+** [[山王権現]]
+* [[天神信仰]]
+* [[熊野信仰]]
+** [[熊野権現]]
+* [[富士浅間信仰]]
+
+|group4 = 図像学
+|list4 =
+* [[神像]]
+* [[神道曼荼羅]]
+* [[影向図]]
+
+}}<noinclude>
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Shinto cult templates]]
+
+[[Category:jawiki imported templates from 2025-05-27]]
+[[Category:jawiki imported templates from 2025-05-27]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
+<noinclude>
+{{wikidata link||ja|Template:中世神道|ja|Template:中世神道}}
+[[Category:Pages with interwikis with duplicate languages]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Japanese titled templates]]
+[[Category:need translation]]
+[[Category:qqqqqqqqqqqqqqqqq]]
+</noinclude>

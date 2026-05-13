@@ -1,0 +1,79 @@
+{{Sidebar
+| name = Template:Shinto Talismans
+| image = {{{image|[[File:Variousomamori.jpg|220px|alt=Two ancient anthropomorphic figures from Peru]]}}}
+
+| class =
+| wraplinks =        
+| float =
+| templatestyles =
+| child templatestyles =
+| grandchild templatestyles =
+
+| outertitleclass =
+| outertitle = {{PAGENAME}}
+
+| topimageclass =
+| topimage =
+| topcaption =
+
+| pretitleclass =
+| pretitle =
+
+| titleclass =
+| title =
+
+| imageclass =
+| caption =
+
+| headingclass =
+| contentclass =
+
+| aboveclass =
+| above =
+
+| heading1 = Votive talismans designed for the home
+| heading1class =
+| content1 = [[Ofuda]], and [[Jingū taima]] when from [[Ise Grand Shrine|Ise Jingu]]
+| content1class =
+
+| heading2 = Votive paper slips applied to the gates of shrines
+| heading2class =
+| content2 = [[Senjafuda]]
+| content2class =
+
+| heading3 = Amulets sold at shrines for luck and protection
+| heading3class =
+| content3 = [[:en:Omamori|Omamori]]
+| content3class =
+
+| heading4 = Wooden plaques representing prayers and wishes
+| heading4class =
+| content4 = [[:en:Ema (Shinto)|Ema]]
+| content4class =
+
+| heading8 = Stamps collected at shrines
+| content8 = [[Shuin]]
+
+| heading7 = Paper fortunes received by making a small offering
+| heading7class =
+| content7 = [[:en:O-mikuji|O-mikuji]]
+| content7class =
+
+| belowclass =
+| below =
+| navbar =
+}}<noinclude>
+{{Documentation|content={{collapsible option}}
+==See also==
+* [[:Category:Shinto]]
+[[Category:Japan sidebar templates]]
+[[Category:Shinto templates|Shrines]]
+[[Category:Independently git synced pages|Shrines]]
+[[Category:Religious buildings and structures templates]]
+[[Category:Religion and belief sidebar templates]]
+
+}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+</noinclude>

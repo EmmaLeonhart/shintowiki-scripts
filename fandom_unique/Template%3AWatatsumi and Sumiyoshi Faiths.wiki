@@ -1,0 +1,59 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AWatatsumi_and_Sumiyoshi_Faiths for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
+
+{{Navbox
+| name  = Watatsumi and Sumiyoshi Faiths
+| title = [[Sumiyoshi-taisha|Sumiyoshi Faith]] and [[:en:Watatsumi|Watatsumi Faith]]
+| listclass = hlist
+| image = [[File:Sumiyoshi-taisha, keidai-2.jpg|150px|link=|alt=]]
+ |group1 = Main Deity
+ |list1 =
+* [[Sumiyoshi sanjin]]
+* [[:en:Watatsumi|Watatsumi]]
+
+ |group2 = Other Deities
+ |list2 =
+* [[:en:Empress Jingū|Empress Jingū]]
+* {{ill|Utsushi Hikanasaku no Mikoto|ja|宇都志日金拆命|12=simple|13=User:Immanuelle/Utsushi Hikanasaku no Mikoto|12=simple|13=User:Immanuelle/Utsushi Hikanasaku no Mikoto|qq=}}
+* [[Azumi-no-isora]]
+* [[Tamayori-hime (mother of Jimmu)|Tamayorihime]]
+
+ |group3 = Head Shrine
+ |list3 =
+* [[Sumiyoshi-taisha]]
+
+ |group4 = [[Sumiyoshi Shrine|Sumiyoshi Shrine]]s
+ |list4 =
+* [[Moto-Sumiyoshi Shrine]]
+* [[Sagami-ji]]
+* [[Sumiyoshi Shrine (Fukuoka)]]
+* [[Sumiyoshi Shrine (Hokkaidō)]]
+* [[Sumiyoshi Shrine (Shimonoseki)]]
+* [[Sumiyoshi Shrine (Iki City)|Sumiyoshi Shrine]]
+* {{ill|Sumiyoshi Shrine (Miyagi)|ja|住吉神社_(角田市)|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Miyagi)|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Miyagi)|qq=}}
+
+|group5= [[Watatsumi Shrine (disambiguation)|Watatsumi Shrine]]s
+|list5=
+* [[Kaijin Shrine]]
+* [[Watatsumi Shrine (Kobe)]]
+* [[Shikaumi Shrine]]
+* [[Watazumi Shrine]]
+* [[Furogu Shrine]]
+* [[:en:Hotaka Shrine|Hotaka Shrine]]
+* [[Futami Okitama Shrine]]
+* [[:en:Nunakuma Shrine|Nunakuma Shrine]]
+
+ |group6= Misc
+ |list6=
+* [[Sumiyoshi-zukuri]]
+* [[Azumi people]]
+* {{ill|Tsumori clan|lt=Tsumori family|ja|津守氏|12=simple|13=User:Immanuelle/Tsumori clan|12=simple|13=User:Immanuelle/Tsumori clan|qq=}}
+
+}}<noinclude>
+[[en:Template:Watatsumi and Sumiyoshi Faiths]]{{wikidata link|Q125457287|en|Template:Watatsumi and Sumiyoshi Faiths}}
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Sumiyoshi shrines]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

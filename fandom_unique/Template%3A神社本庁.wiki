@@ -1,0 +1,52 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3A%E7%A5%9E%E7%A4%BE%E6%9C%AC%E5%BA%81 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
+{{Navbox
+|name = 神社本庁
+|state = autocollapse
+|title = {{flagicon|JPN}} [[神社本庁]]
+|titlestyle = background:#efefef;
+|bodystyle = background:#f9f9f9;
+|groupstyle = background:#efefef;
+|oddstyle = background:#fcfcfc;
+|listclass = hlist
+|imageleft =
+|image = 
+|group1 = 組織
+|list1 = 
+* [[神社庁]]
+* [[全国神社総代会]]
+* [[神道政治連盟]]
+* [[神社新報]]
+|group2 = 神社
+|list2 = 
+* [[伊勢神宮]]
+* [[別表神社]]
+|group3 = 前身
+|list3 = 
+* [[全国神職会|大日本神祇会]]
+* [[皇典講究所]]
+* [[神宮教|神宮奉斎会]]
+* [[神祇院]]
+* [[神社局]]
+|group4 = 関連項目
+|list4 =
+* [[神道]]
+* [[神社]]
+* [[天皇]]
+* [[皇室]]
+* [[日本会議]]
+* [[皇学館大学]]
+| belowstyle = background:#efefef;
+| below = {{Icon|Cat}} [[:Category:神社本庁|カテゴリ]]
+}}<noinclude>
+
+{{wikidata link|Q18994074|ja|Template:神社本庁}}
+[[Category:jawiki imported templates from 2025-05-27]]
+[[Category:Association of Shinto Shrines]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Japanese titled templates]]
+[[Category:need translation]]
+[[Category:qqqqqqqqqqqqqqqqq]]
+</noinclude>

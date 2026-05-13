@@ -10,7 +10,7 @@
 |notes = 
 |help = no
 }}
-{{ウィキプロジェクトリンク|テンプレート|}}
+{{WikiProjectリンク|テンプレート|}}
 {{translated page|ja|Category:基礎情報テンプレート|version=99913286}}
 {{redirect|WP:INFO|information regarding the use of information pages on Wikipedia|Wikipedia:INFOPAGES|the wikiproject|Wikipedia:WikiProject Infoboxes|style guidelines|Wikipedia:Manual of Style/Infoboxes}}
 {{shortcuts|CAT:INFOBOX|WP:INFO}}

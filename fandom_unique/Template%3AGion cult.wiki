@@ -1,0 +1,71 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AGion_cult for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25582076105|commit triggered pipeline]] -->
+{{Navbox
+| name  = Gion cult
+| title = [[Gion Faith|{{white|Gion cult}}]]
+| titlestyle= background:#767C6B; color:#fff;
+| listclass = hlist
+| image = [[File:素盞烏尊悪神退治之図 - Susanoo-no-Mikoto subjugates demons.jpg|150px|link=|alt=]]
+|groupstyle = background:#8f9484; color:#fff;
+| group1 = Gods
+| list1 = {{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Main Deities
+ |list1 =
+* [[Susanoo-no-Mikoto|Susanoo]]
+* [[Gozu Tennō]]
+ |group2 = Minor gods
+ |list2 =
+* [[Ashinazuchi and Tenazuchi]]
+* [[Yashimajinumi]]
+* [[:en:Hōdō|Hōdō]]
+* [[Somin Shōrai]]
+* {{ill|Hachiōji Gongen|ja|八王子権現|1=Hachiōji Gongen|12=simple|13=User:Immanuelle/Hachiōji Gongen|13=User:Immanuelle/Hachiōji Gongen|12=simple|13=User:Immanuelle/Hachiōji Gongen|13=User:Immanuelle/Hachiōji Gongen|qq=}}
+}}
+| group2 = Places
+| list2 ={{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Head Shrine
+ |list1 =
+* [[Yasaka Shrine]]
+* [[Hiromine Shrine]] 
+* [[Tsushima Shrine]] 
+
+ |group2 = Other Shrines
+ |list2 =
+* [[:en:Inano Shrine|Inano Shrine]]
+* [[:en:Saginomori Shrine|Saginomori Shrine]]
+* [[Suga Shrine]]
+* {{ill|Nanba Yasaka Shrine|ja|難波八阪神社|de|Namba Yasaka-Schrein|fr|Namba_Yasaka-jinja|12=simple|13=User:Immanuelle/Nanba Yasaka Shrine|12=simple|13=User:Immanuelle/Nanba Yasaka Shrine|qq=}}
+* {{ill|Awata Shrine|ja|粟田神社|12=simple|13=User:Immanuelle/Awata Shrine|12=simple|13=User:Immanuelle/Awata Shrine|qq=}}
+* {{ill|Katano Shrine|ja|片埜神社|12=simple|13=User:Immanuelle/Katano Shrine|12=simple|13=User:Immanuelle/Katano Shrine|qq=}}
+* {{ill|Hyōzu Shrine|ja|兵主神社 (西脇市)|12=simple|13=User:Immanuelle/Hyōzu Shrine|12=simple|13=User:Immanuelle/Hyōzu Shrine|qq=}}
+* [[:en:Nunakuma Shrine|Nunakuma Shrine]]
+
+ |group3= Temples
+ |list3=
+* {{ill|Take-dera|ja|竹寺|12=simple|13=User:Immanuelle/Take-dera|12=simple|13=User:Immanuelle/Take-dera|qq=}}
+* [[:en:Shinano Kokubun-ji|Shinano Kokubun-ji]]
+* [[:en:Hachiōji Castle|Hachiōji Castle]]
+ |group4= Historical figures
+ |list4=
+* [[Kibi no Makibi]]
+
+|group5= Other shrines of Susanoo
+|list5=
+* [[Hikawa Shrine (Saitama)]]
+
+}}
+}}
+<noinclude>
+
+</noinclude>
+
+<noinclude>{{wikidata link|Q125475251|en|Gion cult|en|Template:Gion cult|fr|Modèle:Palette Culte Gion|check_date=2026-05-09}}
+[[Category:Buddhism in Japan templates]]
+[[Category:Gion cult]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
