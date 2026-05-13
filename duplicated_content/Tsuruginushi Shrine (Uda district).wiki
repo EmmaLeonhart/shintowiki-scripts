@@ -1,0 +1,133 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsuruginushi_Shrine_%28Uda_district%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
+{{Infobox religious building
+| name = Tsuruginushi Shrine (Uda district)
+| native_name = 劔主神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tsuruginushi Shrine (Uda district)
+| coordinates = {{coord|34.456653|135.919}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tsuruginushi Shrine (Uda district)'''|劔主神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
+* {{ill|Shikinai Shosha|ltq=Q134917287|qid=Q134917287}}
+* {{ill|Kanpei-sha|ltq=Q135160338|qid=Q135160338}}<ref>Kokugakuin University Shrine database</ref>
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Yamato Province|ltq=Q11433427|qid=Q11433427}}
+** Series ordinal: 115
+** P155: {{ill|Sakuramino Shrine|lt=Sakuramino Shrine|qid=Q135038986}}
+** P156: {{ill|Murofunoriuketsuno Shrine|ltq=Q135038988|qid=Q135038988}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Yamato Province|ltq=Q907495|qid=Q907495}}
+* {{ill|Uda District, Nara|lt=Uda district|ar|يودا (اليابان)|ca|Districte d'Uda|ceb|Uda-gun|en|Uda District, Nara|es|Distrito de Uda|fa|شهرستان اودا، نارا|fr|District d'Uda|id|Distrik Uda, Nara|it|Distretto di Uda|ja|宇陀郡|ko|우다군|nl|Uda (district)|pl|Powiat Uda|ru|Уда (уезд)|zh|宇陀郡|qid=Q1131315}}
+
+== coordinate location (P625) ==
+
+* {{coord|34.456653|135.919}}
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 180774
+** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299}}
+
+== country (P17) ==
+
+* {{ill|Japan|ltq=Q17|qid=Q17}}
+
+== said to be the same as (P460) ==
+
+* {{ill|Tsurukinushino Shrine|ltq=Q135038987|qid=Q135038987}}
+** P2868: {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
+
+== street address (P6375) ==
+
+* {'text': '奈良県宇陀市大宇陀宮奥', 'language': 'ja'}
+
+[[Category:Wikidata generated shikinaisha pages|Tsuruginushi Shrine (Uda district)]][[Category:Shikinaisha|Tsuruginushi Shrine (Uda district)]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Yamato Province]]
+
+{{wikidata link|Q135069106|check_date=2026-05-12}}
+
+==merged content==
+[[Category:Pages with duplicated content]]
+
+{{Infobox religious building
+| name = Tsurugishushin Shrine (Uda district)
+| native_name = 劔主神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tsurugishushin Shrine (Uda district)
+| coordinates = {{coord|34.456653|135.919}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tsuruginushi Shrine (Uda district)'''|劔主神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
+* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287}}
+* {{ill|Kanpei-sha|lt=Kanpei-sha|simple|Kanpei-sha|qid=Q135160338}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=180774</ref>
+* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=180774</ref>
+** Series ordinal: 233
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Yamato Province|lt=List of Shikinaisha in Yamato Province|ja|大和国の式内社一覧|qid=Q11433427}}
+** Series ordinal: 115
+** P155: {{ill|Sakuramino Shrine|lt=Sakuramino Shrine|qid=Q135038986}}
+** P156: {{ill|Murofunoriuketsuno Shrine|lt=Murofunoriuketsuno Shrine|qid=Q135038988}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Yamato Province|lt=Yamato Province|be|Ямата (правінцыя)|ca|Província de Yamato|ckb|پارێزگای یەماتۆ|cs|Provincie Jamato|de|Provinz Yamato|el|Επαρχία Γιαμάτο|en|Yamato Province|es|Provincia de Yamato|fa|ولایت یاماتو|fi|Yamaton provinssi|fr|Province de Yamato|gl|Provincia de Yamato|hak|Yamato-koet|id|Provinsi Yamato|it|Yamato (provincia)|ja|大和国|ko|야마토국|lt|Jamato žemė|nl|Yamato (provincie)|no|Yamato (provins)|pt|Província de Yamato|ro|Provincia Yamato|ru|Ямато (провинция)|simple|Yamato Province|sk|Jamato (provincia)|sr|Провинција Јамато|th|แคว้นยามาโตะ|tr|Yamato (vilayet)|uk|Провінція Ямато|ur|یاماتو صوبہ|zh_min_nan|Yamato-kok|zh_yue|大和國|zh|大和國|qid=Q907495}}
+* {{ill|Uda District, Nara|lt=Uda district|ar|يودا (اليابان)|ca|Districte d'Uda|ceb|Uda-gun|en|Uda District, Nara|es|Distrito de Uda|fa|شهرستان اودا، نارا|fr|District d'Uda|id|Distrik Uda, Nara|it|Distretto di Uda|ja|宇陀郡|ko|우다군|nl|Uda (district)|pl|Powiat Uda|ru|Уда (уезд)|zh|宇陀郡|qid=Q1131315}}
+
+== coordinate location (P625) ==
+
+* {{coord|34.456653|135.919}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=180774</ref>
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 180774
+** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299}}
+
+== said to be the same as (P460) ==
+
+* {{ill|Tsurukinushino Shrine|lt=Tsurukinushino Shrine|qid=Q135038987}}
+* {{ill|Tsurukinushino Shrine|lt=Tsurukinushino Shrine|qid=Q135038987}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=180774</ref>
+** P2868: {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
+
+==References==
+
+[[Category:Wikidata generated shikinaisha pages|Tsurugishushin Shrine (Uda district)]][[Category:Shikinaisha|Tsurugishushin Shrine (Uda district)]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha|Tsurugishushin Shrine (Uda district)]][[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Yamato Province]]
+
+{{wikidata link|Q135069106}}
+[[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:qqqqqqqqqqqqqqqqq]]
+[[Category:qqqq]]

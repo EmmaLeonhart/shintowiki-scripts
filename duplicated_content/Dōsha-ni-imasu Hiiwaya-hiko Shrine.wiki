@@ -1,0 +1,123 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=D%C5%8Dsha-ni-imasu_Hiiwaya-hiko_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24975162458|time triggered pipeline]] -->
+
+{{Infobox religious building
+| name = Dōsha-ni-imasu Hiiwaya-hiko Shrine
+| native_name = 同社坐斐伊波夜比古神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Dōsha-ni-imasu Hiiwaya-hiko Shrine
+| coordinates = {{coord|35.304903|132.903409}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hiinohayahikono Shrine'''|同社坐斐伊波夜比古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
+* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|1=Shikinai Shosha}}
+* {{ill|Shikinai Subshrine|lt=Shikinai Subshrine|qid=Q135100459|1=Shikinai Subshrine}}
+* {{ill|Q135160342|ltq=Q135160342|qid=Q135160342|1=Kokuhei-sha}}
+* {{ill|Q845945|ltq=Q845945|qid=Q845945|1=Shinto shrine}}
+
+== part of (P361) ==
+
+* {{ill|Hii Shrine|lt=Hii Shrine|ja|斐伊神社|qid=Q11500716|1=Hii Shrine}}
+* {{ill|Q11395853|ltq=Q11395853|qid=Q11395853|1=List of Shikinaisha in Izumo Province}}
+** Series ordinal: 181
+** P155: {{ill|Q11500716|ltq=Q11500716|qid=Q11500716|1=Hii Shrine}}
+** P156: {{ill|Kisukino Shrine|lt=Kisukino Shrine|qid=Q135041101|1=Kisukino Shrine}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Q582846|ltq=Q582846|qid=Q582846|1=Izumo Province}}
+* {{ill|Q865650|ltq=Q865650|qid=Q865650|1=Ohara District, Shimane}}
+
+== coordinate location (P625) ==
+
+* {{coord|35.304903|132.903409}}<ref>Kokugakuin University Shrine database</ref>
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 182951
+** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299|1=Kokugakuin University Shrine database}}
+
+== country (P17) ==
+
+* {{ill|Q17|ltq=Q17|qid=Q17|1=Japan}}
+
+== name in kana (P1814) ==
+
+* -ヒイノハヤヒコノ
+
+[[Category:Wikidata generated shikinaisha pages|Dōsha-ni-imasu Hiiwaya-hiko Shrine]][[Category:Shikinaisha|Dōsha-ni-imasu Hiiwaya-hiko Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Izumo Province]]
+
+{{wikidata link|Q135099008}}
+
+==merged content==
+[[Category:Pages with duplicated content]]
+
+{{Infobox religious building
+| name = Hiinohayahikono Shrine
+| native_name = 同社坐斐伊波夜比古神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hiinohayahikono Shrine
+| coordinates = {{coord|35.304903|132.903409}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hiinohayahikono Shrine'''|同社坐斐伊波夜比古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
+* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|1=Shikinai Shosha}}
+* {{ill|Shikinai Subshrine|lt=Shikinai Subshrine|qid=Q135100459|1=Shikinai Subshrine}}
+* {{ill|Q135160342|ltq=Q135160342|qid=Q135160342|1=Kokuhei-sha}}
+* {{ill|Q845945|ltq=Q845945|qid=Q845945|1=Shinto shrine}}
+
+== part of (P361) ==
+
+* {{ill|Hii Shrine|lt=Hii Shrine|ja|斐伊神社|qid=Q11500716|1=Hii Shrine}}
+* {{ill|Q11395853|ltq=Q11395853|qid=Q11395853|1=List of Shikinaisha in Izumo Province}}
+** Series ordinal: 181
+** P155: {{ill|Q11500716|ltq=Q11500716|qid=Q11500716|1=Hii Shrine}}
+** P156: {{ill|Kisukino Shrine|lt=Kisukino Shrine|qid=Q135041101|1=Kisukino Shrine}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Q582846|ltq=Q582846|qid=Q582846|1=Izumo Province}}
+* {{ill|Q865650|ltq=Q865650|qid=Q865650|1=Ohara District, Shimane}}
+
+== coordinate location (P625) ==
+
+* {{coord|35.304903|132.903409}}<ref>Kokugakuin University Shrine database</ref>
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 182951
+** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299|1=Kokugakuin University Shrine database}}
+
+== country (P17) ==
+
+* {{ill|Q17|ltq=Q17|qid=Q17|1=Japan}}
+
+== name in kana (P1814) ==
+
+* -ヒイノハヤヒコノ
+
+[[Category:Wikidata generated shikinaisha pages|Hiinohayahikono Shrine]][[Category:Shikinaisha|Hiinohayahikono Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Izumo Province]]
+[[Category:qqqq]]
+
+{{wikidata link|Q135099008}}

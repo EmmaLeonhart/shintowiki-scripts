@@ -1,0 +1,39 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tatano_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+{afc comment|1=wikidata item [[d:Q135038949]][[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|talk]]) 05:32, 21 November 2025 (UTC)}
+'''Tatano Shrine''' is a [[List of Shikinaisha in Yamato Province|Shikinaisha in Yamato Province]].
+
+==References==
+{{wikidata link|Q135038949|check_date=2026-05-11}}
+
+== Accidentally Overwritten Content ==
+'''Tatano Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Echigo Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Santō District, Niigata|en|Santō District, Niigata|ja|三島郡 (新潟県)|ceb|Santō-gun|fr|District de Santō|it|Distretto di Santō|ko|산토군|pl|Powiat Santō|uk|Повіт Санто|zh|三島郡 (新潟縣)|lt=Santō district|qid=Q1155567}} || {{ill|Tatano Shrine (Q135040452)|qid=Q135040452}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || {{ill|Taki Shrine|qid=Q135195079}}; {{ill|Tata Shrine|qid=Q135195082}} || — || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182440 DB]
+|}
+
+{{wikidata link|Q135040452}}
+== Accidentally Overwritten Content ==
+'''Tatano Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Echigo Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Santō District, Niigata|en|Santō District, Niigata|ja|三島郡 (新潟県)|ceb|Santō-gun|fr|District de Santō|it|Distretto di Santō|ko|산토군|pl|Powiat Santō|uk|Повіт Санто|zh|三島郡 (新潟縣)|lt=Santō district|qid=Q1155567}} || {{ill|Tatano Shrine (Q135040452)|qid=Q135040452}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || {{ill|Taki Shrine|qid=Q135195079}}; {{ill|Tata Shrine|qid=Q135195082}} || — || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182440 DB]
+|}
+
+{{wikidata link|Q135040452}}
+
+
+==Notes==
+<references group="lower-alpha"/>
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Echigo Province]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shikinai Shōsha]]
+[[Category:Shrines receiving Hoe and Quiver]]
+[[Category:Kanpei-sha]]

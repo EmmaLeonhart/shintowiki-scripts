@@ -1,0 +1,81 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kusabe_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
+
+
+{{Infobox religious building|image=File:Kusabe Shrine Sakai City.jpg|prefecture={{ill|Nishi-ku|qid=Q1042499|1=Nishi-ku, Sakai}}|coordinates={{Coord|34.520889|N|135.465667}}|architecture_style={{ill|East Asian hip-and-gable roof|qid=Q855025|1=East Asian hip-and-gable roof}}}}{
+{{Infobox Shinto Shrine
+| name = Kusabe Shrine (日部神社)
+| image = [[File:Kusabe Shrine Sakai City.jpg|250px]]
+| location = Kusabe 262, Nishiku, Sakai City, Osaka Prefecture, Japan
+| coordinates = {{coord|34|31|15.2|N|135|27|56.4|E|region:JP-27_type:landmark|display=inline,title|name=Kusabe Shrine}}
+| deities = {{ill|Hikoimasu no Ōkimi|lt=Hikoimasu no Ōkimi|lt=Hikozatsuo|ja|彦坐王|12=simple|13=User:Immanuelle/Hikozatsuo|qq=}}<br>{{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu|1=Emperor Jimmu}}<br>{{ill|Michinomikoto|ja|道臣命|1=Michinoomi|12=simple|13=User:Immanuelle/Michinomikoto|13=User:Immanuelle/Michinoomi|qq=}}
+| classification = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small), Former {{ill|Mura-sha|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}
+| established = 
+| main_building = Front: {{ill|Kirizuma-zukuri|ja|切妻造|12=simple|13=User:Immanuelle/Kirizuma-zukuri|1=Kirizuma-style|comment=changed title based on wikidata|qid=Q13308575}}<br>Rear: {{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=Irimoya-zukuri|1=East Asian hip-and-gable roof}}
+| annual_festival = October 5
+}}
+
+'''Kusabe Shrine''' (日部神社, Kusabe Jinja) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Nishiku, Sakai City|ja|堺市西区|12=simple|13=User:Immanuelle/Nishiku, Sakai City|ja_comment=jawiki link invalid}}, Osaka Prefecture. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, previously Ranked as a {{ill|Mura-sha|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}.
+
+== Enshrined Deities ==
+The main enshrined deities are {{ill|Hikoimasu no Ōkimi|lt=Hikoimasu no Ōkimi|lt=Hikozatsuo|ja|彦坐王|12=simple|13=User:Immanuelle/Hikozatsuo|qq=}}, {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu|1=Emperor Jimmu}}, and {{ill|Michinomikoto|ja|道臣命|1=Michinoomi|12=simple|13=User:Immanuelle/Michinomikoto|13=User:Immanuelle/Michinoomi|qq=}}. Hikozatsuo is considered the ancestral deity of the {{ill|Kusakabe clan|ja|日下部氏|12=simple|13=User:Immanuelle/Kusakabe clan|qq=}}, a prominent local ruling family in the area, which is also said to include the legendary {{ill|Urashima Tarō|en|Urashima Tarō|qid=Q55617997|lt=Urashima Tarō|1=Urashima Tarō}}.
+
+The shrine as it stands today was established in the Meiji period after merging with three other local shrines: {{ill|Yasaka Shrine|en|Yasaka Shrine|qid=Q692714|lt=Yasaka Shrine (Osaka)|1=Yasaka Shrine}}, {{ill|Kumano shrine|en|Kumano shrine|qid=Q3200355|lt=Kumano Shrine (Osaka)|1=Kumano shrine}}, and {{ill|Sugawara Shrine (Osaka)|ja|菅原神社|12=simple|13=User:Immanuelle/Sugawara Shrine (Osaka)|1=Sugawara Shrine (disambiguation)|comment=changed title based on wikidata|qid=Q48532247}}. The name and main deity are derived from the original Kusabe Shrine, while additional deities from the merged shrines include {{ill|Susanoo|1=Susanoo-no-Mikoto|ja|素盞嗚尊|12=simple|13=User:Immanuelle/Susanoo|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}, {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|1=Izanami|comment=changed title based on wikidata|qid=Q682306}}, and {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}.
+
+== History ==
+The exact origin of Kusabe Shrine is unclear. However, according to the {{ill|Kojiki-den|en|Kojiki-den|qid=Q11410835|lt=Kojiki-den|1=Kojiki-den}}, the area surrounding the shrine is believed to be where Emperor Jimmu first engaged in battle with {{ill|Nagazumi-hiko|ja|長髄彦|12=simple|13=User:Immanuelle/Nagazumi-hiko|1=Nagatsuhiko|comment=changed title based on wikidata|qid=Q4922278}} during his {{ill|Jimmu's Eastern Expedition|en|Jimmu's Eastern Expedition|qid=Q11590444|lt=Eastern Expedition|1=Jimmu's Eastern Expedition}}, landing at the port of Kusaka no Tadezu.
+
+In 1911 (Meiji 44), Kusabe Shrine was merged with Yasaka Shrine, Kumano Shrine, and Sugawara Shrine and relocated to the former site of Yasaka Shrine.
+
+== Grounds ==
+The current shrine precinct, including the main hall and shrine gate, originally belonged to Yasaka Shrine. A stone lantern near the main hall is inscribed with the date "April 8, Shōhei 24" (1369), indicating that the structure dates back to the {{ill|Northern and Southern Courts period (disambiguation)|en|Northern and Southern Courts period (disambiguation)|qid=Q8140349|lt=Nanboku-chō period|1=Northern and Southern Courts period (disambiguation)}} to the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}. Both the main hall and stone lantern were designated as {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property|1=Important Cultural Property (Japan)}} in 1917 (Taishō 6). According to the {{ill|Izumi Meisho Zue|ja|和泉名所図会|12=simple|13=User:Immanuelle/Izumi Meisho Zue|ja_comment=jawiki link invalid}} (1796), the shrine was said to have been rebuilt through donations by the renowned general {{ill|Kusunoki Masanori|en|Kusunoki Masanori|qid=Q11541193|lt=Kusunoki Masanori|1=Kusunoki Masanori}} (see {{ill|Kusunoki Masanori#Tomb and Historical Sites|ja|楠木正儀#墓所・史跡など|12=simple|13=User:Immanuelle/Kusunoki Masanori#Tomb and Historical Sites|1=Kusunoki Masanori|comment=changed title based on wikidata|qid=Q11541193}}). The main hall features elaborate carvings on its {{ill|Kimagata|ja|蟇股|12=simple|13=User:Immanuelle/Kimagata|1=kaerumata|comment=changed title based on wikidata|qid=Q123117911}}. The worship hall was relocated from the former Sugawara Shrine.
+
+The original site of Kusabe Shrine, located 300 meters south of the current location, is near the {{ill|Miyama Kofun|ja|御山古墳|12=simple|13=User:Immanuelle/Miyama Kofun|ja_comment=jawiki link invalid}}, where Michinomikoto is said to be buried. After the relocation, the old site was sold to private ownership in the early Taishō era and has since become a residential area.
+
+== Festivals and Annual Events ==
+* Summer Festival: July 13
+* {{ill|Danjiri|ja|地車|12=simple|13=User:Immanuelle/Danjiri|1=danjiri|comment=changed title based on wikidata|qid=Q11424706}} Festival: October 5
+
+== Cultural Properties ==
+=== Important Cultural Properties ===
+* Main Hall - Nanboku-chō period construction.<ref>[https://www.city.sakai.lg.jp/smph/kanko/rekishi/bunkazai/bunkazai/shokai/bunya/kenzobutu/kusabehonden.html Kusabe Shrine Main Hall, Sakai City]</ref>
+* Stone Lantern - Nanboku-chō period, dated to Shōhei 24 (1369).<ref>[https://www.city.sakai.lg.jp/smph/kanko/rekishi/bunkazai/bunkazai/shokai/bunya/kougeihin/ishidoro.html Stone Lantern, Sakai City]</ref>
+=== Sakai City Designated Cultural Properties ===
+* Shrine Gate - Edo period construction.<ref>[https://www.city.sakai.lg.jp/smph/kanko/rekishi/bunkazai/bunkazai/shokai/bunya/kenzobutu/kusabeshinmon.html Kusabe Shrine Gate, Sakai City]</ref>
+
+== References ==
+{{reflist}}
+
+== External Links ==
+* [https://www.sakai-tcb.or.jp/spot/detail/204 Kusabe Shrine - Sakai Tourism Guide]
+
+{{Shinto}}
+
+{{translated page|ja|日部神社|version=78605344|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Kusabe Shrine (Q11510526)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Ōtori district|ja|大鳥郡|zh|大鳥郡|qid=Q3270651|1=Ōtori district}} || {{ill|Kusabe Shrine|lt=Kusabe Shrine|ja|日部神社|qid=Q11510526|1=Kusabe Shrine}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|34.520914|135.465701|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180990 DB]
+|}
+{{wikidata link|Q11510526|da|d:Q11510526|ja|日部神社}}==Notes==
+<references group="lower-alpha"/>
+[[Category:Architecture of Muromachi period]]
+[[Category:Buildings and structures in Nishi-ku, Sakai]]
+[[Category:Cultural heritage monuments in Japan]]
+[[Category:History of Nishi-ku, Sakai]]
+[[Category:Important Cultural Properties in Sakai City]]
+[[Category:Kanpei-sha]]
+[[Category:Kusakabe Clan]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Izumi Province]]
+[[Category:Son-sha in Osaka Prefecture]]
+[[Category:Unranked shrines]]
+[[Category:Wikidata has short description]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
