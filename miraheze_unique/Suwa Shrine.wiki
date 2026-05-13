@@ -1,0 +1,76 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Suwa_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25623742448|time triggered pipeline]] -->
+
+{{multiple image
+ | direction = vertical
+ | width = 250
+ | image1 = 諏訪大社上社本宮 拝殿・拝所 - Suwa Taisha Honmiya.jpg
+ | caption1 = 上社本宮（{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}{{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa}}）
+
+ | image2 = Suwa Taisha Maemiya Honden.jpg
+ | caption2 = 上社前宮（長野県{{ill|Chino, Nagano|en|Chino, Nagano|qid=Q838660|lt=Chino}}）
+
+ | image3= 諏訪大社 春宮 神楽殿.JPG
+ | caption3= 下社春宮（長野県{{ill|Shimosuwa|en|Shimosuwa|qid=Q1204211|lt=Shimosuwa}}）
+
+ | image4 = Suwa taisha Shimosha Akimiya , 諏訪大社 下社 秋宮 - panoramio (7).jpg
+ | caption4 = 下社秋宮（長野県下諏訪町）
+ | footer_align = center
+ | footer= 諏訪大社を構成する2社4宮}}
+
+'''Suwa Shrine''' (諏訪神社) refers to shrines with "Suwa" in their name, particularly associated with {{ill|Suwa Shrine|ja|諏訪信仰|12=simple|13=User:Immanuelle/Suwa Faith|ja_comment=jawiki redirects to 諏訪神社|comment=changed title based on wikidata|qid=Q2370082}}, a form of {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}} worship centered on {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}}.
+
+== Overview ==
+
+There are approximately 25,000 Suwa Shrines throughout Japan, all having {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}} in Nagano Prefecture as their head shrine. Suwa Faith revolves around the veneration of {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}}, the main deity, and his consort {{ill|Yasakatome|en|Yasakatome|qid=Q9150392|lt=Yasakatome no Kami}}. Together, they are referred to as the "Suwa Deities" (諏訪大神). When Suwa Grand Shrine's deities are transferred to other Suwa Shrines, their divine spirits are believed to reside within a ritual {{ill|Nagi Kama|ja|薙鎌|12=simple|13=User:Immanuelle/Nagi Kama|qq=}}, which becomes the sacred object of the shrine.
+
+Suwa Grand Shrine conducts the renowned {{ill|Onbashira|en|Onbashira|qid=Q3698846|lt=Onbashira Festival}}, held every six years. Many Suwa Shrines across the country host similar festivals. Additionally, rituals like the spring {{ill|Ontōsai|ja|御頭祭|12=simple|13=User:Immanuelle/Ontōsai|ja_comment=jawiki link invalid}} and {{ill|Misayama Festival|ja|御射山祭|12=simple|13=User:Immanuelle/Misayama Festival|ja_comment=jawiki link invalid}}, a traditional hunting ceremony in late August, are celebrated at various Suwa Shrines.
+
+== List of Main Suwa Shrines ==
+=== Head Shrine ===
+* {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}} - Located in Suwa, Chino, and Shimosuwa in Nagano Prefecture.
+
+=== Hokkaido ===
+* {{ill|Suwa Shrine (Sapporo)|ja|諏訪神社 (札幌市)|12=simple|13=User:Immanuelle/Suwa Shrine (Sapporo)|qq=}} ({{ill|Sapporo|en|Sapporo|qid=Q37951|lt=Sapporo}}, {{ill|東區|en|東區|qid=Q1241231|lt=Higashi-ku}})
+* {{ill|Hanaiso Suwa Shrine|ja|花磯諏訪神社|12=simple|13=User:Immanuelle/Hanaiso Suwa Shrine|ja_comment=jawiki link invalid}} ({{ill|Nishi District, Hokkaido|en|Nishi District, Hokkaido|qid=Q1185873|lt=Nishi District}}, {{ill|Otobe, Hokkaido|en|Otobe, Hokkaido|qid=Q1354219|lt=Otobe}})
+
+=== Tohoku Region ===
+[[File:Akita-Suwa-gū.jpg|thumb|Akita Suwa Shrine]]
+; Aomori Prefecture
+* {{ill|Suwa Shrine (Aomori)|ja|諏訪神社 (青森市)|12=simple|13=User:Immanuelle/Suwa Shrine (Aomori)|ja_comment=jawiki link invalid}} ({{ill|Aomori|en|Aomori|qid=Q146790|lt=Aomori}})
+* {{ill|Suwa Shrine (Nanbu)|ja|諏訪神社 (青森県南部町)|12=simple|13=User:Immanuelle/Suwa Shrine (Nanbu)|ja_comment=jawiki link invalid}} ({{ill|Nambuchō|ja|南部町|12=simple|13=User:Immanuelle/Nanbu|comment=changed title based on wikidata|qid=Q126073891}})
+
+; Akita Prefecture
+* '''{{ill|Akita Suwa Shrine|ja|秋田諏訪宮|12=simple|13=User:Immanuelle/Akita Suwa Shrine|qq=}}''' ({{ill|Q11609394|ja|美郷町|12=simple|13=User:Immanuelle/Misato|comment=changed title based on wikidata|qid=Q11609394}}) - Listed as a special shrine (別表神社).
+
+=== Kanto Region ===
+; Tokyo
+[[File:Suwa Shrine 20190515(3).jpg|thumb|Suwa Shrine (Tachikawa, Shibasaki)]]
+* {{ill|Suwa Shrine (Tachikawa)|ja|諏訪神社 (立川市柴崎町)|12=simple|13=User:Immanuelle/Suwa Shrine (Tachikawa)|qq=}} ({{ill|Tachikawa, Tokyo|en|Tachikawa, Tokyo|qid=Q269634|lt=Tachikawa}})
+
+=== Chubu Region ===
+; Nagano Prefecture
+[[File:霧降宮切久保諏訪神社 Kirihuminoya Kirikubo Suwa shrine.jpg|thumb|Kirifuri-no-Miya Kiri-kubo Suwa Shrine]]
+* {{ill|Kamisuwa Shrine|ja|上諏訪神社|12=simple|13=User:Immanuelle/Kamisuwa Shrine|ja_comment=jawiki link invalid}} ({{ill|Ōmachi, Nagano|en|Ōmachi, Nagano|qid=Q385375|lt=Ōmachi}})
+* {{ill|Shimosuwa Shrine|ja|下諏訪神社|12=simple|13=User:Immanuelle/Shimosuwa Shrine|ja_comment=jawiki link invalid}} (Nagano Prefecture, Omachi City)
+
+=== Kyushu Region ===
+[[File:Nagasaki-Suwa-Shrine-1558.jpg|thumb|Chinzei Taisha Suwa Shrine]]
+; Nagasaki Prefecture
+* '''{{ill|Suwa Shrine (Nagasaki)|en|Suwa Shrine (Nagasaki)|qid=Q84028|lt=Chinzei Taisha Suwa Shrine}}''' ({{ill|Nagasaki|en|Nagasaki|qid=Q38234|lt=Nagasaki}}) - Listed as a special shrine.
+
+== References ==
+{{Reflist}}
+== See Also ==
+{{Commonscat|Suwa-jinja}}
+* {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}}
+* {{ill|Mishaguji|en|Mishaguji|qid=Q11071209|lt=Mishaguji}}
+* {{ill|Ikushimatarushima Shrine|en|Ikushimatarushima Shrine|qid=Q11574513|lt=Chikuma Shrine}}
+
+{{Suwa Faith}}
+
+{{translated page|ja|諏訪神社|version=104352572|comment=Imported full ja history}}
+
+{{wikidata link|Q2370082|ja|諏訪神社|en|Suwa Shrine|de|Suwa-Schrein|fr|Sanctuaire Suwa|it|Santuario di Suwa|ko|스와 신사|simple|Suwa shrine|check_date=2026-05-10}}
+[[Category:translated pages with valid en interwikis]]
+[[Category:Wikidata no short description]]
+[[Category:Independently git synced pages]]
