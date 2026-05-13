@@ -1,11 +1,11 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yin Wood Rooster|kanji=乙酉|romaji=kinoto tori|onyomi=otsuyu|p=yǐyǒu|w=i-yu|mi=i²¹ i̯ɤʊ̯²¹|y=jyut6 jau5|j=jyut6 jau5|ci=jyt̚ jɐu|mc=ʔit jɨu|oc-bs=Ɂik jɯʔ}}
 {{Sexagenary cycle}}
 
-'''Yin Wood Rooster''' (乙酉, ''kinoto tori''; onyomi ''otsuyu'') is the 22nd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yin Wood Rooster''' (乙酉, ''kinoto tori''; onyomi ''otsuyu'') is the 22nd of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 22nd of the sixty stem-branch combinations, preceded by {{ill|Yang Wood Monkey|ja|甲申|1=Yang Wood Monkey}} and followed by {{ill|Yang Fire Dog|ja|丙戌|1=Yang Fire Dog}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''乙'' is Yin Wood, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''酉'' (Rooster) is Yin Metal; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 22nd of the sixty stem-branch combinations, preceded by {{ill|Yang Wood Monkey|ja|甲申}} and followed by {{ill|Yang Fire Dog|ja|丙戌}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''乙'' is Yin Wood, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''酉'' (Rooster) is Yin Metal; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yin Wood Rooster (乙酉)
@@ -18,57 +18,57 @@ It is the 22nd of the sixty stem-branch combinations, preceded by {{ill|Yang Woo
 ** Vietnamese (Hán-Việt): Ất Dậu
 
 ==Years of Yin Wood Rooster==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 25 when divided by 60 is a year of Yin Wood Rooster (乙酉).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 25 when divided by 60 is a year of Yin Wood Rooster (乙酉).
 {| class="wikitable"
 |+'''Yin Wood Rooster (乙酉)'s years table'''
 |-
-! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium}}
 |-
 |
-* {{ill|25|en|25|qid=Q1166587|lt=25|1=25}}
-* {{ill|85|en|85|qid=Q4644849|lt=85|1=85}}
-* {{ill|145|en|145|qid=Q396429|lt=145|1=145}}
-* {{ill|205|en|205|qid=Q29970|lt=205|1=205}}
-* {{ill|265|en|265|qid=Q32189|lt=265|1=265}}
-* {{ill|325|en|325|qid=Q32577|lt=325|1=325}}
-* {{ill|385|en|385|qid=Q33689|lt=385|1=385}}
-* {{ill|445|en|445|qid=Q33640|lt=445|1=445}}
-* {{ill|505|en|505|qid=Q31072|lt=505|1=505}}
-* {{ill|565|en|565|qid=Q33651|lt=565|1=565}}
-* {{ill|625|en|625|qid=Q30089|lt=625|1=625}}
-* {{ill|685|en|685|qid=Q33480|lt=685|1=685}}
-* {{ill|745|en|745|qid=Q23612|lt=745|1=745}}
-* {{ill|805|en|805|qid=Q30389|lt=805|1=805}}
-* {{ill|865|en|865|qid=Q30350|lt=865|1=865}}
-* {{ill|925|en|925|qid=Q24274|lt=925|1=925}}
-* {{ill|985|en|985|qid=Q23414|lt=985|1=985}}
+* {{ill|25|en|25|qid=Q1166587|lt=25}}
+* {{ill|85|en|85|qid=Q4644849|lt=85}}
+* {{ill|145|en|145|qid=Q396429|lt=145}}
+* {{ill|205|en|205|qid=Q29970|lt=205}}
+* {{ill|265|en|265|qid=Q32189|lt=265}}
+* {{ill|325|en|325|qid=Q32577|lt=325}}
+* {{ill|385|en|385|qid=Q33689|lt=385}}
+* {{ill|445|en|445|qid=Q33640|lt=445}}
+* {{ill|505|en|505|qid=Q31072|lt=505}}
+* {{ill|565|en|565|qid=Q33651|lt=565}}
+* {{ill|625|en|625|qid=Q30089|lt=625}}
+* {{ill|685|en|685|qid=Q33480|lt=685}}
+* {{ill|745|en|745|qid=Q23612|lt=745}}
+* {{ill|805|en|805|qid=Q30389|lt=805}}
+* {{ill|865|en|865|qid=Q30350|lt=865}}
+* {{ill|925|en|925|qid=Q24274|lt=925}}
+* {{ill|985|en|985|qid=Q23414|lt=985}}
 |
-* {{ill|1045|en|1045|qid=Q19351|lt=1045|1=1045}}
-* {{ill|1105|en|1105|qid=Q13719|lt=1105|1=1105}}
-* {{ill|1165|en|1165|qid=Q19676|lt=1165|1=1165}}
-* {{ill|1225|en|1225|qid=Q5403|lt=1225|1=1225}}
-* {{ill|1285|en|1285|qid=Q5546|lt=1285|1=1285}}
-* {{ill|1345|en|1345|qid=Q6077|lt=1345|1=1345}}
-* {{ill|1405|en|1405|qid=Q6124|lt=1405|1=1405}}
-* {{ill|1465|en|1465|qid=Q6556|lt=1465|1=1465}}
-* {{ill|1525|en|1525|qid=Q6314|lt=1525|1=1525}}
-* {{ill|1585|en|1585|qid=Q6736|lt=1585|1=1585}}
-* {{ill|1645|en|1645|qid=Q6925|lt=1645|1=1645}}
-* {{ill|1705|en|1705|qid=Q6830|lt=1705|1=1705}}
-* {{ill|1765|en|1765|qid=Q7665|lt=1765|1=1765}}
-* {{ill|1825|en|1825|qid=Q6997|lt=1825|1=1825}}
-* {{ill|1885|en|1885|qid=Q7821|lt=1885|1=1885}}
-* {{ill|1945|en|1945|qid=Q5240|lt=1945|1=1945}}
+* {{ill|1045|en|1045|qid=Q19351|lt=1045}}
+* {{ill|1105|en|1105|qid=Q13719|lt=1105}}
+* {{ill|1165|en|1165|qid=Q19676|lt=1165}}
+* {{ill|1225|en|1225|qid=Q5403|lt=1225}}
+* {{ill|1285|en|1285|qid=Q5546|lt=1285}}
+* {{ill|1345|en|1345|qid=Q6077|lt=1345}}
+* {{ill|1405|en|1405|qid=Q6124|lt=1405}}
+* {{ill|1465|en|1465|qid=Q6556|lt=1465}}
+* {{ill|1525|en|1525|qid=Q6314|lt=1525}}
+* {{ill|1585|en|1585|qid=Q6736|lt=1585}}
+* {{ill|1645|en|1645|qid=Q6925|lt=1645}}
+* {{ill|1705|en|1705|qid=Q6830|lt=1705}}
+* {{ill|1765|en|1765|qid=Q7665|lt=1765}}
+* {{ill|1825|en|1825|qid=Q6997|lt=1825}}
+* {{ill|1885|en|1885|qid=Q7821|lt=1885}}
+* {{ill|1945|en|1945|qid=Q5240|lt=1945}}
 |
-* {{ill|2005|en|2005|qid=Q2019|lt=2005|1=2005}}
-* {{ill|2065|en|2065|qid=Q890604|lt=2065|1=2065}}
-* {{ill|2125|en|2125|qid=Q2104673|lt=2125|1=2125}}
-* {{ill|2185|en|2185|qid=Q19826222|lt=2185|1=2185}}
+* {{ill|2005|en|2005|qid=Q2019|lt=2005}}
+* {{ill|2065|en|2065|qid=Q890604|lt=2065}}
+* {{ill|2125|en|2125|qid=Q2104673|lt=2125}}
+* {{ill|2185|en|2185|qid=Q19826222|lt=2185}}
 * [[:en:2245|2245]]
 * [[:en:2305|2305]]
 * [[:en:2365|2365]]
 * [[:en:2425|2425]]
-* {{ill|2485|en|2485|qid=Q97234565|lt=2485|1=2485}}
+* {{ill|2485|en|2485|qid=Q97234565|lt=2485}}
 * [[2545]]
 * [[2605]]
 * [[2665]]
@@ -80,12 +80,12 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 ==Months of Yin Wood Rooster==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 0 or 5 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} are {{ill|Kou|ja|甲|1=Kinoe (甲)|lt=Kinoe (甲)|2=ja|3=甲|4=zh|5=甲|12=simple|13=User:Immanuelle/Kou}} or {{ill|Otsu|ja|乙|1=Kinoto (乙)|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Otsu}}), the month of {{ill|August|en|August|qid=Q122|lt=August|1=August}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)|1=Month}} of {{ill|Otsuyuu|ja|乙酉|1=Yin Wood Rooster|2=ja|12=simple|13=User:Immanuelle/Otsuyuu|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Bailu (solar term)|en|Bailu (solar term)|qid=Q1191003|lt=White Dew|1=Bailu (solar term)}} until the day before {{ill|Hanlu|en|Hanlu|qid=Q1193124|lt=Lesser Cold|1=Hanlu}}) as applicable.
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 0 or 5 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Kinoe (甲)|ja|甲|lt=Kinoe (甲)|2=ja|3=甲|4=zh|5=甲|12=simple|13=User:Immanuelle/Kou}} or {{ill|Kinoto (乙)|ja|乙|lt=Kinoto (乙)|2=ja|3=乙|4=zh|5=乙|12=simple|13=User:Immanuelle/Otsu}}), the month of {{ill|August|en|August|qid=Q122|lt=August}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)}} of {{ill|Yin Wood Rooster|ja|乙酉|2=ja|12=simple|13=User:Immanuelle/Otsuyuu|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term}} (from {{ill|Bailu (solar term)|en|Bailu (solar term)|qid=Q1191003|lt=White Dew}} until the day before {{ill|Hanlu|en|Hanlu|qid=Q1193124|lt=Lesser Cold}}) as applicable.
 
 ==Days of Yin Wood Rooster==
-The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selected day}} for {{ill|Otsuyuu|ja|乙酉|1=Yin Wood Rooster|2=ja|12=simple|13=User:Immanuelle/Otsuyuu|ja_comment=jawiki link invalid}} is as follows.
+The {{ill|Senjitsu|ja|選日|12=simple|13=User:Immanuelle/selected day}} for {{ill|Yin Wood Rooster|ja|乙酉|2=ja|12=simple|13=User:Immanuelle/Otsuyuu|ja_comment=jawiki link invalid}} is as follows.
 ==={{nihongo|selection days|選日|senjitsu}}===
-乙酉の日 is the 2nd day of {{ill|Ten Ten Ichijou|ja|十方暮|12=simple|13=User:Immanuelle/Ten Ten Ichijou|1=Ten directions|comment=changed title based on wikidata|qid=Q11405067}}.
+乙酉の日 is the 2nd day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Ten Ten Ichijou|comment=changed title based on wikidata|qid=Q11405067}}.
 
 ==See Also==
 *{{prefix}}
@@ -93,7 +93,7 @@ The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selecte
 
 {{translated page|ja|qq=Yin Wood Rooster|乙酉|version=104328711|comment=Imported full ja history}}
 
-{{wikidata link|Q185265|af|Houthaan (astrologie)|cdo|Ĭk-iū|de|Holz-Hahn|fr|Coq de bois|hak|Yet-yû|ja|乙酉|ko|을유|nds|Holt-Hahn|vi|Ất Dậu|za|Ietyoux|zh-min-nan|It-iú|zh-yue|乙酉|zh|乙酉|en|Wood Rooster|ar|Yin Wood Rooster}}
+{{wikidata link|Q185265|af|Houthaan (astrologie)|cdo|Ĭk-iū|de|Holz-Hahn|fr|Coq de bois|hak|Yet-yû|ja|乙酉|ko|을유|nds|Holt-Hahn|vi|Ất Dậu|za|Ietyoux|zh-min-nan|It-iú|zh-yue|乙酉|zh|乙酉|en|Wood Rooster|ar|Yin Wood Rooster|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

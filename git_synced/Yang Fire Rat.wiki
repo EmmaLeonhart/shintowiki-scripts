@@ -1,11 +1,11 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yang Fire Rat|kanji=丙子|romaji=hinoe nezumi|onyomi=heishi|p=bǐngzǐ|w=ping-tzŭ|mi=pʰiŋ²¹ tsɨ|y=bing2 zi2|j=bing2 zi2|ci=pɪŋ tsi|mc=pæŋ t͡si|oc-bs=praŋ tsi}}
 {{Sexagenary cycle}}
 
-'''Yang Fire Rat''' (丙子, ''hinoe nezumi''; onyomi ''heishi'') is the 13th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yang Fire Rat''' (丙子, ''hinoe nezumi''; onyomi ''heishi'') is the 13th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 13th of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Pig|ja|乙亥|1=Yin Wood Pig}} and followed by {{ill|Yin Fire Ox|ja|丁丑|1=Yin Fire Ox}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''子'' (Rat) is Yang Water; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 13th of the sixty stem-branch combinations, preceded by {{ill|Yin Wood Pig|ja|乙亥}} and followed by {{ill|Yin Fire Ox|ja|丁丑}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''丙'' is Yang Fire, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''子'' (Rat) is Yang Water; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yang Fire Rat (丙子)
@@ -18,56 +18,56 @@ It is the 13th of the sixty stem-branch combinations, preceded by {{ill|Yin Wood
 ** Vietnamese (Hán-Việt): Bính Tý
 
 ==Years of Yang Fire Rat==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 16 when divided by 60 is a year of Yang Fire Rat (丙子).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 16 when divided by 60 is a year of Yang Fire Rat (丙子).
 {| class="wikitable"
 |+ '''Years of Yang Fire Rat (丙子)'''
 |-
-! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}}
-!! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}}
-!! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium}}
+!! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium}}
+!! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium}}
 |-
 |
-* {{ill|AD 16|en|AD 16|qid=Q23763|lt=16 AD|1=AD 16}}
-* {{ill|AD 76|en|AD 76|qid=Q24845|lt=76 AD|1=AD 76}}
-* {{ill|AD 136|en|AD 136|qid=Q34237|lt=136 AD|1=AD 136}}
-* {{ill|196|en|196|qid=Q31542|lt=196 AD|1=196}}
-* {{ill|256|en|256|qid=Q31712|lt=256 AD|1=256}}
-* {{ill|316|en|316|qid=Q31894|lt=316 AD|1=316}}
-* {{ill|376|en|376|qid=Q48040|lt=376 AD|1=376}}
-* {{ill|436|en|436|qid=Q33301|lt=436 AD|1=436}}
-* {{ill|496|en|496|qid=Q30052|lt=496 AD|1=496}}
-* {{ill|556|en|556|qid=Q32224|lt=556 AD|1=556}}
-* {{ill|616|en|616|qid=Q33263|lt=616 AD|1=616}}
-* {{ill|676|en|676|qid=Q31098|lt=676 AD|1=676}}
-* {{ill|736|en|736|qid=Q23581|lt=736 AD|1=736}}
-* {{ill|796|en|796|qid=Q33452|lt=796 AD|1=796}}
-* {{ill|856|en|856|qid=Q30370|lt=856 AD|1=856}}
-* {{ill|916|en|916|qid=Q24886|lt=916 AD|1=916}}
-* {{ill|976|en|976|qid=Q23782|lt=976 AD|1=976}}
+* {{ill|AD 16|en|AD 16|qid=Q23763|lt=16 AD}}
+* {{ill|AD 76|en|AD 76|qid=Q24845|lt=76 AD}}
+* {{ill|AD 136|en|AD 136|qid=Q34237|lt=136 AD}}
+* {{ill|196|en|196|qid=Q31542|lt=196 AD}}
+* {{ill|256|en|256|qid=Q31712|lt=256 AD}}
+* {{ill|316|en|316|qid=Q31894|lt=316 AD}}
+* {{ill|376|en|376|qid=Q48040|lt=376 AD}}
+* {{ill|436|en|436|qid=Q33301|lt=436 AD}}
+* {{ill|496|en|496|qid=Q30052|lt=496 AD}}
+* {{ill|556|en|556|qid=Q32224|lt=556 AD}}
+* {{ill|616|en|616|qid=Q33263|lt=616 AD}}
+* {{ill|676|en|676|qid=Q31098|lt=676 AD}}
+* {{ill|736|en|736|qid=Q23581|lt=736 AD}}
+* {{ill|796|en|796|qid=Q33452|lt=796 AD}}
+* {{ill|856|en|856|qid=Q30370|lt=856 AD}}
+* {{ill|916|en|916|qid=Q24886|lt=916 AD}}
+* {{ill|976|en|976|qid=Q23782|lt=976 AD}}
 |
-* {{ill|1036|en|1036|qid=Q19328|lt=1036 AD|1=1036}}
-* {{ill|1096|en|1096|qid=Q19485|lt=1096 AD|1=1096}}
-* {{ill|1156|en|1156|qid=Q19653|lt=1156 AD|1=1156}}
-* {{ill|1216|en|1216|qid=Q5373|lt=1216 AD|1=1216}}
-* {{ill|1276|en|1276|qid=Q5530|lt=1276 AD|1=1276}}
-* {{ill|1336|en|1336|qid=Q6028|lt=1336 AD|1=1336}}
-* {{ill|1396|en|1396|qid=Q6405|lt=1396 AD|1=1396}}
-* {{ill|1456|en|1456|qid=Q6517|lt=1456 AD|1=1456}}
-* {{ill|1516|en|1516|qid=Q6212|lt=1516 AD|1=1516}}
-* {{ill|1576|en|1576|qid=Q6700|lt=1576 AD|1=1576}}
-* {{ill|1636|en|1636|qid=Q6885|lt=1636 AD|1=1636}}
-* {{ill|1696|en|1696|qid=Q7699|lt=1696 AD|1=1696}}
-* {{ill|1756|en|1756|qid=Q7632|lt=1756 AD|1=1756}}
-* {{ill|1816|en|1816|qid=Q6953|lt=1816 AD|1=1816}}
-* {{ill|1876|en|1876|qid=Q7766|lt=1876 AD|1=1876}}
-* {{ill|1936|en|1936|qid=Q18649|lt=1936 AD|1=1936}}
-* {{ill|1996|en|1996|qid=Q2070|lt=1996 AD|1=1996}}
+* {{ill|1036|en|1036|qid=Q19328|lt=1036 AD}}
+* {{ill|1096|en|1096|qid=Q19485|lt=1096 AD}}
+* {{ill|1156|en|1156|qid=Q19653|lt=1156 AD}}
+* {{ill|1216|en|1216|qid=Q5373|lt=1216 AD}}
+* {{ill|1276|en|1276|qid=Q5530|lt=1276 AD}}
+* {{ill|1336|en|1336|qid=Q6028|lt=1336 AD}}
+* {{ill|1396|en|1396|qid=Q6405|lt=1396 AD}}
+* {{ill|1456|en|1456|qid=Q6517|lt=1456 AD}}
+* {{ill|1516|en|1516|qid=Q6212|lt=1516 AD}}
+* {{ill|1576|en|1576|qid=Q6700|lt=1576 AD}}
+* {{ill|1636|en|1636|qid=Q6885|lt=1636 AD}}
+* {{ill|1696|en|1696|qid=Q7699|lt=1696 AD}}
+* {{ill|1756|en|1756|qid=Q7632|lt=1756 AD}}
+* {{ill|1816|en|1816|qid=Q6953|lt=1816 AD}}
+* {{ill|1876|en|1876|qid=Q7766|lt=1876 AD}}
+* {{ill|1936|en|1936|qid=Q18649|lt=1936 AD}}
+* {{ill|1996|en|1996|qid=Q2070|lt=1996 AD}}
 |
 * {{ill|2056 AD|ja|2056年|12=simple|13=User:Immanuelle/2056|comment=likely broken Sexagenary year|lt=2056 AD}}
-* {{ill|2116 AD|ja|2116年|12=simple|13=User:Immanuelle/2116|comment=changed title based on wikidata|lt=2116 AD|ja_comment=fixed jawiki redirect|3=22世紀|1=22nd century|qid=Q11177}}
-* {{ill|2176 AD|ja|2176年|12=simple|13=User:Immanuelle/2176|comment=changed title based on wikidata|lt=2176 AD|ja_comment=fixed jawiki redirect|3=22世紀|1=22nd century|qid=Q11177}}
-* {{ill|2236 AD|ja|2236年|12=simple|13=User:Immanuelle/2236|comment=changed title based on wikidata|lt=2236 AD|ja_comment=fixed jawiki redirect|3=23世紀|1=23rd century|qid=Q49832}}
-* {{ill|2296 AD|ja|2296年|12=simple|13=User:Immanuelle/2296|comment=changed title based on wikidata|lt=2296 AD|ja_comment=fixed jawiki redirect|3=23世紀|1=23rd century|qid=Q49832}}
+* {{ill|22nd century|ja|2116年|12=simple|13=User:Immanuelle/2116|comment=changed title based on wikidata|lt=2116 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2176年|12=simple|13=User:Immanuelle/2176|comment=changed title based on wikidata|lt=2176 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2236年|12=simple|13=User:Immanuelle/2236|comment=changed title based on wikidata|lt=2236 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2296年|12=simple|13=User:Immanuelle/2296|comment=changed title based on wikidata|lt=2296 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2356 AD|ja|2356年|12=simple|13=User:Immanuelle/2356|comment=likely broken Sexagenary year|lt=2356 AD|ja_comment=jawiki link invalid}}
 * {{ill|2416 AD|ja|2416年|12=simple|13=User:Immanuelle/2416|comment=likely broken Sexagenary year|lt=2416 AD|ja_comment=jawiki link invalid}}
 * {{ill|2476 AD|ja|2476年|12=simple|13=User:Immanuelle/2476|comment=likely broken Sexagenary year|lt=2476 AD|ja_comment=jawiki link invalid}}
@@ -82,12 +82,12 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 ==Months of Yang Fire Rat==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 4 or 9 (corresponding to the heavenly stems {{ill|Kou|ja|甲|1=Kinoe (甲)|lt=Kinoe (甲)|2=ja|3=甲|4=zh|5=甲|12=simple|13=User:Immanuelle/Kou}} and {{ill|Ki|ja|己|1=Tsuchinoto (己)|lt=Tsuchinoto (己)|2=ja|3=己|4=zh|5=己|12=simple|13=User:Immanuelle/Ki}}), the month of {{ill|November|en|November|qid=Q125|lt=November|1=November}} is designated as the Besshi {{ill|Month|en|Month|qid=Q5151|lt=Month|1=Month}}. However, the term "month" here may refer either to the month of the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the seasonal month (from {{ill|Daxue (solar term)|en|Daxue (solar term)|qid=Q337815|lt=Daisetsu|1=Daxue (solar term)}} until the day before {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Lesser Cold|1=Xiaohan}}) as applicable.
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 4 or 9 (corresponding to the heavenly stems {{ill|Kinoe (甲)|ja|甲|lt=Kinoe (甲)|2=ja|3=甲|4=zh|5=甲|12=simple|13=User:Immanuelle/Kou}} and {{ill|Tsuchinoto (己)|ja|己|lt=Tsuchinoto (己)|2=ja|3=己|4=zh|5=己|12=simple|13=User:Immanuelle/Ki}}), the month of {{ill|November|en|November|qid=Q125|lt=November}} is designated as the Besshi {{ill|Month|en|Month|qid=Q5151|lt=Month}}. However, the term "month" here may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the seasonal month (from {{ill|Daxue (solar term)|en|Daxue (solar term)|qid=Q337815|lt=Daisetsu}} until the day before {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Lesser Cold}}) as applicable.
 
 ==Days of Yang Fire Rat==
-The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selected day}} for Besshi is as follows.
+The {{ill|Senjitsu|ja|選日|12=simple|13=User:Immanuelle/selected day}} for Besshi is as follows.
 ===Selected Day (選日)===
-Besshi day is the 7th (final) day of the {{ill|Hando|ja|犯土|lt=Hando|lt_ja=大土|12=simple|13=User:Immanuelle/Hando|1=Tsuchi (Japanese term)|comment=changed title based on wikidata|qid=Q11571306}} period.
+Besshi day is the 7th (final) day of the {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Hando|lt_ja=大土|12=simple|13=User:Immanuelle/Hando|comment=changed title based on wikidata|qid=Q11571306}} period.
 
 ==See Also==
 *{{prefix}}
@@ -95,7 +95,7 @@ Besshi day is the 7th (final) day of the {{ill|Hando|ja|犯土|lt=Hando|lt_ja=�
 
 {{translated page|ja|qq=Yang Fire Rat|丙子|version=86099640|comment=Imported full ja history}}
 
-{{wikidata link|Q1062017|af|Vuurrot (astrologie)|cdo|Bīng-cṳ̄|de|Feuer-Ratte|fr|Rat de feu|hak|Piáng-chṳ́|ja|丙子|ko|병자|nds|Füür-Rött|vi|Bính Tý|za|Bingjceij|zh-min-nan|Péng-chú|zh-yue|丙子|zh|丙子|en|Fire Rat|ar|Yang Fire Rat}}
+{{wikidata link|Q1062017|af|Vuurrot (astrologie)|cdo|Bīng-cṳ̄|de|Feuer-Ratte|fr|Rat de feu|hak|Piáng-chṳ́|ja|丙子|ko|병자|nds|Füür-Rött|vi|Bính Tý|za|Bingjceij|zh-min-nan|Péng-chú|zh-yue|丙子|zh|丙子|en|Fire Rat|ar|Yang Fire Rat|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

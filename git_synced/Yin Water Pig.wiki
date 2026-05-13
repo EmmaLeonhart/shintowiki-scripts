@@ -1,10 +1,10 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yin Water Pig|kanji=癸亥|romaji=mizunoto i|onyomi=kigai|p=guǐhài|w=kuei-hai|mi=kʷeɪ̯²¹ xaɪ̯|y=gwai2 hoi6|j=gwai2 hoi6|ci=kʷɐi hɐi|mc=kjwɨj ɣəi|oc-bs=kʷeʔ ɢəʔ}}
 {{Sexagenary cycle}}
-'''Yin Water Pig''' (癸亥, ''mizunoto i''; onyomi ''kigai'') is the 60th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yin Water Pig''' (癸亥, ''mizunoto i''; onyomi ''kigai'') is the 60th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 60th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Dog|ja|壬戌|1=Yang Water Dog}} and followed by {{ill|Yang Wood Rat|ja|甲子|1=Yang Wood Rat}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''亥'' (Pig) is Yin Water; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 60th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Dog|ja|壬戌}} and followed by {{ill|Yang Wood Rat|ja|甲子}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''亥'' (Pig) is Yin Water; together they form a Biwa (Mutual Harmony) relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yin Water Pig (癸亥)
@@ -17,57 +17,57 @@ It is the 60th of the sixty stem-branch combinations, preceded by {{ill|Yang Wat
 ** Vietnamese (Hán-Việt): Quý Hợi
 
 ==Years of Yin Water Pig==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 3 when divided by 60 is a year of Yin Water Pig (癸亥).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 3 when divided by 60 is a year of Yin Water Pig (癸亥).
 {| class="wikitable"
 |+'''Yin Water Pig (癸亥)'s years table'''
 |-
-! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium|1=1st millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium|1=2nd millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium|1=3rd millennium}}
+! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium}}
 |-
 |
-* {{ill|3 AD|ja|3年|12=simple|13=User:Immanuelle/3|comment=changed title based on wikidata|lt=3 AD|1=AD 3|qid=Q19636}}
-* {{ill|AD 63|en|AD 63|qid=Q30471|lt=63 AD|1=AD 63}}
-* {{ill|AD 123|en|AD 123|qid=Q33127|lt=123 AD|1=AD 123}}
-* {{ill|183|en|183|qid=Q31386|lt=183 AD|1=183}}
-* {{ill|243|en|243|qid=Q32076|lt=243 AD|1=243}}
-* {{ill|303|en|303|qid=Q31957|lt=303 AD|1=303}}
-* {{ill|363|en|363|qid=Q47962|lt=363 AD|1=363}}
-* {{ill|423|en|423|qid=Q31205|lt=423 AD|1=423}}
-* {{ill|483|en|483|qid=Q30492|lt=483 AD|1=483}}
-* {{ill|543|en|543|qid=Q30321|lt=543 AD|1=543}}
-* {{ill|603|en|603|qid=Q31050|lt=603 AD|1=603}}
-* {{ill|663|en|663|qid=Q31122|lt=663 AD|1=663}}
-* {{ill|723|en|723|qid=Q23545|lt=723 AD|1=723}}
-* {{ill|783|en|783|qid=Q30557|lt=783 AD|1=783}}
-* {{ill|843|en|843|qid=Q23469|lt=843 AD|1=843}}
-* {{ill|903|en|903|qid=Q23630|lt=903 AD|1=903}}
-* {{ill|963|en|963|qid=Q23562|lt=963 AD|1=963}}
+* {{ill|AD 3|ja|3年|12=simple|13=User:Immanuelle/3|comment=changed title based on wikidata|lt=3 AD|qid=Q19636}}
+* {{ill|AD 63|en|AD 63|qid=Q30471|lt=63 AD}}
+* {{ill|AD 123|en|AD 123|qid=Q33127|lt=123 AD}}
+* {{ill|183|en|183|qid=Q31386|lt=183 AD}}
+* {{ill|243|en|243|qid=Q32076|lt=243 AD}}
+* {{ill|303|en|303|qid=Q31957|lt=303 AD}}
+* {{ill|363|en|363|qid=Q47962|lt=363 AD}}
+* {{ill|423|en|423|qid=Q31205|lt=423 AD}}
+* {{ill|483|en|483|qid=Q30492|lt=483 AD}}
+* {{ill|543|en|543|qid=Q30321|lt=543 AD}}
+* {{ill|603|en|603|qid=Q31050|lt=603 AD}}
+* {{ill|663|en|663|qid=Q31122|lt=663 AD}}
+* {{ill|723|en|723|qid=Q23545|lt=723 AD}}
+* {{ill|783|en|783|qid=Q30557|lt=783 AD}}
+* {{ill|843|en|843|qid=Q23469|lt=843 AD}}
+* {{ill|903|en|903|qid=Q23630|lt=903 AD}}
+* {{ill|963|en|963|qid=Q23562|lt=963 AD}}
 |
-* {{ill|1023|en|1023|qid=Q19263|lt=1023 AD|1=1023}}
-* {{ill|1083|en|1083|qid=Q19455|lt=1083 AD|1=1083}}
-* {{ill|1143|en|1143|qid=Q19617|lt=1143 AD|1=1143}}
-* {{ill|1203|en|1203|qid=Q5227|lt=1203 AD|1=1203}}
-* {{ill|1263|en|1263|qid=Q5512|lt=1263 AD|1=1263}}
-* {{ill|1323|en|1323|qid=Q5771|lt=1323 AD|1=1323}}
-* {{ill|1383|en|1383|qid=Q6341|lt=1383 AD|1=1383}}
-* {{ill|1443|en|1443|qid=Q6417|lt=1443 AD|1=1443}}
-* {{ill|1503|en|1503|qid=Q6141|lt=1503 AD|1=1503}}
-* {{ill|1563|en|1563|qid=Q6629|lt=1563 AD|1=1563}}
-* {{ill|1623|en|1623|qid=Q6818|lt=1623 AD|1=1623}}
-* {{ill|1683|en|1683|qid=Q7651|lt=1683 AD|1=1683}}
-* {{ill|1743|en|1743|qid=Q7580|lt=1743 AD|1=1743}}
-* {{ill|1803|en|1803|qid=Q6887|lt=1803 AD|1=1803}}
-* {{ill|1863|en|1863|qid=Q7701|lt=1863 AD|1=1863}}
-* {{ill|1923|en|1923|qid=Q2169|lt=1923 AD|1=1923}}
-* {{ill|1983|en|1983|qid=Q2434|lt=1983 AD|1=1983}}
+* {{ill|1023|en|1023|qid=Q19263|lt=1023 AD}}
+* {{ill|1083|en|1083|qid=Q19455|lt=1083 AD}}
+* {{ill|1143|en|1143|qid=Q19617|lt=1143 AD}}
+* {{ill|1203|en|1203|qid=Q5227|lt=1203 AD}}
+* {{ill|1263|en|1263|qid=Q5512|lt=1263 AD}}
+* {{ill|1323|en|1323|qid=Q5771|lt=1323 AD}}
+* {{ill|1383|en|1383|qid=Q6341|lt=1383 AD}}
+* {{ill|1443|en|1443|qid=Q6417|lt=1443 AD}}
+* {{ill|1503|en|1503|qid=Q6141|lt=1503 AD}}
+* {{ill|1563|en|1563|qid=Q6629|lt=1563 AD}}
+* {{ill|1623|en|1623|qid=Q6818|lt=1623 AD}}
+* {{ill|1683|en|1683|qid=Q7651|lt=1683 AD}}
+* {{ill|1743|en|1743|qid=Q7580|lt=1743 AD}}
+* {{ill|1803|en|1803|qid=Q6887|lt=1803 AD}}
+* {{ill|1863|en|1863|qid=Q7701|lt=1863 AD}}
+* {{ill|1923|en|1923|qid=Q2169|lt=1923 AD}}
+* {{ill|1983|en|1983|qid=Q2434|lt=1983 AD}}
 |
 * {{ill|2043 AD|ja|2043年|12=simple|13=User:Immanuelle/2043|comment=likely broken Sexagenary year|lt=2043 AD}}
-* {{ill|2103 AD|ja|2103年|12=simple|13=User:Immanuelle/2103|comment=changed title based on wikidata|lt=2103 AD|ja_comment=jawiki redirects to 2100年代|1=2100s|qid=Q1209304}}
-* {{ill|2163 AD|ja|2163年|12=simple|13=User:Immanuelle/2163|comment=changed title based on wikidata|lt=2163 AD|ja_comment=jawiki redirects to 22世紀|1=22nd century|qid=Q11177}}
-* {{ill|2223 AD|ja|2223年|12=simple|13=User:Immanuelle/2223|comment=changed title based on wikidata|lt=2223 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|qid=Q49832}}
-* {{ill|2283 AD|ja|2283年|12=simple|13=User:Immanuelle/2283|comment=changed title based on wikidata|lt=2283 AD|ja_comment=jawiki redirects to 23世紀|1=23rd century|qid=Q49832}}
+* {{ill|2100s|ja|2103年|12=simple|13=User:Immanuelle/2103|comment=changed title based on wikidata|lt=2103 AD|ja_comment=jawiki redirects to 2100年代|qid=Q1209304}}
+* {{ill|22nd century|ja|2163年|12=simple|13=User:Immanuelle/2163|comment=changed title based on wikidata|lt=2163 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2223年|12=simple|13=User:Immanuelle/2223|comment=changed title based on wikidata|lt=2223 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2283年|12=simple|13=User:Immanuelle/2283|comment=changed title based on wikidata|lt=2283 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
 * {{ill|2343 AD|ja|2343年|12=simple|13=User:Immanuelle/2343|comment=likely broken Sexagenary year|lt=2343 AD|ja_comment=jawiki link invalid}}
 * {{ill|2403 AD|ja|2403年|12=simple|13=User:Immanuelle/2403|comment=likely broken Sexagenary year|lt=2403 AD|ja_comment=jawiki link invalid}}
-* {{ill|2463 AD|ja|2463年|12=simple|13=User:Immanuelle/2463|comment=changed title based on wikidata|lt=2463 AD|ja_comment=jawiki redirects to 25世紀|1=25th century|qid=Q49839}}
+* {{ill|25th century|ja|2463年|12=simple|13=User:Immanuelle/2463|comment=changed title based on wikidata|lt=2463 AD|ja_comment=jawiki redirects to 25世紀|qid=Q49839}}
 * {{ill|2523 AD|ja|2523年|12=simple|13=User:Immanuelle/2523|comment=likely broken Sexagenary year|lt=2523 AD|ja_comment=jawiki link invalid}}
 * {{ill|2583 AD|ja|2583年|12=simple|13=User:Immanuelle/2583|comment=likely broken Sexagenary year|lt=2583 AD|ja_comment=jawiki link invalid}}
 * {{ill|2643 AD|ja|2643年|12=simple|13=User:Immanuelle/2643|comment=likely broken Sexagenary year|lt=2643 AD|ja_comment=jawiki link invalid}}
@@ -78,9 +78,9 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 * {{ill|2943 AD|ja|2943年|12=simple|13=User:Immanuelle/2943|comment=likely broken Sexagenary year|lt=2943 AD|ja_comment=jawiki link invalid}}
 |}
 ==Months of Yin Water Pig==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year whose final digit is 3 or 8 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems|1=Heavenly Stems}} are {{ill|Gui|ja|癸|1=Mizunoto (癸)|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|12=simple|13=User:Immanuelle/Gui}} or {{ill|Bo|ja|戊|1=Tsuchinoe (戊)|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Bo}}), the month of {{ill|October|en|October|qid=Q124|lt=October|1=October}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)|1=Month}} of {{ill|Kigai|ja|癸亥|1=Yin Water Pig|2=ja|12=simple|13=User:Immanuelle/Kigai|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Lunisolar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term|1=Solar term}} (from {{ill|Lidong|en|Lidong|qid=Q1191018|lt=Beginning of Winter|1=Lidong}} until the day before {{ill|Daxue (solar term)|en|Daxue (solar term)|qid=Q337815|lt=Heavy Snow|1=Daxue (solar term)}}) as applicable.
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 3 or 8 (when the {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Mizunoto (癸)|ja|癸|lt=Mizunoto (癸)|2=ja|3=癸|4=zh|5=癸|12=simple|13=User:Immanuelle/Gui}} or {{ill|Tsuchinoe (戊)|ja|戊|lt=Tsuchinoe (戊)|2=ja|3=戊|4=zh|5=戊|12=simple|13=User:Immanuelle/Bo}}), the month of {{ill|October|en|October|qid=Q124|lt=October}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)}} of {{ill|Yin Water Pig|ja|癸亥|2=ja|12=simple|13=User:Immanuelle/Kigai|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunisolar}} or to the {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar term}} (from {{ill|Lidong|en|Lidong|qid=Q1191018|lt=Beginning of Winter}} until the day before {{ill|Daxue (solar term)|en|Daxue (solar term)|qid=Q337815|lt=Heavy Snow}}) as applicable.
 ==Days of Yin Water Pig==
-The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selected day}} for {{ill|Kigai|ja|癸亥|1=Yin Water Pig|2=ja|12=simple|13=User:Immanuelle/Kigai|ja_comment=jawiki link invalid}} is the last day of {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle/Hassen}}.
+The {{ill|Senjitsu|ja|選日|12=simple|13=User:Immanuelle/selected day}} for {{ill|Yin Water Pig|ja|癸亥|2=ja|12=simple|13=User:Immanuelle/Kigai|ja_comment=jawiki link invalid}} is the last day of {{ill|Hassen|ja|八専|12=simple|13=User:Immanuelle/Hassen}}.
 
 ==See Also==
 *{{prefix}}
@@ -88,7 +88,7 @@ The {{ill|selected day|ja|選日|1=Senjitsu|12=simple|13=User:Immanuelle/selecte
 
 {{translated page|ja|qq=Yin Water Pig|癸亥|version=84123860|comment=Imported full ja history}}
 
-{{wikidata link|Q904914|af|Watervark (astrologie)|cdo|Gŭi-hâi|de|Wasser-Schwein|hak|Kui-hoi|ja|癸亥|ko|계해|vi|Quý Hợi|za|Gveiqhaih|zh-min-nan|Kùi-hāi|zh-yue|癸亥|zh|癸亥|fr|Cochon de eau|ar|Yin Water Pig}}
+{{wikidata link|Q904914|af|Watervark (astrologie)|cdo|Gŭi-hâi|de|Wasser-Schwein|hak|Kui-hoi|ja|癸亥|ko|계해|vi|Quý Hợi|za|Gveiqhaih|zh-min-nan|Kùi-hāi|zh-yue|癸亥|zh|癸亥|fr|Cochon de eau|ar|Yin Water Pig|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]

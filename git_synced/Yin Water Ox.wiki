@@ -1,10 +1,10 @@
-<!--These are all in the git synced since they have relatively standardized forms and need to be a bit more standardized. Standardize all of the members of [[Category:Sexagenary cycle]] here decently to be more homogenous, mainly focusing on the minor machine translation entropy between them, keeping the intentional content consistent between them-->
+
 
 {{infobox Chinese|l=Yin Water Ox|kanji=癸丑|romaji=mizunoto ushi|onyomi=kichū|p=guǐchǒu|w=kuei-ch'ou|mi=kʷeɪ̯²¹ ʈʂʰoʊ̯|y=gwai2 chau2|j=gwai2 chau2|ci=kʷɐi tsʰɐu̯|mc=kjwɨj tʂʰjuw|oc-bs=kʷeʔ ʈʂʰuʔ}}
 {{Sexagenary cycle}}
-'''Yin Water Ox''' (癸丑, ''mizunoto ushi''; onyomi ''kichū'') is the 50th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle|1=Sexagenary cycle}}.
+'''Yin Water Ox''' (癸丑, ''mizunoto ushi''; onyomi ''kichū'') is the 50th of the sixty combinations of the {{ill|Sexagenary cycle|en|Sexagenary cycle|qid=Q246658|lt=Sexagenary cycle}}.
 
-It is the 50th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Rat|ja|壬子|1=Yang Water Rat}} and followed by {{ill|Yang Wood Tiger|ja|甲寅|1=Yang Wood Tiger}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem|1=Heavenly Stems}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch|1=Earthly Branches}} ''丑'' (Ox) is Yin Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing|1=Wuxing (Chinese philosophy)}}.
+It is the 50th of the sixty stem-branch combinations, preceded by {{ill|Yang Water Rat|ja|壬子}} and followed by {{ill|Yang Wood Tiger|ja|甲寅}}. The {{ill|Heavenly Stems|en|Heavenly Stems|qid=Q1190985|lt=Heavenly Stem}} ''癸'' is Yin Water, and the {{ill|Earthly Branches|en|Earthly Branches|qid=Q1072961|lt=Earthly Branch}} ''丑'' (Ox) is Yin Earth; together they form a Mutual Destruction relationship in {{ill|Wuxing (Chinese philosophy)|en|Wuxing (Chinese philosophy)|qid=Q218652|lt=Wuxing}}.
 
 ==Pronunciation==
 * English: Yin Water Ox (癸丑)
@@ -17,7 +17,7 @@ It is the 50th of the sixty stem-branch combinations, preceded by {{ill|Yang Wat
 ** Vietnamese (Hán-Việt): Quý Sửu
 
 ==Years of Yin Water Ox==
-A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year that leaves a remainder of 53 when divided by 60 is a year of Yin Water Ox (癸丑).
+A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a remainder of 53 when divided by 60 is a year of Yin Water Ox (癸丑).
 
 {| class="wikitable"
 |+ '''Years of Yin Water Ox (癸丑)'''
@@ -25,45 +25,45 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 ! [[:en:1st Millennium|1st Millennium]] !! [[2nd Millennium]] !! [[3rd Millennium]]
 |-
 |
-* {{ill|53|en|53|qid=Q4640335|lt=53|1=53}}
-* {{ill|113|en|113|qid=Q416664|lt=113|1=113}}
-* {{ill|173|en|173|qid=Q30344|lt=173|1=173}}
-* {{ill|233|en|233|qid=Q31237|lt=233|1=233}}
-* {{ill|293|en|293|qid=Q33318|lt=293|1=293}}
-* {{ill|353|en|353|qid=Q32275|lt=353|1=353}}
-* {{ill|413|en|413|qid=Q31510|lt=413|1=413}}
-* {{ill|473|en|473|qid=Q31611|lt=473|1=473}}
-* {{ill|533|en|533|qid=Q30482|lt=533|1=533}}
-* {{ill|593|en|593|qid=Q33889|lt=593|1=593}}
-* {{ill|653|en|653|qid=Q30094|lt=653|1=653}}
-* {{ill|713|en|713|qid=Q23523|lt=713|1=713}}
-* {{ill|773|en|773|qid=Q31131|lt=773|1=773}}
-* {{ill|833|en|833|qid=Q30377|lt=833|1=833}}
-* {{ill|893|en|893|qid=Q24762|lt=893|1=893}}
-* {{ill|953|en|953|qid=Q23586|lt=953|1=953}}
+* {{ill|53|en|53|qid=Q4640335|lt=53}}
+* {{ill|113|en|113|qid=Q416664|lt=113}}
+* {{ill|173|en|173|qid=Q30344|lt=173}}
+* {{ill|233|en|233|qid=Q31237|lt=233}}
+* {{ill|293|en|293|qid=Q33318|lt=293}}
+* {{ill|353|en|353|qid=Q32275|lt=353}}
+* {{ill|413|en|413|qid=Q31510|lt=413}}
+* {{ill|473|en|473|qid=Q31611|lt=473}}
+* {{ill|533|en|533|qid=Q30482|lt=533}}
+* {{ill|593|en|593|qid=Q33889|lt=593}}
+* {{ill|653|en|653|qid=Q30094|lt=653}}
+* {{ill|713|en|713|qid=Q23523|lt=713}}
+* {{ill|773|en|773|qid=Q31131|lt=773}}
+* {{ill|833|en|833|qid=Q30377|lt=833}}
+* {{ill|893|en|893|qid=Q24762|lt=893}}
+* {{ill|953|en|953|qid=Q23586|lt=953}}
 |
-* {{ill|1013|en|1013|qid=Q19241|lt=1013|1=1013}}
-* {{ill|1073|en|1073|qid=Q19437|lt=1073|1=1073}}
-* {{ill|1133|en|1133|qid=Q19586|lt=1133|1=1133}}
-* {{ill|1193|en|1193|qid=Q19741|lt=1193|1=1193}}
-* {{ill|1253|en|1253|qid=Q5498|lt=1253|1=1253}}
-* {{ill|1313|en|1313|qid=Q5735|lt=1313|1=1313}}
-* {{ill|1373|en|1373|qid=Q6261|lt=1373|1=1373}}
-* {{ill|1433|en|1433|qid=Q6356|lt=1433|1=1433}}
-* {{ill|1493|en|1493|qid=Q6687|lt=1493|1=1493}}
-* {{ill|1553|en|1553|qid=Q6568|lt=1553|1=1553}}
-* {{ill|1613|en|1613|qid=Q6776|lt=1613|1=1613}}
-* {{ill|1673|en|1673|qid=Q7617|lt=1673|1=1673}}
-* {{ill|1733|en|1733|qid=Q6972|lt=1733|1=1733}}
-* {{ill|1793|en|1793|qid=Q7807|lt=1793|1=1793}}
-* {{ill|1853|en|1853|qid=Q7666|lt=1853|1=1853}}
-* {{ill|1913|en|1913|qid=Q2080|lt=1913|1=1913}}
-* {{ill|1973|en|1973|qid=Q2477|lt=1973|1=1973}}
+* {{ill|1013|en|1013|qid=Q19241|lt=1013}}
+* {{ill|1073|en|1073|qid=Q19437|lt=1073}}
+* {{ill|1133|en|1133|qid=Q19586|lt=1133}}
+* {{ill|1193|en|1193|qid=Q19741|lt=1193}}
+* {{ill|1253|en|1253|qid=Q5498|lt=1253}}
+* {{ill|1313|en|1313|qid=Q5735|lt=1313}}
+* {{ill|1373|en|1373|qid=Q6261|lt=1373}}
+* {{ill|1433|en|1433|qid=Q6356|lt=1433}}
+* {{ill|1493|en|1493|qid=Q6687|lt=1493}}
+* {{ill|1553|en|1553|qid=Q6568|lt=1553}}
+* {{ill|1613|en|1613|qid=Q6776|lt=1613}}
+* {{ill|1673|en|1673|qid=Q7617|lt=1673}}
+* {{ill|1733|en|1733|qid=Q6972|lt=1733}}
+* {{ill|1793|en|1793|qid=Q7807|lt=1793}}
+* {{ill|1853|en|1853|qid=Q7666|lt=1853}}
+* {{ill|1913|en|1913|qid=Q2080|lt=1913}}
+* {{ill|1973|en|1973|qid=Q2477|lt=1973}}
 |
-* {{ill|2033|en|2033|qid=Q12786|lt=2033|1=2033}}
-* {{ill|2093|en|2093|qid=Q972053|lt=2093|1=2093}}
+* {{ill|2033|en|2033|qid=Q12786|lt=2033}}
+* {{ill|2093|en|2093|qid=Q972053|lt=2093}}
 * [[:en:2153|2153]]
-* {{ill|2213|en|2213|qid=Q47413739|lt=2213|1=2213}}
+* {{ill|2213|en|2213|qid=Q47413739|lt=2213}}
 * [[:en:2273|2273]]
 * [[:en:2333|2333]]
 * [[:en:2393|2393]]
@@ -80,7 +80,7 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era|1=Common Era}} year t
 |}
 
 ==Months of Yin Water Ox==
-The twelfth month (December) of Gregorian calendar years ending in 2 or 7 (Heavenly Stems 壬 or 丁) corresponds to Mizunoto-Ushi months. However, this applies to the {{ill|Lunar calendar|ja|旧暦|1=Japanese Lunisolar Calendar|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar terms|1=Solar term}} (from {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Shōkan|1=Xiaohan}} to the day before {{ill|Lichun|en|Lichun|qid=Q1364685|lt=Risshun|1=Lichun}}) in traditional contexts.
+The twelfth month (December) of Gregorian calendar years ending in 2 or 7 (Heavenly Stems 壬 or 丁) corresponds to Mizunoto-Ushi months. However, this applies to the {{ill|Japanese Lunisolar Calendar|ja|旧暦|11=Japanese Lunisolar Calendar|12=simple|13=User:Immanuelle/Lunar calendar}} or {{ill|Solar term|en|Solar term|qid=Q1190993|lt=Solar terms}} (from {{ill|Xiaohan|en|Xiaohan|qid=Q1190989|lt=Shōkan}} to the day before {{ill|Lichun|en|Lichun|qid=Q1364685|lt=Risshun}}) in traditional contexts.
 
 ==Days of Yin Water Ox==
 === Auspicious Dates ===
@@ -91,7 +91,7 @@ Days of Mizunoto-Ushi are noted as intercalary days during the {{ill|Hassen|ja|�
 
 {{translated page|ja|qq=Yin Water Ox|癸丑|version=84123844|comment=Imported full ja history}}
 
-{{wikidata link|Q267521|af|Wateros (astrologie)|cdo|Gŭi-tiū|de|Wasser-Büffel|hak|Kui-chhiú|ja|癸丑|ko|계축|vi|Quý Sửu|za|Gveiqcouj|zh-min-nan|Kùi-thiú|zh-yue|癸丑|zh|癸丑|en|Water Ox|fr|Buffle de eau|ar|Yin Water Ox}}
+{{wikidata link|Q267521|af|Wateros (astrologie)|cdo|Gŭi-tiū|de|Wasser-Büffel|hak|Kui-chhiú|ja|癸丑|ko|계축|vi|Quý Sửu|za|Gveiqcouj|zh-min-nan|Kùi-thiú|zh-yue|癸丑|zh|癸丑|en|Water Ox|fr|Buffle de eau|ar|Yin Water Ox|check_date=2026-05-12}}
 [[Category:Sexagenary cycle]]
 [[Category:Sexagenary cycle members]]
 [[Category:Git synced pages]]
