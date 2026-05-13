@@ -1,0 +1,59 @@
+name: Sunset Templates Not Transcluded In Mainspace Cat
+
+# One-shot: tags Category:Templates not transcluded in mainspace with
+# Category:crud categories so the crud-deletion pipeline picks it up.
+# Run on/after 2027-07-01, once
+# tag-templates-not-transcluded-anywhere has populated the narrower
+# "in mainspace or categoryspace" category.
+#
+# Trigger manually:
+#   gh workflow run sunset-templates-not-transcluded-in-mainspace-cat.yml
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sunset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Sunset: tag older mainspace-only category as crud"
+        run: |
+          python3 shinto_miraheze/sunset_templates_not_transcluded_in_mainspace_cat.py \
+            --apply \
+            --run-tag "${RUN_TAG}"
