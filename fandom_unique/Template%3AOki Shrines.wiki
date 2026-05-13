@@ -1,0 +1,28 @@
+
+{{Navbox
+| name  = Oki Shrines
+| title = Shrines in Oki
+| listclass = hlist
+ |group2 = Shrines
+ |list2 =
+* [[Mizuwakasu Shrine]]
+* [[Yurahime Shrine]]
+* {{ill|Araki Shrine|en|12=simple|13=User:Immanuelle/Araki Shrine|12=simple|13=User:Immanuelle/Araki Shrine|qq=}}
+* {{ill|Tamawakasu-no-Mikoto Shrine|ja|玉若酢命神社|12=simple|13=User:Immanuelle/Tamawakasu-no-Mikoto Shrine|12=simple|13=User:Immanuelle/Tamawakasu-no-Mikoto Shrine|qq=}}
+}}<noinclude>
+
+==See Also==
+* [[Template:Iki Shrines]]
+* [[Tsushima Shrines]]
+
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Oki Province]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
+<noinclude>
+{{wikidata link||en|template:Oki Shrines|simple|Oki Shrines}}
+[[Category:Templates fixed with noinclude]]
+</noinclude>

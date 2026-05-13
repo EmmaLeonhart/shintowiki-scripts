@@ -1,0 +1,33 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AHakusan_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+{{Navbox
+| name  = Hakusan Faith
+| title = [[Shirayama Hime Shrine|Shirayama Hime Faith]]
+| listclass = hlist
+| image = [[File:Hakusan Sansha Shinzo (Shirayama Hime Jinja).jpg|150px|link=|alt=]]
+ |group1 = Main Deities
+ |list1 =
+* {{nihongo|'''[[Kikurihime|Shirayamahime-no-Okami]]'''| 白山比咩大神|}}, also known as [[Kikurihime]], the deified [[:en:Mount Haku|Hakusan]] volcano
+* {{nihongo|'''[[Izanagi | Izanagi-no-Mikoto]]'''| 伊邪那岐尊||}}, the creator god
+* {{nihongo|'''[[:en:Izanami | Izanami-no-Mikoto]]'''| 伊弉冉尊||}}, the creator goddess
+ |group2 = Head Shrines
+ |list2 =
+* [[Shirayama Hime Shrine]]
+|group3 = Branch shrines
+|list3=
+* {{ill|Hakusan Shrine|ja|白山神社_(新潟市中央区一番堀通町)|12=simple|13=User:Immanuelle/Hakusan Shrine|12=simple|13=User:Immanuelle/Hakusan Shrine|qq=}}
+
+}}<noinclude>
+</noinclude>
+
+<noinclude>{{Draft categories|
+
+}}</noinclude>
+
+<noinclude>{{wikidata link|Q125475277|en|Hakusan Faith|en|Template:Hakusan Faith|fr|Modèle:Palette Foi Hakusan|check_date=2026-05-12}}
+[[Category:11-Template-->[[Category:11-Template-->[[Category:Hakusan Faith]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

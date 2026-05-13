@@ -1,0 +1,93 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AShinmei_shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24975162458|time triggered pipeline]] -->
+
+{{Navbox
+| name  = Shinmei shrines
+| title = [[:en:Shinmei shrines|<span style="color: white;">Shinmei shrines</span>]]
+| titlestyle= background:#767C6B; color:#fff;
+| listclass = hlist
+| image = [[File:Amaterasu cave crop.jpg|100px|link=|alt=]]
+|groupstyle = background:#8f9484; color:#fff;
+| group1 = Gods
+| list1 = {{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Main Deities
+ |list1 =
+* [[Amaterasu]]
+ |group2 = Minor gods
+ |list2 =
+* [[:en:Toyouke-hime|Toyouke-hime]]
+}}
+| group2 = Places
+| list2 ={{Navbox|child
+ |groupstyle = background:#a8aca0; color:#fff;
+ |group1 = Main Shrine
+ |list1 =
+* [[Ise Grand Shrine]]
+** [[Tokyo Daijingu]]
+
+ |group2 = Second Rank Jingu
+ |list2 =
+* [[Katori Jingū|Katori Jingū]]
+** [[Futsunushi]]
+* [[Kashima Jingū|Kashima Jingū]]
+** [[Takemikazuchi]]
+|group3= {{ill|Moto-Ise Shrines|ja|元伊勢|12=simple|13=User:Immanuelle/Moto-Ise Shrines|12=simple|13=User:Immanuelle/Moto-Ise Shrines|qq=}}
+|list3=
+* [[:en:Ōmiwa Shrine|Ōmiwa Shrine]]
+* [[Kono Shrine]]
+* [[:en:Hase-dera|Hase-dera]]
+* [[Hinokuma Shrine]]
+** {{ill|Kii no Kuni no Miyatsuko|ja|紀氏|1=Kii no Kuni no Miyatsuko|de|Ki (Klan)|uk|Рід Кі|ko|기씨 (황별)|fr|Kii no Kuni no Miyatsuko|3=紀伊国造|12=simple|13=User:Immanuelle/Kii no Kuni no Miyatsuko|13=User:Immanuelle/Kii no Kuni no Miyatsuko|12=simple|13=User:Immanuelle/Kii no Kuni no Miyatsuko|13=User:Immanuelle/Kii no Kuni no Miyatsuko|qq=}}
+
+|group4= [[Beppyo Shrine]]
+|list4=
+* [[Komagata Shrine]]
+* {{ill|Shinmei Shrine (Fukui City)|ja|神明神社 (福井市)|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|qq=}}
+* [[Nitta Shrine (Satsumasendai City)]]
+
+ |group5 = Other Shrines
+ |list5 =
+* [[Hirota Shrine]]
+* [[Amanawa Shinmei Shrine]]
+* [[Ching Nan Shrine]]
+* [[:en:Chōsen Shrine|Chōsen Shrine]]
+* [[:en:Daijingu Temple of Hawaii|Daijingu Temple of Hawaii]]
+* [[Futako Shrine]]
+* [[Gaoshi Shrine]]
+* [[Heijō Shrine]]
+* [[Hinomisaki Shrine]]
+* [[Kagi Shrine]]
+* {{ill|Kanbashira-gū|ja|神柱宮|fr|12=simple|13=User:Immanuelle/Kanbashira-gū|12=simple|13=User:Immanuelle/Kanbashira-gū|qq=}}
+* [[:en:Kantō Shrine|Kantō Shrine]]
+* [[Keijō Shrine]]
+* [[:en:Nan'yō Shrine|Nan'yō Shrine]]
+* [[Nishina Shinmei Shrine]]
+* [[Ryūtōsan Shrine]]
+* [[:en:San Marino Shrine|San Marino Shrine]]
+* [[Sannō Shrine]]
+* [[Senkaku Shrine]]
+
+* [[Syonan Shrine]]
+* [[Taiwan Grand Shrine]]
+* [[Tokorozawa Shinmei Shrine]]
+* [[Ubagami Daijingū]]
+* [[Uramachi Shinmeigū]]
+|group6 = misc
+|list6=
+* [[Shinmei-zukuri]]
+* [[Jingūkyō]]
+* [[Jingū taima]]
+* [[Saiō]]
+* [[Amabe clan]]
+}}
+
+}}
+<noinclude>
+[[en:Template:Shinmei shrines]]{{wikidata link|Q125475266}}
+[[Category:Shinmei shrines]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

@@ -1,0 +1,47 @@
+{{Navbox
+| name = Mikami Faith
+| title = {{ill|Ame-no-Mikage-no-Kami|ja|天之御影神|12=simple|13=User:Immanuelle/Ame-no-Mikage-no-Kami|12=simple|13=User:Immanuelle/Ame-no-Mikage-no-Kami|qq=}} and Related Deities
+| listclass = hlist
+| basestyle = background:#f9f9f9; color:#000;
+| groupstyle = background:#dcdcdc; color:#000;
+| state = autocollapse
+
+| group1 = Main Deities
+| list1 =
+* {{ill|Ame-no-Mikage-no-Kami|ja|天之御影神|12=simple|13=User:Immanuelle/Ame-no-Mikage-no-Kami|12=simple|13=User:Immanuelle/Ame-no-Mikage-no-Kami|qq=}}
+* {{ill|Ame-no-Mahitotsu-no-Mikoto|ja|天目一箇神|1=Ame-no-Mahitotsu-no-Mikoto|12=simple|13=User:Immanuelle/Ame-no-Mahitotsu-no-Mikoto|13=User:Immanuelle/Ame-no-Mahitotsu-no-Mikoto|12=simple|13=User:Immanuelle/Ame-no-Mahitotsu-no-Mikoto|13=User:Immanuelle/Ame-no-Mahitotsu-no-Mikoto|qq=}}
+
+| group2 = Shrines
+| list2 =
+* {{ill|Mikami Shrine|ja|御上神社|12=simple|13=User:Immanuelle/Mikami Shrine|12=simple|13=User:Immanuelle/Mikami Shrine|qq=}}
+* {{ill|Ōagata Shrine|ja|大縣神社|12=simple|13=User:Immanuelle/Ōagata Shrine|12=simple|13=User:Immanuelle/Ōagata Shrine|qq=}}
+* {{ill|Ameichi Shrine|ja|天目一神社_(上板町)|12=simple|13=User:Immanuelle/Ameichi Shrine|12=simple|13=User:Immanuelle/Ameichi Shrine|qq=}}
+* {{ill|Ama Kazukime Shrine|ja|海士潜女神社|12=simple|13=User:Immanuelle/Ama Kazukime Shrine|12=simple|13=User:Immanuelle/Ama Kazukime Shrine|qq=}}
+
+| group3 = Related Deities
+| list3 =
+* {{ill|Hikoimasu no Ōkimi|ja|彦坐王|12=simple|13=User:Immanuelle/Hikoimasu no Ōkimi|12=simple|13=User:Immanuelle/Hikoimasu no Ōkimi|qq=}} (son-in-law)
+* {{ill|Amatsuhikone|ja|アマツヒコネ|lt=Amatsuhikone no Mikoto|12=simple|13=User:Immanuelle/Amatsuhikone|12=simple|13=User:Immanuelle/Amatsuhikone|qq=}} (father)
+* [[Ukanomitama]] worshipped at {{ill|Ōagata Shrine|ja|大縣神社|12=simple|13=User:Immanuelle/Ōagata Shrine|12=simple|13=User:Immanuelle/Ōagata Shrine|qq=}}
+
+| group4 = Possibly Related
+| list4 =
+* {{ill|Ame-no-ikutama-no-mikoto|ja|天活玉命|1=Ame-no-Ikutama|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama|qq=}}
+* {{ill|Yasu no Kuni no Miyatsuko|ja|安国造|12=simple|13=User:Immanuelle/Yasu no Kuni no Miyatsuko|12=simple|13=User:Immanuelle/Yasu no Kuni no Miyatsuko|qq=}}
+
+| group5= other
+| list5= 
+* {{ill|Mikami clan|ja|三上氏|12=simple|13=User:Immanuelle/Mikami clan|12=simple|13=User:Immanuelle/Mikami clan|qq=}}
+}}
+<noinclude>
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Shinto cult templates]]
+[[en:Template:Mikami Faith]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
+<noinclude>
+{{wikidata link||en|Mikami Faith}}
+[[Category:Templates fixed with noinclude]]
+</noinclude>

@@ -1,0 +1,49 @@
+{{Navbox
+| name  = Omonoimi Faith
+| title = {{ill|Ōmonoimi no Kami|lt=Omonoimi Faith|simple|Omonoimi no Kami|ja|大物忌神|12=simple|13=User:Immanuelle/Ōmonoimi no Kami|12=simple|13=User:Immanuelle/Ōmonoimi no Kami|qq=}}
+| titlestyle = background:#767C6B; color:#fff;
+| listclass = hlist
+| image = [[File:Mount Chōkai (2017-05-19) - Flickr.jpg|150px|link=|alt=]]
+| groupstyle = background:#8f9484; color:#fff;
+
+ | group1 = Main
+ | list1 =
+* {{ill|Ōmonoimi no Kami|ja|大物忌神|12=simple|13=User:Immanuelle/Ōmonoimi no Kami|12=simple|13=User:Immanuelle/Ōmonoimi no Kami|qq=}}
+* {{ill|Chōkai Shugendō|ja|鳥海修験|12=simple|13=User:Immanuelle/Chōkai Shugendō|12=simple|13=User:Immanuelle/Chōkai Shugendō|qq=}}
+
+| group2 = Shrines
+| list2 = {{Navbox|child
+ | groupstyle = background:#a8aca0; color:#fff;
+ | group1 = Main Shrines
+ | list1 =
+* [[:en:Chōkaisan Ōmonoimi Shrine|Chōkaisan Ōmonoimi Shrine]]
+* {{ill|Omonoimi Shrine (Yamadate, Sakata)|ja|小物忌神社|1=Omonoimi Shrine (Yamadate, Sakata)|2=ja|3=小物忌神社|12=simple|13=User:Immanuelle/Omonoimi Shrine (Yamadate, Sakata)|13=User:Immanuelle/Omonoimi Shrine (Yamadate, Sakata)|12=simple|13=User:Immanuelle/Omonoimi Shrine (Yamadate, Sakata)|13=User:Immanuelle/Omonoimi Shrine (Yamadate, Sakata)|qq=}}
+* {{ill|Omonoimi Shrine (Tobishima, Sakata)|ja|小物忌神社 (酒田市飛島)|12=simple|13=User:Immanuelle/Omonoimi Shrine (Tobishima, Sakata)|12=simple|13=User:Immanuelle/Omonoimi Shrine (Tobishima, Sakata)|qq=}}
+
+ | group2 = Other Shrines
+ | list2 =
+* {{ill|Chōkai Gassan Ryōsho-gū|simple|Chōkai gassan ryōsho-gu|12=simple|13=User:Immanuelle/Chōkai Gassan Ryōsho-gū|12=simple|13=User:Immanuelle/Chōkai Gassan Ryōsho-gū|qq=}}
+* {{ill|Araogawa Shrine (Naruko Onsen)|ja|荒雄川神社_(大崎市鳴子温泉鬼首)|12=simple|13=User:Immanuelle/Araogawa Shrine (Naruko Onsen)|12=simple|13=User:Immanuelle/Araogawa Shrine (Naruko Onsen)|qq=}}
+* {{ill|Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|ja|荒雄川神社_(大崎市岩出山池月)|12=simple|13=User:Immanuelle/Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|12=simple|13=User:Immanuelle/Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|qq=}}
+* {{ill|Kinpō Shrine (Nikaho City)|ja|金峰神社_(にかほ市)|12=simple|13=User:Immanuelle/Kinpō Shrine (Nikaho City)|12=simple|13=User:Immanuelle/Kinpō Shrine (Nikaho City)|qq=}}
+* {{ill|Monoiminanomikoto Shrine|ja|物忌奈命神社|12=simple|13=User:Immanuelle/Monoiminanomikoto Shrine|12=simple|13=User:Immanuelle/Monoiminanomikoto Shrine|qq=}}
+}}
+
+| group3 = Other
+| list3 =
+* {{ill|Tenaga and Ashinaga|ja|手長足長|12=simple|13=User:Immanuelle/Tenaga and Ashinaga|12=simple|13=User:Immanuelle/Tenaga and Ashinaga|qq=}}
+* {{ill|Kamuro-yama|ja|神室山|12=simple|13=User:Immanuelle/Kamuro-yama|12=simple|13=User:Immanuelle/Kamuro-yama|qq=}}
+* {{ill|Tengyō Rebellion of the Dewa Fusho|ja|天慶の出羽俘囚の乱|12=simple|13=User:Immanuelle/Tengyō Rebellion of the Dewa Fusho|12=simple|13=User:Immanuelle/Tengyō Rebellion of the Dewa Fusho|qq=}}
+* {{ill|Gakkō River|ja|月光川|12=simple|13=User:Immanuelle/Gakkō River|12=simple|13=User:Immanuelle/Gakkō River|qq=}}
+* {{ill|Ryūtō-ji|ja|龍頭寺_(山形県遊佐町)|12=simple|13=User:Immanuelle/Ryūtō-ji|12=simple|13=User:Immanuelle/Ryūtō-ji|qq=}}
+}}
+<noinclude>
+
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Shinto cult templates]]
+[[Category:Templates missing wikidata]]
+[[en:Template:Omonoimi Faith]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>

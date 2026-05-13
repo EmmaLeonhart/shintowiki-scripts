@@ -1,0 +1,127 @@
+{{Navbox
+| name      = Japanese mythology (long)
+|title = [[Japanese mythology]]
+| bodyclass = hlist
+| image     = [[File:Amaterasu cave crop.jpg|80px|Sun goddess Amaterasu emerging out of a cave]] [[File:Kuniteru Gozu dragon.jpg|80px|Susanoo slaying Yamata-no-Orochi]]
+| group1  = Mythic texts
+| list1  =
+* [[Kojiki]]
+* [[Nihon Shoki]]
+* [[Fudoki]]
+* [[Kujiki]]
+* [[Kogo Shūi]]
+* [[Hotsuma Tsutae]]
+* [[Nihon Ryōiki]]
+* [[:en:Konjaku Monogatarishū|Konjaku Monogatarishū]]
+* [[Shintōshū]]
+* [[Butsuzōzui]]
+| group2 = [[Japanese creation myth]]
+| list2  =
+* [[Kotoamatsukami]] ([[:en:Hitorigami|Hitorigami]])
+* [[Ame-no-Minakanushi]]
+* [[Age of the Gods|Kamiyo]] ([[Kamiyonanayo]])
+* [[Kuniumi]]
+* [[Kamiumi]]
+* [[:en:Izanami|Izanami]]
+* [[Izanagi]]
+| group3 = [[Takamagahara]] mythology
+| list3  =
+* [[Amaterasu]]
+* [[Susanoo-no-Mikoto|Susanoo]]
+* [[Tsukuyomi-no-Mikoto|Tsukuyomi]]
+* [[Ame-no-Uzume]]
+| group4 = [[:en:Izumo Province|Izumo]] mythology
+| list4  =
+* [[:en:Yamata no Orochi|Yamata no Orochi]]
+* [[Hare of Inaba]]
+* [[Ōkuninushi]]
+* [[Kuni-yuzuri]]
+* [[Takeminakata]]
+| group5 = [[:en:Hyūga Province|Hyūga]] mythology
+| list5  =
+* [[Tenson kōrin]]
+* [[Ninigi-no-Mikoto|Ninigi]]
+* [[Konohanasakuya-hime]]
+* [[:en:Toyotama-hime|Toyotama-hime]]
+| group6 = Human age
+| list6  =
+* [[:en:Emperor Jimmu|Emperor Jimmu]]
+* [[:en:Tagishimimi|Tagishimimi]]
+* [[Nihon Shoki#Kesshi Hachidai .28.22eight undocumented monarchs.22.29|Kesshi Hachidai]]
+| group7 = Mythological locations
+| list7  =
+* [[Ashihara no Nakatsukuni]]
+* [[Amano-Iwato]]
+* [[Onogoro Island]]
+* [[:en:Ne-no-kuni|Ne-no-kuni]]
+* [[Ryūgū-jō]]
+* [[Sanzu River]]
+* [[Takamagahara]]
+* [[Tokoyo no kuni]]
+* [[:en:Yomi|Yomi]]
+| group8 = Mythological weapons
+| list8  =
+* [[Ame-no-Nuboko]]
+* [[Kusanagi no Tsurugi]]
+* [[Totsuka-no-Tsurugi]]
+* [[Ame-no-ohabari]]
+* {{ill|Futsu-no-mitama|ja|布都御魂|12=simple|13=User:Immanuelle/Futsu-no-mitama|12=simple|13=User:Immanuelle/Futsu-no-mitama|qq=}}
+
+| group9 = [[:en:Buddhism in Japan|Major Buddhist figures]]
+| list9  =
+* [[Amitābha|Amida Nyorai]]
+* [[:en:Bodhidharma|Daruma]]
+* [[:en:Five Tathāgatas|Five Tathāgatas]]
+| group10 = [[Seven Lucky Gods]]
+| list10  =
+* [[Benzaiten]]
+* [[:en:Vaiśravaṇa|Bishamonten]]
+* [[Daikokuten]]
+* [[:en:Ebisu (mythology)|Ebisu]]
+* [[Fukurokuju]]
+* [[:en:Budai|Hotei]]
+* [[Jurōjin]]
+* [[Kisshōten]]
+
+| group11 = [[:en:List of legendary creatures from Japan|Legendary creatures]]
+| list11 = 
+* [[:en:Japanese dragon|Dragon]]
+* [[:en:Kappa (folklore)|Kappa]]
+* [[:en:Kitsune|Kitsune]]
+* [[:en:Oni|Oni]]
+* [[:en:Shinshi|Shinshi]]
+* [[:en:Tengu|Tengu]]
+* [[:en:Yōkai|Yōkai]]
+* [[:en:Yūrei|Yūrei]]
+
+| group12 = Other
+| list12 = 
+* [[:en:Shinigami|Shinigami]]
+* [[Ryukyuan religion]]
+** [[Amamikyu]]
+** [[Tenson dynasty]]
+* [[Ainu people#Religion|Ainu mythology]]
+** [[Kamuy]]
+** [[Kamuy-huci]]
+** [[Hasinaw-uk-kamuy]]
+
+| below =
+* [[Shinto|Shinto deities]]
+* [[:en:List of Japanese deities|Japanese deities]]
+* [[:en:List of sacred objects in Japanese mythology|Sacred objects]]
+* [[:en:Religion in Japan|Japanese religions]]
+* [[Glossary of Shinto]]
+
+}}<noinclude>{{documentation|content=
+This template is for use on pages dealing with Japanese religions and mythology, including [[Shinto]].
+* [[:en:Buddhism in Japan|Japanese Buddhism]], and other beliefs. For [[Japanese folklore]], use {{tl|Japanese folklore long}}.
+
+[[Category:Japan navigational boxes]]
+[[Category:Mythology navigational boxes]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+}}
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+</noinclude>

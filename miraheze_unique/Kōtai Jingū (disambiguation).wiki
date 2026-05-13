@@ -1,7 +1,7 @@
 <!-- shrine-disambig-page: refresh wikidata list -->
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=K%C5%8Dtai_Jing%C5%AB_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 
-'''Kōtai Jingū''' (皇大神宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} that enshrines {{ill|Amaterasu|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|lt=Amaterasu-ōmikami|12=simple|13=User:Immanuelle/Amaterasu|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to 天照大神}}. 
+'''Kōtai Jingū''' (皇大神宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} that enshrines {{ill|Amaterasu|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|lt=Amaterasu-ōmikami|12=simple|13=User:Immanuelle/Amaterasu|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}. 
 
 The Main shrine is the {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} of [[Ise Grand Shrines]] and shrines with the same name are Branch shrines of that shrine. Similar to shrines called {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}. While {{ill|List of Jingū|en|List of Jingū|qid=Q120680118|lt=Jingu|1=List of Jingū}} is a highly prestigious title limited to only a few shrines. Kotai Jingus and Daijingus (皇大神宮 and 大神宮) are often much less prestigious and have that title by virtue of being branch shrines of a highly prestigious shrine
 

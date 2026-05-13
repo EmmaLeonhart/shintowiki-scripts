@@ -1,0 +1,22 @@
+
+{{Navbox
+| name  = Mizuhanome Faith
+| title = [[Mizuhanome|Mizuhanome Faith]]
+| listclass = hlist
+ |group1 = Main Deities
+ |list1 =
+* [[:en:Tajimamori|Tajimamori]]
+
+ |group2 = Shrines
+ |list2 =
+* {{ill|Kitsumoto Shrine|ja|lt_ja=所坂王子|橘本神社|lt=Kitsumoto Shrine|12=simple|13=User:Immanuelle/Kitsumoto Shrine|12=simple|13=User:Immanuelle/Kitsumoto Shrine|qq=}}
+
+}}<noinclude>
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Shinto cult templates]]
+[[Category:Templates missing wikidata]]
+[[en:Template:Tajimamori faith]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
