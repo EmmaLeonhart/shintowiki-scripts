@@ -37,6 +37,27 @@ The big remaining shape is genuine Japanese-prose kokuzo articles —
 the simpler "swap template name + drop category" cases were done in
 bulk via the maintenance-template renames in 40c519e.
 
+Reorganize the pages in `duplicated_content/` to remove duplicated
+content and turn each one into a single coherent article. This is an
+agentic task — not scriptable. The duplicated-content sync (per
+[[project_duplicated_content_not_wired]]) has already pulled each
+listed page into the local repo as a `.wiki` file; the work is to
+move paragraphs around, dedupe overlapping prose, drop boilerplate
+inherited from the source-of-duplication, and end up with a
+relatively organized article. When a page is done, the per-page
+opt-out signal (remove `[[Category:Currently duplicated content]]`
+from the file) lets the next CI sync push the cleaned version to the
+wiki and delete the file from the repo. Process pages in batches;
+commit and push after each batch.
+
+Edit up the templates on the new independently-synced
+miraheze_unique/ and fandom_unique/ disambig pages so they render
+correctly on shinto.fandom.com. The dual-sync model (commit c73d144,
+2026-05-10) pushes the same content to both wikis, but a number of
+templates that work on miraheze haven't been ported to fandom — go
+through each fandom_unique/ file and adjust template usage so it
+renders. Commit and push once done.
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
