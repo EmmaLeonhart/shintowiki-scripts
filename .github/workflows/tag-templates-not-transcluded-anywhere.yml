@@ -1,0 +1,71 @@
+name: Tag Templates Not Transcluded Anywhere
+
+# Sweep over Category:Templates not transcluded in mainspace; for each
+# template, check whether it's transcluded in category space, and if
+# not add Category:Templates not transcluded in mainspace or
+# categoryspace.
+#
+# Stateful — keeps a .state file to resume if it doesn't finish in
+# one run. Trigger manually until the source category is empty.
+#
+# Pair with: sunset-templates-not-transcluded-in-mainspace-cat.yml
+# (run on/after 2027-07-01 once this sweep is stable).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh shinto_miraheze/run_step.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Tag: templates not transcluded in mainspace or categoryspace"
+        run: |
+          shinto_miraheze/run_step.sh "Tag: tag_templates_not_transcluded_anywhere" \
+            python3 shinto_miraheze/tag_templates_not_transcluded_anywhere.py \
+              --apply \
+              --max-edits 100 \
+              --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Tag Templates Not Transcluded Anywhere"
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Tag Templates Not Transcluded Anywhere"
