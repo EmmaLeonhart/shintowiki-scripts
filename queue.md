@@ -73,6 +73,8 @@ Also set up remote claude cron jobs to go through a programmatically generated q
 
 So there will be a file called remote_queue.py that using github actions puts together a list of pages with the instructions of how to change them. So it automatically queues the work and then claude on remote does the work to make the wiki somewhat self healing moving into the future.
 
+Key thing is the better the state it is in when I finally have to ignore it the better. I am not sure if the wiki will stay up long term, but it can at least get into archives as a decent thing.
+
 Run a onetime script here https://shinto.miraheze.org/wiki/Category:Templates_not_transcluded_in_mainspace because basically an issue I have been having is essentially such: Templates transluded in categoryspace are ones worth preserving too. So the ideal here would be to run through all of the pages here and adding [[Category:Templates not transcluded in mainspace or categoryspace]] to the applicable ones. And then setting it up so that on July 1st 2027 we add the older category to [[Category:crud categories]] to sunset it. 
 
 Meanwhile once this is through and we are sure about it, we can start deleting all the members of [[Category:Templates not transcluded in mainspace or categoryspace]] since they are a waste of wiki space
