@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AHachiman_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
 {{Navbox
 | name  = Hachiman Faith
 | title = [[Hachiman shrine|Hachiman shrines]]
@@ -34,7 +33,7 @@
 
  |group2 = [[Beppyo Shrine]]
  |list2 =
-* {{ill|Igusa Hachimangu|ja|井草八幡宮|12=simple|13=User:Immanuelle/Igusa Hachimangu|12=simple|13=User:Immanuelle/Igusa Hachimangu|qq=}}
+* Igusa Hachimangu
 * [[Fukuyama Hachimangū]] 
 * [[Hakodate Hachimangū|Hakodate Hachiman Shrine]] 
 * [[Kameyama Hachimangū]] 
@@ -45,7 +44,7 @@
 * [[Shikaumi Shrine]]
 * [[Umi Hachiman-gū]] 
 * [[Fujisaki Hachimangū]]
-* {{ill|Sakurayama Hachimangu|ja|桜山八幡宮|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|qq=}}
+* Sakurayama Hachimangu
 
 |group3= other shrines
 |list3=
@@ -80,7 +79,7 @@
 * [[Kotohiki Hachimangū]]
 * [[Miyajidake Shrine]]
 * [[Moto-Sumiyoshi Shrine]]
-* {{ill|Mukuhashi Sōja|ja|椋橋総社|12=simple|13=User:Immanuelle/Mukuhashi Sōja|12=simple|13=User:Immanuelle/Mukuhashi Sōja|qq=}}
+* Mukuhashi Sōja
 * [[Shikaumi Shrine]]
 * [[Suda Hachiman Shrine]]
 * [[Sumiyoshi sanjin]]
@@ -90,7 +89,7 @@
 * [[:en:Tsuboi Hachimangū|Tsuboi Hachimangū]]
 * [[Umi Hachiman-gū]]
 * [[Kōzu-gū]]
-* {{ill|Yagi Shrine|ja|夜疑神社|12=simple|13=User:Immanuelle/Yagi Shrine|12=simple|13=User:Immanuelle/Yagi Shrine|qq=}}
+* Yagi Shrine
 }}
 <noinclude>{{wikidata link|Q125475202|en|Hachiman Faith|en|Template:Hachiman Faith|fr|Modèle:Palette Foi Hachiman|check_date=2026-05-12}}
 [[Category:Buddhism in Japan templates]]
