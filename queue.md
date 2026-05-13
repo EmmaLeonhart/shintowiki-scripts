@@ -79,6 +79,8 @@ Run a onetime script here https://shinto.miraheze.org/wiki/Category:Templates_no
 
 Meanwhile once this is through and we are sure about it, we can start deleting all the members of [[Category:Templates not transcluded in mainspace or categoryspace]] since they are a waste of wiki space
 
+## More stuff
+I think that in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations these ones kinda need their content  more removed from the old things since they cause issues
 
 ## Pinned notes
 
