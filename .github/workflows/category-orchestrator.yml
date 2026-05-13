@@ -134,6 +134,14 @@ jobs:
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
       - name: "Category orchestrator"
+        # Step-level timeout < job timeout (180) so when the python sweep
+        # hits the ceiling, the step fails cleanly and the commit_state.sh
+        # step below (if: always()) still runs. Without a step-level
+        # timeout, the job-level 180-min cancel killed commit_state.sh
+        # too, which is why category state hadn't been committed since
+        # 2026-05-09 — every run reached 180 min mid-sweep and lost its
+        # state increments. Gives commit_state.sh ~20 min headroom.
+        timeout-minutes: 160
         run: |
           python3 -m shinto_miraheze.orchestrators.category_orchestrator \
             --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
