@@ -6,6 +6,8 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 ## Action items
 
+TRY TO CLEAR THE BLOAT FROM THIS PAGE IT IS WAY TOO HIGH and involves already completed stuff
+
 Go through the notes of the [[Category:git synced pages]] — each
 git_synced/ page has a leading `<!--...-->` instruction comment, and
 those instructions must actually be executed, not just present.
