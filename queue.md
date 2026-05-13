@@ -99,6 +99,10 @@ Please cleanup the [[Action Items]] section here a lot of it appears to be quite
 
 Also edit the category orchestrator to remove any self-categorization of categories. That is a major issue that I think keeps a lot of categories from being cleared from the wiki
 
+## More More More Stuff
+
+I am adding a [[Category:crud templates]] and the idea is similar to crud categories. You remove all transclusions of the template from everywhere. Since this is a template you need to make sure that you are not looking at everything in the category, but actually check each one to make sure it has the category on it, and then removing its transclusion. 
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
