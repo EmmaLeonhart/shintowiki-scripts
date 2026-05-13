@@ -32,6 +32,13 @@ Sources and how they map to instructions:
       fandom-compatible alternatives so the page renders on
       shinto.fandom.com. ~600 items.
 
+  miraheze_unique/*.wiki (shrine-disambig subset)
+      Strip the old human-curated lists inherited from the
+      source-of-import pages and leave only a generic intro +
+      the auto-generated `== Shrines with this name ==` block
+      (delimited by the BEGIN/END markers). Detection: pages
+      containing the auto-generated-block marker. ~115 items.
+
 Japanese-titled pages are excluded — those moves are intentional
 manual work per the queue plan.
 
@@ -86,6 +93,24 @@ NEED_TRANSLATION_INSTRUCTION = (
     "will push the translation to the wiki and delete the local file. "
     "WARNING: this sync is destructive — removing the category deletes the "
     "file from the repo, so only drop it when translation is genuinely done."
+)
+
+MIRAHEZE_SHRINE_DISAMBIG_INSTRUCTION = (
+    "This is a shrine disambiguation page (it contains the "
+    "`<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). "
+    "The old human-curated bullet lists inherited from the source-of-import "
+    "page are actively confusing — they double-list shrines that already "
+    "appear in the auto-generated `== Shrines with this name ==` block, "
+    "and they reference link targets that may not exist on this wiki. "
+    "Strip them. Keep: a generic-ish intro sentence (a small amount of "
+    "shrine-name-specific content is fine, e.g. the kanji and a one-line "
+    "explanation), the `{{disambiguation}}` template, the auto-generated "
+    "block between the BEGIN/END markers, the wikidata link, and "
+    "categories. Drop: the old `* [[...]]` bullet lists above the "
+    "auto-generated block and any `== See Also ==` / `== Main ... ==` "
+    "sections that just restate the auto-generated content. Process the "
+    "miraheze_unique/ file (the canonical source under the dual-sync "
+    "model); the next sync will push the cleanup to both wikis."
 )
 
 FANDOM_UNIQUE_INSTRUCTION = (
@@ -152,6 +177,20 @@ def _is_disambig_or_english_titled(path: Path) -> bool:
     return cjk_chars <= max(1, len(stem) // 4)
 
 
+# Marker that ``generate_shrine_disambig_lists.py`` writes around its
+# auto-generated bullet block. Used to identify shrine-disambig pages
+# in miraheze_unique/ without resorting to filename heuristics.
+_SHRINE_DISAMBIG_MARKER = "<!-- BEGIN: auto-generated Wikidata shrine list -->"
+
+
+def _is_shrine_disambig(path: Path) -> bool:
+    try:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return False
+    return _SHRINE_DISAMBIG_MARKER in text
+
+
 def build_queue() -> list[dict]:
     items: list[dict] = []
     items.extend(_build_section("duplicated_content", DUPLICATED_CONTENT_INSTRUCTION))
@@ -161,6 +200,13 @@ def build_queue() -> list[dict]:
             "fandom_unique",
             FANDOM_UNIQUE_INSTRUCTION,
             filter_fn=_is_disambig_or_english_titled,
+        )
+    )
+    items.extend(
+        _build_section(
+            "miraheze_unique",
+            MIRAHEZE_SHRINE_DISAMBIG_INSTRUCTION,
+            filter_fn=_is_shrine_disambig,
         )
     )
     return items
