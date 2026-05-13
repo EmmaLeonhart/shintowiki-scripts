@@ -93,6 +93,10 @@ that `generate_shrine_disambig_lists.py` writes. Process these from
 miraheze_unique/ (canonical source per the dual-sync model) so the
 next sync pushes the cleanup to both wikis.
 
+## More More Stuff
+
+Please cleanup the [[Action Items]] section here a lot of it appears to be quite outdated and I am not sure why it is still there. Stuff gets cleared from the queue.md as it is done and if iti s not clear enough claude.md should be edited to make this clear
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
