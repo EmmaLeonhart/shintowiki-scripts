@@ -67,6 +67,8 @@ when resolving changes keep these at the end of the queue and execute on them
 I want an action added that adds [[Category:crud categories]] 
 to the end of all the untranslated Japanese character counting stuff and disables the actions that add them on September 1, 2027
 
+Also set up remote claude cron jobs to go through a programmatically generated queue of agentic stuff it needs to do. Including pretty much all of the git synced pages. Moving the Japanese titled pages is a bit of a different additional thing that I think I will be doing manually. But apparently this is possible and will make it much easier for me to finally drop this project altogether and make it autonomous
+
 
 ## Pinned notes
 
