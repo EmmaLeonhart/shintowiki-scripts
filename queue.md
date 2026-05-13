@@ -58,6 +58,16 @@ templates that work on miraheze haven't been ported to fandom — go
 through each fandom_unique/ file and adjust template usage so it
 renders. Commit and push once done.
 
+## Stuff added by web during session
+
+Here's stuff added by web during an autonomous agentic session
+
+when resolving changes keep these at the end of the queue and execute on them
+
+I want an action added that adds [[Category:crud categories]] 
+to the end of all the untranslated Japanese character counting stuff and disables the actions that add them on September 1, 2027
+
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
