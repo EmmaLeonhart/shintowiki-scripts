@@ -19,6 +19,7 @@ from shinto_miraheze.orchestrators.ops import (
     normalize_category_page,
     remove_legacy_cat_templates,
     strip_html_comments,
+    strip_self_categorization,
     wikidata_link,
     wikidata_lookup,
 )
@@ -33,6 +34,7 @@ from shinto_miraheze.orchestrators.ops import (
 # stripped templates don't end up in the normalized output.
 OPS = [
     strip_html_comments,
+    strip_self_categorization,
     ill_category_to_link,
     interlang_consolidate,
     wikidata_lookup,

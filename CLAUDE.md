@@ -6,6 +6,7 @@
 - **Update `queue.md` in the same commit as the work.** Delete completed items in the same commit — no checkmarks, no status markers. If an item is still in queue.md, it is not done.
 - **Mirror `queue.md` into the task tool.** `TaskCreate` items as you add them; mark `in_progress` when starting; `completed` when done. The two views must not drift.
 - **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` (if present) is longer-horizon.
+- **Items handed off to an autonomous backlog are deleted from `queue.md`.** When bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, etc.) is wired into `remote_queue.json` for the remote-Claude cron to consume, the work item leaves `queue.md` — its life is now in the autonomous queue, and duplicating the description in both places is bloat. Keep `queue.md` for items the *human* still needs to track (specific tooling tasks, decisions, scoping questions).
 
 ## Runtime environment
 
