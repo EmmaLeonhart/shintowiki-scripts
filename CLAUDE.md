@@ -1,5 +1,12 @@
 # CLAUDE.md — conventions for this repo
 
+## Workflow Rules
+
+- **Plan into `queue.md` FIRST, then execute.** When entering planning mode (or any multi-step think-before-do), the FIRST action is to write the plan into `queue.md` as concrete items. Only then begin executing. Chat context dies on session interrupt; the queue survives. This matters extra here because a lot of work is bot-driven sweeps that take a long time and a session may not survive to finish.
+- **Update `queue.md` in the same commit as the work.** Delete completed items in the same commit — no checkmarks, no status markers. If an item is still in queue.md, it is not done.
+- **Mirror `queue.md` into the task tool.** `TaskCreate` items as you add them; mark `in_progress` when starting; `completed` when done. The two views must not drift.
+- **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` (if present) is longer-horizon.
+
 ## Runtime environment
 
 * **Wiki bot scripts run on GitHub Actions**, not locally. Auth is
