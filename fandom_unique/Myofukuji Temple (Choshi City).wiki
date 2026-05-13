@@ -1,0 +1,66 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Myofukuji_Temple_%28Choshi_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
+
+{{Infobox Buddhist temple
+| name          = Myōfuku-ji
+| religious_affiliation = {{ill|Nichiren Shū|qid=Q206611|1=Nichiren-shū}}
+|image         =File:Myofukuji.jpg 
+| location      = Myōkenchō 1465, Chōshi, Chiba, Japan
+| mount         = Kaijōzan
+| sect          = Nichiren
+| deity         = 
+| established   = Shōwa 3 (1314)
+| founder       = Nikkō
+| main founder  = Nichiyū
+| alias         = Temple of Wisteria
+| cultural_properties = 
+| prefecture= {{ill|Chōshi|qid=Q694317|1=Chōshi}}
+| coordinates= {{Coord|35.727927|N|140.829926|E|region:JP_type:landmark|display=inline,title}}
+| founded_by= {{ill|Q11509949|qid=Q11509949|1=Q11509949}}
+}}
+
+'''Myōfuku-ji''' (妙福寺) is a {{ill|Nichiren Buddhism|ja|Nichiren宗|1=Nichiren-shū|2=ja|3=日蓮宗|12=simple|13=User:Immanuelle/Nichiren Buddhism|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q206611}} temple located in Myōkenchō, Chōshi, Chiba, Japan. Its mountain name (''sangō'') is Kaijōzan. The temple is known for enshrining {{ill|Myōken|en|Myōken|qid=Q10960623|lt=Myōken Bosatsu|1=Myōken}} in its precincts, giving the town its name, and for its famous wisteria trees. The temple’s former main temple affiliation is the Grand Head Temple {{ill|Hokekyō-ji (Ichikawa)|en|Hokekyō-ji (Ichikawa)|qid=Q786113|lt=Hokkekyō-ji|1=Hokekyō-ji (Ichikawa)}}. It belongs to the Oyashi lineage of Nichiren Buddhism.
+
+== History ==
+Myōfuku-ji was established on April 26, 1314 (Shōwa 3), by Nikkō, one of Nichiren's direct disciples, with the founding overseen by Nichiyū, the third chief priest of {{ill|Hokekyō-ji (Ichikawa)|en|Hokekyō-ji (Ichikawa)|qid=Q786113|lt=Hokkekyō-ji|1=Hokekyō-ji (Ichikawa)}}.
+
+Originally located in {{ill|Sōsa|en|Sōsa|qid=Q858367|lt=Sōsa|1=Sōsa}}, at a Shingon sect temple in Iriyamasaki, it was converted to the Nichiren sect and relocated to its current site. Construction took approximately 33 years to complete.
+
+The main hall of Myōken Shrine houses a statue of the Great North Star Myōken Bodhisattva, believed to be the first such representation in Japan, attributed to {{ill|Prince Shōtoku|en|Prince Shōtoku|qid=Q263972|lt=Prince Shōtoku|1=Prince Shōtoku}}. The statue was deeply revered by prominent figures such as {{ill|Minamoto no Mitsunaka|en|Minamoto no Mitsunaka|qid=Q2531241|lt=Minamoto no Mitsunaka|1=Minamoto no Mitsunaka}}, who passed it down through the Minamoto clan. Later, figures like {{ill|Minamoto no Yoritomo|en|Minamoto no Yoritomo|qid=Q242800|lt=Minamoto no Yoritomo|1=Minamoto no Yoritomo}} and {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi|1=Toyotomi Hideyoshi}} also revered it. During the Edo period, it was transferred from Edo Castle to the Matsudaira family, rulers of Takō Castle. In 1715 (Shōtoku 5), it was enshrined at Myōfuku-ji through the efforts of various benefactors, including the Matsudaira family and the Tokugawa shogunate.
+
+A prior chief abbot, Hirono Nichii Shōnin, ascended to become the 143rd chief priest of the Grand Head Temple, Hokkekyō-ji.
+
+<gallery>
+Myofuku-ji (Choshi).JPG|Main Gate
+myofukuji2.jpg|Temple Grounds
+myofukuji3.jpg|Temple Grounds
+</gallery>
+
+== Access ==
+* A 5-minute walk from JR Sōbu Main Line and Chōshi Station.
+
+== External Links ==
+* [http://www.myokensama.jp/ Kaijōzan Myōfuku-ji Official Website]
+
+== Related Articles ==
+* [[Wisteria Festival]]
+
+{{Buddhism-stub}}
+
+==References==
+{{reflist}}
+{{Myōken Faith}}
+
+==References==
+{{reflist}}
+
+{{translated page|ja|妙福寺 (銚子市)|version=90298796|comment=Imported full ja history}}
+
+[[file:myofukuji.jpg|300px]]
+
+{{Commons category|Myōfuku-ji (Chōshi)}}
+{{wikidata link|Q11446985|co|commons:Category:Myōfuku-ji (Chōshi)|ja|妙福寺 (銚子市)|de|Yatsushiro Shrine}}
+[[Category:Buddhist temples in Chiba Prefecture]]
+[[Category:Buildings and structures in Choshi, Chiba]]
+[[Category:Municipal History of Chōshi]]
+[[Category:Nichiren-shū temples]]
+[[Category:Wikidata has short description]]
