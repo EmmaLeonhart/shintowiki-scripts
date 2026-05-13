@@ -81,6 +81,8 @@ wiki-space waste.
 
 ## More stuff
 
+We need to add to the mainspace orchestrator for it to remove the {{AfC submission}} template from pages
+
 The pages in https://shinto.miraheze.org/wiki/Category:Shrine_disambiguations
 need their content stripped harder — the old lists they inherited
 from the source pages cause active confusion. Each should have a
