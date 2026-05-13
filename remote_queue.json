@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-13T22:48:52Z",
-  "item_count": 1046,
+  "generated_at": "2026-05-13T22:51:04Z",
+  "item_count": 1153,
   "items": [
     {
       "id": "duplicated_content/20-Year Plan for One Million Families.wiki",
@@ -6278,6 +6278,648 @@
       "file": "fandom_unique/Ōyamazumi Shrine (disambiguation).wiki",
       "category": "fandom_unique",
       "instruction": "Rewrite this page so it renders correctly on shinto.fandom.com. The miraheze-only templates that don't exist on fandom: `{{ill|...}}`, `{{wikidata link|...}}`, `{{translated page|...}}`, `{{jalink|...}}`, and the various `{{...Faith|qq=}}` navboxes that depend on miraheze modules. Convert `{{ill|TITLE|...lang_codes...|1=DISPLAY}}` and `{{ill|TITLE|...|lt=DISPLAY|...}}` to plain `[[TITLE|DISPLAY]]` wikilinks (or `[[TITLE]]` when there's no display-text override). Drop `{{wikidata link|...}}` and `{{translated page|...}}` entirely — their content doesn't carry meaning on fandom. Drop [[Category:Pages with interwikis with duplicate languages]] and any other miraheze-only maintenance categories. Keep the article body and standard categories. Don't touch the miraheze_unique/ copy — that's a separate file under the dual-sync model."
+    },
+    {
+      "id": "miraheze_unique/Daijingū.wiki",
+      "file": "miraheze_unique/Daijingū.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Dairokuten Shrine.wiki",
+      "file": "miraheze_unique/Dairokuten Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Daishōgun Shrine.wiki",
+      "file": "miraheze_unique/Daishōgun Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Ebisu Shrine.wiki",
+      "file": "miraheze_unique/Ebisu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Fuji Sengen Shrine.wiki",
+      "file": "miraheze_unique/Fuji Sengen Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Fujinomori Shrine.wiki",
+      "file": "miraheze_unique/Fujinomori Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Furukusu Shrine.wiki",
+      "file": "miraheze_unique/Furukusu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Fuse Shrine.wiki",
+      "file": "miraheze_unique/Fuse Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Gojō Tenjin Shrine.wiki",
+      "file": "miraheze_unique/Gojō Tenjin Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Goryo Shrine.wiki",
+      "file": "miraheze_unique/Goryo Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hachiman Daijingū.wiki",
+      "file": "miraheze_unique/Hachiman Daijingū.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hachioji Shrine.wiki",
+      "file": "miraheze_unique/Hachioji Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Haguro Shrine.wiki",
+      "file": "miraheze_unique/Haguro Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hashirimizu Shrine.wiki",
+      "file": "miraheze_unique/Hashirimizu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hayabusa Shrine.wiki",
+      "file": "miraheze_unique/Hayabusa Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hayakawa Shrine.wiki",
+      "file": "miraheze_unique/Hayakawa Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hayashi Shrine.wiki",
+      "file": "miraheze_unique/Hayashi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hijiri Shrine.wiki",
+      "file": "miraheze_unique/Hijiri Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hikawa Shrine.wiki",
+      "file": "miraheze_unique/Hikawa Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Himuro Shrines.wiki",
+      "file": "miraheze_unique/Himuro Shrines.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hoshimiya Shrine.wiki",
+      "file": "miraheze_unique/Hoshimiya Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hozumi Shrine.wiki",
+      "file": "miraheze_unique/Hozumi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hyōzu Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Hyōzu Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Hōju Inari Shrine.wiki",
+      "file": "miraheze_unique/Hōju Inari Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Ichikishima Shrines.wiki",
+      "file": "miraheze_unique/Ichikishima Shrines.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Inari Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Inari Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Ishii Shrine.wiki",
+      "file": "miraheze_unique/Ishii Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Isobe Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Isobe Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Itsukushima Shrines (disambiguation).wiki",
+      "file": "miraheze_unique/Itsukushima Shrines (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Iwatate Shrine (Katano City).wiki",
+      "file": "miraheze_unique/Iwatate Shrine (Katano City).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Izumi Shrine.wiki",
+      "file": "miraheze_unique/Izumi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Izumo Iwai Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Izumo Iwai Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Izumo no Iwai Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Izumo no Iwai Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Izumo Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Izumo Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Jūnisho Shrine.wiki",
+      "file": "miraheze_unique/Jūnisho Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kagami-no-Miya Shrine.wiki",
+      "file": "miraheze_unique/Kagami-no-Miya Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kagoshima Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Kagoshima Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kamo Shrine (Ise).wiki",
+      "file": "miraheze_unique/Kamo Shrine (Ise).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kamō Hachiman Shrine.wiki",
+      "file": "miraheze_unique/Kamō Hachiman Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kanasana Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Kanasana Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kashima Shrines.wiki",
+      "file": "miraheze_unique/Kashima Shrines.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Katayama Shrine.wiki",
+      "file": "miraheze_unique/Katayama Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Katori Shrines.wiki",
+      "file": "miraheze_unique/Katori Shrines.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kawara Shrine.wiki",
+      "file": "miraheze_unique/Kawara Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kawasukune Shrine.wiki",
+      "file": "miraheze_unique/Kawasukune Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kibitsu Shrine.wiki",
+      "file": "miraheze_unique/Kibitsu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kikuchi Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Kikuchi Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kitano Tenjinsha (Tokorozawa).wiki",
+      "file": "miraheze_unique/Kitano Tenjinsha (Tokorozawa).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Koganeyama Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Koganeyama Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kokufu Shrine.wiki",
+      "file": "miraheze_unique/Kokufu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Komori Shrine.wiki",
+      "file": "miraheze_unique/Komori Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kosuge Shrine.wiki",
+      "file": "miraheze_unique/Kosuge Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kotoshironushi Shrine.wiki",
+      "file": "miraheze_unique/Kotoshironushi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Koyasu Shrine.wiki",
+      "file": "miraheze_unique/Koyasu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kurihara Shrine.wiki",
+      "file": "miraheze_unique/Kurihara Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kushida Shrine.wiki",
+      "file": "miraheze_unique/Kushida Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kōjin Shrine.wiki",
+      "file": "miraheze_unique/Kōjin Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kōtai Jingū (disambiguation).wiki",
+      "file": "miraheze_unique/Kōtai Jingū (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Kōtai Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Kōtai Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Matsuyama Shrine.wiki",
+      "file": "miraheze_unique/Matsuyama Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Mifune Shrine.wiki",
+      "file": "miraheze_unique/Mifune Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Mikumano Shrine.wiki",
+      "file": "miraheze_unique/Mikumano Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Miwa Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Miwa Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Miyake Shrine.wiki",
+      "file": "miraheze_unique/Miyake Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Miyazaki Shrine.wiki",
+      "file": "miraheze_unique/Miyazaki Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Mononobe Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Mononobe Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Mountain Shrine.wiki",
+      "file": "miraheze_unique/Mountain Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Musubi Shrine.wiki",
+      "file": "miraheze_unique/Musubi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nagahama Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Nagahama Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nagahatabe Shrine.wiki",
+      "file": "miraheze_unique/Nagahatabe Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nakatsu Daijingū.wiki",
+      "file": "miraheze_unique/Nakatsu Daijingū.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nakatsu Shrine.wiki",
+      "file": "miraheze_unique/Nakatsu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nitta Shrine.wiki",
+      "file": "miraheze_unique/Nitta Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nomi no Sukune Shrine.wiki",
+      "file": "miraheze_unique/Nomi no Sukune Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Nomii Shrine (Takatsuki).wiki",
+      "file": "miraheze_unique/Nomii Shrine (Takatsuki).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Ogami Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Ogami Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Oi Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Oi Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Okanoue Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Okanoue Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Omuro Sengen Shrine.wiki",
+      "file": "miraheze_unique/Omuro Sengen Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Omushi Shrine.wiki",
+      "file": "miraheze_unique/Omushi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Ono Shrine (Ichinomiya).wiki",
+      "file": "miraheze_unique/Ono Shrine (Ichinomiya).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Otomiya Shrine.wiki",
+      "file": "miraheze_unique/Otomiya Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Oyama Shrine.wiki",
+      "file": "miraheze_unique/Oyama Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Raiden Shrine.wiki",
+      "file": "miraheze_unique/Raiden Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Raijin Shrine.wiki",
+      "file": "miraheze_unique/Raijin Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Railway Shrine.wiki",
+      "file": "miraheze_unique/Railway Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Reiyosaki Shrine.wiki",
+      "file": "miraheze_unique/Reiyosaki Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Rokusho Shrines.wiki",
+      "file": "miraheze_unique/Rokusho Shrines.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Saku Shrine.wiki",
+      "file": "miraheze_unique/Saku Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Sakurai Koyasu Shrine.wiki",
+      "file": "miraheze_unique/Sakurai Koyasu Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Sannō Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Sannō Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Sarutahiko Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Sarutahiko Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Sashino Shrine.wiki",
+      "file": "miraheze_unique/Sashino Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Seibo Shrine.wiki",
+      "file": "miraheze_unique/Seibo Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Shikobuchi Shrine.wiki",
+      "file": "miraheze_unique/Shikobuchi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Shinra Shrine.wiki",
+      "file": "miraheze_unique/Shinra Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Shiratori Shrine (disambiguation).wiki",
+      "file": "miraheze_unique/Shiratori Shrine (disambiguation).wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Sumiyoshi Shrine.wiki",
+      "file": "miraheze_unique/Sumiyoshi Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Susanoo Shrine.wiki",
+      "file": "miraheze_unique/Susanoo Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Susukigawa Shrine.wiki",
+      "file": "miraheze_unique/Susukigawa Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Tajikarao Shrine.wiki",
+      "file": "miraheze_unique/Tajikarao Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takada Kumano Shrine.wiki",
+      "file": "miraheze_unique/Takada Kumano Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takahama Shrine.wiki",
+      "file": "miraheze_unique/Takahama Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takamuku Shrine.wiki",
+      "file": "miraheze_unique/Takamuku Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takasago Shrine.wiki",
+      "file": "miraheze_unique/Takasago Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takata Shrine.wiki",
+      "file": "miraheze_unique/Takata Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
+    },
+    {
+      "id": "miraheze_unique/Takeminakata & Minomikotohikokamiwake Shrine.wiki",
+      "file": "miraheze_unique/Takeminakata & Minomikotohikokamiwake Shrine.wiki",
+      "category": "miraheze_unique",
+      "instruction": "This is a shrine disambiguation page (it contains the `<!-- BEGIN: auto-generated Wikidata shrine list -->` marker block). The old human-curated bullet lists inherited from the source-of-import page are actively confusing — they double-list shrines that already appear in the auto-generated `== Shrines with this name ==` block, and they reference link targets that may not exist on this wiki. Strip them. Keep: a generic-ish intro sentence (a small amount of shrine-name-specific content is fine, e.g. the kanji and a one-line explanation), the `{{disambiguation}}` template, the auto-generated block between the BEGIN/END markers, the wikidata link, and categories. Drop: the old `* [[...]]` bullet lists above the auto-generated block and any `== See Also ==` / `== Main ... ==` sections that just restate the auto-generated content. Process the miraheze_unique/ file (the canonical source under the dual-sync model); the next sync will push the cleanup to both wikis."
     }
   ]
 }
