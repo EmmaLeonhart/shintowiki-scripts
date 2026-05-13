@@ -1,0 +1,58 @@
+name: Build Remote Queue
+
+# Generates remote_queue.json — a list of (file, instruction) items for
+# a remote Claude cron to work through. Per the queue plan in
+# queue.md, the goal is autonomous self-healing wiki maintenance so
+# the project can run without ongoing manual attention.
+#
+# Runs daily at 04:00 UTC and on manual dispatch. Commits the queue
+# back to main only if it changed. The consumer (separate remote
+# Claude worker, not in this repo) reads remote_queue.json off the
+# default branch.
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Build queue
+        run: python3 remote_queue.py
+
+      - name: Commit queue if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet remote_queue.json; then
+            echo "remote_queue.json unchanged; nothing to commit."
+            exit 0
+          fi
+          git add remote_queue.json
+          git commit -m "chore: rebuild remote_queue.json [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; pulling --rebase and retrying"
+            git pull --rebase
+          done
+          echo "All push attempts exhausted" >&2
+          exit 1
