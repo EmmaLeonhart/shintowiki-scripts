@@ -5,7 +5,7 @@
 | crest_caption = 
 | origin = {{ill|Kai clan|ja|甲斐氏|12=simple|13=User:Immanuelle/Kai clan|1=Q11577901|comment=changed title based on wikidata|qid=Q11577901}}
 | founder = {{ill|Shiomi no Sukune|ja|塩海宿禰|12=simple|13=User:Immanuelle/Shiomi no Sukune|ja_comment=jawiki redirects to 塩海足尼}}
-| type = {{ill|Shinbetsu|ja|神別|12=simple|13=User:Immanuelle/Shinbetsu|qq=}} ({{ill|Amatsukami|ja|天津神|12=simple|13=User:Immanuelle/matsukami|ja_comment=jawiki redirects to 天津神・国津神|comment=confirming this goes to Amatsukami|1=Amatsukami|2=zh|3=天神 (日本神話)|4=fr|5=Amatsukami|6=mni|7=ꯑꯃꯠꯁꯨꯀꯃꯤ|comment=confirming this goes to Amatsukami|1=Amatsukami|2=zh|3=天神 (日本神話)|4=fr|5=Amatsukami|6=mni|7=ꯑꯃꯠꯁꯨꯀꯃꯤ}}) or {{ill|Kōbetsu|ja|皇別|12=simple|13=User:Immanuelle/Kōbetsu|qq=}}
+| type = {{ill|Shinbetsu|ja|神別|12=simple|13=User:Immanuelle/Shinbetsu|qq=}} ({{ill|Amatsukami|ja|天津神|12=simple|13=User:Immanuelle/matsukami|ja_comment=jawiki redirects to 天津神・国津神|comment=confirming this goes to Kunitsukami|qid=Q60994492|1=Amatsukami|2=zh|3=天神 (日本神話)|4=fr|5=Amatsukami|6=mni|7=ꯑꯃꯠꯁꯨꯀꯃꯤ|comment=confirming this goes to Kunitsukami|qid=Q60994492|1=Amatsukami|2=zh|3=天神 (日本神話)|4=fr|5=Amatsukami|6=mni|7=ꯑꯃꯠꯁꯨꯀꯃꯤ}}) or {{ill|Kōbetsu|ja|皇別|12=simple|13=User:Immanuelle/Kōbetsu|qq=}}
 | homeland = {{ill|Yamato Province|en|Yamato Province|qid=Q907495|lt=Yamato Province|1=Yamato Province}}
 | base = {{ill|Kai Province|en|Kai Province|qid=Q858076|lt=Kai Province|1=Kai Province}}
 | notable_members = See [[#Notable Figures]]
