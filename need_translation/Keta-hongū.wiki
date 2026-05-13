@@ -105,7 +105,7 @@
 |所在地 = {{ill|lt=石川県|Q131281|qid=Q131281|1=Ishikawa Prefecture}}{{ill|lt=七尾市|Q695892|qid=Q695892|1=Nanao, Ishikawa}}所口町ハ部70の1番地
 |位置 = {{WikidataCoord}}
 |祭神   = {{ill|UNKNOWN|lt=大己貴命|1=UNKNOWN}}、<br/>{{ill|UNKNOWN|lt=素盞鳴命|1=UNKNOWN}}、<br/>{{ill|UNKNOWN|lt=奇稲田姫命|1=UNKNOWN}}
-|社格   = {{ill|lt=能登国|Q1047671|qid=Q1047671|1=Noto Province}}総鎮守、旧{{ill|UNKNOWN|qid=Q90139226|lt=県社|lt=Ken-sha|qq=|1=Ken-sha}}
+|社格   = {{ill|lt=能登国|Q1047671|qid=Q1047671|1=Noto Province}}総鎮守、旧{{ill|UNKNOWN|qid=Q90139226|lt=県社|lt=Ken-sha1=Ken-sha}}
 |創建   = 
 |本殿   = 
 |別名   = 気多本宮
