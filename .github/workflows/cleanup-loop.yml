@@ -77,7 +77,13 @@ jobs:
           #   mainspace 500 (history-offload catch-up — fandom mirroring
           #     is mostly done and we want to flush the remaining queue
           #     before history_offload's June cutoff)
-          #   category  500 (catch-up window: never completed a full cycle)
+          #   category  200 (catch-up window: never completed a full cycle;
+          #     dropped from 500 on 2026-05-12 because the combo of
+          #     500-edit budget + history_offload's delete+recreate stage
+          #     [only fires on ns=14] was regularly hitting the 5.5h
+          #     step timeout. 200 gives ~1.5–2h runs that complete
+          #     reliably and let the cleanup-loop fire pick up the next
+          #     batch of state.)
           #   template   10 (low-priority: small namespace, mostly stable)
           #   misc       10 per namespace × 9 misc namespaces = ~90/fire
           #
@@ -88,9 +94,9 @@ jobs:
           if [ "$TODAY" \< "2026-06-01" ]; then
             echo "mainspace-edit-limit=500" >> "$GITHUB_OUTPUT"
             echo "template-edit-limit=10"   >> "$GITHUB_OUTPUT"
-            echo "category-edit-limit=500"  >> "$GITHUB_OUTPUT"
+            echo "category-edit-limit=200"  >> "$GITHUB_OUTPUT"
             echo "misc-edit-limit=10"       >> "$GITHUB_OUTPUT"
-            echo "Pre-June push (until 2026-06-01): mainspace 500/fire, category 500/fire, template 10/fire, misc 10 per namespace × 9 namespaces (~90 misc edits/fire)."
+            echo "Pre-June push (until 2026-06-01): mainspace 500/fire, category 200/fire, template 10/fire, misc 10 per namespace × 9 namespaces (~90 misc edits/fire)."
           else
             echo "mainspace-edit-limit=100" >> "$GITHUB_OUTPUT"
             echo "template-edit-limit=100"  >> "$GITHUB_OUTPUT"

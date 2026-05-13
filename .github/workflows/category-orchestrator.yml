@@ -58,7 +58,15 @@ permissions:
 jobs:
   category-orchestrator:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    # 180 minutes is the SLA for the category orchestrator. A typical
+    # 200-edit category cycle with history_offload (delete+recreate +
+    # fandom mirror + XML archive per page) takes ~1.5–2h. If a run
+    # exceeds 180 min something is genuinely stuck (single page wedged
+    # on Special:Export, fandom HTTP timing out repeatedly, etc.) and
+    # we want it killed rather than bleeding a 5.5h timeout. Lowered
+    # from 330 on 2026-05-12 after multiple runs (25723636215,
+    # 25741320962, 25758765542) hit the old ceiling.
+    timeout-minutes: 180
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
