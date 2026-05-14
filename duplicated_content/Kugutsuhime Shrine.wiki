@@ -1,6 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kugutsuhime_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
-
 {{Infobox religious building
 |名称= 久具都比賣神社
 | religious_affiliation = [[Shinto]]
@@ -18,72 +16,49 @@
 |例祭= 
 |神事= [[神嘗祭]]
 }}
-
 '''Kugutsuhime Shrine''' (久具都比賣神社) is a {{ill|sessha|ja|末社|lt=Sessha|1=Setsumatsusha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|1=Setsumatsusha|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}} of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} ({{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}) (Inner Shrine). It was established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<ref name="ic">{{ill|Ise Culture Publishing|ja|伊勢文化舎|12=simple|13=User:Immanuelle/Ise Culture Publishing|1=Ise Bunka-sha|comment=changed title based on wikidata|qid=Q11379080}} (2008): p.72</ref><ref name="gk">{{ill|Gakken Publishing|ja|学研パブリッシング|12=simple|13=User:Immanuelle/Gakken Publishing|ja_comment=jawiki redirects to Gakken|1=Gakken Plus Co., Ltd.|comment=changed title based on wikidata|qid=Q86741099}} (2013): p.66</ref>.
-
 The shrine is located along the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miya River (Mie)|1=Miya River (Mie)}}<ref name="gk"/> and part of the shrine grounds is occasionally subject to flooding<ref name="sk9">{{ill|Shikinaisha Research Association|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft研究会|12=simple|13=User:Immanuelle/Shikinaisha Research Association|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (1990): p.289</ref>.
-
 == Overview ==
 {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}} [[:en:Watarai District, Mie|Tōai District]] {{ill|Watarai|en|Watarai|qid=Q1203708|lt=Tōai Town|1=Watarai}} Kamikugu, in the small area ({{ill|koaza|ja|小字|12=simple|13=User:Immanuelle/koaza|1=koaza|comment=changed title based on wikidata|qid=Q5327509}}) of Kugutsu-uraji, is the location of this shrine.<ref name="sk9"/> It is the only shrine affiliated with the 【神宮摂社】 (Shingū Sessha) in Tōai Town.<ref name="wr">{{Cite web|和書|url=http://www.town.watarai.lg.jp/contents_detail.php?frmId=909 |title=伊勢神宮御萱場と一之瀬川流域めぐり旅 |publisher=度会町役場総務課行政係・財政係 |language=日本語 |date=2013-05-19 |accessdate=2013-11-25 |archiveurl=https://megalodon.jp/2013-1125-2141-54/www.town.watarai.lg.jp/contents_detail.php?frmId=909 |archivedate=2013-11-25}}</ref> Among the facilities related to {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}, besides Kugutsuhime Shrine, there is also the Shingū Mikayaba located at the river’s mouth.<ref name="wr"/> It is Ranked 21st among the 27 subsidiary shrines (摂社) of the inner shrine.<ref>宇治山田市役所 編（1929）：9 - 11ページ</ref>
-
 The {{ill|shaden|ja|社殿|12=simple|13=User:Immanuelle/shaden|ja_comment=jawiki redirects to 神社建築|1=Shinto architecture|comment=changed title based on wikidata|qid=Q3080012}} is constructed in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style with a {{ill|itafuki|ja|板葺|12=simple|13=User:Immanuelle/itafuki|ja_comment=jawiki redirects to 杮葺|1=Wood shingle|comment=changed title based on wikidata|qid=Q199388}} roof, and is enclosed by a single layer of {{ill|Tamagaki|en|Tamagaki|qid=Q3078312|lt=tamagaki|1=Sacred fences}}.<ref name="sk2">式内社研究会 編（1990）：292ページ</ref> Its dimensions are approximately 6 shaku wide (≒1.82 m), 4 shaku deep (≒1.21 m), and 7 shaku 8 sun high (≒2.36 m).<ref name="sk2"/> The shrine grounds cover an area of 3,004 {{ill|Square metre|en|Square metre|qid=Q25343|lt=m²|1=Square metre}}.<ref name="sk2"/>
-
 The northern side of the shrine grounds adjoins the {{ill|Miyagawa|en|Miyagawa|qid=Q1665818|lt=Miyagawa|1=Miyagawa}}.<ref name="gk"/> When the river swells, the area around the shrine may be flooded.<ref name="sk9"/>
-
 == Shrine Name ==
 The name “Kugu” (久具) is believed to be derived from a 【地名】 (place name), although the origin of the place name “Kugu” is unknown.<ref name="sk9"/> The ''{{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' refers to the shrine as “Kugutsuhime Shrine” (久々都比賣神社), the ''{{ill|Kōtaishingū Gishikichō|ja|皇大神宮儀式帳|12=simple|13=User:Immanuelle/Kōtaishingū Gishikichō|ja_comment=jawiki redirects to 延暦儀式帳|1=Enryaku Gishikichō|comment=changed title based on wikidata|qid=Q109596938}}'' as “Kugu Shrine” (久具神社), and the ''{{ill|Yamato Himen Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamato Himen Seiki|1=Yamatohime no Mikoto Seiki|comment=changed title based on wikidata|qid=Q131331326}}'' as “Kugu-sha” (久求社).<ref name="sk9"/> Locals affectionately call it “Kugutsu Hime-san”.<ref name="sk9"/>
-
 == Worshipped deities (Saijin) ==
 {{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin|qq=}}}}
 The deities enshrined here are {{ill|Kugutsuhime-no-Mikoto|ja|久具都比女命|12=simple|13=User:Immanuelle/Kugutsuhime-no-Mikoto|ja_comment=jawiki link invalid}}, {{ill|Kugutsuhiko-no-Mikoto|ja|久具都比古命|12=simple|13=User:Immanuelle/Kugutsuhiko-no-Mikoto|ja_comment=jawiki link invalid}}, and {{ill|Mimae-no-Kami|ja|御前神|12=simple|13=User:Immanuelle/Mimae-no-Kami|ja_comment=jawiki link invalid}}.<ref name="ic"/><ref name="gk"/> They are regarded as the water deity—who irrigates the land of Kugu—and as a god of the five grains. This deity is identified as a child of {{ill|Ōminakami-no-Mikoto|ja|大水上命|12=simple|13=User:Immanuelle/Ōminakami-no-Mikoto|ja_comment=jawiki link invalid}}, who was venerated locally as a god of water and rice cultivation even before {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamato Hime-no-Mikoto|1=Yamatohime-no-mikoto}} toured Ise.<ref name="ic"/><ref name="gk"/> 
-
 Various ancient texts such as ''{{ill|Sessessha Kokon Shidai|ja|摂末社古今次第|12=simple|13=User:Immanuelle/Sessessha Kokon Shidai|ja_comment=jawiki link invalid}}'' confirm the names of Kugutsuhime-no-Mikoto and Kugutsuhiko-no-Mikoto, but the name of a third deity is not clearly stated.<ref name="sk0">式内社研究会 編（1990）：290ページ</ref> According to tradition, these two deities appeared to greet Yamato Hime-no-Mikoto when she visited the land of Kugu.<ref name="rc1"/> In ''{{ill|Daijingu Gishikikai|ja|大神宮儀式解|12=simple|13=User:Immanuelle/Daijingu Gishikikai|ja_comment=jawiki link invalid}}'', the third deity is interpreted as the deity of the former shrine (i.e., Mimae-no-Kami), and the ''{{ill|Shin Sangunjinja Sankēki|ja|神三郡神社参詣記|12=simple|13=User:Immanuelle/Shin Sangunjinja Sankēki|ja_comment=jawiki link invalid}}'' refers to it as “Yamajin” (mountain god).<ref name="sk0"/>
-
 == History ==
 According to tradition, when Yamato Hime-no-Mikoto traveled down the {{ill|Ichinose River|ja|一之瀬川|12=simple|13=User:Immanuelle/Ichinose River|ja_comment=jawiki link invalid}}, she was met by Kugutsuhiko-no-Mikoto, and Kugutsuhime-no-Mikoto declared that the land was “Kugu Kono,” leading Yamato Hime-no-Mikoto to establish “Kugu-sha”.<ref name="rc1"/> More definitively, by the definition of subsidiary shrines of Ise Grand Shrine, the creation of this shrine must have occurred before the establishment of the ''{{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' in the 5th year of the {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō|1=Enchō|comment=changed title based on wikidata|qid=Q97379316}} era (927 AD).<ref name="ic2">伊勢文化舎 編（2008）：22ページ</ref> It is also recorded in the ''{{ill|Kōtaishingū Gishikichō|ja|皇大神宮儀式帳|12=simple|13=User:Immanuelle/Kōtaishingū Gishikichō|ja_comment=jawiki redirects to 延暦儀式帳|1=Enryaku Gishikichō|comment=changed title based on wikidata|qid=Q109596938}}'', indicating that it existed before the 23rd year of the {{ill|Enryaku|en|Enryaku|qid=Q1373176|lt=Enryaku|1=Enryaku}} era (804 AD). The ''Kōtaishingū Gishikichō'' stipulates that if the shrine is destroyed, it should be rebuilt with proper taxation, and the ''Daijingu Shiki'' states that the shrine priest ({{ill|guji|ja|宮司|12=simple|13=User:Immanuelle/guji|1=Gūji|comment=changed title based on wikidata|qid=Q11453500}}) is responsible for its repair.<ref name="sk9"/> Furthermore, according to the ''Kōtaishingū Gishikichō'', there were once three main shrine buildings (正殿三宇) arranged side by side.<ref name="sk0"/>
-
 During the medieval period, the shrine buildings fell into disrepair and even the shrine grounds became unidentifiable.<ref name="sk9"/> In the 3rd year of the {{ill|Kanbun (era)|en|Kanbun (era)|qid=Q1146228|lt=Kanbun|1=Kanbun (era)}} era, on September 8 (old calendar) ({{ill|Gregorian calendar|en|Gregorian calendar|qid=Q12138|lt=Gregorian calendar|1=Gregorian calendar}}: October 8, 1663), the great shrine priest {{ill|Kawabe Seichō|ja|河邊精長|lt=Kawabe Seichō|12=simple|13=User:Immanuelle/Kawabe Seichō|ja_comment=jawiki link invalid}} (also known as Ōnakomi Seichō) made efforts to restore the shrine grounds, and on December 12 (old calendar) ({{ill|Gregorian calendar|en|Gregorian calendar|qid=Q12138|lt=Gregorian calendar|1=Gregorian calendar}}: January 10, 1664) the relocation ceremony (遷御) was conducted.<ref name="sk9"/> At that time, the three shrine buildings that had existed in ancient times were consolidated into one.<ref name="rc1"/> Later, on October 7 (old calendar) ({{ill|Gregorian calendar|en|Gregorian calendar|qid=Q12138|lt=Gregorian calendar|1=Gregorian calendar}}: November 14, 1692) the shrine building was reconstructed, and the relocation ceremony was carried out on February 18 (old calendar) ({{ill|Gregorian calendar|en|Gregorian calendar|qid=Q12138|lt=Gregorian calendar|1=Gregorian calendar}}: March 13, 1694).<ref name="sk9"/> According to the ''式内社調査報告'', the restored shrine grounds are undoubtedly the original site.<ref name="sk9"/>
-
 The shrine building was rebuilt in September 1917 (Taishō 6)<ref>宇治山田市役所 編（1929）：11ページ</ref> and again in November 1955 (Shōwa 30), and a major repair was carried out in May 1979 (Shōwa 54).<ref name="sk2"/>
-
 == Rites ==
 In February, the {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinensai|1=Kinensai}} is held; in June and December, the {{ill|Getsusai|ja|月次祭|1=Tsukinami-no-Matsuri|12=simple|13=User:Immanuelle/Getsusai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} is performed; in October, the {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}} is conducted; and in November, the {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai|1=Niiname-no-Matsuri}} is held in front of the shrine building, while the {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai|qq=}} (January) is observed with remote worship at the Gojōden of the Imperial Grand Shrine.<ref name="sk1">式内社研究会 編（1990）：291ページ</ref>
-
 A local custom called “Gosaimairi” (御祭まいり) is also practiced.<ref name="st">櫻井（1991）：294ページ</ref> This involves many residents visiting the shrine on Lunisolar June 17 and Lunisolar September 17 (the original date of the Kannamesai before the calendar reform).<ref name="st"/>
-
 == 植物相 ==
 According to a survey conducted in 1980 (Shōwa 55), the major trees on the grounds are {{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Sugi|1=Cryptomeria}}, {{ill|Chamaecyparis obtusa|en|Chamaecyparis obtusa|qid=Q917187|lt=Chamaecyparis obtusa|1=Chamaecyparis obtusa}}, and {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Kusunoki|1=Camphora officinarum}}, while the smaller trees consist of {{ill|Broad-leaved tree|lt=evergreen broadleaf trees|ja|常緑広葉樹|12=simple|13=User:Immanuelle/Broad-leaved tree|ja_comment=jawiki redirects to 広葉樹|1=Broad-leaved tree|comment=changed title based on wikidata|qid=Q148993}} and {{ill|Broad-leaved tree|lt=deciduous broadleaf trees|ja|落葉広葉樹|12=simple|13=User:Immanuelle/Broad-leaved tree|ja_comment=jawiki redirects to 広葉樹|1=Broad-leaved tree|comment=changed title based on wikidata|qid=Q148993}}.<ref name="sk1"/> Moss grows along the {{ill|Sandō|en|Sandō|qid=Q667783|lt=sandō|1=Sandō}}.<ref name="sk1"/>
-
 == 上久具の渡しと久具都比売橋 ==
 To the east of {{ill|Kugutsuhime Shrine|ja|久具都比賣神社|12=simple|13=User:Immanuelle/Kugutsuhime Shrine|qq=}}, there is the site of a ferry known as “Kamikugu no Watashi” (上久具の渡し) which operated for approximately 90 years.<ref>伊勢文化舎 編（2008）：70 - 71ページ</ref> The Kamikugu ferry connected Kamikugu on both banks of the Miyagawa (upper Kugu) and Tanahashi until March 1994 (Heisei 6), facilitating the movement of people and goods.<ref name="ic12">伊勢文化舎 編（2008）：71 - 72ページ</ref>
-
 In 1994 (Heisei 6), the construction of the Kugutsuhime Bridge resulted in the termination of the Kamikugu ferry service, which had been the last operating ferry in Mie Prefecture.<ref name="rc2"/> Due to frequent fluctuations in the river’s water level, the Kamikugu ferry often caused difficulties for its users.<ref name="sk9"/> As of 2013 (Heisei 25), clear remnants of the ferry landing remain on the Kamikugu side, and traces of a staircase serving as a school route can also be seen on the opposite Tanahashi side.<ref name="rc2"/>
-
 == Transportation Access ==
 ;公共交通
 * From the South Exit of {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise City Station|1=Iseshi Station}} (JR side) on the {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangu Line|1=Sangū Line}} of {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR (Tokai Passenger Railway)|1=Central Japan Railway Company}}, or the {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Yamada Line|1=Yamada Line (Kintetsu)}} of {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu|1=Kintetsu Railway}}, take the {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kōtsū|1=Mie Kotsu}} route bus bound for either {{ill|Shimesasu|ja|注連指|lt=Shimesasu|12=simple|13=User:Immanuelle/Shimesasu|ja_comment=jawiki link invalid}} or {{ill|Uedaguchi|ja|上田口|12=simple|13=User:Immanuelle/Uedaguchi|ja_comment=jawiki link invalid}}, ride for approximately 30 minutes, alight at the {{ill|Dōkai Housing Complex|ja|度会団地前|lt=Dōkai Housing Complex|12=simple|13=User:Immanuelle/Dōkai Housing Complex|ja_comment=jawiki link invalid}} bus stop, then walk for about 5 minutes.<ref name="kkm">{{Cite web|和書|url=http://www.kankomie.or.jp/spot/detail_8513.html |title=久具都比売神社（くぐつひめじんじゃ）の観光施設・周辺情報 - 観光三重 |publisher=三重県観光連盟 |language=日本語 |date=2013-05-07 |accessdate=2013-11-25}}</ref> The bus runs roughly once per hour.<ref>伊勢文化舎 編（2008）：71ページ</ref>
 ;自家用車
 * From {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway|1=Ise Expressway}} at {{ill|Tamakishima Interchange|ja|玉城インターチェンジ|lt=Tamakishima IC|12=simple|13=User:Immanuelle/Tamakishima Interchange|1=Tamaki interchange|comment=changed title based on wikidata|qid=Q11572465}}, head south on {{ill|Mie Prefectural Road 65: Dōkai-Tamakishima Line|ja|三重県道65号度会玉城線|lt=Mie Prefectural Road 65: Dōkai-Tamakishima Line|12=simple|13=User:Immanuelle/Mie Prefectural Road 65: Dōkai-Tamakishima Line|1=Mie Prefectural Road Route 65|comment=changed title based on wikidata|qid=Q11358065}} (Sunny Road) for about 10 minutes.<ref name="kkm"/>
 * From {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise City Station|1=Iseshi Station}}, via {{ill|Mie Prefectural Road 38: Ise-Ōmiya Line|ja|三重県道38号伊勢大宮線|lt=Mie Prefectural Road 38: Ise-Ōmiya Line|12=simple|13=User:Immanuelle/Mie Prefectural Road 38: Ise-Ōmiya Line|1=Mie Prefectural Road Route 38|comment=changed title based on wikidata|qid=Q11357925}}, approximately 12.5 {{ill|Kilometre|en|Kilometre|qid=Q828224|lt=km|1=Kilometre}}.<ref name="sk9"/>
-
 '''Kugutsuhime Shrine''' (久具都比売神社)
-
 == References ==
-
 {{Reflist|2}}
-
 == Bibliography ==
 * [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
 * [[櫻井勝之進]]『伊勢神宮の祖型と展開』[[国書刊行会]]、平成3rd year 11月30日、318p. ISBN 4-336-03296-3
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
-
 == See Also ==
 * {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * [[ヒメヒコ制]]
-
 == External Links ==
 {{ external media
 | align  = 
@@ -93,16 +68,8 @@ In 1994 (Heisei 6), the construction of the Kugutsuhime Bridge resulted in the t
 }}
 * [http://www.jingukaikan.jp/125mairi/m06/0609.html 久具都比賣神社（くぐつひめじんじゃ）] - 財団法人伊勢神宮崇敬会
 * [http://www.kirari1000.com/www.kirari1000.com.base_data.base_data.phpQkirari_cd=04648.html 久具都比売神社] - [[伊勢志摩きらり千選]]（財団法人伊勢志摩国立公園協会）
-
 :
-
 {{125 Shrines of Ise}}
-
-{{translated page|ja|久具都比賣神社|version=105185788|comment=Imported full ja history}}
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kugutsuhime Shrine (Q17214144)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -110,17 +77,16 @@ In 1994 (Heisei 6), the construction of the Kugutsuhime Bridge resulted in the t
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kugutsuhime Shrine|lt=Kugutsuhime Shrine|ja|久具都比賣神社|qid=Q17214144|1=Kugutsuhime Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.432796|136.612431|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181136 DB]
 |}
-{{wikidata link|Q17214144|ja|久具都比賣神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|久具都比賣神社|version=105185788|comment=Imported full ja history}}
+
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto_shrines_in_Mie_Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

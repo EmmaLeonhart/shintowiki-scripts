@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Konpira_Shrine_%28Tokushima%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
 {{Otheruses|a shrine located in Seimichō, Tokushima City|a shrine located in Kawauchichō, Tokushima City|Kotohira Shrine (Kawauchichō, Tokushima City)}}
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Kotohira Shrine (金刀比羅神社)
@@ -17,122 +16,40 @@
 | location = {{ill|Tokushima|qid=Q207309|1=Tokushima (city)}}
 | deity = {{ill|Ōmononushi|qid=Q10936701|1=Ōmononushi}}
 }}
-
 '''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Seimichō|ja|勢見町|12=simple|13=User:Immanuelle/Seimichō|1=Seimicho|comment=changed title based on wikidata|qid=Q11400568}}, Tokushima City, Tokushima Prefecture. Situated at the base of {{ill|Mount Bizan|en|Mount Bizan|qid=Q8189109|lt=Mt. Bizan|1=Mount Bizan}}, it is one of the three significant {{ill|Kotohira shrines|lt=Kotohira shrines|lt=Kotohira Shrines|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrines|comment=enwiki is a redirect}} in Tokushima Prefecture, alongside those in {{ill|Kawauchichō, Tokushima City|ja|川内町 (徳島市)|12=simple|13=User:Immanuelle/Kawauchichō, Tokushima City|1=Kawauchichō|comment=changed title based on wikidata|qid=Q11477745}} and {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto City|1=Naruto, Tokushima}}. Locals affectionately refer to it as the "Kotohira of Seimi."
-
 The shrine grounds house Japan’s largest stone lantern, standing 10.24 meters tall, which has been designated a {{ill|Tokushima City Heritage|ja|とくしま市民遺産|12=simple|13=User:Immanuelle/Tokushima City Heritage|1=Q11273094|comment=changed title based on wikidata|qid=Q11273094}}.
-
 == History ==
-
 The shrine was relocated in {{ill|1616|en|1616|qid=Q6788|lt=1616|1=1616}} (Genna 2) when {{ill|Hachisuka Iemasa|en|Hachisuka Iemasa|qid=Q1073557|lt=Hachisuka Iemasa|1=Hachisuka Iemasa}} entered {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province|1=Awa Province (Tokushima)}} and established it as a tutelary shrine for {{ill|Tokushima Castle|en|Tokushima Castle|qid=Q8011246|lt=Tokushima Castle|1=Tokushima Castle}}. The nearby {{ill|Seimi Mountain|ja|勢見山|12=simple|13=User:Immanuelle/Seimi Mountain|1=seimiyama|comment=changed title based on wikidata|qid=Q11400566}} derives its name from an incident in which {{ill|Minamoto no Yoshitsune|en|Minamoto no Yoshitsune|qid=Q310445|lt=Minamoto no Yoshitsune|1=Minamoto no Yoshitsune}} surveyed enemy forces on his way to {{ill|Yashima|ja|屋島|12=simple|13=User:Immanuelle/Yashima|1=Yashima|comment=changed title based on wikidata|qid=Q11465681}}. Originally, the mountain referred to {{ill|Hachibuse Mountain|ja|鉢伏山|12=simple|13=User:Immanuelle/Hachibuse Mountain|1=hachibuseyama|comment=changed title based on wikidata|qid=Q11649837}}, where {{ill|Katsura Shrine|ja|勝占神社|12=simple|13=User:Immanuelle/Katsura Shrine|qq=}} resides, but the name migrated with the shrine's relocation.
-
 Between 1885 (Meiji 18) and 1892 (Meiji 25), the {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Inbe Shrine|1=Inbe Shrine}} was temporarily enshrined here as a {{ill|Kokuhei Chūsha|ja|国幣中社|12=simple|13=User:Immanuelle/Kokuhei Chūsha|ja_comment=jawiki redirects to 近代社格制度|1=Modern system of ranked Shinto shrines}}. Details of this period can be found in the {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Inbe Shrine|1=Inbe Shrine}} entry.
-
 The grand torii was built in {{ill|1791|en|1791|qid=Q7784|lt=1791|1=1791}} (Kansei 3), featuring the largest shimenawa in Tokushima Prefecture. Together with the {{ill|Kotohira Shrine (Kawauchichō)|ja|金刀比羅神社 (徳島市川内町)|12=simple|13=User:Immanuelle/Kotohira Shrine (Kawauchichō)|qq=}} and the {{ill|Kotohira Shrine (Naruto)|ja|金刀比羅神社 (鳴門市)|12=simple|13=User:Immanuelle/Kotohira Shrine (Naruto)|qq=}}, it is one of the “Awa San Konpira” (Three Kotohira Shrines of Awa).<ref>''History Walks of Tokushima Prefecture'' (2009, Yamakawa Shuppansha, p. 105)</ref>
-
 == Enshrined Deities ==
-
 * {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi no Mikoto|1=Ōmononushi}} ([[Konpira Gongen]])
-
 == Sub-Shrines ==
-
 * Kōdaijin Shrine
 * Tenjin Shrine
 * Ōkitsu Shrine
-
 == Five Shrines of Tokushima City ==
-
 * {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=simple|13=User:Immanuelle/Suwa Shrine (Tokushima City)|qq=}} – located in {{ill|Minami Sako Sanban-chō|ja|南佐古三番町|12=simple|13=User:Immanuelle/Minami Sako Sanban-chō|ja_comment=jawiki redirects to 南佐古|1=Minamisako|comment=changed title based on wikidata|qid=Q11407479}}, Tokushima City
 * {{ill|Kasuga Shrine (Tokushima)|ja|春日神社 (徳島市)|12=simple|13=User:Immanuelle/Kasuga Shrine (Tokushima City)|qq=}} – located in {{ill|Bizan Town|ja|眉山町|12=simple|13=User:Immanuelle/Bizan Town|1=Bizanchō|comment=changed title based on wikidata|qid=Q11582582}}, Tokushima City
 * {{ill|Hachiman Shrine (Tokushima City)|ja|八幡神社 (徳島市)|12=simple|13=User:Immanuelle/Hachiman Shrine (Tokushima City)|qq=}} – located in {{ill|Iga Town, Tokushima City|ja|伊賀町 (徳島市)|12=simple|13=User:Immanuelle/Iga Town, Tokushima City|1=Igachō|comment=changed title based on wikidata|qid=Q11380671}}
 * {{ill|Shisho Shrine (Tokushima)|ja|四所神社 (徳島市)|12=simple|13=User:Immanuelle/Shisho Shrine (Tokushima City)|qq=}} – located in {{ill|Fukushima, Tokushima City|ja|福島 (徳島市)|12=simple|13=User:Immanuelle/Fukushima, Tokushima City|1=Fukushima|comment=changed title based on wikidata|qid=Q11592983}}
-
 == Access ==
-
 * By bus: Take the Tokushima City Bus bound for "Nikenya・Hōge" from {{ill|Tokushima Station|en|Tokushima Station|qid=Q860775|lt=Tokushima Station|1=Tokushima Station}} on the {{ill|Kōtoku Line|en|Kōtoku Line|qid=Q859984|lt=Kōtoku Line|1=Kōtoku Line}} and alight at "Kotohira Shita," immediately outside the shrine.
 * By train: Approximately 13 minutes on foot from {{ill|Niken'ya Station|en|Niken'ya Station|qid=Q10880415|lt=Nikenya Station|1=Niken'ya Station}} on the {{ill|Mugi Line|en|Mugi Line|qid=Q860478|lt=Mugi Line|1=Mugi Line}}.
-
 == References ==
-
 {{Reflist}}
-
 == See Also ==
-
 * {{ill|Kotohira-gū|en|Kotohira-gū|qid=Q94760|lt=Kotohira-gū|1=Kotohira-gū}}
 * {{ill|Kotohira shrines|lt=Kotohira shrines|lt=Kotohira Shrines|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrines|comment=enwiki is a redirect}}
 * {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Inbe Shrine|1=Inbe Shrine}}
-
 == External Links ==
-
 * [http://www.awanavi.jp/article/0002061.html Kotohira Shrine (Awa Navi)]
-
 {{Shinto-stub}}
 {{Shinto Horizontal}}
-
 {{translated page|ja|金刀比羅神社 (徳島市)|version=84208994|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-| name = Kotohira Shrine
-| religious_affiliation = [[Shinto]]
-|image = [[File:Kotohirajinja-seimicho.jpeg|300px]]
-| location = {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, [[:en:Tokushima City|Tokushima City]], [[Seimicho]] 1-Chome 1
-| coordinates = {{Coord|34|3|38.85|N|134|32|46.68|E|type:landmark_region:JP}}
-| deity = {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi|1=Ōmononushi}} ([[Konpira Gongen]])
-| Established = 
-| Main hall = 
-| Annual festival = {{ill|November 10|en|November 10|qid=Q2988|lt=November 10|1=November 10}}
-}}
-'''Kotohira Shrine''' (ことひらじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in [[Seimicho]], [[:en:Tokushima City|Tokushima City]], {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, Japan. Situated at the base of {{ill|Mount Bizan|en|Mount Bizan|qid=Q8189109|lt=Mt. Bizan|1=Mount Bizan}}, it is affectionately known as "Seko's Konpira-san." It is one of the three major Kotohira Shrines in Tokushima Prefecture, alongside those in {{ill|Kawauchi Town, Tokushima City|ja|川内町 (徳島市)|12=simple|13=User:Immanuelle/Kawauchi Town, Tokushima City|1=Kawauchichō|comment=changed title based on wikidata|qid=Q11477745}} and {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto City|1=Naruto, Tokushima}}, specifically in {{ill|Kizucho, Naruto City|ja|撫養町木津|12=simple|13=User:Immanuelle/Kizucho, Naruto City|1=Q11498695|comment=changed title based on wikidata|qid=Q11498695}}.
-
-The shrine grounds feature the largest stone lantern in Japan, standing 10.24 meters tall, which has been selected as a {{ill|Tokushima Civic Heritage|ja|とくしま市民遺産|12=simple|13=User:Immanuelle/Tokushima Civic Heritage|1=Q11273094|comment=changed title based on wikidata|qid=Q11273094}}.
-
-== History ==
-The shrine was moved to its current location in {{ill|1616|en|1616|qid=Q6788|lt=1616|1=1616}} (Genwa 2) after {{ill|Hachisuka Iemasa|en|Hachisuka Iemasa|qid=Q1073557|lt=Hachisuka Iemasa|1=Hachisuka Iemasa}} entered [[Awa Province]] and established {{ill|Tokushima Castle|en|Tokushima Castle|qid=Q8011246|lt=Tokushima Castle|1=Tokushima Castle}}. It was originally relocated from {{ill|Kachiden Town|ja|勝占町|12=simple|13=User:Immanuelle/Kachiden Town|1=Katsura chō|comment=changed title based on wikidata|qid=Q11400186}} as the tutelary shrine for the castle town. The nearby {{ill|Mt. Seimi|ja|勢見山|12=simple|13=User:Immanuelle/Mt. Seimi|1=seimiyama|comment=changed title based on wikidata|qid=Q11400566}} derives its name from a legend in which {{ill|Minamoto no Yoshitsune|en|Minamoto no Yoshitsune|qid=Q310445|lt=Minamoto no Yoshitsune|1=Minamoto no Yoshitsune}} surveyed his troops en route to {{ill|Yashima|ja|屋島|12=simple|13=User:Immanuelle/Yashima|1=Yashima|comment=changed title based on wikidata|qid=Q11465681}} after landing in Katsuura.
-
-From {{ill|1885|en|1885|qid=Q7821|lt=1885|1=1885}} (Meiji 18) to {{ill|1892|en|1892|qid=Q7839|lt=1892|1=1892}} (Meiji 25), the shrine temporarily housed the {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Imibe Shrine|1=Inbe Shrine}}, which was designated a {{ill|National Middle Shrine|ja|国幣中社|12=simple|13=User:Immanuelle/National Middle Shrine|ja_comment=jawiki redirects to 近代社格制度|1=Modern system of ranked Shinto shrines}} under the [[Modern system of Ranked Shinto shrines|modern shrine Ranking system]]. For more details, refer to the article on {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Imibe Shrine|1=Inbe Shrine}}.
-
-The grand torii gate was constructed in {{ill|1791|en|1791|qid=Q7784|lt=1791|1=1791}} (Kansei 3), and the shrine's shimenawa (sacred rope) is the largest in Tokushima Prefecture. Together with the Kotohira Shrines in Kawauchi and Naruto, the shrine has been historically referred to as one of the "Three Kotohira Shrines of Awa."<ref>"Tokushima History Walk" (2009, Yamakawa Publishing, p.105)</ref>
-
-== deity ==
-* {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi|1=Ōmononushi}} ([[Konpira Gongen]])
-
-== Sub-shrines ==
-* Kōtai Shrine
-* Tenjin Shrine
-* Okitsu Shrine
-
-== City's Five Shrines ==
-* {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=simple|13=User:Immanuelle/Suwa Shrine (Tokushima City)|qq=}} - Located in [[Minami Sako Sanbancho]], Tokushima City.
-* {{ill|Kasuga Shrine (Tokushima)|ja|春日神社 (徳島市)|12=simple|13=User:Immanuelle/Kasuga Shrine (Tokushima City)|qq=}} - Located on Mt. Ōtaki, [[Bizan Town]], Tokushima City.
-* {{ill|Hachiman Shrine (Tokushima City)|ja|八幡神社 (徳島市)|12=simple|13=User:Immanuelle/Hachiman Shrine (Tokushima City)|qq=}} - Located in [[Iga Town, Tokushima City]].
-* {{ill|Shisho Shrine (Tokushima)|ja|四所神社 (徳島市)|12=simple|13=User:Immanuelle/Shisho Shrine (Tokushima City)|qq=}} - Located in [[Fukushima, Tokushima City]].
-
-== Access ==
-* From {{ill|JR|en|JR|qid=Q127942|lt=JR|1=JR}} {{ill|Kōtoku Line|en|Kōtoku Line|qid=Q859984|lt=Kōtoku Line|1=Kōtoku Line}}'s {{ill|Tokushima Station|en|Tokushima Station|qid=Q860775|lt=Tokushima Station|1=Tokushima Station}}, take the Tokushima City Bus bound for "Nikoya/Hokka" and get off at "Kotohira Shita." The shrine is a short walk from the stop.
-* Approximately 13 minutes on foot from {{ill|JR|en|JR|qid=Q127942|lt=JR|1=JR}} {{ill|Mugi Line|en|Mugi Line|qid=Q860478|lt=Mugi Line|1=Mugi Line}}'s [[Nikoya Station]].
-
-== Notes ==
-
-{{Reflist}}
-
-== Related Articles ==
-* {{ill|Kotohira-gū|en|Kotohira-gū|qid=Q94760|lt=Kotohira-gū|1=Kotohira-gū}}
-* {{ill|Kotohira shrines|lt=Kotohira shrines|lt=Kotohira Shrine|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrine|comment=enwiki is a redirect}}
-* {{ill|Inbe Shrine|en|Inbe Shrine|qid=Q11490722|lt=Inbe Shrine|1=Inbe Shrine}}
-
-== External Links ==
-* [http://www.awanavi.jp/article/0002061.html Kotohira Shrine (Awa Navi)]
-{{Shinto-stub}}
-{{Shinto Horizontal}}
-
-*
-
-{{wikidata link|Q11646489|ja|金刀比羅神社 (徳島市)|ja|金刀比羅神社 (徳島市勢見町)}}
 [[Category:Bizan, Tokushima]]
 [[Category:Kotohira shrines]]
-[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Tokushima, Tokushima]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with interwikis with duplicate languages]]

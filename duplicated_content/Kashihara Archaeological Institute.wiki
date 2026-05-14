@@ -1,13 +1,8 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kashihara_Archaeological_Institute for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
-
 {{pp-vandalism|small=yes}}
-
 The '''Nara Prefectural Kashihara Archaeological Institute''' (奈良県立橿原考古学研究所, *Nara Kenritsu Kashihara Kōkogaku Kenkyūjo*) is a '''prefectural institution''' located in {{ill|Kashihara, Nara|en|Kashihara, Nara|qid=Q496319|lt=Kashihara, Nara|1=Kashihara, Nara}}, specializing in the research and investigation of '''buried cultural properties''' (埋蔵文化財). It is an institution under the jurisdiction of '''Nara Prefecture'''.
-
 As one of the oldest '''public institutions for archaeological research''' still in operation today, it is sometimes abbreviated as '''Kashikōken''' (橿考研). The institute has conducted '''excavations of major historical sites''' within Nara Prefecture, including the '''Makimuku Ruins''' ({{ill|Makimuku ruins|en|Makimuku ruins|qid=Q11608507|lt=Makimuku ruins|1=Makimuku ruins}}), {{ill|Hokenoyama Kofun|en|Hokenoyama Kofun|qid=Q11337664|lt=Hokenoyama Kofun|1=Hokenoyama Kofun}}, {{ill|Kurozuka Kofun|en|Kurozuka Kofun|qid=Q1793171|lt=Kurozuka Kofun|1=Kurozuka Kofun}}, {{ill|Sakurai Chausuyama Kofun|en|Sakurai Chausuyama Kofun|qid=Q11537882|lt=Sakurai Chausuyama Kofun|1=Sakurai Chausuyama Kofun}}, {{ill|Mesuriyama Kofun|en|Mesuriyama Kofun|qid=Q11343632|lt=Mesuriyama Kofun|1=Mesuriyama Kofun}}, {{ill|Fujinoki Tomb|en|Fujinoki Tomb|qid=Q3198273|lt=Fujinoki Kofun|1=Fujinoki Tomb}}, and {{ill|Takamatsuzuka Tomb|en|Takamatsuzuka Tomb|qid=Q1039675|lt=Takamatsuzuka Kofun|1=Takamatsuzuka Tomb}}. It has gained '''national recognition''' for its work on '''excavations of ancient capitals''' such as '''Asuka-kyō''' ({{ill|Asuka-dera|ja|飛鳥京跡|12=simple|13=User:Immanuelle/Asuka-dera|1=Asuka-kyō Ruins|comment=changed title based on wikidata|qid=Q11665955}}), '''Tōdai-ji''' ({{ill|Tōdai-ji|en|Tōdai-ji|qid=Q460367|lt=Tōdai-ji|1=Tōdai-ji}}), and '''Tōshōdai-ji''' ({{ill|Tōshōdai-ji|en|Tōshōdai-ji|qid=Q973175|lt=Tōshōdai-ji|1=Tōshōdai-ji}}). 
-
 The institute also manages an '''affiliated museum''' and operates a '''cultural property storage and research center''' in {{ill|Uda, Nara|en|Uda, Nara|qid=Q863747|lt=Uda, Nara|1=Uda, Nara}}.
-
 == History ==
 * '''1938 (Shōwa 13)''' - Archaeological surveys of '''Kashihara Shrine’s outer precincts''' were conducted as part of the '''2600th Anniversary of Japan’s Founding Project''' (紀元二千六百年記念行事). '''Masao Suenaga''' ({{ill|Masao Suenaga|ja|末永雅雄|12=simple|13=User:Immanuelle/Masao Suenaga|1=Masao Suenaga|comment=changed title based on wikidata|qid=Q11519783}}) from '''Kyoto University''' led the survey on '''September 13''', which later became the institute’s '''founding date'''.
 * '''1951 (Shōwa 26)''' - The '''Nara Prefectural Kashihara Archaeological Institute''' was officially established with '''Masao Suenaga''' as the first director.
@@ -18,7 +13,6 @@ The institute also manages an '''affiliated museum''' and operates a '''cultural
 * '''1997 (Heisei 9)''' - Excavation of '''Kurozuka Kofun'''.
 * '''2014 (Heisei 26)''' * '''Cultural Property Storage and Research Center''' established in the former '''Nara Prefectural Murō High School'''.
 * '''2015 (Heisei 27)''' - The institute was transferred from the '''Nara Prefectural Board of Education''' to the '''Governor’s Office of Nara Prefecture'''.
-
 == Organization ==
 * The '''Director-General''' oversees the '''Deputy Director''' and '''Museum Director'''.
 * The '''Deputy Director''' supervises:
@@ -29,7 +23,6 @@ The institute also manages an '''affiliated museum''' and operates a '''cultural
   ** '''Excavation Section''' (調査課)
 ** '''General Affairs Section''' (総務課)
 * The '''Museum Director''' supervises the '''Deputy Museum Director''' and the '''Curatorial Section''' (学芸課).
-
 == Affiliated Museum ==
 {{博物館
 |名称 = Nara Prefectural Kashihara Archaeological Institute Museum
@@ -41,75 +34,18 @@ The institute also manages an '''affiliated museum''' and operates a '''cultural
 |アクセス = [[Kintetsu Railway|Kintetsu]] {{ill|Kashihara Line|en|Kashihara Line|qid=Q2491066|lt=Kintetsu Kashihara Line|1=Kashihara Line}}, {{ill|Minami Osaka Line|en|Minami Osaka Line|qid=Q901342|lt=Kintetsu Minami-Osaka Line|1=Minami Osaka Line}}, {{ill|Yoshino Line|en|Yoshino Line|qid=Q901085|lt=Kintetsu Yoshino Line|1=Yoshino Line}} - [[Kashiharajingū-mae Station]] (15-min walk) <br> [[Kintetsu Kashihara Line]] - [[Unebigoryōmae Station]] (5-min walk)
 |URL = [http://www.kashikoken.jp/museum/ Official Website]
 }}
-
 The '''museum houses approximately 3,700 artifacts''' spanning from the '''Paleolithic period to the Muromachi period'''.<ref name="kyodo20211103">{{Cite web|和書|title=Nara's Kashihara Archaeological Institute Museum Reopens|url=https://web.archive.org/web/20211102110118/https://nordot.app/828174813890314240|website=Kyodo News|accessdate=2021-11-03|language=ja}}</ref>
-
 The museum was '''closed for renovations''' from '''December 24, 2018''', due to updates to the '''air conditioning system''' and concerns over the presence of '''harmful substances inside display cases'''. It '''reopened on November 3, 2021'''.<ref name="kyodo20211103" />
-
 == See Also ==
 {{Commonscat|The Museum, Archaeological Institute of Kashihara, Nara Prefecture}}
 * 
-
 == External Links ==
 * {{official|http://www.kashikoken.jp/}}
 * {{Facebook|kashikoken|Nara Prefectural Kashihara Archaeological Institute}}
-
 {{coord|region:JP|display=title}}
-
 {{translated page|ja|奈良県立橿原考古学研究所|version=104254781|comment=Imported full ja history}}
-
 [[file:Kashihara Archaeological Institute , Nara prefecture.jpg|thumb|200px|right|Nara Prefectural Kashihara Archaeological Institute]]
 
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{pp-vandalism|small=yes}}
-
-The '''Nara Prefectural Kashihara Archaeological Institute''' (奈良県立橿原考古学研究所, ''Nara Kenritsu Kashihara Kōkogaku Kenkyūsho'') is a prefectural research organization for archaeological excavations and studies, located in {{ill|Kashihara, Nara|en|Kashihara, Nara|qid=Q496319|lt=Kashihara|1=Kashihara, Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, Japan. It is one of the oldest publicly operated archaeological institutes still in existence and is often abbreviated as '''Kashikōken''' (橿考研). The institute is renowned for its excavations of significant sites such as {{ill|Makimuku ruins|en|Makimuku ruins|qid=Q11608507|lt=Makimuku Ruins|1=Makimuku ruins}}, {{ill|Hokenoyama Kofun|en|Hokenoyama Kofun|qid=Q11337664|lt=Hokenoyama Kofun|1=Hokenoyama Kofun}}, {{ill|Kurozuka Kofun|en|Kurozuka Kofun|qid=Q1793171|lt=Kurozuka Kofun|1=Kurozuka Kofun}}, and {{ill|Fujinoki Tomb|en|Fujinoki Tomb|qid=Q3198273|lt=Fujinoki Tomb|1=Fujinoki Tomb}}, as well as historical locations like {{ill|Asuka Palace Ruins|ja|飛鳥京跡|12=simple|13=User:Immanuelle/Asuka Palace Ruins|1=Asuka-kyō Ruins|comment=changed title based on wikidata|qid=Q11665955}}, {{ill|Tōdai-ji|en|Tōdai-ji|qid=Q460367|lt=Tōdai-ji|1=Tōdai-ji}}, and {{ill|Tōshōdai-ji|en|Tōshōdai-ji|qid=Q973175|lt=Tōshōdai-ji|1=Tōshōdai-ji}}. It also includes an attached museum and a facility in {{ill|Uda, Nara|en|Uda, Nara|qid=Q863747|lt=Uda|1=Uda, Nara}} for the preservation and organization of cultural artifacts.
-
-== History ==
-* 1938: The institute's origins trace back to the "2600th Anniversary of the Imperial Era" commemorative events, during which {{ill|Kashihara Shrine|en|Kashihara Shrine|qid=Q710333|lt=Kashihara Shrine|1=Kashihara Shrine}} conducted an excavation of the {{ill|Kashihara Ruins|ja|橿原遺跡|12=simple|13=User:Immanuelle/Kashihara Ruins|1=Kashihara Site|comment=changed title based on wikidata|qid=Q24876647}} led by Masao Suenaga from Kyoto University. September 13, the start date of this excavation, is celebrated as the institute's founding date.
-* 1951: Officially established as the Nara Prefectural Kashihara Archaeological Institute, with Masao Suenaga as its director.
-* 1972: Discovery of the mural paintings in {{ill|Takamatsuzuka Tomb|en|Takamatsuzuka Tomb|qid=Q1039675|lt=Takamatsuzuka Kofun|1=Takamatsuzuka Tomb}}.
-* 1974: The Archaeological Museum of Kashihara became an affiliated facility of the institute.
-* 1985: First excavation of the Fujinoki Kofun.
-* 1990: Completion tier 6]], {{ill|Cultural properties of Japan|ja|埋蔵文化財|12=simple|13=User:Immanuelle/Cultural properties of Japan|1=buried cultural property|comment=changed title based on wikidata|qid=Q11425912}}
-| Location = {{ill|Kashihara, Nara|en|Kashihara, Nara|qid=Q496319|lt=Kashihara|1=Kashihara, Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, Japan
-| Website = [http://www.kashikoken.jp/museum/ Museum Official Site]
-}}
-The museum showcases approximately 3,700 artifacts from the Paleolithic through the Muromachi period.<ref name="kyodo20211103">{{Cite web|和書|title=奈良の橿考研博物館リニューアル|url=https://web.archive.org/web/20211102110118/https://nordot.app/828174813890314240|website=共同通信|accessdate=2021-11-03|language=ja}}</ref> 
-
-Closed from December 24, 2018, for HVAC system updates, it reopened on November 3, 2021.<ref>[https://www.sankei.com/west/news/180417/wst1804170015-n1.html Museum closure announcement] {{lang|ja|産経ニュース}}, April 17, 2018.</ref><ref name="kyodo20211103" />
-
-=== Utilization Information ===
-* Hours: 9:00 AM to 5:00 PM (last admission at 4:30 PM)
-* Closed: Mondays (or the following day if a holiday falls on a Monday), and from December 28 to January 4.
-* Admission Fees:
-** Adults: ¥400 (¥350 for groups)
-** Students (high school/university): ¥300 (¥250 for groups)
-** Children (elementary/middle school): ¥200 (¥150 for groups)
-
-International tourists are admitted free of charge under Nara Prefecture's guidelines.<ref>{{Cite news|title=Why foreign tourists are free at Nara's museums while Japanese visitors pay?|newspaper=FNN|date=2024-03-07|url=https://www.fnn.jp/articles/-/667893|accessdate=2024-03-07}}</ref>
-
-=== Highlights of Cultural Properties ===
-* National Treasures and Important Cultural Properties include artifacts from significant kofun and archaeological sites in Nara Prefecture.
-
-== Related Articles ==
-* {{ill|List of personnel at the Nara Prefectural Kashihara Archaeological Institute|ja|奈良県立橿原考古学研究所の人物|12=simple|13=User:Immanuelle/List of personnel at the Nara Prefectural Kashihara Archaeological Institute|ja_comment=jawiki link invalid}}
-
-== External Links ==
-* {{official|http://www.kashikoken.jp/}}
-* {{Facebook|kashikoken|Nara Prefectural Kashihara Archaeological Institute}}
-
-{{coord|region:JP|display=title}}
-
-{{translated page|ja|奈良県立橿原考古学研究所|version=104254781|comment=Imported full ja history}}
-
-[[file:Kashihara Archaeological Institute , Nara prefecture.jpg|thumb|200px|right|The Nara Prefectural Kashihara Archaeological Institute]]
-
-{{Commons category|Archaeological Institute of Kashihara, Nara Prefecture}}
-
-{{Commons category|Archaeological Institute of Kashihara, Nara Prefecture}}
-{{wikidata link|Q11445218|co|commons:Category:Archaeological Institute of Kashihara, Nara Prefecture|de|Archäologisches Forschungsinstitut der Präfektur Nara in Kashihara|ja|奈良県立橿原考古学研究所|de|Arch%C3%A4ologisches Forschungsinstitut der Pr%C3%A4fektur Nara in Kashihara}}
 [[Category: of the main building and other new facilities.
 * 1997: Excavation of the Kurozuka Kofun.
 * 2014: Establishment of the Uda Cultural Heritage Center at the site of the former Murō High School.
@@ -149,7 +85,6 @@ The institute is headed by a director, with departments including:
 [[Category:National Treasures of Japan]]
 [[Category:National Treasures of Japan (archaeological materials)]]
 [[Category:National Treasures of Japan in Nara prefecture]]
-[[Category:Pages with duplicated content]]
 [[Category:Research institutes in Japan]]
 [[Category:Research institutes in Nara prefecture]]
 [[Category:Scientific organizations established in 1938]]

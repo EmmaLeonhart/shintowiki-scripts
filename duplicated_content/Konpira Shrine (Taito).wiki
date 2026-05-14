@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Konpira_Shrine_%28Taito%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Kotohira Shrine (金刀比羅神社)
 | religious_affiliation = [[Shinto]]
@@ -17,86 +16,22 @@
 | Rituals = 
 | location = {{ill|Taitō-ku|qid=Q232641|1=Taitō}}
 }}
-
 '''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Taitō|en|Taitō|qid=Q232641|lt=Taito City|1=Taitō}}, Tokyo.
-
 == History ==
-
 The shrine was established during the {{ill|Keichō|en|Keichō|qid=Q1328185|lt=Keichō|1=Keichō}} period ({{ill|1596|en|1596|qid=Q6785|lt=1596|1=1596}} – {{ill|1615|en|1615|qid=Q6784|lt=1615|1=1615}}). Its founder, {{ill|Ikoma Chikamasa|en|Ikoma Chikamasa|qid=Q1059845|lt=Ikoma Chikamasa|1=Ikoma Chikamasa}}, the lord of the {{ill|Takamatsu Domain|en|Takamatsu Domain|qid=Q1036915|lt=Takamatsu Domain|1=Takamatsu Domain}}, enshrined a branch of {{ill|Konpira Gongen|en|Konpira Gongen|qid=Q167077|lt=Konpira Gongen|1=Konpira Gongen}} from {{ill|Kotohira-gū|en|Kotohira-gū|qid=Q94760|lt=Kotohira-gū|1=Kotohira-gū}} in {{ill|Sanuki Province|en|Sanuki Province|qid=Q929682|lt=Sanuki Province|1=Sanuki Province}} to the Ikoma clan’s {{ill|Edo residence|ja|江戸藩邸|12=simple|13=User:Immanuelle/Edo residence|1=Edo Hantei|comment=changed title based on wikidata|qid=Q11551112}}. This marks the origin of the shrine.<ref name="下谷">Tokyo City Shitaya Ward, ''Shitaya Ward History'', Tokyo City Shitaya Ward, 1935, pp. 956–957</ref><ref name="東京神社">Tokyo Metropolitan Shrine Bureau, ''Tokyo Shrine Directory, Volume 1'', Tokyo Metropolitan Shrine Bureau, 1986, pp. 102–103</ref>
-
 During the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, public access to daimyō residences was prohibited. However, due to the popularity of Konpira Gongen, many desired to visit. The Ikoma family sought permission from the {{ill|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|ja|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|12=simple|13=User:Immanuelle/Tokugawa shogunate|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid}}, and a special exemption allowed public worship on the 10th day of every month.<ref name="下谷"></ref>
-
 Later, the Ikoma clan faced an {{ill|O-Ie Sōdō|en|O-Ie Sōdō|qid=Q133766|lt=Oie Sōdō|1=O-Ie Sōdō}} ({{ill|Ikoma Sōdō|ja|生駒騒動|12=simple|13=User:Immanuelle/Ikoma Sōdō|1=Ikoma Sōdō|comment=changed title based on wikidata|qid=Q11574947}}), which led to their demotion from daimyō to {{ill|Kōtai-yoriai hatamoto|ja|交代寄合旗本|12=simple|13=User:Immanuelle/Kōtai-yoriai hatamoto|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid}}. However, their Edo residence remained, and the shrine continued its rituals uninterrupted.<ref name="下谷"></ref>
-
 The shrine was destroyed during the {{ill|Great Kantō Earthquake|ja|関東大震災|12=simple|13=User:Immanuelle/Great Kantō Earthquake|1=aftermath of 1923 Great Kantō earthquake|comment=changed title based on wikidata|qid=Q3742341}} in {{ill|1923|en|1923|qid=Q2169|lt=Taisho 11|1=1923}} and again in the {{ill|Bombing of Tokyo|en|Bombing of Tokyo|qid=Q59886|lt=Tokyo air raids|1=Bombing of Tokyo}} of {{ill|1945|en|1945|qid=Q5240|lt=Showa 20|1=1945}}. The current hall was reconstructed in {{ill|1963|en|1963|qid=Q2755|lt=Showa 38|1=1963}}.<ref name="下谷"></ref><ref name="東京神社"></ref>
-
 == Access ==
-
 * A 3-minute walk from {{ill|Okachimachi Station|en|Okachimachi Station|qid=Q801296|lt=Okachimachi Station|1=Okachimachi Station}} or {{ill|Naka-okachimachi Station|en|Naka-okachimachi Station|qid=Q1072993|lt=Naka-Okachimachi Station|1=Naka-okachimachi Station}}.
-
 == References ==
-
 {{Reflist}}
-
 == Bibliography ==
 * Tokyo City Shitaya Ward, ''Shitaya Ward History'', Tokyo City Shitaya Ward, 1935
 * Tokyo Metropolitan Shrine Bureau, ''Tokyo Shrine Directory, Volume 1'', Tokyo Metropolitan Shrine Bureau, 1986
-
 {{Pref-stub|pref=Tokyo}} 
 {{shinto-stub}}
-
 {{translated page|ja|金刀比羅神社 (台東区)|version=101929342|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{Infobox religious building
-||name=Kotohira Shrine (金刀比羅神社 (台東区))
-|native_name=金刀比羅神社
-|religious_affiliation={{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
-|image=[[File:金刀比羅神社 (台東区).jpg|250px]]<br />Shrine Building<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=14|frame-align=center|frame-width=250|coord={{coord|35|42|12.1|N|139|46|42.6|E}}}}
-|religious_affiliation={{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
-|location={{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}{{ill|Taitō|en|Taitō|qid=Q232641|lt=Taito Ward|1=Taitō}}{{ill|Taito|ja|台東 (台東区)|lt=Taito|lt_ja=台東|12=simple|13=User:Immanuelle/Taito|1=Taitō|comment=changed title based on wikidata|qid=Q11411946}}2-24-1
-|location={{coordinates|35|42|12.1|N|139|46|42.6|E|region:JP-13_type:landmark|display=inline,title|name=Kotohira Shrine (金刀比羅神社 (台東区))}}
-|religious_affiliation={{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
-|deity={{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi|1=Ōmononushi}}（{{ill|Konpira Gongen|en|Konpira Gongen|qid=Q167077|lt=Kotohira Great Deity|1=Konpira Gongen}}）
-|religious_affiliation={{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
-|type=
-|創建={{ill|Keichō|en|Keichō|qid=Q1328185|lt=Keichō|1=Keichō}} period ({{ill|1596|en|1596|qid=Q6785|lt=1596|1=1596}} - {{ill|1615|en|1615|qid=Q6784|lt=1615|1=1615}})
-|本殿=
-|別名=Takecho Kotohira Shrine (竹町金刀比羅神社)
-|札所等=
-|religious_affiliation={{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
-|festival=
-|神事=
-}}
-
-'''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}{{ill|Taitō|en|Taitō|qid=Q232641|lt=Taito Ward|1=Taitō}}.
-
-== History ==
-It was founded during the {{ill|Keichō|en|Keichō|qid=Q1328185|lt=Keichō|1=Keichō}} period ({{ill|1596|en|1596|qid=Q6785|lt=1596|1=1596}} - {{ill|1615|en|1615|qid=Q6784|lt=1615|1=1615}}). Its founder, {{ill|Ikoma Chikamasa|en|Ikoma Chikamasa|qid=Q1059845|lt=Ikoma Chikemasa|1=Ikoma Chikamasa}}, was the lord of the {{ill|Takamatsu Domain|en|Takamatsu Domain|qid=Q1036915|lt=Takamatsu Domain|1=Takamatsu Domain}} and, in the same {{ill|Sanuki Province|en|Sanuki Province|qid=Q929682|lt=Sanuki Province|1=Sanuki Province}}, the sub-spirit of {{ill|Konpira Gongen|en|Konpira Gongen|qid=Q167077|lt=Kotohira Great Deity|1=Konpira Gongen}} was enshrined at the {{ill|Ikoma clan|en|Ikoma clan|qid=Q2975274|lt=Ikoma Family|1=Ikoma clan}}'s {{ill|Edo Residence|ja|江戸藩邸|lt=Edo Residence|lt_ja=中屋敷|12=simple|13=User:Immanuelle/Edo Residence|1=Edo Hantei|comment=changed title based on wikidata|qid=Q11551112}}. This is the origin of this shrine.<ref name="下谷">Tokyo City Shimotani District, ed. "History of Shimotani District", Tokyo City Shimotani District, 1935, pp.956–957</ref><ref name="東京神社">Tokyo Metropolitan Shrine Agency, ed. "Tokyo Metropolitan Shrine Directory, Volume 1", Tokyo Metropolitan Shrine Agency, 1986, pp.102–103</ref>.
-
-During the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, ordinary people were prohibited from entering daimyō residences. However, since Kotohira Great Deity was popular even among commoners, many wished to worship him. Consequently, the Ikoma family petitioned the {{ill|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|ja|幕府|lt=Tokugawa Shogunate|lt_ja=幕府|12=simple|13=User:Immanuelle/Tokugawa shogunate|comment=enwiki is a redirect|comment=enwiki is a redirect}}, and as an exception, worship on the 10th day of every month was permitted.<ref name="下谷"></ref>
-
-Later, the Ikoma family was involved in a family feud (the {{ill|Ikoma disturbance|ja|生駒騒動|12=simple|13=User:Immanuelle/Ikoma disturbance|1=Ikoma Sōdō|comment=changed title based on wikidata|qid=Q11574947}}, also known as {{ill|O-Ie Sōdō|en|O-Ie Sōdō|qid=Q133766|lt=Ouchi-sōdō|1=O-Ie Sōdō}}), and ultimately was demoted from {{ill|Daimyo|en|Daimyo|qid=Q61982|lt=daimyō|1=Daimyo}} to {{ill|Hatamoto|en|Hatamoto|qid=Q572662|lt=hatamoto|1=Hatamoto}} through a system of alternating assemblies. However, the Edo residence continued to exist as the residence of the Ikoma family, and the rituals of Kotohira Shrine continued uninterrupted.<ref name="下谷"></ref>
-
-It was destroyed by fire each time during the {{ill|Kantō earthquake|ja|関東大震災|12=simple|13=User:Immanuelle/Kantō earthquake|1=aftermath of 1923 Great Kantō earthquake|comment=changed title based on wikidata|qid=Q3742341}} of {{ill|1923|en|1923|qid=Q2169|lt=1923|1=1923}} (12th year of the {{ill|Taishō era|en|Taishō era|qid=Q329174|lt=Taishō|1=Taishō era}} era) and the {{ill|Bombing of Tokyo|en|Bombing of Tokyo|qid=Q59886|lt=Tokyo air raid|1=Bombing of Tokyo}} of {{ill|1945|en|1945|qid=Q5240|lt=1945|1=1945}} (20th year of the {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa|1=Shōwa era}} era). The current shrine building was newly constructed in {{ill|1963|en|1963|qid=Q2755|lt=1963|1=1963}} (38th year of the Shōwa era).<ref name="下谷"></ref><ref name="東京神社"></ref>
-
-== Access ==
-* A 3-minute walk from either {{ill|Okachimachi Station|en|Okachimachi Station|qid=Q801296|lt=Okachimachi Station|1=Okachimachi Station}} or {{ill|Naka-okachimachi Station|en|Naka-okachimachi Station|qid=Q1072993|lt=Naka-Okachimachi Station|1=Naka-okachimachi Station}}.
-
-== References ==
-{{Reflist}}
-
-== Bibliography ==
-* Tokyo City Shimotani District, ed. "History of Shimotani District", Tokyo City Shimotani District, 1935
-* Tokyo Metropolitan Shrine Agency, ed. "Tokyo Metropolitan Shrine Directory, Volume 1", Tokyo Metropolitan Shrine Agency, 1986, pp.102–103
-
-{{Pref-stub|pref=Tokyo}}
-{{shinto-stub}}
-
-{{translated page|ja|金刀比羅神社 (台東区)|version=101929342|comment=Imported full ja history}}
-
-{{wikidata link|Q106852639|ja|金刀比羅神社 (台東区)}}
-[[Category:Pages with duplicated content]]
 [[Category:Shitaya]]
 [[Category:Wikidata has short description]]

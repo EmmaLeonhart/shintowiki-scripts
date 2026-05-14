@@ -1,6 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kuchira_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name = Kuchira Shrine
 | religious_affiliation = [[Shinto]]
@@ -20,42 +18,27 @@
 | coordinates = {{Coord|34.483861|N|136.58375}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
 }}
-
 '''Kuchira Shrine''' (朽羅神社) is an auxiliary shrine (摂社) of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine) of the [[Ise Grand Shrine]] in {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, Japan. It Ranks 12th among the 27 auxiliary shrines of Kōtai Jingū.<ref>Compiled by Ujiyamada City Hall (1929): pp. 9–11.</ref>
-
 The enshrined deities are agricultural gods, and the shrine grounds appear like a small green island floating amidst rice paddies.<ref>Compiled by Ise Bunka-sha (2008): pp. 62, 64.</ref>
-
 == Overview ==
 {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}[[:en:Watarai District, Mie|Watarai District]]{{ill|Tamaki, Mie|en|Tamaki, Mie|qid=Q587348|lt=Tamaki Town|1=Tamaki, Mie}} Hara, Mori-no-mae 272<ref name="tm">Tatsumi Publishing (2013): p.59</ref>. The site of the shrine is known as "Miyata Mori"<ref name="gk">Gakken Publishing (2013): p.68</ref>. It is a shrine established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<ref name="tm"/>. The sacred object ({{ill|Shintai|en|Shintai|qid=Q327532|lt=Shintai|1=Shintai}}) is a stone<ref>Kaneko (1983): p.59</ref>.
-
 The name "Kuchira" means "to enshrine" or "to confine," referring to a forest where a {{ill|Deity|en|Deity|qid=Q178885|lt=kami (Shinto)|1=Deity}} resides<ref name="gk"/><ref name="ic">Ise Bunka Publishing (2008): p.64</ref>. Another theory interprets "Kuchira" as "Kuchihara," meaning the entrance to a path<ref name="sk5">Shikinaisha Research Association (1990): p.315</ref>. The reading of "Kuchira" varies between "Kuchira" and "Kutami" depending on historical records<ref name="sk5"/>.
-
 At the entrance of the precincts is a stone-carved {{ill|temizuya|ja|手水舎|12=simple|13=User:Immanuelle/temizuya|ja_comment=jawiki redirects to 手水|1=Chōzuya|comment=changed title based on wikidata|qid=Q1069667}}. Following the winding {{ill|Sandō|en|Sandō|qid=Q667783|lt=sando (Shinto)|1=Sandō}}, one reaches a small {{ill|shaden|ja|社殿|12=simple|13=User:Immanuelle/shaden|ja_comment=jawiki redirects to 神社建築|1=Shinto architecture|comment=changed title based on wikidata|qid=Q3080012}}<ref>{{Cite web|Japanese book|url=http://www.fmmie.jp/diary/program/okage/index.cgi?no=51 |title=Radio Cube FM Mie |work=Broadcast on August 17, Tamaki Town Kuchira Shrine |publisher=Mie FM Broadcasting |date=2013-04-04 |archiveurl=https://web.archive.org/web/20140604070523/http://www.fmmie.jp/diary/program/okage/index.cgi?no=51 |archivedate=2014-06-04 |accessdate=2014-06-04}}</ref>. The shrine is built in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style with wooden boards, measuring 6 shaku (approx. 1.8 m) in length and 4 shaku (approx. 1.2 m) in width<ref name="sk7">Shikinaisha Research Association (1990): p.317</ref>. The shrine grounds cover approximately 3,898 m<sup>2</sup><ref name="uy">Ujiyamada City Hall (1929): p.10</ref>.
-
 == Enshrined Kami ==
 The enshrined deities are Chiyorihime-no-Mikoto and Chiyorihiko-no-Mikoto<ref name="gk"/><ref name="ic"/>. Both are guardian deities of rice fields<ref name="gk"/><ref name="ic"/>. They are siblings, children of {{ill|Toshigami|ja|大歳神|12=simple|13=User:Immanuelle/Toshigami|qq=}}, with Chiyorihime being the elder sister and Chiyorihiko the younger brother<ref name="tm"/>.
-
 According to "Jinmei Hisyo," the kami are considered {{ill|Suijin|en|Suijin|qid=Q3137449|lt=water god|1=Suijin}}<ref name="sk7"/>.
-
 == History ==
 The shrine is not listed as "Kuchira Shrine" in the "Kotaijingu Gishikicho," but appears as "Kumarabi Shrine"<ref name="sk6">Shikinaisha Research Association (1990): p.316</ref>. Kumarabi Shrine enshrined Chiyorihime-no-Mikoto and Chiyorihiko-no-Mikoto, established by Yamato-hime-no-mikoto<ref name="sk6"/>.
-
 The shrine was restored on August 29, Kanbun 3 (Gregorian date: September 30, 1663)<ref name="sk5"/>. However, {{ill|Mikado Kiyonao|ja|御巫清直|12=simple|13=User:Immanuelle/Mikado Kiyonao|1=Mikannagi Kiyonao|comment=changed title based on wikidata|qid=Q6537624}} claimed that the restored site was not the original, suggesting that the ancestral god of the now-abandoned Hara Village was the original site<ref>Shikinaisha Research Association (1990): pp. 315-316</ref>. {{ill|Ban Nobutomo|ja|伴信友|12=simple|13=User:Immanuelle/Ban Nobutomo|1=Ban Nobutomo|comment=changed title based on wikidata|qid=Q4346747}} argued for the reading "Kutami," speculating that it was originally located in {{ill|Futami|ja|二見|12=simple|13=User:Immanuelle/Futami|1=二見|comment=changed title based on wikidata|qid=Q11371780}} due to phonetic similarities<ref>Shikinaisha Research Association (1990): pp. 316-317</ref>.
-
 The shrine was rebuilt in December 1908 (Meiji 41)<ref name="uy"/>.
-
 == Rituals ==
 The shrine is known for rituals praying for rain, where residents beat gongs, drums, and conch shells while chanting "A-me, Ta-more, Ta-beyo" (meaning "grant us rain") when droughts persist<ref name="tm"/>.
-
 == Surroundings ==
 The shrine is easily located if the direction is correct<ref>{{Cite web|Japanese book|url=http://www.isekanko.jp/k-cycling/course19.html|title=Course 19 Tamaki Route 2 ~ Touring the Ancient Deities of the Countryside ~ |publisher=Ise City Tourism Association |accessdate=2014-06-04 |archiveurl=https://web.archive.org/web/20131026235527/http://www.isekanko.jp/k-cycling/course19.html |archivedate=2013-10-26}}</ref>.
 * {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central|1=Central Japan Railway Company}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangu Line|1=Sangū Line}} {{ill|Tokida Station|en|Tokida Station|qid=Q7813584|lt=Sotojida Station|1=Tokida Station}}: about 30 minutes on foot (approx. 2 km)<ref name="tm"/><ref name="sk5"/>.
 * {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway|1=Ise Expressway}} {{ill|Tamaki IC|ja|玉城インターチェンジ|12=simple|13=User:Immanuelle/Tamaki IC|1=Tamaki interchange|comment=changed title based on wikidata|qid=Q11572465}}: about 13 minutes by car (approx. 6.4 km).
-
 == References ==
-
 {{Reflist|2}}
-
 == Bibliography ==
 * [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
@@ -63,12 +46,10 @@ The shrine is easily located if the direction is correct<ref>{{Cite web|Japanese
 * 金子延夫『玉城町史 第1巻―南伊勢の歴史と伝承―』三重県郷土資料叢書第61集、三重県郷土史料刊行会、昭和58th year 8月10日、276p.
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 『日本人なら知っておきたい 伊勢神宮と125の社』タツミムック、[[辰巳出版]]、2013rd year 11月1日、127p. ISBN 978-4-7778-1197-7
-
 == See Also ==
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * [[東外城田村]]
-
 == External Links ==
 {{ external media
 | align  = 
@@ -76,20 +57,10 @@ The shrine is easily located if the direction is correct<ref>{{Cite web|Japanese
 | religious_affiliation = [[Shinto]]
 |image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area03/area03_04.jpg 朽羅神社]
 }}
-
 * [http://www.jingukaikan.jp/125mairi/m07/0702.html 朽羅神社（くちらじんじゃ）] - 一般財団法人伊勢神宮崇敬会
 * {{Wayback |url=http://www.town.tamaki.mie.jp/hpdata/kanbun/jinjya.html |title=神社めぐり |date=20100614012409}}：玉城町
-
 {{神道 横}}
-
 {{125 Shrines of Ise}}
-
-{{translated page|ja|朽羅神社|version=98113671|comment=Imported full ja history}}
-
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kuchira Shrine (Q17229533)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -97,12 +68,12 @@ The shrine is easily located if the direction is correct<ref>{{Cite web|Japanese
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kuchira Shrine|lt=Kuchira Shrine|ja|朽羅神社|qid=Q17229533|1=Kuchira Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.483903|136.583721|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181141 DB]
 |}
-{{wikidata link|Q17229533|da|d:Q17229533|ja|朽羅神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|朽羅神社|version=98113671|comment=Imported full ja history}}
+
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Tamaki Town]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Tamaki]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -110,7 +81,6 @@ The shrine is easily located if the direction is correct<ref>{{Cite web|Japanese
 [[Category:Tamaki,_Mie]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

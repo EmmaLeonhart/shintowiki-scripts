@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tate_Shrine_%28Tsurugi%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
-
 {{Infobox religious building
 |名称= 建神社
 | religious_affiliation = [[Shinto]]|image= [[File:Tate-jinja (Tsurugi).jpg|280px]]
@@ -13,33 +12,24 @@
 |festival= 
 |神事= 
 }}
-
 '''Tate Jinja''' (建神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Tsurugi, Tokushima|en|Tsurugi, Tokushima|qid=Q1206005|lt=Tsurugi, Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}.
-
 == History ==
 The year of its foundation is unknown. It is affectionately called Gongen-san or Gongen-han. According to one theory, it was once located in a place called Tenno in Handayama in ancient times.<ref>{{Cite web|和書|url=https://genbu.net/data/awa2/tate2_title.htm|title=建神社|publisher=玄松子の記憶|accessdate=2021-05-14}}</ref>
-
 It is one of the candidate shrines identified as the Shikinaisha “Tate Jinja.”
-
 == deity ==
 * {{ill|Susanoo-no-Mikoto|ja|素盞嗚命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
-
 == Access ==
 * About 10 minutes on foot from {{ill|Awa-Handa Station|en|Awa-Handa Station|qid=Q4829609|lt=Awa-Handa Station}} on the {{ill|Tokushima Line|en|Tokushima Line|qid=Q899310|lt=Tokushima Line}} of {{ill|Shikoku Railway Company|en|Shikoku Railway Company|qid=Q496531|lt=JR Shikoku}}.
-
 == References ==
 <references />
-
 {{shinto-stub}}
-
 {{translated page|ja|建神社 (つるぎ町)|version=99485350|comment=Imported full ja history}}
-
 {{wikidata link|Q106852711|ja|建神社 (つるぎ町)|ja|%E5%BB%BA%E7%A5%9E%E7%A4%BE (%E3%81%A4%E3%82%8B%E3%81%8E%E7%94%BA)|ja|ja|&action=edit|check_date=2026-05-11}}
+
 [[Category:Buildings and structures in Tsurugi, Tokushima]]
 [[Category:Buildings and structures in Tsurugi Town]]
 [[Category:History of Tsurugi, Tokushima]]
 [[Category:Municipal History of Tsurugi]]
-[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Awa Province (Tokushima)]]
 [[Category:Shinto shrines in Tokushima Prefecture]]
 [[Category:Tate Shrine (Tsurugi)]]

@@ -1,6 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kawarabuchi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
-
 {{Infobox religious building
 |name   = 河原淵神社
 | religious_affiliation = [[Shinto]]
@@ -33,67 +31,43 @@
 |神事   = 
 }}
 '''Kawarabuchi Shrine''' (河原淵神社, Kawarabuchi Jinja) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=sessha|1=Setsumatsusha}} of {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}} ({{ill|Geku|ja|外宮|12=simple|13=User:Immanuelle/Geku|ja_comment=jawiki redirects to 豊受大神宮|1=Toyōke Daijingū|comment=changed title based on wikidata|qid=Q11633343}}) of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}. This article also covers the former village shrine, '''Funae Kamisha''' (船江上社), located on the same grounds as Kawarabuchi Shrine.
-
 == Overview ==
 Kawarabuchi Shrine is located at 1-10-140 Funae, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}.<ref name="ic">Ise Bunka-sha (2008): p.44</ref> The grounds originally belonged to Funae Kamisha, and following historical research within Ise Grand Shrine after the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration|1=Meiji Restoration}}, it was established on the site of Funae Kamisha.<ref name="uy0">Ujiyamada City Office (1929): vol.2, p.910</ref> The precinct of Funae Kamisha covers approximately 765 tsubo (about 2,528.9 m<sup>2</sup>), including an {{ill|outer garden|ja|外苑|12=simple|13=User:Immanuelle/outer garden|1=Q11430523|comment=changed title based on wikidata|qid=Q11430523}}.<ref name="uy5">Ujiyamada City Office (1929): vol.2, p.915</ref> Kawarabuchi Shrine's area is 7 are (about 694.2 m<sup>2</sup>).<ref name="uyj">Ujiyamada City Office (1929): vol.1, p.12</ref>
-
 It Ranks 12th among the 16 sessha of Geku.<ref>Ujiyamada City Office (1929): vol.1, pp.9, 11-12</ref> Unlike most sessha, which do not have {{ill|saisenbako|ja|賽銭箱|12=simple|13=User:Immanuelle/saisenbako|qid=Q135491444|1=Saisenbako}} (offertory boxes), Kawarabuchi Shrine has one.<ref name="ic"/> The main shrine is surrounded by a single {{ill|Tamagaki|en|Tamagaki|qid=Q3078312|lt=tamagaki|1=Sacred fences}} (fence) and features one {{ill|Torii|en|Torii|qid=Q234731|lt=torii|1=Torii}}.<ref name="sk">Shikinaisha Research Association (1990): p.376</ref>
-
 The {{ill|Saijin|lt=Saijin|lt=Enshrined deity|ja|Kami|lt=Kami|lt=Deity|12=simple|13=User:Immanuelle/enshrined deity|ja_comment=jawiki redirects to カミ}} is '''Sawahime no Mikoto''' (澤姫命),<ref name="ic"/> revered as a {{ill|Guardian deities|lt=Guardian deities|lt=Guardian deity|ja|守護神|12=simple|13=User:Immanuelle/guardian deity|qq=}} of water.<ref name="ic"/><ref name="gk">Gakken Publishing (2013): p.63</ref> There is speculation that the deity might be a mistaken reference to {{ill|Nakisawe|ja|鳴澤女|12=simple|13=User:Immanuelle/Nakisawe|ja_comment=jawiki link invalid}} in some records.<ref name="sk"/>
-
 == Funae Kamisha ==
 Funae Kamisha serves as the {{ill|Ujigami|en|Ujigami|qid=Q767655|lt=ujigami|1=Ujigami}} (guardian deity) for the local area of Funae in Ise.<ref name="ic"/><ref name="uy5"/> Its official shrine Rank under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}} was that of a village shrine.<ref name="uy0"/> Historically known as "Hachiman-gu" by locals, it is not directly linked to {{ill|Usa Jingū|en|Usa Jingū|qid=Q715632|lt=Usa Shrine|1=Usa Jingū}}.<ref name="uy9">Ujiyamada City Office (1929): vol.2, p.909</ref>
-
 Initially, the deity was either unknown or associated with {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hachiman|1=Hachiman}}, but in 1913 (Taisho 2), it was unified with Kawarabuchi Shrine’s deity, Sawahime no Mikoto.<ref name="uy0"/> The grounds also feature various subordinate shrines.
-
 == Oboro Pond ==
 '''Oboro Pond''' (朧ヶ池) lies within the shrine precinct and is believed to be inhabited by a {{ill|dragon god|ja|龍神|12=simple|13=User:Immanuelle/dragon god|1=Dragon god|comment=changed title based on wikidata|qid=Q1206058}}.<ref name="ic"/> Historically connected to the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miyagawa River|1=Miya River (Mie)}} and {{ill|Seta River (Mie)|en|Seta River (Mie)|qid=Q7456322|lt=Setagawa River|1=Seta River (Mie)}}, it influenced the naming of the "Funae" area.<ref name="ic"/>
-
 == History ==
 While the exact founding date is unknown, Kawarabuchi Shrine appears in the "Toyōke Daijingū Ritual Records" compiled in 804 (Enryaku 23), indicating its ancient origins.<ref name="sk"/> It was reconstructed in the Edo period and relocated in 1878 due to flood risks.<ref name="sk"/>
-
 == Festivals ==
 Annual festivals include the {{ill|Reisai|ja|例祭|fr|Reisai|12=simple|13=User:Immanuelle/Reisai|qq=}} on September 15 and a {{ill|Shinji (ritual)|ja|神事|12=simple|13=User:Immanuelle/Shinji (ritual)|1=Shinto ritual|comment=changed title based on wikidata|qid=Q11588671}} on March 1.<ref name="uy5"/> The "Fuchi Festival" involves {{ill|Kagura|en|Kagura|qid=Q1348260|lt=kagura|1=Kagura}} performances and ritual offerings floated on Oboro Pond.<ref name="uy5"/>
-
 == Access ==
 * Public transport: From {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise Station|1=Iseshi Station}}, take a {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kotsu|1=Mie Kotsu}} bus to "Asahidori" stop, then a 3-minute walk.
 * By car: 8 minutes north from {{ill|Ise Nishi IC|ja|伊勢西インターチェンジ|12=simple|13=User:Immanuelle/Ise Nishi IC|1=Ise-nishi itnerchange|comment=changed title based on wikidata|qid=Q10884865}} on {{ill|Mie Prefectural Route 32|ja|三重県道32号伊勢磯部線|12=simple|13=User:Immanuelle/Mie Prefectural Route 32|1=Mie Prefectural Road Route 32|comment=changed title based on wikidata|qid=Q11357920}}.
-
 == References ==
 {{Reflist}}
-
 == Related Articles ==
 * {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-
 == References ==
 ;References
 {{Reflist|2}}
-
 == Bibliography ==
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * 宇治山田市役所 編『宇治山田市史 下巻』宇治山田市役所、昭和4th year 3月5日、1690p.
 * [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
-
 == See Also ==
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * [[Kawara Shrine (Naikū)|川原神社 (伊勢市)]] - 河原淵神社が川原神社の旧社地だったとする説がある。
-
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m04/0404.html 河原淵神社（かわらぶちじんじゃ）] - 財団法人伊勢神宮崇敬会
-
 {{神道 横}}
-
 {{125 Shrines of Ise}}
-
-{{translated page|ja|河原淵神社|version=84566091|comment=Imported full ja history}}
-
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kawarabuchi Shrine (Q17209232)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -101,11 +75,11 @@ Annual festivals include the {{ill|Reisai|ja|例祭|fr|Reisai|12=simple|13=User:
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kawarabuchi Shrine|lt=Kawarabuchi Shrine|ja|河原淵神社|qid=Q17209232|1=Kawarabuchi Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Toyōke Daijingū|qid=Q11633343|1=Toyōke Daijingū}} || — || {{coord|34.498910|136.714503|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181154 DB]
 |}
-{{wikidata link|Q17209232|da|d:Q17209232|ja|河原淵神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|河原淵神社|version=84566091|comment=Imported full ja history}}
+
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
@@ -113,7 +87,6 @@ Annual festivals include the {{ill|Reisai|ja|例祭|fr|Reisai|12=simple|13=User:
 [[Category:Wikidata has short description]]
 [[Category:Senior Sixth Rank]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

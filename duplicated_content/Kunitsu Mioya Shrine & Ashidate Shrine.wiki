@@ -1,6 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kunitsu_Mioya_Shrine_%26_Ashidate_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name= Kunitsu Mioya Shrine & Ashidate Shrine
 |religious_affiliation = [[Shinto]]
@@ -21,98 +19,56 @@
 |coordinates= {{Coord|34.475972|N|136.737333}}
 |architecture_style= {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
 }}
-
 '''Kunitsu Mioya Shrine''' (国津御祖神社, *Kunitsu Mioya Jinja*) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=subordinate shrine (sessha/massha)|1=Setsumatsusha}} of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (the Inner Shrine of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}). This article also covers '''Ashidate Shrine''' (葦立弖神社, *Ashidate Jinja*), which is co-located with Kunitsu Mioya Shrine and classified as an associated shrine of the Inner Shrine.
-
 Both shrines were established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<ref name="gk">Gakken Publishing (2013): p.61</ref><ref name="ic7">Ise Bunka-sha (2008): p.107</ref>.
-
 == Overview ==
-
 {{ill|Kunitsu Mioya Shrine|ja|国津御祖神社|12=simple|13=User:Immanuelle/Kunitsu Mioya Shrine|1=Kunitsu Mioya Shrine & Ashidate Shrine|comment=changed title based on wikidata|qid=Q17214737}} and {{ill|Ashitate Shrine|ja|葦立弖神社|12=simple|13=User:Immanuelle/Ashitate Shrine|ja_comment=jawiki redirects to 国津御祖神社|1=Kunitsu Mioya Shrine & Ashidate Shrine|comment=changed title based on wikidata|qid=Q17214737}} are located at 2132, Oazaki, Kusube-cho, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}.<ref name="sk3">Shikinaisha Kenkyūkai (1990): p.273</ref> They are situated further along the approach of {{ill|Otsuchi Mioya Shrine|ja|大土御祖神社|1=Otsuchi Mioya Shrine|12=simple|13=User:Immanuelle/Otsuchi Mioya Shrine|13=User:Immanuelle/Otsuchi Mioya Shrine|qq=}} and {{ill|Uji no Nukigami Shrine|ja|宇治乃奴鬼神社|12=simple|13=User:Immanuelle/Uji no Nukigami Shrine|ja_comment=jawiki redirects to 大土御祖神社|1=Otsuchi Mioya Shrine|comment=changed title based on wikidata|qid=Q17222702}}.<ref name="ic13">Ise Bunka Publishing (2008): pp.106-107</ref>
-
 The shrine grounds are known as "Chaya no Mori."<ref name="sk0">Shikinaisha Kenkyūkai (1990): p.260</ref> The area spans approximately 1,226 m².<ref name="sk65">Shikinaisha Kenkyūkai (1990): p.265</ref> According to the *Kōtai Jingū Gishikichō*, these shrines have been located here since the Heian period.<ref name="sk3"/>
-
 Both shrines share a single {{ill|Shaden (shrine building)|ja|社殿|12=simple|13=User:Immanuelle/Shaden (shrine building)|ja_comment=jawiki redirects to 神社建築|1=Shinto architecture|comment=changed title based on wikidata|qid=Q3080012}} constructed in {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style with wooden boards, facing south, and enclosed by a single {{ill|Tamagaki|en|Tamagaki|qid=Q3078312|lt=Tamagaki|1=Sacred fences}}.<ref name="sk5">Shikinaisha Kenkyūkai (1990): p.275</ref> There is no offertory box. Historically, the building was thatched.<ref name="sk5"/>
-
 == Kunitsu Mioya Shrine ==
-
 Ranked 11th among the 27 auxiliary shrines of the {{ill|Naikū|ja|内宮|12=simple|13=User:Immanuelle/Naikū|1=Naikū|comment=changed title based on wikidata|qid=Q23996212}}.<ref>Ujiyamada City Office (1929): pp.9-11</ref>
-
 The enshrined deities are {{ill|Uji-hime no Mikoto|ja|宇治比賣命|12=simple|13=User:Immanuelle/Uji-hime no Mikoto|ja_comment=jawiki link invalid|qid=Q135506344|1=Uji-hime no Mikoto}} and {{ill|Tamura-hime no Mikoto|ja|田村比賣命|12=simple|13=User:Immanuelle/Tamura-hime no Mikoto|ja_comment=jawiki link invalid|qid=Q135506346|1=Tamura-hime no Mikoto}}.<ref name="gk"/><ref name="ic7"/> Both are children of the {{ill|Kuninushi no Kami|ja|国生の神|12=simple|13=User:Immanuelle/Kuninushi no Kami|ja_comment=jawiki link invalid|qid=Q135506347|1=Kuninushi no Kami}} and are regarded as local tutelary deities.<ref name="gk"/>
-
 Due to their divine lineage, the shrine is also called "Miko-sha" (御子社), meaning "Shrine of the Divine Children."<ref name="sk2">Shikinaisha Kenkyūkai (1990): p.272</ref>
-
 == Ashitate Shrine ==
-
 Ranked 14th among the 16 subordinate shrines of Naikū.<ref>Ujiyamada City Office (1929): pp.13-14</ref> The shrine building no longer exists, and the deity is enshrined together with Kunitsu Mioya Shrine.<ref>Ujiyamada City Office (1929): p.14</ref>
-
 The enshrined deity is {{ill|Tamayara-hime no Mikoto|ja|玉移良比女命|12=simple|13=User:Immanuelle/Tamayara-hime no Mikoto|ja_comment=jawiki link invalid|qid=Q135506349|1=Tamayara-hime no Mikoto}}, considered a child of {{ill|Ujitsu-hime no Mikoto|ja|宇治都比女命|12=simple|13=User:Immanuelle/Ujitsu-hime no Mikoto|ja_comment=jawiki link invalid|qid=Q135506351|1=Ujitsu-hime no Mikoto}} and a local tutelary deity.<ref name="gk"/><ref name="ic7"/>
-
 == History ==
-
 Established before 927 CE, as mentioned in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}.<ref name="ic2">Ise Bunka Publishing (2008): p.22</ref> It is also listed in the *Kōtai Jingū Gishikichō*, confirming its existence before 804 CE.<ref name="sk2"/>
-
 Worship ceased in the medieval period, but the shrines were restored on December 22, 1664 (Gregorian: January 20, 1665).<ref name="sk3"/> Since the original site of Ōtsuchi Mioya Shrine was easy to locate,<ref>Shikinaisha Kenkyūkai (1990): p.262</ref> both shrines were re-established at their original locations.<ref name="sk3"/>
-
 In 1871, Ashitate Shrine was formally merged with Kunitsu Mioya Shrine.<ref name="sk4"/> The shrine building was reconstructed in 1914, rebuilt in 1959, and extensively renovated in 1982.<ref name="sk5"/>
-
 == Rituals ==
-
 Rituals are performed similarly to those at Ōtsuchi Mioya Shrine.<ref name="sk5"/> These include:
 * {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinensai|1=Kinensai}} (February)
 * {{ill|Tsukinamisai|ja|月次祭|1=Tsukinami-no-Matsuri|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June and December)
 * {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}} (October)
 * {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai|1=Niiname-no-Matsuri}} (November)
-
 Other rites such as {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai|qq=}}, {{ill|Genshi-sai|ja|元始祭|12=simple|13=User:Immanuelle/Genshi-sai|qq=}}, National Foundation Day (February 11), {{ill|Kaze no Hi no Matsuri|ja|風日祈祭|1=Kazahi-no-Misai|2=ja|3=風日祈祭|qid=Q135524493|12=simple|13=User:Immanuelle/Kaze no Hi no Matsuri|ja_comment=jawiki link invalid|qid=Q135524493}} (May, August), and {{ill|Tenchō-sai|ja|天長祭|12=simple|13=User:Immanuelle/Tenchō-sai|ja_comment=jawiki redirects to 天皇誕生日|1=The Emperor's Birthday|comment=changed title based on wikidata|qid=Q72318}} (December 23) are conducted remotely.<ref name="sk63">Shikinaisha Kenkyūkai (1990): p.263</ref>
-
 == Flora ==
-
 Since it shares the grounds with Ōtsuchi Mioya Shrine, the plant life is identical.<ref name="sk5"/>
-
 A 1977 survey found 258 trees, including Kaya, {{ill|Podocarpus macrophyllus|en|Podocarpus macrophyllus|qid=Q165063|lt=Inumaki|1=Podocarpus macrophyllus}}, Cryptomeria, Hinoki, Oak, Shii, Camphor, Yabu-nikkei, Shirodamo, Tabu, Tobera, Mochi, and Yabutsubaki.<ref name="sk65"/>
-
 == Access ==
-
 [[File:Chaya no Mori in Kusube.jpg|thumb|Entrance to Kunitsu Mioya Shrine and Ashitate Shrine]]
-
 * **By Train:** From {{ill|Isuzugawa Station|en|Isuzugawa Station|qid=Q6089533|lt=Isuzugawa Station|1=Isuzugawa Station}} (Kintetsu Toba Line)
 ** 13-minute walk (~1 km)<ref name="sk2"/>
 ** Take the {{ill|Ise Community Bus|ja|伊勢市コミュニティバス|12=simple|13=User:Immanuelle/Ise Community Bus|1=Q11379021|comment=changed title based on wikidata|qid=Q11379021}} "Okage Bus," alight at "Shigo Elementary School" stop, 1-minute walk (~150 m)<ref name="sk0"/>
 * **By Car:** From {{ill|Ise Interchange|ja|伊勢インターチェンジ|12=simple|13=User:Immanuelle/Ise Interchange|1=Ise interchange|comment=changed title based on wikidata|qid=Q10884857}} (Ise Expressway), drive south on National Route 23, turn left at "Kusube Intersection," and continue east on Prefectural Route 37 for ~750 m. No parking is available.
-
 == Related Pages ==
-
 * {{ill|Otsuchi Mioya Shrine|ja|大土御祖神社|1=Otsuchi Mioya Shrine|12=simple|13=User:Immanuelle/Otsuchi Mioya Shrine|13=User:Immanuelle/Otsuchi Mioya Shrine|qq=}}
 * {{ill|Otsuchi Mioya Shrine|ja|大土御祖神社|lt=Uji-no-Nuki Shrine|lt_ja=宇治乃奴鬼神社|12=simple|13=User:Immanuelle/Otsuchi Mioya Shrine|qq=}}
-
 == References ==
-
 {{Reflist|2}}
-
 == Bibliography ==
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
-
 == See Also ==
 * {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m03/0306.html 国津御祖神社（くにつみおやじんじゃ）] - 財団法人伊勢神宮崇敬会（葦立弖神社の説明を含む）
-
 {{神道 横}}
-
 {{125 Shrines of Ise}}
-
-{{translated page|ja|国津御祖神社|version=64047304|comment=Imported full ja history}}
-
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kunitsu Mioya Shrine & Ashidate Shrine (Q17214737)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -120,18 +76,17 @@ A 1977 survey found 258 trees, including Kaya, {{ill|Podocarpus macrophyllus|en|
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kunitsu Mioya Shrine &amp; Ashidate Shrine|lt=Kunitsumioya Shrine|ja|国津御祖神社|qid=Q17214737|1=Kunitsu Mioya Shrine & Ashidate Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.476063|136.737293|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181133 DB]
 |}
-{{wikidata link|Q17214737|da|d:Q17214737|ja|国津御祖神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|国津御祖神社|version=64047304|comment=Imported full ja history}}
+
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

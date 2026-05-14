@@ -1,39 +1,26 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kanazakura_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
-
-
 {{Infobox religious building|image=File:Kanazakura shrine №1.JPG|prefecture={{ill|Kofu|qid=Q201932|1=Kōfu}}|coordinates={{Coord|35.769431|N|138.556056}}|architecture_style={{ill|nagare-zukuri|qid=Q210684|1=Nagare-zukuri}}}}
-
 '''Kanazakura Shrine''' (金櫻神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located at Mitake Town 2347, [[Kōfu City]], {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}.
-
 == Overview ==
 The shrine is situated in the northern part of Kōfu City, in the mountainous region upstream of the Arakawa River. It is a center of {{ill|Mountain worship|en|Mountain worship|qid=Q93697439|lt=Mountain worship|1=Mountain worship}}, believed to have been established on {{ill|Mount Kinpu|en|Mount Kinpu|qid=Q6921689|lt=Mount Kinpu|1=Mount Kinpu}} in 465 during the reign of Emperor Yūryaku. Known as Zao Gongen until the {{ill|Bakumatsu|en|Bakumatsu|qid=Q804558|lt=Bakumatsu|1=Bakumatsu}} period, the shrine was renamed "Kanazakura Shrine" in 1868 according to a historical document.<ref>{{Citation needed|date=2021st year 10月}}</ref> The surrounding area included [[Onshi|pilgrims’ lodging]] and [[shukubō]] accommodations, forming the temple-town Mitake Village.
-
 The sacred object of worship is a granite boulder known as the "Five-Jō Rock," measuring approximately 20 meters in height. The enshrined deities include:
 * [[Sukunabikona|Sukunahikona no Mikoto]]
 * [[Ōkuninushi|Ōkuninushi no Mikoto]]
 * [[Susanoo-no-Mikoto|Susanoo no Mikoto]]
 * {{ill|Yamato Takeru|en|Yamato Takeru|qid=Q461258|lt=Yamato Takeru|1=Yamato Takeru}}
 * [[Kushinadahime]]
-
 The shrine treasures spherical crystals known as "Water Jewels" (two) and "Fire Jewels" (three).<ref>Koshimoto Fumiko, "Jewels of the Land of Gemstones, Shōsenkyō," ''Tranveer,'' March 2017, pp. 16–17.</ref>
-
 == History ==
 === Founding ===
 According to shrine records, Yamato Takeru visited the area during his eastward expedition in the 40th year of Emperor Keikō’s reign and ordered [[Kai Kokuzō|Shiomi Sukunē]], the local governor, to construct the shrine. Later, in the 10th year of Emperor Yūryaku’s reign, a new shrine was built on Mount Mitake following a divine command. In 674, Zao Gongen and Konsei Daimyōjin were enshrined at the main and middle shrines respectively, after being transferred from [[Mount Kimpusen]] in Yamato Province.
-
 === General History ===
 During the ancient period, the shrine received reverence from the provincial governors of Kai Province. The shrine is said to have been rebuilt by Yoshimitsu Minamoto, founder of the [[Takeda clan]], and later became a place of worship for the clan. In the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}, Hōjō Tokiyori dedicated a [[Daihannyakyō]], and Nichiren offered the {{ill|en:Lotus Sutra|en|en:Lotus Sutra|qid=Q861212|lt=en:Lotus Sutra|1=Lotus Sutra}}.<ref>{{Citation needed|date=2021st year 10月}}</ref> The spring water flowing from the top of the shrine’s sacred rock was believed to be the source of major rivers, including the Arakawa and Aikawa in Kōfu, the {{ill|Tamagawa|en|Tamagawa|qid=Q1905392|lt=Tamagawa|1=Tamagawa}} in Musashi Province, and the [[:en:Chikuma River|Chikuma River]] in Shinano Province. As a result, the shrine also became a center for agricultural deities and rain prayers.
-
 The shrine is known for its wolf-related [[kenshū]] worship, which parallels beliefs associated with [[Mitsumine Shrine]] and [[Musashi-Mitake Shrine]]. Paintings and documents describe the legend of a white wolf guiding Yamato Takeru to the shrine.<ref>{{sfn|Uekusa|2008|pages=}}</ref> Even today, wolf talismans are distributed at the shrine.
-
 == Grounds ==
 The original middle shrine and eastern shrine pavilions, burned in 1955, were believed to date back to the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}. The reconstructed structures, painted red, were completed in 1959. The shrine also features notable artifacts, including masks, lacquered boxes, and drums, designated as cultural properties by Yamanashi Prefecture.<ref name="kenshitei">[https://www.pref.yamanashi.jp/gakujutu/bunkazaihogo/kougeihin.html Yamanashi Prefecture Cultural Properties List]</ref> 
-
 The shrine grounds also feature a rare [[ukon cherry]] tree.
-
 == Annual Festival ==
 The annual festival takes place from April 21 to 22 and includes traditional [[Shinto kagura]] performances. The shrine is now part of [[:en:Chichibu Tama National Park|Chichibu Tama National Park]] and is a popular tourist destination, alongside [[Shōsenkyō Gorge]].<ref>{{Citation needed|date=2021st year 10月}}</ref>
-
 == Designated Cultural Properties ==
 ; Yamanashi Prefecture Designated Tangible Cultural Properties
 The following items were designated on August 7, 1967:
@@ -42,24 +29,13 @@ The following items were designated on August 7, 1967:
 * Family crest lacquered box<ref name="kenshitei" />
 * Drum body with raft motif<ref name="kenshitei" />
 * Drum body with weapon motif<ref name="kenshitei" />
-
 ; Kōfu City Designated Natural Monuments
 * Cedar Grove of Kanazakura Shrine - Designated on March 1, 1977<ref>{{Citation needed|date=2021st year 10月}}</ref>
-
 == References ==
 {{reflist|30em}}
-
 == Bibliography ==
 * Uekusa Manabu, "Wolf Worship in the Kai Region," ''Yamanashi Prefectural Museum Bulletin,'' vol. 2, 2008.
 * ''Cultural Properties Lost to War,'' Cultural Affairs Agency, 2003, pp. 460–461.
-
-{{translated page|ja|金櫻神社|version=103447770|comment=Imported full ja history}}
-
-{{Commons category|Kanazakura-jinja, Kofu}}
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kanazakura Shrine (Q11647310)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kai Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -67,8 +43,10 @@ The following items were designated on August 7, 1967:
 |-
 | RONSHA || {{ill|Kanazakura Shrine|lt=Kanazakura Shrine, Kofu|ja|金櫻神社|commons|Category:Kanazakura-jinja, Kofu|qid=Q11647310|1=Kanazakura Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Kanasakurano Shrine|lt=Kanasakurano Shrine|qid=Q135039689|1=Kanasakurano Shrine}} || {{coord|35.769431|138.556056|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181660 DB]
 |}
-{{wikidata link|Q11647310|co|commons:Category:Kanazakura-jinja, Kofu|da|d:Q11647310|ja|金櫻神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|金櫻神社|version=103447770|comment=Imported full ja history}}
+{{Commons category|Kanazakura-jinja, Kofu}}
+
 [[Category:Articles to be expanded]]
 [[Category:Buildings and structures in Kōfu, Yamanashi]]
 [[Category:Esoteric Buddhism]]
@@ -76,7 +54,6 @@ The following items were designated on August 7, 1967:
 [[Category:History of Kofu, Yamanashi]]
 [[Category:Kanto Mountains]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kai Province]]
 [[Category:Shinto shrines in Yamanashi Prefecture]]
 [[Category:Vajrayana]]
@@ -84,5 +61,4 @@ The following items were designated on August 7, 1967:
 [[Category:Wikidata has short description]]
 [[Category:Yamanashi Prefecture designated tangible cultural property]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]

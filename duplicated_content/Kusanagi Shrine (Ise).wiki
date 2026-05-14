@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kusanagi_Shrine_%28Ise%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name = {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}}・{{ill|Omakunari Shrine|ja|大間国生神社|12=simple|13=User:Immanuelle/Omakunari Shrine|ja_comment=jawiki redirects to 草奈伎神社|1=Kusanagi Shrine (Ise)|comment=changed title based on wikidata|qid=Q17228323}}
 | religious_affiliation = [[Shinto]]
@@ -21,52 +20,34 @@
 | location = {{ill|Ise|qid=Q328067|1=Ise, Mie}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
 }}
-
 '''{{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}}''' (草奈伎神社) is an auxiliary shrine (*sessha*) of {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}} (the Outer Shrine of the [[Ise Grand Shrine]]), located in [[Ise]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, Japan. It Ranks first among the auxiliary shrines of the Outer Shrine.<ref name="ic">Ise Bunka Publishing (2008): p. 53.</ref>
-
 This article also covers the {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Ōmakunari Shrine|lt_ja=大間国生神社|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}} (*Omakunari Jinja*), which shares the same precinct as Kusanagi Shrine.
-
 Both shrines are regarded as highly prestigious within the Outer Shrine complex. They are part of the {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮|1=Jingū Shikinen Sengū|1=Jingū Shikinen Sengū|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|qq=}}, the tradition of reconstructing shrine buildings every 20 years, and they host more frequent rituals compared to other auxiliary shrines.<ref name="gs">Sakurai (1969): p. 91.</ref>
-
 == Overview ==
 This section covers common information about {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}} and {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Ōmakunari Shrine|lt_ja=大間国生神社|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}}.
-
 Located at 1142 Tokiwa 1-chome, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}<ref name="sk39">式内社研究会 編（1990）：213, 299ページ</ref> (registered address: Tokiwa 1-chome, No. 5), the shrines are situated on a plateau known as "Ōmahira"<ref name="gs"/>. Upon entering the shrine grounds through the first torii gate, {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}} is on the left (west side) and {{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Ōmakunari Shrine|lt_ja=大間国生神社|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|qq=}} is on the right (east side)<ref name="ic"/>. The shrine grounds cover an area of 1,744 m<sup>2</sup><ref name="sk36">式内社研究会 編（1990）：216, 303ページ</ref>.
-
 No offering box is placed. The shrine is surrounded on three sides by residential areas, with the south side facing a city road in Ise<ref name="sk36"/>.
-
 == Deities ==
 The enshrined deity of Kusunaki Shrine is {{ill|Mishirushi-no-Tsurugi no Kami|ja|御剣仗神|12=simple|13=User:Immanuelle/Mishirushi-no-Tsurugi no Kami|ja_comment=jawiki link invalid}}<ref name="ic"/>, considered to be the spirit of the sword used by {{ill|Ōwakako no Mikoto|ja|大若子命|12=simple|13=User:Immanuelle/Ōwakako no Mikoto|qq=}}, an ancestor of the {{ill|Watarai clan|ja|度会氏|12=simple|13=User:Immanuelle/Watarai clan|qq=}} who served as priests of the Outer Shrine (Geku)<ref name="gs"/>.
-
 Ōmakuni Shrine enshrines the brothers Ōwakako no Mikoto and Otowako no Mikoto<ref name="sk02">式内社研究会 編（1990）：302ページ</ref>. Both deities are also enshrined at {{ill|Umenomiya Taisha|en|Umenomiya Taisha|qid=Q276781|lt=Umenomiya Taisha|1=Umenomiya Taisha}} in Kyoto.
-
 == Kusunaki Shrine ==
 The name "Kusunaki" has various historical spellings such as "草奈支" and "草奈岐". Today, it is standardized as "草奈伎" following the {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}<ref name="sk3">式内社研究会 編（1990）：213ページ</ref>.
-
 The shrine building is of {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shimmei-zukuri|1=Shinmei-zukuri}} style with wooden planks, surrounded by a sacred fence (tamagaki)<ref name="sk7">式内社研究会 編（1990）：217ページ</ref>. It was reconstructed on June 25, 1976<ref name="sk7"/>.
-
 == Ōmakuni Shrine ==
 According to the {{ill|Yamatohime-no-mikoto Seiki|ja|倭姫命世記|1=Yamatohime no Mikoto Seiki|12=simple|13=User:Immanuelle/Yamatohime-no-mikoto Seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki|qq=}}, the shrine was established in 477 AD<ref name="sk99">式内社研究会 編（1990）：299, 302ページ</ref>. The shrine building is of Shimmei-zukuri style, similar to Kusunaki Shrine<ref name="sk04">式内社研究会 編（1990）：304ページ</ref>. It was rebuilt on May 28, 1976<ref name="sk04"/>.
-
 == History ==
 Both shrines were established before 927 AD, as recorded in the Engishiki. The current location was restored in 1645 through the efforts of priest Watarai Tsunetoki<ref name="sk39"/>.
-
 Ōmakuni Shrine was damaged during the {{ill|Bombing of Ujiyamada|ja|宇治山田空襲|12=simple|13=User:Immanuelle/Bombing of Ujiyamada|1=Ujiyamada Air Raid|comment=changed title based on wikidata|qid=Q18990749}} in 1945<ref>伊勢市 編（1968）：445ページ</ref>.
-
 == Rituals ==
 Kusunaki Shrine conducts all major rituals within the shrine grounds, while Ōmakuni Shrine performs some rituals remotely and others on-site<ref name="sk02"/>.
-
 == Flora ==
 The shrine grounds are home to large trees like zelkova, camphor, and oak, along with smaller shrubs<ref>式内社研究会 編（1990）：216 - 217, 303ページ</ref>.
-
 == Access ==
 * By JR {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangu Line|1=Sangū Line}}: About 200m south-southeast of {{ill|Yamada-Kamiguchi Station|en|Yamada-Kamiguchi Station|qid=Q93446|lt=Yamada Kamiguchi Station|1=Yamada-Kamiguchi Station}}<ref name="sk39"/>.
 * By Kintetsu: Approximately 9 minutes on foot from {{ill|Miyamachi Station|en|Miyamachi Station|qid=Q1710076|lt=Miyamachi Station|1=Miyamachi Station}}.
 * By bus: About 2 minutes on foot from "Yamada Kamiguchi" bus stop.
-
 == References ==
 {{Reflist|2}}
-
 == Bibliography ==
 * 伊勢市 編『伊勢市史』伊勢市役所、昭和43rd year 3月31日、954p.
 * 宇治山田市役所 編『宇治山田市史 下巻』宇治山田市役所、昭和4th year 3月5日、1690p.
@@ -75,22 +56,12 @@ The shrine grounds are home to large trees like zelkova, camphor, and oak, along
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 中村精貮『志摩の地名の話』伊勢志摩国立公園協会、昭和26th year 11月3日、167p.
 * 『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
-
 == See Also ==
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m06/0602.html 草奈伎神社（くさなぎじんじゃ）] - 財団法人伊勢神宮崇敬会
 * [http://www.jingukaikan.jp/125mairi/m06/0603.html 大間国生神社（おおまくなりじんじゃ）] - 財団法人伊勢神宮崇敬会
-
 {{125 Shrines of Ise}}
-
-{{translated page|ja|草奈伎神社|version=88827821|comment=Imported full ja history}}
-
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Kusanagi Shrine (Ise) (Q17228323)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -98,18 +69,17 @@ The shrine grounds are home to large trees like zelkova, camphor, and oak, along
 |-
 | — || {{ill|Kusanagi Shrine (Ise)|lt=Kusanagi Shrine|ja|草奈伎神社|qid=Q17228323|1=Kusanagi Shrine (Ise)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Toyōke Daijingū|qid=Q11633343|1=Toyōke Daijingū}} || — || {{coord|34.494836|136.694975|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181120 DB]
 |}
-{{wikidata link|Q17228323|ja|草奈伎神社|ja|大間国生神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|草奈伎神社|version=88827821|comment=Imported full ja history}}
+
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

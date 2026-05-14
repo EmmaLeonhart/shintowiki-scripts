@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iinotakamiya-kouyama_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
-
 {{Infobox religious building
 |名称 = Iinotakamiya Kōyama Jinja
 |画像 = [[File:Iinotakamiya-kouyama-jinja (Matsusaka) , Torii.jpg|300px]]
@@ -17,57 +16,31 @@
 |coordinates = {{Coord|34.525361|N|136.570056}}
 |deity = {{ill|Sarutahiko Ōkami|qid=Q3090037|1=Sarutahiko Ōkami}}
 }}
-
 '''Iinotakamiya Kōyama Shrine''' (いいのたかみやこうやまじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} in Yamazoe-chō, formerly part of {{ill|Iino District|ja|飯野郡|1=Iino district|comment=changed title based on wikidata|qid=Q11666741}}, within {{ill|Matsusaka|en|Matsusaka|qid=Q460829|lt=Matsusaka|1=Matsusaka}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, Japan.  It is also called simply '''{{ill|Kōyama Shrine|ja|神山神社|1=kouyamajinja|comment=changed title based on wikidata|qid=Q17503039}}'''.  The shrine stands on the lower slope of {{ill|Mount Kōyama (Matsusaka)|ja|神山 (松阪市)|lt=Mount Kōyama|lt_ja=神山|1=Mount Ko|comment=changed title based on wikidata|qid=Q17987802}}, north-west of the fork where the {{ill|Kushida River|en|Kushida River|qid=Q6447936|lt=Kushida River|1=Kushida River}} diverges from the {{ill|Harai River (Mie Prefecture)|ja|祓川 (三重県)|lt=Harai River|lt_ja=祓川|1=Harai River|comment=changed title based on wikidata|qid=Q11588499}}.
-
 Local tradition identifies the site with the '''{{ill|Iino no Takamiya|ja|飯野高宮|1=Iino-takamiya|comment=changed title based on wikidata|qid=Q17988628}}''' where {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Princess Yamatohime|1=Yamatohime-no-mikoto}}, while searching for a place to venerate {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu|1=Amaterasu}}, is said to have stayed—one of the celebrated {{ill|Moto Ise|ja|元伊勢|1=Moto-Ise Shrines|comment=changed title based on wikidata|qid=Q11387775}} locations.
-
 A level-crossing of the {{ill|Kisei Main Line|en|Kisei Main Line|qid=Q582803|lt=Kisei Main Line|1=Kisei Main Line}} runs through the shrine {{ill|precincts|ja|境内|1=keidai|comment=changed title based on wikidata|qid=Q11429002}}.
-
 == Enshrined Deities ==
-
 * {{ill|Sarutahiko Ōkami|en|Sarutahiko Ōkami|qid=Q3090037|lt=Sarutahiko-no-Mikoto|1=Sarutahiko Ōkami}}  
 * {{ill|Ame-no-Uzume|ja|アマノウズメ|lt=Ame-no-Uzume-no-Mikoto|lt_ja=天鈿女命|ja_comment=jawiki redirects to アメノウズメ}}<ref name="kouyamajinja">[http://teisui.web.fc2.com/newpage48.html Iinotakamiya Kōyama Jinja | Teisui Community Planning Council] (accessed 31 July 2014).</ref>
-
 == History ==
-
 [[File:Matsusaka Mt. Koyama ac (1).jpg|thumb|Mount Kōyama, on whose slope the shrine stands]]
-
 * According to the {{ill|Five Shinto Documents|ja|神道五部書|1=Shintō Gobusho|comment=changed title based on wikidata|qid=Q11590920}}, the ''Yamatohime-no-Mikoto Seiki'' records that in the 22nd year of Emperor {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin|1=Emperor Suinin}} Princess Yamatohime worshipped Amaterasu at '''“Iino no Takamiya”''' for four years.<ref name="saiku">[http://www.town.meiwa.mie.jp/romantic/saio/saio4.html Sites connected with the Saiō (outside the town) | Meiwa Town] (accessed 31 July 2014).</ref>  A signboard in the precincts identifies this “Iino no Takamiya” with the present shrine.<ref name="kouyamajinja" />  However, several other shrines along the Kushida River are likewise regarded locally as possible sites of Iino no Takamiya,<ref name="saiku" /> and some scholars consider the Five Shinto Documents to be forgeries.<ref>{{Cite book|和書|author=日本史用語研究会|title=必携日本史用語|edition=第四版|publisher={{ill|Jikkyo Shuppan|ja|実教出版|1=Jikkyo Shuppan|comment=changed title based on wikidata|qid=Q11452752}}|origdate=2 February 2009|isbn=9784407316599}}</ref>
-
 * The shrine is said originally to have stood on the summit of Mount Kōyama, but was relocated to its present mountainside position when {{ill|Kōyama Castle (Ise Province)|ja|神山城 (伊勢国)|lt=Kōyama Castle|lt_ja=神山城|1=Kōyama Castle|comment=changed title based on wikidata|qid=Q17991042}} was built during the {{ill|Nanboku-chō period|en|Nanboku-chō period|qid=Q264012|lt=Nanboku-chō period|1=Nanboku-chō period}}.<ref>[https://web.archive.org/web/20020811034912/http://homepage3.nifty.com/ishildsp/kikou/mie.htm Mountain Travels in Mie Prefecture] (accessed 31 July 2014).</ref>
-
 == Mergers and Separations ==
-
 * '''Mergers (Gōshi):''' 23 shrines were merged here, including {{ill|Mitama Shrine|ja|三玉神社|ja_comment=jawiki link invalid|qid=Q135579195|1=Mitama Shrine}} (Yamazoe-chō) in 1907 and {{ill|Suga Shrine|ja|須賀神社}} (Anraku-chō) in 1908.<ref name="kouyamajinja" />
-
 * '''Separations (Bunshi):''' 21 shrines were separated during the Shōwa period, among them {{ill|Kushida Shrine (Matsusaka)|ja|櫛田神社 (松阪市)|1=Kushida Shrine (Matsusaka)|comment=changed title based on wikidata|qid=Q11544726}} (Kushida-chō), {{ill|Shimizu Shrine|ja|清水神社|1=kiyomizujinja|comment=changed title based on wikidata|qid=Q11561096}} (Shimizu-chō), {{ill|Suga Shrine|ja|須賀神社}} (Anraku-chō), {{ill|Ukihi Shrine|ja|宇気比神社|ja_comment=jawiki link invalid}} (Yamashita-chō), {{ill|Suga Shrine|ja|須賀神社}} (Iga-chō) and {{ill|Toyohara Shrine|ja|豊原神社|ja_comment=jawiki link invalid}} (Toyohara-chō).<ref name="kouyamajinja" />
-
 == Surroundings ==
-
 * {{ill|Kōyama Ichijō-ji|ja|一乗寺 (松阪市)|lt=Kōyama Ichijō-ji|lt_ja=神山一乗寺|1=Ichijō-ji Temple|comment=changed title based on wikidata|qid=Q17991041}}  
 * {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central|1=Central Japan Railway Company}} {{ill|Kisei Main Line|en|Kisei Main Line|qid=Q582803|lt=Kisei Main Line|1=Kisei Main Line}} / {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line|1=Sangū Line}} {{ill|Taki Station (Mie)|en|Taki Station (Mie)|qid=Q5357971|lt=Taki Station|1=Taki Station (Mie)}}  
 * {{ill|Mie Prefectural Route 701 Omaosono–Toyohara Line|ja|三重県道701号御麻生薗豊原線|1=Mie Prefectural Road Route 701|comment=changed title based on wikidata|qid=Q11358102}}
-
 == Notes ==
 {{脚注ヘルプ}}
 <references/>
-
 == References ==
 * {{ill|Yoshida Tōgo|ja|吉田東伍|1=Tōgo Yoshida|comment=changed title based on wikidata|qid=Q11413910}} (1907). [{{NDLDC|2937057/329}} ''Great Dictionary of Japanese Place-Names'', vol. 1, 2nd ed.] Tokyo: Tomiyama-bō. Entry: “Iino Takamiya (site).”
-
 == Related Topics ==
 * {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧}}
 {{shinto-stub}}
-
-{{translated page|ja|飯野高宮神山神社|version=100802343|comment=Imported full ja history}}
-
-{{Commons category|Iinotakamiya-kouyama-jinja}}
-
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
-
-'''Iinotakamiya-kouyama Shrine (Q17988632)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -75,17 +48,17 @@ A level-crossing of the {{ill|Kisei Main Line|en|Kisei Main Line|qid=Q582803|lt=
 |-
 | — || {{ill|Iinotakamiya-kouyama Shrine|lt=Iinotakamiya-kouyama Shrine|ja|飯野高宮神山神社|commons|Category:Iinotakamiya-kouyama-jinja|qid=Q17988632|1=Iinotakamiya-kouyama Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|34.525215|136.569648|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181205 DB]
 |}
-{{wikidata link|Q17988632|da|d:Q17988632|ja|飯野高宮神山神社}}==Notes==
-<references group="lower-alpha"/>
+
+{{translated page|ja|飯野高宮神山神社|version=100802343|comment=Imported full ja history}}
+{{Commons category|Iinotakamiya-kouyama-jinja}}
+
 [[Category:Buildings and structures in Matsusaka, Mie]]
 [[Category:Former Gō-sha in Mie Prefecture]]
 [[Category:History of Matsusaka, Mie]]
 [[Category:Kokuhei-sha]]
 [[Category:Matsusaka, Mie]]
-[[Category:Pages with duplicated content]]
 [[Category:Moto-Ise shrines]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]

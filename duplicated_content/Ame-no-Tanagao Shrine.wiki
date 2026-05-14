@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame-no-Tanagao_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
-
 {{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|image=Amanotanagao shrine torii - 2010.jpg|caption=[[Torii]] gate and Haiden|qq=}}'''Amenota Nagao Shrine''' (Ame no Tanaga Ojinja,<ref name="日本廻国記">『日本廻国記 一宮巡歴』 pp.278-281</ref><ref name="日本歴史地名大系">『日本歴史地名大系 43 長崎県の地名』 pp.814-815</ref><ref name="長崎県の歴史散歩">『長崎県の歴史散歩』 p.202</ref> Amanotanaga Ojinja <ref name="日本廻国記一宮表">『日本廻国記 一宮巡歴』 p.294</ref> <ref name="別冊歴史読本">『別冊歴史読本 7 諸国一宮と謎の神々』 p.150</ref> <ref name="完全ガイド">『日本全国 一の宮巡拝完全ガイド』 p.139</ref> ) is a Shinto shrine in Iki City, {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}. It is a [[:en:Myōjin Taisha|Myōjin Taisha]] and the [[Ichinomiya]] of {{ill|Iki Province|en|Iki Province|qid=Q1052938|lt=Iki Province|1=Iki Province}}.
 Although people think the Shrine was listed in the "[[Engishiki Jinmyōchō]]", the evidence supporting this claim is not very convincing.
 ==History==
@@ -33,26 +32,18 @@ File:Remain_of_Amanotanagahime_jinja.JPG|alt=村社 天手長比売神社址天�
 * [http://21coe.kokugakuin.ac.jp/db/jinja/676002.html Ametenagao Shrine] (Kokugakuin University 21st Century COE Program "Shinto and Shrine Historical Materials Compilation")
 {{Iki Shrines|qq=}}
 {{Ichinomiya|qq=}}
-
 {{translated page|ja|天手長男神社|version=100127410|comment=Imported full ja history}}
-
 {{Commons category|Amanotanagao-jinja}}
-
 {{wikidata link|Q11442606|simple|Ame-no-Tanagao Shrine|ja|天手長男神社|zh|天手長男神社|simple|Amanotanagao Shrine}}
-[[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
-[[Category:Shikinaisha in Iki Island]]
 <references group="lower-alpha"/>
+
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Iki Island]]
 [[Category:Myōjin Taisha]]
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Myōjin Taisha]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Ichinomiya]]
 [[Category:壱岐国]]
-[[Category:Shikinaisha in Iki Island]]
 [[Category:Buildings and structures in Iki, Nagasaki]]
 [[Category:壱岐市の歴史]]
 [[Category:長崎県の旧村社]]

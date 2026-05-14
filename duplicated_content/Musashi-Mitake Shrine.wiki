@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Musashi-Mitake_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 {{infobox shinto shrine
 | name = Musashi-Mitake Shrine
 | religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
@@ -14,11 +13,8 @@
 | map = {{Location map|Japan Tokyo|label=Musashi-Mitake Shrine|float=center|relief=1|width=200|caption=}}
 }}
 '''Musashi-Mitake Shrine''' (武蔵御嶽神社) is a Shinto shrine located on the summit of {{ill|Mount Mitake (Tokyo)|ja|武蔵御岳山|12=simple|13=User:Immanuelle/Mount Mitake (Tokyo)|ja_comment=jawiki link invalid}} in {{ill|Ōme, Tokyo|en|Ōme, Tokyo|qid=Q237683|lt=Ōme, Tokyo|1=Ōme, Tokyo}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}, formerly within Tama District, {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province|1=Musashi Province}}.
-
 "Mitake" refers to {{ill|Mount Kinpu|ja|金峯山|12=simple|13=User:Immanuelle/Mount Kinpu|ja_comment=jawiki redirects to 金峰山|1=Mount Kinpusen|comment=changed title based on wikidata|qid=Q10563986}} in Yoshino, Nara Prefecture, a central site of Shugendo. It enshrines {{ill|Zaō Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zaō Gongen|qq=}} and Kushimachi-no-Mikoto, becoming significant as a mountain worship site since medieval times, with influence in Musashi and Sagami. Some theories identify it as the Shikinai Shrine "Ōmato no Zu Ten Shrine" (see {{ill|List of Shikinaisha in Musashi Province|ja|武蔵国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Musashi Province|qq=}}). It is currently an independent shrine, not affiliated with the {{ill|Association of Shinto Shrines|en|Association of Shinto Shrines|qid=Q908077|lt=Association of Shinto Shrines|1=Association of Shinto Shrines}}.
-
 Due to its enshrinement of {{ill|Ōkuchi Magami|ja|大口真神|12=simple|13=User:Immanuelle/Ōkuchi Magami|ja_comment=jawiki redirects to 真神|1=Ōkuchi no Magami|comment=changed title based on wikidata|qid=Q2349235}} (dog deity), it attracts visitors bringing dogs for prayer. The {{ill|Mitake Tozan Railway|en|Mitake Tozan Railway|qid=Q6880754|lt=Mitake Tozan Railway|1=Mitake Tozan Railway}} allows dogs without cages.
-
 == Worshipped deities (Saijin) ==
 {{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin|qq=}}}}
 *{{ill|Zaō Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zaō Gongen|qq=}}
@@ -27,15 +23,12 @@ Due to its enshrinement of {{ill|Ōkuchi Magami|ja|大口真神|12=simple|13=Use
 *{{ill|Sukunabikona|ja|少彦名命|1=Sukunabikona|12=simple|13=User:Immanuelle/Sukunabikona|13=User:Immanuelle/Sukunabikona|qid=Q3275687}}
 *{{ill|Emperor Ankan|en|Emperor Ankan|qid=Q241765|lt=Emperor Ankan|1=Emperor Ankan}}
 *{{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}
-
 == History ==
 Founded traditionally in 91 BC (7th year of Emperor Sujin), it is said Gyōki invited Zaō Gongen in 736. In 1234, Ōnakatomi no Kunika restored it from ruin, and it later became popular among samurai, receiving weapon donations. During the Edo period, in 1605, it was rebuilt under Ōkubo Nagayasu's supervision. It was renamed from Mitake Daigongen to "Ōmato no Zu Ten Shrine" after the Meiji-era Shinto-Buddhist separation, later adopting "Mitake Shrine" and finally "Musashi-Mitake Shrine" in 1952.
-
 == Grounds and structures ==
 [[File:武蔵御岳神社_本殿.jpg|thumb|200px|Honden]]
 ;Main Shrine
 :Single-bay Shinmei-zukuri built in 1877. Holds Zaō Gongen statue shown every 12 years.
-
 ;Other shrines on-site:
 * Futahashira Shrine (Izanagi, Izanami)
 * Yahashira Shrine (Kasuga, Hachiman, etc.)
@@ -52,113 +45,28 @@ Founded traditionally in 91 BC (7th year of Emperor Sujin), it is said Gyōki in
 * Ubuyasu Shrine (Konohanasakuyahime, etc., fertility shrine)
 * Zuishin Gate
 * Inari Shrine
-
 == Festivals ==
 *New Year's, Setsubun, Spring Festival, Sunrise Festival, Great Purification, Yabusame Festival (September 29, symbolic ritual without horses), Autumn Festival.
-
 == Cultural Properties ==
 === National Treasures ===
 *Red-thread-laced armor with helmet (donated by Hatakeyama Shigetada, late Heian)
 *Circular-pattern raden saddle set (Kamakura)
-
 === Important Cultural Properties ===
 *Purple-gradient armor (mid-Kamakura)
 *Gilt-edged tachi sword (Kamakura)
 *Black lacquer scabbard tachi sword marked "Hōju"
-
 == Access ==
 From JR Ome Line Mitake Station, bus to Cable Shita stop (10 min), Mitake Tozan Railway to Mt. Mitake station (6 min), 25 min walk to the shrine. Paid parking available at Takimoto station.
-
 == References ==
 {{Reflist}}
-
 == External links ==
 {{commonscat|Mitake shrine}}
 *[http://www.musashimitakejinja.jp/ Official Website]
 *[http://www.mitaketozan.co.jp/ Mitake Tozan Railway]
 *[http://www.mt-mitake.gr.jp/ Mt. Mitake Tourism Association]
-
 {{Shinto-stub}}
 {{translated page|ja|武蔵御嶽神社|version=102427195|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{Infobox religious building| religious_affiliation = [[Shinto]]  
-| name = Musashi Mitake Shrine  
-| religious_affiliation = [[Shinto]]
-|image = [[File:武蔵御岳神社_拝殿.jpg|270px]]<br />Main Hall<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=270}}  
-| location = {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}} {{ill|Ōme, Tokyo|en|Ōme, Tokyo|qid=Q237683|lt=Ōme, Tokyo|1=Ōme, Tokyo}} {{ill|Mount Mitake (Tokyo)|en|Mount Mitake (Tokyo)|qid=Q1432565|lt=Mount Mitake (Tokyo)|1=Mount Mitake (Tokyo)}} 176  
-| coordinates = {{Coord|35|46|58.2|N|139|9|0|E|region:JP-13_type:landmark_scale:20000}}  
-| Deities = {{ill|Kushimachi-no-Mikoto|ja|櫛真智命|12=simple|13=User:Immanuelle/Kushimachi-no-Mikoto|1=Kushimachi no Mikoto|comment=changed title based on wikidata|qid=Q108039939}}  
-| Established = Traditionally attributed to the 7th year of {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin|1=Emperor Sujin}}'s reign (91 BCE)  
-| type = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Minor) Theoretical location<br />Former {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|府社|1=Fu-sha|qid=Q134917326}}{{efn|lt=Fu-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}  
-| Festivals = Spring Grand Festival (March 8)<br />{{ill|Annual Grand Festival|ja|例大祭|12=simple|13=User:Immanuelle/Annual Grand Festival|ja_comment=fixed the redirect|1=Reisai|2=ja|3=例祭|4=fr|5=Reisai|lt=Reitaisai}} and Sunrise Festival (May 7–8)<br />{{ill|Ōharae-shiki|en|Ōharae-shiki|qid=Q11261910|lt=Ōharae|1=Ōharae-shiki}} (June 30)<br />Autumn Grand Festival (November 8)  
-| Main Building = Single bay, {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}}  
-| Map = {{location map|Japan Tokyo|label=Musashi Mitake Shrine|float=center|relief=1|width=200|caption=}}  
-}}  
-'''Musashi Mitake Shrine''' (武蔵御嶽神社, Musashi Mitake Jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located on {{ill|Mount Mitake (Tokyo)|en|Mount Mitake (Tokyo)|qid=Q1432565|lt=Mount Mitake (Tokyo)|1=Mount Mitake (Tokyo)}} in {{ill|Ōme, Tokyo|en|Ōme, Tokyo|qid=Q237683|lt=Ōme, Tokyo|1=Ōme, Tokyo}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}, Japan, formerly part of {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province|1=Musashi Province}}.  
-
-The name "Mitake" or "Ontake" refers to the holy mountain {{ill|Kinpusen|ja|金峯山|12=simple|13=User:Immanuelle/Kinpusen|ja_comment=jawiki redirects to 金峰山|1=Mount Kinpusen|comment=changed title based on wikidata|qid=Q10563986}}, central to the Shugendō tradition in {{ill|Yoshino, Nara|ja|吉野|12=simple|13=User:Immanuelle/Yoshino, Nara|1=Yoshino|comment=changed title based on wikidata|qid=Q15410122}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}. Enshrined deities include {{ill|Zaō Gongen|lt=Zaō Gongen|lt=Zao Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zao Gongen|qq=}} and {{ill|Kushimachi-no-Mikoto|ja|櫛真智命|12=simple|13=User:Immanuelle/Kushimachi-no-Mikoto|1=Kushimachi no Mikoto|comment=changed title based on wikidata|qid=Q108039939}}, reflecting the shrine's role as a mountain {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Immanuelle/Haisho|qq=}}. Recognized as a spiritual hub since the {{ill|Middle Ages|en|Middle Ages|qid=Q12554|lt=Middle Ages|1=Middle Ages}}, the shrine has developed a religious sphere encompassing the Musashi and Sagami provinces. It is theorized to correspond to the {{ill|Ōmazuto no Mitama Shrine|ja|大麻止乃豆天神社|12=simple|13=User:Immanuelle/Ōmazuto no Mitama Shrine|ja_comment=jawiki link invalid}} mentioned in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}}. Currently, it operates as an independent {{ill|Shinto shrine|ja|単立神社|12=simple|13=User:Immanuelle/Shinto shrine|ja_comment=jawiki redirects to QID FIXED|qid=Q7882536|redirects to 単立|1=Independent Shinto shrine|2=ja|3=単立|1=Independent Shinto shrine|2=ja|3=単立|redirects to 単立|1=Independent Shinto shrine|2=ja|3=単立|}} unaffiliated with the {{ill|Association of Shinto Shrines|en|Association of Shinto Shrines|qid=Q908077|lt=Association of Shinto Shrines|1=Association of Shinto Shrines}}.  
-
-The shrine also enshrines {{ill|Ōguchi no Magami|ja|大口真神|12=simple|13=User:Immanuelle/Ōguchi no Magami|ja_comment=jawiki redirects to 真神|1=Ōkuchi no Magami|comment=changed title based on wikidata|qid=Q2349235}} ("Great Mouth True God"), known as the {{ill|Wolf deity|ja|狼|12=simple|13=User:Immanuelle/Wolf deity|ja_comment=jawiki redirects to オオカミ|1=Wolf|comment=changed title based on wikidata|qid=Q18498}}, attracting visitors who bring their dogs as part of their prayers. Notably, the {{ill|Mitake Tozan Railway|en|Mitake Tozan Railway|qid=Q6880754|lt=Mitake Tozan Railway|1=Mitake Tozan Railway}} allows dogs to board without a cage.  
-
-== Deities ==  
-* {{ill|Zaō Gongen|lt=Zaō Gongen|lt=Zao Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zao Gongen|qq=}}  
-* {{ill|Kushimachi-no-Mikoto|ja|櫛真智命|12=simple|13=User:Immanuelle/Kushimachi-no-Mikoto|1=Kushimachi no Mikoto|comment=changed title based on wikidata|qid=Q108039939}}  
-* {{ill|Ōkuninushi|ja|大己貴命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}  
-* {{ill|Sukunahikona|ja|少彦名命|1=Sukunabikona|12=simple|13=User:Immanuelle/Sukunahikona|13=User:Immanuelle/Sukunabikona|qid=Q3275687}}  
-* {{ill|Emperor Ankan|en|Emperor Ankan|qid=Q241765|lt=Emperor Ankan|1=Emperor Ankan}}  
-* {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}  
-
-== History ==  
-The shrine is traditionally said to have been established during the 7th year of {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin|1=Emperor Sujin}}'s reign (91 BCE). {{ill|Gyōki|en|Gyōki|qid=Q1136664|lt=Gyōki|1=Gyōki}} is believed to have enshrined {{ill|Zaō Gongen|lt=Zaō Gongen|lt=Zao Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zao Gongen|qq=}} here in the 8th year of the Tenpyō era (736 CE).  
-
-In the first year of Bunryaku (1234), {{ill|Ōnakatomi Kunikane|ja|大中臣国兼|12=simple|13=User:Immanuelle/Ōnakatomi Kunikane|ja_comment=jawiki link invalid}} restored the shrine's buildings, which had fallen into disrepair. The shrine became known as a training ground for {{ill|Shugendō|en|Shugendō|qid=Q1483875|lt=Shugendō|1=Shugendō}}, receiving numerous offerings from samurai families. During the Edo period, the shrine underwent major renovations, including a reconstruction of the main hall in 1605 under {{ill|Ōkubo Nagayasu|en|Ōkubo Nagayasu|qid=Q133746|lt=Ōkubo Nagayasu|1=Ōkubo Nagayasu}}.  
-
-With the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu bunri|1=Shinbutsu bunri}} policy in the Meiji period, the shrine was renamed "Ōmazuto no Mitama Shrine," theorized as the shrine mentioned in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}}. This name was later changed to "Mitake Shrine" due to other shrines making similar claims. In 1952, it was renamed "Musashi Mitake Shrine."  
-
-== Facilities and Structures ==  
-{{ill|religious_affiliation = [[Shinto]]|image:武蔵御岳神社_本殿.jpg|thumb|200px|Main Hall|12=simple|13=User:Immanuelle/religious_affiliation = [[Shinto]]|qq=}}  
-The main hall ({{ill|Haiden (Shinto)|en|Haiden (Shinto)|qid=Q3125745|lt=Haiden|1=Haiden (Shinto)}}) is an elaborate structure with red paint, carvings, and a {{ill|Karahafu|en|Karahafu|qid=Q977293|lt=Karahafu|1=Karahafu}} gable. The current main sanctuary ({{ill|Honden|en|Honden|qid=Q2044994|lt=Honden|1=Honden}}) was rebuilt in 1877 in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style.  
-
-The shrine features numerous subsidiary shrines, including the {{ill|Ōguchi no Magami Shrine|ja|大口真神社|12=simple|13=User:Immanuelle/Ōguchi no Magami Shrine|ja_comment=jawiki link invalid}}, a remote shrine for mountain worship (Okumiya), and a treasure hall housing national treasures such as the {{ill|Aka-ito Odoshi Yoroi|ja|赤糸威鎧|12=simple|13=User:Immanuelle/Aka-ito Odoshi Yoroi|ja_comment=jawiki link invalid}} armor.  
-
-== Festivals ==  
-Major festivals include:  
-* January 1: {{ill|New Year Festival|ja|元旦祭|12=simple|13=User:Immanuelle/New Year Festival|ja_comment=jawiki redirects to 歳旦祭|1=Saitan-sai|comment=changed title based on wikidata|qid=Q11546824}}  
-* March 8: Spring Grand Festival  
-* May 7–8: Sunrise Festival (Annual Grand Festival)  
-* September 29: {{ill|Yabusame|en|Yabusame|qid=Q1886157|lt=Yabusame|1=Yabusame}} Festival  
-* November 8: Autumn Grand Festival  
-
-== Cultural Properties ==  
-=== National Treasures ===  
-* {{ill|Aka-ito Odoshi Yoroi|ja|赤糸威鎧|12=simple|13=User:Immanuelle/Aka-ito Odoshi Yoroi|ja_comment=jawiki link invalid}} (Red Laced Armor)  
-* {{ill|Raden Mirror Saddle|ja|円文螺鈿鏡鞍|12=simple|13=User:Immanuelle/Raden Mirror Saddle|ja_comment=jawiki link invalid}}  
-
-=== Important Cultural Properties ===  
-* {{ill|Murasaki Suso Gō Yoroi|ja|紫裾濃鎧|12=simple|13=User:Immanuelle/Murasaki Suso Gō Yoroi|ja_comment=jawiki link invalid}} (Purple Gradient Armor)  
-
-== Access ==  
-* {{ill|JR East|ja|JR東日本|12=simple|13=User:Immanuelle/JR East|ja_comment=jawiki redirects to 東日本旅客鉄道|1=East Japan Railway Company|comment=changed title based on wikidata|qid=Q499071}} {{ill|Ōme Line|en|Ōme Line|qid=Q385398|lt=Ōme Line|1=Ōme Line}} Mitake Station → Bus to "Cable Car Base" → Mitake Tozan Railway to Mitake-san Station → 25-minute walk  
-* Parking available at "Takimoto Station"  
-
-== References ==  
-* Hachirō Yamashita, *"100 Selected Japanese Armors,"* Akita Publishing, 1974.  
-* Kyoto National Museum, *"Japanese Armors,"* 1987 Exhibition Catalog.  
-
-== External Links ==  
-* [http://www.musashimitakejinja.jp/ Official Website of Musashi Mitake Shrine]  
-* {{commonscat|Mitake shrine}}  
-
-  
-
-{{Iwanaga Faith}}
-
-{{translated page|ja|武蔵御嶽神社|version=102427195|comment=Imported full ja history}}
-
-{{Commons category|Mitake shrine}}
-{{wikidata link|Q6587276|co|commons:Category:Mitake shrine|fa|معبد موساشی‌میتاکه|ja|武蔵御嶽神社|zh|武藏御嶽神社}}
 [[Category:Designated Folk Cultural Properties of Tokyo Metropolis]]
 [[Category:Former Fu-sha in Tokyo]]
 [[Category:Important Cultural Property of Japan in Tokyo]]
@@ -169,7 +77,6 @@ Major festivals include:
 [[Category:National Treasures of Japan (Crafts)]]
 [[Category:National Treasures of Japan in Tokyo]]
 [[Category:Ontake Shrines]]
-[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:Shinto shrines in Tokyo]]
 [[Category:Tokyo Metropolitan Designated Tangible Cultural Property]]

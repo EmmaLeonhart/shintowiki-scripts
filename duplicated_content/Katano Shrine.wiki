@@ -1,15 +1,11 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Katano_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
-
 {
 {
 {
 { 
 {
 {
-
 {{Refimprove|date=June 2024}}
-
 {{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
 | religious_affiliation = 
 | image                 = File:Katano Shrine, Hirakata Haiden 2006.jpg
@@ -34,36 +30,23 @@
 | location = {{ill|Hirakata|qid=Q270912|1=Hirakata}}
 | founded_by = {{ill|Nomi no Sukune|qid=Q965742|1=Nomi no Sukune}}
 }}
-
 '''Katano Jinja''' (片埜神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Hirakata|en|Hirakata|qid=Q270912|lt=Hirakata City|1=Hirakata}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, Japan. It is a Shikinaisha (small) shrine with an old shrine Rank of gōsha. It has also been referred to as the “Kawashū Ichinomiya,” although that refers to it being the largest shrine in the local area, not the official Ichinomiya of Kawachi Province.
-
 == Enshrined Deities ==
 [[File:片野神社RIMG2186.JPG|thumb|right|Torii]]
 * Main Enshrined Deities: Takehayasusanoo no Ōkami (Susanoo), Sugawara no Michizane
 * Additional deities: Kushinadahime no Mikoto, Yashima Shinumi no Kami
-
 Due to the Meiji-era consolidation of nearby shrines, several other deities have been added, resulting in multiple enshrined Hachiman gods (total of four) and others.
-
 The Kokka (family records) of the shrine’s priestly family, the Okada family, refers to it as “the tutelary of the Haji (土師) clan.” Some old references associate its deity with Nigihayahi no Mikoto or the ancestor of the Katanoinagi clan, but the shrine denies these identifications.
-
 == History ==
 [[File:河内名所図会 交野神社.png|thumb|From “Kawachi Meisho Zue”: Katanoinagi Jinja (Katano Jinja)]]
 According to shrine tradition, during the era of Emperor Suinin, Nomino Sukune, a noble from Izumo, received this land as a reward for victory in a sumo match against Taima no Kehaya. He then enshrined his ancestral deity Susanoo at this location as a clan’s tutelary deity.<ref name="由緒沿革">{{Cite web|url=https://www.katanojinja.com/blank-3|title=History|publisher=Katano Jinja|access-date=2024-06-02}}</ref>
-
 During Emperor Kinmei’s time, the shrine was renamed “Katano Jinja” after the local area “Katano” (also known as “Katano” or “Kawachi”), giving rise to the name of Katano District and eventually Hirakata City. Thus, it served as the ubusuna (local tutelary) shrine of Katano District.<ref name="由緒沿革"/>
-
 In the mid-Heian period, after Sugawara no Michizane (a descendant of the Haji clan) was enshrined as a kami (Tenjin), he was added here as well in Tennin 4 (960). The Okada family, who serve as shrine priests, are said to be descendants of Nomino Sukune.<ref name="由緒沿革"/>
-
 Listed in the Engishiki Jinmyōchō as “Katanojinja, Kuwajutsu,” it was a small Shikinaisha. It once had extensive shrine lands and was famed for its cherry blossoms (“Makino no sakura”) making it a utamakura (poetic place name).
-
 Because it was a large shrine in Katano District, in the late Heian period the shrine’s name was changed to “Ichinomiya.” This led to it being known as the “Kawashū Ichinomiya,” but it was not the official Ichinomiya of Kawachi Province—rather, it was the ichinomiya of Katano District.<ref name="由緒沿革"/>
-
 During the Genkō War (Nanboku-chō period), it was burned but later rebuilt.<ref name="由緒沿革"/>
-
 In the Sengoku period, it suffered damage due to involvement in battles between the Miyoshi Sanninshū and Matsunaga Hisahide but was restored in Tenshō 11 (1583) by Toyotomi Hideyoshi, who regarded it as the guardian against the demon gate (kimon) for Osaka Castle. Later, in Keichō 7 (1602), Toyotomi Hideyori rebuilt the main hall and associated buildings.<ref name="由緒沿革"/>
-
 During the Edo period, the shrine was dedicated to Gozu Tennō and was officially named “Ichinomiya Gozu Tennō.” In the Meiji era, when merging shrines in former Makino Village, it reverted to its old name “Katano Jinja”<ref name="由緒沿革"/> and was Ranked as a gōsha under the modern shrine system.
-
 === Meiji-era Shrines Merger ===
 In the Meiji era, the following shrines in the old Makino Village were merged into Katano Jinja:
 * Awakura Jinja (Ōaza Ogura; deity: {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|qid=Q317997|lt=Hondawake-no-Mikoto|1=Emperor Ōjin}})
@@ -76,100 +59,65 @@ In the Meiji era, the following shrines in the old Makino Village were merged in
 * Ubusuna Jinja (Ōaza Yabu; deity: {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|qid=Q317997|lt=Hondawake-no-Mikoto|1=Emperor Ōjin}})
 * Dōso Jinja (Ōaza Yabu; deity: Kunanodo no Kami)
 * Shikinaisha Kususumi Jinja (Ōaza Yabu; deity: Kususumi no Ōkami)
-
 Because of its historical role as a protector of Osaka Castle’s “kimon” direction, Katano Jinja remains revered for hōyoke (warding off evil directions) and yakuyoke (warding off misfortune). The “oni” (demon) is regarded as a symbol and guardian deity of the shrine due to these associations, leading to unique customs such as “Oni wa uchi!” (“Demons come in!”) instead of “Oni wa soto!” (“Demons out!”) during Setsubun bean-throwing rituals, and oni motifs appearing on ema and goshuin.
-
 === Shikinaisha Kususumi Jinja ===
 Kususumi Jinja, a Shikinaisha, was merged in 1909. Formerly the ujigami of Kyū坂 Village, it was located about where Makinohommachi 1-chome 7 is now. Its deity was “Kususumi no Ōkami.” The shrine’s signpost now stands in the woods within Katano Jinja. The relationship between this shrine and a similarly named shrine in Yamato Province is unknown.
-
 === Aterui and More’s Mound ===
 Adjacent north of the shrine grounds is Makino Park, formerly part of the shrine’s land. A mound in the center of this park is traditionally said to be the Kofun (head mound) of Aterui (Aterui no kubizuka).<ref>{{Cite book|language=ja|editor=Hirakata City Board of Education|title=Tanoshiku Manabu Hirakata no Rekishi (Enjoyable Study of Hirakata’s History)|publisher=Hirakata City Board of Education|year=2006-03-31|id=JP:21124110}}</ref> In 1979, the Kahoku Shinpo newspaper reported that local tradition has long held that a major defeated general’s head was buried here, and about 1 km northeast in Uyama-chō, another old mound was found with similar legends.<ref name="kahoku1979">{{Cite news|language=ja|title=Is the Emishi chieftain buried here? Aterui’s execution site and burial place found in Osaka’s Hirakata; Locals strive to preserve it|newspaper=Kahoku Shinpo|date=1979-03-25|edition=12th|page=18}}</ref> In 2007, a stone monument reading “Den Aterui More no Zuka” (Mound of Aterui and More) was erected. The shrine also sells Aterui omamori charms symbolizing friendship and ties, referencing the legendary stories of friendship and rivalry between Aterui and Sakanoue no Tamuramaro.
-
 == Buildings and Cultural Properties ==
 * Honden (main hall) (Important Cultural Property) - Rebuilt in Keichō 7 (1602) by Toyotomi Hideyori with Katagiri Katsumoto as overseer. A sangensha nagare-zukuri style, hinoki cypress bark roof.<ref name="枚方市の社寺建築">{{Cite book|language=ja|title=Hirakata-shi no Shaji Kenchiku (Temple and Shrine Architecture in Hirakata)|publisher=Hirakata City Board of Education|series=Hirakata City Building Survey Report III|year=1994-03-31|id=JP:97035268|pages=34-40|chapter=Katano Jinja}}</ref>
 * Haiden (Worship Hall) - Also rebuilt by Toyotomi Hideyori in Keichō 7 (1602).
 * Stone lantern (Osaka Pref. Tangible Cultural Property) - From the late Kamakura period, believed to belong to the former Jingū-ji of the shrine.
 * East Gate (Osaka Pref. Tangible Cultural Property) - Also called Kuro-mon. A Yotsuashimon (four-legged gate) originally built in the late Muromachi period.
 * South Gate (Osaka Pref. Tangible Cultural Property) - Also called Aka-mon. Rebuilt by Toyotomi Hideyori in Keichō 7 (1602) as a yotsuashimon with hongawara roofing.<ref name="枚方市の社寺建築" />
-
 <gallery>
 Hirakata_Katano_Shrine_Honden.jpeg|Honden (Important Cultural Property)
 Katano-jinja_Haiden.jpg|Inside the Haiden
 Monument of Aterui in Hirakata.jpeg|"Den Aterui More no Zuka" monument
 </gallery>
-
 == Subordinate Shrines ==
 === On-site Subsidiaries ===
 [[File:Katano-jinja Yorihimesha.jpg|thumb|160px|Yorihime-sha (on-site subsidiary)]]
 [[File:Katano-jinja Kusagamisha.jpg|thumb|160px|Kusagami-sha (off-site shrine)]]
 * Inari-sha - Deities: Ukemochi no Kami, Takemikazuchi no Kami, Futsunushi no Kami, Amenokoyane no Mikoto, Hime no Ōkami, {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|qid=Q317997|lt=Hondawake-no-Mikoto|1=Emperor Ōjin}}, Kunanodo no Kami
 * Yorihime-sha - Deities: Tamayorihime no Mikoto, Ōkuninushi no Mikoto, Ichikishima-hime no Mikoto
-
 === Off-site Subsidiaries ===
 Both located east of the main precincts, separated by the Hirakata East Fire Station Saka Branch:
 * Asahara Jinja - deity: Sarutahiko no Mikoto. Guardian for travel safety and descendant prosperity.
 * Kusagami-sha - deity: HiwasuSeri no Mikoto
 ** According to legend, when Sugawara no Michizane was en route to Dazaifu, his horse fell ill and died here, subsequently revered by locals and associated with healing skin diseases due to a pun on “kusa” (grass) and “kusa” (lesion).
-
 == Cultural Properties ==
 === Important Cultural Property (National) ===
 * Honden (including one wooden tablet) - Dated “Rebuilt in Keichō 7 (1602) 11th Month.”
-
 === Osaka Prefecture Tangible Cultural Properties ===
 * Katano Jinja: East Gate, South Gate
 * Stone Lantern (from late Kamakura period)
-
 == location ==
 * location: 2-21-15 Makinosaka, Hirakata City, Osaka Prefecture
-
 == Access ==
 * About 5 minutes’ walk east from [[Makino Station (Keihan)|Makino Station]] on the Keihan Main Line
-
 == Notes ==
-
 {{Reflist|2}}
-
 == References ==
 {{More footnotes|date=June 2024}}
 * Katano Jinja Ryakuki (summary booklet available at the shrine)
 * {{Cite book|language=ja|author=Okada Momoko|title=Jinja Wakaoku Nikki: Torii wo Kugureba Betsekai (A Young Shrine Wife’s Diary)|publisher=Shodensha Kōbunko|date=2004-01|isbn=4-396-31339-X}}
-
 == Related Items ==
 * [[Hiraoka Shrine]] - Ichinomiya of Kawachi Province
-
 == External Links ==
 * {{Official website|https://www.katanojinja.com/|Katano Jinja}}
 * {{Instagram|katano_miko|Katano Jinja}}
 * {{Commonscat-inline}}
-
 {{Shinto Navbox}}
-
 ==References==
 {{reflist}}
-
 {{Gion cult}}
-
 {{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
-
 {{translated page|ja|片埜神社|version=100988600|comment=Imported full ja history}}
-
 {{everybodywiki link|Katano Shrine}}
 [[image:Katano Shrine, Hirakata Haiden 2006.jpg|250px]]
-
 {{Commons category|Katano-jinja}}
-== AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
-'''Katano Shrine (Q11569554)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
-
-== Shikinaisha (式内社) ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| — || {{ill|Katano Shrine|lt=Katano Shrine|ja|片埜神社|commons|Category:Katano-jinja|qid=Q11569554|1=Katano Shrine}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} ({{ill|Shrines receiving Hoe and Quiver|qid=Q135009152|lt=Hoe and Quiver|1=Shrines receiving Hoe and Quiver}}) || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|34.841804|135.667679|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180927 DB]
-|}
-{{wikidata link|Q11569554|co|commons:Category:Katano-jinja|da|d:Q11569554|ja|片埜神社}}==Notes==
-<references group="lower-alpha"/>
 [[Category:Architecture of Azuchi-Momoyama period]]
 [[Category:Aterui]]
 [[Category:Buildings and structures in Hirakata]]
@@ -184,10 +132,8 @@ Both located east of the main precincts, separated by the Hirakata East Fire Sta
 [[Category:Important Cultural Property of Japan in Osaka prefecture]]
 [[Category:Kanpei-sha]]
 [[Category:Katano District]]
-[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
 [[Category:Shrines receiving Hoe and Quiver]]
-[[Category:Kanpei-sha]]

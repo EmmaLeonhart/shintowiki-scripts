@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Minashi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25130039306|time triggered pipeline]] -->
-
 {{Short description|Shinto shrine in Gifu Prefecture, Japan}}
 {{Infobox religious building
 | name = Minashi Shrine<br>水無神社
@@ -26,210 +24,43 @@
 | location = {{ill|Takayama|qid=Q622594|1=Takayama, Gifu}}
 }}
 '']]
-
 {{nihongo|'''Hida-Ichinomiya Minashi Shrine''' |飛騨一宮水無神社|Hida Ichinomiya Minashi Jinja}}, commonly: {{nihongo|'''Minashi Shrine'''|水無神社|Minashi Jinja}} is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in the Ichinomiya neighborhood of the city of {{ill|Takayama, Gifu|en|Takayama, Gifu|qid=Q622594|lt=Takayama|1=Takayama, Gifu}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}.  It is the ''[[ichinomiya]]'' of the former {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province|1=Hida Province}}. The main festival of the shrine is held annually on May 2.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref> 
-
 ==Enshrined ''kami''==
 The primary ''[[kami]]'' enshrined at Minashi Jinja is:
 * {{nihongo|'''[[Toshigami]]'''| 御歳大神 |}}, the god of the year.
-
 ==History==
 There are no official records marking the construction of the shrine; however, during the reign of {{ill|Emperor Seiwa|en|Emperor Seiwa|qid=Q349243|lt=Emperor Seiwa|1=Emperor Seiwa}} (858–878), the shrine appears in official records and was given Junior Fourth Rank, Upper Grade [[List of Japanese court Ranks, positions and hereditary titles|court Rank]]. The shrine is listed in the ''[[Engishiki]]'' records. During the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}, it was referred toes the "Minashi Dai-gongen" and in the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}} as the "Minashi Myōjin" or the "Minashi Hachiman". During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto|1=State Shinto}}, the shrine was designated as a {{nihongo|National shrine, 3rd Rank |国幣小社|Kokuhei Shosha}} under the [[Modern system of Ranked Shinto Shrines]] from 1871. From 1874 to 1877, {{ill|Shimazaki Masaki|en|Shimazaki Masaki|qid=Q105711327|lt=Shimazaki Masaki|1=Shimazaki Masaki}}, the father of author {{ill|Tōson Shimazaki|en|Tōson Shimazaki|qid=Q1093783|lt=Shimazaki Tōson|1=Tōson Shimazaki}} and model for the main character of his seminal work {{ill|Before the Dawn (novel)|en|Before the Dawn (novel)|qid=Q4880345|lt=''Before the Dawn''|1=Before the Dawn (novel)}} was the ''[[kannushi]]'' of this shrine.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
-
 Because of the [[:en:Bombing of Nagoya in World War II|Bombing of Nagoya in World War II]], Minashi Shrine served as a refuge for [[:en:Atsuta Jingu|Atsuta Jingu]]'s ''[[Kusanagi no Tsurugi|Kusanagi]]'' from August 21 to September 19, 1945.
-
 The shrine is located an eight-minute walk from {{ill|Hida-Ichinomiya Station|en|Hida-Ichinomiya Station|qid=Q5751478|lt=Hida-Ichinomiya Station|1=Hida-Ichinomiya Station}} on the [[:en:JR Central|JR Central]] {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line|1=Takayama Main Line}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
-
 ==Gallery==
 <gallery widths="200px" heights="150px">
 Ichinomiyamachi, Takayama, Gifu Prefecture 509-3505, Japan - panoramio (2).jpg|Approach
 Minashi-jinja.jpeg|Precincts
 Minashi jinja kuhi.JPG|Memorial to Shimazaki Masaki
 </gallery>
-
 ==See also==
 *{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
 *[[Ichinomiya]]
-
 ==References==
 * Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. RoutledgeCurzon (1996) {{ISBN|1-873410-63-8}}
 * {{ill|Richard Ponsonby-Fane|en|Richard Ponsonby-Fane|qid=Q3246771|lt=Ponsonby-Fane|1=Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
-
 ==External links==
-[[Category:Commons categories broken by text replacement]]
-
 [[Category-inline|Hida-ichinomiya Minashi-jinja|Minashi Shrine}}
 *{{Official|1=http://minashijinjya.or.jp}}
-
 ==Notes==
 {{reflist}}
-
 {{Beppyo Shrines}}
-
 \
-
 [[file:Minashi-jinja haiden.jpeg|thumb|right|Minashi Shrine ''[[haiden (Shinto)|haiden]]
-
 {{Commons category|Hida-ichinomiya Minashi-jinja}}
-
-{{wikidata link|Q704865|co|commons:Category:Hida-ichinomiya Minashi-jinja|en|Minashi Shrine|fr|Minashi-jinja|ja|飛騨一宮水無神社|zh|飛驒一宮水無神社}}
-
-== Accidentally Overwritten Content ==
-
-{{Short description|Shinto shrine in Gifu Prefecture, Japan}}
-{{Infobox religious building
-| name = Minashi Shrine<br>水無神社
-| image = File:Minashi-jinja haiden.jpeg
-| caption = Minashi Shrine
-{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
-| map_type = Japan Gifu Prefecture#Japan
-| map_alt = 
-| coordinates = {{Coord|36.08530556|N|137.25186111}}
-| map_relief  = 1
-| map_size = 
-| map_caption = 
-| religious_affiliation = [[Shinto]]
-| type = 
-| deity = {{ill|Mount Kurai|qid=Q6921728|1=Mount Kurai}}; {{ill|Toshigami|qid=Q3028663|1=Toshigami}}
-| founded_by = 
-| established = 9th century
-| date_destroyed = 
-| location = Takayama-shi, Gifu-ken 502-0071 Japan
-| website = {{Official|1=http://minashijinjya.or.jp}}
-| architecture_style = 
-| festival = May 2
-| leadership = 
-| location = {{ill|Takayama|qid=Q622594|1=Takayama, Gifu}}
-}}
-'']]
-
-{{nihongo|'''Hida-Ichinomiya Minashi Shrine''' |飛騨一宮水無神社|Hida Ichinomiya Minashi Jinja}}, commonly: {{nihongo|'''Minashi Shrine'''|水無神社|Minashi Jinja}} is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in the Ichinomiya neighborhood of the city of {{ill|Takayama, Gifu|en|Takayama, Gifu|qid=Q622594|lt=Takayama|1=Takayama, Gifu}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}.  It is the ''[[ichinomiya]]'' of the former {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province|1=Hida Province}}. The main festival of the shrine is held annually on May 2.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref> 
-
-==Enshrined ''kami''==
-The primary ''[[kami]]'' enshrined at Minashi Jinja is:
-* {{nihongo|'''[[Toshigami]]'''| 御歳大神 |}}, the god of the year.
-
-==History==
-There are no official records marking the construction of the shrine; however, during the reign of {{ill|Emperor Seiwa|en|Emperor Seiwa|qid=Q349243|lt=Emperor Seiwa|1=Emperor Seiwa}} (858–878), the shrine appears in official records and was given Junior Fourth Rank, Upper Grade [[List of Japanese court Ranks, positions and hereditary titles|court Rank]]. The shrine is listed in the ''[[Engishiki]]'' records. During the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}, it was referred toes the "Minashi Dai-gongen" and in the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}} as the "Minashi Myōjin" or the "Minashi Hachiman". During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto|1=State Shinto}}, the shrine was designated as a {{nihongo|National shrine, 3rd Rank |国幣小社|Kokuhei Shosha}} under the [[Modern system of Ranked Shinto Shrines]] from 1871. From 1874 to 1877, {{ill|Shimazaki Masaki|en|Shimazaki Masaki|qid=Q105711327|lt=Shimazaki Masaki|1=Shimazaki Masaki}}, the father of author {{ill|Tōson Shimazaki|en|Tōson Shimazaki|qid=Q1093783|lt=Shimazaki Tōson|1=Tōson Shimazaki}} and model for the main character of his seminal work {{ill|Before the Dawn (novel)|en|Before the Dawn (novel)|qid=Q4880345|lt=''Before the Dawn''|1=Before the Dawn (novel)}} was the ''[[kannushi]]'' of this shrine.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
-
-Because of the [[:en:Bombing of Nagoya in World War II|Bombing of Nagoya in World War II]], Minashi Shrine served as a refuge for [[:en:Atsuta Jingu|Atsuta Jingu]]'s ''[[Kusanagi no Tsurugi|Kusanagi]]'' from August 21 to September 19, 1945.
-
-The shrine is located an eight-minute walk from {{ill|Hida-Ichinomiya Station|en|Hida-Ichinomiya Station|qid=Q5751478|lt=Hida-Ichinomiya Station|1=Hida-Ichinomiya Station}} on the [[:en:JR Central|JR Central]] {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line|1=Takayama Main Line}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
-
-==Gallery==
-<gallery widths="200px" heights="150px">
-Ichinomiyamachi, Takayama, Gifu Prefecture 509-3505, Japan - panoramio (2).jpg|Approach
-Minashi-jinja.jpeg|Precincts
-Minashi jinja kuhi.JPG|Memorial to Shimazaki Masaki
-</gallery>
-
-==See also==
-*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
-*[[Ichinomiya]]
-
-==References==
-* Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. RoutledgeCurzon (1996) {{ISBN|1-873410-63-8}}
-* {{ill|Richard Ponsonby-Fane|en|Richard Ponsonby-Fane|qid=Q3246771|lt=Ponsonby-Fane|1=Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
-
-==External links==
-[[Category:Commons categories broken by text replacement]]
-
-[[Category-inline|Hida-ichinomiya Minashi-jinja|Minashi Shrine}}
-*{{Official|1=http://minashijinjya.or.jp}}
-
-==Notes==
-{{reflist}}
-
-{{Beppyo Shrines}}
-
-\
-
-[[file:Minashi-jinja haiden.jpeg|thumb|right|Minashi Shrine ''[[haiden (Shinto)|haiden]]
-
-{{Commons category|Hida-ichinomiya Minashi-jinja}}
-
 {{wikidata link|Q704865}}
-== Accidentally Overwritten Content ==
 
-{{Short description|Shinto shrine in Gifu Prefecture, Japan}}
-{{Infobox religious building
-| name = Minashi Shrine<br>水無神社
-| image = File:Minashi-jinja haiden.jpeg
-| caption = Minashi Shrine
-{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
-| map_type = Japan Gifu Prefecture#Japan
-| map_alt = 
-| coordinates = {{Coord|36.08530556|N|137.25186111}}
-| map_relief  = 1
-| map_size = 
-| map_caption = 
-| religious_affiliation = [[Shinto]]
-| type = 
-| deity = {{ill|Mount Kurai|qid=Q6921728|1=Mount Kurai}}; {{ill|Toshigami|qid=Q3028663|1=Toshigami}}
-| founded_by = 
-| established = 9th century
-| date_destroyed = 
-| location = Takayama-shi, Gifu-ken 502-0071 Japan
-| website = {{Official|1=http://minashijinjya.or.jp}}
-| architecture_style = 
-| festival = May 2
-| leadership = 
-| location = {{ill|Takayama|qid=Q622594|1=Takayama, Gifu}}
-}}
-'']]
-
-{{nihongo|'''Hida-Ichinomiya Minashi Shrine''' |飛騨一宮水無神社|Hida Ichinomiya Minashi Jinja}}, commonly: {{nihongo|'''Minashi Shrine'''|水無神社|Minashi Jinja}} is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in the Ichinomiya neighborhood of the city of {{ill|Takayama, Gifu|en|Takayama, Gifu|qid=Q622594|lt=Takayama|1=Takayama, Gifu}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}.  It is the ''[[ichinomiya]]'' of the former {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province|1=Hida Province}}. The main festival of the shrine is held annually on May 2.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref> 
-
-==Enshrined ''kami''==
-The primary ''[[kami]]'' enshrined at Minashi Jinja is:
-* {{nihongo|'''[[Toshigami]]'''| 御歳大神 |}}, the god of the year.
-
-==History==
-There are no official records marking the construction of the shrine; however, during the reign of {{ill|Emperor Seiwa|en|Emperor Seiwa|qid=Q349243|lt=Emperor Seiwa|1=Emperor Seiwa}} (858–878), the shrine appears in official records and was given Junior Fourth Rank, Upper Grade [[List of Japanese court Ranks, positions and hereditary titles|court Rank]]. The shrine is listed in the ''[[Engishiki]]'' records. During the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}}, it was referred toes the "Minashi Dai-gongen" and in the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}} as the "Minashi Myōjin" or the "Minashi Hachiman". During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto|1=State Shinto}}, the shrine was designated as a {{nihongo|National shrine, 3rd Rank |国幣小社|Kokuhei Shosha}} under the [[Modern system of Ranked Shinto Shrines]] from 1871. From 1874 to 1877, {{ill|Shimazaki Masaki|en|Shimazaki Masaki|qid=Q105711327|lt=Shimazaki Masaki|1=Shimazaki Masaki}}, the father of author {{ill|Tōson Shimazaki|en|Tōson Shimazaki|qid=Q1093783|lt=Shimazaki Tōson|1=Tōson Shimazaki}} and model for the main character of his seminal work {{ill|Before the Dawn (novel)|en|Before the Dawn (novel)|qid=Q4880345|lt=''Before the Dawn''|1=Before the Dawn (novel)}} was the ''[[kannushi]]'' of this shrine.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
-
-Because of the [[:en:Bombing of Nagoya in World War II|Bombing of Nagoya in World War II]], Minashi Shrine served as a refuge for [[:en:Atsuta Jingu|Atsuta Jingu]]'s ''[[Kusanagi no Tsurugi|Kusanagi]]'' from August 21 to September 19, 1945.
-
-The shrine is located an eight-minute walk from {{ill|Hida-Ichinomiya Station|en|Hida-Ichinomiya Station|qid=Q5751478|lt=Hida-Ichinomiya Station|1=Hida-Ichinomiya Station}} on the [[:en:JR Central|JR Central]] {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line|1=Takayama Main Line}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
-
-==Gallery==
-<gallery widths="200px" heights="150px">
-Ichinomiyamachi, Takayama, Gifu Prefecture 509-3505, Japan - panoramio (2).jpg|Approach
-Minashi-jinja.jpeg|Precincts
-Minashi jinja kuhi.JPG|Memorial to Shimazaki Masaki
-</gallery>
-
-==See also==
-*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
-*[[Ichinomiya]]
-
-==References==
-* Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. RoutledgeCurzon (1996) {{ISBN|1-873410-63-8}}
-* {{ill|Richard Ponsonby-Fane|en|Richard Ponsonby-Fane|qid=Q3246771|lt=Ponsonby-Fane|1=Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
-
-==External links==
 [[Category:Commons categories broken by text replacement]]
-
-[[Category-inline|Hida-ichinomiya Minashi-jinja|Minashi Shrine}}
-*{{Official|1=http://minashijinjya.or.jp}}
-
-==Notes==
-{{reflist}}
-
-{{Beppyo Shrines}}
-
-\
-
-[[file:Minashi-jinja haiden.jpeg|thumb|right|Minashi Shrine ''[[haiden (Shinto)|haiden]]
-
-{{Commons category|Hida-ichinomiya Minashi-jinja}}
-
-{{wikidata link|Q704865}}
 [[Category:9th-century establishments in Japan]]
 [[Category:Beppyo shrines]]
 [[Category:Gifu Prefecture designated tangible cultural property]]
 [[Category:Hida Province]]
 [[Category:Kokuhei Shōsha]]
-[[Category:Pages with duplicated content]]
 [[Category:Prefecturally designated intangible folk cultural property]]
 [[Category:Shikinai Shōsha]]
 [[Category:Shinto shrines in Gifu Prefecture]]
@@ -238,6 +69,5 @@ Minashi jinja kuhi.JPG|Memorial to Shimazaki Masaki
 [[Category:Junior Fifth Rank]]
 [[Category:Junior Fourth Rank]]
 [[Category:Senior Fifth Rank]]
-[[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
 [[Category:qqqq]]
