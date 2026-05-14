@@ -1,71 +1,79 @@
 """
 normalize_ill_wikidata op
 ==========================
-Rewrites messy ``{{ill|...}}`` templates back to a canonical clean form
-by pulling the language/title pairs straight from Wikidata via the
-template's ``qid=`` parameter.
+Rewrites messy ``{{ill|...}}`` calls back to a clean, predictable
+form. The wiki accumulated a lot of ill-template junk over time — bad
+import patterns, hand-editing, partially-completed migrations — and
+this op is the centralised cleanup.
 
-Messy form (what import / hand-editing leaves behind)::
+What "messy" looks like (real example)::
 
-    {{ill|Northern Dynasties|ja|北朝|12=simple|13=User:Immanuelle/Northern Court (Japan)|comment=changed title based on wikidata|qid=Q1207446}}
+    {{ill|Ame-no-Fuyukinu|en|12=simple|13=User:Immanuelle/Ame-no-Fuyukinu|qq=}}
 
-Canonical form (what this op produces)::
+What this op produces (no QID resolvable)::
 
-    {{ill|Northern Dynasties|ja|北朝|ko|북조|vi|Bắc triều|zh|北朝 (消歧義)|zh_classical|北朝|zh_yue|北朝|qid=Q1207446}}
+    {{ill|Ame-no-Fuyukinu|en|Ame-no-Fuyukinu}}
 
-i.e. ``positional[0]`` (enwiki target) + every Wikidata language sitelink
-sorted alphabetically by language code (enwiki excluded — already the
-positional) + ``qid=`` + ``lt=`` (if present, kept verbatim, placed last).
+What this op produces (QID resolved)::
 
-Two modes:
+    {{ill|Ame-no-Fuyukinu|<sorted sitelinks>|qid=Q…}}
 
-**A. Has ``qid=Q\\d+`` and at least one "junk" param/positional.**
-Rebuild from the QID's Wikidata sitelinks. This is the original path.
+Three modes, in priority order:
 
-**B. No qid but has ≥1 ``lang|target`` positional pair.** Query every
-pair against Wikidata via ``wbgetentities?sites=<lang>wiki&titles=…``
-to discover which QID each interwiki points to, then:
+**Mode A. ``qid=Q\\d+`` is already on the call.**
+Fetch the QID's Wikidata sitelinks and REPLACE the existing pair list
+with them (capped at MAX_PAIRS, alphabetical by lang). Existing pairs
+are not preserved — the template is treated as a derived view of the
+QID's sitelinks. Failure handling: if the sitelinks fetch fails
+(network/parse), keep the existing call untouched; only a successful
+fetch authorises rewriting.
 
-  * Exactly 1 unique QID resolved → use it, continue with mode A's
-    rebuild (positional[0] / last ``1=`` stays + replace interwikis
-    with sitelinks from that QID).
-  * 2+ unique QIDs resolved → leave the template structure as-is but
-    append ``|consistent_qid=false``. The disagreement gets surfaced
-    for human review; the bot doesn't pick a winner.
-  * 0 resolved → no-op. No signal to act on.
+**Mode B. No qid, has ≥1 cleaned ``lang|target`` pair.** Query every
+cleaned pair against Wikidata to discover which QID each resolves to:
 
-A ``1=`` override, if present, is treated as authoritative for the
-new positional[0] — MW resolves last-wins on duplicate names, so we
-do the same. Per user directive (2026-05-12), a ``redirects to``
-substring in the body is NOT a disqualifier when a qid is present:
-the qid is treated as sufficient evidence the link is correct.
+  * 1 unique QID → use it, continue with Mode A's rebuild.
+  * 2+ unique QIDs → cleaned form + ``|consistent_qid=false`` flag so
+    the disagreement is visible.
+  * 0 resolved → fall through to Mode C.
 
-Mode B is the same consistency rule that ``wikidata_lookup`` applies
-to ``{{wikidata link}}`` templates, just extended to ``{{ill}}``. The
-two ops share ``_resolve_qid_from_sitelink`` and its per-run cache so
-the API cost is bounded by unique (lang, target) pairs across the
-whole run, not per-template.
+**Mode C. No qid resolvable.** Emit the cleaned form anyway (drop
+junk, make pairs explicit). This is the path that catches the
+``{{ill|Foo|en|12=simple|13=User:Foo}}`` case shown above — Wikidata
+has nothing to anchor to, but we still want the bad pattern gone.
 
-Transformation:
-  1. Determine effective positional[0]: if ``1=`` is named (any number
-    of times), use the LAST value; otherwise keep the bare positional[0].
-  2. Discard every other positional + every named param except ``qid=``
-    and ``lt=``.
-  3. Fetch sitelinks for the QID from Wikidata.
-  4. Emit (lang, title) pairs sorted alphabetically by lang code,
-    excluding ``enwiki`` (already the positional) and sister-project
-    sites (Commons, Wiktionary, Wikiquote, etc.). Underscored lang
-    codes (``zh_classical``, ``zh_yue``) ARE included — those are
-    distinct languages on Wikipedia and the user's spec calls for them.
-  5. Append ``qid=Q...``, then ``lt=...`` if present.
+Cleanups applied across all modes:
 
-Gated on ``ENABLE_NORMALIZE_ILL_WIKIDATA=1`` so the per-cycle Wikidata
-API churn isn't on by default. Per-run cache means each unique QID
-costs at most one API call regardless of how many pages reference it
-within the same orchestrator run.
+  * **Numeric-named keys (12=, 13=, …) are dropped wholesale.** Per
+    user direction (2026-05-14), every such pattern on the wiki came
+    from an early import mistake; there are no legitimate uses to
+    preserve. Bare positionals (positional[1], positional[2], …) are
+    still treated as the real interwiki pair sequence — only the
+    NAMED numeric overrides get stripped.
+  * **Empty target → canonical fallback.** ``{{ill|Foo|en}}`` (no
+    positional[2]) becomes ``{{ill|Foo|en|Foo}}``. MW already
+    resolves the implicit form to the same thing; making it explicit
+    makes the wikitext easier to read and reason about.
+  * **Bogus targets dropped.** Pairs whose target hits a placeholder
+    namespace prefix (``User:``, ``Talk:``, ``Special:``, etc.) are
+    excluded. Wikipedia interlangs require article-namespace targets.
+  * **Noise named params dropped.** Only ``qid``, ``lt``, and
+    ``consistent_qid`` are kept; everything else (``qq=``,
+    ``comment=``, ``ja_comment=``, ``check_date=``, the various junk
+    markers) is discarded.
 
-PRE_HEAVY so the cleaned text is what fandom_mirror and history_offload's
-XML archive capture inside the same cycle.
+The ``1=`` positional-1 override is handled by the sibling
+``normalize_ill_positional`` op; this op runs after it in the OPS
+list, so by the time we get a call, any ``1=`` has already been
+resolved into the bare positional[0].
+
+Mode B shares ``_resolve_qid_from_sitelink`` (and its per-run cache)
+with ``wikidata_lookup`` so the API cost is bounded by unique
+(lang, target) pairs across the whole run, not per-template.
+
+Gated on ``ENABLE_NORMALIZE_ILL_WIKIDATA=1`` so the per-cycle API
+churn isn't on by default. PRE_HEAVY so the cleaned text is what
+``fandom_mirror`` and ``history_offload``'s XML archive capture in
+the same cycle.
 """
 
 import os
@@ -184,6 +192,102 @@ def _parse_ill_body(body: str) -> tuple[list[str], dict[str, str]]:
     return positional, named
 
 
+_NUMERIC_KEY_RE = re.compile(r"^\d+$")
+
+
+def _strip_numeric_named(named: dict[str, str]) -> dict[str, str]:
+    """Drop every numeric-named key (1=, 2=, ..., 12=, 13=, ...).
+
+    Per user direction (2026-05-14): every `12=simple|13=User:Foo|...`
+    pattern on the wiki originated from an early import mistake that
+    applied broadly. There are no legitimate uses to preserve, so we
+    just discard them wholesale during normalization rather than try
+    to validate each pair individually. Bare positionals
+    (positional[1], positional[2], ...) are still treated as the
+    real interwiki pair sequence — only the numeric-NAMED overrides
+    are dropped.
+
+    `1=` would have already been promoted into positional[0] by the
+    sibling `normalize_ill_positional` op when present alongside a
+    qid; in the no-qid path it's left alone as a deliberate human
+    note. Dropping it here would conflict with that policy, so the
+    op is run *before* normalize_ill_positional in the orchestrator
+    OPS list — which means by the time this op gets a call, any
+    `1=` has already been resolved.
+    """
+    return {k: v for k, v in named.items() if not _NUMERIC_KEY_RE.match(k)}
+
+
+# Targets we know are placeholders / wrong namespaces for an interlang
+# link. User:Immanuelle/X is the canonical case — a draft holding-page
+# on miraheze that prior scripts wrote into ill calls when they had no
+# real interwiki target. The simple/Wikipedia-site interlangs require
+# article-namespace targets, never User:/Talk:/Special:/etc.
+_BOGUS_PREFIXES = (
+    "User:", "User talk:", "Talk:", "Special:",
+    "File talk:", "Category talk:", "Template talk:",
+    "Module talk:", "Help talk:", "MediaWiki talk:",
+    "Project talk:",
+)
+
+
+def _is_bogus_target(target: str) -> bool:
+    return target.startswith(_BOGUS_PREFIXES)
+
+
+def _extract_clean_pairs(
+    positional: list[str],
+    canonical_title: str,
+) -> list[tuple[str, str]]:
+    """Walk positional[1:] as alternating (lang, title) pairs. Two
+    cleanups applied per pair:
+
+    * **Empty title → canonical fallback.** ``{{ill|Foo|en}}`` (with no
+      positional[2]) is MW shorthand for "use Foo as the en title", so
+      we make it explicit: the pair becomes (en, Foo). This is the
+      "make calls more understandable" piece — readers shouldn't have
+      to know the implicit fallback.
+    * **Bogus targets dropped.** A pair whose target hits
+      ``_is_bogus_target`` is excluded from the result entirely.
+    """
+    pairs: list[tuple[str, str]] = []
+    i = 1
+    n = len(positional)
+    while i < n:
+        lang = positional[i].strip()
+        target = positional[i + 1].strip() if i + 1 < n else ""
+        if lang:
+            if not target:
+                target = canonical_title
+            if not _is_bogus_target(target):
+                pairs.append((lang, target))
+        i += 2
+    return pairs
+
+
+# Named params we keep on the cleaned output. Everything else (qq=,
+# comment=, ja_comment=, the various junk markers prior scripts left
+# behind, and any numeric-named keys consumed by _full_positional)
+# is dropped.
+_KEEP_NAMED = ("qid", "lt", "consistent_qid")
+
+
+def _emit_clean_call(
+    canonical: str,
+    pairs: list[tuple[str, str]],
+    named: dict[str, str],
+) -> str:
+    parts: list[str] = [canonical]
+    for lang, target in pairs:
+        parts.append(lang)
+        parts.append(target)
+    for key in _KEEP_NAMED:
+        v = named.get(key, "").strip() if key != "lt" else named.get(key, "")
+        if v:
+            parts.append(f"{key}={v}")
+    return "{{ill|" + "|".join(parts) + "}}"
+
+
 def apply(title: str, text: str):
     if os.getenv("ENABLE_NORMALIZE_ILL_WIKIDATA") != "1":
         return None, None
@@ -192,102 +296,112 @@ def apply(title: str, text: str):
     if REDIRECT_RE.search(text):
         return None, None
 
-    edits = 0
+    edits_from_sitelinks = 0
+    cleaned_no_resolve = 0
     fetch_failed = 0
     flagged_inconsistent = 0
 
-    def _extract_lang_pairs(positional: list[str]) -> list[tuple[str, str]]:
-        """Read positional[1:] as alternating lang|title pairs.
-        Trailing orphan (odd count) is dropped — matches MW's behaviour
-        for ``{{ill}}``'s pair slots."""
-        pairs: list[tuple[str, str]] = []
-        i = 1
-        while i + 1 < len(positional):
-            lang = positional[i].strip()
-            target = positional[i + 1].strip()
-            if lang and target:
-                pairs.append((lang, target))
-            i += 2
-        return pairs
-
     def replacer(match: "re.Match[str]") -> str:
-        nonlocal edits, fetch_failed, flagged_inconsistent
+        nonlocal edits_from_sitelinks, cleaned_no_resolve
+        nonlocal fetch_failed, flagged_inconsistent
         body = match.group(1)
         positional, named = _parse_ill_body(body)
-        qid = named.get("qid", "").strip()
 
-        # Mode B: no qid → try to resolve from interwiki pairs.
-        if not _QID_RE.fullmatch(qid):
-            pairs = _extract_lang_pairs(positional)
-            if not pairs:
+        # Need a canonical title to anchor the rest.
+        if not positional or not positional[0].strip():
+            return match.group(0)
+        canonical = positional[0].strip()
+
+        # Drop numeric-named keys wholesale (per user direction — see
+        # `_strip_numeric_named` docstring) AND drop empty-value
+        # markers (qq=, etc.). consistent_qid is the one named param
+        # where empty is meaningful — the existing flag logic uses
+        # "false" so empty would be malformed anyway.
+        named_clean = _strip_numeric_named(named)
+        named_clean = {
+            k: v for k, v in named_clean.items()
+            if v.strip() or k == "consistent_qid"
+        }
+
+        cleaned_pairs = _extract_clean_pairs(positional, canonical)
+        qid = named_clean.get("qid", "").strip()
+
+        # Mode A: existing qid → fetch sitelinks and replace the pair
+        # list wholesale. Same semantics as the wikidata_lookup op for
+        # {{wikidata link}}: the template is a derived view of Wikidata.
+        if _QID_RE.fullmatch(qid):
+            sitelinks = _fetch_sitelinks(qid)
+            if sitelinks is None:
+                fetch_failed += 1
                 return match.group(0)
-            resolved: set[str] = set()
-            had_fetch_failure = False
-            for (lang, target) in pairs:
-                r = wikidata_lookup._resolve_qid_from_sitelink(lang, target)
-                # _resolve_qid_from_sitelink returns None for "no entity"
-                # AND for "fetch failed" — we can't tell them apart at
-                # this layer. Continue collecting; an empty resolved set
-                # falls through to the no-op branch which is the right
-                # behaviour either way.
-                if r:
-                    resolved.add(r)
-            if len(resolved) == 1:
-                qid = next(iter(resolved))
-                # Fall through to Mode A's rebuild path with the new qid.
-                # We intentionally inject qid into `named` so the rebuild
-                # code below treats this consistently with Mode A.
-                named = dict(named)
-                named["qid"] = qid
-            elif len(resolved) > 1:
-                # Disagreement: flag and leave structure alone.
-                if named.get("consistent_qid") == "false":
-                    return match.group(0)  # already flagged
-                new_body = body.rstrip().rstrip("|") + "|consistent_qid=false"
+            new_named = {"qid": qid}
+            if "lt" in named_clean:
+                new_named["lt"] = named_clean["lt"]
+            new_call = _emit_clean_call(canonical, sitelinks, new_named)
+            if new_call != match.group(0):
+                edits_from_sitelinks += 1
+            return new_call
+
+        # Mode B: no qid → try to resolve via the cleaned interwiki pairs.
+        # _resolve_qid_from_sitelink returns None for both "no entity"
+        # and "fetch failed"; we can't distinguish, so an empty set
+        # falls through to Mode C (cleanup) which is the right
+        # behaviour either way.
+        resolved: set[str] = set()
+        for (lang, target) in cleaned_pairs:
+            r = wikidata_lookup._resolve_qid_from_sitelink(lang, target)
+            if r:
+                resolved.add(r)
+
+        if len(resolved) == 1:
+            new_qid = next(iter(resolved))
+            sitelinks = _fetch_sitelinks(new_qid)
+            if sitelinks is None:
+                fetch_failed += 1
+                return match.group(0)
+            new_named = {"qid": new_qid}
+            if "lt" in named_clean:
+                new_named["lt"] = named_clean["lt"]
+            new_call = _emit_clean_call(canonical, sitelinks, new_named)
+            if new_call != match.group(0):
+                edits_from_sitelinks += 1
+            return new_call
+
+        if len(resolved) > 1:
+            # Interwikis disagree — flag and emit cleaned form so the
+            # disagreement stays visible after junk-pair pruning.
+            new_named = dict(named_clean)
+            new_named["consistent_qid"] = "false"
+            new_call = _emit_clean_call(canonical, cleaned_pairs, new_named)
+            if new_call != match.group(0):
                 flagged_inconsistent += 1
-                return "{{ill|" + new_body + "}}"
-            else:
-                return match.group(0)
+            return new_call
 
-        # Mode A (or fall-through from B with a resolved qid): rebuild.
-        # Cost gate: skip already-clean templates. "Clean" means: at
-        # most one positional, and named keys ⊆ {qid, lt}.
-        junk_named = {k for k in named if k not in ("qid", "lt")}
-        extra_positional = len(positional) > 1
-        if not junk_named and not extra_positional:
-            return match.group(0)
-
-        # Resolve effective positional[0]: a 1= override wins (MW
-        # last-wins is already what _parse_ill_body gives us — a plain
-        # dict overwrites duplicate keys).
-        if "1" in named and named["1"].strip():
-            effective_positional = named["1"].strip()
-        elif positional and positional[0].strip():
-            effective_positional = positional[0]
-        else:
-            return match.group(0)
-
-        sitelinks = _fetch_sitelinks(qid)
-        if sitelinks is None:
-            fetch_failed += 1
-            return match.group(0)
-
-        new_parts: list[str] = [effective_positional]
-        for lang, t in sitelinks:
-            new_parts.append(lang)
-            new_parts.append(t)
-        new_parts.append(f"qid={qid}")
-        if "lt" in named:
-            new_parts.append(f"lt={named['lt']}")
-        edits += 1
-        return "{{ill|" + "|".join(new_parts) + "}}"
+        # Mode C: 0 resolved, no Wikidata anchor available. Emit the
+        # cleaned form with bogus pairs dropped, empty titles
+        # substituted with the canonical, and noise named params
+        # discarded. This is what makes {{ill|Foo|en|12=simple|13=
+        # User:Foo|qq=}} collapse to {{ill|Foo|en|Foo}} — explicit
+        # lang|title pairs even when the title would default to
+        # positional[0], for downstream readability.
+        new_call = _emit_clean_call(canonical, cleaned_pairs, named_clean)
+        if new_call != match.group(0):
+            cleaned_no_resolve += 1
+        return new_call
 
     new_text = ILL_RE.sub(replacer, text)
     if new_text == text:
         return None, None
     bits: list[str] = []
-    if edits:
-        bits.append(f"normalize {edits} {{{{ill}}}} call(s) from Wikidata sitelinks")
+    if edits_from_sitelinks:
+        bits.append(
+            f"sync {edits_from_sitelinks} {{{{ill}}}} call(s) from Wikidata sitelinks"
+        )
+    if cleaned_no_resolve:
+        bits.append(
+            f"clean {cleaned_no_resolve} {{{{ill}}}} call(s) "
+            f"(drop bogus pairs / make implicit en pair explicit)"
+        )
     if flagged_inconsistent:
         bits.append(
             f"flag {flagged_inconsistent} {{{{ill}}}} call(s) consistent_qid=false (interwikis disagree)"

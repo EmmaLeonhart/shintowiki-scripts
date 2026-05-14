@@ -219,6 +219,7 @@ jobs:
       enable_fandom_mirror: true
       enable_interlang_consolidate: true
       enable_wikidata_lookup: true
+      enable_normalize_ill_wikidata: true
       edit_limit: ${{ needs.window-gate.outputs.mainspace-edit-limit }}
     secrets: inherit
 
