@@ -20,10 +20,17 @@ sitelinks API. Two resolutions can happen on a single page:
    ``consistent_qid=false`` flag is dropped.
 
 2. Template has a real QID: fetch the entity's sitelinks via
-   ``wbgetentities&props=sitelinks`` and append any (lang, title) pair
-   not already present, capped at MAX_PAIRS to keep the template
-   readable. A pre-existing ``consistent_qid=false`` is dropped (the
-   manual fix is in — the flag was a question, not an answer).
+   ``wbgetentities&props=sitelinks`` and REPLACE the template's pair
+   list with what Wikidata says (capped at MAX_PAIRS). Existing pairs
+   are NOT preserved — the template is treated as a derived view of
+   Wikidata's sitelinks. The previous append-don't-replace semantics
+   let stale pairs accumulate forever (e.g. a `fr|User:Immanuelle/X`
+   draft marker survived every run because it was always "already
+   present"). Failure handling: if the sitelinks fetch fails (network
+   error, bad response), existing pairs are kept untouched; only a
+   verified-empty answer from Wikidata authorises clearing them. A
+   pre-existing ``consistent_qid=false`` is dropped (the manual fix
+   is in — the flag was a question, not an answer).
 
 After processing, the op stamps a ``check_date=YYYY-MM-DD`` named
 parameter on the template. On future runs, pages whose ``check_date``
@@ -82,11 +89,15 @@ _MAX_PAIRS = 20
 _CHECK_INTERVAL_DAYS = 180
 
 # Cutover: stamps from BEFORE this date are treated as stale regardless
-# of age. Set to the date the consistency-check Phase 1 rewrite landed
-# (2026-05-15), so every page that was stamped under the old
-# "take first hit" logic gets re-evaluated under the new
-# "collect-all-then-vote" logic the next time it's visited.
-_CHECK_DATE_CUTOVER = datetime.date(2026, 5, 15)
+# of age. Originally set to 2026-05-15 (Phase 1 voting rewrite); bumped
+# to 2026-05-20 to also re-evaluate every page touched between
+# 05-15 and 05-20 under the old append-don't-replace Phase 2 logic.
+# Those entries accumulated stale (lang, title) pairs (e.g.
+# `fr|User:Immanuelle/Futemimi` on Q65266228 even though Wikidata has
+# no fr-wiki sitelink for that QID). The new Phase 2 logic replaces
+# the entire pair list with what Wikidata actually has, so a re-pass
+# clears the crud.
+_CHECK_DATE_CUTOVER = datetime.date(2026, 5, 20)
 
 # Sites to skip when reading sitelinks back into pair form — sister
 # projects (Commons, Wikidata itself, Species) and meta-wikis aren't
@@ -98,9 +109,13 @@ _NON_LANGUAGE_SITES = frozenset({
 })
 
 # Per-run caches; cleared implicitly by process exit. Module-level so
-# different pages within the same run share lookups.
+# different pages within the same run share lookups. The sitelinks
+# cache value is None when the fetch failed (so Phase 2 knows not to
+# treat that as a verified-empty answer and accidentally nuke
+# existing pairs on transient errors); a list (possibly empty) means
+# the fetch succeeded.
 _qid_cache: dict[tuple[str, str], "str | None"] = {}
-_sitelinks_cache: dict[str, list[tuple[str, str]]] = {}
+_sitelinks_cache: dict[str, "list[tuple[str, str]] | None"] = {}
 
 
 def _check_date_is_recent(date_str: str) -> bool:
@@ -195,8 +210,18 @@ def _resolve_qid_from_sitelink(lang: str, target: str) -> "str | None":
     return None
 
 
-def _fetch_sitelinks(qid: str) -> list[tuple[str, str]]:
-    """Fetch the entity's sitelinks and return [(lang, title), ...]."""
+def _fetch_sitelinks(qid: str) -> "list[tuple[str, str]] | None":
+    """Fetch the entity's sitelinks and return [(lang, title), ...].
+
+    Returns ``None`` if the fetch failed (network error, malformed
+    response). A returned empty list means the fetch SUCCEEDED and the
+    entity genuinely has no language-wiki sitelinks — Phase 2 uses
+    that as ground-truth permission to clear stale pairs from the
+    template, so the failure-vs-empty distinction is load-bearing.
+    Treat both ``[]`` and ``None`` as "no pairs to add" in append-mode
+    callers, but only ``[]`` (not ``None``) authorises a wholesale
+    replace.
+    """
     if qid in _sitelinks_cache:
         return _sitelinks_cache[qid]
     try:
@@ -215,9 +240,11 @@ def _fetch_sitelinks(qid: str) -> list[tuple[str, str]]:
         resp.raise_for_status()
         entity = resp.json().get("entities", {}).get(qid, {}) or {}
     except Exception:
-        _sitelinks_cache[qid] = []
-        return []
+        _sitelinks_cache[qid] = None
+        return None
     if "missing" in entity:
+        # Entity-missing IS a verified-empty answer (Wikidata told us
+        # the QID doesn't exist), so return [], not None.
         _sitelinks_cache[qid] = []
         return []
     sitelinks = entity.get("sitelinks", {}) or {}
@@ -298,19 +325,24 @@ def apply(title: str, text: str):
         if len(phase1_resolved) == 1:
             new_qid = next(iter(phase1_resolved))
 
-    # Phase 2: fetch sitelinks and merge missing pairs. Always done
-    # when a QID is known — pair count is no longer a gate; the
-    # check_date stamp prevents re-fetching for ~6 months.
+    # Phase 2: fetch sitelinks and REPLACE the pair list with what
+    # Wikidata says. The previous append-don't-replace semantics let
+    # stale pairs accumulate forever — e.g., `fr|User:Immanuelle/X`
+    # written by a prior script as a draft marker would survive every
+    # subsequent run because the op only ever ADDED sitelinks. The
+    # template's pair list is now treated as a derived view of the
+    # QID's Wikidata sitelinks; existing pairs are not preserved.
+    #
+    # Failure handling: a fetch failure (None) keeps the existing
+    # pairs untouched. Only a verified-empty answer ([]) — meaning
+    # Wikidata returned successfully and that QID has no language
+    # sitelinks — clears the list. This protects against transient
+    # API errors silently nuking valid data.
     new_pairs = list(pairs)
     if new_qid:
         sitelinks = _fetch_sitelinks(new_qid)
-        existing = {(l.lower(), t) for l, t in new_pairs}
-        for (lang, t) in sitelinks:
-            if len(new_pairs) >= _MAX_PAIRS:
-                break
-            if (lang.lower(), t) not in existing:
-                new_pairs.append((lang, t))
-                existing.add((lang.lower(), t))
+        if sitelinks is not None:
+            new_pairs = sitelinks[:_MAX_PAIRS]
 
     # Always stamp check_date so the next 6 months of cycles skip this page.
     today = datetime.date.today().isoformat()
@@ -344,8 +376,17 @@ def apply(title: str, text: str):
     if new_qid != qid:
         bits.append(f"resolve QID {new_qid} from interwiki")
     added = len(new_pairs) - len(pairs)
-    if added > 0:
+    removed = len(set(pairs) - set(new_pairs))
+    if added > 0 and removed > 0:
+        bits.append(
+            f"sync sitelinks from Wikidata (+{added}, -{removed})"
+        )
+    elif added > 0:
         bits.append(f"add {added} sitelink pair(s) from Wikidata")
+    elif removed > 0:
+        bits.append(
+            f"drop {removed} stale pair(s) not in Wikidata sitelinks"
+        )
     if flag_set:
         bits.append(
             f"flag consistent_qid=false ({len(phase1_resolved)} disagreeing QIDs from interwikis)"
