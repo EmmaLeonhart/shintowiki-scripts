@@ -12,9 +12,21 @@ name: Git Synced Sync
 on:
   workflow_dispatch:
   workflow_call:
+  schedule:
+    # Every 15 minutes (~96/day). Added on 2026-05-14 — previously this
+    # workflow only ran on manual dispatch, so wiki edits to pages in
+    # [[Category:Git synced pages]] would never make it back into the
+    # repo unless someone kicked it off by hand. With
+    # `concurrency.cancel-in-progress` below, overlapping fires can't
+    # pile up.
+    - cron: "5,20,35,50 * * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: git-synced-sync
+  cancel-in-progress: true
 
 jobs:
   git-synced-sync:

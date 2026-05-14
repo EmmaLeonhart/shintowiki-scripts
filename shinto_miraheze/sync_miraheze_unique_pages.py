@@ -93,35 +93,78 @@ def save_state(path: Path, state: dict) -> None:
 
 
 def iter_category_with_revisions(site, category_name, namespaces):
-    params = {
-        "generator": "categorymembers",
-        "gcmtitle": f"Category:{category_name}",
-        "gcmnamespace": namespaces,
-        "gcmlimit": "max",
-        "prop": "revisions",
-        "rvprop": "ids|content",
-        "rvslots": "main",
+    """Yield (title, revid, text) for every page currently in the category.
+
+    Two-pass implementation. The naive single-pass version (generator +
+    prop=revisions + rvprop=content) silently drops pages: MediaWiki
+    caps the number of pages returned WITH content per response (~50),
+    and continuation continues the *revisions* fetch on the same page
+    set rather than serving the next slice cleanly. Pages missed by
+    that cap look like they fell out of the category, triggering this
+    script's orphan-PUSH path and overwriting genuine wiki edits with
+    stale local content. Ported from sync_git_synced_pages.py — see
+    that file's identical helper for the original fix."""
+    titles: list[str] = []
+    p1 = {
+        "list": "categorymembers",
+        "cmtitle": f"Category:{category_name}",
+        "cmnamespace": namespaces,
+        "cmlimit": "max",
+        "cmprop": "title",
         "formatversion": "2",
     }
     while True:
-        result = site.api("query", **params)
-        pages = result.get("query", {}).get("pages", [])
-        for page in pages:
-            if page.get("missing"):
-                continue
-            revs = page.get("revisions") or []
-            if not revs:
-                continue
-            rev = revs[0]
-            revid = rev.get("revid")
-            text = rev.get("slots", {}).get("main", {}).get("content", "")
-            if revid is None:
-                continue
-            yield page["title"], revid, text
+        result = site.api("query", **p1)
+        for m in result.get("query", {}).get("categorymembers", []) or []:
+            t = m.get("title")
+            if t:
+                titles.append(t)
         if "continue" in result:
-            params.update(result["continue"])
+            p1.update(result["continue"])
         else:
             break
+
+    seen: set[str] = set()
+    unique_titles: list[str] = []
+    for t in titles:
+        if t in seen:
+            continue
+        seen.add(t)
+        unique_titles.append(t)
+
+    BATCH = 50
+    for i in range(0, len(unique_titles), BATCH):
+        batch = unique_titles[i:i + BATCH]
+        p2 = {
+            "titles": "|".join(batch),
+            "prop": "revisions",
+            "rvprop": "ids|content",
+            "rvslots": "main",
+            "formatversion": "2",
+        }
+        seen_in_batch: set[str] = set()
+        while True:
+            result = site.api("query", **p2)
+            for page in result.get("query", {}).get("pages", []) or []:
+                if page.get("missing"):
+                    continue
+                title = page.get("title")
+                if not title or title in seen_in_batch:
+                    continue
+                revs = page.get("revisions") or []
+                if not revs:
+                    continue
+                rev = revs[0]
+                revid = rev.get("revid")
+                text = rev.get("slots", {}).get("main", {}).get("content", "")
+                if revid is None:
+                    continue
+                seen_in_batch.add(title)
+                yield title, revid, text
+            if "continue" in result:
+                p2.update(result["continue"])
+            else:
+                break
 
 
 def fetch_page(site, title):

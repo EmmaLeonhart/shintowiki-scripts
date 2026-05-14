@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-14
+
+### `iter_category_with_revisions` pagination bug ported to the unique-pages syncs
+**Files:** `shinto_miraheze/sync_miraheze_unique_pages.py`, `shinto_miraheze/sync_fandom_unique_pages.py`, `.github/workflows/fandom-sync.yml`, `.github/workflows/git-synced-sync.yml`
+
+The same MediaWiki-API pagination bug that `sync_git_synced_pages.py` fixed on 2026-05-10 was still live in the two unique-pages syncs. Single-pass `generator=categorymembers` + `prop=revisions` + `rvprop=content` only returns ~50 pages with content per response; the rest come back without a `revisions` field and were silently skipped. With 515 tracked entries on miraheze, hundreds of pages per cycle looked like they had fallen out of `[[Category:Independently git synced pages]]`, fell through to the orphan-PUSH path, and overwrote genuine wiki edits with stale `miraheze_unique/<title>.wiki` content. User reported: "the Mirahaze unique stuff is just overwriting intended page edits."
+
+Ported the two-pass helper verbatim from `sync_git_synced_pages.py` into both unique-pages syncs. Pass 1 lists every category member's title; pass 2 fetches revisions+content in batches of 50 via `titles=`, which has clean continuation semantics.
+
+While in there, bumped the sync cadence — `fandom-sync.yml` was running once a day, `git-synced-sync.yml` was manual-only. Both now run every 15 minutes (~96/day) with `concurrency.cancel-in-progress: true` so overlapping fires can't pile up. Offset by 5 minutes so the two workflows don't hit miraheze at the same instant.
+
+---
+
 ## 2026-05-12
 
 ### `{{ill}}` template normalization: qid is the authoritative signal

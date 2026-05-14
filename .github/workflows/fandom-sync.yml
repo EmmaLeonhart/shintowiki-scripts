@@ -29,10 +29,20 @@ on:
         default: "50"
   workflow_call:
   schedule:
-    - cron: "30 11 * * *"
+    # Every 15 minutes (~96/day). Bumped up from 1/day on 2026-05-14 —
+    # a daily cadence meant wiki edits sat unsynced for up to 24h, and
+    # any genuine wiki edit racing with a repo edit had nearly a full
+    # day to accumulate before the conflict-resolver saw it. With
+    # `concurrency.cancel-in-progress` below, overlapping fires can't
+    # pile up.
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: independent-pages-sync
+  cancel-in-progress: true
 
 jobs:
   independent-pages-sync:
