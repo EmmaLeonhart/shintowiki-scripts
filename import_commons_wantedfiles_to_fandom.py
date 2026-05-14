@@ -408,6 +408,18 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+        FANDOM_SUNSET_DATE,
+        fandom_sunset_passed,
+    )
+    if fandom_sunset_passed():
+        print(
+            f"import_commons_wantedfiles_to_fandom disabled: past "
+            f"FANDOM_SUNSET_DATE ({FANDOM_SUNSET_DATE.isoformat()}). "
+            f"No uploads."
+        )
+        return 0
+
     load_env()
 
     print(f"Mode: {'APPLY' if args.apply else 'DRY-RUN'}")

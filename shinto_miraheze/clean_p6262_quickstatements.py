@@ -127,6 +127,18 @@ def main():
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+        FANDOM_SUNSET_DATE,
+        fandom_sunset_passed,
+    )
+    if fandom_sunset_passed():
+        print(
+            f"clean_p6262_quickstatements disabled: past "
+            f"FANDOM_SUNSET_DATE ({FANDOM_SUNSET_DATE.isoformat()}). "
+            f"Leaving the QS page untouched."
+        )
+        return
+
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.login(USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")

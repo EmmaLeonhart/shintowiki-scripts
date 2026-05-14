@@ -29,6 +29,18 @@ FANDOM_DIR = REPO_ROOT / "fandom_unique"
 
 
 def main():
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+        FANDOM_SUNSET_DATE,
+        fandom_sunset_passed,
+    )
+    if fandom_sunset_passed():
+        print(
+            f"bootstrap_seed disabled: past FANDOM_SUNSET_DATE "
+            f"({FANDOM_SUNSET_DATE.isoformat()}). No new fandom_unique/ "
+            f"files will be seeded."
+        )
+        return 0
+
     if not MIRAHEZE_DIR.exists():
         print(f"miraheze_unique/ does not exist; nothing to seed.")
         return 0

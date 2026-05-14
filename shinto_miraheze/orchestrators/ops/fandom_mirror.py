@@ -28,9 +28,24 @@ Fandom quirks:
     with local fandom accounts.
 """
 
+import datetime
 import os
 
 import mwclient
+
+# All writes to shinto.fandom.com stop on this date. After it, every
+# entry point that mutates fandom — fandom_mirror.mirror_page() (used
+# by history_offload), sync_fandom_unique_pages.py, the wantedfiles
+# importer, the bootstrap seed, the P6262 quickstatements generators —
+# is expected to import this constant and no-op past it.
+# Date chosen by the user: 2027-01-01.
+FANDOM_SUNSET_DATE = datetime.date(2027, 1, 1)
+
+
+def fandom_sunset_passed() -> bool:
+    """True once we've reached the no-more-fandom-writes date."""
+    return datetime.datetime.utcnow().date() >= FANDOM_SUNSET_DATE
+
 
 FANDOM_HOST = "shinto.fandom.com"
 FANDOM_API = f"https://{FANDOM_HOST}/api.php"
@@ -99,6 +114,11 @@ def mirror_page(source_site: mwclient.Site, title: str, run_tag: str) -> tuple[b
     retries once and then proceeds even on failure, since the GitHub XML
     archive is the authoritative backup.
     """
+    if fandom_sunset_passed():
+        return False, (
+            f"skipped: past FANDOM_SUNSET_DATE "
+            f"({FANDOM_SUNSET_DATE.isoformat()})"
+        )
     try:
         xml = _fetch_source_xml(source_site, title)
     except Exception as e:

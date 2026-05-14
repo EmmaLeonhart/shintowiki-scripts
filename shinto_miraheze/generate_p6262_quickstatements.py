@@ -281,6 +281,18 @@ def main():
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+        FANDOM_SUNSET_DATE,
+        fandom_sunset_passed,
+    )
+    if fandom_sunset_passed():
+        print(
+            f"generate_p6262_quickstatements disabled: past "
+            f"FANDOM_SUNSET_DATE ({FANDOM_SUNSET_DATE.isoformat()}). "
+            f"No new fandom-article-ID claims will be emitted to Wikidata."
+        )
+        return
+
     state = load_state()
     if not state:
         print("No tracked titles; nothing to do.")

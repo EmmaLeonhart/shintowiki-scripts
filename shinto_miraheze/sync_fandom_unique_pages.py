@@ -151,6 +151,17 @@ def main():
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+        FANDOM_SUNSET_DATE,
+        fandom_sunset_passed,
+    )
+    if fandom_sunset_passed():
+        print(
+            f"sync_fandom_unique_pages disabled: past FANDOM_SUNSET_DATE "
+            f"({FANDOM_SUNSET_DATE.isoformat()}). No fandom reads or writes."
+        )
+        return 0
+
     if not FANDOM_USERNAME or not FANDOM_PASSWORD:
         print("FATAL: FANDOM_USERNAME / FANDOM_PASSWORD env vars are required.")
         return 2
