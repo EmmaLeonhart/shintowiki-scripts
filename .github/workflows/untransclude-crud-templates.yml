@@ -1,0 +1,74 @@
+name: Untransclude CRUD Templates
+
+# Walks Category:CRUD templates on shinto.miraheze.org and rewrites
+# every transclusion / direct wikilink to point at
+# Template:Removed template instead — preserving the original parameter
+# data. Once a crud template has zero references, it falls into
+# Special:UnusedTemplates and delete_unused_templates.py finishes it
+# off.
+#
+# Pacing is intentionally gentle (--max-templates 10, --max-pages 10,
+# --max-edits 100) because rewriting transclusions is intrusive.
+# Trigger manually at first to confirm behaviour; convert to a
+# schedule once the .state file shows steady progress.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  untransclude:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Configure git and run tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x shinto_miraheze/commit_state.sh shinto_miraheze/run_step.sh
+
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Untransclude CRUD templates → Template:Removed template"
+        run: |
+          shinto_miraheze/run_step.sh "Untransclude: untransclude_crud_templates" \
+            python3 shinto_miraheze/untransclude_crud_templates.py \
+              --apply \
+              --max-templates 10 \
+              --max-pages 10 \
+              --max-edits 100 \
+              --run-tag "${RUN_TAG}"
+
+      - name: "Commit state: Untransclude CRUD Templates"
+        if: always()
+        run: shinto_miraheze/commit_state.sh "Untransclude CRUD Templates"
