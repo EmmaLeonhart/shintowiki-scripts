@@ -48,3 +48,11 @@ Traceback (most recent call last):
     from shinto_miraheze.orchestrators.ops.fandom_mirror import (
 ModuleNotFoundError: No module named 'shinto_miraheze'
 
+[2026-05-14 23:37:43 UTC] [ERROR] generate_p6262_quickstatements: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 426, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 284, in main
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+ModuleNotFoundError: No module named 'shinto_miraheze'
+
