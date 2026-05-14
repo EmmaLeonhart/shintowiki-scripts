@@ -1,0 +1,14 @@
+{{#if:{{{1|}}}|[[{{{1}}}|{{{lt|{{{1}}}}}}]]|{{{lt|}}}}}<noinclude>
+This is the fandom-side override of '''{{tl|ill}}''' (interlanguage link). On shinto.miraheze.org, {{tl|ill}} renders via Module:Ill which queries Wikidata to produce fallback page names across other languages. That module doesn't exist on shinto.fandom.com, so the upstream-imported version produced links to nonexistent wikidata-derived page names.
+
+This override ignores all the language-code parameters, ignores {{para|qid}}, and renders only a simple wikilink:
+
+* {{para|1}} (positional, required): target page title on this wiki.
+* {{para|lt}} (optional): display-text override. Defaults to the target title.
+
+Every other parameter ({{para|en}}, {{para|ja}}, {{para|qid}}, {{para|comment}}, etc.) is silently dropped on this wiki. The original data stays on the calling page in the wikitext, so if a richer {{tl|ill}} ever gets reimplemented on fandom it can pick the parameters back up without re-editing every page.
+
+Source-of-truth for this file is git: ``fandom_unique/Template%3AIll.wiki`` in the shintowiki-scripts repo. Edits made directly on the fandom wiki may be overwritten on the next sync.
+
+[[Category:Independently git synced pages]]
+</noinclude>
