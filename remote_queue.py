@@ -39,6 +39,17 @@ Sources and how they map to instructions:
       (delimited by the BEGIN/END markers). Detection: pages
       containing the auto-generated-block marker. ~115 items.
 
+  miraheze_unique/*.wiki (shrine-disambig, no auto-gen block yet)
+      Shrine-disambig pages tagged with [[Category:Shrine
+      disambiguations]] that don't have the auto-generated block
+      yet — either ``generate_shrine_disambig_lists.py`` hasn't
+      reached them on its sweep, its kanji extractor failed on an
+      unusual lede, or its SPARQL returned zero results. The remote
+      worker can identify the kanji form by hand (from the
+      ``{{wikidata link|Q...|ja|kanji}}`` line at the bottom, the
+      lede, or the article body), SPARQL Wikidata for shrines with
+      that label, and write the section manually. ~58 items.
+
 Japanese-titled pages are excluded — those moves are intentional
 manual work per the queue plan.
 
@@ -53,6 +64,7 @@ import datetime
 import io
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -93,6 +105,28 @@ NEED_TRANSLATION_INSTRUCTION = (
     "will push the translation to the wiki and delete the local file. "
     "WARNING: this sync is destructive — removing the category deletes the "
     "file from the repo, so only drop it when translation is genuinely done."
+)
+
+MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_INSTRUCTION = (
+    "This is a shrine disambiguation page (tagged [[Category:Shrine "
+    "disambiguations]]) that doesn't have the auto-generated "
+    "`== Shrines with this name ==` block yet. Possible causes: "
+    "(a) `generate_shrine_disambig_lists.py` hasn't reached it on its "
+    "incremental sweep, (b) the script's kanji extractor failed on an "
+    "unusual lede, or (c) the script's SPARQL exact-label match "
+    "returned zero results. "
+    "Fix it directly: identify the kanji form of the shrine name "
+    "(the `{{wikidata link|Q...|ja|kanji}}` template near the bottom "
+    "usually has it; otherwise check the lede or the article body), "
+    "SPARQL Wikidata for items that are subclass-of Q845945 (Shinto "
+    "shrine) carrying that kanji as an `ja` rdfs:label or skos:altLabel, "
+    "and write the section in the same format as other shrine-disambig "
+    "pages on the wiki. Wrap it in the standard "
+    "`<!-- BEGIN: auto-generated Wikidata shrine list -->` / "
+    "`<!-- END: auto-generated Wikidata shrine list -->` markers so the "
+    "script picks the page up on future sweeps. If the kanji is "
+    "genuinely ambiguous or SPARQL returns nothing meaningful, leave "
+    "the page as-is."
 )
 
 MIRAHEZE_SHRINE_DISAMBIG_INSTRUCTION = (
@@ -181,6 +215,9 @@ def _is_disambig_or_english_titled(path: Path) -> bool:
 # auto-generated bullet block. Used to identify shrine-disambig pages
 # in miraheze_unique/ without resorting to filename heuristics.
 _SHRINE_DISAMBIG_MARKER = "<!-- BEGIN: auto-generated Wikidata shrine list -->"
+_SHRINE_DISAMBIG_CAT_RE = re.compile(
+    r"\[\[\s*Category\s*:\s*[Ss]hrine\s+disambiguations?\s*(?:\|[^\]]*)?\]\]"
+)
 
 
 def _is_shrine_disambig(path: Path) -> bool:
@@ -189,6 +226,17 @@ def _is_shrine_disambig(path: Path) -> bool:
     except OSError:
         return False
     return _SHRINE_DISAMBIG_MARKER in text
+
+
+def _is_shrine_disambig_no_autogen(path: Path) -> bool:
+    """Tagged as a shrine disambiguation but missing the auto-gen block."""
+    try:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return False
+    if _SHRINE_DISAMBIG_MARKER in text:
+        return False
+    return bool(_SHRINE_DISAMBIG_CAT_RE.search(text))
 
 
 def build_queue() -> list[dict]:
@@ -207,6 +255,13 @@ def build_queue() -> list[dict]:
             "miraheze_unique",
             MIRAHEZE_SHRINE_DISAMBIG_INSTRUCTION,
             filter_fn=_is_shrine_disambig,
+        )
+    )
+    items.extend(
+        _build_section(
+            "miraheze_unique",
+            MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_INSTRUCTION,
+            filter_fn=_is_shrine_disambig_no_autogen,
         )
     )
     return items

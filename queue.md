@@ -9,17 +9,6 @@ translation, fandom template fixup, shrine-disambig content strip)
 lives in `remote_queue.json` and is worked by the remote-Claude cron
 — not duplicated here.
 
-## Action items
-
-Shrine-disambig SPARQL extraction follow-ups: 4 disambig pages have
-unusual ledes the kanji extractor can't parse (Kobe disambiguation,
-Kōtai Shrine disambiguation, Meiji, Nitta Shrine — Nitta and Kōtai
-already have the auto-generated block, Kobe and Meiji still don't).
-15 pages had 0 exact-label SPARQL matches and need a broader query
-(UNION over skos:altLabel + prefix matching; the broader query timed
-out at >60s and needs WDQS optimization). Both follow-ups are
-tooling/query work, not page-by-page LLM editing.
-
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
