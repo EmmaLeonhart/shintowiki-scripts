@@ -23,36 +23,12 @@
 | coordinates = {{Coord|40.203194|N|141.791306}}
 }}
 
-'''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Kuji, Iwate|en|Kuji, Iwate|qid=Q695911|lt=Kuji|1=Kuji, Iwate}}, {{ill|Iwate Prefecture|en|Iwate Prefecture|qid=Q48326|lt=Iwate Prefecture|1=Iwate Prefecture}}, in Minatomachi. It is affectionately known as "Konpira-san."
-
-The shrine is situated on elevated ground, overlooking {{ill|Kuji Bay|ja|久慈湾|12=simple|13=User:Immanuelle/Kuji Bay|1=Kuji Bay|comment=changed title based on wikidata|qid=Q11369340}}. It also serves as a designated {{ill|Tsunami evacuation facility|ja|津波避難施設|12=simple|13=User:Immanuelle/Tsunami evacuation facility|1=tsunami evacuation facility|comment=changed title based on wikidata|qid=Q17177367}}<ref>{{Cite web|url=http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf |format=PDF |title=Tsunami Hazard Map |publisher=Kuji City |accessdate=October 28, 2015 |archive-url=https://web.archive.org/web/20160304213804/http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf |archive-date=March 4, 2016}}</ref>. During the {{ill|Aftermath of the 2011 Tōhoku earthquake and tsunami|en|Aftermath of the 2011 Tōhoku earthquake and tsunami|qid=Q1136168|lt=Great East Japan Earthquake|1=Aftermath of the 2011 Tōhoku earthquake and tsunami}} on March 11, 2011, many people sought refuge at the shrine.
-
-== References ==
-<references />
-{{Pref-substub|pref=Iwate Prefecture}}
-{{Shinto-stub}}
-
-{{translated page|ja|金刀比羅神社 (久慈市)|version=99527328|comment=Imported full ja history}}
-
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-| name = Kotohira Shrine
-| image = [[File:Kuji-konpira.jpg|thumbnail|250px|Shrine grounds]]
-| coordinates = {{Coord|40|12|11.5|N|141|47|28.7|E|scale:25000_region:JP-03_type:landmark}}
-| location = Minatocho 13-90, Kuji City, Iwate Prefecture, Japan
-| deity = {{ill|Ōmononushi|ja|大物主命|1=Ōmononushi|qid=Q10936701|lt=Ōmononushi-no-Mikoto|12=simple|13=User:Immanuelle/Ōmononushi|13=User:Immanuelle/Ōmononushi|qid=Q10936701}} ([[Konpira Gongen]]) {{Citation needed|date=October 2015}}
-| founded = 1718 {{Citation needed|date=October 2015}}
-| festivals = August 10 {{Citation needed|date=October 2015}}
-}}
-
 '''Kotohira Shrine''' ({{nihongo|金刀比羅神社|ことひらじんじゃ}}) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Kuji, Iwate|en|Kuji, Iwate|qid=Q695911|lt=Kuji City|1=Kuji, Iwate}}, Iwate Prefecture, Japan. It is affectionately known as {{nihongo|"Konpira-san"|こんぴらさん}}.
 
-The shrine is situated on a hill, offering a scenic view of Kuji Bay. It is designated as a {{ill|tsunami evacuation site|ja|津波避難施設|12=simple|13=User:Immanuelle/tsunami evacuation site|1=tsunami evacuation facility|comment=changed title based on wikidata|qid=Q17177367}},<ref>{{Cite web|title=津波ハザードマップ|url=http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf|format=PDF|publisher=Kuji City|accessdate=2015-10-28|archive-url=https://web.archive.org/web/20160304213804/http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf|archive-date=2016-03-04}}</ref> and during the {{nihongo|{{ill|2011 Tōhoku earthquake and tsunami|en|2011 Tōhoku earthquake and tsunami|qid=Q36204|lt=Great East Japan Earthquake|1=2011 Tōhoku earthquake and tsunami}}|東日本大震災}} on March 11, 2011, many people sought refuge there.
+The shrine is situated on elevated ground, overlooking {{ill|Kuji Bay|ja|久慈湾|12=simple|13=User:Immanuelle/Kuji Bay|1=Kuji Bay|comment=changed title based on wikidata|qid=Q11369340}}. It is designated as a {{ill|tsunami evacuation site|ja|津波避難施設|12=simple|13=User:Immanuelle/tsunami evacuation site|1=tsunami evacuation facility|comment=changed title based on wikidata|qid=Q17177367}},<ref>{{Cite web|url=http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf |format=PDF |title=Tsunami Hazard Map |publisher=Kuji City |accessdate=October 28, 2015 |archive-url=https://web.archive.org/web/20160304213804/http://bousai.city.kuji.iwate.jp/contents/pc/pdf/hazardmap/jishintsunami/07.pdf |archive-date=March 4, 2016}}</ref> and during the {{ill|Aftermath of the 2011 Tōhoku earthquake and tsunami|en|Aftermath of the 2011 Tōhoku earthquake and tsunami|qid=Q1136168|lt=Great East Japan Earthquake|1=Aftermath of the 2011 Tōhoku earthquake and tsunami}} on March 11, 2011, many people sought refuge at the shrine.
 
 == References ==
 <references />
-
 {{Pref-substub|pref=Iwate Prefecture}}
 {{Shinto-stub}}
 
@@ -64,6 +40,5 @@ The shrine is situated on a hill, offering a scenic view of Kuji Bay. It is desi
 [[Category:Kotohira shrines]]
 [[Category:Kotohira shrines|Kuji]]
 [[Category:Municipal History of Kuji]]
-[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Iwate Prefecture]]
 [[Category:Wikidata has short description]]
