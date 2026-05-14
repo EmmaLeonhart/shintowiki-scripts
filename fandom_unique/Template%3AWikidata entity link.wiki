@@ -1,10 +1,10 @@
 <includeonly>{{#if:{{{1|}}}
 | {{#switch:{{padleft:|1|{{uc:{{{1}}}}}}}
-  | Q | P  = [[d:Special:EntityPage/{{uc:{{{1}}}}}|{{replace|{{#invoke:wd|label|{{uc:{{{1}}}}}}}|'|&#39;}} <small>({{uc:{{{1}}}}})</small>]]
-  | #default = [[d:Special:EntityPage/Q{{uc:{{{1}}}}}|{{replace|{{#invoke:wd|label|Q{{uc:{{{1}}}}}}}|'|&#39;}} <small>(Q{{uc:{{{1|}}}}})</small>]]
+  | Q | P  = [https://www.wikidata.org/wiki/Special:EntityPage/{{uc:{{{1}}}}} {{replace|{{#invoke:wd|label|{{uc:{{{1}}}}}}}|'|&#39;}} <small>({{uc:{{{1}}}}})</small>]
+  | #default = [https://www.wikidata.org/wiki/Special:EntityPage/Q{{uc:{{{1}}}}} {{replace|{{#invoke:wd|label|Q{{uc:{{{1}}}}}}}|'|&#39;}} <small>(Q{{uc:{{{1|}}}}})</small>]
   }}
 | {{#if:{{#invoke:wd|label|raw}}
-  | [[d:Special:EntityPage/{{#invoke:wd|label|raw}}|{{#invoke:wd|label}} <small>({{#invoke:wd|label|raw}})</small>]]
+  | [https://www.wikidata.org/wiki/Special:EntityPage/{{#invoke:wd|label|raw}} {{#invoke:wd|label}} <small>({{#invoke:wd|label|raw}})</small>]
   | <small>(no entity)</small>
   }}
 }}</includeonly><noinclude>{{Documentation}}
