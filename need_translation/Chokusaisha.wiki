@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Chokusaisha for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Short description|Type of Shinto shrine|qq=}}
 {{italic title|qq=}}{{Expand Japanese|qq=}}
 ''''Chokusaisha''''' ({{lang|ja-Hani|勅祭社|1=Chokusaisha|2=ja|3=勅祭社|qq=}}) is a shrine where an imperial envoy ''Chokushi'' ({{lang|ja-Hani|勅使|qq=}}) performs rituals: ''chokushi sankō no jinja'' ({{lang|ja-Hani|勅使参向の神社|qq=}}).<ref>{{cite book|url=https://books.google.com/books?id=ZPUlAQAAIAAJ |title=An Encyclopedia of Shinto: Norman Havens, Nobutaka Inoue. Institute for Japanese Culture and Classics Kokugakuin University, 2006.  |accessdate=1 January 2014|qq=}}</ref><ref>{{cite web|url=https://www.amazon.com/Shinto-jiten-Japanese-Edition/dp/4335160232 |title=Shinto Jiten (Dictionary of Shinto: 神道事典): Kokugakuin Daigaku Nihon Bunka Kenkyujo (国学院大学日本文化研究所), ed. Tokyo: Kokubundo, 1994.  |accessdate=1 January 2014|qq=}}</ref><ref>{{cite web|url=http://catalogue.nla.gov.au/Record/70123 |title=Jinja jiten (神社辞典)/ Shirai Eiji; Toki Masanori hen, 1997.  |accessdate=1 January 2014|qq=}}</ref> 
@@ -56,11 +54,9 @@ The following table shows sixteen shrines designated as Chokusaisha.
 
 }}
 
-{{wikidata link|Q175288|de|Chokusaisha|en|Chokusaisha|es|Chokusaisha|fr|Chokusaisha|ja|勅祭社|ko|칙제사|simple|Chokusaisha|zh|敕祭社}}
+{{wikidata link|Q175288|de|Chokusaisha|en|Chokusaisha|es|Chokusaisha|fr|Chokusaisha|ja|勅祭社|ko|칙제사|simple|Chokusaisha|zh|敕祭社|check_date=2026-05-14}}
 
 {{translated page|ja|勅祭社|version=103392958|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 '''勅祭社'''（ちょくさいしゃ、{{旧字体|'''敕祭社&#xe0101;'''}}）とは、{{jalink|祭祀 (神道)|Q109937652|祭祀}}に際して{{jalink|天皇|Q208233}}により{{jalink|勅使|Q11399920}}が遣わされる（これを{{jalink|勅祭|Q11399932}}という）{{jalink|神社|Q845945}}のことである。ただし、毎年五大祭（月次祭を除く）に勅使が遣わされる{{jalink|伊勢神宮|Q687168}}は別格とされて勅祭社に含めない。
 
@@ -137,4 +133,6 @@ The following table shows sixteen shrines designated as Chokusaisha.
 [[Category:Pages with 250+ untranslated japanese characters]]
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Need translation]]
+[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
