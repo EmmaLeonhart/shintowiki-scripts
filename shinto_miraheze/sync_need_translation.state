@@ -28,24 +28,24 @@
     "sha": "96930bfa47a7caf33b1fe5824cfea77fdd864a14"
   },
   "Ame no Hohi": {
-    "revid": 3736632,
-    "sha": "82142e4a11d361e273c51599a1ae5559f9398431"
+    "revid": 3740971,
+    "sha": "7c9303f5abb40bdbd9493514dbd6bf7281c02b9f"
   },
   "Ame no Wakahiko": {
-    "revid": 3740054,
-    "sha": "0b75198a9a7bcff8d2a51626ef2ba81b1c6a9bb0"
+    "revid": 3740974,
+    "sha": "b30f8281fddaae7896be8552cbd5080f1a54dd67"
   },
   "Ame-no-ohabari": {
-    "revid": 3740055,
-    "sha": "aa24800caeb021a32b26e1e7eb6ec0b69d27374e"
+    "revid": 3740968,
+    "sha": "429cb48701be30f81bebe0d49e0fb87a51892694"
   },
   "Association of Shinto Shrines": {
-    "revid": 3740056,
-    "sha": "d03208ce251b8dd84166cd0fe77be4a2e96991fe"
+    "revid": 3741105,
+    "sha": "24952a5f042802d6b195792d56d01987fb27cd84"
   },
   "Atago Shrine (Sendai)": {
-    "revid": 3740057,
-    "sha": "c6dd21b60933b1d8b9c04803189343ac1ce7b199"
+    "revid": 3741126,
+    "sha": "0ed24b94e5efaf758e8bb5b5200b2baaf7e8f19e"
   },
   "Awayama-no-Ueno Shrine": {
     "revid": 3738631,
@@ -56,12 +56,12 @@
     "sha": "6915c6e845fcb6e00c7ec45515c8446e5094de9a"
   },
   "Chokusaisha": {
-    "revid": 3738873,
-    "sha": "aff6bf7f1fc6daba25806efffb0ea9a2e703b198"
+    "revid": 3741349,
+    "sha": "b5c6ce9c8b4a2f59e548c138430a897668a51f6a"
   },
   "Dai Nippon Koku Ichinomiya Ki": {
-    "revid": 3738991,
-    "sha": "fea74667cf91933308a6d2d8f7d60a50a58b78f9"
+    "revid": 3741392,
+    "sha": "12ee5172a83165e6cb721ed6eda0750698b769c1"
   },
   "Danbara Kofun": {
     "revid": 3739061,
@@ -80,24 +80,24 @@
     "sha": "b3117d6f6adef2c0551585b0ae7471f22d4a5dee"
   },
   "Futako Shrine": {
-    "revid": 3740058,
-    "sha": "b51431cf0b4bfcb4ab02c6f45cba1f5891447a7d"
+    "revid": 3740197,
+    "sha": "d7111e696525539fd627caad446683ee22b1972d"
   },
   "Gary Luscombe": {
-    "revid": 3637490,
-    "sha": "e00eca88e6b4a14f562b49af4b10af041f371e67"
+    "revid": 3740247,
+    "sha": "78a5d2ce29884833b552ed4e9f241fd91a24ec73"
   },
   "Genkai Sea": {
     "revid": 3672369,
     "sha": "828e58a0742e9d06c593b7f0b66c33a08bbe67cf"
   },
   "Goryō": {
-    "revid": 3739444,
+    "revid": 3740684,
     "sha": "d655694fedeb8e31fcfd8b9af2ae26aaae492ab5"
   },
   "Hakusan Shrine (Nuttari-higashi, Niigata)": {
-    "revid": 3740060,
-    "sha": "2e5302899173515e168fdab91e4b2b14054dc592"
+    "revid": 3740563,
+    "sha": "b5760632cb152d29fecf10d2294a4404e022a130"
   },
   "Hayabusa Shrine (Kyoto)": {
     "revid": 3739338,
@@ -108,8 +108,8 @@
     "sha": "9ecf274f49bcfd35b1be25d7815022bc8038c377"
   },
   "Himukai-daijingū": {
-    "revid": 3737954,
-    "sha": "d9cdc12d3fe119cb4382e4aaf8f043e2729db16b"
+    "revid": 3741909,
+    "sha": "aca79b28ea5c8796787f766970d6b6c5204a91d5"
   },
   "Hinama-ji Hime-no-Mikoto Shrine": {
     "revid": 3707626,
@@ -160,8 +160,8 @@
     "sha": "956ab6647c98a18254e3fff3f56e5cbaef461b38"
   },
   "Kai no Kuni no Miyatsuko": {
-    "revid": 3734492,
-    "sha": "43d93462b4176b7ac9b6db9e4bae74b4f0a92a98"
+    "revid": 3742372,
+    "sha": "5fac3bc7513c1946534a8b5528d5ac1ae8cd933e"
   },
   "Kameido Tenjin Shrine": {
     "revid": 3730028,
@@ -184,8 +184,8 @@
     "sha": "56c14b77bc9d500ff5ae4415f02882fe7ef6e009"
   },
   "Kashii-gū": {
-    "revid": 3710369,
-    "sha": "5a326b680a0caa7fa239c55d17df02f9b64f4661"
+    "revid": 3742470,
+    "sha": "40eb52bcc4f15d616c9bc5d219ac6e28c13a1c41"
   },
   "Kashima Shrine (Kashiba)": {
     "revid": 3708046,
@@ -200,8 +200,8 @@
     "sha": "1d89366ab43c3c52130e066ce5d54c391ad65dc8"
   },
   "Kengoshizuka Kofun": {
-    "revid": 3710405,
-    "sha": "64e5ced0ee916b0f217a2b6a684d6957d4839a54"
+    "revid": 3742545,
+    "sha": "6825b22846d7aecbca71a4a1f8dd0f0fd0822b66"
   },
   "Keta-hongū": {
     "revid": 3735128,
@@ -216,8 +216,8 @@
     "sha": "3e6551f061f3e818934e558fb4f3ad1fef0de377"
   },
   "Konpira Gongen": {
-    "revid": 3683769,
-    "sha": "3df4670b6c077c43cefc3e50867220041afafc4d"
+    "revid": 3742641,
+    "sha": "af3e0546f3d1184f6404dea47cb4f38fb75f99ba"
   },
   "Kotokuji Temple (Koka City)": {
     "revid": 3710487,
@@ -368,8 +368,8 @@
     "sha": "434f8c58789153e8bf55592686c9a078655c5c02"
   },
   "Yasaka Shrine (Gika, Koka)": {
-    "revid": 3739350,
-    "sha": "350235e0632aaee739ebb802f05db4eec9185b2d"
+    "revid": 3741547,
+    "sha": "d84681bdfa551a2c0e5e416706adfa1db367125c"
   },
   "Ōmi no Kuni no Miyatsuko": {
     "revid": 3735460,
