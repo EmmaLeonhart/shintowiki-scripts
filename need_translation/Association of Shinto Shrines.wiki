@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Association_of_Shinto_Shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Short description|Religious organization overseeing Shinto shrines in Japan|qq=}}{{Infobox organization
 | image                    = Association of Shinto Shrines 2010.jpg
 | caption                  = The headquarters of the association in {{ill|Shibuya|en|Shibuya|qid=Q193638|lt=Shibuya}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}
@@ -13,7 +11,7 @@ The association has five major activities, in addition to numerous others:<ref>{
 *Education of adherents to Shinto;
 *Reverence of Ise Grand Shrine and the distribution of its [[Ofuda|amulets]] called ''[[:en:Jingū Taima|Jingū Taima]]'' ([[:ja:神宮大麻|神宮大麻]]); and
 *Preparation and training of individuals for the [[kannushi|Shinto priesthood]].
-It currently has an administrative structure including a main office and branches. Its headquarters in {{ill|Yoyogi|en|Yoyogi|qid=Q1190291|lt=Yoyogi}}, {{ill|Shibuya|en|Shibuya|qid=Q193638|lt=Shibuya}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}, adjacent to [[Meiji Jingu|Meiji Shrine]]. Its leadership includes the {{Nihongo|''[[:en:Sosai|Sosai]]''|総裁|qq=}}, the head priestess of the Ise Shrine, presently {{ill|Sayako Kuroda|en|Sayako Kuroda|qid=Q229333|lt=Sayako Kuroda}}.<ref>[https://www.japantimes.co.jp/news/2017/06/21/national/politics-diplomacy/emperors-daughter-becomes-supreme-priestess-ise-shrine/#.WbR-zJQhXqA Japan Times]</ref> The {{Nihongo|''tōri''|統理|qq=}} is {{ill|Kuniaki Kuni|ja|久邇邦昭|12=simple|13=User:Immanuelle/Kuniaki Kuni|1=Kuniaki Kuni|comment=changed title based on wikidata|qid=Q11369705}}, and the post of {{Nihongo|''sōchō''|総長|qq=}} or Secretary-General is currently held by [[Masami Yatabe]], the chief priest of the [[Mishima Taisha|Mishima Shrine]].  The association maintains regional offices in every {{ill|Prefectures of Japan|en|Prefectures of Japan|qid=Q50337|lt=prefecture}}. They handle financial and personnel matters for member shrines.
+It currently has an administrative structure including a main office and branches. Its headquarters in {{ill|Yoyogi|en|Yoyogi|qid=Q1190291|lt=Yoyogi}}, {{ill|Shibuya|en|Shibuya|qid=Q193638|lt=Shibuya}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}, adjacent to [[Meiji Jingu|Meiji Shrine]]. Its leadership includes the {{Nihongo|''[[:en:Sosai|Sosai]]''|総裁|qq=}}, the head priestess of the Ise Shrine, presently {{ill|Sayako Kuroda|en|Sayako Kuroda|qid=Q229333|lt=Sayako Kuroda}}.<ref>[https://www.japantimes.co.jp/news/2017/06/21/national/politics-diplomacy/emperors-daughter-becomes-supreme-priestess-ise-shrine/#.WbR-zJQhXqA Japan Times]</ref> The {{Nihongo|''tōri''|統理|qq=}} is {{ill|Kuniaki Kuni|ja|久邇邦昭|12=simple|13=User:Immanuelle/Kuniaki Kuni|comment=changed title based on wikidata|qid=Q11369705}}, and the post of {{Nihongo|''sōchō''|総長|qq=}} or Secretary-General is currently held by [[Masami Yatabe]], the chief priest of the [[Mishima Taisha|Mishima Shrine]].  The association maintains regional offices in every {{ill|Prefectures of Japan|en|Prefectures of Japan|qid=Q50337|lt=prefecture}}. They handle financial and personnel matters for member shrines.
 == Overview ==
 The Association of Shinto Shrines is the largest Shinto religious group in Japan, and more than 79,000 of the approximately 80,000 Japanese shrines, including major ones, are members.<ref name="nenkan">[https://www.bunka.go.jp/tokei_hakusho_shuppan/hakusho_nenjihokokusho/shukyo_nenkan/pdf/h19nenkan.pdf 『宗教年鑑』平成19th year ] 2-4ページ</ref> Each prefecture has a shrine office <ref>[http://www.jinjahoncho.or.jp/introduction/jinjacho/ 神社本庁 神社庁一覧]</ref>{{r|nenkan|qq=}}. It is the successor to the {{ill|Institute of Divinities|en|Institute of Divinities|qid=Q11590709|lt=Institute of Divinities}}, which was an external agency of the {{ill|Home Ministry|en|Home Ministry|qid=Q1142265|lt=Home Ministry}},<ref>{{Cite web |title=神社庁とは |url=https://www.okayama-jinjacho.or.jp/about/jinjacho/ |website=岡山県神社庁 |accessdate=2020-05-04|qq=}}</ref> and is a comprehensive [[religious corporation]] based on the Religious Corporation Law.
 In Article 3 of the "Regulations of the Religious Corporation 'Jinja Honcho' Agency," the regulations of the Agency as a religious corporation, the purpose of the Agency is to manage and guide shrines under its jurisdiction, promote Shinto, perform shrine rituals, educate and foster believers ([[Ujigami|Ujiko]]), support [[Ise Grand Shrine|Ise Shrine]], the head shrine, train priests, and conduct public relations through the publication and distribution of pamphlets, among other activities. The shrine is also involved in public relations activities through the publication and distribution of pamphlets.
@@ -51,11 +49,9 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 {{Authority control|qq=}}
 {{State Shinto|qq=}}
 
-{{wikidata link|Q908077|ca|Associació de Santuaris Xinto|en|Association of Shinto Shrines|fr|Association des sanctuaires shinto|id|Asosiasi Kuil Shinto|it|Associazione dei santuari shintoisti|ja|神社本庁|ko|신사본청|ru|Дзиндзя хонтё|simple|Association of Shinto Shrines|sv|Jinja Honcho|zh|神社本廳}}
+{{wikidata link|Q908077|ca|Associació de Santuaris Xinto|en|Association of Shinto Shrines|fr|Association des sanctuaires shinto|id|Asosiasi Kuil Shinto|it|Associazione dei santuari shintoisti|ja|神社本庁|ko|신사본청|ru|Дзиндзя хонтё|simple|Association of Shinto Shrines|sv|Jinja Honcho|zh|神社本廳|check_date=2026-05-13}}
 
 {{translated page|ja|神社本庁|version=107508523|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 {{統合文字|神 祇}}
 {{Infobox 組織
@@ -474,4 +470,6 @@ The Association has many contacts within the {{ill|Liberal Democratic Party (Jap
 [[Category:Pages with 2000+ untranslated japanese characters]]
 [[Category:Pages with 3000+ untranslated japanese characters]]
 [[Category:Pages with 5000+ untranslated japanese characters]]
+[[Category:Need translation]]
+[[Category:Pages with duplicated content]]
 [[Category:Need translation]]

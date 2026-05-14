@@ -123,12 +123,12 @@
  | 経度度=136|経度分=46|経度秒=14.2
  | 祭神=五十瓊敷入彦命
  | 創建=（伝）{{ill|lt=景行天皇|Q329723|qid=Q329723|1=Emperor Keikō}}14年
- | 社格={{ill|UNKNOWN|lt=式内社|1=Shikinaisha|qid=Q134917286|lt=Shikinaisha}}（小）{{ill|lt=論社|Q135022904|qid=Q135022904|1=Shikinai Ronsha}}<br/>旧{{ill|lt=近代社格制度#官社|Q712534|qid=Q712534|lt=国幣小社|1=Modern system of ranked Shinto shrines}}<br/>{{ill|lt=別表神社|Q10898274|qid=Q10898274|1=Beppyo shrine}}<br/>{{ill|lt=金幣社|Q119929592|qid=Q119929592|1=Kinpei-sha}}
+ | 社格={{ill|UNKNOWN|lt=式内社|1=Shikinaisha|qid=Q134917286|lt=Shikinaisha}}（小）{{ill|lt=論社|Q135022904|qid=Q135022904|1=Shikinai Ronsha}}<br/>旧{{ill|lt=近代社格制度#官社|Q712534|comment=this used to link to modern system but that one is too overlinked|lt=国幣小社|1=Modern system of ranked Shinto shrines}}<br/>{{ill|lt=別表神社|Q10898274|qid=Q10898274|1=Beppyo shrine}}<br/>{{ill|lt=金幣社|Q119929592|qid=Q119929592|1=Kinpei-sha}}
  | 例祭={{ill|lt=4月5日|Q2507|qid=Q2507|1=April 5}}（{{ill|lt=岐阜まつり|Q11471288|qid=Q11471288|1=Gifu Matsuri}}）
  | 地図   = Japan Gifu
 }}
 
-'''伊奈波神社'''（いなばじんじゃ）は、{{ill|lt=岐阜県|Q131277|qid=Q131277|1=Gifu Prefecture}}{{ill|lt=岐阜市|Q45798|qid=Q45798|1=Gifu}}伊奈波通りにある{{ill|lt=神社|Q845945|qid=Q845945|1=Shinto shrine}}。{{ill|UNKNOWN|lt=式内社|1=Shikinaisha|qid=Q134917286|lt=Shikinaisha}}{{ill|lt=論社|Q135022904|qid=Q135022904|1=Shikinai Ronsha}}、{{ill|lt=美濃国|Q864156|qid=Q864156|1=Mino Province}}{{ill|lt=一宮|Q1656379|qid=Q1656379|lt=三宮|1=Ichinomiya}}で、旧{{ill|lt=社格|Q10444029|qid=Q10444029|1=Shakaku}}は{{ill|lt=近代社格制度#官社|Q712534|qid=Q712534|lt=国幣小社|1=Modern system of ranked Shinto shrines}}。
+'''伊奈波神社'''（いなばじんじゃ）は、{{ill|lt=岐阜県|Q131277|qid=Q131277|1=Gifu Prefecture}}{{ill|lt=岐阜市|Q45798|qid=Q45798|1=Gifu}}伊奈波通りにある{{ill|lt=神社|Q845945|qid=Q845945|1=Shinto shrine}}。{{ill|UNKNOWN|lt=式内社|1=Shikinaisha|qid=Q134917286|lt=Shikinaisha}}{{ill|lt=論社|Q135022904|qid=Q135022904|1=Shikinai Ronsha}}、{{ill|lt=美濃国|Q864156|qid=Q864156|1=Mino Province}}{{ill|lt=一宮|Q1656379|qid=Q1656379|lt=三宮|1=Ichinomiya}}で、旧{{ill|lt=社格|Q10444029|qid=Q10444029|1=Shakaku}}は{{ill|lt=近代社格制度#官社|Q712534|comment=this used to link to modern system but that one is too overlinked|lt=国幣小社|1=Modern system of ranked Shinto shrines}}。
 
 {{ill|lt=2015年|Q2002|qid=Q2002|1=2015}}（{{ill|lt=平成|Q234510|qid=Q234510|1=Heisei era}}27年）{{ill|lt=4月24日|Q2529|qid=Q2529|1=April 24}}、「信長公のおもてなし」が息づく戦国城下町・岐阜 」の構成文化財として{{ill|lt=日本遺産|Q18382798|qid=Q18382798|1=Japan Heritage}}に認定される<ref>{{Cite web|和書|url=https://japan-heritage.bunka.go.jp/ja/stories/story006/ |title=「信長公のおもてなし」が息づく戦国城下町・岐阜 |publisher=文化庁 |accessdate=2020-09-20 }}</ref>。
 
