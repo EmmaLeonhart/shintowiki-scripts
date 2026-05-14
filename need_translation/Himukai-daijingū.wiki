@@ -20,7 +20,7 @@
  | location = {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}, {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City|1=Kyoto}}, {{ill|Yamashina-ku, Kyoto|en|Yamashina-ku, Kyoto|qid=Q1076993|lt=Yamashina Ward|1=Yamashina-ku, Kyoto}} Hinooka Issaikyo-dani-cho 29
  | coordinates = {{Coord|35|00|24|N|135|47|43|E|region:JP-26_type:landmark}}
  | Deities = 
-   Inner Shrine: {{ill|Amaterasu Ōmikami|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, {{ill|Munakata Three Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|1=Three Munakata Goddesses|qq=Three Munakata Goddesses|12=simple|13=User:Immanuelle/Munakata Three Goddesses|13=User:Immanuelle/Three Munakata Goddesses|qq=}} ({{ill|Tagorihime|lt=Tagorihime|lt=Tagirihime|ja|多紀理毘賣命|12=simple|13=User:Immanuelle/Tagirihime|ja_comment=jawiki link invalid}}, {{ill|Ichikishima-hime|ja|市寸島比賣命|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}}, {{ill|Tagitsuhime|ja|多岐都比賣命|12=simple|13=User:Immanuelle/Tagitsuhime|ja_comment=jawiki link invalid}})
+   Inner Shrine: {{ill|Amaterasu Ōmikami|ja|天照大御神|1=Amaterasu|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, {{ill|Munakata Three Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|1=Three Munakata Goddesses|qq=Three Munakata Goddesses|12=simple|13=User:Immanuelle/Munakata Three Goddesses|13=User:Immanuelle/Three Munakata Goddesses}} ({{ill|Tagorihime|lt=Tagorihime|lt=Tagirihime|ja|多紀理毘賣命|12=simple|13=User:Immanuelle/Tagirihime|ja_comment=jawiki link invalid}}, {{ill|Ichikishima-hime|ja|市寸島比賣命|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}}, {{ill|Tagitsuhime|ja|多岐都比賣命|12=simple|13=User:Immanuelle/Tagitsuhime|ja_comment=jawiki link invalid}})
    Outer Shrine: {{ill|Ninigi-no-Mikoto|lt=Ninigi-no-Mikoto|lt=Ninigi|ja|天津彦火瓊々杵尊|12=simple|13=User:Immanuelle/Ninigi|ja_comment=jawiki link invalid}}, {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi|1=Ame-no-Minakanushi}}
  | Founded = Reign of {{ill|Emperor Kenzō|en|Emperor Kenzō|qid=Q360966|lt=Emperor Kensō|1=Emperor Kenzō}}
  | Shrine Rank = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)<br/>Former {{ill|Village shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/Village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
@@ -63,7 +63,7 @@ During the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}}, the
 
 There is debate over whether this shrine corresponds to "Himukai Shrine" recorded as a small shrine in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} shrine registry. Some sources, such as the *Uji District Guide* and the *Kyoto Prefecture Yamashina Town History*, identify it as such, while others like the *Yamashiro Famous Sites Guide*, *Yamashiro Records*, and {{ill|Ban Nobutomo|ja|伴信友|12=simple|13=User:Immanuelle/Bando Nobutomo|comment=changed title based on wikidata|qid=Q4346747}}'s *Shinmyōchō Kōshō* distinguish it as a separate shrine.
 
-During the reign of {{ill|Emperor Seiwa|ja|Emperor Seiwa|12=simple|13=User:Immanuelle/Emperor Seiwa|ja_comment=jawiki link invalid|qid=Q135505731}}, the shrine received an imperial plaque inscribed "Himukai-no-miya." Under {{ill|Emperor Daigo|en|Emperor Daigo|qid=Q329753|lt=Emperor Daigo}}, it was classified as a {{ill|Modern system of Ranked Shinto shrines|lt=Kanpei-sha|ja|官幣社|12=simple|13=User:Immanuelle/Kanpei-sha|qq=}}.<ref name="御由緒" />
+During the reign of {{ill|Emperor Seiwa|ja|Emperor Seiwa|12=simple|13=User:Immanuelle/Emperor Seiwa|ja_comment=jawiki link invalid|qid=Q135505731}}, the shrine received an imperial plaque inscribed "Himukai-no-miya." Under {{ill|Emperor Daigo|en|Emperor Daigo|qid=Q329753|lt=Emperor Daigo}}, it was classified as a {{ill|Modern system of Ranked Shinto shrines|lt=Kanpei-sha|ja|官幣社|12=simple|13=User:Immanuelle/Kanpei-sha}}.<ref name="御由緒" />
 
 The shrine buildings were burned down during the {{ill|Ōnin War|en|Ōnin War|qid=Q385676|lt=Ōnin War}}, interrupting worship. However, in the early {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, a devoted benefactor, Matsui Tozaemon of Matsuzaka Village, reconstructed the shrine on its original site. The shrine received imperial plaques for the "Inner Shrine" and "Outer Shrine" from {{ill|Emperor Go-Yōzei|en|Emperor Go-Yōzei|qid=Q349440|lt=Emperor Go-Yōzei}}.<ref name="御由緒" />
 
@@ -134,15 +134,15 @@ The shrine complex consists of an Inner Shrine (Naikū) and an Outer Shrine (Gek
 
 == Related Articles ==
 
-*{{ill|List of Jingū|en||12=|13=|qq=}}
-* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}
+*{{ill|List of Jingū|en||12=|13=}}
+* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū}}
 
-* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū|qq=}}
+* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū}}
 
-* {{ill|Daijingu (Sakuragawa)|en|12=simple|13=User:Immanuelle/Daijingu (Sakuragawa)|qq=}}
+* {{ill|Daijingu (Sakuragawa)|en|12=simple|13=User:Immanuelle/Daijingu (Sakuragawa)}}
 
-* {{ill|Daijingu (Tateyama)|en|12=simple|13=User:Immanuelle/Daijingu (Tateyama)|qq=}}
-** A place name in {{ill|Tateyama, Chiba Prefecture|en|12=simple|13=User:Immanuelle/Tateyama, Chiba Prefecture|qq=}}, derived from the local {{ill|Awa Shrine|en|12=simple|13=User:Immanuelle/Awa Shrine|qq=}}
+* {{ill|Daijingu (Tateyama)|en|12=simple|13=User:Immanuelle/Daijingu (Tateyama)}}
+** A place name in {{ill|Tateyama, Chiba Prefecture|en|12=simple|13=User:Immanuelle/Tateyama, Chiba Prefecture}}, derived from the local {{ill|Awa Shrine|en|12=simple|13=User:Immanuelle/Awa Shrine}}
 
 == References ==
 

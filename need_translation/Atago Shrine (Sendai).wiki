@@ -1,6 +1,6 @@
 {{Expand Japanese|愛宕神社 (仙台市)|date=November 2025}}
 
-{{Expand language|topic=|langcode=ja|otherarticle=愛宕神社 (仙台市)|date=December 2021|qq=}}
+{{Expand language|topic=|langcode=ja|otherarticle=愛宕神社 (仙台市)|date=December 2021}}
 {{Infobox religious building
 | name                  = Atago Shrine
 | native_name           = 愛宕神社
@@ -18,15 +18,15 @@
 | coordinates= {{Coord|38.24583333333333|N|140.8756111111111}}
 }}
 '''Atago Shrine''' (愛宕神社, ''Atago jinja'') is a [[Shinto]] shrine located in {{ill|Sendai|en|Sendai|qid=Q46747|lt=Sendai}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}, Japan. It enshrines the [[kami]] [[Kagu-tsuchi]] (軻遇土神), and its annual festival takes place on July 24.
-{{Commons Category|Atago-jinja (Sendai)|qq=}}
+{{Commons Category|Atago-jinja (Sendai)}}
 ==See also==
 *[[List of Shinto shrines in Japan]]
 ==External links==
 *[https://atago.org Official website]
-{{Shinto shrine|qq=}}
-{{coord|display=title|qq=}}
-{{Shinto-stub|qq=}}
-{{Atago Faith|qq=}}
+{{Shinto shrine}}
+{{coord|display=title}}
+{{Shinto-stub}}
+{{Atago Faith}}
 
 {{Commons category|Atago-jinja (Sendai)}}
 {{wikidata link|Q11493856|en|Atago Shrine (Sendai)|ja|愛宕神社 (仙台市)|tt|Атаго храмы|check_date=2026-05-14}}
