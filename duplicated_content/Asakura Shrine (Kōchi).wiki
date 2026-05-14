@@ -1,39 +1,37 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Asakura_Shrine_%28K%C5%8Dchi%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name       = Asakura Shrine
 | religious_affiliation = [[Shinto]]
 |image      = [[File:Asakura-jinja (Kochi) haiden.JPG|280px]]<br />Haiden
-|location   = Asakura Hei 2100, {{ill|Kōchi, Kōchi|en|Kōchi, Kōchi|qid=Q200251|lt=Kōchi|1=Kōchi, Kōchi}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture|1=Kōchi Prefecture}}
+|location   = Asakura Hei 2100, {{ill|Kōchi, Kōchi|en|Kōchi, Kōchi|qid=Q200251|lt=Kōchi}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture}}
 |ISO        = JP-39
 |latitude   = 33|latitude_min = 33|latitude_sec = 12.35
 |longitude  = 133|longitude_min = 28|longitude_sec = 54.16
-|enshrined_deities = Amatsuhahagami<br />{{ill|Empress Kōgyoku|en|Empress Kōgyoku|qid=Q235296|lt=Empress Saimei|1=Empress Kōgyoku}}
-|sacred_object = Mount Akaoni ({{ill|Sacred mountains|en|Sacred mountains|qid=Q1595289|lt=Sacred mountain|1=Sacred mountains}})
-|Rank       = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor)<br />Formerly {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Second shrine|1=Ninomiya}} of {{ill|Tosa Province|en|Tosa Province|qid=Q857330|lt=Tosa Province|1=Tosa Province}}<br />Previously a Prefectural Shrine
+|enshrined_deities = Amatsuhahagami<br />{{ill|Empress Kōgyoku|en|Empress Kōgyoku|qid=Q235296|lt=Empress Saimei}}
+|sacred_object = Mount Akaoni ({{ill|Sacred mountains|en|Sacred mountains|qid=Q1595289|lt=Sacred mountain}})
+|Rank       = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor)<br />Formerly {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Second shrine}} of {{ill|Tosa Province|en|Tosa Province|qid=Q857330|lt=Tosa Province}}<br />Previously a Prefectural Shrine
 |established = Unknown
 |main_hall  = Three-bay gable-style construction
 |alternate_name = Konomarusama
-|festival   = {{ill|November 10|en|November 10|qid=Q2988|lt=November 10|1=November 10}}
+|festival   = {{ill|November 10|en|November 10|qid=Q2988|lt=November 10}}
 }}
 [[File:Asakura-jinja (Kochi) entrance.JPG|thumb|200px|right|{{Center|Shrine Entrance|qq=}}]]
-'''Asakura Shrine''' (朝倉神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Kōchi, Kōchi|en|Kōchi, Kōchi|qid=Q200251|lt=Kōchi|1=Kōchi, Kōchi}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture|1=Kōchi Prefecture}}. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and was once referred to as the second shrine of {{ill|Tosa Province|en|Tosa Province|qid=Q857330|lt=Tosa Province|1=Tosa Province}}. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|qid=Q712534|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}, it was designated as a Prefectural Shrine. Locally, it is also known by the nickname "Konomarusama." {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}}
+'''Asakura Shrine''' (朝倉神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Kōchi, Kōchi|en|Kōchi, Kōchi|qid=Q200251|lt=Kōchi}}, {{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kōchi Prefecture}}. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and was once referred to as the second shrine of {{ill|Tosa Province|en|Tosa Province|qid=Q857330|lt=Tosa Province}}. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}}, it was designated as a Prefectural Shrine. Locally, it is also known by the nickname "Konomarusama." {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}}
 == Enshrined Deities ==
 The shrine enshrines the following two deities: <ref name="HistoryBoard">Shrine history board.</ref>
 * '''Amatsuhahagami''' (天津羽羽神, Amatsuhahagami)
-* '''Ametoyatakaraikashihitarashihime no Sumeramikoto''' (天豊財重日足姫天皇) - The {{ill|Wafū shigō|ja|和風諡号|12=simple|13=User:Immanuelle/Wafū shigō|ja_comment=jawiki redirects to 諡|1=Posthumous name|comment=changed title based on wikidata|qid=Q696100}} of the 37th emperor, {{ill|Empress Kōgyoku|en|Empress Kōgyoku|qid=Q235296|lt=Empress Saimei|1=Empress Kōgyoku}}.
-In the {{ill|Middle Ages|en|Middle Ages|qid=Q12554|lt=Middle Ages|1=Middle Ages}}, the shrine's associated {{ill|Honji suijaku|en|Honji suijaku|qid=Q3080781|lt=Honji suijaku|1=Honji suijaku}} Buddha was said to be {{ill|Amitābha|ja|阿弥陀仏|12=simple|13=User:Immanuelle/Amitabha|ja_comment=jawiki redirects to 阿弥陀如来}}. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
+* '''Ametoyatakaraikashihitarashihime no Sumeramikoto''' (天豊財重日足姫天皇) - The {{ill|Posthumous name|ja|和風諡号|12=simple|13=User:Immanuelle/Wafū shigō|ja_comment=jawiki redirects to 諡|comment=changed title based on wikidata|qid=Q696100}} of the 37th emperor, {{ill|Empress Kōgyoku|en|Empress Kōgyoku|qid=Q235296|lt=Empress Saimei}}.
+In the {{ill|Middle Ages|en|Middle Ages|qid=Q12554|lt=Middle Ages}}, the shrine's associated {{ill|Honji suijaku|en|Honji suijaku|qid=Q3080781|lt=Honji suijaku}} Buddha was said to be {{ill|Amitābha|ja|阿弥陀仏|12=simple|13=User:Immanuelle/Amitabha|ja_comment=jawiki redirects to 阿弥陀如来}}. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
 === Regarding the Deities ===
 The deity Amatsuhahagami is mentioned in the lost texts of the {{ill|Tosa-no-Kuni Fudoki|ja|土佐国風土記|12=simple|13=User:Immanuelle/Tosa-no-Kuni Fudoki|ja_comment=jawiki link invalid}} as follows:
-{{Quotation|In the district of Tosa lies Asakura no Sato. Within the sato, there is a shrine. The name of the deity is '''Amatsuhahagami'''. This god is the child of Ama no Iwaho-wake no Kami, now called Ama no Iwato-wake no Kami.|Quoted from {{ill|Shaku Nihongi|en|Shaku Nihongi|qid=Q2710483|lt=Shaku Nihongi|1=Shaku Nihongi}} Volume 14<ref group="Original" name="AsakuraShrine">Shaku Nihongi, Volume 14 (Jutsugi 10), entry on Asakura Shrine.</ref><ref>Adapted from the modern transcription in "Fudoki," Shogakukan, 2003 (Japan Knowledge edition), p. 515.</ref>|qq=}}
+{{Quotation|In the district of Tosa lies Asakura no Sato. Within the sato, there is a shrine. The name of the deity is '''Amatsuhahagami'''. This god is the child of Ama no Iwaho-wake no Kami, now called Ama no Iwato-wake no Kami.|Quoted from {{ill|Shaku Nihongi|en|Shaku Nihongi|qid=Q2710483|lt=Shaku Nihongi}} Volume 14<ref group="Original" name="AsakuraShrine">Shaku Nihongi, Volume 14 (Jutsugi 10), entry on Asakura Shrine.</ref><ref>Adapted from the modern transcription in "Fudoki," Shogakukan, 2003 (Japan Knowledge edition), p. 515.</ref>|qq=}}
 This shrine is believed to be Asakura Shrine. {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}} Amatsuhahagami is described as the deity of the Asakura region, thought to be the sole deity enshrined initially. Empress Saimei was later enshrined due to the association of her temporary palace with this area. {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}}
-The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} names another shrine in Tosa Province—"Ama no Iwato-wake Anokutama-no-Tenjinsha"—possibly related to Asakura Shrine, as its deity is the father of Amatsuhahagami. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
+The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} names another shrine in Tosa Province—"Ama no Iwato-wake Anokutama-no-Tenjinsha"—possibly related to Asakura Shrine, as its deity is the father of Amatsuhahagami. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
 == History ==
 === Establishment ===
-The shrine's origin is unknown. Local tradition connects it with Empress Saimei's western expedition, described in the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}}. In 661 CE, Empress Saimei traveled to aid [[:en:Baekje|Baekje]], moving from {{ill|Naniwa Palace|ja|難波宮|12=simple|13=User:Immanuelle/Naniwa Palace|1=Naniwa Palace|comment=changed title based on wikidata|qid=Q3608523}} to Iyo and finally to a temporary palace at "Asakura Tachibana no Hiroba Palace." Local legend states that wood from Mount Akaoni was used to construct this palace. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
-Modern scholarship typically associates the palace with locations in {{ill|Asakura, Fukuoka|en|Asakura, Fukuoka|qid=Q720625|lt=Asakura City|1=Asakura, Fukuoka}}, Fukuoka Prefecture. However, the mention of "Asakura Shrine" in ancient texts suggests a strong connection to the Tosa region. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
+The shrine's origin is unknown. Local tradition connects it with Empress Saimei's western expedition, described in the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}. In 661 CE, Empress Saimei traveled to aid [[:en:Baekje|Baekje]], moving from {{ill|Naniwa Palace|ja|難波宮|12=simple|13=User:Immanuelle/Naniwa Palace|comment=changed title based on wikidata|qid=Q3608523}} to Iyo and finally to a temporary palace at "Asakura Tachibana no Hiroba Palace." Local legend states that wood from Mount Akaoni was used to construct this palace. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
+Modern scholarship typically associates the palace with locations in {{ill|Asakura, Fukuoka|en|Asakura, Fukuoka|qid=Q720625|lt=Asakura City}}, Fukuoka Prefecture. However, the mention of "Asakura Shrine" in ancient texts suggests a strong connection to the Tosa region. {{Sfn|Asakura Shrine (Shikinaisha)|1987|qq=}}
 === Edo Period and Beyond ===
-During the Edo period, the shrine was supported by the {{ill|Yamauchi clan|ja|土佐山内氏|12=simple|13=User:Immanuelle/Yamauchi clan|1=Tosa-Yamauchi family|comment=changed title based on wikidata|qid=Q786351}}, rulers of Tosa Domain. The main hall was rebuilt in 1657, followed by the construction of the Heiden and Haiden in 1796. The shrine was classified as a Prefectural Shrine during the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji period|1=Meiji era}} in 1872. {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}}
+During the Edo period, the shrine was supported by the {{ill|Tosa-Yamauchi family|ja|土佐山内氏|12=simple|13=User:Immanuelle/Yamauchi clan|comment=changed title based on wikidata|qid=Q786351}}, rulers of Tosa Domain. The main hall was rebuilt in 1657, followed by the construction of the Heiden and Haiden in 1796. The shrine was classified as a Prefectural Shrine during the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji period}} in 1872. {{Sfn|Asakura Shrine (Kadokawa)|1986|qq=}}
 == Cultural Properties ==
 === National Important Cultural Property ===
 * Main Hall (附: 7 plaques) - Designated February 18, 1949. <ref name="MainHall">{{CulturalHeritage|102|3434|Asakura Shrine Main Hall|qq=}}</ref>
@@ -43,14 +41,13 @@ During the Edo period, the shrine was supported by the {{ill|Yamauchi clan|ja|�
 * Ceramic Komainu (lion-dogs) from Otogama
 * Hanging Buddhist images - Two copper gilt votive plaques from the Nanboku-chō and Muromachi periods.
 == Access ==
-* {{ill|Shikoku Railway Company|en|Shikoku Railway Company|qid=Q496531|lt=JR Shikoku|1=Shikoku Railway Company}} Dosan Line, Asakura Station - 400 meters west.
+* {{ill|Shikoku Railway Company|en|Shikoku Railway Company|qid=Q496531|lt=JR Shikoku}} Dosan Line, Asakura Station - 400 meters west.
 * Tosaden Traffic Ino Line, Asakura Jinja-mae Stop - 300 meters northeast.
 {{translated page|ja|朝倉神社 (高知市)|version=103226140|comment=Imported full ja history}}
 
 {{Commons category|Asakura-jinja (Kochi)}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Asakura Shrine (Kōchi) (Q11517328)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Tosa Province]].
 
@@ -58,11 +55,9 @@ During the Edo period, the shrine was supported by the {{ill|Yamauchi clan|ja|�
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Tosa District, Kōchi|en|Tosa District, Kōchi|ja|土佐郡|es|Distrito de Tosa|fr|District de Tosa|id|Distrik Tosa, Kōchi|it|Distretto di Tosa|ko|도사군|pl|Powiat Tosa|uk|Повіт Тоса|zh|土佐郡|lt=Tosa district|qid=Q1132134|1=Tosa District, Kōchi}} || {{ill|Asakura Shrine (Kōchi)|lt=Asakura Shrine|ja|朝倉神社 (高知市)|commons|Category:Asakura-jinja (Kochi)|qid=Q11517328|1=Asakura Shrine (Kōchi)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya|1=Ni-no-Miya}} || — || {{coord|33.553345|133.481748|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183285 DB]
+| {{ill|Tosa District, Kōchi|en|Tosa District, Kōchi|ja|土佐郡|es|Distrito de Tosa|fr|District de Tosa|id|Distrik Tosa, Kōchi|it|Distretto di Tosa|ko|도사군|pl|Powiat Tosa|uk|Повіт Тоса|zh|土佐郡|lt=Tosa district|qid=Q1132134}} || {{ill|Asakura Shrine (Kōchi)|lt=Asakura Shrine|ja|朝倉神社 (高知市)|commons|Category:Asakura-jinja (Kochi)|qid=Q11517328}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}} || — || {{coord|33.553345|133.481748|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183285 DB]
 |}
-{{wikidata link|Q11517328|ja|朝倉神社 (高知市)|ja|朝倉神社}}
-[[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
+{{wikidata link|Q11517328|ja|朝倉神社 (高知市)|ja|朝倉神社|check_date=2026-05-13}}
 [[Category:Shikinaisha in Tosa Province]]==Notes==
 <references group="lower-alpha"/>
 [[Category:Shikinai Shōsha]]
@@ -79,3 +74,6 @@ During the Edo period, the shrine was supported by the {{ill|Yamauchi clan|ja|�
 [[Category:Pages with interwikis with duplicate languages]]
 [[Category:Edo period architecture]]
 [[Category:Prefectural Historic Sites in Kochi Prefecture]]
+[[Category:Pages with duplicated content]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

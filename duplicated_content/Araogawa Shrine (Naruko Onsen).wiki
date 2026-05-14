@@ -1,40 +1,37 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Araogawa_Shrine_%28Naruko_Onsen%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
-
-
 {{Unreferenced|date=August 2020|qq=}}
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name=Araogawa Shrine (Naruko Onsen)
 | religious_affiliation = [[Shinto]]
 |image=File:Haiden of Araogawa-jinja shrine Okumiya.JPG
-|location={{ill|Ōsaki, Miyagi|en|Ōsaki, Miyagi|qid=Q385892|lt=Osaki City|1=Ōsaki, Miyagi}}, Naruko Onsen Onikobe, Hisase 3, Miyagi Prefecture
+|location={{ill|Ōsaki, Miyagi|en|Ōsaki, Miyagi|qid=Q385892|lt=Osaki City}}, Naruko Onsen Onikobe, Hisase 3, Miyagi Prefecture
 |coordinates={{Coord|38.793|N|140.65883333333332}}
-|deity={{ill|Omonoimi no Kami|qid=Q3270544|1=Ōmonoimi no Kami}}
+|deity={{ill|Ōmonoimi no Kami|qid=Q3270544}}
 |type=Former Village Shrine, {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}
 |consecration_year=Unknown
 |Main Hall=Shinmei-zukuri
 |Other names=Okumiya (Takemiya), Sanjūrokusho Myōjin
 |Festivals=September 9, September 10
 |Map={{location map|Japan Miyagi|lat_deg=38|lat_min=47|lat_sec=34.8|lon_deg=140|lon_min=39|lon_sec=31.8|label=Araogawa Shrine|position=center|width=200|float=center|qq=}}
-|prefecture={{ill|Osaki|qid=Q385892|1=Ōsaki, Miyagi}}
+|prefecture={{ill|Ōsaki, Miyagi|qid=Q385892}}
 }}
-'''Araogawa Shrine''' (荒雄川神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in the {{ill|Naruko Onsen|ja|鳴子温泉郷|12=simple|13=User:Immanuelle/Naruko Onsen|1=Naruko Onsen|comment=changed title based on wikidata|qid=Q11675322}} area of {{ill|Ōsaki, Miyagi|en|Ōsaki, Miyagi|qid=Q385892|lt=Osaki City|1=Ōsaki, Miyagi}}, Miyagi Prefecture, within the {{ill|Onikobe Onsen|ja|鬼首温泉|12=simple|13=User:Immanuelle/Onikobe Onsen|1=Onikōbe Onsen|comment=changed title based on wikidata|qid=Q11673570}} region.
-It is one of the {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyō-chō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyō-chō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} for {{ill|Tamatsukuri District, Miyagi|en|Tamatsukuri District, Miyagi|qid=Q7680960|lt=Tamatsukuri District|1=Tamatsukuri District, Miyagi}}. The name "Araogawa" is an alternative designation for {{ill|Eai River|ja|江合川|12=simple|13=User:Immanuelle/Eai River|1=Eai River|comment=changed title based on wikidata|qid=Q11550788}}.
+'''Araogawa Shrine''' (荒雄川神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in the {{ill|Naruko Onsen|ja|鳴子温泉郷|12=simple|13=User:Immanuelle/Naruko Onsen|comment=changed title based on wikidata|qid=Q11675322}} area of {{ill|Ōsaki, Miyagi|en|Ōsaki, Miyagi|qid=Q385892|lt=Osaki City}}, Miyagi Prefecture, within the {{ill|Onikōbe Onsen|ja|鬼首温泉|12=simple|13=User:Immanuelle/Onikobe Onsen|comment=changed title based on wikidata|qid=Q11673570}} region.
+It is one of the {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyō-chō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyō-chō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} for {{ill|Tamatsukuri District, Miyagi|en|Tamatsukuri District, Miyagi|qid=Q7680960|lt=Tamatsukuri District}}. The name "Araogawa" is an alternative designation for {{ill|Eai River|ja|江合川|12=simple|13=User:Immanuelle/Eai River|comment=changed title based on wikidata|qid=Q11550788}}.
 == Enshrined Deities ==
-* Primary deity: {{ill|Ōmononushi-no-Kami|ja|大物忌神|12=simple|13=User:Immanuelle/Ōmononushi-no-Kami|comment=changed title based on wikidata|1=Ōmonoimi no Kami|qid=Q3270544}}
-* Additionally enshrined deities include local gods of Onikobe Onsen: {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}, {{ill|Homuda Wake-no-Mikoto|ja|誉田別命|12=simple|13=User:Immanuelle/Homuda Wake-no-Mikoto|ja_comment=jawiki redirects to 応神天皇|1=Emperor Ōjin|comment=changed title based on wikidata|qid=Q317997}}, {{ill|Kagutsuchi-no-Mikoto|ja|軻遇突智命|12=simple|13=User:Immanuelle/Kagutsuchi-no-Mikoto|ja_comment=jawiki redirects to カグツチ|1=Kagu-tsuchi|comment=changed title based on wikidata|qid=Q1640658}}, {{ill|Ōyama-tsumi-no-Kami|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyama-tsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|1=Ōyamatsumi|comment=changed title based on wikidata|qid=Q386563}}, and {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}.
+* Primary deity: {{ill|Ōmonoimi no Kami|ja|大物忌神|12=simple|13=User:Immanuelle/Ōmononushi-no-Kami|comment=changed title based on wikidata|qid=Q3270544}}
+* Additionally enshrined deities include local gods of Onikobe Onsen: {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, {{ill|Emperor Ōjin|ja|誉田別命|12=simple|13=User:Immanuelle/Homuda Wake-no-Mikoto|ja_comment=jawiki redirects to 応神天皇|comment=changed title based on wikidata|qid=Q317997}}, {{ill|Kagu-tsuchi|ja|軻遇突智命|12=simple|13=User:Immanuelle/Kagutsuchi-no-Mikoto|ja_comment=jawiki redirects to カグツチ|comment=changed title based on wikidata|qid=Q1640658}}, {{ill|Ōyamatsumi|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyama-tsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|comment=changed title based on wikidata|qid=Q386563}}, and {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}.
 * Sub-shrines include:
-** Raijinsha (dedicated to {{ill|Raijin|en|Raijin|qid=Q12808082|lt=Raijin|1=Raijin}})
+** Raijinsha (dedicated to {{ill|Raijin|en|Raijin|qid=Q12808082|lt=Raijin}})
 ** Hachiman Shrine (dedicated to Homuda Wake-no-Mikoto)
 ** Shume Shrine (dedicated to the imperial horse "Kinkasan-gō")
 == History ==
 The shrine's origin is unknown. According to tradition, the mountain known as Araodake contains two large stones, male and female, from which the waters of the Araogawa spring emerge. These stones, referred to as the "Ōmononushi Stones," were venerated as the shrine's deities.
 The shrine was originally called "Araogawa Shrine," and its location was near the water source of the Eai River at Suijin Pass on Araodake. The shrine served as a place of water worship for the deity Ōmononushi-no-Kami. Additional shrines honoring Ōmononushi-no-Kami were established throughout the Araogawa basin, forming 36 associated shrines.
-In later years, the site became a training ground for the {{ill|Haguro Shugendō|ja|羽黒派修験|12=simple|13=User:Immanuelle/Haguro Shugendō|ja_comment=jawiki redirects to 羽黒権現|1=Haguro Gongen|comment=changed title based on wikidata|qid=Q24898144}} sect, but it fell into decline over time. In 1872 (Meiji 5), the shrine was relocated to its current location. It is referred to as the "Okumiya (Takemiya)" in contrast to the {{ill|Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|ja|荒雄川神社 (大崎市岩出山池月)|12=simple|13=User:Immanuelle/Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|qq=}}.
+In later years, the site became a training ground for the {{ill|Haguro Gongen|ja|羽黒派修験|12=simple|13=User:Immanuelle/Haguro Shugendō|ja_comment=jawiki redirects to 羽黒権現|comment=changed title based on wikidata|qid=Q24898144}} sect, but it fell into decline over time. In 1872 (Meiji 5), the shrine was relocated to its current location. It is referred to as the "Okumiya (Takemiya)" in contrast to the {{ill|Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|ja|荒雄川神社 (大崎市岩出山池月)|12=simple|13=User:Immanuelle/Araogawa Shrine (Osaki City Iwadeyama Ikezuki)|qq=}}.
 == Shume Shrine ==
-South of the Araogawa Shrine Haiden is the Shume Shrine, a sub-shrine dedicated to Kinkasan-gō, the imperial horse of {{ill|Emperor Meiji|en|Emperor Meiji|qid=Q174231|lt=Emperor Meiji|1=Emperor Meiji}}.
+South of the Araogawa Shrine Haiden is the Shume Shrine, a sub-shrine dedicated to Kinkasan-gō, the imperial horse of {{ill|Emperor Meiji|en|Emperor Meiji|qid=Q174231|lt=Emperor Meiji}}.
 Kinkasan-gō was born in Onikobe in 1869 (Meiji 2) and was originally named "Kichō." It was a chestnut stallion and became an imperial horse in 1876 (Meiji 9), renamed "Kinkasan-gō." Various anecdotes highlight its loyalty and courage, such as its calm demeanor during artillery fire and its dedication to Emperor Meiji during military exercises.
-Kinkasan-gō passed away in 1895 (Meiji 28) due to old age. Emperor Meiji ordered its preservation as a taxidermy exhibit in the {{ill|Meiji Memorial Picture Gallery|en|Meiji Memorial Picture Gallery|qid=Q5153794|lt=Meiji Memorial Picture Gallery|1=Meiji Memorial Picture Gallery}}.
-In 1891 (Meiji 24), a life-size wooden statue of Kinkasan-gō was commissioned by shrine official Takahashi Moroki. It was crafted by master sculptor {{ill|Goto Sadayuki|ja|後藤貞行|12=simple|13=User:Immanuelle/Goto Sadayuki|1=Sadayuki Gotō|comment=changed title based on wikidata|qid=Q11488614}} using zelkova wood. The statue was completed in 1901 (Meiji 34) and is enshrined as the deity of Shume Shrine.
+Kinkasan-gō passed away in 1895 (Meiji 28) due to old age. Emperor Meiji ordered its preservation as a taxidermy exhibit in the {{ill|Meiji Memorial Picture Gallery|en|Meiji Memorial Picture Gallery|qid=Q5153794|lt=Meiji Memorial Picture Gallery}}.
+In 1891 (Meiji 24), a life-size wooden statue of Kinkasan-gō was commissioned by shrine official Takahashi Moroki. It was crafted by master sculptor {{ill|Sadayuki Gotō|ja|後藤貞行|12=simple|13=User:Immanuelle/Goto Sadayuki|comment=changed title based on wikidata|qid=Q11488614}} using zelkova wood. The statue was completed in 1901 (Meiji 34) and is enshrined as the deity of Shume Shrine.
 The statue is unveiled annually during the shrine’s festival on September 9–10 but can also be viewed behind glass year-round, accompanied by a recorded explanation.
 <gallery widths="200px" heights="150px">
 File:Haiden of Shume-jinja shrine.JPG|Shume Shrine Haiden
@@ -75,7 +72,6 @@ File:Hachiman-jinja shrine at Araogawa-jinja shrine Okumiya.JPG|Hachiman Shrine
 {{translated page|ja|荒雄川神社 (大崎市鳴子温泉鬼首)|version=79220356|comment=Imported full ja history}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Araogawa Shrine (Naruko Onsen) (Q11618879)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
 
@@ -83,11 +79,9 @@ File:Hachiman-jinja shrine at Araogawa-jinja shrine Okumiya.JPG|Hachiman Shrine
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| RONSHA || {{ill|Araogawa Shrine (Naruko Onsen)|lt=Araogawa Shrine|ja|荒雄川神社 (大崎市鳴子温泉鬼首)|qid=Q11618879|1=Araogawa Shrine (Naruko Onsen)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Arawokahano Shrine|lt=Arawokahano Shrine|qid=Q135039992|1=Arawokahano Shrine}} || {{coord|38.793000|140.658833|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182060 DB]
+| RONSHA || {{ill|Araogawa Shrine (Naruko Onsen)|lt=Araogawa Shrine|ja|荒雄川神社 (大崎市鳴子温泉鬼首)|qid=Q11618879}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Arawokahano Shrine|lt=Arawokahano Shrine|qid=Q135039992}} || {{coord|38.793000|140.658833|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182060 DB]
 |}
-{{wikidata link|Q11618879|da|d:Q11618879|ja|荒雄川神社 (大崎市鳴子温泉鬼首)}}
-[[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
+{{wikidata link|Q11618879|da|d:Q11618879|ja|荒雄川神社 (大崎市鳴子温泉鬼首)|check_date=2026-05-13}}
 [[Category:Shikinaisha in Mutsu Province]]==Notes==
 <references group="lower-alpha"/>
 [[Category:Shikinai Shōsha]]
@@ -98,3 +92,6 @@ File:Hachiman-jinja shrine at Araogawa-jinja shrine Okumiya.JPG|Hachiman Shrine
 [[Category:Son-sha in Miyagi Prefecture]]
 [[Category:Shinto shrines in Miyagi Prefecture]]
 [[Category:Shikinaisha in Mutsu Province]]
+[[Category:Pages with duplicated content]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

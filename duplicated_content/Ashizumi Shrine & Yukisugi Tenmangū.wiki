@@ -1,40 +1,37 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ashizumi_Shrine_%26_Yukisugi_Tenmang%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
-
 {{Infobox religious building
 |name='''Ashizumi Jinja / Yukisugi Tenman-gū''' (阿志都弥神社・行過天満宮)
 |image=File:Ashidumi-Shrine-Yukisugi-Tenmangu.jpg
-| religious_affiliation = [[Shinto]]|location={{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}{{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga|1=Takashima, Shiga}} Imazu-chō Hirokawa 1707-1
+| religious_affiliation = [[Shinto]]|location={{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}}{{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga}} Imazu-chō Hirokawa 1707-1
 |位置={{ill|coordinates (geographic)|ja|ウィキ座標2段度分秒|12=simple|13=User:Immanuelle/coordinates (geographic)|ja_comment=jawiki link invalid}} 35°24′24.0″N 136°01′32.8″E
-|deity={{ill|Konohanasakuya-hime|ja|木花開耶姫命|1=Konohanasakuya-hime|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}<br/>{{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
-| religious_affiliation = [[Shinto]]|type={{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} · Former {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}
+|deity={{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}<br/>{{ill|Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
+| religious_affiliation = [[Shinto]]|type={{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} · Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}
 |創建=Unknown
 |本殿=[[Flowing style shrine|三間社流造]] 
 |別名=Sakurabana Daimyōjin / Yukisugi Tenmangū
 |札所等=
-|festival={{ill|April 25|en|April 25|qid=Q2531|lt=April 25|1=April 25}}<ref name=reisai />
+|festival={{ill|April 25|en|April 25|qid=Q2531|lt=April 25}}<ref name=reisai />
 |神事=
-|prefecture={{ill|Takashima|qid=Q845794|1=Takashima, Shiga}}
+|prefecture={{ill|Takashima, Shiga|qid=Q845794}}
 |coordinates={{Coord|35.406667|N|136.025778}}
-|architecture_style={{ill|nagare-zukuri|qid=Q210684|1=Nagare-zukuri}}
+|architecture_style={{ill|Nagare-zukuri|qid=Q210684}}
 }}
-'''Ashizumi Jinja / Yukisugi Tenman-gū''' (阿志都弥神社・行過天満宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in the Hirokawa area of {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga|1=Takashima, Shiga}} (Imazu-chō), in {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}. It is a candidate (ronsha) for the {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listing, and under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|qid=Q712534|lt=old shrine Ranks|1=Modern system of ranked Shinto shrines}}, it was classified as a former {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}.
+'''Ashizumi Jinja / Yukisugi Tenman-gū''' (阿志都弥神社・行過天満宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in the Hirokawa area of {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga}} (Imazu-chō), in {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}}. It is a candidate (ronsha) for the {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listing, and under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=old shrine Ranks}}, it was classified as a former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}.
 == Enshrined Deities ==
 * '''Ashizumi Jinja'''  
-: {{ill|Konohanasakuya-hime|ja|木花開耶姫命|1=Konohanasakuya-hime|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}
+: {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}
 * '''Yukisugi Tenmangū'''  
-: {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
+: {{ill|Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
 == Crest (Kamon) ==
 * Yamazakura (mountain cherry)  
 * Umebachi (stylized plum blossom)
 == History ==
-The exact year of founding is unknown. According to shrine tradition, before a dedicated sanctuary existed, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|1=Konohanasakuya-hime|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}} was enshrined on a local wild cherry tree, hence the name “Sakurabana Daimyōjin.” In the 4th year of {{ill|Chōtoku (era)|ja|長徳 (日本)|lt=Chōtoku|12=simple|13=User:Immanuelle/Chōtoku (era)|ja_comment=jawiki link invalid}} (998), {{ill|Sugawara no Sukemasa|ja|菅原輔正|12=simple|13=User:Immanuelle/Sugawara no Sukemasa|1=Sugawara no Sukemasa|comment=changed title based on wikidata|qid=Q17218735}} is said to have invited the spirit of {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}} to this site, creating the dual dedication to Yukisugi Tenmangū.  
-Ashizumi Jinja is considered a ronsha (candidate shrine) for one of the ancient {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}. It served as the sōsha (general shrine) of the Zenzumigō region and later became a former {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|qid=Q712534}}.  
+The exact year of founding is unknown. According to shrine tradition, before a dedicated sanctuary existed, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}} was enshrined on a local wild cherry tree, hence the name “Sakurabana Daimyōjin.” In the 4th year of {{ill|Chōtoku (era)|ja|長徳 (日本)|lt=Chōtoku|12=simple|13=User:Immanuelle/Chōtoku (era)|ja_comment=jawiki link invalid}} (998), {{ill|Sugawara no Sukemasa|ja|菅原輔正|12=simple|13=User:Immanuelle/Sugawara no Sukemasa|comment=changed title based on wikidata|qid=Q17218735}} is said to have invited the spirit of {{ill|Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}} to this site, creating the dual dedication to Yukisugi Tenmangū.  
+Ashizumi Jinja is considered a ronsha (candidate shrine) for one of the ancient {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}. It served as the sōsha (general shrine) of the Zenzumigō region and later became a former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}.  
 Imazu-chō Hirokawa is regarded as within the area of the “Zenzumi-gō” mentioned in “Wamyō Ruijushō.” The name “Zenzumi” may originally have been “Ashizumi” (written as 葦積), matching the pronunciation “Ashi-tsumi” of the shrine’s name—though from a more archaic linguistic perspective, “Ashizumi” may have roots in “Azumi” (安曇), suggesting a link with the Azumi clan.<ref>京都滋賀古代地名を歩く 著者: 吉田金彦 出版社: 京都新聞社 発売日: 1987</ref>
 == Festivals ==
 === Rituals ===
-* The '''annual festival''' (festival) is held on {{ill|April 25|en|April 25|qid=Q2531|lt=April 25|1=April 25}}<ref name=reisai>Only religious rites (saigi) are performed on this day.</ref>.
-* The '''Hirokawa Festival''' takes place on April 29 ({{ill|Shōwa Day|en|Shōwa Day|qid=Q1361434|lt=Shōwa Day|1=Shōwa Day}}), featuring a parade where a {{ill|Mikoshi|ja|御輿|12=simple|13=User:Immanuelle/Mikoshi|ja_comment=jawiki redirects to 神輿}} is carried through the local community.
+* The '''annual festival''' (festival) is held on {{ill|April 25|en|April 25|qid=Q2531|lt=April 25}}<ref name=reisai>Only religious rites (saigi) are performed on this day.</ref>.
+* The '''Hirokawa Festival''' takes place on April 29 ({{ill|Shōwa Day|en|Shōwa Day|qid=Q1361434|lt=Shōwa Day}}), featuring a parade where a {{ill|Mikoshi|ja|御輿|12=simple|13=User:Immanuelle/Mikoshi|ja_comment=jawiki redirects to 神輿}} is carried through the local community.
 === Shrine Priest Family ===
 The Taya family has historically held the hereditary priesthood for this shrine.
 == Subsidiary Shrines ==
@@ -49,7 +46,6 @@ The Taya family has historically held the hereditary priesthood for this shrine.
 {{translated page|ja|阿志都弥神社・行過天満宮|version=82167212|comment=Imported full ja history}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Ashizumi Shrine & Yukisugi Tenmangū (Q11657432)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
 
@@ -57,11 +53,9 @@ The Taya family has historically held the hereditary priesthood for this shrine.
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| RONSHA || {{ill|Ashizumi Shrine & Yukisugi Tenmangū|lt=Ashizumi Shrine & Yukisugi Tenmangū|ja|阿志都弥神社・行過天満宮|qid=Q11657432|1=Ashizumi Shrine & Yukisugi Tenmangū}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Ashitsumino Shrine|lt=Ashitsumino Shrine|qid=Q135039871|1=Ashitsumino Shrine}}; {{ill|Ashitsumino Shrine|lt=Ashitsumino Shrine|qid=Q135039871|1=Ashitsumino Shrine}} || {{coord|35.406569|136.026072|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181893 DB]
+| RONSHA || {{ill|Ashizumi Shrine & Yukisugi Tenmangū|lt=Ashizumi Shrine & Yukisugi Tenmangū|ja|阿志都弥神社・行過天満宮|qid=Q11657432}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Ashitsumino Shrine|lt=Ashitsumino Shrine|qid=Q135039871}}; {{ill|Ashitsumino Shrine|lt=Ashitsumino Shrine|qid=Q135039871}} || {{coord|35.406569|136.026072|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181893 DB]
 |}
-{{wikidata link|Q11657432|da|d:Q11657432|ja|阿志都弥神社・行過天満宮}}
-[[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
+{{wikidata link|Q11657432|da|d:Q11657432|ja|阿志都弥神社・行過天満宮|check_date=2026-05-13}}
 [[Category:Shikinaisha in Ōmi Province]]==Notes==
 <references group="lower-alpha"/>
 [[Category:Shikinai Shōsha]]
@@ -72,3 +66,6 @@ The Taya family has historically held the hereditary priesthood for this shrine.
 [[Category:近江国の式内社]]
 [[Category:Shinto shrines in Takashima, Shiga]]
 [[Category:Former Gō-sha in Shiga Prefecture]]
+[[Category:Pages with duplicated content]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

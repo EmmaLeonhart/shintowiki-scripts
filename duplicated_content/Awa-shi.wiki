@@ -1,93 +1,90 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Awa-shi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Citation needed|date=November 2019|qq=}}
-'''Awashi''' (阿波志) is a {{ill|Chorography|en|Chorography|qid=Q2088593|lt=topographical record|1=Chorography}} of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province (Tokushima)|1=Awa Province (Tokushima)}} (modern-day {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}), compiled during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}} by the {{ill|Tokushima Domain|en|Tokushima Domain|qid=Q3034557|lt=Tokushima Domain|1=Tokushima Domain}}.<ref name="Britannica-Awashi"/><ref name="Yamakawa-HistoryDictionary"/><ref name="TokushimaMuseum-20190207"/>
+'''Awashi''' (阿波志) is a {{ill|Chorography|en|Chorography|qid=Q2088593|lt=topographical record}} of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province (Tokushima)}} (modern-day {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}), compiled during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}} by the {{ill|Tokushima Domain|en|Tokushima Domain|qid=Q3034557|lt=Tokushima Domain}}.<ref name="Britannica-Awashi"/><ref name="Yamakawa-HistoryDictionary"/><ref name="TokushimaMuseum-20190207"/>
 == Compilation History ==
-The 11th lord of the Tokushima Domain, {{ill|Hachisuka Haruaki|en|Hachisuka Haruaki|qid=Q3125457|lt=Hachisuka Haruaki|1=Hachisuka Haruaki}}, appointed the Confucian scholar Sano Yamakage (also known as Sano Yukinori<ref name="Heibonsha-Awashi"/> or Fujihara Yukinori<ref name="Nihonjinmei-Daijiten-SanoYamakage"/>; 1751–1819<ref name="Nihonjinmei-Daijiten-SanoYamakage"/>) in {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei|1=Kansei}} 4 (1792) to oversee the compilation of "Awashi."<ref name="Heibonsha-Awashi"/><ref name="KawadeHistoryDictionary"/>
-In {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei|1=Kansei}} 5 (1793), Sano ordered geographical surveys of towns, villages, and ports within the domain.<ref name="Heibonsha-Awashi"/><ref name="Britannica-Awashi"/> Information was collected through local officials and village headmen, covering geography, history, population, agricultural yields, and shrines and temples.<ref name="Heibonsha-Awashi"/><ref name="Nipponica-Awashi"/> In {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei|1=Kansei}} 10 (1798), Sano conducted his own inspections, collecting additional data.<ref name="Heibonsha-Awashi"/>
-The compilation was completed in {{ill|Culture|en|Culture|qid=Q11042|lt=Bunka|1=Culture}} 12 (1815), 23 years after its initiation, as a 12-volume work titled "Awashi."<ref name="Heibonsha-Awashi"/><ref name="KawadeHistoryDictionary"/><ref name="Yamakawa-HistoryDictionary"/><ref name="Britannica-Awashi"/><ref name="Nipponica-Awashi"/> Despite its Completion tier 3]]
+The 11th lord of the Tokushima Domain, {{ill|Hachisuka Haruaki|en|Hachisuka Haruaki|qid=Q3125457|lt=Hachisuka Haruaki}}, appointed the Confucian scholar Sano Yamakage (also known as Sano Yukinori<ref name="Heibonsha-Awashi"/> or Fujihara Yukinori<ref name="Nihonjinmei-Daijiten-SanoYamakage"/>; 1751–1819<ref name="Nihonjinmei-Daijiten-SanoYamakage"/>) in {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei}} 4 (1792) to oversee the compilation of "Awashi."<ref name="Heibonsha-Awashi"/><ref name="KawadeHistoryDictionary"/>
+In {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei}} 5 (1793), Sano ordered geographical surveys of towns, villages, and ports within the domain.<ref name="Heibonsha-Awashi"/><ref name="Britannica-Awashi"/> Information was collected through local officials and village headmen, covering geography, history, population, agricultural yields, and shrines and temples.<ref name="Heibonsha-Awashi"/><ref name="Nipponica-Awashi"/> In {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei}} 10 (1798), Sano conducted his own inspections, collecting additional data.<ref name="Heibonsha-Awashi"/>
+The compilation was completed in {{ill|Culture|en|Culture|qid=Q11042|lt=Bunka}} 12 (1815), 23 years after its initiation, as a 12-volume work titled "Awashi."<ref name="Heibonsha-Awashi"/><ref name="KawadeHistoryDictionary"/><ref name="Yamakawa-HistoryDictionary"/><ref name="Britannica-Awashi"/><ref name="Nipponica-Awashi"/> Despite its Completion tier 3]]
 , its content is concise without referencing primary historical documents.<ref name="PrefecturalMuseum"/>
 The 12 volumes are structured as follows:<ref name="Heibonsha-Awashi"/>
-* Volume 1 - Overview of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province (Tokushima)|1=Awa Province (Tokushima)}}
-* Volume 2 - {{ill|Tokushima Castle|en|Tokushima Castle|qid=Q8011246|lt=Tokushima Castle|1=Tokushima Castle}} and its surroundings
-* Volume 3 - {{ill|Itano District, Tokushima|en|Itano District, Tokushima|qid=Q1156025|lt=Itano District|1=Itano District, Tokushima}}
-* Volume 4 - {{ill|Awa District, Tokushima|en|Awa District, Tokushima|qid=Q4829634|lt=Awa District, Tokushima|1=Awa District, Tokushima}}
-* Volume 5 - {{ill|Mima District, Tokushima|en|Mima District, Tokushima|qid=Q1156496|lt=Mima District, Tokushima|1=Mima District, Tokushima}}
-* Volume 6 - {{ill|Miyoshi District, Tokushima|en|Miyoshi District, Tokushima|qid=Q1156031|lt=Miyoshi District, Tokushima|1=Miyoshi District, Tokushima}}
-* Volume 7 - {{ill|Oe District, Tokushima|en|Oe District, Tokushima|qid=Q3205811|lt=Oe District, Tokushima|1=Oe District, Tokushima}}
-* Volume 8 - {{ill|Myōdō District, Tokushima|en|Myōdō District, Tokushima|qid=Q1156486|lt=Myōdō District, Tokushima|1=Myōdō District, Tokushima}}
-* Volume 9 - {{ill|Myōzai District, Tokushima|en|Myōzai District, Tokushima|qid=Q1155732|lt=Nishi District, Tokushima|1=Myōzai District, Tokushima}}
-* Volume 10 - {{ill|Katsuura District, Tokushima|en|Katsuura District, Tokushima|qid=Q1119478|lt=Katsura District, Tokushima|1=Katsuura District, Tokushima}}
-* Volume 11 - {{ill|Naka District, Tokushima|en|Naka District, Tokushima|qid=Q1156492|lt=Naka District, Tokushima|1=Naka District, Tokushima}}
-* Volume 12 - {{ill|Kaifu District, Tokushima|ja|海部郡|12=simple|13=User:Immanuelle/Kaifu District, Tokushima|1=Kaifu District|comment=changed title based on wikidata|qid=Q11151382}}
+* Volume 1 - Overview of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province (Tokushima)}}
+* Volume 2 - {{ill|Tokushima Castle|en|Tokushima Castle|qid=Q8011246|lt=Tokushima Castle}} and its surroundings
+* Volume 3 - {{ill|Itano District, Tokushima|en|Itano District, Tokushima|qid=Q1156025|lt=Itano District}}
+* Volume 4 - {{ill|Awa District, Tokushima|en|Awa District, Tokushima|qid=Q4829634|lt=Awa District, Tokushima}}
+* Volume 5 - {{ill|Mima District, Tokushima|en|Mima District, Tokushima|qid=Q1156496|lt=Mima District, Tokushima}}
+* Volume 6 - {{ill|Miyoshi District, Tokushima|en|Miyoshi District, Tokushima|qid=Q1156031|lt=Miyoshi District, Tokushima}}
+* Volume 7 - {{ill|Oe District, Tokushima|en|Oe District, Tokushima|qid=Q3205811|lt=Oe District, Tokushima}}
+* Volume 8 - {{ill|Myōdō District, Tokushima|en|Myōdō District, Tokushima|qid=Q1156486|lt=Myōdō District, Tokushima}}
+* Volume 9 - {{ill|Myōzai District, Tokushima|en|Myōzai District, Tokushima|qid=Q1155732|lt=Nishi District, Tokushima}}
+* Volume 10 - {{ill|Katsuura District, Tokushima|en|Katsuura District, Tokushima|qid=Q1119478|lt=Katsura District, Tokushima}}
+* Volume 11 - {{ill|Naka District, Tokushima|en|Naka District, Tokushima|qid=Q1156492|lt=Naka District, Tokushima}}
+* Volume 12 - {{ill|Kaifu District|ja|海部郡|12=simple|13=User:Immanuelle/Kaifu District, Tokushima|comment=changed title based on wikidata|qid=Q11151382}}
 == Existing Copies ==
 ; Gotō Family Copy (Hachisuka Library)
-Held by the {{ill|Hachisuka family|ja|蜂須賀家|12=simple|13=User:Immanuelle/Hachisuka family|ja_comment=jawiki redirects to 蜂須賀氏|1=Hachisuka clan|comment=changed title based on wikidata|qid=Q2975261}}, this version is stamped with the "Hachisuka Library" seal.<ref name="Heibonsha-Awashi"/> Designated as a tangible cultural property of Tokushima Prefecture and preserved at the {{ill|Tokushima Castle Museum|ja|徳島城博物館|12=simple|13=User:Immanuelle/Tokushima Castle Museum|ja_comment=jawiki redirects to 徳島市立徳島城博物館|1=Tokushima Castle Museum|comment=changed title based on wikidata|qid=Q11489793}}.<ref name="PrefecturalMuseum"/>
+Held by the {{ill|Hachisuka clan|ja|蜂須賀家|12=simple|13=User:Immanuelle/Hachisuka family|ja_comment=jawiki redirects to 蜂須賀氏|comment=changed title based on wikidata|qid=Q2975261}}, this version is stamped with the "Hachisuka Library" seal.<ref name="Heibonsha-Awashi"/> Designated as a tangible cultural property of Tokushima Prefecture and preserved at the {{ill|Tokushima Castle Museum|ja|徳島城博物館|12=simple|13=User:Immanuelle/Tokushima Castle Museum|ja_comment=jawiki redirects to 徳島市立徳島城博物館|comment=changed title based on wikidata|qid=Q11489793}}.<ref name="PrefecturalMuseum"/>
 ; Kurego Library Copy (Awa Province Library)
-A transcription made in {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 31 (1898), followed by another transcription in {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 45 (1912). This version bears the "Awa Province Library" seal.<ref name="Heibonsha-Awashi"/> Preserved at the {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library|1=National Diet Library}}.<ref name="PrefecturalMuseum"/>{{refnest|group="note"|As of 2000, listed under the Tokushima Prefectural Library's collection.<ref name="Heibonsha-Awashi"/>|qq=}}
+A transcription made in {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 31 (1898), followed by another transcription in {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 45 (1912). This version bears the "Awa Province Library" seal.<ref name="Heibonsha-Awashi"/> Preserved at the {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library}}.<ref name="PrefecturalMuseum"/>{{refnest|group="note"|As of 2000, listed under the Tokushima Prefectural Library's collection.<ref name="Heibonsha-Awashi"/>|qq=}}
 ; Printed Version
-In {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa|1=Shōwa era}} 6 (1931), a printed version by Kasai Aisui was released, with a reprint in 1976.<ref name="NII-Awashi-1976"/> The printed edition contains errors and structural differences from the original.<ref name="PrefecturalMuseum"/>
+In {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa}} 6 (1931), a printed version by Kasai Aisui was released, with a reprint in 1976.<ref name="NII-Awashi-1976"/> The printed edition contains errors and structural differences from the original.<ref name="PrefecturalMuseum"/>
 == Evaluation ==
 The compilation of "Awashi" coincided with financial struggles within the Tokushima Domain. It is believed that the domain intended to utilize the record for agricultural and administrative reform.<ref name="Nipponica-Awashi"/>
 
 == See Also ==
-* {{ill|Tokushima Castle Museum|ja|徳島城博物館|12=simple|13=User:Immanuelle/Tokushima Castle Museum|ja_comment=jawiki redirects to 徳島市立徳島城博物館|1=Tokushima Castle Museum|comment=changed title based on wikidata|qid=Q11489793}} - Researching "Awashi" since 2013
-* {{ill|Awa Province Library|ja|阿波国文庫|12=simple|13=User:Immanuelle/Awa Province Library|ja_comment=jawiki redirects to 徳島県立図書館|1=Tokushima Prefectural Library|comment=changed title based on wikidata|qid=Q11489912}}
+* {{ill|Tokushima Castle Museum|ja|徳島城博物館|12=simple|13=User:Immanuelle/Tokushima Castle Museum|ja_comment=jawiki redirects to 徳島市立徳島城博物館|comment=changed title based on wikidata|qid=Q11489793}} - Researching "Awashi" since 2013
+* {{ill|Tokushima Prefectural Library|ja|阿波国文庫|12=simple|13=User:Immanuelle/Awa Province Library|ja_comment=jawiki redirects to 徳島県立図書館|comment=changed title based on wikidata|qid=Q11489912}}
 == References ==
 <references />
 == External Links ==
 * {{Kotobank|阿波志|qq=}}
 * [https://www.city.tokushima.tokushima.jp/johaku/meihin/page02-00/page02-05.html "Awashi"] - Tokushima City Official Website
 === Digital Editions ===
-* {{ill|Tokushima Prefectural Library|ja|徳島県立図書館|12=simple|13=User:Immanuelle/Tokushima Prefectural Library|1=Tokushima Prefectural Library|comment=changed title based on wikidata|qid=Q11489912}}
+* {{ill|Tokushima Prefectural Library|ja|徳島県立図書館|12=simple|13=User:Immanuelle/Tokushima Prefectural Library|comment=changed title based on wikidata|qid=Q11489912}}
 ''' Kurego Library Copy
 '''* [https://library.bunmori.tokushima.jp/digital/monjyo/kmonjyo.html Historical Manuscripts] - Tokushima Prefectural Library
-* {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library|1=National Diet Library}}
+* {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library}}
 ''' Awa Province Library Copy
 '''* [https://dl.ndl.go.jp/info:ndljp/pid/2609491 Awashi] - National Diet Library Digital Collections
 ''' Shin’iri Warehouse Copy
 '''* [https://dl.ndl.go.jp/info:ndljp/pid/2606389 Awashi, 12 volumes] - National Diet Library Digital Collections
-* {{ill|National Institute of Japanese Literature|en|National Institute of Japanese Literature|qid=Q4346458|lt=National Institute of Japanese Literature|1=National Institute of Japanese Literature}}
+* {{ill|National Institute of Japanese Literature|en|National Institute of Japanese Literature|qid=Q4346458|lt=National Institute of Japanese Literature}}
 ''' [https://www2.dhii.jp/nijl_opendata/searchlist.php?md=idl&bib=200017961 Awashi] - Simple Web Viewing
 === Text Versions ===
 * [https://museum.bunmori.tokushima.jp/hasegawa/shiryou/awashi.html Awashi (Text Data Version)] - Tokushima Prefectural Museum
 
 {{translated page|ja|阿波志|version=103201700|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
 ==Merged second translation==
-'''Awa-shi''' (阿波志) is a [[geographical gazetteer]] of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province|1=Awa Province (Tokushima)}} (modern-day {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}) compiled by the {{ill|Tokushima Domain|en|Tokushima Domain|qid=Q3034557|lt=Tokushima Domain|1=Tokushima Domain}} during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}.<ref name="Britannica-Awash"/><ref name="Yamakawa-dictionary"/><ref name="TokushimaCity-Museum-20190207"/>
+'''Awa-shi''' (阿波志) is a [[geographical gazetteer]] of {{ill|Awa Province (Tokushima)|en|Awa Province (Tokushima)|qid=Q907457|lt=Awa Province}} (modern-day {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}) compiled by the {{ill|Tokushima Domain|en|Tokushima Domain|qid=Q3034557|lt=Tokushima Domain}} during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}.<ref name="Britannica-Awash"/><ref name="Yamakawa-dictionary"/><ref name="TokushimaCity-Museum-20190207"/>
 == Compilation History ==
-In {{ill|1792|en|1792|qid=Q7805|lt=1792|1=1792}} (4th year of {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei|1=Kansei}}), the 11th lord of the Tokushima Domain, {{ill|Hachisuka Haruaki|en|Hachisuka Haruaki|qid=Q3125457|lt=Hachisuka Haruaki|1=Hachisuka Haruaki}}, assigned the domain’s Confucian scholar Sano San’in (Sano Yukinori<ref name="Heibon-Geography-Awash"/>, Sano Ken<ref name="Dictionary-SanoSanin"/>, Fujiwara Yukinori<ref name="Nipponica-Awash"/>, or Fujiwara Ken; 1751–1819<ref name="Dictionary-SanoSanin"/>) to oversee the compilation of the *Awa-shi* as an "official editor." <ref name="Heibon-Geography-Awash"/><ref name="KawadeHistory-Dictionary"/>
+In {{ill|1792|en|1792|qid=Q7805|lt=1792}} (4th year of {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei}}), the 11th lord of the Tokushima Domain, {{ill|Hachisuka Haruaki|en|Hachisuka Haruaki|qid=Q3125457|lt=Hachisuka Haruaki}}, assigned the domain’s Confucian scholar Sano San’in (Sano Yukinori<ref name="Heibon-Geography-Awash"/>, Sano Ken<ref name="Dictionary-SanoSanin"/>, Fujiwara Yukinori<ref name="Nipponica-Awash"/>, or Fujiwara Ken; 1751–1819<ref name="Dictionary-SanoSanin"/>) to oversee the compilation of the *Awa-shi* as an "official editor." <ref name="Heibon-Geography-Awash"/><ref name="KawadeHistory-Dictionary"/>
 In the following year, 1793 (5th year of Kansei), Sano ordered surveys across towns, villages, and ports within the domain.<ref name="Heibon-Geography-Awash"/><ref name="Britannica-Awash"/> Local officials and village headmen were tasked with gathering data on geography, history, population, agricultural productivity, specialty products, shrines, temples, and historical landmarks.<ref name="Heibon-Geography-Awash"/><ref name="Nipponica-Awash"/> In 1798 (10th year of Kansei), Sano himself toured various locations to gather additional materials.<ref name="Heibon-Geography-Awash"/>
-The collected data were compiled and organized, culminating in the Completion tier 3]] (12th year of {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka|1=Bunka}}). The work consisted of 12 volumes in 12 books.<ref name="Heibon-Geography-Awash"/><ref name="KawadeHistory-Dictionary"/><ref name="Yamakawa-dictionary"/><ref name="Britannica-Awash"/><ref name="Nipponica-Awash"/> Due to its lengthy compilation process, the data in *Awa-shi* reflects information from the surveys conducted in 1793, 1794, and 1798.<ref name="Heibon-Geography-Awash"/>
+The collected data were compiled and organized, culminating in the Completion tier 3]] (12th year of {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka}}). The work consisted of 12 volumes in 12 books.<ref name="Heibon-Geography-Awash"/><ref name="KawadeHistory-Dictionary"/><ref name="Yamakawa-dictionary"/><ref name="Britannica-Awash"/><ref name="Nipponica-Awash"/> Due to its lengthy compilation process, the data in *Awa-shi* reflects information from the surveys conducted in 1793, 1794, and 1798.<ref name="Heibon-Geography-Awash"/>
 == Structure ==
 Each volume of *Awa-shi* corresponds to a specific district of Awa Province, recording geographical information, shrines, temples, castle ruins, and notable individuals.<ref name="Heibon-Geography-Awash"/> Written in classical Chinese, the text is concise and does not include citations from ancient documents.<ref name="Prefectural-Museum"/>
 The 12 volumes are organized as follows:<ref name="Heibon-Geography-Awash"/>
 * Volume 1 - Overview of Awa Province
 * Volume 2 - Castle Capital (Tokushima Castle Town)
 * Volume 3 - [[:en:Itano District|Itano District]]
-* Volume 4 - {{ill|Awa District|en|Awa District|qid=Q20818081|lt=Awa District|1=Awa District}}
+* Volume 4 - {{ill|Awa District|en|Awa District|qid=Q20818081|lt=Awa District}}
 * Volume 5 - [[:en:Mima District|Mima District]]
 * Volume 6 - [[:en:Miyoshi District|Miyoshi District]]
 * Volume 7 - [[Oe District]]
 * Volume 8 - [[Myodo District]]
 * Volume 9 - [[Myozai District]]
 * Volume 10 - [[Katsura District]]
-* Volume 11 - {{ill|Naka District|en|Naka District|qid=Q123558460|lt=Naka District|1=Naka District}}
+* Volume 11 - {{ill|Naka District|en|Naka District|qid=Q123558460|lt=Naka District}}
 * Volume 12 - [[:en:Kaifu District|Kaifu District]]
 == Editions ==
 ;Goto Family Edition (Hachisuka Library)
-The original edition passed down in the [[Hachisuka Clan]], bearing the "Hachisuka Library" seal.<ref name="Heibon-Geography-Awash"/> Designated a Tokushima Prefecture tangible cultural property,<ref name="Prefectural-Museum"/> it is housed in the {{ill|Tokushima Castle Museum|en|Tokushima Castle Museum|qid=Q11489793|lt=Tokushima Castle Museum|1=Tokushima Castle Museum}}.<ref name="Prefectural-Museum"/>
+The original edition passed down in the [[Hachisuka Clan]], bearing the "Hachisuka Library" seal.<ref name="Heibon-Geography-Awash"/> Designated a Tokushima Prefecture tangible cultural property,<ref name="Prefectural-Museum"/> it is housed in the {{ill|Tokushima Castle Museum|en|Tokushima Castle Museum|qid=Q11489793|lt=Tokushima Castle Museum}}.<ref name="Prefectural-Museum"/>
 ;Gogō Bunko Edition (Awa Country Library)
-In {{ill|1898|en|1898|qid=Q7848|lt=1898|1=1898}} (31st year of [[Meiji]]), a copy of the Goto Family edition was created. This copy was further transcribed in 1912 (45th year of Meiji).<ref name="Heibon-Geography-Awash"/> The "Awa Country Library" seal is affixed to this edition.<ref name="Heibon-Geography-Awash"/> It is preserved in the {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library|1=National Diet Library}}.<ref name="Prefectural-Museum"/>{{refnest|group="Note"|According to the *Japan Historical Place Name Encyclopedia: Tokushima Prefecture,* this edition is also housed in the [[Tokushima Prefectural Library]].<ref name="Heibon-Geography-Awash"/>|qq=}}
+In {{ill|1898|en|1898|qid=Q7848|lt=1898}} (31st year of [[Meiji]]), a copy of the Goto Family edition was created. This copy was further transcribed in 1912 (45th year of Meiji).<ref name="Heibon-Geography-Awash"/> The "Awa Country Library" seal is affixed to this edition.<ref name="Heibon-Geography-Awash"/> It is preserved in the {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library}}.<ref name="Prefectural-Museum"/>{{refnest|group="Note"|According to the *Japan Historical Place Name Encyclopedia: Tokushima Prefecture,* this edition is also housed in the [[Tokushima Prefectural Library]].<ref name="Heibon-Geography-Awash"/>|qq=}}
 ;*Awa-shi* (Reprint)
-In {{ill|1931|en|1931|qid=Q18782|lt=1931|1=1931}} (6th year of {{ill|Shōwa|en|Shōwa|qid=Q398996|lt=Shōwa|1=Shōwa}}), Kasai Aisui (1891–1974) published a printed edition of *Awa-shi*. A reprinted version was issued in {{ill|1976|en|1976|qid=Q2480|lt=1976|1=1976}} (51st year of Showa).<ref name="NII-Awash1976"/> However, this version contains errors and changes to the original structure.<ref name="Prefectural-Museum"/>
+In {{ill|1931|en|1931|qid=Q18782|lt=1931}} (6th year of {{ill|Shōwa|en|Shōwa|qid=Q398996|lt=Shōwa}}), Kasai Aisui (1891–1974) published a printed edition of *Awa-shi*. A reprinted version was issued in {{ill|1976|en|1976|qid=Q2480|lt=1976}} (51st year of Showa).<ref name="NII-Awash1976"/> However, this version contains errors and changes to the original structure.<ref name="Prefectural-Museum"/>
 == Evaluation ==
 At the time of *Awa-shi*'s compilation, the Tokushima Domain was facing financial difficulties. It is believed the domain aimed to reform rural governance through this project.<ref name="Nipponica-Awash"/>
 == Alternative Version: *Ihon Awa-shi* ==
 An alternative gazetteer titled *Awa-shi,* of unknown authorship and compilation date, exists. To distinguish it from the Tokushima Domain's *Awa-shi,* it is referred to as *Ihon Awa-shi* (Alternative *Awa-shi*). It provides richer content, including significant insights into the founding of Tokushima Castle Town. Numerous manuscript copies suggest its high regard.<ref name="Heibon-Geography-Alternative-Awash"/>
-The compilation date varies by account, with some sources suggesting {{ill|1757|en|1757|qid=Q7635|lt=1757|1=1757}} (7th year of [[:en:Horeki|Horeki]]) or {{ill|1763|en|1763|qid=Q7655|lt=1763|1=1763}} (13th year of Horeki). However, the text also includes details from the {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei|1=Kansei}} era (1789–1801), leading to theories that it was completed during this period or between the Horeki and {{ill|Meiwa|en|Meiwa|qid=Q1146161|lt=Meiwa|1=Meiwa}} (1764–1772) eras.<ref name="Heibon-Geography-Alternative-Awash"/>
+The compilation date varies by account, with some sources suggesting {{ill|1757|en|1757|qid=Q7635|lt=1757}} (7th year of [[:en:Horeki|Horeki]]) or {{ill|1763|en|1763|qid=Q7655|lt=1763}} (13th year of Horeki). However, the text also includes details from the {{ill|Kansei|en|Kansei|qid=Q1195131|lt=Kansei}} era (1789–1801), leading to theories that it was completed during this period or between the Horeki and {{ill|Meiwa|en|Meiwa|qid=Q1146161|lt=Meiwa}} (1764–1772) eras.<ref name="Heibon-Geography-Alternative-Awash"/>
 == Notes ==
 {{Note-help|qq=}}
 === Annotations ===
@@ -97,7 +94,7 @@ The compilation date varies by account, with some sources suggesting {{ill|1757|
 === Bibliography ===
 * *Japan Historical Place Name Encyclopedia: Tokushima Prefecture*, Heibonsha, 2000, ISBN 4-582-49037-9
 == Related Articles ==
-* {{ill|Tokushima Castle Museum|en|Tokushima Castle Museum|qid=Q11489793|lt=Tokushima Castle Museum|1=Tokushima Castle Museum}} - Founded the Awa-shi Research Committee in 2013
+* {{ill|Tokushima Castle Museum|en|Tokushima Castle Museum|qid=Q11489793|lt=Tokushima Castle Museum}} - Founded the Awa-shi Research Committee in 2013
 * [[Awa Country Library]]
 == External Links ==
 * {{Kotobank|阿波志|qq=}}
@@ -106,19 +103,19 @@ The compilation date varies by account, with some sources suggesting {{ill|1757|
 * [[Tokushima Prefectural Library]]
 ''' Gogō Bunko Edition
 '''* [https://library.bunmori.tokushima.jp/digital/monjyo/kmonjyo.html Local Ancient Documents List] - Tokushima Prefectural Library
-* {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library|1=National Diet Library}}
+* {{ill|National Diet Library|en|National Diet Library|qid=Q477675|lt=National Diet Library}}
 ''' Awa Country Library Edition
 '''* [https://dl.ndl.go.jp/info:ndljp/pid/2609491 Awa-shi] - National Diet Library Digital Collection
 ''' Shin'ei Storage
 '''* [https://dl.ndl.go.jp/info:ndljp/pid/2606389 Awa-shi: 12 Volumes] - National Diet Library Digital Collection
-* {{ill|National Institute of Japanese Literature|en|National Institute of Japanese Literature|qid=Q4346458|lt=National Institute of Japanese Literature|1=National Institute of Japanese Literature}}
+* {{ill|National Institute of Japanese Literature|en|National Institute of Japanese Literature|qid=Q4346458|lt=National Institute of Japanese Literature}}
 ''' [https://www2.dhii.jp/nijl_opendata/searchlist.php?md=idl&bib=200017961 Awa-shi (Awashi)] - National Institute Data Simplified Web Viewer
 === Text Version ===
 * [https://museum.bunmori.tokushima.jp/hasegawa/shiryou/awashi.html Awa-shi (Text Version)] - Tokushima Prefectural Museum
 
 {{translated page|ja|阿波志|version=103201700|comment=Imported full ja history}}
 
-{{wikidata link|Q65291985|ja|阿波志|ja|%E9%98%BF%E6%B3%A2%E5%BF%97}}
+{{wikidata link|Q65291985|ja|阿波志|ja|%E9%98%BF%E6%B3%A2%E5%BF%97|check_date=2026-05-14}}
 [[Category:1810s books]]
 [[Category:Japan in 1815]]
 [[Category:Tokushima Prefecture]]
@@ -130,3 +127,4 @@ The compilation date varies by account, with some sources suggesting {{ill|1757|
 [[Category:Awa Province (Tokushima)]]
 [[Category:Pages with interwikis with duplicate languages]]
 [[Category:Regional geography of the Edo period]]
+[[Category:Pages with duplicated content]]

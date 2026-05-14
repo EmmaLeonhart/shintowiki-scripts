@@ -11,7 +11,7 @@
 |Map          = Japan Kyoto city2
 |Label Position = right
 |Deities      = '''Ayato Shrine'''<br/>{{ill|Ōagatashinokami|ja|大綾津日神|12=simple|13=User:Immanuelle/Ōagatashinokami|ja_comment=jawiki redirects to 禍津日神|1=Magatsuhi-no-kami|comment=changed title based on wikidata|qid=Q11591203|1=Magatsuhi-no-kami}}・{{ill|Ōnaohinokami|ja|大直日神|12=simple|13=User:Immanuelle/Ōnaohinokami|ja_comment=jawiki redirects to 直毘神|1=Ōnaobi no Kami|comment=changed title based on wikidata|qid=Q11581794|1=Ōnaobi no Kami}}・{{ill|Kaminahinokami|ja|神直日神|12=simple|13=User:Immanuelle/Kaminahinokami|1=Kamuna'obi|comment=changed title based on wikidata|qid=Q86725467}}<br/> '''Kunikai Shrine'''<br/> {{ill|Susanoo-no-Mikoto|ja|素盞嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
-|Rank         = Shikinaisha (small) ・ {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|qid=Q712534|lt=Village Shrine|1=Modern system of ranked Shinto shrines}}
+|Rank         = Shikinaisha (small) ・ {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Village Shrine|1=Modern system of ranked Shinto shrines}}
 |Founding     = 
 |Main Hall    = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Ryuzō|1=Nagare-zukuri}}
 |Alternate Name = 

@@ -1,11 +1,9 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Atago_Shrine_%28Kyoto%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Short description|Shinto shrines in Kyoto, Japan, the head of nine hundred Atago shrines throughout Japan|qq=}}
 {{Otheruse|Atago Shrine (disambiguation)|qq=}}
 {{Infobox religious building
 | name = Atago Jinja<br>愛宕神社
 | image = Torii Atago-shrine Kyoto.JPG
-| caption = [[Torii]] leading to Atago Jinja in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto|1=Kyoto}}
+| caption = [[Torii]] leading to Atago Jinja in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto}}
 | map_type = Japan
 | map_alt = 
 | coordinates = <span style="white-space: nowrap;">{{coord|35|3|36|N|135|38|4|E|type:landmark|display=inline|qq=}}</span>
@@ -15,7 +13,7 @@
 | religious_affiliation = [[Shinto]]
 | type = Atago shrine
 | deity = Atago Gongen
-| founded_by = [[:en:En no Ozunu|En no Ozunu]], {{ill|Taichō|en|Taichō|qid=Q2388439|lt=Taichō|1=Taichō}}
+| founded_by = [[:en:En no Ozunu|En no Ozunu]], {{ill|Taichō|en|Taichō|qid=Q2388439|lt=Taichō}}
 | established = 701 - 704
 | date_destroyed = 
 | location = Atago-chō, [[:en:Ukyo-ku|Ukyo-ku]], Kyoto
@@ -24,14 +22,14 @@
 | festival = Sen-nichi Tsuyasai (July 31)
 | leadership = 
 }}
-{{nihongo|'''Atago Shrine'''|愛宕神社|Atago-jinja|qq=}} is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}} on {{ill|Mount Atago|en|Mount Atago|qid=Q2975204|lt=Mount Atago|1=Mount Atago}}, the northwest of {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto|1=Kyoto}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}. Enshrined is [[Atago Gongen]] who protects Kyoto from fire.<ref>{{cite web |url=http://www.city.kyoto.jp/koho/eng/preview/20.html |title=Atago Stone Lanterns |publisher={{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City|1=Kyoto}} |accessdate=7 April 2011|qq=}}</ref> [[Shugendō]] practices and a place for worship are known from the eighth century.<ref name="Jinja">{{cite web|url=http://atagojinjya.jp/goyuisyo.htm |title=Atago Jinja - history |publisher=Atago Jinja |accessdate=7 April 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20110517220742/http://kyoto-atago.jp/images/yuishogaki2.htm |archivedate=17 May 2011 |qq=}}</ref> The late-{{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period|1=Kamakura period}} [[Honden]] has been designated an {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property|1=Important Cultural Property (Japan)}}.<ref>{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/102/1985 |title=Database of Registered National Cultural Properties |publisher=[[Agency for Cultural Affairs]] |accessdate=7 April 2011|qq=}}</ref> (Actually, the late-Kamakura period Honden is located at another Atago-jinja in [[:en:Kameoka|Kameoka]], to the northwest of Kyoto : {{Coord|35|2|28|N|135|35|13|E||qq=}}[http://wikimapia.org/#lat=35.0408446&lon=135.5869369&z=17&l=0&m=b&v=8&show=/26233643/Atago-jinja-Shrine]) Atago Jinja is the head of nine hundred Atago shrines throughout Japan.<ref name="Jinja"/>
+{{nihongo|'''Atago Shrine'''|愛宕神社|Atago-jinja|qq=}} is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} on {{ill|Mount Atago|en|Mount Atago|qid=Q2975204|lt=Mount Atago}}, the northwest of {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. Enshrined is [[Atago Gongen]] who protects Kyoto from fire.<ref>{{cite web |url=http://www.city.kyoto.jp/koho/eng/preview/20.html |title=Atago Stone Lanterns |publisher={{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}} |accessdate=7 April 2011|qq=}}</ref> [[Shugendō]] practices and a place for worship are known from the eighth century.<ref name="Jinja">{{cite web|url=http://atagojinjya.jp/goyuisyo.htm |title=Atago Jinja - history |publisher=Atago Jinja |accessdate=7 April 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20110517220742/http://kyoto-atago.jp/images/yuishogaki2.htm |archivedate=17 May 2011 |qq=}}</ref> The late-{{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period}} [[Honden]] has been designated an {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.<ref>{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/102/1985 |title=Database of Registered National Cultural Properties |publisher=[[Agency for Cultural Affairs]] |accessdate=7 April 2011|qq=}}</ref> (Actually, the late-Kamakura period Honden is located at another Atago-jinja in [[:en:Kameoka|Kameoka]], to the northwest of Kyoto : {{Coord|35|2|28|N|135|35|13|E||qq=}}[http://wikimapia.org/#lat=35.0408446&lon=135.5869369&z=17&l=0&m=b&v=8&show=/26233643/Atago-jinja-Shrine]) Atago Jinja is the head of nine hundred Atago shrines throughout Japan.<ref name="Jinja"/>
 ==Deities==
 ===Main hall===
-* {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami no Mikoto|1=Izanami}}
+* {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami no Mikoto}}
 * [[Haniyasu-hiko and Haniyasu-hime|Haniyasuhime no Mikoto]]
 * [[Amenokumahito no Mikoto]]
 * [[Wakumusubi|Wakumusubi no Kami]]
-* {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyoukebime no Mikoto|1=Toyouke-hime}}
+* {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyoukebime no Mikoto}}
 ===''Wakamiya''===
 * [[Raijin|Ikazuchi no Kami]]
 * [[Kagu-tsuchi|Kagutsuchi no Mikoto]]
@@ -43,7 +41,7 @@
 * [[Atago Shrine (Tokyo)|Atago Jinja (Tokyo)]]
 * [[Shinbutsu-shūgō|Shinbutsu shūgō]]
 * [[Honji suijaku]]
-* {{ill|Tsukinowa-dera|en|Tsukinowa-dera|qid=Q3541652|lt=Tsukinowa-dera|1=Tsukinowa-dera}}
+* {{ill|Tsukinowa-dera|en|Tsukinowa-dera|qid=Q3541652|lt=Tsukinowa-dera}}
 ==References==
 {{Reflist|qq=}}
 ==Further reading==
@@ -59,7 +57,6 @@
 {{Commons category|Atago-jinja (Kyoto)}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Atago Shrine (Kyoto) (Q713021)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
 
@@ -67,9 +64,9 @@
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| RONSHA || {{ill|Atago Shrine (Kyoto)|lt=Atago Shrine|en|Atago Shrine (Kyoto)|ja|愛宕神社|az|Ataqo məbədi (Kioto)|commons|Category:Atago-jinja (Kyoto)|fa|معبد آتاگو|fr|Atago-jinja (Kyoto)|ko|아타고 신사|my|အတဂေါ့နတ်ကျောင်း (ကျိုတို)|ru|Храм Атаго (Киото)|sv|Atago-jinja (Kyoto)|zh|愛宕神社|qid=Q713021|1=Atago Shrine (Kyoto)}} || — || — || — || {{ill|Atagono Shrine|lt=Atagono Shrine|qid=Q135040494|1=Atagono Shrine}} || {{coord|35.059944|135.634447|display=inline}} || —
+| RONSHA || {{ill|Atago Shrine (Kyoto)|lt=Atago Shrine|en|Atago Shrine (Kyoto)|ja|愛宕神社|az|Ataqo məbədi (Kioto)|commons|Category:Atago-jinja (Kyoto)|fa|معبد آتاگو|fr|Atago-jinja (Kyoto)|ko|아타고 신사|my|အတဂေါ့နတ်ကျောင်း (ကျိုတို)|ru|Храм Атаго (Киото)|sv|Atago-jinja (Kyoto)|zh|愛宕神社|qid=Q713021}} || — || — || — || {{ill|Atagono Shrine|lt=Atagono Shrine|qid=Q135040494}} || {{coord|35.059944|135.634447|display=inline}} || —
 |}
-{{wikidata link|Q713021|az|Ataqo məbədi (Kioto)|en|Atago Shrine (Kyoto)|fa|معبد آتاگو|fr|Atago-jinja (Kyoto)|ja|愛宕神社|ko|아타고 신사|my|အတဂေါ့နတ်ကျောင်း (ကျိုတို)|ru|Храм Атаго (Киото)|sv|Atago-jinja (Kyoto)|zh|愛宕神社}}
+{{wikidata link|Q713021|az|Ataqo məbədi (Kioto)|en|Atago Shrine (Kyoto)|fa|معبد آتاگو|fr|Atago-jinja (Kyoto)|ja|愛宕神社|ko|아타고 신사|my|အတဂေါ့နတ်ကျောင်း (ကျိုတို)|ru|Храм Атаго (Киото)|sv|Atago-jinja (Kyoto)|zh|愛宕神社|check_date=2026-05-14}}
 [[Category:Shikinaisha in Tanba Province]]
 [[Category:Shinto shrines in Kyoto]]
 [[Category:Important Cultural Properties in Kyoto City]]
@@ -81,3 +78,4 @@
 [[Category:愛宕山 (京都市)]]
 [[Category:Atago shrines]]
 [[Category:最澄]]
+[[Category:Pages with duplicated content]]
