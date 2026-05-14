@@ -40,15 +40,14 @@ Sources and how they map to instructions:
       containing the auto-generated-block marker. ~115 items.
 
   miraheze_unique/*.wiki (shrine-disambig, no auto-gen block yet)
-      Shrine-disambig pages tagged with [[Category:Shrine
-      disambiguations]] that don't have the auto-generated block
-      yet — either ``generate_shrine_disambig_lists.py`` hasn't
-      reached them on its sweep, its kanji extractor failed on an
-      unusual lede, or its SPARQL returned zero results. The remote
-      worker can identify the kanji form by hand (from the
-      ``{{wikidata link|Q...|ja|kanji}}`` line at the bottom, the
-      lede, or the article body), SPARQL Wikidata for shrines with
-      that label, and write the section manually. ~58 items.
+      Split into two sub-buckets by whether the regex kanji extractor
+      can recover the kanji form:
+        * kanji_known: the kanji is embedded directly in the instruction
+          so the worker can SPARQL right away.
+        * kanji_unknown: the worker has to read the page to find a
+          kanji form (might be in an infobox parameter, an interwiki
+          ``[[ja:...]]`` link, a non-standard ``{{nihongo}}`` call,
+          etc.) or accept that the page has no recoverable kanji.
 
 Japanese-titled pages are excluded — those moves are intentional
 manual work per the queue plan.
@@ -107,26 +106,42 @@ NEED_TRANSLATION_INSTRUCTION = (
     "file from the repo, so only drop it when translation is genuinely done."
 )
 
-MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_INSTRUCTION = (
-    "This is a shrine disambiguation page (tagged [[Category:Shrine "
-    "disambiguations]]) that doesn't have the auto-generated "
-    "`== Shrines with this name ==` block yet. Possible causes: "
-    "(a) `generate_shrine_disambig_lists.py` hasn't reached it on its "
-    "incremental sweep, (b) the script's kanji extractor failed on an "
-    "unusual lede, or (c) the script's SPARQL exact-label match "
-    "returned zero results. "
-    "Fix it directly: identify the kanji form of the shrine name "
-    "(the `{{wikidata link|Q...|ja|kanji}}` template near the bottom "
-    "usually has it; otherwise check the lede or the article body), "
+MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_KNOWN_TEMPLATE = (
+    "This shrine disambiguation page (tagged [[Category:Shrine "
+    "disambiguations]]) doesn't have the auto-generated `== Shrines "
+    "with this name ==` block yet, but the kanji form is recoverable "
+    "from the page: {kanji_repr}. Most likely the regular "
+    "`generate_shrine_disambig_lists.py` sweep just hasn't visited "
+    "this page yet (it's incremental and there's a backlog), or its "
+    "SPARQL exact-label match returned zero results. Fix it directly: "
     "SPARQL Wikidata for items that are subclass-of Q845945 (Shinto "
-    "shrine) carrying that kanji as an `ja` rdfs:label or skos:altLabel, "
-    "and write the section in the same format as other shrine-disambig "
-    "pages on the wiki. Wrap it in the standard "
-    "`<!-- BEGIN: auto-generated Wikidata shrine list -->` / "
-    "`<!-- END: auto-generated Wikidata shrine list -->` markers so the "
-    "script picks the page up on future sweeps. If the kanji is "
-    "genuinely ambiguous or SPARQL returns nothing meaningful, leave "
-    "the page as-is."
+    "shrine) carrying that kanji as an `ja` rdfs:label or skos:altLabel "
+    "(broaden with prefix match if exact returns nothing), and write "
+    "the section in the same format as other shrine-disambig pages. "
+    "Wrap it in the standard `<!-- BEGIN: auto-generated Wikidata "
+    "shrine list -->` / `<!-- END: auto-generated Wikidata shrine list "
+    "-->` markers so the regular script keeps maintaining it on future "
+    "sweeps. If SPARQL returns nothing meaningful even with the broader "
+    "query, leave the page as-is."
+)
+
+MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_UNKNOWN_INSTRUCTION = (
+    "This shrine disambiguation page (tagged [[Category:Shrine "
+    "disambiguations]]) doesn't have the auto-generated `== Shrines "
+    "with this name ==` block, and the regex kanji extractor couldn't "
+    "recover a kanji form. Read the page carefully — the kanji might "
+    "be in a non-standard place (an infobox parameter, an inline "
+    "mention, a comment, a `{{nihongo|...}}` call missing the standard "
+    "shape, or an interwiki link like `[[ja:KANJI]]`). If you find it, "
+    "either (a) add a `{{Nihongo|EnglishName|KANJI|romaji}}` template "
+    "near the top so the regular script can pick it up via its "
+    "fallback paths, or (b) write the section directly and wrap it in "
+    "the standard `<!-- BEGIN: auto-generated Wikidata shrine list -->` "
+    "/ `<!-- END: auto-generated Wikidata shrine list -->` markers. If "
+    "the page genuinely has no recoverable kanji (this disambiguation "
+    "is purely English-context, or the underlying Japanese form is "
+    "ambiguous), leave the page as-is — not every shrine disambig has "
+    "a clean kanji equivalent."
 )
 
 MIRAHEZE_SHRINE_DISAMBIG_INSTRUCTION = (
@@ -239,6 +254,128 @@ def _is_shrine_disambig_no_autogen(path: Path) -> bool:
     return bool(_SHRINE_DISAMBIG_CAT_RE.search(text))
 
 
+# Kanji extraction logic — mirrors
+# ``shinto_miraheze/generate_shrine_disambig_lists.py``'s
+# ``extract_kanji_names``. We inline rather than import because the
+# script wraps ``sys.stdout`` at module load and that re-wrap detaches
+# our own ``io.TextIOWrapper``, closing stdout for any later prints.
+# The regex set is small and has been stable; if the script's
+# extractor ever grows substantially, sync this copy.
+_LEDE_KANJI_RE = re.compile(
+    r"^'''([^']+)'''(?:\s+or\s+'''[^']+''')*\s*[（(]([^)）]+)[)）]",
+    re.M,
+)
+_INLINE_BOLD_KANJI_RE = re.compile(r"'''([一-鿿぀-ゟ゠-ヿ々〆〇]+)'''")
+_TRANSLATED_PAGE_JA_RE = re.compile(r"\{\{translated page\|ja\|([^|}]+)")
+_WIKIDATA_LINK_JA_RE = re.compile(r"\{\{wikidata link\|[^{}]*?\|ja\|([^|}]+)")
+_NIHONGO_RE = re.compile(r"\{\{[Nn]ihongo\|[^|}]+\|([^|}]+)")
+_MIN_KANJI_LEN = 3
+
+
+def _add_candidate(out: list[str], seen: set, s: str, *, min_len: int) -> None:
+    s = s.strip()
+    s = re.sub(r"\s*\([^)]*\)\s*$", "", s)
+    if len(s) < min_len:
+        return
+    cjk_count = sum(
+        1 for c in s if "一" <= c <= "鿿" or "぀" <= c <= "ヿ"
+    )
+    if cjk_count < min_len:
+        return
+    kanji_count = sum(1 for c in s if "一" <= c <= "鿿" or c in "々〆〇")
+    if kanji_count < min(2, min_len):
+        return
+    if any(c in s for c in "[]{}|=<>"):
+        return
+    if s in seen:
+        return
+    seen.add(s)
+    out.append(s)
+
+
+def _extract_kanji_for_path(path: Path) -> list[str]:
+    """Return CJK shrine-name candidates extracted from the page text,
+    mirroring ``generate_shrine_disambig_lists.extract_kanji_names``."""
+    try:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return []
+    seen: set[str] = set()
+    out: list[str] = []
+
+    m = _LEDE_KANJI_RE.search(text)
+    if m:
+        for tok in re.split(r"[、,;]|\s+or\s+", m.group(2)):
+            _add_candidate(out, seen, tok, min_len=_MIN_KANJI_LEN)
+
+    for m in _INLINE_BOLD_KANJI_RE.finditer(text):
+        _add_candidate(out, seen, m.group(1), min_len=_MIN_KANJI_LEN)
+
+    # Fallback paths — same as the script, only run if the primary
+    # paths produced nothing.
+    if not out:
+        for m in _TRANSLATED_PAGE_JA_RE.finditer(text):
+            _add_candidate(out, seen, m.group(1), min_len=2)
+    if not out:
+        for m in _WIKIDATA_LINK_JA_RE.finditer(text):
+            _add_candidate(out, seen, m.group(1), min_len=2)
+    if not out:
+        for m in _NIHONGO_RE.finditer(text):
+            _add_candidate(out, seen, m.group(1), min_len=2)
+
+    return out
+
+
+def _build_no_autogen_disambig_items() -> list[dict]:
+    """Walk miraheze_unique/ shrine-disambig pages without the auto-gen
+    block and split them into kanji-known vs kanji-unknown sub-items.
+
+    Kanji-known: the kanji is embedded directly in the per-item
+    instruction so the remote worker can SPARQL right away without
+    re-running the extractor.
+    Kanji-unknown: the worker has to read the page and decide whether
+    a kanji form exists, or leave it alone.
+    """
+    items: list[dict] = []
+    directory = REPO_ROOT / "miraheze_unique"
+    if not directory.is_dir():
+        return items
+    for path in sorted(directory.glob("*.wiki")):
+        if not _is_shrine_disambig_no_autogen(path):
+            continue
+        rel = path.relative_to(REPO_ROOT).as_posix()
+        kanji = _extract_kanji_for_path(path)
+        if kanji:
+            kanji_repr = ", ".join(f"`{k}`" for k in kanji)
+            instruction = (
+                MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_KNOWN_TEMPLATE
+                .format(kanji_repr=kanji_repr)
+            )
+            items.append(
+                {
+                    "id": rel,
+                    "file": rel,
+                    "category": "miraheze_unique",
+                    "subcategory": "shrine_disambig_no_autogen_kanji_known",
+                    "kanji": kanji,
+                    "instruction": instruction,
+                }
+            )
+        else:
+            items.append(
+                {
+                    "id": rel,
+                    "file": rel,
+                    "category": "miraheze_unique",
+                    "subcategory": "shrine_disambig_no_autogen_kanji_unknown",
+                    "instruction": (
+                        MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_UNKNOWN_INSTRUCTION
+                    ),
+                }
+            )
+    return items
+
+
 def build_queue() -> list[dict]:
     items: list[dict] = []
     items.extend(_build_section("duplicated_content", DUPLICATED_CONTENT_INSTRUCTION))
@@ -257,13 +394,7 @@ def build_queue() -> list[dict]:
             filter_fn=_is_shrine_disambig,
         )
     )
-    items.extend(
-        _build_section(
-            "miraheze_unique",
-            MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_INSTRUCTION,
-            filter_fn=_is_shrine_disambig_no_autogen,
-        )
-    )
+    items.extend(_build_no_autogen_disambig_items())
     return items
 
 
