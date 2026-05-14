@@ -12,8 +12,8 @@
 |Deities     = Kushida Sanshin
 |Rank        = Former Prefectural Shrine
 |Foundation  = During the reign of Emperor Keikō
-|MainHall    = 
-|Alias       = 
+|MainHall    =
+|Alias       =
 |Festival    = April 7–8 (Spring Festival)<br />October 7–8 (Autumn Festival)
 |Rituals     = Miyuki Grand Festival (biennially on the first Saturday and Sunday of April)
 |prefecture= {{ill|Kanzaki|qid=Q990392|1=Kanzaki, Saga}}
@@ -45,11 +45,12 @@ Known collectively as "Kushida Sanshin":
 * {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}
 
 === Auxiliary Shrines ===
+Several auxiliary shrines (''sessha'' and ''massha'') are located within the precincts:
 * Kushimori Inari Shrine
 * Kushimaru Inari Shrine
-* Gion Shrine
-* Benzaiten Shrine
-* Tenmangu Shrine
+* {{ill|Gion Shrine|ja|祇園社|12=simple|13=User:Immanuelle/Gion Shrine|ja_comment=jawiki redirects to 祇園神社|1=Gion shrines|comment=changed title based on wikidata|qid=Q11588442}}
+* {{ill|Benzaiten Shrine|ja|弁財天|12=simple|13=User:Immanuelle/Benzaiten Shrine|ja_comment=jawiki redirects to 弁才天}}
+* {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Choraku-ji Tenmangū|1=Tenmangū}}
 
 == Festivals ==
 * '''Spring Festival''' - Held annually on '''April 7–8'''
@@ -62,6 +63,7 @@ Known collectively as "Kushida Sanshin":
 
 === Important Folk Cultural Properties ===
 * '''Goshinkō Festival Ema (votive tablet)''' - Large ema depicting the festival procession with mikoshi and lion dances. Dimensions: 159 cm × 184 cm. Dated to {{ill|1858 AD|ja|安政五年|12=simple|13=User:Immanuelle/1858 AD|ja_comment=jawiki link invalid}}. Designated in 1979.<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji0031554/index.html |title=Prefectural Cultural Properties (Folk Materials) |publisher=Saga Prefecture |accessdate=2024-03-02}}</ref>
+* '''Daikagura Lion Dance''' - Performed as part of the ''Miyuki Taisai'' procession, featuring an elaborate lion costume requiring 30 participants to carry it in shifts.<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji0031562/index.html |title=Saga Prefecture Cultural Properties Database}}</ref>
 
 === Significant Trees ===
 * '''Koto no Kusu (Koto Camphor Tree)''' - A sacred camphor tree said to have grown from a koto buried by Emperor Keikō. Estimated age: 1,000 years. Circling the tree seven times is said to produce the sound of koto music.<ref>{{Cite web|url=https://www.kanzaki-museum.com/frmFeatureDetail.aspx?feature_id=4 |title=Kushida Shrine |website=Kanzaki Digital Museum |accessdate=2024-03-02}}</ref> Additional ancient trees include three camphors and one ginkgo over 700 years old.<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji00369053/index.html |title=Saga Prefecture's Notable Trees |publisher=Saga Prefecture |accessdate=2023-08-10}}</ref>
@@ -78,71 +80,6 @@ Known collectively as "Kushida Sanshin":
 
 {{translated page|ja|櫛田宮|version=102135443|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
-==Merged second translation==
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
-| name          = Kushida Shrine
-| native_name   = 櫛田宮
-| image         = [[File:Kushidagu Shrine (Kanzaki, Saga).jpg|250px]]
-| caption       = Kushida Shrine
-| map_type      = Japan Saga Prefecture=Japan
-| coordinates   = {{Coord|33|18|36.6|N|130|22|21.3|E|region:JP-41_type:landmark}}
-| location       = Kanzaki 419-1, Kanzaki City, Saga Prefecture, Japan
-| deity         = {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}<br>{{ill|Kushinadahime|en|Kushinadahime|qid=Q505469|qid=Q505469|lt=Kushinadahime|1=Kushinadahime}}<br>{{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}
-| established   = Reign of Emperor Keikō
-| festivals     = Spring festival (April 7–8)<br>Autumn festival (October 7–8)<br>''Miyuki Taisai'' (biennially in early April)
-}}
-
-'''Kushida Shrine''' (櫛田宮, ''Kushida-gū'') is a {{ill|Shinto shrine|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in {{ill|Kanzaki, Saga|en|Kanzaki, Saga|qid=Q990392|lt=Kanzaki, Saga|1=Kanzaki, Saga}}, Japan. It holds the historical status of a {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/prefectural shrine|ja_comment=jawiki redirects to 近代社格制度}} under the pre-World War II system of Ranked Shinto shrines. The Kushida Shrine in {{ill|Hakata, Fukuoka|ja|博多|12=simple|13=User:Immanuelle/Hakata, Fukuoka|1=Hakata|comment=changed title based on wikidata|qid=Q11284628}}, is a branch shrine of this original location.
-
-== History ==
-According to shrine tradition, Kushida Shrine was established during the reign of Emperor Keikō (early 4th century). The emperor, upon hearing of recurring misfortunes plaguing the area, ordered the enshrinement of local deities to pacify the land.<ref name="Kadokawa">Kadokawa Nihon Chimei Daijiten, "Kushida Shrine" entry.</ref>
-
-The surrounding region was named ''Kamisaki'' (神幸, later becoming Kanzaki), meaning "divine happiness," in commemoration of the shrine’s founding. During the {{ill|Mongol invasions of Japan|en|Mongol invasions of Japan|qid=Q208156|lt=Mongol invasions of Japan|1=Mongol invasions of Japan}}, the sacred sword of Kushida Shrine was temporarily transferred to its branch shrine in Hakata for prayer rituals, which were believed to have aided in repelling the Mongol fleet.<ref name="Kadokawa" />
-
-As one of the ''Sansho Daimyōjin'' (三所大明神), the shrine formed part of the {{ill|Kanzaki Shō|ja|神埼荘|12=simple|13=User:Immanuelle/Kanzaki Shō|1=Kanzaki Manor|comment=changed title based on wikidata|qid=Q11589659}} triad along with {{ill|Koshi Shrine|ja|高志神社|12=simple|13=User:Immanuelle/Koshi Shrine|ja_comment=jawiki link invalid}} and {{ill|Oshitori Shrine|ja|白角折神社|12=simple|13=User:Immanuelle/Oshitori Shrine|qq=}}. The present-day ''Miyuki Taisai'' festival still honors these three shrines with a grand procession of portable shrines (''mikoshi'') and other rites.<ref>{{Cite web|url=http://www.kanzaki-museum.com/frmDataDetail.aspx?id=11570 |title=Miyuki Taisai |website=Kanzaki Digital Museum |publisher=Kanzaki City}}</ref>
-
-== Deities ==
-Kushida Shrine is dedicated to the "Kushida Sanjin" (櫛田三神):
-* {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}
-* {{ill|Kushinadahime|en|Kushinadahime|qid=Q505469|qid=Q505469|lt=Kushinadahime|1=Kushinadahime}}
-* {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}
-*
-
-=== Auxiliary Shrines ===
-Several auxiliary shrines (''sessha'' and ''massha'') are located within the precincts:
-* Kushimori Inari Shrine
-* Kushimaru Inari Shrine
-* {{ill|Gion Shrine|ja|祇園社|12=simple|13=User:Immanuelle/Gion Shrine|ja_comment=jawiki redirects to 祇園神社|1=Gion shrines|comment=changed title based on wikidata|qid=Q11588442}}
-* {{ill|Benzaiten Shrine|ja|弁財天|12=simple|13=User:Immanuelle/Benzaiten Shrine|ja_comment=jawiki redirects to 弁才天}}
-* {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Choraku-ji Tenmangū|1=Tenmangū}}
-
-== festivals ==
-* '''Spring festival''' (April 7–8): Includes the biennial ''Miyuki Taisai'' (held in even-numbered years), featuring elaborate processions and shrine rituals.
-* '''Autumn festival''' (October 7–8): Celebrates the harvest and includes traditional performances.
-
-== Cultural Properties==
-=== Saga Prefecture Designated Cultural Properties===
-* '''Stone Torii Gate''': Constructed in 1602, this early example of {{ill|Hizen Torii|ja|肥前鳥居|12=simple|13=User:Immanuelle/Hizen Torii|ja_comment=jawiki link invalid}} architecture stands 3.35 meters tall, with a span of 4.45 meters. It was donated by {{ill|Nabeshima Katsushige|en|Nabeshima Katsushige|qid=Q3138980|lt=Nabeshima Katsushige|1=Nabeshima Katsushige}}.<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji0031433/index.html |title=Saga Prefecture Cultural Properties Database}}</ref>
-* '''Ema of the Miyuki festival''': A large votive plaque (159×184 cm) depicting the shrine's grand festival. Created in 1858 (''Ansei 5'').<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji0031554/index.html |title=Saga Prefecture Cultural Properties Database}}</ref>
-* '''Daikagura Lion Dance''': Performed as part of the ''Miyuki Taisai'' procession, featuring an elaborate lion costume requiring 30 participants to carry it in shifts.<ref>{{Cite web|url=https://www.pref.saga.lg.jp/kiji0031562/index.html |title=Saga Prefecture Cultural Properties Database}}</ref>
-
-== Notable Features ==
-* '''"Koto no Kusu" Sacred Tree''': A legendary camphor tree believed to have grown from a musical instrument buried by Emperor Keikō. The tree is approximately 1,000 years old and emits "musical tones" when circled seven and a half times.<ref>{{Cite web|url=https://www.kanzaki-museum.com/frmFeatureDetail.aspx?feature_id=4 |title=Sacred Tree of Kushida Shrine}}</ref>
-
-== Access ==
-* 10-minute walk southwest from {{ill|Kanzaki Station (Saga)|en|Kanzaki Station (Saga)|qid=Q5358654|lt=Kanzaki Station|1=Kanzaki Station (Saga)}} on the {{ill|Nagasaki Main Line|en|Nagasaki Main Line|qid=Q1078117|lt=JR Nagasaki Main Line|1=Nagasaki Main Line}}.
-
-== References ==
-{{Reflist}}
-
-== External Links ==
-* [https://www5b.biglobe.ne.jp/~kusidagu/ Official Website]
-
-{{Shinto-navbox}}
-
-{{translated page|ja|櫛田宮|version=102135443|comment=Imported full ja history}}
-
 {{wikidata link|Q11544718|ja|櫛田宮}}
 [[Category:Buildings and structures in Kanzaki, Saga]]
 [[Category:Emperor Keikō]]
@@ -152,7 +89,6 @@ Several auxiliary shrines (''sessha'' and ''massha'') are located within the pre
 [[Category:Ken-sha]]
 [[Category:Municipal History of Kanzaki]]
 [[Category:Municipal Tangible Cultural Properties in Saga Prefecture]]
-[[Category:Pages with duplicated content]]
 [[Category:Prefecturally designated intangible folk cultural property]]
 [[Category:Saga Prefecture designated tangible cultural property]]
 [[Category:Shinto shrines in Saga Prefecture]]
