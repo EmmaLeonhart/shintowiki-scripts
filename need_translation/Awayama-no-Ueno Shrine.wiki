@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Awayama-no-Ueno_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{Expand Japanese|阿波山上神社}}
 
 {{Infobox religious building
@@ -77,22 +75,11 @@
 
 ==References==
 
-[[Category:Shikinaisha]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Junior Fifth Rank]]
-[[Category:Shikinaisha in Hitachi Province]]
-
 [[JA:阿波山上神社]]
 
-{{wikidata link|Q11657523|ja|阿波山上神社}}
-[[Category:Junior Fifth Rank]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
+{{wikidata link|Q11657523|ja|阿波山上神社|check_date=2026-05-14}}
 
 {{translated page|ja|阿波山上神社|version=107024325|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 {{神社
 |名称   = 阿波山上神社
@@ -174,11 +161,21 @@
 {{茨城県の神社一覧目次}}
 
 ==End Japanese==
-[[Category:茨城県の神社]]
-[[Category:茨城県の旧郷社]]
-[[Category:常陸国の式内社]]
-[[Category:城里町の建築物]]
 [[Category:城里町の歴史]][[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
 [[Category:Need translation]]
+[[Category:Shikinaisha]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Junior Fifth Rank]]
+[[Category:Shikinaisha in Hitachi Province]]
+[[Category:Junior Fifth Rank]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
+[[Category:Need translation]]
+[[Category:茨城県の神社]]
+[[Category:茨城県の旧郷社]]
+[[Category:常陸国の式内社]]
+[[Category:城里町の建築物]]

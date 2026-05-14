@@ -105,81 +105,7 @@
 {{wikidata link|Q72183108|co|commons:Category:Yasaka-jinja (Gika, Koka)|ja|八坂神社 (甲賀市)|check_date=2026-05-12}}
 
 {{translated page|ja|八坂神社 (甲賀市)|version=107296568|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
- | 名称=八坂神社
- | 画像=[[File:Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 09.jpg|270px]]<br />社殿
- | 所在地={{jalink|滋賀県|Q131358}}{{jalink|甲賀市|Q847584}}水口町嶬峨1606
- | 位置={{ウィキ座標2段度分秒|34|57|2.125|N|136|11|48.537|E|region:JP-25_type:landmark}}
- | 祭神={{jalink|素盞鳴命}}、{{jalink|聖武天皇|Q349263}}、{{jalink|神武天皇|Q200188}}
- | 社格={{jalink|式内社}}論社、旧{{jalink|村社}}
- | 創建=（伝）{{jalink|794年|Q30887}}|例祭={{jalink|5月1日|Q2544}}川枯祭
- | 本殿=一間社{{jalink|流造|Q210684}}
- | 神事={{jalink|1月7日|Q2228}}的山のおこない
- | 地図= {{Location map|Japan Shiga|label=八坂神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
-}}
-'''八坂神社'''（やさかじんじゃ）は、{{jalink|滋賀県|Q131358}}{{jalink|甲賀市|Q847584}}水口町嶬峨にある{{jalink|神社|Q845945}}である。
-
-== 歴史 ==
-社伝によると、郷土開拓の祖神である川枯神を勧請し、{{jalink|794年|Q30887}}（≈{{jalink|天平|Q1199879}}21年）{{jalink|左大臣|Q949008}}{{jalink|橘諸兄|Q3135863}}公（さだいじんたちばなのもろえ）が隣接する{{jalink|千光寺 (甲賀市)|Q72184313|千光寺}}の{{jalink|伽藍|Q3482038}}を造営する際、{{jalink|法 (仏教)|Q9241518|仏法}}擁護のために{{jalink|社殿}}を造営したと伝わる<ref name=":0">{{Cite web|和書|title=神社紹介>八坂神社（ヤサカ）～（嵯峨大宮）|url=http://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=556|website=|accessdate=2019-09-30|publisher=滋賀県神社庁}}</ref>。
-
-{{jalink|932年|Q23656}}（{{jalink|承平 (日本)|Q1324874|承平}}2年）、神徳布施の故をもって、儀俄大宮の号を賜り、現在の地に社殿を建立<ref name=":0" />。
-
-本殿は{{jalink|1439年|Q6380}}（{{jalink|永享|Q1193059}}11年）に建立<ref name=":0" />。嶬峨大宮千光寺雑録によると、{{jalink|1587年|Q6744}}（{{jalink|天正|Q1145058}}15年）に本殿は再建されたと記され、様式手法とも一致している。
-
-{{jalink|1721年|Q6913}}（{{jalink|享保|Q1145048}}6年）、{{jalink|1866年|Q7712}}（{{jalink|慶応|Q776775}}2年）の修理を経て、{{jalink|1959年|Q5302}}（{{jalink|昭和|Q327567}}34年）に解体修理が実施された<ref name=":0" />。
-
-{{jalink|平安時代|Q193292}}には川枯神社と呼ばれ、のちの嶬峨大宮（ぎかおおみや）、午頭天王（ごずてんのう）神社、現在は八坂神社と呼ばれている<ref name=":1">{{Cite book|title=甲賀市史 第8巻 甲賀市事典|date=2016年12月12日|year=2016|publisher=甲賀市|page=49}}</ref>。
-
-== 祭神 ==
-{{jalink|スサノオ|Q272993|素盞鳴命}}、{{jalink|聖武天皇|Q349263}}、{{jalink|神武天皇|Q200188}}<ref name=":0" />
-
-== 祭事 ==
-
-* 川枯祭 - {{jalink|5月1日|Q2544}}<ref name=":0" />
-** 前日 - 初老の厄男が獅子頭を持つて氏子全戸を廻る
-** 当日 - 午前中に祭典、午後からは神輿渡御（元禄模様の衣装を着けた若衆60人が野洲川を渡る）
-* 的山のおこない - {{jalink|1月7日|Q2228}}
-** 宮座としてその家の長男の息災延命・家運隆昌を祈願するもの等。見学は不可。
-
-== 境内社 ==
-
-* 天神社
-* 熊野社
-* 川枯社
-* 八幡社
-* 八坂社
-
-== 文化財 ==
-
-=== 重要文化財（国指定） ===
-
-* 本殿 - 一間社流造、檜皮葺<ref name=":1" />
-
-=== 市指定文化財 ===
-
-* 神像 - 平安時代作<ref name=":1" />
-*下馬橋 - 1699年（元禄12年）雨乞い祈願成就のお礼として氏子から奉納されたもの。凝った造りの反橋。
-
-== 境内 ==
-<gallery>
-ファイル:Torii, Yasaka shrine known as Kawakare shrine in Gika, Minakuchi.jpg|鳥居
-ファイル:Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 03.jpg|石段付近
-ファイル:Stone bridge at Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 01.jpg|下馬橋
-ファイル:Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 04.jpg|拝殿と本殿
-ファイル:Yasaka shrine known as Kawakare shrine in Gika, Minakuchi 07.jpg|本殿
-ファイル:Cryptomeria japonica at Yasaka shrine known as Kawakare shrine in Gika, Minakuchi.jpg|大杉
-</gallery>
-
-== 脚注 ==
-
-{{Reflist}}
-{{commons|Category:Yasaka-jinja (Gika, Koka)}}
-
-==End Japanese==
 [[Category:Yasaka Shrine]]
 [[Category:近江国の式内社]]
 [[Category:滋賀県の旧村社]]
@@ -189,7 +115,6 @@
 [[Category:甲賀市の重要文化財]]
 [[Category:重要文化財 (建造物)]]
 [[Category:滋賀県内の市町村指定有形文化財]]
-[[Category:Need translation]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

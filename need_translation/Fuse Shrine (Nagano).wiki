@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Fuse_Shrine_%28Nagano%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
-
 {{Expand Japanese|布制神社}}
 
 {{Infobox religious building
@@ -59,105 +57,19 @@
 
 ==References==
 
-[[Category:Shikinaisha]]
-[[Category:Shikinai Shōsha]]
-[[Category:Shikinai Ronsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Shinano Province]]
-
 [[JA:布制神社]]
 
-{{wikidata link|Q85880047|ja|布制神社}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
+{{wikidata link|Q85880047|ja|布制神社|check_date=2026-05-14}}
 
 {{translated page|ja|布制神社|version=107314608|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{出典の明記|date=2025年11月}}
-{{神社
-|名称   = 布制神社
-|画像 = [[File:布制神社.jpg|250px]]<br />鳥居と拝殿
-|所在地 = {{jalink|長野県|Q127877}}{{jalink|長野市|Q128849}}篠ノ井布施五明235
-|位置 = {{WikidataCoord}}
-|祭神   = {{jalink|大彦命|Q11435420}}
-|社格   = 旧{{jalink|村社}}、{{jalink|式内社}}論社
-|創建   = 不詳
-|本殿   = 
-|別名   = 
-|例祭   = 9月最終日曜
-|神事   = 
-|地図 = {{Location map|Japan Nagano|label=布制神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
-}}
-'''布制神社'''（ふせじんじゃ）は、{{jalink|長野県|Q127877}}{{jalink|長野市|Q128849}}{{jalink|篠ノ井市|Q11603530|篠ノ井}}布施五明下六反に鎮座している神社。
-
-同名の神社は、当神社（篠ノ井布施五明）の他に、同地区内に2社ある（{{jalink|布制神社 (長野市篠ノ井石川)||篠ノ井石川}}、{{jalink|布制神社 (長野市篠ノ井山布施)||篠ノ井山布施}}）。
-
-祭神は{{jalink|大彦命|Q11435420}}であり、配神に{{jalink|トヨウケビメ|Q2983724|豊受比売大神}}、{{jalink|タケミナカタ|Q9150391|健御名方命}}、{{jalink|八坂刀売神|Q9150392|矢坂斗女命}}である。境内には幣殿の他、神輿殿や祠、{{jalink|北野天満宮|Q662176}}の御神霊等も祀られている。
-
-== 概要 ==
-{{jalink|大彦命|Q11435420}}を祭神とする神である。創建時期は古く、日本最古の官社名を記した書である「{{jalink|延喜式神名帳|Q11064932|延喜式神名張}}」（927年）にも記載されているが正確な創建年代はわかっていない。
-
-以前の社殿は{{jalink|善光寺地震|Q11418893}}により崩壊後、{{jalink|嘉永|Q1146125}}4年（1851年）に再建されたものであったが、老朽化によって150年後の{{jalink|平成|Q234510}}15年（2003年）の9月に全面改築が行われ現在の社殿となった。
-
-社殿の最奥には{{jalink|文化|Q11042}}6年（1809年）に造営された一間社流造で{{jalink|花鳥風月|Q11615743}}の彫刻が多く施された本殿が安置されている。
-
-・{{jalink|布施本荘}}は当社の荘園名だったとされている。
-
-・{{jalink|江戸時代|Q184963}}の末頃に{{jalink|川柳将軍塚古墳|Q17222794}}を地域の若者達が盗掘を試みた。しかし埋蔵物の多さに仰天して{{jalink|松代藩|Q903575}}に届け出ることとした。発掘品は当社に納めるようにとの松代藩の裁定に従い、当社の宝物として保管された。後に一部は{{jalink|長野市立博物館|Q11654184}}に移された。
-
-== 境内 ==
-同境内には神輿殿、天王社（津島社）、養蚕社、秋葉社、金毘羅社、皇太神宮、山ノ神社、天満宮、飯綱社、太郎社、侍従社、の祠、北野天満宮の社が存在する。
-
-* 神輿殿
-{{jalink|大正|Q329174}}3年（{{jalink|1914年|Q2083}}）に布施村が町制を施行し、篠ノ井町になったことを記念して始まった祇園祭の際に使用される宮型神輿が納められている。
-
-祇園祭は7月の最終土・日曜日に行われ、その1週間前の日曜日には同境内に祀られている天王社(津島社)の御神体を神輿に乗せ篠ノ井駅通りに設けられた仮宮に遷座安置する儀式「天王下し」が行われ、最終日には「天王上げ」の神事が執り行われ、神輿殿に納められる。
-
-* 天王社（津島社） - 祭神は{{jalink|スサノオ|Q272993|素戔嗚命}}。
-* 養蚕社 - 祭神は{{jalink|保食神|Q2280323}}。
-* 秋葉社 - 祭神は{{jalink|火之迦具土神}}（火産神）。
-* 金毘羅社 - 祭神は{{jalink|大己貴命}}（大穴牟遅命・大国主命）。
-* 皇太神宮 - 祭神は{{jalink|天照大神|Q455602}}。
-* 山ノ神社 - 祭神は{{jalink|オオヤマツミ|Q386563|大山津見神}}。
-* 天満宮 - 祭神は{{jalink|菅原道真|Q382005|菅原道真公}}。
-* 飯綱社 - 祭神は{{jalink|豊受大神}}（豊宇気毘売神）。
-* 太郎社 - 祭神は{{jalink|大宜都比売神}}。
-* 侍従社 - 祭神は{{jalink|侍従大神}}。
-* 北野天満宮幣殿 - 京都府上京区に鎮座する{{jalink|北野天満宮|Q662176}}の御神霊を平成15年(2003年)9月5日に御分霊し、祀られている。
-
-== 鎮座地 ==
-長野県長野市篠ノ井布施五明235番地
-
-== アクセス ==
-{{jalink|東日本旅客鉄道|Q499071|JR東日本}}・{{jalink|しなの鉄道|Q11254401}}{{jalink|篠ノ井駅|Q5357193}}から徒歩10分弱
-
-== 出典 ==
-* 教部省 編『特選神名牒』,磯部甲陽堂,1925. 国立国会図書館デジタルコレクションinfo:ndljp/pid/1919019
-* 太田亮 著『信濃』,磯部甲陽堂,大正13. 国立国会図書館デジタルコレクション <nowiki>https://dl.ndl.go.jp/pid/982146</nowiki> (参照 2025-05-23)
-* 村岡良弼 著『甲信紀程』巻下,朝野利兵衛,明43.1. 国立国会図書館デジタルコレクション <nowiki>https://dl.ndl.go.jp/pid/765021</nowiki> (参照 2025-05-23)
-
-== 脚注 ==
-{{Reflist}}
-
-{{shinto-stub}}
-{{pref-stub|pref=長野県}}
-{{神道 横}}
-
-==End Japanese==
 [[Category:長野市の神社]]
 [[Category:長野市の建築物]]
 [[Category:長野市の歴史]]
 [[Category:長野県の旧郷社]]
 [[Category:信濃国の式内社]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
-[[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Pages with 750+ untranslated japanese characters]]
-[[Category:Need translation]]
+[[Category:Shikinaisha]]
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Shinano Province]]
