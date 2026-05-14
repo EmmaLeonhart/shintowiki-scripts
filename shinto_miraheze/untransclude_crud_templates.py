@@ -233,6 +233,48 @@ def page_exists(site, title: str) -> bool:
     return page.exists
 
 
+REMOVED_TEMPLATE_PLACEHOLDER_BODY = (
+    "<noinclude>\n"
+    "This template is the catch-all replacement for templates listed under "
+    "[[:Category:CRUD templates]]. When a crud template is untranscluded "
+    "by ``untransclude_crud_templates.py``, every call to it is rewritten "
+    "to ``{{Removed template|...}}`` so the original parameter data is "
+    "preserved on the page even though the template itself is being "
+    "deleted. This page intentionally ignores all parameters and renders "
+    "a brief notice.\n"
+    "[[Category:Maintenance templates]]\n"
+    "</noinclude>"
+    "<includeonly>"
+    "<span style=\"color:#888;font-size:smaller\">(removed template)</span>"
+    "</includeonly>"
+)
+
+
+def ensure_removed_template(site, run_tag: str) -> bool:
+    """If Template:Removed template doesn't exist, create it with the
+    placeholder body. Returns True if it exists (now or already).
+    """
+    page = site.pages[REMOVED_TEMPLATE_TITLE]
+    if page.exists:
+        return True
+    summary = (
+        f"create placeholder for crud-template untransclusion "
+        f"{run_tag}"
+    ).strip()
+    try:
+        page.save(
+            REMOVED_TEMPLATE_PLACEHOLDER_BODY,
+            summary=summary,
+            minor=False,
+            bot=True,
+        )
+        print(f"Created {REMOVED_TEMPLATE_TITLE} (placeholder)")
+        return True
+    except Exception as e:
+        print(f"FATAL: failed to create {REMOVED_TEMPLATE_TITLE}: {e}", file=sys.stderr)
+        return False
+
+
 # ─── main ───────────────────────────────────────────────────
 
 
@@ -260,20 +302,20 @@ def main() -> int:
     site.login(username, password)
     print(f"Logged in as {username}")
 
-    # Step 0: placeholder must exist on the wiki before we rewrite anything
-    # to point at it. Apply-mode hard-fail; dry-run warn-and-continue so
-    # the reviewer can still see the planned diff.
+    # Step 0: placeholder must exist on the wiki before we rewrite
+    # anything to point at it. In apply mode we auto-create it with
+    # the canned placeholder body so the user doesn't have to
+    # remember; dry-run just warns since no edits will follow.
     if not page_exists(site, REMOVED_TEMPLATE_TITLE):
-        msg = (
-            f"{REMOVED_TEMPLATE_TITLE} does not exist on the wiki. "
-            f"Create it (a brief 'this template has been removed' "
-            f"placeholder that ignores its parameters) before running "
-            f"with --apply."
-        )
         if args.apply:
-            print(f"FATAL: {msg}", file=sys.stderr)
-            return 2
-        print(f"WARN (dry-run): {msg}")
+            if not ensure_removed_template(site, args.run_tag):
+                return 2
+        else:
+            print(
+                f"WARN (dry-run): {REMOVED_TEMPLATE_TITLE} does not "
+                f"exist on the wiki yet; apply-mode would auto-create "
+                f"it with the placeholder body."
+            )
 
     # Step 1: gather crud templates (capped by --max-templates per run)
     all_crud_titles = list(iter_category_members(site, SOURCE_CATEGORY))

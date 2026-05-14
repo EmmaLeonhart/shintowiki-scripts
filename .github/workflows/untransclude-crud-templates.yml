@@ -9,11 +9,16 @@ name: Untransclude CRUD Templates
 #
 # Pacing is intentionally gentle (--max-templates 10, --max-pages 10,
 # --max-edits 100) because rewriting transclusions is intrusive.
-# Trigger manually at first to confirm behaviour; convert to a
-# schedule once the .state file shows steady progress.
+# The per-run caps + cleanup-loop's 6h cadence keep daily edit count
+# bounded; human can intervene any time between runs.
+#
+# Called both directly (workflow_dispatch) and from cleanup-loop.yml
+# (workflow_call) where it slots between the general cleanup job and
+# the per-namespace orchestrators.
 
 on:
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
