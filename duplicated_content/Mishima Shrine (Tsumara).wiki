@@ -84,45 +84,7 @@
 {{wikidata link|Q134926910|ja|三島神社 (南伊豆町妻良)}}
 
 {{translated page|ja|三島神社 (南伊豆町妻良)|version=103521170|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 三島神社
-|画像 = {{画像募集中|cat=賀茂郡}}
-{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=250|frame-height=|coord={{coord|34|39|29.1|N|138|47|25.4|E}}}}
-|所在地 = {{jalink|静岡県|Q131320}}{{jalink|賀茂郡|Q961511}}{{jalink|南伊豆町|Q1203741}}妻良828ｰ1
-|位置   = {{coord|34|39|29.1|N|138|47|25.4|E|region:JP-22_type:landmark}}
-|祭神   = 大津往命
-|社格   = {{jalink|式内社}}、旧{{jalink|村社}}
-|創建   = 
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = 11月2日
-|神事   = 
-|地図 = {{Location map|Japan Shizuoka|label=三島神社|coordinates=
-{{coord2|34|39|29.1|N|138|47|25.4|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-}}
-'''三島神社'''（みしまじんじゃ）は、{{jalink|静岡県|Q131320}}{{jalink|賀茂郡|Q961511}}{{jalink|南伊豆町|Q1203741}}妻良（めら）にある{{jalink|神社|Q845945}}<ref>[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401082 三島神社] - 静岡県神社庁</ref>。
-
-== 概要 ==
-南伊豆町の西部にある妻良(めら)地区の南方、{{jalink|国道136号|Q11421406}}沿いの西側に鎮座している。
-
-創建は不詳だが、{{jalink|式内社}}である'''大津往命神社'''（おおつのゆきのみことじんじゃ）に比定され、『{{jalink|伊豆国神階帳|Q17193087}}』にも「従四位上 をゝつゆき姫の明神」と記されている古社である<ref name="gen">[https://genbu.net/data/izu/misima9_title.htm 三島神社] - 玄松子</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140138-01.html 三島神社] - 延喜式神社の調査</ref>。
-
-{{jalink|明治|Q3125096}}6年（{{jalink|1873年|Q7757}}）に村社に列する<ref name="engi"/>。
-
-== 祭神 ==
-* 大津往命（おおつのゆきのみこと）
-
-== 脚注 ==
-{{Reflist}}
-
-== 外部リンク ==
-* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401082 三島神社] - 静岡県神社庁
-
-==End Japanese==
 [[Category:静岡県の旧村社]]
 [[Category:History of Minamiizu]]
 [[Category:Buildings in Minamiizu]]
@@ -130,4 +92,3 @@
 [[Category:三島・大山祇信仰]][[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Need translation]]

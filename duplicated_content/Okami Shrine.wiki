@@ -52,66 +52,6 @@
 [[Category:Shikinaisha in Echizen Province]]
 
 {{wikidata link|Q135040229}}
-
-==merged content==
-[[Category:Pages with duplicated content]]
-
-{{Infobox religious building
-| name = Okami Shrine (Q135040229)
-| native_name = 意加美神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Okami Shrine (Q135040229)
-| coordinates = {{coord|36.126696|136.165178}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Okami Shrine'''|意加美神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Echizen Province]].
-
-== instance of (P31) ==
-
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
-** Series ordinal: 1724
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945|1=Shinto shrine}}
-* {{ill|Shikinai Shōsha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}}
-* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342|1=Kokuhei-sha}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182275</ref>
-* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062|1=Engishiki seat}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182275</ref>
-** Series ordinal: 1734
-
-* {{ill|Shikinai Hiteisha|lt=Shikinai Hiteisha|ja|比定社|qid=Q135026601|1=Shikinai Hiteisha}}
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Echizen Province|lt=List of Shikinaisha in Echizen Province|ja|越前国の式内社一覧|qid=Q11636413|1=List of Shikinaisha in Echizen Province}}
-** Series ordinal: 88
-** P155: {{ill|Kumetano Shrine|lt=Kumetano Shrine|qid=Q135040228|1=Kumetano Shrine}}
-** P156: {{ill|Achihaseno Shrine|lt=Achihaseno Shrine|qid=Q135040230|1=Achihaseno Shrine}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Echizen Province|lt=Echizen Province|ceb|Echizen|cs|Provincie Ečizen|de|Provinz Echizen|en|Echizen Province|es|Provincia de Echizen|fa|ولایت اچیزن|fr|Province d'Echizen|gl|Provincia de Echizen|id|Provinsi Echizen|it|Echizen (provincia)|ja|越前国|ko|에치젠국|lt|Ečidzeno žemė|nl|Echizen (provincie)|pt|Província de Echizen|ru|Этидзэн (провинция)|simple|Echizen Province|sk|Ečizen (provincia)|sr|Провинција Ечизен|tr|Echizen (vilayet)|uk|Провінція Етідзен|zh_min_nan|Etizen-kok|zh_yue|越前國|zh|越前國|qid=Q1047144|1=Echizen Province}}
-* {{ill|Sakai District, Fukui|lt=Sakai district|en|Sakai District, Fukui|ja|坂井郡|zh|坂井郡|qid=Q7402764|1=Sakai District, Fukui}}
-
-== coordinate location (P625) ==
-
-* {{coord|36.126696|136.165178}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182275</ref>
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 182275
-** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299|1=Kokugakuin University Shrine database}}
-
-==References==
-
-[[Category:Wikidata generated shikinaisha pages|Okami Shrine (Q135040229)]][[Category:Shikinaisha|Okami Shrine (Q135040229)]][[Category:Shikinaisha|Okami Shrine (Q135040229)]][[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Echizen Province]]
-
-{{wikidata link|Q135040229}}
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:qqqq]]

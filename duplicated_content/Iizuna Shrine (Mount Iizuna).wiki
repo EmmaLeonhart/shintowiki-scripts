@@ -106,130 +106,9 @@
 [[JA:飯縄神社]]
 
 {{wikidata link|Q17238950|co|commons:Category:Iizuna-jinja|ja|飯縄神社}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 
 {{translated page|ja|飯縄神社|version=106753027|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{redirect|皇足穂命神社|長野市信州新町にある神社|皇足穂命神社 (信州新町)}}
-{{神社
-|名称   = 飯縄神社
-|画像 = [[ファイル:飯縄神社 (Iizuna Zinja).jpg|270px|里宮拝殿]]<br />里宮拝殿
-|所在地 = {{jalink|長野県|Q127877}}{{jalink|長野市|Q128849}}富田380
-|位置   = 奥社：{{ウィキ座標2段度分秒|36|44|10.9|N|138|7|51.3|E|display=inline}}<br/>里宮：{{ウィキ座標2段度分秒|36|40|50.9|N|138|10|7|E}}
-|祭神   = {{jalink|大戸道尊||大戸道命}}、{{jalink|大戸辺尊||大戸辺命}}、{{jalink|保食命}}
-|社格   = 旧{{jalink|郷社}}
-|創建   = 
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = {{jalink|例祭|Q11385469}}宵祭{{jalink|10月7日|Q2926}}夕刻（里宮）<br />例祭{{jalink|10月8日|Q2924}}（里宮）
-|神事   = {{jalink|祈年祭|Q118906710}}{{jalink|5月8日|Q2555}}（里宮）<br />{{jalink|飯縄山|Q11666652}}{{jalink|開山祭|Q11655214}}{{jalink|6月5日|Q2622}}（一の鳥居・奥社）<br />{{jalink|大祓式}}{{jalink|12月8日|Q2301}}（里宮）
-|地図   = {{Location map+|Japan Nagano|width=210|float=center|caption=|places=
-{{Location map~|Japan Nagano|lat_deg=36|lat_min=44|lat_sec=10.9|lon_deg=138|lon_min=7|lon_sec=51.3|position=top|label=奥社|mark=Shinto torii icon vermillion.svg|marksize=20}}
-{{Location map~|Japan Nagano|lat_deg=36|lat_min=40|lat_sec=50.9|lon_deg=138|lon_min=10|lon_sec=7|position=bottom|label=里宮|mark=Shinto torii icon vermillion.svg|marksize=20}}}}
-{{OSM Location map|coord={{coord|36.708368|N|138.149745|E}}|fullscreen-option=1|zoom=11|float=center|width=200|caption=|title=|mark-coord1={{coord|36|44|10.9|N|138|7|51.3|E}}|label1=奥社|label-pos1=top|mark-size1=8|mark-coord2={{coord|36|40|50.9|N|138|10|7|E}}|label2=里宮|label-pos2=top|mark-size2=8}}
-}}
-'''飯縄神社'''（いいづなじんじゃ）は、{{jalink|長野県|Q127877}}{{jalink|長野市|Q128849}}富田にある{{jalink|神社|Q845945}}。全国に{{jalink|祭祀}}されている飯縄神社の{{jalink|惣社}}である<ref>[http://www.iizuna-jinnjya.jp/goaisatu.htm 飯縄神社 公式ホームページ]</ref>。{{jalink|近代社格制度|Q712534|社格}}は{{jalink|旧郷社}}。
-
-== 歴史 ==
-* 270年頃{{jalink|飯縄山|Q11666652}}山頂に{{jalink|天神|Q1305727}}{{jalink|大戸道尊}}を祀り、{{jalink|飯縄大明神}}と称す<ref>[http://www.iizuna-jinnjya.jp/yuisyo.htm 飯縄神社 由緒]</ref>。
-* 本地を{{jalink|大日如来|Q239847}}とし、{{jalink|848年|Q30380}}（{{jalink|嘉祥|Q1373157}}元年）{{jalink|3月|Q110}}学問行者が飯縄山に入山し、如来の尊容を拝す。
-* {{jalink|1233年|Q5421}}（{{jalink|天福 (日本)|Q1194452|天福}}元年）{{jalink|信濃国|Q289250}}荻野（{{jalink|信州新町|Q1042382}}）の{{jalink|地頭|Q1329805}} 伊藤兵部太夫豊前守忠綱が、飯縄大明神のお告げにより入山し、山頂に{{jalink|飯縄権現|Q11666654|飯縄大権現}}を勧請する。忠綱の子、盛綱も忠綱に従い入山し、{{jalink|荼枳尼天|Q1127224}}の法を修得、忠綱より飯縄の法<ref>{{jalink|管狐|Q4451648}}を使う独特の法術</ref>を受継ぎ、飯縄原始{{jalink|忍法|Q3342041}}を確立、自ら「千日太夫」と称し、{{jalink|飯縄信仰}}を全国に広げると共に忍法の祖となる。
-* {{jalink|1873年|Q7757}}（{{jalink|明治|Q3125096}}6年）{{jalink|5月|Q119}}{{jalink|長野県庁|Q22124742}}より'''皇足穂命神社'''（すめたるほのみことじんじゃ）の称号を与えられる。
-
-== 神官仁科氏系図 ==
-以下は飯縄神社の神官を代々務めた仁科氏の系図である<ref>信濃デジタルコモンズ「（水内郡）仁科氏系譜 写[https://www.ro-da.jp/shinshu-dcommons/museum_history/03OD0621101700]」</ref>。ただし{{jalink|平維盛|Q3055506}}の末裔とするのはあくまで自称であり、実際は{{jalink|仁科盛弘}}-{{jalink|仁科盛家|Q76970446}}-{{jalink|仁科盛遠|Q11376460}}-{{jalink|仁科盛勝}}（{{jalink|承久の乱|Q1372308}}で没落）の系譜と、{{jalink|関盛長}}の子・{{jalink|仁科盛忠}}（盛勝の養子）から始まる系譜に分かれると考えられる<ref>北澤繁樹『仁科氏』東京図書出版会、2010年</ref>。
-<div class="NavFrame" style="width:100%;">
- <div class="NavHead" style="padding:1.5px; line-height:1.7; letter-spacing:1px;">仁科氏</div>
- <div class="NavContent" style="text-align:left;">
-{{familytree/start|style=font-size:85%}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|平維盛|Q3055506}}'''}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|平高清|Q11061400|妙覚（平六代）}}'''}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|関盛兼||関玄蕃丞盛兼}}'''<br/>{{jalink|平盛兼|Q11483417}}を指すか}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|関清久}}'''<br/>山田左京亮清久とも|02={{jalink|仁科盛朝}}}}
-{{familytree |border=0| |||||||:}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|関盛元}}'''<br/>実{{jalink|仁科盛遠|Q11376460}}子}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|関盛広}}'''<br>玄蕃丞}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|関盛長}}'''<br/>{{jalink|日向国|Q513737|日向守}}}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛忠}}'''<br/>関孫三郎<br/>称横瀬氏<br/>従五位下<br/>仁科弾正少弼}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛国|Q11376456}}'''<br/>従五位下<br/>仁科弾正少弼|02={{jalink|仁科盛家|Q76970446}}}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛房|Q132431526}}'''<br/>従五位下<br/>仁科弾正少弼}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科持盛}}'''<br/>仁科左近大夫}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛直|Q136693830}}'''<br/>従五位下<br/>仁科弾正少弼|02={{jalink|高梨清秀|Q11670696|高梨伊豆守清秀}}室}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科明盛|Q136693832}}'''<br/>従五位下<br/>仁科弾正少弼}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛胤}}'''<br/>従五位下<br/>仁科弾正少弼|02={{jalink|丸山盛慶|Q11368246|丸山肥後守盛慶}}室}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03||| 01='''{{jalink|仁科盛能|Q11376459}}'''<br/>従五位下<br/>仁科弾正少弼|02={{jalink|青柳清長|Q11661951|青柳伊勢守清長}}|03={{jalink|飯森春盛||飯森十郎春盛}}}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03||| 01='''{{jalink|仁科盛康|Q11376457}}'''<br/>従五位下<br/>仁科修理亮|02={{jalink|星野盛道||星野内膳盛道}}|03={{jalink|仁科盛孝}}<br/>孫三郎
-<br/>仁科玄蕃丞}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03||| 01='''{{jalink|仁科盛政|Q11376458}}'''<br/>従五位下<br/>仁科右衛門大夫|02={{jalink|仁科盛清}}<br/>仁科甚十郎|03={{jalink|溝口義忠||溝口美作守義忠}}室}}
-{{familytree |border=0| |||||||:}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛孝}}'''<br/>孫三郎
-<br/>仁科玄蕃丞<br/>実盛能子}}
-{{familytree |border=0| |||||||:}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛清}}'''<br/>仁科甚十郎<br/>実盛康子}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛正}}'''<br/>仁科民部|02={{jalink|仁科盛吉}}<br/>玄蕃}}
-{{familytree |border=0| |||||||:}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛吉}}'''<br/>仁科甚十郎<br/>実盛清子}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛久}}'''<br/>仁科玄蕃}}
-{{familytree |border=0| |||||||!}}
-{{familytree |border=0|||||||01||||| 01='''{{jalink|仁科盛重}}'''<br/>仁科右近}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛嗣}}'''<br/>仁科玄蕃|02={{jalink|大田盛寛||大田平左衛門盛寛}}}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03|04|| 01='''{{jalink|仁科盛常}}'''<br/>仁科右近|02=仁科善蔵|03=仁科金五郎|04=仁科伴五郎}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛林}}'''<br/>仁科玄蕃|02={{jalink|丸山盛慶|Q11368246|丸山盛貞}}<br/>求馬}}
-{{familytree |border=0| |||||||)|-|-|.}}
-{{familytree |border=0|||||||01|02|||| 01='''{{jalink|仁科盛敦}}'''<br/>仁科甚十郎|02={{jalink|真了沙弥尼}}<br/>{{jalink|近江国|Q843882}}山門坂本{{jalink|宝林寺|Q10949422}}}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03|04|| 01='''{{jalink|仁科盛長}}'''<br/>仁科甚十郎|02=仁科美之三郎|03=仁科長美|04=仁科盛章<br/>圭之助}}
-{{familytree |border=0| |||||||)|-|-|v|-|-|.}}
-{{familytree |border=0|||||||01|02|03||| 01='''{{jalink|仁科盛保}}'''<br/>従五位下<br/>仁科甚十郎|02={{jalink|仁科盛和}}<br/>仁科慶之進|03=仁科寅之進}}
-{{familytree/end}}
-</div>
-</div>
-
-== 皇足穂命神社の大杉 ==
-長野市指定天然記念物。樹高約30ｍ、目通り周囲4.82ｍと社叢の中でも{{jalink|スギ|Q147388|杉}}としては、まれに見る巨樹である。幹の部分に{{jalink|キツツキ}}の穴があるほかは損傷もなく樹勢も盛んで姿もよい。また社殿に近く御神木としてふさわしい位置である。この神社の社叢の高木には過去幾度か落雷がありそのつど１本ずつ損傷を受けたがこの大杉にはいままで落雷がなかったのは幸いである<ref>長野市教育委員会文化財課編『[https://web.archive.org/web/20111221062200/https://www.city.nagano.nagano.jp/uploaded/attachment/5604.pdf#search='皇足穂命' 皇足穂命神社の大杉]』より一部引用</ref>。
-
-== 脚注 ==
-
-{{Reflist}}
-
-== 参考文献 ==
-* {{jalink|谷川健一|Q2392596}} 編『日本の神々 -神社と聖地- 9 美濃・飛騨・信濃』{{jalink|白水社|Q4346470}}、2000年
-
-== 関連項目 ==
-* {{jalink|飯縄山|Q11666652}}
-* {{jalink|仁科氏|Q11376452}} - 神官を出す。
-
-== 外部リンク ==
-* [http://www.iizuna-jinnjya.jp/ 飯縄神社公式ホームページ]
-* [http://bunkazai-nagano.jp/modules/dbsearch/page1091.html 皇足穂命神社の大杉]
-
- 
-
-==End Japanese==
 [[Category:長野市の神社]]
 [[Category:長野県の旧郷社]]
 [[Category:信濃国の式内社]][[Category:Pages with 50+ untranslated japanese characters]]
@@ -239,4 +118,3 @@
 [[Category:Pages with 250+ untranslated japanese characters]]
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Need translation]]

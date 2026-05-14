@@ -91,47 +91,10 @@
 {{wikidata link|Q134930713|ja|三島神社 (南伊豆町入間)}}
 
 {{translated page|ja|三島神社 (南伊豆町入間)|version=103522609|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 三島神社
-|画像 = {{画像募集中|cat=賀茂郡}}
-{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=250|frame-height=|coord={{coord|34|37|48.6|N|138|48|33|E}}}}
-|所在地 = {{jalink|静岡県|Q131320}}{{jalink|賀茂郡|Q961511}}{{jalink|南伊豆町|Q1203741}}入間713
-|位置   = {{coord|34|37|48.6|N|138|48|33|E|region:JP-22_type:landmark}}
-|祭神   = {{jalink|事代主命}}
-|社格   = {{jalink|式内社}}論社
-|創建   = 
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = 11月2日
-|神事   = 
-|地図 = {{Location map|Japan Shizuoka|label=三島神社|coordinates=
-{{coord2|34|37|48.6|N|138|48|33|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-}}
-'''三島神社'''（みしまじんじゃ）は、{{jalink|静岡県|Q131320}}{{jalink|賀茂郡|Q961511}}{{jalink|南伊豆町|Q1203741}}入間（いるま）にある{{jalink|神社|Q845945}}<ref>[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401116 三島神社] - 静岡県神社庁</ref>。
-
-== 概要 ==
-南伊豆町の南西、入間(いるま)地区の北方山麓に鎮座している。
-
-創建は不詳だが、{{jalink|式内社}}である'''穂都佐(和)気命神社'''（ほつさ(わ)けのみことじんじゃ）の論社であり、『{{jalink|伊豆国神階帳|Q17193087}}』にも「従四位上 をつさわけの明神」と記されている古社である<ref name="gen">[https://genbu.net/data/izu/misima2_title.htm 三島神社] - 玄松子</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140137-02.html 三島神社] - 延喜式神社の調査</ref>。
-
-== 祭神 ==
-* {{jalink|事代主命}}
-
-== 脚注 ==
-{{Reflist}}
-
-== 外部リンク ==
-* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401116 三島神社] - 静岡県神社庁
-
-==End Japanese==
 [[Category:静岡県の神社]]
 [[Category:History of Minamiizu]]
 [[Category:Buildings in Minamiizu]]
 [[Category:伊豆国の式内社]]
 [[Category:三島・大山祇信仰]][[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Need translation]]

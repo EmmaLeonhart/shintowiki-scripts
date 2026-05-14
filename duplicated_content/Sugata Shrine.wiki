@@ -62,72 +62,7 @@
 [[Category:Shikinaisha in Harima Province]]
 
 {{wikidata link|Q135070188|check_date=2026-05-10}}
-
-==merged content==
-[[Category:Pages with duplicated content]]
-
-{{Infobox religious building
-| name = Sugata Shrine (Q135070188)
-| native_name = 菅田神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Sugata Shrine (Q135070188)
-| coordinates = {{coord|34.877585|134.976287}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Sugata Shrine'''|菅田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Harima Province]].
-
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
-* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
-** Series ordinal: 2505
-* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287}}
-* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=183050</ref>
-* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=183050</ref>
-** Series ordinal: 2509
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Harima Province|lt=List of Shikinaisha in Harima Province|ja|播磨国の式内社一覧|qid=Q11498723}}
-** Series ordinal: 44
-** P155: {{ill|Sumiyoshi Shrine (Q135041176)|lt=Sumiyoshi Shrine|qid=Q135041176}}
-** P156: {{ill|Konashino Shrine|lt=Konashino Shrine|qid=Q135041178}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Harima Province|lt=Harima Province|be|Харыма (правінцыя)|ca|Província de Harima|ceb|Harima (baranggay sa Hapon)|cs|Provincie Harima|de|Provinz Harima|en|Harima Province|envoyage|Harima|es|Provincia de Harima|fa|ولایت هاریما|fr|Province de Harima|gl|Provincia de Harima|id|Provinsi Harima|it|Harima (provincia)|ja|播磨国|ko|하리마국|lt|Harimos žemė|nl|Harima (provincie)|pt|Província de Harima|ru|Харима (провинция)|simple|Harima Province|sk|Harima (provincia)|sr|Провинција Харима|tr|Harima (vilayet)|uk|Провінція Харіма|zh_min_nan|Harima-kok|zh|播磨國|qid=Q1047523}}
-* {{ill|Kamo district|lt=Kamo district|ja|賀茂郡 (播磨国)|zh|賀茂郡 (播磨國)|qid=Q11634953}}
-
-== coordinate location (P625) ==
-
-* {{coord|34.877585|134.976287}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=183050</ref>
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 183050
-** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299}}
-
-== said to be the same as (P460) ==
-
-* {{ill|Sukatano Shrine|lt=Sukatano Shrine|qid=Q135041177}}
-* {{ill|Sukatano Shrine|lt=Sukatano Shrine|qid=Q135041177}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=183050</ref>
-** P2868: {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
-
-==References==
-
-[[Category:Wikidata generated shikinaisha pages|Sugata Shrine (Q135070188)]][[Category:Shikinaisha|Sugata Shrine (Q135070188)]][[Category:Shikinai Ronsha]]
 [[Category:Shikinaisha|Sugata Shrine (Q135070188)]][[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Harima Province]]
-
-{{wikidata link|Q135070188}}
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:qqqq]]

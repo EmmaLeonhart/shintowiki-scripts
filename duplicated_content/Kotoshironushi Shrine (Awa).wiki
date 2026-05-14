@@ -74,61 +74,12 @@
 [[JA:事代主神社 (阿波市)]]
 
 {{wikidata link|Q48758503|ja|事代主神社 (阿波市)}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 
 {{translated page|ja|事代主神社 (阿波市)|version=102294823|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{脚注の不足|date=2022-12}}
-{{神社
-|名称= 事代主神社
-|画像= [[File:Kotoshironushi Shrine, Awa City.jpg|250px]]<br />拝殿
-|所在地= {{jalink|徳島県|Q160734}}{{jalink|阿波市|Q791587}}{{jalink|市場町伊月|Q55523753}}字宮ノ本100-1
-|位置 = {{WikidataCoord}}
-|祭神= {{jalink|事代主命}}
-|社格= {{jalink|式内社}}・{{jalink|旧郷社}}
-|創建= 不詳
-|本殿= 
-|別名= 
-|例祭= {{jalink|10月10日|Q2921}}
-|神事= 
-|地図 = {{Location map|Japan Tokushima|label=事代主神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
-}}
-'''事代主神社'''（ことしろぬしじんじゃ）は、{{jalink|徳島県|Q160734}}{{jalink|阿波市|Q791587}}{{jalink|市場町伊月|Q55523753}}に鎮座する{{jalink|神社|Q845945}}である。通称は「おっべっさん」。境内は'''伊月農村公園'''として整備されている。
-
-== 歴史 ==
-創建年は不詳。一説によると{{jalink|安寧天皇|Q313345}}の伯父にあたる{{jalink|多臣}}の子孫が{{jalink|出雲族|Q22123990}}を率いて当地の{{jalink|阿波国|Q907457}}伊月にたどり着き、祖神である{{jalink|事代主命}}と祖母の{{jalink|五十鈴依媛命|Q10881557}}を奉斎したと伝わる。
-
-{{jalink|江戸時代|Q184963}}は事代明神、事代大明神と称していた。
-
-== 祭神 ==
-* {{jalink|事代主命}}
-
-== 境内社 ==
-* 鎮守神社
-* 森壱岐神
-* 大住大明神
-
-== 交通 ==
-* {{jalink|徳島自動車道|Q11490216}}「{{jalink|土成インターチェンジ|Q10927770}}」より車で約15分。
-
-== 参考文献 ==
-* 『{{jalink|角川日本地名大辞典|Q4093011}} 36 徳島県』（{{jalink|1986年|Q2430}} ISBN 4040013603）
-
-== 脚注 ==
-{{Reflist}}
-
-{{shinto-stub}}
-[[category:徳島県の神社]]
-
-==End Japanese==
 [[Category:阿波市の歴史]]
 [[Category:阿波市の建築物]]
 [[Category:阿波国の式内社]]
 [[Category:徳島県の旧郷社]][[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Need translation]]

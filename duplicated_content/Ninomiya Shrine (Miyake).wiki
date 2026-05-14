@@ -110,55 +110,9 @@
 [[JA:二宮神社 (三宅村)]]
 
 {{wikidata link|Q134930277|ja|二宮神社 (三宅村)}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 
 {{translated page|ja|二宮神社 (三宅村)|version=102412702|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 后神社
-|画像= {{画像募集中|cat=東京都島嶼部}}
-|所在地 = {{jalink|東京都|Q1490}}{{jalink|三宅村|Q1154797}}{{jalink|坪田村|Q11425774|坪田}}
-|位置 = {{Coord|34|3|37.6|N|139|32|41.4|E}}
-|祭神   = 伊波乃比咩命
-|社格   = {{jalink|式内社}}
-|創建   = 不詳
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = 
-|神事   = 
-|地図 = {{Location map|Japan|label=二宮神社|coordinates=
-{{coord2|34|3|37.6|N|139|32|41.4|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|34|3|37.6|N|139|32|41.4|E}}}}
-}}
-'''二宮神社'''（にのみやじんじゃ）は、{{jalink|東京都|Q1490}}{{jalink|三宅村|Q1154797}}（{{jalink|三宅島|Q1075076}}）にある{{jalink|神社|Q845945}}。
-
-三宅島南東の港・坪田(つぼた)漁港の目前に鎮座している。
-
-'''伊波乃比咩命神社'''（いわのひめのみことじんじゃ）を中心に{{jalink|式内社}}数社、その他周辺小社が数多く合祀されている<ref name="kanko">[https://www.miyakejima.gr.jp/see/ninomiya_shrine/ 二宮神社] - 三宅島観光協会</ref><ref name="chosa">[http://engishiki.org/izu/bun/iz140118-02.html 二宮神社] - 延喜式神社の調査</ref><ref name="miyake-84">[https://www.soumu.metro.tokyo.lg.jp/14miyake/miyakehp/kankousasshi_0503.pdf 三宅島 p.84 (三宅島の式内社)] - 東京都/三宅島観光協会</ref>。
-
-三宅島内にある{{jalink|事代主神}}（三島大明神）の后を祀る3つの神社の内の1つ<ref>[https://www.vill.miyake.tokyo.jp/gyousei/syoukai/history.html 歴史] - 東京都三宅島</ref>。
-
-== 歴史 ==
-中心となっている伊波乃比咩命神社は、元は現在地の北方山中（現・伊波耶観音神社 (坪田観音)）にあり、その後、鎌倉初期に現在地の南西・大路池南方（小倉山、鳥居現存）に遷座し、その後、{{jalink|昭和|Q327567}}29年（{{jalink|1954年|Q18581}}）に現在地に鎮座していた{{jalink|天神信仰|Q66890725}}の{{jalink|菅原神社|Q48532247}}に周辺神社を集約して合祀し、二宮神社と改名した<ref name="chosa"/><ref name="miyake-84"/>。
-
-二宮神社の名の由来は、祭神が箱根三姉妹の次女だからとも解釈できるが、公式には祭神が伴っていたと伝承される次男王子に由来すると説明されている<ref name="kanko"/>。
-
-== 祭神 ==
-* 伊波乃比咩命（いわのひめのみこと） - {{jalink|事代主神}}（三島大明神）の后神の一柱。
-
-『三宅記』の神話によると、三宅島の神社に祀られている三島大明神（事代主神）の三姉妹の后は、{{jalink|箱根|Q11603342}}{{jalink|芦ノ湖|Q187053}}周辺に住んでいた翁媼（老夫婦）の娘たちを、龍神（大蛇）から救って三宅島に迎えたものであり、長女が{{jalink|后神社 (三宅村)|Q134930558|后神社}}に祀られている伊賀牟比売命、次女が二宮神社に祀られている伊波乃比咩命、三女が{{jalink|御笏神社|Q110915859}}に祀られている佐伎多麻比咩命とされる<ref name="chosa-miyake">[http://engishiki.org/izu/bun/iz149900-01.html 三宅島の神社] - 延喜式神社の調査</ref>。
-
-== 脚注 ==
-{{Reflist}}
-
-== 外部リンク ==
-* [https://www.miyakejima.gr.jp/see/ninomiya_shrine/ 二宮神社] - 三宅島観光協会
-
-==End Japanese==
 [[Category:東京都島嶼部の神社]]
 [[Category:三宅村の建築物]]
 [[Category:三宅村の歴史]]
@@ -166,4 +120,3 @@
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
 [[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Need translation]]

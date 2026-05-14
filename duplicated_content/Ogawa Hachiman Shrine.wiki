@@ -64,75 +64,7 @@
 [[Category:Shikinaisha in Shinano Province]]
 
 {{wikidata link|Q135069809}}
-
-==merged content==
-[[Category:Pages with duplicated content]]
-
-{{Infobox religious building
-| name = Ogawahachimanguu
-| native_name = 小川八幡宮
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Ogawahachimanguu
-| coordinates = {{coord|36.615793|137.983458}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-| deity = {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637|1=Hachiman}}
-}}
-
-{{nihongo|'''Ogawa Hachiman Shrine'''|小川八幡宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
-
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945|1=Shinto shrine}}
-* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904|1=Shikinai Ronsha}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
-* {{ill|Shikinai Shōsha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}}
-* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342|1=Kokuhei-sha}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181991</ref>
-* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062|1=Engishiki seat}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181991</ref>
-** Series ordinal: 1450
-
-* {{ill|Hachiman shrine|lt=Hachiman shrine|en|Hachiman shrine|fa|معبد هاچیمان|fr|Sanctuaire Hachiman|it|Santuario di Hachiman|ja|八幡宮|simple|Hachiman shrines|vi|Đền thờ thần Hachiman|qid=Q11390939|1=Hachiman shrine}}
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Shinano Province|lt=List of Shikinaisha in Shinano Province|ja|信濃国の式内社一覧|qid=Q11386164|1=List of Shikinaisha in Shinano Province}}
-** Series ordinal: 23
-** P155: {{ill|Tsumashina Shrine|lt=Tsumashina Shrine|ja|妻科神社|qid=Q11447213|1=Tsumashina Shrine}}
-** P156: {{ill|Moritano Shrine|lt=Moritano Shrine|qid=Q135039929|1=Moritano Shrine}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Shinano Province|lt=Shinano Province|ckb|پارێزگای شینانۆ|cs|Provincie Šinano|de|Provinz Shinano|en|Shinano Province|eo|Provinco Ŝinano|es|Provincia de Shinano|fa|ولایت شینانو|fr|Province de Shinano|gl|Provincia de Shinano|hak|Shinano-koet|id|Provinsi Shinano|it|Shinano (provincia)|ja|信濃国|ko|시나노국|lt|Šinano žemė|ms|Wilayah Shinano|nl|Shinano (provincie)|pl|Prowincja Shinano|pt|Província de Shinano|ru|Синано (провинция)|simple|Shinano Province|sk|Šinano (provincia)|sr|Провинција Шинано|th|แคว้นชินาโนะ|tr|Shinano (vilayet)|uk|Провінція Сінано|zh_min_nan|Sinano-kok|zh_yue|信濃國|zh|信濃國|qid=Q289250|1=Shinano Province}}
-* {{ill|Minochi district|lt=Minochi district|ja|水内郡|zh|水內郡|qid=Q11548296|1=Minochi district}}
-
-== coordinate location (P625) ==
-
-* {{coord|36.615793|137.983458}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181991</ref>
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 181991
-** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299|1=Kokugakuin University Shrine database}}
-
-== said to be the same as (P460) ==
-
-* {{ill|Wokahano Shrine|lt=Wokahano Shrine|qid=Q135039928|1=Wokahano Shrine (Q135039928)}}
-* {{ill|Wokahano Shrine|lt=Wokahano Shrine|qid=Q135039928|1=Wokahano Shrine (Q135039928)}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181991</ref>
-** P2868: {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904|1=Shikinai Ronsha}}
-
-==References==
-
-[[Category:Wikidata generated shikinaisha pages|Ogawahachimanguu]][[Category:Shikinaisha|Ogawahachimanguu]][[Category:Shikinai Ronsha]]
 [[Category:Shikinaisha|Ogawahachimanguu]][[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:Hachiman shrines]]
-[[Category:Shikinaisha in Shinano Province]]
-
-{{wikidata link|Q135069809}}
 [[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
 [[Category:qqqq]]

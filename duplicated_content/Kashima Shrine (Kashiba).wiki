@@ -69,51 +69,9 @@
 [[JA:鹿島神社 (香芝市)]]
 
 {{wikidata link|Q135069030|ja|鹿島神社 (香芝市)}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kanpei-sha]]
 
 {{translated page|ja|鹿島神社 (香芝市)|version=106898763|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 鹿島神社
-|画像 = [[File:Kashima-jinja Kashiba201806.jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
-|所在地 = {{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}下田西1-9-3
-|位置 = {{WikidataCoord}}
-|祭神   = {{jalink|武甕槌大神}}
-|社格   = 旧指定{{jalink|村社}}、{{jalink|式内社}}論社
-|創建   = {{jalink|承安 (日本)|Q1194188|承安}}2年（{{jalink|1172年|Q19687}}）
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = 10月16日
-|神事   = 
-|地図 = {{Location map|Japan Nara|label=鹿島神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-}}
-'''鹿島神社'''（'''鹿嶋神社'''、かしまじんじゃ）は、{{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}下田西にある{{jalink|神社|Q845945}}。
-
-香芝（かしば）市の名前の由来となった神社である<ref name="city-name">[https://www.city.kashiba.lg.jp/soshiki/5/3826.html 香芝市の沿革] - 香芝市</ref>。
-
-== 概要 ==
-JR{{jalink|香芝駅|Q3655907}}の西方近隣、また{{jalink|近鉄大阪線|Q1052545}}の{{jalink|近鉄下田駅|Q6414373}}の北方近隣に鎮座している。
-
-創建は{{jalink|承安 (日本)|Q1194188|承安}}2年（{{jalink|1172年|Q19687}}）3月、{{jalink|源義朝|Q532301}}の家臣であった{{jalink|鎌田政清|Q11651065}}の子・{{jalink|鎌田政光}}が{{jalink|常陸国|Q1055353}}（現・{{jalink|茨城県|Q83273}}）の{{jalink|鹿島神宮|Q706499}}から勧請したのが始まりとされる<ref name="yuisho">[https://kashiba-no-kashima.org/top-page/history/ 由緒] - 鹿島神社</ref><ref name="city-muse">[https://www.city.kashiba.lg.jp/uploaded/attachment/1653.pdf 鹿島神社] - 香芝市二上山博物館</ref>。
-
-また、その鹿島神社の創建に先立って、当地には先行する古社があり、それが{{jalink|大和国の式内社一覧|Q11433427|大和国の式内社}}の1つである'''深溝神社'''（ふかみぞじんじゃ）であるという説も唱えられている<ref name="yuisho"/><ref name="city-muse"/>。
-
-== 祭神 ==
-* {{jalink|武甕槌大神}}
-
-== 脚注 ==
-{{Reflist}}
-
-== 外部リンク ==
-* [https://kashiba-no-kashima.org/ 鹿島神社] - 公式サイト
-
-{{shinto-stub}}
-
-==End Japanese==
 [[Category:奈良県の旧村社]]
 [[Category:香芝市の建築物]]
 [[Category:香芝市の歴史]]
@@ -121,4 +79,3 @@ JR{{jalink|香芝駅|Q3655907}}の西方近隣、また{{jalink|近鉄大阪線|
 [[Category:鹿島神社]][[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Need translation]]

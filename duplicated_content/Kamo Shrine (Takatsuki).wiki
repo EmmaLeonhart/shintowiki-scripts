@@ -100,90 +100,9 @@
 [[JA:鴨神社 (高槻市)]]
 
 {{wikidata link|Q11675604|co|commons:Category:Kamo-jinja (Takatsuki)|ja|鴨神社 (高槻市)}}
-[[Category:Junior Fifth Rank]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kanpei-sha]]
 
 {{translated page|ja|鴨神社 (高槻市)|version=107242107|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 鴨神社
-|画像   = [[File:Kamo-jinja (Takatsuki) keidai.JPG|280px]]<br />拝殿
-|所在地 = {{jalink|大阪府|Q122723}}{{jalink|高槻市|Q335423}}赤大路町42-3
-|位置   = {{ウィキ座標2段度分秒|34|50|21.82|N|135|35|4.14|E|region:JP-27_type:landmark|display=inline,title|name=鴨神社}}
-|祭神   = {{jalink|オオヤマツミ|Q386563|大山積命}}
-|社格   = {{jalink|式内社}}（小）{{jalink|論社|Q135022904}}<br/>旧{{jalink|村社}}
-|創建   = 不詳
-|本殿   = {{jalink|流造|Q210684}}
-|別名   = 
-|例祭   = {{jalink|4月29日|Q2535}}
-|神事   = 
-|地図 = {{Location map|Japan Osaka|label=鴨神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
-}}
-[[File:Kamo 001.jpg|thumb|200px|right|鳥居]]
-'''鴨神社'''（かもじんじゃ）は、大阪府{{jalink|高槻市|Q335423}}にある{{jalink|神社|Q845945}}。{{jalink|式内社}}{{jalink|論社|Q135022904}}で、{{jalink|近代社格制度|Q712534|旧社格}}は{{jalink|村社}}。
-
-== 祭神 ==
-現在の祭神は以下の通り<ref>祭神は[http://kamojinja.web.fc2.com/kamojinja01.html 鴨神社由緒]（公式サイト）による。なお、大山積命は祭神の中でも同サイト内や境内の神社明細帳で別格視される。</ref>。
-* '''{{jalink|オオヤマツミ|Q386563|大山積命}}''' （おおやまづみのみこと）
-* {{jalink|イザナギ|Q813858|伊弉諾尊}} （いざなぎのみこと）
-* {{jalink|イザナミ|Q682306|伊弉冉尊}} （いざなみのみこと）
-* {{jalink|賀茂建角身命|Q11634939|鴨御祖大神}} （かものみおやおおかみ）
-
-祭神について『神社明細帳』等の諸書では大山積神とされるが、後述のように当社を式内社・三島鴨神社とみる説では、祭神は鴨氏の祖神とみられる<ref name="地名"/>。また、当地は三島県主が勢力を持っていた所であることから、その祖神を祭神とみる説もある<ref name="地名"/>。なお『{{jalink|新撰姓氏録|Q1045362}}』では、三島県主後裔の三島宿禰（右京神別）と賀茂県主（山城国神別）は同じ祖先と伝えている<ref name="地名"/>。
-
-== 歴史 ==
-=== 創建 ===
-創建は不詳。社伝では、先住の{{jalink|鴨氏}}一族が創祀し、のち渡来系の三島一族が勢力を伸ばしたため、後述の「三島鴨神社」とも称されたとする<ref>[http://kamojinja.web.fc2.com/kamojinja03.html 摂津・三島の元氏神]（公式サイト）。</ref>。
-
-=== 概史 ===
-{{jalink|平安時代|Q193292}}中期の『{{jalink|延喜式神名帳|Q11064932}}』には{{jalink|式内社}}として「摂津国{{jalink|島下郡|Q10976940}} 三島鴨神社」の記載がある。天坊幸彦が「三島郡の史跡と名勝」で、『大阪府神社明細帳』に「旧記も無御座候へども先前より申伝祭神大山祇命鎮座地所は故島下郡ト称シ（該村往古ハ島下郡ナリ徳川氏ノ代島上郡ヘ編入ノ由申伝）・・・三島鴨トモ俗ニ五位鴨社トモ又三島神トモ申伝来候云々」とあることから、延喜式の三島鴨神社はこの鴨神社であると指摘して以来、当社はその{{jalink|論社|Q135022904}}の1つとなっている。
-
-式内社の他の論社としては三島江に{{jalink|三島鴨神社|Q11355295}}がある。三島鴨神社は{{jalink|島上郡|Q10965808}}の位置にあたることから、郡域としては当社が有力視される<ref name="地名">『大阪府の地名』鴨神社項。</ref>。一方で、『伊予国風土記』逸文では大山積神が「津国の御島」から伊予に移ったと記すが、神の別称として「和多志（渡し）の神」と記すことから、河川から離れた鴨神社はこれに当たらないという指摘もある<ref>松下煌「三島鴨神社」（谷川健一 編『日本の神々 -神社と聖地- 3 摂津・河内・和泉・淡路』（{{jalink|白水社|Q4346470}}））。</ref>。いずれにしても、現在も特定には至っていない。
-
-平安時代末期には、{{jalink|後白河天皇|Q317984}}中宮・{{jalink|建春門院}}が「三島神」に皇子誕生の祈願をしたと伝わる<ref name="ka1">[http://kamojinja.web.fc2.com/kamojinja01.html 鴨神社由緒]（公式サイト）。</ref>。その結果のちの{{jalink|高倉天皇|Q357261}}が誕生し、これを祝して京都五条坂に三島神社が創建されたという<ref name="ka2"/>。ただし院の参詣先は「三島神」であり、これについても三島江の三島鴨神社とみる説がある<ref name="ka2">[http://kamojinja.web.fc2.com/120504-02.html 鴨神社だより]（公式サイト）。</ref>。
-
-{{jalink|明治|Q3125096}}5年（{{jalink|1872年|Q7753}}）、{{jalink|近代社格制度|Q712534}}において{{jalink|村社}}に列した。{{jalink|昭和|Q327567}}46年（{{jalink|1971年|Q2475}}）、本殿・拝殿が新築された。
-
-=== 神階 ===
-* {{jalink|元慶|Q747451}}8年（{{jalink|884年|Q23895}}）12月21日、正六位上から従五位下 （『{{jalink|日本三代実録|Q1052981}}』） - 表記は「三島神」。ただし{{jalink|三島鴨神社|Q11355295}}とする説もある。
-
-== 境内 ==
-<gallery>
-File:Kamo-jinja (Takatsuki) honden.JPG|本殿
-File:Kamo-jinja (Takatsuki) haiden.JPG|拝殿
-File:Kamo 003.jpg|稲荷神社　　
-</gallery>
-
-== 現地情報 ==
-; 所在地
-* {{jalink|大阪府|Q122723}}{{jalink|高槻市|Q335423}}赤大路町42-3
-
-; 交通アクセス
-* 最寄駅：{{jalink|西日本旅客鉄道|Q502125|JR西日本}}{{jalink|JR京都線|Q1195820|京都線}} {{jalink|摂津富田駅|Q59513}} （西北へ徒歩13分）
-
-== 脚注 ==
-{{脚注ヘルプ}}
-{{Reflist|2}}
-
-== 参考文献 ==
-* 天坊幸彦「三島郡の史跡と名勝」（1961年）（大阪府学務部編『大阪府史蹟名勝天然記念物』三島郡（1974年）収録　{{全国書誌番号|73009804}} ）
-* 『日本歴史地名体系 大阪府の地名』（{{jalink|平凡社|Q11482108}}）高槻市 鴨神社項
-
-== 関連項目 ==
-* {{jalink|三島鴨神社|Q11355295}}
-
-== 外部リンク ==
-{{Commonscat|Kamo-jinja (Takatsuki)|鴨神社}}
-* [https://kamojinja.amebaownd.com/ 鴨神社]（公式サイト）
-* [http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai2sibu/takatuki-city/m08_29_takatuki_kamo.html 鴨神社]（大阪府神社庁）
-
-{{神道 横}}
-
-==End Japanese==
 [[Category:大阪府の神社]]
 [[Category:高槻市の建築物]]
 [[Category:高槻市の歴史]]
@@ -197,4 +116,3 @@ File:Kamo 003.jpg|稲荷神社　　
 [[Category:Pages with 250+ untranslated japanese characters]]
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Need translation]]

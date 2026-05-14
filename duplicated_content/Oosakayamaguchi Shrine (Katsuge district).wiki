@@ -78,55 +78,10 @@
 [[JA:大坂山口神社 (香芝市逢坂)]]
 
 {{wikidata link|Q135069036|ja|大坂山口神社 (香芝市逢坂)}}
-[[Category:Junior Fifth Rank]]
-[[Category:Senior Fifth Rank]]
-[[Category:Shikinai Taisha]]
-[[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
 [[Category:Kanpei-sha]]
 
 {{translated page|ja|大坂山口神社 (香芝市逢坂)|version=106898774|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
-== Japanese Wikipedia content ==
-{{神社
-|名称   = 大坂山口神社
-|画像 = [[File:Osaka-yamaguchi-jinja (osaka)2.jpg|250px]]<br />拝殿<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
-|所在地 = {{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}{{jalink|逢坂 (香芝市)||逢坂}}5-831
-|位置 = {{WikidataCoord}}
-|祭神   = {{jalink|大山祇命}}、{{jalink|須佐之男命}}、{{jalink|神大市比売命}}
-|社格   = {{jalink|式内社}}論社、旧{{jalink|村社}}
-|創建   = 
-|本殿   = 
-|別名   = 
-|札所等 = 
-|例祭   = 10月16日
-|神事   = 
-|地図 = {{Location map|Japan Nara|label=大坂<br />山口神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-}}
-[[File:Osaka-yamaguchi-jinja (osaka)1.jpg|thumb|250px|鳥居と拝殿]]
-'''大坂山口神社'''（おおさかやまぐちじんじゃ）は、{{jalink|奈良県|Q131287}}{{jalink|香芝市|Q696643}}{{jalink|逢坂 (香芝市)||逢坂}}（おうさか）にある{{jalink|神社|Q845945}}。
-
-== 概要 ==
-{{jalink|近鉄大阪線|Q1052545}}の{{jalink|二上駅|Q7034597}}の北東近隣に鎮座している。
-
-穴虫地区の{{jalink|大坂山口神社 (香芝市穴虫)|Q135069035|大坂山口神社}}と共に、『{{jalink|古事記|Q813031}}』『{{jalink|日本書紀|Q813935}}』の{{jalink|崇神天皇|Q333530}}9年の記述にある「赤盾八枚・赤矛八竿を以て墨坂神（すみさかのかみ）を祠り、黒盾八枚・黒矛八竿を以て大坂神（おおさかのかみ）を祠れ」という夢告における、大坂神を祠った神社に比定されている（ちなみに、墨坂神（すみさかのかみ）は{{jalink|宇陀市|Q863747}}の{{jalink|墨坂神社 (宇陀市)||墨坂神社}}に比定されている）<ref name="city-muse">[https://www.city.kashiba.lg.jp/uploaded/attachment/1655.pdf 逢坂・大坂山口神社] - 香芝市二上山博物館</ref><ref name="pref-db">[https://www.pref.nara.jp/miryoku/ikasu-nara/bunkashigen/main00217.html 大坂山口神社本殿、神像群及び宝物類(大坂山口神社本殿、大坂山口神社神像及び宝物類)] - 奈良県歴史文化資源データベース</ref>。
-
-また、同じく穴虫地区の大坂山口神社と共に、{{jalink|大和国の式内社一覧|Q11433427|大和国の式内社}}の1つである大坂山口神社の論社となっている<ref name="city-muse"/><ref name="pref-db"/>。
-
-== 祭神 ==
-* {{jalink|大山祇命}}
-* {{jalink|須佐之男命}}
-* {{jalink|神大市比売命}}
-
-== 脚注 ==
-{{Reflist}}
-
-== 外部リンク ==
-* {{Commonscat-inline|Osaka-yamaguchi-jinja}}
-
-{{shinto-stub}}
-
-==End Japanese==
 [[Category:奈良県の旧村社]]
 [[Category:香芝市の建築物]]
 [[Category:香芝市の歴史]]
@@ -134,4 +89,3 @@
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
 [[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Need translation]]
