@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Azumi-no-isora for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24964547982|time triggered pipeline]] -->
-
 {{short description|Shinto kami of the seashore|qq=}}
 {{More references|date=December 2009|qq=}}
 {{Expand Japanese|阿曇磯良|date=January 2021|qq=}}
@@ -21,11 +19,9 @@ It is speculated that Azumi no Isora and {{ill|Watatsumi|en|Watatsumi|qid=Q14741
 {{Shinto-stub|qq=}}
 {{Watatsumi and Sumiyoshi Faiths|qq=}}
 
-{{wikidata link|Q1755974|en|Azumi-no-isora|it|Azumi-no-isora|ja|阿曇磯良|ko|아즈미노이소라|mni|ꯑꯓꯨꯃꯤ-ꯅꯣ-ꯏꯁꯣꯔ|ru|Адзуми-но Исора|zh|阿曇磯良}}
+{{wikidata link|Q1755974|en|Azumi-no-isora|it|Azumi-no-isora|ja|阿曇磯良|ko|아즈미노이소라|mni|ꯑꯓꯨꯃꯤ-ꯅꯣ-ꯏꯁꯣꯔ|ru|Адзуми-но Исора|zh|阿曇磯良|check_date=2026-05-14}}
 
 {{translated page|ja|阿曇磯良|version=102479528|comment=Imported full ja history}}
-[[Category:Pages with duplicated content]]
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 '''阿曇磯良'''（あづみのいそら、'''安曇磯良'''とも書く）は、{{jalink|神道|Q812767}}の{{jalink|神 (神道)|Q524158|神}}である。{{jalink|海|Q165}}の神とされ、また、{{jalink|安曇氏}}（阿曇氏）の{{jalink|祖神|Q85882782}}とされる。'''阿度部磯良'''（あとべのいそら）や<ref>上田正昭、津田秀夫、永原慶二、藤井松一、藤原彰、『コンサイス日本人名辞典 第5版』、株式会社三省堂、2009年　37頁。</ref>'''磯武良'''（いそたけら）とも<ref>[https://kotobank.jp/word/%E5%AE%89%E6%9B%87%E7%A3%AF%E8%89%AF-1050009#E3.83.87.E3.82.B8.E3.82.BF.E3.83.AB.E7.89.88.20.E6.97.A5.E6.9C.AC.E4.BA.BA.E5.90.8D.E5.A4.A7.E8.BE.9E.E5.85.B8.2BPlus　安曇磯良 あずみの-いそら] 日本人名大辞典</ref>。{{jalink|神楽|Q1348260}}に誘われて海中より現れ、古代の女帝{{jalink|神功皇后|Q232803}}に{{jalink|竜宮}}の珠を与えたという{{jalink|中世|Q12554}}の伝説で知られる<ref>{{harvp|小山|2005|p=5}}。原典として『太平記』の例を引く。</ref>。
 
@@ -115,4 +111,6 @@ It is speculated that Azumi no Isora and {{ill|Watatsumi|en|Watatsumi|qid=Q14741
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
 [[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Need translation]]
+[[Category:Pages with duplicated content]]
 [[Category:Need translation]]
