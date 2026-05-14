@@ -32,3 +32,11 @@
 [2026-05-10 13:31:27 UTC] [ERROR] generate_p6262_quickstatements: SPARQL query failed: 504 Server Error: Gateway Timeout for url: https://query.wikidata.org/sparql
 [2026-05-11 06:09:49 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: 503 Server Error: Backend fetch failed for url: https://query.wikidata.org/sparql
 [2026-05-11 06:11:18 UTC] [ERROR] generate_p6262_quickstatements: SPARQL query failed: 504 Server Error: Gateway Timeout for url: https://query.wikidata.org/sparql
+[2026-05-14 06:40:51 UTC] [ERROR] generate_p6262_quickstatements: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 426, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 284, in main
+    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
+ModuleNotFoundError: No module named 'shinto_miraheze'
+
