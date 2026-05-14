@@ -1,0 +1,27 @@
+== Infobox ==
+{{infobox religious building
+ | name = Asukata Shrine (Kakamigahara City)
+ | native_name = {{ill|Asukata Shrine (Kakamigahara City)|ja|飛鳥田神社|12=simple|13=User:Immanuelle/Asukata Shrine|comment=changed title based on wikidata|qid=Q124481960}}
+ | religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}
+ | image = [[File:Asukada-jinja 01.jpg|300px]]
+ | address = {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}} {{ill|Kakamigahara|en|Kakamigahara|qid=Q641491|lt=Kakamigahara City}}, Sohara Seijūchō 1-105-1
+ | coordinates = {{Coord|35|25|34.23|N|136|52|29.99|E|display=inline,title|qq=}}
+ | deity = {{ill|Asukata-no-Ōkami|ja|飛鳥田大神|12=simple|13=User:Immanuelle/Asukata-no-Ōkami|ja_comment=jawiki link invalid}} 
+ | type = Formal (Shikinaisha) shrine, formerly a village shrine
+ | creation = Traditionally founded in the {{ill|Taika (era)|en|Taika (era)|qid=Q1077930|lt=Taika Era}} (649)
+ | main hall = 
+ | alternative names = 
+ | festival = Third Sunday of March
+ | map = {{Location map|Japan Gifu Prefecture|label=飛鳥田神社|float=center|relief=1|width=256|qq=}}
+}}
+== Overview ==
+'''Asukata Shrine''' (飛鳥田神社) is a Shinto shrine in Sohara, Kakamigahara City, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}. It is recognized as one of the formal shrines (式内社) listed in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} and is traditionally linked to the Suwa faith of the region.
+==See Also==
+* {{ill|Kamigoryō Shrine|ja|上御霊神社|12=simple|13=User:Immanuelle/Kami-Goryō Shrine|comment=changed title based on wikidata|qid=Q11359018}}
+
+{{translated page|ja|飛鳥田神社|version=99465482|comment=Imported full ja history}}
+
+{{wikidata link|Q124481960|ja|飛鳥田神社|check_date=2026-05-13}}
+[[Category:Shinto shrines with the same name]]
+[[Category:Shrine disambiguations]]
+[[Category:Independently git synced pages]]
