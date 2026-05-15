@@ -1,7 +1,6 @@
-[[Category:Pages with duplicated content]]
 {{pp-vandalism|small=yes}}{{Infobox museum
 |名称 = Nara Prefectural Kashihara Archaeological Institute Museum
-|image = Kashiharakouen-koukogaku02.jpg|Affiliated Museum
+|image = Kashiharakouen-koukogaku02.jpg
 |imagesize = 250
 |正式名称 = 奈良県立橿原考古学研究所附属博物館
 |専門分野 = {{ill|Archaeology|en|Archaeology|qid=Q23498|lt=Archaeology|1=Archaeology}}・{{ill|Buried Cultural Properties|ja|埋蔵文化財|12=simple|13=User:Immanuelle/Buried Cultural Properties|1=buried cultural property|comment=changed title based on wikidata|qid=Q11425912}}
@@ -18,11 +17,18 @@ The '''Nara Prefectural Kashihara Archaeological Institute''' (奈良県立橿�
 * 1972: Discovery of the mural paintings in {{ill|Takamatsuzuka Tomb|en|Takamatsuzuka Tomb|qid=Q1039675|lt=Takamatsuzuka Kofun|1=Takamatsuzuka Tomb}}.
 * 1974: The Archaeological Museum of Kashihara became an affiliated facility of the institute.
 * 1985: First excavation of the Fujinoki Kofun.
-* 1990: Completion tier 6]], {{ill|Cultural properties of Japan|ja|埋蔵文化財|12=simple|13=User:Immanuelle/Cultural properties of Japan|1=buried cultural property|comment=changed title based on wikidata|qid=Q11425912}}
-| Location = {{ill|Kashihara, Nara|en|Kashihara, Nara|qid=Q496319|lt=Kashihara|1=Kashihara, Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, Japan
-| Website = [http://www.kashikoken.jp/museum/ Museum Official Site]
-<nowiki>}}
-The museum showcases approximately 3,700 artifacts from the Paleolithic through the Muromachi period.</nowiki><ref name="kyodo20211103">{{Cite web|和書|title=Nara's Kashihara Archaeological Institute Museum Reopens|url=https://web.archive.org/web/20211102110118/https://nordot.app/828174813890314240|website=Kyodo News|accessdate=2021-11-03|language=ja}}</ref> 
+* 1990: Completion of the main building and other new facilities.
+* 1997: Excavation of the Kurozuka Kofun.
+* 2014: Establishment of the Uda Cultural Heritage Center at the site of the former Murō High School.
+* 2015: Transition from the Nara Prefectural Board of Education to the jurisdiction of the Governor of Nara Prefecture.
+
+== Organization ==
+The institute is headed by a director, with departments including:
+* Deputy Director overseeing the Planning Division, Research Division, and General Affairs Section.
+* Attached Museum led by a museum director and a vice director, supervising the Curatorial Section.
+
+== Attached Museum ==
+The museum showcases approximately 3,700 artifacts from the Paleolithic through the Muromachi period.<ref name="kyodo20211103">{{Cite web|和書|title=Nara's Kashihara Archaeological Institute Museum Reopens|url=https://web.archive.org/web/20211102110118/https://nordot.app/828174813890314240|website=Kyodo News|accessdate=2021-11-03|language=ja}}</ref>
 
 Closed from December 24, 2018, for HVAC system updates, it reopened on November 3, 2021.<ref>[https://www.sankei.com/west/news/180417/wst1804170015-n1.html Museum closure announcement] {{lang|ja|産経ニュース}}, April 17, 2018.</ref><ref name="kyodo20211103" />
 
@@ -54,31 +60,8 @@ International tourists are admitted free of charge under Nara Prefecture's guide
 
 {{Commons category|Archaeological Institute of Kashihara, Nara Prefecture}}
 
-{{Commons category|Archaeological Institute of Kashihara, Nara Prefecture}}
 {{wikidata link|Q11445218|co|commons:Category:Archaeological Institute of Kashihara, Nara Prefecture|de|Archäologisches Forschungsinstitut der Präfektur Nara in Kashihara|ja|奈良県立橿原考古学研究所|de|Arch%C3%A4ologisches Forschungsinstitut der Pr%C3%A4fektur Nara in Kashihara}}
-[[Category: of the main building and other new facilities.
-* 1997: Excavation of the Kurozuka Kofun.
-* 2014: Establishment of the Uda Cultural Heritage Center at the site of the former Murō High School.
-* 2015: Transition from the Nara Prefectural Board of Education to the jurisdiction of the Governor of Nara Prefecture.
 
-== Organization ==
-The institute is headed by a director, with departments including:
-* Deputy Director overseeing the Planning Division, Research Division, and General Affairs Section.
-* Attached Museum led by a museum director and a vice director, supervising the Curatorial Section.
-
-== Attached Museum ==
-{{Museum
-| Name = Nara Prefectural Kashihara Archaeological Museum
-| image = Kashiharakouen-koukogaku02.jpg|附属博物館
-| imagesize = 250
-| Alt = 
-| Caption = Nara Prefectural Kashihara Archaeological Museum
-| Pushpin_map = Japan Nara
-| Map_size = 200
-| Map_caption = 
-| Map dot label = 
-| Established = 
-| Type = {{ill|Archaeology|en|Archaeology|qid=Q23498|lt=Archaeology|1=Archaeology}}
 [[Category:22nd BCS Prize]]
 [[Category:Archaeological museums in Japan]]
 [[Category:Buildings and structures completed in 1980]]
@@ -95,7 +78,6 @@ The institute is headed by a director, with departments including:
 [[Category:National Treasures of Japan]]
 [[Category:National Treasures of Japan (archaeological materials)]]
 [[Category:National Treasures of Japan in Nara prefecture]]
-[[Category:Pages with duplicated content]]
 [[Category:Research institutes in Japan]]
 [[Category:Research institutes in Nara prefecture]]
 [[Category:Scientific organizations established in 1938]]
