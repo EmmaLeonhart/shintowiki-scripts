@@ -175,6 +175,19 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: delete_unused_templates" \
             python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      # delete_unused_redirects — paranoid by design: bails without
+      # deleting if Special:UnusedRedirects returns zero entries (more
+      # often a cache failure than a genuinely empty list), and
+      # per-page rechecks each candidate is still a #REDIRECT with
+      # zero linkshere before deleting. The Special: querypage is
+      # notoriously stale, so the per-page recheck is the actual
+      # authority.
+      - name: "Structural: delete_unused_redirects"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: delete_unused_redirects" \
+            python3 shinto_miraheze/delete_unused_redirects.py --apply --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Structural: fix_double_redirects"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
