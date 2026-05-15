@@ -1,7 +1,7 @@
 <!-- shrine-disambig-page: refresh wikidata list -->
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Mononobe_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
 
-'''Mononobe Shrine''' (物部神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} derived from the {{ill|Ancient history|en|Ancient history|qid=Q41493|lt=Ancient|1=Ancient history}}{{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}’s {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan|1=Mononobe clan}}. Shrines bearing this name are distributed over a wide area from {{ill|Eastern Japan|ja|東日本|12=simple|13=User:Immanuelle/Eastern Japan|qq=}} to {{ill|Western Japan|ja|西日本|12=simple|13=User:Immanuelle/Western Japan|1=Western Japan|comment=changed title based on wikidata|qid=Q1063946}}. Many of them enshrine as their main deities either {{ill|Umashimaji|ja|ウマシマジ|lt=Umasimaji|lt_ja=宇麻志摩遅命|12=simple|13=User:Immanuelle/Umashimaji|qq=}}, the first of the Mononobe clan, or {{ill|Nigihayahi|ja|ニギハヤヒ|lt=Nigihayahi|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi|qq=}}, the ancestral deity.
+'''Mononobe Shrine''' (物部神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} derived from the {{ill|Ancient history|en|Ancient history|qid=Q41493|lt=Ancient|1=Ancient history}}{{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}’s {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan|1=Mononobe clan}}. Shrines bearing this name are distributed over a wide area from {{ill|Eastern Japan|ja|東日本|12=simple|13=User:Immanuelle/Eastern Japan}} to {{ill|Western Japan|ja|西日本|12=simple|13=User:Immanuelle/Western Japan|1=Western Japan|comment=changed title based on wikidata|qid=Q1063946}}. Many of them enshrine as their main deities either {{ill|Umashimaji|ja|ウマシマジ|lt=Umasimaji|lt_ja=宇麻志摩遅命|12=simple|13=User:Immanuelle/Umashimaji}}, the first of the Mononobe clan, or {{ill|Nigihayahi|ja|ニギハヤヒ|lt=Nigihayahi|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi}}, the ancestral deity.
 
 ==Mononobe Shrines in Various Regions==
 ===Chubu Region===
@@ -21,7 +21,7 @@
 
 ===Kinki Region===
 ;Shiga Prefecture  
-*{{ill|Katsube Shrine|ja|勝部神社|12=simple|13=User:Immanuelle/Katsube Shrine|qq=}} (formerly known as Mononobe Shrine) - {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}{{ill|Moriyama, Shiga|en|Moriyama, Shiga|qid=Q857225|lt=Moriyama City|1=Moriyama, Shiga}} (head shrine of the former Mononobe District)
+*{{ill|Katsube Shrine|ja|勝部神社|12=simple|13=User:Immanuelle/Katsube Shrine}} (formerly known as Mononobe Shrine) - {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}{{ill|Moriyama, Shiga|en|Moriyama, Shiga|qid=Q857225|lt=Moriyama City|1=Moriyama, Shiga}} (head shrine of the former Mononobe District)
 
 ;Kyoto Prefecture  
 *{{ill|Mononobe Shrine (Yosano)|ja|物部神社 (与謝野町)|12=simple|13=User:Immanuelle/Mononobe Shrine (Yosano)|ja_comment=jawiki link invalid}} - {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}{{ill|Yosa District, Kyoto|en|Yosa District, Kyoto|qid=Q1078639|lt=Yosa District|1=Yosa District, Kyoto}}{{ill|Yosano, Kyoto|en|Yosano, Kyoto|qid=Q1203259|lt=Yosano Town|1=Yosano, Kyoto}} (Shikinaisha)

@@ -1,9 +1,9 @@
 {{Navbox
 | name  = Izanami-firebirths
-| title = {{ill|Kamiumi|lt=Deities Born from Izanami’s Birth of Kagutsuchi|ja|神産み#カグツチ|lt=Gods Born from Izanami’s Birth of Kagutsuchi|12=simple|13=User:Immanuelle/Kamiumi|12=simple|13=User:Immanuelle/Kamiumi|qq=}}
+| title = {{ill|Kamiumi|lt=Deities Born from Izanami’s Birth of Kagutsuchi|ja|神産み#カグツチ|lt=Gods Born from Izanami’s Birth of Kagutsuchi|12=simple|13=User:Immanuelle/Kamiumi|12=simple|13=User:Immanuelle/Kamiumi}}
 | listclass = 
 | state = uncollapsed
-| below = '''Source''': {{Cite web2 |url=https://kotobank.jp/word/%E8%BB%BB%E9%81%87%E7%AA%81%E6%99%BA-227849#E4.B8.96.E7.95.8C.E5.A4.A7.E7.99.BE.E7.A7.91.E4.BA.8B.E5.85.B8.20.E7.AC.AC.EF.BC.92.E7.89.88 |title=From "Fire" |author=[[:en:Heibonsha|Heibonsha]], ''[[:en:Heibonsha World Encyclopedia|World Encyclopedia]]'', 2nd Edition |publisher=[[:en:Kotobank|Kotobank]] ({{ill|Asahi Shimbun Digital|ja|朝日新聞デジタル|12=simple|13=User:Immanuelle/Asahi Shimbun Digital|12=simple|13=User:Immanuelle/Asahi Shimbun Digital|qq=}}) |accessdate=January 8, 2018 }}
+| below = '''Source''': {{Cite web2 |url=https://kotobank.jp/word/%E8%BB%BB%E9%81%87%E7%AA%81%E6%99%BA-227849#E4.B8.96.E7.95.8C.E5.A4.A7.E7.99.BE.E7.A7.91.E4.BA.8B.E5.85.B8.20.E7.AC.AC.EF.BC.92.E7.89.88 |title=From "Fire" |author=[[:en:Heibonsha|Heibonsha]], ''[[:en:Heibonsha World Encyclopedia|World Encyclopedia]]'', 2nd Edition |publisher=[[:en:Kotobank|Kotobank]] ({{ill|Asahi Shimbun Digital|ja|朝日新聞デジタル|12=simple|13=User:Immanuelle/Asahi Shimbun Digital|12=simple|13=User:Immanuelle/Asahi Shimbun Digital}}) |accessdate=January 8, 2018 }}
 
 | group1 = Izanami
 | list1 =
@@ -15,14 +15,14 @@
 | list2  =
 {{familytree/start|border=0}}
 {{familytree |)|-|v|-|-|.}}
-{{familytree |boxstyle=border-width:1px|!|KYBK| |KYBM|KYBK={{ill|Kanayama-hiko and Kanayama-hime|lt=Kanayamahiko|ja|金山彦神|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|qq=}}|KYBM={{ill|Kanayama-hiko and Kanayama-hime|lt=Kanayamahime|ja|金山毘売神|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|qq=}}|boxstyle_KYBK= background-color: #eef|boxstyle_KYBM=background-color:#fee;border-radius:10px;}}
+{{familytree |boxstyle=border-width:1px|!|KYBK| |KYBM|KYBK={{ill|Kanayama-hiko and Kanayama-hime|lt=Kanayamahiko|ja|金山彦神|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime}}|KYBM={{ill|Kanayama-hiko and Kanayama-hime|lt=Kanayamahime|ja|金山毘売神|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime|12=simple|13=User:Immanuelle/Kanayama-hiko and Kanayama-hime}}|boxstyle_KYBK= background-color: #eef|boxstyle_KYBM=background-color:#fee;border-radius:10px;}}
 {{familytree/end}}
 
 | group3 = Deities Born from Feces
 | list3  =
 {{familytree/start|border=0}}
 {{familytree |)|-|v|-|-|.}}
-{{familytree |boxstyle=border-width:1px|!|HYBK| |HYBM|HYBK={{ill|Haniyasu-hiko and Haniyasu-hime|lt=Haniyasu-hiko|ja|ハニヤスビコ|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|qq=}}|HYBM={{ill|Haniyasu-hiko and Haniyasu-hime|lt=Haniyasu-hime|ja|波邇夜須毘売神|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|qq=}}|boxstyle_HYBK= background-color: #eef|boxstyle_HYBM= background-color: #fee;border-radius: 10px;}}
+{{familytree |boxstyle=border-width:1px|!|HYBK| |HYBM|HYBK={{ill|Haniyasu-hiko and Haniyasu-hime|lt=Haniyasu-hiko|ja|ハニヤスビコ|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime}}|HYBM={{ill|Haniyasu-hiko and Haniyasu-hime|lt=Haniyasu-hime|ja|波邇夜須毘売神|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime|12=simple|13=User:Immanuelle/Haniyasu-hiko and Haniyasu-hime}}|boxstyle_HYBK= background-color: #eef|boxstyle_HYBM= background-color: #fee;border-radius: 10px;}}
 {{familytree/end}}
 
 | group4 = Deities Born from Urine
@@ -39,63 +39,63 @@
 {{familytree/start|border=0}}
 {{familytree|`|v|-|-|v|-|-|v|-|-|v|-|-|v|-|-|v|-|-|v|-|-|.|}}
 {{familytree |boxstyle=background:#ff9;border-width:1px|1OIK|2HIK|3KIK|4SIK|5WIK|6TIK|7NIK|8FIK
-|1OIK={{ill|Ō-ikazuchi|ja|オオイカヅチ|12=simple|13=User:Immanuelle/Ō-ikazuchi|12=simple|13=User:Immanuelle/Ō-ikazuchi|qq=}}<br/><small>(Head)</small>
-|2HIK={{ill|Hono-ikazuchi|ja|ホノイカヅチ|12=simple|13=User:Immanuelle/Hono-ikazuchi|12=simple|13=User:Immanuelle/Hono-ikazuchi|qq=}}<br/><small>(Chest)</small>
-|3KIK={{ill|Kuro-ikazuchi|ja|クロイカヅチ|12=simple|13=User:Immanuelle/Kuro-ikazuchi|12=simple|13=User:Immanuelle/Kuro-ikazuchi|qq=}}<br/><small>(Abdomen)</small>
-|4SIK={{ill|Saku-ikazuchi|ja|サクイカズチ|12=simple|13=User:Immanuelle/Saku-ikazuchi|12=simple|13=User:Immanuelle/Saku-ikazuchi|qq=}}<br/><small>(Genitals)</small>
-|5WIK={{ill|Waka-ikazuchi|ja|ワカイカズチ|12=simple|13=User:Immanuelle/Waka-ikazuchi|12=simple|13=User:Immanuelle/Waka-ikazuchi|qq=}}<br/><small>(Left Hand)</small>
-|6TIK={{ill|Tsuchi-ikazuchi|ja|ツチイカズチ|12=simple|13=User:Immanuelle/Tsuchi-ikazuchi|12=simple|13=User:Immanuelle/Tsuchi-ikazuchi|qq=}}<br/><small>(Right Hand)</small>
-|7NIK={{ill|Naru-ikazuchi|ja|ナルイカズチ|12=simple|13=User:Immanuelle/Naru-ikazuchi|12=simple|13=User:Immanuelle/Naru-ikazuchi|qq=}}<br/><small>(Left Foot)</small>
-|8FIK={{ill|Fusu-ikazuchi|ja|フスイカズチ|12=simple|13=User:Immanuelle/Fusu-ikazuchi|12=simple|13=User:Immanuelle/Fusu-ikazuchi|qq=}}<br/><small>(Right Foot)</small>}}
+|1OIK={{ill|Ō-ikazuchi|ja|オオイカヅチ|12=simple|13=User:Immanuelle/Ō-ikazuchi|12=simple|13=User:Immanuelle/Ō-ikazuchi}}<br/><small>(Head)</small>
+|2HIK={{ill|Hono-ikazuchi|ja|ホノイカヅチ|12=simple|13=User:Immanuelle/Hono-ikazuchi|12=simple|13=User:Immanuelle/Hono-ikazuchi}}<br/><small>(Chest)</small>
+|3KIK={{ill|Kuro-ikazuchi|ja|クロイカヅチ|12=simple|13=User:Immanuelle/Kuro-ikazuchi|12=simple|13=User:Immanuelle/Kuro-ikazuchi}}<br/><small>(Abdomen)</small>
+|4SIK={{ill|Saku-ikazuchi|ja|サクイカズチ|12=simple|13=User:Immanuelle/Saku-ikazuchi|12=simple|13=User:Immanuelle/Saku-ikazuchi}}<br/><small>(Genitals)</small>
+|5WIK={{ill|Waka-ikazuchi|ja|ワカイカズチ|12=simple|13=User:Immanuelle/Waka-ikazuchi|12=simple|13=User:Immanuelle/Waka-ikazuchi}}<br/><small>(Left Hand)</small>
+|6TIK={{ill|Tsuchi-ikazuchi|ja|ツチイカズチ|12=simple|13=User:Immanuelle/Tsuchi-ikazuchi|12=simple|13=User:Immanuelle/Tsuchi-ikazuchi}}<br/><small>(Right Hand)</small>
+|7NIK={{ill|Naru-ikazuchi|ja|ナルイカズチ|12=simple|13=User:Immanuelle/Naru-ikazuchi|12=simple|13=User:Immanuelle/Naru-ikazuchi}}<br/><small>(Left Foot)</small>
+|8FIK={{ill|Fusu-ikazuchi|ja|フスイカズチ|12=simple|13=User:Immanuelle/Fusu-ikazuchi|12=simple|13=User:Immanuelle/Fusu-ikazuchi}}<br/><small>(Right Foot)</small>}}
 {{familytree/end}}
 |group6=Kanayama Shrines
 |list6=
 * [[:en:Nangū Taisha|Nangū Taisha]] (dedicated solely to Kanayamahiko-no-Kami) 
-* {{ill|Nangū_Taisha#Nangū_Otabi_Shrine|lt=Nangu Otabi Shrine|ja|南宮御旅神社|12=simple|13=User:Immanuelle/Nangū_Taisha#Nangū_Otabi_Shrine|12=simple|13=User:Immanuelle/Nangū_Taisha#Nangū_Otabi_Shrine|qq=}} 
-* {{ill|Kanayago Shrine|ja|金屋子神社|12=simple|13=User:Immanuelle/Kanayago Shrine|12=simple|13=User:Immanuelle/Kanayago Shrine|qq=}} 
-* {{ill|Koganeyama Shrine (Ishinomaki)|ja|黄金山神社 (石巻市)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|qq=}} on [[:en:Kinkasan|Kinkasan]] 
-* {{ill|Mikane Shrine|ja|御金神社|12=simple|13=User:Immanuelle/Mikane Shrine|12=simple|13=User:Immanuelle/Mikane Shrine|qq=}} 
-* {{ill|Hataeda Hachiman Shrine|lt=Hari Shrine|ja|針神社|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|qq=}}, a subsidiary shrine of {{ill|Hataeda Hachiman Shrine|ja|幡枝八幡宮|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|qq=}}.
+* {{ill|Nangū_Taisha#Nangū_Otabi_Shrine|lt=Nangu Otabi Shrine|ja|南宮御旅神社|12=simple|13=User:Immanuelle/Nangū_Taisha#Nangū_Otabi_Shrine|12=simple|13=User:Immanuelle/Nangū_Taisha#Nangū_Otabi_Shrine}} 
+* {{ill|Kanayago Shrine|ja|金屋子神社|12=simple|13=User:Immanuelle/Kanayago Shrine|12=simple|13=User:Immanuelle/Kanayago Shrine}} 
+* {{ill|Koganeyama Shrine (Ishinomaki)|ja|黄金山神社 (石巻市)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)}} on [[:en:Kinkasan|Kinkasan]] 
+* {{ill|Mikane Shrine|ja|御金神社|12=simple|13=User:Immanuelle/Mikane Shrine|12=simple|13=User:Immanuelle/Mikane Shrine}} 
+* {{ill|Hataeda Hachiman Shrine|lt=Hari Shrine|ja|針神社|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine}}, a subsidiary shrine of {{ill|Hataeda Hachiman Shrine|ja|幡枝八幡宮|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine|12=simple|13=User:Immanuelle/Hataeda Hachiman Shrine}}.
 
 |group7=Haniyasu Shrines
 |list7=
-* {{ill|Uneoza Takehiyasu Shrine|ja|畝尾坐健土安神社|12=simple|13=User:Immanuelle/Uneoza Takehiyasu Shrine|12=simple|13=User:Immanuelle/Uneoza Takehiyasu Shrine|qq=}}
+* {{ill|Uneoza Takehiyasu Shrine|ja|畝尾坐健土安神社|12=simple|13=User:Immanuelle/Uneoza Takehiyasu Shrine|12=simple|13=User:Immanuelle/Uneoza Takehiyasu Shrine}}
 * [[:en:Haruna Shrine|Haruna Shrine]]
-* {{ill|Haniimasahime Shrine|ja|波爾移麻比禰神社|12=simple|13=User:Immanuelle/Haniimasahime Shrine|12=simple|13=User:Immanuelle/Haniimasahime Shrine|qq=}}
-* {{ill|Maoka Shinden Shrine|ja|馬岡新田神社|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|qq=}}
-* {{ill|Haniro Shrine|ja|波爾布神社|12=simple|13=User:Immanuelle/Haniro Shrine|12=simple|13=User:Immanuelle/Haniro Shrine|qq=}}
-* {{ill|Katahara Shrine|ja|形原神社|12=simple|13=User:Immanuelle/Katahara Shrine|12=simple|13=User:Immanuelle/Katahara Shrine|qq=}}
-* {{ill|Oi Shrine|ja|大井神社 (島田市)|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
-* {{ill|Tsutsuharu Shrine|ja|堤治神社|12=simple|13=User:Immanuelle/Tsutsuharu Shrine|12=simple|13=User:Immanuelle/Tsutsuharu Shrine|qq=}}
+* {{ill|Haniimasahime Shrine|ja|波爾移麻比禰神社|12=simple|13=User:Immanuelle/Haniimasahime Shrine|12=simple|13=User:Immanuelle/Haniimasahime Shrine}}
+* {{ill|Maoka Shinden Shrine|ja|馬岡新田神社|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|12=simple|13=User:Immanuelle/Maoka Shinden Shrine}}
+* {{ill|Haniro Shrine|ja|波爾布神社|12=simple|13=User:Immanuelle/Haniro Shrine|12=simple|13=User:Immanuelle/Haniro Shrine}}
+* {{ill|Katahara Shrine|ja|形原神社|12=simple|13=User:Immanuelle/Katahara Shrine|12=simple|13=User:Immanuelle/Katahara Shrine}}
+* {{ill|Oi Shrine|ja|大井神社 (島田市)|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine}}
+* {{ill|Tsutsuharu Shrine|ja|堤治神社|12=simple|13=User:Immanuelle/Tsutsuharu Shrine|12=simple|13=User:Immanuelle/Tsutsuharu Shrine}}
 * [[:en:Atago Shrine (Kyoto)|Atago Shrine (Kyoto)]]
-* {{ill|Maoka Shinden Shrine|ja|馬岡新田神社|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|qq=}} 
-* {{ill|Haruna Shrine (Fujimi)|ja|榛名神社 (富士見市)|12=simple|13=User:Immanuelle/Haruna Shrine (Fujimi)|12=simple|13=User:Immanuelle/Haruna Shrine (Fujimi)|qq=}}
-* {{ill|Haniu Shrine (Narita)|ja|埴生神社 (成田市)|12=simple|13=User:Immanuelle/Haniu Shrine (Narita)|12=simple|13=User:Immanuelle/Haniu Shrine (Narita)|qq=}}
-* {{ill|Kamiichinomiya Ōawa Shrine|ja|上一宮大粟神社|12=simple|13=User:Immanuelle/Kamiichinomiya Ōawa Shrine|12=simple|13=User:Immanuelle/Kamiichinomiya Ōawa Shrine|qq=}}
-* {{ill|Habuta Shrine|ja|土生田神社|12=simple|13=User:Immanuelle/Habuta Shrine|12=simple|13=User:Immanuelle/Habuta Shrine|qq=}} 
+* {{ill|Maoka Shinden Shrine|ja|馬岡新田神社|12=simple|13=User:Immanuelle/Maoka Shinden Shrine|12=simple|13=User:Immanuelle/Maoka Shinden Shrine}} 
+* {{ill|Haruna Shrine (Fujimi)|ja|榛名神社 (富士見市)|12=simple|13=User:Immanuelle/Haruna Shrine (Fujimi)|12=simple|13=User:Immanuelle/Haruna Shrine (Fujimi)}}
+* {{ill|Haniu Shrine (Narita)|ja|埴生神社 (成田市)|12=simple|13=User:Immanuelle/Haniu Shrine (Narita)|12=simple|13=User:Immanuelle/Haniu Shrine (Narita)}}
+* {{ill|Kamiichinomiya Ōawa Shrine|ja|上一宮大粟神社|12=simple|13=User:Immanuelle/Kamiichinomiya Ōawa Shrine|12=simple|13=User:Immanuelle/Kamiichinomiya Ōawa Shrine}}
+* {{ill|Habuta Shrine|ja|土生田神社|12=simple|13=User:Immanuelle/Habuta Shrine|12=simple|13=User:Immanuelle/Habuta Shrine}} 
 |group8=Mizuhanome Shrines
 |list8= 
-* {{ill|Oi Shrine|ja|大井神社 (島田市)|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
+* {{ill|Oi Shrine|ja|大井神社 (島田市)|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine}}
 * [[Niukawakami Shrine]]
-* {{ill|Ōtaki Shrine and Okata Shrine|ja|大瀧神社・岡太神社|12=simple|13=User:Immanuelle/Ōtaki Shrine and Okata Shrine|12=simple|13=User:Immanuelle/Ōtaki Shrine and Okata Shrine|qq=}}
+* {{ill|Ōtaki Shrine and Okata Shrine|ja|大瀧神社・岡太神社|12=simple|13=User:Immanuelle/Ōtaki Shrine and Okata Shrine|12=simple|13=User:Immanuelle/Ōtaki Shrine and Okata Shrine}}
 
 |group9=Wakumusubi Shrines
 |list9=
 * [[Iwama Dōjō#Aiki Jinja|Aiki Jinja]]
 * [[:en:Atago Shrine (Kyoto)|Atago Shrine (Kyoto)]]
 * [[:en:Takekoma Inari Shrine|Takekoma Shrine]]  
-* {{ill|Asaka Kokuzō Shrine|ja|安積国造神社|12=simple|13=User:Immanuelle/Asaka Kokuzō Shrine|12=simple|13=User:Immanuelle/Asaka Kokuzō Shrine|qq=}}
-* {{ill|Makata Shrine|ja|麻賀多神社|12=simple|13=User:Immanuelle/Makata Shrine|12=simple|13=User:Immanuelle/Makata Shrine|qq=}}
+* {{ill|Asaka Kokuzō Shrine|ja|安積国造神社|12=simple|13=User:Immanuelle/Asaka Kokuzō Shrine|12=simple|13=User:Immanuelle/Asaka Kokuzō Shrine}}
+* {{ill|Makata Shrine|ja|麻賀多神社|12=simple|13=User:Immanuelle/Makata Shrine|12=simple|13=User:Immanuelle/Makata Shrine}}
 
 |group10=Toyouke Shrines
 |list10=
-* {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|qq=}}
-* {{ill|Toyouke Shrine (Funabashi)|ja|豊受神社 (船橋市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Funabashi)|12=simple|13=User:Immanuelle/Toyouke Shrine (Funabashi)|qq=}} 
-* {{ill|Toyouke Shrine (Urayasu)|ja|豊受神社 (浦安市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Urayasu)|12=simple|13=User:Immanuelle/Toyouke Shrine (Urayasu)|qq=}} 
-* {{ill|Toyouke Shrine (Jōsō)|ja|豊受神社 (常総市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Jōsō)|12=simple|13=User:Immanuelle/Toyouke Shrine (Jōsō)|qq=}} 
-* {{ill|Toyouke Shrine (Mizuho)|ja|豊受神社 (瑞穂市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Mizuho)|12=simple|13=User:Immanuelle/Toyouke Shrine (Mizuho)|qq=}} 
-* {{ill|Toyouke Shrine (Chiryū)|ja|豊受神社 (知立市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Chiryū)|12=simple|13=User:Immanuelle/Toyouke Shrine (Chiryū)|qq=}} 
-* {{ill|Toyouke Shrine (Shikokuchūō)|ja|豊受神社 (四国中央市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Shikokuchūō)|12=simple|13=User:Immanuelle/Toyouke Shrine (Shikokuchūō)|qq=}} -->
+* {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū}}
+* {{ill|Toyouke Shrine (Funabashi)|ja|豊受神社 (船橋市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Funabashi)|12=simple|13=User:Immanuelle/Toyouke Shrine (Funabashi)}} 
+* {{ill|Toyouke Shrine (Urayasu)|ja|豊受神社 (浦安市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Urayasu)|12=simple|13=User:Immanuelle/Toyouke Shrine (Urayasu)}} 
+* {{ill|Toyouke Shrine (Jōsō)|ja|豊受神社 (常総市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Jōsō)|12=simple|13=User:Immanuelle/Toyouke Shrine (Jōsō)}} 
+* {{ill|Toyouke Shrine (Mizuho)|ja|豊受神社 (瑞穂市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Mizuho)|12=simple|13=User:Immanuelle/Toyouke Shrine (Mizuho)}} 
+* {{ill|Toyouke Shrine (Chiryū)|ja|豊受神社 (知立市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Chiryū)|12=simple|13=User:Immanuelle/Toyouke Shrine (Chiryū)}} 
+* {{ill|Toyouke Shrine (Shikokuchūō)|ja|豊受神社 (四国中央市)|12=simple|13=User:Immanuelle/Toyouke Shrine (Shikokuchūō)|12=simple|13=User:Immanuelle/Toyouke Shrine (Shikokuchūō)}} -->
 }}
 <noinclude>
 
