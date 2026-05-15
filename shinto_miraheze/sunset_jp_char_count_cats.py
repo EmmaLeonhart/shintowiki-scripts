@@ -31,7 +31,12 @@ import time
 
 import mwclient
 
-from shinto_miraheze.orchestrators.ops.untranslated_japanese import THRESHOLDS
+# Mirrors THRESHOLDS in
+# shinto_miraheze/orchestrators/ops/untranslated_japanese.py. Inlined
+# because this script runs as `python3 shinto_miraheze/X.py` (script
+# dir on sys.path, not repo root; no shinto_miraheze/__init__.py), so
+# the package import raises ModuleNotFoundError. Keep the two in sync.
+THRESHOLDS = [50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000]
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 

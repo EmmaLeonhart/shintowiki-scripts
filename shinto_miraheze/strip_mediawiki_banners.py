@@ -34,6 +34,16 @@ import time
 
 import mwclient
 
+# This script is invoked as `python3 shinto_miraheze/X.py`, so the
+# script directory — not the repo root — is sys.path[0], and there's
+# no shinto_miraheze/__init__.py. Put the repo root on sys.path so the
+# shinto_miraheze namespace package resolves; unlike the date/threshold
+# constants elsewhere, the strip_html_comments op carries real logic
+# that shouldn't be duplicated, so we fix the path instead of inlining.
+sys.path.insert(
+    0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
+
 from shinto_miraheze.orchestrators.ops import strip_html_comments
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
