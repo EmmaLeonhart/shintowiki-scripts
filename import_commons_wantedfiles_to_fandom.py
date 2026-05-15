@@ -408,11 +408,14 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
-        FANDOM_SUNSET_DATE,
-        fandom_sunset_passed,
-    )
-    if fandom_sunset_passed():
+    # FANDOM_SUNSET_DATE mirrors the canonical constant in
+    # shinto_miraheze/orchestrators/ops/fandom_mirror.py. Inlined here
+    # because this script runs as a top-level `python3 X.py` (no
+    # shinto_miraheze package on sys.path), so the package import
+    # raised ModuleNotFoundError and crashed every run. Keep in sync.
+    import datetime as _dt
+    FANDOM_SUNSET_DATE = _dt.date(2027, 1, 1)
+    if _dt.datetime.utcnow().date() >= FANDOM_SUNSET_DATE:
         print(
             f"import_commons_wantedfiles_to_fandom disabled: past "
             f"FANDOM_SUNSET_DATE ({FANDOM_SUNSET_DATE.isoformat()}). "

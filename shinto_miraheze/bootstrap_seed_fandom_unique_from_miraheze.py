@@ -29,11 +29,15 @@ FANDOM_DIR = REPO_ROOT / "fandom_unique"
 
 
 def main():
-    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
-        FANDOM_SUNSET_DATE,
-        fandom_sunset_passed,
-    )
-    if fandom_sunset_passed():
+    # FANDOM_SUNSET_DATE mirrors the canonical constant in
+    # shinto_miraheze/orchestrators/ops/fandom_mirror.py. Inlined here
+    # because this script runs as `python3 shinto_miraheze/X.py` (the
+    # script dir is on sys.path, not the repo root, and there's no
+    # shinto_miraheze/__init__.py), so the package import raised
+    # ModuleNotFoundError and crashed every run. Keep the two in sync.
+    import datetime as _dt
+    FANDOM_SUNSET_DATE = _dt.date(2027, 1, 1)
+    if _dt.datetime.utcnow().date() >= FANDOM_SUNSET_DATE:
         print(
             f"bootstrap_seed disabled: past FANDOM_SUNSET_DATE "
             f"({FANDOM_SUNSET_DATE.isoformat()}). No new fandom_unique/ "

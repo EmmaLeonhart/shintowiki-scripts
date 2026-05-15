@@ -127,11 +127,15 @@ def main():
                         help="Wiki-formatted run tag link for edit summaries.")
     args = parser.parse_args()
 
-    from shinto_miraheze.orchestrators.ops.fandom_mirror import (
-        FANDOM_SUNSET_DATE,
-        fandom_sunset_passed,
-    )
-    if fandom_sunset_passed():
+    # FANDOM_SUNSET_DATE mirrors the canonical constant in
+    # shinto_miraheze/orchestrators/ops/fandom_mirror.py. Inlined here
+    # because this script runs as `python3 shinto_miraheze/X.py` (the
+    # script dir is on sys.path, not the repo root, and there's no
+    # shinto_miraheze/__init__.py), so the package import raised
+    # ModuleNotFoundError and crashed every run. Keep the two in sync.
+    import datetime as _dt
+    FANDOM_SUNSET_DATE = _dt.date(2027, 1, 1)
+    if _dt.datetime.utcnow().date() >= FANDOM_SUNSET_DATE:
         print(
             f"clean_p6262_quickstatements disabled: past "
             f"FANDOM_SUNSET_DATE ({FANDOM_SUNSET_DATE.isoformat()}). "
