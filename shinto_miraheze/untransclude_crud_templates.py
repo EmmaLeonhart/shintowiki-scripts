@@ -2,7 +2,7 @@
 """
 untransclude_crud_templates.py
 ===============================
-Walks ``Category:CRUD templates`` and, for every member template,
+Walks ``Category:Crud templates`` and, for every member template,
 rewrites every transclusion and direct backlink on the wiki to
 point at ``Template:Removed template`` instead — preserving the
 original parameter data.
@@ -19,7 +19,7 @@ and backlink across the wiki has been rewritten, the crud template
 has zero references and naturally falls into
 ``Special:UnusedTemplates``; the existing ``delete_unused_templates.py``
 pipeline then removes it. The CRUD-templates category itself is left
-intact — a crud template still lives in ``Category:CRUD templates``
+intact — a crud template still lives in ``Category:Crud templates``
 right up until the unused-templates sweep deletes it.
 
 Parameter data preservation is the load-bearing design choice. Pages
@@ -82,7 +82,7 @@ USER_AGENT = (
     "UntranscludeCrudTemplates/1.0 (User:EmmaBot; shinto.miraheze.org)"
 )
 
-SOURCE_CATEGORY = "CRUD templates"
+SOURCE_CATEGORY = "Crud templates"
 REMOVED_TEMPLATE_TITLE = "Template:Removed template"
 REMOVED_TEMPLATE_NAME = "Removed template"
 
@@ -236,7 +236,7 @@ def page_exists(site, title: str) -> bool:
 REMOVED_TEMPLATE_PLACEHOLDER_BODY = (
     "<noinclude>\n"
     "This template is the catch-all replacement for templates listed under "
-    "[[:Category:CRUD templates]]. When a crud template is untranscluded "
+    "[[:Category:Crud templates]]. When a crud template is untranscluded "
     "by ``untransclude_crud_templates.py``, every call to it is rewritten "
     "to ``{{Removed template|...}}`` so the original parameter data is "
     "preserved on the page even though the template itself is being "
@@ -379,7 +379,7 @@ def main() -> int:
         visited += 1
         # Don't touch the crud templates themselves — their page wikitext
         # might validly contain {{Foo}} examples in <noinclude> docs, and
-        # we want them to stay listed under Category:CRUD templates.
+        # we want them to stay listed under Category:Crud templates.
         if title in crud_titles:
             if args.apply:
                 append_state(title)
