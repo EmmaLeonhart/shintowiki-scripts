@@ -1,32 +1,28 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Fuji_Sengen_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24984760715|time triggered pipeline]] -->
-
-'''Fuji Sengen Shrine''' or '''Fuji Asama Shrine''' (富士浅間神社, 冨士浅間神社, 富士淺間神社) is one of the {{ill|Sengen shrine|en|Sengen shrine|qid=Q3471785|lt=Sengen Shrines|1=Sengen shrine}}.
+'''Fuji Sengen Shrine''' or '''Fuji Asama Shrine''' (富士浅間神社, 冨士浅間神社, 富士淺間神社) is one of the {{ill|Sengen shrine|en|Sengen shrine|qid=Q3471785|lt=Sengen Shrines}}.
 
 == Kanto Region ==
-* {{ill|Fuji Sengen Shrine (Fujioka)|ja|富士淺間神社 (藤岡市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Fujioka)|ja_comment=jawiki link invalid}} - {{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture|1=Gunma Prefecture}}, {{ill|Fujioka, Gunma|en|Fujioka, Gunma|qid=Q596486|lt=Fujioka|1=Fujioka, Gunma}}, Fujioka
-* {{ill|Fuji Sengen Shrine (Hanno)|ja|富士浅間神社 (飯能市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Hanno)|1=Fuji Sengen Shrine|comment=changed title based on wikidata|qid=Q11456097}} - {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture|1=Saitama Prefecture}}, {{ill|Hannō|en|Hannō|qid=Q850472|lt=Hanno|1=Hannō}}, Kaminaotake Shitabun
-* {{ill|Asakusa Fuji Sengen Shrine|ja|浅草富士浅間神社|12=simple|13=User:Immanuelle/Asakusa Fuji Sengen Shrine|qq=}} - {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}, {{ill|Taitō|en|Taitō|qid=Q232641|lt=Taito City|1=Taitō}}
-* {{ill|Fuji Sengen Shrine (Toshima)|ja|富士浅間神社 (豊島区)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Toshima)|ja_comment=jawiki link invalid}} - Tokyo, {{ill|Toshima|en|Toshima|qid=Q236680|lt=Toshima|1=Toshima}}, Takamatsu. The shrine's grounds include the "Toshima Nagasaki {{ill|Fujizuka|en|Fujizuka|qid=Q5507555|lt=Fujizuka|1=Fujizuka}}" (an {{ill|Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|1=National Important Intangible Folk Cultural Property|comment=changed title based on wikidata|qid=Q6573893}}).
+* {{ill|Fuji Sengen Shrine (Fujioka)|ja|富士淺間神社 (藤岡市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Fujioka)|ja_comment=jawiki link invalid}} - {{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture}}, {{ill|Fujioka, Gunma|en|Fujioka, Gunma|qid=Q596486|lt=Fujioka}}, Fujioka
+* {{ill|Fuji Sengen Shrine|ja|富士浅間神社 (飯能市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Hanno)|comment=changed title based on wikidata|qid=Q11456097}} - {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture}}, {{ill|Hannō|en|Hannō|qid=Q850472|lt=Hanno}}, Kaminaotake Shitabun
+* {{ill|Asakusa Fuji Sengen Shrine|ja|浅草富士浅間神社|12=simple|13=User:Immanuelle/Asakusa Fuji Sengen Shrine|qq=}} - {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}, {{ill|Taitō|en|Taitō|qid=Q232641|lt=Taito City}}
+* {{ill|Fuji Sengen Shrine (Toshima)|ja|富士浅間神社 (豊島区)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Toshima)|ja_comment=jawiki link invalid}} - Tokyo, {{ill|Toshima|en|Toshima|qid=Q236680|lt=Toshima}}, Takamatsu. The shrine's grounds include the "Toshima Nagasaki {{ill|Fujizuka|en|Fujizuka|qid=Q5507555|lt=Fujizuka}}" (an {{ill|National Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|comment=changed title based on wikidata|qid=Q6573893}}).
 
 == Chubu Region ==
-* {{ill|Kitaguchi Hongū Fuji Sengen Shrine|lt=Kitaguchi Hongū Fuji Sengen Shrine|lt=Kitaguchi Hongu Fuji Sengen Shrine|ja|北口本宮冨士浅間神社|12=simple|13=User:Immanuelle/Kitaguchi Hongu Fuji Sengen Shrine|qq=}} - {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}, {{ill|Fujiyoshida|en|Fujiyoshida|qid=Q647508|lt=Fujiyoshida|1=Fujiyoshida}}, Kamiyoshida
-* {{ill|Mikuni Daiichizan Arakura Fuji Sengen Shrine|ja|三國第一山新倉富士浅間神社|12=simple|13=User:Immanuelle/Mikuni Daiichizan Arakura Fuji Sengen Shrine|1=Arakura Fuji Asama Shrine|comment=changed title based on wikidata|qid=Q105949368}} - Yamanashi Prefecture, Fujiyoshida, Asama
-* {{ill|Fuji Sengen Shrine (Oyama)|ja|東口本宮冨士浅間神社|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Oyama)|1=Higashiguchi Hongu Fuji Sengen Shrine|comment=changed title based on wikidata|qid=Q11526304}} (Higashiguchi Hongu Fuji Sengen Shrine) - {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}, {{ill|Suntō District, Shizuoka|en|Suntō District, Shizuoka|qid=Q1142259|lt=Sunto District|1=Suntō District, Shizuoka}}, {{ill|Oyama, Shizuoka|en|Oyama, Shizuoka|qid=Q726418|lt=Oyama|1=Oyama, Shizuoka}}, Subashiri
-* {{ill|Fuji Sengen-gū Shrine|lt=Fuji Sengen-gū Shrine|qid=Q135069408|1=Fuji Sengen-gū Shrine}}
-* {{ill|Fuji Sengen Shrine (Nagoya, Nishi Ward)|ja|富士浅間神社 (名古屋市西区)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Nagoya, Nishi Ward)|ja_comment=jawiki link invalid}} - {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya|1=Nagoya}}, {{ill|Nishi-ku|en|Nishi-ku|qid=Q296095|lt=Nishi Ward, Nagoya|1=Nishi-ku}}
-* {{ill|Fuji Sengen Shrine (Naka-ku, Nagoya)|en|Fuji Sengen Shrine (Naka-ku, Nagoya)|qid=Q5507355|lt=Fuji Sengen Shrine (Nagoya, Naka Ward)|1=Fuji Sengen Shrine (Naka-ku, Nagoya)}} - Aichi Prefecture, Nagoya, {{ill|Central District|en|Central District|qid=Q3710518|lt=Naka Ward, Nagoya|1=Central District}}, Osu
-* {{ill|Fuji Sengen Shrine (Nagakute)|ja|富士浅間神社 (長久手市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Nagakute)|ja_comment=jawiki link invalid}} - Aichi Prefecture, {{ill|Nagakute|en|Nagakute|qid=Q930396|lt=Nagakute|1=Nagakute}}, Fujiura
-* {{ill|Fuji Sengen Shrine (Togo Town)|ja|富士浅間神社 (東郷町)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Togo Town)|1=Fuji Sengen Shrine (Togo Town)|comment=changed title based on wikidata|qid=Q11456095}} - Aichi Prefecture, {{ill|Aichi District|ja|愛知郡|12=simple|13=User:Immanuelle/Aichi District|1=Aichi District|comment=changed title based on wikidata|qid=Q11073856}}, {{ill|Tōgō, Aichi|en|Tōgō, Aichi|qid=Q265050|lt=Togo, Aichi|1=Tōgō, Aichi}}, Haruki
+* {{ill|Kitaguchi Hongū Fuji Sengen Shrine|lt=Kitaguchi Hongū Fuji Sengen Shrine|lt=Kitaguchi Hongu Fuji Sengen Shrine|ja|北口本宮冨士浅間神社|12=simple|13=User:Immanuelle/Kitaguchi Hongu Fuji Sengen Shrine|qq=}} - {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture}}, {{ill|Fujiyoshida|en|Fujiyoshida|qid=Q647508|lt=Fujiyoshida}}, Kamiyoshida
+* {{ill|Arakura Fuji Asama Shrine|ja|三國第一山新倉富士浅間神社|12=simple|13=User:Immanuelle/Mikuni Daiichizan Arakura Fuji Sengen Shrine|comment=changed title based on wikidata|qid=Q105949368}} - Yamanashi Prefecture, Fujiyoshida, Asama
+* {{ill|Higashiguchi Hongu Fuji Sengen Shrine|ja|東口本宮冨士浅間神社|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Oyama)|comment=changed title based on wikidata|qid=Q11526304}} (Higashiguchi Hongu Fuji Sengen Shrine) - {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}, {{ill|Suntō District, Shizuoka|en|Suntō District, Shizuoka|qid=Q1142259|lt=Sunto District}}, {{ill|Oyama, Shizuoka|en|Oyama, Shizuoka|qid=Q726418|lt=Oyama}}, Subashiri
+* {{ill|Fuji Sengen-gū Shrine|lt=Fuji Sengen-gū Shrine|qid=Q135069408}}
+* {{ill|Fuji Sengen Shrine (Nagoya, Nishi Ward)|ja|富士浅間神社 (名古屋市西区)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Nagoya, Nishi Ward)|ja_comment=jawiki link invalid}} - {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}, {{ill|Nishi-ku|en|Nishi-ku|qid=Q296095|lt=Nishi Ward, Nagoya}}
+* {{ill|Fuji Sengen Shrine (Naka-ku, Nagoya)|en|Fuji Sengen Shrine (Naka-ku, Nagoya)|qid=Q5507355|lt=Fuji Sengen Shrine (Nagoya, Naka Ward)}} - Aichi Prefecture, Nagoya, {{ill|Central District|en|Central District|qid=Q3710518|lt=Naka Ward, Nagoya}}, Osu
+* {{ill|Fuji Sengen Shrine (Nagakute)|ja|富士浅間神社 (長久手市)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Nagakute)|ja_comment=jawiki link invalid}} - Aichi Prefecture, {{ill|Nagakute|en|Nagakute|qid=Q930396|lt=Nagakute}}, Fujiura
+* {{ill|Fuji Sengen Shrine (Togo Town)|ja|富士浅間神社 (東郷町)|12=simple|13=User:Immanuelle/Fuji Sengen Shrine (Togo Town)|comment=changed title based on wikidata|qid=Q11456095}} - Aichi Prefecture, {{ill|Aichi District|ja|愛知郡|12=simple|13=User:Immanuelle/Aichi District|comment=changed title based on wikidata|qid=Q11073856}}, {{ill|Tōgō, Aichi|en|Tōgō, Aichi|qid=Q265050|lt=Togo, Aichi}}, Haruki
 
 == Related Articles ==
 Shrines with "Fuji" and "Sengen" in their names:
-* {{ill|Fujisan Hongū Sengen Taisha|en|Fujisan Hongū Sengen Taisha|qid=Q653180|lt=Fujisan Hongu Sengen Taisha|1=Fujisan Hongū Sengen Taisha}} - Shizuoka Prefecture, {{ill|Fujinomiya, Shizuoka|en|Fujinomiya, Shizuoka|qid=Q496072|lt=Fujinomiya|1=Fujinomiya, Shizuoka}}
-* {{ill|Fuji Omuro Sengen Shrine|ja|冨士御室浅間神社|12=simple|13=User:Immanuelle/Fuji Omuro Sengen Shrine|1=Fuji Omuro Asama Shrine|comment=changed title based on wikidata|qid=Q11395081}} - Yamanashi Prefecture, {{ill|Minamitsuru District, Yamanashi|en|Minamitsuru District, Yamanashi|qid=Q1141178|lt=Minamitsuru District|1=Minamitsuru District, Yamanashi}}, {{ill|Fujikawaguchiko|en|Fujikawaguchiko|qid=Q1004231|lt=Fujikawaguchiko|1=Fujikawaguchiko}}
+* {{ill|Fujisan Hongū Sengen Taisha|en|Fujisan Hongū Sengen Taisha|qid=Q653180|lt=Fujisan Hongu Sengen Taisha}} - Shizuoka Prefecture, {{ill|Fujinomiya, Shizuoka|en|Fujinomiya, Shizuoka|qid=Q496072|lt=Fujinomiya}}
+* {{ill|Fuji Omuro Asama Shrine|ja|冨士御室浅間神社|12=simple|13=User:Immanuelle/Fuji Omuro Sengen Shrine|comment=changed title based on wikidata|qid=Q11395081}} - Yamanashi Prefecture, {{ill|Minamitsuru District, Yamanashi|en|Minamitsuru District, Yamanashi|qid=Q1141178|lt=Minamitsuru District}}, {{ill|Fujikawaguchiko|en|Fujikawaguchiko|qid=Q1004231|lt=Fujikawaguchiko}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 === 富士浅間神社 ===
@@ -48,11 +44,10 @@ Shrines with "Fuji" and "Sengen" in their names:
 
 === 富士淺間神社 ===
 ''No Wikidata items currently labeled 富士淺間神社.''
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|富士浅間神社|version=101890762|comment=Imported full ja history}}
 
-{{wikidata link|Q11456094|en|Fuji Sengen Shrine|ja|富士浅間神社}}
+{{wikidata link|Q11456094|en|Fuji Sengen Shrine|ja|富士浅間神社|check_date=2026-05-14}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

@@ -1,19 +1,15 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ishii_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
+'''Ishii Shrine''' (石井神社, pronounced Ishii Jinja or Iwai Jinja) refers to {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrines}} located across Japan.
 
-'''Ishii Shrine''' (石井神社, pronounced Ishii Jinja or Iwai Jinja) refers to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} located across Japan.
-
-* {{ill|Ishii Shrine (Yokote)|ja|石井神社 (横手市)|12=simple|13=User:Immanuelle/Ishii Shrine (Yokote)|ja_comment=jawiki link invalid|qid=Q135579258|1=Ishii Shrine (Yokote)}} - Located in {{ill|Yokote, Akita|en|Yokote, Akita|qid=Q496479|lt=Yokote, Akita|1=Yokote, Akita}}, {{ill|Akita Prefecture|en|Akita Prefecture|qid=Q81863|lt=Akita Prefecture|1=Akita Prefecture}}, in Omonogawa-cho Aizuka.
-* {{ill|Ishii Shrine (Kasama)|ja|石井神社 (笠間市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kasama)|ja_comment=jawiki link invalid|qid=Q135579259|1=Ishii Shrine (Kasama)}} - Located in {{ill|Kasama, Ibaraki|en|Kasama, Ibaraki|qid=Q845851|lt=Kasama, Ibaraki|1=Kasama, Ibaraki}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}, in Ishii.
-* {{ill|Ishii Shrine (Kōtō)|ja|石井神社 (江東区)|12=simple|13=User:Immanuelle/Ishii Shrine (Kōtō)|ja_comment=jawiki link invalid|qid=Q135579260|1=Ishii Shrine (Kōtō)}} - Located in {{ill|Kōtō|en|Kōtō|qid=Q215175|lt=Kōtō, Tokyo|1=Kōtō}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}, in Kameido.
-* {{ill|Ishii Shrine (Kashiwazaki)|ja|石井神社 (柏崎市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kashiwazaki)|ja_comment=jawiki link invalid|qid=Q135579261|1=Ishii Shrine (Kashiwazaki)}} - Located in {{ill|Kashiwazaki, Niigata|en|Kashiwazaki, Niigata|qid=Q633983|lt=Kashiwazaki, Niigata|1=Kashiwazaki, Niigata}}, {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}, in Nishiyama-cho Ishiji. Designated as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
-* {{ill|Iwai Shrine (Izumozaki)|ja|石井神社 (出雲崎町)|12=simple|13=User:Immanuelle/Iwai Shrine (Izumozaki)|qq=}} - Located in {{ill|Izumozaki|en|Izumozaki|qid=Q1204583|lt=Izumozaki, Niigata|1=Izumozaki}}, Niigata Prefecture.
-* {{ill|Tsunaga Shrine|lt=Tsunaga Shrine|lt=Ishii Shrine (Ise)|ja|津長神社|lt=Tsunaga Shrine|lt=Ishii Shrine (Ise)|12=simple|13=User:Immanuelle/Ishii Shrine (Ise)|qq=}} - Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, in Uji Imazaike-cho. A subordinate shrine of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Ise Grand Shrine).
-* {{ill|Ishii Shrine (Kyoto)|ja|石井神社 (京都市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kyoto)|ja_comment=jawiki link invalid|qid=Q135579262|1=Ishii Shrine (Kyoto)}} - Located in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City|1=Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}, in Nishikyō-ku Ōharano Ishizukuri-cho. Designated as a Shikinaisha.
+* {{ill|Ishii Shrine (Yokote)|ja|石井神社 (横手市)|12=simple|13=User:Immanuelle/Ishii Shrine (Yokote)|ja_comment=jawiki link invalid|qid=Q135579258}} - Located in {{ill|Yokote, Akita|en|Yokote, Akita|qid=Q496479|lt=Yokote, Akita}}, {{ill|Akita Prefecture|en|Akita Prefecture|qid=Q81863|lt=Akita Prefecture}}, in Omonogawa-cho Aizuka.
+* {{ill|Ishii Shrine (Kasama)|ja|石井神社 (笠間市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kasama)|ja_comment=jawiki link invalid|qid=Q135579259}} - Located in {{ill|Kasama, Ibaraki|en|Kasama, Ibaraki|qid=Q845851|lt=Kasama, Ibaraki}}, {{ill|Ibaraki Prefecture|ace|Prefektur Ibaraki|af|Ibaraki-prefektuur|an|Prefectura d'Ibaraki|ar|إيباراكي (محافظة)|arz|ايباراكى|az|İbaraki prefekturası|azb|ایباراکی اوستانی|ban|Préféktur Ibaraki|bat_smg|Ibarakė prefektūra|be|Ібаракі (прэфектура)|bg|Ибараки|bn|ইবারাকি প্রশাসনিক অঞ্চল|ca|Prefectura d'Ibaraki|cdo|Ibaraki-gâing|ce|Ибараки (префектура)|ceb|Ibaraki-ken|ckb|پارێزگای ئیباراکی|cs|Prefektura Ibaraki|cy|Ibaraki (talaith)|da|Ibaraki-præfekturet|de|Präfektur Ibaraki|eo|Gubernio Ibaraki|es|Prefectura de Ibaraki|et|Ibaraki prefektuur|eu|Ibaraki (prefektura)|fa|استان ایباراکی|fi|Ibarakin prefektuuri|fr|Préfecture d'Ibaraki|frr|Ibaraki (Prefektüür)|ga|Maoracht Ibaraki|gl|Prefectura de Ibaraki|hak|Ibaraki-yen|he|איבראקי (מחוז)|hr|Ibaraki (prefektura)|hu|Ibaraki prefektúra|hy|Իբարակի (պրեֆեկտուրա)|id|Prefektur Ibaraki|ilo|Prepektura ti Ibaraki|it|Prefettura di Ibaraki|ja|茨城県|jv|Préfèktur Ibaraki|ka|იბარაკის პრეფექტურა|km|ខេត្តអ៊ីបារ៉ាគិ|kn|ಇಬಾರಕಿ (ಪ್ರಾಂತ್ಯ)|ko|이바라키현|lt|Ibarakio prefektūra|lv|Ibaraki prefektūra|mk|Ибараки (префектура)|mn|Ибараки муж|mni|ꯏꯕꯥꯔꯥꯀꯤ ꯂꯝꯈꯥꯢ|mr|इबाराकी प्रांत|ms|Wilayah Ibaraki|ne|इबाराकी प्रदेश|nl|Ibaraki (prefectuur)|nn|Ibaraki prefektur|no|Ibaraki (prefektur)|os|Ибараки|pam|Prepektura ning Ibaraki|pl|Prefektura Ibaraki|pnb|ضلع اباراکی|pt|Ibaraki|ro|Prefectura Ibaraki|ru|Ибараки|sco|Ibaraki Prefectur|se|Ibaraki prefektuvra|sh|Prefektura Ibaraki|si|ඉබරාකි ප්‍රාන්තය|simple|Ibaraki Prefecture|sk|Ibaraki (prefektúra)|sr|Префектура Ибараки|su|Ibaraki Prefecture|sv|Ibaraki prefektur|sw|Mkoa wa Ibaraki|tg|Префектураи Ибараки|th|จังหวัดอิบารากิ|tl|Prepektura ng Ibaraki|tr|Ibaraki|tt|Ибараки (префектура)|ug|ئىباراكى ناھىيىسى|uk|Префектура Ібаракі|ur|ایباراکی پریفیکچر|uz|Ibaraki prefekturasi|vi|Ibaraki|war|Ibaraki (prefektura)|wuu|茨城县|zh|茨城縣|zh_classical|茨城縣|zh_min_nan|Ibaraki-koān|zh_yue|茨城縣|qid=Q83273|lt=Ibaraki Prefecture}}, in Ishii.
+* {{ill|Ishii Shrine (Kōtō)|ja|石井神社 (江東区)|12=simple|13=User:Immanuelle/Ishii Shrine (Kōtō)|ja_comment=jawiki link invalid|qid=Q135579260}} - Located in {{ill|Kōtō|en|Kōtō|qid=Q215175|lt=Kōtō, Tokyo}}, {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}, in Kameido.
+* {{ill|Ishii Shrine (Kashiwazaki)|ja|石井神社 (柏崎市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kashiwazaki)|ja_comment=jawiki link invalid|qid=Q135579261}} - Located in {{ill|Kashiwazaki, Niigata|en|Kashiwazaki, Niigata|qid=Q633983|lt=Kashiwazaki, Niigata}}, {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}, in Nishiyama-cho Ishiji. Designated as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}.
+* {{ill|Iwai Shrine (Izumozaki)|ja|石井神社 (出雲崎町)}} - Located in {{ill|Izumozaki|en|Izumozaki|qid=Q1204583|lt=Izumozaki, Niigata}}, Niigata Prefecture.
+* {{ill|Tsunaga Shrine|ja|津長神社|lt=Ishii Shrine (Ise)}} - Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, in Uji Imazaike-cho. A subordinate shrine of {{ill|Kōtai Jingū|abstract|Q11581011|ja|皇大神宮|tok|tomo sewi suli Naku|zh|皇大神宮|qid=Q11581011}} (Ise Grand Shrine).
+* {{ill|Ishii Shrine (Kyoto)|ja|石井神社 (京都市)|12=simple|13=User:Immanuelle/Ishii Shrine (Kyoto)|ja_comment=jawiki link invalid|qid=Q135579262}} - Located in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, in Nishikyō-ku Ōharano Ishizukuri-cho. Designated as a Shikinaisha.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Ihawino Shrine (Q135040453)|lt=Ihawino Shrine|qid=Q135040453}} — Santō district
@@ -26,15 +22,14 @@
 * {{ill|石井神社 (Q134988847)|lt=石井神社|qid=Q134988847}} — Kotohira
 * {{ill|石井神社 (Q135153924)|lt=石井神社|qid=Q135153924}} — Kasama
 * {{ill|石井神社 (Q135462316)|lt=石井神社|qid=Q135462316}} — Shibata
-* {{ill|石井神社 (Q135463256)|lt=石井神社|qid=Q135463256}} — Nagaoka
-* {{ill|石井神社 (Q135464460)|lt=石井神社|qid=Q135464460}} — Kashiwazaki
-* {{ill|石井神社 (Q135464499)|lt=石井神社|qid=Q135464499}} — Kashiwazaki
-* {{ill|石井神社 (Q135464536)|lt=石井神社|qid=Q135464536}} — Kashiwazaki
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|石井神社 (Q135463256)|qid=Q135463256|lt=石井神社}} — Nagaoka
+* {{ill|石井神社 (Q135464460)|qid=Q135464460|lt=石井神社}} — Kashiwazaki
+* {{ill|石井神社 (Q135464499)|qid=Q135464499|lt=石井神社}} — Kashiwazaki
+* {{ill|石井神社 (Q135464536)|qid=Q135464536|lt=石井神社}} — Kashiwazaki
 
 {{translated page|ja|石井神社|version=102014655|comment=Imported full ja history}}
 
-{{wikidata link|Q16277320|ja|石井神社}}
+{{wikidata link|Q16277320|ja|石井神社|check_date=2026-05-15}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
