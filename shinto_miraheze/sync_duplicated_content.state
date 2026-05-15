@@ -212,8 +212,8 @@
     "sha": "a7d8ddfd35e25e4a34946c8f2a20668d3d8fb657"
   },
   "Kashihara Archaeological Institute": {
-    "revid": 3744168,
-    "sha": "6d7ca06f0f2137cb95c44267fc5b1ba622f84626"
+    "revid": 3747230,
+    "sha": "dea8cc4d359ead83d6ed2bc339a2a7b1fe84fcff"
   },
   "Kashima Jingū": {
     "revid": 3742474,
@@ -308,20 +308,12 @@
     "sha": "2ba289f3339522dcabc21ec6f14d61fbc506f810"
   },
   "Kō Shrine": {
-    "revid": 3746286,
-    "sha": "42b6c11a16e798727f83f8c259c6fc8a47f92fbb"
+    "revid": 3747231,
+    "sha": "092e3beea5517c34347b4ee9d7bce2c740ddf56b"
   },
   "Okihata Suitengū": {
     "revid": 3710796,
     "sha": "01016c0a8d507128dce2dd89333e951de46df33b"
-  },
-  "Omonoimi Shrine (Tobishima, Sakata)": {
-    "revid": 3746464,
-    "sha": "620b2dd32e8c999723311e68ba02c77986abd259"
-  },
-  "Omonoimi Shrine (Yamadate, Sakata)": {
-    "revid": 3746465,
-    "sha": "9c715a69e21c4465314a1e8b440f165cc7c16274"
   },
   "Onji Shrine": {
     "revid": 3738180,
@@ -331,41 +323,21 @@
     "revid": 3734680,
     "sha": "57d562daa1dfe210f51b6e8a274f46c98c23c6a7"
   },
-  "Oosakayamaguchi Shrine (Katsuge district)": {
-    "revid": 3746466,
-    "sha": "b2659886151f32c221b6853b76a7ab376cb206a5"
-  },
   "Otomo no Otomaro": {
     "revid": 3691343,
     "sha": "9be73520296bcc52fb9a19fa4d9a865dd3c0e411"
-  },
-  "Otsu Shrine": {
-    "revid": 3746467,
-    "sha": "fe22f2901087150e4bdcd5ce8425b2e0c5d43148"
   },
   "Otsuchi Mioya Shrine": {
     "revid": 3710829,
     "sha": "89f4a3acf02a1cb32f0322f22b21af24521cf03c"
   },
-  "Owari-to Shrine": {
-    "revid": 3746468,
-    "sha": "c8e67b741893d2e17203ccd58d864fda29a09f50"
-  },
   "Rice-planting dance": {
     "revid": 3718442,
     "sha": "0f5e9e1ffd2db1813aac54e5477afc4fd0e56775"
   },
-  "Rokusho Shrine": {
-    "revid": 3746469,
-    "sha": "24f7cd0f74fe719c72487bde97e266ff2adb3dec"
-  },
   "Saeki Clan": {
     "revid": 3733437,
     "sha": "bec62d4d169c1608c84b16e1d20aa1124745a153"
-  },
-  "Sai Takamori Shrine": {
-    "revid": 3746470,
-    "sha": "c5ad51fff4707f9eeaf856026e562dd9b8c78ced"
   },
   "Saki Tatenami Kofun group": {
     "revid": 3720698,
@@ -374,10 +346,6 @@
   "Sana Shrine": {
     "revid": 3720832,
     "sha": "d78647200810f243cd806c9a10bc7f39bb4226ca"
-  },
-  "Saraki-mura Hyozu Shrine": {
-    "revid": 3746471,
-    "sha": "7b270f0fb763aa1a78608d3406b19b2c345e1c40"
   },
   "Sashino Shrine (Kasama)": {
     "revid": 3738218,
@@ -391,14 +359,6 @@
     "revid": 3734881,
     "sha": "696258a4d45364b417e7420396ac3898f9731382"
   },
-  "Sawawachigi Shrine (Nida Shrine)": {
-    "revid": 3746472,
-    "sha": "88270fa582b41c9bbd055f54a46e7ff8ed9df3f8"
-  },
-  "Sawawachigi Shrine (Ōtsu Town)": {
-    "revid": 3746473,
-    "sha": "667e680b3757c7944914df652cfabe327a361306"
-  },
   "Sayama Shrine": {
     "revid": 3734616,
     "sha": "1cb30259561a97757b7441ca45c0d29636bc5cae"
@@ -406,10 +366,6 @@
   "Seibo Shrine": {
     "revid": 3730634,
     "sha": "51065b0d3a18aa762a578670ebad6fd5c7946b0c"
-  },
-  "Senami Haguro Shrine": {
-    "revid": 3746474,
-    "sha": "9433617cc170b7781c5434835c090932eb1c13a0"
   },
   "Shibagahara Kofun": {
     "revid": 3722163,
@@ -447,10 +403,6 @@
     "revid": 3734362,
     "sha": "df50f7d9c8e8bb712455aeade398b3130e8a6c44"
   },
-  "Shitai Shrine (Asago)": {
-    "revid": 3746475,
-    "sha": "77f21db1e4859e3f6d37ed245edb59fabf51d4e9"
-  },
   "Shitomi Shrine": {
     "revid": 3724130,
     "sha": "6d0ce1099b5050fc999a45231d5cf570b9bab837"
@@ -467,17 +419,9 @@
     "revid": 3737834,
     "sha": "2883d06c90c62001ff39038e8843dbcb067d2c13"
   },
-  "Sugata Shrine": {
-    "revid": 3746476,
-    "sha": "784fcb19b01ff9c0aa56b48e0ce15324601bc70c"
-  },
   "Sugōisobe Shrine": {
     "revid": 3724539,
     "sha": "97b5f5321f98e7550c520bfa8a8adf618426bdda"
-  },
-  "Susanoo Shrine (Fukuyama)": {
-    "revid": 3746477,
-    "sha": "ce06e2f187cfeaa3f0b72db94ca1bc9c119de9d9"
   },
   "Susu Kizumi Shrine (Chikuma City)": {
     "revid": 3738251,
@@ -487,10 +431,6 @@
     "revid": 3731320,
     "sha": "24fbc349807f1713b6d7519a0ab5560952596d8e"
   },
-  "Taka Shrine": {
-    "revid": 3746478,
-    "sha": "48bf93f0c97c125b56b20756266031211fa10528"
-  },
   "Takagawara Shrine": {
     "revid": 3725823,
     "sha": "c74982008f76e04246fe9435eb9b6c0f23cbdb74"
@@ -498,10 +438,6 @@
   "Takase Shrine": {
     "revid": 3726015,
     "sha": "f325046df4121b65d6c8a0049a6f1d2d5e7cd6bd"
-  },
-  "Takata Shrine (Hida Province)": {
-    "revid": 3746479,
-    "sha": "9dbe83c3cb45dd15e34a1e42fc668860619593df"
   },
   "Takata Shrine (Hida)": {
     "revid": 3734630,
@@ -512,12 +448,8 @@
     "sha": "a37e7484c319c6a439c76b5e0a09e4ddb378513c"
   },
   "Take Minato Shrine": {
-    "revid": 3746481,
-    "sha": "54f0a8827778fdb6571cdb962097faa67d4c73b1"
-  },
-  "Take Shrine": {
-    "revid": 3746480,
-    "sha": "496c2c5c4bf3a9ed5f85ac1d2c72a92992d46982"
+    "revid": 3746614,
+    "sha": "fa9cd91d1d698f85956989efd6854ae79d6c4a3b"
   },
   "Takehase": {
     "revid": 3726130,
@@ -539,37 +471,13 @@
     "revid": 3735587,
     "sha": "e713346896274348aa4c6ba4fa4fe9924abbd184"
   },
-  "Tarumi Shrine": {
-    "revid": 3746482,
-    "sha": "0f1a55fa02d9f9c49d1a42ac5e72a9e3566d99a7"
-  },
   "Tashima Shrine (Saga)": {
     "revid": 3744276,
     "sha": "54c8256b9b8e8b3f94ceebcd5875420d17471b73"
   },
-  "Tatano Shrine": {
-    "revid": 3746483,
-    "sha": "2956f5e2306ccf7310d79c06f8a63bf2539ed488"
-  },
-  "Tate Shrine (Tsurugi)": {
-    "revid": 3746484,
-    "sha": "622dc069d2246d5dd52b242d3f56561f37bce483"
-  },
   "Temple Precinct Cities": {
     "revid": 3729504,
     "sha": "78e5e1ffb6f11d396aa77164529cdc46ee6d4f83"
-  },
-  "Tenjin-sha": {
-    "revid": 3746485,
-    "sha": "eb82438b803e632348180930cf212721530585c9"
-  },
-  "Tenman Shrine": {
-    "revid": 3746486,
-    "sha": "58f435db006afd49620a8f870f99a258b958150a"
-  },
-  "Tenmangū": {
-    "revid": 3746487,
-    "sha": "447dddebb66b937b09bcd662dba5f2010d4d9c84"
   },
   "Tenno Shrine": {
     "revid": 3730095,
@@ -631,10 +539,6 @@
     "revid": 3738521,
     "sha": "36a9dca7bbb96ffef93302bfe3c9dfa2879db2ec"
   },
-  "Tsuno Shrine": {
-    "revid": 3746488,
-    "sha": "15810ef7c6f3ec82e472b5d66995d1b674d6c7f0"
-  },
   "Tsunomine Shrine": {
     "revid": 3738529,
     "sha": "f2135d4be5823b54bb139fb581fb0fd3734450a1"
@@ -642,14 +546,6 @@
   "Tsurugi Shrine": {
     "revid": 3738537,
     "sha": "dd06b80ba84210ecef30e3a7670587c5aa80f0f0"
-  },
-  "Tsurugi Shrine (Kirishima)": {
-    "revid": 3746489,
-    "sha": "c59c396b26f1b59933239d67b5ca780311da8cd6"
-  },
-  "Tsuruginushi Shrine (Uda district)": {
-    "revid": 3746490,
-    "sha": "3df825e0d9236891725e02aa2b14b6a491ac53f8"
   },
   "Tsushima Faith": {
     "revid": 3731157,
