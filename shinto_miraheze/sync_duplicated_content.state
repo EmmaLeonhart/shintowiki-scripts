@@ -211,10 +211,6 @@
     "revid": 3737748,
     "sha": "a7d8ddfd35e25e4a34946c8f2a20668d3d8fb657"
   },
-  "Kashima Jingū": {
-    "revid": 3749163,
-    "sha": "00655a5bb6e5af8788428debd094d17845f27d6e"
-  },
   "Kasuga Shrine (Tokushima)": {
     "revid": 3735201,
     "sha": "08a2d666c76fcd75b6d1d03b3203f28615c51fa9"
@@ -230,10 +226,6 @@
   "Katayama Shrine (Kameyama)": {
     "revid": 3734059,
     "sha": "2bdc6ee4606afac516124e134191bd8a32d16411"
-  },
-  "Katori Jingū": {
-    "revid": 3749164,
-    "sha": "5f1d258a4a0272731261c3dd2686c8068b6efca8"
   },
   "Kawachi-no-Mikoto": {
     "revid": 3708784,
@@ -275,10 +267,6 @@
     "revid": 3683006,
     "sha": "3985f6a1dfab7f70686fd4d1833dac8e06b74454"
   },
-  "Kirishima Jingū": {
-    "revid": 3749165,
-    "sha": "c71cf8d8287f69d99d1ad7a93af982e63c6eb835"
-  },
   "Kiyonoiba Shrine": {
     "revid": 3710452,
     "sha": "277a2d4cb32f84b5c1b057f6b6d120b18c1fb7a8"
@@ -304,8 +292,8 @@
     "sha": "2ba289f3339522dcabc21ec6f14d61fbc506f810"
   },
   "Kō Shrine": {
-    "revid": 3749166,
-    "sha": "87e672c6cadf817ab1a04961d7581be035390352"
+    "revid": 3749199,
+    "sha": "42b6c11a16e798727f83f8c259c6fc8a47f92fbb"
   },
   "Okihata Suitengū": {
     "revid": 3710796,
@@ -444,8 +432,8 @@
     "sha": "a37e7484c319c6a439c76b5e0a09e4ddb378513c"
   },
   "Take Minato Shrine": {
-    "revid": 3749167,
-    "sha": "21ee1c5081c95c7f49a7bd4b2553ca3d33fa3419"
+    "revid": 3749202,
+    "sha": "fa9cd91d1d698f85956989efd6854ae79d6c4a3b"
   },
   "Takehase": {
     "revid": 3726130,
@@ -466,10 +454,6 @@
   "Tanoe and Tanoe-Mimae Shrines": {
     "revid": 3735587,
     "sha": "e713346896274348aa4c6ba4fa4fe9924abbd184"
-  },
-  "Tashima Shrine (Saga)": {
-    "revid": 3749168,
-    "sha": "45ce975f0bb1adb26b2027bb06ebc6fa98428f39"
   },
   "Temple Precinct Cities": {
     "revid": 3729504,
