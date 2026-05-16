@@ -98,10 +98,10 @@ In the Tōkai region, most of these are small shrines, but there are a large num
 * {{ill|San Shrine (Q134957190)|lt=San Shrine|qid=Q134957190}} — Fuji
 * {{ill|San Shrine (Q134957191)|lt=San Shrine|qid=Q134957191}} — Fuji
 * {{ill|San Shrine (Q134957192)|lt=San Shrine|qid=Q134957192}} — Fuji
-* {{ill|San Shrine (Q134958202)|lt=San Shrine|qid=Q134958202}} — Fuji
-* {{ill|San Shrine (Q134958203)|lt=San Shrine|qid=Q134958203}} — Fuji
-* {{ill|San Shrine (Q134958204)|lt=San Shrine|qid=Q134958204}} — Fuji
-* {{ill|San Shrine (Q134958205)|lt=San Shrine|qid=Q134958205}} — Fuji
+* {{ill|San Shrine (Q134957521)|lt=San Shrine|qid=Q134957521}} — Fuji
+* {{ill|San Shrine (Q134957523)|lt=San Shrine|qid=Q134957523}} — Fuji
+* {{ill|San Shrine (Q134957524)|lt=San Shrine|qid=Q134957524}} — Fuji
+* {{ill|San Shrine (Q134957547)|lt=San Shrine|qid=Q134957547}} — Fujinomiya
 * {{ill|Yama Shrine (Q105761341)|lt=Yama Shrine|qid=Q105761341}} — Futago-chō, Aisai
 * {{ill|Yama Shrine (Q106690236)|lt=Yama Shrine|qid=Q106690236}} — Iwaya, Tashiro-chō, Nagoya
 * {{ill|Yama Shrine (Q11470797)|lt=Yama Shrine|qid=Q11470797}} — Utsunomiya
@@ -134,6 +134,7 @@ In the Tōkai region, most of these are small shrines, but there are a large num
 * {{ill|Yama Shrine (Q134598855)|lt=Yama Shrine|qid=Q134598855}} — Katsuura
 * {{ill|Yama Shrine (Q134887405)|lt=Yama Shrine|qid=Q134887405}} — Fukaya
 * {{ill|Yama Shrine (Q134955519)|lt=Yama Shrine|qid=Q134955519}} — Numazu
+* {{ill|Yama Shrine (Q134955520)|lt=Yama Shrine|qid=Q134955520}} — Numazu
 * {{ill|Yama Shrine (Q134955534)|lt=Yama Shrine|qid=Q134955534}} — Gotemba
 * {{ill|Yama Shrine (Q134955558)|lt=Yama Shrine|qid=Q134955558}} — Mishima
 * {{ill|Yama Shrine (Q134955568)|lt=Yama Shrine|qid=Q134955568}} — Fuji
@@ -154,12 +155,11 @@ In the Tōkai region, most of these are small shrines, but there are a large num
 * {{ill|Yama Shrine (Q134956825)|lt=Yama Shrine|qid=Q134956825}} — Oyama
 * {{ill|Yama Shrine (Q134956856)|lt=Yama Shrine|qid=Q134956856}} — Mishima
 * {{ill|Yama Shrine (Q134956861)|lt=Yama Shrine|qid=Q134956861}} — Fuji
-* {{ill|Yama Shrine (Q134958191)|lt=Yama Shrine|qid=Q134958191}} — Mishima
-* {{ill|Yama Shrine (Q134958192)|lt=Yama Shrine|qid=Q134958192}} — Kannami
-* {{ill|Yama Shrine (Q134958245)|lt=Yama Shrine|qid=Q134958245}} — Matsuzaki
-* {{ill|Yama Shrine (Q134958281)|lt=Yama Shrine|qid=Q134958281}} — Chūō Ward
-* {{ill|Yama Shrine (Q134989439)|lt=Yama Shrine|qid=Q134989439}} — Mannō-chō
-* {{ill|Yama Shrine (Q134989440)|lt=Yama Shrine|qid=Q134989440}} — Mannō-chō
+* {{ill|Yama Shrine (Q134957513)|lt=Yama Shrine|qid=Q134957513}} — Mishima
+* {{ill|Yama Shrine (Q134957522)|lt=Yama Shrine|qid=Q134957522}} — Fuji
+* {{ill|Yama Shrine (Q134957591)|lt=Yama Shrine|qid=Q134957591}} — Chūō Ward
+* {{ill|Yama Shrine (Q134988856)|lt=Yama Shrine|qid=Q134988856}} — Mannō-chō
+* {{ill|Yama Shrine (Q134988930)|lt=Yama Shrine|qid=Q134988930}} — Mannō-chō
 * {{ill|Yama Shrine (Q135039885)|lt=Yama Shrine|qid=Q135039885}} — Takashima district
 * {{ill|Yama Shrine (Q22120748)|lt=Yama Shrine|qid=Q22120748}} — Chūō-shi
 * {{ill|Yama-no-Kami Shrine (Q17224192)|lt=Yama-no-Kami Shrine|qid=Q17224192}} — Misato
