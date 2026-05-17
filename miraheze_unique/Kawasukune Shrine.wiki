@@ -1,27 +1,22 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kawasukune_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
 '''Kawasukune Shrine''' (甲波宿禰神社)
 
 * '''Shinto shrines located in Shibukawa City, Gunma Prefecture:'''
-** {{ill|Kawasukune Shrine (Shibukawa, Kawashima)|ja|甲波宿禰神社 (渋川市川島)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Shibukawa, Kawashima)|1=Kawasukune Shrine (Shibukawa)|comment=changed title based on wikidata|qid=Q66085130}}
-** {{ill|Kawasukune Shrine (Shibukawa, Gyokōda)|ja|甲波宿禰神社 (渋川市行幸田)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Shibukawa, Gyokōda)|1=Kawasukune Shrine (Miyukida, Shibukawa)|comment=changed title based on wikidata|qid=Q84400117}}
+** {{ill|Kawasukune Shrine (Shibukawa)|ja|甲波宿禰神社 (渋川市川島)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Shibukawa, Kawashima)|comment=changed title based on wikidata|qid=Q66085130}}
+** {{ill|Kawasukune Shrine (Miyukida, Shibukawa)|ja|甲波宿禰神社 (渋川市行幸田)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Shibukawa, Gyokōda)|comment=changed title based on wikidata|qid=Q84400117}}
 
 * '''A Shinto shrine located in Higashiagatsuma Town, Agatsuma District, Gunma Prefecture:'''
-** {{ill|Kawasukune Shrine (Higashiagatsuma)|ja|甲波宿禰神社 (東吾妻町)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Higashiagatsuma)|1=Kawasukune Shrine (Higashiagatsuma)|comment=changed title based on wikidata|qid=Q66085131}}
+** {{ill|Kawasukune Shrine (Higashiagatsuma)|ja|甲波宿禰神社 (東吾妻町)|12=simple|13=User:Immanuelle/Kawasukune Shrine (Higashiagatsuma)|comment=changed title based on wikidata|qid=Q66085131}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kawasukune Shrine (Higashiagatsuma) (Q66085131)|lt=Kawasukune Shrine (Higashiagatsuma)|qid=Q66085131}} — Kōzuke Province
 * {{ill|Kawasukune Shrine (Shibukawa) (Q66085130)|lt=Kawasukune Shrine (Shibukawa)|qid=Q66085130}} — Kōzuke Province
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|甲波宿禰神社|version=99407782|comment=Imported full ja history}}
 
-{{wikidata link|Q84978067|ja|甲波宿禰神社}}
+{{wikidata link|Q84978067|ja|甲波宿禰神社|check_date=2026-05-17}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Wikidata no English label]]

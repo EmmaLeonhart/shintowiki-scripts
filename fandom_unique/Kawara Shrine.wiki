@@ -1,49 +1,44 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kawara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
 Kawara Shrine can refer to two shrines in [[Ise Grand Shrine]]
-*{{ill|Kawara Shrine (Naikū)|ja|狭田国生神社|lt_old=Kawara Shrine|12=simple|13=User:Immanuelle/Kawara Shrine (Naikū)|qq=}} (川原神社)
-*{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt_old=Kawara Shrine|12=simple|13=User:Immanuelle/Kawara Shrine (Gekū)|qq=}} (河原神社)
-**its sessha {{ill|Kawarabuchi Shrine|ja|河原淵神社|12=simple|13=User:Immanuelle/Kawarabuchi Shrine|qq=}}
+*{{ill|Kawara Shrine (Naikū)|ja|狭田国生神社}} (川原神社)
+*{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)}} (河原神社)
+**its sessha {{ill|Kawarabuchi Shrine|ja|河原淵神社}}
 There is also the similarly names
 
-{{ill|Kawarabuchi Shrine|ja|河原淵神社|12=simple|13=User:Immanuelle/Kawarabuchi Shrine|qq=}} located near {{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt_old=Kawara Shrine|12=simple|13=User:Immanuelle/Kawara Shrine (Gekū)|qq=}}
+{{ill|Kawarabuchi Shrine|ja|河原淵神社}} located near {{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)}}
 
 == Other shrines (川原神社) ==
 
-* {{ill|Kawahara Shrine|en|Kawahara Shrine|qid=Q3194327|lt=Kawahara Shrine|1=Kawahara Shrine}}   has the same spelling as {{ill|Kawara Shrine (Naikū)|ja|狭田国生神社|lt_old=Kawara Shrine|12=simple|13=User:Immanuelle/Kawara Shrine (Naikū)|qq=}}
+* {{ill|Kawahara Shrine|en|Kawahara Shrine|qid=Q3194327|lt=Kawahara Shrine}}   has the same spelling as {{ill|Kawara Shrine (Naikū)|ja|狭田国生神社}}
 
 == Kawara Shrines (河原神社) ==
 '''Kawara Shrine''' (河原神社) refers to several Shinto shrines located throughout Japan.
-* {{ill|Kawara Shrine (Gyōda)|ja|河原神社 (行田市)|12=simple|13=User:Immanuelle/Kawara Shrine (Gyōda)|ja_comment=jawiki link invalid|qid=Q135579700|1=Kawara Shrine (Gyōda)}} - Located in {{ill|Gyōda|en|Gyōda|qid=Q860659|lt=Gyōda|1=Gyōda}}, {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture|1=Saitama Prefecture}}.
-* {{ill|Kawara Shrine (Wakasa)|ja|河原神社 (若狭町)|12=simple|13=User:Immanuelle/Kawara Shrine (Wakasa)|ja_comment=jawiki link invalid|qid=Q135579701|1=Kawara Shrine (Wakasa)}} - Located in {{ill|Wakasa, Fukui|en|Wakasa, Fukui|qid=Q1349039|lt=Wakasa|1=Wakasa, Fukui}}, {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture|1=Fukui Prefecture}}.
-* {{ill|Kawara Shrine (Okazaki)|ja|河原神社 (岡崎市)|12=simple|13=User:Immanuelle/Kawara Shrine (Okazaki)|ja_comment=jawiki redirects to 額田地区|1=Q17214124|comment=changed title based on wikidata|qid=Q17214124}} - Located in {{ill|Okazaki, Aichi|en|Okazaki, Aichi|qid=Q242783|lt=Okazaki|1=Okazaki, Aichi}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}.
-* {{ill|Kawahara Shrine (Kiyosu)|lt=Kawahara Shrine (Kiyosu)|lt=Kawara Shrine (Kiyosu)|ja|河原神社 (清須市)|12=simple|13=User:Immanuelle/Kawara Shrine (Kiyosu)|qq=}} - Located in {{ill|Kiyosu|en|Kiyosu|qid=Q502407|lt=Kiyosu|1=Kiyosu}}, Aichi Prefecture.
-* {{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|12=simple|13=User:Immanuelle/Kawara Shrine (Gekū)|qq=}} - Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, an auxiliary shrine of {{ill|Toyōke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}}.
-* {{ill|Kawara Shrine (Maizuru)|ja|河原神社 (舞鶴市)|12=simple|13=User:Immanuelle/Kawara Shrine (Maizuru)|ja_comment=jawiki link invalid|qid=Q135579702|1=Kawara Shrine (Maizuru)}} - Located in {{ill|Maizuru|en|Maizuru|qid=Q750573|lt=Maizuru|1=Maizuru}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}.
-* {{ill|Kawara Shrine (Matsue)|ja|河原神社 (松江市)|12=simple|13=User:Immanuelle/Kawara Shrine (Matsue)|ja_comment=jawiki link invalid|qid=Q135579703|1=Kawara Shrine (Matsue)}} - Located in {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue|1=Matsue}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}.
+* {{ill|Kawara Shrine (Gyōda)|ja|河原神社 (行田市)|12=simple|13=User:Immanuelle/Kawara Shrine (Gyōda)|ja_comment=jawiki link invalid|qid=Q135579700}} - Located in {{ill|Gyōda|en|Gyōda|qid=Q860659|lt=Gyōda}}, {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture}}.
+* {{ill|Kawara Shrine (Wakasa)|ja|河原神社 (若狭町)|12=simple|13=User:Immanuelle/Kawara Shrine (Wakasa)|ja_comment=jawiki link invalid|qid=Q135579701}} - Located in {{ill|Wakasa, Fukui|en|Wakasa, Fukui|qid=Q1349039|lt=Wakasa}}, {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}.
+* {{ill|Q17214124|ja|河原神社 (岡崎市)|12=simple|13=User:Immanuelle/Kawara Shrine (Okazaki)|ja_comment=jawiki redirects to 額田地区|comment=changed title based on wikidata|qid=Q17214124}} - Located in {{ill|Okazaki, Aichi|en|Okazaki, Aichi|qid=Q242783|lt=Okazaki}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}.
+* {{ill|Kawahara Shrine (Kiyosu)|ja|河原神社 (清須市)|lt=Kawara Shrine (Kiyosu)}} - Located in {{ill|Kiyosu|en|Kiyosu|qid=Q502407|lt=Kiyosu}}, Aichi Prefecture.
+* {{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)}} - Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise}}, {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196|lt=Mie Prefecture}}, an auxiliary shrine of {{ill|Toyōke Daijingū|ja|豊受大神宮}}.
+* {{ill|Kawara Shrine (Maizuru)|ja|河原神社 (舞鶴市)|12=simple|13=User:Immanuelle/Kawara Shrine (Maizuru)|ja_comment=jawiki link invalid|qid=Q135579702}} - Located in {{ill|Maizuru|en|Maizuru|qid=Q750573|lt=Maizuru}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}.
+* {{ill|Kawara Shrine (Matsue)|ja|河原神社 (松江市)|12=simple|13=User:Immanuelle/Kawara Shrine (Matsue)|ja_comment=jawiki link invalid|qid=Q135579703}} - Located in {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}.
 
 == Other spellings ==
-{{ill|Kawara Shrine (Fukuoka)|ja|香春神社|12=simple|13=User:Immanuelle/Kawara Shrine (Fukuoka)|1=Kawara Shrine (Q11667602)|comment=changed title based on wikidata|qid=Q11667602}}
+{{ill|Kawara Shrine (Q11667602)|ja|香春神社|12=simple|13=User:Immanuelle/Kawara Shrine (Fukuoka)|comment=changed title based on wikidata|qid=Q11667602}}
 
 == See Also ==
 
-* {{ill|Kawara-dera|en|Kawara-dera|qid=Q3194342|lt=Kawara-dera|1=Kawara-dera}}
+* {{ill|Kawara-dera|en|Kawara-dera|qid=Q3194342|lt=Kawara-dera}}
 
 {{disambiguation}}{{125 Shrines of Ise}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kawara Shrine (Q135186136)|lt=Kawara Shrine|qid=Q135186136}} — Ise Province
 * {{ill|Kawara Shrine (Q17228197)|lt=Kawara Shrine|qid=Q17228197}} — Ise Province
 * {{ill|河原神社 (Q134886091)|lt=河原神社|qid=Q134886091}} — Gyōda-shi
 * {{ill|河原神社 (Q134886674)|lt=河原神社|qid=Q134886674}} — Honjō-shi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|河原神社|version=101817823|comment=Imported full ja history}}
 
-{{wikidata link|Q11553642|ja|河原神社}}
+{{wikidata link|Q11553642|ja|河原神社|check_date=2026-05-17}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
