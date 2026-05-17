@@ -1,22 +1,17 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kokufu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
 '''Kō Shrine''' ({{lang|ja|国府神社}})
 
-* [[Kō Shrine (Takatori)]] - Located in {{ill|Takatori, Nara|en|12=simple|13=User:Immanuelle/Takatori, Nara|qq=}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}. This shrine, situated in Shitakusa, Takatori, is the {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} (provincial shrine) of {{ill|Yamato Province|en|12=simple|13=User:Immanuelle/Yamato Province|qq=}}. It holds a distinguished position along with {{ill|Ōmiwa Shrine|en|12=simple|13=User:Immanuelle/Ōmiwa Shrine|qq=}}, being a central focus of faith and worship within the province.
-* [[Kō Shrine (Ichikawa)]] - Found in {{ill|Ichikawa, Chiba|en|12=simple|13=User:Immanuelle/Ichikawa, Chiba|qq=}}, {{ill|Chiba Prefecture|en|12=simple|13=User:Immanuelle/Chiba Prefecture|qq=}}, this ancient shrine was founded on February 8, 1087 (Eihō 7). Also known as Ōtori Ōkami, it enshrines {{ill|Yamato Takeru|en|12=simple|13=User:Immanuelle/Yamato Takeru|qq=}} as its deity.
+* [[Kō Shrine (Takatori)]] - Located in {{ill|Takatori, Nara|en|Takatori, Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}. This shrine, situated in Shitakusa, Takatori, is the {{ill|Sōja|en|Sōja}} (provincial shrine) of {{ill|Yamato Province|en|Yamato Province}}. It holds a distinguished position along with {{ill|Ōmiwa Shrine|en|Ōmiwa Shrine}}, being a central focus of faith and worship within the province.
+* [[Kō Shrine (Ichikawa)]] - Found in {{ill|Ichikawa, Chiba|en|Ichikawa, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture}}, this ancient shrine was founded on February 8, 1087 (Eihō 7). Also known as Ōtori Ōkami, it enshrines {{ill|Yamato Takeru|en|Yamato Takeru}} as its deity.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kokufu Shrine (Q135236070)|lt=Kokufu Shrine|qid=Q135236070}} — Shima Province
 * {{ill|国府神社 (Q135260363)|lt=国府神社|qid=Q135260363}} — Oyama
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|国府神社|version=84900867|comment=Imported full ja history}}
-{{wikidata link|Q108778882|ja|国府神社}}
+{{wikidata link|Q108778882|ja|国府神社|check_date=2026-05-17}}
 [[Category:All disambiguation pages]]
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]

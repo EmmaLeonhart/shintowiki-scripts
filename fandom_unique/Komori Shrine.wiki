@@ -1,59 +1,54 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Komori_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-
-'''Komori Shrine''' (子守神社, also read as Komamori Jinja) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}s across Japan. As the name suggests, these shrines enshrine the "Komori no Kami" (child-protecting deity) and serve as protectors of children. They may be enshrined as the primary deity ([[ujigami]]) or as subsidiary shrines within larger shrine precincts. The name can also be written as 籠守 or 子護.
+'''Komori Shrine''' (子守神社, also read as Komamori Jinja) refers to various {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}s across Japan. As the name suggests, these shrines enshrine the "Komori no Kami" (child-protecting deity) and serve as protectors of children. They may be enshrined as the primary deity ([[ujigami]]) or as subsidiary shrines within larger shrine precincts. The name can also be written as 籠守 or 子護.
 
 Komori shrines are associated with two main lineages: the [[Mikumari|Mikumari-no-Kami]] lineage and the lineage of the eighth shrine of [[Kumano Hongū Taisha]].
 
 == Lineages ==
 === Mikumari-no-Kami Lineage ===
-Mikumari-no-Kami, originally a [[:en:Water deity|Water deity]] responsible for water distribution, came to be associated with child protection as the pronunciation of "Mikumari" (みくまり) shifted to "Mikomori" (御子守), meaning child protection. The head shrine of this lineage is {{ill|Yoshino Mikumari Shrine|en|Yoshino Mikumari Shrine|qid=Q3529714|lt=Yoshino Mikumari Shrine|1=Yoshino Mikumari Shrine}} in {{ill|Yoshino, Nara|en|Yoshino, Nara|qid=Q1203731|lt=Yoshino, Nara|1=Yoshino, Nara}}.
+Mikumari-no-Kami, originally a [[:en:Water deity|Water deity]] responsible for water distribution, came to be associated with child protection as the pronunciation of "Mikumari" (みくまり) shifted to "Mikomori" (御子守), meaning child protection. The head shrine of this lineage is {{ill|Yoshino Mikumari Shrine|en|Yoshino Mikumari Shrine|qid=Q3529714|lt=Yoshino Mikumari Shrine}} in {{ill|Yoshino, Nara|en|Yoshino, Nara|qid=Q1203731|lt=Yoshino, Nara}}.
 
 === Kumano Hongū Taisha Lineage ===
-The eighth shrine of Kumano Hongū Taisha, known as Komori-no-Miya, enshrines a deity referred to in the {{ill|Ryōjin Hishō|en|Ryōjin Hishō|qid=Q3010584|lt=Ryōjin Hishō|1=Ryōjin Hishō}}: "The children of the gods, such as the Wakamiya of Hachiman and the Wakōji and Komori Gozen of Kumano." Shrines in this lineage include the subsidiary {{ill|Kusu Shrine (Komori Shrine)|ja|楠神社|12=simple|13=User:Immanuelle/Kusu Shrine (Komori Shrine)|ja_comment=jawiki link invalid}} of {{ill|Fujishiro Ōji|lt=Fujishiro Ōji|lt=Fujishiro Shrine|ja|藤白神社|12=simple|13=User:Immanuelle/Fujishiro Shrine|1=Fujishiro Ōji Shrine|comment=changed title based on wikidata|qid=Q3090605}} in {{ill|Kainan, Wakayama|en|Kainan, Wakayama|qid=Q841309|lt=Kainan, Wakayama|1=Kainan, Wakayama}}.
+The eighth shrine of Kumano Hongū Taisha, known as Komori-no-Miya, enshrines a deity referred to in the {{ill|Ryōjin Hishō|en|Ryōjin Hishō|qid=Q3010584|lt=Ryōjin Hishō}}: "The children of the gods, such as the Wakamiya of Hachiman and the Wakōji and Komori Gozen of Kumano." Shrines in this lineage include the subsidiary {{ill|Kusu Shrine (Komori Shrine)|ja|楠神社}} of {{ill|Fujishiro Ōji Shrine|lt=Fujishiro Ōji|lt=Fujishiro Shrine|ja|藤白神社|12=simple|13=User:Immanuelle/Fujishiro Shrine|comment=changed title based on wikidata|qid=Q3090605}} in {{ill|Kainan, Wakayama|en|Kainan, Wakayama|qid=Q841309|lt=Kainan, Wakayama}}.
 
-Additional associations include {{ill|Isagawa Shrine|ja|率川神社|12=simple|13=User:Immanuelle/Isagawa Shrine|qq=}} in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City|1=Nara (city)}}, which is also known as Komori Myōjin.
+Additional associations include {{ill|Isagawa Shrine|ja|率川神社}} in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, which is also known as Komori Myōjin.
 
 == Shrines by Type ==
 === Mikumari-no-Kami Lineage ===
-* {{ill|Komori Shrine (Kamakura)|ja|子守神社|12=simple|13=User:Immanuelle/Komori Shrine (Kamakura)|1=Komori Shrine|comment=changed title based on wikidata|qid=Q11447878}} - {{ill|Kamakura|en|Kamakura|qid=Q200267|lt=Kamakura, Kanagawa|1=Kamakura}}
-* {{ill|Komori Shrine (Kani)|ja|子守神社 (可児市)|12=simple|13=User:Immanuelle/Komori Shrine (Kani)|1=Komamori Shrine|comment=changed title based on wikidata|qid=Q11447881}} - {{ill|Kani, Gifu|en|Kani, Gifu|qid=Q853805|lt=Kani, Gifu|1=Kani, Gifu}}
-* {{ill|Komori Shrine (Kyotanba)|ja|子守神社 (京丹波町)|12=simple|13=User:Immanuelle/Komori Shrine (Kyotanba)|ja_comment=jawiki link invalid}} - [[:en:Kyotanba, Kyoto|Kyotanba, Kyoto]]
-* {{ill|Kagomori Katate Shrine|ja|籠守勝手神社|12=simple|13=User:Immanuelle/Kagomori Katate Shrine|1=Komori Katte Shrine|comment=changed title based on wikidata|qid=Q11603933}} - {{ill|Ichinomiya, Aichi|en|Ichinomiya, Aichi|qid=Q270810|lt=Ichinomiya, Aichi|1=Ichinomiya, Aichi}}
-* {{ill|Komori Katate Shrine|ja|子守勝手神社|12=simple|13=User:Immanuelle/Komori Katate Shrine|ja_comment=jawiki redirects to 向日神社|1=Mukō Shrine|comment=changed title based on wikidata|qid=Q11415986}} - [[Nagaokakyo, Kyoto|Nagaokakyo, Kyoto]]
+* {{ill|Komori Shrine|ja|子守神社|12=simple|13=User:Immanuelle/Komori Shrine (Kamakura)|comment=changed title based on wikidata|qid=Q11447878}} - {{ill|Kamakura|en|Kamakura|qid=Q200267|lt=Kamakura, Kanagawa}}
+* {{ill|Komamori Shrine|ja|子守神社 (可児市)|12=simple|13=User:Immanuelle/Komori Shrine (Kani)|comment=changed title based on wikidata|qid=Q11447881}} - {{ill|Kani, Gifu|en|Kani, Gifu|qid=Q853805|lt=Kani, Gifu}}
+* {{ill|Komori Shrine (Kyotanba)|ja|子守神社 (京丹波町)}} - [[:en:Kyotanba, Kyoto|Kyotanba, Kyoto]]
+* {{ill|Komori Katte Shrine|ja|籠守勝手神社|12=simple|13=User:Immanuelle/Kagomori Katate Shrine|comment=changed title based on wikidata|qid=Q11603933}} - {{ill|Ichinomiya, Aichi|en|Ichinomiya, Aichi|qid=Q270810|lt=Ichinomiya, Aichi}}
+* {{ill|Mukō Shrine|ja|子守勝手神社|12=simple|13=User:Immanuelle/Komori Katate Shrine|ja_comment=jawiki redirects to 向日神社|comment=changed title based on wikidata|qid=Q11415986}} - [[Nagaokakyo, Kyoto|Nagaokakyo, Kyoto]]
 
 === Other Shrines ===
-* {{ill|Komori Shrine (Chiba City)|ja|子守神社 (千葉市)|12=simple|13=User:Immanuelle/Komori Shrine (Chiba City)|1=Komamori Shrine|comment=changed title based on wikidata|qid=Q11447880}} - [[Chiba City, Chiba|Chiba City, Chiba]]
-* {{ill|Komori Shrine (Kawazu, Ōnabe)|ja|子守神社 (河津町大鍋)|12=simple|13=User:Immanuelle/Komori Shrine (Kawazu, Ōnabe)|1=Komori Shrine|comment=changed title based on wikidata|qid=Q131925935}} - Located in Ōnabe, {{ill|Kawazu, Shizuoka|en|Kawazu, Shizuoka|qid=Q1203861|lt=Kawazu, Shizuoka|1=Kawazu, Shizuoka}}
-* {{ill|Komori Shrine (Kyoto, Uji)|ja|巨椋神社#子守神社|12=simple|13=User:Immanuelle/Komori Shrine (Kyoto, Uji)|1=Ogura Shrine (Uji)|comment=changed title based on wikidata|qid=Q63148006}} - Located within {{ill|Ogura Shrine|ja|巨椋神社|12=simple|13=User:Immanuelle/Ogura Shrine|1=Ogura Shrine (Uji)|comment=changed title based on wikidata|qid=Q63148006}}, {{ill|Uji|en|Uji|qid=Q326956|lt=Uji, Kyoto|1=Uji}}
-* {{ill|Isagawa Shrine|ja|率川神社|12=simple|13=User:Immanuelle/Isagawa Shrine|qq=}} - [[Nara City, Nara|Nara City, Nara]]
-* {{ill|Komori Shrine (Heguri)|ja|子守神社 (平群町)|12=simple|13=User:Immanuelle/Komori Shrine (Heguri)|ja_comment=jawiki link invalid}} - {{ill|Heguri, Nara|en|Heguri, Nara|qid=Q1346790|lt=Heguri, Nara|1=Heguri, Nara}}
+* {{ill|Komamori Shrine|ja|子守神社 (千葉市)|12=simple|13=User:Immanuelle/Komori Shrine (Chiba City)|comment=changed title based on wikidata|qid=Q11447880}} - [[Chiba City, Chiba|Chiba City, Chiba]]
+* {{ill|Komori Shrine|ja|子守神社 (河津町大鍋)|12=simple|13=User:Immanuelle/Komori Shrine (Kawazu, Ōnabe)|comment=changed title based on wikidata|qid=Q131925935}} - Located in Ōnabe, {{ill|Kawazu, Shizuoka|en|Kawazu, Shizuoka|qid=Q1203861|lt=Kawazu, Shizuoka}}
+* {{ill|Ogura Shrine (Uji)|ja|巨椋神社#子守神社|12=simple|13=User:Immanuelle/Komori Shrine (Kyoto, Uji)|comment=changed title based on wikidata|qid=Q63148006}} - Located within {{ill|Ogura Shrine (Uji)|ja|巨椋神社|12=simple|13=User:Immanuelle/Ogura Shrine|comment=changed title based on wikidata|qid=Q63148006}}, {{ill|Uji|en|Uji|qid=Q326956|lt=Uji, Kyoto}}
+* {{ill|Isagawa Shrine|ja|率川神社}} - [[Nara City, Nara|Nara City, Nara]]
+* {{ill|Komori Shrine (Heguri)|ja|子守神社 (平群町)}} - {{ill|Heguri, Nara|en|Heguri, Nara|qid=Q1346790|lt=Heguri, Nara}}
 
 == Related Articles ==  
-* {{ill|Koyasu Shrine|ja|子安神社|12=simple|13=User:Immanuelle/Koyasu Shrine|qq=}}  
-* {{ill|Koyasu Jizō|ja|子安地蔵|12=simple|13=User:Immanuelle/Koyasu Jizō|ja_comment=jawiki link invalid}}  
-** {{ill|Koyasu Jizō-dō|ja|子安地蔵堂|12=simple|13=User:Immanuelle/Koyasu Jizō-dō|1=Koyasu-Jizō|comment=changed title based on wikidata|qid=Q11447885}}  
-** {{ill|Koyasu Jizō-ji|ja|子安地蔵寺|12=simple|13=User:Immanuelle/Koyasu Jizō-ji|1=Koyasu Jizō Temple|comment=changed title based on wikidata|qid=Q11447886}}  
-* {{ill|Komori Jizō|ja|子守地蔵|12=simple|13=User:Immanuelle/Komori Jizō|ja_comment=jawiki link invalid}}  
-* {{ill|Kosodate Jizō|ja|子育地蔵|12=simple|13=User:Immanuelle/Kosodate Jizō|qq=}}  
-* {{ill|Suitengū|en|Suitengū|qid=Q125319456|lt=Suitengū|1=Suitengū}}  
+* {{ill|Koyasu Shrine|ja|子安神社}}  
+* {{ill|Koyasu Jizō|ja|子安地蔵}}  
+** {{ill|Koyasu-Jizō|ja|子安地蔵堂|12=simple|13=User:Immanuelle/Koyasu Jizō-dō|comment=changed title based on wikidata|qid=Q11447885}}  
+** {{ill|Koyasu Jizō Temple|ja|子安地蔵寺|12=simple|13=User:Immanuelle/Koyasu Jizō-ji|comment=changed title based on wikidata|qid=Q11447886}}  
+* {{ill|Komori Jizō|ja|子守地蔵}}  
+* {{ill|Kosodate Jizō|ja|子育地蔵}}  
+* {{ill|Suitengū|de|Suiten-gū|ja|水天宮|tt|Суитэн-гу|zh|水天宮|qid=Q125319456|lt=Suitengū}}  
 
   
 {{Shinto-stub}}  
 
 {{Shinto-stub}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Komamori Shrine (Q11447881)|lt=Komamori Shrine|qid=Q11447881}} — Kani
 * {{ill|Komori Shrine (Q131925935)|lt=Komori Shrine|qid=Q131925935}} — Kawazu
 * {{ill|子守神社 (Q134956600)|lt=子守神社|qid=Q134956600}} — Kawazu
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|子守神社|version=103847034|comment=Imported full ja history}}
 
-{{wikidata link|Q11447878|ja|子守神社|ja|こもりしんしや}}
+{{wikidata link|Q11447878|ja|子守神社|ja|こもりしんしや|check_date=2026-05-17}}
 [[Category:All disambiguation pages]]
 [[Category:Child care]]
 [[Category:Childbirth]]
