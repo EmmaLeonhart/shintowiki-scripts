@@ -28,9 +28,7 @@
 * {{ill|San Shrine (Q134956864)|lt=San Shrine|qid=Q134956864}} — Fuji
 * {{ill|San Shrine (Q134956865)|lt=San Shrine|qid=Q134956865}} — Fuji
 * {{ill|San Shrine (Q134956866)|lt=San Shrine|qid=Q134956866}} — Fuji
-* {{ill|San Shrine (Q134957190)|lt=San Shrine|qid=Q134957190}} — Fuji
-* {{ill|San Shrine (Q134957191)|lt=San Shrine|qid=Q134957191}} — Fuji
-* {{ill|San Shrine (Q134957192)|lt=San Shrine|qid=Q134957192}} — Fuji
+* {{ill|San Shrine (Q134957818)|lt=San Shrine|qid=Q134957818}} — Izu
 * {{ill|San Shrine (Q134957840)|lt=San Shrine|qid=Q134957840}} — Fuji
 * {{ill|San Shrine (Q134957841)|lt=San Shrine|qid=Q134957841}} — Fuji
 * {{ill|San Shrine (Q134957842)|lt=San Shrine|qid=Q134957842}} — Fuji
@@ -44,6 +42,7 @@
 * {{ill|Yama Shrine (Q111024502)|lt=Yama Shrine|qid=Q111024502}} — Ichihara
 * {{ill|Yama Shrine (Q11470797)|lt=Yama Shrine|qid=Q11470797}} — Utsunomiya
 * {{ill|Yama Shrine (Q128866671)|lt=Yama Shrine|qid=Q128866671}} — Kōnosu-shi
+* {{ill|Yama Shrine (Q134594953)|lt=Yama Shrine|qid=Q134594953}} — Isumi
 * {{ill|Yama Shrine (Q134595703)|lt=Yama Shrine|qid=Q134595703}} — Hasegawa
 * {{ill|Yama Shrine (Q134595735)|lt=Yama Shrine|qid=Q134595735}} — Sasa
 * {{ill|Yama Shrine (Q134595736)|lt=Yama Shrine|qid=Q134595736}} — Sasa
@@ -51,6 +50,9 @@
 * {{ill|Yama Shrine (Q134595795)|lt=Yama Shrine|qid=Q134595795}} — 行馬
 * {{ill|Yama Shrine (Q134595798)|lt=Yama Shrine|qid=Q134595798}} — Nagashi
 * {{ill|Yama Shrine (Q134596555)|lt=Yama Shrine|qid=Q134596555}} — Naka
+* {{ill|Yama Shrine (Q134596570)|lt=Yama Shrine|qid=Q134596570}} — Futtsu
+* {{ill|Yama Shrine (Q134596590)|lt=Yama Shrine|qid=Q134596590}} — Futtsu
+* {{ill|Yama Shrine (Q134596597)|lt=Yama Shrine|qid=Q134596597}} — Futtsu
 * {{ill|Yama Shrine (Q134598851)|lt=Yama Shrine|qid=Q134598851}} — Katsuura
 * {{ill|Yama Shrine (Q134598852)|lt=Yama Shrine|qid=Q134598852}} — Katsuura
 * {{ill|Yama Shrine (Q134598853)|lt=Yama Shrine|qid=Q134598853}} — Katsuura
@@ -78,13 +80,10 @@
 * {{ill|Yama Shrine (Q134956593)|lt=Yama Shrine|qid=Q134956593}} — Shimoda
 * {{ill|Yama Shrine (Q134956606)|lt=Yama Shrine|qid=Q134956606}} — Nishiizu
 * {{ill|Yama Shrine (Q134956810)|lt=Yama Shrine|qid=Q134956810}} — Numazu
-* {{ill|Yama Shrine (Q134956825)|lt=Yama Shrine|qid=Q134956825}} — Oyama
 * {{ill|Yama Shrine (Q134956842)|lt=Yama Shrine|qid=Q134956842}} — Izu
 * {{ill|Yama Shrine (Q134956855)|lt=Yama Shrine|qid=Q134956855}} — Nagaizumi
 * {{ill|Yama Shrine (Q134956907)|lt=Yama Shrine|qid=Q134956907}} — Nishiizu
-* {{ill|Yama Shrine (Q134957135)|lt=Yama Shrine|qid=Q134957135}} — Numazu
-* {{ill|Yama Shrine (Q134957137)|lt=Yama Shrine|qid=Q134957137}} — Numazu
-* {{ill|Yama Shrine (Q134957169)|lt=Yama Shrine|qid=Q134957169}} — Izu
+* {{ill|Yama Shrine (Q134957591)|lt=Yama Shrine|qid=Q134957591}} — Chūō Ward
 * {{ill|Yama Shrine (Q134957700)|lt=Yama Shrine|qid=Q134957700}} — Aoi-ku
 * {{ill|Yama Shrine (Q134957810)|lt=Yama Shrine|qid=Q134957810}} — Gotemba
 * {{ill|Yama Shrine (Q134957866)|lt=Yama Shrine|qid=Q134957866}} — Atami
