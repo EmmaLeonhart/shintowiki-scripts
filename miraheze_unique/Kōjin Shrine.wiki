@@ -1,22 +1,17 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=K%C5%8Djin_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
+'''Kōjin Shrine''' (荒神神社, also pronounced Arakami Jinja or Kōjin Jinja) refers to {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}.
 
-'''Kōjin Shrine''' (荒神神社, also pronounced Arakami Jinja or Kōjin Jinja) refers to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}.
-
-* {{ill|Kōjin Shrine (Tōno)|ja|荒神神社 (遠野市)|12=simple|13=User:Immanuelle/Kōjin Shrine (Tōno)}} (Arakami Jinja) - Located in {{ill|Tōno, Iwate|en|Tōno, Iwate|qid=Q646766|lt=Tōno, Iwate|1=Tōno, Iwate}}, {{ill|Iwate Prefecture|en|Iwate Prefecture|qid=Q48326|lt=Iwate Prefecture|1=Iwate Prefecture}}.
-* {{ill|Kōjin Shrine (Fujisawa)|ja|荒神神社 (藤沢市)|12=simple|13=User:Immanuelle/Kōjin Shrine (Fujisawa)|ja_comment=jawiki link invalid}} (Kōjin Jinja) - Located in {{ill|Fujisawa, Kanagawa|en|Fujisawa, Kanagawa|qid=Q386661|lt=Fujisawa, Kanagawa|1=Fujisawa, Kanagawa}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture|1=Kanagawa Prefecture}}.
+* {{ill|Kōjin Shrine (Tōno)|ja|荒神神社 (遠野市)}} (Arakami Jinja) - Located in {{ill|Tōno, Iwate|en|Tōno, Iwate|qid=Q646766|lt=Tōno, Iwate}}, {{ill|Iwate Prefecture|en|Iwate Prefecture|qid=Q48326|lt=Iwate Prefecture}}.
+* {{ill|Kōjin Shrine (Fujisawa)|ja|荒神神社 (藤沢市)}} (Kōjin Jinja) - Located in {{ill|Fujisawa, Kanagawa|en|Fujisawa, Kanagawa|qid=Q386661|lt=Fujisawa, Kanagawa}}, {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Aragami Shrine (Q11618838)|lt=Aragami Shrine|qid=Q11618838}} — Tōno-shi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|荒神神社|version=55823202|comment=Imported full ja history}}
 
-{{wikidata link|Q11618839|ja|荒神神社}}
+{{wikidata link|Q11618839|ja|荒神神社|check_date=2026-05-17}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

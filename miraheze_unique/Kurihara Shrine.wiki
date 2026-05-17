@@ -1,27 +1,22 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kurihara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
 '''Kurihara Shrine''' (栗原神社) refers to several Shinto shrines in Japan:
 
-* {{ill|Kurihara Shrine (Zama)|ja|栗原神社 (座間市)|12=simple|13=User:Immanuelle/Kurihara Shrine (Zama)}} - Located in Kurihara-Chūō, Zama City, Kanagawa Prefecture.
+* {{ill|Kurihara Shrine (Zama)|ja|栗原神社 (座間市)|qid=Q17215821}} - Located in Kurihara-Chūō, Zama City, Kanagawa Prefecture.
 * {{ill|Kurihara Shrine (Takayama)|ja|栗原神社 (高山市)|12=simple|13=User:Immanuelle/Kurihara Shrine (Takayama)}} - Located in Kamitakara, Takayama City, Gifu Prefecture.
-* {{ill|Kurihara Shrine (Higashiōsaka)|ja|栗原神社 (東大阪市)|12=simple|13=User:Immanuelle/Kurihara Shrine (Higashiōsaka)|ja_comment=jawiki link invalid}} - Located in Yoshihara, Higashiōsaka City, Osaka Prefecture.
-* {{ill|Kurihara Shrine (Maniwa)|ja|栗原神社 (真庭市)|12=simple|13=User:Immanuelle/Kurihara Shrine (Maniwa)|ja_comment=jawiki link invalid}} - Located in Kurihara, Maniwa City, Okayama Prefecture.
+* {{ill|Kurihara Shrine (Higashiōsaka)|ja|栗原神社 (東大阪市)}} - Located in Yoshihara, Higashiōsaka City, Osaka Prefecture.
+* {{ill|Kurihara Shrine (Maniwa)|ja|栗原神社 (真庭市)}} - Located in Kurihara, Maniwa City, Okayama Prefecture.
 
 {{disambiguation}}
 
 {{citation needed|ja|栗原神社|version=42566856|comment=Imported full ja history}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
-* {{ill|Kurihara Shrine (Q17215821)|lt=Kurihara Shrine|qid=Q17215821}} — Zama
+* {{ill|Kurihara Shrine (Q17215821)|ja|栗原神社 (座間市)|qid=Q17215821|lt=Kurihara Shrine}} — Zama
 * {{ill|Kuriharano Shrine (Q135039123)|lt=Kuriharano Shrine|qid=Q135039123}} — Kawachi Province
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|栗原神社|version=42566856|comment=Imported full ja history}}
 
-{{wikidata link|Q11535864|ja|栗原神社}}
+{{wikidata link|Q11535864|ja|栗原神社|check_date=2026-05-17}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

@@ -1,6 +1,3 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kushida_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
 {{Short description|Shinto shrine in Fukuoka Prefecture, Japan}}
 {{Use dmy dates|date=November 2019}}
 {{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
@@ -19,7 +16,7 @@
 | founded_by = 
 | established = 757
 | date_destroyed = 
-| location = 1-41, Kamikawabata-machi, {{ill|Hakata-ku, Fukuoka|en|Hakata-ku, Fukuoka|qid=Q1330839|lt=Hakata-ku, Fukuoka|1=Hakata-ku, Fukuoka}}<br>{{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}} 812-0026
+| location = 1-41, Kamikawabata-machi, {{ill|Hakata-ku, Fukuoka|en|Hakata-ku, Fukuoka|qid=Q1330839|lt=Hakata-ku, Fukuoka}}<br>{{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}} 812-0026
 | website = 
 | architecture_style = 
 | festival = 
@@ -27,52 +24,52 @@
 |Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 | name = Kushida Shrine
 | image = [[File:Kushidajinjafukuoka01.jpg|250px]]<br />main hall
-| location = 1-41 Kamikawabatamachi, Hakata-ku, [[:en:Fukuoka City|Fukuoka City]], {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}
+| location = 1-41 Kamikawabatamachi, Hakata-ku, [[:en:Fukuoka City|Fukuoka City]], {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}
 | ISO = JP-40
 | type degrees = 33 | type minutes = 35 | type seconds = 34.641
 | longitude degrees = 130 | longitude minutes = 24 | longitude seconds = 37.814
 | Label Position = left
 | festival Deities = [[Ōhata-nushi no Ōkami|Ōhata-nushi no Ōkami]] (Kushida no Ōkami)<br/>[[Amaterasu]]<br/>[[Susanoo-no-Mikoto|Susanoo no Ōkami]] (Gion no Ōkami)
 | Shrine Rank = Former [[Prefectural Shrine]], [[Beppyo Shrine]]
-| established = {{ill|Tenpyō-hōji|en|Tenpyō-hōji|qid=Q1346307|lt=Tenpyō-hōji|1=Tenpyō-hōji}} 1 (757)
-| festival = {{ill|May 3|en|May 3|qid=Q2547|lt=May 3|1=May 3}}–{{ill|May 4|en|May 4|qid=Q2549|lt=May 4|1=May 4}} (Hakata Dontaku)<br/>{{ill|July 1|en|July 1|qid=Q2700|lt=July 1|1=July 1}}–{{ill|July 15|en|July 15|qid=Q2686|lt=July 15|1=July 15}} (Hakata Gion Yamakasa)
+| established = {{ill|Tenpyō-hōji|en|Tenpyō-hōji|qid=Q1346307|lt=Tenpyō-hōji}} 1 (757)
+| festival = {{ill|May 3|en|May 3|qid=Q2547|lt=May 3}}–{{ill|May 4|en|May 4|qid=Q2549|lt=May 4}} (Hakata Dontaku)<br/>{{ill|July 1|en|July 1|qid=Q2700|lt=July 1}}–{{ill|July 15|en|July 15|qid=Q2686|lt=July 15}} (Hakata Gion Yamakasa)
 | map = Fukuoka city
 }}
-{{Nihongo|'''Kushida-jinja'''|櫛田神社}} is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}} located in {{ill|Hakata-ku, Fukuoka|en|Hakata-ku, Fukuoka|qid=Q1330839|lt=Hakata-ku, Fukuoka|1=Hakata-ku, Fukuoka}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}. Dedicated to [[Amaterasu]] and [[Susanoo-no-Mikoto|Susanoo]], it is said to have been founded in 757. The {{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa|1=Hakata Gion Yamakasa}} [[Japanese festivals|festival]] is centred on the shrine.<ref>{{cite web |url=http://www.city.fukuoka.lg.jp/showcase/english/theme/db_object_37.html |title=Kushida Shrine |publisher={{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}} |accessdate=24 March 2011}}</ref>
+{{Nihongo|'''Kushida-jinja'''|櫛田神社}} is a [[Shinto]] {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=shrine}} located in {{ill|Hakata-ku, Fukuoka|en|Hakata-ku, Fukuoka|qid=Q1330839|lt=Hakata-ku, Fukuoka}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. Dedicated to [[Amaterasu]] and [[Susanoo-no-Mikoto|Susanoo]], it is said to have been founded in 757. The {{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa}} [[Japanese festivals|festival]] is centred on the shrine.<ref>{{cite web |url=http://www.city.fukuoka.lg.jp/showcase/english/theme/db_object_37.html |title=Kushida Shrine |publisher={{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}} |accessdate=24 March 2011}}</ref>
 
 ==Overview==
 
-'''Kushida Shrine''' (くしだじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in Kamikawabatamachi, [[:en:Hakata-ku|Hakata-ku]], [[:en:Fukuoka City|Fukuoka City]], {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}. The former [[shrine Rank]] was [[Prefectural Shrine]]. It is situated in the old town area of Hakata and is affectionately known by locals as "'''Okushida-san'''." Its formal name is '''Hakata Sōchinshu Kushida Shrine''' (はかたそうちんじゅくしだじんじゃ).
+'''Kushida Shrine''' (くしだじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in Kamikawabatamachi, [[:en:Hakata-ku|Hakata-ku]], [[:en:Fukuoka City|Fukuoka City]], {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}. The former [[shrine Rank]] was [[Prefectural Shrine]]. It is situated in the old town area of Hakata and is affectionately known by locals as "'''Okushida-san'''." Its formal name is '''Hakata Sōchinshu Kushida Shrine''' (はかたそうちんじゅくしだじんじゃ).
 
 == Overview ==
-The shrine has long been revered as the [[Ujigami]] and general {{ill|Chinjusha|en|Chinjusha|qid=Q13479654|lt=Chinjusha|1=Chinjusha}} (guardian deity) of Hakata. It hosts festivals such as the {{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa|1=Hakata Gion Yamakasa}} in July and the [[Hakata Okunchi]] in October. Although the [[Hakata Matsubayashi]] (Hakata Dontaku) in May is not strictly a Kushida Shrine festival, the Matsubayashi procession traditionally starts from Kushida Shrine<ref>{{Cite book|author=Kiyoshi Tanaka, Osamu Matsuda, Noriko Obayashi, Takashi Tomokiyo |title=Hakata Tabijō: Shiki no Gyoji Rekishi Yomoyama |publisher=Eizo Yagi |date=1967-04-25 |page=88}}</ref><ref>{{Cite book|author=Seizo Inoue |title=Hakata Kyōdo Shi Jiten |publisher=Sanda Hisamoto |date=1987-11-01 |pages=264-266}}</ref>.
+The shrine has long been revered as the [[Ujigami]] and general {{ill|Chinjusha|en|Chinjusha|qid=Q13479654|lt=Chinjusha}} (guardian deity) of Hakata. It hosts festivals such as the {{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa}} in July and the [[Hakata Okunchi]] in October. Although the [[Hakata Matsubayashi]] (Hakata Dontaku) in May is not strictly a Kushida Shrine festival, the Matsubayashi procession traditionally starts from Kushida Shrine<ref>{{Cite book|author=Kiyoshi Tanaka, Osamu Matsuda, Noriko Obayashi, Takashi Tomokiyo |title=Hakata Tabijō: Shiki no Gyoji Rekishi Yomoyama |publisher=Eizo Yagi |date=1967-04-25 |page=88}}</ref><ref>{{Cite book|author=Seizo Inoue |title=Hakata Kyōdo Shi Jiten |publisher=Sanda Hisamoto |date=1987-11-01 |pages=264-266}}</ref>.
 
 == festival Deities ==
 The shrine enshrines three deities: [[Ōhata-nushi no Ōkami]] (Kushida no Ōkami), [[Amaterasu]], and [[Susanoo-no-Mikoto|Susanoo no Ōkami]] (Gion no Ōkami). The main hall enshrines Ōhata-nushi no Ōkami, the left hall enshrines Amaterasu Ōmikami, and the right hall enshrines Susanoo no Ōkami.
 
 Unlike other Kushida Shrines across Japan that mainly enshrine [[Kushinadahime]], Kushinadahime is not enshrined here, although there is a theory that this shrine originally enshrined her.
 
-Ōhata-nushi no Ōkami (Kushida no Ōkami) is believed to be a deity transferred from {{ill|Kushida |en|Kushida |qid=Q1794549|lt=Kushida Shrine in Matsusaka|1=Kushida}}, {{ill|Ise Province|en|Ise Province|qid=Q864166|lt=Ise Province|1=Ise Province}}. Also known as Ōwakako no Mikoto, he is a descendant of [[Ame-no-Minakanushi]] and is said to have vanquished monsters in the Hokuriku region. There is a shrine dedicated to Ōhata-nushi no Ōkami in [[Sado City]], and among the five shrines dedicated to Kushinadahime, three are located in the Hokuriku region.
+Ōhata-nushi no Ōkami (Kushida no Ōkami) is believed to be a deity transferred from {{ill|Kushida|en|Kushida |qid=Q1794549|lt=Kushida Shrine in Matsusaka}}, {{ill|Ise Province|en|Ise Province|qid=Q864166|lt=Ise Province}}. Also known as Ōwakako no Mikoto, he is a descendant of [[Ame-no-Minakanushi]] and is said to have vanquished monsters in the Hokuriku region. There is a shrine dedicated to Ōhata-nushi no Ōkami in [[Sado City]], and among the five shrines dedicated to Kushinadahime, three are located in the Hokuriku region.
 
 == History ==
-According to shrine tradition, Kushida Shrine was established in {{ill|Tenpyō-hōji|en|Tenpyō-hōji|qid=Q1346307|lt=Tenpyō-hōji|1=Tenpyō-hōji}} 1 (757) when the deity from {{ill|Kushida |en|Kushida |qid=Q1794549|lt=Kushida Shrine in Matsusaka|1=Kushida}} was transferred here, along with Amaterasu Ōmikami, who served the clan of Ōhata-nushi no Ōkami, the deity of the Matsusaka shrine. In {{ill|Tengyō|en|Tengyō|qid=Q1327340|lt=Tengyō|1=Tengyō}} 4 (941), Ono no Yoshifuru prayed at [[Yasaka Shrine]] in Kyoto to suppress the [[Rebellion of Fujiwara no Sumitomo]] and subsequently transferred Susanoo no Ōkami to this shrine after pacifying the rebellion. However, the most widely accepted theory is that in the late Heian period, [[Taira no Kiyomori]] transferred [[Kushida Shrine (Saga)|Kushida Shrine]] in {{ill|Kanzaki|en|Kanzaki|qid=Q1728232|lt=Kanzaki|1=Kanzaki}}, {{ill|Hizen Province|en|Hizen Province|qid=Q906926|lt=Hizen Province|1=Hizen Province}} (now Kanzaki City, Saga Prefecture) to Hakata, a base for Japan-Song trade. This theory is supported by the 'Hakata Yamakasa Record' compiled by the shrine priests and submitted to the Ministry of Education in {{ill|1965|en|1965|qid=Q2650|lt=1965|1=1965}} and 'The History of Fukuoka' published by Fukuoka City in {{ill|1979|en|1979|qid=Q2484|lt=1979|1=1979}}, both of which indicate the shrine is a branch of Kushida Shrine in Kanzaki, Saga Prefecture.
+According to shrine tradition, Kushida Shrine was established in {{ill|Tenpyō-hōji|en|Tenpyō-hōji|qid=Q1346307|lt=Tenpyō-hōji}} 1 (757) when the deity from {{ill|Kushida|en|Kushida |qid=Q1794549|lt=Kushida Shrine in Matsusaka}} was transferred here, along with Amaterasu Ōmikami, who served the clan of Ōhata-nushi no Ōkami, the deity of the Matsusaka shrine. In {{ill|Tengyō|en|Tengyō|qid=Q1327340|lt=Tengyō}} 4 (941), Ono no Yoshifuru prayed at [[Yasaka Shrine]] in Kyoto to suppress the [[Rebellion of Fujiwara no Sumitomo]] and subsequently transferred Susanoo no Ōkami to this shrine after pacifying the rebellion. However, the most widely accepted theory is that in the late Heian period, [[Taira no Kiyomori]] transferred [[Kushida Shrine (Saga)|Kushida Shrine]] in {{ill|Kanzaki|en|Kanzaki|qid=Q1728232|lt=Kanzaki}}, {{ill|Hizen Province|en|Hizen Province|qid=Q906926|lt=Hizen Province}} (now Kanzaki City, Saga Prefecture) to Hakata, a base for Japan-Song trade. This theory is supported by the 'Hakata Yamakasa Record' compiled by the shrine priests and submitted to the Ministry of Education in {{ill|1965|en|1965|qid=Q2650|lt=1965}} and 'The History of Fukuoka' published by Fukuoka City in {{ill|1979|en|1979|qid=Q2484|lt=1979}}, both of which indicate the shrine is a branch of Kushida Shrine in Kanzaki, Saga Prefecture.
 
-The shrine fell into decline during the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period|1=Sengoku period}},<ref>'The location of Kushida Shrine in Hakata seems to have been given to the Jesuits by [[:en:Ōtomo Yoshishige|Ōtomo Yoshishige]], who built a church and a priest's residence there. According to 'History of the Jesuits in Japan' (Vol. 10, Western Kyushu Part 2, pp. 27-31, published September 20, 1979, translated by Kiichi Matsuda and Taro Kawasaki, Chūōkōronsha), there was a dispute between the Jesuits and the people of Hakata regarding the storage of tools used for the Hakata Gion Yamakasa festival.' </ref> but in {{ill|1587|en|1587|qid=Q6744|lt=1587|1=1587}} (Tensho 15), {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi|1=Toyotomi Hideyoshi}} rebuilt the shrine during the reconstruction of Hakata.
+The shrine fell into decline during the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period}},<ref>'The location of Kushida Shrine in Hakata seems to have been given to the Jesuits by [[:en:Ōtomo Yoshishige|Ōtomo Yoshishige]], who built a church and a priest's residence there. According to 'History of the Jesuits in Japan' (Vol. 10, Western Kyushu Part 2, pp. 27-31, published September 20, 1979, translated by Kiichi Matsuda and Taro Kawasaki, Chūōkōronsha), there was a dispute between the Jesuits and the people of Hakata regarding the storage of tools used for the Hakata Gion Yamakasa festival.' </ref> but in {{ill|1587|en|1587|qid=Q6744|lt=1587}} (Tensho 15), {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi}} rebuilt the shrine during the reconstruction of Hakata.
 
-Before the [[Shinbutsu bunri]] decree in {{ill|1868|en|1868|qid=Q7717|lt=1868|1=1868}} (Meiji 1), the shrine was managed by {{ill|Jingū-ji|en|Jingū-ji|qid=Q1074971|lt=Jingū-ji|1=Jingū-ji}} belonging to {{ill|Tōchō-ji|en|Tōchō-ji|qid=Q3547067|lt=Tōchō-ji|1=Tōchō-ji}} during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}.
+Before the [[Shinbutsu bunri]] decree in {{ill|1868|en|1868|qid=Q7717|lt=1868}} (Meiji 1), the shrine was managed by {{ill|Jingū-ji|en|Jingū-ji|qid=Q1074971|lt=Jingū-ji}} belonging to {{ill|Tōchō-ji|en|Tōchō-ji|qid=Q3547067|lt=Tōchō-ji}} during the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}.
 
-In {{ill|1891|en|1891|qid=Q7837|lt=1891|1=1891}} (Meiji 24), it was listed as a [[Prefectural Shrine]].
+In {{ill|1891|en|1891|qid=Q7837|lt=1891}} (Meiji 24), it was listed as a [[Prefectural Shrine]].
 
 == Miscellaneous ==
 The name of [[Gionmachi]] in [[:en:Hakata-ku|Hakata-ku]], [[:en:Fukuoka City|Fukuoka City]], is said to derive from Gion no Ōkami enshrined at this shrine<ref name="reizen">[http://www.asocie.jp/reizen/profile/record/oldtown1.html History of Reizen District 1945-2007, Reizen District Union]</ref>.
 
-A decorated Yamakasa float is permanently displayed in the precincts. Since {{ill|1960|en|1960|qid=Q3754|lt=1960|1=1960}} (Showa 35), {{ill|Kyushu Asahi Broadcasting|en|Kyushu Asahi Broadcasting|qid=Q843686|lt=Kyushu Asahi Broadcasting|1=Kyushu Asahi Broadcasting}} (KBC) has been airing 'Hashire! Yamakasa' as an offering.
+A decorated Yamakasa float is permanently displayed in the precincts. Since {{ill|1960|en|1960|qid=Q3754|lt=1960}} (Showa 35), {{ill|Kyushu Asahi Broadcasting|en|Kyushu Asahi Broadcasting|qid=Q843686|lt=Kyushu Asahi Broadcasting}} (KBC) has been airing 'Hashire! Yamakasa' as an offering.
 
 In addition, near the entrance of the precincts stands a 1,000-year-old ginkgo tree called "Kushida no Ginnan," which is mentioned in the '[[Hakata Iwaiuta]]' and is designated a natural monument of the prefecture.
 
-The "Cut-Tree Peony,"<ref>'[https://web.archive.org/web/20210419114128/https://www.city.karatsu.lg.jp/manabee/kyoiku/kyoiku/inkai/bunkazai/bunkazaihogo/kirigonobotan.html Prefectural Natural Monument Cut-Tree Peony]'. Karatsu City. Archived from the original on April 19, 2021. </ref> associated with [[Hata no Chikahira|Hata no Mikawa no Kami Chikahira]] of the [[Matsuura Clan]], whose peonies decorate the Yamakasa, was transplanted from Hizen Town, Karatsu City, in {{ill|2018|en|2018|qid=Q25291|lt=2018|1=2018}} (Heisei 30)<ref>{{Cite web|title=Hakata Gion Yamakasa and Peony Connection - Kushida Shrine in Fukuoka Receives Peony from Karatsu|url=https://www.saga-s.co.jp/articles/-/308161|website=Saga Newspaper LiVE|accessdate=2019-12-02|language=ja}}</ref>.
+The "Cut-Tree Peony,"<ref>'[https://web.archive.org/web/20210419114128/https://www.city.karatsu.lg.jp/manabee/kyoiku/kyoiku/inkai/bunkazai/bunkazaihogo/kirigonobotan.html Prefectural Natural Monument Cut-Tree Peony]'. Karatsu City. Archived from the original on April 19, 2021. </ref> associated with [[Hata no Chikahira|Hata no Mikawa no Kami Chikahira]] of the [[Matsuura Clan]], whose peonies decorate the Yamakasa, was transplanted from Hizen Town, Karatsu City, in {{ill|2018|en|2018|qid=Q25291|lt=2018}} (Heisei 30)<ref>{{Cite web|title=Hakata Gion Yamakasa and Peony Connection - Kushida Shrine in Fukuoka Receives Peony from Karatsu|url=https://www.saga-s.co.jp/articles/-/308161|website=Saga Newspaper LiVE|accessdate=2019-12-02|language=ja}}</ref>.
 
-In {{ill|1955|en|1955|qid=Q18577|lt=1955|1=1955}} (Showa 30), Typhoon No. 22 caused damage such as toppling an [[:en:Enoki|Enoki]] tree in the precincts<ref>{{Cite web|title=Kushida Shrine - Fallen Enoki Tree - Nishinippon Photo Library|url=http://c.nishinippon.co.jp/photolibrary/cat672/post_1691.php|website=c.nishinippon.co.jp|accessdate=2020-04-08|language=ja}}</ref>.
+In {{ill|1955|en|1955|qid=Q18577|lt=1955}} (Showa 30), Typhoon No. 22 caused damage such as toppling an [[:en:Enoki|Enoki]] tree in the precincts<ref>{{Cite web|title=Kushida Shrine - Fallen Enoki Tree - Nishinippon Photo Library|url=http://c.nishinippon.co.jp/photolibrary/cat672/post_1691.php|website=c.nishinippon.co.jp|accessdate=2020-04-08|language=ja}}</ref>.
 
 == Gallery ==
 <gallery>
@@ -86,8 +83,8 @@ File:Kushida shrine in Hakata wharf.jpg|Hama-miya at Hakata Wharf
 </gallery>
 
 == Transportation ==
-* {{ill|Fukuoka City Subway|en|Fukuoka City Subway|qid=Q289242|lt=Fukuoka City Subway|1=Fukuoka City Subway}} [[Fukuoka City Subway Nanakuma Line|Nanakuma Line]] {{ill|Kushida |en|Kushida |qid=Q1794549|lt=Kushida |1=Kushida}} - 1 minute walk (140m).
-* {{ill|Fukuoka City Subway|en|Fukuoka City Subway|qid=Q289242|lt=Fukuoka City Subway|1=Fukuoka City Subway}} [[Fukuoka City Subway Kūkō Line|Kūkō Line]] {{ill|Gion Station (Fukuoka)|en|Gion Station (Fukuoka)|qid=Q4357517|lt=Gion Station|1=Gion Station (Fukuoka)}} - 5 minutes walk (400m).
+* {{ill|Fukuoka City Subway|en|Fukuoka City Subway|qid=Q289242|lt=Fukuoka City Subway}} [[Fukuoka City Subway Nanakuma Line|Nanakuma Line]] {{ill|Kushida|en|Kushida |qid=Q1794549|lt=Kushida }} - 1 minute walk (140m).
+* {{ill|Fukuoka City Subway|en|Fukuoka City Subway|qid=Q289242|lt=Fukuoka City Subway}} [[Fukuoka City Subway Kūkō Line|Kūkō Line]] {{ill|Gion Station (Fukuoka)|en|Gion Station (Fukuoka)|qid=Q4357517|lt=Gion Station}} - 5 minutes walk (400m).
 * Fukuoka City Subway Kūkō Line and [[Fukuoka City Subway Hakozaki Line|Hakozaki Line]] [[Nakasu-Kawabata Station]] - 8 minutes walk (660m).
 * [[Nishitetsu Bus]] - Get off at "Canal City Hakata-mae" or "Canal East Building-mae" bus stop.
 * [[Fukuoka Expressway Ring Road]] [[Gofukumachi Interchange]] - 1.2km.
@@ -97,8 +94,8 @@ File:Kushida shrine in Hakata wharf.jpg|Hama-miya at Hakata Wharf
 
 == Related Books ==
 {{Citation style|date=March 2018|section=1}}
-* Sukenari Azusa, Yoshihiko Umeda, editors and supervisors, ''Shinto Dictionary,'' Jinja Shinpōsha, {{ill|1968|en|1968|qid=Q2644|lt=1968|1=1968}}, p. 26.
-* Eiji Shirai, Masanori Toki, editors, ''Shrine Dictionary,'' [[Tōkyōdō Shuppan]], {{ill|1979|en|1979|qid=Q2484|lt=1979|1=1979}}, pp. 123-124.
+* Sukenari Azusa, Yoshihiko Umeda, editors and supervisors, ''Shinto Dictionary,'' Jinja Shinpōsha, {{ill|1968|en|1968|qid=Q2644|lt=1968}}, p. 26.
+* Eiji Shirai, Masanori Toki, editors, ''Shrine Dictionary,'' [[Tōkyōdō Shuppan]], {{ill|1979|en|1979|qid=Q2484|lt=1979}}, pp. 123-124.
 
 == External Links ==
 {{commonscat|Kushida-jinja, Fukuoka}}
@@ -108,8 +105,8 @@ File:Kushida shrine in Hakata wharf.jpg|Hama-miya at Hakata Wharf
 {{Shinto-stub}}
 
 ==See also==
-*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines|1=List of Shinto shrines}}
-*{{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa|1=Hakata Gion Yamakasa}}
+*{{ill|List of Shinto shrines|en|List of Shinto shrines|qid=Q120679573|lt=List of Shinto shrines}}
+*{{ill|Hakata Gion Yamakasa|en|Hakata Gion Yamakasa|qid=Q1749262|lt=Hakata Gion Yamakasa}}
 *[[Japanese festivals|Matsuri]]
 
 ==References==
@@ -126,19 +123,17 @@ Official website: http://hakatanomiryoku.com/
 {{Shinto-stub}}
 {{Beppyo Shrines}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kushida Shrine (Q135186410)|lt=Kushida Shrine|qid=Q135186410}} — Ise Province
 * {{ill|Kushida Shrine (Q865839)|lt=Kushida Shrine|qid=Q865839}} — Kami-kawabatamachi
 * {{ill|Kushitano Shrine (Q135039420)|lt=Kushitano Shrine|qid=Q135039420}} — Asake district
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|櫛田神社|version=87392250|comment=Imported full ja history}}
 
 {{Commons category|Kushida-jinja, Fukuoka}}
 
-{{wikidata link|Q10855536|ja|櫛田神社|ko|구시다 신사|en|Kushida Shrine|ja|Kushida Shrine|fr|Kushida-jinja|ja|櫛田神社 (福岡市)|ko|구시다 신사 (후쿠오카시)|ru|Кусида-дзиндзя|zh|櫛田神社 (福岡市)}}
+{{wikidata link|Q10855536|ja|櫛田神社|ko|구시다 신사|en|Kushida Shrine|ja|Kushida Shrine|fr|Kushida-jinja|ja|櫛田神社 (福岡市)|ko|구시다 신사 (후쿠오카시)|ru|Кусида-дзиндзя|zh|櫛田神社 (福岡市)|check_date=2026-05-17}}
 [[Category:Shinto shrines by tradition]]
 [[Category:Shrine disambiguations]]
 [[Category:translated pages with valid en interwikis]]
