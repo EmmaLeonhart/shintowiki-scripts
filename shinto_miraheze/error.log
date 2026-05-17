@@ -80,3 +80,4 @@ Traceback (most recent call last):
     from shinto_miraheze.orchestrators.ops.fandom_mirror import (
 ModuleNotFoundError: No module named 'shinto_miraheze'
 
+[2026-05-17 04:21:44 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: Unterminated string starting at: line 160338 column 9 (char 3945595)
