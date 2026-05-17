@@ -1,41 +1,32 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=K%C5%8Dtai_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
-
-
-{{Nihongo|'''Kōtai Shrine'''|皇大神社|Kōtai jinja}} is a name used by some {{ill|Shinmei shrines|en|Shinmei shrines|qid=Q11590310|lt=Shinmei shrines|1=Shinmei shrines}}
+{{Nihongo|'''Kōtai Shrine'''|皇大神社|Kōtai jinja}} is a name used by some {{ill|Shinmei shrines|en|Shinmei shrines|qid=Q11590310|lt=Shinmei shrines}}
 
 == Main Kōtai Shrine ==  
 
-* {{ill|Tenshō Kōtai Shrine|ja|天照皇大神社 (伊東市)|12=simple|13=User:Immanuelle/Tenshō Kōtai Shrine|1=Tensho-Kotai Shrine|comment=changed title based on wikidata|qid=Q131925933}} – Shizuoka Prefecture, {{ill|Itō, Shizuoka|en|Itō, Shizuoka|qid=Q721163|lt=Itō|1=Itō, Shizuoka}} Shibamachi: Kusumi Shrine  
-* {{ill|Kōtai Shrine|ja|皇大神社 (福知山市)|lt=Kotai Shrine (Fukuchiyama)|12=simple|13=User:Immanuelle/Kōtai Shrine}} – Kyoto Prefecture, {{ill|Fukuchiyama, Kyoto|en|Fukuchiyama, Kyoto|qid=Q3355306|lt=Fukuchiyama|1=Fukuchiyama, Kyoto}} Ōe-chō Naikū: Motoise Kōdaijingū  
-* {{ill|Obama Kōtai Shrine|ja|小浜皇大神社|12=simple|13=User:Immanuelle/Obama Kōtai Shrine|1=Kohama Kōtai Shrine|comment=changed title based on wikidata|qid=Q11462621}} – Hyōgo Prefecture, {{ill|Takarazuka, Hyōgo|en|Takarazuka, Hyōgo|qid=Q823967|lt=Takarazuka|1=Takarazuka, Hyōgo}} Obama  
-* {{ill|Kōtai Shrine (Hiramatsuchō, Nara)|ja|皇大神社 (奈良市平松町)|lt=Kōtai Shrine (Hiramatsuchō, Nara)|12=simple|13=User:Immanuelle/Kōtai Shrine (Hiramatsuchō, Nara)|1=Kōtai Shrine (Shijōōji, Nara)|comment=changed title based on wikidata|qid=Q48754918}} – Nara Prefecture, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara|1=Nara (city)}} Hiramatsuchō  
-* {{ill|Kōtai Shrine (Shijōōji, Nara)|ja|皇大神社 (奈良市四条大路)|lt=Kōtai Shrine (Shijōōji, Nara)|12=simple|13=User:Immanuelle/Kōtai Shrine (Shijōōji, Nara)}} – Nara Prefecture, Nara City Shijōōji  
+* {{ill|Tensho-Kotai Shrine|ja|天照皇大神社 (伊東市)|qid=Q131925933}} – Shizuoka Prefecture, {{ill|Itō, Shizuoka|ar|إتو (شيزوكا)|arz|اتو (تجمع سكان فى محافظه شيزوكا)|azb|ایتو، شیزوئوکا|ce|Ито (гӀала)|ceb|Itō|da|Itō (Shizuoka)|de|Itō (Shizuoka)|eo|Ito (Ŝizuoka)|es|Itō (Shizuoka)|et|Itō|fa|ایتو، شیزوئوکا|fi|Itō (Shizuoka)|fr|Itō|gl|Itō|he|איטו (יפן)|hu|Itó (Sizuoka)|id|Itō, Shizuoka|it|Itō|ja|伊東市|ko|이토시|lt|Itas|mzn|ایتو، شیزوئوکا|nl|Ito (Shizuoka)|pl|Itō|pt|Ito (Shizuoka)|ro|Itō (localitate)|ru|Ито (город)|sv|Ito|tg|Ито|th|อิโต|tl|Itō|tr|Itō|tt|Ито (шәһәр)|uk|Іто (Сідзуока)|ur|ایٹو، شیزوکا|vi|Itō, Shizuoka|war|Itō, Shizuoka|zh|伊東市|zh_classical|伊東市|zh_min_nan|Itô-chhī|zh_yue|伊東|qid=Q721163|lt=Itō}} Shibamachi: Kusumi Shrine  
+* {{ill|Kōtai Shrine|ja|皇大神社 (福知山市)|qid=Q11581010|lt=Kotai Shrine (Fukuchiyama)}} – Kyoto Prefecture, {{ill|Fukuchiyama, Kyoto|ar|فوكوتشياما (كيوتو)|azb|فوکوچی‌یاما، کیوتو|ca|Fukuchiyama|ce|Фукутияма|ceb|Fukuchiyama|cs|Fukučijama (Kjóto)|de|Fukuchiyama|es|Fukuchiyama (Kioto)|fa|فوکوچی‌یاما، کیوتو|fi|Fukuchiyama|fr|Fukuchiyama|gl|Fukuchiyama|he|פוקוצ'יאמה|id|Fukuchiyama, Kyōto|it|Fukuchiyama|ja|福知山市|ko|후쿠치야마시|lt|Fukučijama|mg|Fukuchiyama|my|ဖုခုချိယမမြို့၊ ကျိုတို|mzn|فوکوچی‌یاما، کیوتو|nl|Fukuchiyama|pl|Fukuchiyama|pt|Fukuchiyama|ro|Fukuchiyama|ru|Фукутияма|sv|Fukuchiyama|szl|Fukuchiyama|tg|Фукучияма|th|ฟูกูจิยามะ|tl|Fukuchiyama, Kyoto|tr|Fukuchiyama|tt|Фукутияма|uk|Фукучіяма|ur|فوکوچی یاما، کیوٹو|vi|Fukuchiyama, Kyōto|war|Fukuchiyama, Kyoto|zh|福知山市|zh_classical|福知山市|zh_yue|福知山|qid=Q3355306|lt=Fukuchiyama}} Ōe-chō Naikū: Motoise Kōdaijingū  
+* {{ill|Kohama Kōtai Shrine|ja|小浜皇大神社|qid=Q11462621}} – Hyōgo Prefecture, {{ill|Takarazuka, Hyōgo|ar|تاكارازوكا (هيوغو)|azb|تاکارازوکا، هیوقو|bg|Такарадзука|ce|Такарадзука|ceb|Takarazuka (lungsod sa Hapon)|de|Takarazuka|eo|Takarazuka|es|Takarazuka|et|Takarazuka|fa|تاکارازوکا، هیوگو|fi|Takarazuka|fr|Takarazuka|ga|Takarazuka|gl|Takarazuka|hy|Տակարաձուկա|id|Takarazuka, Hyōgo|it|Takarazuka (città)|ja|宝塚市|ko|다카라즈카시|lt|Takaradzuka|mg|Takarazuka|mzn|تاکارازوکا، هیوگو|nl|Takarazuka|no|Takarazuka|pl|Takarazuka|pt|Takarazuka|ro|Takarazuka|ru|Такарадзука|sh|Takarazuka|simple|Takarazuka, Hyōgo|sr|Такаразука|sv|Takarazuka|tg|Такаразука|th|ทาการาซูกะ|tl|Takarazuka, Hyōgo|tr|Takarazuka|tt|Такарадзука|ur|تاکارازوکا، ہیوگو|uz|Takarazuka|vi|Takarazuka, Hyōgo|war|Takarazuka, Hyōgo|zh|寶塚市|zh_classical|寶塚市|zh_min_nan|Takarazuka-chhī|zh_yue|寶塚|qid=Q823967|lt=Takarazuka}} Obama  
+* {{ill|Kōtai Shrine (Shijōōji, Nara)|ja|皇大神社 (奈良市平松町)|qid=Q48754918|lt=Kōtai Shrine (Hiramatsuchō, Nara)}} – Nara Prefecture, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara}} Hiramatsuchō  
+* {{ill|Kōtai Shrine (Shijōōji, Nara)|ja|皇大神社 (奈良市四条大路)|qid=Q48762976|lt=Kōtai Shrine (Shijōōji, Nara)}} – Nara Prefecture, Nara City Shijōōji  
 
 ==See Also==
-* {{ill|Tenso Shrine|ja|天祖神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Tenso Shrine}}
-* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū}}
-* {{ill|Kōtai Jingū (disambiguation)|ja|皇大神宮 (曖昧さ回避)|12=simple|13=User:Immanuelle/Kōtai Jingū (disambiguation)}}
+* {{ill|Tenso Shrine|ja|天祖神社 (曖昧さ回避)}}
+* {{ill|Daijingū|ja|大神宮}}
+* {{ill|Kōtai Jingū (disambiguation)|ja|皇大神宮 (曖昧さ回避)}}
 
 {{disambiguation}}
 {{draft categories|
 
-[[Category:shrine disambiguations]]
-
 }}
-[[Category:Pages without wikidata]]
-[[Category:Independently git synced pages]]
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
-* {{ill|Kotai Shrine (Q48754918)|lt=Kotai Shrine|qid=Q48754918}} — Nara
-* {{ill|Kotai Shrine (Q48762976)|lt=Kotai Shrine|qid=Q48762976}} — Nara
-* {{ill|Kōdai Shrine (Q134886672)|lt=Kōdai Shrine|qid=Q134886672}} — Kamisato
-* {{ill|Kōdai Shrine (Q134886824)|lt=Kōdai Shrine|qid=Q134886824}} — Kamisato
-* {{ill|Kōtai Shrine (Q11581010)|lt=Kōtai Shrine|qid=Q11581010}} — Fukuchiyama
-* {{ill|Kōtai Shrine (Q134597742)|lt=Kōtai Shrine|qid=Q134597742}} — Kashiwa
-* {{ill|Kōtai Shrine (Q134602816)|lt=Kōtai Shrine|qid=Q134602816}} — Sakae
+* {{ill|Kotai Shrine (Q48754918)|ja|皇大神社 (奈良市平松町)|qid=Q48754918|lt=Kotai Shrine}} — Nara
+* {{ill|Kotai Shrine (Q48762976)|ja|皇大神社 (奈良市四条大路)|qid=Q48762976|lt=Kotai Shrine}} — Nara
+* {{ill|Kōdai Shrine (Q134886672)|qid=Q134886672|lt=Kōdai Shrine}} — Kamisato
+* {{ill|Kōdai Shrine (Q134886824)|qid=Q134886824|lt=Kōdai Shrine}} — Kamisato
+* {{ill|Kōtai Shrine (Q11581010)|ja|皇大神社 (福知山市)|qid=Q11581010|lt=Kōtai Shrine}} — Fukuchiyama
+* {{ill|Kōtai Shrine (Q134597742)|qid=Q134597742|lt=Kōtai Shrine}} — Kashiwa
+* {{ill|Kōtai Shrine (Q134602816)|qid=Q134602816|lt=Kōtai Shrine}} — Sakae
 * {{ill|Kōtai Shrine (Q134603045)|lt=Kōtai Shrine|qid=Q134603045}} — Kamogawa
 * {{ill|Kōtai Shrine (Q134603063)|lt=Kōtai Shrine|qid=Q134603063}} — Kamogawa
 * {{ill|Kōtai Shrine (Q135154356)|lt=Kōtai Shrine|qid=Q135154356}} — Kawachi
@@ -44,6 +35,8 @@
 * {{ill|皇大神社 (Q134956216)|lt=皇大神社|qid=Q134956216}} — Izunokuni
 * {{ill|皇大神社 (Q135464057)|lt=皇大神社|qid=Q135464057}} — Minamiuonuma
 * {{ill|皇大神社 (Q135464198)|lt=皇大神社|qid=Q135464198}} — Minamiuonuma
-<!-- END: auto-generated Wikidata shrine list -->
 
-{{wikidata link||en|Kōtai Shrine (disambiguation)}}
+{{wikidata link||en|Kōtai Shrine (disambiguation)|check_date=2026-05-17}}
+[[Category:shrine disambiguations]]
+[[Category:Pages without wikidata]]
+[[Category:Independently git synced pages]]
