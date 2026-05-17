@@ -1,23 +1,18 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kosuge_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
+'''Kosuge Jinja''' (小菅神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=shrine}}.
 
-'''Kosuge Jinja''' (小菅神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine|1=Shinto shrine}}.
-
-* {{ill|Kosuge Shrine (Katsushika)|ja|小菅神社 (葛飾区)|12=simple|13=User:Immanuelle/Kosuge Shrine (Katsushika)|qq=}} - {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}{{ill|Katsushika|en|Katsushika|qid=Q232628|lt=Katsushika Ward|1=Katsushika}} enshrined
-* {{ill|Kosuge Shrine (Iiyama)|ja|小菅神社 (飯山市)|12=simple|13=User:Immanuelle/Kosuge Shrine (Iiyama)|qq=}} - {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}{{ill|Iiyama, Nagano|en|Iiyama, Nagano|qid=Q851097|lt=Iiyama|1=Iiyama, Nagano}} enshrined. It was known as {{ill|Kosugeyama|ja|小菅山|12=simple|13=User:Immanuelle/Kosugeyama|1=Q11463528|comment=changed title based on wikidata|qid=Q11463528}} and, along with {{ill|Mount Togakushi|en|Mount Togakushi|qid=Q11496659|lt=Mount Togakushi|1=Mount Togakushi}} and {{ill|Mount Iizuna|en|Mount Iizuna|qid=Q11666652|lt=Mount Iinawa|1=Mount Iizuna}}, was one of the three major Shugendō sacred sites in Shinshu.
+* {{ill|Kosuge Shrine (Katsushika)|ja|小菅神社 (葛飾区)}} - {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}{{ill|Katsushika|en|Katsushika|qid=Q232628|lt=Katsushika Ward}} enshrined
+* {{ill|Kosuge Shrine (Iiyama)|ja|小菅神社 (飯山市)}} - {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}{{ill|Iiyama, Nagano|en|Iiyama, Nagano|qid=Q851097|lt=Iiyama}} enshrined. It was known as {{ill|Q11463528|ja|小菅山|12=simple|13=User:Immanuelle/Kosugeyama|comment=changed title based on wikidata|qid=Q11463528}} and, along with {{ill|Mount Togakushi|en|Mount Togakushi|qid=Q11496659|lt=Mount Togakushi}} and {{ill|Mount Iizuna|en|Mount Iizuna|qid=Q11666652|lt=Mount Iinawa}}, was one of the three major Shugendō sacred sites in Shinshu.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kosuge Shrine (Q106852604)|lt=Kosuge Shrine|qid=Q106852604}} — Kosuge
 * {{ill|小菅神社 (Q135460899)|lt=小菅神社|qid=Q135460899}} — Jōetsu-shi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|小菅神社|version=39430926|comment=Imported full ja history}}
 
-{{wikidata link|Q11463536|ja|小菅神社}}
+{{wikidata link|Q11463536|ja|小菅神社|check_date=2026-05-17}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
