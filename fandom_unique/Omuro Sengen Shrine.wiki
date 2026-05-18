@@ -1,24 +1,19 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Omuro_Sengen_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25185113590|time triggered pipeline]] -->
-
-* {{ill|Ōmuroyama Sengen Shrine|ja|大室山浅間神社|12=simple|13=User:Immanuelle/Ōmuroyama Sengen Shrine|ja_comment=jawiki link invalid}}
-* {{ill|Hokutō-hongū Omuro Sengen Shrine|ja|小室浅間神社_(富士吉田市大明見)|12=simple|13=User:Immanuelle/Hokutō-hongū Omuro Sengen Shrine|qq=}}
-* {{ill|Fuji Omuro Asama Shrine|ja|冨士御室浅間神社|12=simple|13=User:Immanuelle/Fuji Omuro Asama Shrine|qq=}}
+* {{ill|Ōmuroyama Sengen Shrine|ja|大室山浅間神社}}
+* {{ill|Hokutō-hongū Omuro Sengen Shrine|ja|小室浅間神社_(富士吉田市大明見)}}
+* {{ill|Fuji Omuro Asama Shrine|ja|冨士御室浅間神社}}
 
 * [[Ōmuroyama Sengen Shrine]]
-* {{ill|Omuro Sengen Shrine (Yamanashi)|ja|冨士山下宮小室浅間神社|12=simple|13=User:Immanuelle/Omuro Sengen Shrine (Yamanashi)|qq=}}
+* {{ill|Omuro Sengen Shrine (Yamanashi)|ja|冨士山下宮小室浅間神社}}
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Hokutō-hongū Omuro Sengen Shrine (Q85879648)|lt=Hokutō-hongū Omuro Sengen Shrine|qid=Q85879648}} — Fujiyoshida
 * {{ill|Omuro Sengen Shrine (Q11459658)|lt=Omuro Sengen Shrine|qid=Q11459658}}
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|小室浅間神社|version=84297836|comment=Imported full ja history}}
 
-{{wikidata link|Q11459658|ja|小室浅間神社}}
+{{wikidata link|Q11459658|ja|小室浅間神社|check_date=2026-05-18}}
 [[Category:Asama shrines]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]

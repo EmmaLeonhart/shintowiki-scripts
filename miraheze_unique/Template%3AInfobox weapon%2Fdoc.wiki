@@ -1,6 +1,6 @@
 {{Documentation subpage}}
 {{high-use}}
-{{Auto short description}}
+{{Removed template}}
 
 ==Usage==
 A weapon infobox may be used to summarize information about a particular weapon or weapon system (such as a firearm, a sword, a grenade, an artillery piece, a torpedo, or a tank); cartridges and artillery shells should use {{Tlx|Infobox firearm cartridge}} instead.  The infobox should be added using the {{Tlx|Infobox weapon}} template, as shown below.

@@ -2,7 +2,7 @@
 
 {{Person infobox header}}
 {{high-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
 
 '''Infobox writer''' may be used to summarize information about a person who is a writer/author (includes screenwriters).
