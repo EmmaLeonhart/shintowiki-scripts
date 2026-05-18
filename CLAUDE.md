@@ -152,3 +152,6 @@ the retry — do not replace it with a single-shot push.
   "repos/OWNER/REPO/actions/runs/ID/force-cancel"`. This terminates
   the run immediately. Needed fairly often — reach for it the moment
   a regular cancel hasn't propagated within ~1 minute.
+
+## Writing
+- Do not use the word "honest", "honesty", or "honestly". It is aggressively overused. Choose a more precise word that says what you actually mean (e.g. "accurate", "frank", "plainly", "truly").
