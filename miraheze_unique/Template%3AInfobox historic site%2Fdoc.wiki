@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Location map|Module:Check for unknown parameters}}
 
 <div style="height:70ex; width:auto; border:1px #aaa solid; margin-left:5px; float:right; clear:right; overflow:auto; padding:5px;">{{Infobox historic site

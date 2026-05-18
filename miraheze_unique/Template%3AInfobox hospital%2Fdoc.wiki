@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use|5676}}
-{{Auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
 
 The {{tlx|Infobox hospital}} template formats a right-side [[wp:Infobox|infobox]] to display many data items about a hospital, with the typical labels listed down the left side, and the corresponding data values on the right side of the box.

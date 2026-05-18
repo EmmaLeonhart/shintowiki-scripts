@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 {{High-use}}
 {{person infobox header}}
-{{Auto short description|conditions= (only if either {{para|title}} or {{para|succession}} has a value)}}
+{{Removed template|conditions= (only if either {{para|title}} or {{para|succession}} has a value)}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
 
 This template may be used for anyone having royal connections. This template is only for historic biographies and must not be used for mythical / legendary characters or creatures. You can use other templates for them, such as {{tlx|Infobox character}}.

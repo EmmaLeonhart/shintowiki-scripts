@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use}}
-{{Auto short description|conditions=when '''Type''' includes one of: Museum / Hall / Gallery / Center}}
+{{Removed template|conditions=when '''Type''' includes one of: Museum / Hall / Gallery / Center}}
 {{Lua|Module:Check for unknown parameters|Module:Infobox|Module:InfoboxImage|Module:Location map|Module:Type in location}}
 
 == Usage ==

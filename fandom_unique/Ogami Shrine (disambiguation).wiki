@@ -1,20 +1,17 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
 '''Ogami Jinja''' (雄神神社) can refer to the following
 
-* {{ill|Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|12=simple|13=User:Immanuelle/Ogami Shrine (Tonami City)|qq=}} - Located in {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}}, [[:en:Tonami City|Tonami City]]. Former shrine Rank: {{ill|Gōsha|ja|近代社格制度#諸社|lt=Local Shrine|12=simple|13=User:Immanuelle/Gōsha|1=Modern system of ranked Shinto shrines|comment=changed title based on wikidata|qid=Q712534}}.
-* {{ill|Ogami Shrine (Nara)|ja|雄神神社 (奈良市)|12=simple|13=User:Immanuelle/Ogami Shrine (Nara)|ja_comment=jawiki link invalid}} - Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, [[:en:Nara City|Nara City]].
+* {{ill|Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)}} - Located in {{ill|Toyama Prefecture|ace|Prefektur Toyama|af|Toyama-prefektuur|an|Prefectura de Toyama|ar|توياما (محافظة)|az|Toyama prefekturası|azb|تویاما اوستانی|ban|Préféktur Toyama|be|Таяма (прэфектура)|bg|Тояма|bn|তোয়্যামা প্রশাসনিক অঞ্চল|ca|Prefectura de Toyama|cdo|Toyama-gâing|ce|Тояма (префектура)|ceb|Toyama-ken|ckb|پارێزگای تۆیاما|cs|Prefektura Tojama|cy|Toyama (talaith)|da|Toyama-præfekturet|de|Präfektur Toyama|eo|Gubernio Tojamo|es|Prefectura de Toyama|et|Toyama prefektuur|eu|Toyama (prefektura)|fa|استان تویاما|fi|Toyaman prefektuuri|fr|Préfecture de Toyama|frr|Toyama (Prefektüür)|ga|Maoracht Toyama|gl|Prefectura de Toyama|hak|Toyama-yen|he|טויאמה (מחוז)|hi|तोयामा प्रभाग|hr|Toyama (prefektura)|hu|Tojama prefektúra|hy|Տոյամա (պրեֆեկտուրա)|id|Prefektur Toyama|ilo|Prepektura ti Toyama|it|Prefettura di Toyama|ja|富山県|ka|ტოიამის პრეფექტურა|kn|ಟೊಯಾಮಾ (ಪ್ರಾಂತ್ಯ)|ko|도야마현|lt|Tojamos prefektūra|lv|Tojamas prefektūra|mk|Тојама (префектура)|mni|ꯇꯣꯌꯥꯃꯥ ꯂꯝꯈꯥꯢ|mr|तोयामा प्रांत|ms|Wilayah Toyama|ne|तोयामा|nl|Toyama (prefectuur)|no|Toyama (prefektur)|os|Тоямæ (префектурæ)|pl|Prefektura Toyama|pnb|ضلع ٹویاما|pt|Toyama|ro|Prefectura Toyama|ru|Тояма (префектура)|se|Toyama prefektuvra|sh|Prefektura Tojama|simple|Toyama Prefecture|sk|Tojama (prefektúra)|sr|Префектура Тојама|su|Toyama Prefecture|sv|Toyama prefektur|sw|Mkoa wa Toyama|tg|Префектураи Тояма|th|จังหวัดโทยามะ|tl|Prepektura ng Toyama|tr|Toyama (prefektörlük)|tt|Тояма (префектура)|uk|Префектура Тояма|ur|تویاما پریفیکچر|vi|Toyama|war|Toyama (prefektura)|wuu|富山县|zh|富山縣|zh_classical|富山縣|zh_min_nan|Toyama-koān|zh_yue|富山縣|qid=Q132929|lt=Toyama Prefecture}}, [[:en:Tonami City|Tonami City]]. Former shrine Rank: {{ill|Gōsha|ja|近代社格制度#諸社|lt=Local Shrine}}.
+* {{ill|Ogami Shrine (Nara)|ja|雄神神社 (奈良市)}} - Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}, [[:en:Nara City|Nara City]].
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Ogami Shrine (Tonami City) (Q11659237)|lt=Ogami Shrine (Tonami City)|qid=Q11659237}} — Tonami
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|雄神神社|version=39282604|comment=Imported full ja history}}
 
-{{wikidata link|Q11659236|ja|雄神神社|en|Ogami Jinja}}
+{{wikidata link|Q11659236|ja|雄神神社|en|Ogami Jinja|check_date=2026-05-18}}
 [[Category:Shrine disambiguations]]
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata has short description]]
