@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Infobox body of water tracking|Module:Check for unknown parameters|Module:Wikidata}}
 
 This template can be used to add comparative, at-a-glance material to articles on lakes, oceans, bays, and similar water bodies.  If there is a single article for the reservoir and the dam, then please use the integrated {{tl|infobox dam}} template, instead of this template.

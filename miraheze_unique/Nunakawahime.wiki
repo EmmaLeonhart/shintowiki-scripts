@@ -1,15 +1,15 @@
-{{Infobox person|gender={{ill|female|qid=Q6581072|1=Female (gender)}}|spouse={{ill|Ōkuninushi|qid=Q276944|1=Ōkuninushi}}|children={{ill|Takeminakata|qid=Q9150391|1=Takeminakata}}}}
+{{Infobox person|gender={{ill|Female (gender)|qid=Q6581072}}|spouse={{ill|Ōkuninushi|qid=Q276944}}|children={{ill|Takeminakata|qid=Q9150391}}}}
 {{Short description|Japanese goddess}}
 
 {{Infobox deity
 | type = Shinto
 | spouse = [[Ōkuninushi|Okuninushi]]
 | children = Kinomata (Kimata), {{ill|Shitateruhime|ja|下照比売|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}, [[Ajisukitakahikone]], [[Kotoshironushi-no-Mikoto|Kotoshironushi]],<ref>{{Cite web |url=http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=95 |title=Kotoshironushi |first=Kadoya |last=Atsushi |date=28 April 2005 |publisher=Encyclopedia of Shinto |access-date=2010-09-29}}</ref> [[Takeminakata]] and others
-| cult_centre = {{ill|Amatsu Shrine|en|Amatsu Shrine|qid=Q172253|lt=Amatsu Shrine|1=Amatsu Shrine}}, {{ill|Kota Shrine (Niigata)|en|Kota Shrine (Niigata)|qid=Q172417|lt=Kota Shrine|1=Kota Shrine (Niigata)}}
-| cult_center = {{ill|Amatsu Shrine|en|Amatsu Shrine|qid=Q172253|lt=Amatsu Shrine|1=Amatsu Shrine}}, {{ill|Kota Shrine (Niigata)|en|Kota Shrine (Niigata)|qid=Q172417|lt=Kota Shrine|1=Kota Shrine (Niigata)}}
-| gender = {{ill|female|qid=Q6581072|1=Female (gender)}}
-| consort = {{ill|Ōkuninushi|qid=Q276944|1=Ōkuninushi}}
-| offspring = {{ill|Takeminakata|qid=Q9150391|1=Takeminakata}}
+| cult_centre = {{ill|Amatsu Shrine|en|Amatsu Shrine|qid=Q172253|lt=Amatsu Shrine}}, {{ill|Kota Shrine (Niigata)|en|Kota Shrine (Niigata)|qid=Q172417|lt=Kota Shrine}}
+| cult_center = {{ill|Amatsu Shrine|en|Amatsu Shrine|qid=Q172253|lt=Amatsu Shrine}}, {{ill|Kota Shrine (Niigata)|en|Kota Shrine (Niigata)|qid=Q172417|lt=Kota Shrine}}
+| gender = {{ill|Female (gender)|qid=Q6581072}}
+| consort = {{ill|Ōkuninushi|qid=Q276944}}
+| offspring = {{ill|Takeminakata|qid=Q9150391}}
 }}
 '''Nunakawahime''' is a Shinto goddess.<ref name="Nunakawahime" />
 
@@ -41,7 +41,7 @@ For those involved in professions or hobbies related to poetry or song, it is cu
 
 {{translated page|ja|沼河比売|version=103282357|comment=Imported full ja history}}
 
-{{wikidata link|Q11142832|en|Nunakawahime|ja|沼河比売|zh|沼河比賣}}
+{{wikidata link|Q11142832|en|Nunakawahime|ja|沼河比売|zh|沼河比賣|check_date=2026-05-18}}
 [[Category:History of Itoigawa]]
 [[Category:Japanese deities]]
 [[Category:Japanese goddesses]]
