@@ -1,34 +1,32 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Moritaku-no-Kami for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 {{Infobox deity
 | name        = Morita no Kami
-| generation  = {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} Second Generation
-| predecessor = {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami|1=Moreya}}
-| successor   = {{ill|Chikatō-no-Kami|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatō-no-Kami|13=User:Immanuelle/Chikatō-no-Kami|qq=}}
-| type        = {{ill|Kunitsukami|ja|国津神|1=Kunitsukami|12=simple|13=User:Immanuelle/Kunitsukami|ja_comment=jawiki redirects to 天津神・国津神|comment=confirming this goes to Kunitsukami|qid=Q60995523|1=Kunitsukami|2=zh|3=國神|4=fr|5=Kunitsukami|6=mni|7=ꯀꯨꯅꯤꯠꯁꯨꯀꯃꯤ}}
+| generation  = {{ill|Moriya clan|ja|守矢氏}} Second Generation
+| predecessor = {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami}}
+| successor   = {{ill|Chikatō-no-Kami|ja|千鹿頭神}}
+| type        = {{ill|Kunitsukami|ja|国津神|12=simple|13=User:Immanuelle/Kunitsukami|ja_comment=jawiki redirects to 天津神・国津神|comment=confirming this goes to Kunitsukami|qid=Q60995523|2=zh|3=國神|4=fr|5=Kunitsukami|6=mni|7=ꯀꯨꯅꯤꯠꯁꯨꯀꯃꯤ}}
 | full_name   = Morita no Kami
 | aliases     = Moriya no Kami, Moritaku no Kami, Morita no Kami
 | Rank        = 
 | role        = Hunting deity, mountain deity
 | burial_site = 
-| father      = {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami|1=Moreya}}
+| father      = {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami}}
 | mother      = 
 | spouse      = 
-| children    = {{ill|Chikatō-no-Kami|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatō-no-Kami|13=User:Immanuelle/Chikatō-no-Kami|qq=}}
+| children    = {{ill|Chikatō-no-Kami|ja|千鹿頭神}}
 | shrines     = 
 }}
 
-'''Morita no Kami''' (守宅神, also read as Moriya no Kami, Moritaku no Kami, or Morita no Kami<ref name="yamadamoriya"/>) is a deity from the folk traditions of the {{ill|Suwa Region|lt=Suwa Region|lt=Suwa region|ja|諏訪地方|12=simple|13=User:Immanuelle/Suwa region|ja_comment=jawiki redirects to 諏訪地域}} in Nagano Prefecture, central to the {{ill|Suwa Shrine|lt=Suwa Shrine|lt=Suwa faith|ja|諏訪信仰|12=simple|13=User:Immanuelle/Suwa faith|ja_comment=jawiki redirects to 諏訪神社}}. Also known as '''守田ノ神'''<ref name="moriya">{{Cite book|和書|year=2017|title=神長官守矢史料館のしおり|edition=第三版|page=11|editor=茅野市神長官守矢史料館|editor-link=神長官守矢史料館|chapter=守矢氏系譜}}</ref> or '''Moriya no Kami'''<ref name="nobukawa">延川和彦「信濃国官社諏訪神社神長官守矢家略系図」『[https://dl.ndl.go.jp/info:ndljp/pid/927368/21 諏訪氏系図 続編]』飯田好太郎、1921st year 、21頁。</ref>, he is said to have been worshiped as a god of hunting and mountains.
+'''Morita no Kami''' (守宅神, also read as Moriya no Kami, Moritaku no Kami, or Morita no Kami<ref name="yamadamoriya"/>) is a deity from the folk traditions of the {{ill|Suwa Region|ja|諏訪地方|lt=Suwa region}} in Nagano Prefecture, central to the {{ill|Suwa Shrine|ja|諏訪信仰|lt=Suwa faith}}. Also known as '''守田ノ神'''<ref name="moriya">{{Cite book|和書|year=2017|title=神長官守矢史料館のしおり|edition=第三版|page=11|editor=茅野市神長官守矢史料館|editor-link=神長官守矢史料館|chapter=守矢氏系譜}}</ref> or '''Moriya no Kami'''<ref name="nobukawa">延川和彦「信濃国官社諏訪神社神長官守矢家略系図」『[https://dl.ndl.go.jp/info:ndljp/pid/927368/21 諏訪氏系図 続編]』飯田好太郎、1921st year 、21頁。</ref>, he is said to have been worshiped as a god of hunting and mountains.
 
 == Overview ==
 [[File:Moriya Family Tree - 守矢氏系図.png|170px|thumb|{{center|Genealogy of the Moriya clan showing the first five generations from Moreya to Chikato.}}]]
-In the genealogical text ''Shincho Moriya-shi Keifu'' (''Genealogy of the Moriya clan''), written in the early Meiji period,<ref name="Moriyakeifu">諏訪教育会 編「[https://dl.ndl.go.jp/info:ndljp/pid/1185913/24 神長守矢氏系譜]」『諏訪史料叢書　巻28』1938th year 、31-72頁。</ref> Morita no Kami is described as the second generation after {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami|1=Moreya}}. His younger sister is recorded as {{ill|Tamaru-hime|ja|多満留姫|1=Tamaru-hime|12=simple|13=User:Immanuelle/Tamaru-hime|13=User:Immanuelle/Tamaru-hime|qq=}}. According to the text, he inherited the position of ritual leader from his father, Moreya no Kami. One account states that during a hunting expedition with the Suwa deity {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}, Morita no Kami caught 1,000 deer, inspiring him to name his child {{ill|Chikatō-no-Kami|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatō-no-Kami|13=User:Immanuelle/Chikatō-no-Kami|qq=}}.
+In the genealogical text ''Shincho Moriya-shi Keifu'' (''Genealogy of the Moriya clan''), written in the early Meiji period,<ref name="Moriyakeifu">諏訪教育会 編「[https://dl.ndl.go.jp/info:ndljp/pid/1185913/24 神長守矢氏系譜]」『諏訪史料叢書　巻28』1938th year 、31-72頁。</ref> Morita no Kami is described as the second generation after {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami}}. His younger sister is recorded as {{ill|Tamaru-hime|ja|多満留姫}}. According to the text, he inherited the position of ritual leader from his father, Moreya no Kami. One account states that during a hunting expedition with the Suwa deity {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata}}, Morita no Kami caught 1,000 deer, inspiring him to name his child {{ill|Chikatō-no-Kami|ja|千鹿頭神}}.
 
-Morita no Kami has also been identified with the guardian deity {{ill|Moritatsu no Kami|ja|守達神|1=Moritachi no Kami|12=simple|13=User:Immanuelle/Moritatsu no Kami|13=User:Immanuelle/Moritachi no Kami|qq=}}, enshrined in the {{ill|Morita Shrine|ja|守田神社|12=simple|13=User:Immanuelle/Morita Shrine|ja_comment=jawiki link invalid}} in Nagano City, which is one of the possible locations of the ancient Morita Shrine.<ref name="nobukawa"/>
+Morita no Kami has also been identified with the guardian deity {{ill|Moritatsu no Kami|ja|守達神}}, enshrined in the {{ill|Morita Shrine|ja|守田神社}} in Nagano City, which is one of the possible locations of the ancient Morita Shrine.<ref name="nobukawa"/>
 
 == Historical Analysis ==
 [[File:Hokora in Mount Moriya (守屋山上の祠).png|left|200px|thumb|Shrine to Moriya on the Eastern Peak of Mount Moriya.]]
-The ''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku|1=Nihon Sandai Jitsuroku}}'' records the deity {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} (elevated to Second Rank in 859) alongside other gods such as Yasakatome, Ikushima, Ashishima, and Hotaka (granted Senior Fifth Rank).<ref>{{Cite web|和書|url=http://www.j-texts.com/chuko/sandai.html |title=『日本三代實録』全巻（朝日新聞本）{{Broken link|date=2023rd year 2月}}|website=J－TEXTS 日本文学電子図書館|accessdate=2019-05-18}}</ref> Some manuscripts list "Hotaka" as "Morita."<ref>『[https://dl.ndl.go.jp/info:ndljp/pid/991094/17 国史大系 第4巻]』経済雑誌社編、経済雑誌社、1897th year 、23頁。</ref>
+The ''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'' records the deity {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata}} (elevated to Second Rank in 859) alongside other gods such as Yasakatome, Ikushima, Ashishima, and Hotaka (granted Senior Fifth Rank).<ref>{{Cite web|和書|url=http://www.j-texts.com/chuko/sandai.html |title=『日本三代實録』全巻（朝日新聞本）{{Broken link|date=2023rd year 2月}}|website=J－TEXTS 日本文学電子図書館|accessdate=2019-05-18}}</ref> Some manuscripts list "Hotaka" as "Morita."<ref>『[https://dl.ndl.go.jp/info:ndljp/pid/991094/17 国史大系 第4巻]』経済雑誌社編、経済雑誌社、1897th year 、23頁。</ref>
 
 In the late Edo period, "Morita" came to be interpreted as referring to Mount Moriya, with connections drawn to the deity Moreya. However, genealogical sources distinguish Moreya and Morita as separate figures. Scholar Yamada Hajime (1929) suggested that Moreya and Morita might originally have been the same, with later attempts to differentiate them for theological reasons.<ref name="yamadamoriya">{{Cite book|和書|author=山田肇|year=1929|title=諏訪大明神|publisher=信濃郷土文化普及会|page=80|series=信濃郷土叢書 第1編|chapter=健御名方命に降服した諏訪の國つ神 洩矢神及び武居大伴主惠美志命}}</ref>
 
@@ -49,12 +47,12 @@ Later theorists such as Yamato Iwao (1990) proposed that Moreya represented the 
 * {{Cite book|和書|author=細田貴助|year=2003|title=県宝守矢文書を読む―中世の史実と歴史が見える|publisher=ほおずき書籍|isbn=978-4-434-03552-4|ref={{Harvid|県宝守矢文書を読む|2003rd year }}}}
 
 == See also ==
-* {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami|1=Moreya}}
-* {{ill|Mount Moriya|ja|守屋山|12=simple|13=User:Immanuelle/Mount Moriya|qq=}}
-* {{ill|Tamaru-hime|ja|多満留姫|1=Tamaru-hime|12=simple|13=User:Immanuelle/Tamaru-hime|13=User:Immanuelle/Tamaru-hime|qq=}}
-* {{ill|Chikatō-no-Kami|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatō-no-Kami|13=User:Immanuelle/Chikatō-no-Kami|qq=}}
-* {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
-* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities|1=List of Japanese deities}}
+* {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya no Kami}}
+* {{ill|Mount Moriya|ja|守屋山}}
+* {{ill|Tamaru-hime|ja|多満留姫}}
+* {{ill|Chikatō-no-Kami|ja|千鹿頭神}}
+* {{ill|Moriya clan|ja|守矢氏}}
+* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities}}
 
 {{諏訪信仰}}
 
@@ -64,7 +62,7 @@ Later theorists such as Yamato Iwao (1990) proposed that Moreya represented the 
 
 {{translated page|ja|守宅神|version=97997160|comment=Imported full ja history}}
 
-{{wikidata link|Q38276368|ja|守宅神}}
+{{wikidata link|Q38276368|ja|守宅神|check_date=2026-05-18}}
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
 [[Category:Suwa faith]]

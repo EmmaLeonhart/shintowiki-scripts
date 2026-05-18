@@ -1,17 +1,15 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Mount_Moriya for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 {{Infobox mountain
 | Name = Mount Moriya
 | image = [[File:Mt.Moriya from Mt.Akadake.jpg|300px]]
 | Caption = <small>View of Mount Moriya from [[Mount Akadake (Yatsugatake)|Mount Akadake]] of the [[Yatsugatake Mountains]]</small>
 | Elevation_m = 1,650.3
 | Coordinates = {{Coord|35.9675|138.0933|type:mountain_region:JP-20}}
-| Location = {{JPN}}<br />{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa, Nagano|1=Suwa, Nagano}}, {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano|1=Ina, Nagano}}
-| Range = {{ill|Ina Mountains|ja|伊那山地|12=simple|13=User:Immanuelle/Ina Mountains|1=Ina Mountains|comment=changed title based on wikidata|qid=Q11380892}}
+| Location = {{JPN}}<br />{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa, Nagano}}, {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano}}
+| Range = {{ill|Ina Mountains|ja|伊那山地|12=simple|13=User:Immanuelle/Ina Mountains|comment=changed title based on wikidata|qid=Q11380892}}
 | Map = {{Location map|Japan Mapplot|coordinates={{Coord|35.9675|138.0933}}|caption=|width=300}}
 | Map Caption = Location of Mount Moriya
 }}
-'''Mount Moriya''' (守屋山) is a mountain with an elevation of 1,651 meters, located on the border between {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa, Nagano|1=Suwa, Nagano}} and {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano|1=Ina, Nagano}} in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}.<ref name="gsi.go.jp/common/000091072">{{Cite news|url=https://www.gsi.go.jp/common/000091072.pdf|title=Revised Elevation Values for Mountains|publisher=Geospatial Information Authority of Japan|accessdate=2014-03-26}}</ref>
+'''Mount Moriya''' (守屋山) is a mountain with an elevation of 1,651 meters, located on the border between {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa, Nagano}} and {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano}} in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}.<ref name="gsi.go.jp/common/000091072">{{Cite news|url=https://www.gsi.go.jp/common/000091072.pdf|title=Revised Elevation Values for Mountains|publisher=Geospatial Information Authority of Japan|accessdate=2014-03-26}}</ref>
 
 == Name ==
 The mountain was historically known as '''Moriya Mountain''' (森山). Historical records also refer to it as '''Moriya Peak''' (守屋ヶ嶽) or '''Moriya Ridge''' (守矢が岳).<ref>Ota, Ryo, "[https://dl.ndl.go.jp/info:ndljp/pid/983470/122 Suwa Shrine Records Vol. 1]," 1926, pp. 225, 227.</ref>
@@ -19,21 +17,21 @@ The mountain was historically known as '''Moriya Mountain''' (森山). Historica
 Locals in the Suwa region often refer to the mountain range that includes Mount Moriya as "Nishiyama" (西山), meaning "Western Mountains."
 
 == Overview ==
-Situated at the northernmost part of the {{ill|Ina Mountains|ja|伊那山地|12=simple|13=User:Immanuelle/Ina Mountains|1=Ina Mountains|comment=changed title based on wikidata|qid=Q11380892}}, the summit provides panoramic views of the {{ill|Akaishi Mountains|en|Akaishi Mountains|qid=Q415350|lt=Southern Alps (Japan)|1=Akaishi Mountains}}, {{ill|Kiso Mountains|en|Kiso Mountains|qid=Q1072062|lt=Central Alps (Japan)|1=Kiso Mountains}}, {{ill|Hida Mountains|en|Hida Mountains|qid=Q1072070|lt=Northern Alps (Japan)|1=Hida Mountains}}, and {{ill|Yatsugatake Mountains|en|Yatsugatake Mountains|qid=Q11390433|lt=Yatsugatake Mountains|1=Yatsugatake Mountains}}. The mountain serves as the source of the {{ill|Sawakawa River|ja|沢川|12=simple|13=User:Immanuelle/Sawakawa River|ja_comment=jawiki link invalid}}, which flows into {{ill|Minowa Dam|en|Minowa Dam|qid=Q11166611|lt=Lake Momiji|1=Minowa Dam}} before joining the {{ill|Tenryū River|en|Tenryū River|qid=Q13667|lt=Tenryu River|1=Tenryū River}}.
+Situated at the northernmost part of the {{ill|Ina Mountains|ja|伊那山地|12=simple|13=User:Immanuelle/Ina Mountains|comment=changed title based on wikidata|qid=Q11380892}}, the summit provides panoramic views of the {{ill|Akaishi Mountains|en|Akaishi Mountains|qid=Q415350|lt=Southern Alps (Japan)}}, {{ill|Kiso Mountains|en|Kiso Mountains|qid=Q1072062|lt=Central Alps (Japan)}}, {{ill|Hida Mountains|en|Hida Mountains|qid=Q1072070|lt=Northern Alps (Japan)}}, and {{ill|Yatsugatake Mountains|en|Yatsugatake Mountains|qid=Q11390433|lt=Yatsugatake Mountains}}. The mountain serves as the source of the {{ill|Sawakawa River|ja|沢川}}, which flows into {{ill|Minowa Dam|en|Minowa Dam|qid=Q11166611|lt=Lake Momiji}} before joining the {{ill|Tenryū River|arz|نهر تينريو|ceb|Tenryū-gawa (suba sa Hapon)|de|Tenryū (Fluss)|eu|Tenryū ibaia|fa|رود تنریو|fr|Tenryū-gawa|id|Sungai Tenryū|ja|天竜川|ko|덴류강|no|Tenryu (elv)|ru|Тенрю (река)|tg|Тенрю (дарё)|zh|天龍川|qid=Q13667|lt=Tenryu River}}.
 
-The mountain is composed primarily of {{ill|green tuff|ja|緑色凝灰岩|12=simple|13=User:Immanuelle/green tuff|ja_comment=jawiki redirects to グリーンタフ|1=green tuff|comment=changed title based on wikidata|qid=Q11300545}}, making it a geologically significant area where the {{ill|Itoigawa-Shizuoka Tectonic Line|en|Itoigawa-Shizuoka Tectonic Line|qid=Q906591|lt=Itoigawa-Shizuoka Tectonic Line|1=Itoigawa-Shizuoka Tectonic Line}} intersects with the {{ill|Japan Median Tectonic Line|en|Japan Median Tectonic Line|qid=Q1185053|lt=Median Tectonic Line|1=Japan Median Tectonic Line}}.
+The mountain is composed primarily of {{ill|green tuff|ja|緑色凝灰岩|12=simple|13=User:Immanuelle/green tuff|ja_comment=jawiki redirects to グリーンタフ|comment=changed title based on wikidata|qid=Q11300545}}, making it a geologically significant area where the {{ill|Itoigawa-Shizuoka Tectonic Line|en|Itoigawa-Shizuoka Tectonic Line|qid=Q906591|lt=Itoigawa-Shizuoka Tectonic Line}} intersects with the {{ill|Japan Median Tectonic Line|en|Japan Median Tectonic Line|qid=Q1185053|lt=Median Tectonic Line}}.
 
-On the eastern peak, a stone shrine—referred to in ancient maps as the "Moriya Great Minister Shrine" (守矢大臣宮)—is associated with {{ill|Moriya Shrine|ja|守屋神社|12=simple|13=User:Immanuelle/Moriya Shrine|ja_comment=jawiki link invalid}} in {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano|1=Ina, Nagano}}.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, pp. 133–137.</ref>
+On the eastern peak, a stone shrine—referred to in ancient maps as the "Moriya Great Minister Shrine" (守矢大臣宮)—is associated with {{ill|Moriya Shrine|ja|守屋神社}} in {{ill|Ina, Nagano|en|Ina, Nagano|qid=Q840888|lt=Ina, Nagano}}.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, pp. 133–137.</ref>
 
 <gallery widths="150" heights="105">
 杖突峠から見た南八ヶ岳.jpg|View of [[Yatsugatake Mountains]] from [[Tsurugatoge Pass]]
-守屋山山頂から見た諏訪湖.jpg|View of {{ill|Lake Suwa|en|Lake Suwa|qid=Q1206692|lt=Lake Suwa|1=Lake Suwa}} from the summit
+守屋山山頂から見た諏訪湖.jpg|View of {{ill|Lake Suwa|en|Lake Suwa|qid=Q1206692|lt=Lake Suwa}} from the summit
 守屋山山頂直下のラビットハウス.jpg|Rabbit House near the summit
 </gallery>
 
 == Belief and Worship ==
 [[File:守屋神社奥宮（守屋山東峰） - Mononobe no Moriya Shrine (Mt. Moriya).jpg|thumb|200px|The inner shrine and sacred rock at the eastern peak]]
-Mount Moriya has long been revered as the abode of the deity {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moriya|1=Moreya}}, also identified with {{ill|Mononobe no Moriya|en|Mononobe no Moriya|qid=Q2424736|lt=Mononobe no Moriya|1=Mononobe no Moriya}}.
+Mount Moriya has long been revered as the abode of the deity {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moriya}}, also identified with {{ill|Mononobe no Moriya|en|Mononobe no Moriya|qid=Q2424736|lt=Mononobe no Moriya}}.
 
 === Rain Rituals ===
 It is believed that when the deity of Mount Moriya is angered, rain will follow. In times of drought, locals performed rituals involving throwing the summit shrine into the valley, a practice now prevented by fences.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, pp. 141–143.</ref>
@@ -41,12 +39,12 @@ It is believed that when the deity of Mount Moriya is angered, rain will follow.
 The saying, "When clouds gather on Moriya and the shrike cries, it’s time to sharpen the sickle," reflects the traditional use of the mountain for weather forecasting.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, pp. 140–141.</ref>
 
 === Sacred Rock Worship ===
-The rock adjacent to the shrine was also venerated as a sacred site. Ancient ceremonies involved circling this rock seven times and then visiting {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}}.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, p. 143.</ref>
+The rock adjacent to the shrine was also venerated as a sacred site. Ancient ceremonies involved circling this rock seven times and then visiting {{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}}.<ref>Hara, Masanao, "Customs and Legends of Mount Moriya," in ''Suwa Studies'', ed. Hiroko Yamamoto, Kokusho Kankokai, 2018, p. 143.</ref>
 
 == Related Mountains ==
-* {{ill|Mount Nyukasa|en|Mount Nyukasa|qid=Q11389007|lt=Mount Nyukasa|1=Mount Nyukasa}}
-* {{ill|Mount Kyogatake|ja|経ヶ岳|12=simple|13=User:Immanuelle/Mount Kyogatake|1=Q11606373|comment=changed title based on wikidata|qid=Q11606373}}
-* {{ill|Southern Yatsugatake Volcanic Group|en|Southern Yatsugatake Volcanic Group|qid=Q905588|lt=Yatsugatake Mountains|1=Southern Yatsugatake Volcanic Group}}
+* {{ill|Mount Nyukasa|en|Mount Nyukasa|qid=Q11389007|lt=Mount Nyukasa}}
+* {{ill|Q11606373|ja|経ヶ岳|12=simple|13=User:Immanuelle/Mount Kyogatake|comment=changed title based on wikidata|qid=Q11606373}}
+* {{ill|Southern Yatsugatake Volcanic Group|en|Southern Yatsugatake Volcanic Group|qid=Q905588|lt=Yatsugatake Mountains}}
 
 == References ==
 {{Reflist}}
@@ -64,7 +62,7 @@ The rock adjacent to the shrine was also venerated as a sacred site. Ancient cer
 {{translated page|ja|守屋山|version=104503592|comment=Imported full ja history}}
 
 {{Commons category|Mount Moriya (Nagano)}}
-{{wikidata link|Q11450013|co|commons:Category:Mount Moriya (Nagano)|ja|守屋山|lld|Mont Moriya|ld|Mont Moriya}}
+{{wikidata link|Q11450013|co|commons:Category:Mount Moriya (Nagano)|ja|守屋山|lld|Mont Moriya|ld|Mont Moriya|check_date=2026-05-18}}
 [[Category:Geography of Ina, Nagano]]
 [[Category:Geography of Suwa]]
 [[Category:Ina, Nagano]]

@@ -1,26 +1,21 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Nagahama_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 '''Nagahama Shrine'''・'''Nagahama Jinja''' (長浜神社・長濱神社)
 
-* {{ill|Nagahama Shrine (Numazu)|ja|長濱神社 (沼津市)|12=simple|13=User:Immanuelle/Nagahama Shrine (Numazu)|1=Nagahama Shrine|comment=changed title based on wikidata|qid=Q134926847}} - Located in {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}} {{ill|Numazu|en|Numazu|qid=Q241037|lt=Numazu|1=Numazu}} in the Nagaura Nagahama area.
-* {{ill|Nagahama Shrine (Izumo)|ja|長浜神社|12=simple|13=User:Immanuelle/Nagahama Shrine (Izumo)|qq=}} - Located in {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}} {{ill|Izumo, Shimane|en|Izumo, Shimane|qid=Q825166|lt=Izumo|1=Izumo, Shimane}} Nishizono Town.
-* {{ill|Nagahama Shrine (Ōita)|ja|長浜神社 (大分市)|12=simple|13=User:Immanuelle/Nagahama Shrine (Ōita)|qq=}} - Located in {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture|1=Ōita Prefecture}} {{ill|Ōita (city)|en|Ōita (city)|qid=Q199609|lt=Ōita|1=Ōita (city)}} Nagahama Town.
+* {{ill|Nagahama Shrine|ja|長濱神社 (沼津市)|qid=Q134926847}} - Located in {{ill|Shizuoka Prefecture|ace|Prefektur Shizuoka|af|Shizuoka-prefektuur|an|Prefectura de Shizuoka|ar|شيزوكا (محافظة)|arz|شيزوكا (محافظه)|ast|Prefeutura de Shizuoka|az|Şizuoka prefekturası|azb|شیزوئوکا اوستانی|ban|Préféktur Shizuoka|be|Сідзуока (прэфектура)|bg|Шидзуока|bn|শিযুওকা প্রশাসনিক অঞ্চল|ca|Prefectura de Shizuoka|cdo|Shizuoka-gâing|ce|Сидзуока (префектура)|ceb|Shizuoka-ken|ckb|پارێزگای شیزوئۆکا|cs|Prefektura Šizuoka|cy|Shizuoka (talaith)|da|Shizuoka-præfekturet|de|Präfektur Shizuoka|eo|Gubernio Ŝizuoko|es|Prefectura de Shizuoka|et|Shizuoka prefektuur|eu|Shizuoka (prefektura)|fa|استان شیزوئوکا|fi|Shizuokan prefektuuri|fr|Préfecture de Shizuoka|frr|Shizuoka (Prefektüür)|ga|Maoracht Shizuoka|gl|Prefectura de Shizuoka|hak|Shizuoka-yen|he|שיזואוקה (מחוז)|hi|शिज़ूओका प्रांत|hr|Shizuoka (prefektura)|hu|Sizuoka prefektúra|hy|Սիձուոկա (պրեֆեկտուրա)|id|Prefektur Shizuoka|ilo|Prepektura ti Shizuoka|is|Shizuoka-hérað|it|Prefettura di Shizuoka|ja|静岡県|jv|Préfèktur Shizuoka|ka|სიძუოკის პრეფექტურა|ko|시즈오카현|lt|Šidzuokos prefektūra|lv|Šidzuokas prefektūra|mk|Шизуока (префектура)|mni|ꯁꯤꯓꯨꯑꯣꯀꯥ ꯂꯝꯈꯥꯢ|mr|शिझुओका प्रांत|ms|Wilayah Shizuoka|ne|सिजुओका|nl|Shizuoka (prefectuur)|no|Shizuoka (prefektur)|nov|Shizuoka Prefekture|os|Сидзуокæ (префектурæ)|pl|Prefektura Shizuoka|pnb|ضلع شیزوکا|pt|Shizuoka|ro|Prefectura Shizuoka|ru|Сидзуока (префектура)|rue|Шізуока (префектура)|se|Shizuoka prefektuvra|sh|Prefektura Shizuoka|simple|Shizuoka Prefecture|sk|Šizuoka (prefektúra)|sl|Prefektura Šizuoka|sr|Префектура Шизуока|su|Préféktur Shizuoka|sv|Shizuoka prefektur|sw|Mkoa wa Shizuoka|tg|Префектураи Шизуока|th|จังหวัดชิซูโอกะ|tl|Prepektura ng Shizuoka|tok|ma Sisujoka|tr|Şizuoka (prefektörlük)|tt|Сидзуока (префектура)|uk|Префектура Сідзуока|ur|شیزوکا پریفیکچر|vi|Shizuoka|war|Shizuoka (prefektura)|wuu|静冈县|zh|靜岡縣|zh_classical|靜岡縣|zh_min_nan|Sizuoka-koān|zh_yue|靜岡縣|qid=Q131320|lt=Shizuoka Prefecture}} {{ill|Numazu|en|Numazu|qid=Q241037|lt=Numazu}} in the Nagaura Nagahama area.
+* {{ill|Nagahama Shrine (Izumo)|ja|長浜神社}} - Located in {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}} {{ill|Izumo, Shimane|en|Izumo, Shimane|qid=Q825166|lt=Izumo}} Nishizono Town.
+* {{ill|Nagahama Shrine (Ōita)|ja|長浜神社 (大分市)}} - Located in {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}} {{ill|Ōita (city)|en|Ōita (city)|qid=Q199609|lt=Ōita}} Nagahama Town.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Nagahama Shrine (Q11653315)|lt=Nagahama Shrine|qid=Q11653315}} — Izumo
 * {{ill|Nagahama Shrine (Q135070130)|lt=Nagahama Shrine|qid=Q135070130}} — Izumo Province
 * {{ill|Nagahama Shrine (Q28682890)|lt=Nagahama Shrine|qid=Q28682890}} — Ōita-shi
 * {{ill|長浜神社 (Q134958147)|lt=長浜神社|qid=Q134958147}} — Numazu
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|長浜神社 (曖昧さ回避)|version=102199461|comment=Imported full ja history}}
 
-{{wikidata link|Q131227349|ja|長浜神社 (曖昧さ回避)}}
+{{wikidata link|Q131227349|ja|長浜神社 (曖昧さ回避)|check_date=2026-05-18}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

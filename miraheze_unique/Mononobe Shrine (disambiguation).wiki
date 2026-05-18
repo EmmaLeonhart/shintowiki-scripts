@@ -1,46 +1,42 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Mononobe_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
-'''Mononobe Shrine''' (物部神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} derived from the {{ill|Ancient history|en|Ancient history|qid=Q41493|lt=Ancient|1=Ancient history}}{{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}’s {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan|1=Mononobe clan}}. Shrines bearing this name are distributed over a wide area from {{ill|Eastern Japan|ja|東日本|12=simple|13=User:Immanuelle/Eastern Japan}} to {{ill|Western Japan|ja|西日本|12=simple|13=User:Immanuelle/Western Japan|1=Western Japan|comment=changed title based on wikidata|qid=Q1063946}}. Many of them enshrine as their main deities either {{ill|Umashimaji|ja|ウマシマジ|lt=Umasimaji|lt_ja=宇麻志摩遅命|12=simple|13=User:Immanuelle/Umashimaji}}, the first of the Mononobe clan, or {{ill|Nigihayahi|ja|ニギハヤヒ|lt=Nigihayahi|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi}}, the ancestral deity.
+'''Mononobe Shrine''' (物部神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} derived from the {{ill|Ancient history|en|Ancient history|qid=Q41493|lt=Ancient}}{{ill|Japan|en|Japan|qid=Q17|lt=Japan}}’s {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan}}. Shrines bearing this name are distributed over a wide area from {{ill|Eastern Japan|ja|東日本}} to {{ill|Western Japan|de|Westjapan|ja|西日本|ko|서일본|ru|Западная Япония|uk|Західна Японія|zh|西日本|qid=Q1063946}}. Many of them enshrine as their main deities either {{ill|Umashimaji|ja|ウマシマジ|lt=Umasimaji|lt_ja=宇麻志摩遅命|12=simple|13=User:Immanuelle/Umashimaji}}, the first of the Mononobe clan, or {{ill|Nigihayahi|ja|ニギハヤヒ|lt=Nigihayahi|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi}}, the ancestral deity.
 
 ==Mononobe Shrines in Various Regions==
 ===Chubu Region===
 ;Yamanashi Prefecture  
-*{{ill|Mononobe Shrine (Fuefuki)|ja|物部神社 (笛吹市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Fuefuki)|ja_comment=jawiki link invalid}} - {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}{{ill|Fuefuki|en|Fuefuki|qid=Q849434|lt=Fuefuki City|1=Fuefuki}} (Shikinaisha)
+*{{ill|Mononobe Shrine (Fuefuki)|ja|物部神社 (笛吹市)}} - {{ill|Yamanashi Prefecture|ace|Prefektur Yamanashi|af|Yamanashi-prefektuur|an|Prefectura de Yamanashi|ar|ياماناشي (محافظة)|az|Yamanaşi prefekturası|azb|یاماناشی اوستانی|ban|Préféktur Yamanashi|be|Яманасі (прэфектура)|bg|Яманаши|bn|ইয়ামানাশি প্রশাসনিক অঞ্চল|ca|Prefectura de Yamanashi|cdo|Yamanashi-gâing|ce|Яманаси (префектура)|ceb|Yamanashi-ken|ckb|پارێزگای یاماناشی|cs|Prefektura Jamanaši|cy|Yamanashi (talaith)|da|Yamanashi-præfekturet|de|Präfektur Yamanashi|eo|Gubernio Jamanaŝi|es|Prefectura de Yamanashi|et|Yamanashi prefektuur|eu|Yamanashi (prefektura)|fa|استان یاماناشی|fi|Yamanashin prefektuuri|fr|Préfecture de Yamanashi|frr|Yamanashi (Prefektüür)|ga|Maoracht Yamanashi|gl|Prefectura de Yamanashi|hak|Yamanashi-yen|he|יאמאנאשי (מחוז)|hr|Yamanashi (prefektura)|hu|Jamanasi prefektúra|hy|Յամանասի (պրեֆեկտուրա)|id|Prefektur Yamanashi|ilo|Prepektura ti Yamanashi|it|Prefettura di Yamanashi|ja|山梨県|ka|იამანასის პრეფექტურა|km|យ៉ាម៉ាណាស៊ិ(ខេត្ត)|ko|야마나시현|lt|Jamanašio prefektūra|lv|Jamanasi prefektūra|mk|Јаманаши (префектура)|mni|ꯌꯥꯃꯥꯅꯥꯁꯤ ꯂꯝꯈꯥꯢ|mr|यामानाशी प्रांत|ms|Wilayah Yamanashi|nl|Yamanashi (prefectuur)|no|Yamanashi (prefektur)|os|Яманаси (префектурæ)|pl|Prefektura Yamanashi|pnb|ضلع یاماناشی|pt|Yamanashi|ro|Prefectura Yamanashi|ru|Яманаси (префектура)|se|Yamanashi prefektuvra|sh|Prefektura Jamanashi|si|යමනෂි ප්‍රාන්තය|simple|Yamanashi Prefecture|sk|Jamanaši (prefektúra)|sr|Префектура Јаманаши|su|Préféktur Yamanashi|sv|Yamanashi prefektur|sw|Mkoa wa Yamanashi|te|యమనాషి ప్రిఫెక్చర్|tg|Префектураи Яманаши|th|จังหวัดยามานาชิ|tl|Prepektura ng Yamanashi|tr|Yamanashi|tt|Яманаси (префектура)|uk|Префектура Яманасі|ur|یاماناشی پریفیکچر|vi|Yamanashi|war|Yamanashi (prefektura)|wuu|山梨县|zh|山梨县|zh_classical|山梨縣|zh_min_nan|Yamanasi-koān|zh_yue|山梨縣|qid=Q132720|lt=Yamanashi Prefecture}}{{ill|Fuefuki|ar|فويفوكي (ياماناشي)|azb|فوئه‌فوکی، یاماناشی|ca|Fuefuki|ce|Фуэфуки|ceb|Fuefuki-shi|de|Fuefuki|es|Fuefuki|fa|فوئه‌فوکی، یاماناشی|fi|Fuefuki|fr|Fuefuki|gl|Fuefuki|hy|Ֆուեֆուկի|it|Fuefuki|ja|笛吹市|ko|후에후키시|mzn|فوئه‌فوکی، یاماناشی|nl|Fuefuki|pl|Fuefuki|pt|Fuefuki|ro|Fuefuki|ru|Фуэфуки|sv|Fuefuki|tg|Фуефуки|th|ฟูเอฟูกิ|tl|Fuefuki|tr|Fuefuki|tt|Фуэфуки|tum|Fuefuki|uk|Фуефукі (Яманасі)|ur|فیو فوکی|vi|Fuefuki, Yamanashi|war|Fuefuki, Yamanashi|zh|笛吹市|zh_classical|笛吹市|zh_min_nan|Huehuki-chhī|zh_yue|笛吹|qid=Q849434|lt=Fuefuki City}} (Shikinaisha)
 
 ;Niigata Prefecture  
-*{{ill|Mononobe Shrine (Joetsu)|ja|物部神社 (上越市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Joetsu)|ja_comment=jawiki link invalid}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}{{ill|Jōetsu, Niigata|en|Jōetsu, Niigata|qid=Q582289|lt=Joetsu City|1=Jōetsu, Niigata}} (Shikinaisha)  
-*{{ill|Mononobe Shrine (Kashiwazaki)|ja|物部神社 (柏崎市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Kashiwazaki)|1=Mononobe Shrine (Kashiwazaki)|comment=changed title based on wikidata|qid=Q17219569|1=Mononobe Shrine (Kashiwazaki)}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}{{ill|Kashiwazaki, Niigata|en|Kashiwazaki, Niigata|qid=Q633983|lt=Kashiwazaki City|1=Kashiwazaki, Niigata}} (Shikinaisha)  
-*{{ill|Mononobe Shrine (Sado)|ja|物部神社 (佐渡市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Sado)|ja_comment=jawiki link invalid}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture|1=Niigata Prefecture}}{{ill|Sado, Niigata|en|Sado, Niigata|qid=Q499047|lt=Sado City|1=Sado, Niigata}} (Shikinaisha)
+*{{ill|Mononobe Shrine (Joetsu)|ja|物部神社 (上越市)}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}{{ill|Jōetsu, Niigata|ar|جويتسو (نييغاتا)|azb|جوئتسو، نیقاتا|bg|Йоецу|ce|Дзёэцу|ceb|Jōetsu (lungsod sa Hapon)|cs|Džóecu|de|Jōetsu|eo|Ĝoecu|es|Jōetsu|fa|جوئتسو، نیگاتا|fi|Jōetsu|fr|Jōetsu|ga|Jōetsu|gl|Jōetsu|hy|Ձյոեցու|id|Jōetsu, Niigata|it|Jōetsu|ja|上越市|ko|조에쓰시|mn|Жоэцү|ms|Jōetsu, Niigata|mzn|جوئتسو، نیگاتا|nl|Joetsu|no|Jōetsu|pl|Jōetsu|pt|Joetsu|ro|Jōetsu|ru|Дзёэцу|sh|Jōetsu|simple|Jōetsu, Niigata|sr|Џоецу|sv|Jōetsu, Niigata|tg|Ҷоетсу|th|โจเอ็ตสึ (เมือง)|tl|Joetsu, Niigata|tr|Jōetsu|tt|Дзёэцу|uk|Дзьоецу (Ніїґата)|ur|جوئیتسو، نیگاتا|vi|Jōetsu, Niigata|war|Jōetsu, Niigata|zh|上越市|zh_classical|上越市|zh_min_nan|Zyôetu-chhī|zh_yue|上越|qid=Q582289|lt=Joetsu City}} (Shikinaisha)  
+*{{ill|Mononobe Shrine (Kashiwazaki)|ja|物部神社 (柏崎市)|qid=Q17219569}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}{{ill|Kashiwazaki, Niigata|en|Kashiwazaki, Niigata|qid=Q633983|lt=Kashiwazaki City}} (Shikinaisha)  
+*{{ill|Mononobe Shrine (Sado)|ja|物部神社 (佐渡市)}} - {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}{{ill|Sado, Niigata|en|Sado, Niigata|qid=Q499047|lt=Sado City}} (Shikinaisha)
 
 ;Toyama Prefecture  
-*{{ill|Mononobe Shrine (Takaoka)|ja|物部神社 (高岡市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Takaoka)|ja_comment=jawiki link invalid}} - {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}}{{ill|Takaoka, Toyama|en|Takaoka, Toyama|qid=Q502988|lt=Takaoka City|1=Takaoka, Toyama}} (Shikinaisha)
+*{{ill|Mononobe Shrine (Takaoka)|ja|物部神社 (高岡市)}} - {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture}}{{ill|Takaoka, Toyama|en|Takaoka, Toyama|qid=Q502988|lt=Takaoka City}} (Shikinaisha)
 
 ;Aichi Prefecture  
-*{{ill|Mononobe Shrine (Nagoya)|ja|物部神社 (名古屋市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Nagoya)|1=Mononobe Shrine (Higashi-ku, Nagoya)|comment=changed title based on wikidata|qid=Q18235752}} - {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}{{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya City|1=Nagoya}}{{ill|Higashi-ku, Nagoya|en|Higashi-ku, Nagoya|qid=Q578824|lt=Higashi Ward|1=Higashi-ku, Nagoya}} (Shikinaisha)
+*{{ill|Mononobe Shrine (Higashi-ku, Nagoya)|ja|物部神社 (名古屋市)|12=simple|13=User:Immanuelle/Mononobe Shrine (Nagoya)|comment=changed title based on wikidata|qid=Q18235752}} - {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}{{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya City}}{{ill|Higashi-ku, Nagoya|en|Higashi-ku, Nagoya|qid=Q578824|lt=Higashi Ward}} (Shikinaisha)
 
 ===Kinki Region===
 ;Shiga Prefecture  
-*{{ill|Katsube Shrine|ja|勝部神社|12=simple|13=User:Immanuelle/Katsube Shrine}} (formerly known as Mononobe Shrine) - {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}{{ill|Moriyama, Shiga|en|Moriyama, Shiga|qid=Q857225|lt=Moriyama City|1=Moriyama, Shiga}} (head shrine of the former Mononobe District)
+*{{ill|Katsube Shrine|ja|勝部神社}} (formerly known as Mononobe Shrine) - {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}}{{ill|Moriyama, Shiga|en|Moriyama, Shiga|qid=Q857225|lt=Moriyama City}} (head shrine of the former Mononobe District)
 
 ;Kyoto Prefecture  
-*{{ill|Mononobe Shrine (Yosano)|ja|物部神社 (与謝野町)|12=simple|13=User:Immanuelle/Mononobe Shrine (Yosano)|ja_comment=jawiki link invalid}} - {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}{{ill|Yosa District, Kyoto|en|Yosa District, Kyoto|qid=Q1078639|lt=Yosa District|1=Yosa District, Kyoto}}{{ill|Yosano, Kyoto|en|Yosano, Kyoto|qid=Q1203259|lt=Yosano Town|1=Yosano, Kyoto}} (Shikinaisha)
+*{{ill|Mononobe Shrine (Yosano)|ja|物部神社 (与謝野町)}} - {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Yosa District, Kyoto|en|Yosa District, Kyoto|qid=Q1078639|lt=Yosa District}}{{ill|Yosano, Kyoto|en|Yosano, Kyoto|qid=Q1203259|lt=Yosano Town}} (Shikinaisha)
 
 ===Chugoku Region===
 ;Shimane Prefecture  
-*{{ill|Mononobe Shrine|en|Mononobe Shrine|qid=Q11570699|lt=Mononobe Shrine|1=Mononobe Shrine (Oda)}} - {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}{{ill|Ōda, Shimane|en|Ōda, Shimane|qid=Q384796|lt=Oda City|1=Ōda, Shimane}} (Shikinaisha, Ichinomiya of Iwami Province, Beppyo Shrine)
+*{{ill|Mononobe Shrine (Oda)|en|Mononobe Shrine|qid=Q11570699|lt=Mononobe Shrine}} - {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}{{ill|Ōda, Shimane|ar|أودا (شيمانه)|azb|اودا، شیمانه|bg|Ода (Шимане)|ca|Ōda|ce|Ода (гӀала)|ceb|Ōdachō-ōda|de|Ōda|es|Ōda (Shimane)|eu|Ōda (Shimane)|fa|اودا، شیمانه|fi|Ōda|fr|Ōda|gl|Ōda|id|Ōda, Shimane|it|Ōda|ja|大田市|ko|오다시|mg|Ōdachō-ōda|mzn|اودا، شیمانه|nl|Oda (Shimane)|pl|Oda (Japonia)|pt|Ōda|ro|Ōda|ru|Ода (город)|sv|Ōda, Shimane|tg|Ода|tl|Ōda, Shimane|tr|Ōda|tt|Ода (шәһәр)|uk|Ода (Сімане)|ur|اوڈا، شیمانے|vi|Ōda, Shimane|war|Ōda, Shimane|zh|大田市|zh_classical|大田市|zh_min_nan|Ôda-chhī|zh_yue|大田市|qid=Q384796|lt=Oda City}} (Shikinaisha, Ichinomiya of Iwami Province, Beppyo Shrine)
 == External Links ==
 * [http://www.mononobe-jinja.jp/ 物部神社]
 
 {{Isonokami Faith}}
 {{shinto-stub}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Mononobe Jinja (Q139661014)|lt=Mononobe Jinja|qid=Q139661014}} — Hikari
 * {{ill|Mononobe Shrine (Q11570699)|lt=Mononobe Shrine|qid=Q11570699}} — Iwami Province
-* {{ill|Mononobe Shrine (Q17219569)|lt=Mononobe Shrine|qid=Q17219569}} — Kashiwazaki
+* {{ill|Mononobe Shrine (Q17219569)|ja|物部神社 (柏崎市)|qid=Q17219569|lt=Mononobe Shrine}} — Kashiwazaki
 * {{ill|Mononoheno Shrine (Q135039323)|lt=Mononoheno Shrine|qid=Q135039323}} — Ise Province
 * {{ill|Mononoheno Shrine (Q135039556)|lt=Mononoheno Shrine|qid=Q135039556}} — Owari Province
 * {{ill|Mononoheno Shrine (Q135040361)|lt=Mononoheno Shrine|qid=Q135040361}} — Imizu district
@@ -53,12 +49,11 @@
 * {{ill|物部神社 (Q135460947)|lt=物部神社|qid=Q135460947}} — Jōetsu-shi
 * {{ill|物部神社 (Q135464389)|lt=物部神社|qid=Q135464389}} — Kashiwazaki
 * {{ill|物部神社 (Q135464663)|lt=物部神社|qid=Q135464663}} — Kashiwazaki
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|物部神社|version=103532942|comment=Imported full ja history}}
 
 {{Commons category|Mononobe-jinja}}
-{{wikidata link|Q11570698|co|commons:Category:Mononobe-jinja|ja|物部神社|zh|物部神社}}
+{{wikidata link|Q11570698|co|commons:Category:Mononobe-jinja|ja|物部神社|zh|物部神社|check_date=2026-05-18}}
 [[Category:Mononobe clan]]
 [[Category:Mononobe_clan]]
 [[Category:Shinto shrines by tradition]]

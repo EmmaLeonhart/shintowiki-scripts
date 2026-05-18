@@ -1,89 +1,20 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Mountain_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
+'''Mountain Shrine''' (山神社) is a [[Shinto shrine]] name used in various places throughout Japan.
 
-'''Mountain Shrine''' (山神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} in {{ill|Japan|en|Japan|qid=Q17|lt=Japan|1=Japan}}, located in various places throughout the country.
+{{disambiguation}}
 
-== Shōshoi ==
-* Located in {{ill|Kamaishi, Iwate|en|Kamaishi, Iwate|qid=Q329790|lt=Kamaishi, Iwate|1=Kamaishi, Iwate}}, Iwate Prefecture. Official name: {{ill|Kamaishi Steelworks Mountain Shrine|ja|釜石製鐵所山神社|12=simple|13=User:Immanuelle/Kamaishi Steelworks Mountain Shrine|1=Nippon Steel Corporation North Nippon Works San Shrine|comment=changed title based on wikidata|qid=Q60988202}}.
-* Located in Uguisuzawa, {{ill|Kurihara, Miyagi|en|Kurihara, Miyagi|qid=Q469189|lt=Kurihara, Miyagi|1=Kurihara, Miyagi}}, Miyagi Prefecture.
-* Located in Ōme, Kawaminami-shimo, Wakayanagi, Kurihara, Miyagi Prefecture.
-* Located in Ōmori, Kamihataoka, Wakayanagi, Kurihara, Miyagi Prefecture.
-* Located in Ōzawa, Ichihasama, Kurihara, Miyagi Prefecture.
-* Located in Minamisawa, Shimizume, Ichihasama, Kurihara, Miyagi Prefecture.
-* Located in Kurikoma, Kurihara, Miyagi Prefecture. Commonly referred to as {{ill|Sakurada Mountain Shrine|ja|櫻田山神社|12=simple|13=User:Immanuelle/Sakurada Mountain Shrine|1=Sakuradasan Shrine|comment=changed title based on wikidata|qid=Q11544837}}.
-* Located in Ōmuro, Jūsan-hama, Kitakami, {{ill|Ishinomaki|en|Ishinomaki|qid=Q270814|lt=Ishinomaki, Miyagi|1=Ishinomaki}}, Miyagi Prefecture.
-* Located in Kotaki, Jūsan-hama, Kitakami, Ishinomaki, Miyagi Prefecture.
-* Located in {{ill|Shibata, Miyagi|en|Shibata, Miyagi|qid=Q1204965|lt=Shibata, Miyagi|1=Shibata, Miyagi}}, Shibata District, Miyagi Prefecture.
-* Located in {{ill|Watari, Miyagi|en|Watari, Miyagi|qid=Q1205296|lt=Watari, Miyagi|1=Watari, Miyagi}}, Watari District, Miyagi Prefecture.
-* Located in {{ill|Shinjō, Yamagata|en|Shinjō, Yamagata|qid=Q840603|lt=Shinjō, Yamagata|1=Shinjō, Yamagata}}, Yamagata Prefecture. There are four such shrines within the city.
-* Located in {{ill|Kaneyama, Yamagata|ja|金山町|12=simple|13=User:Immanuelle/Kaneyama, Yamagata|1=Q126087225|comment=changed title based on wikidata|qid=Q126087225}}, Mogami District, Yamagata Prefecture. There are 12 in the town.
-* Located in {{ill|Mogami, Yamagata|en|Mogami, Yamagata|qid=Q1348209|lt=Mogami, Yamagata|1=Mogami, Yamagata}}, Mogami District, Yamagata Prefecture. There are 2 in the town.
-* Located in {{ill|Funagata, Yamagata|en|Funagata, Yamagata|qid=Q1347342|lt=Funagata, Yamagata|1=Funagata, Yamagata}}, Mogami District, Yamagata Prefecture. There are 2 in the town.
-* Located in {{ill|Mamurogawa|en|Mamurogawa|qid=Q1349021|lt=Mamurogawa, Yamagata|1=Mamurogawa}}, Mogami District, Yamagata Prefecture. There are 19 in the town.
-* Located in {{ill|Sakegawa|en|Sakegawa|qid=Q1347420|lt=Sakegawa, Yamagata|1=Sakegawa}}, Mogami District, Yamagata Prefecture. There are 2 in the village.
-* Located in {{ill|Tozawa, Yamagata|en|Tozawa, Yamagata|qid=Q593586|lt=Tozawa, Yamagata|1=Tozawa, Yamagata}}, Mogami District, Yamagata Prefecture. There are 9 in the village.
-* Located in Ichiriyama Kanayama, {{ill|Kariya, Aichi|en|Kariya, Aichi|qid=Q389515|lt=Kariya, Aichi|1=Kariya, Aichi}}, Aichi Prefecture.
-* Located in {{ill|Shirahama, Wakayama|en|Shirahama, Wakayama|qid=Q1202728|lt=Shirahama, Wakayama|1=Shirahama, Wakayama}}, Nishimuro District, Wakayama Prefecture.
-* Located in Minase, {{ill|Yamakawa, Tokushima|ja|山川町|12=simple|13=User:Immanuelle/Yamakawa, Tokushima|1=Q1207382|comment=changed title based on wikidata|qid=Q1207382}}, {{ill|Yoshinogawa, Tokushima|en|Yoshinogawa, Tokushima|qid=Q592500|lt=Yoshinogawa, Tokushima|1=Yoshinogawa, Tokushima}}, Tokushima Prefecture. See also {{ill|Kamizuki Shrine|ja|紙漉神社|12=simple|13=User:Immanuelle/Kamizuki Shrine|qq=}}.
-* Located in Higashino 3-chome, {{ill|Matsuyama|en|Matsuyama|qid=Q200022|lt=Matsuyama, Ehime|1=Matsuyama}}, Ehime Prefecture.
-
-== Yamajinja ==
-* Located in {{ill|Kitaakita|en|Kitaakita|qid=Q653545|lt=Kitaakita, Akita|1=Kitaakita}}, Akita Prefecture. Former Village shrine.
-* Located in Mogami, Yamagata Prefecture. Two locations in town.
-* Located in {{ill|Mikawa, Yamagata|en|Mikawa, Yamagata|qid=Q1347453|lt=Mikawa, Yamagata|1=Mikawa, Yamagata}}, Higashitagawa District, Yamagata Prefecture.
-* Located in {{ill|Yamagata (city)|en|Yamagata (city)|qid=Q205526|lt=Yamagata, Yamagata|1=Yamagata (city)}}, Yamagata Prefecture. Two locations. Additionally, three Mountain God Shrines exist.
-* Located in {{ill|Sagae|en|Sagae|qid=Q823955|lt=Sagae, Yamagata|1=Sagae}}, Yamagata Prefecture.
-* Located in {{ill|Murayama, Yamagata|en|Murayama, Yamagata|qid=Q858008|lt=Murayama, Yamagata|1=Murayama, Yamagata}}, Yamagata Prefecture. Two locations.
-* Located in {{ill|Tendō, Yamagata|en|Tendō, Yamagata|qid=Q385779|lt=Tendō, Yamagata|1=Tendō, Yamagata}}, Yamagata Prefecture.
-* Located in {{ill|Higashine|en|Higashine|qid=Q823927|lt=Higashine, Yamagata|1=Higashine}}, Yamagata Prefecture. Three locations.
-* Located in {{ill|Obanazawa|en|Obanazawa|qid=Q846342|lt=Obanazawa, Yamagata|1=Obanazawa}}, Yamagata Prefecture. Three locations.
-* Located in {{ill|Asahi, Yamagata|ja|朝日町|12=simple|13=User:Immanuelle/Asahi, Yamagata|1=Q1206007|comment=changed title based on wikidata|qid=Q1206007}}, Nishimurayama District, Yamagata Prefecture. Another Mountain God Shrine is present.
-* Located in Ōe, Nishimurayama District, Yamagata Prefecture.
-* Located in {{ill|Shirataka|en|Shirataka|qid=Q1354787|lt=Shirataka, Yamagata|1=Shirataka}}, Nishiokitama District, Yamagata Prefecture. Three locations.
-* Located in {{ill|Kimitsu|en|Kimitsu|qid=Q637928|lt=Kimitsu, Chiba|1=Kimitsu}}, Chiba Prefecture. Former Village shrine.
-* {{ill|Mountain Shrine (Utsunomiya)|ja|山神社 (宇都宮市)|12=simple|13=User:Immanuelle/Mountain Shrine (Utsunomiya)|1=Yama Shrine|comment=changed title based on wikidata|qid=Q11470797}} – Located in {{ill|Utsunomiya|en|Utsunomiya|qid=Q200589|lt=Utsunomiya, Tochigi|1=Utsunomiya}}, Tochigi Prefecture.
-* Located in Sakura-ga-oka, {{ill|Tama, Tokyo|en|Tama, Tokyo|qid=Q213263|lt=Tama, Tokyo|1=Tama, Tokyo}}, Tokyo.
-* Located in Araya, {{ill|Fujiyoshida|en|Fujiyoshida|qid=Q647508|lt=Fujiyoshida, Yamanashi|1=Fujiyoshida}}, Yamanashi Prefecture. See also {{ill|Araya Mountain Shrine|ja|新屋山神社|12=simple|13=User:Immanuelle/Araya Mountain Shrine|1=Araya Yama Shrine|comment=changed title based on wikidata|qid=Q106388142}}.
-* Located in Tashirochō, {{ill|Chikusa-ku, Nagoya|en|Chikusa-ku, Nagoya|qid=Q1207951|lt=Chikusa-ku, Nagoya|1=Chikusa-ku, Nagoya}}, Nagoya. Former Village shrine.
-* Located in Matsubara, {{ill|Central District|en|Central District|qid=Q3710518|lt=Naka-ku, Nagoya|1=Central District}}, Nagoya. Former Village shrine.
-* Located in Yasui, {{ill|北區|en|北區|qid=Q1180096|lt=Kita-ku, Nagoya|1=北區}}, Nagoya.
-* {{ill|Mountain Shrine (Toyooka)|ja|山神社 (豊岡市)|12=simple|13=User:Immanuelle/Mountain Shrine (Toyooka)|1=Yama Shrine|comment=changed title based on wikidata|qid=Q21655261}} – Located in {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka, Hyōgo|1=Toyooka, Hyōgo}}, Hyōgo Prefecture. One of the {{ill|Myōjin Taisha|ja|名神大社|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}}.
-* Located in Hagiwara, Matsuyama, Ehime Prefecture.
-* {{ill|Mountain Shrine (Shinkamigotō)|ja|山神社 (新上五島町)|12=simple|13=User:Immanuelle/Mountain Shrine (Shinkamigotō)|1=Yama Shrine|comment=changed title based on wikidata|qid=Q11470799}} – Located in {{ill|Shin-Kamigotō|en|Shin-Kamigotō|qid=Q1206790|lt=Shinkamigotō, Nagasaki|1=Shin-Kamigotō}}, Minamimatsuura District, Nagasaki Prefecture.
-* Located in Hirouchi, {{ill|Ōita (city)|en|Ōita (city)|qid=Q199609|lt=Ōita, Ōita|1=Ōita (city)}}, Ōita Prefecture.
-
-== Yama no Kamisha ==
-* {{ill|Mountain Shrine (Misato, Miyagi)|ja|山神社 (美里町)|12=simple|13=User:Immanuelle/Mountain Shrine (Misato, Miyagi)|1=Yama-no-Kami Shrine|comment=changed title based on wikidata|qid=Q17224192}} – Located in {{ill|Misato, Miyagi|ja|美里町|12=simple|13=User:Immanuelle/Misato, Miyagi|1=Q11609412|comment=changed title based on wikidata|qid=Q11609412}}, Tōda District, Miyagi Prefecture. {{ill|Former Village shrine|ja|旧郷社|12=simple|13=User:Immanuelle/Former Village shrine|ja_comment=jawiki redirects to 近代社格制度|1=Modern system of ranked Shinto shrines|comment=changed title based on wikidata|qid=Q712534}}.
-* {{ill|Mountain Shrine (Chūō, Yamanashi)|ja|山神社 (中央市)|12=simple|13=User:Immanuelle/Mountain Shrine (Chūō, Yamanashi)|1=Yama Shrine|comment=changed title based on wikidata|qid=Q22120748}} – Located in {{ill|Chūō, Yamanashi|en|Chūō, Yamanashi|qid=Q666049|lt=Chūō, Yamanashi|1=Chūō, Yamanashi}}, Yamanashi Prefecture.
-* Located in Chita, {{ill|Minato-ku, Nagoya|en|Minato-ku, Nagoya|qid=Q1207982|lt=Minato-ku, Nagoya|1=Minato-ku, Nagoya}}, Nagoya. Former Village shrine.
-* Located in Nishimarune, Ōdaka-chō, {{ill|Midori-ku, Nagoya|en|Midori-ku, Nagoya|qid=Q1155209|lt=Midori-ku, Nagoya|1=Midori-ku, Nagoya}}, Nagoya. Former Village shrine.
-* Located in Setogawa-chō, {{ill|Owariasahi|en|Owariasahi|qid=Q694893|lt=Owariasahi, Aichi|1=Owariasahi}}, Aichi Prefecture.
-* Located in Yamano-kami-chō, {{ill|Handa, Aichi|en|Handa, Aichi|qid=Q463171|lt=Handa, Aichi|1=Handa, Aichi}}, Aichi Prefecture. Written as "Yama no Jinja" (山之神社).
-* Located in Tenno-chō, Handa, Aichi Prefecture.
-* Located in Yanabehigashimachi, Handa, Aichi Prefecture.
-* Located in Yama no Kami, {{ill|Taketoyo|en|Taketoyo|qid=Q1203232|lt=Taketoyo, Aichi|1=Taketoyo}}, Chita District, Aichi Prefecture. Written as "Yama no Jinja" (山ノ神社).
-
-In the Tōkai region, most of these are small shrines, but there are a large number overall, especially when including shrine precinct shrines.
-
-== Yamagamisha ==
-* Located in Yamakamichō, {{ill|Hekinan|en|Hekinan|qid=Q495802|lt=Hekinan, Aichi|1=Hekinan}}, Aichi Prefecture.
-
-{{ill|Disambiguation|ja|曖昧さ回避|12=simple|13=User:Immanuelle/Disambiguation|ja_comment=jawiki redirects to Wikipedia:曖昧さ回避|1=Wikipedia:Disambiguation|comment=changed title based on wikidata|qid=Q118521146}}
-
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Dotoku Yama Shrine (Q104450582)|lt=Dotoku Yama Shrine|qid=Q104450582}} — Dōtoku-tōri
-* {{ill|San Shrine (Q111024530)|lt=San Shrine|qid=Q111024530}} — Ichihara
-* {{ill|San Shrine (Q134595536)|lt=San Shrine|qid=Q134595536}} — Minamiboso
-* {{ill|San Shrine (Q134956236)|lt=San Shrine|qid=Q134956236}} — Fuji
-* {{ill|San Shrine (Q134956238)|lt=San Shrine|qid=Q134956238}} — Fuji
-* {{ill|San Shrine (Q134956239)|lt=San Shrine|qid=Q134956239}} — Fuji
-* {{ill|San Shrine (Q134956549)|lt=San Shrine|qid=Q134956549}} — Fuji
-* {{ill|San Shrine (Q134956550)|lt=San Shrine|qid=Q134956550}} — Fuji
-* {{ill|San Shrine (Q134956551)|lt=San Shrine|qid=Q134956551}} — Fuji
-* {{ill|San Shrine (Q134956552)|lt=San Shrine|qid=Q134956552}} — Fuji
-* {{ill|San Shrine (Q134956744)|lt=San Shrine|qid=Q134956744}} — Aoi-ku
+* {{ill|San Shrine (Q111024530)|qid=Q111024530|lt=San Shrine}} — Ichihara
+* {{ill|San Shrine (Q134595536)|qid=Q134595536|lt=San Shrine}} — Minamiboso
+* {{ill|San Shrine (Q134956236)|qid=Q134956236|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956238)|qid=Q134956238|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956239)|qid=Q134956239|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956549)|qid=Q134956549|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956550)|qid=Q134956550|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956551)|qid=Q134956551|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956552)|qid=Q134956552|lt=San Shrine}} — Fuji
+* {{ill|San Shrine (Q134956744)|qid=Q134956744|lt=San Shrine}} — Aoi-ku
 * {{ill|San Shrine (Q134956863)|lt=San Shrine|qid=Q134956863}} — Fuji
 * {{ill|San Shrine (Q134956864)|lt=San Shrine|qid=Q134956864}} — Fuji
 * {{ill|San Shrine (Q134956865)|lt=San Shrine|qid=Q134956865}} — Fuji
@@ -164,11 +95,10 @@ In the Tōkai region, most of these are small shrines, but there are a large num
 * {{ill|Yama Shrine (Q21655261)|lt=Yama Shrine|qid=Q21655261}} — Tajima Province
 * {{ill|Yama Shrine (Q22120748)|lt=Yama Shrine|qid=Q22120748}} — Chūō-shi
 * {{ill|Yama-no-Kami Shrine (Q17224192)|lt=Yama-no-Kami Shrine|qid=Q17224192}} — Misato
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|山神社|version=103552149|comment=Imported full ja history}}
 
-{{wikidata link|Q11470798|ja|山神社}}
+{{wikidata link|Q11470798|ja|山神社|check_date=2026-05-18}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

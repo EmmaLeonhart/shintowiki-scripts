@@ -1,51 +1,48 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Nakatsu_Daijing%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 {{Infobox religious building|
 | name = Nakatsu Daijingu
 | religious_affiliation = [[Shinto]]
 |image = File:Nakatsu Daijingu ac (1).jpg
-| location = {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu|1=Nakatsu, Ōita}}, Ni-no-chō 1273-1, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture|1=Ōita Prefecture}}
+| location = {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu}}, Ni-no-chō 1273-1, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}}
 | coordinates = {{Coord|33.606417|N|131.185917}}
-| deity = {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami|1=Amaterasu}}<br />{{ill|Toyouke-Ōmikami|ja|豊受大御神|12=simple|13=User:Immanuelle/Toyouke-Ōmikami|ja_comment=jawiki redirects to トヨウケビメ|1=Toyouke-hime|comment=changed title based on wikidata|qid=Q2983724}}<br />{{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<br />{{ill|Ame-no-Uzume|ja|天宇豆売命|12=simple|13=User:Immanuelle/Ame-no-Uzume|ja_comment=jawiki link invalid}}
+| deity = {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}<br />{{ill|Toyouke-hime|ja|豊受大御神|12=simple|13=User:Immanuelle/Toyouke-Ōmikami|ja_comment=jawiki redirects to トヨウケビメ|comment=changed title based on wikidata|qid=Q2983724}}<br />{{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}<br />{{ill|Ame-no-Uzume|ja|天宇豆売命}}
 | type = Former Village Shrine
 | consecration_year = 1881 (Meiji 14)
-| Main Hall Style = {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}}<ref name="Nakatsu Daijingu About">[http://nakatsudaijinguu.jp/about.html About Nakatsu Daijingu] Nakatsu Daijingu</ref>
+| Main Hall Style = {{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545|lt=Shinmei-zukuri}}<ref name="Nakatsu Daijingu About">[http://nakatsudaijinguu.jp/about.html About Nakatsu Daijingu] Nakatsu Daijingu</ref>
 | religious_affiliation = [[Shinto]]
-| location = {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu|1=Nakatsu, Ōita}}, Ni-no-chō 1278-10, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture|1=Ōita Prefecture}}
-| deity = {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}<br />{{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin|1=Emperor Ōjin}}<br />{{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku|1=Emperor Nintoku}}
+| location = {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu}}, Ni-no-chō 1278-10, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}}
+| deity = {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}<br />{{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997|lt=Emperor Ōjin}}<br />{{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}}
 | type = Former Village Shrine
 | consecration_year = 1883 (Meiji 16)
-| location = {{ill|Nakatsu|qid=Q861221|1=Nakatsu, Ōita}}
+| location = {{ill|Nakatsu, Ōita|qid=Q861221}}
 }}
 
-'''Nakatsu Daijingu''' (中津大神宮) and '''Nakatsu Shrine''' (中津神社) are Shinto shrines located in Ni-no-chō, {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu|1=Nakatsu, Ōita}}, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture|1=Ōita Prefecture}}. Both shrines hold the status of former village shrines under the pre-modern shrine Ranking system.
+'''Nakatsu Daijingu''' (中津大神宮) and '''Nakatsu Shrine''' (中津神社) are Shinto shrines located in Ni-no-chō, {{ill|Nakatsu, Ōita|en|Nakatsu, Ōita|qid=Q861221|lt=Nakatsu}}, {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}}. Both shrines hold the status of former village shrines under the pre-modern shrine Ranking system.
 
 == Enshrined Deities ==
 ; Nakatsu Daijingu<ref name="Nakatsu Daijingu About"/>
-* {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami|1=Amaterasu}}
-* {{ill|Toyouke-Ōmikami|ja|豊受大御神|12=simple|13=User:Immanuelle/Toyouke-Ōmikami|ja_comment=jawiki redirects to トヨウケビメ|1=Toyouke-hime|comment=changed title based on wikidata|qid=Q2983724}}
-* {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}
-* {{ill|Ame-no-Uzume|ja|天宇豆売命|12=simple|13=User:Immanuelle/Ame-no-Uzume|ja_comment=jawiki link invalid}}
+* {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}
+* {{ill|Toyouke-hime|ja|豊受大御神|12=simple|13=User:Immanuelle/Toyouke-Ōmikami|ja_comment=jawiki redirects to トヨウケビメ|comment=changed title based on wikidata|qid=Q2983724}}
+* {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}
+* {{ill|Ame-no-Uzume|ja|天宇豆売命}}
 
 ; Nakatsu Shrine<ref name="Nakatsu Shrine About">[http://nakatsudaijinguu.jp/nakatsujinjya.html About Nakatsu Shrine] Nakatsu Daijingu</ref>
-* {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}
-* {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin|1=Emperor Ōjin}}
-* {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku|1=Emperor Nintoku}}
+* {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}
+* {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997|lt=Emperor Ōjin}}
+* {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}}
 : Plus 13 other deities
 
 == History ==
 === Nakatsu Castle in the Meiji Restoration Period ===
 [[File:中津城Tenshu.jpg|thumb|right|Nakatsu Castle’s reconstructed tenshu]]
 
-In August 1863 (Bunkyū 3), the southern part of Nakatsu Castle’s main keep was developed into the “Pine Palace,” which housed princesses returning from the domain’s Edo residence.<ref name="Pine Palace Info">Informational Signboard “Pine Palace,” Nakatsu City, Historical Society of Nakatsu</ref> After the 1871 (Meiji 4) {{ill|Abolition of the han system|en|Abolition of the han system|qid=Q331905|lt=Abolition of the han system|1=Abolition of the han system}}, the Pine Palace was repurposed as the Nakatsu City Hall under the {{ill|Kokura Prefecture|en|Kokura Prefecture|qid=Q5765997|lt=Kokura Prefecture|1=Kokura Prefecture}} administration and later served as the Nakatsu Branch of Ōita Prefecture.<ref name="Pine Palace Info"/>
+In August 1863 (Bunkyū 3), the southern part of Nakatsu Castle’s main keep was developed into the “Pine Palace,” which housed princesses returning from the domain’s Edo residence.<ref name="Pine Palace Info">Informational Signboard “Pine Palace,” Nakatsu City, Historical Society of Nakatsu</ref> After the 1871 (Meiji 4) {{ill|Abolition of the han system|en|Abolition of the han system|qid=Q331905|lt=Abolition of the han system}}, the Pine Palace was repurposed as the Nakatsu City Hall under the {{ill|Kokura Prefecture|en|Kokura Prefecture|qid=Q5765997|lt=Kokura Prefecture}} administration and later served as the Nakatsu Branch of Ōita Prefecture.<ref name="Pine Palace Info"/>
 
-During the {{ill|Satsuma Rebellion|en|Satsuma Rebellion|qid=Q714820|lt=Satsuma Rebellion|1=Satsuma Rebellion}}, dissatisfied samurai from the former Nakatsu Domain formed the {{ill|Nakatsu Corps|ja|中津隊|12=simple|13=User:Immanuelle/Nakatsu Corps|1=Q11366514|comment=changed title based on wikidata|qid=Q11366514}} and burned the Pine Palace on March 31, 1877.<ref name="Pine Palace Info"/>
+During the {{ill|Satsuma Rebellion|en|Satsuma Rebellion|qid=Q714820|lt=Satsuma Rebellion}}, dissatisfied samurai from the former Nakatsu Domain formed the {{ill|Q11366514|ja|中津隊|12=simple|13=User:Immanuelle/Nakatsu Corps|comment=changed title based on wikidata|qid=Q11366514}} and burned the Pine Palace on March 31, 1877.<ref name="Pine Palace Info"/>
 
 === Establishment of Nakatsu Daijingu and Nakatsu Shrine ===
 [[File:Nakatsu Daijingu ac (2).jpg|thumb|Torii of Nakatsu Shrines]]
 
-Nakatsu Daijingu was established in 1881 (Meiji 14) as the Buzen Shrine Association, enshrining spirits from {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}. Initially, it served as a center for pilgrims from the Buzen region, distributing {{ill|Jingū taima|en|Jingū taima|qid=Q11589469|lt=Ise talismans|1=Jingū taima}} and calendars.<ref name="Nakatsu Daijingu About"/> It underwent several name changes before being renamed Nakatsu Daijingu in 1946.
+Nakatsu Daijingu was established in 1881 (Meiji 14) as the Buzen Shrine Association, enshrining spirits from {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. Initially, it served as a center for pilgrims from the Buzen region, distributing {{ill|Jingū taima|en|Jingū taima|qid=Q11589469|lt=Ise talismans}} and calendars.<ref name="Nakatsu Daijingu About"/> It underwent several name changes before being renamed Nakatsu Daijingu in 1946.
 
 Nakatsu Shrine was established in 1883 (Meiji 16) on the former site of the Pine Palace. It consolidated deities from six local shrines, including Rokusho Shrine, Maruyama Shrine, and Hachiman Ōe Shrine.<ref name="Nakatsu Shrine About"/>
 
@@ -58,14 +55,14 @@ The grounds feature several notable monuments:<ref name="Grounds Overview">[http
 * “Kyōji Shinmei Monument”<ref name="Grounds Overview"/>
 * “Imperial Accession Memorial”<ref name="Grounds Overview"/>
 * “Russo-Japanese War Shell Monument”<ref name="Grounds Overview"/>
-* {{ill|Matsuo Bashō|en|Matsuo Bashō|qid=Q5676|lt=Matsuo Bashō|1=Matsuo Bashō}} Haiku Monument<ref name="Grounds Overview"/>
-* Kii Shrine - Enshrines {{ill|Kii Tadamune|ja|城井鎮房|12=simple|13=User:Immanuelle/Kii Tadamune|1=Utsunomiya Shigefusa|comment=changed title based on wikidata|qid=Q11425978}}, a lord assassinated at Nakatsu Castle by {{ill|Kuroda Nagamasa|en|Kuroda Nagamasa|qid=Q950496|lt=Kuroda Nagamasa|1=Kuroda Nagamasa}}.<ref name="Grounds Overview"/>
+* {{ill|Matsuo Bashō|en|Matsuo Bashō|qid=Q5676|lt=Matsuo Bashō}} Haiku Monument<ref name="Grounds Overview"/>
+* Kii Shrine - Enshrines {{ill|Utsunomiya Shigefusa|ja|城井鎮房|12=simple|13=User:Immanuelle/Kii Tadamune|comment=changed title based on wikidata|qid=Q11425978}}, a lord assassinated at Nakatsu Castle by {{ill|Kuroda Nagamasa|en|Kuroda Nagamasa|qid=Q950496|lt=Kuroda Nagamasa}}.<ref name="Grounds Overview"/>
 * Senjō Shrine - Dedicated to 45 retainers of Kii Tadamune.<ref name="Grounds Overview"/>
 * Kotohira Shrine - Dedicated to the deity of maritime safety.<ref name="Grounds Overview"/>
 
 == Festivals ==
-{{main|{{ill|Nakatsu Gion Festival|ja|中津祇園|12=simple|13=User:Immanuelle/Nakatsu Gion Festival}}}}
-Nakatsu Gion, held annually in late July, features {{ill|Mikoshi|en|Mikoshi|qid=Q979940|lt=Mikoshi|1=Mikoshi}} and {{ill|Matsuri float|en|Matsuri float|qid=Q11470974|lt=Yamahoko|1=Matsuri float}} processions. The festival is centered on Yasaka Shrine (a subsidiary of {{ill|Yamami Shrine|ja|闇無濱神社|12=simple|13=User:Immanuelle/Yamami Shrine|ja_comment=jawiki redirects to 闇無浜神社|1=Kuranashihama Shrine|comment=changed title based on wikidata|qid=Q130214370}}) and Nakatsu Shrine, collectively known as Nakatsu Gion. Records trace its origins to 1430 (Eikyō 2). Nakatsu Gion is considered one of the “Three Great Festivals of Buzen” and “Three Major Gion Festivals of Ōita Prefecture.”<ref name="Nakatsu Gion History">[https://nakatsu-gion.com/rekishi/ About Nakatsu Gion] Nakatsu Gion</ref> It was designated a {{ill|Ōita Prefecture Selected Intangible Folk Cultural Property|ja|大分県選択無形民俗文化財|12=simple|13=User:Immanuelle/Ōita Prefecture Selected Intangible Folk Cultural Property|ja_comment=jawiki link invalid}} in 1962 (Shōwa 37) and upgraded to a Prefectural Intangible Folk Cultural Property in 2004.<ref name="#1">[https://www.city-nakatsu.jp/doc/2011100115127/ Prefectural Cultural Properties] Nakatsu City</ref>
+{{main|{{ill|Nakatsu Gion Festival|ja|中津祇園}}}}
+Nakatsu Gion, held annually in late July, features {{ill|Mikoshi|en|Mikoshi|qid=Q979940|lt=Mikoshi}} and {{ill|Matsuri float|en|Matsuri float|qid=Q11470974|lt=Yamahoko}} processions. The festival is centered on Yasaka Shrine (a subsidiary of {{ill|Kuranashihama Shrine|ja|闇無濱神社|12=simple|13=User:Immanuelle/Yamami Shrine|ja_comment=jawiki redirects to 闇無浜神社|comment=changed title based on wikidata|qid=Q130214370}}) and Nakatsu Shrine, collectively known as Nakatsu Gion. Records trace its origins to 1430 (Eikyō 2). Nakatsu Gion is considered one of the “Three Great Festivals of Buzen” and “Three Major Gion Festivals of Ōita Prefecture.”<ref name="Nakatsu Gion History">[https://nakatsu-gion.com/rekishi/ About Nakatsu Gion] Nakatsu Gion</ref> It was designated a {{ill|Ōita Prefecture Selected Intangible Folk Cultural Property|ja|大分県選択無形民俗文化財}} in 1962 (Shōwa 37) and upgraded to a Prefectural Intangible Folk Cultural Property in 2004.<ref name="#1">[https://www.city-nakatsu.jp/doc/2011100115127/ Prefectural Cultural Properties] Nakatsu City</ref>
 
 == References ==
 {{Reflist|2}}
@@ -76,20 +73,18 @@ Nakatsu Gion, held annually in late July, features {{ill|Mikoshi|en|Mikoshi|qid=
 
 {{Shinto-stub}}
 == Related Items ==
-* {{ill|Shoumogu|ja|聖母宮|12=simple|13=User:Immanuelle/Shoumogu|1=Seibo Shrine|comment=changed title based on wikidata|qid=Q11611081}} - Located in Iki City, Nagasaki Prefecture. A leading candidate for the Shikinai Myōjin Taisha Nakatsu Shrine.
+* {{ill|Seibo Shrine|ja|聖母宮|12=simple|13=User:Immanuelle/Shoumogu|comment=changed title based on wikidata|qid=Q11611081}} - Located in Iki City, Nagasaki Prefecture. A leading candidate for the Shikinai Myōjin Taisha Nakatsu Shrine.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Nakatsu Daijingu (Q125481312)|lt=Nakatsu Daijingu|qid=Q125481312}} — Nakatsu
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|中津大神宮|version=101285054|comment=Imported full ja history}}
 
 {{Commons category|Nakatsu Daijingu}}
-{{wikidata link|Q125481312|co|commons:Category:Nakatsu Daijingu|ja|中津大神宮|ja|中津神社}}
+{{wikidata link|Q125481312|co|commons:Category:Nakatsu Daijingu|ja|中津大神宮|ja|中津神社|check_date=2026-05-18}}
 [[Category:All disambiguation pages]]
 [[Category:Buildings and structures in Nakatsu, Oita]]
 [[Category:Former Gō-sha in Ōita Prefecture]]

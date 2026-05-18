@@ -1,14 +1,12 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Moritachi_no_Kami for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25145964202|time triggered pipeline]] -->
-
 {{Infobox deity
 | name = Morita-no-Kami
 | type = Japanese
 | other_names = {{nihongo|Adachi-no-Kami|安達神}}, {{nihongo|Udachi-no-Kami|宇達神}}
 | deified = Pioneer deity
-| parents = {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} and {{ill|Yasakatome|en|Yasakatome|qid=Q9150392|lt=Yasakatome|1=Yasakatome}}
+| parents = {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata}} and {{ill|Yasakatome|ja|八坂刀売神|simple|Yasakatome|zh|八坂刀賣神|qid=Q9150392|lt=Yasakatome}}
 | siblings = 
-| children = {{ill|Koshinao-no-Kami|ja|高志奈男神|12=simple|13=User:Immanuelle/Koshinao-no-Kami|ja_comment=jawiki link invalid}}, {{ill|Mitutama-hime-no-Mikoto|ja|美都多麻比売命|12=simple|13=User:Immanuelle/Mitutama-hime-no-Mikoto|ja_comment=jawiki link invalid}}
-| associated_with = {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}}, {{nihongo|Morita Shrine|守田神社}} and others
+| children = {{ill|Koshinao-no-Kami|ja|高志奈男神}}, {{ill|Mitutama-hime-no-Mikoto|ja|美都多麻比売命}}
+| associated_with = {{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}}, {{nihongo|Morita Shrine|守田神社}} and others
 | text = Japanese mythology
 }}
 
@@ -17,32 +15,32 @@
 [[File:Suwa-taisha Kamisha Maemiya - Wakamiko-sha (若御子社).jpg|thumb|250px|Young Deity Shrine (Wakamiko-sha) at Suwa Taisha]]
 
 == Overview ==
-At {{ill|Morita Shrine (Nagano)|ja|守田神社 (七二会)|12=simple|13=User:Immanuelle/Morita Shrine (Nagano)|ja_comment=jawiki link invalid}} in Nagano City, the primary shrine dedicated to Morita-no-Kami, the deity is considered the fifth son of {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} and is celebrated as the ancestral god of development in the region. Morita-no-Kami is often equated with the deity {{nihongo|Udachi-no-Kami|宇達神}}, mentioned in the {{nihongo|Nihon Sandai Jitsuroku|日本三代実録}} in 863 CE, and worshiped at {{ill|Udachi Shrine (Nagano)|ja|宇達神社|12=simple|13=User:Immanuelle/Udachi Shrine (Nagano)|ja_comment=jawiki link invalid}} in Nagano City. According to tradition, Udachi-no-Kami is sometimes identified as a form of {{nihongo|Deidatsurajin|泥土立神}}. Additionally, a genealogy compiled by the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} in the early Meiji period equates Morita-no-Kami with the second-generation family head {{nihongo|Moritaku-no-Kami|守宅神|1=Moritaku-no-Kami}}.
+At {{ill|Morita Shrine (Nagano)|ja|守田神社 (七二会)}} in Nagano City, the primary shrine dedicated to Morita-no-Kami, the deity is considered the fifth son of {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata}} and is celebrated as the ancestral god of development in the region. Morita-no-Kami is often equated with the deity {{nihongo|Udachi-no-Kami|宇達神}}, mentioned in the {{nihongo|Nihon Sandai Jitsuroku|日本三代実録}} in 863 CE, and worshiped at {{ill|Udachi Shrine (Nagano)|ja|宇達神社}} in Nagano City. According to tradition, Udachi-no-Kami is sometimes identified as a form of {{nihongo|Deidatsurajin|泥土立神}}. Additionally, a genealogy compiled by the {{ill|Moriya clan|ja|守矢氏}} in the early Meiji period equates Morita-no-Kami with the second-generation family head {{nihongo|Moritaku-no-Kami|守宅神|1=Moritaku-no-Kami}}.
 
 In 863 CE, "Adachi-no-Kami" was promoted to {{nihongo|Junior Fifth Rank, Upper Grade|従五位上|1=Junior Fifth Rank|lt=Junior Fifth Rank, Upper Grade}}, and in 865 CE, "Udachi-no-Kami" was elevated to {{nihongo|Junior Fourth Rank, Lower Grade|従四位下|lt=Junior Fourth Rank, Lower Grade|1=Junior Fourth Rank}}. These honors likely refer to Morita-no-Kami.
 
 == Genealogy ==
-[[File:Moriya Family Tree - 守矢氏系図.png|170px|thumb|Genealogy of the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}]]
+[[File:Moriya Family Tree - 守矢氏系図.png|170px|thumb|Genealogy of the {{ill|Moriya clan|ja|守矢氏}}]]
 
-Morita-no-Kami is the son of {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} and {{ill|Yasakatome|en|Yasakatome|qid=Q9150392|lt=Yasakatome|1=Yasakatome}}. His children include {{ill|Koshinao-no-Kami|ja|高志奈男神|12=simple|13=User:Immanuelle/Koshinao-no-Kami|ja_comment=jawiki link invalid}} and {{ill|Mitutama-hime-no-Mikoto|ja|美都多麻比売命|12=simple|13=User:Immanuelle/Mitutama-hime-no-Mikoto|ja_comment=jawiki link invalid}}.
+Morita-no-Kami is the son of {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata}} and {{ill|Yasakatome|ja|八坂刀売神|simple|Yasakatome|zh|八坂刀賣神|qid=Q9150392|lt=Yasakatome}}. His children include {{ill|Koshinao-no-Kami|ja|高志奈男神}} and {{ill|Mitutama-hime-no-Mikoto|ja|美都多麻比売命}}.
 
-Mitutama-hime-no-Mikoto bore {{ill|Yakushi-no-Kami|ja|八櫛神|12=simple|13=User:Immanuelle/Yakushi-no-Kami|ja_comment=jawiki link invalid}} with {{ill|Katakurabe no Mikoto|lt=Katakurabe no Mikoto|lt=Katakurabe-no-Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe-no-Mikoto|qq=}}. Yakushi-no-Kami is considered the fifth head of the Moriya clan.
+Mitutama-hime-no-Mikoto bore {{ill|Yakushi-no-Kami|ja|八櫛神}} with {{ill|Katakurabe no Mikoto|ja|片倉辺命|lt=Katakurabe-no-Mikoto}}. Yakushi-no-Kami is considered the fifth head of the Moriya clan.
 
 == Shrines Dedicated to Morita-no-Kami ==
-* {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}} Kamisha Maemiya, {{nihongo|Wakamiko Shrine|若御子社}} ({{nihongo|Chino City|茅野市}}, Nagano)
+* {{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}} Kamisha Maemiya, {{nihongo|Wakamiko Shrine|若御子社}} ({{nihongo|Chino City|茅野市}}, Nagano)
 * {{nihongo|Jūgosha Shrine|十五社神社}} ({{nihongo|Toyohira|豊平}}, Chino City, Nagano)
 * {{nihongo|Jūgosha Shrine (Okaya)|十五社神社}} ({{nihongo|Okaya City|岡谷市}}, Nagano)
-* {{ill|Morita Shrine (Nagano)|ja|守田神社 (七二会)|12=simple|13=User:Immanuelle/Morita Shrine (Nagano)|ja_comment=jawiki link invalid}} ({{nihongo|Nanaiai|七二会}}, Nagano City, Nagano)
+* {{ill|Morita Shrine (Nagano)|ja|守田神社 (七二会)}} ({{nihongo|Nanaiai|七二会}}, Nagano City, Nagano)
 
 === Shrines for Udachi-no-Kami ===
-* {{ill|Udachi Shrine (Nagano)|ja|宇達神社|12=simple|13=User:Immanuelle/Udachi Shrine (Nagano)|ja_comment=jawiki link invalid}} (Nagano City, Nagano)
+* {{ill|Udachi Shrine (Nagano)|ja|宇達神社}} (Nagano City, Nagano)
 
 == References ==
 {{Reflist}}
 
 == Related Articles ==
-* {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}}
-* {{ill|Suwa clan|en|Suwa clan|qid=Q2975376|lt=Suwa clan|1=Suwa clan}}
+* {{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}}
+* {{ill|Suwa clan|en|Suwa clan|qid=Q2975376|lt=Suwa clan}}
 
 ==References==
 {{reflist}}
@@ -50,7 +48,7 @@ Mitutama-hime-no-Mikoto bore {{ill|Yakushi-no-Kami|ja|八櫛神|12=simple|13=Use
 
 {{translated page|ja|守達神|version=76088823|comment=Imported full ja history}}
 
-{{wikidata link|Q65260779|ja|守達神}}
+{{wikidata link|Q65260779|ja|守達神|check_date=2026-05-18}}
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
 [[Category:Suwa faith]]
