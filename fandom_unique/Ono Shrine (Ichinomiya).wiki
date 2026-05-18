@@ -1,4 +1,3 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
 {{Expand Japanese|大野神社 (一宮市)}}
 
 {{Infobox religious building
@@ -14,24 +13,24 @@
 | coordinates = {{coord|35.352868|136.824961}}
 | map_relief = 1
 | religious_affiliation = [[Shinto]]
-| deity = {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637|1=Hachiman}}
+| deity = {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637}}
 }}{{Shinto shrine
  | Name = Ōno Shrine
  | Image = [[File:Ono-jinja, Ichinomiya.jpg|250px]]<br />Torii
- | Location = {{ill|lt=Aichi Prefecture|Q80434|qid=Q80434|1=Aichi Prefecture}}{{ill|lt=Ichinomiya City|Q270810|qid=Q270810|1=Ichinomiya, Aichi}}{{ill|lt=Asai-chō Ōno|Q126912053|qid=Q126912053|1=Azai-chō Ōno}} Gōhigashi 1042
+ | Location = {{ill|Aichi Prefecture|Q80434|qid=Q80434}}{{ill|Ichinomiya, Aichi|Q270810|qid=Q270810}}{{ill|Azai-chō Ōno|Q126912053|qid=Q126912053}} Gōhigashi 1042
  | Coordinates = {{WikidataCoord}}
- | Enshrined deities = {{ill|lt=Hachiman|Q261637|qid=Q261637|qid=Q317997|lt=Hondawake no Mikoto|1=Hachiman}}<br />{{ill|lt=Amaterasu Ōmikami|Q455602|qid=Q455602|1=Amaterasu}}<br />{{ill|UNKNOWN|lt=Takemizuwake no Kami|1=UNKNOWN}}
- | Shrine rank = {{ill|UNKNOWN|lt=Shikinaisha|1=Shikinaisha|qid=Q134917286}} / former {{ill|lt=Village shrine|Q134917284|qid=Q134917284|1=Son-sha}}
+ | Enshrined deities = {{ill|Hachiman|Q261637|qid=Q261637|qid=Q317997|lt=Hondawake no Mikoto}}<br />{{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602}}<br />{{ill|UNKNOWN|lt=Takemizuwake no Kami}}
+ | Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} / former {{ill|Son-sha|ja|村社|qid=Q134917284}}
  | Established = Unknown
  | Map = {{Location map|Japan Aichi|label=Ōno Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=220}}
 }}
 {{infobox religious building
  | name = '''Ono Shrine''' (Ichinomiya)|native_name=大野神社
- | religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}|image=[[File:Ono-jinja, Ichinomiya.jpg|300px]]
+ | religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}|image=[[File:Ono-jinja, Ichinomiya.jpg|300px]]
  | address = 1042, Higashi, Ono-gō, Asai-chō, Ichinomiya, Aichi Prefecture
  | location = {{Coord|35|21|10.57|N|136|49|29.83|E|scale:30000_region:JP-23}}
- | enshrined_deities = {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto|1=Hachiman}}　{{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami|1=Amaterasu}}　{{ill|Tatemizukata no Kami|ja|建水方神|12=simple|13=User:Immanuelle/Tatemizukata no Kami|ja_comment=jawiki link invalid}}
+ | enshrined_deities = {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto}}　{{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602|lt=Amaterasu Ōmikami}}　{{ill|Tatemizukata no Kami|ja|建水方神}}
  | status = Shikinaisha・Former Village Shrine
  | foundation = Unknown
 }}
@@ -39,35 +38,34 @@
 {{nihongo|'''Oono Shrine'''|大野神社 (一宮市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
 
 {{Unreferenced|date=2014th year 10月26日 (日) 11:02 (UTC)~}}
-'''Ono Shrine''' (大野神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto Shrine|1=Shinto shrine}} located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}, {{ill|Ichinomiya, Aichi|en|Ichinomiya, Aichi|qid=Q270810|lt=Ichinomiya|1=Ichinomiya, Aichi}}, {{ill|Asai Town (Aichi Prefecture)|ja|浅井町 (愛知県)|lt=Asai Town|lt_ja=浅井町|12=simple|13=User:Immanuelle/Asai Town (Aichi Prefecture)|1=Azai|comment=changed title based on wikidata|qid=Q11556970}}. Its former {{ill|Shrine Status|ja|社格|12=simple|13=User:Immanuelle/Shrine Status|comment=changed title based on wikidata|1=Shakaku|qid=Q10444029}} was that of a Village Shrine. It is situated to the south of {{ill|Ono Gokurakuji Park|ja|大野極楽寺公園|12=simple|13=User:Immanuelle/Ono Gokurakuji Park|1=Onogokurakuji Park|comment=changed title based on wikidata|qid=Q11439660}} and beside the {{ill|Morio Embankment|ja|御囲堤|12=simple|13=User:Immanuelle/Morio Embankment|1=Q11488847|comment=changed title based on wikidata|qid=Q11488847}}.
+'''Ono Shrine''' (大野神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto Shrine}} located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Ichinomiya, Aichi|en|Ichinomiya, Aichi|qid=Q270810|lt=Ichinomiya}}, {{ill|Azai|ja|浅井町 (愛知県)|lt=Asai Town|lt_ja=浅井町|12=simple|13=User:Immanuelle/Asai Town (Aichi Prefecture)|comment=changed title based on wikidata|qid=Q11556970}}. Its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was that of a Village Shrine. It is situated to the south of {{ill|Onogokurakuji Park|ja|大野極楽寺公園|qid=Q11439660}} and beside the {{ill|Q11488847|ja|御囲堤|qid=Q11488847}}.
 
-It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Shikinaisha|lt_ja=式内社|12=simple|13=User:Immanuelle/Warrant of Deities of the Engi Era|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} in {{ill|Owari Province|en|Owari Province|qid=Q514506|lt=Owari Province|1=Owari Province}}, {{ill|Haguri District|en|Haguri District|qid=Q1032507|lt=Haguri District|1=Haguri District}}.
+It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜式神名帳|lt=Shikinaisha}} in {{ill|Owari Province|en|Owari Province|qid=Q514506|lt=Owari Province}}, {{ill|Haguri District|hu|Haguri körzet|ja|葉栗郡|ko|하구리군 (아이치현)|pl|Powiat Haguri|sr|Област Хагури|zh|葉栗郡|qid=Q1032507|lt=Haguri District}}.
 
 == Overview ==
 * The date of foundation is unknown. It is said that the original location was slightly to the south of the current site.
-* It is believed that this was originally a shrine associated with water. Before the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, due to the enshrinement of {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto|1=Hachiman}}, it was renamed as a Hachiman Shrine, but in {{ill|1870|en|1870|qid=Q7741|lt=1870|1=1870}} (the 3rd year of Meiji) it was renamed Ono Shrine.
-* Part of the shrine grounds now house the Ono Community Center. Within the precincts, various stone statues (including {{ill|Divine Statue|ja|神像|12=simple|13=User:Immanuelle/Divine Statue|comment=changed title based on wikidata|1=Idols in Shinto|qid=Q11588751}} and {{ill|Buddha in art|en|Buddha in art|qid=Q1000809|lt=Buddhist Statue|1=Buddha in art}}) and stone monuments—presumed to have once been enshrined—are scattered about.
+* It is believed that this was originally a shrine associated with water. Before the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, due to the enshrinement of {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto}}, it was renamed as a Hachiman Shrine, but in {{ill|1870|en|1870|qid=Q7741|lt=1870}} (the 3rd year of Meiji) it was renamed Ono Shrine.
+* Part of the shrine grounds now house the Ono Community Center. Within the precincts, various stone statues (including {{ill|Idols in Shinto|ja|神像|qid=Q11588751}} and {{ill|Buddha in art|de|Buddha-Statue|es|Budarupa|eu|Buda (estatua)|hi|बुद्धरूप|hu|Buddharúpa|id|Rupang Buddha|ja|仏像|km|ព្រះពុទ្ធរូប|ko|불상|nl|Buddharupa|nn|Buddhastatue|si|බුදු පිළිම|th|พระพุทธรูป|uk|Буддарупа|zh|佛像|zh_yue|佛像|qid=Q1000809|lt=Buddhist Statue}}) and stone monuments—presumed to have once been enshrined—are scattered about.
 
 == Worshipped Deities (Saijin) ==
-{{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin|qq=}}}}
+{{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin}}}}
 ; Principal Deities
-:* {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto|1=Hachiman}}
-:* {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami|1=Amaterasu}}
-:* {{ill|Tatemizukata no Kami|ja|建水方神|12=simple|13=User:Immanuelle/Tatemizukata no Kami|ja_comment=jawiki link invalid}} (believed to be the same as {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}})
+:* {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hotabebito no Mikoto}}
+:* {{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602|lt=Amaterasu Ōmikami}}
+:* {{ill|Tatemizukata no Kami|ja|建水方神}} (believed to be the same as {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}})
 ; Co-Enshrined
-:* {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane|1=Sugawara no Michizane}}
+:* {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane}}
 
 == Transportation ==
-* Get off at the "Ono" bus stop of the {{ill|Meitetsu Bus|en|Meitetsu Bus|qid=Q6810397|lt=Meitetsu Bus|1=Meitetsu Bus}} and walk for 3 minutes.
-** From {{ill|Meitetsu|ja|名鉄|12=simple|13=User:Immanuelle/Meitetsu|1=Q11415661|comment=changed title based on wikidata|qid=Q11415661}}’s {{ill|Meitetsu Nagoya Main Line|en|Meitetsu Nagoya Main Line|qid=Q1137838|lt=Nagoya Main Line|1=Meitetsu Nagoya Main Line}} and {{ill|Meitetsu Bisai Line|en|Meitetsu Bisai Line|qid=Q901005|lt=Meitetsu Onishi Line|1=Meitetsu Bisai Line}} at {{ill|Meitetsu Ichinomiya Station|en|Meitetsu Ichinomiya Station|qid=Q2856589|lt=Meitetsu Ichinomiya Station|1=Meitetsu Ichinomiya Station}}, or from the {{ill|Tōkaidō Main Line|ja|Tōkaidō Main Line|12=simple|13=User:Immanuelle/Tōkaidō Main Line|ja_comment=jawiki link invalid}} at {{ill|Owari-Ichinomiya Station|en|Owari-Ichinomiya Station|qid=Q871495|lt=Owari Ichinomiya Station|1=Owari-Ichinomiya Station}} (Platform 3 at the {{ill|Meitetsu Ichinomiya Station Bus Terminal|ja|名鉄一宮駅バスターミナル|12=simple|13=User:Immanuelle/Meitetsu Ichinomiya Station Bus Terminal|ja_comment=jawiki redirects to 一宮駅バスターミナル|1=Q11415757|comment=changed title based on wikidata|qid=Q11415757}}) for the "Kawashima" bus.
+* Get off at the "Ono" bus stop of the {{ill|Meitetsu Bus|ja|名鉄バス|qid=Q6810397|lt=Meitetsu Bus}} and walk for 3 minutes.
+** From {{ill|Q11415661|ja|名鉄|qid=Q11415661}}’s {{ill|Meitetsu Nagoya Main Line|de|Meitetsu Nagoya-Hauptlinie|fr|Ligne principale Meitetsu Nagoya|it|Linea Meitetsu Nagoya principale|ja|名鉄名古屋本線|ko|메이테쓰 나고야 본선|nl|Meitetsu Nagoya-lijn|pt|Linha Meitetsu Nagoya|su|Jalur Utama Meitetsu Nagoya|zh|名古屋本線|qid=Q1137838|lt=Nagoya Main Line}} and {{ill|Meitetsu Bisai Line|en|Meitetsu Bisai Line|qid=Q901005|lt=Meitetsu Onishi Line}} at {{ill|Meitetsu Ichinomiya Station|en|Meitetsu Ichinomiya Station|qid=Q2856589|lt=Meitetsu Ichinomiya Station}}, or from the {{ill|Tōkaidō Main Line|ja|Tōkaidō Main Line}} at {{ill|Owari-Ichinomiya Station|en|Owari-Ichinomiya Station|qid=Q871495|lt=Owari Ichinomiya Station}} (Platform 3 at the {{ill|Q11415757|ja|名鉄一宮駅バスターミナル|12=simple|13=User:Immanuelle/Meitetsu Ichinomiya Station Bus Terminal|ja_comment=jawiki redirects to 一宮駅バスターミナル|comment=changed title based on wikidata|qid=Q11415757}}) for the "Kawashima" bus.
 
 {{shinto-stub}}
 
-{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)|12=simple|13=User:Immanuelle/Ono Shrine (Ichinomiya)|qq=}}
-{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)|12=simple|13=User:Immanuelle/Ono Shrine (Ichinomiya)|qq=}}
-{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)|12=simple|13=User:Immanuelle/Ono Shrine (Ichinomiya)|qq=}}
+{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)}}
+{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)}}
+{{ill|Ono Shrine (Ichinomiya)|ja|大野神社 (一宮市)}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Ohonono Shrine (Q135040587)|lt=Ohonono Shrine|qid=Q135040587}} — Tango Province
@@ -81,11 +79,10 @@ It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜
 * {{ill|Ōno Shrine (Q59282652)|lt=Ōno Shrine|qid=Q59282652}} — Rittō-shi
 * {{ill|大野神社 (Q134886872)|lt=大野神社|qid=Q134886872}} — Tokigawa
 * {{ill|大野神社 (Q135460694)|lt=大野神社|qid=Q135460694}} — Itoigawa
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|大野神社|version=99867700|comment=Imported full ja history}}
 
-{{wikidata link|Q131227053|ja|大野神社}}
+{{wikidata link|Q131227053|ja|大野神社|check_date=2026-05-18}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
@@ -93,24 +90,24 @@ It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜
 
 == instance of (P31) ==
 
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945|1=Shinto shrine}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
-* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|1=Shikinai Shosha}}
-* {{ill|Q135160342|ltq=Q135160342|qid=Q135160342|1=Kokuhei-sha}}<ref>Kokugakuin University Shrine database</ref>
-* {{ill|Shikinai Hiteisha|lt=Shikinai Hiteisha|ja|比定社|qid=Q135026601|1=Shikinai Hiteisha}}
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
+* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+* {{ill|Kokuhei-sha|ltq=Q135160342|qid=Q135160342}}<ref>Kokugakuin University Shrine database</ref>
+* {{ill|Shikinai Hiteisha|lt=Shikinai Hiteisha|ja|比定社|qid=Q135026601}}
 
 == part of (P361) ==
 
-* {{ill|Q11465292|ltq=Q11465292|qid=Q11465292|1=List of Shikinaisha in Owari Province}}
+* {{ill|List of Shikinaisha in Owari Province|ltq=Q11465292|qid=Q11465292}}
 ** Series ordinal: 43
-** P155: {{ill|Q11603933|ltq=Q11603933|qid=Q11603933|1=Komori Katte Shrine}}
-** P156: {{ill|Ishizukuri Shrine|lt=Ishizukuri Shrine|ja|石作神社 (岐南町)|qid=Q11585161|1=Ishizukuri Shrine}}
+** P155: {{ill|Komori Katte Shrine|ltq=Q11603933|qid=Q11603933}}
+** P156: {{ill|Ishizukuri Shrine|lt=Ishizukuri Shrine|ja|石作神社 (岐南町)|qid=Q11585161}}
 
 == located in the administrative territorial entity (P131) ==
 
-* {{ill|Q270810|ltq=Q270810|qid=Q270810|1=Ichinomiya, Aichi}}
-* {{ill|Q514506|ltq=Q514506|qid=Q514506|1=Owari Province}}
-* {{ill|Haguri District|lt=Haguri district|en|Haguri District|hu|Haguri körzet|ja|葉栗郡|ko|하구리군 (아이치현)|pl|Powiat Haguri|sr|Област Хагури|zh|葉栗郡|qid=Q1032507|1=Haguri District}}
+* {{ill|Ichinomiya, Aichi|ltq=Q270810|qid=Q270810}}
+* {{ill|Owari Province|ltq=Q514506|qid=Q514506}}
+* {{ill|Haguri District|hu|Haguri körzet|ja|葉栗郡|ko|하구리군 (아이치현)|pl|Powiat Haguri|sr|Област Хагури|zh|葉栗郡|qid=Q1032507|lt=Haguri district}}
 
 == coordinate location (P625) ==
 
@@ -122,22 +119,22 @@ It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜
 
 == dedicated to (P825) ==
 
-* {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637|1=Hachiman}}
+* {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637}}
 
 == Kokugakuin University Digital Museum entry ID (P13677) ==
 
 * 181383
-** P3831: {{ill|Q135159299|ltq=Q135159299|qid=Q135159299|1=Kokugakuin University Shrine database}}
+** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
 
 == modern shrine ranking (P13723) ==
 
-* {{ill|Son-sha|lt=Son-sha|ja|村社|qid=Q134917284|1=Son-sha}}
+* {{ill|Son-sha|ja|村社|qid=Q134917284|lt=Son-sha}}
 ** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
-** P1534: {{ill|Q3029647|ltq=Q3029647|qid=Q3029647|1=Shinto Directive}}
+** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
 
 == country (P17) ==
 
-* {{ill|Q17|ltq=Q17|qid=Q17|1=Japan}}
+* {{ill|Japan|ltq=Q17|qid=Q17}}
 
 == Corporate Number (Japan) (P3225) ==
 
@@ -153,26 +150,26 @@ It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜
 
 == Japanese content ==
 {{Citation needed|date=October 26, 2014 (Sun) 11:02 (UTC)~}}
-'''Ōno Shrine''' (Ōno-jinja) is a {{ill|lt=Shinto shrine|Q845945|qid=Q845945|1=Shinto shrine}} located in {{ill|lt=Asai Town (Aichi Prefecture)|Q11556970|qid=Q11556970|lt=Asai-chō|1=Azai}}, {{ill|lt=Ichinomiya City|Q270810|qid=Q270810|1=Ichinomiya, Aichi}}, {{ill|lt=Aichi Prefecture|Q80434|qid=Q80434|1=Aichi Prefecture}}. Its former {{ill|lt=shrine ranking system|Q10444029|qid=Q10444029|1=Shakaku}} status was that of a village shrine. It is located south of {{ill|lt=Ōno Gokurakuji Park|Q11439660|qid=Q11439660|1=Onogokurakuji Park}}, near the {{ill|lt=Okakoi embankment|Q11488847|qid=Q11488847|1=Okakoi embankment}}.
+'''Ōno Shrine''' (Ōno-jinja) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Azai|Q11556970|qid=Q11556970|lt=Asai-chō}}, {{ill|Ichinomiya, Aichi|Q270810|qid=Q270810}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}. Its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} status was that of a village shrine. It is located south of {{ill|Onogokurakuji Park|ja|大野極楽寺公園|qid=Q11439660}}, near the {{ill|Okakoi embankment|ja|御囲堤|qid=Q11488847}}.
 
-It is listed as the “Ōno Shrine” of {{ill|lt=Haguri District|Q1032507|qid=Q1032507|1=Haguri District}}, {{ill|lt=Owari Province|Q514506|qid=Q514506|1=Owari Province}} in the {{ill|lt=Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki shrine register|1=Engishiki Jinmyōchō}}.<ref>https://jmapps.ne.jp/kokugakuin/det.html?data_id=181383</ref>
+It is listed as the “Ōno Shrine” of {{ill|Haguri District|hu|Haguri körzet|ja|葉栗郡|ko|하구리군 (아이치현)|pl|Powiat Haguri|sr|Област Хагури|zh|葉栗郡|qid=Q1032507}}, {{ill|Owari Province|Q514506|qid=Q514506}} in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki shrine register}}.<ref>https://jmapps.ne.jp/kokugakuin/det.html?data_id=181383</ref>
 
 === Overview ===
 * The date of establishment is unknown. It is said that the shrine was originally located slightly south of its present site.
-* It is said to have originally been a shrine associated with water. Before the {{ill|lt=Edo period|Q184963|qid=Q184963|1=Edo period}}, after Hondawake no Mikoto was enshrined, it was renamed a Hachiman Shrine; however, in {{ill|lt=1870|Q7741|qid=Q7741|1=1870}} (Meiji 3), it was renamed Ōno Shrine.
-* Part of the shrine grounds now serves as the Ōno Community Center. Within the grounds, stone statues ({{ill|lt=stone statues|Q12573007|qid=Q12573007|1=Stone sculpture}}—{{ill|lt=Shinto deity statues|Q11588751|qid=Q11588751|1=Idols in Shinto}}, {{ill|lt=Buddhist statues|Q1000809|qid=Q1000809|1=Buddha in art}}) and stone monuments, presumed to have once been worshipped, exist in a disorderly manner.
+* It is said to have originally been a shrine associated with water. Before the {{ill|Edo period|Q184963|qid=Q184963}}, after Hondawake no Mikoto was enshrined, it was renamed a Hachiman Shrine; however, in {{ill|1870|Q7741|qid=Q7741}} (Meiji 3), it was renamed Ōno Shrine.
+* Part of the shrine grounds now serves as the Ōno Community Center. Within the grounds, stone statues ({{ill|Stone sculpture|Q12573007|qid=Q12573007}}—{{ill|Idols in Shinto|ja|神像|qid=Q11588751}}, {{ill|Buddha in art|de|Buddha-Statue|es|Budarupa|eu|Buda (estatua)|hi|बुद्धरूप|hu|Buddharúpa|id|Rupang Buddha|ja|仏像|km|ព្រះពុទ្ធរូប|ko|불상|nl|Buddharupa|nn|Buddhastatue|si|බුදු පිළිම|th|พระพุทธรูป|uk|Буддарупа|zh|佛像|zh_yue|佛像|qid=Q1000809}}) and stone monuments, presumed to have once been worshipped, exist in a disorderly manner.
 
 === Enshrined Deities ===
 ;Main deities
-:*{{ill|lt=Hachiman|Q261637|qid=Q261637|qid=Q317997|lt=Hondawake no Mikoto|1=Hachiman}}
-:*{{ill|lt=Amaterasu Ōmikami|Q455602|qid=Q455602|1=Amaterasu}}
-:*{{ill|UNKNOWN|lt=Takemizuwake no Kami|1=UNKNOWN}} (presumed to be {{ill|UNKNOWN|qid=Q9150391|lt=Takeminakata no Kami|1=Takeminakata}})
+:*{{ill|Hachiman|Q261637|qid=Q261637|qid=Q317997|lt=Hondawake no Mikoto}}
+:*{{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602}}
+:*{{ill|UNKNOWN|lt=Takemizuwake no Kami}} (presumed to be {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata no Kami}})
 ;Enshrined together
-:*{{ill|lt=Sugawara no Michizane|Q382005|qid=Q382005|1=Sugawara no Michizane}}
+:*{{ill|Sugawara no Michizane|Q382005|qid=Q382005}}
 
 === Transportation ===
-* Get off at the “Ōno” bus stop on {{ill|lt=Meitetsu Bus|Q6810397|qid=Q6810397|1=Meitetsu Bus}}, then walk 3 minutes.
-** From {{ill|lt=Meitetsu Ichinomiya Station|Q2856589|qid=Q2856589|1=Meitetsu Ichinomiya Station}} on the {{ill|lt=Nagoya Railroad|Q30850|qid=Q30850|1=Meitetsu}}{{ill|lt=Meitetsu Nagoya Main Line|Q1137838|qid=Q1137838|lt=Nagoya Main Line|1=Meitetsu Nagoya Main Line}} / {{ill|lt=Meitetsu Bisai Line|Q901005|qid=Q901005|lt=Bisai Line|1=Meitetsu Bisai Line}}, or from {{ill|lt=Owari-Ichinomiya Station|Q871495|qid=Q871495|1=Owari-Ichinomiya Station}} on the {{ill|lt=Tōkaidō Main Line|Q1190152|qid=Q1190152|1=Tōkaidō Main Line}} (Meitetsu Ichinomiya Station Bus Terminal, platform 3), take the bus bound for “Kawashima.”
+* Get off at the “Ōno” bus stop on {{ill|Meitetsu Bus|ja|名鉄バス|qid=Q6810397}}, then walk 3 minutes.
+** From {{ill|Meitetsu Ichinomiya Station|Q2856589|qid=Q2856589}} on the {{ill|Meitetsu|Q30850|qid=Q30850}}{{ill|Meitetsu Nagoya Main Line|de|Meitetsu Nagoya-Hauptlinie|fr|Ligne principale Meitetsu Nagoya|it|Linea Meitetsu Nagoya principale|ja|名鉄名古屋本線|ko|메이테쓰 나고야 본선|nl|Meitetsu Nagoya-lijn|pt|Linha Meitetsu Nagoya|su|Jalur Utama Meitetsu Nagoya|zh|名古屋本線|qid=Q1137838|lt=Nagoya Main Line}} / {{ill|Meitetsu Bisai Line|Q901005|qid=Q901005|lt=Bisai Line}}, or from {{ill|Owari-Ichinomiya Station|Q871495|qid=Q871495}} on the {{ill|Tōkaidō Main Line|Q1190152|qid=Q1190152}} (Meitetsu Ichinomiya Station Bus Terminal, platform 3), take the bus bound for “Kawashima.”
 
 === Notes ===
 {{Reflist}}

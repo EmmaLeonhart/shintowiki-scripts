@@ -3,38 +3,38 @@
 |name   = 小野神社・矢彦神社
 | religious_affiliation = [[Shinto]]
 |image   = File:Ono-jinja (Shiojiri) haiden.JPG
-|location = 小野：{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}{{ill|Shiojiri|en|Shiojiri|qid=Q11428657|lt=塩尻市|1=Shiojiri}}北小野175-1<br />矢彦：長野県{{ill|Kamiina District, Nagano|en|Kamiina District, Nagano|qid=Q1155054|lt=上伊那郡|1=Kamiina District, Nagano}}{{ill|Tatsuno, Nagano|en|Tatsuno, Nagano|qid=Q1347504|lt=辰野町|1=Tatsuno, Nagano}}大字小野3267
+|location = 小野：{{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}{{ill|Shiojiri|en|Shiojiri|qid=Q11428657|lt=塩尻市}}北小野175-1<br />矢彦：長野県{{ill|Kamiina District, Nagano|en|Kamiina District, Nagano|qid=Q1155054|lt=上伊那郡}}{{ill|Tatsuno, Nagano|en|Tatsuno, Nagano|qid=Q1347504|lt=辰野町}}大字小野3267
 |coordinates   = {{Coord|36.055006|N|137.969533}}
-|deity   = 小野：{{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}<br />矢彦：{{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi|1=Ōkuninushi}}、{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主|1=Kotoshironushi-no-Mikoto}}
+|deity   = 小野：{{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}}<br />矢彦：{{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944|lt=Ōkuninushi}}、{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}}
 |神体   = 
-|type   = 小野：{{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province|1=Shinano Province}}{{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya|1=Ichinomiya}}（二宮）、旧{{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}<br />矢彦：旧県社
-|創建   = 小野：不詳<br />矢彦：（伝）{{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei|1=Emperor Kinmei}}年間（{{ill|539|en|539|qid=Q32891|lt=539|1=539}}-{{ill|571|en|571|qid=Q30475|lt=571|1=571}}?）
+|type   = 小野：{{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province}}{{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}}（二宮）、旧{{ill|Ken-sha|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}<br />矢彦：旧県社
+|創建   = 小野：不詳<br />矢彦：（伝）{{ill|Emperor Kinmei|ar|الإمبراطور كيمي|arz|الامبراطور كيمى|azb|کیم‌می (ایمپیراتور)|ckb|ئیمپراتۆر کینمێی|cs|Kinmei|de|Kimmei|es|Kinmei Tennō|fa|امپراتور کینمی|fi|Kinmei|fr|Kinmei|hr|Kinmei|id|Kaisar Kimmei|it|Kinmei|ja|欽明天皇|ka|კიმეი|ko|긴메이 천황|nl|Kimmei|pl|Kinmei|pt|Kimmei|ru|Император Киммэй|sh|Car Kimmei|simple|Emperor Kinmei|sl|Cesar Kinmei|sv|Kimmei|th|จักรพรรดิคิมเม|tl|Emperador Kimmei|tr|Kimmei (imparator)|uk|Імператор Кіммей|uz|Imperator Kinmei|vi|Thiên hoàng Kimmei|yo|Emperor Kimmei|zh|钦明天皇|zh_min_nan|Kinmei Thian-hông|zh_yue|欽明天皇|qid=Q329792|lt=Emperor Kinmei}}年間（{{ill|539|en|539|qid=Q32891|lt=539}}-{{ill|571|en|571|qid=Q30475|lt=571}}?）
 |本殿   = 
 |alternative names   = 小野南北大明神
 |札所等 = 
 |festival   = 10月第1日曜（八朔祭/田ノ実祭）
-|神事   = 御柱祭（6th year に1度）<br />小野神社ねんじり棒祭（{{ill|January 6|1月6日|12=simple|13=User:Immanuelle/January 6|qq=}}）|地図   = {{location map|Japan Nagano|lat_deg=36|lat_min=3|lat_sec=18.02|lon_deg=137|lon_min=58|lon_sec=10.32|label=小野神社・矢彦神社|position=right|width=200|float=center|mark=Shinto torii icon vermillion.svg|marksize=20|caption=|qq=draft}}
-|prefecture   = {{ill|Shiojiri|qid=Q857272|1=Shiojiri, Nagano}}; {{ill|Tatsuno|qid=Q1347504|1=Tatsuno, Nagano}}
+|神事   = 御柱祭（6th year に1度）<br />小野神社ねんじり棒祭（{{ill|January 6|1月6日|January 6}}）|地図   = {{location map|Japan Nagano|lat_deg=36|lat_min=3|lat_sec=18.02|lon_deg=137|lon_min=58|lon_sec=10.32|label=小野神社・矢彦神社|position=right|width=200|float=center|mark=Shinto torii icon vermillion.svg|marksize=20|caption=|qq=draft}}
+|prefecture   = {{ill|Shiojiri, Nagano|qid=Q857272}}; {{ill|Tatsuno, Nagano|qid=Q1347504}}
 }}
 {{GeoGroup}}
 [[File:Ono-jinja, Yahiko-jinja otorii.JPG|thumb|200px|right|<div style="text-align:center;">大鳥居</div>]]
-'''Ono-jinja and Yahiko-jinja''' (小野神社・矢彦神社) are a pair of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}s located in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, Japan. Ono-jinja is in {{ill|Shiojiri, Nagano|en|Shiojiri, Nagano|qid=Q857272|lt=Shiojiri|1=Shiojiri, Nagano}}, while Yahiko-jinja is in {{ill|Tatsuno, Nagano|en|Tatsuno, Nagano|qid=Q1347504|lt=Tatsuno, Nagano|1=Tatsuno, Nagano}}.
+'''Ono-jinja and Yahiko-jinja''' (小野神社・矢彦神社) are a pair of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}s located in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, Japan. Ono-jinja is in {{ill|Shiojiri, Nagano|en|Shiojiri, Nagano|qid=Q857272|lt=Shiojiri}}, while Yahiko-jinja is in {{ill|Tatsuno, Nagano|en|Tatsuno, Nagano|qid=Q1347504|lt=Tatsuno, Nagano}}.
 
-Both shrines are situated within the same sacred grove and are said to have once been a single shrine. Currently, they are distinct entities. Ono-jinja is considered the {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya|1=Ninomiya}} (Ni-no-miya) of {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province|1=Shinano Province}}, and both shrines were classified as {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine Ranking system.
+Both shrines are situated within the same sacred grove and are said to have once been a single shrine. Currently, they are distinct entities. Ono-jinja is considered the {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya}} (Ni-no-miya) of {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province}}, and both shrines were classified as {{ill|Ken-sha|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine Ranking system.
 
 == Deities ==
 '''Ono-jinja deity'''
-* '''{{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}''' (Takeminakata-no-Mikoto)
+* '''{{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}}''' (Takeminakata-no-Mikoto)
 
 '''Yahiko-jinja Deities'''
 * '''Main Sanctuary (Seiden)'''
-** '''{{ill|Ōkuninushi|ja|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}''' (Ōnamuchi-no-Mikoto)
-** '''{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主|1=Kotoshironushi-no-Mikoto}}''' (Kotoshironushi-no-Mikoto)
+** '''{{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}''' (Ōnamuchi-no-Mikoto)
+** '''{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}}''' (Kotoshironushi-no-Mikoto)
 * '''Sub Sanctuary (Fukuden)'''
-** {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} (Takeminakata-no-Mikoto)
-** {{ill|Yasakatome|ja|八坂刀売命|1=Yasakatome|2=ja|3=八坂刀売命|12=simple|13=User:Immanuelle/Yasakatome|ja_comment=jawiki redirects to 八坂刀売神}} (Yasakatome-no-Mikoto)
+** {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}} (Takeminakata-no-Mikoto)
+** {{ill|Yasakatome|ja|八坂刀売命}} (Yasakatome-no-Mikoto)
 * '''South Sanctuary (Nanden)'''
-** {{ill|Ame-no-Kaguyama|ja|天香語山命|12=simple|13=User:Immanuelle/Ame-no-Kaguyama|ja_comment=jawiki redirects to 天香山命}} (Ame-no-Kagoyama-no-Mikoto)
+** {{ill|Ame-no-Kaguyama|ja|天香語山命}} (Ame-no-Kagoyama-no-Mikoto)
 ** Umashihoya-hime (熟穂屋姫命)
 * '''North Sanctuary (Hokuden)'''
 ** Kamuyamato-iwarehiko (神倭磐余彦天皇: Emperor Jimmu)
@@ -42,44 +42,44 @@ Both shrines are situated within the same sacred grove and are said to have once
 
 == History ==
 === Establishment ===
-The exact founding date of the shrines is unknown. Legends state that {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}} stayed in this area temporarily after being unable to enter Suwa due to the presence of {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya|1=Moreya}}.<ref name="神々小野">『日本の神々』小野神社項。</ref>
+The exact founding date of the shrines is unknown. Legends state that {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}} stayed in this area temporarily after being unable to enter Suwa due to the presence of {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moreya}}.<ref name="神々小野">『日本の神々』小野神社項。</ref>
 
-According to Yahiko-jinja’s tradition, {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi|1=Ōkuninushi}} stopped in this area during his nation-building journey, accompanied by his sons {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主|1=Kotoshironushi-no-Mikoto}} and {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}.<ref name="説明板" />
+According to Yahiko-jinja’s tradition, {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944|lt=Ōkuninushi}} stopped in this area during his nation-building journey, accompanied by his sons {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}} and {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}}.<ref name="説明板" />
 
 Further legends describe how the shrines’ rituals and structure were formalized during the reign of Emperor Kinmei (539–571).<ref name="説明板" />
 
 === Later History ===
-The shrines do not appear in early historical records such as the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} or the {{ill|Jinmyōchō|ja|神名帳|12=simple|13=User:Immanuelle/Jinmyōchō|1=Jinmyōchō|comment=changed title based on wikidata|qid=Q11588822}}. However, they are first mentioned in the {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} text "Norito-dan" (祝詞段), compiled in {{ill|1237|en|1237|qid=Q5430|lt=1237|1=1237}}, which refers to "Ono-Wayahiko Hokubou Nanbou Suewakamiya Daimyōjin" (小野ワヤヒコ北方南方末若宮大明神).<ref name="神々矢彦">『日本の神々』矢彦神社項。</ref>
+The shrines do not appear in early historical records such as the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} or the {{ill|Jinmyōchō|ja|神名帳|12=simple|13=User:Immanuelle/Jinmyōchō|comment=changed title based on wikidata|qid=Q11588822}}. However, they are first mentioned in the {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}} text "Norito-dan" (祝詞段), compiled in {{ill|1237|en|1237|qid=Q5430|lt=1237}}, which refers to "Ono-Wayahiko Hokubou Nanbou Suewakamiya Daimyōjin" (小野ワヤヒコ北方南方末若宮大明神).<ref name="神々矢彦">『日本の神々』矢彦神社項。</ref>
 
-During the {{ill|Eiroku|en|Eiroku|qid=Q1143341|lt=Eiroku|1=Eiroku}} period (1567), they were called "Ono Nanboku Daimyōjin" (小野南北大明神) in the Shimo-no-Go Okisho Mon (下之郷起請文), and during the {{ill|Tenshō (Momoyama period)|en|Tenshō (Momoyama period)|qid=Q1145058|lt=Tenshō Era|1=Tenshō (Momoyama period)}} era (1579), there are records of shrine renovations noted as "Ono Ninomiyazōei" (小野二之宮造営).<ref>{{Cite book|editor=中世諸国一宮制研究会編|title=日本中世国家と諸国一宮制|publisher=岩田書院|year=2000|page=55}}</ref>
+During the {{ill|Eiroku|en|Eiroku|qid=Q1143341|lt=Eiroku}} period (1567), they were called "Ono Nanboku Daimyōjin" (小野南北大明神) in the Shimo-no-Go Okisho Mon (下之郷起請文), and during the {{ill|Tenshō (Momoyama period)|ckb|تێنشۆ (سەردەمی مۆمۆیاما)|fa|تنشو|fr|Ère Tenshō (Momoyama)|ja|天正|ko|덴쇼 (아즈치모모야마 시대)|ro|Era Tenshō (Momoyama)|ru|Тэнсё (Адзути-Момояма)|simple|Tenshō (Momoyama period)|sr|Теншо (Момојама период)|sv|Tenshō|tr|Tenshō (Momoyama)|zh|天正 (日本)|qid=Q1145058|lt=Tenshō Era}} era (1579), there are records of shrine renovations noted as "Ono Ninomiyazōei" (小野二之宮造営).<ref>{{Cite book|editor=中世諸国一宮制研究会編|title=日本中世国家と諸国一宮制|publisher=岩田書院|year=2000|page=55}}</ref>
 
-In {{ill|1591|en|1591|qid=Q6766|lt=1591|1=1591}}, following a dispute over the Ono basin between {{ill|Mōri Hideyori|ja|毛利秀頼|12=simple|13=User:Immanuelle/Mōri Hideyori|1=Mōri Hideyori|comment=changed title based on wikidata|qid=Q11126450}} of Iida Castle and {{ill|Ishikawa Kazumasa|en|Ishikawa Kazumasa|qid=Q873166|lt=Ishikawa Kazumasa|1=Ishikawa Kazumasa}} of Matsumoto Castle, the basin was divided into northern (Kitano-Ono Village) and southern (Minamino-Ono Village) regions, with the shrines physically divided as a result.<ref name="神々矢彦"/> 
+In {{ill|1591|en|1591|qid=Q6766|lt=1591}}, following a dispute over the Ono basin between {{ill|Mōri Hideyori|ja|毛利秀頼|12=simple|13=User:Immanuelle/Mōri Hideyori|comment=changed title based on wikidata|qid=Q11126450}} of Iida Castle and {{ill|Ishikawa Kazumasa|en|Ishikawa Kazumasa|qid=Q873166|lt=Ishikawa Kazumasa}} of Matsumoto Castle, the basin was divided into northern (Kitano-Ono Village) and southern (Minamino-Ono Village) regions, with the shrines physically divided as a result.<ref name="神々矢彦"/> 
 
-In the modern era, both shrines were classified as {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|qid=Q712534|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}.
+In the modern era, both shrines were classified as {{ill|Ken-sha|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the {{ill|Modern system of ranked Shinto shrines|ca|Classificació moderna dels santuaris xintoistes|es|Anexo:Santuarios sintoístas según el sistema moderno|fr|Système moderne de classement des sanctuaires shinto|ja|近代社格制度|simple|Modern system of ranked Shinto shrines|sv|Moderna systemet för rangordning av shinto-helgedomar|zh|近代社格制度|qid=Q712534|lt=Modern system of Ranked Shinto shrines}}.
 
 == Shrine Grounds ==
 === Sacred Forest (社叢) ===
-The shrines share the same sacred forest (社叢), located in the Ono basin, which is also referred to as the "Tanomo no Sato" (頼母の里) or "Tanome no Sato" (憑の里). The forest has been mentioned in literary works such as the {{ill|The Pillow Book|en|The Pillow Book|qid=Q615137|lt=Makura no Sōshi|1=The Pillow Book}} and in other classical texts like the {{ill|Fubokuwakashō|ja|夫木和歌抄|12=simple|13=User:Immanuelle/Fubokuwakashō|1=Fuboku Wakashō|comment=changed title based on wikidata|qid=Q55529342}}.<ref>『長野県の地名』憑の里項。</ref>
+The shrines share the same sacred forest (社叢), located in the Ono basin, which is also referred to as the "Tanomo no Sato" (頼母の里) or "Tanome no Sato" (憑の里). The forest has been mentioned in literary works such as the {{ill|The Pillow Book|en|The Pillow Book|qid=Q615137|lt=Makura no Sōshi}} and in other classical texts like the {{ill|Fuboku Wakashō|ja|夫木和歌抄|12=simple|13=User:Immanuelle/Fubokuwakashō|comment=changed title based on wikidata|qid=Q55529342}}.<ref>『長野県の地名』憑の里項。</ref>
 
-This sacred forest, known for its biodiversity, contains over 150 species of trees, including significant examples of broadleaf and coniferous species. It has been designated as a {{ill|Natural monument|en|Natural monument|qid=Q23790|lt=Natural Monument (Japan)|1=Natural monument}}, known as the "Yahiko-Ono Shrine Sacred Forest" (矢彦小野神社社叢).<ref name="説明板"/>
+This sacred forest, known for its biodiversity, contains over 150 species of trees, including significant examples of broadleaf and coniferous species. It has been designated as a {{ill|Natural monument|en|Natural monument|qid=Q23790|lt=Natural Monument (Japan)}}, known as the "Yahiko-Ono Shrine Sacred Forest" (矢彦小野神社社叢).<ref name="説明板"/>
 
 === Ono-jinja ===
-The shrine buildings at Ono-jinja were rebuilt in {{ill|1672|en|1672|qid=Q7614|lt=1672|1=1672}} under the patronage of {{ill|Mizuno Tadanaka|ja|水野忠直|12=simple|13=User:Immanuelle/Mizuno Tadanaka|1=Mizuno Tadanao|comment=changed title based on wikidata|qid=Q10565628}}, the lord of {{ill|Matsumoto Domain|en|Matsumoto Domain|qid=Q1059941|lt=Matsumoto Domain|1=Matsumoto Domain}}. Key structures include:
-* Two {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri|1=Nagare-zukuri}} honden (main shrines), used alternately during the {{ill|Onbashira|en|Onbashira|qid=Q3698846|lt=Onbashira Festival|1=Onbashira}}.
+The shrine buildings at Ono-jinja were rebuilt in {{ill|1672|en|1672|qid=Q7614|lt=1672}} under the patronage of {{ill|Mizuno Tadanao|ja|水野忠直|12=simple|13=User:Immanuelle/Mizuno Tadanaka|comment=changed title based on wikidata|qid=Q10565628}}, the lord of {{ill|Matsumoto Domain|en|Matsumoto Domain|qid=Q1059941|lt=Matsumoto Domain}}. Key structures include:
+* Two {{ill|Nagare-zukuri|fr|Nagare-zukuri|it|Nagare-zukuri|ja|流造|pl|Nagare-zukuri|ru|Нагарэ-дзукури|sv|Nagare-zukuri|zh|流造|qid=Q210684|lt=Nagare-zukuri}} honden (main shrines), used alternately during the {{ill|Onbashira|en|Onbashira|qid=Q3698846|lt=Onbashira Festival}}.
 * A Hachiman Shrine honden.
 * A Chokushiden (勅使殿), located in the central area.<ref name="説明板"/> 
 
-In {{ill|2018|en|2018|qid=Q25291|lt=Heisei 30|1=2018}}, Typhoon No. 21 caused severe damage to one of the honden, which was later restored.<ref>{{Cite news|date=2018-09-07|url=https://web.archive.org/web/20180907144742/http://www.chunichi.co.jp/article/nagano/20180907/CK2018090702000012.html|title=県宝本殿、倒木で大破　塩尻・小野神社|work={{ill|Chunichi Shimbun|en|Chunichi Shimbun|qid=Q904678|lt=Chunichi Shimbun|1=Chunichi Shimbun}}|accessdate=2018-09-07}}</ref>
+In {{ill|2018|en|2018|qid=Q25291|lt=Heisei 30}}, Typhoon No. 21 caused severe damage to one of the honden, which was later restored.<ref>{{Cite news|date=2018-09-07|url=https://web.archive.org/web/20180907144742/http://www.chunichi.co.jp/article/nagano/20180907/CK2018090702000012.html|title=県宝本殿、倒木で大破　塩尻・小野神社|work={{ill|Chunichi Shimbun|en|Chunichi Shimbun|qid=Q904678|lt=Chunichi Shimbun}}|accessdate=2018-09-07}}</ref>
 
 === Yahiko-jinja ===
 Yahiko-jinja features four sanctuaries (正殿、副殿、北殿、南殿), each identical in design, aligned in a straight line. Other structures include:
-* The Haiden (拝殿), built in {{ill|1782|en|1782|qid=Q7740|lt=1782|1=1782}}.
-* A Kagura-den (神楽殿), built in {{ill|1842|en|1842|qid=Q7625|lt=1842|1=1842}}.
-* A Chokushiden, constructed in the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}} style.<ref name="説明板"/> 
+* The Haiden (拝殿), built in {{ill|1782|en|1782|qid=Q7740|lt=1782}}.
+* A Kagura-den (神楽殿), built in {{ill|1842|en|1842|qid=Q7625|lt=1842}}.
+* A Chokushiden, constructed in the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}} style.<ref name="説明板"/> 
 
 == Festivals ==
-* '''Shikinen Onbashira Taisha Festival''' (式年御柱大祭) - Held every six years in the years of the {{ill|Rabbit|卯|1=mǎo|lt=Rabbit (卯)|2=ja|3=卯|1=Rabbit (zodiac)|2=ja|3=卯|4=fr|5=Lapin (astrologie chinoise)|6=nl|7=Konijn (astrologie)|lt=Rabbit (卯)|1=Rabbit (zodiac)|lt=Rabbit (卯)|12=simple|13=User:Immanuelle/Rabbit|13=User:Immanuelle/Rabbit (zodiac)|comment=changed title based on wikidata|qid=Q16662792}} and {{ill|Rooster (zodiac)|en|Rooster (zodiac)|qid=Q822621|lt=Rooster (酉)|1=Rooster (zodiac)}}. This festival involves the raising of sacred pillars and reflects the vibrant traditional culture of the region.<ref name="神々小野"/> 
-* '''Nenjiri-bō Festival''' (ねんじり棒祭) - A competitive ritual dating back to the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}} that involves strength contests with sacred wooden rods. This is designated as a cultural property by Shiojiri City.<ref name="説明板"/>
+* '''Shikinen Onbashira Taisha Festival''' (式年御柱大祭) - Held every six years in the years of the {{ill|Rabbit (zodiac)|卯|lt=Rabbit (卯)|2=ja|3=卯|2=ja|3=卯|4=fr|5=Lapin (astrologie chinoise)|6=nl|7=Konijn (astrologie)|lt=Rabbit (卯)|lt=Rabbit (卯)|12=simple|13=User:Immanuelle/Rabbit|13=User:Immanuelle/Rabbit (zodiac)|comment=changed title based on wikidata|qid=Q16662792}} and {{ill|Rooster (zodiac)|en|Rooster (zodiac)|qid=Q822621|lt=Rooster (酉)}}. This festival involves the raising of sacred pillars and reflects the vibrant traditional culture of the region.<ref name="神々小野"/> 
+* '''Nenjiri-bō Festival''' (ねんじり棒祭) - A competitive ritual dating back to the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}} that involves strength contests with sacred wooden rods. This is designated as a cultural property by Shiojiri City.<ref name="説明板"/>
 * '''festival (八朔祭/田ノ実祭)''' - Celebrated jointly by both shrines on the first Sunday of October to offer thanks for the harvest season.<ref name="神々小野"/>
 
 == Cultural Properties ==
@@ -97,7 +97,7 @@ Yahiko-jinja features four sanctuaries (正殿、副殿、北殿、南殿), each
 * Yahiko-jinja: Nagano Prefecture, Kamiina District, Tatsuno Town, Ono 3267
 
 '''Transportation:'''
-* By train: {{ill|East Japan Railway Company|en|East Japan Railway Company|qid=Q499071|lt=JR East|1=East Japan Railway Company}} Chūō Main Line, Tatsuno Branch, Ono Station (11-minute walk).
+* By train: {{ill|East Japan Railway Company|en|East Japan Railway Company|qid=Q499071|lt=JR East}} Chūō Main Line, Tatsuno Branch, Ono Station (11-minute walk).
 * By bus: Shiojiri Community Bus (北小野線), stop at "Chūgakkō-iriguchi."
 
 == External Links ==
@@ -111,7 +111,7 @@ Yahiko-jinja features four sanctuaries (正殿、副殿、北殿、南殿), each
 {{translated page|ja|小野神社・矢彦神社|version=103049591|comment=Imported full ja history}}
 
 {{Commons category|Ono-jinja (Shiojiri)}}
-{{wikidata link|Q17220832|co|commons:Category:Ono-jinja (Shiojiri)|ja|小野神社・矢彦神社}}
+{{wikidata link|Q17220832|co|commons:Category:Ono-jinja (Shiojiri)|ja|小野神社・矢彦神社|check_date=2026-05-18}}
 [[Category:Natural Monuments Designated by Nagano Prefecture]]
 [[Category:Ni-no-Miya]]
 [[Category:Ono Shrine &#38; Yahiko Shrine]]

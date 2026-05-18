@@ -1,25 +1,22 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
 '''Otomiya Shrine''' (乙宮神社) is a [[:en:Shrines|Shrines]].
 
-* {{ill|Otomiya Shrine (Nagasaki City)|ja|乙宮神社 (長崎市)|12=simple|13=User:Immanuelle/Otomiya Shrine (Nagasaki City)|ja_comment=jawiki link invalid}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}, [[:en:Nagasaki City|Nagasaki City]].
-* {{ill|Otomiya Shrine (Arikawaura, Shinkamigoto)|ja|乙宮神社 (新上五島町漁生浦郷)|12=simple|13=User:Immanuelle/Otomiya Shrine (Arikawaura, Shinkamigoto)|ja_comment=jawiki link invalid}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}, [[Arikawaura, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine (Ogawara, Shinkamigoto)|ja|乙宮神社 (新上五島町小河原郷)|12=simple|13=User:Immanuelle/Otomiya Shrine (Ogawara, Shinkamigoto)|1=Otomiya Shrine|comment=changed title based on wikidata|qid=Q11369925}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}, [[Ogawara, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine (Tategushi, Shinkamigoto)|ja|乙宮神社 (新上五島町立串郷)|12=simple|13=User:Immanuelle/Otomiya Shrine (Tategushi, Shinkamigoto)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture|1=Nagasaki Prefecture}}, [[Tategushi, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine (Kirishima)|ja|乙宮神社 (霧島市)|12=simple|13=User:Immanuelle/Otomiya Shrine (Kirishima)|ja_comment=jawiki link invalid}} - Located in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture|1=Kagoshima Prefecture}}, [[Kirishima City]].
+* {{ill|Otomiya Shrine (Nagasaki City)|ja|乙宮神社 (長崎市)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[:en:Nagasaki City|Nagasaki City]].
+* {{ill|Otomiya Shrine (Arikawaura, Shinkamigoto)|ja|乙宮神社 (新上五島町漁生浦郷)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Arikawaura, Shinkamigoto Town]].
+* {{ill|Otomiya Shrine|ja|乙宮神社 (新上五島町小河原郷)|12=simple|13=User:Immanuelle/Otomiya Shrine (Ogawara, Shinkamigoto)|comment=changed title based on wikidata|qid=Q11369925}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Ogawara, Shinkamigoto Town]].
+* {{ill|Otomiya Shrine (Tategushi, Shinkamigoto)|ja|乙宮神社 (新上五島町立串郷)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Tategushi, Shinkamigoto Town]].
+* {{ill|Otomiya Shrine (Kirishima)|ja|乙宮神社 (霧島市)}} - Located in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}, [[Kirishima City]].
 
 {{disambiguation}}
 
 {{citation needed|ja|乙宮神社|version=39192446|comment=Imported full ja history}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|乙宮神社 (Q135434493)|lt=乙宮神社|qid=Q135434493}} — Kirishima
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|乙宮神社|version=39192446|comment=Imported full ja history}}
 
-{{wikidata link|Q11369923|ja|乙宮神社}}
+{{wikidata link|Q11369923|ja|乙宮神社|check_date=2026-05-18}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
