@@ -15,9 +15,9 @@
 }}
 {{nihongo|'''Nakayama Shrine (Daisen)'''|中山神社 (鳥取県大山町)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
 == instance of (P31) ==
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
 == located in the administrative territorial entity (P131) ==
-* {{ill|Daisen, Tottori|lt=Daisen|arz|دايسن|ceb|Daisen-chō|en|Daisen, Tottori|envoyage|Daisen (Tottori)|es|Daisen (Tottori)|fa|دایسن، توتوری|fi|Daisen (Tottori)|fr|Daisen (Tottori)|hak|Daisen, Tottori|id|Daisen, Tottori|it|Daisen (Tottori)|ja|大山町|ko|다이센정|ms|Daisen, Tottori|my|ဒိုင်းဆင်းမြို့၊ တော့တိုရိ|pl|Daisen (Tottori)|ru|Дайсен (посёлок)|sv|Daisen, Tottori|th|ไดเซ็ง (จังหวัดทตโตริ)|tl|Daisen, Tottori|tr|Daisen, Tottori|uk|Дайсен (Тотторі)|uz|Daisen|vi|Daisen, Tottori|zh|大山町|qid=Q1204975}}
+* {{ill|Daisen, Tottori|arz|دايسن|ceb|Daisen-chō|es|Daisen (Tottori)|fa|دایسن، توتوری|fi|Daisen (Tottori)|fr|Daisen (Tottori)|hak|Daisen, Tottori|id|Daisen, Tottori|it|Daisen (Tottori)|ja|大山町|ko|다이센정|ms|Daisen, Tottori|my|ဒိုင်းဆင်းမြို့၊ တော့တိုရိ|pl|Daisen (Tottori)|ru|Дайсен (посёлок)|sv|Daisen, Tottori|th|ไดเซ็ง (จังหวัดทตโตริ)|tl|Daisen, Tottori|tr|Daisen, Tottori|uk|Дайсен (Тотторі)|ur|ڈائیسن، ٹوٹوری|uz|Daisen|vi|Daisen, Tottori|zh|大山町|qid=Q1204975|lt=Daisen}}
 == coordinate location (P625) ==
 * {{coord|35.499916666666664|133.59411111111112}}
 == image (P18) ==
@@ -29,7 +29,7 @@
 ==References==
 {{commons category|Nakayama-jinja (Daisen, Tottori)}}
 [[JA:中山神社 (鳥取県大山町)]]
-{{wikidata link|Q131611928|co|commons:Category:Nakayama-jinja (Daisen, Tottori)|ja|中山神社 (鳥取県大山町)}}
+{{wikidata link|Q131611928|co|commons:Category:Nakayama-jinja (Daisen, Tottori)|ja|中山神社 (鳥取県大山町)|check_date=2026-05-18}}
 {{translated page|ja|中山神社 (鳥取県大山町)|version=106552026|comment=Imported full ja history}}
 
 [[Category:Need translation]]
