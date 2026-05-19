@@ -154,4 +154,4 @@ the retry — do not replace it with a single-shot push.
   a regular cancel hasn't propagated within ~1 minute.
 
 ## Writing
-- Do not use the word "honest", "honesty", or "honestly". It is aggressively overused. Choose a more precise word that says what you actually mean (e.g. "accurate", "frank", "plainly", "truly").
+- Do not use "honest", "honesty", or "honestly" — and do not swap in "frank", "frankly", "candid", "candidly", or "transparently", which are the same self-congratulatory move in a different coat. When something failed, name the failure: "it didn't work", "I got that wrong", "this failed" — flat, no qualifier. Tagging a report "honest" implies the rest aren't, and couching a failure as honesty asks for credit for the admission, which is worse than the failure itself. Use a precise positive word ("accurate", "plainly", "truly") only when that is genuinely the meaning — never as a halo on a bad outcome.
