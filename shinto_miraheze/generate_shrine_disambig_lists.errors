@@ -6,3 +6,5 @@
 [2026-05-17 15:21:25 UTC] [ERROR] generate_shrine_disambig_lists: SPARQL failed for '香取神社': HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=120)
 [2026-05-17 15:25:59 UTC] [ERROR] generate_shrine_disambig_lists: SPARQL failed for '山神社': 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
 [2026-05-17 15:28:52 UTC] [FATAL] generate_shrine_disambig_lists: 429 Too Many Requests from https://query.wikidata.org/sparql — terminating
+[2026-05-19 03:40:25 UTC] [ERROR] generate_shrine_disambig_lists: SPARQL failed for '鉄道神社': 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
+[2026-05-19 03:40:42 UTC] [FATAL] generate_shrine_disambig_lists: 429 Too Many Requests from https://query.wikidata.org/sparql — terminating
