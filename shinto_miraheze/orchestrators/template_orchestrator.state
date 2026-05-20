@@ -2925,3 +2925,7 @@ Template:If last display both
 Template:If preview
 Template:If role account
 Template:If then show
+Template:If then show/doc
+Template:Ifempty
+Template:Ifeq
+Template:Ifeq/doc
