@@ -4,8 +4,10 @@
 
 - **Plan into `queue.md` FIRST, then execute.** When entering planning mode (or any multi-step think-before-do), the FIRST action is to write the plan into `queue.md` as concrete items. Only then begin executing. Chat context dies on session interrupt; the queue survives. This matters extra here because a lot of work is bot-driven sweeps that take a long time and a session may not survive to finish.
 - **Update `queue.md` in the same commit as the work.** Delete completed items in the same commit — no checkmarks, no status markers. If an item is still in queue.md, it is not done.
+- **Done items go to `DEVLOG.md` in the same commit.** When a queue item is completed: delete it from `queue.md` AND append a dated entry to `DEVLOG.md` describing what shipped (matching the existing `## YYYY-MM-DD` + `### Title` + **Files:** + prose format), in the SAME commit as the code change. `DEVLOG.md` is where "done" lives — `git log` alone loses too much context. Releases and notable incidents also go here.
 - **Mirror `queue.md` into the task tool.** `TaskCreate` items as you add them; mark `in_progress` when starting; `completed` when done. The two views must not drift.
-- **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` (if present) is longer-horizon.
+- **Flow:** `todo.md` (abstract horizons) → `queue.md` (concrete steps) → task tool (in-flight work) → `DEVLOG.md` + `git log` (history). Items only flow forward; do not leave done items behind in `todo.md` or `queue.md`.
+- **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` is longer-horizon. When pulling from `todo.md`, decompose the abstract goal into concrete executable steps before putting it in `queue.md`.
 - **Items handed off to an autonomous backlog are deleted from `queue.md`.** When bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, etc.) is wired into `remote_queue.json` for the remote-Claude cron to consume, the work item leaves `queue.md` — its life is now in the autonomous queue, and duplicating the description in both places is bloat. Keep `queue.md` for items the *human* still needs to track (specific tooling tasks, decisions, scoping questions).
 
 ## Runtime environment

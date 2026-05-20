@@ -15,7 +15,6 @@ Active work queue lives in [queue.md](queue.md) (queue — items are deleted whe
 - [ ] **Hand-convert the remaining fandom `Template:Infobox X` pages to Portable Infobox** — `fandom_unique/` has 255 such templates; 6 are portable, 249 are not. Per the prior analysis (`status.md`): 88 are /doc subpages or redirects (no conversion needed), 95 use Lua/parser-function-driven construction that can't be mechanically translated, 51 use non-numbered-pair patterns, 4 are `child=yes` sub-templates that should stay as children. The remaining ~12-15 plausible mechanical conversions and the high-leverage hand-rewrites (`Template:Infobox religious building`, `Template:Infobox Japanese Temple`, `Template:Infobox Japanese Kofun`, `Template:Infobox Officeholder`, `Template:Infobox Noble`) need careful per-template work with rendering tests on shinto.fandom.com. Until someone is actively curating the fandom mirror, this is not blocking — articles render readably without infoboxes thanks to `cleanup_fandom_pages.py`.
 - [ ] **Translate the remaining ~187 untranslated `need_translation/` files** (most are done; remainder postponed). Blocked on history_offload completion for those pages — translating first would force the archive + revdel step to re-archive a longer history than necessary. See the more detailed entry under "Requires manual intervention" below for the prioritized list.
 - [ ] **ILLs without `WD=`** — see the duplicate entry under Wiki content tasks > High priority. (Deferred — lower priority than the active queue.)
-- [x] **`commit_state.sh` rebase-conflict fix** — shipped 2026-05-10: `.gitattributes` now sets `merge=union` on the 12 line-based orchestrator state files (mainspace, category, template, user, project, file, help, geojson, module, item, property, talk). `duplicate_qids.state` (JSON) and `talk_orchestrator_cursor.state` (single int) are intentionally excluded.
 - [ ] **Retrofit `populate_namespace_layers.py` → `ops/namespace_layers.py`** — mainspace only; creates/edits sibling pages in Data:/Export: namespaces; `HANDLES_SAVE = True`. Blocked on the wiki-side namespace creation.
 
 ## Scheduled review — July 2026
@@ -85,13 +84,11 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 ### Temporary / one-off re-bucketing tasks
 
-- [x] **Re-bucket 300+ untranslated pages with extended thresholds** — Added as temporary step `rebucket_300plus_untranslated` in cleanup loop (2026-04-03). Runs `tag_untranslated_japanese.py --category "Pages with 300+ untranslated japanese characters"` to re-bucket 72 pages into finer-grained categories (up to 5000+). Remove step from workflow after all pages are re-bucketed.
 - [ ] **Strip untranslated character-count categories from already-translated pages** — inverse of `tag_untranslated_japanese.py`. Tracked in `status.md` as task 1.
 - [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
 
 ### Requires manual intervention
 
-- [x] **Figure out `replace_p1027_with_p459.txt`** — resolved 2026-05-10. The source file was already deleted on 2026-05-08 in commit d2a9bd4 (had been zero bytes since the April stale-migration cleanup in f88ddff). Stale 1188-line copies in `_site/` and `modern-quickstatements/_site/` from a pre-deletion GH Pages snapshot also removed. No code references remain.
 - [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
 - [ ] **Translate the remaining untranslated `need_translation/` pages.** As of 2026-05-10, ~187 files still carry `[[Category:Need translation]]` (down from 215 after the recent verified-English-bodied cleanup pass in commits 629e581, 36bf0a3, 5f82924, 98c086f, a98113a). Nine large kokuzo articles are the priority: `国造.wiki` (8669 CJK), `无邪志国造.wiki` (5141), `出雲国造.wiki` (4527), `千葉国造.wiki` (1763), `尾張国造.wiki` (1640), `倭国造.wiki` (1346), `廬原国造.wiki` (982), `斐陀国造.wiki` (854), `伊勢国造.wiki` (841). 83 files are shrine pages with `== Japanese Wikipedia content ==` sections (auto-generated English top + Japanese body). Translate using `{{ill|English|ja|Japanese|lt=Display|lt_ja=Japanese Display}}` per `feedback_translation_link_rules.md` in memory. Never remove `[[Category:Need translation]]` without verifying the body is actually English — CI deletes the file from the repo when the category is gone.
   - **Prerequisite — do NOT start this until history offloading is complete for these pages.** The `history_offload` op (running across all four orchestrators, gated on `ENABLE_HISTORY_OFFLOAD=1` in cleanup-loop.yml) needs to have archived and truncated the revision history of each candidate page before translation-driven edits pile new revisions on top. Translating first would force the archive + revdel step to re-archive a longer history than necessary and dilutes the "converge to one surviving revision" property described in `ops/history_offload.py`. Check `shinto_miraheze/orchestrators/duplicate_qids.state` and the archive repo to confirm coverage before unblocking this task.
@@ -106,8 +103,6 @@ All items below require manual editing or human review. None have a safe automat
 
 ### High priority
 
-- [x] **Fix template categories outside `<noinclude>`** — now automated via `fix_template_noinclude.py` in the cleanup loop.
-- [x] **Resolve migration issues in Category:Erroneous qid category links** — fully cleared 2026-03-12.
 - [ ] **ILLs without `WD=`** — ILL templates missing a `WD=` parameter are broken by design. Run `fix_ill_destinations.py` or a new script to identify and fill in missing `WD=` values. Do not blindly overwrite — check the local context of each.
 - [ ] **Duplicate QID disambiguation pages** — 621 `Q{QID}` mainspace pages point to 2+ categories. Multi-step cleanup in progress: (1) `resolve_double_category_qids.py` now automates the easy cases where all listed categories resolve to the same target (now in cleanup loop). (2) Remaining pages where categories point to genuinely different targets still need human review. Also applies to `[[Category:duplicated qid category redirects]]`.
 - [ ] **Translate all category names in [Category:Japanese language category names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names)** — ensure every category in this tracking set is migrated to a canonical English category title.
@@ -121,8 +116,6 @@ All items below require manual editing or human review. None have a safe automat
 - [ ] **Categories with interwikis but no Wikidata link added** — older script passes added interwiki links without adding the `{{wikidata link}}` template. Re-run the wikidata link script on these.
 - [ ] **Multiple `{{wikidata link}}` on one page** — usually indicates a Wikidata disambiguation issue. Needs per-case review.
 - [ ] **Shikinaisha pages with broken ILL destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
-- [x] **Remove legacy category-page fix templates** — automated via `remove_legacy_cat_templates.py` in the deprecated loop. State unchanged since 2026-03-01 (effectively complete).
-
 ---
 
 ## Repository / script tasks
@@ -143,10 +136,6 @@ All items below require manual editing or human review. None have a safe automat
 
 - [ ] **Manually undelete `User:Immanuelle/common.js` on shinto.miraheze.org via Special:Undelete.** This needs steward / sysop hands — the bot can't restore a JS page belonging to another user. After it's restored, the kludges (`undelete_immanuelle_common_js.py` step in `wiki-cleanup.yml`, undelete step in `import-templates-to-fandom.yml`, the script itself) can be removed; the history_offload guard above prevents re-deletion.
 - [ ] **Audit other deleted JS/CSS user pages** — if the same delete-without-recreate hit any of the existing User-namespace JS/CSS pages on shinto.miraheze.org before the guard landed, they'll need the same manual undelete. Walk Special:Log/delete filtered to ns=2,3 and look for ``.js``/``.css``/``.json`` titles deleted by EmmaBot.
-
-### Orchestrator state can drop on rebase conflict (2026-04-23 → 2026-05-10)
-
-- [x] **`commit_state.sh` bails on rebase conflict** — fixed 2026-05-10 by adding `.gitattributes` with `merge=union` on the 12 line-based orchestrator state files. Concurrent CI runs that both append to a state file now concatenate cleanly instead of rebase-aborting. JSON `duplicate_qids.state` and integer `talk_orchestrator_cursor.state` excluded — their rebase conflicts remain real, but they're rare and the ops are idempotent if state is lost.
 
 ### Drop state files from the wiki↔repo sync scripts (2026-04-23)
 

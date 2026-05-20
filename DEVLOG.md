@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-20
+
+### Queue discipline merged from cleanvibe; todo.md `[x]` purge
+**Files:** `CLAUDE.md`, `todo.md`, `queue.md`, `DEVLOG.md`, `.gitignore`
+
+User flagged that the workflow rules in `CLAUDE.md` (plan into `queue.md` first, delete on completion, mirror to TaskCreate) had not actually been followed — `queue.md` had been touched in only 2 commits ever since being introduced 2026-05-18, despite 71 commits landing in that window. To bring the discipline live: ran `cleanvibe clone --no-claude` into a fresh `.cleanvibe-scratch/sws/` (now gitignored) to see the latest opinionated `CLAUDE.md` cleanvibe injects. The new bit not already encoded here was the **DEVLOG.md-in-same-commit** rule — done items must be deleted from `queue.md` AND appended to `DEVLOG.md` in the same commit, instead of disappearing into `git log` alone. Merged that rule plus the `todo.md → queue.md → task tool → DEVLOG.md` flow diagram into this repo's `CLAUDE.md`.
+
+Audited `todo.md` and removed the 7 `[x]` entries (`commit_state.sh` rebase fix, 300+ untranslated re-bucket, `replace_p1027_with_p459.txt`, template `<noinclude>` fix, erroneous-qid-category-links migration, legacy category-page fix templates removal, `commit_state.sh` rebase-bail). Section headers left empty by those removals were deleted. Populated `queue.md` with two concrete next actions: wire up the GHA remote-Claude consumer for `remote_queue.json`, and CronCreate an in-session self-paced worker as a stopgap.
+
+While auditing the remote-workflow pipeline: `build-remote-queue.yml` is healthy (7 daily rebuilds in a row, latest today), but the consume side has been dead for at least three weeks — zero non-CI commits to `duplicated_content/`, `need_translation/`, `fandom_unique/`, or `miraheze_unique/` since 2026-05-01. The "remote-Claude cron" the queue plan references was either never deployed or was decommissioned. Filed as the top queue item.
+
+---
+
 ## 2026-05-14
 
 ### `iter_category_with_revisions` pagination bug ported to the unique-pages syncs
