@@ -2929,3 +2929,7 @@ Template:If then show/doc
 Template:Ifempty
 Template:Ifeq
 Template:Ifeq/doc
+Template:Ifexist not redirect
+Template:Ifnotempty
+Template:Ifsubst
+Template:Ifsubst/doc
