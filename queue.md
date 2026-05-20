@@ -9,10 +9,6 @@ translation, fandom template fixup, shrine-disambig content strip)
 lives in `remote_queue.json` and is worked by the remote-Claude cron
 — not duplicated here.
 
-## Active
-
-- [ ] **Add `ANTHROPIC_API_KEY` secret to the repo so `consume-remote-queue.yml` can actually run.** The workflow + `consume_remote_queue.py` are wired up, but the API key isn't configured. Until it is, the scheduled fire every 2 hours will error out at the Anthropic SDK call (no destructive side effects — the script bails before writing). Add via `gh secret set ANTHROPIC_API_KEY` or the repo Settings → Secrets UI.
-
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).

@@ -6,6 +6,13 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-20
 
+### Remote queue consumer moved from GHA workflow to claude.ai scheduled routine
+**Files:** removed `.github/workflows/consume-remote-queue.yml`, removed `consume_remote_queue.py`
+
+Initial wire-up of the remote-Claude consumer put it in GitHub Actions calling the Anthropic SDK with an `ANTHROPIC_API_KEY` secret. That's the wrong shape for this repo: GHA in shintowiki-scripts is for repo↔wiki sync (and similar plumbing), not for paying-API LLM grunge work. Replaced with a **claude.ai scheduled routine** (`trig_013F9aeKeL3hx8zo7weKj3Ed`) — runs every 2 hours at :47 UTC, executes inline on Claude infra (no key needed, no GHA), commits + pushes back to main. Uses the same `consume_remote_queue.state` cursor the script would have, just driven by the routine's prompt instead of an SDK call.
+
+Deleted `consume_remote_queue.py` and `.github/workflows/consume-remote-queue.yml` — the routine doesn't need them. The cursor state file `consume_remote_queue.state` will be created on first run.
+
 ### Remote-Claude consumer wired up (`consume-remote-queue.yml`)
 **Files:** `consume_remote_queue.py` (new), `.github/workflows/consume-remote-queue.yml` (new)
 
