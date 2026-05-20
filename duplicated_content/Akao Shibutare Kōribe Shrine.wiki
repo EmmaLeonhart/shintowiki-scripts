@@ -1,4 +1,4 @@
-{{Infobox religious building| religious_affiliation = [[Shinto]]
+{{Infobox religious building
 |name   = Akao Shibutare Kourihe Shrine
 | religious_affiliation = [[Shinto]]
 |image  = {{image requested|cat=Fukuroi City|qq=}}
@@ -13,7 +13,6 @@
 |Festivals  = October 15 (currently held on the second Sunday of October as part of the [[Fukuroi Festival]])<ref name="official">[https://shibutarejinja.wixsite.com/website-1 Akao Shibutare Kourihe Shrine Official Website]</ref>
 |Rituals   =
 |Map       = {{maplink2|frame=yes|plain=yes|type=point|zoom=13|frame-align=center|frame-width=220|coord={{coord|34|44|27.0|N|137|56|14.2|E|qq=}}|qq=}}
-|location = {{ill|Fukuroi|qid=Q821337|1=Fukuroi, Shizuoka}}
 }}
 '''Akao Shibutare Kourihe Shrine''' (赤尾減垂郡辺神社, Akao Shibutare Kōrihe Jinja) is a Shinto shrine located in Takao, [[Fukuroi City]], {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}. It is recorded as a {{ill|Shikinai Ronsha|qid=Q135022904}} of the [[Engishiki Jinmyōchō]] in [[Tōtōmi Province]], identified with {{ill|Kohoriheno Shrine|lt=Kohoriheno Shrine|qid=Q135039620}}.
 == Overview ==
