@@ -6,6 +6,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-20
 
+### Remote-Claude consumer wired up (`consume-remote-queue.yml`)
+**Files:** `consume_remote_queue.py` (new), `.github/workflows/consume-remote-queue.yml` (new)
+
+`build-remote-queue.yml` had been rebuilding `remote_queue.json` daily for at least three weeks (1,097 items at last build), but no consumer was committing back — zero non-CI edits to `duplicated_content/`, `need_translation/`, `fandom_unique/`, or `miraheze_unique/` since 2026-05-01. The "remote-Claude cron" referenced in `queue.md` either was never deployed or got decommissioned.
+
+Wrote `consume_remote_queue.py` — an Anthropic SDK consumer that walks the queue via a cursor in `consume_remote_queue.state`. Each run picks N items (default 3, cap 20), sends each as `(per-item instruction + delimited file contents)` to `claude-opus-4-7`, and writes the returned text back to the file. System prompt is cached (`cache_control: ephemeral`) so multi-item runs amortize. The model is instructed to return ONLY the new file body — no preamble, no fences — and to return the input verbatim when the instruction doesn't apply. Skips empty responses, identical outputs, and missing files (race with the wiki-cleanup sync that deletes local files when their category leaves the wiki).
+
+`consume-remote-queue.yml` fires every 2 hours at minute 17 with `cancel-in-progress: false`, `timeout-minutes: 30`. At N=3 / 2-hour cadence that's ~36 items/day — roughly 30 days to drain the current queue. Tunable via `workflow_dispatch.inputs.max_edits` or by editing the cron. The commit message uses the `[skip ci]` marker so it doesn't trigger further loops.
+
+**Dependency:** the workflow needs `ANTHROPIC_API_KEY` as a repo secret. None of the existing secrets (`WIKI_PASSWORD`, `BOT_TOKEN`, `FANDOM_*`, `QS_*`, `MW_BOTNAME`, `ARCHIVE_REPO_DEPLOY_KEY`) are an Anthropic key, so the scheduled runs will error out at the SDK call until the secret is added — flagged in `queue.md` as the open follow-up.
+
 ### Queue discipline merged from cleanvibe; todo.md `[x]` purge
 **Files:** `CLAUDE.md`, `todo.md`, `queue.md`, `DEVLOG.md`, `.gitignore`
 
