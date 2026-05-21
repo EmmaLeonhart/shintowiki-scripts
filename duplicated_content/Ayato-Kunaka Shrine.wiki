@@ -1,4 +1,3 @@
-{
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |Name         = Ayatokunaka Shrine (綾戸國中神社)
 |image        = File:Ayatokunaka jinja.JPG
@@ -8,7 +7,6 @@
 |Map Code     = JP
 |Map          = Japan Kyoto city2
 |Label Position = right
-|Deities      = '''Ayato Shrine'''<br/>{{ill|Magatsuhi-no-kami|ja|大綾津日神|12=simple|13=User:Immanuelle/Ōagatashinokami|ja_comment=jawiki redirects to 禍津日神|comment=changed title based on wikidata|qid=Q11591203}}・{{ill|Ōnaobi no Kami|ja|大直日神|12=simple|13=User:Immanuelle/Ōnaohinokami|ja_comment=jawiki redirects to 直毘神|comment=changed title based on wikidata|qid=Q11581794}}・{{ill|Kamuna'obi|ja|神直日神|12=simple|13=User:Immanuelle/Kaminahinokami|comment=changed title based on wikidata|qid=Q86725467}}<br/> '''Kunikai Shrine'''<br/> {{ill|Susanoo-no-Mikoto|ja|素盞嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
 |Rank         = Shikinaisha (small) ・ {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Village Shrine|1=Modern system of ranked Shinto shrines}}
 |Founding     = 
 |Main Hall    = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Ryuzō}}
@@ -38,8 +36,6 @@ However, during the Sengoku period, Kunaka Shrine was relocated to the precincts
 === Kuze Komagata Child Priest ===
 The Kuze Komagata Child Priest of the {{ill|Gion Matsuri|en|Gion Matsuri|qid=Q979873|lt=Gion Festival}} is selected from among the parishioners of this shrine. In the divine processions (Shinkō-sai and Kankō-sai) of the Gion Festival, the child priest rides a horse and leads the portable shrine ({{ill|Mikoshi|en|Mikoshi|qid=Q979940|lt=Mikoshi}}) in which {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} is calmed; the wooden carving of a horse’s neck (Komagata) worn on the chest is modeled after the sacred object of Kunaka Shrine.<ref name="三嶋亭">[http://www.mishima-tei.co.jp/news/0005.html Kuze Komagata Child Priest took a break – Mishima-tei] 2018th year 6月1日　閲覧</ref> Normally, within the shrine precincts, child priests armed with long-tachi halberds—and even members of the imperial family—are required to dismount (imperial dismount), but the Kuze Komagata Child Priest, by divine mandate, does not dismount and proceeds directly into the precincts of {{ill|Yasaka Shrine|en|Yasaka Shrine|qid=Q692714|lt=Yasaka Shrine}}. Furthermore, it is said that the {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} of Yasaka Shrine is of the nigimitama (harmonious spirit), whereas that of Ayatokunaka Shrine is of the aramitama (rough spirit).<ref name="三嶋亭" />
 == Local Information ==
-; Location
-* {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}}{{ill|Minami-ku, Kyoto|en|Minami-ku, Kyoto|qid=Q1154649|lt=Minami Ward}} Kuze Kamikuze-cho 446
 ; Access
 * Nearest station: {{ill|JR Kyōto Line|en|JR Kyōto Line|qid=Q1195820|lt=JR Kyoto Line}} – after disembarking at {{ill|Katsuragawa Station (Kyoto)|en|Katsuragawa Station (Kyoto)|qid=Q1071814|lt=Kaguigawa Station}}, approximately a 6-minute walk
 ; Surroundings
