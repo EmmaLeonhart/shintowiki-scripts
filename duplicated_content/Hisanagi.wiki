@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hisanagi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
-'''Hisangi''' (非参議) refers to the following:
+'''Hisanagi''' (非参議) refers to the following:
 # Individuals Ranked {{ill|Junior Third Rank|ja|従三位|1=Junior Third Rank|12=simple|13=User:Immanuelle/Junior Third Rank|13=User:Immanuelle/Junior Third Rank|qq=}} ({{ill|Kugyō|1=Kugyō|2=ja|3=公卿|ja|Kugyō|1=Kugyō|2=ja|3=公卿|1=Kugyō|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}) or higher who have not yet been {{ill|appointed|ja|任官|12=simple|13=User:Immanuelle/appointed|1=ninkan|comment=changed title based on wikidata|qid=Q11267917}} as {{ill|Sangi (Japan)|en|Sangi (Japan)|qid=Q1133663|lt=Sangi|1=Sangi (Japan)}}. This is the most common usage of the term.
 # Individuals of {{ill|Fourth Rank|ja|四位|12=simple|13=User:Immanuelle/Fourth Rank|1=Fourth Rank|comment=changed title based on wikidata|qid=Q11419606}} who once served as Sangi but have since retired. In this case, they may also be referred to as '''Zensangi''' (前参議).
 # Individuals of Fourth Rank who are eligible to become Sangi (i.e., candidates for the position).
@@ -14,8 +14,7 @@ Examples of Fourth Rank officials eligible to become Sangi include:
 * {{ill|Sahyōe no Kami|ja|左兵衛督|12=simple|13=User:Immanuelle/Sahyōe no Kami|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}} - Chief of the {{ill|Sahyōefu|ja|左兵衛府|12=simple|13=User:Immanuelle/Sahyōefu|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}}
 * {{ill|Uhyōe no Kami|ja|右兵衛督|12=simple|13=User:Immanuelle/Uhyōe no Kami|1=uhyouenokami|comment=changed title based on wikidata|qid=Q115215287}} - Chief of the {{ill|Uhyōefu|ja|右兵衛府|12=simple|13=User:Immanuelle/Uhyōefu|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}}
 * {{ill|Shikibu Taifu|ja|式部大輔|12=simple|13=User:Immanuelle/Shikibu Taifu|ja_comment=jawiki redirects to 式部省|1=Shikibu-shō|comment=changed title based on wikidata|qid=Q3727885}} - Deputy of the {{ill|Shikibu-shō|en|Shikibu-shō|qid=Q3727885|lt=Ministry of Ceremonial Affairs|1=Shikibu-shō}}, who served as {{ill|Emperor of Japan|en|Emperor of Japan|qid=Q208233|lt=Emperor|1=Emperor of Japan}}’s {{ill|tutor|ja|侍読|12=simple|13=User:Immanuelle/tutor|1=imperial tutor|comment=changed title based on wikidata|qid=Q11385487}}
-* {{ill|Sachūben|ja|左中弁|12=simple|13=User:Immanuelle/Sachūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}}<ref>Note that while also serving as a Hangan in the Daijōkan, the {{ill|Uchūben|ja|右中弁|12=simple|13=User:Immanuelle/Uchūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}} does not fall under this Category:Pages with redlinks to fill]]
-[[Category.</ref> - Hangan in the Daijōkan with considerable seniority
+* {{ill|Sachūben|ja|左中弁|12=simple|13=User:Immanuelle/Sachūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}}<ref>Note that while also serving as a Hangan in the Daijōkan, the {{ill|Uchūben|ja|右中弁|12=simple|13=User:Immanuelle/Uchūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}} does not fall under this category.</ref> - Hangan in the Daijōkan with considerable seniority
 * {{ill|Kokushi (official)|en|Kokushi (official)|qid=Q1351234|lt=Kokushi|1=Kokushi (official)}} - Officials who successfully governed five provinces
 == References ==
 <references />
@@ -26,10 +25,6 @@ Examples of Fourth Rank officials eligible to become Sangi include:
 * {{ill|Han-ke (Kuge)|ja|半家 (公家)|1=Half-house (Kuge)|2=ja|3=半家 (公家)|12=simple|13=User:Immanuelle/Han-ke (Kuge)|qq=}}
 {{Japanese-history-stub}}
 {{translated page|ja|非参議|version=61450233|comment=Imported full ja history}}
-}}
-{{draft categories|
 
 [[Category:Extraordinary Government Officials of Ancient Japan]]
-[[Category:subst:PAGENAME}}
-
 [[Category:Wikidata no short description]]
