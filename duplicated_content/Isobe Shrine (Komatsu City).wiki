@@ -1,4 +1,5 @@
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+{{Infobox religious building
+| religious_affiliation = [[Shinto]]
 | name        = Isobe Shrine
 | image       = File:Isobe jinja - 2016.jpg
 | coordinates = {{Coord|36.40661111111111|N|136.50283333333334}}

@@ -1,13 +1,8 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iwa_Shrine_%28Kashiwara%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{
-{
 {{Infobox religious building|
 |Name=Iwa Shrine
 |image=File:Iwa-Jinja01.JPG
 |Location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}{{ill|Kashiwara|en|Kashiwara|qid=Q873583|lt=Kashiwara City|1=Kashiwara}} Taiheiji 2-19-13
-|Latitude degrees = 34 | Latitude minutes = 34 | Latitude seconds = 55.4 | Hemisphere = N
-|Longitude degrees = 135 | Longitude minutes = 38 | Longitude seconds = 0.7 | Hemisphere = E
-|Map country code = JP
 |Map = Japan Osaka
 |Enshrined deity={{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime Hime|1=Princess Ishi-hime}}
 |Shrine Rank={{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)<br />Formerly {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
@@ -19,7 +14,6 @@
 |Rituals=
 |prefecture= {{ill|Kashiwara|qid=Q873583|1=Kashiwara}}
 |coordinates= {{Coord|34.582055555555556|N|135.63352777777777}}
-|deity= {{ill|Ishihime|qid=Q11585498|1=Princess Ishi-hime}}
 }}
 [[File:Iwa-jinja (Kashiwara), torii.jpg|thumb|250px|right|{{center|Torii}}]]
 '''Iwa Shrine''' (石神社) is a Shinto shrine located in Taiheiji, Kashiwara City, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and its former shrine Rank was {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}.
@@ -75,7 +69,6 @@ The path leading north in front of the shrine is part of an ancient route that r
 |}
 
 {{translated page|ja|石神社 (柏原市)|version=92447432|comment=Imported full ja history}}
-{{Commons category|Iwa-jinja (Kashiwara)}}
 
 [[Category:Buildings and structures in Kashiwara, Osaka]]
 [[Category:History of Kashiwara, Osaka]]
