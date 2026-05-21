@@ -1,38 +1,24 @@
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
-| name=Chiryu Shrine
-| image=File:Chiryu Jinja Haiden.jpg
-| location={{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, Nishimachi Kanda 12
-| coordinates={{Coord|35.013136|N|137.041111}}
-| deity={{ill|Ugayafukiaezu|qid=Q1373935}}
-| Shrine_Rank=[[Shikinaisha|Shikinaisha]] (small)<br />[[Mikawa Province|Mikawa Province]] [[Ninomiya|Second Shrine]]<br />Former [[Prefectural Shrine]]
-| founded=(Traditional) Reign of Emperor Keikō (12th Emperor)
-| Main_hall=Three-bay Nagare-zukuri, thatched with cypress bark<br />(The shrine buildings are in the Owari-zukuri style)
-| Other_names=Ikeshiruhime Daimyōjin
-| Sacred_sites=One of the Three Shrines of the Tōkaidō
-| annual_festival=[[May 3]] (Chiryu festival)
-| Cultural_properties=Pagoda (Important Cultural Property) and others
+{{Infobox religious building
+| religious_affiliation = [[Shinto]]
+| name = Chiryu Shrine
+| image = File:Chiryu Jinja Haiden.jpg
+| location = {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, Nishimachi Kanda 12
+| coordinates = {{Coord|35.013136|N|137.041111}}
+| deity = {{ill|Ugayafukiaezu|qid=Q1373935}}
+| Shrine_Rank = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}（small）<br />{{ill|Mikawa Province|en|Mikawa Province|qid=Q768158|lt=Mikawa Province}} {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya}}<br />Former {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
+| founded = Traditionally during the reign of {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Emperor Keikō}} (12th emperor)
+| Main_hall = Three-bay {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} with hinoki bark roofing<br />(Shrine buildings are in the Owari style)
+| alternate_name = Ikerifuno Daimyojin
+| Pilgrimage_route = One of the three shrines along the Tokaido
+| annual_festival = {{ill|May 3|en|May 3|qid=Q2547|lt=May 3}} ({{ill|Chiryu festival|ja|知立まつり|12=simple|13=User:Immanuelle/Chiryu festival|qq=}})
+| Cultural_properties = Tahoto Pagoda (Important Cultural Property) and others
 | map = {{location map|Japan Aichi|lat_deg=35|lat_min=0|lat_sec=47.2|lon_deg=137|lon_min=2|lon_sec=28|label=Chiryu Shrine|position=top|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20|qq=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|frame-align=center|frame-width=200|coord={{coord|35|0|47.2|N|137|2|28|E|qq=}}|qq=}}
-| name=Chiryu Shrine
-| location={{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, Nishimachi Kanda 12
-| Sacred_objects= 
-| Shrine_Rank={{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}（small）<br />{{ill|Mikawa Province|en|Mikawa Province|qid=Q768158|lt=Mikawa Province}} {{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}}<br />Former {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
-| founded=Traditionally during the reign of {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Emperor Keikō}} (12th emperor)
-| Main_hall=Three-bay {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} with hinoki bark roofing<br />(Shrine buildings are in the Owari style)
-| alternate_name=Ikerifuno Daimyojin
-| Pilgrimage_route=One of the three shrines along the Tokaido
-| annual_festival={{ill|May 3|en|May 3|qid=Q2547|lt=May 3}} ({{ill|Chiryu festival|ja|知立まつり|12=simple|13=User:Immanuelle/Chiryu festival|qq=}})
-| Rituals= 
-| Cultural_properties=Tahoto Pagoda (Important Cultural Property) and others| map={{location map|Japan Aichi|lat_deg=35|lat_min=0|lat_sec=47.2|lon_deg=137|lon_min=2|lon_sec=28|label=Chiryu Shrine|position=top|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20|qq=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|frame-align=center|frame-width=200|coord={{coord|35|0|47.2|N|137|2|28|E|qq=}}|qq=}}
-| prefecture={{ill|Nishi-machi|qid=Q56856752}}
-| architecture_style={{ill|Owari-zukuri|qid=Q11465322}}
+| prefecture = {{ill|Nishi-machi|qid=Q56856752}}
+| architecture_style = {{ill|Owari-zukuri|qid=Q11465322}}
 }}
 [[File:Chiryu-jinja torii.JPG|thumb|Torii]]
-'''Chiryu Shrine''' (知立神社)   is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, Nishimachi. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, a {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya}} of {{ill|Mikawa Province|en|Mikawa Province|qid=Q768158|lt=Mikawa Province}}, and its former shrine Rank is {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}.
-The former name of the shrine is "Ikerifuno Daimyojin." During the Edo period, it was counted as one of the "Three Shrines of the Tokaido."[[File:Chiryu-jinja torii.JPG|thumb|Torii]]
-'''Chiryu Shrine''' (知立神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, Nishimachi. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and the second shrine of {{ill|Mikawa Province|en|Mikawa Province|qid=Q768158|lt=Mikawa Province}}. The former shrine Rank is Prefectural Shrine.
-The old name is "Ikeshiruhime Daimyōjin". In the Edo period, it was counted as one of the "Three Shrines of the Tōkaidō".
+'''Chiryu Shrine''' (知立神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} located in {{ill|Chiryū|en|Chiryū|qid=Q223496|lt=Chiryu}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, Nishimachi. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and the {{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya}} (second shrine) of {{ill|Mikawa Province|en|Mikawa Province|qid=Q768158|lt=Mikawa Province}}. Its former shrine rank is {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}} (Prefectural Shrine). The former name of the shrine is "Ikerifuno Daimyojin." During the Edo period, it was counted as one of the "Three Shrines of the Tōkaidō."
 == Deities ==
 <div class="thumb tright">
  <div style="margin: 0px; padding: 2px; border: 1px solid #a2a9b1; text-align: center; border-collapse: collapse; font-size: 95%; text-align:center; font-size:80%">
@@ -45,7 +31,6 @@ The old name is "Ikeshiruhime Daimyōjin". In the Edo period, it was counted as 
 {{familytree|border=0|||||01| 01=Kamuyamato Iwarebiko no Mikoto<br />（Emperor Jimmu）|qq=}}
 {{familytree/end|qq=}}
 </div></div>
-== Deities ==
 The enshrined deities are the following six pillars. The four main deities are enshrined together with two additional deities in the associated shrine.<ref name="History Book">Shrine history book.</ref>
 ; Main deities
 :* {{ill|Ugayafukiaezu|en|Ugayafukiaezu|qid=Q1373935|lt=Ugayafukiaezu}} （Main deity）
