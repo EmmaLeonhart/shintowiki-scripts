@@ -5,12 +5,12 @@
 | listclass = hlist
  |group2 = Shrines
  |list2 =
-* {{ill|Ame-no-Tanagao Shrine|ja|天手長男神社|simple|12=simple|13=User:Immanuelle/Ame-no-Tanagao Shrine|12=simple|13=User:Immanuelle/Ame-no-Tanagao Shrine|qq=}}
-* {{ill|Iki Gokoku Shrine|ja|壱岐神社|simple|Iki_Gokoku_Shrine|en:draft|fr|Iki-gokoku-jinja|12=simple|13=User:Immanuelle/Iki Gokoku Shrine|12=simple|13=User:Immanuelle/Iki Gokoku Shrine|qq=}}
-* {{ill|Kō Shrine|ja|興神社|1=Kō Shrine|simple|Kō_Shrine|en:draft|12=simple|13=User:Immanuelle/Kō Shrine|13=User:Immanuelle/Kō Shrine|12=simple|13=User:Immanuelle/Kō Shrine|13=User:Immanuelle/Kō Shrine|qq=}}
-* {{ill|Sumiyoshi Shrine (Iki City)|en|lt=Sumiyoshi Shrine|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Iki City)|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Iki City)|qq=}}
-* {{ill|Shoumogu|ja|聖母宮|12=simple|13=User:Immanuelle/Shoumogu|12=simple|13=User:Immanuelle/Shoumogu|qq=}}
-* {{ill|Tsukiyomi-jinja (Iki)|ja|月讀神社_(壱岐市)|12=simple|13=User:Immanuelle/Tsukiyomi-jinja (Iki)|12=simple|13=User:Immanuelle/Tsukiyomi-jinja (Iki)|qq=}}
+* {{ill|Ame-no-Tanagao Shrine|ja|天手長男神社|simple|12=simple|13=User:Immanuelle/Ame-no-Tanagao Shrine|12=simple|13=User:Immanuelle/Ame-no-Tanagao Shrine}}
+* {{ill|Iki Gokoku Shrine|ja|壱岐神社|simple|Iki_Gokoku_Shrine|en:draft|fr|Iki-gokoku-jinja|12=simple|13=User:Immanuelle/Iki Gokoku Shrine|12=simple|13=User:Immanuelle/Iki Gokoku Shrine}}
+* {{ill|Kō Shrine|ja|興神社|1=Kō Shrine|simple|Kō_Shrine|en:draft|12=simple|13=User:Immanuelle/Kō Shrine|13=User:Immanuelle/Kō Shrine|12=simple|13=User:Immanuelle/Kō Shrine|13=User:Immanuelle/Kō Shrine}}
+* {{ill|Sumiyoshi Shrine (Iki City)|en|lt=Sumiyoshi Shrine|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Iki City)|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Iki City)}}
+* {{ill|Shoumogu|ja|聖母宮|12=simple|13=User:Immanuelle/Shoumogu|12=simple|13=User:Immanuelle/Shoumogu}}
+* {{ill|Tsukiyomi-jinja (Iki)|ja|月讀神社_(壱岐市)|12=simple|13=User:Immanuelle/Tsukiyomi-jinja (Iki)|12=simple|13=User:Immanuelle/Tsukiyomi-jinja (Iki)}}
 }}<noinclude>
 
 ==See Also==
@@ -23,6 +23,6 @@
 [[Category:Templates fixed with noinclude]]
 </noinclude>
 <noinclude>
-{{wikidata link||simple|Iki Shrines}}
+{{wikidata link||simple|Iki Shrines|check_date=2026-05-21}}
 [[Category:Templates fixed with noinclude]]
 </noinclude>
