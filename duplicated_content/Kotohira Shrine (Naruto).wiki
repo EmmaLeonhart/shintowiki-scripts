@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kotohira_Shrine_%28Naruto%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Kotohira Shrine (金刀比羅神社)
-| religious_affiliation = [[Shinto]]
 |image = File:Naruto-Kotohira-Jinjya.jpeg
 | location = {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima|1=Tokushima Prefecture}}, [[Naruto City|Naruto]], [[Muyachō Kizu|撫養町木津]] 395-1
 | coordinates ={{Coord|34.171462|N|134.584999}}  
@@ -10,9 +9,8 @@
 | Established = 
 | MainHall = 
 | Alternatename = 
-| AnnualFestival = 
-| Rituals = 
-| location = {{ill|Naruto|qid=Q460812|1=Naruto, Tokushima}}
+| AnnualFestival =
+| Rituals =
 }}
 '''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto|1=Naruto, Tokushima}}, Tokushima Prefecture.
 == History ==
