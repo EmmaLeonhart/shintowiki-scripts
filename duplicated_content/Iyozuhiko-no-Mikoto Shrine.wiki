@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iyozuhiko-no-Mikoto_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name=Iyozuhiko-no-Mikoto Shrine
 |image=File:Iyozuhiko no mikoto jinja haiden.jpg
 |location={{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture|1=Ehime Prefecture}}, {{ill|Matsuyama|en|Matsuyama|qid=Q200022|lt=Matsuyama|1=Matsuyama}}, Iaisou 2-2-1
@@ -20,7 +20,7 @@
 [[File:Imperial Seal of Japan.svg|thumb|130px|right|Shrine Crest (Sixteen-petaled chrysanthemum)]]
 '''Iyozuhiko-no-Mikoto Shrine'''（伊豫豆比古命神社）is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in Iaisou Town, {{ill|Matsuyama|en|Matsuyama|qid=Q200022|lt=Matsuyama|1=Matsuyama}}, {{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture|1=Ehime Prefecture}}. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and an old {{ill|Prefectural Shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}. The shrine crest is a sixteen-petaled chrysanthemum. Locally, it is also known as '''Tsubaki Shrine''' or '''O-Tsubaki-san'''.
 The shrine is sometimes spelled with づ tsu and sometimes with a ず. The kana are pronounced identically in most dialects of Japanese though. The shrine officially uses づ,
-== deity ==
+== Enshrined Deities ==
 * {{ill|Iyozuhiko-no-Mikoto|ja|伊豫豆比古命|12=simple|13=User:Immanuelle/Iyozuhiko-no-Mikoto|ja_comment=jawiki link invalid|qid=Q135505756|1=Iyozuhiko-no-Mikoto}} (male deity)
 * {{ill|Iyozuhime-no-Mikoto|ja|伊豫豆比売命|12=simple|13=User:Immanuelle/Iyozuhime-no-Mikoto|ja_comment=jawiki link invalid|qid=Q135505758|1=Iyozuhime-no-Mikoto}} (female deity)
 * {{ill|Iyonushi-no-Mikoto|ja|伊与主命|12=simple|13=User:Immanuelle/Iyonushi-no-Mikoto|ja_comment=jawiki link invalid|qid=Q135505760|1=Iyonushi-no-Mikoto}} (male deity)
@@ -142,7 +142,6 @@ The Combined Fire, also known as the Five Feast Fires, involves residents along 
 {{Shinto Horizontal}}
 {{shinto-stub}}
 {{Beppyo Shrines}}
-\
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
