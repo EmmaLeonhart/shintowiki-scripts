@@ -1,9 +1,8 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=J%C5%ABgosha_Shrine_%28Okaya_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25075158020|manual triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Jūgosha Shrine (十五社神社)
-| religious_affiliation = [[Shinto]]
 |image = File:Juugosya jinja ooga.jpg
-| a11ress = Ōga 2281, Yamagata City, Gifu Prefecture, Japan
+| address = Ōga 2281, Yamagata City, Gifu Prefecture, Japan
 | coordinates = {{Coord|35.545111|N|136.759611}}
 | deities = {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi|qq=}} and 15 other enshrined deities (20 pillars in total)
 | classification = Former Gō-sha, {{ill|Kinpeisha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|1=Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}}
@@ -18,8 +17,6 @@
  |Show Gifu Prefecture map
  }}
 | location = {{ill|Yamagata|qid=Q773311|1=Yamagata, Gifu}}
-| deity = {{ill|Amenotokotachi|qid=Q10939047|1=Ame-no-Tokotachi}}
-| architecture_style = {{ill|nagare-zukuri|qid=Q210684|1=Nagare-zukuri}}
 }}
 '''Jūgosha Shrine''' (十五社神社) is a Shinto shrine located in {{ill|Yamagata, Gifu|en|Yamagata, Gifu|qid=Q773311|lt=Yamagata City|1=Yamagata, Gifu}}, Gifu Prefecture. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}, it held the Rank of {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} and was classified as a {{ill|Kinpeisha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|1=Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}} under Gifu Prefecture’s unique shrine classification system. It was established in {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)|1=Tenchō}} 3 (826 CE) by {{ill|Haruhara Ioe|ja|春原五百枝|12=simple|13=User:Immanuelle/Haruhara Ioe|1=Haruhara no Ioe|comment=changed title based on wikidata|qid=Q11513416}}, who constructed the shrine to enshrine the deity known as "Amatsukami Daimyōjin."
 The shrine enshrines deities from the {{ill|Kamiyonanayo|en|Kamiyonanayo|qid=Q3275893|lt=Kamiyonanayo|1=Kamiyonanayo}}, the divine lineage of Japan’s emperors, and the tutelary deities of the Genji clan, offering blessings for national security, prosperity of the imperial family, and familial safety.
