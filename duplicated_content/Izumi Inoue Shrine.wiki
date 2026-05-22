@@ -1,10 +1,7 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izumi_Inoue_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{
-{
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+{{Infobox religious building|religious_affiliation = [[Shinto]]
 |image = File:泉井上神社 和泉市にて Izumi-Inoue-jinja 2012.12.14 - panoramio.jpg
 |name = Izumi Inoue Shrine
-|location = 6-2-38 Fuchū-chō, Izumi City, Osaka Prefecture, Japan
 |coordinates = {{Coord|34.487056|N|135.427639}}
 |deity = {{ill|Kotoamatsukami|qid=Q776371|1=Kotoamatsukami}}|status = {{ill|Shikinaisha|en|12=simple|13=User:Immanuelle/Shikinaisha|qq=}} (minor) <br>Former {{ill|Fusha|ja|府社|1=Fu-sha|qid=Q134917326}}{{efn|lt=Fu-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917326|qq= 近代社格制度}} <br> Sōja of {{ill|Izumi Province|en|12=simple|13=User:Immanuelle/Izumi Province|qq=}}|establishment = Unknown
 |main_hall = {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Ōtori-zukuri|1=Taisha-zukuri}}
