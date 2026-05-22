@@ -1,20 +1,18 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Konpira_Shrine_%28Tokushima%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25098527498|time triggered pipeline]] -->
 {{Otheruses|a shrine located in Seimichō, Tokushima City|a shrine located in Kawauchichō, Tokushima City|Kotohira Shrine (Kawauchichō, Tokushima City)}}
-{{Infobox religious building| religious_affiliation = [[Shinto]]
+{{Infobox religious building
 | name = Kotohira Shrine (金刀比羅神社)
 | religious_affiliation = [[Shinto]]
 |image = File:Kotohirajinja-seimicho.jpeg
 | location = {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima|1=Tokushima Prefecture}}, [[:en:Tokushima City|Tokushima]], {{ill|Seimichō|ja|勢見町|12=simple|13=User:Immanuelle/Seimichō|1=Seimicho|comment=changed title based on wikidata|qid=Q11400568}} 1-chōme 1
 | coordinates = {{Coord|34.0607917|N|134.5463}}
 | Deities = {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi no Mikoto|1=Ōmononushi}} ([[Konpira Gongen]])
-| Classification = 
-| Established = 
-| MainHall = 
-| Alternatename = 
+| Classification =
+| Established =
+| MainHall =
+| Alternatename =
 | AnnualFestival = {{ill|November 10|en|November 10|qid=Q2988|lt=November 10|1=November 10}}
-| Rituals = 
-| location = {{ill|Tokushima|qid=Q207309|1=Tokushima (city)}}
-| deity = {{ill|Ōmononushi|qid=Q10936701|1=Ōmononushi}}
+| Rituals =
 }}
 '''Kotohira Shrine''' (金刀比羅神社) is a {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}} shrine located in {{ill|Seimichō|ja|勢見町|12=simple|13=User:Immanuelle/Seimichō|1=Seimicho|comment=changed title based on wikidata|qid=Q11400568}}, Tokushima City, Tokushima Prefecture. Situated at the base of {{ill|Mount Bizan|en|Mount Bizan|qid=Q8189109|lt=Mt. Bizan|1=Mount Bizan}}, it is one of the three significant {{ill|Kotohira shrines|lt=Kotohira shrines|lt=Kotohira Shrines|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrines|comment=enwiki is a redirect}} in Tokushima Prefecture, alongside those in {{ill|Kawauchichō, Tokushima City|ja|川内町 (徳島市)|12=simple|13=User:Immanuelle/Kawauchichō, Tokushima City|1=Kawauchichō|comment=changed title based on wikidata|qid=Q11477745}} and {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto City|1=Naruto, Tokushima}}. Locals affectionately refer to it as the "Kotohira of Seimi."
 The shrine grounds house Japan’s largest stone lantern, standing 10.24 meters tall, which has been designated a {{ill|Tokushima City Heritage|ja|とくしま市民遺産|12=simple|13=User:Immanuelle/Tokushima City Heritage|1=Q11273094|comment=changed title based on wikidata|qid=Q11273094}}.
