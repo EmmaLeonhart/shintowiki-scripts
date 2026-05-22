@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kawaguchi_Sengen_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Kawaguchi Asama Shrine
-| religious_affiliation = [[Shinto]]
 |image = [[File:Kawaguchi-asama-jinja haiden and sugi (1).JPG|270px]]<br/>"Gonishirushi" of the Seven Sacred Cedars and Worship Hall<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=11|frame-align=center|frame-width=270|coord={{coord|35|31|51.8|N|138|46|29.8|E}}}}
 |location = {{ill|Fujikawaguchiko|en|Fujikawaguchiko|qid=Q1004231|lt=Fujikawaguchiko, Minamitsuru District|1=Fujikawaguchiko}}, {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}
 |Latitude degrees = 35 |Latitude minutes = 31 |Latitude seconds = 51.84
