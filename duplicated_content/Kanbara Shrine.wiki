@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kanbara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
-{{Infobox religious building| religious_affiliation = [[Shinto]]
+{{Infobox religious building
 |name = Kanbara Shrine
 | religious_affiliation = [[Shinto]]
 |image = File:Kambarajinjahonden.JPG
@@ -12,7 +12,6 @@
 |alternate_name = Kanpō Daimyōjin
 |Festival = November 9
 |Rituals = Kamiari Festival<br />Shishi-mai (Lion Dance)
-|location = {{ill|Unnan|qid=Q877935|1=Unnan}}
 }}
 '''Kanbara Shrine''' (神原神社) is a Shinto shrine located in {{ill|Kamochō|ja|加茂町|12=simple|13=User:Immanuelle/Kamochō|1=kamochou|comment=changed title based on wikidata|qid=Q11398866}}, {{ill|Unnan|en|Unnan|qid=Q877935|lt=Unnan City|1=Unnan}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}. It is known for the discovery of a {{ill|triangular-rimmed divine beast mirror|ja|三角縁神獣鏡|1=Triangular-Rimmed Divine Beast Mirror|12=simple|13=User:Immanuelle/triangular-rimmed divine beast mirror|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror|qq=}} with the inscription "Jingchu 3rd Year" during the excavation of an ancient Kofun on its former grounds.
 == Deities ==
@@ -47,7 +46,6 @@ The annual festival held on November 9 includes a lion dance, designated as an {
 |}
 
 {{translated page|ja|神原神社|version=104494616|comment=Imported full ja history}}
-[[image:kambarajinjahonden.JPG|250px]]
 
 [[Category:Buildings and structures in Unnan, Shimane]]
 [[Category:Important Cultural Properties of Japan]]

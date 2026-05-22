@@ -1,5 +1,4 @@
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
 {{Infobox religious building
 |名称= 鴨神社
 | religious_affiliation = [[Shinto]]
