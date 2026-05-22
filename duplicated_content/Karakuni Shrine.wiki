@@ -1,7 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Karakuni_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
-{
-{
-{
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |名称   = {{ruby|Karakuni Shrine|からくにじんじゃ}}
 |image   = File:Karakuni shurine 20180131.jpg|ja|辛国神社 社殿|lt=Karakuni Shrine|lt_ja=辛国神社<br />Haiden
@@ -53,8 +50,6 @@ Within the shrine grounds, there is a long approach (参道) covered in deep gre
 * Special Festival ({{ill|October 17|en|October 17|qid=Q2962|lt=October 17|1=October 17}})
 * Monthly Festival (on the 1st day of every month)
 == Local Information ==
-; Address:
-* {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}} {{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City|1=Fujiidera}} Fujidera 1-chōme, 19-14
 ; Transportation:
 * Nearest Station: {{ill|Minami Osaka Line|en|Minami Osaka Line|qid=Q901342|lt=Kintetsu Minami-Osaka Line|1=Minami Osaka Line}}{{ill|Fujiidera Station|en|Fujiidera Station|qid=Q5507418|lt=Fujidera Station|1=Fujiidera Station}}; approximately an 8-minute walk (about 600 m to the southeast).
 == Footnotes ==
