@@ -1,13 +1,7 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Katano_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-{
-{
-{
-{ 
-{
-{
 {{Refimprove|date=June 2024}}
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
-| religious_affiliation = 
+{{Infobox religious building
+| religious_affiliation = [[Shinto]]
 | image                 = File:Katano Shrine, Hirakata Haiden 2006.jpg
 | deity                 = {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|qid=Q382005|comment=changed title based on wikidata|qid=Q382005}}; {{ill|Susanoo|qid=Q272993|1=Susanoo-no-Mikoto}}
 | type                  = Shinto
@@ -16,7 +10,6 @@
 {{ill|Katano-jinja|ja|片埜神社|12=simple|13=User:Immanuelle/Katano-jinja|1=Katano Shrine|comment=changed title based on wikidata|qid=Q11569554}}<br>
 {{ill|Suga Shrine|en|Suga Shrine|qid=Q11664579|lt=Suga-jinja|1=Suga Shrine}}<br>
 {{ill|Hyōsu-jinja|ja|兵主神社 (西脇市)|12=simple|13=User:Immanuelle/Hyōsu-jinja|1=Hyōsu Shrine|comment=changed title based on wikidata|qid=Q28684010}}
-|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 | name = Katano Jinja
 | caption = 
 | map_type = Japan Osaka
@@ -86,14 +79,6 @@ Both located east of the main precincts, separated by the Hirakata East Fire Sta
 * Asahara Jinja - deity: Sarutahiko no Mikoto. Guardian for travel safety and descendant prosperity.
 * Kusagami-sha - deity: HiwasuSeri no Mikoto
 ** According to legend, when Sugawara no Michizane was en route to Dazaifu, his horse fell ill and died here, subsequently revered by locals and associated with healing skin diseases due to a pun on “kusa” (grass) and “kusa” (lesion).
-== Cultural Properties ==
-=== Important Cultural Property (National) ===
-* Honden (including one wooden tablet) - Dated “Rebuilt in Keichō 7 (1602) 11th Month.”
-=== Osaka Prefecture Tangible Cultural Properties ===
-* Katano Jinja: East Gate, South Gate
-* Stone Lantern (from late Kamakura period)
-== location ==
-* location: 2-21-15 Makinosaka, Hirakata City, Osaka Prefecture
 == Access ==
 * About 5 minutes’ walk east from [[Makino Station (Keihan)|Makino Station]] on the Keihan Main Line
 == Notes ==
@@ -109,14 +94,9 @@ Both located east of the main precincts, separated by the Hirakata East Fire Sta
 * {{Instagram|katano_miko|Katano Jinja}}
 * {{Commonscat-inline}}
 {{Shinto Navbox}}
-==References==
-{{reflist}}
 {{Gion cult}}
-{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
 {{translated page|ja|片埜神社|version=100988600|comment=Imported full ja history}}
 {{everybodywiki link|Katano Shrine}}
-[[image:Katano Shrine, Hirakata Haiden 2006.jpg|250px]]
-{{Commons category|Katano-jinja}}
 
 [[Category:Architecture of Azuchi-Momoyama period]]
 [[Category:Aterui]]

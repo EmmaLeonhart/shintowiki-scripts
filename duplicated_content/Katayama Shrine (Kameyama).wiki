@@ -1,8 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Katayama_Shrine_%28Kameyama%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-{{Infobox religious building|image=File:Katayama shrine 01.jpg|prefecture={{ill|Kameyama|qid=Q646858|1=Kameyama, Mie}}|coordinates={{Coord|34.89113888888889|N|136.33719444444444}}}}
-*
-* {{ill|Katayama Shrine (Kameyama)|ja|片山神社 (亀山市)|12=simple|13=User:Immanuelle/Katayama Shrine (Kameyama)|qq=}} (Also known as Suzuka Myojin or Suzuka Gongen) - Located in Kameyama City, Mie Prefecture.
-{{神社 
+{{神社
 |名称 = 片山神社
 |image = [[File:Katayama shrine 01.jpg|250px]]
 |所在地 = {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}{{ill|Kameyama, Mie|en|Kameyama, Mie|qid=Q646858|lt=Kameyama City|1=Kameyama, Mie}}{{ill|Seki, Mie|en|Seki, Mie|qid=Q7447180|lt=Seki Town|1=Seki, Mie}}坂下636
@@ -69,8 +66,7 @@ In the 11th year of the Heisei Era (1999), the main hall was burned down due to 
 * [http://kameyama-kanko.com/area/sakasita/%e7%89%87%e5%b1%b1%e7%a5%9e%e7%a4%be-2/ Katayama Shrine (Kameyama City Tourism Association)]
 {{Shinto navigation}}
 {{Shinto-stub}}
-{{Munakata Faith}}{{draft categories|
-}}
+{{Munakata Faith}}
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
