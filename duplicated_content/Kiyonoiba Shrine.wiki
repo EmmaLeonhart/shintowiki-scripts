@@ -51,13 +51,6 @@ The precinct has tall trees such as {{ill|Celtis sinensis|en|Celtis sinensis|qid
 {{神道 横}}
 {{125 Shrines of Ise}}
 
-== Shikinaisha (式内社) ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| RONSHA || {{ill|Kiyonoiba Shrine|lt=Kiyonoiba Shrine|ja|清野井庭神社|qid=Q17213398|1=Kiyonoiba Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || part of {{ill|Toyōke Daijingū|qid=Q11633343|1=Toyōke Daijingū}} || {{ill|Kiyonowihano Shrine|lt=Kiyonowihano Shrine|qid=Q135039269|1=Kiyonowihano Shrine}}; {{ill|Kiyonowihano Shrine|lt=Kiyonowihano Shrine|qid=Q135039269|1=Kiyonowihano Shrine}} || {{coord|34.495015|136.696730|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181145 DB]
-|}
-
 {{translated page|ja|清野井庭神社|version=101095922|comment=Imported full ja history}}
 
 [[Category:125 Shrines of Ise]]
