@@ -15,153 +15,51 @@
 | religious_affiliation = [[Shinto]]
 | deity = {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|en|Tsukuyomi-no-Mikoto|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh_min_nan|Tukuyomi|zh|月讀|qid=Q595520|1=Tsukuyomi-no-Mikoto}}
 }}
-{{nihongo|'''Kawara Shrine'''|川原神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
-== instance of (P31) ==
-* {{ill|Setsumatsusha|lt=setsumatsusha|en|Setsumatsusha|es|Setsumatsusha|fr|Setsumatsusha|ja|摂末社|zh|攝末社|qid=Q1071160|1=Setsumatsusha}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286|1=Shikinaisha}}
-* {{ill|Q134917287|ltq=Q134917287|qid=Q134917287|1=Shikinai Shosha}}
-* {{ill|Q135009904|ltq=Q135009904|qid=Q135009904|1=Sessha}}
-** P805: {{ill|Kotai jingu|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011|1=Kōtai Jingū}}
-* {{ill|Q845945|ltq=Q845945|qid=Q845945|1=Shinto shrine}}
-* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342|1=Kokuhei-sha}}
-* {{ill|Shikinai Hiteisha|lt=Shikinai Hiteisha|ja|比定社|qid=Q135026601|1=Shikinai Hiteisha}}
-* {{ill|Q135100459|ltq=Q135100459|qid=Q135100459|1=Shikinai Subshrine}}
-== part of (P361) ==
-* {{ill|Q16482760|ltq=Q16482760|qid=Q16482760|1=125 Shrines of Ise}}
-* {{ill|List of Shikinaisha in Ise Province|lt=List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|qid=Q11378973|1=List of Shikinaisha in Ise Province}}
-** Series ordinal: 40
-** P155: {{ill|Shitomi Shrine|lt=Shitomi Shrine|ja|志等美神社|qid=Q17212285|1=Shitomi Shrine}}
-** P156: {{ill|Q17223513|ltq=Q17223513|qid=Q17223513|1=Yamazue Shrine}}
-* {{ill|Q11581011|ltq=Q11581011|qid=Q11581011|1=Kōtai Jingū}}
-** P3831: {{ill|Sessha|lt=Sessha|ja|摂社|qid=Q135009904|1=Sessha}}
-== located in the administrative territorial entity (P131) ==
-* {{ill|Q328067|ltq=Q328067|qid=Q328067|1=Ise, Mie}}
-* {{ill|Q864166|ltq=Q864166|qid=Q864166|1=Ise Province}}
-* {{ill|Watarai District|lt=Watarai district|ceb|Watarai-gun|ckb|گەڕەکی واتاری|en|Watarai District|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ja|度会郡|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|qid=Q1131032|1=Watarai District}}
-== coordinate location (P625) ==
-* {{coord|34.468539|136.666409}}
-== image (P18) ==
-* Kawara-jinja (Naiku) 01.jpg
-== dedicated to (P825) ==
-* {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|en|Tsukuyomi-no-Mikoto|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh_min_nan|Tukuyomi|zh|月讀|qid=Q595520|1=Tsukuyomi-no-Mikoto}}
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-* 181147
-** P3831: {{ill|Q135159299|ltq=Q135159299|qid=Q135159299|1=Kokugakuin University Shrine database}}
-== architectural style (P149) ==
-* {{ill|Shinmei-zukuri|lt=Shinmei-zukuri|en|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545|1=Shinmei-zukuri}}
-== country (P17) ==
-* {{ill|Q17|ltq=Q17|qid=Q17|1=Japan}}
-== different from (P1889) ==
-* {{ill|Q17228197|ltq=Q17228197|qid=Q17228197|1=Kawara Shrine (Gekū)}}
-== street address (P6375) ==
-* {'text': '三重県伊勢市佐八町', 'language': 'ja'}
-== parent organization or unit (P749) ==
-* {{ill|Kotai jingu|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011|1=Kōtai Jingū}}
-[[JA:川原神社 (伊勢市)]]
-{{wikidata link|Q17209206|ja|川原神社 (伊勢市)}}
-==Old translation==
-'''Kawara Shrine''' (川原神社, *Kawara Jinja*) is an auxiliary shrine (*sessha*) of the {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine) of the [[Ise Grand Shrine]], located in [[Ise]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, Japan.
+{{nihongo|'''Kawara Shrine'''|川原神社|かわらじんじゃ}} is an {{ill|lt=sessha|Q1071160|qid=Q1071160|1=Setsumatsusha}} (auxiliary shrine) of {{ill|lt=Kōtai Jingū|Q11581011|qid=Q11581011|1=Kōtai Jingū}} (Inner Shrine) of {{ill|Ise Grand Shrine|en|Ise Grand Shrine|qid=Q687168|1=Ise Grand Shrine}}, listed in the [[Engishiki Jinmyōchō]] and located in [[Ise Province]].
 == Overview ==
-Ranked 20th among the 27 auxiliary shrines of the {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine)<ref>Ujiyamada City Hall (1929): pp. 9–11</ref>.
-This shrine was established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}, with its enshrined deity considered the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miya River's|1=Miya River (Mie)}} [[Chinjugami|guardian spirit]]<ref name="ic3">Ise Bunka-sha (2008): p.70</ref><ref name="gk2">Gakken Publishing (2013): p.71</ref>.
-It is located on the eastern bank of the Miyagawa River<ref name="gk2" />, at 1559 Izumi, Sochi-cho, Ise City, Mie Prefecture<ref name="tm2">Tatsumi Publishing (2013): p.76</ref>. The place name "Sochi" means "marshland," indicating the presence of marshes from the Miyagawa River<ref name="gk2" />. Records also mention rice offerings to the Inner Shrine from Sochi<ref name="sk62">Shikinaisha Kenkyūkai (1990): p.346</ref>.
-The shrine is referred to as "Kawahara Shrine" in the ''Kōtai Jingū Gishiki-chō'' and also appears as "Kawara Shrine" or "Kawara-sha" in other records. Locally, it has been called "Senzui" (川水, meaning river water or spring), "Odago," and "Yagura"<ref name="sk52">Shikinaisha Kenkyūkai (1990): p.345</ref>.
-== Grounds ==
-The shrine precinct covers an area of 3,219 m²<ref name="sk72">Shikinaisha Kenkyūkai (1990): p.347</ref>. The grounds are serene, with sunlight filtering through trees, accompanied by the sounds of birds and flowing water<ref name="ic3" />. The forest includes species such as {{ill|Chamaecyparis obtusa|en|Chamaecyparis obtusa|qid=Q917187|lt=Chamaecyparis obtusa|1=Chamaecyparis obtusa}}, {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Camphor tree|1=Camphora officinarum}}, {{ill|Cyclobalanopsis|ja|カシ|12=simple|13=User:Immanuelle/Oak|comment=changed title based on wikidata|qid=Q796117|1=Cyclobalanopsis}}, {{ill|Machilus thunbergii|en|Machilus thunbergii|qid=Q5792073|lt=Machilus thunbergii|1=Machilus thunbergii}}, and {{ill|Ilex latifolia|en|Ilex latifolia|qid=Q2706373|lt=Ilex latifolia|1=Ilex latifolia}}<ref name="sk72" />.
-== Enshrined deity ==
-The enshrined deity is '''Mikoto no Mitama of Tsukuyomi''' (月読尊御魂)<ref name="ic3" />. This deity is also worshipped at the {{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)|qid=Q595520|lt=Tsukuyomi-no-Miya1=Tsukuyomi-no-Mikoto}}, part of the 125 shrines of the Ise Grand Shrine<ref name="tm2" />. Although commonly regarded as a moon deity, the connection between the moon and water is emphasized here, with Tsukuyomi revered as a river deity at Kawahara Shrine<ref name="ic3" />.
-Some theories suggest that both Sochi-cho, where Kawahara Shrine is located, and Nakamura-cho, home to Tsukuyomi-no-Miya, share historical ties through the {{ill|Arakida clan|ja|荒木田氏|12=simple|13=User:Immanuelle/Arakida clan|qq=}}<ref name="sk62" />.
-== History ==
-According to legend, {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}} was greeted here by Ōwakako no Mikoto (大若子命) before sailing down the Miyagawa River<ref name="ic3" />. The shrine was established before the compilation of the ''{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|zh|延喜式神名帳|simple|Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' in 927 CE, which defines the auxiliary shrines of Ise<ref name="ic22">Ise Bunka-sha (2008): p.22</ref>. According to the ''Daijingū-shiki'', it was one of the shrines maintained by the Guji (宮司), receiving imperial offerings during the {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai|1=Kinensai}} and {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}}<ref name="sk52" />.
-However, during the {{ill|Sengoku Period (Japan)|ja|戦国時代|12=simple|13=User:Immanuelle/Sengoku period|comment=changed title based on wikidata|qid=Q117415390|1=Sengoku Period (Japan)}}, ritual practices ceased, and the shrine fell into disrepair<ref name="tm2" />. The hereditary priests (祝部) also disappeared<ref name="sk62" />.
-In 1663 (Kanbun 3), {{ill|Kawabe Masanaga|ja|河邊精長|12=simple|13=User:Immanuelle/Kawabe Masanaga|ja_comment=jawiki link invalid}} restored the shrine in Sochi<ref name="sk52" />. A new shrine building was erected on October 9, 1663, and the deity was ceremonially transferred (遷御) on January 10, 1664<ref name="sk52" />. Descendants of former priests were sought to resume their duties<ref name="sk62" />. While local traditions guided the shrine's restoration, some suggest that the original site may have been {{ill|Takegahana Shrine|ja|竹鼻神社|12=simple|13=User:Immanuelle/Takegahana Shrine|ja_comment=jawiki link invalid}} in Takegahana-cho or {{ill|Kawarabuchi Shrine|ja|河原淵神社|12=simple|13=User:Immanuelle/Kawarabuchi Shrine|qq=}} in Funae<ref name="tm2" />.
-Since the deity's transfer in 1694 (Genroku 7), the shrine has remained in its current location<ref name="sk52" />. The shrine was rebuilt in 1908 (Meiji 41)<ref>Ujiyamada City Hall (1929): p.11</ref>, renovated in 1960 (Shōwa 35), and repaired again in 1983 (Shōwa 58)<ref name="sk62" />.
-== Rituals ==
-During the {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai|1=Kinensai}}, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June and December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}}, {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niiname-sai|1=Niiname-no-Matsuri}}, and other special ceremonies, priests offer sacred food (御饌) and ritual offerings (幣帛) at the shrine<ref name="sk62" />. For ceremonies like the {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai|qq=}}, remote rituals are conducted at the {{ill|Gojōden|ja|五丈殿|12=simple|13=User:Immanuelle/Gojōden|ja_comment=jawiki link invalid}} of the Inner Shrine<ref name="sk62" />.
-== Access ==
-The shrine is located within a grove just off {{ill|Mie Prefectural Road Route 22|ja|三重県道22号伊勢南島線|12=simple|13=User:Immanuelle/Mie Prefectural Route 22|comment=changed title based on wikidata|qid=Q11357908|1=Mie Prefectural Road Route 22}}<ref>Shikinaisha Kenkyūkai (1990): pp.346–347</ref>.
-* **By Bus:** Approximately a 12-minute walk (700 m) from the {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kōtsū|1=Mie Kotsu}} "Sochi" bus stop<ref name="ic3" />. From the bus stop, enter the alley opposite {{ill|Ise Municipal Sochi Elementary School|ja|伊勢市立佐八小学校|12=simple|13=User:Immanuelle/Ise Municipal Sochi Elementary School|comment=changed title based on wikidata|qid=Q11379036|1=Q11379036}}, then follow the path along the rice fields to reach the shrine<ref name="ic3" />.
-* **By Train:** About 5.5 km from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station|1=Iseshi Station}}, served by both {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central|1=Central Japan Railway Company}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line|1=Sangū Line}} and {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu|1=Kintetsu Railway}} {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Yamada Line|1=Yamada Line (Kintetsu)}}<ref name="sk52" />.
-== References ==
-<references responsive="0"></references>
-== Bibliography ==
-* [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
-* 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
-* [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
-* 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
-* 『日本人なら知っておきたい 伊勢神宮と125の社』タツミムック、[[辰巳出版]]、2013rd year 11月1日、127p. ISBN 978-4-7778-1197-7
-== See Also ==
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|lt=List of 125 Shrines of Ise|qq=}}
-* [[河原神社 (伊勢市)]] - 伊勢神宮{{ill|Toyōke Daijingū|ja|豊受大神宮|zh|豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}}（外宮）摂社。
-* [[宮本村 (三重県)]]
-== External Links ==
-{{external media|align=|width=230px|religious_affiliation=[[Shinto]]|image1=[http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area05/area05_02.jpg 川原神社]}}
-* [http://www.jingukaikan.jp/125mairi/m06/0607.html 川原神社（かわらじんじゃ）] - 一般財団法人伊勢神宮崇敬会
-{{125 Shrines of Ise}}  
-== Japanese content ==
-{{Shrine
-|Name = Kawara Shrine
-|Image = [[File:Kawara-jinja (Naiku) 01.jpg|250px]]
-|Location = {{ill|lt=Mie Prefecture|Q128196|qid=Q128196|1=Mie Prefecture}}{{ill|lt=Ise City|Q328067|qid=Q328067|1=Ise, Mie}} Sōchi-chō {{ill|lt=Koaza|Q5327509|qid=Q5327509|lt=aza|1=koaza}} Sensui 1559
-|Coordinates = {{WikidataCoord}}
-|Enshrined deity = {{ill|qid=Q595520|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi no Mikoto no Mitama|1=Tsukuyomi-no-Mikoto}}
-|Shrine rank = {{ill|UNKNOWN|lt=Shikinaisha|1=Shikinaisha|qid=Q134917286}} (minor)<br />{{ill|lt=Kōtaijingū|Q11581011|qid=Q11581011|1=Kōtai Jingū}} auxiliary shrine
-|Established = Before the 5th year of {{ill|lt=Enchō (era)|Q1327274|qid=Q1327274|lt=Enchō|1=Enchō}} ({{ill|lt=927|Q30470|qid=Q30470|1=927}})
-|Main hall style = {{ill|lt=Shinmei-zukuri|Q930545|qid=Q930545|1=Shinmei-zukuri}}
-|Other names =
-|Pilgrimage designation =
-|Annual festival =
-|Rituals = {{ill|lt=Kannamesai|Q11255045|qid=Q11255045|1=Kannamesai Festival}}
-|Map = {{Location map|Japan Mie|label=Kawara Shrine|position=bottom|width=180|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=180|frame-height=200}}
-}}
-'''Kawara Shrine''' (かわらじんじゃ) is an {{ill|lt=auxiliary shrine|Q1071160|qid=Q1071160|lt=sessha|1=Setsumatsusha}} of {{ill|lt=Ise Grand Shrine|Q687168|qid=Q687168|1=Ise Grand Shrine}}{{ill|lt=Kōtaijingū|Q11581011|qid=Q11581011|1=Kōtai Jingū}} (Inner Shrine).
-=== Overview ===
 It ranks 20th among the 27 auxiliary shrines of the Inner Shrine.<ref>Ujiyamada City Office, ed. (1929): pp. 9–11</ref>
 It is a {{ill|lt=shrine|Q845945|qid=Q845945|1=Shinto shrine}} designated by {{ill|lt=Yamatohime-no-Mikoto|Q4388732|qid=Q4388732|1=Yamatohime-no-mikoto}}, and the {{ill|lt=enshrined deity|Q11591100|qid=Q11591100|1=Saijin}} is said to be the {{ill|lt=guardian deity|Q131278957|qid=Q131278957|1=Guardian deities}} of the {{ill|lt=Miyagawa River (Mie Prefecture)|Q6884164|qid=Q6884164|1=Miya River (Mie)}}.<ref name="ic">Ise Bunka-sha, ed. (2008): p. 70</ref><ref name="gk">Gakken Publishing (2013): p. 71</ref>
-The shrine is located on the east bank of the Miyagawa River,<ref name="gk"/> at 1559 Sensui, aza Sōchi, Sōchi-chō, {{ill|lt=Ise City|Q328067|qid=Q328067|1=Ise, Mie}}, {{ill|lt=Mie Prefecture|Q128196|qid=Q128196|1=Mie Prefecture}}.<ref name="tm">Tatsumi Publishing (2013): p. 76</ref> The place name “Sōchi” means “marshland,” indicating that wetlands from the Miyagawa once existed there.<ref name="gk"/> There are also records stating that rice was offered from Sōchi to the Inner Shrine.<ref name="sk6">Shikinaisha Research Association, ed. (1990): p. 346</ref>
-The shrine name appears as “Kawara Shrine” in the *Kōtaijingū Gishikichō*, while other sources list it as “Kawara Shrine” or “Kawara-sha.” Records state that local residents referred to it as “Senzui” (river water, spring water), “Odago,” or “Yagura.”<ref name="sk5">Shikinaisha Research Association, ed. (1990): p. 345</ref>
-=== Precincts ===
+The shrine is located on the east bank of the Miyagawa River,<ref name="gk"/> at 1559 Sensui, aza Sōchi, Sōchi-chō, {{ill|lt=Ise City|Q328067|qid=Q328067|1=Ise, Mie}}, {{ill|lt=Mie Prefecture|Q128196|qid=Q128196|1=Mie Prefecture}}.<ref name="tm">Tatsumi Publishing (2013): p. 76</ref> The place name "Sōchi" means "marshland," indicating that wetlands from the Miyagawa once existed there.<ref name="gk"/> There are also records stating that rice was offered from Sōchi to the Inner Shrine.<ref name="sk6">Shikinaisha Research Association, ed. (1990): p. 346</ref>
+The shrine name appears as "Kawara Shrine" in the ''Kōtaijingū Gishikichō'', while other sources list it as "Kawara Shrine" or "Kawara-sha." Records state that local residents referred to it as "Senzui" (river water, spring water), "Odago," or "Yagura."<ref name="sk5">Shikinaisha Research Association, ed. (1990): p. 345</ref>
+== Precincts ==
 The shrine grounds cover an {{ill|lt=area|Q11500|qid=Q11500|1=Area}} of 3,219 {{ill|lt=square meters|Q25343|qid=Q25343|lt=m<sup>2</sup>|1=Square metre}}.<ref name="sk7">Shikinaisha Research Association, ed. (1990): p. 347</ref> The {{ill|lt=precincts|Q11429002|qid=Q11429002|1=keidai}} form a tranquil space filled with dappled sunlight, birdsong, and the murmur of the river.<ref name="ic"/> Trees such as {{ill|lt=Japanese cypress|Q917187|qid=Q917187|1=Chamaecyparis obtusa}}, {{ill|lt=camphor tree|Q158722|qid=Q158722|1=Camphora officinarum}}, {{ill|lt=oak|Q796117|qid=Q796117|1=Cyclobalanopsis}}, {{ill|lt=Machilus thunbergii|Q5792073|qid=Q5792073|1=Machilus thunbergii}}, and {{ill|lt=Ilex latifolia|Q2706373|qid=Q2706373|1=Ilex latifolia}} grow densely within the grounds.<ref name="sk7"/>
-=== Enshrined deity ===
+== Enshrined deity ==
 The enshrined deity is {{ill|qid=Q595520|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi no Mikoto no Mitama|1=Tsukuyomi-no-Mikoto}}.<ref name="ic"/> This is the same {{ill|lt=deity (Shinto)|Q524158|qid=Q524158|lt=kami|1=Kami}} worshipped at the {{ill|UNKNOWN|lt=Tsukiyomi-no-miya|1=UNKNOWN}} and {{ill|lt=Tsukiyomi-no-miya (Yoru-no-miya)|Q11516023|qid=Q11516023|1=Tsukiyomi-no-Miya (Gekū)}}, among the 125 shrines of Ise Grand Shrine.<ref name="tm"/> While Tsukuyomi is generally regarded as a {{ill|lt=moon|Q405|qid=Q405|1=Moon}} deity, the moon and {{ill|lt=water|Q283|qid=Q283|1=Water}} are considered closely related, and in the context of Kawara Shrine, Tsukuyomi no Mikoto no Mitama is regarded as a river deity.<ref name="ic"/>
 In addition to sharing the same enshrined deity, there is a theory that Sōchi-chō, where Kawara Shrine is located, and Nakamura-chō, where Tsukiyomi Shrine is located, were both deeply connected through the {{ill|lt=Arakida clan|Q11618716|qid=Q11618716|1=Arakida clan}}.<ref name="sk6"/>
-=== History ===
-According to tradition, {{ill|lt=Yamatohime-no-Mikoto|Q4388732|qid=Q4388732|1=Yamatohime-no-mikoto}} was welcomed here by Ōwakako-no-Mikoto and traveled down the Miyagawa River by boat.<ref name="ic"/> Regarding its establishment, based on the definition of auxiliary shrines of Ise Grand Shrine, it is believed to have been founded before the compilation of the *{{ill|lt=Engishiki Jinmyōchō|Q11064932|qid=Q11064932|1=Engishiki Jinmyōchō}}*, that is, before the 5th year of {{ill|lt=Enchō (era)|Q1327274|qid=Q1327274|lt=Enchō|1=Enchō}} ({{ill|lt=927|Q30470|qid=Q30470|1=927}}).<ref name="ic2">Ise Bunka-sha, ed. (2008): p. 22</ref> According to the *Daijingū-shiki*, it was designated as one of the shrines involved in repairs by the {{ill|lt=chief priest|Q11453500|qid=Q11453500|1=Gūji}}, and it received offerings during the Kinensai and Kannamesai festivals.<ref name="sk5"/> However, during the {{ill|lt=Sengoku period (Japan)|Q204023|qid=Q204023|lt=Sengoku period|1=Sengoku period}}, {{ill|lt=rituals|Q11546824|qid=Q11546824|1=Saitan-sai}} were discontinued,<ref name="tm"/> and the shrine grounds fell into ruin.<ref name="sk5"/> The hereditary priests ({{ill|lt=hafuri|Q11453500|qid=Q11453500|lt=hafuri|1=Gūji}}) who had been appointed until then also died out.<ref name="sk6"/>
+== History ==
+According to tradition, {{ill|lt=Yamatohime-no-Mikoto|Q4388732|qid=Q4388732|1=Yamatohime-no-mikoto}} was welcomed here by Ōwakako-no-Mikoto and traveled down the Miyagawa River by boat.<ref name="ic"/> Regarding its establishment, based on the definition of auxiliary shrines of Ise Grand Shrine, it is believed to have been founded before the compilation of the ''{{ill|lt=Engishiki Jinmyōchō|Q11064932|qid=Q11064932|1=Engishiki Jinmyōchō}}'', that is, before the 5th year of {{ill|lt=Enchō (era)|Q1327274|qid=Q1327274|lt=Enchō|1=Enchō}} ({{ill|lt=927|Q30470|qid=Q30470|1=927}}).<ref name="ic2">Ise Bunka-sha, ed. (2008): p. 22</ref> According to the ''Daijingū-shiki'', it was designated as one of the shrines involved in repairs by the {{ill|lt=chief priest|Q11453500|qid=Q11453500|1=Gūji}}, and it received offerings during the Kinensai and Kannamesai festivals.<ref name="sk5"/> However, during the {{ill|lt=Sengoku period (Japan)|Q204023|qid=Q204023|lt=Sengoku period|1=Sengoku period}}, {{ill|lt=rituals|Q11546824|qid=Q11546824|1=Saitan-sai}} were discontinued,<ref name="tm"/> and the shrine grounds fell into ruin.<ref name="sk5"/> The hereditary priests ({{ill|lt=hafuri|Q11453500|qid=Q11453500|lt=hafuri|1=Gūji}}) who had been appointed until then also died out.<ref name="sk6"/>
 In the 3rd year of {{ill|lt=Kanbun|Q1146228|qid=Q1146228|1=Kanbun (era)}} ({{ill|lt=1663|Q7577|qid=Q7577|1=1663}}), {{ill|lt=Kawabe Kiyonaga|Q92924151|qid=Q92924151|lt=Kawabe Kiyonaga|1=Kiyonaga Kawabe}} restored the shrine at Sōchi.<ref name="sk5"/> On the 9th day of the 9th month (lunar calendar; {{ill|lt=Gregorian calendar|Q12138|qid=Q12138|1=Gregorian calendar}}: {{ill|lt=October 9|Q2923|qid=Q2923|1=October 9}}, 1663), the {{ill|lt=shrine buildings|Q11453500|qid=Q11453500|1=Gūji}} were constructed, and on the 12th day of the 12th month (lunar calendar; Gregorian: {{ill|lt=January 10|Q2243|qid=Q2243|1=January 10}}, {{ill|lt=1664|Q7581|qid=Q7581|1=1664}}), the deity was ceremonially transferred ({{ill|lt=sengu|Q24892914|qid=Q24892914|1=Sengyo}}).<ref name="sk5"/> At that time, families that had formerly served as hereditary priests were sought out and reinstated.<ref name="sk6"/> During the restoration, local traditions and place names were referenced, but there is also a theory that Takehana Shrine in present-day Takegahana-chō, Ise City, or {{ill|lt=Kawarabuchi Shrine|Q17209232|qid=Q17209232|1=Kawarabuchi Shrine}} in {{ill|lt=Fun'e (Ise City)|Q17213313|qid=Q17213313|1=Funae}} may have been the original site.<ref name="tm"/> Since a subsequent deity transfer on the 29th day of the 3rd month of the 7th year of {{ill|lt=Genroku|Q1325001|qid=Q1325001|1=Genroku}} (lunar calendar; Gregorian: {{ill|lt=April 23|Q2527|qid=Q2527|1=April 23}}, {{ill|lt=1694|Q7694|qid=Q7694|1=1694}}), the shrine site has not moved.<ref name="sk5"/>
 The shrine buildings were rebuilt in November {{ill|lt=1908|Q2056|qid=Q2056|1=1908}} ({{ill|lt=Meiji|Q3125096|qid=Q3125096|1=Meiji era}} 41).<ref>Ujiyamada City Office, ed. (1929): p. 11</ref> They were subsequently rebuilt again in May {{ill|lt=1960|Q3754|qid=Q3754|1=1960}} ({{ill|lt=Shōwa|Q327567|qid=Q327567|1=Shōwa era}} 35), and repairs were carried out in September {{ill|lt=1983|Q2434|qid=Q2434|1=1983}} (Shōwa 58).<ref name="sk6"/>
-=== Rituals ===
-During the Kinensai, {{ill|lt=Tsukinamisai|Q11516161|qid=Q11516161|1=Tsukinami-no-Matsuri}} (June and December), {{ill|lt=Kannamesai|Q11255045|qid=Q11255045|1=Kannamesai Festival}}, {{ill|lt=Niinamesai|Q11501518|qid=Q11501518|1=Niiname-no-Matsuri}}, and extraordinary festivals, {{ill|lt=Shinto priests|Q60523|qid=Q60523|1=Kannushi}} present {{ill|lt=offerings|Q11591045|qid=Q11591045|lt=shinsen|1=Shinsen}} and {{ill|lt=heihaku|Q11481885|qid=Q11481885|1=Hanpei}} before the shrine. For rites such as the {{ill|lt=Saitan-sai|Q11546824|qid=Q11546824|1=Saitan-sai}}, remote worship is performed at the Inner Shrine’s Gojōden Hall.<ref name="sk6"/>
-=== Access ===
+== Rituals ==
+During the Kinensai, {{ill|lt=Tsukinamisai|Q11516161|qid=Q11516161|1=Tsukinami-no-Matsuri}} (June and December), {{ill|lt=Kannamesai|Q11255045|qid=Q11255045|1=Kannamesai Festival}}, {{ill|lt=Niinamesai|Q11501518|qid=Q11501518|1=Niiname-no-Matsuri}}, and extraordinary festivals, {{ill|lt=Shinto priests|Q60523|qid=Q60523|1=Kannushi}} present {{ill|lt=offerings|Q11591045|qid=Q11591045|lt=shinsen|1=Shinsen}} and {{ill|lt=heihaku|Q11481885|qid=Q11481885|1=Hanpei}} before the shrine. For rites such as the {{ill|lt=Saitan-sai|Q11546824|qid=Q11546824|1=Saitan-sai}}, remote worship is performed at the Inner Shrine's Gojōden Hall.<ref name="sk6"/>
+== Access ==
 The shrine is situated in a forest slightly off {{ill|lt=Mie Prefectural Route 22 (Ise–Minamishima Line)|Q11357908|qid=Q11357908|1=Mie Prefectural Road Route 22}}.<ref>Shikinaisha Research Association, ed. (1990): pp. 346–347</ref>
-* About a 12-minute walk (700 {{ill|lt=meters|Q11573|qid=Q11573|lt=m|1=Metre}}) from the “Sōchi” {{ill|lt=bus stop|Q953806|qid=Q953806|1=Bus stop}} on a {{ill|lt=Mie Kōtsū|Q6843516|qid=Q6843516|1=Mie Kotsu}} {{ill|lt=route bus|Q1373492|qid=Q1373492|1=Transit bus}}.<ref name="ic"/> Enter the alley opposite {{ill|lt=Ise Municipal Sōchi Elementary School|Q11379036|qid=Q11379036|1=Ise Municipal Sōchi Elementary School}} near the bus stop and follow the rice paddies to reach the precincts.<ref name="ic"/>
+* About a 12-minute walk (700 {{ill|lt=meters|Q11573|qid=Q11573|lt=m|1=Metre}}) from the "Sōchi" {{ill|lt=bus stop|Q953806|qid=Q953806|1=Bus stop}} on a {{ill|lt=Mie Kōtsū|Q6843516|qid=Q6843516|1=Mie Kotsu}} {{ill|lt=route bus|Q1373492|qid=Q1373492|1=Transit bus}}.<ref name="ic"/> Enter the alley opposite {{ill|lt=Ise Municipal Sōchi Elementary School|Q11379036|qid=Q11379036|1=Ise Municipal Sōchi Elementary School}} near the bus stop and follow the rice paddies to reach the precincts.<ref name="ic"/>
 * Approximately 5.5 {{ill|lt=kilometers|Q828224|qid=Q828224|lt=km|1=Kilometre}} from {{ill|lt=Ise-shi Station|Q6079748|qid=Q6079748|1=Iseshi Station}} on the {{ill|lt=JR Sangū Line|Q872023|qid=Q872023|1=Sangū Line}} of {{ill|lt=Central Japan Railway Company|Q513679|qid=Q513679|1=Central Japan Railway Company}} or the {{ill|lt=Kintetsu Yamada Line|Q900630|qid=Q900630|1=Yamada Line (Kintetsu)}} of {{ill|lt=Kintetsu|Q1531085|qid=Q1531085|1=Kintetsu Railway}}.<ref name="sk5"/>
-=== Footnotes ===
-{{Footnote help}}
+== References ==
 {{Reflist|2}}
-=== References ===
-* {{ill|lt=Ise Bunka-sha|Q11379080|qid=Q11379080|1=Ise Bunka-sha}}, ed., *Oise-san 125-sha Meguri*, supplement *Isebito*, Ise Bunka-sha, December 23, 2008, 151 pp. ISBN 978-4-900759-37-4
-* Ujiyamada City Office, ed., *History of Ujiyamada City, Vol. 1*, Ujiyamada City Office, January 20, 1929, 862 pp.
-* {{ill|UNKNOWN|lt=Gakken Publishing|1=UNKNOWN}} ed., *Let’s Go to Ise Grand Shrine*, Gakken Mook Shrine Travel Selection vol. 1, supervised by {{ill|lt=Minoru Sonoda|Q11622218|qid=Q11622218|1=Minoru Sonoda}}, Gakken Marketing, July 4, 2013, 82 pp. ISBN 978-4-05-610047-1
-* Shikinaisha Research Association, ed., *Shikinaisha Survey Report, Vol. 6: Tōkaidō 1*, {{ill|lt=Kōgakkan University|Q1797584|qid=Q1797584|1=Kogakkan University}} Press, February 28, 1990, 690 pp. ISBN 4-87644-080-8
-* *Ise Grand Shrine and Its 125 Shrines Every Japanese Should Know*, Tatsumi Mook, {{ill|lt=Tatsumi Publishing|Q4050754|qid=Q4050754|1=Tatsumi Publishing}}, November 1, 2013, 127 pp. ISBN 978-4-7778-1197-7
-=== Related articles ===
+== Bibliography ==
+* {{ill|lt=Ise Bunka-sha|Q11379080|qid=Q11379080|1=Ise Bunka-sha}}, ed., ''Oise-san 125-sha Meguri'', supplement ''Isebito'', Ise Bunka-sha, December 23, 2008, 151 pp. ISBN 978-4-900759-37-4
+* Ujiyamada City Office, ed., ''History of Ujiyamada City, Vol. 1'', Ujiyamada City Office, January 20, 1929, 862 pp.
+* {{ill|UNKNOWN|lt=Gakken Publishing|1=UNKNOWN}} ed., ''Let's Go to Ise Grand Shrine'', Gakken Mook Shrine Travel Selection vol. 1, supervised by {{ill|lt=Minoru Sonoda|Q11622218|qid=Q11622218|1=Minoru Sonoda}}, Gakken Marketing, July 4, 2013, 82 pp. ISBN 978-4-05-610047-1
+* Shikinaisha Research Association, ed., ''Shikinaisha Survey Report, Vol. 6: Tōkaidō 1'', {{ill|lt=Kōgakkan University|Q1797584|qid=Q1797584|1=Kogakkan University}} Press, February 28, 1990, 690 pp. ISBN 4-87644-080-8
+* ''Ise Grand Shrine and Its 125 Shrines Every Japanese Should Know'', Tatsumi Mook, {{ill|lt=Tatsumi Publishing|Q4050754|qid=Q4050754|1=Tatsumi Publishing}}, November 1, 2013, 127 pp. ISBN 978-4-7778-1197-7
+== See Also ==
 * {{ill|lt=List of Shikinaisha in Ise Province|Q11378973|qid=Q11378973|1=List of Shikinaisha in Ise Province}}
 * {{ill|lt=List of the 125 Shrines of Ise Grand Shrine|Q16482760|qid=Q16482760|1=125 Shrines of Ise}}
 * {{ill|lt=Kawara Shrine (Ise City)|Q17228197|qid=Q17228197|1=Kawara Shrine (Gekū)}} – an auxiliary shrine of {{ill|lt=Toyouke Daijingū|Q11633343|qid=Q11633343|1=Toyōke Daijingū}} (Outer Shrine) of Ise Grand Shrine.
 * {{ill|lt=Miyamoto Village (Mie Prefecture)|Q17176570|qid=Q17176570|1=Miyamoto}}
-=== External links ===
+== External Links ==
 {{external media
 | align =
 | width = 230px
 | image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area05/area05_02.jpg Kawara Shrine]
 }}
 * [http://www.jingukaikan.jp/125mairi/m06/0607.html Kawara Shrine (Kawara Jinja)] – Ise Grand Shrine Worshippers Association
-{{Ise Grand Shrine 125 Shrines}}
+{{125 Shrines of Ise}}
 {{Shinto sidebar}}
-== Categories ==
-
+[[JA:川原神社 (伊勢市)]]
+{{wikidata link|Q17209206|ja|川原神社 (伊勢市)}}
 [[Category:Wikidata generated shikinaisha pages|Kawara Shrine (Naikū)]]
 [[Category:Shikinaisha|Kawara Shrine (Naikū)]]
 [[Category:Sessha]]
