@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Template%3AInbe_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24938264069|time triggered pipeline]] -->
 {{Navbox
 | name  = Inbe Faith
 | title = [[Inbe clan|Inbe Faith]]
@@ -24,11 +23,12 @@
 * [[Kogo Shūi]]
 
 }}<noinclude>
-{{wikidata link|Q125506974|en|Template:Inbe Faith}}
+{{wikidata link|Q125506974|en|Template:Inbe Faith|fr|Modèle:Palette Clan Inbe|check_date=2026-05-22}}
 [[Category:Inbe clan]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

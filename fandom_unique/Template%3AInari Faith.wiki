@@ -1,4 +1,3 @@
-
 {{Navbox
 | name  = Inari Faith
 | title = [[:en:Inari shrine|Inari shrines]]
@@ -28,11 +27,11 @@
 
  |group2 = Other Shrines
  |list2 =
-* Shiwa Inari Shrine
+* {{ill|Shiwa Inari Shrine|ja|志和稲荷神社|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|12=simple|13=User:Immanuelle/Shiwa Inari Shrine}}
 * [[Takekoma Inari Shrine]]
-* Yakyu Inari Shrine
+* {{ill|Yakyu Inari Shrine|ja|箭弓稲荷神社 (東松山市)|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|12=simple|13=User:Immanuelle/Yakyu Inari Shrine}}
 * [[Yūtoku Inari Shrine]]
-* Taikodani Inari Shrine
+* {{ill|Taikodani Inari Shrine|ja|太皷谷稲成神社|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|12=simple|13=User:Immanuelle/Taikodani Inari Shrine}}
 * [[Kasama Inari Shrine]]
 * [[Takahashi Inari Shrine]]
 * [[:en:Namiyoke Inari Shrine|Namiyoke Inari Shrine]]
@@ -43,8 +42,8 @@
  |list3=
 * [[:en:Toyokawa Inari|Toyokawa Inari]]
 * [[Ryōhō-ji]]
-* Saijo Inari
-* Toyokawa Inari Tokyo
+* {{ill|Saijo Inari|ja|最上稲荷|12=simple|13=User:Immanuelle/Saijo Inari|12=simple|13=User:Immanuelle/Saijo Inari}}
+* {{ill|Toyokawa Inari Tokyo|ja|豊川稲荷東京別院|12=simple|13=User:Immanuelle/Toyokawa Inari Tokyo|12=simple|13=User:Immanuelle/Toyokawa Inari Tokyo}}
 }}
 
 |group3= Misc
@@ -53,7 +52,7 @@
 * [[:en:Fox spirit|Fox spirit]]
 }}
 <noinclude>
-[[en:Template:Inari Faith]]{{wikidata link|Q125475111}}
+[[en:Template:Inari Faith]]{{wikidata link|Q125475111|en|Template:Inari Faith|fr|Modèle:Palette Inari|check_date=2026-05-22}}
 [[Category:Buddhism in Japan templates]]
 [[Category:Inari faith]]
 [[Category:Shinto cult templates]]
