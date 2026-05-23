@@ -1,0 +1,84 @@
+name: Regenerate label-generator QuickStatements
+
+# Relocated from the shinto-label-generator repo (merged here as a subtree under
+# shinto-label-generator/). Regenerates the per-language proposed-label
+# QuickStatements (quickstatements/<lang>.txt) + docs. The standalone repo's own
+# .github/workflows/regenerate.yml is inert here (GitHub only runs root
+# workflows). The Pages-deploy job from the original is intentionally dropped —
+# this repo has its own Pages deploy (generate-pages.yml) and two would clash.
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 1st of every month at 06:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "shinto-label-generator/*.py"
+
+concurrency:
+  group: label-generator-regenerate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests hanja opencc-python-reimplemented pykakasi
+
+      - name: Run Toki Pona pipeline
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python fetch_shrines_tokiponize.py
+
+      - name: Run Korean pipeline
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python generate_korean_quickstatements.py
+
+      - name: Run Chinese pipeline
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python generate_chinese_quickstatements.py
+
+      - name: Run Indonesian proposal pipeline (Japanese-only shrines)
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python generate_indonesian_proposals.py
+
+      - name: Run multilang pipeline
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python generate_multilang_quickstatements.py
+
+      - name: Regenerate docs HTML
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python docs/generate_pages.py
+
+      - name: Commit regenerated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add shinto-label-generator/quickstatements/ shinto-label-generator/docs/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore(label-generator): regenerate proposed-label QuickStatements [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break || { echo "push rejected, rebasing (try $i)"; git pull --rebase --autostash || true; }
+              sleep 5
+            done
+          fi

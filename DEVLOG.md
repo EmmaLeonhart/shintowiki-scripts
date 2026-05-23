@@ -6,6 +6,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Merged shinto-label-generator as a subtree + wired a 20/day label drip-feed
+**Files:** `shinto-label-generator/**` (subtree), `.github/workflows/label-generator-regenerate.yml` (new), `.github/workflows/generate-quickstatements.yml`, `modern-quickstatements/select_label_proposals.py` (new), `modern-quickstatements/label_proposals_drip.txt` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`
+
+`git subtree add --prefix=shinto-label-generator ... master` (NO --squash — full
+separate history preserved) brought the standalone label-generator in:
+per-language proposed-label QuickStatements (`quickstatements/<lang>.txt`, 19
+languages, ~1.1M lines), the generators (Indonesian/Korean/Chinese/multilang/
+Toki Pona), and `docs/`.
+
+The Indonesian generator (`generate_indonesian_proposals.py`) already does
+JA-only-shrine → Indonesian: it romanizes the kana (P1814/P5461) or ja label via
+pykakasi (Hepburn), strips parens + Japanese suffixes (Jinja/Jingu/Taisha/…), and
+prepends "Kuil " (shrines) / "Wihara " (temples), e.g. "Kuil Tomiokahachimangu".
+It derives from the kana, NOT the English label, and targets items with a ja but
+no id label. Per Emma ("don't make it more efficient because it's working") it's
+left untouched.
+
+Wiring:
+- **Generator workflow relocated** to the repo root as
+  `label-generator-regenerate.yml` (monthly + on `shinto-label-generator/*.py`
+  push). The original's Pages-deploy job was DROPPED — this repo has its own
+  Pages deploy and two would clash. The in-subtree `regenerate.yml` is inert
+  (GitHub only runs root workflows).
+- **20/day drip-feed:** `select_label_proposals.py` pools all non-comment lines
+  from `shinto-label-generator/quickstatements/*.txt` (pool ≈ 965k), picks 20 at
+  random, converts the tab-delimited QS to pipe form, and writes
+  `label_proposals_drip.txt`. Added a step to `generate-quickstatements.yml` to
+  refresh it each cycle, and added the file to `ATOMIC_FILES` in both
+  `submit_daily_batch.py` and `direct_daily_edits.py` so the daily QS run pushes
+  ~20 labels/day. Deliberately slow (Emma: labels should lag the other work). No
+  state file — the monthly regen only emits still-missing labels (self-draining);
+  re-submitting an existing label is a no-op.
+
 ### Shrine en-label translation pipeline (SPARQL list + 5/day remote Sonnet translator)
 **Files:** `modern-quickstatements/generate_shrines_missing_en_label.py` (new), `.github/workflows/generate-shrines-missing-en-label.yml` (new), `modern-quickstatements/select_shrines_to_translate.py` (new), `modern-quickstatements/en_labels_sonnet.txt` (new), `modern-quickstatements/shrines_missing_en_label.json` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`
 

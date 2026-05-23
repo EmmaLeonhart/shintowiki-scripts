@@ -42,6 +42,7 @@ ATOMIC_FILES = [
     "p6262_fandom_links.txt",
     "en_labels.txt",
     "en_labels_sonnet.txt",
+    "label_proposals_drip.txt",
 ]
 
 

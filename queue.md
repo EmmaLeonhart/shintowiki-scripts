@@ -43,6 +43,22 @@ behind cases that need a human (the move/append bots skip + report them):
   the workflow log / via `--dry-run`.
 
 
+## shinto-label-generator — remaining piece (2026-05-23)
+
+Subtree merged + generator workflow relocated + 20/day label drip-feed wired
+(see DEVLOG 2026-05-23). Still open:
+
+- [ ] **Pages consolidation + redirect** (from the original subtree spec): publish
+  the label-generator `docs/` report as a subpage of
+  emmaleonhart.github.io/shintowiki-scripts/ (wire into generate-pages.yml), then
+  turn the standalone shinto-label-generator repo's GitHub Pages (`docs/index.html`)
+  into a redirect to that subpage. Not yet done.
+- [ ] Build the **straggler-link → ill** orchestrator op directly (the remote
+  routine for it was disabled 2026-05-23; Emma wants it done in-session, not via a
+  scheduled routine). Spec: convert raw `[[JaTitle|Disp]]` links (no colon in
+  target) to `{{ill}}` — Shinto-wiki QID first, else en→ja→zh→ko→de→ru; title from
+  P11250, lt= English label, qid= always.
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).

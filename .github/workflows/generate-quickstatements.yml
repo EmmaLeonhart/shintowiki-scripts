@@ -47,6 +47,11 @@ jobs:
           sleep 10
           python generate_p958_qualifiers.py
 
+      - name: Drip-feed 20 label proposals from the label-generator subtree
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python select_label_proposals.py
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"
