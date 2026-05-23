@@ -1,5 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sana_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-{{Infobox religious building| religious_affiliation = [[Shinto]]
+{{Infobox religious building
 | name = Sana Shrine
 | religious_affiliation = [[Shinto]]
 |image = File:Sana Shrine.jpg
@@ -12,8 +12,7 @@
 | Main Hall = [[Shimmei-zukuri]]
 | Alternate name = Nakamiya, Ōmori Shrine
 | festival = {{ill|October 8|en|October 8|qid=Q2924|lt=October 8}}
-| Rituals = 
-| location = {{ill|Taki, Mie|qid=Q1203963}}
+| Rituals =
 | deity = {{ill|Ame-no-Tajikarao|qid=Q849412}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
@@ -67,13 +66,11 @@ The shrine is located near [[:en:JR Central|JR]] {{ill|Kisei Main Line|en|Kisei 
 * [http://kyoka.mie-jinjacho.or.jp/shrine/%E4%BD%90%E9%82%A3%E7%A5%9E%E7%A4%BE/ Sana Shrine - Mie Shrine Association (Japanese)]
 {{Shinto-stub}}
 == See Also ==
-* {{ill|Sana Shrine|en|12=simple|13=User:Immanuelle/Sana Shrine|qq=}} ({{ill|Taki District|en|12=simple|13=User:Immanuelle/Taki District|qq=}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}})
 * {{ill|Shirai Shrine (Amagasaki City)|en|12=simple|13=User:Immanuelle/Shirai Shrine (Amagasaki City)|qq=}} ({{ill|Amagasaki City|en|12=simple|13=User:Immanuelle/Amagasaki City|qq=}}, {{ill|Hyōgo Prefecture|en|12=simple|13=User:Immanuelle/Hyōgo Prefecture|qq=}})
 * {{ill|Oyama Shrine|en|12=simple|13=User:Immanuelle/Oyama Shrine|qq=}} ({{ill|Tateyama Town|en|12=simple|13=User:Immanuelle/Tateyama Town|qq=}}, {{ill|Nakaniikawa District|en|12=simple|13=User:Immanuelle/Nakaniikawa District|qq=}}, {{ill|Toyama Prefecture|en|12=simple|13=User:Immanuelle/Toyama Prefecture|qq=}})
 * Subsidiary and branch shrines of Togakushi Shrine
 * {{ill|Togami Shrine|en|12=simple|13=User:Immanuelle/Tomei Shrine|qq=}} ({{ill|Kitakyūshū City|en|12=simple|13=User:Immanuelle/Kitakyūshū City|qq=}}, {{ill|Fukuoka Prefecture|en|12=simple|13=User:Immanuelle/Fukuoka Prefecture|qq=}})
-disambiguation]]
-[[Tajikarao Shrine]]
+* [[Tajikarao Shrine]]
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
