@@ -427,27 +427,37 @@ jobs:
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
-  # Move standalone P1814 kana statements into ojp-hani P1448 qualifiers for
-  # Disputed Shikinaisha (bot request 2026-02-26, secondary ask). Runs before
-  # append-kaminoyashiro-kana so any qualifier it creates already has the suffix.
-  # Direct Wikidata API edits; 50/day. Daily-fire gated.
-  move-kana-to-official-name:
+  # Kana pipeline op A — SEED: copy a top-level katakana reading onto the
+  # ojp-hani P1448 official name as a P1814 qualifier when none exists. ADD-ONLY
+  # (never removes), so the source reading can't be lost before its qualifier
+  # exists. Direct Wikidata API edits; 50/day. Daily-fire gated.
+  seed-kana-qualifier:
     needs: [window-gate, cleanup, wikidata-qualifier-edit]
     if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
-    uses: ./.github/workflows/move-kana-to-official-name.yml
+    uses: ./.github/workflows/seed-kana-qualifier.yml
     secrets: inherit
 
-  # Append カミノヤシロ to ojp-hani P1814 kana qualifiers (bot request 2026-02-26).
+  # Kana pipeline part 1 — append カミノヤシロ to ojp-hani P1814 katakana qualifiers.
   # Direct Wikidata API edits; 50/day. Daily-fire gated.
   append-kaminoyashiro-kana:
-    needs: [window-gate, cleanup, move-kana-to-official-name]
+    needs: [window-gate, cleanup, seed-kana-qualifier]
     if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/append-kaminoyashiro-kana.yml
     secrets: inherit
 
+  # Kana pipeline op C — REMOVE the redundant top-level P1814 reading, but ONLY
+  # when a matching katakana qualifier is confirmed on the official name. Runs
+  # after seed + append so the qualifier is in place; remove-only and per-item
+  # gated, so it is safe in any order. Daily-fire gated.
+  remove-redundant-kana-statement:
+    needs: [window-gate, cleanup, append-kaminoyashiro-kana]
+    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    uses: ./.github/workflows/remove-redundant-kana-statement.yml
+    secrets: inherit
+
   # Final action: rebuild run history page from all reports
   build-run-history:
-    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit, move-kana-to-official-name, append-kaminoyashiro-kana]
+    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit, seed-kana-qualifier, append-kaminoyashiro-kana, remove-redundant-kana-statement]
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 

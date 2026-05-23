@@ -39,7 +39,7 @@ hiragana reading is normal and left alone). Emma fixed the original 3
 ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
 
 - [ ] **Items with 0 or >1 ojp-hani P1448 official name** (rare; surface in the
-  `move_kana_to_official_name.py --dry-run` "Ambiguous" report, e.g. Q135040786
+  `seed_kana_qualifier.py --dry-run` "AMBIGUOUS" report, e.g. Q135040786
   with no ojp-hani name). Emma handles these directly on the wiki as they appear
   — no bot action.
 

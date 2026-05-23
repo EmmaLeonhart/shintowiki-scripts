@@ -6,6 +6,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Split the kana "move" into two independently-safe ops (seed + remove)
+**Files:** `modern-quickstatements/seed_kana_qualifier.py` (renamed from move_kana_to_official_name.py), `modern-quickstatements/remove_redundant_kana_statement.py` (new), `.github/workflows/seed-kana-qualifier.yml` (renamed from move-kana-to-official-name.yml), `.github/workflows/remove-redundant-kana-statement.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`
+
+Emma flagged a data-loss risk: the combined move op (add qualifier + remove the
+top-level statement in one action) could, under random/drip execution or partial
+failure, strip the top-level reading before its qualifier exists. Audited
+Wikidata first — the move op had **never run** (0 move edits; the only recent
+removals were Emma's own manual P1448 fixes), so nothing was damaged. Fixed the
+design before it ever fires.
+
+The "move" is now three independently-safe, presence-based ops (per Emma's spec):
+- **op A — `seed_kana_qualifier.py` (ADD-ONLY):** for Q135038714 items whose
+  single ojp-hani P1448 has NO P1814 qualifier but a top-level KATAKANA reading,
+  copy that katakana onto the official name as a P1814 qualifier (raw). Never
+  removes. Dry-run: 107 items / 118 qualifiers.
+- **part 1 — `append_kaminoyashiro_kana.py`:** appends カミノヤシロ to ojp-hani
+  P1814 katakana qualifiers (seeded or pre-existing). Unchanged.
+- **op C — `remove_redundant_kana_statement.py` (REMOVE-ONLY):** removes a
+  top-level katakana statement ONLY when a matching katakana qualifier is
+  confirmed present on the official name (match tolerates part 1's suffix: a
+  top-level T matches a qualifier q where q == T or q == T+カミノヤシロ). Modern
+  hiragana top-levels never match a katakana qualifier and are left untouched.
+  Dry-run: of 48 candidates only 2 currently match (the rest have non-matching /
+  hiragana top-levels) — it grows as A seeds and part 1 appends.
+
+No single action both adds and removes, so the top-level reading can never be
+lost before it's safely on the official name. Wired into `cleanup-loop.yml` in
+order seed → append → remove (each daily-fire gated; order doesn't affect
+safety). The old combined `move_kana_to_official_name.py` was renamed to the
+seed op.
+
 ### Fixed part-2 kana move: defer to part 1 when a qualifier already exists
 **Files:** `modern-quickstatements/move_kana_to_official_name.py`, `queue.md`
 

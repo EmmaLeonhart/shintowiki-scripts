@@ -1,4 +1,4 @@
-name: Move standalone kana to official name
+name: Remove redundant top-level kana statement
 
 on:
   workflow_dispatch:
@@ -23,9 +23,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Move standalone P1814 kana into ojp-hani P1448 qualifier via Wikidata API
+      - name: Remove redundant top-level P1814 (only when a matching qualifier exists)
         working-directory: modern-quickstatements
         env:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        run: python move_kana_to_official_name.py
+        run: python remove_redundant_kana_statement.py
