@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrine Label QuickStatements</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container { max-width: 680px; margin: 0 auto; }
+
+    h1 {
+      font-size: 1.6rem;
+      color: #a5b4fc;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .subtitle a { color: #6366f1; text-decoration: none; }
+    .subtitle a:hover { text-decoration: underline; }
+
+    p {
+      color: #94a3b8;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #1e2130;
+      margin: 1.75rem 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #c4b5fd;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 0.6rem;
+    }
+
+    .lang-card {
+      display: block;
+      background: #1a1d2e;
+      border: 1px solid #2d3148;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+
+    .lang-card:hover {
+      background: #252840;
+      border-color: #6366f1;
+    }
+
+    .lang-card .flag { font-size: 1.2rem; }
+
+    .lang-card .lang-name {
+      display: block;
+      color: #e2e8f0;
+      font-size: 0.88rem;
+      font-weight: 500;
+      margin-top: 0.3rem;
+    }
+
+    .lang-card .lang-code {
+      display: block;
+      color: #475569;
+      font-size: 0.75rem;
+      margin-top: 0.1rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.78rem;
+      color: #334155;
+    }
+
+    footer a { color: #475569; text-decoration: none; }
+    footer a:hover { color: #a5b4fc; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Shrine Label QuickStatements</h1>
+  <p class="subtitle">
+    <a href="https://github.com/Emma-Leonhart/shrine-label-generator">GitHub repository</a>
+  </p>
+
+  <p>
+    This project generates multilingual <a href="https://www.wikidata.org/" style="color:#6366f1;text-decoration:none">Wikidata</a> labels for Shinto shrines and Buddhist temples.
+    Starting from Japanese names fetched via SPARQL, the pipeline produces labels in 18 languages
+    using a combination of custom phonological rules, transliteration libraries, and character substitution.
+  </p>
+  <p>
+    Each page below contains the full QuickStatements batch for that language,
+    ready to paste into <a href="https://quickstatements.toolforge.org/#/batch" style="color:#6366f1;text-decoration:none" target="_blank" rel="noopener">QuickStatements</a> and import into Wikidata.
+  </p>
+
+  <hr class="divider">
+
+  <h2>Choose a language</h2>
+
+  <div class="lang-grid">
+    <a class="lang-card" href="tok.html">
+      <span class="flag">🌍</span>
+      <span class="lang-name">Toki Pona</span>
+      <span class="lang-code">tok</span>
+    </a>
+    <a class="lang-card" href="ko.html">
+      <span class="flag">🇰🇷</span>
+      <span class="lang-name">Korean</span>
+      <span class="lang-code">ko · 한국어</span>
+    </a>
+    <a class="lang-card" href="zh.html">
+      <span class="flag">🇨🇳</span>
+      <span class="lang-name">Chinese</span>
+      <span class="lang-code">zh · 中文</span>
+    </a>
+    <a class="lang-card" href="hi.html">
+      <span class="flag">🇮🇳</span>
+      <span class="lang-name">Hindi</span>
+      <span class="lang-code">hi · हिन्दी</span>
+    </a>
+    <a class="lang-card" href="de.html">
+      <span class="flag">🇩🇪</span>
+      <span class="lang-name">German</span>
+      <span class="lang-code">de · Deutsch</span>
+    </a>
+    <a class="lang-card" href="fr.html">
+      <span class="flag">🇫🇷</span>
+      <span class="lang-name">French</span>
+      <span class="lang-code">fr · Français</span>
+    </a>
+    <a class="lang-card" href="pt.html">
+      <span class="flag">🇵🇹</span>
+      <span class="lang-name">Portuguese</span>
+      <span class="lang-code">pt · Português</span>
+    </a>
+    <a class="lang-card" href="nl.html">
+      <span class="flag">🇳🇱</span>
+      <span class="lang-name">Dutch</span>
+      <span class="lang-code">nl · Nederlands</span>
+    </a>
+    <a class="lang-card" href="es.html">
+      <span class="flag">🇪🇸</span>
+      <span class="lang-name">Spanish</span>
+      <span class="lang-code">es · Español</span>
+    </a>
+    <a class="lang-card" href="it.html">
+      <span class="flag">🇮🇹</span>
+      <span class="lang-name">Italian</span>
+      <span class="lang-code">it · Italiano</span>
+    </a>
+    <a class="lang-card" href="tr.html">
+      <span class="flag">🇹🇷</span>
+      <span class="lang-name">Turkish</span>
+      <span class="lang-code">tr · Türkçe</span>
+    </a>
+    <a class="lang-card" href="ru.html">
+      <span class="flag">🇷🇺</span>
+      <span class="lang-name">Russian</span>
+      <span class="lang-code">ru · Русский</span>
+    </a>
+    <a class="lang-card" href="uk.html">
+      <span class="flag">🇺🇦</span>
+      <span class="lang-name">Ukrainian</span>
+      <span class="lang-code">uk · Українська</span>
+    </a>
+    <a class="lang-card" href="lt.html">
+      <span class="flag">🇱🇹</span>
+      <span class="lang-name">Lithuanian</span>
+      <span class="lang-code">lt · Lietuvių</span>
+    </a>
+    <a class="lang-card" href="eu.html">
+      <span class="flag">🏔️</span>
+      <span class="lang-name">Basque</span>
+      <span class="lang-code">eu · Euskara</span>
+    </a>
+    <a class="lang-card" href="fa.html">
+      <span class="flag">🇮🇷</span>
+      <span class="lang-name">Farsi</span>
+      <span class="lang-code">fa · فارسی</span>
+    </a>
+    <a class="lang-card" href="ar.html">
+      <span class="flag">🇸🇦</span>
+      <span class="lang-name">Arabic</span>
+      <span class="lang-code">ar · العربية</span>
+    </a>
+    <a class="lang-card" href="arz.html">
+      <span class="flag">🇪🇬</span>
+      <span class="lang-name">Egyptian Arabic</span>
+      <span class="lang-code">arz · مصري</span>
+    </a>
+    <a class="lang-card" href="id_proposed.html" style="border-color: #f59e0b;">
+      <span class="flag">🇮🇩</span>
+      <span class="lang-name">Indonesian (Proposed)</span>
+      <span class="lang-code">id · Bahasa Indonesia</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>Labels generated from <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> via SPARQL &mdash; last pipeline run 2026-04-09</p>
+  </footer>
+
+</div>
+</body>
+</html>
