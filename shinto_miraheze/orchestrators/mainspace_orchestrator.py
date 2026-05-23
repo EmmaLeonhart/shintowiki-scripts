@@ -28,6 +28,7 @@ from shinto_miraheze.orchestrators.ops import (
     normalize_ill_wikidata,
     remove_defaultsort,
     shikinaisha_talk,
+    straggler_link_to_ill,
     strip_afc_templates,
     strip_char_count_cats,
     strip_html_comments,
@@ -45,10 +46,15 @@ from shinto_miraheze.orchestrators.ops import (
 # shikinaisha_talk is also a heavy op — it edits the corresponding talk
 # page when the visited mainspace page is in the shikinaisha-generated
 # category; returns no-op for every other page.
+# straggler_link_to_ill is a PRE_HEAVY light op (placed next to
+# ill_category_to_link) that converts raw straggler wikilinks into {{ill}}
+# templates via Wikidata resolution; no-op unless
+# ENABLE_STRAGGLER_LINK_TO_ILL=1.
 OPS = [
     strip_html_comments,
     strip_afc_templates,
     ill_category_to_link,
+    straggler_link_to_ill,
     normalize_ill_positional,
     normalize_ill_wikidata,
     interlang_consolidate,

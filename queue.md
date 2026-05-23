@@ -53,11 +53,6 @@ Subtree merged + generator workflow relocated + 20/day label drip-feed wired
   emmaleonhart.github.io/shintowiki-scripts/ (wire into generate-pages.yml), then
   turn the standalone shinto-label-generator repo's GitHub Pages (`docs/index.html`)
   into a redirect to that subpage. Not yet done.
-- [ ] Build the **straggler-link → ill** orchestrator op directly (the remote
-  routine for it was disabled 2026-05-23; Emma wants it done in-session, not via a
-  scheduled routine). Spec: convert raw `[[JaTitle|Disp]]` links (no colon in
-  target) to `{{ill}}` — Shinto-wiki QID first, else en→ja→zh→ko→de→ru; title from
-  P11250, lt= English label, qid= always.
 
 ## Pinned notes
 

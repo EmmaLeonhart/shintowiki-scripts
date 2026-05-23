@@ -30,6 +30,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     ill_category_to_link,
     interlang_consolidate,
+    straggler_link_to_ill,
     strip_html_comments,
     wikidata_lookup,
 )
@@ -52,7 +53,7 @@ TALK_NAMESPACES: list[tuple[int, str]] = [
     (863, "property_talk"),
 ]
 
-OPS = [strip_html_comments, ill_category_to_link, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids, categories_to_bottom]
+OPS = [strip_html_comments, ill_category_to_link, straggler_link_to_ill, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids, categories_to_bottom]
 
 STATE_NAME = "talk_orchestrator"
 CURSOR_NAME = "talk_orchestrator_cursor"

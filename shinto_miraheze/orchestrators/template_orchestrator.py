@@ -18,6 +18,7 @@ from shinto_miraheze.orchestrators.ops import (
     ill_category_to_link,
     interlang_consolidate,
     noinclude_wrap,
+    straggler_link_to_ill,
     strip_html_comments,
     template_mainspace_usage,
     wikidata_link,
@@ -36,6 +37,7 @@ from shinto_miraheze.orchestrators.ops import (
 OPS = [
     strip_html_comments,
     ill_category_to_link,
+    straggler_link_to_ill,
     interlang_consolidate,
     enwiki_wikidata_link,
     wikidata_lookup,

@@ -6,6 +6,59 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### New orchestrator op: straggler raw wikilink → {{ill}} (Wikidata-resolved)
+**Files:** `shinto_miraheze/orchestrators/ops/straggler_link_to_ill.py` (new), `shinto_miraheze/orchestrators/{mainspace,category,template,user,project,file,help,talk}_orchestrator.py`, `queue.md`
+
+Built the straggler-link → ill op directly in-session (the remote routine
+for it was disabled 2026-05-23; Emma wanted it done as an op, not a scheduled
+routine). It converts free-standing raw internal wikilinks into proper
+`{{ill}}` interlanguage-link templates by resolving the target to a Wikidata
+QID:
+
+    [[四所神社 (豊岡市)|四所神社]]
+      → {{ill|Shisho Shrine (Toyooka)|ja|四所神社 (豊岡市)|lt=Shisho Shrine|qid=Q11419885}}
+
+- **Scope — stragglers only.** Matches `[[Target]]` / `[[Target|Display]]`;
+  SKIPS any target containing a colon (File:/Image:/Category:/namespace +
+  interwiki `en:`/`ja:`/`zh:`… links), section-only `[[#X]]` links, and any
+  link sitting inside a `{{ … }}` template (ill/jalink/nihongo/infobox params).
+  In-template masking uses a brace-depth scan so nested templates are covered
+  as one outer span — a link inside any template is never touched.
+- **Resolution, strict priority.** (1) shinto.miraheze.org first: if the
+  target (following redirects) is a page carrying `{{wikidata link|Q…}}`, use
+  that QID; (2) else search Wikipedias en→ja→zh→ko→de→ru, first hit wins, take
+  the article's Wikidata item. No QID anywhere → link left unchanged.
+- **ill build mirrors the sibling ill ops.** First positional = P11250 value
+  with the `shinto:` prefix stripped (fallback: en Wikidata label if no
+  P11250); one `lang|sitelink-title` pair per Wikipedia sitelink (sorted,
+  enwiki/sister projects filtered like `normalize_ill_wikidata`); `lt=` = en
+  label, OMITTED when the item has no en label; `qid=` always. If neither
+  P11250 nor an en label exists there's no usable canonical title, so the link
+  is left alone.
+- **Pacing.** PRE_HEAVY light op (so converted text is captured by
+  `history_offload`'s fandom mirror / XML archive in the same cycle, like the
+  other ill ops). Read-only calls (miraheze + Wikidata + Wikipedias) throttled
+  0.3s and cached per-run by unique target/QID. `MAX_CONVERSIONS_PER_PAGE = 5`
+  caps a single page visit; the rest get picked up next cycle. Any HTTP 429
+  trips a module-level kill switch — all further lookups short-circuit to
+  not-found, no retries (repo-wide 429-bail policy). A failed lookup is cached
+  as not-found so the link is conservatively left unchanged for that run.
+- **Gated off by default** (`ENABLE_STRAGGLER_LINK_TO_ILL=1`) and registered
+  on all 8 wikitext-namespace orchestrators (mainspace, category, template,
+  user, project, file, help, talk), placed right after `ill_category_to_link`
+  in each OPS list.
+- **Dry-run before committing.** The spec example reproduced the target ill
+  exactly. Real shinto pages converted correctly, e.g. on *Airborne Parachute
+  Unit*: `[[田中賢一 (軍人)|田中賢一]]` →
+  `{{ill|Ken'ichi Tanaka|ja|田中賢一 (軍人)|lt=Ken'ichi Tanaka|qid=Q112239761}}`,
+  and on *Aedo Hashihime Shrine*: `[[伊勢文化舎]]` →
+  `{{ill|Ise Bunka-sha|ja|伊勢文化舎|lt=Ise Bunka-sha|qid=Q11379080}}`. `品部`
+  resolves to Q11418456 (has both an enwiki sitelink and P11250) and correctly
+  yields `{{ill|Shinabe clans|en|Shinabe clans|ja|品部|lt=shinabe|qid=Q11418456}}`.
+  Verified File:/Category:/`en:`/`ja:`/section-only links and links inside
+  `{{nihongo}}`/existing ills produce no change. A link whose item has no en
+  label and no P11250 (e.g. `丸 (雑誌)`, Q11367924) is left unchanged.
+
 ### Merged shinto-label-generator as a subtree + wired a 20/day label drip-feed
 **Files:** `shinto-label-generator/**` (subtree), `.github/workflows/label-generator-regenerate.yml` (new), `.github/workflows/generate-quickstatements.yml`, `modern-quickstatements/select_label_proposals.py` (new), `modern-quickstatements/label_proposals_drip.txt` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`
 
