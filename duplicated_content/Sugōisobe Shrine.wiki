@@ -1,8 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sug%C5%8Disobe_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
-{{Infobox religious building|image=File:Sugoisobe-jinja, Haiden from Afar - 2020.jpg|prefecture={{ill|Kaga, Ishikawa|qid=Q120103}}|coordinates={{Coord|36.313028|N|136.320806}}}}
 {{Short description|Shinto shrine in Japan}}
-----
-----
 {{infobox shinto shrine
 | religious_affiliation = [[Shinto]]
 | image                 = Sugoisobe-jinja, Haiden from Afar - 2020.jpg
@@ -53,21 +50,8 @@ File:Sugoisobe-jinja,_keidaisha-2.jpg|alt=敷地稲荷社|Site Inari Shrine
 == References ==
 {{reflist}}
 {{Beppyo Shrines}}
-\
-{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
-
-== Shikinaisha (式内社) ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| {{ill|Enuma District, Ishikawa|en|Enuma District, Ishikawa|ja|江沼郡|ko|에누마군|zh|江沼郡|lt=Enuma district|qid=Q5380885}} || {{ill|Sugōisobe Shrine|lt=Sugō Isobe Shrine|ja|菅生石部神社|commons|Category:Sugoisobe-jinja|fr|Sugōisobe-jinja|simple|Sugōisobe Shrine|sv|Sugōisobe-jinja|qid=Q11619342}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}} || — || {{coord|36.312776|136.320895|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182307 DB]
-|}
-
 {{translated page|ja|菅生石部神社|version=101992107|comment=Imported full ja history}}
-{{Draft categories|
-}}
 {{everybodywiki link|Sugōisobe Shrine}}
-{{everybodywiki link|Sugōisobe Shrine|Sugōisobe Shrine}}
 {{Commons category|Sugoisobe-jinja}}
 
 [[Category:Beppyo shrines]]

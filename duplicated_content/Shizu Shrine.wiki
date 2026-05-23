@@ -1,5 +1,5 @@
 {{Otheruses| |A shrine in Kyotango City, Kyoto Prefecture|{{ill|Shizuka Shrine|ja|静神社 (京丹後市)|12=simple|13=User:Immanuelle/Shizu Shrine (Kyotango City)|comment=changed title based on wikidata|qid=Q11663650}}}}
-{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Shizu Shrine
 | image = File:Shizu-jinja (Naka) haiden.JPG
 | location = {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture}}{{ill|Naka, Ibaraki|en|Naka, Ibaraki|qid=Q633647|lt=Naka, Ibaraki}} Shizu 2
@@ -14,7 +14,6 @@
 | annual_festival = {{ill|April 1|en|April 1|qid=Q2510|lt=April 1st}}
 | ceremonies = 
 | map = Japan Ibaraki
-| location = {{ill|Naka, Ibaraki|qid=Q633647}}
 | coordinates = {{Coord|36.501958|N|140.422192}}
 }}
 [[File:Shizu-jinja (Naka) ootorii.JPG|thumb|220px|right|{{center|First Torii}}]]
