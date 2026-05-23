@@ -1,18 +1,18 @@
 {{Short description|Shinto shrine in Tottori Prefecture, Japan}}
 {{Use dmy dates|date=November 2019}}
-{{Infobox religious building| religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
+{{Infobox religious building
 | name                  = Shitori Jinja <br>倭文神社
 | religious_affiliation = [[Shinto]]
 |image                 = Shitori-jinja, haiden.jpg
 | caption               = Haiden of Shitori Jinja Shrine
 {{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
 | map_type              = Japan Tottori Prefecture#Japan
-| map_alt               = 
+| map_alt               =
 | coordinates           = {{coord|35|29|25.34|N|133|54|10.68|E|region:JP-35_type:landmark}}
 | map_relief            = 1
-| map_size              = 
-| map_caption           = 
-| religious_affiliation = {{ill|Shinto|8=en|12=simple|13=User:Immanuelle/Shinto|qq=}}|type                  = 
+| map_size              =
+| map_caption           =
+| type                  =
 | deity                 = {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|qq=}}
 | founded_by            = 
 | established           = unknown
@@ -59,21 +59,15 @@ Shitori-jinja Kyoduka.jpg|Sutra Mound
 * Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. Routledge Curzon (1996) {{ISBN|1-873410-63-8}}
 * {{ill|Richard Ponsonby-Fane|Ponsonby-Fane|8=en|12=simple|13=User:Immanuelle/Richard Ponsonby-Fane|qq=}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
 ==External links==
-{{commonscat|Shitori-jinja}}
 *[http://www.sidorijinja.com Official home page]
 *[https://www.tottori-guide.jp/tourism/tour/view/338 Tottori Tourist Information]
 *[http://db.pref.tottori.jp/bunkazainavi.nsf/bunkazai_web_view/7A2EE5BD877C25074925796F0007FCE1?OpenDocument  Tottori prefecture Cultural properties navigation]{{in lang|ja}}
 ==Notes==
 {{reflist}}
 {{Beppyo Shrines}}
-\
 {{Ichinomiya}}
 {{Shizuri Faith}}
 {{translated page|ja|倭文神社 (湯梨浜町)|version=94012272|comment=Imported full ja history}}
-{{Draft categories|
-}}
-{{Commons category|Shitori-jinja}}
-{{Commons category|Shitori-jinja}}
 {{Commons category|Shitori-jinja}}
 {{wikidata link|Q245734}}
 

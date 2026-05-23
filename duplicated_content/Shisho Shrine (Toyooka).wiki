@@ -1,7 +1,7 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shisho_Shrine_%28Toyooka%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
-{{Infobox religious building| religious_affiliation = [[Shinto]]
+{{Infobox religious building
 |name = Shisho Shrine
-| religious_affiliation = [[Shinto]]
+|religious_affiliation = [[Shinto]]
 |image = File:Sisho-jinja Kinosaki01s4592.jpg
 |location = 447 Yushima, Kinosaki-cho, Toyooka City, Hyōgo Prefecture
 |coordinates = {{Coord|35.626222|N|134.807611}}
@@ -11,7 +11,6 @@
 |Main Hall = {{ill|Sangensha Nagare-zukuri|ja|三間社流造|12=simple|13=User:Immanuelle/Sangensha Nagare-zukuri|ja_comment=jawiki link invalid}}
 |Festivals = [[October 15]]<br>[[Kinosaki Danjiri Festival]] (October 14–15)<br>[[Hot Spring Festival]] (April 23)
 |Map = {{location map|Japan Hyōgo Prefecture|label=Shisho Shrine|float=center|relief=1|width=256}}
-|location = {{ill|Toyooka, Hyōgo|qid=Q696388}}
 }}
 '''Shisho Shrine''' (四所神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Kinosaki Onsen|ja|城崎温泉|12=simple|13=User:Immanuelle/Kinosaki Onsen|qq=}}, {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka, Hyōgo}}, adjacent to the {{ill|Goshono-yu|ja|御所の湯|12=simple|13=User:Immanuelle/Goshono-yu|ja_comment=jawiki link invalid|qid=Q135540751}}, one of the town’s prominent hot springs.
 == Deities ==
