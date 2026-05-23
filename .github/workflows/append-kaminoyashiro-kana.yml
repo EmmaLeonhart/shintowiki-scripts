@@ -1,0 +1,31 @@
+name: Append カミノヤシロ kana qualifiers
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Append カミノヤシロ to ojp-hani P1814 qualifiers via Wikidata API
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python append_kaminoyashiro_kana.py

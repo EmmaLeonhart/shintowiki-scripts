@@ -427,9 +427,17 @@ jobs:
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
+  # Append カミノヤシロ to ojp-hani P1814 kana qualifiers (bot request 2026-02-26).
+  # Direct Wikidata API edits; 50/day. Daily-fire gated.
+  append-kaminoyashiro-kana:
+    needs: [window-gate, cleanup, wikidata-qualifier-edit]
+    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    uses: ./.github/workflows/append-kaminoyashiro-kana.yml
+    secrets: inherit
+
   # Final action: rebuild run history page from all reports
   build-run-history:
-    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit]
+    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit, append-kaminoyashiro-kana]
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 

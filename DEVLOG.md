@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-23
+
+### Append カミノヤシロ to ojp-hani shrine kana qualifiers (Wikidata bot request 2026-02-26)
+**Files:** `modern-quickstatements/append_kaminoyashiro_kana.py` (new), `.github/workflows/append-kaminoyashiro-kana.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`
+
+Per the Wikidata bot request (2026-02-26): Old Japanese (`ojp-hani`) `P1448`
+official names of shrines carry a `P1814` "name in kana" qualifier that omits
+the reading of 神社, which in Old Japanese is カミノヤシロ (kami-no-yashiro).
+Built a direct Wikidata API editor that appends カミノヤシロ to each such
+qualifier value.
+
+Data shape verified against live Wikidata before building: P1448 mainsnak is
+monolingualtext (`ojp-hani`); the P1814 qualifier is the **string** datatype
+(not monolingualtext, despite the property name); a single P1448 statement can
+carry multiple P1814 qualifiers (alternate readings). The script edits each
+qualifier *in place* via `wbsetqualifier` with the existing `snakhash`, so no
+duplicate qualifier is created. Idempotent: a value already ending in カミノヤシロ
+is skipped, and the SPARQL universe shrinks via a `!STRENDS(...)` filter
+(4,706 matching statements at build time; 6 already done → 4,700 remaining,
+confirmed by `--dry-run`).
+
+Modelled on `test_wikidata_qualifier.py`: SPARQL → per-item `wbgetentities` →
+`wbsetqualifier`. `MAX_EDITS=50`/run (sits alongside the existing 50 QS-submit +
+50 P459-qualifier daily jobs under the once-per-day fire gate), `THROTTLE=1.5`,
+429-bail (no retries), graceful skip when `MW_BOTNAME`/`BOT_TOKEN` absent, and a
+`--dry-run` flag for local read-only verification. Wired into `cleanup-loop.yml`
+as `append-kaminoyashiro-kana`, daily-fire-gated after `wikidata-qualifier-edit`;
+`build-run-history` now also `needs` it.
+
+**Open follow-up (in `queue.md`):** the request's secondary ask — items
+`P31`=Q135038714 whose kana is a standalone `P1814` *statement* (not a
+qualifier) need the kana *moved into* a P1448 ojp-hani qualifier before the
+append. More invasive (statement restructuring); left for scoping with Emma.
+
+---
+
 ## 2026-05-20
 
 ### Remote queue consumer moved from GHA workflow to claude.ai scheduled routine

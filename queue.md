@@ -150,3 +150,14 @@ You have the context to You have the context to put all this stuff together into
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
 2. **Script-template invariants.** All scripts must support `--apply`, `--max-edits`, `--run-tag` flags; use `mwclient`; apply `time.sleep(THROTTLE)` with `THROTTLE = 2.5` between edits (bumped from 1.5 on 2026-04-18 for server load); set `User-Agent`; `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`; state file alongside the script. See `check_wikidata_labels.py` as a reference implementation. Do not innovate on this scaffolding.
 3. **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
+
+
+## Wikidata: カミノヤシロ kana — secondary ask (bot request 2026-02-26)
+
+Primary append job shipped (see DEVLOG 2026-05-23). Still open:
+
+- [ ] DECIDE (needs Emma): the bot request's secondary ask — items `P31`=Q135038714
+  whose kana is a standalone `P1814` *statement* (not a qualifier) need the kana
+  *moved into* a P1448 ojp-hani qualifier AND カミノヤシロ appended. More invasive
+  (statement restructuring); scope separately before building. Per the request,
+  this is "best done before" the primary append for full coverage.
