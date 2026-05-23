@@ -1,10 +1,11 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsukubusuma_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
 
 {{Expand language|topic=|langcode=ja|otherarticle=都久夫須麻神社|date=December 2021}}
 
 {{Infobox religious building
 | name = Tsukubusuma Shrine
 | image = File:Tsukubusuma Shrine.jpg
-| caption = Main shrine of Tsukubusuma Shrine, designated as a {{ill|National Treasure (Japan)|en|National Treasure (Japan)|qid=Q1139795|lt=National Treasure|1=National Treasure (Japan)}}.
+| caption = Main shrine of Tsukubusuma Shrine, designated as a {{ill|National Treasure (Japan)|en|National Treasure (Japan)|qid=Q1139795|lt=National Treasure}}.
 | map_type = Japan
 | map_alt = 
 | coordinates = {{Coord|35.42063888888889|N|136.14422222222223}}
@@ -13,21 +14,21 @@
 | map_caption = 
 | religious_affiliation = [[Shinto]]
 | type = 
-| deity ={{ill|Ichikishimahime|qid=Q11059454|1=Ichikishima-hime}}; {{ill|Ugajin|qid=Q795080|1=Ugajin}} 
+| deity ={{ill|Ichikishima-hime|qid=Q11059454}}; {{ill|Ugajin|qid=Q795080}} 
 | founded_by = 
 | established = 
 | date_destroyed = 
 | location = 
 | website = 
-| architecture_style ={{ill|East Asian hip-and-gable roof|qid=Q855025|1=East Asian hip-and-gable roof}} 
+| architecture_style ={{ill|East Asian hip-and-gable roof|qid=Q855025}} 
 | festival = 
 | leadership = 
-| location = {{ill|Nagahama|qid=Q844130|1=Nagahama, Shiga}}
+| location = {{ill|Nagahama, Shiga|qid=Q844130}}
 }}
-'''{{nihongo|Tsukubusuma Shrine|都久夫須麻神社|Tsukubusuma Jinja}}''' is a [[Shinto]] shrine on {{ill|Chikubu Island|en|Chikubu Island|qid=Q2975401|lt=Chikubu Island|1=Chikubu Island}} in {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}, Japan. Its {{nihongo|main hall|本殿|honden}} is a {{ill|National Treasure (Japan)|en|National Treasure (Japan)|qid=Q1139795|lt=National Treasure of Japan|1=National Treasure (Japan)}}. The shrine's main festival is held annually on June 15. It is also called '''{{nihongo|Chikubushima Shrine|竹生島神社|Chikubushima Jinja}}'''.
+'''Tsukubusuma Shrine''' (都久夫須麻神社, ''Tsukubusuma Jinja'') is a [[Shinto]] shrine on {{ill|Chikubu Island|en|Chikubu Island|qid=Q2975401|lt=Chikubu Island}} in {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}}, Japan. Its {{nihongo|main hall|本殿|honden}} is a {{ill|National Treasure (Japan)|en|National Treasure (Japan)|qid=Q1139795|lt=National Treasure of Japan}}. The shrine's main festival is held annually on June 15. It is also called '''Chikubushima Shrine''' (竹生島神社, ''Chikubushima Jinja'').
 
 ==See also==
-* {{ill|List of National Treasures of Japan (shrines)|en|List of National Treasures of Japan (shrines)|qid=Q3245520|lt=List of National Treasures of Japan (shrines)|1=List of National Treasures of Japan (shrines)}}
+* {{ill|List of National Treasures of Japan (shrines)|en|List of National Treasures of Japan (shrines)|qid=Q3245520|lt=List of National Treasures of Japan (shrines)}}
 
 ==References==
 *Joseph Cali with John Dougill, ''Shinto Shrines: A Guide to the Sacred Sites of Japan's Ancient Religion'' (University of Hawai'i Press, 2013).
@@ -42,7 +43,7 @@
 
 {{Commons category|Tsukubusuma-jinja}}
 
-{{wikidata link|Q11643470|co|commons:Category:Tsukubusuma-jinja|en|Tsukubusuma Shrine|fr|Sanctuaire Tsukubusuma|ja|都久夫須麻神社|ceb|Tsukubusuma Shrine}}
+{{wikidata link|Q11643470|co|commons:Category:Tsukubusuma-jinja|en|Tsukubusuma Shrine|fr|Sanctuaire Tsukubusuma|ja|都久夫須麻神社|ceb|Tsukubusuma Shrine|check_date=2026-05-12}}
 [[Category:710 establishments]]
 [[Category:8th-century establishments in Japan]]
 [[Category:8th-century Shinto shrines]]
@@ -61,3 +62,4 @@
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
+[[Category:Need translation]]
