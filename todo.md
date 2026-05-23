@@ -17,6 +17,10 @@ Active work queue lives in [queue.md](queue.md) (queue — items are deleted whe
 - [ ] **ILLs without `WD=`** — see the duplicate entry under Wiki content tasks > High priority. (Deferred — lower priority than the active queue.)
 - [ ] **Retrofit `populate_namespace_layers.py` → `ops/namespace_layers.py`** — mainspace only; creates/edits sibling pages in Data:/Export: namespaces; `HANDLES_SAVE = True`. Blocked on the wiki-side namespace creation.
 
+## Scheduled — 2027-05-23: label drip-feed opens fully
+
+- [ ] **Proposed-label drip-feed jumps from 20/day to ALL.** `modern-quickstatements/select_label_proposals.py` emits 20 random proposed labels/day from the `shinto-label-generator/` subtree until `RAMP_DATE = 2027-05-23`, then automatically switches to emitting the entire pool (~965k across 19 languages). The slow first year is deliberate — time to see community feedback and adjust the proposals before they go out en masse. This is already coded (the ramp is automatic); this entry is just the reminder of when it flips. If feedback early on says the proposals need rework, fix the generators (or push RAMP_DATE out) before the flip.
+
 ## Scheduled review — July 2026
 
 - [ ] **Audit terminating cleanup scripts** — all per-page "cycling" operations have been moved into the three namespace orchestrators (`mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`). The following scripts in `wiki-cleanup.yml` are **terminating** — they have state files but don't reset at the end of a sweep, so once their state covers every eligible page they simply do nothing on subsequent runs. In July 2026, check each one's state/log to confirm it has stopped producing edits; if so, remove the step from `wiki-cleanup.yml` and delete the script:
