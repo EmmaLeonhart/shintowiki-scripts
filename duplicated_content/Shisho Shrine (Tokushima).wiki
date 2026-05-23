@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shisho_Shrine_%28Tokushima%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name= Shisho Shrine
-| religious_affiliation = [[Shinto]]
 |image= [[File:Sisyo-jinja.jpg|240px]]
 |location= {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}} {{ill|Tokushima (city)|en|Tokushima (city)|qid=Q207309|lt=Tokushima}} {{ill|Fukushima|en|Fukushima|qid=Q230656|lt=Fukushima (Tokushima City)}} 2-chome 3-34
 |coordinates= 
