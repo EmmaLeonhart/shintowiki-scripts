@@ -6,6 +6,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Label-generator Pages consolidated; standalone repo redirects
+**Files:** `.github/workflows/generate-pages.yml`; (other repo) `EmmaLeonhart/shinto-label-generator` `docs/index.html` + `.github/workflows/deploy-redirect.yml`
+
+`generate-pages.yml` now copies `shinto-label-generator/docs/` into
+`_site/shinto-label-generator/`, so the merged label-generator report is served
+at emmaleonhart.github.io/shintowiki-scripts/shinto-label-generator/. In the
+standalone `shinto-label-generator` repo, `docs/index.html` was replaced with a
+redirect to that subpage and `regenerate.yml` (now redundant — regeneration runs
+here via `label-generator-regenerate.yml`) was swapped for a minimal
+`deploy-redirect.yml` that just serves the redirect. Pushed to that repo's
+master (57603cb).
+
 ### New orchestrator op: straggler raw wikilink → {{ill}} (Wikidata-resolved)
 **Files:** `shinto_miraheze/orchestrators/ops/straggler_link_to_ill.py` (new), `shinto_miraheze/orchestrators/{mainspace,category,template,user,project,file,help,talk}_orchestrator.py`, `queue.md`
 
