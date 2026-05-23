@@ -15,7 +15,9 @@ Resolution per page:
   * wiki changed, local unchanged  → pull wiki → local
   * local changed, wiki unchanged  → push local → wiki
   * both unchanged                 → no-op
-  * both changed                   → conflict, logged and skipped
+  * both changed                   → wiki wins: pull wiki → local (the wiki
+                                     is the authoritative source of truth for
+                                     this cloud-queue pipeline)
 
 Special case: if a local ``.wiki`` file no longer contains
 ``[[Category:Need translation]]``, the content is pushed to the wiki
@@ -265,9 +267,24 @@ def main():
                 print(f"ERROR saving {title}: {e}")
             continue
 
-        # Both changed → conflict.
+        # Both changed → conflict. POLICY: need_translation is cloud-queue
+        # "keyframe" work where the wiki is the authoritative source of truth
+        # (same as duplicated_content), so the wiki ALWAYS wins — pull,
+        # overwriting the local copy. Repo-only edits still push (handled
+        # above); only genuine both-sides conflicts resolve to the wiki here.
         conflicts += 1
-        print(f"CONFLICT: {title}  (wiki {base_revid} → {wiki_revid}, local sha changed) — skipped")
+        if not args.apply:
+            print(f"[DRY] PULL (wiki-wins on conflict): {title}  ({base_revid} → {wiki_revid})")
+            pulled += 1
+            continue
+        try:
+            local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
+            state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+            pulled += 1
+            print(f"PULL (wiki-wins) {title}  ({base_revid} → {wiki_revid})")
+        except Exception as e:
+            errors += 1
+            print(f"ERROR writing {title}: {e}")
 
     # ── Pass 2: local files whose title is no longer in the category ──
     orphans = sorted(set(local_files) - set(wiki_pages))
