@@ -30,17 +30,18 @@ re-pulled from the wiki, cursor reset. Still open:
   sample page (e.g. Take Minato Shrine — currently triplicated) and the merged
   result reaches the wiki.
 
-## Wikidata: カミノヤシロ kana — manual-review leftovers (bot request 2026-02-26)
+## Wikidata: カミノヤシロ kana — manual stragglers (bot request 2026-02-26)
 
-Both bot jobs shipped (see DEVLOG 2026-05-23). Part 2's katakana gate left
-behind cases that need a human (the move/append bots skip + report them):
+Both bot jobs shipped (see DEVLOG 2026-05-23). The "18 leftovers" earlier were a
+false alarm: part 2 now defers to part 1 whenever the ojp-hani P1448 already has
+a katakana qualifier (part 1 appends カミノヤシロ to it; the top-level modern
+hiragana reading is normal and left alone). Emma fixed the original 3
+ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
 
-- [ ] **18 Q135038714 items the part-2 bot won't touch.** From the dry-run census:
-  2 items with >1 ojp-hani P1448 (ambiguous attachment), 1 with a katakana
-  standalone kana but no ojp-hani P1448, and 15 whose standalone P1814 is a
-  *modern hiragana* reading (e.g. `いめじんじゃはちまんぐう`) needing a modern `ja`
-  official name, not the ojp-hani path (must NOT get カミノヤシロ). QIDs print in
-  the workflow log / via `--dry-run`.
+- [ ] **Items with 0 or >1 ojp-hani P1448 official name** (rare; surface in the
+  `move_kana_to_official_name.py --dry-run` "Ambiguous" report, e.g. Q135040786
+  with no ojp-hani name). Emma handles these directly on the wiki as they appear
+  — no bot action.
 
 
 ## Pinned notes

@@ -297,8 +297,9 @@ def main():
 
     edits = 0
     failed = 0
-    skipped = []          # (qid, reason) — no single ojp-hani official name
-    skipped_modern = []   # (qid, value) — non-katakana (modern hiragana) reading
+    skipped = []              # (qid, reason) — no single ojp-hani official name
+    skipped_has_qualifier = 0 # ojp-hani P1448 already has a P1814 qualifier → part 1's domain
+    skipped_modern = []       # (qid, values) — no qualifier and no katakana OJ reading at all
 
     for item in items:
         if edits >= max_edits:
@@ -306,12 +307,7 @@ def main():
         claims = get_entity_claims(session, item)
         targets = find_ojp_official_name(claims)
         standalone = standalone_kana_statements(claims)
-        # Only move katakana (Old-Japanese) readings; report the rest untouched.
-        katakana = [(g, v) for g, v in standalone if is_katakana_reading(v)]
-        for g, v in standalone:
-            if not is_katakana_reading(v):
-                skipped_modern.append((item, v))
-        if not katakana:
+        if not standalone:
             continue
         if len(targets) != 1:
             reason = f"{len(targets)} ojp-hani P1448 official names (need exactly 1)"
@@ -322,6 +318,23 @@ def main():
         target = targets[0]
         target_guid = target["id"]
         existing = existing_kana_qualifiers(target)
+
+        # If the ojp-hani official name ALREADY has a P1814 katakana qualifier,
+        # that is part 1's domain (append_kaminoyashiro_kana.py appends カミノヤシロ
+        # to the existing qualifier). Leave the whole item alone — INCLUDING its
+        # normal top-level modern (hiragana) reading. Part 2 only SEEDS a missing
+        # qualifier; moving a standalone in here would create a duplicate.
+        if existing:
+            skipped_has_qualifier += 1
+            continue
+
+        # No qualifier yet: move the standalone Old-Japanese KATAKANA reading in.
+        katakana = [(g, v) for g, v in standalone if is_katakana_reading(v)]
+        if not katakana:
+            # No qualifier AND no katakana OJ reading anywhere — only a modern
+            # reading exists; genuinely needs a human / modern ja official name.
+            skipped_modern.append((item, [v for _, v in standalone]))
+            continue
 
         for guid, value in katakana:
             if edits >= max_edits:
@@ -362,17 +375,22 @@ def main():
 
     label = "would write" if args.dry_run else "writes"
     print(f"\n=== Results: {edits} {label}, {failed} failed, "
-          f"{len(skipped)} items skipped (ambiguous), "
-          f"{len(skipped_modern)} modern-reading statements left untouched ===")
+          f"{len(skipped)} ambiguous (manual), "
+          f"{skipped_has_qualifier} left to part 1 (qualifier already exists), "
+          f"{len(skipped_modern)} modern-only (no OJ reading) ===")
     if skipped:
-        print("\nSkipped items needing manual attachment (0 or >1 ojp-hani official name):")
+        print("\nAmbiguous — need a human (0 or >1 ojp-hani official name):")
         for qid, reason in skipped:
             print(f"  https://www.wikidata.org/wiki/{qid} — {reason}")
     if skipped_modern:
-        print("\nModern (non-katakana) P1814 statements left untouched — NOT moved, NOT "
-              "given カミノヤシロ (would need a modern ja official name, not ojp-hani):")
-        for qid, value in skipped_modern:
-            print(f"  https://www.wikidata.org/wiki/{qid} — {value!r}")
+        print("\nNo qualifier and no Old-Japanese katakana reading anywhere — only a "
+              "modern reading exists; needs a modern ja official name (not this op):")
+        for qid, values in skipped_modern:
+            print(f"  https://www.wikidata.org/wiki/{qid} — {values!r}")
+    # Note: items whose ojp-hani P1448 already has a P1814 qualifier are NOT a
+    # problem — append_kaminoyashiro_kana.py (part 1) appends カミノヤシロ to that
+    # qualifier, and their top-level modern reading is left as-is. They are
+    # counted above only for transparency.
 
 
 if __name__ == "__main__":

@@ -6,6 +6,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Fixed part-2 kana move: defer to part 1 when a qualifier already exists
+**Files:** `modern-quickstatements/move_kana_to_official_name.py`, `queue.md`
+
+Emma reviewed the "18 part-2 leftovers" and they were a false alarm. Checked the
+data: of the 154 Q135038714 items with a standalone P1814 + an ojp-hani P1448,
+**48 already have a P1814 katakana qualifier** on that official name (e.g. Eno
+Shrine Q135040432: P1448 江野神社 ojp-hani + qualifier エノ, plus a normal
+top-level modern reading えのじんじゃ) — those are part 1's job
+(`append_kaminoyashiro_kana.py` appends カミノヤシロ to the existing qualifier), and
+the top-level modern hiragana reading is correct and should be left. The 15
+"modern hiragana leftovers" were all in this set. Part 2 trying to "move" a
+standalone into those 48 would have created duplicate qualifiers.
+
+Fix: part 2 now **skips any item whose ojp-hani P1448 already has a P1814
+qualifier** (defers to part 1) and only SEEDS a qualifier for the ~106 items that
+genuinely lack one. Reporting de-alarmed: the buckets are now "ambiguous
+(manual)", "left to part 1 (qualifier already exists)", and "modern-only (no OJ
+reading)". Dry-run after the fix: 48 deferred to part 1, ~106 seeded, 0
+modern-only, 1 genuinely ambiguous (Q135040786, no ojp-hani name). Emma fixed the
+earlier 3 ambiguous items on the wiki by hand.
+
 ### Label-generator Pages consolidated; standalone repo redirects
 **Files:** `.github/workflows/generate-pages.yml`; (other repo) `EmmaLeonhart/shinto-label-generator` `docs/index.html` + `.github/workflows/deploy-redirect.yml`
 
