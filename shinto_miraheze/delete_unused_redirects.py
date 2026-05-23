@@ -56,10 +56,17 @@ USER_AGENT = (
     "UnusedRedirectDeleteBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 )
 
-# MediaWiki querypage name. Determined by SpecialPage alias — for
-# Special:UnusedRedirects this is "Unusedredirects" (camel-stripped,
-# matches MW's canonical form).
-QUERYPAGE_NAME = "Unusedredirects"
+# MediaWiki querypage name. Must match the value the `qppage` API param
+# accepts, which is the Special: alias in its exact casing — verified via
+# api.php?action=paraminfo&modules=query+querypage (NOT a camel-stripped
+# guess). For Special:UnusedRedirects the API requires "UnusedRedirects"
+# (capital R). The previous "Unusedredirects" started returning
+# ('badvalue', 'Unrecognized value for parameter "qppage"') ~2026-05-16,
+# which failed this step and (because the cleanup job gates them on its
+# success) silently blocked all daily Wikidata edits. The aliases are
+# inconsistent per page — e.g. Listredirects has no capital R — so always
+# confirm against paraminfo rather than by analogy with sibling scripts.
+QUERYPAGE_NAME = "UnusedRedirects"
 
 
 def iter_unused_redirects(site):

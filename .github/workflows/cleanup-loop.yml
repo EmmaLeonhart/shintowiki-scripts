@@ -416,14 +416,14 @@ jobs:
   # Daily-fire gate keeps total wikidata edits/day bounded.
   submit-quickstatements:
     needs: [window-gate, talk-orchestrator, random-wait, cleanup]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
   # Direct Wikidata edits via API (after QS submission). Daily-fire gated.
   wikidata-qualifier-edit:
     needs: [window-gate, cleanup, submit-quickstatements]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/test-wikidata-qualifier.yml
     secrets: inherit
 
@@ -433,7 +433,7 @@ jobs:
   # Direct Wikidata API edits; 50/day. Daily-fire gated.
   move-kana-to-official-name:
     needs: [window-gate, cleanup, wikidata-qualifier-edit]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/move-kana-to-official-name.yml
     secrets: inherit
 
@@ -441,7 +441,7 @@ jobs:
   # Direct Wikidata API edits; 50/day. Daily-fire gated.
   append-kaminoyashiro-kana:
     needs: [window-gate, cleanup, move-kana-to-official-name]
-    if: always() && needs.cleanup.result == 'success' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/append-kaminoyashiro-kana.yml
     secrets: inherit
 

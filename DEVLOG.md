@@ -6,6 +6,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Fixed: no Wikidata edits since 2026-05-16 (qppage casing + cleanup coupling)
+**Files:** `shinto_miraheze/delete_unused_redirects.py`, `.github/workflows/cleanup-loop.yml`, `queue.md`
+
+Wikidata edits (under user `Immanuelle`) stopped on 2026-05-16 (last edit
+19:29Z, Uga Shrine). Root cause was two-layered:
+
+1. **`delete_unused_redirects.py` querypage casing.** The script queried the
+   MediaWiki `querypage` API with `qppage="Unusedredirects"`; the API requires
+   the exact Special: alias casing `"UnusedRedirects"` (capital R) and started
+   returning `('badvalue', 'Unrecognized value for parameter "qppage"')` around
+   2026-05-16. Verified the correct value via
+   `api.php?action=paraminfo&modules=query+querypage` (valid redirect querypages:
+   BrokenRedirects, DoubleRedirects, **Listredirects** (no capital R!),
+   UnusedRedirects — the aliases are inconsistent per page, so the script's old
+   "camel-stripped canonical form" comment was simply wrong). Only this one of
+   the repo's ~11 querypage callers was mis-cased; the others' steps weren't
+   failing. Fixed the constant + comment.
+
+2. **Cleanup → Wikidata workflow coupling (the real design flaw).** The failing
+   redirect step is a *Shinto-wiki* (miraheze) operation with nothing to do with
+   Wikidata — but the four Wikidata-edit jobs in `cleanup-loop.yml`
+   (submit-quickstatements, wikidata-qualifier-edit, move-kana-to-official-name,
+   append-kaminoyashiro-kana) were gated `if: ... needs.cleanup.result ==
+   'success'`. So a Shinto-wiki cleanup failure silently skipped all Wikidata
+   edits. Changed the gate to `needs.cleanup.result != 'cancelled'` on all four:
+   they still sequence after the cleanup job, but a cleanup *failure* no longer
+   blocks independent Wikidata work. (Per Emma: redirect cleanup "shouldn't even
+   be applying for wikidata.")
+
+Both fixes pushed to main, which re-triggers `cleanup-loop.yml`.
+
 ### Append カミノヤシロ to ojp-hani shrine kana qualifiers (Wikidata bot request 2026-02-26)
 **Files:** `modern-quickstatements/append_kaminoyashiro_kana.py` (new), `.github/workflows/append-kaminoyashiro-kana.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`
 
