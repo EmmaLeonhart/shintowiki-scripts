@@ -1,6 +1,9 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Satakunari_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name = Satakunari Shrine
+| religious_affiliation = [[Shinto]]
 | image = File:Satakunari-jinja 02.jpg
 | location = 322 Ushikaube, Sata, {{ill|Tamaki|en|Tamaki|qid=Q1289593|lt=Tamaki}}, {{ill|Watarai District|en|Watarai District|qid=Q1131032|lt=Watarai District}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Japan
 | Latitude = 34 | Latitude_Min = 29 | Latitude_Sec = 25.0  
@@ -14,31 +17,50 @@
 | Pilgrimage Sites = 
 | festival = {{ill|January 17|en|January 17|qid=Q2264|lt=January 17}}
 | Rituals = [[Kannamesai]] Yuda Procession ([[October 21]])
+| location = {{ill|Tamaki, Mie|qid=Q587348}}
 | coordinates = {{Coord|34.490278|N|136.637694}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
+
 '''Satakunari Shrine''' (狭田国生神社, *Satakunari Jinja*<ref name="ic">Ise Bunka-sha (2008): p. 58</ref>) is an [[auxiliary shrine]] (*sessha*) of [[Ise Grand Shrine]] ({{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}, *Naikū*), located on the left bank of the Sotojida River in {{ill|Tamaki|en|Tamaki|qid=Q1289593|lt=Tamaki}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Japan. Locally, it is affectionately referred to as "Haiko-san."<ref name="tm4">Kaneko (1984): p. 34</ref>
+
 == Overview ==
-It is one of the 13 auxiliary shrines in Tamaki Town.<ref name="sk4">Shikinaisha Research Association (1990): p.204</ref><ref name="ic"/> Among the 27 auxiliary shrines of the Inner Shrine, it Ranks 26th.<ref name="uy"/>
+
+The shrine is located at 322 Ushikaupe, Sada, Tamaki Town, Watarai District, Mie Prefecture.<ref name="sk4">Shikinaisha Research Association (1990): p.204</ref> It is one of the 13 auxiliary shrines in Tamaki Town.<ref name="ic"/> Among the 27 auxiliary shrines of the Inner Shrine, it Ranks 26th.<ref name="uy"/>
+
 The name "Sata" is presumed to derive from its location, "Sada."<ref name="sk4"/> The local nickname "Haiko" is thought to be a variation of the enshrined deity Hayakawahiko no Mikoto.<ref name="sk5">Shikinaisha Research Association (1990): p.205</ref> In "Seyō Gorin Ikkyō," it is noted that "commonly referred to as Haiko Shrine, the area is also known as 'Samukawa Shrine.'"<ref name="tm5">Kaneko (1984): p.35</ref>
+
 It is believed to have been established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}.<ref name="ic"/> The shrine grounds cover 1,656 square meters.<ref name="sk5"/> The shrine building, constructed in the Shinmei-zukuri style with wooden planks, faces south and is enclosed by a single layer of tamagaki (sacred fence).<ref name="sk5"/> There is no offertory box.
+
 == Enshrined Deities ==
-The shrine enshrines three deities: Hayakawahiko no Mikoto and Hayakawahime no Mikoto, gods of the Sotojōda River flowing nearby, and Yamazue no Mitama, the guardian deity of the land.<ref name="ic"/> The "Kōtai Jingū Gishikichō" already mentions the enshrinement of these three deities, with "Hayakawa" referring to the Sotojōda River.<ref name="sk5"/> The parent deities of Hayakawahiko and Hayakawahime are enshrined at {{ill|Sugihara Shrine|ja|棒原神社|12=simple|13=User:Immanuelle/Sugihara Shrine|qq=}}.<ref name="sk5"/>
+
+The shrine enshrines three deities: Hayakawahiko no Mikoto and Hayakawahime no Mikoto, gods of the Sotojōda River flowing nearby, and Yamazue no Mitama, the guardian deity of the land.<ref name="ic"/> The "Kōtai Jingū Gishikichō" already mentions the enshrinement of these three deities, with "Hayakawa" referring to the Sotojōda River.<ref name="sk5"/> The parent deities of Hayakawahiko and Hayakawahime are enshrined at {{ill|Sugihara Shrine|ja|棒原神社|12=simple|13=User:Immanuelle/Sugihara Shrine}}.<ref name="sk5"/>
+
 == History ==
+
 According to the "Yamato-hime-no-mikoto Seiki," the shrine was established when Yamato-hime-no-mikoto, upon crossing a stream with Amaterasu Ōmikami, received an offering of sacred rice paddies from Hayakawa Hiko no Mikoto, leading to the shrine's foundation as "Hayakawa Sata Shrine."<ref name="sk4"/> In ancient times, the shrine had priests appointed by the Ōmiya family, who conducted daily rituals.<ref name="sk5"/>
+
 The shrine fell into disrepair during the Sengoku period but was restored in 1663 (Kanbun 3) with the efforts of Ōmiya priest Kawabe Masanaga.<ref>Shikinaisha Research Association (1990): pp.204-205</ref> The shrine was rebuilt in January 1915 (Taisho 4),<ref name="uy">Ujiyamada City Office (1929): p.11</ref> reconstructed in November 1956 (Showa 31), and repaired in June 1979 (Showa 54).<ref name="sk5"/>
+
 == Festivals ==
+
 Local leaders visit the shrine annually on January 17.<ref name="ic"/> The shrine holds Inari Festival (February 20), Tsukinami Festival (June 20 and December 20), and Niiname Festival (November 27) in the style of the Inner Shrine's pilgrimage rituals.<ref name="sk5"/>
+
 == Flora ==
+
 Camellias planted within the shrine grounds bloom in spring.<ref name="ic"/>
+
 == Access ==
+
 ;Public Transport
 * About 500 meters northeast of JR Sangu Line's Tamaki Station.<ref name="sk4"/>
 * Just south of the Kayamachi bus stop on Mie Kotsu buses.<ref name="sk4"/>
+
 ;By Car
 * About 6 minutes (3.7 km) north from Tamaki IC on the Ise Expressway via Mie Prefectural Route 530 (Sunny Road), along Mie Prefectural Route 717.<ref name="sk4"/> There is no parking available nearby.
 == References ==
 {{Reflist}}
+
 == Bibliography ==
 * 宇治山田市役所『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * 金子延夫『玉城町史 第3巻―南伊勢の歴史と伝承―』三重県郷土資料叢書第92集、三重県郷土史料刊行会、昭和59th year 3月10日、308p.
@@ -46,10 +68,19 @@ Camellias planted within the shrine grounds bloom in spring.<ref name="ic"/>
 * 『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 == See Also ==
 * [[神社一覧]]
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m05/0503.html 狭田国生神社（さたくなりじんじゃ）] - 財団法人伊勢神宮崇敬会
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|狭田国生神社|version=77002057|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Satakunari Shrine (Q17225991)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -57,12 +88,12 @@ Camellias planted within the shrine grounds bloom in spring.<ref name="ic"/>
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Satakunari Shrine|lt=Satakunari Shrine|ja|狭田国生神社|qid=Q17225991}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Kōtai Jingū|qid=Q11581011}} || — || {{coord|34.490344|136.637711|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181118 DB]
 |}
-
-{{translated page|ja|狭田国生神社|version=77002057|comment=Imported full ja history}}
-
+{{wikidata link|Q17225991|da|d:Q17225991|ja|狭田国生神社|check_date=2026-05-09}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Tamaki Town]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Tamaki]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -71,6 +102,7 @@ Camellias planted within the shrine grounds bloom in spring.<ref name="ic"/>
 [[Category:Tamaki,_Mie]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

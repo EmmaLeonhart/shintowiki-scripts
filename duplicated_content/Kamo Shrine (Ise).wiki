@@ -1,4 +1,8 @@
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:Independently git synced pages]]
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:Independently git synced pages]]
+
 {{Infobox religious building
 |名称= 鴨神社
 | religious_affiliation = [[Shinto]]
@@ -17,29 +21,46 @@
 |神事= [[神嘗祭]]
 }}
 '''Kamo Shrine''' (鴨神社) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=sessha|1=Setsumatsusha}} of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} ({{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}) (Inner Shrine). It is located on the mid-slope of {{ill|Mount Dainichi (Ise)|ja|大日山|12=simple|13=User:Immanuelle/Mount Dainichi (Ise)|1=Mount Dainichi|comment=changed title based on wikidata|qid=Q11435625}}, and is considered the most challenging {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} to reach among the {{ill|List of Shikinaisha in Ise Province|lt=List of Shikinaisha in Ise Province|lt=125 Shrines of Ise|ja|神宮125社|12=simple|13=User:Immanuelle/125 Shrines of Ise|ja_comment=jawiki link invalid}}<ref name="gk">{{ill|Gakken Publishing|ja|学研パブリッシング|12=simple|13=User:Immanuelle/Gakken Publishing|ja_comment=jawiki redirects to Gakken|1=Gakken Plus Co., Ltd.|comment=changed title based on wikidata|qid=Q86741099}} (2013): p.69</ref>.
+
 == Overview ==
-{{ill|Kamo shrines|lt=Kamo shrines|lt=Kamo Shrine|ja|鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine|qq=}} is located at 1398 Okatani, Yamaga, Tamaki Town, Watarai District, Mie Prefecture<ref name="sk1">Shikinaisha Kenkyūkai (1990): p.201</ref>. It is one of the 13 auxiliary and subordinate shrines of the {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine) located in Tamaki Town and Ranks 4th among the 27 auxiliary shrines of the Inner Shrine<ref>Ujiyamada City Hall (1929): pp.9–11</ref>.
-The "Kamo" in the shrine name was traditionally believed to refer to an old place name. However, archaeological progress at the {{ill|Saikū|en|Saikū|qid=Q150845|lt=Saikū|1=Saikū}} site has led to suggestions of a connection with the {{ill|Kamo clan|ja|賀茂氏|12=simple|13=User:Immanuelle/Kamo clan|qq=}}, who served as water administrators<ref name="sk9">Shikinaisha Kenkyūkai (1990): p.199</ref>.
+{{ill|Kamo shrines|lt=Kamo shrines|lt=Kamo Shrine|ja|鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine}} is located at 1398 Okatani, Yamaga, Tamaki Town, Watarai District, Mie Prefecture<ref name="sk1">Shikinaisha Kenkyūkai (1990): p.201</ref>. It is one of the 13 auxiliary and subordinate shrines of the {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine) located in Tamaki Town and Ranks 4th among the 27 auxiliary shrines of the Inner Shrine<ref>Ujiyamada City Hall (1929): pp.9–11</ref>.
+
+The "Kamo" in the shrine name was traditionally believed to refer to an old place name. However, archaeological progress at the {{ill|Saikū|en|Saikū|qid=Q150845|lt=Saikū|1=Saikū}} site has led to suggestions of a connection with the {{ill|Kamo clan|ja|賀茂氏|12=simple|13=User:Immanuelle/Kamo clan}}, who served as water administrators<ref name="sk9">Shikinaisha Kenkyūkai (1990): p.199</ref>.
+
 The shrine grounds cover an area of 15,018 m²<ref name="sk2">Shikinaisha Kenkyūkai (1990): p.202</ref>. The shrine building is constructed in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style with a wooden plank roof, facing south, and is enclosed by a single layer of {{ill|Tamagaki|en|Tamagaki|qid=Q3078312|lt=Tamagaki|1=Sacred fences}}<ref name="sk2"/>. It features one {{ill|Shinmei torii|ja|神明鳥居|12=simple|13=User:Immanuelle/Shinmei torii|ja_comment=jawiki redirects to 鳥居|1=Torii|comment=changed title based on wikidata|qid=Q234731}}<ref name="sk2"/>. The sacred object (shintai) is a stone<ref>Kaneko (1983): p.59</ref>. There is no offertory box.
+
 A stream flowing beneath the shrine grounds is said to have never dried up, even during droughts<ref name="ic">Ise Bunka-sha (2008): p.65</ref>. The trees on the grounds display beautiful autumn foliage during late autumn<ref name="ic"/>.
+
 == Enshrined Deities ==
 The enshrined deities are '''Ishikorowake no Mikoto''' (石己呂和居命) and '''Mimae no Kami''' (御前神)<ref name="gk"/><ref name="ic"/>. Both deities are children of {{ill|Ōminakami no Mikoto|ja|大水上命|12=simple|13=User:Immanuelle/Ōminakami no Mikoto|ja_comment=jawiki link invalid}} and are considered gods of agriculture and irrigation<ref name="gk"/><ref name="ic"/>. Originally, there were separate shrine buildings for each deity<ref name="uy">Ujiyamada City Hall (1929): p.10</ref>, but after the shrine was restored by {{ill|Kawabe Masanaga|ja|河邊精長|12=simple|13=User:Immanuelle/Kawabe Masanaga|ja_comment=jawiki link invalid}} during the Edo period, the deities have been enshrined together in a single structure<ref name="sk2"/>.
+
 == History ==
 According to the ''Enryaku Gishiki-chō'', the shrine was established during the reign of {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<ref>Kaneko (1983): p.68</ref>, giving it a history as long as the Ise Grand Shrine itself<ref name="sk0">Shikinaisha Kenkyūkai (1990): p.200</ref>. In ancient texts, the shrine is referred to as "Kamo-sha" or "Kamo Jinja," and its reading as "Kamo" is undisputed<ref name="sk9"/>.
+
 It was designated to undergo reconstruction every 20 years, following the tradition of the {{ill|Jingū Shikinen Sengū|lt=Shikinen Sengū|ja|式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|ja_comment=jawiki redirects to 遷宮}} at the Ise Grand Shrine<ref name="sk0"/>. However, records of reconstruction ceased after an entry from December 8, 1340, which mentions an order to rebuild the shrine using rice tributes from Tajima Province<ref name="sk0"/>.
+
 In 1663 (Kanbun 3), the shrine was restored by Grand Priest {{ill|Kawabe Masanaga|ja|河邊精長|12=simple|13=User:Immanuelle/Kawabe Masanaga|ja_comment=jawiki link invalid}} in Yamaga Village, Okatani<ref name="sk0"/>. {{ill|Mikado Kiyonao|ja|御巫清直|12=simple|13=User:Immanuelle/Mikado Kiyonao|1=Mikannagi Kiyonao|comment=changed title based on wikidata|qid=Q6537624}} later criticized this restoration site as inappropriate in his work ''Ninomiya Kansha Engaku Kō'', proposing that the original site was within Yamaga Village at the remains of the former {{ill|Yahashira Shrine|lt=Yahashira Shrine|1=Hachioji Shrine|ja|八柱神社|12=simple|13=User:Immanuelle/Yahashira Shrine|13=User:Immanuelle/Hachioji Shrine|ja_comment=jawiki redirects to 八王子神社}}, which had been merged in 1908 (Meiji 41)<ref>Shikinaisha Kenkyūkai (1990): pp.201–202</ref>.
+
 The current location was established in 1876 (Meiji 9)<ref name="sk0"/>. The shrine building was reconstructed in 1922 (Taishō 11)<ref name="uy"/>.
+
 == Rituals ==
 On the 16th day of the 3rd lunar month, a ritual known as ''Miyatamori Shinji'' (宮田もり神事) is held, which is associated with {{ill|Kōshin|en|Kōshin|qid=Q3082157|lt=Kōshin belief|1=Kōshin}}<ref>Sakurai (1991): p.293</ref>.
-During the {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai|1=Kinensai}} (February), {{ill|Tsukinami-sai|ja|月次祭|1=Tsukinami-no-Matsuri|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June and December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niiname-sai|1=Niiname-no-Matsuri}} (November), rituals are conducted in front of the shrine. For the {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai|qq=}} (January 1), {{ill|Genshi-sai|ja|元始祭|12=simple|13=User:Immanuelle/Genshi-sai|qq=}} (January), {{ill|Kenkoku Kinen no Hi|ja|建国記念祭|12=simple|13=User:Immanuelle/Kenkoku Kinen no Hi|ja_comment=jawiki link invalid}} (February 11), {{ill|Fūhi no Sai|ja|風日祈祭|1=Kazahi-no-Misai|2=ja|3=風日祈祭|qid=Q135524493|12=simple|13=User:Immanuelle/Fūhi no Sai|ja_comment=jawiki link invalid|qid=Q135524493}} (May and August), and {{ill|Tenchō-sai|ja|天長祭|12=simple|13=User:Immanuelle/Tenchō-sai|ja_comment=jawiki redirects to 天皇誕生日|1=The Emperor's Birthday|comment=changed title based on wikidata|qid=Q72318}} (December 23), remote rituals are performed at the Gojōden of the Ise Grand Shrine<ref>Shikinaisha Kenkyūkai (1990): pp.200–201</ref>.
+
+During the {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai|1=Kinensai}} (February), {{ill|Tsukinami-sai|ja|月次祭|1=Tsukinami-no-Matsuri|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri}} (June and December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niiname-sai|1=Niiname-no-Matsuri}} (November), rituals are conducted in front of the shrine. For the {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai}} (January 1), {{ill|Genshi-sai|ja|元始祭|12=simple|13=User:Immanuelle/Genshi-sai}} (January), {{ill|Kenkoku Kinen no Hi|ja|建国記念祭|12=simple|13=User:Immanuelle/Kenkoku Kinen no Hi|ja_comment=jawiki link invalid}} (February 11), {{ill|Fūhi no Sai|ja|風日祈祭|1=Kazahi-no-Misai|2=ja|3=風日祈祭|qid=Q135524493|12=simple|13=User:Immanuelle/Fūhi no Sai|ja_comment=jawiki link invalid|qid=Q135524493}} (May and August), and {{ill|Tenchō-sai|ja|天長祭|12=simple|13=User:Immanuelle/Tenchō-sai|ja_comment=jawiki redirects to 天皇誕生日|1=The Emperor's Birthday|comment=changed title based on wikidata|qid=Q72318}} (December 23), remote rituals are performed at the Gojōden of the Ise Grand Shrine<ref>Shikinaisha Kenkyūkai (1990): pp.200–201</ref>.
+
 == Access ==
-Near the shrine are the ruins of an ancient icehouse (氷室) associated with the {{ill|Saikū|en|Saikū|qid=Q150845|lt=Saikū|1=Saikū}}<ref name="ic"/>. About 2.5 km from Kamo Shrine is the {{ill|Kamoshimo Shrine|ja|鴨下神社|12=simple|13=User:Immanuelle/Kamoshimo Shrine|qq=}}, which enshrines the same deity and is located within the same Shirota region<ref name="sk0"/>.
+Near the shrine are the ruins of an ancient icehouse (氷室) associated with the {{ill|Saikū|en|Saikū|qid=Q150845|lt=Saikū|1=Saikū}}<ref name="ic"/>. About 2.5 km from Kamo Shrine is the {{ill|Kamoshimo Shrine|ja|鴨下神社|12=simple|13=User:Immanuelle/Kamoshimo Shrine}}, which enshrines the same deity and is located within the same Shirota region<ref name="sk0"/>.
+
 ; By Public Transport
 There are no nearby train stations or bus stops. From {{ill|Tamaru Station|en|Tamaru Station|qid=Q117533|lt=Tamaru Station|1=Tamaru Station}} on the {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=JR Sangū Line|1=Sangū Line}}, it is about a 50-minute walk (4.0 km) southwest, or about 53 minutes (4.3 km) south from {{ill|Tokida Station|en|Tokida Station|qid=Q7813584|lt=Sotojōda Station|1=Tokida Station}}<ref name="ic"/>. From Yamaga village, a stone marker labeled "Kamo Shrine" leads through a bamboo grove, under a tunnel beneath the {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway|1=Ise Expressway}}, and along a mountain path to the shrine<ref name="ic"/>. The distance from the marker to the shrine is about 1.1 km<ref>Ise Bunka-sha (2008): p.63</ref>, taking around 20 minutes<ref name="gk"/>. There are forestry roads nearby, so caution is advised to avoid getting lost<ref name="ic"/>.
+
 ; By Car
 From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=User:Immanuelle/Tamaki Interchange|1=Tamaki interchange|comment=changed title based on wikidata|qid=Q11572465}} on the Ise Expressway, it takes about 6 minutes (2.1 km) to reach the stone marker for Kamo Shrine<ref name="gk"/>. The mountain path beyond the marker is for pedestrians only, and vehicles cannot pass through. However, there is a parking area near {{ill|Matoyama Park|ja|的山公園|12=simple|13=User:Immanuelle/Matoyama Park|ja_comment=jawiki link invalid}}, which is accessible via a tunnel under the Ise Expressway. This route includes a paved mountain path, reducing the walking distance.
+
 == References ==
+
 {{Reflist|2}}
+
 == Bibliography ==
 * [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
@@ -47,9 +68,11 @@ From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=Use
 * 金子延夫『玉城町史 第1巻―南伊勢の歴史と伝承―』三重県郷土資料叢書第61集、三重県郷土史料刊行会、昭和58th year 8月10日、276p.
 * [[櫻井勝之進]]『伊勢神宮の祖型と展開』[[国書刊行会]]、平成3rd year 11月30日、318p. ISBN 4-336-03296-3
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
+
 == See Also ==
-* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 {{ external media
 | align  = 
@@ -58,7 +81,13 @@ From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=Use
 |image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area04/area04_05.jpg 鴨神社]
 }}
 * [http://www.jingukaikan.jp/125mairi/m07/0704.html 鴨神社（かもじんじゃ）] - 財団法人伊勢神宮崇敬会
+
 {{125 Shrines of Ise}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Kamo Shrine (Ise) (Q17226771)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -67,7 +96,27 @@ From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=Use
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Kamo Shrine (Ise)|lt=Kamo Shrine (Tamaki)|ja|鴨神社 (玉城町)|qid=Q17226771|1=Kamo Shrine (Ise)}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.461338|136.607554|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181117 DB]
 |}
 
-[[Category:Independently git synced pages]]
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Kamo Shrine (Q106852684)|lt=Kamo Shrine|qid=Q106852684}} — Higashimiyoshi
+* {{ill|Kamo Shrine (Q11675602)|lt=Kamo Shrine|qid=Q11675602}} — Settsu Province
+* {{ill|Kamo Shrine (Q134989361)|lt=Kamo Shrine|qid=Q134989361}} — Sakaide
+* {{ill|Kamo Shrine (Q135039165)|lt=Kamo Shrine|qid=Q135039165}} — Izumi Province
+* {{ill|Kamo Shrine (Q135195211)|lt=Kamo Shrine|qid=Q135195211}} — Hikami district
+* {{ill|Kamo Shrine (Ise) (Q11675601)|lt=Kamo Shrine (Ise)|qid=Q11675601}}
+* {{ill|Kamo Shrine (Tamaki) (Q17226771)|lt=Kamo Shrine (Tamaki)|qid=Q17226771}} — Tamaki
+* {{ill|Kamogami Shrine (Q135070272)|lt=Kamogami Shrine|qid=Q135070272}} — Awa Province
+* {{ill|Kamono Shrine (Q135039432)|lt=Kamono Shrine|qid=Q135039432}} — Inabe district
+* {{ill|Kamono Shrine (Q135041197)|lt=Kamono Shrine|qid=Q135041197}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041213)|lt=Kamono Shrine|qid=Q135041213}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041214)|lt=Kamono Shrine|qid=Q135041214}} — Bizen Province
+* {{ill|Kamono Shrine (Q135098878)|lt=Kamono Shrine|qid=Q135098878}} — Takayasu district
+* {{ill|鴨神社 (Q134988777)|lt=鴨神社|qid=Q134988777}} — Sakaide
+* {{ill|鴨神社 (Q137682633)|lt=鴨神社|qid=Q137682633}} — Inabe
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{wikidata link|Q17226771|ja|鴨神社 (玉城町)}}
 [[Category:125 Shrines of Ise]]
 [[Category:Kamo Shrines]]
 [[Category:Kokuhei-sha]]
@@ -78,5 +127,6 @@ From {{ill|Tamaki Interchange|ja|玉城インターチェンジ|12=simple|13=Use
 [[Category:Tamaki,_Mie]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Translated pages]]
 [[Category:Translated]]

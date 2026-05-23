@@ -1,5 +1,7 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsukiyomi-no-Miya_%28Naik%C5%AB%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
-{{distinguish|{{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|8=ja|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya (Gekū)|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)|qq=}}}}
+
+
+{{distinguish|{{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|8=ja|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya (Gekū)|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)}}}}
 {{混同|月夜見宮|1=Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|8=ja|Tsukiyomi-no-Miya (Gekū)|1=Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|klt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya (Gekū)}}
 {{Infobox religious building
 | religious_affiliation = [[Shinto]]
@@ -20,63 +22,92 @@
 |architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
 '''Tsukiyomi-no-Miya''' (月讀宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in Nakamura Town, [[:en:Ise City|Ise City]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}. It is a {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Naikū) auxiliary shrine of [[Ise Grand Shrine|Ise Jingū]]. It is also listed as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}. In some instances, it is written with the simplified characters as "月'''読'''宮."
+
 During the 62nd [[Jingū Shikinen Sengū|Shikinen Sengu]] of Ise Jingū, the {{ill|Sengyo|ja|遷御|12=simple|13=User:Immanuelle/Sengu|comment=changed title based on wikidata|qid=Q24892914}} ceremony was held approximately one year after the Naikū’s own ceremony, taking place on {{ill|October 6|en|October 6|qid=Q2928|lt=October 6}}, {{ill|2014|en|2014|qid=Q1999|lt=2014}} ({{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei era}} 26) at 8:00 PM.<ref name="ik1410">{{Cite web|lang=ja|url=http://iseshima.keizai.biz/headline/2151/|title=「Divine Work?」 The "Sengu no Gi" of Ise Jingū Avoids Multiple Direct Typhoon Hits|publisher={{ill|ISESHIMA KEIZAI SHIMBUN|ja|伊勢志摩経済新聞|12=simple|13=User:Immanuelle/Ise-Shima Economic Newspaper|comment=changed title based on wikidata|qid=Q18700592}}|date=2014-10-13|accessdate=2014-10-19|archiveurl=https://web.archive.org/web/20141019123119/http://iseshima.keizai.biz/headline/2151/|archivedate=2014-10-19}}</ref>.
 == Overview ==
 [[File:Tukiyomi-no-miya(naiku) 09.jpg|thumb|200px|Torii at the Main Approach Entrance]]
-[[File:Ashihara-jinja 01.jpg|thumb|200px|{{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine|qq=}}, an auxiliary shrine of the Inner Shrine]]
+[[File:Ashihara-jinja 01.jpg|thumb|200px|{{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine}}, an auxiliary shrine of the Inner Shrine]]
 [[File:Tukiyomi-no-miya(naiku) 08.jpg|thumb|200px|Chozuya and Shukueiya]]
-'''Tsukiyomi-no-Miya''' is an auxiliary shrine ({{ill|Setsumatsusha|ja|別宮|lt=Betsugū|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/Betsugu|ja_comment=jawiki link invalid}}) of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine), located in Nakamura Town along the middle reaches of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}, about 3.8 km from {{ill|Toyōke Daijingū|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}} (Outer Shrine) and about 1.8 km from Kōtai Jingū. The enshrined deity is {{ill|Tsukuyomi-no-Mikoto|en|Tsukuyomi-no-Mikoto|qid=Q595520|qid=Q595520|lt=Tsukuyomi}} (Tsukuyomi-no-Mikoto). It is also affectionately called "'''Tsukiyomi-san'''." The deity {{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)|qq=}} at the Outer Shrine, which is also referred to as "Tsukiyomi-san," is considered to be the same deity.
+
+'''Tsukiyomi-no-Miya''' is an auxiliary shrine ({{ill|Setsumatsusha|ja|別宮|lt=Betsugū|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/Betsugu|ja_comment=jawiki link invalid}}) of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine), located in Nakamura Town along the middle reaches of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}, about 3.8 km from {{ill|Toyōke Daijingū|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}} (Outer Shrine) and about 1.8 km from Kōtai Jingū. The enshrined deity is {{ill|Tsukuyomi-no-Mikoto|en|Tsukuyomi-no-Mikoto|qid=Q595520|qid=Q595520|lt=Tsukuyomi}} (Tsukuyomi-no-Mikoto). It is also affectionately called "'''Tsukiyomi-san'''." The deity {{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)}} at the Outer Shrine, which is also referred to as "Tsukiyomi-san," is considered to be the same deity.
+
 Within the shrine precincts are three other auxiliary shrines:
-* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=月讀荒御魂宮|es|Tsukiyomi no miya (Naikū)|lt=Tsukiyomi-no-Aramitama-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}''', enshrining the spirit of Tsukuyomi-no-Mikoto
-* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}''', enshrining {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} (Izanagi-no-Mikoto)
-* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}''', enshrining {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|comment=changed title based on wikidata|qid=Q682306}} (Izanami-no-Mikoto)
-Apart from {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya|qq=}}, Tsukiyomi-no-Miya is the only other auxiliary shrine with multiple shrine buildings. Although these shrines are smaller in scale compared to the main shrine, the four {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shimmei-zukuri}}-style shrine buildings standing side by side are an impressive sight. The relocation ceremonies ({{ill|Sengyo|ja|遷御|12=simple|13=User:Immanuelle/Sengyo|qq=}}) for Tsukiyomi-no-Aramitama-no-Miya took place on October 6, 2014, and for Isanagi-no-Miya and Isanami-no-Miya on October 10, 2014.<ref name="ik1410"/> The old timber from Tsukiyomi-no-Aramitama-no-Miya, dismantled in 2014, was donated to {{ill|Yagumo Shrine|ja|八雲神社 (足利市)|12=simple|13=User:Immanuelle/Yakumo Shrine (Ashikaga)|comment=changed title based on wikidata|qid=Q11391850}}, in Midoricho, Ashikaga City, Tochigi Prefecture, which had lost its main hall to a fire in 2012.<ref name="yu1502">{{Cite web|lang=ja|url=http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|title=八雲神社に待望の本殿 伊勢神宮が譲渡|date=2015-02-21|accessdate=2015-02-28|archiveurl=https://web.archive.org/web/20150228134757/http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|archivedate=2015-02-28}}</ref>
+* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=月讀荒御魂宮|es|Tsukiyomi no miya (Naikū)|lt=Tsukiyomi-no-Aramitama-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}''', enshrining the spirit of Tsukuyomi-no-Mikoto
+* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}''', enshrining {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} (Izanagi-no-Mikoto)
+* '''{{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}''', enshrining {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|comment=changed title based on wikidata|qid=Q682306}} (Izanami-no-Mikoto)
+
+Apart from {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya}}, Tsukiyomi-no-Miya is the only other auxiliary shrine with multiple shrine buildings. Although these shrines are smaller in scale compared to the main shrine, the four {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shimmei-zukuri}}-style shrine buildings standing side by side are an impressive sight. The relocation ceremonies ({{ill|Sengyo|ja|遷御|12=simple|13=User:Immanuelle/Sengyo}}) for Tsukiyomi-no-Aramitama-no-Miya took place on October 6, 2014, and for Isanagi-no-Miya and Isanami-no-Miya on October 10, 2014.<ref name="ik1410"/> The old timber from Tsukiyomi-no-Aramitama-no-Miya, dismantled in 2014, was donated to {{ill|Yagumo Shrine|ja|八雲神社 (足利市)|12=simple|13=User:Immanuelle/Yakumo Shrine (Ashikaga)|comment=changed title based on wikidata|qid=Q11391850}}, in Midoricho, Ashikaga City, Tochigi Prefecture, which had lost its main hall to a fire in 2012.<ref name="yu1502">{{Cite web|lang=ja|url=http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|title=八雲神社に待望の本殿 伊勢神宮が譲渡|date=2015-02-21|accessdate=2015-02-28|archiveurl=https://web.archive.org/web/20150228134757/http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|archivedate=2015-02-28}}</ref>
+
 From right (east) to left, the shrines are arranged as Tsukiyomi-no-Aramitama-no-Miya, Tsukiyomi-no-Miya, Isanagi-no-Miya, and Isanami-no-Miya. However, the proper order of worship is Tsukiyomi-no-Miya, Tsukiyomi-no-Aramitama-no-Miya, Isanagi-no-Miya, and Isanami-no-Miya.
-Since Tsukuyomi-no-Mikoto, the enshrined deity, is the younger brother of {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}, the highest deity, Tsukiyomi-no-Miya holds the second highest Rank among the auxiliary shrines of the Inner Shrine, following {{ill|Aramatsuri-no-Miya|ja|荒祭宮|12=simple|13=User:Immanuelle/Aramatsuri-no-Miya|qq=}}, which enshrines the spirit of Amaterasu. Among the auxiliary shrines outside the precincts of the Inner Shrine, it holds the highest Rank.
-Besides the four auxiliary shrines mentioned above, the precinct also houses the auxiliary shrine '''{{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine|qq=}}'''. Similar to other auxiliary shrines located outside the main precincts, there is a {{ill|Shukueiya|ja|宿衛屋|12=simple|13=User:Immanuelle/Shukueiya|ja_comment=jawiki link invalid}} where shrine staff are stationed during visiting hours to distribute talismans and amulets, and to assist with rituals and offerings.
-== {{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin|qq=}} ==
+
+Since Tsukuyomi-no-Mikoto, the enshrined deity, is the younger brother of {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}, the highest deity, Tsukiyomi-no-Miya holds the second highest Rank among the auxiliary shrines of the Inner Shrine, following {{ill|Aramatsuri-no-Miya|ja|荒祭宮|12=simple|13=User:Immanuelle/Aramatsuri-no-Miya}}, which enshrines the spirit of Amaterasu. Among the auxiliary shrines outside the precincts of the Inner Shrine, it holds the highest Rank.
+
+Besides the four auxiliary shrines mentioned above, the precinct also houses the auxiliary shrine '''{{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine}}'''. Similar to other auxiliary shrines located outside the main precincts, there is a {{ill|Shukueiya|ja|宿衛屋|12=simple|13=User:Immanuelle/Shukueiya|ja_comment=jawiki link invalid}} where shrine staff are stationed during visiting hours to distribute talismans and amulets, and to assist with rituals and offerings.
+
+== {{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin}} ==
 * [[Tsukuyomi-no-Mikoto]]<ref>{{Cite web| url=https://ise-kanko.jp/purpose/tsukiyominomiya1/| title=月読宮（皇大神宮別宮）| accessdate=2024-03-09}}</ref>
+
 == History ==
 The origins are unclear, but according to the Daijingu Gishikichō (大神宮儀式帳) from Enryaku 23 (804) during the reign of the 50th emperor, {{ill|Emperor Kanmu|en|Emperor Kanmu|qid=Q314846|lt=Kanmu}}, it is recorded that "Tsukiyomi-no-Miya consisted of one complex with four main halls" (月讀宮一院、正殿四区), all enshrined within a single sacred fence (mizugaki). At that time, the four associated shrines were collectively referred to as "Tsukiyomi-no-Miya." 
-In Jōgan 9 (867), during the reign of the 56th emperor, {{ill|Seiwa|ja|Emperor Seiwa|12=simple|13=User:Immanuelle/Seiwa|ja_comment=jawiki link invalid}}, the shrines {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}} and {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}} were officially granted their shrine titles.
+
+In Jōgan 9 (867), during the reign of the 56th emperor, {{ill|Seiwa|ja|Emperor Seiwa|12=simple|13=User:Immanuelle/Seiwa|ja_comment=jawiki link invalid}}, the shrines {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}} and {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}} were officially granted their shrine titles.
+
 According to the Engishiki (延喜式) from Enchō 5 (927) during the reign of the 60th emperor, {{ill|Emperor Daigo|en|Emperor Daigo|qid=Q329753|lt=Daigo}}, at that time, Isanagi-no-Miya and Isanami-no-Miya were enclosed within a single sacred fence as one complex, while Tsukiyomi-no-Miya and {{ill|Tsukiyomi-no-Miya (Aramitama)|ja|月讀荒御魂宮|lt=Tsukiyomi-no-Miya (Aramitama)|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Aramitama)|ja_comment=jawiki link invalid}} also formed a single complex.
+
 Since 1873 (Meiji 6), all four shrines have had their own separate sacred fences, forming the current structure.
+
 == Festivals ==
+
 Rituals are conducted in accordance with those of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}, and offerings of heihaku (幣帛), sacred cloth or objects, are presented by the Imperial Household during major festivals such as the Kinensai, Tsukinamisai, Kannamesai, and Niinamesai.
+
 * January
-** {{ill|Saitan-sai|ja|歳旦祭|simple|User:Immanuelle/Saiten-sai|12=simple|13=User:Immanuelle/Saitan-sai|qq=}} (歳旦祭) (January 1): A festival celebrating the New Year and praying for the eternal continuity of the Imperial throne.
-** {{ill|Genshi-sai|ja|元始祭|simple|User:Immanuelle/Genshi-sai|12=simple|13=User:Immanuelle/Genshi-sai|qq=}} (January 3): A ceremony to mark the beginning of the year, celebrating the origins of the Imperial succession (Amatsu Hitsuji).
+** {{ill|Saitan-sai|ja|歳旦祭|simple|User:Immanuelle/Saiten-sai|12=simple|13=User:Immanuelle/Saitan-sai}} (歳旦祭) (January 1): A festival celebrating the New Year and praying for the eternal continuity of the Imperial throne.
+** {{ill|Genshi-sai|ja|元始祭|simple|User:Immanuelle/Genshi-sai|12=simple|13=User:Immanuelle/Genshi-sai}} (January 3): A ceremony to mark the beginning of the year, celebrating the origins of the Imperial succession (Amatsu Hitsuji).
+
 * February
 ** Kenkoku [[Kinensai|Kinen-sai]] (建国記念祭) (February 11): A festival commemorating the founding of the nation and honoring {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}} as the mythical first emperor of Japan.
 ** {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}} (February 18): A festival held at the beginning of the year to pray for a bountiful harvest and the peace of the nation.
 ** Tenchō-sai (天長祭) (February 23): A festival celebrating the birthday of {{ill|Naruhito|ja|徳仁天皇|12=simple|13=User:Immanuelle/Emperor Naruhito|ja_comment=jawiki redirects to 徳仁|comment=changed title based on wikidata|qid=Q217096}}.
+
 * May
 ** Kazahinomi-sai (風日祈祭) (May 14): Rituals are conducted at the Outer and Inner Shrines, as well as at associated shrines, offering heihaku to pray for protection against natural disasters like storms and for a good harvest.
+
 * June
-** {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|User:Immanuelle/Tsukinami-no-Matsuri|en:draft|lt=Tsukinami-sai|12=simple|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (月次祭) (June 18–19): Held in June and December to pray for the peace of the nation and the longevity of the Emperor. Along with the Kannamesai, it is one of the Sansetsu-sai or Sanji-sai (Three Major Festivals) at the shrine.
+** {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|User:Immanuelle/Tsukinami-no-Matsuri|en:draft|lt=Tsukinami-sai|12=simple|13=User:Immanuelle/Tsukinami-no-Matsuri}} (月次祭) (June 18–19): Held in June and December to pray for the peace of the nation and the longevity of the Emperor. Along with the Kannamesai, it is one of the Sansetsu-sai or Sanji-sai (Three Major Festivals) at the shrine.
+
 * August
 ** Kazahinomi-sai (風日祈祭) (August 4): Similar to the May festival, this ritual involves offering heihaku at the Outer and Inner Shrines, praying for protection against wind and rain, and for agricultural prosperity.
+
 * October
 ** {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai Festival}} (October 18–19): A key harvest festival where priests offer newly harvested crops as sacred food offerings (Ōmike - 大御饌) to the deities, expressing gratitude for the year's bounty.
+
 * November
 ** {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}} (November 24): A festival where the Emperor offers newly harvested rice to the gods and partakes of it himself, expressing thanks for the harvest.
+
 * December
-** {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|User:Immanuelle/Tsukinami-no-Matsuri|en:draft|lt=Tsukinami-sai|12=simple|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (月次祭) (December 18–19): Similar to the June Tsukinami-sai, held to ensure national peace and the Emperor's prosperity.
+** {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|User:Immanuelle/Tsukinami-no-Matsuri|en:draft|lt=Tsukinami-sai|12=simple|13=User:Immanuelle/Tsukinami-no-Matsuri}} (月次祭) (December 18–19): Similar to the June Tsukinami-sai, held to ensure national peace and the Emperor's prosperity.
+
 == Shrine Grounds ==
+
 The shrine buildings of the four Betsugū (別宮, auxiliary shrines) are nearly identical, following the architectural style of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (the Inner Shrine), regardless of whether the enshrined deity is male or female. They feature the Shinmei-zukuri style with thatched roofs, inward-facing chigi (千木) and an even number of six katsuogi (鰹木). The Kodenchi (古殿地), or site of the previous shrine used during the Shikinen Sengū (式年遷宮, ritual reconstruction), is usually adjacent to the new shrine from east to west, but for Tsukiyomi-no-Miya, the sites are aligned north to south and are not directly adjacent. The shrine building of Tsukiyomi-no-Miya is slightly larger than the other three, and its torii gate is also larger.
-* {{ill|Tsukiyomi-no-Miya (Naiku)|lt=Tsukiyomi-no-Miya|ja|月讀宮|es|Tsukiyomi no miya (Naikū)|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}
+
+* {{ill|Tsukiyomi-no-Miya (Naiku)|lt=Tsukiyomi-no-Miya|ja|月讀宮|es|Tsukiyomi no miya (Naikū)|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}
 ** Auxiliary shrine (Betsugū) of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine).  
 ** The highest-Ranking Betsugū located outside the Inner Shrine precincts.
-* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=月讀荒御魂宮|es|Tsukiyomi no miya (Naikū)|lt=Tsukiyomi-no-Aramitama-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}
+
+* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=月讀荒御魂宮|es|Tsukiyomi no miya (Naikū)|lt=Tsukiyomi-no-Aramitama-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}
 ** Enshrined deity: Tsukiyomi-no-Mikoto Aramitama (月讀尊荒御魂), the wild/spiritual aspect of Tsukiyomi.
 ** Auxiliary shrine (Betsugū) of the Inner Shrine.
-* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}
+
+* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈岐宮|es|Tsukiyomi no miya (Naikū)|lt=Izanagi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}
 ** Enshrined deity: {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} (Izanagi-no-Mikoto).  
 ** Auxiliary shrine (Betsugū) of the Inner Shrine.
-* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)|qq=}}
+
+* {{ill|Tsukiyomi-no-Miya (Naiku)|ja|月讀宮|lt_ja=伊佐奈弥宮|es|Tsukiyomi no miya (Naikū)|lt=Izanami-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Naiku)}}
 ** Enshrined deity: {{ill|Izanami|ja|伊弉冉尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|comment=changed title based on wikidata|qid=Q682306}} (Izanami-no-Mikoto).  
 ** Auxiliary shrine (Betsugū) of the Inner Shrine.
-* {{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine|qq=}}  
+
+* {{ill|Ashihara Shrine|ja|葭原神社|12=simple|13=User:Immanuelle/Ashihara Shrine}}  
 ** Enshrined Deities:  
 ***  Sasatsuhiko-no-Mikoto (佐佐津比古命)  
 ***  Ukanomitama-no-Mioya-no-Mikoto (宇加乃御玉御祖命)  
@@ -84,28 +115,38 @@ The shrine buildings of the four Betsugū (別宮, auxiliary shrines) are nearly
 ** These deities are regarded as gods of agriculture, protecting rice fields and crops.  
 ** 末社 (Massha, subordinate shrine) of the Inner Shrine.
 ** Similar to the Inner Shrine, Ashihara Shrine features Shinmei-zukuri architecture with inward-facing chigi and an even number of four katsuogi, with board roofing.
+
 * Shukueiya (宿衛屋)  
 ** The Shukueiya serves as the shrine office where priests are stationed during visiting hours to manage rituals, distribute amulets, and assist with offerings and kagura performances.
 *
 *
 *
 *
+
 == Access ==
+
 * Nearest Train Station:  
 ** Approximately 10 minutes on foot south from {{ill|Isuzugawa Station|en|Isuzugawa Station|qid=Q6089533|lt=Isuzugawa Station}} on the {{ill|Kintetsu Toba Line|ja|Toba Line|12=simple|13=User:Immanuelle/Kintetsu Toba Line|ja_comment=jawiki link invalid}} operated by {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu Railway}}.  
 ** About 1 hour on foot from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station}} on the {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=JR Sangū Line}} operated by {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central}}.
+
 * Nearest Bus Stop:  
 ** About 5 minutes on foot from Nakamura-cho Bus Stop served by the {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kotsu}} Route 51 (Gekū-Naikū Line).
+
 * Nearest Expressway Interchange:  
 ** Approximately 1 km from the {{ill|Ise interchange|ja|伊勢インターチェンジ|12=simple|13=User:Immanuelle/Ise Interchange|comment=changed title based on wikidata|qid=Q10884857}} on the {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway}}.
+
 * Main Roads:  
 ** Located along the {{ill|Mie Prefectural Road Route 37|ja|三重県道37号鳥羽松阪線|12=simple|13=User:Immanuelle/Mie Prefectural Route 37 (Toba-Matsusaka Line)|comment=changed title based on wikidata|qid=Q11357923}} (Miyuki Road) at the front approach entrance.
 ** Accessible via {{ill|Japan National Route 23|en|Japan National Route 23|qid=Q5357579|lt=National Route 23 (Japan)}} at the rear approach entrance.
+
 * Parking:  
 ** A large parking lot suitable for buses is available on the National Route 23 side.  
 ** There are also a few parking spaces available on the prefectural road side.
+
 == References ==
+
 {{Reflist}}
+
 == 参考資料 ==
 * 『月讀宮以下四別宮参拝のしおり』（発行：神宮司庁）
 * 『お伊勢さんを歩こう』（発行：伊勢神宮崇敬会）
@@ -114,9 +155,21 @@ The shrine buildings of the four Betsugū (別宮, auxiliary shrines) are nearly
 {{Commonscat|Tsukiyomi-no-miya (Naiku)}}
 * [[Tsukuyomi-no-Mikoto]]
 * [[Ise Grand Shrine]]
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
 * {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|月讀宮|version=99561516|comment=Imported full ja history}}
+
+[[image:Tsukiyomi-no-miya(Naiku)_05.JPG|thumb|200px|Izanagi-no-Miya and Izanami-no-Miya]]
+
+{{Commons category|Tsukiyomi-no-miya (Naiku)}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tsukiyomi-no-Miya (Naiku) (Q11516220)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -125,23 +178,287 @@ The shrine buildings of the four Betsugū (別宮, auxiliary shrines) are nearly
 | RONSHA || {{ill|Tsukiyomi-no-Miya (Naikū)|lt=Tsukiyomi-no-Miya (Naikū)|ja|月讀宮|commons|Category:Tsukiyomi-no-miya (Naiku)|es|Tsukiyomi no miya (Naikū)|qid=Q11516220}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || — || part of {{ill|Kōtai Jingū|qid=Q11581011}} || {{ill|Isanakino Shrine (Q135039261)|lt=Isanakino Shrine|qid=Q135039261}}; {{ill|Tsukiyomino Shrine|lt=Tsukiyomino Shrine|qid=Q135039262}}; {{ill|Tsukiyomino Shrine|lt=Tsukiyomino Shrine|qid=Q135039262}} || {{coord|34.473625|136.729037|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181112 DB]
 |}
 
-{{translated page|ja|月讀宮|version=99561516|comment=Imported full ja history}}
-[[image:Tsukiyomi-no-miya(Naiku)_05.JPG|thumb|200px|Izanagi-no-Miya and Izanami-no-Miya]]
-{{Commons category|Tsukiyomi-no-miya (Naiku)}}
-
+{{wikidata link|Q11516220|co|commons:Category:Tsukiyomi-no-miya (Naiku)|ja|月讀宮|es|Tsukiyomi no miya (Naikū)|simple|Tsukiyomi-no-Miya (Naikū)|check_date=2026-05-12}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Japan completed in 2014]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinai Taisha]]
 [[Category:Shikinaisha in Ise Province]]
+[[Category:Shikinaisha in Ise Province|大つきよみのみや]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
+[[Category:Shikinai Taisha]]
 [[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
-[[Category:Shikinai Ronsha]]
-[[Category:Wikidata generated shikinaisha pages|Tsukiyomi-no-Miya (Naiku)]]
-[[Category:Shikinaisha|Tsukiyomi-no-Miya (Naiku)]]
+[[Category:Kanpei-sha]]
+[[simple:user:immanuelle/Tsukiyomi-no-Miya (Naikū)]][[Category:Shikinai Ronsha]]
+
+==merged content==
+[[Category:Pages with duplicated content]]
+
+{{Expand Japanese|月讀宮}}
+
+{{Infobox religious building
+| name = Tsukiyomi-no-Miya (Naiku)
+| native_name = 月讀宮
+| image = Tsukiyomi no miya , 月讀宮 - panoramio (5).jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tsukiyomi-no-Miya (Naiku)
+| coordinates = {{coord|34.473625|136.729037}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|en|Tsukuyomi-no-Mikoto|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh_min_nan|Tukuyomi|zh|月讀|qid=Q595520}}
+| website = {{Official website|https://www.isejingu.or.jp/about/outerbetsugu/#tsukiyomi}}
+}}
+
+{{nihongo|'''Tsukiyomi-no-Miya (Naikū)'''|月讀宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinai Taisha|lt=Shikinai Taisha|en|Shikinai Taisha|ja|式内大社|simple|Shikinai Taisha|qid=Q134917288}}
+* {{ill|Shikinaisha|ltq=Q134917286|qid=Q134917286}}
+* {{ill|Betsu-gū|ltq=Q135009899|qid=Q135009899}}
+** P805: {{ill|Kōtai Jingū|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011}}
+* {{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|ltq=Q135009132|qid=Q135009132}}
+* {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+* {{ill|Betsu-gū|lt=Betsu-gū|qid=Q135009899}}
+* {{ill|Kanpei-sha|ltq=Q135160338|qid=Q135160338}}
+* {{ill|Shikinai Taisha|ltq=Q134917288|qid=Q134917288}}
+* {{ill|Kanpei-sha|ltq=Q135160338|qid=Q135160338}}
+* {{ill|Shikinai Supershrine|lt=Shikinai Supershrine|qid=Q135419779}}
+* {{ill|Shikinai Subshrine|ltq=Q135100459|qid=Q135100459}}
+
+== part of (P361) ==
+
+* {{ill|125 Shrines of Ise|ltq=Q16482760|qid=Q16482760}}
+* {{ill|List of Shikinaisha in Ise Province|lt=List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|qid=Q11378973}}
+** P155: {{ill|Isanakino Shrine (Q135039261)|lt=Isanakino Shrine|qid=Q135039261}}
+** P156: {{ill|Toyōke Daijingū|ltq=Q11633343|qid=Q11633343}}
+** Series ordinal: 5
+* {{ill|Kōtai Jingū|ltq=Q11581011|qid=Q11581011}}
+** P3831: {{ill|Betsu-gū|lt=Betsu-gū|qid=Q135009899}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Ise, Mie|ltq=Q328067|qid=Q328067}}
+* {{ill|Ise Province|ltq=Q864166|qid=Q864166}}
+* {{ill|Watarai District|lt=Watarai district|ceb|Watarai-gun|ckb|گەڕەکی واتاری|en|Watarai District|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ja|度会郡|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|qid=Q1131032}}
+
+== coordinate location (P625) ==
+
+* {{coord|34.473625|136.729037}}
+
+== official website (P856) ==
+
+* https://www.isejingu.or.jp/about/outerbetsugu/#tsukiyomi
+** Language of work: {{ill|Japanese language|lt=Japanese|ab|Аиапон бызшәа|ace|Bahsa Jeupang|ady|Японыбзэ|af|Japannees|als|Japanische Sprache|ami|Sowal no dipong|am|ጃፓንኛ|ang|Iapanisc sprǣc|anp|जापानी भाषा|an|Idioma chaponés|arc|ܠܫܢܐ ܝܦܢܝܐ|ar|اللغة اليابانية|arbooks|يابانية|ary|جاپونية|arz|لغه يابانى|ast|Xaponés|as|জাপানী ভাষা|awa|जापानी भाषा|azb|ژاپون دیلی|az|Yapon dili|azquote|Yapon dili|ban|Basa Jepang|bar|Japanische Sproch|bat_smg|Japuonu kalba|ba|Япон теле|bcl|Tataramon na Hapones|be_x_old|Японская мова|be|Японская мова|bew|Basa Jepang|bg|Японски език|bh|जापानी भाषा|bjn|Basa Japang|bn|জাপানি ভাষা|bnbooks|জাপানি ভাষা শিক্ষা|bo|ཉི་ཧོང་སྐད།|br|Japaneg|bs|Japanski jezik|btm|Saro Jepang|bxr|Япон хэлэн|ca|Japonès|cdo|Nĭk-buōng-ngṳ̄|ceb|Hinapones|ce|Ипнойн мотт|chy|Óeta'xaénéhetse|ckb|زمانی ژاپۆنی|crh|Japon tili|cs|Japonština|csbooks|Japonština|csversity|Japonština|cu|Ꙗпѡньскъ ѩꙁꙑкъ|cv|Япон чĕлхи|cy|Japaneg|da|Japansk (sprog)|dabooks|Japansk|de|Japanische Sprache|debooks|Japanisch|devoyage|Sprachführer Japanisch|diq|Japonki|dsb|Japańšćina|dtp|Boros Jipun|dv|ޖަޕާނީ|el|Ιαπωνική γλώσσα|elversity|Τμήμα:Γιαπωνέζικα|elvoyage|Ιαπωνικός γλωσσικός οδηγός|en|Japanese language|enbooks|Japanese|enquote|Japanese language|enversity|Portal:Japanese|envoyage|Japanese phrasebook|eo|Japana lingvo|eovoyage|Japana frazlibro|es|Idioma japonés|esbooks|Japonés|esvoyage|Guía de japonés|et|Jaapani keel|etquote|Jaapani keel|eu|Japoniera|ext|Lengua japonesa|fa|زبان ژاپنی|fabooks|آموزش زبان ژاپنی|fiu_vro|Jaapani kiil|fi|Japanin kieli|fibooks|Japanin kieli|fivoyage|Japanin matkasanakirja|fo|Japanskt mál|frp|Japonês|frr|Japoonsk spriak|fr|Japonais|frbooks|Japonais|frversity|Département:Japonais|frvoyage|Guide linguistique japonais|fy|Japansk|gag|Yapon dili|gan|日语|ga|An tSeapáinis|gcr|Japonè|gd|Iapanais|gl|Lingua xaponesa|gn|Hapõñe’ẽ|gv|Shapaanish|hak|Ngi̍t-pún-ngî|ha|Harshen Japan|haw|ʻŌlelo Iāpana|he|יפנית|hebooks|יפנית|hevoyage|שיחון יפני|hif|Japanese bhasa|hi|जापानी भाषा|hr|Japanski jezik|hsb|Japanšćina|ht|Lang japonè|hu|Japán nyelv|hy|Ճապոներեն|hyw|Ճափոներէն|ia|Lingua japonese|iba|Jaku Jipun|id|Bahasa Jepang|idbooks|Bahasa Jepang|idvoyage|Buku percakapan Jepang|ilo|Pagsasao a Hapon|inh|Японий мотт|io|Japoniana linguo|is|Japanska|isbooks|Japanska|it|Lingua giapponese|itbooks|Giapponese|itvoyage|Giapponese|jam|Japaniiz languij|ja|日本語|jabooks|日本語|jbo|ponbau|jv|Basa Jepang|kaa|Yapon tili|kab|Tajapunit|ka|იაპონური ენა|kabooks|იაპონური ენა|kbd|Японыбзэ|kbp|Sapɔŋ kʊnʊŋ|kge|Basa Jopang|kk|Жапон тілі|km|ភាសាជប៉ុន|knc|Japanese|kn|ಜಪಾನಿ ಭಾಷೆ|ko|일본어|kobooks|일본어 입문|krc|Япон тил|ks|جاپأنؠ زبان|ku|Zimanê japonî|kv|Япон кыв|kw|Nihonek|ky|Жапон тили|lad|Lingua japoneza|la|Lingua Iaponica|lawiktionary|Victionarium:Lingua Iaponica|lbe|Япониянал маз|lb|Japanesch|lez|Япон чӀал|lfn|Nion (lingua)|li|Japans|lld|Lingaz iapanesc|lmo|Lengua giapponesa|ln|Lizapɔ́|lo|ພາສາຍີ່ປຸ່ນ|lt|Japonų kalba|ltbooks|Japonų kalba|lv|Japāņu valoda|mad|Bhâsa Jeppang|mai|जापानी भाषा|map_bms|Basa Jepang|mdf|Япононь кяль|mg|Fiteny japôney|mhr|Япон йылме|min|Bahaso Japang|mi|Reo Hapani|mk|Јапонски јазик|ml|ജാപ്പനീസ് ഭാഷ|mni|ꯖꯄꯥꯅꯤꯁ ꯂꯣꯟ|mn|Япон хэл|mr|जपानी भाषा|ms|Bahasa Jepun|mwl|Lhéngua japonesa|myv|Япононь кель|my|ဂျပန်ဘာသာစကား|mzn|جاپونی زوون|nds_nl|Japans|nds|Japaansche Spraak|ne|जापानी भाषा|new|जापानी भाषा|nl|Japans|nlvoyage|Taalgids Japans|nn|Japansk|nov|Japanum|no|Japansk|nso|Sejapane|oc|Japonés|olo|Japounien kieli|or|ଜାପାନୀ ଭାଷା|os|Япойнаг æвзаг|pam|Amanung Hapones|pap|Hapones (idioma)|pa|ਜਪਾਨੀ ਭਾਸ਼ਾ|pcd|Japonoés|pl|Język japoński|plbooks|Japoński|plquote|Język japoński|pms|Lenga giaponèisa|pnb|جاپانی|ps|جاپاني ژبه|pt|Língua japonesa|ptbooks|Japonês|ptvoyage|Guia de conversação japonês|qu|Hapun simi|roa_tara|Lènga giapponese|ro|Limba japoneză|rovoyage|Ghid de conversație japonez|rue|Японьскый язык|ru|Японский язык|rubooks|Японский язык|runews|Категория:Японский язык|ruversity|Японский язык|ruvoyage|Японский разговорник|rw|Ikiyapani|sah|Дьоппуон тыла|sat|ᱡᱟᱯᱟᱱᱤᱭᱟᱹ ᱯᱟᱹᱨᱥᱤ|sa|जापानी भाषा|scn|Lingua giappunisa|sco|Japanese leid|sc|Limba giaponesa|sd|جاپاني ٻولي|se|Japánagiella|shi|Tutlayt Tajapunit|sh|Japanski jezik|simple|Japanese language|si|ජපන් භාෂාව|sk|Japončina|sl|Japonščina|sm|Faʻa Iapani|sn|Chijapani|sq|Gjuha japoneze|sr|Јапански језик|su|Basa Jepang|sv|Japanska|svvoyage|Japansk parlör|sw|Kijapani|szl|Japůńsko godka|ta|சப்பானிய மொழி|tcy|ಜಪಾನಿ ಭಾಷೆ|te|జపనీస్ భాష|tg|Забони ҷопонӣ|tgbooks|Забони ҷопонӣ|th|ภาษาญี่ปุ่น|thbooks|ภาษาญี่ปุ่น|tk|Ýapon dili|tl|Wikang Hapones|tly|Japoni zyvon|tok|toki Nijon|tpi|Tokples Siapan|trv|Kari Tanah Tunux|tr|Japonca|trbooks|Japonca|tt|Япон теле|tyv|Япон дыл|ty|Reo Tāpōnē|udm|Япон кыл|ug|ياپونچە|uk|Японська мова|ukbooks|Японська мова|ur|جاپانی زبان|uz|Yapon tili|vec|Łéngua japoneza|vep|Japonan kel'|vi|Tiếng Nhật|viquote|Tiếng Nhật|vivoyage|Sổ tay tiếng Nhật|vo|Yapänapük|war|Hinapon|wa|Djaponès (lingaedje)|functions|Z1830|wuu|日本闲话|xal|Нипонмудн келн|xmf|იაპონური ნინა|yi|יאפאניש|yo|Èdè Japaní|za|Vah Nyiedbonj|zgh|ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵏⵉⴱⵓⵏⵜ|zh_classical|日語|zh_min_nan|Ji̍t-pún-gí|zh_yue|日文|zh|日语|zhbooks|日语|zhvoyage|日语会话手册|zu|IsiJapani|qid=Q5287}}
+
+== image (P18) ==
+
+* Tsukiyomi no miya , 月讀宮 - panoramio (5).jpg
+
+== dedicated to (P825) ==
+
+* {{ill|Tsukuyomi-no-Mikoto|ltq=Q595520|qid=Q595520}}
+
+== described by source (P1343) ==
+
+* {{ill|Kokugakuin University Shrine database (old)|lt=Kokugakuin University Shrine database (old)|qid=Q135037878}}
+** P2699: https://web.archive.org/web/20060716082734/http://21coe.kokugakuin.ac.jp:80/db/jinja/000004.html
+* {{ill|Kokugakuin University Shrine database (old)|ltq=Q135037878|qid=Q135037878}}
+** P2699: https://web.archive.org/web/20060630050227/http://21coe.kokugakuin.ac.jp:80/db/jinja/000002.html
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 181112
+** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
+
+== architectural style (P149) ==
+
+* {{ill|Shinmei-zukuri|lt=Shinmei-zukuri|en|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}
+
+== country (P17) ==
+
+* {{ill|Japan|ltq=Q17|qid=Q17}}
+
+== Facebook username (P2013) ==
+
+* tsukiyominomiya.naiku
+
+== TripAdvisor ID (P3134) ==
+
+* 1369316
+
+== Commons category (P373) ==
+
+* Tsukiyomi-no-miya (Naiku)
+
+== panoramic view (P4291) ==
+
+* Tsukiyomi no miya , 月讀宮 - panoramio (12).jpg
+
+== said to be the same as (P460) ==
+
+* {{ill|Isanakino Shrine (Q135039261)|ltq=Q135039261|qid=Q135039261}}
+* {{ill|Tsukiyomino Shrine|lt=Tsukiyomino Shrine|qid=Q135039262}}
+** P2868: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+
+== has part(s) (P527) ==
+
+* {{ill|Izanagi-no-Miya|ltq=Q135186068|qid=Q135186068}}
+* {{ill|Izanami-no-Miya|ltq=Q135186069|qid=Q135186069}}
+
+== street address (P6375) ==
+
+* {'text': '三重県伊勢市中村町742-1[1]', 'language': 'ja'}
+
+== parent organization or unit (P749) ==
+
+* {{ill|Kōtai Jingū|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011}}
+
+== image of entrance (P9721) ==
+
+* Tukiyomi-no-miya(naiku) 09.jpg
+
+{{commons category|Category:Tsukiyomi-no-miya (Naiku)}}
+[[ES:Tsukiyomi no miya (Naikū)]]
+[[JA:月讀宮]]
+[[SIMPLE:Tsukiyomi-no-Miya (Naikū)]]
+
+{{wikidata link|Q11516220}}
+
+== Japanese content ==
+{{Confused with|Tsukiyo-mi-no-miya}}
+{{Shrine
+|Image = [[File:Tsukiyomi no miya , 月讀宮 - panoramio (5).jpg|270px]]<br />Shrine buildings (2015)
+|Name = Tsukiyomi-no-miya
+|Location = {{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Ise, Mie|Q328067|qid=Q328067}} Nakamura-chō 742-1<ref>[http://www.sengukan.jp/wp-content/themes/sengukan/shrine/area09.php “Shikinen Sengū Memorial Sengūkan | 125 Shrines 5”] (Shikinen Sengū Memorial Sengūkan, accessed May 3, 2015)</ref>
+|Coordinates = {{ウィキ座標2段度分秒|34|28|24.6|N|136|43|43.8|E}}
+|Enshrined deity = {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi-no-Mikoto}}
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (major)<br />{{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} Auxiliary Shrine
+|Established = Before {{ill|Enryaku|Q1373176|qid=Q1373176}} 23 ({{ill|804|Q29998|qid=Q29998}})
+|Main hall style = {{ill|Shinmei-zukuri|Q930545|qid=Q930545}}
+|Annual festival =
+|Map = {{Location map|Japan Mie|lat_deg=34|lat_min=28|lat_sec=24.6|lon_deg=136|lon_min=43|lon_sec=43.8|label=Tsukiyomi-no-miya|position=bottom|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=200|coord={{coord|34|28|24.6|N|136|43|43.8|E}}}}
+}}
+'''Tsukiyomi-no-miya''' (つきよみのみや) is a Shinto shrine located in Nakamura-chō, {{ill|Ise, Mie|Q328067|qid=Q328067}}, {{ill|Mie Prefecture|Q128196|qid=Q128196}}. It is an auxiliary shrine (betsugū) of {{ill|Ise Grand Shrine|Q687168|qid=Q687168}} {{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} (Inner Shrine). It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. It is sometimes written with the abbreviated characters “月読宮”.
+
+At the 62nd {{ill|Jingū Shikinen Sengū|Q3959472|qid=Q3959472}}, the transfer of the deity ({{ill|Sengyo|Q24892914|qid=Q24892914}}) was performed at 8:00 p.m. on {{ill|October 6|Q2928|qid=Q2928}}, {{ill|2014|Q1999|qid=Q1999}} ({{ill|Heisei era|Q234510|qid=Q234510}} 26), about one year after the transfer at the Inner Shrine<ref name="ik1410">{{Cite web|ja|url=http://iseshima.keizai.biz/headline/2151/|title=“‘Divine works?’ Ise Grand Shrine’s ‘Sengu ceremony’ repeatedly avoids direct typhoon hits”|publisher={{ill|ISESHIMA KEIZAI SHIMBUN|Q18700592|qid=Q18700592}}|date=2014-10-13|accessdate=2014-10-19|archiveurl=https://web.archive.org/web/20141019123119/http://iseshima.keizai.biz/headline/2151/|archivedate=2014-10-19}}</ref>.
+
+=== Enshrined deities ===
+{{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|lt='''Tsukuyomi-no-Mikoto'''}}<ref>{{Cite web |url=https://ise-kanko.jp/purpose/tsukiyominomiya1/ |title=Tsukiyomi-no-miya (Auxiliary Shrine of the Inner Shrine) |accessdate=2024-03-09}}</ref> (つきよみのみこと) – the second worship hall from the right when facing Tsukiyomi-no-miya.
+
+'''{{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi-no-Mikoto no Aramitama}}''' – the rightmost worship hall when facing Tsukiyomi Aramitama-no-miya.
+
+'''{{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}''' – the third worship hall from the right when facing Isanagi-no-miya.
+
+'''{{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}''' – the leftmost worship hall when facing Isanami-no-miya.
+
+=== Overview ===
+[[Image:Tukiyomi-no-miya(naiku) 09.jpg|thumb|200px|Torii at the main approach entrance]]
+[[Image:Ashihara-jinja 01.jpg|thumb|200px|{{ill|Ashihara Shrine|Q17191305|qid=Q17191305}}, a subsidiary shrine of the Inner Shrine]]
+[[Image:Tukiyomi-no-miya(naiku) 08.jpg|thumb|200px|Temizuya and guardhouse]]
+Tsukiyomi-no-miya is an auxiliary shrine of the Inner Shrine located in Nakamura-chō along the middle reaches of the {{ill|Isuzu River|Q6089522|qid=Q6089522}}, about 3.8 km from {{ill|Toyōke Daijingū|Q11633343|qid=Q11633343}} (Outer Shrine) and about 1.8 km from {{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} (Inner Shrine). The enshrined deity is {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi-no-Mikoto}}. It is also affectionately called “Tsukiyomi-san”; however, the enshrined deity “Tsukiyomi-no-Mikoto” of {{ill|Tsukiyomi-no-Miya (Gekū)|Q11516023|qid=Q11516023}}, an auxiliary shrine of the Outer Shrine also called “Tsukiyomi-san,” is considered the same deity as that of the main auxiliary shrine.
+
+Within the precincts are three other auxiliary shrines of the Inner Shrine: '''Tsukiyomi Aramitama-no-miya''', which enshrines the aramitama (rough spirit) of Tsukuyomi-no-Mikoto; '''Isanagi-no-miya''', which enshrines {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}; and '''Isanami-no-miya''', which enshrines {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}. Aside from Tsukiyomi-no-miya, the only other auxiliary shrine with multiple shrine buildings lined up is {{ill|Takihara-no-Miya|Q11566292|qid=Q11566292}}, which has two. The shrine buildings are comparable in scale to other auxiliary shrines of the Inner Shrine except {{ill|Aramatsuri-no-Miya|Q2859485|qid=Q2859485}}; though smaller than the main sanctuary, the sight of four {{ill|Shinmei-zukuri|Q930545|qid=Q930545}} shrine buildings standing in a row is magnificent. The transfer ceremonies were held for Tsukiyomi Aramitama-no-miya at 10:00 p.m. on October 6, 2014, and for Isanagi-no-miya and Isanami-no-miya on {{ill|October 10|Q2921|qid=Q2921}}<ref name="ik1410"/>. Old timbers from Tsukiyomi Aramitama-no-miya, dismantled in 2014, were donated to {{ill|Yagumo Shrine|Q11391850|qid=Q11391850|lt=Yakumo Shrine}} in Midori-chō, {{ill|Ashikaga, Tochigi|Q374477|qid=Q374477}}, {{ill|Tochigi Prefecture|Q44843|qid=Q44843}}, which lost its main hall to a fire in {{ill|2012|Q1990|qid=Q1990}} (Heisei 24)<ref name="yu1502">{{Cite web|ja|url=http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|title=“Long-awaited main hall at Yakumo Shrine—donated by Ise Grand Shrine”|date=2015-02-21|accessdate=2015-02-28|archiveurl=https://web.archive.org/web/20150228134757/http://www.yomiuri.co.jp/local/tochigi/news/20150220-OYTNT50379.html|archivedate=2015-02-28}}</ref>.
+
+From right (east) to left, the shrines are arranged as Tsukiyomi Aramitama-no-miya, Tsukiyomi-no-miya, Isanagi-no-miya, and Isanami-no-miya; however, the correct order of worship is said to be Tsukiyomi-no-miya → Tsukiyomi Aramitama-no-miya → Isanagi-no-miya → Isanami-no-miya.
+
+Because Tsukuyomi-no-Mikoto, the younger sibling deity of the supreme deity {{ill|Amaterasu|UNKNOWN|lt=Amaterasu Ōmikami|qid=Q455602}}, is enshrined here, Tsukiyomi-no-miya ranks second among the auxiliary shrines of the Inner Shrine after '''Aramatsuri-no-miya''', which enshrines the spirit of Amaterasu Ōmikami, and it is the highest-ranking auxiliary shrine located outside the Inner Shrine’s main precinct.
+
+In addition to the four auxiliary shrines above, the precincts include '''{{ill|Ashihara Shrine|Q17191305|qid=Q17191305}}''', a subsidiary shrine of the Inner Shrine. As with other off-site auxiliary shrines, there is a guardhouse (shukueiya) staffed by priests during visiting hours, where talismans and amulets are bestowed and arrangements are made for kagura dances and food offerings.
+
+=== History ===
+Although the exact origins are unclear, the “Daijingū Gishikichō” records that in {{ill|Enryaku|Q1373176|qid=Q1373176}} 23 ({{ill|804|Q29998|qid=Q29998}}) during the reign of the 50th emperor {{ill|Emperor Kanmu|Q314846|qid=Q314846}}, “Tsukiyomi-no-miya, one compound, four main sanctuaries” were enshrined within a single sacred fence, and the four auxiliary shrines together were called “Tsukiyomi-no-miya.” In {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} 9 ({{ill|867|Q30347|qid=Q30347}}) during the reign of the 56th emperor {{ill|Emperor Seiwa|Q349243|qid=Q349243}}, the shrine names Isanagi-no-miya and Isanami-no-miya were granted.
+
+According to the {{ill|Engishiki|Q1342448|qid=Q1342448}} of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Enchō}} 5 ({{ill|927|Q30470|qid=Q30470}}) during the reign of the 60th emperor {{ill|Emperor Daigo|Q329753|qid=Q329753}}, at that time Isanagi-no-miya and Isanami-no-miya formed one compound enclosed by a sacred fence, and likewise Tsukiyomi-no-miya and Tsukiyomi Aramitama-no-miya formed another. From {{ill|1873|Q7757|qid=Q7757}} ({{ill|Meiji era|Q3125096|qid=Q3125096}} 6), all four shrines came to have their own individual sacred fences, forming the current layout.
+
+=== Festivals ===
+Rituals are conducted in accordance with those of the Inner Shrine, and for major festivals such as the Kinensai, Tsukinamisai, Kannamesai, and Niinamesai, offerings (heihaku) are presented from the Imperial Household.
+
+* January
+** Saitansai (January 1): A festival celebrating the New Year and praying for the eternal prosperity of the imperial line.
+** {{ill|Genshi-sai|Q11387821|qid=Q11387821}} (January 3): A festival celebrating the origin of the imperial succession at the start of the year.
+
+* February
+** National Foundation Commemoration Festival (February 11): A festival celebrating the founding of the nation by {{ill|Emperor Jimmu|Q200188|qid=Q200188}}.
+** {{ill|Kinensai|Q118906710|qid=Q118906710}} (February 18): A festival praying for a bountiful harvest and national peace at the beginning of the year.
+** Tenchōsai (February 23): A festival celebrating the birthday of {{ill|UNKNOWN|lt=Emperor Naruhito}}.
+
+* May
+** Kazahinomisai (May 14): A ritual in which offerings are presented to the Outer and Inner Shrines as well as auxiliary and subsidiary shrines, praying for freedom from wind and rain disasters and for abundant harvests.
+
+* June
+** Tsukinamisai (June 18–19): A festival held in June and December praying for national peace and the emperor’s well-being; at Ise Grand Shrine it is, together with the Kannamesai, called one of the Three Seasonal Festivals.
+
+* August
+** Kazahinomisai (August 4): A ritual in which offerings are presented to the Outer and Inner Shrines as well as auxiliary and subsidiary shrines, praying for freedom from wind and rain disasters and for abundant harvests.
+
+* October
+** {{ill|Kannamesai Festival|Q11255045|qid=Q11255045}} (October 18–19): A festival in which priests offer newly harvested grain of the year as sacred food ({{ill|Shinsen|Q11591045|qid=Q11591045|lt=Ōmike}}).
+
+* November
+** {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}} (November 24): A festival in which the emperor offers newly harvested grain to the deities and partakes of it himself, giving thanks for the harvest.
+
+* December
+** Tsukinamisai (December 18–19)
+
+=== Precincts ===
+[[Image:Tsukiyomi-no-miya(Naiku)_05.JPG|thumb|200px|Isanagi-no-miya and Isanami-no-miya]]
+The shrine buildings of the four auxiliary shrines are nearly identical and, regardless of whether the enshrined deity is male or female, follow the Inner Shrine style: thatched Shinmei-zukuri facing south, with inward-cut chigi and an even number (six) of katsuogi. The old shrine sites for periodic rebuilding are usually adjacent east–west, but at Tsukiyomi-no-miya they are arranged north–south and are not adjacent. The shrine building of Tsukiyomi-no-miya is slightly larger than the other three, and its torii is also larger.
+
+* Tsukiyomi-no-miya – Auxiliary shrine of {{ill|Ise Grand Shrine|Q687168|qid=Q687168}} {{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} (Inner Shrine); the highest-ranking auxiliary shrine located outside the Inner Shrine precinct.
+* Tsukiyomi Aramitama-no-miya – Enshrined deity: Tsukuyomi-no-Mikoto no Aramitama; auxiliary shrine of the Inner Shrine.
+* Isanagi-no-miya – Enshrined deity: {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}; auxiliary shrine of the Inner Shrine.
+* Isanami-no-miya – Enshrined deity: {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}; auxiliary shrine of the Inner Shrine.
+* {{ill|Ashihara Shrine|Q17191305|qid=Q17191305}} – Enshrined deities: Sasatsuhiko-no-Mikoto, {{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|qid=Q3080728|lt=Ukanomitama no Mionoya no Mikoto}}, and Ikarihime-no-Mikoto; all are considered deities of the five grains who protect fields and paddies. A subsidiary shrine of the Inner Shrine. Ashihara Shrine follows the Inner Shrine style, with inward-cut chigi and four (even-numbered) katsuogi, in a board-roofed Shinmei-zukuri style.
+* Guardhouse
+
+=== Access ===
+* Nearest station: About a 10-minute walk south from {{ill|Isuzugawa Station|Q6089533|qid=Q6089533}} on the {{ill|Toba Line|Q5357612|qid=Q5357612}} of {{ill|Kintetsu Railway|Q1531085|qid=Q1531085}}
+:: About a 1-hour walk from {{ill|Iseshi Station|Q6079748|qid=Q6079748}} on the {{ill|Sangū Line|Q872023|qid=Q872023}} of {{ill|Central Japan Railway Company|Q513679|qid=Q513679}}
+* Nearest bus stop: About a 5-minute walk from Nakamura-chō bus stop on the 51 Outer–Inner Shrine Line of {{ill|Mie Kotsu|Q6843516|qid=Q6843516}} ({{ill|Mie Kōtsū Ise Office|Q11357667|qid=Q11357667}})
+* Nearest interchange: About 1 km from {{ill|Ise interchange|Q10884857|qid=Q10884857}} on the {{ill|Ise Expressway|Q6079578|qid=Q6079578}}
+* Roads: Along {{ill|Mie Prefectural Road Route 37|Q11357923|qid=Q11357923}} ({{ill|Miyuki Road|Q22222736|qid=Q22222736}}) (main approach), and along {{ill|Japan National Route 23|Q5357579|qid=Q5357579}} (rear approach)
+* Parking: There is a large parking lot on the national road side that can accommodate buses; several cars can also be parked on the prefectural road side.
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist}}
+
+=== References ===
+* “Guide to Visiting the Four Auxiliary Shrines Including Tsukiyomi-no-miya” (published by the Jingu Administration Office)
+* “Walking around Oise-san” (published by the Ise Grand Shrine Association of Worshippers)
+* “Oise Pilgrimage” (published by the Ise Grand Shrine Association of Worshippers)
+
+=== See also ===
+{{Commonscat|Tsukiyomi-no-miya (Naiku)}}
+* {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520}}
+* {{ill|Ise Grand Shrine|Q687168|qid=Q687168}}
+* {{ill|125 Shrines of Ise|Q16482760|qid=Q16482760}}
+* {{ill|Ise, Mie|Q328067|qid=Q328067}}
+
+{{125 Shrines of Ise Grand Shrine}}
+{{Shinto}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Tsukiyomi-no-Miya (Naiku)]][[Category:Shikinaisha|Tsukiyomi-no-Miya (Naiku)]][[Category:Shikinaisha|Tsukiyomi-no-Miya (Naiku)]][[Category:Shikinai Ronsha]]
+[[Category:Shikinai Taisha]]
 [[Category:Shikinai Subshrine]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:125 Shrines of Ise]]
+[[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Shinto shrines in Ise City]]
+[[Category:Buildings and structures in Japan completed in 2014]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

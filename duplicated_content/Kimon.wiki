@@ -1,29 +1,82 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kimon for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-'''Kimon''' (鬼門) refers to the {{ill|northeast|ja|北東|12=simple|13=User:Immanuelle/northeast|comment=changed title based on wikidata|1=Northeast|qid=Q6497686}} direction ({{ill|艮|1=Gèn (Bagua)|2=ja|3=艮|lt=Gen (艮)|ja|艮|1=Gèn (Bagua)|2=ja|3=艮|lt=Gen (艮)|12=simple|13=User:Immanuelle/艮|qq=}}, representing the space between {{ill|Ox (zodiac)|ja|丑|1=chǒu|lt=Ox (丑)|2=ja|3=丑|1=Ox (zodiac)|lt=Ox (丑)|12=simple|13=User:Immanuelle/Ox (zodiac)|13=User:Immanuelle/Ox (zodiac)|comment=changed title based on wikidata|qid=Q16539206}} and {{ill|Tiger (zodiac)|ja|寅|1=yín|lt=Tiger (寅)|2=ja|3=寅|1=Tiger (zodiac)|lt=Tiger (寅)|12=simple|13=User:Immanuelle/Tiger (zodiac)|13=User:Immanuelle/Tiger (zodiac)|comment=changed title based on wikidata|qid=Q16683683}}), considered an inauspicious direction in Japanese tradition, believed to be the gateway for malevolent spirits.
+'''Kimon''' (鬼門) refers to the {{ill|Northeast|ja|北東|12=simple|13=User:Immanuelle/northeast|comment=changed title based on wikidata|qid=Q6497686}} direction ({{ill|艮|ja|艮|lt=Gen (艮)}}, representing the space between {{ill|Ox (zodiac)|ja|丑|lt=Ox (丑)|2=ja|3=丑|lt=Ox (丑)|12=simple|13=User:Immanuelle/Ox (zodiac)|13=User:Immanuelle/Ox (zodiac)|comment=changed title based on wikidata|qid=Q16539206}} and {{ill|Tiger (zodiac)|fr|Yin (branche terrestre)|ja|寅|zh|寅|zh_min_nan|În (tē-chi)|zh_yue|寅|qid=Q16683683|lt=Tiger (寅)}}), considered an inauspicious direction in Japanese tradition, believed to be the gateway for malevolent spirits.
+
 == Overview ==
-The direction opposite to {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}}, the {{ill|southwest|ja|南西|12=simple|13=User:Immanuelle/southwest|comment=changed title based on wikidata|1=Southwest|qid=Q2381698}} ({{ill|Kun|ja|坤|1=Kūn (Bagua)|2=ja|3=坤|lt=Kūn (坤)|12=simple|13=User:Immanuelle/Kun|qq=}}, representing {{ill|Goat (zodiac)|ja|未|1=wèi|lt=Goat (未)|2=ja|3=未|12=simple|13=User:Immanuelle/Goat (zodiac)|comment=changed title based on wikidata|qid=Q20128396}} and {{ill|Monkey (zodiac)|en|Monkey (zodiac)|qid=Q740674|lt=Monkey (申)|1=Monkey (zodiac)}}), is known as the '''Ura-Kimon''' (裏鬼門) and is similarly regarded with apprehension. In {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō|1=Onmyōdō}}, the four corners are designated as gates: {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}} in the northeast, {{ill|Fūmon|ja|風門|12=simple|13=User:Immanuelle/Fūmon|ja_comment=jawiki link invalid}} or {{ill|Chimon|ja|地門|12=simple|13=User:Immanuelle/Chimon|ja_comment=jawiki link invalid}} in the southeast, {{ill|Jinmon|ja|人門|12=simple|13=User:Immanuelle/Jinmon|ja_comment=jawiki link invalid}} or {{ill|Byōmon|ja|病門|12=simple|13=User:Immanuelle/Byōmon|ja_comment=jawiki link invalid}} in the southwest, and {{ill|Tenmon (direction)|ja|天門|12=simple|13=User:Immanuelle/Tenmon (direction)|1=Tenmon (disambiguation)|comment=changed title based on wikidata|qid=Q10940802}} in the northwest.
+The direction opposite to {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}}, the {{ill|Southwest|an|Sud-ueste|ar|جنوب غربي (اتجاه)|az|Cənub-qərb|azb|جنوب-غرب|bew|Kidul-kulon|bg|Югозапад|bjn|Barat daya|br|Mervent|bs|Jugozapad|ckb|باشووری ڕۆژاوا|cs|Jihozápad|de|Südwest|diq|Verocê rocawani|eo|Sudokcidento|es|Sudoeste|et|Edel|eu|Hego-mendebalde|fi|Lounas (ilmansuunta)|fr|Sud-ouest|frr|Süüdwaast|gl|Suroeste|hr|Jugozapad|it|Sud-ovest|ja|南西|jv|Kidul-Kulon|ko|남서쪽|ku|Başûr rojava|map_bms|Kidul-Kulon|mk|Југозапад|ms|Barat daya|myv|Чикуншка|nl|Zuidwest|no|Sørvest|pam|Mauli-albugan|pl|Południowy zachód|pt|Sudoeste|rue|Югозапад|sh|Jugozapad|simple|Southwest|sn|Chamhembe kwakadziva kuMadokero|sr|Југозапад|tcy|ನೈರುತ್ಯೊ|te|నైఋతి|th|ทิศตะวันตกเฉียงใต้|tr|Güneybatı|uk|Південний захід|vep|Ehtbok|vi|Hướng Tây Nam|war|Habagatan|zh|西南|zh_min_nan|Sai-lâm-pêng|zh_yue|西南|qid=Q2381698}} ({{ill|Kun|ar|☷|de|☷|es|☷|fa|☷|fr|Kūn (symbole asiatique)|ja|坤|ko|곤 (괘)|nl|Aarde (trigram)|pt|Kūn (I Ching)|uk|☷|zh|坤卦|zh_min_nan|Khun-kòa|zh_yue|坤卦|qid=Q598015|lt=Kūn (坤)}}, representing {{ill|wèi|fr|Wei (branche terrestre)|ja|未|zh|未|zh_min_nan|Bī (tē-chi)|zh_yue|未 (地支)|qid=Q20128396|lt=Goat (未)}} and {{ill|Monkey (zodiac)|af|Aap (astrologie)|als|Jahr des Affen|ar|برج القرد|arz|برج القرد|ast|Signu del monu|ban|Bojog (shio)|bcl|Ukay (sodyak)|cdo|Sĭng (dê-ciĕ)|es|Signo del mono|et|Ahviaasta|fa|میمون (منطقةالبروج)|fi|Apina (kiinalainen horoskooppi)|fr|Singe (astrologie chinoise)|hak|Sṳ̂n (thi-chṳ̂)|hyw|Կապիկի Տարի|id|Kera (shio)|it|Scimmia (zodiaco cinese)|ja|申|jv|Kethèk (shio)|ko|신 (지지)|lt|Beždžionė (kinų zodiakas)|mg|Gidro (zôdiaka sinoa)|mk|Мајмун (хороскопски знак)|ms|Monyet (zodiak)|nl|Aap (astrologie)|pt|Macaco (zodíaco)|ro|Maimuță (semn zodiacal)|simple|Monkey (zodiac)|sv|Apa (zodiak)|ta|குரங்கு (சீன சோதிடம்)|th|วอก|tl|Unggoy (sodyak)|tr|Maymun (burç)|uk|Мавпа (зодіак)|uz|Maymun yili|vi|Thân (Địa chi)|war|Amo (zodyak)|za|Saen (deihcei)|qid=Q740674|lt=Monkey (申)}}), is known as the '''Ura-Kimon''' (裏鬼門) and is similarly regarded with apprehension. In {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō}}, the four corners are designated as gates: {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}} in the northeast, {{ill|Fūmon|ja|風門}} or {{ill|Chimon|ja|地門}} in the southeast, {{ill|Jinmon|ja|人門}} or {{ill|Byōmon|ja|病門}} in the southwest, and {{ill|Tenmon (disambiguation)|ja|天門|12=simple|13=User:Immanuelle/Tenmon (direction)|comment=changed title based on wikidata|qid=Q10940802}} in the northwest.
+
 == Reasons for Fear of Kimon ==
-The term "{{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}}" appears in ancient Chinese texts, such as the {{ill|Lunheng|en|Lunheng|qid=Q661688|lt=Lunheng|1=Lunheng}} by {{ill|Wang Chong|en|Wang Chong|qid=Q319329|lt=Wang Chong|1=Wang Chong}}, referencing the {{ill|Classic of Mountains and Seas|en|Classic of Mountains and Seas|qid=Q844278|lt=Shan Hai Jing|1=Classic of Mountains and Seas}}. It describes a large peach tree guarding the gate through which countless spirits pass. Although this passage isn't present in current versions of "Shan Hai Jing," it illustrates early beliefs associating the northeast with spirits.
+The term "{{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}}" appears in ancient Chinese texts, such as the {{ill|Lunheng|en|Lunheng|qid=Q661688|lt=Lunheng}} by {{ill|Wang Chong|en|Wang Chong|qid=Q319329|lt=Wang Chong}}, referencing the {{ill|Classic of Mountains and Seas|en|Classic of Mountains and Seas|qid=Q844278|lt=Shan Hai Jing}}. It describes a large peach tree guarding the gate through which countless spirits pass. Although this passage isn't present in current versions of "Shan Hai Jing," it illustrates early beliefs associating the northeast with spirits.
+
 == Interpretations by Rulers ==
-In historical Japan, rulers performed rituals at the four corners of the capital to prevent misfortune. The {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}} saw the rise of fear toward {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}}, believed to cause calamities like disease, disasters, and curses. For example, {{ill|Mount Hiei|en|Mount Hiei|qid=Q748040|lt=Mount Hiei|1=Mount Hiei}} was considered to block the "demon gate" of {{ill|Kyoto|ja|京都|12=simple|13=User:Immanuelle/Kyoto|1=Kyōto|comment=changed title based on wikidata|qid=Q740246}}.
+In historical Japan, rulers performed rituals at the four corners of the capital to prevent misfortune. The {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}} saw the rise of fear toward {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}}, believed to cause calamities like disease, disasters, and curses. For example, {{ill|Mount Hiei|en|Mount Hiei|qid=Q748040|lt=Mount Hiei}} was considered to block the "demon gate" of {{ill|Kyōto|ja|京都|12=simple|13=User:Immanuelle/Kyoto|comment=changed title based on wikidata|qid=Q740246}}.
+
 == Popular Beliefs ==
-Common folk also practiced protective measures against {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}}. In {{ill|Kyoto Imperial Palace|en|Kyoto Imperial Palace|qid=Q1202239|lt=Kyoto Imperial Palace|1=Kyoto Imperial Palace}}, a carved monkey ({{ill|Saru|ja|猿|12=simple|13=User:Immanuelle/Saru|ja_comment=jawiki redirects to サル|1=Monkey|comment=changed title based on wikidata|qid=Q1367}}) guards the northeast corner, known as {{ill|Sarugatsuji|en|Sarugatsuji|qid=Q85882338|lt=Sarugatsuji|1=Sarugatsuji}}. People planted {{ill|Osmanthus heterophyllus|en|Osmanthus heterophyllus|qid=Q2364246|lt=holly|1=Osmanthus heterophyllus}} and {{ill|nandina|ja|ナンテン|12=simple|13=User:Immanuelle/nandina|1=Nandina domestica|comment=changed title based on wikidata|qid=Q1153858}} near their homes' northeastern corners to ward off evil.
+Common folk also practiced protective measures against {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}}. In {{ill|Kyoto Imperial Palace|en|Kyoto Imperial Palace|qid=Q1202239|lt=Kyoto Imperial Palace}}, a carved monkey ({{ill|Monkey|ja|猿|12=simple|13=User:Immanuelle/Saru|ja_comment=jawiki redirects to サル|comment=changed title based on wikidata|qid=Q1367}}) guards the northeast corner, known as {{ill|Sarugatsuji|en|Sarugatsuji|qid=Q85882338|lt=Sarugatsuji}}. People planted {{ill|Osmanthus heterophyllus|en|Osmanthus heterophyllus|qid=Q2364246|lt=holly}} and {{ill|Nandina domestica|ja|ナンテン|12=simple|13=User:Immanuelle/nandina|comment=changed title based on wikidata|qid=Q1153858}} near their homes' northeastern corners to ward off evil.
+
 == Denial of Kimon Beliefs ==
-During the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration|1=Meiji Restoration}}, modernization labeled {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon|qq=}} beliefs as superstition. Scholars like {{ill|Mori Arinori|en|Mori Arinori|qid=Q1194472|lt=Arinori Mori|1=Mori Arinori}} criticized such practices, though traditional beliefs persisted among the public.
+During the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration}}, modernization labeled {{ill|Kimon|ja|鬼門|1=Kimon|12=simple|13=User:Immanuelle/Kimon}} beliefs as superstition. Scholars like {{ill|Mori Arinori|en|Mori Arinori|qid=Q1194472|lt=Arinori Mori}} criticized such practices, though traditional beliefs persisted among the public.
+
 == References ==
 * Seikei Kiyoshi, ''Modern House Fortunes'' (1989), ISBN 978-4106019678
 * Yasuhisa Koike, ''The Correct Home Fortunes for Japanese People'' (2015), ISBN 978-4833421492
+
 == See Also ==
-* {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō|1=Onmyōdō}}
-* {{ill|Feng shui|en|Feng shui|qid=Q170537|lt=Feng Shui|1=Feng shui}}
-* {{ill|Kyoto Imperial Palace|en|Kyoto Imperial Palace|qid=Q1202239|lt=Kyoto Imperial Palace|1=Kyoto Imperial Palace}}
-* {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}
+* {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō}}
+* {{ill|Feng shui|en|Feng shui|qid=Q170537|lt=Feng Shui}}
+* {{ill|Kyoto Imperial Palace|en|Kyoto Imperial Palace|qid=Q1202239|lt=Kyoto Imperial Palace}}
+* {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}
+
 {{translated page|ja|鬼門|1=Kimon|version=103515868|comment=Imported full ja history}}
 
+==Merged second translation==
+{{otheruses||{{ill|Dir En Grey|en|Dir En Grey|qid=Q379852|lt=Dir En Grey}}'s {{ill|Music video|en|Music video|qid=Q193977|lt=Music Video}}|鬼門 (映像作品)}}
+'''Kimon''' (鬼門) refers to the northeastern direction ({{ill|Ushitora|ja|艮|lt=Gen (艮)}}, "Ox and Tiger": between the {{ill|Ox (zodiac)|ja|丑|lt=Ox (丑)|2=ja|3=丑|lt=Ox (丑)|12=simple|13=User:Immanuelle/Ox|13=User:Immanuelle/Ox (zodiac)|comment=changed title based on wikidata|qid=Q16539206}} and {{ill|Tiger (zodiac)|fr|Yin (branche terrestre)|ja|寅|zh|寅|zh_min_nan|În (tē-chi)|zh_yue|寅|qid=Q16683683|lt=Tiger (寅)}} on the Chinese zodiac). In Japan, this direction has traditionally been considered ominous and is associated with the entrance and exit of demons.
+
+== Overview ==
+
+The direction opposite to Kimon, the southwest ({{ill|Kon|ar|☷|de|☷|es|☷|fa|☷|fr|Kūn (symbole asiatique)|ja|坤|ko|곤 (괘)|nl|Aarde (trigram)|pt|Kūn (I Ching)|uk|☷|zh|坤卦|zh_min_nan|Khun-kòa|zh_yue|坤卦|qid=Q598015|lt=Kūn (坤)}}, {{ill|Kūn (Bagua)|ar|☷|de|☷|es|☷|fa|☷|fr|Kūn (symbole asiatique)|ja|坤|ko|곤 (괘)|nl|Aarde (trigram)|pt|Kūn (I Ching)|uk|☷|zh|坤卦|zh_min_nan|Khun-kòa|zh_yue|坤卦|qid=Q598015}}), is called '''Urakimon''' (裏鬼門) and is similarly regarded as inauspicious. Kimon (northeast) is associated with "demon gate," while the southwest (Urakimon) is referred to as "people gate" or "illness gate," the southeast ({{ill|Sun|ja|巽|lt=Xun (巽)}}) as "wind gate," and the northwest as "heaven gate" according to {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō}}.<ref>{{Cite book|title=日本人なら知っておきたい正しい家相の本|author=小池康寿|publisher=プレジデント社|year=2015|page=37}}</ref> In the {{ill|Konjaku Monogatarishū|en|Konjaku Monogatarishū|qid=Q1507085|lt=Konjaku Monogatari}}, an {{ill|Onmyōji|en|Onmyōji|qid=Q2274163|lt=Onmyōji}} named {{ill|Yuge no Koreo|ja|弓削是雄}} predicts an assassin's presence in the northeast direction of {{ill|Tomonokimi Yotsugi|ja|伴宿禰世継}}’s residence, illustrating a perception of艮as an unlucky direction.<ref>{{Cite book|author=村山修一|title=日本陰陽道史話|publisher=平凡社|year=1988|page=101|ISBN=4-582-76406-1}}</ref> In {{ill|Taiwan (island)|ja|台湾|12=simple|13=User:Immanuelle/Taiwan|comment=changed title based on wikidata|qid=Q22502}}, Kimon is considered the "gateway between this world and the next," opening during the {{ill|Ghost Month|ja|鬼月}} in the seventh lunar month.<ref>{{Cite web|url=https://jp.taiwantoday.tw/news.php?unit=190&post=103467|title=「鬼月」と呼ばれるLunisolar Julyの意味|work=TAIWAN TODAY|date=2016-08-12}}</ref>
+
+== Reasons for Fearing Kimon ==
+
+The term "Kimon" appears in the Eastern Han period's {{ill|Wang Chong|en|Wang Chong|qid=Q319329|lt=Wang Chong}}’s ''{{ill|Lunheng|en|Lunheng|qid=Q661688|lt=Lunheng}}'', in the ''Correcting Ghosts'' chapter, citing the ''{{ill|Classic of Mountains and Seas|en|Classic of Mountains and Seas|qid=Q844278|lt=Classic of Mountains and Seas}}''.<ref>{{Cite book|author=水野杏紀|title=易、風水、暦、養生、処世　東アジアの宇宙観|publisher=講談社選書メチエ|year=2016|pages=28-29}}</ref>
+
+{{Quotation|According to the ''Classic of Mountains and Seas,'' there is a Dousaku Mountain (度朔山) in the Eastern Sea. Atop the mountain stands a giant peach tree that spans 3,000 ri, curving around its branches. The area between the branches to the northeast is called Kimon, where myriad ghosts pass through. Two divine figures guard this place, binding malevolent ghosts with reed ropes to be fed to tigers. Consequently, the Yellow Emperor established rituals, erecting a large peachwood doll at the gate and hanging reed ropes to ward off evil spirits.|}}
+
+In ancient China, the transition from winter to spring marked the year’s end, a period associated with ghosts causing diseases and calamities. Rituals were performed to drive out these spirits and welcome spring’s fortune. These practices, transmitted to Japan, evolved into seasonal events like {{ill|Setsubun|en|Setsubun|qid=Q746798|lt=Setsubun}}.<ref>{{Cite book|author=水野杏紀|title=易、風水、暦、養生、処世　東アジアの宇宙観|publisher=講談社選書メチエ|year=2016|pages=31-32}}</ref>
+
+Kimon's association with demons also stems from its connection to {{ill|Onmyōdō}} practices that integrated with Japan's {{ill|Shinbutsu-shūgō|de|Shinbutsu-Shūgō|es|Shinbutsu shūgō|eu|Shinbutsu-shūgō|fa|شینبوتسو-شوگو|fi|Shinbutsu shūgō|fr|Shinbutsu shūgō|id|Shinbutsu-shūgō|it|Shinbutsu shūgō|ja|神仏習合|ko|신불습합|pl|Synkretyzm shintō-buddyjski|ru|Синто-буддийский синкретизм|th|ชิมบุตสึชูโง|tr|Şinbutsu-şuugō|uk|Синто-буддистський синкретизм|ur|شنتو اور بدھ مت کا امتزاج ضدین|zh|神佛習合|qid=Q2279088|lt=Shinbutsu-shūgō}}.<ref>{{Cite book|author=小池康寿|title=日本人なら知っておきたい正しい家相の本|publisher=プレジデント社|year=2015|pages=36-37}}</ref>
+
+== Perceptions of Kimon (Authority) ==
+
+Rulers established rituals like the Kyoto’s {{ill|Keijō Shishū Ekijin Sai|ja|京城四隅疫神祭}} to protect the city from disasters.<ref>{{Cite book|author=小池康寿|title=日本人なら知っておきたい正しい家相の本|publisher=プレジデント社|year=2015|page=37}}</ref> For example, the monk {{ill|Jien|en|Jien|qid=Q715993|lt=Jien}} described {{ill|Mount Hiei|en|Mount Hiei|qid=Q748040|lt=Mount Hiei}} as guarding Kyoto’s northeastern Kimon direction.<ref>{{Cite book|author=村山修一|title=日本陰陽道史話|publisher=平凡社|year=1988|page=128}}</ref>
+
+== Popular Practices ==
+
+Traditionally, objects such as {{ill|Osmanthus heterophyllus|en|Osmanthus heterophyllus|qid=Q2364246|lt=holly}} and {{ill|Nandina domestica|ja|ナンテン|12=simple|13=User:Immanuelle/Nandina|comment=changed title based on wikidata|qid=Q1153858}} were planted in northeast corners to repel misfortune. Kyoto’s {{ill|Kyoto Imperial Palace|en|Kyoto Imperial Palace|qid=Q1202239|lt=Gosho}} features a recessed northeastern section known as {{ill|Sarugatsuji|en|Sarugatsuji|qid=Q85882338|lt=Sarugakuzuka}}, believed to protect against Kimon.<ref>{{Cite book|author=小池康寿|title=日本人なら知っておきたい正しい家相の本|publisher=プレジデント社|year=2015|page=28}}</ref>
+
+== References ==
+
+{{reflist|30em}}
+
+== Further Reading ==
+* {{Cite book|author=清家清|title=現代の家相|publisher=新潮社|year=1989|ISBN=978-4106019678}}
+* {{Cite book|author=小池康寿|title=日本人なら知っておきたい正しい家相の本|publisher=プレジデント社|year=2015|ISBN=9784833421492}}
+* {{Cite book|author=水野杏紀|title=易、風水、暦、養生、処世　東アジアの宇宙観|publisher=講談社選書メチエ|year=2016|ISBN=978-4-06-258621-4}}
+
+== Related Articles ==
+* {{ill|kasō|ja|家相|12=simple|13=User:Immanuelle/Kaso|comment=changed title based on wikidata|qid=Q11455554}}
+* {{ill|Onmyōdō|en|Onmyōdō|qid=Q1340540|lt=Onmyōdō}}
+* [[Kyoto Imperial Palace]]
+* {{ill|Izumo-taisha|en|Izumo-taisha|qid=Q696362|lt=Izumo Taisha}}
+
+{{translated page|ja|鬼門|1=Kimon|version=103515868|comment=Imported full ja history}}
+
+{{wikidata link|Q11673539|ja|鬼門|ko|귀문방|zh|鬼門|en|Kimon|check_date=2026-05-17}}
 [[Category:Demons]]
 [[Category:Directions]]
 [[Category:East Asian folk religion]]
 [[Category:Oni]]
 [[Category:Onmyōdō]]
+[[Category:Pages with duplicated content]]
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata has short description]]
+[[Category:Pages with duplicated content]]

@@ -1,17 +1,52 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ishii_no_Shichifukujin_to_Taue_Odori for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-'''Ishii no Shichifukujin to Taue Odori''' (石井の七福神と田植踊) is a traditional folk performance of {{ill|Dengaku|en|Dengaku|qid=Q3022455|lt=Dengaku|1=Dengaku}} (rice planting dance) from {{ill|Nihonmatsu, Fukushima|ja|福島県二本松市|12=simple|13=User:Immanuelle/Nihonmatsu, Fukushima|ja_comment=jawiki link invalid}}, specifically in the neighborhoods of Suzuishi Higashimachi, Nishikimachi, and Toromi. It was designated a {{ill|Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|1=National Important Intangible Folk Cultural Property|comment=changed title based on wikidata|qid=Q6573893}} on December 26, 1995 (Heisei 7). The preservation group responsible for its continuation is the Ishii Performing Arts Preservation Society.
-This performance, held during the {{ill|First Full Moon Festival|en|First Full Moon Festival|qid=Q13423452|lt=Koshōgatsu|1=First Full Moon Festival}} (Small New Year), is a type of {{ill|Yoshuku|lt=Yoshuku|lt=Yoshuku performing arts|ja|予祝芸能|12=simple|13=User:Immanuelle/Yoshuku performing arts|qq=}} meant to pray for a bountiful harvest by symbolically enacting agricultural tasks through dance. Historically, it was performed while visiting houses throughout the village, but today it is only conducted in homes that specifically request it.
-The performance begins with the Seven Lucky Gods ({{ill|Seven Lucky Gods|en|Seven Lucky Gods|qid=Q846858|lt=Shichifukujin|1=Seven Lucky Gods}}). Initially, Inari, holding a {{ill|Hand fan|en|Hand fan|qid=Q193220|lt=Folding fan|1=Hand fan}}, dances, followed by Bishamonten, Benzaiten, Hotei, Fukurokuju, Jurōjin, Ebisu, and Daikokuten, each called forth in sequence. Two comical figures wearing Hyottoko masks perform humorous gestures, striking straw with mallets, weaving {{ill|Shimenawa|en|Shimenawa|qid=Q1887421|lt=Shimenawa|1=Shimenawa}} ropes and silkworm cocoons, which are then presented to the head of the household to pray for the success of rice cultivation and sericulture.
-Next is the rice planting dance. Five performers dressed as {{ill|Yakko|ja|奴|12=simple|13=User:Immanuelle/Yakko|qq=}} with headbands and holding {{ill|Gunbai|en|Gunbai|qid=Q1188570|lt=Gunbai|1=Gunbai}} (decorated fans) and four performers dressed as {{ill|Saotome|en|Saotome|qid=Q539854|lt=Saotome|1=Saotome}} wearing {{ill|Hanagasa|ja|花笠|12=simple|13=User:Immanuelle/Hanagasa|qq=}} hats and holding fans perform celebratory dances under the direction of the leader, Kyūroku. The performance includes dances celebrating the New Year, symbolic reenactments of rice planting processes, and finally, dances celebrating the autumn harvest.
+'''Ishii no Shichifukujin to Taue Odori''' (石井の七福神と田植踊) is a traditional folk performance of {{ill|Dengaku|ca|Dengaku|es|Dengaku (música)|fa|دنگاکو|fr|Dengaku|id|Dengaku|it|Dengaku|ja|田楽|ko|덴가쿠 (춤)|pl|Dengaku|ru|Дэнгаку|qid=Q3022455|lt=Dengaku}} (rice planting dance) from {{ill|Nihonmatsu, Fukushima|ja|福島県二本松市}}, specifically in the neighborhoods of Suzuishi Higashimachi, Nishikimachi, and Toromi. It was designated a {{ill|National Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|qid=Q6573893}} on December 26, 1995 (Heisei 7). The preservation group responsible for its continuation is the Ishii Performing Arts Preservation Society.
+
+This performance, held during the {{ill|First Full Moon Festival|ko|상원 (명절)|qid=Q13423452|lt=Koshōgatsu}} (Small New Year), is a type of {{ill|Yoshuku|ja|予祝芸能|qid=Q11371101|lt=Yoshuku performing arts}} meant to pray for a bountiful harvest by symbolically enacting agricultural tasks through dance. Historically, it was performed while visiting houses throughout the village, but today it is only conducted in homes that specifically request it.
+
+The performance begins with the Seven Lucky Gods ({{ill|Seven Lucky Gods|en|Seven Lucky Gods|qid=Q846858|lt=Shichifukujin}}). Initially, Inari, holding a {{ill|Hand fan|an|Ventallo|ar|مروحة يدوية|az|Yelpik|azb|یئلپیک|bg|Ветрило|bn|হাতপাখা|ca|Ventall|ceb|Paypay|cs|Vějíř|da|Vifte|dag|Kafuni|de|Fächer|el|Βεντάλια|eo|Ventumilo|es|Abanico|eu|Haizemaile|ext|Abanicu|fa|بادبزن|fi|Viuhka|fr|Éventail|fy|Waaier|gl|Abano|he|מניפה|hu|Legyező|id|Kipas tangan|io|Abaniko|it|Ventaglio|ja|扇子|ka|მარაო|kk|Желпуіш (бұйым)|kn|ಬೀಸಣಿಗೆ|ko|부채|ks|واوٕج|la|Flabellum|lb|Fächer|lt|Vėduoklė|ms|Kipas tangan|my|ယပ်|nl|Waaier (ventilatie)|no|Vifte|or|ବିଞ୍ଚଣା|pl|Wachlarz (przedmiot)|pnb|ہتھ پکھی|pt|Leque|ro|Evantai|ru|Веер|sd|ونجڻو|si|Hand fan|sk|Vejár|sr|Лепеза|sv|Solfjäder|szl|Fecher|ta|விசிறி|te|విసనకర్ర|tg|Бодбизан|th|พัด|tr|Yelpaze|uk|Віяло|vi|Quạt tay|war|Paypay|zh|扇子|zh_classical|扇|zh_min_nan|Sìⁿ|zh_yue|扇|qid=Q193220|lt=Folding fan}}, dances, followed by Bishamonten, Benzaiten, Hotei, Fukurokuju, Jurōjin, Ebisu, and Daikokuten, each called forth in sequence. Two comical figures wearing Hyottoko masks perform humorous gestures, striking straw with mallets, weaving {{ill|Shimenawa|en|Shimenawa|qid=Q1887421|lt=Shimenawa}} ropes and silkworm cocoons, which are then presented to the head of the household to pray for the success of rice cultivation and sericulture.
+
+Next is the rice planting dance. Five performers dressed as {{ill|Yakko|ja|奴|qid=Q11446610}} with headbands and holding {{ill|Gunbai|en|Gunbai|qid=Q1188570|lt=Gunbai}} (decorated fans) and four performers dressed as {{ill|Saotome|it|Saotome|ja|早乙女|ko|사오토메|ru|Саотомэ|th|ซาโอโตะเมะ|zh|早乙女|qid=Q539854|lt=Saotome}} wearing {{ill|Hanagasa|ja|花笠|12=simple|13=User:Immanuelle/Hanagasa}} hats and holding fans perform celebratory dances under the direction of the leader, Kyūroku. The performance includes dances celebrating the New Year, symbolic reenactments of rice planting processes, and finally, dances celebrating the autumn harvest.
+
 == See Also ==
-* {{ill|Traditional performing arts|ja|伝統芸能|12=simple|13=User:Immanuelle/Traditional performing arts|ja_comment=jawiki redirects to 日本の伝統芸能|1=Theatre of Japan|comment=changed title based on wikidata|qid=Q1364447}}
+* {{ill|Theatre of Japan|ja|伝統芸能|12=simple|13=User:Immanuelle/Traditional performing arts|ja_comment=jawiki redirects to 日本の伝統芸能|comment=changed title based on wikidata|qid=Q1364447}}
+
 == External Links ==
 * [http://www.city.nihonmatsu.lg.jp/soshiki/54/304.html Nihonmatsu City: Profile, History, and Culture - Ishii no Shichifukujin to Taue Odori]
 * {{Cultural Asset Database|302|624|Ishii no Shichifukujin to Taue Odori}}
+
 {{Japan-culture-stub}}
+
 {{translated page|ja|石井の七福神と田植踊|version=88915011|comment=Imported full ja history}}
 
+==Merged second translation==
+'''Ishii no Shichifukujin to Taue Odori''' (石井の七福神と田植踊) is a {{ill|rice-planting dance|ja|田植踊}}, a form of {{ill|Dengaku|ca|Dengaku|es|Dengaku (música)|fa|دنگاکو|fr|Dengaku|id|Dengaku|it|Dengaku|ja|田楽|ko|덴가쿠 (춤)|pl|Dengaku|ru|Дэнгаку|qid=Q3022455|lt=Dengaku}}, passed down in {{ill|Nihonmatsu, Fukushima|en|Nihonmatsu, Fukushima|qid=Q685491|lt=Nihonmatsu, Fukushima}}, Fukushima Prefecture, specifically in the neighborhoods of Suzuki Ishihigashimachi, Nishikimachi, and Toromi. It was designated as a {{ill|National Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|qid=Q6573893}} on December 26, 1995. The preservation group is known as the Ishii Performing Arts Preservation Society (石井芸能保存会).
+
+The performance combines a {{ill|Yoshuku|ja|予祝芸能|qid=Q11371101|lt=Yoshuku-geino}} (ritual celebration for blessings of bountiful harvests) held around {{ill|First Full Moon Festival|ko|상원 (명절)|qid=Q13423452|lt=Koshogatsu}}. Originally, the dance was performed by traveling from house to house within the community. Today, it is performed only at specially requested homes.
+
+== Overview of the Performance ==
+The performance begins with a dance depicting the {{ill|Seven Lucky Gods|en|Seven Lucky Gods|qid=Q846858|lt=Seven Lucky Gods}}:
+1. '''Inari''' starts with a {{ill|Hand fan|an|Ventallo|ar|مروحة يدوية|az|Yelpik|azb|یئلپیک|bg|Ветрило|bn|হাতপাখা|ca|Ventall|ceb|Paypay|cs|Vějíř|da|Vifte|dag|Kafuni|de|Fächer|el|Βεντάλια|eo|Ventumilo|es|Abanico|eu|Haizemaile|ext|Abanicu|fa|بادبزن|fi|Viuhka|fr|Éventail|fy|Waaier|gl|Abano|he|מניפה|hu|Legyező|id|Kipas tangan|io|Abaniko|it|Ventaglio|ja|扇子|ka|მარაო|kk|Желпуіш (бұйым)|kn|ಬೀಸಣಿಗೆ|ko|부채|ks|واوٕج|la|Flabellum|lb|Fächer|lt|Vėduoklė|ms|Kipas tangan|my|ယပ်|nl|Waaier (ventilatie)|no|Vifte|or|ବିଞ୍ଚଣା|pl|Wachlarz (przedmiot)|pnb|ہتھ پکھی|pt|Leque|ro|Evantai|ru|Веер|sd|ونجڻو|si|Hand fan|sk|Vejár|sr|Лепеза|sv|Solfjäder|szl|Fecher|ta|விசிறி|te|విసనకర్ర|tg|Бодбизан|th|พัด|tr|Yelpaze|uk|Віяло|vi|Quạt tay|war|Paypay|zh|扇子|zh_classical|扇|zh_min_nan|Sìⁿ|zh_yue|扇|qid=Q193220|lt=hand fan}} in hand.
+2. '''Bishamonten''', '''Benzaiten''', '''Hotei''', '''Fukurokuju''', '''Jurōjin''', '''Ebisu''', and '''Daikokuten''' are subsequently called and depicted.
+
+Two clown roles wearing {{ill|Hyottoko|en|Hyottoko|qid=Q795293|lt=Hyottoko masks}} entertain with comical gestures. They hammer {{ill|Straw|en|Straw|qid=Q160066|lt=straw}} with a {{ill|Hammer|en|Hammer|qid=Q25294|lt=mallet}}, weave {{ill|Shimenawa|en|Shimenawa|qid=Q1887421|lt=shimenawa}} and silkworm cocoons, and present these to the host, symbolizing prayers for successful {{ill|Rice Cultivation|ja|稲作|12=simple|13=User:Immanuelle/rice cultivation|comment=changed title based on wikidata|qid=Q734080}} and {{ill|Sericulture|ja|養蚕|12=simple|13=User:Immanuelle/sericulture|ja_comment=jawiki redirects to 養蚕業|comment=changed title based on wikidata|qid=Q864650}}.
+
+The second part of the performance features the '''Taue Odori''' (rice-planting dance):
+- Five '''Yakko''' (奴), dressed with headbands and holding {{ill|Gunbai|en|Gunbai|qid=Q1188570|lt=Gunbai}} (decorated fans), and four '''Saotome''' (早乙女), wearing {{ill|Hanagasa|lt=Hanagasa|lt=Flower hats|ja|花笠|12=simple|13=User:Immanuelle/flower hats}} and carrying sensu, perform under the guidance of '''Kyūroku''', the head role.
+- They begin with celebratory dances for the New Year, followed by dances symbolizing the rice-planting process, and conclude with celebratory dances for the autumn harvest.
+
+== See Also ==
+* {{ill|Theatre of Japan|lt=Theatre of Japan|lt=Traditional performing arts of Japan|ja|伝統芸能|en|12=simple|13=User:Immanuelle/Theatre of Japan|ja_comment=jawiki redirects to 日本の伝統芸能|comment=changed title based on wikidata|qid=Q1364447}}
+
+== External Links ==
+* [http://www.city.nihonmatsu.lg.jp/soshiki/54/304.html Ishii no Shichifukujin to Taue Odori - Nihonmatsu City Official Site]
+* {{Cultural Properties of Japan Database|302|624|Ishii no Shichifukujin to Taue Odori}}
+{{japan-culture-stub}}
+
+{{translated page|ja|石井の七福神と田植踊|version=88915011|comment=Imported full ja history}}
+
+{{wikidata link|Q11584830|ja|石井の七福神と田植踊|check_date=2026-05-15}}
 [[Category:Important Intangible Folk Cultural Properties]]
 [[Category:Nihonmatsu, Fukushima]]
+[[Category:Pages with duplicated content]]
 [[Category:Pre-celebration Performing Arts]]
 [[Category:Wikidata no short description]]
+[[Category:Pages with duplicated content]]

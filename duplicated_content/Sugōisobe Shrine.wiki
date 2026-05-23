@@ -1,41 +1,66 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sug%C5%8Disobe_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
+{{Infobox religious building|image=File:Sugoisobe-jinja, Haiden from Afar - 2020.jpg|prefecture={{ill|Kaga, Ishikawa|qid=Q120103}}|coordinates={{Coord|36.313028|N|136.320806}}}}
+
 {{Short description|Shinto shrine in Japan}}
+
+----
+
+----
+
 {{infobox shinto shrine
 | religious_affiliation = [[Shinto]]
 | image                 = Sugoisobe-jinja, Haiden from Afar - 2020.jpg
 | caption               = Haiden
 |map_type=Japan| coordinates           = {{coordinates|36.3130|N|136.3208|E}}
 | deity                 = Sugōisobe no Kami. ([[Hoori]], {{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|qid=Q2329261|lt=Toyotama-hime}}, [[Ugayafukiaezu]])
+
 possibly [[Sukunabikona]]
 | website               = http://www.tenjin.or.tv/
 | links                 = 
 }}
 '''Sugōisobe-jinja''' (菅生石部神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} in {{ill|Kaga, Ishikawa|en|Kaga, Ishikawa|qid=Q120103|lt=Kaga}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}}.<ref name=":1" /> It was mentioned in the [[Engishiki Jinmyōchō]] of 927<ref name="nussbaum178">{{ill|Louis Frédéric|en|Louis Frédéric|qid=Q726040|lt=Nussbaum, Louis-Frédéric}}. (2005). [https://books.google.com/books?id=p2QnPijAEmEC&pg=PA178&dq= "''Engi-shiki''"] in ''Japan Encyclopedia'', p. 178.</ref> . [[File:Sugoisobe-jinja,_torii-1.jpg|right|thumb|250x250px|Torii]]During the feudal era, it was of the second-highest Rank in {{ill|Kaga Province|en|Kaga Province|qid=Q907469|lt=Kaga Province}}. Currently, the shrine is directly controlled by the [[Association of Shinto Shrines]]. 
+
 It is located a mile from {{ill|Daishōji Station|en|Daishōji Station|qid=Q3701465|lt=Daishōji Station}}.<ref>{{Cite book |url=https://books.google.com/books?id=BIw0AAAAIAAJ&q=Sugo+Ishibe |title=Musashino |date=1914 |language=en}}</ref>
+
 The shrine is renowned for hosting the Takewari Matsuri also known as the Bamboo Splitting festival. This traditional event, rich, in heritage occurs annually on February 10. Attracts attendees and onlookers from far and wide.<ref name=":1" />
-It is similarly named but not related to the shrine {{nihongo|{{ill|Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu)|ja|石部神社|12=simple|13=User:Immanuelle/Isobe Shrine (Komatsu)|qq=}}|石部神社}} located in {{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu, Ishikawa}}.
+
+It is similarly named but not related to the shrine {{nihongo|{{ill|Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu)|ja|石部神社|12=simple|13=User:Immanuelle/Isobe Shrine (Komatsu)}}|石部神社}} located in {{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu, Ishikawa}}.
+
 == Worshiped ''kami'' ==
 The deity worshipped at Sugōisobe-jinja shrine is Sugōisobe no Kami. This name represents three deities, namely [[Hoori]], {{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|qid=Q2329261|lt=Toyotama-hime}} no Mikoto, and [[Ugayafukiaezu]] no Mikoto.
+
 There are several theories about the true identity of the deity at Sugōisobe-jinja shrine. Some scholars suggest that the deity is actually [[Sukunabikona]], rather than Sugōisobe no Kami. 
+
 == History ==
 According to legend, Sugōisobe no Kami was brought to the area from the imperial court in 585 when a serious illness spread throughout the region. The shrine was recorded in the [[Engishiki Jinmyōchō]], a record of all shrines in Japan compiled in 927, as a shōsha<ref name="nussbaum178" />, and it held the second highest Rank ({{ill|Ninomiya|en|Ninomiya|qid=Q841389|lt=Ninomiya}}) in {{ill|Kaga Province|en|Kaga Province|qid=Q907469|lt=Kaga province}}. 
+
 The shrine was highly respected by the imperial court and the samurai class, and in 940, the deity was elevated to {{ill|Shinkai (divine rank)|en|Shinkai (divine rank)|qid=Q11591025|lt=shōshii no ge}}, a high {{ill|Shinkai (divine rank)|en|Shinkai (divine rank)|qid=Q11591025|lt=divine Rank}}. Higher Rank meant more lands were given to the shrine and it became wealthier and more powerful.<ref name=":0">{{Cite web |title=Basic Terms of Shinto: Shinkai |url=https://www2.kokugakuin.ac.jp/ijcc/wp/bts/bts_s.html |access-date=2023-11-11 |website=www2.kokugakuin.ac.jp}}</ref>
+
 The {{ill|The Tale of the Heike|en|The Tale of the Heike|qid=Q830740|lt=Heike monogatari}}, a Japanese epic of the 12th century, also mentioned that {{ill|Minamoto no Yoshinaka|en|Minamoto no Yoshinaka|qid=Q1139202|lt=Minamoto no Yoshinaka}} donated to the shrine.<ref>{{Cite book |last1=Yoshikawa |first1=Eiji |title=The Heike Story: A Modern Translation of the Classic Japanese Tale of Love and War |last2=Bhowmik |first2=Davinder |date=2011-04-10 |publisher=Tuttle Publishing |isbn=978-4-8053-1044-1 |edition=Reprint |language=English |translator-last=Uramatsu |translator-first=Fuki Wooyenaka}}</ref> 
+
 During the Middle Ages, the entire area was incorporated into the territory of [[Kitano Tenmangū]], and Sugōisobe-jinja came to be known as "Tenjin" due to the god worshipped there. A bull statue, {{ill|Shinshi|en|Shinshi|qid=Q10444973|lt=associated}} with {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Tenjin}}, still stands as a reminder of that time.
+
 In 1875 it had a unique Shinmon gate built for it in a semi-european style with three stories.<ref>{{Cite book |last=Bocking |first=Brian |url=https://books.google.com/books?id=MWGQAgAAQBAJ&dq=Sug%C5%8Disobe&pg=PT264 |title=A Popular Dictionary of Shinto |date=2005-09-30 |publisher=Routledge |isbn=978-1-135-79738-6 |language=en}}</ref>{{Rp|page=126}}
 == festivals ==
 Every year on February 10th, the Gongan Shinji festival, also known as "Takewari-matsuri," is held at Sugōisobe-jinja<ref name=":1">{{Cite web|date=2023-12-07|title=Gogan shinji {{!}} 國學院大學デジタルミュージアム|url=https://web.archive.org/web/20231207005240/https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9343|access-date=2024-04-08|website=web.archive.org}}</ref>.<ref>{{Cite web |title=The Peculiar festivals of Hokuriku {{!}} festival {{!}} Hokuriku Tales |url=https://monogatari.hokuriku-imageup.org/en/hotspring/festival/index.html |access-date=2023-12-07 |website=monogatari.hokuriku-imageup.org}}</ref> In 1987, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}} designated the festival as an Intangible Cultural Heritage.
 === Event Overview ===
 The festival kicks off with a service held within the shrine grounds. Subsequently the atmosphere transforms into a celebration of energy and excitement. Young parishioners called ujiko from areas such as Shikiji and Oka don traditional garb, for the festivity. They don underclothes, hakama trousers, white tabi socks and sandals to symbolize purity and solidarity.<ref name=":1" />
+
 === Ceremonial Activities ===
 After getting dressed in their attire participants head out onto the snow covered temple grounds known as keidai carrying bamboo poles measuring over two meters. Demonstrating strength and unity they vigorously strike the shrines structures with the bamboo sticks as a gesture to drive away energies and safeguard the communitys well being.<ref name=":1" />
+
 An hour after this bamboo ritual a spirited tug of war contest unfolds.<ref name=":1" />
+
 Participants engage in an activity involving a rope often compared to a massive snake to demonstrate their strength and resilience. The highlight of this event is tossing the "rope snake”, off the Shikiji Bridge into the Daishōji River symbolizing the release of negativity and the embrace of vibes.<ref name=":1" />
+
 === Cultural Importance ===
 Onlookers and devotees at the Sugōisobe Shrine eagerly gather pieces of bamboo used during the ceremony. These bamboo fragments hold significance as talismans believed to ward off evil and bring luck. Additionally participants receive chopsticks crafted from the bamboo, known as goganbashi further integrating the festivals importance into life.<ref name=":1" />
+
 A unique custom involves fishermen from the Shiotani area who retrieve the rope snake from the river. They believe that incorporating strands of this rope into their towropes will ensure a catch highlighting their belief in the festivals symbols protective and auspicious powers.<ref name=":1" />
+
 === Historical Roots ===
 The Takewari Matsuri has its origins in a prayer by Emperor Tenmu for favor. The term "gogan shinji" linked with this festival reflects its background, with "gan" signifying prayer or plea.<ref name=":1" />
+
 == The area ==
 <gallery>
 File:Sugoisobe-jinja,_honden-2.jpg|alt=main hall|main shrine
@@ -47,13 +72,38 @@ File:Sugoisobe-jinja,_shinmon-2.jpg|alt=神門（境内側）|Shrine gate (insid
 File:Sugoisobe-jinja,_keidaisha-1.jpg|alt=白山社|Hakusansha
 File:Sugoisobe-jinja,_keidaisha-2.jpg|alt=敷地稲荷社|Site Inari Shrine
 </gallery>
+
 == References ==
 {{reflist}}
+
 {{Beppyo Shrines}}
+\
+{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
+
 {{translated page|ja|菅生石部神社|version=101992107|comment=Imported full ja history}}
+
+{{Draft categories|
+
+}}
 {{everybodywiki link|Sugōisobe Shrine}}
+
+{{everybodywiki link|Sugōisobe Shrine|Sugōisobe Shrine}}
+
 {{Commons category|Sugoisobe-jinja}}
 
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Sugōisobe Shrine (Q11619342)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Enuma District, Ishikawa|en|Enuma District, Ishikawa|ja|江沼郡|ko|에누마군|zh|江沼郡|lt=Enuma district|qid=Q5380885}} || {{ill|Sugōisobe Shrine|lt=Sugō Isobe Shrine|ja|菅生石部神社|commons|Category:Sugoisobe-jinja|fr|Sugōisobe-jinja|simple|Sugōisobe Shrine|sv|Sugōisobe-jinja|qid=Q11619342}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}} || — || {{coord|36.312776|136.320895|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182307 DB]
+|}
+{{wikidata link|Q11619342|da|d:Q11619342|sv|Sugōisobe-jinja|simple|Sugōisobe Shrine|simple|Sugo Ishibe Shrine|simple|User:Sugōisobe Shrine|co|commons:Category:Sugoisobe-jinja|fr|Sugōisobe-jinja|ja|菅生石部神社|check_date=2026-05-10}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Beppyo shrines]]
 [[Category:Buildings and structures in Kaga, Ishikawa]]
 [[Category:History of Kaga, Ishikawa]]
@@ -61,6 +111,7 @@ File:Sugoisobe-jinja,_keidaisha-2.jpg|alt=敷地稲荷社|Site Inari Shrine
 [[Category:Kaga Province]]
 [[Category:Kokuhei Shōsha]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal Tangible Cultural Properties in Ishikawa Prefecture]]
 [[Category:Ni-no-Miya]]
 [[Category:Prefecturally designated intangible folk cultural property]]
@@ -70,4 +121,5 @@ File:Sugoisobe-jinja,_keidaisha-2.jpg|alt=敷地稲荷社|Site Inari Shrine
 [[Category:Junior Fifth Rank]]
 [[Category:Senior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with interwikis with duplicate languages]]

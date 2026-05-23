@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takihara-no-Miya for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | religious_affiliation = [[Shinto]]
 |image = File:Takihara-no-miya 01.JPG
@@ -24,95 +26,151 @@
 | location = {{ill|Taiki, Mie|qid=Q1203189}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
+
 '''Takihara-no-Miya''' (瀧原宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Taiki, Mie}}, [[:en:Watarai District, Mie|Watarai District, Mie]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}<ref>[[#Kōtai Jingū History|Kōtai Jingū History]] p.167 (original p.237)</ref>. It serves as a {{ill|Setsumatsusha|ja|別宮|lt=Betsugū|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/Betsugu (auxiliary shrine)|ja_comment=jawiki link invalid}} of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine)<ref name="hoiku91">[[#Hoiku-sha Color|Hoiku-sha, Ise Jingu]] p.91 "Betsugu: Takihara-no-Miya and Takihara Narabi-no-miya"</ref><ref name="sakai1969">[[#Sakai 1969|Ise Jingu, Sakai (Gakuseisha 1969)]] pp.213–215 "The Distant Palace of the Great deity"</ref>.
+
 The enshrined deity is {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}'s spirit, referred to as *Amaterasu-sume-ōmikami-no-mitama* (天照坐皇大御神御魂)<ref name="hoiku91"/><ref>[[#Hoiku-sha Color|Hoiku-sha, Ise Jingu]] p.123 "The Ten Betsugu of Kōtai Jingū"</ref>. It is sometimes written as "滝原宮"<ref name="sakai1969"/><ref>[[#Tankōsha Ise Jingu|Tankōsha, Ise Jingu]] p.63 "Takihara-no-Miya"</ref>.
+
 Adjacent to it stands its paired auxiliary shrine, '''Takihara Narabi-no-miya''' (瀧原竝宮), with both shrines positioned side by side.
+
 ==Overview==
 '''Takihara-no-Miya''' (瀧原宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Taiki, Mie}}, [[:en:Watarai District, Mie|Taki District]], Mie Prefecture.<ref>[[#Kōtai Jingū History|Kōtai Jingū History]] Frame 167 (Original page 237)</ref> It is a separate shrine of the {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine).<ref name="Hōiku91">[[#Hōiku Color|Hōiku, Ise Jingū]] p. 91: "Separate Shrine - Takihara-no-Miya and Takihara Namiyu"</ref><ref name="Sakurai1969">[[#Sakurai 1969 Gakusei|Ise Jingū, Sakurai (Gakuseisha 1969)]] pp. 213-215: "The Distant Shrine of the Great deity"</ref> The enshrined deity is {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}} as Amaterasu-ōmikami-no-mitama (天照坐皇大御神御魂).<ref name="Hōiku91"/><ref>[[#Hōiku Color|Hōiku, Ise Jingū]] p. 123: "Ten Separate Shrines of Kōtai Jingū"</ref> It is sometimes written as "滝原宮".<ref name="Sakurai1969"/><ref>[[#Tankōsha Jingū|Tankōsha, Ise Jingū]] p. 63: "Takihara-no-Miya"</ref>
+
 A paired shrine, '''Takihara Narabi-no-Miya''' (瀧原竝宮), stands alongside it.
+
 == Overview ==
 [[File:Takihara-no-Miya_04.JPG|thumb|200px|Torii at the entrance of the shrine path]]
 [[File:瀧原宮付近航空写真1975 001.jpg|thumb|200px|Aerial view of Takihara-no-Miya and surroundings. The shrine precinct is distinguishable from surrounding private forests by its large canopy radius due to giant trees. 1975 photograph {{ill|Geospatial Information Authority of Japan|en|Geospatial Information Authority of Japan|qid=Q2986578|lt=Geospatial Information Authority of Japan}}]]
-Takihara-no-Miya and Takihara Namiyu are located about 40 km upstream from the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miyagawa River (Mie Prefecture)}}'s estuary, near the {{ill|Ōuchiyama River|ja|大内山川|12=simple|13=User:Immanuelle/Ōuchiyama River|ja_comment=jawiki link invalid}} in {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Taiki, Mie}} (formerly {{ill|Q16278414|ja|大宮町|12=simple|13=User:Immanuelle/Ōmiya Town, Mie|comment=changed title based on wikidata|qid=Q16278414}}).<ref name="Sakurai1969"/> In addition to the two separate shrines,<ref name="Hōiku91"/><ref name="ChikumaExpansion66">[[#Chikuma Expansion|Ueda, Jingū's Expansion]] pp. 66-69: "The Founding of Takihara-no-Miya"</ref> the precinct also includes three associated shrines: {{ill|Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki)|ja|若宮神社 (大紀町)|12=simple|13=User:Immanuelle/Wakamiya Shrine (Taiki)|qq=}}, {{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine|qq=}}, and {{ill|Nagayuke Shrine#Kawashima Shrine|ja|川島神社|12=simple|13=User:Immanuelle/Nagayuke Shrine#Kawashima Shrine|qq=}}.<ref name="DaijitenHeibon1940Wakamiya"/><ref name="DaijitenHeibon1940Nagayuke"/>
+
+Takihara-no-Miya and Takihara Namiyu are located about 40 km upstream from the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miyagawa River (Mie Prefecture)}}'s estuary, near the {{ill|Ōuchiyama River|ja|大内山川|12=simple|13=User:Immanuelle/Ōuchiyama River|ja_comment=jawiki link invalid}} in {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Taiki, Mie}} (formerly {{ill|Q16278414|ja|大宮町|12=simple|13=User:Immanuelle/Ōmiya Town, Mie|comment=changed title based on wikidata|qid=Q16278414}}).<ref name="Sakurai1969"/> In addition to the two separate shrines,<ref name="Hōiku91"/><ref name="ChikumaExpansion66">[[#Chikuma Expansion|Ueda, Jingū's Expansion]] pp. 66-69: "The Founding of Takihara-no-Miya"</ref> the precinct also includes three associated shrines: {{ill|Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki)|ja|若宮神社 (大紀町)|12=simple|13=User:Immanuelle/Wakamiya Shrine (Taiki)}}, {{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine}}, and {{ill|Nagayuke Shrine#Kawashima Shrine|ja|川島神社|12=simple|13=User:Immanuelle/Nagayuke Shrine#Kawashima Shrine}}.<ref name="DaijitenHeibon1940Wakamiya"/><ref name="DaijitenHeibon1940Nagayuke"/>
+
 The precinct spans approximately 44 hectares.<ref name="Sakurai1969"/><ref name="Kōtai Jingū History169">[[#Kōtai Jingū History|Kōtai Jingū History]] Frame 169 (Original pages 240-241)</ref> Facing southward with a mountain behind and a river flowing east to west in front, the layout is said to have influenced the design of the Inner Shrine.<ref name="Sakurai1969"/> Within this relationship, Takihara-no-Miya enshrines Amaterasu-ōmikami’s {{ill|Mitama|en|Mitama|qid=Q495568|lt=Nigimitama}} (peaceful spirit), while Takihara Namiyu enshrines the {{ill|Mitama|en|Mitama|qid=Q495568|lt=Aramitama}} (wild spirit).<ref name="Heibon1939Takihara">[[#Heibon Dictionary 1939 Vol. 2|Shinto Dictionary (Heibon 1939) Vol. 2]] Frame 249 (Original page 429)</ref>
-At {{ill|Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki)|ja|若宮神社 (大紀町)|12=simple|13=User:Immanuelle/Wakamiya Shrine (Taiki)|qq=}}, an associated shrine, a sacred boat called "''Ofunashiro''" is kept in the adjoining "''Ofunagura''" (御船倉). Takihara-no-Miya is the only separate shrine with such a facility.<ref name="ChikumaExpansion66"/>
+
+At {{ill|Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki, Mie)|lt=Wakamiya Shrine (Taiki)|ja|若宮神社 (大紀町)|12=simple|13=User:Immanuelle/Wakamiya Shrine (Taiki)}}, an associated shrine, a sacred boat called "''Ofunashiro''" is kept in the adjoining "''Ofunagura''" (御船倉). Takihara-no-Miya is the only separate shrine with such a facility.<ref name="ChikumaExpansion66"/>
+
 == History ==
-The exact origin of {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya|qq=}} is unknown. According to tradition, it is the site where {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} enshrined {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}} before the establishment of the Inner Shrine (Naikū) <ref>[[#Hoikusha Color|Hoikusha, Ise Jingū]] p.93 "Takihara-no-Miya Approach"</ref>. The {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamato-hime-no-mikoto seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki|qq=}} recounts that Princess Yamato-hime, daughter of the 11th Emperor {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}}, traveled upstream from Isomiya near the mouth of the Miyagawa River seeking a site to enshrine {{ill|Amaterasu|ja|天照坐皇大御神|12=simple|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}. She discovered a beautiful area in the basin of the Ouchiyama River, a tributary of Miyagawa, known as "The Land of the Great River Takihara," where she cleared the vegetation and built a new shrine <ref name="Kotaijingu History 169 Takihara-no-Miya"/><ref name="#1">[[#Ise Almanac 1942|Ise Almanac (1942)]] Frame 22 (p.14)</ref>. However, following the divine will of Amaterasu, she later established a new shrine at the current location in Ujiyamada Town, Ise City (now Naikū). Thus, Takihara-no-Miya became a betsu-gū (detached shrine) dedicated to the "Mitama" (spirit) of Amaterasu <ref name="Kotaijingu History 169 Takihara-no-Miya"/><ref name="Chikuma Expansion 66 Takihara-no-Miya"/>. This is the official view of the shrine.
-Places where Amaterasu was previously enshrined are called {{ill|Moto-Ise Shrines|ja|元伊勢|12=simple|13=User:Immanuelle/Moto-Ise|13=User:Immanuelle/Moto-Ise Shrines|qq=}}, but Takihara-no-Miya is the only one elevated to the status of betsu-gū. The reasons for this status are unclear, though some theories suggest it was due to the political importance of the region during the southern expansion of the Yamato court.
+
+The exact origin of {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya}} is unknown. According to tradition, it is the site where {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} enshrined {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}} before the establishment of the Inner Shrine (Naikū) <ref>[[#Hoikusha Color|Hoikusha, Ise Jingū]] p.93 "Takihara-no-Miya Approach"</ref>. The {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamato-hime-no-mikoto seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki}} recounts that Princess Yamato-hime, daughter of the 11th Emperor {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}}, traveled upstream from Isomiya near the mouth of the Miyagawa River seeking a site to enshrine {{ill|Amaterasu|ja|天照坐皇大御神|12=simple|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}. She discovered a beautiful area in the basin of the Ouchiyama River, a tributary of Miyagawa, known as "The Land of the Great River Takihara," where she cleared the vegetation and built a new shrine <ref name="Kotaijingu History 169 Takihara-no-Miya"/><ref name="#1">[[#Ise Almanac 1942|Ise Almanac (1942)]] Frame 22 (p.14)</ref>. However, following the divine will of Amaterasu, she later established a new shrine at the current location in Ujiyamada Town, Ise City (now Naikū). Thus, Takihara-no-Miya became a betsu-gū (detached shrine) dedicated to the "Mitama" (spirit) of Amaterasu <ref name="Kotaijingu History 169 Takihara-no-Miya"/><ref name="Chikuma Expansion 66 Takihara-no-Miya"/>. This is the official view of the shrine.
+
+Places where Amaterasu was previously enshrined are called {{ill|Moto-Ise Shrines|ja|元伊勢|12=simple|13=User:Immanuelle/Moto-Ise|13=User:Immanuelle/Moto-Ise Shrines}}, but Takihara-no-Miya is the only one elevated to the status of betsu-gū. The reasons for this status are unclear, though some theories suggest it was due to the political importance of the region during the southern expansion of the Yamato court.
+
 Documents such as the "Kotaijingu Ritual Book" (804 CE) and "Engi Daijingu Rituals" (927 CE) refer to Takihara-no-Miya as "Tōnomiya" (Distant Shrine), suggesting its existence predates these texts <ref name="Chikuma Expansion 66 Takihara-no-Miya"/>. In the "Kotaijingu Ritual Book," it is listed as one institution, but by the "Engi Daijingu Rituals," Takihara-Nami-no-miya had become independent, indicating that the latter separated from Takihara-no-Miya between 804 and 927 CE.
+
 A theory suggests that it became a betsu-gū as early as 651 CE, based on an entry in the "Daijingu Miscellaneous Records" stating that Takihara-no-Miya’s priest conducted rituals remotely due to flooding during the {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} of that year. However, due to a lack of corroborating sources, this remains uncertain.
+
 Some scholars speculate that the "Taki Daijingu" mentioned in the "Shoku Nihongi" (698 CE) refers to Takihara-no-Miya, while others believe it refers to the {{ill|Saikū|en|Saikū|qid=Q150845|lt=Saiku}} in Taki District, Mie Prefecture.
+
 Following the transfer of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} to its current location in Ise, the shrine was renamed Takihara-no-Miya. To avoid desecrating the divine name by using it as a place name, the nearby area previously known as "Chōjano" was renamed "Nojiri" and later "Nogo." In 1890, four villages merged to form "Takihara Village," which became "Takihara Town" in 1935. In 1956, Takihara Town merged with Nanao Village to create "Ōmiya Town." However, due to local residents' wishes, the area was renamed "Takihara" again.
+
 In 1931, a new purification pavilion (temizuya) was built.
+
 Toward the end of World War II, on June 26, 1945, Takihara-no-Miya was bombed by eight {{ill|Boeing B-29 Superfortress|en|Boeing B-29 Superfortress|qid=Q184870|lt=B-29 Superfortress}} bombers from the U.S. military, damaging part of the Saikan (priest's quarters) and the shrine’s largest cedar tree, "Tarōsugi," along with "Jirōsugi" <ref>[[#Yano, Mori|Yano, Ise Jingū]] pp.182-183 "Under Air Raid Alerts"</ref>. Tarōsugi later died and was cut down in 1954. Its cross-section, estimated to be 293 years old, is displayed at the Jingū Museum of Agriculture. As of 2006, it is exhibited alongside cross-sections of 400-year-old cypress from Kiso and 80-year-old cypress from Jingū forests, intended for future shrine reconstructions.
+
 In 1959, the {{ill|Typhoon Vera|en|Typhoon Vera|qid=Q1060156|lt=Isewan Typhoon}} devastated many sacred cedar trees ("Jingū sugi") at the Naikū and Gekū, but Takihara-no-Miya suffered relatively little damage, leaving its large cedars more prominent.
-Adjacent to the shrine are the "old shrine grounds" and "new sacred sites" for the {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|qq=}}, where the shrine buildings are rebuilt every 20 years, following the tradition of Ise Jingū. During the Muromachi period, the shrine’s reconstruction was suspended due to shifts in land ownership under the {{ill|Kitabatake clan|en|Kitabatake clan|qid=Q11403853|lt=Kitabatake clan}} and resumed after Toyotomi Hideyoshi's land surveys. Revenue from shrine rice fields supported maintenance until the Meiji era, after which government funds provided support. Post-World War II, the shrine has been managed by the religious corporation Ise Jingū.
+
+Adjacent to the shrine are the "old shrine grounds" and "new sacred sites" for the {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū}}, where the shrine buildings are rebuilt every 20 years, following the tradition of Ise Jingū. During the Muromachi period, the shrine’s reconstruction was suspended due to shifts in land ownership under the {{ill|Kitabatake clan|en|Kitabatake clan|qid=Q11403853|lt=Kitabatake clan}} and resumed after Toyotomi Hideyoshi's land surveys. Revenue from shrine rice fields supported maintenance until the Meiji era, after which government funds provided support. Post-World War II, the shrine has been managed by the religious corporation Ise Jingū.
+
 The "Okihiki Event" for transporting sacred timber, held once every 20 years for the Shikinen Sengū, took place on April 16, 2006, for the 62nd iteration. Today, like other outer shrines, Takihara-no-Miya has a staffed Shukueiya where visitors can receive amulets and talismans, and make arrangements for sacred dances and offerings.
+
 <gallery>
 image:Takihara-no-Miya_08.JPG|Mitarashi (Purification Basin)
 image:Takihara-no-Miya 15.JPG|Right: Wakamiya Shrine, Left: Mifunagura (sacred boat storage)
 image:Takihara-no-Miya_05.JPG|Approach to Takihara-no-Miya
 image:Takihara-no-Miya 13.JPG|Main shrine buildings of Takihara-no-Miya
 </gallery>
+
 == Deities ==
+
 === Betsugu (Auxiliary Shrines) ===
-In the *Engishiki*, both auxiliary shrines are referred to as "The Distant Palace of the Great deity" (大神の遙宮), and the names of the enshrined deities are not specified.<ref name="桜井1969学生社213"/> At the Jingū, the enshrined deity is considered to be the spirit (御魂, *mitama*) of {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu-Omikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}.<ref name="桜井1969学生社213"/><ref name="平凡1939瀧原宮">[[Takihara-no-Miya#平凡辞典1939二巻|神道大辞典(平凡1939)二巻]]コマ249(原本429頁)</ref> Furthermore, {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya|qq=}} is said to enshrine the *nigimitama* (和御魂), the harmonious spirit of Amaterasu, while {{ill|Takihara-no-Miya|ja|瀧原竝宮|12=simple|13=User:Immanuelle/Takiharanami-no-Miya|ja_comment=jawiki redirects to 瀧原宮|comment=changed title based on wikidata|qid=Q11566292}} enshrines the *aramitama* (荒御魂), the rough spirit.<ref name="平凡1939瀧原宮"/><ref name="筑摩展開66滝原宮">[[Takihara-no-Miya#筑摩展開|上田、神宮の展開]]66-69頁『滝原宮の創祀』</ref>
+In the *Engishiki*, both auxiliary shrines are referred to as "The Distant Palace of the Great deity" (大神の遙宮), and the names of the enshrined deities are not specified.<ref name="桜井1969学生社213"/> At the Jingū, the enshrined deity is considered to be the spirit (御魂, *mitama*) of {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu-Omikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}.<ref name="桜井1969学生社213"/><ref name="平凡1939瀧原宮">[[Takihara-no-Miya#平凡辞典1939二巻|神道大辞典(平凡1939)二巻]]コマ249(原本429頁)</ref> Furthermore, {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya}} is said to enshrine the *nigimitama* (和御魂), the harmonious spirit of Amaterasu, while {{ill|Takihara-no-Miya|ja|瀧原竝宮|12=simple|13=User:Immanuelle/Takiharanami-no-Miya|ja_comment=jawiki redirects to 瀧原宮|comment=changed title based on wikidata|qid=Q11566292}} enshrines the *aramitama* (荒御魂), the rough spirit.<ref name="平凡1939瀧原宮"/><ref name="筑摩展開66滝原宮">[[Takihara-no-Miya#筑摩展開|上田、神宮の展開]]66-69頁『滝原宮の創祀』</ref>
+
 According to the *Yamato-hime no Mikoto-ki* (倭姫命記), Takihara-no-Miya enshrines the deity known as '''Minato-no-Kami''' (水戸神), also called {{ill|Hayakitsuhiko and Hayakitsuhime|ja|速秋津日子神|12=simple|13=User:Immanuelle/Hayakitsuhiko|ja_comment=jawiki redirects to ハヤアキツヒコ・ハヤアキツヒメ|comment=changed title based on wikidata|qid=Q11326733}}.<ref name="国史7巻263瀧原宮"/><ref name="#2"/> Takiharanami-no-Miya enshrines his consort, '''{{ill|Hayakitsuhime|ja|速秋津比賣神|12=simple|13=User:Immanuelle/Hayakitsuhime|ja_comment=jawiki link invalid}}'''.<ref name="国史7巻263瀧原宮"/><ref name="#2"/>
+
 === Associated Shrines ===
 Within the precincts are:
-* '''{{ill|Wakamiya Shrine|ja|若宮神社|12=simple|13=User:Immanuelle/Wakamiya Shrine|qq=}}''' (わかみやじんじゃ)<ref name="大辞典平凡1940若宮神社"/>,
-* '''{{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine|qq=}}''' (ながゆけじんじゃ)<ref name="大辞典平凡1940長由介"/>,
+
+* '''{{ill|Wakamiya Shrine|ja|若宮神社|12=simple|13=User:Immanuelle/Wakamiya Shrine}}''' (わかみやじんじゃ)<ref name="大辞典平凡1940若宮神社"/>,
+* '''{{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine}}''' (ながゆけじんじゃ)<ref name="大辞典平凡1940長由介"/>,
 * '''{{ill|Kawashima Shrine|ja|川島神社|12=simple|13=User:Immanuelle/Kawashima Shrine|comment=changed title based on wikidata|qid=Q16766691}}''' (かわしまじんじゃ), enshrined together with Nagayuke Shrine.<ref name="大辞典平凡1937川島"/>
+
 Both Wakamiya Shrine and Nagayuke Shrine have unclear origins and unknown enshrined deities. They appear in the *Annual Rituals of the Imperial Grand Shrine* (皇大神宮年中行事) from 1192, with later additions by {{ill|Fujinami Ujitsune|ja|藤波氏経|12=simple|13=User:Immanuelle/Fujinami Ujitsune|ja_comment=jawiki link invalid}} around 1464. The first clear record dates to 1228 during the Kamakura period.
+
 * '''Wakamiya Shrine''' (若宮神社)  
   Also known as *Ame-no-Wakamiya* (天若宮).<ref name="大辞典平凡1940若宮神社"/> The enshrined deity is believed to be {{ill|Mikumari|ja|天水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Ame-no-Mikumari-no-Kami|ja_comment=jawiki redirects to 水分神}}, a child of Hayakitsuhiko and Hayakitsuhime, though details remain unclear.<ref name="大辞典平凡1940若宮神社"/>
+
 * '''Nagayuke Shrine''' (長由介神社)  
   The origin is unknown.<ref name="大辞典平凡1940長由介"/> The deity, Nagayuke-no-Kami, is considered a food deity (*御饌の神*), possibly an aspect or divided spirit of {{ill|Toyouke-hime|ja|豊受大神|lt=Toyouke Ōmikami|12=simple|13=User:Immanuelle/Toyouke-Omikami|13=User:Immanuelle/Toyouke-hime|ja_comment=jawiki redirects to トヨウケビメ|comment=changed title based on wikidata|qid=Q2983724}}.<ref name="大辞典平凡1940長由介"/>
+
 * '''Kawashima Shrine''' (川島神社)  
   Co-located with Nagayuke Shrine. The origin is unclear,<ref name="大辞典平凡1937川島"/> and the enshrined deity is identified as Kawashima-no-Kami, though specifics are unknown. While the name appears in maps from around 1218 (*Takihara-no-Miya Precinct Map*), no shrine structure was depicted. Since 1874, it has been enshrined with Nagayuke Shrine.<ref name="大辞典平凡1937川島"/>
-* '''{{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine|qq=}}''' (たきはらじんじゃ)  
+
+* '''{{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine}}''' (たきはらじんじゃ)  
   Located about 6 km downstream, this shrine enshrines '''Manago-no-Kami''' (真奈胡神), said to have greeted Princess Yamato-hime before she arrived at Takihara.<ref name="平凡1939瀧原宮"/> Despite proximity, it is classified as an auxiliary shrine of the Inner Shrine (内宮摂社).<ref>[[伊勢文化舎]]編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、2008th year 、84頁。ISBN 978-4-900759-37-4</ref>
+
 == Festivals ==
+
 Rituals following the customs of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} are conducted, with offerings (heihaku) presented by the Imperial Household during the Kinensai, Tsukinamisai, Kannamesai, and Niinamesai.
+
 * January
 ''' '''Saitan-sai''' (January 1): A festival to celebrate the New Year and pray for the eternal prosperity of the imperial lineage.
 ''' '''Genshi-sai''' (January 3): A festival to honor the origins of the imperial lineage at the start of the year.
+
 * February
 ''' '''Kenkoku Kinen-sai''' (February 11): A festival commemorating the founding of Japan by {{ill|Emperor Jimmu|ja|神武大王|12=simple|13=User:Immanuelle/Emperor Jimmu|ja_comment=jawiki link invalid}}. Renamed from the abolished Kigensetsu in 1948 and revived in 1967.
 ''' '''Tenchō-sai''' (February 23): A festival to celebrate the birthday of {{ill|Emperor Naruhito|ja|徳仁大王|12=simple|13=User:Immanuelle/Emperor Naruhito|ja_comment=jawiki link invalid}}.
 ''' '''Kinensai''' (February 20): A festival praying for abundant crops and national stability at the beginning of the year.
+
 * May
 ''' '''Kazahinomi-sai''' (May 14): Rituals are conducted at {{ill|Toyōke Daijingū|ja|外宮|12=simple|13=User:Immanuelle/Gekū|ja_comment=jawiki redirects to 豊受大神宮|comment=changed title based on wikidata|qid=Q11633343}}, {{ill|Naikū|ja|内宮|12=simple|13=User:Immanuelle/Naikū|comment=changed title based on wikidata|qid=Q23996212}}, and other associated shrines, offering heihaku to pray for favorable weather and a bountiful harvest.
+
 * June
 ''' '''Tsukinami-sai''' (June 22-23): A festival held in June and December to pray for the nation's peace and the Emperor's longevity. Along with Kannamesai, it is considered one of the three major festivals at Ise Grand Shrine.
+
 * August
 ''' '''Kazahinomi-sai''' (August 4)
+
 * October
 ''' '''{{ill|Kannamesai Festival|lt=Kannamesai Festival|lt=Kannamesai|ja|神饌祭|12=simple|13=User:Immanuelle/Kannamesai|ja_comment=jawiki link invalid}}''' (October 22-23): A festival where freshly harvested crops are offered as "Ō-mike" to {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}.
+
 * November
 ''' '''{{ill|Niiname-no-Matsuri|lt=Niiname-no-Matsuri|lt=Niinamesai|ja|新饌祭|12=simple|13=User:Immanuelle/Niinamesai|ja_comment=jawiki link invalid}}''' (November 26): A harvest festival where the Emperor offers the year's first fruits to the gods and partakes of them in gratitude.
+
 * December
 ''' '''Tsukinami-sai''' (December 22-23)
+
 == Shrine Buildings ==
+
 The shrine buildings of {{ill|Takihara-no-Miya|ja|瀬原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya|ja_comment=jawiki link invalid}} and {{ill|Takihara-Nami-no-miya|ja|瀬原並宮|12=simple|13=User:Immanuelle/Takihara-Nami-no-miya|ja_comment=jawiki link invalid}} stand side by side (Takihara-no-Miya to the east, Takihara-Nami-no-miya to the west) and are of equal size.
+
 === Betsugū (Separate Shrines) ===
+
 The main halls (honden) of both shrines follow the architectural style of Naikū, featuring '''Shinmei-zukuri''' style with thatched roofs, inward-facing chigi, and six katsuogi (decorative logs) arranged in even numbers. Surrounding the honden are sacred fences (mizugaki) and outer fences (tamagaki), each with its own gate.
+
 === Associated Shrines ===
+
 * '''Wakamiya Shrine''': Built in the Shinmei-zukuri style with a plank roof, featuring inward-facing chigi and six katsuogi. Surrounded by a sacred fence with a gate.
-* '''{{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine|qq=}}''': Also in the Shinmei-zukuri style with a plank roof, inward-facing chigi, and six katsuogi. The orientation was changed from south-facing to west-facing in 1874.
+* '''{{ill|Nagayuke Shrine|ja|長由介神社|12=simple|13=User:Immanuelle/Nagayuke Shrine}}''': Also in the Shinmei-zukuri style with a plank roof, inward-facing chigi, and six katsuogi. The orientation was changed from south-facing to west-facing in 1874.
 * '''Kawashima Shrine''': Does not have its own building and is enshrined together with Nagayuke Shrine.
+
 == Access ==
+
 * Nearest Station: JR {{ill|Kisei Main Line|ja|紀助本線|12=simple|13=User:Immanuelle/Kisei Main Line|ja_comment=jawiki link invalid}} {{ill|Takihara Station|ja|瀬原駅|12=simple|13=User:Immanuelle/Takihara Station|ja_comment=jawiki link invalid}}, approximately 1.5 km (15-minute walk).
 * Nearest Bus Stop: {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kōtsū}}'s {{ill|Matsusaka-Kumano line|ja|松阪熊野線|12=simple|13=User:Immanuelle/Matsusaka-Kumano Line|comment=changed title based on wikidata|qid=Q11408350}} or {{ill|Nagoya-Nanki Highway Bus|ja|名古屋南納高速バス|12=simple|13=User:Immanuelle/Nagoya-Nanki Highway Bus|ja_comment=jawiki link invalid}} at the Takihara-no-Miya bus stop.
 * National Route: Along {{ill|Japan National Route 42|en|Japan National Route 42|qid=Q2003243|lt=Japan National Route 42}}.
 * Nearest Interchange: {{ill|Kisei Expressway|ja|紀助自動車道|12=simple|13=User:Immanuelle/Kisei Expressway|ja_comment=jawiki link invalid}} {{ill|Omiya-Odai interchange|ja|大宮大台インターチェンジ|12=simple|13=User:Immanuelle/Ōmiya-Ōdai IC|comment=changed title based on wikidata|qid=Q10934923}} about 3 km from the shrine.
 * Parking: Large parking available at the adjacent {{ill|Roadside station Oku-ise Kitsutsukikan|ja|道の駅奥伊勢木つつ木館|12=simple|13=User:Immanuelle/Michi-no-Eki Oku-Ise Mitsu-Tsuki-kan|comment=changed title based on wikidata|qid=Q11641242}} and additional parking near the large torii next to the roadside station.
+
 == In Popular Culture ==
+
 * Manga:
 ''' '''{{ill|Hoshino Yukinobu|ja|星野之客|12=simple|13=User:Immanuelle/Hoshino Yukinobu|ja_comment=jawiki link invalid}}'s {{ill|Yamataika|ja|ヤマタイカ|12=simple|13=User:Immanuelle/Yamataika|comment=changed title based on wikidata|qid=Q11345146}}''': The manga depicts a conflict between descendants of Jomon people who worship volcanoes and Yayoi people who fear them during the late 1980s. In this work, Takihara-no-Miya is described as a separate shrine with the third-highest status in Ise Jingu, modeled after Takihara-no-Miya around 698 CE, and is considered a spiritual barrier along with {{ill|Izawa-no-miya|ja|伊雀宮|12=simple|13=User:Immanuelle/Izawa-no-miya|ja_comment=jawiki link invalid}}.
+
 == References ==
+
 {{Reflist}}
+
 == Bibliography ==
+
 * 『お伊勢まいり』（発行：伊勢神宮崇敬会）
 *{{Cite book|和書|author=上田正昭ほか|authorlink=上田正昭|editor=|year=1988|month=11|chapter=別宮の祭祀|title={{small|神宮の展開}}　伊勢の大神|publisher=筑摩書房|series=|isbn=4-480-85469-X|ref=筑摩展開}}
 * 大宮町史（編集：大宮町史編纂委員会、発行：大宮町、昭和62nd year 3月31日）
@@ -140,18 +198,29 @@ The main halls (honden) of both shrines follow the architectural style of Naikū
 == See Also ==
 * [[荒魂・和魂]]
 * [[伊勢神宮]]
-* {{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
 * [[元伊勢]]
 * [[大紀町]]
 * [[渡利かき]]
+
 == External Links ==
 {{commonscat|Takihara-no-Miya}}
 * [http://www.isejingu.or.jp/naigu/naigu2.htm 伊勢の神宮]
 * [http://kitsutsuki.tk/ 木つつ木館（道の駅）]
 * [http://story.kankomie.or.jp/story/ni/index.php 日本のこころ 瀧原宮] － Storyで紡ぐたび ～もののあはれ中南勢ものがたり～
+
 {{神道 横}}
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|瀧原宮|version=98186995|comment=Imported full ja history}}
+
+{{Commons category|Takihara-no-miya}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Takihara-no-Miya (Q11566292)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -159,21 +228,23 @@ The main halls (honden) of both shrines follow the architectural style of Naikū
 |-
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Takihara-no-Miya|lt=Takihara-no-miya|ja|瀧原宮|commons|Category:Takihara-no-miya|qid=Q11566292}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || {{ill|Shikinai Taisha|qid=Q134917288}} || part of {{ill|Kōtai Jingū|qid=Q11581011}} || — || {{coord|34.366046|136.425911|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181110 DB]
 |}
-
-{{translated page|ja|瀧原宮|version=98186995|comment=Imported full ja history}}
-{{Commons category|Takihara-no-miya}}
-
+{{wikidata link|Q11566292|da|d:Q11566292|ja|瀧原宮|co|commons:Category:Takihara-no-miya|check_date=2026-05-11}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Oki Town]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Moto-Ise shrines]]
 [[Category:Municipal History of Taki]]
 [[Category:Shikinai Taisha]]
 [[Category:Shikinaisha in Ise Province]]
+[[Category:Shikinaisha in Ise Province|大たきはらのみや]]
 [[Category:Shinto_shrines_in_Mie_Prefecture]]
 [[Category:Taiki,_Mie]]
 [[Category:Wikidata has short description]]
+[[Category:Shikinai Taisha]]
 [[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
+[[Category:Kanpei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

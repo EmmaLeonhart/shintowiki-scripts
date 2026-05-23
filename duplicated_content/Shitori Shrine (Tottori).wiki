@@ -1,48 +1,57 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shitori_Shrine_%28Tottori%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
 {{Short description|Shinto shrine in Tottori Prefecture, Japan}}
 {{Use dmy dates|date=November 2019}}
-{{Infobox religious building
+{{Infobox religious building| religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
 | name                  = Shitori Jinja <br>倭文神社
 | religious_affiliation = [[Shinto]]
 |image                 = Shitori-jinja, haiden.jpg
 | caption               = Haiden of Shitori Jinja Shrine
 {{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
 | map_type              = Japan Tottori Prefecture#Japan
-| map_alt               =
+| map_alt               = 
 | coordinates           = {{coord|35|29|25.34|N|133|54|10.68|E|region:JP-35_type:landmark}}
 | map_relief            = 1
-| map_size              =
-| map_caption           =
-| type                  =
-| deity                 = {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|qq=}}
+| map_size              = 
+| map_caption           = 
+| religious_affiliation = {{ill|Shinto|8=en}}|type                  = 
+| deity                 = {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|qq=draft|qq=draft}}
 | founded_by            = 
 | established           = unknown
 | date_destroyed        = 
 | location              = 754 Miyauchi, Yurihama-cho, Tohaku-gun, Tottori-ken
 | website               = {{Official|1=https://www.sitorijinja.com}}
-| architecture_style    = ''{{ill|Nagare-zukuri|8=en|12=simple|13=User:Immanuelle/Nagare-zukuri|qq=}}''|festival              = 1 May
+| architecture_style    = ''{{ill|Nagare-zukuri|8=en}}''|festival              = 1 May
 | leadership            = 
-| footnotes             = {{box|background=white|align=center|wide=yes|border size=3px|border color=brown|text align=center|{{ill|Monuments of Japan|lt=National Historic Site of Japan|8=en|12=simple|13=User:Immanuelle/Monuments of Japan|qq=}}}}
+| footnotes             = {{box|background=white|align=center|wide=yes|border size=3px|border color=brown|text align=center|{{ill|Monuments of Japan|lt=National Historic Site of Japan|8=en|qq=draft|qq=draft}}}}
 }}
-{{nihongo|'''Shitori Shrine'''|倭文神社}} is a {{ill|Shinto shrine|8=en|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} in the Miyauchi neighborhood of the town of {{ill|Yurihama, Tottori|lt=Yurihama|8=en|12=simple|13=User:Immanuelle/Yurihama, Tottori|qq=}} in {{ill|Tottori Prefecture|8=en|12=simple|13=User:Immanuelle/Tottori Prefecture|qq=}}, {{ill|Japan|8=en|12=simple|13=User:Immanuelle/Japan|qq=}}, on the east bank of {{ill|Lake Tōgō|8=en|12=simple|13=User:Immanuelle/Lake Tōgō|qq=}}. It is the ''{{ill|ichinomiya|8=en|12=simple|13=User:Immanuelle/ichinomiya|qq=}}'' of former {{ill|Hōki Province|8=en|12=simple|13=User:Immanuelle/Hōki Province|qq=}}. The main festival of the shrine is held annually on 1 May.<ref>{{cite book|last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese|qq=draft}}</ref> 
+
+{{nihongo|'''Shitori Shrine'''|倭文神社}} is a {{ill|Shinto shrine|8=en}} in the Miyauchi neighborhood of the town of {{ill|Yurihama, Tottori|lt=Yurihama|8=en|qq=draft|qq=draft}} in {{ill|Tottori Prefecture|8=en}}, {{ill|Japan|8=en|qq=draft|qq=draft}}, on the east bank of {{ill|Lake Tōgō|8=en}}. It is the ''{{ill|ichinomiya|8=en|qq=draft|qq=draft}}'' of former {{ill|Hōki Province|8=en}}. The main festival of the shrine is held annually on 1 May.<ref>{{cite book|last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese|qq=draft|qq=draft}}</ref> 
+
 ==Enshrined ''kami''==
-The ''{{ill|kami|8=en|12=simple|13=User:Immanuelle/kami|qq=}}'' enshrined at Shitori Shrine are:<ref>{{cite web|title=一ノ宮倭文神社について |url=https://www.sitorijinja.com/about |website=Shitori Jinja official home page |publisher=Shitori Jinja |access-date=17 January 2023|qq=draft}}</ref>
-* {{nihongo|{{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|simple|User:Immanuelle/Takehazuchi|fr|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|qq=}}|建葉槌命|}}
-* {{nihongo|{{ill|Shitateruhime|ja|下照比売|lt=Shitateruhime-no-Mikoto|simple|User:Immanuelle/Shitateruhime|fr|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}|下照姫命|}}
-* {{nihongo|{{ill|Takeminakata|8=en|12=simple|13=User:Immanuelle/Takeminakata|qq=}}|建御名方命||qq=draft}}
-* {{nihongo|{{ill|Ame no Wakahiko|en|Ame no Wakahiko|qid=Q10940674|lt=Ame no Wakahiko}}|天稚彦命||qq=draft}}
-* {{nihongo|{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|8=en|12=simple|13=User:Immanuelle/Kotoshironushi|qq=}}|事代主命||qq=draft}}
-* {{nihongo|{{ill|Sukunabikona|8=en|12=simple|13=User:Immanuelle/Sukunabikona|qq=}}|少彦名命||qq=draft}}
-* {{nihongo|{{ill|Ajisukitakahikone|8=en|12=simple|13=User:Immanuelle/Ajisukitakahikone|qq=}}|味耜高彦根命||qq=draft}}
+The ''{{ill|kami|8=en}}'' enshrined at Shitori Shrine are:<ref>{{cite web|title=一ノ宮倭文神社について |url=https://www.sitorijinja.com/about |website=Shitori Jinja official home page |publisher=Shitori Jinja |access-date=17 January 2023|qq=draft|qq=draft}}</ref>
+* {{nihongo|{{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|simple|User:Immanuelle/Takehazuchi|fr|qq=draft|qq=draft}}|建葉槌命|}}
+* {{nihongo|{{ill|Shitateruhime|ja|下照比売|lt=Shitateruhime-no-Mikoto|simple|User:Immanuelle/Shitateruhime|fr|qq=draft|qq=draft}}|下照姫命|}}
+* {{nihongo|{{ill|Takeminakata|8=en}}|建御名方命||qq=draft|qq=draft}}
+* {{nihongo|{{ill|Ame no Wakahiko|2=zh|3=天稚彥|4=ja|5=アメノワカヒコ|6=az|7=Ame-no-Vakahiko|8=en|qq=draft}}|天稚彦命||qq=draft}}
+* {{nihongo|{{ill|Kotoshironushi|8=en}}|事代主命||qq=draft|qq=draft}}
+* {{nihongo|{{ill|Sukunabikona|8=en}}|少彦名命||qq=draft|qq=draft}}
+* {{nihongo|{{ill|Ajisukitakahikone|8=en}}|味耜高彦根命||qq=draft|qq=draft}}
+
 ==History==
-The origins of Shitori Shrine are unknown. Although there is no documentary evidence, it is believed that it began as the family shrine for the {{Nihongo|Shitori clan|倭文氏}} of {{ill|Kofun period|8=en|12=simple|13=User:Immanuelle/Kofun period|qq=}} craftsmen who weavers, who regarded {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi|qq=}} as their ancestor. However, the shrine's legends are all centered around {{ill|Shitateruhime|lt=Shitateruhime-no-Mikoto|ja|下照比売|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}, whom the shrine legend claims arrived in this location from {{ill|Izumo-taisha|lt=Izumo-taisha|lt=Izumo Taisha|lt=Izumo|8=en|12=simple|13=User:Immanuelle/Izumo Taisha|qq=}} by boat. She established her residence on the mountain behind this shrine, and after her death, she was buried in a ''{{ill|kofun|8=en|12=simple|13=User:Immanuelle/kofun|qq=}}'' constructed in the shrine's precincts.<ref name="Yoshiki">{{cite book|last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese|qq=draft}}</ref>    
-The earliest this shrine appears in documentary records is in the AD 808 medical text {{Nihongo|''Daido-ruishu-ho''|大同類聚方|}}. During the {{ill|Sengoku period|8=en|12=simple|13=User:Immanuelle/Sengoku period|qq=}}, the shine was laid to waste, but it was reconstructed by the {{ill|Amago clan|8=en|12=simple|13=User:Immanuelle/Amago clan|qq=}} and was later supported by the {{ill|Ikeda clan|8=en|12=simple|13=User:Immanuelle/Ikeda clan|qq=}}, the {{ill|Daimyo|daimyō|8=en|12=simple|13=User:Immanuelle/Daimyo|qq=}} of {{ill|Tottori Domain|8=en|12=simple|13=User:Immanuelle/Tottori Domain|qq=}}. During the {{ill|Meiji period|8=en|12=simple|13=User:Immanuelle/Meiji period|qq=}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto}}, the shrine was rated as a {{nihongo|National shrine, 3rd Rank|国幣中社|Kokuhei Shosha|qq=draft}} under the {{ill|Modern system of Ranked Shinto shrines|lt=modern system of Ranked Shinto Shrines|8=en|12=simple|13=User:Immanuelle/Modern system of Ranked Shinto shrines|qq=}}.<ref>Ponsonby-Fane, Richard. (1959). ''The Imperial House of Japan,'' pp. 125.</ref>
+The origins of Shitori Shrine are unknown. Although there is no documentary evidence, it is believed that it began as the family shrine for the {{Nihongo|Shitori clan|倭文氏}} of {{ill|Kofun period|8=en}} craftsmen who weavers, who regarded {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|qq=draft|qq=draft}} as their ancestor. However, the shrine's legends are all centered around {{ill|Shitateruhime|lt=Shitateruhime-no-Mikoto|ja|下照比売|qq=draft|qq=draft}}, whom the shrine legend claims arrived in this location from {{ill|Izumo Taisha|lt=Izumo|8=en|qq=draft|qq=draft}} by boat. She established her residence on the mountain behind this shrine, and after her death, she was buried in a ''{{ill|kofun|8=en}}'' constructed in the shrine's precincts.<ref name="Yoshiki">{{cite book|last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese|qq=draft|qq=draft}}</ref>    
+
+The earliest this shrine appears in documentary records is in the AD 808 medical text {{Nihongo|''Daido-ruishu-ho''|大同類聚方|}}. During the {{ill|Sengoku period|8=en}}, the shine was laid to waste, but it was reconstructed by the {{ill|Amago clan|8=en|qq=draft|qq=draft}} and was later supported by the {{ill|Ikeda clan|8=en}}, the {{ill|Daimyo|daimyō|8=en|qq=draft|qq=draft}} of {{ill|Tottori Domain|8=en}}. During the {{ill|Meiji period|8=en|qq=draft|qq=draft}} era of {{ill|State Shinto|8=en}}, the shrine was rated as a {{nihongo|National shrine, 3rd Rank|国幣中社|Kokuhei Shosha|qq=draft|qq=draft}} under the {{ill|Modern system of Ranked Shinto shrines|lt=modern system of Ranked Shinto Shrines|8=en|qq=draft|qq=draft}}.<ref>Ponsonby-Fane, Richard. (1959). ''The Imperial House of Japan,'' pp. 125.</ref>
+
 === Hōki Ichinomiya Sutra Mound===
-Until the early 20th century, Shitateruhime-no-Mikoto was regarded as the primary deity of this shrine. However, in 1915 an {{ill|archaeological excavation|8=en|12=simple|13=User:Immanuelle/archaeological excavation|qq=}} discovered that the purported {{ill|Round Kofun|lt=''empun''-style circular Kofun|8=en|12=simple|13=User:Immanuelle/Round Kofun|qq=}} was actually a {{ill|sutra mound|8=en|12=simple|13=User:Immanuelle/sutra mound|qq=}}. The mound had a diameter of 16-meters and height of 1.6 meters. It contains a rectangular stone box that was 1.2 x 0.9 x 0.5 meters made of {{ill|andesite|8=en|12=simple|13=User:Immanuelle/andesite|qq=}} flat stones. The inside was covered with coarse sand, and contained copper sutra cylinder with inscriptions. The inscription was dated 1103 and was inscribed by monk named Kyoson of the Hōki Ichinomiya. In addition to the sutra cylinder, the box contained a gilt-bronze statue of {{ill|Kannon|lt=Kannon|lt=Guanyin|lt=Kannon Bosatsu|8=en|12=simple|13=User:Immanuelle/Guanyin|qq=}}, an image of {{ill|Maitreya|Miroku Bosatsu|8=en|12=simple|13=User:Immanuelle/Maitreya|qq=}} engraving on a copper plate, a bronze mirror, a cypress fan, a short sword, beads, and copper coins. The sutra mounds are valuable in considering the burial memorial service in the Heian period. The sutra mound was designated as a {{ill|Monuments of Japan|lt=National Historic Site|8=en|12=simple|13=User:Immanuelle/Monuments of Japan|qq=}} in 1935.<ref name="Bunka1">{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/401/2116|title= 伯耆一宮経塚|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs|qq=}}|accessdate=January 2, 2023|qq=draft}}</ref> All excavated items are stored at the {{ill|Tokyo National Museum|8=en|12=simple|13=User:Immanuelle/Tokyo National Museum|qq=}}.<ref name="Shiseki">{{cite book|last1=Isomura |first1=Yukio |last2=Sakai |first2=Hideya |title=(国指定史跡事典) National Historic Site Encyclopedia |date=2012 |publisher=学生社 |isbn=978-4311750403|qq=draft}}{{in lang|ja}}</ref>
+Until the early 20th century, Shitateruhime-no-Mikoto was regarded as the primary deity of this shrine. However, in 1915 an {{ill|archaeological excavation|8=en}} discovered that the purported {{ill|Round Kofun|lt=''empun''-style circular Kofun|8=en|qq=draft|qq=draft}} was actually a {{ill|sutra mound|8=en}}. The mound had a diameter of 16-meters and height of 1.6 meters. It contains a rectangular stone box that was 1.2 x 0.9 x 0.5 meters made of {{ill|andesite|8=en|qq=draft|qq=draft}} flat stones. The inside was covered with coarse sand, and contained copper sutra cylinder with inscriptions. The inscription was dated 1103 and was inscribed by monk named Kyoson of the Hōki Ichinomiya. In addition to the sutra cylinder, the box contained a gilt-bronze statue of {{ill|Guanyin|lt=Kannon Bosatsu|8=en|qq=draft|qq=draft}}, an image of {{ill|Maitreya|Miroku Bosatsu|8=en|qq=draft|qq=draft}} engraving on a copper plate, a bronze mirror, a cypress fan, a short sword, beads, and copper coins. The sutra mounds are valuable in considering the burial memorial service in the Heian period. The sutra mound was designated as a {{ill|Monuments of Japan|lt=National Historic Site|8=en|qq=draft|qq=draft}} in 1935.<ref name="Bunka1">{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/401/2116|title= 伯耆一宮経塚|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en}}|accessdate=January 2, 2023|qq=draft|qq=draft}}</ref> All excavated items are stored at the {{ill|Tokyo National Museum|8=en}}.<ref name="Shiseki">{{cite book|last1=Isomura |first1=Yukio |last2=Sakai |first2=Hideya |title=(国指定史跡事典) National Historic Site Encyclopedia |date=2012 |publisher=学生社 |isbn=978-4311750403|qq=draft|qq=draft}}{{in lang|ja}}</ref>
+
 ==location==
-The shrine is located a 35-minute walk from {{ill|Matsuzaki Station (Tottori)|lt=Matsuzaki Station|8=en|12=simple|13=User:Immanuelle/Matsuzaki Station (Tottori)|qq=}} on the {{ill|JR West|8=en|12=simple|13=User:Immanuelle/JR West|qq=}} {{ill|San'in Main Line|8=en|12=simple|13=User:Immanuelle/San'in Main Line|qq=}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
+The shrine is located a 35-minute walk from {{ill|Matsuzaki Station (Tottori)|lt=Matsuzaki Station|8=en|qq=draft|qq=draft}} on the {{ill|JR West|8=en}} {{ill|San'in Main Line|8=en|qq=draft|qq=draft}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
+
 ==Cultural Properties==
 ===National Treasures===
-*{{nihongo|Hoki Ichinomiya Sutra Mound Excavated Items|伯耆一宮経塚出土品||}}<ref name="Bunka2">{{cite web |url=https://bunka.nii.ac.jp/heritages/detail/148928|title=伯耆一宮経塚出土品|trans-title=Hoki Ichinomiya Sutra Mound Excavated Items|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs|qq=}}|accessdate=20 August 2020|qq=draft}}</ref>
+*{{nihongo|Hoki Ichinomiya Sutra Mound Excavated Items|伯耆一宮経塚出土品||}}<ref name="Bunka2">{{cite web |url=https://bunka.nii.ac.jp/heritages/detail/148928|title=伯耆一宮経塚出土品|trans-title=Hoki Ichinomiya Sutra Mound Excavated Items|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en}}|accessdate=20 August 2020|qq=draft|qq=draft}}</ref>
+
 ==Gallery==
 <gallery>
 Shitori-jinja Kyoduka.jpg|Sutra Mound
@@ -50,27 +59,246 @@ Shitori-jinja Kyoduka.jpg|Sutra Mound
 伯耆一宮経塚出土品.JPG|Recovered artifacts from the Sutra Mound
 倭文神社の狛犬 - panoramio.jpg|Komainu
 </gallery>
+
 ==See also==
-*{{ill|List of Shinto shrines|8=en|12=simple|13=User:Immanuelle/List of Shinto shrines|qq=}}
-*{{ill|List of Historic Sites of Japan (Tottori)|8=en|12=simple|13=User:Immanuelle/List of Historic Sites of Japan (Tottori)|qq=}}
-* {{ill|List of National Treasures of Japan (archaeological materials)|8=en|12=simple|13=User:Immanuelle/List of National Treasures of Japan (archaeological materials)|qq=}}
-*{{ill|Ichinomiya|8=en|12=simple|13=User:Immanuelle/Ichinomiya|qq=}}
+*{{ill|List of Shinto shrines|8=en}}
+*{{ill|List of Historic Sites of Japan (Tottori)|8=en|qq=draft|qq=draft}}
+* {{ill|List of National Treasures of Japan (archaeological materials)|8=en}}
+*{{ill|Ichinomiya|8=en|qq=draft|qq=draft}}
+
 ==References==
 * Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. Routledge Curzon (1996) {{ISBN|1-873410-63-8}}
-* {{ill|Richard Ponsonby-Fane|Ponsonby-Fane|8=en|12=simple|13=User:Immanuelle/Richard Ponsonby-Fane|qq=}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
+* {{ill|Richard Ponsonby-Fane|Ponsonby-Fane|8=en|qq=draft|qq=draft}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
+
 ==External links==
+{{commonscat|Shitori-jinja}}
 *[http://www.sidorijinja.com Official home page]
 *[https://www.tottori-guide.jp/tourism/tour/view/338 Tottori Tourist Information]
 *[http://db.pref.tottori.jp/bunkazainavi.nsf/bunkazai_web_view/7A2EE5BD877C25074925796F0007FCE1?OpenDocument  Tottori prefecture Cultural properties navigation]{{in lang|ja}}
+
 ==Notes==
 {{reflist}}
+
+{{Shinto shrine}}
+
 {{Beppyo Shrines}}
+
+\
 {{Ichinomiya}}
+
 {{Shizuri Faith}}
+
 {{translated page|ja|倭文神社 (湯梨浜町)|version=94012272|comment=Imported full ja history}}
+
+{{Draft categories|
+
+]]
+}}
+
+{{wikidata link|Q245734|en|Shitori Shrine (Tottori)|en|Shitori_Shrine_(Tottori)|zh|倭文神社_(湯梨濱町)|ja|倭文神社_(湯梨浜町)|fr|Shitori-jinja|ja|Shitori Shrine (Tottori)|ja|倭文神社 (湯梨浜町)|zh|倭文神社 (湯梨濱町)|co|commons:Category:Shitori-jinja|simple|user:immanuelle/Shitori Shrine (Tottori)|abstract|Q245734|check_date=2026-05-10}}
+
+== Accidentally Overwritten Content ==
+
+{{Short description|Shinto shrine in Tottori Prefecture, Japan}}
+{{Use dmy dates|date=November 2019}}
+{{Infobox religious building| religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
+| name                  = Shitori Jinja <br>倭文神社
+| religious_affiliation = [[Shinto]]
+|image                 = Shitori-jinja, haiden.jpg
+| caption               = Haiden of Shitori Jinja Shrine
+{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
+| map_type              = Japan Tottori Prefecture#Japan
+| map_alt               = 
+| coordinates           = {{coord|35|29|25.34|N|133|54|10.68|E|region:JP-35_type:landmark}}
+| map_relief            = 1
+| map_size              = 
+| map_caption           = 
+| religious_affiliation = {{ill|Shinto|8=en|12=simple|13=User:Immanuelle/Shinto}}|type                  = 
+| deity                 = {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}}
+| founded_by            = 
+| established           = unknown
+| date_destroyed        = 
+| location              = 754 Miyauchi, Yurihama-cho, Tohaku-gun, Tottori-ken
+| website               = {{Official|1=https://www.sitorijinja.com}}
+| architecture_style    = ''{{ill|Nagare-zukuri|8=en|12=simple|13=User:Immanuelle/Nagare-zukuri}}''|festival              = 1 May
+| leadership            = 
+| footnotes             = {{box|background=white|align=center|wide=yes|border size=3px|border color=brown|text align=center|{{ill|Monuments of Japan|lt=National Historic Site of Japan|8=en|12=simple|13=User:Immanuelle/Monuments of Japan}}}}
+}}
+
+{{nihongo|'''Shitori Shrine'''|倭文神社}} is a {{ill|Shinto shrine|8=en|12=simple|13=User:Immanuelle/Shinto shrine}} in the Miyauchi neighborhood of the town of {{ill|Yurihama, Tottori|lt=Yurihama|8=en|12=simple|13=User:Immanuelle/Yurihama, Tottori}} in {{ill|Tottori Prefecture|8=en|12=simple|13=User:Immanuelle/Tottori Prefecture}}, {{ill|Japan|8=en|12=simple|13=User:Immanuelle/Japan}}, on the east bank of {{ill|Lake Tōgō|8=en|12=simple|13=User:Immanuelle/Lake Tōgō}}. It is the ''{{ill|ichinomiya|8=en|12=simple|13=User:Immanuelle/ichinomiya}}'' of former {{ill|Hōki Province|8=en|12=simple|13=User:Immanuelle/Hōki Province}}. The main festival of the shrine is held annually on 1 May.<ref>{{cite book|last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese|qq=draft}}</ref> 
+
+==Enshrined ''kami''==
+The ''{{ill|kami|8=en|12=simple|13=User:Immanuelle/kami}}'' enshrined at Shitori Shrine are:<ref>{{cite web|title=一ノ宮倭文神社について |url=https://www.sitorijinja.com/about |website=Shitori Jinja official home page |publisher=Shitori Jinja |access-date=17 January 2023|qq=draft}}</ref>
+* {{nihongo|{{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|simple|User:Immanuelle/Takehazuchi|fr|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}}|建葉槌命|}}
+* {{nihongo|{{ill|Shitateruhime|ja|下照比売|lt=Shitateruhime-no-Mikoto|simple|User:Immanuelle/Shitateruhime|fr|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}|下照姫命|}}
+* {{nihongo|{{ill|Takeminakata|8=en|12=simple|13=User:Immanuelle/Takeminakata}}|建御名方命||qq=draft}}
+* {{nihongo|{{ill|Ame no Wakahiko|en|Ame no Wakahiko|qid=Q10940674|lt=Ame no Wakahiko}}|天稚彦命||qq=draft}}
+* {{nihongo|{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|8=en|12=simple|13=User:Immanuelle/Kotoshironushi}}|事代主命||qq=draft}}
+* {{nihongo|{{ill|Sukunabikona|8=en|12=simple|13=User:Immanuelle/Sukunabikona}}|少彦名命||qq=draft}}
+* {{nihongo|{{ill|Ajisukitakahikone|8=en|12=simple|13=User:Immanuelle/Ajisukitakahikone}}|味耜高彦根命||qq=draft}}
+
+==History==
+The origins of Shitori Shrine are unknown. Although there is no documentary evidence, it is believed that it began as the family shrine for the {{Nihongo|Shitori clan|倭文氏}} of {{ill|Kofun period|8=en|12=simple|13=User:Immanuelle/Kofun period}} craftsmen who weavers, who regarded {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}} as their ancestor. However, the shrine's legends are all centered around {{ill|Shitateruhime|lt=Shitateruhime-no-Mikoto|ja|下照比売|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}, whom the shrine legend claims arrived in this location from {{ill|Izumo-taisha|lt=Izumo-taisha|lt=Izumo Taisha|lt=Izumo|8=en|12=simple|13=User:Immanuelle/Izumo Taisha}} by boat. She established her residence on the mountain behind this shrine, and after her death, she was buried in a ''{{ill|kofun|8=en|12=simple|13=User:Immanuelle/kofun}}'' constructed in the shrine's precincts.<ref name="Yoshiki">{{cite book|last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese|qq=draft}}</ref>    
+
+The earliest this shrine appears in documentary records is in the AD 808 medical text {{Nihongo|''Daido-ruishu-ho''|大同類聚方|}}. During the {{ill|Sengoku period|8=en|12=simple|13=User:Immanuelle/Sengoku period}}, the shine was laid to waste, but it was reconstructed by the {{ill|Amago clan|8=en|12=simple|13=User:Immanuelle/Amago clan}} and was later supported by the {{ill|Ikeda clan|8=en|12=simple|13=User:Immanuelle/Ikeda clan}}, the {{ill|Daimyo|daimyō|8=en|12=simple|13=User:Immanuelle/Daimyo}} of {{ill|Tottori Domain|8=en|12=simple|13=User:Immanuelle/Tottori Domain}}. During the {{ill|Meiji period|8=en|12=simple|13=User:Immanuelle/Meiji period}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto}}, the shrine was rated as a {{nihongo|National shrine, 3rd Rank|国幣中社|Kokuhei Shosha|qq=draft}} under the {{ill|Modern system of Ranked Shinto shrines|lt=modern system of Ranked Shinto Shrines|8=en|12=simple|13=User:Immanuelle/Modern system of Ranked Shinto shrines}}.<ref>Ponsonby-Fane, Richard. (1959). ''The Imperial House of Japan,'' pp. 125.</ref>
+
+=== Hōki Ichinomiya Sutra Mound===
+Until the early 20th century, Shitateruhime-no-Mikoto was regarded as the primary deity of this shrine. However, in 1915 an {{ill|archaeological excavation|8=en|12=simple|13=User:Immanuelle/archaeological excavation}} discovered that the purported {{ill|Round Kofun|lt=''empun''-style circular Kofun|8=en|12=simple|13=User:Immanuelle/Round Kofun}} was actually a {{ill|sutra mound|8=en|12=simple|13=User:Immanuelle/sutra mound}}. The mound had a diameter of 16-meters and height of 1.6 meters. It contains a rectangular stone box that was 1.2 x 0.9 x 0.5 meters made of {{ill|andesite|8=en|12=simple|13=User:Immanuelle/andesite}} flat stones. The inside was covered with coarse sand, and contained copper sutra cylinder with inscriptions. The inscription was dated 1103 and was inscribed by monk named Kyoson of the Hōki Ichinomiya. In addition to the sutra cylinder, the box contained a gilt-bronze statue of {{ill|Kannon|lt=Kannon|lt=Guanyin|lt=Kannon Bosatsu|8=en|12=simple|13=User:Immanuelle/Guanyin}}, an image of {{ill|Maitreya|Miroku Bosatsu|8=en|12=simple|13=User:Immanuelle/Maitreya}} engraving on a copper plate, a bronze mirror, a cypress fan, a short sword, beads, and copper coins. The sutra mounds are valuable in considering the burial memorial service in the Heian period. The sutra mound was designated as a {{ill|Monuments of Japan|lt=National Historic Site|8=en|12=simple|13=User:Immanuelle/Monuments of Japan}} in 1935.<ref name="Bunka1">{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/401/2116|title= 伯耆一宮経塚|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs}}|accessdate=January 2, 2023|qq=draft}}</ref> All excavated items are stored at the {{ill|Tokyo National Museum|8=en|12=simple|13=User:Immanuelle/Tokyo National Museum}}.<ref name="Shiseki">{{cite book|last1=Isomura |first1=Yukio |last2=Sakai |first2=Hideya |title=(国指定史跡事典) National Historic Site Encyclopedia |date=2012 |publisher=学生社 |isbn=978-4311750403|qq=draft}}{{in lang|ja}}</ref>
+
+==location==
+The shrine is located a 35-minute walk from {{ill|Matsuzaki Station (Tottori)|lt=Matsuzaki Station|8=en|12=simple|13=User:Immanuelle/Matsuzaki Station (Tottori)}} on the {{ill|JR West|8=en|12=simple|13=User:Immanuelle/JR West}} {{ill|San'in Main Line|8=en|12=simple|13=User:Immanuelle/San'in Main Line}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
+
+==Cultural Properties==
+===National Treasures===
+*{{nihongo|Hoki Ichinomiya Sutra Mound Excavated Items|伯耆一宮経塚出土品||}}<ref name="Bunka2">{{cite web |url=https://bunka.nii.ac.jp/heritages/detail/148928|title=伯耆一宮経塚出土品|trans-title=Hoki Ichinomiya Sutra Mound Excavated Items|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs}}|accessdate=20 August 2020|qq=draft}}</ref>
+
+==Gallery==
+<gallery>
+Shitori-jinja Kyoduka.jpg|Sutra Mound
+伯耆一宮経塚出土 金銅観音菩薩立像・銅造千手観音菩薩立像.JPG|Recovered artifacts from the Sutra Mound
+伯耆一宮経塚出土品.JPG|Recovered artifacts from the Sutra Mound
+倭文神社の狛犬 - panoramio.jpg|Komainu
+</gallery>
+
+==See also==
+*{{ill|List of Shinto shrines|8=en|12=simple|13=User:Immanuelle/List of Shinto shrines}}
+*{{ill|List of Historic Sites of Japan (Tottori)|8=en|12=simple|13=User:Immanuelle/List of Historic Sites of Japan (Tottori)}}
+* {{ill|List of National Treasures of Japan (archaeological materials)|8=en|12=simple|13=User:Immanuelle/List of National Treasures of Japan (archaeological materials)}}
+*{{ill|Ichinomiya|8=en|12=simple|13=User:Immanuelle/Ichinomiya}}
+
+==References==
+* Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. Routledge Curzon (1996) {{ISBN|1-873410-63-8}}
+* {{ill|Richard Ponsonby-Fane|Ponsonby-Fane|8=en|12=simple|13=User:Immanuelle/Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
+
+==External links==
+{{commonscat|Shitori-jinja}}
+*[http://www.sidorijinja.com Official home page]
+*[https://www.tottori-guide.jp/tourism/tour/view/338 Tottori Tourist Information]
+*[http://db.pref.tottori.jp/bunkazainavi.nsf/bunkazai_web_view/7A2EE5BD877C25074925796F0007FCE1?OpenDocument  Tottori prefecture Cultural properties navigation]{{in lang|ja}}
+
+==Notes==
+{{reflist}}
+
+{{Beppyo Shrines}}
+
+\
+{{Ichinomiya}}
+
+{{Shizuri Faith}}
+
+{{translated page|ja|倭文神社 (湯梨浜町)|version=94012272|comment=Imported full ja history}}
+
+{{Draft categories|
+
+}}
+
+{{Commons category|Shitori-jinja}}
+
+{{Commons category|Shitori-jinja}}
+
 {{Commons category|Shitori-jinja}}
 {{wikidata link|Q245734}}
+== Accidentally Overwritten Content ==
 
+{{Short description|Shinto shrine in Tottori Prefecture, Japan}}
+{{Use dmy dates|date=November 2019}}
+{{Infobox religious building| religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]
+| name                  = Shitori Jinja <br>倭文神社
+| religious_affiliation = [[Shinto]]
+|image                 = Shitori-jinja, haiden.jpg
+| caption               = Haiden of Shitori Jinja Shrine
+{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
+| map_type              = Japan Tottori Prefecture#Japan
+| map_alt               = 
+| coordinates           = {{coord|35|29|25.34|N|133|54|10.68|E|region:JP-35_type:landmark}}
+| map_relief            = 1
+| map_size              = 
+| map_caption           = 
+| religious_affiliation = {{ill|Shinto|8=en|12=simple|13=User:Immanuelle/Shinto}}|type                  = 
+| deity                 = {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}}
+| founded_by            = 
+| established           = unknown
+| date_destroyed        = 
+| location              = 754 Miyauchi, Yurihama-cho, Tohaku-gun, Tottori-ken
+| website               = {{Official|1=https://www.sitorijinja.com}}
+| architecture_style    = ''{{ill|Nagare-zukuri|8=en|12=simple|13=User:Immanuelle/Nagare-zukuri}}''|festival              = 1 May
+| leadership            = 
+| footnotes             = {{box|background=white|align=center|wide=yes|border size=3px|border color=brown|text align=center|{{ill|Monuments of Japan|lt=National Historic Site of Japan|8=en|12=simple|13=User:Immanuelle/Monuments of Japan}}}}
+}}
+
+{{nihongo|'''Shitori Shrine'''|倭文神社}} is a {{ill|Shinto shrine|8=en|12=simple|13=User:Immanuelle/Shinto shrine}} in the Miyauchi neighborhood of the town of {{ill|Yurihama, Tottori|lt=Yurihama|8=en|12=simple|13=User:Immanuelle/Yurihama, Tottori}} in {{ill|Tottori Prefecture|8=en|12=simple|13=User:Immanuelle/Tottori Prefecture}}, {{ill|Japan|8=en|12=simple|13=User:Immanuelle/Japan}}, on the east bank of {{ill|Lake Tōgō|8=en|12=simple|13=User:Immanuelle/Lake Tōgō}}. It is the ''{{ill|ichinomiya|8=en|12=simple|13=User:Immanuelle/ichinomiya}}'' of former {{ill|Hōki Province|8=en|12=simple|13=User:Immanuelle/Hōki Province}}. The main festival of the shrine is held annually on 1 May.<ref>{{cite book|last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese|qq=draft}}</ref> 
+
+==Enshrined ''kami''==
+The ''{{ill|kami|8=en|12=simple|13=User:Immanuelle/kami}}'' enshrined at Shitori Shrine are:<ref>{{cite web|title=一ノ宮倭文神社について |url=https://www.sitorijinja.com/about |website=Shitori Jinja official home page |publisher=Shitori Jinja |access-date=17 January 2023|qq=draft}}</ref>
+* {{nihongo|{{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|simple|User:Immanuelle/Takehazuchi|fr|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}}|建葉槌命|}}
+* {{nihongo|{{ill|Shitateruhime|ja|下照比売|lt=Shitateruhime-no-Mikoto|simple|User:Immanuelle/Shitateruhime|fr|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}|下照姫命|}}
+* {{nihongo|{{ill|Takeminakata|8=en|12=simple|13=User:Immanuelle/Takeminakata}}|建御名方命||qq=draft}}
+* {{nihongo|{{ill|Ame no Wakahiko|en|Ame no Wakahiko|qid=Q10940674|lt=Ame no Wakahiko}}|天稚彦命||qq=draft}}
+* {{nihongo|{{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|8=en|12=simple|13=User:Immanuelle/Kotoshironushi}}|事代主命||qq=draft}}
+* {{nihongo|{{ill|Sukunabikona|8=en|12=simple|13=User:Immanuelle/Sukunabikona}}|少彦名命||qq=draft}}
+* {{nihongo|{{ill|Ajisukitakahikone|8=en|12=simple|13=User:Immanuelle/Ajisukitakahikone}}|味耜高彦根命||qq=draft}}
+
+==History==
+The origins of Shitori Shrine are unknown. Although there is no documentary evidence, it is believed that it began as the family shrine for the {{Nihongo|Shitori clan|倭文氏}} of {{ill|Kofun period|8=en|12=simple|13=User:Immanuelle/Kofun period}} craftsmen who weavers, who regarded {{ill|Takehazuchi|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takehazuchi|13=User:Immanuelle/Takehazuchi}} as their ancestor. However, the shrine's legends are all centered around {{ill|Shitateruhime|lt=Shitateruhime-no-Mikoto|ja|下照比売|12=simple|13=User:Immanuelle/Shitateruhime|ja_comment=jawiki redirects to QID FIXED|qid=Q11307233}}, whom the shrine legend claims arrived in this location from {{ill|Izumo-taisha|lt=Izumo-taisha|lt=Izumo Taisha|lt=Izumo|8=en|12=simple|13=User:Immanuelle/Izumo Taisha}} by boat. She established her residence on the mountain behind this shrine, and after her death, she was buried in a ''{{ill|kofun|8=en|12=simple|13=User:Immanuelle/kofun}}'' constructed in the shrine's precincts.<ref name="Yoshiki">{{cite book|last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese|qq=draft}}</ref>    
+
+The earliest this shrine appears in documentary records is in the AD 808 medical text {{Nihongo|''Daido-ruishu-ho''|大同類聚方|}}. During the {{ill|Sengoku period|8=en|12=simple|13=User:Immanuelle/Sengoku period}}, the shine was laid to waste, but it was reconstructed by the {{ill|Amago clan|8=en|12=simple|13=User:Immanuelle/Amago clan}} and was later supported by the {{ill|Ikeda clan|8=en|12=simple|13=User:Immanuelle/Ikeda clan}}, the {{ill|Daimyo|daimyō|8=en|12=simple|13=User:Immanuelle/Daimyo}} of {{ill|Tottori Domain|8=en|12=simple|13=User:Immanuelle/Tottori Domain}}. During the {{ill|Meiji period|8=en|12=simple|13=User:Immanuelle/Meiji period}} era of {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto}}, the shrine was rated as a {{nihongo|National shrine, 3rd Rank|国幣中社|Kokuhei Shosha|qq=draft}} under the {{ill|Modern system of Ranked Shinto shrines|lt=modern system of Ranked Shinto Shrines|8=en|12=simple|13=User:Immanuelle/Modern system of Ranked Shinto shrines}}.<ref>Ponsonby-Fane, Richard. (1959). ''The Imperial House of Japan,'' pp. 125.</ref>
+
+=== Hōki Ichinomiya Sutra Mound===
+Until the early 20th century, Shitateruhime-no-Mikoto was regarded as the primary deity of this shrine. However, in 1915 an {{ill|archaeological excavation|8=en|12=simple|13=User:Immanuelle/archaeological excavation}} discovered that the purported {{ill|Round Kofun|lt=''empun''-style circular Kofun|8=en|12=simple|13=User:Immanuelle/Round Kofun}} was actually a {{ill|sutra mound|8=en|12=simple|13=User:Immanuelle/sutra mound}}. The mound had a diameter of 16-meters and height of 1.6 meters. It contains a rectangular stone box that was 1.2 x 0.9 x 0.5 meters made of {{ill|andesite|8=en|12=simple|13=User:Immanuelle/andesite}} flat stones. The inside was covered with coarse sand, and contained copper sutra cylinder with inscriptions. The inscription was dated 1103 and was inscribed by monk named Kyoson of the Hōki Ichinomiya. In addition to the sutra cylinder, the box contained a gilt-bronze statue of {{ill|Kannon|lt=Kannon|lt=Guanyin|lt=Kannon Bosatsu|8=en|12=simple|13=User:Immanuelle/Guanyin}}, an image of {{ill|Maitreya|Miroku Bosatsu|8=en|12=simple|13=User:Immanuelle/Maitreya}} engraving on a copper plate, a bronze mirror, a cypress fan, a short sword, beads, and copper coins. The sutra mounds are valuable in considering the burial memorial service in the Heian period. The sutra mound was designated as a {{ill|Monuments of Japan|lt=National Historic Site|8=en|12=simple|13=User:Immanuelle/Monuments of Japan}} in 1935.<ref name="Bunka1">{{cite web |url=https://kunishitei.bunka.go.jp/heritage/detail/401/2116|title= 伯耆一宮経塚|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs}}|accessdate=January 2, 2023|qq=draft}}</ref> All excavated items are stored at the {{ill|Tokyo National Museum|8=en|12=simple|13=User:Immanuelle/Tokyo National Museum}}.<ref name="Shiseki">{{cite book|last1=Isomura |first1=Yukio |last2=Sakai |first2=Hideya |title=(国指定史跡事典) National Historic Site Encyclopedia |date=2012 |publisher=学生社 |isbn=978-4311750403|qq=draft}}{{in lang|ja}}</ref>
+
+==location==
+The shrine is located a 35-minute walk from {{ill|Matsuzaki Station (Tottori)|lt=Matsuzaki Station|8=en|12=simple|13=User:Immanuelle/Matsuzaki Station (Tottori)}} on the {{ill|JR West|8=en|12=simple|13=User:Immanuelle/JR West}} {{ill|San'in Main Line|8=en|12=simple|13=User:Immanuelle/San'in Main Line}}.<ref name="Okada">{{cite book |last1=Okada |first1=Shoji |title=Taiyō no chizuchō 24 zenkoku 'Ichinomiya' meguri |date=2014 |publisher=Heibonsha |isbn=978-4582945614 |language=Japanese}}</ref>
+
+==Cultural Properties==
+===National Treasures===
+*{{nihongo|Hoki Ichinomiya Sutra Mound Excavated Items|伯耆一宮経塚出土品||}}<ref name="Bunka2">{{cite web |url=https://bunka.nii.ac.jp/heritages/detail/148928|title=伯耆一宮経塚出土品|trans-title=Hoki Ichinomiya Sutra Mound Excavated Items|language=Japanese |publisher={{ill|Agency for Cultural Affairs|8=en|12=simple|13=User:Immanuelle/Agency for Cultural Affairs}}|accessdate=20 August 2020|qq=draft}}</ref>
+
+==Gallery==
+<gallery>
+Shitori-jinja Kyoduka.jpg|Sutra Mound
+伯耆一宮経塚出土 金銅観音菩薩立像・銅造千手観音菩薩立像.JPG|Recovered artifacts from the Sutra Mound
+伯耆一宮経塚出土品.JPG|Recovered artifacts from the Sutra Mound
+倭文神社の狛犬 - panoramio.jpg|Komainu
+</gallery>
+
+==See also==
+*{{ill|List of Shinto shrines|8=en|12=simple|13=User:Immanuelle/List of Shinto shrines}}
+*{{ill|List of Historic Sites of Japan (Tottori)|8=en|12=simple|13=User:Immanuelle/List of Historic Sites of Japan (Tottori)}}
+* {{ill|List of National Treasures of Japan (archaeological materials)|8=en|12=simple|13=User:Immanuelle/List of National Treasures of Japan (archaeological materials)}}
+*{{ill|Ichinomiya|8=en|12=simple|13=User:Immanuelle/Ichinomiya}}
+
+==References==
+* Plutschow, Herbe. ''Matsuri: The Festivals of Japan''. Routledge Curzon (1996) {{ISBN|1-873410-63-8}}
+* {{ill|Richard Ponsonby-Fane|Ponsonby-Fane|8=en|12=simple|13=User:Immanuelle/Richard Ponsonby-Fane}}, Richard Arthur Brabazon. (1959). [https://books.google.com/books?id=SLAeAAAAMAAJ&q=The+Imperial+House+of+Japan  ''The Imperial House of Japan.''] Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/194887 OCLC 194887]
+
+==External links==
+{{commonscat|Shitori-jinja}}
+*[http://www.sidorijinja.com Official home page]
+*[https://www.tottori-guide.jp/tourism/tour/view/338 Tottori Tourist Information]
+*[http://db.pref.tottori.jp/bunkazainavi.nsf/bunkazai_web_view/7A2EE5BD877C25074925796F0007FCE1?OpenDocument  Tottori prefecture Cultural properties navigation]{{in lang|ja}}
+
+==Notes==
+{{reflist}}
+
+{{Beppyo Shrines}}
+
+\
+{{Ichinomiya}}
+
+{{Shizuri Faith}}
+
+{{translated page|ja|倭文神社 (湯梨浜町)|version=94012272|comment=Imported full ja history}}
+
+{{Draft categories|
+
+}}
+
+{{Commons category|Shitori-jinja}}
+
+{{Commons category|Shitori-jinja}}
+
+{{Commons category|Shitori-jinja}}
+{{wikidata link|Q245734}}
 [[Category:Buildings and structures in Yurihama Town]]
 [[Category:Beppyo shrines]]
 [[Category:History of Yurihama Town]]
@@ -80,6 +308,7 @@ Shitori-jinja Kyoduka.jpg|Sutra Mound
 [[Category:National historic sites in Tottori prefecture]]
 [[Category:National Treasures of Japan (archaeological materials)]]
 [[Category:National Treasures of Tottori Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Hōki Province]]
 [[Category:Shinto shrines in Tottori Prefecture]]
 [[Category:translated pages with valid en interwikis]]

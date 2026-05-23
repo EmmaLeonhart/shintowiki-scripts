@@ -1,9 +1,11 @@
-'''Iyo Shrine''' (伊予神社, Iyo Jinja) is a Shinto shrine located in {{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture|1=Ehime Prefecture}}. It is recorded in the ''{{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' under the {{ill|Iyo Province|en|Iyo Province|qid=Q907829|lt=Iyo Province|1=Iyo Province}} {{ill|Iyo District, Ehime|en|Iyo District, Ehime|qid=Q1206427|lt=Iyo District, Iyo Province|1=Iyo District, Ehime}} as a ''Meishin-Taisha'' (名神大社). Currently, there are two shrines claiming the title "Iyo Shrine": one in {{ill|Masaki, Ehime|en|Masaki, Ehime|qid=Q1350953|lt=Matsumae, Ehime|1=Masaki, Ehime}} and the other in {{ill|Iyo, Ehime|en|Iyo, Ehime|qid=Q838678|lt=Iyo, Ehime|1=Iyo, Ehime}}. Both are considered candidates for the historical ''Shikinaisha'' designation.<ref>Another candidate is the {{ill|Iyozuhikonomikoto Shrine|ja|伊豫豆比古命神社|12=simple|13=User:Immanuelle/Iyozuhikonomikoto Shrine|1=Iyozuhiko-no-Mikoto Shrine|comment=changed title based on wikidata|qid=Q11380620}} in Matsuyama, but it is more commonly associated with a different ''Shikinaisha'' designation as a minor shrine.</ref>
-== Historical Rank Promotions ==
+'''Iyo Shrine''' (伊予神社, Iyo Jinja) is a Shinto shrine located in {{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture}}. It is recorded in the ''{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}'' under the {{ill|Iyo Province|cs|Provincie Ijo|de|Provinz Iyo|es|Provincia de Iyo|fa|ولایت ایو|fi|Iyon provinssi|fr|Province d'Iyo|gl|Provincia de Iyo|id|Provinsi Iyo|it|Iyo (provincia)|ja|伊予国|ko|이요국|lt|Ijo žemė|min|Provinsi Iyo|nl|Iyo (provincie)|pt|Província de Iyo|ru|Иё (провинция)|sh|Iyo (provincija)|simple|Iyo Province|sk|Ijo (provincia)|sr|Провинција Ијо|tr|Iyo (vilayet)|uk|Провінція Ійо|zh|伊予國|zh_min_nan|Iyo-kok|qid=Q907829|lt=Iyo Province}} {{ill|Iyo District, Ehime|en|Iyo District, Ehime|qid=Q1206427|lt=Iyo District, Iyo Province}} as a ''Meishin-Taisha'' (名神大社). Currently, there are two shrines claiming the title "Iyo Shrine": one in {{ill|Masaki, Ehime|en|Masaki, Ehime|qid=Q1350953|lt=Matsumae, Ehime}} and the other in {{ill|Iyo, Ehime|en|Iyo, Ehime|qid=Q838678|lt=Iyo, Ehime}}. Both are considered candidates for the historical ''Shikinaisha'' designation.<ref>Another candidate is the {{ill|Iyozuhiko-no-Mikoto Shrine|ja|伊豫豆比古命神社|12=simple|13=User:Immanuelle/Iyozuhikonomikoto Shrine|comment=changed title based on wikidata|qid=Q11380620}} in Matsuyama, but it is more commonly associated with a different ''Shikinaisha'' designation as a minor shrine.</ref>
+
+== type ==
 * Tenpyō-Shōhō 2 (766): Junior Fifth Rank, granted two servants (possibly referring to Iyozuhikonomikoto Shrine).<ref>There is also speculation that this refers to Iyozuhikonomikoto Shrine.</ref>
 * Jōgan 4 (862): Promoted to Junior Fourth Rank, Lower Grade.
 * Jōgan 8 (866): Promoted to Senior Fourth Rank, Lower Grade.
 * Jōgan 12 (870): Promoted to Senior Fourth Rank, Upper Grade.
+
 == Iyo Shrine (Matsumae) ==
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Iyo Shrine
@@ -11,48 +13,55 @@
 |image = File:Masakiiyojinjahahonden.JPG
 | location = Matsumae, Ehime Prefecture, Japan
 | coordinates = {{Coord|33.784167|N|132.743056}}
-| enshrined = {{ill|Hiko-Sashima no Mikoto|ja|彦狭島命|1=Hikosashima no Mikoto|12=simple|13=User:Immanuelle/Hiko-Sashima no Mikoto|qq=}}
-| Rank = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Meishin-Taisha), Prefectural Shrine
+| enshrined = {{ill|Hiko-Sashima no Mikoto|ja|彦狭島命}}
+| Rank = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (Meishin-Taisha), Prefectural Shrine
 | establishment = 
 | architecture = Nagare-zukuri
 | other_names = Imperial Prince Palace
 | festival = October 14
 | rituals = 
-| location = {{ill|Ehime Prefecture|qid=Q123376|1=Ehime Prefecture}}
+| location = {{ill|Ehime Prefecture|qid=Q123376}}
 }}
+
 === Enshrined Deities ===
 ; Main deity
-: {{ill|Hiko-Sashima no Mikoto|ja|彦狭島命|1=Hikosashima no Mikoto|12=simple|13=User:Immanuelle/Hiko-Sashima no Mikoto|qq=}} (日子寤間命, third prince of {{ill|Emperor Kōrei|en|Emperor Kōrei|qid=Q313041|lt=Emperor Kōrei|1=Emperor Kōrei}})
+: {{ill|Hiko-Sashima no Mikoto|ja|彦狭島命}} (日子寤間命, third prince of {{ill|Emperor Kōrei|en|Emperor Kōrei|qid=Q313041|lt=Emperor Kōrei}})
 ; Associated Deities
-: {{ill|Ehimeno Mikoto|ja|愛比売命|12=simple|13=User:Immanuelle/Ehimeno Mikoto|ja_comment=jawiki link invalid}}  
-: {{ill|Iyozuhiko no Mikoto|ja|伊予津彦命|12=simple|13=User:Immanuelle/Iyozuhiko no Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135579308}}  
-: {{ill|Iyozuhime no Mikoto|ja|伊予津姫命|12=simple|13=User:Immanuelle/Iyozuhime no Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135579309}}  
-: {{ill|Emperor Kōrei|en|Emperor Kōrei|qid=Q313041|lt=Emperor Kōrei|1=Emperor Kōrei}} (大日本根子彦太瓊命)  
-: {{ill|Kuwashi-hime|en|Kuwashi-hime|qid=Q11605816|lt=Hosohime no Mikoto|1=Kuwashi-hime}} (孝霊天皇's consort)  
-: Hayanochiagari no Mikoto (速後上命, descendant of {{ill|Kamuyaimimi|en|Kamuyaimimi|qid=Q11588756|lt=Kami-Yaibimi no Mikoto|1=Kamuyaimimi}}, first governor of Iyo Province)  
-According to the ''{{ill|Yoshōki|ja|予章記|12=simple|13=User:Immanuelle/Yoshōki|1=Yoshōki|comment=changed title based on wikidata|qid=Q11371102}}'' by the {{ill|Kōno clan|ja|河野氏|12=simple|13=User:Immanuelle/Kōno clan|qq=}}, Hiko-Sashima no Mikoto was dispatched to Iyo Province by Emperor Kōrei to suppress dissent and later enshrined in Kanzaki Manor, which became known as the Imperial Prince Palace.
+: {{ill|Ehimeno Mikoto|ja|愛比売命}}  
+: {{ill|Iyozuhiko no Mikoto|ja|伊予津彦命|qid=DELETED_QID}}  
+: {{ill|Iyozuhime no Mikoto|ja|伊予津姫命|qid=DELETED_QID}}  
+: {{ill|Emperor Kōrei|en|Emperor Kōrei|qid=Q313041|lt=Emperor Kōrei}} (大日本根子彦太瓊命)  
+: {{ill|Kuwashi-hime|en|Kuwashi-hime|qid=Q11605816|lt=Hosohime no Mikoto}} (孝霊天皇's consort)  
+: Hayanochiagari no Mikoto (速後上命, descendant of {{ill|Kamuyaimimi|en|Kamuyaimimi|qid=Q11588756|lt=Kami-Yaibimi no Mikoto}}, first governor of Iyo Province)  
+
+According to the ''{{ill|Yoshōki|ja|予章記|12=simple|13=User:Immanuelle/Yoshōki|comment=changed title based on wikidata|qid=Q11371102}}'' by the {{ill|Kōno clan|ja|河野氏}}, Hiko-Sashima no Mikoto was dispatched to Iyo Province by Emperor Kōrei to suppress dissent and later enshrined in Kanzaki Manor, which became known as the Imperial Prince Palace.
+
 === History ===
-Shrine tradition states that during the Bunji era, {{ill|Minamoto no Yoshitsune|en|Minamoto no Yoshitsune|qid=Q310445|lt=Minamoto no Yoshitsune|1=Minamoto no Yoshitsune}} venerated the shrine, contributing funds for its construction, though it was later destroyed in the Bun'ei era. During the medieval period, the shrine was revered by the Kōno clan, who claimed descent from Hiko-Sashima no Mikoto. It was rebuilt by {{ill|Kōno Michinobu|ja|河野通信|12=simple|13=User:Immanuelle/Kōno Michinobu|1=Kawano Michinobu|comment=changed title based on wikidata|qid=Q11554270}} during the Tenshō era. In the Kanbun era, the shrine began to be referred to as Shinōkyū Daimyōjin (Imperial Prince Palace Daimyōjin).
+Shrine tradition states that during the Bunji era, {{ill|Minamoto no Yoshitsune|en|Minamoto no Yoshitsune|qid=Q310445|lt=Minamoto no Yoshitsune}} venerated the shrine, contributing funds for its construction, though it was later destroyed in the Bun'ei era. During the medieval period, the shrine was revered by the Kōno clan, who claimed descent from Hiko-Sashima no Mikoto. It was rebuilt by {{ill|Kawano Michinobu|ja|河野通信|12=simple|13=User:Immanuelle/Kōno Michinobu|comment=changed title based on wikidata|qid=Q11554270}} during the Tenshō era. In the Kanbun era, the shrine began to be referred to as Shinōkyū Daimyōjin (Imperial Prince Palace Daimyōjin).
+
 In Meiji 30 (1897), excavation at the site revealed artifacts such as Sutra containers, leading to a request for promotion to a National Shrine Rank. However, the shrine ultimately remained a Prefectural Shrine due to its limited parishioners.<ref>''Nihon no Kamigami (2) Sanyō Shikoku'', p. 320</ref>
+
 === Features ===
 ; Worship Hall  
 ; Main Hall  
 : Nagare-zukuri style, with a copper roof.  
 ; Yamano Shrine  
-: Enshrines {{ill|Oyamakui no Kami|en|Oyamakui no Kami|qid=Q10935105|qid=Q386563|lt=Ōyamatsumi|1=Oyamakui no Kami}} and {{ill|Waraji Shrine|ja|和霊神|12=simple|13=User:Immanuelle/Waraji Shrine|ja_comment=jawiki link invalid|qid=Q135579310|1=Waraji Shrine}}.  
+: Enshrines {{ill|Oyamakui no Kami|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi}} and {{ill|Waraji Shrine|ja|和霊神|12=simple|13=User:Immanuelle/Waraji Shrine|ja_comment=jawiki link invalid|qid=Q135579310}}.  
 ; Sarutahiko Shrine  
-: Enshrines {{ill|Sarutahiko Ōkami|lt=Sarutahiko Ōkami|lt=Sarutahiko|ja|猿田彦命|12=simple|13=User:Immanuelle/Sarutahiko|ja_comment=jawiki redirects to サルタヒコ}}.  
+: Enshrines {{ill|Sarutahiko Ōkami|ja|猿田彦命|lt=Sarutahiko}}.  
 ; Itsukushima Shrine  
-: Enshrines {{ill|Ichikishima-hime|ja|市杵島姫命|1=Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}} and five other deities.  
+: Enshrines {{ill|Ichikishima-hime|ja|市杵島姫命}} and five other deities.  
 ; Kamado Shrine  
 : Enshrines Okitsuhiko no Mikoto and one other deity.  
 ; "Forbidden Forest"  
 : A grove within the shrine grounds containing three five-tiered stone pagodas. Excavations in Meiji 30 (1897) unearthed Song dynasty porcelain jars and six bronze Sutra containers.
+
 === Cultural Properties ===
 ; Designated by Matsumae Town  
 : Five-tiered pagodas.  
 : Artifacts from the Sutra mound (two porcelain jars, six bronze Sutra containers).  
 Both were designated cultural properties in Shōwa 44 (1969).
+
 == Iyo Shrine (Iyo City) ==
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Iyo Shrine
@@ -61,16 +70,18 @@ Both were designated cultural properties in Shōwa 44 (1969).
 | location = Iyo City, Ehime Prefecture, Japan
 | coordinates = {{coord|33|46|15|N|132|44|40|E|region:JP|name=Iyo Shrine (Iyo City)}}
 | enshrined = Tsukuyomi-no-Mikoto
-| Rank = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Meishin-Taisha), Village Shrine
+| Rank = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (Meishin-Taisha), Village Shrine
 | establishment = Tradition states Enchō 5 (927)
 | architecture = Nagare-zukuri
 | other_names = 
 | festival = 
 | rituals = 
 }}
+
 === Enshrined Deities ===
-* {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ja|月読尊|12=simple|13=User:Immanuelle/Tsukuyomi|ja_comment=jawiki redirects to ツクヨミ|1=Tsukuyomi-no-Mikoto}}  
-* {{ill|Ehimeno Mikoto|ja|愛比売命|12=simple|13=User:Immanuelle/Ehimeno Mikoto|ja_comment=jawiki link invalid}}  
+* {{ill|Tsukuyomi-no-Mikoto|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|rsk|Цукуйоми|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh|月讀|zh_min_nan|Tukuyomi|qid=Q595520|lt=Tsukuyomi}}  
+* {{ill|Ehimeno Mikoto|ja|愛比売命}}  
+
 === Features ===
 ; Imperial Envoy Bridge  
 : Spanning Miyagawa River within the shrine grounds.  
@@ -81,32 +92,41 @@ Both were designated cultural properties in Shōwa 44 (1969).
 ; Main Hall  
 : Nagare-zukuri style, with a copper roof.  
 ; Shigure Shrine  
-: Enshrines {{ill|Miketsu-no-Kami|ja|水分神|1=Mikumari|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Miketsu-no-Kami|qq=}}, {{ill|Raijin|en|Raijin|qid=Q12808082|lt=Raijin|1=Raijin}}, {{ill|Okami|ja|高龗神|12=simple|13=User:Immanuelle/Okami|ja_comment=jawiki redirects to 淤加美神|1=Kuraokami|comment=changed title based on wikidata|qid=Q644201}}, and {{ill|Watatsumi|ja|海童神|12=simple|13=User:Immanuelle/Watatsumi|ja_comment=jawiki link invalid|qid=Q135505729|1=Watatsumi}}. Known for hosting rainmaking rituals for the 24 villages of Iyo District.  
+: Enshrines {{ill|Miketsu-no-Kami|ja|水分神}}, {{ill|Raijin|en|Raijin|qid=Q12808082|lt=Raijin}}, {{ill|Kuraokami|ja|高龗神|12=simple|13=User:Immanuelle/Okami|ja_comment=jawiki redirects to 淤加美神|comment=changed title based on wikidata|qid=Q644201}}, and {{ill|Watatsumi|ja|海童神|12=simple|13=User:Immanuelle/Watatsumi|ja_comment=jawiki link invalid|qid=Q135505729}}. Known for hosting rainmaking rituals for the 24 villages of Iyo District.  
+
 == Notes ==
 <references />
+
 == References ==
 * Shirai, Eiji & Doki, Masanori (Eds.) ''Shinzō Fukyūban Jinja Jiten'', Tokyo: Tokyo-do Shuppan, 1997, ISBN 4-490-10474-X.  
 * Tanikawa, Kenichi (Ed.) ''Nihon no Kamigami: Jinja to Seichi 2 Sanyō Shikoku'', Tokyo: Hakusuisha, 2000, ISBN 4-560-02502-9.  
 * Matsumae Town History Editorial Committee, ''Matsumae Town History'', Matsumae Town Office, 1979.  
 * Iyo City History Editorial Committee, ''Iyo City History'', Iyo City, 1986.  
+
 == External Links ==
 {{Coordinate list}}
 {{shinto shrines}}
+
+{{translated page|ja|伊予神社|version=104561724|comment=Imported full ja history}}
+
+{{Commons category|Iyo-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Iyo Shrine (Q11378828)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Iyo Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| RONSHA || {{ill|Iyo Shrine|lt=Iyo Shrine|ja|伊予神社|commons|Category:Iyo-jinja|qid=Q11378828|1=Iyo Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Iyono Shrine|lt=Iyono Shrine|qid=Q135041429|1=Iyono Shrine}}; {{ill|Iyotsuhikono- Shrine|lt=Iyotsuhikono- Shrine|qid=Q135041437|1=Iyotsuhikono- Shrine}}; {{ill|Iyono Shrine|lt=Iyono Shrine|qid=Q135041429|1=Iyono Shrine}} || {{coord|33.783896|132.743233|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183265 DB]
+| RONSHA || {{ill|Iyo Shrine|lt=Iyo Shrine|ja|伊予神社|commons|Category:Iyo-jinja|qid=Q11378828}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || — || — || {{ill|Iyono Shrine|lt=Iyono Shrine|qid=Q135041429}}; {{ill|Iyotsuhikono- Shrine|lt=Iyotsuhikono- Shrine|qid=Q135041437}}; {{ill|Iyono Shrine|lt=Iyono Shrine|qid=Q135041429}} || {{coord|33.783896|132.743233|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183265 DB]
 |}
-
-{{translated page|ja|伊予神社|version=104561724|comment=Imported full ja history}}
-{{Commons category|Iyo-jinja}}
-
+{{wikidata link|Q11378828|da|d:Q11378828|ja|伊予神社|check_date=2026-05-15}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Architecture of Iyo City]]
 [[Category:Buildings and structures in Matsumae Town, Ehime Prefecture]]
 [[Category:Former Prefectural Shrines in Ehime Prefecture]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Iyo]]
 [[Category:Municipal History of Matsumae, Ehime Prefecture]]
 [[Category:Myōjin Taisha]]
@@ -114,6 +134,9 @@ Both were designated cultural properties in Shōwa 44 (1969).
 [[Category:Shinto shrines in Ehime Prefecture]]
 [[Category:Son-sha in Ehime Prefecture]]
 [[Category:Wikidata has short description]]
+[[Category:Myōjin Taisha]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Pages with deleted QID in ill template]]
+[[Category:Pages with duplicated content]]

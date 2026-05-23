@@ -1,33 +1,84 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kawasuso_Festival for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 '''Kawasu Matsuri''' (川裾祭) is a festival held at river confluences and near river mouths. It is also known as '''Kawasu-san''' or '''Kawasso-san'''. Additionally, "Kawasu" can be written as '''川すそ''' or '''川下'''.
+
 == Overview ==
-Kawasu Matsuri is observed in various regions from {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture|1=Fukui Prefecture}} to the northern part of {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, with some festivals having religious significance. Generally, these festivals take place at river confluences or near river mouths, but some are also held along coastlines distant from river mouths.
+Kawasu Matsuri is observed in various regions from {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}} to the northern part of {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, with some festivals having religious significance. Generally, these festivals take place at river confluences or near river mouths, but some are also held along coastlines distant from river mouths.
+
 == Major Kawasu Festivals ==
-; {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga|1=Takashima, Shiga}}, {{ill|Makino, Shiga|en|Makino, Shiga|qid=Q6739696|lt=Makino, Shiga|1=Makino, Shiga}}
-: The Kawasu Matsuri here is the annual festival of {{ill|Karasaki Shrine (Takashima)|ja|唐﨑神社 (高島市)|12=simple|13=User:Immanuelle/Karasaki Shrine (Takashima)|ja_comment=jawiki link invalid}}, located near {{ill|Lake Biwa|en|Lake Biwa|qid=Q200239|lt=Lake Biwa|1=Lake Biwa}}. It is held on the fourth Sunday of July and is the only major summer festival in the Kosai region.
-; {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga|1=Takashima, Shiga}}, {{ill|Shin'asahi, Shiga|en|Shin'asahi, Shiga|qid=Q7497069|lt=Shin'asu, Shiga|1=Shin'asahi, Shiga}}
-: The Kawasu Matsuri (also known as "Yamagata no Kawasu-san") is the summer festival of the subsidiary {{ill|Karasaki Shrine (Takashima)|ja|唐﨑神社 (高島市)|12=simple|13=User:Immanuelle/Karasaki Shrine (Takashima)|ja_comment=jawiki link invalid}} of {{ill|Nishinomiya Ōjinja|ja|西宮大神社|12=simple|13=User:Immanuelle/Nishinomiya Ōjinja|ja_comment=jawiki link invalid}} near Lake Biwa. Once held on July 28, it is now observed on the last Sunday of July, featuring traditional dances for entertainment until late at night.
-; {{ill|Ichijima, Hyōgo|en|Ichijima, Hyōgo|qid=Q5986143|lt=Ichijima, Tanba|1=Ichijima, Hyōgo}}, [[:en:Tanba, Hyōgo|Tanba, Hyōgo]]
-: The {{ill|Ichijima Kawasu Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasu Matsuri|1=Ichijima Kawasuso Matsuri|comment=changed title based on wikidata|qid=Q113636826}} is a river festival held along the {{ill|Takeda River (Hyōgo and Kyoto)|ja|竹田川 (兵庫県・京都府)|12=simple|13=User:Immanuelle/Takeda River (Hyōgo and Kyoto)|1=Takeda River|comment=changed title based on wikidata|qid=Q11599330}}, a tributary of the {{ill|Yura River (Japan)|en|Yura River (Japan)|qid=Q11577617|lt=Yura River (Japan)|1=Yura River (Japan)}}. Taking place on July 29, it features floating lanterns and a fireworks display of around 750 shells. Other related festivals in Tanba City include the "Ganso Kawasu Matsuri" in {{ill|Hikami, Hyōgo|en|Hikami, Hyōgo|qid=Q5760340|lt=Hikami, Hyōgo|1=Hikami, Hyōgo}}, "Kita Goi Kawasu Matsuri," and "Naramatsu Kawasu Matsuri."
-; {{ill|Shin'onsen, Hyōgo|en|Shin'onsen, Hyōgo|qid=Q1154955|lt=Shin'onsen, Hyōgo|1=Shin'onsen, Hyōgo}}, {{ill|Mikata District, Hyōgo|en|Mikata District, Hyōgo|qid=Q1155035|lt=Mikata District, Hyōgo|1=Mikata District, Hyōgo}}
-: The Kawashimo Grand Festival is a river festival held at the {{ill|Kishida River|ja|岸田川|12=simple|13=User:Immanuelle/Kishida River|ja_comment=jawiki link invalid}}, {{ill|Kuto River|ja|久斗川|12=simple|13=User:Immanuelle/Kuto River|ja_comment=jawiki link invalid}}, and {{ill|Tai River|ja|田井川|12=simple|13=User:Immanuelle/Tai River|1=taigawa|comment=changed title based on wikidata|qid=Q16282088}}. As the annual festival of {{ill|Utono Shrine|ja|宇都野神社|12=simple|13=User:Immanuelle/Utono Shrine|1=Utsuno- Shrine|comment=changed title based on wikidata|qid=Q109594469}}, it includes performances of the {{ill|Kirin Shishi-mai|ja|麒麟獅子舞|12=simple|13=User:Immanuelle/Kirin Shishi-mai|ja_comment=jawiki redirects to 麒麟獅子|1=Qilin dance|comment=changed title based on wikidata|qid=Q11677329}}, designated as an Important Intangible Folk Cultural Property of Hyōgo Prefecture. The festival features a procession of mikoshi (portable shrines) and a large fireworks display with around 3,000 shells, recognized as one of the {{ill|Three Great Festivals of Tajima|ja|但馬三大祭り|12=simple|13=User:Immanuelle/Three Great Festivals of Tajima|1=Tajima Three Great Festivals|comment=changed title based on wikidata|qid=Q11381623}}.
-; {{ill|Amino, Kyōtango|ja|網野町|12=simple|13=User:Immanuelle/Amino, Kyōtango|1=Amino|comment=changed title based on wikidata|qid=Q11607240}}, {{ill|Kyōtango|en|Kyōtango|qid=Q513897|lt=Kyōtango, Kyoto|1=Kyōtango}}
-: The {{ill|Asamogawa Minazuki Matsuri|ja|浅茂川水無月祭|12=simple|13=User:Immanuelle/Asamogawa Minazuki Matsuri|ja_comment=jawiki link invalid}} (commonly known as "Kawasso-san") is held annually on July 30 in Asamogawa, Amino, Kyōtango. The festival includes a sea-going mikoshi procession and concludes with a large summer fireworks display.
+; {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga}}, {{ill|Makino, Shiga|en|Makino, Shiga|qid=Q6739696|lt=Makino, Shiga}}
+: The Kawasu Matsuri here is the annual festival of {{ill|Karasaki Shrine (Takashima)|ja|唐﨑神社 (高島市)}}, located near {{ill|Lake Biwa|en|Lake Biwa|qid=Q200239|lt=Lake Biwa}}. It is held on the fourth Sunday of July and is the only major summer festival in the Kosai region.
+
+; {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima, Shiga}}, {{ill|Shin'asahi, Shiga|en|Shin'asahi, Shiga|qid=Q7497069|lt=Shin'asu, Shiga}}
+: The Kawasu Matsuri (also known as "Yamagata no Kawasu-san") is the summer festival of the subsidiary {{ill|Karasaki Shrine (Takashima)|ja|唐﨑神社 (高島市)}} of {{ill|Nishinomiya Ōjinja|ja|西宮大神社}} near Lake Biwa. Once held on July 28, it is now observed on the last Sunday of July, featuring traditional dances for entertainment until late at night.
+
+; {{ill|Ichijima, Hyōgo|en|Ichijima, Hyōgo|qid=Q5986143|lt=Ichijima, Tanba}}, [[:en:Tanba, Hyōgo|Tanba, Hyōgo]]
+: The {{ill|Ichijima Kawasuso Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasu Matsuri|comment=changed title based on wikidata|qid=Q113636826}} is a river festival held along the {{ill|Takeda River|ja|竹田川 (兵庫県・京都府)|12=simple|13=User:Immanuelle/Takeda River (Hyōgo and Kyoto)|comment=changed title based on wikidata|qid=Q11599330}}, a tributary of the {{ill|Yura River (Japan)|en|Yura River (Japan)|qid=Q11577617|lt=Yura River (Japan)}}. Taking place on July 29, it features floating lanterns and a fireworks display of around 750 shells. Other related festivals in Tanba City include the "Ganso Kawasu Matsuri" in {{ill|Hikami, Hyōgo|en|Hikami, Hyōgo|qid=Q5760340|lt=Hikami, Hyōgo}}, "Kita Goi Kawasu Matsuri," and "Naramatsu Kawasu Matsuri."
+
+; {{ill|Shin'onsen, Hyōgo|en|Shin'onsen, Hyōgo|qid=Q1154955|lt=Shin'onsen, Hyōgo}}, {{ill|Mikata District, Hyōgo|en|Mikata District, Hyōgo|qid=Q1155035|lt=Mikata District, Hyōgo}}
+: The Kawashimo Grand Festival is a river festival held at the {{ill|Kishida River|ja|岸田川}}, {{ill|Kuto River|ja|久斗川}}, and {{ill|taigawa|ja|田井川|12=simple|13=User:Immanuelle/Tai River|comment=changed title based on wikidata|qid=Q16282088}}. As the annual festival of {{ill|Utsuno- Shrine|ja|宇都野神社|12=simple|13=User:Immanuelle/Utono Shrine|comment=changed title based on wikidata|qid=Q109594469}}, it includes performances of the {{ill|Qilin dance|ja|麒麟獅子舞|12=simple|13=User:Immanuelle/Kirin Shishi-mai|ja_comment=jawiki redirects to 麒麟獅子|comment=changed title based on wikidata|qid=Q11677329}}, designated as an Important Intangible Folk Cultural Property of Hyōgo Prefecture. The festival features a procession of mikoshi (portable shrines) and a large fireworks display with around 3,000 shells, recognized as one of the {{ill|Tajima Three Great Festivals|ja|但馬三大祭り|12=simple|13=User:Immanuelle/Three Great Festivals of Tajima|comment=changed title based on wikidata|qid=Q11381623}}.
+
+; {{ill|Amino|ja|網野町|12=simple|13=User:Immanuelle/Amino, Kyōtango|comment=changed title based on wikidata|qid=Q11607240}}, {{ill|Kyōtango|en|Kyōtango|qid=Q513897|lt=Kyōtango, Kyoto}}
+: The {{ill|Asamogawa Minazuki Matsuri|ja|浅茂川水無月祭}} (commonly known as "Kawasso-san") is held annually on July 30 in Asamogawa, Amino, Kyōtango. The festival includes a sea-going mikoshi procession and concludes with a large summer fireworks display.
+
 == See Also ==
-* {{ill|Kita-Kinki|ja|北近畿|12=simple|13=User:Immanuelle/Kita-Kinki|1=Northern Kansai|comment=changed title based on wikidata|qid=Q5366089}}
-* {{ill|Ichijima Kawasu Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasu Matsuri|1=Ichijima Kawasuso Matsuri|comment=changed title based on wikidata|qid=Q113636826}}
+* {{ill|Northern Kansai|ja|北近畿|12=simple|13=User:Immanuelle/Kita-Kinki|comment=changed title based on wikidata|qid=Q5366089}}
+* {{ill|Ichijima Kawasuso Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasu Matsuri|comment=changed title based on wikidata|qid=Q113636826}}
+
 == References ==
 {{Reflist}}
+
 == External Links ==
 * [http://www.tanba.or.jp/blog/?p=936 Ichijima Kawasu Matsuri] - Tanba City Chamber of Commerce
 * [https://www.on-japan.jp/pressrelease/%E5%B7%9D%E8%A3%BE%E3%81%BE%E3%81%A4%E3%82%8A/ Karasaki Shrine] - Takashima City
+
 {{translated page|ja|川裾祭|version=98949539|comment=Imported full ja history}}
 
+==Merged second translation==
+[[File:Asamogawa Minazuki Matsuri(2).jpg|thumb|300px|浅茂川水無月祭(京都府京丹後市網野町）]]
+[[File:20140729 Ichijima-Kawasuso Matsuri 市島川裾祭（丹波市市島町）竹田川DSCF0503.JPG|thumb|市島川裾祭（丹波市市島町）]]
+
+'''Kawasuso Matsuri''' (川裾祭) is a festival held at the confluence or near the mouth of a river.<ref name="kokugo">{{Cite book|year=1983|title=日本国語大辞典|publisher={{ill|Shogakukan|en|Shogakukan|qid=Q785697|lt=Shogakukan}}}}</ref> It is also known as '''Kawasuso-san''' or '''Kawasso-san'''<ref name="3tan">{{Cite web|和書|title=三たん事典「人と祭り編」:川裾祭り 夏の夕べの風物詩|url=http://www.3tan.jp/1kan/kurasi/12.html|publisher=三たん地方開発促進協議会|accessdate=2012-02-03}}</ref>. Moreover, the name '''Kawasuso''' is alternatively written as '''Kawasuso''' or '''Kawashimo'''<ref name="hyogo">{{Cite book|year=1983|title=兵庫県大百科事典(上巻)|publisher={{ill|Kobe Shimbun Co.|ja|神戸新聞社|lt=Kobe Shimbun Publishing Center|lt_ja=神戸新聞出版センター|12=simple|13=User:Immanuelle/Kobe Shimbun|comment=changed title based on wikidata|qid=Q14619003}}|isbn=4875211007}}</ref>.
+
+== Overview ==
+{{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}} to {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}} in the north, various locales feature this festival – sometimes as a Shinto ritual.<ref name="kokugo"/><ref name="3tan"/> Generally, it is held at a river’s confluence or near its mouth, though there are cases where it takes place along coastal areas distant from the river mouth.<ref name="hyogo"/>
+
+== Main Kawasuso Festivals ==
+
+; {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}} {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima City}} {{ill|Makino, Shiga|en|Makino, Shiga|qid=Q6739696|lt=Makino Town}}
+: The Kawasuso Matsuri here is the annual festival of {{ill|Karasaki Shrine|ja|唐﨑神社 (高島市)|lt=Karasaki Shrine}}, celebrated near {{ill|Lake Biwa|en|Lake Biwa|qid=Q200239|lt=Lake Biwa}}. It is held on the fourth Sunday of July and is the only major summer festival in the western lake region.<ref>{{Cite web|和書|title=神社紹介:唐崎神社|url=http://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1320|publisher={{ill|Jinjachō|ja|滋賀県神社庁|12=simple|13=User:Immanuelle/Shiga Prefecture Shrine Office|ja_comment=jawiki redirects to 神社庁|comment=changed title based on wikidata|qid=Q11590703}}|accessdate=2012-02-03}}</ref>
+; {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture}} {{ill|Takashima, Shiga|en|Takashima, Shiga|qid=Q845794|lt=Takashima City}} {{ill|Shin'asahi, Shiga|en|Shin'asahi, Shiga|qid=Q7497069|lt=Shin-Asahi Town}}
+: Kawasuso Matsuri (Yamagata Kawasso-san) is the summer festival of the auxiliary Karasaki Shrine of {{ill|Nishinomiya Ōjin Shrine|ja|西宮大神社 (高島市)|lt=Nishinomiya Ōjin Shrine}}, located near {{ill|Lake Biwa|en|Lake Biwa|qid=Q200239|lt=Lake Biwa}}. It was once held on July 28 but now takes place on the last Sunday of July. Following the morning ceremonies, cooling dances are performed into the late evening as part of a lively ritual.
+; {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}} [[:en:Tanba, Hyōgo|Tanba City]] {{ill|Ichijima, Hyōgo|en|Ichijima, Hyōgo|qid=Q5986143|lt=Ichijima Town}} Ichijima
+: {{ill|Ichijima Kawasuso Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasuso Matsuri|comment=changed title based on wikidata|qid=Q113636826}} is a river festival of the Takeda River—a tributary of the {{ill|Yura River (Japan)|en|Yura River (Japan)|qid=Q11577617|lt=Yura River}}—held on July 29. The event features a floating lantern ceremony and a fireworks display of approximately 750 shots.<ref>{{Cite web|和書|title=市島川裾祭り|url=http://www.tambacity-kankou.jp/modules/weblinks/singlelink.php?lid=63|publisher=丹波市観光協会|accessdate=2012-02-03}}</ref><ref>{{cite news|title=市島川裾祭り花火協力金募る|url=http://tanba.jp/modules/topics/index.php?page=article&storyid=4309|publisher=丹波新聞|date=2011-07-07|accessdate=2012-02-03|archiveurl=https://web.archive.org/web/20160504111711/http://tanba.jp/modules/topics/index.php?page=article&storyid=4309|archivedate=2016-05-04}}</ref> In Tanba City, there are also other related celebrations, such as the Original Kawasuso Matsuri ({{ill|Hikami, Hyōgo|en|Hikami, Hyōgo|qid=Q5760340|lt=Hikami Town}} Hongo)<ref name="3tan"/>, Kitagoyu Kawasuso Matsuri ({{ill|Hikami, Hyōgo|en|Hikami, Hyōgo|qid=Q5760340|lt=Hikami Town}} Miyu), and Narimatsu Kawasuso Matsuri ({{ill|Hikami, Hyōgo|en|Hikami, Hyōgo|qid=Q5760340|lt=Hikami Town}} Narimatsu).<ref>{{Cite web|和書|title=北御油川裾祭|url=http://tanba.jp/modules/piCal/index.php?action=View&event_id=0000002342|publisher=丹波新聞|accessdate=2012-02-03}}</ref><ref>{{Cite web|和書|title=成松川裾まつり|url=http://kitakinki.gr.jp/modules/piCal/index.php?smode=Monthly&action=View&event_id=0000000043&caldate=2010-7-5|publisher=北近畿広域観光連盟|accessdate=2012-02-03}}</ref>
+; {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}} {{ill|Mikata District, Hyōgo|en|Mikata District, Hyōgo|qid=Q1155035|lt=Mikata District}} {{ill|Shin'onsen, Hyōgo|en|Shin'onsen, Hyōgo|qid=Q1154955|lt=Shinonsen Town}}
+: The Kawashimo Grand Festival is a river celebration held on the Kishida, Kuto, and Tai Rivers.<ref>{{Cite web|和書|title=浜坂の海岸と川下大祭|url=http://www.pref.hyogo.jp/JPN/apr/hyogoshizen/reddata2011/4-13/sk191.pdf|format=pdf|publisher={{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}|accessdate=2012-02-03}}</ref> It is the annual festival of {{ill|Utsuno- Shrine|ja|宇都野神社|12=simple|13=User:Immanuelle/Utuno Shrine|comment=changed title based on wikidata|qid=Q109594469}}, featuring the offering of the Kirin Lion Dance—a performance designated as an Important Intangible Folk Cultural Property by Hyōgo Prefecture—and a procession in which mikoshi and other sacred objects parade through the town.<ref>{{Cite web|和書|title=但馬三大祭の一つ「川下大祭」
+ |url=http://www.town.shinonsen.hyogo.jp/page/f5705d2964953b4cc6a5bc751697a3b9.html|publisher={{ill|Shin'onsen, Hyōgo|en|Shin'onsen, Hyōgo|qid=Q1154955|lt=Shinonsen Town}}|accessdate=2012-02-03}}</ref> A fireworks display featuring roughly 3000 shots is also held, making it one of the {{ill|Tajima Three Great Festivals|ja|但馬三大祭り|12=simple|13=User:Immanuelle/Tajima Three Great Festivals|comment=changed title based on wikidata|qid=Q11381623}}.
+; {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}} {{ill|Kyōtango|en|Kyōtango|qid=Q513897|lt=Kyotango City}} {{ill|Amino|ja|網野町|12=simple|13=User:Immanuelle/Amino Town|comment=changed title based on wikidata|qid=Q11607240}}
+: The Asamogawa Minazuki Festival (commonly known as Kawasso-san) is an annual summer celebration held on July 30 in the Asamogawa district of Amino Town, Kyotango City, Kyoto Prefecture. It features a maritime procession—known as kaijōtogyo—and an evening cooling fireworks display.<ref>{{Cite web|url=https://www.city.kyotango.lg.jp/material/files/group/13/a_asamogawah2608_3.pdf|title=a_asamogawah2608_3.pdf|format=PDF|publisher=京丹後市|date=2013-08-19|accessdate=2022-07-30}}</ref>
+
+== See Also ==
+* {{ill|Northern Kansai|ja|北近畿|12=simple|13=User:Immanuelle/Northern Kinki|comment=changed title based on wikidata|qid=Q5366089}}
+* {{ill|Ichijima Kawasuso Matsuri|ja|市島川裾まつり|12=simple|13=User:Immanuelle/Ichijima Kawasuso Matsuri|comment=changed title based on wikidata|qid=Q113636826}}
+
+== Footnotes ==
+
+=== Sources ===
+{{Reflist}}
+
+== External Links ==
+* [http://www.tanba.or.jp/blog/?p=936 {{ill|Ichijima Kawasuso Matsuri|ja|市島の川裾祭り}}] - Tanba City Chamber of Commerce
+* [https://www.on-japan.jp/pressrelease/%E5%B7%9D%E8%A3%BE%E3%81%BE%E3%81%A4%E3%82%8A/ {{ill|Karasaki Shrine|ja|唐崎神社}}] - Takashima City
+{{japan-culture-stub}}
+
+{{translated page|ja|川裾祭|version=98949539|comment=Imported full ja history}}
+
+{{wikidata link|Q11479133|ja|川裾祭|ja|7月31日|ja|春日町 (兵庫県)|ja|丹波市|ja|江戸時代|ja|竹田川 (兵庫県・京都府)|ja|太陰暦|ja|万灯流し|ja|黒井駅 (兵庫県)|ja|春日インターチェンジ|ja|舞鶴若狭自動車道|ja|あやべ水無月まつり|ja|愛宕祭 (丹波市)|ja|国領水無月祭|ja|%E5%9B%BD%E9%A0%98%E6%B0%B4%E7%84%A1%E6%9C%88%E7%A5%AD|check_date=2026-05-17}}
 [[Category:Culture of Rivers]]
 [[Category:Festivals in Fukui Prefecture]]
 [[Category:Festivals in Hyogo Prefecture]]
 [[Category:Festivals in Kyoto Prefecture]]
 [[Category:Festivals in Shiga Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no English label]]
 [[Category:Wikidata no short description]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]

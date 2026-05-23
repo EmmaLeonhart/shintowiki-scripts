@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsunaga_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Tsunaga Shrine, Niikawa Shrine, Iwai Shrine
 | religious_affiliation = [[Shinto]]
@@ -21,42 +23,69 @@
 | festival = 
 | Rituals = {{ill|Kannamesai Festival|lt=Kannamesai Festival|lt=Kannamesai|ja|神周祭|12=simple|13=User:Immanuelle/Kannamesai|ja_comment=jawiki link invalid}}
 }}
-'''Tsunaga Shrine''' (つながじんじゃ) is a {{ill|sessha|ja|擬社|12=simple|13=User:Immanuelle/sessha|ja_comment=jawiki link invalid}} of {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Kōtai Jingū (Inner Shrine)|ja|內宮|12=simple|13=User:Immanuelle/Kōtai Jingū (Inner Shrine)|ja_comment=jawiki link invalid}}, part of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Jingū}}. Located on the west bank of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}, the shrine is situated at the foot of Mount Tsuzukayama, directly across from the {{ill|Uji Bridge (Ise City)|lt=Uji Bridge (Ise City)|lt=Uji Bridge (Ise)|ja|宇治橋|12=simple|13=User:Immanuelle/Uji Bridge (Ise)|qq=}}.<ref name="gk">Gakken Publishing (2013): p.54</ref> This article also covers {{ill|Nīkawa Shrine|ja|新川神社|12=simple|13=User:Immanuelle/Niikawa Shrine|comment=changed title based on wikidata|qid=Q11502105}} and {{ill|Ishii Shrine|ja|石井神社|12=simple|13=User:Immanuelle/Ishii Shrine|qq=}}, both massha of the Inner Shrine and located at the same site.
+
+'''Tsunaga Shrine''' (つながじんじゃ) is a {{ill|sessha|ja|擬社|12=simple|13=User:Immanuelle/sessha|ja_comment=jawiki link invalid}} of {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Kōtai Jingū (Inner Shrine)|ja|內宮|12=simple|13=User:Immanuelle/Kōtai Jingū (Inner Shrine)|ja_comment=jawiki link invalid}}, part of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Jingū}}. Located on the west bank of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}, the shrine is situated at the foot of Mount Tsuzukayama, directly across from the {{ill|Uji Bridge (Ise City)|lt=Uji Bridge (Ise City)|lt=Uji Bridge (Ise)|ja|宇治橋|12=simple|13=User:Immanuelle/Uji Bridge (Ise)}}.<ref name="gk">Gakken Publishing (2013): p.54</ref> This article also covers {{ill|Nīkawa Shrine|ja|新川神社|12=simple|13=User:Immanuelle/Niikawa Shrine|comment=changed title based on wikidata|qid=Q11502105}} and {{ill|Ishii Shrine|ja|石井神社|12=simple|13=User:Immanuelle/Ishii Shrine}}, both massha of the Inner Shrine and located at the same site.
+
 All three shrines were designated by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}, with water deities as their enshrined deities.<ref name="gk"/><ref name="ic">Ise Culture Institute (2008): p.116</ref>
+
 == Overview ==
-The shrines are located approximately 200 meters from the Uji Bridge, which marks the entrance to the Inner Shrine’s sacred precincts, in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise City}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Uji Imazai-cho.<ref name="ic1">Ise Culture Institute (2008): p.111</ref> Within 20 meters of Tsunaga Shrine is the {{ill|Aedo Hashihime Shrine|ja|飼土橋姫神社|12=simple|13=User:Immanuelle/Aedo Hashihime Shrine|ja_comment=jawiki link invalid}}, and 50 meters away are the {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Ōmizujinja|ja|大水神社|12=simple|13=User:Immanuelle/Ōmizujinja|qq=}}, {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Kawai Shrine|ja|川相神社|12=simple|13=User:Immanuelle/Kawai Shrine|ja_comment=jawiki redirects to 大水神社}}, and {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Kumabuchi Shrine|ja|熊溓神社|12=simple|13=User:Immanuelle/Kumabuchi Shrine|ja_comment=jawiki link invalid}}, making a total of seven shrines in the area.<ref>Ise Culture Institute (2008): pp.111, 116</ref> The site also houses the predecessor to the Jingu Library, the old Hayasaki Library.<ref>Ise Culture Institute (2008): p.117</ref>
+The shrines are located approximately 200 meters from the Uji Bridge, which marks the entrance to the Inner Shrine’s sacred precincts, in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise City}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Uji Imazai-cho.<ref name="ic1">Ise Culture Institute (2008): p.111</ref> Within 20 meters of Tsunaga Shrine is the {{ill|Aedo Hashihime Shrine|ja|飼土橋姫神社|12=simple|13=User:Immanuelle/Aedo Hashihime Shrine|ja_comment=jawiki link invalid}}, and 50 meters away are the {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Ōmizujinja|ja|大水神社|12=simple|13=User:Immanuelle/Ōmizujinja}}, {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Kawai Shrine|ja|川相神社|12=simple|13=User:Immanuelle/Kawai Shrine|ja_comment=jawiki redirects to 大水神社}}, and {{ill|Ōmizu Shrine|lt=Ōmizu Shrine|lt=Kumabuchi Shrine|ja|熊溓神社|12=simple|13=User:Immanuelle/Kumabuchi Shrine|ja_comment=jawiki link invalid}}, making a total of seven shrines in the area.<ref>Ise Culture Institute (2008): pp.111, 116</ref> The site also houses the predecessor to the Jingu Library, the old Hayasaki Library.<ref>Ise Culture Institute (2008): p.117</ref>
+
 The three shrines share a single building constructed in {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}}, with wooden planks for roofing. The structure faces southwest and is surrounded by a single fence of {{ill|tamagaki|ja|玉柵|12=simple|13=User:Immanuelle/tamagaki|ja_comment=jawiki link invalid}}.<ref name="sk1">Shikinaisha Research Group (1990): p.251</ref> There is no offertory box at the site. The total area of the shrine grounds is approximately 1,256 square meters (379.94 tsubo).<ref name="sk1">Shikinaisha Research Group (1990): p.251</ref> Records from 1933 mention a wisteria tree previously located at the shrine’s entrance, believed to bestow strength to children, but the tree was already gone by that time.<ref name="sk9">Shikinaisha Research Group (1990): p.249</ref>
+
 == Tsunaga Shrine ==
-Tsunaga Shrine is Ranked 14th among the 27 sessha of the Inner Shrine.<ref>Ujiyamada City Office (1929): pp.9-10</ref> The area was historically called "Tsunagahara" and served as a dock for boats navigating the Isuzu River.<ref name="ic"/> It is said that Yamato-hime no Mikoto also landed here.<ref name="ic"/> The shrine is referred to as "Tsunaga Ōmizujinja" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}.<ref>Shikinaisha Research Group (1990): p.246</ref>
+Tsunaga Shrine is Ranked 14th among the 27 sessha of the Inner Shrine.<ref>Ujiyamada City Office (1929): pp.9-10</ref> The area was historically called "Tsunagahara" and served as a dock for boats navigating the Isuzu River.<ref name="ic"/> It is said that Yamato-hime no Mikoto also landed here.<ref name="ic"/> The shrine is referred to as "Tsunaga Ōmizujinja" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}.<ref>Shikinaisha Research Group (1990): p.246</ref>
+
 The enshrined deity is Sunaga-hime no Mikoto, a water deity.<ref name="ic"/> She is said to be a child of {{ill|Ōminakami no Mikoto|ja|大水上命|12=simple|13=User:Immanuelle/Ōminakami no Mikoto|ja_comment=jawiki link invalid}}.<ref>{{Cite web|url=http://www.sengukan.jp/wp-content/themes/sengukan/shrine/area08/04.html?iframe=true&width=1000&height=700|title=Tsunaga Shrine つながじんじゃ>> - 125 Shrines|publisher=Jingu Office|accessdate=2013-10-01}}</ref>
+
 == Niikawa Shrine ==
 Niikawa Shrine is Ranked 6th among the 16 massha of the Inner Shrine.<ref name="uy3">Ujiyamada City Office (1929): p.13</ref>
+
 The enshrined deity is Niikawa-hime no Mikoto, a water deity.<ref name="ic"/> She was the guardian deity of a nearby dock.<ref name="gk"/> Like the other two shrines, she is said to be a child of Ōminakami no Mikoto.<ref name="gk"/>
+
 == Iwai Shrine ==
 Iwai Shrine is Ranked 7th among the 16 massha of the Inner Shrine.<ref name="uy3"/>
+
 The enshrined deity is Takaminakami no Mikoto, the guardian deity of stone springs.<ref name="ic"/><ref name="gk"/> Like the other two shrines, he is said to be a child of Ōminakami no Mikoto.<ref name="gk"/> He is also worshipped at the {{ill|Otsuchi Mioya Shrine|lt=Uji-no-Nuki Shrine|ja|宇治之奴鬼神社|12=simple|13=User:Immanuelle/Otsuchi Mioya Shrine|ja_comment=jawiki link invalid}}, another massha of the Inner Shrine.<ref>Ise Culture Institute (2008): p.116</ref>
+
 == History ==
 Tsunaga Shrine is believed to have been founded in the 26th year of {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}}, according to the ''Yamato-hime no Mikoto Seiki''.<ref name="sk9"/> The ''Kōtai Jingū Ritual Record'' indicates that the shrine grounds once covered three chō (approximately 3 hectares), significantly larger than the present site.<ref name="sk1"/> Originally situated closer to the Isuzu River, the shrine played a more prominent role in ancient rituals.<ref name="sk9"/>
+
 After the medieval period, rituals ceased but were revived on {{ill|December 21|ja|十二月二十一日|12=simple|13=User:Immanuelle/December 21|ja_comment=jawiki link invalid}}, Kanbun 3 (1664), under the guidance of Ōnakatomi no Seichō, who followed the description in the ''Yamato-hime no Mikoto Seiki'' to identify the site.<ref>Shikinaisha Research Group (1990): p.247</ref> In 1871, Niikawa Shrine and Iwai Shrine were relocated to the same grounds as Tsunaga Shrine due to interruptions in their rituals.<ref name="sk9"/>
+
 The shrine building was reconstructed in 1916 and 1956, with major renovations carried out in 1977.<ref name="sk1"/>
+
 == Festivals ==
-The shrine hosts regular festivals, including the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}} (February), {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June and December), {{ill|Kannamesai Festival|lt=Kannamesai Festival|lt=Kannamesai|ja|神周祭|12=simple|13=User:Immanuelle/Kannamesai|ja_comment=jawiki link invalid}} (October), and {{ill|Niiname-no-Matsuri|lt=Niiname-no-Matsuri|lt=Niinamesai|ja|新周祭|12=simple|13=User:Immanuelle/Niinamesai|ja_comment=jawiki link invalid}} (November). Ceremonies for the New Year (January 1), Kigensetsu (February 11), and other events are performed remotely.<ref name="sk0"/>
+The shrine hosts regular festivals, including the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}} (February), {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri}} (June and December), {{ill|Kannamesai Festival|lt=Kannamesai Festival|lt=Kannamesai|ja|神周祭|12=simple|13=User:Immanuelle/Kannamesai|ja_comment=jawiki link invalid}} (October), and {{ill|Niiname-no-Matsuri|lt=Niiname-no-Matsuri|lt=Niinamesai|ja|新周祭|12=simple|13=User:Immanuelle/Niinamesai|ja_comment=jawiki link invalid}} (November). Ceremonies for the New Year (January 1), Kigensetsu (February 11), and other events are performed remotely.<ref name="sk0"/>
+
 == Flora ==
 A 1977 survey of the grounds found 95 trees, including Kaya, Maki, Sugi, Kashi, Shii, Yabutsubaki, Inubiwa, and Akamegashiwa. Notable specimens include four camphor trees over 80 cm in diameter, with the largest measuring over 150 cm.<ref name="sk1"/>
+
 == Access ==
 ; To Uji Bridge
 * From {{ill|Japan Railways Group|en|Japan Railways Group|qid=Q864495|lt=JR}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangu Line}} or {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Kintetsu Yamada Line}}, alight at {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise Station}} and take a Mie Kotsu Bus to "Naiku-mae," approximately 15 minutes.<ref name="mkr">Mie Prefecture Tourism Federation</ref>
 * By car, 5 minutes south from either the Ise West IC or Ise IC.
 ; From Uji Bridge
 * Cross the Uji Bridge rotary and walk approximately 200 meters (4 minutes).<ref name="ic1"/>
+
 == References ==
 {{Reflist}}
+
 == Related Articles ==
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m01/0101.html Tsunaga Shrine (with Niikawa and Iwai Shrines)] - Jingu Worshipers' Association
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|津長神社|version=98170664|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tsunaga Shrine (Q17215982)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -65,13 +94,15 @@ A 1977 survey of the grounds found 95 trees, including Kaya, Maki, Sugi, Kashi, 
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Tsunaga Shrine|lt=Tsunaga Shrine|ja|津長神社|qid=Q17215982}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Kōtai Jingū|qid=Q11581011}} || — || {{coord|34.459915|136.721539|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181128 DB]
 |}
 
-{{translated page|ja|津長神社|version=98170664|comment=Imported full ja history}}
-
+{{wikidata link|Q17215982|ja|津長神社|check_date=2026-05-12}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]

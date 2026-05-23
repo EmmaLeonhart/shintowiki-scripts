@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shidori_Shrine_%28Tottori%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25595991611|time triggered pipeline]] -->
+
 {{Multiple issues
 |accuracy=2016-10
 |notability=2016-10
@@ -11,7 +12,7 @@
 |latitude    = 35/26/25.6/N
 |longitude   = 134/12/1.9/E
 |label       = left
-|enshrined_deities = {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi|qq=}}<br />{{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}} ({{ill|Ōkuninushi|de|Ōkuninushi no Mikoto|ja|大国主命|zh|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi no Mikoto|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}})<br />{{ill|Futsunushi|en|Futsunushi|qid=Q1107286|qid=Q1107286|lt=Futsunushi no Kami}}<br />{{ill|Takemikazuchi|de|Takemikazuchi no Kami|ja|武甕槌命|zh|武甕槌命|12=simple|13=User:Immanuelle/Takemikazuchi no Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q1502690|comment=changed title based on wikidata|qid=Q1502690}}
+|enshrined_deities = {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi}}<br />{{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}} ({{ill|Ōkuninushi|de|Ōkuninushi no Mikoto|ja|大国主命|zh|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi no Mikoto|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}})<br />{{ill|Futsunushi|en|Futsunushi|qid=Q1107286|qid=Q1107286|lt=Futsunushi no Kami}}<br />{{ill|Takemikazuchi|de|Takemikazuchi no Kami|ja|武甕槌命|zh|武甕槌命|12=simple|13=User:Immanuelle/Takemikazuchi no Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q1502690|comment=changed title based on wikidata|qid=Q1502690}}
 |goshintai   = 
 |shrine_Rank = {{ill|Engishiki Jinmyōchō|de|Shikinaisha|ja|式内社|2=ja|3=式内社|zh|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)
 <br />Former {{ill|Gō-sha|de|Gōsha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|zh|郷社|1=Gō-sha|WD=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#District_shrine|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
@@ -25,32 +26,52 @@
 |prefecture= {{ill|Tottori (city)|qid=Q200731}}
 |coordinates= {{Coord|35.440444|N|134.200528}}
 }}
+
 '''Shitori Shrine''' (倭文神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Tottori Prefecture|en|Tottori Prefecture|qid=Q133935|lt=Tottori Prefecture}}, {{ill|Tottori (city)|en|Tottori (city)|qid=Q200731|lt=Tottori}} Shitori area. It is listed as a {{ill|Engishiki Jinmyōchō|de|Shikinaisha|ja|式内社|2=ja|3=式内社|zh|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and under the modern system of Ranked Shinto shrines ({{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of ranked Shinto shrines}}) it was formerly classified as a {{ill|Gō-sha|de|Gōsha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|zh|郷社|1=Gō-sha|WD=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=Modern_system_of_ranked_Shinto_shrines#District_shrine|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}. The shrine stands on the western slope of the mountain in the Shitori settlement, located in the southwestern part of Tottori City.
+
 == history ==
-The exact date of the shrine’s founding (勧請) is unknown, but it is said to have originated when members of the {{ill|Shizuri clan|de|Shitori/ Shizuri-Clan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori/Shizuri clan|13=User:Immanuelle/Shizuri clan|qq=}} enshrined their ancestral deity. It is counted among the seven shrines of {{ill|Takakusa district|de|Takakusa Distrikt|ja|高草郡|zh|高草郡|12=simple|13=User:Immanuelle/Takakusa District|comment=changed title based on wikidata|qid=Q11672760}} recorded in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|de|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|zh|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}. In the medieval period and beyond, because the enshrined deity {{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}} ({{ill|Ōkuninushi|de|Ōkuninushi no Mikoto|ja|大国主命|zh|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi no Mikoto|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}}) was said to have seven names, it became known as the “Seven-Body Great Deity” (七躰大明神, Nanatai Daimyōjin) and was revered as the local tutelary deity ({{ill|Ubusunagami|en|Ubusunagami|qid=Q1392097|lt=Ubusunagami}}).
+The exact date of the shrine’s founding (勧請) is unknown, but it is said to have originated when members of the {{ill|Shizuri clan|de|Shitori/ Shizuri-Clan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori/Shizuri clan|13=User:Immanuelle/Shizuri clan}} enshrined their ancestral deity. It is counted among the seven shrines of {{ill|Takakusa district|de|Takakusa Distrikt|ja|高草郡|zh|高草郡|12=simple|13=User:Immanuelle/Takakusa District|comment=changed title based on wikidata|qid=Q11672760}} recorded in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|de|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|zh|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}. In the medieval period and beyond, because the enshrined deity {{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}} ({{ill|Ōkuninushi|de|Ōkuninushi no Mikoto|ja|大国主命|zh|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi no Mikoto|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}}) was said to have seven names, it became known as the “Seven-Body Great Deity” (七躰大明神, Nanatai Daimyōjin) and was revered as the local tutelary deity ({{ill|Ubusunagami|en|Ubusunagami|qid=Q1392097|lt=Ubusunagami}}).
+
 During the Tenshō era (1573–1592), {{ill|Takeda Takanobu|de|Takeda Takanobu|ja|武田高信|zh|武田高信|12=simple|13=User:Immanuelle/Takeda Takanobu|comment=changed title based on wikidata|qid=Q6639798}}, lord of {{ill|Tamatsu Castle|de|Tamatsu Burg|ja|玉津城|zh|玉津城|12=simple|13=User:Immanuelle/Tamatsu Castle|ja_comment=jawiki link invalid}}, built a “Three-foot” sub-shrine; in the Keichō era (1598–1615), {{ill|Kamei Korenori|en|Kamei Korenori|qid=Q848778|lt=Kamei Norisuke}}, lord of {{ill|Shikano Castle|en|Shikano Castle|qid=Q11677293|lt=Shikano Castle}}, offered a treasured sword; and in Kan’ei 9 (1632), domain lord {{ill|Ikeda Mitsunaka|de|Ikeda Mitsunaka|ja|池田光仲|zh|池田光仲|12=simple|13=User:Immanuelle/Ikeda Mitsunaka|comment=changed title based on wikidata|qid=Q11551720}} donated 1 koku, 3 to, 1 shō, and 7 gō of shrine land. It thus gained reverence as the guardian deity of the southwestern direction (坤) of {{ill|Tottori Castle|en|Tottori Castle|qid=Q1073699|lt=Tottori Castle}}.
+
 During the Edo period, not only the feudal lords but also the common people held it in high regard. For instance, in the relocation of the shrine in Meiwa 1 (1764), the headman (大庄屋) contributed rice bales on behalf of the entire district, and in Bunka 7 (1810), the district commissioner (郡奉行) donated 100 momme of silver. Many local worshipers gathered at the Setsubun festival, and this popular devotion continued throughout the Inaba region until the early Shōwa period.
+
 In 1872 (Meiji 1), the shrine name was changed to “Shitori Jinja”; in 1874 (Meiji 4), it was Ranked as a village shrine; in 1915 (Taishō 4), it was designated a shrine for which the state offered shared expenses for rituals and offerings; in 1919 (Taishō 8), the main hall, hall of offerings, worship hall, and shrine office were renovated; and on October 1, 1943 (Shōwa 18), it was elevated to Gōsha status.<ref>Tottori Prefectural Shrine Magazine (鳥取県神社誌)</ref>
-The word “Shitori” (also read “Shizuri”) refers to silk textiles. According to tradition, the {{ill|Shizuri clan|de|Shitori-Klan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori clan|13=User:Immanuelle/Shizuri clan|qq=}}, a community engaged in weaving, lived in this area and enshrined their ancestor deity, “Shitori no Kami / Takehazuchi no Mikoto.”
-The four deities enshrined are {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi|qq=}}, {{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}}, {{ill|Futsunushi|qid=Q1107286|lt=Futsunushi|qid=Q1107286|lt=Futsunushi no Kami|de|Futsunushi|qid=Q1107286|lt=Futsunushi|qid=Q1107286|lt=Futsunushi no Kami|ja|經津主神|zh|経津主神|12=simple|13=User:Immanuelle/Futsunushi no Kami|ja_comment=jawiki link invalid}}, and {{ill|Takemikazuchi|de|Takemikazuchi no Kami|ja|武甕槌命|zh|武甕槌命|12=simple|13=User:Immanuelle/Takemikazuchi no Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q1502690|comment=changed title based on wikidata|qid=Q1502690}}.
+
+The word “Shitori” (also read “Shizuri”) refers to silk textiles. According to tradition, the {{ill|Shizuri clan|de|Shitori-Klan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori clan|13=User:Immanuelle/Shizuri clan}}, a community engaged in weaving, lived in this area and enshrined their ancestor deity, “Shitori no Kami / Takehazuchi no Mikoto.”
+
+The four deities enshrined are {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi}}, {{ill|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|de|Ōkuninushi|lt=Ōkuninushi|lt=Ōnamuchi no Mikoto|ja|大己貴命|zh|大己貴命|12=simple|13=User:Immanuelle/Ōnamuchi no Mikoto|qid=Q276944}}, {{ill|Futsunushi|qid=Q1107286|lt=Futsunushi|qid=Q1107286|lt=Futsunushi no Kami|de|Futsunushi|qid=Q1107286|lt=Futsunushi|qid=Q1107286|lt=Futsunushi no Kami|ja|經津主神|zh|経津主神|12=simple|13=User:Immanuelle/Futsunushi no Kami|ja_comment=jawiki link invalid}}, and {{ill|Takemikazuchi|de|Takemikazuchi no Kami|ja|武甕槌命|zh|武甕槌命|12=simple|13=User:Immanuelle/Takemikazuchi no Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q1502690|comment=changed title based on wikidata|qid=Q1502690}}.
+
 In the myth “{{ill|Hare of Inaba|en|Hare of Inaba|qid=Q2330988|lt=The Hare of Inaba}},” it is said that after helping the white hare, Ōkuninushi no Mikoto wrote a love letter here to the Princess Yagami. (It is believed that this actually refers to composing poetry at the time.)
+
 It is said that the love letter from Ōkuninushi no Mikoto was associated with the character for “文” (letter or text) and also with rolls of silk cloth.<ref>Shrine precinct information sign</ref>
+
 === Historical Origin ===
-According to the “Continued Chronicles of Japan” ({{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}}), under the entry for Wadō 5 (712) in the seventh month of autumn, it is noted that brocade was woven in Inaba Province. From this, we can infer that even before this year, the descendants of the shrine’s deity {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi|qq=}}, who were part of the {{ill|Shizuri clan|de|Shitori (Weaving)-Klan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori (Weaving) clan|13=User:Immanuelle/Shizuri clan|qq=}} originally based in the Katsuragi area of Yamato Province and engaged in weaving, had traveled here. They established Shitori Village while continuing their ancestral weaving industry, and then founded this shrine to enshrine their ancestral deity, Takehazuchi no Mikoto.<ref>Shrine-owned “YuiShoGaki” (由緒書)</ref>
+According to the “Continued Chronicles of Japan” ({{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}}), under the entry for Wadō 5 (712) in the seventh month of autumn, it is noted that brocade was woven in Inaba Province. From this, we can infer that even before this year, the descendants of the shrine’s deity {{ill|Takehazuchi|de|Takehazuchi no Mikoto|ja|建葉槌命|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|zh|建葉槌命|12=simple|13=User:Immanuelle/Takehazuchi no Mikoto|13=User:Immanuelle/Takehazuchi}}, who were part of the {{ill|Shizuri clan|de|Shitori (Weaving)-Klan|ja|倭文部|2=ja|3=倭文氏|4=zh|5=倭文氏|6=de|7=Shizuri Clan|8=fr|9=Clan Shizuri|lt=Shizuri Bemin (vassals of the Shizuri clan)|zh|倭文部|12=simple|13=User:Immanuelle/Shitori (Weaving) clan|13=User:Immanuelle/Shizuri clan}} originally based in the Katsuragi area of Yamato Province and engaged in weaving, had traveled here. They established Shitori Village while continuing their ancestral weaving industry, and then founded this shrine to enshrine their ancestral deity, Takehazuchi no Mikoto.<ref>Shrine-owned “YuiShoGaki” (由緒書)</ref>
+
 === On the Shitori Organization in Inaba and Hōki Provinces ===
 In ancient times, industrial production in {{ill|Inaba Province|en|Inaba Province|qid=Q1054338|lt=Inaba Province}} and {{ill|Hōki Province|en|Hōki Province|qid=Q1053703|lt=Hōki Province}} seems to have been relatively advanced, suggesting these areas were culturally developed.
+
 When examining sericulture and the production of silk among the farming population in Inaba and Hōki, it is important to note that these fabrics were produced as tribute ({{ill|Key (music)|en|Key (music)|qid=Q534932|lt=Chō (tribute)}}), not for daily use by ordinary farmers.
+
 Concerning the production of high-grade silk textiles, the entry of Wadō 5 (712) in the {{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}} for the seventh month, day of jinwu (壬午), lists 21 provinces, including Ise Province. Both Inaba and Hōki are among them. This confirms that the production of brocade and figured silk (“綾”) was flourishing in Inaba and Hōki from ancient times.
+
 “錦部” (Nishikibe) communities, deeply involved in producing brocade and figured silk, can be inferred from the existence of a person named “Nishikibe Shinafu-me” (錦部志奈布女) in Takaniwa-shō in Inaba Province (cited in “Heian Ibun”). Furthermore, the cloth known as “倭文布” (Shizuri or Shitori cloth), said to be a striped textile, also proves the existence of Shitori (倭文) organizations in ancient times. From nationwide distribution maps of Shitori communities created by researchers such as Kamijō Tanenosuke and Inoue Tatsuo, it is evident that they concentrated in the San’in and Tōkai regions. According to the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}, there are 14 “Shitori Shrines” (倭文神社) recorded nationwide: 6 in the San’in region, 5 in Tōkaidō, 2 in Tōsandō, and 2 in the Kinai. Another 8 shrines related to Shitori but not recorded in the Engishiki exist, with 7 of them in Tōkaidō.
+
 In Inaba, both the “Engishiki” Jinmyōchō and the “{{ill|Wamyō Ruijushō|de|Wamyō Ruijushō|ja|和名抄|zh|和名類聚抄|12=simple|13=User:Immanuelle/Wamyō Ruijushō|ja_comment=jawiki redirects to 和名類聚抄}}” note a “Shitori Shrine” (倭文神社) in Takakusa District. The “Heian Ibun” mentions a person named “Shitori Mahiro” (倭文真弘) from Takaniwa-shō.
+
 In both Inaba and Hōki, the sites of “Shitori Shrines” often occupy slightly elevated land near coasts, rivers, or lakes—this is true nationwide. Consequently, “Shitori communities” may have had close ties with “Ama (sea-people) communities,” and possibly with the {{ill|Hata clan|en|Hata clan|qid=Q987290|lt=Hata clan}} in terms of weaving technology. Thus, Shitori communities in Takakusa District’s Takaniwa-shō and in Kawamura District most likely produced high-grade silk. While these high-end products were initially luxuries for the imperial court nobility, over time the technology spread to ordinary people.<ref>Kamijō Tanenosuke: “A Preliminary Study on Shitori Communities,” in the journal Nihon Rekishi (日本歴史)</ref><ref>Inoue Tatsuo: “A Study of the Shōzei-chō (正税帳)”</ref>
+
 == Shaden and grounds ==
 [[File:Sukunemizu-shitori-tottori.png|thumb|Shitori no Sukune Mizu]]
 The main hall is an ichigen-sha {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} style with copper roof, rebuilt in Taishō 8 (1919). In the same year, a worship hall (two bays square) was also reconstructed, and the precincts were substantially expanded. The offering hall (幣殿), measuring two bays by one bay, was renovated in Shōwa 12 (1937), and a shrine kitchen (神饌殿) was built in that same year. In Shōwa 17 (1942), a purification font (手水舎) was constructed. There is also a lodging hall (参籠所) and a memorial shrine (祖霊舎) dedicated to the ancestors of parishioners. The precinct covers 747 tsubo (about 2,468 m²); in Shōwa 9 (1934), it measured 469 tsubo (about 1,550 m²). Within the grounds is “Shitori no Sukune Mizu,” said to be a miraculous water especially helpful for women’s health, though now its well is no longer in use. Additionally, near the large De River in front of the shrine there was once a sacred rice field (神饌田) used again as a ritual paddy after some time in private ownership.
+
 The first torii, donated by Okamura Ichizaemon in Meiji 2 (1869), is made of stone and stands about 3 meters tall and 2.4 meters wide; until recently it bore a hanging plaque (扁額) reading “倭文神社.” Records show that major reconstructions were carried out from Shōtoku 5 (1715) to Keiō 3 (1867) on 18 occasions, and the roof of the shrine buildings was replaced 13 times.<ref>Documents kept by the shrine priest’s family, “Records of Domain Shrine Holdings” (藩主社領帳)</ref>
+
 === Shrines and sub-shrines within the precincts ===
 * Kaze-no-miya Sha (風宮社) – enshrines the guardian deities of protection from storm and flood.
 * Soreisha (祖霊舎) – enshrines the ancestors of the parishioners.
+
 == Treasures and writings ==
 [[File:Houtou-shitori-tottori.png|thumb|The treasured sword offered by Lord {{ill|Kamei Korenori|en|Kamei Korenori|qid=Q848778|lt=Kamei Norisuke}} of Kano Castle]]
 * One mirror (diameter ~12 cm): donated by Nishio Kihei, forged by Fujiwara Mitsunaga
@@ -58,15 +79,20 @@ The first torii, donated by Okamura Ichizaemon in Meiji 2 (1869), is made of sto
 * One hanging plaque (width about 90 cm) with raised lettering “倭文神社,” donated by Okamura Juzaemon
 * Writings: “Thoughts on Shitori no Kami” by Motoori Uchitō
 * Writings: “On the Deities of Shitori Shrine” by Udagawa Masayoshi
+
 == Local information ==
 ; location
 * {{ill|Tottori Prefecture|en|Tottori Prefecture|qid=Q133935|lt=Tottori Prefecture}} {{ill|Tottori (city)|en|Tottori (city)|qid=Q200731|lt=Tottori}} Shitori 548-1
+
 ; Access
 * About 2 minutes by car from Tottori Minami IC on the {{ill|Tottori Expressway|en|Tottori Expressway|qid=Q11674838|lt=Tottori Expressway}}
+
 ; neighborhood
 * {{ill|Kawahara Castle|de|Burg Kawahara|ja|河原城|zh|河原城|12=simple|13=User:Immanuelle/Kawahara Castle|comment=changed title based on wikidata|qid=Q11553574}}
+
 == footnote ==
 {{Reflist}}
+
 == Related Books ==
 * Kadokawa Nihon Chimei Daijiten
 * Tottori Prefectural Local History
@@ -78,12 +104,30 @@ The first torii, donated by Okamura Ichizaemon in Meiji 2 (1869), is made of sto
 * Shitori Shrine Detailed Records “Inaba”
 * {{Cite book|和書|editor=|author=|year=1992|chapter=Shitori Shrine|title={{ill|Japanese Historical Topography Series|de|Nihon Rekishi Chimei Taikei|ja|日本歴史地名大系|zh|日本歴史地名大系|12=simple|13=User:Immanuelle/Nihon Rekishi Chimei Taikei|comment=changed title based on wikidata|qid=Q17213509}} 32 Tottori-ken no Chimei|publisher={{ill|Heibonsha|en|Heibonsha|qid=Q11482108|lt=Heibonsha}}|isbn=4582490328|ref={{Harvid|Shitori Shrine (Heibonsha)|1992}}}}
 * {{Cite book|和書|editor={{ill|Engishiki Jinmyōchō|de|Shikinaisha Forschungsgruppe|ja|式内社|2=ja|3=式内社|qq=draft研究会|zh|式内社|2=ja|3=式内社|qq=draft研究会|12=simple|13=User:Immanuelle/Shikinaisha Research Council|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}|author=Yamamoto Hiroshi|chapter=Shitori Shrine|year=1984|title=Shikinaisha Chōsa Hōkoku Vol.19|publisher={{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kōgakkan University}} Publishing Department|pages=1095-1099|isbn=|ref={{Harvid|Suiwakahime no Mikoto Shrine (Shikinaisha)|1984}}}}
+
 == External links ==
 * [http://shitori-jinjya.main.jp/ Shitori Shrine | Tottori City] (official page)
+
 == See Also ==
-* ''{{ill|Takehazuchi|de|Takahatsuchi-no-Mikoto|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|zh|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takahatsuchi-no-Mikoto|13=User:Immanuelle/Takehazuchi|qq=}}'' (also known as Amenohaikazuchi-no-Mikoto)
-* ''{{ill|Tanabatabime-no-Mikoto|en|Tanabatabime-no-Mikoto|12=simple|13=User:Immanuelle/Tanabatabime-no-Mikoto|qq=}}'' (also known as Amanoorihime)
+
+* ''{{ill|Takehazuchi|de|Takahatsuchi-no-Mikoto|ja|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|zh|天羽槌雄神|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto|12=simple|13=User:Immanuelle/Takahatsuchi-no-Mikoto|13=User:Immanuelle/Takehazuchi}}'' (also known as Amenohaikazuchi-no-Mikoto)
+* ''{{ill|Tanabatabime-no-Mikoto|en|Tanabatabime-no-Mikoto|12=simple|13=User:Immanuelle/Tanabatabime-no-Mikoto}}'' (also known as Amanoorihime)
+
+}}  
+
+'''Shōshoi''' (少初位)
+
 {{Shizuri Faith}}
+
+{{translated page|ja|倭文神社 (鳥取市)|version=101989884|comment=Imported full ja history}}
+
+[[ja:天羽槌雄神|1=Takehazuchi|fr|Takehazuchi|zh|天羽槌雄神|1=Takehazuchi|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto]]
+[[ja:倭文神社|しすりしんしや]]
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Shidori Shrine (Tottori) (Q28685016)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Inaba Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -91,15 +135,13 @@ The first torii, donated by Okamura Ichizaemon in Meiji 2 (1869), is made of sto
 |-
 | {{ill|Takakusa district|ja|高草郡|pl|Powiat Takakusa|zh|高草郡|qid=Q11672760}} || {{ill|Shidori Shrine (Tottori)|lt=Shitori Shrine|ja|倭文神社 (鳥取市)|qid=Q28685016}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|35.440469|134.200571|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182758 DB]
 |}
-
-{{translated page|ja|倭文神社 (鳥取市)|version=101989884|comment=Imported full ja history}}
-[[ja:天羽槌雄神|1=Takehazuchi|fr|Takehazuchi|zh|天羽槌雄神|1=Takehazuchi|2=ja|3=天羽槌雄神|4=zh|5=天羽槌雄神|6=fr|7=Takehazuchi|lt=Takehazuchi|lt=Takehazuchi-no-Mikoto]]
-[[ja:倭文神社|しすりしんしや]]
-
+{{wikidata link|Q28685016|ja|倭文神社 (鳥取市)|ja|鳥取市|ja|倭文神社 (湯梨浜町)|ja|湯梨浜町|ja|倭文神社 (倉吉市)|ja|倉吉市|ja|倭文神社 (遠野市)|ja|遠野市|ja|倭文神社 (奈良市)|ja|奈良市|ja|倭文神社 (津山市油木北)|ja|津山市|ja|倭文神社 (あわじ市倭文委文)|ja|南あわじ市|ja|大甕神社|ja|日立市|ja|石井神社|ja|笠間市|ja|天棚機姫神|ja|倭文神社|de|Shitori Shrine|check_date=2026-05-09}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Tottori (city)]]
 [[Category:Former Gō-sha in Tottori Prefecture]]
 [[Category:History of Tottori]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Inaba Province]]
 [[Category:Shinto shrines in Japan]]
 [[Category:Shinto shrines in Tottori Prefecture]]
@@ -107,5 +149,6 @@ The first torii, donated by Okamura Ichizaemon in Meiji 2 (1869), is made of sto
 [[Category:Shizuri Shrines]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with interwikis with duplicate languages]]
 [[Category:Pages with 50+ untranslated japanese characters]]

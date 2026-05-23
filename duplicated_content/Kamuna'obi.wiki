@@ -1,45 +1,103 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kamuna%27obi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
 {{Infobox deity}}
+
 [[Image:Descendants of izanagi alone.svg|thumb|right|200px|Deities born from Izanagi's purification ritual (based on the ''Kojiki'') [//upload.wikimedia.org/]]]
-'''Kamunaobi no Kami''' (神直日神) is a {{ill|Kami|en|Kami|qid=Q524158|lt=Deity|1=Kami}} appearing in {{ill|Japanese mythology|en|Japanese mythology|qid=Q814158|lt=Japanese mythology|1=Japanese mythology}}.<ref name="T">[[Atsushi Yamakita]] ''Dictionary of Eastern Deities,'' {{ill|Shinkigensha|ja|新紀元社|12=simple|13=User:Immanuelle/Shinkigensha|1=Shinkigensha|comment=changed title based on wikidata|qid=Q11503908}}, p. 349.</ref> 
-This deity is regarded as one who purifies defilements and rectifies calamities (禍, ''maga''). In the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki|1=Kojiki}}'', the deity is referred to as '''Kamunaobi no Kami''' (神直毘神), while in the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}}'', it is written as '''Kamunaobi no Kami''' (神直日神). The name also appears as '''Kamunaobi no Kami''' (神直備神) in some texts.
+
+'''Kamunaobi no Kami''' (神直日神) is a {{ill|Kami|en|Kami|qid=Q524158|lt=Deity}} appearing in {{ill|Japanese mythology|en|Japanese mythology|qid=Q814158|lt=Japanese mythology}}.<ref name="T">[[Atsushi Yamakita]] ''Dictionary of Eastern Deities,'' {{ill|Shinkigensha|ja|新紀元社|12=simple|13=User:Immanuelle/Shinkigensha|comment=changed title based on wikidata|qid=Q11503908}}, p. 349.</ref> 
+This deity is regarded as one who purifies defilements and rectifies calamities (禍, ''maga''). In the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}'', the deity is referred to as '''Kamunaobi no Kami''' (神直毘神), while in the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}'', it is written as '''Kamunaobi no Kami''' (神直日神). The name also appears as '''Kamunaobi no Kami''' (神直備神) in some texts.
+
 == Overview ==
-During the {{ill|Kamiumi|en|Kamiumi|qid=Q3545159|lt=birth of deities|1=Kamiumi}}, when {{ill|Izanagi|ja|伊邪那岐命|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi|1=Yomi}}, the defilements of the underworld gave rise to the deity {{ill|Magatsuhi-no-kami|lt=Magatsuhi-no-kami|lt=Magatsuhi no Kami|ja|禍津日神|12=simple|13=User:Immanuelle/Magatsuhi no Kami|qq=}}. To rectify the calamities caused by Magatsuhi no Kami, '''Kamunaobi no Kami''' was born as one of the {{ill|Ōnaobi no Kami|lt=Ōnaobi no Kami|lt=Naobi no Kami|ja|直毘神|12=simple|13=User:Immanuelle/Naobi no Kami|qq=}}. Following this, a second deity, '''Ōnaobi no Kami''' (大直日神), was born, and finally {{ill|Izunome|ja|伊豆能売|12=simple|13=User:Immanuelle/Izunome|qq=}} was born.
+During the {{ill|Kamiumi|en|Kamiumi|qid=Q3545159|lt=birth of deities}}, when {{ill|Izanagi|ja|伊邪那岐命|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi}}, the defilements of the underworld gave rise to the deity {{ill|Magatsuhi-no-kami|ja|禍津日神|lt=Magatsuhi no Kami}}. To rectify the calamities caused by Magatsuhi no Kami, '''Kamunaobi no Kami''' was born as one of the {{ill|Ōnaobi no Kami|ja|直毘神|lt=Naobi no Kami}}. Following this, a second deity, '''Ōnaobi no Kami''' (大直日神), was born, and finally {{ill|Izunome|ja|伊豆能売|zh|伊豆能賣神|qid=Q10885126}} was born.
+
 == Analysis ==
-According to the scholar {{ill|Shinobu Orikuchi|en|Shinobu Orikuchi|qid=Q3482286|lt=Shinobu Orikuchi|1=Shinobu Orikuchi}}, the following interpretations have been proposed:<ref name="U">{{ill|Shinobu Orikuchi|en|Shinobu Orikuchi|qid=Q3482286|lt=Shinobu Orikuchi|1=Shinobu Orikuchi}}, ''Collected Works of Shinobu Orikuchi (New Edition),'' {{ill|Chuokoron-Shinsha|en|Chuokoron-Shinsha|qid=Q996095|lt=Chūōkōron-shinsha|1=Chuokoron-Shinsha}}.</ref> 
-* The ''Naobi'' deity was conceptualized as a counterpart to Magatsuhi no Kami, representing two sides of the same coin. The {{ill|Ōnaobi no Kami|lt=Ōnaobi no Kami|lt=Naobi no Kami|ja|直毘神|12=simple|13=User:Immanuelle/Naobi no Kami|qq=}} is seen as the priest who performs purification rituals, while Izunome is considered a shamaness (miko).
+According to the scholar {{ill|Shinobu Orikuchi|arz|شينوبو اوريكوكى|de|Orikuchi Shinobu|fr|Shinobu Orikuchi|hy|Սինոբու Օրիգուտի|ja|折口信夫|ru|Орикути, Синобу|qid=Q3482286|lt=Shinobu Orikuchi}}, the following interpretations have been proposed:<ref name="U">{{ill|Shinobu Orikuchi|arz|شينوبو اوريكوكى|de|Orikuchi Shinobu|fr|Shinobu Orikuchi|hy|Սինոբու Օրիգուտի|ja|折口信夫|ru|Орикути, Синобу|qid=Q3482286|lt=Shinobu Orikuchi}}, ''Collected Works of Shinobu Orikuchi (New Edition),'' {{ill|Chuokoron-Shinsha|en|Chuokoron-Shinsha|qid=Q996095|lt=Chūōkōron-shinsha}}.</ref> 
+* The ''Naobi'' deity was conceptualized as a counterpart to Magatsuhi no Kami, representing two sides of the same coin. The {{ill|Ōnaobi no Kami|ja|直毘神|lt=Naobi no Kami}} is seen as the priest who performs purification rituals, while Izunome is considered a shamaness (miko).
 * The verb ''naoru'' (to correct or heal) is related to the "直" (nao) in ''Naobi no Kami,'' symbolizing a deity that corrects mistakes or restores balance.
-* During the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}}, Naobi no Kami was revered as a deity of banquets and entertainment.
+* During the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}}, Naobi no Kami was revered as a deity of banquets and entertainment.
+
 == Major Shrines Dedicated to Kamunaobi no Kami and Ōnaobi no Kami ==
-* {{ill|Kego Shrine|ja|警固神社|12=simple|13=User:Immanuelle/Kego Shrine|qq=}} – Fukuoka City, Fukuoka Prefecture
-* {{ill|Sakurai Shrine (Itoshima)|ja|桜井神社 (糸島市)|12=simple|13=User:Immanuelle/Sakurai Shrine (Itoshima)|1=Sakurai Shrine|comment=changed title based on wikidata|qid=Q22118847}} – Itoshima City, Fukuoka Prefecture
+* {{ill|Kego Shrine|ja|警固神社|qid=Q11632314}} – Fukuoka City, Fukuoka Prefecture
+* {{ill|Sakurai Shrine|ja|桜井神社 (糸島市)|qid=Q22118847}} – Itoshima City, Fukuoka Prefecture
 * Naobi Shrine – Nogata City, Fukuoka Prefecture
-* {{ill|Hayasuihime Shrine|ja|早吸日女神社|12=simple|13=User:Immanuelle/Hayasuihime Shrine|1=Hayasuihime Shrine|comment=changed title based on wikidata|qid=Q11511196}} – Ōita City, Ōita Prefecture
-* {{ill|Sasamuta Shrine|en|Sasamuta Shrine|qid=Q195714|lt=Sasamuta Shrine|1=Sasamuta Shrine}} – Ōita City, Ōita Prefecture
+* {{ill|Hayasuihime Shrine|ja|早吸日女神社|qid=Q11511196}} – Ōita City, Ōita Prefecture
+* {{ill|Sasamuta Shrine|abstract|Q195714|fr|Sasamuta-jinja|ja|西寒多神社|simple|Sasamuta Shrine|zh|西寒多神社|qid=Q195714|lt=Sasamuta Shrine}} – Ōita City, Ōita Prefecture
 * Dewasanzan Shrine, Sanshin Gōsai-den – Tsuruoka City, Yamagata Prefecture
 * Gosen Hachiman Shrine – Gosen City, Niigata Prefecture
-* {{ill|Udo Jingū|en|Udo Jingū|qid=Q704430|lt=Udo Shrine|1=Udo Jingū}}, within the grounds of Kyūhashira Shrine – Nichinan City, Miyazaki Prefecture
+* {{ill|Udo Jingū|abstract|Q704430|de|Udo-Schrein|fr|Udo-jingū|ja|鵜戸神宮|ko|우도 신궁|zh|鵜戶神宮|zh_yue|鵜戶神宮|qid=Q704430|lt=Udo Shrine}}, within the grounds of Kyūhashira Shrine – Nichinan City, Miyazaki Prefecture
 * Isonosaji Shrine – Yazu District, Tottori Prefecture
 * Ōhara Shrine, within the grounds of Sakurai Shrine – Ōnan Town, Shimane Prefecture
 * Noma Shrine – Imabari City, Ehime Prefecture
 * Kambe Shrine – Kōshū City, Yamanashi Prefecture
 * Ōagata Shrine, within the grounds of Kaijo Shrine – Inuyama City, Aichi Prefecture
-* {{ill|Ikasuri Shrine|en|Ikasuri Shrine|qid=Q11425667|lt=Ikasuri Shrine|1=Ikasuri Shrine}}, within the grounds of Aiden Shrine – Chūō Ward, Osaka City
+* {{ill|Ikasuri Shrine|fr|Ikasuri-jinja|ja|坐摩神社|simple|Ikasuri Shrine|zh|坐摩神社|qid=Q11425667|lt=Ikasuri Shrine}}, within the grounds of Aiden Shrine – Chūō Ward, Osaka City
 * Ikuto Shrine – Toyooka City, Hyōgo Prefecture
-* {{ill|Ayato Kuninaka Shrine|ja|綾戸国中神社|12=simple|13=User:Immanuelle/Ayato Kuninaka Shrine|1=Ayato-Kunaka Shrine|comment=changed title based on wikidata|qid=Q11607305}} – Kyoto City, Kyoto Prefecture
-* {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine|1=Itsukushima Shrine}} – Hatsukaichi City, Hiroshima Prefecture
-* {{ill|Isonokami Shrine|en|Isonokami Shrine|qid=Q708859|lt=Isonokami Shrine|1=Isonokami Jingū}}, within the grounds of Shichiza Shrine – Tenri City, Nara Prefecture
+* {{ill|Ayato-Kunaka Shrine|ja|綾戸国中神社|12=simple|13=User:Immanuelle/Ayato Kuninaka Shrine|comment=changed title based on wikidata|qid=Q11607305}} – Kyoto City, Kyoto Prefecture
+* {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine}} – Hatsukaichi City, Hiroshima Prefecture
+* {{ill|Isonokami Jingū|en|Isonokami Shrine|qid=Q708859|lt=Isonokami Shrine}}, within the grounds of Shichiza Shrine – Tenri City, Nara Prefecture
+
 == References ==
 {{Reflist}}
+
 == See Also ==
-* {{ill|Seoritsu-hime|ja|瀬織津姫|1=Seoritsu-hime|12=simple|13=User:Immanuelle/Seoritsu-hime|13=User:Immanuelle/Seoritsu-hime|qq=}}
-* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities|1=List of Japanese deities}}
+* {{ill|Seoritsu-hime|ja|瀬織津姫}}
+* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities}}
+
 {{Japanese Mythology}}
 {{Shinto Sidebar}}
 {{translated page|ja|神直日神|version=99353895|comment=Imported full ja history}}
 
+==Merged second translation==
+[[Image:Descendants of izanagi alone.svg|thumb|right|200px|Deities born from Izanagi's purification (based on the Kojiki) [//upload.wikimedia.org/wikipedia/commons/d/d3/Creation_myths_of_Japan_5.svg View in SVG (supported browsers only)]]]]
+'''Kamunaobi no Kami''' (神直日神, also spelled かむなおひのかみ) is a deity in {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}.<ref name="T">[[Atsushi Yamakita]] 『東洋神名事典』 {{ill|Gakken|en|Gakken|qid=Q2664679|lt=Gakken}} p. 349.</ref> This deity is said to purify defilements and rectify {{ill|Magatsuhi-no-kami|ja|禍|lt=Magatsuhi}} (misfortunes or evils). In the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}, the deity is referred to as Kamunaobi no Kami (神直毘神), while the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}} refers to the deity as Kamunaohi no Kami (神直日神). Other texts also spell the name as Kamunaobi no Kami (神直備神).
+
+== Overview ==
+During the {{ill|Kamiumi|en|Kamiumi|qid=Q3545159|lt=Birth of the Gods}}, {{ill|Izanagi|ja|伊邪那岐命|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi}}, where defilements from Yomi gave rise to {{ill|Magatsuhi-no-kami|ja|禍津日神|lt=Magatsuhi no Kami}}. To counteract the calamities caused by Magatsuhi no Kami, Kamunaobi no Kami was born as one of the {{ill|Ōnaobi no Kami|ja|直毘神|lt=Naobi no Kami}}. Subsequently, another deity, {{ill|Ōnaobi no Kami|ja|大直毘神}}, was born, followed by {{ill|Izunome|ja|伊豆能売|zh|伊豆能賣神|qid=Q10885126}}.
+
+== Historical Interpretations ==
+According to {{ill|Shinobu Orikuchi|arz|شينوبو اوريكوكى|de|Orikuchi Shinobu|fr|Shinobu Orikuchi|hy|Սինոբու Օրիգուտի|ja|折口信夫|ru|Орикути, Синобу|qid=Q3482286|lt=Shinobu Orikuchi}}, Kamunaobi no Kami has the following attributes:<ref name="U">{{ill|Shinobu Orikuchi|arz|شينوبو اوريكوكى|de|Orikuchi Shinobu|fr|Shinobu Orikuchi|hy|Սինոբու Օրիգուտի|ja|折口信夫|ru|Орикути, Синобу|qid=Q3482286|lt=Shinobu Orikuchi}} 『折口信夫全集 新版』 [[:en:Chūōkōron-sha|Chūōkōron-sha]].</ref>  
+* Naobi no Kami is considered a paired and interconnected deity with Magatsuhi no Kami, embodying their dual aspects. Additionally, Kamunaobi no Kami functions as the officiant deity in purification rituals, while Izunome is considered the miko (shrine maiden).  
+* The term "naoru" (to rectify or correct) is linguistically related to the "Nao" (直) in Kamunaobi no Kami, implying a deity invoked to rectify missteps or wrongdoings.  
+* By the Heian period, Kamunaobi no Kami was associated with being a deity of feasts or entertainment.
+
+== Major Shrines Dedicated to Kamunaobi no Kami and Ōnaobi no Kami ==
+* {{ill|Kego Shrine|ja|警固神社|qid=Q11632314}}, Fukuoka City, Fukuoka Prefecture  
+* {{ill|Sakurai Shrine|ja|桜井神社 (糸島市)|qid=Q22118847}}, Itoshima City, Fukuoka Prefecture  
+* Naobi Shrine, Nogata City, Fukuoka Prefecture  
+* {{ill|Hayasuihime Shrine|ja|早吸日女神社|qid=Q11511196}}, Ōita City, Ōita Prefecture  
+* {{ill|Sasamuta Shrine|abstract|Q195714|fr|Sasamuta-jinja|ja|西寒多神社|simple|Sasamuta Shrine|zh|西寒多神社|qid=Q195714|lt=Sasamuta Shrine}}, Ōita City, Ōita Prefecture  
+* {{ill|Dewa Shrine|en|Dewa Shrine|qid=Q11395802|lt=Dewa Shrine}} (Ōnaobi Shrine on the grounds), Tsuruoka City, Yamagata Prefecture  
+* Gosen Hachiman Shrine, Gosen City, Niigata Prefecture  
+* {{ill|Udo Jingū|abstract|Q704430|de|Udo-Schrein|fr|Udo-jingū|ja|鵜戸神宮|ko|우도 신궁|zh|鵜戶神宮|zh_yue|鵜戶神宮|qid=Q704430|lt=Udo Shrine}} (Kyuhashira Shrine on the grounds), Nichinan City, Miyazaki Prefecture  
+* Isono Sata Shrine, Yazu District, Tottori Prefecture  
+* Ōhara Shrine (Sakurai Shrine on the grounds), Ōnan Town, Shimane Prefecture  
+* Noma Shrine, Imabari City, Ehime Prefecture  
+* Kanbe Shrine, Kōshū City, Yamanashi Prefecture  
+* Ōagata Shrine (Kaijo Shrine on the grounds), Inuyama City, Aichi Prefecture  
+* {{ill|Ikasuri Shrine|fr|Ikasuri-jinja|ja|坐摩神社|simple|Ikasuri Shrine|zh|坐摩神社|qid=Q11425667|lt=Zama Shrine}} (Aiden Shrine on the grounds), Osaka City, Osaka Prefecture  
+* Ikuta Shrine, Toyooka City, Hyōgo Prefecture  
+* {{ill|Ayatokunaka Shrine|ja|綾戸国中神社}}, Kyoto City, Kyoto Prefecture  
+* {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine}}, Hatsukaichi City, Hiroshima Prefecture  
+* {{ill|Isonokami Jingū|en|Isonokami Shrine|qid=Q708859|lt=Isonokami Shrine}} (Nanaza Shrine on the grounds), Tenri City, Nara Prefecture  
+
+== References ==
+{{Reflist}}
+
+== See Also ==
+* {{ill|Sēoritsuhime|ja|瀬織津姫}}  
+* {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities}}  
+
+{{Japanese mythology}}
+{{Shinto}}
+{{Shinto-stub}}
+
+{{Munakata Faith}}
+
+{{translated page|ja|神直日神|version=99353895|comment=Imported full ja history}}
+
+{{wikidata link|Q86725467|ja|神直日神|check_date=2026-05-16}}
 [[Category:Amatsukami]]
 [[Category:Evil deities]]
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no short description]]
+[[Category:Pages with duplicated content]]

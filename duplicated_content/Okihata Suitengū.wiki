@@ -1,47 +1,110 @@
 {{Infobox religious building
 |Name      = Suitengu (水天宮)
 |image     = File:Fukuoka Yanagawa10s3.jpg
-|Location  = Inari Town, {{ill|Yanagawa, Fukuoka|en|Yanagawa, Fukuoka|qid=Q585630|lt=Yanagawa City|1=Yanagawa, Fukuoka}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}
+|Location  = Inari Town, {{ill|Yanagawa, Fukuoka|ar|ياناغاوا (فوكوكا)|azb|یاناقاوا، فوکوئوکا|ce|Янагава|ceb|Yanagawa (lungsod sa Hapon)|de|Yanagawa|es|Yanagawa|eu|Yanagawa (Fukuoka)|fa|یاناگاوا، فوکوئوکا|fi|Yanagawa|fr|Yanagawa|gl|Yanagawa|hak|Yanagawa, Fukuoka|id|Yanagawa, Fukuoka|it|Yanagawa|ja|柳川市|ko|야나가와시|mg|Yanagawa|mzn|یاناگاوا، فوکوئوکا|nl|Yanagawa|pl|Yanagawa|pt|Yanagawa|ro|Yanagawa|ru|Янагава|sv|Yanagawa, Fukuoka|tg|Янагава|tl|Yanagawa (Fukuoka)|tr|Yanagawa|tt|Янагава|uk|Янаґава|ur|یانہگوا، فوکوکا|vi|Yanagawa, Fukuoka|war|Yanagawa, Fukuoka|zh|柳川市|zh_classical|柳川市|zh_min_nan|Yanagawa-chhī|zh_yue|柳川|qid=Q585630|lt=Yanagawa City}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}
 |Coordinates = {{Coord|33|09|31.5|N|130|23|42.5|E|region:JP-40_type:landmark_scale:25000}}
-|Deity     = {{ill|Emperor Antoku|en|Emperor Antoku|qid=Q316651|lt=Emperor Antoku|1=Emperor Antoku}}
+|Deity     = {{ill|Emperor Antoku|azb|آنتوکو (ایمپیراتور)|bn|সম্রাট আন্তোকু|ca|Antoku|ckb|ئیمپراتۆر ئەنتۆکو|cs|Antoku|de|Antoku|es|Antoku Tennō|eu|Antoku enperadorea|fa|امپراتور آنتوکو|fr|Antoku|hak|Antoku Thiên-fòng|id|Kaisar Antoku|it|Antoku|ja|安徳天皇|ko|안토쿠 천황|mr|अंतोकु|nl|Antoku|pl|Antoku|pt|Antoku|ru|Император Антоку|simple|Emperor Antoku|sv|Antoku|sw|Antoku wa Japani|th|จักรพรรดิอันโตกุ|tl|Emperador Antoku|tr|Antoku|uk|Імператор Антоку|vi|Thiên hoàng Antoku|yo|Emperor Antoku|zh|安德天皇|zh_min_nan|Antoku Thian-hông|qid=Q316651|lt=Emperor Antoku}}
 |Status    = 
-|Founded   = {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869|1=1869}})
+|Founded   = {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869}})
 |Main Hall = 
 |Alternate Names = Okinohata Suitengu, Suitengu-san
 |Votive Site = 
 |Annual Festival = May 3–5
 |Shinto Rituals = 
-|prefecture= {{ill|Yanagawa|qid=Q585630|1=Yanagawa, Fukuoka}}
+|prefecture= {{ill|Yanagawa, Fukuoka|ar|ياناغاوا (فوكوكا)|azb|یاناقاوا، فوکوئوکا|ce|Янагава|ceb|Yanagawa (lungsod sa Hapon)|de|Yanagawa|es|Yanagawa|eu|Yanagawa (Fukuoka)|fa|یاناگاوا، فوکوئوکا|fi|Yanagawa|fr|Yanagawa|gl|Yanagawa|hak|Yanagawa, Fukuoka|id|Yanagawa, Fukuoka|it|Yanagawa|ja|柳川市|ko|야나가와시|mg|Yanagawa|mzn|یاناگاوا، فوکوئوکا|nl|Yanagawa|pl|Yanagawa|pt|Yanagawa|ro|Yanagawa|ru|Янагава|sv|Yanagawa, Fukuoka|tg|Янагава|tl|Yanagawa (Fukuoka)|tr|Yanagawa|tt|Янагава|uk|Янаґава|ur|یانہگوا، فوکوکا|vi|Yanagawa, Fukuoka|war|Yanagawa, Fukuoka|zh|柳川市|zh_classical|柳川市|zh_min_nan|Yanagawa-chhī|zh_yue|柳川|qid=Q585630}}
+|coordinates= {{Coord|33.15875|N|130.395139}}
+|deity= {{ill|Emperor Antoku|azb|آنتوکو (ایمپیراتور)|bn|সম্রাট আন্তোকু|ca|Antoku|ckb|ئیمپراتۆر ئەنتۆکو|cs|Antoku|de|Antoku|es|Antoku Tennō|eu|Antoku enperadorea|fa|امپراتور آنتوکو|fr|Antoku|hak|Antoku Thiên-fòng|id|Kaisar Antoku|it|Antoku|ja|安徳天皇|ko|안토쿠 천황|mr|अंतोकु|nl|Antoku|pl|Antoku|pt|Antoku|ru|Император Антоку|simple|Emperor Antoku|sv|Antoku|sw|Antoku wa Japani|th|จักรพรรดิอันโตกุ|tl|Emperador Antoku|tr|Antoku|uk|Імператор Антоку|vi|Thiên hoàng Antoku|yo|Emperor Antoku|zh|安德天皇|zh_min_nan|Antoku Thian-hông|qid=Q316651}}
 }}
-'''Okinohata Suitengu''' (沖端水天宮) is a {{ill|Suitengū|en|Suitengū|qid=Q125319456|lt=Shinto Shrine (Suitengu)|1=Suitengū}} located in Inari Town, {{ill|Yanagawa, Fukuoka|en|Yanagawa, Fukuoka|qid=Q585630|lt=Yanagawa City|1=Yanagawa, Fukuoka}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}. The registered {{ill|Civil registration|en|Civil registration|qid=Q83708009|lt=Registration|1=Civil registration}} name under the {{ill|Religious Corporation|ja|宗教法人|12=simple|13=User:Immanuelle/Religious Corporation|1=religious corporation|comment=changed title based on wikidata|qid=Q7311343}} is '''Suitengu''' (すいてんぐう).
+
+'''Okinohata Suitengu''' (沖端水天宮) is a {{ill|Suitengū|de|Suiten-gū|ja|水天宮|tt|Суитэн-гу|zh|水天宮|qid=Q125319456|lt=Shinto Shrine (Suitengu)}} located in Inari Town, {{ill|Yanagawa, Fukuoka|ar|ياناغاوا (فوكوكا)|azb|یاناقاوا، فوکوئوکا|ce|Янагава|ceb|Yanagawa (lungsod sa Hapon)|de|Yanagawa|es|Yanagawa|eu|Yanagawa (Fukuoka)|fa|یاناگاوا، فوکوئوکا|fi|Yanagawa|fr|Yanagawa|gl|Yanagawa|hak|Yanagawa, Fukuoka|id|Yanagawa, Fukuoka|it|Yanagawa|ja|柳川市|ko|야나가와시|mg|Yanagawa|mzn|یاناگاوا، فوکوئوکا|nl|Yanagawa|pl|Yanagawa|pt|Yanagawa|ro|Yanagawa|ru|Янагава|sv|Yanagawa, Fukuoka|tg|Янагава|tl|Yanagawa (Fukuoka)|tr|Yanagawa|tt|Янагава|uk|Янаґава|ur|یانہگوا، فوکوکا|vi|Yanagawa, Fukuoka|war|Yanagawa, Fukuoka|zh|柳川市|zh_classical|柳川市|zh_min_nan|Yanagawa-chhī|zh_yue|柳川|qid=Q585630|lt=Yanagawa City}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}. The registered {{ill|Civil registration|ar|سجل مدني|ca|Registre civil|da|Civilregistrering|es|Registro Civil|eu|Erregistro Zibila|fr|Registre d'état civil|gl|Rexistro Civil|hy|Քաղաքացիական կացության ակտերի գրանցում (Ռուսաստան)|it|Registro dello stato civile|ja|登記|ko|등기|la|Systema consignationum status civilis|lt|Civilinė metrikacija|nl|Burgerlijke stand|pt|Registro civil|ru|ЗАГС|tr|Kütük (defter)|uk|РАЦС|vi|Đăng ký hộ tịch|qid=Q83708009|lt=Registration}} name under the {{ill|religious corporation|ja|宗教法人|qid=Q7311343}} is '''Suitengu''' (すいてんぐう).
+
 == 祭神 ==
-* {{ill|Emperor Antoku|en|Emperor Antoku|qid=Q316651|lt=Emperor Antoku|1=Emperor Antoku}}
+* {{ill|Emperor Antoku|azb|آنتوکو (ایمپیراتور)|bn|সম্রাট আন্তোকু|ca|Antoku|ckb|ئیمپراتۆر ئەنتۆکو|cs|Antoku|de|Antoku|es|Antoku Tennō|eu|Antoku enperadorea|fa|امپراتور آنتوکو|fr|Antoku|hak|Antoku Thiên-fòng|id|Kaisar Antoku|it|Antoku|ja|安徳天皇|ko|안토쿠 천황|mr|अंतोकु|nl|Antoku|pl|Antoku|pt|Antoku|ru|Император Антоку|simple|Emperor Antoku|sv|Antoku|sw|Antoku wa Japani|th|จักรพรรดิอันโตกุ|tl|Emperador Antoku|tr|Antoku|uk|Імператор Антоку|vi|Thiên hoàng Antoku|yo|Emperor Antoku|zh|安德天皇|zh_min_nan|Antoku Thian-hông|qid=Q316651|lt=Emperor Antoku}}
+
 == 由緒 ==
-{{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869|1=1869}}) saw the enshrinement of the {{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Bunrei|1=Bunrei}} from the head office – {{ill|Corporate headquarters|en|Corporate headquarters|qid=Q1530704|lt=General Head Office|1=Corporate headquarters}} – of {{ill|Kurume Suitengū|en|Kurume Suitengū|qid=Q3200625|lt=Kurume Suitengu|1=Kurume Suitengū}}, which was combined ({{ill|合祀|1=co-Enshrinement|2=ja|3=合祀|12=simple|13=User:Immanuelle/合祀|13=User:Immanuelle/co-Enshrinement|qq=}}) with the Inari Shrine ({{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine|1=Inari shrine}}) and Yaken Shrine (弥剣神社（{{ill|Gion Shrine|ja|祇園社|12=simple|13=User:Immanuelle/Gion Shrine|ja_comment=jawiki redirects to 祇園神社|1=Gion shrines|comment=changed title based on wikidata|qid=Q11588442}}）) within the area to establish the shrine. In addition, the Inari Shrine was founded in {{ill|Bunroku|en|Bunroku|qid=Q1373039|lt=Bunroku|1=Bunroku}} 3 ({{ill|1587|en|1587|qid=Q6744|lt=1587|1=1587}}) by {{ill|Tachibana Muneshige|en|Tachibana Muneshige|qid=Q1071770|lt=Tachibana Muneshige|1=Tachibana Muneshige}}, while the Yaken Shrine was established during the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka|1=Bunka}} period (1804–1818).
+{{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869}}) saw the enshrinement of the {{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Bunrei}} from the head office – {{ill|Corporate headquarters|bar|Firmensiez|de|Unternehmensstandort|fa|مقر شرکت|ja|本社|ko|본사|nl|Hoofdkantoor|pl|Siedziba przedsiębiorstwa|qid=Q1530704|lt=General Head Office}} – of {{ill|Kurume Suitengū|es|Kurume Suiten-gū|fr|Kurume Suiten-gū|ja|水天宮 (久留米市)|zh|水天宮 (久留米市)|qid=Q3200625|lt=Kurume Suitengu}}, which was combined ({{ill|合祀}}) with the Inari Shrine ({{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine}}) and Yaken Shrine (弥剣神社（{{ill|Gion shrines|ja|祇園神社|qid=Q11588442}}）) within the area to establish the shrine. In addition, the Inari Shrine was founded in {{ill|Bunroku|ckb|بونرۆکو|es|Bunroku|fa|بونروکو|fr|Ère Bunroku|ia|Bunroku|id|Bunroku|ja|文禄|ko|분로쿠|ru|Бунроку|simple|Bunroku|sr|Бунроку|sv|Bunroku|tr|Bunroku|uk|Бунроку|zh|文禄|zh_yue|文祿|qid=Q1373039|lt=Bunroku}} 3 ({{ill|1587|ab|1587|af|1587|als|1587|am|1587 እ.ኤ.አ.|an|1587|ar|1587|ary|1587|arz|1587|ast|1587|avk|1587|az|1587|azb|۱۵۸۷ (میلادی)|bar|1587|bcl|1587|be|1587|be_x_old|1587|bg|1587|bn|১৫৮৭|bpy|মারি ১৫৮৭|br|1587|bs|1587.|ca|1587|cdo|1587 nièng|ceb|1587|ckb|١٥٨٧|crh|1587|cs|1587|cv|1587|cy|1587|da|1587|de|1587|diq|1587|el|1587|eml|1587|eo|1587|es|1587|et|1587|eu|1587|fa|۱۵۸۷ (میلادی)|fi|1587|fo|1587|fr|1587|frr|1587|fur|1587|fy|1587|ga|1587|gan|1587年|gcr|1587|gd|1587|gl|1587|he|1587|hi|१५८७|hr|1587.|ht|1587 (almanak gregoryen)|hu|1587|hy|1587|hyw|1587 թուական|ia|1587|id|1587|ilo|1587|io|1587|is|1587|it|1587|ja|1587年|jv|1587|ka|1587|kaa|1587|kk|1587 жыл|ko|1587년|krc|1587 джыл|la|1587|lb|1587|lij|1587|lmo|1587|lt|1587 m.|lv|1587. gads|mai|१५८७|map_bms|1587|mdf|1587|mg|1587|mhr|1587|mi|1587|mk|1587|mr|इ.स. १५८७|mrj|1587 и|ms|1587|my|၁၅၈၇|mzn|۱۵۸۷|nah|1587|nap|1587|nds|1587|new|सन् १५८७|nl|1587|nn|1587|no|1587|nrm|1587|nso|1587|oc|1587|or|୧୫୮୭|os|1587-æм аз|pa|1587|pl|1587|pnb|1587|pt|1587|qu|1587|ro|1587|ru|1587 год|rue|1587|sa|१५८७|sah|1587|scn|1587|sd|1587ع|se|1587|sh|1587.|shn|1587|simple|1587|sk|1587|sl|1587|smn|1587|sq|1587|sr|1587|su|1587|sv|1587|sw|1587|ta|1587|te|1587|tg|Соли 1587|th|พ.ศ. 2130|tk|1587|tl|1587|tly|1587|tr|1587|tt|1587 ел|uk|1587|ur|1587ء|uz|1587|vec|1587|vi|1587|vls|1587|wa|1587|war|1587|wuu|1587年|xmf|1587|yi|1587|zh|1587年|zh_min_nan|1587 nî|zh_yue|1587年|qid=Q6744|lt=1587}}) by {{ill|Tachibana Muneshige|es|Tachibana Muneshige|fa|تاچیبانا مونه‌شیگه|fi|Tachibana Muneshige|fr|Tachibana Muneshige|it|Tachibana Muneshige|ja|立花宗茂|ko|다치바나 무네시게|zh|立花宗茂|qid=Q1071770|lt=Tachibana Muneshige}}, while the Yaken Shrine was established during the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka}} period (1804–1818).
+
 Locally, it is known as "'''Suitengu-san'''". During the Okinohata Suitengu Festival held on May 3, 4, and 5, a boat stage called Sangu-maru is constructed and the Suitengu festival music is performed from dusk.
+
 == 祭事 ==
+[[File:Fukuoka Yanagawa10s3.jpg|thumb|水天宮大祭]]
 * 2月初午日 初午祭
 * 5月3～5日 水天宮大祭
 * 7月20・21日 祇園祭
+
 == Access ==
-* {{ill|Nishi-Nippon Railroad|en|Nishi-Nippon Railroad|qid=Q869251|lt=Nishitetsu|1=Nishi-Nippon Railroad}}{{ill|Nishitetsu Tenjin Ōmuta Line|en|Nishitetsu Tenjin Ōmuta Line|qid=Q901075|lt=Tenjin Ōmuta Line|1=Nishitetsu Tenjin Ōmuta Line}}{{ill|Nishitetsu Yanagawa Station|en|Nishitetsu Yanagawa Station|qid=Q11629907|lt=Yanagawa Station|1=Nishitetsu Yanagawa Station}} – alight and then:
-** Board the {{ill|Nishitetsu Bus|ja|西鉄バス|12=simple|13=User:Immanuelle/Nishitetsu Bus|1=Nishitetsu Bus|comment=changed title based on wikidata|qid=Q11629843}} bound for "Hayatsue" ("早津江"), alight at the "Suitengu Entrance" ("水天宮入口") bus stop; a 4-minute walk.
+* {{ill|Nishi-Nippon Railroad|es|Nishi-Nippon Railroad|fa|نیشی-نیپون|fi|Nishi-Nippon-rautatiet|fr|Nishi-Nippon Railroad|hu|Nishi-Nippon Railroad|id|Kereta Api Nishi-Nippon|it|Ferrovie Nishi-Nippon|ja|西日本鉄道|jv|Nishi-Nippon Railroad|ko|서일본 철도|ur|نیشی-نپون ریل روڈ|zh|西日本鐵道|qid=Q869251|lt=Nishitetsu}}{{ill|Nishitetsu Tenjin Ōmuta Line|en|Nishitetsu Tenjin Ōmuta Line|qid=Q901075|lt=Tenjin Ōmuta Line}}{{ill|Nishitetsu Yanagawa Station|en|Nishitetsu Yanagawa Station|qid=Q11629907|lt=Yanagawa Station}} – alight and then:
+** Board the {{ill|Nishitetsu Bus|ja|西鉄バス|12=simple|13=User:Immanuelle/Nishitetsu Bus|comment=changed title based on wikidata|qid=Q11629843}} bound for "Hayatsue" ("早津江"), alight at the "Suitengu Entrance" ("水天宮入口") bus stop; a 4-minute walk.
 ** Alternatively, take the same bus bound for "Hayatsue" or the "Yanagawa Hospital Loop" ("柳川病院循環"), alight at the "Mihanae" ("御花前") bus stop; a 6-minute walk.
-** Board the {{ill|Horikawa Bus|ja|堀川バス|12=simple|13=User:Immanuelle/Horikawa Bus|1=Horikawa Bus|comment=changed title based on wikidata|qid=Q11427415}} bound for "Kanpo no Yado Yanagawa" ("かんぽの宿柳川"), alight at the final stop; an 8-minute walk.
+** Board the {{ill|Horikawa Bus|ja|堀川バス|12=simple|13=User:Immanuelle/Horikawa Bus|comment=changed title based on wikidata|qid=Q11427415}} bound for "Kanpo no Yado Yanagawa" ("かんぽの宿柳川"), alight at the final stop; an 8-minute walk.
 ** Approximately 10 minutes by taxi from the station.
+
 == External links ==
 {{Commonscat|Okinohata-suitengu}}
 *[http://sagemon.net/suitengu/ 柳川市沖端水天宮]（沖端町青年部）
 {{神道 横}}
 {{shinto-stub}}
+
 {{Myōken Faith}}
+
 {{translated page|ja|沖端水天宮|version=83992659|comment=Imported full ja history}}
 
+==Merged second translation==
+{{Infobox religious building|
+|Name = Suitengu (水天宮)
+|religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}
+|image = [[File:Okinohata-suitengu02n.jpg|thumb]]
+|location = {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, {{ill|Yanagawa, Fukuoka|ar|ياناغاوا (فوكوكا)|azb|یاناقاوا، فوکوئوکا|ce|Янагава|ceb|Yanagawa (lungsod sa Hapon)|de|Yanagawa|es|Yanagawa|eu|Yanagawa (Fukuoka)|fa|یاناگاوا، فوکوئوکا|fi|Yanagawa|fr|Yanagawa|gl|Yanagawa|hak|Yanagawa, Fukuoka|id|Yanagawa, Fukuoka|it|Yanagawa|ja|柳川市|ko|야나가와시|mg|Yanagawa|mzn|یاناگاوا، فوکوئوکا|nl|Yanagawa|pl|Yanagawa|pt|Yanagawa|ro|Yanagawa|ru|Янагава|sv|Yanagawa, Fukuoka|tg|Янагава|tl|Yanagawa (Fukuoka)|tr|Yanagawa|tt|Янагава|uk|Янаґава|ur|یانہگوا، فوکوکا|vi|Yanagawa, Fukuoka|war|Yanagawa, Fukuoka|zh|柳川市|zh_classical|柳川市|zh_min_nan|Yanagawa-chhī|zh_yue|柳川|qid=Q585630|lt=Yanagawa City}}, {{ill|Q11596874|ja|稲荷町|12=simple|13=User:Immanuelle/Inarimachi|comment=changed title based on wikidata|qid=Q11596874}}
+|位置 = {{Coord|33|09|31.5|N|130|23|42.5|E|region:JP-40_type:landmark_scale:25000}}
+|deity = {{ill|Emperor Antoku|azb|آنتوکو (ایمپیراتور)|bn|সম্রাট আন্তোকু|ca|Antoku|ckb|ئیمپراتۆر ئەنتۆکو|cs|Antoku|de|Antoku|es|Antoku Tennō|eu|Antoku enperadorea|fa|امپراتور آنتوکو|fr|Antoku|hak|Antoku Thiên-fòng|id|Kaisar Antoku|it|Antoku|ja|安徳天皇|ko|안토쿠 천황|mr|अंतोकु|nl|Antoku|pl|Antoku|pt|Antoku|ru|Император Антоку|simple|Emperor Antoku|sv|Antoku|sw|Antoku wa Japani|th|จักรพรรดิอันโตกุ|tl|Emperador Antoku|tr|Antoku|uk|Імператор Антоку|vi|Thiên hoàng Antoku|yo|Emperor Antoku|zh|安德天皇|zh_min_nan|Antoku Thian-hông|qid=Q316651|lt=Emperor Antoku}}
+|type = 
+|Founding = Meiji 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869}})
+|本殿 = 
+|Alternative names = Okinohata Suitengu, Suitengu-san
+|札所 = 
+|festival = May 3–5
+|神事 = 
+}}
+
+'''Okinohata Suitengu''' (おきのはたすいてんぐう) is a {{ill|Suitengū|de|Suiten-gū|ja|水天宮|tt|Суитэн-гу|zh|水天宮|qid=Q125319456|lt=Shinto Shrine (Suitengu)}} located in Inarimachi, {{ill|Yanagawa, Fukuoka|ar|ياناغاوا (فوكوكا)|azb|یاناقاوا، فوکوئوکا|ce|Янагава|ceb|Yanagawa (lungsod sa Hapon)|de|Yanagawa|es|Yanagawa|eu|Yanagawa (Fukuoka)|fa|یاناگاوا، فوکوئوکا|fi|Yanagawa|fr|Yanagawa|gl|Yanagawa|hak|Yanagawa, Fukuoka|id|Yanagawa, Fukuoka|it|Yanagawa|ja|柳川市|ko|야나가와시|mg|Yanagawa|mzn|یاناگاوا، فوکوئوکا|nl|Yanagawa|pl|Yanagawa|pt|Yanagawa|ro|Yanagawa|ru|Янагава|sv|Yanagawa, Fukuoka|tg|Янагава|tl|Yanagawa (Fukuoka)|tr|Yanagawa|tt|Янагава|uk|Янаґава|ur|یانہگوا، فوکوکا|vi|Yanagawa, Fukuoka|war|Yanagawa, Fukuoka|zh|柳川市|zh_classical|柳川市|zh_min_nan|Yanagawa-chhī|zh_yue|柳川|qid=Q585630|lt=Yanagawa City}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}. According to {{ill|Civil registration|ar|سجل مدني|ca|Registre civil|da|Civilregistrering|es|Registro Civil|eu|Erregistro Zibila|fr|Registre d'état civil|gl|Rexistro Civil|hy|Քաղաքացիական կացության ակտերի գրանցում (Ռուսաստան)|it|Registro dello stato civile|ja|登記|ko|등기|la|Systema consignationum status civilis|lt|Civilinė metrikacija|nl|Burgerlijke stand|pt|Registro civil|ru|ЗАГС|tr|Kütük (defter)|uk|РАЦС|vi|Đăng ký hộ tịch|qid=Q83708009|lt=Registration}}, the registered name of the {{ill|religious corporation|ja|宗教法人|qid=Q7311343}} is '''Suitengu''' (すいてんぐう).
+
+== Worshipped deities (Saijin) ==
+{{see also|{{ill|Saijin|ja|祭神}}}}
+* {{ill|Emperor Antoku|azb|آنتوکو (ایمپیراتور)|bn|সম্রাট আন্তোকু|ca|Antoku|ckb|ئیمپراتۆر ئەنتۆکو|cs|Antoku|de|Antoku|es|Antoku Tennō|eu|Antoku enperadorea|fa|امپراتور آنتوکو|fr|Antoku|hak|Antoku Thiên-fòng|id|Kaisar Antoku|it|Antoku|ja|安徳天皇|ko|안토쿠 천황|mr|अंतोकु|nl|Antoku|pl|Antoku|pt|Antoku|ru|Император Антоку|simple|Emperor Antoku|sv|Antoku|sw|Antoku wa Japani|th|จักรพรรดิอันโตกุ|tl|Emperador Antoku|tr|Antoku|uk|Імператор Антоку|vi|Thiên hoàng Antoku|yo|Emperor Antoku|zh|安德天皇|zh_min_nan|Antoku Thian-hông|qid=Q316651|lt=Emperor Antoku}}
+
+== Origins ==
+In {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 2 ({{ill|1869|en|1869|qid=Q7720|lt=1869}}), a divine fragment ({{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Bunrei}}) from the head shrine ({{ill|Corporate headquarters|bar|Firmensiez|de|Unternehmensstandort|fa|مقر شرکت|ja|本社|ko|본사|nl|Hoofdkantoor|pl|Siedziba przedsiębiorstwa|qid=Q1530704|lt=Head Shrine}}) of {{ill|Kurume Suitengū|es|Kurume Suiten-gū|fr|Kurume Suiten-gū|ja|水天宮 (久留米市)|zh|水天宮 (久留米市)|qid=Q3200625|lt=Kurume Suitengu}} was enshrined by means of enshrinement ({{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Enshrinement}}); at the same time, the Inari Shrine ({{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine}}) and Yaken Shrine (弥剣神社 ({{ill|Gion shrines|ja|祇園神社|qid=Q11588442}})) that existed in the area were combined ({{ill|Combined Enshrinement|ja|合祀}}) and established. Note that Inari Shrine was established in {{ill|Bunroku|ckb|بونرۆکو|es|Bunroku|fa|بونروکو|fr|Ère Bunroku|ia|Bunroku|id|Bunroku|ja|文禄|ko|분로쿠|ru|Бунроку|simple|Bunroku|sr|Бунроку|sv|Bunroku|tr|Bunroku|uk|Бунроку|zh|文禄|zh_yue|文祿|qid=Q1373039|lt=Bunroku Era}} 3 ({{ill|1587|ab|1587|af|1587|als|1587|am|1587 እ.ኤ.አ.|an|1587|ar|1587|ary|1587|arz|1587|ast|1587|avk|1587|az|1587|azb|۱۵۸۷ (میلادی)|bar|1587|bcl|1587|be|1587|be_x_old|1587|bg|1587|bn|১৫৮৭|bpy|মারি ১৫৮৭|br|1587|bs|1587.|ca|1587|cdo|1587 nièng|ceb|1587|ckb|١٥٨٧|crh|1587|cs|1587|cv|1587|cy|1587|da|1587|de|1587|diq|1587|el|1587|eml|1587|eo|1587|es|1587|et|1587|eu|1587|fa|۱۵۸۷ (میلادی)|fi|1587|fo|1587|fr|1587|frr|1587|fur|1587|fy|1587|ga|1587|gan|1587年|gcr|1587|gd|1587|gl|1587|he|1587|hi|१५८७|hr|1587.|ht|1587 (almanak gregoryen)|hu|1587|hy|1587|hyw|1587 թուական|ia|1587|id|1587|ilo|1587|io|1587|is|1587|it|1587|ja|1587年|jv|1587|ka|1587|kaa|1587|kk|1587 жыл|ko|1587년|krc|1587 джыл|la|1587|lb|1587|lij|1587|lmo|1587|lt|1587 m.|lv|1587. gads|mai|१५८७|map_bms|1587|mdf|1587|mg|1587|mhr|1587|mi|1587|mk|1587|mr|इ.स. १५८७|mrj|1587 и|ms|1587|my|၁၅၈၇|mzn|۱۵۸۷|nah|1587|nap|1587|nds|1587|new|सन् १५८७|nl|1587|nn|1587|no|1587|nrm|1587|nso|1587|oc|1587|or|୧୫୮୭|os|1587-æм аз|pa|1587|pl|1587|pnb|1587|pt|1587|qu|1587|ro|1587|ru|1587 год|rue|1587|sa|१५८७|sah|1587|scn|1587|sd|1587ع|se|1587|sh|1587.|shn|1587|simple|1587|sk|1587|sl|1587|smn|1587|sq|1587|sr|1587|su|1587|sv|1587|sw|1587|ta|1587|te|1587|tg|Соли 1587|th|พ.ศ. 2130|tk|1587|tl|1587|tly|1587|tr|1587|tt|1587 ел|uk|1587|ur|1587ء|uz|1587|vec|1587|vi|1587|vls|1587|wa|1587|war|1587|wuu|1587年|xmf|1587|yi|1587|zh|1587年|zh_min_nan|1587 nî|zh_yue|1587年|qid=Q6744|lt=1587}}) by {{ill|Tachibana Muneshige|es|Tachibana Muneshige|fa|تاچیبانا مونه‌شیگه|fi|Tachibana Muneshige|fr|Tachibana Muneshige|it|Tachibana Muneshige|ja|立花宗茂|ko|다치바나 무네시게|zh|立花宗茂|qid=Q1071770|lt=Tachibana Muneshige}}, while Yaken Shrine was established during the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka}} (1804–1818).
+
+Locally, it is called '''Suitengu-san'''. At the Okinohata Suitengu Festival, held on May 3, 4, and 5, a boat stage known as Sanjinmaru is constructed, and from dusk onwards, Suitengu festival music is performed.
+
+== Festivals ==
+[[File:Fukuoka Yanagawa10s3.jpg|thumb]]
+* On the first Horse Day of February: Hatsuuma Festival
+* May 3–5: Suitengu Grand Festival
+* July 20–21: Gion Festival
+
+== Access ==
+* Disembark at {{ill|Nishi-Nippon Railroad|es|Nishi-Nippon Railroad|fa|نیشی-نیپون|fi|Nishi-Nippon-rautatiet|fr|Nishi-Nippon Railroad|hu|Nishi-Nippon Railroad|id|Kereta Api Nishi-Nippon|it|Ferrovie Nishi-Nippon|ja|西日本鉄道|jv|Nishi-Nippon Railroad|ko|서일본 철도|ur|نیشی-نپون ریل روڈ|zh|西日本鐵道|qid=Q869251|lt=Nishitetsu}}, {{ill|Nishitetsu Tenjin Ōmuta Line|en|Nishitetsu Tenjin Ōmuta Line|qid=Q901075|lt=Tenjin Omuta Line}}, and {{ill|Nishitetsu Yanagawa Station|en|Nishitetsu Yanagawa Station|qid=Q11629907|lt=Yanagawa Station}}; then take the {{ill|Nishitetsu Bus|ja|西鉄バス|12=simple|13=User:Immanuelle/Nishitetsu Bus|comment=changed title based on wikidata|qid=Q11629843}} bound for “Hayatsue” and alight at the “Suitengu Entrance” bus stop (a 4-minute walk).
+* Alternatively, board the same “Hayatsue” bus or the “Yanagawa Hospital Loop” and alight at the “Gohanae” bus stop (a 6-minute walk).
+* Or, take the {{ill|Horikawa Bus|ja|堀川バス|12=simple|13=User:Immanuelle/Horikawa Bus|comment=changed title based on wikidata|qid=Q11427415}} bound for “Kanpo no Yado Yanagawa” and alight at its terminal stop (an 8-minute walk).
+* Approximately 10 minutes by taxi from the station.
+
+== External Links ==
+{{Commonscat|Okinohata-suitengu}}
+* [http://sagemon.net/suitengu/ {{bad link|These are causing so much issues|Yanagawa City Okinohata Suitengu|ja|柳川市沖端水天宮|lt=Okinohata Suitengu of Yanagawa|lt_ja=沖端水天宮|12=simple|13=User:Immanuelle/Yanagawa City Okinohata Suitengu}}] (Okinohata Town Youth Division)
+{{Shinto Side}}
+{{shinto-stub}}
+{{translated page|ja|沖端水天宮|version=83992659|comment=Imported full ja history}}
+
+{{Commons category|Okinohata-suitengu}}
+{{wikidata link|Q11552577|co|commons:Category:Okinohata-suitengu|ja|沖端水天宮|check_date=2026-05-18}}
 [[Category:Buildings and structures in Yanagawa, Fukuoka]]
 [[Category:Municipal History of Yanagawa]]
 [[Category:Myōken Faith]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Fukuoka Prefecture]]
 [[Category:Suiten-gū Shrines]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with duplicated content]]

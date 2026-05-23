@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takata_Shrine_%28Hida%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name=Takata Shrine
 | religious_affiliation = [[Shinto]]
@@ -12,12 +14,18 @@
 | deity={{ill|Takamimusubi|qid=Q125400}}
 }}
 '''Takata Shrine''' (高田神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Hida City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}, formerly part of {{ill|Yoshiki District|en|Yoshiki District|qid=Q8056119|lt=Yoshiki District}} in [[Furukawa Town]].
-It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}. Another theory suggests that {{ill|Kifune Shrine (Hida City)|ja|貴船神社 (飛騨市)|2=ja|3=貴船神社 (飛騨市)|12=simple|13=User:Immanuelle/Kifune Shrine (Hida)|13=User:Immanuelle/Kifune Shrine (Hida City)|qq=}} is the site of the original Takata Shrine.
+
+It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}. Another theory suggests that {{ill|Kifune Shrine (Hida City)|ja|貴船神社 (飛騨市)|2=ja|3=貴船神社 (飛騨市)|12=simple|13=User:Immanuelle/Kifune Shrine (Hida)|13=User:Immanuelle/Kifune Shrine (Hida City)}} is the site of the original Takata Shrine.
+
 == History ==
 The exact founding date is unknown. One theory states that it was established in the 6th year of Emperor Bidatsu (577 CE) when the [[Nihamabe|Hihamabe]] clan was stationed in Hida Province, and their {{ill|Tomonomiyatsuko|lt=Tomonomiyatsuko|lt=Tomo no Miyatsuko|ja|伴造|12=simple|13=User:Immanuelle/Tomo no Miyatsuko|comment=enwiki is a redirect}} enshrined Takamimusubi no Mikoto.
+
 During the [[Kenmu Restoration]], [[Anekōji Ietsuna]] was a11ointed governor of Hida Province in 1334 and showed great reverence for Takata Shrine. He established a residence adjacent to the shrine, which became the political center of Hida. However, after the fall of the {{ill|Anekōji clan|en|Anekōji clan|qid=Q10943126|lt=Anekōji clan}} to {{ill|Kanamori Nagachika|en|Kanamori Nagachika|qid=Q8190652|lt=Kanamori Nagachika}}, the shrine's prominence declined.
-In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, the shrine was renamed "Hakusan Shrine" or "Hakusan Gongen Shrine." During the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka era}} (1804–1818), the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|lt=Yoshida clan|12=simple|13=User:Immanuelle/Urabe clan|qq=}} identified it as the Takata Shrine listed in the Engishiki, and it was renamed accordingly. The formal designation of Takata Shrine as a Shikinaisha was granted in 1870 (Meiji 3).
+
+In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, the shrine was renamed "Hakusan Shrine" or "Hakusan Gongen Shrine." During the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka era}} (1804–1818), the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|lt=Yoshida clan|12=simple|13=User:Immanuelle/Urabe clan}} identified it as the Takata Shrine listed in the Engishiki, and it was renamed accordingly. The formal designation of Takata Shrine as a Shikinaisha was granted in 1870 (Meiji 3).
+
 In 1907 (Meiji 40), the shrine incorporated Suwa Shrine, Tado Shrine, and Kamo Shrine.
+
 == Deities ==
 * Main deity
 ** [[Takamimusubi|Takamimusubi no Mikoto]]
@@ -26,14 +34,17 @@ In 1907 (Meiji 40), the shrine incorporated Suwa Shrine, Tado Shrine, and Kamo S
 ** [[Takeminakata|Takeminakata no Mikoto]]
 ** {{ill|Kamo-wake-ikazuchi-no-Kami|en|Kamo Wake-ikazuchi|qid=Q11634943|lt=Kamo Wakeikazuchi no Mikoto}}
 ** [[Amatsuhikone|Amatsuhikone no Mikoto]]
+
 == festival ==
 The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings, and a portable shrine procession.
+
 * Kagura Lion Dance
 ** A two-person [[shishi-mai]] performed by male and female pairs, featuring six different routines. It is designated as an Important Intangible Folk Cultural Property of {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.<ref name="kagurajishi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/mumin/hidasi/takadajinnjya.html |title=Kagura Lion Dance of Takata Shrine |publisher=Gifu Prefecture |accessdate=2013-04-22}}</ref> The dance is performed several times during the festival.
 * Matchlock Gun Firings
 ** Conducted at key points of the festival to purify the sacred grounds. The matchlocks are said to have been donated during the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period}} by {{ill|Anekōji Tokimitsu|ja|姉小路時光|12=simple|13=User:Immanuelle/Anekōji Tokimitsu|ja_comment=jawiki link invalid}}.
 * Portable Shrine Procession
 ** A procession including {{ill|Cleyera japonica|en|Cleyera japonica|qid=Q775470|lt=Cleyera japonica}}, {{ill|Tengu|en|Tengu|qid=Q742360|lt=Tengu}}, armored warriors, chicken fights, male and female lions, drums, flutes, {{ill|Miko|en|Miko|qid=Q1047139|lt=Miko}}, and the mikoshi, comprising several hundred participants.
+
 == Cultural Properties ==
 ;Important Intangible Folk Cultural Properties of Gifu Prefecture
 * Kagura Lion Dance of Takata Shrine<ref name="kagurajishi" />
@@ -42,13 +53,25 @@ The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings
 * Statues of Takata Shrine Guardians<ref name="furukawacho_bunkazai" />
 ;Designated Natural Monuments of Hida City
 * Five Great Cedars of Takata Shrine<ref name="furukawacho_bunkazai" />
+
 == Access ==
 * Approximately2 km from {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}} {{ill|Sugisaki Station|en|Sugisaki Station|qid=Q7635122|lt=Sugisaki Station}}.
+
 == Related Articles ==
-* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province|qq=}}
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
 == Notes ==
 {{Reflist}}
+
 {{Shinto-stub}}
+
+{{translated page|ja|高田神社 (飛騨市)|version=98347519|comment=Imported full ja history}}
+
+{{wikidata link|Q11672195|da|d:Q11672195|ja|高田神社 (飛騨市)|check_date=2026-05-10}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Takata Shrine (Hida) (Q11672195)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hida Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -57,15 +80,155 @@ The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings
 | RONSHA || {{ill|Takata Shrine (Hida)|lt=Takata Shrine (Hida)|ja|高田神社 (飛騨市)|qid=Q11672195}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Takatano Shrine|lt=Takatano Shrine|qid=Q135039911}} || {{coord|36.256719|137.172744|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181966 DB]
 |}
 
-{{translated page|ja|高田神社 (飛騨市)|version=98347519|comment=Imported full ja history}}
-{{wikidata link|Q11672195|da|d:Q11672195|ja|高田神社 (飛騨市)|check_date=2026-05-10}}
+{{wikidata link|Q11672195}}
+== Accidentally Overwritten Content ==
 
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name=Takata Shrine
+| religious_affiliation = [[Shinto]]
+|image=File:Takada shrine, Hida, 2017.jpg
+| location={{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}} [[Hida City]] Furukawa Town Tano Kamigakiuchi 2669
+| coordinates={{Coord|36.2567194|N|137.1727444}}
+| deities=[[Takamimusubi|Takamimusubi no Mikoto]]
+| type={{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}, {{ill|Kinpei-sha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}}
+| festivals=April 28
+| prefecture={{ill|Hida, Gifu|qid=Q847319}}
+| deity={{ill|Takamimusubi|qid=Q125400}}
+}}
+'''Takata Shrine''' (高田神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Hida City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}, formerly part of {{ill|Yoshiki District|en|Yoshiki District|qid=Q8056119|lt=Yoshiki District}} in [[Furukawa Town]].
+
+It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}. Another theory suggests that {{ill|Kifune Shrine (Hida City)|ja|貴船神社 (飛騨市)|2=ja|3=貴船神社 (飛騨市)|12=simple|13=User:Immanuelle/Kifune Shrine (Hida)|13=User:Immanuelle/Kifune Shrine (Hida City)}} is the site of the original Takata Shrine.
+
+== History ==
+The exact founding date is unknown. One theory states that it was established in the 6th year of Emperor Bidatsu (577 CE) when the [[Nihamabe|Hihamabe]] clan was stationed in Hida Province, and their {{ill|Tomonomiyatsuko|lt=Tomonomiyatsuko|lt=Tomo no Miyatsuko|ja|伴造|12=simple|13=User:Immanuelle/Tomo no Miyatsuko|comment=enwiki is a redirect}} enshrined Takamimusubi no Mikoto.
+
+During the [[Kenmu Restoration]], [[Anekōji Ietsuna]] was a11ointed governor of Hida Province in 1334 and showed great reverence for Takata Shrine. He established a residence adjacent to the shrine, which became the political center of Hida. However, after the fall of the {{ill|Anekōji clan|en|Anekōji clan|qid=Q10943126|lt=Anekōji clan}} to {{ill|Kanamori Nagachika|en|Kanamori Nagachika|qid=Q8190652|lt=Kanamori Nagachika}}, the shrine's prominence declined.
+
+In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, the shrine was renamed "Hakusan Shrine" or "Hakusan Gongen Shrine." During the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka era}} (1804–1818), the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|lt=Yoshida clan|12=simple|13=User:Immanuelle/Urabe clan}} identified it as the Takata Shrine listed in the Engishiki, and it was renamed accordingly. The formal designation of Takata Shrine as a Shikinaisha was granted in 1870 (Meiji 3).
+
+In 1907 (Meiji 40), the shrine incorporated Suwa Shrine, Tado Shrine, and Kamo Shrine.
+
+== Deities ==
+* Main deity
+** [[Takamimusubi|Takamimusubi no Mikoto]]
+* Enshrined Deities
+** [[:en:Kikurihime no Kami|Hakusan-hime no Kami]]
+** [[Takeminakata|Takeminakata no Mikoto]]
+** {{ill|Kamo-wake-ikazuchi-no-Kami|en|Kamo Wake-ikazuchi|qid=Q11634943|lt=Kamo Wakeikazuchi no Mikoto}}
+** [[Amatsuhikone|Amatsuhikone no Mikoto]]
+
+== festival ==
+The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings, and a portable shrine procession.
+
+* Kagura Lion Dance
+** A two-person [[shishi-mai]] performed by male and female pairs, featuring six different routines. It is designated as an Important Intangible Folk Cultural Property of {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.<ref name="kagurajishi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/mumin/hidasi/takadajinnjya.html |title=Kagura Lion Dance of Takata Shrine |publisher=Gifu Prefecture |accessdate=2013-04-22}}</ref> The dance is performed several times during the festival.
+* Matchlock Gun Firings
+** Conducted at key points of the festival to purify the sacred grounds. The matchlocks are said to have been donated during the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period}} by {{ill|Anekōji Tokimitsu|ja|姉小路時光|12=simple|13=User:Immanuelle/Anekōji Tokimitsu|ja_comment=jawiki link invalid}}.
+* Portable Shrine Procession
+** A procession including {{ill|Cleyera japonica|en|Cleyera japonica|qid=Q775470|lt=Cleyera japonica}}, {{ill|Tengu|en|Tengu|qid=Q742360|lt=Tengu}}, armored warriors, chicken fights, male and female lions, drums, flutes, {{ill|Miko|en|Miko|qid=Q1047139|lt=Miko}}, and the mikoshi, comprising several hundred participants.
+
+== Cultural Properties ==
+;Important Intangible Folk Cultural Properties of Gifu Prefecture
+* Kagura Lion Dance of Takata Shrine<ref name="kagurajishi" />
+;Designated Tangible Cultural Properties of Hida City
+* Kabuto (helmet) of Takata Shrine<ref name="furukawacho_bunkazai">{{Cite web|language=ja|date= |url=http://www.pamph-navi.jp/art/view_dynamic/pdfView.php?src=pam10008025 |title=Furukawa Town Cultural Property Guide |format=PDF |publisher=Hida City |accessdate=2013-04-22}}</ref>
+* Statues of Takata Shrine Guardians<ref name="furukawacho_bunkazai" />
+;Designated Natural Monuments of Hida City
+* Five Great Cedars of Takata Shrine<ref name="furukawacho_bunkazai" />
+
+== Access ==
+* Approximately2 km from {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}} {{ill|Sugisaki Station|en|Sugisaki Station|qid=Q7635122|lt=Sugisaki Station}}.
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
+== Notes ==
+{{Reflist}}
+
+{{Shinto-stub}}
+
+{{translated page|ja|高田神社 (飛騨市)|version=98347519|comment=Imported full ja history}}
+
+{{wikidata link|Q11672195}}
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name=Takata Shrine
+| religious_affiliation = [[Shinto]]
+|image=File:Takada shrine, Hida, 2017.jpg
+| location={{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}} [[Hida City]] Furukawa Town Tano Kamigakiuchi 2669
+| coordinates={{Coord|36.2567194|N|137.1727444}}
+| deities=[[Takamimusubi|Takamimusubi no Mikoto]]
+| type={{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}, {{ill|Kinpei-sha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}}
+| festivals=April 28
+| prefecture={{ill|Hida, Gifu|qid=Q847319}}
+| deity={{ill|Takamimusubi|qid=Q125400}}
+}}
+'''Takata Shrine''' (高田神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Hida City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}, formerly part of {{ill|Yoshiki District|en|Yoshiki District|qid=Q8056119|lt=Yoshiki District}} in [[Furukawa Town]].
+
+It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}. Another theory suggests that {{ill|Kifune Shrine (Hida City)|ja|貴船神社 (飛騨市)|2=ja|3=貴船神社 (飛騨市)|12=simple|13=User:Immanuelle/Kifune Shrine (Hida)|13=User:Immanuelle/Kifune Shrine (Hida City)}} is the site of the original Takata Shrine.
+
+== History ==
+The exact founding date is unknown. One theory states that it was established in the 6th year of Emperor Bidatsu (577 CE) when the [[Nihamabe|Hihamabe]] clan was stationed in Hida Province, and their {{ill|Tomonomiyatsuko|lt=Tomonomiyatsuko|lt=Tomo no Miyatsuko|ja|伴造|12=simple|13=User:Immanuelle/Tomo no Miyatsuko|comment=enwiki is a redirect}} enshrined Takamimusubi no Mikoto.
+
+During the [[Kenmu Restoration]], [[Anekōji Ietsuna]] was a11ointed governor of Hida Province in 1334 and showed great reverence for Takata Shrine. He established a residence adjacent to the shrine, which became the political center of Hida. However, after the fall of the {{ill|Anekōji clan|en|Anekōji clan|qid=Q10943126|lt=Anekōji clan}} to {{ill|Kanamori Nagachika|en|Kanamori Nagachika|qid=Q8190652|lt=Kanamori Nagachika}}, the shrine's prominence declined.
+
+In the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, the shrine was renamed "Hakusan Shrine" or "Hakusan Gongen Shrine." During the {{ill|Bunka|en|Bunka|qid=Q1373146|lt=Bunka era}} (1804–1818), the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|lt=Yoshida clan|12=simple|13=User:Immanuelle/Urabe clan}} identified it as the Takata Shrine listed in the Engishiki, and it was renamed accordingly. The formal designation of Takata Shrine as a Shikinaisha was granted in 1870 (Meiji 3).
+
+In 1907 (Meiji 40), the shrine incorporated Suwa Shrine, Tado Shrine, and Kamo Shrine.
+
+== Deities ==
+* Main deity
+** [[Takamimusubi|Takamimusubi no Mikoto]]
+* Enshrined Deities
+** [[:en:Kikurihime no Kami|Hakusan-hime no Kami]]
+** [[Takeminakata|Takeminakata no Mikoto]]
+** {{ill|Kamo-wake-ikazuchi-no-Kami|en|Kamo Wake-ikazuchi|qid=Q11634943|lt=Kamo Wakeikazuchi no Mikoto}}
+** [[Amatsuhikone|Amatsuhikone no Mikoto]]
+
+== festival ==
+The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings, and a portable shrine procession.
+
+* Kagura Lion Dance
+** A two-person [[shishi-mai]] performed by male and female pairs, featuring six different routines. It is designated as an Important Intangible Folk Cultural Property of {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.<ref name="kagurajishi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/mumin/hidasi/takadajinnjya.html |title=Kagura Lion Dance of Takata Shrine |publisher=Gifu Prefecture |accessdate=2013-04-22}}</ref> The dance is performed several times during the festival.
+* Matchlock Gun Firings
+** Conducted at key points of the festival to purify the sacred grounds. The matchlocks are said to have been donated during the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period}} by {{ill|Anekōji Tokimitsu|ja|姉小路時光|12=simple|13=User:Immanuelle/Anekōji Tokimitsu|ja_comment=jawiki link invalid}}.
+* Portable Shrine Procession
+** A procession including {{ill|Cleyera japonica|en|Cleyera japonica|qid=Q775470|lt=Cleyera japonica}}, {{ill|Tengu|en|Tengu|qid=Q742360|lt=Tengu}}, armored warriors, chicken fights, male and female lions, drums, flutes, {{ill|Miko|en|Miko|qid=Q1047139|lt=Miko}}, and the mikoshi, comprising several hundred participants.
+
+== Cultural Properties ==
+;Important Intangible Folk Cultural Properties of Gifu Prefecture
+* Kagura Lion Dance of Takata Shrine<ref name="kagurajishi" />
+;Designated Tangible Cultural Properties of Hida City
+* Kabuto (helmet) of Takata Shrine<ref name="furukawacho_bunkazai">{{Cite web|language=ja|date= |url=http://www.pamph-navi.jp/art/view_dynamic/pdfView.php?src=pam10008025 |title=Furukawa Town Cultural Property Guide |format=PDF |publisher=Hida City |accessdate=2013-04-22}}</ref>
+* Statues of Takata Shrine Guardians<ref name="furukawacho_bunkazai" />
+;Designated Natural Monuments of Hida City
+* Five Great Cedars of Takata Shrine<ref name="furukawacho_bunkazai" />
+
+== Access ==
+* Approximately2 km from {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}} {{ill|Sugisaki Station|en|Sugisaki Station|qid=Q7635122|lt=Sugisaki Station}}.
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
+== Notes ==
+{{Reflist}}
+
+{{Shinto-stub}}
+
+{{translated page|ja|高田神社 (飛騨市)|version=98347519|comment=Imported full ja history}}
+
+{{wikidata link|Q11672195}}
+
+==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Hida]]
 [[Category:Former Gō-sha in Gifu Prefecture]]
 [[Category:Gō-sha]]
 [[Category:History of Hida]]
 [[Category:Kokuhei-sha]]
 [[Category:Municipal Tangible Cultural Properties in Tochigi Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Prefecturally designated intangible folk cultural property]]
 [[Category:Shikinaisha in Hida Province]]
 [[Category:Shinto shrines in Gifu Prefecture]]
@@ -73,4 +236,5 @@ The festival highlights include the Kagura Lion Dance, [[matchlock]] gun firings
 [[Category:Wikidata has short description]]
 [[Category:Junior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]

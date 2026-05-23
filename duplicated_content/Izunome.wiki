@@ -1,25 +1,61 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izunome for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{{Infobox deity|gender={{ill|male|qid=Q6581097|1=Male (gender)}}|parents={{ill|Izanagi|qid=Q813858|1=Izanagi}}}}
+{{Infobox deity|gender={{ill|Male (gender)|ar|ذكر|diq|Lac|eo|Malino|es|Masculino|fr|Sexe masculin|ha|Namiji|id|Lelaki|kaj|A̱jjwa|new|बायचिं|pt|Masculino|scn|Masculiddu|sk|Mužské pohlavie|tok|mije kon|qid=Q6581097}}|parents={{ill|Izanagi|qid=Q813858}}}}
+
 [[Image:Descendants of izanagi alone.svg|thumb|right|200px|The deities born from Izanagi's purification (based on the Kojiki). [[Media:Descendants of izanagi alone.svg|View in SVG (supported browsers only)]]]]
-'''Izunome''' (伊豆能売) is a goddess appearing in {{ill|Japanese mythology|en|Japanese mythology|qid=Q814158|lt=Japanese mythology|1=Japanese mythology}}.
+'''Izunome''' (伊豆能売) is a goddess appearing in {{ill|Japanese mythology|en|Japanese mythology|qid=Q814158|lt=Japanese mythology}}.
+
 == Depictions in Mythology ==
-Izunome is mentioned only in the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki|1=Kojiki}} and does not appear in the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}}. Even in the Kojiki, there are no descriptions of her origins or deeds.
+Izunome is mentioned only in the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}} and does not appear in the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}. Even in the Kojiki, there are no descriptions of her origins or deeds.
+
 == Overview ==
-In the myth of {{ill|Kamiumi|en|Kamiumi|qid=Q3545159|lt=The Birth of the Gods|1=Kamiumi}}, when {{ill|Izanagi|en|Izanagi|qid=Q813858|lt=Izanagi|1=Izanagi}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi|1=Yomi}}, two deities of impurity, {{ill|Ōmagatsubi no Kami|ja|大禍津日神|12=simple|13=User:Immanuelle/Ōmagatsubi no Kami|ja_comment=jawiki redirects to 禍津日神|1=Magatsuhi-no-kami|comment=changed title based on wikidata|qid=Q11591203|1=Magatsuhi-no-kami}} and {{ill|Yasomagatsubi no Kami|ja|八十禍津日神|12=simple|13=User:Immanuelle/Yasomagatsubi no Kami|ja_comment=jawiki redirects to 禍津日神|1=Magatsuhi-no-kami|comment=changed title based on wikidata|qid=Q11591203|1=Magatsuhi-no-kami}}, were born from the impurities of Yomi. To counteract the calamities brought by these deities, two {{ill|Ōnaobi no Kami|lt=Ōnaobi no Kami|lt=Naobi no Kami|ja|直毘神|12=simple|13=User:Immanuelle/Naobi no Kami|qq=}} (Kamunaobi no Kami and Ōnaobi no Kami) and Izunome were born.
-The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} {{ill|Jinmyōchō|ja|神名帳|12=simple|13=User:Immanuelle/Jinmyōchō|1=Jinmyōchō|comment=changed title based on wikidata|qid=Q11588822}} lists a shrine in the {{ill|Izumo Province|ja|Izumo Province|12=simple|13=User:Immanuelle/Izumo Province|ja_comment=jawiki link invalid}}’s {{ill|Izumo District|ja|出雲郡|12=simple|13=User:Immanuelle/Izumo District|1=Izumo district|comment=changed title based on wikidata|qid=Q10896679}} called "Kamimutsui Izunome Shrine," which is believed to have enshrined Izunome. This shrine is said to have been merged with the {{ill|Inu Shrine|ja|伊努神社|12=simple|13=User:Immanuelle/Inu Shrine|ja_comment=jawiki link invalid}}, though Izunome is not listed among its enshrined deities. Other than the Jinmyōchō, no historical records mention this shrine, and no existing shrine is known to enshrine Izunome.
-However, some shrines not bearing Izunome’s name still exist. For instance, the {{ill|Karahino Shrine|ja|加良比乃神社|12=simple|13=User:Immanuelle/Karahino Shrine|ja_comment=jawiki link invalid|qid=Q135579311|1=Karahino Shrine}} in {{ill|Tsu, Mie|en|Tsu, Mie|qid=Q203027|lt=Tsu, Mie|1=Tsu, Mie}}, one of the legendary original locations of {{ill|Moto Ise|ja|元伊勢|12=simple|13=User:Immanuelle/Moto Ise|1=Moto-Ise Shrines|comment=changed title based on wikidata|qid=Q11387775}}, is said to have originated from the enshrinement of {{ill|Mikura Itake no Kami|ja|御倉板舉神|12=simple|13=User:Immanuelle/Mikura Itake no Kami|ja_comment=jawiki link invalid}} and Izunome no Kami at the site where {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}} established the "Katahimiya."
+In the myth of {{ill|Kamiumi|en|Kamiumi|qid=Q3545159|lt=The Birth of the Gods}}, when {{ill|Izanagi|en|Izanagi|qid=Q813858|lt=Izanagi}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi}}, two deities of impurity, {{ill|Magatsuhi-no-kami|ja|大禍津日神|12=simple|13=User:Immanuelle/Ōmagatsubi no Kami|ja_comment=jawiki redirects to 禍津日神|comment=changed title based on wikidata|qid=Q11591203}} and {{ill|Magatsuhi-no-kami|ja|八十禍津日神|12=simple|13=User:Immanuelle/Yasomagatsubi no Kami|ja_comment=jawiki redirects to 禍津日神|comment=changed title based on wikidata|qid=Q11591203}}, were born from the impurities of Yomi. To counteract the calamities brought by these deities, two {{ill|Ōnaobi no Kami|ja|直毘神|lt=Naobi no Kami}} (Kamunaobi no Kami and Ōnaobi no Kami) and Izunome were born.
+
+The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} {{ill|Jinmyōchō|ja|神名帳|12=simple|13=User:Immanuelle/Jinmyōchō|comment=changed title based on wikidata|qid=Q11588822}} lists a shrine in the {{ill|Izumo Province|ja|Izumo Province}}’s {{ill|Izumo district|ja|出雲郡|12=simple|13=User:Immanuelle/Izumo District|comment=changed title based on wikidata|qid=Q10896679}} called "Kamimutsui Izunome Shrine," which is believed to have enshrined Izunome. This shrine is said to have been merged with the {{ill|Inu Shrine|ja|伊努神社}}, though Izunome is not listed among its enshrined deities. Other than the Jinmyōchō, no historical records mention this shrine, and no existing shrine is known to enshrine Izunome.
+
+However, some shrines not bearing Izunome’s name still exist. For instance, the {{ill|Karahino Shrine|ja|加良比乃神社|12=simple|13=User:Immanuelle/Karahino Shrine|ja_comment=jawiki link invalid|qid=Q135579311}} in {{ill|Tsu, Mie|en|Tsu, Mie|qid=Q203027|lt=Tsu, Mie}}, one of the legendary original locations of {{ill|Moto-Ise Shrines|ja|元伊勢|12=simple|13=User:Immanuelle/Moto Ise|comment=changed title based on wikidata|qid=Q11387775}}, is said to have originated from the enshrinement of {{ill|Mikura Itake no Kami|ja|御倉板舉神}} and Izunome no Kami at the site where {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} established the "Katahimiya."
+
 == References ==
 {{Reflist}}
+
 == See Also ==
-* {{ill|Haraedo no Kami|lt=Haraedo no Kami|lt=Haraedo no Ōkami|ja|祓戸大神|12=simple|13=User:Immanuelle/Haraedo no Ōkami|qq=}}
+* {{ill|Haraedo no Kami|ja|祓戸大神|lt=Haraedo no Ōkami}}
+
 {{Shinto}}
 {{Shinto-stub}}
+
 {{translated page|ja|伊豆能売|version=104157476|comment=Imported full ja history}}
 
+==Merged second translation==
+[[Image:Descendants of izanagi alone.svg|thumb|right|200px|Deities Born from the Purification of Izanagi (Based on the ''Kojiki'') [[Media:Descendants of izanagi alone.svg|View in SVG (for supported browsers)]]]]
+'''Izunome''' (伊豆能売) is a {{ill|Goddess|en|Goddess|qid=Q205985|lt=Goddess}} appearing in [[Japanese mythology]].
+
+== Description in Mythology ==
+Izunome appears only in the ''[[Kojiki]]'' and does not appear in the ''[[Nihon Shoki]]''. Even in the ''Kojiki'', there are no details regarding her origin or deeds.
+
+== Overview ==
+During the [[Kamiumi]] (birth of the gods), when {{ill|Izanagi|ja|伊邪那岐命|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} returned from {{ill|Yomi|en|Yomi|qid=Q1142558|lt=Yomi}}, two deities of calamity, {{ill|Magatsuhi-no-kami|ja|大禍津日神|lt=Ōmaga-Tsuhi}} and {{ill|Magatsuhi-no-kami|ja|八十禍津日神|lt=Yasomaga-Tsuhi}}, were born from the impurities of Yomi. To counteract the disasters brought by these deities of calamity, two {{ill|Ōnaobi no Kami|ja|直毘神|lt=Naobi no Kami}}—{{ill|Kamuna'obi|ja|神直毘神}} and {{ill|Ōnaobi no Kami|ja|大直毘神|lt=Ōna-obi}}—along with Izunome were born.
+
+In the ''[[Engishiki Jinmyōchō]]'', there is a listing for a shrine called "Kamumusu Izuno-me Shrine" (神魂伊豆之賣神社) in the {{ill|Izumo Province|ar|إزومو (مقاطعة)|ca|Província d'Izumo|cs|Provincie Izumo|de|Provinz Izumo|es|Provincia de Izumo|fa|ولایت ایزومو|fr|Province d'Izumo|gl|Provincia de Izumo|id|Provinsi Izumo|it|Izumo (provincia)|ja|出雲国|ka|იზუმოს პროვინცია|ko|이즈모국|lt|Idzumo žemė|nl|Izumo (provincie)|no|Izumo|pt|Província de Izumo|ru|Идзумо (провинция)|simple|Izumo Province|sk|Izumo (provincia)|sr|Провинција Изумо|tr|Izumo (vilayet)|uk|Провінція Ідзумо|wuu|出云国|zh|出雲國|zh_classical|出雲國|zh_min_nan|Izumo-kok|zh_yue|出雲國|qid=Q582846|lt=Izumo Province}}'s [[Izumo District]], which is believed to have enshrined Izunome. This shrine was later merged into {{ill|Inu Shrine|ja|伊努神社}}, but Izunome's name is not found among the deities enshrined there. Aside from the ''Engishiki Jinmyōchō'', no other historical sources mention this shrine, and there are no currently existing shrines dedicated specifically to Izunome.
+
+However, there are existing shrines without Izunome's name that may be connected to her. One such shrine is the "Karahi-no-Jinja" (加良比乃神社) in [[Tsu, Mie Prefecture|Tsu City, Mie Prefecture]], considered a former site of the [[Ise Grand Shrine|Moto-Ise]] tradition. According to legend, {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} enshrined the deities "Mikura-Itate-no-Kami" (御倉板舉神) and Izunome at the site where she had established the "Katahimiya" (片樋宮).
+
+== References ==
+{{Reflist}}
+
+== See Also ==
+* [[Haraedo no Kami|Haraedo-no-Ōkami]] (祓戸大神)
+
+{{Shinto}}
+{{Shinto-stub}}
+
+{{translated page|ja|伊豆能売|version=104157476|comment=Imported full ja history}}
+
+{{wikidata link|Q10885126|ja|伊豆能売|zh|伊豆能賣神|en|Izunome|ja|%E4%BC%8A%E8%B1%86%E8%83%BD%E5%A3%B2|check_date=2026-05-15}}
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
 [[Category:Maintenance deities]]
 [[Category:Pages linked to by wikidata]]
+[[Category:Pages with duplicated content]]
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata no short description]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]

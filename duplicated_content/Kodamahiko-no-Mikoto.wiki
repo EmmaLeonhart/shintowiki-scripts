@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kodamahiko-no-Mikoto for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
+
 {{Infobox deity
 | name = Kodama-hiko no Mikoto
 | generation_name = {{ill|Kaminaga Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Kaminaga Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} Fourth Generation
@@ -16,30 +17,98 @@
 | shrines = {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}} and others
 | related_clans = {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
 }}
+
 '''Kodama-hiko no Mikoto''' (児玉彦命) is a {{ill|Kami|en|Kami|qid=Q524158|lt=kami|1=Kami}} worshiped in the {{ill|Suwa Region|lt=Suwa Region|lt=Suwa region|ja|諏訪地方|12=simple|13=User:Immanuelle/Suwa Region|ja_comment=jawiki redirects to 諏訪地域}} of {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, as part of the {{ill|Suwa Faith|ja|諏訪信仰|12=simple|13=User:Immanuelle/Suwa Faith|ja_comment=jawiki redirects to 諏訪神社|1=Suwa Shrine|comment=changed title based on wikidata|qid=Q2370082}}.
+
 == Overview ==
 [[File:Moriya Family Tree - 守矢氏系図.png|170px|thumbnail|{{Center|The first five generations of the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} as depicted in the genealogical text}}]]
 According to the {{ill|Kaminaga Moriya clan Genealogy|ja|神長守矢氏系譜|12=simple|13=User:Immanuelle/Kaminaga Moriya clan Genealogy|ja_comment=jawiki link invalid}}, a genealogy of the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} compiled in the early {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji period|1=Meiji era}}:
+
 <blockquote> {{ill|Oogami|ja|大神|12=simple|13=User:Immanuelle/Oogami|1=Ōkami|comment=changed title based on wikidata|qid=Q10937139}}’s child, {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}, begot Kodama-hiko no Mikoto, who succeeded the position of {{ill|Chikatojin|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatojin|13=User:Immanuelle/Chikatō-no-Kami|qq=}} in accordance with the divine words of Oogami. He married Mitutama-hime no Kami, the daughter of Moritatsu no Kami, and they bore Yatsukushin.<ref name="suwa">{{Cite book |title=Kaminaga Moriya clan Genealogy|author=Suwa Educational Association|year=1938|page=34|url=https://dl.ndl.go.jp/info:ndljp/pid/1185913/24}}</ref><ref name="tikatousin">[http://yatsu-genjin.jp/suwataisya/sanpo/tikatousin.htm Chikatojin (Genealogy of Moreya Clan)]</ref>
 </blockquote>
-As such, Kodama-hiko no Mikoto is regarded as the fourth generation in the genealogy of the Moriya clan.<ref name="tikatousin"/><ref>『続・高部の文化財』高部歴史編纂委員会編、2006th year 、31頁</ref> His mother is unknown; Yatsukushin, born of his marriage to Mitutama-hime no Kami, is the fifth generation.<ref name="suwa"/>
+
+As such, Kodama-hiko no Mikoto is regarded as the fourth generation in the genealogy of the Moriya clan.<ref name="tikatousin"/><ref>『続・高部の文化財』高部歴史編纂委員会編、2006th year 、31頁</ref>
+
+== Genealogy ==
+Kodama-hiko no Mikoto is the child of {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}, though his mother is unknown. His spouse, Mitutama-hime no Kami, the daughter of Moritatsu no Kami, bore him Yatsukushin, who is regarded as the fifth generation in the Moriya clan’s genealogy.<ref name="suwa"/>
+
 == Shrines ==
 Kodama-hiko no Mikoto is enshrined in the following locations:
 * {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}} (Yuno-waki, {{ill|Suwa, Nagano|en|Suwa, Nagano|qid=Q846338|lt=Suwa City|1=Suwa, Nagano}}, Nagano Prefecture)
 * {{ill|Taisan Shrine|ja|泰山神社|12=simple|13=User:Immanuelle/Taisan Shrine|qq=}} ({{ill|Takamori Town|ja|高森町|12=simple|13=User:Immanuelle/Takamori Town|1=Takamorimachi|comment=changed title based on wikidata|qid=Q31469}}, {{ill|Shimoina District, Nagano|en|Shimoina District, Nagano|qid=Q726999|lt=Shimoina District|1=Shimoina District, Nagano}}, Nagano Prefecture)
+
 == See Also ==
 * {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}
 * {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}
 * {{ill|Chikatojin|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikatojin|13=User:Immanuelle/Chikatō-no-Kami|qq=}}
 * {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
 * {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}}
+
 == References ==
 {{Reflist}}
+
 {{Suwa Faith}}
+
 {{translated page|ja|児玉彦命|version=87516306|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Infobox deity
+| name = Kodama-hiko no Mikoto (児玉彦命)
+| generation = Fourth generation of {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
+| deity = {{ill|Kunitsukami|ja|国津神|1=Kunitsukami|12=simple|13=User:Immanuelle/Kunitsukami|ja_comment=jawiki redirects to 天津神・国津神|comment=confirming this goes to Kunitsukami|qid=Q60995523|1=Kunitsukami|2=zh|3=國神|4=fr|5=Kunitsukami|6=mni|7=ꯀꯨꯅꯤꯠꯁꯨꯀꯃꯤ}}
+| full_name = Kodama-hiko no Mikoto (児玉彦命)
+| aliases = 
+| alternate_names = 
+| Rank = 
+| divine_nature = {{ill|Metalsmith|en|Metalsmith|qid=Q838566|lt=Kaji|1=Metalsmith}} deity
+| tomb = 
+| father = {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}
+| mother = Unknown
+| consort = {{ill|Mitsutama-hime no Kami|ja|美都多麻比売神|12=simple|13=User:Immanuelle/Mitsutama-hime no Kami|ja_comment=jawiki link invalid}}
+| children = {{ill|Yasugami|ja|八櫛神|12=simple|13=User:Immanuelle/Yasugami|ja_comment=jawiki link invalid}}
+| shrines = {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}}, etc.
+| related_clans = {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
+}}
+
+'''Kodama-hiko no Mikoto''' (児玉彦命) is a deity of {{ill|Suwa Faith|ja|諏訪信仰|12=simple|13=User:Immanuelle/Suwa Faith|ja_comment=jawiki redirects to 諏訪神社|1=Suwa Shrine|comment=changed title based on wikidata|qid=Q2370082}}, a traditional belief system rooted in the {{ill|Suwa Region|lt=Suwa Region|lt=Suwa region|ja|諏訪地方|12=simple|13=User:Immanuelle/Suwa region|ja_comment=jawiki redirects to 諏訪地域}} of {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}.
+
+== Overview ==
+[[File:Moriya Family Tree - 守矢氏系図.png|170px|thumbnail|center|The first five generations of the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}} lineage according to the ''Genealogy of the Moriya clan'' (洩矢神から八櫛神まで).]]
+According to the genealogy of the {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}, compiled during the early {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji period|1=Meiji era}}, Kodama-hiko no Mikoto is described as follows:
+<blockquote>
+"The son of Katakurabe no Mikoto, a child of the Great Deity ({{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}). Following the command of the Great Deity, he succeeded {{ill|Chikato|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikato|13=User:Immanuelle/Chikatō-no-Kami|qq=}} as the overseer of rituals and governance. He married Mitsutama-hime, daughter of {{ill|Moritachi no Kami|ja|守達神|1=Moritachi no Kami|12=simple|13=User:Immanuelle/Moritachi no Kami|13=User:Immanuelle/Moritachi no Kami|qq=}}, and they bore Yasugami."<ref name="suwa">{{Cite web|title=Genealogy of the Moriya clan|url=https://dl.ndl.go.jp/info:ndljp/pid/1185913/24|publisher=Suwa Historical Association|year=1938|access-date=2023-12-04}}</ref><ref name="tikatousin">{{Cite web|title=Chikato and the Moriya Lineage|url=http://yatsu-genjin.jp/suwataisya/sanpo/tikatousin.htm|publisher=Yatsu Genjin|access-date=2023-12-04}}</ref>
+</blockquote>
+
+This makes Kodama-hiko no Mikoto the fourth generation of the Moriya lineage.<ref name="tikatousin"/><ref>''Continued Cultural Assets of Takabe,'' Takabe History Compilation Committee, 2006, p. 31.</ref>
+
+== Lineage ==
+Kodama-hiko no Mikoto is the child of {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}, with his mother unknown. He married {{ill|Mitsutama-hime no Kami|ja|美都多麻比売神|12=simple|13=User:Immanuelle/Mitsutama-hime no Kami|ja_comment=jawiki link invalid}}, the daughter of {{ill|Moritachi no Kami|ja|守達神|1=Moritachi no Kami|12=simple|13=User:Immanuelle/Moritachi no Kami|13=User:Immanuelle/Moritachi no Kami|qq=}}, and they had Yasugami, who is regarded as the fifth generation of the Moriya clan.<ref name="suwa"/>
+
+== Shrines ==
+Kodama-hiko no Mikoto is enshrined at the following locations:
+* {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}} (Yunowaki, Suwa City, Nagano Prefecture)
+* {{ill|Taisan Shrine|lt=Taisan Shrine|lt=Taizan Shrine (Takamori)|ja|泰山神社|12=simple|13=User:Immanuelle/Taizan Shrine (Takamori)|qq=}} (Takamori Town, {{ill|Shimoina District, Nagano|en|Shimoina District, Nagano|qid=Q726999|lt=Shimoina District, Nagano|1=Shimoina District, Nagano}}, Nagano Prefecture)
+
+== References ==
+{{reflist}}
+
+== See Also ==
+* {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata|1=Takeminakata}}
+* {{ill|Katakurabe no Mikoto|ja|片倉辺命|12=simple|13=User:Immanuelle/Katakurabe no Mikoto|qq=}}
+* {{ill|Chikato|ja|千鹿頭神|1=Chikatō-no-Kami|12=simple|13=User:Immanuelle/Chikato|13=User:Immanuelle/Chikatō-no-Kami|qq=}}
+* {{ill|Moriya clan|ja|守矢氏|1=Moriya clan|12=simple|13=User:Immanuelle/Moriya clan|13=User:Immanuelle/Moriya clan|qq=}}
+* {{ill|Kodama-ishi Shrine|ja|児玉石神社|12=simple|13=User:Immanuelle/Kodama-ishi Shrine|ja_comment=jawiki link invalid}}
+
+{{Suwa Faith}}
+[[:en:Category 8|Category 8]]
+
+{{translated page|ja|児玉彦命|version=87516306|comment=Imported full ja history}}
+
+{{wikidata link|Q109594446|ja|児玉彦命}}
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
+[[Category:Pages with duplicated content]]
 [[Category:Suwa faith]]
 [[Category:Wikidata no short description]]
 [[Category:Independently git synced pages]]

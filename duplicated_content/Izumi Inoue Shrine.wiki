@@ -1,35 +1,48 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Izumi_Inoue_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{{Infobox religious building|religious_affiliation = [[Shinto]]
+{
+{
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 |image = File:泉井上神社 和泉市にて Izumi-Inoue-jinja 2012.12.14 - panoramio.jpg
 |name = Izumi Inoue Shrine
+|location = 6-2-38 Fuchū-chō, Izumi City, Osaka Prefecture, Japan
 |coordinates = {{Coord|34.487056|N|135.427639}}
-|deity = {{ill|Kotoamatsukami|qid=Q776371|1=Kotoamatsukami}}|status = {{ill|Shikinaisha|en|12=simple|13=User:Immanuelle/Shikinaisha|qq=}} (minor) <br>Former {{ill|Fusha|ja|府社|1=Fu-sha|qid=Q134917326}}{{efn|lt=Fu-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917326|qq= 近代社格制度}} <br> Sōja of {{ill|Izumi Province|en|12=simple|13=User:Immanuelle/Izumi Province|qq=}}|establishment = Unknown
-|main_hall = {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Ōtori-zukuri|1=Taisha-zukuri}}
+|deity = {{ill|Kotoamatsukami|qid=Q776371}}|status = {{ill|Shikinaisha|en|Shikinaisha}} (minor) <br>Former {{ill|Fu-sha|ja|府社|qid=Q134917326}}{{efn|lt=Fu-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917326|qq= 近代社格制度}} <br> Sōja of {{ill|Izumi Province|en|Izumi Province}}|establishment = Unknown
+|main_hall = {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Ōtori-zukuri}}
 |festivals = Autumn Grand festival
-|location = {{ill|Izumi|qid=Q696412|1=Izumi, Osaka}}
+|location = {{ill|Izumi, Osaka|qid=Q696412}}
 }}
-'''Izumi Inoue Shrine''' ({{lang|ja|泉井上神社}}, ''Izumi Inoue Jinja'') is a {{ill|Shinto shrine|en|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in {{ill|Izumi, Osaka|en|12=simple|13=User:Immanuelle/Izumi, Osaka|qq=}}, Japan. It is an ancient shrine listed in the {{ill|Engishiki|en|12=simple|13=User:Immanuelle/Engishiki|qq=}} and was historically the {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} (provincial shrine) of {{ill|Izumi Province|en|12=simple|13=User:Immanuelle/Izumi Province|qq=}}. The shrine also hosts the Izumi Gosha Sōja within its precincts, enshrining the five main shrines of Izumi.
+
+'''Izumi Inoue Shrine''' ({{lang|ja|泉井上神社}}, ''Izumi Inoue Jinja'') is a {{ill|Shinto shrine|en|Shinto shrine}} located in {{ill|Izumi, Osaka|en|Izumi, Osaka}}, Japan. It is an ancient shrine listed in the {{ill|Engishiki|en|Engishiki}} and was historically the {{ill|Sōja|en|Sōja}} (provincial shrine) of {{ill|Izumi Province|en|Izumi Province}}. The shrine also hosts the Izumi Gosha Sōja within its precincts, enshrining the five main shrines of Izumi.
+
 == Enshrined Deities ==
 ; Main deity
-* '''{{ill|Zōka Sanshin|en|12=simple|13=User:Immanuelle/Zōka Sanshin|qq=}} (Three Divine Creators)'''
-''' {{ill|Ame-no-Minakanushi|en|12=simple|13=User:Immanuelle/Ame-no-Minakanushi|qq=}}
-''' {{ill|Takamimusubi|en|12=simple|13=User:Immanuelle/Takamimusubi|qq=}}
-''' {{ill|Kamimusubi|en|12=simple|13=User:Immanuelle/Kamimusubi|qq=}}
+* '''{{ill|Zōka Sanshin|en|Zōka Sanshin}} (Three Divine Creators)'''
+''' {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi}}
+''' {{ill|Takamimusubi|en|Takamimusubi}}
+''' {{ill|Kamimusubi|en|Kamimusubi}}
+
 ; Additional deities
-* {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū|1=Empress Jingū}}
-* {{ill|Emperor Chūai|en|Emperor Chūai|qid=Q179971|lt=Emperor Chūai|1=Emperor Chūai}}
-* {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin|1=Emperor Ōjin}} and their 45 attendants
+* {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}
+* {{ill|Emperor Chūai|en|Emperor Chūai|qid=Q179971|lt=Emperor Chūai}}
+* {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}} and their 45 attendants
+
 == History ==
 The precise date of establishment is unknown. According to legend, the shrine originated when Empress Jingū visited the area during the 2nd year of Emperor Chūai’s reign. A miraculous spring is said to have appeared, which became a sacred site, and a shrine was built to enshrine the spring as a divine blessing.
+
 The spring, known as "Izumi Shimizu" (Izumi Clear Water), is considered the namesake of Izumi Province and Izumi City.<ref name="asahi">Asahi Newspaper, Osaka Edition, November 12, 2013, p. 32.</ref>
+
 When Izumi Province was formally established in 716 CE, the shrine became the center of the provincial capital. The Izumi Gosha Sōja was later built within the precincts, enshrining deities from the province's most prominent shrines.<ref name="asahi"/>
-During the medieval period, the distinction between Izumi Inoue Shrine and the Izumi Gosha Sōja diminished. Under the influence of {{ill|Hachiman faith|en|12=simple|13=User:Immanuelle/Hachiman faith|qq=}}, the shrine became known as I-no-Hachiman-gū. Prominent warlords, including {{ill|Kusunoki Masashige|en|12=simple|13=User:Immanuelle/Kusunoki Masashige|qq=}} and {{ill|Toyotomi Hideyoshi|en|12=simple|13=User:Immanuelle/Toyotomi Hideyoshi|qq=}}, revered the shrine.
+
+During the medieval period, the distinction between Izumi Inoue Shrine and the Izumi Gosha Sōja diminished. Under the influence of {{ill|Hachiman faith|en|Hachiman faith}}, the shrine became known as I-no-Hachiman-gū. Prominent warlords, including {{ill|Kusunoki Masashige|en|Kusunoki Masashige}} and {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi}}, revered the shrine.
+
 In the Edo period, the shrine’s lands and holdings were significantly reduced. It regained prominence in the Meiji era, and in 1908, Izumi Inoue Shrine was re-established as the primary shrine, with the Izumi Gosha Sōja as a subsidiary shrine.
+
 == Features ==
 ; main hall
-The main hall was reconstructed in 1895 and is built in the {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Ōtori-zukuri|1=Taisha-zukuri}} architectural style. It houses the primary deity, the Three Divine Creators.
+The main hall was reconstructed in 1895 and is built in the {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Ōtori-zukuri}} architectural style. It houses the primary deity, the Three Divine Creators.
+
 ; Izumi Shimizu
 This sacred spring, historically significant for the region, is designated as an Osaka Prefecture historic site. Although it no longer flows, it was once a vital water source for the area.
+
 <gallery>
 File:Izumiinoue-jinja, honden.jpg|main hall
 File:Izumiinoue-jinja, haiden.jpg|Worship Hall
@@ -37,36 +50,50 @@ File:Izumiinoue-jinja, Izumigosha, haiden.jpg|Izumi Gosha Sōja Worship Hall
 File:Izumiinoue-jinja, keidaisha.jpg|Subsidiary Shrines: Kotte Shrine and Kumano Shrine
 File:Izumiinoue-jinja, toba.jpg|Stone Tablet Pagoda (Osaka Prefecture Cultural Asset)
 </gallery>
+
 == Events ==
 ; Autumn Grand festival
 The festival takes place in October and features traditional rituals, including a ''danjiri'' (float) procession. Historical records indicate the festival dates back to 1585.
+
 == Cultural Properties ==
 === National Important Cultural Properties ===
 * '''Izumi Gosha Sōja main hall''' - Designated in 1924.<ref>{{National Cultural Property Database|102|2201}}</ref>
+
 === Osaka Prefecture Cultural Properties ===
 * '''Izumi Inoue Shrine Stone Tablet Pagoda''' - A relic of the Nanboku-chō period, designated in 1970.<ref>{{Cite web|title=Osaka Prefecture Designated Cultural Properties|url=http://www.pref.osaka.lg.jp/bunkazaihogo/bunkazai/kenzou.html}}</ref>
+
 === Osaka Prefecture Historic Sites ===
 * '''Izumi Shimizu''' - Designated in 1971.<ref>{{Cite web|title=Osaka Prefecture Historic Sites|url=http://www.pref.osaka.lg.jp/bunkazaihogo/bunkazai/kenzou.html}}</ref>
+
 == Access ==
-* 5-minute walk from {{ill|Izumi-Fuchū Station|en|12=simple|13=User:Immanuelle/Izumi-Fuchū Station|qq=}} on the {{ill|JR Hanwa Line|en|12=simple|13=User:Immanuelle/JR Hanwa Line|qq=}}.
+* 5-minute walk from {{ill|Izumi-Fuchū Station|en|Izumi-Fuchū Station}} on the {{ill|JR Hanwa Line|en|JR Hanwa Line}}.
+
 == Nearby Landmarks ==
 * Remnants of the Izumi Provincial Office
-* {{ill|Kumano Kodō|lt=Kumano Kodō|lt=Kumano Kodo|en|12=simple|13=User:Immanuelle/Kumano Kodo|qq=}} (Oguri Road)
+* {{ill|Kumano Kodō|en|Kumano Kodō|lt=Kumano Kodo}} (Oguri Road)
+
 == External Links ==
 * [http://www.izumiinoue-j.org/ Official Website]
+
 {{Shinto}}
+
 {{Sōja shrines}}
+
+{{translated page|ja|泉井上神社|version=99684598|comment=Imported full ja history}}
+
+{{Commons category|Izumiinoue-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Izumi Inoue Shrine (Q11554710)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Izumi district|ja|和泉郡|zh|和泉郡|qid=Q10982247|1=Izumi district}} || {{ill|Izumi Inoue Shrine|lt=Izumi Inoue Shrine|ja|泉井上神社|commons|Category:Izumiinoue-jinja|qid=Q11554710|1=Izumi Inoue Shrine}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || {{ill|sōja|qid=Q1107129|lt=sōja|1=Sōja shrine}} || — || {{coord|34.486991|135.427709|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180998 DB]
+| {{ill|Izumi district|ja|和泉郡|zh|和泉郡|qid=Q10982247}} || {{ill|Izumi Inoue Shrine|lt=Izumi Inoue Shrine|ja|泉井上神社|commons|Category:Izumiinoue-jinja|qid=Q11554710}} || {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || {{ill|Sōja shrine|qid=Q1107129|lt=sōja}} || — || {{coord|34.486991|135.427709|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180998 DB]
 |}
-
-{{translated page|ja|泉井上神社|version=99684598|comment=Imported full ja history}}
-{{Commons category|Izumiinoue-jinja}}
-
+{{wikidata link|Q11554710|ja|泉井上神社|check_date=2026-05-15}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Izumi, Osaka]]
 [[Category:Former Fu-sha in Osaka]]
 [[Category:History of Izumi, Osaka]]
@@ -74,8 +101,11 @@ The festival takes place in October and features traditional rituals, including 
 [[Category:Izumi Province]]
 [[Category:Izumi, Osaka]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Izumi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Sōja shrines]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]

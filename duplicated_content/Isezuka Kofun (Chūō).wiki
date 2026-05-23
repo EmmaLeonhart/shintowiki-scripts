@@ -1,50 +1,118 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Isezuka_Kofun_%28Ch%C5%AB%C5%8D%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
-{{Infobox ancient site|type = {{ill|Round Kofun|ja|円墳|1=Round Kofun|1=Round Kofun|12=simple|13=User:Immanuelle/Round Kofun|13=User:Immanuelle/Round Kofun|comment=enwiki is a redirect}}
-| name = Isezuka Kofun
+{{Infobox ancient site|type = {{ill|Round Kofun|ja|円墳}}
+| name = Isetsuka Kofun
 | part_of = Uyamadaira Kofun Group
 | location = Takabe, Chūō City, Yamanashi Prefecture, Japan
 | coordinates = {{Coord|35|34|53.8|N|138|33|27.1|E|map_size:20000_region:JP-19_type:landmark}}
-| type = [[Round Kofun|Round Kofun]]
-| area = Diameter approximately 30 m, height approximately 3 m
-| notes = None
-| built = 5th century?
+| type = Circular mound (empun)
+| area = Approximately 30m diameter, 3m height
+| satellite = None
+| construction period = Possibly 5th century
 }}
-'''Isezuka Kofun''' (伊勢塚古墳) is a [[kofun]] located in Takabe, {{ill|Chūō, Yamanashi|en|Chūō, Yamanashi|qid=Q666049|lt=Chūō, Yamanashi|1=Chūō, Yamanashi}}, Yamanashi Prefecture. It is classified as a [[Round Kofun|Round kofun]].
-== Location and Historical Context ==
-The Isezuka Kofun is situated on the {{ill|Sone Hill Range|ja|曽根丘陵|12=simple|13=User:Immanuelle/Sone Hill Range|qq=}} along the southern edge of the {{ill|Kōfu Basin|ja|甲府盆地|12=simple|13=User:Immanuelle/Kōfu Basin|qq=}} in Chūō City. This area encompasses the Uyamadaira archaeological site, which spans periods from the {{ill|Jōmon period|en|Jōmon period|qid=Q52824|lt=Jōmon period|1=Jōmon period}} to the {{ill|Nara period|en|Nara period|qid=Q189178|lt=Nara period|1=Nara period}} and {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period|1=Heian period}}. Along with nearby tumuli such as the {{ill|Ōzuka Kofun (Chūō City)|ja|王塚古墳 (中央市)|12=simple|13=User:Immanuelle/Ōzuka Kofun (Chūō City)|qq=}}, the Isezuka Kofun forms part of the Uyamadaira Kofun Group.
 
-The ancient locality name "Isezuka" is said to derive from this kofun. Notably, a kofun with the same name, {{ill|Isetsuka Kofun (Ichikawamisato)|ja|伊勢塚古墳 (市川三郷町)|12=simple|13=User:Immanuelle/Isetsuka Kofun (Ichikawamisato)|ja_comment=jawiki link invalid|qid=Q135505746|1=Isezuka Kofun (Ichikawamisato)}}, is also located on the Sone Hill Range in {{ill|Ichikawamisato|en|Ichikawamisato|qid=Q1204453|lt=Ichikawamisato|1=Ichikawamisato}}.
+'''Isetsuka Kofun''' (伊勢塚古墳) is an [[ancient Kofun]] ([[kofun]]) located in Takabe, {{ill|Chūō, Yamanashi|en|Chūō, Yamanashi|qid=Q666049|lt=Chūō, Yamanashi}}, Yamanashi Prefecture. The tomb is classified as a [[Round Kofun|Circular Kofun]] ([[Round Kofun|Empun]]).
 
-The mound is circular, measuring 29 meters east-west and 27 meters north-south, with a height of 3 meters. Investigations conducted during a survey of the Takabe Uyamadaira site in 1992 uncovered traces of a surrounding ditch, suggesting the original diameter of the mound was approximately 33 meters.<ref>''Toyotomi Village Historical Records (Volume I)'', Chapter Three, Section Seven, "49. Isetsuka Kofun".</ref>
+== location and Historical Context ==
+The Isetsuka Kofun is situated on the {{ill|Sone Hill Range|ja|曽根丘陵|qid=Q11515319}} along the southern edge of the {{ill|Kōfu Basin|fa|حوضه کوفو|ja|甲府盆地|uk|Западина Кофу|zh|甲府盆地|qid=Q11577819}} in Chūō City. This area encompasses the Uyamadaira archaeological site, which spans periods from the {{ill|Jōmon period|ar|فترة جومون|az|Comon dövrü|ba|Дзёмон дәүере|bcl|Jōmon jidai|be|Дзёмон|bg|Джомон|bn|জোমোন যুগ|br|Marevezh Jōmon|ca|Període Jōmon|cs|Období Džómon|de|Jōmon-Zeit|eo|Ĵomon-epoko|es|Período Jōmon|et|Jōmoni ajastu|eu|Jōmon aroa|fa|دوره جومون|fi|Jōmon-kausi|fo|Jomontíðin|fr|Période Jōmon|he|תקופת ג'ומון|hi|जोमौन काल|hr|Razdoblje Jōmon|hu|Dzsómon-kor|id|Zaman Jomon|is|Jómontímabilið|it|Periodo Jōmon|ja|縄文時代|jv|Jaman Jomon|ka|ჯიომონის ეპოქა|ko|조몬 시대|lfn|Periodo Jomon|lt|Džiomon laikotarpis|ms|Zaman Jōmon|nl|Jomonperiode|no|Jōmon-kulturen|pl|Jōmon|pt|Período Jomon|ro|Perioada Jōmon|ru|Период Дзёмон|sh|Jomon|simple|Jōmon period|sk|Obdobie Džómon|sl|Obdobje Džomon|sr|Џомон период|sv|Jōmon|th|ยุคโจมง|tl|Panahong Jōmon|tok|tenpo Somon pi ma Nijon|tr|Jomon Dönemi|uk|Період Дзьомон|ur|جومون دور|vi|Thời kỳ Jōmon|war|Panahon Jōmon|wuu|绳纹时代|zh|繩紋時代|zh_classical|繩文時代|zh_min_nan|Zyômon sî-tāi|zh_yue|繩紋時代|qid=Q52824|lt=Jōmon period}} to the {{ill|Nara period|af|Nara-tydperk|ar|فترة نارا|bcl|Panahon nin Nara|bg|Нара (период)|bn|নারা যুগ|ca|Període Nara|ckb|سەردەمی نارا|cs|Období Nara|de|Nara-Zeit|el|Περίοδος Νάρα|eo|Epoko de Nara|es|Período Nara|eu|Nara aroa|fa|دوره نارا|fi|Nara-kausi|fr|Époque de Nara|gl|Período Nara|he|תקופת נארה|hr|Nara (razdoblje)|hu|Nara-kor|id|Zaman Nara|it|Periodo Nara|ja|奈良時代|jv|Periodhe Nara|ko|나라 시대|lt|Nara laikotarpis|ml|നാറ കാലഘട്ടം|ms|Zaman Nara|nl|Naraperiode|nn|Naratida|no|Nara-perioden|oc|Periòde de Nara|pl|Nara (okres)|ps|نارا|pt|Período Nara|ro|Perioada Nara|ru|Период Нара|sh|Nara period|simple|Nara period|sk|Obdobie Nara|sl|Obdobje Nara|sr|Нара период|sv|Naraperioden|th|ยุคนาระ|tl|Panahong Nara|tok|tenpo pi kulupu lawa Nala|tr|Nara Dönemi|uk|Період Нара|ur|نارا دور|vi|Thời kỳ Nara|war|Panahon Nara|wuu|奈良时代|zh|奈良時代|zh_min_nan|Nara sî-tāi|zh_yue|奈良時代|qid=Q189178|lt=Nara period}} and {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}}. Alongside nearby Kofuns like the {{ill|Ōzuka Kofun (Chūō City)|ja|王塚古墳 (中央市)|qid=Q11572953}}, it constitutes part of the Uyamadaira Kofun Group. The name "Isetsuka" originates from a typeer {{ill|koaza|ja|小字|ko|고아자|zh|小字|qid=Q5327509}} that referenced the Kofun. Another kofun with the same name, {{ill|Isezuka Kofun (Ichikawamisato)|ja|伊勢塚古墳 (市川三郷町)|12=simple|13=User:Immanuelle/Isetsuka Kofun (Ichikawamisato)|ja_comment=jawiki link invalid|qid=Q135505746}}, exists in {{ill|Ichikawamisato|en|Ichikawamisato|qid=Q1204453|lt=Ichikawamisato}}, also on the Sone Hill Range.
 
-The name "Isezuka" is thought to derive from {{ill|Ise Faith|ja|伊勢信仰|12=simple|13=User:Immanuelle/Ise Faith|ja_comment=jawiki redirects to 伊勢神宮|1=Ise Grand Shrine|comment=changed title based on wikidata|qid=Q687168}}, as the kofun has historically been associated with [[Shinto]] practices. Currently, an {{ill|Iwakura rock|en|Iwakura rock|qid=Q11587880|lt=iwakura|1=Iwakura rock}} is enshrined atop the mound. In the ''{{ill|Kai Kokushakiki|ja|甲斐国社記・寺記|12=simple|13=User:Immanuelle/Kai Kokushakiki|ja_comment=jawiki link invalid}}'', the mound is mentioned as "Ise Shrine" and is described as being under the administration of the nearby {{ill|Chikurin Hachiman Shrine|ja|竹輪八幡神社|12=simple|13=User:Immanuelle/Chikurin Hachiman Shrine|ja_comment=jawiki link invalid|qid=Q135550811|1=Chikurin Hachiman Shrine}}. During the medieval and early modern periods, it was treated as shrine territory.
-== Archaeological Investigations and Burial Goods ==
-Over the years, the mound has undergone multiple excavations and alterations. In 1919 (Taishō 8), it was significantly modified by local youth groups for agricultural purposes, with photographic evidence documenting the process.<ref>Refer to ''Toyotomi Village Closure Commemorative Records'', p. 26.</ref>
+The mound is circular, measuring 29 meters east-west and 27 meters north-south, with a height of 3 meters. Investigations conducted during a survey of the Takabe Uyamadaira site in 1992 (Heisei 4) uncovered traces of a surrounding ditch, suggesting the original diameter of the mound was approximately 33 meters<ref>''Toyotomi Village Historical Records (Volume I)'', Chapter Three, Section Seven, "49. Isetsuka Kofun".</ref>.
 
-While the surrounding area was surveyed in 1992, the mound itself remains unexcavated. Consequently, the internal burial structure and {{ill|Grave goods|en|Grave goods|qid=Q1399692|lt=grave goods|1=Grave goods}} remain unknown. Given the prominence of the Uyamadaira area during the early to mid-{{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period|1=Kofun period}}, the mound is tentatively dated to this era.
+The name "Isetsuka" is thought to derive from {{ill|Ise Grand Shrine|ja|伊勢信仰|12=simple|13=User:Immanuelle/Ise Faith|ja_comment=jawiki redirects to 伊勢神宮|comment=changed title based on wikidata|qid=Q687168}}, as the Kofun has historically been associated with [[Shinto]] practices. Currently, an {{ill|Iwakura rock|en|Iwakura rock|qid=Q11587880|lt=iwakura}} (sacred rock typeation) is enshrined atop the mound. In the ''{{ill|Kai Kokushakiki|ja|甲斐国社記・寺記}}'', the mound is mentioned as "Ise Shrine" and is described as being under the administration of the nearby {{ill|Chikurin Hachiman Shrine|qid=Q135550811}}. During the medieval and early modern periods, it was treated as a shrine territory.
+
+== Archaeological Investigations and burial goods ==
+Over the years, the mound has undergone multiple excavations and alterations. In 1919 (Taishō 8), it was significantly modified by local youth groups for agricultural purposes, with photographic evidence documenting the process<ref>Refer to ''Toyotomi Village Closure Commemorative Records'', p. 26.</ref>.
+
+While the surrounding area was surveyed in 1992, the mound itself remains unexcavated. Consequently, the internal burial structure and {{ill|Grave goods|en|Grave goods|qid=Q1399692|lt=grave goods}} remain unknown. However, given the prominence of the Uyamadaira area during the early to mid-{{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}, the mound is tentatively dated to this era.
 
 The site is presently managed by the Takabe District, and visitors are permitted to explore the mound freely. Cherry trees planted on the mound enhance its scenic appeal, offering panoramic views of the Kōfu Basin.
+
 == References ==
 * ''Toyotomi Village Historical Records (Volume I)'', Toyotomi Village History Compilation Committee, 2000.
 * ''Toyotomi Village Historical Records (Volume II)'', Toyotomi Village History Compilation Committee, 2000.
 * Toyotomi Village, ''Toyotomi Village Closure Commemorative Records'', 2006.
-== Notes ==
-{{Reflist}}
-== See Also ==
-* {{ill|Ōzuka Kofun|en|Ōzuka Kofun|qid=Q11572952|lt=Ōzuka Kofun|1=Ōzuka Kofun}}
-* {{ill|Toyotomi Village|ja|豊富村|12=simple|13=User:Immanuelle/Toyotomi Village|1=toyotomimura|comment=changed title based on wikidata|qid=Q11633399}}
-* {{ill|Round Kofun|lt=Round Kofun|lt=Circular Kofun|ja|円墳|1=Round Kofun|1=Round Kofun|12=simple|13=User:Immanuelle/Circular Kofun|13=User:Immanuelle/Round Kofun|comment=enwiki is a redirect}}
-== External Links ==
-{{Japanese-history-stub}}
-{{Kofun navbar}}
-{{citation needed|ja|伊勢塚古墳|version=100271088|comment=Imported full ja history}}
-{{translated page|ja|伊勢塚古墳 (中央市)|version=100272014|comment=Imported full ja history}}
-{{wikidata link|Q130455403|ja|伊勢塚古墳 (中央市)|ja|伊勢塚古墳}}
 
+== notes ==
+{{Reflist}}
+
+== See Also ==
+* {{ill|Ōzuka Kofun|en|Ōzuka Kofun|qid=Q11572952|lt=Ōzuka Kofun}}
+* {{ill|toyotomimura|ja|豊富村|12=simple|13=User:Immanuelle/Toyotomi Village|comment=changed title based on wikidata|qid=Q11633399}}
+* {{ill|Round Kofun|ja|円墳|lt=Circular Kofun}}
+
+== External Links ==
+
+{{Japanese-history-stub}}
+
+{{Kofun navbar}}
+
+{{citation needed|ja|伊勢塚古墳|version=100271088|comment=Imported full ja history}}
+
+{{draft categories|
+
+}}
+
+{{translated page|ja|伊勢塚古墳 (中央市)|version=100272014|comment=Imported full ja history}}
+
+==Merged==
+
+{{Infobox ancient site|type = {{ill|Round Kofun|ja|円墳|lt=Round kofun}}  
+|name = Isezuka Kofun  
+| part_of = Uyamadaira Kofun Group  
+|location = Takabe 1568, Chūō City, {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture}}  
+|coordinates = {{ウィキ座標2段度分秒|35|34|53.8|N|138|33|27.1|E|map_size:20000_region:JP-19_type:landmark}}  
+|type = [[Enpun|Round Kofun]]  
+|area = Diameter approximately 30 m, height approximately 3 m  
+|notes = None  
+|built = 5th century?  
+}}  
+
+'''Isezuka Kofun''' (伊勢塚古墳) is a [[kofun]] located in Takabe, [[Chūō City]], {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture}}. It is classified as a [[Round Kofun|Round kofun]].  
+
+== location and Geographical/Historical Landscape ==  
+
+The Isezuka Kofun is situated on the Sone Hills in Takabe, Chūō City, at the southern edge of the [[Kōfu Basin]]. The area contains the Uyamadaira archaeological sites, spanning from the [[:en:Jomon period|Jomon period]] to the {{ill|Nara period|af|Nara-tydperk|ar|فترة نارا|bcl|Panahon nin Nara|bg|Нара (период)|bn|নারা যুগ|ca|Període Nara|ckb|سەردەمی نارا|cs|Období Nara|de|Nara-Zeit|el|Περίοδος Νάρα|eo|Epoko de Nara|es|Período Nara|eu|Nara aroa|fa|دوره نارا|fi|Nara-kausi|fr|Époque de Nara|gl|Período Nara|he|תקופת נארה|hr|Nara (razdoblje)|hu|Nara-kor|id|Zaman Nara|it|Periodo Nara|ja|奈良時代|jv|Periodhe Nara|ko|나라 시대|lt|Nara laikotarpis|ml|നാറ കാലഘട്ടം|ms|Zaman Nara|nl|Naraperiode|nn|Naratida|no|Nara-perioden|oc|Periòde de Nara|pl|Nara (okres)|ps|نارا|pt|Período Nara|ro|Perioada Nara|ru|Период Нара|sh|Nara period|simple|Nara period|sk|Obdobie Nara|sl|Obdobje Nara|sr|Нара период|sv|Naraperioden|th|ยุคนาระ|tl|Panahong Nara|tok|tenpo pi kulupu lawa Nala|tr|Nara Dönemi|uk|Період Нара|ur|نارا دور|vi|Thời kỳ Nara|war|Panahon Nara|wuu|奈良时代|zh|奈良時代|zh_min_nan|Nara sî-tāi|zh_yue|奈良時代|qid=Q189178|lt=Nara}} and {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian periods}}. Along with nearby tumuli such as the {{ill|Ōzuka Kofun (Chūō City)|ja|王塚古墳 (中央市)|qid=Q11572953}} in Ōtorii, the Isezuka Kofun forms part of the [[Uyamadaira Kofun Group]].  
+
+The ancient locality name "Isezuka" is said to derive from this kofun. Notably, a kofun with the same name, {{ill|Isezuka Kofun (Ichikawamisato)|ja|伊勢塚古墳 (市川三郷町)|12=simple|13=User:Immanuelle/Isezuka Kofun (Ichikawa Misato)|ja_comment=jawiki link invalid|qid=Q135505746}}, is also located on the Sone Hills in Ichikawa Misato Town.  
+
+The Isezuka Kofun is a [[Round Kofun|Round kofun]] measuring 29 meters east-to-west and 27 meters north-to-south, with a height of 3 meters. During a 1992 investigation of the Uyamadaira sites, a surrounding moat was discovered, leading to an estimated original diameter of approximately 33 meters<ref>''Toyotomura History (Volume 1),'' Chapter 3, "The Village's History," Section 7, "Archaeological Sites in the Village," Entry 49, "Isezuka Kofun."</ref>.  
+
+The name "Isezuka" is believed to be linked to later [[Ise faith]]. A {{ill|Iwakura|en|Iwakura|qid=Q1184546|lt=Iwakura}} (sacred rock) is still enshrined on the mound today. The kofun is referenced as "Ise Shrine" in the ''Kai Kokushaki Teraki'' (Records of Kai Province Shrines and Temples) and is considered a service shrine of the {{ill|Chikurin Hachiman Shrine|qid=Q135550811}} in Takabe. In the medieval and early modern periods, it was treated as shrine land and has never become temple land.  
+
+== Excavations and burial goods ==  
+
+Over the years, the Isezuka Kofun has undergone several rounds of land clearing, resulting in significant damage to the mound. A notable event occurred in {{ill|1919|en|1919|qid=Q2157|lt=1919}} (Taisho 8) when the Takabe Youth Association conducted a clearing project, and a commemorative photograph from this effort still exists<ref>See P26 of the ''Toyotomura Closing Commemoration Volume'' for details.</ref>.  
+
+During the aforementioned 1992 investigation, the size of the mound was determined, although the interior remains unexcavated. Consequently, details regarding burial structures and grave goods are unknown. The construction period is similarly unclear, but the Uyamadaira region has been suggested as a political center during the early to mid-Kofun period, indicating a likely construction date within this timeframe.  
+
+The Isezuka Kofun is currently managed as communal property by the Takabe district. The mound is accessible to the public and offers a scenic view of the [[Kōfu Basin]], with cherry blossoms planted on its summit.  
+
+== References ==  
+
+* Toyotomura History Compilation Committee, ''Isezuka Kofun,'' ''Toyotomura History (Volume 1),'' 2000  
+* Toyotomura History Compilation Committee, ''Toyotomura History (Volume 2),'' 2000  
+* Yamanashi Prefecture Toyotomura, ''Toyotomura Closing Commemoration Volume,'' 2006  
+
+== Notes ==  
+<references />  
+
+== See Also ==  
+
+* {{ill|Ōzuka Kofun (Chūō City)|ja|王塚古墳 (中央市)|qid=Q11572953}}  
+* {{ill|toyotomimura|ja|豊富村|12=simple|13=User:Immanuelle/Toyotomura|comment=changed title based on wikidata|qid=Q11633399}}  
+* [[Enpun|Round Kofun]]  
+
+== External Links ==  
+{{Japanese-history-stub}}  
+
+{{Kofun navbar}}
+
+{{translated page|ja|伊勢塚古墳 (中央市)|version=100272014|comment=Imported full ja history}}
+
+{{wikidata link|Q130455403|ja|伊勢塚古墳 (中央市)|ja|伊勢塚古墳|check_date=2026-05-15}}
 [[Category:History of Chuo Ward]]
 [[Category:Kofun of Yamanashi prefecture]]
 [[Category:Non matching pagename on wikidata]]
 [[Category:Pages using infobox ancient site with unknown parameters]]
+[[Category:Pages with duplicated content]]
 [[Category:Round Kofun]]
 [[Category:Wikidata no short description]]
 [[Category:Pages with interwikis with duplicate languages]]

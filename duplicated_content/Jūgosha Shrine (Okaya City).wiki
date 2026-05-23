@@ -1,13 +1,13 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=J%C5%ABgosha_Shrine_%28Okaya_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25075158020|manual triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | name = Jūgosha Shrine (十五社神社)
+| religious_affiliation = [[Shinto]]
 |image = File:Juugosya jinja ooga.jpg
-| address = Ōga 2281, Yamagata City, Gifu Prefecture, Japan
+| a11ress = Ōga 2281, Yamagata City, Gifu Prefecture, Japan
 | coordinates = {{Coord|35.545111|N|136.759611}}
-| deities = {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi|qq=}} and 15 other enshrined deities (20 pillars in total)
-| classification = Former Gō-sha, {{ill|Kinpeisha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|1=Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}}
-| established = Traditional date: {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)|1=Tenchō}} 3 (826 CE)
-| architecture = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri|1=Nagare-zukuri}} with hinoki bark roof
+| deities = {{ill|Ame-no-Tokotachi|ja|天之常立神}} and 15 other enshrined deities (20 pillars in total)
+| classification = Former Gō-sha, {{ill|Kinpei-sha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|comment=changed title based on wikidata|qid=Q119929592}}
+| established = Traditional date: {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)}} 3 (826 CE)
+| architecture = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} with hinoki bark roof
 | festival = First Sunday in April
 | rituals = Yu-barai
 | map = {{Switcher
@@ -16,61 +16,160 @@
  |{{location map|Japan Gifu|float=center|width=180}}
  |Show Gifu Prefecture map
  }}
-| location = {{ill|Yamagata|qid=Q773311|1=Yamagata, Gifu}}
+| location = {{ill|Yamagata, Gifu|qid=Q773311}}
+| deity = {{ill|Ame-no-Tokotachi|qid=Q10939047}}
+| architecture_style = {{ill|Nagare-zukuri|qid=Q210684}}
 }}
-'''Jūgosha Shrine''' (十五社神社) is a Shinto shrine located in {{ill|Yamagata, Gifu|en|Yamagata, Gifu|qid=Q773311|lt=Yamagata City|1=Yamagata, Gifu}}, Gifu Prefecture. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}, it held the Rank of {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} and was classified as a {{ill|Kinpeisha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|1=Kinpei-sha|comment=changed title based on wikidata|qid=Q119929592}} under Gifu Prefecture’s unique shrine classification system. It was established in {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)|1=Tenchō}} 3 (826 CE) by {{ill|Haruhara Ioe|ja|春原五百枝|12=simple|13=User:Immanuelle/Haruhara Ioe|1=Haruhara no Ioe|comment=changed title based on wikidata|qid=Q11513416}}, who constructed the shrine to enshrine the deity known as "Amatsukami Daimyōjin."
-The shrine enshrines deities from the {{ill|Kamiyonanayo|en|Kamiyonanayo|qid=Q3275893|lt=Kamiyonanayo|1=Kamiyonanayo}}, the divine lineage of Japan’s emperors, and the tutelary deities of the Genji clan, offering blessings for national security, prosperity of the imperial family, and familial safety.
-The shrine was revered by the {{ill|Toki clan|en|Toki clan|qid=Q687635|lt=Toki clan|1=Toki clan}} during the {{ill|Sengoku period|ja|戦国時代|12=simple|13=User:Immanuelle/Sengoku period|1=Sengoku Period (Japan)|comment=changed title based on wikidata|qid=Q117415390}} as their tutelary deity.
-The shrine’s main hall, rebuilt under the orders of {{ill|Tokugawa Tsunayoshi|en|Tokugawa Tsunayoshi|qid=Q313745|lt=Tokugawa Tsunayoshi|1=Tokugawa Tsunayoshi}}, is designated as a Gifu Prefecture Important Cultural Property. The {{ill|Shokudani stone|ja|笏谷石|12=simple|13=User:Immanuelle/Shokudani stone|1=Shakudani Stone|comment=changed title based on wikidata|qid=Q11599510}} komainu donated by the Toki clan are recognized as a Yamagata City Important Cultural Property.
+
+'''Jūgosha Shrine''' (十五社神社) is a Shinto shrine located in {{ill|Yamagata, Gifu|en|Yamagata, Gifu|qid=Q773311|lt=Yamagata City}}, Gifu Prefecture. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines}}, it held the Rank of {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} and was classified as a {{ill|Kinpei-sha|ja|金幣社|12=simple|13=User:Immanuelle/Kinpeisha|comment=changed title based on wikidata|qid=Q119929592}} under Gifu Prefecture’s unique shrine classification system. It was established in {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)}} 3 (826 CE) by {{ill|Haruhara no Ioe|ja|春原五百枝|12=simple|13=User:Immanuelle/Haruhara Ioe|comment=changed title based on wikidata|qid=Q11513416}}, who constructed the shrine to enshrine the deity known as "Amatsukami Daimyōjin."
+
+The shrine enshrines deities from the {{ill|Kamiyonanayo|en|Kamiyonanayo|qid=Q3275893|lt=Kamiyonanayo}}, the divine lineage of Japan’s emperors, and the tutelary deities of the Genji clan, offering blessings for national security, prosperity of the imperial family, and familial safety.
+
+The shrine was revered by the {{ill|Toki clan|en|Toki clan|qid=Q687635|lt=Toki clan}} during the {{ill|Sengoku Period (Japan)|ja|戦国時代|12=simple|13=User:Immanuelle/Sengoku period|comment=changed title based on wikidata|qid=Q117415390}} as their tutelary deity.
+
+The shrine’s main hall, rebuilt under the orders of {{ill|Tokugawa Tsunayoshi|en|Tokugawa Tsunayoshi|qid=Q313745|lt=Tokugawa Tsunayoshi}}, is designated as a Gifu Prefecture Important Cultural Property. The {{ill|Shakudani Stone|ja|笏谷石|12=simple|13=User:Immanuelle/Shokudani stone|comment=changed title based on wikidata|qid=Q11599510}} komainu donated by the Toki clan are recognized as a Yamagata City Important Cultural Property.
+
 == Enshrined Deities ==
 15 deities, enshrined as 20 pillars:
-* {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi|qq=}}
-* {{ill|Kamiyonanayo|ja|天神七代|12=simple|13=User:Immanuelle/Kamiyonanayo|ja_comment=jawiki redirects to 神世七代}}<ref>Deities such as {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuninotokotachi|1=Kuni-no-Tokotachi}} are counted in pairs, representing one "generation" or "seat."</ref>
-''' {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuninotokotachi|1=Kuni-no-Tokotachi}}
-''' {{ill|Kunisatsuchi|ja|国狭槌尊|1=Kunisatsuchi-no-Mikoto|12=simple|13=User:Immanuelle/Kunisatsuchi|13=User:Immanuelle/Kunisatsuchi-no-Mikoto|qq=}}
-''' {{ill|Toyokumunu|ja|豊斟渟尊|12=simple|13=User:Immanuelle/Toyokumunu|ja_comment=jawiki redirects to トヨクモノ|1=Toyokumono-no-Mikoto|comment=changed title based on wikidata|qid=Q4387158}}
-''' {{ill|Uhijini|ja|埿土煮尊|12=simple|13=User:Immanuelle/Uhijini|ja_comment=jawiki redirects to ウヒヂニ・スヒヂニ|1=Uhijini and Suhijini|comment=changed title based on wikidata|qid=Q9090923}} and {{ill|Suhijini|ja|沙土煮尊|12=simple|13=User:Immanuelle/Suhijini|ja_comment=jawiki redirects to ウヒヂニ・スヒヂニ|1=Uhijini and Suhijini|comment=changed title based on wikidata|qid=Q9090923}}
-''' {{ill|Ōtonoji|ja|大戸之道尊|12=simple|13=User:Immanuelle/Ōtonoji|ja_comment=jawiki redirects to オオトノヂ・オオトノベ|1=Otonoji and Otonobe|comment=changed title based on wikidata|qid=Q11073597}} and {{ill|Ōyamatsumi|ja|大苫辺尊|12=simple|13=User:Immanuelle/Ōyamatsumi|ja_comment=jawiki redirects to オオトノヂ・オオトノベ}}
-''' {{ill|Omodaru and Ayakashikone|lt=Omodaru and Ayakashikone|lt=Omotaru|ja|面足尊|12=simple|13=User:Immanuelle/Omotaru|ja_comment=jawiki redirects to オモダル・アヤカシコネ}} and {{ill|Omodaru and Ayakashikone|lt=Omodaru and Ayakashikone|lt=Kashikone|ja|惶根尊|12=simple|13=User:Immanuelle/Kashikone|ja_comment=jawiki redirects to オモダル・アヤカシコネ}}
-''' {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} and {{ill|Izanami|ja|伊弉冊尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|1=Izanami|comment=changed title based on wikidata|qid=Q682306}}
-* {{ill|Chijin-godai|ja|地神五代|12=simple|13=User:Immanuelle/Chijin-godai|1=Five Generations of Earth Deities|comment=changed title based on wikidata|qid=Q18337308}}
-''' {{ill|Amaterasu|ja|天照皇大紳|12=simple|13=User:Immanuelle/Amaterasu|ja_comment=jawiki link invalid}}
-''' {{ill|Ame-no-Oshihomimi|ja|天忍穂耳尊|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|1=Ame-no-oshihomimi|comment=changed title based on wikidata|qid=Q462555}}
-''' {{ill|Ninigi-no-Mikoto|lt=Ninigi-no-Mikoto|lt=Ninigi|ja|瓊瓊杵尊|12=simple|13=User:Immanuelle/Ninigi|ja_comment=jawiki redirects to ニニギ}}
-''' {{ill|Hoori|ja|彦火火出見尊|12=simple|13=User:Immanuelle/Hoori|ja_comment=jawiki redirects to ホオリ}}
-''' {{ill|Ugaya Fukiaezu|ja|鵜葺草葺不合尊|12=simple|13=User:Immanuelle/Ugaya Fukiaezu|ja_comment=jawiki link invalid}}
-* {{ill|Jimmu|ja|神日本磐余彦尊|12=simple|13=User:Immanuelle/Jimmu|ja_comment=jawiki redirects to 神武天皇|1=Emperor Jimmu|comment=changed title based on wikidata|qid=Q200188}}
-* {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Seimu|1=Emperor Seimu}} and {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Ōjin|1=Emperor Ōjin}}<ref>Seimu and Ōjin are also paired as one "seat."</ref>
+* {{ill|Ame-no-Tokotachi|ja|天之常立神}}
+* {{ill|Kamiyonanayo|ja|天神七代}}<ref>Deities such as {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuninotokotachi}} are counted in pairs, representing one "generation" or "seat."</ref>
+''' {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuninotokotachi}}
+''' {{ill|Kunisatsuchi|ja|国狭槌尊}}
+''' {{ill|Toyokumono-no-Mikoto|es|Toyo-kumo-no-no-kami|ja|トヨクモノ|ru|Тоё-кумоно-но ками|uk|Тойо кумоно но камі|zh|豐斟渟尊|qid=Q4387158}}
+''' {{ill|Uhijini and Suhijini|es|U-hiji-ni y Su-hiji-ni|ja|ウヒヂニ・スヒヂニ|zh|埿土煑尊與沙土煑尊|qid=Q9090923}} and {{ill|Uhijini and Suhijini|es|U-hiji-ni y Su-hiji-ni|ja|ウヒヂニ・スヒヂニ|zh|埿土煑尊與沙土煑尊|qid=Q9090923}}
+''' {{ill|Otonoji and Otonobe|ja|大戸之道尊|12=simple|13=User:Immanuelle/Ōtonoji|ja_comment=jawiki redirects to オオトノヂ・オオトノベ|comment=changed title based on wikidata|qid=Q11073597}} and {{ill|Ōyamatsumi|ja|大苫辺尊}}
+''' {{ill|Omodaru and Ayakashikone|ja|面足尊|lt=Omotaru}} and {{ill|Omodaru and Ayakashikone|ja|惶根尊|lt=Kashikone}}
+''' {{ill|Izanagi|abstract|Q813858|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|rsk|Изанаґи|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}} and {{ill|Izanami|ar|إزانامي|az|İzanami|bcl|Izanami|bs|Izanami|ca|Izanami|da|Izanami|el|Ιζανάμι|eo|Izanami|es|Izanami|fa|ایزانامی|fi|Izanami|fr|Izanami|he|איזאנמי|hr|Izanami|hu|Izanami|hy|Իզանամի|id|Izanami|it|Izanami|ja|イザナミ|ko|이자나미|mk|Изанами|mni|ꯏꯓꯥꯅꯥꯃꯤ|pt|Izanami|rsk|Изанами|ru|Идзанами|simple|Izanami|sl|Izanami|sr|Изанами|sv|Izanami|ta|இசநமி|th|อิซานามิ|tl|Izanami|tr|Izanami|uk|Ідзанамі|zh|伊邪那美|qid=Q682306}}
+* {{ill|Five Generations of Earth Deities|ja|地神五代|12=simple|13=User:Immanuelle/Chijin-godai|comment=changed title based on wikidata|qid=Q18337308}}
+''' {{ill|Amaterasu|ja|天照皇大紳}}
+''' {{ill|Ame-no-oshihomimi|ja|天忍穂耳尊|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|comment=changed title based on wikidata|qid=Q462555}}
+''' {{ill|Ninigi-no-Mikoto|ja|瓊瓊杵尊|lt=Ninigi}}
+''' {{ill|Hoori|ja|彦火火出見尊}}
+''' {{ill|Ugaya Fukiaezu|ja|鵜葺草葺不合尊}}
+* {{ill|Emperor Jimmu|ja|神日本磐余彦尊|12=simple|13=User:Immanuelle/Jimmu|ja_comment=jawiki redirects to 神武天皇|comment=changed title based on wikidata|qid=Q200188}}
+* {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Seimu}} and {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Ōjin}}<ref>Seimu and Ōjin are also paired as one "seat."</ref>
+
 == History ==
-According to legend, in May of {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)|1=Tenchō}} 3 (826 CE), amid fierce lightning and hail, the deity {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi|qq=}} and 17 other deities from the Kamiyonanayo and Chijin-godai descended, instructing the construction of a shrine for national protection before departing. Some theories link the shrine to the "Seishin Myōjin" mentioned in the {{ill|Mino no Kuni Shinsen Meishocho|ja|国内神名帳|12=simple|13=User:Immanuelle/Mino no Kuni Shinsen Meishocho|1=Izumi Province Divine Name Register|comment=changed title based on wikidata|qid=Q11420490}}, listed among the 12 shrines in {{ill|Yamagata District, Hiroshima|en|Yamagata District, Hiroshima|qid=Q1155572|lt=Yamagata District, Gifu|1=Yamagata District, Hiroshima}}.
-During the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period|1=Muromachi period}}, {{ill|Toki Yorinari|en|Toki Yorinari|qid=Q837179|lt=Toki Yorie|1=Toki Yorinari}} brought the spirit of {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachimangū|1=Iwashimizu Hachimangū}} to the shrine, merging it and renaming it "Jūgosha Daigongen." It became the clan deity of the Toki family. In {{ill|Genroku|en|Genroku|qid=Q1325001|lt=Genroku|1=Genroku}} 14 (1701), the main hall was rebuilt. Later, during the {{ill|Culture|en|Culture|qid=Q11042|lt=Bunka|1=Culture}} era (1804–1818), the shrine was renamed "Jūgosha Daijingū."
-In {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}} 5 (1872), it was renamed to its current name and designated a village shrine. It was promoted to a gōsha in 1944.
+According to legend, in May of {{ill|Tenchō|en|Tenchō|qid=Q1373138|lt=Tenchō (era)}} 3 (826 CE), amid fierce lightning and hail, the deity {{ill|Ame-no-Tokotachi|ja|天之常立神}} and 17 other deities from the Kamiyonanayo and Chijin-godai descended, instructing the construction of a shrine for national protection before departing. Some theories link the shrine to the "Seishin Myōjin" mentioned in the {{ill|Izumi Province Divine Name Register|ja|国内神名帳|12=simple|13=User:Immanuelle/Mino no Kuni Shinsen Meishocho|comment=changed title based on wikidata|qid=Q11420490}}, listed among the 12 shrines in {{ill|Yamagata District, Hiroshima|en|Yamagata District, Hiroshima|qid=Q1155572|lt=Yamagata District, Gifu}}.
+
+During the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}, {{ill|Toki Yorinari|en|Toki Yorinari|qid=Q837179|lt=Toki Yorie}} brought the spirit of {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachimangū}} to the shrine, merging it and renaming it "Jūgosha Daigongen." It became the clan deity of the Toki family. In {{ill|Genroku|en|Genroku|qid=Q1325001|lt=Genroku}} 14 (1701), the main hall was rebuilt. Later, during the {{ill|Culture|en|Culture|qid=Q11042|lt=Bunka}} era (1804–1818), the shrine was renamed "Jūgosha Daijingū."
+
+In {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 5 (1872), it was renamed to its current name and designated a village shrine. It was promoted to a gōsha in 1944.
+
 == Rituals ==
 ;Yu-barai (Ritual Purification by Boiling Water)
-:This ritual is said to be a remnant of ancient trial-by-boiling-water {{ill|Kugatachi|en|Kugatachi|qid=Q11581453|lt=Kuga no Utagai|1=Kuchiyose}}. A large cauldron is set over a fire, and the {{ill|Ōharae no Kotoba|en|Ōharae no Kotoba|qid=Q11438317|lt=Ōharai Norito|1=Ōharae no Kotoba}} is recited a thousand times.
+:This ritual is said to be a remnant of ancient trial-by-boiling-water {{ill|Kuchiyose|en|Kugatachi|qid=Q11581453|lt=Kuga no Utagai}}. A large cauldron is set over a fire, and the {{ill|Ōharae no Kotoba|en|Ōharae no Kotoba|qid=Q11438317|lt=Ōharai Norito}} is recited a thousand times.
+
 == Cultural Properties ==
 Gifu Prefecture Designated Cultural Properties:
-* Main Hall<ref name="jugoshajinja">{{Cite web|title=Jūgosha Shrine|url=https://www.city.yamagata.gifu.jp/site/yamanavi/1132.html|publisher=Yamagata City|accessdate=2023-12-04}}</ref> - Built in the {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri|1=Nagare-zukuri}} style with a hinoki bark roof, reconstructed in Genroku 14 (1701).
+* Main Hall<ref name="jugoshajinja">{{Cite web|title=Jūgosha Shrine|url=https://www.city.yamagata.gifu.jp/site/yamanavi/1132.html|publisher=Yamagata City|accessdate=2023-12-04}}</ref> - Built in the {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} style with a hinoki bark roof, reconstructed in Genroku 14 (1701).
 Yamagata City Designated Cultural Properties:
-* {{ill|Komainu|en|Komainu|qid=Q20155846|lt=Komainu|1=Komainu}}<ref name="jugoshajinja"/> - Donated in {{ill|Tenbun|ja|天文|12=simple|13=User:Immanuelle/Tenbun|1=Tenmon|comment=changed title based on wikidata|qid=Q21096812}} 9 (1540) by the Toki clan, carved from {{ill|Shokudani stone|ja|笏谷石|12=simple|13=User:Immanuelle/Shokudani stone|1=Shakudani Stone|comment=changed title based on wikidata|qid=Q11599510}}.
+* {{ill|Komainu|en|Komainu|qid=Q20155846|lt=Komainu}}<ref name="jugoshajinja"/> - Donated in {{ill|Tenmon|ja|天文|qid=Q21096812}} 9 (1540) by the Toki clan, carved from {{ill|Shakudani Stone|ja|笏谷石|12=simple|13=User:Immanuelle/Shokudani stone|comment=changed title based on wikidata|qid=Q11599510}}.
 City-Designated Natural Monuments:
-* Henmi Cedar<ref name="jugoshajinja"/> - A cedar tree with a circumference of 5.2 meters. Legend states it was planted by {{ill|Henmi Shigekazu|ja|逸見重氏|12=simple|13=User:Immanuelle/Henmi Shigekazu|ja_comment=jawiki link invalid}}.
+* Henmi Cedar<ref name="jugoshajinja"/> - A cedar tree with a circumference of 5.2 meters. Legend states it was planted by {{ill|Henmi Shigekazu|ja|逸見重氏}}.
+
 == Transportation ==
 * From the Hā Bus line Ōga route, alight at "Shikokuyama Kaori no Mori Kōen" bus stop, then walk for 15 minutes.
+
 == References ==
 {{reflist}}
+
 == Further Reading ==
 * Association of Shinto Shrines Research Department, ''Jinja Meikan,'' Association of Shinto Shrines, 1963.
+
 == External Links ==
 * [http://www.city.gifu-yamagata.lg.jp/sight/rekishi/13.html Jūgosha Shrine] (Yamagata City official website)
+
 {{shinto-stub}}
+
 {{translated page|ja|十五社神社|version=98925505|comment=Imported full ja history}}
 
+==Merged second translation==
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name = Jūgoshajinja (十五社神社)
+| religious_affiliation = [[Shinto]]
+|image = [[File:Juugosya jinja ooga.jpg|250px]]<br />Main Hall of Jūgoshajinja
+| location = Ōga 2281, Yamagata City, Gifu Prefecture, Japan
+| coordinates = {{Coord|35|32|42.4|N|136|45|34.6|E|region:JP-21_scale:25000|display=it}}
+| deity = {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi-no-Mikoto|comment=changed title based on wikidata|qid=Q10939047}} and 15 seats, 20 kami
+| type = Former Gō-sha, Gifu Prefectural Kanpeisha
+| established = Traditional date: Tenchō 3 (826 CE)
+| architecture = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} with cypress bark roof
+| festival = 1st Sunday in April
+| rituals = {{ill|Yubarai|ja|湯祓}}
+| map = {{Switcher
+ |{{maplink2|frame=yes|plain=yes|zoom=pp|frame-align=center|frame-width=180|frame-height=180|type=point|frame-latitude=35.529|frame-longitude=136.762}}
+ |Show Wikimedia maps
+ |{{location map|Japan Gifu|float=center|width=180}}
+ |Show Gifu Prefecture map
+ }}
+}}
+
+'''Jūgoshajinja''' (十五社神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto}} shrine located in {{ill|Yamagata, Gifu|en|Yamagata, Gifu|qid=Q773311|lt=Yamagata City (Gifu)}}, Gifu Prefecture. It was designated as a former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the modern shrine Rank system and holds the unique Gifu Prefectural Rank of Kanpeisha. The shrine was established in Tenchō 3 (826 CE) by Haruhara Ioe, who built the shrine to enshrine the deity {{ill|Ame-no-Tokotachi|ja|天之常立神}}.
+
+The shrine venerates deities connected to the Japanese imperial lineage, from the {{ill|Kamiyonanayo|en|Kamiyonanayo|qid=Q3275893|lt=Kamiyonanayo}} to the first emperor, reflecting divine virtues of national stability, royal prosperity, and familial safety. During the {{ill|Sengoku Period (Japan)|ja|戦国時代|12=simple|13=User:Immanuelle/Sengoku Period|comment=changed title based on wikidata|qid=Q117415390}}, the shrine was revered as the clan shrine of the {{ill|Toki clan|en|Toki clan|qid=Q687635|lt=Toki clan}}.
+
+Its main hall, reconstructed under the orders of Tokugawa Tsunayoshi, is designated a Gifu Prefectural Important Cultural Property, and the shrine's stone guardian lions, donated by the Toki clan, are designated as cultural assets by Yamagata City.
+
+== Enshrined Deities ==
+The shrine enshrines 15 seats and 20 kami:
+* {{ill|Ame-no-Tokotachi|ja|天之常立神|12=simple|13=User:Immanuelle/Ame-no-Tokotachi-no-Mikoto|comment=changed title based on wikidata|qid=Q10939047}}
+* {{ill|Kamiyonanayo|ja|天神七代}}<ref>Paired deities such as Kuninotokotachi and Kuni-no-sazuchi-no-mikoto are treated as two kami for one seat.</ref>
+** {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuninotokotachi}}
+** {{ill|Kunisatsuchi|ja|国狭槌尊}}
+** {{ill|Toyokumono-no-Mikoto|ja|豊斟渟尊}}
+** {{ill|Uhijini and Suhijini|ja|埿土煮尊|lt=Uhiji}} and {{ill|Uhijini and Suhijini|ja|沙土煮尊|lt=Suhiji}}
+** {{ill|Otonoji and Otonobe|ja|大戸之道尊|lt=Ōtonomichino-Mikoto}} and {{ill|Otonoji and Otonobe|ja|大苫辺尊|lt=Ōtomabe}}
+** {{ill|Omodaru and Ayakashikone|ja|面足尊|lt=Omotaru}} and {{ill|Omodaru and Ayakashikone|ja|惶根尊|lt=Kashikone}}
+** {{ill|Izanagi|abstract|Q813858|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|rsk|Изанаґи|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}} and {{ill|Izanami|ar|إزانامي|az|İzanami|bcl|Izanami|bs|Izanami|ca|Izanami|da|Izanami|el|Ιζανάμι|eo|Izanami|es|Izanami|fa|ایزانامی|fi|Izanami|fr|Izanami|he|איזאנמי|hr|Izanami|hu|Izanami|hy|Իզանամի|id|Izanami|it|Izanami|ja|イザナミ|ko|이자나미|mk|Изанами|mni|ꯏꯓꯥꯅꯥꯃꯤ|pt|Izanami|rsk|Изанами|ru|Идзанами|simple|Izanami|sl|Izanami|sr|Изанами|sv|Izanami|ta|இசநமி|th|อิซานามิ|tl|Izanami|tr|Izanami|uk|Ідзанамі|zh|伊邪那美|qid=Q682306}}
+* {{ill|Five Generations of Earth Deities|lt=Five Generations of Earth Deities|lt=Chijin Godai|ja|地神五代|12=simple|13=User:Immanuelle/Chijin Godai}}
+** {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}
+** {{ill|Ame-no-oshihomimi|ja|天忍穂耳尊|12=simple|13=User:Immanuelle/Ame-no-Oshihomimi|ja_comment=jawiki redirects to アメノオシホミミ|comment=changed title based on wikidata|qid=Q462555}}
+** {{ill|Ninigi-no-Mikoto|ja|瓊瓊杵尊|lt=Ninigi}}
+** {{ill|Hoori|ja|彦火火出見尊}}
+** {{ill|Ugayafukiaezu|ja|鵜葺草葺不合尊}}'''
+* {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}}
+* {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Emperor Seimu}} and {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}<ref>Emperor Seimu and Emperor Ōjin are counted as one seat.</ref>
+
+== History ==
+According to tradition, in May of Tenchō 3 (826 CE), a fierce storm accompanied by thunder and hail brought down the deities {{ill|Ame-no-Tokotachi|ja|天之常立神}} and other members of the {{ill|Kamiyonanayo|en|Kamiyonanayo|qid=Q3275893|lt=Kamiyonanayo}} and {{ill|Five Generations of Earth Deities|lt=Five Generations of Earth Deities|lt=Chijin Godai|ja|地神五代|12=simple|13=User:Immanuelle/Chijin Godai}}. These deities instructed the establishment of a shrine for the nation’s protection before disappearing. It is believed that this shrine corresponds to "Shōshi Myōjin" (正四位下 裁主明神) listed in the {{ill|Mino Province's Shrine Ledger|ja|美濃国神名帳}}.
+
+During the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}, the Toki clan, ruling from Ōga Castle, invited the {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachiman Shrine}} deity to the shrine and renamed it "Jūgoshajinja." In {{ill|Genroku|en|Genroku|qid=Q1325001|lt=Genroku}} 14 (1701 CE), the main hall was reconstructed, and in {{ill|Culture|en|Culture|qid=Q11042|lt=Bunka}} 9 (1812 CE), the shrine was renamed "Jūgosha Daijingu" by Prince Iwakura Tomosue. In 1872, it was renamed to its current name and designated as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}, later upgraded to a Gōsha in 1944.
+
+== Rituals ==
+; Yubarai (湯祓)
+: This ancient purification ritual is a vestige of {{ill|Kuchiyose|en|Kugatachi|qid=Q11581453|lt=Kuchiyose}}, in which boiling water was used for divine oaths. A large cauldron is heated while the {{ill|Ōharae no Kotoba|en|Ōharae no Kotoba|qid=Q11438317|lt=Ōharae Kotoba}} is chanted 1,000 times.
+
+== Cultural Properties ==
+* '''Prefectural Important Cultural Property'''
+''' Main Hall - {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}, cypress bark roof, reconstructed in Genroku 14 (1701 CE).<ref name="jugoshajinja">{{Cite web|date=2023-12-04 |url=https://www.city.yamagata.gifu.jp/site/yamanavi/pp32.html |title=Jūgoshajinja |publisher=Yamagata City |accessdate=2023-12-04}}</ref>
+* '''Municipal Cultural Properties'''
+''' Stone Guardian Lions - Donated by the Toki clan in {{ill|Tenmon|ja|天文}} 9 (1540 CE).<ref name="jugoshajinja"/>
+* '''Municipal Natural Monument'''
+''' Henmi Cedar - A cedar tree with a girth of 5.2 meters, said to have been planted by Henmi Shigeuji after his achievements in the {{ill|Jōkyū War|en|Jōkyū War|qid=Q1372308|lt=Jōkyū War}}.<ref name="jugoshajinja"/>
+
+== Access ==
+* {{ill|Harubasu|ja|山県市自主運行バス|qid=Q11327306}} Ōga Line, get off at "Shikoku Yamakōrino Mori Kōen" stop, 15-minute walk.
+
+== References ==
+{{Reflist}}
+
+== Further Reading ==
+* {{ill|Jinja Meikan|ja|神社名鑑}}, compiled by the Shinto Shrine Association, 1963.
+
+== External Links ==
+* [http://www.city.gifu-yamagata.lg.jp/sight/rekishi/13.html Jūgoshajinja] (Yamagata City Homepage)
+
+{{translated page|ja|十五社神社|version=98925505|comment=Imported full ja history}}
+
+{{wikidata link|Q11404828|ja|十五社神社|check_date=2026-05-16}}
 [[Category:Buildings and structures in Yamagata, Gifu]]
 [[Category:Former Gō-sha in Gifu Prefecture]]
 [[Category:Gō-sha]]
 [[Category:History of Yamagata, Gifu]]
 [[Category:Municipal Tangible Cultural Properties in Gifu Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Gifu Prefecture]]
 [[Category:Ward and municipal designated natural monuments]]
 [[Category:Wikidata has short description]]
+[[Category:Pages with duplicated content]]

@@ -1,30 +1,82 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hisanagi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
-'''Hisanagi''' (非参議) refers to the following:
-# Individuals Ranked {{ill|Junior Third Rank|ja|従三位|1=Junior Third Rank|12=simple|13=User:Immanuelle/Junior Third Rank|13=User:Immanuelle/Junior Third Rank|qq=}} ({{ill|Kugyō|1=Kugyō|2=ja|3=公卿|ja|Kugyō|1=Kugyō|2=ja|3=公卿|1=Kugyō|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}) or higher who have not yet been {{ill|appointed|ja|任官|12=simple|13=User:Immanuelle/appointed|1=ninkan|comment=changed title based on wikidata|qid=Q11267917}} as {{ill|Sangi (Japan)|en|Sangi (Japan)|qid=Q1133663|lt=Sangi|1=Sangi (Japan)}}. This is the most common usage of the term.
-# Individuals of {{ill|Fourth Rank|ja|四位|12=simple|13=User:Immanuelle/Fourth Rank|1=Fourth Rank|comment=changed title based on wikidata|qid=Q11419606}} who once served as Sangi but have since retired. In this case, they may also be referred to as '''Zensangi''' (前参議).
+'''Hisangi''' (非参議) refers to the following:
+
+# Individuals Ranked {{ill|Junior Third Rank|ja|従三位|ko|종3위|zh|從三位|qid=Q11071123}} ({{ill|Kugyō|2=ja|3=公卿|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}) or higher who have not yet been {{ill|ninkan|ja|任官|12=simple|13=User:Immanuelle/appointed|comment=changed title based on wikidata|qid=Q11267917}} as {{ill|Sangi (Japan)|en|Sangi (Japan)|qid=Q1133663|lt=Sangi}}. This is the most common usage of the term.
+# Individuals of {{ill|Fourth Rank|ja|四位|12=simple|13=User:Immanuelle/Fourth Rank|comment=changed title based on wikidata|qid=Q11419606}} who once served as Sangi but have since retired. In this case, they may also be referred to as '''Zensangi''' (前参議).
 # Individuals of Fourth Rank who are eligible to become Sangi (i.e., candidates for the position).
+
 Examples of Fourth Rank officials eligible to become Sangi include:
-* {{ill|Kurōdō no Tō|ja|蔵人頭|12=simple|13=User:Immanuelle/Kurōdō no Tō|1=Kurōdonotō|comment=changed title based on wikidata|qid=Q11621873}} - Chief of the {{ill|Kurōdodokoro|ja|蔵人所|12=simple|13=User:Immanuelle/Kurōdodokoro|ja_comment=jawiki redirects to 蔵人|1=Kurōdo-dokoro|comment=changed title based on wikidata|qid=Q6447696}}
-* {{ill|Sadaiben|ja|左大弁|12=simple|13=User:Immanuelle/Sadaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|1=benkan|qid=Q3270768}} - {{ill|Hangan|ja|判官|12=simple|13=User:Immanuelle/Hangan|1=jou|comment=changed title based on wikidata|qid=Q1208615}} of the {{ill|Daijō-kan|en|Daijō-kan|qid=Q1192939|lt=Daijō-kan|1=Daijō-kan}}
-* {{ill|Udaiben|ja|右大弁|12=simple|13=User:Immanuelle/Udaiben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}} - Hangan of the Daijōkan. If a Benkan serves concurrently as Kurōdō no Tō, they are referred to as '''{{ill|Tōben|ja|頭弁|12=simple|13=User:Immanuelle/Tōben|1=tounoben|comment=changed title based on wikidata|qid=Q11664939}}'''.
-* {{ill|Sakonoe no Chūjō|ja|左近衛中将|12=simple|13=User:Immanuelle/Sakonoe no Chūjō|ja_comment=jawiki redirects to 近衛府|1=Konoefu|comment=changed title based on wikidata|qid=Q11638974}} - {{ill|Undersecretary|en|Undersecretary|qid=Q766504|lt=Shitokan|1=Undersecretary}} of the {{ill|Sakonoe no Fuchū|ja|左近衛府|12=simple|13=User:Immanuelle/Sakonoe no Fuchū|ja_comment=jawiki redirects to 近衛府|1=Konoefu|comment=changed title based on wikidata|qid=Q11638974}}
-* {{ill|Ukonoe no Chūjō|ja|右近衛中将|12=simple|13=User:Immanuelle/Ukonoe no Chūjō|ja_comment=jawiki redirects to 近衛府|1=Konoefu|comment=changed title based on wikidata|qid=Q11638974}} - Shitokan of the {{ill|Ukonoe no Fuchū|ja|右近衛府|12=simple|13=User:Immanuelle/Ukonoe no Fuchū|ja_comment=jawiki redirects to 近衛府|1=Konoefu|comment=changed title based on wikidata|qid=Q11638974}}. If a Chūjō serves concurrently as Kurōdō no Tō, they are referred to as '''{{ill|Tōchūjō|ja|頭中将|12=simple|13=User:Immanuelle/Tōchūjō|1=Tō no Chūjō|comment=changed title based on wikidata|qid=Q11664925}}'''.
-* {{ill|Saemon no Kami|ja|左衛門督|12=simple|13=User:Immanuelle/Saemon no Kami|ja_comment=jawiki redirects to 衛門府|1=Emonfu|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Saemonfu|ja|左衛門府|12=simple|13=User:Immanuelle/Saemonfu|ja_comment=jawiki redirects to 衛門府|1=Emonfu|comment=changed title based on wikidata|qid=Q11626338}}
-* {{ill|Uemon no Kami|ja|右衛門督|12=simple|13=User:Immanuelle/Uemon no Kami|ja_comment=jawiki redirects to 衛門府|1=Emonfu|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Uemonfu|ja|右衛門府|12=simple|13=User:Immanuelle/Uemonfu|ja_comment=jawiki redirects to 衛門府|1=Emonfu|comment=changed title based on wikidata|qid=Q11626338}}
-* {{ill|Sahyōe no Kami|ja|左兵衛督|12=simple|13=User:Immanuelle/Sahyōe no Kami|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}} - Chief of the {{ill|Sahyōefu|ja|左兵衛府|12=simple|13=User:Immanuelle/Sahyōefu|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}}
-* {{ill|Uhyōe no Kami|ja|右兵衛督|12=simple|13=User:Immanuelle/Uhyōe no Kami|1=uhyouenokami|comment=changed title based on wikidata|qid=Q115215287}} - Chief of the {{ill|Uhyōefu|ja|右兵衛府|12=simple|13=User:Immanuelle/Uhyōefu|ja_comment=jawiki redirects to 兵衛府|1=Hyōefu|comment=changed title based on wikidata|qid=Q11393702}}
-* {{ill|Shikibu Taifu|ja|式部大輔|12=simple|13=User:Immanuelle/Shikibu Taifu|ja_comment=jawiki redirects to 式部省|1=Shikibu-shō|comment=changed title based on wikidata|qid=Q3727885}} - Deputy of the {{ill|Shikibu-shō|en|Shikibu-shō|qid=Q3727885|lt=Ministry of Ceremonial Affairs|1=Shikibu-shō}}, who served as {{ill|Emperor of Japan|en|Emperor of Japan|qid=Q208233|lt=Emperor|1=Emperor of Japan}}’s {{ill|tutor|ja|侍読|12=simple|13=User:Immanuelle/tutor|1=imperial tutor|comment=changed title based on wikidata|qid=Q11385487}}
-* {{ill|Sachūben|ja|左中弁|12=simple|13=User:Immanuelle/Sachūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}}<ref>Note that while also serving as a Hangan in the Daijōkan, the {{ill|Uchūben|ja|右中弁|12=simple|13=User:Immanuelle/Uchūben|ja_comment=jawiki redirects to 弁官|1=benkan|comment=changed title based on wikidata|qid=Q3270768}} does not fall under this category.</ref> - Hangan in the Daijōkan with considerable seniority
-* {{ill|Kokushi (official)|en|Kokushi (official)|qid=Q1351234|lt=Kokushi|1=Kokushi (official)}} - Officials who successfully governed five provinces
+
+* {{ill|Kurōdonotō|ja|蔵人頭|12=simple|13=User:Immanuelle/Kurōdō no Tō|comment=changed title based on wikidata|qid=Q11621873}} - Chief of the {{ill|Kurōdo-dokoro|ja|蔵人所|12=simple|13=User:Immanuelle/Kurōdodokoro|ja_comment=jawiki redirects to 蔵人|comment=changed title based on wikidata|qid=Q6447696}}
+* {{ill|benkan|ja|左大弁|12=simple|13=User:Immanuelle/Sadaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}} - {{ill|jou|ja|判官|12=simple|13=User:Immanuelle/Hangan|comment=changed title based on wikidata|qid=Q1208615}} of the {{ill|Daijō-kan|en|Daijō-kan|qid=Q1192939|lt=Daijō-kan}}
+* {{ill|benkan|ja|右大弁|12=simple|13=User:Immanuelle/Udaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}} - Hangan of the Daijōkan. If a Benkan serves concurrently as Kurōdō no Tō, they are referred to as '''{{ill|tounoben|ja|頭弁|12=simple|13=User:Immanuelle/Tōben|comment=changed title based on wikidata|qid=Q11664939}}'''.
+* {{ill|Konoefu|ja|左近衛中将|12=simple|13=User:Immanuelle/Sakonoe no Chūjō|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}} - {{ill|Undersecretary|en|Undersecretary|qid=Q766504|lt=Shitokan}} of the {{ill|Konoefu|ja|左近衛府|12=simple|13=User:Immanuelle/Sakonoe no Fuchū|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}}
+* {{ill|Konoefu|ja|右近衛中将|12=simple|13=User:Immanuelle/Ukonoe no Chūjō|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}} - Shitokan of the {{ill|Konoefu|ja|右近衛府|12=simple|13=User:Immanuelle/Ukonoe no Fuchū|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}}. If a Chūjō serves concurrently as Kurōdō no Tō, they are referred to as '''{{ill|Tō no Chūjō|ja|頭中将|12=simple|13=User:Immanuelle/Tōchūjō|comment=changed title based on wikidata|qid=Q11664925}}'''.
+* {{ill|Emonfu|ja|左衛門督|12=simple|13=User:Immanuelle/Saemon no Kami|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Emonfu|ja|左衛門府|12=simple|13=User:Immanuelle/Saemonfu|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}}
+* {{ill|Emonfu|ja|右衛門督|12=simple|13=User:Immanuelle/Uemon no Kami|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Emonfu|ja|右衛門府|12=simple|13=User:Immanuelle/Uemonfu|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}}
+* {{ill|Hyōefu|ja|左兵衛督|12=simple|13=User:Immanuelle/Sahyōe no Kami|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}} - Chief of the {{ill|Hyōefu|ja|左兵衛府|12=simple|13=User:Immanuelle/Sahyōefu|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}}
+* {{ill|uhyouenokami|ja|右兵衛督|12=simple|13=User:Immanuelle/Uhyōe no Kami|comment=changed title based on wikidata|qid=Q115215287}} - Chief of the {{ill|Hyōefu|ja|右兵衛府|12=simple|13=User:Immanuelle/Uhyōefu|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}}
+* {{ill|Shikibu-shō|ja|式部大輔|12=simple|13=User:Immanuelle/Shikibu Taifu|ja_comment=jawiki redirects to 式部省|comment=changed title based on wikidata|qid=Q3727885}} - Deputy of the {{ill|Shikibu-shō|en|Shikibu-shō|qid=Q3727885|lt=Ministry of Ceremonial Affairs}}, who served as {{ill|Emperor of Japan|en|Emperor of Japan|qid=Q208233|lt=Emperor}}’s {{ill|imperial tutor|ja|侍読|12=simple|13=User:Immanuelle/tutor|comment=changed title based on wikidata|qid=Q11385487}}
+* {{ill|benkan|ja|左中弁|12=simple|13=User:Immanuelle/Sachūben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}}<ref>Note that while also serving as a Hangan in the Daijōkan, the {{ill|benkan|ja|右中弁|12=simple|13=User:Immanuelle/Uchūben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}} does not fall under this Category:Pages with redlinks to fill]]
+
+[[Category.</ref> - Hangan in the Daijōkan with considerable seniority
+* {{ill|Kokushi (official)|en|Kokushi (official)|qid=Q1351234|lt=Kokushi}} - Officials who successfully governed five provinces
+
 == References ==
 <references />
+
 == Related Articles ==
-* {{ill|Kugyō|1=Kugyō|2=ja|3=公卿|ja|Kugyō|1=Kugyō|2=ja|3=公卿|1=Kugyō|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}
-* {{ill|Ranks|ja|位階|12=simple|13=User:Immanuelle/Ranks|comment=changed title based on wikidata|1=Court Ranks in Japan|qid=Q99196082}}
-* {{ill|Offices|ja|官位|1=East Asian government service ranking|12=simple|13=User:Immanuelle/Offices|13=User:Immanuelle/Kan'i system|comment=changed title based on wikidata|qid=Q11452076}}
-* {{ill|Han-ke (Kuge)|ja|半家 (公家)|1=Half-house (Kuge)|2=ja|3=半家 (公家)|12=simple|13=User:Immanuelle/Han-ke (Kuge)|qq=}}
+* {{ill|Kugyō|2=ja|3=公卿|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}
+* {{ill|Court Ranks in Japan|ja|位階|12=simple|13=User:Immanuelle/Ranks|comment=changed title based on wikidata|qid=Q99196082}}
+* {{ill|East Asian government service ranking|ja|官位|12=simple|13=User:Immanuelle/Offices|13=User:Immanuelle/Kan'i system|comment=changed title based on wikidata|qid=Q11452076}}
+* {{ill|Han-ke (Kuge)|ja|半家 (公家)}}
+
 {{Japanese-history-stub}}
+
 {{translated page|ja|非参議|version=61450233|comment=Imported full ja history}}
 
-[[Category:Extraordinary Government Officials of Ancient Japan]]
+}}
+
+{{draft categories|
+
+==Merged second translation==
+'''Hisangi''' (非参議) refers to the following:
+
+# A person Ranked {{ill|Jusanmi|ja|従三位|ko|종3위|zh|從三位|qid=Q11071123}} ({{ill|Kugyō|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}) or higher who has not yet been appointed as a {{ill|Sangi (Japan)|en|Sangi (Japan)|qid=Q1133663|lt=Sangi}}. This is the most common meaning when referring to Hisangi.
+# A person Ranked at {{ill|Fourth Rank|ja|四位|12=simple|13=User:Immanuelle/Shii|comment=changed title based on wikidata|qid=Q11419606}} who has previously served as a Sangi and subsequently retired. In this case, they are also called a "former Sangi" (前参議).
+# A person Ranked at Shii who is qualified to become a Sangi (essentially a Sangi candidate).
+
+Examples of individuals qualified to become Sangi while holding the Rank of Shii include:
+
+* {{ill|Kurōdonotō|ja|蔵人頭|12=simple|13=User:Immanuelle/Kurōdonotō|comment=changed title based on wikidata|qid=Q11621873}} - Chief of the {{ill|Kurōdo-dokoro|ja|蔵人所|12=simple|13=User:Immanuelle/Kurōdo-dokoro|ja_comment=jawiki redirects to 蔵人|comment=changed title based on wikidata|qid=Q6447696}}.
+* {{ill|benkan|ja|左大弁|12=simple|13=User:Immanuelle/Sadaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}} - Assistant controller of the {{ill|Daijō-kan|en|Daijō-kan|qid=Q1192939|lt=Daijō-kan}}.
+* {{ill|benkan|ja|右大弁|12=simple|13=User:Immanuelle/Udaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}} - Assistant controller of the Daijō-kan. If a Benkan serves concurrently as Kurōdonotō, they are referred to as a "Tōben" (頭弁).
+* {{ill|Konoefu|ja|左近衛中将|12=simple|13=User:Immanuelle/Sakonoe-chūjō|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}} - Assistant captain of the {{ill|Konoefu|ja|左近衛府|12=simple|13=User:Immanuelle/Sakonoe-fu|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}}.
+* {{ill|Konoefu|ja|右近衛中将|12=simple|13=User:Immanuelle/Ukonoe-chūjō|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}} - Assistant captain of the {{ill|Konoefu|ja|右近衛府|12=simple|13=User:Immanuelle/Ukonoe-fu|ja_comment=jawiki redirects to 近衛府|comment=changed title based on wikidata|qid=Q11638974}}. If a Chūjō serves concurrently as Kurōdonotō, they are referred to as a "Tōchūjō" (頭中将).
+* {{ill|Emonfu|ja|左衛門督|12=simple|13=User:Immanuelle/Saemon-no-kami|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Emonfu|ja|左衛門府|12=simple|13=User:Immanuelle/Saemonfu|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}}.
+* {{ill|Emonfu|ja|右衛門督|12=simple|13=User:Immanuelle/Uemon-no-kami|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}} - Chief of the {{ill|Emonfu|ja|右衛門府|12=simple|13=User:Immanuelle/Uemonfu|ja_comment=jawiki redirects to 衛門府|comment=changed title based on wikidata|qid=Q11626338}}.
+* {{ill|Hyōefu|ja|左兵衛督|12=simple|13=User:Immanuelle/Sahyōe-no-kami|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}} - Chief of the {{ill|Hyōefu|ja|左兵衛府|12=simple|13=User:Immanuelle/Sahyōefu|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}}.
+* {{ill|uhyouenokami|ja|右兵衛督|12=simple|13=User:Immanuelle/Uhyōe-no-kami|comment=changed title based on wikidata|qid=Q115215287}} - Chief of the {{ill|Hyōefu|ja|右兵衛府|12=simple|13=User:Immanuelle/Uhyōefu|ja_comment=jawiki redirects to 兵衛府|comment=changed title based on wikidata|qid=Q11393702}}.
+* {{ill|Shikibu-shō|ja|式部大輔|12=simple|13=User:Immanuelle/Shikibu-taifu|ja_comment=jawiki redirects to 式部省|comment=changed title based on wikidata|qid=Q3727885}} - Assistant minister of the {{ill|Shikibu-shō|en|Shikibu-shō|qid=Q3727885|lt=Ministry of Ceremonial Affairs}}, who also served as an imperial tutor.
+* {{ill|benkan|ja|左中弁|12=simple|13=User:Immanuelle/Sadaiben|ja_comment=jawiki redirects to 弁官|comment=changed title based on wikidata|qid=Q3270768}}<ref>Note that although both are assistant controllers of the Daijō-kan, the Udaiben (右中弁) is considered different in this context.</ref> - Assistant controller of the Daijō-kan, with extensive seniority.
+* {{ill|Kokushi (official)|en|Kokushi (official)|qid=Q1351234|lt=Kokushi}} - A person who successfully completed five consecutive terms as a provincial governor.
+
+== Notes ==
+<references />
+
+== See Also ==
+* {{ill|Kugyō|2=ja|3=公卿|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}
+* {{ill|Court Ranks in Japan|ja|位階|12=simple|13=User:Immanuelle/Ikai|comment=changed title based on wikidata|qid=Q99196082}}
+* {{ill|East Asian government service ranking|ja|官位|12=simple|13=User:Immanuelle/Kan'i|13=User:Immanuelle/Kan'i system|comment=changed title based on wikidata|qid=Q11452076}}
+* {{ill|Hanke (Kuge)|ja|半家 (公家)}}
+
+{{Japanese-history-stub}}
+
+{{translated page|ja|非参議|version=61450233|comment=Imported full ja history}}
+
+{{wikidata link|Q11663700|ja|非参議|ko|비참의|check_date=2026-05-15}}
+[[Category:subst:PAGENAME}}
+
 [[Category:Wikidata no short description]]
+[[Category:Pages with duplicated content]]
+[[Category:Extraordinary Government Officials of Ancient Japan]]
+[[Category:Pages with duplicated content]]

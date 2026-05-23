@@ -1,29 +1,116 @@
-{{Infobox religious building
-| religious_affiliation = [[Shinto]]
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+| name        = Isobe Shrine
+| image       = [[File:Isobe jinja - 2016.jpg|250px|Isobe Shrine]]<br />Torii
+| coordinates = {{Coord|36|24|23.8|N|136|30|10.2|E|region:JP-17_type:building_scale:25000}}
+| location     = Furumachi Ka-169, Komatsu-shi, Ishikawa, Japan
+| deity     = Kushihikatawakeno Mikoto
+| status      = {{ill|Shikinaisha|ja|式内社}} (minor), General Shrine of Kaga Province, {{ill|Ichinomiya|ja|一宮}} (disputed), Gōsha (旧郷社)
+| alternate   = Funan-sha, Funamiyamaō Myōjin
+}}
+
+'''Isobe Shrine''' ({{lang|ja|石部神社}}, Isobe Jinja) is a [[Shinto shrine]] located in {{ill|Komatsu|ja|小松市}}, {{ill|Ishikawa Prefecture|ja|石川県}}, Japan. It served as the General Shrine ({{ill|Sōja|ja|総社}}) of {{ill|Kaga Province|ja|加賀国}}. The shrine is listed in the {{ill|Engishiki|ja|延喜式}} register of shrines and previously held the status of {{ill|Gōsha|ja|郷社}} under the modern shrine Ranking system.
+
+== deity ==
+The enshrined deity is Kushihikatawakeno Mikoto. However, records such as the *Kaga Province Shikinaisha Kyuuki* refer to the deity as {{ill|Ōmononushi|ja|大物主}}, and during the early modern period, the shrine was known as "Funamiyamaō Myōjin."
+
+== History ==
+The founding date of Isobe Shrine is unknown. It is believed to have existed prior to the separation of Kaga Province from {{ill|Echizen Province|ja|越前国}} in {{nihongo|823|弘仁14}}. Due to its location south of the provincial capital ({{nihongo|Kokufu|国府}}), the shrine was also referred to as "Funan-sha" (府南社). However, *Shirayama no Ki* suggests that Funan-sha was established when Kaga Province was formed.<ref>{{Cite web|url=https://www.ishikawa-jinjacho.or.jp/shrine/j0664/|title=Isobe Shrine|accessdate=2020-09-25|publisher=Ishikawa Prefecture Shrine Agency}}</ref> 
+
+The shrine is listed in the *Engishiki Jinmyōchō* as "Kaga Province, Nomigun, Isobe Shrine" (加賀国能美郡 石部神社), categorized as a minor shrine.
+
+Isobe Shrine likely served as the General Shrine of Kaga Province and enjoyed significant influence for a time. However, its power waned following the {{nihongo|Yūsenji Incident|涌泉寺事件}} in {{nihongo|1176|安元2}}. In {{nihongo|1600|慶長5}}, {{ill|Niwa Nagashige|ja|丹羽長重}} undertook renovations of the shrine buildings, and during the {{nihongo|Edo period|江戸時代}}, the shrine received protection from the {{ill|Kaga Domain|ja|加賀藩}} lords. There was a period when the shrine was considered the Ichinomiya of Kaga Province, leading to disputes with {{ill|Shirayama Hime Shrine|ja|白山比咩神社}}.
+
+== References ==
+<references />
+
+{{Ichinomiya}}
+
+{{Sōja shrines}}
+
+{{translated page|ja|石部神社 (小松市)|version=104536857|comment=Imported full ja history}}
+
+{{wikidata link|Q11587231|ja|石部神社_(小松市)|ja|石部神社 (小松市)|check_date=2026-05-15}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 | name        = Isobe Shrine
 | image       = File:Isobe jinja - 2016.jpg
 | coordinates = {{Coord|36.40661111111111|N|136.50283333333334}}
 | location     = Furumachi Ka-169, Komatsu-shi, Ishikawa, Japan
 | deity     = Kushihikatawakeno Mikoto
-| status      = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor), General Shrine of Kaga Province, {{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya|1=Ichinomiya}} (disputed), Gōsha (旧郷社)
+| status      = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (minor), General Shrine of Kaga Province, {{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}} (disputed), Gōsha (旧郷社)
 | alternate   = Funan-sha, Funamiyamaō Myōjin
-| prefecture= {{ill|Komatsu|qid=Q646898|1=Komatsu, Ishikawa}}
+| prefecture= {{ill|Komatsu, Ishikawa|qid=Q646898}}
 }}
-'''Isobe Shrine''' ({{lang|ja|石部神社}}, Isobe Jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu|1=Komatsu, Ishikawa}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture|1=Ishikawa Prefecture}}, Japan. It served as the General Shrine ({{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja|1=Sōja shrine}}) of {{ill|Kaga Province|en|Kaga Province|qid=Q907469|lt=Kaga Province|1=Kaga Province}}. The shrine is listed in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} register of shrines and previously held the status of {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the modern shrine Ranking system.
+
+'''Isobe Shrine''' ({{lang|ja|石部神社}}, Isobe Jinja) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}}, Japan. It served as the General Shrine ({{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}}) of {{ill|Kaga Province|en|Kaga Province|qid=Q907469|lt=Kaga Province}}. The shrine is listed in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} register of shrines and previously held the status of {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the modern shrine Ranking system.
+
 == deity ==
-The enshrined deity is Kushihikatawakeno Mikoto. However, records such as the *Kaga Province Shikinaisha Kyuuki* refer to the deity as {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi|1=Ōmononushi}}, and during the early modern period, the shrine was known as "Funamiyamaō Myōjin."
+The enshrined deity is Kushihikatawakeno Mikoto. However, records such as the *Kaga Province Shikinaisha Kyuuki* refer to the deity as {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi}}, and during the early modern period, the shrine was known as "Funamiyamaō Myōjin."
+
 == History ==
-The founding date of Isobe Shrine is unknown. It is believed to have existed prior to the separation of Kaga Province from {{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province|1=Echizen Province}} in {{nihongo|823|弘仁14}}. Due to its location south of the provincial capital ({{nihongo|Kokufu|国府}}), the shrine was also referred to as "Funan-sha" (府南社). However, *Shirayama no Ki* suggests that Funan-sha was established when Kaga Province was formed.<ref>{{Cite web|url=https://www.ishikawa-jinjacho.or.jp/shrine/j0664/|title=Isobe Shrine|accessdate=2020-09-25|publisher=Ishikawa Prefecture Shrine Agency}}</ref> 
+The founding date of Isobe Shrine is unknown. It is believed to have existed prior to the separation of Kaga Province from {{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province}} in {{nihongo|823|弘仁14}}. Due to its location south of the provincial capital ({{nihongo|Kokufu|国府}}), the shrine was also referred to as "Funan-sha" (府南社). However, *Shirayama no Ki* suggests that Funan-sha was established when Kaga Province was formed.<ref>{{Cite web|url=https://www.ishikawa-jinjacho.or.jp/shrine/j0664/|title=Isobe Shrine|accessdate=2020-09-25|publisher=Ishikawa Prefecture Shrine Agency}}</ref> 
+
 The shrine is listed in the *Engishiki Jinmyōchō* as "Kaga Province, Nomigun, Isobe Shrine" (加賀国能美郡 石部神社), categorized as a minor shrine.
-Isobe Shrine likely served as the General Shrine of Kaga Province and enjoyed significant influence for a time. However, its power waned following the {{nihongo|Yūsenji Incident|涌泉寺事件}} in {{nihongo|1176|安元2}}. In {{nihongo|1600|慶長5}}, {{ill|Niwa Nagashige|en|Niwa Nagashige|qid=Q909763|lt=Niwa Nagashige|1=Niwa Nagashige}} undertook renovations of the shrine buildings, and during the {{nihongo|Edo period|江戸時代}}, the shrine received protection from the {{ill|Kaga Domain|en|Kaga Domain|qid=Q903448|lt=Kaga Domain|1=Kaga Domain}} lords. There was a period when the shrine was considered the Ichinomiya of Kaga Province, leading to disputes with {{ill|Shirayama Hime Shrine|en|Shirayama Hime Shrine|qid=Q704702|lt=Shirayama Hime Shrine|1=Shirayama Hime Shrine}}.
+
+Isobe Shrine likely served as the General Shrine of Kaga Province and enjoyed significant influence for a time. However, its power waned following the {{nihongo|Yūsenji Incident|涌泉寺事件}} in {{nihongo|1176|安元2}}. In {{nihongo|1600|慶長5}}, {{ill|Niwa Nagashige|en|Niwa Nagashige|qid=Q909763|lt=Niwa Nagashige}} undertook renovations of the shrine buildings, and during the {{nihongo|Edo period|江戸時代}}, the shrine received protection from the {{ill|Kaga Domain|en|Kaga Domain|qid=Q903448|lt=Kaga Domain}} lords. There was a period when the shrine was considered the Ichinomiya of Kaga Province, leading to disputes with {{ill|Shirayama Hime Shrine|en|Shirayama Hime Shrine|qid=Q704702|lt=Shirayama Hime Shrine}}.
+
 == References ==
 <references />
+
 {{Ichinomiya}}
+
 {{Sōja shrines}}
+
 {{translated page|ja|石部神社 (小松市)|version=104536857|comment=Imported full ja history}}
+
 {{Commons category|Isobe-jinja (Komatsu)}}
 {{wikidata link|Q11587231}}
 
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+| name        = Isobe Shrine
+| image       = File:Isobe jinja - 2016.jpg
+| coordinates = {{Coord|36.40661111111111|N|136.50283333333334}}
+| location     = Furumachi Ka-169, Komatsu-shi, Ishikawa, Japan
+| deity     = Kushihikatawakeno Mikoto
+| status      = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (minor), General Shrine of Kaga Province, {{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}} (disputed), Gōsha (旧郷社)
+| alternate   = Funan-sha, Funamiyamaō Myōjin
+| prefecture= {{ill|Komatsu, Ishikawa|qid=Q646898}}
+}}
+
+'''Isobe Shrine''' ({{lang|ja|石部神社}}, Isobe Jinja) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}}, Japan. It served as the General Shrine ({{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}}) of {{ill|Kaga Province|en|Kaga Province|qid=Q907469|lt=Kaga Province}}. The shrine is listed in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} register of shrines and previously held the status of {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the modern shrine Ranking system.
+
+== deity ==
+The enshrined deity is Kushihikatawakeno Mikoto. However, records such as the *Kaga Province Shikinaisha Kyuuki* refer to the deity as {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi}}, and during the early modern period, the shrine was known as "Funamiyamaō Myōjin."
+
+== History ==
+The founding date of Isobe Shrine is unknown. It is believed to have existed prior to the separation of Kaga Province from {{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province}} in {{nihongo|823|弘仁14}}. Due to its location south of the provincial capital ({{nihongo|Kokufu|国府}}), the shrine was also referred to as "Funan-sha" (府南社). However, *Shirayama no Ki* suggests that Funan-sha was established when Kaga Province was formed.<ref>{{Cite web|url=https://www.ishikawa-jinjacho.or.jp/shrine/j0664/|title=Isobe Shrine|accessdate=2020-09-25|publisher=Ishikawa Prefecture Shrine Agency}}</ref> 
+
+The shrine is listed in the *Engishiki Jinmyōchō* as "Kaga Province, Nomigun, Isobe Shrine" (加賀国能美郡 石部神社), categorized as a minor shrine.
+
+Isobe Shrine likely served as the General Shrine of Kaga Province and enjoyed significant influence for a time. However, its power waned following the {{nihongo|Yūsenji Incident|涌泉寺事件}} in {{nihongo|1176|安元2}}. In {{nihongo|1600|慶長5}}, {{ill|Niwa Nagashige|en|Niwa Nagashige|qid=Q909763|lt=Niwa Nagashige}} undertook renovations of the shrine buildings, and during the {{nihongo|Edo period|江戸時代}}, the shrine received protection from the {{ill|Kaga Domain|en|Kaga Domain|qid=Q903448|lt=Kaga Domain}} lords. There was a period when the shrine was considered the Ichinomiya of Kaga Province, leading to disputes with {{ill|Shirayama Hime Shrine|en|Shirayama Hime Shrine|qid=Q704702|lt=Shirayama Hime Shrine}}.
+
+== References ==
+<references />
+
+{{Ichinomiya}}
+
+{{Sōja shrines}}
+
+{{translated page|ja|石部神社 (小松市)|version=104536857|comment=Imported full ja history}}
+
+{{Commons category|Isobe-jinja (Komatsu)}}
+{{wikidata link|Q11587231}}
+[[Category:Shikinaisha|Isobe Shrine (Komatsu City)]][[Category:Shikinaisha in Kaga Province]]
+[[Category:Shinto shrines in Ishikawa Prefecture]]
+[[Category:Sōja shrines]]
+[[Category:Wikidata has short description]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with interwikis with duplicate languages]]
 [[Category:Buildings and structures in Komatsu, Ishikawa]]
 [[Category:Former Gō-sha in Ishikawa Prefecture]]
 [[Category:Gō-sha]]
@@ -31,11 +118,4 @@ Isobe Shrine likely served as the General Shrine of Kaga Province and enjoyed si
 [[Category:Ichinomiya]]
 [[Category:Kaga Province]]
 [[Category:Pages linked to by wikidata]]
-[[Category:Shikinaisha|Isobe Shrine (Komatsu City)]]
-[[Category:Shikinaisha in Kaga Province]]
-[[Category:Shinto shrines in Ishikawa Prefecture]]
-[[Category:Sōja shrines]]
-[[Category:Wikidata has short description]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]

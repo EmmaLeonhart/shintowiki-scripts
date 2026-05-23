@@ -2,46 +2,121 @@
 {{Infobox ancient site|location={{ill|Taishi, Osaka|qid=Q1347173}}|part_of={{ill|Eifuku-ji North Kofun|qid=Q48743902}}; {{ill|Futagozuka Kofun (Osaka)|qid=Q11371443}}; {{ill|Goryōyama Kofun|qid=Q48753099}}; {{ill|Hamuro Kofun Group|qid=Q48753076}}; {{ill|Kasuga Mukaiyama Kofun|qid=Q11513590}}; {{ill|Matsuizuka Kofun|qid=Q63386720}}; {{ill|Taishi Nishiyama Kofun|qid=Q48751982}}; {{ill|Yamada Takatsuka Kofun|qid=Q11470748}}; {{ill|Yamada Uenoyama Kofun|qid=Q48752311}}}}
 '''Shinagadani Kofun Group''' (磯長谷古墳群) is a group of [[Kofun|Kofuns]] centered around {{ill|Japanese imperial tombs|en|Japanese imperial tombs|qid=Q17218816|lt=Japanese imperial tombs}} located in {{ill|Taishi, Osaka|en|Taishi, Osaka|qid=Q1347173|lt=Taishi, Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}.
 == Overview ==
-The Shinagadani Kofun Group comprises approximately 30 Kofuns, including four mausoleums designated as [[Japanese imperial tombs|imperial tombs]] by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}} ({{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun|qq=}}, {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|lt_ja=用明天皇陵|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun|qq=}}, {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|推古天皇陵|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun|qq=}}, and {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|孝徳天皇陵|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun|qq=}}), along with the {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|lt_ja=聖徳太子墓|12=simple|13=User:Immanuelle/Eifuku-ji North Kofun|qq=}}. These Kofuns date to the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} to the early {{ill|Asuka period|en|Asuka period|qid=Q210688|lt=Asuka period}}, between the mid-6th and early 7th centuries. Notably, the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun|qq=}} is the only {{ill|Zenpō-kōen-fun|en|Zenpō-kōen-fun|qid=Q11268718|lt=Zenpō-kōen-fun}} within this group.
-The five main tumuli (four Imperial mausolea and Prince Shōtoku's tomb) are collectively referred to as the "'''Umebachi Mausoleums'''" (梅鉢御陵), likened to the petals of a plum blossom. The area, located on the broad valley slopes of {{ill|Futakami Mountain|ja|二上山|2=ja|3=二上山|lt=Mount Futakami (or Nijo)|comment=Kanji are ambiguous between the two pronounciations|12=simple|13=User:Immanuelle/Mount Nijō|13=User:Immanuelle/Futakami Mountain|qq=}}, is also known as the "'''Valley of Royal Tombs'''." (王陵の谷).
+The Shinagadani Kofun Group comprises approximately 30 Kofuns, including four mausoleums designated as [[Japanese imperial tombs|imperial tombs]] by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}} ({{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun}}, {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|lt_ja=用明天皇陵|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun}}, {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|推古天皇陵|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun}}, and {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|孝徳天皇陵|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun}}), along with the {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|lt_ja=聖徳太子墓|12=simple|13=User:Immanuelle/Eifuku-ji North Kofun}}. These Kofuns date to the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} to the early {{ill|Asuka period|en|Asuka period|qid=Q210688|lt=Asuka period}}, between the mid-6th and early 7th centuries. Notably, the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun}} is the only {{ill|Zenpō-kōen-fun|en|Zenpō-kōen-fun|qid=Q11268718|lt=Zenpō-kōen-fun}} within this group.
+
+The five main tumuli (four Imperial mausolea and Prince Shōtoku's tomb) are collectively referred to as the "'''Umebachi Mausoleums'''" (梅鉢御陵), likened to the petals of a plum blossom. The area, located on the broad valley slopes of {{ill|Futakami Mountain|ja|二上山|2=ja|3=二上山|lt=Mount Futakami (or Nijo)|comment=Kanji are ambiguous between the two pronounciations|12=simple|13=User:Immanuelle/Mount Nijō|13=User:Immanuelle/Futakami Mountain}}, is also known as the "'''Valley of Royal Tombs'''." (王陵の谷).
+
 === Main Tumuli ===
 The following five tumuli are designated by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}} as Imperial mausolea:
 {| class="wikitable"
 ! Name !! Interred !! Shape !! Length !! Notes
 |-
-| {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun|qq=}}|| {{ill|Emperor Bidatsu|en|Emperor Bidatsu|qid=Q316637|lt=Emperor Bidatsu}}|| Keyhole-shaped || 93m || Imperial mausoleum
+| {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun}}|| {{ill|Emperor Bidatsu|en|Emperor Bidatsu|qid=Q316637|lt=Emperor Bidatsu}}|| Keyhole-shaped || 93m || Imperial mausoleum
 |-
-| {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun|qq=}}|| {{ill|Emperor Yōmei|en|Emperor Yōmei|qid=Q349281|lt=Emperor Yōmei}}|| Square || 63m × 60m || Imperial mausoleum
+| {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun}}|| {{ill|Emperor Yōmei|en|Emperor Yōmei|qid=Q349281|lt=Emperor Yōmei}}|| Square || 63m × 60m || Imperial mausoleum
 |-
-| {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun|qq=}}|| {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Empress Suiko}}|| Square || 63m × 56m || Imperial mausoleum
+| {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun}}|| {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Empress Suiko}}|| Square || 63m × 56m || Imperial mausoleum
 |-
-| {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun|qq=}}|| {{ill|Emperor Kōtoku|en|Emperor Kōtoku|qid=Q317980|lt=Emperor Kōtoku}}|| Round || 30m || Imperial mausoleum
+| {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun}}|| {{ill|Emperor Kōtoku|en|Emperor Kōtoku|qid=Q317980|lt=Emperor Kōtoku}}|| Round || 30m || Imperial mausoleum
 |-
-| {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|12=simple|13=User:Immanuelle/Eifuku-ji North Kofun|qq=}}|| {{ill|Prince Shōtoku|en|Prince Shōtoku|qid=Q263972|lt=Prince Shōtoku}}|| Round || 55m || Equivalent to an Imperial mausoleum
+| {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|12=simple|13=User:Immanuelle/Eifuku-ji North Kofun}}|| {{ill|Prince Shōtoku|en|Prince Shōtoku|qid=Q263972|lt=Prince Shōtoku}}|| Round || 55m || Equivalent to an Imperial mausoleum
 |}
 :
+
 === Other Kofuns ===
+
 Significant Kofuns in the area include:
+
 ; {{ill|Futagozuka Kofun (Osaka)|en|Futagozuka Kofun (Osaka)|qid=Q11371443|lt=Futagozuka Kofun (Osaka)}}
 : Located about 200 meters southeast of the Kasuga Mukoyama Kofun, this double Kofun (also referred to as a {{ill|Rectangular Kofun|ja|長方形墳|12=simple|13=User:Immanuelle/Rectangular Kofun|ja_comment=jawiki link invalid}}) measures approximately 60 meters in length and 25 meters in width, with a mound height of about 6–4.8 meters. It is believed to contain two nearly identical horizontal stone chambers. There is a tradition that this is the joint tomb of Empress Suiko and {{ill|Prince Takeda|ja|竹田皇子|12=simple|13=User:Immanuelle/Prince Takeda|comment=changed title based on wikidata|qid=Q11599359}}.
+
 ; {{ill|Hamuro Kofun Group|lt=Hamuro Kofun Group|lt=Hamurozuka Kofun|ja|葉室塚古墳|12=simple|13=User:Immanuelle/Hamurozuka Kofun|ja_comment=jawiki redirects to 葉室古墳群}}
 : A rectangular mound measuring 75 meters east–west and 55 meters north–south, with a mound height of approximately 8 meters. The western portion of the mound is significantly damaged. Surrounding the Hamurozuka Kofun are smaller Kofuns, including:
 :* Mondō Kamizuka Kofun (Round mound)
 :* {{ill|Hamuro Kofun Group|lt=Hamuro Kofun Group|lt=Kamadozuka Kofun|ja|釜戸塚古墳|12=simple|13=User:Immanuelle/Kamadozuka Kofun|ja_comment=jawiki redirects to 葉室古墳群}} (Round mound)
 :* {{ill|Hamuro Kofun Group|lt=Hamuro Kofun Group|lt=Hamusho Ishizuka Kofun|ja|葉室石塚古墳|12=simple|13=User:Immanuelle/Hamusho Ishizuka Kofun|ja_comment=jawiki redirects to 葉室古墳群}} (Unknown type)
 :* Associated tumuli (smaller mounds connected to larger tombs)
+
 == Notes ==
-The name "Okuno Kofun" refers to a Kofun in the Shinagadani area. While some sources identify it as an alternative name for the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun|qq=}}, others associate it with the mausoleum of Prince Shōtoku.<small>Reference: [http://www.town.taishi.osaka.jp/sightseeing/rekishi/rekishi04.html Taishi Town Website]</small> The Isonokami Valley is also home to a tumulus known as "Okushiro Kofun," which is sometimes identified with the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun|qq=}} or with Prince Shōtoku's mausoleum, depending on the source.<small> (Reference: [http://www.town.taishi.osaka.jp/sightseeing/rekishi/rekishi04.html Taishi Town website])</small>
+
+The name "Okuno Kofun" refers to a Kofun in the Shinagadani area. While some sources identify it as an alternative name for the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun}}, others associate it with the mausoleum of Prince Shōtoku.<small>Reference: [http://www.town.taishi.osaka.jp/sightseeing/rekishi/rekishi04.html Taishi Town Website]</small>
+
+== Notes ==
+The Isonokami Valley is home to a tumulus known as "Okushiro Kofun," which is sometimes identified with the {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|敏達天皇陵|12=simple|13=User:Immanuelle/Taishi Nishiyama Kofun}} or with Prince Shōtoku's mausoleum, depending on the source.<small> (Reference: [http://www.town.taishi.osaka.jp/sightseeing/rekishi/rekishi04.html Taishi Town website])</small>
+
 == References ==
+
 * ''Exploring Kawachi Asuka'' (edited by Masashi Ishibe, Shōraisha, ISBN 4-87984-101-3)
+
 == Related Articles ==
+
 * {{ill|list of kofun|ja|日本の古墳一覧|12=simple|13=User:Immanuelle/List of Kofun in Japan|comment=changed title based on wikidata|qid=Q11505809}}
+
 == External Links ==
+
 * [http://chikatsu.mediajoy.com/jousetsu/shinagadani.html Shinagadani Kofun Group] (Chikatsu Asuka Museum Website)
+
 {{Kofun navbar}}
+
+:*
+
 {{translated page|ja|磯長谷古墳群|version=70664932|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+'''Shinagadani Kofun Group''' (磯長谷古墳群) is a cluster of Kofuns centered on imperial tombs, located in {{ill|Taishi, Osaka|en|Taishi, Osaka|qid=Q1347173|lt=Taishi, Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Japan.
+
+== Overview ==
+The Shinagadani Kofun Group consists of four imperial tombs designated by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}}—{{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Prince Taishi Nishiyama Kofun|13=User:Immanuelle/Taishi Nishiyama Kofun}} (Emperor Bidatsu), {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|2=ja|3=春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|2=ja|3=春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun|13=User:Immanuelle/Kasuga Mukaiyama Kofun}} (Emperor Yōmei), {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun|13=User:Immanuelle/Yamada Takatsuka Kofun}} (Empress Suiko), and {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun}} (Emperor Kōtoku)—as well as approximately 30 other Kofuns, including the {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|2=ja|3=叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|12=simple|13=User:Immanuelle/Eifukuji North Kofun|13=User:Immanuelle/Eifuku-ji North Kofun}}, said to be the tomb of {{ill|Prince Shōtoku|en|Prince Shōtoku|qid=Q263972|lt=Prince Shōtoku}}. These Kofuns date from the mid-6th century to the early 7th century, spanning the end of the {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} and the beginning of the {{ill|Asuka period|en|Asuka period|qid=Q210688|lt=Asuka period}}. Notably, the mound attributed to Emperor Bidatsu is the only keyhole-shaped Kofun (''zenpō-kōen-fun'') within this group.
+
+The four imperial tombs and Prince Shōtoku's mausoleum are collectively referred to as the "'''Plum Blossom Petal Mausoleums'''" (梅鉢御陵). The area, situated on the broad valley slopes of the {{ill|Futakami Mountain|ja|二上山|2=ja|3=二上山|lt=Mount Futakami (or Nijo)|comment=Kanji are ambiguous between the two pronounciations|12=simple|13=User:Immanuelle/Nijō Mountains|13=User:Immanuelle/Futakami Mountain}}, is known as Shinagadani. Due to the concentration of royal tombs, it is also called the "'''Valley of Royal Mausoleums'''" (王陵の谷).
+
+=== Major Kofuns ===
+The following five Kofuns have been designated as {{ill|Japanese imperial tombs|en|Japanese imperial tombs|qid=Q17218816|lt=Japanese imperial tombs}} by the Imperial Household Agency:
+
+{| class="wikitable"
+! Name !! Interred Individual !! Mound Shape !! Length !! Notes
+|-
+| {{ill|Taishi Nishiyama Kofun|ja|太子西山古墳|12=simple|13=User:Immanuelle/Prince Taishi Nishiyama Kofun|13=User:Immanuelle/Taishi Nishiyama Kofun}} || {{ill|Emperor Bidatsu|en|Emperor Bidatsu|qid=Q316637|lt=Emperor Bidatsu}} || Keyhole-shaped || 93 m || Imperial tomb
+|-
+| {{ill|Kasuga Mukaiyama Kofun|ja|春日向山古墳|2=ja|3=春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|2=ja|3=春日向山古墳|4=de|5=Kasuga Mukaiyama Kofun|6=fr|7=Kasuga Mukaiyama Kofun|12=simple|13=User:Immanuelle/Kasuga Mukaiyama Kofun|13=User:Immanuelle/Kasuga Mukaiyama Kofun}} || {{ill|Emperor Yōmei|en|Emperor Yōmei|qid=Q349281|lt=Emperor Yōmei}} || Square || 63 m × 60 m || Imperial tomb
+|-
+| {{ill|Yamada Takatsuka Kofun|ja|山田高塚古墳|12=simple|13=User:Immanuelle/Yamada Takatsuka Kofun|13=User:Immanuelle/Yamada Takatsuka Kofun}} || {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Empress Suiko}} || Square || 63 m × 56 m || Imperial tomb
+|-
+| {{ill|Yamada Uenoyama Kofun|ja|山田上ノ山古墳|12=simple|13=User:Immanuelle/Yamada Uenoyama Kofun}} || {{ill|Emperor Kōtoku|en|Emperor Kōtoku|qid=Q317980|lt=Emperor Kōtoku}} || Round || 30 m || Imperial tomb
+|-
+| {{ill|Eifuku-ji North Kofun|ja|叡福寺北古墳|2=ja|3=叡福寺北古墳|4=fr|5=Eifukuji Kita Kofun|12=simple|13=User:Immanuelle/Eifukuji North Kofun|13=User:Immanuelle/Eifuku-ji North Kofun}} || {{ill|Prince Shōtoku|en|Prince Shōtoku|qid=Q263972|lt=Prince Shōtoku}} || Round || 55 m || Equivalent to an imperial tomb
+|}
+
+=== Other Notable Kofuns ===
+; {{ill|Futagozuka Kofun (Osaka)|en|Futagozuka Kofun (Osaka)|qid=Q11371443|lt=Futagozuka Kofun (Taishi, Osaka)}}
+: Located approximately 200 meters southeast of Empress Suiko’s tomb (Kasuga Mukaiyama Kofun), this mound is a {{ill|paired Kofun|ja|双方墳|12=simple|13=User:Immanuelle/paired Kofun|ja_comment=jawiki link invalid}} (or rectangular mound), measuring about 60 meters in length and 25 meters in width. Each mound is believed to contain similar-sized horizontal stone chambers. According to legend, this tomb is shared by Empress Suiko and {{ill|Prince Takeda|ja|竹田皇子|12=simple|13=User:Immanuelle/Prince Takeda|comment=changed title based on wikidata|qid=Q11599359}}.
+
+; {{ill|Hamuro Kofun Group|ja|葉室塚古墳|12=simple|13=User:Immanuelle/Echizen Kofun|ja_comment=jawiki redirects to 葉室古墳群|comment=changed title based on wikidata|qid=Q48753076}}
+: A rectangular mound measuring approximately 75 meters east-to-west, 55 meters north-to-south, and 8 meters in height. The western side of the mound is significantly damaged. Smaller associated Kofuns include:
+:* Mondo Kamizuka Kofun (round)
+:* {{ill|Hamuro Kofun Group|ja|釜戸塚古墳|12=simple|13=User:Immanuelle/Kamado Kofun|ja_comment=jawiki redirects to 葉室古墳群|comment=changed title based on wikidata|qid=Q48753076}} (round)
+:* {{ill|Hamuro Kofun Group|lt=Hamuro Kofun Group|lt=Hamuro Ishizuka Kofun|ja|葉室石塚古墳|12=simple|13=User:Immanuelle/Hamuro Ishizuka Kofun|ja_comment=jawiki redirects to 葉室古墳群}} (undetermined)
+:* Subordinate mounds associated with larger burials
+
+== Notes ==
+The term "Okutsuki Kofun" is used to describe a Kofun in Shinagadani, which has been alternatively identified as another name for the Prince Taishi Nishiyama Kofun (Emperor Bidatsu’s tomb)<small> (Reference: [http://www.town.taishi.osaka.jp/sightseeing/rekishi/rekishi04.html Taishi Town Website])</small> or Prince Shōtoku’s mausoleum in certain sources.
+
+== References ==
+* {{Cite book|language=ja|title=Visiting Kawachi Asuka|editor=Masashi Ishibe|publisher={{ill|Shoraisha|ja|松籟社|12=simple|13=User:Immanuelle/Shōrai-sha|comment=changed title based on wikidata|qid=Q11532207}}|isbn=4-87984-101-3}}
+== See Also ==
+* {{ill|list of kofun|ja|日本の古墳一覧|12=simple|13=User:Immanuelle/List of Kofuns in Japan|comment=changed title based on wikidata|qid=Q11505809}}
+
+== External Links ==
+* [http://chikatsu.mediajoy.com/jousetsu/shinagadani.html Shinagadani Kofun Group] - {{ill|Osaka Prefectural Chikatsu Asuka Museum|ja|近つ飛鳥博物館|12=simple|13=User:Immanuelle/Chikatsu Asuka Museum|ja_comment=jawiki redirects to 大阪府立近つ飛鳥博物館|comment=changed title based on wikidata|qid=Q4557237}} Website
+
+{{Japanese-history-stub}}
+
+{{translated page|ja|磯長谷古墳群|version=70664932|comment=Imported full ja history}}
+
+{{wikidata link|Q11588120|ja|磯長谷古墳群|check_date=2026-05-09}}
 [[Category:Kofun of Osaka prefecture]]
 [[Category:Municipal History of Taishi, Ōsaka Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinagadani Kofun Cluster]]
 [[Category:Wikidata no short description]]

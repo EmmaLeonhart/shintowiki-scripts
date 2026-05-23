@@ -1,38 +1,110 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kibiya_clan for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-'''Kimikobe''' (吉美侯部) or '''Kimiyakobe''' (吉弥侯部) was an ancient group of {{ill|be|ja|部民|12=simple|13=User:Immanuelle/be|ja_comment=jawiki redirects to 部民制|1=Bemin|comment=changed title based on wikidata|qid=Q2892644}} (hereditary occupational groups) and their associated clan in [[:en:Ancient Japan|Ancient Japan]].
+'''Kimikobe''' (吉美侯部) or '''Kimiyakobe''' (吉弥侯部) was an ancient group of {{ill|Bemin|ja|部民|12=simple|13=User:Immanuelle/be|ja_comment=jawiki redirects to 部民制|comment=changed title based on wikidata|qid=Q2892644}} (hereditary occupational groups) and their associated clan in [[:en:Ancient Japan|Ancient Japan]].
+
 == Overview ==
-[[Ōta Ryō]] suggested that the "Kimikobe" (君子部) refers to "Kimi" (君) in the eastern provinces, specifically clans such as the {{ill|Kamitsukeno clan|ja|上毛野氏|1=Kamitsukeno clan|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan|qq=}} and {{ill|Shimotsukeno clan|ja|下毛野氏|1=Shimotsukeno clan|lt=Shimotsukeno clan|12=simple|13=User:Immanuelle/Shimotsukeno clan|13=User:Immanuelle/Shimotsukeno clan|qq=}}.<ref>Ōta Ryō, "Kimiyakobe," in ''Seishi Kakei Daijiten'' (Genealogy Dictionary of Japanese Surnames), vol. 2, 1945, p. 1945.</ref>
-The ''{{ill|Rikkokushi|en|Rikkokushi|qid=Q1151168|lt=Rikkokushi|1=Rikkokushi}}'' (including supplemental notes from the ''{{ill|Ruijū Kokushi|en|Ruijū Kokushi|qid=Q1038639|lt=Ruijū Kokushi|1=Ruijū Kokushi}}'') occasionally mentions individuals bearing the name "Kimiyakobe" (君子部, 君子) or related variants as either public citizens or officials. In the ''{{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi|1=Shoku Nihongi}}'', individuals from the Kimikobe, Kimiyakobe, and related clans appear as public servants or tribal leaders. However, many Kimiyakobe members were also recorded as prisoners of war or rebels in the ''Ruijū Kokushi'' and later records such as the ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Shoku Nihon Kōki|1=Shoku Nihon Kōki}}''. These accounts include records of Kimiyakobe individuals as subjugated prisoners (俘囚) and leaders of revolts.
-The individuals mentioned in the historical records were frequently praised for their loyalty, valiant deeds, or familial fidelity, resulting in the granting of titles, tax exemptions, or other rewards. For instance, individuals from regions such as {{ill|Mutsu Province|en|Mutsu Province|qid=Q907389|lt=Mutsu Province|1=Mutsu Province}}, {{ill|Dewa Province|en|Dewa Province|qid=Q876032|lt=Dewa Province|1=Dewa Province}}, {{ill|Hitachi Province|en|Hitachi Province|qid=Q1055353|lt=Hitachi Province|1=Hitachi Province}}, and others, as well as women identified as "daughters of Kimikobe" (吉弥侯某の女), were frequently rewarded for their contributions.
-The ''Mutsu Province Register of Population Gains and Losses,'' housed in the {{ill|Shōsōin|en|Shōsōin|qid=Q2379007|lt=Shōsōin|1=Shōsōin}}, includes names such as "Kimikobe Asamaro" (君子部阿佐麻呂) and "Kimikobe Kuwaji" (君子部久波自).<ref name="tohoku">Toyoda, ''History of Tōhoku'' (1967).</ref> Originally referred to as "Kimikobe," the name was changed to "Kimikobe" (吉美侯部) in the 9th year of the {{ill|Tenpyō-shōhō|en|Tenpyō-shōhō|qid=Q1373169|lt=Tenpyō Shōhō|1=Tenpyō-shōhō}} era (757 CE).<ref name="jiten">''Nihon Kodai Shizoku Jinmei Jiten'' (1990).</ref>
-Kimikobe's connections to the {{ill|Kamitsukeno clan|lt=Kamitsukeno clan|lt=Keno clan|ja|毛野氏|12=simple|13=User:Immanuelle/Keno clan|ja_comment=jawiki redirects to 上毛野氏}} (Kamitsukeno and Shimotsukeno branches) as their patrons are supported by genealogical records and ritual practices.<ref name="hogashun">Hōga Toshio, "Genealogy of the Kimikobe-surnamed Madara Clan," in ''Koju Kinoshōkan,'' 2016.</ref> The Kimikobe served various roles for the imperial court, including compulsory labor and other duties. Their widespread distribution across Japan can be attributed to the [[Ritsuryō system]], which resettled prisoners of war to assimilate them into society.<ref name="jiten" />
+
+[[Ōta Ryō]] suggested that the "Kimikobe" (君子部) refers to "Kimi" (君) in the eastern provinces, specifically clans such as the {{ill|Kamitsukeno clan|ja|上毛野氏}} and {{ill|Shimotsukeno clan|ja|下毛野氏|lt=Shimotsukeno clan}}.<ref>Ōta Ryō, "Kimiyakobe," in ''Seishi Kakei Daijiten'' (Genealogy Dictionary of Japanese Surnames), vol. 2, 1945, p. 1945.</ref>
+
+The ''{{ill|Rikkokushi|en|Rikkokushi|qid=Q1151168|lt=Rikkokushi}}'' (including supplemental notes from the ''{{ill|Ruijū Kokushi|en|Ruijū Kokushi|qid=Q1038639|lt=Ruijū Kokushi}}'') occasionally mentions individuals bearing the name "Kimiyakobe" (君子部, 君子) or related variants as either public citizens or officials. In the ''{{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}}'', individuals from the Kimikobe, Kimiyakobe, and related clans appear as public servants or tribal leaders. However, many Kimiyakobe members were also recorded as prisoners of war or rebels in the ''Ruijū Kokushi'' and later records such as the ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Shoku Nihon Kōki}}''. These accounts include records of Kimiyakobe individuals as subjugated prisoners (俘囚) and leaders of revolts.
+
+The individuals mentioned in the historical records were frequently praised for their loyalty, valiant deeds, or familial fidelity, resulting in the granting of titles, tax exemptions, or other rewards. For instance, individuals from regions such as {{ill|Mutsu Province|ca|Província de Mutsu|cs|Provincie Mucu|de|Provinz Mutsu|es|Provincia de Mutsu|fa|ولایت موتسو|fi|Mutsun provinssi|fr|Province de Mutsu|gl|Provincia de Mutsu|id|Provinsi Mutsu|it|Mutsu (provincia)|ja|陸奥国|ko|무쓰국|lt|Mucu žemė|nl|Mutsu (provincie)|pt|Província de Mutsu|ru|Муцу (провинция)|simple|Mutsu Province|sk|Mucu (provincia)|sr|Провинција Муцу|tr|Mutsu (vilayet)|uk|Муцу (провінція)|zh|陸奧國|zh_classical|陸奧國|zh_min_nan|Mutu-kok|zh_yue|陸奧國|qid=Q907389|lt=Mutsu Province}}, {{ill|Dewa Province|en|Dewa Province|qid=Q876032|lt=Dewa Province}}, {{ill|Hitachi Province|en|Hitachi Province|qid=Q1055353|lt=Hitachi Province}}, and others, as well as women identified as "daughters of Kimikobe" (吉弥侯某の女), were frequently rewarded for their contributions.
+
+The ''Mutsu Province Register of Population Gains and Losses,'' housed in the {{ill|Shōsōin|en|Shōsōin|qid=Q2379007|lt=Shōsōin}}, includes names such as "Kimikobe Asamaro" (君子部阿佐麻呂) and "Kimikobe Kuwaji" (君子部久波自).<ref name="tohoku">Toyoda, ''History of Tōhoku'' (1967).</ref> Originally referred to as "Kimikobe," the name was changed to "Kimikobe" (吉美侯部) in the 9th year of the {{ill|Tenpyō-shōhō|en|Tenpyō-shōhō|qid=Q1373169|lt=Tenpyō Shōhō}} era (757 CE).<ref name="jiten">''Nihon Kodai Shizoku Jinmei Jiten'' (1990).</ref>
+
+Kimikobe's connections to the {{ill|Kamitsukeno clan|ja|毛野氏|lt=Keno clan}} (Kamitsukeno and Shimotsukeno branches) as their patrons are supported by genealogical records and ritual practices.<ref name="hogashun">Hōga Toshio, "Genealogy of the Kimikobe-surnamed Madara Clan," in ''Koju Kinoshōkan,'' 2016.</ref> The Kimikobe served various roles for the imperial court, including compulsory labor and other duties. Their widespread distribution across Japan can be attributed to the [[Ritsuryō system]], which resettled prisoners of war to assimilate them into society.<ref name="jiten" />
+
 == Origins ==
-The {{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku|1=Shinsen Shōjiroku}} links the Kimikobe to the {{ill|Kamitsukeno clan|lt=Kamitsukeno clan|lt=Keno clan|ja|毛野氏|12=simple|13=User:Immanuelle/Keno clan|ja_comment=jawiki redirects to 上毛野氏}}, though some scholars express doubt about this connection.<ref name="tohoku" /> However, others argue for their kinship based on genealogical and ritual evidence. According to tradition, their ancestor was Kagawaki (鹿我別命), who became the {{ill|Ukita no Kuni no Miyatsuko|ja|浮田国造|12=simple|13=User:Immanuelle/Ukita no Kuni no Miyatsuko|qq=}} in the Mutsu region during the reign of Emperor {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Seimu|1=Emperor Seimu}}. Kagawaki is generally identified as the son of Prince {{ill|Mimorowake|ja|御諸別王|1=Mimorowake|12=simple|13=User:Immanuelle/Mimorowake|13=User:Immanuelle/Mimorowake|qq=}}, the progenitor of the Keno clan.
+
+The {{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}} links the Kimikobe to the {{ill|Kamitsukeno clan|ja|毛野氏|lt=Keno clan}}, though some scholars express doubt about this connection.<ref name="tohoku" /> However, others argue for their kinship based on genealogical and ritual evidence. According to tradition, their ancestor was Kagawaki (鹿我別命), who became the {{ill|Ukita no Kuni no Miyatsuko|ja|浮田国造}} in the Mutsu region during the reign of Emperor {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Seimu}}. Kagawaki is generally identified as the son of Prince {{ill|Mimorowake|ja|御諸別王}}, the progenitor of the Keno clan.
+
 == Historical Footprints ==
+
 References to Kimikobe, Kimiyakobe, and related groups in the ''Rikkokushi'' are summarized as follows:
+
 === Shoku Nihongi ===
+
 * '''715 CE (Reiki 1)''': The court honored Kimiko Shaku (君子尺麻呂) for filial piety, granting him lifelong tax exemption.
 * '''757 CE (Tenpyō Hōji 1)''': The imperial court decreed that "Kimikobe" would henceforth be known as "Kimikobe" (吉美侯部).
-Further mentions of Kimikobe individuals detail their contributions as military leaders, administrators, and servants, often resulting in title grants or rewards. Some members, such as Kimikobe Yokotachi (吉弥侯横刀), achieved significant positions such as Governor of {{ill|Kōzuke Province|en|Kōzuke Province|qid=Q1054838|lt=Kōzuke Province|1=Kōzuke Province}} and were later granted the name "Shimotsukeno Asomi" (下毛野朝臣).
+
+Further mentions of Kimikobe individuals detail their contributions as military leaders, administrators, and servants, often resulting in title grants or rewards. Some members, such as Kimikobe Yokotachi (吉弥侯横刀), achieved significant positions such as Governor of {{ill|Kōzuke Province|en|Kōzuke Province|qid=Q1054838|lt=Kōzuke Province}} and were later granted the name "Shimotsukeno Asomi" (下毛野朝臣).
+
 == Related Literature ==
+
 * ''Nihon Kodai Shizoku Jinmei Jiten,'' supervised by [[Sakamoto Tarō]] and [[Hirano Kunio]], [[Yoshikawa Kōbunkan]], 1990. ISBN 4-642-02243-0.
 * Toyoda Takeshi, ''History of Tōhoku,'' Yoshikawa Kōbunkan, 1967. ISBN 4-642-07041-9.
 * Nonaka Tetsuzō, "[https://iuk-repo.repo.nii.ac.jp/records/656 Genealogy of the Northern Fujiwara Clan]," ''Kokusai Bunka Gakubu Ronsō,'' vol. 15, no. 1, Kagoshima International University, 2014.
+
 == See Also ==
-* {{ill|Yoshihiko Hidetake|ja|吉彦秀武|12=simple|13=User:Immanuelle/Yoshihiko Hidetake|1=Kimiko no Hidetake|comment=changed title based on wikidata|qid=Q11413130}}
-* {{ill|Fushū|ja|俘囚|12=simple|13=User:Immanuelle/Fushū|1=fushū|comment=changed title based on wikidata|qid=Q9391282}}
-* {{ill|Kamitsukeno clan|lt=Kamitsukeno clan|lt=Keno clan|ja|毛野氏|12=simple|13=User:Immanuelle/Keno clan|ja_comment=jawiki redirects to 上毛野氏}}
-* {{ill|Ezo subjugation|ja|蝦夷征討|12=simple|13=User:Immanuelle/Ezo subjugation|ja_comment=jawiki redirects to 日本の古代東北経営|1=administration of ancient Tōhoku by Japanese government|comment=changed title based on wikidata|qid=Q11625781}}
+* {{ill|Kimiko no Hidetake|ja|吉彦秀武|12=simple|13=User:Immanuelle/Yoshihiko Hidetake|comment=changed title based on wikidata|qid=Q11413130}}
+* {{ill|fushū|ja|俘囚|12=simple|13=User:Immanuelle/Fushū|comment=changed title based on wikidata|qid=Q9391282}}
+* {{ill|Kamitsukeno clan|ja|毛野氏|lt=Keno clan}}
+* {{ill|administration of ancient Tōhoku by Japanese government|ja|蝦夷征討|12=simple|13=User:Immanuelle/Ezo subjugation|ja_comment=jawiki redirects to 日本の古代東北経営|comment=changed title based on wikidata|qid=Q11625781}}
+
 ==References==
+
 {{translated page|ja|吉美侯部|version=99638317|comment=Imported full ja history}}
 
+==Merged second translation==
+'''Kimikobe''' (吉美侯部) or '''Kimiyakobe''' (吉弥侯部) was an ancient {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}ese clan (氏) and a group of hereditary people (部民) under the [[Ritsuryō system]].
+
+== Overview ==
+According to [[Ōta Ryō]], the term "Kimikobe" derives from the "Kimi" title (君) used to designate clans such as the [[Kamitsukeno clan|Kamitsukeno Kimi]] and [[Shimotsukeno clan|Shimotsukeno Kimi]] in the eastern provinces.<ref>Ōta Ryō, "Kimikobe" in *Seishi Kakei Daijiten*, Vol. 2, 1934, p. 1945.</ref>
+
+Mentions of individuals from the "Kimiyakobe" clan appear in the [[:en:Six National Histories|Six National Histories]] (六国史) and related compilations like the *[[Ruiyū Kokushi]]*. In the *[[Shoku Nihongi]]*, Kimikobe members are listed as public servants or officials. However, the *Ruiyū Kokushi* also records many as prisoners (俘囚) or local rebels. These accounts span territories such as {{ill|Mutsu Province|ca|Província de Mutsu|cs|Provincie Mucu|de|Provinz Mutsu|es|Provincia de Mutsu|fa|ولایت موتسو|fi|Mutsun provinssi|fr|Province de Mutsu|gl|Provincia de Mutsu|id|Provinsi Mutsu|it|Mutsu (provincia)|ja|陸奥国|ko|무쓰국|lt|Mucu žemė|nl|Mutsu (provincie)|pt|Província de Mutsu|ru|Муцу (провинция)|simple|Mutsu Province|sk|Mucu (provincia)|sr|Провинција Муцу|tr|Mutsu (vilayet)|uk|Муцу (провінція)|zh|陸奧國|zh_classical|陸奧國|zh_min_nan|Mutu-kok|zh_yue|陸奧國|qid=Q907389|lt=Mutsu Province}}, {{ill|Dewa Province|en|Dewa Province|qid=Q876032|lt=Dewa Province}}, {{ill|Hitachi Province|en|Hitachi Province|qid=Q1055353|lt=Hitachi Province}}, and {{ill|Kai Province|en|Kai Province|qid=Q858076|lt=Kai Province}}, among others. Despite their recorded status as prisoners or rebels, some individuals achieved notable Ranks due to their service.
+
+Examples include *Mutsu Kokushi* records of individuals like Kimiyakobe Asamaro and Kimiyakobe Kuwaji listed in the "Mutsu Province Census Records" stored at [[Shōsōin]]. These individuals were likely part of the original "Kimiko" (君子) group that was renamed "Kimikobe" by imperial decree in [[:en:757 AD|757 AD]].<ref name="jiten">*Japanese Ancient Clan and People Dictionary* (1990).</ref>
+
+== Expansion and Influence ==
+The Kimikobe were traditionally associated with the [[Kamitsukeno clan|Keno clans]] (e.g., Kamitsukeno and Shimotsukeno) and their '''Fubito''' roles (servitors of the imperial family). An example includes Kimikobe Ashiyamori, who was later granted the title Kamitsukeno Kawayama Kimi.<ref name="tohoku">Toyoda, *History of Tōhoku*, 1967.</ref>
+
+Their wide distribution across Japan suggests that the [[Ritsuryō system]] relocated prisoners to integrate them into local communities. By the late {{ill|Nara period|en|Nara period|qid=Q189178|lt=Nara period}}, some members rose to prominence through merit and service, with titles and surnames granted by the court.
+
+The clan also played roles in military campaigns such as the [[:en:Zenkunen War|Zenkunen War]], where figures like Kimiyako Hideki (吉彦秀武) and Kimiyako Takechika (斑目四郎吉美侯武忠) supported the defeat of the [[Abe clan (Ōshū)|Abe clan]]. Their service significantly contributed to the consolidation of imperial power in eastern Japan.
+
+== Genealogy and Origin ==
+According to the *{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}}*, the Kimikobe shared a lineage with the [[Kamitsukeno clan|Kamitsukeno]] clan. Although some scholars doubt the connection, genealogical and ritual evidence supports the idea of a common ancestry. Their progenitor was believed to be Kagawabe no Mikoto (鹿我別命), linked to the [[:en:Seimu Emperor|Seimu Emperor]] and regarded as the founder of the [[Ukita Kuni-no-Miyatsuko]].<ref name="宝賀">Hōga Toshio, "Genealogy of Kimiyakobe Clan," 2016.</ref>
+
+Other clans such as the {{ill|Ōtomo clan|ca|Clan Ōtomo|de|Ōtomo (Klan, Mittelalter)|es|Clan Ōtomo|fa|خاندان اوتومو|fr|Clan Ōtomo|it|Clan Ōtomo|ja|大友氏|ko|오토모씨 (무가)|pt|Clã Ōtomo|ru|Отомо (род)|sr|Клан Отомо|vi|Gia tộc Ōtomo|zh|大友氏|qid=Q1096662|lt=Ōtomo clan}}, [[Abe clan (Ōshū)|Abe clan]], and [[Nakatomi clan]] also extended influence into northeastern Japan, with some individuals being granted the same clan name or titles.<ref name="tohoku" />
+
+== Key Records in Historical Chronicles ==
+
+=== Shoku Nihongi ===
+- *715 AD*: Individuals from Kimikobe are noted for exceptional filial piety or meritorious service.
+- *757 AD*: The name "Kimikobe" is officially adopted by imperial decree.
+- *769 AD*: Recognition of individuals for military or civil contributions with corresponding elevation in Rank.
+
+=== Nihon Kōki ===
+- *795 AD*: Records of Kimikobe individuals integrated into new communities or elevated due to public service.
+
+== Later Records ==
+Kimikobe individuals continued to appear in records through the {{ill|Heian period|en|Heian period|qid=Q193292|lt=Heian period}}, demonstrating ongoing integration into imperial administrative and military roles.
+
+== See Also ==
+- [[Kamitsukeno clan|Keno clan]]
+- [[Fubito]]
+- {{ill|Ezo|en|Ezo|qid=Q1040184|lt=Ezo}}
+- [[Ritsuryō system]]
+
+== References ==
+<references />
+
+== Bibliography ==
+- Sakamoto Tarō & Hirano Kunio, eds. *Japanese Ancient Clan Dictionary*. Yoshikawa Kōbunkan, 1990.
+- Toyoda Takeshi, ed. *History of Tōhoku*. Yoshikawa Kōbunkan, 1967.
+- Hōga Toshio, "Genealogy of Kimiyakobe Clan," *Kojiki Room*, 2016.
+- Nonaka Tetsutera, "[https://example.com Record of the Keno Clans]," Kagoshima International University, 2014.
+
+{{translated page|ja|吉美侯部|version=99638317|comment=Imported full ja history}}
+
+{{wikidata link|Q11414213|ja|吉美侯部|ja|%E5%90%89%E7%BE%8E%E4%BE%AF%E9%83%A8|check_date=2026-05-17}}
 [[Category:Bumin]]
 [[Category:Ezo]]
 [[Category:Heian period]]
 [[Category:Kiyohara Clan of Dewa Province]]
 [[Category:Nara period]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no English label]]
 [[Category:Wikidata no short description]]
 [[Category:Yoshimi Kōbu]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]

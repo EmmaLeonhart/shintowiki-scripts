@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takihara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |Name = Takihara Shrine
 |religious_affiliation = [[Shinto]]
@@ -18,33 +20,58 @@
 |location = {{ill|Taiki, Mie|qid=Q1203189}}
 |architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
+
 '''Takihara Shrine''' (多岐原神社, *Takihara Jinja*) is an auxiliary shrine under the jurisdiction of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (the Inner Shrine) of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. It was established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}, who enshrined the local {{ill|Deity|en|Deity|qid=Q178885|lt=kami}} in gratitude for its assistance<ref name="ic">Ise Bunka-sha, ed. (2008): p. 84</ref><ref name="gk">Gakken Publishing (2013): p. 73</ref>.
+
 The shrine is located along the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miyagawa River (Mie)}} with the gentle murmur of the river resonating through the trees of the precincts<ref name="ic"/>.
+
 == Overview ==
-{{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine|qq=}} is located in {{ill|Misedagawa|ja|三瀬川|12=simple|13=User:Immanuelle/Misedagawa|ja_comment=jawiki link invalid}}, {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Ōdai, Mie}}, [[:en:Watarai District, Mie|Watarai District, Mie]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}<ref name="sk7">Shikinaisha Kenkyūkai (1990): p. 227</ref>. It lies approximately 6 km downstream along the {{ill|Miyagawa|en|Miyagawa|qid=Q1665818|lt=Miyagawa River (Mie)}} from {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya|qq=}}<ref name="ic"/>. Among the 27 auxiliary shrines of the {{ill|Naikū|ja|内宮|12=simple|13=User:Immanuelle/Naikū (Ise Grand Shrine)|comment=changed title based on wikidata|qid=Q23996212}}, it Ranks 27th<ref>Ujiyamada City Office (1929): pp. 9-11</ref>. Unlike most auxiliary shrines of Ise Jingū, which typically do not have offering boxes<ref>Ise Bunkasha (2008): p. 26</ref>, Takihara Shrine does have one.
+
+{{ill|Takihara Shrine|ja|多岐原神社|12=simple|13=User:Immanuelle/Takihara Shrine}} is located in {{ill|Misedagawa|ja|三瀬川|12=simple|13=User:Immanuelle/Misedagawa|ja_comment=jawiki link invalid}}, {{ill|Taiki, Mie|en|Taiki, Mie|qid=Q1203189|lt=Ōdai, Mie}}, [[:en:Watarai District, Mie|Watarai District, Mie]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}<ref name="sk7">Shikinaisha Kenkyūkai (1990): p. 227</ref>. It lies approximately 6 km downstream along the {{ill|Miyagawa|en|Miyagawa|qid=Q1665818|lt=Miyagawa River (Mie)}} from {{ill|Takihara-no-Miya|ja|瀧原宮|12=simple|13=User:Immanuelle/Takihara-no-Miya}}<ref name="ic"/>. Among the 27 auxiliary shrines of the {{ill|Naikū|ja|内宮|12=simple|13=User:Immanuelle/Naikū (Ise Grand Shrine)|comment=changed title based on wikidata|qid=Q23996212}}, it Ranks 27th<ref>Ujiyamada City Office (1929): pp. 9-11</ref>. Unlike most auxiliary shrines of Ise Jingū, which typically do not have offering boxes<ref>Ise Bunkasha (2008): p. 26</ref>, Takihara Shrine does have one.
+
 The shrine building is constructed in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}} architectural style with a wooden plank roof, facing south<ref name="sk8">Shikinaisha Kenkyūkai (1990): p. 228</ref>. The shrine precinct is enclosed by a single layer of {{ill|Sacred fences|en|Tamagaki|qid=Q3078312|lt=Tamagaki}} fencing, and features a {{ill|Torii|ja|神明鳥居|12=simple|13=User:Immanuelle/Shinmei torii|ja_comment=jawiki redirects to 鳥居|comment=changed title based on wikidata|qid=Q234731}}<ref name="sk8"/>. The shrine grounds cover an area of approximately 5,890.9 square meters<ref name="uy">Ujiyamada City Office (1929): p. 11</ref>.
+
 == Enshrined deity ==
+
 The enshrined deity is {{ill|Manago no Kami|ja|真奈胡神|12=simple|13=User:Immanuelle/Manago no Kami|ja_comment=jawiki link invalid}} (pronounced "manago no kami"<ref name="ic"/> or "manako no kami"<ref name="gk"/>). According to legend, {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} was struggling to cross a rapid current when Manago no Kami assisted her<ref name="ic"/><ref name="gk"/>. Although scholar Nakagawa Tsunemasa interpreted the name "Manako" as "眞之子" ("true child"), implying that this deity might be the offspring of the deity enshrined at Takihara-no-Miya, the true origin remains unclear<ref name="sk7"/>.
+
 == Shrine Name ==
-In historical records, the shrine is referred to with various kanji, including "瀧原" in the {{ill|Enryaku Gishikichō|ja|皇太神宮儀式帳|12=simple|13=User:Immanuelle/Kōtai Jingū Gishikichō|ja_comment=jawiki redirects to 延暦儀式帳|comment=changed title based on wikidata|qid=Q109596938}} and "多伎原" or "多紀原" in different manuscripts of the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}. The current standard form "多岐原" was adopted in later periods<ref name="sk7"/>. In the {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamato-hime-no-mikoto-seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki|qq=}}, it is listed as "御瀬社"<ref name="sk7"/>.
+
+In historical records, the shrine is referred to with various kanji, including "瀧原" in the {{ill|Enryaku Gishikichō|ja|皇太神宮儀式帳|12=simple|13=User:Immanuelle/Kōtai Jingū Gishikichō|ja_comment=jawiki redirects to 延暦儀式帳|comment=changed title based on wikidata|qid=Q109596938}} and "多伎原" or "多紀原" in different manuscripts of the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}. The current standard form "多岐原" was adopted in later periods<ref name="sk7"/>. In the {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamato-hime-no-mikoto-seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki}}, it is listed as "御瀬社"<ref name="sk7"/>.
+
 Locally, it is affectionately called "{{ill|Manago-san|ja|まなごさん|12=simple|13=User:Immanuelle/Manago-san|ja_comment=jawiki link invalid}}"<ref name="ic"/><ref name="gk"/>, and serves as a substitute for ancestral shrine rituals following the relocation of the original {{ill|Ujigami|en|Ujigami|qid=Q767655|lt=Ujigami}}<ref name="st">Sakurai (1991): pp. 293-294</ref>.
+
 == History ==
+
 According to legends recorded in texts such as the Yamato-hime-no-mikoto-seiki, Yamato-hime-no-mikoto, while carrying the sacred spirit of {{ill|Amaterasu|en|Amaterasu|qid=Q455602|lt=Amaterasu Ōmikami}}, attempted to cross the fast-flowing Miyagawa River. Manago no Kami guided her across, and the shrine was established in commemoration of this event<ref>Shikinaisha Kenkyūkai (1990): pp. 227-228</ref>. Historically, the shrine was founded before the compilation of the Engishiki Jinmyōchō in 927 AD<ref name="ic2">Ise Bunkasha (2008): p. 22</ref>. It is also mentioned in the Kōtai Jingū Gishikichō, indicating its existence before 804 AD<ref name="sk7"/><ref name="ic2"/>.
+
 In 1663, the shrine was restored by Ōmiya-shi {{ill|Kawabe Masanaga|ja|河邊精長|12=simple|13=User:Immanuelle/Kawabe Masanaga|ja_comment=jawiki link invalid}} (Ōnakatomi Masanaga)<ref name="sk7"/>. Though it is unclear whether the current site is the original location, geographical features and legends suggest continuity<ref name="sk7"/>. In 1724, the {{ill|Kishū Domain|en|Kishū Domain|qid=Q1069187|lt=Kishu Domain}} erected a "prohibition of killing" stone marker, and in 1732, two {{ill|Nightlight|en|Nightlight|qid=Q762277|lt=Chōchin}} lanterns were donated by the village of Misekawa<ref name="sk8"/>.
+
 The shrine building was reconstructed in October 1904<ref name="uy"/>.
+
 == Mitsesaka Pass and Mitsese Crossing Site ==
+
 The route connecting Takihara Shrine and Takihara-no-Miya is part of the {{ill|Iseji Route|ja|伊勢路|12=simple|13=User:Immanuelle/Iseji Route|comment=changed title based on wikidata|qid=Q11379139}} of the {{ill|Kumano Kodō|en|Kumano Kodō|qid=Q17050475|lt=Kumano Kodo}}, a pilgrimage path leading to the {{ill|Kumano shrine|lt=Kumano shrine|lt=Kumano Sanzan|ja|熊野三山|12=simple|13=User:Immanuelle/Kumano Sanzan|comment=enwiki is a redirect}}<ref>Ise Bunkasha (2008): pp. 84, 86</ref><ref name="gk"/>. The path includes the Mitsesaka Pass, characterized by steep inclines<ref name="gk"/><ref name="ic"/>. Though not part of the UNESCO World Heritage "Sacred Sites and Pilgrimage Routes in the Kii Mountain Range," remnants such as old teahouse sites and the Hōreki Jizō statue remain<ref>Ise Bunkasha (2008): p. 86</ref>.
+
 About 150 meters from Takihara Shrine lies the site of the "Mitsese Crossing," once part of the Iseji Route<ref name="gk"/>. Post-war river improvements have altered the landscape<ref name="sk7"/>.
+
 == Rituals ==
-The shrine hosts the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai}} on February 19, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} on June 22 and December 22, and the {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} on October 22<ref name="sk8"/>.
-After the local ujigami was merged with another shrine 4.36 km away in 1908, the community began holding their {{ill|Kōshin-machi|ja|庚申待|12=simple|13=User:Immanuelle/Kōshin-machi|qq=}} ritual at Takihara Shrine on June 19, and a rice-cake throwing event on February 9 as a substitute for the former "Mikuwajinji" ritual<ref name="st"/>.
+
+The shrine hosts the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai}} on February 19, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri}} on June 22 and December 22, and the {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} on October 22<ref name="sk8"/>.
+
+After the local ujigami was merged with another shrine 4.36 km away in 1908, the community began holding their {{ill|Kōshin-machi|ja|庚申待|12=simple|13=User:Immanuelle/Kōshin-machi}} ritual at Takihara Shrine on June 19, and a rice-cake throwing event on February 9 as a substitute for the former "Mikuwajinji" ritual<ref name="st"/>.
+
 == Access ==
+
 ; Public Transport
 Takihara Shrine is approximately 3.6 km from {{ill|Misedani Station|en|Misedani Station|qid=Q5357769|lt=Misedani Station}} on the JR {{ill|Kisei Main Line|en|Kisei Main Line|qid=Q582803|lt=Kisei Main Line}}, about a 1 hour and 8-minute walk<ref name="ic2"/>. Signboards are posted nearby<ref name="ic"/>.
+
 ; By Car
 About 4 minutes (3.4 km) via {{ill|Mie Prefectural Road Route 747|ja|三重県道747号打見大台線|12=simple|13=User:Immanuelle/Mie Prefectural Route 747|comment=changed title based on wikidata|qid=Q11358134}} from {{ill|Omiya-Odai interchange|ja|大宮大台インターチェンジ|12=simple|13=User:Immanuelle/Ōmiya-Ōdai IC|comment=changed title based on wikidata|qid=Q10934923}} on the {{ill|Kisei Expressway|en|Kisei Expressway|qid=Q6416449|lt=Kisei Expressway}}.
 == References ==
+
 {{Reflist|2}}
+
 == Bibliography ==
 * [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
@@ -52,8 +79,9 @@ About 4 minutes (3.4 km) via {{ill|Mie Prefectural Road Route 747|ja|三重県�
 * [[櫻井勝之進]]『伊勢神宮の祖型と展開』[[国書刊行会]]、平成3rd year 11月30日、318p. ISBN 4-336-03296-3
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 == See Also ==
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 {{ external media
 | align  = 
@@ -63,7 +91,15 @@ About 4 minutes (3.4 km) via {{ill|Mie Prefectural Road Route 747|ja|三重県�
 }}
 * [http://www.jingukaikan.jp/125mairi/m13/1301.html 多岐原神社（たきはらじんじゃ）] - 財団法人伊勢神宮崇敬会
 {{神道 横}}
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|多岐原神社|version=94421507|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Takihara Shrine (Q17229062)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -72,11 +108,12 @@ About 4 minutes (3.4 km) via {{ill|Mie Prefectural Road Route 747|ja|三重県�
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Takihara Shrine|lt=Takihara Shrine|ja|多岐原神社|qid=Q17229062}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Kōtai Jingū|qid=Q11581011}} || — || {{coord|34.395008|136.430461|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181123 DB]
 |}
 
-{{translated page|ja|多岐原神社|version=94421507|comment=Imported full ja history}}
-
+{{wikidata link|Q17229062|da|d:Q17229062|ja|多岐原神社|check_date=2026-05-11}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Oki Town]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Taki]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -85,6 +122,7 @@ About 4 minutes (3.4 km) via {{ill|Mie Prefectural Road Route 747|ja|三重県�
 [[Category:Taiki,_Mie]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

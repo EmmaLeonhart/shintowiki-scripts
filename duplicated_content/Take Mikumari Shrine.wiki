@@ -1,37 +1,60 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Take_Mikumari_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
+
+
 {{Infobox religious building|image=File:Takemikumari-jinja1.jpg|prefecture={{ill|Chihayaakasaka|qid=Q1072574}}|coordinates={{Coord|34.460333|N|135.632028}}|deity=Central hall enshrines {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}}
-Left hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Ame no Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} and {{ill|Mizuhanome|ja|罔象女神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}
-Right hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Kuni no Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} and {{ill|Seoritsu-hime|ja|瀬織津姫|12=simple|13=User:Immanuelle/Sae-no-Kami|13=User:Immanuelle/Seoritsu-hime|qq=}}.}}{
-'''Takemikumari Shrine''' (建水分神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Chihayaakasaka|en|Chihayaakasaka|qid=Q1072574|lt=Chihayaakasaka Village}}, Minamikawachi District, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. It is classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine) and formerly held the Rank of a {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Prefectural shrine}} under the old shrine Ranking system. Commonly referred to as "Suibun Shrine" (水分神社), it is also known as "Suibun Daimyōjin" and "Kami Suibunsha" (U11er Suibun Shrine). Historically, it has been venerated as the guardian shrine of {{ill|Mount Kongō|en|Mount Kongō|qid=Q1348310|lt=Mount Kongō}} and as the clan deity of the {{ill|Kusunoki clan|ja|楠木氏|12=simple|13=User:Immanuelle/Kusunoki clan|comment=changed title based on wikidata|qid=Q11541208}}. Along with {{ill|Nishikori Shrine|ja|錦織神社|12=simple|13=User:Immanuelle/Nishikori Shrine|qq=}} in Tondabayashi and {{ill|Migukurumitama Shrine|ja|美具久留御魂神社|12=simple|13=User:Immanuelle/Migukurumitama Shrine|qq=}} (Shimosuibun Shrine), it is one of the "Three Suibun Shrines of {{ill|Kawachi Province|en|Kawachi Province|qid=Q1047150|lt=Kawachi Province}}."
+Left hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Ame no Mikumari|12=simple|13=User:Immanuelle/Mikumari}} and {{ill|Mizuhanome|ja|罔象女神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}
+Right hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Kuni no Mikumari|12=simple|13=User:Immanuelle/Mikumari}} and {{ill|Seoritsu-hime|ja|瀬織津姫|12=simple|13=User:Immanuelle/Sae-no-Kami|13=User:Immanuelle/Seoritsu-hime}}.}}{
+'''Takemikumari Shrine''' (建水分神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Chihayaakasaka|en|Chihayaakasaka|qid=Q1072574|lt=Chihayaakasaka Village}}, Minamikawachi District, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. It is classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine) and formerly held the Rank of a {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Prefectural shrine}} under the old shrine Ranking system. Commonly referred to as "Suibun Shrine" (水分神社), it is also known as "Suibun Daimyōjin" and "Kami Suibunsha" (U11er Suibun Shrine). Historically, it has been venerated as the guardian shrine of {{ill|Mount Kongō|en|Mount Kongō|qid=Q1348310|lt=Mount Kongō}} and as the clan deity of the {{ill|Kusunoki clan|ja|楠木氏|12=simple|13=User:Immanuelle/Kusunoki clan|comment=changed title based on wikidata|qid=Q11541208}}. Along with {{ill|Nishikori Shrine|ja|錦織神社|12=simple|13=User:Immanuelle/Nishikori Shrine}} in Tondabayashi and {{ill|Migukurumitama Shrine|ja|美具久留御魂神社|12=simple|13=User:Immanuelle/Migukurumitama Shrine}} (Shimosuibun Shrine), it is one of the "Three Suibun Shrines of {{ill|Kawachi Province|en|Kawachi Province|qid=Q1047150|lt=Kawachi Province}}."
+
 == Enshrined Deities ==
-The shrine's central hall enshrines {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}}, while the left hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Ame no Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} and {{ill|Mizuhanome|ja|罔象女神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}, and the right hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Kuni no Mikumari|12=simple|13=User:Immanuelle/Mikumari|qq=}} and {{ill|Seoritsu-hime|ja|瀬織津姫|12=simple|13=User:Immanuelle/Sae-no-Kami|13=User:Immanuelle/Seoritsu-hime|qq=}}. All deities except Ame-no-Minakanushi are water gods.
+The shrine's central hall enshrines {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}}, while the left hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Ame no Mikumari|12=simple|13=User:Immanuelle/Mikumari}} and {{ill|Mizuhanome|ja|罔象女神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}, and the right hall enshrines {{ill|Mikumari|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|fr|lt=Kuni no Mikumari|12=simple|13=User:Immanuelle/Mikumari}} and {{ill|Seoritsu-hime|ja|瀬織津姫|12=simple|13=User:Immanuelle/Sae-no-Kami|13=User:Immanuelle/Seoritsu-hime}}. All deities except Ame-no-Minakanushi are water gods.
+
 == History ==
-According to shrine tradition, the shrine was established in the 5th year of Emperor Sujin's reign (92 BCE) during a famine when the emperor encouraged the construction of reservoirs and canals. The shrine was built at the base of Mount Kongō to enshrine the water deity. The {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}, compiled in 927, lists the shrine as "Kawachi Province, Ishikawa District, Takemikumari Shrine." The designation "Kami Suibunsha" (U11er Suibun Shrine) contrasts with "Shimosuibun Shrine" (Migukurumitama Shrine) in Miyamachi, Tondabayashi.
+According to shrine tradition, the shrine was established in the 5th year of Emperor Sujin's reign (92 BCE) during a famine when the emperor encouraged the construction of reservoirs and canals. The shrine was built at the base of Mount Kongō to enshrine the water deity. The {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}, compiled in 927, lists the shrine as "Kawachi Province, Ishikawa District, Takemikumari Shrine." The designation "Kami Suibunsha" (U11er Suibun Shrine) contrasts with "Shimosuibun Shrine" (Migukurumitama Shrine) in Miyamachi, Tondabayashi.
+
 Historical records, including the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}, note the shrine's elevation to court Ranks: Senior Fifth Rank, Lower in 863; Junior Fourth Rank, Lower in 874; and Junior Fourth Rank, U11er in 879. 
-Originally located along the Mizukoshi River, the shrine was devastated during conflicts led by {{ill|Kusunoki Masashige|en|Kusunoki Masashige|qid=Q382234|lt=Kusunoki Masashige}} against the {{ill|Kamakura shogunate|en|Kamakura shogunate|qid=Q736839|lt=Kamakura Shogunate}}. In 1334, Masashige relocated the shrine to its current site and rebuilt its structures, including the main hall, worship hall, and bell tower, by imperial decree from {{ill|Emperor Go-Daigo|en|Emperor Go-Daigo|qid=Q313942|lt=Emperor Go-Daigo}}. The shrine received the highest Rank of Shoichii (Senior First Rank) on April 27, 1337. That same year, Masashige was deified in the shrine’s precincts as a subordinate deity in the {{ill|Nangi Shrine|ja|南木神社|12=simple|13=User:Immanuelle/Nangi Shrine|qq=}}.
+
+Originally located along the Mizukoshi River, the shrine was devastated during conflicts led by {{ill|Kusunoki Masashige|en|Kusunoki Masashige|qid=Q382234|lt=Kusunoki Masashige}} against the {{ill|Kamakura shogunate|en|Kamakura shogunate|qid=Q736839|lt=Kamakura Shogunate}}. In 1334, Masashige relocated the shrine to its current site and rebuilt its structures, including the main hall, worship hall, and bell tower, by imperial decree from {{ill|Emperor Go-Daigo|en|Emperor Go-Daigo|qid=Q313942|lt=Emperor Go-Daigo}}. The shrine received the highest Rank of Shoichii (Senior First Rank) on April 27, 1337. That same year, Masashige was deified in the shrine’s precincts as a subordinate deity in the {{ill|Nangi Shrine|ja|南木神社|12=simple|13=User:Immanuelle/Nangi Shrine}}.
+
 In later centuries, the shrine faced further destruction during {{ill|Oda Nobunaga|en|Oda Nobunaga|qid=Q171411|lt=Oda Nobunaga}}'s invasion of Kawachi Province but was subsequently restored by {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi}}. In the modern era, the shrine was designated a {{ill|Fu-sha|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|府社|qid=Q134917326}}{{efn|lt=Fu-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/prefectural shrine|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in 1913.
+
 == Grounds ==
 The shrine features several unique and culturally significant structures:
 * '''Main Hall''' (Important Cultural Property) – The three-part structure, known as "Suibun-zukuri," is unique in Japan. The central hall is built in the Kasuga-zukuri style, while the side halls are in the Nagare-zukuri style, linked by a passageway.
 * '''Great Torii Gate''' – Constructed in 1690 (Genroku 3), this stone torii is one of the largest pre-modern torii gates in Japan. The inscription "Shoichii Suibun Daimyōjin" is attributed to Emperor Go-Daigo.
 * '''Bell Tower''' – A remnant of the shrine's syncretic Shinto-Buddhist past.
 * '''Nangi Shrine''' (Subordinate Shrine) – Enshrines Kusunoki Masashige. Structures include the main hall, worship hall, and surrounding walls, all registered as tangible cultural properties.
+
 == Festivals ==
 * '''Spring Festival (April 25)''' – Also known colloquially as "Kusunoki-san," as it coincides with Kusunoki Masashige's birthday.
 * '''Autumn Festival (Third Saturday of October)''' – Features a grand procession of portable shrines and danjiri floats, showcasing the cultural heritage of Kawachi Province.
+
 == Cultural Properties ==
 === Important Cultural Properties ===
 * Main Hall – Comprising the central, left, and right halls.
+
 === National Registered Tangible Cultural Properties ===
 * Treasure House
 * Structures of Nangi Shrine
+
 == Other ==
 A fragment of the shrine's spirit was enshrined aboard the {{ill|Japanese battleship Kongō|en|Japanese battleship Kongō|qid=Q255306|lt=Japanese battleship Kongō}} as part of its shipboard shrine in 1930.
+
 == External Links ==
 * [http://www.takemikumari.com/ Official Website of Takemikumari Shrine]
+
 {{Japanese-history-stub}}
 {{Shinto-stub}}
+
 {{Munakata Faith}}
+
+{{translated page|ja|建水分神社|version=101341097|comment=Imported full ja history}}
+
+{{Commons category|Takemimakuri-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Take Mikumari Shrine (Q11486674)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -39,10 +62,8 @@ A fragment of the shrine's spirit was enshrined aboard the {{ill|Japanese battle
 |-
 | {{ill|Ishikawa district|ja|石川郡 (大阪府)|zh|石川郡 (大阪府)|qid=Q11586399}} || {{ill|Take Mikumari Shrine|lt=Takemimakuri Shrine|ja|建水分神社|commons|Category:Takemimakuri-jinja|qid=Q11486674}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.460280|135.631691|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180878 DB]
 |}
-
-{{translated page|ja|建水分神社|version=101341097|comment=Imported full ja history}}
-{{Commons category|Takemimakuri-jinja}}
-
+{{wikidata link|Q11486674|da|d:Q11486674|ja|建水分神社|co|commons:Category:Takemimakuri-jinja|check_date=2026-05-10}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Architecture of Muromachi period]]
 [[Category:Buildings and structures in Chihayaakasaka Village]]
 [[Category:Cultural heritage monuments in Japan]]
@@ -54,6 +75,7 @@ A fragment of the shrine's spirit was enshrined aboard the {{ill|Japanese battle
 [[Category:Kawachi Province]]
 [[Category:Ken-sha]]
 [[Category:Kusunoki clan]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Shugendō]]
@@ -62,3 +84,4 @@ A fragment of the shrine's spirit was enshrined aboard the {{ill|Japanese battle
 [[Category:Junior Fourth Rank]]
 [[Category:Senior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]

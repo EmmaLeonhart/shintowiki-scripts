@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tanoe_and_Tanoe-Mimae_Shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+
 {{Infobox religious building
 |名称= 田乃家神社・田乃家御前神社
 | religious_affiliation = [[Shinto]]
@@ -20,34 +21,59 @@
 |architecture_style= {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
 '''Tanoe Shrine''' (田乃家神社) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=sessha (auxiliary shrine)}} of {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Naikū) within {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. This article also covers the '''Tanoe-Mimae Shrine''' (田乃家御前神社), which shares the same precinct as Tanoe Shrine.
-Both shrines enshrine deities that serve as {{ill|guardian deities|ja|守護神|12=simple|13=User:Immanuelle/guardian deities|qq=}} of {{ill|Farmer|en|Farmer|qid=Q131512|lt=farmhouses}}<ref name="gk">Gakken Publishing (2013): page 69</ref>.
+
+Both shrines enshrine deities that serve as {{ill|guardian deities|ja|守護神|12=simple|13=User:Immanuelle/guardian deities}} of {{ill|Farmer|en|Farmer|qid=Q131512|lt=farmhouses}}<ref name="gk">Gakken Publishing (2013): page 69</ref>.
+
 == Overview ==
+
 This section describes common information about both shrines.
+
 Located at {{ill|Tamaki, Mie|en|Tamaki, Mie|qid=Q587348|lt=Tamaki}}, [[:en:Watarai District, Mie|Watarai District]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Yano Aza Miyamae 387<ref name="sk1">Shikinaisha Research Association (1990): p. 211</ref>. There is a theory that the Yano area, where the shrine is situated, is the final resting place of {{ill|Princess Wakatarashihime|ja|稚足姫皇女|12=simple|13=User:Immanuelle/Princess Wakatara|comment=changed title based on wikidata|qid=Q55533316}}, who served as a {{ill|Saiō|en|Saiō|qid=Q19841349|lt=Saio}}<ref>{{Cite web|Japanese|url=http://www.town.meiwa.mie.jp/romantic/saio/saio4.html|title=Sites Associated with the Saio (Outside of Town) - Meiwa Town Office|publisher=Meiwa Town, Mie Prefecture|language=Japanese|accessdate=2013-11-03|archiveurl=https://megalodon.jp/2013-1103-2045-21/www.town.meiwa.mie.jp/romantic/saio/saio4.html|archivedate=2013-11-03}}</ref>. 
+
 According to the "Chūnansei Development Area Archaeological Map," there are four {{ill|Kofun|en|Kofun|qid=Q1141225|lt=Kofun}} (ancient Kofuns) within the precincts<ref>Kaneko (1983): p. 61</ref>, but field research by Masafumi Kimoto confirmed five<ref name="sk1"/>. Many {{ill|Archaeological site|en|Archaeological site|qid=Q839954|lt=archaeological sites}} from the {{ill|Yayoi period|en|Yayoi period|qid=Q207858|lt=Yayoi period}} and {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} have been discovered in the Yano area<ref name="sk1"/>. Additionally, within the precincts are the "Prohibited Killing Stone" established by the {{ill|Kishū Domain|en|Kishū Domain|qid=Q1069187|lt=Kishu Domain}} in {{ill|Kyōhō|en|Kyōhō|qid=Q1145048|lt=Kyōhō}} 9 (1724) and a water basin dated {{ill|Tenpō|en|Tenpō|qid=Q1369045|lt=Tenpō}} 13 (1842)<ref name="sg">{{Cite web|Japanese|url=http://www.sengukan.jp/wp-content/themes/sengukan/shrine/area04/03.html?iframe=true&width=1000&height=700|title=Tanoya Gozen Shrine - 125 Shrines｜Sengukan|publisher=Sengukan|language=Japanese|accessdate=2013-11-03|archiveurl=https://megalodon.jp/2013-1103-2159-39/www.sengukan.jp/wp-content/themes/sengukan/shrine/area04/03.html?iframe=true&width=1000&height=700|archivedate=2013-11-03}}</ref>.
+
 The two shrines share the same precinct and have a single {{ill|Shinto architecture|ja|社殿|12=simple|13=User:Immanuelle/shrine building|ja_comment=jawiki redirects to 神社建築|comment=changed title based on wikidata|qid=Q3080012}} constructed in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=shinmei-zukuri}} architectural style with a wooden shingle roof, facing south and enclosed by a single layer of {{ill|Sacred fences|en|Tamagaki|qid=Q3078312|lt=tamagaki}} (sacred fence)<ref name="sk1"/>. There is one {{ill|Torii|ja|神明鳥居|12=simple|13=User:Immanuelle/shinmei torii|ja_comment=jawiki redirects to 鳥居|comment=changed title based on wikidata|qid=Q234731}}<ref name="sk1"/>. No {{ill|Saisenbako|ja|賽銭箱|12=simple|13=User:Immanuelle/offertory box|qid=Q135491444}} is present. The shrine grounds cover an area of 13,114 m²<ref name="sk1"/>.
+
 == Tanoya Shrine ==
+
 Tanoya Shrine Ranks 5th among the 27 auxiliary shrines of the {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Inner Shrine (Kōtai Jingū)|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}<ref name="uy0">Ujiyamada City Office (1929): pp. 9–11</ref>. It holds a high status among the auxiliary shrines of the Inner Shrine<ref name="ic">Ise Bunka-sha (2008): p. 65</ref>. Its {{ill|Shintai|en|Shintai|qid=Q327532|lt=Shintai}} is a {{ill|Mirror|en|Mirror|qid=Q35197|lt=mirror}}<ref>Kaneko (1983): p. 59</ref>.
-The {{ill|Saijin|lt=Saijin|lt=Enshrined deity|ja|祭神|12=simple|13=User:Immanuelle/enshrined deity|qq=}} is Ōkami Misamukawa-no-Kami (大神御滄川神)<ref name="gk"/><ref name="ic"/>. The deity is revered as the guardian of {{ill|Farming|ja|農耕|12=simple|13=User:Immanuelle/farmers|comment=changed title based on wikidata|qid=Q24886094}} and {{ill|Dwelling|en|Dwelling|qid=Q699405|lt=households}}<ref name="ic"/>. The prefix "Ōkami" signifies the extension of the divine virtues of {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, the main deity of the Inner Shrine, to this region<ref name="gk"/><ref name="ic"/>.
+
+The {{ill|Saijin|lt=Saijin|lt=Enshrined deity|ja|祭神|12=simple|13=User:Immanuelle/enshrined deity}} is Ōkami Misamukawa-no-Kami (大神御滄川神)<ref name="gk"/><ref name="ic"/>. The deity is revered as the guardian of {{ill|Farming|ja|農耕|12=simple|13=User:Immanuelle/farmers|comment=changed title based on wikidata|qid=Q24886094}} and {{ill|Dwelling|en|Dwelling|qid=Q699405|lt=households}}<ref name="ic"/>. The prefix "Ōkami" signifies the extension of the divine virtues of {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, the main deity of the Inner Shrine, to this region<ref name="gk"/><ref name="ic"/>.
+
 The shrine name "Tanoya" has several theories regarding its origin: one suggests it means "on the rice field" (田の上), another links it to the place name "Tanabe" (田邊郷), and a third relates it to "Tato" (田戸), referring to rice fields and residences near government-owned paddies<ref name="sk8">Shikinaisha Research Association (1990): p. 208</ref>.
+
 == Tanoya Gozen Shrine ==
+
 Tanoya Gozen Shrine Ranks 6th among the 27 auxiliary shrines of the Inner Shrine<ref name="uy0"/>. Its main hall no longer exists, and the deity is now enshrined together with Tanoya Shrine<ref name="uy1">Ujiyamada City Office (1929): p. 10</ref>.
+
 The enshrined deity is Gozen-no-Kami (御前神)<ref name="gk"/><ref name="ic"/>. Like Ōkami Misamukawa-no-Kami, this deity is also a guardian of farmers<ref name="gk"/>.
+
 == History ==
-According to the {{ill|Enryaku Gishikichō|ja|皇大神宮儀式帳|12=simple|13=User:Immanuelle/Kōtai Jingū Ritual Records|ja_comment=jawiki redirects to 延暦儀式帳|comment=changed title based on wikidata|qid=Q109596938}}, the shrine was founded during the reign of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Emperor Yūryaku}}<ref>Kaneko (1983): p. 68</ref>. Based on the definition of Ise Jingū's auxiliary shrines, it was established before the compilation of the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}, i.e., before {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō|comment=changed title based on wikidata|qid=Q97379316}} 5 (927)<ref name="ic2">Ise Bunka-sha (2008): p. 22</ref>.
+
+According to the {{ill|Enryaku Gishikichō|ja|皇大神宮儀式帳|12=simple|13=User:Immanuelle/Kōtai Jingū Ritual Records|ja_comment=jawiki redirects to 延暦儀式帳|comment=changed title based on wikidata|qid=Q109596938}}, the shrine was founded during the reign of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Emperor Yūryaku}}<ref>Kaneko (1983): p. 68</ref>. Based on the definition of Ise Jingū's auxiliary shrines, it was established before the compilation of the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}, i.e., before {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō|comment=changed title based on wikidata|qid=Q97379316}} 5 (927)<ref name="ic2">Ise Bunka-sha (2008): p. 22</ref>.
+
 In ancient times, Tanoya Shrine was subject to the {{ill|Jingū Shikinen Sengū|lt=Shikinen Sengū|ja|式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū|ja_comment=jawiki redirects to 遷宮}}, rebuilt every 20 years, just like the Inner Shrine<ref name="sk9"/>. However, after an order to rebuild the shrine in {{ill|Ryakuō|en|Ryakuō|qid=Q1146182|lt=Ryakuō}} 3 (1340), no further records of reconstruction exist, and both the rituals and the shrine site fell into obscurity<ref name="sk0"/>.
+
 The shrine was restored on {{ill|Kanbun (era)|en|Kanbun (era)|qid=Q1146228|lt=Kanbun}} 3, 8th day of the 9th month (October 8, 1663, Gregorian calendar) by {{ill|Kiyonaga Kawabe|ja|河辺精長|12=simple|13=User:Immanuelle/Kawabe Masanaga|comment=changed title based on wikidata|qid=Q92924151}} (Ōnakatomi Masanaga)<ref name="sk0"/>.
+
 == Rituals ==
-Shinto rituals are held in front of the shrine during major festivals such as the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}} (February), {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June, December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}} (November)<ref name="sk0"/>.
+
+Shinto rituals are held in front of the shrine during major festivals such as the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}} (February), {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri}} (June, December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}} (November)<ref name="sk0"/>.
+
 == Access ==
+
 There are two entrance roads to the shrine<ref name="ik">{{Cite web|Japanese|url=http://www.isekanko.jp/k-cycling/course19.html|title=Course 19 Tamaki Route 2 - Visiting the Gods of the Ancient Countryside|publisher=Ise City Tourism Association|language=Japanese|accessdate=2013-11-03|archiveurl=https://megalodon.jp/2013-1103-2025-45/www.isekanko.jp/k-cycling/course19.html|archivedate=2013-11-03}}</ref>.
+
 * {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangu Line}}
 ** Approximately 40 minutes on foot from {{ill|Tokida Station|en|Tokida Station|qid=Q7813584|lt=Sotoida Station}} (~3.2 km).
 ** Approximately 42 minutes on foot from {{ill|Tamaru Station|en|Tamaru Station|qid=Q117533|lt=Tamura Station}} (~3.4 km).
+
 * About 10 minutes from {{ill|Tamaki interchange|ja|玉城インターチェンジ|12=simple|13=User:Immanuelle/Tamaki Interchange|comment=changed title based on wikidata|qid=Q11572465}} on the {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway}}<ref>Mie Prefecture Tourism Federation, "Tanoya Shrine Tourist Information - Mie Sightseeing" (Accessed November 3, 2013)</ref>.
+
 == See Also ==
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 {{ external media
 | align  = 
@@ -56,7 +82,15 @@ There are two entrance roads to the shrine<ref name="ik">{{Cite web|Japanese|url
 |image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area04/area04_02.jpg 田乃家神社]
 }}
 * [http://www.jingukaikan.jp/125mairi/m07/0705.html 田乃家神社（たのえじんじゃ） 御同座 田乃家御前神社] - 財団法人伊勢神宮崇敬会
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|田乃家神社|version=98200648|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tanoe and Tanoe-Mimae Shrines (Q17212120)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -65,11 +99,12 @@ There are two entrance roads to the shrine<ref name="ik">{{Cite web|Japanese|url
 | {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Tanoe and Tanoe-Mimae Shrines|lt=Tanoe and Tanoe-Mimae Shrines|ja|田乃家神社|qid=Q17212120}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Kōtai Jingū|qid=Q11581011}} || — || {{coord|34.476802|136.604486|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181119 DB]
 |}
 
-{{translated page|ja|田乃家神社|version=98200648|comment=Imported full ja history}}
-
+{{wikidata link|Q17212120|ja|田乃家神社|check_date=2026-05-11}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Tamaki Town]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Tamaki]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -77,4 +112,5 @@ There are two entrance roads to the shrine<ref name="ik">{{Cite web|Japanese|url
 [[Category:Tamaki,_Mie]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]

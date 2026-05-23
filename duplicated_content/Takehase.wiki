@@ -1,10 +1,15 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takehase for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
 {{Infobox person|gender={{ill|Male (gender)|qid=Q6581097}}|nationality={{ill|Yamato Kingship|qid=Q2658252}}|occupation={{ill|military commander|qid=Q11545923}}|father={{ill|Aratawake|qid=Q17216467}}|relatives={{ill|Kamitsukeno no Tamichi|qid=Q11359475}}|family={{ill|Kamitsukeno clan|qid=Q11547765}}}}
 '''Takahase''' (竹葉瀬) appears in ancient Japanese texts such as the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}'' as an individual from ancient {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. Variants of the name include '''Takihase''' (多奇波世) and '''Takeai''' (竹合). He is also referred to with clan names such as ''Kamitsukeno Takahase'' and ''Kamitsukeno Takeai.''
-He is noted as the ancestor of the {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan|qq=}} and was said to be a general dispatched to {{ill|Korea|en|Korea|qid=Q18097|lt=Korea}} during the reign of {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}}, the 16th emperor.
+
+He is noted as the ancestor of the {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan}} and was said to be a general dispatched to {{ill|Korea|en|Korea|qid=Q18097|lt=Korea}} during the reign of {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}}, the 16th emperor.
+
 == Records ==
+
 According to the ''Nihon Shoki,'' in the 53rd year of Emperor Nintoku's reign, Takahase was dispatched to {{ill|Silla|en|Silla|qid=Q28456|lt=Silla}} to question their failure to pay tribute. During his journey, he captured a white deer, which he presented to the emperor before proceeding to Silla. He is also recorded as the elder brother of {{ill|Kamitsukeno no Tamichi|ja|上毛野田道|12=simple|13=User:Immanuelle/Kamitsukeno Tamichi|comment=changed title based on wikidata|qid=Q11359475}}, who later fought against Silla.
+
 == Descendant Clans ==
+
 The ''{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}}'' lists the following clans as descendants of Takahase:
 * Imperial Lineage, Sakyo, Kamitsukeno Ason: Common ancestor with the Shimotsukeno Ason. Descendants of Toyokuniwake no Mikoto, through Takihase no Kimi, fifth-generation descendant of Toyokuniwake no Mikoto.
 * Imperial Lineage, Sakyo, Sumiyoshi Ason: Common ancestor with Kamitsukeno. Descendants of Takihase no Kimi.
@@ -12,20 +17,66 @@ The ''{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Sh�
 * Imperial Lineage, Sakyo, Kuwabara Kō: Common ancestor with Kamitsukeno. Descendants of Takihase no Kimi.
 * Imperial Lineage, Sakyo, Kawai Kō: Related to Kamitsukeno. Descendants of Takihase no Kimi.
 * Imperial Lineage, Sakyo, Akimachi Ō: Related to Kamitsukeno. Descendants of Takihase no Kimi and his grandson Kubi.
+
 The ''{{ill|Nihon Shoki Private Commentary (Kōnin Edition)|ja|日本書紀弘仁私記|12=simple|13=User:Immanuelle/Nihon Shoki Private Commentary (Kōnin Edition)|ja_comment=jawiki link invalid}}'' includes the following note in its introduction:
 > "Tanabe no Fuhito, Kamitsukeno no Kimi, Ikehara Ason, and Sumiyoshi Ason were descended from two individuals, Shisumi and Watoku, who came from {{ill|Paekche|ja|百済国|12=simple|13=User:Immanuelle/Baekje|ja_comment=jawiki redirects to 百済|comment=changed title based on wikidata|qid=Q28428}} during the reign of Emperor Ōsazaki (another name for Emperor Nintoku). They claimed that their ancestor was General Kamitsukeno Takeai. The emperor, out of pity, allowed them to integrate into his people, thus labeling them as ‘foreign clans’ in this text."
+
 This passage highlights that the Tanabe, Kamitsukeno, Ikehara, and Sumiyoshi clans were originally immigrants from Baekje who falsely claimed descent from Takahase.<ref name="rediscovery">Kumakura Hiroyasu, "From Kamitsukeno Province to the East" (''Rediscovering Gunma History''), Asawo Publishing, 2001.</ref>
+
 == Analysis ==
+
 The presence of groups falsely claiming Takahase as their ancestor, as described in the ''Nihon Shoki Private Commentary,'' suggests that the Kamitsukeno clan played significant roles in cultural and military interactions with Korea.<ref name="rediscovery"/>
+
 == References ==
 {{reflist}}
+
 == Bibliography ==
 * {{Cite book|lang=ja|chapter=竹葉瀬|title=日本古代氏族人名辞典 普及版|publisher={{ill|Yoshikawa Kōbunkan|ja|吉川弘文館|12=simple|13=User:Immanuelle/Yoshikawa Kōbunkan|comment=changed title based on wikidata|qid=Q4346755}}|year=2010|isbn=978-4642014588|ref={{Harvid|竹葉瀬（古代氏族）|2010th year }}}}
 == See Also ==
-* {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan|qq=}}
+* {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan}}
+
 {{translated page|ja|竹葉瀬|version=95784019|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+'''Takehase''' (竹葉瀬, also spelled 多奇波世 or 竹合) is a figure from ancient {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}, mentioned in texts such as the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}. He is sometimes referred to as "Kamitsukeno Takehase" or "Kamitsukeno Takeai," incorporating his clan name.
+
+Takehase is described as a military commander and ancestor of the {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan}}, dispatched to {{ill|Korea|en|Korea|qid=Q18097|lt=Korea}} during the reign of Emperor {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Nintoku}} (16th Emperor of Japan).
+
+== Historical Accounts ==
+According to the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}, in the 53rd year of Emperor Nintoku’s reign (traditional date), Takehase was sent to {{ill|Silla|en|Silla|qid=Q28456|lt=Silla}} to demand tribute, which Silla had not been offering. During his journey, he captured a white deer, which he presented to the emperor before continuing his mission to Silla. Additionally, he is noted as the elder brother of {{ill|Kamitsukeno no Tamichi|ja|上毛野田道|12=simple|13=User:Immanuelle/Kamitsukeno no Tamichi}}, who later fought against Silla.
+
+== Descendant Clans ==
+The {{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}} lists several clans as descendants of Takehase:
+* '''Imperial Lineage (Left Capital) Kamitsukeno no Ason''': Shared ancestry with the {{ill|Shimotsukeno clan|ja|下毛野氏|lt=Shimotsukeno clan|12=simple|13=User:Immanuelle/Shimotsukeno clan|13=User:Immanuelle/Shimotsukeno clan}}, descended from Toyokiiribiko no Mikoto's fifth-generation descendant, Takehase no Kimi.
+* '''Imperial Lineage (Left Capital) Sumiyoshi no Ason''': Shared ancestry with the Kamitsukeno clan, descended from Takehase no Kimi.
+* '''Imperial Lineage (Left Capital) Ikehara no Ason''': Related to the Sumiyoshi clan, descended from Takehase no Kimi.
+* '''Imperial Lineage (Left Capital) Kuwabara no Kimi''': Shared ancestry with the Kamitsukeno clan, descended from Takehase no Kimi.
+* '''Imperial Lineage (Left Capital) Kawai no Kimi''': Related to the Kamitsukeno clan, descended from Takehase no Kimi.
+* '''Imperial Lineage (Left Capital) Shōchō no Kubi''': Related to the Kamitsukeno clan, descended from Takehase no Kimi, through the third-generation descendant Kubi.
+
+The {{ill|Nihon Shoki Kōnin Shiki|ja|日本書紀弘仁私記|12=simple|13=User:Immanuelle/Nihon Shoki Kōnin Shiki|ja_comment=jawiki link invalid}} also states:
+> "The ancestors of the clans {{ill|Tanabe no Fuhito|ja|田辺史|12=simple|13=User:Immanuelle/Tanabe no Fuhito|ja_comment=jawiki link invalid}}, Kamitsukeno no Kimi, Ikehara no Ason, and Sumiyoshi no Ason—namely, Susumi and Watoku—arrived from [[:en:Baekje|Baekje]] during the reign of Emperor {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Ōjin}}. They claimed descent from the Japanese general Takehase no Kimi, and Emperor Nintoku allowed them to join the clan."
+
+This indicates that groups of immigrants from Baekje falsely claimed descent from Takehase.<ref name="rediscovery">{{Cite book|title=Rediscovering Gunma’s History|author=Hiroyasu Kumakura|publisher=Asao-sha|year=2001}}</ref>
+
+== Analysis ==
+The formation of immigrant groups claiming descent from Takehase, as noted in the {{ill|Nihon Shoki Kōnin Shiki|ja|日本書紀弘仁私記|12=simple|13=User:Immanuelle/Nihon Shoki Kōnin Shiki|ja_comment=jawiki link invalid}}, suggests that the Kamitsukeno clan played an active role in cultural and military diplomacy with Korea.<ref name="rediscovery"/>
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+* {{Cite book|title=Japanese Ancient Clan Name Dictionary (Popular Edition)|publisher={{ill|Yoshikawa Kōbunkan|ja|吉川弘文館|12=simple|13=User:Immanuelle/Yoshikawa Kōbunkan|comment=changed title based on wikidata|qid=Q4346755}}|year=2010|isbn=978-4642014588}}
+
+== Related Articles ==
+* {{ill|Kamitsukeno clan|ja|上毛野氏|12=simple|13=User:Immanuelle/Kamitsukeno clan|13=User:Immanuelle/Kamitsukeno clan}}
+
+{{translated page|ja|竹葉瀬|version=95784019|comment=Imported full ja history}}
+
+{{wikidata link|Q17209207|ja|竹葉瀬|check_date=2026-05-10}}
 [[Category:Characters in Japanese mythology]]
 [[Category:Japan–Korea Relations in Antiquity]]
 [[Category:Kamitsukeno clan]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no short description]]

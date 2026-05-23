@@ -1,86 +1,109 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Karakuni_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
+{
+{
+{
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |名称   = {{ruby|Karakuni Shrine|からくにじんじゃ}}
 |image   = File:Karakuni shurine 20180131.jpg|ja|辛国神社 社殿|lt=Karakuni Shrine|lt_ja=辛国神社<br />Haiden
-|所在地 = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}{{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City|1=Fujiidera}} Fujidera 1-chōme, 19-14
+|所在地 = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City}} Fujidera 1-chōme, 19-14
 |緯度度 = 34 |緯度分 = 34 |緯度秒 = 9 | N
 |経度度 = 135 |経度分 = 35 |経度秒 = 37 | E
 |地図国コード = JP
 |地図 = {{Location map|Osaka, Japan|label=Karakuni Shrine|float=none}}
-|祭神   = {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|1=Nigihayahi|lt=Nigihayahi-no-Mikoto}}<br />{{ill|Ameno-koyane-no-Mikoto|ja|天児屋根命|lt=Ameno-koyane-no-Mikoto|lt_ja=天児屋根命|1=Ame-no-Koyane|12=simple|13=User:Immanuelle/Ameno-koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}<br />{{ill|Susanoo-no-Mikoto|ja|素盞鳴命|lt=Susanoo-no-Mikoto|lt_ja=素盞鳴命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
-|社格   = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)<br />Formerly a {{ill|Murasya|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
-|創建   = During the era of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Yuryaku Tennō|1=Emperor Yūryaku}} 
-|本殿   = Three-bay shrine, {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Ryū-zukuri|1=Nagare-zukuri}}
+|祭神   = {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|lt_ja=饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|lt=Nigihayahi-no-Mikoto}}<br />{{ill|Ame-no-Koyane|ja|天児屋根命|lt=Ameno-koyane-no-Mikoto|lt_ja=天児屋根命|12=simple|13=User:Immanuelle/Ameno-koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}<br />{{ill|Susanoo-no-Mikoto|ja|素盞鳴命|lt=Susanoo-no-Mikoto|lt_ja=素盞鳴命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
+|社格   = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (small)<br />Formerly a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
+|創建   = During the era of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Yuryaku Tennō}} 
+|本殿   = Three-bay shrine, {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Ryū-zukuri}}
 |別名   = 
 |札所等 = 
-|例祭   = Summer Festival ({{ill|July 17|en|July 17|qid=Q2729|lt=July 17|1=July 17}})<br />Special Festival ({{ill|October 17|en|October 17|qid=Q2962|lt=October 17|1=October 17}})
+|例祭   = Summer Festival ({{ill|July 17|en|July 17|qid=Q2729|lt=July 17}})<br />Special Festival ({{ill|October 17|en|October 17|qid=Q2962|lt=October 17}})
 |神事   = 
-|prefecture= {{ill|Fujiidera|qid=Q634011|1=Fujiidera}}
+|prefecture= {{ill|Fujiidera|qid=Q634011}}
 |coordinates= {{Coord|34.569167|N|135.593611}}
 }}
-'''Karakuni Shrine''' (辛国神社, からくにじんじゃ) is a Shinto shrine located in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, {{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City|1=Fujiidera}}. It is classified as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and its former Rank was that of a {{ill|Murasya|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}.
+'''Karakuni Shrine''' (辛国神社, からくにじんじゃ) is a Shinto shrine located in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, {{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City}}. It is classified as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}, and its former Rank was that of a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}.
+
 == Worshipped deities (Saijin) ==
-{{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin|qq=}}}}
+{{see also|{{ill|Saijin|ja|祭神}}}}
 ; Main Hall
-* {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|1=Nigihayahi|lt=Nigihayahi-no-Mikoto}} (Nigihayahi-no-Mikoto)
-* {{ill|Ameno-koyane-no-Mikoto|ja|天児屋根命|1=Ame-no-Koyane|12=simple|13=User:Immanuelle/Ameno-koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}} (Ameno-koyane-no-Mikoto)
+* {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|lt=Nigihayahi-no-Mikoto}} (Nigihayahi-no-Mikoto)
+* {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Ameno-koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}} (Ameno-koyane-no-Mikoto)
 * {{ill|Susanoo-no-Mikoto|ja|素盞鳴命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} (Susanoo-no-Mikoto)
+
 ; Side Hall
-* {{ill|Ichikishima-hime-no-Mikoto|ja|市杵島姫命|1=Ichikishima-hime|12=simple|13=User:Immanuelle/Ichikishima-hime-no-Mikoto|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}} (Ichikishima-hime-no-Mikoto)
-* {{ill|Hondawake-no-Mikoto|ja|品陀別命|1=Emperor Ōjin|qid=Q317997|lt=Hondawake no Mikoto|12=simple|13=User:Immanuelle/Hondawake-no-Mikoto|13=User:Immanuelle/Emperor Ōjin|ja_comment=jawiki redirects to 応神天皇|comment=changed title based on wikidata|qid=Q317997}} (Hondawake-no-Mikoto)
+* {{ill|Ichikishima-hime-no-Mikoto|ja|市杵島姫命}} (Ichikishima-hime-no-Mikoto)
+* {{ill|Emperor Ōjin|ja|品陀別命|qid=Q317997|lt=Hondawake no Mikoto|12=simple|13=User:Immanuelle/Hondawake-no-Mikoto|13=User:Immanuelle/Emperor Ōjin|ja_comment=jawiki redirects to 応神天皇|comment=changed title based on wikidata|qid=Q317997}} (Hondawake-no-Mikoto)
+
 == History ==
-The name "Karakuni" derives from a branch of the {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan|1=Mononobe clan}} that once ruled this area and produced the shamanistic figure {{ill|Karakuni Renzu|ja|辛国連|12=simple|13=User:Immanuelle/Karakuni Renzu|ja_comment=jawiki link invalid}}—a disciple of {{ill|En no Gyōja|en|En no Gyōja|qid=Q198946|lt=Yaku Kogumi|1=En no Gyōja}}. Although the founding date is unknown, according to the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}} in the entry for the 13th year, March of the reign of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Yuryaku Tennō|1=Emperor Yūryaku}}, it states that "Eka Chōno-mura was granted to Mononobe Ōren," indicating that the Mononobe clan, upon receiving these lands, enshrined their ancestor {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|1=Nigihayahi|lt=Nigihayahi-no-Mikoto}}, from which Karakuni Renzu later assumed responsibility for the rites.<ref name="藤井寺1">{{Cite book|lang=ja|title=Fujidera City History|volume=Volume 1, General History, page 638|date=1997}}</ref> According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku|1=Nihon Sandai Jitsuroku}}, on September 26 of the 9th year of {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan|1=Zhenguan}} ({{ill|867|en|867|qid=Q30347|lt=867 AD|1=867}}), the shrine was listed among the government-supported shrines, and it is recorded in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} as a government-issued small shrine. It appears that during this period the shrine was located to the southwest of 【Emisaka】.<ref name="ミナカワ1">[http://travel-minakawa.com/2018/01/01/post-917/ Southern Kawachi’s most beautiful and long approach – Introduction to Karakuni Shrine ~ Fujidera City ~] (Accessed May 21, 2022)</ref>
-In the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}}, the shrine was renamed "Karakuni Shrine" and, in {{ill|1872|en|1872|qid=Q7753|lt=1872 AD|1=1872}} (Meiji 5), it was designated as a {{ill|Murasya|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}. In {{ill|1907|en|1907|qid=Q2048|lt=1907 AD|1=1907}} (Meiji 40), the village shrine of Nonaka in Nonaka Village was merged, and the following year, the village shrine of Nagano in Fujidera (from the Nagano area) housed in {{ill|Fujii-dera|en|Fujii-dera|qid=Q6406788|lt=Fujii-dera|1=Fujii-dera}} was merged. As a result, {{ill|Susanoo-no-Mikoto|ja|素盞鳴命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} of Nagano Shrine was also enshrined.<ref name="藤井寺1">{{Cite book|lang=ja|title=Fujidera City History|volume=Volume 1, General History, page 638|date=1997}}</ref><ref name="ミナカワ1">[http://travel-minakawa.com/2018/01/01/post-917/ Southern Kawachi’s most beautiful and long approach – Introduction to Karakuni Shrine ~ Fujidera City ~] (Accessed May 21, 2022)</ref> Subsequently, Nonaka Shrine was re-established atop the posterior circular part of Nonaka Miyashiro Kofun in {{ill|1950|en|1950|qid=Q18597|lt=1950 AD|1=1950}} (Showa 25).
+The name "Karakuni" derives from a branch of the {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan}} that once ruled this area and produced the shamanistic figure {{ill|Karakuni Renzu|ja|辛国連}}—a disciple of {{ill|En no Gyōja|en|En no Gyōja|qid=Q198946|lt=Yaku Kogumi}}. Although the founding date is unknown, according to the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}} in the entry for the 13th year, March of the reign of {{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Yuryaku Tennō}}, it states that "Eka Chōno-mura was granted to Mononobe Ōren," indicating that the Mononobe clan, upon receiving these lands, enshrined their ancestor {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日命|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|lt=Nigihayahi-no-Mikoto}}, from which Karakuni Renzu later assumed responsibility for the rites.<ref name="藤井寺1">{{Cite book|lang=ja|title=Fujidera City History|volume=Volume 1, General History, page 638|date=1997}}</ref> According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}, on September 26 of the 9th year of {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan}} ({{ill|867|en|867|qid=Q30347|lt=867 AD}}), the shrine was listed among the government-supported shrines, and it is recorded in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} as a government-issued small shrine. It appears that during this period the shrine was located to the southwest of 【Emisaka】.<ref name="ミナカワ1">[http://travel-minakawa.com/2018/01/01/post-917/ Southern Kawachi’s most beautiful and long approach – Introduction to Karakuni Shrine ~ Fujidera City ~] (Accessed May 21, 2022)</ref>
+
+In the {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096|lt=Meiji era}}, the shrine was renamed "Karakuni Shrine" and, in {{ill|1872|en|1872|qid=Q7753|lt=1872 AD}} (Meiji 5), it was designated as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}. In {{ill|1907|ab|1907|af|1907|als|1907|am|1907 እ.ኤ.አ.|an|1907|ar|1907|ary|1907|arz|1907|ast|1907|av|1907|avk|1907|az|1907|azb|۱۹۰۷ (میلادی)|ba|1907 йыл|ban|1907|bar|1907|bat_smg|1907|bcl|1907|be|1907|be_x_old|1907|bg|1907|bh|1907|bn|১৯০৭|bpy|মারি ১৯০৭|br|1907|bs|1907.|ca|1907|cdo|1907 nièng|ce|1907 шо|ceb|1907|ckb|١٩٠٧|co|1907|crh|1907|cs|1907|csb|1907|cv|1907|cy|1907|da|1907|de|1907|diq|1907|dsb|1907|el|1907|eml|1907|eo|1907|es|1907|et|1907|eu|1907|ext|1907|fa|۱۹۰۷|fi|1907|fiu_vro|1907|fo|1907|fr|1907|frp|1907|frr|1907|fur|1907|fy|1907|ga|1907|gag|1907|gan|1907年|gcr|1907|gd|1907|gl|1907|gn|1907|gv|1907|hak|1907-ngièn|he|1907|hi|१९०७|hif|1907|hr|1907.|hsb|1907|ht|1907 (almanak gregoryen)|hu|1907|hy|1907|hyw|1907 թուական|ia|1907|id|1907|ilo|1907|inh|1907 шу|io|1907|is|1907|it|1907|ja|1907年|jbo|1907moi|jv|1907|ka|1907|kaa|1907|kbp|1907|kk|1907 жыл|kn|೧೯೦೭|ko|1907년|krc|1907 джыл|ksh|Joohr 1907|ku|1907|kv|1907-ӧд во|kw|1907|la|1907|lb|1907|lez|1907 йис|li|1907|lij|1907|lmo|1907|lt|1907 m.|lv|1907. gads|mai|१९०७|map_bms|1907|mdf|1907|mg|1907|mhr|1907|mi|1907|min|1907|mk|1907|ml|1907|mn|1907 он|mr|इ.स. १९०७|mrj|1907 и|ms|1907|my|၁၉၀၇|myv|1907 ие|mzn|۱۹۰۷|nah|1907|nap|1907|nds|1907|nds_nl|1907|new|सन् १९०७|nl|1907|nn|1907|no|1907|nov|1907|nrm|1907|nso|1907|oc|1907|olo|1907|or|୧୯୦୭|os|1907-æм аз|pa|1907|pam|1907|pap|1907|pl|1907|pnb|1907|pt|1907|qu|1907|ro|1907|roa_tara|1907|ru|1907 год|rue|1907|sa|१९०७|sah|1907|sc|1907|scn|1907|sco|1907|sd|1907ع|se|1907|sh|1907.|shn|1907|si|1907|simple|1907|sk|1907|sl|1907|smn|1907|sq|1907|sr|1907|srn|1907|stq|1907|su|1907|sv|1907|sw|1907|szl|1907|ta|1907|te|1907|tg|Соли 1907|th|พ.ศ. 2450|tk|1907|tl|1907|tly|1907|tpi|1907|tr|1907|tt|1907 ел|ty|1907|udm|1907 ар|ug|1907 - يىلى|uk|1907|ur|1907ء|uz|1907|vec|1907|vi|1907|vls|1907|vo|1907|wa|1907|war|1907|xmf|1907|yi|1907|za|1907 nienz|zea|1907|zh|1907年|zh_classical|一九〇七年|zh_min_nan|1907 nî|zh_yue|1907年|qid=Q2048|lt=1907 AD}} (Meiji 40), the village shrine of Nonaka in Nonaka Village was merged, and the following year, the village shrine of Nagano in Fujidera (from the Nagano area) housed in {{ill|Fujii-dera|en|Fujii-dera|qid=Q6406788|lt=Fujii-dera}} was merged. As a result, {{ill|Susanoo-no-Mikoto|ja|素盞鳴命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} of Nagano Shrine was also enshrined.<ref name="藤井寺1">{{Cite book|lang=ja|title=Fujidera City History|volume=Volume 1, General History, page 638|date=1997}}</ref><ref name="ミナカワ1">[http://travel-minakawa.com/2018/01/01/post-917/ Southern Kawachi’s most beautiful and long approach – Introduction to Karakuni Shrine ~ Fujidera City ~] (Accessed May 21, 2022)</ref> Subsequently, Nonaka Shrine was re-established atop the posterior circular part of Nonaka Miyashiro Kofun in {{ill|1950|en|1950|qid=Q18597|lt=1950 AD}} (Showa 25).
+
 == Shrine facilities ==
 [[File:Karakuni-jinja, Kasuga-inari-jinja.jpg|thumb|200px|Kasuga Inari Shrine]]
 [[File:Karakuni-jinja, Kasuga-tenmangu.jpg|thumb|200px|Kasuga Tenmangu]]
-Within the shrine grounds, there is a long approach (参道) covered in deep green foliage, which was selected in {{ill|1989|en|1989|qid=Q2425|lt=1989 AD|1=1989}} (the first year of {{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei|1=Heisei era}}) as one of the {{ill|Osaka Midori no Hyakusen|ja|100 Greens of Ōsaka|12=simple|13=User:Immanuelle/Osaka Midori no Hyakusen|1=Ōsaka Midori no Hyakusen|comment=changed title based on wikidata|qid=Q11439936}}.<ref name="観光1">[http://www.fujiidera-kanko.info/spot/karakuni.html Karakuni Shrine – Fujidera City Tourism Association] (Accessed January 30, 2018)</ref> Additionally, along the approach there is a torii bearing the inscription "Nagano Shrine," which was relocated from Nagano Shrine.<ref name="藤井寺2">「Fujidera City History」, Volume 1, General History, page 635 (1997)</ref>
+Within the shrine grounds, there is a long approach (参道) covered in deep green foliage, which was selected in {{ill|1989|en|1989|qid=Q2425|lt=1989 AD}} (the first year of {{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei}}) as one of the {{ill|Ōsaka Midori no Hyakusen|ja|100 Greens of Ōsaka|12=simple|13=User:Immanuelle/Osaka Midori no Hyakusen|comment=changed title based on wikidata|qid=Q11439936}}.<ref name="観光1">[http://www.fujiidera-kanko.info/spot/karakuni.html Karakuni Shrine – Fujidera City Tourism Association] (Accessed January 30, 2018)</ref> Additionally, along the approach there is a torii bearing the inscription "Nagano Shrine," which was relocated from Nagano Shrine.<ref name="藤井寺2">「Fujidera City History」, Volume 1, General History, page 635 (1997)</ref>
 * Main Hall
 * Haiden (worship hall)
-* Kasuga {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Tenmangu|1=Tenmangū}} – enshrines {{ill|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|1=Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
-* Kasuga {{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine|1=Inari shrine}} – enshrines {{ill|Ukano Mitama-no-Ōkami|ja|宇迦之御魂大神|12=simple|13=User:Immanuelle/Ukano Mitama-no-Ōkami|ja_comment=jawiki redirects to ウカノミタマ|1=Ukanomitama|comment=changed title based on wikidata|qid=Q3080728}}
+* Kasuga {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Tenmangu}} – enshrines {{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005}}
+* Kasuga {{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine}} – enshrines {{ill|Ukanomitama|ja|宇迦之御魂大神|12=simple|13=User:Immanuelle/Ukano Mitama-no-Ōkami|ja_comment=jawiki redirects to ウカノミタマ|comment=changed title based on wikidata|qid=Q3080728}}
 * Administrative Office
-* A remote worship area for {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Jingū|1=Ise Grand Shrine}}
+* A remote worship area for {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Jingū}}
+
 == Festivals ==
-* New Year's Festival ({{ill|January 1|en|January 1|qid=Q2150|lt=January 1|1=January 1}})
-* Setsubun Festival (on {{ill|Setsubun|en|Setsubun|qid=Q746798|lt=Setsubun|1=Setsubun}})
+* New Year's Festival ({{ill|January 1|en|January 1|qid=Q2150|lt=January 1}})
+* Setsubun Festival (on {{ill|Setsubun|en|Setsubun|qid=Q746798|lt=Setsubun}})
 * Spring Inari Festival (on the vernal equinox)
-* Great Purification Ritual of Mizu-nazuki ({{ill|June 30|en|June 30|qid=Q2657|lt=June 30|1=June 30}})
-* Summer Festival ({{ill|July 17|en|July 17|qid=Q2729|lt=July 17|1=July 17}})
-* Special Festival ({{ill|October 17|en|October 17|qid=Q2962|lt=October 17|1=October 17}})
+* Great Purification Ritual of Mizu-nazuki ({{ill|June 30|en|June 30|qid=Q2657|lt=June 30}})
+* Summer Festival ({{ill|July 17|en|July 17|qid=Q2729|lt=July 17}})
+* Special Festival ({{ill|October 17|en|October 17|qid=Q2962|lt=October 17}})
 * Monthly Festival (on the 1st day of every month)
+
 == Local Information ==
+; Address:
+* {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}} {{ill|Fujiidera|en|Fujiidera|qid=Q634011|lt=Fujidera City}} Fujidera 1-chōme, 19-14
 ; Transportation:
-* Nearest Station: {{ill|Minami Osaka Line|en|Minami Osaka Line|qid=Q901342|lt=Kintetsu Minami-Osaka Line|1=Minami Osaka Line}}{{ill|Fujiidera Station|en|Fujiidera Station|qid=Q5507418|lt=Fujidera Station|1=Fujiidera Station}}; approximately an 8-minute walk (about 600 m to the southeast).
+* Nearest Station: {{ill|Minami Osaka Line|en|Minami Osaka Line|qid=Q901342|lt=Kintetsu Minami-Osaka Line}}{{ill|Fujiidera Station|en|Fujiidera Station|qid=Q5507418|lt=Fujidera Station}}; approximately an 8-minute walk (about 600 m to the southeast).
+
 == Footnotes ==
 {{Footnotes Help}}
 {{Reflist}}
+
 == References ==
-* {{cite book|lang=ja|title=Great Japan Geography Series|volume=Volume 38, New Edition Sagami Fudoki-kō, 3rd volume, Section 67 of Village Areas, Takaza District, Volume 9|chapter=Shibuyashō, Oshima Village, Suwa-sha|id={{NDLJP|1179219/184}}|ref={{sfnref|Shinpen Sagami Fudoki-kō, Oshima Village Suwa-sha|ja|新編相模国風土記稿 大島村 諏訪社}}|publisher={{ill|Yuzan-kaku|ja|雄山閣|lt=Yuzan-kaku|lt_ja=雄山閣|12=simple|13=User:Immanuelle/Yuzan-kaku|1=Yuzankaku|comment=changed title based on wikidata|qid=Q11659206}}|date=August 1932}}
+* {{cite book|lang=ja|title=Great Japan Geography Series|volume=Volume 38, New Edition Sagami Fudoki-kō, 3rd volume, Section 67 of Village Areas, Takaza District, Volume 9|chapter=Shibuyashō, Oshima Village, Suwa-sha|id={{NDLJP|1179219/184}}|ref={{sfnref|Shinpen Sagami Fudoki-kō, Oshima Village Suwa-sha|ja|新編相模国風土記稿 大島村 諏訪社}}|publisher={{ill|Yuzankaku|ja|雄山閣|lt=Yuzan-kaku|lt_ja=雄山閣|12=simple|13=User:Immanuelle/Yuzan-kaku|comment=changed title based on wikidata|qid=Q11659206}}|date=August 1932}}
+
 == See Also ==
-* {{ill|Takaya Shrine (Hayabusa City)|ja|高屋神社 (羽曳野市)|lt=Takaya Shrine|lt_ja=高屋神社|12=simple|13=User:Immanuelle/Takaya Shrine (Hayabusa City)|1=Takaya Shrine|comment=changed title based on wikidata|qid=Q11669282}} – Located in Hayabusa City, it also enshrines {{ill|Yamato Takeru|ja|日本武尊|1=Yamato Takeru|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}.
+* {{ill|Takaya Shrine|ja|高屋神社 (羽曳野市)|lt=Takaya Shrine|lt_ja=高屋神社|12=simple|13=User:Immanuelle/Takaya Shrine (Hayabusa City)|comment=changed title based on wikidata|qid=Q11669282}} – Located in Hayabusa City, it also enshrines {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}.
 == External Links ==
 {{Commonscat|Karakuni-jinja}}
-*[https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11008karakunijinja.html {{ill|Karakuni Shrine|ja|辛国神社|12=simple|13=User:Immanuelle/Karakuni Shrine|qq=}} - Osaka Prefecture Shrine Agency]
+*[https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11008karakunijinja.html {{ill|Karakuni Shrine|ja|辛国神社}} - Osaka Prefecture Shrine Agency]
 *[http://www.karakunijinjya.jp/ {{bad link|These are causing so much issues|Karakuni Shrine Official Homepage|ja|辛国神社 公式ホームページ}]]
+
 {{Shinto Horizontal}}
 {{osaka-green-100}}
+
+{{translated page|ja|辛国神社|version=90124934|comment=Imported full ja history}}
+
+{{Commons category|Karakuni-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Karakuni Shrine (Q48762570)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Shiki district|ja|志紀郡|zh|志紀郡|qid=Q11491125|1=Shiki district}} || {{ill|Karakuni Shrine|lt=Karakuni Shrine|ja|辛国神社|commons|Category:Karakuni-jinja|qid=Q48762570|1=Karakuni Shrine}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|34.569419|135.593660|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180958 DB]
+| {{ill|Shiki district|ja|志紀郡|zh|志紀郡|qid=Q11491125}} || {{ill|Karakuni Shrine|lt=Karakuni Shrine|ja|辛国神社|commons|Category:Karakuni-jinja|qid=Q48762570}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.569419|135.593660|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180958 DB]
 |}
-
-{{translated page|ja|辛国神社|version=90124934|comment=Imported full ja history}}
-{{Commons category|Karakuni-jinja}}
-
+{{wikidata link|Q48762570|co|commons:Category:Karakuni-jinja|da|d:Q48762570|ja|辛国神社|check_date=2026-05-16}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Fujiidera, Osaka]]
 [[Category:History of Fujiidera, Osaka]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Son-sha in Osaka Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]

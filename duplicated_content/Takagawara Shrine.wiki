@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takagawara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Takagawara Shrine
 |religious_affiliation = [[Shinto]]
@@ -15,62 +17,108 @@
 |pilgrimage_sites = 
 |annual_festival = 
 |rituals = {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}}
+|location = {{ill|Ise, Mie|qid=Q328067}}
 |coordinates = {{Coord|34.492917|N|136.706167}}
 |architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
+
 Takagawara Shrine (高河原神社, ''Takagawara Jinja''<ref>Shikinen Sengu Memorial Sengu-kan "[http://www.sengukan.jp/wp-content/themes/sengukan/shrine/area06.php Takagawara Shrine たかがわらじんじゃ>>]" (Accessed October 8, 2013).</ref><ref>{{ill|ITV|en|ITV|qid=Q246568|lt=ITV}} "[http://www.yoitokose.jp/ise/encyclopedia/t0010.php Takagawara Shrine | Ise Grand Shrine Encyclopedia | Ise-Shima Travel Yoitokose]" (Accessed October 8, 2013).</ref>, also pronounced ''Takakawara Jinja''<ref name="ic">Ise Bunka-sha (2008): p.39</ref><ref name="gk">Gakken Publishing (2013): p.57</ref>) is a [[Shinto]] shrine located in Miyago, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Japan. It is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=subordinate shrine (sessha/massha)}} of {{ill|Toyōke Daijingū|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyōke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}} (the Outer Shrine of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}) and classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
-It Ranks 10th among the 16 subordinate shrines of the Outer Shrine<ref>Ujiyamada City Hall (1929): pp.11–13.</ref>. The shrine is located within the precincts of {{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)|qq=}}, which is a separate shrine of the Outer Shrine<ref name="ic2">Ise Bunka-sha (2008): p.38</ref>.
+
+It Ranks 10th among the 16 subordinate shrines of the Outer Shrine<ref>Ujiyamada City Hall (1929): pp.11–13.</ref>. The shrine is located within the precincts of {{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)}}, which is a separate shrine of the Outer Shrine<ref name="ic2">Ise Bunka-sha (2008): p.38</ref>.
+
 == Overview (概要) ==
-The shrine is situated behind and to the right (northeast) of {{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya|qq=}}'s main hall.<ref name="ic"/>  
+Located at {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}} {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}} 1006 Miyago 1-chome<ref name="sk4">式内社研究会 編（1990）：294ページ</ref> (modern address: 1-3-19 Miyago, Ise City).  
+The shrine is situated behind and to the right (northeast) of {{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya}}'s main hall.<ref name="ic"/>  
+
 The shrine grounds are surrounded by a moat on three sides, which is believed to be a remnant of a tributary of the {{ill|Miya River (Mie)|en|Miya River (Mie)|qid=Q6884164|lt=Miyagawa River (Mie)}}.<ref name="ic"/>  
+
 The enshrined deity is {{ill|Tsukiyomi-no-Mikoto no Mitama|ja|月夜見尊御魂|12=simple|13=User:Immanuelle/Tsukiyomi-no-Mikoto no Mitama|ja_comment=jawiki link invalid}} (つきよみのみことのみたま).<ref name="ic"/><ref name="gk"/>  
-The shrine is located in Takagawara (高河原), an area near the Miyagawa River, and serves as a {{ill|Guardian deities|lt=Guardian deities|lt=Guardian deity|ja|守護神|12=simple|13=User:Immanuelle/guardian deity|qq=}} (守護神) for the land development of the surrounding region.<ref name="ic"/><ref name="gk"/>  
+
+The shrine is located in Takagawara (高河原), an area near the Miyagawa River, and serves as a {{ill|Guardian deities|lt=Guardian deities|lt=Guardian deity|ja|守護神|12=simple|13=User:Immanuelle/guardian deity}} (守護神) for the land development of the surrounding region.<ref name="ic"/><ref name="gk"/>  
+
 Many ancient texts describe the enshrined deity as the Mitama (spirit) of {{ill|Tsukuyomi-no-Mikoto|ja|月読|12=simple|13=User:Immanuelle/Tsukiyomi|ja_comment=jawiki redirects to ツクヨミ|comment=changed title based on wikidata|qid=Q595520}}.  
+
 However, the ''{{ill|Shinmei-chō Kōshō Saikō|ja|神名帳考證再考|12=simple|13=User:Immanuelle/Shinmei-chō Kōshō Saikō|ja_comment=jawiki link invalid}}'' (''神名帳考證再考'') claims that the deity is actually {{ill|Ukanomitama|ja|倉稲魂命|12=simple|13=User:Immanuelle/Ukanomitama-no-Mikoto|ja_comment=jawiki redirects to ウカノミタマ|comment=changed title based on wikidata|qid=Q3080728}} (倉稲魂命), the deity of grain and prosperity.  
-Another text, ''{{ill|Ninomiya Kansa Enkaku Kō|ja|二宮管社沿革考|12=simple|13=User:Immanuelle/Ninomiya Kansa Enkaku Kō|ja_comment=jawiki link invalid}}'' (''二宮管社沿革考''), asserts that the original name of the shrine in the ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' (延喜式神名帳) was "{{ill|Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja|川原坐国生神社|12=simple|13=User:Immanuelle/Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja_comment=jawiki link invalid}}", proving that its deity is {{ill|Kuninamino-Kami|ja|国生神|12=simple|13=User:Immanuelle/Kuninamino-Kami|ja_comment=jawiki link invalid}} (国生神), the god of land formation.<ref>Shikinaisha Kenkyūkai (1990): pp. 295–296</ref>  
+
+nother text, ''{{ill|Ninomiya Kansa Enkaku Kō|ja|二宮管社沿革考|12=simple|13=User:Immanuelle/Ninomiya Kansa Enkaku Kō|ja_comment=jawiki link invalid}}'' (''二宮管社沿革考''), asserts that the original name of the shrine in the ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}'' (延喜式神名帳) was "{{ill|Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja|川原坐国生神社|12=simple|13=User:Immanuelle/Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja_comment=jawiki link invalid}}", proving that its deity is {{ill|Kuninamino-Kami|ja|国生神|12=simple|13=User:Immanuelle/Kuninamino-Kami|ja_comment=jawiki link invalid}} (国生神), the god of land formation.<ref>Shikinaisha Kenkyūkai (1990): pp. 295–296</ref>  
+
 The main hall follows {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}} (神明造, the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}} architectural style) and has a wooden board roof ({{ill|Wood shingle|ja|板葺|12=simple|13=User:Immanuelle/Itabuki|ja_comment=jawiki redirects to 杮葺|comment=changed title based on wikidata|qid=Q199388}}), enclosed by a {{ill|Sacred fences|en|Tamagaki|qid=Q3078312|lt=Tamagaki}} (玉垣, sacred fence).   
-Unlike most {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}}・{{ill|Setsumatsusha|ja|末社|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}}・{{ill|Gūji|ja|所管社|12=simple|13=User:Immanuelle/Shokan-sha|ja_comment=jawiki redirects to 宮司|comment=changed title based on wikidata|qid=Q11453500}} (摂社・末社・所管社, auxiliary shrines) of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, which do not have an offering box ({{ill|Saisenbako|ja|賽銭箱|12=simple|13=User:Immanuelle/Saisenbako|qid=Q135491444}})<ref>Ise Bunka-sha (2008): p. 26</ref>, Takagawara Shrine uniquely has one.
+
+Unlike most {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся}}・{{ill|Setsumatsusha|ja|末社|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся}}・{{ill|Gūji|ja|所管社|12=simple|13=User:Immanuelle/Shokan-sha|ja_comment=jawiki redirects to 宮司|comment=changed title based on wikidata|qid=Q11453500}} (摂社・末社・所管社, auxiliary shrines) of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, which do not have an offering box ({{ill|Saisenbako|ja|賽銭箱|12=simple|13=User:Immanuelle/Saisenbako|qid=Q135491444}})<ref>Ise Bunka-sha (2008): p. 26</ref>, Takagawara Shrine uniquely has one.
+
 == History (歴史) ==
-Based on the definition of a {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}} (auxiliary shrine) within {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, this shrine was established before the compilation of the ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}'' in {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō (era)|comment=changed title based on wikidata|qid=Q97379316}} 5 ({{ill|927|en|927|qid=Q30470|lt=927}}).<ref name="ic P22">Ise Bunka-sha (2008): p. 22</ref>  
+Based on the definition of a {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся}} (auxiliary shrine) within {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, this shrine was established before the compilation of the ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}'' in {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō (era)|comment=changed title based on wikidata|qid=Q97379316}} 5 ({{ill|927|en|927|qid=Q30470|lt=927}}).<ref name="ic P22">Ise Bunka-sha (2008): p. 22</ref>  
+
 * The shrine is listed in that text as "{{ill|Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja|川原坐国生神社|12=simple|13=User:Immanuelle/Kawahara-ni-Masu-Kuninamino-Kami Jinja|ja_comment=jawiki link invalid}}".<ref name="sk4"/>  
 * Additionally, it is mentioned as "{{ill|Takagawara-sha|ja|高河原社|12=simple|13=User:Immanuelle/Takagawara-sha|ja_comment=jawiki link invalid}}" in the ''{{ill|Enryaku Gishikichō|ja|止由気宮儀式帳|12=simple|13=User:Immanuelle/Toyuke Daijingu Gishiki-chō|ja_comment=jawiki redirects to 延暦儀式帳|comment=changed title based on wikidata|qid=Q109596938}}''.<ref name="sk4"/>  
 * Since that text dates back to {{ill|Enryaku|en|Enryaku|qid=Q1373176|lt=Enryaku (era)}} 23 ({{ill|804|en|804|qid=Q29998|lt=804}}), this confirms that the shrine existed before that time.
+
 According to the ''{{ill|Watarai Ieyuki|ja|類聚神祇本源|12=simple|13=User:Immanuelle/Ruiju Jingi Hongen|ja_comment=jawiki redirects to 度会家行|comment=changed title based on wikidata|qid=Q11486121}}'', reconstructions were regularly conducted from {{ill|Tokuji|en|Tokuji|qid=Q1327170|lt=Tokuji (era)}} 1 ({{ill|1306|en|1306|qid=Q5716|lt=1306}}) onwards, under the supervision of a special Zōsai-shi (造替使, shrine reconstruction official).<ref name="sk6">Shikinaisha Kenkyūkai (1990): p. 296</ref>  
+
 The ''{{ill|Ninomiya Kansa Enkaku Kō|ja|二宮管社沿革考|12=simple|13=User:Immanuelle/Ninomiya Kansa Enkaku Kō|ja_comment=jawiki link invalid}}'' records that:  
-{{quote|"According to the '''Ōei Tōkō Nikki (応永頭工日記)''', on the '''fourth day of the first month in '''{{ill|Ōei|en|Ōei|qid=Q1193078|lt=Ōei (era)}} 26 ({{ill|1419|en|1419|qid=Q6205|lt=1419}})''', a great fire burned down '''{{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya|qq=}}''', its small shrine, '''Kawahara-sha (高河原社)''', and '''Imibiya-den (忌火屋殿, the sacred fire hall)'''."}} 
+
+{{quote|"According to the '''Ōei Tōkō Nikki (応永頭工日記)''', on the '''fourth day of the first month in '''{{ill|Ōei|en|Ōei|qid=Q1193078|lt=Ōei (era)}} 26 ({{ill|1419|en|1419|qid=Q6205|lt=1419}})''', a great fire burned down '''{{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya}}''', its small shrine, '''Kawahara-sha (高河原社)''', and '''Imibiya-den (忌火屋殿, the sacred fire hall)'''."}} 
+
 Thus, the shrine was confirmed to have existed until it burned down on {{ill|January 4 (Lunisolar)|ja|1月4日 (旧暦)|12=simple|13=User:Immanuelle/January 4 (old calendar)|comment=changed title based on wikidata|qid=Q835479}}, corresponding to {{ill|January 29|en|January 29|qid=Q2286|lt=January 29}}, 1419 (Julian calendar).<ref name="sk6" />  
+
+---
+
 === Reconstruction in the Edo Period===
 After this destruction, the shrine fell into neglect, and by the Early Modern Period (近世), its location was lost.  
+
 However, thanks to the efforts of {{ill|Kawabe Kiyonaga|ja|河邊精長|12=simple|13=User:Immanuelle/Kawabe Kiyonaga|ja_comment=jawiki link invalid}} (also known as {{ill|Kiyonaga Kawabe|ja|大中臣精長|12=simple|13=User:Immanuelle/Ōnakatomi Kiyonaga|ja_comment=jawiki redirects to 河辺精長|comment=changed title based on wikidata|qid=Q92924151}}), the Grand Chief Priest ({{ill|Gūji|ja|大宮司|12=simple|13=User:Immanuelle/Ōgūji|ja_comment=jawiki redirects to 宮司|comment=changed title based on wikidata|qid=Q11453500}}), the shrine was reconstructed on its present site on {{ill|Kanbun (era)|en|Kanbun (era)|qid=Q1146228|lt=Kanbun (era)}} 3, {{ill|July 7 (Lunisolar)|ja|7月7日 (旧暦)|12=simple|13=User:Immanuelle/July 7 (old calendar)|comment=changed title based on wikidata|qid=Q839741}} (corresponding to {{ill|August 9|en|August 9|qid=Q2782|lt=August 9}}, {{ill|1663|en|1663|qid=Q7577|lt=1663}} in the Gregorian calendar).  
+
 * ''{{ill|Shinmei Hisho|ja|神名秘書|12=simple|13=User:Immanuelle/Shinmei Hisho|ja_comment=jawiki link invalid}}'' states: "Located in Numaki-go, Yamada Village. East of {{ill|Tsukiyomi-no-Miya|ja|月読宮|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya|ja_comment=jawiki redirects to 月讀宮}}."
 * ''{{ill|Watarai Ieyuki|ja|類聚神祇本源|12=simple|13=User:Immanuelle/Ruiju Jingi Hongen|ja_comment=jawiki redirects to 度会家行|comment=changed title based on wikidata|qid=Q11486121}}'' states: "East of {{ill|Tsukiyomi-no-Miya|ja|月読宮|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya|ja_comment=jawiki redirects to 月讀宮}}, within the same {{ill|Sacred fences|en|Tamagaki|qid=Q3078312|lt=Tamagaki}} fence."<ref name="sk4"/>  
 * ''{{ill|Ninomiya Kansa Enkaku Kō|ja|二宮管社沿革考|12=simple|13=User:Immanuelle/Ninomiya Kansa Enkaku Kō|ja_comment=jawiki link invalid}}'' claims that the original shrine site was actually the present-day {{ill|Suhara Taisha|ja|須原大社|12=simple|13=User:Immanuelle/Suhara Taisha|ja_comment=jawiki link invalid}} in Ichinoki, Ise City.<ref>Shikinaisha Kenkyūkai (1990): p. 295</ref>  
+
+---
+
 === Reconstruction in the Modern Period===
 * In {{ill|1911|en|1911|qid=Q2076|lt=1911}} ({{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 44), the shrine was rebuilt.<ref>Ujiyamada City Hall (1929): p. 12</ref>  
 * In {{ill|1938|en|1938|qid=Q18645|lt=1938}} ({{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa}} 13), it was rebuilt again.
-* In {{ill|1957|en|1957|qid=Q5311|lt=1957}} (Shōwa 32), a major renovation was completed, and a sacred transfer ritual ({{ill|Sengyo|ja|遷御|12=simple|13=User:Immanuelle/Sengyo|qq=}}) was performed 20 years later.<ref>Sakurai (1991): p. 298</ref>  
+* In {{ill|1957|en|1957|qid=Q5311|lt=1957}} (Shōwa 32), a major renovation was completed, and a sacred transfer ritual ({{ill|Sengyo|ja|遷御|12=simple|13=User:Immanuelle/Sengyo}}) was performed 20 years later.<ref>Sakurai (1991): p. 298</ref>  
+
+---
+
 == Rites and Festivals (祭事) ==
+
 * February – {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinen-sai (祈年祭)}} (Harvest Prayer Festival)
-* June & December – {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai (月次祭)|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (Monthly Festival)
+* June & December – {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai (月次祭)|13=User:Immanuelle/Tsukinami-no-Matsuri}} (Monthly Festival)
 * October – {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai (神嘗祭)}} (Offering of First Fruits Festival) 
 * November – {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niiname-sai (新嘗祭)}} (Thanksgiving Harvest Festival)
+
 These four major rituals are conducted on-site by a Negi (禰宜, senior priest) in巡回祭典 (巡回祭,巡行 ceremony format).  
+
 The following six rites are performed remotely (遥祀, Yōshi):    
+
 * January – {{ill|Saitan-sai|ja|歳旦祭|12=simple|13=User:Immanuelle/Saitan-sai (歳旦祭)|comment=changed title based on wikidata|qid=Q11546824}} (New Year's Festival) 
 * January – {{ill|Genshi-sai|ja|元始祭|12=simple|13=User:Immanuelle/Genshi-sai (元始祭)|comment=changed title based on wikidata|qid=Q11387821}} (Imperial Foundation Festival)
 * February 11 – {{ill|Kenkoku-kinen-sai (建国記念祭)|ja|建国記念祭|12=simple|13=User:Immanuelle/Kenkoku-kinen-sai (建国記念祭)|ja_comment=jawiki link invalid}} (National Foundation Day)
 * May & August – {{ill|Kazahi-no-Misai|ja|風日祈祭|2=ja|3=風日祈祭|qid=Q135524493|12=simple|13=User:Immanuelle/Kaze-no-Hi-no-Matsuri (風日祈祭)|ja_comment=jawiki link invalid|qid=Q135524493}} (Wind and Rain Prayers)
 * December 23 – {{ill|The Emperor's Birthday|ja|天長祭|12=simple|13=User:Immanuelle/Tenchō-sai (天長祭)|ja_comment=jawiki redirects to 天皇誕生日|comment=changed title based on wikidata|qid=Q72318}} (Emperor's Birthday Festival)
+
+---
+
 == Access (交通) ==
 [[File:Tsukiyominomiyamae Bus Stop.jpg|thumb|Tsukiyomi-no-Miya-mae Bus Stop]]
+
 Public Transport:  
+
 * 10-minute walk (550m) from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise City Station}} (JR & Kintetsu).<ref>Ise Bunka-sha (2008): p. 33</ref> 
+
 * 4-minute walk (360m) from Shindō Bus Stop (三重交通).
+
 By Car:  
+
 * Approx. 5 minutes (2.5km) from Ise Nishi IC (伊勢西IC, Ise Expressway).
 * Metered parking available near the entrance.
+
+---
+
 == References ==
 {{Reflist}}
+
 == Bibliography ==
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
@@ -78,11 +126,20 @@ By Car:
 * 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 == See Also ==
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+* {{ill|List of Shikinaisha in Ise Province|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|3=伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
 == External Links ==
 * [http://www.jingukaikan.jp/125mairi/m02/0203.html 高河原神社（たかがわらじんじゃ）] - 財団法人伊勢神宮崇敬会
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|高河原神社|version=90499812|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Takagawara Shrine (Q17225931)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -90,10 +147,10 @@ By Car:
 |-
 | RONSHA || {{ill|Takagawara Shrine|lt=Takagawara Shrine|ja|高河原神社|qid=Q17225931}} || — || — || part of {{ill|Toyōke Daijingū|qid=Q11633343}} || {{ill|Kaharano- Shrine|lt=Kaharano- Shrine|qid=Q135039266}} || {{coord|34.492917|136.706167|display=inline}} || —
 |}
-
-{{translated page|ja|高河原神社|version=90499812|comment=Imported full ja history}}
-
+{{wikidata link|Q17225931|da|d:Q17225931|ja|高河原神社|check_date=2026-05-10}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
+[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]

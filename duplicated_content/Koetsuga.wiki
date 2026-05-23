@@ -1,33 +1,89 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Koetsuga for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
-'''Shōotsuge''' (小乙下) was a {{ill|Rank within the cap Rank system|ja|冠位|1=Transition of Crown and Court Ranks|lt=Crown Rank|12=simple|13=User:Immanuelle/Rank within the cap Rank system|13=User:Immanuelle/Transition of Crown and Court Ranks|ja_comment=jawiki redirects to 冠位・位階制度の変遷}} used in Japan from {{ill|649|en|649|qid=Q31117|lt=649|1=649}} to {{ill|685|en|685|qid=Q33480|lt=685|1=685}}. The Rank's position within the hierarchy changed after {{ill|664|en|664|qid=Q30621|lt=664|1=664}}, making it either the second or third lowest Rank. Initially positioned below {{ill|Shōotsujō|ja|小乙上|12=simple|13=User:Immanuelle/Shōotsujō|1=Shōotsu-jō|comment=changed title based on wikidata|qid=Q11458808}} and above {{ill|Risshin|ja|立身|12=simple|13=User:Immanuelle/Risshin|1=Risshin|comment=changed title based on wikidata|qid=Q11598243}}, it later Ranked below {{ill|Shōotsuchū|ja|小乙中|12=simple|13=User:Immanuelle/Shōotsuchū|1=Shōotsu-chū|comment=changed title based on wikidata|qid=Q11458809}} and above {{ill|Daiken|ja|大建|12=simple|13=User:Immanuelle/Daiken|1=Daiken|comment=changed title based on wikidata|qid=Q11435403}}.
+'''Shōotsuge''' (小乙下) was a {{ill|Rank within the cap Rank system|ja|冠位|lt=Crown Rank}} used in Japan from {{ill|649|en|649|qid=Q31117|lt=649}} to {{ill|685|en|685|qid=Q33480|lt=685}}. The Rank's position within the hierarchy changed after {{ill|664|en|664|qid=Q30621|lt=664}}, making it either the second or third lowest Rank. Initially positioned below {{ill|Shōotsu-jō|ja|小乙上|12=simple|13=User:Immanuelle/Shōotsujō|comment=changed title based on wikidata|qid=Q11458808}} and above {{ill|Risshin|ja|立身|12=simple|13=User:Immanuelle/Risshin|comment=changed title based on wikidata|qid=Q11598243}}, it later Ranked below {{ill|Shōotsu-chū|ja|小乙中|12=simple|13=User:Immanuelle/Shōotsuchū|comment=changed title based on wikidata|qid=Q11458809}} and above {{ill|Daiken|ja|大建|12=simple|13=User:Immanuelle/Daiken|comment=changed title based on wikidata|qid=Q11435403}}.
+
 == Overview ==
-The Rank was introduced in {{ill|Taika (era)|en|Taika (era)|qid=Q1077930|lt=Taika|1=Taika (era)}} 5 (649) as part of the {{ill|19 Cap Rank System|ja|冠位十九階|12=simple|13=User:Immanuelle/19 Cap Rank System|qq=}}, splitting the former {{ill|Shōkoku|ja|小黒|12=simple|13=User:Immanuelle/Shōkoku|1=shoukoku|comment=changed title based on wikidata|qid=Q11464511}} Rank into {{ill|Shōotsujō|ja|小乙上|12=simple|13=User:Immanuelle/Shōotsujō|1=Shōotsu-jō|comment=changed title based on wikidata|qid=Q11458808}} and Shōotsuge<ref>『日本書紀』大化5th year （649th year ）2月条。</ref>. Shōotsuge was the 18th Rank out of 19, positioned just above {{ill|Risshin|ja|立身|12=simple|13=User:Immanuelle/Risshin|1=Risshin|comment=changed title based on wikidata|qid=Q11598243}}.
-In the 3rd year of Emperor Tenji's reign (664), the {{ill|26 Cap Rank System|ja|冠位二十六階|12=simple|13=User:Immanuelle/26 Cap Rank System|1=26-Rank cap system|comment=changed title based on wikidata|qid=Q17209277}} was established, subdividing Shōotsu into three levels: upper, middle, and lower. Shōotsuge became the 24th Rank out of 26, just above Daiken.
-The Rank was abolished in the 14th year of Emperor Tenmu's reign (685) with the introduction of the {{ill|48 Cap Rank System|ja|冠位四十八階|12=simple|13=User:Immanuelle/48 Cap Rank System|ja_comment=jawiki link invalid|qid=Q135579719|1=48 Cap Rank System}}.
+The Rank was introduced in {{ill|Taika (era)|en|Taika (era)|qid=Q1077930|lt=Taika}} 5 (649) as part of the {{ill|19 Cap Rank System|ja|冠位十九階}}, splitting the former {{ill|shoukoku|ja|小黒|12=simple|13=User:Immanuelle/Shōkoku|comment=changed title based on wikidata|qid=Q11464511}} Rank into {{ill|Shōotsu-jō|ja|小乙上|12=simple|13=User:Immanuelle/Shōotsujō|comment=changed title based on wikidata|qid=Q11458808}} and Shōotsuge<ref>『日本書紀』大化5th year （649th year ）2月条。</ref>. Shōotsuge was the 18th Rank out of 19, positioned just above {{ill|Risshin|ja|立身|12=simple|13=User:Immanuelle/Risshin|comment=changed title based on wikidata|qid=Q11598243}}.
+
+In the 3rd year of Emperor Tenji's reign (664), the {{ill|26-Rank cap system|ja|冠位二十六階|12=simple|13=User:Immanuelle/26 Cap Rank System|comment=changed title based on wikidata|qid=Q17209277}} was established, subdividing Shōotsu into three levels: upper, middle, and lower. Shōotsuge became the 24th Rank out of 26, just above Daiken.
+
+The Rank was abolished in the 14th year of Emperor Tenmu's reign (685) with the introduction of the {{ill|48 Cap Rank System|ja|冠位四十八階|12=simple|13=User:Immanuelle/48 Cap Rank System|ja_comment=jawiki link invalid|qid=Q135579719}}.
+
 == Individuals Holding the Rank ==
-The {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki|1=Nihon Shoki}} mentions several individuals who held the Shōotsuge Rank:
-* '''{{ill|Tajihi no Hinamori|ja|他田日奉部忍|12=simple|13=User:Immanuelle/Tajihi no Hinamori|ja_comment=jawiki link invalid}}''': Served as a minor official (Shōryō) of {{ill|Kaijō District, Chiba|en|Kaijō District, Chiba|qid=Q6347746|lt=Kaijo District|1=Kaijō District, Chiba}} in Shimōsa Province during Emperor Kōtoku's reign.
-* '''{{ill|Mibu no Maro|ja|壬生麿|12=simple|13=User:Immanuelle/Mibu no Maro|ja_comment=jawiki redirects to 壬生麻呂|1=Mibu no Maro|comment=changed title based on wikidata|qid=Q109287708}}''': Recognized in {{ill|Hakuchi (era)|en|Hakuchi (era)|qid=Q540118|lt=Hakuchi|1=Hakuchi (era)}} 4 (653) as Ibaraki no Kuni no Miyatsuko, involved in founding Namekata District.
-* '''{{ill|Nakatomi no Hitooshio|ja|中臣間人老|12=simple|13=User:Immanuelle/Nakatomi no Hitooshio|1=nakatominohashihito no oyu|comment=changed title based on wikidata|qid=Q66365122}}''': Mentioned in Hakuchi 5 (654) as part of a Tang envoy delegation.
-* '''{{ill|Saniguna|ja|沙尼具那|12=simple|13=User:Immanuelle/Saniguna|ja_comment=jawiki link invalid}}''': An Emishi chieftain who surrendered in Saimei 4 (658) and became a district official.
-* '''{{ill|Aobiru|ja|青蒜|12=simple|13=User:Immanuelle/Aobiru|1=Aohiru|comment=changed title based on wikidata|qid=Q11662754}}''': Another Emishi leader from Saimei 4 (658), later appointed as a minor official in Tsugaru.
+The {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}} mentions several individuals who held the Shōotsuge Rank:
+* '''{{ill|Tajihi no Hinamori|ja|他田日奉部忍}}''': Served as a minor official (Shōryō) of {{ill|Kaijō District, Chiba|en|Kaijō District, Chiba|qid=Q6347746|lt=Kaijo District}} in Shimōsa Province during Emperor Kōtoku's reign.
+* '''{{ill|Mibu no Maro|ja|壬生麿|12=simple|13=User:Immanuelle/Mibu no Maro|ja_comment=jawiki redirects to 壬生麻呂|comment=changed title based on wikidata|qid=Q109287708}}''': Recognized in {{ill|Hakuchi (era)|en|Hakuchi (era)|qid=Q540118|lt=Hakuchi}} 4 (653) as Ibaraki no Kuni no Miyatsuko, involved in founding Namekata District.
+* '''{{ill|nakatominohashihito no oyu|ja|中臣間人老|12=simple|13=User:Immanuelle/Nakatomi no Hitooshio|comment=changed title based on wikidata|qid=Q66365122}}''': Mentioned in Hakuchi 5 (654) as part of a Tang envoy delegation.
+* '''{{ill|Saniguna|ja|沙尼具那}}''': An Emishi chieftain who surrendered in Saimei 4 (658) and became a district official.
+* '''{{ill|Aohiru|ja|青蒜|12=simple|13=User:Immanuelle/Aobiru|comment=changed title based on wikidata|qid=Q11662754}}''': Another Emishi leader from Saimei 4 (658), later appointed as a minor official in Tsugaru.
 - An unidentified individual in Saimei 4 (658), tasked with constructing the Tsugisara Palisade.
-* '''{{ill|Ōtomo no Inazumi|ja|大伴稲積|12=simple|13=User:Immanuelle/Ōtomo no Inazumi|ja_comment=jawiki link invalid|qid=Q135579720|1=Ōtomo no Inazumi}}''': Recognized for constructing the Nunozashi Palisade in Saimei 4 (658).
-* '''{{ill|Ue no Mitsuchichi|ja|上光父|12=simple|13=User:Immanuelle/Ue no Mitsuchichi|ja_comment=jawiki link invalid}}''': Assigned to Tanegashima as a minor envoy in Tenmu 8 (679).
+* '''{{ill|Ōtomo no Inazumi|ja|大伴稲積|12=simple|13=User:Immanuelle/Ōtomo no Inazumi|ja_comment=jawiki link invalid|qid=Q135579720}}''': Recognized for constructing the Nunozashi Palisade in Saimei 4 (658).
+* '''{{ill|Ue no Mitsuchichi|ja|上光父}}''': Assigned to Tanegashima as a minor envoy in Tenmu 8 (679).
+
 == Shōotsuge in Mokkan (Wooden Tablets) ==
-Two mokkan (wooden tablets) mentioning the Rank Shōotsuge have been excavated from the {{ill|Asuka Palace Site|ja|飛鳥京跡|12=simple|13=User:Immanuelle/Asuka Palace Site|1=Asuka-kyō Ruins|comment=changed title based on wikidata|qid=Q11665955}}:
+Two mokkan (wooden tablets) mentioning the Rank Shōotsuge have been excavated from the {{ill|Asuka-kyō Ruins|ja|飛鳥京跡|12=simple|13=User:Immanuelle/Asuka Palace Site|comment=changed title based on wikidata|qid=Q11665955}}:
 - One found in the 51st excavation (1975) contains the phrase "Shōotsuge Rank" and is dated to 649–664 based on associated Ranks.
 - Another found in the 104th excavation (1984) includes the term "Shōotsuge" along with references to "Daiken" and the year "辛巳" (681).
+
 == Notes ==
 {{reflist}}
+
 == References ==
 - Tokyo Imperial University Historical Compilation Department, 『大日本古文書』 Volume 3, Tokyo Imperial University, 1902.
-- Nito Atsushi, "Asuka and Fujiwara Capitals," in {{ill|The Ancient History Told by Wooden Tablets|ja|木簡が語る古代史|12=simple|13=User:Immanuelle/The Ancient History Told by Wooden Tablets|ja_comment=jawiki link invalid}}, Yoshikawa Kōbunkan, 1996, ISBN 4-642-07492-9.
+- Nito Atsushi, "Asuka and Fujiwara Capitals," in {{ill|The Ancient History Told by Wooden Tablets|ja|木簡が語る古代史}}, Yoshikawa Kōbunkan, 1996, ISBN 4-642-07492-9.
+
 == Related Articles ==
-* {{ill|Transition of the Cap and Rank System|ja|冠位・位階制度の変遷|1=Transition of Crown and Court Ranks|12=simple|13=User:Immanuelle/Transition of the Cap and Rank System|13=User:Immanuelle/Transition of Crown and Court Ranks|qq=}}
+* {{ill|Transition of the Cap and Rank System|ja|冠位・位階制度の変遷}}
+
 {{translated page|ja|小乙下|version=76169873|comment=Imported full ja history}}
 
+==Merged second translation==
+'''Shōotsuge''' (小乙下) was a {{ill|Rank|en|Rank|qid=Q4120621|lt=Rank}} in the Japanese [[court Rank system]] used between {{ill|649|en|649|qid=Q31117|lt=649}} and {{ill|685|en|685|qid=Q33480|lt=685}}. The Rank's position changed with time: it was the second lowest Rank until {{ill|664|en|664|qid=Q30621|lt=664}}, and after that, it became the third lowest. It was below [[Shōotsujō|Shōotsujō]] and [[Shōotsuchū|Shōotsuchū]] and above [[Risshin|Risshin]] or {{ill|Daiken|en|Daiken|qid=Q108423490|lt=Daiken}} depending on the period.
+
+== Overview ==
+
+Shōotsuge was introduced in {{ill|Taika (era)|en|Taika (era)|qid=Q1077930|lt=Taika (era)}} 5 (649 CE) as part of the [[nineteen-Rank system]].<ref>''Nihon Shoki,'' Taika 5 (649 CE), 2nd month. Unless otherwise noted, references to events in the ''Nihon Shoki'' follow the dates provided therein.</ref> It was created by splitting the previous [[Seven Colors and Thirteen Ranks|Shikishijūsankai]] Rank of [[Kokuro|Kokuro]] into [[Shōotsujō|Shōotsujō]] and Shōotsuge. Shōotsuge was the 18th Rank out of 19, with [[Risshin|Risshin]] being the lowest.
+
+In the 3rd year of {{ill|Emperor Tenji|en|Emperor Tenji|qid=Q314802|lt=Emperor Tenji}} (664 CE), the [[twenty-six-Rank system]] was implemented, dividing Shōotsu into three Ranks: [[Shōotsujō|Shōotsujō]], [[Shōotsuchū|Shōotsuchū]], and Shōotsuge. Under this system, Shōotsuge became the 24th Rank out of 26, below [[Shōotsuchū|Shōotsuchū]] and above {{ill|Daiken|en|Daiken|qid=Q108423490|lt=Daiken}}.
+
+In the 14th year of {{ill|Emperor Tenmu|en|Emperor Tenmu|qid=Q335181|lt=Emperor Tenmu}} (685 CE), the [[forty-eight-Rank system]] was introduced, and the naming conventions for Ranks were overhauled, resulting in the abolition of Shōotsuge.
+
+== Individuals Awarded Shōotsuge ==
+
+Three records in the ''[[Nihon Shoki]]'' mention individuals granted this Rank. [[Nakatomi no Hataru no Oi]] was an envoy to [[:en:Tang China|Tang China]] in {{ill|Hakuchi|en|Hakuchi|qid=Q5640615|lt=Hakuchi}} 5 (654 CE). [[Saniguna]] and [[Aobiru]] were {{ill|Emishi|en|Emishi|qid=Q932574|lt=Emishi}} chieftains who surrendered to {{ill|Abe no Hirafu|en|Abe no Hirafu|qid=Q479775|lt=Abe no Hirafu}}'s northern expedition in [[:en:Saimei|Saimei]] 4 (658 CE) and were brought to the capital, entertained, and granted court Ranks. The [[Fort Lords]] of [[Tukisara Castle|Tsukisara Fort]] and [[Numusari Castle|Numusari Fort]] were also assigned this Rank. [[Kamimitu]] served as a junior envoy on a mission to the {{ill|Tanegashima|en|Tanegashima|qid=Q696228|lt=island of Tane}} in [[:en:Tenmu|Tenmu]] 8 (679 CE), under [[Yamabaikainomuraji|Yamabaikainomuraji]] of [[Ōotsuge]] Rank.
+
+The ''[[Shōsōin documents]]'' mention a Shōotsuge named [[Othera no Hihohe no Oshikami|Oshikami]], whose grandfather served as a minor official in [[:en:Shimousa Province|Shimousa Province]] during [[Emperor Kōtoku]]'s reign.<ref>''Dai Nihon Komonjo,'' Vol. 3, pp. 149–150.</ref> Another record in the ''[[Hitachi Fudoki]]'' describes [[Mibu no Maro]], an official from [[Ibaraki Province]], who worked with [[Naka Province Chief|Naka Province Chief]] [[Mibu no Fukiko]] to establish [[Namegata District]] in {{ill|Hakuchi|en|Hakuchi|qid=Q5640615|lt=Hakuchi}} 4 (653 CE).<ref>''Hitachi Fudoki,'' Namegata District section.</ref>
+
+=== Individuals Known to Hold Shōotsuge ===
+* {{ill|Othera no Hihohe no Oshikami|ja|他田日奉部忍}} - During [[Emperor Kōtoku]]'s reign (645–654 CE), a minor official in [[Kaijo District]].
+* {{ill|Mibu no Maro|ja|壬生麿|12=simple|13=User:Immanuelle/Mibu no Maro|ja_comment=jawiki redirects to 壬生麻呂|comment=changed title based on wikidata|qid=Q109287708}} - Recorded in Hakuchi 4 (653 CE) as [[Ibaraki Province Chief]].
+* {{ill|nakatominohashihito no oyu|ja|中臣間人老|12=simple|13=User:Immanuelle/Nakatomi no Hataru no Oi|comment=changed title based on wikidata|qid=Q66365122}} - Recorded in Hakuchi 5 (654 CE), served as a Tang China envoy.
+* {{ill|Saniguna|ja|沙尼具那}} - Promoted on Saimei 4 (658 CE), served as chief of [[Numusari Fort]].
+* {{ill|Aohiru|ja|青蒜|12=simple|13=User:Immanuelle/Aobiru|comment=changed title based on wikidata|qid=Q11662754}} - Promoted on Saimei 4 (658 CE), served as minor official of [[Tsukisara Castle]].
+* {{ill|ki no miyatsuko|ja|柵造|12=simple|13=User:Immanuelle/Fort Lord|comment=changed title based on wikidata|qid=Q17990352}} - Promoted on Saimei 4 (658 CE), chief of [[Tsukisara Castle]].
+* {{ill|Ōtomo no Inazumi|ja|大伴稲積|12=simple|13=User:Immanuelle/Ōtomo no Inatsumi|ja_comment=jawiki link invalid|qid=Q135579720}} - Promoted on Saimei 4 (658 CE), chief of [[Numusari Castle]].
+* {{ill|Kamimitu|ja|上光父}} - Recorded in Tenmu 8 (679 CE) as junior envoy to Tanegashima.
+
+== Wooden Tablets with Shōotsuge Markings ==
+
+Two wooden tablets from the [[Asuka Palace site]] bear inscriptions of the Rank Shōotsuge. One, discovered during the 51st excavation in 1975, is labeled "Shōotsuge Rank" alongside tablets inscribed with [[Shōsanjō|Shōsanjō]] and [[Ōhanage|Ōhanage]]. Based on the timeframe of the latter Rank, the tablet dates between {{ill|649|en|649|qid=Q31117|lt=649}} and {{ill|664|en|664|qid=Q30621|lt=664}}.<ref>Nitō, Atsushi. "Capitals of Asuka and Fujiwara," pp. 100–102.</ref>
+
+The second, found during the 104th excavation in 1984, was inscribed on shavings along with "Ōotsuge," "Year of Xin-Si," and "Intercalary Month." The year Xin-Si corresponds to [[:en:Tenmu|Tenmu]] 10 (681 CE), which also had an intercalary month.<ref>Nitō, Atsushi. "Capitals of Asuka and Fujiwara," p. 104.</ref>
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* Tokyo Imperial University Archives, ''[[Dai Nihon Komonjo]]'', Vol. 3, Tokyo Imperial University, 1902.
+* Nitō, Atsushi. "Capitals of Asuka and Fujiwara," in Kunio Hirano and Yasumitsu Suzuki, eds., ''Chronicles Told by Wooden Tablets'' Vol. 1 (Capitals and Daily Life), Yoshikawa Kōbunkan, 1996. ISBN 4-642-07492-9.
+
+== See Also ==
+* {{ill|History of the court Rank and title system|ja|冠位・位階制度の変遷}}
+
+{{translated page|ja|小乙下|version=76169873|comment=Imported full ja history}}
+
+{{wikidata link|Q11458810|ja|小乙下|check_date=2026-05-17}}
 [[Category:Asuka period]]
 [[Category:Cap-and-Rank System]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no short description]]
 [[Category:Kan'i]]
+[[Category:Pages with duplicated content]]

@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ubagami_Daijingu_Togyo_Festival for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
 {{Multiple issues
 | Sources needed = July 2019
 | Original research = September 2019
@@ -7,17 +8,25 @@
 | Excessive images = March 2019
 }}
 '''Ubagami Daijingū Togyo Festival''' (姥神大神宮渡御祭) is the grand festival (例大祭) of [[:en:Hokkaidō|Hokkaido's]] oldest shrine, [[Ubagami Daijingū]] ({{ill|Ubagami Daijingū|en|Ubagami Daijingū|qid=Q3547609|lt=Ubagami Daijingū}}), located in [[Esashi, Hiyama District, Hokkaido|Esashi Town, Hiyama District]].
+
 == Overview ==
 The festival, held over three days annually from {{ill|August 9|en|August 9|qid=Q2782|lt=August 9}}, {{ill|August 10|en|August 10|qid=Q2779|lt=10}}, and {{ill|August 11|en|August 11|qid=Q2778|lt=11}}, is considered the oldest in Hokkaido with a history spanning over 380 years<ref name="ubagami-history" group="note">As of 2024</ref>. The event includes a [[Mikoshi]] procession followed by parade floats (referred to as "Yama" in the town), which travel through the town. This tradition is influenced by the cultural heritage of the {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto}} [[Gion Matsuri|Gion Festival]] via the {{ill|Kitamaebune|en|Kitamaebune|qid=Q3440099|lt=Kitamaebune}} trade routes. On March 19, {{ill|2019|en|2019|qid=Q25274|lt=2019}} ({{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei}} 31), the festival was designated as an [[Important Intangible Folk Cultural Property of Hokkaido|Intangible Folk Cultural Property of Hokkaido]].
+
 The origins of the festival can be referenced in {{ill|Ubagami Daijingū|en|Ubagami Daijingū|qid=Q3547609|lt=Ubagami Daijingū#History}}.
+
 == History ==
 The festival’s origins are unclear, but common belief ties it to the year {{ill|1644|en|1644|qid=Q6920|lt=1644}} ({{ill|Shōhō|en|Shōhō|qid=Q1146192|lt=Shōhō}} 1), when Ubagami Daijingū was relocated to its current site<ref>{{Sfn|Festival Record|1999|page=10}}</ref>.
+
 By {{ill|1816|en|1816|qid=Q6953|lt=1816}} ({{ill|Culture|en|Culture|qid=Q11042|lt=Bunka}} 13), records from the Fujieda family in the document “Shrine Grounds Chronicle”<ref>{{Sfn|Festival Record|1999|page=10}}</ref> state that the festival alternated yearly between Ubagami Daijingū and Benten Shrine on [[Kamome Island, Esashi|Kamome Island]] (present-day {{ill|Itsukushima Shrine (Kamome Island)|ja|厳島神社 (江差町)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Kamome Island)|ja_comment=jawiki link invalid}}) during August 14–16. This practice continued until {{ill|1862|en|1862|qid=Q7698|lt=1862}} ({{ill|Bunkyū|en|Bunkyū|qid=Q730266|lt=Bunkyū}} 2), when the two shrines’ festivals were separated<ref>{{Sfn|Festival Record|1999|page=11}}</ref>.
+
 From {{ill|1962|en|1962|qid=Q2764|lt=1962}} (Showa 37), the festival dates were August 20–23 but were changed to the current schedule through a town-wide survey<ref>{{Sfn|Festival Record|1999|page=12}}</ref>.
+
 == Floats ("Yama") ==
 In Esashi, the parade floats are referred to as "Yama" and are cherished by each neighborhood. The floats follow the mikoshi procession. This practice began in the mid-19th century and continues to this day<ref>{{Sfn|Ubagami Daijingū Festival Photo Collection|2002|pages=110-111}}</ref>.
+
 === Types of Floats ===
 The festival features 13 floats, each unique in design and origin:
+
 {| class="wikitable" style="text-align: center;"
 |-
 ! Float Name !! Character !! Neighborhood !! Notes
@@ -48,66 +57,163 @@ The festival features 13 floats, each unique in design and origin:
 |-
 | Shinei Yama || {{ill|Takeda Shingen|en|Takeda Shingen|qid=Q276404|lt=Takeda Shingen}} || Shinei || 
 |}
+
 The oldest float is Jingū Yama’s figure of {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}, crafted in {{ill|Hōreki|en|Hōreki|qid=Q1194397|lt=Hōreki}} 4 (1754). It is a designated Tangible Folk Cultural Property of Hokkaido.
+
 Floats like Shōmu Yama feature unique karakuri mechanisms that allow movement. Matsuhōmaru, the only "ship float," is built in the style of a traditional Japanese ship.
+
 For more information, visit the [https://esashi.town/tourism Ubakami Festival Website].
+
 == See also ==
 *
-** {{ill|Hakodate Port Festival|en|12=simple|13=User:Immanuelle/Hakodate Port Festival|qq=}} – Features dances like the {{ill|Squid Dance|en|12=simple|13=User:Immanuelle/Squid Dance|qq=}}.
-* {{ill|Aomori Prefecture|en|12=simple|13=User:Immanuelle/Aomori Prefecture|qq=}}
-** {{ill|Aomori Nebuta Festival|en|12=simple|13=User:Immanuelle/Aomori Nebuta Festival|qq=}} – One of the {{ill|Three Great Festivals of Tohoku|lt=Three Great Festivals of Tohoku|lt=Three Great Festivals of Tohoku|en|12=simple|13=User:Immanuelle/Three Great Festivals of Tohoku|qq=}}.
-** {{ill|Hirosaki Neputa Matsuri|lt=Hirosaki Neputa Matsuri|lt=Hirosaki Neputa Festival|en|12=simple|13=User:Immanuelle/Hirosaki Neputa Festival|qq=}}
+** {{ill|Hakodate Port Festival|en|12=simple|13=User:Immanuelle/Hakodate Port Festival}} – Features dances like the {{ill|Squid Dance|en|12=simple|13=User:Immanuelle/Squid Dance}}.
+* {{ill|Aomori Prefecture|en|12=simple|13=User:Immanuelle/Aomori Prefecture}}
+** {{ill|Aomori Nebuta Festival|en|12=simple|13=User:Immanuelle/Aomori Nebuta Festival}} – One of the {{ill|Three Great Festivals of Tohoku|lt=Three Great Festivals of Tohoku|lt=Three Great Festivals of Tohoku|en|12=simple|13=User:Immanuelle/Three Great Festivals of Tohoku}}.
+** {{ill|Hirosaki Neputa Matsuri|lt=Hirosaki Neputa Matsuri|lt=Hirosaki Neputa Festival|en|12=simple|13=User:Immanuelle/Hirosaki Neputa Festival}}
 * {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}
-** {{ill|Sendai Tanabata Festival|en|12=simple|13=User:Immanuelle/Sendai Tanabata Festival|qq=}} – One of the Three Great Festivals of Tohoku.
-* {{ill|Akita Prefecture|en|12=simple|13=User:Immanuelle/Akita Prefecture|qq=}}
-** {{ill|Akita Kantō|en|12=simple|13=User:Immanuelle/Kanto Festival|qq=}} – One of the Three Great Festivals of Tohoku.
-* {{ill|Fukushima Prefecture|en|12=simple|13=User:Immanuelle/Fukushima Prefecture|qq=}}
-** {{ill|Fukushima Waraji Festival|en|12=simple|13=User:Immanuelle/Fukushima Waraji Festival|qq=}}
-* {{ill|Gunma Prefecture|en|12=simple|13=User:Immanuelle/Gunma Prefecture|qq=}}
-** {{ill|Kiryu Yagibushi Festival|en|12=simple|13=User:Immanuelle/Kiryu Yagibushi Festival|qq=}}
-* {{ill|Tokyo|en|12=simple|13=User:Immanuelle/Tokyo|qq=}}
-** {{ill|Fukagawa Matsuri|en|12=simple|13=User:Immanuelle/Fukagawa Matsuri|qq=}} – One of the {{ill|Three Great Festivals of Edo|en|12=simple|13=User:Immanuelle/Three Great Festivals of Edo|qq=}}.
-* {{ill|Ishikawa Prefecture|en|12=simple|13=User:Immanuelle/Ishikawa Prefecture|qq=}}
-** {{ill|Iida-machi Toro-yama Festival|en|12=simple|13=User:Immanuelle/Iida-machi Toro-yama Festival|qq=}}
-* {{ill|Gifu Prefecture|en|12=simple|13=User:Immanuelle/Gifu Prefecture|qq=}}
-** {{ill|Gujo Odori|en|12=simple|13=User:Immanuelle/Gujo Odori|qq=}}
-* {{ill|Aichi Prefecture|en|12=simple|13=User:Immanuelle/Aichi Prefecture|qq=}}
-** {{ill|Owari Tsushima Tennō Festival|en|12=simple|13=User:Immanuelle/Owari Tsushima Tennō Festival|qq=}} – One of the {{ill|Three Great River Festivals of Japan|en|12=simple|13=User:Immanuelle/Three Great River Festivals of Japan|qq=}}.
-* {{ill|Kyoto Prefecture|en|12=simple|13=User:Immanuelle/Kyoto Prefecture|qq=}}
-** {{ill|Gion Matsuri|en|12=simple|13=User:Immanuelle/Gion Matsuri|qq=}} – One of the {{ill|Three Great Festivals of Japan|en|12=simple|13=User:Immanuelle/Three Great Festivals of Japan|qq=}}.
-* {{ill|Osaka Prefecture|en|12=simple|13=User:Immanuelle/Osaka Prefecture|qq=}}
-** {{ill|Tenjin Matsuri|en|12=simple|13=User:Immanuelle/Tenjin Matsuri|qq=}} – Part of the Three Great Festivals of Japan and the {{ill|Three Great Summer Festivals of Osaka|en|12=simple|13=User:Immanuelle/Three Great Summer Festivals of Osaka|qq=}}.
-* {{ill|Hyōgo Prefecture|en|12=simple|13=User:Immanuelle/Hyōgo Prefecture|qq=}}
+** {{ill|Sendai Tanabata Festival|en|12=simple|13=User:Immanuelle/Sendai Tanabata Festival}} – One of the Three Great Festivals of Tohoku.
+* {{ill|Akita Prefecture|en|12=simple|13=User:Immanuelle/Akita Prefecture}}
+** {{ill|Akita Kantō|en|12=simple|13=User:Immanuelle/Kanto Festival}} – One of the Three Great Festivals of Tohoku.
+* {{ill|Fukushima Prefecture|en|12=simple|13=User:Immanuelle/Fukushima Prefecture}}
+** {{ill|Fukushima Waraji Festival|en|12=simple|13=User:Immanuelle/Fukushima Waraji Festival}}
+* {{ill|Gunma Prefecture|en|12=simple|13=User:Immanuelle/Gunma Prefecture}}
+** {{ill|Kiryu Yagibushi Festival|en|12=simple|13=User:Immanuelle/Kiryu Yagibushi Festival}}
+* {{ill|Tokyo|en|12=simple|13=User:Immanuelle/Tokyo}}
+** {{ill|Fukagawa Matsuri|en|12=simple|13=User:Immanuelle/Fukagawa Matsuri}} – One of the {{ill|Three Great Festivals of Edo|en|12=simple|13=User:Immanuelle/Three Great Festivals of Edo}}.
+* {{ill|Ishikawa Prefecture|en|12=simple|13=User:Immanuelle/Ishikawa Prefecture}}
+** {{ill|Iida-machi Toro-yama Festival|en|12=simple|13=User:Immanuelle/Iida-machi Toro-yama Festival}}
+* {{ill|Gifu Prefecture|en|12=simple|13=User:Immanuelle/Gifu Prefecture}}
+** {{ill|Gujo Odori|en|12=simple|13=User:Immanuelle/Gujo Odori}}
+* {{ill|Aichi Prefecture|en|12=simple|13=User:Immanuelle/Aichi Prefecture}}
+** {{ill|Owari Tsushima Tennō Festival|en|12=simple|13=User:Immanuelle/Owari Tsushima Tennō Festival}} – One of the {{ill|Three Great River Festivals of Japan|en|12=simple|13=User:Immanuelle/Three Great River Festivals of Japan}}.
+* {{ill|Kyoto Prefecture|en|12=simple|13=User:Immanuelle/Kyoto Prefecture}}
+** {{ill|Gion Matsuri|en|12=simple|13=User:Immanuelle/Gion Matsuri}} – One of the {{ill|Three Great Festivals of Japan|en|12=simple|13=User:Immanuelle/Three Great Festivals of Japan}}.
+* {{ill|Osaka Prefecture|en|12=simple|13=User:Immanuelle/Osaka Prefecture}}
+** {{ill|Tenjin Matsuri|en|12=simple|13=User:Immanuelle/Tenjin Matsuri}} – Part of the Three Great Festivals of Japan and the {{ill|Three Great Summer Festivals of Osaka|en|12=simple|13=User:Immanuelle/Three Great Summer Festivals of Osaka}}.
+* {{ill|Hyōgo Prefecture|en|12=simple|13=User:Immanuelle/Hyōgo Prefecture}}
 ** {{ill|Yumura Onsen (Hyogo)|lt=Yumura Onsen Fire Festival|ja|湯村温泉 (兵庫県)#イベント|en|12=simple|13=User:Immanuelle/Yumura Onsen (Hyōgo)|comment=changed title based on wikidata|qid=Q8061163}}
-* {{ill|Tottori Prefecture|en|12=simple|13=User:Immanuelle/Tottori Prefecture|qq=}}
-** {{ill|Tottori Shan-Shan Festival|en|12=simple|13=User:Immanuelle/Tottori Shan-Shan Festival|qq=}}
-* {{ill|Tokushima Prefecture|en|12=simple|13=User:Immanuelle/Tokushima Prefecture|qq=}}
-** {{ill|Awa Odori|en|12=simple|13=User:Immanuelle/Awa Odori|qq=}} – Its {{ill|Tokushima City Awa Odori|en|12=simple|13=User:Immanuelle/Tokushima City Awa Odori|qq=}} is one of the {{ill|Three Great Festivals of Shikoku|en|12=simple|13=User:Immanuelle/Three Great Festivals of Shikoku|qq=}}.
-* {{ill|Kochi Prefecture|en|12=simple|13=User:Immanuelle/Kochi Prefecture|qq=}}
-** {{ill|YOSAKOI Festival|en|12=simple|13=User:Immanuelle/YOSAKOI Festival|qq=}} – One of the Three Great Festivals of Shikoku.
-* {{ill|Fukuoka Prefecture|en|12=simple|13=User:Immanuelle/Fukuoka Prefecture|qq=}}
-** {{ill|Hakata Gion Yamakasa|en|12=simple|13=User:Immanuelle/Hakata Gion Yamakasa|qq=}}
-* {{ill|Kumamoto Prefecture|en|12=simple|13=User:Immanuelle/Kumamoto Prefecture|qq=}}
-** {{ill|Yamaga Lantern Festival|en|12=simple|13=User:Immanuelle/Yamaga Lantern Festival|qq=}}
+* {{ill|Tottori Prefecture|en|12=simple|13=User:Immanuelle/Tottori Prefecture}}
+** {{ill|Tottori Shan-Shan Festival|en|12=simple|13=User:Immanuelle/Tottori Shan-Shan Festival}}
+* {{ill|Tokushima Prefecture|en|12=simple|13=User:Immanuelle/Tokushima Prefecture}}
+** {{ill|Awa Odori|en|12=simple|13=User:Immanuelle/Awa Odori}} – Its {{ill|Tokushima City Awa Odori|en|12=simple|13=User:Immanuelle/Tokushima City Awa Odori}} is one of the {{ill|Three Great Festivals of Shikoku|en|12=simple|13=User:Immanuelle/Three Great Festivals of Shikoku}}.
+* {{ill|Kochi Prefecture|en|12=simple|13=User:Immanuelle/Kochi Prefecture}}
+** {{ill|YOSAKOI Festival|en|12=simple|13=User:Immanuelle/YOSAKOI Festival}} – One of the Three Great Festivals of Shikoku.
+* {{ill|Fukuoka Prefecture|en|12=simple|13=User:Immanuelle/Fukuoka Prefecture}}
+** {{ill|Hakata Gion Yamakasa|en|12=simple|13=User:Immanuelle/Hakata Gion Yamakasa}}
+* {{ill|Kumamoto Prefecture|en|12=simple|13=User:Immanuelle/Kumamoto Prefecture}}
+** {{ill|Yamaga Lantern Festival|en|12=simple|13=User:Immanuelle/Yamaga Lantern Festival}}
 * {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}
-** {{ill|Miyakonojo Rokugatsudo Okage Festival|en|12=simple|13=User:Immanuelle/Miyakonojo Rokugatsudo Okage Festival|qq=}}
-* {{ill|Sabantuy|en|12=simple|13=User:Immanuelle/Sabantuy|qq=}} – A summer festival held along the middle reaches of the {{ill|Volga River|en|12=simple|13=User:Immanuelle/Volga River|qq=}} in {{ill|Russia|en|12=simple|13=User:Immanuelle/Russia|qq=}}.
-* {{ill|Spring Matsuri|lt=Spring Matsuri|lt=Spring Festivals|en|12=simple|13=User:Immanuelle/Spring Festivals|qq=}}
-* {{ill|Autumn Matsuri|en|12=simple|13=User:Immanuelle/Autumn Festivals|qq=}}
-* {{ill|Winter Matsuri|lt=Winter Matsuri|lt=Winter Festivals|en|12=simple|13=User:Immanuelle/Winter Festivals|qq=}}
-* {{ill|Tanabata|en|12=simple|13=User:Immanuelle/Tanabata|qq=}}
-* {{ill|Community building|en|12=simple|13=User:Immanuelle/Community building|qq=}}
-* {{ill|Homecoming|en|12=simple|13=User:Immanuelle/Homecoming|qq=}}
-* {{ill|Summer Vacation|en|12=simple|13=User:Immanuelle/Summer Vacation|qq=}}
+** {{ill|Miyakonojo Rokugatsudo Okage Festival|en|12=simple|13=User:Immanuelle/Miyakonojo Rokugatsudo Okage Festival}}
+
+* {{ill|Sabantuy|en|12=simple|13=User:Immanuelle/Sabantuy}} – A summer festival held along the middle reaches of the {{ill|Volga River|en|12=simple|13=User:Immanuelle/Volga River}} in {{ill|Russia|en|12=simple|13=User:Immanuelle/Russia}}.
+
+* {{ill|Spring Matsuri|lt=Spring Matsuri|lt=Spring Festivals|en|12=simple|13=User:Immanuelle/Spring Festivals}}
+* {{ill|Autumn Matsuri|en|12=simple|13=User:Immanuelle/Autumn Festivals}}
+* {{ill|Winter Matsuri|lt=Winter Matsuri|lt=Winter Festivals|en|12=simple|13=User:Immanuelle/Winter Festivals}}
+* {{ill|Tanabata|en|12=simple|13=User:Immanuelle/Tanabata}}
+* {{ill|Community building|en|12=simple|13=User:Immanuelle/Community building}}
+* {{ill|Homecoming|en|12=simple|13=User:Immanuelle/Homecoming}}
+* {{ill|Summer Vacation|en|12=simple|13=User:Immanuelle/Summer Vacation}}
+
 <references group="note" />
+
 {{translated page|ja|姥神大神宮渡御祭|version=101722290|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Multiple issues
+| Refimprove = July 2019
+| Original research = September 2019
+| Not encyclopedic = September 2019
+| Overly detailed = September 2019
+| Too many images = March 2019
+}}
+'''Ubagami Daijingu Togyo Festival''' (姥神大神宮渡御祭) is the annual grand festival of {{ill|Ubagami Daijingū|en|Ubagami Daijingū|qid=Q3547609|lt=Ubagami Daijingu}}, which is considered the oldest shrine in {{ill|Esashi, Hokkaido (Hiyama)|en|Esashi, Hokkaido (Hiyama)|qid=Q1348738|lt=Esashi, Hokkaido}}, {{ill|Hiyama District, Hokkaido|en|Hiyama District, Hokkaido|qid=Q1186011|lt=Hiyama District, Hokkaido}}, {{ill|Hokkaido|en|Hokkaido|qid=Q35581|lt=Hokkaido}}.
+
+== Overview ==
+The festival, which has a history of over 380 years<ref name="ubagami-history" group="注">As of 2024</ref>, takes place annually over three days: {{ill|August 9|en|August 9|qid=Q2782|lt=August 9}}, {{ill|August 10|en|August 10|qid=Q2779|lt=August 10}}, and {{ill|August 11|en|August 11|qid=Q2778|lt=August 11}}. It is regarded as the oldest festival in Hokkaido. The festival consists of a procession of {{ill|mikoshi|ja|御輿|12=simple|13=User:Immanuelle/mikoshi|ja_comment=jawiki redirects to 神輿}} (portable shrines) followed by {{ill|Matsuri float|en|Matsuri float|qid=Q11470974|lt=dashi}} (festival floats), known locally as "Yama," parading through the town. Influenced by the {{ill|Kitamaebune|en|Kitamaebune|qid=Q3440099|lt=Kitamaebune}} maritime trade, the festival is said to inherit cultural elements from the {{ill|Gion Matsuri|en|Gion Matsuri|qid=Q979873|lt=Gion Festival}} in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto}}. On March 19, 2019 ({{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei}} 31), it was designated as an {{ill|Folk Cultural Property|ja|無形民俗文化財|12=simple|13=User:Immanuelle/Intangible Folk Cultural Property|ja_comment=jawiki redirects to 民俗文化財|comment=changed title based on wikidata|qid=Q24895900}} of Hokkaido.
+
+For the origin of the festival, see {{ill|Ubagami Daijingū|ja|姥神大神宮#歴史|12=simple|13=User:Immanuelle/Ubagami Daijingu#History|comment=changed title based on wikidata|qid=Q3547609}}.
+
+== History ==
+The origin of the festival is uncertain, but it is commonly believed to date back to {{ill|Shōhō|en|Shōhō|qid=Q1146192|lt=1644}} (Shōhō 1), the year when Ubagami Daijingu was relocated to its current site{{Sfn|祭図録|1999|page=10}}.
+
+According to the 1816 ({{ill|Culture|en|Culture|qid=Q11042|lt=Bunka}} 13) {{ill|Fujieda Family Documents|ja|藤枝家文書|12=simple|13=User:Immanuelle/Fujieda Family Documents|ja_comment=jawiki link invalid}} "Shachi Denki Hikae"{{Sfn|祭図録|1999|page=10}}, the festival initially alternated annually with the {{ill|Benzaiten shrines|lt=Benten Shrine|ja|弁天社|12=simple|13=User:Immanuelle/Benzaiten shrines|ja_comment=jawiki redirects to 弁才天}} on {{ill|Q23997926|ja|鴎島|12=simple|13=User:Immanuelle/Kamome Island|comment=changed title based on wikidata|qid=Q23997926}}, the current location of Itsukushima Shrine. Festivals were held from August 14 to 16 each year. A later Fujieda document, "Gengi 1 Nen Shichigatsu Ubagamigu Yomiya Reisai Nikki," describes that the alternating festivals continued until 1862 ({{ill|Bunkyū|en|Bunkyū|qid=Q730266|lt=Bunkyū}} 2){{Sfn|祭図録|1999|page=11}}. This document also mentions that in the same year, the two festivals were separated, and the festival of Ubagami Daijingu began exclusively the following year ({{ill|Genji era|en|Genji era|qid=Q1325419|lt=Genji}} 1).
+
+Following the separation, the Ubagami Daijingu Togyo Festival continued, although the festival period changed several times. Until 1962 (Showa 37), the festival was held from August 20 to 23. However, based on a town-wide survey, the schedule was changed to the current dates from the following year{{Sfn|祭図録|1999|page=12}}.
+
+== Dashi (Yama) ==
+In Esashi Town, festival floats are called "Yama" and are carefully preserved by local neighborhoods. The Yama, following the mikoshi procession, are considered an essential part of the festival. The tradition of including Yama in the Ubagami Daijingu festival is said to date back to the mid-19th century{{Sfn|江差姥神大神宮祭礼写真集|2002|pages=110-111}}.
+
+=== Types of Yama ===
+During the festival, the following 13 Yama parade through the town:
+{| class="wikitable" style="text-align: center;"
+|-
+! Yama Name !! Figure !! Neighborhood !! Notes
+|-
+| Masamune Yama || {{ill|Date Masamune|en|Date Masamune|qid=Q311183|lt=Date Masamune}} || Shinchicho, Maruyama, Midorigaoka || 
+|-
+| Kiyomasa Yama || {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843|lt=Kato Kiyomasa}} || Honcho || 
+|-
+| Genji Yama || {{ill|Benkei|en|Benkei|qid=Q316898|lt=Musashibo Benkei}} || Uenocho || 
+|-
+| Seimu Yama || {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}} || Hashimotocho || Designated as an {{ill|Esashi Tangible Folk Cultural Property|ja|江差町有形民俗文化財|12=simple|13=User:Immanuelle/Esashi Tangible Folk Cultural Property|ja_comment=jawiki link invalid}} 
+|-
+| Homare Yama || {{ill|Ōishi Yoshio|ja|大石内蔵助|12=simple|13=User:Immanuelle/Oishi Kuranosuke|ja_comment=jawiki redirects to 大石良雄|comment=changed title based on wikidata|qid=Q530128}} || Mojiricho || 
+|-
+| Gikō Yama || {{ill|Tokugawa Mitsukuni|en|Tokugawa Mitsukuni|qid=Q1194944|lt=Tokugawa Mitsukuni}} || Minamihamacho, Kashiwacho, Minamigaoka || 
+|-
+| Matsuhoumaru || No figure; children serve as captains || Kaigancho, Jinyacho || Designated as a Hokkaido Tangible Folk Cultural Property
+|-
+| Nankō Yama || {{ill|Kusunoki Masashige|en|Kusunoki Masashige|qid=Q382234|lt=Kusunoki Masashige}} || Tsubanacho || 
+|-
+| Hounen Yama || {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}} || Ubagamicho || Designated as an Esashi Tangible Folk Cultural Property
+|-
+| Ebisu Yama || {{ill|Ebisu|ja|蛭子大神|12=simple|13=User:Immanuelle/Ebisu|ja_comment=jawiki redirects to えびす}} || Nakautacho || Designated as an Esashi Tangible Folk Cultural Property
+|-
+| Toyosakae Yama || {{ill|Ninigi-no-Mikoto|ja|ニニギノミコト|12=simple|13=User:Immanuelle/Ninigi-no-Mikoto|ja_comment=jawiki redirects to ニニギ}} || Toyokawacho || 
+|-
+| Jingū Yama || {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}} || Atagocho || Designated as a Hokkaido Tangible Folk Cultural Property
+|-
+| Shinei Yama || [[Takeda Shingen]]{{efn|Japanese feudal lord (1521–1573)|12=simple|13=User:Immanuelle/Takeda Shingen|ja_comment=jawiki link invalid}} || Shineicho || 
+|}
+
+<gallery>
+新地町・円山・緑丘・政宗山.jpg|Masamune Yama
+本町・清正山.jpg|Kiyomasa Yama
+上野町・源氏山.jpg|Genji Yama
+橋本町・聖武山.jpg|Seimu Yama
+茂尻町・譽山.jpg|Homare Yama
+南浜町・柏町・南が丘・義公山.jpg|Gikō Yama
+海岸町・陣屋町・松寳丸.jpg|Matsuhoumaru
+津花町・楠公山.jpg|Nankō Yama
+姥神町・豊年山.jpg|Hounen Yama
+中歌町・蛭子山.jpg|Ebisu Yama
+豊川町・豊榮山.jpg|Toyosakae Yama
+愛宕町・神功山.jpg|Jingū Yama
+新栄町・新栄山.jpg|Shinei Yama
+</gallery>
+
+The oldest Yama figure is the {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}} figure from Jingū Yama, which was created in 1754 ({{ill|Hōreki|en|Hōreki|qid=Q1194397|lt=Hōreki}} 4) and is designated as a Hokkaido Tangible Folk Cultural Property.
+
+== References ==
+
+<references group="注" />
+
+{{translated page|ja|姥神大神宮渡御祭|version=101722290|comment=Imported full ja history}}
+
+{{Commons category|Ubagami Daijin-gū Togyosai}}
+
+{{Commons category|Summer festivals in Japan}}
+
+{{wikidata link|Q24896695|co|commons:Category:Ubagami Daijin-gū Togyosai|ja|姥神大神宮渡御祭|ja|函館港まつり|ja|いか踊り|ja|青森県|ja|青森ねぶた祭|ja|東北三大祭り|ja|弘前ねぷたまつり|ja|宮城県|ja|仙台七夕まつり|ja|秋田県|ja|秋田竿燈まつり|ja|福島県|ja|福島わらじまつり|ja|群馬県|ja|桐生八木節まつり|ja|東京都|ja|深川祭|ja|江戸三大祭り|ja|石川県|ja|飯田町燈籠山祭り|ja|岐阜県|ja|郡上踊り|ja|愛知県|ja|尾張津島天王祭|ja|日本三大川祭|ja|京都府|ja|祇園祭|ja|日本三大祭り|ja|大阪府|ja|天神祭|ja|大阪三大夏祭り|ja|兵庫県|ja|湯村温泉 (兵庫県)#イベント|ja|鳥取県|ja|鳥取しゃんしゃん祭|ja|徳島県|ja|阿波踊り|ja|徳島市阿波おどり|ja|四国三大祭り|ja|高知県|ja|よさこい祭り|ja|福岡県|ja|博多祇園山笠|ja|熊本県|ja|山鹿灯籠まつり|ja|宮崎県|ja|都城六月灯おかげ祭り|ja|サバントゥイ|ja|ヴォルガ川|ja|ロシア|ja|春祭り|ja|秋祭り|ja|冬祭り|ja|七夕|ja|地域おこし|ja|帰省|ja|夏休み|zh|%E5%A4%8F%E7%A5%AD|ja|夏祭り|zh|夏祭|check_date=2026-05-12}}
 [[Category:August]]
 [[Category:Festivals]]
 [[Category:Festivals in Hokkaido]]
 [[Category:Festivals in Japan]]
 [[Category:Hokkaido Heritage]]
 [[Category:Oshima Province]]
+[[Category:Pages with duplicated content]]
 [[Category:Prefecturally designated intangible folk cultural property]]
 [[Category:Summer]]
 [[Category:Wikidata no short description]]

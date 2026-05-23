@@ -1,72 +1,103 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sawawachigi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
+
+
 {{Ref improve|date=August 2020}}
-'''Sawawachigi Shrine''' (佐波波地祇神社, Sawawachigi Jinja/Sawawakunitsukami Jinja) is a {{ill|Shinto shrine|ja|神社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in {{ill|Kitaibaraki City|ja|北茨城市|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kitaibaraki City|qq=}}, {{ill|Ibaraki Prefecture|ja|茨城県|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ibaraki Prefecture|qq=}}. It is a {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} (minor shrine) of the {{ill|Hitachi Province|ja|常陸国|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hitachi Province|qq=}}, with two shrines in the city considered its possible locations.
+'''Sawawachigi Shrine''' (佐波波地祇神社, Sawawachigi Jinja/Sawawakunitsukami Jinja) is a {{ill|Shinto shrine|ja|神社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shinto shrine}} located in {{ill|Kitaibaraki City|ja|北茨城市|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kitaibaraki City}}, {{ill|Ibaraki Prefecture|ja|茨城県|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ibaraki Prefecture}}. It is a {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} (minor shrine) of the {{ill|Hitachi Province|ja|常陸国|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hitachi Province}}, with two shrines in the city considered its possible locations.
+
 == Sawawachigi Shrine (Ōtsu-chō, Kitaibaraki City) ==
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
 |image = [[File:Sawawachigi Jinja Otsucho Haiden2.jpg|270px]]<br />Haiden
 |Latitude degrees = 36 |Latitude minutes = 49 |Latitude seconds = 59 |N = N
 |Longitude degrees = 140 |Longitude minutes = 47 |Longitude seconds = 32 |E = E
 |location = Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
-|deity = {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|qq=}}
-|Shrine Rank = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} (minor shrine), disputed site<br />Former {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha|qq=}}
+|deity = {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto}}
+|Shrine Rank = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha}}
 |consecration_year = Unknown
-|Honden style = {{ill|Nagare-zukuri|ja|流造|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagare-zukuri|qq=}}, copper roof
-|festival = {{ill|May 3|ja|5月3日|qq=draft|qq=draft|12=simple|13=User:Immanuelle/May 3|qq=}}
+|Honden style = {{ill|Nagare-zukuri|ja|流造|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagare-zukuri}}, copper roof
+|festival = {{ill|May 3|ja|5月3日|qq=draft|qq=draft|12=simple|13=User:Immanuelle/May 3}}
 |Rituals = Ofune Festival (once every five years, May 2–3)<br />Shioai Festival (November 3)
 |Map = Japan Ibaraki
 |Label position = left
 }}
+
 [[File:Sawawachigi Jinja Otsucho Torii.jpg|thumb|250px|right|{{Center|Torii}}]]
+
 == Overview ==
-This shrine is located on Mount Karakai in Ōtsu-chō, Kitaibaraki City. According to shrine tradition, during {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|qq=}}’s eastern campaign, his fleet was caught in adverse waves for several days. One night, the deity appeared in his dream, saying, "I am the deity of Sawawa. I have come to protect your ships. I will calm the winds immediately." Upon awakening, the winds had indeed calmed. Yamato Takeru dedicated offerings and enshrined the deity on Mount Sawawa. The shrine became revered as a protector of maritime traffic, earning the name "Karagai no Miya" ("Shrine of Returning from Tang").
-In 1869, it was Ranked as a {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha|qq=}} but was later demoted to {{ill|Sonsha|ja|村社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Sonsha|qq=}} in 1871. In 1880, it was reinstated as a gōsha.
+This shrine is located on Mount Karakai in Ōtsu-chō, Kitaibaraki City. According to shrine tradition, during {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru}}’s eastern campaign, his fleet was caught in adverse waves for several days. One night, the deity appeared in his dream, saying, "I am the deity of Sawawa. I have come to protect your ships. I will calm the winds immediately." Upon awakening, the winds had indeed calmed. Yamato Takeru dedicated offerings and enshrined the deity on Mount Sawawa. The shrine became revered as a protector of maritime traffic, earning the name "Karagai no Miya" ("Shrine of Returning from Tang").
+
+In 1869, it was Ranked as a {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha}} but was later demoted to {{ill|Sonsha|ja|村社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Sonsha}} in 1871. In 1880, it was reinstated as a gōsha.
+
 === Deities ===
-The main deity is {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|qq=}}. Other deities enshrined include:
-- {{ill|Ōkuninushi|ja|大己貴命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi|qq=}}
-- {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kotoshironushi|qq=}}
-- {{ill|Ōmononushi|ja|大物主命|qid=Q10936701|lt=Ōmononushi-no-Mikoto|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōmononushi|13=User:Immanuelle/Ōmononushi|qq=}}
+The main deity is {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto}}. Other deities enshrined include:
+- {{ill|Ōkuninushi|ja|大己貴命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+- {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kotoshironushi}}
+- {{ill|Ōmononushi|ja|大物主命|qid=Q10936701|lt=Ōmononushi-no-Mikoto|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōmononushi|13=User:Immanuelle/Ōmononushi}}
 - Hime Tatara Isuzu-hime no Mikoto
 - Isuzuyori-hime no Mikoto
+
 === Grounds ===
 The honden, built in 1727 during the Kyōhō era, is of the nagare-zukuri style with a copper roof. The former haiden, constructed in 1878, was dismantled in 2018, and a new haiden was completed in 2019.
+
 <gallery>
 File:Sawawachigi Jinja Otsucho Honden.jpg|Honden
 File:Sawawachigi Jinja Otsucho Massha.jpg|Massha (Inari Shrine)
 </gallery>
+
 === Ofune Festival ===
-The spring festival is held once every five years, known as the "Ofune Festival," spanning May 2–3. In 2017, it was designated an {{ill|Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|qq=}} by the Japanese government under the name "Hitachi Ōtsu no Ofune Matsuri."
+The spring festival is held once every five years, known as the "Ofune Festival," spanning May 2–3. In 2017, it was designated an {{ill|Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property}} by the Japanese government under the name "Hitachi Ōtsu no Ofune Matsuri."
+
 === Access ===
-* From {{ill|Ōtsu Port Station|ja|大津港駅|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōtsu Port Station|qq=}} (JR Jōban Line), walk 30 minutes east.
+* location: Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
+* From {{ill|Ōtsu Port Station|ja|大津港駅|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōtsu Port Station}} (JR Jōban Line), walk 30 minutes east.
+
 == Sawawachigi Shrine (Hanakawa-chō, Kitaibaraki City) ==
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
 |image = [[File:Sawawachigi Jinja Hanakawacho Haiden.jpg|270px]]<br />Haiden
 |coordinates = {{coord|36|49|39|N|140|42|42|E|display=inline}}
 |location = Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
-|deity = {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|qq=}}
-|Shrine Rank = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} (minor shrine), disputed site<br />Former {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha|qq=}}
+|deity = {{ill|Amahikata Kihikata no Mikoto|ja|天日方奇日方命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto}}
+|Shrine Rank = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gōsha|ja|郷社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Gōsha}}
 |consecration_year = Unknown
-|Honden style = {{ill|Nagare-zukuri|ja|流造|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagare-zukuri|qq=}}, copper roof
+|Honden style = {{ill|Nagare-zukuri|ja|流造|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagare-zukuri}}, copper roof
 |Alternate name = Sawa Shrine
 |festival = November 23
 |Map = {{location map|Japan Ibaraki|lat_deg=36|lat_min=49|lat_sec=39|lon_deg=140|lon_min=42|lon_sec=42|label=Sawawachigi Shrine|position=center|width=200}}
 |Label position = left
 }}
+
 == Overview ==
 This shrine is located on the slopes of Mount Shiobara in Hanakawa-chō, Kitaibaraki City. According to tradition, Yamato Takeru worshipped the Sawa deity here on his return journey from his eastern campaign. Initially located on Mount Sawa, about 4 kilometers northwest of the current site, the shrine was moved to the mountain summit in 1569 and later relocated to its present position on the slope.
+
 === deity ===
 The enshrined deity is Amahikata Kihikata no Mikoto, also known as:
 - Atatsukushinimikoto (阿多都久志尼命)
 - Takemisakasawayanosonuminomikoto (速甕之多気佐波夜遅奴美神)
+
 === Grounds ===
 <gallery>
 File:Sawawachigi Jinja Hanakawacho Honden.jpg|Honden
 File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
 </gallery>
+
+=== Access ===
+* location: Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
+
 {{Shinto Horizontal}}
 {{Ibaraki Prefecture Shrines Index}}
 {{Shinto-stub}}
+
+{{translated page|ja|佐波波地祇神社|version=91348590|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Sawawachigi Shrine (Q56352076)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -74,9 +105,206 @@ File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
 |-
 | RONSHA || {{ill|Sawawachigi Shrine|lt=Sawawachigi Shrine|ja|佐波波地祇神社|commons|Category:Sawawachigi-jinja (Hanakawa, Kitaibaraki)|qid=Q56352076}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Sawawachigi Shrine|lt=Sahahano Shrine|qid=Q135039771}} || — || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181780 DB]
 |}
+{{wikidata link|Q56352076|da|d:Q56352076|ja|佐波波地祇神社|co|commons:Category:Sawawachigi-jinja (Hanakawa, Kitaibaraki)|check_date=2026-05-09}}
+
+== Accidentally Overwritten Content ==
+
+{{Ref improve|date=August 2020}}
+'''Sawawachigi Shrine''' (佐波波地祇神社, Sawawachigi Jinja/Sawawakunitsukami Jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Kitaibaraki, Ibaraki|en|Kitaibaraki, Ibaraki|qid=Q838654|lt=Kitaibaraki City}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine) of the {{ill|Hitachi Province|en|Hitachi Province|qid=Q1055353|lt=Hitachi Province}}, with two shrines in the city considered its possible locations.
+
+== Sawawachigi Shrine (Ōtsu-chō, Kitaibaraki City) ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Sawawachigi Jinja Otsucho Haiden2.jpg|270px]]<br />Haiden
+|Latitude degrees = 36 |Latitude minutes = 49 |Latitude seconds = 59 |N = N
+|Longitude degrees = 140 |Longitude minutes = 47 |Longitude seconds = 32 |E = E
+|location = Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
+|deity = {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}
+|Shrine Rank = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|consecration_year = Unknown
+|Honden style = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}, copper roof
+|festival = {{ill|May 3|en|May 3|qid=Q2547|lt=May 3}}
+|Rituals = Ofune Festival (once every five years, May 2–3)<br />Shioai Festival (November 3)
+|Map = Japan Ibaraki
+|Label position = left
+}}
+
+[[File:Sawawachigi Jinja Otsucho Torii.jpg|thumb|250px|right|{{Center|Torii}}]]
+
+== Overview ==
+This shrine is located on Mount Karakai in Ōtsu-chō, Kitaibaraki City. According to shrine tradition, during {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}’s eastern campaign, his fleet was caught in adverse waves for several days. One night, the deity appeared in his dream, saying, "I am the deity of Sawawa. I have come to protect your ships. I will calm the winds immediately." Upon awakening, the winds had indeed calmed. Yamato Takeru dedicated offerings and enshrined the deity on Mount Sawawa. The shrine became revered as a protector of maritime traffic, earning the name "Karagai no Miya" ("Shrine of Returning from Tang").
+
+In 1869, it was Ranked as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} but was later demoted to {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in 1871. In 1880, it was reinstated as a gōsha.
+
+=== Deities ===
+The main deity is {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}. Other deities enshrined include:
+- {{ill|Ōkuninushi|ja|大己貴命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}
+- {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}}
+- {{ill|Ōmononushi|ja|大物主命|qid=Q10936701|lt=Ōmononushi-no-Mikoto|12=simple|13=User:Immanuelle/Ōmononushi|13=User:Immanuelle/Ōmononushi|qid=Q10936701}}
+- Hime Tatara Isuzu-hime no Mikoto
+- Isuzuyori-hime no Mikoto
+
+=== Grounds ===
+The honden, built in 1727 during the Kyōhō era, is of the nagare-zukuri style with a copper roof. The former haiden, constructed in 1878, was dismantled in 2018, and a new haiden was completed in 2019.
+
+<gallery>
+File:Sawawachigi Jinja Otsucho Honden.jpg|Honden
+File:Sawawachigi Jinja Otsucho Massha.jpg|Massha (Inari Shrine)
+</gallery>
+
+=== Ofune Festival ===
+The spring festival is held once every five years, known as the "Ofune Festival," spanning May 2–3. In 2017, it was designated an {{ill|National Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|comment=changed title based on wikidata|qid=Q6573893}} by the Japanese government under the name "Hitachi Ōtsu no Ofune Matsuri."
+
+=== Access ===
+* location: Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
+* From {{ill|Ōtsukō Station|en|Ōtsukō Station|qid=Q5353392|lt=Ōtsu Port Station}} (JR Jōban Line), walk 30 minutes east.
+
+== Sawawachigi Shrine (Hanakawa-chō, Kitaibaraki City) ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Sawawachigi Jinja Hanakawacho Haiden.jpg|270px]]<br />Haiden
+|coordinates = {{coord|36|49|39|N|140|42|42|E|display=inline}}
+|location = Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
+|deity = {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}
+|Shrine Rank = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|consecration_year = Unknown
+|Honden style = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}, copper roof
+|Alternate name = Sawa Shrine
+|festival = November 23
+|Map = {{location map|Japan Ibaraki|lat_deg=36|lat_min=49|lat_sec=39|lon_deg=140|lon_min=42|lon_sec=42|label=Sawawachigi Shrine|position=center|width=200}}
+|Label position = left
+}}
+
+== Overview ==
+This shrine is located on the slopes of Mount Shiobara in Hanakawa-chō, Kitaibaraki City. According to tradition, Yamato Takeru worshipped the Sawa deity here on his return journey from his eastern campaign. Initially located on Mount Sawa, about 4 kilometers northwest of the current site, the shrine was moved to the mountain summit in 1569 and later relocated to its present position on the slope.
+
+=== deity ===
+The enshrined deity is Amahikata Kihikata no Mikoto, also known as:
+- Atatsukushinimikoto (阿多都久志尼命)
+- Takemisakasawayanosonuminomikoto (速甕之多気佐波夜遅奴美神)
+
+=== Grounds ===
+<gallery>
+File:Sawawachigi Jinja Hanakawacho Honden.jpg|Honden
+File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
+</gallery>
+
+=== Access ===
+* location: Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
+
+{{Shinto Horizontal}}
+{{Ibaraki Prefecture Shrines Index}}
+{{Shinto-stub}}
 
 {{translated page|ja|佐波波地祇神社|version=91348590|comment=Imported full ja history}}
 
+{{Commons category|Sawawachigi-jinja (Hanakawa, Kitaibaraki)}}
+{{wikidata link|Q56352076}}
+== Accidentally Overwritten Content ==
+
+{{Ref improve|date=August 2020}}
+'''Sawawachigi Shrine''' (佐波波地祇神社, Sawawachigi Jinja/Sawawakunitsukami Jinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Kitaibaraki, Ibaraki|en|Kitaibaraki, Ibaraki|qid=Q838654|lt=Kitaibaraki City}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine) of the {{ill|Hitachi Province|en|Hitachi Province|qid=Q1055353|lt=Hitachi Province}}, with two shrines in the city considered its possible locations.
+
+== Sawawachigi Shrine (Ōtsu-chō, Kitaibaraki City) ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Sawawachigi Jinja Otsucho Haiden2.jpg|270px]]<br />Haiden
+|Latitude degrees = 36 |Latitude minutes = 49 |Latitude seconds = 59 |N = N
+|Longitude degrees = 140 |Longitude minutes = 47 |Longitude seconds = 32 |E = E
+|location = Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
+|deity = {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}
+|Shrine Rank = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|consecration_year = Unknown
+|Honden style = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}, copper roof
+|festival = {{ill|May 3|en|May 3|qid=Q2547|lt=May 3}}
+|Rituals = Ofune Festival (once every five years, May 2–3)<br />Shioai Festival (November 3)
+|Map = Japan Ibaraki
+|Label position = left
+}}
+
+[[File:Sawawachigi Jinja Otsucho Torii.jpg|thumb|250px|right|{{Center|Torii}}]]
+
+== Overview ==
+This shrine is located on Mount Karakai in Ōtsu-chō, Kitaibaraki City. According to shrine tradition, during {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}’s eastern campaign, his fleet was caught in adverse waves for several days. One night, the deity appeared in his dream, saying, "I am the deity of Sawawa. I have come to protect your ships. I will calm the winds immediately." Upon awakening, the winds had indeed calmed. Yamato Takeru dedicated offerings and enshrined the deity on Mount Sawawa. The shrine became revered as a protector of maritime traffic, earning the name "Karagai no Miya" ("Shrine of Returning from Tang").
+
+In 1869, it was Ranked as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} but was later demoted to {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in 1871. In 1880, it was reinstated as a gōsha.
+
+=== Deities ===
+The main deity is {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}. Other deities enshrined include:
+- {{ill|Ōkuninushi|ja|大己貴命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}
+- {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}}
+- {{ill|Ōmononushi|ja|大物主命|qid=Q10936701|lt=Ōmononushi-no-Mikoto|12=simple|13=User:Immanuelle/Ōmononushi|13=User:Immanuelle/Ōmononushi|qid=Q10936701}}
+- Hime Tatara Isuzu-hime no Mikoto
+- Isuzuyori-hime no Mikoto
+
+=== Grounds ===
+The honden, built in 1727 during the Kyōhō era, is of the nagare-zukuri style with a copper roof. The former haiden, constructed in 1878, was dismantled in 2018, and a new haiden was completed in 2019.
+
+<gallery>
+File:Sawawachigi Jinja Otsucho Honden.jpg|Honden
+File:Sawawachigi Jinja Otsucho Massha.jpg|Massha (Inari Shrine)
+</gallery>
+
+=== Ofune Festival ===
+The spring festival is held once every five years, known as the "Ofune Festival," spanning May 2–3. In 2017, it was designated an {{ill|National Important Intangible Folk Cultural Property|ja|重要無形民俗文化財|12=simple|13=User:Immanuelle/Important Intangible Folk Cultural Property|comment=changed title based on wikidata|qid=Q6573893}} by the Japanese government under the name "Hitachi Ōtsu no Ofune Matsuri."
+
+=== Access ===
+* location: Ōtsu-chō, Kitaibaraki City, Ibaraki Prefecture
+* From {{ill|Ōtsukō Station|en|Ōtsukō Station|qid=Q5353392|lt=Ōtsu Port Station}} (JR Jōban Line), walk 30 minutes east.
+
+== Sawawachigi Shrine (Hanakawa-chō, Kitaibaraki City) ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name = Sawawachigi Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Sawawachigi Jinja Hanakawacho Haiden.jpg|270px]]<br />Haiden
+|coordinates = {{coord|36|49|39|N|140|42|42|E|display=inline}}
+|location = Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
+|deity = {{ill|Kamo no Okimi|ja|天日方奇日方命|12=simple|13=User:Immanuelle/Amahikata Kihikata no Mikoto|ja_comment=jawiki redirects to 鴨王 (上古)|comment=changed title based on wikidata|qid=Q55809532}}
+|Shrine Rank = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine), disputed site<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|consecration_year = Unknown
+|Honden style = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}, copper roof
+|Alternate name = Sawa Shrine
+|festival = November 23
+|Map = {{location map|Japan Ibaraki|lat_deg=36|lat_min=49|lat_sec=39|lon_deg=140|lon_min=42|lon_sec=42|label=Sawawachigi Shrine|position=center|width=200}}
+|Label position = left
+}}
+
+== Overview ==
+This shrine is located on the slopes of Mount Shiobara in Hanakawa-chō, Kitaibaraki City. According to tradition, Yamato Takeru worshipped the Sawa deity here on his return journey from his eastern campaign. Initially located on Mount Sawa, about 4 kilometers northwest of the current site, the shrine was moved to the mountain summit in 1569 and later relocated to its present position on the slope.
+
+=== deity ===
+The enshrined deity is Amahikata Kihikata no Mikoto, also known as:
+- Atatsukushinimikoto (阿多都久志尼命)
+- Takemisakasawayanosonuminomikoto (速甕之多気佐波夜遅奴美神)
+
+=== Grounds ===
+<gallery>
+File:Sawawachigi Jinja Hanakawacho Honden.jpg|Honden
+File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
+</gallery>
+
+=== Access ===
+* location: Hanakawa-chō, Kitaibaraki City, Ibaraki Prefecture
+
+{{Shinto Horizontal}}
+{{Ibaraki Prefecture Shrines Index}}
+{{Shinto-stub}}
+
+{{translated page|ja|佐波波地祇神社|version=91348590|comment=Imported full ja history}}
+
+{{Commons category|Sawawachigi-jinja (Hanakawa, Kitaibaraki)}}
+{{wikidata link|Q56352076}}
+
+==Notes==
+<references group="lower-alpha"/>
+[[Sawawachigi Shrine]]
 [[Category:Buildings and structures in Kitaibaraki City]]
 [[Category:Buildings and structures in Kitaibaraki]]
 [[Category:Former Gō-sha in Ibaraki Prefecture]]
@@ -84,6 +312,7 @@ File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
 [[Category:History of Kitaibaraki]]
 [[Category:Kokuhei-sha]]
 [[Category:Municipal History of Kitaibaraki]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Hitachi Province]]
 [[Category:Shinto shrines in Ibaraki Prefecture]]
 [[Category:Shrines in Ibaraki Prefecture]]
@@ -91,4 +320,5 @@ File:Sawawachigi Jinja Hanakawacho Massha.jpg|Massha
 [[Category:Junior Fifth Rank]]
 [[Category:Senior Sixth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]

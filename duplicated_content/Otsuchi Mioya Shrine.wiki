@@ -2,72 +2,108 @@
 |name= Ōtsuchi Mioya Shrine & Uji no Nuki Shrine
 |religious_affiliation = [[Shinto]]
 |image= File:Otuchi Mioya & Uji no Nuki shrine.jpg
-|location = {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, Kusube-chō, Ōzaki 2132
+|location = {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Kusube-chō, Ōzaki 2132
 |latitude_deg = 34 | latitude_min = 28 | latitude_sec = 33.2
 |longitude_deg = 136 |longitude_min = 44 | longitude_sec = 14.1
 |map= Japan Mie
-|deity= Ōtsuchi Mioya Shrine: {{ill|Kunitama|lt=Ōkunidama-no-Mikoto|ja|大国玉命|12=simple|13=User:Immanuelle/Kunitama|ja_comment=jawiki link invalid}}, Mizu Sasara Hiko-no-Mikoto, Mizu Sasara Hime-no-Mikoto<br />Uji no Nuki Shrine: Takamizukami
-|Rank= Ōtsuchi Mioya Shrine: {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small), {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} Subordinate Shrine<br/>Uji no Nuki Shrine: Kōtai Jingū Associated Shrine
+|deity= Ōtsuchi Mioya Shrine: {{ill|Kunitama|ja|大国玉命|lt=Ōkunidama-no-Mikoto}}, Mizu Sasara Hiko-no-Mikoto, Mizu Sasara Hime-no-Mikoto<br />Uji no Nuki Shrine: Takamizukami
+|Rank= Ōtsuchi Mioya Shrine: {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (small), {{ill|Kōtai Jingū|abstract|Q11581011|ja|皇大神宮|tok|tomo sewi suli Naku|zh|皇大神宮|qid=Q11581011}} Subordinate Shrine<br/>Uji no Nuki Shrine: Kōtai Jingū Associated Shrine
 |founded= 
-|main_hall= {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}}
+|main_hall= {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}}
 |other_names= Chaya no Mon-san (茶屋ノモンサン)
 |pilgrimage_sites= 
-|annual_festival= {{ill|Otaue Festival|ja|御田植祭|12=simple|13=User:Immanuelle/Otaue Festival|qq=}} (May)
-|rituals= {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai|1=Kannamesai Festival}}
-|prefecture= {{ill|Ise|qid=Q328067|1=Ise, Mie}}
+|annual_festival= {{ill|Otaue Festival|ja|御田植祭}} (May)
+|rituals= {{ill|Kannamesai Festival|id|Festival Kannamesai|ja|神嘗祭|ko|신상제 (10월)|qid=Q11255045|lt=Kannamesai}}
+|prefecture= {{ill|Ise, Mie|qid=Q328067}}
 |coordinates= {{Coord|34.475889|N|136.73725}}
-|architecture_style= {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
+|architecture_style= {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
-'''Ōtsuchi Mioya Shrine''' (大土御祖神社, *Ōtsuchi Mioya Jinja*) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=subordinate shrine (sessha/massha)|1=Setsumatsusha}} of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (the Inner Shrine of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}). This article also covers '''Uji no Nuki Shrine''' (宇治乃奴鬼神社, *Uji no Nuki Jinja*), which is co-located with Ōtsuchi Mioya Shrine and classified as an associated shrine of the Inner Shrine.
-Both shrines were established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}}<ref name="gk">Gakken Publishing (2013): p.61</ref><ref name="ic13">Ise Bunka-sha (2008): pp.106–107</ref>.
+
+'''Ōtsuchi Mioya Shrine''' (大土御祖神社, *Ōtsuchi Mioya Jinja*) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=subordinate shrine (sessha/massha)}} of {{ill|Kōtai Jingū|abstract|Q11581011|ja|皇大神宮|tok|tomo sewi suli Naku|zh|皇大神宮|qid=Q11581011}} (the Inner Shrine of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}). This article also covers '''Uji no Nuki Shrine''' (宇治乃奴鬼神社, *Uji no Nuki Jinja*), which is co-located with Ōtsuchi Mioya Shrine and classified as an associated shrine of the Inner Shrine.
+
+Both shrines were established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}<ref name="gk">Gakken Publishing (2013): p.61</ref><ref name="ic13">Ise Bunka-sha (2008): pp.106–107</ref>.
+
 == Overview ==
-Located at 2132 Osaki, Kusube-cho, Ise City, Mie Prefecture,<ref name="sk0">Shikinaisha Research Association (1990): p.260</ref> near {{ill|Isuzu Bridge|ja|五十鈴橋|12=simple|13=User:Immanuelle/Isuzu Bridge|ja_comment=jawiki link invalid}}.<ref name="ic6">Ise Bunka Publishing (2008): p.106</ref> The {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River|1=Isuzu River}} flows to the north of the shrine grounds.<ref name="sk1">Shikinaisha Research Association (1990): p.261</ref> Deeper into the approach of {{ill|Otsuchi Mioya Shrine & Ujino Nuki Shrine|ja|大土御祖神社・宇治乃奴鬼神社|12=simple|13=User:Immanuelle/Otsuchi Mioya Shrine & Ujino Nuki Shrine|ja_comment=jawiki link invalid}}, one will find {{ill|Kunitsu Mioya Shrine & Ashidate Shrine|ja|国津御祖神社・葦立弖神社|12=simple|13=User:Immanuelle/Kunitsu Mioya Shrine & Ashidate Shrine|ja_comment=jawiki link invalid}}.<ref name="ic7">Ise Bunka Publishing (2008): p.107</ref>
+
+Located at 2132 Osaki, Kusube-cho, Ise City, Mie Prefecture,<ref name="sk0">Shikinaisha Research Association (1990): p.260</ref> near {{ill|Isuzu Bridge|ja|五十鈴橋}}.<ref name="ic6">Ise Bunka Publishing (2008): p.106</ref> The {{ill|Isuzu River|fa|رود ایسوزو|ja|五十鈴川|qid=Q6089522|lt=Isuzu River}} flows to the north of the shrine grounds.<ref name="sk1">Shikinaisha Research Association (1990): p.261</ref> Deeper into the approach of {{ill|Otsuchi Mioya Shrine & Ujino Nuki Shrine|ja|大土御祖神社・宇治乃奴鬼神社}}, one will find {{ill|Kunitsu Mioya Shrine & Ashidate Shrine|ja|国津御祖神社・葦立弖神社}}.<ref name="ic7">Ise Bunka Publishing (2008): p.107</ref>
+
 The shrine grounds are known as "Chaya no Mori" (Tea House Forest).<ref name="sk0"/> At the entrance of the shrine grounds, there is a ditch about 1.5 meters wide.<ref name="sk5">Shikinaisha Research Association (1990): p.265</ref>
-The two shrines share the same precinct and have a single {{ill|Shaden (main shrine building)|ja|社殿|12=simple|13=User:Immanuelle/Shaden (main shrine building)|ja_comment=jawiki redirects to 神社建築|1=Shinto architecture|comment=changed title based on wikidata|qid=Q3080012}} constructed in {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri|1=Shinmei-zukuri}} style, facing south and enclosed by a single {{ill|Tamagaki|en|Tamagaki|qid=Q3078312|lt=Tamagaki (sacred fence)|1=Sacred fences}}.<ref name="sk5"/> No {{ill|Saisenbako (offertory box)|ja|賽銭箱|12=simple|13=User:Immanuelle/Saisenbako (offertory box)|qid=Q135491444|1=Saisenbako}} is present.
+
+The two shrines share the same precinct and have a single {{ill|Shinto architecture|ar|عمارة الشنتو|de|Japanische Schreinarchitektur|fr|Architecture shinto|he|אדריכלות השינטו|hu|Sintó építészet|id|Arsitektur jinja|it|Architettura shintoista|ja|神社建築|ru|Синтоистская архитектура|simple|Shinto architecture|sl|Šintoistična arhitektura|zh|神社建築|qid=Q3080012}} constructed in {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}} style, facing south and enclosed by a single {{ill|Sacred fences|es|Tamagaki|fi|Tamagaki|fr|Tamagaki|ja|玉垣|qid=Q3078312|lt=Tamagaki (sacred fence)}}.<ref name="sk5"/> No {{ill|Saisenbako|ja|賽銭箱|12=simple|13=User:Immanuelle/Saisenbako (offertory box)|qid=Q135491444}} is present.
+
 == Otsuchi Mioya Shrine ==
-Ranked 10th among the 27 auxiliary shrines (sessha) of the Inner Shrine.<ref>Ujiyamada City Office (1929): pp.9-11</ref> It has close ties with the {{ill|Jingū Shinden (Ise Grand Shrine Rice Field)|ja|神宮神田|12=simple|13=User:Immanuelle/Jingū Shinden (Ise Grand Shrine Rice Field)|ja_comment=jawiki link invalid}}.<ref name="sk2">Shikinaisha Research Association (1990): p.262</ref>
-The enshrined deities are {{ill|Ōkuninushi|ja|大国玉命|12=simple|13=User:Immanuelle/Ōkuninushi|ja_comment=jawiki link invalid}}, {{ill|Mizusasarahiko no Mikoto|ja|水佐々良比古命|12=simple|13=User:Immanuelle/Mizusasarahiko no Mikoto|ja_comment=jawiki link invalid}}, and {{ill|Mizusasarahime no Mikoto|ja|水佐々良比賣命|12=simple|13=User:Immanuelle/Mizusasarahime no Mikoto|ja_comment=jawiki link invalid}}.<ref name="gk"/><ref name="ic6"/>
+
+Ranked 10th among the 27 auxiliary shrines (sessha) of the Inner Shrine.<ref>Ujiyamada City Office (1929): pp.9-11</ref> It has close ties with the {{ill|Jingū Shinden (Ise Grand Shrine Rice Field)|ja|神宮神田}}.<ref name="sk2">Shikinaisha Research Association (1990): p.262</ref>
+
+The enshrined deities are {{ill|Ōkuninushi|ja|大国玉命}}, {{ill|Mizusasarahiko no Mikoto|ja|水佐々良比古命}}, and {{ill|Mizusasarahime no Mikoto|ja|水佐々良比賣命}}.<ref name="gk"/><ref name="ic6"/>
+
 == Ujino Nuki Shrine ==
+
 Ranked 8th among the 16 auxiliary shrines (massha) of the Inner Shrine.<ref>Ujiyamada City Office (1929): pp.13-14</ref> The shrine's old site is marked with a stone pillar.
-The enshrined deity is {{ill|Takamina Kami|ja|高水上命|12=simple|13=User:Immanuelle/Takamina Kami|ja_comment=jawiki link invalid}}, believed to be a deity of irrigation.<ref name="gk"/><ref name="ic13"/>
+
+The enshrined deity is {{ill|Takamina Kami|ja|高水上命}}, believed to be a deity of irrigation.<ref name="gk"/><ref name="ic13"/>
+
 == History ==
-The shrine was established before the 5th year of Enchō (927), as recorded in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}.<ref name="ic2">Ise Bunka Publishing (2008): p.22</ref>
+
+The shrine was established before the 5th year of Enchō (927), as recorded in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}.<ref name="ic2">Ise Bunka Publishing (2008): p.22</ref>
+
 == Rituals ==
-Rituals such as {{ill|Kinen-sai|en|Kinen-sai|qid=Q118906710|lt=Kinensai (Prayer Festival)|1=Kinensai}} (February), {{ill|Tsukinamisai (Monthly Festival)|ja|月次祭|1=Tsukinami-no-Matsuri|12=simple|13=User:Immanuelle/Tsukinamisai (Monthly Festival)|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}} (June, December), {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai (Harvest Festival)|1=Kannamesai Festival}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai (First Fruits Festival)|1=Niiname-no-Matsuri}} (November) are held in front of the shrine.<ref name="sk3">Shikinaisha Research Association (1990): p.263</ref>
+
+Rituals such as {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai (Prayer Festival)}} (February), {{ill|Tsukinamisai (Monthly Festival)|ja|月次祭}} (June, December), {{ill|Kannamesai Festival|id|Festival Kannamesai|ja|神嘗祭|ko|신상제 (10월)|qid=Q11255045|lt=Kannamesai (Harvest Festival)}} (October), and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai (First Fruits Festival)}} (November) are held in front of the shrine.<ref name="sk3">Shikinaisha Research Association (1990): p.263</ref>
+
 == Flora ==
-The approach features large {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Camphor trees|1=Camphora officinarum}} and other significant trees like {{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Cryptomeria (sugi)|1=Cryptomeria}} and {{ill|Torreya nucifera|en|Torreya nucifera|qid=Q1373999|lt=Japanese nutmeg-yew (kaya)|1=Torreya nucifera}}.<ref name="ic7"/>
+
+The approach features large {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Camphor trees}} and other significant trees like {{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Cryptomeria (sugi)}} and {{ill|Torreya nucifera|en|Torreya nucifera|qid=Q1373999|lt=Japanese nutmeg-yew (kaya)}}.<ref name="ic7"/>
+
 == Access ==
-Located near {{ill|Isuzugawa Station|en|Isuzugawa Station|qid=Q6089533|lt=Isuzugawa Station|1=Isuzugawa Station}}:
+
+Located near {{ill|Isuzugawa Station|en|Isuzugawa Station|qid=Q6089533|lt=Isuzugawa Station}}:
+
 * Approximately 13 minutes on foot (~1 km).<ref name="sk0"/>
-* By {{ill|Ise City Community Bus|ja|伊勢市コミュニティバス|12=simple|13=User:Immanuelle/Ise City Community Bus|1=Q11379021|comment=changed title based on wikidata|qid=Q11379021}}, get off at "Shigō Elementary School" bus stop, 1-minute walk (~150 m).<ref name="sk0"/>
-* About 1 minute (~750 m) east from the "Kusube" intersection via {{ill|Mie Prefectural Route 37|ja|三重県道37号鳥羽松阪線|12=simple|13=User:Immanuelle/Mie Prefectural Route 37|1=Mie Prefectural Road Route 37|comment=changed title based on wikidata|qid=Q11357923}}.
-== Related Pages ==
-* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+* By {{ill|Q11379021|ja|伊勢市コミュニティバス|12=simple|13=User:Immanuelle/Ise City Community Bus|comment=changed title based on wikidata|qid=Q11379021}}, get off at "Shigō Elementary School" bus stop, 1-minute walk (~150 m).<ref name="sk0"/>
+* About 1 minute (~750 m) east from the "Kusube" intersection via {{ill|Mie Prefectural Road Route 37|ja|三重県道37号鳥羽松阪線|12=simple|13=User:Immanuelle/Mie Prefectural Route 37|comment=changed title based on wikidata|qid=Q11357923}}.
+
 == References ==
-<references />
+
 * Ujiyamada City Office. *Ujiyamada City History, Volume 1*. Ujiyamada City Office, January 20, 1929.
-* {{ill|Gakken Publishing|ja|学研パブリッシング|12=simple|13=User:Immanuelle/Gakken Publishing|ja_comment=jawiki redirects to Gakken|1=Gakken Plus Co., Ltd.|comment=changed title based on wikidata|qid=Q86741099}}. *Let's Visit Ise Grand Shrine*. Gakken Mook Shrine Travel Selection Vol.1, supervised by {{ill|Minoru Sonoda|ja|薗田稔|12=simple|13=User:Immanuelle/Minoru Sonoda|1=Minoru Sonoda|comment=changed title based on wikidata|qid=Q11622218}}, Gakken Marketing, 2013.
+* {{ill|Gakken Plus Co., Ltd.|ja|学研パブリッシング|12=simple|13=User:Immanuelle/Gakken Publishing|ja_comment=jawiki redirects to Gakken|comment=changed title based on wikidata|qid=Q86741099}}. *Let's Visit Ise Grand Shrine*. Gakken Mook Shrine Travel Selection Vol.1, supervised by {{ill|Minoru Sonoda|ja|薗田稔|12=simple|13=User:Immanuelle/Minoru Sonoda|comment=changed title based on wikidata|qid=Q11622218}}, Gakken Marketing, 2013.
 * Shikinaisha Research Association. *Shikinaisha Research Report, Vol. 6*. Kōgakkan University Press, 1990.
 * Ise Bunka Publishing. *Visiting the 125 Shrines of Ise*. Special Edition of *Isejin*, Ise Bunka Publishing, 2008.
+
+== Related Pages ==
+
+* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧}}
+
+== References ==
+<references />
 == External Links ==
+
 * [http://www.jingukaikan.jp/125mairi/m03/0305.html Otsuchi Mioya Shrine] - Foundation for the Veneration of Ise Grand Shrine
 * [http://www.kirari1000.com/ Ise Shima Kirari 1000] - Ise Shima National Park Association
+
 {{神道 横}}
+
 {{125 Shrines of Ise}}
+
+{{translated page|ja|大土御祖神社|version=97972585|comment=Imported full ja history}}
+
+{{Commons category|Otuchi Mioya & Uji no Nuki shrine}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Otsuchi Mioya Shrine (Q17222702)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032|1=Watarai District}} || {{ill|Otsuchi Mioya Shrine|lt=Otsuchi Mioya Shrine|ja|大土御祖神社|commons|Category:Otuchi Mioya &amp; Uji no Nuki shrine|qid=Q17222702|1=Otsuchi Mioya Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || part of {{ill|Kōtai Jingū|qid=Q11581011|1=Kōtai Jingū}} || — || {{coord|34.475963|136.737142|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181131 DB]
+| {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Otsuchi Mioya Shrine|lt=Otsuchi Mioya Shrine|ja|大土御祖神社|commons|Category:Otuchi Mioya &amp; Uji no Nuki shrine|qid=Q17222702}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Kōtai Jingū|abstract|Q11581011|ja|皇大神宮|tok|tomo sewi suli Naku|zh|皇大神宮|qid=Q11581011}} || — || {{coord|34.475963|136.737142|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181131 DB]
 |}
-
-{{translated page|ja|大土御祖神社|version=97972585|comment=Imported full ja history}}
-{{Commons category|Otuchi Mioya & Uji no Nuki shrine}}
-
+{{wikidata link|Q17222702|co|commons:Category:Otuchi Mioya & Uji no Nuki shrine|da|d:Q17222702|ja|大土御祖神社|check_date=2026-05-18}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Moto-Ise shrines]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -75,3 +111,5 @@ Located near {{ill|Isuzugawa Station|en|Isuzugawa Station|qid=Q6089533|lt=Isuzug
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

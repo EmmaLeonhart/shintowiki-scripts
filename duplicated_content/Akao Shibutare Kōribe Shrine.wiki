@@ -1,10 +1,12 @@
-{{Infobox religious building
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Akao_Shibutare_K%C5%8Dribe_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name   = Akao Shibutare Kourihe Shrine
 | religious_affiliation = [[Shinto]]
-|image  = {{image requested|cat=Fukuroi City|qq=}}
-|location = {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}[[Fukuroi City]] Takao 193
+|image  = {{image requested|cat=Fukuroi City}}
+|location = {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}[[Fukuroi City]] Takao 193
 |coordinates = {{Coord|34.740833333333335|N|137.93727777777778}}
-|deity   = [[Okinaga Tarashihime-no-Mikoto]] ({{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū|1=Empress Jingū}}), [[Homuda Wake no Mikoto]] ({{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin|1=Emperor Ōjin}}), [[Tamayorihime-no-Mikoto]] and 16 other deities
+|deity   = [[Okinaga Tarashihime-no-Mikoto]] ({{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}), [[Homuda Wake no Mikoto]] ({{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}), [[Tamayorihime-no-Mikoto]] and 16 other deities
 |Shrine Rank = Former [[Gōsha]] (village shrine), [[Tōtōmi Province list of Shikinaisha|Shikinaisha]] (historical shrine)
 |Establishment = Yōro 1 (717 CE) or earlier
 |Main hall  =
@@ -12,31 +14,24 @@
 |Pilgrimage =
 |Festivals  = October 15 (currently held on the second Sunday of October as part of the [[Fukuroi Festival]])<ref name="official">[https://shibutarejinja.wixsite.com/website-1 Akao Shibutare Kourihe Shrine Official Website]</ref>
 |Rituals   =
-|Map       = {{maplink2|frame=yes|plain=yes|type=point|zoom=13|frame-align=center|frame-width=220|coord={{coord|34|44|27.0|N|137|56|14.2|E|qq=}}|qq=}}
+|Map       = {{maplink2|frame=yes|plain=yes|type=point|zoom=13|frame-align=center|frame-width=220|coord={{coord|34|44|27.0|N|137|56|14.2|E}}}}
+|location = {{ill|Fukuroi, Shizuoka|qid=Q821337}}
 }}
-'''Akao Shibutare Kourihe Shrine''' (赤尾減垂郡辺神社, Akao Shibutare Kōrihe Jinja) is a Shinto shrine located in Takao, [[Fukuroi City]], {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture|1=Shizuoka Prefecture}}. It is recorded as a {{ill|Shikinai Ronsha|qid=Q135022904}} of the [[Engishiki Jinmyōchō]] in [[Tōtōmi Province]], identified with {{ill|Kohoriheno Shrine|lt=Kohoriheno Shrine|qid=Q135039620}}.
+'''Akao Shibutare Kourihe Shrine''' (赤尾減垂郡辺神社, Akao Shibutare Kōrihe Jinja) is a Shinto shrine located in Takao, [[Fukuroi City]], {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}.
 == Overview ==
-Historical documents indicate that in {{ill|717|en|717|qid=Q23532|lt=717|1=717}} (Yōro 1), the spirit of the provincial ruler of Tōtōmi was enshrined together with other deities.<ref name="official"/> According to the "[[Nihon Sandai Jitsuroku]]," on September 16, {{ill|878|en|878|qid=Q23910|lt=878|1=878}} (Genkei 2), the deities Akao and Shibutare were granted the Rank of "Junior Fifth Rank, Lower Grade."
-In {{ill|739|en|739|qid=Q23588|lt=739|1=739}} (Tenpyō 11), the monk {{ill|Gyōki|en|Gyōki|qid=Q1136664|lt=Gyōki|1=Gyōki}} established a temple on the grounds, naming it Akao-san Chōraku-ji. The temple prospered until the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period|1=Sengoku period}} but declined due to war and other disruptions. During the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period|1=Edo period}}, it survived as a branch of Kōyasan Fumon-in Temple.<ref name="official"/><ref>[https://lib.city.fukuroi.shizuoka.jp/index.php?action=pages_view_mobile&page_id=227&room_id=0&nc_session=cfcgi2pt9lbj02r2g46ifia400 "18th Edition: Hakusan Faith and Fukuroi 6 – Akao Mountain's Hakusan Shrine"] - Fukuroi City Library</ref>
-During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era|1=Meiji era}}, following the implementation of State Shinto policies such as the separation of Shinto and Buddhism and the "One Village, One Shrine" policy, numerous smaller shrines within the Takao area were consolidated into Akao Shibutare Kourihe Shrine. This included the merger of Akao Shrine, Shibutare Shrine, and the former main shrines of Kourihe Shrine (also known as Rokushō Daimyōjin, an [[Engishiki]]-listed shrine), Wakamiya Ōji Shrine, Hachiman Shrine, Yamana Shrine, Akenokuni Shrine, Tenpaku Shrine, Yasuo Shrine, Tsushima Shrine, Tenjin Shrine, and Shimen Shrine.
-In {{ill|1872|en|1872|qid=Q7753|lt=1872|1=1872}} (Meiji 5), it was elevated to the Rank of Gōsha (village shrine). In {{ill|1915|en|1915|qid=Q2084|lt=1915|1=1915}} (Taishō 4), it was designated a shrine eligible for State offerings.
-The shrine's main buildings were renovated in {{ill|1951|en|1951|qid=Q18591|lt=1951|1=1951}} (Shōwa 26), and it underwent further reconstruction and expansion between {{ill|2002|en|2002|qid=Q1987|lt=2002|1=2002}} (Heisei 14) and {{ill|2006|en|2006|qid=Q2021|lt=2006|1=2006}} (Heisei 18). Following damage from a typhoon in {{ill|2011|en|2011|qid=Q1994|lt=2011|1=2011}} (Heisei 23), restoration and environmental improvements were carried out in the shrine's precincts and surrounding forest.
-
-== Shikinaisha ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| RONSHA || {{ill|Akao Shibutare Kōribe Shrine|lt=Akao Shibutare Kōribe Shrine|ja|赤尾渋垂郡辺神社|qid=Q117452953|1=Akao Shibutare Kōribe Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Kohoriheno Shrine|lt=Kohoriheno Shrine|qid=Q135039620|1=Kohoriheno Shrine}} || {{coord|34.740833|137.937278|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181535 DB]
-|}
-
+Historical documents indicate that in {{ill|717|en|717|qid=Q23532|lt=717}} (Yōro 1), the spirit of the provincial ruler of Tōtōmi was enshrined together with other deities.<ref name="official"/> According to the "[[Nihon Sandai Jitsuroku]]," on September 16, {{ill|878|en|878|qid=Q23910|lt=878}} (Genkei 2), the deities Akao and Shibutare were granted the Rank of "Junior Fifth Rank, Lower Grade."
+In {{ill|739|en|739|qid=Q23588|lt=739}} (Tenpyō 11), the monk {{ill|Gyōki|en|Gyōki|qid=Q1136664|lt=Gyōki}} established a temple on the grounds, naming it Akao-san Chōraku-ji. The temple prospered until the {{ill|Sengoku period|en|Sengoku period|qid=Q204023|lt=Sengoku period}} but declined due to war and other disruptions. During the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}, it survived as a branch of Kōyasan Fumon-in Temple.<ref name="official"/><ref>[https://lib.city.fukuroi.shizuoka.jp/index.php?action=pages_view_mobile&page_id=227&room_id=0&nc_session=cfcgi2pt9lbj02r2g46ifia400 "18th Edition: Hakusan Faith and Fukuroi 6 – Akao Mountain’s Hakusan Shrine"] - Fukuroi City Library</ref>
+During the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}}, following the implementation of State Shinto policies such as the separation of Shinto and Buddhism and the "One Village, One Shrine" policy, numerous smaller shrines within the Takao area were consolidated into Akao Shibutare Kourihe Shrine. This included the merger of Akao Shrine, Shibutare Shrine, and the former main shrines of Kourihe Shrine (also known as Rokushō Daimyōjin, an [[Engishiki]]-listed shrine), Wakamiya Ōji Shrine, Hachiman Shrine, Yamana Shrine, Akenokuni Shrine, Tenpaku Shrine, Yasuo Shrine, Tsushima Shrine, Tenjin Shrine, and Shimen Shrine.
+In {{ill|1872|en|1872|qid=Q7753|lt=1872}} (Meiji 5), it was elevated to the Rank of Gōsha (village shrine). In {{ill|1915|en|1915|qid=Q2084|lt=1915}} (Taishō 4), it was designated a shrine eligible for State offerings.
+The shrine’s main buildings were renovated in {{ill|1951|en|1951|qid=Q18591|lt=1951}} (Shōwa 26), and it underwent further reconstruction and expansion between {{ill|2002|en|2002|qid=Q1987|lt=2002}} (Heisei 14) and {{ill|2006|en|2006|qid=Q2021|lt=2006}} (Heisei 18). Following damage from a typhoon in {{ill|2011|en|2011|qid=Q1994|lt=2011}} (Heisei 23), restoration and environmental improvements were carried out in the shrine’s precincts and surrounding forest.
 == Deities Enshrined ==
 * Akao Shrine
 ** [[:en:Izanagi-no-Mikoto|Izanagi-no-Mikoto]]
-** {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami|1=Izanami}}
+** {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami}}
 ** [[Kukuri-hime-no-Mikoto]]
 * Shibutare Shrine
-** [[Okinaga Tarashihime-no-Mikoto]] ({{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū|1=Empress Jingū}})
-** [[Homuda Wake no Mikoto]] ({{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin|1=Emperor Ōjin}})
+** [[Okinaga Tarashihime-no-Mikoto]] ({{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}})
+** [[Homuda Wake no Mikoto]] ({{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}})
 ** [[Tamayorihime-no-Mikoto]]
 * Kourihe Shrine
 ** [[Uwatsutsunoo-no-Mikoto]]
@@ -63,7 +58,7 @@ The shrine's main buildings were renovated in {{ill|1951|en|1951|qid=Q18591|lt=1
 * Tenpaku Shrine
 ** [[Saradahiko-no-Mikoto]]
 * Tenjin Shrine
-** {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane|1=Sugawara no Michizane}}
+** {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane}}
 * Shimen Shrine
 ** Shimen Shrine deity
 == Auxiliary Shrines ==
@@ -75,10 +70,7 @@ The shrine's main buildings were renovated in {{ill|1951|en|1951|qid=Q18591|lt=1
 * [[:en:Kōbō Daishi|Kōbō Daishi]] Sacred Site
 * Mizuko Reisha (Shrine for Unborn Souls)
 == References ==
-{{Reflist|qq=}}
-
-== Notes ==
-<references group="lower-alpha"/>
+{{Reflist}}
 
 == See Also ==
 * [[Fukuroi Festival]]
@@ -86,10 +78,24 @@ The shrine's main buildings were renovated in {{ill|1951|en|1951|qid=Q18591|lt=1
 * [https://shibutarejinja.wixsite.com/website-1 Akao Shibutare Kourihe Shrine Official Website]
 
 {{translated page|ja|赤尾渋垂郡辺神社|version=99880238|comment=Imported full ja history}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
 
-{{wikidata link|Q117452953|da|d:Q117452953}}
+'''Akao Shibutare Kōribe Shrine (Q117452953)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Tōtōmi Province]].
 
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| RONSHA || {{ill|Akao Shibutare Kōribe Shrine|lt=Akao Shibutare Kōribe Shrine|ja|赤尾渋垂郡辺神社|qid=Q117452953}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Kohoriheno Shrine|lt=Kohoriheno Shrine|qid=Q135039620}} || {{coord|34.740833|137.937278|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181535 DB]
+|}
+{{wikidata link|Q117452953|da|d:Q117452953|ja|赤尾渋垂郡辺神社|check_date=2026-05-13}}
+[[Category:Shikinaisha in Tōtōmi Province]]==Notes==
+<references group="lower-alpha"/>
 [[Category:Shikinai Shōsha]]
-[[Category:Shikinai Ronsha]]
 [[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Tōtōmi Province]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Pages with duplicated content]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

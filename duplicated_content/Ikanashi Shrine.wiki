@@ -1,65 +1,83 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ikanashi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25015587690|time triggered pipeline]] -->
-{{Infobox religious building
-| religious_affiliation = [[Shinto]]
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
 | name        = Ikanashi Shrine
 | image       = File:伊加奈志神社.jpg
 | location     = 635, Ikari-ko, Imabari-shi, Ehime-ken, Japan
 | coordinates = {{Coord|34.032778|N|132.977222}}
 | deity       = Five Pillars of Creation<br />Ikatarashihiko-no-Mikoto<br />Ikagasikooro-no-Mikoto
-| Status      = {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} shrine<br />Provincial shrine of Iyo Province<br />Former Village Shrine
+| Status      = {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō}} shrine<br />Provincial shrine of Iyo Province<br />Former Village Shrine
 | founded     = 
 | Architecture= 
 | Other names = 
 | festival = October 10
 | Rituals     = 
-| prefecture= {{ill|Imabari|qid=Q461020|1=Imabari, Ehime}}
+| prefecture= {{ill|Imabari, Ehime|ar|إيمباري (إهيمه)|azb|ایماباری، اهیمه|be|Імабары|ce|Имабари|ceb|Imabari-shi|cs|Imabari|de|Imabari|eo|Imabari|es|Imabari (Ehime)|eu|Imabari (Ehime)|fa|ایماباری، اهیمه|fi|Imabari|fr|Imabari|gl|Imabari|he|אימברי|id|Imabari, Ehime|it|Imabari|ja|今治市|ka|იმაბარი|ko|이마바리시|lt|Imabaris|mzn|ایماباری، اهیمه|nl|Imabari|no|Imabari|pl|Imabari|pt|Imabari|ro|Imabari|ru|Имабари|sh|Imabari|sr|Имабари|sv|Imabari|szl|Imabari|tg|Имабари|th|อิมาบาริ|tl|Imabari, Ehime|tr|Imabari|tt|Имабари|tum|Imabari|uk|Імабарі|ur|اماباری، اہیمے|uz|Imabari|vi|Imabari, Ehime|war|Imabari, Ehime|zh|今治市|zh_classical|今治市|zh_min_nan|Imabari-chhī|zh_yue|今治|qid=Q461020}}
 }}
-'''Ikanashi Shrine''' (伊加奈志神社) is a Shinto shrine located in [[:en:Imabari|Imabari]], {{ill|Ehime Prefecture|en|Ehime Prefecture|qid=Q123376|lt=Ehime Prefecture|1=Ehime Prefecture}}, Japan. It is considered a provincial shrine (総社) of {{ill|Iyo Province|en|Iyo Province|qid=Q907829|lt=Iyo Province|1=Iyo Province}} and a {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} shrine.
+
+'''Ikanashi Shrine''' (伊加奈志神社) is a Shinto shrine located in [[:en:Imabari|Imabari]], {{ill|Ehime Prefecture|ace|Prefektur Ehime|af|Ehime-prefektuur|an|Prefectura d'Ehime|ar|إهيمه (محافظة)|az|Ehime prefekturası|azb|اهیمه اوستانی|ban|Préféktur Éhimé|be|Эхімэ|bg|Ехиме|bn|এহিমে প্রশাসনিক অঞ্চল|ca|Prefectura d'Ehime|cdo|Ehime-gâing|ce|Эхиме (префектура)|ceb|Ehime-ken|ckb|پارێزگای ئێھیمێ|cs|Prefektura Ehime|cy|Ehime (talaith)|da|Ehime-præfekturet|de|Präfektur Ehime|eo|Gubernio Ehime|es|Prefectura de Ehime|et|Ehime prefektuur|eu|Ehime (prefektura)|fa|استان اهیمه|fi|Ehimen prefektuuri|fr|Préfecture d'Ehime|frr|Ehime-ken|ga|Maoracht Ehime|gl|Prefectura de Ehime|hak|Ehime-yen|he|אהימה (מחוז)|hr|Ehime (prefektura)|hu|Ehime prefektúra|hy|Էհիմե (պրեֆեկտուրա)|id|Prefektur Ehime|ilo|Prepektura ti Ehime|it|Prefettura di Ehime|ja|愛媛県|jv|Préfèktur Ehime|ka|ეჰიმეს პრეფექტურა|km|អិហ៊ីម៉ិ(ខេត្ត)|ko|에히메현|lt|Ehimės prefektūra|lv|Ehimes prefektūra|mk|Ехиме (префектура)|mni|ꯏꯍꯤꯃꯦ ꯂꯝꯈꯥꯢ|mr|एहिमे प्रांत|ms|Wilayah Ehime|ne|एहिमे|nl|Ehime|no|Ehime (prefektur)|os|Эхиме|pam|Prepektura ning Ehime|pl|Prefektura Ehime|pnb|ضلع اہیمے|pt|Ehime|ro|Prefectura Ehime|ru|Эхиме|sco|Ehime Prefectur|sd|اهيمه پريفيڪچر|se|Ehime prefektuvra|sh|Prefektura Ehime|si|එහිමේ ප්‍රාන්තය|simple|Ehime Prefecture|sk|Ehime (prefektúra)|sr|Префектура Ехиме|su|Préféktur Ehime|sv|Ehime prefektur|sw|Mkoa wa Ehime|tg|Префектураи Эҳиме|th|จังหวัดเอฮิเมะ|tl|Prepektura ng Ehime|tr|Ehime|tt|Эхиме (префектура)|uk|Префектура Ехіме|ur|اہیمے پریفیکچر|vi|Ehime|war|Ehime (prefektura)|wuu|爱媛县|zh|爱媛县|zh_classical|愛媛縣|zh_min_nan|Ehime-koān|zh_yue|愛媛縣|qid=Q123376|lt=Ehime Prefecture}}, Japan. It is considered a provincial shrine (総社) of {{ill|Iyo Province|cs|Provincie Ijo|de|Provinz Iyo|es|Provincia de Iyo|fa|ولایت ایو|fi|Iyon provinssi|fr|Province d'Iyo|gl|Provincia de Iyo|id|Provinsi Iyo|it|Iyo (provincia)|ja|伊予国|ko|이요국|lt|Ijo žemė|min|Provinsi Iyo|nl|Iyo (provincie)|pt|Província de Iyo|ru|Иё (провинция)|sh|Iyo (provincija)|simple|Iyo Province|sk|Ijo (provincia)|sr|Провинција Ијо|tr|Iyo (vilayet)|uk|Провінція Ійо|zh|伊予國|zh_min_nan|Iyo-kok|qid=Q907829|lt=Iyo Province}} and a {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō}} shrine.
+
 == Enshrined Deities ==
 * Five Pillars of Creation (Five Heavenly Kami)
-* Ikatarashihiko-no-Mikoto (いかたらしひこのみこと), identified as a prince of {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin|1=Emperor Suinin}}
-* Ikagasikooro-no-Mikoto (いかがしこおのみこと), believed to be an ancestral deity of the {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan|1=Mononobe clan}}
+* Ikatarashihiko-no-Mikoto (いかたらしひこのみこと), identified as a prince of {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}}
+* Ikagasikooro-no-Mikoto (いかがしこおのみこと), believed to be an ancestral deity of the {{ill|Mononobe clan|en|Mononobe clan|qid=Q1755836|lt=Mononobe clan}}
+
 == History ==
-The shrine is listed in the {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} under {{ill|Ochi District, Ehime|en|Ochi District, Ehime|qid=Q1206502|lt=Ochi District, Iyo Province|1=Ochi District, Ehime}}. Historically known as "Sosha Myojin" (総社明神), the shrine's proximity to the Soja River (蒼社川) reflects its importance as a regional spiritual center. The name "Ikanashi" is thought to derive from "Ikagasiko," a reference to the enshrined deity.
-The shrine's documents and treasures were lost in a fire during the {{ill|Ansei|en|Ansei|qid=Q1327259|lt=Ansei era|1=Ansei}} (1854–1860).
+The shrine is listed in the {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō}} under {{ill|Ochi District, Ehime|ceb|Ochi-gun|es|Distrito de Ochi (Ehime)|fr|District d'Ochi (Ehime)|id|Distrik Ochi, Ehime|it|Distretto di Ochi|ja|越智郡|ko|오치군 (에히메현)|pl|Powiat Ochi|uk|Повіт Очі|zh|越智郡|qid=Q1206502|lt=Ochi District, Iyo Province}}. Historically known as "Sosha Myojin" (総社明神), the shrine's proximity to the Soja River (蒼社川) reflects its importance as a regional spiritual center. The name "Ikanashi" is thought to derive from "Ikagasiko," a reference to the enshrined deity.
+
+The shrine's documents and treasures were lost in a fire during the {{ill|Ansei|cs|Ansei|de|Ansei|es|Ansei|fa|آنسی (دوره)|fr|Ère Ansei|ia|Ansei|it|Ansei|ja|安政|ko|안세이|ru|Ансэй|simple|Ansei|sr|Ансеи|sv|Ansei|tr|Ansei|zh|安政|qid=Q1327259|lt=Ansei era}} (1854–1860).
+
 == Grounds ==
 ; main hall
 ; Worship Hall
 ; Sub-Shrines
-* Yamano-no-Kami Shrine: Dedicated to {{ill|Ōyamatsumi|qid=Q386563|lt=Ōyamatsumi|lt=Oyamatsumi|ja|大山積神|12=simple|13=User:Immanuelle/Oyamatsumi|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|1=Ōyamatsumi}}
+* Yamano-no-Kami Shrine: Dedicated to {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Oyamatsumi}}
 * Okuninushi Shrine: Dedicated to [[Ōkuninushi]]
-* Munakata Shrine: Dedicated to the {{ill|Three Munakata Goddesses|ja|宗像三女神|1=Three Munakata Goddesses|1=Three Munakata Goddesses|qq=Three Munakata Goddesses|12=simple|13=User:Immanuelle/Three Munakata Goddesses|13=User:Immanuelle/Three Munakata Goddesses|qq=}}
-The nearby summit of the mountain hosts {{ill|Iwashimizu Hachiman Shrine (Imabari)|ja|石清水八幡神社 (今治市)|12=simple|13=User:Immanuelle/Iwashimizu Hachiman Shrine (Imabari)|1=Iwashimizu-Hachiman Shrine|comment=changed title based on wikidata|qid=Q55535314}}.
+* Munakata Shrine: Dedicated to the {{ill|Three Munakata Goddesses|ja|宗像三女神|ko|무나카타 삼여신|simple|Three Munakata goddesses|zh|宗像三女神|qid=Q10948069}}
+
+The nearby summit of the mountain hosts {{ill|Iwashimizu-Hachiman Shrine|ja|石清水八幡神社 (今治市)|qid=Q55535314}}.
+
 == festivals ==
 The shrine's festival takes place on October 10. A lottery system determines the heads of the shrine's organizing groups (10-household units) for the following year, and the festival is led by the selected leader (当屋). A kagami (mirror) ritual and mochi offering are central components.
-In addition to the festival, an early seedling festival (早苗祭) is held around {{ill|88th night|ja|八十八夜|12=simple|13=User:Immanuelle/88th night|1=Hachijūhachiya|comment=changed title based on wikidata|qid=Q11390609}}, when prayers for a bountiful harvest are made.
+
+In addition to the festival, an early seedling festival (早苗祭) is held around {{ill|Hachijūhachiya|ja|八十八夜|12=simple|13=User:Immanuelle/88th night|comment=changed title based on wikidata|qid=Q11390609}}, when prayers for a bountiful harvest are made.
+
 <gallery>
 File:Ikanasi 0ɜ.jpg|Stone steps leading to the shrine
 File:Ikanasi 0ɨ.jpg|Worship Hall
 File:Iwasimizu imabari ɨɜ.jpg|main hall
 File:Ikanasi 02.jpg|Sub-Shrine
 </gallery>
+
 == References ==
 <references />
+
 == Bibliography ==
 * {{Cite book|author=[[Tanikawa Kenichi]] (谷川健一) ed.|title=日本の神々 神社と聖地 2 山陽・四国|publisher=[[Hakusuisha]]|year=2000|isbn=4-560-02502-9}}
+
 {{Shinto}}
+
 {{Sōja shrines}}
+
+{{translated page|ja|伊加奈志神社|version=77036659|comment=Imported full ja history}}
+
+{{Commons category|Ikanashi-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Ikanashi Shrine (Q11378912)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Iyo Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Ochi District, Ehime|en|Ochi District, Ehime|ja|越智郡|ceb|Ochi-gun|es|Distrito de Ochi (Ehime)|fr|District d&amp;#x27;Ochi (Ehime)|id|Distrik Ochi, Ehime|it|Distretto di Ochi|ko|오치군 (에히메현)|pl|Powiat Ochi|uk|Повіт Очі|zh|越智郡|lt=Ochi district|qid=Q1206502|1=Ochi District, Ehime}} || {{ill|Ikanashi Shrine|lt=Ikanashi Shrine|ja|伊加奈志神社|commons|Category:Ikanashi-jinja|qid=Q11378912|1=Ikanashi Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || {{ill|sōja|qid=Q1107129|lt=sōja|1=Sōja shrine}} || — || {{coord|34.032619|132.977049|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183252 DB]
+| {{ill|Ochi District, Ehime|ceb|Ochi-gun|es|Distrito de Ochi (Ehime)|fr|District d'Ochi (Ehime)|id|Distrik Ochi, Ehime|it|Distretto di Ochi|ja|越智郡|ko|오치군 (에히메현)|pl|Powiat Ochi|uk|Повіт Очі|zh|越智郡|qid=Q1206502|lt=Ochi district}} || {{ill|Ikanashi Shrine|lt=Ikanashi Shrine|ja|伊加奈志神社|commons|Category:Ikanashi-jinja|qid=Q11378912}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || {{ill|Sōja shrine|qid=Q1107129|lt=sōja}} || — || {{coord|34.032619|132.977049|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183252 DB]
 |}
-
-{{translated page|ja|伊加奈志神社|version=77036659|comment=Imported full ja history}}
-{{Commons category|Ikanashi-jinja}}
-
+{{wikidata link|Q11378912|da|d:Q11378912|ja|伊加奈志神社|check_date=2026-05-15}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Imabari, Ehime]]
 [[Category:History of Imabari, Ehime]]
 [[Category:Iyo Province]]
+[[Category:Iyo Province|Shrines]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Iyo Province]]
 [[Category:Shinto shrines in Ehime Prefecture]]
 [[Category:Son-sha]]
@@ -67,3 +85,5 @@ File:Ikanasi 02.jpg|Sub-Shrine
 [[Category:Sōja shrines]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

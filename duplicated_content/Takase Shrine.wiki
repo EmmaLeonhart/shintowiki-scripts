@@ -1,3 +1,16 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takase_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
+{{distinguish|Takase Shrine (Q3791906)}}
+
+'''Takase Shrine (Q11671973)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Matta district|ja|茨田郡|zh|茨田郡|qid=Q11617933}} || {{ill|Takase Shrine|lt=Takase Shrine|ja|高瀬神社 (守口市)|qid=Q11671973}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.729323|135.562611|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180925 DB]
+|}
+==Overview==
+
 {{Short description|Shinto shrine}}
 {{Infobox religious building
 | name = Takase Shrine
@@ -22,57 +35,218 @@
 | festival = September 13
 }}
 {{nihongo|'''Takase Shrine'''|高瀬神社|Takase-jinja}} is a [[Shinto shrine]] located in the Takase neighborhood of the city of [[Nanto, Toyama|Nanto]], [[Toyama Prefecture]], [[Japan]]. It one of four shrines claiming the title of ''[[ichinomiya]]'' of former [[Etchū Province]].<ref>[http://eos.kokugakuin.ac.jp/modules/xwords/images/uploads/EOS070712Ab.pdf "Nationwide List of ''Ichinomiya''," p. 2]; retrieved 2013-1-25.</ref> The shrine's main festival is held annually on September 13.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref>
+
 ==Enshrined ''kami''==
 The ''[[kami]]'' enshrined at Takase Jinja are:
 *{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
-*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama|qq=}}'''|天活玉命|}}
-*{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami|qq=}}'''|五十猛神|}}
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
+
 ==History==
 The original construction of Takase Jinja is uncertain. Worship of [[Ōkuninushi]] was widespread in the [[Hokuriku region]] from before the [[Nara period]] and is believed to have been brought to this area by migrants from [[Izumo Province|Izumo]]. The shrine claims to have been founded during the reign of the semi-legendary [[Kofun period]] [[Emperor Keikō]] (reigned 71–130 AD) <ref>[http://www.takase.or.jp/guide.html#3] official home page</ref>
+
 The first mention of the shrine in historical records is in an entry in the 780 AD ''[[Shoku Nihongi]]'' when it was recorded that the shrine was granted the Rank of Junior 5th Rank, Lower Grade (従五位下). Per the 795 AD ''[[Nihon Kōki]]'' it was promoted to Junior 5th Rank, Upper Grade, and the 840 AD ''[[Shoku Nihon Kōki]]'' states that it was promoted from Junior 4th Rank, Lower Grade to Junior 4th Rank, Upper Grade, and per the 854 AD ''[[Nihon Montoku Tennō Jitsuroku]]'', it had been accorded Junior 3rd Rank. Per the 859 AD ''[[Nihon Sandai Jitsuroku]]'', it had advanced to Senior 3rd Rank. While these are indications of its high status, in the ''[[Engishiki]]'' records compiled in 927 AD it is listed as only one of seven minor shrines in Tonami County of Etchū Province. However, late in the [[Heian period]], the [[kokufu|provincial capital]] of Etchū was relocated to Tonami, and the Takase Jinja was elevated to an ''ichinomiya'' and was greatly enlarged. Under the ''[[Shinbutsu-shūgō]]'' movement joining Shintoism and Buddhism, it once had 300 Buddhist chapels. This period of prosperity was short-lived. With the growth of the ''[[Ikkō-shū]]'' movement in Etchū and the various battles of the [[Sengoku period]], the area around the Takase Jinja was devastated, and it fell largely into ruin. After the establishment of the [[Tokugawa shogunate]] and the creation of [[Toyama Domain]], the shrine was revived with the patronage of the [[Maeda clan]]. Following the [[Meiji Restoration|Meiji restoration]], with the establishment of [[State Shinto]] in 1872, the shrine was originally designed as a "prefectural shrine" under the a [[Modern system of Ranked Shinto Shrines]], but was later raised in status to a {{nihongo|National Shrine,3rd Rank|国幣小社|[[Modern system of Ranked Shinto shrines|Kokuhei-shōsha]]}}  in 1923.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
+
 The shrine is located a 40 minute walk from [[Fukuno Station (Toyama)|Fukuno Station]] on the [[JR West]] [[Jōhana Line]].<ref name="Shibuya">{{cite book |last1=Shibuya |first1=Nobuhiro |title=諸国神社 一宮・二宮・三宮 |date=2015 |publisher=Yamakawa Publishing Company |isbn=978-4634150867}}{{in lang|ja}}</ref><ref name="Irie">{{cite book |last1=Irie |first1=Koichiro |title=諸国一の宮 |date=2018 |publisher=Idō kyōshitsu Publishing |isbn=978-4901398060}}</ref>
+
 ==Gallery==
 <gallery>
 File:Takase Shrine haiden.jpeg |''Haiden''
 File:国幣小社高瀬神社.jpg|Takase Jinja in 1938
 File:県社高瀬神社.jpg|Takase Jinja in 1909
 </gallery>
+
 ==See also==
 * [[List of Shinto shrines in Japan]]
 * [[Ichinomiya]]
 * Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
-** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine|qq=}}
-** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja|qq=}}
-** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)|qq=}}
+** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
+** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+
 ==References==
 {{reflist}}
+
 ==External links==
 {{Commons Category|Takase-jinja}}
 * {{Official website|https://www.takase.or.jp}}
 *[https://www.info-toyama.com/spot/41037/ Toyama Prefecture tourist information] {{in lang|ja}}
 *[https://www.tabi-nanto.jp/archives/611 Nanto city tourist tourist information] {{in lang|ja}}
+
 {{Beppyo Shrines}}
 ]]
+
 {{Beppyo Shrines}}
+
 \
 {{Ichinomiya}}
+
 {{draft categories|
 }}
+
 {{Commons category|Takase-jinja}}
 
-== Shikinaisha (式内社) ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| {{ill|Matta district|ja|茨田郡|zh|茨田郡|qid=Q11617933}} || {{ill|Takase Shrine|lt=Takase Shrine|ja|高瀬神社 (守口市)|qid=Q11671973}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.729323|135.562611|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180925 DB]
-|}
+{{wikidata link|Q11671973|en|Takase Shrine|fr|Takase-jinja|ja|高瀬神社|zh|高瀨神社|ja|高瀬神社 (守口市)|check_date=2026-05-10}}
+== Accidentally Overwritten Content ==
+{{Short description|Shinto shrine}}
+{{Infobox religious building
+| name = Takase Shrine
+|native_name = 高瀬神社
+| image = Takase Shrine torii.jpeg
+| caption = Torii at Takase Shrine
+{{Infobox mapframe|zoom=14|frame-width=240}}
+| map_type = Japan Toyama Prefecture#Japan
+| map_alt = 
+| coordinates = {{coord|36|34|18.7|N|136|56|53.7|E|type:landmark_region:JP|display=title,inline}}
+| map_relief  = 1
+| map_size = 
+| map_caption = Takase Jinja
+| religious_affiliation = [[Shinto]]
+| type = 
+| deity = [[Ōkuninushi]]
+| founded_by = 
+| established = pre-[[Nara period]]
+| location = 291 Takase, Nanto-shi, Toyama-ken 932-0252
+| website = {{Official website|https://www.takase.or.jp}}
+| architecture_style = 
+| festival = September 13
+}}
+{{nihongo|'''Takase Shrine'''|高瀬神社|Takase-jinja}} is a [[Shinto shrine]] located in the Takase neighborhood of the city of [[Nanto, Toyama|Nanto]], [[Toyama Prefecture]], [[Japan]]. It one of four shrines claiming the title of ''[[ichinomiya]]'' of former [[Etchū Province]].<ref>[http://eos.kokugakuin.ac.jp/modules/xwords/images/uploads/EOS070712Ab.pdf "Nationwide List of ''Ichinomiya''," p. 2]; retrieved 2013-1-25.</ref> The shrine's main festival is held annually on September 13.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref>
 
+==Enshrined ''kami''==
+The ''[[kami]]'' enshrined at Takase Jinja are:
+*{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
+
+==History==
+The original construction of Takase Jinja is uncertain. Worship of [[Ōkuninushi]] was widespread in the [[Hokuriku region]] from before the [[Nara period]] and is believed to have been brought to this area by migrants from [[Izumo Province|Izumo]]. The shrine claims to have been founded during the reign of the semi-legendary [[Kofun period]] [[Emperor Keikō]] (reigned 71–130 AD) <ref>[http://www.takase.or.jp/guide.html#3] official home page</ref>
+
+The first mention of the shrine in historical records is in an entry in the 780 AD ''[[Shoku Nihongi]]'' when it was recorded that the shrine was granted the Rank of Junior 5th Rank, Lower Grade (従五位下). Per the 795 AD ''[[Nihon Kōki]]'' it was promoted to Junior 5th Rank, Upper Grade, and the 840 AD ''[[Shoku Nihon Kōki]]'' states that it was promoted from Junior 4th Rank, Lower Grade to Junior 4th Rank, Upper Grade, and per the 854 AD ''[[Nihon Montoku Tennō Jitsuroku]]'', it had been accorded Junior 3rd Rank. Per the 859 AD ''[[Nihon Sandai Jitsuroku]]'', it had advanced to Senior 3rd Rank. While these are indications of its high status, in the ''[[Engishiki]]'' records compiled in 927 AD it is listed as only one of seven minor shrines in Tonami County of Etchū Province. However, late in the [[Heian period]], the [[kokufu|provincial capital]] of Etchū was relocated to Tonami, and the Takase Jinja was elevated to an ''ichinomiya'' and was greatly enlarged. Under the ''[[Shinbutsu-shūgō]]'' movement joining Shintoism and Buddhism, it once had 300 Buddhist chapels. This period of prosperity was short-lived. With the growth of the ''[[Ikkō-shū]]'' movement in Etchū and the various battles of the [[Sengoku period]], the area around the Takase Jinja was devastated, and it fell largely into ruin. After the establishment of the [[Tokugawa shogunate]] and the creation of [[Toyama Domain]], the shrine was revived with the patronage of the [[Maeda clan]]. Following the [[Meiji Restoration|Meiji restoration]], with the establishment of [[State Shinto]] in 1872, the shrine was originally designed as a "prefectural shrine" under the a [[Modern system of Ranked Shinto Shrines]], but was later raised in status to a {{nihongo|National Shrine,3rd Rank|国幣小社|[[Modern system of Ranked Shinto shrines|Kokuhei-shōsha]]}}  in 1923.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
+
+The shrine is located a 40 minute walk from [[Fukuno Station (Toyama)|Fukuno Station]] on the [[JR West]] [[Jōhana Line]].<ref name="Shibuya">{{cite book |last1=Shibuya |first1=Nobuhiro |title=諸国神社 一宮・二宮・三宮 |date=2015 |publisher=Yamakawa Publishing Company |isbn=978-4634150867}}{{in lang|ja}}</ref><ref name="Irie">{{cite book |last1=Irie |first1=Koichiro |title=諸国一の宮 |date=2018 |publisher=Idō kyōshitsu Publishing |isbn=978-4901398060}}</ref>
+
+==Gallery==
+<gallery>
+File:Takase Shrine haiden.jpeg |''Haiden''
+File:国幣小社高瀬神社.jpg|Takase Jinja in 1938
+File:県社高瀬神社.jpg|Takase Jinja in 1909
+</gallery>
+
+==See also==
+* [[List of Shinto shrines in Japan]]
+* [[Ichinomiya]]
+* Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
+** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
+** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons Category|Takase-jinja}}
+* {{Official website|https://www.takase.or.jp}}
+*[https://www.info-toyama.com/spot/41037/ Toyama Prefecture tourist information] {{in lang|ja}}
+*[https://www.tabi-nanto.jp/archives/611 Nanto city tourist tourist information] {{in lang|ja}}
+
+{{Beppyo Shrines}}
+]]
+
+{{Beppyo Shrines}}
+
+\
+{{Ichinomiya}}
+
+{{draft categories|
+}}
+
+{{Commons category|Takase-jinja}}
+
+== Accidentally Overwritten Content ==
+{{Short description|Shinto shrine}}
+{{Infobox religious building
+| name = Takase Shrine
+|native_name = 高瀬神社
+| image = Takase Shrine torii.jpeg
+| caption = Torii at Takase Shrine
+{{Infobox mapframe|zoom=14|frame-width=240}}
+| map_type = Japan Toyama Prefecture#Japan
+| map_alt = 
+| coordinates = {{coord|36|34|18.7|N|136|56|53.7|E|type:landmark_region:JP|display=title,inline}}
+| map_relief  = 1
+| map_size = 
+| map_caption = Takase Jinja
+| religious_affiliation = [[Shinto]]
+| type = 
+| deity = [[Ōkuninushi]]
+| founded_by = 
+| established = pre-[[Nara period]]
+| location = 291 Takase, Nanto-shi, Toyama-ken 932-0252
+| website = {{Official website|https://www.takase.or.jp}}
+| architecture_style = 
+| festival = September 13
+}}
+{{nihongo|'''Takase Shrine'''|高瀬神社|Takase-jinja}} is a [[Shinto shrine]] located in the Takase neighborhood of the city of [[Nanto, Toyama|Nanto]], [[Toyama Prefecture]], [[Japan]]. It one of four shrines claiming the title of ''[[ichinomiya]]'' of former [[Etchū Province]].<ref>[http://eos.kokugakuin.ac.jp/modules/xwords/images/uploads/EOS070712Ab.pdf "Nationwide List of ''Ichinomiya''," p. 2]; retrieved 2013-1-25.</ref> The shrine's main festival is held annually on September 13.<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref>
+
+==Enshrined ''kami''==
+The ''[[kami]]'' enshrined at Takase Jinja are:
+*{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
+
+==History==
+The original construction of Takase Jinja is uncertain. Worship of [[Ōkuninushi]] was widespread in the [[Hokuriku region]] from before the [[Nara period]] and is believed to have been brought to this area by migrants from [[Izumo Province|Izumo]]. The shrine claims to have been founded during the reign of the semi-legendary [[Kofun period]] [[Emperor Keikō]] (reigned 71–130 AD) <ref>[http://www.takase.or.jp/guide.html#3] official home page</ref>
+
+The first mention of the shrine in historical records is in an entry in the 780 AD ''[[Shoku Nihongi]]'' when it was recorded that the shrine was granted the Rank of Junior 5th Rank, Lower Grade (従五位下). Per the 795 AD ''[[Nihon Kōki]]'' it was promoted to Junior 5th Rank, Upper Grade, and the 840 AD ''[[Shoku Nihon Kōki]]'' states that it was promoted from Junior 4th Rank, Lower Grade to Junior 4th Rank, Upper Grade, and per the 854 AD ''[[Nihon Montoku Tennō Jitsuroku]]'', it had been accorded Junior 3rd Rank. Per the 859 AD ''[[Nihon Sandai Jitsuroku]]'', it had advanced to Senior 3rd Rank. While these are indications of its high status, in the ''[[Engishiki]]'' records compiled in 927 AD it is listed as only one of seven minor shrines in Tonami County of Etchū Province. However, late in the [[Heian period]], the [[kokufu|provincial capital]] of Etchū was relocated to Tonami, and the Takase Jinja was elevated to an ''ichinomiya'' and was greatly enlarged. Under the ''[[Shinbutsu-shūgō]]'' movement joining Shintoism and Buddhism, it once had 300 Buddhist chapels. This period of prosperity was short-lived. With the growth of the ''[[Ikkō-shū]]'' movement in Etchū and the various battles of the [[Sengoku period]], the area around the Takase Jinja was devastated, and it fell largely into ruin. After the establishment of the [[Tokugawa shogunate]] and the creation of [[Toyama Domain]], the shrine was revived with the patronage of the [[Maeda clan]]. Following the [[Meiji Restoration|Meiji restoration]], with the establishment of [[State Shinto]] in 1872, the shrine was originally designed as a "prefectural shrine" under the a [[Modern system of Ranked Shinto Shrines]], but was later raised in status to a {{nihongo|National Shrine,3rd Rank|国幣小社|[[Modern system of Ranked Shinto shrines|Kokuhei-shōsha]]}}  in 1923.<ref name="Yoshiki">{{cite book |last1=Yoshiki |first1=Emi |title=Zenkoku 'Ichinomiya' tettei gaido |date=2007 |publisher=PHP Institute |isbn=978-4569669304 |language=Japanese}}</ref>
+
+The shrine is located a 40 minute walk from [[Fukuno Station (Toyama)|Fukuno Station]] on the [[JR West]] [[Jōhana Line]].<ref name="Shibuya">{{cite book |last1=Shibuya |first1=Nobuhiro |title=諸国神社 一宮・二宮・三宮 |date=2015 |publisher=Yamakawa Publishing Company |isbn=978-4634150867}}{{in lang|ja}}</ref><ref name="Irie">{{cite book |last1=Irie |first1=Koichiro |title=諸国一の宮 |date=2018 |publisher=Idō kyōshitsu Publishing |isbn=978-4901398060}}</ref>
+
+==Gallery==
+<gallery>
+File:Takase Shrine haiden.jpeg |''Haiden''
+File:国幣小社高瀬神社.jpg|Takase Jinja in 1938
+File:県社高瀬神社.jpg|Takase Jinja in 1909
+</gallery>
+
+==See also==
+* [[List of Shinto shrines in Japan]]
+* [[Ichinomiya]]
+* Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
+** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
+** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons Category|Takase-jinja}}
+* {{Official website|https://www.takase.or.jp}}
+*[https://www.info-toyama.com/spot/41037/ Toyama Prefecture tourist information] {{in lang|ja}}
+*[https://www.tabi-nanto.jp/archives/611 Nanto city tourist tourist information] {{in lang|ja}}
+
+{{Beppyo Shrines}}
+]]
+
+{{Beppyo Shrines}}
+
+\
+{{Ichinomiya}}
+
+{{draft categories|
+}}
+
+{{Commons category|Takase-jinja}}
 [[Category:Beppyo shrines]]
 [[Category:Etchū Province]]
 [[Category:Ichinomiya]]
 [[Category:Kanpei-sha]]
 [[Category:Kokuhei Shōsha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Toyama Prefecture]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
 [[Category:Pages with interwikis with duplicate languages]]

@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Togami_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+
 {{Unreferenced|date=September 2020}}
 {{Infobox religious building
  | name = Toake Shrine
@@ -11,26 +12,84 @@
  | ceremonies = Setsubun Yakuyoke Festival, Bean-throwing Ceremony
 | location = {{ill|Wakamatsu-ku, Kitakyūshū|qid=Q858184}}
  }}
+
 '''Toake Shrine''' (戸明神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Wakamatsu-ku, Kitakyūshū|en|Wakamatsu-ku, Kitakyūshū|qid=Q858184|lt=Wakamatsu Ward}}, {{ill|Kitakyushu|en|Kitakyushu|qid=Q188806|lt=Kitakyushu}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, Japan. The shrine enshrines the deities {{ill|Ame-no-Tajikarao|en|Ame-no-Tajikarao|qid=Q849412|lt=Ame-no-Tajikarao}} and {{ill|Ame-no-Koyane|ja|アメノコヤネ|12=simple|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}, who appear in Japanese mythology. It is one of the few shrines in Fukuoka Prefecture dedicated to these deities.
+
 == Enshrined Deities ==
 The shrine worships {{ill|Ame-no-Tajikarao|en|Ame-no-Tajikarao|qid=Q849412|lt=Ame-no-Tajikarao}} and {{ill|Ame-no-Koyane|ja|アメノコヤネ|12=simple|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}, deities who appear in the myth of the {{ill|Amano-Iwato|ja|天の岩戸|12=simple|13=User:Immanuelle/Amano-Iwato|ja_comment=jawiki redirects to 天岩戸}}.
+
 == History ==
 Toake Shrine serves as the main shrine (hongū) for the "Toake Shrines" located in Anyō, Arige, Ōtorii, and {{ill|Q11673253|ja|高須 (北九州市)|12=simple|13=User:Immanuelle/Takasu, Kitakyushu|comment=changed title based on wikidata|qid=Q11673253}}. It has long been revered as the general shrine (sōsha) for 18 {{ill|Ubusunagami Shrines|ja|産土氏神社|12=simple|13=User:Immanuelle/Ubusunagami Shrines|ja_comment=jawiki link invalid}} located in Inakuni, Iwaya, Wakita, Takenami, Harakawa, Shioya, and Koshiki.
+
 The exact date of its founding is unknown, but the ''Toake Shrine Engishojo'' (戸明神社縁起書序), recorded by the 6th head priest, Hatakake Motonari, in 1536 (Tenmon 5), states:  
 *"Long ago, this shrine stood at Toake Beach, between Iwaya and Kashiwabara, and was built in an imposing and dignified manner. During the Kyōroku era, it was relocated to its current site."*
+
 From this, it is believed that the shrine was moved to its current location in Azusumi around 1528 (Kyōroku era) and that it had already existed before this relocation.
+
 According to the ''Fukuoka Prefecture Shrine Records'' (published in 1944),  
 *"In ancient times, this was a grand shrine, counted among the three great shrines of the region. The thirty villages of the island district regularly performed prayers for the harvest in both spring and autumn, along with frequent special ceremonies throughout the year."*  
+
 Considering that the shrine’s priestly family also held the title of head priest for the district, it is evident that the shrine once flourished as a center of religious activity.
+
 == External Links ==
 *{{Wayback|url=http://www5.ocn.ne.jp/~toake/ |title=Official website of Toake Shrine |date=2007-12-30 05:38:13}}{{Dead link|date=May 14, 2018|title=http://toake.sakura.ne.jp/ exists but with a slightly different address.}}
+
 {{translated page|ja|戸明神社|version=79507045|comment=Imported full ja history}}
+
 [[File:Takou-jinja1.jpg|250px]]
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Referencesの明記|date=2020th year 9月}}
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+ | name = Toake Shrine
+ | religious_affiliation = [[Shinto]]
+|image = {{image requested|cat=北九州市}}
+ | location = 福岡県北九州市若松区蜑住866番地
+ | coordinates = {{Coord|33|54|48.9|N|130|42|23.6|E|region:JP}}
+ | Enshrined Deities = {{ill|Ame-no-Tajikarao|en|Ame-no-Tajikarao|qid=Q849412|lt=Ame-no-Tajikarao-no-Okami}}<br />[[Ame-no-Koyane|Ame-no-Koyane-no-Okami]]
+ | type = Village Shrine (旧村社)
+ | festival = {{ill|October 8|en|October 8|qid=Q2924|lt=October 8}}–{{ill|October 9|en|October 9|qid=Q2923|lt=October 9}}
+ | Rituals = Setsubun Yakuyoke Festival (Bean-throwing Ritual)
+}}
+
+'''Toake Shrine''' (戸明神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Kitakyushu|en|Kitakyushu|qid=Q188806|lt=Kitakyushu}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, specifically in the [[Wakamatsu-ku|Wakamatsu Ward]]. The shrine enshrines {{ill|Ame-no-Tajikarao|en|Ame-no-Tajikarao|qid=Q849412|lt=Ame-no-Tajikarao}} and [[Ame-no-Koyane]], two deities featured prominently in Japanese mythology. It holds significance as a rare shrine dedicated to these gods in the Fukuoka region.
+
+== Enshrined Deities ==
+The shrine is dedicated to:
+* '''{{ill|Ame-no-Tajikarao|en|Ame-no-Tajikarao|qid=Q849412|lt=Ame-no-Tajikarao}}''': A god of strength, known for his role in the ''[[:en:Ama-no-Iwato|Ama-no-Iwato]]'' (Heavenly Rock Cave) myth, where he pulled open the rock door to coax out [[Amaterasu]], the sun goddess.
+* '''[[Ame-no-Koyane]]''': A deity associated with rituals and ceremonies, who played a key role in the same myth by reciting prayers to invite Amaterasu's return.
+
+== History ==
+The shrine serves as the principal shrine (本宮) for a network of shrines in the surrounding areas, including those in Anya, Aruge, Ōtorii, and Takasu. It is also recognized as the chief shrine (総社) for 18 "Ubusuna-sha" (産土氏神社) in neighboring regions such as Inakuni, Iwaya, and Wakata.
+
+== Foundation ==
+The exact date of the shrine's foundation is unknown. However, the ''Enkisho'' (縁起書) written by the sixth-generation head priest, '''Hatakae Motonari''', in 1536 (天文5th year ), provides some clues. It states that the shrine was originally located at Toakehama and later moved to its current location in {{ill|Kyōroku|en|Kyōroku|qid=Q1193418|lt=Kyōroku}} (享禄, 1528–1532).
+
+== Historical Significance ==
+According to the ''Fukuoka Prefecture Shrine Record'' (昭和19th year ), Toake Shrine was once a significant shrine, referred to as one of the "Three Great Shrines" of the region. It hosted seasonal festivals for the prosperity of agriculture and other rites for the local villages, demonstrating its historical importance as a central religious site.
+
+== Annual Events ==
+The shrine is known for its annual festivals and rituals, including:
+* '''October 8–9:''' Autumn Festival (festival)
+* '''Setsubun Yakuyoke Festival:''' A bean-throwing ritual conducted for warding off evil spirits and bringing good fortune.
+
+== External Links ==
+* [https://web.archive.org/web/20071230053813/http://www5.ocn.ne.jp/~toake/ Archived Toake Shrine Website] (Japanese, archived)
+
+* {{ill|Togami Shrine|en|12=simple|13=User:Immanuelle/Tomei Shrine}} ({{ill|Kitakyūshū City|en|12=simple|13=User:Immanuelle/Kitakyūshū City}}, {{ill|Fukuoka Prefecture|en|12=simple|13=User:Immanuelle/Fukuoka Prefecture}})
+
+disambiguation]]
+[[Tajikarao Shrine]]
+
+{{translated page|ja|戸明神社|version=79507045|comment=Imported full ja history}}
+
+{{wikidata link|Q11496393|ja|戸明神社|ja|%E6%88%B8%E6%98%8E%E7%A5%9E%E7%A4%BE|ja|北九州市|ja|福岡県|ja|手力雄神社|check_date=2026-05-11}}
 [[Category:Buildings and structures in Wakamatsu Ward]]
 [[Category:History of Wakamatsu Ward]]
 [[Category:Image requests in Kitakyushu City]]
 [[Category:Kitakyushu]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Fukuoka Prefecture]]
 [[Category:Shinto shrines in Kitakyushu]]
 [[Category:Son-sha]]

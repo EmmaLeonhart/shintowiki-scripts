@@ -1,25 +1,34 @@
-{{Infobox religious building
+{
+{
+{
+{
+{
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name   = Onji Shrine
 | religious_affiliation = [[Shinto]]
 |image  = File:Onji-shrine00.JPG
+|location = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}} [[:en:Yao City|Yao City]] [[Onji Nakamachi]] 5-chome 10
 |latitude degrees = 34|latitude minutes = 36|latitude seconds = 23.47
 |longitude degrees = 135|longitude minutes = 38|longitude seconds = 19.07
 |ISO = JP-27
 |enshrined deity = Ōmiketsuhiko no Ōkami<br />Ōmiketsuhime no Ōkami
-|sacred object =
-|Rank = {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}} 2 seats)<br />(Traditionally) [[Kawachi Province]] [[Second Shrine]]<br />Former {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Prefectural shrine|1=Modern system of ranked Shinto shrines}}
+|sacred object = 
+|Rank = {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}} 2 seats)<br />(Traditionally) [[Kawachi Province]] [[Second Shrine]]<br />Former {{ill|Modern system of ranked Shinto shrines|ca|Classificació moderna dels santuaris xintoistes|es|Anexo:Santuarios sintoístas según el sistema moderno|fr|Système moderne de classement des sanctuaires shinto|ja|近代社格制度|simple|Modern system of ranked Shinto shrines|sv|Moderna systemet för rangordning av shinto-helgedomar|zh|近代社格制度|qid=Q712534|lt=Prefectural shrine}}
 |established = Unknown
 |annual festival = [[November 26]] (Utatatsusai)
 |main hall = Ōji-style, 2 buildings
 |alternate name = Motokasuga
-|pilgrimage stamps =
-|rituals = Mikutosho Ritual ({{ill|November 24|en|November 24|qid=Q3022|lt=November 24|1=November 24}})
+|pilgrimage stamps = 
+|rituals = Mikutosho Ritual ({{ill|November 24|en|November 24|qid=Q3022|lt=November 24}})
 |label position = left
 |map = Osaka city
-|location = {{ill|Yao|qid=Q490872|1=Yao, Osaka}}
+|location = {{ill|Yao, Osaka|qid=Q490872}}
 |coordinates = {{Coord|34.60652777777778|N|135.6386388888889}}
 }}
-'''Onji Shrine''' (恩智神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Onji Nakamachi, Yao, Osaka|ja|恩智中町|12=simple|13=User:Immanuelle/Onji Nakamachi, Yao, Osaka|qq=}}, {{ill|Yao, Osaka|en|Yao, Osaka|qid=Q490872|lt=Yao, Osaka|1=Yao, Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}. It is an ancient shrine recorded as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myōjin Taisha|comment=enwiki is a redirect}}) and is traditionally considered the Ninomiya or second Ranked shrine of {{ill|Kawachi Province|en|Kawachi Province|qid=Q1047150|lt=Kawachi Province|1=Kawachi Province}}. Under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}, it was classified as a {{ill|Modern system of Ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|府社|1=Fu-sha|qid=Q134917326}}{{efn|lt=Fu-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}. The shrine's {{ill|Shinshi|en|Shinshi|qid=Q10444973|lt=messengers|1=Shinshi}} are said to be rabbits and dragons.
+
+'''Onji Shrine''' (恩智神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Onji Nakamachi, Yao, Osaka|ja|恩智中町}}, {{ill|Yao, Osaka|en|Yao, Osaka|qid=Q490872|lt=Yao, Osaka}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. It is an ancient shrine recorded as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}) and is traditionally considered the Ninomiya or second Ranked shrine of {{ill|Kawachi Province|en|Kawachi Province|qid=Q1047150|lt=Kawachi Province}}. Under the {{ill|Modern system of ranked Shinto shrines|ca|Classificació moderna dels santuaris xintoistes|es|Anexo:Santuarios sintoístas según el sistema moderno|fr|Système moderne de classement des sanctuaires shinto|ja|近代社格制度|simple|Modern system of ranked Shinto shrines|sv|Moderna systemet för rangordning av shinto-helgedomar|zh|近代社格制度|qid=Q712534|lt=Modern system of Ranked Shinto shrines}}, it was classified as a {{ill|Fu-sha|lt=Modern system of Ranked Shinto shrines|lt=Prefectural shrine|ja|府社|qid=Q134917326}}{{efn|lt=Fu-sha|1=Modern_system_of_ranked_Shinto_shrines#Metropolitan_and_Prefectural_Shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}. The shrine’s {{ill|Shinshi|en|Shinshi|qid=Q10444973|lt=messengers}} are said to be rabbits and dragons.
+
 == Gallery ==
 <gallery>
 File:Onji-jinja,_kofun.jpg|link=File:Onji-jinja,_kofun.jpg|Main hall (left) and the ancient tomb behind it (right back)
@@ -28,27 +37,58 @@ File:Onji-jinja,_entrance.jpg|link=File:Onji-jinja,_entrance.jpg|Shrine entrance
 File:Onji-jinja,_torii.jpg|link=File:Onji-jinja,_torii.jpg|Torii gate
 File:Yao_City_Onji_Nakacho_3-chome_excavation,_Decorated_Bronze_Bell_(J-9212).JPG|Decorated bronze bell excavated from Onji Nakacho 3-chome, Yao City<br /><br />{{Small|Displayed at the Tokyo National Museum.}}
 </gallery>
+
 == Footnotes ==
 <references group="原"></references>
+
+{{ill|fr:Onji-jinja|en|fr:Onji-jinja}}
 == References ==
 {{Commons|Onji shrine}}[[co:commons:Category:Onji shrine]]
+[[Category:Onji shrine}}
 <references></references>
-== External links ==
+
+== External link ==
+
 * [http://www.onji.or.jp/ Onchi Shrine] - Official website
 * [http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai6sibu/yao-city/m13_01_yao_onji.html Onchi Shrine] - Osaka Prefecture Shrine Association
 * [http://bunka.city.yao.osaka.jp/detail/index?cultural_id=64 Onji Shrine] - Yao City Cultural Property Information System
-* [http://21coe.kokugakuin.ac.jp/db/jinja/kindex2.php?J_ID=30401 Two Shrines of Onchi Shrine (Omikazuchihiko no Mikoto)] - Kokugakuin University 21st Century COE Program "Compilation of Shinto and Shrine Historical Materials"
+* [http://21coe.kokugakuin.ac.jp/db/jinja/kindex2.php?J_ID=30401 Two Shrines of Onchi Shrine (Omikazuchihiko no Mikoto)] - Kokugakuin University 21st Century COE Program "Compilation of Shinto and Shrine Historical Materials" 
+
+{{ill|fr:User:Immanuelle/Onji Shrine|en|fr:User:Immanuelle/Onji Shrine}}
+{{ill|fr:User:Onji Shrine|en|fr:User:Onji Shrine}}
+{{ill|User:Immanuelle|'''Immanuel'''le|en}} ❤️💚💙 {{ill|User_talk:Immanuelle|(please tag me)|en}} 03:40, 29 April 2024 (UTC)}}
+
+{{ill|simple:User:Immanuelle/Onji Shrine|en|simple:User:Immanuelle/Onji Shrine}}   
+
+{{ill|simple:User:Immanuelle/Onji Shrine|en|simple:User:Immanuelle/Onji Shrine}}
+
+{{ill|simple:User:Immanuelle/Onji Shrine|en|simple:User:Immanuelle/Onji Shrine}}
+
+{{ill|simple:User:Immanuelle/Onji Shrine|en|simple:User:Immanuelle/Onji Shrine}}
+
+}}
+
+{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
+
+{{translated page|ja|恩智神社|version=103432600|comment=Imported full ja history}}
+
+{{everybodywiki link|Onji Shrine}}
+
+{{everybodywiki link|Onji Shrine|Onji Shrine}}
+
+{{Commons category|Onji shrine}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Onji Shrine (Q11492258)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Takayasu district|zh|高安郡|qid=Q98491944|1=Takayasu district}} || {{ill|Onji Shrine|lt=Onji Shrine|ja|恩智神社|commons|Category:Onji shrine|qid=Q11492258|1=Onji Shrine}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} ({{ill|Shrine receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings|qid=Q135009157|lt=Ainame|1=Shrines receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings}}{{efn|gets offerings for the {{ill|Ainame Festival|ja|相嘗祭|zh|相嘗祭|qid=Q11581944|1=Ainame Festival}} and the lower ranked {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161|1=Tsukinami-no-Matsuri}} and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518|1=Niiname-no-Matsuri}}.}}) || {{ill|Myōjin Taisha|qid=Q9610964|1=Myōjin Taisha}} || 3 seats, {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya|1=Ni-no-Miya}} || — || {{coord|34.606576|135.638461|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180902 DB]
+| {{ill|Takayasu district|zh|高安郡|qid=Q98491944}} || {{ill|Onji Shrine|lt=Onji Shrine|ja|恩智神社|commons|Category:Onji shrine|qid=Q11492258}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings|qid=Q135009157|lt=Ainame}}{{efn|gets offerings for the {{ill|Ainame Festival|ja|相嘗祭|zh|相嘗祭|qid=Q11581944}} and the lower ranked {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}} and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}}.}}) || {{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}} || 3 seats, {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}} || — || {{coord|34.606576|135.638461|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180902 DB]
 |}
-
-{{translated page|ja|恩智神社|version=103432600|comment=Imported full ja history}}
-{{Commons category|Onji shrine}}
-
+{{wikidata link|Q11492258|da|d:Q11492258|ja|恩智神社|check_date=2026-05-18}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Yao, Osaka]]
 [[Category:coordinates on Wikidata]]
 [[Category:Former Fu-sha in Osaka]]
@@ -57,11 +97,15 @@ File:Yao_City_Onji_Nakacho_3-chome_excavation,_Decorated_Bronze_Bell_(J-9212).JP
 [[Category:Kanpei-sha]]
 [[Category:Kawachi Province]]
 [[Category:Ken-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Myōjin Taisha]]
 [[Category:Pages with unreviewed translations]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Wikidata has short description]]
+[[Category:Myōjin Taisha]]
 [[Category:Senior Third Rank]]
 [[Category:Junior Second Rank]]
 [[Category:Shrine receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings]]
+[[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]

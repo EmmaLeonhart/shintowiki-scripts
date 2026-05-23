@@ -1,32 +1,40 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tenno_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+
 __NOTOC__
-'''Tenno Jinja''' (天王神社、天王社) is a Shinto shrine dedicated to {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, central deities in {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion Faith}}. This name is especially used for shrines in the lineage of {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} in {{ill|Tsushima, Aichi|en|Tsushima, Aichi|qid=Q816736|lt=Tsushima City, Aichi Prefecture}}. Other shrines based on Gion Faith include {{ill|Yasaka Shrine (disambiguation)|ja|八坂神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Yasaka Shrine (disambiguation)|qq=}}, {{ill|Gion shrines|ja|祇園神社|12=simple|13=User:Immanuelle/Gion Shrine|comment=changed title based on wikidata|qid=Q11588442}}, {{ill|Hiromine Shrine (disambiguation)|ja|広峯神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Hiromine Shrine (disambiguation)|ja_comment=jawiki link invalid}}, {{ill|Yakumo shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|comment=changed title based on wikidata|qid=Q11391847}}, {{ill|Suga Shrine|ja|須賀神社|12=simple|13=User:Immanuelle/Suga Shrine|qq=}}, and {{ill|Susanoo Shrine|ja|素盞嗚神社|12=simple|13=User:Immanuelle/Susanoo Shrine|qq=}}, whose usage varies by era and source.
+'''Tenno Jinja''' (天王神社、天王社) is a Shinto shrine dedicated to {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, central deities in {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion Faith}}. This name is especially used for shrines in the lineage of {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} in {{ill|Tsushima, Aichi|en|Tsushima, Aichi|qid=Q816736|lt=Tsushima City, Aichi Prefecture}}. Other shrines based on Gion Faith include {{ill|Yasaka Shrine (disambiguation)|ja|八坂神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Yasaka Shrine (disambiguation)}}, {{ill|Gion shrines|ja|祇園神社|12=simple|13=User:Immanuelle/Gion Shrine|comment=changed title based on wikidata|qid=Q11588442}}, {{ill|Hiromine Shrine (disambiguation)|ja|広峯神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Hiromine Shrine (disambiguation)|ja_comment=jawiki link invalid}}, {{ill|Yakumo shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|comment=changed title based on wikidata|qid=Q11391847}}, {{ill|Suga Shrine|ja|須賀神社|12=simple|13=User:Immanuelle/Suga Shrine}}, and {{ill|Susanoo Shrine|ja|素盞嗚神社|12=simple|13=User:Immanuelle/Susanoo Shrine}}, whose usage varies by era and source.
+
 Currently, only a few shrines still worship Gozu Tennō directly. Most shrines now enshrine {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, who was syncretized with Gozu Tennō under {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu-shūgō}}. During the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu bunri}} (separation of Shinto and Buddhism) in the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}}, some shrines reverted to deities listed in ancient records other than Susanoo.
+
 Since the Meiji period, many shrines have been merged with others or renamed to align with the Tsushima Gozu Tennōsha, such as renaming to {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}}. As a result of Shinbutsu bunri and shrine mergers, some shrines now enshrine deities other than Gozu Tennō or interpret Gozu Tennō as a deity distinct from Susanoo. In some regions, the influence of these shrines can still be seen in place names incorporating "Tenno."
+
 == List ==
 * {{ill|Tenno Shrine (Shichinohe)|ja|天王神社 (七戸町)|12=simple|13=User:Immanuelle/Tenno Shrine (Shichinohe)|ja_comment=jawiki link invalid}} - Aomori Prefecture, Kamikita District, Shichinohe, {{ill|Shichinohe|ja|七戸 (七戸町)|12=simple|13=User:Immanuelle/Shichinohe|ja_comment=jawiki link invalid}}
 * {{ill|Susanoo Shrine (Shibata)|ja|須佐之男神社 (新発田市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Shibata)|ja_comment=jawiki link invalid}} (Tenno Shrine) - Niigata Prefecture, Shibata, {{ill|Tenno (Shibata)|ja|天王 (新発田市)|12=simple|13=User:Immanuelle/Tenno (Shibata)|ja_comment=jawiki link invalid}}<ref>[http://www.niigata-kankou.or.jp/sys/data?page-id=10163], [http://www.niigata-u.com/files/ngt2009g/091010b1.html], [http://shibata-info.jp/archives/eventcal/%E5%A4%A9%E7%8E%8B%E3%81%BE%E3%81%A4%E3%82%8A]</ref>
 * {{ill|Tenno Shrine (Kameoka)|ja|天王神社 (亀岡市)|12=simple|13=User:Immanuelle/Tenno Shrine (Kameoka)|ja_comment=jawiki link invalid}} - Kyoto Prefecture, Kameoka, {{ill|Miyazakichou|ja|宮前町 (亀岡市)|12=simple|13=User:Immanuelle/Miyamae Town|comment=changed title based on wikidata|qid=Q86733848}}, Kamisaki, Tenno Shita<ref>[http://agua.jpn.org/film/f99.html], [http://901-1000.wakkan.jp/927.html]</ref>
 * {{ill|Tenno Shrine Hachiman Shrine|ja|天王社八幡宮|12=simple|13=User:Immanuelle/Tenno Shrine Hachiman Shrine|ja_comment=jawiki link invalid}}
 * {{ill|Tenno Shrine (Kizugawa)|ja|天王神社 (木津川市)|12=simple|13=User:Immanuelle/Tenno Shrine (Kizugawa)|ja_comment=jawiki link invalid}} - Kyoto Prefecture, Kizugawa, {{ill|Kizu Shimizu|ja|木津清水|12=simple|13=User:Immanuelle/Kizu Shimizu|ja_comment=jawiki link invalid}}
-* {{ill|Tenno Shrine (Komatsushima)|ja|天王社 (小松島市)|12=simple|13=User:Immanuelle/Tenno Shrine (Komatsushima)|qq=}} - Tokushima Prefecture, Komatsushima, {{ill|Tano, Komatsushima|ja|田野町 (小松島市)|12=simple|13=User:Immanuelle/Tano Town (Komatsushima)|comment=changed title based on wikidata|qid=Q11577483}}
+* {{ill|Tenno Shrine (Komatsushima)|ja|天王社 (小松島市)|12=simple|13=User:Immanuelle/Tenno Shrine (Komatsushima)}} - Tokushima Prefecture, Komatsushima, {{ill|Tano, Komatsushima|ja|田野町 (小松島市)|12=simple|13=User:Immanuelle/Tano Town (Komatsushima)|comment=changed title based on wikidata|qid=Q11577483}}
 * {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō神社}}
 * {{ill|Tenno Hachiman Shrine|ja|天王八幡神社|12=simple|13=User:Immanuelle/Tenno Hachiman Shrine|ja_comment=jawiki link invalid}}
 * {{ill|Kenda Suga Shrine|ja|健田須賀神社|12=simple|13=User:Immanuelle/Kenoda Suga Shrine|comment=changed title based on wikidata|qid=Q11387225}}
-* {{ill|Tennosha Shrine (Komatsushima City)|ja|天王社 (小松島市)|12=simple|13=User:Immanuelle/Tennosha Shrine (Komatsushima City)|qq=}}
+* {{ill|Tennosha Shrine (Komatsushima City)|ja|天王社 (小松島市)|12=simple|13=User:Immanuelle/Tennosha Shrine (Komatsushima City)}}
 == See Also ==
 * {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion Faith}}
-* {{ill|Gion and Tenno Festivals|ja|天王祭|12=simple|13=User:Immanuelle/Gion and Tenno Festivals|qq=}}
+* {{ill|Gion and Tenno Festivals|ja|天王祭|12=simple|13=User:Immanuelle/Gion and Tenno Festivals}}
 * {{ill|Mount Tennōzan|en|Mount_Tennōzan|qid=Q10940452|lt=Mount Tennōzan}}
 * {{ill|Tennōzu Isle|ja|天王洲|12=simple|13=User:Immanuelle/Tennōzu Isle|ja_comment=jawiki redirects to 天王洲アイル|comment=changed title based on wikidata|qid=Q11443018}}
 * {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} - Formerly Tsushima Gozu Tennōsha
-** {{ill|Tsushima Faith|ja|津島信仰|12=simple|13=User:Immanuelle/Tsushima Faith|qq=}}
-* {{ill|Okazaki Shrine|ja|岡崎神社|12=simple|13=User:Immanuelle/Okazaki Shrine|qq=}}
+** {{ill|Tsushima Faith|ja|津島信仰|12=simple|13=User:Immanuelle/Tsushima Faith}}
+* {{ill|Okazaki Shrine|ja|岡崎神社|12=simple|13=User:Immanuelle/Okazaki Shrine}}
 * {{ill|Shuchi Shrine|ja|朱智神社|12=simple|13=User:Immanuelle/Shuchi Shrine|ja_comment=jawiki link invalid}}
+
 == References ==
 {{Reflist}}
+
 {{Shinto Horizontal}}
+
 == Shrines with this name ==
+
 === 天王神社 ===
 * {{ill|Tenno Shrine (Q134955521)|lt=Tenno Shrine|qid=Q134955521}} — Numazu
 * {{ill|Tenno Shrine (Q134956601)|lt=Tenno Shrine|qid=Q134956601}} — Kawazu
@@ -34,13 +42,58 @@ Since the Meiji period, many shrines have been merged with others or renamed to 
 * {{ill|Tenno Shrine (Q134957080)|lt=Tenno Shrine|qid=Q134957080}} — Shimada
 * {{ill|Tenno Shrine (Q134958153)|lt=Tenno Shrine|qid=Q134958153}} — Numazu
 * {{ill|Tennō Shrine (Q134956837)|lt=Tennō Shrine|qid=Q134956837}} — Izu
+
 === 天王社 ===
 * {{ill|Tennō Shrine (Q124496684)|lt=Tennō Shrine|qid=Q124496684}} — Komatsushima
 * {{ill|天王社 (Q135154664)|lt=天王社|qid=Q135154664}} — Inashiki
+
 {{translated page|ja|天王神社|version=103538556|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+__NOTOC__
+'''Tennō Shrine''' (天王神社) and '''Tennō-sha''' (天王社) are Shinto shrines of the {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion Faith}} tradition that enshrine {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}.
+
+It is observed that this name is used in shrines belonging to the lineage of {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} (Tsushima City, Aichi Prefecture). Other shrine names based on the Gion faith include {{ill|Yasaka Shrine (disambiguation)|ja|八坂神社 (曖昧さ回避)|lt=Yasaka Shrine|lt_ja=八坂神社|12=simple|13=User:Immanuelle/Yasaka Shrine (disambiguation)}} (also known as {{ill|Q11487447|ja|弥栄神社|12=simple|13=User:Immanuelle/Yaei Shrine|comment=changed title based on wikidata|qid=Q11487447}}), {{ill|Gion shrines|ja|祇園神社|12=simple|13=User:Immanuelle/Gion Shrine|comment=changed title based on wikidata|qid=Q11588442}}, {{ill|Hiromine Shrine (disambiguation)|ja|広峯神社 (曖昧さ回避)|lt=Hiromine Shrine|lt_ja=広峯神社|12=simple|13=User:Immanuelle/Hiromine Shrine (disambiguation)|ja_comment=jawiki link invalid}}, {{ill|Yakumo shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|comment=changed title based on wikidata|qid=Q11391847}}, {{ill|Suga Shrine|ja|須賀神社|12=simple|13=User:Immanuelle/Suga Shrine}}, and {{ill|Susanoo Shrine|ja|素盞嗚神社|12=simple|13=User:Immanuelle/Susanoo Shrine}}, names which vary according to the era and source.
+
+Among the current enshrined deities, only a few shrines have {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} as their primary deity, while many shrines enshrine {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, who had been syncretized with Gozu Tennō through {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu Shūgō}}. During the Meiji era's separation of Shinto and Buddhism ({{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu Bunri}}), some shrines reverted to the deities recorded in ancient tradition rather than enshrining Susanoo.
+
+Since the Meiji era, due to joint enshrinement ({{ill|co-Enshrinement|ja|合祀|2=ja|3=合祀|12=simple|13=User:Immanuelle/Joint Enshrinement|13=User:Immanuelle/co-Enshrinement}}) with other shrines and the renaming of institutions such as the Tsushima Gozu Tennō Shrine, many shrines have changed their names to, for example, Tsushima Shrine. Additionally, influenced by the separation of Shinto and Buddhism and such joint enshrinement, there are shrines where the enshrined deity is not {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}}, and some where Gozu Tennō is interpreted as a deity other than Susanoo. In certain regions, the legacy of this phenomenon can even be seen in local place names bearing "Tennō."
+
+== Main Tennō Shrines ==
+* {{ill|Tennō Shrine (Shichinohe-machi)|ja|天王神社 (七戸町)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Shichinohe-machi)|ja_comment=jawiki link invalid}} – {{ill|Aomori Prefecture|en|Aomori Prefecture|qid=Q71699|lt=Aomori Prefecture}}{{ill|Kamikita District, Aomori|en|Kamikita District, Aomori|qid=Q1143970|lt=Kamikita District}}{{ill|Shichinohe|en|Shichinohe|qid=Q1349448|lt=Shichinohe Town}} Shichinohe
+* {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennōsha}} – {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis}}{{ill|Katsushika|en|Katsushika|qid=Q232628|lt=Katsushika}}{{ill|Okudo|ja|奥戸|12=simple|13=User:Immanuelle/Okuto|comment=changed title based on wikidata|qid=Q11445809}}
+* {{ill|Tennō Shrine (Chiba City)|ja|天王神社 (千葉市)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Chiba City)|ja_comment=jawiki link invalid}} – {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}{{ill|Chiba (city)|en|Chiba (city)|qid=Q170616|lt=Chiba City}}{{ill|Hanamigawa-ku|en|Hanamigawa-ku|qid=Q1075882|lt=Hanamikawa Ward}} Yokotomachi
+* {{ill|Tennō Shrine (Shimada)|ja|天王神社 (島田市)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Shimada)|ja_comment=jawiki link invalid}} – {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}{{ill|Shimada, Shizuoka|en|Shimada, Shizuoka|qid=Q605256|lt=Shimada City}} Sakamoto
+* {{ill|Tennō Shrine (Nishiizu)|ja|天王神社 (西伊豆町)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Nishiizu)|ja_comment=jawiki link invalid}} – {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}{{ill|Kamo District, Shizuoka|en|Kamo District, Shizuoka|qid=Q961511|lt=Kamo District}}{{ill|Nishiizu|en|Nishiizu|qid=Q1203949|lt=Nishiizu Town}} Ninashina
+* {{ill|Tennō Shrine (Shin-Hatsuta)|ja|天王神社 (新発田市)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Shin-Hatsuta)|ja_comment=jawiki link invalid}} – {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}{{ill|Shibata, Niigata|en|Shibata, Niigata|qid=Q601950|lt=Shin-Hatsuta City}} Tennō: in a back-to-back arrangement with {{ill|Susanoo Shrine (Shin-Hatsuta)|ja|須佐之男神社 (新発田市)|lt=Susanoo Shrine|lt_ja=須佐之男神社|12=simple|13=User:Immanuelle/Susanoo Shrine (Shin-Hatsuta)|ja_comment=jawiki link invalid}}
+* {{ill|Tennōsha Hachiman Shrine|ja|天王社八幡宮|12=simple|13=User:Immanuelle/Tennōsha Hachiman Shrine|ja_comment=jawiki link invalid}} – {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}}{{ill|Ukyō-ku, Kyoto|en|Ukyō-ku, Kyoto|qid=Q580186|lt=Ukyō-ku, Kyoto}} Tokiwahigashinomachi
+* {{ill|Tennō Shrine (Kameoka)|ja|天王神社 (亀岡市)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Kameoka)|ja_comment=jawiki link invalid}} – {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Kameoka, Kyoto|en|Kameoka, Kyoto|qid=Q633996|lt=Kameoka City}}{{ill|Miyazakichou|ja|宮前町 (亀岡市)|lt=Miyamae Town|lt_ja=宮前町|12=simple|13=User:Immanuelle/Miyamae Town (Kameoka)|comment=changed title based on wikidata|qid=Q86733848}} Kamizengen
+* {{ill|Tennō Shrine (Kizugawa)|ja|天王神社 (木津川市)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Kizugawa)|ja_comment=jawiki link invalid}} – {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Kizugawa, Kyoto|en|Kizugawa, Kyoto|qid=Q990352|lt=Kizugawa City}} Kizu Kiyomizu
+* {{ill|Tennō Shrine (Seika-chō)|ja|天王神社 (精華町)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Seika-chō)|ja_comment=jawiki link invalid}} – {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}{{ill|Sōraku District, Kyoto|en|Sōraku District, Kyoto|qid=Q1154661|lt=Sōraku District}}{{ill|Seika, Kyoto|en|Seika, Kyoto|qid=Q1203237|lt=Seika Town}} Sugai
+* Tennō Shrine – {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}{{ill|Akashi, Hyōgo|en|Akashi, Hyōgo|qid=Q26406|lt=Akashi City}} Uozumi Town: a common name for {{ill|Susanoo Shrine (Akashi)|ja|素盞嗚神社 (明石市)|lt=Susanoo Shrine|lt_ja=素盞嗚神社|12=simple|13=User:Immanuelle/Susanoo Shrine (Akashi)|ja_comment=jawiki link invalid}}
+* {{ill|Tennō Shrine (Hashimoto Miyukitsuji)|ja|天王神社 (橋本市御幸辻)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Hashimoto Miyukitsuji)|ja_comment=jawiki link invalid}} – {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}{{ill|Hashimoto, Wakayama|en|Hashimoto, Wakayama|qid=Q842098|lt=Hashimoto City}} Miyukitsuji
+* {{ill|Tennō Shrine (Hashimoto Yagurawaki)|ja|天王神社 (橋本市矢倉脇)|lt=Tennō Shrine|lt_ja=天王神社|12=simple|13=User:Immanuelle/Tennō Shrine (Hashimoto Yagurawaki)|ja_comment=jawiki link invalid}} – {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}{{ill|Hashimoto, Wakayama|en|Hashimoto, Wakayama|qid=Q842098|lt=Hashimoto City}} Yagurawaki
+* {{ill|Tennō Hachiman Shrine|ja|天王八幡神社|12=simple|13=User:Immanuelle/Tennō Hachiman Shrine|ja_comment=jawiki link invalid}} – {{ill|Okayama Prefecture|en|Okayama Prefecture|qid=Q132936|lt=Okayama Prefecture}}{{ill|Niimi|en|Niimi|qid=Q873596|lt=Niimi City}}{{ill|Tetta, Okayama|en|Tetta, Okayama|qid=Q7706971|lt=Tetsuta Town}}
+* {{ill|Tennōsha (Komatsushima)|ja|天王社 (小松島市)|lt=Tennōsha|lt_ja=天王社|12=simple|13=User:Immanuelle/Tennōsha (Komatsushima)}} – {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}{{ill|Komatsushima, Tokushima|en|Komatsushima, Tokushima|qid=Q823493|lt=Komatsushima City}}{{ill|Tano, Komatsushima|ja|田野町 (小松島市)|lt=Tano Town|lt_ja=田野町|12=simple|13=User:Immanuelle/Tano Town (Komatsushima)|comment=changed title based on wikidata|qid=Q11577483}}
+== See Also ==
+* {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion Faith}}
+* {{ill|Gion and Tenno Festivals|ja|天王祭|12=simple|13=User:Immanuelle/Tennō Festival|comment=changed title based on wikidata|qid=Q17221495}}
+* {{ill|Mount Tennōzan|en|Mount Tennōzan|qid=Q10940452|lt=Tennō Mountain}}
+* {{ill|Tennōzu Isle|ja|天王洲|12=simple|13=User:Immanuelle/Tennōzu|ja_comment=jawiki redirects to 天王洲アイル|comment=changed title based on wikidata|qid=Q11443018}}
+* {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}}
+* {{ill|Tsushima Faith|ja|津島信仰|12=simple|13=User:Immanuelle/Tsushima Faith}}
+* {{ill|Okazaki Shrine|ja|岡崎神社|12=simple|13=User:Immanuelle/Okazaki Shrine}}
+* {{ill|Shuchi Shrine|ja|朱智神社|12=simple|13=User:Immanuelle/Shuchi Shrine|ja_comment=jawiki link invalid}}
+
+{{Shinto Navigation}}
+
+{{translated page|ja|天王神社|version=103538556|comment=Imported full ja history}}
+
+{{wikidata link|Q11443028|ja|天王神社|check_date=2026-05-11}}
 [[Category:All disambiguation pages]]
 [[Category:Buddhism stubs]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto stubs]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata no short description]]

@@ -1,3 +1,7 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sashino_Shrine_%28Kasama%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
+
+
+'''Sashino Shrine (Kasama)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -6,11 +10,209 @@
 | RONSHA || {{ill|Sashino Shrine (Kasama)|lt=Sashinō Shrine|ja|佐志能神社 (笠間市)|qid=Q28684144}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Sashinono Shrine|lt=Sashinono Shrine|qid=Q135039768}} || {{coord|36.382494|140.267469|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181775 DB]
 |}
 
+{{wikidata link|Q28684144|ja|佐志能神社 (笠間市)|check_date=2026-05-09}}
+
+== Accidentally Overwritten Content ==
+
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Shrine
+|name        = Sashino Shrine
+| religious_affiliation = [[Shinto]]
+|image       = [[File:Sashino jinja shrine in Kasama city.jpg|280px]]
+|location    = [[Ibaraki Prefecture|Ibaraki Prefecture]], [[Kasama, Ibaraki|Kasama City]], Kasama 3613
+|LatitudeDeg = 36 |LatitudeMin = 22 |LatitudeSec = 56.98
+|LongitudeDeg= 140 |LongitudeMin= 16 |LongitudeSec= 2.89
+|Map         = Japan Ibaraki
+|Deities     = {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}<br />{{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}<br />{{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+|SacredObject=
+|ShrineRank  = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} candidate<br />Former {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Village Shrine}}
+|Established = Unknown
+|MainHall    =
+|Alias       =
+|Pilgrimage  =
+|Festival    = November 16
+|Rituals     =
+}}
+
+'''Sashino Shrine''' (佐志能神社, ''Sashinō Jinja''<ref name="yomi" />) is a Shinto shrine located in [[Kasama City]], [[Ibaraki Prefecture]], situated on [[Sashirō Mountain]], which includes the ruins of [[Kasama Castle]]. It is a candidate for the {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} listed in the ''[[Engishiki]]'', classified as a small shrine in [[Hitachi Province]]'s [[Niihari District]]. The shrine was previously Ranked as a village shrine under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}}.
+
+Due to damage caused by the [[2011 Tōhoku earthquake and tsunami]], the Kasama Castle main keep area, including Sashino Shrine, is listed as off-limits on Kasama City's official website.<ref>[http://www.city.kasama.lg.jp/page/page000776.html Kasama Castle Site], Kasama City official website.</ref> However, practical access is possible, although fallen trees from Typhoon No. 19 in October 2019 have made the parking area inaccessible.
+
+== Overview ==
+The shrine is located at the summit of Sashirō Mountain (182.1 meters), at the ruins of the main keep of Kasama Castle, designated as a tangible cultural property by Kasama City. It is part of the Kasama Prefectural Natural Park (Castle Ruins Park<ref name="kouen" />). The mountain is both a historical castle site and a scenic spot, included in the "100 Views of Ibaraki" and the "100 Forest Bathing Paths of Ibaraki" under the theme "Kasama Inari and Sashirō Mountain."
+
+Sashirō Mountain has also been known as "Sanpaku Mountain," "Sajō Mountain," and "Sashinō Mountain." Locally, it is referred to as "Castle Mountain" due to its association with the castle. The ''[[Hitachi no Kuni Fudoki|Hitachi Fudoki]]'' mentions it as a "great mountain" located on the border between [[Niihari District (Hitachi Province)|Niihari District]] and [[Naka District (Hitachi Province)|Naka District]]. There are various theories regarding the origin of its name:
+* According to the tradition of {{ill|Shōfuku-ji (Kasama)|ja|正福寺_(笠間市)|de|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shōfuku-ji (Kasama)}}, the mountain's divine messengers— "white horse, white deer, and white pheasant"<ref name="syofukuji" />—led to the name "Sanpaku" (Three Whites). The Kasama City explanation states these messengers are a "white pheasant, white deer, and white fox."<ref name="kasamashi" />
+* The ''New Hitachi Provincial Records'' interpret the ''Shinsen Shōjiroku'' passage referring to the descendants of {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}} and connect it to the etymology of Sashino. It suggests "Sashinō" evolved through phonetic shifts, implying the name originated as "Sajino," which later transformed to "Sashinō." 
+
+The mountain summit, separate from the former main keep, is also referred to as "Abu Mountain."<ref name="amu" /> The shrine once bore alternate names such as "Sanpaku Gongen" and "Abu Gongen," reflecting its historical ties to the mountain.
+
+== Deities ==
+;Principal deities:
+* {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}
+* {{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}
+* {{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+;Enshrined together:
+* Hachiman Shrine ({{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|ja|品陀和気命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Emperor Ōjin}})
+* Shiroyama Inari Shrine ({{ill|Uka-no-Mitama|ja|宇迦之御魂命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Uka-no-Mitama}})
+* Itsukishima Shrine ({{ill|Ichikishima-hime|ja|市杵志比賣命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ichikishima-hime}})
+* Kagutsuchi Shrine ({{ill|Kagu-tsuchi|lt=Kagu-tsuchi|lt=Kagutsuchi|ja|軻遇突智神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kagutsuchi}})
+* Success Inari Shrine (Uka-no-Mitama-no-Kami)
+
+The shrine's deities were finalized during its relocation to the summit of Sashirō Mountain in 1873. In 1874, five shrines, including Hachiman Shrine and Shiroyama Inari Shrine, were consolidated.
+
+== Festivals ==
+The main festival is held on November 16, along with the February 15 ''Kinen-sai'' (Prayer Festival) and the April 22 ''Rinji-sai'' (Special Festival). Sashino Shrine is managed by [[Kasama Inari Shrine]], with its events listed on their website.
+
+== References ==
+{{Reflist|refs=
+<ref name="yomi">The Ibaraki Prefectural Shrine Registry lists the Sashino Shrines in [[Sakuranome]] and [[Murakami]] as "Sashino," while the one in Kasama City is listed as "Sashinō."</ref>
+<ref name="syofukuji">[http://www.sasiro.jp/info/index.html History of Sashirō Mountain Shōfuku-ji], retrieved September 10, 2016.</ref>
+<ref name="kasamashi">[http://www.city.kasama.lg.jp/page/page006719.html History of Kasama Castle], Kasama City official website, retrieved September 10, 2016.</ref>
+<ref name="amu">[https://dl.ndl.go.jp/ National Diet Library Digital Collections], citing ''Greater Japan Geographic Dictionary.''</ref>
+<ref name="kouen">Ibaraki Prefecture, [http://www.pref.ibaraki.jp/seikatsukankyo/kansei/shizen/koen/09.html Kasama Prefectural Natural Park], retrieved September 10, 2016.</ref>
+}}
+
+{{draft categories|
+}}
+
+== Accidentally Overwritten Content ==
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Shrine
+|name        = Sashino Shrine
+| religious_affiliation = [[Shinto]]
+|image       = [[File:Sashino jinja shrine in Kasama city.jpg|280px]]
+|location    = [[Ibaraki Prefecture|Ibaraki Prefecture]], [[Kasama, Ibaraki|Kasama City]], Kasama 3613
+|LatitudeDeg = 36 |LatitudeMin = 22 |LatitudeSec = 56.98
+|LongitudeDeg= 140 |LongitudeMin= 16 |LongitudeSec= 2.89
+|Map         = Japan Ibaraki
+|Deities     = {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}<br />{{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}<br />{{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+|SacredObject=
+|ShrineRank  = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} candidate<br />Former {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Village Shrine}}
+|Established = Unknown
+|MainHall    =
+|Alias       =
+|Pilgrimage  =
+|Festival    = November 16
+|Rituals     =
+}}
+
+'''Sashino Shrine''' (佐志能神社, ''Sashinō Jinja''<ref name="yomi" />) is a Shinto shrine located in [[Kasama City]], [[Ibaraki Prefecture]], situated on [[Sashirō Mountain]], which includes the ruins of [[Kasama Castle]]. It is a candidate for the {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} listed in the ''[[Engishiki]]'', classified as a small shrine in [[Hitachi Province]]'s [[Niihari District]]. The shrine was previously Ranked as a village shrine under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}}.
+
+Due to damage caused by the [[2011 Tōhoku earthquake and tsunami]], the Kasama Castle main keep area, including Sashino Shrine, is listed as off-limits on Kasama City's official website.<ref>[http://www.city.kasama.lg.jp/page/page000776.html Kasama Castle Site], Kasama City official website.</ref> However, practical access is possible, although fallen trees from Typhoon No. 19 in October 2019 have made the parking area inaccessible.
+
+== Overview ==
+The shrine is located at the summit of Sashirō Mountain (182.1 meters), at the ruins of the main keep of Kasama Castle, designated as a tangible cultural property by Kasama City. It is part of the Kasama Prefectural Natural Park (Castle Ruins Park<ref name="kouen" />). The mountain is both a historical castle site and a scenic spot, included in the "100 Views of Ibaraki" and the "100 Forest Bathing Paths of Ibaraki" under the theme "Kasama Inari and Sashirō Mountain."
+
+Sashirō Mountain has also been known as "Sanpaku Mountain," "Sajō Mountain," and "Sashinō Mountain." Locally, it is referred to as "Castle Mountain" due to its association with the castle. The ''[[Hitachi no Kuni Fudoki|Hitachi Fudoki]]'' mentions it as a "great mountain" located on the border between [[Niihari District (Hitachi Province)|Niihari District]] and [[Naka District (Hitachi Province)|Naka District]]. There are various theories regarding the origin of its name:
+* According to the tradition of {{ill|Shōfuku-ji (Kasama)|ja|正福寺_(笠間市)|de|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shōfuku-ji (Kasama)}}, the mountain's divine messengers— "white horse, white deer, and white pheasant"<ref name="syofukuji" />—led to the name "Sanpaku" (Three Whites). The Kasama City explanation states these messengers are a "white pheasant, white deer, and white fox."<ref name="kasamashi" />
+* The ''New Hitachi Provincial Records'' interpret the ''Shinsen Shōjiroku'' passage referring to the descendants of {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}} and connect it to the etymology of Sashino. It suggests "Sashinō" evolved through phonetic shifts, implying the name originated as "Sajino," which later transformed to "Sashinō." 
+
+The mountain summit, separate from the former main keep, is also referred to as "Abu Mountain."<ref name="amu" /> The shrine once bore alternate names such as "Sanpaku Gongen" and "Abu Gongen," reflecting its historical ties to the mountain.
+
+== Deities ==
+;Principal deities:
+* {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}
+* {{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}
+* {{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+;Enshrined together:
+* Hachiman Shrine ({{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|ja|品陀和気命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Emperor Ōjin}})
+* Shiroyama Inari Shrine ({{ill|Uka-no-Mitama|ja|宇迦之御魂命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Uka-no-Mitama}})
+* Itsukishima Shrine ({{ill|Ichikishima-hime|ja|市杵志比賣命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ichikishima-hime}})
+* Kagutsuchi Shrine ({{ill|Kagu-tsuchi|lt=Kagu-tsuchi|lt=Kagutsuchi|ja|軻遇突智神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kagutsuchi}})
+* Success Inari Shrine (Uka-no-Mitama-no-Kami)
+
+The shrine's deities were finalized during its relocation to the summit of Sashirō Mountain in 1873. In 1874, five shrines, including Hachiman Shrine and Shiroyama Inari Shrine, were consolidated.
+
+== Festivals ==
+The main festival is held on November 16, along with the February 15 ''Kinen-sai'' (Prayer Festival) and the April 22 ''Rinji-sai'' (Special Festival). Sashino Shrine is managed by [[Kasama Inari Shrine]], with its events listed on their website.
+
+== References ==
+{{Reflist|refs=
+<ref name="yomi">The Ibaraki Prefectural Shrine Registry lists the Sashino Shrines in [[Sakuranome]] and [[Murakami]] as "Sashino," while the one in Kasama City is listed as "Sashinō."</ref>
+<ref name="syofukuji">[http://www.sasiro.jp/info/index.html History of Sashirō Mountain Shōfuku-ji], retrieved September 10, 2016.</ref>
+<ref name="kasamashi">[http://www.city.kasama.lg.jp/page/page006719.html History of Kasama Castle], Kasama City official website, retrieved September 10, 2016.</ref>
+<ref name="amu">[https://dl.ndl.go.jp/ National Diet Library Digital Collections], citing ''Greater Japan Geographic Dictionary.''</ref>
+<ref name="kouen">Ibaraki Prefecture, [http://www.pref.ibaraki.jp/seikatsukankyo/kansei/shizen/koen/09.html Kasama Prefectural Natural Park], retrieved September 10, 2016.</ref>
+}}
+
+{{draft categories|
+}}
+
+== Accidentally Overwritten Content ==
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Shrine
+|name        = Sashino Shrine
+| religious_affiliation = [[Shinto]]
+|image       = [[File:Sashino jinja shrine in Kasama city.jpg|280px]]
+|location    = [[Ibaraki Prefecture|Ibaraki Prefecture]], [[Kasama, Ibaraki|Kasama City]], Kasama 3613
+|LatitudeDeg = 36 |LatitudeMin = 22 |LatitudeSec = 56.98
+|LongitudeDeg= 140 |LongitudeMin= 16 |LongitudeSec= 2.89
+|Map         = Japan Ibaraki
+|Deities     = {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}<br />{{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}<br />{{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+|SacredObject=
+|ShrineRank  = {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} candidate<br />Former {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Village Shrine}}
+|Established = Unknown
+|MainHall    =
+|Alias       =
+|Pilgrimage  =
+|Festival    = November 16
+|Rituals     =
+}}
+
+'''Sashino Shrine''' (佐志能神社, ''Sashinō Jinja''<ref name="yomi" />) is a Shinto shrine located in [[Kasama City]], [[Ibaraki Prefecture]], situated on [[Sashirō Mountain]], which includes the ruins of [[Kasama Castle]]. It is a candidate for the {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} listed in the ''[[Engishiki]]'', classified as a small shrine in [[Hitachi Province]]'s [[Niihari District]]. The shrine was previously Ranked as a village shrine under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}}.
+
+Due to damage caused by the [[2011 Tōhoku earthquake and tsunami]], the Kasama Castle main keep area, including Sashino Shrine, is listed as off-limits on Kasama City's official website.<ref>[http://www.city.kasama.lg.jp/page/page000776.html Kasama Castle Site], Kasama City official website.</ref> However, practical access is possible, although fallen trees from Typhoon No. 19 in October 2019 have made the parking area inaccessible.
+
+== Overview ==
+The shrine is located at the summit of Sashirō Mountain (182.1 meters), at the ruins of the main keep of Kasama Castle, designated as a tangible cultural property by Kasama City. It is part of the Kasama Prefectural Natural Park (Castle Ruins Park<ref name="kouen" />). The mountain is both a historical castle site and a scenic spot, included in the "100 Views of Ibaraki" and the "100 Forest Bathing Paths of Ibaraki" under the theme "Kasama Inari and Sashirō Mountain."
+
+Sashirō Mountain has also been known as "Sanpaku Mountain," "Sajō Mountain," and "Sashinō Mountain." Locally, it is referred to as "Castle Mountain" due to its association with the castle. The ''[[Hitachi no Kuni Fudoki|Hitachi Fudoki]]'' mentions it as a "great mountain" located on the border between [[Niihari District (Hitachi Province)|Niihari District]] and [[Naka District (Hitachi Province)|Naka District]]. There are various theories regarding the origin of its name:
+* According to the tradition of {{ill|Shōfuku-ji (Kasama)|ja|正福寺_(笠間市)|de|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shōfuku-ji (Kasama)}}, the mountain's divine messengers— "white horse, white deer, and white pheasant"<ref name="syofukuji" />—led to the name "Sanpaku" (Three Whites). The Kasama City explanation states these messengers are a "white pheasant, white deer, and white fox."<ref name="kasamashi" />
+* The ''New Hitachi Provincial Records'' interpret the ''Shinsen Shōjiroku'' passage referring to the descendants of {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}} and connect it to the etymology of Sashino. It suggests "Sashinō" evolved through phonetic shifts, implying the name originated as "Sajino," which later transformed to "Sashinō." 
+
+The mountain summit, separate from the former main keep, is also referred to as "Abu Mountain."<ref name="amu" /> The shrine once bore alternate names such as "Sanpaku Gongen" and "Abu Gongen," reflecting its historical ties to the mountain.
+
+== Deities ==
+;Principal deities:
+* {{ill|Prince Toyokiirihiko|ja|豊城入彦命|2=ja|3=豊城入彦命|qid=Q11633375|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Toyokiirihiko|13=User:Immanuelle/Prince Toyokiirihiko}}
+* {{ill|Takemikazuchi|en|Takemikazuchi|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi-no-Kami}}
+* {{ill|Ōkuninushi|ja|大国主神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi}}
+;Enshrined together:
+* Hachiman Shrine ({{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|ja|品陀和気命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Emperor Ōjin}})
+* Shiroyama Inari Shrine ({{ill|Uka-no-Mitama|ja|宇迦之御魂命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Uka-no-Mitama}})
+* Itsukishima Shrine ({{ill|Ichikishima-hime|ja|市杵志比賣命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ichikishima-hime}})
+* Kagutsuchi Shrine ({{ill|Kagu-tsuchi|lt=Kagu-tsuchi|lt=Kagutsuchi|ja|軻遇突智神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kagutsuchi}})
+* Success Inari Shrine (Uka-no-Mitama-no-Kami)
+
+The shrine's deities were finalized during its relocation to the summit of Sashirō Mountain in 1873. In 1874, five shrines, including Hachiman Shrine and Shiroyama Inari Shrine, were consolidated.
+
+== Festivals ==
+The main festival is held on November 16, along with the February 15 ''Kinen-sai'' (Prayer Festival) and the April 22 ''Rinji-sai'' (Special Festival). Sashino Shrine is managed by [[Kasama Inari Shrine]], with its events listed on their website.
+
+== References ==
+{{Reflist|refs=
+<ref name="yomi">The Ibaraki Prefectural Shrine Registry lists the Sashino Shrines in [[Sakuranome]] and [[Murakami]] as "Sashino," while the one in Kasama City is listed as "Sashinō."</ref>
+<ref name="syofukuji">[http://www.sasiro.jp/info/index.html History of Sashirō Mountain Shōfuku-ji], retrieved September 10, 2016.</ref>
+<ref name="kasamashi">[http://www.city.kasama.lg.jp/page/page006719.html History of Kasama Castle], Kasama City official website, retrieved September 10, 2016.</ref>
+<ref name="amu">[https://dl.ndl.go.jp/ National Diet Library Digital Collections], citing ''Greater Japan Geographic Dictionary.''</ref>
+<ref name="kouen">Ibaraki Prefecture, [http://www.pref.ibaraki.jp/seikatsukankyo/kansei/shizen/koen/09.html Kasama Prefectural Natural Park], retrieved September 10, 2016.</ref>
+}}
+
+{{draft categories|
+}}
+==Notes==
+<references group="lower-alpha"/>
 [[Category:100 Views of Ibaraki]]
 [[Category:Historic sites in Kasama City]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Hitachi Province]]
 [[Category:Shrines in Ibaraki Prefecture]]
 [[Category:Son-sha in Ibaraki Prefecture]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]

@@ -1,58 +1,232 @@
-{{Infobox religious building|religious_affiliation = {{ill|Shinto|qid=Q812767|1=Shinto}}| name       = Iwa Shrine
-| image      = File:Iwa jinja 05.JPG
-| location    = 539 Sōja, Matsumoto City, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}
-| coordinates = {{Coord|35.0875|N|134.58641667}}
-| deity    = {{ill|Ōkuninushi|qid=Q276944|1=Ōkuninushi}}|Status     = (Presumed) {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} of {{ill|Shinano Province|en|12=simple|13=User:Immanuelle/Shinano Province|qq=}}<br/>Former {{ill|Village Shrine|en|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine|qq=}}
+{{Infobox religious building|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]|religious_affiliation = [[Shinto]]| religious_affiliation = [[Shinto]]
+| name       = Iwa Shrine
+| image      = [[File:Iwa-jinja (Matsumoto) keidai.JPG|280px]]<br/>Shrine grounds with sacred grove and main shrine
+| location    = 539 Sōja, Matsumoto City, [[Nagano Prefecture]]
+| coordinates = {{Coord|36|14|18.15|N|137|59|27.51|E|region:JP-20_type:landmark|display=inline,title|name=Iwa Shrine}}
+| deity    = {{ill|Ōkuninushi|en|Ōkuninushi}} (Ōnamuchi no Mikoto)|Status     = (Presumed) {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}<br/>Former {{ill|Village Shrine|en|村社}}
 | founded    = Unknown
 | Main_Hall  = 
 | Other_names = 
 | festivals  = {{nihongo|May 3|5月3日}}<ref name="松本市"/>
 | Rituals    = 
-| prefecture= {{ill|Shiso|qid=Q877216|1=Shisō, Hyōgo}}
-| architecture_style= {{ill|East Asian hip-and-gable roof|qid=Q855025|1=East Asian hip-and-gable roof}}
 }}
+
 [[File:Iwa-jinja (Matsumoto) torii.JPG|thumb|200px|right|Torii gate]]
-'''Iwa Shrine''' ({{lang|ja|伊和神社}}, ''Iwa-jinja'') is a {{ill|Shinto shrine|en|12=simple|13=User:Immanuelle/Shinto shrine|qq=}} located in {{ill|Matsumoto, Nagano|en|松本市|12=simple|13=User:Immanuelle/Matsumoto, Nagano|qq=}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, Japan. It is presumed to have served as the {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} of {{ill|Shinano Province|en|12=simple|13=User:Immanuelle/Shinano Province|qq=}}. Its modern status is a former {{ill|Village Shrine|en|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine|qq=}}. The official name is "Iwa-sha," but it is commonly referred to as "Iwa Shrine."<ref>[http://www.nagano-jinjacho.jp/shibu/syouenchiku.htm 松塩筑支部] (Nagano Prefecture Shrine Bureau).</ref> 
+'''Iwa Shrine''' ({{lang|ja|伊和神社}}, ''Iwa-jinja'') is a {{ill|Shinto shrine|en|Shinto shrine}} located in {{ill|Matsumoto, Nagano|en|松本市}}, {{ill|Nagano Prefecture|en|長野県}}, Japan. It is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. Its modern status is a former {{ill|Village Shrine|en|村社}}. The official name is "Iwa-sha," but it is commonly referred to as "Iwa Shrine."<ref>[http://www.nagano-jinjacho.jp/shibu/syouenchiku.htm 松塩筑支部] (Nagano Prefecture Shrine Bureau).</ref> 
+
 === Deities ===
-* {{ill|Ōkuninushi|en|12=simple|13=User:Immanuelle/Ōkuninushi|qq=}} (Ōnamuchi no Mikoto)<ref>[http://www.genbu.net/data/sinano/iwa_title.htm 伊和神社] (Genbuko personal website).</ref>
+* {{ill|Ōkuninushi|en|Ōkuninushi}} (Ōnamuchi no Mikoto)<ref>[http://www.genbu.net/data/sinano/iwa_title.htm 伊和神社] (Genbuko personal website).</ref>
+
 === History ===
-In ancient times, {{ill|provincial governors|en|国司|12=simple|13=User:Immanuelle/provincial governors|qq=}} visited all shrines in their provinces, starting from the {{ill|Ichinomiya|en|12=simple|13=User:Immanuelle/Ichinomiya|qq=}}. To facilitate this, a {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} was established near the provincial capital to enshrine the gods collectively for easier rituals. Iwa Shrine is presumed to have served as the {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} of {{ill|Shinano Province|en|12=simple|13=User:Immanuelle/Shinano Province|qq=}}. 
-The provincial capital was initially located near {{ill|Ueda, Nagano|en|12=simple|13=User:Immanuelle/Ueda, Nagano|qq=}}, but it is believed to have moved to {{ill|Matsumoto, Nagano|en|12=simple|13=User:Immanuelle/Matsumoto, Nagano|qq=}} in the early Heian period.<ref>"Shinano Province" in {{Cite book|title=Nagano Prefecture Place names|editor=平凡社}}.</ref> The area around the shrine has been called "Sōja" since ancient times, indicating the presence of a {{ill|Sōja|en|12=simple|13=User:Immanuelle/Sōja|qq=}} and possibly the provincial capital.<ref name="説明板">Shrine grounds information board.</ref>
-The name "Iwa" may derive from the nearby shrine "In'yaku-sha," which enshrined the official seal and key of the provincial storehouse. A theory suggests "In" (seal) transformed into "I," and "Yaku" (key) became "Wa" through scribal errors.<ref name="説明板"/> Another theory posits that the shrine enshrines the deity {{ill|Ōkuninushi|en|12=simple|13=User:Immanuelle/Ōkuninushi|qq=}}, known as Iwa Myōjin, brought from the {{ill|Iwa Shrine (Hyōgo)|en|伊和神社|12=simple|13=User:Immanuelle/Iwa Shrine (Hyōgo)|qq=}} in {{ill|Harima Province|en|12=simple|13=User:Immanuelle/Harima Province|qq=}}.<ref name="説明板"/> The "Shinpū Tōki" (Edo period) mentions a local official, Satsuma-no-Kami, inviting Iwa Myōjin from Harima Province to create "Sōja Rokusha Daimyōjin," though this is considered a misinterpretation of earlier records.<ref name="地名">"Sōja Village" in ''Nagano Prefecture Place names''.</ref>
-In the {{ill|Meiji period|en|12=simple|13=User:Immanuelle/Meiji period|qq=}}, the shrine was designated a {{ill|Village Shrine|en|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine|qq=}} under the modern shrine classification system and listed as a {{ill|Kensaihei Shrine|en|神饌幣帛料供進神社|12=simple|13=User:Immanuelle/Kensaihei Shrine|qq=}}.<ref>Shrine stone monument.</ref>
+In ancient times, {{ill|provincial governors|en|国司}} visited all shrines in their provinces, starting from the {{ill|Ichinomiya|en|Ichinomiya}}. To facilitate this, a {{ill|Sōja|en|Sōja}} was established near the provincial capital to enshrine the gods collectively for easier rituals. Iwa Shrine is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. 
+
+The provincial capital was initially located near {{ill|Ueda, Nagano|en|Ueda, Nagano}}, but it is believed to have moved to {{ill|Matsumoto, Nagano|en|Matsumoto, Nagano}} in the early Heian period.<ref>"Shinano Province" in {{Cite book|title=Nagano Prefecture Place names|editor=平凡社}}.</ref> The area around the shrine has been called "Sōja" since ancient times, indicating the presence of a {{ill|Sōja|en|Sōja}} and possibly the provincial capital.<ref name="説明板">Shrine grounds information board.</ref>
+
+The name "Iwa" may derive from the nearby shrine "In'yaku-sha," which enshrined the official seal and key of the provincial storehouse. A theory suggests "In" (seal) transformed into "I," and "Yaku" (key) became "Wa" through scribal errors.<ref name="説明板"/> Another theory posits that the shrine enshrines the deity {{ill|Ōkuninushi|en|Ōkuninushi}}, known as Iwa Myōjin, brought from the {{ill|Iwa Shrine (Hyōgo)|en|伊和神社}} in {{ill|Harima Province|en|Harima Province}}.<ref name="説明板"/> The "Shinpū Tōki" (Edo period) mentions a local official, Satsuma-no-Kami, inviting Iwa Myōjin from Harima Province to create "Sōja Rokusha Daimyōjin," though this is considered a misinterpretation of earlier records.<ref name="地名">"Sōja Village" in ''Nagano Prefecture Place names''.</ref>
+
+In the {{ill|Meiji period|en|Meiji period}}, the shrine was designated a {{ill|Village Shrine|en|村社}} under the modern shrine classification system and listed as a {{ill|Kensaihei Shrine|en|神饌幣帛料供進神社}}.<ref>Shrine stone monument.</ref>
+
 == Sub-Shrines ==
 * **Kokage Shrine** – Dedicated to silkworm cultivation, built during the height of the local silk industry.
 * **Sōja Iwa Daimyōjin** – Five shrines representing:
-** {{ill|Usui Sadamitsu|en|12=simple|13=User:Immanuelle/Usui Sadamitsu|qq=}}
-** {{ill|Sakata no Kintoki|en|12=simple|13=User:Immanuelle/Sakata no Kintoki|qq=}}
-** {{ill|Minamoto no Yorimitsu|en|12=simple|13=User:Immanuelle/Minamoto no Yorimitsu|qq=}}
-** {{ill|Watanabe no Tsuna|en|12=simple|13=User:Immanuelle/Watanabe no Tsuna|qq=}}
-** {{ill|Urabe no Suetake|en|12=simple|13=User:Immanuelle/Urabe no Suetake|qq=}}
+** {{ill|Usui Sadamitsu|en|Usui Sadamitsu}}
+** {{ill|Sakata no Kintoki|en|Sakata no Kintoki}}
+** {{ill|Minamoto no Yorimitsu|en|Minamoto no Yorimitsu}}
+** {{ill|Watanabe no Tsuna|en|Watanabe no Tsuna}}
+** {{ill|Urabe no Suetake|en|Urabe no Suetake}}
+
 === Grounds ===
-The shrine grounds feature numerous ancient {{ill|Zelkova serrata|en|ケヤキ|12=simple|13=User:Immanuelle/Zelkova serrata|qq=}} trees. Two prominent zelkova trees at the entrance were formerly designated as a prefectural Natural Monument and are now protected as a city-level Natural Monument due to their age and declining health.<ref name="松本市">[http://takara.city.matsumoto.nagano.jp/city/158.html 伊和神社のケヤキ群] (Matsumoto City Cultural Property website).</ref>
+The shrine grounds feature numerous ancient {{ill|Zelkova serrata|en|ケヤキ}} trees. Two prominent zelkova trees at the entrance were formerly designated as a prefectural Natural Monument and are now protected as a city-level Natural Monument due to their age and declining health.<ref name="松本市">[http://takara.city.matsumoto.nagano.jp/city/158.html 伊和神社のケヤキ群] (Matsumoto City Cultural Property website).</ref>
+
 <gallery>
 File:Iwa-jinja (Matsumoto) honden.JPG|Main hall
 File:Iwa-jinja (Matsumoto) keyaki (left).JPG|Zelkova tree (left)
 File:Iwa-jinja (Matsumoto) keyaki (right).JPG|Zelkova tree (right)
 </gallery>
+
 === Cultural Properties ===
 ; Matsumoto City Designated Natural Monuments
 * **Iwa Shrine Zelkova Trees** – Designated November 11, 1975.
+
+== location ==
+; location
+* 539 Sōja, Matsumoto City, Nagano Prefecture
+
 == References ==
 {{reflist}}
+
 == Further Reading ==
 * Shrine grounds information board
 * ''Nagano Prefecture Place names'' (Heibonsha), Matsumoto City, Sōja Village entry
+
 == Related Articles ==
-* {{ill|Shinano Ōmiya Shrine|en|12=simple|13=User:Immanuelle/Shinano Ōmiya Shrine|qq=}} (Ueda City) – Another presumed Sōja of Shinano Province.
+* {{ill|Shinano Ōmiya Shrine|en|Shinano Ōmiya Shrine}} (Ueda City) – Another presumed Sōja of Shinano Province.
+
+== External Links ==
+{{Commonscat|Iwa-jinja (Matsumoto)|12=draft}}
+* [http://takara.city.matsumoto.nagano.jp/city/158.html Iwa Shrine Zelkova Trees] (Matsumoto City Cultural Property website)
+
+{{Sōja shrines}}
+
+{{wikidata link|Q65320|abstract|Q65320|en|Iwa Shrine|es|Santuario Iwa|fr|Iwa-jinja|ja|伊和神社|simple|Iwa Shrine|zh|伊和神社|check_date=2026-05-15}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building|religious_affiliation = {{ill|Shinto|qid=Q812767}}| name       = Iwa Shrine
+| image      = File:Iwa jinja 05.JPG
+| location    = 539 Sōja, Matsumoto City, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}
+| coordinates = {{Coord|35.0875|N|134.58641667}}
+| deity    = {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}|Status     = (Presumed) {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}<br/>Former {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}}
+| founded    = Unknown
+| Main_Hall  = 
+| Other_names = 
+| festivals  = {{nihongo|May 3|5月3日}}<ref name="松本市"/>
+| Rituals    = 
+| prefecture= {{ill|Shisō, Hyōgo|ar|شيسو (هيوغو)|azb|شیسو، هیوقو|ce|Сисо|de|Shisō (Hyōgo)|es|Shisō (Hyōgo)|fa|شیسو، هیوگو|fi|Shisō|fr|Shisō|gl|Shisō|it|Shisō|ja|宍粟市|ko|시소시|mzn|شیسو، هیوگو|nl|Shiso (Hyogo)|pl|Shisō|pt|Shiso|ro|Shisō|ru|Сисо|sv|Shisō, Hyōgo|tg|Шисо|tl|Shisō, Hyogo|tr|Shisō|tt|Сисо|uz|Shisō|vi|Shisō, Hyōgo|war|Shisō, Hyōgo|zh|宍粟市|zh_classical|宍粟市|zh_min_nan|Sisô-chhī|zh_yue|宍粟|qid=Q877216}}
+| architecture_style= {{ill|East Asian hip-and-gable roof|qid=Q855025}}
+}}
+
+[[File:Iwa-jinja (Matsumoto) torii.JPG|thumb|200px|right|Torii gate]]
+'''Iwa Shrine''' ({{lang|ja|伊和神社}}, ''Iwa-jinja'') is a {{ill|Shinto shrine|en|Shinto shrine}} located in {{ill|Matsumoto, Nagano|en|松本市}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, Japan. It is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. Its modern status is a former {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}}. The official name is "Iwa-sha," but it is commonly referred to as "Iwa Shrine."<ref>[http://www.nagano-jinjacho.jp/shibu/syouenchiku.htm 松塩筑支部] (Nagano Prefecture Shrine Bureau).</ref> 
+
+=== Deities ===
+* {{ill|Ōkuninushi|en|Ōkuninushi}} (Ōnamuchi no Mikoto)<ref>[http://www.genbu.net/data/sinano/iwa_title.htm 伊和神社] (Genbuko personal website).</ref>
+
+=== History ===
+In ancient times, {{ill|provincial governors|en|国司}} visited all shrines in their provinces, starting from the {{ill|Ichinomiya|en|Ichinomiya}}. To facilitate this, a {{ill|Sōja|en|Sōja}} was established near the provincial capital to enshrine the gods collectively for easier rituals. Iwa Shrine is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. 
+
+The provincial capital was initially located near {{ill|Ueda, Nagano|en|Ueda, Nagano}}, but it is believed to have moved to {{ill|Matsumoto, Nagano|en|Matsumoto, Nagano}} in the early Heian period.<ref>"Shinano Province" in {{Cite book|title=Nagano Prefecture Place names|editor=平凡社}}.</ref> The area around the shrine has been called "Sōja" since ancient times, indicating the presence of a {{ill|Sōja|en|Sōja}} and possibly the provincial capital.<ref name="説明板">Shrine grounds information board.</ref>
+
+The name "Iwa" may derive from the nearby shrine "In'yaku-sha," which enshrined the official seal and key of the provincial storehouse. A theory suggests "In" (seal) transformed into "I," and "Yaku" (key) became "Wa" through scribal errors.<ref name="説明板"/> Another theory posits that the shrine enshrines the deity {{ill|Ōkuninushi|en|Ōkuninushi}}, known as Iwa Myōjin, brought from the {{ill|Iwa Shrine (Hyōgo)|en|伊和神社}} in {{ill|Harima Province|en|Harima Province}}.<ref name="説明板"/> The "Shinpū Tōki" (Edo period) mentions a local official, Satsuma-no-Kami, inviting Iwa Myōjin from Harima Province to create "Sōja Rokusha Daimyōjin," though this is considered a misinterpretation of earlier records.<ref name="地名">"Sōja Village" in ''Nagano Prefecture Place names''.</ref>
+
+In the {{ill|Meiji period|en|Meiji period}}, the shrine was designated a {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}} under the modern shrine classification system and listed as a {{ill|Kensaihei Shrine|en|神饌幣帛料供進神社}}.<ref>Shrine stone monument.</ref>
+
+== Sub-Shrines ==
+* **Kokage Shrine** – Dedicated to silkworm cultivation, built during the height of the local silk industry.
+* **Sōja Iwa Daimyōjin** – Five shrines representing:
+** {{ill|Usui Sadamitsu|en|Usui Sadamitsu}}
+** {{ill|Sakata no Kintoki|en|Sakata no Kintoki}}
+** {{ill|Minamoto no Yorimitsu|en|Minamoto no Yorimitsu}}
+** {{ill|Watanabe no Tsuna|en|Watanabe no Tsuna}}
+** {{ill|Urabe no Suetake|en|Urabe no Suetake}}
+
+=== Grounds ===
+The shrine grounds feature numerous ancient {{ill|Zelkova serrata|en|ケヤキ}} trees. Two prominent zelkova trees at the entrance were formerly designated as a prefectural Natural Monument and are now protected as a city-level Natural Monument due to their age and declining health.<ref name="松本市">[http://takara.city.matsumoto.nagano.jp/city/158.html 伊和神社のケヤキ群] (Matsumoto City Cultural Property website).</ref>
+
+<gallery>
+File:Iwa-jinja (Matsumoto) honden.JPG|Main hall
+File:Iwa-jinja (Matsumoto) keyaki (left).JPG|Zelkova tree (left)
+File:Iwa-jinja (Matsumoto) keyaki (right).JPG|Zelkova tree (right)
+</gallery>
+
+=== Cultural Properties ===
+; Matsumoto City Designated Natural Monuments
+* **Iwa Shrine Zelkova Trees** – Designated November 11, 1975.
+
+== location ==
+; location
+* 539 Sōja, Matsumoto City, Nagano Prefecture
+
+== References ==
+{{reflist}}
+
+== Further Reading ==
+* Shrine grounds information board
+* ''Nagano Prefecture Place names'' (Heibonsha), Matsumoto City, Sōja Village entry
+
+== Related Articles ==
+* {{ill|Shinano Ōmiya Shrine|en|Shinano Ōmiya Shrine}} (Ueda City) – Another presumed Sōja of Shinano Province.
+
 == External Links ==
 {{Commonscat|Iwa-jinja (Matsumoto)|qq=draft}}
 * [http://takara.city.matsumoto.nagano.jp/city/158.html Iwa Shrine Zelkova Trees] (Matsumoto City Cultural Property website)
+
 {{Sōja shrines}}
+
 {{translated page|ja|伊和神社|version=101175560|comment=Imported full ja history}}
+
 {{Commons category|Iwa-jinja (Shiso)}}
+
 {{wikidata link|Q65320}}
 
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building|religious_affiliation = {{ill|Shinto|qid=Q812767}}| name       = Iwa Shrine
+| image      = File:Iwa jinja 05.JPG
+| location    = 539 Sōja, Matsumoto City, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}
+| coordinates = {{Coord|35.0875|N|134.58641667}}
+| deity    = {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}|Status     = (Presumed) {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}<br/>Former {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}}
+| founded    = Unknown
+| Main_Hall  = 
+| Other_names = 
+| festivals  = {{nihongo|May 3|5月3日}}<ref name="松本市"/>
+| Rituals    = 
+| prefecture= {{ill|Shisō, Hyōgo|ar|شيسو (هيوغو)|azb|شیسو، هیوقو|ce|Сисо|de|Shisō (Hyōgo)|es|Shisō (Hyōgo)|fa|شیسو، هیوگو|fi|Shisō|fr|Shisō|gl|Shisō|it|Shisō|ja|宍粟市|ko|시소시|mzn|شیسو، هیوگو|nl|Shiso (Hyogo)|pl|Shisō|pt|Shiso|ro|Shisō|ru|Сисо|sv|Shisō, Hyōgo|tg|Шисо|tl|Shisō, Hyogo|tr|Shisō|tt|Сисо|uz|Shisō|vi|Shisō, Hyōgo|war|Shisō, Hyōgo|zh|宍粟市|zh_classical|宍粟市|zh_min_nan|Sisô-chhī|zh_yue|宍粟|qid=Q877216}}
+| architecture_style= {{ill|East Asian hip-and-gable roof|qid=Q855025}}
+}}
+
+[[File:Iwa-jinja (Matsumoto) torii.JPG|thumb|200px|right|Torii gate]]
+'''Iwa Shrine''' ({{lang|ja|伊和神社}}, ''Iwa-jinja'') is a {{ill|Shinto shrine|en|Shinto shrine}} located in {{ill|Matsumoto, Nagano|en|松本市}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, Japan. It is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. Its modern status is a former {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}}. The official name is "Iwa-sha," but it is commonly referred to as "Iwa Shrine."<ref>[http://www.nagano-jinjacho.jp/shibu/syouenchiku.htm 松塩筑支部] (Nagano Prefecture Shrine Bureau).</ref> 
+
+=== Deities ===
+* {{ill|Ōkuninushi|en|Ōkuninushi}} (Ōnamuchi no Mikoto)<ref>[http://www.genbu.net/data/sinano/iwa_title.htm 伊和神社] (Genbuko personal website).</ref>
+
+=== History ===
+In ancient times, {{ill|provincial governors|en|国司}} visited all shrines in their provinces, starting from the {{ill|Ichinomiya|en|Ichinomiya}}. To facilitate this, a {{ill|Sōja|en|Sōja}} was established near the provincial capital to enshrine the gods collectively for easier rituals. Iwa Shrine is presumed to have served as the {{ill|Sōja|en|Sōja}} of {{ill|Shinano Province|en|Shinano Province}}. 
+
+The provincial capital was initially located near {{ill|Ueda, Nagano|en|Ueda, Nagano}}, but it is believed to have moved to {{ill|Matsumoto, Nagano|en|Matsumoto, Nagano}} in the early Heian period.<ref>"Shinano Province" in {{Cite book|title=Nagano Prefecture Place names|editor=平凡社}}.</ref> The area around the shrine has been called "Sōja" since ancient times, indicating the presence of a {{ill|Sōja|en|Sōja}} and possibly the provincial capital.<ref name="説明板">Shrine grounds information board.</ref>
+
+The name "Iwa" may derive from the nearby shrine "In'yaku-sha," which enshrined the official seal and key of the provincial storehouse. A theory suggests "In" (seal) transformed into "I," and "Yaku" (key) became "Wa" through scribal errors.<ref name="説明板"/> Another theory posits that the shrine enshrines the deity {{ill|Ōkuninushi|en|Ōkuninushi}}, known as Iwa Myōjin, brought from the {{ill|Iwa Shrine (Hyōgo)|en|伊和神社}} in {{ill|Harima Province|en|Harima Province}}.<ref name="説明板"/> The "Shinpū Tōki" (Edo period) mentions a local official, Satsuma-no-Kami, inviting Iwa Myōjin from Harima Province to create "Sōja Rokusha Daimyōjin," though this is considered a misinterpretation of earlier records.<ref name="地名">"Sōja Village" in ''Nagano Prefecture Place names''.</ref>
+
+In the {{ill|Meiji period|en|Meiji period}}, the shrine was designated a {{ill|Son-sha|en|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=Modern_system_of_ranked_Shinto_shrines#Village_shrines|12=simple|13=User:Immanuelle/Village Shrine}} under the modern shrine classification system and listed as a {{ill|Kensaihei Shrine|en|神饌幣帛料供進神社}}.<ref>Shrine stone monument.</ref>
+
+== Sub-Shrines ==
+* **Kokage Shrine** – Dedicated to silkworm cultivation, built during the height of the local silk industry.
+* **Sōja Iwa Daimyōjin** – Five shrines representing:
+** {{ill|Usui Sadamitsu|en|Usui Sadamitsu}}
+** {{ill|Sakata no Kintoki|en|Sakata no Kintoki}}
+** {{ill|Minamoto no Yorimitsu|en|Minamoto no Yorimitsu}}
+** {{ill|Watanabe no Tsuna|en|Watanabe no Tsuna}}
+** {{ill|Urabe no Suetake|en|Urabe no Suetake}}
+
+=== Grounds ===
+The shrine grounds feature numerous ancient {{ill|Zelkova serrata|en|ケヤキ}} trees. Two prominent zelkova trees at the entrance were formerly designated as a prefectural Natural Monument and are now protected as a city-level Natural Monument due to their age and declining health.<ref name="松本市">[http://takara.city.matsumoto.nagano.jp/city/158.html 伊和神社のケヤキ群] (Matsumoto City Cultural Property website).</ref>
+
+<gallery>
+File:Iwa-jinja (Matsumoto) honden.JPG|Main hall
+File:Iwa-jinja (Matsumoto) keyaki (left).JPG|Zelkova tree (left)
+File:Iwa-jinja (Matsumoto) keyaki (right).JPG|Zelkova tree (right)
+</gallery>
+
+=== Cultural Properties ===
+; Matsumoto City Designated Natural Monuments
+* **Iwa Shrine Zelkova Trees** – Designated November 11, 1975.
+
+== location ==
+; location
+* 539 Sōja, Matsumoto City, Nagano Prefecture
+
+== References ==
+{{reflist}}
+
+== Further Reading ==
+* Shrine grounds information board
+* ''Nagano Prefecture Place names'' (Heibonsha), Matsumoto City, Sōja Village entry
+
+== Related Articles ==
+* {{ill|Shinano Ōmiya Shrine|en|Shinano Ōmiya Shrine}} (Ueda City) – Another presumed Sōja of Shinano Province.
+
+== External Links ==
+{{Commonscat|Iwa-jinja (Matsumoto)|qq=draft}}
+* [http://takara.city.matsumoto.nagano.jp/city/158.html Iwa Shrine Zelkova Trees] (Matsumoto City Cultural Property website)
+
+{{Sōja shrines}}
+
+{{translated page|ja|伊和神社|version=101175560|comment=Imported full ja history}}
+
+{{Commons category|Iwa-jinja (Shiso)}}
+
+{{wikidata link|Q65320}}
 [[Category:Beppyo shrines]]
 [[Category:Buildings and structures in Shiso, Hyogo]]
 [[Category:Ichinomiya]]
@@ -62,6 +236,7 @@ File:Iwa-jinja (Matsumoto) keyaki (right).JPG|Zelkova tree (right)
 [[Category:Municipal History of Shisō]]
 [[Category:Myōjin Taisha]]
 [[Category:Pages linked to by wikidata]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Harima Province]]
 [[Category:Shinano Province]]
 [[Category:Shinto shrines in Hyōgo Prefecture]]
@@ -70,6 +245,7 @@ File:Iwa-jinja (Matsumoto) keyaki (right).JPG|Zelkova tree (right)
 [[Category:Sōja shrines]]
 [[Category:translated pages with valid en interwikis]]
 [[Category:Wikidata has short description]]
+[[Category:Myōjin Taisha]]
 [[Category:Junior Fifth Rank]]
 [[Category:Junior Fourth Rank]]
 [[Category:Senior Fourth Rank]]

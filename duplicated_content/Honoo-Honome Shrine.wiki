@@ -1,13 +1,26 @@
+'''Hinokuma Hime Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858|lt=Hayami district}} || {{ill|Honoo-Honome Shrine|ja|火男火売神社|qid=Q11566947|lt=Honoo-Honome Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || 3 seats || — || {{coord|33.286092|131.429769|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183314 DB]
+|}
+
+{{wikidata link|Q11566947|co|commons:Category:Honoohonome-jinja|ja|火男火売神社|check_date=2026-05-15}}
+
+== Accidentally Overwritten Content ==
+
 {{Shrine
 |Name   =  Hinohonome Shrine (火男火売神社)
-|religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto|1=Shinto}}
+|religious_affiliation = {{ill|Shinto|abstract|Q812767|af|Sjintoïsme|an|Xintoísmo|anp|शिन्तो धर्म|ar|شنتو|ary|شينطو|arz|شنتو|as|শ্বিণ্ট'|ast|Sintoísmu|az|Şintoizm|azb|شینتوئیسم|ba|Синтоизм|bat_smg|Šintoėzmos|bcl|Shinto|be|Сінтаізм|be_x_old|Сінтаізм|bg|Шинтоизъм|blk|ဆိဉ်တိုဘာႏသာႏ|bn|শিন্তৌ ধর্ম|bo|ཧྲིན་ཐོ།|br|Shintoegezh|bs|Šintoizam|bxr|Синто|ca|Xintoisme|ckb|شینتۆ|cs|Šintoismus|cy|Shintō|da|Shinto|de|Shintō|diq|Şinto|el|Σιντοϊσμός|eo|Ŝintoo|es|Sintoísmo|et|Šintoism|eu|Sintoismo|ext|Sintoísmu|fa|شینتو|fi|Šintolaisuus|fiu_vro|Sinto|fr|Shintoïsme|fur|Sintoisim|fy|Sjintoïsme|gcr|Shintoyism|gd|Shinto|gl|Xintoísmo|gn|Sinto|got|𐍃𐌹𐌽𐍄𐍉|gu|શિન્તો|ha|Shinto|he|שינטו|hi|शिन्तो धर्म|hif|Shinto|hr|Šintoizam|hu|Sintó|hy|Սինտոիզմ|ia|Shinto|id|Shinto|io|Shinto|is|Sjintóismi|it|Shintoismo|ja|神道|jam|Shinto|jv|Shinto|ka|შინტოიზმი|kbp|Sinto|kg|Kisinto|kk|Синтоизм|km|ស៊ិនតូ|kn|ಶಿಂಟೋ ಧರ್ಮ|ko|신토|ks|شِنتو|ky|Шинто|la|Sintoismus|lad|Shintoizmo|lb|Shintō|lfn|Xinto|lij|Scintoiximo|lt|Šintoizmas|lv|Sintoisms|map_bms|Shinto|mg|Sintôisma|min|Shinto|mk|Шинтоизам|ml|ഷിന്റൊ|mn|Шинто|mni|ꯁꯤꯟꯇꯣ ꯂꯥꯢꯅꯤꯡ|mr|शिंतो धर्म|ms|Shinto|mt|Xintù|mwl|Xintoísmo|my|ရှင်တိုဘာသာ|nds|Shintō|new|शिन्तो धर्म|nl|Shintoïsme|nn|Shinto|no|Shintōisme|oc|Sintoïsme|olo|Šintolaižus|or|କାମିନୋ ମିଚି|pa|ਸ਼ਿੰਤੋਵਾਦ|pl|Shintō|pms|Shintoism|pnb|شنتو|ps|شينتو|pt|Xintoísmo|ro|Șintoism|ru|Синтоизм|rue|Сінтоїзм|sc|Shintoismu|scn|Shintuismu|sco|Shinto|sd|شنٽو|sh|Šintoizam|simple|Shinto|sk|Šintoizmus|sl|Šintoizem|sn|Ushintho|so|Shiintismi|sq|Shinto|sr|Шинтоизам|sv|Shinto|sw|Shinto|ta|சிந்தோ|te|షింటో మతం|tg|Шинто|th|ชินโต|tl|Shinto|tly|Sintoizm|tok|nasin sewi Sinto|tr|Şinto|tt|Щинто|tyv|Синтоизм|uk|Синто|ur|شنتو|uz|Sintoizm|vi|Thần đạo|war|Shinto|wuu|神道|xmf|სინტოიზმი|yi|שינטא|yo|Shinto|za|Saenzdaugyau|zgh|ⵜⴰⵛⵉⵏⵟⵓⵜ|zh|神道|zh_min_nan|Sîn-tō|zh_yue|神道|qid=Q812767|lt=Shinto}}
 |image   = [[File:火男火売神社 下宮拝殿.jpg|300px]]<br/>Lower Shrine Worship Hall
-|location =  Upper Shrine: {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Oita Prefecture|1=Ōita Prefecture}}{{ill|Beppu|en|Beppu|qid=Q273880|lt=Beppu City|1=Beppu}} Higashiyama<br/>Middle Shrine: {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Oita Prefecture|1=Ōita Prefecture}}{{ill|Beppu|en|Beppu|qid=Q273880|lt=Beppu City|1=Beppu}} Higashiyama 1st District<br/>Lower Shrine: {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Oita Prefecture|1=Ōita Prefecture}}{{ill|Beppu|en|Beppu|qid=Q273880|lt=Beppu City|1=Beppu}} Honomai 8-1
+|location =  Upper Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama<br/>Middle Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama 1st District<br/>Lower Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Honomai 8-1
 |coordinates   = Upper Shrine<br/>{{ウィキ座標2段度分秒|33|17|9.93|N|131|25|47.17|E|region:JP-44_type:landmark|name=Hinohonome Shrine Upper}}<br/>Middle Shrine<br/>{{ウィキ座標2段度分秒|33|16|28.16|N|131|26|14.18|E|region:JP-44_type:landmark|name=Hinohonome Shrine Middle}}<br/>Lower Shrine<br/>{{ウィキ座標2段度分秒|33|18|34.83|N|131|27|59.38|E|region:JP-44_type:landmark|name=Hinohonome Shrine Lower}}
 |deity   = (Varies by shrine: see '''Deities''' section below)
 |shintai   = 
-|type   = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} (Small 2-seat)<br/>Former {{ill|Prefectural Shrine|ja|県社|qq=draft|12=simple|13=User:Immanuelle/Prefectural Shrine|qq=}} (for both Middle and Lower Shrines)
-|founding   = (Traditionally) In {{ill|Hōki|en|Hōki|qid=Q18520676|lt=Hōki|1=Hōki}} 2 ({{ill|771|ja|771|qq=draft|12=simple|13=User:Immanuelle/771|qq=}})
+|type   = {{ill|Shikinaisha|ja|式内社}} (Small 2-seat)<br/>Former {{ill|Prefectural Shrine|ja|県社}} (for both Middle and Lower Shrines)
+|founding   = (Traditionally) In {{ill|Hōki|de|Hōki (Ära)|es|Hōki (nengō)|fa|هوکی (دوره)|fr|Ère Hōki|ia|Hoki (era)|id|Hōki|ja|宝亀|ko|호키 (연호)|pt|Hōki (era)|ru|Хоки (нэнго)|simple|Hōki|sr|Хоки|tr|Hōki|uk|Хокі|zh|寶龜|zh_yue|寶龜|qid=Q18520676|lt=Hōki}} 2 ({{ill|771|ja|771}})
 |main_hall   = 
 |alternative_names   = 
 |tabi   = 
@@ -38,6 +51,7 @@
  | label-size1 = 12
  |label-color1 = black
  |mark-description1= Hinohonome Shrine Upper
+
  |       mark2 = Red pog.svg
  |      label2 = Middle Shrine
  |  mark-size2 = 6
@@ -46,6 +60,7 @@
  | label-size2 = 12
  |label-color2 = black
  |mark-description2= Hinohonome Shrine Middle
+
  |       mark3 = Red pog.svg
  |      label3 = Lower Shrine
  |  mark-size3 = 6
@@ -54,63 +69,428 @@
  | label-size3 = 12
  |label-color3 = black
  |mark-description3= Hinohonome Shrine Lower
+
 }}
 }}
 {{Commonscat|Honoohonome-jinja}}
 [[File:火男火女神社1.jpg|thumb|250px|right|Torii]]
-'''Hinohonome Shrine''' (火男火売神社, also '''Hinohonome Shrine''' (火男火賣神社)) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shrine|1=Shinto shrine}} located in {{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Oita Prefecture|1=Ōita Prefecture}} {{ill|Beppu|en|Beppu|qid=Q273880|lt=Beppu City|1=Beppu}}. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}}, and its former shrine Rank was that of a {{ill|Prefectural Shrine|ja|県社|qq=draft|12=simple|13=User:Immanuelle/Prefectural Shrine|qq=}}, as categorized under the modern shrine Ranking system (see {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}).
+'''Hinohonome Shrine''' (火男火売神社, also '''Hinohonome Shrine''' (火男火賣神社)) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shrine}} located in {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}} {{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}}. It is a {{ill|Shikinaisha|ja|式内社}}, and its former shrine Rank was that of a {{ill|Prefectural Shrine|ja|県社}}, as categorized under the modern shrine Ranking system (see {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of ranked Shinto shrines}}{{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Various Shrines}}).
+
 It consists of three shrines:
-- Upper Shrine (Oku-no-miya) located at the summit of {{ill|Mount Tsurumi|en|Mount Tsurumi|qid=Q6924219|lt=Tsurumi-yama|1=Mount Tsurumi}},
+- Upper Shrine (Oku-no-miya) located at the summit of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}},
 - Middle Shrine (Higashiyama) on the mid-slope (also known as '''Mitake Gongen''' <おたけごんげん>),
 - Lower Shrine (Sato-no-miya) at the foot (also known as '''Tsurumi Gongen''').
+
 == Worshipped Deities (Saijin) ==
-{{see also|{{ill|Saijin|ja|祭神|qq=draft|12=simple|13=User:Immanuelle/Saijin|qq=}}}}
-* Upper Shrine: {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命|qq=draft|12=simple|13=User:Immanuelle/Hinokagutsuchi no Mikoto|qq=}} (ほのかぐつちのみこと), and Hiyaki Hayame no Mikoto (ひやきはやめのみこと)
+{{see also|{{ill|Saijin|ja|祭神|qq=draft|12=simple|13=User:Immanuelle/Saijin}}}}
+* Upper Shrine: {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命}} (ほのかぐつちのみこと), and Hiyaki Hayame no Mikoto (ひやきはやめのみこと)
 * Middle Shrine: Hinokagutsuchi no Mikoto, and Hiyaki Hayame no Mikoto
-* Lower Shrine: {{ill|Izanagi|en|Izanagi|qid=Q813858|lt=Izanagi|1=Izanagi}}, {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami|1=Izanami}}, Hinokagutsuchi no Kami (火之加具土神), and {{ill|Ōyamatsumi|en|Ōyamatsumi|qid=Q386563|qid=Q386563|lt=Ōyamatsumi|1=Ōyamatsumi}}
+* Lower Shrine: {{ill|Izanagi|en|Izanagi|qid=Q813858|lt=Izanagi}}, {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami}}, Hinokagutsuchi no Kami (火之加具土神), and {{ill|Ōyamatsumi|en|Ōyamatsumi|qid=Q386563|qid=Q386563|lt=Ōyamatsumi}}
+
 == History ==
 === Founding ===
-According to shrine tradition, the enshrinement was established in {{ill|771|ja|771|qq=draft|12=simple|13=User:Immanuelle/771|qq=}} (Hōki 2, {{ill|Hōki|en|Hōki|qid=Q18520676|lt=宝亀|1=Hōki}} 2).
-The deities that give the shrine its name, {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命|qq=draft|12=simple|13=User:Immanuelle/Hinokagutsuchi no Mikoto|qq=}} and Hiyaki Hayame no Mikoto (火焼速女命), are thought to be the deification of the two peaks of {{ill|Sacred mountains|en|Sacred mountains|qid=Q1595289|lt=Sacred Mountain|1=Sacred mountains}} ({{ill|Mount Tsurumi|en|Mount Tsurumi|qid=Q6924219|lt=Tsurumi-yama|1=Mount Tsurumi}}) into male and female deities. It was widely known from ancient times that there were {{ill|Onsen|en|Onsen|qid=Q655311|lt=Onsen|1=Onsen}} at the foot of {{ill|Mount Tsurumi|en|Mount Tsurumi|qid=Q6924219|lt=Tsurumi-yama|1=Mount Tsurumi}} in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province|1=Bungo Province}}'s {{ill|Hayami District, Ōita|en|Hayami District, Ōita|qid=Q1043858|lt=Hayami District|1=Hayami District, Ōita}}, but due to the active eruptions of Tsurumi-yama, the area had become barren land and marshes, and was left undeveloped. Both the {{ill|Bungo Fudoki|ja|豊後国風土記|qq=draft|12=simple|13=User:Immanuelle/Bungo Fudoki|qq=}} and the {{ill|Man'yōshū|en|Man'yōshū|qid=Q834321|lt=Man'yōshū|1=Man'yōshū}} mention features such as the "Akayu Spring" (赤湯の泉) corresponding to what is now the {{ill|Blood Pond Hell|ja|血の池地獄|qq=draft|12=simple|13=User:Immanuelle/Blood Pond Hell|qq=}} at {{ill|Shibaishi Onsen|ja|柴石温泉|qq=draft|12=simple|13=User:Immanuelle/Shibaishi Onsen|qq=}}, and the "Kuberi-yu no I" (玖倍理湯の井) corresponding to the hellish area of {{ill|Tetsunawa Onsen|ja|鉄輪温泉|qq=draft|12=simple|13=User:Immanuelle/Tetsunawa Onsen|qq=}}. Furthermore, an excerpt from the {{ill|Iyo Fudoki|ja|伊予国風土記|qq=draft|12=simple|13=User:Immanuelle/Iyo Fudoki|qq=}} recounts a {{ill|Myth|en|Myth|qid=Q12827256|lt=myth|1=Myth}} in which {{ill|Ōkuninushi|ja|大国主命|qq=draft|12=simple|13=User:Immanuelle/Ōkuninushi|qq=}} directed a conduit from the "Hayami no Yu" ({{ill|Hayami no Yu|ja|速見の湯|qq=draft|12=simple|13=User:Immanuelle/Hayami no Yu|qq=}}) spring, which emerges at the foot of Tsurumi-yama—the shrine's shintai—to {{ill|Dōgo Onsen|en|Dōgo Onsen|qid=Q1037748|lt=Dōgo Onsen|1=Dōgo Onsen}}, thereby healing the illness of {{ill|Sukunahikona no Mikoto|ja|少彦名命|1=Sukunabikona|qq=draft|12=simple|13=User:Immanuelle/Sukunahikona no Mikoto|13=User:Immanuelle/Sukunabikona|qq=}}.
+According to shrine tradition, the enshrinement was established in {{ill|771|ja|771}} (Hōki 2, {{ill|Hōki|de|Hōki (Ära)|es|Hōki (nengō)|fa|هوکی (دوره)|fr|Ère Hōki|ia|Hoki (era)|id|Hōki|ja|宝亀|ko|호키 (연호)|pt|Hōki (era)|ru|Хоки (нэнго)|simple|Hōki|sr|Хоки|tr|Hōki|uk|Хокі|zh|寶龜|zh_yue|寶龜|qid=Q18520676|lt=宝亀}} 2).
+
+The deities that give the shrine its name, {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命}} and Hiyaki Hayame no Mikoto (火焼速女命), are thought to be the deification of the two peaks of {{ill|Sacred mountains|en|Sacred mountains|qid=Q1595289|lt=Sacred Mountain}} ({{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}) into male and female deities. It was widely known from ancient times that there were {{ill|Onsen|en|Onsen|qid=Q655311|lt=Onsen}} at the foot of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}} in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}'s {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858|lt=Hayami District}}, but due to the active eruptions of Tsurumi-yama, the area had become barren land and marshes, and was left undeveloped. Both the {{ill|Bungo Fudoki|ja|豊後国風土記}} and the {{ill|Man'yōshū|en|Man'yōshū|qid=Q834321|lt=Man'yōshū}} mention features such as the "Akayu Spring" (赤湯の泉) corresponding to what is now the {{ill|Blood Pond Hell|ja|血の池地獄}} at {{ill|Shibaishi Onsen|ja|柴石温泉}}, and the "Kuberi-yu no I" (玖倍理湯の井) corresponding to the hellish area of {{ill|Tetsunawa Onsen|ja|鉄輪温泉}}. Furthermore, an excerpt from the {{ill|Iyo Fudoki|ja|伊予国風土記}} recounts a {{ill|Myth|en|Myth|qid=Q12827256|lt=myth}} in which {{ill|Ōkuninushi|ja|大国主命}} directed a conduit from the "Hayami no Yu" ({{ill|Hayami no Yu|ja|速見の湯}}) spring, which emerges at the foot of Tsurumi-yama—the shrine's shintai—to {{ill|Dōgo Onsen|en|Dōgo Onsen|qid=Q1037748|lt=Dōgo Onsen}}, thereby healing the illness of {{ill|Sukunahikona no Mikoto|ja|少彦名命}}.
+
 == Overview ==
-According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku|1=Nihon Sandai Jitsuroku}}<ref group="原" name="貞観9th year 2月26日"/> <ref group="原" name="貞観9th year 4月3日">According to the Nihon Sandai Jitsuroku, entry of April 3, 867 (Jōgan 9).</ref>, when {{ill|867|ja|867|qq=draft|12=simple|13=User:Immanuelle/867|qq=}} (Jōgan 9) on {{ill|January 20|en|January 20|qid=Q2267|lt=January 20|1=January 20}}, an eruption occurred at {{ill|Mount Tsurumi|en|Mount Tsurumi|qid=Q6924219|lt=Tsurumi-yama|1=Mount Tsurumi}}, and at the command of the Court to the provincial governor of {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province|1=Bungo Province}}, the {{ill|Large Prajñāpāramitā Sūtras|en|Large Prajñāpāramitā Sūtras|qid=Q15905785|lt=Great Prajna Sutra|1=Large Prajñāpāramitā Sūtras}} was recited before the shrine.
-In {{ill|927|ja|927|qq=draft|12=simple|13=User:Immanuelle/927|qq=}} (Enchō 5) the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|qq=draft|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} was established, wherein the shrine is recorded as "Hinohonome Shrine Two-seat" in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province|1=Bungo Province}}'s {{ill|Hayami District, Ōita|en|Hayami District, Ōita|qid=Q1043858|lt=Hayami District|1=Hayami District, Ōita}}, and it is listed among the {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|qq=draft|1=Shikinaisha|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} alongside {{ill|Unagi Hime Shrine|ja|宇奈岐日女神社|qq=draft|12=simple|13=User:Immanuelle/Unagi Hime Shrine|qq=}} in Hayami District.
-In {{ill|1276|ja|1276|qq=draft|12=simple|13=User:Immanuelle/1276|qq=}} (Kenji 2), the itinerant monk {{ill|Ippen|en|Ippen|qid=Q1056232|lt=Ippen|1=Ippen}}, who was traveling across Kyushu, is said to have stopped in Beppu and, guided by Tsurumi Gongen, pacified the "Kuberi-yu no I", thereby opening the stone bath (currently known as {{ill|Tetsunawa Mushiyu|ja|鉄輪むし湯|qq=draft|12=simple|13=User:Immanuelle/Tetsunawa Mushiyu|qq=}}) at {{ill|Tetsunawa Onsen|ja|鉄輪温泉|qq=draft|12=simple|13=User:Immanuelle/Tetsunawa Onsen|qq=}}. Consequently, the shrine has been venerated as the guardian deity of the {{ill|Beppu Hachiyu|ja|別府八湯|qq=draft|12=simple|13=User:Immanuelle/Beppu Hachiyu|qq=}}.
-During the Tenshō era, the shrine buildings were burned by {{ill|Otomo Sōrin|ja|大友宗麟|qq=draft|12=simple|13=User:Immanuelle/Otomo Sōrin|qq=}}, and many ancient documents were lost, but the Lower Shrine was rebuilt in {{ill|1664|ja|1664|qq=draft|12=simple|13=User:Immanuelle/1664|qq=}} (Kanbun 4) by Kurushima Dōsei. The area around the Lower Shrine, Tsurumi Village, became an exclave of the Mori Domain, and the {{ill|Myōban Onsen|ja|明礬温泉|qq=draft|12=simple|13=User:Immanuelle/Myōban Onsen|qq=}} produced {{ill|Myōban|ja|明礬|qq=draft|12=simple|13=User:Immanuelle/Myōban|qq=}} (also known as {{ill|Onsen Flakes|ja|湯の花|1=Yunohana|qq=draft|12=simple|13=User:Immanuelle/Onsen Flakes|13=User:Immanuelle/Yunohana|qq=}}), which served as an important source of revenue for the domain.
+According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}<ref group="原" name="貞観9th year 2月26日"/> <ref group="原" name="貞観9th year 4月3日">According to the Nihon Sandai Jitsuroku, entry of April 3, 867 (Jōgan 9).</ref>, when {{ill|867|ja|867}} (Jōgan 9) on {{ill|January 20|en|January 20|qid=Q2267|lt=January 20}}, an eruption occurred at {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}, and at the command of the Court to the provincial governor of {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}, the {{ill|Large Prajñāpāramitā Sūtras|en|Large Prajñāpāramitā Sūtras|qid=Q15905785|lt=Great Prajna Sutra}} was recited before the shrine.
+
+In {{ill|927|ja|927}} (Enchō 5) the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Jinmyōchō}} was established, wherein the shrine is recorded as "Hinohonome Shrine Two-seat" in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}'s {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858|lt=Hayami District}}, and it is listed among the {{ill|Shikinaisha|ja|式内社}} alongside {{ill|Unagi Hime Shrine|ja|宇奈岐日女神社}} in Hayami District.
+
+In {{ill|1276|ja|1276}} (Kenji 2), the itinerant monk {{ill|Ippen|en|Ippen|qid=Q1056232|lt=Ippen}}, who was traveling across Kyushu, is said to have stopped in Beppu and, guided by Tsurumi Gongen, pacified the "Kuberi-yu no I", thereby opening the stone bath (currently known as {{ill|Tetsunawa Mushiyu|ja|鉄輪むし湯}}) at {{ill|Tetsunawa Onsen|ja|鉄輪温泉}}. Consequently, the shrine has been venerated as the guardian deity of the {{ill|Beppu Hachiyu|ja|別府八湯}}.
+
+During the Tenshō era, the shrine buildings were burned by {{ill|Otomo Sōrin|ja|大友宗麟}}, and many ancient documents were lost, but the Lower Shrine was rebuilt in {{ill|1664|ja|1664}} (Kanbun 4) by Kurushima Dōsei. The area around the Lower Shrine, Tsurumi Village, became an exclave of the Mori Domain, and the {{ill|Myōban Onsen|ja|明礬温泉}} produced {{ill|Myōban|ja|明礬}} (also known as {{ill|Onsen Flakes|ja|湯の花}}), which served as an important source of revenue for the domain.
+
 === Shrine Ranks ===
-* In Kakyō 2 ({{ill|849|ja|849|qq=draft|12=simple|13=User:Immanuelle/849|qq=}}) on June 1, the deity Hinokahime was accorded the Junior Fifth Rank, Lower. <ref group="原">From the Zoku Nihon Kōki, Kakyō 2, June 1.</ref>
-* In Jōgan 9 ({{ill|867|ja|867|qq=draft|12=simple|13=User:Immanuelle/867|qq=}}) on February 26, records indicate that the deities {{ill|Hinokami|ja|火男神|qq=draft|12=simple|13=User:Immanuelle/Hinokami|qq=}} and Honomai were accorded the Junior Fifth Rank, Upper and Lower respectively. <ref group="原" name="貞観9th year 2月26日">From the Nihon Sandai Jitsuroku, entry of February 26, 867.</ref>
-* On August 16, 867 (Jōgan 9), both the deity {{ill|Hinokami|ja|火男神|qq=draft|12=simple|13=User:Immanuelle/Hinokami|qq=}} and the deity {{ill|Honomai|ja|火咩神|qq=draft|12=simple|13=User:Immanuelle/Honomai|qq=}}, both of Junior Fifth Rank, Upper, were jointly conferred the Senior Fifth Rank, Lower. <ref group="原" name="貞観9th year 8月16日">From the Nihon Sandai Jitsuroku, entry of August 16, 867.</ref>
+* In Kakyō 2 ({{ill|849|ja|849}}) on June 1, the deity Hinokahime was accorded the Junior Fifth Rank, Lower. <ref group="原">From the Zoku Nihon Kōki, Kakyō 2, June 1.</ref>
+* In Jōgan 9 ({{ill|867|ja|867}}) on February 26, records indicate that the deities {{ill|Hinokami|ja|火男神}} and Honomai were accorded the Junior Fifth Rank, Upper and Lower respectively. <ref group="原" name="貞観9th year 2月26日">From the Nihon Sandai Jitsuroku, entry of February 26, 867.</ref>
+* On August 16, 867 (Jōgan 9), both the deity {{ill|Hinokami|ja|火男神}} and the deity {{ill|Honomai|ja|火咩神}}, both of Junior Fifth Rank, Upper, were jointly conferred the Senior Fifth Rank, Lower. <ref group="原" name="貞観9th year 8月16日">From the Nihon Sandai Jitsuroku, entry of August 16, 867.</ref>
+
 == Cultural Properties ==
 === Oita Prefecture Designated Tangible Cultural Properties ===
 * The pagoda of the deity of the Sacred Peak at the Middle Shrine – located at the Middle Shrine. Designated on March 28, Showa 50.<ref name="文化財">[http://www.city.beppu.oita.jp/education/shogaigakusyuuka/bunkazai.htm Beppu City's Designated Cultural Properties] (Beppu City Lifelong Learning Division website).</ref>
+
 === Oita Prefecture Designated Natural Monuments ===
 * The Ichiigashi forest of the Tsurumi Gongen Shrine – located at the Lower Shrine. Designated on March 28, Showa 50.<ref name="文化財"/>
 * The natural forest of the deity of the Sacred Peak at the Middle Shrine – located at the Middle Shrine. Designated on March 28, Showa 50.<ref name="文化財"/>
-Furthermore, the forest of Hinohonome Shrine (Tsurumi, Beppu City) was designated as a specially protected tree area in {{ill|1974|ja|1974|qq=draft|12=simple|13=User:Immanuelle/1974|qq=}} (Showa 49) on {{ill|March 15|en|March 15|qid=Q2403|lt=March 15|1=March 15}}.<ref>{{Cite web|和書|url=https://www.pref.oita.jp/uploaded/attachment/100227.pdf|title=Oita Prefecture Environmental White Paper|page=44|publisher=Oita Prefecture|accessdate=2024-09-02}}</ref>
-== Shikinaisha (式内社) ==
-{| class="wikitable sortable"
-! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
-|-
-| {{ill|Hayami District, Ōita|en|Hayami District, Ōita|ja|速見郡|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ko|하야미군|pl|Powiat Hayami|zh|速見郡|lt=Hayami district|qid=Q1043858|1=Hayami District, Ōita}} || {{ill|Hinokuma Hime Shrine|lt=Honoo-Honome Shrine|ja|火男火売神社|commons|Category:Honoohonome-jinja|qid=Q11566947|1=Honoo-Honome Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || 3 seats || — || {{coord|33.286092|131.429769|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183314 DB]
-|}
+
+Furthermore, the forest of Hinohonome Shrine (Tsurumi, Beppu City) was designated as a specially protected tree area in {{ill|1974|ja|1974}} (Showa 49) on {{ill|March 15|en|March 15|qid=Q2403|lt=March 15}}.<ref>{{Cite web|和書|url=https://www.pref.oita.jp/uploaded/attachment/100227.pdf|title=Oita Prefecture Environmental White Paper|page=44|publisher=Oita Prefecture|accessdate=2024-09-02}}</ref>
+
+== Local Information ==
+'''Location'''
+* Upper Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama – at the summit of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
+* Middle Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama 1st District – on the mid-slope of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
+* Lower Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Honomai 8-1 – at the foot of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
 
 == References ==
+
 ''''Primary Sources'''': Introduces the original historical sources for the recorded matters (not treated as sources).
 {{reflist|group="原"}}
+
 '''Sources'''
 {{reflist}}
+
 == Related Literature ==
 {{Coordinates List}}
-* [https://cir.nii.ac.jp/crid/1050845762582671744 Sakuo Abe, “About Hinohonome Shrine: The Guardian Deity of Beppu Onsen”] ({{ill|CiNii|en|CiNii|qid=Q10726338|lt=CiNii|1=CiNii}})
+* [https://cir.nii.ac.jp/crid/1050845762582671744 Sakuo Abe, “About Hinohonome Shrine: The Guardian Deity of Beppu Onsen”] ({{ill|CiNii|en|CiNii|qid=Q10726338|lt=CiNii}})
 {{Normdaten}}
 {{shinto-stub}}
 {{translated page|ja|火男火売神社|version=102236190|comment=Imported full ja history}}
 
+== Accidentally Overwritten Content ==
+
+{{Shrine
+|Name   =  Hinohonome Shrine (火男火売神社)
+|religious_affiliation = {{ill|Shinto|abstract|Q812767|af|Sjintoïsme|an|Xintoísmo|anp|शिन्तो धर्म|ar|شنتو|ary|شينطو|arz|شنتو|as|শ্বিণ্ট'|ast|Sintoísmu|az|Şintoizm|azb|شینتوئیسم|ba|Синтоизм|bat_smg|Šintoėzmos|bcl|Shinto|be|Сінтаізм|be_x_old|Сінтаізм|bg|Шинтоизъм|blk|ဆိဉ်တိုဘာႏသာႏ|bn|শিন্তৌ ধর্ম|bo|ཧྲིན་ཐོ།|br|Shintoegezh|bs|Šintoizam|bxr|Синто|ca|Xintoisme|ckb|شینتۆ|cs|Šintoismus|cy|Shintō|da|Shinto|de|Shintō|diq|Şinto|el|Σιντοϊσμός|eo|Ŝintoo|es|Sintoísmo|et|Šintoism|eu|Sintoismo|ext|Sintoísmu|fa|شینتو|fi|Šintolaisuus|fiu_vro|Sinto|fr|Shintoïsme|fur|Sintoisim|fy|Sjintoïsme|gcr|Shintoyism|gd|Shinto|gl|Xintoísmo|gn|Sinto|got|𐍃𐌹𐌽𐍄𐍉|gu|શિન્તો|ha|Shinto|he|שינטו|hi|शिन्तो धर्म|hif|Shinto|hr|Šintoizam|hu|Sintó|hy|Սինտոիզմ|ia|Shinto|id|Shinto|io|Shinto|is|Sjintóismi|it|Shintoismo|ja|神道|jam|Shinto|jv|Shinto|ka|შინტოიზმი|kbp|Sinto|kg|Kisinto|kk|Синтоизм|km|ស៊ិនតូ|kn|ಶಿಂಟೋ ಧರ್ಮ|ko|신토|ks|شِنتو|ky|Шинто|la|Sintoismus|lad|Shintoizmo|lb|Shintō|lfn|Xinto|lij|Scintoiximo|lt|Šintoizmas|lv|Sintoisms|map_bms|Shinto|mg|Sintôisma|min|Shinto|mk|Шинтоизам|ml|ഷിന്റൊ|mn|Шинто|mni|ꯁꯤꯟꯇꯣ ꯂꯥꯢꯅꯤꯡ|mr|शिंतो धर्म|ms|Shinto|mt|Xintù|mwl|Xintoísmo|my|ရှင်တိုဘာသာ|nds|Shintō|new|शिन्तो धर्म|nl|Shintoïsme|nn|Shinto|no|Shintōisme|oc|Sintoïsme|olo|Šintolaižus|or|କାମିନୋ ମିଚି|pa|ਸ਼ਿੰਤੋਵਾਦ|pl|Shintō|pms|Shintoism|pnb|شنتو|ps|شينتو|pt|Xintoísmo|ro|Șintoism|ru|Синтоизм|rue|Сінтоїзм|sc|Shintoismu|scn|Shintuismu|sco|Shinto|sd|شنٽو|sh|Šintoizam|simple|Shinto|sk|Šintoizmus|sl|Šintoizem|sn|Ushintho|so|Shiintismi|sq|Shinto|sr|Шинтоизам|sv|Shinto|sw|Shinto|ta|சிந்தோ|te|షింటో మతం|tg|Шинто|th|ชินโต|tl|Shinto|tly|Sintoizm|tok|nasin sewi Sinto|tr|Şinto|tt|Щинто|tyv|Синтоизм|uk|Синто|ur|شنتو|uz|Sintoizm|vi|Thần đạo|war|Shinto|wuu|神道|xmf|სინტოიზმი|yi|שינטא|yo|Shinto|za|Saenzdaugyau|zgh|ⵜⴰⵛⵉⵏⵟⵓⵜ|zh|神道|zh_min_nan|Sîn-tō|zh_yue|神道|qid=Q812767|lt=Shinto}}
+|image   = [[File:火男火売神社 下宮拝殿.jpg|300px]]<br/>Lower Shrine Worship Hall
+|location =  Upper Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama<br/>Middle Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama 1st District<br/>Lower Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Honomai 8-1
+|coordinates   = Upper Shrine<br/>{{ウィキ座標2段度分秒|33|17|9.93|N|131|25|47.17|E|region:JP-44_type:landmark|name=Hinohonome Shrine Upper}}<br/>Middle Shrine<br/>{{ウィキ座標2段度分秒|33|16|28.16|N|131|26|14.18|E|region:JP-44_type:landmark|name=Hinohonome Shrine Middle}}<br/>Lower Shrine<br/>{{ウィキ座標2段度分秒|33|18|34.83|N|131|27|59.38|E|region:JP-44_type:landmark|name=Hinohonome Shrine Lower}}
+|deity   = (Varies by shrine: see '''Deities''' section below)
+|shintai   = 
+|type   = {{ill|Shikinaisha|ja|式内社}} (Small 2-seat)<br/>Former {{ill|Prefectural Shrine|ja|県社}} (for both Middle and Lower Shrines)
+|founding   = (Traditionally) In {{ill|Hōki|de|Hōki (Ära)|es|Hōki (nengō)|fa|هوکی (دوره)|fr|Ère Hōki|ia|Hoki (era)|id|Hōki|ja|宝亀|ko|호키 (연호)|pt|Hōki (era)|ru|Хоки (нэнго)|simple|Hōki|sr|Хоки|tr|Hōki|uk|Хокі|zh|寶龜|zh_yue|寶龜|qid=Q18520676|lt=Hōki}} 2 ({{ill|771|ja|771}})
+|main_hall   = 
+|alternative_names   = 
+|tabi   = 
+|festival   = 
+|rites   = 
+|map   = 
+{{OSM location map
+ |       coord = {{coord|33|17|9.93|N|131|25|47.17|E}}
+ |        zoom = 11
+ |       float = right
+ |       width = 260
+ |      height = 240
+ |     caption = 
+ |       title =
+ |     minimap = file
+ |   mini-file = Map of Oita Prefecture Ja.svg
+ |  mini-width = 100
+ | mini-height = 100
+ |   minipog-x = 50
+ |   minipog-y = 41
+ |   scalemark = 60
+ |      shape1 = image
+ |       mark1 = Red pog.svg
+ |      label1 = Upper Shrine
+ |  mark-size1 = 6
+ | mark-coord1 = {{coord|33|17|9.93|N|131|25|47.17|E}}
+ |  label-pos1 = top
+ | label-size1 = 12
+ |label-color1 = black
+ |mark-description1= Hinohonome Shrine Upper
+
+ |       mark2 = Red pog.svg
+ |      label2 = Middle Shrine
+ |  mark-size2 = 6
+ | mark-coord2 = {{coord|33|16|28.16|N|131|26|14.18|E}}
+ |  label-pos2 = bottom
+ | label-size2 = 12
+ |label-color2 = black
+ |mark-description2= Hinohonome Shrine Middle
+
+ |       mark3 = Red pog.svg
+ |      label3 = Lower Shrine
+ |  mark-size3 = 6
+ | mark-coord3 = {{coord|33|18|34.83|N|131|27|59.38|E}}
+ |  label-pos3 = top
+ | label-size3 = 12
+ |label-color3 = black
+ |mark-description3= Hinohonome Shrine Lower
+
+}}
+}}
+{{Commonscat|Honoohonome-jinja}}
+[[File:火男火女神社1.jpg|thumb|250px|right|Torii]]
+'''Hinohonome Shrine''' (火男火売神社, also '''Hinohonome Shrine''' (火男火賣神社)) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shrine}} located in {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}} {{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}}. It is a {{ill|Shikinaisha|ja|式内社}}, and its former shrine Rank was that of a {{ill|Prefectural Shrine|ja|県社}}, as categorized under the modern shrine Ranking system (see {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of ranked Shinto shrines}}{{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Various Shrines}}).
+
+It consists of three shrines:
+- Upper Shrine (Oku-no-miya) located at the summit of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}},
+- Middle Shrine (Higashiyama) on the mid-slope (also known as '''Mitake Gongen''' <おたけごんげん>),
+- Lower Shrine (Sato-no-miya) at the foot (also known as '''Tsurumi Gongen''').
+
+== Worshipped Deities (Saijin) ==
+{{see also|{{ill|Saijin|ja|祭神|qq=draft|12=simple|13=User:Immanuelle/Saijin}}}}
+* Upper Shrine: {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命}} (ほのかぐつちのみこと), and Hiyaki Hayame no Mikoto (ひやきはやめのみこと)
+* Middle Shrine: Hinokagutsuchi no Mikoto, and Hiyaki Hayame no Mikoto
+* Lower Shrine: {{ill|Izanagi|en|Izanagi|qid=Q813858|lt=Izanagi}}, {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami}}, Hinokagutsuchi no Kami (火之加具土神), and {{ill|Ōyamatsumi|en|Ōyamatsumi|qid=Q386563|qid=Q386563|lt=Ōyamatsumi}}
+
+== History ==
+=== Founding ===
+According to shrine tradition, the enshrinement was established in {{ill|771|ja|771}} (Hōki 2, {{ill|Hōki|de|Hōki (Ära)|es|Hōki (nengō)|fa|هوکی (دوره)|fr|Ère Hōki|ia|Hoki (era)|id|Hōki|ja|宝亀|ko|호키 (연호)|pt|Hōki (era)|ru|Хоки (нэнго)|simple|Hōki|sr|Хоки|tr|Hōki|uk|Хокі|zh|寶龜|zh_yue|寶龜|qid=Q18520676|lt=宝亀}} 2).
+
+The deities that give the shrine its name, {{ill|Hinokagutsuchi no Mikoto|ja|火之加具土命}} and Hiyaki Hayame no Mikoto (火焼速女命), are thought to be the deification of the two peaks of {{ill|Sacred mountains|en|Sacred mountains|qid=Q1595289|lt=Sacred Mountain}} ({{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}) into male and female deities. It was widely known from ancient times that there were {{ill|Onsen|en|Onsen|qid=Q655311|lt=Onsen}} at the foot of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}} in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}'s {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858|lt=Hayami District}}, but due to the active eruptions of Tsurumi-yama, the area had become barren land and marshes, and was left undeveloped. Both the {{ill|Bungo Fudoki|ja|豊後国風土記}} and the {{ill|Man'yōshū|en|Man'yōshū|qid=Q834321|lt=Man'yōshū}} mention features such as the "Akayu Spring" (赤湯の泉) corresponding to what is now the {{ill|Blood Pond Hell|ja|血の池地獄}} at {{ill|Shibaishi Onsen|ja|柴石温泉}}, and the "Kuberi-yu no I" (玖倍理湯の井) corresponding to the hellish area of {{ill|Tetsunawa Onsen|ja|鉄輪温泉}}. Furthermore, an excerpt from the {{ill|Iyo Fudoki|ja|伊予国風土記}} recounts a {{ill|Myth|en|Myth|qid=Q12827256|lt=myth}} in which {{ill|Ōkuninushi|ja|大国主命}} directed a conduit from the "Hayami no Yu" ({{ill|Hayami no Yu|ja|速見の湯}}) spring, which emerges at the foot of Tsurumi-yama—the shrine's shintai—to {{ill|Dōgo Onsen|en|Dōgo Onsen|qid=Q1037748|lt=Dōgo Onsen}}, thereby healing the illness of {{ill|Sukunahikona no Mikoto|ja|少彦名命}}.
+
+== Overview ==
+According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}<ref group="原" name="貞観9th year 2月26日"/> <ref group="原" name="貞観9th year 4月3日">According to the Nihon Sandai Jitsuroku, entry of April 3, 867 (Jōgan 9).</ref>, when {{ill|867|ja|867}} (Jōgan 9) on {{ill|January 20|en|January 20|qid=Q2267|lt=January 20}}, an eruption occurred at {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}, and at the command of the Court to the provincial governor of {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}, the {{ill|Large Prajñāpāramitā Sūtras|en|Large Prajñāpāramitā Sūtras|qid=Q15905785|lt=Great Prajna Sutra}} was recited before the shrine.
+
+In {{ill|927|ja|927}} (Enchō 5) the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Jinmyōchō}} was established, wherein the shrine is recorded as "Hinohonome Shrine Two-seat" in {{ill|Bungo Province|en|Bungo Province|qid=Q864148|lt=Bungo Province}}'s {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858|lt=Hayami District}}, and it is listed among the {{ill|Shikinaisha|ja|式内社}} alongside {{ill|Unagi Hime Shrine|ja|宇奈岐日女神社}} in Hayami District.
+
+In {{ill|1276|ja|1276}} (Kenji 2), the itinerant monk {{ill|Ippen|en|Ippen|qid=Q1056232|lt=Ippen}}, who was traveling across Kyushu, is said to have stopped in Beppu and, guided by Tsurumi Gongen, pacified the "Kuberi-yu no I", thereby opening the stone bath (currently known as {{ill|Tetsunawa Mushiyu|ja|鉄輪むし湯}}) at {{ill|Tetsunawa Onsen|ja|鉄輪温泉}}. Consequently, the shrine has been venerated as the guardian deity of the {{ill|Beppu Hachiyu|ja|別府八湯}}.
+
+During the Tenshō era, the shrine buildings were burned by {{ill|Otomo Sōrin|ja|大友宗麟}}, and many ancient documents were lost, but the Lower Shrine was rebuilt in {{ill|1664|ja|1664}} (Kanbun 4) by Kurushima Dōsei. The area around the Lower Shrine, Tsurumi Village, became an exclave of the Mori Domain, and the {{ill|Myōban Onsen|ja|明礬温泉}} produced {{ill|Myōban|ja|明礬}} (also known as {{ill|Onsen Flakes|ja|湯の花}}), which served as an important source of revenue for the domain.
+
+=== Shrine Ranks ===
+* In Kakyō 2 ({{ill|849|ja|849}}) on June 1, the deity Hinokahime was accorded the Junior Fifth Rank, Lower. <ref group="原">From the Zoku Nihon Kōki, Kakyō 2, June 1.</ref>
+* In Jōgan 9 ({{ill|867|ja|867}}) on February 26, records indicate that the deities {{ill|Hinokami|ja|火男神}} and Honomai were accorded the Junior Fifth Rank, Upper and Lower respectively. <ref group="原" name="貞観9th year 2月26日">From the Nihon Sandai Jitsuroku, entry of February 26, 867.</ref>
+* On August 16, 867 (Jōgan 9), both the deity {{ill|Hinokami|ja|火男神}} and the deity {{ill|Honomai|ja|火咩神}}, both of Junior Fifth Rank, Upper, were jointly conferred the Senior Fifth Rank, Lower. <ref group="原" name="貞観9th year 8月16日">From the Nihon Sandai Jitsuroku, entry of August 16, 867.</ref>
+
+== Cultural Properties ==
+=== Oita Prefecture Designated Tangible Cultural Properties ===
+* The pagoda of the deity of the Sacred Peak at the Middle Shrine – located at the Middle Shrine. Designated on March 28, Showa 50.<ref name="文化財">[http://www.city.beppu.oita.jp/education/shogaigakusyuuka/bunkazai.htm Beppu City's Designated Cultural Properties] (Beppu City Lifelong Learning Division website).</ref>
+
+=== Oita Prefecture Designated Natural Monuments ===
+* The Ichiigashi forest of the Tsurumi Gongen Shrine – located at the Lower Shrine. Designated on March 28, Showa 50.<ref name="文化財"/>
+* The natural forest of the deity of the Sacred Peak at the Middle Shrine – located at the Middle Shrine. Designated on March 28, Showa 50.<ref name="文化財"/>
+
+Furthermore, the forest of Hinohonome Shrine (Tsurumi, Beppu City) was designated as a specially protected tree area in {{ill|1974|ja|1974}} (Showa 49) on {{ill|March 15|en|March 15|qid=Q2403|lt=March 15}}.<ref>{{Cite web|和書|url=https://www.pref.oita.jp/uploaded/attachment/100227.pdf|title=Oita Prefecture Environmental White Paper|page=44|publisher=Oita Prefecture|accessdate=2024-09-02}}</ref>
+
+== Local Information ==
+'''Location'''
+* Upper Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama – at the summit of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
+* Middle Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Higashiyama 1st District – on the mid-slope of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
+* Lower Shrine: {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924|lt=Oita Prefecture}}{{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu City}} Honomai 8-1 – at the foot of {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219|lt=Tsurumi-yama}}.
+
+== References ==
+
+''''Primary Sources'''': Introduces the original historical sources for the recorded matters (not treated as sources).
+{{reflist|group="原"}}
+
+'''Sources'''
+{{reflist}}
+
+== Related Literature ==
+{{Coordinates List}}
+* [https://cir.nii.ac.jp/crid/1050845762582671744 Sakuo Abe, “About Hinohonome Shrine: The Guardian Deity of Beppu Onsen”] ({{ill|CiNii|en|CiNii|qid=Q10726338|lt=CiNii}})
+{{Normdaten}}
+{{shinto-stub}}
+{{translated page|ja|火男火売神社|version=102236190|comment=Imported full ja history}}
+
+==Notes==
+<references group="lower-alpha"/>
+==merged content==
+
+{{Expand Japanese|火男火売神社}}
+
+{{Infobox religious building
+| name = Hinokuma Hime Shrine
+| native_name = 火男火売神社
+| image = 火男火売神社 下宮拝殿.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hinokuma Hime Shrine
+| coordinates = {{coord|33.286092|131.429769}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Izanagi and Izanami|lt=Izanagi and Izanami|be|Ідзанакі і Ідзанамі|de|Izanagi und Izanami|eu|Izanagi eta Izanami|nl|Izanagi en Izanami|pl|Izanami i Izanagi|qid=Q12259961}}
+| website = {{Official website|https://honomejinja.jp/}}
+}}
+
+{{nihongo|'''Honoo-Honome Shrine'''|火男火売神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
+* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
+* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+* {{ill|Onsen Shrines|ltq=Q11562963|qid=Q11562963}}
+* {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei-sha}}
+* {{ill|Shikinai Hiteisha|ja|比定社|qid=Q135026601|lt=Shikinai Hiteisha}}
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Bungo Province|ltq=Q11633695|qid=Q11633695}}
+** Series ordinal: 4
+** P155: {{ill|Unaguhime Shrine|lt=Unaguhime Shrine|ja|宇奈岐日女神社|qid=Q11449252}}
+** P156: {{ill|Hayasuihime Shrine|ltq=Q11511196|qid=Q11511196}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880|lt=Beppu}}
+* {{ill|Bungo Province|lt=Bungo Province|ar|مقاطعة بونغو|cs|Provincie Bungo|de|Provinz Bungo|en|Bungo Province|es|Provincia de Bungo|fa|ولایت بونگو|fr|Bungo (province)|gl|Provincia de Bungo|he|בונגו (מחוז)|id|Provinsi Bungo|it|Bungo (provincia)|ja|豊後国|ko|분고국|lt|Bungo žemė|nl|Bungo (provincie)|no|Bungo|pt|Província de Bungo|ru|Бунго (провинция)|simple|Bungo Province|sk|Bungo (provincia)|sr|Провинција Бунго|sv|Bungo, Japan|th|แคว้นบุงโงะ|tr|Bungo (vilayet)|uk|Провінція Бунґо|vi|Tỉnh Bungo (Tên cũ)|zh_min_nan|Bungo-kok|zh|豐後國|qid=Q864148}}
+* {{ill|Hayami District, Ōita|ceb|Hayami-gun|de|Hayami-gun|fa|منطقه هایامی، اوئیتا|fr|District de Hayami|id|Distrik Hayami, Ōita|it|Distretto di Hayami|ja|速見郡|ko|하야미군|pl|Powiat Hayami|zh|速見郡|qid=Q1043858}}
+
+== coordinate location (P625) ==
+
+* {{coord|33.286092|131.429769}}
+
+== official website (P856) ==
+
+* https://honomejinja.jp/
+** Language of work: {{ill|Japanese language|lt=Japanese|ab|Аиапон бызшәа|ace|Bahsa Jeupang|ady|Японыбзэ|af|Japannees|als|Japanische Sprache|ami|Sowal no dipong|am|ጃፓንኛ|ang|Iapanisc sprǣc|anp|जापानी भाषा|an|Idioma chaponés|arc|ܠܫܢܐ ܝܦܢܝܐ|ar|اللغة اليابانية|arbooks|يابانية|ary|جاپونية|arz|لغه يابانى|ast|Xaponés|as|জাপানী ভাষা|awa|जापानी भाषा|azb|ژاپون دیلی|az|Yapon dili|azquote|Yapon dili|ban|Basa Jepang|bar|Japanische Sproch|bat_smg|Japuonu kalba|ba|Япон теле|bcl|Tataramon na Hapones|be_x_old|Японская мова|be|Японская мова|bew|Basa Jepang|bg|Японски език|bh|जापानी भाषा|bjn|Basa Japang|bn|জাপানি ভাষা|bnbooks|জাপানি ভাষা শিক্ষা|bo|ཉི་ཧོང་སྐད།|br|Japaneg|bs|Japanski jezik|btm|Saro Jepang|bxr|Япон хэлэн|ca|Japonès|cdo|Nĭk-buōng-ngṳ̄|ceb|Hinapones|ce|Ипнойн мотт|chy|Óeta'xaénéhetse|ckb|زمانی ژاپۆنی|crh|Japon tili|cs|Japonština|csbooks|Japonština|csversity|Japonština|cu|Ꙗпѡньскъ ѩꙁꙑкъ|cv|Япон чĕлхи|cy|Japaneg|da|Japansk (sprog)|dabooks|Japansk|de|Japanische Sprache|debooks|Japanisch|devoyage|Sprachführer Japanisch|diq|Japonki|dsb|Japańšćina|dtp|Boros Jipun|dv|ޖަޕާނީ|el|Ιαπωνική γλώσσα|elversity|Τμήμα:Γιαπωνέζικα|elvoyage|Ιαπωνικός γλωσσικός οδηγός|en|Japanese language|enbooks|Japanese|enquote|Japanese language|enversity|Portal:Japanese|envoyage|Japanese phrasebook|eo|Japana lingvo|eovoyage|Japana frazlibro|es|Idioma japonés|esbooks|Japonés|esvoyage|Guía de japonés|et|Jaapani keel|etquote|Jaapani keel|eu|Japoniera|ext|Lengua japonesa|fa|زبان ژاپنی|fabooks|آموزش زبان ژاپنی|fiu_vro|Jaapani kiil|fi|Japanin kieli|fibooks|Japanin kieli|fivoyage|Japanin matkasanakirja|fo|Japanskt mál|frp|Japonês|frr|Japoonsk spriak|fr|Japonais|frbooks|Japonais|frversity|Département:Japonais|frvoyage|Guide linguistique japonais|fy|Japansk|gag|Yapon dili|gan|日语|ga|An tSeapáinis|gcr|Japonè|gd|Iapanais|gl|Lingua xaponesa|gn|Hapõñe’ẽ|gv|Shapaanish|hak|Ngi̍t-pún-ngî|ha|Harshen Japan|haw|ʻŌlelo Iāpana|he|יפנית|hebooks|יפנית|hevoyage|שיחון יפני|hif|Japanese bhasa|hi|जापानी भाषा|hr|Japanski jezik|hsb|Japanšćina|ht|Lang japonè|hu|Japán nyelv|hy|Ճապոներեն|hyw|Ճափոներէն|ia|Lingua japonese|iba|Jaku Jipun|id|Bahasa Jepang|idbooks|Bahasa Jepang|idvoyage|Buku percakapan Jepang|ilo|Pagsasao a Hapon|inh|Японий мотт|io|Japoniana linguo|is|Japanska|isbooks|Japanska|it|Lingua giapponese|itbooks|Giapponese|itvoyage|Giapponese|jam|Japaniiz languij|ja|日本語|jabooks|日本語|jbo|ponbau|jv|Basa Jepang|kaa|Yapon tili|kab|Tajapunit|ka|იაპონური ენა|kabooks|იაპონური ენა|kbd|Японыбзэ|kbp|Sapɔŋ kʊnʊŋ|kge|Basa Jopang|kk|Жапон тілі|km|ភាសាជប៉ុន|knc|Japanese|kn|ಜಪಾನಿ ಭಾಷೆ|ko|일본어|kobooks|일본어 입문|krc|Япон тил|ks|جاپأنؠ زبان|ku|Zimanê japonî|kv|Япон кыв|kw|Nihonek|ky|Жапон тили|lad|Lingua japoneza|la|Lingua Iaponica|lawiktionary|Victionarium:Lingua Iaponica|lbe|Япониянал маз|lb|Japanesch|lez|Япон чӀал|lfn|Nion (lingua)|li|Japans|lld|Lingaz iapanesc|lmo|Lengua giapponesa|ln|Lizapɔ́|lo|ພາສາຍີ່ປຸ່ນ|lt|Japonų kalba|ltbooks|Japonų kalba|lv|Japāņu valoda|mad|Bhâsa Jeppang|mai|जापानी भाषा|map_bms|Basa Jepang|mdf|Япононь кяль|mg|Fiteny japôney|mhr|Япон йылме|min|Bahaso Japang|mi|Reo Hapani|mk|Јапонски јазик|ml|ജാപ്പനീസ് ഭാഷ|mni|ꯖꯄꯥꯅꯤꯁ ꯂꯣꯟ|mn|Япон хэл|mr|जपानी भाषा|ms|Bahasa Jepun|mwl|Lhéngua japonesa|myv|Япононь кель|my|ဂျပန်ဘာသာစကား|mzn|جاپونی زوون|nds_nl|Japans|nds|Japaansche Spraak|ne|जापानी भाषा|new|जापानी भाषा|nl|Japans|nlvoyage|Taalgids Japans|nn|Japansk|nov|Japanum|no|Japansk|nso|Sejapane|oc|Japonés|olo|Japounien kieli|or|ଜାପାନୀ ଭାଷା|os|Япойнаг æвзаг|pam|Amanung Hapones|pap|Hapones (idioma)|pa|ਜਪਾਨੀ ਭਾਸ਼ਾ|pcd|Japonoés|pl|Język japoński|plbooks|Japoński|plquote|Język japoński|pms|Lenga giaponèisa|pnb|جاپانی|ps|جاپاني ژبه|pt|Língua japonesa|ptbooks|Japonês|ptvoyage|Guia de conversação japonês|qu|Hapun simi|roa_tara|Lènga giapponese|ro|Limba japoneză|rovoyage|Ghid de conversație japonez|rue|Японьскый язык|ru|Японский язык|rubooks|Японский язык|runews|Категория:Японский язык|ruversity|Японский язык|ruvoyage|Японский разговорник|rw|Ikiyapani|sah|Дьоппуон тыла|sat|ᱡᱟᱯᱟᱱᱤᱭᱟᱹ ᱯᱟᱹᱨᱥᱤ|sa|जापानी भाषा|scn|Lingua giappunisa|sco|Japanese leid|sc|Limba giaponesa|sd|جاپاني ٻولي|se|Japánagiella|shi|Tutlayt Tajapunit|sh|Japanski jezik|simple|Japanese language|si|ජපන් භාෂාව|sk|Japončina|sl|Japonščina|sm|Faʻa Iapani|sn|Chijapani|sq|Gjuha japoneze|sr|Јапански језик|su|Basa Jepang|sv|Japanska|svvoyage|Japansk parlör|sw|Kijapani|szl|Japůńsko godka|ta|சப்பானிய மொழி|tcy|ಜಪಾನಿ ಭಾಷೆ|te|జపనీస్ భాష|tg|Забони ҷопонӣ|tgbooks|Забони ҷопонӣ|th|ภาษาญี่ปุ่น|thbooks|ภาษาญี่ปุ่น|tk|Ýapon dili|tl|Wikang Hapones|tly|Japoni zyvon|tok|toki Nijon|tpi|Tokples Siapan|trv|Kari Tanah Tunux|tr|Japonca|trbooks|Japonca|tt|Япон теле|tyv|Япон дыл|ty|Reo Tāpōnē|udm|Япон кыл|ug|ياپونچە|uk|Японська мова|ukbooks|Японська мова|ur|جاپانی زبان|uz|Yapon tili|vec|Łéngua japoneza|vep|Japonan kel'|vi|Tiếng Nhật|viquote|Tiếng Nhật|vivoyage|Sổ tay tiếng Nhật|vo|Yapänapük|war|Hinapon|wa|Djaponès (lingaedje)|functions|Z1830|wuu|日本闲话|xal|Нипонмудн келн|xmf|იაპონური ნინა|yi|יאפאניש|yo|Èdè Japaní|za|Vah Nyiedbonj|zgh|ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵏⵉⴱⵓⵏⵜ|zh_classical|日語|zh_min_nan|Ji̍t-pún-gí|zh_yue|日文|zh|日语|zhbooks|日语|zhvoyage|日语会话手册|zu|IsiJapani|qid=Q5287}}
+
+== image (P18) ==
+
+* 火男火売神社 下宮拝殿.jpg
+
+== dedicated to (P825) ==
+
+* {{ill|Izanagi and Izanami|lt=Izanagi and Izanami|be|Ідзанакі і Ідзанамі|de|Izanagi und Izanami|eu|Izanagi eta Izanami|nl|Izanagi en Izanami|pl|Izanami i Izanagi|qid=Q12259961}}<ref>https://honomejinja.jp/#rekisi</ref>
+* {{ill|Kagu-tsuchi|ltq=Q1640658|qid=Q1640658}}<ref>https://honomejinja.jp/#rekisi</ref>
+
+== Threads username (P11892) ==
+
+* honomejinja
+
+== time of earliest written record (P1249) ==
+
+* {'time': '+0849-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 183314
+** P3831: {{ill|Kokugakuin University Shrine database|qid=Q135159299|lt=Kokugakuin University Shrine database}}
+
+== modern shrine ranking (P13723) ==
+
+* {{ill|Ken-sha|qid=Q90139226}}
+** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
+** P1534: {{ill|Shinto Directive|fa|بخشنامه شینتو|fr|Directive shinto|id|Pengarahan Shinto|ja|神道指令|zh|神道指令|qid=Q3029647}}
+
+== P14005 (P14005) ==
+
+* {{ill|Unranked|lt=Unranked|ja|无位|qid=Q11504610}}
+* {{ill|Junior Fifth Rank|ltq=Q11071125|qid=Q11071125}}
+* {{ill|Senior Fifth Rank|ltq=Q11123280|qid=Q11123280}}
+
+== country (P17) ==
+
+* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17}}
+
+== Instagram username (P2003) ==
+
+* honomejinja
+
+== Facebook username (P2013) ==
+
+* jinja.beppuonsen
+
+== VIAF cluster ID (P214) ==
+
+* 253016176
+
+== Corporate Number (Japan) (P3225) ==
+
+* 3320005002898
+
+== NDL Authority ID (P349) ==
+
+* 00825548
+
+== Commons category (P373) ==
+
+* Honoohonome-jinja
+
+== has part(s) (P527) ==
+
+* {{ill|Engishiki seat|qid=Q135018062|lt=Engishiki seat}}
+** P1114: {'amount': '+2', 'unit': '1'}
+* {{ill|Honoo-Honome Shrine Kami-no-Miya|ltq=Q135198290|qid=Q135198290}}
+* {{ill|Honoo-Honome Shrine Nakatsu-no-Miya|ltq=Q135198292|qid=Q135198292}}
+* {{ill|Honoo-Honome Shrine Shimo-no-Miya|lt=Honoo-Honome Shrine Shimo-no-Miya|qid=Q135198293}}
+
+== street address (P6375) ==
+
+* {'text': '上宮：大分県別府市東山 中宮：大分県別府市東山一区 下宮：大分県別府市火売8-1', 'language': 'ja'}
+
+== located in/on physical feature (P706) ==
+
+* {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219}}
+
+== image of entrance (P9721) ==
+
+* 火男火女神社1.jpg
+
+{{commons category|Category:Honoohonome-jinja}}
+[[JA:火男火売神社]]
+
+{{wikidata link|Q11566947}}
+
+== Japanese content ==
+{{Shrine
+| name = Honoohonome Shrine
+| image = [[File:火男火売神社 下宮拝殿.jpg|300px]]<br/>Lower shrine haiden
+| location = Upper shrine: {{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880}}, {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924}} (Mt. Tsurumi summit)<br/>Middle shrine: Higashiyama 1-ku, Beppu<br/>Lower shrine: Hiuri 8-1, Beppu
+| coordinates = Upper shrine {{ウィキ座標2段度分秒|33|17|9.93|N|131|25|47.17|E|region:JP-44_type:landmark|name=Honoohonome Shrine Upper}}<br/>Middle shrine {{ウィキ座標2段度分秒|33|16|28.16|N|131|26|14.18|E|region:JP-44_type:landmark|name=Honoohonome Shrine Middle}}<br/>Lower shrine {{ウィキ座標2段度分秒|33|18|34.83|N|131|27|59.38|E|region:JP-44_type:landmark|name=Honoohonome Shrine Lower}}
+| deity = Different by shrine section
+| status = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (two seats)<br/>former {{ill|Q712534|lt=kensha}} (middle and lower shrines)
+| founded = (trad.) 771
+}}
+{{Commonscat|Honoohonome-jinja}}
+[[File:火男火女神社1.jpg|thumb|250px|right|Torii]]
+'''Honoohonome Shrine''' (火男火売神社, also written 火男火賣神社) is a Shinto shrine complex in {{ill|Beppu|ar|بيبو (أويتا)|azb|بپو، اوئیتا|ca|Beppu|ce|Беппу|ceb|Beppu|cs|Beppu|de|Beppu|eo|Beppu (Oitao)|es|Beppu (Ōita)|et|Beppu|eu|Beppu (Ōita)|fa|بپو، اوئیتا|fi|Beppu|fr|Beppu|gl|Beppu|he|בפו|hu|Beppu|id|Beppu, Ōita|is|Beppu|it|Beppu|ja|別府市|ka|ბეპუ|ko|벳푸시|lt|Bepu|lv|Bepu|mg|Beppu|ms|Beppu|mzn|بپو، اوئیتا|nl|Beppu|no|Beppu|pl|Beppu|pt|Beppu|ro|Beppu|ru|Беппу|sc|Beppu|sh|Beppu|sr|Бепу|sv|Beppu|szl|Beppu|tg|Беппу|th|เบ็ปปุ|tl|Beppu|tr|Beppu|tt|Беппу|tum|Beppu|uk|Беппу|ur|بیپو|uz|Beppu|vi|Beppu, Ōita|war|Beppu, Ōita|zh|別府市|zh_classical|別府市|zh_min_nan|Beppu-chhī|zh_yue|別府|qid=Q273880}}, {{ill|Ōita Prefecture|ace|Prefektur Oita|af|Oita-prefektuur|an|Prefectura d'Oita|ar|أويتا (محافظة)|arz|اويتا|az|Oita prefekturası|azb|اوئیتا اوستانی|ba|Оита (префектура)|ban|Préféktur Ōita|be|Оіта (прэфектура)|bg|Оита (префектура)|bn|ওওইতা প্রশাসনিক অঞ্চল|ca|Prefectura d'Ōita|cdo|Ōita-gâing|ce|Оита (префектура)|ceb|Ōita Prefecture|ckb|پارێزگای ئۆئیتا|cs|Prefektura Óita|cy|Ōita (talaith)|da|Ōita-præfekturet|de|Präfektur Ōita|eo|Gubernio Oitao|es|Prefectura de Ōita|et|Ōita prefektuur|eu|Ōita (prefektura)|fa|استان اوئیتا|fi|Ōitan prefektuuri|fr|Préfecture d'Ōita|frr|Ōita-ken|ga|Maoracht Ōita|gl|Prefectura de Ōita|hak|Ōita-yen|he|אויטה (מחוז)|hr|Ōita (prefektura)|hu|Óita prefektúra|hy|Օիտա (պրեֆեկտուրա)|id|Prefektur Ōita|ilo|Prepektura ti Ōita|it|Prefettura di Ōita|ja|大分県|ka|ოიტის პრეფექტურა|km|ខេត្តអូអ៊ីតា|ko|오이타현|la|Oitaënsis|lt|Oitos prefektūra|lv|Oitas prefektūra|mk|Оита (префектура)|mni|ꯑꯣꯢꯇꯥ ꯂꯝꯈꯥꯢ|mr|ओइता प्रांत|ms|Wilayah Ōita|ne|ओइता|nl|Ōita (prefectuur)|no|Ōita (prefektur)|os|Оитæ (префектурæ)|pl|Prefektura Ōita|pnb|ضلع اویٹا|pt|Oita|ro|Prefectura Ōita|ru|Оита (префектура)|se|Ōita prefektuvra|sh|Prefektura Ōita|si|ඕයිටා ප්‍රාන්තය|simple|Ōita Prefecture|sk|Óita (prefektúra)|sr|Префектура Оита|su|Ōita Prefecture|sv|Ōita prefektur|sw|Mkoa wa Ōita|tg|Префектураи Оита|th|จังหวัดโออิตะ|tl|Prepektura ng Ōita|tr|Ōita (prefektörlük)|tt|Оита (префектура)|uk|Префектура Оїта|ur|اوئیتا پریفیکچر|vi|Ōita|war|Ōita (prefektura)|wuu|大分县|zh|大分县|zh_classical|大分縣|zh_min_nan|Ôita-koān|zh_yue|大分縣|qid=Q133924}}. It is a shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}; under the modern system, its middle and lower shrines were prefectural shrines.
+
+The complex consists of three shrines on {{ill|Mount Tsurumi|arz|جبل مونت تسورومى|ceb|Tsurumi Dake|fr|Mont Tsurumi|ja|鶴見岳|qid=Q6924219}}: the upper shrine (okumiya) at the summit, the middle shrine ("Ontake Gongen") on the mountainside, and the lower shrine (satomiya, "Tsurumi Gongen") at the foot.
+
+=== Enshrined deities ===
+* Upper shrine: {{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Hi-no-Kagutsuchi-no-Mikoto}}, Hiyaki-hayame-no-Mikoto
+* Middle shrine: Hi-no-Kagutsuchi-no-Mikoto, Hiyaki-hayame-no-Mikoto
+* Lower shrine: {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}, {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}, Hi-no-Kagutsuchi-no-Kami, {{ill|Ōyamatsumi|Q386563|qid=Q386563|lt=Oyamazumi-no-Kami}}
+
+=== History ===
+=== Foundation ===
+Shrine tradition states the foundation was in 771 (Hoki 2).
+
+The paired deities in the shrine name, Hi-no-Kagutsuchi and Hiyaki-hayame, are interpreted as deifications of the male and female peaks of Mt. Tsurumi, a sacred mountain. The area had well-known hot springs since ancient times, but volcanic activity left much terrain difficult to use. Old texts such as the ''Bungo Fudoki'' and ''Manyoshu'' mention nearby geothermal areas; an ''Iyo Fudoki'' fragment also preserves a myth that "Hayami no Yu" from the Tsurumi foothills was connected to {{ill|Dōgo Onsen|Q1037748|qid=Q1037748}} to heal Sukunahikona.
+
+=== Historical outline ===
+The ''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}'' records that when Mt. Tsurumi erupted in 867, the court ordered the reading of the Great Prajna Sutra before this shrine. In the ''Engishiki Jinmyocho'' (927), it appears as "Honoohonome Shrine, two seats" in Hayami District, Bungo Province, and is listed with {{ill|Unaguhime Shrine|Q11449252|qid=Q11449252}} as a district shikinaisha.
+
+In 1276, {{ill|Ippen|Q1056232|qid=Q1056232}} is said to have visited Beppu and, by guidance of Tsurumi Gongen, pacified "Kuberi no Yu-no-i" and opened a stone steam bath in Kannawa (today's {{ill|Kannawa Steam Bath|Q11649634|qid=Q11649634}}). The shrine came to be revered as a guardian of the {{ill|UNKNOWN|lt=Beppu Hatto}} hot springs.
+
+In the Tensho era, shrine buildings and documents were burned during actions by Otomo Sorin. In 1664, Kurushima Michikiyo rebuilt the lower shrine.
+
+=== Court rank (Shinkai) ===
+* 849-06-01: Honoho-me deity granted Junior Fifth Rank, Lower
+* 867-02-26: Honoo deity listed as Junior Fifth Rank, Upper; Honome deity as Junior Fifth Rank, Lower
+* 867-08-16: both raised to Senior Fifth Rank, Lower
+
+=== Cultural properties ===
+=== Oita Prefecture designated tangible cultural property ===
+* Tahoto pagoda of Ontake Gongen shrine (middle shrine) - designated March 28, 1975.<ref name="cultural">[http://www.city.beppu.oita.jp/education/shogaigakusyuuka/bunkazai.htm Beppu City designated cultural properties] (Beppu City Lifelong Learning Division).</ref>
+
+=== Oita Prefecture designated natural monuments ===
+* Ichiigashi forest of Tsurumi Gongen shrine (lower shrine) - designated March 28, 1975.<ref name="cultural"/>
+* Natural forest of Ontake Gongen shrine (middle shrine) - designated March 28, 1975.<ref name="cultural"/>
+
+The shrine forest (Beppu, Tsurumi) was also designated a special protected forest on March 15, 1974.
+
+=== Site information ===
+'''Locations'''
+* Upper shrine: summit of Mt. Tsurumi, Higashiyama, Beppu
+* Middle shrine: mountainside of Mt. Tsurumi, Higashiyama 1-ku, Beppu
+* Lower shrine: Hiuri 8-1, foothills of Mt. Tsurumi, Beppu
+
+=== Notes ===
+{{脚注ヘルプ}}
+'''Primary texts''': introduced for source tracing.
+{{reflist|group="原"}}
+
+'''References'''
+{{reflist}}
+
+=== Related literature ===
+{{座標一覧}}
+* [https://cir.nii.ac.jp/crid/1050845762582671744 Sakuo Abe, "On Honoohonome Shrine: Guardian deity of Beppu hot springs"] (CiNii)
+
+{{神道 横}}
+{{Normdaten}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Hinokuma Hime Shrine]][[Category:Shikinaisha|Hinokuma Hime Shrine]][[Category:Shikinaisha|Hinokuma Hime Shrine]][[Category:onsen shrine]]
+[[Category:Onsen Shrines]][[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:qqqq]]
 [[Category:Buildings and structures in Beppu City]]
 [[Category:Former Prefectural Shrines in Oita Prefecture]]
 [[Category:History of Beppu City]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Onsen Shrines]]
 [[Category:Shikinaisha in Bungo Province]]
 [[Category:Shinto shrines in Ōita Prefecture]]
@@ -120,10 +500,12 @@ Furthermore, the forest of Hinohonome Shrine (Tsurumi, Beppu City) was designate
 [[Category:Junior Fifth Rank]]
 [[Category:Senior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
-[[Category:Wikidata generated shikinaisha pages|Hinokuma Hime Shrine]]
-[[Category:Shikinaisha|Hinokuma Hime Shrine]]
-[[Category:onsen shrine]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Bungo Province]]
+[[Category:Shinto shrines in Ōita Prefecture]]
 [[Category:Oita Prefecture designated tangible cultural property]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:qqqq]]
+[[Category:Buildings and structures in Beppu, Oita]]
+[[Category:History of Beppu]]
+[[Category:Shikinaisha in Bungo Province]]
+[[Category:Former Prefectural Shrines in Oita Prefecture]]

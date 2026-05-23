@@ -1,4 +1,5 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsuma_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name= Tsuma Shrine
 | religious_affiliation = [[Shinto]]
@@ -6,35 +7,48 @@
 |location= {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}} {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}} Oaza Tsuma 1
 |ISO= JP-45
 |coordinates= {{coord|32|06|55.01|N|131|24|15.23|E|display=inline}}
-|deity= {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|qq=}}
-|type= {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} (small), {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} (disputed), Second Shrine (disputed), {{ill|Former Prefectural Shrine|ja|旧県社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Former Prefectural Shrine|qq=}}
+|deity= {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime}}
+|type= {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} (small), {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} (disputed), Second Shrine (disputed), {{ill|Former Prefectural Shrine|ja|旧県社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Former Prefectural Shrine}}
 |Established= Unknown
 |festival= {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}}
 |Rituals= Kōrōsai ({{ill|July 7|en|July 7|qid=Q2694|lt=July 7}})
 |Map= Japan Miyazaki
 }}
+
 [[File:Tsuma-jinja entrance.JPG|thumb|200px|right|Torii gate]]
-'''Tsuma Shrine''' (都萬神社 or 都万神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}, Japan. It is a {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha|qq=}} and is associated with the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} and the second shrine of {{ill|Hyūga Province|en|Hyūga Province|qid=Q513737|lt=Hyūga Province}}. Known locally as "Saimansama," it is beloved by the community.<ref name="mppf">[https://mppf.or.jp/wpsys/wp-content/themes/mppf/docs/saito/marukajiriMapP18.pdf 西都まるかじりマップ・西都周遊マップ (pp.18-22)] Miyazaki Parks Association, retrieved November 26, 2024.</ref>
+'''Tsuma Shrine''' (都萬神社 or 都万神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}, Japan. It is a {{ill|Shikinaisha|ja|式内社|2=ja|3=式内社|qq=draft|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikinaisha}} and is associated with the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} and the second shrine of {{ill|Hyūga Province|en|Hyūga Province|qid=Q513737|lt=Hyūga Province}}. Known locally as "Saimansama," it is beloved by the community.<ref name="mppf">[https://mppf.or.jp/wpsys/wp-content/themes/mppf/docs/saito/marukajiriMapP18.pdf 西都まるかじりマップ・西都周遊マップ (pp.18-22)] Miyazaki Parks Association, retrieved November 26, 2024.</ref>
+
 == name ==
-The name "Tsuma" (都萬 or 都万) is believed to mean "wife" (妻) and refers to the connection between the shrine's deity, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|qq=}}, and her husband, {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}.<ref name="mppf"/> Locally, the shrine is also affectionately called "Osensama," a derivation of "Saiman."<ref name="神々">From the entry on Tsuma Shrine in ''Japanese Gods''.</ref>
+The name "Tsuma" (都萬 or 都万) is believed to mean "wife" (妻) and refers to the connection between the shrine's deity, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime}}, and her husband, {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}.<ref name="mppf"/> Locally, the shrine is also affectionately called "Osensama," a derivation of "Saiman."<ref name="神々">From the entry on Tsuma Shrine in ''Japanese Gods''.</ref>
+
 == Deities ==
-* '''{{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|qq=}}''' (Konohanasakuya-hime-no-Mikoto)<ref name="mppf"/><ref>The shrine's official records.</ref>
+* '''{{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime}}''' (Konohanasakuya-hime-no-Mikoto)<ref name="mppf"/><ref>The shrine's official records.</ref>
 *: The name "Tsuma" reflects her role as the wife of Ninigi-no-Mikoto, and legend holds that this location was the site of their newlywed life.<ref name="mppf"/>
 *: A legend claims that, due to a lack of breast milk, she made {{ill|Amazake|en|Amazake|qid=Q455990|lt=Amazake}}, leading to the claim that this is the birthplace of Japanese sake brewing.<ref name="mppf"/> A nearby settlement, "Sakaguchi" (酒元), further supports this claim.<ref name="mppf"/>
+
 Some theories propose that the enshrined deity may instead be Kokutsu-hime-no-Mikoto.
+
 == History ==
 === Foundation ===
-The founding date is unknown, but the surrounding area is rich with legends of {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|qq=}} and {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}'s life together. Nearby are significant historical sites such as the {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofun Cluster}}, one of Japan's most important ancient Kofun clusters, as well as the proposed location of the Hyūga provincial office and regional rice storehouses.<ref name="神々"/>
-According to the genealogical records of the {{ill|Kusakabe clan|ja|日下部氏|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)|qq=}}, the shrine was founded by "Kusakabe Tatsutsugi," who worshipped the deity of "Tsuma Myōjin" during Ninigi-no-Mikoto's descent from heaven.<ref>''History of Saito,'' compiled by the Saito Historical Compilation Committee, 1976.</ref>
+The founding date is unknown, but the surrounding area is rich with legends of {{ill|Konohanasakuya-hime|ja|木花開耶姫命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime}} and {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}'s life together. Nearby are significant historical sites such as the {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofun Cluster}}, one of Japan's most important ancient Kofun clusters, as well as the proposed location of the Hyūga provincial office and regional rice storehouses.<ref name="神々"/>
+
+According to the genealogical records of the {{ill|Kusakabe clan|ja|日下部氏|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, the shrine was founded by "Kusakabe Tatsutsugi," who worshipped the deity of "Tsuma Myōjin" during Ninigi-no-Mikoto's descent from heaven.<ref>''History of Saito,'' compiled by the Saito Historical Compilation Committee, 1976.</ref>
+
 Since the time of {{ill|Motoori Norinaga|en|Motoori Norinaga|qid=Q384647|lt=Motoori Norinaga}}, the name "Tsuma" has been linked with the "Toma Province" mentioned in the ''{{ill|Wajinden|en|Wajinden|qid=Q1135798|lt=Gishiwajinden}}.'' However, this theory remains unconfirmed.<ref name="神々"/>
+
 === Historical Overview ===
-The first mention of the shrine in historical records is from ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Zoku Nihon Kōki}}'' (837 CE), which refers to "Tsuma Shrine" being designated as an official government shrine. The shrine's Rank rose to {{ill|Junior Fourth Rank|ja|従四位下|Junior Fourth Rank=Junior Fourth Rank|lt=Junior Fourth Rank, Lower Grade|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Junior Fourth Rank|qq=}} in 858 CE.
+The first mention of the shrine in historical records is from ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Zoku Nihon Kōki}}'' (837 CE), which refers to "Tsuma Shrine" being designated as an official government shrine. The shrine's Rank rose to {{ill|Junior Fourth Rank|ja|従四位下|Junior Fourth Rank=Junior Fourth Rank|lt=Junior Fourth Rank, Lower Grade|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Junior Fourth Rank}} in 858 CE.
+
 In the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}, the shrine is listed as a minor shrine in Hyūga Province's Koyu District. It is believed to have served as a provincial {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} due to its location near the provincial office and its role as the site of multiple deities' worship.<ref name="地名"/> Some records also suggest it was revered as Hyūga's second shrine.<ref name="地名"/>
-The {{ill|Kusakabe clan|ja|日下部氏|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)|qq=}}, who served as both the provincial administrators and shrine priests, maintained significant influence over the shrine. However, during the medieval period, the shrine came under the patronage of the {{ill|Itō clan|en|Itō clan|qid=Q2975280|lt=Itō clan}}.<ref name="地名"/> 
-In 1873 (Meiji 6), the shrine was officially designated as a {{ill|Prefectural Shrine|ja|県社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prefectural Shrine|qq=}} under the modern shrine Ranking system.
+
+The {{ill|Kusakabe clan|ja|日下部氏|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, who served as both the provincial administrators and shrine priests, maintained significant influence over the shrine. However, during the medieval period, the shrine came under the patronage of the {{ill|Itō clan|en|Itō clan|qid=Q2975280|lt=Itō clan}}.<ref name="地名"/> 
+
+In 1873 (Meiji 6), the shrine was officially designated as a {{ill|Prefectural Shrine|ja|県社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prefectural Shrine}} under the modern shrine Ranking system.
+
 === Historical types ===
 * 837 CE: Designated as a government shrine (''Zoku Nihon Kōki'').
 * 858 CE: Promoted to Junior Fourth Rank, Lower Grade (''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'').
+
 == Grounds ==
 <gallery>
 File:Tsuma-jinja honden.JPG|Main Hall
@@ -42,53 +56,82 @@ File:Tsuma-jinja haiden-diagonal view.jpg|Haiden (worship hall)
 File:Tsuma-jinja ishibashi.JPG|Stone Bridge
 File:Tsuma-jinja ichinotorii.JPG|First Torii Gate
 </gallery>
+
 == Sub-Shrines ==
 * '''Ōyamazumi Shrine''' - Enshrines Ōyama-tsumi-no-Mikoto.
 * '''Yasaka Shrine''' - Enshrines Susanoo-no-Mikoto.
 * '''Kirishima Shrine''' - Enshrines Ninigi-no-Mikoto.
 * '''Shisho Shrine''' - Enshrines Iwanagahime-no-Mikoto and three others.
 * '''Inari Shrine''' - Enshrines Ukanomitama-no-Mikoto.
+
 <gallery>
 File:Tsuma-jinja Ooyamazumi-jinja.JPG|Ōyamazumi Shrine
 File:Tsuma-jinja Yasaka-jinja.JPG|Yasaka Shrine
 </gallery>
+
 == Festivals ==
 * {{ill|January 1|en|January 1|qid=Q2150|lt=January 1}} - New Year's Festival
 * {{ill|June 30|en|June 30|qid=Q2657|lt=June 30}} - Ōharae (Great Purification)
 * {{ill|July 7|en|July 7|qid=Q2694|lt=July 7}} - Kōrōsai (special ceremony reenacting Konohanasakuya-hime's bridal journey)<ref name="地名"/>
 * {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}} - festival
-* {{ill|Traditional Lunar Calendar November 2|ja|Lunisolar November2日|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Traditional Lunar Calendar November 2|qq=}} - Chinka Festival (Fire Pacification)
+* {{ill|Traditional Lunar Calendar November 2|ja|Lunisolar November2日|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Traditional Lunar Calendar November 2}} - Chinka Festival (Fire Pacification)
 * {{ill|December 31|en|December 31|qid=Q2912|lt=December 31}} - Ōharae and Year-End Festival
+
 == Cultural Properties ==
 === National Natural Monument ===
 [[File:Tsuma-jinja kusunoki.JPG|thumb|180px|right|Tsuma no Kusu (National Natural Monument)]]
 * '''Tsuma no Kusu''' - A camphor tree approximately 1,200 years old and 40 meters tall. Designated in 1951 (Showa 26).<ref>[http://www.city.saito.miyazaki.jp/contents/syakai/bunkazai/tennen/1.html Tsuma no Kusu - Saito City Cultural Assets].</ref>
+
 == Visitor Information ==
 '''Address'''
 * Oaza Tsuma 1, {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}
+
 '''Access'''
-* {{ill|Miyazaki Kotsu Bus|ja|宮崎交通|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Miyazaki Kotsu Bus|qq=}} - Alight at "Tsuma Shrine-mae" bus stop (short walk).
+* {{ill|Miyazaki Kotsu Bus|ja|宮崎交通|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Miyazaki Kotsu Bus}} - Alight at "Tsuma Shrine-mae" bus stop (short walk).
 * Approximately 12 minutes on foot from the Saito Bus Center.
+
 '''Nearby Attractions'''
-* {{ill|Sakuragawa River|ja|桜川|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Sakuragawa River|qq=}} - Featured in the Noh play ''Sakuragawa.''<ref name="mppf"/>
-* {{ill|Hyūga Kokubun-ji|ja|日向国分寺|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hyūga Kokubun-ji|qq=}}
+* {{ill|Sakuragawa River|ja|桜川|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Sakuragawa River}} - Featured in the Noh play ''Sakuragawa.''<ref name="mppf"/>
+* {{ill|Hyūga Kokubun-ji|ja|日向国分寺|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hyūga Kokubun-ji}}
 * {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofuns}}
-* {{ill|Kiki no Michi|ja|記紀の道|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kiki no Michi|qq=}}
+* {{ill|Kiki no Michi|ja|記紀の道|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kiki no Michi}}
+
 == References ==
+
 {{reflist}}
+
 == Bibliography ==
 * Shrine's historical pamphlets
 * ''Miyazaki Prefecture Place names,'' Heibonsha, entry on Tsuma Shrine.
 * Akira Nakamaura, ''Tsuma Shrine'' (in ''Japanese Gods: Shrines and Sacred Sites, Volume 1 - Kyushu,'' Kenichi Tanigawa, editor, Hakusuisha).
 * {{Cite book|editor=Medieval Provincial Sōja Research Group|title=The Fundamental Study of Medieval Provincial Sōja|publisher=Iwata Shoin|year=2000|isbn=978-4872941708}}
+
 == External Links ==
 {{Commonscat|Tsuma-jinja}}
 * [https://tsumajinja.webnode.jp/ Tsuma Shrine Official Website]
 * [http://21coe.kokugakuin.ac.jp/db/jinja/640201.html Tsuma Shrine] - Kokugakuin University’s Shinto and Shrine Historical Data Collection.
+
 {{Shinto Horizontal}}
+
+ 
+
 {{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
 {{Source Wikipedia}}
+
 {{Sōja shrines}}
+
+{{translated page|ja|都萬神社|version=102717956|comment=Imported full ja history}}
+
+{{draft categories|
+
+}}
+
+[[every:Tsuma Shrine|Tsuma Shrine]]
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tsuma Shrine (Q3541658)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hyūga Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -97,25 +140,294 @@ File:Tsuma-jinja Yasaka-jinja.JPG|Yasaka Shrine
 | {{ill|Koyu District, Miyazaki|en|Koyu District, Miyazaki|ja|児湯郡|ceb|Kōyu-gun|fr|District de Koyu|id|Distrik Koyu, Miyazaki|it|Distretto di Koyu|ko|고유군|pl|Powiat Koyu|sr|Област Коју|zh-yue|兒湯郡|zh|兒湯郡|lt=Koyu district|qid=Q1132169}} || {{ill|Tsuma Shrine|lt=Tsuma Shrine|ja|都萬神社|commons|Category:Tsuma-jinja|fr|Tsuma-jinja|simple|Tsuma Shrine|qid=Q3541658}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}}, {{ill|Sōja shrine|qid=Q1107129|lt=sōja}} || — || {{coord|32.115318|131.404433|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183325 DB]
 |}
 
-{{translated page|ja|都萬神社|version=102717956|comment=Imported full ja history}}
-{{draft categories|
-}}
-[[every:Tsuma Shrine|Tsuma Shrine]]
+{{wikidata link|Q3541658|simple|Tsuma Shrine|every|Tsuma Shrine|simple|user:immanuelle/Tsuma Shrine|co|commons:Category:Tsuma-jinja|ja|都萬神社|fr|Tsuma-jinja|check_date=2026-05-12}}
 
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name= Tsuma Shrine
+| religious_affiliation = [[Shinto]]
+|image= File:Tsuma-jinja haiden-front view.jpg
+|location= {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}} {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}} Oaza Tsuma 1
+|ISO= JP-45
+|coordinates= {{Coord|32.115|N|131.404167}}
+|deity= {{ill|Konohanasakuya-hime|qid=Q1781862}}
+|type= {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small), {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} (disputed), Second Shrine (disputed), {{ill|Modern system of ranked Shinto shrines|ja|旧県社|12=simple|13=User:Immanuelle/Former village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
+|Established= Unknown
+|festival= {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}}
+|Rituals= Kōrōsai ({{ill|July 7|en|July 7|qid=Q2694|lt=July 7}})
+|Map= Japan Miyazaki
+|prefecture= {{ill|Saito, Miyazaki|qid=Q850479}}
+}}
+
+[[File:Tsuma-jinja entrance.JPG|thumb|200px|right|Torii gate]]
+'''Tsuma Shrine''' (都萬神社 or 都万神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}, Japan. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and is associated with the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} and the second shrine of {{ill|Hyūga Province|en|Hyūga Province|qid=Q513737|lt=Hyūga Province}}. Known locally as "Saimansama," it is beloved by the community.<ref name="mppf">[https://mppf.or.jp/wpsys/wp-content/themes/mppf/docs/saito/marukajiriMapP18.pdf 西都まるかじりマップ・西都周遊マップ (pp.18-22)] Miyazaki Parks Association, retrieved November 26, 2024.</ref>
+
+== name ==
+The name "Tsuma" (都萬 or 都万) is believed to mean "wife" (妻) and refers to the connection between the shrine's deity, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}, and her husband, {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}.<ref name="mppf"/> Locally, the shrine is also affectionately called "Osensama," a derivation of "Saiman."<ref name="神々">From the entry on Tsuma Shrine in ''Japanese Gods''.</ref>
+
+== Deities ==
+* '''{{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}''' (Konohanasakuya-hime-no-Mikoto)<ref name="mppf"/><ref>The shrine's official records.</ref>
+*: The name "Tsuma" reflects her role as the wife of Ninigi-no-Mikoto, and legend holds that this location was the site of their newlywed life.<ref name="mppf"/>
+*: A legend claims that, due to a lack of breast milk, she made {{ill|Amazake|en|Amazake|qid=Q455990|lt=Amazake}}, leading to the claim that this is the birthplace of Japanese sake brewing.<ref name="mppf"/> A nearby settlement, "Sakaguchi" (酒元), further supports this claim.<ref name="mppf"/>
+
+Some theories propose that the enshrined deity may instead be Kokutsu-hime-no-Mikoto.
+
+== History ==
+=== Foundation ===
+The founding date is unknown, but the surrounding area is rich with legends of {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}} and {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}'s life together. Nearby are significant historical sites such as the {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofun Cluster}}, one of Japan's most important ancient Kofun clusters, as well as the proposed location of the Hyūga provincial office and regional rice storehouses.<ref name="神々"/>
+
+According to the genealogical records of the {{ill|Kusakabe clan|ja|日下部氏|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, the shrine was founded by "Kusakabe Tatsutsugi," who worshipped the deity of "Tsuma Myōjin" during Ninigi-no-Mikoto's descent from heaven.<ref>''History of Saito,'' compiled by the Saito Historical Compilation Committee, 1976.</ref>
+
+Since the time of {{ill|Motoori Norinaga|en|Motoori Norinaga|qid=Q384647|lt=Motoori Norinaga}}, the name "Tsuma" has been linked with the "Toma Province" mentioned in the ''{{ill|Wajinden|en|Wajinden|qid=Q1135798|lt=Gishiwajinden}}.'' However, this theory remains unconfirmed.<ref name="神々"/>
+
+=== Historical Overview ===
+The first mention of the shrine in historical records is from ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Zoku Nihon Kōki}}'' (837 CE), which refers to "Tsuma Shrine" being designated as an official government shrine. The shrine's Rank rose to {{ill|Junior Fourth Rank|ja|従四位下|Junior Fourth Rank=Junior Fourth Rank|lt=Junior Fourth Rank, Lower Grade|12=simple|13=User:Immanuelle/Junior Fourth Rank|ja_comment=jawiki redirects to 従四位}} in 858 CE.
+
+In the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}, the shrine is listed as a minor shrine in Hyūga Province's Koyu District. It is believed to have served as a provincial {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} due to its location near the provincial office and its role as the site of multiple deities' worship.<ref name="地名"/> Some records also suggest it was revered as Hyūga's second shrine.<ref name="地名"/>
+
+The {{ill|Kusakabe clan|ja|日下部氏|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, who served as both the provincial administrators and shrine priests, maintained significant influence over the shrine. However, during the medieval period, the shrine came under the patronage of the {{ill|Itō clan|en|Itō clan|qid=Q2975280|lt=Itō clan}}.<ref name="地名"/> 
+
+In 1873 (Meiji 6), the shrine was officially designated as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine Ranking system.
+
+=== Historical types ===
+* 837 CE: Designated as a government shrine (''Zoku Nihon Kōki'').
+* 858 CE: Promoted to Junior Fourth Rank, Lower Grade (''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'').
+
+== Grounds ==
+<gallery>
+File:Tsuma-jinja honden.JPG|Main Hall
+File:Tsuma-jinja haiden-diagonal view.jpg|Haiden (worship hall)
+File:Tsuma-jinja ishibashi.JPG|Stone Bridge
+File:Tsuma-jinja ichinotorii.JPG|First Torii Gate
+</gallery>
+
+== Sub-Shrines ==
+* '''Ōyamazumi Shrine''' - Enshrines Ōyama-tsumi-no-Mikoto.
+* '''Yasaka Shrine''' - Enshrines Susanoo-no-Mikoto.
+* '''Kirishima Shrine''' - Enshrines Ninigi-no-Mikoto.
+* '''Shisho Shrine''' - Enshrines Iwanagahime-no-Mikoto and three others.
+* '''Inari Shrine''' - Enshrines Ukanomitama-no-Mikoto.
+
+<gallery>
+File:Tsuma-jinja Ooyamazumi-jinja.JPG|Ōyamazumi Shrine
+File:Tsuma-jinja Yasaka-jinja.JPG|Yasaka Shrine
+</gallery>
+
+== Festivals ==
+* {{ill|January 1|en|January 1|qid=Q2150|lt=January 1}} - New Year's Festival
+* {{ill|June 30|en|June 30|qid=Q2657|lt=June 30}} - Ōharae (Great Purification)
+* {{ill|July 7|en|July 7|qid=Q2694|lt=July 7}} - Kōrōsai (special ceremony reenacting Konohanasakuya-hime's bridal journey)<ref name="地名"/>
+* {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}} - festival
+* {{ill|Traditional Lunar Calendar November 2|ja|Lunisolar November2日|12=simple|13=User:Immanuelle/Traditional Lunar Calendar November 2|ja_comment=jawiki link invalid}} - Chinka Festival (Fire Pacification)
+* {{ill|December 31|en|December 31|qid=Q2912|lt=December 31}} - Ōharae and Year-End Festival
+
+== Cultural Properties ==
+=== National Natural Monument ===
+[[File:Tsuma-jinja kusunoki.JPG|thumb|180px|right|Tsuma no Kusu (National Natural Monument)]]
+* '''Tsuma no Kusu''' - A camphor tree approximately 1,200 years old and 40 meters tall. Designated in 1951 (Showa 26).<ref>[http://www.city.saito.miyazaki.jp/contents/syakai/bunkazai/tennen/1.html Tsuma no Kusu - Saito City Cultural Assets].</ref>
+
+== Visitor Information ==
+'''Address'''
+* Oaza Tsuma 1, {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}
+
+'''Access'''
+* {{ill|Miyazaki Kotsu|ja|宮崎交通|12=simple|13=User:Immanuelle/Miyazaki Kotsu Bus|comment=changed title based on wikidata|qid=Q11454180}} - Alight at "Tsuma Shrine-mae" bus stop (short walk).
+* Approximately 12 minutes on foot from the Saito Bus Center.
+
+'''Nearby Attractions'''
+* {{ill|Q11538014|ja|桜川|12=simple|13=User:Immanuelle/Sakuragawa River|comment=changed title based on wikidata|qid=Q11538014}} - Featured in the Noh play ''Sakuragawa.''<ref name="mppf"/>
+* {{ill|Hyūga Kokubun-ji|ja|日向国分寺|12=simple|13=User:Immanuelle/Hyūga Kokubun-ji|ja_comment=jawiki redirects to 日向国分寺跡|comment=changed title based on wikidata|qid=Q11505107}}
+* {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofuns}}
+* {{ill|Kiki no Michi|ja|記紀の道|12=simple|13=User:Immanuelle/Kiki no Michi|comment=changed title based on wikidata|qid=Q63214841}}
+
+== References ==
+
+{{reflist}}
+
+== Bibliography ==
+* Shrine's historical pamphlets
+* ''Miyazaki Prefecture Place names,'' Heibonsha, entry on Tsuma Shrine.
+* Akira Nakamaura, ''Tsuma Shrine'' (in ''Japanese Gods: Shrines and Sacred Sites, Volume 1 - Kyushu,'' Kenichi Tanigawa, editor, Hakusuisha).
+* {{Cite book|editor=Medieval Provincial Sōja Research Group|title=The Fundamental Study of Medieval Provincial Sōja|publisher=Iwata Shoin|year=2000|isbn=978-4872941708}}
+
+== External Links ==
+{{Commonscat|Tsuma-jinja}}
+* [https://tsumajinja.webnode.jp/ Tsuma Shrine Official Website]
+* [http://21coe.kokugakuin.ac.jp/db/jinja/640201.html Tsuma Shrine] - Kokugakuin University’s Shinto and Shrine Historical Data Collection.
+
+{{Shinto Horizontal}}
+
+ 
+
+{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
+
+{{Sōja shrines}}
+
+{{translated page|ja|都萬神社|version=102717956|comment=Imported full ja history}}
+
+{{everybodywiki link|Tsuma Shrine}}
+
+{{everybodywiki link|Tsuma Shrine|Tsuma Shrine}}
+
+{{Commons category|Tsuma-jinja}}
+
+{{wikidata link|Q3541658}}
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name= Tsuma Shrine
+| religious_affiliation = [[Shinto]]
+|image= File:Tsuma-jinja haiden-front view.jpg
+|location= {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}} {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}} Oaza Tsuma 1
+|ISO= JP-45
+|coordinates= {{Coord|32.115|N|131.404167}}
+|deity= {{ill|Konohanasakuya-hime|qid=Q1781862}}
+|type= {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small), {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} (disputed), Second Shrine (disputed), {{ill|Modern system of ranked Shinto shrines|ja|旧県社|12=simple|13=User:Immanuelle/Former village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
+|Established= Unknown
+|festival= {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}}
+|Rituals= Kōrōsai ({{ill|July 7|en|July 7|qid=Q2694|lt=July 7}})
+|Map= Japan Miyazaki
+|prefecture= {{ill|Saito, Miyazaki|qid=Q850479}}
+}}
+
+[[File:Tsuma-jinja entrance.JPG|thumb|200px|right|Torii gate]]
+'''Tsuma Shrine''' (都萬神社 or 都万神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}, Japan. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and is associated with the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} and the second shrine of {{ill|Hyūga Province|en|Hyūga Province|qid=Q513737|lt=Hyūga Province}}. Known locally as "Saimansama," it is beloved by the community.<ref name="mppf">[https://mppf.or.jp/wpsys/wp-content/themes/mppf/docs/saito/marukajiriMapP18.pdf 西都まるかじりマップ・西都周遊マップ (pp.18-22)] Miyazaki Parks Association, retrieved November 26, 2024.</ref>
+
+== name ==
+The name "Tsuma" (都萬 or 都万) is believed to mean "wife" (妻) and refers to the connection between the shrine's deity, {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}, and her husband, {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}.<ref name="mppf"/> Locally, the shrine is also affectionately called "Osensama," a derivation of "Saiman."<ref name="神々">From the entry on Tsuma Shrine in ''Japanese Gods''.</ref>
+
+== Deities ==
+* '''{{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}''' (Konohanasakuya-hime-no-Mikoto)<ref name="mppf"/><ref>The shrine's official records.</ref>
+*: The name "Tsuma" reflects her role as the wife of Ninigi-no-Mikoto, and legend holds that this location was the site of their newlywed life.<ref name="mppf"/>
+*: A legend claims that, due to a lack of breast milk, she made {{ill|Amazake|en|Amazake|qid=Q455990|lt=Amazake}}, leading to the claim that this is the birthplace of Japanese sake brewing.<ref name="mppf"/> A nearby settlement, "Sakaguchi" (酒元), further supports this claim.<ref name="mppf"/>
+
+Some theories propose that the enshrined deity may instead be Kokutsu-hime-no-Mikoto.
+
+== History ==
+=== Foundation ===
+The founding date is unknown, but the surrounding area is rich with legends of {{ill|Konohanasakuya-hime|ja|木花開耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}} and {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi-no-Mikoto}}'s life together. Nearby are significant historical sites such as the {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofun Cluster}}, one of Japan's most important ancient Kofun clusters, as well as the proposed location of the Hyūga provincial office and regional rice storehouses.<ref name="神々"/>
+
+According to the genealogical records of the {{ill|Kusakabe clan|ja|日下部氏|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, the shrine was founded by "Kusakabe Tatsutsugi," who worshipped the deity of "Tsuma Myōjin" during Ninigi-no-Mikoto's descent from heaven.<ref>''History of Saito,'' compiled by the Saito Historical Compilation Committee, 1976.</ref>
+
+Since the time of {{ill|Motoori Norinaga|en|Motoori Norinaga|qid=Q384647|lt=Motoori Norinaga}}, the name "Tsuma" has been linked with the "Toma Province" mentioned in the ''{{ill|Wajinden|en|Wajinden|qid=Q1135798|lt=Gishiwajinden}}.'' However, this theory remains unconfirmed.<ref name="神々"/>
+
+=== Historical Overview ===
+The first mention of the shrine in historical records is from ''{{ill|Shoku Nihon Kōki|en|Shoku Nihon Kōki|qid=Q1041301|lt=Zoku Nihon Kōki}}'' (837 CE), which refers to "Tsuma Shrine" being designated as an official government shrine. The shrine's Rank rose to {{ill|Junior Fourth Rank|ja|従四位下|Junior Fourth Rank=Junior Fourth Rank|lt=Junior Fourth Rank, Lower Grade|12=simple|13=User:Immanuelle/Junior Fourth Rank|ja_comment=jawiki redirects to 従四位}} in 858 CE.
+
+In the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}, the shrine is listed as a minor shrine in Hyūga Province's Koyu District. It is believed to have served as a provincial {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} due to its location near the provincial office and its role as the site of multiple deities' worship.<ref name="地名"/> Some records also suggest it was revered as Hyūga's second shrine.<ref name="地名"/>
+
+The {{ill|Kusakabe clan|ja|日下部氏|12=simple|13=User:Immanuelle/Kusakabe clan (Hyūga Province)}}, who served as both the provincial administrators and shrine priests, maintained significant influence over the shrine. However, during the medieval period, the shrine came under the patronage of the {{ill|Itō clan|en|Itō clan|qid=Q2975280|lt=Itō clan}}.<ref name="地名"/> 
+
+In 1873 (Meiji 6), the shrine was officially designated as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine Ranking system.
+
+=== Historical types ===
+* 837 CE: Designated as a government shrine (''Zoku Nihon Kōki'').
+* 858 CE: Promoted to Junior Fourth Rank, Lower Grade (''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'').
+
+== Grounds ==
+<gallery>
+File:Tsuma-jinja honden.JPG|Main Hall
+File:Tsuma-jinja haiden-diagonal view.jpg|Haiden (worship hall)
+File:Tsuma-jinja ishibashi.JPG|Stone Bridge
+File:Tsuma-jinja ichinotorii.JPG|First Torii Gate
+</gallery>
+
+== Sub-Shrines ==
+* '''Ōyamazumi Shrine''' - Enshrines Ōyama-tsumi-no-Mikoto.
+* '''Yasaka Shrine''' - Enshrines Susanoo-no-Mikoto.
+* '''Kirishima Shrine''' - Enshrines Ninigi-no-Mikoto.
+* '''Shisho Shrine''' - Enshrines Iwanagahime-no-Mikoto and three others.
+* '''Inari Shrine''' - Enshrines Ukanomitama-no-Mikoto.
+
+<gallery>
+File:Tsuma-jinja Ooyamazumi-jinja.JPG|Ōyamazumi Shrine
+File:Tsuma-jinja Yasaka-jinja.JPG|Yasaka Shrine
+</gallery>
+
+== Festivals ==
+* {{ill|January 1|en|January 1|qid=Q2150|lt=January 1}} - New Year's Festival
+* {{ill|June 30|en|June 30|qid=Q2657|lt=June 30}} - Ōharae (Great Purification)
+* {{ill|July 7|en|July 7|qid=Q2694|lt=July 7}} - Kōrōsai (special ceremony reenacting Konohanasakuya-hime's bridal journey)<ref name="地名"/>
+* {{ill|November 19|en|November 19|qid=Q3026|lt=November 19}} - festival
+* {{ill|Traditional Lunar Calendar November 2|ja|Lunisolar November2日|12=simple|13=User:Immanuelle/Traditional Lunar Calendar November 2|ja_comment=jawiki link invalid}} - Chinka Festival (Fire Pacification)
+* {{ill|December 31|en|December 31|qid=Q2912|lt=December 31}} - Ōharae and Year-End Festival
+
+== Cultural Properties ==
+=== National Natural Monument ===
+[[File:Tsuma-jinja kusunoki.JPG|thumb|180px|right|Tsuma no Kusu (National Natural Monument)]]
+* '''Tsuma no Kusu''' - A camphor tree approximately 1,200 years old and 40 meters tall. Designated in 1951 (Showa 26).<ref>[http://www.city.saito.miyazaki.jp/contents/syakai/bunkazai/tennen/1.html Tsuma no Kusu - Saito City Cultural Assets].</ref>
+
+== Visitor Information ==
+'''Address'''
+* Oaza Tsuma 1, {{ill|Saito, Miyazaki|en|Saito, Miyazaki|qid=Q850479|lt=Saito, Miyazaki}}, {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture}}
+
+'''Access'''
+* {{ill|Miyazaki Kotsu|ja|宮崎交通|12=simple|13=User:Immanuelle/Miyazaki Kotsu Bus|comment=changed title based on wikidata|qid=Q11454180}} - Alight at "Tsuma Shrine-mae" bus stop (short walk).
+* Approximately 12 minutes on foot from the Saito Bus Center.
+
+'''Nearby Attractions'''
+* {{ill|Q11538014|ja|桜川|12=simple|13=User:Immanuelle/Sakuragawa River|comment=changed title based on wikidata|qid=Q11538014}} - Featured in the Noh play ''Sakuragawa.''<ref name="mppf"/>
+* {{ill|Hyūga Kokubun-ji|ja|日向国分寺|12=simple|13=User:Immanuelle/Hyūga Kokubun-ji|ja_comment=jawiki redirects to 日向国分寺跡|comment=changed title based on wikidata|qid=Q11505107}}
+* {{ill|Saitobaru Kofun Cluster|en|Saitobaru Kofun Cluster|qid=Q3469314|lt=Saitobaru Kofuns}}
+* {{ill|Kiki no Michi|ja|記紀の道|12=simple|13=User:Immanuelle/Kiki no Michi|comment=changed title based on wikidata|qid=Q63214841}}
+
+== References ==
+
+{{reflist}}
+
+== Bibliography ==
+* Shrine's historical pamphlets
+* ''Miyazaki Prefecture Place names,'' Heibonsha, entry on Tsuma Shrine.
+* Akira Nakamaura, ''Tsuma Shrine'' (in ''Japanese Gods: Shrines and Sacred Sites, Volume 1 - Kyushu,'' Kenichi Tanigawa, editor, Hakusuisha).
+* {{Cite book|editor=Medieval Provincial Sōja Research Group|title=The Fundamental Study of Medieval Provincial Sōja|publisher=Iwata Shoin|year=2000|isbn=978-4872941708}}
+
+== External Links ==
+{{Commonscat|Tsuma-jinja}}
+* [https://tsumajinja.webnode.jp/ Tsuma Shrine Official Website]
+* [http://21coe.kokugakuin.ac.jp/db/jinja/640201.html Tsuma Shrine] - Kokugakuin University’s Shinto and Shrine Historical Data Collection.
+
+{{Shinto Horizontal}}
+
+ 
+
+{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
+
+{{Sōja shrines}}
+
+{{translated page|ja|都萬神社|version=102717956|comment=Imported full ja history}}
+
+{{everybodywiki link|Tsuma Shrine}}
+
+{{everybodywiki link|Tsuma Shrine|Tsuma Shrine}}
+
+{{Commons category|Tsuma-jinja}}
+
+{{wikidata link|Q3541658}}
+
+==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Miyazaki Prefecture]]
+[[Category:Buildings and structures in Saito, Miyazaki]]
 [[Category:Buildings and structures in Saito, Miyazaki]]
 [[Category:Former Prefectural Shrines in Miyazaki Prefecture]]
 [[Category:History of Saito, Miyazaki]]
 [[Category:Hyūga Province]]
+[[Category:Hyūga Province|Shrine 2]]
 [[Category:Ken-sha]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Hyūga Province]]
 [[Category:Shinto shrines in Miyazaki Prefecture]]
 [[Category:Shrines in Miyazaki Prefecture]]
 [[Category:Sōja]]
 [[Category:Sōja shrines]]
 [[Category:Wikidata has short description]]
+[[Category:Former Prefectural Shrines in Miyazaki Prefecture]]
+[[Category:Buildings and structures in Saito, Miyazaki]]
+[[Category:History of Saito, Miyazaki]]
 [[Category:Junior Fifth Rank]]
 [[Category:Junior Fourth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with interwikis with duplicate languages]]

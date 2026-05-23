@@ -1,9 +1,10 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Amatsu-Mikaboshi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
 {{Infobox deity}}
 
-{{Short description|Originally a malevolent Shinto god|qq=}}
-{{for|the Marvel Comics character|Amatsu-Mikaboshi (character)|qq=}}
-{{Expand Japanese|天津甕星|1=Amatsu-Mikaboshi|2=zh|3=天津甕星|4=ja|5=天津甕星|6=ru|7=Амацумикабоси|8=tr|9=Amatsu Mikaboşi|10=mni|11=ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ|12=th|13=อามัตสึมิกาโบชิ|15=draft|date=April 2021|qq=}}
-In [[Japanese mythology]], {{Nihongo|'''Ama-tsu-mika-boshi'''|[[:ja:天津甕星|天津甕星]]<ref name="Nagasaki" />||interpretable as either "Dread Star of Heaven"<ref name="Aston">[[William George Aston]]: ''Shinto, the Way of the Gods''. Longmans, Green, And Co., 1905, p. 142, available at Google Books [https://books.google.com/books?id=0f2_Cdcx4i0C&q=%22Amatsu+mika+hoshi%22&pg=PA142 here]</ref> or "August Star of Heaven"<ref name="Coulter">[https://books.google.com/books?id=VWxekbhM1yEC&dq=Amatsu-Mikaboshi&pg=PT96 Encyclopedia of Ancient Deities] by Charles Russell Coulter and Patricia Turner, Routledge, 4 Jul 2013, p.96</ref>|qq=}} (あまつみかぼし), also called {{Nihongo|'''Ame-no-kagase-o'''|天香香背男<ref name="Nagasaki" />||interpretable as either "Scarecrow Male of Heaven"<ref name="Aston" /> or "Brilliant Male"<ref name="Coulter"/>|qq=}} (あめのかがせお), '''Hoshigami Kagaseo''' (星神香香背男, ほしがみかがせお), '''Kagaseo''' (香香背男, かがせお), '''Amenoseo''' (天背男, あめのせお), or '''Ame no Murakumo no Mikoto''' (天村雲命, あめのむらくものみこと), was originally a rebellious [[Kami|Shinto god]], possibly malevolent, who would not submit to the will of the other [[Amatsukami|Ama-tsu-kami]].<ref name="Aston" /><ref name="Larousse">New Larousse encyclopedia of mythology, by Félix Guirand and Robert Graves, Hamlyn, 1968, p.415</ref>
+{{Short description|Originally a malevolent Shinto god}}
+{{for|the Marvel Comics character|Amatsu-Mikaboshi (character)}}
+{{Expand Japanese|天津甕星|1=Amatsu-Mikaboshi|2=zh|3=天津甕星|4=ja|5=天津甕星|6=ru|7=Амацумикабоси|8=tr|9=Amatsu Mikaboşi|10=mni|11=ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ|12=th|13=อามัตสึมิกาโบชิ|15=draft|date=April 2021}}
+In [[Japanese mythology]], {{Nihongo|'''Ama-tsu-mika-boshi'''|[[:ja:天津甕星|天津甕星]]<ref name="Nagasaki" />||interpretable as either "Dread Star of Heaven"<ref name="Aston">[[William George Aston]]: ''Shinto, the Way of the Gods''. Longmans, Green, And Co., 1905, p. 142, available at Google Books [https://books.google.com/books?id=0f2_Cdcx4i0C&q=%22Amatsu+mika+hoshi%22&pg=PA142 here]</ref> or "August Star of Heaven"<ref name="Coulter">[https://books.google.com/books?id=VWxekbhM1yEC&dq=Amatsu-Mikaboshi&pg=PT96 Encyclopedia of Ancient Deities] by Charles Russell Coulter and Patricia Turner, Routledge, 4 Jul 2013, p.96</ref>}} (あまつみかぼし), also called {{Nihongo|'''Ame-no-kagase-o'''|天香香背男<ref name="Nagasaki" />||interpretable as either "Scarecrow Male of Heaven"<ref name="Aston" /> or "Brilliant Male"<ref name="Coulter"/>}} (あめのかがせお), '''Hoshigami Kagaseo''' (星神香香背男, ほしがみかがせお), '''Kagaseo''' (香香背男, かがせお), '''Amenoseo''' (天背男, あめのせお), or '''Ame no Murakumo no Mikoto''' (天村雲命, あめのむらくものみこと), was originally a rebellious [[Kami|Shinto god]], possibly malevolent, who would not submit to the will of the other [[Amatsukami|Ama-tsu-kami]].<ref name="Aston" /><ref name="Larousse">New Larousse encyclopedia of mythology, by Félix Guirand and Robert Graves, Hamlyn, 1968, p.415</ref>
 Under {{ill|Chinese Buddhism|en|Chinese Buddhism|qid=Q847618|lt=Chinese Buddhist}} influence,<ref name="Larousse" /> the god was identified with {{ill|Myōken|en|Myōken|qid=Q10960623|lt=Myōken}}<ref name="Larousse" /> either as the {{ill|Pole star|en|Pole star|qid=Q662656|lt=Pole star}} or {{ill|Venus|en|Venus|qid=Q313|lt=Venus}},<ref name="Nagasaki">{{cite book
 |title=長崎大学教育学部人文科学研究報告 (''Nagasaki Daigaku Kyōiku-bu Jinbun Kagaku Kenkyū Hōkoku'')
 |trans-title=Nagasaki University Education Department Report on Humanities Research
@@ -15,28 +16,28 @@ Under {{ill|Chinese Buddhism|en|Chinese Buddhism|qid=Q847618|lt=Chinese Buddhist
 | location              = [[Nagasaki]]
 | language              = ja
 | quote                 = ...願染みの度合い、等の様々な観点から判定して、この金星が、やはり、天津甕星(天香 香背男)として、一番相応しいのではないかと考える。 - ...so judging from degree of familiarity, and various other perspectives, this Venus indeed looks to be the most appropriate match for Ama tsu Mikaboshi (Ame no Kagaseo).
-}}</ref> before being combined with the god of all stars, {{Nihongo|Ama-no-mi-naka-nushi|天之御中主神|4="Divine Lord of the middle heavens"|qq=}}.<ref name="Larousse" /><ref name="Coulter"/>
+}}</ref> before being combined with the god of all stars, {{Nihongo|Ama-no-mi-naka-nushi|天之御中主神|4="Divine Lord of the middle heavens"}}.<ref name="Larousse" /><ref name="Coulter"/>
 In some versions he was born from [[Kagu-tsuchi]]'s blood.<ref>[https://www.worldhistory.org/Kagutsuchi/ worldhistory.org]</ref> He is mentioned in passing in the ''[[Nihon Shoki]]'' as being subdued by [[Takemikazuchi]] during the latter's conquest of the land of {{ill|Izumo Province|en|Izumo Province|qid=Q582846|lt=Izumo}}.
 == In popular culture ==
-{{Unreferenced section|date=October 2021|qq=}}
-
-=== Marvel Comics ===
-{{Main|Amatsu-Mikaboshi (character)|qq=}}
-'''Amatsu-Mikaboshi''', the '''Chaos King''', is a fictional character appearing in {{ill|American comic book|en|American comic book|qid=Q1114502|lt=American comic book}}s published by {{ill|Marvel Comics|en|Marvel Comics|qid=Q173496|lt=Marvel Comics}}. The character is usually depicted as a {{ill|supervillain|en|supervillain|qid=Q6498903|lt=supervillain}} and demonic god of evil who is best known as an enemy of {{ill|Hercules (Marvel Comics)|en|Hercules (Marvel Comics)|qid=Q534889|lt=Hercules}} and {{ill|Thor (Marvel Comics)|en|Thor (Marvel Comics)|qid=Q717588|lt=Thor}}. He is based on the Mikaboshi of Japanese mythology. Amatsu-Mikaboshi first appeared in ''{{ill|Thor: Blood Oath|en|Thor: Blood Oath|qid=Q4051429|lt=Thor: Blood Oath}}'' #6 (February 2006), and was adapted from mythology by [[:en:Michael Oeming|Michael Oeming]] and {{ill|Scott Kolins|en|Scott Kolins|qid=Q2813307|lt=Scott Kolins}}. The character subsequently appears in ''Ares'' #1-5 (March–July 2006), and ''The Incredible Hercules'' #117-120 (May–August 2008).
-
-=== Yashahime: Princess Half-Demon ===
-Amatsumikaboshi appears as the God of Stars in ''[[:en:Yashahime: Princess Half-Demon|Yashahime: Princess Half-Demon]]'', having gifted two stellar-demon swords of light and shadow, Zanseiken and Bakuseiken, to {{ill|Earth|en|Earth|qid=Q2|lt=Earth}} in {{ill|Nara period|en|Nara period|qid=Q189178|lt=Nara}} {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. The two swords are later wielded by {{ill|Qilin|en|Qilin|qid=Q14138|lt=Qilin}} daiyōkai Kirinmaru, who rules in the Eastern Lands, and his daughter Rion. He is also identified as the God of Chaos, linked to the [[List of Inuyasha characters#Grim Comet|Grim Comet and its true form: the Grim Butterfly]]. In the episode "The Collapse of the Windmill of Time", Sesshōmaru's mother identifies the Zanseiken as the Sword of Amatsumikaboshi, wielded by her granddaughter Towa. In the episode "Father and Daughter", after Setsuna severs the {{ill|Red thread of fate|en|Red thread of fate|qid=Q2657518|lt=Red thread of fate}} between Rion and Kirinmaru, the two swords merge into the Sword of Amatsumikaboshi and are sent back to {{ill|Heaven|en|Heaven|qid=Q4489450|lt=Heaven}} as the Grim Butterfly is destroyed.
+{{Unreferenced section|date=October 2021}}{{Main|Amatsu-Mikaboshi (character)}}
+'''Amatsu-Mikaboshi''', the '''Chaos King''',  is a fictional character appearing in {{ill|American comic book|en|American comic book|qid=Q1114502|lt=American comic book}}s published by {{ill|Marvel Comics|en|Marvel Comics|qid=Q173496|lt=Marvel Comics}}. The character is usually depicted as a {{ill|supervillain|en|supervillain|qid=Q6498903|lt=supervillain}} and demonic god of evil who is best known as an enemy of {{ill|Hercules (Marvel Comics)|en|Hercules (Marvel Comics)|qid=Q534889|lt=Hercules}} and {{ill|Thor (Marvel Comics)|en|Thor (Marvel Comics)|qid=Q717588|lt=Thor}}. He is based on the Mikaboshi of Japanese mythology.
+Amatsu-Mikaboshi first appeared in ''{{ill|Thor: Blood Oath|en|Thor: Blood Oath|qid=Q4051429|lt=Thor: Blood Oath}}'' #6 (February 2006), and was adapted from mythology by [[:en:Michael Oeming|Michael Oeming]] and {{ill|Scott Kolins|en|Scott Kolins|qid=Q2813307|lt=Scott Kolins}}.
+The character subsequently appears in ''Ares'' #1-5 (March–July 2006), and ''The Incredible Hercules'' #117-120 (May–August 2008).
+Amatsumikaboshi is the God of Stars who have gifted two stellar-demon swords of light and shadow, Zanseiken and Bakuseiken, to {{ill|Earth|en|Earth|qid=Q2|lt=Earth}} in {{ill|Nara period|en|Nara period|qid=Q189178|lt=Nara}} {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}, later the two swords wielded by {{ill|Qilin|en|Qilin|qid=Q14138|lt=Qilin}} daiyōkai Kirinmaru, who rules in the Eastern Lands, and his daughter Rion, in episode "The Girl Named Rion" of  ''[[:en:Yashahime: Princess Half-Demon|Yashahime: Princess Half-Demon]]''. He is also known as the God of Chaos that he's loyal to the [[List of Inuyasha characters#Grim Comet|Grim Comet and its true form: the Grim Butterfly]]. In episode "The Collapse of the Windmill of Time", Sesshōmaru's mother mentioned that the Zanseiken is the Sword of Amatsumikaboshi that her granddaughter Towa is wielding while they fighting Meidomaru. In episode "Father and Daughter", after Setsuna severed the {{ill|Red thread of fate|en|Red thread of fate|qid=Q2657518|lt=Red thread of fate}} between Rion and Kirinmaru the second time for their death, the two swords have been merged to become the Sword of Amatsumikaboshi as their souls are being sent inside as it sent back to {{ill|Heaven|en|Heaven|qid=Q4489450|lt=Heaven}} as the Grim Butterfly is destroyed.
 ==See also==
 * [[Glossary of Shinto]]
 * {{ill|List of Japanese deities|en|List of Japanese deities|qid=Q3240847|lt=List of Japanese deities}}
 == References ==
-{{Reflist|qq=}}
-{{jmyth navbox long|qq=}}
+{{Reflist}}
+{{jmyth navbox long}}
 
-{{wikidata link|Q4740636|en|Amatsu-Mikaboshi|it|Amatsu-Mikaboshi|ja|天津甕星|mni|ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ|ru|Амацумикабоси|th|อามัตสึมิกาโบชิ|tr|Amatsu Mikaboşi|zh|天津甕星}}
+{{draft categories|
+
+}}
+
+{{wikidata link|Q4740636|en|Amatsu-Mikaboshi|it|Amatsu-Mikaboshi|ja|天津甕星|mni|ꯑꯃꯠꯁꯨ-ꯃꯤꯀꯕꯣꯁꯤ|ru|Амацумикабоси|th|อามัตสึมิกาโบชิ|tr|Amatsu Mikaboşi|zh|天津甕星|check_date=2026-05-13}}
 
 {{translated page|ja|天津甕星|version=101089655|comment=Imported full ja history}}
-[[Category:Need translation]]
 == Japanese Wikipedia content ==
 '''天津甕星'''（あまつみかぼし）は、{{jalink|日本神話|Q814158}}に登場する{{jalink|天体|Q6999|星}}の{{jalink|神 (神道)|Q524158|神}}である{{Sfn|平凡社|1937|ps=(コマ32)|p=44|loc=§アマツミカボシ}}{{Sfn|坂本・家永・井上・大野|1994|p=455}}。別名は'''天香香背男'''（あめのかがせお）{{Sfn|植松|1920|ps=(コマ124)|p=101}}{{Sfn|坂本・家永・井上・大野|1994|p=459}}、'''香香背男'''（かがせお）。
 
@@ -116,4 +117,6 @@ Amatsumikaboshi appears as the God of Stars in ''[[:en:Yashahime: Princess Half-
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
 [[Category:Pages with 750+ untranslated japanese characters]]
+[[Category:Need translation]]
+[[Category:Pages with duplicated content]]
 [[Category:Need translation]]

@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tamatsukuri_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name = Tamatsukuriyu Shrine (玉作湯神社)
 | image = File:Tamatsukuriyu jinja.jpg
@@ -13,25 +15,37 @@
 | location = {{ill|Matsue|qid=Q207321}}
 | coordinates = {{Coord|35.413694|N|133.011722}}
 }}
+
 [[File:Tamatsukuriyu-jinja, torii.jpg|thumb|220px|right|{{center|First Torii Gate}}]]
 '''Tamatsukuriyu Shrine''' (玉作湯神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, with its former shrine Rank classified as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}. The shrine crest is a "double tortoise shell with a circular jewel and comma-shaped beads."
+
 == Deities ==
+
 The enshrined deities are the following four:
 * {{ill|Tamanooya-no-Mikoto|ja|櫛明玉神|Tamanooya-no-Mikoto=Tamanooya-no-Mikoto|lt=Kushiakarutama-no-Kami|12=simple|13=User:Immanuelle/Tamanooya-no-Mikoto|ja_comment=jawiki redirects to 玉祖命|comment=changed title based on wikidata|qid=Q11572729}} (also known as Kushiakarutama-no-Mikoto)
 * {{ill|Ōkuninushi|ja|大名持神|12=simple|13=User:Immanuelle/Ōnamuchi-no-Kami|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}}
 * {{ill|Sukunabikona|ja|少彦名神|12=simple|13=User:Immanuelle/Sukunabikona-no-Kami|qid=Q3275687|comment=changed title based on wikidata|qid=Q3275687}}
-* {{ill|Isotakeru-no-Mikoto|ja|五十猛神|12=simple|13=User:Immanuelle/Isotakeru-no-Mikoto|qq=}}
+* {{ill|Isotakeru-no-Mikoto|ja|五十猛神|12=simple|13=User:Immanuelle/Isotakeru-no-Mikoto}}
+
 == History ==
+
 The origin of the shrine is unknown. It is mentioned in the {{ill|Izumo-no-Kuni Fudoki|lt=Izumo-no-Kuni Fudoki|lt=Izumo Fudoki|ja|Izumo Province 風土記|12=simple|13=User:Immanuelle/Izumo Fudoki|ja_comment=jawiki link invalid}} as "Tamatsukuri-yu Shrine."
+
 The shrine has been supported by various ruling clans over the centuries, including the {{ill|Matsue Domain|en|Matsue Domain|qid=Q1017072|lt=Matsue Domain}} during the Edo period. The current main hall was rebuilt in 1857 (Ansei 4), following the Taisha-zukuri architectural style.
+
 After the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration}}, the shrine was Ranked as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} before being promoted to {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in 1928 (Shōwa 3).
+
 == Grounds ==
+
 [[File:Tamatsukuriyu jinja.jpg|thumb|220px|right|{{center|Main Hall}}]]
+
 * First Torii Gate - Inscribed by {{ill|Wakatsuki Reijirō|en|Wakatsuki Reijirō|qid=Q335177|lt=Reijirō Wakatsuki}}, the 25th and 28th Prime Minister of Japan.
 * Second Torii Gate
 * Shrine Office
 * Repository for artifacts excavated from the {{ill|Izumo Tamatsukuri site|ja|出雲玉作跡|lt=Izumo Tamatsukuri Archaeological Site|Izumo Tamatsukuri site=Izumo Tamatsukuri site|12=simple|13=User:Immanuelle/Izumo Tamatsukuri site|ja_comment=jawiki redirects to 出雲玉作史跡公園|comment=changed title based on wikidata|qid=Q18990378}}, designated as an Important Cultural Property of Japan.
+
 == Subsidiary Shrines ==
+
 * Yuhime Daimyōjin Shrine – Enshrines Yuhime Daimyōjin
 * Kotohira Shrine – Enshrines {{ill|Ōmononushi|ja|大物主命|qid=Q10936701|lt=Ōmononushi-no-Mikoto|12=simple|13=User:Immanuelle/Ōmononushi-no-Kami|13=User:Immanuelle/Ōmononushi|qid=Q10936701}}
 * Soga and Kigarashi Shrines – Enshrines {{ill|Susanoo-no-Mikoto|ja|素盞鳴尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
@@ -40,20 +54,30 @@ After the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restor
 * Inari Shrine – Enshrines {{ill|Ukanomitama|ja|稲倉魂命|qid=Q3080728|lt=Ukanomitama-no-Mikoto|12=simple|13=User:Immanuelle/Ukanomitama-no-Kami|13=User:Immanuelle/Ukanomitama|ja_comment=jawiki link invalid}}
 * Tamamiya Shrine – Enshrines {{ill|Tamanooya-no-Mikoto|en|Tamanooya-no-Mikoto|qid=Q11572729|lt=Tamanoya-no-Mikoto}}
 * Yuyama Worship Hall – Enshrines Yuyama-no-Kami
+
 == Main Festivals ==
+
 * Summer Festival (July 15)
 * Annual Grand Festival (October 10)
+
 == Cultural Properties ==
+
 === Important Cultural Property (National Designation) ===
 * Artifacts excavated from the Izumo Tamatsukuri site, including comma-shaped beads and unfinished products, designated on May 27, 1939.
+
 === National Historic Site ===
 * Part of the shrine grounds is designated as the {{ill|Izumo Tamatsukuri site|ja|出雲玉作跡|lt=Izumo Tamatsukuri Archaeological Site|Izumo Tamatsukuri site=Izumo Tamatsukuri site|12=simple|13=User:Immanuelle/Izumo Tamatsukuri site|ja_comment=jawiki redirects to 出雲玉作史跡公園|comment=changed title based on wikidata|qid=Q18990378}}.
+
 == Access ==
+
 * Located in Tamayu Town, Tamatsukuri 508, {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}.
 * Accessible via bus from {{ill|Tamatsukuri-Onsen Station|en|Tamatsukuri-Onsen Station|qid=Q3611066|lt=Tamatsukuri Onsen Station}} on the {{ill|West Japan Railway Company|en|West Japan Railway Company|qid=Q502125|lt=JR West}} line.
+
 == External Links ==
+
 * [https://www.kankou-matsue.jp/kankou/desc/?cat=寺院神社&spot=27774 Tamatsukuriyu Shrine - Matsue Tourism Association]
 * [https://www.kankou-shimane.com/destination/20237 Tamatsukuriyu Shrine - Shimane Tourism Federation]
+
 {{infobox religious building
 |name   = Tamatsukuriyu Shrine (玉作湯神社)
 |image  = [[File:Tamatsukuriyu-jinja, haiden.jpg|270px]]<br />Haiden (拝殿)
@@ -74,35 +98,52 @@ After the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restor
 {{coord2|35|24|49.2|N|133|0|42.3|E|}}|position=bottom|width=200|mark={{ill|Shinto torii icon vermillion|ja|神道鳥居アイコン|12=simple|13=User:Immanuelle/Shinto torii icon vermillion|ja_comment=jawiki link invalid}}|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200|coord={{coord|35|24|49.2|N|133|0|42.3|E}}}}
 }}
+
 [[File:Tamatsukuriyu-jinja, torii.jpg|thumb|220px|right|{{center|Plaque of the First Torii Gate (一の鳥居)}}]]
+
 '''Tamatsukuriyu Shrine''' (たまつくりゆじんじゃ<ref>{{Cite web|language=ja|url=https://www.kankou-shimane.com/ja/spot/detail/3851|title=玉作湯神社 - 詳細情報 - しまね観光ナビ|publisher=島根県観光連盟|accessdate=2019-12-11}}</ref>, also known as Tamatsukuri Yuyashinja) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shrine}} located in Tamatsukuri, Tamayu Town, {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and under the Modern Shrine Ranking System its former Rank was that of a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}. The shrine emblem is “double tortoise shell with round, tubular, and comma-shaped jewels” (二重亀甲に丸玉管玉勾玉).
+
 == Deities ==
 The deities enshrined are the following four kami<ref name="由緒書">Shrine History Document.</ref>:
 :* {{ill|Tamanooya-no-Mikoto|ja|櫛明玉神|12=simple|13=User:Immanuelle/Kushiakarutama-no-kami|ja_comment=jawiki redirects to 玉祖命|comment=changed title based on wikidata|qid=Q11572729}} (also known as Kushiakarutama-no-mikoto, 櫛明玉命, くしあかるたまのみこと<ref name=国体神祇辞典>{{Open Access}}[{{NDLDC|1909346/675}} ‘Kokutai Jingido Dictionary’ by Ogura Kōji (Nishikishōdō, 1940) p.1197 – National Diet Library Digital Collection] (accessed February 4, 2018)</ref>)
 :* {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ominamochi}}
 :* {{ill|Sukunabikona|en|Sukunabikona|qid=Q3275687|lt=Sukunahikona}}
 :* {{ill|Isotakeru-no-Mikoto|ja|五十猛神|12=simple|13=User:Immanuelle/Ito-take-no-kami|comment=changed title based on wikidata|qid=Q10881556}}
-In the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}, compiled in the 5th year of Enchō (927), one establishment is recorded for Tamatsukuriyu Shrine and one for the shrine known as {{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}}—a total of two. These are respectively identified with the “Tamatsukuri-yusha” and “Yūsha” noted in the [[Izumo-no-Kuni Fudoki|Izumo Province Fudoki]] (possibly established in the 5th year of Tenpyō (733)).
+
+In the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}, compiled in the 5th year of Enchō (927), one establishment is recorded for Tamatsukuriyu Shrine and one for the shrine known as {{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}}—a total of two. These are respectively identified with the “Tamatsukuri-yusha” and “Yūsha” noted in the [[Izumo-no-Kuni Fudoki|Izumo Province Fudoki]] (possibly established in the 5th year of Tenpyō (733)).
+
 === About the Deities ===
 [[File:140427 Izumo Tamatsukuri Historical Park Matsue Shimane pref Japan08bs3.jpg|thumb|220px|right|{{center|{{ill|Izumo Tamatsukuri site|en|Izumo Tamatsukuri site|qid=Q18990378|lt=Izumo Tamatsukuri Historical Park}}}}]]
 [[File:Tamatsukuri Onsen Panoramic view.JPG|thumb|220px|right|{{center|{{ill|Tamatsukuri Onsen|en|Tamatsukuri Onsen|qid=Q3514711|lt=Tamatsukuriyu Onsen Town}}}}]]
 Regarding the kami “Tamatsukuriyu no Kami”, its dual nature as both the “jewel-making deity” and the “hot spring deity” has been noted{{Sfn|Tamatsukuriyu Shrine (Shikinaisha)|1983}}{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}. The former “Tamatsukuri” refers to the crafting of jewels (such as magatama, tubular jewels, and round jewels){{Sfn|Tamatsukuriyu Division (Ancient History)|2006}}. The area around Mount Hanasen, where the shrine is situated, is considered the center of jewel production in the Izumo region; in addition to a dense distribution of Tamatsukuri archaeological sites (the national [[:en:Historic Site|Historic Site]] {{ill|Izumo Tamatsukuri site|ja|出雲玉作跡|12=simple|13=User:Immanuelle/Izumo Tamatsukuri Site|ja_comment=jawiki redirects to 出雲玉作史跡公園|comment=changed title based on wikidata|qid=Q18990378}}) dating from the late {{ill|Yayoi period|en|Yayoi period|qid=Q207858|lt=Yayoi period}},<ref name="説明板"/>{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}} some of the excavated artifacts are housed at the shrine and have been designated as national {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property (Japan)}}{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}. Furthermore, since the surrounding area is identified with “Kimibe no Kodo” as described in the [[Izumo-no-Kuni Fudoki|Izumo Province Fudoki]], it is speculated that Tamatsukuriyu Shrine was enshrined by the Tamatsukuri Division—responsible for jewel production under the oversight of the {{ill|Inbe clan|en|Inbe clan|qid=Q8189229|lt=Kimibe Clan}} (Saibe clan){{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}. In the [[Kogo Shūi]], Kushiakarutama-no-mikoto is recorded as the progenitor of Tamatsukuri in Izumo Province, and the present shrine enshrines him as one of its deities{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}. The same work also relates that when {{ill|Amatomi no Mikoto|ja|天富命|12=simple|13=User:Immanuelle/Ame-no-Tōtōmi|comment=changed title based on wikidata|qid=Q24899653}} led the Saibe clan in the creation of various sacred treasures, he caused the descendants of Kushiakarutama-no-mikoto to produce “Mihokitama” and that his progeny in Izumo Province annually offered jewels along with seasonal produce{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}<ref name="古語拾遺">[[菅田正昭]], Modern Translation of Kogo Shūi (New Person Series 327), Chuokei Publishing, 2014, pp. 92–93.</ref>; indeed, in the provisional festival of the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}, it is stipulated that every October the local Tamatsukuri clan of the Iiu District in Izumo Province offers jewels{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}{{Sfn|Tamatsukuriyu Division (Ancient History)|2006}}.
+
 The latter aspect, “Onsen deity”, is related to the veneration of {{ill|Tamatsukuri Onsen|en|Tamatsukuri Onsen|qid=Q3514711|lt=Tamatsukuriyu Onsen}} as a divine hot spring. With regard to the deities {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|qid=Q276944|lt=Okuninushi}} (also known as Ominamochi) and {{ill|Sukunabikona|en|Sukunabikona|qid=Q3275687|lt=Sukunahikona}}, a theory exists—based on traditions connected with [[:en:Dogo Onsen|Dogo Onsen]] found in a lost passage of the [[Iyo Province Fudoki]]—that these two were enshrined locally as deities of hot springs{{Sfn|Tamatsukuriyu Shrine (Deities)|2000}}.
-Furthermore, the remaining deity, {{ill|Isotakeru-no-Mikoto|ja|五十猛神|12=simple|13=User:Immanuelle/Ito-take-no-kami|comment=changed title based on wikidata|qid=Q10881556}}, is regarded as the deity of the {{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}} recorded in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}. This shrine—unique in that six such shrines appear in the record for Izumo Province alone—and bearing the name “Kankoku” (Korea) is speculated to represent a deity invited from the Korean Peninsula{{Sfn|The same, Zaka-Kankoku Itate Shrine (Shikinaisha)|1983}}.
+
+Furthermore, the remaining deity, {{ill|Isotakeru-no-Mikoto|ja|五十猛神|12=simple|13=User:Immanuelle/Ito-take-no-kami|comment=changed title based on wikidata|qid=Q10881556}}, is regarded as the deity of the {{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}} recorded in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}. This shrine—unique in that six such shrines appear in the record for Izumo Province alone—and bearing the name “Kankoku” (Korea) is speculated to represent a deity invited from the Korean Peninsula{{Sfn|The same, Zaka-Kankoku Itate Shrine (Shikinaisha)|1983}}.
+
 == History ==
 === Overview ===
 The founding of the shrine is unknown.
+
 In the [[Izumo-no-Kuni Fudoki|Izumo Province Fudoki]] (possibly compiled in the 5th year of {{ill|Tenpyō|en|Tenpyō|qid=Q1199879|lt=Tenpyō}} (733)), the Iiu District entry mentions both “Tamatsukuriyu-sha” and “Yūsha”{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}} (the latter perhaps meaning “Hot Spring Shrine”{{Sfn|The same, Zaka-Kankoku Itate Shrine (Shikinaisha)|1983}}).
+
 In the [[Rikkokushi|National Histories]], it is recorded that in the 1st year of {{ill|Jōgen (Kamakura period)|en|Jōgen (Kamakura period)|qid=Q1194389|lt=Jōgan}} (859) on July 11, the Rank of “Yuzashikyo Hime” was elevated from no Rank to lower 5th Rank (as noted in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}) – the inscription reads “Yuzashikyo Hime”. Then, on November 10 in the 13th year of {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgane}} (871), the Rank of “Yunshin” was raised from upper 5th Rank to lower 4th Rank (also recorded in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}).
-In the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} (compiled in the 5th year of Enchō (927)){{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}, entries for “Tamatsukuriyu Shrine” and “{{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}}” appear in Iiu District, Izumo Province, with both classified as {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}.
+
+In the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} (compiled in the 5th year of Enchō (927)){{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}, entries for “Tamatsukuriyu Shrine” and “{{ill|Zaka-Kankoku Itate Shrine|ja|同社坐韓国伊太&#27664;神社|12=simple|13=User:Immanuelle/Zaka-Kankoku Itate Shrine|ja_comment=jawiki link invalid}}” appear in Iiu District, Izumo Province, with both classified as {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}.
+
 In the medieval period, according to the “Shrine History Document” in the ''Kimibe Sōsha Jingūji Nemoto-rokku'', in the 4th year of {{ill|Kenchō|en|Kenchō|qid=Q1194270|lt=Kenchō}} (1252) there is an account of a donation of 5 koku of rice from {{ill|Sasaki Yasukiyo|ja|佐々木泰清|12=simple|13=User:Immanuelle/Sasaki Yasutsune|comment=changed title based on wikidata|qid=Q11382304}}{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}. Furthermore, in the 1st year of {{ill|Eiroku|ja|Eiroku|12=simple|13=User:Immanuelle/Eiroku|ja_comment=jawiki link invalid}} (1558), a building plaque refers to the shrine as “Yuhime Daimyōjin”{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}.
+
 During the Edo period, the shrine received veneration from the {{ill|Matsue Domain|en|Matsue Domain|qid=Q1017072|lt=Matsue Domain}}, and besides the establishment of an adjacent tea house, successive feudal lords made pilgrimages and sent deputations<ref name="説明板"/>{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}. Notably, in the 3rd year of {{ill|Kyōwa|en|Kyōwa|qid=Q960763|lt=Kyōwa}} (1803), the 7th daimyō, {{ill|Matsudaira Harusato|en|Matsudaira Harusato|qid=Q11530504|lt=Matsudaira Harukiyo}}, donated a plaque inscribed with “Konan Tamatsukuri Yaku-sen Shrine”{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}. Contemporary documents also refer to the shrine by names such as “Yubune Myōjin” or “Yubune Daimyōjin”{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}. Later, in the 4th year of {{ill|Ansei|en|Ansei|qid=Q1327259|lt=Ansei}} (1857), the current main hall was rebuilt{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}.
+
 After the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration}}, the shrine’s name was restored to “Tamatsukuriyu Shrine”, and under the Modern Shrine Ranking System it was initially classified as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}, later being elevated to a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in March of the 3rd year of {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Showa}} (1928){{Sfn|Tamatsukuriyu Shrine (Shikinaisha)|1983}}.
+
 === Kami Ranks ===
 * In the 1st year of {{ill|Jōgen (Kamakura period)|en|Jōgen (Kamakura period)|qid=Q1194389|lt=Jōgan}} (859) on July 11, the Rank of “Yuzashikyo Hime” was raised from no Rank to lower 5th Rank (as recorded in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}) – the inscription reads “Yuzashikyo Hime”.
 * In the 13th year of {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgane}} (871) on November 10, the Rank of “Yunshin” was raised from upper 5th Rank to lower 4th Rank (also recorded in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}) – the inscription reads “Yunshin”.
+
 == Shrine Facilities ==
 [[File:Tamatsukuriyu jinja.jpg|thumb|220px|right|{{center|Main Hall (本殿)}}]]
+
 * First Torii Gate – The plaque ({{ill|biane|ja|扁額|12=simple|13=User:Immanuelle/Plaque|comment=changed title based on wikidata|qid=Q5358873}}) was calligraphed by the 25th/28th {{ill|Prime Minister of Japan|en|Prime Minister of Japan|qid=Q274948|lt=Prime Minister of Japan}}, {{ill|Wakatsuki Reijirō|en|Wakatsuki Reijirō|qid=Q335177|lt=Wakatsuki Reijiro}}<ref name=":0">According to the on-site information board.</ref>.
 * Second Torii Gate
 * Shrine Office
@@ -113,6 +154,7 @@ After the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restor
 * Shintama Pond
 * Sesshu-sha – (see below)
 * {{ill|Tamatsukuri Castle|ja|玉造要害山城|12=simple|13=User:Immanuelle/Tamatsukuriyu Yougai Yamashiro|comment=changed title based on wikidata|qid=Q11572808}} – The ruins of a mountain castle built on a hill behind the shrine precincts. Remains of earthen ramparts, a dry moat, and well sites are well preserved<ref name=":0">According to the on-site information board.</ref>.
+
 <gallery mode="packed">
 File:Hengaku of the first torii gate of Tamatsukuriyu-jinja.jpg|Plaque of the First Torii Gate (一の鳥居扁額)
 File:The second Torii gate of Tamatsukuriyu-jinja.jpg|Second Torii Gate (二の鳥居)
@@ -121,6 +163,7 @@ File:Honden (the main shrine) of Tamatsukuriyu-jinja.jpg|Main Hall as seen from 
 File:Sacred water and sacred stones of Tamatsukuriyu-jinja.jpg|Sacred Water and Wishing Stone (御神水と願い石)
 File:Matamagaike（pond） of Tamatsukuriyu-jinja.jpg|Shintama Pond (真玉ケ池)
 </gallery>
+
 == Sesshu-sha ==
 * {{ill|Yuhime Daimyōjin Shrine|ja|湯姫大明神社|12=simple|13=User:Immanuelle/Yuhime Daimyōjin Shrine|ja_comment=jawiki link invalid}} – Deity: Yuhime Daimyōjin. Festival date: {{ill|October 10|en|October 10|qid=Q2921|lt=October 10}}<ref name=":0">According to the on-site information board.</ref>.
 * {{ill|Kotohira shrines|lt=Kotohira shrines|lt=Kotohira Shrine|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrine|comment=enwiki is a redirect}} – Deity: {{ill|Ōmononushi|en|Ōmononushi|qid=Q10936701|qid=Q10936701|lt=Ōmononushi-no-mikoto}}. Festival date: {{ill|July 10|en|July 10|qid=Q2689|lt=July 10}}<ref name=":0">According to the on-site information board.</ref>.
@@ -131,6 +174,7 @@ File:Matamagaike（pond） of Tamatsukuriyu-jinja.jpg|Shintama Pond (真玉ケ�
 * {{ill|Tamamiya Shrine|ja|玉宮神社|12=simple|13=User:Immanuelle/Tamamiya Shrine|ja_comment=jawiki link invalid}} – Deity: {{ill|Tamanooya-no-Mikoto|en|Tamanooya-no-Mikoto|qid=Q11572729|lt=Tamamiso-no-mikoto}}. Festival date: {{ill|September 1|en|September 1|qid=Q2859|lt=September 1}}<ref name=":0">According to the on-site information board.</ref>.
 * Yuyama Youhaiden – Deity: {{ill|Yuyama-no-omikami|ja|湯山主命|12=simple|13=User:Immanuelle/Yuyama-no-omikami|ja_comment=jawiki link invalid}} (also known as {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōmikatakami}})<ref name=":0">According to the on-site information board.</ref>.
 * Fuguya Shrine – An off-site branch of the Shikinaisha “Fuguya Shrine”.
+
 <gallery mode="packed">
 File:Yuhime-Daimyou-jinja of Tamatsukuriyu-jinja.jpg|Yuhime Daimyōjin Shrine (湯姫大明神社)
 File:Kotohira-jinja of Tamatsukuriyu-jinja.jpg|Kotohira Shrine (金刀比羅神社)
@@ -140,9 +184,11 @@ File:Sawatama-jinja of Tamatsukuriyu-jinja.jpg|Sawatama Shrine (澤玉神社)
 File:Tamanomiya-jinja of Tamatsukuriyu-jinja.jpg|Tamamiya Shrine (玉宮神社)
 File:Yuyama-Yohaiden of Tamatsukuriyu-jinja.jpg|Yuyama Youhaiden (湯山遥拝殿)
 </gallery>
+
 == Major Festivals ==
 * Summer Festival ({{ill|July 15|en|July 15|qid=Q2686|lt=July 15}})
 * Annual Festival ({{ill|October 10|en|October 10|qid=Q2921|lt=October 10}})
+
 == Cultural Properties ==
 === Important Cultural Properties (National Designation) ===
 * Izumo Province Tamatsukuri Excavated Artifacts (archaeological data) – Designated on May 27, Showa 14; additional designation, name change, and item-number revision on February 8, Showa 33<ref>{{国指定文化財等データベース|201|9691|Izumo Province 玉作阯出土品}}</ref><ref>[http://www1.city.matsue.shimane.jp/bunka/bunkazai/siteibun/kunisitei.html National Cultural Properties] (Matsue City website).</ref>
@@ -151,30 +197,38 @@ File:Yuyama-Yohaiden of Tamatsukuriyu-jinja.jpg|Yuyama Youhaiden (湯山遥拝�
 ** 11 glass pieces
 ** Fragments of crucibles, etc. (grouped)
 *: These excavated artifacts are stored in the storage facility within the shrine precincts.
+
 === National Historic Sites ===
 The shrine precincts have been designated as part of the national historic site “Izumo Tamatsukuri Site” (Miyanoue area), designated on October 12, Taishō 11{{Sfn|Tamatsukuriyu Shrine (Heibonsha)|1995}}<ref name="説明板">On-site information board.</ref>{{Sfn|Tamatsukuriyu Shrine (Shikinaisha)|1983}}.
+
 === Shimane Prefecture Designated Cultural Properties ===
 * Historic Sites
 ** Tamatsukuri Tsukiyama Kofun
 **: A circular tumulus on the western side of the Tamatsukuri area. Excavated in the 4th year of {{ill|Ansei|en|Ansei|qid=Q1327259|lt=Ansei}} (1857), it yielded a bronze mirror, among other items, and presently two boat-shaped stone sarcophagi are exposed<ref>“Tamatsukuri Tsukiyama Kofun”, in Japanese Historical Place Names, Volume 33: Place Names of Shimane Prefecture, Heibonsha, 1995.</ref>. The tumulus area is part of the shrine grounds<ref name="由緒書"/>. Designated on June 13, Showa 36<ref>[http://www1.city.matsue.shimane.jp/bunka/bunkazai/siteibun/kensitei.html Prefectural Cultural Properties] (Matsue City website).</ref>
+
 === Matsue City Designated Cultural Properties ===
 * Tangible Cultural Properties
 ** Journal of the Upper Bathing Entry (ancient document) – Designated on July 10, Heisei 14<ref name="市指定">[http://www1.city.matsue.shimane.jp/bunka/bunkazai/siteibun/sisitei.html City Designated Cultural Properties] (Matsue City website).</ref>
 ** Excavated Materials from the Tamatsukuri Ancient Tomb (archaeological data) – Designated on March 31, Showa 61<ref name="市指定"/>.
+
 == On-site Information ==
 '''Address'''
 * {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}{{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}} Tamayu Town Tamatsukuri 508
+
 '''Access'''
 * From {{ill|West Japan Railway Company|en|West Japan Railway Company|qid=Q502125|lt=West Japan Railway Company (JR West)}}’s {{ill|Tamatsukuri-Onsen Station|en|Tamatsukuri-Onsen Station|qid=Q3611066|lt=Tamatsukuriyu Onsen Station}}
 ** Bus: Take {{ill|Ichibata Bus|ja|一畑バス|12=simple|13=User:Immanuelle/Ichihata Bus|comment=changed title based on wikidata|qid=Q11352955}} (bound for {{ill|Tamatsukuri Onsen|en|Tamatsukuri Onsen|qid=Q3514711|lt=Tamatsukuriyu Onsen}}) and alight at the “Tamatsukuriyu Onsen” bus stop.
+
 '''Surroundings'''
 * {{ill|Tamatsukuri Onsen|en|Tamatsukuri Onsen|qid=Q3514711|lt=Tamatsukuriyu Onsen}}
 * {{ill|Izumo Tamatsukuri site|en|Izumo Tamatsukuri site|qid=Q18990378|lt=Izumo Tamatsukuri Historical Park}}
 * Izumo Tamatsukuri Museum
 * {{ill|Tamatsukuri Castle|ja|玉造要害山城|12=simple|13=User:Immanuelle/Tamatsukuriyu Yougai Yamashiro Ruins|comment=changed title based on wikidata|qid=Q11572808}}
 * Seigan-ji
+
 == References ==
 {{reflist|2}}
+
 == Further Reading ==
 * Shrine History Document
 * On-site Information Board
@@ -187,10 +241,12 @@ The shrine precincts have been designated as part of the national historic site 
 *** {{Wikicite|reference=Kōmori, “Tamatsukuriyu Shrine”|ref={{Harvid|Tamatsukuriyu Shrine (Shikinaisha)|1983}}}}, {{Wikicite|reference=Kōmori, “The Same, Zaka-Kankoku Itate Shrine”|ref={{Harvid|The same, Zaka-Kankoku Itate Shrine (Shikinaisha)|1983}}}}.
 ** {{Cite book|language=ja|editor=Kenichi Tanikawa|editor-link=Kenichi Tanikawa|author=Hara Hiroshi|year=2000|chapter=Tamatsukuriyu Shrine|title=Japanese Deities – Shrines and Sacred Sites – 7: San'in <New Reprint>|publisher=[[Hakusuisha]]|isbn=978-4560025079|ref={{Harvid|Tamatsukuriyu Shrine (Deities)|2000}}}}
 ** Toshihiro Masuo, Exploring Izumo Shrines: All 399 Shrines Recorded in the Izumo Province Fudoki, Hokosha Co., Ltd., 2017.
+
 == External Links ==
 {{Commonscat|Tamatsukuriyu-jinja}}
 * [https://www.kankou-matsue.jp/kankou/desc/?cat=寺院神社&spot=27774 Tamatsukuriyu Shrine] – Matsue Tourism Association
 * [https://www.kankou-shimane.com/destination/20237 Tamatsukuriyu Shrine] – Shimane Prefecture Tourism Federation
+
 {{Redirected Category Membership
 |redirect1=Tamatsukuriyu Tsukiyama Kofun
 |1-1=Forts of Shimane Prefecture
@@ -198,7 +254,16 @@ The shrine precincts have been designated as part of the national historic site 
 |1-3=Circular Kofun
 |1-4=Shimane Prefecture Designated Historic Sites
 }}
+
 '''Tamatsukuriyu Shrine''' (玉作湯神社)
+
+{{translated page|ja|玉作湯神社|version=102536909|comment=Imported full ja history}}
+
+{{Commons category|Tamatsukuriyu-jinja}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tamatsukuri Shrine (Q11572397)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -207,19 +272,20 @@ The shrine precincts have been designated as part of the national historic site 
 | {{ill|Ou district|ja|意宇郡|zh|意宇郡|qid=Q11073594}} || {{ill|Tamatsukuri Shrine|lt=Tamatsukuriyu Shrine|ja|玉作湯神社|commons|Category:Tamatsukuriyu-jinja|qid=Q11572397}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|35.413608|133.011835|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182792 DB]
 |}
 
-{{translated page|ja|玉作湯神社|version=102536909|comment=Imported full ja history}}
-{{Commons category|Tamatsukuriyu-jinja}}
-
+{{wikidata link|Q11572397|da|d:Q11572397|ja|玉作湯神社|co|commons:Category:Tamatsukuriyu-jinja|check_date=2026-05-11}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Matsue]]
 [[Category:Former Prefectural Shrines in Shimane Prefecture]]
 [[Category:History of Matsue]]
 [[Category:Important Cultural Properties in Matsue City]]
 [[Category:Ken-sha]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Onsen Shrines]]
 [[Category:Shikinaisha in Izumo Province]]
 [[Category:Wikidata has short description]]
 [[Category:Junior Fourth Rank]]
 [[Category:Senior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Pages with 50+ untranslated japanese characters]]

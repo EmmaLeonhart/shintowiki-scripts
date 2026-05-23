@@ -1,39 +1,65 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tonoki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+
+
 {{Infobox religious building|image=File:Tonoki-jinja, haiden.jpg|prefecture={{ill|Takaishi, Osaka|qid=Q857218}}|coordinates={{Coord|34.521128|N|135.456529}}}}{
 {
 == Tonoki Shrine (等乃伎神社) ==
+
 '''Tonoki Shrine''' (等乃伎神社, also pronounced Tonogi Shrine) is a Shinto shrine located in Toriishi, Takaishi City, Osaka Prefecture. It is a designated {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and a former village shrine under the old shrine Ranking system.
+
 [[File:Tonogi-jinja.jpg|thumbnail|Torii of Tonoki Shrine]]
+
 === Deities Enshrined ===
 ''' Main Deity
 * {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Ame-no-Koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}} (天児屋根命, 天兒屋根命)
+
 ''' Associated Deities
 * {{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|ja|誉田別命|12=simple|13=User:Immanuelle/Emperor Ōjin|ja_comment=jawiki redirects to 応神天皇|comment=changed title based on wikidata|qid=Q317997}}
 * {{ill|Sugawara no Michizane|2=ja|3=菅原道真|ja|Sugawara no Michizane|2=ja|3=菅原道真|12=simple|13=User:Immanuelle/Sugawara no Michizane|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q382005}}
-* {{ill|Toshigami|lt=Toshigami|lt=Ōtoshi-no-Kami|ja|大歳神|12=simple|13=User:Immanuelle/Ōtoshi-no-Kami|qq=}}
+* {{ill|Toshigami|lt=Toshigami|lt=Ōtoshi-no-Kami|ja|大歳神|12=simple|13=User:Immanuelle/Ōtoshi-no-Kami}}
 * Tsubo Daijin (壺大神)
+
 === History ===
 According to the shrine's noticeboard, the name "Tonoki" derives from the Tonogai clan, a branch of the ancient {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan}}, who ruled this area. A record in the {{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}} mentions a person named "Nakatomi no Tonogai no Muraji Takeda-me" in the 4th year of Tenpyō Shōhō (752). The shrine is believed to have been established around that period when the Nakatomi clan worshipped their ancestor, Ame-no-Koyane-no-Mikoto. That same year, notable figures such as Fujiwara no Muchimaro, the {{ill|Daijō-daijin|en|Daijō-daijin|qid=Q1157586|lt=Daijō-daijin}}, and his son Fujiwara no Nakamaro, also known as Emi no Oshikatsu, are said to have visited and resided in the area.<ref name="富木1">[https://jinja-bukkaku.net/detail.htm?jbId=103671 Tonoki Shrine Information - Jinja Bukkaku Search]. Retrieved June 22, 2018.</ref>
-The shrine is listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} as a Shikinaisha.<ref>{{Cite web|title=Digital Collection of the National Diet Library - Engishiki, Volume 9|url=https://dl.ndl.go.jp/info:ndljp/pid/1273537/37|accessdate=May 29, 2018}}</ref> 
+
+The shrine is listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} as a Shikinaisha.<ref>{{Cite web|title=Digital Collection of the National Diet Library - Engishiki, Volume 9|url=https://dl.ndl.go.jp/info:ndljp/pid/1273537/37|accessdate=May 29, 2018}}</ref> 
+
 In 1908–1909, the shrine merged with several other local shrines, including Inari Shrine from the old Ichiba Village, Tsubo Shrine from Ōsono Village, Sugawara Shrine from Habu Village, Ōtoshi Shrine from Shinke Village, and Ōtoshi Shrine from Minamide Village.
+
 === Festivals and Events ===
 The annual festival is held on October 5. Traditionally, danjiri (festival floats) from the surrounding districts would visit the shrine on this day and the days before and after. Presently, the festival has been shifted to the first or second Saturday in October for convenience, with danjiri parades taking place then.
+
 === Shrine Grounds ===
 The current main and worship halls were rebuilt in 1987 (Shōwa 62). The main hall is a {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} structure with three bays, and the worship hall is a seven-bay {{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=Irimoya-zukuri}} style with a {{ill|Karahafu|en|Karahafu|qid=Q977293|lt=Karahafu}} gabled entrance.
+
 The grounds feature lush broadleaf evergreen forests, with a large camphor tree serving as the sacred tree (*Shinboku*). Burnt stumps of camphor trees from the Nanboku-chō period and ancient tiles from the Heian and Kamakura periods have been excavated from the grounds.
+
 ==== Sub-Shrines ====
-* {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}}: Dedicated to {{ill|Ukanomitama|ja|宇賀之御魂神|12=simple|13=User:Immanuelle/Ukanomitama|ja_comment=jawiki link invalid}}
-* {{ill|Setsumatsusha|ja|末社|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся|qq=}}: Dedicated to [[Ame-no-Minakanushi]]
+* {{ill|Setsumatsusha|ja|末社|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся}}: Dedicated to {{ill|Ukanomitama|ja|宇賀之御魂神|12=simple|13=User:Immanuelle/Ukanomitama|ja_comment=jawiki link invalid}}
+* {{ill|Setsumatsusha|ja|末社|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|12=simple|13=User:Immanuelle/|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Massha|2=ja|3=摂末社|4=zh|5=攝末社|6=es|7=Setsumatsusha|8=fr|9=Setsumatsusha|10=ru|11=сэцумацусся|12=uk|13=сэцумацусся}}: Dedicated to [[Ame-no-Minakanushi]]
+
 === Location ===
 * Address: 2-14-48 Toriishi, Takaishi City, Osaka Prefecture
 * Access: About 8 minutes on foot from {{ill|Tonoki Station|en|Tonoki Station|qid=Q857450|lt=Tōki Station}} on the JR Hanwa Line (approximately 600 meters southeast).
+
 === References ===
 {{Reflist}}
+
 === Related Articles ===
 {{Commonscat|Tonogi-jinja}}
 * {{ill|list of Shinto shrine in Osaka prefecture|ja|大阪府の神社一覧|12=simple|13=User:Immanuelle/List of shrines in Osaka Prefecture|comment=changed title based on wikidata|qid=Q11440930}}
+
 === External Links ===
 * [https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/takaishi-city/10033tonogijinja.html Tonoki Shrine] - Osaka Shrine Association
+
+{{translated page|ja|等乃伎神社|version=98240068|comment=Imported full ja history}}
+
+{{Commons category|Tonogi-jinja}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tonoki Shrine (Q55532347)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -42,10 +68,10 @@ The grounds feature lush broadleaf evergreen forests, with a large camphor tree 
 | {{ill|Ōtori district|ja|大鳥郡|zh|大鳥郡|qid=Q3270651}} || {{ill|Tonoki Shrine|lt=Tonoki Shrine|ja|等乃伎神社|commons|Category:Tonogi-jinja|qid=Q55532347}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Hoe and Quiver|qid=Q135009152|lt=Hoe and Quiver}}) || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.521167|135.456489|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180976 DB]
 |}
 
-{{translated page|ja|等乃伎神社|version=98240068|comment=Imported full ja history}}
-{{Commons category|Tonogi-jinja}}
-
+{{wikidata link|Q55532347|co|commons:Category:Tonogi-jinja|ja|等乃伎神社|check_date=2026-05-11}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Takaishi]]
 [[Category:Shikinaisha in Izumi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
@@ -53,3 +79,4 @@ The grounds feature lush broadleaf evergreen forests, with a large camphor tree 
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
 [[Category:Shrines receiving Hoe and Quiver]]
+[[Category:Kanpei-sha]]

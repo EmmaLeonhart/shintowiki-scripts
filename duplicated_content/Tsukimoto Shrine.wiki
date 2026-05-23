@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsukimoto_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
  | name=Tsukimoto Shrine
  | religious_affiliation = [[Shinto]]
@@ -10,29 +12,47 @@
  | Main Festival=September 12
 | prefecture={{ill|Takayama, Gifu|qid=Q622594}}
  }}
-'''Tsukimoto Shrine''' (槻本神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[:en:Takayama City|Takayama City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}. It is identified as the {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} "Tsukimoto Shrine" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}'s {{ill|Ōno District, Gifu|en|Ōno District, Gifu|qid=Q31671|lt=Ōno District (Gifu)}}.
+
+'''Tsukimoto Shrine''' (槻本神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[:en:Takayama City|Takayama City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}. It is identified as the {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} "Tsukimoto Shrine" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}'s {{ill|Ōno District, Gifu|en|Ōno District, Gifu|qid=Q31671|lt=Ōno District (Gifu)}}.
+
 The shrine's sacred cedar tree ({{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Cryptomeria}}) is designated as a Gifu Prefecture Natural Monument.<ref name="sugi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/tenki/takayamsi/tukimoto.html |title=Tsukimoto Shrine's Cedar Tree |publisher=Gifu Prefecture |accessdate=2013-04-20}}</ref> The tree is estimated to be over 1,200 years old, and local lore warns that those who harm it will quickly fall ill and die.
+
 == History ==
 The date of the shrine's founding is unknown. According to legend, the original sacred object was a giant {{ill|Zelkova serrata|en|Zelkova serrata|qid=Q920344|lt=Zelkova}} tree (槻), which continued to exist even after the construction of the shrine buildings. Another version of the legend attributes the sacred status to a giant cedar tree instead of a zelkova.
+
 The current shrine structure was rebuilt in the 5th year of {{ill|Genbun|en|Genbun|qid=Q1145754|lt=Genbun}} (1740). In the 4th year of the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} (1871), the shrine was designated as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+
 == Enshrined Deities ==
 * [[Ōyama-tsumi|Ōyama-tsumi no Kami]]
 * [[Susanoo-no-Mikoto|Kushimikeno no Kami]]
 * [[Takeminakata|Takeminakata no Kami]]
 * [[Yasakatome|Yasakatome no Kami]]
+
 Alternate theories identify the deities as {{ill|Ukemochi|en|Ukemochi|qid=Q2280323|lt=Ukemochi no Kami}} and Tsukimoto Daimyōjin.
+
 == Cultural Properties ==
 * **Cedar Tree of Tsukimoto Shrine** - Designated as a Gifu Prefecture Natural Monument.<ref name="sugi" />
 * **Monument Inscribed with the Shrine's name** - Designated as a Takayama City Historic Site.<ref>{{Cite web|language=ja|date= |url=http://www.city.takayama.lg.jp/bunkazai/bunkazai/siseki/index.htm |title=Historic Sites and Scenic Spots |publisher=Takayama City |accessdate=2013-04-23}}</ref>
+
 == Access ==
 * Approximately 7 km northeast of {{ill|Takayama Station|en|Takayama Station|qid=Q874020|lt=Takayama Station}} on the {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}}.
 ** Follow [[:en:National Route 158|National Route 158]] eastward along the Yamaguchi Valley (a tributary of the {{ill|Jinzū River|en|Jinzū River|qid=Q1156518|lt=Miyagawa}}) from Nyūkawa Town, Yamaguchi.
 ** Alternatively, travel south from National Route 158 in Nyūkawa Town, Bōgata. Pass through the Nyūkawa Tunnel on the Hida Farm Road, then head west for about 1 km.
+
 == Notes ==
 {{Reflist}}
+
 == Related Articles ==
-* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province|qq=}}
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
 {{Shinto-stub}}
+
+{{translated page|ja|槻本神社|version=98148033|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Tsukimoto Shrine (Q11542024)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hida Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -41,16 +61,123 @@ Alternate theories identify the deities as {{ill|Ukemochi|en|Ukemochi|qid=Q22803
 | {{ill|Ōno District, Gifu|en|Ōno District, Gifu|ja|大野郡|ceb|Ōno Gun|es|Distrito de Ōno (Gifu)|fa|شهرستان اونو، گیفو|fr|District d&amp;#x27;Ōno|id|Distrik Ōno, Gifu|it|Distretto di Ōno|ko|오노군|pl|Powiat Ōno|pt|Distrito de Ono (Gifu)|th|อำเภอโอโนะ (จังหวัดกิฟุ)|uk|Повіт Оно (Ґіфу)|zh|大野郡|lt=Ono district|qid=Q31671}} || {{ill|Tsukimoto Shrine|lt=Tsukimoto Shrine|ja|槻本神社|qid=Q11542024}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|36.160999|137.318514|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181962 DB]
 |}
 
+{{wikidata link|Q11542024|ja|槻本神社|check_date=2026-05-12}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+ | name=Tsukimoto Shrine
+ | religious_affiliation = [[Shinto]]
+|image=File:Tsukimoto shrine.jpg
+ | location={{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}} [[:en:Takayama City|Takayama City]], Nyūkawa Town, Yamaguchi Aza Tsukimoto 145
+ | coordinates={{Coord|36.161083|N|137.318639}}
+ | deity={{ill|Ōyamatsumi|qid=Q386563}}
+ | type={{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+ | Main Festival=September 12
+| prefecture={{ill|Takayama, Gifu|qid=Q622594}}
+ }}
+
+'''Tsukimoto Shrine''' (槻本神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[:en:Takayama City|Takayama City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}. It is identified as the {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} "Tsukimoto Shrine" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}'s {{ill|Ōno District, Gifu|en|Ōno District, Gifu|qid=Q31671|lt=Ōno District (Gifu)}}.
+
+The shrine's sacred cedar tree ({{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Cryptomeria}}) is designated as a Gifu Prefecture Natural Monument.<ref name="sugi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/tenki/takayamsi/tukimoto.html |title=Tsukimoto Shrine's Cedar Tree |publisher=Gifu Prefecture |accessdate=2013-04-20}}</ref> The tree is estimated to be over 1,200 years old, and local lore warns that those who harm it will quickly fall ill and die.
+
+== History ==
+The date of the shrine's founding is unknown. According to legend, the original sacred object was a giant {{ill|Zelkova serrata|en|Zelkova serrata|qid=Q920344|lt=Zelkova}} tree (槻), which continued to exist even after the construction of the shrine buildings. Another version of the legend attributes the sacred status to a giant cedar tree instead of a zelkova.
+
+The current shrine structure was rebuilt in the 5th year of {{ill|Genbun|en|Genbun|qid=Q1145754|lt=Genbun}} (1740). In the 4th year of the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} (1871), the shrine was designated as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+
+== Enshrined Deities ==
+* [[Ōyama-tsumi|Ōyama-tsumi no Kami]]
+* [[Susanoo-no-Mikoto|Kushimikeno no Kami]]
+* [[Takeminakata|Takeminakata no Kami]]
+* [[Yasakatome|Yasakatome no Kami]]
+
+Alternate theories identify the deities as {{ill|Ukemochi|en|Ukemochi|qid=Q2280323|lt=Ukemochi no Kami}} and Tsukimoto Daimyōjin.
+
+== Cultural Properties ==
+* **Cedar Tree of Tsukimoto Shrine** - Designated as a Gifu Prefecture Natural Monument.<ref name="sugi" />
+* **Monument Inscribed with the Shrine's name** - Designated as a Takayama City Historic Site.<ref>{{Cite web|language=ja|date= |url=http://www.city.takayama.lg.jp/bunkazai/bunkazai/siseki/index.htm |title=Historic Sites and Scenic Spots |publisher=Takayama City |accessdate=2013-04-23}}</ref>
+
+== Access ==
+* Approximately 7 km northeast of {{ill|Takayama Station|en|Takayama Station|qid=Q874020|lt=Takayama Station}} on the {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}}.
+** Follow [[:en:National Route 158|National Route 158]] eastward along the Yamaguchi Valley (a tributary of the {{ill|Jinzū River|en|Jinzū River|qid=Q1156518|lt=Miyagawa}}) from Nyūkawa Town, Yamaguchi.
+** Alternatively, travel south from National Route 158 in Nyūkawa Town, Bōgata. Pass through the Nyūkawa Tunnel on the Hida Farm Road, then head west for about 1 km.
+
+== Notes ==
+{{Reflist}}
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
+{{Shinto-stub}}
+
 {{translated page|ja|槻本神社|version=98148033|comment=Imported full ja history}}
 
+{{wikidata link|Q11542024}}
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+ | name=Tsukimoto Shrine
+ | religious_affiliation = [[Shinto]]
+|image=File:Tsukimoto shrine.jpg
+ | location={{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}} [[:en:Takayama City|Takayama City]], Nyūkawa Town, Yamaguchi Aza Tsukimoto 145
+ | coordinates={{Coord|36.161083|N|137.318639}}
+ | deity={{ill|Ōyamatsumi|qid=Q386563}}
+ | type={{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+ | Main Festival=September 12
+| prefecture={{ill|Takayama, Gifu|qid=Q622594}}
+ }}
+
+'''Tsukimoto Shrine''' (槻本神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[:en:Takayama City|Takayama City]], {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}. It is identified as the {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} "Tsukimoto Shrine" in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} for {{ill|Hida Province|en|Hida Province|qid=Q1056535|lt=Hida Province}}'s {{ill|Ōno District, Gifu|en|Ōno District, Gifu|qid=Q31671|lt=Ōno District (Gifu)}}.
+
+The shrine's sacred cedar tree ({{ill|Cryptomeria|en|Cryptomeria|qid=Q147388|lt=Cryptomeria}}) is designated as a Gifu Prefecture Natural Monument.<ref name="sugi">{{Cite web|language=ja|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/tenki/takayamsi/tukimoto.html |title=Tsukimoto Shrine's Cedar Tree |publisher=Gifu Prefecture |accessdate=2013-04-20}}</ref> The tree is estimated to be over 1,200 years old, and local lore warns that those who harm it will quickly fall ill and die.
+
+== History ==
+The date of the shrine's founding is unknown. According to legend, the original sacred object was a giant {{ill|Zelkova serrata|en|Zelkova serrata|qid=Q920344|lt=Zelkova}} tree (槻), which continued to exist even after the construction of the shrine buildings. Another version of the legend attributes the sacred status to a giant cedar tree instead of a zelkova.
+
+The current shrine structure was rebuilt in the 5th year of {{ill|Genbun|en|Genbun|qid=Q1145754|lt=Genbun}} (1740). In the 4th year of the {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} (1871), the shrine was designated as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+
+== Enshrined Deities ==
+* [[Ōyama-tsumi|Ōyama-tsumi no Kami]]
+* [[Susanoo-no-Mikoto|Kushimikeno no Kami]]
+* [[Takeminakata|Takeminakata no Kami]]
+* [[Yasakatome|Yasakatome no Kami]]
+
+Alternate theories identify the deities as {{ill|Ukemochi|en|Ukemochi|qid=Q2280323|lt=Ukemochi no Kami}} and Tsukimoto Daimyōjin.
+
+== Cultural Properties ==
+* **Cedar Tree of Tsukimoto Shrine** - Designated as a Gifu Prefecture Natural Monument.<ref name="sugi" />
+* **Monument Inscribed with the Shrine's name** - Designated as a Takayama City Historic Site.<ref>{{Cite web|language=ja|date= |url=http://www.city.takayama.lg.jp/bunkazai/bunkazai/siseki/index.htm |title=Historic Sites and Scenic Spots |publisher=Takayama City |accessdate=2013-04-23}}</ref>
+
+== Access ==
+* Approximately 7 km northeast of {{ill|Takayama Station|en|Takayama Station|qid=Q874020|lt=Takayama Station}} on the {{ill|Takayama Main Line|en|Takayama Main Line|qid=Q1188357|lt=Takayama Main Line}}.
+** Follow [[:en:National Route 158|National Route 158]] eastward along the Yamaguchi Valley (a tributary of the {{ill|Jinzū River|en|Jinzū River|qid=Q1156518|lt=Miyagawa}}) from Nyūkawa Town, Yamaguchi.
+** Alternatively, travel south from National Route 158 in Nyūkawa Town, Bōgata. Pass through the Nyūkawa Tunnel on the Hida Farm Road, then head west for about 1 km.
+
+== Notes ==
+{{Reflist}}
+
+== Related Articles ==
+* {{ill|List of Shikinaisha in Hida Province|ja|飛騨国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Hida Province}}
+
+{{Shinto-stub}}
+
+{{translated page|ja|槻本神社|version=98148033|comment=Imported full ja history}}
+
+{{wikidata link|Q11542024}}
+
+==Notes==
+<references group="lower-alpha"/>
 [[Category:Former Gō-sha in Gifu Prefecture]]
 [[Category:Gō-sha]]
 [[Category:Kokuhei-sha]]
 [[Category:Municipal Historic Sites in Gifu Prefecture]]
 [[Category:Natural Monuments Designated by Gifu Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Hida Province]]
 [[Category:Shinto shrines in Gifu Prefecture]]
 [[Category:Shinto shrines in Takayama, Gifu]]
 [[Category:Wikidata has short description]]
 [[Category:Junior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]

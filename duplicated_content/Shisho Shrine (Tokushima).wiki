@@ -1,6 +1,8 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shisho_Shrine_%28Tokushima%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name= Shisho Shrine
+| religious_affiliation = [[Shinto]]
 |image= [[File:Sisyo-jinja.jpg|240px]]
 |location= {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}} {{ill|Tokushima (city)|en|Tokushima (city)|qid=Q207309|lt=Tokushima}} {{ill|Fukushima|en|Fukushima|qid=Q230656|lt=Fukushima (Tokushima City)}} 2-chome 3-34
 |coordinates= 
@@ -13,23 +15,32 @@
 |Map= Japan Tokushima city
 }}
 '''Shisho Shrine''' (四所神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Fukushima|en|Fukushima|qid=Q230656|lt=Fukushima (Tokushima City)}}, {{ill|Tokushima (city)|en|Tokushima (city)|qid=Q207309|lt=Tokushima}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}. It has been designated a {{ill|Q11273094|ja|とくしま市民遺産|12=simple|13=User:Immanuelle/Tokushima Citizen Heritage|comment=changed title based on wikidata|qid=Q11273094}}.
+
 == Overview ==
 The origins of Shisho Shrine date back to 807 (Daido 2), according to tradition (see {{ill|Folklore|en|Folklore|qid=Q36192|lt=Legend}}). It is one of the five notable shrines of central Tokushima. 
+
 Historically known as Shisho Myojin or Shisho Daimyojin, the shrine is affectionately called "Fukushima Myojin" by locals. 
+
 There is a legend that a serpent resides within the shrine, though the details were nearly forgotten. Recently discovered ancient documents revealed that two sacred {{ill|Dragon Serpents|ja|龍蛇神|12=simple|13=User:Immanuelle/Dragon Serpents|ja_comment=jawiki link invalid}} from {{ill|Izumo-taisha|en|Izumo-taisha|qid=Q696362|lt=Izumo Taisha}} are enshrined here. In 1788 (Tenmei 8), the {{ill|Dragon Serpents|ja|龍蛇神|12=simple|13=User:Immanuelle/Dragon Serpents|ja_comment=jawiki link invalid}} were delivered to the Tokushima Domain from Izumo Taisha. Revering their divine power, the domain enshrined them in Shisho Shrine, where they were venerated during ceremonial voyages. 
+
 Two years later, in 1790 (Kansei 2), another Dragon Serpent brought by the naval commander Mori Jingobei was also enshrined. It was recorded in ''Zoku Awa Kuni Choko Zassho'' that the first serpent was male, while the second was female, forming a mystical pair.
+
 In 2024 (Reiwa 6), the shrine began holding the {{ill|Dragon Serpent Festival|ja|龍蛇神祭|12=simple|13=User:Immanuelle/Dragon Serpent Festival|ja_comment=jawiki link invalid}}. 
+
 The shrine grounds include a literary monument dedicated to the novelist [[:en:Unno Juza|Unno Juza]], who grew up in the area. The shrine is also connected to {{ill|Hana Kaifu|ja|海部ハナ|12=simple|13=User:Immanuelle/Hana Kaifu|comment=changed title based on wikidata|qid=Q11559318}}.
+
 == Festivals ==
 * {{ill|January 1|en|January 1|qid=Q2150|lt=January 1}} - New Year Festival
 * {{ill|May 15|en|May 15|qid=Q2562|lt=May 15}} - Taidai Kagura Festival
 * {{ill|July 8|en|July 8|qid=Q2692|lt=July 8}}, {{ill|July 9|en|July 9|qid=Q2690|lt=July 9}} - Summer Festival
 * {{ill|October 27|en|October 27|qid=Q2956|lt=October 27}}, {{ill|October 28|en|October 28|qid=Q2952|lt=October 28}} - Autumn Festival (with ''Chōsa'' portable shrine)
+
 == Grounds ==
 * {{ill|Tenjinsha|ja|天神社|12=simple|13=User:Immanuelle/Tenjin Shrine|comment=changed title based on wikidata|qid=Q11443279}}
 * {{ill|Iō Shrine|ja|醫王神社|12=simple|13=User:Immanuelle/Iō Shrine|ja_comment=jawiki link invalid}}
 * '''Tree of Owls''' - A pine tree designated as Tokushima City’s first protected tree in 1974 (Showa 49).
 * The shrine grounds include a literary monument for [[:en:Unno Juza|Unno Juza]]. Nearby landmarks include {{ill|Q11528045|ja|東照寺|12=simple|13=User:Immanuelle/Toshoji (Tokushima)|comment=changed title based on wikidata|qid=Q11528045}} and {{ill|Q11494981|ja|慈光寺|12=simple|13=User:Immanuelle/Jikōji (Tokushima)|comment=changed title based on wikidata|qid=Q11494981}}.
+
 <gallery>
 四所神社 (徳島市) 境内 1.jpg|View of the Shisho Shrine grounds
 四所神社 (徳島市) ふくろうの樹.jpg|Tree of Owls
@@ -38,28 +49,115 @@ The shrine grounds include a literary monument dedicated to the novelist [[:en:U
 四所神社 (徳島市) 海野十三碑 表.jpg|Monument to Unno Juza (front)
 四所神社 (徳島市) 海野十三碑 裏.jpg|Monument to Unno Juza (back)
 </gallery>
+
 == Legend ==
 A legend recounts that in the offshore area of Tokushima City's {{ill|Q11556321|ja|津田町|12=simple|13=User:Immanuelle/Tsuda Town|comment=changed title based on wikidata|qid=Q11556321}}, there was once an island called Kamejima, where a shrine adorned with two deer statues stood. An elderly couple visited the shrine daily until they dreamt of a deity warning, "When the deer’s eyes turn red, the island will sink; take the deer and flee." A young pRankster painted the deer’s eyes red, prompting the couple to flee with the statues. That night, a great tsunami submerged the island. Grateful for their rescue, the couple enshrined the deer at Shisho Shrine.
+
 == Central Tokushima Shrines ==
-* {{ill|Kasuga Shrine (Tokushima)|ja|春日神社|12=simple|13=User:Immanuelle/Kasuga Shrine (Tokushima)|qq=}} - Tokushima City {{ill|Bizanchō|ja|眉山町|12=simple|13=User:Immanuelle/Bizan Town|comment=changed title based on wikidata|qid=Q11582582}} Ōtakiyama
-* {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社|12=simple|13=User:Immanuelle/Suwa Shrine (Tokushima City)|qq=}} - Tokushima City {{ill|Minamisako|ja|南佐古三番町|12=simple|13=User:Immanuelle/Minami Sako 3rd Avenue|ja_comment=jawiki redirects to 南佐古|comment=changed title based on wikidata|qid=Q11407479}}
+* {{ill|Kasuga Shrine (Tokushima)|ja|春日神社|12=simple|13=User:Immanuelle/Kasuga Shrine (Tokushima)}} - Tokushima City {{ill|Bizanchō|ja|眉山町|12=simple|13=User:Immanuelle/Bizan Town|comment=changed title based on wikidata|qid=Q11582582}} Ōtakiyama
+* {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社|12=simple|13=User:Immanuelle/Suwa Shrine (Tokushima City)}} - Tokushima City {{ill|Minamisako|ja|南佐古三番町|12=simple|13=User:Immanuelle/Minami Sako 3rd Avenue|ja_comment=jawiki redirects to 南佐古|comment=changed title based on wikidata|qid=Q11407479}}
 * {{ill|Hachiman shrine|ja|八幡神社|12=simple|13=User:Immanuelle/Hachiman Shrine (Tokushima)|ja_comment=jawiki redirects to 八幡宮|comment=changed title based on wikidata|qid=Q11390939}} - Tokushima City {{ill|Iga, Mie (town)|en|Iga, Mie (town)|qid=Q5991401|lt=Iga Town}}
 * {{ill|Kotohira shrines|ja|金刀比羅神社|12=simple|13=User:Immanuelle/Kotohira Shrine (Tokushima)|comment=changed title based on wikidata|qid=Q11646488}} - Tokushima City {{ill|Seimicho|ja|勢見町|12=simple|13=User:Immanuelle/Seimi Town|comment=changed title based on wikidata|qid=Q11400568}}
+
 == Access ==
 * Approximately 5 minutes by car from {{ill|Tokushima Station|en|Tokushima Station|qid=Q860775|lt=Tokushima Station}} (JR).
 * Near "Fukushima Myojin-mae" bus stop on {{ill|Tokushima City Transportation Bureau|ja|徳島市営バス|12=simple|13=User:Immanuelle/Tokushima City Bus|ja_comment=jawiki redirects to 徳島市交通局|comment=changed title based on wikidata|qid=Q11489713}} routes to Okisumura and Nankai Ferry.
+
 == References ==
 <references />
+
 == Related Articles ==
 * {{ill|Shisho Shrine (disambiguation)|ja|四所神社|12=simple|13=User:Immanuelle/Shisho Shrine|comment=changed title based on wikidata|qid=Q11419883}}
 * {{ill|Q11563007|ja|渭東地区|12=simple|13=User:Immanuelle/Itō District|comment=changed title based on wikidata|qid=Q11563007}}
 * {{ill|Tokushima Prefectural Road Route 29|ja|徳島県道29号徳島環状線|12=simple|13=User:Immanuelle/Tokushima Prefectural Road 29|comment=changed title based on wikidata|qid=Q11490171}} - Located along the prefectural road.
+
 == External Links ==
 * [https://www.city.tokushima.tokushima.jp/kankou/shimin_isan/history/022.html Tokushima City: Citizen Heritage - Shisho Shrine Boat Floats]
+
 {{Shinto-stub}}
+
 {{translated page|ja|四所神社 (徳島市)|version=100843260|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+'''Shisho Shrine''' (四所神社) is a Shinto shrine located in [[:en:Tokushima City|Tokushima]], {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, Japan. It is recognized as part of the {{ill|Q11273094|ja|とくしま市民遺産|12=simple|13=User:Immanuelle/Tokushima City Heritage|comment=changed title based on wikidata|qid=Q11273094}}.
+
+== Overview ==
+
+The origins of Shisho Shrine date back to 807 (Daido 2), according to tradition (details are provided under [[#Legend|Legend]]). It is one of the five shrines in central Tokushima.
+
+Historically known as Shisho Myojin or Shisho Daimyojin, it remains affectionately referred to as "Fukushima's Myojin-san" by locals.
+
+A long-standing legend mentions that "a snake resides in Shisho Shrine," though the details were nearly lost. Recently discovered historical documents reveal that two {{ill|Dragon-snake deities|ja|龍蛇神|12=simple|13=User:Immanuelle/Dragon-snake deities|ja_comment=jawiki link invalid}} from {{ill|Izumo-taisha|en|Izumo-taisha|qid=Q696362|lt=Izumo Taisha}} are enshrined here.
+
+In 1788 (Tenmei 8), the Tokushima Domain received a dragon-snake deity from Izumo Taisha and enshrined it in Shisho Shrine. During the domain lord's sankin-kōtai processions, the deity was carried aboard his ceremonial ship for blessings.
+
+Two years later, in 1790 (Kansei 2), General Mori Jingoemon of the Awa Navy brought another dragon-snake deity from Izumo. The earlier deity was male, and the new one was female, forming a pair. This unusual occurrence is documented in the *Zoku Awa-koku Choko Zassho*. 
+
+In 2024 (Reiwa 6), the Dragon-Snake Deity Festival was conducted to honor this history.
+
+A literary monument for the novelist [[:en:Unno Juza|Unno Jūza]], a local native, stands in front of the shrine. It is also associated with {{ill|Hana Kaifu|ja|海部ハナ|12=simple|13=User:Immanuelle/Kaifu Hana|comment=changed title based on wikidata|qid=Q11559318}}.
+
+== Festivals ==
+
+* {{ill|January 1|en|January 1|qid=Q2150|lt=January 1}} - New Year’s Festival (Saijitsusai)
+* {{ill|May 15|en|May 15|qid=Q2562|lt=May 15}} - Grand Kagura Festival
+* {{ill|July 8|en|July 8|qid=Q2692|lt=July 8}}–{{ill|July 9|en|July 9|qid=Q2690|lt=July 9}} - Summer Festival
+* {{ill|October 27|en|October 27|qid=Q2956|lt=October 27}}–{{ill|October 28|en|October 28|qid=Q2952|lt=October 28}} - Autumn Festival (Ship Danjiri)
+
+== Grounds ==
+
+* '''Ten Shrine''' (天神社)
+* '''Iō Shrine''' (醫王神社)
+* '''Fukuro Tree''': A pine tree designated as the first municipal protected tree of Tokushima City in 1974 (Showa 49).
+* A literary monument to [[:en:Unno Juza|Unno Jūza]] stands on the shrine grounds. Nearby, there are temples such as {{ill|Tōshō-ji Temple (Tokushima)|ja|東照寺 (徳島市)|12=simple|13=User:Immanuelle/Tōshōji|comment=changed title based on wikidata|qid=Q11528047}} and {{ill|Jiko-ji Temple|ja|慈光寺 (徳島市)|12=simple|13=User:Immanuelle/Jikōji|comment=changed title based on wikidata|qid=Q11494985}}.
+
+<gallery>
+四所神社 (徳島市) 境内 1.jpg|Shrine grounds of Shisho Shrine
+四所神社 (徳島市) ふくろうの樹.jpg|Fukuro Tree
+四所神社 (徳島市) 案内板.jpg|Information board
+四所神社 (徳島市) 境内 3.jpg|Main hall
+四所神社 (徳島市) 海野十三碑 表.jpg|Front of Unno Jūza monument
+四所神社 (徳島市) 海野十三碑 裏.jpg|Back of Unno Jūza monument
+</gallery>
+
+== Legend ==
+
+In the past, an island called Kamejima existed off the coast of {{ill|Q11556322|ja|津田町 (徳島市)|12=simple|13=User:Immanuelle/Tsuda Town, Tokushima City|comment=changed title based on wikidata|qid=Q11556322}}. A shrine on the island featured two decorated deer. An elderly couple who visited daily dreamed that the shrine deity warned them, "If the deer’s eyes turn red, the island will sink. Take the deer and flee."
+
+A mischievous youth painted the deer’s eyes red, prompting the couple to escape with the deer by boat. That night, a massive tsunami submerged the island. Believing their rescue was thanks to the deer, the couple enshrined them at Shisho Shrine. This story is recounted in local lore.<ref>{{Cite web|url=http://www.topics.or.jp/nie/117307666665/121360160271.html |title=Legend of Kameiso: Deer Protect Elderly Couple from Tsunami |work=Tokushima Shimbun |date=2008-06-16 |archiveurl=https://web.archive.org/web/20101017044927/https://www.topics.or.jp/nie/117307666665/121360160271.html |archivedate=2010-10-17}}</ref>
+
+== Central Five Shrines of Tokushima ==
+
+* {{ill|Kasuga Shrine (Tokushima)|ja|春日神社 (徳島市)|12=simple|13=User:Immanuelle/Kasuga Shrine (Tokushima City)}} - Located on Mt. Bizan, Tokushima
+* {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=simple|13=User:Immanuelle/Suwa Shrine (Tokushima City)}} - Located in Minamisako, Tokushima
+* {{ill|Hachiman Shrine (Tokushima City)|ja|八幡神社 (徳島市)|12=simple|13=User:Immanuelle/Hachiman Shrine (Tokushima City)}} - Located in Iga, Tokushima
+* {{ill|Konpira Shrine (Tokushima)|ja|金刀比羅神社 (徳島市)|12=simple|13=User:Immanuelle/Kotohira Shrine (Tokushima City)}} - Located in Semimachi, Tokushima
+
+== Access ==
+
+* Approximately 5 minutes by car from {{ill|Tokushima Station|en|Tokushima Station|qid=Q860775|lt=Tokushima Station}} (JR).
+* Near "Fukushima Myojin-mae" bus stop, accessible via [[Tokushima City Bus]] or [[Nankai Ferry]] routes.
+
+== References ==
+
+<references />
+
+== Related Articles ==
+
+* {{ill|Shisho Shrine (disambiguation)|ja|四所神社|12=simple|13=User:Immanuelle/Shisho Shrine|comment=changed title based on wikidata|qid=Q11419883}}
+* {{ill|Q11563007|ja|渭東地区|12=simple|13=User:Immanuelle/Ito District|comment=changed title based on wikidata|qid=Q11563007}}
+* {{ill|Tokushima Prefectural Road Route 29|ja|徳島県道29号徳島環状線|12=simple|13=User:Immanuelle/Tokushima Prefectural Route 29|comment=changed title based on wikidata|qid=Q11490171}}
+
+== External Links ==
+
+* [https://www.city.tokushima.tokushima.jp/kankou/shimin_isan/history/022.html Tokushima City: Shisho Shrine and Ship Danjiri]
+
+{{translated page|ja|四所神社 (徳島市)|version=100843260|comment=Imported full ja history}}
+
+{{wikidata link|Q11419882|ja|四所神社 (徳島市)|ja|四所神社 (徳島市福島)|ja|四所神社|en|Shisho Shrine (Tokushima)|check_date=2026-05-10}}
 [[Category:Former Gō-sha in Tokushima Prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Tokushima, Tokushima]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with interwikis with duplicate languages]]

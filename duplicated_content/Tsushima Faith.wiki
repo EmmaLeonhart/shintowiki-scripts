@@ -1,14 +1,24 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsushima_Faith for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
+
 == Tsushima Faith ==
+
 '''Tsushima Faith''' (津島信仰, Tsushima Shinkō) is a Shinto belief system centered around {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}}, located in {{ill|Tsushima, Aichi|en|Tsushima, Aichi|qid=Q816736|lt=Tsushima, Aichi}}, and is widely practiced mainly in the {{ill|Tōkai region|en|Tōkai region|qid=Q398989|lt=Tōkai region}}.
+
 It is a form of faith dedicated to {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}} and {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}}, making it a branch of {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion faith}}. However, Tsushima Faith also exhibits unique characteristics<ref>{{Cite journal|author=Yufuko Matsuyama |title=On the Relationship Between the 'Gozu Tennō Kōshiki' Owned by Tsushima Shrine and the 'Gozu Tennō Godan-shiki' Transmitted in Okumikawa |journal=Aichi Prefecture History Research |issn=1883-3799 |publisher=Aichi Prefecture |year=2017 |volume=21 |pages=57-72 |naid=130007696076 |doi=10.24707/aichikenshikenkyu.21.0_57 |url=https://doi.org/10.24707/aichikenshikenkyu.21.0_57 |accessdate=2021-07-01}}</ref>, with the {{ill|Tenno Matsuri|en|Tenno Matsuri|qid=Q11465312|lt=Tenno Matsuri}} serving as a major event<ref>{{Cite journal|author=Kazumitsu Kuroda |title=The Temporary Shrine in Tsushima Faith |journal=Kansai University Museum Bulletin |issn=1341-4895 |publisher=Kansai University Museum |year=2009 |month=March |issue=15 |pages=1-17 |naid=110007334592 |url=https://hdl.handle.net/10112/2887 |accessdate=2021-07-01}}</ref>.
+
 == Overview ==
+
 In {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}, Susanoo and Gozu Tennō were known as "O-Tennō-sama" (お天王さま). Groups known as "Tsushima Daisan Kō" (津島代参講) were formed in various locations, and representatives from these groups would visit Tsushima Shrine to receive sacred talismans, which were then distributed to members. Over time, local communities began {{ill|Bunrei|en|Bunrei|qid=Q195793|lt=Enshrinement}} Tsushima Shrine within their towns, constructing small shrines. This practice further evolved into the belief in "Rooftop Kami" (屋根神様), where individual households enshrined Gozu Tennō on their rooftops.
+
 The {{ill|Mon (emblem)|en|Mon (emblem)|qid=Q600964|lt=Kamon}} (family crest) associated with Susanoo and Gozu Tennō is the {{ill|Mokkō mon|ja|木瓜紋|12=simple|13=User:Immanuelle/Mokko|comment=changed title based on wikidata|qid=Q11519285}} (wood sorrel crest). The {{ill|Oda clan|ja|織田家|12=simple|13=User:Immanuelle/Oda clan|ja_comment=jawiki redirects to 織田氏|comment=changed title based on wikidata|qid=Q1132077}}, based in the Tōkai region and devoted to Tsushima Shrine, also used the Mokko crest as their family emblem, reinforcing the connection between the two<ref>{{Cite journal|author=Taeko Akagi |title=Oda Nobunaga’s Self-Deification and Tsushima Gozu Tennō |url=https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN00100104-19910400-0127 |journal=Shigaku |issn=03869334 |publisher=Mita Historical Society |year=1991 |month=April |volume=60 |issue=1 |pages=127-140 |naid=110007410625 |accessdate=2021-07-01}}</ref>.
+
 == Tsushima Shrines Across Japan ==
+
 Approximately 3,000 shrines across Japan, primarily in the {{ill|Tōkai region|en|Tōkai region|qid=Q398989|lt=Tōkai region}}, have received enshrinement from Tsushima Shrine. Many of these were originally named "Gozu Tennō Shrine" (牛頭天王社) or "Tennō Shrine" (天王社). However, during the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu Bunri}} (separation of Shinto and Buddhism) in the Meiji era, the main shrine, Tsushima Gozu Tennō Shrine (津島天王社), was renamed Tsushima Shrine, prompting many affiliated shrines to adopt the same name.
+
 === Main Shrine ===
 * {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} – Located in {{ill|Tsushima, Aichi|en|Tsushima, Aichi|qid=Q816736|lt=Tsushima, Aichi}}, the principal shrine of Tsushima Faith.
+
 === Tōhoku Region ===
 ; {{ill|Yamagata Prefecture|en|Yamagata Prefecture|qid=Q125863|lt=Yamagata Prefecture}}
 * {{ill|Tsushima Shrine|ja|津嶋神社 (長井市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nagai)|comment=changed title based on wikidata|qid=Q11556090}} – Located in {{ill|Nagai, Yamagata|en|Nagai, Yamagata|qid=Q847557|lt=Nagai, Yamagata}}.
@@ -16,6 +26,7 @@ Approximately 3,000 shrines across Japan, primarily in the {{ill|Tōkai region|e
 * {{ill|Tsushima Shrine|ja|津島神社 (登米市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Tome)|comment=changed title based on wikidata|qid=Q11556077}} – Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome, Miyagi}}.
 ; {{ill|Fukushima Prefecture|en|Fukushima Prefecture|qid=Q71707|lt=Fukushima Prefecture}}
 * {{ill|Tsushima Shrine (Nihonmatsu)|ja|津島神社 (二本松市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nihonmatsu)|ja_comment=jawiki link invalid}} – Located in {{ill|Nihonmatsu, Fukushima|en|Nihonmatsu, Fukushima|qid=Q685491|lt=Nihonmatsu, Fukushima}}.
+
 === Kantō Region ===
 ; {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture}}
 * {{ill|Tamatsushima Shrine|ja|玉津島神社|12=simple|13=User:Immanuelle/Tamagushima Shrine|comment=changed title based on wikidata|qid=Q11572702}} – Located in {{ill|Fukaya, Saitama|en|Fukaya, Saitama|qid=Q734532|lt=Fukaya, Saitama}}.
@@ -23,31 +34,105 @@ Approximately 3,000 shrines across Japan, primarily in the {{ill|Tōkai region|e
 * {{ill|Tsushima Shrine (Shibuya)|ja|津島神社 (渋谷区)|12=simple|13=User:Immanuelle/Tsushima Shrine (Shibuya)|ja_comment=jawiki link invalid}} – Located in {{ill|Shibuya|en|Shibuya|qid=Q193638|lt=Shibuya, Tokyo}}.
 * {{ill|Tsushima Shrine (Inagi)|ja|津島神社 (稲城市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Inagi)|ja_comment=jawiki link invalid}} – Located in {{ill|Inagi|en|Inagi|qid=Q317847|lt=Inagi, Tokyo}}, a subsidiary shrine of {{ill|Ōmatonotsunoten Shrine|ja|大麻止乃豆乃天神社|12=simple|13=User:Immanuelle/Ōmatonozu-no-Ten Shrine|comment=changed title based on wikidata|qid=Q11442032}}.
 * {{ill|Tsushima Shrine (Nishitokyo)|ja|津島神社 (西東京市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nishitokyo)|ja_comment=jawiki link invalid}} – Located in {{ill|Nishitokyo|en|Nishitokyo|qid=Q242882|lt=Nishitokyo, Tokyo}}.
+
 ; {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}
 * {{ill|Tsushima Shrine|ja|津島神社 (真鶴町)|12=simple|13=User:Immanuelle/Tsushima Shrine (Manazuru)|comment=changed title based on wikidata|qid=Q99463928}} – Located in {{ill|Manazuru, Kanagawa|en|Manazuru, Kanagawa|qid=Q1202786|lt=Manazuru, Kanagawa}}.
+
 === Chūbu Region ===
 ; {{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}
 * {{ill|Tsushima Shrine (Nagaoka)|ja|津島神社 (長岡市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nagaoka)|ja_comment=jawiki link invalid}} – Located in {{ill|Nagaoka, Niigata|en|Nagaoka, Niigata|qid=Q540312|lt=Nagaoka, Niigata}}.
+
 ; {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}
 * {{ill|Tsushima Shrine (Okaya)|ja|津島神社 (岡谷市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Okaya)|ja_comment=jawiki link invalid}} – Located in {{ill|Okaya, Nagano|en|Okaya, Nagano|qid=Q838672|lt=Okaya, Nagano}}.
 * {{ill|Tsushima Shrine (Miyada)|ja|津島神社 (宮田村)|12=simple|13=User:Immanuelle/Tsushima Shrine (Miyada)|ja_comment=jawiki link invalid}} – Located in {{ill|Miyada|en|Miyada|qid=Q959501|lt=Miyada, Nagano}}, known for the {{ill|Q131919562|ja|宮田祇園祭|12=simple|13=User:Immanuelle/Miyada Gion Festival|comment=changed title based on wikidata|qid=Q131919562}}, featuring a violent mikoshi procession.
+
 ; {{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}
 * {{ill|Tsushima Shrine (Shizuoka)|ja|津島神社 (静岡市駿河区)|12=simple|13=User:Immanuelle/Tsushima Shrine (Shizuoka)|ja_comment=jawiki link invalid}} – Located in {{ill|Shizuoka (city)|en|Shizuoka (city)|qid=Q174691|lt=Shizuoka, Shizuoka}}.
+
 ; {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}
 * {{ill|Tsushima Shrine (Gifu)|ja|津島神社 (岐阜市津島町)|12=simple|13=User:Immanuelle/Tsushima Shrine (Gifu)|ja_comment=jawiki link invalid}} – Located in {{ill|Gifu|en|Gifu|qid=Q45798|lt=Gifu, Gifu}}.
 * {{ill|Tsushima Shrine (Seki)|ja|津島神社 (関市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Seki)|ja_comment=jawiki link invalid}} – Located in {{ill|Seki, Gifu|en|Seki, Gifu|qid=Q860647|lt=Seki, Gifu}}, known for its annual lantern festival.
+
 ; {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}
 * {{ill|Tsushima Shrine (Nagoya)|ja|津島神社 (名古屋市西区)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nagoya)|ja_comment=jawiki link invalid}} – Located in {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}.
 * {{ill|Tsushima Shrine (Kiyosu)|ja|津島神社 (清須市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Kiyosu)|ja_comment=jawiki link invalid}} – Located in {{ill|Kiyosu|en|Kiyosu|qid=Q502407|lt=Kiyosu, Aichi}}.
 == See Also ==
-* {{ill|Hikawa Shrine (Saitama)|lt=Hikawa Shrine (Saitama)|lt=Hikawa Faith|ja|氷川信仰|12=simple|13=User:Immanuelle/Hikawa Faith|qq=}}
+* {{ill|Hikawa Shrine (Saitama)|lt=Hikawa Shrine (Saitama)|lt=Hikawa Faith|ja|氷川信仰|12=simple|13=User:Immanuelle/Hikawa Faith}}
 * [[Gion Faith|Gion faith]]
+
 == References ==
 {{Reflist}}
+
 {{translated page|ja|津島信仰|version=100882321|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+'''Tsushima Faith''' (津島信仰) refers to a [[Shinto]] faith centered on {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}}, located primarily in {{ill|Tsushima, Aichi|en|Tsushima, Aichi|qid=Q816736|lt=Tsushima City}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, and distributed mainly throughout the {{ill|Tōkai region|en|Tōkai region|qid=Q398989|lt=Tōkai region}}.
+
+This faith is dedicated to {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}} and {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} and is a variety of {{ill|Gion Faith|en|Gion cult|qid=Q11588425|lt=Gion faith}}. However, Tsushima faith also possesses unique characteristics,<ref>{{Cite journal|和書|author=松山由布子 |title=津島神社所蔵『牛頭天王講式』と奥三河伝来『牛頭天王五段式』の関わりについて |journal=愛知県史研究 |issn=1883-3799 |publisher=愛知県 |year=2017 |volume=21 |pages=57-72 |naid=130007696076 |doi=10.24707/aichikenshikenkyu.21.0_57 |url=https://doi.org/10.24707/aichikenshikenkyu.21.0_57 |accessdate=2021-07-01}}</ref> with the {{ill|Tenno Matsuri|en|Tenno Matsuri|qid=Q11465312|lt=Tsushima Festival}} representing one of its main events.<ref>{{Cite journal|和書|author=黒田一充 |title=津島信仰のお仮屋 |journal=関西大学博物館紀要 |issn=1341-4895 |publisher=関西大学博物館 |year=2009 |month=mar |issue=15 |pages=1-17 |naid=110007334592 |url=https://hdl.handle.net/10112/2887 |accessdate=2021-07-01}}</ref>
+
+== Overview ==
+In {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}, Susanoo and Gozu Tennō are referred to as "Otennō-sama." Religious associations called "Tsushima Daisan-kō" were established, with representatives making pilgrimages to Tsushima Shrine to receive sacred amulets (ofuda) for distribution among members. Over time, shrines dedicated to Tsushima Shrine were established within neighborhoods, eventually leading to the "Roof God" (屋根神様, yane-gami-sama) practice, in which shrines for Gozu Tennō were placed on household rooftops.
+
+The emblem (神紋) of Susanoo and Gozu Tennō is the {{ill|Mokkō mon|ja|木瓜紋|12=simple|13=User:Immanuelle/Mokko crest|comment=changed title based on wikidata|qid=Q11519285}}. The {{ill|Oda clan|ja|織田家|12=simple|13=User:Immanuelle/Oda clan|ja_comment=jawiki redirects to 織田氏|comment=changed title based on wikidata|qid=Q1132077}}, based in the Tōkai region and devotees of Tsushima Shrine, also used the mokko crest, linking the two prominently.<ref>{{Cite journal|和書|author=赤木妙子 |title=織田信長の自己神格化と津嶋牛頭天王 |url=https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN00100104-19910400-0127 |journal=史学 |issn=03869334 |publisher=三田史学会 |year=1991 |month=apr |volume=60 |issue=1 |pages=127-140 |naid=110007410625 |accessdate=2021-07-01}}</ref>
+
+== Tsushima Shrines Nationwide ==
+Shrines established through bunrei (spirit division) from Tsushima Shrine number about 3,000 across Japan, mainly concentrated in the Tōkai region. Many were originally named "Gozu Tennō Shrine" or "Tennō Shrine," but following the Meiji-period separation of Shinto and Buddhism, the head shrine (originally Tsushima Gozu Tennō Shrine) was renamed Tsushima Shrine, prompting others to follow suit.
+
+=== Head Shrine ===
+* {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} – Located in Tsushima City, Aichi Prefecture; head shrine of Tsushima faith.
+
+=== Tōhoku Region ===
+; Yamagata Prefecture
+* {{ill|Tsushima Shrine|ja|津嶋神社 (長井市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nagai)|comment=changed title based on wikidata|qid=Q11556090}}
+; Miyagi Prefecture
+* {{ill|Tsushima Shrine|ja|津島神社 (登米市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Tome)|comment=changed title based on wikidata|qid=Q11556077}}
+; Fukushima Prefecture
+* {{ill|Tsushima Shrine (Nihonmatsu)|ja|津島神社 (二本松市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nihonmatsu)|ja_comment=jawiki link invalid}}
+
+=== Kantō Region ===
+; Saitama Prefecture
+* {{ill|Tamatsushima Shrine|ja|玉津島神社|12=simple|13=User:Immanuelle/Tamatsushima Shrine (Fukaya)|comment=changed title based on wikidata|qid=Q11572702}}
+; Tokyo
+* {{ill|Tsushima Shrine (Shibuya)|ja|津島神社 (渋谷区)|12=simple|13=User:Immanuelle/Tsushima Shrine (Shibuya)|ja_comment=jawiki link invalid}}
+* {{ill|Tsushima Shrine (Inagi)|ja|津島神社 (稲城市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Inagi)|ja_comment=jawiki link invalid}} – Precinct shrine of Ōmatanotsuno Tenjin Shrine.
+* {{ill|Tsushima Shrine (Nishitōkyō)|ja|津島神社 (西東京市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nishitōkyō)|ja_comment=jawiki link invalid}}
+; Kanagawa Prefecture
+* {{ill|Tsushima Shrine|ja|津島神社 (真鶴町)|12=simple|13=User:Immanuelle/Tsushima Shrine (Manazuru)|comment=changed title based on wikidata|qid=Q99463928}}
+
+=== Chūbu Region ===
+; Niigata Prefecture
+* {{ill|Tsushima Shrine (Nagaoka)|ja|津島神社 (長岡市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nagaoka)|ja_comment=jawiki link invalid}}
+; Yamanashi Prefecture
+* {{ill|Tsushima Shrine (Nirasaki)|ja|津島神社 (韮崎市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Nirasaki)|ja_comment=jawiki link invalid}}
+* {{ill|Tsushima Shrine (Dōshi)|ja|津島神社 (道志村)|12=simple|13=User:Immanuelle/Tsushima Shrine (Dōshi)|ja_comment=jawiki link invalid}}
+; Nagano Prefecture
+* {{ill|Tsushima Shrine (Okaya)|ja|津島神社 (岡谷市)|12=simple|13=User:Immanuelle/Tsushima Shrine (Okaya)|ja_comment=jawiki link invalid}}
+* {{ill|Tsushima Shrine (Agematsu)|ja|津島神社 (上松町)|12=simple|13=User:Immanuelle/Tsushima Shrine (Agematsu)|ja_comment=jawiki link invalid}}
+* {{ill|Tsushima Shrine (Miyada)|ja|津島神社 (宮田村)|12=simple|13=User:Immanuelle/Tsushima Shrine (Miyada)|ja_comment=jawiki link invalid}} – Known for the unique Miyada Gion Festival.
+* {{ill|Tsushima Shrine (Minowa)|ja|津島神社 (箕輪町)|12=simple|13=User:Immanuelle/Tsushima Shrine (Minowa)|ja_comment=jawiki link invalid}}
+; Shizuoka Prefecture
+* {{ill|Tsushima Shrine (Suruga-ku, Shizuoka)|ja|津島神社 (静岡市駿河区)|12=simple|13=User:Immanuelle/Tsushima Shrine (Suruga-ku, Shizuoka)|ja_comment=jawiki link invalid}}
+* {{ill|Yahata Tsushima Shrine|ja|八幡津島神社|12=simple|13=User:Immanuelle/Yahata Tsushima Shrine|ja_comment=jawiki link invalid}}
+
+[Abbreviated further listings due to length; please translate similarly.]
+
+== References ==
+{{Reflist}}
+== See Also ==
+* {{ill|Hikawa Shrine (Saitama)|lt=Hikawa Shrine (Saitama)|lt=Hikawa Faith|ja|氷川信仰|12=simple|13=User:Immanuelle/Hikawa faith}}
+
+== External Links ==
+* [https://doi.org/10.24707/aichikenshikenkyu.14.0_15 Tsushima Shrine activities article]
+
+{{Shinto horizontal}}
+
+{{translated page|ja|津島信仰|version=100882321|comment=Imported full ja history}}
+
+{{wikidata link|Q11556062|ja|津島信仰|check_date=2026-05-12}}
 [[Category:Faith]]
 [[Category:Gion cult]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto]]
 [[Category:Tsushima Shrines]]
 [[Category:Wikidata no short description]]

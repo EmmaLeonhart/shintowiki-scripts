@@ -1,11 +1,13 @@
-{{Otheruses2|{{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}{{ill|Wakayama (city)|en|Wakayama (city)|qid=Q200747|lt=Wakayama City}}’s Awashima Shrine|Other Awashima Shrines|Awashima Shrine|Awashima Shrine|qq=}}
-{{Infobox religious building| religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}
+{{Otheruses2|{{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}{{ill|Wakayama (city)|en|Wakayama (city)|qid=Q200747|lt=Wakayama City}}’s Awashima Shrine|Other Awashima Shrines|Awashima Shrine|Awashima Shrine}}
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name   = Awashima Shrine (淡嶋神社)
-|image  =
+|image  = 
 {{ill|File:Awashima-jinja, haiden.jpg|ja|File:Awashima-jinja, haiden.jpg|12=simple|13=User:Immanuelle/File:Awashima-jinja, haiden.jpg|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid}}|270px<br />Haiden
+|religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}
 |location = {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}} {{ill|Wakayama (city)|en|Wakayama (city)|qid=Q200747|lt=Wakayama City}} Kada 116
-|位置   = {{ウィキ座標2段度分秒|34|16|25.3|N|135|3|59.4|E|display=inline,title|qq=}}
+|位置   = {{ウィキ座標2段度分秒|34|16|25.3|N|135|3|59.4|E|display=inline,title}}
 |deity  = {{ill|Sukunabikona|en|Sukunabikona|qid=Q3275687|lt=Sukunabikona}}<br/>{{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi-no-Mikoto}}<br/>{{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}
+|religious_affiliation = {{ill|Shinto|en|Shinto|qid=Q812767|lt=Shinto}}
 |type   = {{ill|Shikinai Shrine|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinai Shrine|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small) Ronsya<br/>Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}
 |創建   = (trad.) {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}} era
 |本殿   = Nagare-zukuri, cypress bark roofed
@@ -14,12 +16,17 @@
 | image = File:Awashima-jinja, haiden.jpg
 |festival   = April 3
 |神事   = Hina Matsuri (March 3)
-|地図 = {{Location map|Japan Wakayama|lat_deg=34|lat_min=16|lat_sec=25.3|lon_deg=135|lon_min=3|lon_sec=59.4|label=Awashima Shrine|position=right|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20|qq=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|34|16|25.3|N|135|3|59.4|E|qq=}}|qq=}}
+|地図 = {{Location map|Japan Wakayama|lat_deg=34|lat_min=16|lat_sec=25.3|lon_deg=135|lon_min=3|lon_sec=59.4|label=Awashima Shrine|position=right|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|34|16|25.3|N|135|3|59.4|E}}}}
 }}
 [[File:Awashima-jinja, torii.jpg|thumb|250px|right]]
 '''Awashima Shrine''' (淡嶋神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in Kada, {{ill|Wakayama (city)|en|Wakayama (city)|qid=Q200747|lt=Wakayama City}}, {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}. It is a {{ill|Shikinai Shrine|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinai Shrine|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} with a former shrine Ranking of {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}.
-Renowned for its doll memorial service, the entire precinct is lined with countless dolls—reportedly around 20,000—that have been dedicated from across the country.
+It is the head shrine of all the Awashima, Awajinja, and Awashima shrines throughout Japan. Renowned for its doll memorial service, the entire precinct is lined with countless dolls—reportedly around 20,000—that have been dedicated from across the country.
+== deity ==
+* {{ill|Sukunabikona|en|Sukunabikona|qid=Q3275687|lt=Sukunabikona}} (Sukuna-Hikona-no-Mikoto)
+* {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi-no-Mikoto}} (Ōkuninushi-no-Mikoto)
+* {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}} (Okinagatara-Shihime-no-Mikoto)
+However, various theories exist regarding the true identity of Awashima-no-Kami.
 == History ==
 There are approximately 1,000 shrines in Japan associated with the Awashima Shrine lineage, but this shrine is recognized as the head shrine and boasts one of the most distinguished histories in {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}.
 According to mythology, the enshrinement of the deities {{ill|Sukunabikona|en|Sukunabikona|qid=Q3275687|lt=Sukunabikona}} (credited with the creation of Japan) and {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi-no-Mikoto}} on the divine island of Awashima—one of the islands of Tomogashima off the coast of Kada—marks its origin. As recorded in the shrine legend, during the return voyage from the {{ill|Three Han Campaign|ja|三韓出兵|12=simple|13=User:Immanuelle/Korean Conquest|ja_comment=jawiki redirects to 三韓征伐|comment=changed title based on wikidata|qid=Q11249435}}, Empress {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Jingū}} encountered a sudden storm in the Seto Inland Sea. While aboard her ship, she prayed, and a divine message instructed her to "throw the ship's thatched roof into the sea and let the current carry the vessel." Grateful for the safe arrival at Tomogashima, she dedicated the treasures brought back from Korea to the two deities. A few years later, when her grandson, {{ill|Emperor Nintoku|en|Emperor Nintoku|qid=Q313119|lt=Emperor Nintoku}}, visited Tomogashima on a hunting trip and learned of the event, he considered the island inconvenient. Consequently, he relocated the shrine to the opposite shore in Kada and constructed the present shrine buildings—thus beginning the history of Awashima Shrine.
@@ -43,8 +50,8 @@ Based on the tradition that Awashima-no-Kami was cast adrift to Awashima due to 
 * Autumn Grand Festival (Amazake Festival) (October 3)
 == Cultural Properties ==
 === Important Cultural Properties (National Designation) ===
-* Bronze Sword with Rounded Scabbard, Unsigned (Craftsmanship) – A work from the Kamakura period. Designated on April 15, 1920 (Taishō 9)<ref>{{国指定文化財等データベース|201|6315|Bronze Sword with Rounded Scabbard|qq=}}</ref>.
-* Large Circular Mountain-Shaped Star Helmet (Craftsmanship) – A work from the Kamakura period. Designated on April 30, 1921 (Taishō 10)<ref>{{国指定文化財等データベース|201|5427|Large Circular Mountain-Shaped Star Helmet|qq=}}</ref>.
+* Bronze Sword with Rounded Scabbard, Unsigned (Craftsmanship) – A work from the Kamakura period. Designated on April 15, 1920 (Taishō 9)<ref>{{国指定文化財等データベース|201|6315|Bronze Sword with Rounded Scabbard}}</ref>.
+* Large Circular Mountain-Shaped Star Helmet (Craftsmanship) – A work from the Kamakura period. Designated on April 30, 1921 (Taishō 10)<ref>{{国指定文化財等データベース|201|5427|Large Circular Mountain-Shaped Star Helmet}}</ref>.
 == Gallery ==
 <gallery>
 image:淡島神社人形up 209.jpg|Dedicated Doll 1
@@ -56,18 +63,27 @@ image:淡島神社人形 203.jpg|Still beautiful Japanese Dolls
 == Access ==
 The nearest station is on the {{ill|Kada Line|en|Kada Line|qid=Q76809|lt=Nankai Kada Line}} at {{ill|加太駅|en|加太駅|qid=Q11398584|lt=Kada Station}} (Wakayama Prefecture). However, it is over a 20‐minute walk (some sites state 15 minutes, but that is incorrect), and only one taxi is usually available in front of the station. Public transportation is otherwise unavailable except for {{ill|Demand-responsive transport|en|Demand-responsive transport|qid=Q293849|lt=demand-response transportation}} (shared taxis)<ref>[http://www.city.wakayama.wakayama.jp/kurashi/douro_kouen_machi/1007740/1021406.html Wakayama City Demand-Response Shared Taxi] ([http://www.city.wakayama.wakayama.jp/_res/projects/default_project/_page_/001/021/406/isshiki.pdf Kada area Awashima Shrine network])</ref>, so please be advised.
 == Surrounding Information ==
-* {{ill|Kada Kasuga Shrine|ja|加太春日神社|12=simple|13=User:Immanuelle/Kada Kasuga Shrine|qq=}}
+* {{ill|Kada Kasuga Shrine|ja|加太春日神社|12=simple|13=User:Immanuelle/Kada Kasuga Shrine}}
 * {{ill|Tomogashima|en|Tomogashima|qid=Q7820112|lt=Tomogashima}}
 * {{ill|Kada Awashima Onsen|ja|加太淡嶋温泉|12=simple|13=User:Immanuelle/Kada Awashima Onsen|comment=changed title based on wikidata|qid=Q11398580}}
 == References ==
 <references group="lower-alpha"/>
-{{Reflist|qq=}}
+{{Reflist}}
+
 == External Links ==
-{{commons|Category:Awashima Shrine|qq=}}
-{{osm box|n|1156133859|qq=}}
+{{commons|Category:Awashima Shrine}}
+{{osm box|n|1156133859}}
 * [http://www.kada.jp/awashima/ Awashima Shrine] – Official website
 * [https://www2.nhk.or.jp/archives/movies/?id=D0004990253_00000 Awashima Shrine’s Doll Float Festival] – NHK Video Archives
-{{神道 横|qq=}}
+{{神道 横}}
+
+{{translated page|ja|淡嶋神社|version=102103437|comment=Imported full ja history}}
+
+{{Commons category|Awashima-jinja}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Awashima Shrine (Wakayama) (Q7007362)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kii Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -75,13 +91,13 @@ The nearest station is on the {{ill|Kada Line|en|Kada Line|qid=Q76809|lt=Nankai 
 |-
 | {{ill|Nagusa district|ja|名草郡|zh|名草郡|qid=Q11415547}} || {{ill|Awashima Shrine (Wakayama)|lt=Awashima Shrine|ja|淡嶋神社|commons|Category:Awashima-jinja|fr|Awashima-jinja|ko|아와시마 신사|simple|Awashima Shrine|zh|淡嶋神社|qid=Q7007362}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.273800|135.066672|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183145 DB]
 |}
-
-{{translated page|ja|淡嶋神社|version=102103437|comment=Imported full ja history}}
-{{Commons category|Awashima-jinja}}
-
+{{wikidata link|Q7007362|fr|Awashima-jinja|ja|淡嶋神社|ko|아와시마 신사|simple|Awashima Shrine|zh|淡嶋神社|check_date=2026-05-14}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kii Province]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Independent shrines]]
 [[Category:Shinto shrines in Wakayama]]
 [[Category:Important Cultural Properties in Wakayama City]]
@@ -90,3 +106,4 @@ The nearest station is on the {{ill|Kada Line|en|Kada Line|qid=Q76809|lt=Nankai 
 [[Category:紀伊国の式内社]]
 [[Category:雛祭り]]
 [[Category:Hina matsuri]]
+[[Category:Pages with duplicated content]]

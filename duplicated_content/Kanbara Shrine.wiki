@@ -1,57 +1,82 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kanbara_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
-{{Infobox religious building
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Kanbara Shrine
 | religious_affiliation = [[Shinto]]
 |image = File:Kambarajinjahonden.JPG
-|location = {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}, {{ill|Unnan|en|Unnan|qid=Q877935|lt=Unnan City|1=Unnan}}, Kamochō Kanbara 1436
+|location = {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}, {{ill|Unnan|en|Unnan|qid=Q877935|lt=Unnan City}}, Kamochō Kanbara 1436
 |coordinates = {{Coord|35.34625|N|132.895778}}
-|deity = {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi|1=Ōkuninushi}}
-|type = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Minor Shrine)<br />Former {{ill|Mura-sha|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
+|deity = {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi}}
+|type = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (Minor Shrine)<br />Former {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
 |Established = Unknown
-|Main Hall = {{ill|Taisha-zukuri|en|Taisha-zukuri|qid=Q387874|lt=Taisha-zukuri|1=Taisha-zukuri}}
+|Main Hall = {{ill|Taisha-zukuri|fr|Taisha-zukuri|ja|大社造|ru|Тайся-дзукури|tr|Taisha-zukuri|zh|大社造|qid=Q387874|lt=Taisha-zukuri}}
 |alternate_name = Kanpō Daimyōjin
 |Festival = November 9
 |Rituals = Kamiari Festival<br />Shishi-mai (Lion Dance)
+|location = {{ill|Unnan|qid=Q877935}}
 }}
-'''Kanbara Shrine''' (神原神社) is a Shinto shrine located in {{ill|Kamochō|ja|加茂町|12=simple|13=User:Immanuelle/Kamochō|1=kamochou|comment=changed title based on wikidata|qid=Q11398866}}, {{ill|Unnan|en|Unnan|qid=Q877935|lt=Unnan City|1=Unnan}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}. It is known for the discovery of a {{ill|triangular-rimmed divine beast mirror|ja|三角縁神獣鏡|1=Triangular-Rimmed Divine Beast Mirror|12=simple|13=User:Immanuelle/triangular-rimmed divine beast mirror|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror|qq=}} with the inscription "Jingchu 3rd Year" during the excavation of an ancient Kofun on its former grounds.
+
+'''Kanbara Shrine''' (神原神社) is a Shinto shrine located in {{ill|kamochou|ja|加茂町|12=simple|13=User:Immanuelle/Kamochō|comment=changed title based on wikidata|qid=Q11398866}}, {{ill|Unnan|en|Unnan|qid=Q877935|lt=Unnan City}}, {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}. It is known for the discovery of a {{ill|triangular-rimmed divine beast mirror|ja|三角縁神獣鏡}} with the inscription "Jingchu 3rd Year" during the excavation of an ancient Kofun on its former grounds.
+
 == Deities ==
-The shrine enshrines {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi|1=Ōkuninushi}}, {{ill|Iwatsutsunoo|ja|磐筒男命|12=simple|13=User:Immanuelle/Iwatsutsunoo|ja_comment=jawiki link invalid}}, and Iwatsutsume-no-Mikoto. 
-The earliest record appears in the {{ill|Izumo-no-Kuni Fudoki|ja|Izumo Province 風土記|12=simple|13=User:Immanuelle/Izumo-no-Kuni Fudoki|ja_comment=jawiki link invalid}}, under the entry for Kanbara-go in Ōhara District. Initially, it is believed that only Ōkuninushi was worshipped {{why|date=2022}}. However, the 1708 document ''Kanbara Shrine Engi'' compiled by Hirozawa Urushihiro, the priest of {{ill|Mito Tenmangū|ja|三刀屋天満宮|12=simple|13=User:Immanuelle/Mito Tenmangū|ja_comment=jawiki link invalid}}, lists the deities as Iwatsutsunoo and Iwatsutsume-no-Mikoto.
+
+The shrine enshrines {{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944|lt=Ōkuninushi}}, {{ill|Iwatsutsunoo|ja|磐筒男命}}, and Iwatsutsume-no-Mikoto. 
+
+The earliest record appears in the {{ill|Izumo-no-Kuni Fudoki|ja|Izumo Province 風土記}}, under the entry for Kanbara-go in Ōhara District. Initially, it is believed that only Ōkuninushi was worshipped {{why|date=2022}}. However, the 1708 document ''Kanbara Shrine Engi'' compiled by Hirozawa Urushihiro, the priest of {{ill|Mito Tenmangū|ja|三刀屋天満宮}}, lists the deities as Iwatsutsunoo and Iwatsutsume-no-Mikoto.
+
 == History ==
-The ''{{ill|Izumo-no-Kuni Fudoki|ja|Izumo Province 風土記|12=simple|13=User:Immanuelle/Izumo-no-Kuni Fudoki|ja_comment=jawiki link invalid}}'' refers to the shrine as "Kanbara Shrine," stating that it belonged to the {{ill|Department of Divinities|en|Department of Divinities|qid=Q2264720|lt=Department of Divinities|1=Department of Divinities}}. The record also describes Kanbara-go as "the place where the treasures of the Heavenly Grand deity (Ōkuninushi) are stored." 
-The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki|1=Engishiki}} lists the shrine as "Kanbara Shrine." Various names have appeared over time, including "Kanbara Matsui Daimyōjin" (1611) on a ridgepole inscription, "Kanbara Shrine Matsui Daimyōjin" in the ''Kanbara Shrine Engi,'' and "Shinpo Myōjin" in the 1717 ''Un'yōshi.''
-In December 1871, the shrine was Ranked as a village shrine. The current structure was relocated in 1972 due to flood control work on the {{ill|Akagawa River (Unnan City)|ja|赤川 (雲南市)|12=simple|13=User:Immanuelle/Akagawa River (Unnan City)|ja_comment=jawiki link invalid}} within the {{ill|Hii River|en|Hii River|qid=Q11500714|lt=Hii River system|1=Hii River}}.
+
+The ''{{ill|Izumo-no-Kuni Fudoki|ja|Izumo Province 風土記}}'' refers to the shrine as "Kanbara Shrine," stating that it belonged to the {{ill|Department of Divinities|ca|Jingi-kan|es|Jingikan|fa|اداره امور شینتو|fr|Jingi-kan|id|Jingikan|ja|神祇官|ko|신기관|nl|Jingi-kan|pt|Jingi-kan|ru|Дзингикан|simple|Department of Divinities|tr|Jingi-kan|uk|Дзінґікан|vi|Thần kỳ quan|zh|神祇官|qid=Q2264720|lt=Department of Divinities}}. The record also describes Kanbara-go as "the place where the treasures of the Heavenly Grand deity (Ōkuninushi) are stored." 
+
+The {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} lists the shrine as "Kanbara Shrine." Various names have appeared over time, including "Kanbara Matsui Daimyōjin" (1611) on a ridgepole inscription, "Kanbara Shrine Matsui Daimyōjin" in the ''Kanbara Shrine Engi,'' and "Shinpo Myōjin" in the 1717 ''Un'yōshi.''
+
+In December 1871, the shrine was Ranked as a village shrine. The current structure was relocated in 1972 due to flood control work on the {{ill|Akagawa River (Unnan City)|ja|赤川 (雲南市)}} within the {{ill|Hii River|en|Hii River|qid=Q11500714|lt=Hii River system}}.
+
 == Kanbara Shrine Kofun ==
+
 [[File:kambarajinjakofunsekisitsu.JPG|thumb|right|Reconstructed stone chamber of Kanbara Shrine Kofun]]
-[[File:神原神社古墳出土 三角縁神獣鏡 (複製).JPG|thumb|180px|right|Replica of a triangular-rimmed divine beast mirror<br />{{small|Exhibited at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History|1=National Museum of Japanese History}}.}}]]
-The shrine's former grounds were situated atop an ancient Kofun ([[kofun]]). The mound is a {{ill|square tumulus|ja|方墳|1=Square Kofun|1=Square Kofun|12=simple|13=User:Immanuelle/square tumulus|13=User:Immanuelle/Square Kofun|comment=enwiki is a redirect}}, estimated to measure 29 meters by 25 meters and approximately 5 meters in height. It is among the oldest kofun in {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture|1=Shimane Prefecture}}, dating to the early period.
-During flood control work in 1972, the shrine was moved approximately 50 meters southwest, and the kofun was excavated. Artifacts found in the [[Vertical Pit-Style Stone Chamber|Pit-style stone chamber]] included a "Jingchu 3rd Year" (239 CE) {{ill|triangular-rimmed divine beast mirror|ja|三角縁神獣鏡|1=Triangular-Rimmed Divine Beast Mirror|12=simple|13=User:Immanuelle/triangular-rimmed divine beast mirror|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror|qq=}}, identified as a relic of the {{ill|Three Kingdoms period|ja|三国時代|12=simple|13=User:Immanuelle/Three Kingdoms period|1=Three Kingdoms period|comment=changed title based on wikidata|qid=Q11354714}}. These artifacts are designated as {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property|1=Important Cultural Property (Japan)}}, housed at the {{ill|Shimane Museum of Ancient Izumo|en|Shimane Museum of Ancient Izumo|qid=Q4802099|lt=Shimane Prefectural Ancient Izumo History Museum|1=Shimane Museum of Ancient Izumo}}. The stone chamber has been reconstructed east of the relocated shrine and is open for public viewing.
+[[File:神原神社古墳出土 三角縁神獣鏡 (複製).JPG|thumb|180px|right|Replica of a triangular-rimmed divine beast mirror<br />{{small|Exhibited at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}}.}}]]
+
+The shrine's former grounds were situated atop an ancient Kofun ([[kofun]]). The mound is a {{ill|square tumulus|ja|方墳}}, estimated to measure 29 meters by 25 meters and approximately 5 meters in height. It is among the oldest kofun in {{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}, dating to the early period.
+
+During flood control work in 1972, the shrine was moved approximately 50 meters southwest, and the kofun was excavated. Artifacts found in the [[Vertical Pit-Style Stone Chamber|Pit-style stone chamber]] included a "Jingchu 3rd Year" (239 CE) {{ill|triangular-rimmed divine beast mirror|ja|三角縁神獣鏡}}, identified as a relic of the {{ill|Three Kingdoms period|ja|三国時代|12=simple|13=User:Immanuelle/Three Kingdoms period|comment=changed title based on wikidata|qid=Q11354714}}. These artifacts are designated as {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}, housed at the {{ill|Shimane Museum of Ancient Izumo|en|Shimane Museum of Ancient Izumo|qid=Q4802099|lt=Shimane Prefectural Ancient Izumo History Museum}}. The stone chamber has been reconstructed east of the relocated shrine and is open for public viewing.
+
 == Festivals ==
-The annual festival held on November 9 includes a lion dance, designated as an {{ill|Intangible Folk Cultural Property of Shimane Prefecture|ja|島根県指定文化財一覧|12=simple|13=User:Immanuelle/Intangible Folk Cultural Property of Shimane Prefecture|1=Q11476462|comment=changed title based on wikidata|qid=Q11476462}}. Rituals are also conducted during the {{ill|Kamiari Festival|ja|神無月|12=simple|13=User:Immanuelle/Kamiari Festival|comment=changed title based on wikidata|1=Kannazuki|qid=Q6364021}} period.
+
+The annual festival held on November 9 includes a lion dance, designated as an {{ill|Q11476462|ja|島根県指定文化財一覧|12=simple|13=User:Immanuelle/Intangible Folk Cultural Property of Shimane Prefecture|comment=changed title based on wikidata|qid=Q11476462}}. Rituals are also conducted during the {{ill|Kannazuki|ja|神無月|12=simple|13=User:Immanuelle/Kamiari Festival|comment=changed title based on wikidata|qid=Q6364021}} period.
+
 == Nearby Historic Sites ==
-* {{ill|Kamoiwakura Site|en|Kamoiwakura Site|qid=Q11398844|lt=Kamo Iwakura Site|1=Kamoiwakura Site}}
-* {{ill|Kōjindani Site|en|Kōjindani Site|qid=Q11618840|lt=Kōjindani Site|1=Kōjindani Site}}
+* {{ill|Kamoiwakura Site|en|Kamoiwakura Site|qid=Q11398844|lt=Kamo Iwakura Site}}
+* {{ill|Kōjindani Site|en|Kōjindani Site|qid=Q11618840|lt=Kōjindani Site}}
+
 == References ==
 * Kazuhiko Seki, ''Commentary on Izumo-no-Kuni Fudoki'' (Akashi Shoten, 2006). ISBN 4-7503-2376-4
 * Yoshiyuki Takioto, ''Encyclopedia of Ancient Izumo'' (Shinjinbutsu Oraisha, 2001). ISBN 4-404-02941-1
+
 == External Links ==
 * [http://www.city.unnan.shimane.jp/cgi-bin/odb-get.exe?WIT_template=AC020000&WIT_oid=icityv2::Contents::2081 Kanbara Shrine Kofun (Unnan City website)]
 * [http://bunka.nii.ac.jp/SearchDetail.do?heritageId=103587 Cultural Heritage Online: Kanbara Shrine Kofun Artifacts]
+
+{{translated page|ja|神原神社|version=104494616|comment=Imported full ja history}}
+
+[[image:kambarajinjahonden.JPG|250px]]
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Kanbara Shrine (Q11588802)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Ohara District, Shimane|en|Ohara District, Shimane|ja|大原郡|ko|오하라군|zh|大原郡|lt=Ōhara district|qid=Q865650|1=Ohara District, Shimane}} || {{ill|Kanbara Shrine|lt=Kanbara Shrine|ja|神原神社|commons|Category:Kanbara-jinja (Unnan)|qid=Q11588802|1=Kanbara Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|35.346449|132.895821|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182946 DB]
+| {{ill|Ohara District, Shimane|en|Ohara District, Shimane|ja|大原郡|ko|오하라군|zh|大原郡|lt=Ōhara district|qid=Q865650}} || {{ill|Kanbara Shrine|lt=Kanbara Shrine|ja|神原神社|commons|Category:Kanbara-jinja (Unnan)|qid=Q11588802}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|35.346449|132.895821|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182946 DB]
 |}
-
-{{translated page|ja|神原神社|version=104494616|comment=Imported full ja history}}
-
+{{wikidata link|Q11588802|co|commons:Category:Kanbara-jinja (Unnan)|da|d:Q11588802|ja|神原神社|check_date=2026-05-16}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Unnan, Shimane]]
 [[Category:Important Cultural Properties of Japan]]
 [[Category:Important Cultural Property of Japan in Shimane prefecture]]
 [[Category:Izumo Province]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Unnan]]
 [[Category:Shikinaisha in Izumo Province]]
 [[Category:Shinto shrines in Shimane Prefecture]]
@@ -59,3 +84,5 @@ The annual festival held on November 9 includes a lion dance, designated as an {
 [[Category:Son-sha in Shimane Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Katada_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 {{Infobox religious building
 |名称= 堅田神社
 | religious_affiliation = [[Shinto]]
@@ -8,47 +7,64 @@
 |経度度= 136 |経度分 = 46 | 経度秒 = 47.4
 |地図= Japan Mie
 |祭神= 佐見都日女命
-|社格= {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}（小）論社<br />{{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}摂社
+|社格= {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}（小）論社<br />{{ill|Kōtai Jingū|ja|皇大神宮}}摂社
 |創建= [[延長 (元号)|延長]]5th year （[[927]]）以前
 |本殿= [[神明造]]
 |別名= 
 |札所等= 
 |例祭= 
 |神事= [[神嘗祭]]
-|prefecture= {{ill|Ise|qid=Q328067|1=Ise, Mie}}
+|prefecture= {{ill|Ise, Mie|qid=Q328067}}
 |coordinates= {{Coord|34.505667|N|136.779833}}
-|architecture_style= {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
+|architecture_style= {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
-'''Katada Shrine''' (堅田神社) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=branch shrine|1=Setsumatsusha}} (sessha) of {{ill|Kōtai Jingū|ja|皇大神宮|1=Kōtai Jingū|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Inner Shrine) of {{ill|Ise Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine|1=Ise Grand Shrine}}. It Ranks 15th among the 27 sessha of the Inner Shrine.<ref>Edited by Ujiyamada City Office (1929): pp. 9-11</ref>
-It is the shrine that initiated the production of sacred salt (御塩, goshio) offered to both the Inner and {{ill|Outer Shrine (Ise)|ja|外宮|12=simple|13=User:Immanuelle/Outer Shrine (Ise)|ja_comment=jawiki redirects to 豊受大神宮|1=Toyōke Daijingū|comment=changed title based on wikidata|qid=Q11633343}} at {{ill|Futami-ga-ura|en|Futami-ga-ura|qid=Q11371796|lt=Futamiura|1=Futami-ga-ura, Mie}}, enshrining the local deity.<ref name="tm">Tatsumi Publishing (2013): p. 77</ref>
+'''Katada Shrine''' (堅田神社) is a {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=branch shrine}} (sessha) of {{ill|Kōtai Jingū|ja|皇大神宮}} (Inner Shrine) of {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. It Ranks 15th among the 27 sessha of the Inner Shrine.<ref>Edited by Ujiyamada City Office (1929): pp. 9-11</ref>
+
+It is the shrine that initiated the production of sacred salt (御塩, goshio) offered to both the Inner and {{ill|Toyōke Daijingū|ja|外宮|12=simple|13=User:Immanuelle/Outer Shrine (Ise)|ja_comment=jawiki redirects to 豊受大神宮|comment=changed title based on wikidata|qid=Q11633343}} at {{ill|Futami-ga-ura, Mie|en|Futami-ga-ura|qid=Q11371796|lt=Futamiura}}, enshrining the local deity.<ref name="tm">Tatsumi Publishing (2013): p. 77</ref>
+
 == Overview ==
-Katada Shrine is located at 442-2 Katada, Aza Chaya, Futami-cho, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie|1=Ise, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}.{{#tag:ref|The source notes the address as "442-2 Katada, Aza E, Futami-cho," but due to mergers with the former Ise City and other municipalities, it was changed to "442-2 Katada, Aza Chaya, Futami-cho, Ise City." <ref>{{Cite web|ja|url=http://www.city.ise.mie.jp/secure/4736/setteityousyo.pdf|title=町の区域の設定調書|publisher=Ise City Citizen Exchange Division|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20140608120807/http://www.city.ise.mie.jp/secure/4736/setteityousyo.pdf|archivedate=2014-06-08}}</ref>|group="Note"}} It is considered one of the candidate sites (論社) for both the "Enomura Shrine" and "Ōkunidama-hime Shrine" listed in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}.<ref name="tm"/> The view that identifies Katada Shrine as "Ōkunidama-hime Shrine" was expressed by Watari Nobunori and {{ill|Tomonobu Ban|ja|伴信友|12=simple|13=User:Immanuelle/Tomonobu Ban|1=Ban Nobutomo|comment=changed title based on wikidata|qid=Q4346747}}, while Sonoda Moriyoshi speculated that "Ōkunidama-hime Shrine" might have been located west of Katada Shrine.<ref name="sk3">Edited by Shikinaisha Kenkyūkai (1990): p. 253</ref> {{ill|Ujiyoda Shrine|ja|宇治山田神社|12=simple|13=User:Immanuelle/Ujiyoda Shrine|qq=}} is also considered a candidate site for "Ōkunidama-hime Shrine."<ref name="sk3"/>
-The shrine grounds cover an area of approximately 2,516 square meters (2 tan, 5 se, 11 bu).<ref name="uy">Edited by Ujiyamada City Office (1929): p. 10</ref> The {{ill|Shintai|en|Shintai|qid=Q327532|lt=Shintai|1=Shintai}} (sacred object) is a stone, and the {{ill|honden|ja|社殿|12=simple|13=User:Immanuelle/honden|ja_comment=jawiki redirects to 神社建築}} (main hall) measures approximately 1.3 meters in length, 1.5 meters in width, and 2.0 meters in height.<ref>Fukuyama et al. (1975): p. 150</ref>
+
+Katada Shrine is located at 442-2 Katada, Aza Chaya, Futami-cho, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196|lt=Mie Prefecture}}.{{#tag:ref|The source notes the address as "442-2 Katada, Aza E, Futami-cho," but due to mergers with the former Ise City and other municipalities, it was changed to "442-2 Katada, Aza Chaya, Futami-cho, Ise City." <ref>{{Cite web|ja|url=http://www.city.ise.mie.jp/secure/4736/setteityousyo.pdf|title=町の区域の設定調書|publisher=Ise City Citizen Exchange Division|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20140608120807/http://www.city.ise.mie.jp/secure/4736/setteityousyo.pdf|archivedate=2014-06-08}}</ref>|group="Note"}} It is considered one of the candidate sites (論社) for both the "Enomura Shrine" and "Ōkunidama-hime Shrine" listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}.<ref name="tm"/> The view that identifies Katada Shrine as "Ōkunidama-hime Shrine" was expressed by Watari Nobunori and {{ill|Ban Nobutomo|ja|伴信友|12=simple|13=User:Immanuelle/Tomonobu Ban|comment=changed title based on wikidata|qid=Q4346747}}, while Sonoda Moriyoshi speculated that "Ōkunidama-hime Shrine" might have been located west of Katada Shrine.<ref name="sk3">Edited by Shikinaisha Kenkyūkai (1990): p. 253</ref> {{ill|Ujiyoda Shrine|ja|宇治山田神社}} is also considered a candidate site for "Ōkunidama-hime Shrine."<ref name="sk3"/>
+
+The shrine grounds cover an area of approximately 2,516 square meters (2 tan, 5 se, 11 bu).<ref name="uy">Edited by Ujiyamada City Office (1929): p. 10</ref> The {{ill|Shintai|en|Shintai|qid=Q327532|lt=Shintai}} (sacred object) is a stone, and the {{ill|honden|ja|社殿}} (main hall) measures approximately 1.3 meters in length, 1.5 meters in width, and 2.0 meters in height.<ref>Fukuyama et al. (1975): p. 150</ref>
+
 == Enshrined Deity ==
-The {{ill|kami|ja|祭神|12=simple|13=User:Immanuelle/kami|qq=}} enshrined is Samitsu-hime no Mikoto (佐見都日女命).<ref name="ic">Edited by Ise Bunka-sha (2008): p. 95</ref><ref name="gk">Gakken Publishing (2013): p. 70</ref> She is considered a local deity.<ref name="ic"/><ref name="gk"/> If Katada Shrine is regarded as the successor to the ancient "Ōkunidama-hime Shrine," Samitsu-hime no Mikoto would be the daughter of {{ill|Isetsuhiko|en|Isetsuhiko|qid=Q17193127|lt=Isetsuhiko|1=Isetsuhiko}}, the great land deity of {{ill|Ise Province|en|Ise Province|qid=Q864166|lt=Ise Province|1=Ise Province}}.<ref name="tm"/> The name "Samitsu" refers to an old place name of the area.<ref name="tm"/>
+
+The {{ill|kami|ja|祭神}} enshrined is Samitsu-hime no Mikoto (佐見都日女命).<ref name="ic">Edited by Ise Bunka-sha (2008): p. 95</ref><ref name="gk">Gakken Publishing (2013): p. 70</ref> She is considered a local deity.<ref name="ic"/><ref name="gk"/> If Katada Shrine is regarded as the successor to the ancient "Ōkunidama-hime Shrine," Samitsu-hime no Mikoto would be the daughter of {{ill|Isetsuhiko|en|Isetsuhiko|qid=Q17193127|lt=Isetsuhiko}}, the great land deity of {{ill|Ise Province|en|Ise Province|qid=Q864166|lt=Ise Province}}.<ref name="tm"/> The name "Samitsu" refers to an old place name of the area.<ref name="tm"/>
+
 == History ==
-When {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto|1=Yamatohime-no-mikoto}} visited Futami during her journey through the provinces, Samitsu-hime no Mikoto, the local deity, presented her with hard salt (堅塩, katajio).<ref name="ic"/><ref name="gk"/> Yamatohime-no-mikoto was pleased and established Katada Shrine.<ref name="ic"/><ref name="gk"/> However, Samitsu-hime no Mikoto did not offer the salt willingly; instead, she silently presented it without answering Yamatohime-no-mikoto’s questions, as a form of resistance to giving up her cultivated land.<ref name="tm"/> This event marked the origin of sacred salt production at Futamiura for offerings to the Inner and Outer Shrines.<ref name="tm"/>
-Although the shrine's rituals were interrupted for a time, Arakida Ujiyuki revived them in 1434 (Eikyō 6). When Futami became shrine territory again in 1670 (Kanbun 10), the {{ill|Edo shogunate|ja|Tokugawa shogunate|1=Tokugawa shogunate|2=ja|3=江戸幕府|12=simple|13=User:Immanuelle/Edo shogunate|ja_comment=jawiki link invalid}} ordered the local people to perform festivals and shrine rebuilding, which they did with great dedication.<ref>{{Cite web|ja|url=http://www.isekanko.jp/k-cycling/course05.html|title=Course 05 Futami Route – Visiting Shrines, Meoto Iwa, and Somin’s Forest in the Land of Purification and Salt|publisher=Ise City Tourism Association|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20131026232640/http://www.isekanko.jp/k-cycling/course05.html|archivedate=2013-10-26}}</ref>
+
+When {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}} visited Futami during her journey through the provinces, Samitsu-hime no Mikoto, the local deity, presented her with hard salt (堅塩, katajio).<ref name="ic"/><ref name="gk"/> Yamatohime-no-mikoto was pleased and established Katada Shrine.<ref name="ic"/><ref name="gk"/> However, Samitsu-hime no Mikoto did not offer the salt willingly; instead, she silently presented it without answering Yamatohime-no-mikoto’s questions, as a form of resistance to giving up her cultivated land.<ref name="tm"/> This event marked the origin of sacred salt production at Futamiura for offerings to the Inner and Outer Shrines.<ref name="tm"/>
+
+Although the shrine's rituals were interrupted for a time, Arakida Ujiyuki revived them in 1434 (Eikyō 6). When Futami became shrine territory again in 1670 (Kanbun 10), the {{ill|Edo shogunate|ja|Tokugawa shogunate}} ordered the local people to perform festivals and shrine rebuilding, which they did with great dedication.<ref>{{Cite web|ja|url=http://www.isekanko.jp/k-cycling/course05.html|title=Course 05 Futami Route – Visiting Shrines, Meoto Iwa, and Somin’s Forest in the Land of Purification and Salt|publisher=Ise City Tourism Association|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20131026232640/http://www.isekanko.jp/k-cycling/course05.html|archivedate=2013-10-26}}</ref>
+
 The shrine was rebuilt in March 1921 (Taishō 10).<ref name="uy"/>
+
 == Surroundings ==
-Katada Shrine is located at the western foot of Mt. Otonashi, directly across from the Futami General Branch Office of Ise City Hall.<ref name="ic"/> Nearby is the Futami inn district, and passing through it leads to {{ill|Futami Okitama Shrine|en|Futami Okitama Shrine|qid=Q64969614|lt=Futami Okitama Shrine|1=Futami Okitama Shrine}} and {{ill|Meoto Iwa|en|Meoto Iwa|qid=Q333875|lt=Meoto Iwa|1=Meoto Iwa}} (the "Wedded Rocks").<ref name="gk"/>
-It’s about a 6-minute walk (approximately 400 meters) from {{ill|Futaminoura Station|en|Futaminoura Station|qid=Q117376|lt=Futaminoura Station|1=Futaminoura Station}} on the {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line|1=Sangū Line}} of {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central|1=Central Japan Railway Company}}.<ref>{{Cite web|ja|url=http://www.yokoyama-vc.jp/marugoto/walking60/13.pdf|title=Route 13: The Sacred Salt Road|publisher=Yokoyama Visitor Center|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20140608131007/http://www.yokoyama-vc.jp/marugoto/walking60/13.pdf|archivedate=2014-06-08}}</ref> It is also right in front of the Futami General Branch Office bus stop. By car, it is about a 1-minute (1.2 km) drive from {{ill|Futami Junction|ja|二見ジャンクション|12=simple|13=User:Immanuelle/Futami Junction|1=Futami junction|comment=changed title based on wikidata|qid=Q10880410}} via National Route 42 after exiting the {{ill|Ise Futami Toba Toll Road|ja|伊勢二見鳥羽有料道路|12=simple|13=User:Immanuelle/Ise Futami Toba Toll Road|ja_comment=jawiki redirects to 伊勢二見鳥羽ライン|1=Ise Futami Toba Line|comment=changed title based on wikidata|qid=Q11378935}}.
+
+Katada Shrine is located at the western foot of Mt. Otonashi, directly across from the Futami General Branch Office of Ise City Hall.<ref name="ic"/> Nearby is the Futami inn district, and passing through it leads to {{ill|Futami Okitama Shrine|en|Futami Okitama Shrine|qid=Q64969614|lt=Futami Okitama Shrine}} and {{ill|Meoto Iwa|en|Meoto Iwa|qid=Q333875|lt=Meoto Iwa}} (the "Wedded Rocks").<ref name="gk"/>
+
+It’s about a 6-minute walk (approximately 400 meters) from {{ill|Futaminoura Station|en|Futaminoura Station|qid=Q117376|lt=Futaminoura Station}} on the {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line}} of {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central}}.<ref>{{Cite web|ja|url=http://www.yokoyama-vc.jp/marugoto/walking60/13.pdf|title=Route 13: The Sacred Salt Road|publisher=Yokoyama Visitor Center|accessdate=2014-06-08|archiveurl=https://web.archive.org/web/20140608131007/http://www.yokoyama-vc.jp/marugoto/walking60/13.pdf|archivedate=2014-06-08}}</ref> It is also right in front of the Futami General Branch Office bus stop. By car, it is about a 1-minute (1.2 km) drive from {{ill|Futami junction|ja|二見ジャンクション|12=simple|13=User:Immanuelle/Futami Junction|comment=changed title based on wikidata|qid=Q10880410}} via National Route 42 after exiting the {{ill|Ise Futami Toba Line|ja|伊勢二見鳥羽有料道路|12=simple|13=User:Immanuelle/Ise Futami Toba Toll Road|ja_comment=jawiki redirects to 伊勢二見鳥羽ライン|comment=changed title based on wikidata|qid=Q11378935}}.
 == References ==
+
 ; Note
 {{Reflist|group="注"}}
 ; References
 {{Reflist|2}}
+
 == Bibliography ==
 * [[伊勢文化舎]] 編『お伊勢さん125社めぐり』別冊『伊勢人』、伊勢文化舎、平成20th year 12月23日、151p. ISBN 978-4-900759-37-4
 * 宇治山田市役所 編『宇治山田市史 上巻』宇治山田市役所、昭和4th year 1月20日、862p.
 * [[:en:学研パブリッシング|学研パブリッシング]]『伊勢神宮に行こう』Gakken Mook神社紀行セレクションvol.1、[[薗田稔]]監修、学研マーケティング、2013rd year 7月4日、82p. ISBN 978-4-05-610047-1
-* 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University|1=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
+* 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * [[福山敏男]]・[[稲垣栄三|稲垣榮三]]・村瀬美樹・胡麻鶴醇之『神宮―第六十回神宮式年遷宮―』[[:en:小学館|小学館]]、昭和50th year 4月20日、246p.
 * 『日本人なら知っておきたい 伊勢神宮と125の社』タツミムック、[[辰巳出版]]、2013rd year 11月1日、127p. ISBN 978-4-7778-1197-7
+
 == See Also ==
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise|1=List of Shikinaisha in Ise Province|3=伊勢国の式内社一覧|1=List of Shikinaisha in Ise Province|12=simple|13=User:Immanuelle/List of 125 Shrines of Ise|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
-* {{ill|Mishioden Shrine|ja|御塩殿神社|12=simple|13=User:Immanuelle/Mishioden Shrine|qq=}}
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧}}
+* {{ill|List of 125 Shrines of Ise|ja|神宮125社の一覧|lt=List of 125 Shrines of Ise}}
+* {{ill|Mishioden Shrine|ja|御塩殿神社}}
+
 == External Links ==
 {{ external media
 | align  = 
@@ -57,23 +73,40 @@ It’s about a 6-minute walk (approximately 400 meters) from {{ill|Futaminoura S
 |image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area10/area10_01.jpg 堅田神社]
 }}
 * [http://www.jingukaikan.jp/125mairi/m10/1002.html 堅田神社（かただじんじゃ）] - 一般財団法人伊勢神宮崇敬会
+
 {{神道 横}}
+
 {{125 Shrines of Ise}}
 
 {{translated page|ja|堅田神社|version=97959843|comment=Imported full ja history}}
 
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Katada Shrine (Q17228121)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| RONSHA || {{ill|Katada Shrine|lt=Katada Shrine|ja|堅田神社|qid=Q17228121}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || — || part of {{ill|Kōtai Jingū|qid=Q11581011}} || {{ill|Ohokunitamahimeno Shrine|lt=Ohokunitamahimeno Shrine|qid=Q135039265}}; {{ill|Wemurano Shrine|lt=Wemurano Shrine|qid=Q135039268}}; {{ill|Wemurano Shrine|lt=Wemurano Shrine|qid=Q135039268}} || {{coord|34.505698|136.779849|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181129 DB]
+|}
+{{wikidata link|Q17228121|da|d:Q17228121|ja|堅田神社|check_date=2026-05-17}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Futami Town]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
 [[Category:Pages with 200+ untranslated japanese characters]]
 [[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with duplicated content]]

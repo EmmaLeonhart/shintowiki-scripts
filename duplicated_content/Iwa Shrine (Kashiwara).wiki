@@ -1,80 +1,111 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iwa_Shrine_%28Kashiwara%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
+{
+{
 {{Infobox religious building|
 |Name=Iwa Shrine
 |image=File:Iwa-Jinja01.JPG
-|Location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}{{ill|Kashiwara|en|Kashiwara|qid=Q873583|lt=Kashiwara City|1=Kashiwara}} Taiheiji 2-19-13
+|Location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Kashiwara|en|Kashiwara|qid=Q873583|lt=Kashiwara City}} Taiheiji 2-19-13
+|Latitude degrees = 34 | Latitude minutes = 34 | Latitude seconds = 55.4 | Hemisphere = N
+|Longitude degrees = 135 | Longitude minutes = 38 | Longitude seconds = 0.7 | Hemisphere = E
+|Map country code = JP
 |Map = Japan Osaka
-|Enshrined deity={{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime Hime|1=Princess Ishi-hime}}
-|Shrine Rank={{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)<br />Formerly {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
+|Enshrined deity={{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime Hime}}
+|Shrine Rank={{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (small)<br />Formerly {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}
 |Founded=Unknown
 |Main Hall=
 |Alternate name= Kumano Gongen Shrine (old name)
 |Sacred sites=
-|Annual Festival={{ill|October 19|en|October 19|qid=Q2961|lt=October 19|1=October 19}}
+|Annual Festival={{ill|October 19|en|October 19|qid=Q2961|lt=October 19}}
 |Rituals=
-|prefecture= {{ill|Kashiwara|qid=Q873583|1=Kashiwara}}
+|prefecture= {{ill|Kashiwara|qid=Q873583}}
 |coordinates= {{Coord|34.582055555555556|N|135.63352777777777}}
+|deity= {{ill|Princess Ishi-hime|qid=Q11585498}}
 }}
+
 [[File:Iwa-jinja (Kashiwara), torii.jpg|thumb|250px|right|{{center|Torii}}]]
-'''Iwa Shrine''' (石神社) is a Shinto shrine located in Taiheiji, Kashiwara City, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and its former shrine Rank was {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}.
+
+'''Iwa Shrine''' (石神社) is a Shinto shrine located in Taiheiji, Kashiwara City, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. It is a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}, and its former shrine Rank was {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度}}.
+
 ==Enshrined Deities==
 ; Main Deity
-* {{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime Hime|1=Princess Ishi-hime}} – the imperial princess of {{ill|Emperor Senka|en|Emperor Senka|qid=Q329728|lt=Emperor Senga|1=Emperor Senka}} and the empress of {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei|1=Emperor Kinmei}}.
+* {{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime Hime}} – the imperial princess of {{ill|Emperor Senka|en|Emperor Senka|qid=Q329728|lt=Emperor Senga}} and the empress of {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei}}.
+
 ; Auxiliary Deities
-* {{ill|Iwanaga-hime|en|Iwanaga-hime|qid=Q8191705|lt=Ishinagahime|1=Iwanaga-hime}}
-* {{ill|Kumano Gongen|ja|熊野権現|12=simple|13=User:Immanuelle/Kumano Gongen|qq=}}
+* {{ill|Iwanaga-hime|en|Iwanaga-hime|qid=Q8191705|lt=Ishinagahime}}
+* {{ill|Kumano Gongen|ja|熊野権現}}
+
 ==Overview==
-The shrine is situated on the hillside of a small elevated hill near the southern end of the {{ill|Ikoma Mountain Range|ja|生駒山地|12=simple|13=User:Immanuelle/Ikoma Mountain Range|1=Ikoma Mountains|comment=changed title based on wikidata|qid=Q11574917}} in the Taiheiji area of Kashiwara City. An office is located at the foot of the precincts, while the main hall stands atop a flight of high stone steps. According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku|1=Nihon Sandai Jitsuroku}}, in the 9th year of the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan|1=Zhenguan}} era (February {{ill|867|en|867|qid=Q30347|lt=867|1=867}}) it was listed as an official shrine, and in the {{ill|Engishiki Jinja Meicho|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinja Meicho|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} it is classified as a small shrine. In the Edo period, it was revered as the guardian deity of Taiheiji Village and was known as Kumano Gongen Shrine. In ancient times, there was a temple in this area known as {{ill|Chishikiji|ja|知識寺|lt=Chishikiji|lt_ja=智識寺|12=simple|13=User:Immanuelle/Chishikiji|ja_comment=jawiki redirects to 智識寺跡|1=Chishiki-ji|comment=changed title based on wikidata|qid=Q11584664}}. It is said that {{ill|Emperor Shōmu|en|Emperor Shōmu|qid=Q349263|lt=Emperor Shōmu|1=Emperor Shōmu}} and {{ill|Empress Kōken|en|Empress Kōken|qid=Q232955|lt=Emperor Kōken|1=Empress Kōken}} visited this temple during their travels between {{ill|Naniwa Palace|ja|難波宮|12=simple|13=User:Immanuelle/Naniwa Palace|1=Naniwa Palace|comment=changed title based on wikidata|qid=Q3608523}} and {{ill|Heijō Palace|en|Heijō Palace|qid=Q211585|lt=Heijō Palace|1=Heijō Palace}}, performing worship rituals. At Chishikiji, a large {{ill|Rurashina Buddha|ja|毘盧遮那仏|lt=Rurashina Buddha|lt_ja=廬舎那仏|12=simple|13=User:Immanuelle/Rurashina Buddha|1=Birushana Buddha|comment=changed title based on wikidata|qid=Q17193861}} was enshrined; upon beholding it, Emperor Shōmu is said to have initiated the construction of the {{ill|Great Buddha of Tōdai-ji|ja|東大寺大仏|12=simple|13=User:Immanuelle/Great Buddha of Tōdai-ji|ja_comment=jawiki redirects to 東大寺盧舎那仏像|1=Great Buddha of Tōdaiji|comment=changed title based on wikidata|qid=Q11526469}}. Later, Chishikiji fell into decline around the Muromachi period.
+The shrine is situated on the hillside of a small elevated hill near the southern end of the {{ill|Ikoma Mountains|ja|生駒山地|12=simple|13=User:Immanuelle/Ikoma Mountain Range|comment=changed title based on wikidata|qid=Q11574917}} in the Taiheiji area of Kashiwara City. An office is located at the foot of the precincts, while the main hall stands atop a flight of high stone steps. According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}, in the 9th year of the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan}} era (February {{ill|867|en|867|qid=Q30347|lt=867}}) it was listed as an official shrine, and in the {{ill|Engishiki Jinja Meicho|ja|延喜式神名帳}} it is classified as a small shrine. In the Edo period, it was revered as the guardian deity of Taiheiji Village and was known as Kumano Gongen Shrine. In ancient times, there was a temple in this area known as {{ill|Chishiki-ji|ja|知識寺|lt=Chishikiji|lt_ja=智識寺|12=simple|13=User:Immanuelle/Chishikiji|ja_comment=jawiki redirects to 智識寺跡|comment=changed title based on wikidata|qid=Q11584664}}. It is said that {{ill|Emperor Shōmu|en|Emperor Shōmu|qid=Q349263|lt=Emperor Shōmu}} and {{ill|Empress Kōken|en|Empress Kōken|qid=Q232955|lt=Emperor Kōken}} visited this temple during their travels between {{ill|Naniwa Palace|ja|難波宮|12=simple|13=User:Immanuelle/Naniwa Palace|comment=changed title based on wikidata|qid=Q3608523}} and {{ill|Heijō Palace|en|Heijō Palace|qid=Q211585|lt=Heijō Palace}}, performing worship rituals. At Chishikiji, a large {{ill|Birushana Buddha|ja|毘盧遮那仏|lt=Rurashina Buddha|lt_ja=廬舎那仏|12=simple|13=User:Immanuelle/Rurashina Buddha|comment=changed title based on wikidata|qid=Q17193861}} was enshrined; upon beholding it, Emperor Shōmu is said to have initiated the construction of the {{ill|Great Buddha of Tōdaiji|ja|東大寺大仏|12=simple|13=User:Immanuelle/Great Buddha of Tōdai-ji|ja_comment=jawiki redirects to 東大寺盧舎那仏像|comment=changed title based on wikidata|qid=Q11526469}}. Later, Chishikiji fell into decline around the Muromachi period.
+
 ==Precincts==
-Within the precincts stands a large {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Camphor Tree|1=Camphora officinarum}}, a massive tree with an approximate circumference of 6 meters and a height exceeding 16 meters. It is estimated to be 700–800 years old and has been designated a Natural Monument by Osaka Prefecture.
+Within the precincts stands a large {{ill|Camphora officinarum|en|Camphora officinarum|qid=Q158722|lt=Camphor Tree}}, a massive tree with an approximate circumference of 6 meters and a height exceeding 16 meters. It is estimated to be 700–800 years old and has been designated a Natural Monument by Osaka Prefecture.
+
 Next to the shrine office within the precincts is the foundation stone of the east tower of Chishikiji, which has been designated as a cultural property by Osaka Prefecture. The column hole of this foundation stone has a diameter of 122 cm and was once used as the shrine’s hand-washing stone, although it is now enclosed by a fence.
+
 <gallery>
 File:Iwa-Jinja01.JPG|Main Hall
 File:Iwa-jinja (Kashiwara), kusu-2.jpg|The camphor tree within the precincts (designated as a Natural Monument by Osaka Prefecture)
 File:Chishiki-ji (Kashiwara), shinso.jpg|The foundation stone of the east tower of Chishikiji within the precincts (designated as a Cultural Property by Osaka Prefecture)
 </gallery>
+
 ==Festivals==
 * Summer Grand Festival (July 18, 19)  
 The festival, known as the "Orei-sai," is held on the second Saturday and Sunday of July (mid-July). During this event, the Taiheiji area offers magnificent futon drums. The futon drums feature carvings by the renowned Banshu craftsman, Kuroda Masakatsu, the third in his lineage.
 * Annual Festival (Autumn Festival) (October 19)
+
 ==Cultural Properties==
 === Cultural Properties Designated by Osaka Prefecture ===
 * Tangible Cultural Properties  
 ** The foundation stone of the east tower pillar of Chishikiji (archaeological material) – owned by Iwa Shrine. Designated on February 20, 1970<ref>[http://www.city.kashiwara.osaka.jp/docs/2014082200096/?doc_id=1500 The foundation stone of the east tower pillar of Chishikiji] (Kashiwara City website).</ref>
 * Natural Monuments  
 ** The camphor tree of Iwa Shrine – designated on August 4, 1978<ref>[http://www.city.kashiwara.osaka.jp/docs/2014082200232/?doc_id=1514 The camphor tree of Iwa Shrine] (Kashiwara City website).</ref>
+
 ==Visitor Information==
 ; Location
-* {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}{{ill|Kashiwara|en|Kashiwara|qid=Q873583|lt=Kashiwara City|1=Kashiwara}} Taiheiji 2-19-13
+* {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Kashiwara|en|Kashiwara|qid=Q873583|lt=Kashiwara City}} Taiheiji 2-19-13
+
 ; Access
-* Railway: Alight at {{ill|Osaka Line|en|Osaka Line|qid=Q1052545|lt=Kintetsu Osaka Line|1=Osaka Line}} and {{ill|Andō Station|en|Andō Station|qid=Q4761545|lt=Ando Station|1=Andō Station}}, then walk approximately 10 minutes (about 800 m east)
+* Railway: Alight at {{ill|Osaka Line|en|Osaka Line|qid=Q1052545|lt=Kintetsu Osaka Line}} and {{ill|Andō Station|en|Andō Station|qid=Q4761545|lt=Ando Station}}, then walk approximately 10 minutes (about 800 m east)
+
 ; Surroundings
-The path leading north in front of the shrine is part of an ancient route that ran north–south along the foothills of the Ikoma Mountains even before the establishment of the {{ill|Higashitakano Kaidō|ja|東高野街道|12=simple|13=User:Immanuelle/Higashitakano Kaidō|1=Higashi Kōya Kaidō|comment=changed title based on wikidata|qid=Q11528777}}. It is said that {{ill|Ariwara no Narihira|en|Ariwara no Narihira|qid=Q451991|lt=Ariwara no Narihira|1=Ariwara no Narihira}} once traversed this route between {{ill|Hiraoka Shrine|en|Hiraoka Shrine|qid=Q32422|lt=Hiraoka Shrine|1=Hiraoka Shrine}}, the primary shrine of Yamato and Kawachi provinces.
+The path leading north in front of the shrine is part of an ancient route that ran north–south along the foothills of the Ikoma Mountains even before the establishment of the {{ill|Higashi Kōya Kaidō|ja|東高野街道|12=simple|13=User:Immanuelle/Higashitakano Kaidō|comment=changed title based on wikidata|qid=Q11528777}}. It is said that {{ill|Ariwara no Narihira|en|Ariwara no Narihira|qid=Q451991|lt=Ariwara no Narihira}} once traversed this route between {{ill|Hiraoka Shrine|en|Hiraoka Shrine|qid=Q32422|lt=Hiraoka Shrine}}, the primary shrine of Yamato and Kawachi provinces.
+
 ==Notes==
 {{Note Help}}
 {{reflist}}
+
 ==External Links==
 {{Commonscat|Iwa-jinja (Kashiwara)}}
 * [http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai6sibu/kasiwara-city/m22_06_kasiwara_iwa.html Iwa Shrine - Osaka Prefecture Shrine Office]
+
 {{Shinto-stub}}
 {{Shinto Navigation}}
 {{Iwanaga Faith}}
+
 {{citation needed|ja|石神社|version=90204426|comment=Imported full ja history}}
+
+{{translated page|ja|石神社 (柏原市)|version=92447432|comment=Imported full ja history}}
+
+{{Commons category|Iwa-jinja (Kashiwara)}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Iwa Shrine (Kashiwara) (Q11587134)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Ōgata district|ja|大県郡|zh|大縣郡|qid=Q11438107|1=Ōgata district}} || {{ill|Iwa Shrine (Kashiwara)|lt=Iwa Shrine|ja|石神社 (柏原市)|commons|Category:Iwa-jinja (Kashiwara)|qid=Q11587134|1=Iwa Shrine (Kashiwara)}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized|1=Kanpei-sha}} || {{ill|Shikinai Shōsha|qid=Q134917287|1=Shikinai Shosha}} || — || — || {{coord|34.582109|135.633517|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180900 DB]
+| {{ill|Ōgata district|ja|大県郡|zh|大縣郡|qid=Q11438107}} || {{ill|Iwa Shrine (Kashiwara)|lt=Iwa Shrine|ja|石神社 (柏原市)|commons|Category:Iwa-jinja (Kashiwara)|qid=Q11587134}} || {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.582109|135.633517|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180900 DB]
 |}
-
-{{translated page|ja|石神社 (柏原市)|version=92447432|comment=Imported full ja history}}
-
+{{wikidata link|Q11587134|da|d:Q11587134|check_date=2026-05-15}}==Notes==
+<references group="lower-alpha"/>
 [[Category:Buildings and structures in Kashiwara, Osaka]]
 [[Category:History of Kashiwara, Osaka]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Son-sha in Osaka Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]

@@ -1,15 +1,14 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Isezuka_Kofun_%28Fujioka%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 {{Infobox ancient site
 | name = Isezuka Kofun
 | image = [[File:Isezuka Kofun (Fujioka), funkyu-2-3.jpg|280px]]<br/>Mound and stone chamber entrance
 | alternate_name = 
-| part_of = {{ill|Shiroishi Kofun Group|ja|白石古墳群|12=simple|13=User:Immanuelle/Shiroishi Kofun Group|qq=}}
-| location = {{ill|Fujioka|qid=Q596486|1=Fujioka, Gunma}}
+| part_of = {{ill|Shiroishi Kofun Group|ja|白石古墳群}}
+| location = {{ill|Fujioka, Gunma|ar|فوجيوكا (غونما)|azb|فوجی‌اوکا، قونما|ce|Фудзиока (гӀала, Гумма)|ceb|Fujioka (lungsod sa Hapon, Gunma-ken)|de|Fujioka (Gunma)|eo|Fuĵioka|es|Fujioka|fa|فوجی‌اوکا، گونما|fi|Fujioka|fr|Fujioka|gl|Fujioka, Gunma|hu|Fudzsioka (Gunma)|id|Fujioka, Gunma|it|Fujioka|ja|藤岡市|ko|후지오카시|mg|Fujioka|mzn|فوجی‌اوکا، گونما|nl|Fujioka (Gunma)|pl|Fujioka|pt|Fujioka|ro|Fujioka|ru|Фудзиока (город, Гумма)|sr|Фуџиока|sv|Fujioka, Gunma|tg|Фуҷиока|tl|Fujioka, Gunma|tr|Fujioka|tt|Фудзиока (шәһәр, Гумма)|uk|Фудзіока (Ґумма)|ur|فوجیوکا، گنما|uz|Fujioka (Gunma)|vi|Fujioka, Gunma|war|Fujioka, Gunma|zh|藤岡市|zh_classical|藤岡市|zh_min_nan|Huzioka-chhī|zh_yue|藤岡|qid=Q596486}}
 | coordinates = {{Coord|36.265555555556|N|139.04005555556}}
-| type = {{ill|Octagonal Kofun|ja|八角墳|1=Octagonal Kofun|12=simple|13=User:Immanuelle/Octagonal Kofun|13=User:Immanuelle/Octagonal Kofun|comment=enwiki is a redirect|comment=enwiki is a redirect}}
+| type = {{ill|Octagonal Kofun|ja|八角墳}}
 | area = Diameter: 27.2m<br/>Height: 6m
-| burial = Double-sleeved {{ill|Yokoana-style stone chamber|ja|横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|1=Corridor-Style Stone Chamber|12=simple|13=User:Immanuelle/Yokoana-style stone chamber|13=User:Immanuelle/Corridor-Style Stone Chamber|qq=}} (pattern masonry)
-| burial goods = {{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery|1=Sue pottery}}, {{ill|Haniwa|en|Haniwa|qid=Q849376|lt=Haniwa|1=Haniwa}}
+| burial = Double-sleeved {{ill|Yokoana-style stone chamber|ja|横穴式石室}} (pattern masonry)
+| burial goods = {{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery}}, {{ill|Haniwa|ar|هانيوا|ca|Haniwa|cs|Haniwa|de|Haniwa|eo|Haniva|es|Haniwa|fi|Haniwa|fr|Haniwa|hu|Haniva|id|Haniwa|it|Haniwa|ja|埴輪|mk|Ханива|nl|Haniwa|pl|Haniwa|pt|Haniwa|ru|Ханива|sr|Ханива|sv|Haniwa|th|ฮานิวะ|tr|Haniwa|uk|Ханіва|zh|埴轮|qid=Q849376|lt=Haniwa}}
 | satellite_mounds = None
 | built = Late 6th century
 | buried_person = Unknown
@@ -18,27 +17,35 @@
 | notes_details = 
 | special_notes = 
 | map = {{location map|Japan Gunma|map_dot_label=Isezuka Kofun|coordinates=36|coordinates=15|coordinates=55.85|lon_deg=139|lon_min=2|lon_sec=24.20|mark=Octagonal.svg|marksize=28|float=center|border=none|position=top|width=200|caption=}}{{maplink2|type=point|frame=yes|plain=yes|zoom=13|frame-align=center|frame-width=200|coord={{coord|36|15|56.0|N|139|02|24.2|E}}}}
-| architectural_styles = {{ill|octagonal kofun|qid=Q11391751|1=Octagonal Kofun}}
+| architectural_styles = {{ill|Octagonal Kofun|qid=Q11391751}}
 }}
-'''Isezuka Kofun''' (伊勢塚古墳) is an ancient [[kofun]] located in {{ill|Kamiochiai, Fujioka, Gunma Prefecture|ja|群馬県藤岡市上落合|12=simple|13=User:Immanuelle/Kamiochiai, Fujioka, Gunma Prefecture|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid}}. It is part of the {{ill|Shiroishi Kofun Group|ja|白石古墳群|12=simple|13=User:Immanuelle/Shiroishi Kofun Group|qq=}} and is designated a Historic Site by Gunma Prefecture.
+
+'''Isezuka Kofun''' (伊勢塚古墳) is an ancient Kofun ([[kofun]]) located in {{ill|Kamiochiai, Fujioka, Gunma Prefecture|ja|群馬県藤岡市上落合}}. It is part of the {{ill|Shiroishi Kofun Group|ja|白石古墳群}} and is Historic Site1 as a Historic Site by Gunma Prefecture.
+
 == Overview ==
 The Isezuka Kofun is situated on the lowest terrace of a three-level river terrace typeed along the right bank of the Kabura River in southern Gunma Prefecture. Multiple archaeological investigations have been conducted at the site.
-The mound is an irregular octagon, measuring 27.2 meters in diameter and 6 meters in height{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The mound consists of four tiers, with the lowest tier being polygonal (irregular octagon) and the udder tiers being circular{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The mound’s surface is covered with {{ill|Fukiishi|en|Fukiishi|qid=Q11621213|lt=fukiishi|1=Fukiishi}}, and cylindrical, humanoid, and shield-shaped {{ill|Haniwa|en|Haniwa|qid=Q849376|lt=haniwa|1=Haniwa}} were found on the second tier{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The burial chamber is a double-sleeved {{ill|yokoana-style stone chamber|ja|横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|1=Corridor-Style Stone Chamber|12=simple|13=User:Immanuelle/yokoana-style stone chamber|13=User:Immanuelle/Corridor-Style Stone Chamber|qq=}} opening southward. It is the largest stone chamber in Fujioka City and is notable for its distinctive "pattern masonry" construction and dome-shaped ceiling{{Sfn|Isezuka Kofun (Kofun)|1989}}. burial goods such as {{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery|1=Sue pottery}} have been discovered. The mound is estimated to have been built in the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period|1=Kofun period}} (late 6th century){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}} or the latter half of the 6th century<ref name="Description Board">Historic Site description board.</ref>.
-The site was designated a Gunma Prefecture Historic Site in 1973 (Shōwa 48)<ref name="Gunma Prefecture"/>. It has since been preserved and made accessible to the public.
+
+The mound is an irregular octagon, measuring 27.2 meters in diameter and 6 meters in height{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The mound consists of four tiers, with the lowest tier being polygonal (irregular octagon) and the udder tiers being circular{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The mound’s surface is covered with {{ill|Fukiishi|en|Fukiishi|qid=Q11621213|lt=fukiishi}}, and cylindrical, humanoid, and shield-shaped {{ill|Haniwa|ar|هانيوا|ca|Haniwa|cs|Haniwa|de|Haniwa|eo|Haniva|es|Haniwa|fi|Haniwa|fr|Haniwa|hu|Haniva|id|Haniwa|it|Haniwa|ja|埴輪|mk|Ханива|nl|Haniwa|pl|Haniwa|pt|Haniwa|ru|Ханива|sr|Ханива|sv|Haniwa|th|ฮานิวะ|tr|Haniwa|uk|Ханіва|zh|埴轮|qid=Q849376|lt=haniwa}} were found on the second tier{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}. The burial chamber is a double-sleeved {{ill|yokoana-style stone chamber|ja|横穴式石室}} opening southward. It is the largest stone chamber in Fujioka City and is notable for its distinctive "pattern masonry" construction and dome-shaped ceiling{{Sfn|Isezuka Kofun (Kofun)|1989}}. burial goods such as {{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery}} have been discovered. The mound is estimated to have been built in the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} (late 6th century){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}} or the latter half of the 6th century<ref name="Description Board">Historic Site description board.</ref>.
+
+The site was Historic Site1 a Gunma Prefecture Historic Site in 1973 (Shōwa 48)<ref name="Gunma Prefecture"/>. It has since been preserved and made accessible to the public.
+
 == Historical Timeline ==
-* {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=1938|1=Shōwa era}} (Shōwa 13): Listed in the ''Jōmō Kofun Sōran'' as "Midori Village Tomb No. 56."
-* {{ill|1973|en|1973|qid=Q2477|lt=Showa 48|1=1973}}: Designated a Gunma Prefecture Historic Site on August 21<ref name="Gunma Prefecture"/>.
-* {{ill|1987|en|1987|qid=Q2429|lt=Showa 62|1=1987}}: Survey conducted, confirming the mound’s octagonal type (reported by Fujioka City Board of Education in 1988){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
-* {{ill|1997|en|1997|qid=Q2088|lt=Heisei 9|1=1997}}: Survey conducted to confirm the area (Fujioka City Board of Education){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
-* {{ill|1998|en|1998|qid=Q2089|lt=Heisei 10|1=1998}}: Additional survey conducted (Fujioka City Board of Education){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
-== Burial Chamber ==
+* {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=1938}} (Shōwa 13): Listed in the ''Jōmō Kofun Sōran'' as "Midori Village Tomb No. 56."
+* {{ill|1973|en|1973|qid=Q2477|lt=Showa 48}}: Designated a Gunma Prefecture Historic Site on August 21<ref name="Gunma Prefecture"/>.
+* {{ill|1987|en|1987|qid=Q2429|lt=Showa 62}}: Survey conducted, confirming the mound’s octagonal type (reported by Fujioka City Board of Education in 1988){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
+* {{ill|1997|en|1997|qid=Q2088|lt=Heisei 9}}: Survey conducted to confirm the area (Fujioka City Board of Education){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
+* {{ill|1998|en|1998|qid=Q2089|lt=Heisei 10}}: Additional survey conducted (Fujioka City Board of Education){{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}.
+
+== burial Chamber ==
 [[File:Isezuka Kofun (Fujioka), 3D-B-2.jpg|thumb|300px|right|{{center|Overview of the stone chamber}}]]
 [[File:Isezuka Kofun (Fujioka), 3D-N-2.jpg|thumb|250px|right|{{center|Stone chamber diagram}}]]
-The burial facility consists of a double-sleeved {{ill|yokoana-style stone chamber|ja|横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|1=Corridor-Style Stone Chamber|2=ja|3=横穴式石室|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|4=zh|5=橫穴式石室|6=ko|7=굴식 돌방무덤|1=Corridor-Style Stone Chamber|1=Corridor-Style Stone Chamber|12=simple|13=User:Immanuelle/yokoana-style stone chamber|13=User:Immanuelle/Corridor-Style Stone Chamber|qq=}} that opens southward. The area of the chamber are as follows{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}:
+The burial facility consists of a double-sleeved {{ill|yokoana-style stone chamber|ja|横穴式石室}} that opens southward. The area of the chamber are as follows{{Sfn|Isezuka Kofun (Zoku Kofun)|2002}}:
 * Total length: 8.9 meters
 * burial chamber: Length 4.7 meters, rear wall width 1.84 meters, central width 2.41 meters, front width 1.54 meters
 * Passage: Length 4.24 meters
+
 The stone chamber features unique "pattern masonry," where quartzite cobbles and schist slabs are arranged vertically. The chamber has a domed ceiling, and its cross-section is hourglass-shaped<ref name="Description Board"/>. The ceiling stones consist of two rounded sandstone pieces, and the rear wall is similarly made of sandstone{{Sfn|Isezuka Kofun (Kofun)|1989}}. The entry portal is constructed with schist slabs, including a pseudo-lintel{{Sfn|Isezuka Kofun (Kofun)|1989}}.
+
 <gallery>
 File:Isezuka Kofun (Fujioka), genshitsu-1-2.jpg|burial chamber (towards rear wall)
 File:Isezuka Kofun (Fujioka), genshitsu-2-2.jpg|burial chamber (towards entrance)
@@ -47,27 +54,205 @@ File:Isezuka Kofun (Fujioka), sendou-1.jpg|Passage (towards burial chamber)
 File:Isezuka Kofun (Fujioka), entrance-2.jpg|Entrance
 File:Isezuka Kofun (Fujioka), funkyu-2.jpg|Mound and entrance (April 2021)
 </gallery>
-== Designation ==
+
+== designation1 ==
 === Gunma Prefecture Designated Historic Site ===
 * Historic Site
 ''' Isezuka Kofun - Designated on August 21, 1973 (Shōwa 48)<ref name="Gunma Prefecture">{{PDFlink|[https://www.pref.gunma.jp/contents/100155734.pdf List of Gunma Prefecture Designated Historic Site]}} (Gunma Prefecture website).</ref><ref name="Fujioka City">[https://www.city.fujioka.gunma.jp/kakuka/f_bunkazai/isedukakohun.html Isezuka Kofun] (Fujioka City website).</ref>.
+
 == Related Facilities ==
 * Fujioka Historical Museum (Shiraishi, Fujioka City)
+
 == References ==
 {{Reflist}}
+
 == See Also ==
-* {{ill|Shiroishi Kofun Group|ja|白石古墳群|12=simple|13=User:Immanuelle/Shiroishi Kofun Group|qq=}}
+* {{ill|Shiroishi Kofun Group|ja|白石古墳群}}
+
 == External Links ==
 {{Commonscat|Isezuka Kofun (Fujioka)}}
 * [https://www.city.fujioka.gunma.jp/kakuka/f_bunkazai/isedukakohun.html Isezuka Kofun] - Fujioka City website
+
 {{Kofun navbar}}
+
 {{citation needed|ja|伊勢塚古墳|version=100271088|comment=Imported full ja history}}
+
+{{draft categories|
+
+}}
+
 {{translated page|ja|伊勢塚古墳 (藤岡市)|version=100160010|comment=Imported full ja history}}
 
+{{Commons category|Isezuka Kofun (Fujioka)}}
+
+==Merged second translation==
+
+ 
+
+{{Infobox ancient site|type = {{ill|Octagonal Kofun|ja|八角墳}}
+|name=Isezuka Kofun
+|image=[[File:Isezuka Kofun (Fujioka), funkyu-2-3.jpg|280px]]<br/>Mound and entrance of the stone chamber
+| part_of={{ill|Shiroishi Kofun Group|ja|白石古墳群|lt=Shiraishi Kofun Cluster}}
+|location={{ill|Gunma Prefecture|ace|Prefektur Gunma|af|Gunma-prefektuur|an|Prefectura de Gunma|ar|غونما (محافظة)|arz|محافظه جونما|az|Qunma prefekturası|azb|قونما اوستانی|ban|Préféktur Gunma|bat_smg|Gunmas prefektūra|be|Гуму|bg|Гунма|bn|গুন্‌মা প্রশাসনিক অঞ্চল|ca|Prefectura de Gunma|cdo|Gunma-gâing|ce|Гумма (префектура)|ceb|Gunma-ken|ckb|پارێزگای گونما|cs|Prefektura Gunma|cy|Gunma (talaith)|da|Gunma-præfekturet|de|Präfektur Gunma|eo|Gubernio Gunma|es|Prefectura de Gunma|et|Gumma prefektuur|eu|Gunma (prefektura)|fa|استان گونما|fi|Gunman prefektuuri|fr|Préfecture de Gunma|frr|Gunma (Prefektüür)|ga|Maoracht Gunma|gl|Prefectura de Gunma|hak|Gunma-yen|he|גונמה (מחוז)|hr|Gunma (prefektura)|hu|Gunma prefektúra|hy|Գումմա (պրեֆեկտուրա)|id|Prefektur Gunma|ilo|Prepektura ti Gunma|it|Prefettura di Gunma|ja|群馬県|jv|Préfèktur Gunma|ka|გუმის პრეფექტურა|km|ហ្គឺនម៉ា(ខេត្ត)|kn|ಗನ್ಮ (ಪ್ರಾಂತ್ಯ)|ko|군마현|lt|Gunmos prefektūra|lv|Gummas prefektūra|mk|Гунма (префектура)|mni|ꯒꯨꯟꯃꯥ ꯂꯝꯈꯥꯢ|mr|गुन्मा प्रांत|ms|Wilayah Gunma|ne|गुन्मा|nl|Gunma (prefectuur)|no|Gunma (prefektur)|nov|Gunma Prefekture|os|Гумма (префектурæ)|pam|Prepektura ning Gunma|pl|Prefektura Gunma|pnb|ضلع گنما|pt|Gunma|ro|Prefectura Gunma|ru|Гумма (префектура)|sd|گونما پريفيڪچر|se|Gunma prefektuvra|sh|Prefektura Gunma|si|ගුන්මා ප්‍රාන්තය|simple|Gunma Prefecture|sk|Gunma (prefektúra)|sr|Префектура Гунма|su|Préféktur Gunma|sv|Gunma prefektur|sw|Mkoa wa Gunma|tg|Префектураи Гумма|th|จังหวัดกุมมะ|tl|Prepektura ng Gunma|tr|Gunma|tt|Гумма (префектура)|uk|Префектура Ґумма|ur|گونما پریفیکچر|vi|Gunma|war|Gunma (prefektura)|wuu|群马县|zh|群馬縣|zh_classical|群馬縣|zh_min_nan|Gunma-koān|zh_yue|群馬縣|qid=Q129499|lt=Gunma Prefecture}}
+{{ill|Fujioka, Gunma|ar|فوجيوكا (غونما)|azb|فوجی‌اوکا، قونما|ce|Фудзиока (гӀала, Гумма)|ceb|Fujioka (lungsod sa Hapon, Gunma-ken)|de|Fujioka (Gunma)|eo|Fuĵioka|es|Fujioka|fa|فوجی‌اوکا، گونما|fi|Fujioka|fr|Fujioka|gl|Fujioka, Gunma|hu|Fudzsioka (Gunma)|id|Fujioka, Gunma|it|Fujioka|ja|藤岡市|ko|후지오카시|mg|Fujioka|mzn|فوجی‌اوکا، گونما|nl|Fujioka (Gunma)|pl|Fujioka|pt|Fujioka|ro|Fujioka|ru|Фудзиока (город, Гумма)|sr|Фуџиока|sv|Fujioka, Gunma|tg|Фуҷиока|tl|Fujioka, Gunma|tr|Fujioka|tt|Фудзиока (шәһәр, Гумма)|uk|Фудзіока (Ґумма)|ur|فوجیوکا، گنما|uz|Fujioka (Gunma)|vi|Fujioka, Gunma|war|Fujioka, Gunma|zh|藤岡市|zh_classical|藤岡市|zh_min_nan|Huzioka-chhī|zh_yue|藤岡|qid=Q596486|lt=Fujioka}} Kamiochiai 318 (Oka district)
+|coordinates={{Coord|36|15|55.85|N|139|2|24.20|E|region:JP-10_type:landmark|display=inline,title|name=Isezuka Kofun}}
+|type={{ill|Octagonal Kofun|ja|八角墳}}
+|area=Diameter: 27.2 m<br/>Height: 6 m
+|Burial Facility=Double-shouldered {{ill|Yokoana-style stone chamber|ja|横穴式石室}} (patterned masonry)
+|burial goods={{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery}}, {{ill|Haniwa|ar|هانيوا|ca|Haniwa|cs|Haniwa|de|Haniwa|eo|Haniva|es|Haniwa|fi|Haniwa|fr|Haniwa|hu|Haniva|id|Haniwa|it|Haniwa|ja|埴輪|mk|Ханива|nl|Haniwa|pl|Haniwa|pt|Haniwa|ru|Ханива|sr|Ханива|sv|Haniwa|th|ฮานิวะ|tr|Haniwa|uk|Ханіва|zh|埴轮|qid=Q849376|lt=Haniwa}}
+|Historic Site={{ill|Gunma Prefectural Designated Cultural Properties|ja|群馬県指定文化財}} (Historic Site)
+|map={{location map|Japan Gunma|label=Isezuka Kofun|lat_deg=36|lat_min=15|lat_sec=55.85|lon_deg=139|lon_min=2|lon_sec=24.20|mark=八角墳.svg|marksize=28|float=center|border=none|position=top|width=200|caption=}}
+{{maplink2|type=point|frame=yes|plain=yes|zoom=13|frame-align=center|frame-width=200|coord={{coord|36|15|56.0|N|139|02|24.2|E}}}}
+}}
+'''Isezuka Kofun''' (伊勢塚古墳) is an {{ill|Octagonal Kofun|ja|八角墳}} located in Kamiochiai, {{ill|Fujioka, Gunma|ar|فوجيوكا (غونما)|azb|فوجی‌اوکا، قونما|ce|Фудзиока (гӀала, Гумма)|ceb|Fujioka (lungsod sa Hapon, Gunma-ken)|de|Fujioka (Gunma)|eo|Fuĵioka|es|Fujioka|fa|فوجی‌اوکا، گونما|fi|Fujioka|fr|Fujioka|gl|Fujioka, Gunma|hu|Fudzsioka (Gunma)|id|Fujioka, Gunma|it|Fujioka|ja|藤岡市|ko|후지오카시|mg|Fujioka|mzn|فوجی‌اوکا، گونما|nl|Fujioka (Gunma)|pl|Fujioka|pt|Fujioka|ro|Fujioka|ru|Фудзиока (город, Гумма)|sr|Фуџиока|sv|Fujioka, Gunma|tg|Фуҷиока|tl|Fujioka, Gunma|tr|Fujioka|tt|Фудзиока (шәһәр, Гумма)|uk|Фудзіока (Ґумма)|ur|فوجیوکا، گنما|uz|Fujioka (Gunma)|vi|Fujioka, Gunma|war|Fujioka, Gunma|zh|藤岡市|zh_classical|藤岡市|zh_min_nan|Huzioka-chhī|zh_yue|藤岡|qid=Q596486|lt=Fujioka}}, {{ill|Gunma Prefecture|ace|Prefektur Gunma|af|Gunma-prefektuur|an|Prefectura de Gunma|ar|غونما (محافظة)|arz|محافظه جونما|az|Qunma prefekturası|azb|قونما اوستانی|ban|Préféktur Gunma|bat_smg|Gunmas prefektūra|be|Гуму|bg|Гунма|bn|গুন্‌মা প্রশাসনিক অঞ্চল|ca|Prefectura de Gunma|cdo|Gunma-gâing|ce|Гумма (префектура)|ceb|Gunma-ken|ckb|پارێزگای گونما|cs|Prefektura Gunma|cy|Gunma (talaith)|da|Gunma-præfekturet|de|Präfektur Gunma|eo|Gubernio Gunma|es|Prefectura de Gunma|et|Gumma prefektuur|eu|Gunma (prefektura)|fa|استان گونما|fi|Gunman prefektuuri|fr|Préfecture de Gunma|frr|Gunma (Prefektüür)|ga|Maoracht Gunma|gl|Prefectura de Gunma|hak|Gunma-yen|he|גונמה (מחוז)|hr|Gunma (prefektura)|hu|Gunma prefektúra|hy|Գումմա (պրեֆեկտուրա)|id|Prefektur Gunma|ilo|Prepektura ti Gunma|it|Prefettura di Gunma|ja|群馬県|jv|Préfèktur Gunma|ka|გუმის პრეფექტურა|km|ហ្គឺនម៉ា(ខេត្ត)|kn|ಗನ್ಮ (ಪ್ರಾಂತ್ಯ)|ko|군마현|lt|Gunmos prefektūra|lv|Gummas prefektūra|mk|Гунма (префектура)|mni|ꯒꯨꯟꯃꯥ ꯂꯝꯈꯥꯢ|mr|गुन्मा प्रांत|ms|Wilayah Gunma|ne|गुन्मा|nl|Gunma (prefectuur)|no|Gunma (prefektur)|nov|Gunma Prefekture|os|Гумма (префектурæ)|pam|Prepektura ning Gunma|pl|Prefektura Gunma|pnb|ضلع گنما|pt|Gunma|ro|Prefectura Gunma|ru|Гумма (префектура)|sd|گونما پريفيڪچر|se|Gunma prefektuvra|sh|Prefektura Gunma|si|ගුන්මා ප්‍රාන්තය|simple|Gunma Prefecture|sk|Gunma (prefektúra)|sr|Префектура Гунма|su|Préféktur Gunma|sv|Gunma prefektur|sw|Mkoa wa Gunma|tg|Префектураи Гумма|th|จังหวัดกุมมะ|tl|Prepektura ng Gunma|tr|Gunma|tt|Гумма (префектура)|uk|Префектура Ґумма|ur|گونما پریفیکچر|vi|Gunma|war|Gunma (prefektura)|wuu|群马县|zh|群馬縣|zh_classical|群馬縣|zh_min_nan|Gunma-koān|zh_yue|群馬縣|qid=Q129499|lt=Gunma Prefecture}}. It is part of the {{ill|Shiroishi Kofun Group|ja|白石古墳群|lt=Shiraishi Kofun Cluster}} and is designated as a {{ill|Gunma Prefectural Designated Cultural Properties|ja|群馬県指定文化財}} (Historic Site).
+
+== Overview ==
+Situated on the lowest terrace of a three-tier riverbank along the right bank of the {{ill|Kabura River|ja|鏑川}}, this tumulus has undergone several excavations. Initially thought to be a circular mound, investigations confirmed its irregular octagonal shape. The mound measures 27.2 meters in diameter and 6 meters in height, with a four-tier structure: the lowest tier is polygonal (irregular octagonal), and the remaining tiers are circular.
+
+The surface of the mound is covered with stone lining ({{ill|Fukiishi|en|Fukiishi|qid=Q11621213|lt=Fukiishi}}), and artifacts such as {{ill|Cylindrical Haniwa|ja|円筒埴輪}}, human-shaped haniwa, and shield-shaped haniwa were unearthed from the second tier. The burial chamber, which opens southward, is a double-shouldered {{ill|Yokoana-style stone chamber|ja|横穴式石室}}. Known for its distinctive "patterned masonry" and domed ceiling, this stone chamber is the largest in Fujioka.
+
+The construction period is estimated to be the late {{ill|6th century|en|6th century|qid=Q8090|lt=6th century}} or possibly the latter half of the 6th century. The site was designated a Gunma Prefectural Historic Site in 1973 and is currently open to the public after restoration.
+
+== Burial Chamber ==
+[[File:Isezuka Kofun (Fujioka), 3D-B-2.jpg|thumb|300px|right|{{center|Overhead view of the stone chamber}}]]
+[[File:Isezuka Kofun (Fujioka), 3D-N-2.jpg|thumb|250px|right|{{center|Layout of the stone chamber}}]]
+The burial chamber consists of a double-shouldered {{ill|Yokoana-style stone chamber|ja|横穴式石室}}, opening southward. area are as follows:
+* Total length: 8.9 meters
+* Main chamber: Length 4.7 m; width at rear wall: 1.84 m; central width: 2.41 m; front width: 1.54 m
+* Passage: Length 4.24 m
+
+The chamber is constructed with a unique "patterned masonry" technique, using primarily siliceous stones with elongated schist slabs stacked edge-on. The domed ceiling is achieved by angling the sidewalls inward. The rear wall and ceiling stones are made of sandstone, and the main entrance features green schist slabs, including a pseudo-lintel. The passage uses pillar-shaped cut sandstone.
+
+<gallery>
+Isezuka Kofun (Fujioka), genshitsu-1-2.jpg|Main chamber (rear wall direction)
+Isezuka Kofun (Fujioka), genshitsu-2-2.jpg|Main chamber (entrance direction)
+Isezuka Kofun (Fujioka), sendou-2.jpg|Passage (entrance direction)
+Isezuka Kofun (Fujioka), sendou-1.jpg|Passage (chamber direction)
+Isezuka Kofun (Fujioka), entrance-2.jpg|Entrance of the chamber
+Isezuka Kofun (Fujioka), funkyu-2.jpg|Mound and entrance (2021)
+</gallery>
+
+== Cultural Properties ==
+=== Gunma Prefectural Cultural Properties ===
+* Historic Site
+''' Isezuka Kofun - Designated on August 21, 1973<ref name="群馬県">{{PDFlink|[https://www.pref.gunma.jp/contents/100155734.pdf List of Gunma Prefectural Designated Cultural Properties]}} (Gunma Prefecture official website).</ref><ref name="藤岡市">[https://www.city.fujioka.gunma.jp/kakuka/f_bunkazai/isedukakohun.html Isezuka Kofun] (Fujioka City official website).</ref>.
+
+== Related Facilities ==
+* Fujioka History Museum (Fujioka City, Shiraishi)
+
+== Notes ==
+
+{{reflist}}
+
+== References ==
+{{small|(Sources used in article writing)}}
+* Site explanation board (Gunma Prefectural and Fujioka City Education Committees, 1994)
+* {{Cite book|和書|editor=|author=|year=1987|chapter=Isezuka Kofun|title=[[Nihon Rekishi Chimei Taikei]] Volume 10: Gunma Prefecture|publisher=[[Heibonsha|平凡社]]|isbn=4582490107|ref={{Harvid|伊勢塚古墳（平凡社）|1987}}}}
+* {{Cite book|和書|editor=|author=Masashi Furukori|year=1989|chapter=Isezuka Kofun|title=[[Infobox ancient site Encyclopedia]]|publisher=[[Tokyo-do Publishing|東京堂出版]]|isbn=4490102607|ref={{Harvid|伊勢塚古墳（古墳）|1989}}}}
+* {{Cite book|和書|editor=|author=Satoshi Shimura|year=2002|chapter=Isezuka Kofun|title=[[Zoku Nihon Kofun Taikei]]|publisher=[[Tokyo-do Publishing|東京堂出版]]|isbn=4490105991|ref={{Harvid|伊勢塚古墳（続古墳）|2002}}}}
+
+== Related Articles ==
+* {{ill|Shiroishi Kofun Group|ja|白石古墳群|lt=Shiraishi Kofun Cluster}}
+
+== External Links ==
+{{Commonscat|Isezuka Kofun (Fujioka)}}
+* [https://www.city.fujioka.gunma.jp/kakuka/f_bunkazai/isedukakohun.html Isezuka Kofun] - Fujioka City official website
+
+{{⚠️🚨COPIED from EverybodyWiki ❗❕⚠️😡😤Please respect Licence CC-BY-SA ❗}}
+
+{{Kofun navbar}}
+
+{{translated page|ja|伊勢塚古墳 (藤岡市)|version=100160010|comment=Imported full ja history}}
+
+{{draft categories|
+
+}}
+{{everybodywiki link|Isezuka Kofun (Fujioka)}}
+
+==Merged second translation==
+{{Infobox burial site
+| name = Isezuka Kofun
+| image = [[File:Isezuka Kofun (Fujioka), funkyu-2-3.jpg|280px]]<br/>Kofun and entrance to the stone chamber
+| other_name = 
+| part_of = {{ill|Shiroishi Kofun Group|ja|白石古墳群}}
+| location = {{ill|Fujioka, Gunma|ar|فوجيوكا (غونما)|azb|فوجی‌اوکا، قونما|ce|Фудзиока (гӀала, Гумма)|ceb|Fujioka (lungsod sa Hapon, Gunma-ken)|de|Fujioka (Gunma)|eo|Fuĵioka|es|Fujioka|fa|فوجی‌اوکا، گونما|fi|Fujioka|fr|Fujioka|gl|Fujioka, Gunma|hu|Fudzsioka (Gunma)|id|Fujioka, Gunma|it|Fujioka|ja|藤岡市|ko|후지오카시|mg|Fujioka|mzn|فوجی‌اوکا، گونما|nl|Fujioka (Gunma)|pl|Fujioka|pt|Fujioka|ro|Fujioka|ru|Фудзиока (город, Гумма)|sr|Фуџиока|sv|Fujioka, Gunma|tg|Фуҷиока|tl|Fujioka, Gunma|tr|Fujioka|tt|Фудзиока (шәһәр, Гумма)|uk|Фудзіока (Ґумма)|ur|فوجیوکا، گنما|uz|Fujioka (Gunma)|vi|Fujioka, Gunma|war|Fujioka, Gunma|zh|藤岡市|zh_classical|藤岡市|zh_min_nan|Huzioka-chhī|zh_yue|藤岡|qid=Q596486|lt=Fujioka, Gunma}}, Gunma Prefecture<br/>(Keno-no-Kuni Shiroishi Hills Park)
+| coordinates = {{coord|36|15|55.85|N|139|02|24.20|E|region:JP-10}}
+| shape = {{ill|Octagonal Kofun|ja|八角墳}}
+| area = Diameter: 27.2 m<br/>Height: 6 m
+| burial = Dual-chambered {{ill|Yokoana-style stone chamber|ja|横穴式石室}} (patterned masonry)
+| artifacts = {{ill|Sue pottery|en|Sue pottery|qid=Q7634351|lt=Sue pottery}}, {{ill|Haniwa|ar|هانيوا|ca|Haniwa|cs|Haniwa|de|Haniwa|eo|Haniva|es|Haniwa|fi|Haniwa|fr|Haniwa|hu|Haniva|id|Haniwa|it|Haniwa|ja|埴輪|mk|Ханива|nl|Haniwa|pl|Haniwa|pt|Haniwa|ru|Ханива|sr|Ханива|sv|Haniwa|th|ฮานิวะ|tr|Haniwa|uk|Ханіва|zh|埴轮|qid=Q849376|lt=Haniwa}}
+| period = Late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} (late 6th century)
+| status = Gunma Prefecture Designated Historic Site
+}}
+
+'''Isezuka Kofun''' (伊勢塚古墳) is a {{ill|Kofun|en|Kofun|qid=Q1141225|lt=Kofun}} (tumulus) located in {{ill|Fujioka, Gunma|ar|فوجيوكا (غونما)|azb|فوجی‌اوکا، قونما|ce|Фудзиока (гӀала, Гумма)|ceb|Fujioka (lungsod sa Hapon, Gunma-ken)|de|Fujioka (Gunma)|eo|Fuĵioka|es|Fujioka|fa|فوجی‌اوکا، گونما|fi|Fujioka|fr|Fujioka|gl|Fujioka, Gunma|hu|Fudzsioka (Gunma)|id|Fujioka, Gunma|it|Fujioka|ja|藤岡市|ko|후지오카시|mg|Fujioka|mzn|فوجی‌اوکا، گونما|nl|Fujioka (Gunma)|pl|Fujioka|pt|Fujioka|ro|Fujioka|ru|Фудзиока (город, Гумма)|sr|Фуџиока|sv|Fujioka, Gunma|tg|Фуҷиока|tl|Fujioka, Gunma|tr|Fujioka|tt|Фудзиока (шәһәр, Гумма)|uk|Фудзіока (Ґумма)|ur|فوجیوکا، گنما|uz|Fujioka (Gunma)|vi|Fujioka, Gunma|war|Fujioka, Gunma|zh|藤岡市|zh_classical|藤岡市|zh_min_nan|Huzioka-chhī|zh_yue|藤岡|qid=Q596486|lt=Fujioka, Gunma}}, Gunma Prefecture. It is an {{ill|Octagonal Kofun|ja|八角墳}} and part of the {{ill|Shiroishi Kofun Group|ja|白石古墳群}}. The tumulus has been designated as a Gunma Prefecture Historic Site.
+
+== Overview ==
+The tumulus was constructed on the lowest terrace of a three-tiered river terrace formed by the Kaburagawa River in southern Gunma Prefecture. Multiple archaeological investigations have been conducted.
+
+The mound is an irregular octagon, measuring 27.2 meters in diameter and 6 meters in height.<ref>{{Harv|伊勢塚古墳（続古墳）|2002}}</ref> The mound consists of four tiers, with only the lowest tier having a polygonal shape, while the upper tiers are circular.<ref>{{Harv|伊勢塚古墳（続古墳）|2002}}</ref> The mound features {{ill|Fukiishi|en|Fukiishi|qid=Q11621213|lt=fukiishi}}, and cylindrical and figurative {{ill|Haniwa|ar|هانيوا|ca|Haniwa|cs|Haniwa|de|Haniwa|eo|Haniva|es|Haniwa|fi|Haniwa|fr|Haniwa|hu|Haniva|id|Haniwa|it|Haniwa|ja|埴輪|mk|Ханива|nl|Haniwa|pl|Haniwa|pt|Haniwa|ru|Ханива|sr|Ханива|sv|Haniwa|th|ฮานิวะ|tr|Haniwa|uk|Ханіва|zh|埴轮|qid=Q849376|lt=haniwa}} (human-shaped, shield-shaped) were discovered on the second tier.<ref>{{Harv|伊勢塚古墳（続古墳）|2002}}</ref> 
+
+The burial facility is a dual-chambered {{ill|Yokoana-style stone chamber|ja|横穴式石室}} oriented to the south. The chamber is the largest in Fujioka City, notable for its "patterned masonry" style, characterized by alternating use of rounded tuff stones and slender schist blocks. The chamber is further distinguished by its domed ceiling.<ref>{{Harv|伊勢塚古墳（古墳）|1989}}</ref> The tumulus is dated to the late 6th century.<ref>{{Harv|伊勢塚古墳（続古墳）|2002}}</ref>
+
+The tumulus was designated a Gunma Prefecture Historic Site in 1973.<ref name="群馬県">{{PDFlink|[https://www.pref.gunma.jp/contents/100155734.pdf 群馬県内の県指定文化財一覧]}}（群馬県ホームページ）。</ref> It is now maintained as part of a public park.
+
+== Burial Structure ==
+[[File:Isezuka Kofun (Fujioka), 3D-B-2.jpg|thumb|300px|right|{{center|Overhead view of the stone chamber}}]]
+[[File:Isezuka Kofun (Fujioka), 3D-N-2.jpg|thumb|250px|right|{{center|Stone chamber layout}}]]
+The burial structure is a dual-chambered {{ill|Yokoana-style stone chamber|ja|横穴式石室}}. The chamber's specifications are as follows:<ref>{{Harv|伊勢塚古墳（続古墳）|2002}}</ref>
+* Total length: 8.9 m
+* Main chamber: Length 4.7 m, rear width 1.84 m, middlewidth 2.41 m, entrance width 1.54 m
+* Passageway: Length 4.24 m
+
+The chamber employs "patterned masonry," where round tuff stones alternate with schist blocks.<ref>{{Harv|伊勢塚古墳（古墳）|1989}}</ref> The domed ceiling is achieved by corbelling the walls inward. The entrance features sandstone lintels and imitation doorways.
+
+<gallery>
+File:Isezuka Kofun (Fujioka), genshitsu-1-2.jpg|Main chamber (rear view)
+File:Isezuka Kofun (Fujioka), genshitsu-2-2.jpg|Main chamber (entrance view)
+File:Isezuka Kofun (Fujioka), sendou-2.jpg|Passageway (entrance view)
+File:Isezuka Kofun (Fujioka), sendou-1.jpg|Passageway (main chamber view)
+File:Isezuka Kofun (Fujioka), entrance-2.jpg|Entrance
+File:Isezuka Kofun (Fujioka), funkyu-2.jpg|Kofun and entrance (April 2021)
+</gallery>
+
+== Cultural Heritage ==
+=== Gunma Prefecture Designated Cultural Properties ===
+* Historic Site
+** Isezuka Kofun - Designated on August 21, 1973.<ref name="群馬県"/> 
+
+== Related Facilities ==
+* Fujioka History Museum (Fujioka City, Shiroishi)
+
+== References ==
+
+{{reflist}}
+
+== Bibliography ==
+{{small|Sources used in writing this article}}
+* {{Cite book|和書|editor=|author=|year=1987|chapter=Isezuka Kofun|title=[[日本歴史地名大系]] 10 群馬県の地名|publisher=[[平凡社]]|isbn=4582490107|ref={{Harvid|伊勢塚古墳（平凡社）|1987}}}}
+* {{Cite book|和書|editor=|author=古郡正志|year=1989|chapter=Isezuka Kofun|title=[[日本古墳大辞典]]|publisher=[[東京堂出版]]|isbn=4490102607|ref={{Harvid|伊勢塚古墳（古墳）|1989}}}}
+* {{Cite book|和書|editor=|author=志村哲|year=2002|chapter=Isezuka Kofun|title=[[日本古墳大辞典|続 日本古墳大辞典]]|publisher=[[東京堂出版]]|isbn=4490105991|ref={{Harvid|伊勢塚古墳（続古墳）|2002}}}}
+
+== See Also ==
+* {{ill|Shiroishi Kofun Group|ja|白石古墳群}}
+
+== External Links ==
+{{Commonscat|Isezuka Kofun (Fujioka)}}
+* [https://www.city.fujioka.gunma.jp/kakuka/f_bunkazai/isedukakohun.html Isezuka Kofun - Fujioka City website]
+
+{{Kofun navbar}}
+
+{{translated page|ja|伊勢塚古墳 (藤岡市)|version=100160010|comment=Imported full ja history}}
+
+{{Commons category|Isezuka Kofun (Fujioka)}}
+{{wikidata link|Q11378976|ja|伊勢塚古墳 (藤岡市)|ja|伊勢塚古墳|ceb|Isezuka Kofun (Fujioka)|ja|%E4%BC%8A%E5%8B%A2%E5%A1%9A%E5%8F%A4%E5%A2%B3 (%E8%97%A4%E5%B2%A1%E5%B8%82)|check_date=2026-05-15}}
 [[Category:Designated historic sites of Gunma Prefecture]]
 [[Category:History of Fujioka, Gunma]]
 [[Category:Kofun of Gunma prefecture]]
 [[Category:Octagonal Kofun]]
 [[Category:Pages using infobox ancient site with unknown parameters]]
+[[Category:Pages with duplicated content]]
 [[Category:Wikidata no short description]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]
+[[Category:Pages with duplicated content]]

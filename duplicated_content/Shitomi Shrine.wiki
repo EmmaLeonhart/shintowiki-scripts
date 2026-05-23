@@ -1,4 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shitomi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
+
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |Name = Shitomi Shrine & Ōkōchi Shrine
 |image = [[File:Shitomi & Okouchi Shrine.jpg|250px]]
@@ -13,20 +15,33 @@
 |alternate_name = 
 |Pilgrimage sites = 
 |Annual festival = {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai}} (October 19)
-|Rituals = {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}}, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}}, and others
+|Rituals = {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}}, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinami-sai|13=User:Immanuelle/Tsukinami-no-Matsuri}}, and others
 }}
-'''Shitomi Shrine''' (志等美神社) is a shrine in Japan associated with the {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Outer Shrine|ja|外宮|12=simple|13=User:Immanuelle/Outer Shrine|ja_comment=jawiki redirects to 豊受大神宮}} of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. This article also covers the {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Ōkōchi Shrine|ja|大河内神社|12=simple|13=User:Immanuelle/Ōkōchi Shrine|ja_comment=jawiki redirects to 志等美神社}}, which shares the same grounds as Shitomi Shrine, as well as the {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Uchikake Shrine|ja|打懸神社|12=simple|13=User:Immanuelle/Uchikake Shrine|ja_comment=jawiki redirects to 志等美神社}} and the former village shrine known as {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Kami Shrine (Ise)|ja|上社|12=simple|13=User:Immanuelle/Kami Shrine (Ise)|qq=}}, which encompasses all three shrines within its precincts.
+
+'''Shitomi Shrine''' (志等美神社) is a shrine in Japan associated with the {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Outer Shrine|ja|外宮|12=simple|13=User:Immanuelle/Outer Shrine|ja_comment=jawiki redirects to 豊受大神宮}} of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}. This article also covers the {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Ōkōchi Shrine|ja|大河内神社|12=simple|13=User:Immanuelle/Ōkōchi Shrine|ja_comment=jawiki redirects to 志等美神社}}, which shares the same grounds as Shitomi Shrine, as well as the {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Uchikake Shrine|ja|打懸神社|12=simple|13=User:Immanuelle/Uchikake Shrine|ja_comment=jawiki redirects to 志等美神社}} and the former village shrine known as {{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Kami Shrine (Ise)|ja|上社|12=simple|13=User:Immanuelle/Kami Shrine (Ise)}}, which encompasses all three shrines within its precincts.
+
 Among the 125 shrines affiliated with Ise Grand Shrine, only Shitomi, Ōkōchi, and Uchikake shrines hold recognized Ranks in the {{ill|Shinkai (divine rank)|en|Shinkai (divine rank)|qid=Q11591025|lt=Shinto shrine Ranking system}}.<ref name="sk25">Shikinaisha Kenkyūkai (1990): pp. 342, 355.</ref>
+
 == Overview ==
+
 Shitomi Shrine is located at Tsuji Kuru 1-13, Ise City, Mie Prefecture. The precincts are under the jurisdiction of Kami Shrine, with Shitomi, Ōkōchi, and Uchikake shrines positioned at the right side of Kami Shrine's eastern entrance.<ref name="uy9">Ujiyamada City Hall (1929): Vol. 2, p. 949.</ref> The total area of the precincts is approximately 700 tsubo (about 2,314 square meters), of which 406 square meters are occupied by Shitomi, Ōkōchi, and Uchikake shrines.<ref name="sk36">Shikinaisha Kenkyūkai (1990): pp. 343, 356.</ref> Shitomi and Ōkōchi shrines share the same fence, facing south, and feature {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}} architecture with wooden plank roofs.<ref name="sk36"/> These shrines do not have offering boxes.
+
 == Shitomi Shrine ==
+
 Shitomi Shrine Ranks 7th among the 16 auxiliary shrines of the Outer Shrine.<ref name="uy">Ujiyamada City Hall (1929): Vol. 1, pp. 7, 11–12.</ref> Historical records also refer to it as "Shitomi-no-Iba Shrine," with "Shitomi-no-Iba" being the name of the surrounding wilderness.<ref name="ic">Ise Bunka Sha (2008): p. 53.</ref> Some scholars interpret "Shitomi" as derived from the verb "shitomu," meaning "to soak in water" or "to get wet." <ref name="sk6">Shikinaisha Kenkyūkai (1990): p. 336.</ref>
+
 == Ōkōchi Shrine ==
+
 Although its structure is separate, Ōkōchi Shrine is located within the same fence as Shitomi Shrine.<ref name="ic2">Ise Bunka Sha (2008): p. 54.</ref> It Ranks 8th among the 16 auxiliary shrines of the Outer Shrine.<ref name="uy"/> During the {{ill|Sengoku Period (Japan)|ja|戦国時代|12=simple|13=User:Immanuelle/Sengoku period|comment=changed title based on wikidata|qid=Q117415390}}, Ōkōchi Shrine fell into disrepair and later became a component of Kami Shrine as the "Mountain Shrine."<ref>Ujiyamada City Hall (1929): Vol. 2, p. 950.</ref>
+
 The current pronunciation of the shrine's name is "Ōkōchi," but historical documents record readings such as "Ōkahachi" and "Ōgafuchi."<ref name="sk4">Shikinaisha Kenkyūkai (1990): p. 354.</ref>
+
 == Uchikake Shrine ==
+
 Uchikake Shrine Ranks 4th among the eight subsidiary shrines of the Outer Shrine.<ref>Ujiyamada City Hall (1929): Vol. 1, pp. 13–15.</ref> After falling into disrepair during the Sengoku period, it was absorbed into Kami Shrine as "Parallel Shrine" (formerly "Hachioji Shrine"), maintaining its original deity.<ref name="uy8">Ujiyamada City Hall (1929): Vol. 2, p. 948.</ref>
+
 == Kami Shrine ==
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |Name = Kami Shrine (上社)
 |image = [[File:Kami no Shrine, Ise.jpg|250px]]
@@ -42,42 +57,65 @@ Uchikake Shrine Ranks 4th among the eight subsidiary shrines of the Outer Shrine
 |Annual festival = July 15
 |Rituals = {{ill|Onzu-shinji (Head Ritual)|ja|御頭神事|12=simple|13=User:Immanuelle/Onzu-shinji (Head Ritual)|ja_comment=jawiki link invalid}} (January 15)
 }}
+
 Kami Shrine is the local {{ill|Ujigami|en|Ujigami|qid=Q767655|lt=ujigami}}, serving the districts of Nakajima, Tsuji Kuru, Futamata, and Uraguchi.<ref name="ic" /> Its treasures include a lion head for {{ill|Lion dance|en|Lion dance|qid=Q713866|lt=shishimai}} performances and a sword donated in 1721.<ref name="uy5">Ujiyamada City Hall (1929): Vol. 2, p. 955.</ref>
-The precincts feature additional shrines such as Inari Shrine, Uegami Shrine dedicated to Sugawara no Michizane, and Kushitama Shrine enshrining Isetsuhiko and Isetsuhime deities, as well as remote {{ill|Haisho|ja|拝所|lt=worship sites|12=simple|13=User:Immanuelle/Haisho|qq=}} for other shrines.<ref>Ise-Shima Kirari 1000 (2013).</ref>
+
+The precincts feature additional shrines such as Inari Shrine, Uegami Shrine dedicated to Sugawara no Michizane, and Kushitama Shrine enshrining Isetsuhiko and Isetsuhime deities, as well as remote {{ill|Haisho|ja|拝所|lt=worship sites|12=simple|13=User:Immanuelle/Haisho}} for other shrines.<ref>Ise-Shima Kirari 1000 (2013).</ref>
+
 === Merged Shrines ===
+
 Kami Shrine absorbed 13 other shrines in 1909.<ref name="uyy">Ujiyamada City Hall (1929): Vol. 2, pp. 949.</ref>
+
 == Worship and Festivals ==
-Shitomi Shrine conducts annual festivals, including the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}}, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri|qq=}}, {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai Festival}}, and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}}.<ref name="sk343,355">Shikinaisha Kenkyūkai (1990): pp. 343, 355.</ref>
+
+Shitomi Shrine conducts annual festivals, including the {{ill|Kinensai|en|Kinen-sai|qid=Q118906710|lt=Kinensai}}, {{ill|Tsukinami-no-Matsuri|ja|月次祭|12=simple|13=User:Immanuelle/Tsukinamisai|13=User:Immanuelle/Tsukinami-no-Matsuri}}, {{ill|Kannamesai Festival|en|Kannamesai Festival|qid=Q11255045|lt=Kannamesai Festival}}, and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}}.<ref name="sk343,355">Shikinaisha Kenkyūkai (1990): pp. 343, 355.</ref>
+
 Kami Shrine's events include the {{ill|Mitō-shinji|ja|御頭神事|12=simple|13=User:Immanuelle/Mitō-shinji|ja_comment=jawiki link invalid}} on January 15 and its annual festival on July 15.<ref name="uy5"/>
+
 == References ==
+
 {{reflist}}
+
 == Bibliography ==
+
 * Ujiyamada City Hall (1929). *Ujiyamada City History*. Vols. 1–2.
 * Shikinaisha Kenkyūkai (1990). *Shikinaisha Chōsa Hōkoku: Vol. 6, Tōkaidō 1*. Kōgakkan University Press.
 * Ise Bunka Sha (2008). *O-Ise-san 125 Shrine Pilgrimage*. Ise Bunka Sha.
+
 == Related Articles ==
-* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province|qq=}}
+
+* {{ill|List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|12=simple|13=User:Immanuelle/List of Shikinaisha in Ise Province|13=User:Immanuelle/List of Shikinaisha in Ise Province}}
+
+== External Links ==
+* [http://www.jingukaikan.jp/125mairi/m06/0605.html Shitomi Shrine] - Jingu Kaikan.
+* [http://www.jingukaikan.jp/125mairi/m06/0606.html Ōkōchi Shrine] - Jingu Kaikan.
+* [http://www.jingukaikan.jp/125mairi/m06/0604.html Uchikake Shrine] - Jingu Kaikan.
+
+{{125 Shrines of Ise}}
+
+{{translated page|ja|志等美神社|version=86517017|comment=Imported full ja history}}
+
+{{Commons category|Kaminoyashiro, Ise}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Shitomi Shrine (Q17212285)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
 | — || {{ill|Shitomi Shrine|lt=Shitomi Shrine|ja|志等美神社|commons|Category:Kaminoyashiro, Ise|qid=Q17212285}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || part of {{ill|Toyōke Daijingū|qid=Q11633343}} || — || {{coord|34.489691|136.689445|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181146 DB]
 |}
-
-== External Links ==
-* [http://www.jingukaikan.jp/125mairi/m06/0605.html Shitomi Shrine] - Jingu Kaikan.
-* [http://www.jingukaikan.jp/125mairi/m06/0606.html Ōkōchi Shrine] - Jingu Kaikan.
-* [http://www.jingukaikan.jp/125mairi/m06/0604.html Uchikake Shrine] - Jingu Kaikan.
-{{125 Shrines of Ise}}
-
-{{translated page|ja|志等美神社|version=86517017|comment=Imported full ja history}}
-{{Commons category|Kaminoyashiro, Ise}}
-
+{{wikidata link|Q17212285|da|d:Q17212285|co|commons:Category:Kaminoyashiro, Ise|ja|志等美神社|check_date=2026-05-10}}==Notes==
+<references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Setsumatsusha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:Shinto shrines in Mie Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]

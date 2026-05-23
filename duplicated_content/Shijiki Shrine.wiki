@@ -1,11 +1,12 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shijiki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25595991611|time triggered pipeline]] -->
 <br />
+
 {{Shinto Shrine
 |Name=Shijiki Shrine (志々伎神社)
 |image=[[File:Shijiki-jinja, Hirado 202405-1.jpg|250px]]
-|Location={{ill|Nagasaki Prefecture|de|Präfektur Nagasaki|ja|長崎県|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagasaki Prefecture|qq=}}{{ill|Hirado City|de|Stadt Hirado|ja|平戸市|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hirado City|qq=}} Nogomachi 251
+|Location={{ill|Nagasaki Prefecture|de|Präfektur Nagasaki|ja|長崎県|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagasaki Prefecture}}{{ill|Hirado City|de|Stadt Hirado|ja|平戸市|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Hirado City}} Nogomachi 251
 |Coordinates={{Wiki Coordinates Two-Level DMS|33|10|44.15|N|129|22|08.55|E|region:JP-42_type:landmark|display=inline,title|name=Shijiki Shrine (志々伎神社)}}
-|Enshrined deity={{ill|Jūjōbetsu-Ō|de|Jūjōbetsu-Ō|ja|十城別王|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Jūjōbetsu-Ō|qq=}}
+|Enshrined deity={{ill|Jūjōbetsu-Ō|de|Jūjōbetsu-Ō|ja|十城別王|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Jūjōbetsu-Ō}}
 |Shrine Rank=Shikinaisha (small)<br />Former Prefectural Shrine
 |Founded=Unknown
 |Main Hall=
@@ -15,39 +16,70 @@
 |Rituals=
 |Map={{Maplink2|frame=yes|plain=yes|type=point|zoom=14|frame-align=center|frame-width=200|marker=place-of-worship}}<br />{{Right|{{Location map|Japan Nagasaki#Japan|label=Shijiki Shrine (志々伎神社)|mark=Shinto torii icon vermillion.svg|marksize=20|float=center|border=none|position=top|width=200|caption=Location of Shijiki Shrine}}}}
 }}
-'''Shijiki Shrine''' (志々伎神社) is a Shinto shrine located in Nogomachi, {{ill|Hirado City|de|Stadt Hirado|ja|平戸市12=simple|13=User:Immanuelle/Hirado City}} in {{ill|Nagasaki Prefecture|de|Präfektur Nagasaki|ja|長崎県12=simple|13=User:Immanuelle/Nagasaki Prefecture}}. It is also known as Shiji Shrine. Branch shrines exist throughout Kyushu under the names Shijiki, Shishiki, and Shiji, making it the largest among prefectural Shikinaisha. Ancient deity sumo, preserved here, is said to be the precursor to modern {{ill|Sumo|de|Sumo|ja|相撲12=simple|13=User:Immanuelle/Sumo}}.<ref>[http://jlogos.com/docomosp/word.html?id=7221037 志々伎神社]. 角川日本地名大辞典.JLogos.com</ref><ref>“[https://web.archive.org/web/20030518172110/http://www53.tok2.com/home/nasubi/history/shjikijinja/shijikijinja3.html Shijiki Shrine Festival]”. Shijiki Shrine-3. Nasubi History Museum. As of May 18, 2003, the [http://www53.tok2.com/home/nasubi/history/shjikijinja/shijikijinja3.html Original]{{Broken link|date=2022年2月}} archive</ref> The Jangara, performed throughout Hirado Island, also spread from this shrine.
+
+'''Shijiki Shrine''' (志々伎神社) is a Shinto shrine located in Nogomachi, {{ill|Hirado City|de|Stadt Hirado|ja|平戸市12=simple|13=User:Immanuelle/Hirado City}} in {{ill|Nagasaki Prefecture|de|Präfektur Nagasaki|ja|長崎県12=simple|13=User:Immanuelle/Nagasaki Prefecture}}. It is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Hizen Province]]. It is also referred to as Shijiki Shrine or Shiji Shrine. It holds the status of a {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|zh|延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Small Shikinaisha|lt_ja=式内小社|lt_de=Kleine Shikinaisha12=simple|13=User:Immanuelle/Engishiki Jinmyōchō}} and a {{ill|Modern system of ranked Shinto shrines|de|Modernes Schreinsystem|ja|近代社格制度|lt=Old Shrine Rank|lt_ja=旧社格|lt_de=Alte Schreinsystem12=simple|13=User:Immanuelle/Modern system of ranked Shinto shrines}} shrine, designating it as a prefectural shrine. Branch shrines exist throughout Kyushu under the names Shijiki, Shishiki, and Shiji, making it the largest among prefectural Shikinaisha. Ancient deity sumo, preserved here, is said to be the precursor to modern {{ill|Sumo|de|Sumo|ja|相撲12=simple|13=User:Immanuelle/Sumo}}.<ref>[http://jlogos.com/docomosp/word.html?id=7221037 志々伎神社]. 角川日本地名大辞典.JLogos.com</ref><ref>“[https://web.archive.org/web/20030518172110/http://www53.tok2.com/home/nasubi/history/shjikijinja/shijikijinja3.html Shijiki Shrine Festival]”. Shijiki Shrine-3. Nasubi History Museum. As of May 18, 2003, the [http://www53.tok2.com/home/nasubi/history/shjikijinja/shijikijinja3.html Original]{{Broken link|date=2022年2月}} archive</ref> The Jangara, performed throughout Hirado Island, also spread from this shrine.
+
 == Overview ==
 It is said that the shrine was founded around the 5th century, though the exact date remains unknown. The sacred precinct centers on {{ill|Shijiki Mountain|de|Shijiki Berg|ja|志々伎山12=simple|13=User:Immanuelle/Shijiki Mountain}} (with an elevation of 347.2 {{ill|meter|de|Meter|ja|メートル12=simple|13=User:Immanuelle/meter}}) near the southern tip of {{ill|Hirado Island|de|Hirado-Insel|ja|平戸島12=simple|13=User:Immanuelle/Hirado Island}}. In ancient times, the upper shrine was located at the mountain summit, the middle shrine on the mid-slope, and the ground shrine (also known as the lower shrine or Hentomiyashiro) was situated in the fishing village of Miyano-ura at the foot, while an offshore shrine was placed on an islet off Miyano-ura. In addition, a bettō-ji known as Enman-ji was established.
 The enshrined deity is the son of {{ill|Yamato Takeru|de|Yamato Takeru|ja|日本武尊12=simple|13=User:Immanuelle/Yamato Takeru}}, and the half-brother of {{ill|Emperor Chūai|de|Kaiser Chūai|ja|仲哀天皇12=simple|13=User:Immanuelle/Emperor Chūai}}. He is said to have followed {{ill|Empress Jingū|de|Kaiserin Jingū|ja|神功皇后12=simple|13=User:Immanuelle/Empress Jingū}} in the {{ill|Campaigns against the Three Han|de|Drei-Han-Feldzüge|ja|三韓征伐12=simple|13=User:Immanuelle/Campaigns against the Three Han}}, later remaining in the area and being commissioned to guard the western regions, known as {{ill|Jūjōbetsu-Ō|de|Jūjōbetsu-Ō|ja|十城別王12=simple|13=User:Immanuelle/Jūjōbetsu-Ō}} ({{ill|Jūjōbetsu-no-mikoto|de|Jūjōbetsu-no-mikoto|ja|十城別命12=simple|13=User:Immanuelle/Jūjōbetsu-no-mikoto}})). The ground shrine is said to have repurposed an armory established by the king, while the offshore shrine is believed to mark his tomb.
+
 In the Divine Name List of the {{ill|Engi-shiki|de|Engi-shiki|ja|延喜式12=simple|13=User:Immanuelle/Engi-shiki}}, within {{ill|Hizen Province|de|Provinz Hizen|ja|肥前国12=simple|13=User:Immanuelle/Hizen Province}}, it is listed as one of the four {{ill|Shikinaisha|ja|式内社|ja|式内社12=simple|13=User:Immanuelle/Shikinaisha}}; it is the only shrine of its kind in Nagasaki Prefecture, excluding the Iki and Tsushima regions, and is the oldest known shrine. It has long garnered widespread reverence from the {{ill|Matsuura Faction|de|Matsuura Fraktion|ja|松浦党12=simple|13=User:Immanuelle/Matsuura Faction}} and local fishermen.
+
 The current center of worship is the middle shrine. Originally, the shrine was housed in a small structure at the foot of Shijiki Mountain’s summit, but it was relocated to the mid-slope in {{ill|Yōroku|de|Yōroku|ja|永禄12=simple|13=User:Immanuelle/Yōroku}} 2 ({{ill|1559|de|1559|ja|1559年12=simple|13=User:Immanuelle/1559}}). Furthermore, in {{ill|1961|de|1961|ja|1961年12=simple|13=User:Immanuelle/1961}} ({{ill|Showa|de|Showa|ja|昭和12=simple|13=User:Immanuelle/Showa}} 36), it was moved to its present location, which occupies the former site of Enman-ji—a bettō-ji abolished in the early Meiji period under the {{ill|Shinto-Buddhism Separation Edict|de|Trennung von Shinto und Buddhismus Dekret|ja|神仏分離令12=simple|13=User:Immanuelle/Shinto-Buddhism Separation Edict}}.
+
 The former shrine grounds were designated as a historical site of Nagasaki Prefecture in {{ill|1974|de|1974|ja|1974年12=simple|13=User:Immanuelle/1974}} (Showa 49), under the name "Former Shikinaisha Shijiki Shrine Site."
+
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
 | {{ill|Matsura-gun|en|Matsura-gun|ja|松浦郡|ko|마쓰라군|zh|松浦郡|lt=Matsura district|qid=Q5973791}} || {{ill|Shijiki Shrine|lt=Shijiki Shrine|ja|志々伎神社|commons|Category:Shijiki-jinja|qid=Q11490808}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|33.178307|129.369101|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183317 DB]
 |}
+
 {{wikidata link|Q11490808|de|Shijiki Shrine|co|commons:Category:Shijiki-jinja|ja|志々伎神社|check_date=2026-05-09}}
+
 {{translated page|ja|志々伎神社|version=104096595|comment=Imported full ja history}}
+
 == Footnotes ==
 === Notes ===
 {{Reflist|group="Notes"}}
+
 === References ===
+
 {{Reflist|2}}
+
 == See Also ==
 {{commonscat|Shijiki-jinja}}
-* {{ill|List of Shinto shrines in Japan|de|Liste der Schreine|ja|神社一覧|2=ja|3=神社一覧|4=zh|5=日本神社列表|6=uk|7=Список синтоїстських святилищ|8=es|9=Anexo:Santuarios sintoístas|10=fr|11=Liste de sanctuaires shinto japonais|12=it|13=Lista di santuari shintoisti|14=simple|15=List of Shinto shrines|16=mr|17=जपानमधील शिंतो तीर्थस्थानांची यादी|qq=draft|qq=draft|12=simple|13=User:Immanuelle/List of Shrines|13=User:Immanuelle/List of Shinto shrines in Japan|qq=}}
+* {{ill|List of Shinto shrines in Japan|de|Liste der Schreine|ja|神社一覧|2=ja|3=神社一覧|4=zh|5=日本神社列表|6=uk|7=Список синтоїстських святилищ|8=es|9=Anexo:Santuarios sintoístas|10=fr|11=Liste de sanctuaires shinto japonais|12=it|13=Lista di santuari shintoisti|14=simple|15=List of Shinto shrines|16=mr|17=जपानमधील शिंतो तीर्थस्थानांची यादी|qq=draft|qq=draft|12=simple|13=User:Immanuelle/List of Shrines|13=User:Immanuelle/List of Shinto shrines in Japan}}
+
 {{Shinto stub}}
+
 {{Shinto Horizontal}}
 {{Authority control}}
-
-[[Category:Former Prefectural Shrines in Nagasaki Prefecture]]
-[[Category:History of Hirado City]]
-[[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Hizen Province]]
-[[Category:Shinto shrines in Nagasaki Prefecture]]
-[[Category:Junior Fifth Rank]]
-[[Category:Senior Fifth Rank]]
-[[Category:Shikinai Shōsha]]
-[[Category:Shikinai Ronsha]]
+[[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]]
+[[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]][[Category:Former Prefectural Shrines in Nagasaki Prefecture]][[Category:History of Hirado City]][[Category:Kokuhei-sha]][[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Hizen Province]][[Category:Shinto shrines in Nagasaki Prefecture]][[Category:Junior Fifth Rank]][[Category:Senior Fifth Rank]][[Category:Shikinai Shōsha]][[Category:Shikinai Ronsha]]

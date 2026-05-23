@@ -1,41 +1,126 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Todoroki-hime-no-Mikoto_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
+
 {{Infobox religious building| religious_affiliation = [[Shinto]]|name=Todoroki Hime-no-Mikoto Shrine| religious_affiliation = [[Shinto]]
 |image=File:Todorokihimenomikoto shrine.jpg|location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, [[:en:Osaka City|Osaka City]], [[Sumiyoshi Ward]], Sawanocho 1-10-4|Latitude degree=34|Latitude minute=36|Latitude second=16.15|N(South)=N|Longitude degree=135|Longitude minute=29|Longitude second=50.4|E(West)=E|Map country code=JP|Map=Japan Osaka|deity=[[Susanoo-no-Mikoto]]<br/>[[Kushinadahime|Inadahime-no-Mikoto]]|Rank={{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} (Minor shrine)<br />Former [[Village Shrine]]|Establishment=Unknown|Main hall=[[Sumiyoshi-zukuri]] style with cypress bark roofing|Alias=|Pilgrimage sites, etc.=|festival=Autumn Festival ({{ill|October 7|en|October 7|qid=Q2926|lt=October 7}}–{{ill|October 8|en|October 8|qid=Q2924|lt=October 8}})|Rituals=Spring Festival (Fire Prevention Festival) ([[April 8]])<br/>Summer Festival ([[July 11]]–[[July 12]])<br/>Winter Festival (Fire Prevention Festival) ([[December 8]])|prefecture={{ill|Osaka|qid=Q35765}}|coordinates={{Coord|34.60448611|N|135.49733333}}}}
+
 '''Todorokihimenomikoto Shrine''' (止止呂支比売命神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Sumiyoshi-ku, Osaka|Sumiyoshi-ku]], [[:en:Osaka City|Osaka City]], {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. It is classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine) and was formerly designated as a [[village shrine]] under the old shrine Ranking system.
+
 == Enshrined Deities ==
 * [[Susanoo-no-Mikoto]] 
 * [[Kushinadahime|Inadahime-no-Mikoto]]
+
 == History ==
-The founding date of the shrine is unknown. The name "Todoroki" is believed to derive from the name of a bridge that once existed within the precincts. Another theory suggests that the name originates from calling [[Kushinadahime|Inadahime-no-Mikoto]] "Todorokihime." Some also attribute the name to the sound of a stream flowing through the precincts, with "todoroki" (thundering or roaring) evolving into its current form.<ref name="Osaka Health Association">[https://osaka-hk.org/posts/senjin125 Historical Overview of Todorokihimenomikoto Shrine - Osaka Health Association] Retrieved March 19, 2019</ref> Listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} as a minor shrine, it is thought to have originally served as an auxiliary shrine (okunoin) to the {{ill|Sumiyoshi-taisha|en|Sumiyoshi-taisha|qid=Q705949|lt=Sumiyoshi Taisha}}.
+The founding date of the shrine is unknown. The name "Todoroki" is believed to derive from the name of a bridge that once existed within the precincts. Another theory suggests that the name originates from calling [[Kushinadahime|Inadahime-no-Mikoto]] "Todorokihime." Some also attribute the name to the sound of a stream flowing through the precincts, with "todoroki" (thundering or roaring) evolving into its current form.<ref name="Osaka Health Association">[https://osaka-hk.org/posts/senjin125 Historical Overview of Todorokihimenomikoto Shrine - Osaka Health Association] Retrieved March 19, 2019</ref> Listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} as a minor shrine, it is thought to have originally served as an auxiliary shrine (okunoin) to the {{ill|Sumiyoshi-taisha|en|Sumiyoshi-taisha|qid=Q705949|lt=Sumiyoshi Taisha}}.
+
 In 1220 (Shōkyū 2), during Emperor Go-Toba's pilgrimage to {{ill|Kumano shrine|lt=Kumano shrine|lt=Kumano Shrine|ja|熊野三山|12=simple|13=User:Immanuelle/Kumano Shrine|comment=enwiki is a redirect}}, the chief priest of Sumiyoshi Taisha, Tsutsumori Tsunekuni, constructed a temporary palace (angū) in a pine grove on the shrine grounds. Known as the "Wakamatsu Gosho" (Young Pine Palace), the shrine subsequently came to be called "Wakamatsu Shrine." <ref name="Osaka City">[http://www.city.osaka.lg.jp/kensetsu/page/0000009370.html Todorokihimenomikoto Shrine - Osaka City] Retrieved March 19, 2019</ref>
+
 == Shrine Grounds ==
 {{right|[[File:若松行宮祉.JPG|thumb|none|Wakamatsu Temporary Palace Site]]}}
 * Monument marking the site of the Wakamatsu Temporary Palace.
 * Stone marker for Tensuifun Toyoura no Mikoto Shrine (Osaka City-designated cultural property).
+
 === Auxiliary Shrines ===
-* '''Tensuifun Toyoura no Mikoto Shrine''': Enshrines {{ill|Kōjin|en|Kōjin|qid=Q6455190|lt=Sambaō Gongen}} ({{ill|Mikumari|lt=Mikumari|lt=Mikumari-no-Kami|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Mikumari-no-Kami|qq=}}, {{ill|Okitsu-hiko-no-Mikoto|ja|奥津彦命|12=simple|13=User:Immanuelle/Okitsu-hiko-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550732}}, {{ill|Okitsu-hime-no-Mikoto|ja|奥津姫命|12=simple|13=User:Immanuelle/Okitsu-hime-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550733}}), [[Ōkuninushi]], and [[Kotoshironushi-no-Mikoto|Kotoshironushi]]. This shrine, also known as Aramatsubara Arajinja, was originally located in Andatsu 2-chome, {{ill|Suminoe-ku, Osaka|en|Suminoe-ku, Osaka|qid=Q985711|lt=Suminoe-ku}}, before being relocated to Todorokihimenomikoto Shrine in 1907 (Meiji 40). It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} with no former Rank.
+* '''Tensuifun Toyoura no Mikoto Shrine''': Enshrines {{ill|Kōjin|en|Kōjin|qid=Q6455190|lt=Sambaō Gongen}} ({{ill|Mikumari|lt=Mikumari|lt=Mikumari-no-Kami|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Mikumari-no-Kami}}, {{ill|Okitsu-hiko-no-Mikoto|ja|奥津彦命|12=simple|13=User:Immanuelle/Okitsu-hiko-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550732}}, {{ill|Okitsu-hime-no-Mikoto|ja|奥津姫命|12=simple|13=User:Immanuelle/Okitsu-hime-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550733}}), [[Ōkuninushi]], and [[Kotoshironushi-no-Mikoto|Kotoshironushi]]. This shrine, also known as Aramatsubara Arajinja, was originally located in Andatsu 2-chome, {{ill|Suminoe-ku, Osaka|en|Suminoe-ku, Osaka|qid=Q985711|lt=Suminoe-ku}}, before being relocated to Todorokihimenomikoto Shrine in 1907 (Meiji 40). It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} with no former Rank.
+
 == Festivals ==
 * '''Spring Festival (Chinka-sai)''': April 8
 * '''Summer Festival''': July 11-12
 * '''Autumn Festival''': October 7-8
 * '''Winter Festival (Chinka-sai)''': December 8
+
 == Information ==
 ; location
 * 1-10-4 Sawanomachi, Sumiyoshi-ku, Osaka City, Osaka Prefecture, Japan
+
 ; Transportation
 * '''Nearest Station''': Approximatelya 1-minute walk from [[Sawanomachi Station]] on the [[:en:Nankai Kōya Line|Nankai Kōya Line]].
+
 == References ==
+
 {{Reflist}}
+
 == External Links ==
 {{commonscat|Category:Todorokihimenomikoto-jinja}}
+
 * [http://wakamatsujinja.sakura.ne.jp/ Official Site of Todorokihimenomikoto Shrine]
+
 {{Shinto-stub}}
+
 {{Munakata Faith}}
+
 {{translated page|ja|止止呂支比売命神社|version=82749980|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| Name= Todorokihimenomikoto Shrine
+| image=[[File:Todorokihimenomikoto shrine.jpg|250px]]<br />Main Shrine Building
+| location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka City}}{{ill|Sumiyoshi-ku, Osaka|en|Sumiyoshi-ku, Osaka|qid=Q985702|lt=Sumiyoshi-ku, Osaka}} Sawanocho 1-10-4
+| Latitude = 34 | Latitude_min = 36 | Latitude_sec = 16.15 | N/S = N
+| Longitude = 135 | Longitude_min = 29 | Longitude_sec = 50.4 | E/W = E
+| Map Country Code = JP
+| Map = Japan Osaka
+| deity={{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}<br/>{{ill|Kushinadahime|ja|稲田姫尊|12=simple|13=User:Immanuelle/Inadahime-no-Mikoto|qid=Q505469|comment=changed title based on wikidata|qid=Q505469}}
+| Shrine Rank={{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (small)<br />Former {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+| Established=Unknown
+| Main Hall={{ill|Sumiyoshi-zukuri|en|Sumiyoshi-zukuri|qid=Q3503635|lt=Sumiyoshi-zukuri}} with cypress bark roof
+| Alternate Names= 
+| Pilgrimage Sites=
+| Annual Festival= Autumn Festival ({{ill|October 7|en|October 7|qid=Q2926|lt=October 7}}, {{ill|October 8|en|October 8|qid=Q2924|lt=October 8}})
+| Rituals=Spring Festival (Fire Extinguishing Festival) ({{ill|April 8|en|April 8|qid=Q2503|lt=April 8}})<br/>Summer Festival ({{ill|July 11|en|July 11|qid=Q2701|lt=July 11}}, {{ill|July 12|en|July 12|qid=Q2688|lt=July 12}})<br/>Winter Festival (Fire Extinguishing Festival) ({{ill|December 8|en|December 8|qid=Q2301|lt=December 8}})
+}}
+
+'''Todorokihimenomikoto Shrine''' (止止呂支比売命神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Sumiyoshi-ku, Osaka|en|Sumiyoshi-ku, Osaka|qid=Q985702|lt=Sumiyoshi-ku, Osaka}}, {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka City}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Japan. It is listed as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and was formerly Ranked as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+
+== Deities ==
+* {{ill|Susanoo-no-Mikoto|ja|素戔嗚尊|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
+* {{ill|Kushinadahime|ja|稲田姫尊|12=simple|13=User:Immanuelle/Inadahime-no-Mikoto|qid=Q505469|comment=changed title based on wikidata|qid=Q505469}}
+
+== History ==
+The exact date of establishment is unknown. The name "Todoroki" is believed to originate from a bridge that once existed within the shrine grounds. Another theory suggests it comes from referring to Inadahime as "Todorokihime" or from the sound of a babbling brook that once flowed through the grounds, with "Todoroki" meaning "roaring" or "resounding."
+
+Originally, it served as an auxiliary shrine (inner sanctuary) of {{ill|Sumiyoshi-taisha|en|Sumiyoshi-taisha|qid=Q705949|lt=Sumiyoshi Taisha}}. During {{ill|Emperor Go-Toba|en|Emperor Go-Toba|qid=Q316658|lt=Emperor Go-Toba}}'s pilgrimage to {{ill|Kumano region|en|Kumano region|qid=Q6443450|lt=Kumano}} in {{ill|1220|en|1220|qid=Q5392|lt=1220}} ({{ill|Jōkyū|en|Jōkyū|qid=Q1195428|lt=Shōkū era}} 2), a temporary palace called "Wakamatsu Palace" was erected in the shrine’s pine forest by {{ill|Tsumori Tsunekuni|ja|津守経国|12=simple|13=User:Immanuelle/Tsumori Tsunekuni|ja_comment=jawiki link invalid}}, leading to the shrine also being referred to as '''Wakamatsu Palace''' or '''Wakamatsu Shrine'''.
+
+== Precincts ==
+* Monument of the Wakamatsu Palace Site
+* Stone Marker of {{ill|Amemiketsutoyora-no-Mikoto Shrine|ja|天水分豊浦命社|12=simple|13=User:Immanuelle/Amemiketsutoyora-no-Mikoto Shrine|ja_comment=jawiki link invalid}} (Designated Cultural Property of Osaka City)
+
+== Auxiliary Shrines ==
+* {{ill|Amemiketsutoyora-no-Mikoto Shrine|ja|天水分豊浦命神社|12=simple|13=User:Immanuelle/Amemiketsutoyora-no-Mikoto Shrine|ja_comment=jawiki link invalid}} (Deities: {{ill|Sanbo Kojin|ja|三宝荒神|12=simple|13=User:Immanuelle/Sanbō Kōjīn|comment=changed title based on wikidata|qid=Q13577821}} ({{ill|Mikumari|lt=Mikumari|lt=Mikumari-no-Kami|ja|水分神|2=ja|3=水分神|4=zh|5=水分神|6=sv|7=Mikumari-no-Kami|8=fr|9=Mikumari|12=simple|13=User:Immanuelle/Mikumari-no-Kami}}, {{ill|Okutsuhiko-no-Mikoto|ja|奥津彦命|12=simple|13=User:Immanuelle/Okutsuhiko-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550732}}, {{ill|Okutsuhime-no-Mikoto|ja|奥津姫命|12=simple|13=User:Immanuelle/Okutsuhime-no-Mikoto|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135550733}}), {{ill|Ōkuninushi|ja|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}}, {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}})
+
+It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} and was formerly an {{ill|Unranked shrines|ja|無格社|lt=Hokora|qid=Q134917285}}{{efn|Hokora|lt=Unranked Shrine|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917285|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}. Also known as Aramatsubara Kōjīn Shrine, it was originally located in {{ill|Anryū|ja|安立|12=simple|13=User:Immanuelle/Andachi, Suminoe-ku, Osaka|comment=changed title based on wikidata|qid=Q11451168}}, {{ill|Suminoe-ku, Osaka|en|Suminoe-ku, Osaka|qid=Q985711|lt=Suminoe-ku}}, but was merged into Todorokihimenomikoto Shrine in {{ill|1907|en|1907|qid=Q2048|lt=1907}} ({{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 40).
+
+== Festivals ==
+* Spring Festival (Fire Extinguishing Festival) - April 8
+* Summer Festival - July 11-12
+* Autumn Festival - October 7-8
+* Winter Festival (Fire Extinguishing Festival) - December 8
+
+== location Information ==
+;Address
+* Sawanocho 1-10-4, {{ill|Sumiyoshi-ku, Osaka|en|Sumiyoshi-ku, Osaka|qid=Q985702|lt=Sumiyoshi-ku, Osaka}}, {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka City}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Japan
+
+;Access
+* Nearest Station: Approximately a 1-minute walk from {{ill|Sawanochō Station|en|Sawanochō Station|qid=Q7428584|lt=Sawanocho Station}} on the {{ill|Koya Line|en|Koya Line|qid=Q71986|lt=Nankai Kōyō Line}}
+
+== References ==
+{{Reflist}}
+
+== External Links ==
+{{Commonscat|Category:Todorokihimenomikoto-jinja}}
+* [http://wakamatsujinja.sakura.ne.jp/ Official Website of Todorokihimenomikoto Shrine]
+
+{{Shinto navbox}}
+
+{{translated page|ja|止止呂支比売命神社|version=82749980|comment=Imported full ja history}}
+
+{{Commons category|Todorokihimenomikoto-jinja}}
+
+{{wikidata link|Q11545333|co|commons:Category:Todorokihimenomikoto-jinja|ja|止止呂支比売命神社|check_date=2026-05-11}}
 [[Category:Buildings and structures in Sumiyoshi-ku, Osaka]]
 [[Category:History of Sumiyoshi-ku, Osaka]]
 [[Category:Osaka Historical Sites Connecting Walkway]]
+[[Category:Pages with duplicated content]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Osaka]]
 [[Category:Son-sha]]

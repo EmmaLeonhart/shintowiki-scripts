@@ -1,55 +1,62 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kenda_Suga_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25089550702|time triggered pipeline]] -->
 {{Infobox religious building
 | religious_affiliation = [[Shinto]]
 | deity                 = deities of its local area
 | type                  = [[Sōja shrine|Sōja shrine]]
 |Name   = Takeda Suga Shrine
 |image   = File:Takedasuga Jinja.JPG
-|location = {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}
-{{ill|Yūki, Ibaraki|en|Yūki, Ibaraki|qid=Q847569|lt=Yūki City|1=Yūki, Ibaraki}} Yūki 195
+|location = {{ill|Ibaraki Prefecture|ace|Prefektur Ibaraki|af|Ibaraki-prefektuur|an|Prefectura d'Ibaraki|ar|إيباراكي (محافظة)|arz|ايباراكى|az|İbaraki prefekturası|azb|ایباراکی اوستانی|ban|Préféktur Ibaraki|bat_smg|Ibarakė prefektūra|be|Ібаракі (прэфектура)|bg|Ибараки|bn|ইবারাকি প্রশাসনিক অঞ্চল|ca|Prefectura d'Ibaraki|cdo|Ibaraki-gâing|ce|Ибараки (префектура)|ceb|Ibaraki-ken|ckb|پارێزگای ئیباراکی|cs|Prefektura Ibaraki|cy|Ibaraki (talaith)|da|Ibaraki-præfekturet|de|Präfektur Ibaraki|eo|Gubernio Ibaraki|es|Prefectura de Ibaraki|et|Ibaraki prefektuur|eu|Ibaraki (prefektura)|fa|استان ایباراکی|fi|Ibarakin prefektuuri|fr|Préfecture d'Ibaraki|frr|Ibaraki (Prefektüür)|ga|Maoracht Ibaraki|gl|Prefectura de Ibaraki|hak|Ibaraki-yen|he|איבראקי (מחוז)|hr|Ibaraki (prefektura)|hu|Ibaraki prefektúra|hy|Իբարակի (պրեֆեկտուրա)|id|Prefektur Ibaraki|ilo|Prepektura ti Ibaraki|it|Prefettura di Ibaraki|ja|茨城県|jv|Préfèktur Ibaraki|ka|იბარაკის პრეფექტურა|km|ខេត្តអ៊ីបារ៉ាគិ|kn|ಇಬಾರಕಿ (ಪ್ರಾಂತ್ಯ)|ko|이바라키현|lt|Ibarakio prefektūra|lv|Ibaraki prefektūra|mk|Ибараки (префектура)|mn|Ибараки муж|mni|ꯏꯕꯥꯔꯥꯀꯤ ꯂꯝꯈꯥꯢ|mr|इबाराकी प्रांत|ms|Wilayah Ibaraki|ne|इबाराकी प्रदेश|nl|Ibaraki (prefectuur)|nn|Ibaraki prefektur|no|Ibaraki (prefektur)|os|Ибараки|pam|Prepektura ning Ibaraki|pl|Prefektura Ibaraki|pnb|ضلع اباراکی|pt|Ibaraki|ro|Prefectura Ibaraki|ru|Ибараки|sco|Ibaraki Prefectur|se|Ibaraki prefektuvra|sh|Prefektura Ibaraki|si|ඉබරාකි ප්‍රාන්තය|simple|Ibaraki Prefecture|sk|Ibaraki (prefektúra)|sr|Префектура Ибараки|su|Ibaraki Prefecture|sv|Ibaraki prefektur|sw|Mkoa wa Ibaraki|tg|Префектураи Ибараки|th|จังหวัดอิบารากิ|tl|Prepektura ng Ibaraki|tr|Ibaraki|tt|Ибараки (префектура)|ug|ئىباراكى ناھىيىسى|uk|Префектура Ібаракі|ur|ایباراکی پریفیکچر|uz|Ibaraki prefekturasi|vi|Ibaraki|war|Ibaraki (prefektura)|wuu|茨城县|zh|茨城縣|zh_classical|茨城縣|zh_min_nan|Ibaraki-koān|zh_yue|茨城縣|qid=Q83273|lt=Ibaraki Prefecture}}
+{{ill|Yūki, Ibaraki|ar|يوكي (إيباراكي)|arz|يوكى (بلده فى ايباراكى)|azb|یوکی، ایباراکی|ce|Юки (гӀала)|ceb|Yūki-shi|de|Yūki|eo|Juki|es|Yūki (Ibaraki)|fa|یوکی، ایباراکی|fi|Yūki|fr|Yūki (Ibaraki)|gl|Yūki|id|Yūki, Ibaraki|it|Yūki (Ibaraki)|ja|結城市|ko|유키시|mg|Yūki|mzn|یوکی، ایباراکی|nl|Yuki|pl|Yūki (Ibaraki)|pt|Yuki (Ibaraki)|ro|Yūki|ru|Юки (город)|sv|Yūki, Ibaraki|tg|Юки|th|ยูกิ (จังหวัดอิบารากิ)|tl|Yuki, Ibaraki|tr|Yūki|tt|Юки (шәһәр)|uk|Юкі (Ібаракі)|ur|یکی، اباراکی|uz|Yuki (Ibaraki)|vi|Yūki, Ibaraki|war|Yūki, Ibaraki|zh|結城市|zh_classical|結城市|zh_min_nan|Yuki-chhī|zh_yue|結城|qid=Q847569|lt=Yūki City}} Yūki 195
 |coordinates   = {{Coord|36.302222|N|139.874722}}
-|Deities   = {{ill|Take Nunokawa Wake no Mikoto|ja|武渟川別|lt=Takenuokawa Wake no Mikoto|12=simple|13=User:Immanuelle/Take Nunokawa Wake no Mikoto|qq=}}<br />{{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}} (Tsushima {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}})
-|Rank   = {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (minor shrine)<br/>Former {{ill|Prefectural Shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
+|Deities   = {{ill|Take Nunokawa Wake no Mikoto|ja|武渟川別|zh|武渟川别|qid=Q11546050|lt=Takenuokawa Wake no Mikoto}}<br />{{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}} (Tsushima {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}})
+|Rank   = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (minor shrine)<br/>Former {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}
 |Establishment   = Unknown (former Takeda Shrine)<br />1242 (former Suga Shrine)
-|Main_Building   = {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shimmei-zukuri|1=Shinmei-zukuri}}
-|Other_Names   = {{ill|Tenno-sha|ja|天王社|12=simple|13=User:Immanuelle/Tenno-sha|ja_comment=jawiki redirects to 天王神社|1=Tenno Shrine|comment=changed title based on wikidata|qid=Q11443028}}
-|Festivals   = {{ill|November 15|en|November 15|qid=Q2982|lt=November 15|1=November 15}}
+|Main_Building   = {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shimmei-zukuri}}
+|Other_Names   = {{ill|Tenno Shrine|ja|天王神社|qid=Q11443028}}
+|Festivals   = {{ill|November 15|ab|Абҵарамза 15|af|15 November|als|15. November|alt|Кӱчӱрген айдыҥ 15 кӱни|am|15 November|an|15 de noviembre|ar|15 نوفمبر|ary|15 نونبر|arz|15 نوفمبر|as|১৫ নৱেম্বৰ|ast|15 de payares|av|15 Ноябр|avk|15-e ke santaneaksat|az|15 noyabr|azb|۱۵ نوْوامبر|ba|15 ноябрь|ban|15 Nopémber|bat_smg|Lapkristė 15|bcl|Nobyembre 15|be|15 лістапада|be_x_old|15 лістапада|bg|15 ноември|bh|15 नवंबर|bjn|15 Nupimbir|bn|১৫ নভেম্বর|bo|ཟླ་༡༡ཚེས་༡༥ཉིན་|bpy|নভেম্বর ১৫|br|15 Du|bs|15. novembar|bxr|11 һарын 15|ca|15 de novembre|cdo|11 nguŏk 15 hô̤|ce|15 ноябрь|ceb|Nobiyembre 15|ckb|١٥ی تشرینی دووەم|co|15 nuvembri|cs|15. listopad|csb|15 lëstopadnika|cv|Чӳк, 15|cy|15 Tachwedd|da|15. november|de|15. November|diq|15 Tışrino Peyên|dv|ނޮވެމްބަރު 15|el|15 Νοεμβρίου|eml|15 ed nuvèmber|eo|15-a de novembro|es|15 de noviembre|et|15. november|eu|Azaroaren 15|ext|15 noviembri|fa|۱۵ نوامبر|fi|15. marraskuuta|fiu_vro|15. märtekuu päiv|fo|15. november|fr|15 novembre|frp|15 de novembro|frr|15. Nofember|fur|15 di Novembar|fy|15 novimber|ga|15 Samhain|gag|15 Kasım ay|gan|11月15號|gd|15 an t-Samhain|gl|15 de novembro|gn|15 jasypateĩ|gor|15 Nopember|gu|નવેમ્બર ૧૫|gv|15 Mee Houney|hak|11-ngie̍t 15-ngit|he|15 בנובמבר|hi|१५ नवम्बर|hif|15 November|hr|15. studenoga|hsb|15. nowembra|ht|15 novanm|hu|November 15.|hy|Նոյեմբերի 15|hyw|15 Նոյեմբեր|ia|15 de novembre|id|15 November|ie|15 novembre|ig|15 Novemba|ilo|Nobiembre 15|io|15ma di novembro|is|15. nóvember|it|15 novembre|ja|11月15日|jv|15 Novèmber|ka|15 ნოემბერი|kaa|15-noyabr|kab|15 wamber|kk|15 қараша|kn|ನವೆಂಬರ್ ೧೫|ko|11월 15일|krc|15 ноябрь|ks|نَوَمبَر 15|ksh|15. Novemmber|ku|15ê çiriya paşîn|kv|Вӧльгым тӧлысь 15-ӧд лун|la|15 Novembris|lb|15. November|lez|15 ноябрь|li|15 november|lij|15 novénbre|lmo|15 11|lo|15 ພະຈິກ|lt|Lapkričio 15|lv|15. novembris|mai|१५ नवम्बर|mg|15 Novambra|mhr|15 кылме|mk|15 ноември|ml|നവംബർ 15|mn|11 сарын 15|mr|नोव्हेंबर १५|ms|15 November|my|၁၅ နိုဝင်ဘာ|myv|Сундерьковонь 15 чи|mzn|۱۵ نوامبر|nah|15 metztli noviembre|nap|15 'e nuvembre|nds|15. November|nds_nl|15 november|new|नोभेम्बर १५|nl|15 november|nn|15. november|no|15. november|nrm|15 Novembre|nso|Dibatsela 15|oc|15 de novembre|olo|15. kylmykuudu|or|୧୫ ନଭେମ୍ବର|pa|15 ਨਵੰਬਰ|pag|Nobyembre 15|pam|Nobiembri 15|pap|15 di novèmber|pl|15 listopada|pnb|15 نومبر|pnt|15 Αεργί|ps|15 نومبر|pt|15 de novembro|qu|15 ñiqin ayamarq'a killapi|ro|15 noiembrie|ru|15 ноября|rue|15. новембер|sa|१५ नवम्बर|sah|Сэтинньи 15|scn|15 di nuvèmmiru|sco|15 November|sd|15 نومبر|se|Skábmamánu 15.|sh|15. novembra|shn|ၼူဝ်ႇဝႅမ်ႇပႃႇ 15|si|නොවැම්බර් 15|simple|November 15|sk|15. november|sl|15. november|smn|Skammâmáánu 15.|sn|Mbudzi 15|sq|15 Nëntor|sr|15. новембар|su|15 Nopémber|sv|15 november|sw|15 Novemba|szl|15 listopada|ta|நவம்பர் 15|te|నవంబర్ 15|tg|15 ноябр|th|15 พฤศจิกายน|tk|15 noýabr|tl|Nobyembre 15|tly|15 Nojabr|tn|15 Ngwanatsele|tr|15 Kasım|tt|15 ноябрь|tyv|15 Он бир ай|udm|15 шуркынмон|ug|15 - نويابر|uk|15 листопада|ur|15 نومبر|uz|15-noyabr|vec|15 de novenbre|vi|15 tháng 11|vls|15 november|vo|Novul 15|wa|15 di nôvimbe|war|Nobyembre 15|wuu|11月15号|xal|Үкр сарин 15|xmf|15 გერგობათუთა|yi|15טן נאוועמבער|yo|15 November|za|11 nyied 15 hauh|zea|15 november|zh|11月15日|zh_classical|公曆十一月十五日|zh_min_nan|11 goe̍h 15 ji̍t|zh_yue|11月15號|qid=Q2982|lt=November 15}}
 |Rituals   = 
 |Map = {{location map|Japan Ibaraki|label=Takeda Suga Shrine|caption=Takeda Suga Shrine location|coordinates=
 {{coord|36|18|08|N|139|52|29|E}}
 |position=right|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center
-}}|prefecture   = {{ill|Yuki|qid=Q847569|1=Yūki, Ibaraki}}
-|architecture_style   = {{ill|Shinmei-zukuri|qid=Q930545|1=Shinmei-zukuri}}
+}}|prefecture   = {{ill|Yūki, Ibaraki|ar|يوكي (إيباراكي)|arz|يوكى (بلده فى ايباراكى)|azb|یوکی، ایباراکی|ce|Юки (гӀала)|ceb|Yūki-shi|de|Yūki|eo|Juki|es|Yūki (Ibaraki)|fa|یوکی، ایباراکی|fi|Yūki|fr|Yūki (Ibaraki)|gl|Yūki|id|Yūki, Ibaraki|it|Yūki (Ibaraki)|ja|結城市|ko|유키시|mg|Yūki|mzn|یوکی، ایباراکی|nl|Yuki|pl|Yūki (Ibaraki)|pt|Yuki (Ibaraki)|ro|Yūki|ru|Юки (город)|sv|Yūki, Ibaraki|tg|Юки|th|ยูกิ (จังหวัดอิบารากิ)|tl|Yuki, Ibaraki|tr|Yūki|tt|Юки (шәһәр)|uk|Юкі (Ібаракі)|ur|یکی، اباراکی|uz|Yuki (Ibaraki)|vi|Yūki, Ibaraki|war|Yūki, Ibaraki|zh|結城市|zh_classical|結城市|zh_min_nan|Yuki-chhī|zh_yue|結城|qid=Q847569}}
+|architecture_style   = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
-'''Takeda Suga Shrine''' (健田須賀神社, ''Takeda Suga Jinja'') is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Yūki, Ibaraki|en|Yūki, Ibaraki|qid=Q847569|lt=Yūki City|1=Yūki, Ibaraki}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}, Japan. The shrine was historically Ranked as a {{ill|Prefectural Shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}} under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}. It was formed during the Meiji period through the merger of '''Takeda Shrine''', a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and '''Suga Shrine'''. 
-The shrine enshrines {{ill|Take Nunokawa Wake no Mikoto|ja|武渟川別|lt=Takenuokawa Wake no Mikoto|12=simple|13=User:Immanuelle/Take Nunokawa Wake no Mikoto|qq=}} (the former deity of Takeda Shrine) and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}} (the former deity of Suga Shrine).
+
+'''Takeda Suga Shrine''' (健田須賀神社, ''Takeda Suga Jinja'') is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Yūki, Ibaraki|ar|يوكي (إيباراكي)|arz|يوكى (بلده فى ايباراكى)|azb|یوکی، ایباراکی|ce|Юки (гӀала)|ceb|Yūki-shi|de|Yūki|eo|Juki|es|Yūki (Ibaraki)|fa|یوکی، ایباراکی|fi|Yūki|fr|Yūki (Ibaraki)|gl|Yūki|id|Yūki, Ibaraki|it|Yūki (Ibaraki)|ja|結城市|ko|유키시|mg|Yūki|mzn|یوکی، ایباراکی|nl|Yuki|pl|Yūki (Ibaraki)|pt|Yuki (Ibaraki)|ro|Yūki|ru|Юки (город)|sv|Yūki, Ibaraki|tg|Юки|th|ยูกิ (จังหวัดอิบารากิ)|tl|Yuki, Ibaraki|tr|Yūki|tt|Юки (шәһәр)|uk|Юкі (Ібаракі)|ur|یکی، اباراکی|uz|Yuki (Ibaraki)|vi|Yūki, Ibaraki|war|Yūki, Ibaraki|zh|結城市|zh_classical|結城市|zh_min_nan|Yuki-chhī|zh_yue|結城|qid=Q847569|lt=Yūki City}}, {{ill|Ibaraki Prefecture|ace|Prefektur Ibaraki|af|Ibaraki-prefektuur|an|Prefectura d'Ibaraki|ar|إيباراكي (محافظة)|arz|ايباراكى|az|İbaraki prefekturası|azb|ایباراکی اوستانی|ban|Préféktur Ibaraki|bat_smg|Ibarakė prefektūra|be|Ібаракі (прэфектура)|bg|Ибараки|bn|ইবারাকি প্রশাসনিক অঞ্চল|ca|Prefectura d'Ibaraki|cdo|Ibaraki-gâing|ce|Ибараки (префектура)|ceb|Ibaraki-ken|ckb|پارێزگای ئیباراکی|cs|Prefektura Ibaraki|cy|Ibaraki (talaith)|da|Ibaraki-præfekturet|de|Präfektur Ibaraki|eo|Gubernio Ibaraki|es|Prefectura de Ibaraki|et|Ibaraki prefektuur|eu|Ibaraki (prefektura)|fa|استان ایباراکی|fi|Ibarakin prefektuuri|fr|Préfecture d'Ibaraki|frr|Ibaraki (Prefektüür)|ga|Maoracht Ibaraki|gl|Prefectura de Ibaraki|hak|Ibaraki-yen|he|איבראקי (מחוז)|hr|Ibaraki (prefektura)|hu|Ibaraki prefektúra|hy|Իբարակի (պրեֆեկտուրա)|id|Prefektur Ibaraki|ilo|Prepektura ti Ibaraki|it|Prefettura di Ibaraki|ja|茨城県|jv|Préfèktur Ibaraki|ka|იბარაკის პრეფექტურა|km|ខេត្តអ៊ីបារ៉ាគិ|kn|ಇಬಾರಕಿ (ಪ್ರಾಂತ್ಯ)|ko|이바라키현|lt|Ibarakio prefektūra|lv|Ibaraki prefektūra|mk|Ибараки (префектура)|mn|Ибараки муж|mni|ꯏꯕꯥꯔꯥꯀꯤ ꯂꯝꯈꯥꯢ|mr|इबाराकी प्रांत|ms|Wilayah Ibaraki|ne|इबाराकी प्रदेश|nl|Ibaraki (prefectuur)|nn|Ibaraki prefektur|no|Ibaraki (prefektur)|os|Ибараки|pam|Prepektura ning Ibaraki|pl|Prefektura Ibaraki|pnb|ضلع اباراکی|pt|Ibaraki|ro|Prefectura Ibaraki|ru|Ибараки|sco|Ibaraki Prefectur|se|Ibaraki prefektuvra|sh|Prefektura Ibaraki|si|ඉබරාකි ප්‍රාන්තය|simple|Ibaraki Prefecture|sk|Ibaraki (prefektúra)|sr|Префектура Ибараки|su|Ibaraki Prefecture|sv|Ibaraki prefektur|sw|Mkoa wa Ibaraki|tg|Префектураи Ибараки|th|จังหวัดอิบารากิ|tl|Prepektura ng Ibaraki|tr|Ibaraki|tt|Ибараки (префектура)|ug|ئىباراكى ناھىيىسى|uk|Префектура Ібаракі|ur|ایباراکی پریفیکچر|uz|Ibaraki prefekturasi|vi|Ibaraki|war|Ibaraki (prefektura)|wuu|茨城县|zh|茨城縣|zh_classical|茨城縣|zh_min_nan|Ibaraki-koān|zh_yue|茨城縣|qid=Q83273|lt=Ibaraki Prefecture}}, Japan. The shrine was historically Ranked as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}} under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines}}. It was formed during the Meiji period through the merger of '''Takeda Shrine''', a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}, and '''Suga Shrine'''. 
+
+The shrine enshrines {{ill|Take Nunokawa Wake no Mikoto|ja|武渟川別|zh|武渟川别|qid=Q11546050|lt=Takenuokawa Wake no Mikoto}} (the former deity of Takeda Shrine) and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}} (the former deity of Suga Shrine).
+
 It is a provincial soja with provincial Soja shrines which enshrine all the kami of a province<ref>https://archive.ph/wip/XtZfZ</ref>
+
 == History ==
-'''Takeda Shrine''' has an but it is said to have been founded by the {{ill|Yūki no Kuni no Miyatsuko|ja|結城国造|12=simple|13=User:Immanuelle/Yūki no Kuni no Miyatsuko|ja_comment=jawiki link invalid}} lineage of the {{ill|Takeda no Omi|ja|竹田臣|12=simple|13=User:Immanuelle/Takeda no Omi|ja_comment=jawiki link invalid}}, who enshrined their ancestor, Takenuokawa Wake no Mikoto. This deity was one of the {{ill|Shidō Shōgun|ja|四道将軍|12=simple|13=User:Immanuelle/Shidō Shōgun|qq=}}, a group of four generals dispatched to pacify and develop the eastern provinces. The shrine is recorded in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} under "Takeda Shrine of Yūki District, Shimōsa Province," making it one of the 11 shrines listed for Shimōsa Province. In 1764 (Hōreki 14), the shrine was relocated to the grounds of {{ill|Jōkoku-ji|ja|乗国寺|12=simple|13=User:Immanuelle/Jōkoku-ji|ja_comment=jawiki link invalid}}, a {{ill|Sōtō|en|Sōtō|qid=Q749085|lt=Sōtō Zen|1=Sōtō}} temple that serves as the ancestral temple of the {{ill|Yūki clan|en|Yūki clan|qid=Q2975399|lt=Yūki clan|1=Yūki clan}}.
-'''Suga Shrine''' was established in 1242 (Ninji 3) when the ruling {{ill|Yūki clan|en|Yūki clan|qid=Q2975399|lt=Yūki clan|1=Yūki clan}} invited the deity from {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine|1=Tsushima Shrine}} in {{ill|Owari Province|en|Owari Province|qid=Q514506|lt=Owari Province|1=Owari Province}}, naming it '''Tenno-sha''' (天王社). In 1343 (Kōei 2), {{ill|Yūki Naoasa|ja|結城直朝|12=simple|13=User:Immanuelle/Yūki Naoasa|1=Yūki Naotomo|comment=changed title based on wikidata|qid=Q11606616}} designated it as one of the '''Yūki Seven Shrines''' (結城七社) and made it the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja|1=Sōja shrine}} (main provincial shrine) of {{ill|Yūki District|ja|結城郷|12=simple|13=User:Immanuelle/Yūki District|ja_comment=jawiki link invalid}}. During the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu Bunri|1=Shinbutsu bunri}} reforms in 1868 (Meiji 1), the shrine was renamed '''Suga Shrine'''. 
-In 1870 (Meiji 3), Takeda Shrine was separated from Jōkoku-ji and merged with Suga Shrine, forming '''Takeda Suga Shrine'''. In 1873 (Meiji 6), the shrine was designated as a {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}, and in 1930 (Shōwa 5), it was elevated to a {{ill|Prefectural Shrine|ja|県社|1=Ken-sha|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}.
+'''Takeda Shrine''' has an but it is said to have been founded by the {{ill|Yūki no Kuni no Miyatsuko|ja|結城国造}} lineage of the {{ill|Takeda no Omi|ja|竹田臣}}, who enshrined their ancestor, Takenuokawa Wake no Mikoto. This deity was one of the {{ill|Shidō Shōgun|ja|四道将軍}}, a group of four generals dispatched to pacify and develop the eastern provinces. The shrine is recorded in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} under "Takeda Shrine of Yūki District, Shimōsa Province," making it one of the 11 shrines listed for Shimōsa Province. In 1764 (Hōreki 14), the shrine was relocated to the grounds of {{ill|Jōkoku-ji|ja|乗国寺}}, a {{ill|Sōtō|en|Sōtō|qid=Q749085|lt=Sōtō Zen}} temple that serves as the ancestral temple of the {{ill|Yūki clan|en|Yūki clan|qid=Q2975399|lt=Yūki clan}}.
+
+'''Suga Shrine''' was established in 1242 (Ninji 3) when the ruling {{ill|Yūki clan|en|Yūki clan|qid=Q2975399|lt=Yūki clan}} invited the deity from {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} in {{ill|Owari Province|ar|أواري|ca|Província d'Owari|ckb|پارێزگای ئۆوواری|cs|Provincie Owari|de|Provinz Owari|es|Provincia de Owari|eu|Owari probintzia|fa|ولایت اوواری|fi|Owarin provinssi|fr|Province d'Owari|gl|Provincia de Owari|hak|Owari-koet|id|Provinsi Owari|it|Owari (provincia)|ja|尾張国|ko|오와리국|lt|Ovario žemė|nl|Owari (provincie)|pl|Prowincja Owari|pt|Província de Owari|ru|Овари (провинция)|simple|Owari Province|sk|Owari (provincia)|sr|Провинција Овари|tr|Owari (vilayet)|uk|Провінція Оварі|vi|Tỉnh Owari|wuu|尾张国|zh|尾張國|zh_min_nan|Owari-kok|zh_yue|尾張國|qid=Q514506|lt=Owari Province}}, naming it '''Tenno-sha''' (天王社). In 1343 (Kōei 2), {{ill|Yūki Naotomo|ja|結城直朝|12=simple|13=User:Immanuelle/Yūki Naoasa|comment=changed title based on wikidata|qid=Q11606616}} designated it as one of the '''Yūki Seven Shrines''' (結城七社) and made it the {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}} (main provincial shrine) of {{ill|Yūki District|ja|結城郷}}. During the {{ill|Shinbutsu bunri|en|Shinbutsu bunri|qid=Q1970535|lt=Shinbutsu Bunri}} reforms in 1868 (Meiji 1), the shrine was renamed '''Suga Shrine'''. 
+
+In 1870 (Meiji 3), Takeda Shrine was separated from Jōkoku-ji and merged with Suga Shrine, forming '''Takeda Suga Shrine'''. In 1873 (Meiji 6), the shrine was designated as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}, and in 1930 (Shōwa 5), it was elevated to a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度}}.
+
 == See Also ==
-* {{ill|Akasaka Kaminoyama Shrine|ja|赤坂上之山神社|12=simple|13=User:Immanuelle/Akasaka Kaminoyama Shrine|qq=}} 
-* {{ill|Unakorowake Shrine|ja|宇奈己呂和気神社|12=simple|13=User:Immanuelle/Unakorowake Shrine|qq=}} 
-* {{ill|Ono Shrine (Ritto City)|ja|大野神社 (栗東市)|12=simple|13=User:Immanuelle/Ono Shrine (Ritto City)|qq=}} 
-* {{ill|Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|12=simple|13=User:Immanuelle/Ogami Shrine (Tonami City)|qq=}} 
-* {{ill|Kainan Shrine|ja|海南神社|12=simple|13=User:Immanuelle/Kainan Shrine|qq=}} 
-* {{ill|Katsushika Shrine|ja|葛飾神社|12=simple|13=User:Immanuelle/Katsushika Shrine|qq=}} 
-* {{ill|Katsube Shrine|ja|勝部神社|12=simple|13=User:Immanuelle/Katsube Shrine|qq=}} 
-* {{ill|Mukuhashi Sōja|ja|椋橋総社|12=simple|13=User:Immanuelle/Mukuhashi Sōja|qq=}} 
-* {{ill|Kōdai-jingū|ja|皇大神宮 (藤沢市)|12=simple|13=User:Immanuelle/Kōdai-jingū|qq=}} 
-* {{ill|Gosho Shrine (Sammu City)|ja|五所神社 (山武市)|12=simple|13=User:Immanuelle/Gosho Shrine (Sammu City)|qq=}} 
-* {{ill|Sakata Shinmei Shrine|ja|坂田神明宮|12=simple|13=User:Immanuelle/Sakata Shinmei Shrine|qq=}} 
-* {{ill|Shinkai Sansha Shrine|ja|新海三社神社|12=simple|13=User:Immanuelle/Shinkai Sansha Shrine|qq=}} 
-* {{ill|Zama Shrine (Daito City)|ja|坐摩神社 (大東市)|12=simple|13=User:Immanuelle/Zama Shrine (Daito City)|qq=}} 
-* {{ill|Tachibana Shrine (Kawasaki City)|ja|橘樹神社 (川崎市)|12=simple|13=User:Immanuelle/Tachibana Shrine (Kawasaki City)|qq=}} 
-* {{ill|Torakashi Shrine|ja|虎柏神社|12=simple|13=User:Immanuelle/Torakashi Shrine|qq=}} 
-* {{ill|Nagao Shrine|en|Nagao Shrine|qid=Q6958481|lt=Nagao Shrine|1=Nagao Shrine}} 
-* {{ill|Nanba Shrine|ja|難波神社|1=Nanba Shrine|de|Namba-Schrein|fr|Namba-jinja|simple|12=simple|13=User:Immanuelle/Nanba Shrine|13=User:Immanuelle/Nanba Shrine|qq=}} (may have historically been a provincal one)
-* {{ill|Niiya ni Masu Amateru Mitama Shrine|ja|新屋坐天照御魂神社|12=simple|13=User:Immanuelle/Niiya ni Masu Amateru Mitama Shrine|qq=}}
-* {{ill|Nogi Shrine (Tokyo)|lt=Nogi Shrine|ja|能義神社|12=simple|13=User:Immanuelle/Nogi Shrine (Tokyo)|qq=}}
-* {{ill|Hotaka Shrine|en|Hotaka Shrine|qid=Q11597109|lt=Hotaka Shrine|1=Hotaka Shrine}}
-* {{ill|Washinomiya Shrine|en|Washinomiya Shrine|qid=Q611108|lt=Washinomiya Shrine|1=Washinomiya Shrine}}
+* {{ill|Akasaka Kaminoyama Shrine|ja|赤坂上之山神社|qid=Q11635398}} 
+* {{ill|Unakorowake Shrine|ja|宇奈己呂和気神社|qid=Q17217367}} 
+* {{ill|Ono Shrine (Ritto City)|ja|大野神社 (栗東市)|qid=Q59282652}} 
+* {{ill|Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|12=simple|13=User:Immanuelle/Ogami Shrine (Tonami City)}} 
+* {{ill|Kainan Shrine|ja|海南神社}} 
+* {{ill|Katsushika Shrine|ja|葛飾神社}} 
+* {{ill|Katsube Shrine|ja|勝部神社}} 
+* {{ill|Mukuhashi Sōja|ja|椋橋総社}} 
+* {{ill|Kōdai-jingū|ja|皇大神宮 (藤沢市)}} 
+* {{ill|Gosho Shrine (Sammu City)|ja|五所神社 (山武市)}} 
+* {{ill|Sakata Shinmei Shrine|ja|坂田神明宮}} 
+* {{ill|Shinkai Sansha Shrine|ja|新海三社神社}} 
+* {{ill|Zama Shrine (Daito City)|ja|坐摩神社 (大東市)}} 
+* {{ill|Tachibana Shrine (Kawasaki City)|ja|橘樹神社 (川崎市)}} 
+* {{ill|Torakashi Shrine|ja|虎柏神社}} 
+* {{ill|Nagao Shrine|ja|長尾神社|qid=Q6958481|lt=Nagao Shrine}} 
+* {{ill|Nanba Shrine|ja|難波神社|de|Namba-Schrein|fr|Namba-jinja|simple|Nanba Shrine}} (may have historically been a provincal one)
+* {{ill|Niiya ni Masu Amateru Mitama Shrine|ja|新屋坐天照御魂神社}}
+* {{ill|Nogi Shrine (Tokyo)|ja|能義神社|lt=Nogi Shrine}}
+* {{ill|Hotaka Shrine|en|Hotaka Shrine|qid=Q11597109|lt=Hotaka Shrine}}
+* {{ill|Washinomiya Shrine|en|Washinomiya Shrine|qid=Q611108|lt=Washinomiya Shrine}}
+
 ==References==
 {{reflist}}
 == External Links ==
@@ -60,13 +67,63 @@ In 1870 (Meiji 3), Takeda Shrine was separated from Jōkoku-ji and merged with S
 {{Pref-stub|pref=Ibaraki Prefecture}}
 {{Shinto-stub}}
 {{Buddhism-stub}}
+
+}}
+
 {{Sōja shrines}}
+
 {{translated page|ja|健田須賀神社|version=83975897|comment=Imported full ja history}}
 
+{{Sōja_shrines}}
+
+==Merged second translation==
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name         = Takeda Suga Shrine (健田須賀神社)
+| religious_affiliation = [[Shinto]]
+|image        = [[File:Takedasuga Jinja.JPG|300px]]
+| location     = {{ill|Yūki, Ibaraki|ar|يوكي (إيباراكي)|arz|يوكى (بلده فى ايباراكى)|azb|یوکی، ایباراکی|ce|Юки (гӀала)|ceb|Yūki-shi|de|Yūki|eo|Juki|es|Yūki (Ibaraki)|fa|یوکی، ایباراکی|fi|Yūki|fr|Yūki (Ibaraki)|gl|Yūki|id|Yūki, Ibaraki|it|Yūki (Ibaraki)|ja|結城市|ko|유키시|mg|Yūki|mzn|یوکی، ایباراکی|nl|Yuki|pl|Yūki (Ibaraki)|pt|Yuki (Ibaraki)|ro|Yūki|ru|Юки (город)|sv|Yūki, Ibaraki|tg|Юки|th|ยูกิ (จังหวัดอิบารากิ)|tl|Yuki, Ibaraki|tr|Yūki|tt|Юки (шәһәр)|uk|Юкі (Ібаракі)|ur|یکی، اباراکی|uz|Yuki (Ibaraki)|vi|Yūki, Ibaraki|war|Yūki, Ibaraki|zh|結城市|zh_classical|結城市|zh_min_nan|Yuki-chhī|zh_yue|結城|qid=Q847569|lt=Yūki, Ibaraki}}, Ibaraki Prefecture, Japan
+| coordinates  = {{Coord|36|18|08|N|139|52|29|E|scale:30000_region:JP-08_type:landmark|display=inline,title|name=Takeda Suga Shrine}}
+| deities      = {{ill|Takenouchi no Sukune|ja|武渟川別命}}<br />{{ill|Susanoo-no-Mikoto|ja|須佐之男命|12=simple|13=User:Immanuelle/Susanoo|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}} (Tsushima Gozu Tennō)
+| type         = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (minor)<br />Former Prefectural Shrine
+| established  = Unknown (original Takeda Shrine)<br />1242 (original Suga Shrine)
+| architecture = {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Shinmei-zukuri}}
+| alternate_names = Tennōsha
+| festivals    = November 15
+}}
+
+'''Takeda Suga Shrine''' (健田須賀神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Yūki, Ibaraki|ar|يوكي (إيباراكي)|arz|يوكى (بلده فى ايباراكى)|azb|یوکی، ایباراکی|ce|Юки (гӀала)|ceb|Yūki-shi|de|Yūki|eo|Juki|es|Yūki (Ibaraki)|fa|یوکی، ایباراکی|fi|Yūki|fr|Yūki (Ibaraki)|gl|Yūki|id|Yūki, Ibaraki|it|Yūki (Ibaraki)|ja|結城市|ko|유키시|mg|Yūki|mzn|یوکی، ایباراکی|nl|Yuki|pl|Yūki (Ibaraki)|pt|Yuki (Ibaraki)|ro|Yūki|ru|Юки (город)|sv|Yūki, Ibaraki|tg|Юки|th|ยูกิ (จังหวัดอิบารากิ)|tl|Yuki, Ibaraki|tr|Yūki|tt|Юки (шәһәр)|uk|Юкі (Ібаракі)|ur|یکی، اباراکی|uz|Yuki (Ibaraki)|vi|Yūki, Ibaraki|war|Yūki, Ibaraki|zh|結城市|zh_classical|結城市|zh_min_nan|Yuki-chhī|zh_yue|結城|qid=Q847569|lt=Yūki, Ibaraki}}, Japan. The shrine is classified as a former Prefectural Shrine and was formed in the Meiji period by merging the {{ill|Takeda Shrine|ja|健田神社}} and {{ill|Suga Shrine|ja|須賀神社}}, with the former being a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}.
+
+The shrine enshrines {{ill|Takenouchi no Sukune|ja|武渟川別命}}, the deity of the original Takeda Shrine, and {{ill|Susanoo-no-Mikoto|ja|須佐之男命|12=simple|13=User:Immanuelle/Susanoo|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}, the deity of the original Suga Shrine.
+
+== History ==
+The '''Takeda Shrine''' has an unclear founding date but is said to have been established by the Yūki Province {{ill|Yūki clan|ja|結城国造}}, who enshrined their ancestral deity {{ill|Takenouchi no Sukune|ja|武渟川別命}}. Takenouchi no Sukune was one of the {{ill|Shido Shōgun|ja|四道将軍}}, credited with pacifying and developing eastern Japan. The shrine is listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} as "Kenda Shrine" under the 11 shrines of {{ill|Shimōsa Province|en|Shimōsa Province|qid=Q1053695|lt=Shimousa Province}}. In 1764 (Hōreki 14), the shrine was relocated to the grounds of {{ill|Jōkoku-ji|ja|乗国寺}}, a {{ill|Sōtō|en|Sōtō|qid=Q749085|lt=Sōtō Zen}} temple.
+
+The '''Suga Shrine''' was established in 1242 (Ninji 3) by the {{ill|Yūki clan|en|Yūki clan|qid=Q2975399|lt=Yūki clan}}, who brought its deity from the {{ill|Tsushima Shrine|en|Tsushima Shrine|qid=Q705136|lt=Tsushima Shrine}} in Owari Province. Initially called "Tennōsha," it became the collective shrine for Yūki district in 1343 (Kōei 2) under the Yūki clan. During the {{ill|Shinbutsu bunri|ja|神仏分離令|12=simple|13=User:Immanuelle/Shinbutsu bunri|ja_comment=jawiki redirects to QID FIXED|qid=Q1970535}} of the Meiji period, the name was changed from Tennōsha to Suga Shrine.
+
+In 1870 (Meiji 3), the Takeda Shrine separated from Jōkoku-ji and was merged with the Suga Shrine to form the '''Takeda Suga Shrine'''. It was Ranked as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} in 1873 (Meiji 6) and elevated to a Prefectural Shrine in 1930 (Shōwa 5).
+
+== External Links ==
+* [http://www.takedasugajinja.com/index.html Official website of Takeda Suga Shrine]
+* [http://joukokuji.web.fc2.com/cheng_guo_si/you_xu.html Official website of Jōkoku-ji]
+
+{{Shinto topics}}
+{{Ibaraki shrines}}
+{{Japanese-history-stub}}
+{{Pref-stub|Ibaraki Prefecture}}
+{{Shinto-stub}}
+{{Buddhism-stub}}
+
+{{Sōja shrines}}
+
+{{translated page|ja|健田須賀神社|version=83975897|comment=Imported full ja history}}
+
+{{wikidata link|Q11387225|ja|健田須賀神社|check_date=2026-05-17}}
 [[Category:Architecture of Yūki City]]
 [[Category:Former Prefectural Shrines in Ibaraki Prefecture]]
 [[Category:Ken-sha]]
 [[Category:Municipal History of Yuki]]
+[[Category:Pages with duplicated content]]
+[[Category:Shikinaisha in Shimōsa Province]]
 [[Category:Shikinaisha in Shimōsa Province]]
 [[Category:Shinto shrines]]
 [[Category:Shinto shrines in Ibaraki Prefecture]]
@@ -77,3 +134,4 @@ In 1870 (Meiji 3), Takeda Shrine was separated from Jōkoku-ji and merged with S
 [[Category:Yūki clan]]
 [[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]

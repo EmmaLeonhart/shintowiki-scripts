@@ -1,46 +1,128 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Saki_Tatenami_Kofun_group for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
 {{Infobox ancient site|location={{ill|Nara (city)|qid=Q169134}}|part_of={{ill|Gosashi Kofun|qid=Q5587136}}; {{ill|Hishage Kofun|qid=Q11330004}}; {{ill|Ichiniwa Kofun|qid=Q11480471}}; {{ill|Konabe Kofun|qid=Q11302279}}; {{ill|Maezuka Kofun|qid=Q11339900}}; {{ill|Saki Hyōtanyama Kofun|qid=Q11383488}}; {{ill|Saki Ishizukayama Kofun|qid=Q11383491}}; {{ill|Saki Misasagiyama Kofun|qid=Q11383490}}; {{ill|Saki Takatsuka Kofun|qid=Q27898021}}; {{ill|Shiozuka Kofun|qid=Q11428650}}; {{ill|Uwanabe Kofun|qid=Q11289362}}; {{ill|Yomondo Maruzuka Kofun|qid=Q11626337}}}}
-'''Saki Tatenami Kofun Group''' (佐紀盾列古墳群)<ref>Some sources read this as "Saki Tatami" ([http://www.kashikoken.jp/museum/yamatonoiseki/kofun/sakimisasagiyama.html Kashihara Archaeological Institute website], etc.).</ref> is a kofun group located in the northwestern part of {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, on the southwestern slopes of the {{ill|Nara Hills|ja|奈良丘陵|12=simple|13=User:Immanuelle/Nara Hills|ja_comment=jawiki link invalid}}, west of the {{ill|Saho River|ja|佐保川|12=simple|13=User:Immanuelle/Saho River|qq=}}. Constructed during the late Early to Middle {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}, it includes many royal tombs associated with the {{ill|Yamato Kingship|ja|ヤマト政権|12=simple|13=User:Immanuelle/Yamato Kingship|ja_comment=|2=ja|3=ヤマト王権|comment=changed title based on wikidata|qid=Q2658252}}.
+'''Saki Tatenami Kofun Group''' (佐紀盾列古墳群)<ref>Some sources read this as "Saki Tatami" ([http://www.kashikoken.jp/museum/yamatonoiseki/kofun/sakimisasagiyama.html Kashihara Archaeological Institute website], etc.).</ref> is a kofun group located in the northwestern part of {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, on the southwestern slopes of the {{ill|Nara Hills|ja|奈良丘陵|12=simple|13=User:Immanuelle/Nara Hills|ja_comment=jawiki link invalid}}, west of the {{ill|Saho River|ja|佐保川|12=simple|13=User:Immanuelle/Saho River}}. Constructed during the late Early to Middle {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}, it includes many royal tombs associated with the {{ill|Yamato Kingship|ja|ヤマト政権|12=simple|13=User:Immanuelle/Yamato Kingship|ja_comment=|2=ja|3=ヤマト王権|comment=changed title based on wikidata|qid=Q2658252}}.
+
 == Overview ==
-[[File:Sakitatenami kohungun aerial 2.jpg|thumb|300px|{{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} (top left), {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun|qq=}} (bottom center), {{ill|Saki Misasagiyama Kofun|ja|佐紀陵山古墳|12=simple|13=User:Immanuelle/Saki Ryoyama Kofun|13=User:Immanuelle/Saki Misasagiyama Kofun|qq=}} (bottom right), and {{ill|Saki Takatsuka Kofun|ja|佐紀高塚古墳|12=simple|13=User:Immanuelle/Saki Takatsuka Kofun|qq=}} (bottom) ({{National Air Photograph}})]]
-[[File:Sakitatenami kohungun aerial 1.jpg|thumb|300px|{{ill|Hishage Kofun|lt=Hishage Kofun|lt=Hishiage Kofun|ja|ヒシアゲ古墳|12=simple|13=User:Immanuelle/Hishiage Kofun|qq=}} (top left), {{ill|Konabe Kofun|ja|コナベ古墳|12=simple|13=User:Immanuelle/Konabe Kofun|qq=}} (bottom center), and {{ill|Uwanabe Kofun|ja|ウワナベ古墳|12=simple|13=User:Immanuelle/Uwanabe Kofun|qq=}} (bottom right) ({{National Air Photograph}})]]
+
+[[File:Sakitatenami kohungun aerial 2.jpg|thumb|300px|{{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} (top left), {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun}} (bottom center), {{ill|Saki Misasagiyama Kofun|ja|佐紀陵山古墳|12=simple|13=User:Immanuelle/Saki Ryoyama Kofun|13=User:Immanuelle/Saki Misasagiyama Kofun}} (bottom right), and {{ill|Saki Takatsuka Kofun|ja|佐紀高塚古墳|12=simple|13=User:Immanuelle/Saki Takatsuka Kofun}} (bottom) ({{National Air Photograph}})]]
+[[File:Sakitatenami kohungun aerial 1.jpg|thumb|300px|{{ill|Hishage Kofun|lt=Hishage Kofun|lt=Hishiage Kofun|ja|ヒシアゲ古墳|12=simple|13=User:Immanuelle/Hishiage Kofun}} (top left), {{ill|Konabe Kofun|ja|コナベ古墳|12=simple|13=User:Immanuelle/Konabe Kofun}} (bottom center), and {{ill|Uwanabe Kofun|ja|ウワナベ古墳|12=simple|13=User:Immanuelle/Uwanabe Kofun}} (bottom right) ({{National Air Photograph}})]]
 [[File:Yodo River and Yamato River Basins.svg|300px|thumb|right|Geographical relationships of the Saki Tatenami Kofun Group and other kofun groups]]
+
 The kofun group, situated on the southern slopes of the {{ill|Narayama Hills|ja|佐紀丘陵|12=simple|13=User:Immanuelle/Saki Hills|ja_comment=jawiki redirects to 平城山丘陵|comment=changed title based on wikidata|qid=Q11482305}}, was actively used during the late 4th to early 5th century, spanning the late Early to Middle Kofun period. The group includes three colossal keyhole-shaped kofun from the late Early period and four more from the Middle period. These are likely royal tombs of the early {{ill|Yamato Kingship|ja|ヤマト政権|12=simple|13=User:Immanuelle/Yamato Kingship|ja_comment=|2=ja|3=ヤマト王権|comment=changed title based on wikidata|qid=Q2658252}}.
-During this era, the Yamato Kingship transitioned from the {{ill|Makimuku Kofun Cluster|lt=Makimuku Kofun Cluster|lt=Makimuku Kofun Group|ja|纏向古墳群|12=simple|13=User:Immanuelle/Makimuku Kofun Group|ja_comment=jawiki redirects to 纒向古墳群}} and {{ill|Yanagimoto Kofun Cluster|lt=Yanagimoto Kofun Cluster|lt=Yamato-Yanagimoto Kofun Group|ja|柳本古墳群|12=simple|13=User:Immanuelle/Yamato-Yanagimoto Kofun Group|qq=}}, located in the southeastern Nara Basin, to the Saki Tatenami Kofun Group, which saw the construction of massive kofun. However, by the late Middle period in the late 5th century, the group declined.
+
+During this era, the Yamato Kingship transitioned from the {{ill|Makimuku Kofun Cluster|lt=Makimuku Kofun Cluster|lt=Makimuku Kofun Group|ja|纏向古墳群|12=simple|13=User:Immanuelle/Makimuku Kofun Group|ja_comment=jawiki redirects to 纒向古墳群}} and {{ill|Yanagimoto Kofun Cluster|lt=Yanagimoto Kofun Cluster|lt=Yamato-Yanagimoto Kofun Group|ja|柳本古墳群|12=simple|13=User:Immanuelle/Yamato-Yanagimoto Kofun Group}}, located in the southeastern Nara Basin, to the Saki Tatenami Kofun Group, which saw the construction of massive kofun. However, by the late Middle period in the late 5th century, the group declined.
+
 The kofun in this group are characterized by keyhole-shaped mounds without distinct paddle-shaped frontal sections.
+
 == Origin of the Name ==
-The name originates from the designations of two prominent kofun: {{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} and {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun|qq=}}, both identified by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}} as "Saki Tatenami Mausolea."<ref>For example, the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}'' describes Emperor Seimu's tomb as being "in Saki Tatami," while the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}'' specifies "buried in the Saki Tatenami Mausoleum."</ref>
+
+The name originates from the designations of two prominent kofun: {{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} and {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun}}, both identified by the {{ill|Imperial Household Agency|en|Imperial Household Agency|qid=Q1143602|lt=Imperial Household Agency}} as "Saki Tatenami Mausolea."<ref>For example, the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}'' describes Emperor Seimu's tomb as being "in Saki Tatami," while the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}'' specifies "buried in the Saki Tatenami Mausoleum."</ref>
+
 The term "Tatenami" (盾列, "shield alignment") may refer to the shield-like layout of the moats surrounding the keyhole-shaped kofun, which are aligned in a north-south direction with the circular rear mounds to the north and the rectangular frontal sections to the south. It likely developed as a descriptive term after the establishment of {{ill|Heijō-kyō|en|Heijō-kyō|qid=Q862509|lt=Heijō-kyō}}.
+
 Some institutions, such as the {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}}, use the historical name "Saki Kofun Group."
+
 == Major Kofun ==
+
 ; Northwestern Area (Yamamori-cho)
 * {{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} (identified as the tomb of {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}, 276 m, late Early Kofun period)
+
 ; Western Area (Yamamori-cho, Saki-cho)
-* {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun|qq=}} (identified as the tomb of {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Emperor Seimu}}, 220 m, late Early Kofun period)
-* {{ill|Saki Misasagiyama Kofun|ja|佐紀陵山古墳|12=simple|13=User:Immanuelle/Saki Ryoyama Kofun|13=User:Immanuelle/Saki Misasagiyama Kofun|qq=}} (identified as the tomb of {{ill|Hibasu-hime|ja|日葉酢媛命|12=simple|13=User:Immanuelle/Hibasu-hime|13=User:Immanuelle/Hibasu-hime|qq=}}, consort of Emperor Suinin, 210 m, late Early Kofun period)
-* {{ill|Saki Takatsuka Kofun|ja|佐紀高塚古墳|12=simple|13=User:Immanuelle/Saki Takatsuka Kofun|qq=}} (associated with {{ill|Empress Kōken|ja|称徳天皇|12=simple|13=User:Immanuelle/Empress Kōken|ja_comment=jawiki redirects to 孝謙天皇|comment=changed title based on wikidata|qid=Q232955}}, direction of frontal section unknown)
+* {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun}} (identified as the tomb of {{ill|Emperor Seimu|en|Emperor Seimu|qid=Q316672|lt=Emperor Seimu}}, 220 m, late Early Kofun period)
+* {{ill|Saki Misasagiyama Kofun|ja|佐紀陵山古墳|12=simple|13=User:Immanuelle/Saki Ryoyama Kofun|13=User:Immanuelle/Saki Misasagiyama Kofun}} (identified as the tomb of {{ill|Hibasu-hime|ja|日葉酢媛命|12=simple|13=User:Immanuelle/Hibasu-hime|13=User:Immanuelle/Hibasu-hime}}, consort of Emperor Suinin, 210 m, late Early Kofun period)
+* {{ill|Saki Takatsuka Kofun|ja|佐紀高塚古墳|12=simple|13=User:Immanuelle/Saki Takatsuka Kofun}} (associated with {{ill|Empress Kōken|ja|称徳天皇|12=simple|13=User:Immanuelle/Empress Kōken|ja_comment=jawiki redirects to 孝謙天皇|comment=changed title based on wikidata|qid=Q232955}}, direction of frontal section unknown)
+
 ; Eastern Area (Saki-cho, Hokkeji-cho)
-* {{ill|Hishage Kofun|lt=Hishage Kofun|lt=Hishiage Kofun|ja|ヒシアゲ古墳|12=simple|13=User:Immanuelle/Hishiage Kofun|qq=}} (identified as the tomb of {{ill|Princess Iwa|ja|磐之媛|12=simple|13=User:Immanuelle/Princess Iwa|ja_comment=jawiki redirects to 磐之媛命|comment=changed title based on wikidata|qid=Q1066593}}, 218 m, Middle Kofun period)
-* {{ill|Konabe Kofun|ja|コナベ古墳|12=simple|13=User:Immanuelle/Konabe Kofun|qq=}} (204 m, Middle Kofun period)
-* {{ill|Uwanabe Kofun|ja|ウワナベ古墳|12=simple|13=User:Immanuelle/Uwanabe Kofun|qq=}} (265 m, Middle Kofun period)
+* {{ill|Hishage Kofun|lt=Hishage Kofun|lt=Hishiage Kofun|ja|ヒシアゲ古墳|12=simple|13=User:Immanuelle/Hishiage Kofun}} (identified as the tomb of {{ill|Princess Iwa|ja|磐之媛|12=simple|13=User:Immanuelle/Princess Iwa|ja_comment=jawiki redirects to 磐之媛命|comment=changed title based on wikidata|qid=Q1066593}}, 218 m, Middle Kofun period)
+* {{ill|Konabe Kofun|ja|コナベ古墳|12=simple|13=User:Immanuelle/Konabe Kofun}} (204 m, Middle Kofun period)
+* {{ill|Uwanabe Kofun|ja|ウワナベ古墳|12=simple|13=User:Immanuelle/Uwanabe Kofun}} (265 m, Middle Kofun period)
+
 == Related Sites ==
 * {{ill|Mozu Tombs|en|Mozu Tombs|qid=Q4250584|lt=Mozu Tombs}}
 * {{ill|Furuichi Kofun Cluster|en|Furuichi Kofun Cluster|qid=Q4250076|lt=Furuichi Kofun Cluster}}
-* {{ill|Ōyamato Kofun Cluster|ja|大和古墳群|12=simple|13=User:Immanuelle/Ōyamato Kofun Cluster|13=User:Immanuelle/Ōyamato Kofun Cluster|qq=}}
-* {{ill|List of large kofun in Japan|ja|日本の大規模古墳一覧|12=simple|13=User:Immanuelle/List of large kofun in Japan|qq=}}
+* {{ill|Ōyamato Kofun Cluster|ja|大和古墳群|12=simple|13=User:Immanuelle/Ōyamato Kofun Cluster|13=User:Immanuelle/Ōyamato Kofun Cluster}}
+* {{ill|List of large kofun in Japan|ja|日本の大規模古墳一覧|12=simple|13=User:Immanuelle/List of large kofun in Japan}}
+
 == References ==
 {{Reflist}}
+
 == External Links ==
 * [http://www.kashikoken.jp/iseki/iseki_sanpo/course07.html] - {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}}
 * [http://www.oct.zaq.ne.jp/kashiko_yushikai/reikai/reikai0602.htm "Walking Through the Saki Kofun Group"] - 2005 event photos and diagrams
+
 {{Kofun navbar}}
+
 {{translated page|ja|佐紀盾列古墳群|version=103999491|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+'''Saki Tatenami Kofun Group''' (佐紀盾列古墳群, *Saki Tatenami Kofungun*)<ref>Some references read it as "Saki Tatanami" (e.g., [http://www.kashikoken.jp/museum/yamatonoiseki/kofun/sakimisasagiyama.html Kashihara Archaeological Institute website]).</ref> is a kofun (ancient Kofun) group located in the northwest area of {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara}}, on the southwestern slopes of the Nara Hills along the west bank of the Saho River. It includes many royal tombs from the late {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}, managed by the {{ill|Yamato Kingship|ja|ヤマト政権|12=simple|13=User:Immanuelle/Yamato Kingship|ja_comment=|2=ja|3=ヤマト王権|comment=changed title based on wikidata|qid=Q2658252}}. The group is also referred to as the '''Saki Kofun Group'''.
+
+== Overview ==
+[[File:Sakitatenami kohungun aerial 2.jpg|thumb|300px|[[Gosashi Kofun]] (top left), [[Saki Ishizukayama Kofun]] (bottom center), [[Saki Misasagiyama Kofun]] (bottom right), and [[Saki Takatsuka Kofun]] (bottom) ({{国土航空写真}})]]
+[[File:Sakitatenami kohungun aerial 1.jpg|thumb|300px|[[Hishage Kofun]] (top left), [[Konabe Kofun]] (bottom center), and [[Uwanabe Kofun]] (bottom right) ({{国土航空写真}})]]
+[[File:Yodo River and Yamato River Basins.svg|300px|thumb|right|Saki Tatenami Kofun Group and other kofun groups in the region]]
+The kofun in this group were built along the southern slopes of the {{ill|Narayama Hills|ja|佐紀丘陵|12=simple|13=User:Immanuelle/Saki Hills|ja_comment=jawiki redirects to 平城山丘陵|comment=changed title based on wikidata|qid=Q11482305}} from the latter half of the early Kofun period through the middle Kofun period (late 4th century to early 5th century). The group contains numerous large {{ill|Zenpō-kōen-fun|en|Zenpō-kōen-fun|qid=Q11268718|lt=Zenpō-kōen-fun}} (keyhole-shaped Kofuns), including three from the late early period and four from the middle period. These mounds are likely the royal tombs of the early Yamato Kingship.
+
+While earlier Kofuns, such as those in the {{ill|Makimuku Kofun Cluster|lt=Makimuku Kofun Cluster|lt=Makimuku Kofun Group|ja|纏向古墳群|12=simple|13=User:Immanuelle/Makimuku Kofun Group|ja_comment=jawiki redirects to 纒向古墳群}} and the {{ill|Yanagimoto Kofun Cluster|lt=Yanagimoto Kofun Cluster|lt=Yamato-Yanagimoto Kofun Group|ja|大和・柳本古墳群|12=simple|13=User:Immanuelle/Yamato-Yanagimoto Kofun Group|ja_comment=jawiki redirects to 大和古墳群}}, are associated with the establishment of the Yamato Kingship, they declined by the early 5th century. During the late 4th to early 5th centuries, this kofun group became the center for building large royal tombs. However, by the late 5th century, the group's prominence diminished.
+
+The kofun in this group exhibit unique characteristics, such as keyhole-shaped mounds with less pronounced plectrum-like front sections.
+
+== Etymology ==
+The name "Saki Tatenami" comes from the designation of two representative tombs, "Gosashi Kofun" and "Saki Ishizukayama Kofun," both identified as "狭城盾列陵" (*Saki Tatenami no Misasagi*) in historical records.<ref>The *Kojiki* records the tomb of Emperor Seimu as being "at Saki's Tatanami," while the *Nihon Shoki* refers to it as "at Saki's Tatenami." Similarly, the tomb of Empress Jingū is recorded in the *Nihon Shoki* as being at "Saki's Tatenami no Misasagi."</ref>
+
+The term "Tate-nami" (盾列, shield row) is thought to describe the shield-shaped layout of the mounds, with parallel orientations: the rear circular sections (kōen) are to the north, and the frontal rectangular sections (zenpō) are to the south. This name likely emerged during or after the Nara period.
+
+The {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}} uses the more simplified term "Saki Kofun Group," based solely on the geographical area.
+
+== Notable Kofun ==
+
+=== Northwestern Section (Sanryō-chō) ===
+* {{ill|Gosashi Kofun|ja|五社神古墳|2=ja|3=五社神古墳|4=fr|5=Tombe de Gosashi|6=zh|7=五社神古墳|12=simple|13=User:Immanuelle/Gosashi Kofun|13=User:Immanuelle/Gosashi Kofun|comment=enwiki is a redirect}} (276 meters, late early period, attributed to Empress Jingū)  
+  Researchers were granted partial access to the first tier of the mound in 2008.
+
+=== Western Section (Sanryō-chō/Saki-chō) ===
+* {{ill|Saki Ishizukayama Kofun|ja|佐紀石塚山古墳|12=simple|13=User:Immanuelle/Saki Ishizukayama Kofun|13=User:Immanuelle/Saki Ishizukayama Kofun}} (220 meters, late early period, attributed to Emperor Seimu)  
+* {{ill|Saki Misasagiyama Kofun|ja|佐紀陵山古墳|12=simple|13=User:Immanuelle/Saki Ryōyama Kofun|13=User:Immanuelle/Saki Misasagiyama Kofun}} (210 meters, late early period, attributed to Empress Hibasu-hime)  
+  Stone structures and paving were identified in the rear circular mound.  
+* Saki Takatsuka Kofun  
+* {{ill|Saki Hyōtanyama Kofun|en|Saki Hyōtanyama Kofun|qid=Q11383488|lt=Saki Hyōtan-yama Kofun}} (96 meters, designated as a National Historic Site in 1971)
+
+=== Eastern Section (Saki-chō/Hokkera-chō) ===
+* {{ill|Hishage Kofun|ja|ヒシアゲ古墳|12=simple|13=User:Immanuelle/Hishage Kofun}} (218 meters, middle period, attributed to Empress Iwanohime)  
+* {{ill|Konabe Kofun|ja|コナベ古墳|12=simple|13=User:Immanuelle/Konabe Kofun}} (204 meters, middle period)  
+* {{ill|Uwanabe Kofun|ja|ウワナベ古墳|12=simple|13=User:Immanuelle/Uwanabe Kofun}} (265 meters, middle period)
+
+=== Northern Section (Utahime-chō) ===
+* {{ill|Shiozuka Kofun|en|Shiozuka Kofun|qid=Q11428650|lt=Shiotsuka Kofun}} (109 meters, middle period)  
+  Designated as a National Historic Site in 1975.  
+
+=== Related Kofun ===
+* {{ill|Hōraiyama Kofun|ja|宝来山古墳|12=simple|13=User:Immanuelle/Hōraisan Kofun|13=User:Immanuelle/Hōraiyama Kofun}} (227 meters, attributed to Emperor Suinin)  
+  Although geographically outside the Saki area, this kofun is administratively grouped with the Saki Tatenami Kofun Group by the Imperial Household Agency.
+== See Also ==
+* {{ill|Mozu Tombs|en|Mozu Tombs|qid=Q4250584|lt=Mozu Tombs}}  
+* {{ill|Furuichi Kofun Cluster|en|Furuichi Kofun Cluster|qid=Q4250076|lt=Furuichi Kofun Group}}  
+* {{ill|Ōyamato Kofun Cluster|ja|大和古墳群|12=simple|13=User:Immanuelle/Ōyamato Kofun Cluster|13=User:Immanuelle/Ōyamato Kofun Cluster}}  
+* [[List of large kofun in Japan]]
+
+== External Links ==
+* [http://www.kashikoken.jp/iseki/iseki_sanpo/course07.html Saki Kofun Group and Matsubayashi-en] - Kashihara Archaeological Institute  
+* [http://www.oct.zaq.ne.jp/kashiko_yushikai/reikai/reikai0602.htm February 2005 "Saki Kofun Group Walk" by Kashihara Archaeological Institute Friends Association] (with photos and diagrams)
+
+{{Japanese-history-stub}}
+
+{{Kofun navbar}}
+
+{{translated page|ja|佐紀盾列古墳群|version=103999491|comment=Imported full ja history}}
+
+{{wikidata link|Q11383489|ja|佐紀盾列古墳群|check_date=2026-05-09}}
 [[Category:Historic Saho-Saki Road]]
 [[Category:History of Nara]]
 [[Category:kofun clusters]]
 [[Category:Kofun clusters]]
 [[Category:Kofun of Nara prefecture]]
+[[Category:Pages with duplicated content]]
 [[Category:Saki Tatenami Kofun group]]
 [[Category:Wikidata no short description]]
 [[Category:Ōyamato Kofun Cluster]]

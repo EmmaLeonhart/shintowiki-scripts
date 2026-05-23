@@ -1,5 +1,7 @@
 <!-- shrine-disambig-page: refresh wikidata list -->
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Seibo_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
+
+
 {{Infobox religious building|
 | name = Shoumogu
 | religious_affiliation = [[Shinto]]
@@ -13,24 +15,42 @@
 | alternate_name = 
 | Pilgrimage = Iki Province’s Seven Great Shrines
 | festival = October 14
+| location = {{ill|Iki, Nagasaki|qid=Q861519}}
+| architecture_style = {{ill|Nagare-zukuri|qid=Q210684}}
 }}
+
 [[File:Shoumogu Torii Gate.JPG|thumb|right|250px|Torii]]
 [[File:Shoumogu West gate.JPG|thumb|right|250px|West Gate]]
 [[File:Shoumogu Honden.JPG|thumb|right|250px|Main Hall<br /><small>The sides are shielded from rain and wind; only the roof is exposed.</small>]]
 [[File:Bateiseki (Iki).JPG|thumb|right|250px|Horseshoe Stone<br /><small>Said to bear the hoofprint of Empress Jingū’s horse.</small>]]
-'''Shoumogu''' (聖母宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City}}, Nagasaki Prefecture, in Katsumoto Town. Listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}, it is considered a potential site of the Shikinaisha “Nakatsu Shrine.” However, another shrine currently bearing that name exists separately ({{ill|Nakatsu Shrine (Iki)|ja|中津神社 (壱岐市)|12=simple|13=User:Immanuelle/Nakatsu Shrine (Iki)|ja_comment=jawiki link invalid}}).
+
+'''Shoumogu''' (聖母宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City}}, Nagasaki Prefecture, in Katsumoto Town. Listed in the {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}, it is considered a potential site of the Shikinaisha “Nakatsu Shrine.” However, another shrine currently bearing that name exists separately ({{ill|Nakatsu Shrine (Iki)|ja|中津神社 (壱岐市)|12=simple|13=User:Immanuelle/Nakatsu Shrine (Iki)|ja_comment=jawiki link invalid}}).
+
 == Enshrined Deities ==
+The shrine honors the following deities:
+* {{ill|Empress Jingū|ja|息長足姫尊|12=simple|13=User:Immanuelle/Okinaga-Tarashihime no Mikoto|ja_comment=jawiki redirects to 神功皇后|comment=changed title based on wikidata|qid=Q232803}} (Empress Jingū)
+* {{ill|Emperor Chūai|ja|足仲彦尊|12=simple|13=User:Immanuelle/Tarashinakatsuhiko no Mikoto|ja_comment=jawiki redirects to 仲哀天皇|comment=changed title based on wikidata|qid=Q179971}} (Emperor Chūai)
+* {{ill|Uwatsutsunoo no Mikoto|ja|上筒男尊|12=simple|13=User:Immanuelle/Uwatsutsunoo no Mikoto|ja_comment=jawiki link invalid}}, {{ill|Nakatsutsunoo no Mikoto|ja|仲筒男尊|12=simple|13=User:Immanuelle/Nakatsutsunoo no Mikoto|ja_comment=jawiki link invalid}}, and {{ill|Sokotsutsunoo no Mikoto|ja|底筒男尊|12=simple|13=User:Immanuelle/Sokotsutsunoo no Mikoto|ja_comment=jawiki link invalid}} (collectively known as {{ill|Sumiyoshi sanjin|lt=Sumiyoshi sanjin|lt=Sumiyoshi Sanjin|ja|住吉大神|12=simple|13=User:Immanuelle/Sumiyoshi Sanjin|ja_comment=jawiki redirects to 住吉三神}})
+
 The shrine is associated with Empress Jingū’s {{ill|Three Han Campaign|ja|三韓征伐|12=simple|13=User:Immanuelle/Sankan Seibatsu|comment=changed title based on wikidata|qid=Q11249435}} (conquest of the Three Han States). Known as a deity of victory due to her triumph, she is also venerated as a deity of safe childbirth, as she gave birth to Emperor Ōjin after her victorious return.
+
 == History ==
 In the 9th year of Emperor Chūai’s reign (possibly 200 CE), Empress Jingū constructed a temporary palace ({{ill|kinzai|ja|行宮|12=simple|13=User:Immanuelle/Angū|comment=changed title based on wikidata|qid=Q11626047}}) in Iki while awaiting favorable winds for her campaign. The area was named “Kazamoto” (Wind Origin) after the northward winds blew. Upon her victorious return in December of the same year, the area was renamed “Katsumoto” (Victory Origin). According to legend, 101,500 enemy heads were buried here.
+
 The palace fell into disuse until a miraculous event involving glowing objects from the sea led to the offering of mirrors and the enshrinement of Empress Jingū. In 717 CE (Yōrō 1), the shrine was formally established, and structures were built to pray for national protection. Over time, it gained prominence as one of Iki’s Seven Great Shrines and the second shrine of Iki Province. It also maintained strong connections to {{ill|Kashii-gū|en|Kashii-gū|qid=Q631373|lt=Kashii Shrine}} in Fukuoka.
+
 Despite historical disputes regarding its status as a Shikinaisha, many researchers and reports, such as the {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|qq=draft調査報告|12=simple|13=User:Immanuelle/Shikinaisha Chōsa Hōkoku|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, suggest that Shoumogu is the original Nakatsu Shrine, while the current Nakatsu Shrine represents a later branch.
+
 The shrine’s name “Seibo” (Holy Mother) and its location in Nagasaki Prefecture often lead to misconceptions about connections with Christianity, but it is entirely unrelated.
+
 == Festivals ==
 The annual festival spans five days and is Iki’s largest event. It includes the Goshinkō-sen, a boat procession listed as a {{ill|Intangible Folk Cultural Properties Requiring Documentation|lt=Intangible Folk Cultural Properties Requiring Documentation|lt=Selected Intangible Folk Cultural Property|ja|選択無形民俗文化財|12=simple|13=User:Immanuelle/Selected Intangible Folk Cultural Property|ja_comment=jawiki redirects to 記録作成等の措置を講ずべき無形の民俗文化財}}, which predicts harvests and catches for the coming year. On October 14, the final day, events such as the Daikagura (Great Kagura Dance) of Iki and a costume parade are held. The Katsumoto Port Festival on October 15 is often considered part of the shrine’s festivities, extending the celebration to six days.
+
 == Grounds ==
 The shrine grounds feature a horseshoe stone believed to bear the hoofprint of Empress Jingū’s horse during the Three Han campaign. It is also historically significant as the landing site of the Mongol invasions during the {{ill|Battle of Bun'ei|en|Battle of Bun'ei|qid=Q2237386|lt=Battle of Bun’ei}}.
+
 The main gate was donated by {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843|lt=Katō Kiyomasa}} during Toyotomi Hideyoshi’s Korean campaigns. The surrounding stone walls were constructed under Katō’s orders as his troops awaited favorable winds, reflecting the shrine’s deep ties to maritime events.
+
 == Cultural Properties ==
 <small>(Dates of designation in parentheses)</small>
 === National Selected Intangible Folk Cultural Property ===
@@ -39,24 +59,40 @@ The main gate was donated by {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843
 * Main Hall, West Gate, and South Gate (Structures, February 25, 2004)
 * Tea Jar (Craftwork, February 4, 1972)
 : A black-glazed four-eared jar from {{ill|Karatsu ware|en|Karatsu ware|qid=Q6368803|lt=Karatsu ware}} bearing the year “1592,” the oldest inscribed artifact of Karatsu ware.
+
 == Transportation ==
 * {{ill|Iki Kōtsū|ja|壱岐交通|12=simple|13=User:Immanuelle/Iki Kōtsū Bus|comment=changed title based on wikidata|qid=Q11429582}} Gōnoura-Katsumoto Line, Nakao Bus Stop
+
 == Nearby ==
 * Katsumoto Port
 * {{ill|Iki City Katsumoto Elementary School|ja|壱岐市立勝本小学校|12=simple|13=User:Immanuelle/Iki City Katsumoto Elementary School|comment=changed title based on wikidata|qid=Q11429593}}
 * {{ill|Katsumoto Castle|en|Katsumoto Castle|qid=Q11400349|lt=Katsumoto Castle}} ruins
+
 == Further Reading ==
 * Shirai Eiji and Toki Masanori, ''Jinja Jiten'', Tokyo-do Shuppan, 1979, p. 172
+
 == External Links ==
 * {{Wayback|url=http://www4.ocn.ne.jp/~syomogu/ |title=Shoumogu Official Website |date=20010417092136}}
 * [http://www.pref.nagasaki.jp/bunkadb/index.php/view/502 Main Hall, West Gate, and South Gate of Shoumogu] and [http://www.pref.nagasaki.jp/bunkadb/index.php/view/503 Tea Jar of Shoumogu] (Nagasaki Prefecture Cultural Heritage)
+
 {{commonscat|Shoumogu}}
 {{Shinto-stub}}
+
 {{disambiguation}}
+
 <!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
+
 * {{ill|Shoumogu (Q11611081)|lt=Shoumogu|qid=Q11611081}} — Iki Island
 <!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|聖母宮|version=89510503|comment=Imported full ja history}}
+
+{{Commons category|Shoumogu}}
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+[[Category:Pages with duplicated content]]
+
+'''Seibo Shrine (Q11611081)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Iki Island]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
@@ -64,10 +100,8 @@ The main gate was donated by {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843
 |-
 | RONSHA || {{ill|Seibo Shrine|lt=Shoumogu|ja|聖母宮|commons|Category:Shoumogu|qid=Q11611081}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || {{ill|Ni-no-Miya|qid=Q134917533|lt=Ni-no-Miya}} || {{ill|Nakatsu Shrine (Q135041504)|lt=Nakatsu Shrine|qid=Q135041504}}; {{ill|Nakatsu Shrine (Q135041504)|lt=Nakatsu Shrine|qid=Q135041504}} || {{coord|33.855171|129.690719|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183344 DB]
 |}
-
-{{translated page|ja|聖母宮|version=89510503|comment=Imported full ja history}}
-{{Commons category|Shoumogu}}
-
+{{wikidata link|Q11611081|da|d:Q11611081|co|commons:Category:Shoumogu|ja|聖母宮|check_date=2026-05-09}}==Notes==
+<references group="lower-alpha"/>
 [[Category:All disambiguation pages]]
 [[Category:Buildings and structures in Iki, Nagasaki]]
 [[Category:Empress Jingū]]
@@ -76,6 +110,7 @@ The main gate was donated by {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843
 [[Category:History of Iki City]]
 [[Category:Iki Province]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Myōjin Taisha]]
 [[Category:Shikinaisha in Iki Island]]
 [[Category:Shinto shrines in Nagasaki Prefecture]]
@@ -83,5 +118,7 @@ The main gate was donated by {{ill|Katō Kiyomasa|en|Katō Kiyomasa|qid=Q1069843
 [[Category:shrine disambiguations]]
 [[Category:Shrines dedicated to Empress Jingū]]
 [[Category:Wikidata has short description]]
+[[Category:Myōjin Taisha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Independently git synced pages]]

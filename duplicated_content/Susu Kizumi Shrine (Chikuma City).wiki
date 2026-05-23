@@ -1,5 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Susu_Kizumi_Shrine_%28Chikuma_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25623742448|time triggered pipeline]] -->
-{{Infobox religious building
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
 |name=Susuki Mizu Shrine
 | religious_affiliation = [[Shinto]]
 |image={{image requested|cat=Chikuma City}}
@@ -11,17 +12,25 @@
 |festival=April 15
 |prefecture={{ill|Chikuma, Nagano|qid=Q179757}}
 }}
+
 '''Susuki Mizu Shrine''' (須須岐水神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Chikuma City]], {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}. It is identified as the {{ill|Shikigesha|ja|式外社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Shikigesha|ja_comment=jawiki redirects to 延喜式神名帳|comment=enwiki is a redirect}} Susuki Mizu Shrine, with its {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}} classification as a former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+
 == Overview ==
-According to shrine tradition, it was founded in the second year of the [[Hakuhō era]] (673 CE). Initially known as {{ill|Hōri Shrine|ja|祝神社|12=simple|13=User:Immanuelle/Hōri Shrine|ja_comment=jawiki link invalid}}, it later enshrined {{ill|Sannō Gongen|ja|山王権現|12=simple|13=User:Immanuelle/Sannō Gongen|comment=enwiki is a redirect}} from {{ill|Hiyoshi Taisha|en|Hiyoshi Taisha|qid=Q656451|lt=Hiyoshi Taisha}} at the behest of {{ill|Kanasashi Toneri Masanaga|ja|金刺舎人正長|12=simple|13=User:Immanuelle/Kanasashi Toneri Masanaga|ja_comment=jawiki link invalid}}, a {{ill|Gunji|ja|郡司|12=simple|13=User:Immanuelle/Gunji|qq=}} of {{ill|Hanishina District, Nagano|en|Hanishina District, Nagano|qid=Q726661|lt=Hanishina District}}, after flooding from the {{ill|Shinano River|ja|千曲川|12=simple|13=User:Immanuelle/Chikuma River|ja_comment=jawiki redirects to 信濃川|comment=changed title based on wikidata|qid=Q734455}} during the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan era}}. In later periods, it gained the patronage of the {{ill|Sanada clan|en|Sanada clan|qid=Q1002844|lt=Sanada clan}}, receiving land grants of 300 koku and festival contributions. 
-Rebuilt in 1851 during the {{ill|Kaei|en|Kaei|qid=Q1146125|lt=Kaei era}} under the guidance of {{ill|Tatekawa Washirō Tomimasa|ja|立川和四郎富昌|12=simple|13=User:Immanuelle/Tatekawa Washirō Tomimasa|ja_comment=jawiki link invalid}}, the shrine was renamed from "Sannō Daigongen Palace" to "Susuki Mizu Shrine" by the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|12=simple|13=User:Immanuelle/Yoshida clan|qq=}} in 1781 ({{ill|Tenmei|en|Tenmei|qid=Q1194121|lt=Tenmei}} 1). The shrine formerly held rituals involving the exchange of {{ill|Mikoshi|en|Mikoshi|qid=Q979940|lt=Mikoshi}} with {{ill|Amamiya Shrine|ja|雨宮の坐日吉神社|12=simple|13=User:Immanuelle/Amamiya Shrine|ja_comment=jawiki link invalid}} but discontinued this in 1872 (Meiji 5).
+
+According to shrine tradition, it was founded in the second year of the [[Hakuhō era]] (673 CE). Initially known as {{ill|Hōri Shrine|ja|祝神社|12=simple|13=User:Immanuelle/Hōri Shrine|ja_comment=jawiki link invalid}}, it later enshrined {{ill|Sannō Gongen|ja|山王権現|12=simple|13=User:Immanuelle/Sannō Gongen|comment=enwiki is a redirect}} from {{ill|Hiyoshi Taisha|en|Hiyoshi Taisha|qid=Q656451|lt=Hiyoshi Taisha}} at the behest of {{ill|Kanasashi Toneri Masanaga|ja|金刺舎人正長|12=simple|13=User:Immanuelle/Kanasashi Toneri Masanaga|ja_comment=jawiki link invalid}}, a {{ill|Gunji|ja|郡司|12=simple|13=User:Immanuelle/Gunji}} of {{ill|Hanishina District, Nagano|en|Hanishina District, Nagano|qid=Q726661|lt=Hanishina District}}, after flooding from the {{ill|Shinano River|ja|千曲川|12=simple|13=User:Immanuelle/Chikuma River|ja_comment=jawiki redirects to 信濃川|comment=changed title based on wikidata|qid=Q734455}} during the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan era}}. In later periods, it gained the patronage of the {{ill|Sanada clan|en|Sanada clan|qid=Q1002844|lt=Sanada clan}}, receiving land grants of 300 koku and festival contributions. 
+
+Rebuilt in 1851 during the {{ill|Kaei|en|Kaei|qid=Q1146125|lt=Kaei era}} under the guidance of {{ill|Tatekawa Washirō Tomimasa|ja|立川和四郎富昌|12=simple|13=User:Immanuelle/Tatekawa Washirō Tomimasa|ja_comment=jawiki link invalid}}, the shrine was renamed from "Sannō Daigongen Palace" to "Susuki Mizu Shrine" by the {{ill|Urabe clan|ja|吉田家|2=ja|3=卜部氏|lt=Yoshida family|comment=Might be more of a redirect with potential but this is strictly potential right now|12=simple|13=User:Immanuelle/Yoshida clan}} in 1781 ({{ill|Tenmei|en|Tenmei|qid=Q1194121|lt=Tenmei}} 1). The shrine formerly held rituals involving the exchange of {{ill|Mikoshi|en|Mikoshi|qid=Q979940|lt=Mikoshi}} with {{ill|Amamiya Shrine|ja|雨宮の坐日吉神社|12=simple|13=User:Immanuelle/Amamiya Shrine|ja_comment=jawiki link invalid}} but discontinued this in 1872 (Meiji 5).
+
 The shrine grounds span approximately 27 ken (east to west) and 34 ken (north to south). Revered as a {{ill|Suijin|en|Suijin|qid=Q3137449|lt=water god}}, it has long served as the guardian deity of the Yashiro Irrigation Weir.
+
 == Enshrined Deities ==
+
 === Main Deities ===
 * {{ill|Ōkuninushi|ja|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi no Mikoto|qid=Q276944|comment=changed title based on wikidata|qid=Q276944}} (Main deity)
 * {{ill|Ikumusubi no Mikoto|ja|生魂命|12=simple|13=User:Immanuelle/Ikumusubi no Mikoto|ja_comment=jawiki link invalid}}
 * {{ill|Kotoshironushi-no-Mikoto|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi no Mikoto|ja_comment=jawiki redirects to 事代主|comment=changed title based on wikidata|qid=Q8009611}}
 * {{ill|Mizuhanome|lt=Mizuhanome no Mikoto|ja|弥都波能売神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}}
+
 === Subordinate Deities ===
 * {{ill|Toyotama-hime|ja|豊玉姫命|12=simple|13=User:Immanuelle/Toyotamahime no Mikoto|ja_comment=jawiki redirects to トヨタマヒメ|comment=changed title based on wikidata|qid=Q2329261}}
 * {{ill|Hayakitsuhiko and Hayakitsuhime|ja|速秋津彦命|12=simple|13=User:Immanuelle/Hayaki Tsuhiko no Mikoto|ja_comment=jawiki redirects to ハヤアキツヒコ・ハヤアキツヒメ|comment=changed title based on wikidata|qid=Q11326733}}
@@ -29,25 +38,98 @@ The shrine grounds span approximately 27 ken (east to west) and 34 ken (north to
 * {{ill|Sukunabikona|ja|少彦名命|12=simple|13=User:Immanuelle/Sukunahikona no Mikoto|13=User:Immanuelle/Sukunabikona|qid=Q3275687}}
 * {{ill|Ukemochi|ja|保食命|12=simple|13=User:Immanuelle/Ukemochi no Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q2280323|comment=changed title based on wikidata|qid=Q2280323}}
 * {{ill|Kuni-no-Tokotachi|ja|国常立命|12=simple|13=User:Immanuelle/Kuninotokotachi no Mikoto|13=User:Immanuelle/Kuni-no-Tokotachi|ja_comment=jawiki redirects to 国之常立神}}
+
 == Auxiliary Shrines ==
 * '''{{ill|Hōri Shrine|ja|祝神社|12=simple|13=User:Immanuelle/Hōri Shrine|ja_comment=jawiki link invalid}}'''
 ** Enshrines {{ill|Take Momotake no Mikoto|ja|武五百建命|12=simple|13=User:Immanuelle/Take Iho Takeno Mikoto|comment=changed title based on wikidata|qid=Q87863507}} (a {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province}} local ruler buried at {{ill|Hanishina Kofun group|ja|森将軍塚古墳|12=simple|13=User:Immanuelle/Mori Shōgunzuka Kofun|ja_comment=jawiki redirects to 埴科古墳群|comment=changed title based on wikidata|qid=Q6912108}}), {{ill|Takeminakata|ja|建御名方富命|12=simple|13=User:Immanuelle/Takeminakata Tomi no Mikoto|qid=Q9150391|comment=changed title based on wikidata|qid=Q9150391}} (an ancient name of {{ill|Suwa Shrine|ja|諏訪上社|12=simple|13=User:Immanuelle/Suwa Shrine|ja_comment=jawiki link invalid}}’s deity), and {{ill|Minakata Tomi no Mikoto|ja|南方刀美命|12=simple|13=User:Immanuelle/Minakata Tomi no Mikoto|ja_comment=jawiki link invalid}} (an ancient name of {{ill|Suwa Shrine|ja|諏訪下社|12=simple|13=User:Immanuelle/Suwa Shrine|ja_comment=jawiki link invalid}}’s deity).
 * {{ill|Takachi Daijin Shrine|ja|高市大神社|12=simple|13=User:Immanuelle/Takachi Daijin Shrine|ja_comment=jawiki link invalid}}
 * {{ill|Takami Shrine|ja|高見社|12=simple|13=User:Immanuelle/Takami Shrine|ja_comment=jawiki link invalid}}
 * {{ill|Sericulture Shrine|ja|養蚕神社|12=simple|13=User:Immanuelle/Sericulture Shrine|ja_comment=jawiki link invalid}}
+
 == Access ==
 * Approximately 500 meters north of {{ill|Yashiro Station|en|Yashiro Station|qid=Q8192332|lt=Yashiro Station}} on the {{ill|Shinano Railway Line|en|Shinano Railway Line|qid=Q847355|lt=Shinano Railway Line}}
+
 == References ==
 * {{ill|Kadokawa Nihon Chimei Daijiten|ja|角川日本地名大辞典|12=simple|13=User:Immanuelle/Kadokawa Japan Place name Dictionary|comment=changed title based on wikidata|qid=Q4093011}} Vol. 20, Nagano Prefecture, Kadokawa Shoten, 1990.
 * Edited by {{ill|Ken'ichi Tanigawa|ja|谷川健一|12=simple|13=User:Immanuelle/Ken'ichi Tanikawa|comment=changed title based on wikidata|qid=Q2392596}}, ''{{ill|Kami of Japan - Shrines and Sacred Sites|ja|日本の神々 -神社と聖地-|12=simple|13=User:Immanuelle/Kami of Japan - Shrines and Sacred Sites|ja_comment=jawiki link invalid}}'' Vol. 9, Mino, Hida, Shinano, Hakusui-sha, 2000.
+
 {{shinto-stub}}
 {{pref-stub-Nagano}}
 {{Shinto Horizontal}}
+
 {{translated page|ja|須須岐水神社 (千曲市)|version=99409801|comment=Imported full ja history}}
 
+[[Category:Pages with duplicated content]]
+==Merged second translation==
+{{Infobox religious building
+|name   = Susuki Mizu Shrine (須須岐水神社)
+|image = {{image requested|cat=Chikuma, Nagano}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|frame-align=center|frame-width=250}}
+| religious_affiliation = [[Shinto]]|location = {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, {{ill|Chikuma, Nagano|en|Chikuma, Nagano|qid=Q179757|lt=Chikuma, Nagano}} 大字屋代1858
+|位置= {{coord|36|32|21.7|N|138|7|35.5|E|region:JP_type:landmark_scale:30000}}
+|deity   = {{ill|Ōkuninushi|ja|大国主大神|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}} (Main deity)
+| religious_affiliation = [[Shinto]]|type   = {{ill|Shakaku|ja|国史見在社|12=simple|13=User:Immanuelle/Shrines listed in Engishiki|ja_comment=jawiki redirects to 社格|comment=changed title based on wikidata|qid=Q10444029}}
+|創建   = 
+|本殿   = 
+|別名   =
+|札所等 = 
+|festival   = {{ill|April 15|en|April 15|qid=Q2497|lt=April 15}}　
+|神事   = 
+}}
+
+'''Susuki Mizu Shrine''' (須須岐水神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Chikuma, Nagano|en|Chikuma, Nagano|qid=Q179757|lt=Chikuma, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, Japan. It is associated with the ancient {{ill|Shikigesha|ja|式外社|12=simple|13=User:Immanuelle/Shrines listed in Engishiki|13=User:Immanuelle/Shikigesha|ja_comment=jawiki redirects to 延喜式神名帳|comment=enwiki is a redirect}} Susuki Mizu Shrine and held the status of a village shrine (旧郷社) under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines}}.
+
+== Overview ==
+According to shrine tradition, Susuki Mizu Shrine was founded in the second year of the {{ill|Hakuhō|ja|白鳳|12=simple|13=User:Immanuelle/Hakuhō period|comment=changed title based on wikidata|qid=Q11580612}} (673). Initially, it was known as the "Hōri Shrine" (祝神社), a name derived from the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}. During the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan (era)}} era, following flooding of the {{ill|Shinano River|ja|千曲川|12=simple|13=User:Immanuelle/Chikuma River|ja_comment=jawiki redirects to 信濃川|comment=changed title based on wikidata|qid=Q734455}}, the regional governor of {{ill|Hanishina District, Nagano|en|Hanishina District, Nagano|qid=Q726661|lt=Hanishina District}}, {{ill|Kanasashi no Masanaga|ja|金刺正長|12=simple|13=User:Immanuelle/Kanasashi no Masanaga|ja_comment=jawiki link invalid}}, brought the {{ill|Sannō Gongen|ja|山王権現|12=simple|13=User:Immanuelle/Sannō Gongen|comment=enwiki is a redirect}} from {{ill|Hiyoshi Taisha|en|Hiyoshi Taisha|qid=Q656451|lt=Hiyoshi Taisha}} and enshrined it alongside the main deity.
+
+In the Edo period, the shrine received the patronage of the {{ill|Sanada clan|en|Sanada clan|qid=Q1002844|lt=Sanada clan}}, who donated 300 koku of land and additional resources for rituals. The shrine was reconstructed by {{ill|Tatekawa Washirō Tomimasa|ja|立川和四郎富昌|12=simple|13=User:Immanuelle/Tatekawa Washirō Tomimasa|ja_comment=jawiki link invalid}} in the fourth year of {{ill|Kaei|en|Kaei|qid=Q1146125|lt=Kaei}} (1851) following repeated flood damage. In the first year of {{ill|Tenmei|en|Tenmei|qid=Q1194121|lt=Tenmei}} (1781), the shrine was renamed "Susuki Mizu Shrine" by the head of Shinto priests, the {{ill|Urabe clan|ja|卜部氏|en|draft:Yoshida family|simple|User:Immanuelle/Urabe_clan|fr|User:Immanuelle/Urabe_clan|lt=Yoshida clan|12=simple|13=User:Immanuelle/Urabe clan}}.
+
+Previously, the shrine participated in rituals involving the transfer of portable shrines (神輿) with {{ill|Amamiya Shrine|ja|雨宮の坐日吉神社|12=simple|13=User:Immanuelle/Amamiya Shrine|ja_comment=jawiki link invalid}}, but these were discontinued in the fifth year of {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} (1872).
+
+The shrine site measures approximately 27 ken east-to-west and 34 ken north-to-south. It has been worshipped as a {{ill|Suijin|en|Suijin|qid=Q3137449|lt=water god}}, serving as the guardian of the Yashiro irrigation system.
+
+== Deities ==
+
+=== Main Enshrined Deities ===
+* {{ill|Ōkuninushi|ja|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}} (Main deity)
+* {{ill|Ame-no-Ikutama|ja|天活玉命|12=simple|13=User:Immanuelle/Ikutama-no-Mikoto|13=User:Immanuelle/Ame-no-Ikutama}} (Ikutama-no-Mikoto)
+* {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi|ja|事代主命|12=simple|13=User:Immanuelle/Kotoshironushi|ja_comment=jawiki redirects to 事代主}} (Kotoshironushi-no-Mikoto)
+* {{ill|Mizuhanome|ja|弥都波能売神|12=simple|13=User:Immanuelle/Mizuhanome|qid=Q8191796}} (Mizuhanome-no-Mikoto)
+
+=== Additional Enshrined Deities ===
+* {{ill|Toyotama-hime|ja|豊玉姫命|12=simple|13=User:Immanuelle/Toyotamahime|ja_comment=jawiki redirects to トヨタマヒメ|comment=changed title based on wikidata|qid=Q2329261}} (Toyotamahime-no-Mikoto)
+* {{ill|Hayakitsuhiko and Hayakitsuhime|ja|速秋津彦命|12=simple|13=User:Immanuelle/Hayaki-hiko|ja_comment=jawiki redirects to ハヤアキツヒコ・ハヤアキツヒメ|comment=changed title based on wikidata|qid=Q11326733}} (Hayaki-hiko-no-Mikoto)
+* {{ill|Hayakitsuhiko and Hayakitsuhime|ja|速秋津姫命|12=simple|13=User:Immanuelle/Hayaki-hime|ja_comment=jawiki redirects to ハヤアキツヒコ・ハヤアキツヒメ|comment=changed title based on wikidata|qid=Q11326733}} (Hayaki-hime-no-Mikoto)
+* {{ill|Sukunabikona|ja|少彦名命|12=simple|13=User:Immanuelle/Sukunabikona|13=User:Immanuelle/Sukunabikona|qid=Q3275687}} (Sukunabikona-no-Mikoto)
+* {{ill|Ukemochi|ja|保食命|12=simple|13=User:Immanuelle/Ukemochi|ja_comment=jawiki redirects to QID FIXED|qid=Q2280323|comment=changed title based on wikidata|qid=Q2280323}} (Ukemochi-no-Mikoto)
+* {{ill|Kuni-no-Tokotachi|ja|国常立命|12=simple|13=User:Immanuelle/Kuninotokotachi|13=User:Immanuelle/Kuni-no-Tokotachi|ja_comment=jawiki redirects to 国之常立神}} (Kuninotokotachi-no-Mikoto)
+
+== Auxiliary Shrines ==
+* '''Hōri Shrine''' (祝神社)
+''' Enshrines {{ill|Take Momotake no Mikoto|ja|武五百建命|12=simple|13=User:Immanuelle/Takehirokunioshihitohinomikoto|comment=changed title based on wikidata|qid=Q87863507}} (a {{ill|Kuni no miyatsuko|en|Kuni no miyatsuko|qid=Q2483673|lt=Kuni no miyatsuko}} of {{ill|Shinano no Kuni no Miyatsuko|ja|科野国|12=simple|13=User:Immanuelle/Shinano Province|ja_comment=jawiki redirects to 科野国造|comment=changed title based on wikidata|qid=Q11595951}} and associated with the {{ill|Hanishina Kofun group|ja|森将軍塚古墳|12=simple|13=User:Immanuelle/Mori Shōgunzuka Kofun|ja_comment=jawiki redirects to 埴科古墳群|comment=changed title based on wikidata|qid=Q6912108}}), {{ill|Takeminakata|ja|建御名方富命|12=simple|13=User:Immanuelle/Takeminakata|qid=Q9150391}} (ancient name of the {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa Taisha}} upper shrine deity), and {{ill|Minakatatomi|ja|南方刀美命|12=simple|13=User:Immanuelle/Minakatatomi|ja_comment=jawiki link invalid}} (ancient name of the lower shrine deity).
+
+* Takichi Shrine
+* Takami Shrine
+* Silkworm Shrine (養蚕神社)
+
+== Access ==
+* Approximately 500 meters north of {{ill|Shinano Railway Line|en|Shinano Railway Line|qid=Q847355|lt=Shinano Railway Line}} {{ill|Yashiro Station|en|Yashiro Station|qid=Q8192332|lt=Yashiro Station}}.
+
+== References ==
+* {{Cite book|author=|title={{ill|Kadokawa Nihon Chimei Daijiten|ja|角川日本地名大辞典|12=simple|13=User:Immanuelle/Kadokawa Nihon Chimei Daijiten|comment=changed title based on wikidata|qid=Q4093011}} 20 Nagano Prefecture|publisher={{ill|Kadokawa Shoten|en|Kadokawa Shoten|qid=Q1054765|lt=Kadokawa Shoten}}|year=1990}}
+* {{Cite book|author={{ill|Ken'ichi Tanigawa|ja|谷川健一|12=simple|13=User:Immanuelle/Ken'ichi Tanigawa}} (editor)|title=The Gods of Japan - Shrines and Sacred Places 9: Mino, Hida, Shinano|publisher={{ill|Hakusuisha Publishing|ja|白水社|12=simple|13=User:Immanuelle/Hakusuisha|comment=changed title based on wikidata|qid=Q4346470}}|year=2000}}
+
+{{shinto-stub}}
+{{pref-stub-Nagano}}
+{{神道 横}}
+
+{{translated page|ja|須須岐水神社 (千曲市)|version=99409801|comment=Imported full ja history}}
+
+{{wikidata link|Q85884529|ja|須須岐水神社 (千曲市)|ja|須須岐水神社|ja|%E9%A0%88%E9%A0%88%E5%B2%90%E6%B0%B4%E7%A5%9E%E7%A4%BE (%E5%8D%83%E6%9B%B2%E5%B8%82)|check_date=2026-05-10}}
 [[Category:Buildings and structures in Chikuma]]
 [[Category:History of Chikuma]]
 [[Category:Image requests in Chikuma City]]
+[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Nagano Prefecture]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with interwikis with duplicate languages]]

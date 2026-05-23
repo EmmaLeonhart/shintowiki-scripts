@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Kami-Kamikawa_Sumiyoshi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25083821807|commit triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name=Sumiyoshi Shrine
 |location=[[Hyōgo Prefecture]], [[Kato City]], Kamikamo River 571
@@ -14,48 +13,198 @@
 |image=[[File:Kamikamogawa Sumiyoshi Jinja 03.JPG|300px]]<br />Torii and divided worship hall
 | Map=Japan Hyōgo
 }}
-'''Sumiyoshi Shrine''' (住吉神社) is a [[Shinto shrine]] located in [[Kato City]], [[Hyōgo Prefecture]]. The enshrined deities are the [[Sumiyoshi sanjin|Sumiyoshi Sanjin]] (Kamutsutsuno-o no Mikoto, Nakatsutsuno-o no Mikoto, Sokotsutsuno-o no Mikoto) and [[Empress Jingū|Okinaga Tarashihime no Mikoto]]. It is a {{ill|Shikinaisha (small shrine)|ja|式内小社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shikinaisha (small shrine)|qq=}} under the [[Engishiki Jinmyōchō]], and its former shrine Rank under the {{ill|Modern shrine Rank system|ja|近代社格制度|1=Modern system of ranked Shinto shrines|1=Modern system of Ranked Shinto shrines|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Modern shrine Rank system|13=User:Immanuelle/Modern system of ranked Shinto shrines|qq=}} was that of a village shrine. It is also referred to as the '''Kamikamogawa Sumiyoshi Shrine''' due to its location.
+
+'''Sumiyoshi Shrine''' (住吉神社) is a [[Shinto shrine]] located in [[Kato City]], [[Hyōgo Prefecture]]. The enshrined deities are the [[Sumiyoshi sanjin|Sumiyoshi Sanjin]] (Kamutsutsuno-o no Mikoto, Nakatsutsuno-o no Mikoto, Sokotsutsuno-o no Mikoto) and [[Empress Jingū|Okinaga Tarashihime no Mikoto]]. It is a {{ill|Shikinaisha (small shrine)|ja|式内小社}} under the [[Engishiki Jinmyōchō]], and its former shrine Rank under the {{ill|Modern shrine Rank system|ja|近代社格制度}} was that of a village shrine. It is also referred to as the '''Kamikamogawa Sumiyoshi Shrine''' due to its location.
+
 == Overview ==
 The founding of the shrine is unknown.
+
 The shrine precinct features a main hall, a divided worship hall (割拝殿), a long hall (長床), and a dance stage (舞殿), arranged around a central courtyard, preserving an ancient shrine layout.
-It served as the tutelary shrine of Kamikamogawa Village. The main hall is designated as an [[Important Cultural Property]] of Japan and is recorded to have been constructed in the mid-[[Muromachi period]] during the second year of {{ill|Meiō|ja|明応|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Meiō|qq=}} (1493).
+
+It served as the tutelary shrine of Kamikamogawa Village. The main hall is designated as an [[Important Cultural Property]] of Japan and is recorded to have been constructed in the mid-[[Muromachi period]] during the second year of {{ill|Meiō|ja|明応}} (1493).
+
 == Cultural Properties ==
 [[File:Kamikamogawa Sumiyoshi Jinja 07.JPG|thumb|Main hall (National Important Cultural Property)]]
 === Important Cultural Property (Nationally Designated) ===
 * Main Hall  
-*: The main hall, constructed in the {{ill|Nagare-zukuri|ja|流造|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Nagare-zukuri|qq=}} style with a cypress bark roof, was first built in the late {{ill|Kamakura period|ja|鎌倉時代|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Kamakura period|qq=}} in the fifth year of {{ill|Shōwa|ja|正和|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Shōwa|qq=}} (1316). It was rebuilt during the mid-Muromachi period in the sixth year of {{ill|Eikyō|ja|永享|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Eikyō|qq=}} (1434), and again in 1493 during Meiō 2. Records of its construction are preserved in inscriptions on ridge beams. The porch underwent repairs in the third year of {{ill|Jōkyō|ja|貞享|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Jōkyō|qq=}} (1686). It features a unique regional style, with the inner sanctuary raised on a higher platform. Reused old materials under the floor suggest the structure was originally a four-bay building. Designated on June 9, 1960.
+*: The main hall, constructed in the {{ill|Nagare-zukuri|ja|流造}} style with a cypress bark roof, was first built in the late {{ill|Kamakura period|ja|鎌倉時代}} in the fifth year of {{ill|Shōwa|ja|正和}} (1316). It was rebuilt during the mid-Muromachi period in the sixth year of {{ill|Eikyō|ja|永享}} (1434), and again in 1493 during Meiō 2. Records of its construction are preserved in inscriptions on ridge beams. The porch underwent repairs in the third year of {{ill|Jōkyō|ja|貞享}} (1686). It features a unique regional style, with the inner sanctuary raised on a higher platform. Reused old materials under the floor suggest the structure was originally a four-bay building. Designated on June 9, 1960.
 === Important Intangible Folk Cultural Property (Nationally Designated) ===
 * Kamikamogawa Sumiyoshi Shrine Shinji Dance  
 *: Designated on May 17, 1977. For details, see ''[[Kamikamogawa Sumiyoshi Shrine Shinji Dance]]''.
 === Hyōgo Prefectural Cultural Property ===
 * Shinji Noh Masks  
 *: Twelve noh masks used for the sacred dance survive. Of these, five masks—black old man, young man, father, old man, and king—are still used in ceremonies today. The remaining seven masks (old man, young man, old woman, prince, etc.) have unclear uses. Designated on March 29, 1968.
+
 == Gallery ==
 <gallery widths="180px" heights="180px">
 File:Kamikamogawa Sumiyoshi Jinja 02.JPG|Approach staircase
 File:Kamikamogawa Sumiyoshi Jinja 08.JPG|Dance stage (right) and long hall (left)
 File:Kamikamogawa Sumiyoshi Jinja 09.JPG|Dance stage
 </gallery>
+
 == References ==
-* Editorial Committee on Hyōgo Prefecture Historical Walks / ed., ''Historical Walks of Hyōgo Prefecture, Vol. 2,'' {{ill|Yamakawa Shuppansha|ja|山川出版社|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Yamakawa Shuppansha|qq=}} (2006), pp. 61–62.
+* Editorial Committee on Hyōgo Prefecture Historical Walks / ed., ''Historical Walks of Hyōgo Prefecture, Vol. 2,'' {{ill|Yamakawa Shuppansha|ja|山川出版社}} (2006), pp. 61–62.
 * On-site explanation board.
+
 == Related Articles ==
 {{commonscat|Sumiyoshi-jinja (Kamikamogawa, Kato)}}
-* {{ill|List of Hyōgo Prefectural Cultural Properties|ja|兵庫県指定文化財一覧|qq=draft|qq=draft|12=simple|13=User:Immanuelle/List of Hyōgo Prefectural Cultural Properties|qq=}}
+* {{ill|List of Hyōgo Prefectural Cultural Properties|ja|兵庫県指定文化財一覧}}
+
 == External Links ==
 * [https://www.kato-kanko.jp/2017/03/sumiyoshi-shrine/ Kamikamogawa Sumiyoshi Shrine] (Kato City Tourism Association)
+
 {{Shinto horizontal}}
 {{shinto-stub}}
+
+{{translated page|ja|住吉神社 (加東市上鴨川)|version=80255673|comment=Imported full ja history}}
+
+== AUTOGENERATED CONTENT FROM WIKIDATA ==
+
+'''Kami-Kamikawa Sumiyoshi Shrine (Q11381860)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Harima Province]].
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| RONSHA || {{ill|Kami-Kamikawa Sumiyoshi Shrine|lt=Sumiyoshi Shrine|ja|住吉神社 (加東市上鴨川)|commons|Category:Sumiyoshi-jinja (Kamikamogawa, Kato)|qid=Q11381860|1=Kami-Kamikawa Sumiyoshi Shrine}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized|1=Kokuhei-sha}} || — || — || {{ill|Sumiyoshi Shrine|lt=Sumiyoshi Shrine|qid=Q135041176|1=Sumiyoshi Shrine (Q135041176)}} || {{coord|34.966752|135.059517|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183049 DB]
+| RONSHA || {{ill|Kami-Kamikawa Sumiyoshi Shrine|lt=Sumiyoshi Shrine|ja|住吉神社 (加東市上鴨川)|commons|Category:Sumiyoshi-jinja (Kamikamogawa, Kato)|qid=Q11381860}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || — || — || {{ill|Sumiyoshi Shrine (Q135041176)|lt=Sumiyoshi Shrine|qid=Q135041176}}; {{ill|Sumiyoshi Shrine (Q135041176)|lt=Sumiyoshi Shrine|qid=Q135041176}} || {{coord|34.966752|135.059517|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183049 DB]
 |}
+{{wikidata link|Q11381860|co|commons:Category:Sumiyoshi-jinja (Kamikamogawa, Kato)|da|d:Q11381860|ja|住吉神社 (加東市上鴨川)|check_date=2026-05-16}}
+
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name=Sumiyoshi Shrine
+|location={{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, [[Kato City]], Kamikamo River 571
+| Latitude degrees = 34 | Latitude minutes = 58 | Latitude seconds = 0.3 | N or S = N
+| Longitude degrees = 135 | Longitude minutes = 3 | Longitude seconds = 34.4 | E or W = E
+| Map country code = JP
+| deity={{ill|Empress Jingū|qid=Q232803}}; {{ill|Sumiyoshi sanjin|qid=Q1114013}}
+| consecration_year=Unknown
+| Shrine Rank=Shikinaisha (small shrine), Village shrine
+| Annual festival=Shinji Dance (First Saturday and Sunday of October)
+| Main hall=[[Sanctuary with nagare-zukuri style]]
+| religious_affiliation = [[Shinto]]
+|image=File:Kamikamogawa Sumiyoshi Jinja 03.JPG
+| Map=Japan Hyōgo
+| location = {{ill|Katō, Hyōgo|qid=Q877164}}
+| coordinates = {{Coord|34.96675|N|135.059556}}
+}}
+
+'''Sumiyoshi Shrine''' (住吉神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Kato City]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}. The enshrined deities are the [[Sumiyoshi sanjin|Sumiyoshi Sanjin]] (Kamutsutsuno-o no Mikoto, Nakatsutsuno-o no Mikoto, Sokotsutsuno-o no Mikoto) and {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Okinaga Tarashihime no Mikoto}}. It is a {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}} under the [[Engishiki Jinmyōchō]], and its former shrine Rank under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines}} was that of a village shrine. It is also referred to as the '''Kamikamogawa Sumiyoshi Shrine''' due to its location.
+
+== Overview ==
+The founding of the shrine is unknown.
+
+The shrine precinct features a main hall, a divided worship hall (割拝殿), a long hall (長床), and a dance stage (舞殿), arranged around a central courtyard, preserving an ancient shrine layout.
+
+It served as the tutelary shrine of Kamikamogawa Village. The main hall is designated as an {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property (Japan)}} of Japan and is recorded to have been constructed in the mid-{{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}} during the second year of {{ill|Meiō|en|Meiō|qid=Q1193841|lt=Meiō}} (1493).
+
+== Cultural Properties ==
+[[File:Kamikamogawa Sumiyoshi Jinja 07.JPG|thumb|Main hall (National Important Cultural Property)]]
+=== Important Cultural Property (Nationally Designated) ===
+* Main Hall  
+*: The main hall, constructed in the {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} style with a cypress bark roof, was first built in the late {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period}} in the fifth year of {{ill|Shōwa (1312–1317)|en|Shōwa (1312–1317)|qid=Q1324807|lt=Shōwa}} (1316). It was rebuilt during the mid-Muromachi period in the sixth year of {{ill|Eikyō|en|Eikyō|qid=Q1193059|lt=Eikyō}} (1434), and again in 1493 during Meiō 2. Records of its construction are preserved in inscriptions on ridge beams. The porch underwent repairs in the third year of {{ill|Jōkyō|en|Jōkyō|qid=Q1146221|lt=Jōkyō}} (1686). It features a unique regional style, with the inner sanctuary raised on a higher platform. Reused old materials under the floor suggest the structure was originally a four-bay building. Designated on June 9, 1960.
+=== Important Intangible Folk Cultural Property (Nationally Designated) ===
+* Kamikamogawa Sumiyoshi Shrine Shinji Dance  
+*: Designated on May 17, 1977. For details, see ''[[Kamikamogawa Sumiyoshi Shrine Shinji Dance]]''.
+=== Hyōgo Prefectural Cultural Property ===
+* Shinji Noh Masks  
+*: Twelve noh masks used for the sacred dance survive. Of these, five masks—black old man, young man, father, old man, and king—are still used in ceremonies today. The remaining seven masks (old man, young man, old woman, prince, etc.) have unclear uses. Designated on March 29, 1968.
+
+== Gallery ==
+<gallery widths="180px" heights="180px">
+File:Kamikamogawa Sumiyoshi Jinja 02.JPG|Approach staircase
+File:Kamikamogawa Sumiyoshi Jinja 08.JPG|Dance stage (right) and long hall (left)
+File:Kamikamogawa Sumiyoshi Jinja 09.JPG|Dance stage
+</gallery>
+
+== References ==
+* Editorial Committee on Hyōgo Prefecture Historical Walks / ed., ''Historical Walks of Hyōgo Prefecture, Vol. 2,'' {{ill|Yamakawa Shuppansha|ja|山川出版社}} (2006), pp. 61–62.
+* On-site explanation board.
+
+== Related Articles ==
+{{commonscat|Sumiyoshi-jinja (Kamikamogawa, Kato)}}
+* {{ill|Hyōgo Prefecture Tangible Cultural Property|ja|兵庫県指定文化財一覧|12=simple|13=User:Immanuelle/List of Hyōgo Prefectural Cultural Properties|comment=changed title based on wikidata|qid=Q11392892}}
+
+== External Links ==
+* [https://www.kato-kanko.jp/2017/03/sumiyoshi-shrine/ Kamikamogawa Sumiyoshi Shrine] (Kato City Tourism Association)
+
+{{Shinto horizontal}}
+{{shinto-stub}}
 
 {{translated page|ja|住吉神社 (加東市上鴨川)|version=80255673|comment=Imported full ja history}}
 
+{{Commons category|Sumiyoshi-jinja (Kamikamogawa, Kato)}}
+{{wikidata link|Q11381860}}
+== Accidentally Overwritten Content ==
+
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name=Sumiyoshi Shrine
+|location={{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, [[Kato City]], Kamikamo River 571
+| Latitude degrees = 34 | Latitude minutes = 58 | Latitude seconds = 0.3 | N or S = N
+| Longitude degrees = 135 | Longitude minutes = 3 | Longitude seconds = 34.4 | E or W = E
+| Map country code = JP
+| deity={{ill|Empress Jingū|qid=Q232803}}; {{ill|Sumiyoshi sanjin|qid=Q1114013}}
+| consecration_year=Unknown
+| Shrine Rank=Shikinaisha (small shrine), Village shrine
+| Annual festival=Shinji Dance (First Saturday and Sunday of October)
+| Main hall=[[Sanctuary with nagare-zukuri style]]
+| religious_affiliation = [[Shinto]]
+|image=File:Kamikamogawa Sumiyoshi Jinja 03.JPG
+| Map=Japan Hyōgo
+| location = {{ill|Katō, Hyōgo|qid=Q877164}}
+| coordinates = {{Coord|34.96675|N|135.059556}}
+}}
+
+'''Sumiyoshi Shrine''' (住吉神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in [[Kato City]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}. The enshrined deities are the [[Sumiyoshi sanjin|Sumiyoshi Sanjin]] (Kamutsutsuno-o no Mikoto, Nakatsutsuno-o no Mikoto, Sokotsutsuno-o no Mikoto) and {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Okinaga Tarashihime no Mikoto}}. It is a {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}} under the [[Engishiki Jinmyōchō]], and its former shrine Rank under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines}} was that of a village shrine. It is also referred to as the '''Kamikamogawa Sumiyoshi Shrine''' due to its location.
+
+== Overview ==
+The founding of the shrine is unknown.
+
+The shrine precinct features a main hall, a divided worship hall (割拝殿), a long hall (長床), and a dance stage (舞殿), arranged around a central courtyard, preserving an ancient shrine layout.
+
+It served as the tutelary shrine of Kamikamogawa Village. The main hall is designated as an {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property (Japan)}} of Japan and is recorded to have been constructed in the mid-{{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}} during the second year of {{ill|Meiō|en|Meiō|qid=Q1193841|lt=Meiō}} (1493).
+
+== Cultural Properties ==
+[[File:Kamikamogawa Sumiyoshi Jinja 07.JPG|thumb|Main hall (National Important Cultural Property)]]
+=== Important Cultural Property (Nationally Designated) ===
+* Main Hall  
+*: The main hall, constructed in the {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} style with a cypress bark roof, was first built in the late {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period}} in the fifth year of {{ill|Shōwa (1312–1317)|en|Shōwa (1312–1317)|qid=Q1324807|lt=Shōwa}} (1316). It was rebuilt during the mid-Muromachi period in the sixth year of {{ill|Eikyō|en|Eikyō|qid=Q1193059|lt=Eikyō}} (1434), and again in 1493 during Meiō 2. Records of its construction are preserved in inscriptions on ridge beams. The porch underwent repairs in the third year of {{ill|Jōkyō|en|Jōkyō|qid=Q1146221|lt=Jōkyō}} (1686). It features a unique regional style, with the inner sanctuary raised on a higher platform. Reused old materials under the floor suggest the structure was originally a four-bay building. Designated on June 9, 1960.
+=== Important Intangible Folk Cultural Property (Nationally Designated) ===
+* Kamikamogawa Sumiyoshi Shrine Shinji Dance  
+*: Designated on May 17, 1977. For details, see ''[[Kamikamogawa Sumiyoshi Shrine Shinji Dance]]''.
+=== Hyōgo Prefectural Cultural Property ===
+* Shinji Noh Masks  
+*: Twelve noh masks used for the sacred dance survive. Of these, five masks—black old man, young man, father, old man, and king—are still used in ceremonies today. The remaining seven masks (old man, young man, old woman, prince, etc.) have unclear uses. Designated on March 29, 1968.
+
+== Gallery ==
+<gallery widths="180px" heights="180px">
+File:Kamikamogawa Sumiyoshi Jinja 02.JPG|Approach staircase
+File:Kamikamogawa Sumiyoshi Jinja 08.JPG|Dance stage (right) and long hall (left)
+File:Kamikamogawa Sumiyoshi Jinja 09.JPG|Dance stage
+</gallery>
+
+== References ==
+* Editorial Committee on Hyōgo Prefecture Historical Walks / ed., ''Historical Walks of Hyōgo Prefecture, Vol. 2,'' {{ill|Yamakawa Shuppansha|ja|山川出版社}} (2006), pp. 61–62.
+* On-site explanation board.
+
+== Related Articles ==
+{{commonscat|Sumiyoshi-jinja (Kamikamogawa, Kato)}}
+* {{ill|Hyōgo Prefecture Tangible Cultural Property|ja|兵庫県指定文化財一覧|12=simple|13=User:Immanuelle/List of Hyōgo Prefectural Cultural Properties|comment=changed title based on wikidata|qid=Q11392892}}
+
+== External Links ==
+* [https://www.kato-kanko.jp/2017/03/sumiyoshi-shrine/ Kamikamogawa Sumiyoshi Shrine] (Kato City Tourism Association)
+
+{{Shinto horizontal}}
+{{shinto-stub}}
+
+{{translated page|ja|住吉神社 (加東市上鴨川)|version=80255673|comment=Imported full ja history}}
+
+{{Commons category|Sumiyoshi-jinja (Kamikamogawa, Kato)}}
+{{wikidata link|Q11381860}}
+
+==Notes==
+<references group="lower-alpha"/>
 [[Category:Architecture of Muromachi period]]
 [[Category:Buildings and structures in Kato, Hyōgo]]
 [[Category:Buildings and structures in Kato, Hyogo]]
@@ -64,6 +213,7 @@ File:Kamikamogawa Sumiyoshi Jinja 09.JPG|Dance stage
 [[Category:Important Cultural Property of Japan in Hyogo prefecture]]
 [[Category:Kami-Kamikawa Sumiyoshi Shrine]]
 [[Category:Kokuhei-sha]]
+[[Category:Pages with duplicated content]]
 [[Category:Municipal History of Katō]]
 [[Category:Muromachi-period architecture]]
 [[Category:Shikinaisha in Harima Province]]
@@ -74,4 +224,6 @@ File:Kamikamogawa Sumiyoshi Jinja 09.JPG|Dance stage
 [[Category:Sumiyoshi Shrines]]
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinai Ronsha]]
+[[Category:Pages with duplicated content]]
