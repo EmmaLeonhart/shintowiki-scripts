@@ -90,8 +90,9 @@ QID:
   as one outer span — a link inside any template is never touched.
 - **Resolution, strict priority.** (1) shinto.miraheze.org first: if the
   target (following redirects) is a page carrying `{{wikidata link|Q…}}`, use
-  that QID; (2) else search Wikipedias en→ja→zh→ko→de→ru, first hit wins, take
-  the article's Wikidata item. No QID anywhere → link left unchanged.
+  that QID; (2) else search Wikipedias en→ja→zh→ko→fr→de→ru, first hit wins, take
+  the article's Wikidata item. No QID anywhere → link left unchanged. (Order
+  corrected 2026-05-23 to insert French — it had been missing.)
 - **ill build mirrors the sibling ill ops.** First positional = P11250 value
   with the `shinto:` prefix stripped (fallback: en Wikidata label if no
   P11250); one `lang|sitelink-title` pair per Wikipedia sitelink (sorted,

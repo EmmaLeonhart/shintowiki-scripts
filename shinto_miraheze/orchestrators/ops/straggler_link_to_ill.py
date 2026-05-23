@@ -38,8 +38,8 @@ Resolution — find the QID, STRICT priority order
 1. **Shinto wiki first.** Resolve the target on shinto.miraheze.org
    (following redirects). If the resolved page carries a
    ``{{wikidata link|Q…}}`` template, use THAT QID.
-2. **Otherwise** search Wikipedias in order — en → ja → zh → ko → de →
-   ru — and stop at the first one that has an article matching the
+2. **Otherwise** search Wikipedias in order — en → ja → zh → ko → fr →
+   de → ru — and stop at the first one that has an article matching the
    target; take that article's Wikidata item (QID).
 
 If no QID is found anywhere, the link is left unchanged.
@@ -108,7 +108,7 @@ _API_THROTTLE = 0.3
 
 # Wikipedias searched, in strict priority order, when the shinto wiki
 # doesn't yield a QID. Each entry is the wbgetentities ``sites`` value.
-_WIKIPEDIA_ORDER = ("enwiki", "jawiki", "zhwiki", "kowiki", "dewiki", "ruwiki")
+_WIKIPEDIA_ORDER = ("enwiki", "jawiki", "zhwiki", "kowiki", "frwiki", "dewiki", "ruwiki")
 
 # Sister-project / meta sites that aren't language sitelinks in the
 # {{ill}} sense (mirrors normalize_ill_wikidata).
@@ -212,7 +212,7 @@ def _qid_from_shinto(target: str) -> "str | None":
 
 
 def _qid_from_wikipedias(target: str) -> "str | None":
-    """Search en→ja→zh→ko→de→ru for an article matching `target`; return
+    """Search en→ja→zh→ko→fr→de→ru for an article matching `target`; return
     the first matching article's Wikidata QID, else None. Redirects are
     NOT followed — wbgetentities resolves the exact sitelink title."""
     for site in _WIKIPEDIA_ORDER:
