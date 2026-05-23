@@ -38,6 +38,34 @@ as `append-kaminoyashiro-kana`, daily-fire-gated after `wikidata-qualifier-edit`
 qualifier) need the kana *moved into* a P1448 ojp-hani qualifier before the
 append. More invasive (statement restructuring); left for scoping with Emma.
 
+### Move standalone P1814 kana into ojp-hani official-name qualifiers (secondary ask)
+**Files:** `modern-quickstatements/move_kana_to_official_name.py` (new), `.github/workflows/move-kana-to-official-name.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`
+
+Built the secondary task (Emma chose move + append, dashes verbatim). For
+`P31`=Q135038714 (Disputed Shikinaisha) items carrying the kana as a standalone
+top-level `P1814` *statement*, the script adds it as a `P1814` qualifier on the
+single ojp-hani `P1448` official name (value = original + カミノヤシロ, dashes
+preserved) and removes the standalone statement. Modelled on
+`append_kaminoyashiro_kana.py`: SPARQL → per-item `wbgetentities` →
+`wbsetqualifier` (no snakhash = add) + `wbremoveclaims`. Idempotent (removal
+drops the item out of the `p:P1814` SPARQL universe; existing-qualifier check
+avoids double-add). `MAX_EDITS=50`/run, `THROTTLE=1.5`, 429-bail, `--dry-run`.
+Wired into `cleanup-loop.yml` as `move-kana-to-official-name`, daily-fire-gated,
+ahead of `append-kaminoyashiro-kana`.
+
+**Data hazard found in the dry-run — added a katakana gate.** The standalone
+`P1814` set on these items is *mixed*: Old-Japanese katakana readings
+(e.g. `タケミナカタトミノ-`) alongside **modern hiragana** readings
+(e.g. `いめじんじゃはちまんぐう`, which already contains じんじゃ=神社). The bot request
+says "the same katakana change," so カミノヤシロ (the *Old Japanese* reading of
+神社) only belongs on the katakana ones — appending it to a modern reading, or
+attaching a modern reading to an Old-Japanese official name, would be wrong.
+`is_katakana_reading()` rejects any value containing a hiragana char (or no
+katakana at all). Census of the 155 items: **137 movable** (~151 katakana
+statements), 2 ambiguous (>1 ojp-hani name), 1 with no ojp-hani name, **15
+modern-hiragana-only** left untouched. The bot reports all 18 untouched cases
+to stdout each run; they're tracked in `queue.md` for manual handling.
+
 ---
 
 ## 2026-05-20

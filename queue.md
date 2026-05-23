@@ -152,12 +152,16 @@ You have the context to You have the context to put all this stuff together into
 3. **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
 
 
-## Wikidata: カミノヤシロ kana — secondary ask (bot request 2026-02-26)
+## Wikidata: カミノヤシロ kana — manual-review leftovers (bot request 2026-02-26)
 
-Primary append job shipped (see DEVLOG 2026-05-23). Still open:
+Both bot jobs shipped (see DEVLOG 2026-05-23). Part 2's katakana gate left
+behind cases that need a human (the move/append bots skip + report them; nothing
+auto-handles these):
 
-- [ ] DECIDE (needs Emma): the bot request's secondary ask — items `P31`=Q135038714
-  whose kana is a standalone `P1814` *statement* (not a qualifier) need the kana
-  *moved into* a P1448 ojp-hani qualifier AND カミノヤシロ appended. More invasive
-  (statement restructuring); scope separately before building. Per the request,
-  this is "best done before" the primary append for full coverage.
+- [ ] **18 Q135038714 items the part-2 bot won't touch.** From the dry-run census:
+  - 2 items with >1 ojp-hani P1448 (ambiguous which name the kana attaches to),
+  - 1 item with a katakana standalone kana but NO ojp-hani P1448 to attach to,
+  - 15 items whose standalone P1814 is a *modern hiragana* reading (e.g.
+    `いめじんじゃはちまんぐう`) — these need a modern `ja` official name, not the
+    ojp-hani path, and must NOT get カミノヤシロ. Decide where these belong.
+  The exact QIDs print in the workflow log (and via `--dry-run`).
