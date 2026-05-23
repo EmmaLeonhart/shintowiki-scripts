@@ -41,6 +41,7 @@ ATOMIC_FILES = [
     "p11250_miraheze_links.txt",
     "p6262_fandom_links.txt",
     "en_labels.txt",
+    "en_labels_sonnet.txt",
 ]
 
 

@@ -39,6 +39,7 @@ ATOMIC_FILES = [
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
     "p6262_fandom_links.txt",                 # Add P6262 (Fandom article ID) links
     "en_labels.txt",                          # Add en labels (Len) for items with a shintowiki page but no en label
+    "en_labels_sonnet.txt",                   # Add en labels (Len) machine-translated by the daily remote Sonnet routine (5/day) from ja label + kana
     "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
     "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
 ]

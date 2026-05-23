@@ -6,6 +6,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Shrine en-label translation pipeline (SPARQL list + 5/day remote Sonnet translator)
+**Files:** `modern-quickstatements/generate_shrines_missing_en_label.py` (new), `.github/workflows/generate-shrines-missing-en-label.yml` (new), `modern-quickstatements/select_shrines_to_translate.py` (new), `modern-quickstatements/en_labels_sonnet.txt` (new), `modern-quickstatements/shrines_missing_en_label.json` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`
+
+Progressive, self-draining queue for adding English labels to Shinto shrines on Wikidata that lack one:
+- **Synced worklist (24h):** `generate_shrines_missing_en_label.py` SPARQLs every Shinto shrine (P31=Q845945) with a `ja` label but no `en` label, plus the kana reading (P1814) when present, → `shrines_missing_en_label.json`. The `generate-shrines-missing-en-label.yml` workflow runs it daily (05:17 UTC) and commits the refreshed list. First run: **5,061** shrines (442 with kana).
+- **5/day translator (remote Sonnet routine):** `select_shrines_to_translate.py` picks 5 random shrines not already pending, prints them as JSON. A daily claude.ai **Sonnet** routine reads those, translates each `ja` label → English using the kana reading, and appends `Qxxx|Len|"..."` lines to `en_labels_sonnet.txt`.
+- **Submission:** `en_labels_sonnet.txt` added to `ATOMIC_FILES` in both `submit_daily_batch.py` and `direct_daily_edits.py`, so the existing daily QuickStatements run pushes the new labels to Wikidata.
+- **No state file:** dedup is presence-based — the selector skips QIDs already in `en_labels_sonnet.txt`, and once a label lands on Wikidata the next 24h SPARQL refresh drops it from the worklist.
+
 ### Tested the dup-content merge with local sub-agents (3 pages) + refined instruction
 **Files:** `remote_queue.py`, `remote_queue.json`, `duplicated_content/{Take Minato Shrine,Shisho Shrine (Toyooka),Amatsu-Mikaboshi}.wiki`, `shinto_miraheze/sync_duplicated_content.state`
 
