@@ -48,8 +48,7 @@ from shinto_miraheze.orchestrators.ops import (
 # category; returns no-op for every other page.
 # straggler_link_to_ill is a PRE_HEAVY light op (placed next to
 # ill_category_to_link) that converts raw straggler wikilinks into {{ill}}
-# templates via Wikidata resolution; no-op unless
-# ENABLE_STRAGGLER_LINK_TO_ILL=1.
+# templates via Wikidata resolution. Standard always-on op (not gated).
 OPS = [
     strip_html_comments,
     strip_afc_templates,

@@ -59,7 +59,8 @@ Build the ill from the QID (mirrors the sibling ill ops)
 
 Pacing / safety
 ---------------
-  * Disabled unless ``ENABLE_STRAGGLER_LINK_TO_ILL=1``.
+  * Standard always-on op (strictly programmatic; not gated behind any
+    env flag) — runs on every wikitext orchestrator visit.
   * PRE_HEAVY so the converted text is what ``history_offload``'s
     fandom mirror and XML archive capture in the same cycle (same as
     the other ill ops).
@@ -75,7 +76,6 @@ Pacing / safety
     with the repo-wide 429-bail policy.
 """
 
-import os
 import re
 import time
 
@@ -398,8 +398,6 @@ def _is_straggler_target(target: str) -> bool:
 
 def apply(title: str, text: str):
     global _rate_limited
-    if os.getenv("ENABLE_STRAGGLER_LINK_TO_ILL") != "1":
-        return None, None
     if not text:
         return None, None
     if REDIRECT_RE.search(text):

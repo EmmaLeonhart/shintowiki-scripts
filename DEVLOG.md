@@ -43,10 +43,11 @@ QID:
   trips a module-level kill switch — all further lookups short-circuit to
   not-found, no retries (repo-wide 429-bail policy). A failed lookup is cached
   as not-found so the link is conservatively left unchanged for that run.
-- **Gated off by default** (`ENABLE_STRAGGLER_LINK_TO_ILL=1`) and registered
-  on all 8 wikitext-namespace orchestrators (mainspace, category, template,
-  user, project, file, help, talk), placed right after `ill_category_to_link`
-  in each OPS list.
+- **Standard always-on op** (strictly programmatic — NOT gated behind any env
+  flag; the initial gating was wrong and was removed per Emma) registered on all
+  8 wikitext-namespace orchestrators (mainspace, category, template, user,
+  project, file, help, talk), placed right after `ill_category_to_link` in each
+  OPS list, so it runs on every wikitext page visit.
 - **Dry-run before committing.** The spec example reproduced the target ill
   exactly. Real shinto pages converted correctly, e.g. on *Airborne Parachute
   Unit*: `[[田中賢一 (軍人)|田中賢一]]` →
