@@ -60,6 +60,10 @@ jobs:
           # Copy all QS text files and summary
           cp modern-quickstatements/_site/*.txt _site/ 2>/dev/null || true
           cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json 2>/dev/null || true
+          # Publish the merged label-generator report as a subpage; the
+          # standalone shinto-label-generator repo's Pages redirects here.
+          mkdir -p _site/shinto-label-generator
+          cp -r shinto-label-generator/docs/* _site/shinto-label-generator/ 2>/dev/null || true
 
       - name: Commit updated _site to repo
         run: |
