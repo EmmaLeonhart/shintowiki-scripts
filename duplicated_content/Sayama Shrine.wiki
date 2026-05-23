@@ -1,5 +1,4 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sayama_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-{
 {{Referencesの明記|date=2018-09-09}}
 {{Infobox religious building
 |名称   = {{ill|Sayama Shrine|ja|狭山神社|12=simple|13=User:Immanuelle/Sayama Shrine|qq=}}
@@ -46,7 +45,6 @@ Sayama Shrine has been selected as one of the “{{ill|Ōsaka Midori no Hyakusen
 |所在地 = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Ōsakasayama|en|Ōsakasayama|qid=Q385864|lt=Osaka Sayama City}} Handa 1-223
 |祭神 = {{ill|Inshoku Iri Hiko no Mikoto|ja|五十色入彦尊|12=simple|13=User:Immanuelle/Inshoku Iri Hiko no Mikoto|ja_comment=jawiki link invalid}}
 |社格 = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinai Taisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Large), Village Shrine
-|image = [[Image:Sayama jinja haiden.jpg|270px]]
 |image=Sayama jinja5.jpg
 }}
 '''Sayama Tsutsumi Shrine''' is a subsidiary shrine (sessha) located within the precincts of Kago Shrine. It is classified as a Shikinai Taisha, and its former Ranking was that of a village shrine.

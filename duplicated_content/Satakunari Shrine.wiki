@@ -1,7 +1,6 @@
 <!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Satakunari_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name = Satakunari Shrine
-| religious_affiliation = [[Shinto]]
 | image = File:Satakunari-jinja 02.jpg
 | location = 322 Ushikaube, Sata, {{ill|Tamaki|en|Tamaki|qid=Q1289593|lt=Tamaki}}, {{ill|Watarai District|en|Watarai District|qid=Q1131032|lt=Watarai District}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Japan
 | Latitude = 34 | Latitude_Min = 29 | Latitude_Sec = 25.0  
@@ -15,13 +14,12 @@
 | Pilgrimage Sites = 
 | festival = {{ill|January 17|en|January 17|qid=Q2264|lt=January 17}}
 | Rituals = [[Kannamesai]] Yuda Procession ([[October 21]])
-| location = {{ill|Tamaki, Mie|qid=Q587348}}
 | coordinates = {{Coord|34.490278|N|136.637694}}
 | architecture_style = {{ill|Shinmei-zukuri|qid=Q930545}}
 }}
 '''Satakunari Shrine''' (狭田国生神社, *Satakunari Jinja*<ref name="ic">Ise Bunka-sha (2008): p. 58</ref>) is an [[auxiliary shrine]] (*sessha*) of [[Ise Grand Shrine]] ({{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}, *Naikū*), located on the left bank of the Sotojida River in {{ill|Tamaki|en|Tamaki|qid=Q1289593|lt=Tamaki}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, Japan. Locally, it is affectionately referred to as "Haiko-san."<ref name="tm4">Kaneko (1984): p. 34</ref>
 == Overview ==
-The shrine is located at 322 Ushikaupe, Sada, Tamaki Town, Watarai District, Mie Prefecture.<ref name="sk4">Shikinaisha Research Association (1990): p.204</ref> It is one of the 13 auxiliary shrines in Tamaki Town.<ref name="ic"/> Among the 27 auxiliary shrines of the Inner Shrine, it Ranks 26th.<ref name="uy"/>
+It is one of the 13 auxiliary shrines in Tamaki Town.<ref name="sk4">Shikinaisha Research Association (1990): p.204</ref><ref name="ic"/> Among the 27 auxiliary shrines of the Inner Shrine, it Ranks 26th.<ref name="uy"/>
 The name "Sata" is presumed to derive from its location, "Sada."<ref name="sk4"/> The local nickname "Haiko" is thought to be a variation of the enshrined deity Hayakawahiko no Mikoto.<ref name="sk5">Shikinaisha Research Association (1990): p.205</ref> In "Seyō Gorin Ikkyō," it is noted that "commonly referred to as Haiko Shrine, the area is also known as 'Samukawa Shrine.'"<ref name="tm5">Kaneko (1984): p.35</ref>
 It is believed to have been established by {{ill|Yamatohime-no-mikoto|en|Yamatohime-no-mikoto|qid=Q4388732|lt=Yamatohime-no-mikoto}}.<ref name="ic"/> The shrine grounds cover 1,656 square meters.<ref name="sk5"/> The shrine building, constructed in the Shinmei-zukuri style with wooden planks, faces south and is enclosed by a single layer of tamagaki (sacred fence).<ref name="sk5"/> There is no offertory box.
 == Enshrined Deities ==
