@@ -7,7 +7,6 @@
 |LatitudeDeg=34 |LatitudeMin=21 |LatitudeSec=46.2
 |LongitudeDeg=132 |LongitudeMin=21 |LongitudeSec=53.7
 |Map=Japan Hiroshima city Urban area
-|Deity={{ill|Sarutahiko Ōkami|ja|猿田彦神|12=simple|13=User:Immanuelle/Sarutahiko-no-kami|ja_comment=jawiki redirects to サルタヒコ|comment=changed title based on wikidata|qid=Q3090037}}、{{ill|Shiotsuchi-no-Oji|ja|塩土老翁神|12=simple|13=User:Immanuelle/Shiodotaro Ojin|ja_comment=jawiki redirects to シオツチオジ|comment=changed title based on wikidata|qid=Q11174872}}
 |Rank=
 |Founded=(trad.) {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Empress Suiko}} 26 ({{ill|618|en|618|qid=Q31035|lt=618 AD}})
 |Main Hall=
@@ -16,7 +15,7 @@
 |Rituals=
 |prefecture={{ill|Saeki-ku, Hiroshima|qid=Q73718}}
 |coordinates={{Coord|34.362833333333334|N|132.36491666666666}}
-|deity={{ill|Sarutahiko Ōkami|qid=Q3090037}}
+|deity={{ill|Sarutahiko Ōkami|ja|猿田彦神|12=simple|13=User:Immanuelle/Sarutahiko-no-kami|ja_comment=jawiki redirects to サルタヒコ|comment=changed title based on wikidata|qid=Q3090037}}、{{ill|Shiotsuchi-no-Oji|ja|塩土老翁神|12=simple|13=User:Immanuelle/Shiodotaro Ojin|ja_comment=jawiki redirects to シオツチオジ|comment=changed title based on wikidata|qid=Q11174872}}
 }}
 '''Shioya Shrine''' (塩屋神社) is a shrine located in {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}} {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima City}} {{ill|Saeki-ku, Hiroshima|en|Saeki-ku, Hiroshima|qid=Q73718|lt=Saeki Ward}} {{ill|Ebiyama Town|ja|海老山町 (広島市)|lt=Ebiyama Town|lt_ja=海老山町|12=simple|13=User:Immanuelle/Ebiyama Town (Hiroshima)|comment=changed title based on wikidata|qid=Q42633835}}.
 == Overview ==
@@ -60,15 +59,14 @@ Held in conjunction with the Tanabata festival.
 }}
 == See Also ==
 * {{ill|Itsukaichi Hachiman Shrine|ja|五日市八幡神社|12=simple|13=User:Immanuelle/Itsukaichi Hachiman Shrine|ja_comment=jawiki link invalid}}
-== External Links ==
-* {{ill|https://www.hachiman-jinja.jp/|ja|五日市八幡神社|lt=Itsukaichi Hachiman Shrine|lt_ja=五日市八幡神社|12=simple|13=User:Immanuelle/https://www.hachiman-jinja.jp/|ja_comment=jawiki link invalid}}
-* {{ill|Shioya Shrine (Hiroshima)|ja|塩屋神社|lt=Shioya Shrine|lt_ja=塩屋神社|12=simple|13=User:Immanuelle/https://www.shioya-jinja.jp/|comment=changed title based on wikidata|qid=Q17992427}}
-== See Also ==
 * {{ill|List of Japanese deities|en|12=simple|13=User:Immanuelle/List of Japanese deities|qq=}}
 * {{ill|Ōyamatsumi|qid=Q386563|lt=Ōyamatsumi|lt=Oyamatsumi|en|12=simple|13=User:Immanuelle/Oyamatsumi|qq=}}
 * {{ill|Umisachi and Yamasachi|en|12=simple|13=User:Immanuelle/Umisachi and Yamasachi|qq=}}
 * {{ill|Ninigi-no-Mikoto|lt=Ninigi-no-Mikoto|lt=Ninigi|en|12=simple|13=User:Immanuelle/Ninigi|qq=}}
 * {{ill|Sumiyoshi sanjin|lt=Sumiyoshi sanjin|lt=Sumiyoshi Sanjin|en|12=simple|13=User:Immanuelle/Sumiyoshi Sanjin|qq=}}
+== External Links ==
+* {{ill|https://www.hachiman-jinja.jp/|ja|五日市八幡神社|lt=Itsukaichi Hachiman Shrine|lt_ja=五日市八幡神社|12=simple|13=User:Immanuelle/https://www.hachiman-jinja.jp/|ja_comment=jawiki link invalid}}
+* {{ill|Shioya Shrine (Hiroshima)|ja|塩屋神社|lt=Shioya Shrine|lt_ja=塩屋神社|12=simple|13=User:Immanuelle/https://www.shioya-jinja.jp/|comment=changed title based on wikidata|qid=Q17992427}}
 {{translated page|ja|塩屋神社|version=103635435|comment=Imported full ja history}}
 
 [[Category:Architecture of Saeki Ward]]
