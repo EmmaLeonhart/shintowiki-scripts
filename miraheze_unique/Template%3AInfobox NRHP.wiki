@@ -158,6 +158,7 @@
 }}<noinclude>
 {{documentation}}
 [[Category:Templates missing wikidata]]
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>
 <noinclude>
 [[Category:NRHP infobox needing cleanup]]
