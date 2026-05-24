@@ -25,8 +25,9 @@ QS_API = "https://quickstatements.toolforge.org/api.php"
 MAX_RETRIES = 10
 RETRY_DELAY = 20  # seconds between retries
 # Cap total lines submitted per run. Paired with the once-per-day fire gate
-# in cleanup-loop.yml + the 50-edit cap in test_wikidata_qualifier.py to keep
-# the daily wikidata-edit budget around 100.
+# in cleanup-loop.yml. This is the ONLY thing that edits Wikidata — all
+# Wikidata work is generated as QuickStatements lines into the atomic files
+# and run through here (no bespoke direct-API editors).
 MAX_LINES_TOTAL = 50
 
 ATOMIC_FILES = [

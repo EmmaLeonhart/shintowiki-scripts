@@ -164,5 +164,29 @@ When the user says "a cron job," "a cron," "a CronCreate," "set up a cron," or "
 * **Remote claude.ai routine** (`RemoteTrigger`) = only when the user explicitly says "remote," "on the cloud," "a Claude remote thing," names a cloud model for a recurring job (e.g. "a daily Sonnet run"), or invokes the `/schedule` command. These are for bulk LLM grunge work done by Claude in the cloud (translations, dup-content merges, the remote-queue consumer).
 * Picking the wrong one is a real error. A "cron" request must never be downgraded into a remote routine, and you must not ask the user to choose — infer from their exact words: "cron" → local; "remote/cloud/Sonnet-routine/`/schedule`" → remote.
 
+## Wikidata editing — ONE path only, no edit summaries
+
+**Wikidata is edited by exactly one mechanism: the daily QuickStatements
+pipeline.** Generators emit QuickStatements lines (which carry NO edit
+summaries) into the atomic `.txt` files in `modern-quickstatements/`;
+`submit_daily_batch.py` attempts them via the QuickStatements API; if that
+fails, `direct_daily_edits.py` executes ~50 of the SAME generated lines via the
+API. That is the entirety of it: build a big list of QuickStatements, try to run
+them, fall back to running ~50. Nothing else touches Wikidata.
+
+- **NEVER write a bespoke direct-API Wikidata editor** (no script of your own
+  calling `wbsetqualifier` / `wbcreateclaim` / `wbremoveclaims` / `wbsetlabel`
+  etc.), and **never attach a descriptive/explanatory edit summary** to a
+  Wikidata edit. Edits go out via QuickStatements with no summary.
+- **All new Wikidata work** (qualifiers, labels, references, removals) must be
+  expressed as QuickStatements lines: add/extend a `generate_*.py` generator so
+  the lines land in an atomic `.txt` file, and they get randomly run by the
+  single submitter. Optimise everything toward feeding that one list.
+- If something genuinely cannot be expressed as a QuickStatement, STOP and raise
+  it with Emma — do not route around the QS pipeline with a one-off editor.
+- This rule was added 2026-05-23 after bespoke direct-API editors
+  (P459/kana qualifier scripts with descriptive summaries) were built and run;
+  they were deleted. Don't reintroduce that shape.
+
 ## Writing
 - Do not use "honest", "honesty", or "honestly" — and do not swap in "frank", "frankly", "candid", "candidly", or "transparently", which are the same self-congratulatory move in a different coat. When something failed, name the failure: "it didn't work", "I got that wrong", "this failed" — flat, no qualifier. Tagging a report "honest" implies the rest aren't, and couching a failure as honesty asks for credit for the admission, which is worse than the failure itself. Use a precise positive word ("accurate", "plainly", "truly") only when that is genuinely the meaning — never as a halo on a bad outcome.

@@ -6,6 +6,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Removed all bespoke direct-API Wikidata editors — QuickStatements is the only channel
+**Files (deleted):** `modern-quickstatements/{test_wikidata_qualifier,seed_kana_qualifier,append_kaminoyashiro_kana,remove_redundant_kana_statement}.py`, `.github/workflows/{test-wikidata-qualifier,seed-kana-qualifier,append-kaminoyashiro-kana,remove-redundant-kana-statement}.yml`. **Modified:** `.github/workflows/cleanup-loop.yml`, `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`, `CLAUDE.md`.
+
+Building the P459 and カミノヤシロ kana work as standalone direct-API editors (with
+descriptive edit summaries) was the wrong shape and violated the project's core
+Wikidata invariant: **Wikidata is edited by exactly ONE channel — the daily
+QuickStatements pipeline, with NO edit summaries.** A cleanup-loop run executed
+the combined kana move op directly on Wikidata (25 clean add+remove pairs, no
+data loss, account not blocked) before being cancelled, which surfaced the
+problem. Deleted all four bespoke editors + their workflows, removed their jobs
+from cleanup-loop (build-run-history now needs only submit-quickstatements), and
+documented the rule in CLAUDE.md ("Wikidata editing — ONE path only, no edit
+summaries"). The QuickStatements pipeline (generate → submit_daily_batch → the
+direct_daily_edits fallback that runs the SAME generated lines) is intact and is
+the sole Wikidata editor. cleanup-loop was briefly disabled during the incident
+and re-enabled after this cleanup. The P459 qualifier work is already covered by
+the QS generators (modern_shrine_ranking_qualifiers.txt); the kana-qualifier work
+must be re-expressed as QuickStatements lines if still wanted (open follow-up).
+
 ### Split the kana "move" into two independently-safe ops (seed + remove)
 **Files:** `modern-quickstatements/seed_kana_qualifier.py` (renamed from move_kana_to_official_name.py), `modern-quickstatements/remove_redundant_kana_statement.py` (new), `.github/workflows/seed-kana-qualifier.yml` (renamed from move-kana-to-official-name.yml), `.github/workflows/remove-redundant-kana-statement.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`
 

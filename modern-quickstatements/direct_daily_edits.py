@@ -23,9 +23,10 @@ WD_API = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
 # Capped at 50 — this is the QS-failed fallback path, so when it runs it
-# stands in for the 50-line submit_daily_batch budget. Paired with the
-# 50-edit cap in test_wikidata_qualifier.py and the once-per-day fire gate
-# in cleanup-loop.yml so daily wikidata edits ~= 100.
+# stands in for the 50-line submit_daily_batch budget. It executes the SAME
+# generated QuickStatements lines as submit_daily_batch (just via the API when
+# the QS toolforge API is down); it is not a bespoke editor. Paired with the
+# once-per-day fire gate in cleanup-loop.yml.
 MAX_EDITS = 50
 MIN_DELAY = 60   # 1 minute
 MAX_DELAY = 300  # 5 minutes

@@ -420,44 +420,18 @@ jobs:
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
-  # Direct Wikidata edits via API (after QS submission). Daily-fire gated.
-  wikidata-qualifier-edit:
-    needs: [window-gate, cleanup, submit-quickstatements]
-    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
-    uses: ./.github/workflows/test-wikidata-qualifier.yml
-    secrets: inherit
-
-  # Kana pipeline op A — SEED: copy a top-level katakana reading onto the
-  # ojp-hani P1448 official name as a P1814 qualifier when none exists. ADD-ONLY
-  # (never removes), so the source reading can't be lost before its qualifier
-  # exists. Direct Wikidata API edits; 50/day. Daily-fire gated.
-  seed-kana-qualifier:
-    needs: [window-gate, cleanup, wikidata-qualifier-edit]
-    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
-    uses: ./.github/workflows/seed-kana-qualifier.yml
-    secrets: inherit
-
-  # Kana pipeline part 1 — append カミノヤシロ to ojp-hani P1814 katakana qualifiers.
-  # Direct Wikidata API edits; 50/day. Daily-fire gated.
-  append-kaminoyashiro-kana:
-    needs: [window-gate, cleanup, seed-kana-qualifier]
-    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
-    uses: ./.github/workflows/append-kaminoyashiro-kana.yml
-    secrets: inherit
-
-  # Kana pipeline op C — REMOVE the redundant top-level P1814 reading, but ONLY
-  # when a matching katakana qualifier is confirmed on the official name. Runs
-  # after seed + append so the qualifier is in place; remove-only and per-item
-  # gated, so it is safe in any order. Daily-fire gated.
-  remove-redundant-kana-statement:
-    needs: [window-gate, cleanup, append-kaminoyashiro-kana]
-    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
-    uses: ./.github/workflows/remove-redundant-kana-statement.yml
-    secrets: inherit
+  # NOTE: Wikidata is edited by EXACTLY ONE path — the daily QuickStatements
+  # submission (submit-quickstatements above, with direct-daily-edits as its
+  # QS-executing fallback below). No bespoke direct-API Wikidata editors. Any new
+  # Wikidata work must be generated as QuickStatements lines and flow through
+  # that single path. (See CLAUDE.md "Wikidata editing".) The former
+  # wikidata-qualifier-edit / seed-kana-qualifier / append-kaminoyashiro-kana /
+  # remove-redundant-kana-statement jobs were removed 2026-05-23 for violating
+  # this rule.
 
   # Final action: rebuild run history page from all reports
   build-run-history:
-    needs: [window-gate, submit-quickstatements, wikidata-qualifier-edit, seed-kana-qualifier, append-kaminoyashiro-kana, remove-redundant-kana-statement]
+    needs: [window-gate, submit-quickstatements]
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 
