@@ -6,6 +6,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Kana qualifier work, redone the RIGHT way — as QuickStatements generators
+**Files:** `modern-quickstatements/generate_kana_qualifier_add.py` (new), `modern-quickstatements/generate_kana_qualifier_remove.py` (new), `modern-quickstatements/{kana_qualifier_add.txt,kana_redundant_remove.txt}` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`, `.github/workflows/generate-quickstatements.yml`, `CLAUDE.md`
+
+Re-did the カミノヤシロ kana-qualifier work as **QuickStatements generators** (no
+direct API, no edit summaries — through the single channel), replacing the
+deleted bespoke editors. Two SEPARATE scripts, per Emma's literal add-first /
+remove-after-SPARQL-confirms principle:
+- `generate_kana_qualifier_add.py` → `kana_qualifier_add.txt` (ADD-only):
+  APPEND `<kana>カミノヤシロ` to ojp-hani P1448 names that have a katakana P1814
+  qualifier not ending in カミノヤシロ (4,687), and SEED `<top-kana>カミノヤシロ`
+  where the official name has no qualifier but the item has a top-level katakana
+  P1814 (653). Total 5,340 lines.
+- `generate_kana_qualifier_remove.py` → `kana_redundant_remove.txt` (REMOVE-only):
+  emits a removal ONLY for statements where SPARQL CONFIRMS the `<base>カミノヤシロ`
+  qualifier is already present, removing the redundant raw `<base>` katakana
+  (sibling qualifier and/or top-level statement). 0 lines now (correct — nothing
+  has the カミノヤシロ qualifier yet); removals appear once adds land. The
+  confirmation is in the SPARQL, so a remove can never precede its add.
+Both files added to `ATOMIC_FILES` (submit + direct fallback) and both generators
+wired into `generate-quickstatements.yml`. The edits flow out only via the single
+QS submitter, and only after the Wikidata freeze lifts (2026-06-06).
+
+Also added CLAUDE.md §"Follow Emma's instructions LITERALLY" — implement her
+stated steps verbatim (don't optimize/merge/guess); the project's hostile APIs
+need the deliberately unintuitive, literal procedure.
+
 ### Removed all bespoke direct-API Wikidata editors — QuickStatements is the only channel
 **Files (deleted):** `modern-quickstatements/{test_wikidata_qualifier,seed_kana_qualifier,append_kaminoyashiro_kana,remove_redundant_kana_statement}.py`, `.github/workflows/{test-wikidata-qualifier,seed-kana-qualifier,append-kaminoyashiro-kana,remove-redundant-kana-statement}.yml`. **Modified:** `.github/workflows/cleanup-loop.yml`, `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`, `CLAUDE.md`.
 

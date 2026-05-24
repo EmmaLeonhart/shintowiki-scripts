@@ -1,5 +1,22 @@
 # CLAUDE.md — conventions for this repo
 
+## Follow Emma's instructions LITERALLY — do not optimize, guess, or improvise
+
+On this project, treat every instruction Emma gives as **completely literal**.
+When she describes a series of steps, implement **exactly that series of steps**,
+in that order, even if it looks roundabout, inefficient, or suboptimal. Do NOT:
+- substitute "a better way" or a cleaner algorithm,
+- collapse/merge steps she listed separately (if she says "two separate
+  scripts", make two separate scripts),
+- infer extra scope or "what she probably meant" from vague-sounding wording —
+  if it's genuinely unclear, ask; otherwise do precisely what was said.
+
+**Why:** this project deals with hostile/uncooperative external APIs and
+data-modelling constraints where the deliberately complicated, unintuitive,
+locally-suboptimal procedure is the one that actually works. The "obvious
+optimization" usually breaks against those constraints. The literal steps exist
+for reasons that aren't always visible from the code. Reproduce them faithfully.
+
 ## Workflow Rules
 
 - **Plan into `queue.md` FIRST, then execute.** When entering planning mode (or any multi-step think-before-do), the FIRST action is to write the plan into `queue.md` as concrete items. Only then begin executing. Chat context dies on session interrupt; the queue survives. This matters extra here because a lot of work is bot-driven sweeps that take a long time and a session may not survive to finish.

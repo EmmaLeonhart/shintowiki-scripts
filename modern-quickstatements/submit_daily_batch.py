@@ -42,6 +42,8 @@ ATOMIC_FILES = [
     "en_labels.txt",                          # Add en labels (Len) for items with a shintowiki page but no en label
     "en_labels_sonnet.txt",                   # Add en labels (Len) machine-translated by the daily remote Sonnet routine (5/day) from ja label + kana
     "label_proposals_drip.txt",               # 20/day random multilingual labels drip-fed from the shinto-label-generator subtree
+    "kana_qualifier_add.txt",                 # Add <kana>カミノヤシロ P1814 qualifier to ojp-hani P1448 official names (bot request 2026-02-26)
+    "kana_redundant_remove.txt",              # Remove redundant raw katakana (qualifier/top-level) AFTER the カミノヤシロ qualifier is confirmed present
     "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
     "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
 ]

@@ -44,6 +44,8 @@ ATOMIC_FILES = [
     "en_labels.txt",
     "en_labels_sonnet.txt",
     "label_proposals_drip.txt",
+    "kana_qualifier_add.txt",
+    "kana_redundant_remove.txt",
 ]
 
 

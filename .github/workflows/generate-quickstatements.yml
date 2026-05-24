@@ -52,6 +52,18 @@ jobs:
         continue-on-error: true
         run: python select_label_proposals.py
 
+      - name: Generate kana-qualifier ADD QuickStatements (カミノヤシロ)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_kana_qualifier_add.py
+
+      - name: Generate kana-qualifier REMOVE QuickStatements (SPARQL-gated)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          sleep 5
+          python generate_kana_qualifier_remove.py
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"
