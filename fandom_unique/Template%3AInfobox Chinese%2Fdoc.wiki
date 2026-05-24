@@ -314,6 +314,7 @@ By default no romanization will show outside of the hide area.  You can call thi
 * showflag=h: this will show '''Hakka''' outside of the hide area.
 
 '''Min'''
+* showflag=tl: this will show '''Tâi-Lô''' outside of the hide area.
 * showflag=poj: this will show '''Hokkien poj''' outside of the hide area.
 * showflag=teo: this will show '''Teochew Peng'im''' outside of the hide area.
 * showflag=buc: this will show '''Fuzhou buc''' outside of the hide area.
@@ -354,7 +355,7 @@ Alternatively, subtemplates for each language can be used inside other templates
 {{Infobox
 ...
 | data =
-{{Infobox Chinese/Korean
+{{Infobox Korean/base
 | hangul            =  
 | hanja             =  
 | rr                =  
@@ -362,7 +363,7 @@ Alternatively, subtemplates for each language can be used inside other templates
 | northkorea        =  
 | lk                =  
 }}
-{{Infobox Chinese/Japanese
+{{Infobox Japanese
 | kanji             =  
 | kyujitai          =  
 | shinjitai         =  
@@ -376,7 +377,7 @@ Alternatively, subtemplates for each language can be used inside other templates
 | nihon             =  
 | l                 =  
 }}
-{{Infobox Chinese/Russian
+{{Infobox Russian
 | rus               =  
 | rusr              =  
 }}
@@ -387,7 +388,7 @@ Alternatively, subtemplates for each language can be used inside other templates
 which gives the following result:
 
 {{Infobox|title=Infobox|data1=
-{{Infobox Chinese/Korean
+{{Infobox Korean/base
   | korean_header     = {{#if: {{{koreanname|}}}|{{{koreanname}}}|Korean name}}
   | hangul            = {{{hangul}}}
   | hanja             = {{{hanja}}}
@@ -396,7 +397,7 @@ which gives the following result:
   | northkorea        = {{#switch: {{{context|}}}|n|north|North|dprk|DPRK|nk=yes}}
   | lk                = {{{lk}}}
   }}
-{{Infobox Chinese/Japanese
+{{Infobox Japanese
   | japanese_header   = {{#if: {{{japanesename|}}}|{{{japanesename}}}|Japanese name}}
   | kanji             = {{{kanji}}}
   | kyujitai          = {{{kyujitai}}}
@@ -410,7 +411,7 @@ which gives the following result:
   | kunrei            = {{{kunrei}}}
   | nihon             = {{{nihon}}}
   }}
-{{Infobox Chinese/Russian
+{{Infobox Russian
   | russian_header    = {{#if: {{{russianname|}}}|{{{russianname}}}|Russian name}}
   | rus               = {{{cyrillic}}}
   | rusr              = {{{romanization}}}
@@ -430,22 +431,12 @@ The collapse parameter allows abbreviated, expandable versions of this template.
 ==Subtemplates used by Infobox Chinese==
 * {{tl|Infobox Chinese/Header}}
 * {{tl|Infobox Chinese/Chinese}}
-* {{tl|Infobox Chinese/Tibetan}}
-* {{tl|Infobox Chinese/Dunganese}}
-* {{tl|Infobox Chinese/Vietnamese}}
-* {{tl|Infobox Chinese/Thai}}
-* {{tl|Infobox Chinese/Korean}}
-* {{tl|Infobox Chinese/Japanese}}
-* {{tl|Infobox Chinese/Blank}}
-* {{tl|Infobox Chinese/Uyghur}}
-* {{tl|Infobox Chinese/Manchu}}
-* {{tl|Infobox Chinese/Russian}}
 * {{tl|Infobox Chinese/Footer}}
 
 ==Related templates==
 * [[Template:Infobox Tibetan-Chinese]]
-* [[Template:Infobox Korean name]]
-* [[Template:Infobox Chinese emperor]]
+* [[Template:Infobox Korean]]
+* [[Template:Infobox royalty]]
 
 == TemplateData ==
 {{collapse top|title=TemplateData}}
@@ -754,7 +745,7 @@ The collapse parameter allows abbreviated, expandable versions of this template.
 		},
 		"altname4": {
 			"label": "Third alternative name title",
-			"example": "[[:en:Courtesy name|Courtesy name]]",
+			"example": "[[Courtesy name|Courtesy name]]",
 			"type": "unbalanced-wikitext"
 		},
 		"altname5": {
@@ -764,7 +755,7 @@ The collapse parameter allows abbreviated, expandable versions of this template.
 		},
 		"lang1": {
 			"label": "First other language",
-			"example": "[[:en:English language|English]]",
+			"example": "[[English language|English]]",
 			"type": "line"
 		},
 		"lang1_content": {
@@ -774,7 +765,7 @@ The collapse parameter allows abbreviated, expandable versions of this template.
 		},
 		"lang2": {
 			"label": "Second other language",
-			"example": "[[:en:French language|French]]",
+			"example": "[[French language|French]]",
 			"type": "line"
 		},
 		"lang2_content": {
@@ -1515,14 +1506,9 @@ The collapse parameter allows abbreviated, expandable versions of this template.
 
 <includeonly>{{sandbox other||
 
-}}</includeonly>
-<noinclude>
 [[Category:Language infobox templates|Chinese]]
 [[Category:Chinese multilingual support templates]]
 [[Category:Embeddable templates]]
-[[Category:Templates]]
-[[Category:Templates fixed with noinclude]]
+
+}}</includeonly>
 [[Category:Independently git synced pages]]
-[[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
-</noinclude>

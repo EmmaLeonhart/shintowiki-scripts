@@ -1244,4 +1244,5 @@ The infobox template requires the [[:mw:Extension:Scribunto|Scribunto]] and [[:m
 [[Category:Independently git synced pages]][[Category:Templates]]
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox/doc|check_date=2026-05-24}}
 </noinclude>
