@@ -49,5 +49,6 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox Japanese clan/doc|check_date=2026-05-24}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>
