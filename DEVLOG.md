@@ -20,10 +20,19 @@ from cleanup-loop (build-run-history now needs only submit-quickstatements), and
 documented the rule in CLAUDE.md ("Wikidata editing — ONE path only, no edit
 summaries"). The QuickStatements pipeline (generate → submit_daily_batch → the
 direct_daily_edits fallback that runs the SAME generated lines) is intact and is
-the sole Wikidata editor. cleanup-loop was briefly disabled during the incident
-and re-enabled after this cleanup. The P459 qualifier work is already covered by
-the QS generators (modern_shrine_ranking_qualifiers.txt); the kana-qualifier work
-must be re-expressed as QuickStatements lines if still wanted (open follow-up).
+the sole Wikidata editor. The P459 qualifier work is already covered by the QS
+generators (modern_shrine_ranking_qualifiers.txt); the kana-qualifier work must
+be re-expressed as QuickStatements lines if still wanted (open follow-up).
+
+**Two-week Wikidata freeze (only Wikidata; everything else keeps running).** Per
+Emma: force-killed every active GitHub Actions run, and added a hard freeze to
+`cleanup-loop.yml`'s window-gate — `wikidata-daily-fire` is forced false until
+**2026-06-06**, so the QS submission (the only Wikidata editor) cannot run on any
+trigger; it auto-resumes after that date. `cleanup-loop` and all other workflows
+stay **enabled and running as normal** (orchestrators, syncs, QS generation) —
+only Wikidata *editing* is held, by the gate. New documented principle (CLAUDE.md):
+**being visible on Wikidata is worse than losing data** — when in doubt, don't
+edit. Also documented the add-first/remove-later-via-SPARQL two-script rule.
 
 ### Split the kana "move" into two independently-safe ops (seed + remove)
 **Files:** `modern-quickstatements/seed_kana_qualifier.py` (renamed from move_kana_to_official_name.py), `modern-quickstatements/remove_redundant_kana_statement.py` (new), `.github/workflows/seed-kana-qualifier.yml` (renamed from move-kana-to-official-name.yml), `.github/workflows/remove-redundant-kana-statement.yml` (new), `.github/workflows/cleanup-loop.yml`, `queue.md`

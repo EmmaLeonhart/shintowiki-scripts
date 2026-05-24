@@ -184,6 +184,20 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   single submitter. Optimise everything toward feeding that one list.
 - If something genuinely cannot be expressed as a QuickStatement, STOP and raise
   it with Emma — do not route around the QS pipeline with a one-off editor.
+- **Visibility is worse than data loss.** Being visible on Wikidata (descriptive
+  edit summaries, an identifiable bespoke bot process) is a worse outcome than
+  losing data. When in doubt, do NOT edit Wikidata. Data loss is acceptable;
+  conspicuous editing is not.
+- **Add-first, remove-later via SPARQL (two scripts, never one).** When work
+  involves both adding and removing (e.g. move a value into a qualifier then drop
+  the source): script 1 only ADDS (generates the add QuickStatements); script 2
+  only REMOVES, and only acts on items where a fresh SPARQL query *confirms the
+  add already landed*. Never add+remove in one action — under the random run
+  order the remove could fire before the add, losing data.
+- **WIKIDATA FREEZE until 2026-06-06.** A two-week hard pause is in effect (set
+  2026-05-23): `cleanup-loop.yml`'s window-gate forces `wikidata-daily-fire=false`
+  until that date, so the QS submission never runs. Do not edit Wikidata (by any
+  means) during the freeze; do not shorten it without Emma's say-so.
 - This rule was added 2026-05-23 after bespoke direct-API editors
   (P459/kana qualifier scripts with descriptive summaries) were built and run;
   they were deleted. Don't reintroduce that shape.
