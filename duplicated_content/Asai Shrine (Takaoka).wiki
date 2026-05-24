@@ -1,0 +1,124 @@
+{{Expand Japanese|浅井神社 (高岡市福岡町赤丸)}}
+
+{{Infobox religious building
+| name = Asai Shrine (Takaoka)
+| native_name = 浅井神社 (高岡市福岡町赤丸)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Asai Shrine (Takaoka)
+| coordinates = {{coord|36.742222222222225|136.93277777777777}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Asai Shrine (Takaoka)'''|浅井神社 (高岡市福岡町赤丸)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Etchū Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
+** Series ordinal: 1842
+* {{ill|Shikinai Shōsha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287}}
+* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182392</ref>
+* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182392</ref>
+** Series ordinal: 1851
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Etchū Province|lt=List of Shikinaisha in Etchū Province|ja|越中国の式内社一覧|qid=Q11636380}}
+** Series ordinal: 7
+** P155: {{ill|Ogami Shrine (Tonami City)|lt=Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|qid=Q11659237}}
+** P156: {{ill|Imizu Shrine|lt=Imizu Shrine|en|Imizu Shrine|ja|射水神社|zh|射水神社|qid=Q11458557}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Etchū Province|lt=Etchū Province|ckb|پارێزگای ئێتچو|cs|Provincie Eččú|de|Provinz Etchū|en|Etchū Province|es|Provincia de Etchū|fa|ولایت اتچو|fr|Province d'Etchū|gl|Provincia de Etchū|id|Provinsi Etchū|it|Etchū|ja|越中国|ko|엣추국|lt|Ečiū žemė|nl|Etchu (provincie)|pt|Província de Etchū|ru|Эттю (провинция)|simple|Etchū Province|sk|Eččú (provincia)|sr|Провинција Ечу|tr|Etchū (vilayet)|uk|Провінція Еттю|vi|Tỉnh Etchū|zh_min_nan|Ettyû-kok|zh_yue|越中國|zh|越中國|qid=Q906899}}
+* {{ill|Tonami district|lt=Tonami district|ja|礪波郡|zh|礪波郡|qid=Q11588138}}
+
+== coordinate location (P625) ==
+
+* {{coord|36.742222222222225|136.93277777777777}}
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 182392
+** P3831: {{ill|Kokugakuin University Shrine database|lt=Kokugakuin University Shrine database|qid=Q135159299}}
+
+== modern shrine ranking (P13723) ==
+
+* {{ill|Gō-sha|lt=Gō-sha|qid=Q134917316}}
+
+== said to be the same as (P460) ==
+
+* {{ill|Asawino Shrine|lt=Asawino Shrine|qid=Q135040356}}
+
+==References==
+
+[[JA:浅井神社 (高岡市福岡町赤丸)]]
+
+{{wikidata link|Q134925834|ja|浅井神社 (高岡市福岡町赤丸)|check_date=2026-05-13}}
+
+{{translated page|ja|浅井神社 (高岡市福岡町赤丸)|version=107330545|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
+{{神社
+| 名称 = 浅井神社
+| 画像 = [[File:赤丸浅井神社の大ケヤキ - panoramio.jpg|250px|社殿と大けやき]]
+| 所在地 = {{jalink|富山県|Q132929}}{{jalink|高岡市|Q502988}}{{jalink|福岡町 (富山県)|Q4844936|福岡町}}赤丸5324
+| 位置 = {{WikidataCoord}}
+| 祭神 = {{jalink|葦那陀迦神|Q55533749|八河江比売神}}、{{jalink|タカミムスビ||高皇産霊神}}
+| 神体 = 
+| 社格 = {{jalink|式内社}}論社、旧{{jalink|郷社}}
+| 創建 = {{jalink|養老|Q1373061}}年間
+| 本殿 = 
+| 別名 = 
+| 札所等 = 
+| 例祭 = 
+| 神事 = 
+|地図 = {{Location map|Japan Toyama|label=浅井神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''浅井神社'''（あさいじんじゃ）は、{{jalink|富山県|Q132929}}{{jalink|高岡市|Q502988}}{{jalink|福岡町 (富山県)|Q4844936|福岡町}}赤丸（あかまる）にある{{jalink|神社|Q845945}}。地名を冠して'''赤丸浅井神社'''（あかまるあさいじんじゃ）ともいう。
+
+== 祭神 ==
+* {{jalink|葦那陀迦神|Q55533749|八河江比売神}}
+* {{jalink|タカミムスビ||高皇産霊神}}
+
+== 歴史 ==
+{{jalink|養老|Q1373061}}年間の創建とされる<ref>[https://www.takaoka.or.jp/viewpoint/archives/895 赤丸浅井神社] 高岡市観光ポータルサイト「たかおか道しるべ」</ref>。
+
+近隣の高岡市石堤にある{{jalink|浅井神社 (高岡市石堤)|Q115187945|浅井神社}}とともに、{{jalink|延喜式神名帳|Q11064932}}の{{jalink|越中国|Q906899}}{{jalink|礪波郡|Q11588138}}「浅井神社」に比定される神社であり、どちらを式内社とするかは論争がある。
+
+== 文化財 ==
+* 赤丸浅井神社の大けやき（富山県指定天然記念物）
+* 浅井神社の杉並木（高岡市指定天然記念物）
+
+== 脚注 ==
+{{脚注ヘルプ}}
+{{Reflist}}
+
+== 関連項目 ==
+* {{jalink|神社一覧|Q2517815}}
+
+== 外部リンク ==
+* [https://www.takaoka.or.jp/viewpoint/archives/895 赤丸浅井神社] 高岡市観光ポータルサイト「たかおか道しるべ」
+
+==End Japanese==
+[[Category:高岡市の神社]]
+[[Category:富山県の旧郷社]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Etchū Province]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
