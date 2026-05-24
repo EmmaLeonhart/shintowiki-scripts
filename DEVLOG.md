@@ -6,6 +6,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-23
 
+### Root cleanup & reorganization — decluttered the repo root
+**Files:** moved `API.md` `HISTORY.md` `SCRIPTS.md` `SHINTOWIKI_STRUCTURE.md` `SYNCING.md` `VISION.md` `crashed_session_2026-05-20.md` → `docs/`; `generate_pages.py` → `site/generate_pages.py`; `import_commons_wantedfiles_to_fandom.py` `import_template_list_to_fandom.py` `"templates to import to fandom.txt"` → `fandom/`; `EmmaBot.wiki` → `shinto_miraheze/`; `import_to_fandom.py` `test_fandom_login.py` `process_dupl.py` → `archive/`; `wikidata_scripts_archive/` → `archive/wikidata_scripts/`. Deleted `_scratch_classify_round3.py` `err.log` root-orphan `"Main Page.wiki"` `p459_missing_qualifiers.txt` root `reports/`. Edited `site/generate_pages.py` (SITE_DIR → repo-root `_site/`), `fandom/import_template_list_to_fandom.py` (INPUT_FILE → `__file__`-relative), `shinto_miraheze/update_bot_userpage_status.py` (default template path → `__file__`-relative), `.github/workflows/{generate-pages,fandom-cleanup,import-templates-to-fandom}.yml`, `README.md`, `docs/SCRIPTS.md`, `CLAUDE.md`, `todo.md`, `archive/README.md` (new).
+
+Emma flagged that crud had accumulated in the root, obscuring what's actually
+live. Cleaned it up per her three calls: reference docs → `docs/`; pure
+scratch/stale deleted, reusable retired tools archived; live CI-referenced
+scripts moved into purpose-named dirs (`site/`, `fandom/`) with every reference
+rewired (workflow invocation paths + internal `__file__`-relative path fixes).
+`remote_queue.py` + `remote_queue.json` + `consume_remote_queue.state` stay in
+root deliberately — the claude.ai remote routine reads the JSON at repo root and
+its prompt can't be edited from here. Root is now down to core docs, the
+remote-queue trio, and dotfiles. All file moves used `git mv` (history
+preserved). Added a **"Repository layout & organizational discipline"** section
+to `CLAUDE.md` mandating stricter file-structure discipline going forward:
+defines what the root is reserved for, a where-things-live table, and rules
+(new files into the right subdir, co-locate scripts with their data, grep+fix
+references on every move, archive don't litter, ask if unsure).
+
 ### Kana qualifier work, redone the RIGHT way — as QuickStatements generators
 **Files:** `modern-quickstatements/generate_kana_qualifier_add.py` (new), `modern-quickstatements/generate_kana_qualifier_remove.py` (new), `modern-quickstatements/{kana_qualifier_add.txt,kana_redundant_remove.txt}` (new), `modern-quickstatements/{submit_daily_batch,direct_daily_edits}.py`, `.github/workflows/generate-quickstatements.yml`, `CLAUDE.md`
 

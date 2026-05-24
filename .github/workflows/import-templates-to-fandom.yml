@@ -1,6 +1,6 @@
 name: Import Templates to Fandom
 
-# Walks ``templates to import to fandom.txt`` and pushes each entry's
+# Walks ``fandom/templates to import to fandom.txt`` and pushes each entry's
 # full revision history from shinto.miraheze.org to shinto.fandom.com
 # via Special:Export -> action=import. Unlike the orchestrator's
 # fandom_mirror op (which is gated inside history_offload and refuses
@@ -81,7 +81,7 @@ jobs:
 
       - name: Import templates to fandom
         run: |
-          python3 import_template_list_to_fandom.py \
+          python3 fandom/import_template_list_to_fandom.py \
             --apply \
             --max-edits "${MAX_EDITS}" \
             --run-tag "${RUN_TAG}" \

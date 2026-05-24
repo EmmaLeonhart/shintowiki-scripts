@@ -47,7 +47,12 @@ USER_AGENT = (
 )
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # fandom action=import hard cap
 
-INPUT_FILE = "templates to import to fandom.txt"
+# Input list lives next to this script (fandom/); resolve relative to __file__
+# so the cwd doesn't matter. State stays under shinto_miraheze/ (cwd-relative,
+# repo root in CI) because commit_state.sh globs *.state there.
+INPUT_FILE = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "templates to import to fandom.txt"
+)
 STATE_FILE = os.path.join(
     "shinto_miraheze", "import_template_list_to_fandom.state"
 )

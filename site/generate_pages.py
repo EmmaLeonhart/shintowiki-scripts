@@ -26,7 +26,10 @@ from urllib3.util.retry import Retry
 WIKI_URL = "https://shinto.miraheze.org"
 WIKI_API = f"{WIKI_URL}/w/api.php"
 USER_AGENT = "ShintowikiPages/1.0 (User:EmmaBot; shinto.miraheze.org)"
-SITE_DIR = os.path.join(os.path.dirname(__file__), "_site")
+# This script lives in site/; the published output dir is _site/ at the repo
+# root (the Pages deploy workflow copies/commits repo-root _site/).
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE_DIR = os.path.join(REPO_ROOT, "_site")
 REPO_URL = "https://github.com/EmmaLeonhart/shintowiki-scripts"
 PAGES_URL = "https://emmaleonhart.github.io/shintowiki-scripts"
 

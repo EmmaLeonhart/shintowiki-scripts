@@ -1,6 +1,6 @@
 # Todo
 
-Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG.md](DEVLOG.md). See [VISION.md](VISION.md) for the broader architecture plan.
+Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG.md](DEVLOG.md). See [VISION.md](docs/VISION.md) for the broader architecture plan.
 
 ---
 
@@ -189,7 +189,7 @@ All items below require manual editing or human review. None have a safe automat
 
 ## Longer term (architecture)
 
-These are tracked in detail in [VISION.md](VISION.md). Listed here for completeness.
+These are tracked in detail in [VISION.md](docs/VISION.md). Listed here for completeness.
 
 - [ ] **Namespace restructure** — introduce `Data:`, `Meta:`, `Export:` namespaces per the VISION.md plan. Script `populate_namespace_layers.py` is ready but gated behind `--enable-namespace-layers` flag until namespaces are created on the wiki. Currently creates `Data:` (JSON with QID) and `Export:` (wikitext copy) pages from mainspace.
 - [ ] **Move `{{ill}}` export data to `Export:` namespace** — simplify mainspace to plain `[[links]]`; keep the ILL/QID data in `Export:` pages only

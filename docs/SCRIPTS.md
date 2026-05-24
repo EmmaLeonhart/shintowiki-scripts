@@ -146,12 +146,16 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 
 ---
 
-## Root directory
+## Top-level helper scripts (outside shinto_miraheze/)
 
 | Script / File | Status | Description |
 |---------------|--------|-------------|
-| `generate_pages.py` | ACTIVE | Generates the main GitHub Pages site (`_site/`): project overview, P11250 QuickStatements page. |
-| `EmmaBot.wiki` | ACTIVE | Wiki template for `User:EmmaBot` status block. Used by `update_bot_userpage_status.py`. |
+| `site/generate_pages.py` | ACTIVE | Generates the main GitHub Pages site (repo-root `_site/`): project overview, P11250 QuickStatements page. Run by `generate-pages.yml`. |
+| `shinto_miraheze/EmmaBot.wiki` | ACTIVE | Wiki template for `User:EmmaBot` status block. Read by `update_bot_userpage_status.py` (co-located). |
+| `fandom/import_template_list_to_fandom.py` | ACTIVE | Imports each entry of `fandom/templates to import to fandom.txt` (history) miraheze→fandom. Run by `import-templates-to-fandom.yml`. State in `shinto_miraheze/`. |
+| `fandom/import_commons_wantedfiles_to_fandom.py` | ACTIVE | Uploads Commons wanted-files to fandom. Run by `fandom-cleanup.yml`. |
+| `remote_queue.py` | ACTIVE | Builds `remote_queue.json` at repo root (consumed in place by the claude.ai remote routine, which is why both stay in root). Run by `build-remote-queue.yml`. |
+| `archive/` | RETIRED | One-off / superseded scripts not wired into CI — see `archive/README.md`. |
 
 ---
 

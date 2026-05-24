@@ -45,7 +45,7 @@ jobs:
           ls -la modern-quickstatements/_site/ 2>/dev/null || echo "WARNING: no _site/ files in repo either"
 
       - name: Generate main site
-        run: python3 generate_pages.py
+        run: python3 site/generate_pages.py
 
       - name: Generate run history page
         working-directory: modern-quickstatements

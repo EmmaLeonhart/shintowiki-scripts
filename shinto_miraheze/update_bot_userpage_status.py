@@ -15,7 +15,12 @@ WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot@EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 STATUS_PAGE = os.getenv("WIKI_STATUS_PAGE", "User:EmmaBot")
-BASE_PAGE_PATH = os.getenv("WIKI_STATUS_TEMPLATE_PATH", "EmmaBot.wiki")
+# EmmaBot.wiki lives next to this script (shinto_miraheze/); resolve relative
+# to __file__ so it's found regardless of cwd. Override with WIKI_STATUS_TEMPLATE_PATH.
+BASE_PAGE_PATH = os.getenv(
+    "WIKI_STATUS_TEMPLATE_PATH",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "EmmaBot.wiki"),
+)
 START_MARKER = "<!-- BOT-RUN-STATUS:START -->"
 END_MARKER = "<!-- BOT-RUN-STATUS:END -->"
 IMMEDIATE_START = "<!-- BOT-IMMEDIATE:START -->"

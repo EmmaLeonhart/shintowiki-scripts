@@ -39,18 +39,35 @@ A separate workflow, `generate-pages.yml`, builds and deploys the GitHub Pages s
 
 ## Repository structure
 
+The root is kept deliberately small: only core docs + workflow files, the
+remote-queue files (read in place by the claude.ai routine), and dotfiles.
+Everything else lives in a purpose-named directory.
+
 ```
 shintowiki-scripts/
-├── .github/workflows/          # GitHub Actions workflow chain (9 files)
-├── shinto_miraheze/            # Wiki editing bot scripts (46 Python, 3 shell)
+├── .github/workflows/          # GitHub Actions workflow chain (the pipeline)
+├── shinto_miraheze/            # Wiki-editing bot scripts — the main bot
+│   ├── orchestrators/          #   per-namespace sweepers, ops/, *.state
+│   └── EmmaBot.wiki            #   User:EmmaBot status-page template
 ├── modern-quickstatements/     # Wikidata QuickStatements generation + submission
-│   ├── reports/                # JSON run reports from QS submissions
-│   └── _site/                  # Generated QS dashboard pages
-├── _site/                      # GitHub Pages output (generated at build time, not committed)
-├── generate_pages.py           # Generates the main GitHub Pages site
-├── EmmaBot.wiki                # Wiki template for User:EmmaBot status updates
-└── docs: README.md, SCRIPTS.md, API.md, SHINTOWIKI_STRUCTURE.md,
-          HISTORY.md, VISION.md, todo.md, DEVLOG.md
+│   ├── reports/                #   JSON run reports from QS submissions
+│   └── _site/                  #   generated QS dashboard pages
+├── site/generate_pages.py      # Builds the main GitHub Pages dashboard (→ _site/)
+├── fandom/                     # shinto.fandom import scripts + their input list
+├── shinto-label-generator/     # Sub-project: multilingual shrine-label QuickStatements
+├── _site/                      # GitHub Pages output (committed; updated by CI)
+├── docs/                       # Reference docs (see Documentation below)
+├── archive/                    # Retired / one-off scripts — NOT wired into CI
+│
+│   # Wiki ↔ repo content-sync dirs (one <title>.wiki per page; see docs/SYNCING.md):
+├── need_translation/  git_synced/  miraheze_unique/  fandom_unique/  duplicated_content/
+│
+│   # Root files (kept minimal):
+├── README.md  CLAUDE.md  DEVLOG.md  todo.md  queue.md
+├── remote_queue.py + remote_queue.json + consume_remote_queue.state
+│                               #   built here; the claude.ai remote routine reads
+│                               #   the JSON at the repo root, so these stay in root
+└── !runClaude.bat  .gitignore  .gitattributes  .nojekyll
 ```
 
 ---
@@ -170,10 +187,10 @@ Deployed via `generate-pages.yml` (daily at 00:30 UTC). The `build-run-history.y
 
 | Page | URL | Source |
 |------|-----|--------|
-| Project overview | [index](https://emmaleonhart.github.io/shintowiki-scripts/) | `generate_pages.py` — automation status + P11250 overview |
+| Project overview | [index](https://emmaleonhart.github.io/shintowiki-scripts/) | `site/generate_pages.py` — automation status + P11250 overview |
 | Shrine ranking dashboard | [shrine-ranking](https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html) | `modern-quickstatements/_site/index.html` — P13723/P958 QuickStatements status (renamed during Pages build) |
 | Run history | [runs](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) | `generate_run_history.py` — QS submission history with outcome badges |
-| P11250 QuickStatements | [p11250](https://emmaleonhart.github.io/shintowiki-scripts/p11250.html) | `generate_pages.py` — copy-paste QuickStatements for Wikidata P11250 |
+| P11250 QuickStatements | [p11250](https://emmaleonhart.github.io/shintowiki-scripts/p11250.html) | `site/generate_pages.py` — copy-paste QuickStatements for Wikidata P11250 |
 
 ---
 
@@ -209,7 +226,7 @@ Used by `submit-quickstatements.yml` to submit atomic QuickStatements batches.
 pip install mwclient requests
 ```
 
-Scripts are designed for CI execution. For local testing, set `WIKI_USERNAME` and `WIKI_PASSWORD` environment variables. See [API.md](API.md) for access patterns.
+Scripts are designed for CI execution. For local testing, set `WIKI_USERNAME` and `WIKI_PASSWORD` environment variables. See [API.md](docs/API.md) for access patterns.
 
 ---
 
@@ -217,10 +234,12 @@ Scripts are designed for CI execution. For local testing, set `WIKI_USERNAME` an
 
 | File | Contents |
 |------|----------|
-| [SCRIPTS.md](SCRIPTS.md) | Full catalog of all scripts with status |
-| [API.md](API.md) | How every external service is accessed |
-| [SHINTOWIKI_STRUCTURE.md](SHINTOWIKI_STRUCTURE.md) | Page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, categories, templates, talk pages |
-| [HISTORY.md](HISTORY.md) | Wiki development timeline and context |
-| [VISION.md](VISION.md) | Architecture plan and future direction |
+| [docs/SCRIPTS.md](docs/SCRIPTS.md) | Full catalog of all scripts with status |
+| [docs/API.md](docs/API.md) | How every external service is accessed |
+| [docs/SHINTOWIKI_STRUCTURE.md](docs/SHINTOWIKI_STRUCTURE.md) | Page structure on shintowiki: `{{ill}}`, `{{wikidata link}}`, QID redirects, categories, templates, talk pages |
+| [docs/SYNCING.md](docs/SYNCING.md) | Every wiki↔repo↔Wikidata sync pathway, direction, and conflict policy |
+| [docs/HISTORY.md](docs/HISTORY.md) | Wiki development timeline and context |
+| [docs/VISION.md](docs/VISION.md) | Architecture plan and future direction |
 | [todo.md](todo.md) | Prioritized list of open tasks |
+| [queue.md](queue.md) | Active-session work queue (bounds scope) |
 | [DEVLOG.md](DEVLOG.md) | Running log of all significant operations |

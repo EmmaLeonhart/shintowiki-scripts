@@ -85,7 +85,7 @@ jobs:
           if [ "${MAX_UPLOADS}" != "0" ] && [ -n "${MAX_UPLOADS}" ]; then
             MAX_UPLOADS_FLAG="--max-uploads ${MAX_UPLOADS}"
           fi
-          python3 import_commons_wantedfiles_to_fandom.py \
+          python3 fandom/import_commons_wantedfiles_to_fandom.py \
             --apply \
             --max-edits "${MAX_EDITS}" \
             ${MAX_UPLOADS_FLAG} \

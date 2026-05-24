@@ -27,6 +27,57 @@ for reasons that aren't always visible from the code. Reproduce them faithfully.
 - **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` is longer-horizon. When pulling from `todo.md`, decompose the abstract goal into concrete executable steps before putting it in `queue.md`.
 - **Items handed off to an autonomous backlog are deleted from `queue.md`.** When bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, etc.) is wired into `remote_queue.json` for the remote-Claude cron to consume, the work item leaves `queue.md` — its life is now in the autonomous queue, and duplicating the description in both places is bloat. Keep `queue.md` for items the *human* still needs to track (specific tooling tasks, decisions, scoping questions).
 
+## Repository layout & organizational discipline
+
+**Keep stricter organizational discipline with the file structure than this
+project has historically.** Crud (scratch scripts, stale output `.txt`, one-off
+data dumps, empty placeholder dirs, orphaned `.wiki` files, retired tools)
+accumulated in the repo root over time and made it hard to tell what is actually
+live. Do not let that happen again. The root was cleaned up on 2026-05-23 — keep
+it clean.
+
+**The root is reserved for a small, fixed set.** Only these belong loose in the
+repo root:
+
+* Core docs / workflow files: `README.md`, `CLAUDE.md`, `DEVLOG.md`, `todo.md`,
+  `queue.md`.
+* Remote-queue files: `remote_queue.py`, `remote_queue.json`,
+  `consume_remote_queue.state`. These **must** stay in root — the claude.ai
+  remote routine reads `remote_queue.json` at the repo root and its prompt
+  can't be edited from this repo, and `remote_queue.py` writes the JSON next to
+  itself.
+* Dotfiles / launcher: `.gitignore`, `.gitattributes`, `.nojekyll`,
+  `!runClaude.bat`.
+
+**Everything else goes in a purpose-named directory.** Where things live:
+
+| Kind of thing | Goes in |
+|---|---|
+| Wiki-editing bot sweep scripts + orchestrators + `*.state` | `shinto_miraheze/` |
+| Wikidata QuickStatements generation/submission | `modern-quickstatements/` |
+| GitHub Pages site generator | `site/` |
+| shinto.fandom import scripts + their input lists | `fandom/` |
+| Multilingual shrine-label sub-project | `shinto-label-generator/` |
+| Reference docs (anything beyond the 5 core root docs) | `docs/` |
+| Retired / one-off / superseded scripts (NOT wired into CI) | `archive/` |
+| Wiki↔repo per-page content sync | the named dir (`need_translation/`, `git_synced/`, `miraheze_unique/`, `fandom_unique/`, `duplicated_content/`) |
+
+**Rules:**
+
+* **New files go straight into the right subdir** — never drop a new script,
+  data file, or generated output loosely in the root "for now."
+* **A script and the data/template it owns live together** (e.g. an input
+  `.txt` next to its consumer; resolve such paths `__file__`-relative, not
+  cwd-relative), *except* `*.state` files, which stay in `shinto_miraheze/` so
+  `commit_state.sh` commits them.
+* **When you move a referenced file, grep the whole repo and fix every
+  reference** (workflows, scripts' internal paths, doc links) in the same
+  change. Use `git mv` so history is preserved.
+* **Delete scratch/stale; archive reusable-but-retired tools** into `archive/`
+  rather than leaving them in root.
+* **If you're unsure where something belongs, ask** — do not default to the
+  root.
+
 ## Runtime environment
 
 * **Wiki bot scripts run on GitHub Actions**, not locally. Auth is
