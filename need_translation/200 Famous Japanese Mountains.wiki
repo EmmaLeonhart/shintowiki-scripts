@@ -1,0 +1,142 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=200_Famous_Japanese_Mountains for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
+{{Expand Japanese|日本二百名山|date=November 2025}}
+
+{{wikidata link|Q11086204|ja|日本二百名山|zh|日本二百名山|en|200 Famous Japanese Mountains|check_date=2026-05-13}}
+
+{{translated page|ja|日本二百名山|version=98657000|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
+'''日本二百名山'''（にほんにひゃくめいざん）とは、{{jalink|深田久弥|Q3201034}}のファン組織「深田クラブ」によって、クラブ創立10周年を記念して{{jalink|1984年|Q2432}}（{{jalink|昭和|Q327567}}59年）に選定された日本の代表的な200の{{jalink|山|Q8502}}である<ref>{{Cite book|和書 |author=深田クラブ |year=1987 |title=日本二百名山 |publisher={{jalink|昭文社|Q11514182}} |pages= |isbn=4-398-22001-1}}</ref>。
+
+選定に際しては、深田久弥が選んだ{{jalink|日本百名山|Q1156761}}と、{{jalink|日本山岳会|Q11507985}}が選定した{{jalink|日本三百名山|Q11507122}}（日本百名山に二百座を加えたもの）がベースとなっている。日本百名山は無条件で認定され、三百名山の残り二百座から深田クラブの会員投票で上位百座が選ばれた。さらに選定委員会で投票結果から数座を入れ替え99座({{jalink|山上ヶ岳}}は含まれない)と、三百名山には選ばれなかった{{jalink|荒沢岳|Q31707359}}の1座を加え、百名山を含めて合計200座が選定された。
+
+そもそもの一般登山道と呼べるようなものがなく、残雪期等にしか登れない山、登山道はあるが山頂まで最短の登山口からでも往復7時間以上を要し、累積標高差が1500mを優に超える山など、標高こそ低いが百名山に比べて難易度の高い山が多い。深田久弥が「日本百名山」のあとがきで選出候補に挙げていた山はほぼすべてが選ばれている({{jalink|ウペペサンケ山|Q6924266}}など一部除く)一方、深田が最期まで登頂できなかった{{jalink|荒沢岳|Q31707359}}、{{jalink|笊ヶ岳|Q11599505}}、{{jalink|茅ヶ岳|Q8545740}}等の山々が含まれる。
+
+== 日本二百名山一覧 ==
+日本百名山に含まれるものを除く。
+
+{{Module|山岳一覧|
+	天塩岳/て:しお:だけ,142.8881/43.9644,Mount_Teshio.JPG,1558,北海道
+	石狩岳/いし:かり:だけ,143.0222/43.5467,Mount_Ishikari_from_Nipesotsu-Maruyama_Volcanic_Group_2005-08-17.jpg,1967,北海道
+	ニペソツ山/に:ぺ:そ:つ:やま,143.0322/43.4558,Nipesotsuyama_from_Tengudake_2005-8-17.jpg,2013,北海道
+	カムイエクウチカウシ山/か:む:い:え:く:う:ち:か:う:し:やま,142.7664/42.6250,Mt KAMUEKU 3.JPG,1979,北海道
+	ペテガリ岳/ぺ:て:が:り:だけ,142.8711/42.4994,Mt_PETEGARI.JPG,1736,北海道
+	芦別岳/あし:べつ:だけ,142.2836/43.2358,Mt.Ashibetsu.JPG,1727,北海道
+	夕張岳/ゆう:ばり:だけ,142.2511/43.0997,夕張岳と釣鐘岩 (Mount Yubari with Tsurigane Rock) - panoramio.jpg,1668,北海道
+	暑寒別岳/しょ:かん:べつ:だけ,141.5231/43.7158,南暑寒岳から暑寒別岳を望む.jpg,1492,北海道
+	樽前山/たる:まえ:さん,141.3767/42.6906,Mt.tarumaezan.JPG,1041,北海道
+	駒ケ岳/こま:が:たけ/北海道駒ヶ岳,140.6772/42.0633,Ōnuma-Kōen01.jpg,1131,北海道
+	白神岳/しら:かみ:だけ,140.0183/40.5075,Sirakami dake.JPG,1235,青森県
+	姫神山/ひめ:かみ:さん/姫神山_(岩手県),141.2469/39.8442,Mount Himekami seen from the WNW (2009-03-21).JPG,1124,岩手県
+	秋田駒ヶ岳/あき:た:こま:が:たけ,140.7994/39.7611,Mt.Akitakoma from Mt.Yumori.jpg,1637,秋田県
+	和賀岳/わ:が:だけ,140.7542/39.5703,和賀岳.jpg,1440,岩手県/秋田県
+	焼石岳/やけ:いし:だけ,140.8289/39.1636,Yakiisidake.jpg,1548,岩手県
+	栗駒山/くり:こま:やま,140.7883/38.9608,名残ヶ原からの須川岳（栗駒山） Peak Sukawa(Mt. Kurikoma) from Nagoriga-hara marsh - panoramio.jpg,1627,岩手県/宮城県
+	神室山/か:むろ:さん,140.4922/38.9022,kamuroyama.jpg,1365,秋田県/山形県
+	森吉山/もり:よし:ざん,140.5442/39.9767,Moriyoshizan viewing from Takanosu.jpg,1454,秋田県
+	以東岳/い:とう:だけ,139.8492/38.3431,Ito-dake_(7792110566).jpg,1771,山形県/新潟県
+	船形山/ふな:がた:やま,140.6197/38.4556,Mt_FUNAGATA.jpg,1500,宮城県/山形県
+	朳差岳/えぶり:さし:だけ,139.6089/37.9425,Mt._Eburisashidake.jpg,1636,新潟県
+	二王子岳/に:のう:じ:だけ,139.4992/37.8997,Mt.Ninojidake from Mt.Yakemineyama.jpg,1420,新潟県
+	御神楽岳/み:2かぐら:だけ,139.4258/37.5219,Mt._Mikaguradake_0810.JPG,1387,新潟県
+	守門岳/す:もん:だけ,139.1367/37.3978,入広瀬村からの守門岳.jpg,1537,新潟県
+	中ノ岳/なか:の:だけ,139.0775/37.0853,Mt.Nakanodake from Mt.Makihatayama.jpg,2085,新潟県
+	八海山/はっ:かい:さん,139.0247/37.1039,八海山.jpg,1778,新潟県
+	荒沢岳/あら:さわ:だけ,139.1481/37.1006,Arasawadake-edit1.jpg,1969,新潟県
+	佐武流山/さ:ぶ:りゅう:やま,138.6706/36.7722,Mt.Saburuyama from Mt.Shirasunayama.jpg,2192,新潟県/長野県
+	鳥甲山/とり:かぶと:やま,138.5839/36.8392,Mount_Torikabuto.jpg,2038,長野県
+	帝釈山/たい:しゃく:さん,139.4600/36.9697,帝釈山03.JPG,2060,福島県/栃木県
+	会津朝日岳/あい:づ:あさ:ひ:だけ,139.3397/37.2211,Aizuasahidake_080910.JPG,1624,福島県
+	女峰山/にょ:ほう:さん,139.5364/36.8114,Mt Nyoho viewing from Nikko City.jpg,2483,栃木県
+	仙ノ倉山/せん:の:くら:やま,138.8394/36.8175,仙ノ倉岳.jpg,2026,群馬県/新潟県
+	白砂山/しら:すな:やま,138.6933/36.7381,堂岩山を越えたところからの白砂山.jpg,2140,群馬県/長野県
+	岩菅山/いわ:すげ:やま,138.5594/36.7419,Mount_Iwasuge.jpg,2295,長野県
+	浅間隠山/あさ:ま:かくし:やま,138.6525/36.4536,Mt_Asamakakushi.JPG,1757,群馬県
+	榛名山/はる:な:さん,138.8508/36.4772,Mount Haruna view from Hokkitsu Onsen Tachibana no sato Shiroyama.jpg,1449,群馬県
+	妙義山/みょう:ぎ:さん,138.7489/36.2986,Myogi Furusato Art Museum 2.jpg,1104,群馬県
+	荒船山/あら:ふね:やま,138.6372/36.2039,Mt.Arafune.JPG,1423,群馬県/長野県
+	御座山/お:ぐら:さん,138.6067/36.0339,Mt.Ogura 01.jpg,2112,長野県
+	武甲山/ぶ:こう:さん,139.0978/35.9517,Mount Buko 20140517 - Flickr.jpg,1304,埼玉県
+	白石山/はく:せき:さん/和名倉山,138.8781/35.8994,妙法が岳からの白石山（和名倉山）.jpg,2036,埼玉県
+	茅ヶ岳/かや:が:だけ,138.5139/35.7950,Mt.Kayagatake_from_Mt.Akadake_01.jpg,1704,山梨県
+	乾徳山/けん:とく:さん,138.7150/35.8231,Mt_Kentokusan.JPG,2031,山梨県
+	大岳山/おお:だけ:さん/大岳山_(東京都),139.1303/35.7653,Mount Otake 2011-01-08 - panoramio.jpg,1267,東京都
+	三ッ峠山/み:つ:とうげ:やま/三つ峠,138.8092/35.5492,Mt_Mitsutouge.JPG,1785,山梨県
+	御正体山/み:しょう:たい:やま,138.9317/35.4869,Mt.Mishotai_from_Mt.Nabewari.jpg,1682,山梨県
+	毛無山/け:なし:さん/毛無山_(山梨県・静岡県),138.5439/35.4158,Mount_Kenashi_from_view_Shizuoka.jpg,1946,山梨県/静岡県
+	愛鷹山/あし:たか:やま,138.7939/35.2381,Mount Ashitaka 20120122.jpg,1504,静岡県
+	天狗岳/てん:ぐ:だけ,138.3556/36.0192,YatsugatakeTengudake.JPG,2646,長野県
+	黒姫山/くろ:ひめ:やま/黒姫山_(長野県),138.1272/36.8133,Mt.Kurohime yama.jpg,2053,長野県
+	戸隠山/と:がくし:やま,138.0550/36.7703,161009 Kagami-ike Togakushi Nagano Japan01s3.jpg,1904,長野県
+	飯縄山/いい:づな:やま,138.1336/36.7394,160430 Daizahoushi-ike Nagano Japan03s3.jpg,1917,長野県
+	雪倉岳/ゆき:くら:だけ,137.7542/36.7947,Yukikuradake_from_Shiroumadake_2000-7-31.jpg,2611,新潟県/富山県
+	針ノ木岳/はり:の:き:だけ,137.6844/36.5381,Lake_Kurobe01s4592.jpg,2821,富山県/長野県
+	烏帽子岳/え:ぼ:し:だけ/烏帽子岳_(飛騨山脈),137.6508/36.4794,Eboshidake_from_Niseeboshidake1997-8-14.jpg,2628,富山県/長野県
+	赤牛岳/あか:うし:だけ,137.6033/36.4617,Mount_Akaushi_from_suishodake_1999-8-9.jpg,2864,富山県
+	毛勝山/け:かち:やま,137.5908/36.7011,Three_Kekachi_Mountains.jpg,2414,富山県
+	奥大日岳/おく:だい:にち:だけ,137.5808/36.5983,Mt_Oku-dainichi01s4592.jpg,2611,富山県
+	有明山/あり:あけ:やま/有明山_(安曇野市・松川村),137.7706/36.3911,Mount_Ariake_from_Kisakusindo_2004-5-1.JPG,2268,長野県
+	餓鬼岳/が:き:だけ,137.7361/36.4472,Gakidake_from_Kassenone_1996-4-29.jpg,2647,長野県
+	燕岳/つばくろ:だけ,137.7128/36.4069,Mt.Tsubakurodake_from_Enzansou_01.jpg,2763,長野県
+	大天井岳/お:てん:しょう:だけ,137.7011/36.3650,Otenshodake_from_Enzanso_1999-5-9.jpg,2922,長野県
+	霞沢岳/かすみ:ざわ:だけ,137.6406/36.2211,Mount Kasumizawa from Mount Nishihotaka 1995-05-03.jpg,2646,長野県
+	鋸岳/のこぎり:だけ/鋸岳_(赤石山脈),138.2101/35.7790,Mount_Nokogiri_from_Kosenjo_2004-1-4.jpg,2685,山梨県/長野県
+	農鳥岳/のう:とり:だけ,138.2369/35.6211,Noutoridake_from_ainodake_1996_7_29.jpg,3026,山梨県/静岡県
+	上河内岳/かみ:2こうち:だけ,138.1528/35.3897,Kamikoutidake_from_hijiridake_2001_9_25.jpg,2803,長野県/静岡県
+	池口岳/いけ:ぐち:だけ,138.0383/35.3303,Mt.Ikeguchidake.jpg,2392,長野県/静岡県
+	大無間山/だい:む:げん:ざん,138.1617/35.2561,Mount_Daimugen_from_Mount_Hijiri_(zoom).JPG,2329,静岡県
+	櫛形山/くし:がた:やま/櫛形山_(山梨県),138.3692/35.5867,Mount Kushigata View from Asahara bridge.JPG,2052,山梨県
+	笊ヶ岳/ざる:が:たけ,138.2594/35.4242,Mount_Zaru_and_Mount_Nunobiki_from_Mount_Kamikochi_2003-11-22.jpg,2629,山梨県/静岡県
+	七面山/しち:めん:ざん,138.3489/35.3694,Mount_Shichimensan.jpg,1989,山梨県
+	小秀山/こ:ひで:やま,137.3969/35.7856,Mount Kohide from Mount Futatsumori.jpg,1982,長野県/岐阜県
+	経ヶ岳/きょう:が:たけ/経ヶ岳_(長野県),137.8625/35.9128,Kyougatake_cyuuou_Alps_2009-4-30.jpg,2296,長野県
+	南駒ヶ岳/みなみ:こま:が:たけ,137.8108/35.7014,Minamikomagatake_from_Kosumoyama_2008-9-23.jpg,2841,長野県
+	安平路山/あん:ぺい:じ:やま,137.7744/35.6306,Anpeijiyama_from_Minamikosumoyama_2008-9-23.jpg,2363,長野県
+	金剛堂山/こん:ごう:どう:ざん,137.0489/36.3789,Mt_Kongodozan.JPG,1650,富山県
+	笈ヶ岳/おいずる:が:だけ,136.7922/36.2986,Oidurugatake_from_notanishoujiyma_2010_04_18.JPG,1841,富山県/石川県/岐阜県
+	大日ヶ岳/だい:にち:が:たけ,136.8378/36.0014,Dainichidake_from_takasu_2010_4_18.JPG,1709,岐阜県
+	位山/くらい:やま,137.1967/36.0383,Mount_Kurai_from_south_2011-02-20.jpg,1529,岐阜県
+	能郷白山/のう:ごう:はく:さん,136.5142/35.7625,Mt_Nougouhakusan.JPG,1617,岐阜県/福井県
+	御在所山/ご:ざい:しょ:やま/御在所岳,136.4178/35.0206,Gozaishodake_from_Nakamichi_2009-10-11.jpg,1212,滋賀県/三重県
+	釈迦ヶ岳/しゃ:か:が:だけ/釈迦ヶ岳_(奈良県),135.9031/34.1144,Narasyakagadake.JPG,1800,奈良県
+	伯母子岳/2おば:こ:だけ,135.6508/34.0775,牛首の峰付近からの伯母子岳.jpg,1344,奈良県
+	金剛山/こん:ごう:ざん/金剛山_(金剛山地),135.6731/34.4194,Mount Kongo(Kongosanchi)7.jpg,1125,奈良県
+	武奈ヶ岳/ぶ:な:が:だけ,135.8969/35.2647,Mt_bunagatake.jpg,1214,滋賀県
+	氷ノ山/ひょう:の:せん,134.5139/35.3539,Hyonosen01s1600.jpg,1510,兵庫県/鳥取県
+	上蒜山/かみ:ひる:ぜん/蒜山,133.6633/35.3250,Hiruzen_01.jpg,1202,鳥取県/岡山県
+	三瓶山/さん:べ:さん,132.6217/35.1406,Mount Sanbe seen from the west .jpg,1126,島根県
+	三嶺/みうね,133.9878/33.8394,Mt.Miune.jpg,1893,徳島県/高知県
+	東赤石山/ひがし:あか:いし:やま,133.3750/33.8750,Mt.Higashiakaishi.jpg,1706,愛媛県
+	笹ヶ峰/ささ:が:みね,133.2747/33.8281,Mt.Sasagamine2.jpg,1859,愛媛県/高知県
+	英彦山/2ひこ:さん,130.9261/33.4761,Hikosan20151014.jpg,1200,福岡県/大分県
+	雲仙岳/うん:ぜん:だけ,130.2989/32.7614,Unzen_pyroclastic_and_lahar_deposits.jpg,1483,長崎県
+	由布岳/ゆ:ふ:だけ,131.3903/33.2822,Yufudake.jpg,1583,大分県
+	大崩山/おお:くえ:やま,131.5131/32.7378,Mt.Okueyama.jpg,1644,宮崎県
+	市房山/いち:ふさ:やま,131.1011/32.3117,Ichifusayama_from_Mizukami_Kumamoto_Japan.jpg,1721,熊本県/宮崎県
+	尾鈴山/お:すず:やま,131.4267/32.2992,Osuzuyama.jpg,1405,宮崎県
+	高千穂峰/たか:ち:ほ:みね,130.9189/31.8864,Kirishima_Takachihonomine_2.jpg,1574,宮崎県
+	桜島/さくら:じま,130.6547/31.5886,Sakurajima_at_Sunset.jpg,1117,鹿児島県
+}}
+
+== 脚注 ==
+{{脚注ヘルプ}}
+{{reflist}}
+
+== 関連項目 ==
+* {{jalink|田中陽希|Q26046070}}
+
+{{日本二百名山}}
+{{百名山一覧}}
+
+==End Japanese==
+[[Category:日本の景観一覧|にひやくめいさん]]
+[[Category:名数200]]
+[[Category:名数で表現される山]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with 150+ untranslated japanese characters]]
+[[Category:Pages with 200+ untranslated japanese characters]]
+[[Category:Pages with 250+ untranslated japanese characters]]
+[[Category:Pages with 300+ untranslated japanese characters]]

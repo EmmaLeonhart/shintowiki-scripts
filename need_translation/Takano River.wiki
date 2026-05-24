@@ -1,0 +1,162 @@
+<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takano_River for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
+{{Expand Japanese|高野川 (京都市)|date=November 2025}}
+
+{{Infobox river
+| name              = Takano River
+| name_native       = 
+| image             = Eiden 901 over Takano river bridge 2020-05-04.jpg
+| image_size        = 250px
+| image_caption     = Takano river from Hanazono bridge in {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto}}
+| source1_location  = 
+| mouth_location    = [[Kamo River]]
+| mouth_coordinates = {{coord|35.0293|135.7719|type:river_region:JP|format=dms}}
+| subdivision_type1 = Country
+| subdivision_name1 = {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}
+| length            = 
+| source1_elevation = 
+| mouth_elevation   = 
+| discharge1_avg    = 
+| basin_size        = 
+| river_system      = {{ill|Yodo River|en|Yodo River|qid=Q1140505|lt=Yodo River}}
+}}
+
+The '''Takano River''' is located in {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}.
+
+The [[Kamo River]] and Takano River join on the Tadasu River Banks (Jp., Tadasu-gawara 糺河原). There is the "River Confluence" shrine of [[Shimogamo Shrine]], leading to the forested area called [[Tadasu no Mori|Tadasu-no-mori]].
+<ref>{{cite web | url=http://www.jnto.go.jp/eng/location/regional/kyoto/takanoshuhen.html | title=Things to do in Japan &#124; Travel Japan（Japan National Tourism Organization） }}</ref>
+<ref>{{cite web | url=http://japanvisitor.blogspot.sk/2011/08/kamo-and-takano-rivers-kyoto.html | title=Japan Experience, a unique experience &#124; Japan Experience }}</ref>
+
+== See also ==
+*[[Kamo River]]
+
+==References==
+{{reflist}}
+
+{{Rivers of Japan}}]]
+
+{{Commons category|Takano River (Kyoto)}}
+{{wikidata link|Q10566852|en|Takano River|fa|رود تاکانو|ja|高野川 (京都市)|my|တခနိုမြစ်|ru|Такано (река)|zh|高野川 (京都市)|ceb|Takano-gawa (suba sa Hapon)|co|commons:Category:Takano River (Kyoto)|check_date=2026-05-10}}
+[[Category:Rivers of Japan]]
+[[Category:Rivers of Kyoto Prefecture]]
+[[Category:Wikidata has short description]]
+
+{{translated page|ja|高野川 (京都市)|version=107413935|comment=Imported full ja history}}
+== Japanese Wikipedia content ==
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
+{{Infobox 河川
+|名称= 高野川
+|画像= [[File:Takano-gawa (kyoto,Kyoto)2.jpg|280px]]
+|画像説明= 御蔭通の橋上より
+|水系等級= 
+|水系= {{jalink|淀川|Q1140505}}水系 {{jalink|鴨川 (京都府)|Q27218|鴨川}}支流
+|種別= {{jalink|一級水系|Q2908753|一級河川}}
+|延長= 約18.9
+|標高= 
+|流量= 
+|観測所= 
+|流域面積= 約46.6
+|水源= {{jalink|左京区|Q1321832}}{{jalink|途中越|Q11639484|途中峠}}
+|河口= {{jalink|左京区|Q1321832}}出町
+|流路= 
+|流域= 
+|地図=
+|脚注=<ref name=18_Takanogawa/><ref name=Seibi/>
+|出典= 
+}}
+'''高野川'''（たかのがわ）は、{{jalink|京都府|Q120730}}{{jalink|京都市|Q34600}}{{jalink|左京区|Q1321832}}を流れる{{jalink|淀川|Q1140505}}水系の{{jalink|一級水系|Q2908753|一級河川}}である<ref name=18_Takanogawa/>。
+
+== 地理 ==
+京都市左京区と{{jalink|滋賀県|Q131358}}{{jalink|大津市|Q202907}}の境に位置する{{jalink|途中越|Q11639484|途中峠}}の南部に源を発する<ref name=18_Takanogawa/>。以降は{{jalink|国道367号|Q405076}}と並行して南進する<ref name=Heibon/>。左京区{{jalink|大原 (京都市)|Q3594017|大原}}北部のミタニ峠を源とする川を三谷口で合わせ、左京区{{jalink|鞍馬|Q4247779}}と左京区大原の境に位置する天ヶ岳を源とする'''高谷川'''を小出石町で合わせる<ref name=18_Takanogawa/>。上流は'''大原川'''、中流は'''八瀬川'''と呼ばれることもある<ref name=Heibon/>。
+
+さらに{{jalink|三千院|Q1072538}}の裏山を源とする'''呂川'''や、{{jalink|寂光院|Q911985}}の裏山を源とする'''草生川'''を合わせ、{{jalink|比叡山|Q748040}}の西麓を南進する<ref name=18_Takanogawa/>。上高野の花園橋で{{jalink|白川通|Q11579747}}と交差し、一級河川'''岩倉川'''、一級河川'''{{jalink|音羽川 (京都市)|Q30931091|音羽川}}'''を合わせ、{{jalink|川端通|Q11055642}}と併走しながら加茂大橋上流で一級河川'''{{jalink|鴨川 (京都府)|Q27218|鴨川}}'''と合流している<ref name=18_Takanogawa/>。京都の地図で、鴨川はよくYの字で表されるが、その右側に当たる川である<ref name=18_Takanogawa/>。
+
+== 自然 ==
+[[File:Cervus nippon passing Takano river 20160713.jpg|thumb|left|250px|高野川を渡るニホンジカの親子]]
+* {{jalink|オオサンショウウオ|Q112045}} - {{jalink|特別天然記念物|Q96207459}}のオオサンショウウオが棲む。大雨の後などに京都市街まで流されてくることがあり、市民を驚かせる<ref name=sankei20150723/>。
+* {{jalink|ニホンジカ|Q190516}} - 河川敷でニホンジカの姿を見ることもある<ref name=asahi20101111/>。
+
+== 歴史 ==
+現在は出町付近で北西方向から流れてきた賀茂川と合流し鴨川として南流しているが、かつては賀茂川は上賀茂付近から南流し、一方高野川は出町付近から南西に流れていて、ともに左京域に扇状地を形成していたとされていた（塚本常雄「{{jalink|鴨川 (京都府)#鴨川つけかえ説|Q27218|鴨川つけかえ説}}」<ref>塚本常雄「京都市域の変遷と其地理学的考察」1931『地理論叢』第一輯。</ref>）。これに対し地質学の方からは{{jalink|最終氷期|Q754949}}にはそれ以降の時代より南側で鴨川に合流していたとする説がある<ref>横山卓雄『平安遷都と鴨川つけかえ』1988法政出版</ref>。一時はこの説に従って多くの歴史学者が「付替えはなかった」としたが、最近になって「つけかえ説」を再評価する声が高まっている<ref>高橋学「近世における京都鴨川・桂川の水害」2012『京都の歴史災害』思文閣出版、小谷愼二郎『水から見た京都:都市形成の歴史と生活文化』2007法政大学エコ地域デザイン研究所、植村善博『京都に治水と昭和大水害』2011文理閣</ref>。
+「{{jalink|日本後紀|Q1077029}}」によると、高野川は平安時代には'''埴川'''と呼ばれていた<ref name=18_Takanogawa/>。「{{jalink|雍州府志|Q18460389}}」によると、高野村を通ることが高野川の名前の由来だとしている<ref name=18_Takanogawa/>。
+
+古くより農業用水として重用され、沿岸の村々が利益を享受していたが、渇水のたびに幾度となく村同士で対立が発生した<ref name=Heibon/>。大原地域の一部では、{{jalink|2019年|Q25274}}（{{jalink|令和|Q62609017}}元年）9月現在上水道の水源として利用されている<ref name=Kyoto20170401/><ref name=Kyoto20190927/>。
+
+== 主な支流 ==
+[[File:Confluence of Iwakura and Takano rivers 20200512.jpg|thumb|200px|花園橋と山端橋の間にある高野川（右）と岩倉川（左）の合流点]]
+高野川にそそぐおもな支流は以下の通り<ref name=18_Takanogawa/><ref name=Seibi/>。
+* 高谷川
+* 呂川
+** 律川
+* 草生川
+* 岩倉川
+* 音羽川
+{{-}}
+=== 分流 ===
+* 泉川
+: 左京区松ヶ崎山端で高野川から別れ、途中農業用水を分流しながら松ヶ崎を抜け{{jalink|下鴨|Q11361517}}で{{jalink|琵琶湖疏水|Q2753954}}分線と交差<ref name=Gakku/>、下鴨神社（{{jalink|賀茂御祖神社|Q701620}}）境内を流れた後、高野川に合流する<ref name=izumigawa/>。
+{{multiple image
+ | align     = left
+ | direction = horizontal
+ | width     = 200
+
+ | image1    = Izumigawa river outlet adjacent to Yamabana bashi bridge 20200509.jpg
+ | caption1  = 山端橋脇にある泉川の取水口（井出ヶ鼻井堰）
+
+ | image2    = Intersection of rivers 20200513.jpg
+ | caption2  = 泉川（右から左）と琵琶湖疏水分線（下から上）の交差点
+
+ | image3    = Izumi river in Shimogamo jinja shrine 20200405.jpg
+ | caption3  = 下鴨神社境内を流れる泉川
+
+ | image4    = Confluence of rivers 20200513.jpg
+ | caption4  = 泉川の高野川への合流点
+}}
+{{-}}
+== 主な橋梁 ==
+[[File:Eiden 901 over Takano river bridge 2020-05-04.jpg|thumb|right|高野川（花園橋より）]]
+（八瀬堰堤以南）
+河原人道橋 - 三宅橋 - 花園橋 - 山端橋 - 松ヶ崎橋 - 馬橋 - 高野川北泉橋 - 松ヶ崎人道橋 - 高野橋 - 蓼倉（たでくら）橋 - 御蔭橋 - 河合橋<ref name=map1/><ref name=bridge1/>
+
+== 条例による規制 ==
+{{jalink|京都府鴨川条例|Q11375572}}({{jalink|2008年|Q2004}}4月施行)では賀茂川高橋以南、鴨川京都南大橋以北とともに、高野川馬橋以南が規制対象となっており、打ち上げ花火などが規制される<ref name=Jorei/>。
+== 脚注 ==
+{{脚注ヘルプ}}
+{{Reflist|1|refs=
+<ref name=18_Takanogawa>{{jalink|#18_Takanogawa||『琵琶湖・淀川 里の川をめぐる 高野川』}}</ref>
+<ref name=Jorei>{{jalink|#Jorei||『京都府鴨川条例』}}</ref>
+<ref name=Seibi>{{jalink|#Seibi||『鴨川河川整備計画』}}</ref>
+<ref name=Gakku>{{jalink|#Gakku||『松ヶ崎エコ学区プラン』}}</ref>
+<ref name=map1>{{jalink|#map1||『鴨川 賀茂大橋 - 柊野堰堤』}}</ref>
+<ref name=bridge1>{{jalink|#bridge||『鴨川・高野川の橋』}}</ref>
+<ref name=Heibon>{{jalink|#Heibon||『世界大百科事典』}}</ref>
+<ref name=sankei20150723>{{jalink|#sankei20150723||『高野川でオオサンショウウオ発見』}}</ref>
+<ref name=asahi20101111>{{jalink|#asahi20101111||『高野川にシカの親子』}}</ref>
+<ref name=izumigawa>{{jalink|#izumigawa||『泉川水系に属する庭園たち』}}</ref>
+<ref name=Kyoto20170401>{{jalink|#Kyoto20170401||『大原地域』}}</ref>
+<ref name=Kyoto20190927>{{jalink|#Kyoto20190927||『京都市水道施設の現状』}}</ref>
+}}
+
+== 参考文献 ==
+* {{Cite book ja-jp|author=横山卓雄|year=1988|publisher=法政出版|title=平安遷都と鴨川つけかえ|ref=Tsukekae}}
+* {{Cite book ja-jp|author=服部昌之|year=2007|publisher={{jalink|平凡社|Q11482108}}|series= {{jalink|世界大百科事典|Q5698601}}|edition=改訂新版|volume=17|title=高野川|ref=Heibon}}
+* {{Cite web|和書|url=https://www.pref.kyoto.jp/kamogawa/documents/kamogawa202001.pdf|title=京都府鴨川条例|publisher=京都府|accessdate=2020-05-09|date=2020-01-01|format=pdf|ref=Jorei}}
+* {{Cite web|和書|url=http://kyoto-machisen.jp/chiiki_hp/matsugasaki_hp/top-ecogakku/pdf/20120128gakushukai2.pdf|title=松ヶ崎エコ学区プラン（案）「水と土を生かした」エコ学区プラン|publisher=松ヶ崎学区自治連合会|date=2012-01-28|format=pdf|accessdate=2020-05-14|ref=Gakku}}
+* {{Cite web|和書|url=http://www.pref.kyoto.jp/kamogawa/documents/1263367156617.pdf|publisher=京都府|title=鴨川河川整備計画|accessdate=2020-05-12|format=pdf|date=2010-01|ref=Seibi}}
+* {{Cite web|和書|url=https://www.pref.kyoto.jp/kamogawa/documents/03_kamogawa-zentai_joryu.pdf|title=鴨川 賀茂大橋 - 柊野堰堤|publisher=京都府|date=2014-02-01|accessdate=2020-05-22|format=pdf|ref=map1}} 
+* {{Cite web|和書|url=https://www.pref.kyoto.jp/kamogawa/documents/04_kamo-taka_kyoryo.pdf|title=鴨川・高野川の橋|publisher=京都府|accessdate=2020-05-22|format=pdf|ref=bridge1}} 
+* {{Cite web|和書|url=http://www.byq.or.jp/shuppan/ryuikibook/pdf/18_Takanogawa.pdf|publisher=公益財団法人 琵琶湖・淀川水質保全機構|date=2015-02-01|accessdate=2020-05-09|title=琵琶湖・淀川 里の川をめぐる 高野川|format=pdf|ref=18_Takanogawa}}
+* {{Cite web|和書|url=https://www.sankei.com/article/20150723-NCL252WKBFNCDFBJ3S46D3C5TE/|publisher={{jalink|産経新聞|Q1197261}}|title=
+のそりのそりと天然記念物　高野川でオオサンショウウオ発見　京都|date=2015-07-23|accessdate=2020-06-29|ref=sankei20150723}}
+* {{Cite web|和書|url=http://www.asahi.com/eco/OSK201011110034.html|publisher={{jalink|朝日新聞|Q720503}}|title=高野川にシカの親子　京都・左京区　数カ月前から河川敷散歩|date=2010-11-11|accessdate=2020-06-29|ref=asahi20101111}}
+* {{Cite web|和書|url=http://www.kyobunka.or.jp/kaiho/Vol_12_images/index_12_01.html|publisher=京都市分観光資源保護財団|title=泉川水系に属する庭園たち|accessdate=2020-06-29|ref=izumigawa}}
+* {{Cite web|和書|url=https://www.city.kyoto.lg.jp/suido/page/0000070105.html|publisher={{jalink|京都市上下水道局|Q28687408}}|title=大原地域|accessdate=2020-08-15|date=2017-04-01|ref=Kyoto20170401}}
+* {{Cite web|和書|url=https://www.city.kyoto.lg.jp/suido/page/0000008776.html|publisher=京都市上下水道局|title=京都市水道施設の現状|accessdate=2020-08-15|date=2019-09-27|ref=Kyoto20190927}}
+== 関連項目 ==
+* {{jalink|高野川|Q11673074}} - 同名の川
+
+==End Japanese==
+[[Category:京都府の河川]]
+[[Category:左京区の地理]]
+[[Category:淀川水系]]
