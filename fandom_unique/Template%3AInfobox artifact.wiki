@@ -61,9 +61,9 @@
 | label23  = Culture
 | data23   = {{{culture|{{{civilization|{{{civilisation|}}}}}}}}}
 
-| label24 = [[Rundata]] ID
+| label24 = {{ill|Rundata|en|Rundata|sv|Rundata|lt=Rundata|qid=Q134446066}} ID
 | data24  = {{{rune_id|}}}
-| label25 = [[Runestone styles|Style]]
+| label25 = {{ill|Runestone styles|ca|Estils de les pedres rúniques|da|Indskriftordning|de|Runensteinstil|en|Runestone styles|es|Estilos de las piedras rúnicas|it|Stili delle pietre runiche|sv|Runstensstilar|lt=Runestone styles|qid=Q4992044}}
 | data25  = {{{rune_style|}}}
 | label26 = [[Runemaster]]
 | data26  = {{{rune_master|}}}
