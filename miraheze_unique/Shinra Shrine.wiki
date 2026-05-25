@@ -1,36 +1,31 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shinra_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25602223329|time triggered pipeline]] -->
-
 '''Shinra Shrine''' (新羅神社, Shinra Jinja, Shiragi Jinja)  
 
 == Shinra Jinja (しんらじんじゃ) ==  
-* {{ill|Chōjasan Shinra Shrine|ja|長者山新羅神社|12=simple|13=User:Immanuelle/Chojayama Shinra Shrine}} - Located in {{ill|Hachinohe|en|Hachinohe|qid=Q191914|lt=Hachinohe}}, {{ill|Aomori Prefecture|en|Aomori Prefecture|qid=Q71699|lt=Aomori Prefecture}}.  
-* {{ill|Shinra Shrine (Minami-Echizen Town)|ja|新羅神社 (南越前町)|12=simple|13=User:Immanuelle/Shinra Shrine (Minami-Echizen Town)|ja_comment=jawiki link invalid}} - Located in [[Minami-Echizen]], [[:en:Nanjo District, Fukui|Nanjo District]], {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}.  
-* {{ill|Shinra Shrine (Nanbu Town, Yamanashi)|ja|新羅神社 (山梨県南部町)|12=simple|13=User:Immanuelle/Shinra Shrine (Nanbu Town, Yamanashi)|ja_comment=jawiki link invalid}} - Located in {{ill|Nanbu, Yamanashi|en|Nanbu, Yamanashi|qid=Q1204802|lt=Nanbu Town}}, {{ill|Minamikoma District, Yamanashi|en|Minamikoma District, Yamanashi|qid=Q1131437|lt=Minamikoma District}}, {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture}}.  
-* {{ill|Shinra Shrine (Tajimi City)|ja|新羅神社 (多治見市)|12=simple|13=User:Immanuelle/Shinra Shrine (Tajimi City)}} - Located in {{ill|Tajimi|en|Tajimi|qid=Q819689|lt=Tajimi}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.  
-* {{ill|Shinra Shrine (Hiroshima City)|ja|新羅神社 (広島市)|12=simple|13=User:Immanuelle/Shinra Shrine (Hiroshima City)|ja_comment=jawiki link invalid}} - Located in {{ill|Asaminami-ku, Hiroshima|en|Asaminami-ku, Hiroshima|qid=Q63440|lt=Asaminami Ward}}, [[:en:Hiroshima City|Hiroshima City]], {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}}.  
-* {{ill|Shinra Shrine (Naruto City)|ja|新羅神社 (鳴門市)|12=simple|13=User:Immanuelle/Shinra Shrine (Naruto City)}} - Located in {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto City}}, {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}.  
-* {{ill|Shinra Shrine (Kidetoku Town, Zentsuji)|ja|新羅神社 (善通寺市木徳町)|12=simple|13=User:Immanuelle/Shinra Shrine (Kidetoku Town, Zentsuji)|ja_comment=jawiki link invalid}} - Located in [[Kidetoku Town]], [[:en:Zentsuji|Zentsuji]], {{ill|Kagawa Prefecture|en|Kagawa Prefecture|qid=Q161454|lt=Kagawa Prefecture}}.  
-* {{ill|Shinra Shrine (Konzōji Town, Zentsuji)|ja|新羅神社 (善通寺市金蔵寺町)|12=simple|13=User:Immanuelle/Shinra Shrine (Konzōji Town, Zentsuji)|ja_comment=jawiki link invalid}} - Located in [[Konzōji Town]], [[:en:Zentsuji|Zentsuji]], {{ill|Kagawa Prefecture|en|Kagawa Prefecture|qid=Q161454|lt=Kagawa Prefecture}}.  
+* {{ill|Chōjasan Shinra Shrine|ja|長者山新羅神社}} - Located in {{ill|Hachinohe|en|Hachinohe|qid=Q191914|lt=Hachinohe}}, {{ill|Aomori Prefecture|en|Aomori Prefecture|qid=Q71699|lt=Aomori Prefecture}}.  
+* {{ill|Shinra Shrine (Minami-Echizen Town)|ja|新羅神社 (南越前町)}} - Located in [[Minami-Echizen]], [[:en:Nanjo District, Fukui|Nanjo District]], {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}.  
+* {{ill|Shinra Shrine (Nanbu Town, Yamanashi)|ja|新羅神社 (山梨県南部町)}} - Located in {{ill|Nanbu, Yamanashi|en|Nanbu, Yamanashi|qid=Q1204802|lt=Nanbu Town}}, {{ill|Minamikoma District, Yamanashi|en|Minamikoma District, Yamanashi|qid=Q1131437|lt=Minamikoma District}}, {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture}}.  
+* {{ill|Shinra Shrine (Tajimi City)|ja|新羅神社 (多治見市)}} - Located in {{ill|Tajimi|en|Tajimi|qid=Q819689|lt=Tajimi}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.  
+* {{ill|Shinra Shrine (Hiroshima City)|ja|新羅神社 (広島市)}} - Located in {{ill|Asaminami-ku, Hiroshima|en|Asaminami-ku, Hiroshima|qid=Q63440|lt=Asaminami Ward}}, [[:en:Hiroshima City|Hiroshima City]], {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}}.  
+* {{ill|Shinra Shrine (Naruto City)|ja|新羅神社 (鳴門市)}} - Located in {{ill|Naruto, Tokushima|en|Naruto, Tokushima|qid=Q460812|lt=Naruto City}}, {{ill|Tokushima Prefecture|ace|Prefektur Tokushima|af|Tokushima-prefektuur|an|Prefectura de Tokushima|ar|توكوشيما (محافظة)|az|Tokuşima prefekturası|azb|توکوشیما اوستانی|ban|Préféktur Tokushima|be|Такусіма (прэфектура)|bg|Токушима (префектура)|bn|তোকুশিমা প্রশাসনিক অঞ্চল|ca|Prefectura de Tokushima|cdo|Tokushima-gâing|ce|Токусима (префектура)|ceb|Tokushima-ken|ckb|پارێزگای تۆکوشیما|cs|Prefektura Tokušima|cy|Tokushima (talaith)|da|Tokushima-præfekturet|de|Präfektur Tokushima|eo|Gubernio Tokuŝimo|es|Prefectura de Tokushima|et|Tokushima prefektuur|eu|Tokushima (prefektura)|fa|استان توکوشیما|fi|Tokushiman prefektuuri|fr|Préfecture de Tokushima|frr|Tokushima-ken|ga|Maoracht Tokushima|gl|Prefectura de Tokushima|hak|Tokushima-yen|he|טוקושימה (מחוז)|hr|Tokushima (prefektura)|hu|Tokusima prefektúra|hy|Տոկուսիմա (պրեֆեկտուրա)|id|Prefektur Tokushima|ilo|Prepektura ti Tokushima|it|Prefettura di Tokushima|ja|徳島県|jv|Préfèktur Tokushima|ka|ტოკუსიმის პრეფექტურა|ko|도쿠시마현|lt|Tokušimos prefektūra|lv|Tokusimas prefektūra|mk|Токушима (префектура)|mni|ꯇꯣꯀꯨꯁꯤꯃꯥ ꯂꯝꯈꯥꯢ|mr|तोकुशिमा प्रांत|ms|Wilayah Tokushima|ne|तोकुसिमा|nl|Tokushima (prefectuur)|no|Tokushima (prefektur)|os|Токусимæ (префектурæ)|pl|Prefektura Tokushima|pnb|ضلع ٹوکوشیما|pt|Tokushima|ro|Prefectura Tokushima|ru|Токусима (префектура)|sd|ٽوڪوشيما پريفيڪچر|se|Tokushima prefektuvra|sh|Prefektura Tokushima|simple|Tokushima Prefecture|sk|Tokušima (prefektúra)|sq|Prefektura Tokushima|sr|Префектура Токушима|su|Tokushima Prefecture|sv|Tokushima prefektur|sw|Mkoa wa Tokushima|tg|Префектураи Токушима|th|จังหวัดโทกูชิมะ|tl|Prepektura ng Tokushima|tr|Tokushima (prefektörlük)|tt|Токусима (префектура)|uk|Префектура Токусіма|ur|توکوشیما پریفیکچر|vi|Tokushima|war|Tokushima (prefektura)|wuu|德岛县|zh|德岛县|zh_classical|德島縣|zh_min_nan|Tokusima-koān|zh_yue|德島縣|qid=Q160734|lt=Tokushima Prefecture}}.  
+* {{ill|Shinra Shrine (Kidetoku Town, Zentsuji)|ja|新羅神社 (善通寺市木徳町)}} - Located in [[Kidetoku Town]], [[:en:Zentsuji|Zentsuji]], {{ill|Kagawa Prefecture|en|Kagawa Prefecture|qid=Q161454|lt=Kagawa Prefecture}}.  
+* {{ill|Shinra Shrine (Konzōji Town, Zentsuji)|ja|新羅神社 (善通寺市金蔵寺町)}} - Located in [[Konzōji Town]], [[:en:Zentsuji|Zentsuji]], {{ill|Kagawa Prefecture|en|Kagawa Prefecture|qid=Q161454|lt=Kagawa Prefecture}}.  
 
 == Shiragi Jinja (しらぎじんじゃ) ==  
-* {{ill|Shinra Shrine (Tome City)|ja|新羅神社 (登米市)|12=simple|13=User:Immanuelle/Shinra Shrine (Tome City)|ja_comment=jawiki link invalid}} - Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome City}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}.  
-* {{ill|Shinra Shrine (Himeji City)|ja|新羅神社 (姫路市)|12=simple|13=User:Immanuelle/Shinra Shrine (Himeji City)|ja_comment=jawiki link invalid}} - Located in {{ill|Himeji|en|Himeji|qid=Q209801|lt=Himeji}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}.  
+* {{ill|Shinra Shrine (Tome City)|ja|新羅神社 (登米市)}} - Located in {{ill|Tome, Miyagi|en|Tome, Miyagi|qid=Q696401|lt=Tome City}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}.  
+* {{ill|Shinra Shrine (Himeji City)|ja|新羅神社 (姫路市)}} - Located in {{ill|Himeji|en|Himeji|qid=Q209801|lt=Himeji}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}.  
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Shinra Shrine (Q134988845)|lt=Shinra Shrine|qid=Q134988845}} — Zentsūji-shi
 * {{ill|Shinra Shrine (Q134989175)|lt=Shinra Shrine|qid=Q134989175}} — Zentsūji-shi
 * {{ill|Shiragi Shrine (Q135069904)|lt=Shiragi Shrine|qid=Q135069904}} — Echizen Province
 * {{ill|新羅神社 (Q134958253)|lt=新羅神社|qid=Q134958253}} — Chūō Ward
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|新羅神社|version=102227808|comment=Imported full ja history}}
 
-{{wikidata link|Q123407865|ja|新羅神社|check_date=2026-05-09}}
+{{wikidata link|Q123407865|ja|新羅神社|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
