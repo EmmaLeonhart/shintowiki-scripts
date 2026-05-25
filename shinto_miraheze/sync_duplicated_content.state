@@ -103,10 +103,6 @@
     "revid": 3746546,
     "sha": "d28de7fdefed5e61bf1d95fbecf633a54a14c242"
   },
-  "Honoo-Honome Shrine": {
-    "revid": 3762418,
-    "sha": "6b775db79b2775d6d1d38ba6d09d89ea1408bc8a"
-  },
   "Ikanashi Shrine": {
     "revid": 3747305,
     "sha": "06f76fb5abbc418623f6df035b4d619d012cfc47"
@@ -267,10 +263,6 @@
     "revid": 3751257,
     "sha": "7408d7f1252db2f48631001dfda08b3319793a73"
   },
-  "Kifune Shrine (Hida City)": {
-    "revid": 3762419,
-    "sha": "1498f701dc9ae0c5dcc76d0d4a10c186cde469e6"
-  },
   "Kikurihime": {
     "revid": 3760320,
     "sha": "2bc9e959b1d2440e769f0cfd8b652d79289d8f9a"
@@ -348,36 +340,36 @@
     "sha": "3f2f6543eef31dbb3eb4878cd98071ab3091665b"
   },
   "Sana Shrine": {
-    "revid": 3743499,
-    "sha": "5c7b768fc9740e92dbe182d92fccdff40155fd02"
+    "revid": 3762508,
+    "sha": "15842fc446ba4844a34b7bf8bf49df121d5212ba"
   },
   "Sashino Shrine (Kasama)": {
-    "revid": 3743539,
-    "sha": "d9016c828b164b4ab3aeb96148b8601a566dfc88"
+    "revid": 3762627,
+    "sha": "1b0f8fbf4b35ac24e0c63a98e76fbb0fe8c91171"
   },
   "Satakunari Shrine": {
-    "revid": 3743541,
-    "sha": "e8a27dcc2ce40942e7573e28789b9878b64b146b"
+    "revid": 3762647,
+    "sha": "32ad8e3a5170b2d8845a9e303f10055814c75d28"
   },
   "Sawawachigi Shrine": {
-    "revid": 3743545,
-    "sha": "12a4f8d9de8d4d146a1a5c0523bd38f3f3e83573"
+    "revid": 3762665,
+    "sha": "ca9333ff0af1ff5fee88bd965536a3a09e04c8a3"
   },
   "Sayama Shrine": {
-    "revid": 3743547,
-    "sha": "48f5b1945b611190578af38a4a8e513aa9adf1c2"
+    "revid": 3762678,
+    "sha": "e807573d8e9c8080353df158be656fbd89247a7b"
   },
   "Seibo Shrine": {
-    "revid": 3743559,
-    "sha": "28cfbb5501c0e74044fcb1035bec028a00fd469f"
+    "revid": 3762709,
+    "sha": "1fdc5f8f7450ec2eaf6a498d20ce5712938069fb"
   },
   "Senji Ryakketsu": {
-    "revid": 3760325,
-    "sha": "f49f12df076cfd66b15be7a6dc2cec348c5ade85"
+    "revid": 3762772,
+    "sha": "d1c9bdb9e59e761a26200072bba561b55b6e4b59"
   },
   "Shibagahara Kofun": {
-    "revid": 3743632,
-    "sha": "9e1b2292e1714ea29a54a48ff23c1abd3e7b938e"
+    "revid": 3762907,
+    "sha": "71adeed17f7a2aa85c98e3ed93f7d1c99e3ce4a3"
   },
   "Shidori Shrine (Tottori)": {
     "revid": 3743642,
@@ -506,10 +498,6 @@
   "Teranomikoto Shrine": {
     "revid": 3760334,
     "sha": "d4a0f034d0e46164050f0d6d051ea6658f47a1dc"
-  },
-  "Todoroki-hime-no-Mikoto Shrine": {
-    "revid": 3762420,
-    "sha": "69644edf6236abd14c3afe0318ef48fa4e9a77f0"
   },
   "Togami Shrine": {
     "revid": 3744361,
