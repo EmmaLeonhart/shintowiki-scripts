@@ -1,66 +1,62 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Raiden_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25518276466|time triggered pipeline]] -->
-
 [[File:Itakura Raiden Shrine Honsha 1.JPG|thumb|220px|Raiden Shrine (群馬県板倉町)]]
 '''Raiden Shrine''' (雷電神社) is a name shared by multiple {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}s located primarily in the {{ill|Kantō region|en|Kantō region|qid=Q132480|lt=Kantō region}} of {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. These shrines are commonly dedicated to deities associated with protection against {{ill|Thunder|en|Thunder|qid=Q83301|lt=Thunder}}, although their enshrined deities and origins vary.
 
-Similar shrines include {{ill|Raijin Shrine|ja|雷神社|12=simple|13=User:Immanuelle/Raijin Shrine}} and {{ill|Den Shrine|ja|電神社|12=simple|13=User:Immanuelle/Den Shrine|ja_comment=jawiki link invalid}}.
+Similar shrines include {{ill|Raijin Shrine|ja|雷神社}} and {{ill|Den Shrine|ja|電神社}}.
 
 == Gunma Prefecture ==
 
-* {{ill|Raiden Shrine (Itakura, Gunma)|ja|雷電神社 (板倉町)|12=simple|13=User:Immanuelle/Raiden Shrine (Itakura, Gunma)}} – Located in {{ill|Itakura, Gunma|en|Itakura, Gunma|qid=Q1203771|lt=Itakura, Gunma}}, [[Ōra District]], this shrine is also called Itakura Raiden Shrine. It holds an unofficial status as the head shrine of "Raiden Shrines" in the Kantō region. Enshrined deities include {{ill|Yakusanoikazuchi|en|Yakusanoikazuchi|qid=Q10892534|lt=Honoikazuchi-no-Ōkami}}, {{ill|Ōikazuchi-no-Ōkami|ja|大雷大神|12=simple|13=User:Immanuelle/Ōikazuchi-no-Ōkami|ja_comment=jawiki link invalid}}, and {{ill|Wakazuchi-no-Ōkami|ja|別雷大神|12=simple|13=User:Immanuelle/Wakazuchi-no-Ōkami|ja_comment=jawiki link invalid}}.
-* {{ill|Raiden Shrine (Minami, Maebashi)|ja|雷電神社 (前橋市南町)|12=simple|13=User:Immanuelle/Raiden Shrine (Minami, Maebashi)|ja_comment=jawiki link invalid}} – Located in [[Minami, Maebashi]] within {{ill|Maebashi|en|Maebashi|qid=Q201613|lt=Maebashi, Gunma}}, behind the main hall of {{ill|Maebashi Shinmeigu|ja|前橋神明宮|12=simple|13=User:Immanuelle/Maebashi Shinmeigu|ja_comment=jawiki link invalid}}.
-* {{ill|Raiden Shrine (Kamishinden, Maebashi)|ja|雷電神社 (前橋市上新田町)|12=simple|13=User:Immanuelle/Raiden Shrine (Kamishinden, Maebashi)|ja_comment=jawiki link invalid}} – Located in {{ill|Q28682633|ja|上新田町 (前橋市)|12=simple|13=User:Immanuelle/Kamishinden, Maebashi|comment=changed title based on wikidata|qid=Q28682633}}.
-* {{ill|Raiden Shrine (Heiwa, Maebashi)|ja|雷電神社 (前橋市平和町)|12=simple|13=User:Immanuelle/Raiden Shrine (Heiwa, Maebashi)|ja_comment=jawiki link invalid}} – Located in {{ill|Q24860656|ja|平和町 (前橋市)|12=simple|13=User:Immanuelle/Heiwa, Maebashi|comment=changed title based on wikidata|qid=Q24860656}}.
-* {{ill|Raiden Shrine (Yokosawa, Maebashi)|ja|雷電神社 (前橋市横沢町)|12=simple|13=User:Immanuelle/Raiden Shrine (Yokosawa, Maebashi)|ja_comment=jawiki link invalid}} – Located in Yokosawa, Maebashi.
-* {{ill|Raiden Shrine (Taguchi, Maebashi)|ja|雷電神社 (前橋市田口町)|12=simple|13=User:Immanuelle/Raiden Shrine (Taguchi, Maebashi)|ja_comment=jawiki link invalid}} – Located in Taguchi, Maebashi.
-* {{ill|Raiden Shrine (Kiryū)|ja|雷電神社 (桐生市)|12=simple|13=User:Immanuelle/Raiden Shrine (Kiryū)|ja_comment=jawiki link invalid}} – Located in {{ill|Kiryū, Gunma|en|Kiryū, Gunma|qid=Q634022|lt=Kiryū, Gunma}}.
-* {{ill|Raiden Shrine (Isezaki, Sakae-Iyoku)|ja|雷電神社 (伊勢崎市境伊与久)|12=simple|13=User:Immanuelle/Raiden Shrine (Isezaki, Sakae-Iyoku)}} – Located in {{ill|Sakae, Iyoku|ja|境伊与久|12=simple|13=User:Immanuelle/Sakae, Iyoku|ja_comment=jawiki link invalid}}, {{ill|Isesaki|en|Isesaki|qid=Q328596|lt=Isezaki, Gunma}}.
+* {{ill|Raiden Shrine (Itakura, Gunma)|ja|雷電神社 (板倉町)}} – Located in {{ill|Itakura, Gunma|en|Itakura, Gunma|qid=Q1203771|lt=Itakura, Gunma}}, [[Ōra District]], this shrine is also called Itakura Raiden Shrine. It holds an unofficial status as the head shrine of "Raiden Shrines" in the Kantō region. Enshrined deities include {{ill|Yakusanoikazuchi|en|Yakusanoikazuchi|qid=Q10892534|lt=Honoikazuchi-no-Ōkami}}, {{ill|Ōikazuchi-no-Ōkami|ja|大雷大神}}, and {{ill|Wakazuchi-no-Ōkami|ja|別雷大神}}.
+* {{ill|Raiden Shrine (Minami, Maebashi)|ja|雷電神社 (前橋市南町)}} – Located in [[Minami, Maebashi]] within {{ill|Maebashi|en|Maebashi|qid=Q201613|lt=Maebashi, Gunma}}, behind the main hall of {{ill|Maebashi Shinmeigu|ja|前橋神明宮}}.
+* {{ill|Raiden Shrine (Kamishinden, Maebashi)|ja|雷電神社 (前橋市上新田町)}} – Located in {{ill|Q28682633|ja|上新田町 (前橋市)|12=simple|13=User:Immanuelle/Kamishinden, Maebashi|comment=changed title based on wikidata|qid=Q28682633}}.
+* {{ill|Raiden Shrine (Heiwa, Maebashi)|ja|雷電神社 (前橋市平和町)}} – Located in {{ill|Q24860656|ja|平和町 (前橋市)|12=simple|13=User:Immanuelle/Heiwa, Maebashi|comment=changed title based on wikidata|qid=Q24860656}}.
+* {{ill|Raiden Shrine (Yokosawa, Maebashi)|ja|雷電神社 (前橋市横沢町)}} – Located in Yokosawa, Maebashi.
+* {{ill|Raiden Shrine (Taguchi, Maebashi)|ja|雷電神社 (前橋市田口町)}} – Located in Taguchi, Maebashi.
+* {{ill|Raiden Shrine (Kiryū)|ja|雷電神社 (桐生市)}} – Located in {{ill|Kiryū, Gunma|en|Kiryū, Gunma|qid=Q634022|lt=Kiryū, Gunma}}.
+* {{ill|Raiden Shrine (Isezaki, Sakae-Iyoku)|ja|雷電神社 (伊勢崎市境伊与久)}} – Located in {{ill|Sakae, Iyoku|ja|境伊与久}}, {{ill|Isesaki|en|Isesaki|qid=Q328596|lt=Isezaki, Gunma}}.
 
 == Tochigi Prefecture ==
 
-* {{ill|Raiden Shrine (Hiraide, Utsunomiya)|ja|雷電神社 (宇都宮市平出町)|12=simple|13=User:Immanuelle/Raiden Shrine (Hiraide, Utsunomiya)|ja_comment=jawiki link invalid}} – Located in {{ill|Hiraide, Utsunomiya|ja|平出町 (宇都宮市)|12=simple|13=User:Immanuelle/Hiraide, Utsunomiya|ja_comment=jawiki link invalid}}, this shrine is also called Hiraide Raiden Shrine. The shrine enshrines {{ill|Wakazuchi-no-Ōkami|ja|別雷之大神|12=simple|13=User:Immanuelle/Wakazuchi-no-Ōkami|ja_comment=jawiki link invalid}} and nine other deities.
-* {{ill|Raiden Shrine (Hosoya, Utsunomiya)|ja|雷電神社 (宇都宮市細谷町)|12=simple|13=User:Immanuelle/Raiden Shrine (Hosoya, Utsunomiya)|ja_comment=jawiki link invalid}} – Located in {{ill|Hosoya, Utsunomiya|ja|細谷町 (宇都宮市)|12=simple|13=User:Immanuelle/Hosoya, Utsunomiya|ja_comment=jawiki link invalid}}.
-* {{ill|Raiden Shrine (Sukedo, Ashikaga)|ja|雷電神社 (足利市助戸東山町)|12=simple|13=User:Immanuelle/Raiden Shrine (Sukedo, Ashikaga)|ja_comment=jawiki link invalid}} – Located in {{ill|Sukedo, Ashikaga|ja|助戸東山町|12=simple|13=User:Immanuelle/Sukedo, Ashikaga|ja_comment=jawiki link invalid}}, {{ill|Ashikaga, Tochigi|en|Ashikaga, Tochigi|qid=Q374477|lt=Ashikaga, Tochigi}}.
-* {{ill|Raiden Shrine (Nogi, Tochigi)|ja|雷電神社 (野木町)|12=simple|13=User:Immanuelle/Raiden Shrine (Nogi, Tochigi)|ja_comment=jawiki link invalid}} – Located in {{ill|Nogi, Tochigi|en|Nogi, Tochigi|qid=Q1203180|lt=Nogi, Tochigi}}, originally part of {{ill|Yanaka|ja|谷中村|12=simple|13=User:Immanuelle/Yanaka Village|comment=changed title based on wikidata|qid=Q11632602}}.
+* {{ill|Raiden Shrine (Hiraide, Utsunomiya)|ja|雷電神社 (宇都宮市平出町)}} – Located in {{ill|Hiraide, Utsunomiya|ja|平出町 (宇都宮市)}}, this shrine is also called Hiraide Raiden Shrine. The shrine enshrines {{ill|Wakazuchi-no-Ōkami|ja|別雷之大神}} and nine other deities.
+* {{ill|Raiden Shrine (Hosoya, Utsunomiya)|ja|雷電神社 (宇都宮市細谷町)}} – Located in {{ill|Hosoya, Utsunomiya|ja|細谷町 (宇都宮市)}}.
+* {{ill|Raiden Shrine (Sukedo, Ashikaga)|ja|雷電神社 (足利市助戸東山町)}} – Located in {{ill|Sukedo, Ashikaga|ja|助戸東山町}}, {{ill|Ashikaga, Tochigi|en|Ashikaga, Tochigi|qid=Q374477|lt=Ashikaga, Tochigi}}.
+* {{ill|Raiden Shrine (Nogi, Tochigi)|ja|雷電神社 (野木町)}} – Located in {{ill|Nogi, Tochigi|en|Nogi, Tochigi|qid=Q1203180|lt=Nogi, Tochigi}}, originally part of {{ill|Yanaka|ja|谷中村|12=simple|13=User:Immanuelle/Yanaka Village|comment=changed title based on wikidata|qid=Q11632602}}.
 
 == Saitama Prefecture ==
 
-* {{ill|Kaminomura Shrine|ja|上之村神社|12=simple|13=User:Immanuelle/Kaminomura Shrine}} (Daiden Shrine) – Located in {{ill|Kumagaya|en|Kumagaya|qid=Q41106|lt=Kumagaya, Saitama}}, the shrine dates back 1,000 years and is associated with the {{ill|Raijin Shrine (Toyooka)|lt=Raijin Shrine (Toyooka)|lt=Raijin Shrine (Hyōgo)|ja|雷神社 (豊岡市)|12=simple|13=User:Immanuelle/Raijin Shrine (Hyōgo)}} in {{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka, Hyōgo}}.
-* {{ill|Raiden Shrine (Satte)|ja|雷電神社 (幸手市)|12=simple|13=User:Immanuelle/Raiden Shrine (Satte)}} – Located in {{ill|Satte, Saitama|en|Satte, Saitama|qid=Q868971|lt=Satte, Saitama}}.
-* {{ill|Raiden Shrine (Kasukabe)|ja|雷電神社 (春日部市)|12=simple|13=User:Immanuelle/Raiden Shrine (Kasukabe)|ja_comment=jawiki link invalid}} – Located in {{ill|Kasukabe, Saitama|en|Kasukabe, Saitama|qid=Q376023|lt=Kasukabe, Saitama}}.
-* {{ill|Raiden Shrine (Saitama City)|ja|雷電神社 (さいたま市)|12=simple|13=User:Immanuelle/Raiden Shrine (Saitama City)}} – Located in {{ill|Kombachō|ja|今羽町|12=simple|13=User:Immanuelle/Imawa, Kita-ku|comment=changed title based on wikidata|qid=Q17223316}}, {{ill|Saitama (city)|en|Saitama (city)|qid=Q134635|lt=Saitama City}}.
+* {{ill|Kaminomura Shrine|ja|上之村神社}} (Daiden Shrine) – Located in {{ill|Kumagaya|en|Kumagaya|qid=Q41106|lt=Kumagaya, Saitama}}, the shrine dates back 1,000 years and is associated with the {{ill|Raijin Shrine (Toyooka)|ja|雷神社 (豊岡市)|qid=Q21655264|lt=Raijin Shrine (Hyōgo)}} in {{ill|Toyooka, Hyōgo|ar|تويوكا (هيوغو)|az|Toyooka|azb|تویواوکا، هیوقو|bg|Тойока|ca|Toyooka|ce|Тоёока|ceb|Toyooka|de|Toyooka|es|Toyooka (Hyōgo)|fa|تویواوکا، هیوگو|fi|Toyooka|fr|Toyooka|gl|Toyooka|he|טויואוקה|hy|Տոյոոկա (քաղաք)|it|Toyooka|ja|豊岡市|kk|Тоёока|ko|도요오카시|mg|Toyooka|mzn|تویواوکا، هیوگو|nl|Toyooka (Hyogo)|pl|Toyo’oka|pt|Toyooka|ro|Toyooka|ru|Тоёока|sv|Toyooka|tg|Тоёока|th|โทโยโอกะ|tl|Toyooka, Hyogo|tr|Toyooka|tt|Тоёока|ur|ٹویو اوکا، ہیوگو|uz|Toyooka (Hyōgo)|vi|Toyooka, Hyōgo|war|Toyooka, Hyōgo|zh|豐岡市|zh_classical|豐岡市|zh_min_nan|Toyooka-chhī|zh_yue|豐岡|qid=Q696388|lt=Toyooka, Hyōgo}}.
+* {{ill|Raiden Shrine (Satte)|ja|雷電神社 (幸手市)|qid=Q11660222}} – Located in {{ill|Satte, Saitama|ar|ساتي (سايتاما)|azb|ساته، سایتاما|ce|Сатте|ceb|Satte|de|Satte|eo|Satte|es|Satte|fa|ساته، سایتاما|fi|Satte|fr|Satte|gl|Satte|id|Satte, Saitama|it|Satte|ja|幸手市|ko|삿테시|mg|Satte|mzn|ساته، سایتاما|nl|Satte|pl|Satte|pt|Satte|ro|Satte|ru|Сатте|sv|Satte|tg|Сатте|th|ซัตเตะ|tl|Satte, Saitama|tr|Satte|tt|Сатте|tum|Satte|uk|Сатте|ur|ساٹے، سائیتاما|vi|Satte, Saitama|war|Satte, Saitama|zh|幸手市|zh_classical|幸手市|zh_min_nan|Satte-chhī|zh_yue|幸手|qid=Q868971|lt=Satte, Saitama}}.
+* {{ill|Raiden Shrine (Kasukabe)|ja|雷電神社 (春日部市)}} – Located in {{ill|Kasukabe, Saitama|ar|كاسوكابي (سايتاما)|as|কাচুকাবে, চাইটামা|azb|کاسوکابه، سایتاما|ban|Kasukabé, Saitama|bg|Касукабе|bn|কাসুকাবে|ca|Kasukabe|ce|Касукабе|ceb|Kasukabe (lungsod sa Hapon)|cs|Kasukabe (Saitama)|de|Kasukabe|eo|Kasukabe|es|Kasukabe (Saitama)|fa|کاسوکابه، سایتاما|fi|Kasukabe|fr|Kasukabe|ga|Kasukabe|gl|Kasukabe|id|Kasukabe, Saitama|it|Kasukabe|ja|春日部市|kk|Касукабе|ko|가스카베시|mg|Kasukabe|mn|Касүкабэ|mr|कासुकाबे (सैतामा)|ms|Kasukabe, Saitama|mzn|کاسوکابه، سایتاما|nl|Kasukabe|no|Kasukabe|pl|Kasukabe|pt|Kasukabe|ro|Kasukabe|ru|Касукабе|sh|Kasukabe|simple|Kasukabe, Saitama|sr|Касукабе|sv|Kasukabe|tg|Касукабе|th|คาซูกาเบะ|tl|Kasukabe, Saitama|tpi|Kasukabe, Saitama|tr|Kasukabe|tt|Касукабе|tum|Kasukabe|uk|Касукабе|ur|کاسوکابے، سائیتاما|vi|Kasukabe, Saitama|war|Kasukabe, Saitama|zh|春日部市|zh_classical|春日部市|zh_min_nan|Kasukabe-chhī|zh_yue|春日部|qid=Q376023|lt=Kasukabe, Saitama}}.
+* {{ill|Raiden Shrine (Saitama City)|ja|雷電神社 (さいたま市)|qid=Q114641791}} – Located in {{ill|Kombachō|ja|今羽町|12=simple|13=User:Immanuelle/Imawa, Kita-ku|comment=changed title based on wikidata|qid=Q17223316}}, {{ill|Saitama (city)|en|Saitama (city)|qid=Q134635|lt=Saitama City}}.
 * Raiden Shrine (Tokigawa) – Located in {{ill|Tokigawa, Saitama|en|Tokigawa, Saitama|qid=Q251027|lt=Tokigawa, Saitama}}, atop {{ill|Q11660214|ja|雷電山 (埼玉県)|12=simple|13=User:Immanuelle/Raiden Mountain (Saitama)|comment=changed title based on wikidata|qid=Q11660214}}.
-* {{ill|Raiden Shrine (Kazo)|ja|雷電神社 (加須市南大桑)|12=simple|13=User:Immanuelle/Raiden Shrine (Kazo)}} – Located in {{ill|Kazo, Saitama|en|Kazo, Saitama|qid=Q851680|lt=Kazo, Saitama}}.
+* {{ill|Raiden Shrine (Kazo)|ja|雷電神社 (加須市南大桑)}} – Located in {{ill|Kazo, Saitama|en|Kazo, Saitama|qid=Q851680|lt=Kazo, Saitama}}.
 
 == Tokyo ==
 
-* {{ill|Raiden Shrine (Shinjuku)|ja|雷電神社 (新宿区)|12=simple|13=User:Immanuelle/Raiden Shrine (Shinjuku)|ja_comment=jawiki link invalid}} – Located at {{ill|Hanazono Shrine|en|Hanazono Shrine|qid=Q3126680|lt=Hanazono Shrine}} in {{ill|Shinjuku|en|Shinjuku|qid=Q179645|lt=Shinjuku, Tokyo}}. Merged with Hanazono Shrine in 1928 but still maintains its presence as {{ill|Raiden Inari Shrine|ja|雷電稲荷神社|12=simple|13=User:Immanuelle/Raiden Inari Shrine|ja_comment=jawiki link invalid}}.
+* {{ill|Raiden Shrine (Shinjuku)|ja|雷電神社 (新宿区)}} – Located at {{ill|Hanazono Shrine|en|Hanazono Shrine|qid=Q3126680|lt=Hanazono Shrine}} in {{ill|Shinjuku|en|Shinjuku|qid=Q179645|lt=Shinjuku, Tokyo}}. Merged with Hanazono Shrine in 1928 but still maintains its presence as {{ill|Raiden Inari Shrine|ja|雷電稲荷神社}}.
 
 == Kanagawa Prefecture ==
 
-* {{ill|Raiden Shrine (Isehara)|ja|雷電神社 (伊勢原市)|12=simple|13=User:Immanuelle/Raiden Shrine (Isehara)|ja_comment=jawiki link invalid}} – Located in {{ill|Isehara, Kanagawa|en|Isehara, Kanagawa|qid=Q734520|lt=Isehara, Kanagawa}}, affiliated with {{ill|Hibita Shrine|ja|比々多神社|12=simple|13=User:Immanuelle/Hibita Shrine|comment=changed title based on wikidata|qid=Q11547364}}.
+* {{ill|Raiden Shrine (Isehara)|ja|雷電神社 (伊勢原市)}} – Located in {{ill|Isehara, Kanagawa|en|Isehara, Kanagawa|qid=Q734520|lt=Isehara, Kanagawa}}, affiliated with {{ill|Hibita Shrine|ja|比々多神社|12=simple|13=User:Immanuelle/Hibita Shrine|comment=changed title based on wikidata|qid=Q11547364}}.
 
 == Aichi Prefecture ==
 
-* {{ill|Raiden Shrine (Tahara)|ja|雷電神社 (田原市)|12=simple|13=User:Immanuelle/Raiden Shrine (Tahara)|ja_comment=jawiki link invalid}} – Located in {{ill|Tahara, Aichi|en|Tahara, Aichi|qid=Q501891|lt=Tahara, Aichi}}.
+* {{ill|Raiden Shrine (Tahara)|ja|雷電神社 (田原市)}} – Located in {{ill|Tahara, Aichi|en|Tahara, Aichi|qid=Q501891|lt=Tahara, Aichi}}.
 
 == Mie Prefecture ==
 
-* {{ill|Raiden Shrine (Ise)|ja|雷電神社 (伊勢市)|12=simple|13=User:Immanuelle/Raiden Shrine (Ise)|ja_comment=jawiki link invalid}} – Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}. Considered a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, though later merged with the Hachioji Shrine.
+* {{ill|Raiden Shrine (Ise)|ja|雷電神社 (伊勢市)}} – Located in {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}. Considered a {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}}, though later merged with the Hachioji Shrine.
 
 == Related Articles ==
 
-* {{ill|Raijin Shrine|ja|雷神社|12=simple|13=User:Immanuelle/Raijin Shrine}}
-* {{ill|Den Shrine|ja|電神社|12=simple|13=User:Immanuelle/Den Shrine|ja_comment=jawiki link invalid}}
-* {{ill|Akiru Shrine|ja|若電神社|12=simple|13=User:Immanuelle/Wakaden Shrine|ja_comment=jawiki redirects to 阿伎留神社}}
+* {{ill|Raijin Shrine|ja|雷神社}}
+* {{ill|Den Shrine|ja|電神社}}
+* {{ill|Akiru Shrine|ja|若電神社}}
 * {{ill|Lightning strike|en|Lightning strike|qid=Q15120872|lt=Lightning}}
 * {{ill|Lightning|en|Lightning|qid=Q33741|lt=Thunder}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
-* {{ill|Raiden Shrine (Q114641791)|lt=Raiden Shrine|qid=Q114641791}} — Kita-ku, Saitama
+* {{ill|Raiden Shrine (Q114641791)|ja|雷電神社 (さいたま市)|qid=Q114641791|lt=Raiden Shrine}} — Kita-ku, Saitama
 * {{ill|Raiden Shrine (Q11660224)|lt=Raiden Shrine|qid=Q11660224}} — Itakura
 * {{ill|Raiden Shrine (Q122616809)|lt=Raiden Shrine|qid=Q122616809}} — Miyashiro
 * {{ill|Raiden Shrine (Q131313735)|lt=Raiden Shrine|qid=Q131313735}} — Oamishirasato
@@ -115,13 +111,12 @@ Similar shrines include {{ill|Raijin Shrine|ja|雷神社|12=simple|13=User:Imman
 * {{ill|Raiden Shrine (Q135426139)|lt=Raiden Shrine|qid=Q135426139}} — Isesaki
 * {{ill|Raiden Shrine (Q56257345)|lt=Raiden Shrine|qid=Q56257345}} — Matsudo
 * {{ill|Raiden Shrine (Q97216413)|lt=Raiden Shrine|qid=Q97216413}} — Isesaki
-* {{ill|Raiden Shrine (Satte) (Q11660222)|lt=Raiden Shrine (Satte)|qid=Q11660222}} — Satte
+* {{ill|Raiden Shrine (Satte) (Q11660222)|ja|雷電神社 (幸手市)|qid=Q11660222|lt=Raiden Shrine (Satte)}} — Satte
 * {{ill|雷電神社 (Q137711045)|lt=雷電神社|qid=Q137711045}} — Isehara
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|雷電神社|version=103660022|comment=Imported full ja history}}
 
-{{wikidata link|Q11660221|ja|雷電神社}}
+{{wikidata link|Q11660221|ja|雷電神社|check_date=2026-05-25}}
 [[Category:Raiden Shrines]]
 [[Category:Shinto shrines]]
 [[Category:Shrine disambiguations]]
