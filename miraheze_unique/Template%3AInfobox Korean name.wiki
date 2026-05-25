@@ -13,6 +13,7 @@
   |hangul            = {{{hangul|}}}
   |hanja             = {{#if: {{{hanja|}}} | {{#ifeq: {{{hanja|}}} | ! | <noinclude>!
 [[Category:Templates missing wikidata]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude> | {{#switch: {{{hanja|}}} | na | none =  | #default = {{{hanja}}} }} }} }}
   |rr                = {{{rr|}}}
   |mr                = {{{mr|}}}
