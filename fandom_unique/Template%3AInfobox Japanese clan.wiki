@@ -1,0 +1,46 @@
+{{Infobox
+| bodystyle = border: 1px solid #aaa;
+| abovestyle = color: #ffffff; background-color: darkblue;
+| above = {{{surname|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}{{#if:{{{surname nihongo|}}}|<br />{{lang|ja|{{{surname nihongo|}}}}}}}
+| image = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image size|150px}}}|alt={{{alt|}}}}}
+| caption = {{{image caption|{{{caption|}}}}}}
+
+| label1 = Home province
+| data1 = {{{home province|{{{province of origin|}}}}}}
+
+| label2 = Parent house
+| data2 = {{{parent house|}}}
+
+| label3 = Titles
+| data3 = {{{titles|}}}
+
+| label4 = Founder 
+| data4 = {{{founder|}}}
+
+| label5 = Final ruler
+| data5 = {{{final ruler|}}}
+
+| label6 = Current head
+| data6 = {{{current head|}}}
+
+| label7 = Founding year 
+| data7 = {{{founding year|}}}
+
+| label8 = Dissolution
+| data8 = {{{dissolution|}}}
+
+| label9 = Ruled until 
+| data9 = {{{ruled until|}}}
+
+| label10 = Cadet branches 
+| data10 = {{{cadet branches|}}}
+}}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{wikidata link|Q14398784|ckb|داڕێژە:زانیاریدانی بنەماڵە ژاپۆنییەکان|en|Template:Infobox Japanese clan|es|Plantilla:Ficha de clan japonés|fa|الگو:Infobox Japanese clan|id|Templat:Infobox Japanese clan|ja|Template:日本の氏族|ko|틀:일본 씨족 정보|pt|Predefinição:Info/Clã japonês|ru|Шаблон:Японский род|simple|Template:Infobox Japanese clan|th|แม่แบบ:กล่องข้อมูล ตระกูลญี่ปุ่น|vi|Bản mẫu:Thông tin gia tộc Nhật Bản|zh|Template:日本氏族|check_date=2026-05-24}}
+[[Category:Templates transcluded in mainspace]]
+</noinclude>

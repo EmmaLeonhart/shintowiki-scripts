@@ -1,0 +1,354 @@
+{{Infobox
+| child        = {{{child|}}}
+| subbox       = {{{subbox|}}}
+| above       = {{{name|{{{short_title|<includeonly>{{PAGENAMEBASE}}</includeonly>}}}}}}
+| abovestyle  = {{#if:{{{background_color|}}}|border-top: 2px solid {{{background_color}}}; border-bottom: 2px solid {{{background_color}}}|background-color: #ededed}}
+| headerstyle = {{#if:{{{background_color|}}}|border-top: 2px solid {{{background_color}}}; border-bottom: 2px solid {{{background_color}}}|background-color: #ededed}}
+|image       = {{#invoke:InfoboxImage|InfoboxImage|image={{#if:{{{image|}}}
+  |{{{image}}}
+  }}|size={{{imagesize|{{{image_size|}}}}}}|sizedefault=frameless|upright={{{upright|{{{image_upright|yes}}}}}}|alt={{{imagealt|}}}}}
+
+|caption     = {{{caption|}}}
+
+| labelstyle  = {{{labelstyle|}}}
+
+|header1     = {{if empty|{{{legislature|}}}|{{{enacted_by|}}}|{{{considered_by|}}}}}
+|data2       = {{Collapsible list
+ |titlestyle=font-weight:normal;background:transparent;text-align:center;
+ | title =  '''[[Long title]]'''
+ | expand = {{#if:{{{autocollapse_long_title|}}}||true}}
+ | {{#if: {{{long_title|}}} |{{center|{{{long_title}}} }}
+}} }}
+|label3      = Citation
+|data3       = {{{citation|}}}
+|label4      = Territorial extent
+|data4       = {{{territorial_extent|}}}
+|label5      = Considered&nbsp;by
+|data5       = {{{considered_by|}}}
+|label6      = {{#if:{{{date_passed|}}}{{{passed_by|}}}|Passed&nbsp;by|Enacted&nbsp;by}}
+|data6       = {{#if:{{{passed_by|}}}|{{{passed_by|}}}|{{{enacted_by|}}}}}
+|label7      = Passed
+|data7       = {{{date_passed|}}}
+|label8      = Enacted
+|data8       = {{{date_enacted|}}}
+|label9      = Considered&nbsp;by
+|data9       = {{{considered_by2|}}}
+|label10     = {{#if:{{{date_passed2|}}}{{{passed_by2|}}}|Passed&nbsp;by|Enacted&nbsp;by}}
+|data10      = {{#if:{{{passed_by2|}}}|{{{passed_by2|}}}|{{{enacted_by2|}}}}}
+|label11     = Passed
+|data11      = {{{date_passed2|}}}
+|label12     = Enacted
+|data12      = {{{date_enacted2|}}}
+|label13     = Assented&nbsp;to&nbsp;by
+|data13      = {{{assented_by|}}}
+|label14     = Assented&nbsp;to
+|data14      = {{{date_assented|}}}
+|label15     = [[Royal assent]]
+|data15      = {{{royal_assent|}}}
+|label16     = Signed&nbsp;by
+|data16      = {{{signed_by|}}}
+|label17     = Signed
+|data17      = {{{date_signed|}}}
+|label18     = Vetoed&nbsp;by
+|data18      = {{{vetoed_by|}}}
+|label19     = Vetoed
+|data19      = {{{date_vetoed|}}}
+|label20     = Type&nbsp;of&nbsp;veto
+|data20      = {{{veto_type|}}}
+|label21     = Veto&nbsp;overridden
+|data21      = {{{veto_overridden|}}}
+|label22     = Holding
+|data22      = {{{reference_holding|}}}
+|label23     = [[Pocket veto|Pocket&nbsp;vetoed]]
+|data23      = {{{date_pocket_vetoed|}}}
+|label24     = Became law by inaction
+|data24      = {{{date_became_law_by_inaction|}}}
+|label25     = Commenced
+|data25      = {{{date_commenced|{{{commencement|}}}}}}
+|label26     = [[Effective date|Effective]]
+|data26      = {{{date_effective|}}}
+|label27     = Date&nbsp;of&nbsp;expiry
+|data27      = {{{date_of_expiry|}}}
+|label28     = Repealed
+|data28      = {{{date_repealed|}}}
+|label29     = {{#switch:{{lc:{{{status}}}}}
+  |struck down          = Struck down
+  |disallowed           = Disallowed
+  |#default             = Abrogated
+  }}
+|data29      = {{{date_abrogated|}}}
+|label30     = Authorizing legislation
+|data30      = {{{authorizing_legislation|}}}
+|label31     = Administered&nbsp;by
+|data31      = {{{administered_by|}}}
+|label32     = [[White paper#Government white papers|White paper]]
+|data32      = {{{white_paper|}}}
+
+|header33    = {{#if:{{{codification_affects|}}}{{{codification_amends|}}}{{{codification_repeals|}}}{{{code_titles_affected|}}}{{{code_titles_amended|}}}{{{code_sections_created|}}}{{{code_sections_affected|}}}{{{code_sections_amended|}}}|Codification}}
+| label34 = Acts affected
+|  data34 = {{{codification_affects|}}}
+| label35 = Acts amended
+|  data35 = {{{codification_amends|}}}
+| label36 = Acts repealed
+|  data36 = {{{codification_repeals|}}}
+| label37 = {{#if:{{{code|}}}|{{{code}}} titles affected|Code titles affected}}
+|  data37 = {{{code_titles_affected|}}}
+| label38 = {{#if:{{{code|}}}|{{{code}}} titles amended|Code titles amended}}
+|  data38 = {{{code_titles_amended|}}}
+| label39 = {{#if:{{{code|}}}|{{#if:{{{code_section_name|}}}|{{{code}}} {{{code_section_name}}}s created|{{{code}}} sections created}}|{{#if:{{{code_section_name|}}}|Code {{{code_section_name}}}s created|Code sections created}}}}
+|  data39 = {{{code_sections_created|}}}
+| label40 = {{#if:{{{code|}}}|{{#if:{{{code_section_name|}}}|{{{code}}} {{{code_section_name}}}s affected|{{{code}}} sections affected}}|{{#if:{{{code_section_name|}}}|Code {{{code_section_name}}}s affected|Code sections affected}}}}
+|  data40 = {{{code_sections_affected|}}}
+| label41 = {{#if:{{{code|}}}|{{#if:{{{code_section_name|}}}|{{{code}}} {{{code_section_name}}}s amended|{{{code}}} sections amended}}|{{#if:{{{code_section_name|}}}|Code {{{code_section_name}}}s amended|Code sections amended}}}}
+|  data41 = {{{code_sections_amended|}}}
+
+|header42    = {{#if:{{{bill|}}}{{{bill_date|}}}{{{1st_reading|}}}{{{2nd_reading|}}}{{{3rd_reading|}}}{{{passage|}}}{{{passed|}}}| {{#if:{{{bill_history_url|}}}|[{{{bill_history_url|}}} Legislative history]|Legislative history}} }}
+|header43    = {{#if:{{{passed_by2|{{{enacted_by2|{{{considered_by2|}}}}}}}}}|{{#if:{{{bill|}}}{{{bill_citation|}}}{{{bill_date|}}}{{{introduced_by|}}}{{{committee_responsible|}}}{{{preliminary_reading|}}}{{{1st_reading|}}}{{{committee_post1st|}}}{{{2nd_reading|}}}{{{committee_post2nd|}}}{{{committee_whole|}}}{{{3rd_reading|}}}{{{passed|}}}{{{conf_committee_passed|}}}{{{committee_report|}}}|First chamber: {{{passed_by|{{{enacted_by|{{{considered_by}}}}}}}}}}}}}
+|label44     = [[Bill (proposed law)|Bill]] title
+|data44      = {{{bill|}}}
+|label45     = Bill citation
+|data45      = {{{bill_citation|}}}
+|label46     = Introduced by
+|data46      = {{{introduced_by|}}}
+|label47     = Co-sponsored by
+|data47      = {{{cosponsored_by|}}}
+|label48     = {{#if:{{{rapporteur|}}}|Rapporteur|Member in Charge}}
+|data48      = {{{member_in_charge|{{{rapporteur|}}}}}}
+|label49     = Introduced
+|data49      = {{{date_introduced|{{{introduced_on|{{{bill_date|}}}}}}}}}
+|label50     = Distributed to members
+|data50      = {{{date_distributed|}}}
+|label51     = Committee responsible
+|data51      = {{{committee_responsible|}}}
+|label52     = [[Reading (legislature)#Preliminary reading|Preliminary reading]]
+|data52      = {{{preliminary_reading|}}}
+| label53 = Voting summary
+| class53 = nowrap
+| data53 = {{unbulleted list
+           | {{#if:{{{preliminary_reading_for|}}}        |'''{{color|#090|{{#ifeq:{{{preliminary_reading_for}}}|0 |None | {{{preliminary_reading_for}}} }} voted for}}'''}}| {{#if:{{{preliminary_reading_against|}}}    |'''{{color|#900|{{#ifeq:{{{preliminary_reading_against}}}|0 |None | {{{preliminary_reading_against}}} }} voted against}}'''}}| {{#if:{{{preliminary_reading_abstention|}}} |'''{{color|#333|{{#ifeq:{{{preliminary_reading_abstention}}}|0 |None | {{{preliminary_reading_abstention}}} }} abstained}}'''}}| {{#if:{{{preliminary_reading_absent|}}}     |{{#ifeq:{{{preliminary_reading_absent}}}|0 |None | {{{preliminary_reading_absent}}} }} absent}}| {{#if:{{{preliminary_reading_presentnotvoting|}}} |{{#ifeq:{{{preliminary_reading_presentnotvoting}}}|0 |None | {{{preliminary_reading_presentnotvoting}}} }} present not voting}}}}
+|label54     = [[Reading (legislature)#First reading|First reading]]
+|data54      = {{{1st_reading|}}}
+| label55 = Voting summary
+| class55 = nowrap
+| data55 = {{unbulleted list
+           | {{#if:{{{1st_reading_for|}}}        |'''{{color|#090|{{#ifeq:{{{1st_reading_for}}}|0 |None | {{{1st_reading_for}}} }} voted for}}'''}}| {{#if:{{{1st_reading_against|}}}    |'''{{color|#900|{{#ifeq:{{{1st_reading_against}}}|0 |None | {{{1st_reading_against}}} }} voted against}}'''}}| {{#if:{{{1st_reading_abstention|}}} |'''{{color|#333|{{#ifeq:{{{1st_reading_abstention}}}|0 |None | {{{1st_reading_abstention}}} }} abstained}}'''}}| {{#if:{{{1st_reading_absent|}}}     |{{#ifeq:{{{1st_reading_absent}}}|0 |None | {{{1st_reading_absent}}} }} absent}}| {{#if:{{{1st_reading_presentnotvoting|}}} |{{#ifeq:{{{1st_reading_presentnotvoting}}}|0 |None | {{{1st_reading_presentnotvoting}}} }} present not voting}}}}
+|label56     = {{#if:{{{committee_responsible|}}}|Considered by the {{{committee_responsible}}} Committee|Considered in committee}}
+|data56      = {{{committee_post1st|}}}
+|label57     = [[Reading (legislature)#Second reading|Second reading]]
+|data57      = {{{2nd_reading|}}}
+| label58 = Voting summary
+| class58 = nowrap
+| data58 = {{unbulleted list
+           | {{#if:{{{2nd_reading_for|}}}        |'''{{color|#090|{{#ifeq:{{{2nd_reading_for}}}|0 |None | {{{2nd_reading_for}}} }} voted for}}'''}}| {{#if:{{{2nd_reading_against|}}}    |'''{{color|#900|{{#ifeq:{{{2nd_reading_against}}}|0 |None | {{{2nd_reading_against}}} }} voted against}}'''}}| {{#if:{{{2nd_reading_abstention|}}} |'''{{color|#333|{{#ifeq:{{{2nd_reading_abstention}}}|0 |None | {{{2nd_reading_abstention}}} }} abstained}}'''}}| {{#if:{{{2nd_reading_absent|}}}     |{{#ifeq:{{{2nd_reading_absent}}}|0 |None | {{{2nd_reading_absent}}} }} absent}}| {{#if:{{{2nd_reading_presentnotvoting|}}} |{{#ifeq:{{{2nd_reading_presentnotvoting}}}|0 |None | {{{2nd_reading_presentnotvoting}}} }} present not voting}}}}
+|label59     = {{#if:{{{committee_responsible|}}}|Considered by the {{{committee_responsible}}} Committee|Considered in committee}}
+|data59      = {{{committee_post2nd|}}}
+|label60     = {{{committee_whole_label|[[Committee of the whole]]}}}
+|data60      = {{{committee_whole|}}}
+|label61     = [[Reading (legislature)#Third reading|Third reading]]
+|data61      = {{{3rd_reading|}}}
+| label62 = Voting summary
+| class62 = nowrap
+| data62 = {{unbulleted list
+           | {{#if:{{{3rd_reading_for|}}}        |'''{{color|#090|{{#ifeq:{{{3rd_reading_for}}}|0 |None | {{{3rd_reading_for}}} }} voted for}}'''}}| {{#if:{{{3rd_reading_against|}}}    |'''{{color|#900|{{#ifeq:{{{3rd_reading_against}}}|0 |None | {{{3rd_reading_against}}} }} voted against}}'''}}| {{#if:{{{3rd_reading_abstention|}}} |'''{{color|#333|{{#ifeq:{{{3rd_reading_abstention}}}|0 |None | {{{3rd_reading_abstention}}} }} abstained}}'''}}| {{#if:{{{3rd_reading_absent|}}}     |{{#ifeq:{{{3rd_reading_absent}}}|0 |None | {{{3rd_reading_absent}}} }} absent}}| {{#if:{{{3rd_reading_presentnotvoting|}}} |{{#ifeq:{{{3rd_reading_presentnotvoting}}}|0 |None | {{{3rd_reading_presentnotvoting}}} }} present not voting}}}}
+|label63     = Passed
+|data63      = {{{passed|}}}
+| label64 = Voting summary
+| class64 = nowrap
+| data64 = {{unbulleted list
+           | {{#if:{{{passed_for|}}}        |'''{{color|#090|{{#ifeq:{{{passed_for}}}|0 |None | {{{passed_for}}} }} voted for}}'''}}| {{#if:{{{passed_against|}}}    |'''{{color|#900|{{#ifeq:{{{passed_against}}}|0 |None | {{{passed_against}}} }} voted against}}'''}}| {{#if:{{{passed_abstention|}}} |'''{{color|#333|{{#ifeq:{{{passed_abstention}}}|0 |None | {{{passed_abstention}}} }} abstained}}'''}}| {{#if:{{{passed_absent|}}}     |{{#ifeq:{{{passed_absent}}}|0 |None | {{{passed_absent}}} }} absent}}| {{#if:{{{passed_presentnotvoting|}}} |{{#ifeq:{{{passed_presentnotvoting}}}|0 |None | {{{passed_presentnotvoting}}} }} present not voting}}}}
+|label65     = Committee report
+|data65      = {{{committee_report|}}}
+|header66    = {{#if:{{{passed_by2|{{{enacted_by2|{{{considered_by2|}}}}}}}}}|{{#if:{{{bill2|}}}{{{bill_citation2|}}}{{{bill_date2|}}}{{{introduced_by2|}}}{{{committee_responsible2|}}}{{{preliminary_reading2|}}}{{{1st_reading2|}}}{{{committee_post1st2|}}}{{{2nd_reading2|}}}{{{committee_post2nd2|}}}{{{committee_whole2|}}}{{{3rd_reading2|}}}{{{passed2|}}}{{{conf_committee_passed2|}}}{{{committee_report2|}}}|Second chamber: {{{passed_by2|{{{enacted_by2|{{{considered_by2}}}}}}}}}}}}}
+|label67     = Bill title
+|data67      = {{{bill2|}}}
+|label68     = Bill citation
+|data68      = {{{bill_citation2|}}}
+|label69     = Received from the {{{passed_by|{{{enacted_by|{{{considered_by}}}}}}}}}
+|data69      = {{{date_introduced2|{{{introduced_on2|{{{bill_date2|{{{received_from_first_chamber|}}}}}}}}}}}}
+|label70     = {{#if:{{{rapporteur2|}}}|Rapporteur|Member(s) in charge}}
+|data70      = {{{introduced_by2|{{{member_in_charge2|{{{rapporteur2|}}}}}}}}}
+|label71     = Committee responsible
+|data71      = {{{committee_responsible2|}}}
+|label72     = Preliminary reading
+|data72      = {{{preliminary_reading2|}}}
+| label73 = Voting summary
+| class73 = nowrap
+| data73 = {{unbulleted list
+           | {{#if:{{{preliminary_reading2_for|}}}        |'''{{color|#090|{{#ifeq:{{{preliminary_reading2_for}}}|0 |None | {{{preliminary_reading2_for}}} }} voted for}}'''}}| {{#if:{{{preliminary_reading2_against|}}}    |'''{{color|#900|{{#ifeq:{{{preliminary_reading2_against}}}|0 |None | {{{preliminary_reading2_against}}} }} voted against}}'''}}| {{#if:{{{preliminary_reading2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{preliminary_reading2_abstention}}}|0 |None | {{{preliminary_reading2_abstention}}} }} abstained}}'''}}| {{#if:{{{preliminary_reading2_absent|}}}     |{{#ifeq:{{{preliminary_reading2_absent}}}|0 |None | {{{preliminary_reading2_absent}}} }} absent}}| {{#if:{{{preliminary_reading2_presentnotvoting|}}} |{{#ifeq:{{{preliminary_reading2_presentnotvoting}}}|0 |None | {{{preliminary_reading2_presentnotvoting}}} }} present not voting}}}}
+|label74     = First reading
+|data74      = {{{1st_reading2|}}}
+| label75 = Voting summary
+| class75 = nowrap
+| data75 = {{unbulleted list
+           | {{#if:{{{1st_reading2_for|}}}        |'''{{color|#090|{{#ifeq:{{{1st_reading2_for}}}|0 |None | {{{1st_reading2_for}}} }} voted for}}'''}}| {{#if:{{{1st_reading2_against|}}}    |'''{{color|#900|{{#ifeq:{{{1st_reading2_against}}}|0 |None | {{{1st_reading2_against}}} }} voted against}}'''}}| {{#if:{{{1st_reading2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{1st_reading2_abstention}}}|0 |None | {{{1st_reading2_abstention}}} }} abstained}}'''}}| {{#if:{{{1st_reading2_absent|}}}     |{{#ifeq:{{{1st_reading2_absent}}}|0 |None | {{{1st_reading2_absent}}} }} absent}}| {{#if:{{{1st_reading2_presentnotvoting|}}} |{{#ifeq:{{{1st_reading2_presentnotvoting}}}|0 |None | {{{1st_reading2_presentnotvoting}}} }} present not voting}}}}
+|label76     = {{#if:{{{committee_responsible2|}}}|Considered by the {{{committee_responsible2}}} Committee|Considered in committee}}
+|data76      = {{{committee_post1st2|}}}
+|label77     = Second reading
+|data77      = {{{2nd_reading2|}}}
+| label78 = Voting summary
+| class78 = nowrap
+| data78 = {{unbulleted list
+           | {{#if:{{{2nd_reading2_for|}}}        |'''{{color|#090|{{#ifeq:{{{2nd_reading2_for}}}|0 |None | {{{2nd_reading2_for}}} }} voted for}}'''}}| {{#if:{{{2nd_reading2_against|}}}    |'''{{color|#900|{{#ifeq:{{{2nd_reading2_against}}}|0 |None | {{{2nd_reading2_against}}} }} voted against}}'''}}| {{#if:{{{2nd_reading2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{2nd_reading2_abstention}}}|0 |None | {{{2nd_reading2_abstention}}} }} abstained}}'''}}| {{#if:{{{2nd_reading2_absent|}}}     |{{#ifeq:{{{2nd_reading2_absent}}}|0 |None | {{{2nd_reading2_absent}}} }} absent}}| {{#if:{{{2nd_reading2_presentnotvoting|}}} |{{#ifeq:{{{2nd_reading2_presentnotvoting}}}|0 |None | {{{2nd_reading2_presentnotvoting}}} }} present not voting}}}}
+|label79     = {{#if:{{{committee_responsible2|}}}|Considered by the {{{committee_responsible2}}} Committee|Considered in committee}}
+|data79      = {{{committee_post2nd2|}}}
+|label80     = {{{committee_whole_label2|[[Committee of the whole]]}}}
+|data80      = {{{committee_whole2|}}}
+|label81     = Third reading
+|data81      = {{{3rd_reading2|}}}
+| label82 = Voting summary
+| class82 = nowrap
+| data82 = {{unbulleted list
+           | {{#if:{{{3rd_reading2_for|}}}        |'''{{color|#090|{{#ifeq:{{{3rd_reading2_for}}}|0 |None | {{{3rd_reading2_for}}} }} voted for}}'''}}| {{#if:{{{3rd_reading2_against|}}}    |'''{{color|#900|{{#ifeq:{{{3rd_reading2_against}}}|0 |None | {{{3rd_reading2_against}}} }} voted against}}'''}}| {{#if:{{{3rd_reading2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{3rd_reading2_abstention}}}|0 |None | {{{3rd_reading2_abstention}}} }} abstained}}'''}}| {{#if:{{{3rd_reading2_absent|}}}     |{{#ifeq:{{{3rd_reading2_absent}}}|0 |None | {{{3rd_reading2_absent}}} }} absent}}| {{#if:{{{3rd_reading2_presentnotvoting|}}} |{{#ifeq:{{{3rd_reading2_presentnotvoting}}}|0 |None | {{{3rd_reading2_presentnotvoting}}} }} present not voting}}}}
+|label83     = {{#switch:{{lc:{{{second_chamber_action}}}}} 
+  |rejected                 = Rejected
+  |passed after rejection   = Rejected
+  |passed with amendments   = Passed with amendments
+  |amendments rejected      = Passed with amendments
+  |resolved not to consider = Resolved not to consider
+  |passed by inaction       = Passed by inaction
+  |#default                 = Passed
+}}
+|data83      = {{{passed2|}}}
+| label84 = Voting summary
+| class84 = nowrap
+| data84 = {{unbulleted list
+           | {{#if:{{{passed2_for|}}}        |'''{{color|#090|{{#ifeq:{{{passed2_for}}}|0 |None | {{{passed2_for}}} }} voted for}}'''}}| {{#if:{{{passed2_against|}}}    |'''{{color|#900|{{#ifeq:{{{passed2_against}}}|0 |None | {{{passed2_against}}} }} voted against}}'''}}| {{#if:{{{passed2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{passed2_abstention}}}|0 |None | {{{passed2_abstention}}} }} abstained}}'''}}| {{#if:{{{passed2_absent|}}}     |{{#ifeq:{{{passed2_absent}}}|0 |None | {{{passed2_absent}}} }} absent}}| {{#if:{{{passed2_presentnotvoting|}}} |{{#ifeq:{{{passed2_presentnotvoting}}}|0 |None | {{{passed2_presentnotvoting}}} }} present not voting}}}}
+|label87     = Committee report
+|data87      = {{{committee_report2|}}}
+|header88    = {{#if:{{{date_conf_committee|}}}{{{white_paper|}}}{{{date_amendments_considered|}}}{{{date_final_passage|}}}{{{date_reconsidered|}}}{{{date_reconsidered2|}}}|{{#if:{{{enacted_by2|{{{considered_by2|}}}}}}|Final stages}}}}
+|label91     = {{#switch:{{lc:{{{second_chamber_action}}}}} 
+  |rejected                 = {{{enacted_by2|{{{considered_by2|}}}}}} rejection considered by the {{{enacted_by|{{{considered_by|}}}}}}
+  |passed after rejection   = passed by the {{{enacted_by|{{{considered_by|}}}}}} after {{{enacted_by2|{{{considered_by2|}}}}}} rejection
+  |amendments rejected      = {{{enacted_by2|{{{considered_by2|}}}}}} amendments rejected by the {{{enacted_by|{{{considered_by|}}}}}}
+  |#default                 = {{{enacted_by2|{{{considered_by2|}}}}}} amendments considered by the {{{enacted_by|{{{considered_by|}}}}}}
+}}
+|data91      = {{{date_amendments_considered|}}}
+| label92 = Voting summary
+| class92 = nowrap
+| data92  = {{unbulleted list
+           | {{#if:{{{amendments_considered_for|}}}        |'''{{color|#090|{{#ifeq:{{{amendments_considered_for}}}|0 |None | {{{amendments_considered_for}}} }} voted for}}'''}}| {{#if:{{{amendments_considered_against|}}}    |'''{{color|#900|{{#ifeq:{{{amendments_considered_against}}}|0 |None | {{{amendments_considered_against}}} }} voted against}}'''}}| {{#if:{{{amendments_considered_abstention|}}} |'''{{color|#333|{{#ifeq:{{{amendments_considered_abstention}}}|0 |None | {{{amendments_considered_abstention}}} }} abstained}}'''}}| {{#if:{{{amendments_considered_absent|}}}     |{{#ifeq:{{{amendments_considered_absent}}}|0 |None | {{{amendments_considered_absent}}} }} absent}}| {{#if:{{{amendments_considered_presentnotvoting|}}} |{{#ifeq:{{{amendments_considered_presentnotvoting}}}|0 |None | {{{amendments_considered_presentnotvoting}}} }} present not voting}}}}
+|label93     = Reported from [[conference committee]]
+|data93      = {{{date_conf_committee|}}}
+|label94     = Conference committee bill passed by {{{enacted_by|{{{considered_by|}}}}}}
+|data94      = {{{conf_committee_passed|}}}
+| label95 = Voting summary
+| class95 = nowrap
+| data95 = {{unbulleted list
+           | {{#if:{{{conf_committee_passed_for|}}}        |'''{{color|#090|{{#ifeq:{{{conf_committee_passed_for}}}|0 |None | {{{conf_committee_passed_for}}} }} voted for}}'''}}| {{#if:{{{conf_committee_passed_against|}}}    |'''{{color|#900|{{#ifeq:{{{conf_committee_passed_against}}}|0 |None | {{{conf_committee_passed_against}}} }} voted against}}'''}}| {{#if:{{{conf_committee_passed_abstention|}}} |'''{{color|#333|{{#ifeq:{{{conf_committee_passed_abstention}}}|0 |None | {{{conf_committee_passed_abstention}}} }} abstained}}'''}}| {{#if:{{{conf_committee_passed_absent|}}}     |{{#ifeq:{{{conf_committee_passed_absent}}}|0 |None | {{{conf_committee_passed_absent}}} }} absent}}| {{#if:{{{conf_committee_passed_presentnotvoting|}}} |{{#ifeq:{{{conf_committee_passed_presentnotvoting}}}|0 |None | {{{conf_committee_passed_presentnotvoting}}} }} present not voting}}}}
+|label96     = Conference committee bill passed by {{{enacted_by2|{{{considered_by2|}}}}}}
+|data96      = {{{conf_committee_passed2|}}}
+| label97 = Voting summary
+| class97 = nowrap
+| data97 = {{unbulleted list
+           | {{#if:{{{conf_committee_passed2_for|}}}        |'''{{color|#090|{{#ifeq:{{{conf_committee_passed2_for}}}|0 |None | {{{conf_committee_passed2_for}}} }} voted for}}'''}}| {{#if:{{{conf_committee_passed2_against|}}}    |'''{{color|#900|{{#ifeq:{{{conf_committee_passed2_against}}}|0 |None | {{{conf_committee_passed2_against}}} }} voted against}}'''}}| {{#if:{{{conf_committee_passed2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{conf_committee_passed2_abstention}}}|0 |None | {{{conf_committee_passed2_abstention}}} }} abstained}}'''}}| {{#if:{{{conf_committee_passed2_absent|}}}     |{{#ifeq:{{{conf_committee_passed2_absent}}}|0 |None | {{{conf_committee_passed2_absent}}} }} absent}}| {{#if:{{{conf_committee_passed2_presentnotvoting|}}} |{{#ifeq:{{{conf_committee_passed2_presentnotvoting}}}|0 |None | {{{conf_committee_passed2_presentnotvoting}}} }} present not voting}}}}
+|label98     = Finally passed both chambers
+|data98      = {{{date_final_passage|}}}
+|label99     = {{#if:{{{enacted_by2|{{{considered_by2|}}}}}}{{{reconsidered_in_joint_sitting}}}|Reconsidered by the {{{enacted_by|{{{considered_by|}}}}}} after veto|Reconsidered after veto}}
+|data99      = {{{date_reconsidered|}}}
+| label100 = Voting summary
+| class100 = nowrap
+| data100 = {{unbulleted list
+           | {{#if:{{{veto_override_for|}}}        |'''{{color|#090|{{#ifeq:{{{veto_override_for}}}|0 |None | {{{veto_override_for}}} }} voted for}}'''}}| {{#if:{{{veto_override_against|}}}    |'''{{color|#900|{{#ifeq:{{{veto_override_against}}}|0 |None | {{{veto_override_against}}} }} voted against}}'''}}| {{#if:{{{veto_override_abstention|}}} |'''{{color|#333|{{#ifeq:{{{veto_override_abstention}}}|0 |None | {{{veto_override_abstention}}} }} abstained}}'''}}| {{#if:{{{veto_override_absent|}}}     |{{#ifeq:{{{veto_override_absent}}}|0 |None | {{{veto_override_absent}}} }} absent}}| {{#if:{{{veto_override_presentnotvoting|}}} |{{#ifeq:{{{veto_override_presentnotvoting}}}|0 |None | {{{veto_override_presentnotvoting}}} }} present not voting}}}}
+|label101     = Reconsidered by the {{{enacted_by2|{{{considered_by2}}}}}} after veto
+|data101      = {{{date_reconsidered2|}}}
+| label102 = Voting summary
+| class102 = nowrap
+| data102  = {{unbulleted list
+           | {{#if:{{{veto_override2_for|}}}        |'''{{color|#090|{{#ifeq:{{{veto_override2_for}}}|0 |None | {{{veto_override2_for}}} }} voted for}}'''}}| {{#if:{{{veto_override2_against|}}}    |'''{{color|#900|{{#ifeq:{{{veto_override2_against}}}|0 |None | {{{veto_override2_against}}} }} voted against}}'''}}| {{#if:{{{veto_override2_abstention|}}} |'''{{color|#333|{{#ifeq:{{{veto_override2_abstention}}}|0 |None | {{{veto_override2_abstention}}} }} abstained}}'''}}| {{#if:{{{veto_override2_absent|}}}     |{{#ifeq:{{{veto_override2_absent}}}|0 |None | {{{veto_override2_absent}}} }} absent}}| {{#if:{{{veto_override2_presentnotvoting|}}} |{{#ifeq:{{{veto_override2_presentnotvoting}}}|0 |None | {{{veto_override2_presentnotvoting}}} }} present not voting}}}}
+
+|header103    = {{#if:{{{amends|}}}|Amends}}
+|data104      = {{{amends|}}}
+
+|header105   = {{#if:{{{repeals|}}}|[[Repeal]]s}}
+|data106     = {{{repeals|}}}
+
+|header107   = {{#if:{{{amended_by|}}}|Amended by}}
+|data108     = {{{amended_by|}}}
+
+|header109   = {{#if:{{{repealed_by|}}}|Repealed by}}
+|data110     = {{{repealed_by|}}}
+
+|header111   = {{#if:{{{related|{{{related_legislation|}}}}}}|Related legislation}}
+|data112     = {{{related|{{{related_legislation|}}}}}}
+
+|header113   = {{#if:{{{related_cases|}}}|{{#if:{{{supreme_court|}}}|{{{supreme_court}}} cases|Related cases}}}}
+|data114     = {{{related_cases|}}}
+
+|header115   = {{#if:{{{struck_down_by|}}}|Struck down by}}
+|data116     = {{{struck_down_by|}}}
+
+|header117   = {{#if:{{{summary|}}}|Summary}}
+|data118     = {{{summary|}}}
+
+|header119   = {{#if:{{{keywords|}}}|Keywords}}
+|data120     = {{{keywords|}}}
+
+|header121   = {{#if:{{{original_text|}}}|[{{{original_text|}}} Text of statute as originally enacted]}}
+
+|belowstyle  =  background-color:{{#switch:{{lc:{{{status|}}}}}
+  |pending    
+  |pending first
+  |pending second
+  |pending referendum
+  |pending assent = <nowiki>#</nowiki>FBEC5D
+  |not passed = <nowiki>#</nowiki>FFCBDB
+  |vetoed     = <nowiki>#</nowiki>FFCBDB
+  |veto override failed = <nowiki>#</nowiki>FFCBDB
+  |lapsed
+  |withdrawn  = <nowiki>#</nowiki>FFCBDB
+  |blocked    = <nowiki>#</nowiki>FFCBDB
+  |void
+  |void ab initio
+  |halted     = <nowiki>#</nowiki>FFCBDB
+  |not yet in force
+  |not fully in force = <nowiki>#</nowiki>FBEC5D
+  |current
+  |in force   
+  |in force amended = <nowiki>#</nowiki>AAF0D1
+  |amended    = <nowiki>#</nowiki>FFFFCC
+  |expired
+  |spent
+  |repealed
+  |struck down
+  |disallowed
+  |abrogated  = <nowiki>#</nowiki>FFCCCC
+  |#default   = transparent; border-top:#aaa 1px solid;
+  }};
+|below       = {{#if:{{{status|}}}|'''Status:''' {{#switch:{{lc:{{{status}}}}} 
+  |pending              = Pending
+  |pending first        = Pending — before {{{passed_by|{{{enacted_by|{{{considered_by|}}}}}}}}}
+  |pending second       = Pending — before {{{passed_by2|{{{enacted_by2|{{{considered_by2|}}}}}}}}}
+  |pending referendum   = Pending referendum
+  |pending assent       = Pending assent
+  |not passed           = Not passed
+  |vetoed               = Vetoed
+  |veto override failed = Veto override failed
+  |withdrawn            = Withdrawn
+  |lapsed               = Lapsed at end of [[Legislative session|session]]
+  |blocked              = Blocked
+  |not yet in force     = Not yet in force
+  |not fully in force   = Not fully in force
+  |current              = Current legislation
+  |in force             = In force
+  |in force amended     = In force (amended)
+  |amended              = Amended
+  |expired              = Expired
+  |spent                = [[Spent enactment|Spent]]
+  |repealed             = [[Repeal]]ed
+  |struck down          = [[:en:Judicial review|Struck down]]
+  |disallowed           = Disallowed
+  |abrogated            = Abrogated
+  |halted               = Halted
+  |void                 = Void
+  |void ab initio       = Void ab initio
+  |#default             = Unknown
+  }}
+}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox legislation]] with unknown parameter "_VALUE_"|ignoreblank=y| 1st_reading | 1st_reading_absent | 1st_reading_abstention | 1st_reading_against | 1st_reading_for | 1st_reading_presentnotvoting | 1st_reading2 | 1st_reading2_absent | 1st_reading2_abstention | 1st_reading2_against | 1st_reading2_for | 1st_reading2_presentnotvoting | 2nd_reading | 2nd_reading_absent | 2nd_reading_abstention | 2nd_reading_against | 2nd_reading_for | 2nd_reading_presentnotvoting | 2nd_reading2 | 2nd_reading2_absent | 2nd_reading2_abstention | 2nd_reading2_against | 2nd_reading2_for | 2nd_reading2_presentnotvoting | 3rd_reading | 3rd_reading_absent | 3rd_reading_abstention | 3rd_reading_against | 3rd_reading_for | 3rd_reading_presentnotvoting | 3rd_reading2 | 3rd_reading2_absent | 3rd_reading2_abstention | 3rd_reading2_against | 3rd_reading2_for | 3rd_reading2_presentnotvoting | administered_by | amended_by | amendments_considered_absent | amendments_considered_abstention | amendments_considered_against | amendments_considered_for | amendments_considered_presentnotvoting | amends | assented_by | authorizing_legislation | autocollapse_long_title | background_color | bill | bill_citation | bill_citation2 | bill_date | bill_date2 | bill_history_url | bill2 | caption | child | citation | code | code_section_name | code_sections_affected | code_sections_amended | code_sections_created | code_titles_affected | code_titles_amended | codification_affects | codification_amends | codification_repeals | commencement | committee_post1st | committee_post2nd | committee_post1st2 | committee_post2nd2 | committee_report | committee_report2 | committee_responsible | committee_responsible2 | committee_whole | committee_whole_label | committee_whole_label2 | committee_whole2 | conf_committee_passed | conf_committee_passed_absent | conf_committee_passed_abstention | conf_committee_passed_against | conf_committee_passed_for | conf_committee_passed_presentnotvoting | conf_committee_passed2 | conf_committee_passed2_absent | conf_committee_passed2_abstention | conf_committee_passed2_against | conf_committee_passed2_for | conf_committee_passed2_presentnotvoting | considered_by | considered_by2 | date_abrogated | date_amendments_considered | date_assented | date_became_law_by_inaction | date_commenced | date_conf_committee | date_effective | date_enacted | date_enacted2 | date_final_passage | date_introduced | date_inteoduced2 | date_of_expiry | date_passed | date_passed2 | date_pocket_vetoed | date_reconsidered | date_reconsidered2 | date_repealed | date_signed | date_vetoed | enacted_by | enacted_by2 | passed_by | passed_by2 | image | image_size | image_upright | imagealt | imagesize | introduced_by | introduced_by2 | keywords | labelstyle | legislature | long_title | name | original_text | passage | passed | passed_absent | passed_abstention | passed_against | passed_for | passed_presentnotvoting | passed2 | passed2_absent | passed2_abstention | passed2_against | passed2_for | passed2_presentnotvoting | preliminary_reading | preliminary_reading_absent | preliminary_reading_abstention | preliminary_reading_against | preliminary_reading_for | preliminary_reading_presentnotvoting | preliminary_reading2 | preliminary_reading2_absent | preliminary_reading2_abstention | preliminary_reading2_against | preliminary_reading2_for | preliminary_reading2_presentnotvoting | reference_holding | related | related_cases | related_legislation | repealed_by | repeals | royal_assent | second_chamber_action | short_title | signed_by | status | struck_down_by | subbox | summary | supreme_court | territorial_extent | upright | veto_overridden | veto_override_absent | veto_override_abstention | veto_override_against | veto_override_for | veto_override_presentnotvoting | veto_override2_absent | veto_override2_abstention | veto_override2_against | veto_override2_for | veto_override2_presentnotvoting | veto_type | vetoed_by | white_paper }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+[[Category:Pages using infobox legislation with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
+[[Category:Independently git synced pages]]
+</noinclude>
