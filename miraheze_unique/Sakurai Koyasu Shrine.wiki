@@ -1,5 +1,3 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sakurai_Koyasu_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
 {{Infobox religious building|image=File:櫻井子安神社.jpg|prefecture={{ill|Asahi, Chiba|qid=Q637868}}|coordinates={{Coord|35.785583|N|140.644944}}|deity={{ill|Izanagi|qid=Q813858}}; {{ill|Izanami|qid=Q682306}}; {{ill|Konohanasakuya-hime|qid=Q1781862}}}}
 {{Location map|Japan Chiba|lat_deg=35|lat_min=47|lat_sec=8.1|lon_deg=140|lon_min=38|lon_sec=41.8|label=Sakurai Koyasu Shrine|position=bottom|width=220|mark=Japanese Map symbol (Shinto shrine).svg|marksize=12|caption={{Center|Location of Sakurai Koyasu Shrine}}}}
 '''Sakurai Koyasu Shrine''' (櫻井子安神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Asahi, Chiba|en|Asahi, Chiba|qid=Q637868|lt=Asahi, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}, Japan.
@@ -11,7 +9,7 @@ The exact date of its establishment is unknown, but it has been worshiped in thi
 
 According to oral tradition, the shrine's red hemp cord (Koyasu-sama's red belt) symbolizes connections not only between couples but also between parents and children. It is believed that carrying the cord can fulfill wishes related to good relationships and fertility. Over time, it has also become a charm for health, academic success, and good fortune.
 
-In addition, as some households in the region perform {{ill|Shinto funeral|ja|神葬祭|12=simple|13=User:Immanuelle/Shinsōsai|comment=changed title based on wikidata|qid=Q11590783}} (Shinto-style funerals), the shrine is respected as a guardian deity overseeing the entire life cycle—from birth, through rites of passage like {{ill|Shichi-Go-San|en|Shichi-Go-San|qid=Q1072387|lt=Shichi-Go-San}}, to funerals.
+In addition, as some households in the region perform {{ill|Shinto funeral|ja|神葬祭|12=simple|13=User:Immanuelle/Shinsōsai|comment=changed title based on wikidata|qid=Q11590783}} (Shinto-style funerals), the shrine is respected as a guardian deity overseeing the entire life cycle—from birth, through rites of passage like {{ill|Shichi-Go-San|ar|شيشي قو سان|ca|Shichi-Go-San|da|Shichi-go-san|de|Shichi-go-san|es|Shichi-Go-San|fa|شیچی-گو-سان|fi|Shichi-go-san|fr|Shichi-go-san|hu|Sicsi-Go-Szan|hy|Սիչի-Գո-Սան|id|Shichi-Go-San|it|Shichi-Go-San|ja|七五三|ko|시치고산|lt|Šičigosan|mn|Шичигосан|ms|Shichi-Go-San|my|ရှိချိဂေါ့ဆန်း|nl|Shichi-Go-San|pl|Shichi-go-san|pt|Shichi-Go-San|ru|Сити-го-сан|simple|Shichi-Go-San|sv|Shichi-go-san|tr|Shichi-Go-San|vi|Shichi-Go-San|zh|七五三|qid=Q1072387|lt=Shichi-Go-San}}, to funerals.
 
 == Enshrined Deities ==
 * {{ill|Konohanasakuya-hime|ja|木花咲耶姫命|12=simple|13=User:Immanuelle/Konohanasakuya-hime|ja_comment=jawiki redirects to QID FIXED|qid=Q1781862}}
@@ -45,90 +43,88 @@ From JR Sōbu Main Line, get off at Asahi Station, then walk 11 minutes from the
 
 {{coord|35|47|8.1|N|140|38|41.8|E|region:JP-12_type:landmark|display=title|name=Sakurai Koyasu Shrine}}
 
-* {{ill|Sakurai Koyasu Shrine|en|12=simple|13=User:Immanuelle/Sakurai Koyasu Shrine}}
+* {{ill|Sakurai Koyasu Shrine|en|Sakurai Koyasu Shrine}}
  - Located in Sakurai, Asahi City, Chiba Prefecture.
-* {{ill|Koyasu Shrine (Sosa)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Sosa)}}
+* {{ill|Koyasu Shrine (Sosa)|en|Koyasu Shrine (Sosa)}}
  - Located in Yokoshiba, Sosa City, Chiba Prefecture.
-* {{ill|Koyasu Shrine (Hanamigawa)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Hanamigawa)}}
+* {{ill|Koyasu Shrine (Hanamigawa)|en|Koyasu Shrine (Hanamigawa)}}
  - Located in Hatamachi, Hanamigawa Ward, Chiba City, Chiba Prefecture.
-* {{ill|Koyasu Shrine (Ichikawa)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Ichikawa)}}
+* {{ill|Koyasu Shrine (Ichikawa)|en|Koyasu Shrine (Ichikawa)}}
  - Located in Kashiwaimachi, Ichikawa City, Chiba Prefecture.
-* {{ill|Koyasu Shrine (Narashino)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Narashino)}}
+* {{ill|Koyasu Shrine (Narashino)|en|Koyasu Shrine (Narashino)}}
  - Located in Fujisaki, Narashino City, Chiba Prefecture.
-* {{ill|Koyasu Shrine (Matsudo)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Matsudo)}}
+* {{ill|Koyasu Shrine (Matsudo)|en|Koyasu Shrine (Matsudo)}}
  - Located in Yagasaki, Matsudo City, Chiba Prefecture.
-* {{ill|Koyasu Hachiman Shrine|en|12=simple|13=User:Immanuelle/Koyasu Hachiman Shrine}}
+* {{ill|Koyasu Hachiman Shrine|en|Koyasu Hachiman Shrine}}
  - Located in Nakaiikegami and Kitakojiya, Ota Ward, Tokyo.
-* {{ill|Koyasu Shrine (Hachioji)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Hachioji)}}
+* {{ill|Koyasu Shrine (Hachioji)|en|Koyasu Shrine (Hachioji)}}
  - Located in Hachioji City, Tokyo.
-* {{ill|Koyasu Shrine (Isehara)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Isehara)}}
+* {{ill|Koyasu Shrine (Isehara)|en|Koyasu Shrine (Isehara)}}
  - Located in Ishida, Isehara City, Kanagawa Prefecture.
 
 == Chubu Region ==
-* {{ill|Koyasumiya Shrine|en|12=simple|13=User:Immanuelle/Koyasumiya Shrine}}
+* {{ill|Koyasumiya Shrine|en|Koyasumiya Shrine}}
  - Located in Nigioka Town, Otsuki City, Yamanashi Prefecture.
-* {{ill|Koyasu Hachiman Shrine (Kofu)|en|12=simple|13=User:Immanuelle/Koyasu Hachiman Shrine (Kofu)}}
+* {{ill|Koyasu Hachiman Shrine (Kofu)|en|Koyasu Hachiman Shrine (Kofu)}}
  - Located in Kokubo, Kofu City, Yamanashi Prefecture.
-* {{ill|Koyasu Shrine (Kawazu)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Kawazu)}}
+* {{ill|Koyasu Shrine (Kawazu)|en|Koyasu Shrine (Kawazu)}}
  - Located in Nawa, Kawazu Town, Kamo District, Shizuoka Prefecture.
-* {{ill|Shimbashi Sengen Shrine|en|12=simple|13=User:Immanuelle/Shimbashi Sengen Shrine}}
+* {{ill|Shimbashi Sengen Shrine|en|Shimbashi Sengen Shrine}}
  - Koyasu Shrine as a subordinate shrine of Shimbashi Sengen Shrine, Gotemba City, Shizuoka Prefecture.
-* {{ill|Koyasu Shrine (Fujinomiya)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Fujinomiya)}}
+* {{ill|Koyasu Shrine (Fujinomiya)|en|Koyasu Shrine (Fujinomiya)}}
  - Located in Sugita, Fujinomiya City, Shizuoka Prefecture.
-* {{ill|Koyasu Hachimangu (Fujinomiya)|en|12=simple|13=User:Immanuelle/Koyasu Hachimangu (Fujinomiya)}}
+* {{ill|Koyasu Hachimangu (Fujinomiya)|en|Koyasu Hachimangu (Fujinomiya)}}
  - Located in Numakubo, Fujinomiya City, Shizuoka Prefecture.
-* {{ill|Koyasu Shrine (Hamamatsu)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Hamamatsu)}}
+* {{ill|Koyasu Shrine (Hamamatsu)|en|Koyasu Shrine (Hamamatsu)}}
  - Located in Shiratori Town, Hamamatsu City, Shizuoka Prefecture.
-* {{ill|Koyasu Shrine (Gifu)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Gifu)}}
+* {{ill|Koyasu Shrine (Gifu)|en|Koyasu Shrine (Gifu)}}
  - Located in Hikosaka, Gifu City, Gifu Prefecture.
-* {{ill|Koyasu Shrine (Ogaki)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Ogaki)}}
+* {{ill|Koyasu Shrine (Ogaki)|en|Koyasu Shrine (Ogaki)}}
  - Located in Akasaka Town, Ogaki City, Gifu Prefecture.
-* {{ill|Koyasu Shrine (Obu)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Obu)}}
+* {{ill|Koyasu Shrine (Obu)|en|Koyasu Shrine (Obu)}}
  - Located in Kyowa Town, Obu City, Aichi Prefecture.
-* {{ill|Koyasu Shrine (Kaga)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Kaga)}}
+* {{ill|Koyasu Shrine (Kaga)|en|Koyasu Shrine (Kaga)}}
  - Located in Kosugawara Town, Kaga City, Ishikawa Prefecture.
-* {{ill|Koyasu Shrine (Kanazawa)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Kanazawa)}}
+* {{ill|Koyasu Shrine (Kanazawa)|en|Koyasu Shrine (Kanazawa)}}
  - Located in Shimoasahara Town, Kanazawa City, Ishikawa Prefecture.
 
 == Kinki Region ==
-* {{ill|Koyasu Shrine (Ise)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Ise)}}
- - Located in Ise City, Mie Prefecture, under the jurisdiction of the {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine|en|12=simple|13=User:Immanuelle/Inner Shrine}}
+* {{ill|Koyasu Shrine (Ise)|en|Koyasu Shrine (Ise)}}
+ - Located in Ise City, Mie Prefecture, under the jurisdiction of the {{ill|Kōtai Jingū|en|Kōtai Jingū|lt=Inner Shrine}}
 
-* {{ill|Koyasu Shrine (Kihoku)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Kihoku)}}
+* {{ill|Koyasu Shrine (Kihoku)|en|Koyasu Shrine (Kihoku)}}
  - Located in Jinai, Kiho Town, Minami-Muro District, Mie Prefecture.
 
 == Chugoku Region ==
-* {{ill|Koyasu Shrine (Okayama)|en|12=simple|13=User:Immanuelle/Koyasu Shrine (Okayama)}}
- - Located in Kita Ward, Okayama City, Okayama Prefecture. A subordinate shrine of {{ill|Kibitsu Shrine|en|12=simple|13=User:Immanuelle/Kibitsu Shrine}}
+* {{ill|Koyasu Shrine (Okayama)|en|Koyasu Shrine (Okayama)}}
+ - Located in Kita Ward, Okayama City, Okayama Prefecture. A subordinate shrine of {{ill|Kibitsu Shrine|en|Kibitsu Shrine}}
 
 == See Also ==
-* {{ill|Komori Shrine|en|12=simple|13=User:Immanuelle/Komori Shrine}}
+* {{ill|Komori Shrine|en|Komori Shrine}}
 
-* {{ill|Kosodate Myōjin|en|12=simple|13=User:Immanuelle/Kosodate Myōjin}}
+* {{ill|Kosodate Myōjin|en|Kosodate Myōjin}}
 
-* {{ill|Koyasu Jizō|en|12=simple|13=User:Immanuelle/Koyasu Jizō}}
+* {{ill|Koyasu Jizō|en|Koyasu Jizō}}
 
-''' {{ill|Koyasu Jizō Hall|en|12=simple|13=User:Immanuelle/Koyasu Jizō Hall}}
+''' {{ill|Koyasu Jizō Hall|en|Koyasu Jizō Hall}}
 
-''' {{ill|Koyasu Jizō Temple|en|12=simple|13=User:Immanuelle/Koyasu Jizō Temple}}
+''' {{ill|Koyasu Jizō Temple|en|Koyasu Jizō Temple}}
 
-* {{ill|Komori Jizō|en|12=simple|13=User:Immanuelle/Komori Jizō}}
+* {{ill|Komori Jizō|en|Komori Jizō}}
 
-* {{ill|Kosodate Jizō|en|12=simple|13=User:Immanuelle/Kosodate Jizō}}
+* {{ill|Kosodate Jizō|en|Kosodate Jizō}}
 
-* {{ill|Suitengū|en|12=simple|13=User:Immanuelle/Suitengū}}
+* {{ill|Suitengū|en|Suitengū}}
 
 {{Shinto-stub]]
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Sakurai Koyasu Shrine (Q20044508)|lt=Sakurai Koyasu Shrine|qid=Q20044508}} — Asahi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|櫻井子安神社|version=98881598|comment=Imported full ja history}}
 
-{{wikidata link|Q20044508|ja|櫻井子安神社|ja|子安神社 (匝瑳市)|ja|子安神社 (千葉市花見川区)|ja|子安神社 (市川市)|ja|子安神社 (習志野市)|ja|子安神社 (松戸市)|ja|子安八幡神社|ja|子安神社 (八王子市)|ja|子安神社 (伊勢原市)|ja|子安宮澤神社|ja|子安八幡神社 (甲府市)|ja|子安神社 (河津町)|ja|新橋浅間神社|ja|子安神社 (富士宮市)|ja|子安八幡宮 (富士宮市)|ja|子安神社 (浜松市東区)|ja|子安神社 (岐阜市)|ja|子安神社 (大垣市)|ja|子安神社 (大府市)|ja|子安神社 (加賀市)|ja|子安神社 (金沢市)|ja|子安神社 (伊勢市)|ja|皇大神宮|ja|子安神社 (紀宝町)|ja|子安神社 (岡山市)|ja|吉備津彦神社|ja|子守神社|ja|子育明神|ja|子安地蔵|ja|子安地蔵堂|ja|子安地蔵寺|ja|子守地蔵|ja|子育地蔵|ja|水天宮|ja|子安神社|check_date=2026-05-09}}
+{{wikidata link|Q20044508|ja|櫻井子安神社|ja|子安神社 (匝瑳市)|ja|子安神社 (千葉市花見川区)|ja|子安神社 (市川市)|ja|子安神社 (習志野市)|ja|子安神社 (松戸市)|ja|子安八幡神社|ja|子安神社 (八王子市)|ja|子安神社 (伊勢原市)|ja|子安宮澤神社|ja|子安八幡神社 (甲府市)|ja|子安神社 (河津町)|ja|新橋浅間神社|ja|子安神社 (富士宮市)|ja|子安八幡宮 (富士宮市)|ja|子安神社 (浜松市東区)|ja|子安神社 (岐阜市)|ja|子安神社 (大垣市)|ja|子安神社 (大府市)|ja|子安神社 (加賀市)|ja|子安神社 (金沢市)|ja|子安神社 (伊勢市)|ja|皇大神宮|ja|子安神社 (紀宝町)|ja|子安神社 (岡山市)|ja|吉備津彦神社|ja|子守神社|ja|子育明神|ja|子安地蔵|ja|子安地蔵堂|ja|子安地蔵寺|ja|子守地蔵|ja|子育地蔵|ja|水天宮|ja|子安神社|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Architecture of Asahi City]]
 [[Category:Childbirth]]

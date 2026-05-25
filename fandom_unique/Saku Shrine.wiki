@@ -1,18 +1,14 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Saku_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-
 '''Saku Shrine''' (佐久神社) is a Japanese shrine. Several shrines with the same name are located primarily in Shizuoka Prefecture and Yamanashi Prefecture.
 
-* {{ill|Saku Shrine (Kofu)|ja|佐久神社 (甲府市)|12=simple|13=User:Immanuelle/Saku Shrine (Kofu)|ja_comment=jawiki link invalid}} - A shrine located in Kofu City, Yamanashi Prefecture. Relocated by the feudal lord Kōzan Izumo no Kami in the 13th year of Tenbun (1543).
-* {{ill|Saku Shrine (Fuefuki)|ja|佐久神社 (笛吹市)|12=simple|13=User:Immanuelle/Saku Shrine (Fuefuki)|ja_comment=jawiki link invalid}} - A shrine located in Fuefuki City, Yamanashi Prefecture.
-* {{ill|Saku Shrine (Shizuoka)|ja|佐久神社 (静岡市)|12=simple|13=User:Immanuelle/Saku Shrine (Shizuoka)|ja_comment=jawiki link invalid}} - A shrine located in Shimizu Ward, Shizuoka City, Shizuoka Prefecture.
+* {{ill|Saku Shrine (Kofu)|ja|佐久神社 (甲府市)}} - A shrine located in Kofu City, Yamanashi Prefecture. Relocated by the feudal lord Kōzan Izumo no Kami in the 13th year of Tenbun (1543).
+* {{ill|Saku Shrine (Fuefuki)|ja|佐久神社 (笛吹市)}} - A shrine located in Fuefuki City, Yamanashi Prefecture.
+* {{ill|Saku Shrine (Shizuoka)|ja|佐久神社 (静岡市)}} - A shrine located in Shimizu Ward, Shizuoka City, Shizuoka Prefecture.
 == See Also ==
-* {{ill|Sakunado Shrine|ja|佐久奈度神社|12=simple|13=User:Immanuelle/Sakunado Shrine|qq=}} - A shrine located in Ōtsu City, Shiga Prefecture.
-* {{ill|Ihasaku Shrine|ja|伊波佐久神社|12=simple|13=User:Immanuelle/Ihasaku Shrine|ja_comment=jawiki link invalid}} - A shrine located in Toyama City, Toyama Prefecture.
+* {{ill|Sakunado Shrine|ja|佐久奈度神社}} - A shrine located in Ōtsu City, Shiga Prefecture.
+* {{ill|Ihasaku Shrine|ja|伊波佐久神社}} - A shrine located in Toyama City, Toyama Prefecture.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Saku Shrine (Q134957396)|lt=Saku Shrine|qid=Q134957396}} — Shimizu-ku
@@ -21,11 +17,10 @@
 * {{ill|Sakuno Shrine (Q135039704)|lt=Sakuno Shrine|qid=Q135039704}} — Kai Province
 * {{ill|Sakuno Shrine (Q135040662)|lt=Sakuno Shrine|qid=Q135040662}} — Tajima Province
 * {{ill|Sakuno Shrine (Q135270286)|lt=Sakuno Shrine|qid=Q135270286}} — Yatsushiro district
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|佐久神社|version=101942042|comment=Imported full ja history}}
 
-{{wikidata link|Q11382630|ja|佐久神社|check_date=2026-05-09}}
+{{wikidata link|Q11382630|ja|佐久神社|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

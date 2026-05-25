@@ -1,16 +1,13 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sann%C5%8D_Shrine_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-
-'''Sannō Shrine''' (山王神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}} across Japan based on {{ill|Sannō Faith|ja|山王信仰|12=simple|13=User:Immanuelle/Sannō faith|qq=}}.
+'''Sannō Shrine''' (山王神社) refers to various {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}} across Japan based on {{ill|Sannō Faith|ja|山王信仰}}.
 
 * '''Hokkaido and Tōhoku Region'''
-**  {{ill|Sannō Shrine (Tomakomai City)|ja|山王神社 (苫小牧市)|12=simple|13=User:Immanuelle/Sannō Shrine (Tomakomai City)|ja_comment=jawiki link invalid}} - Located adjacent to Hokkaido University’s experimental forest. In recent years, a large torii gate was damaged by a typhoon, leaving only its base.
-**  {{ill|Sannō Shrine (Takahata Town)|ja|山王神社 (高畠町)|12=simple|13=User:Immanuelle/Sannō Shrine (Takahata Town)|ja_comment=jawiki link invalid}} - Located in {{ill|Takahata, Yamagata|en|Takahata, Yamagata|qid=Q772103|lt=Takahata Town}}, Higashiokitama District, Yamagata Prefecture.
+**  {{ill|Sannō Shrine (Tomakomai City)|ja|山王神社 (苫小牧市)}} - Located adjacent to Hokkaido University’s experimental forest. In recent years, a large torii gate was damaged by a typhoon, leaving only its base.
+**  {{ill|Sannō Shrine (Takahata Town)|ja|山王神社 (高畠町)}} - Located in {{ill|Takahata, Yamagata|en|Takahata, Yamagata|qid=Q772103|lt=Takahata Town}}, Higashiokitama District, Yamagata Prefecture.
 
 * '''Kantō and Kōshin Region'''
 **  {{ill|Sannō Shrine|ja|山王神社 (桜川市)|12=simple|13=User:Immanuelle/Sannō Shrine (Sakuragawa City)|comment=changed title based on wikidata|qid=Q119929523}} - Located in {{ill|Sakuragawa, Ibaraki|en|Sakuragawa, Ibaraki|qid=Q990350|lt=Sakuragawa City}}, Ibaraki Prefecture.
-**  {{ill|Sannō Shrine (Edogawa Ward)|ja|山王神社 (江戸川区)|12=simple|13=User:Immanuelle/Sannō Shrine (Edogawa Ward)|ja_comment=jawiki link invalid}} - Located in {{ill|Edogawa, Tokyo|en|Edogawa, Tokyo|qid=Q214056|lt=Edogawa Ward}}, Tokyo Metropolis.
-**  {{ill|Sannō Shrine (Hachiōji City)|ja|山王神社 (八王子市)|12=simple|13=User:Immanuelle/Sannō Shrine (Hachiōji City)|ja_comment=jawiki link invalid}} - Located in {{ill|Hachiōji|en|Hachiōji|qid=Q208863|lt=Hachiōji City}}, Tokyo Metropolis.
+**  {{ill|Sannō Shrine (Edogawa Ward)|ja|山王神社 (江戸川区)}} - Located in {{ill|Edogawa, Tokyo|en|Edogawa, Tokyo|qid=Q214056|lt=Edogawa Ward}}, Tokyo Metropolis.
+**  {{ill|Sannō Shrine (Hachiōji City)|ja|山王神社 (八王子市)}} - Located in {{ill|Hachiōji|en|Hachiōji|qid=Q208863|lt=Hachiōji City}}, Tokyo Metropolis.
 **  {{ill|Sannō Shrine|ja|山王神社 (小田原市)|12=simple|13=User:Immanuelle/Sannō Shrine (Odawara City)|comment=changed title based on wikidata|qid=Q134892431}} - Located in {{ill|Odawara|en|Odawara|qid=Q267258|lt=Odawara City}}, Kanagawa Prefecture.
 
 * '''Kyushu and Okinawa Region'''
@@ -18,7 +15,6 @@
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Sannō Shrine (Q11470057)|lt=Sannō Shrine|qid=Q11470057}}
@@ -31,17 +27,17 @@
 * {{ill|Sannō Shrine (Q134957428)|lt=Sannō Shrine|qid=Q134957428}} — Makinohara
 * {{ill|Sannō Shrine (Q134957652)|lt=Sannō Shrine|qid=Q134957652}} — Iwata
 * {{ill|Sannō Shrine (Q134988746)|lt=Sannō Shrine|qid=Q134988746}} — Takamatsu
-* {{ill|Sannō Shrine (Q134988797)|lt=Sannō Shrine|qid=Q134988797}} — Sanuki
-* {{ill|Sannō Shrine (Q135070258)|lt=Sannō Shrine|qid=Q135070258}} — Awaji Province
-* {{ill|Sannō Shrine (Q135153892)|lt=Sannō Shrine|qid=Q135153892}} — Mito
-* {{ill|Sannō Shrine (Q135154015)|lt=Sannō Shrine|qid=Q135154015}} — Kashima
-* {{ill|Sannō Shrine (Q135154692)|lt=Sannō Shrine|qid=Q135154692}} — Toride
-* {{ill|Sannō Shrine (Q135154977)|lt=Sannō Shrine|qid=Q135154977}} — Toride
-* {{ill|Sannō Shrine (Q17210166)|lt=Sannō Shrine|qid=Q17210166}} — Fujisawa
+* {{ill|Sannō Shrine (Q134988797)|qid=Q134988797|lt=Sannō Shrine}} — Sanuki
+* {{ill|Sannō Shrine (Q135070258)|qid=Q135070258|lt=Sannō Shrine}} — Awaji Province
+* {{ill|Sannō Shrine (Q135153892)|qid=Q135153892|lt=Sannō Shrine}} — Mito
+* {{ill|Sannō Shrine (Q135154015)|qid=Q135154015|lt=Sannō Shrine}} — Kashima
+* {{ill|Sannō Shrine (Q135154692)|qid=Q135154692|lt=Sannō Shrine}} — Toride
+* {{ill|Sannō Shrine (Q135154977)|qid=Q135154977|lt=Sannō Shrine}} — Toride
+* {{ill|Sannō Shrine (Q17210166)|ja|山王神社 (藤沢市)|qid=Q17210166|lt=Sannō Shrine}} — Fujisawa
 * {{ill|Sannō Shrine (Q211522)|lt=Sannō Shrine|qid=Q211522}} — Nagasaki
-* {{ill|Sanō Shrine (Q135154680)|lt=Sanō Shrine|qid=Q135154680}} — Hitachiōmiya-shi
-* {{ill|山王神社 (Q135434090)|lt=山王神社|qid=Q135434090}} — Sō
-* {{ill|山王神社 (Q135459474)|lt=山王神社|qid=Q135459474}} — Kariwa
+* {{ill|Sanō Shrine (Q135154680)|qid=Q135154680|lt=Sanō Shrine}} — Hitachiōmiya-shi
+* {{ill|山王神社 (Q135434090)|qid=Q135434090|lt=山王神社}} — Sō
+* {{ill|山王神社 (Q135459474)|qid=Q135459474|lt=山王神社}} — Kariwa
 * {{ill|山王神社 (Q135460580)|lt=山王神社|qid=Q135460580}} — Izumozaki
 * {{ill|山王神社 (Q135460788)|lt=山王神社|qid=Q135460788}} — Itoigawa
 * {{ill|山王神社 (Q135461064)|lt=山王神社|qid=Q135461064}} — Jōetsu-shi
@@ -53,11 +49,10 @@
 * {{ill|山王神社 (Q135464302)|lt=山王神社|qid=Q135464302}} — Nagaoka
 * {{ill|山王神社 (Q135464510)|lt=山王神社|qid=Q135464510}} — Kashiwazaki
 * {{ill|山王神社 (Q138853744)|lt=山王神社|qid=Q138853744}} — Ibusuki
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|山王神社|version=103399729|comment=Imported full ja history}}
 
-{{wikidata link|Q11470057|ja|山王神社|check_date=2026-05-09}}
+{{wikidata link|Q11470057|ja|山王神社|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Sannō Ichijitsu Shintō]]
 [[Category:Sannō Shrines]]
