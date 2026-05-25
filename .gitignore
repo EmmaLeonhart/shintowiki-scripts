@@ -6,5 +6,6 @@ __pycache__/
 tmpclaude-*/
 .cleanvibe-scratch/
 desktop.ini
+.claude/scheduled_tasks.lock
 shinto_miraheze/manual_import_local.py
 # _site/ is tracked — committed locally and updated by CI
