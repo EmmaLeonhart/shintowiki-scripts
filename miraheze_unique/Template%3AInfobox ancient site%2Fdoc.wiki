@@ -616,5 +616,6 @@ These parameters are for adding numbers or labels that uniquely identify the sit
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox ancient site/doc|check_date=2026-05-25}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>

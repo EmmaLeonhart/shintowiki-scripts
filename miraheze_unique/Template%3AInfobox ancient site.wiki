@@ -1,5 +1,6 @@
 <noinclude>{{Being deleted|2026 January 15|Template:Infobox ancient site|merge=Template:Infobox historic site}}
 [[Category:Templates missing wikidata]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>{{infobox
 | bodyclass = vcard
 
@@ -200,7 +201,7 @@
 
 | header41 = {{#if: {{{nhle|}}}{{{hillfort|}}}{{{megaj|}}}{{{hes|}}} | Identifiers }}
 
-| label42 = [[National Heritage List for England|NHLE]]
+| label42 = {{ill|National Heritage List for England|en|National Heritage List for England|es|National Heritage List for England|fa|فهرست میراث ملی انگلستان|ff|National Heritage List for England|fr|National Heritage List for England|it|National Heritage List for England|pt|National Heritage List for England|ru|National Heritage List for England|tr|İngiltere Ulusal Miras Listesi|lt=National Heritage List for England|qid=Q6973052}}
 | data42  = {{#if: {{{nhle|}}} | [https://historicengland.org.uk/listing/the-list/list-entry/{{{nhle}}} {{{nhle}}}] }}
 
 | label43 = [[Atlas of Hillforts of Britain and Ireland|''Atlas of Hillforts'']]

@@ -696,5 +696,6 @@ This is an list of commonly-used parameters. For a complete list, see [[Template
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox academic/doc|check_date=2026-05-25}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>
