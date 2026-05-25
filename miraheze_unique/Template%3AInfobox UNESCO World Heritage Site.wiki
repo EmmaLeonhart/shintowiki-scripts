@@ -156,5 +156,6 @@
 [[Category:Independently git synced pages]][[Category:Pages using infobox UNESCO World Heritage Site with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Independently git synced pages]]{{wikidata link|Q5896997|af|Sjabloon:Inligtingskas Wêrelderfenisgebied|als|Vorlage:Infobox Welterbe|am|መለጠፊያ:ዩኔስኮ ዓለም አቀፍ ቅርስ|ar|قالب:صندوق معلومات موقع تراث عالمي|arz|قالب:ص.م موقع تراث عالمي|ast|Plantía:Ficha de Patrimoniu de la Humanidá|as|সাঁচ:Infobox World Heritage Site|azb|شابلون:Infobox World Heritage Site|az|Şablon:Ümumdünya irsi obyekti|ban|Mal:Infobox UNESCO World Heritage Site|bar|Vorlog:Infobox Welterbe|ba|Ҡалып:Infobox World Heritage Site|bcl|Plantilya:Infobox UNESCO World Heritage Site|be|Шаблон:Аб’ект Сусветнай спадчыны|bg|Шаблон:Световно културно и природно наследство|bh|टेम्पलेट:Infobox UNESCO World Heritage Site|bjn|Citakan:Infobox World Heritage Site|blk|တမ်းပလေက်:Infobox UNESCO World Heritage Site|bn|টেমপ্লেট:তথ্যছক বিশ্ব ঐতিহ্যবাহী স্থান|bs|Šablon:Infokutija Svjetska baština|check_date=2026-05-25}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
