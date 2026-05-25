@@ -1,6 +1,3 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Rokusho_Shrines for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25543786490|time triggered pipeline]] -->
-
 '''Rokusho Shrine''' (六所神社, also known as '''Rokusha Shrine''' (六社神社)) is a type of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} in Japan. Shrines bearing this name can be found throughout the country.
 
 The shrine's name derives from enshrining six deities. This may have been the case from the time of its founding or due to the merging of six shrines for practical reasons.
@@ -15,24 +12,24 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 }}</ref>
 
 == Sōja ==
-* {{ill|Rokusho Shrine (Tsuruoka)|ja|六所神社 (鶴岡市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Tsuruoka)|ja_comment=jawiki link invalid}} ({{ill|Yamagata Prefecture|en|Yamagata Prefecture|qid=Q125863|lt=Yamagata Prefecture}}, {{ill|Tsuruoka|en|Tsuruoka|qid=Q734416|lt=Tsuruoka City}}) – {{ill|Dewa Province|en|Dewa Province|qid=Q876032|lt=Dewa Province}} Sōja
-* {{ill|Kamiarai|ja|六所神社 (所沢市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Tokorozawa)|ja_comment=jawiki redirects to 上新井|comment=changed title based on wikidata|qid=Q11359054}} ({{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture}}, {{ill|Tokorozawa, Saitama|en|Tokorozawa, Saitama|qid=Q165857|lt=Tokorozawa City}})
-* {{ill|Rokusho Shrine (Tateyama)|ja|六所神社 (館山市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Tateyama)|ja_comment=jawiki link invalid}} ({{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}, {{ill|Tateyama, Chiba|en|Tateyama, Chiba|qid=Q646755|lt=Tateyama City}}) – {{ill|Awa Province (Chiba)|en|Awa Province (Chiba)|qid=Q1053044|lt=Awa Province (Chiba)}} Sōja
-* Rokusho-no-Miya ({{ill|Fuchū, Tokyo|en|Fuchū, Tokyo|qid=Q208818|lt=Fuchu City, Tokyo}}) – Currently named {{ill|Ōkunitama Shrine|en|Ōkunitama Shrine|qid=Q611678|lt=Ōkunitama Shrine}}, {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province}} Sōja
-* {{ill|Rokusho Shrine (Ichikawa)|ja|六所神社 (市川市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Ichikawa)|qq=}} (Chiba Prefecture, {{ill|Ichikawa, Chiba|en|Ichikawa, Chiba|qid=Q209785|lt=Ichikawa City}}) – {{ill|Shimōsa Province|en|Shimōsa Province|qid=Q1053695|lt=Shimōsa Province}} Sōja
-* {{ill|Rokusho Shrine (Ōiso)|ja|六所神社 (大磯町)|12=simple|13=User:Immanuelle/Rokusho Shrine (Ōiso)|qq=}} ({{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}, {{ill|Ōiso|en|Ōiso|qid=Q385023|lt=Ōiso Town}}) – {{ill|Sagami Province|en|Sagami Province|qid=Q1053732|lt=Sagami Province}} Sōja
-* {{ill|Rokusho Shrine (Matsue)|ja|六所神社 (松江市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Matsue)|qq=}} ({{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}, {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}}) – {{ill|Izumo Province|ja|Izumo Province|12=simple|13=User:Immanuelle/Izumo Province|ja_comment=jawiki link invalid}} Sōja
-* {{ill|Rokusho Shrine (Bungotakada)|ja|六所神社 (豊後高田市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Bungotakada)|ja_comment=jawiki link invalid}} ({{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}}, {{ill|Bungotakada, Ōita|en|Bungotakada, Ōita|qid=Q857281|lt=Bungotakada City}})
+* {{ill|Rokusho Shrine (Tsuruoka)|ja|六所神社 (鶴岡市)}} ({{ill|Yamagata Prefecture|en|Yamagata Prefecture|qid=Q125863|lt=Yamagata Prefecture}}, {{ill|Tsuruoka|en|Tsuruoka|qid=Q734416|lt=Tsuruoka City}}) – {{ill|Dewa Province|en|Dewa Province|qid=Q876032|lt=Dewa Province}} Sōja
+* {{ill|Kamiarai|ja|六所神社 (所沢市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Tokorozawa)|ja_comment=jawiki redirects to 上新井|comment=changed title based on wikidata|qid=Q11359054}} ({{ill|Saitama Prefecture|ace|Prefektur Saitama|af|Saitama-prefektuur|an|Prefectura de Saitama|ar|محافظة سايتاما|ast|Prefeutura de Saitama|az|Saytama prefekturası|azb|سایتاما اوستانی|ban|Préféktur Saitama|be|Сайтама (прэфектура)|bg|Сайтама (префектура)|bn|সাইতামা প্রশাসনিক অঞ্চল|br|Prefedelezh Saitama|ca|Prefectura de Saitama|cdo|Saitama-gâing|ce|Сайтама (префектура)|ceb|Saitama-ken|ckb|پارێزگای سایتاما|cs|Prefektura Saitama|cy|Saitama (talaith)|da|Saitama-præfekturet|de|Präfektur Saitama|el|Σαϊτάμα (νομαρχιακό διαμέρισμα)|eo|Gubernio Saitama|es|Prefectura de Saitama|et|Saitama prefektuur|eu|Saitama (prefektura)|fa|استان سایتاما|fi|Saitaman prefektuuri|fr|Préfecture de Saitama|frr|Saitama (Prefektüür)|ga|Maoracht Saitama|gl|Prefectura de Saitama|hak|Saitama-yen|he|סאיטאמה (מחוז)|hr|Saitama (prefektura)|hu|Szaitama prefektúra|hy|Սայթամա (պրեֆեկտուրա)|id|Prefektur Saitama|ilo|Prepektura ti Saitama|it|Prefettura di Saitama|ja|埼玉県|ka|საიტამის პრეფექტურა|kaa|Saytama prefekturası|km|សៃតាម៉ា(ខេត្ត)|kn|ಸೈತಾಮಾ (ಪ್ರಾಂತ್ಯ)|ko|사이타마현|lt|Saitamos prefektūra|lv|Saitamas prefektūra|mk|Сајтама (префектура)|mn|Сайтама муж|mni|ꯁꯥꯢꯇꯥꯃꯥ ꯂꯝꯈꯥꯢ|mr|सैतामा प्रांत|ms|Wilayah Saitama|ne|साइतामा|nl|Saitama (prefectuur)|no|Saitama (prefektur)|nov|Saitama Prefekture|os|Сайтамæ (префектурæ)|pl|Prefektura Saitama|pnb|ضلع سائیٹاما|pt|Saitama|ro|Prefectura Saitama|ru|Сайтама (префектура)|sco|Saitama Prefectur|se|Saitama prefektuvra|sh|Prefektura Saitama|si|සයිටාමා ප්‍රාන්තය|simple|Saitama Prefecture|sk|Saitama (prefektúra)|sr|Префектура Саитама|su|Saitama Prefecture|sv|Saitama prefektur|sw|Mkoa wa Saitama|tg|Префектураи Саитама|th|จังหวัดไซตามะ|tl|Prepektura ng Saitama|tr|Saitama (prefektörlük)|tt|Сайтама (префектура)|uk|Префектура Сайтама|ur|سائیتاما پریفیکچر|uz|Saitama|vec|Prefetura de Saitama|vi|Saitama|war|Saitama (prefektura)|wuu|埼玉县|zh|埼玉縣|zh_classical|埼玉縣|zh_min_nan|Saitama-koān|zh_yue|埼玉縣|qid=Q128186|lt=Saitama Prefecture}}, {{ill|Tokorozawa, Saitama|en|Tokorozawa, Saitama|qid=Q165857|lt=Tokorozawa City}})
+* {{ill|Rokusho Shrine (Tateyama)|ja|六所神社 (館山市)}} ({{ill|Chiba Prefecture|abstract|Q80011|ace|Prefektur Chiba|af|Chiba-prefektuur|an|Prefectura de Chiba|ar|تشيبا (محافظة)|ast|Prefeutura de Chiba|az|Çiba prefekturası|azb|چیبا اوستانی|ban|Préféktur Chiba|be|Тыба (прэфектура)|bg|Чиба (префектура)|bn|চিবা প্রশাসনিক অঞ্চল|ca|Prefectura de Chiba|cdo|Chiba-gâing|ce|Тиба (префектура)|ceb|Chiba-ken|ckb|پارێزگای چیبا|cs|Prefektura Čiba|cy|Chiba (talaith)|da|Chiba-præfekturet|de|Präfektur Chiba|eo|Gubernio Chiba|es|Prefectura de Chiba|et|Chiba prefektuur|eu|Chiba (prefektura)|fa|استان چیبا|fi|Chiban prefektuuri|fr|Préfecture de Chiba|frr|Chiba (Prefektüür)|ga|Maoracht Chiba|gl|Prefectura de Chiba|hak|Chiba-yen|he|צ'יבה (מחוז)|hr|Chiba (prefektura)|hu|Csiba prefektúra|hy|Թիբա (պրեֆեկտուրա)|id|Prefektur Chiba|ilo|Prepektura ti Chiba|it|Prefettura di Chiba|ja|千葉県|jv|Préfèktur Chiba|ka|ტიბის პრეფექტურა|km|ខេត្តឈីបា|kn|ಚಿಬಾ (ಪ್ರಾಂತ್ಯ)|ko|지바현|la|Chibaënsis|lt|Čibos prefektūra|lv|Čibas prefektūra|mk|Чиба (префектура)|mn|Чиба муж|mni|ꯆꯤꯕꯥ ꯂꯝꯈꯥꯢ|mr|चिबा प्रांत|ms|Wilayah Chiba|ne|चिबा|nl|Chiba (prefectuur)|no|Chiba (prefektur)|nov|Chiba Prefekture|oc|Prefectura de Chiba|os|Тибæ (префектурæ)|pam|Prepektura ning Chiba|pl|Prefektura Chiba|pnb|ضلع چیبا|pt|Chiba|ro|Prefectura Chiba|ru|Тиба (префектура)|sco|Chiba Prefectur|sd|چيبا پريفيڪچر|se|Chiba prefektuvra|sh|Prefektura Chiba|si|චිබා ප්‍රාන්තය|simple|Chiba Prefecture|sk|Čiba (prefektúra)|sl|Prefektura Čiba|sr|Префектура Чиба|su|Préféktur Chiba|sv|Chiba prefektur|sw|Mkoa wa Chiba|tg|Префектураи Чиба|th|จังหวัดชิบะ|tl|Prepektura ng Chiba|tok|ma Sipa|tr|Chiba (prefektörlük)|tt|Тиба (префектура)|uk|Префектура Тіба|ur|چیبا پریفیکچر|vi|Chiba|war|Chiba (prefektura)|wuu|千叶县|zh|千葉縣|zh_classical|千葉縣|zh_min_nan|Tiba-koān|zh_yue|千葉縣|qid=Q80011|lt=Chiba Prefecture}}, {{ill|Tateyama, Chiba|en|Tateyama, Chiba|qid=Q646755|lt=Tateyama City}}) – {{ill|Awa Province (Chiba)|en|Awa Province (Chiba)|qid=Q1053044|lt=Awa Province (Chiba)}} Sōja
+* Rokusho-no-Miya ({{ill|Fuchū, Tokyo|en|Fuchū, Tokyo|qid=Q208818|lt=Fuchu City, Tokyo}}) – Currently named {{ill|Ōkunitama Shrine|en|Ōkunitama Shrine|qid=Q611678|lt=Ōkunitama Shrine}}, {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398|lt=Musashi Province}} Sōja
+* {{ill|Rokusho Shrine (Ichikawa)|ja|六所神社 (市川市)}} (Chiba Prefecture, {{ill|Ichikawa, Chiba|en|Ichikawa, Chiba|qid=Q209785|lt=Ichikawa City}}) – {{ill|Shimōsa Province|en|Shimōsa Province|qid=Q1053695|lt=Shimōsa Province}} Sōja
+* {{ill|Rokusho Shrine (Ōiso)|ja|六所神社 (大磯町)}} ({{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}, {{ill|Ōiso|en|Ōiso|qid=Q385023|lt=Ōiso Town}}) – {{ill|Sagami Province|en|Sagami Province|qid=Q1053732|lt=Sagami Province}} Sōja
+* {{ill|Rokusho Shrine (Matsue)|ja|六所神社 (松江市)}} ({{ill|Shimane Prefecture|en|Shimane Prefecture|qid=Q132751|lt=Shimane Prefecture}}, {{ill|Matsue|en|Matsue|qid=Q207321|lt=Matsue City}}) – {{ill|Izumo Province|ja|Izumo Province}} Sōja
+* {{ill|Rokusho Shrine (Bungotakada)|ja|六所神社 (豊後高田市)}} ({{ill|Ōita Prefecture|en|Ōita Prefecture|qid=Q133924|lt=Ōita Prefecture}}, {{ill|Bungotakada, Ōita|en|Bungotakada, Ōita|qid=Q857281|lt=Bungotakada City}})
 
 == Other Shrines ==
 === Tohoku Region ===
-* {{ill|Dake Rokusho Shrine|ja|嶽六所神社|12=simple|13=User:Immanuelle/Dake Rokusho Shrine|qq=}} ({{ill|Akita Prefecture|en|Akita Prefecture|qid=Q81863|lt=Akita Prefecture}}, {{ill|Daisen, Akita|en|Daisen, Akita|qid=Q695920|lt=Daisen City}})
-* {{ill|Rokusha Shrine (Yamagata City)|ja|六社神社 (山形市)|12=simple|13=User:Immanuelle/Rokusha Shrine (Yamagata City)|ja_comment=jawiki link invalid}} (Yamagata Prefecture, {{ill|Yamagata (city)|en|Yamagata (city)|qid=Q205526|lt=Yamagata City}})
+* {{ill|Dake Rokusho Shrine|ja|嶽六所神社}} ({{ill|Akita Prefecture|en|Akita Prefecture|qid=Q81863|lt=Akita Prefecture}}, {{ill|Daisen, Akita|en|Daisen, Akita|qid=Q695920|lt=Daisen City}})
+* {{ill|Rokusha Shrine (Yamagata City)|ja|六社神社 (山形市)}} (Yamagata Prefecture, {{ill|Yamagata (city)|en|Yamagata (city)|qid=Q205526|lt=Yamagata City}})
 === Kanto Region ===
-* Former Rokusho Shrine ({{ill|Tsukuba|en|Tsukuba|qid=Q273863|lt=Tsukuba City}}, {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture}}) – Abolished under the {{ill|Meiji One Village One Shrine Policy|ja|明治一村一社制|12=simple|13=User:Immanuelle/Meiji One Village One Shrine Policy|ja_comment=jawiki link invalid}}, with the deity transferred to {{ill|Kokage Shrine|ja|蚕影神社|12=simple|13=User:Immanuelle/Kaage Shrine|comment=changed title based on wikidata|qid=Q17228464}}.
+* Former Rokusho Shrine ({{ill|Tsukuba|en|Tsukuba|qid=Q273863|lt=Tsukuba City}}, {{ill|Ibaraki Prefecture|ace|Prefektur Ibaraki|af|Ibaraki-prefektuur|an|Prefectura d'Ibaraki|ar|إيباراكي (محافظة)|arz|ايباراكى|az|İbaraki prefekturası|azb|ایباراکی اوستانی|ban|Préféktur Ibaraki|bat_smg|Ibarakė prefektūra|be|Ібаракі (прэфектура)|bg|Ибараки|bn|ইবারাকি প্রশাসনিক অঞ্চল|ca|Prefectura d'Ibaraki|cdo|Ibaraki-gâing|ce|Ибараки (префектура)|ceb|Ibaraki-ken|ckb|پارێزگای ئیباراکی|cs|Prefektura Ibaraki|cy|Ibaraki (talaith)|da|Ibaraki-præfekturet|de|Präfektur Ibaraki|eo|Gubernio Ibaraki|es|Prefectura de Ibaraki|et|Ibaraki prefektuur|eu|Ibaraki (prefektura)|fa|استان ایباراکی|fi|Ibarakin prefektuuri|fr|Préfecture d'Ibaraki|frr|Ibaraki (Prefektüür)|ga|Maoracht Ibaraki|gl|Prefectura de Ibaraki|hak|Ibaraki-yen|he|איבראקי (מחוז)|hr|Ibaraki (prefektura)|hu|Ibaraki prefektúra|hy|Իբարակի (պրեֆեկտուրա)|id|Prefektur Ibaraki|ilo|Prepektura ti Ibaraki|it|Prefettura di Ibaraki|ja|茨城県|jv|Préfèktur Ibaraki|ka|იბარაკის პრეფექტურა|km|ខេត្តអ៊ីបារ៉ាគិ|kn|ಇಬಾರಕಿ (ಪ್ರಾಂತ್ಯ)|ko|이바라키현|lt|Ibarakio prefektūra|lv|Ibaraki prefektūra|mk|Ибараки (префектура)|mn|Ибараки муж|mni|ꯏꯕꯥꯔꯥꯀꯤ ꯂꯝꯈꯥꯢ|mr|इबाराकी प्रांत|ms|Wilayah Ibaraki|ne|इबाराकी प्रदेश|nl|Ibaraki (prefectuur)|nn|Ibaraki prefektur|no|Ibaraki (prefektur)|os|Ибараки|pam|Prepektura ning Ibaraki|pl|Prefektura Ibaraki|pnb|ضلع اباراکی|pt|Ibaraki|ro|Prefectura Ibaraki|ru|Ибараки|sco|Ibaraki Prefectur|se|Ibaraki prefektuvra|sh|Prefektura Ibaraki|si|ඉබරාකි ප්‍රාන්තය|simple|Ibaraki Prefecture|sk|Ibaraki (prefektúra)|sr|Префектура Ибараки|su|Ibaraki Prefecture|sv|Ibaraki prefektur|sw|Mkoa wa Ibaraki|tg|Префектураи Ибараки|th|จังหวัดอิบารากิ|tl|Prepektura ng Ibaraki|tr|Ibaraki|tt|Ибараки (префектура)|ug|ئىباراكى ناھىيىسى|uk|Префектура Ібаракі|ur|ایباراکی پریفیکچر|uz|Ibaraki prefekturasi|vi|Ibaraki|war|Ibaraki (prefektura)|wuu|茨城县|zh|茨城縣|zh_classical|茨城縣|zh_min_nan|Ibaraki-koān|zh_yue|茨城縣|qid=Q83273|lt=Ibaraki Prefecture}}) – Abolished under the {{ill|Meiji One Village One Shrine Policy|ja|明治一村一社制}}, with the deity transferred to {{ill|Kokage Shrine|ja|蚕影神社|12=simple|13=User:Immanuelle/Kaage Shrine|comment=changed title based on wikidata|qid=Q17228464}}.
 * Rokusho Shrine (Nakazuma Town, {{ill|Jōsō|en|Jōsō|qid=Q851149|lt=Jōsō City}}, Ibaraki Prefecture)
-* {{ill|Rokusho Shrine (Maebashi)|ja|六所神社 (前橋市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Maebashi)|ja_comment=jawiki link invalid}} ({{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture}}, {{ill|Maebashi|en|Maebashi|qid=Q201613|lt=Maebashi City}})
-* {{ill|Rokusha Shrine|ja|六社神社 (流山市)|12=simple|13=User:Immanuelle/Rokusha Shrine (Nagareyama)|comment=changed title based on wikidata|qid=Q97311661}} (Chiba Prefecture, {{ill|Nagareyama|en|Nagareyama|qid=Q328625|lt=Nagareyama City}})
+* {{ill|Rokusho Shrine (Maebashi)|ja|六所神社 (前橋市)}} ({{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture}}, {{ill|Maebashi|en|Maebashi|qid=Q201613|lt=Maebashi City}})
+* {{ill|Rokusha Shrine|ja|六社神社 (流山市)|12=simple|13=User:Immanuelle/Rokusha Shrine (Nagareyama)|comment=changed title based on wikidata|qid=Q97311661}} (Chiba Prefecture, {{ill|Nagareyama|ar|ناغاره ياما (تشيبا)|azb|ناقاریاما، چیبا|ce|Нагареяма|ceb|Nagareyama (distrito)|cs|Nagarejama|de|Nagareyama|eo|Nagarejama|es|Nagareyama (Chiba)|fa|ناگاریاما، چیبا|fi|Nagareyama|fr|Nagareyama|gl|Nagareyama|he|נגריאמה|id|Nagareyama, Chiba|it|Nagareyama|ja|流山市|ko|나가레야마시|mg|Nagareyama|mzn|ناگاریاما، چیبا|nl|Nagareyama|no|Nagareyama|pl|Nagareyama|pt|Nagareyama|ro|Nagareyama|ru|Нагареяма|sh|Nagarejama|sr|Нагарејама|sv|Nagareyama|sw|Nagareyama, Chiba|tg|Нагареяма|th|นางาเรยามะ|tl|Nagareyama|tr|Nagareyama|tt|Нагареяма|tum|Nagareyama|uk|Наґареяма|ur|ناگارییاما، چیبا|uz|Nagareyama|vi|Nagareyama, Chiba|war|Nagareyama|zh|流山市|zh_classical|流山市|zh_min_nan|Nagareyama-chhī|zh_yue|流山|qid=Q328625|lt=Nagareyama City}})
 * {{ill|Rokusho Shrine|ja|六所神社 (酒々井町)|12=simple|13=User:Immanuelle/Rokusho Shrine (Shisui)|comment=changed title based on wikidata|qid=Q11392354}} (Chiba Prefecture, {{ill|Shisui|en|Shisui|qid=Q782157|lt=Shisui Town}})
 * {{ill|Rokusho Shrine|ja|六所神社 (大田区)|12=simple|13=User:Immanuelle/Rokusho Shrine (Ota)|comment=changed title based on wikidata|qid=Q97195467}} (Tokyo)
 * {{ill|Rokusho Shrine|ja|六所神社 (世田谷区赤堤)|12=simple|13=User:Immanuelle/Rokusho Shrine (Setagaya, Akatsutsumi)|comment=changed title based on wikidata|qid=Q97171622}} (Setagaya, Tokyo)
@@ -40,26 +37,26 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 * {{ill|Rokusho Shrine|ja|六所神社 (世田谷区給田)|12=simple|13=User:Immanuelle/Rokusho Shrine (Setagaya, Kyūta)|comment=changed title based on wikidata|qid=Q106852618}} (Setagaya, Tokyo)
 
 === Chubu Region ===
-* {{ill|Shiogama Rokusho Shrine|ja|塩釜六所神社|12=simple|13=User:Immanuelle/Shiogama Rokusho Shrine|ja_comment=jawiki link invalid}} ({{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}, {{ill|Awashimaura|en|Awashimaura|qid=Q581708|lt=Awashimaura Village}})
-* {{ill|Rokusho Shrine (Numazu)|ja|六所神社 (沼津市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Numazu)|ja_comment=jawiki link invalid}} ({{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}, {{ill|Numazu|en|Numazu|qid=Q241037|lt=Numazu City}})
+* {{ill|Shiogama Rokusho Shrine|ja|塩釜六所神社}} ({{ill|Niigata Prefecture|en|Niigata Prefecture|qid=Q132705|lt=Niigata Prefecture}}, {{ill|Awashimaura|en|Awashimaura|qid=Q581708|lt=Awashimaura Village}})
+* {{ill|Rokusho Shrine (Numazu)|ja|六所神社 (沼津市)}} ({{ill|Shizuoka Prefecture|en|Shizuoka Prefecture|qid=Q131320|lt=Shizuoka Prefecture}}, {{ill|Numazu|en|Numazu|qid=Q241037|lt=Numazu City}})
 * {{ill|Rokusho Shrine|ja|六所神社 (掛川市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Kakegawa)|comment=changed title based on wikidata|qid=Q22120883}} (Shizuoka Prefecture, {{ill|Kakegawa, Shizuoka|en|Kakegawa, Shizuoka|qid=Q823988|lt=Kakegawa City}})
-* {{ill|Rokusha Shrine (Iwata)|ja|六社神社 (磐田市)|12=simple|13=User:Immanuelle/Rokusha Shrine (Iwata)|ja_comment=jawiki link invalid}} (Shizuoka Prefecture, {{ill|Iwata, Shizuoka|en|Iwata, Shizuoka|qid=Q386651|lt=Iwata City}})
-* {{ill|Rokusho Shrine (Hamakita)|ja|六所神社 (浜松市中央区恒武町)|12=simple|13=User:Immanuelle/Rokusho Shrine (Hamakita)|ja_comment=jawiki link invalid}} (Shizuoka Prefecture, {{ill|Hamamatsu|en|Hamamatsu|qid=Q185125|lt=Hamamatsu City}})
-* {{ill|Rokusho Shrine (Nagoya, Nishi-ku)|ja|六所神社 (名古屋市西区)|12=simple|13=User:Immanuelle/Rokusho Shrine (Nagoya, Nishi-ku)|ja_comment=jawiki link invalid}} ({{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya City}})
-* {{ill|Rokusho Shrine (Nagoya, Higashi-ku)|ja|六所神社 (名古屋市東区)|12=simple|13=User:Immanuelle/Rokusho Shrine (Nagoya, Higashi-ku)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Nagoya City)
-* {{ill|Rokusho Shrine (Toyota)|ja|六所神社 (豊田市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Toyota)|qq=}} (Aichi Prefecture, {{ill|Toyota, Aichi|en|Toyota, Aichi|qid=Q201117|lt=Toyota City}})
+* {{ill|Rokusha Shrine (Iwata)|ja|六社神社 (磐田市)}} (Shizuoka Prefecture, {{ill|Iwata, Shizuoka|en|Iwata, Shizuoka|qid=Q386651|lt=Iwata City}})
+* {{ill|Rokusho Shrine (Hamakita)|ja|六所神社 (浜松市中央区恒武町)}} (Shizuoka Prefecture, {{ill|Hamamatsu|en|Hamamatsu|qid=Q185125|lt=Hamamatsu City}})
+* {{ill|Rokusho Shrine (Nagoya, Nishi-ku)|ja|六所神社 (名古屋市西区)}} ({{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya City}})
+* {{ill|Rokusho Shrine (Nagoya, Higashi-ku)|ja|六所神社 (名古屋市東区)}} (Aichi Prefecture, Nagoya City)
+* {{ill|Rokusho Shrine (Toyota)|ja|六所神社 (豊田市)}} (Aichi Prefecture, {{ill|Toyota, Aichi|en|Toyota, Aichi|qid=Q201117|lt=Toyota City}})
 
 === Kinki Region ===
-* {{ill|Rokusho Shrine (Kyoto, Sakyo)|ja|六所神社 (京都市左京区)|12=simple|13=User:Immanuelle/Rokusho Shrine (Kyoto, Sakyo)|ja_comment=jawiki link invalid}} ({{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}})
+* {{ill|Rokusho Shrine (Kyoto, Sakyo)|ja|六所神社 (京都市左京区)}} ({{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}})
 * {{ill|Rokusho Shrine|ja|六所神社 (南山城村)|12=simple|13=User:Immanuelle/Rokusho Shrine (Minamiyamashiro)|comment=changed title based on wikidata|qid=Q56346678}} (Kyoto Prefecture, {{ill|Minamiyamashiro, Kyoto|en|Minamiyamashiro, Kyoto|qid=Q1203714|lt=Minamiyamashiro Village}})
 
 === Shikoku Region ===
-* {{ill|Rokusha Shrine (Sanagouchi)|ja|六社神社 (佐那河内村)|12=simple|13=User:Immanuelle/Rokusha Shrine (Sanagouchi)|qq=}} ({{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, {{ill|Sanagōchi, Tokushima|en|Sanagōchi, Tokushima|qid=Q1206355|lt=Sanagouchi Village}})
-* {{ill|Rokusho Shrine (Hidaka)|ja|六所神社 (日高村)|12=simple|13=User:Immanuelle/Rokusho Shrine (Hidaka)|ja_comment=jawiki link invalid}} ({{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kochi Prefecture}}, {{ill|Hidaka, Kōchi|en|Hidaka, Kōchi|qid=Q1156151|lt=Hidaka Village}})
+* {{ill|Rokusha Shrine (Sanagouchi)|ja|六社神社 (佐那河内村)}} ({{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, {{ill|Sanagōchi, Tokushima|en|Sanagōchi, Tokushima|qid=Q1206355|lt=Sanagouchi Village}})
+* {{ill|Rokusho Shrine (Hidaka)|ja|六所神社 (日高村)}} ({{ill|Kōchi Prefecture|en|Kōchi Prefecture|qid=Q134093|lt=Kochi Prefecture}}, {{ill|Hidaka, Kōchi|en|Hidaka, Kōchi|qid=Q1156151|lt=Hidaka Village}})
 
 === Kyushu Region ===
-* {{ill|Rokusho Shrine (Itoshima)|ja|六所神社 (糸島市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Itoshima)|ja_comment=jawiki link invalid}} ({{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, {{ill|Itoshima|en|Itoshima, Fukuoka|qid=Q1011145|lt=Itoshima City}})
-* {{ill|Rokusho Shrine (Chikugo)|ja|六所神社 (筑後市)|12=simple|13=User:Immanuelle/Rokusho Shrine (Chikugo)|ja_comment=jawiki link invalid}} (Fukuoka Prefecture, {{ill|Chikugo, Fukuoka|en|Chikugo, Fukuoka|qid=Q601137|lt=Chikugo City}})
+* {{ill|Rokusho Shrine (Itoshima)|ja|六所神社 (糸島市)}} ({{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, {{ill|Itoshima|en|Itoshima, Fukuoka|qid=Q1011145|lt=Itoshima City}})
+* {{ill|Rokusho Shrine (Chikugo)|ja|六所神社 (筑後市)}} (Fukuoka Prefecture, {{ill|Chikugo, Fukuoka|en|Chikugo, Fukuoka|qid=Q601137|lt=Chikugo City}})
 
 == Notes ==
 <references />
@@ -67,9 +64,8 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 * {{ill|Sōja shrine|en|Sōja shrine|qid=Q1107129|lt=Sōja}}
 * {{ill|Kokubu-Hachimangu|ja|国府八幡宮|12=simple|13=User:Immanuelle/Kokufu Hachiman Shrine|comment=changed title based on wikidata|qid=Q11420856}}
 * {{ill|Ōkunitama Shrine|en|Ōkunitama Shrine|qid=Q611678|lt=Ōkunitama Shrine}}
-* {{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}}
+* {{ill|Ichinomiya|ca|Ichinomiya (Xinto)|de|Ichi-no-miya|fr|Ichi-no-miya|id|Ichinomiya|ja|一宮|ko|이치노미야|pt|Ichinomiya (templo)|simple|Ichinomiya|th|อิจิโนมิยะ|uk|Ітіномія (титул)|zh|一宮|qid=Q1656379|lt=Ichinomiya}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 === 六所神社 ===
@@ -116,25 +112,25 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 * {{ill|Rokusho Shrine (Q134957013)|lt=Rokusho Shrine|qid=Q134957013}} — Iwata
 * {{ill|Rokusho Shrine (Q134957266)|lt=Rokusho Shrine|qid=Q134957266}} — Chūō Ward
 * {{ill|Rokusho Shrine (Q134957267)|lt=Rokusho Shrine|qid=Q134957267}} — Chūō Ward
-* {{ill|Rokusho Shrine (Q134957282)|lt=Rokusho Shrine|qid=Q134957282}} — Hamana-ku
+* {{ill|Rokusho Shrine (Q134957282)|qid=Q134957282|lt=Rokusho Shrine}} — Hamana-ku
 * {{ill|Rokusho Shrine (Q134957283)|lt=Rokusho Shrine|qid=Q134957283}} — Hamana-ku
-* {{ill|Rokusho Shrine (Q134957287)|lt=Rokusho Shrine|qid=Q134957287}} — Hamana-ku
+* {{ill|Rokusho Shrine (Q134957287)|qid=Q134957287|lt=Rokusho Shrine}} — Hamana-ku
 * {{ill|Rokusho Shrine (Q134957290)|lt=Rokusho Shrine|qid=Q134957290}} — Hamana-ku
-* {{ill|Rokusho Shrine (Q134957295)|lt=Rokusho Shrine|qid=Q134957295}} — Tenryū-ku
+* {{ill|Rokusho Shrine (Q134957295)|qid=Q134957295|lt=Rokusho Shrine}} — Tenryū-ku
 * {{ill|Rokusho Shrine (Q134957296)|lt=Rokusho Shrine|qid=Q134957296}} — Tenryū-ku
-* {{ill|Rokusho Shrine (Q134957318)|lt=Rokusho Shrine|qid=Q134957318}} — Kakegawa
+* {{ill|Rokusho Shrine (Q134957318)|qid=Q134957318|lt=Rokusho Shrine}} — Kakegawa
 * {{ill|Rokusho Shrine (Q134957342)|lt=Rokusho Shrine|qid=Q134957342}} — Iwata
-* {{ill|Rokusho Shrine (Q134957592)|lt=Rokusho Shrine|qid=Q134957592}} — Chūō Ward
+* {{ill|Rokusho Shrine (Q134957592)|qid=Q134957592|lt=Rokusho Shrine}} — Chūō Ward
 * {{ill|Rokusho Shrine (Q134957616)|lt=Rokusho Shrine|qid=Q134957616}} — Hamana-ku
-* {{ill|Rokusho Shrine (Q134957624)|lt=Rokusho Shrine|qid=Q134957624}} — Tenryū-ku
+* {{ill|Rokusho Shrine (Q134957624)|qid=Q134957624|lt=Rokusho Shrine}} — Tenryū-ku
 * {{ill|Rokusho Shrine (Q134957660)|lt=Rokusho Shrine|qid=Q134957660}} — Iwata
-* {{ill|Rokusho Shrine (Q134957668)|lt=Rokusho Shrine|qid=Q134957668}} — Iwata
+* {{ill|Rokusho Shrine (Q134957668)|qid=Q134957668|lt=Rokusho Shrine}} — Iwata
 * {{ill|Rokusho Shrine (Q134957681)|lt=Rokusho Shrine|qid=Q134957681}} — Fukuroi
-* {{ill|Rokusho Shrine (Q134957910)|lt=Rokusho Shrine|qid=Q134957910}} — Chūō Ward
+* {{ill|Rokusho Shrine (Q134957910)|qid=Q134957910|lt=Rokusho Shrine}} — Chūō Ward
 * {{ill|Rokusho Shrine (Q134957911)|lt=Rokusho Shrine|qid=Q134957911}} — Chūō Ward
-* {{ill|Rokusho Shrine (Q134957926)|lt=Rokusho Shrine|qid=Q134957926}} — Hamana-ku
+* {{ill|Rokusho Shrine (Q134957926)|qid=Q134957926|lt=Rokusho Shrine}} — Hamana-ku
 * {{ill|Rokusho Shrine (Q134957929)|lt=Rokusho Shrine|qid=Q134957929}} — Hamana-ku
-* {{ill|Rokusho Shrine (Q134957932)|lt=Rokusho Shrine|qid=Q134957932}} — Tenryū-ku
+* {{ill|Rokusho Shrine (Q134957932)|qid=Q134957932|lt=Rokusho Shrine}} — Tenryū-ku
 * {{ill|Rokusho Shrine (Q134957933)|lt=Rokusho Shrine|qid=Q134957933}} — Tenryū-ku
 * {{ill|Rokusho Shrine (Q134957995)|lt=Rokusho Shrine|qid=Q134957995}} — Fukuroi
 * {{ill|Rokusho Shrine (Q134958152)|lt=Rokusho Shrine|qid=Q134958152}} — Numazu
@@ -146,12 +142,12 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 * {{ill|Rokusho Shrine (Q134958315)|lt=Rokusho Shrine|qid=Q134958315}} — Kakegawa
 * {{ill|Rokusho Shrine (Q134958348)|lt=Rokusho Shrine|qid=Q134958348}} — Iwata
 * {{ill|Rokusho Shrine (Q135000812)|lt=Rokusho Shrine|qid=Q135000812}} — Tokorozawa
-* {{ill|Rokusho Shrine (Q135039596)|lt=Rokusho Shrine|qid=Q135039596}} — Tōtōmi Province
+* {{ill|Rokusho Shrine (Q135039596)|qid=Q135039596|lt=Rokusho Shrine}} — Tōtōmi Province
 * {{ill|Rokusho Shrine (Q135069380)|lt=Rokusho Shrine|qid=Q135069380}} — Owari Province
 * {{ill|Rokusho Shrine (Q135155076)|lt=Rokusho Shrine|qid=Q135155076}} — Mito
 * {{ill|Rokusho Shrine (Q135155100)|lt=Rokusho Shrine|qid=Q135155100}} — Kasama
 * {{ill|Rokusho Shrine (Q135155896)|lt=Rokusho Shrine|qid=Q135155896}} — Chikusei
-* {{ill|Rokusho Shrine (Q135190252)|lt=Rokusho Shrine|qid=Q135190252}} — Tōtōmi Province
+* {{ill|Rokusho Shrine (Q135190252)|qid=Q135190252|lt=Rokusho Shrine}} — Tōtōmi Province
 * {{ill|Rokusho Shrine (Q135192612)|lt=Rokusho Shrine|qid=Q135192612}} — Tōtōmi Province
 * {{ill|Rokusho Shrine (Q135259372)|lt=Rokusho Shrine|qid=Q135259372}} — Utsunomiya
 * {{ill|Rokusho Shrine (Q135260194)|lt=Rokusho Shrine|qid=Q135260194}} — Tochigi
@@ -168,11 +164,10 @@ Some of the {{ill|Sōja|en|Sōja|qid=Q873536|lt=Sōja}} (総社, provincial shri
 
 === also known as '''Rokusha Shrine''' (六社神社 ===
 ''No Wikidata items currently labeled also known as '''Rokusha Shrine''' (六社神社.''
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|六所神社|version=103656924|comment=Imported full ja history}}
 
-{{wikidata link|Q11392349|ja|六所神社}}
+{{wikidata link|Q11392349|ja|六所神社|check_date=2026-05-25}}
 [[Category:Shinto shrines]]
 [[Category:Shinto shrines by tradition]]
 [[Category:Shrine disambiguations]]

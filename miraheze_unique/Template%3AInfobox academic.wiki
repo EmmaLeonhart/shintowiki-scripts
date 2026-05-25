@@ -78,5 +78,6 @@ doctoral_students,notable_students,main_interests,notable_works,notableworks,maj
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:Independently git synced pages]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Independently git synced pages]]{{wikidata link|Q13476663|af|Sjabloon:Inligtingskas Akademikus|ar|قالب:صندوق معلومات أكاديمي|as|সাঁচ:Infobox academic|azb|شابلون:Infobox academic|bdr|Templat:Infobox academic|bh|टेम्पलेट:Infobox academic|bn|টেমপ্লেট:তথ্যছক উচ্চশিক্ষায়তনিক ব্যক্তিত্ব|dtp|Templat:Infobox academic|en|Template:Infobox academic|fa|الگو:Infobox academic|gu|ઢાંચો:Infobox academic|hi|साँचा:Infobox scholar|iba|Templat:Infobox academic|id|Templat:Infobox scholar|ilo|Plantilia:Infobox akademiko|ja|Template:Infobox 学者|kn|ಟೆಂಪ್ಲೇಟು:Infobox scholar|ko|틀:학자 정보|mad|Cèṭa'an:Infobox academic|mi|Template:Infobox academic|check_date=2026-05-25}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

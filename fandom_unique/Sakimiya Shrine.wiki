@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sakimiya_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name=Sakinomiya Shrine
 |alternative names=Sagimiya Myojin, Shinkaimiya Shrine
@@ -7,8 +5,8 @@
 |image=File:先宮神社 - Sakinomiya Shrine 04.jpg
 |location=Nagano Prefecture, Suwa City, Daimon 3-18-1
 |coordinates={{Coord|36.055|N|138.1175}}
-|deity={{ill|Takateruhime no Mikoto|ja|高光姫命|12=simple|13=User:Immanuelle/Takateruhime no Mikoto|ja_comment=jawiki link invalid}}<br/>{{ill|Inasehagi no Mikoto|ja|稲背脛命|12=simple|13=User:Immanuelle/Inasehagi no Mikoto|ja_comment=jawiki link invalid|qid=Q135493042}} (according to some traditions)
-|type={{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}} Kamisha Subordinate Shrine
+|deity={{ill|Takateruhime no Mikoto|ja|高光姫命}}<br/>{{ill|Inasehagi no Mikoto|ja|稲背脛命|12=simple|13=User:Immanuelle/Inasehagi no Mikoto|ja_comment=jawiki link invalid|qid=Q135493042}} (according to some traditions)
+|type={{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}} Kamisha Subordinate Shrine
 |Festival=September 29 (or the nearest Sunday)|prefecture={{ill|Suwa, Nagano|qid=Q846338}}
 }}
 
@@ -16,11 +14,11 @@
 
 == Overview ==
 [[File:先宮神社 - Sakinomiya Shrine 03.jpg|thumb|180px|right|The Shrine Building and the Keyaki Tree (designated as a Suwa City {{ill|Natural monument|en|Natural monument|qid=Q23790|lt=Natural Monument}}<ref>[https://www.city.suwa.lg.jp/site/bunkazai/2152.html Cultural Property Division - Suwa City] See related file "List of Cultural Properties."</ref>) ]]
-The shrine is associated with a legend involving {{ill|Takeminakata|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata|qid=Q9150391}}, the deity enshrined at {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}}. When Takeminakata arrived in Suwa, a conflict ensued with the local Yamato clan. After their defeat, the Yamato clan promised not to leave the Daimon area and vowed not to build a bridge over the small stream in front of the shrine. Like other shrines in the {{ill|Suwa Region|ja|諏訪地域|12=simple|13=User:Immanuelle/Suwa Region|qq=}}, the corners of the worship hall (haiden) are adorned with {{ill|Onbashira|en|Onbashira|qid=Q3698846|lt=Onbashira}} poles.
+The shrine is associated with a legend involving {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391}}, the deity enshrined at {{ill|Suwa-taisha|abstract|Q218813|de|Suwa-Taisha|es|Suwa taisha|eu|Suwa taisha|fa|زیارتگاه بزرگ سووا|fr|Suwa-taisha|hu|Szuva templom|id|Kuil Suwa|it|Santuario di Suwa (Sohonsha)|ja|諏訪大社|ko|스와 대사|lt|Suvos maldykla|pl|Suwa Taisha|ru|Сува-тайся|simple|Suwa-taisha|tr|Suwa-taisha|zh|諏訪大社|qid=Q218813|lt=Suwa-taisha}}. When Takeminakata arrived in Suwa, a conflict ensued with the local Yamato clan. After their defeat, the Yamato clan promised not to leave the Daimon area and vowed not to build a bridge over the small stream in front of the shrine. Like other shrines in the {{ill|Suwa Region|ja|諏訪地域}}, the corners of the worship hall (haiden) are adorned with {{ill|Onbashira|en|Onbashira|qid=Q3698846|lt=Onbashira}} poles.
 [[File:先宮神社 - Sakinomiya Shrine 01.jpg|thumb|180px|right|The Chozuya on the right]]
 
 == Deities ==
-The main deity enshrined is {{ill|Takateruhime no Mikoto|ja|高光姫命|12=simple|13=User:Immanuelle/Takateruhime no Mikoto|ja_comment=jawiki link invalid}}.<ref>[http://www.8tree.com/sakinomiya/ Sakinomiya Shrine - Homepage]{{Broken link|date=2024th year 10月}}</ref>
+The main deity enshrined is {{ill|Takateruhime no Mikoto|ja|高光姫命}}.<ref>[http://www.8tree.com/sakinomiya/ Sakinomiya Shrine - Homepage]{{Broken link|date=2024th year 10月}}</ref>
 
 == location ==
 The shrine is located at:
@@ -30,7 +28,7 @@ The shrine is located at:
 The shrine is approximately 1 kilometer north of JR {{ill|Kami-Suwa Station|en|Kami-Suwa Station|qid=Q844049|lt=Kamisuwa Station}}.
 == See Also ==
 * {{ill|Suwa, Nagano|ja|諏訪市#神社|12=simple|13=User:Immanuelle/List of shrines in Suwa City|comment=changed title based on wikidata|qid=Q846338}}
-* {{ill|Suwa Shrine|ja|諏訪信仰|12=simple|13=User:Immanuelle/Suwa Faith|ja_comment=jawiki redirects to 諏訪神社|comment=changed title based on wikidata|qid=Q2370082}}
+* {{ill|Suwa Shrine|de|Suwa-Schrein|fr|Sanctuaire Suwa|it|Santuario di Suwa|ja|諏訪神社|ko|스와 신사|simple|Suwa shrine|qid=Q2370082}}
 
 == References ==
 {{Reflist}}<div class="references-small"></div>
@@ -43,7 +41,7 @@ The shrine is approximately 1 kilometer north of JR {{ill|Kami-Suwa Station|en|K
 
 {{translated page|ja|先宮神社|version=102339866|comment=Imported full ja history}}
 
-{{wikidata link|Q11388136|ja|先宮神社|check_date=2026-05-09}}
+{{wikidata link|Q11388136|ja|先宮神社|check_date=2026-05-25}}
 [[Category:Buildings and structures in Suwa]]
 [[Category:Buildings and structures in Suwa City]]
 [[Category:History of Suwa]]

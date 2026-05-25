@@ -106,7 +106,7 @@
 | label29     = Total&nbsp;views
 | data29      = {{#if:{{{views|}}}|{{br separated entries|1={{{views}}}{{if both|{{#switch:{{#invoke:YouTubeSubscribers|subCountNice}}|-404|-412|-424={{{subscribers|}}}|{{#invoke:YouTubeSubscribers|subCountNice}}}}|{{{channel_name|}}}{{{channel_url|}}}{{{channel_direct_url|}}}|{{#tag:ref||name="YouTubeStats{{Plain text|{{if empty|{{{channel_display_name|}}}|{{{channel_name|}}}|{{{name|}}}}}}}"}} }}|2={{#if:{{{view_date|}}}|({{{view_date|}}})}} }} }}
 
-| label30     = [[Multi-channel network|Network]]
+| label30     = {{ill|multi-channel network|ca|Xarxa multicanal|de|Multi-Channel-Network|en|Multi-channel network|es|Multi-channel network|fa|شبکه چند کانالی|fr|Réseau multichaîne|hi|मल्टी-चैनल नेटवर्क|id|Jaringan multisaluran|ja|マルチチャンネルネットワーク|ko|멀티 채널 네트워크|nl|YouTube-netwerk|pt|Rede multicanal|ru|Многоканальная сеть|uk|Багатоканальна мережа|vi|Mạng lưới đa kênh|zh|多频道网络|lt=multi-channel network|qid=Q14635346}}
 | data30      = {{{network|}}}
 
 | label31     = Contents are&nbsp;in
