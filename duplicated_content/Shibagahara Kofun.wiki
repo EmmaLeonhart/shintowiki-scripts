@@ -1,12 +1,10 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shibagahara_Kofun for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25595991611|time triggered pipeline]] -->
-
-{{Infobox ancient site|type = {{ill|Zenpō-kōhō-fun|lt=zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/zenpō-kōhō-fun|13=User:Immanuelle/Zenpō-kōhō-fun|comment=enwiki is a redirect}}
+{{Infobox ancient site|type = {{ill|Zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}}
 | name = Shibagahara Kofun (芝ヶ原古墳)
 | image = File:Shibagahara Kofun, funkyu-1.jpg
 | alternate_name = Shibagahara Kofun/Shibagahara No. 12 Kofun
 | location = {{ill|Jōyō, Kyoto|qid=Q817276}}
 | coordinates = {{Coord|34.862747|N|135.783558}}
-| type = {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/Zenpō-kōhō-fun|13=User:Immanuelle/zenpō-kōhō-fun|comment=enwiki is a redirect}}
+| type = {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}}
 | built = Mid-3rd century
 | burial = Direct burial in a composite wooden coffin
 | burial goods = Numerous grave goods, Shōnai-style pottery
@@ -19,12 +17,12 @@
 | architectural_styles = {{ill|Zenpō-kōhō-fun|qid=Q11397225}}
 }}
 
-'''Shibagahara Kofun''' (芝ヶ原古墳), also known as Shibagahara No. 12 Kofun, is a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/Zenpō-kōhō-fun|13=User:Immanuelle/zenpō-kōhō-fun|comment=enwiki is a redirect}} located in {{ill|Jōyō, Kyoto|en|Jōyō, Kyoto|qid=Q817276|lt=Joyo, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, Japan. Part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}} (specifically the Shibagahara subgroup), the kofun is Historic Site1 as a National Historic Site, and its burial goods are Historic Site1 as National {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.
+'''Shibagahara Kofun''' (芝ヶ原古墳), also known as Shibagahara No. 12 Kofun, is a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}} located in {{ill|Jōyō, Kyoto|en|Jōyō, Kyoto|qid=Q817276|lt=Joyo, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, Japan. Part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}} (specifically the Shibagahara subgroup), the kofun is Historic Site1 as a National Historic Site, and its burial goods are Historic Site1 as National {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.
 
 == Overview ==
-Shibagahara Kofun was constructed on a hill in the northern part of Joyo City in southern Kyoto Prefecture{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. It belongs to the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}}, which includes prominent tombs such as the {{ill|Kutsukawa Kurumazuka Kofun|ja|久津川車塚古墳|12=simple|13=User:Immanuelle/Kutsukawa Kurazuka Kofun|comment=changed title based on wikidata|qid=Q11369464}}, and is specifically part of the Shibagahara subgroup (referred to as Shibagahara No. 12 Kofun){{Sfn|Shibagahara Kofun (National Historic Site)}}. Excavations were carried out in 1986 (Showa 61) prior to residential development{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}, and the site has since been preserved as a historic park.
+Shibagahara Kofun was constructed on a hill in the northern part of Joyo City in southern Kyoto Prefecture{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. It belongs to the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}}, which includes prominent tombs such as the {{ill|Kutsukawa Kurumazuka Kofun|ja|久津川車塚古墳|12=simple|13=User:Immanuelle/Kutsukawa Kurazuka Kofun|comment=changed title based on wikidata|qid=Q11369464}}, and is specifically part of the Shibagahara subgroup (referred to as Shibagahara No. 12 Kofun){{Sfn|Shibagahara Kofun (National Historic Site)}}. Excavations were carried out in 1986 (Showa 61) prior to residential development{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}, and the site has since been preserved as a historic park.
 
-While originally a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/Zenpō-kōhō-fun|13=User:Immanuelle/zenpō-kōhō-fun|comment=enwiki is a redirect}}, the front section of the mound has been flattened, leaving a remaining length of 21 meters{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. The mound lacks ste11ed construction and exterior stone covering (fukiishi){{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}} but is surrounded by a moat{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. The burial facility consists of a composite wooden coffin measuring 3 meters in length and 0.8 meters in width{{Sfn|Shibagahara Kofun (National Historic Site)}}. The burial pit measures 4.7 meters in length and 2.5 meters in width{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. Numerous grave goods, including bronze mirrors, bracelets, and beads, were recovered, with the discovery of bronze bracelets being particularly unique<ref name="Joyo City Tourism Association"/>.
+While originally a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}}, the front section of the mound has been flattened, leaving a remaining length of 21 meters{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. The mound lacks ste11ed construction and exterior stone covering (fukiishi){{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}} but is surrounded by a moat{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. The burial facility consists of a composite wooden coffin measuring 3 meters in length and 0.8 meters in width{{Sfn|Shibagahara Kofun (National Historic Site)}}. The burial pit measures 4.7 meters in length and 2.5 meters in width{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}. Numerous grave goods, including bronze mirrors, bracelets, and beads, were recovered, with the discovery of bronze bracelets being particularly unique<ref name="Joyo City Tourism Association"/>.
 
 The kofun is dated to the mid-3rd century during the early {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}<ref name="Joyo City Tourism Association">[http://xn--6oqz6c35b6zh48ipn2e0ys.jp/html/kankou/rekisi3.html#32 National Historic Sites and {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}} > Shibagahara Kofun] (Joyo City Tourism Association).</ref>. It is considered one of the most prominent Kofuns of its time in the southern Yamashiro region, predating the {{ill|Tsubai Ōtsukayama Kofun|en|Tsubai Ōtsukayama Kofun|qid=Q11540994|lt=Tsubai Otsukayama Kofun}}{{Sfn|Kyoto Prefecture Archaeological Intypeation No. 104|2007|11=36-37}}.
 
@@ -98,22 +96,21 @@ File:芝ヶ原古墳出土 庄内式土器.JPG|Shōnai-style pottery
 
 {{translated page|ja|芝ヶ原古墳|version=99994934|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
 ==Merged second translation==
 
 {{Infobox ancient site|type = [[Zenpō-kōen-fun]]
 | name = Shibagahara Kofun (芝ヶ原古墳)
 | image = [[File:Shibagahara Kofun, funkyu-1.jpg|280px]]<br />Mound<br />(Right: rear mound; Left: missing front mound part, now a road)
 | alternate_name = Shibagahara Kofun/Shibagahara No. 12 Kofun
-| part_of = {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}} (Shibagahara Kofun Cluster)
+| part_of = {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}} (Shibagahara Kofun Cluster)
 | location = Terada Ōtani, Jōyō, Kyoto Prefecture
 | coordinates = {{Coord|34|51|45.89|N|135|47|0.81|E}}
-| type = {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/Keyhole tomb with square front and back mounds|13=User:Immanuelle/zenpō-kōhō-fun|comment=enwiki is a redirect}}
+| type = {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}}
 | area = 
 | built = Mid-3rd century
 | burial = Directly buried in composite wooden coffin
 | Interred_individual = Unknown
-| burial goods = Numerous grave goods, {{ill|Shōnai-style pottery|ja|庄内式土器|12=simple|13=User:Immanuelle/Shōnai-style pottery|ja_comment=jawiki link invalid}}
+| burial goods = Numerous grave goods, {{ill|Shōnai-style pottery|ja|庄内式土器}}
 | notes = National Historic Site
 | notes = burial goods Historic Site1 as National {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}
 | special_notes = 
@@ -122,17 +119,17 @@ File:芝ヶ原古墳出土 庄内式土器.JPG|Shōnai-style pottery
 | type = Keyhole tomb with square mounds, facing south
 | map_dot_label = top
 }}
-'''Shibagahara Kofun''' (芝ヶ原古墳), also known as Shibagahara No. 12 Kofun, is a {{ill|Kofun|en|Kofun|qid=Q1141225|lt=Kofun}} Kofun located in Terada Ōtani, {{ill|Jōyō, Kyoto|en|Jōyō, Kyoto|qid=Q817276|lt=Jōyō, Kyoto}}, Kyoto Prefecture. It is a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun|comment=doing this because I need to differentiate it in piped links too with my new interwiki tool as not the ambiguous phrase keyhole shaped kofun|12=simple|13=User:Immanuelle/keyhole tomb with square front and back mounds|13=User:Immanuelle/zenpō-kōhō-fun|comment=enwiki is a redirect}} and types part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}}. This kofun has been Historic Site1 a National Historic Site, and its excavated burial goods are Historic Site1 as National {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.
+'''Shibagahara Kofun''' (芝ヶ原古墳), also known as Shibagahara No. 12 Kofun, is a {{ill|Kofun|en|Kofun|qid=Q1141225|lt=Kofun}} Kofun located in Terada Ōtani, {{ill|Jōyō, Kyoto|en|Jōyō, Kyoto|qid=Q817276|lt=Jōyō, Kyoto}}, Kyoto Prefecture. It is a {{ill|zenpō-kōhō-fun|ja|前方後方墳|lt=Zenpō-kōhō-fun}} and types part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}}. This kofun has been Historic Site1 a National Historic Site, and its excavated burial goods are Historic Site1 as National {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.
 
 == Overview ==
 
-Shibagahara Kofun was built atop a hill in the northern part of Jōyō City, southern Kyoto Prefecture. It is part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}}, specifically the Shibagahara subgroup (Shibagahara No. 12 Kofun). An excavation in 1986 preceded the area's residential development, and the site has since been maintained as a historical park.<ref name="Historic Park">{{Harvid|Shibagahara Kofun (National Historic Site)}}.</ref>
+Shibagahara Kofun was built atop a hill in the northern part of Jōyō City, southern Kyoto Prefecture. It is part of the {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}}, specifically the Shibagahara subgroup (Shibagahara No. 12 Kofun). An excavation in 1986 preceded the area's residential development, and the site has since been maintained as a historical park.<ref name="Historic Park">{{Harvid|Shibagahara Kofun (National Historic Site)}}.</ref>
 
-This tomb is a keyhole-shaped mound with square front and rear mounds; however, the front portion has been leveled (current remaining length: 21 meters).<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}.</ref> The mound shows no signs of terracing, nor does it feature any {{ill|Fukiishi|en|Fukiishi|qid=Q11621213|lt=fukiishi}}. Surrounding the mound is a {{ill|moat|ja|周溝|12=simple|13=User:Immanuelle/moat|ja_comment=jawiki link invalid}}.<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}.</ref> The burial facility consists of a composite wooden coffin buried directly in the ground. The coffin measures 3 meters in length and 0.8 meters in width, while the burial pit is 4.7 meters long and 2.5 meters wide.<ref>{{Harvid|Shibagahara Kofun (National Historic Site)}}.</ref> Numerous grave goods, including a {{ill|Bronze mirror|en|Bronze mirror|qid=Q1041984|lt=bronze mirror}}, bronze bracelets, and jewels, were recovered from the coffin. Among these, the bronze bracelets are particularly rare examples.<ref name="Joyo City">{{Harvid|Joyo City Official Page}}.</ref>
+This tomb is a keyhole-shaped mound with square front and rear mounds; however, the front portion has been leveled (current remaining length: 21 meters).<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}.</ref> The mound shows no signs of terracing, nor does it feature any {{ill|Fukiishi|fr|Fukiishi|ja|葺石|zh|葺石|qid=Q11621213|lt=fukiishi}}. Surrounding the mound is a {{ill|moat|ja|周溝}}.<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}.</ref> The burial facility consists of a composite wooden coffin buried directly in the ground. The coffin measures 3 meters in length and 0.8 meters in width, while the burial pit is 4.7 meters long and 2.5 meters wide.<ref>{{Harvid|Shibagahara Kofun (National Historic Site)}}.</ref> Numerous grave goods, including a {{ill|Bronze mirror|en|Bronze mirror|qid=Q1041984|lt=bronze mirror}}, bronze bracelets, and jewels, were recovered from the coffin. Among these, the bronze bracelets are particularly rare examples.<ref name="Joyo City">{{Harvid|Joyo City Official Page}}.</ref>
 
 The tomb was constructed in the mid-3rd century (or the early 3rd century according to some sources) during the early {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}.<ref name="Joyo City" /> It predates the {{ill|Tsubai Ōtsukayama Kofun|en|Tsubai Ōtsukayama Kofun|qid=Q11540994|lt=Tsubai Ōtsukayama Kofun}} and is considered one of the most significant Kofuns of its era in the southern Yamashiro region.<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}.</ref>
 
-The kofun was Historic Site1 a National Historic Site in 1989, with its grave goods receiving National Important designation1 status in 1990.<ref name="Cultural designation1s"/> In 2016, the broader {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群|12=simple|13=User:Immanuelle/Kutsukawa Kofun Cluster}}, encompassing four additional kofun, was also Historic Site1 a National Historic Site.<ref name="Agency of Cultural Affairs">{{PDFlink|[https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/pdf/2016061701_besshi03.pdf "Regarding the designation1 of Historic Sites"]}} (Agency of Cultural Affairs press release, June 17, 2016).</ref><ref>Ministry of Education, Science and Culture Notice No. 144, October 3, 2016.</ref> However, Shibagahara Kofun itself is not included in this extended Historic Site.
+The kofun was Historic Site1 a National Historic Site in 1989, with its grave goods receiving National Important designation1 status in 1990.<ref name="Cultural designation1s"/> In 2016, the broader {{ill|Kutsukawa Kofun Cluster|ja|久津川古墳群}}, encompassing four additional kofun, was also Historic Site1 a National Historic Site.<ref name="Agency of Cultural Affairs">{{PDFlink|[https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/pdf/2016061701_besshi03.pdf "Regarding the designation1 of Historic Sites"]}} (Agency of Cultural Affairs press release, June 17, 2016).</ref><ref>Ministry of Education, Science and Culture Notice No. 144, October 3, 2016.</ref> However, Shibagahara Kofun itself is not included in this extended Historic Site.
 
 == Archaeological History ==
 
@@ -163,7 +160,7 @@ Key burial goods recovered from the wooden coffin include:<ref>{{Harvid|Kyoto Pr
 * 187 jasper tubular beads
 * 1,276 glass beads
 * One yari-ganna (adze)
-Additionally, fragments of {{ill|Shōnai-style pottery|ja|庄内式土器|12=simple|13=User:Immanuelle/Shōnai-style pottery|ja_comment=jawiki link invalid}}, including double-rimmed jars and high-footed bowls, were found in the gravel layer above the burial pit.<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}</ref> These burial goods are preserved and displayed at the Jōyō City History and Folklore Museum.<ref name="Joyo City" />
+Additionally, fragments of {{ill|Shōnai-style pottery|ja|庄内式土器}}, including double-rimmed jars and high-footed bowls, were found in the gravel layer above the burial pit.<ref>{{Harvid|Kyoto Prefectural Archaeological Reports 104|2007|pp=36–37}}</ref> These burial goods are preserved and displayed at the Jōyō City History and Folklore Museum.<ref name="Joyo City" />
 <gallery>
 File:芝ヶ原古墳出土 装身具.JPG|Ornaments
 File:芝ヶ原古墳出土 庄内式土器.JPG|Shōnai-style pottery
@@ -202,7 +199,7 @@ File:芝ヶ原古墳出土 庄内式土器.JPG|Shōnai-style pottery
 {{translated page|ja|芝ヶ原古墳|version=99994934|comment=Imported full ja history}}
 
 {{Commons category|Shibagahara Kofun (Joyo)}}
-{{wikidata link|Q28608915|ja|芝ヶ原古墳|en|Shibagahara Kofun|co|commons:Category:Shibagahara Kofun (Joyo)|check_date=2026-05-09}}
+{{wikidata link|Q28608915|ja|芝ヶ原古墳|en|Shibagahara Kofun|co|commons:Category:Shibagahara Kofun (Joyo)|check_date=2026-05-25}}
 [[Category:{{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}
 [[Category:Important Cultural Property of Japan in Kyoto prefecture]]
 [[Category:Kofun of Kyoto prefecture]]
@@ -211,3 +208,4 @@ File:芝ヶ原古墳出土 庄内式土器.JPG|Shōnai-style pottery
 [[Category:Wikidata has short description]]
 [[Category:Zenpō-kōen-fun]]
 [[Category:Zenpō-kōhō-fun]]
+[[Category:Pages with duplicated content]]

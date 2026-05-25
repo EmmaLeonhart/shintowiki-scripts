@@ -1,16 +1,13 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sayama_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-
-
 {
 {{Referencesの明記|date=2018-09-09}}
 {{Infobox religious building
-|名称   = {{ill|Sayama Shrine|ja|狭山神社|12=simple|13=User:Immanuelle/Sayama Shrine}}
+|名称   = {{ill|Sayama Shrine|ja|狭山神社}}
 |image   = File:Sayama jinja haiden.jpg
 |所在地 = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Ōsakasayama|en|Ōsakasayama|qid=Q385864|lt=Osaka Sayama City}} Handa 1-223
 |緯度度  = 34 |緯度分 = 29 |緯度秒 = 41.2 | N(北緯)及びS(南緯) = N
 |経度度  = 135 |経度分 = 33 |経度秒 = 25.1 | E(東経)及びW(西経) = E | 地図国コード = JP
 |祭神   = {{ill|Amaterasu|ja|天照皇大神|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}<br/>{{ill|Susanoo-no-Mikoto|ja|素盞嗚命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}
-|社格   = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinai Taisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Large), Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|社格   = {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} (Large), Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
 |本殿   = {{ill|Sumiyoshi-zukuri|en|Sumiyoshi-zukuri|qid=Q3503635|lt=Sumiyoshi-zukuri}}
 |例祭   = October 10
 |神事   =
@@ -21,7 +18,7 @@
 |deity= {{ill|Amaterasu|qid=Q455602}}; {{ill|Susanoo-no-Mikoto|qid=Q272993}}
 |architecture_style= {{ill|Sumiyoshi-zukuri|qid=Q3503635}}
 }}
-'''Sayama Shrine''' (read “Sayama Jinja”) is a Shinto shrine located near the {{ill|Q11571742|ja|狭山池|12=simple|13=User:Immanuelle/Sayama Ike|comment=changed title based on wikidata|qid=Q11571742}} in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}’s [[Osaka Sayama City]]. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinai Taisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}, and its former Ranking was as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+'''Sayama Shrine''' (read “Sayama Jinja”) is a Shinto shrine located near the {{ill|Q11571742|ja|狭山池|12=simple|13=User:Immanuelle/Sayama Ike|comment=changed title based on wikidata|qid=Q11571742}} in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}’s [[Osaka Sayama City]]. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}}, and its former Ranking was as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
 
 This article also covers the subsidiary shrine within the precincts, '''Sayama Tsutsumi Shrine'''.
 
@@ -31,37 +28,37 @@ At Sayama Shrine, the principal deities are:
 * with {{ill|Omikiyama no Mikoto|ja|臣狭山命|12=simple|13=User:Immanuelle/Ominayama no Mikoto|comment=changed title based on wikidata|qid=Q99517230}} (the ancestral deity of the Sayama clan) and {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Tennoyanokami|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}} enshrined as associated deities.
 Additionally, due to a Meiji period merger of shrines, {{ill|Ōyamatsumi|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyamatsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|comment=changed title based on wikidata|qid=Q386563}} and {{ill|Kushinadahime|ja|稲田姫命|12=simple|13=User:Immanuelle/Inadahime-no-Mikoto|qid=Q505469|comment=changed title based on wikidata|qid=Q505469}} are also enshrined.
 
-According to texts such as ''{{ill|Shinja Yōroku|ja|神社要録|12=simple|13=User:Immanuelle/Shinja Yōroku|ja_comment=jawiki link invalid}}'', ''{{ill|Kawachi-koku Shikishin Shikakō|ja|河内国式神私考|12=simple|13=User:Immanuelle/Kawachi-koku Shikishin Shikakō|ja_comment=jawiki link invalid}}'', and the draft version of the ''{{ill|Kawachi-koku Shikinaisha Mokuroku|ja|河内国式内社目録稿本|12=simple|13=User:Immanuelle/Kawachi-koku Shikinaisha Mokuroku|ja_comment=jawiki link invalid}}'', {{ill|Omikiyama no Mikoto|ja|臣狭山命|12=simple|13=User:Immanuelle/Ominayama no Mikoto|comment=changed title based on wikidata|qid=Q99517230}} is regarded as the principal deity. From the Muromachi period through the Edo period, the shrine was also known as the “{{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} Shrine.”
+According to texts such as ''{{ill|Shinja Yōroku|ja|神社要録}}'', ''{{ill|Kawachi-koku Shikishin Shikakō|ja|河内国式神私考}}'', and the draft version of the ''{{ill|Kawachi-koku Shikinaisha Mokuroku|ja|河内国式内社目録稿本}}'', {{ill|Omikiyama no Mikoto|ja|臣狭山命|12=simple|13=User:Immanuelle/Ominayama no Mikoto|comment=changed title based on wikidata|qid=Q99517230}} is regarded as the principal deity. From the Muromachi period through the Edo period, the shrine was also known as the “{{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} Shrine.”
 
 == History ==
-Although the exact date of foundation is unknown, tradition holds that the shrine was established before the construction of Sayama Ike, by imperial command from {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin}}. The ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}'' records that together with the nearby Sayama Tsutsumi Shrine (currently a subsidiary of this shrine), it was Ranked among the major shrines (Taisha). During the Nanbokuchō period, the area became a battlefield for both Northern and Southern forces, suffering repeated destruction by war. The current shrine buildings are estimated to have been rebuilt in the middle Muromachi period during the 2nd year of {{ill|Meiō|en|Meiō|qid=Q1193841|lt=Meiō}}.
+Although the exact date of foundation is unknown, tradition holds that the shrine was established before the construction of Sayama Ike, by imperial command from {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin}}. The ''{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}'' records that together with the nearby Sayama Tsutsumi Shrine (currently a subsidiary of this shrine), it was Ranked among the major shrines (Taisha). During the Nanbokuchō period, the area became a battlefield for both Northern and Southern forces, suffering repeated destruction by war. The current shrine buildings are estimated to have been rebuilt in the middle Muromachi period during the 2nd year of {{ill|Meiō|en|Meiō|qid=Q1193841|lt=Meiō}}.
 
-In Meiji 5 (1872), the shrine was Ranked as a Village Shrine. In January of Meiji 40 (1907), it was designated as a “Shinsen Heihaku Ryōkō Shinsha” (a shrine receiving offerings of ritual objects) and on December 26 of the same year, the village shrine Sayama Tsutsumi Shrine (located in the area known as Akashinayama) was merged with it. In Meiji 40, {{ill|Yakumo shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|comment=changed title based on wikidata|qid=Q11391847}} (enshrining {{ill|Susanoo-no-Mikoto|ja|素盞嗚命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}) was merged, and in Meiji 42, {{ill|Sayama Shima Shrine|ja|狭間神社|12=simple|13=User:Immanuelle/Sayama Shima Shrine|ja_comment=jawiki link invalid}} (enshrining {{ill|Kushinadahime|ja|稲田姫命|12=simple|13=User:Immanuelle/Inadahime-no-Mikoto|qid=Q505469|comment=changed title based on wikidata|qid=Q505469}} and {{ill|Ōyamatsumi|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyamatsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|comment=changed title based on wikidata|qid=Q386563}}) was merged as well.
+In Meiji 5 (1872), the shrine was Ranked as a Village Shrine. In January of Meiji 40 (1907), it was designated as a “Shinsen Heihaku Ryōkō Shinsha” (a shrine receiving offerings of ritual objects) and on December 26 of the same year, the village shrine Sayama Tsutsumi Shrine (located in the area known as Akashinayama) was merged with it. In Meiji 40, {{ill|Yakumo shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|comment=changed title based on wikidata|qid=Q11391847}} (enshrining {{ill|Susanoo-no-Mikoto|ja|素盞嗚命|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|qid=Q272993}}) was merged, and in Meiji 42, {{ill|Sayama Shima Shrine|ja|狭間神社}} (enshrining {{ill|Kushinadahime|ja|稲田姫命|12=simple|13=User:Immanuelle/Inadahime-no-Mikoto|qid=Q505469|comment=changed title based on wikidata|qid=Q505469}} and {{ill|Ōyamatsumi|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyamatsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|comment=changed title based on wikidata|qid=Q386563}}) was merged as well.
 
 == Subsidiary Shrines ==
 Sayama Shrine has been selected as one of the “{{ill|Ōsaka Midori no Hyakusen|ja|100 Greens of Ōsaka|12=simple|13=User:Immanuelle/Osaka Midori no Hyakusen|comment=changed title based on wikidata|qid=Q11439936}}” (One Hundred Selected Green Spots of Osaka Prefecture).<ref>{{Cite web|和書|url=https://www.pref.osaka.lg.jp/midorikikaku/toshiryokka/hyakusenn.html|title=100 Greens of Ōsaka|publisher=大阪府|accessdate=2016-12-23}}</ref>
 
 * Minor subsidiary shrine (Massha): Haniyasu Shrine (【埴安姫大神】 / {{ill|Q11436756|ja|大歳神|12=simple|13=User:Immanuelle/Daisai-no-Kami|comment=changed title based on wikidata|qid=Q11436756}})
-* Minor subsidiary shrine: Gishi Shrine (【伊弉諾命】 and {{ill|Sakami|ja|塞神|12=simple|13=User:Immanuelle/Sakami|ja_comment=jawiki link invalid}})
+* Minor subsidiary shrine: Gishi Shrine (【伊弉諾命】 and {{ill|Sakami|ja|塞神}})
 * Subsidiary shrine (Sessha): Ebisu Shrine ({{ill|Kotoshironushi-no-Mikoto|ja|事代主大神|12=simple|13=User:Immanuelle/Kotonushi no Ōkami|ja_comment=jawiki redirects to 事代主|comment=changed title based on wikidata|qid=Q8009611}}) – formerly a subsidiary of Sayama Shima Shrine (a village shrine)
 * Minor subsidiary shrine: Gakushu Shrine (enshrining {{ill|Ōyamatsumi|ja|大山祇神|12=simple|13=User:Immanuelle/Ōyamatsumi-no-Kami|ja_comment=jawiki redirects to QID FIXED|qid=Q386563|comment=changed title based on wikidata|qid=Q386563}} and {{ill|Sarutahiko Ōkami|ja|猿田彦大神|12=simple|13=User:Immanuelle/Sarutahiko-no-Mikoto|ja_comment=jawiki redirects to サルタヒコ|comment=changed title based on wikidata|qid=Q3090037}})
-* Subsidiary shrine (Sessha): Tsutsumi Shrine (enshrining {{ill|Irishoku Iri Hiko|ja|入色入彦命|12=simple|13=User:Immanuelle/Irishoku Iri Hiko|ja_comment=jawiki link invalid}}) – formerly the subsidiary of Sayama Tsutsumi Shrine, part of the Shikinai system.
+* Subsidiary shrine (Sessha): Tsutsumi Shrine (enshrining {{ill|Irishoku Iri Hiko|ja|入色入彦命}}) – formerly the subsidiary of Sayama Tsutsumi Shrine, part of the Shikinai system.
 * Minor subsidiary shrine: Ashitama Shrine (enshrining {{ill|Ōkuninushi|ja|大国主命|12=simple|13=User:Immanuelle/Ōkuninushi|qid=Q276944}} and {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Tennoyanokami|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}})
-* Minor subsidiary shrine: Mizumoto Shrine (enshrining {{ill|Seoritsu-hime|lt=Seoritsu-hime|lt=Seoritsu-hime|ja|瀬織津姫命|12=simple|13=User:Immanuelle/Seoritsu-hime|ja_comment=jawiki redirects to 瀬織津姫}} and {{ill|Kuraokami|ja|高龗神|12=simple|13=User:Immanuelle/Takagami|ja_comment=jawiki redirects to 淤加美神|comment=changed title based on wikidata|qid=Q644201}})
+* Minor subsidiary shrine: Mizumoto Shrine (enshrining {{ill|Seoritsu-hime|ja|瀬織津姫命|lt=Seoritsu-hime}} and {{ill|Kuraokami|ja|高龗神|12=simple|13=User:Immanuelle/Takagami|ja_comment=jawiki redirects to 淤加美神|comment=changed title based on wikidata|qid=Q644201}})
 * Subsidiary shrine (Sessha): Inari Shrine (enshrining {{ill|Ukanomitama|ja|宇賀御魂神|12=simple|13=User:Immanuelle/Ukano Mitama|ja_comment=jawiki redirects to ウカノミタマ|comment=changed title based on wikidata|qid=Q3080728}}) – originally founded as a village shrine under the name “Uka no Mitama Jinja” in Meiji 35 and merged in Meiji 42
 
 == Sayama Tsutsumi Shrine ==
 {{Infobox religious building
 |名称 = {{ill|Sayama Shrine|ja|狭山堤神社|12=simple|13=User:Immanuelle/Sayama Tsutsumi Jinja|ja_comment=jawiki redirects to 狭山神社|comment=changed title based on wikidata|qid=Q11571746}}
 |所在地 = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}{{ill|Ōsakasayama|en|Ōsakasayama|qid=Q385864|lt=Osaka Sayama City}} Handa 1-223
-|祭神 = {{ill|Inshoku Iri Hiko no Mikoto|ja|五十色入彦尊|12=simple|13=User:Immanuelle/Inshoku Iri Hiko no Mikoto|ja_comment=jawiki link invalid}}
-|社格 = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinai Taisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Large), Village Shrine
+|祭神 = {{ill|Inshoku Iri Hiko no Mikoto|ja|五十色入彦尊}}
+|社格 = {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} (Large), Village Shrine
 |image = [[Image:Sayama jinja haiden.jpg|270px]]
 |image=Sayama jinja5.jpg
 }}
 '''Sayama Tsutsumi Shrine''' is a subsidiary shrine (sessha) located within the precincts of Kago Shrine. It is classified as a Shikinai Taisha, and its former Ranking was that of a village shrine.
 
-It enshrines {{ill|Inshoku Iri Hiko no Mikoto|ja|五十色入彦尊|12=simple|13=User:Immanuelle/Inshoku Iri Hiko no Mikoto|ja_comment=jawiki link invalid}} (also known as {{ill|Prince Inishikiirihiko|ja|五十瓊敷入彦命|2=ja|3=五十瓊敷入彦命|12=simple|13=User:Immanuelle/Isono Niohiko no Mikoto|13=User:Immanuelle/Prince Inishikiirihiko}}), who is mentioned in the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}} and in the account of Emperor Suinin as having “created Sayama Ike.” According to the ''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'', he was conferred the divine Rank of Jūgo-i Ue on January 27 of the first year of the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan}} era (859). The ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}'' lists this shrine among the major shrines (Taisha).
+It enshrines {{ill|Inshoku Iri Hiko no Mikoto|ja|五十色入彦尊}} (also known as {{ill|Prince Inishikiirihiko|ja|五十瓊敷入彦命}}), who is mentioned in the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}} and in the account of Emperor Suinin as having “created Sayama Ike.” According to the ''{{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}'', he was conferred the divine Rank of Jūgo-i Ue on January 27 of the first year of the {{ill|Zhenguan|en|Zhenguan|qid=Q3577278|lt=Jōgan}} era (859). The ''{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}'' lists this shrine among the major shrines (Taisha).
 
 In Meiji 5 (1872) it was Ranked as a village shrine. On December 26 of Meiji 40 (1907), it was merged into Sayama Shrine as a subsidiary shrine. It is located on the left side when facing the Sayama Shrine Haiden.
 
@@ -76,7 +73,6 @@ In Meiji 5 (1872) it was Ranked as a village shrine. On December 26 of Meiji 40 
 
 {{Commons category|Sayama-jinja}}
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Sayama Shrine (Q11571746)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
@@ -84,9 +80,9 @@ In Meiji 5 (1872) it was Ranked as a village shrine. On December 26 of Meiji 40 
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Tajihinokōri district|ja|丹比郡|zh|丹比郡|qid=Q11368538}} || {{ill|Sayama Shrine|lt=Sayama Shrine|ja|狭山神社|commons|Category:Sayama-jinja|qid=Q11571746}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || {{ill|Shikinai Taisha|qid=Q134917288}} || — || — || {{coord|34.494815|135.556760|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180964 DB]
+| {{ill|Tajihinokōri district|ja|丹比郡|zh|丹比郡|qid=Q11368538}} || {{ill|Sayama Shrine|lt=Sayama Shrine|ja|狭山神社|commons|Category:Sayama-jinja|qid=Q11571746}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|de|Niiname-sai|fr|Niiname-no-Matsuri|id|Niiname-no-Matsuri|ja|新嘗祭|ko|신상제 (11월)|simple|Niiname-no-Matsuri|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || {{ill|Shikinai Taisha|qid=Q134917288}} || — || — || {{coord|34.494815|135.556760|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180964 DB]
 |}
-{{wikidata link|Q11571746|da|d:Q11571746|ja|狭山神社|co|commons:Category:Sayama-jinja|check_date=2026-05-09}}==Notes==
+{{wikidata link|Q11571746|da|d:Q11571746|ja|狭山神社|co|commons:Category:Sayama-jinja|check_date=2026-05-25}}==Notes==
 <references group="lower-alpha"/>
 [[Category:Buildings and structures in Osakasayama, Osaka]]
 [[Category:Former Gō-sha in Osaka Prefecture]]
@@ -101,3 +97,4 @@ In Meiji 5 (1872) it was Ranked as a village shrine. On December 26 of Meiji 40 
 [[Category:Shikinai Taisha]]
 [[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]
