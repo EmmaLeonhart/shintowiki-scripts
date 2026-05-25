@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sarutahiko_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25591097223|commit triggered pipeline]] -->
-
 {{Short description|Shinto shrine in Japan}}
 
 {{Expand Japanese|猿田彦神社}}{{infobox religious building
@@ -22,7 +20,7 @@ In the ''[[Nihon Shoki]]'', he is the one who meets [[Ninigi-no-Mikoto]], the gr
 
 After guiding the [[Amatsukami]] to earth, he rested at the [[Isuzu River]] and here this shrine was established
 
-He, Ame-no-Uzume and their children subsequently created the ''{{ill|Sarume clan|ja|猿女君|12=simple|13=User:Immanuelle/Sarume clan}}'' (猿女の君).<ref name="picken-2004a">{{Cite book |last=Picken |first=Stuart D. B. |url=https://books.google.com/books?id=BKAhUVqKFhgC&q=Uzume&pg=PA1 |title=Sourcebook in Shinto: Selected Documents |date=2004 |publisher=Greenwood Publishing Group |isbn=978-0-313-26432-0 |language=en}}</ref><ref name="roberts-2009a">{{Cite book |last=Roberts |first=Jeremy |url=https://books.google.com/books?id=xdfgjV2kw6oC&q=Uzume |title=Japanese Mythology A to Z |date=2009 |publisher=Infobase Publishing |isbn=978-1-4381-2802-3 |language=en}}</ref><ref name="coulter-2013a">{{Cite book |last1=Coulter |first1=Charles Russell |url=https://books.google.com/books?id=VWxekbhM1yEC&dq=Ame-no-Uzume&pg=PT91 |title=Encyclopedia of Ancient Deities |last2=Turner |first2=Patricia |date=2013-07-04 |publisher=Routledge |isbn=978-1-135-96397-2 |language=en}}</ref> clan along with an order of female court and religious dancers. It was the origin of [[Kagura]] and {{ill|Noh|en|Noh|qid=Q226887|lt=Noh}}. Other descendants includes the Ujitoko clan from Ise province.
+He, Ame-no-Uzume and their children subsequently created the ''{{ill|Sarume clan|ja|猿女君}}'' (猿女の君).<ref name="picken-2004a">{{Cite book |last=Picken |first=Stuart D. B. |url=https://books.google.com/books?id=BKAhUVqKFhgC&q=Uzume&pg=PA1 |title=Sourcebook in Shinto: Selected Documents |date=2004 |publisher=Greenwood Publishing Group |isbn=978-0-313-26432-0 |language=en}}</ref><ref name="roberts-2009a">{{Cite book |last=Roberts |first=Jeremy |url=https://books.google.com/books?id=xdfgjV2kw6oC&q=Uzume |title=Japanese Mythology A to Z |date=2009 |publisher=Infobase Publishing |isbn=978-1-4381-2802-3 |language=en}}</ref><ref name="coulter-2013a">{{Cite book |last1=Coulter |first1=Charles Russell |url=https://books.google.com/books?id=VWxekbhM1yEC&dq=Ame-no-Uzume&pg=PT91 |title=Encyclopedia of Ancient Deities |last2=Turner |first2=Patricia |date=2013-07-04 |publisher=Routledge |isbn=978-1-135-96397-2 |language=en}}</ref> clan along with an order of female court and religious dancers. It was the origin of [[Kagura]] and {{ill|Noh|en|Noh|qid=Q226887|lt=Noh}}. Other descendants includes the Ujitoko clan from Ise province.
 
 [[File:Sarutahiko Ōkami crop from Wittig collection.png|thumb|left|upright|Sarutahiko Ōkami; taken from a late-19th-century Japanese painting.]]
 
@@ -55,7 +53,7 @@ File:Hakutaka Barrels at Sarutahiko Shrine, Ise.jpg|Sake barrels
 {{Commons category|Sarutahiko-jinja}}
 
 {{Commons category|Sarutahiko-jinja}}
-{{wikidata link|Q11572141|en|Sarutahiko Shrine|fr|Sanctuaire Sarutahiko|ja|Sarutahiko Shrine|ja|猿田彦神社|co|commons:Category:Sarutahiko-jinja|simple|Sarutahiko Shrine|check_date=2026-05-09}}
+{{wikidata link|Q11572141|en|Sarutahiko Shrine|fr|Sanctuaire Sarutahiko|ja|Sarutahiko Shrine|ja|猿田彦神社|co|commons:Category:Sarutahiko-jinja|simple|Sarutahiko Shrine|check_date=2026-05-25}}
 [[Category:Beppyo shrines]]
 [[Category:Former Unranked Shrines in Mie Prefecture]]
 [[Category:Shinto shrines in Ise City]]

@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Senji_Ryakketsu for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25595991611|time triggered pipeline]] -->
 {{Expand Japanese|占事略决|date=November 2025}}
 
 {{Short description|10th century text by Abe no Seimei}}
@@ -17,19 +16,10 @@ In the manga ''{{ill|Shaman King|en|Shaman King|qid=Q219610|lt=Shaman King}}'', 
 ==External links==
 * [http://miko.org/~uraki/kuon/furu/explain/meisi/onmyouji/senji/senjiryakuketu.htm 占事略決] Online text]]
 
-{{wikidata link|Q7450796|en|Senji Ryakketsu|ja|占事略决|pt|Senji Ryakketsu|check_date=2026-05-09}}
-[[Category:10th-century Japanese books]]
-[[Category:Divination]]
-[[Category:Heian-period books]]
-[[Category:Japanese books]]
-[[Category:Onmyōdō]]
-[[Category:Wikidata has short description]]
+{{wikidata link|Q7450796|en|Senji Ryakketsu|ja|占事略决|pt|Senji Ryakketsu|check_date=2026-05-25}}
 
 {{translated page|ja|占事略决|version=106245545|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 {{出典の明記|date=2018年8月}}
 {{独自研究|date=2018年8月}}
 '''占事略决''' (せんじりゃっけつ、せんじりゃくけつ) は、{{jalink|平安時代|Q193292}}の{{jalink|陰陽師|Q2274163}}・{{jalink|安倍晴明|Q1150151}}が撰したとされる、現存する{{jalink|陰陽道|Q1340540}}に関する書物としては最古のものである。『占事略'''決'''』とも書かれる。これは毛筆による筆跡では'''决'''と'''決'''の判別が困難なことがあり、翻刻時の判断で'''决'''か'''決'''が決まってしまうことによる。ただし、いくつかの写本では表題として明確に'''占事略决'''の表記が採用されており、最も入手しやすい{{jalink|#村山1981||村山1981}}でもそれにならっていることから、'''决'''を用いた表記が一般的となっている<ref group="†">{{jalink|#小坂2005||小坂2005}}では'''占事略決'''の表記が採用されている。</ref>。
@@ -298,3 +288,12 @@ In the manga ''{{ill|Shaman King|en|Shaman King|qid=Q219610|lt=Shaman King}}'', 
 [[Category:Pages with 1500+ untranslated japanese characters]]
 [[Category:Pages with 2000+ untranslated japanese characters]]
 [[Category:Pages with 3000+ untranslated japanese characters]]
+[[Category:10th-century Japanese books]]
+[[Category:Divination]]
+[[Category:Heian-period books]]
+[[Category:Japanese books]]
+[[Category:Onmyōdō]]
+[[Category:Wikidata has short description]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
