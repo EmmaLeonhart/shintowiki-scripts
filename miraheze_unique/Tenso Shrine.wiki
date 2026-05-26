@@ -1,15 +1,13 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tenso_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
-
 '''Tenso Shrine''' (天祖神社)
 
-* {{ill|Tenso Shrine|de|Tenso Schrein (Saitama City)|ja|天祖神社 (さいたま市)|zh|天祖神社 (埼玉市)|12=simple|13=User:Immanuelle/Tenso Shrine (Saitama City)|comment=changed title based on wikidata|qid=Q128867052}}
-* {{ill|Tenso Shrine|de|Tenso Schrein (Minato, Tokyo)|ja|天祖神社 (東京都港区)|zh|天祖神社 (东京港区)|12=simple|13=User:Immanuelle/Tenso Shrine (Minato, Tokyo)|comment=changed title based on wikidata|qid=Q97376108}}
-* {{ill|Oshiage Tenso Shrine|de|Tenso Schrein (Sumida Ward)|ja|天祖神社 (墨田区)|zh|天祖神社 (墨田区)|12=simple|13=User:Immanuelle/Tenso Shrine (Sumida Ward)|comment=changed title based on wikidata|qid=Q120811582}}
-* {{ill|Otsuka Tenso Shrine|de|Tenso Schrein (Minami‐Otsuka, Toshima)|ja|天祖神社 (豊島区南大塚)|zh|天祖神社 (丰岛区南大冢)|12=simple|13=User:Immanuelle/Tenso Shrine (Minami‐Otsuka, Toshima)|comment=changed title based on wikidata|qid=Q97478945}}
-* {{ill|Tenso Shrine (Mejiro, Toshima)|de|Tenso Schrein (Mejiro, Toshima)|ja|天祖神社 (豊島区目白)|zh|天祖神社 (丰岛区目白)|12=simple|13=User:Immanuelle/Tenso Shrine (Mejiro, Toshima)}}
-* {{ill|Koto Tenso Shrine|de|Tenso Schrein (Kameido, Koto)|ja|天祖神社 (江東区亀戸)|zh|天祖神社 (江东区龟户)|12=simple|13=User:Immanuelle/Tenso Shrine (Kameido, Koto)|comment=changed title based on wikidata|qid=Q97175484}}
-* {{ill|Tenso Shrine|de|Tenso Schrein (Sanno, Ota)|ja|天祖神社 (大田区山王)|zh|天祖神社 (大田区山王)|12=simple|13=User:Immanuelle/Tenso Shrine (Sanno, Ota)|comment=changed title based on wikidata|qid=Q97195849}}
-* {{ill|Kyōdō Tenso Shrine|de|Tenso Schrein (Kyodo, Setagaya)|ja|天祖神社 (世田谷区経堂)|zh|天祖神社 (世田谷区经堂)|12=simple|13=User:Immanuelle/Tenso Shrine (Kyodo, Setagaya)|comment=changed title based on wikidata|qid=Q97172024}}
+* {{ill|Tenso Shrine|ja|天祖神社 (さいたま市)|qid=Q128867052}}
+* {{ill|Tenso Shrine|ja|天祖神社 (東京都港区)|qid=Q97376108}}
+* {{ill|Oshiage Tenso Shrine|ja|天祖神社 (墨田区)|qid=Q120811582}}
+* {{ill|Otsuka Tenso Shrine|ja|天祖神社 (豊島区南大塚)|qid=Q97478945}}
+* {{ill|Tenso Shrine (Mejiro, Toshima)|de|Tenso Schrein (Mejiro, Toshima)|ja|天祖神社 (豊島区目白)|zh|天祖神社 (丰岛区目白)}}
+* {{ill|Koto Tenso Shrine|ja|天祖神社 (江東区亀戸)|qid=Q97175484}}
+* {{ill|Tenso Shrine|ja|天祖神社 (大田区山王)|qid=Q97195849}}
+* {{ill|Kyōdō Tenso Shrine|ja|天祖神社 (世田谷区経堂)|qid=Q97172024}}
 * {{ill|Tenso Shrine|de|Tenso Schrein (Nakacho, Setagaya)|ja|天祖神社 (世田谷区中町)|zh|天祖神社 (世田谷区中町)|12=simple|13=User:Immanuelle/Tenso Shrine (Nakacho, Setagaya)|comment=changed title based on wikidata|qid=Q106852615}}
 * {{ill|Tenso Shrine|de|Tenso Schrein (Setagaya, Setagaya)|ja|天祖神社 (世田谷区世田谷)|zh|天祖神社 (世田谷区世田谷)|12=simple|13=User:Immanuelle/Tenso Shrine (Setagaya, Setagaya)|comment=changed title based on wikidata|qid=Q106852621}}
 * {{ill|Tenso Shrine|de|Tenso Schrein (Minami Tokiwadai, Itabashi)|ja|天祖神社 (板橋区南常盤台)|zh|天祖神社 (板桥区南常盘台)|12=simple|13=User:Immanuelle/Tenso Shrine (Minami Tokiwadai, Itabashi)|comment=changed title based on wikidata|qid=Q97209891}}
@@ -32,18 +30,14 @@
 {{disambiguation}}
 
 {{draft categories|
-[[Category:Shrine disambiguations]]
-[[Category:shrine disambiguations]]
 
-[[Category:All disambiguation pages]]
-[[Category:Independently git synced pages]]
 }}
 
 == Shrines with this name ==
 
 * {{ill|Koiwata Tenso Shrine (Q106852625)|lt=Koiwata Tenso Shrine|qid=Q106852625}} — Kita-Koiwa
-* {{ill|Koto Tenso Shrine (Q97175484)|lt=Koto Tenso Shrine|qid=Q97175484}} — Kameido
-* {{ill|Otsuka Tenso Shrine (Q97478945)|lt=Otsuka Tenso Shrine|qid=Q97478945}} — Toshima
+* {{ill|Koto Tenso Shrine (Q97175484)|ja|天祖神社 (江東区亀戸)|qid=Q97175484|lt=Koto Tenso Shrine}} — Kameido
+* {{ill|Otsuka Tenso Shrine (Q97478945)|ja|天祖神社 (豊島区南大塚)|qid=Q97478945|lt=Otsuka Tenso Shrine}} — Toshima
 * {{ill|Tenso Shrine (Q106852601)|lt=Tenso Shrine|qid=Q106852601}} — Horikiri
 * {{ill|Tenso Shrine (Q106852611)|lt=Tenso Shrine|qid=Q106852611}} — Katsushika
 * {{ill|Tenso Shrine (Q106852612)|lt=Tenso Shrine|qid=Q106852612}} — Katsushika
@@ -53,16 +47,20 @@
 * {{ill|Tenso Shrine (Q106852632)|lt=Tenso Shrine|qid=Q106852632}} — Minami-Shinozakimachi
 * {{ill|Tenso Shrine (Q113560414)|lt=Tenso Shrine|qid=Q113560414}} — Shinmei
 * {{ill|Tenso Shrine (Q128867049)|lt=Tenso Shrine|qid=Q128867049}} — Adachi
-* {{ill|Tenso Shrine (Q128867052)|lt=Tenso Shrine|qid=Q128867052}} — Chūō-ku
+* {{ill|Tenso Shrine (Q128867052)|ja|天祖神社 (さいたま市)|qid=Q128867052|lt=Tenso Shrine}} — Chūō-ku
 * {{ill|Tenso Shrine (Q131450989)|lt=Tenso Shrine|qid=Q131450989}} — Mejiro
 * {{ill|Tenso Shrine (Q97188173)|lt=Tenso Shrine|qid=Q97188173}} — Nerima
 * {{ill|Tenso Shrine (Q97191905)|lt=Tenso Shrine|qid=Q97191905}} — Edogawa
-* {{ill|Tenso Shrine (Q97195849)|lt=Tenso Shrine|qid=Q97195849}} — Ota
+* {{ill|Tenso Shrine (Q97195849)|ja|天祖神社 (大田区山王)|qid=Q97195849|lt=Tenso Shrine}} — Ota
 * {{ill|Tenso Shrine (Q97206526)|lt=Tenso Shrine|qid=Q97206526}} — Katsushika
 * {{ill|Tenso Shrine (Q97206543)|lt=Tenso Shrine|qid=Q97206543}} — Katsushika
 * {{ill|Tenso Shrine (Q97209891)|lt=Tenso Shrine|qid=Q97209891}} — Itabashi
-* {{ill|Tenso Shrine (Q97376108)|lt=Tenso Shrine|qid=Q97376108}} — Roppongi
+* {{ill|Tenso Shrine (Q97376108)|ja|天祖神社 (東京都港区)|qid=Q97376108|lt=Tenso Shrine}} — Roppongi
 * {{ill|Tenso Shrine (Itabashi-ku) (Q97209904)|lt=Tenso Shrine (Itabashi-ku)|qid=Q97209904}} — Itabashi
 
 {{translated page|ja|神明神社|version=105512749|comment=Imported full ja history}}
-{{wikidata link||de|Tenso Schrein|en|Tenso Shrine|check_date=2026-05-11}}
+{{wikidata link||de|Tenso Schrein|en|Tenso Shrine|check_date=2026-05-26}}
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:All disambiguation pages]]
+[[Category:Independently git synced pages]]
