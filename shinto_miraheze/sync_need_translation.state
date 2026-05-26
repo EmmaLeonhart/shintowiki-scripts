@@ -384,32 +384,32 @@
     "sha": "a747accd3aac9bf63022de92df74296cc9aa3dc1"
   },
   "Tamakushi-hime": {
-    "revid": 3760331,
-    "sha": "a9def87978775f4f78a3b34f07b22dc205ee3d9a"
+    "revid": 3765222,
+    "sha": "dd899250b9175bce5982ac1c0b3b177c08295fa2"
   },
   "Tamayori-hime (mother of Jimmu)": {
-    "revid": 3760332,
-    "sha": "7803fd242af8127a1748d3f1edd267bf0cbff5aa"
+    "revid": 3765257,
+    "sha": "99421539329e2b4f16748a28a8656a9efa6b75e2"
   },
   "Tenjinsha (Itoshima)": {
-    "revid": 3735667,
-    "sha": "0f3ac2377f1f6bdf69f3860aac6ac2aaefed1a38"
+    "revid": 3765519,
+    "sha": "82bcea8908ec62a78626eefcd0f09c5e41b9c7f8"
   },
   "Tenshō Kōtai Jingūkyō": {
-    "revid": 3760333,
-    "sha": "1cb7e26fa03890e290704cb67831d29a2d938b5a"
+    "revid": 3765580,
+    "sha": "6be151cbcbd61c18c676fc24f63b48c01f509303"
   },
   "Tenson-zoku": {
-    "revid": 3744325,
-    "sha": "f86b18a788aac280b805f018097714312835e975"
+    "revid": 3765585,
+    "sha": "00b05fbd7024fc288545f7c6828c25776550706f"
   },
   "Teranomikoto Shrine": {
-    "revid": 3760334,
-    "sha": "d4a0f034d0e46164050f0d6d051ea6658f47a1dc"
+    "revid": 3765598,
+    "sha": "adfe9665dc7308f0d32ad851035c3499a4a8a3cb"
   },
   "The Warring States Period in Kinai and Kinki": {
-    "revid": 3744331,
-    "sha": "a2ca177123479ab8d41eb00f118b5de3ec52a346"
+    "revid": 3765609,
+    "sha": "aaa600e25eb3f40aa05fe3abfe6871010956c088"
   },
   "Triangular-Rimmed Divine Beast Mirror": {
     "revid": 3744415,
@@ -470,10 +470,6 @@
   "伊甚国造": {
     "revid": 3735787,
     "sha": "8116973596de2dfe130d6025c0d27801ec5bb8fb"
-  },
-  "倭国造": {
-    "revid": 3735797,
-    "sha": "36955c98bbbf4a1be35306ce035585983ba2e6b6"
   },
   "倭手彦": {
     "revid": 3735799,
