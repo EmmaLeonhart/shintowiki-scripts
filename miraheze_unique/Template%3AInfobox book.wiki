@@ -1,6 +1,7 @@
 {{Infobox
 | italic title = {{{italic title|<noinclude>no
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q5858283|af|Sjabloon:Inligtingskas Boek|an|Plantilla:Ficha de libro|ar|قالب:صندوق معلومات كتاب|ary|موضيل:معلومات كتاب|arz|قالب:صندوق معلومات كتاب|ast|Plantía:Llibru|as|সাঁচ:Infobox book|av|Халип:ТӀахьазул инфобокс|azb|شابلون:Infobox book|az|Şablon:Kitab|ban|Mal:Infobox book|ba|Ҡалып:Издание|bcl|Plantilya:Infobox book|be|Шаблон:Выданне|bg|Шаблон:Книга|bh|टेम्पलेट:Infobox book|bjn|Citakan:Infobox Book|bn|টেমপ্লেট:তথ্যছক বই|bs|Šablon:Infokutija knjiga|ca|Plantilla:Infotaula llibre|check_date=2026-05-26}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>}}}
 | bodyclass = vcard
 | bodystyle = {{#if:{{{infoboxwidth|{{{width|}}}}}} |width:{{{infoboxwidth|{{{width}}}}}} }}
