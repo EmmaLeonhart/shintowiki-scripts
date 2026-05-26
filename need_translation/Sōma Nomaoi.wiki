@@ -1,25 +1,8 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=S%C5%8Dma_Nomaoi for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25623742448|time triggered pipeline]] -->
-
 '''Soma-Nomaoi''' is an ancient Japanese festival held in Minamisoma and Soma City of Fukushima Prefecture. It has been celebrated for over a thousand years and features mounted warriors wearing armor, swords, and flag-designated weapons, galloping across fields to recreate a battle scene from the past.<ref>https://www.japan.travel/en/spot/1740/</ref><ref>https://blog.japanwondertravel.com/soma-nomaoi-festival-in-fukushima-prefecture-34330</ref><ref>https://web-japan.org/atlas/festivals/fes06.html</ref>
 {{translated page|ja|相馬野馬追|version=109132671|comment=Imported full ja history}}
 
 {{Commons category|Sōma Nomaoi}}
-{{wikidata link|Q11582543|ja|相馬野馬追|co|commons:Category:Sōma Nomaoi|check_date=2026-05-10}}
-[[Category:Festivals in Fukushima Prefecture]]
-[[Category:Hamadori Region]]
-[[Category:Horses in culture]]
-[[Category:Important Intangible Folk Cultural Properties]]
-[[Category:Minamisōma]]
-[[Category:Shinto festivals]]
-[[Category:Shinto_festivals]]
-[[Category:Sōma clan]]
-[[Category:Sōma Shrines]]
-[[Category:Sōma, Fukushima]]
-[[Category:Sōma-Nakamura Domain]]
-[[Category:Taira no Masakado]]
-[[Category:Wikidata no short description]]
-[[Category:need translation]]
-[[Category:missing revisions from jawiki]]
+{{wikidata link|Q11582543|ja|相馬野馬追|check_date=2026-05-26}}
 ==Japanese content==
 
 {{イベントインフォメーション
@@ -215,17 +198,6 @@ File:Soma Nomaoi horsemen heading home.jpg|帰り馬
 * {{Wikinews-inline|福島県の伝統行事「相馬野馬追」が2016年も例年通り行われる、高木復興相も視察に}} 【2016年7月30日】 
 
 {{デフォルトソート:そうまのまおい}}
-[[Category:相馬氏|*のまおい]]
-[[Category:福島県の祭り]]
-[[Category:浜通り]]
-[[Category:福島県にある国指定の重要無形民俗文化財]]
-[[Category:神道行事]]
-[[Category:相馬神社]]
-[[Category:馬に関する文化]]
-[[Category:相馬中村藩]]
-[[Category:平将門]]
-[[Category:相馬市]]
-[[Category:南相馬市]]
 [[Category:Tier 0 Categories]][[Category:need translation]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
@@ -239,3 +211,29 @@ File:Soma Nomaoi horsemen heading home.jpg|帰り馬
 [[Category:Pages with 1500+ untranslated japanese characters]]
 [[Category:Pages with 2000+ untranslated japanese characters]]
 [[Category:Pages with 3000+ untranslated japanese characters]]
+[[Category:Festivals in Fukushima Prefecture]]
+[[Category:Hamadori Region]]
+[[Category:Horses in culture]]
+[[Category:Important Intangible Folk Cultural Properties]]
+[[Category:Minamisōma]]
+[[Category:Shinto festivals]]
+[[Category:Shinto_festivals]]
+[[Category:Sōma clan]]
+[[Category:Sōma Shrines]]
+[[Category:Sōma, Fukushima]]
+[[Category:Sōma-Nakamura Domain]]
+[[Category:Taira no Masakado]]
+[[Category:Wikidata no short description]]
+[[Category:need translation]]
+[[Category:missing revisions from jawiki]]
+[[Category:相馬氏|*のまおい]]
+[[Category:福島県の祭り]]
+[[Category:浜通り]]
+[[Category:福島県にある国指定の重要無形民俗文化財]]
+[[Category:神道行事]]
+[[Category:相馬神社]]
+[[Category:馬に関する文化]]
+[[Category:相馬中村藩]]
+[[Category:平将門]]
+[[Category:相馬市]]
+[[Category:南相馬市]]

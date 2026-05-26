@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tachi_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25623742448|time triggered pipeline]] -->
 {{Expand Japanese|タチ|date=November 2025}}
 
 {{wiktionary|tachi}}
@@ -7,32 +6,28 @@ A '''''[[tachi]]''''' (太刀) is a type of Japanese curved sword.
 '''Tachi''' may also refer to:
 
 ==People==
-*{{ill|Tachi (surname)|en|Tachi (surname)|qid=Q26447465|lt=Tachi (surname)}}, a Japanese surname
-*{{ill|Tachi (footballer)|en|Tachi (footballer)|qid=Q66382628|lt=Tachi (footballer)}} (Alberto Rodríguez Baró, born 1997), Spanish footballer
-*A tribe of Native American Indians in California - see {{ill|Yokuts|en|Yokuts|qid=Q2585783|lt=Yokuts}} and {{ill|Santa Rosa Rancheria|en|Santa Rosa Rancheria|qid=Q7419909|lt=Santa Rosa Rancheria}}
+*{{ill|Tachi (surname)|qid=Q26447465|lt=Tachi (surname)}}, a Japanese surname
+*{{ill|Tachi (footballer)|ar|تاتشي|arz|البيرتو رودريجويز بارو|ca|Alberto Rodríguez Baró|es|Tachi (futbolista)|fa|تاچی (بازیکن فوتبال)|it|Alberto Rodríguez Baró|ja|アルベルト・ロドリゲス (1997年生のサッカー選手)|pl|Tachi (piłkarz)|ru|Тачи (футболист)|uk|Альберто Родрігес Баро|qid=Q66382628|lt=Tachi (footballer)}} (Alberto Rodríguez Baró, born 1997), Spanish footballer
+*A tribe of Native American Indians in California - see {{ill|Yokuts|ar|اليوكوت|arz|اليوكوت|be|Ёкуты|bg|Йокути|bs|Yokuti (narod)|ca|Yokuts|es|Yokut|fr|Yokut (peuple)|hr|Yokuts|kk|Йокутс|ko|요쿠츠족|lt|Jokutai|ml|യോകുറ്റ്സ്|nl|Yokuts|pl|Yokutowie|pt|Yokut|ru|Йокутс|sh|Yokuts|sv|Yokut|qid=Q2585783|lt=Yokuts}} and {{ill|Santa Rosa Rancheria|ca|Ranxeria Santa Rosa|ru|Санта-Роза (ранчерия)|qid=Q7419909|lt=Santa Rosa Rancheria}}
 
 ==Other uses==
 * Tachi (大刀), Heian Era sword, a version of the {{ill|Chokutō|en|Chokutō|qid=Q63821|lt=Chokutō}} (直刀), a Japanese straight sword
-*A Japanese term for {{ill|karate stances|en|karate stances|qid=Q1512259|lt=karate stances}}, varying body positions to attack and defend
+*A Japanese term for {{ill|karate stances|ca|Postures de karate|de|Karatestellungen|gl|Posicións de karate|it|Posizioni del karate|pt|Bases do caratê|vi|Tư thế đứng tấn trong Karate|qid=Q1512259|lt=karate stances}}, varying body positions to attack and defend
 *A suffix used in the Japanese language to indicate that a word refers to a group, see the article on [[Japanese grammar#Nouns and other deictics|Japanese grammar]]
-*{{ill|TOM'S|en|TOM'S|qid=Q1773593|lt=TOM'S}} (Tachi Oiwa Motor Sports), TOM'S Co., Ltd (株式会社トムス, Kabushiki-gaisha Tomusu), a factory supported racing team and tuner of Toyota and Lexus vehicles
+*{{ill|TOM'S|es|TOM'S|fr|TOM'S|it|TOM'S|ja|トムス|pl|TOM’s|pt|TOM'S|ru|TOM’S|zh|TOM'S|qid=Q1773593|lt=TOM'S}} (Tachi Oiwa Motor Sports), TOM'S Co., Ltd (株式会社トムス, Kabushiki-gaisha Tomusu), a factory supported racing team and tuner of Toyota and Lexus vehicles
 
 ==See also==
 {{canned search|Tachi}}
-* {{ill|Taichi|en|Taichi|qid=Q345708|lt=Taichi}}
+* {{ill|Taichi|de|Taichi (Name)|es|Taichi (nombre)|it|Taichi|pl|Taichi|qid=Q345708|lt=Taichi}}
 * [[:en:Taiji (disambiguation)|Taiji (disambiguation)]]
 * {{srt}}
 
 {{disambig}}
 
-{{wikidata link|Q1218185|en|Tachi (disambiguation)|de|Tachi (Begriffsklärung)|ja|タチ|nl|Tachi|check_date=2026-05-10}}
-[[Category:Wikidata has short description]]
+{{wikidata link|Q1218185|de|Tachi (Begriffsklärung)|en|Tachi (disambiguation)|ja|タチ|nl|Tachi|check_date=2026-05-26}}
 
 {{translated page|ja|タチ|version=93007044|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 '''タチ'''
 *タラの精巣については、{{jalink|白子 (精巣)|Q1271982}}を参照。
 *{{jalink|タチ (漫画家)|Q15930238}} - 日本の漫画家。
@@ -54,3 +49,7 @@ A '''''[[tachi]]''''' (太刀) is a type of Japanese curved sword.
 [[Category:人物の愛称]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Wikidata has short description]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
