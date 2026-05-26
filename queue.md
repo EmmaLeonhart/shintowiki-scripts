@@ -44,6 +44,21 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   — no bot action.
 
 
+## Bot ping-pong / never-settling pages (2026-05-26)
+
+- [ ] **Diagnose and fix the page-churn loops Emma flagged.** Some pages are
+  being edited in rapid succession by two competing processes ("the git sync
+  and the other thing") and never settle — each bot's edit gets reverted by
+  the other. **Don't guess at the fix; diagnose first.** First step: pull
+  recent page history for a sample of affected pages from
+  shinto.miraheze.org, find pages where two bot accounts (or the same bot
+  via two different scripts/ops) are alternating, group by the
+  script/op pair driving the loop. THEN decide which side's view of the
+  canonical form is correct and align the other to it. See the matching
+  todo.md "Bot ping-pong" section for likely suspects (git_synced sync vs.
+  orchestrator ops, two orchestrator ops disagreeing, etc.). High priority —
+  these pages are net churn for zero progress.
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).

@@ -49,6 +49,42 @@ Active work queue lives in [queue.md](queue.md) (queue — items are deleted whe
   - `normalize_category_pages.py` (Sunday only)
   - `remove_legacy_cat_templates.py` (monthly)
 
+## Bot ping-pong / never-settling pages (emerging concern — 2026-05-26)
+
+Emma flagged: some pages are getting edited in **rapid succession** by two
+competing processes — she called them "the git sync and the other thing" — and
+the result is that those pages never actually reach a settled state. One bot's
+edit is reverted by the other; the second bot then re-applies; the first bot
+reverts again; and so on. The pages are stuck in a churn loop.
+
+We don't yet know the exact pair of processes involved (or whether it's more
+than one pair). The likely suspects:
+
+- **`sync_git_synced_pages.py` (repo-wins)** pushing a stale `.wiki` file back
+  to the wiki, undoing whatever an orchestrator op just normalised on the wiki
+  side. Repo-wins is correct policy for `git_synced/` per
+  `feedback_sync_conflict_policy.md`, but it means orchestrator changes on the
+  wiki get clobbered if the repo file hasn't been refreshed first.
+- **An orchestrator op + a legacy `wiki-cleanup.yml` script** both touching
+  the same page with mutually-incompatible normalizations.
+- **Two orchestrator ops disagreeing** about the same fragment (e.g. one adds
+  a tag the other strips, or one collapses a template form the other expands).
+- Less likely but possible: a sync's "wiki-wins" pull replacing locally-edited
+  content that a worker just produced before the worker can commit.
+
+What this section is NOT: a discrete task with a known fix. We do not yet know
+how to repair this. **Priority is high** — pages that never converge are net
+churn (wiki edits, CI time, server load against the §"Server load" budget) for
+zero forward progress.
+
+**First step when someone picks this up:** identify the actual churn-pair(s).
+A short diagnostic — pull each page's recent history from the shinto.miraheze
+API, find pages where two bot accounts (or the same bot via two scripts) are
+alternating, list them, and group by which two ops/scripts are in the loop.
+That tells you which two pieces of code need to agree on the canonical form,
+which is the real fix. Pure "make script X stop" responses risk regressing
+the legitimate work each side is doing.
+
 ## Server load (emerging concern — 2026-04-18)
 
 Miraheze has raised server-load concerns. All scripts should minimize read/write volume against `shinto.miraheze.org`:
