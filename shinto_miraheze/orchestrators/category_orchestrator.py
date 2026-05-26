@@ -12,6 +12,7 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    canonicalize_template_case,
     duplicate_qids,
     history_offload,
     ill_category_to_link,
@@ -35,6 +36,7 @@ from shinto_miraheze.orchestrators.ops import (
 # stripped templates don't end up in the normalized output.
 OPS = [
     strip_html_comments,
+    canonicalize_template_case,
     strip_self_categorization,
     ill_category_to_link,
     straggler_link_to_ill,

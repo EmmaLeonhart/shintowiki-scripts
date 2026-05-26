@@ -12,6 +12,7 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    canonicalize_template_case,
     categories_to_bottom,
     duplicate_qids,
     history_offload,
@@ -22,7 +23,7 @@ from shinto_miraheze.orchestrators.ops import (
     wikidata_lookup,
 )
 
-OPS = [strip_html_comments, ill_category_to_link, straggler_link_to_ill, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids, categories_to_bottom]
+OPS = [strip_html_comments, canonicalize_template_case, ill_category_to_link, straggler_link_to_ill, interlang_consolidate, wikidata_lookup, history_offload, duplicate_qids, categories_to_bottom]
 
 
 def main():

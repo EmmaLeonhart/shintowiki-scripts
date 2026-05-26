@@ -18,6 +18,7 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    canonicalize_template_case,
     categories_to_bottom,
     deleted_qids_in_ill,
     duplicate_qids,
@@ -58,6 +59,7 @@ from shinto_miraheze.orchestrators.ops import (
 # preserved. Probes grokipedia.com per page (throttled).
 OPS = [
     strip_html_comments,
+    canonicalize_template_case,
     strip_afc_templates,
     ill_category_to_link,
     straggler_link_to_ill,

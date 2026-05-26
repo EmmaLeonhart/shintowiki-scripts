@@ -6,6 +6,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-26
 
+### `canonicalize_template_case` op — rewrite Template:Infobox refs to canonical form
+**Files:** `shinto_miraheze/orchestrators/ops/canonicalize_template_case.py` (new), `shinto_miraheze/orchestrators/{mainspace,category,template,user,project,file,help,geojson,module,item,property,talk}_orchestrator.py`
+
+New PRE_HEAVY orchestrator op that walks the text of every page in every
+namespace (except ns=8 MediaWiki, per the project-wide convention) and
+rewrites any `{{infobox <X>}}` / `{{Template:infobox <X>}}` transclusion
+or `[[Template:Infobox <X>]]` wikilink where `<X>` matches one of the 10
+lowercase case-collision variants from `docs/case_collision_report.md`,
+replacing it with the canonical capitalised form (e.g.
+`Infobox organization` → `Infobox Organization`). Built alongside the
+finding (same day) that every collision pair had IDENTICAL blob content —
+so the rewrite is purely reference-normalisation, no content change.
+
+MediaWiki normalisation handled in the regex: first character of the
+template name is case-insensitive (`[Ii]nfobox`), space/underscore
+interchangeable everywhere, multi-whitespace runs collapsed, optional
+`Template:` prefix with case-insensitive `T`, trailing whitespace before
+`|` or `}}` preserved verbatim (lookahead, not consumed). Parameter
+blocks / nested templates are not touched — the regex matches only the
+prefix up to the param boundary, same pattern as
+`untransclude_crud_templates.py`.
+
+The op self-skips on `Template:Infobox …` pages themselves (both case
+variants currently exist on the wiki; the lowercase ones may still carry
+doc examples) and on redirect pages. Registered as the second op in
+every orchestrator (right after `strip_html_comments`) so the
+normalisation lands in the cycle's combined pre-heavy save and is
+captured by `history_offload`'s mirror snapshot in the same cycle.
+
+When a new case-collision surfaces, add the pair to `TEMPLATE_CANONICAL`
+in the op module. Re-run `python shinto_miraheze/case_collision_report.py`
+to catch new ones (exits 0 on a clean state).
+
+Goal: once every page in every namespace references the canonical
+capitalised template name, the lowercase `Template:Infobox <X>` pages on
+shinto.miraheze.org have zero remaining refs and Emma can
+delete-or-redirect them on the wiki side.
+
 ### `grokipedia_link` op + `Template:Wikidata link` grok categorisation
 **Files:** `shinto_miraheze/orchestrators/ops/grokipedia_link.py` (new), `shinto_miraheze/orchestrators/mainspace_orchestrator.py`, `shinto_miraheze/configure_wikidata_link_grok_categories.py` (new), `.github/workflows/configure-wikidata-link-grok-categories.yml` (new)
 

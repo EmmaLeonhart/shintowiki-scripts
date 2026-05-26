@@ -12,13 +12,14 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    canonicalize_template_case,
     duplicate_qids,
     history_offload,
     interlang_consolidate,
     strip_html_comments,
 )
 
-OPS = [strip_html_comments, interlang_consolidate, history_offload, duplicate_qids]
+OPS = [strip_html_comments, canonicalize_template_case, interlang_consolidate, history_offload, duplicate_qids]
 
 
 def main():

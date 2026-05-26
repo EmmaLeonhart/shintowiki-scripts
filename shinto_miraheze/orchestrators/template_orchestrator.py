@@ -12,6 +12,7 @@ import argparse
 
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
+    canonicalize_template_case,
     duplicate_qids,
     enwiki_wikidata_link,
     history_offload,
@@ -36,6 +37,7 @@ from shinto_miraheze.orchestrators.ops import (
 # template_mainspace_usage is a no-op unless ENABLE_TEMPLATE_USAGE_CHECK=1.
 OPS = [
     strip_html_comments,
+    canonicalize_template_case,
     ill_category_to_link,
     straggler_link_to_ill,
     interlang_consolidate,
