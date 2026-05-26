@@ -46,6 +46,18 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
 
 ## Bot ping-pong / never-settling pages (2026-05-26)
 
+- [ ] **Re-sequence cleanup-loop.yml so all `sync_*` steps run BEFORE the
+  orchestrators / any wiki-write step.** Emma's theory (2026-05-26): the
+  git_synced page churn is because the sync currently runs AFTER orchestrator
+  edits — so the orchestrator edits the wiki and the sync then clobbers it
+  with stale repo content. Sync first = wiki begins each cycle already in
+  the desired state, then ops edit on top of that.
+- [ ] **Make sync conflict-resolution revision-aware (not static policy).**
+  Currently per `feedback_sync_conflict_policy.md`: wiki-wins for
+  duplicated_content/need_translation, repo-wins for
+  git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
+  side is further ahead in revisions wins, with per-directory tie-break
+  rules (TBD). See todo.md "Bot ping-pong" for the full theory.
 - [ ] **Diagnose and fix the page-churn loops Emma flagged.** Some pages are
   being edited in rapid succession by two competing processes ("the git sync
   and the other thing") and never settle — each bot's edit gets reverted by

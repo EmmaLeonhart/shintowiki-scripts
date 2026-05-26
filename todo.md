@@ -51,11 +51,51 @@ Active work queue lives in [queue.md](queue.md) (queue — items are deleted whe
 
 ## Bot ping-pong / never-settling pages (emerging concern — 2026-05-26)
 
-Emma flagged: some pages are getting edited in **rapid succession** by two
-competing processes — she called them "the git sync and the other thing" — and
-the result is that those pages never actually reach a settled state. One bot's
-edit is reverted by the other; the second bot then re-applies; the first bot
-reverts again; and so on. The pages are stuck in a churn loop.
+### Emma's specific theory (2026-05-26, follow-up)
+
+> "There's a page churn thing that's visible only on the wiki and it's also
+> related to the git_synced pages but I think it works a bit differently … the
+> git_synced pages get kind of clobbered and then restored … I think there's
+> a simple thing: git syncing should be the first thing that occurs on the
+> wiki. The first thing on the wiki should be git syncing. Any edits should
+> happen after it."
+
+Concretely, the theory:
+
+1. **Sync runs in the wrong order.** `sync_git_synced_pages.py` is currently
+   sequenced AFTER the orchestrator ops in `cleanup-loop.yml`. So an
+   orchestrator op edits a page on the wiki, then the sync pushes the
+   stale repo `.wiki` over the top — clobbering the wiki-side edit.
+2. **Conflict resolution should be revision-aware, not "repo wins" /
+   "wiki wins" by static policy.** Emma's stated rule (which she's not
+   sure we're implementing): *whichever side is further ahead in
+   revisions is the one that copies over the other.* Ties broken
+   per-directory (different rule per sync dir).
+
+### Likely concrete fixes
+
+* **Re-sequence `cleanup-loop.yml`** so all `sync_*` steps run BEFORE
+  the orchestrator + before any other write-to-wiki step. The wiki
+  state at the start of any orchestrator cycle should already be the
+  desired state per the repo.
+* **Change conflict-resolution in the sync scripts** from the current
+  static policy (`feedback_sync_conflict_policy.md`: wiki-wins for
+  dup-content + need_translation; repo-wins for git_synced + fandom_unique
+  + miraheze_unique) to a revision-aware compare:
+  * pull each side's most recent revid / file mtime
+  * whichever is further ahead wins
+  * tie-break per directory (Emma to specify)
+* The existing static policy stays as the tie-break fallback (or as the
+  per-directory tie-break rule).
+
+### Original framing (kept for context)
+
+Some pages are getting edited in **rapid succession** by two competing
+processes — Emma originally called them "the git sync and the other
+thing" — and the result is that those pages never actually reach a
+settled state. One bot's edit is reverted by the other; the second bot
+then re-applies; the first bot reverts again; and so on. The pages are
+stuck in a churn loop.
 
 We don't yet know the exact pair of processes involved (or whether it's more
 than one pair). The likely suspects:
