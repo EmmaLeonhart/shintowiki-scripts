@@ -21,6 +21,7 @@ from shinto_miraheze.orchestrators.ops import (
     categories_to_bottom,
     deleted_qids_in_ill,
     duplicate_qids,
+    grokipedia_link,
     history_offload,
     ill_category_to_link,
     interlang_consolidate,
@@ -49,6 +50,12 @@ from shinto_miraheze.orchestrators.ops import (
 # straggler_link_to_ill is a PRE_HEAVY light op (placed next to
 # ill_category_to_link) that converts raw straggler wikilinks into {{ill}}
 # templates via Wikidata resolution. Standard always-on op (not gated).
+# grokipedia_link is a PRE_HEAVY light op (mainspace only) placed
+# AFTER wikidata_lookup. Stores its result as a NAMED param (grok=<slug>)
+# on {{wikidata link}} rather than a positional lang|title pair, because
+# Grokopedia is not a language wiki and wikidata_lookup's Phase 2 would
+# wipe a positional pair every sitelinks refresh; named params are
+# preserved. Probes grokipedia.com per page (throttled).
 OPS = [
     strip_html_comments,
     strip_afc_templates,
@@ -58,6 +65,7 @@ OPS = [
     normalize_ill_wikidata,
     interlang_consolidate,
     wikidata_lookup,
+    grokipedia_link,
     history_offload,
     shikinaisha_talk,
     duplicate_qids,

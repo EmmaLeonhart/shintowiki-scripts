@@ -4,6 +4,81 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-26
+
+### `grokipedia_link` op + `Template:Wikidata link` grok categorisation
+**Files:** `shinto_miraheze/orchestrators/ops/grokipedia_link.py` (new), `shinto_miraheze/orchestrators/mainspace_orchestrator.py`, `shinto_miraheze/configure_wikidata_link_grok_categories.py` (new), `.github/workflows/configure-wikidata-link-grok-categories.yml` (new)
+
+Added a new PRE_HEAVY op to the mainspace orchestrator only (per Emma's
+explicit "main space orchestrator (and only the main space orchestrator)"
+directive) that cross-links shintowiki pages into
+[grokipedia.com](https://grokipedia.com). On each visit:
+
+1. HTTP-probe `https://grokipedia.com/page/<slug>`. Grokopedia is
+   case-sensitive (verified: `Tokyo` → 200, `tokyo` → 404;
+   `yamato_no_kuni_no_miyatsuko` → 200, `Yamato_no_Kuni_no_Miyatsuko` → 404)
+   with no predictable casing convention, so the op tries the shintowiki title
+   verbatim AND the all-lowercase form.
+2. If any probe returns 200 → set `|grok=<canonical-slug>` as a **named
+   parameter** on the page's `{{wikidata link|...}}` template.
+3. If every probe returns 404 → set `|grok=` (empty value, parameter
+   *present*). An empty-but-present grok param is the positive "we
+   checked, nothing on Grokopedia" marker — distinguishable from
+   "we haven't checked yet" (which is no grok param at all).
+4. Transient errors (5xx, timeout, mixed) → no-op; re-probe next cycle.
+
+The categorisation is **template-driven**, not stamped by the op:
+`Template:Wikidata link` carries a conditional `<includeonly>` block that
+reads the grok param state and emits one of three tracking categories
+on every transcluding page:
+
+* `grok=<slug>` → `[[Category:Pages with Grokipedia links]]`
+* `grok=` (empty, present) → `[[Category:Pages without Grokipedia links]]`
+* no grok param at all → `[[Category:Pages to be checked for Grokipedia]]`
+
+The third state is the one the op handles implicitly: every mainspace
+page with `{{wikidata link}}` but not yet visited by the op auto-falls
+into the "to be checked" category — no mass-tag pass needed. As the op
+sweeps mainspace, pages migrate into "with" or "without" as it learns
+their state. So Special:Categories on those three pages gives the live
+classification + remaining workqueue, for free, from MediaWiki
+parser-functions. The wiring is installed by the new one-shot script
+`configure_wikidata_link_grok_categories.py` (idempotent — markered with
+`<!-- BEGIN_GROK_AUTO_CATEGORIES -->` so it can be re-run safely),
+triggered via the new `configure-wikidata-link-grok-categories.yml`
+workflow (workflow_dispatch only — fires once, never recurring).
+
+Named-param shape (not a positional `lang|title` pair) is load-bearing:
+Grokopedia is not a language wiki, and named params survive
+`wikidata_lookup`'s Phase 2 sitelinks refresh untouched (verified — it
+preserves `named` via `dict(named)` and only mutates `check_date` /
+`consistent_qid`). A positional pair would be wiped every 6-month
+sitelinks refresh.
+
+Skip-gates run before the HTTP probe: page is a redirect; `grok` named
+param already present (any value, including empty); OR there's no
+`{{wikidata link}}` template at all (we'd have no place to cache the
+result, and re-probing every cycle would hammer grokipedia.com — Emma's
+explicit concern: "I think it'll be a bit of a problem if we like
+hammer at grokopedia too much"). Per-page cost is 1–2 HTTPS probes on
+the first visit and zero on every subsequent visit. Throttled at 0.3 s
+per probe.
+
+User-agent has a built-in owner-contact rotation: Mozilla-prefixed with
+`owner=Emma Leonhart <emmaleonhart999@gmail.com>` until 2026-06-02, then
+auto-switches to `contact@emmaleonhart.com` (the custom-domain address Emma
+expects to be live by then). The switchover is unconditional — no flag, no
+deploy step — so we don't have to remember to swap it back manually.
+
+Placed in `OPS` immediately AFTER `wikidata_lookup`. Ordering no longer matters
+for correctness (named params survive Phase 2), but we still place it after so
+`check_date` is always present before we touch the template.
+
+Touches mainspace only (ns=0). Templates, categories, talk pages, etc. are
+deliberately out of scope.
+
+---
+
 ## 2026-05-23
 
 ### Root cleanup & reorganization — decluttered the repo root

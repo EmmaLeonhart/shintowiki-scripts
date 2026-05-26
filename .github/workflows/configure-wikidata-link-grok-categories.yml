@@ -1,0 +1,65 @@
+name: Configure Wikidata Link Grok Categories
+
+# One-shot: edits Template:Wikidata link on shinto.miraheze.org to add a
+# conditional categorisation block that classifies every page transcluding
+# the template by its `grok` parameter state:
+#
+#   grok=<slug>  → [[Category:Pages with Grokipedia links]]
+#   grok=        → [[Category:Pages without Grokipedia links]]
+#   no grok      → [[Category:Pages to be checked for Grokipedia]]
+#
+# The grokipedia_link orchestrator op sets the grok= parameter on each
+# mainspace page after probing grokipedia.com; this workflow wires up the
+# template side so the categorisation comes from MediaWiki parser-functions
+# automatically.
+#
+# Idempotent. Trigger manually from the Actions tab (workflow_dispatch).
+# Not wired into cleanup-loop — once the template carries the snippet,
+# this never needs to fire again.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Compute run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|configure-wikidata-link-grok-categories]]" >> "$GITHUB_ENV"
+
+      - name: "Configure Template:Wikidata link (grok-based categorisation)"
+        run: |
+          python3 shinto_miraheze/configure_wikidata_link_grok_categories.py \
+            --apply \
+            --run-tag "${RUN_TAG}"
