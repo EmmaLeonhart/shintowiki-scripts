@@ -269,5 +269,6 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox artifact/doc|check_date=2026-05-26}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>

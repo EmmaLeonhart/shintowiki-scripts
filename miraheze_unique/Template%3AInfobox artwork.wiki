@@ -125,5 +125,6 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q6064255|anp|साँचा:Infobox artwork|ar|قالب:صندوق معلومات عمل فني|ary|موضيل:معلومات عامال فني|ast|Plantía:Ficha d'obra artística|as|সাঁচ:Infobox artwork|az|Şablon:Sənət əsəri|ba|Ҡалып:Произведение искусства|be|Шаблон:Твор мастацтва|bg|Шаблон:Произведение на изкуството|bh|टेम्पलेट:Infobox artwork|bjn|Citakan:Infobox artwork|bn|টেমপ্লেট:তথ্যছক শিল্পকর্ম|bs|Šablon:Infokutija slika|ca|Plantilla:Infotaula obra artística|ckb|داڕێژە:Infobox artwork|cs|Šablona:Infobox - dílo|cv|Шаблон:Ӳнер ĕçĕ|cy|Nodyn:Gwybodlen celfwaith|da|Skabelon:Infoboks maleri|de|Vorlage:Infobox Kunstwerk|check_date=2026-05-26}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

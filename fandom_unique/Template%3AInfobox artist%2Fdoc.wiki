@@ -522,4 +522,5 @@ The ''module'' parameter is used for embedding other templates into this infobox
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox artist/doc|check_date=2026-05-26}}
 </noinclude>
