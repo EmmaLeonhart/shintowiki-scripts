@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Sukiyamano_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25623742448|time triggered pipeline]] -->
-
 {{Expand Japanese|杉山神社}}
 
 {{Infobox religious building
@@ -25,10 +23,10 @@
 * {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
 * {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287}}
 * {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
-* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
+* {{ill|Engishiki seat|qid=Q135018062|lt=Engishiki seat}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
 ** Series ordinal: 1150
-* {{ill|Unranked|lt=Unranked|ja|无位|qid=Q11504610}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
-* {{ill|Junior Fifth Rank|lt=Junior Fifth Rank|ja|従五位|ko|종5위|zh|從五位|qid=Q11071125}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
+* {{ill|Unranked|ja|无位|qid=Q11504610|lt=Unranked}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
+* {{ill|Junior Fifth Rank|ja|従五位|ko|종5위|zh|從五位|qid=Q11071125|lt=Junior Fifth Rank}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181691</ref>
 
 == part of (P361) ==
 
@@ -39,7 +37,7 @@
 
 == located in the administrative territorial entity (P131) ==
 
-* {{ill|Musashi Province|lt=Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|en|Musashi Province|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh_min_nan|Musasi-kok|zh_yue|武藏國|zh|武藏國|qid=Q907398}}
+* {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398|lt=Musashi Province}}
 * {{ill|Tsuzuki district|lt=Tsuzuki district|ja|都筑郡|ko|쓰즈키군 (가나가와현)|pl|Powiat Tsuzuki|zh|都筑郡|qid=Q11643787}}
 
 == Kokugakuin University Digital Museum entry ID (P13677) ==
@@ -71,8 +69,7 @@
 
 == topic's main category (P910) ==
 
-* [[Category:Sugiyama-jinja (Musashi Province)]]
-
+* 
 ==References==
 
 [[Category:Disputed Shikinaisha or Shikigesha]]
@@ -83,7 +80,7 @@
 
 [[JA:杉山神社]]
 
-{{wikidata link|Q135039726|ja|杉山神社|check_date=2026-05-10}}
+{{wikidata link|Q135039726|ja|杉山神社|check_date=2026-05-26}}
 [[Category:Junior Fifth Rank]]
 [[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
@@ -204,7 +201,6 @@ Additionally, {{jalink|Ejima Sugiyama Shrine|Q97280595}} in {{jalink|Chitose, Su
 [[Category:Shinto shrines in Kanagawa Prefecture]]
 [[Category:Shinto shrines in Tokyo]]
 [[Category:Shikinaisha in Musashi Province]]
-[[Category:Shinto shrines with the same name]]
 [[Category:Shrine disambiguations]]
 [[Category:Independently git synced pages]]
 [[Category:Sagami Province]]

@@ -1,26 +1,18 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:須須岐水神社]]
-<!--interwikis from wikidata-->[[ja:須須岐水神社]]
-<!--interwikis from wikidata-->[[ja:須須岐水神社]]
 
-'''Susukigawa Shrine''' (須須岐水神社) is the name of a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}.
+'''Susukigawa Shrine''' (須須岐水神社) is the name of a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}.
 
-* {{ill|Susukigawa Shrine (Matsumoto)|ja|須々岐水神社 (松本市)|12=simple|13=User:Immanuelle/Susukigawa Shrine (Matsumoto)|1=Susukigisui Shrine (Matsumoto City)|comment=changed title based on wikidata|qid=Q11664481}} (すすきがわじんじゃ) - A {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Matsumoto, Nagano|en|Matsumoto, Nagano|qid=Q213324|lt=Matsumoto, Nagano|1=Matsumoto, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}. The registered name of the religious corporation is '''須須岐水神社'''.
-* {{ill|Susukigawa Shrine (Chikuma)|ja|須須岐水神社 (千曲市)|12=simple|13=User:Immanuelle/Susukigawa Shrine (Chikuma)|1=Susu Kizumi Shrine (Chikuma City)|comment=changed title based on wikidata|qid=Q85884529}} (すすきみずじんじゃ) - A {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Chikuma, Nagano|en|Chikuma, Nagano|qid=Q179757|lt=Chikuma, Nagano|1=Chikuma, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}.
+* {{ill|Susukigisui Shrine (Matsumoto City)|ja|須々岐水神社 (松本市)|12=simple|13=User:Immanuelle/Susukigawa Shrine (Matsumoto)|comment=changed title based on wikidata|qid=Q11664481}} (すすきがわじんじゃ) - A {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Matsumoto, Nagano|en|Matsumoto, Nagano|qid=Q213324|lt=Matsumoto, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}. The registered name of the religious corporation is '''須須岐水神社'''.
+* {{ill|Susu Kizumi Shrine (Chikuma City)|ja|須須岐水神社 (千曲市)|12=simple|13=User:Immanuelle/Susukigawa Shrine (Chikuma)|comment=changed title based on wikidata|qid=Q85884529}} (すすきみずじんじゃ) - A {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Chikuma, Nagano|ar|تشيكوما (ناغانو)|azb|چیکوما، ناقانو|ce|Тикума|ceb|Chikuma Shi|de|Chikuma (Nagano)|es|Chikuma (Nagano)|fa|چیکوما، ناگانو|fi|Chikuma (Nagano)|fr|Chikuma (Nagano)|gl|Chikuma|hy|Տիկումա|id|Chikuma, Nagano|it|Chikuma|ja|千曲市|ko|지쿠마시|mn|Чикүма|mzn|چیکوما، ناگانو|nl|Chikuma|pl|Chikuma (miasto)|pt|Chikuma|ro|Chikuma|ru|Тикума|sv|Chikuma|tg|Чикума|th|ชิกูมะ|tl|Chikuma, Nagano|tr|Chikuma, Nagano|tt|Тикума|uk|Тікума (Наґано)|ur|چیکوما، ناگانو|uz|Chikuma (Nagano)|vi|Chikuma, Nagano|war|Chikuma, Nagano|zh|千曲市|zh_classical|千曲市|zh_min_nan|Tikuma-chhī|zh_yue|千曲|qid=Q179757|lt=Chikuma, Nagano}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Susukimizu Shrine (Chikuma City) (Q85884529)|lt=Susukimizu Shrine (Chikuma City)|qid=Q85884529}} — Chikuma
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|須須岐水神社|version=75185916|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation--><!--Susukigawa Shrine--><!--Susukigawa Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q23996943|ja|須須岐水神社}}
+{{wikidata link|Q23996943|ja|須須岐水神社|check_date=2026-05-26}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

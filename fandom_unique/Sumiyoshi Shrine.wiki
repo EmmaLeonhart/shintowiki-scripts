@@ -1,7 +1,3 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[de:Sumiyoshi-Schrein]][[en:Sumiyoshi Shrine]][[fr:Sanctuaire Sumiyoshi]][[ja:住吉神社]]
-<!--interwikis from wikidata-->[[de:Sumiyoshi-Schrein]][[en:Sumiyoshi Shrine]][[fr:Sanctuaire Sumiyoshi]][[ja:住吉神社]]
-<!--interwikis from wikidata-->[[de:Sumiyoshi-Schrein]][[en:Sumiyoshi Shrine]][[fr:Sanctuaire Sumiyoshi]][[ja:住吉神社]]
 
 '''Sumiyoshi Shrine''' may refer to:
 
@@ -10,7 +6,7 @@
 *[[Sumiyoshi Shrine (Hokkaidō)]] 
 *[[Sumiyoshi Shrine (Shimonoseki)]]
 *[[Sumiyoshi Shrine (Iki City)]] 
-*{{ill|Sumiyoshi Shrine (Chuo-ku, Tokyo)|ja|住吉神社 (東京都中央区)|12=simple|13=User:Immanuelle/Sumiyoshi Shrine (Chuo-ku, Tokyo)|qq=}}
+*{{ill|Sumiyoshi Shrine (Chuo-ku, Tokyo)|ja|住吉神社 (東京都中央区)}}
 == See Also ==
 * [[Kashii-gū]] - [[三韓征伐]]の前に[[神功皇后]]が在った宮で、[[住吉三神]]を祀る神社
 * [[応神天皇]]
@@ -20,12 +16,11 @@
 '''''
 {{神道 横}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Sumiyoshi Shrine (Q106852585)|lt=Sumiyoshi Shrine|qid=Q106852585}} — Narachō
 * {{ill|Sumiyoshi Shrine (Q111280245)|lt=Sumiyoshi Shrine|qid=Q111280245}} — Sumiechō
-* {{ill|Sumiyoshi Shrine (Q11381858)|lt=Sumiyoshi Shrine|qid=Q11381858}} — Toyoura district
+* {{ill|Sumiyoshi Shrine (Q11381858)|ja|住吉神社 (下関市)|simple|Sumiyoshi Shrine (Shimonoseki)|zh|住吉神社 (下關市)|qid=Q11381858|lt=Sumiyoshi Shrine}} — Toyoura district
 * {{ill|Sumiyoshi Shrine (Q11381859)|lt=Sumiyoshi Shrine|qid=Q11381859}} — Shimogyō-ku
 * {{ill|Sumiyoshi Shrine (Q11381860)|lt=Sumiyoshi Shrine|qid=Q11381860}} — Katō-shi
 * {{ill|Sumiyoshi Shrine (Q11381861)|lt=Sumiyoshi Shrine|qid=Q11381861}} — Harima Province
@@ -59,7 +54,7 @@
 * {{ill|Sumiyoshi Shrine (Q134989217)|lt=Sumiyoshi Shrine|qid=Q134989217}} — Sanuki
 * {{ill|Sumiyoshi Shrine (Q134989482)|lt=Sumiyoshi Shrine|qid=Q134989482}} — Tonoshō-chō
 * {{ill|Sumiyoshi Shrine (Q135000819)|lt=Sumiyoshi Shrine|qid=Q135000819}} — Kasukabe
-* {{ill|Sumiyoshi Shrine (Q135041176)|lt=Sumiyoshi Shrine|qid=Q135041176}} — Harima Province
+* {{ill|Sumiyoshi Shrine (Q135041176)|qid=Q135041176|lt=Sumiyoshi Shrine}} — Harima Province
 * {{ill|Sumiyoshi Shrine (Q135070026)|lt=Sumiyoshi Shrine|qid=Q135070026}} — Tango Province
 * {{ill|Sumiyoshi Shrine (Q135070186)|lt=Sumiyoshi Shrine|qid=Q135070186}} — Harima Province
 * {{ill|Sumiyoshi Shrine (Q135070189)|lt=Sumiyoshi Shrine|qid=Q135070189}} — Harima Province
@@ -111,13 +106,10 @@
 * {{ill|Sumiyoshi Shrine (Q65248694)|lt=Sumiyoshi Shrine|qid=Q65248694}} — Aizumi
 * {{ill|Sumiyoshi Shrine (Q85876386)|lt=Sumiyoshi Shrine|qid=Q85876386}} — Azumino
 * {{ill|Sumiyoshi Shrine, Kawachinagano (Q11381870)|lt=Sumiyoshi Shrine, Kawachinagano|qid=Q11381870}} — Kawachinagano
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|住吉神社|version=104561538|comment=Imported full ja history}}
 
-<!--note do not remove this Category during translation--><!--note do not remove this category during translation--><!--Sumiyoshi Shrine--><!--Sumiyoshi Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q32512|ja|住吉神社|de|Sumiyoshi-Schrein|en|Sumiyoshi Shrine|fr|Sanctuaire Sumiyoshi}}
+{{wikidata link|Q32512|ja|住吉神社|de|Sumiyoshi-Schrein|en|Sumiyoshi Shrine|fr|Sanctuaire Sumiyoshi|check_date=2026-05-26}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

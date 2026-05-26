@@ -1,19 +1,18 @@
-
 {{Source citation|date=September 10, 2014 (Wed) 05:22 (UTC)}}
 
 {{infobox shinto shrine
 |Name = Suzu no Gozen (鈴之御前社)
 |image = [[File:Rei-no-mimae-sha Shinto-]]
-|Location = Aichi PrefectureNagoyaAtsuta Ward Denma 2-chome
+|Location = {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}{{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}{{ill|Atsuta-ku, Nagoya|en|Atsuta-ku, Nagoya|qid=Q1355625|lt=Atsuta Ward}} {{ill|Temma|ja|伝馬 (名古屋市)|lt=Denma|lt_ja=伝馬|12=simple|13=User:Immanuelle/Denma (Nagoya)|comment=changed title based on wikidata|qid=Q30934400}} 2-chome
 |Latitude degrees = 35
 |Latitude minutes = 07
 |Latitude seconds = 09.74
 |Longitude degrees = 136
 |Longitude minutes = 54
 |Longitude seconds = 39.72
-|Enshrined deity = Ame-no-Uzume 
+|Enshrined deity = {{ill|Ame-no-Uzume|ja|天鈿女命}} 
 |Sacred object = 
-|Shrine Rank = Atsuta Shrine Keigai-Massha
+|Shrine Rank = {{ill|Atsuta Shrine Keigai-Massha|ja|熱田神宮Keigai-Massha}}
 |Founded = 
 |Main hall = 
 |Alternate name = 
@@ -23,16 +22,16 @@
 |image = Rei-no-mimae-sha Shinto-Shrine 20150517.JPG
 }}
 
-'''Suzu no Gozen''' (鈴之御前社) is a Shinto shrine located in Aichi Prefecture, Nagoya, Atsuta Ward.
+'''Suzu no Gozen''' (鈴之御前社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}, {{ill|Atsuta-ku, Nagoya|en|Atsuta-ku, Nagoya|qid=Q1355625|lt=Atsuta Ward}}.
 
-It is a subsidiary shrine (Massha) of Atsuta Shrine, with its enshrined deity being Ame-no-Uzume. Locally, it is colloquially known as "Suzu no Miya" (鈴の宮). In the past, a river known as Shōjin River flowed near the shrine, and travelers along the Tōkaidō were required to receive a bell purification ritual at this shrine to cleanse themselves before visiting Atsuta.
+It is a subsidiary shrine ({{ill|Setsumatsusha|ja|末社|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Massha}}) of {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}, with its enshrined deity being {{ill|Ame-no-Uzume|ja|天鈿女命}}. Locally, it is colloquially known as "Suzu no Miya" (鈴の宮). In the past, a river known as {{ill|Shinhori river|ja|新堀川 (名古屋市)|lt=Shōjin River|lt_ja=精進川|12=simple|13=User:Immanuelle/Shinbori River (Nagoya)|comment=changed title based on wikidata|qid=Q3482210}} flowed near the shrine, and travelers along the {{ill|Tōkaidō (region)|en|Tōkaidō (region)|qid=Q1196306|lt=Tōkaidō}} were required to receive a bell purification ritual at this shrine to cleanse themselves before visiting Atsuta.
 
-After the war, it was relocated (Sengū) to its current site facing the former Tōkaidō.
+After the war, it was relocated ({{ill|Sengū|ja|遷座|12=simple|13=User:Immanuelle/Relocation|ja_comment=jawiki redirects to 遷宮|comment=changed title based on wikidata|qid=Q2271023}}) to its current site facing the former Tōkaidō.
 
-From the subway station Atsuta Shrine Denmachō Station, if you proceed about 50 m to the southwest, you will reach the former Tōkaidō road. Continuing approximately 100 m toward the southeast, the shrine grounds will appear on your right. The grounds are only a few meters wide and are hard to spot from the national road.
+From the subway station {{ill|Atsuta Jingu Temma-cho Station|en|Atsuta Jingu Temma-cho Station|qid=Q970033|lt=Atsuta Shrine Denmachō Station}}, if you proceed about 50 m to the southwest, you will reach the former {{ill|Tōkaidō (region)|en|Tōkaidō (region)|qid=Q1196306|lt=Tōkaidō}} road. Continuing approximately 100 m toward the southeast, the shrine grounds will appear on your right. The grounds are only a few meters wide and are hard to spot from the national road.
 
 == Annual Festival ==
-Every year on July 31, the shrine is known for its Summer Purification (commonly known as the "Passing Through the Straw Ring" ritual).
+Every year on {{ill|July 31|en|July 31|qid=Q2715|lt=July 31}}, the shrine is known for its {{ill|Ōharae-shiki|en|Ōharae-shiki|qid=Q11261910|lt=Summer Purification}} (commonly known as the "Passing Through the Straw Ring" ritual).
 
 == External Links ==
 * [http://www.atsutajingu.or.jp/jingu/about/yukari/reinomimaesha.html Suzu no Gozen] (Atsuta Shrine official website)
@@ -41,15 +40,15 @@ Every year on July 31, the shrine is known for its Summer Purification (commonly
 
 {{Shinto stub}}
 
-Suzu no Gozen Shrine
-Suzu no Gozen Shrine
+{{ill|Suzu no Gozen Shrine|ja|鈴之御前社|12=simple|13=User:Immanuelle/Suzu no Gozen|comment=changed title based on wikidata|qid=Q11648360}}
+{{ill|Suzu no Gozen Shrine|ja|鈴之御前社神社}}
 
 {{Atsuta Faith}}
 
 {{translated page|ja|鈴之御前社|version=93232267|comment=Imported full ja history}}
 
 {{Commons category|Rei-no-mimae-sha(Atsuta-ku, Nagoya)}}
-{{wikidata link|Q11648360|ja|鈴之御前社|co|commons:Category:Rei-no-mimae-sha(Atsuta-ku, Nagoya)|check_date=2026-05-10}}
+{{wikidata link|Q11648360|ja|鈴之御前社|co|commons:Category:Rei-no-mimae-sha(Atsuta-ku, Nagoya)|check_date=2026-05-26}}
 [[Category:Atsuta Shrine]]
 [[Category:Buildings and structures in Atsuta-ku, Nagoya]]
 [[Category:History of Atsuta-ku, Nagoya]]
