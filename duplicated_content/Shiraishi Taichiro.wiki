@@ -1,5 +1,4 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shiraishi_Taichiro for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25602223329|time triggered pipeline]] -->
-{{Infobox person|birth_date=1938-11|birth_place={{ill|Osaka|qid=Q35765}}|gender={{ill|Male (gender)|qid=Q6581097}}|nationality={{ill|Japan|qid=Q17}}|occupation={{ill|Archaeologist|qid=Q3621491}}|given_name={{ill|Taichirō|qid=Q7675904}}}}
+{{Infobox person|birth_date=1938-11|birth_place={{ill|Osaka|qid=Q35765}}|gender={{ill|Male (gender)|ar|ذكر|diq|Lac|eo|Malino|es|Masculino|fr|Sexe masculin|ha|Namiji|id|Lelaki|kaj|A̱jjwa|new|बायचिं|pt|Masculino|scn|Masculiddu|sk|Mužské pohlavie|tok|mije kon|qid=Q6581097}}|nationality={{ill|Japan|qid=Q17}}|occupation={{ill|Archaeologist|qid=Q3621491}}|given_name={{ill|Taichirō|qid=Q7675904}}}}
 {{Infobox scholar
 | name       = Taichiro Shiraishi
 | image      = 
@@ -12,7 +11,7 @@
 | othername   = 
 | main_interests = {{ill|Archaeology|en|Archaeology|qid=Q23498|lt=Archaeology}}
 | alma_mater = {{ill|Doshisha University|en|Doshisha University|qid=Q921088|lt=Doshisha University}}
-| workplaces = [[Ancient Studies Association]], [[Kashihara Archaeological Institute]], {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} ({{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}), {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}
+| workplaces = [[Ancient Studies Association]], [[Kashihara Archaeological Institute]], {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} ({{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}), {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}
 | degree = 
 | URL = 
 | yearsactive = 
@@ -20,12 +19,12 @@
 | children =
 }}
 
-'''Taichiro Shiraishi''' (白石 太一郎, ''Shiraishi Taichiro'', born November 14, 1938<ref>''Yomiuri Yearbook 2016'' (Yomiuri Shimbun Tokyo, 2016) p. 321</ref>) is a Japanese archaeologist and honorary professor at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} and {{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}. He is also an honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.
+'''Taichiro Shiraishi''' (白石 太一郎, ''Shiraishi Taichiro'', born November 14, 1938<ref>''Yomiuri Yearbook 2016'' (Yomiuri Shimbun Tokyo, 2016) p. 321</ref>) is a Japanese archaeologist and honorary professor at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} and {{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}. He is also an honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.
 
 == Career ==
 Shiraishi was born in Osaka City, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}} in 1938. After graduating from [[Osaka Seiko Gakuin Junior and Senior High School|Osaka Seiko Academy High School]], he completed a degree in cultural history at the [[Doshisha University Faculty of Letters]] in 1961. He continued his studies in the graduate program at the same university, completing a master’s degree in 1964 before leaving the doctoral program without completing his degree in 1968.
 
-He became a researcher at the [[Ancient Studies Association]] in April 1986 and began working at the [[Kashihara Archaeological Institute]] in August 1969. In 1978, he was a11ointed an investigator at the establishment preparation office of the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} under the [[Agency for Cultural Affairs]] to help establish the museum. When the museum opened in 1981, he became an associate professor. In 1984, he was promoted to professor (also serving as a professor at the {{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}) and later became the deputy director of the museum. He retired in 2004 and was named professor emeritus. Afterward, he served as a professor at the Faculty of Letters at {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}} until his retirement in 2009, later becoming the honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.<ref>[https://www.sankei.com/article/20170726-7DXMKHCUYRJV3OCZFT7LW2GOHA/ Shiraishi Taichiro, Director of the Osaka Prefectural Chikatsu Asuka Museum: "Mozu-Furuichi Kofun Cluster, World Heritage Value is Significant" (Sankei Shimbun)]</ref>
+He became a researcher at the [[Ancient Studies Association]] in April 1986 and began working at the [[Kashihara Archaeological Institute]] in August 1969. In 1978, he was a11ointed an investigator at the establishment preparation office of the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} under the [[Agency for Cultural Affairs]] to help establish the museum. When the museum opened in 1981, he became an associate professor. In 1984, he was promoted to professor (also serving as a professor at the {{ill|The Graduate University for Advanced Studies|en|The Graduate University for Advanced Studies|qid=Q2983844|lt=The Graduate University for Advanced Studies}}) and later became the deputy director of the museum. He retired in 2004 and was named professor emeritus. Afterward, he served as a professor at the Faculty of Letters at {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}} until his retirement in 2009, later becoming the honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.<ref>[https://www.sankei.com/article/20170726-7DXMKHCUYRJV3OCZFT7LW2GOHA/ Shiraishi Taichiro, Director of the Osaka Prefectural Chikatsu Asuka Museum: "Mozu-Furuichi Kofun Cluster, World Heritage Value is Significant" (Sankei Shimbun)]</ref>
 
 Shiraishi has also served as a visiting professor at the {{ill|Open University of Japan|en|Open University of Japan|qid=Q15501569|lt=Open University of Japan}} and other institutions and has held roles on cultural property preservation committees, such as the [[Agency for Cultural Affairs]]’ committee for the permanent preservation of the murals of the {{ill|Takamatsuzuka Tomb|en|Takamatsuzuka Tomb|qid=Q1039675|lt=Takamatsuzuka Tomb}}.
 
@@ -63,7 +62,6 @@ Shiraishi specializes in Japanese archaeology, focusing on the formation process
 
 {{translated page|ja|白石太一郎|version=103419018|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
 ==Merged second translation==
 {{Infobox scholar
 | name       = Shirai Taichiro
@@ -77,7 +75,7 @@ Shiraishi specializes in Japanese archaeology, focusing on the formation process
 | othername   = 
 | main_interests   = {{ill|Archaeology|en|Archaeology|qid=Q23498|lt=Archaeology}}
 | alma_mater       = {{ill|Doshisha University|en|Doshisha University|qid=Q921088|lt=Doshisha University}}
-| workplaces       = {{ill|Heian Museum of Ancient History|ja|古代学協会|12=simple|13=User:Immanuelle/Association of Ancient Studies|ja_comment=jawiki redirects to 平安博物館|comment=changed title based on wikidata|qid=Q11482389}}, {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}}, {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} ([[SOKENDAI]]), {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}
+| workplaces       = {{ill|Heian Museum of Ancient History|ja|古代学協会|12=simple|13=User:Immanuelle/Association of Ancient Studies|ja_comment=jawiki redirects to 平安博物館|comment=changed title based on wikidata|qid=Q11482389}}, {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}}, {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} ([[SOKENDAI]]), {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}
 | degree           = 
 | URL             = 
 | yearsactive = 
@@ -85,14 +83,14 @@ Shiraishi specializes in Japanese archaeology, focusing on the formation process
 | children =
 }}
 
-'''Shirai Taichiro''' (白石 太一郎, born {{birth date|1938|11|14}}<ref>『読売年鑑 2016年版』（読売新聞東京本社、2016年）p.321</ref>) is a Japanese archaeologist. He is an emeritus professor at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} and [[SOKENDAI]] and an honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.
+'''Shirai Taichiro''' (白石 太一郎, born {{birth date|1938|11|14}}<ref>『読売年鑑 2016年版』（読売新聞東京本社、2016年）p.321</ref>) is a Japanese archaeologist. He is an emeritus professor at the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} and [[SOKENDAI]] and an honorary director of the {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.
 
 == Biography ==
 Born in Osaka City, Osaka Prefecture, in 1938, Shirai graduated from [[Osaka Seiko Gakuin High School]] and proceeded to study at {{ill|Doshisha University|en|Doshisha University|qid=Q921088|lt=Doshisha University}}, majoring in cultural history in the Faculty of Literature. He completed his master’s degree in 1964 and withdrew after fulfilling course requirements in the doctoral program in 1968.
 
 In April 1968, Shirai joined the {{ill|Heian Museum of Ancient History|ja|古代学協会|12=simple|13=User:Immanuelle/Association of Ancient Studies|ja_comment=jawiki redirects to 平安博物館|comment=changed title based on wikidata|qid=Q11482389}} as a researcher and subsequently began work at the {{ill|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|en|The Museum, Archaeological Institute of Kashihara, Nara Prefecture|qid=Q112961122|lt=Kashihara Archaeological Institute}} in August 1969. He participated in preparations for the establishment of the {{ill|National Museum of Japanese History|en|National Museum of Japanese History|qid=Q3330690|lt=National Museum of Japanese History}} (Rekihaku) from 1978. Upon the museum's opening in 1981, he became an associate professor and was later promoted to professor in 1984. He also served as deputy director. In 2004, he retired from Rekihaku and SOKENDAI, becoming an emeritus professor.
 
-From April 2004, Shirai served as a professor in the Faculty of Literature at {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, retiring in 2009. He then took on the role of director at the {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.<ref>[https://www.sankei.com/article/20170726-7DXMKHCUYRJV3OCZFT7LW2GOHA/ 白石太一郎・大阪府立近つ飛鳥博物館長「[[Mozu-Furuichi Kofun Group]]: Fully deserving of World Heritage status" (Sankei Shimbun)]</ref>
+From April 2004, Shirai served as a professor in the Faculty of Literature at {{ill|Nara University|en|Nara University|qid=Q8190036|lt=Nara University}}, retiring in 2009. He then took on the role of director at the {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}}.<ref>[https://www.sankei.com/article/20170726-7DXMKHCUYRJV3OCZFT7LW2GOHA/ 白石太一郎・大阪府立近つ飛鳥博物館長「[[Mozu-Furuichi Kofun Group]]: Fully deserving of World Heritage status" (Sankei Shimbun)]</ref>
 
 Shirai has also held visiting professorships at many universities, including [[:en:The Open University of Japan|The Open University of Japan]], and served on committees for preserving historical sites and cultural properties, such as the committee for the preservation of the {{ill|Takamatsuzuka Tomb|en|Takamatsuzuka Tomb|qid=Q1039675|lt=Takamatsuzuka Tomb}} murals.
 
@@ -106,7 +104,7 @@ Shirai specializes in Japanese archaeology, focusing on elucidating the formatio
 ; Views
 * Shirai su11orts the [[Yamatai-Koku Kinai Hypothesis]].
 * His studies on the movement of pottery during the Yamatai period suggest that the {{ill|Jimmu's Eastern Expedition|en|Jimmu's Eastern Expedition|qid=Q11590444|lt=Jimmu's Eastern Expedition}} legend might not be based on historical events.<ref>日本時代史(1)『倭国誕生』白石太一郎編 2002nd year  ISBN 4-642-00801-2</ref>
-* Shirai has posited that the {{ill|Hashihaka Kofun|en|Hashihaka Kofun|qid=Q11603420|lt=Hashihaka Kofun}} could be the burial site of {{ill|Himiko|en|Himiko|qid=Q234451|lt=Himiko}}, and that the {{ill|Nishitonozuka Kofun|ja|西殿塚古墳|12=simple|13=User:Immanuelle/Nishitonozuka Kofun|13=User:Immanuelle/Nishitonozuka Kofun}} may belong to {{ill|Toyo (queen)|en|Toyo (queen)|qid=Q5358937|lt=Toyo}}.<ref>『考古学と古代史の間』 2004th year  筑摩書房 ISBN 4-480-04254-7</ref>
+* Shirai has posited that the {{ill|Hashihaka Kofun|en|Hashihaka Kofun|qid=Q11603420|lt=Hashihaka Kofun}} could be the burial site of {{ill|Himiko|en|Himiko|qid=Q234451|lt=Himiko}}, and that the {{ill|Nishitonozuka Kofun|ja|西殿塚古墳}} may belong to {{ill|Toyo (queen)|en|Toyo (queen)|qid=Q5358937|lt=Toyo}}.<ref>『考古学と古代史の間』 2004th year  筑摩書房 ISBN 4-480-04254-7</ref>
 
 == Publications ==
 ; Books
@@ -129,11 +127,11 @@ Shirai specializes in Japanese archaeology, focusing on elucidating the formatio
 {{colend|2}}
 
 == External Links ==
-* {{ill|Osaka Prefectural Chikatsu Asuka Museum|en|Osaka Prefectural Chikatsu Asuka Museum|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}} Official Site
+* {{ill|Osaka Prefectural Chikatsu Asuka Museum|ff|Osaka Prefectural Chikatsu Asuka Museum|fr|Musée préfectoral Chikatsu Asuka d'Osaka|ja|大阪府立近つ飛鳥博物館|pt|Museu Histórico Chikatsu-Asuka|uk|Осацький префектурний музей Тікацу-Асука|zh|大阪府立近飛鳥博物館|qid=Q4557237|lt=Osaka Prefectural Chikatsu Asuka Museum}} Official Site
 
 {{translated page|ja|白石太一郎|version=103419018|comment=Imported full ja history}}
 
-{{wikidata link|Q11580156|ja|白石太一郎|check_date=2026-05-09}}
+{{wikidata link|Q11580156|ja|白石太一郎|check_date=2026-05-25}}
 [[Category:1938 births]]
 [[Category:Alumni of Osaka Seiko Gakuin High School]]
 [[Category:Doshisha University alumni]]
@@ -150,3 +148,4 @@ Shirai specializes in Japanese archaeology, focusing on elucidating the formatio
 [[Category:Wikidata has short description]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Pages with duplicated content]]

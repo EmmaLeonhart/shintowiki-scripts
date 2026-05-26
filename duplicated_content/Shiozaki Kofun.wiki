@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shiozaki_Kofun for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25602223329|time triggered pipeline]] -->
-
 {{Infobox ancient site
 | name        = Shiozakiyama Kofun
 | native_name = 潮崎山古墳
@@ -9,9 +7,9 @@
 | region      = Japan
 | type        = Presumed {{ill|Zenpō-kōen-fun|en|Zenpō-kōen-fun|qid=Q11268718|lt=Zenpō-kōen-fun}} (keyhole-shaped tumulus)
 | length      = Approx. 30m (estimated)
-| burial      = Presumed {{ill|Sekkaku (burial chamber)|ja|石槨|12=simple|13=User:Immanuelle/Sekkaku (burial chamber)|ja_comment=jawiki link invalid}} (stone chamber)
+| burial      = Presumed {{ill|Sekkaku (burial chamber)|ja|石槨}} (stone chamber)
 | built       = 4th century
-| burial goods   = Presumed burial goods: {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡|12=simple|13=User:Immanuelle/Sankakuen shinjukyo|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror}} (triangular-rimmed deity-and-beast mirror), iron axe
+| burial goods   = Presumed burial goods: {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡}} (triangular-rimmed deity-and-beast mirror), iron axe
 | Historic Site1  = None (historical site),  
                 '''Hiroshima Prefectural Important designation1''' (excavated mirror & iron axe)
 }}
@@ -36,7 +34,7 @@ The excavated mirror and iron axe were Historic Site1 as '''Hiroshima Prefectura
   ** '''Sankakuen Goshin Shijukyo mirror'''  
     ''' '''Diameter''': 22.0 cm  
     ''' '''Thickness''': 0.2 - 0.3 cm<ref name="hiroshima"/>  
-    ''' '''Identical in design to a mirror excavated from''' {{ill|Kokubunji Kofun (Kurayoshi)|ja|国分寺古墳 (倉吉市)|12=simple|13=User:Immanuelle/Kokubunji Kofun (Kurayoshi)}} in '''Kurayoshi, Tottori Prefecture'''.<ref name="sign"/>
+    ''' '''Identical in design to a mirror excavated from''' {{ill|Kokubunji Kofun (Kurayoshi)|ja|国分寺古墳 (倉吉市)}} in '''Kurayoshi, Tottori Prefecture'''.<ref name="sign"/>
   ** '''Iron Axe''' (短冊型鉄斧)  
     ''' '''Length''': 24.8 cm  
     ''' '''Width at head''': 5.5 cm  
@@ -57,7 +55,7 @@ The '''replica''' of the '''mirror''' and '''other related burial goods''' from 
 == Bibliography ==
 * '''Site intypeation sign''' (Installed by the Fukuyama City Board of Education).<br />
 
-* {{Cite book|和書|editor=|author=Koto Takashi (小都隆)|year=1989|chapter=Shiozakiyama Kofun|title={{ill|Comprehensive Dictionary of Japanese Kofun|ja|日本古墳大辞典|12=simple|13=User:Immanuelle/Nihon Kofun Daijiten|13=User:Immanuelle/Comprehensive Dictionary of Japanese Kofun}}|publisher={{ill|Tōkyōdō Shuppan|ja|東京堂出版|12=simple|13=User:Immanuelle/Tokyodo Publishing|comment=changed title based on wikidata|qid=Q11524645}}|isbn=4490102607|ref={{Harvid|Shiozakiyama Kofun (古墳)|1989}}}}<br />
+* {{Cite book|和書|editor=|author=Koto Takashi (小都隆)|year=1989|chapter=Shiozakiyama Kofun|title={{ill|Comprehensive Dictionary of Japanese Kofun|ja|日本古墳大辞典}}|publisher={{ill|Tōkyōdō Shuppan|ja|東京堂出版|12=simple|13=User:Immanuelle/Tokyodo Publishing|comment=changed title based on wikidata|qid=Q11524645}}|isbn=4490102607|ref={{Harvid|Shiozakiyama Kofun (古墳)|1989}}}}<br />
 
 * {{Cite book|和書|editor=|author=|year=2002|chapter=Shiozakiyama Kofun|title=Shin'ichi Town History, Volume I (新市町史 資料編I)|publisher=Shin'ichi Town, Ashida District, Hiroshima (広島県芦品郡新市町)|ref={{Harvid|Shin'ichi Town History, Volume I|2002}}}}
 == External Links ==
@@ -71,7 +69,6 @@ The '''replica''' of the '''mirror''' and '''other related burial goods''' from 
 
 {{translated page|ja|潮崎山古墳|version=93859863|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
 ==Merged second translation==
 
 {{Infobox ancient site|type = [[Zenpō-kōen-fun]]
@@ -85,7 +82,7 @@ The '''replica''' of the '''mirror''' and '''other related burial goods''' from 
 | type = (Assumed) {{ill|Zenpō-kōen-fun|en|Zenpō-kōen-fun|qid=Q11268718|lt=Zenpō-kōen-fun}}
 | area = 
 | burial = (Trad.) stone chamber
-| burial goods = (Trad.) {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡|12=simple|13=User:Immanuelle/Sankakuen shinjūkyō|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror}}, iron axe
+| burial goods = (Trad.) {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡}}, iron axe
 | Kofun =
 | built = 4th century
 | Individual =
@@ -102,10 +99,10 @@ The '''replica''' of the '''mirror''' and '''other related burial goods''' from 
 '''Shiozakiyama Kofun''' (潮崎山古墳) is a {{ill|Kofun|en|Kofun|qid=Q1141225|lt=Kofun}} located in {{ill|Shin'ichi|ja|新市町|12=simple|13=User:Immanuelle/Shinichi, Hiroshima|comment=changed title based on wikidata|qid=Q11502125}}, {{ill|Fukuyama, Hiroshima|en|Fukuyama, Hiroshima|qid=Q661038|lt=Fukuyama, Hiroshima}}, Hiroshima Prefecture, Japan. The tumulus is assumed to be keyhole-shaped and dates to the {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} (4th century). It is not Historic Site1 as a historic site but is notable for its burial goods, a mirror, and an iron axe, both Historic Site1 as Hiroshima Prefecture {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}.
 
 == Overview ==
-[[File:潮崎山古墳出土 三角縁神獣鏡 (複製).JPG|thumb|200px|right|{{center|Replica of a {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡|12=simple|13=User:Immanuelle/Sankakuen shinjūkyō|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror}}}}{{small|Displayed at the {{ill|Hiroshima Prefectural Miyoshi Fudoki Hill|lt=Hiroshima Prefectural Miyoshi Fudoki Hill|lt=Miyoshi Fudoki Hill Museum|ja|広島県立みよし風土記の丘|12=simple|13=User:Immanuelle/Miyoshi Fudoki Hill Museum}}.}}]]
+[[File:潮崎山古墳出土 三角縁神獣鏡 (複製).JPG|thumb|200px|right|{{center|Replica of a {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡}}}}{{small|Displayed at the {{ill|Hiroshima Prefectural Miyoshi Fudoki Hill|ja|広島県立みよし風土記の丘|lt=Miyoshi Fudoki Hill Museum}}.}}]]
 The kofun is located on a hill overlooking the confluence of the {{ill|Ashida River|en|Ashida River|qid=Q2577132|lt=Ashida River}} and the Kamiya River in the eastern part of Hiroshima Prefecture. It was excavated in the late Edo period in 1827 ({{ill|Bunsei|en|Bunsei|qid=Q1327119|lt=Bunsei}} 10) as recorded in the historical text {{ill|Q109361032|ja|西備名区|12=simple|13=User:Immanuelle/Saibimeiku|comment=changed title based on wikidata|qid=Q109361032}}{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}<ref name="description_board"/>. However, no modern archaeological investigations have been conducted.
 
-The tumulus has been extensively leveled, and its original type is unclear. It is estimated to have been keyhole-shaped, with a total length of approximately 30 meters and a circular rear section diameter of about 17 meters{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}. According to the historical text, the burial facility was a stone chamber{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}. burial goods traditionally associated with the site include a {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡|12=simple|13=User:Immanuelle/Sankakuen shinjūkyō|13=User:Immanuelle/Triangular-Rimmed Divine Beast Mirror}} and an iron axe. The kofun is considered one of the earliest tumuli in the {{ill|Bingo Province|en|Bingo Province|qid=Q1049113|lt=Bingo Province}} region, possibly the oldest keyhole-shaped kofun in the area, and is of significant historical importance{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}<ref name="description_board"/>.
+The tumulus has been extensively leveled, and its original type is unclear. It is estimated to have been keyhole-shaped, with a total length of approximately 30 meters and a circular rear section diameter of about 17 meters{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}. According to the historical text, the burial facility was a stone chamber{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}. burial goods traditionally associated with the site include a {{ill|Triangular-Rimmed Divine Beast Mirror|ja|三角縁神獣鏡}} and an iron axe. The kofun is considered one of the earliest tumuli in the {{ill|Bingo Province|en|Bingo Province|qid=Q1049113|lt=Bingo Province}} region, possibly the oldest keyhole-shaped kofun in the area, and is of significant historical importance{{Sfn|Shiozakiyama Kofun (Kofun)|1989}}<ref name="description_board"/>.
 
 The mirror and axe were Historic Site1 as Hiroshima Prefecture {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}} in 1981 and 1982, respectively<ref name="hiroshima_prefecture"/>. Today, the assumed circular rear section of the mound is the site of the grave of Chiba Shūrin no Shin.
 
@@ -113,20 +110,20 @@ The mirror and axe were Historic Site1 as Hiroshima Prefecture {{ill|Important C
 === Hiroshima Prefecture-Historic Site1 Historic Site ===
 * Important designation1 (Tangible designation1)
 ** Mirror and iron axe (Traditionally associated with Shiozakiyama Kofun) (Archaeological burial goods) - Designated November 6, 1981, with additional Historic Site and name change on February 23, 1982.<ref name="hiroshima_prefecture">[https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-202060060.html Mirror and Iron Axe from Shiozakiyama Kofun] (Hiroshima Prefecture Board of Education "Hotline Education Hiroshima").</ref>
-*** Mirror: Diameter 22.0 cm, thickness 0.2-0.3 cm<ref name="hiroshima_prefecture"/>. Mold-identical to a mirror from {{ill|Kokubunji Kofun (Kurayoshi)|ja|国分寺古墳 (倉吉市)|12=simple|13=User:Immanuelle/Kokubunji Kofun (Kurayoshi)}} in {{ill|Tottori Prefecture|en|Tottori Prefecture|qid=Q133935|lt=Tottori Prefecture}}{{Sfn|Description Board}}.
+*** Mirror: Diameter 22.0 cm, thickness 0.2-0.3 cm<ref name="hiroshima_prefecture"/>. Mold-identical to a mirror from {{ill|Kokubunji Kofun (Kurayoshi)|ja|国分寺古墳 (倉吉市)}} in {{ill|Tottori Prefecture|en|Tottori Prefecture|qid=Q133935|lt=Tottori Prefecture}}{{Sfn|Description Board}}.
 *** Iron axe: Length 24.8 cm, head width 5.5 cm, central width 6.0 cm, blade width 7.0-7.5 cm, thickness 1-4 cm<ref name="hiroshima_prefecture"/>.
 
 == References ==
 {{reflist}}
 
 == Related Facilities ==
-* {{ill|Hiroshima Prefectural Miyoshi Fudoki Hill|lt=Hiroshima Prefectural Miyoshi Fudoki Hill|lt=Miyoshi Fudoki Hill Museum|ja|広島県立みよし風土記の丘|12=simple|13=User:Immanuelle/Miyoshi Fudoki Hill Museum}} (Miyoshi City, Kodakochō) - Displays replicas of the mirror and other burial goods from Shiozakiyama Kofun.
-* {{ill|Fukuyama Museum of History and Folklore|ja|福山市立しんいち歴史民俗博物館|12=simple|13=User:Immanuelle/Fukuyama Museum of History and Folklore|ja_comment=jawiki link invalid}} (Shinichi, Fukuyama City) - Displays replicas of the mirror and other burial goods.
+* {{ill|Hiroshima Prefectural Miyoshi Fudoki Hill|ja|広島県立みよし風土記の丘|lt=Miyoshi Fudoki Hill Museum}} (Miyoshi City, Kodakochō) - Displays replicas of the mirror and other burial goods from Shiozakiyama Kofun.
+* {{ill|Fukuyama Museum of History and Folklore|ja|福山市立しんいち歴史民俗博物館}} (Shinichi, Fukuyama City) - Displays replicas of the mirror and other burial goods.
 * Fukuyama Kusado Sengen Museum (Fukuyama City) - Displays related materials.
 
 == Bibliography ==
 * Description board (installed by the Fukuyama City Board of Education)
-* {{Cite book|editor=|author=Koitsu Takashi|year=1989|chapter=Shiozakiyama Kofun|title={{ill|Comprehensive Dictionary of Japanese Kofun|ja|日本古墳大辞典|12=simple|13=User:Immanuelle/Nihon Kofun Daijiten|13=User:Immanuelle/Comprehensive Dictionary of Japanese Kofun}}|publisher={{ill|Tōkyōdō Shuppan|ja|東京堂出版|12=simple|13=User:Immanuelle/Tōkyōdō Shuppan|comment=changed title based on wikidata|qid=Q11524645}}|isbn=4490102607|ref={{Harvid|Shiozakiyama Kofun (Kofun)|1989}}}}
+* {{Cite book|editor=|author=Koitsu Takashi|year=1989|chapter=Shiozakiyama Kofun|title={{ill|Comprehensive Dictionary of Japanese Kofun|ja|日本古墳大辞典}}|publisher={{ill|Tōkyōdō Shuppan|ja|東京堂出版|12=simple|13=User:Immanuelle/Tōkyōdō Shuppan|comment=changed title based on wikidata|qid=Q11524645}}|isbn=4490102607|ref={{Harvid|Shiozakiyama Kofun (Kofun)|1989}}}}
 * {{Cite book|editor=|author=|year=2002|chapter=Shiozakiyama Kofun|title=Shinichi Town History: Materials Volume I|publisher=Shinichi Town, Hiroshima Prefecture|isbn=|ref={{Harvid|Shinichi Town History|2002}}}}
 
 == External Links ==
@@ -138,10 +135,11 @@ The mirror and axe were Historic Site1 as Hiroshima Prefecture {{ill|Important C
 
 {{translated page|ja|潮崎山古墳|version=93859863|comment=Imported full ja history}}
 
-{{wikidata link|Q109603841|zh|三角縁神獣鏡が確認された主な古墳|ja|潮崎山古墳|ja|福山市|ja|中小田1号墳|ja|広島市|ja|神原神社古墳|ja|雲南市|ja|竹島御家老屋敷古墳|ja|周南市|ja|奥三号墳|ja|さぬき市|ja|西山古墳|ja|宮谷古墳|ja|徳島市|ja|那珂八幡古墳|ja|福岡市|ja|石塚山古墳|ja|京都郡|ja|苅田町|ja|一貴山銚子塚古墳|ja|糸島市|ja|岩上祭祀遺構|ja|宗像市|ja|赤塚古墳|ja|宇佐市|ja|川部・高森古墳群|ja|持田古墳群|ja|児湯郡|ja|高鍋町|check_date=2026-05-09}}
+{{wikidata link|Q109603841|zh|三角縁神獣鏡が確認された主な古墳|ja|潮崎山古墳|ja|福山市|ja|中小田1号墳|ja|広島市|ja|神原神社古墳|ja|雲南市|ja|竹島御家老屋敷古墳|ja|周南市|ja|奥三号墳|ja|さぬき市|ja|西山古墳|ja|宮谷古墳|ja|徳島市|ja|那珂八幡古墳|ja|福岡市|ja|石塚山古墳|ja|京都郡|ja|苅田町|ja|一貴山銚子塚古墳|ja|糸島市|ja|岩上祭祀遺構|ja|宗像市|ja|赤塚古墳|ja|宇佐市|ja|川部・高森古墳群|ja|持田古墳群|ja|児湯郡|ja|高鍋町|check_date=2026-05-25}}
 [[Category:Archaeological sites in Japan]]
 [[Category:Kofun of Hiroshima prefecture]]
 [[Category:Pages with duplicated content]]
 [[Category:Wikidata no short description]]
 [[Category:Zenpō-kōen-fun]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]
