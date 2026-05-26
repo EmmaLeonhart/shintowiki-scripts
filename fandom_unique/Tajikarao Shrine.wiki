@@ -1,70 +1,61 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:手力雄神社]]
-<!--interwikis from wikidata-->[[ja:手力雄神社]]
-<!--interwikis from wikidata-->[[ja:手力雄神社]]
 
-'''Tajikarao Shrine''' (手力雄神社, also read Tejikarao Shrine) refers to shrines dedicated to {{ill|Ame-no-Tajikarao|ja|天手力雄神・天手力男神|12=simple|13=User:Immanuelle/Ame-no-Tajikarao|ja_comment=jawiki link invalid}}. Multiple shrines share this name.
+'''Tajikarao Shrine''' (手力雄神社, also read Tejikarao Shrine) refers to shrines dedicated to {{ill|Ame-no-Tajikarao|ja|天手力雄神・天手力男神}}. Multiple shrines share this name.
 
-* {{ill|Tajikarao Shrine (Tateyama City)|ja|手力雄神社 (館山市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Tateyama City)|qq=}} (たぢからおじんじゃ) - Located in {{ill|Tateyama, Chiba|en|Tateyama, Chiba|qid=Q646755|lt=Tateyama City|1=Tateyama, Chiba}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}.
-* {{ill|Tejikarao Shrine|en|Tejikarao Shrine|qid=Q3517214|lt=Tajikarao Shrine|1=Tejikarao Shrine}} (てぢからおじんじゃ) - Located in {{ill|Gifu|en|Gifu|qid=Q45798|lt=Gifu City|1=Gifu}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}.
-* {{ill|Tejikaraō Shrine (Kakamigahara)|ja|手力雄神社 (各務原市)|12=simple|13=User:Immanuelle/Tejikaraō Shrine (Kakamigahara)|qq=}} (てぢからおじんじゃ) - Located in {{ill|Kakamigahara|en|Kakamigahara|qid=Q641491|lt=Kakamigahara City|1=Kakamigahara}}, Gifu Prefecture.
-* {{ill|Tejikarao Shrine (Ōgaki)|ja|手力雄神社 (大垣市)|12=simple|13=User:Immanuelle/Tejikarao Shrine (Ōgaki)|qq=}} (てぢからおじんじゃ) - Located in {{ill|Ōgaki|en|Ōgaki|qid=Q384926|lt=Ōgaki City|1=Ōgaki}}, Gifu Prefecture.
-* {{ill|Tajikarao Shrine (Nara City)|ja|手力雄神社 (奈良市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Nara City)|qq=}} (たぢからおじんじゃ) - Located in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City|1=Nara (city)}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}.
-* {{ill|Tajikarao Shrine (Sakurai City)|ja|手力雄神社 (桜井市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Sakurai City)|ja_comment=jawiki link invalid}} (たぢからおじんじゃ) - Located in {{ill|Sakurai, Nara|en|Sakurai, Nara|qid=Q127026|lt=Sakurai City|1=Sakurai, Nara}}, Nara Prefecture.
+* {{ill|Tajikarao Shrine (Tateyama City)|ja|手力雄神社 (館山市)}} (たぢからおじんじゃ) - Located in {{ill|Tateyama, Chiba|en|Tateyama, Chiba|qid=Q646755|lt=Tateyama City}}, {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}.
+* {{ill|Tejikarao Shrine|en|Tejikarao Shrine|qid=Q3517214|lt=Tajikarao Shrine}} (てぢからおじんじゃ) - Located in {{ill|Gifu|en|Gifu|qid=Q45798|lt=Gifu City}}, {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}.
+* {{ill|Tejikaraō Shrine (Kakamigahara)|ja|手力雄神社 (各務原市)}} (てぢからおじんじゃ) - Located in {{ill|Kakamigahara|ar|كاكاميغهارا (غيفو)|arz|كاكاميجاهارا, جيفو|azb|کاکامیقاهارا، قیفو|ca|Kakamigahara|ce|Какамигахара|ceb|Kakamigahara (lungsod sa Hapon)|cs|Kakamigahara|de|Kakamigahara|eo|Kakamigahara|es|Kakamigahara (Gifu)|fa|کاکامیگاهارا، گیفو|fi|Kakamigahara|fr|Kakamigahara|gl|Kakamigahara|it|Kakamigahara|ja|各務原市|ko|가카미가하라시|mg|Kakamigahara|mr|काकामिगहारा|mzn|کاکامیگاهارا، گیفو|nl|Kakamigahara|no|Kakamigahara|pl|Kakamigahara|pt|Kakamigahara|ro|Kakamigahara|ru|Какамигахара|sh|Kakamigahara|sr|Какамигахара|su|Kakamigahara, Gifu|sv|Kakamigahara|tg|Какамигаҳара|tl|Kakamigahara, Gifu|tr|Kakamigahara|tt|Какамигахара|uk|Какаміґахара|ur|کاکامیگاہارا، گیفو|vi|Kakamigahara, Gifu|war|Kakamigahara, Gifu|zh|各务原市|zh_classical|各務原市|zh_min_nan|Kakamigahara-chhī|zh_yue|各務原|qid=Q641491|lt=Kakamigahara City}}, Gifu Prefecture.
+* {{ill|Tejikarao Shrine (Ōgaki)|ja|手力雄神社 (大垣市)|qid=Q134888254}} (てぢからおじんじゃ) - Located in {{ill|Ōgaki|ar|أوغاكي (غيفو)|azb|اوقاکی، قیفو|ce|Огаки|ceb|Ōgaki (lungsod sa Hapon)|cs|Ógaki|de|Ōgaki|eo|Ogaki|es|Ōgaki|eu|Ōgaki (Gifu)|fa|اوگاکی، گیفو|fi|Ōgaki|fr|Ōgaki|gl|Ōgaki|hy|Օգակի|it|Ōgaki|ja|大垣市|ko|오가키시|mg|Ōgaki|mzn|اوگاکی، گیفو|nl|Ogaki|no|Ōgaki|pl|Ōgaki|pt|Ōgaki|ro|Ōgaki|ru|Огаки|sh|Ogaki|sr|Огаки|su|Ōgaki, Gifu|sv|Ōgaki|tg|Огаки|tl|Ōgaki|tr|Ōgaki, Gifu|tt|Огаки|tum|Ōgaki|uk|Оґакі|ur|اوگاکی|vi|Ōgaki, Gifu|war|Ōgaki, Gifu|zh|大垣市|zh_classical|大垣市|zh_min_nan|Ôgaki-chhī|zh_yue|大垣|qid=Q384926|lt=Ōgaki City}}, Gifu Prefecture.
+* {{ill|Tajikarao Shrine (Nara City)|ja|手力雄神社 (奈良市)|qid=Q22119325}} (たぢからおじんじゃ) - Located in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}.
+* {{ill|Tajikarao Shrine (Sakurai City)|ja|手力雄神社 (桜井市)}} (たぢからおじんじゃ) - Located in {{ill|Sakurai, Nara|ar|ساكوراي (نارا)|azb|ساکورای، نارا|ca|Sakurai|ce|Сакураи|ceb|Sakurai-shi|cs|Sakurai (Nara)|de|Sakurai (Nara)|es|Sakurai (Nara)|fa|ساکورای، نارا|fi|Sakurai|fr|Sakurai|gl|Sakurai|id|Sakurai, Nara|it|Sakurai|ja|桜井市|ko|사쿠라이시|mg|Sakurai|mzn|ساکورای، نارا|nl|Sakurai|pl|Sakurai|pt|Sakurai|ro|Sakurai|ru|Сакураи|sco|Sakurai, Nara|simple|Sakurai, Nara|sv|Sakurai, Nara|tg|Сакураи|th|ซากูราอิ (จังหวัดนาระ)|tl|Sakurai, Nara|tr|Sakurai|tt|Сакураи|uk|Сакурай (Нара)|ur|ساکورائی، نارا|vi|Sakurai, Nara|war|Sakurai, Nara|zh|櫻井市|zh_classical|櫻井市|zh_min_nan|Sakurai-chhī|zh_yue|櫻井|qid=Q127026|lt=Sakurai City}}, Nara Prefecture.
 
 == Related Items ==
 Shrines enshrining Ame-no-Tajikarao:
-* {{ill|Haseyamaguchiza Shrine|ja|長谷山口坐神社|12=simple|13=User:Immanuelle/Haseyamaguchiza Shrine|ja_comment=jawiki link invalid}} (Sakurai City, Nara Prefecture)
-* {{ill|Togakushi Shrine|en|Togakushi Shrine|qid=Q218828|lt=Togakushi Shrine|1=Togakushi Shrine}} ({{ill|Nagano (city)|en|Nagano (city)|qid=Q128849|lt=Nagano City|1=Nagano (city)}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}})
-* {{ill|Sana Shrine|ja|佐那神社|12=simple|13=User:Immanuelle/Sana Shrine|qq=}} ({{ill|Taki District, Mie|en|Taki District, Mie|qid=Q1042360|lt=Taki District|1=Taki District, Mie}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}})
-* {{ill|Shirai Shrine (Amagasaki City)|ja|白井神社 (尼崎市)|12=simple|13=User:Immanuelle/Shirai Shrine (Amagasaki City)|ja_comment=jawiki link invalid}} ({{ill|Amagasaki|en|Amagasaki|qid=Q213318|lt=Amagasaki City|1=Amagasaki}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}})
-* {{ill|Oyama Shrine (Tateyama)|en|Oyama Shrine (Tateyama)|qid=Q11659204|lt=Oyama Shrine|1=Oyama Shrine (Tateyama)}} ({{ill|Tateyama, Toyama|en|Tateyama, Toyama|qid=Q670189|lt=Tateyama Town|1=Tateyama, Toyama}}, {{ill|Kaminiikawa District, Toyama|en|Kaminiikawa District, Toyama|qid=Q11359057|lt=Nakaniikawa District|1=Kaminiikawa District, Toyama}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}})
+* {{ill|Haseyamaguchiza Shrine|ja|長谷山口坐神社}} (Sakurai City, Nara Prefecture)
+* {{ill|Togakushi Shrine|abstract|Q218828|de|Togakushi-Schrein|fr|Togakushi-jinja|it|Santuario Togakushi|ja|戸隠神社|zh|戶隱神社|qid=Q218828|lt=Togakushi Shrine}} ({{ill|Nagano (city)|en|Nagano (city)|qid=Q128849|lt=Nagano City}}, {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}})
+* {{ill|Sana Shrine|ja|佐那神社}} ({{ill|Taki District, Mie|en|Taki District, Mie|qid=Q1042360|lt=Taki District}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}})
+* {{ill|Shirai Shrine (Amagasaki City)|ja|白井神社 (尼崎市)}} ({{ill|Amagasaki|en|Amagasaki|qid=Q213318|lt=Amagasaki City}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}})
+* {{ill|Oyama Shrine (Tateyama)|en|Oyama Shrine (Tateyama)|qid=Q11659204|lt=Oyama Shrine}} ({{ill|Tateyama, Toyama|en|Tateyama, Toyama|qid=Q670189|lt=Tateyama Town}}, {{ill|Kaminiikawa District, Toyama|en|Kaminiikawa District, Toyama|qid=Q11359057|lt=Nakaniikawa District}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture}})
 * Subsidiary and branch shrines of Togakushi Shrine
-* {{ill|Togami Shrine|ja|戸明神社|12=simple|13=User:Immanuelle/Tomei Shrine|qq=}} ({{ill|Kitakyushu|en|Kitakyushu|qid=Q188806|lt=Kitakyūshū City|1=Kitakyushu}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}})
+* {{ill|Togami Shrine|ja|戸明神社}} ({{ill|Kitakyushu|en|Kitakyushu|qid=Q188806|lt=Kitakyūshū City}}, {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}})
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Tajikarao Shrine (Q11496924)|lt=Tajikarao Shrine|qid=Q11496924}} — Tateyama
-* {{ill|Tajikarao Shrine (Q22119325)|lt=Tajikarao Shrine|qid=Q22119325}} — Nara
-* {{ill|Tajikarao Shrine (Ogaki) (Q134888254)|lt=Tajikarao Shrine (Ogaki)|qid=Q134888254}} — Ōgaki-shi
+* {{ill|Tajikarao Shrine (Q22119325)|ja|手力雄神社 (奈良市)|qid=Q22119325|lt=Tajikarao Shrine}} — Nara
+* {{ill|Tajikarao Shrine (Ogaki) (Q134888254)|ja|手力雄神社 (大垣市)|qid=Q134888254|lt=Tajikarao Shrine (Ogaki)}} — Ōgaki-shi
 * {{ill|Tejikarao Shrine (Q3517214)|lt=Tejikarao Shrine|qid=Q3517214}} — Atsumi district
 * {{ill|手力雄神社 (Q135462102)|lt=手力雄神社|qid=Q135462102}} — Jōetsu-shi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|手力雄神社|version=59914243|comment=Imported full ja history}}
 
-<!--Tajikarao Shrine-->
 [[Category:Pages with duplicated content]]
 ==Merged second translation==
-'''Tajikarao Shrine''' (手力雄神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} enshrining [[Ama-no-Tajikarao|Ama-no-Tajikarao no Kami]]. Multiple shrines with the same name exist.
+'''Tajikarao Shrine''' (手力雄神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} enshrining [[Ama-no-Tajikarao|Ama-no-Tajikarao no Kami]]. Multiple shrines with the same name exist.
 
-* {{ill|Tajikarao Shrine (Tateyama)|ja|手力雄神社 (館山市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Tateyama)|1=Tajikarao Shrine (Tateyama City)|comment=changed title based on wikidata|qid=Q11496924}} (たぢからおじんじゃ) - Located in {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}, [[:en:Tateyama City|Tateyama City]].
-* {{ill|Tejikarao Shrine|en|Tejikarao Shrine|qid=Q3517214|lt=Tajikarao Shrine (Gifu City)|1=Tejikarao Shrine}} (てぢからおじんじゃ) - Located in {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture|1=Gifu Prefecture}}, [[:en:Gifu City|Gifu City]].
-* {{ill|Tajikarao Shrine (Kakamigahara)|ja|手力雄神社 (各務原市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Kakamigahara)|1=Tejikaraō Shrine (Kakamigahara)|comment=changed title based on wikidata|qid=Q11496922}} (てぢからおじんじゃ) - Located in Gifu Prefecture, [[Kakamigahara City]].
-* {{ill|Tajikarao Shrine (Ōgaki)|ja|手力雄神社 (大垣市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Ōgaki)|1=Tejikarao Shrine (Ōgaki)|comment=changed title based on wikidata|qid=Q134888254}} (てぢからおじんじゃ) - Located in Gifu Prefecture, [[Ōgaki City]].
-* {{ill|Tajikarao Shrine (Nara City)|ja|手力雄神社 (奈良市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Nara City)|qq=}} (たぢからおじんじゃ) - Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, [[:en:Nara City|Nara City]].
-* {{ill|Tajikarao Shrine (Sakurai)|ja|手力雄神社 (桜井市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Sakurai)|ja_comment=jawiki link invalid}} (たぢからおじんじゃ) - Located in Nara Prefecture, [[Sakurai City]].
+* {{ill|Tajikarao Shrine (Tateyama City)|ja|手力雄神社 (館山市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Tateyama)|comment=changed title based on wikidata|qid=Q11496924}} (たぢからおじんじゃ) - Located in {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture}}, [[:en:Tateyama City|Tateyama City]].
+* {{ill|Tejikarao Shrine|en|Tejikarao Shrine|qid=Q3517214|lt=Tajikarao Shrine (Gifu City)}} (てぢからおじんじゃ) - Located in {{ill|Gifu Prefecture|en|Gifu Prefecture|qid=Q131277|lt=Gifu Prefecture}}, [[:en:Gifu City|Gifu City]].
+* {{ill|Tejikaraō Shrine (Kakamigahara)|ja|手力雄神社 (各務原市)|12=simple|13=User:Immanuelle/Tajikarao Shrine (Kakamigahara)|comment=changed title based on wikidata|qid=Q11496922}} (てぢからおじんじゃ) - Located in Gifu Prefecture, [[Kakamigahara City]].
+* {{ill|Tejikarao Shrine (Ōgaki)|ja|手力雄神社 (大垣市)|qid=Q134888254}} (てぢからおじんじゃ) - Located in Gifu Prefecture, [[Ōgaki City]].
+* {{ill|Tajikarao Shrine (Nara City)|ja|手力雄神社 (奈良市)|qid=Q22119325}} (たぢからおじんじゃ) - Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}, [[:en:Nara City|Nara City]].
+* {{ill|Tajikarao Shrine (Sakurai)|ja|手力雄神社 (桜井市)}} (たぢからおじんじゃ) - Located in Nara Prefecture, [[Sakurai City]].
 == See Also ==
 
 Shrines enshrining Ama-no-Tajikarao no Kami:
-* {{ill|Haseyamaguchi Shrine|ja|長谷山口坐神社|12=simple|13=User:Immanuelle/Haseyamaguchi Shrine|ja_comment=jawiki link invalid}} (Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}, [[Sakurai City]]).
-* {{ill|Togakushi Shrine|en|Togakushi Shrine|qid=Q218828|lt=Togakushi Shrine|1=Togakushi Shrine}} (Located in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture|1=Nagano Prefecture}}, [[:en:Nagano City|Nagano City]]).
-* {{ill|Sana Shrine|ja|佐那神社|12=simple|13=User:Immanuelle/Sana Shrine|qq=}} (Located in {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}, [[Taki District]]).
-* {{ill|Shirai Shrine (Amagasaki)|ja|白井神社 (尼崎市)|12=simple|13=User:Immanuelle/Shirai Shrine (Amagasaki)|ja_comment=jawiki link invalid}} (Located in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, [[Amagasaki City]]).
-* {{ill|Oyama Shrine (Tateyama)|en|Oyama Shrine (Tateyama)|qid=Q11659204|lt=Oyama Shrine (Tateyama)|1=Oyama Shrine (Tateyama)}} (Located in {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture|1=Toyama Prefecture}}, [[Kamiichi Town]] in [[Nakaniikawa District]]).
-* {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=Subsidiary Shrines|1=Setsumatsusha}} of Togakushi Shrine and Togakushi Sha.
-* {{ill|Togami Shrine|ja|戸明神社|12=simple|13=User:Immanuelle/Togami Shrine|qq=}} (Located in {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture|1=Fukuoka Prefecture}}, [[Kitakyūshū City]]).
+* {{ill|Haseyamaguchi Shrine|ja|長谷山口坐神社}} (Located in {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}, [[Sakurai City]]).
+* {{ill|Togakushi Shrine|abstract|Q218828|de|Togakushi-Schrein|fr|Togakushi-jinja|it|Santuario Togakushi|ja|戸隠神社|zh|戶隱神社|qid=Q218828|lt=Togakushi Shrine}} (Located in {{ill|Nagano Prefecture|en|Nagano Prefecture|qid=Q127877|lt=Nagano Prefecture}}, [[:en:Nagano City|Nagano City]]).
+* {{ill|Sana Shrine|ja|佐那神社}} (Located in {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, [[Taki District]]).
+* {{ill|Shirai Shrine (Amagasaki)|ja|白井神社 (尼崎市)}} (Located in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, [[Amagasaki City]]).
+* {{ill|Oyama Shrine (Tateyama)|en|Oyama Shrine (Tateyama)|qid=Q11659204|lt=Oyama Shrine (Tateyama)}} (Located in {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture}}, [[Kamiichi Town]] in [[Nakaniikawa District]]).
+* {{ill|Setsumatsusha|en|Setsumatsusha|qid=Q1071160|lt=Subsidiary Shrines}} of Togakushi Shrine and Togakushi Sha.
+* {{ill|Togami Shrine|ja|戸明神社}} (Located in {{ill|Fukuoka Prefecture|en|Fukuoka Prefecture|qid=Q123258|lt=Fukuoka Prefecture}}, [[Kitakyūshū City]]).
 
 {{disambiguation}}
 
 {{translated page|ja|手力雄神社|version=59914243|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation--><!--Tejikarao Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11496923|ja|手力雄神社}}
+{{wikidata link|Q11496923|ja|手力雄神社|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Pages with duplicated content]]
 [[Category:Shinto shrines by tradition]]

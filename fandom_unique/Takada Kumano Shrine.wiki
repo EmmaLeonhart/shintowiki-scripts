@@ -1,28 +1,18 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
 
-'''Takada Kumano Shrine''' (高田熊野神社, Takada Kumano Jinja) refers to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} named after [[:en:Kumano shrines|Kumano shrines]].
+'''Takada Kumano Shrine''' (高田熊野神社, Takada Kumano Jinja) refers to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} named after [[:en:Kumano shrines|Kumano shrines]].
 
-* {{ill|Takada Kumano Shrine (Kashiwa)|ja|高田熊野神社 (柏市)|12=simple|13=User:Immanuelle/Takada Kumano Shrine (Kashiwa)|ja_comment=jawiki link invalid}} - A shrine located in {{ill|Kashiwa|en|Kashiwa|qid=Q319743|lt=Kashiwa, Chiba|1=Kashiwa}}, Chiba Prefecture.
-* {{ill|Takada Kumano Shrine (Chigasaki)|ja|高田熊野神社 (茅ヶ崎市)|12=simple|13=User:Immanuelle/Takada Kumano Shrine (Chigasaki)|qq=}} - A shrine located in [[:en:Chigasaki, Kanagawa|Chigasaki, Kanagawa]], Kanagawa Prefecture.
+* {{ill|Takada Kumano Shrine (Kashiwa)|ja|高田熊野神社 (柏市)}} - A shrine located in {{ill|Kashiwa|ar|كاشيوا (تشيبا)|az|Kaşiva|azb|کاشیوا، چیبا|be|Касіва|bg|Кашива|ce|Касива|ceb|Kashiwa (lungsod)|cs|Kašiwa|de|Kashiwa|eo|Kaŝiva|es|Kashiwa (Chiba)|et|Kashiwa|eu|Kashiwa (Chiba)|fa|کاشیوا، چیبا|fi|Kashiwa|fr|Kashiwa|ga|Kashiwa|gl|Kashiwa|hy|Կասիվա|id|Kashiwa, Chiba|it|Kashiwa|ja|柏市|kaa|Kashiwa|ko|가시와시|lt|Kašiva|mg|Kashiwa|ms|Kashiwa, Chiba|mzn|کاشیوا، چیبا|nl|Kashiwa (Chiba)|no|Kashiwa|pl|Kashiwa|pt|Kashiwa|ro|Kashiwa|ru|Касива|sh|Kashiva|simple|Kashiwa, Chiba|sr|Кашива|sv|Kashiwa|sw|Kashiwa, Chiba|tg|Кашива|th|คาชิวะ|tl|Kashiwa|tr|Kashiwa|tt|Касива|tum|Kashiwa|uk|Касіва (Тіба)|ur|کاشیوا، چیبا|vi|Kashiwa, Chiba|war|Kashiwa, Chiba|zh|柏市|zh_classical|柏市|zh_min_nan|Kasiwa-chhī|zh_yue|柏市|qid=Q319743|lt=Kashiwa, Chiba}}, Chiba Prefecture.
+* {{ill|Takada Kumano Shrine (Chigasaki)|ja|高田熊野神社 (茅ヶ崎市)}} - A shrine located in [[:en:Chigasaki, Kanagawa|Chigasaki, Kanagawa]], Kanagawa Prefecture.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Takada Kumano Shrine (Chigasaki) (Q11672169)|lt=Takada Kumano Shrine (Chigasaki)|qid=Q11672169}} — Chigasaki
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|高田熊野神社|version=39622167|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation--><!--Takada Kumano Shrine--><!--Takada Kumano Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11672170|ja|高田熊野神社}}
+{{wikidata link|Q11672170|ja|高田熊野神社|check_date=2026-05-26}}
 [[Category:Shrine disambiguations]]
-[[Category:Special:LonelyPages 22 May 2025]]
-[[Category:Special:LonelyPages 26 May 2025]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

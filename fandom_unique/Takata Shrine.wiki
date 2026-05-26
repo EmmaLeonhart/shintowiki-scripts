@@ -1,36 +1,28 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:高田神社]]
-<!--interwikis from wikidata-->[[ja:高田神社]]
-<!--interwikis from wikidata-->[[ja:高田神社]]
 
 '''Takata Shrine''' (高田神社) refers to several Shinto shrines in Japan:
 
-* {{ill|Takata Shrine (Inashiki)|ja|高田神社 (稲敷市)|12=simple|13=User:Immanuelle/Takata Shrine (Inashiki)|ja_comment=jawiki link invalid}} (たかだじんじゃ) - Located in Inashiki City, Ibaraki Prefecture.
-* {{ill|Takada Shrine (Hakusan)|ja|髙田神社 (白山市)|12=simple|13=User:Immanuelle/Takada Shrine (Hakusan)|ja_comment=jawiki link invalid}} (たかだじんじゃ) - Located in Hakusan City, Ishikawa Prefecture.
-* {{ill|Takata Shrine (Hida)|ja|高田神社 (飛騨市)|12=simple|13=User:Immanuelle/Takata Shrine (Hida)|qq=}} (たかたじんじゃ) - Located in Hida City, Gifu Prefecture.
-* {{ill|Takata Shrine (Oki Island)|ja|高田神社 (隠岐の島町)|12=simple|13=User:Immanuelle/Takata Shrine (Oki Island)|ja_comment=jawiki link invalid}} (たかたじんじゃ) - Located in Okinoshima Town, Oki District, Shimane Prefecture.
-* {{ill|Takada Shrine (Maniwa)|ja|高田神社 (真庭市)|12=simple|13=User:Immanuelle/Takada Shrine (Maniwa)|1=Takada Shrine (Maniwa)|comment=changed title based on wikidata|qid=Q134930888}} (たかだじんじゃ) - Located in Maniwa City, Okayama Prefecture.
-* {{ill|Takata Shrine (Tsuyama)|ja|高田神社 (津山市)|12=simple|13=User:Immanuelle/Takata Shrine (Tsuyama)|ja_comment=jawiki link invalid}} (たかたじんじゃ) - Located in Tsuyama City, Okayama Prefecture.
-* {{ill|Takata Shrine (Matsuyama)|ja|高田神社 (松山市)|12=simple|13=User:Immanuelle/Takata Shrine (Matsuyama)|ja_comment=jawiki link invalid}} (たかたじんじゃ) - Located in Matsuyama City, Ehime Prefecture.
-* {{ill|Takata Shrine (Itoshima)|ja|高田神社 (糸島市)|12=simple|13=User:Immanuelle/Takata Shrine (Itoshima)|ja_comment=jawiki link invalid}} (たかたじんじゃ) - Located in Itoshima City, Fukuoka Prefecture.
+* {{ill|Takata Shrine (Inashiki)|ja|高田神社 (稲敷市)}} (たかだじんじゃ) - Located in Inashiki City, Ibaraki Prefecture.
+* {{ill|Takada Shrine (Hakusan)|ja|髙田神社 (白山市)}} (たかだじんじゃ) - Located in Hakusan City, Ishikawa Prefecture.
+* {{ill|Takata Shrine (Hida)|ja|高田神社 (飛騨市)}} (たかたじんじゃ) - Located in Hida City, Gifu Prefecture.
+* {{ill|Takata Shrine (Oki Island)|ja|高田神社 (隠岐の島町)}} (たかたじんじゃ) - Located in Okinoshima Town, Oki District, Shimane Prefecture.
+* {{ill|Takada Shrine (Maniwa)|ja|高田神社 (真庭市)|12=simple|13=User:Immanuelle/Takada Shrine (Maniwa)|comment=changed title based on wikidata|qid=Q134930888}} (たかだじんじゃ) - Located in Maniwa City, Okayama Prefecture.
+* {{ill|Takata Shrine (Tsuyama)|ja|高田神社 (津山市)}} (たかたじんじゃ) - Located in Tsuyama City, Okayama Prefecture.
+* {{ill|Takata Shrine (Matsuyama)|ja|高田神社 (松山市)}} (たかたじんじゃ) - Located in Matsuyama City, Ehime Prefecture.
+* {{ill|Takata Shrine (Itoshima)|ja|高田神社 (糸島市)}} (たかたじんじゃ) - Located in Itoshima City, Fukuoka Prefecture.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Takada Shrine (Q135154657)|lt=Takada Shrine|qid=Q135154657}} — Inashiki
 * {{ill|Takatano Shrine (Q135039911)|lt=Takatano Shrine|qid=Q135039911}} — Hida Province
 * {{ill|Takatano Shrine (Q135040553)|lt=Takatano Shrine|qid=Q135040553}} — Tango Province
-* {{ill|高田神社 (Q134955500)|lt=高田神社|qid=Q134955500}} — Fujieda
-* {{ill|高田神社 (Q135154492)|lt=高田神社|qid=Q135154492}} — Mito
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|高田神社 (Q134955500)|qid=Q134955500|lt=高田神社}} — Fujieda
+* {{ill|高田神社 (Q135154492)|qid=Q135154492|lt=高田神社}} — Mito
 
 {{translated page|ja|高田神社|version=97966085|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation--><!--Takata Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q124481862|ja|高田神社}}
+{{wikidata link|Q124481862|ja|高田神社|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

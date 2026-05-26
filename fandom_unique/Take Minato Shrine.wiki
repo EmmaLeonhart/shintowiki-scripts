@@ -1,57 +1,60 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Take_Minato_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
-
-
-'''Tagimitonotoya Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+{{注意|This article's references section may not comply with proper standards.|date=January 2018}}
+{{Citation style|date=February 2018}}
+{{Expand Japanese|多祁御奈刀弥神社}}
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+|name=Take Minato Jinja
+| religious_affiliation = [[Shinto]]
+|image=[[File:Take Minato-jinja (Ishii,Tokushima).jpg|280px]]
+|location={{ill|Tokushima Prefecture|ja|徳島県}}, {{ill|Myōzai District|ja|名西郡}}, {{ill|Ishii|ja|石井町}}, Urashō Aza Suwa 213-1
+|deity={{ill|Takeminakata|ja|建御名方命}}<br />{{ill|Yasakatome|ja|八坂刀売命}}
+|type={{ill|Shikinaisha|ja|式内社}}, Former {{ill|Gōsha|ja|郷社}}
+|創建=Unknown
+|本殿=
+|alternative names=O-Suwa-san<br />Higashi no Miya
+|festival=[[November 3]]
+|神事=
+|緯度度 = 34 | 緯度分 = 4 | 緯度秒 = 20.5 | N(北緯)及びS(南緯) = N
+|経度度 = 134 |経度分 = 24 | 経度秒 = 41.3 | E(東経)及びW(西経) = E
+|地図国コード = JP
+|地図 = Japan Tokushima
+}}
+{{nihongo|'''Take Minato Jinja'''|多祁御奈刀弥神社|たけみなとみじんじゃ}}, also rendered '''Tagimitonotoya Shrine''' and '''Takeminatomi Shrine''', is a {{ill|Shinto shrine|ja|神社}} in the [[Engishiki Jinmyōchō]], located in Ura-shō, Aza Suwa, {{ill|Ishii, Tokushima|ja|石井町}}, [[Awa Province (Tokushima)]], Tokushima Prefecture, Japan. It is a {{ill|Shikinaisha|ja|式内社}} (specifically a {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|lt=Shikinai Shōsha}}) and is regarded as an ancestral shrine of {{ill|Suwa-taisha|ja|諏訪大社}}.
 
 == Shikinaisha (式内社) ==
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| — || {{ill|Take Minato Shrine|lt=Takeminatomi Shrine|ja|多祁御奈刀弥神社|qid=Q48759404}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.072398|134.411463|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183204 DB]
+| — || {{ill|Take Minato Shrine|lt=Takeminatomi Shrine|ja|多祁御奈刀弥神社|qid=Q48759404}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.072398|134.411463|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183204 DB]
 |}
 
-{{wikidata link|Q48759404|ja|多祁御奈刀弥神社|check_date=2026-05-10}}
-
-== Accidentally Overwritten Content ==
-
-{{注意|This article's references section may not comply with proper standards.|date=January 2018}}
-{{Citation style|date=February 2018}}
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name=Take Minato Jinja
-| religious_affiliation = [[Shinto]]
-|image=[[File:Take Minato-jinja (Ishii,Tokushima).jpg|280px]]
-|location={{ill|Tokushima Prefecture|ja|徳島県|12=draft|12=draft}}, {{ill|Myōzai District|ja|名西郡|12=draft|12=draft}}, {{ill|Ishii|ja|石井町|12=draft|12=draft}}, Urashō Aza Suwa 213-1
-|deity={{ill|Takeminakata|ja|建御名方命|12=draft|12=draft}}<br />{{ill|Yasakatome|ja|八坂刀売命|12=draft|12=draft}}
-|type={{ill|Shikinaisha|ja|式内社|12=draft|12=draft}}, Former {{ill|Gōsha|ja|郷社|12=draft|12=draft}}
-|創建=Unknown
-|本殿=
-|alternative names=O-Suwa-san<br />Higashi no Miya
-|festival=[[November 3]]
-|神事=
-|緯度度 = 34 | 緯度分 = 4 | 緯度秒 = 20.5 | N(北緯)及びS(南緯) = N 
-|経度度 = 134 |経度分 = 24 | 経度秒 = 41.3 | E(東経)及びW(西経) = E
-|地図国コード = JP
-|地図 = Japan Tokushima
-}}
-'''Take Minato Jinja''' (たけみなとみじんじゃ) is a {{ill|Shinto shrine|ja|神社|12=draft|12=draft}} located in {{ill|Ishii, Tokushima|ja|石井町|12=draft|12=draft}}, Tokushima Prefecture, Japan. It is a {{ill|Shikinaisha|ja|式内社|12=draft|12=draft}} and regarded as an ancestral shrine of {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}.
-
 == History ==
-The year of the shrine's founding is unknown. The current shrine building was constructed in {{ill|1720|ja|享保|12=draft|12=draft}} 5.
+The year of the shrine's founding is unknown. The current shrine building was constructed in {{ill|1720|ja|享保}} ({{ill|Kyōhō|Q1145048|qid=Q1145048}} 5).
 
-The shrine was highly revered by the {{ill|Hachisuka clan|ja|蜂須賀氏|12=draft|12=draft}}, feudal lords of the Tokushima Domain. During its festival, members of the clan would often personally visit or send representatives. In {{ill|1627|ja|寛永|12=draft|12=draft}} 4, {{ill|Hachisuka Mitsutaka|ja|蜂須賀光隆|12=draft|12=draft}} prayed at the shrine and reported miraculous occurrences. Additionally, a division of the shrine's spirit was transferred to {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=draft|12=draft}} near {{ill|Tokushima Castle|ja|徳島城|12=draft|12=draft}} for easier access during times when the flooding of the Ayukui River prevented direct visits to Take Minato Jinja.
+The shrine was highly revered by the {{ill|Hachisuka clan|ja|蜂須賀氏}}, feudal lords of the {{ill|Tokushima Domain|Q3034557|qid=Q3034557}}. During its annual grand festival, members of the clan would often personally visit or send representatives. In {{ill|1627|ja|寛永}} ({{ill|Kan'ei|Q1192913|qid=Q1192913}} 4), {{ill|Hachisuka Mitsutaka|ja|蜂須賀光隆}} prayed at the shrine and reported miraculous occurrences. Additionally, because visits by the Hachisuka could be blocked by flooding of the {{ill|Akui River|Q11674107|qid=Q11674107}}, a division of the shrine's spirit was transferred to {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)}} near {{ill|Tokushima Castle|ja|徳島城}} for easier access during times when flooding prevented direct visits to Take Minato Jinja.
 
-According to the shrine's historical records, "In the tenth year of {{ill|Hōki|ja|宝亀|12=draft|12=draft}} during the reign of Emperor {{ill|Kōnin|ja|光仁天皇|12=draft|12=draft}} (779 CE), the Suwa Daimyōjin of Nakata District, Awa Province, was transferred and enshrined at the Minato Shrine in Suwa, Shinano Province (modern-day {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}, Nagano Prefecture)." This implies that {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}, known for his mythological dispute with {{ill|Takemikazuchi|ja|武御雷神|12=draft|12=draft}}, originally hailed from Awa Province and that Suwa Taisha's origins trace back to Awa, as recorded in the shrine's documents.<ref>Sasada Takashi, *The Imperial Capital Yamato was Awa*, Sun Lotus Research Institute, 2024, pp. 173-185.</ref>
+According to the shrine's historical records (''Ura-shō Village History''), "In the tenth year of {{ill|Hōki|ja|宝亀}} during the reign of Emperor {{ill|Kōnin|ja|光仁天皇}} (779 CE), the Suwa Daimyōjin of Nakata District, Awa Province, was transferred and enshrined at the Minato Shrine in Suwa, {{ill|Shinano Province|Q289250|qid=Q289250}} (modern-day {{ill|Suwa-taisha|ja|諏訪大社}}, {{ill|Nagano Prefecture|Q127877|qid=Q127877}})." This implies that {{ill|Takeminakata no Mikoto|ja|建御名方命}}, known for his mythological dispute with {{ill|Takemikazuchi|ja|武御雷神}} in the kuni-yuzuri episode, originally hailed from Awa Province, and that Suwa Taisha's origins trace back to Awa, as recorded in the shrine's documents.<ref>Sasada Takashi, *The Imperial Capital Yamato was Awa*, Sun Lotus Research Institute, 2024, pp. 173-185.</ref>
 
 == Deities ==
-* {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}
-* {{ill|Yasakatome no Mikoto|ja|八坂刀売命|12=draft|12=draft}}
+* {{ill|Takeminakata no Mikoto|ja|建御名方命}}
+* {{ill|Yasakatome no Mikoto|ja|八坂刀売命}}
 
 == Auxiliary Shrines ==
-* {{ill|Earth God Shrine|ja|地神社|12=draft|12=draft}}
+* {{ill|Earth God Shrine|ja|地神社}} (Chigami Shrine)
 
 == Access ==
-* Approximately a 25-minute walk from {{ill|Shimoura Station|ja|下浦駅|12=draft|12=draft}} on the {{ill|Tokushima Line|ja|徳島線|12=draft|12=draft}} (JR Shikoku).
-* Approximately a 20-minute walk from {{ill|Ushijima Station|ja|牛島駅|12=draft|12=draft}} on the same line.
+* Approximately a 25-minute walk from {{ill|Shimoura Station|ja|下浦駅}} on the {{ill|Tokushima Line|ja|徳島線}} ({{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR Shikoku}}).
+* Approximately a 20-minute walk from {{ill|Ushijima Station|ja|牛島駅}} on the same line.
+
+== Other names ==
+* O-Suwa-san
+* Higashi no Miya
+
+== Identifiers ==
+* Name in kana: たけみなとみじんじゃ
+* Corporate Number (Japan): 5480005001222
+* Street address: 徳島県名西郡石井町浦庄字諏訪213-1 (Ura-shō, Aza Suwa 213-1, Ishii, Myōzai District, Tokushima Prefecture)
+* Kokugakuin University Digital Museum entry ID: [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183204 183204]
+* Position in the {{ill|List of Shikinaisha in Awa Province (Tokushima)|ltq=Q11657514|qid=Q11657514}}: ordinal 30, between {{ill|Mimatsuhiko Shrine|lt=Mimatsuhiko Shrine|ja|御間都比古神社|qid=Q48759389}} (preceding) and {{ill|Enomiya Shrine|ltq=Q11448984|qid=Q11448984}} (following).
 
 == References ==
 
@@ -59,223 +62,11 @@ According to the shrine's historical records, "In the tenth year of {{ill|Hōki|
 {{Notelist|2}}
 === Sources ===
 {{Reflist|colwidth=30em}}
+
 == Bibliography ==
-* *Kadokawa Japanese Place name Dictionary, Volume 36: Tokushima Prefecture* (1986, ISBN 4040013603), p.440, "Take Minato Jinja."
-* *Japanese Historical Place name Series, Volume 37: Tokushima Prefecture* (2000, ISBN 4582490379), p.545, "Take Minato Jinja."
+* *{{ill|Kadokawa Nihon Chimei Daijiten|Q4093011|qid=Q4093011|lt=Kadokawa Japanese Place name Dictionary}}, Volume 36: Tokushima Prefecture* (1986, ISBN 4040013603), p.440, "Take Minato Jinja."
+* *{{ill|Japanese Historical Topography Series|ja|日本歴史地名大系|zh|日本歷史地名大系|qid=Q17213509|lt=Japanese Historical Place name Series}}, Volume 37: Tokushima Prefecture* (2000, ISBN 4582490379), p.545, "Take Minato Jinja."
 * *Tokushima Prefecture Encyclopedia* (1981, Tokushima Shimbunsha Research Department), p.588, "Take Minato Jinja."
-{{shinto-stub}}
-==References==
-{{reflist}}
-{{Suwa Faith}} 
-
-== Accidentally Overwritten Content ==
-{{注意|This article's references section may not comply with proper standards.|date=January 2018}}
-{{Citation style|date=February 2018}}
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name=Take Minato Jinja
-| religious_affiliation = [[Shinto]]
-|image=[[File:Take Minato-jinja (Ishii,Tokushima).jpg|280px]]
-|location={{ill|Tokushima Prefecture|ja|徳島県|12=draft|12=draft}}, {{ill|Myōzai District|ja|名西郡|12=draft|12=draft}}, {{ill|Ishii|ja|石井町|12=draft|12=draft}}, Urashō Aza Suwa 213-1
-|deity={{ill|Takeminakata|ja|建御名方命|12=draft|12=draft}}<br />{{ill|Yasakatome|ja|八坂刀売命|12=draft|12=draft}}
-|type={{ill|Shikinaisha|ja|式内社|12=draft|12=draft}}, Former {{ill|Gōsha|ja|郷社|12=draft|12=draft}}
-|創建=Unknown
-|本殿=
-|alternative names=O-Suwa-san<br />Higashi no Miya
-|festival=[[November 3]]
-|神事=
-|緯度度 = 34 | 緯度分 = 4 | 緯度秒 = 20.5 | N(北緯)及びS(南緯) = N 
-|経度度 = 134 |経度分 = 24 | 経度秒 = 41.3 | E(東経)及びW(西経) = E
-|地図国コード = JP
-|地図 = Japan Tokushima
-}}
-'''Take Minato Jinja''' (たけみなとみじんじゃ) is a {{ill|Shinto shrine|ja|神社|12=draft|12=draft}} located in {{ill|Ishii, Tokushima|ja|石井町|12=draft|12=draft}}, Tokushima Prefecture, Japan. It is a {{ill|Shikinaisha|ja|式内社|12=draft|12=draft}} and regarded as an ancestral shrine of {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}.
-
-== History ==
-The year of the shrine's founding is unknown. The current shrine building was constructed in {{ill|1720|ja|享保|12=draft|12=draft}} 5.
-
-The shrine was highly revered by the {{ill|Hachisuka clan|ja|蜂須賀氏|12=draft|12=draft}}, feudal lords of the Tokushima Domain. During its festival, members of the clan would often personally visit or send representatives. In {{ill|1627|ja|寛永|12=draft|12=draft}} 4, {{ill|Hachisuka Mitsutaka|ja|蜂須賀光隆|12=draft|12=draft}} prayed at the shrine and reported miraculous occurrences. Additionally, a division of the shrine's spirit was transferred to {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=draft|12=draft}} near {{ill|Tokushima Castle|ja|徳島城|12=draft|12=draft}} for easier access during times when the flooding of the Ayukui River prevented direct visits to Take Minato Jinja.
-
-According to the shrine's historical records, "In the tenth year of {{ill|Hōki|ja|宝亀|12=draft|12=draft}} during the reign of Emperor {{ill|Kōnin|ja|光仁天皇|12=draft|12=draft}} (779 CE), the Suwa Daimyōjin of Nakata District, Awa Province, was transferred and enshrined at the Minato Shrine in Suwa, Shinano Province (modern-day {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}, Nagano Prefecture)." This implies that {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}, known for his mythological dispute with {{ill|Takemikazuchi|ja|武御雷神|12=draft|12=draft}}, originally hailed from Awa Province and that Suwa Taisha's origins trace back to Awa, as recorded in the shrine's documents.<ref>Sasada Takashi, *The Imperial Capital Yamato was Awa*, Sun Lotus Research Institute, 2024, pp. 173-185.</ref>
-
-== Deities ==
-* {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}
-* {{ill|Yasakatome no Mikoto|ja|八坂刀売命|12=draft|12=draft}}
-
-== Auxiliary Shrines ==
-* {{ill|Earth God Shrine|ja|地神社|12=draft|12=draft}}
-
-== Access ==
-* Approximately a 25-minute walk from {{ill|Shimoura Station|ja|下浦駅|12=draft|12=draft}} on the {{ill|Tokushima Line|ja|徳島線|12=draft|12=draft}} (JR Shikoku).
-* Approximately a 20-minute walk from {{ill|Ushijima Station|ja|牛島駅|12=draft|12=draft}} on the same line.
-
-== References ==
-
-=== Notes ===
-{{Notelist|2}}
-=== Sources ===
-{{Reflist|colwidth=30em}}
-== Bibliography ==
-* *Kadokawa Japanese Place name Dictionary, Volume 36: Tokushima Prefecture* (1986, ISBN 4040013603), p.440, "Take Minato Jinja."
-* *Japanese Historical Place name Series, Volume 37: Tokushima Prefecture* (2000, ISBN 4582490379), p.545, "Take Minato Jinja."
-* *Tokushima Prefecture Encyclopedia* (1981, Tokushima Shimbunsha Research Department), p.588, "Take Minato Jinja."
-{{shinto-stub}}
-==References==
-{{reflist}}
-{{Suwa Faith}} 
-
-== Accidentally Overwritten Content ==
-{{注意|This article's references section may not comply with proper standards.|date=January 2018}}
-{{Citation style|date=February 2018}}
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name=Take Minato Jinja
-| religious_affiliation = [[Shinto]]
-|image=[[File:Take Minato-jinja (Ishii,Tokushima).jpg|280px]]
-|location={{ill|Tokushima Prefecture|ja|徳島県|12=draft|12=draft}}, {{ill|Myōzai District|ja|名西郡|12=draft|12=draft}}, {{ill|Ishii|ja|石井町|12=draft|12=draft}}, Urashō Aza Suwa 213-1
-|deity={{ill|Takeminakata|ja|建御名方命|12=draft|12=draft}}<br />{{ill|Yasakatome|ja|八坂刀売命|12=draft|12=draft}}
-|type={{ill|Shikinaisha|ja|式内社|12=draft|12=draft}}, Former {{ill|Gōsha|ja|郷社|12=draft|12=draft}}
-|創建=Unknown
-|本殿=
-|alternative names=O-Suwa-san<br />Higashi no Miya
-|festival=[[November 3]]
-|神事=
-|緯度度 = 34 | 緯度分 = 4 | 緯度秒 = 20.5 | N(北緯)及びS(南緯) = N 
-|経度度 = 134 |経度分 = 24 | 経度秒 = 41.3 | E(東経)及びW(西経) = E
-|地図国コード = JP
-|地図 = Japan Tokushima
-}}
-'''Take Minato Jinja''' (たけみなとみじんじゃ) is a {{ill|Shinto shrine|ja|神社|12=draft|12=draft}} located in {{ill|Ishii, Tokushima|ja|石井町|12=draft|12=draft}}, Tokushima Prefecture, Japan. It is a {{ill|Shikinaisha|ja|式内社|12=draft|12=draft}} and regarded as an ancestral shrine of {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}.
-
-== History ==
-The year of the shrine's founding is unknown. The current shrine building was constructed in {{ill|1720|ja|享保|12=draft|12=draft}} 5.
-
-The shrine was highly revered by the {{ill|Hachisuka clan|ja|蜂須賀氏|12=draft|12=draft}}, feudal lords of the Tokushima Domain. During its festival, members of the clan would often personally visit or send representatives. In {{ill|1627|ja|寛永|12=draft|12=draft}} 4, {{ill|Hachisuka Mitsutaka|ja|蜂須賀光隆|12=draft|12=draft}} prayed at the shrine and reported miraculous occurrences. Additionally, a division of the shrine's spirit was transferred to {{ill|Suwa Shrine (Tokushima City)|ja|諏訪神社 (徳島市)|12=draft|12=draft}} near {{ill|Tokushima Castle|ja|徳島城|12=draft|12=draft}} for easier access during times when the flooding of the Ayukui River prevented direct visits to Take Minato Jinja.
-
-According to the shrine's historical records, "In the tenth year of {{ill|Hōki|ja|宝亀|12=draft|12=draft}} during the reign of Emperor {{ill|Kōnin|ja|光仁天皇|12=draft|12=draft}} (779 CE), the Suwa Daimyōjin of Nakata District, Awa Province, was transferred and enshrined at the Minato Shrine in Suwa, Shinano Province (modern-day {{ill|Suwa-taisha|ja|諏訪大社|12=draft|12=draft}}, Nagano Prefecture)." This implies that {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}, known for his mythological dispute with {{ill|Takemikazuchi|ja|武御雷神|12=draft|12=draft}}, originally hailed from Awa Province and that Suwa Taisha's origins trace back to Awa, as recorded in the shrine's documents.<ref>Sasada Takashi, *The Imperial Capital Yamato was Awa*, Sun Lotus Research Institute, 2024, pp. 173-185.</ref>
-
-== Deities ==
-* {{ill|Takeminakata no Mikoto|ja|建御名方命|12=draft|12=draft}}
-* {{ill|Yasakatome no Mikoto|ja|八坂刀売命|12=draft|12=draft}}
-
-== Auxiliary Shrines ==
-* {{ill|Earth God Shrine|ja|地神社|12=draft|12=draft}}
-
-== Access ==
-* Approximately a 25-minute walk from {{ill|Shimoura Station|ja|下浦駅|12=draft|12=draft}} on the {{ill|Tokushima Line|ja|徳島線|12=draft|12=draft}} (JR Shikoku).
-* Approximately a 20-minute walk from {{ill|Ushijima Station|ja|牛島駅|12=draft|12=draft}} on the same line.
-
-== References ==
-
-=== Notes ===
-{{Notelist|2}}
-=== Sources ===
-{{Reflist|colwidth=30em}}
-== Bibliography ==
-* *Kadokawa Japanese Place name Dictionary, Volume 36: Tokushima Prefecture* (1986, ISBN 4040013603), p.440, "Take Minato Jinja."
-* *Japanese Historical Place name Series, Volume 37: Tokushima Prefecture* (2000, ISBN 4582490379), p.545, "Take Minato Jinja."
-* *Tokushima Prefecture Encyclopedia* (1981, Tokushima Shimbunsha Research Department), p.588, "Take Minato Jinja."
-{{shinto-stub}}
-==References==
-{{reflist}}
-{{Suwa Faith}} 
-
-==Notes==
-<references group="lower-alpha"/>
-[[Tagimitonotoya Shrine]]
-[[Category:Buildings and structures in Ishii, Tokushima]]
-[[Category:Gō-sha]]
-[[Category:History of Ishii, Tokushima]]
-[[Category:Kokuhei-sha]]
-[[Category:Pages with duplicated content]]
-[[Category:Shikinaisha in Awa Province (Tokushima)]]
-[[Category:Shinto shrines in Tokushima Prefecture]]
-[[Category:Suwa faith]]
-[[Category:Suwa shrines]]
-[[Category:Suwa Shrines]]
-[[Category:Tagimitonotoya Shrine]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
-
-==merged content==
-[[Category:Pages with duplicated content]]
-
-{{Expand Japanese|多祁御奈刀弥神社}}
-
-{{Infobox religious building
-| name = Tagimitonotoya Shrine
-| native_name = 多祁御奈刀弥神社
-| image = Take Minato-jinja (Ishii,Tokushima).jpg
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Tagimitonotoya Shrine
-| coordinates = {{coord|34.072398|134.411463}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Takeminatomi Shrine'''|多祁御奈刀弥神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
-
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
-* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
-* {{ill|Suwa Shrine|lt=Suwa Shrine|de|Suwa-Schrein|fr|Sanctuaire Suwa|it|Santuario di Suwa|ja|諏訪神社|ko|스와 신사|simple|Suwa shrine|qid=Q2370082}}
-* {{ill|Kokuhei-sha|ltq=Q135160342|qid=Q135160342}}
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Awa Province (Tokushima)|ltq=Q11657514|qid=Q11657514}}
-** Series ordinal: 30
-** P155: {{ill|Mimatsuhiko Shrine|lt=Mimatsuhiko Shrine|ja|御間都比古神社|qid=Q48759389}}
-** P156: {{ill|Enomiya Shrine|ltq=Q11448984|qid=Q11448984}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Ishii, Tokushima|lt=Ishii|arz|ايشى|ceb|Ishii-chō|en|Ishii, Tokushima|es|Ishii (Tokushima)|fa|ایشی، توکوشیما|fi|Ishii|fr|Ishii (Tokushima)|id|Ishii, Tokushima|it|Ishii (Giappone)|ja|石井町|ko|이시이정|ms|Ishii, Tokushima|my|အိရှိအိမြို့|pl|Ishii (Tokushima)|ru|Исии (посёлок)|sv|Ishii, Tokushima|tl|Ishii, Tokushima|tr|Ishii|uk|Ішії (Токусіма)|zh|石井町|qid=Q1205943}}
-* {{ill|Awa Province (Tokushima)|ltq=Q907457|qid=Q907457}}
-* {{ill|Nakata district|ltq=Q3205778|qid=Q3205778}}
-
-== coordinate location (P625) ==
-
-* {{coord|34.072398|134.411463}}<ref>Kokugakuin University Shrine database</ref>
-
-== image (P18) ==
-
-* Take Minato-jinja (Ishii,Tokushima).jpg
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 183204
-** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
-
-== modern shrine ranking (P13723) ==
-
-* {{ill|Gō-sha|lt=Gō-sha|ja|郷社|qid=Q134917316}}
-** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
-** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
-
-== country (P17) ==
-
-* {{ill|Japan|ltq=Q17|qid=Q17}}
-
-== name in kana (P1814) ==
-
-* たけみなとみじんじゃ
-
-== Corporate Number (Japan) (P3225) ==
-
-* 5480005001222
-
-== street address (P6375) ==
-
-* {'text': '徳島県名西郡石井町浦庄字諏訪213-1', 'language': 'ja'}
-
-[[JA:多祁御奈刀弥神社]]
-
-{{wikidata link|Q48759404}}
 
 == Japanese content ==
 {{参照方法|date=2018年2月}}
@@ -287,10 +78,10 @@ According to the shrine's historical records, "In the tenth year of {{ill|Hōki|
 |祭神= {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Mikoto|qid=Q9150391}}<br />{{ill|UNKNOWN|lt=Yasakatome-no-Mikoto}}
 |社格= {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}・former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
 |創建= Unknown
-|本殿= 
+|本殿=
 |別名= Osuwa-san<br />Higashi-no-Miya
 |例祭= {{ill|November 3|Q2995|qid=Q2995}}
-|神事= 
+|神事=
 |地図= {{Location map|Japan Tokushima|label=Tagi Mina<br />toya Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
@@ -301,7 +92,7 @@ The founding year is unknown. The current shrine building was constructed in {{i
 
 It was deeply revered by the Hachisuka family, lords of the {{ill|Tokushima Domain|Q3034557|qid=Q3034557}}, who worshiped in person or by proxy at the annual grand festival. In {{ill|1627|Q6833|qid=Q6833}} ({{ill|Kan'ei|Q1192913|qid=Q1192913}} 4), {{ill|Hachisuka Mitsutaka|Q3125458|qid=Q3125458}} prayed and reportedly received auspicious signs. It is also said that because visits by the Hachisuka could be blocked by flooding of the {{ill|Akui River|Q11674107|qid=Q11674107}}, a divided spirit was enshrined at {{ill|Suwa Shrine (Tokushima City)|Q11631927|qid=Q11631927|lt=Suwa Shrine}} near {{ill|Tokushima Castle|Q8011246|qid=Q8011246}}.
 
-According to the shrine’s traditional record, “in Hōki 10 (779), under {{ill|Emperor Kōnin|Q958662|qid=Q958662}}, Minamikatotomi Shrine in Suwa District, {{ill|Shinano Province|Q289250|qid=Q289250}} (today’s {{ill|Suwa-taisha|Q218813|qid=Q218813}} in {{ill|Nagano Prefecture|Q127877|qid=Q127877}}) transferred and enshrined Suwa Daimyōjin from Myōkata District, {{ill|Awa Province (Tokushima)|Q907457|qid=Q907457}}” (''Ura-shō Village History''). In other words, this record preserves a view that the original base of Takeminakata, who contended with {{ill|Takemikazuchi|lt=Takemikazuchi|Q1502690|qid=Q1502690}} in the kuni-yuzuri episode, was in Awa, and that Suwa Taisha in Nagano was invited from Awa after the compilation of the Kiki<ref>Sasada Takashi, ''The Imperial Capital Yamato Was Awa'', Sun Lotus Research Institute, 2024, pp.173-185.</ref>.
+According to the shrine’s traditional record, “in Hōki 10 (779), under {{ill|Emperor Kōnin|ar|الإمبراطور كونين|arz|الامبراطور كونين|azb|کونین (ایمپیراتور)|ckb|ئیمپراتۆر کۆنین|cs|Kónin|de|Kōnin|es|Kōnin Tennō|eu|Kōnin enperadorea|fa|امپراتور کونین|fi|Kōnin|fr|Kōnin|hu|Kónin japán császár|id|Kaisar Kōnin|it|Kōnin|ja|光仁天皇|ko|고닌 천황|mn|Эзэн Хаан Коонин|mr|कोनिन|nl|Konin (keizer)|pl|Kōnin|pt|Konin|ru|Император Конин|sh|Car Kōnin|simple|Emperor Kōnin|sl|Cesar Konin|sv|Kōnin|th|จักรพรรดิโคนิง|tl|Emperador Kōnin|tr|Kōnin (imparator)|uk|Імператор Конін|vi|Thiên hoàng Kōnin|yo|Emperor Kōnin|zh|光仁天皇|zh_min_nan|Kônin Thian-hông|qid=Q958662}}, Minamikatotomi Shrine in Suwa District, {{ill|Shinano Province|Q289250|qid=Q289250}} (today’s {{ill|Suwa-taisha|Q218813|qid=Q218813}} in {{ill|Nagano Prefecture|Q127877|qid=Q127877}}) transferred and enshrined Suwa Daimyōjin from Myōkata District, {{ill|Awa Province (Tokushima)|Q907457|qid=Q907457}}” (''Ura-shō Village History''). In other words, this record preserves a view that the original base of Takeminakata, who contended with {{ill|Takemikazuchi|lt=Takemikazuchi|Q1502690|qid=Q1502690}} in the kuni-yuzuri episode, was in Awa, and that Suwa Taisha in Nagano was invited from Awa after the compilation of the Kiki<ref>Sasada Takashi, ''The Imperial Capital Yamato Was Awa'', Sun Lotus Research Institute, 2024, pp.173-185.</ref>.
 
 === Enshrined deities ===
 * {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Mikoto|qid=Q9150391}}
@@ -320,18 +111,33 @@ According to the shrine’s traditional record, “in Hōki 10 (779), under {{il
 {{Reflist|colwidth=30em}}
 === Bibliography ===
 * ''{{ill|Kadokawa Nihon Chimei Daijiten|Q4093011|qid=Q4093011}} 36 Tokushima Prefecture'' ({{ill|1986|Q2430|qid=Q2430}} ISBN 4040013603), p.440, “Tagimitonotoya Shrine.”
-* ''{{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}} 37 Place Names of Tokushima Prefecture'' (2000, ISBN 4582490379), p.545, “Tagimitonotoya Shrine.”
+* ''{{ill|Japanese Historical Topography Series|ja|日本歴史地名大系|zh|日本歷史地名大系|qid=Q17213509}} 37 Place Names of Tokushima Prefecture'' (2000, ISBN 4582490379), p.545, “Tagimitonotoya Shrine.”
 * ''Tokushima Prefecture Encyclopedia'' (1981, Tokushima Shimbunsha Research Bureau ed.), p.588, “Tagimitonotoya Shrine.”
-{{shinto-stub}}
 
-== Categories ==
-[[Category:Wikidata generated shikinaisha pages|Tagimitonotoya Shrine]][[Category:Shikinaisha|Tagimitonotoya Shrine]][[Category:Suwa Shrine]]
+== Notes ==
+<references group="lower-alpha"/>
+
+[[Tagimitonotoya Shrine]]
+
+[[JA:多祁御奈刀弥神社]]
+
+{{wikidata link|Q48759404|ja|多祁御奈刀弥神社|check_date=2026-05-26}}
+
+{{shinto-stub}}
+{{Suwa Faith}}
+
+[[Category:Buildings and structures in Ishii, Tokushima]]
+[[Category:石井町の建築物]]
+[[Category:Gō-sha]]
+[[Category:Former Gō-sha in Tokushima Prefecture]]
+[[Category:History of Ishii, Tokushima]]
+[[Category:石井町の歴史]]
+[[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Awa Province (Tokushima)]]
 [[Category:Shinto shrines in Tokushima Prefecture]]
-[[Category:石井町の歴史]]
-[[Category:石井町の建築物]]
-[[Category:Shikinaisha in Awa Province (Tokushima)]]
-[[Category:Former Gō-sha in Tokushima Prefecture]]
-[[Category:Suwa shrines]]
+[[Category:Suwa faith]]
+[[Category:Shikinai Shōsha]]
+[[Category:Wikidata generated shikinaisha pages|Tagimitonotoya Shrine]]
+[[Category:Shikinaisha|Tagimitonotoya Shrine]]
 [[Category:qqqq]]
 [[Category:Independently git synced pages]]

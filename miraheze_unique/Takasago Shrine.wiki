@@ -1,32 +1,24 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:高砂神社 (曖昧さ回避)]]
-<!--interwikis from wikidata-->[[ja:高砂神社 (曖昧さ回避)]]
-<!--interwikis from wikidata-->[[ja:高砂神社 (曖昧さ回避)]]
 
-'''Takasago Shrine''' (高砂神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}.
+'''Takasago Shrine''' (高砂神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}.
 
-* {{ill|Takasago Shrine (Sendai)|ja|高砂神社 (仙台市)|12=simple|13=User:Immanuelle/Takasago Shrine (Sendai)|ja_comment=jawiki link invalid}} – Located in {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture|1=Miyagi Prefecture}}, {{ill|Sendai|en|Sendai|qid=Q46747|lt=Sendai|1=Sendai}}, {{ill|Miyagino-ku, Sendai|en|Miyagino-ku, Sendai|qid=Q1043355|lt=Miyagino-ku|1=Miyagino-ku, Sendai}}.
-* {{ill|Takasago Shrine (Adachi)|ja|高砂神社 (足立区)|12=simple|13=User:Immanuelle/Takasago Shrine (Adachi)|ja_comment=jawiki link invalid}} – Located in {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis|1=Tokyo}}, {{ill|Adachi, Tokyo|en|Adachi, Tokyo|qid=Q213464|lt=Adachi, Tokyo|1=Adachi, Tokyo}}, {{ill|Adachi (Adachi-ku)|ja|足立 (足立区)|12=simple|13=User:Immanuelle/Adachi (Adachi-ku)|1=Adachi|comment=changed title based on wikidata|qid=Q11636912}}.
-* {{ill|Takasago Shrine (Osaka)|ja|高砂神社 (大阪市)|12=simple|13=User:Immanuelle/Takasago Shrine (Osaka)}} – Located in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka|1=Osaka}}, {{ill|Suminoe-ku, Osaka|en|Suminoe-ku, Osaka|qid=Q985711|lt=Suminoe-ku|1=Suminoe-ku, Osaka}}.
-* {{ill|Takasago Shrine (Hyōgo)|ja|高砂神社|12=simple|13=User:Immanuelle/Takasago Shrine (Hyōgo)|1=Takasago Shrine|comment=changed title based on wikidata|qid=Q11672641}} – Located in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}, {{ill|Takasago, Hyōgo|en|Takasago, Hyōgo|qid=Q869037|lt=Takasago, Hyōgo|1=Takasago, Hyōgo}}.
+* {{ill|Takasago Shrine (Sendai)|ja|高砂神社 (仙台市)}} – Located in {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}, {{ill|Sendai|en|Sendai|qid=Q46747|lt=Sendai}}, {{ill|Miyagino-ku, Sendai|ar|مياغينو-كو|ceb|Miyagino Ku|fa|میاگینو-کو، سندای|fr|Miyagino-ku|id|Miyagino-ku, Sendai|it|Miyagino-ku|ja|宮城野区|ko|미야기노구|th|เขตมิยางิโนะ|tr|Miyagino|uk|Район Міяґіно|vi|Miyagino, Sendai|zh|宮城野區|qid=Q1043355|lt=Miyagino-ku}}.
+* {{ill|Takasago Shrine (Adachi)|ja|高砂神社 (足立区)}} – Located in {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo Metropolis}}, {{ill|Adachi, Tokyo|ace|Adachi, Tokyo|ar|أداتشي (طوكيو)|arz|أداتشي (طوكيو)|az|Adaçi|ban|Adachi, Tokyo|ca|Adachi (Tòquio)|ce|Адати|ceb|Adachi-ku|ckb|ئاداچی، تۆکیۆ|da|Adachi|de|Adachi|eo|Kvartalo Adaĉi|es|Adachi (Tokio)|et|Adachi|eu|Adachi|fa|آداچی-کو، توکیو|fi|Adachi|fr|Adachi|gan|足立區|gl|Adachi, Tokyo|he|אדאצ'י|ht|Adachi|hy|Ադաթի|id|Adachi, Tokyo|it|Adachi (Tokyo)|ja|足立区|jv|Adachi, Tokyo|ka|ადაჩი|ko|아다치구|la|Adachi|lt|Adačio seniūnija|ms|Adachi, Tokyo|nl|Adachi (Tokio)|no|Adachi|pl|Adachi (Tokio)|pt|Adachi|ro|Adachi|ru|Адати|simple|Adachi, Tokyo|su|Adachi, Tokyo|sv|Adachi|th|เขตอาดาจิ|tl|Adachi, Tokyo|tr|Adachi|tt|Адати|uk|Адаті (район)|ur|اداچی، ٹوکیو|vi|Adachi, Tokyo|war|Adachi, Tokyo|zh|足立區|zh_min_nan|Adati-khu|zh_yue|足立區|qid=Q213464|lt=Adachi, Tokyo}}, {{ill|Adachi|ja|足立 (足立区)|qid=Q11636912}}.
+* {{ill|Takasago Shrine (Osaka)|ja|高砂神社 (大阪市)}} – Located in {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, {{ill|Osaka|en|Osaka|qid=Q35765|lt=Osaka}}, {{ill|Suminoe-ku, Osaka|en|Suminoe-ku, Osaka|qid=Q985711|lt=Suminoe-ku}}.
+* {{ill|Takasago Shrine|ja|高砂神社|12=simple|13=User:Immanuelle/Takasago Shrine (Hyōgo)|comment=changed title based on wikidata|qid=Q11672641}} – Located in {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, {{ill|Takasago, Hyōgo|en|Takasago, Hyōgo|qid=Q869037|lt=Takasago, Hyōgo}}.
 
 {{disambiguation|Disambiguation|ja|曖昧さ回避}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Takasago Shrine (Q113637099)|lt=Takasago Shrine|qid=Q113637099}} — Adachi
 * {{ill|Takasago Shrine (Q11672641)|lt=Takasago Shrine|qid=Q11672641}} — Takasago
 * {{ill|Takasago Shrine (Q128866969)|lt=Takasago Shrine|qid=Q128866969}} — Suminoe-ku
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|高砂神社 (曖昧さ回避)|version=39213973|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11672640|ja|高砂神社 (曖昧さ回避)}}
+{{wikidata link|Q11672640|ja|高砂神社 (曖昧さ回避)|check_date=2026-05-26}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

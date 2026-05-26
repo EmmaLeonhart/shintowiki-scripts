@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takakurayui_Mikoshi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
-
 {{Infobox religious building
 |名称   = Takakurayui Mikoshi Shrine (高座結御子神社)
 |image   = [[File:Takakura-musubi-miko-jinja Shrine Haiden, Takakura-cho Atsuta Ward Nagoya 2021.jpg|250px]]<br />Haiden<BR/>(2021 ({{ill|Reiwa era|en|Reiwa era|qid=Q62609017|lt=Reiwa}} 3) March)
@@ -9,7 +7,7 @@
 |lon_deg = 136 |lon_min = 54 |lon_sec = 16.03
 |祭神   = {{ill|Takakuraji|en|Takakuraji|qid=Q11668757|lt=Takakura-shita-no-mikoto}}
 |神体   = 
-|社格   = {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|lt=Myoujindai|lt_ja=名神大|12=simple|13=User:Immanuelle/Myoujindai|comment=changed title based on wikidata|qid=Q9610964}})<br />{{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}} Keigai-Sessha
+|社格   = {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|lt=Myoujindai|lt_ja=名神大|12=simple|13=User:Immanuelle/Myoujindai|comment=changed title based on wikidata|qid=Q9610964}})<br />{{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}} Keigai-Sessha
 |創建   = (traditionally) during the reign of {{ill|Emperor Tenmu|2=ja|3=天武天皇|ja|Emperor Tenmu|2=ja|3=天武天皇|12=simple|13=User:Immanuelle/Emperor Tenmu|13=User:Immanuelle/Emperor Tenmu|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q335181}} (673–686)
 |本殿   = {{ill|Owari-zukuri|ja|尾張造|12=simple|13=User:Immanuelle/Owari-zukuri|comment=changed title based on wikidata|qid=Q11465322}}
 |別名   = 
@@ -18,12 +16,12 @@
 |神事   = 
 }}
 
-'''Takakurayui Mikoshi Shrine''' (Takakuramusubimiko-jinja) is a shrine located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}} {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}} {{ill|Atsuta-ku, Nagoya|en|Atsuta-ku, Nagoya|qid=Q1355625|lt=Atsuta Ward}} {{ill|Takakura-chō|ja|高蔵町 (名古屋市)|lt=Takakura-cho|lt_ja=高蔵町|12=simple|13=User:Immanuelle/Takakura-cho (Nagoya)|comment=changed title based on wikidata|qid=Q56449178}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|12=simple|13=User:Immanuelle/Myoujindai|comment=changed title based on wikidata|qid=Q9610964}}) and a Keigai-Sessha of {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}.
+'''Takakurayui Mikoshi Shrine''' (Takakuramusubimiko-jinja) is a shrine located in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}} {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}} {{ill|Atsuta-ku, Nagoya|en|Atsuta-ku, Nagoya|qid=Q1355625|lt=Atsuta Ward}} {{ill|Takakura-chō|ja|高蔵町 (名古屋市)|lt=Takakura-cho|lt_ja=高蔵町|12=simple|13=User:Immanuelle/Takakura-cho (Nagoya)|comment=changed title based on wikidata|qid=Q56449178}}. It is a {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} ({{ill|Myōjin Taisha|ja|名神大社|12=simple|13=User:Immanuelle/Myoujindai|comment=changed title based on wikidata|qid=Q9610964}}) and a Keigai-Sessha of {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}.
 
 Like Atsuta Shrine, it enshrines the ancestral deity of Owari. Serving as the guardian and tutelary deity of the Takakura area, it is deeply revered locally and affectionately called “Takakura-sama.”
 
 == Worshipped deities (Saijin) ==
-{{see also|{{ill|Saijin|ja|祭神|12=simple|13=User:Immanuelle/Saijin}}}}
+{{see also|{{ill|Saijin|ja|祭神}}}}
 The enshrined deity is the following one figure<ref name="HistoryDocument">Shrine History Document.</ref>:
 * '''{{ill|Takakuraji|en|Takakuraji|qid=Q11668757|lt=Takakura-shita-no-mikoto}}''' (Takakura-shita-no-mikoto)
 
@@ -38,7 +36,7 @@ According to the national histories ({{ill|Rikkokushi|en|Rikkokushi|qid=Q1151168
 
 In the {{ill|Enchō|en|Enchō|qid=Q1327274|lt=Enchō}} 5th year (927) version of the ''Engishiki'' ({{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|lt=Jinmyōchō|lt_ja=神名帳|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}), in Owari Province’s {{ill|Aichi District|en|Aichi District|qid=Q552687|lt=Aichi District}}, it is recorded as “Takakurayui Mikoshi Shrine Myoujindai” and is listed alongside the {{ill|Myōjin Taisha|ja|名神大社|12=simple|13=User:Immanuelle/Myoujindai Shrine|comment=changed title based on wikidata|qid=Q9610964}}{{Sfn|Takakurayui Mikoshi Shrine (Shikinaisha)|1989}}. Moreover, in the {{ill|Owari Kokunai Jinmyōchō|ja|尾張国内神名帳|12=simple|13=User:Immanuelle/Owari Kokunai Shinmyōchō|comment=changed title based on wikidata|qid=Q11041830}}, it is recorded either as “Takakura Myōjin” or “Takakura Myōjin”{{Sfn|Miya-ki|2012|p=28}}.
 
-During the construction in the {{ill|Genki (era)|en|Genki (era)|qid=Q1145064|lt=Genki era}} 2nd year (1571), there was a donation from {{ill|Oda Nobunaga|en|Oda Nobunaga|qid=Q171411|lt=Oda Nobunaga}}; in the Edo period, in the {{ill|Genna|en|Genna|qid=Q635245|lt=Genwa}} 4th year (1618), repairs were carried out by {{ill|Hachisuka Iemasa|en|Hachisuka Iemasa|qid=Q1073557|lt=Hachisuka Iemasa}}, and in the {{ill|Jōkyō|en|Jōkyō|qid=Q1146221|lt=Jōkyō era}} 3rd year (1686), when Atsuta Shrine was reconstructed by the {{ill|Tokugawa shogunate|ja|Tokugawa shogunate|2=ja|3=江戸幕府|12=simple|13=User:Immanuelle/Edo Shogunate|ja_comment=jawiki link invalid}}, similar repairs were made to this shrine{{Sfn|Takakurayui Mikoshi Shrine (Shikinaisha)|1989}}.
+During the construction in the {{ill|Genki (era)|en|Genki (era)|qid=Q1145064|lt=Genki era}} 2nd year (1571), there was a donation from {{ill|Oda Nobunaga|en|Oda Nobunaga|qid=Q171411|lt=Oda Nobunaga}}; in the Edo period, in the {{ill|Genna|de|Genna (Ära)|es|Genna|fa|گننا|fr|Ère Genna|id|Genna|it|Genna|ja|元和 (日本)|ko|겐나|ru|Гэнна|simple|Genna|sr|Гена|sv|Genna|tr|Genna|zh|元和 (日本)|qid=Q635245|lt=Genwa}} 4th year (1618), repairs were carried out by {{ill|Hachisuka Iemasa|en|Hachisuka Iemasa|qid=Q1073557|lt=Hachisuka Iemasa}}, and in the {{ill|Jōkyō|en|Jōkyō|qid=Q1146221|lt=Jōkyō era}} 3rd year (1686), when Atsuta Shrine was reconstructed by the {{ill|Tokugawa shogunate|ja|Tokugawa shogunate}}, similar repairs were made to this shrine{{Sfn|Takakurayui Mikoshi Shrine (Shikinaisha)|1989}}.
 
 The shrine building, originally in the {{ill|Owari-zukuri|ja|尾張造|12=simple|13=User:Immanuelle/Owari-zukuri|comment=changed title based on wikidata|qid=Q11465322}} style with a vermilion finish, was almost entirely destroyed by wartime damage in the {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa era}} 20th year (1945) and was rebuilt in a form approximating its pre-war appearance in the {{ill|Shōwa era|en|Shōwa era|qid=Q327567|lt=Shōwa era}} 38th year (1963){{Sfn|Takakurayui Mikoshi Shrine (Shikinaisha)|1989}}.
 
@@ -49,11 +47,11 @@ The shrine building, originally in the {{ill|Owari-zukuri|ja|尾張造|12=simple
 ** Either Senior Second Rank<ref>[{{NDLDC|991014/413}} ''Shinja Kakoroku, Volume 1'' (Imperial Studies Institute, 1902, National Diet Library Digital Collection) 413 lines]</ref>, or Upper Senior Second Rank<ref>{{PDFlink|[https://websv.aichi-pref-library.jp/wahon/pdf/1103283156-001.pdf ''Domestic Shinmyōchō'']]} (Bunsei 13 [1830] transcribed combined edition, Aichi Prefectural Library “Precious Wa Books Digital Library”) 6 lines.</ref>, or Junior Second Rank{{Sfn|Miya-ki|2012|p=28}} (in the {{ill|Owari Kokunai Jinmyōchō|ja|尾張国内神名帳|12=simple|13=User:Immanuelle/Owari Kokunai Shinmyōchō|comment=changed title based on wikidata|qid=Q11041830}}) – the inscription being “Takakura Myōjin” or “Takakura Myōjin”{{Sfn|Miya-ki|2012|p=28}}. Note that the Ranking varies among manuscripts.
 
 == Subordinate Shrines ==
-Within the precincts, the following four subsidiary shrines are enshrined<ref name="HistoryDocument"/>. In the early modern period, it is said that there were also the {{ill|Mitarai Shrine|ja|御手洗神社|12=simple|13=User:Immanuelle/Mitarai Shrine|ja_comment=jawiki link invalid}} and the {{ill|Watatsumi Shrine (disambiguation)|en|Watatsumi Shrine|qid=Q123530063|lt=Kaijin Shrine}}.
-* {{ill|Hokotori Shrine|ja|鉾取社|12=simple|13=User:Immanuelle/Hokotori Shrine|ja_comment=jawiki link invalid}} – Enshrined deity: {{ill|Hokotori-no-Kami|ja|鉾取神|12=simple|13=User:Immanuelle/Hokotori-no-Kami|ja_comment=jawiki link invalid}}
-* {{ill|Shingu Shrine|ja|新宮社|12=simple|13=User:Immanuelle/Shingu Shrine|ja_comment=jawiki link invalid}} – Enshrined deity: {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo}}
-* {{ill|Mii Shrine|ja|御井社|12=simple|13=User:Immanuelle/Mii Shrine|ja_comment=jawiki link invalid}} – Enshrined deity: {{ill|Kimata-no-Kami|ja|御井神|12=simple|13=User:Immanuelle/Mii-no-Kami|ja_comment=jawiki redirects to 木俣神|comment=changed title based on wikidata|qid=Q11092833}}
-* {{ill|Inari shrine|ja|稲荷社|12=simple|13=User:Immanuelle/Inari Shrine|ja_comment=jawiki redirects to 稲荷神社|comment=changed title based on wikidata|qid=Q514480}} – Enshrined deity: {{ill|Ukanomitama|en|Ukanomitama|qid=Q3080728|qid=Q3080728|lt=Ukanomitama}}
+Within the precincts, the following four subsidiary shrines are enshrined<ref name="HistoryDocument"/>. In the early modern period, it is said that there were also the {{ill|Mitarai Shrine|ja|御手洗神社}} and the {{ill|Watatsumi Shrine (disambiguation)|en|Watatsumi Shrine|qid=Q123530063|lt=Kaijin Shrine}}.
+* {{ill|Hokotori Shrine|ja|鉾取社}} – Enshrined deity: {{ill|Hokotori-no-Kami|ja|鉾取神}}
+* {{ill|Shingu Shrine|ja|新宮社}} – Enshrined deity: {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo}}
+* {{ill|Mii Shrine|ja|御井社}} – Enshrined deity: {{ill|Kimata-no-Kami|ja|御井神|12=simple|13=User:Immanuelle/Mii-no-Kami|ja_comment=jawiki redirects to 木俣神|comment=changed title based on wikidata|qid=Q11092833}}
+* {{ill|Inari shrine|ja|稲荷社|12=simple|13=User:Immanuelle/Inari Shrine|ja_comment=jawiki redirects to 稲荷神社|comment=changed title based on wikidata|qid=Q514480}} – Enshrined deity: {{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama}}
 *: It is said that the mother of {{ill|Toyotomi Hideyoshi|en|Toyotomi Hideyoshi|qid=Q187550|lt=Toyotomi Hideyoshi}} (later known as {{ill|Ōmandokoro|en|Ōmandokoro|qid=Q5353737|lt=Ōmandokoro}}) once took the young Hideyoshi with her to pray for his rise in life, which is why this shrine is also known by the alternate name “Taikō Shusse Inari.”
 
 == Festivals ==
@@ -117,7 +115,7 @@ Takakura Kofun No.4, Takakura-cho Atsuta Ward Nagoya 2021.jpg|Takakura Kofun No.
 {{translated page|ja|高座結御子神社|version=92718340|comment=Imported full ja history}}
 
 {{Commons category|Takakuramusubimiko-jinja}}
-{{wikidata link|Q11669906|ja|高座結御子神社|co|commons:Category:Takakuramusubimiko-jinja|check_date=2026-05-10}}
+{{wikidata link|Q11669906|ja|高座結御子神社|co|commons:Category:Takakuramusubimiko-jinja|check_date=2026-05-26}}
 [[Category:Atsuta Shrine]]
 [[Category:Buildings and structures in Atsuta-ku, Nagoya]]
 [[Category:History of Atsuta-ku, Nagoya]]

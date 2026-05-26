@@ -1,53 +1,49 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[co:commons:Category:Takahama-jinja (Suita)]][[ja:高浜神社 (吹田市)]]
-<!--interwikis from wikidata-->[[co:commons:Category:Takahama-jinja (Suita)]][[ja:高浜神社 (吹田市)]]
-<!--interwikis from wikidata-->[[ja:高浜神社 (吹田市)]]
 
 __NOTOC__
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Takahama Shrine
 | religious_affiliation = [[Shinto]]
 |image = File:Suita Takahama-jinja 2021-08 ac (1).jpg
-|location = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, {{ill|Suita|en|Suita|qid=Q653510|lt=Suita|1=Suita}} City, Takahama Town 5-34
+|location = {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, {{ill|Suita|en|Suita|qid=Q653510|lt=Suita}} City, Takahama Town 5-34
 |coordinates = {{Coord|34.759|N|135.526889}}
-|Deities = {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}, {{ill|Kasuga-no-Kami|ja|春日大神|12=simple|13=User:Immanuelle/Kasuga-no-Kami|ja_comment=jawiki redirects to 春日神}}, {{ill|Sumiyoshi-no-Okami|ja|住吉大神|12=simple|13=User:Immanuelle/Sumiyoshi-no-Okami|ja_comment=jawiki redirects to 住吉三神|1=Sumiyoshi sanjin|comment=changed title based on wikidata|qid=Q1114013}}, among others
-|Shrine Rank = Former {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
+|Deities = {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto}}, {{ill|Kasuga-no-Kami|ja|春日大神}}, {{ill|Sumiyoshi sanjin|ja|住吉大神|12=simple|13=User:Immanuelle/Sumiyoshi-no-Okami|ja_comment=jawiki redirects to 住吉三神|comment=changed title based on wikidata|qid=Q1114013}}, among others
+|Shrine Rank = Former {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}
 |Founding = Around the 5th century
 |Main hall = Three-bay Nagare-zukuri
 |Festivals = August 5 (Summer Festival), October 5 (Autumn Festival)
 |Other names = Hamanomiya Gozu Tennōsha
 |Rituals =
-|location = {{ill|Suita|qid=Q653510|1=Suita}}
+|location = {{ill|Suita|qid=Q653510}}
 }}
-'''Takahama Shrine''' (高浜神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} located in {{ill|Suita|en|Suita|qid=Q653510|lt=Suita|1=Suita}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}, Takahama Town<ref>{{ill|Settsu Province|en|Settsu Province|qid=Q864163|lt=Settsu Province|1=Settsu Province}}, Shimashimo District (島下郡), [[Suita Village]] Takahama</ref>. The shrine's former Rank was that of a {{ill|Village Shrine|ja|村社|1=Son-sha|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+'''Takahama Shrine''' (高浜神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Suita|en|Suita|qid=Q653510|lt=Suita}}, {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Takahama Town<ref>{{ill|Settsu Province|en|Settsu Province|qid=Q864163|lt=Settsu Province}}, Shimashimo District (島下郡), [[Suita Village]] Takahama</ref>. The shrine's former Rank was that of a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917284|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
 
 == Deities ==
 
 ; Principal deities
-* {{ill|Susanoo-no-Mikoto|ja|素盞嗚大神|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|ja_comment=jawiki link invalid}}
+* {{ill|Susanoo-no-Mikoto|ja|素盞嗚大神}}
 * {{ill|Amaterasu|ja|天照皇大神|12=simple|13=User:Immanuelle/Amaterasu-Ōmikami|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}
-* {{ill|Kasuga-no-Kami|ja|春日大神|12=simple|13=User:Immanuelle/Kasuga-no-Kami|ja_comment=jawiki redirects to 春日神}}
-* {{ill|Sumiyoshi sanjin|lt=Sumiyoshi-no-Kami|ja|住吉大神|12=simple|13=User:Immanuelle/Sumiyoshi sanjin|ja_comment=jawiki redirects to 住吉三神}}
-* {{ill|Hakusan Gongen|ja|白山大神|12=simple|13=User:Immanuelle/Hakusan Gongen|ja_comment=jawiki redirects to 白山権現}}
-* Suita ancestral deities ({{ill|Amenohoakari|en|Amenohoakari|qid=Q10940411|lt=Amaterasu-Kokutateru-Hiko-Honihimenomikoto|1=Amenohoakari}}, {{ill|Ame-no-Kaguyama|ja|天香山命|Ame-no-Kaguyama=Ame-no-Kaguyama|lt=Ama-Kaguyama-no-Mikoto|12=simple|13=User:Immanuelle/Ame-no-Kaguyama}})
+* {{ill|Kasuga-no-Kami|ja|春日大神}}
+* {{ill|Sumiyoshi sanjin|ja|住吉大神|lt=Sumiyoshi-no-Kami}}
+* {{ill|Hakusan Gongen|ja|白山大神}}
+* Suita ancestral deities ({{ill|Amenohoakari|en|Amenohoakari|qid=Q10940411|lt=Amaterasu-Kokutateru-Hiko-Honihimenomikoto}}, {{ill|Ame-no-Kaguyama|ja|天香山命|lt=Ama-Kaguyama-no-Mikoto}})
 
 == History ==
 
 [[File:Suita Takahama-jinja 2021-08 ac (3).jpg|thumb|Grounds and haiden]]
 
-During the 5th century, in the era of the [[Yamato Court]], the local clan {{ill|Tsugita Muraji|ja|次田連|12=simple|13=User:Immanuelle/Tsugita Muraji|ja_comment=jawiki link invalid}} crossed the {{ill|Yodo River|en|Yodo River|qid=Q1140505|lt=Yodo River|1=Yodo River}} and established the Tsugita Village, marking the beginning of Suita. The shrine originally enshrined the ancestral deities {{ill|Amenohoakari|en|Amenohoakari|qid=Q10940411|lt=Amaterasu-Kokutateru-Hiko-Honihimenomikoto|1=Amenohoakari}} ({{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|ニギハヤヒ|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto}}) and his son {{ill|Ame-no-Kaguyama|ja|天香山命|Ame-no-Kaguyama=Ame-no-Kaguyama|lt=Ama-Kaguyama-no-Mikoto|12=simple|13=User:Immanuelle/Ame-no-Kaguyama}}, serving as the clan shrine of the Tsugita Muraji lineage. The name "Takahama" is an alternate name for Suita.
+During the 5th century, in the era of the [[Yamato Court]], the local clan {{ill|Tsugita Muraji|ja|次田連}} crossed the {{ill|Yodo River|en|Yodo River|qid=Q1140505|lt=Yodo River}} and established the Tsugita Village, marking the beginning of Suita. The shrine originally enshrined the ancestral deities {{ill|Amenohoakari|en|Amenohoakari|qid=Q10940411|lt=Amaterasu-Kokutateru-Hiko-Honihimenomikoto}} ({{ill|Nigihayahi|ja|ニギハヤヒ|lt=Nigihayahi-no-Mikoto}}) and his son {{ill|Ame-no-Kaguyama|ja|天香山命|lt=Ama-Kaguyama-no-Mikoto}}, serving as the clan shrine of the Tsugita Muraji lineage. The name "Takahama" is an alternate name for Suita.
 
-Under the administrative divisions of ancient Japan, most of Suita belonged to {{ill|Mishima District (Osaka)|ja|三島郡|12=simple|13=User:Immanuelle/Mishima District (Osaka)|1=Distrikto Miŝima|comment=changed title based on wikidata|qid=Q10865943}}. After the {{ill|Taihō Code|en|Taihō Code|qid=Q1059892|lt=Taihō Code|1=Taihō Code}} in 701 CE divided the Mishima District into Shimakami and Shimashimo Districts, Suita was assigned to Shimashimo District. To the north of Suita, the village of Fukui, also in Shimashimo District, is home to the {{ill|Niiya ni Masu Amateru Mitama Shrine|ja|新屋坐天照御魂神社|12=simple|13=User:Immanuelle/Niiya ni Masu Amateru Mitama Shrine}}, founded in the late 4th century by imperial decree of Emperors {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Sujin|1=Emperor Sujin}} and {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Keikō|1=Emperor Keikō}}. This shrine shares the same principal deity as Takahama Shrine, suggesting that {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日尊|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|1=Nigihayahi|lt=Nigihayahi-no-Mikoto}} was likely the tutelary deity of the Mishima District, including Suita.
+Under the administrative divisions of ancient Japan, most of Suita belonged to {{ill|Distrikto Miŝima|ja|三島郡|12=simple|13=User:Immanuelle/Mishima District (Osaka)|comment=changed title based on wikidata|qid=Q10865943}}. After the {{ill|Taihō Code|en|Taihō Code|qid=Q1059892|lt=Taihō Code}} in 701 CE divided the Mishima District into Shimakami and Shimashimo Districts, Suita was assigned to Shimashimo District. To the north of Suita, the village of Fukui, also in Shimashimo District, is home to the {{ill|Niiya ni Masu Amateru Mitama Shrine|ja|新屋坐天照御魂神社}}, founded in the late 4th century by imperial decree of Emperors {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Sujin}} and {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Keikō}}. This shrine shares the same principal deity as Takahama Shrine, suggesting that {{ill|Nigihayahi|lt=Nigihayahi|lt=Nigihayahi-no-Mikoto|ja|饒速日尊|12=simple|13=User:Immanuelle/Nigihayahi-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q10949054|lt=Nigihayahi-no-Mikoto}} was likely the tutelary deity of the Mishima District, including Suita.
 
-The {{ill|Settsu Meisho Zue|ja|摂津名所図会|12=simple|13=User:Immanuelle/Settsu Meisho Zue|1=Settsu Meisho Zue|comment=changed title based on wikidata|qid=Q11498549}} states: "There are two shrines in Suita Village. They enshrine {{ill|Gozu Tennō|ja|牛頭天皇|12=simple|13=User:Immanuelle/Gozu Tennō|ja_comment=jawiki redirects to 牛頭天王}} and {{ill|Kasuga-no-Kami|ja|春日明神|lt=Kasuga Myōjin|12=simple|13=User:Immanuelle/Kasuga-no-Kami|ja_comment=jawiki redirects to 春日神}}. These are the local tutelary deities, also called Myōjisha."
+The {{ill|Settsu Meisho Zue|ja|摂津名所図会|12=simple|13=User:Immanuelle/Settsu Meisho Zue|comment=changed title based on wikidata|qid=Q11498549}} states: "There are two shrines in Suita Village. They enshrine {{ill|Gozu Tennō|ja|牛頭天皇}} and {{ill|Kasuga-no-Kami|ja|春日明神|lt=Kasuga Myōjin}}. These are the local tutelary deities, also called Myōjisha."
 
-In 735 CE (7th year of {{ill|Tenpyō|en|Tenpyō|qid=Q1199879|lt=Tenpyō|1=Tenpyō}}), the monk {{ill|Gyōki|en|Gyōki|qid=Q1136664|lt=Gyōki|1=Gyōki}} founded the Ishiura Jingūji temple to the west of the shrine, naming it Hamanodō (present-day {{ill|Jōkō Enman-ji|ja|常光円満寺|12=simple|13=User:Immanuelle/Jōkō Enman-ji|1=Jokoenmanji Temple|comment=changed title based on wikidata|qid=Q11481316}}), making the shrine its guardian deity. {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}} ({{ill|Susanoo-no-Mikoto|ja|素盞嗚大神|12=simple|13=User:Immanuelle/Susanoo-no-Mikoto|ja_comment=jawiki link invalid}}) was enshrined at this time, and the shrine became known as Hamanomiya Gozu Tennōsha.
+In 735 CE (7th year of {{ill|Tenpyō|en|Tenpyō|qid=Q1199879|lt=Tenpyō}}), the monk {{ill|Gyōki|en|Gyōki|qid=Q1136664|lt=Gyōki}} founded the Ishiura Jingūji temple to the west of the shrine, naming it Hamanodō (present-day {{ill|Jokoenmanji Temple|ja|常光円満寺|12=simple|13=User:Immanuelle/Jōkō Enman-ji|comment=changed title based on wikidata|qid=Q11481316}}), making the shrine its guardian deity. {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō}} ({{ill|Susanoo-no-Mikoto|ja|素盞嗚大神}}) was enshrined at this time, and the shrine became known as Hamanomiya Gozu Tennōsha.
 
 ... (Content continues in this format, adhering to principles specified)
 
 == Transportation ==
-* An 8-minute walk from [[:en:JR Kyoto Line|JR Kyoto Line]]'s {{ill|Suita Station|en|Suita Station|qid=Q1207053|lt=Suita Station (JR West)|1=Suita Station}}
-* An 8-minute walk from [[:en:Hankyu Kyoto Line|Hankyu Kyoto Line]]'s {{ill|Aikawa Station (Osaka)|en|Aikawa Station (Osaka)|qid=Q377279|lt=Aikawa Station|1=Aikawa Station (Osaka)}}
+* An 8-minute walk from [[:en:JR Kyoto Line|JR Kyoto Line]]'s {{ill|Suita Station|en|Suita Station|qid=Q1207053|lt=Suita Station (JR West)}}
+* An 8-minute walk from [[:en:Hankyu Kyoto Line|Hankyu Kyoto Line]]'s {{ill|Aikawa Station (Osaka)|en|Aikawa Station (Osaka)|qid=Q377279|lt=Aikawa Station}}
 
 == References ==
 {{Reflist}}
@@ -56,18 +52,13 @@ In 735 CE (7th year of {{ill|Tenpyō|en|Tenpyō|qid=Q1199879|lt=Tenpyō|1=Tenpy�
 {{Commonscat|Takahama-jinja (Suita)}}
 *[http://takahamajinjya.kir.jp/ Official website]
 
-<!--Takahama Shrine--><!--Takahama Shrine-->
-<!--jawiki derived wikidata interwikis-->
-
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Takahama Shrine (Q106852678)|lt=Takahama Shrine|qid=Q106852678}} — Ishioka
 * {{ill|高浜神社 (Q135459729)|lt=高浜神社|qid=Q135459729}} — Sado
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|高浜神社 (吹田市)|version=98346933|comment=Imported full ja history}}
-{{wikidata link|Q11671844|ja|高浜神社 (吹田市)}}
+{{wikidata link|Q11671844|ja|高浜神社 (吹田市)|co|commons:Category:Takahama-jinja (Suita)|check_date=2026-05-26}}
 [[Category:Buildings and structures in Suita, Osaka]]
 [[Category:Chinjusha]]
 [[Category:Gion shrines]]
