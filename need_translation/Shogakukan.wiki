@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Shogakukan for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25617014990|commit triggered pipeline]] -->
-
 {{short description|Japanese publishing company}}
 {{Expand Japanese|小学館|date=November 2024}}
 {{Use mdy dates|date=November 2022}}
@@ -19,7 +17,7 @@
 | area_served = Worldwide
 | hq_location_city = {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo}}
 | hq_location_country = Japan
-| key_people = {{ill|Nobuhiro Oga|jp|相賀信宏|12=simple|13=User:Immanuelle/Nobuhiro Oga}}<ref>{{Cite web |url=https://www.shogakukan.co.jp/en/company |title = Company Profile |accessdate=2024-01-11}}</ref><br><small>({{ill|President (corporate title)|en|President (corporate title)|qid=Q1255921|lt=President}} and [[:en:CEO|CEO]])</small>
+| key_people = {{ill|Nobuhiro Oga|jp|相賀信宏}}<ref>{{Cite web |url=https://www.shogakukan.co.jp/en/company |title = Company Profile |accessdate=2024-01-11}}</ref><br><small>({{ill|President (corporate title)|en|President (corporate title)|qid=Q1255921|lt=President}} and [[:en:CEO|CEO]])</small>
 | products = {{ill|Magazine|en|Magazine|qid=Q41298|lt=Magazine}}s, [[:en:comic|comic]]s, {{ill|picture book|en|picture book|qid=Q254554|lt=picture book}}s, {{ill|Light novel|en|Light novel|qid=Q747381|lt=Light novel}}s, educational books, reference books, other {{ill|Book|en|Book|qid=Q571|lt=Book}}s
 | topics = 
 | subsid = {{Unbulleted list
@@ -160,26 +158,10 @@ Shogakukan produces (or makes part of the production of) anime based on their ma
 {{Shogakukan Manga Award - Shōnen}}
 {{Hitotsubashi Group}}
 
-{{wikidata link|Q785697|en|Shogakukan|ar|شوغاكوكان|az|Shogakukan|bn|শোগাকুকান|ca|Shogakukan|da|Shogakukan|de|Shōgakukan|es|Shōgakukan|eu|Shogakukan|fa|شوگاکوکان|fr|Shōgakukan|id|Shogakukan|it|Shōgakukan|ja|小学館|ko|쇼가쿠칸|lt|Shogakukan|ms|Shogakukan|nl|Shogakukan|pl|Shōgakukan|pt|Shogakukan|ru|Shogakukan|sr|Shogakukan|th|โชงากูกัง|tr|Shogakukan|uk|Shogakukan|vi|Shogakukan|zh|小學館|zh-yue|小學館|ary|شووݣاكوكان|azb|شوقاکوکان|br|Shōgakukan|ckb|شۆگاکوکان|mk|Shogakukan|sv|Shogakukan|vi|Shōgakukan|wuu|小学馆|check_date=2026-05-10}}
-[[Category:Book publishing companies in Tokyo]]
-[[Category:Comic book publishing companies in Tokyo]]
-[[Category:Disney comics publishers]]
-[[Category:Far-right politics in Japan]]
-[[Category:Hitotsubashi Group]]
-[[Category:Japanese companies established in 1922]]
-[[Category:Magazine publishing companies in Tokyo]]
-[[Category:Manga distributors]]
-[[Category:Mass media companies based in Tokyo]]
-[[Category:Publishers of adult comics]]
-[[Category:Publishing companies established in 1922]]
-[[Category:Software companies based in Tokyo]]
-[[Category:Wikidata has short description]]
+{{wikidata link|Q785697|en|Shogakukan|ar|شوغاكوكان|az|Shogakukan|bn|শোগাকুকান|ca|Shogakukan|da|Shogakukan|de|Shōgakukan|es|Shōgakukan|eu|Shogakukan|fa|شوگاکوکان|fr|Shōgakukan|id|Shogakukan|it|Shōgakukan|ja|小学館|ko|쇼가쿠칸|lt|Shogakukan|ms|Shogakukan|nl|Shogakukan|pl|Shōgakukan|pt|Shogakukan|ru|Shogakukan|sr|Shogakukan|th|โชงากูกัง|tr|Shogakukan|uk|Shogakukan|vi|Shogakukan|zh|小學館|zh-yue|小學館|ary|شووݣاكوكان|azb|شوقاکوکان|br|Shōgakukan|ckb|شۆگاکوکان|mk|Shogakukan|sv|Shogakukan|vi|Shōgakukan|wuu|小学馆|check_date=2026-05-26}}
 
 {{translated page|ja|小学館|version=107297501|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 {{出典の明記|date=2025年10月}}
 {{基礎情報 会社
 | 社名 = 株式会社小学館
@@ -893,3 +875,19 @@ File:週刊ポスト1969.jpg|<small>『{{jalink|週刊ポスト|Q11640034}}』19
 [[Category:Pages with 2000+ untranslated japanese characters]]
 [[Category:Pages with 3000+ untranslated japanese characters]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Book publishing companies in Tokyo]]
+[[Category:Comic book publishing companies in Tokyo]]
+[[Category:Disney comics publishers]]
+[[Category:Far-right politics in Japan]]
+[[Category:Hitotsubashi Group]]
+[[Category:Japanese companies established in 1922]]
+[[Category:Magazine publishing companies in Tokyo]]
+[[Category:Manga distributors]]
+[[Category:Mass media companies based in Tokyo]]
+[[Category:Publishers of adult comics]]
+[[Category:Publishing companies established in 1922]]
+[[Category:Software companies based in Tokyo]]
+[[Category:Wikidata has short description]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
