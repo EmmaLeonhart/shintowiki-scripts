@@ -1,23 +1,18 @@
 <!-- shrine-disambig-page: refresh wikidata list -->
 '''Tate Jinja''' (建神社)
 
-* {{ill|Tate Shrine (Mima)|ja|建神社 (美馬市)|12=simple|13=User:Immanuelle/Tate Shrine (Mima)|qq=}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, [[Mima City]].
-* {{ill|Tate Shrine (Tsurugi)|ja|建神社 (つるぎ町)|12=simple|13=User:Immanuelle/Tate Shrine (Tsurugi)|qq=}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}}, [[:en:Mima District|Mima District]], [[Tsurugi Town]].
+* [[Tate Shrine (Mima)]] - A shrine located in [[Tokushima Prefecture]], [[Mima City]].
+* [[Tate Shrine (Tsurugi)]] - A shrine located in [[Tokushima Prefecture]], [[:en:Mima District|Mima District]], [[Tsurugi Town]].
 
 {{disambiguation}}
 
 <!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
-* {{ill|Ken Shrine (Q135070287)|lt=Ken Shrine|qid=Q135070287}} — Awa Province
-* {{ill|Takeno Shrine (Q135041309)|lt=Takeno Shrine|qid=Q135041309}} — Awa Province
-* {{ill|Tate Shrine (Q106852710)|lt=Tate Shrine|qid=Q106852710}} — Mima
-* {{ill|Tate Shrine (Q106852711)|lt=Tate Shrine|qid=Q106852711}} — Awa Province
+* [[Ken Shrine (Q135070287)|Ken Shrine]] — Awa Province
+* [[Takeno Shrine (Q135041309)|Takeno Shrine]] — Awa Province
+* [[Tate Shrine (Q106852710)|Tate Shrine]] — Mima
+* [[Tate Shrine (Q106852711)|Tate Shrine]] — Awa Province
 <!-- END: auto-generated Wikidata shrine list -->
 
-{{translated page|ja|建神社|version=102027230|comment=Imported full ja history}}
-
-{{wikidata link|Q107022358|ja|建神社}}
 [[Category:Shrine disambiguations]]
-[[Category:Wikidata has short description]]
-[[Category:Independently git synced pages]]
