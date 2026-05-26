@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Teranomikoto_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
-
 {{Expand Japanese|神澤神社}}
 
 {{Infobox religious building
@@ -30,7 +28,7 @@
 
 == part of (P361) ==
 
-* {{ill|List of Shikinaisha in Izu Province|lt=List of Shikinaisha in Izu Province|ja|伊豆国の式内社一覧|qid=Q11380552}}
+* {{ill|List of Shikinaisha in Izu Province|ja|伊豆国の式内社一覧|qid=Q11380552|lt=List of Shikinaisha in Izu Province}}
 ** Series ordinal: 21
 ** P155: {{ill|Kamino- Shrine|lt=Kamino- Shrine|qid=Q135039648}}
 ** P156: {{ill|Ubaihoumei Shrine|lt=Ubaihoumei Shrine|ja|優婆夷宝明神社|qid=Q134926154}}
@@ -38,7 +36,7 @@
 
 == located in the administrative territorial entity (P131) ==
 
-* {{ill|Izu Province|lt=Izu Province|ar|مقاطعة إزو|be|Ідзу (правінцыя)|ckb|پارێزگای ئیزو|cs|Provincie Izu|cv|Идзу|de|Provinz Izu|en|Izu Province|es|Provincia de Izu|fa|ولایت ایزو|fr|Province d'Izu|gl|Provincia de Izu|hak|Yî-theu-koet|id|Provinsi Izu|it|Izu (provincia)|ja|伊豆国|ko|이즈국|lt|Idzu žemė|nl|Izu (provincie)|pl|Prowincja Izu|pt|Província de Izu|ru|Идзу (провинция)|simple|Izu Province|sk|Izu (provincia)|sr|Провинција Изу|th|แคว้นอิซุ|tr|Izu (vilayet)|uk|Провінція Ідзу|zh_min_nan|Izu-kok|zh_yue|伊豆國|zh|伊豆國|qid=Q860928}}
+* {{ill|Izu Province|ar|مقاطعة إزو|be|Ідзу (правінцыя)|ckb|پارێزگای ئیزو|cs|Provincie Izu|cv|Идзу|de|Provinz Izu|es|Provincia de Izu|fa|ولایت ایزو|fr|Province d'Izu|gl|Provincia de Izu|hak|Yî-theu-koet|id|Provinsi Izu|it|Izu (provincia)|ja|伊豆国|ko|이즈국|lt|Idzu žemė|nl|Izu (provincie)|pl|Prowincja Izu|pt|Província de Izu|ru|Идзу (провинция)|simple|Izu Province|sk|Izu (provincia)|sr|Провинција Изу|th|แคว้นอิซุ|tr|Izu (vilayet)|uk|Провінція Ідзу|zh|伊豆國|zh_min_nan|Izu-kok|zh_yue|伊豆國|qid=Q860928|lt=Izu Province}}
 * {{ill|Kamo District, Shizuoka|lt=Kamo district|ar|مقاطعة كامو (شيزوكا)|ceb|Kamo-gun (distrito sa Hapon, Shizuoka-ken)|en|Kamo District, Shizuoka|fa|ناحیه کامو، شیزوئوکا|fr|District de Kamo (Shizuoka)|id|Distrik Kamo, Shizuoka|it|Distretto di Kamo (Shizuoka)|ja|賀茂郡|ko|가모군 (시즈오카현)|nl|District Kamo (Shizuoka)|pl|Powiat Kamo (Shizuoka)|ru|Камо (Сидзуока)|uk|Повіт Камо (Сідзуока)|zh|賀茂郡|qid=Q961511}}
 
 == coordinate location (P625) ==
@@ -58,23 +56,12 @@
 
 ==References==
 
-[[Category:Shikinaisha]]
-[[Category:Shikinai Shōsha]]
-[[Category:Shikinai Ronsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Shikinaisha in Izu Province]]
-
 [[JA:神澤神社]]
 
-{{wikidata link|Q134930636|ja|神澤神社|check_date=2026-05-11}}
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
+{{wikidata link|Q134930636|ja|神澤神社|check_date=2026-05-26}}
 
 {{translated page|ja|神澤神社|version=102359045|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 {{神社
 |名称   = 神澤神社
 |画像= {{画像募集中|cat=東京都島嶼部}}
@@ -114,3 +101,13 @@
 [[Category:伊豆国の式内社]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
+[[Category:Shikinaisha]]
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
