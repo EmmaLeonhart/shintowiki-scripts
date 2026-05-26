@@ -69,7 +69,7 @@
 ; other_title_1 : Secondary title. Italicized unless {{para|italic other_title_1|no}}.
 ; other_language_2 : Language of tertiary title
 ; other_title_2 : Tertiary title. Italicized unless {{para|italic other_title_2|no}}.
-; italic title : Special option to adjust page title italics. Set to "no" to remove all page title italics. Set to "all" to italicize the entire title, including parentheses (see, for example, ''[[Breezing Up (A Fair Wind)]]'')
+; italic title : Special option to adjust page title italics. Set to "no" to remove all page title italics. Set to "all" to italicize the entire title, including parentheses (see, for example, ''{{ill|Breezing Up|arz|مرحه|en|Breezing Up (A Fair Wind)|fr|Le vent se lève (Un vent favorable)|he|רוח נוחה (רוח טובה)|nl|Breezing Up|simple|Breezing Up|lt=Breezing Up|qid=Q4960357}}'')
 ; wikidata : QID of the ''specific'' [[:en:Wikidata|Wikidata]] item
 ; image : The name of the image file to display, without the "File:" prefix
 ; image_upright : Image scaling factor; see [[WP:IMGSIZE]] for the image size policy

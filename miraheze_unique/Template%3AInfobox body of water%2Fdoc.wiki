@@ -434,5 +434,6 @@ The categories are hidden, i.e. they are not visible in the standard display of 
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox body of water/doc|check_date=2026-05-26}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>

@@ -1,12 +1,10 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Temple_Precinct_Cities for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
-
 '''Keidai Toshi''' (境内都市) is a historical concept in {{ill|History of Japan|ja|日本史|12=simple|13=User:Immanuelle/Japanese history|ja_comment=jawiki redirects to 日本の歴史|comment=changed title based on wikidata|qid=Q130436}}, referring to the characteristics of {{ill|City|en|City|qid=Q515|lt=urban areas}} during the {{ill|Middle Ages|en|Middle Ages|qid=Q12554|lt=medieval period of Japan}} (roughly 12th to 16th centuries). It describes clusters of urban settlements centered around religious institutions such as {{ill|Buddhist temple|en|Buddhist temple|qid=Q5393308|lt=temples}} and {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrines}}.
 
 The term "Keidai Toshi" was proposed by Japanese historian {{ill|Itō Masatoshi|ja|伊藤正敏|12=simple|13=User:Immanuelle/Masatoshi Ito|comment=changed title based on wikidata|qid=Q11380223}} and has since gained support among scholars. In his own work, Ito remarked, "Honestly, I don’t understand why I was the first to point this out."<ref>伊藤(2008), p. 91.</ref> He also expressed dissatisfaction with the term’s phrasing, stating, "The term doesn’t sound right," and hinted at the possibility of renaming it in the future.<ref>伊藤(2008), p. 247.</ref>
 
 == Overview ==
 
-Before the concept of "Keidai Toshi" was introduced, settlements originating from religious institutions were regarded as {{ill|Monzen-machi|lt=Monzen-machi|lt=Monzen-machi|ja|門前町|12=simple|13=User:Immanuelle/Monzen-machi}} (urban areas centered on commerce for worshippers). It was assumed that their primary function was religious, and their economic role was subordinate. Modern perceptions of religion as isolated from economic activities further reinforced the notion that Monzen-machi did not hold significant economic importance.
+Before the concept of "Keidai Toshi" was introduced, settlements originating from religious institutions were regarded as {{ill|Monzen-machi|ja|門前町|lt=Monzen-machi}} (urban areas centered on commerce for worshippers). It was assumed that their primary function was religious, and their economic role was subordinate. Modern perceptions of religion as isolated from economic activities further reinforced the notion that Monzen-machi did not hold significant economic importance.
 
 The concept of "Keidai Toshi" seeks to revise this perspective, suggesting that large settlements originating from religious institutions should be recognized as urban areas with political, cultural, industrial, and military functions.
 
@@ -15,7 +13,7 @@ The "Keidai Toshi" varied in scale, but the larger ones are thought to have had 
 == Functions of Keidai Toshi ==
 
 === Political Function ===
-Keidai Toshi were urban areas established based on large religious organizations such as major temples and shrines. These religious institutions formed a significant political force, known as {{ill|Temple and Shrine Powers|lt=Temple and Shrine Powers|lt=Temple and shrine powers|ja|寺社勢力|12=simple|13=User:Immanuelle/temple and shrine powers}}, rivaling the {{ill|Royal court|en|Royal court|qid=Q1134237|lt=Imperial Court (Japan)}} and {{ill|Buke|ja|武家|12=simple|13=User:Immanuelle/samurai|comment=changed title based on wikidata|qid=Q2927809}} ({{ill|Shogunate|ja|幕府|12=simple|13=User:Immanuelle/shogunate|comment=changed title based on wikidata|qid=Q1074150}}). Consequently, Keidai Toshi served as political centers of these religious authorities.
+Keidai Toshi were urban areas established based on large religious organizations such as major temples and shrines. These religious institutions formed a significant political force, known as {{ill|Temple and Shrine Powers|ja|寺社勢力|lt=Temple and shrine powers}}, rivaling the {{ill|Royal court|en|Royal court|qid=Q1134237|lt=Imperial Court (Japan)}} and {{ill|Buke|ja|武家|12=simple|13=User:Immanuelle/samurai|comment=changed title based on wikidata|qid=Q2927809}} ({{ill|Shogunate|ja|幕府|12=simple|13=User:Immanuelle/shogunate|comment=changed title based on wikidata|qid=Q1074150}}). Consequently, Keidai Toshi served as political centers of these religious authorities.
 
 === Cultural Function ===
 As religious organizations often served as centers of learning in medieval Japan, Keidai Toshi played significant roles as cultural hubs. These "centers of learning" extended beyond religious studies to include practical disciplines such as martial arts, medicine, civil engineering, and agriculture. This cultural aspect contributed to the economic significance and growth of Keidai Toshi.
@@ -26,7 +24,7 @@ Keidai Toshi possessed advanced industrial production capabilities, supported by
 Moreover, Keidai Toshi functioned as key trade hubs, facilitated by the movement of pilgrims and other travelers.
 
 === Military Function ===
-Keidai Toshi often held military significance. In addition to possessing strong military power based on economic strength and arms production, temples and shrines were sometimes designed and constructed as fortresses.<ref>The earliest medieval mountain fortress in Japan is said to be {{ill|Mount Hiei|en|Mount Hiei|qid=Q748040|lt=Mount Hiei}}, built in 1166.</ref> They housed large numbers of {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Warrior monks}} and {{ill|Jinin|ja|神人|12=simple|13=User:Immanuelle/Jinin}}, enabling independent military operations.
+Keidai Toshi often held military significance. In addition to possessing strong military power based on economic strength and arms production, temples and shrines were sometimes designed and constructed as fortresses.<ref>The earliest medieval mountain fortress in Japan is said to be {{ill|Mount Hiei|en|Mount Hiei|qid=Q748040|lt=Mount Hiei}}, built in 1166.</ref> They housed large numbers of {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Warrior monks}} and {{ill|Jinin|ja|神人}}, enabling independent military operations.
 
 This military capability often made Keidai Toshi autonomous {{ill|asylum|ja|アジール|12=simple|13=User:Immanuelle/asylums (law)|comment=changed title based on wikidata|qid=Q26377}} free from external control.
 
@@ -36,26 +34,25 @@ This military capability often made Keidai Toshi autonomous {{ill|asylum|ja|ア�
 == References ==
 * {{ill|Itō Masatoshi|ja|伊藤正敏|12=simple|13=User:Immanuelle/Masatoshi Ito|comment=changed title based on wikidata|qid=Q11380223}}, ''Jisha Seiryoku no Chūsei'' (寺社勢力の中世), Chikuma Shobō, 2008. ISBN 978-4-480-06435-6.
 == See Also ==
-* {{ill|Temple and Shrine Powers|lt=Temple and Shrine Powers|lt=Temple and shrine powers|ja|寺社勢力|12=simple|13=User:Immanuelle/Temple and shrine powers}}
-* {{ill|Jinaimachi|ja|寺内町|12=simple|13=User:Immanuelle/Jinaimachi}}
+* {{ill|Temple and Shrine Powers|ja|寺社勢力|lt=Temple and shrine powers}}
+* {{ill|Jinaimachi|ja|寺内町}}
 * {{ill|Right of asylum|en|Right of asylum|qid=Q11283415|lt=Right of asylum}}
 * {{ill|Yamashina Mido|en|Yamashina Mido|qid=Q7348557|lt=Yamashina Hongan-ji}} / {{ill|Ishiyama Hongan-ji|en|Ishiyama Hongan-ji|qid=Q1098123|lt=Ishiyama Hongan-ji}}
 * {{ill|Mount Kōya|en|Mount Kōya|qid=Q535065|lt=Mount Kōya}}
-* {{ill|Jinin|ja|神人|12=simple|13=User:Immanuelle/Jinin}} / {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Warrior monks}}
+* {{ill|Jinin|ja|神人}} / {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Warrior monks}}
 
-* {{ill|Temple Precinct Cities|ja|境内都市|en|12=simple|13=User:Immanuelle/Temple Precinct Cities}}
+* {{ill|Temple Precinct Cities|ja|境内都市|en|Temple Precinct Cities}}
 
-* {{ill|Jinaimachi|fr|Jinaicho|ja|寺内町|lt=Teramachi|en|12=simple|13=User:Immanuelle/Jinaimachi}}
+* {{ill|Jinaimachi|fr|Jinaicho|ja|寺内町|en|Jinaimachi|lt=Teramachi}}
 
-* {{ill|Sōhei|en|12=simple|13=User:Immanuelle/Sōhei}}
+* {{ill|Sōhei|en|Sōhei}}
 
-* {{ill|Shinto|en|12=simple|13=User:Immanuelle/Shinto}}
+* {{ill|Shinto|en|Shinto}}
 
 {{translated page|ja|境内都市|version=97911401|comment=Imported full ja history}}
 
-[[Category:Pages with duplicated content]]
 ==Merged second translation==
-{{ill|Temple Precinct Cities|en|12=simple|13=User:Immanuelle/Temple complexes as urban areas}}, functioned as proto-megalopolises.
+{{ill|Temple Precinct Cities|en|Temple Precinct Cities}}, functioned as proto-megalopolises.
 
 '''Keidai Toshi''' (境内都市, *Keidai Toshi*) is a historical concept in [[:en:Japanese history|Japanese history]], referring to a type of {{ill|Urban settlement|en|urban settlement|qid=Q7900166|lt=urban settlement}} characteristic of the [[:en:Medieval period|Medieval period]] (12th to 16th century). It denotes cities that developed around religious facilities such as {{ill|Buddhist temples in Japan|en|Buddhist temples in Japan|qid=Q3141900|lt=Buddhist temples in Japan}} and [[:en:Shrines|Shrines]].
 
@@ -63,7 +60,7 @@ The term "Keidai Toshi" was proposed by Japanese historian {{ill|Itō Masatoshi|
 
 == Overview ==
 
-Before this concept was introduced, settlements originating from temples and shrines were typically regarded as {{ill|Monzen-machi|lt=Monzen-machi|lt=Monzen-machi|ja|門前町|12=simple|13=User:Immanuelle/Monzen-machi}}, or towns that engaged in commercial activities targeting worshippers. The prevailing view was that their primary function was religious, with economic functions considered secondary. Additionally, the modern notion that religion is separate from economics contributed to the perception that Monzen-machi lacked significant economic functions.
+Before this concept was introduced, settlements originating from temples and shrines were typically regarded as {{ill|Monzen-machi|ja|門前町|lt=Monzen-machi}}, or towns that engaged in commercial activities targeting worshippers. The prevailing view was that their primary function was religious, with economic functions considered secondary. Additionally, the modern notion that religion is separate from economics contributed to the perception that Monzen-machi lacked significant economic functions.
 
 The concept of "Keidai Toshi" was proposed to revise these common perceptions. It redefines large settlements originating from temples and shrines as cities with complex functions, including political, cultural, industrial, and military roles.
 
@@ -72,7 +69,7 @@ While the scale of these "Keidai Toshi" varied, some are thought to have had pop
 == Functions of Keidai Toshi ==
 
 === Political Function ===
-Keidai Toshi were urban centers based on major religious organizations such as large temples and shrines. In medieval Japan, these religious institutions, alongside the {{ill|Royal court|en|Royal court|qid=Q1134237|lt=Imperial Court (Japan)}} and warrior governments ({{ill|Shogunate|ja|幕府|12=simple|13=User:Immanuelle/Bakufu|comment=changed title based on wikidata|qid=Q1074150}}), formed a major political force known as {{ill|Temple and Shrine Powers|lt=Temple and Shrine Powers|lt=Temple and Shrine Power|ja|寺社勢力|12=simple|13=User:Immanuelle/Temple and Shrine Power}}. As a result, Keidai Toshi functioned as political centers for these religious powers.
+Keidai Toshi were urban centers based on major religious organizations such as large temples and shrines. In medieval Japan, these religious institutions, alongside the {{ill|Royal court|en|Royal court|qid=Q1134237|lt=Imperial Court (Japan)}} and warrior governments ({{ill|Shogunate|ja|幕府|12=simple|13=User:Immanuelle/Bakufu|comment=changed title based on wikidata|qid=Q1074150}}), formed a major political force known as {{ill|Temple and Shrine Powers|ja|寺社勢力|lt=Temple and Shrine Power}}. As a result, Keidai Toshi functioned as political centers for these religious powers.
 
 === Cultural Function ===
 Keidai Toshi were also hubs of cultural activity, as major temples and shrines served as places of learning with significant status in medieval Japan. These cities provided not only religious education but also practical knowledge in fields such as martial arts, medicine, civil engineering, and agriculture. This cultural function drove their development as major economic centers, beyond their political and religious significance.
@@ -83,7 +80,7 @@ Keidai Toshi maintained high levels of industrial production, supported by pract
 In addition to industrial production, Keidai Toshi also served as important trade hubs due to the movement of worshippers and other travelers.
 
 === Military Function ===
-Many Keidai Toshi also had military functions. In addition to their economic power and production of military supplies, temples and shrines were often designed as fortifications<ref>The earliest medieval mountain fortress in Japan is said to be the {{ill|Enryaku-ji|ja|比叡山延暦寺|12=simple|13=User:Immanuelle/Enryaku-ji|ja_comment=jawiki redirects to 延暦寺}} on Mount Hiei, built in 1166.</ref>. They maintained significant military forces, including warrior monks ({{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Sohei}}) and shrine warriors ({{ill|Jinin|ja|神人|12=simple|13=User:Immanuelle/Jinin}}), and were capable of conducting independent military operations.
+Many Keidai Toshi also had military functions. In addition to their economic power and production of military supplies, temples and shrines were often designed as fortifications<ref>The earliest medieval mountain fortress in Japan is said to be the {{ill|Enryaku-ji|ja|比叡山延暦寺}} on Mount Hiei, built in 1166.</ref>. They maintained significant military forces, including warrior monks ({{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Sohei}}) and shrine warriors ({{ill|Jinin|ja|神人}}), and were capable of conducting independent military operations.
 
 This military power often allowed Keidai Toshi to function as independent {{ill|asylum|ja|アジール|12=simple|13=User:Immanuelle/Asylums|comment=changed title based on wikidata|qid=Q26377}}, free from external authority.
 
@@ -93,66 +90,66 @@ This military power often allowed Keidai Toshi to function as independent {{ill|
 == References ==
 * {{Cite book|author=伊藤正敏|title=寺社勢力の中世|publisher=ちくま書房|series=ちくま新書|year=2008|isbn=978-4-480-06435-6}}
 == See Also ==
-* {{ill|Temple and Shrine Powers|lt=Temple and Shrine Powers|lt=Temple and Shrine Power|ja|寺社勢力|12=simple|13=User:Immanuelle/Temple and Shrine Power}}
-* {{ill|Jinaimachi|ja|寺内町|12=simple|13=User:Immanuelle/Jinaimachi}}
+* {{ill|Temple and Shrine Powers|ja|寺社勢力|lt=Temple and Shrine Power}}
+* {{ill|Jinaimachi|ja|寺内町}}
 * {{ill|asylum|ja|アジール|12=simple|13=User:Immanuelle/Asylums|comment=changed title based on wikidata|qid=Q26377}}
 * {{ill|Yamashina Mido|en|Yamashina Mido|qid=Q7348557|lt=Yamashina Hongan-ji}} / {{ill|Ishiyama Hongan-ji|en|Ishiyama Hongan-ji|qid=Q1098123|lt=Ishiyama Hongan-ji}}
 * {{ill|Mount Kōya|en|Mount Kōya|qid=Q535065|lt=Mount Koya}}
-* {{ill|Jinin|ja|神人|12=simple|13=User:Immanuelle/Jinin}} / {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Sohei}}
+* {{ill|Jinin|ja|神人}} / {{ill|Sōhei|en|Sōhei|qid=Q1475695|lt=Sohei}}
 {{Japanese-history-stub}}
 == Major Religious Powers ==
-* {{ill|Mount Hiei|en|12=simple|13=User:Immanuelle/Mount Hiei}} {{ill|Enryaku-ji|en|12=simple|13=User:Immanuelle/Enryaku-ji}}
-* {{ill|Hiyoshi Taisha|en|12=simple|13=User:Immanuelle/Hiyoshi Taisha}}
-* {{ill|Yasaka Shrine|lt=Yasaka Shrine|lt=Gion-sha|en|12=simple|13=User:Immanuelle/Gion-sha}} (now {{ill|Yasaka Shrine|en|12=simple|13=User:Immanuelle/Yasaka Shrine}})
-* {{ill|Kiyomizu-dera|en|12=simple|13=User:Immanuelle/Kiyomizu-dera}}
-* {{ill|Iwashimizu Hachimangū|en|12=simple|13=User:Immanuelle/Iwashimizu Hachimangū}}
-* {{ill|Shitennō-ji|en|12=simple|13=User:Immanuelle/Shitennō-ji}}
-* {{ill|Tōdai-ji|en|12=simple|13=User:Immanuelle/Tōdai-ji}}
-* {{ill|Ikkō-shū|en|12=simple|13=User:Immanuelle/Ikkō-shū}} ({{ill|Jōdo Shinshū Honganji-ha|en|12=simple|13=User:Immanuelle/Jōdo Shinshū Honganji-ha}})
+* {{ill|Mount Hiei|en|Mount Hiei}} {{ill|Enryaku-ji|en|Enryaku-ji}}
+* {{ill|Hiyoshi Taisha|en|Hiyoshi Taisha}}
+* {{ill|Yasaka Shrine|en|Yasaka Shrine|lt=Gion-sha}} (now {{ill|Yasaka Shrine|en|Yasaka Shrine}})
+* {{ill|Kiyomizu-dera|en|Kiyomizu-dera}}
+* {{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū}}
+* {{ill|Shitennō-ji|en|Shitennō-ji}}
+* {{ill|Tōdai-ji|en|Tōdai-ji}}
+* {{ill|Ikkō-shū|en|Ikkō-shū}} ({{ill|Jōdo Shinshū Honganji-ha|en|Jōdo Shinshū Honganji-ha}})
 ** {{ill|Ishiyama Hongan-ji|en|12=simple|13=User:Immanuelle/Ishiyama Hongan-ji}}
-** {{ill|Yamashina Hongan-ji|en|12=simple|13=User:Immanuelle/Yamashina Hongan-ji}}
-** {{ill|Oyama Gobo|en|12=simple|13=User:Immanuelle/Oyama Gobo}}
-** {{ill|Yoshizaki Gobo|en|12=simple|13=User:Immanuelle/Yoshizaki Gobo}}
-** {{ill|Ikkō Ikki|en|12=simple|13=User:Immanuelle/Ikkō Ikki}}
-* {{ill|Senchū-ji|en|12=simple|13=User:Immanuelle/Senchū-ji}} ({{ill|Shinshū Takada-ha|en|12=simple|13=User:Immanuelle/Shinshū Takada-ha}})
-* {{ill|Kimpusen-ji|en|12=simple|13=User:Immanuelle/Kimpusen-ji}} (Yoshino)
+** {{ill|Yamashina Hongan-ji|en|Yamashina Hongan-ji}}
+** {{ill|Oyama Gobo|en|Oyama Gobo}}
+** {{ill|Yoshizaki Gobo|en|Yoshizaki Gobo}}
+** {{ill|Ikkō Ikki|en|Ikkō Ikki}}
+* {{ill|Senchū-ji|en|Senchū-ji}} ({{ill|Shinshū Takada-ha|en|Shinshū Takada-ha}})
+* {{ill|Kimpusen-ji|ca|Kinpusen-ji|cs|Kimpusendži|de|Kimpusen-ji|es|Kinpusen-ji|eu|Kimpusen-ji|fa|کیمپوسن-جی|fr|Kinpusen-ji|gan|金峯山寺|it|Kimpusen-ji|ja|金峯山寺|ms|Kimpusen-ji|ru|Кимпусэн-дзи|tr|Kimpusen-ji|zh|金峯山寺|qid=Q1741668}} (Yoshino)
 * {{ill|Kōfuku-ji|en|12=simple|13=User:Immanuelle/Kōfuku-ji}}
-* {{ill|Daigo-ji|en|12=simple|13=User:Immanuelle/Daigo-ji}}
-* {{ill|Kongōbu-ji|en|12=simple|13=User:Immanuelle/Kongōbu-ji}} ({{ill|Mount Kōya|en|12=simple|13=User:Immanuelle/Mount Kōya}})
-* {{ill|Kumano shrine|lt=Kumano shrine|lt=Kumano Sanzan|en|12=simple|13=User:Immanuelle/Kumano Sanzan}}
-* {{ill|Shōgo-in|en|12=simple|13=User:Immanuelle/Shōgo-in}}
-* {{ill|Onjō-ji|en|12=simple|13=User:Immanuelle/Onjō-ji}}
-* {{ill|Negoro-ji|en|12=simple|13=User:Immanuelle/Negoro-ji}}
-* {{ill|Dewa Sanzan|en|12=simple|13=User:Immanuelle/Dewa Sanzan}}
-* {{ill|Heisenji Hakusan Shrine|lt=Heisenji Hakusan Shrine|lt=Heisen-ji|en|12=simple|13=User:Immanuelle/Heisen-ji}} (now {{ill|Heisenji Hakusan Shrine|lt=Heisenji Hakusan Shrine|lt=Heisen-ji Hakusan Shrine|en|12=simple|13=User:Immanuelle/Heisen-ji Hakusan Shrine}})
-* {{ill|Isurugi-yama|en|12=simple|13=User:Immanuelle/Isurugi-yama}} Tenpyō-ji (now {{ill|Isurugi Hikojinja|en|12=simple|13=User:Immanuelle/Isurugi Hikojinja}})
-* {{ill|Tōnomine|en|12=simple|13=User:Immanuelle/Tōnomine}} Myōraku-ji (now {{ill|Tanzan Shrine|en|12=simple|13=User:Immanuelle/Tanzan Shrine}})
-* {{ill|Ōyamadera|lt=Ōyamadera|lt=Ōyama-dera|en|12=simple|13=User:Immanuelle/Ōyama-dera}}
-* {{ill|Suwa-taisha|en|12=simple|13=User:Immanuelle/Suwa-taisha}}
-* {{ill|Itsukushima Shrine|en|12=simple|13=User:Immanuelle/Itsukushima Shrine}}
-* {{ill|Munakata Taisha|en|12=simple|13=User:Immanuelle/Munakata Taisha}}
-* {{ill|Usa Jingū|en|12=simple|13=User:Immanuelle/Usa Jingū}}
-* {{ill|Aso Shrine|en|12=simple|13=User:Immanuelle/Aso Shrine}}
-* {{ill|Hiko-san|en|12=simple|13=User:Immanuelle/Hiko-san}} Reisō-ji
+* {{ill|Daigo-ji|en|Daigo-ji}}
+* {{ill|Kongōbu-ji|en|Kongōbu-ji}} ({{ill|Mount Kōya|en|Mount Kōya}})
+* {{ill|Kumano shrine|en|Kumano shrine|lt=Kumano Sanzan}}
+* {{ill|Shōgo-in|en|Shōgo-in}}
+* {{ill|Onjō-ji|en|Onjō-ji}}
+* {{ill|Negoro-ji|en|Negoro-ji}}
+* {{ill|Dewa Sanzan|en|Dewa Sanzan}}
+* {{ill|Heisenji Hakusan Shrine|en|Heisenji Hakusan Shrine|lt=Heisen-ji}} (now {{ill|Heisenji Hakusan Shrine|en|Heisenji Hakusan Shrine|lt=Heisen-ji Hakusan Shrine}})
+* {{ill|Isurugi-yama|en|Isurugi-yama}} Tenpyō-ji (now {{ill|Isurugi Hikojinja|en|Isurugi Hikojinja}})
+* {{ill|Tōnomine|en|Tōnomine}} Myōraku-ji (now {{ill|Tanzan Shrine|en|Tanzan Shrine}})
+* {{ill|Ōyamadera|en|Ōyamadera|lt=Ōyama-dera}}
+* {{ill|Suwa-taisha|en|Suwa-taisha}}
+* {{ill|Itsukushima Shrine|en|Itsukushima Shrine}}
+* {{ill|Munakata Taisha|en|Munakata Taisha}}
+* {{ill|Usa Jingū|en|Usa Jingū}}
+* {{ill|Aso Shrine|en|Aso Shrine}}
+* {{ill|Hiko-san|en|Hiko-san}} Reisō-ji
 
 == References ==
 <references />
 
 == Bibliography ==
-* {{ill|Kuroda Toshio|en|12=simple|13=User:Immanuelle/Kuroda Toshio}}. *Temple and Shrine Powers: Another Medieval Society.* Iwanami Shinsho, 1980.
-* {{ill|Itō Masatoshi|en|12=simple|13=User:Immanuelle/Itō Masatoshi}}. *The Medieval Religious Powers: Migration and Connection.* Chikuma Shinsho, 2008.
+* {{ill|Kuroda Toshio|en|Kuroda Toshio}}. *Temple and Shrine Powers: Another Medieval Society.* Iwanami Shinsho, 1980.
+* {{ill|Itō Masatoshi|en|Itō Masatoshi}}. *The Medieval Religious Powers: Migration and Connection.* Chikuma Shinsho, 2008.
 == See Also ==
-* {{ill|Kenmitsu System|ja|顕密体制|en|12=simple|13=User:Immanuelle/Kenmitsu System}}
-* {{ill|Kenmon System Theory|ja|権門体制|en|12=simple|13=User:Immanuelle/Kenmon System Theory}}
+* {{ill|Kenmitsu System|ja|顕密体制|en|Kenmitsu System}}
+* {{ill|Kenmon System Theory|ja|権門体制|en|Kenmon System Theory}}
 * {{ill|Right of asylum|en|Right of asylum|qid=Q11283415|lt=Right of asylum}}
-* {{ill|Temple Precinct Cities|ja|境内都市|en|12=simple|13=User:Immanuelle/Temple Precinct Cities}}
-* {{ill|Jinaimachi|fr|Jinaicho|ja|寺内町|lt=Teramachi|en|12=simple|13=User:Immanuelle/Jinaimachi}}
-* {{ill|Sōhei|en|12=simple|13=User:Immanuelle/Sōhei}}
-* {{ill|Shinto|en|12=simple|13=User:Immanuelle/Shinto}}
+* {{ill|Temple Precinct Cities|ja|境内都市|en|Temple Precinct Cities}}
+* {{ill|Jinaimachi|fr|Jinaicho|ja|寺内町|en|Jinaimachi|lt=Teramachi}}
+* {{ill|Sōhei|en|Sōhei}}
+* {{ill|Shinto|en|Shinto}}
 
 {{translated page|ja|境内都市|version=97911401|comment=Imported full ja history}}
 
-{{wikidata link|Q11429004|ja|境内都市|ja|寺内町|ja|僧兵|ja|神人|ja|寺社勢力|ja|比叡山|ja|日吉大社|ja|祇園社|ja|八坂神社|ja|清水寺|ja|石清水八幡宮|ja|四天王寺|ja|東大寺|ja|一向宗|ja|浄土真宗本願寺派|ja|石山本願寺|ja|山科本願寺|ja|尾山御坊|ja|吉崎御坊|ja|一向一揆|ja|専修寺|ja|真宗高田派|ja|金峯山寺|ja|興福寺|ja|醍醐寺|ja|金剛峯寺|ja|高野山|ja|熊野三山|ja|聖護院|ja|園城寺|ja|根来寺|ja|出羽三山|ja|平泉寺|ja|平泉寺白山神社|ja|石動山|ja|伊須流岐比古神社|ja|多武峰|ja|談山神社|ja|大山寺|ja|諏訪大社|ja|厳島神社|ja|宗像大社|ja|宇佐神宮|ja|阿蘇神社|ja|英彦山|ja|黒田俊雄|ja|伊藤正敏|ja|顕密体制|ja|権門体制|ja|アジール|check_date=2026-05-11}}
+{{wikidata link|Q11429004|ja|境内都市|ja|寺内町|ja|僧兵|ja|神人|ja|寺社勢力|ja|比叡山|ja|日吉大社|ja|祇園社|ja|八坂神社|ja|清水寺|ja|石清水八幡宮|ja|四天王寺|ja|東大寺|ja|一向宗|ja|浄土真宗本願寺派|ja|石山本願寺|ja|山科本願寺|ja|尾山御坊|ja|吉崎御坊|ja|一向一揆|ja|専修寺|ja|真宗高田派|ja|金峯山寺|ja|興福寺|ja|醍醐寺|ja|金剛峯寺|ja|高野山|ja|熊野三山|ja|聖護院|ja|園城寺|ja|根来寺|ja|出羽三山|ja|平泉寺|ja|平泉寺白山神社|ja|石動山|ja|伊須流岐比古神社|ja|多武峰|ja|談山神社|ja|大山寺|ja|諏訪大社|ja|厳島神社|ja|宗像大社|ja|宇佐神宮|ja|阿蘇神社|ja|英彦山|ja|黒田俊雄|ja|伊藤正敏|ja|顕密体制|ja|権門体制|ja|アジール|check_date=2026-05-26}}
 [[Category:Ancient cities]]
 [[Category:Azuchi-Momoyama period]]
 [[Category:Buddhism in Japan]]
@@ -169,3 +166,4 @@ This military power often allowed Keidai Toshi to function as independent {{ill|
 [[Category:Shinto shrines]]
 [[Category:Wikidata no short description]]
 [[Category:Pages with interwikis with duplicate languages]]
+[[Category:Pages with duplicated content]]

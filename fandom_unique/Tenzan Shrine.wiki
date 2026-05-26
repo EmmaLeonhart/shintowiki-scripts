@@ -1,14 +1,12 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-'''Tenzan Shrine''' (天山社 or 天山神社) refers to a group of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} located in {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga Prefecture|1=Saga Prefecture}} on {{ill|Tianshan (disambiguation)|en|Tianshan (disambiguation)|qid=Q1305751|lt=Tenzan (Saga Prefecture)|1=Tianshan (disambiguation)}}. These shrines are traditionally regarded as the third shrine (三宮) of {{ill|Hizen Province|en|Hizen Province|qid=Q906926|lt=Hizen Province|1=Hizen Province}}. There are four registered religious corporations under this name.
+'''Tenzan Shrine''' (天山社 or 天山神社) refers to a group of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}} located in {{ill|Saga Prefecture|en|Saga Prefecture|qid=Q160420|lt=Saga Prefecture}} on {{ill|Tianshan (disambiguation)|en|Tianshan (disambiguation)|qid=Q1305751|lt=Tenzan (Saga Prefecture)}}. These shrines are traditionally regarded as the third shrine (三宮) of {{ill|Hizen Province|en|Hizen Province|qid=Q906926|lt=Hizen Province}}. There are four registered religious corporations under this name.
 
-* {{ill|Tenzan Shrine (Ogimachi Hatada)|ja|天山神社 (小城市小城町畑田)|12=simple|13=User:Immanuelle/Tenzan Shrine (Ogimachi Hatada)|ja_comment=jawiki link invalid}} - Upper Shrine (上宮) located at the summit of Tenzan. Situated in Hatada, Ogimachi, Saga Prefecture.
-* {{ill|Tenzan Shrine (Main Shrine)|ja|天山社|12=simple|13=User:Immanuelle/Tenzan Shrine (Main Shrine)|ja_comment=jawiki link invalid}} - Known as the Lower Shrine (下宮) or Main Shrine (本宮). Located in Haruki, Ogimachi, Saga Prefecture.
-* {{ill|Tenzan Shrine (Ogimachi Iwakura)|ja|天山神社 (小城市小城町岩蔵)|12=simple|13=User:Immanuelle/Tenzan Shrine (Ogimachi Iwakura)|ja_comment=jawiki link invalid}} - Lower Shrine (下宮). Situated in Iwakura, Ogimachi, Saga Prefecture.
-* {{ill|Tenzan Shrine (Karatsu City)|ja|天山神社 (唐津市)|12=simple|13=User:Immanuelle/Tenzan Shrine (Karatsu City)|ja_comment=jawiki link invalid}} - Lower Shrine (下宮). Located in Hirose, Kyūragi Town, Karatsu City, Saga Prefecture.
+* {{ill|Tenzan Shrine (Ogimachi Hatada)|ja|天山神社 (小城市小城町畑田)}} - Upper Shrine (上宮) located at the summit of Tenzan. Situated in Hatada, Ogimachi, Saga Prefecture.
+* {{ill|Tenzan Shrine (Main Shrine)|ja|天山社}} - Known as the Lower Shrine (下宮) or Main Shrine (本宮). Located in Haruki, Ogimachi, Saga Prefecture.
+* {{ill|Tenzan Shrine (Ogimachi Iwakura)|ja|天山神社 (小城市小城町岩蔵)}} - Lower Shrine (下宮). Situated in Iwakura, Ogimachi, Saga Prefecture.
+* {{ill|Tenzan Shrine (Karatsu City)|ja|天山神社 (唐津市)}} - Lower Shrine (下宮). Located in Hirose, Kyūragi Town, Karatsu City, Saga Prefecture.
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 === 天山社 ===
@@ -16,13 +14,12 @@
 
 === 天山神社 ===
 * {{ill|Tenzan-jinja (Q60988677)|lt=Tenzan-jinja|qid=Q60988677}}
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|天山神社|version=71069100|comment=Imported full ja history}}
 
 {{Commons category|Tenzan-jinja}}
 
-{{wikidata link|Q60988677|co|commons:Category:Tenzan-jinja|ja|天山神社}}
+{{wikidata link|Q60988677|co|commons:Category:Tenzan-jinja|ja|天山神社|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

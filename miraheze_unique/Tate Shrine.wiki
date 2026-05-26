@@ -1,22 +1,20 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tate_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25649383541|time triggered pipeline]] -->
-
 '''Tate Jinja''' (建神社)
 
-* {{ill|Tate Shrine (Mima)|ja|建神社 (美馬市)|12=simple|13=User:Immanuelle/Tate Shrine (Mima)}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, [[Mima City]].
-* {{ill|Tate Shrine (Tsurugi)|ja|建神社 (つるぎ町)|12=simple|13=User:Immanuelle/Tate Shrine (Tsurugi)}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, [[:en:Mima District|Mima District]], [[Tsurugi Town]].
+* {{ill|Tate Shrine (Mima)|ja|建神社 (美馬市)}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, [[Mima City]].
+* {{ill|Tate Shrine (Tsurugi)|ja|建神社 (つるぎ町)|qid=Q106852711}} - A shrine located in {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, [[:en:Mima District|Mima District]], [[Tsurugi Town]].
 
 {{disambiguation}}
 
 == Shrines with this name ==
 
-* {{ill|Ken Shrine (Q135070287)|lt=Ken Shrine|qid=Q135070287}} — Awa Province
+* {{ill|Ken Shrine (Q135070287)|qid=Q135070287|lt=Ken Shrine}} — Awa Province
 * {{ill|Takeno Shrine (Q135041309)|lt=Takeno Shrine|qid=Q135041309}} — Awa Province
 * {{ill|Tate Shrine (Q106852710)|lt=Tate Shrine|qid=Q106852710}} — Mima
-* {{ill|Tate Shrine (Q106852711)|lt=Tate Shrine|qid=Q106852711}} — Awa Province
+* {{ill|Tate Shrine (Q106852711)|ja|建神社 (つるぎ町)|qid=Q106852711|lt=Tate Shrine}} — Awa Province
 
 {{translated page|ja|建神社|version=102027230|comment=Imported full ja history}}
 
-{{wikidata link|Q107022358|ja|建神社|check_date=2026-05-11}}
+{{wikidata link|Q107022358|ja|建神社|check_date=2026-05-26}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
