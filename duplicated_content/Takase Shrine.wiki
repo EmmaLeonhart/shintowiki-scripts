@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Takase_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25640258741|commit triggered pipeline]] -->
 {{distinguish|Takase Shrine (Q3791906)}}
 
 '''Takase Shrine (Q11671973)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
@@ -7,7 +6,7 @@
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Matta district|ja|茨田郡|zh|茨田郡|qid=Q11617933}} || {{ill|Takase Shrine|lt=Takase Shrine|ja|高瀬神社 (守口市)|qid=Q11671973}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.729323|135.562611|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180925 DB]
+| {{ill|Matta district|ja|茨田郡|zh|茨田郡|qid=Q11617933}} || {{ill|Takase Shrine|lt=Takase Shrine|ja|高瀬神社 (守口市)|qid=Q11671973}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.729323|135.562611|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180925 DB]
 |}
 ==Overview==
 
@@ -39,7 +38,7 @@
 ==Enshrined ''kami''==
 The ''[[kami]]'' enshrined at Takase Jinja are:
 *{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
-*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命}}'''|天活玉命|}}
 *{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
 
 ==History==
@@ -60,9 +59,9 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 * [[List of Shinto shrines in Japan]]
 * [[Ichinomiya]]
 * Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
-** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
-** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
-** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+** {{ill|Imizu Shrine|en|Imizu Shrine}}
+** {{ill|Keta Jinja|en|Keta Jinja|lt=Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|simple|Oyama Shrine (Tateyama)|lt=Oyama Shrine}}
 
 ==References==
 {{reflist}}
@@ -86,7 +85,7 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 
 {{Commons category|Takase-jinja}}
 
-{{wikidata link|Q11671973|en|Takase Shrine|fr|Takase-jinja|ja|高瀬神社|zh|高瀨神社|ja|高瀬神社 (守口市)|check_date=2026-05-10}}
+{{wikidata link|Q11671973|en|Takase Shrine|fr|Takase-jinja|ja|高瀬神社|zh|高瀨神社|ja|高瀬神社 (守口市)|check_date=2026-05-26}}
 == Accidentally Overwritten Content ==
 {{Short description|Shinto shrine}}
 {{Infobox religious building
@@ -116,7 +115,7 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 ==Enshrined ''kami''==
 The ''[[kami]]'' enshrined at Takase Jinja are:
 *{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
-*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命}}'''|天活玉命|}}
 *{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
 
 ==History==
@@ -137,9 +136,9 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 * [[List of Shinto shrines in Japan]]
 * [[Ichinomiya]]
 * Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
-** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
-** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
-** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+** {{ill|Imizu Shrine|en|Imizu Shrine}}
+** {{ill|Keta Jinja|en|Keta Jinja|lt=Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|simple|Oyama Shrine (Tateyama)|lt=Oyama Shrine}}
 
 ==References==
 {{reflist}}
@@ -192,7 +191,7 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 ==Enshrined ''kami''==
 The ''[[kami]]'' enshrined at Takase Jinja are:
 *{{nihongo|'''[[Ōkuninushi]]'''|大己貴命|}}.<ref>Pickens, Stuart D. B. (2004). [https://books.google.com/books?id=BKAhUVqKFhgC&pg=PA371&dq=  ''Sourcebook in Shinto: Selected Documents,'' p. 371].</ref><ref name="kotodamaya">Kotodamaya.com, [http://www.kotodamaya.com/takase-jinja/ "Takase Jinja"]; retrieved 2013-1-25.</ref>
-*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ame-no-ikutama-no-mikoto|13=User:Immanuelle/Ame-no-Ikutama}}'''|天活玉命|}}
+*{{nihongo|'''{{ill|Ame-no-Ikutama|ja|天活玉命}}'''|天活玉命|}}
 *{{nihongo|'''{{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru-no-kami|ja|五十猛神|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Isotakeru-no-kami}}'''|五十猛神|}}
 
 ==History==
@@ -213,9 +212,9 @@ File:県社高瀬神社.jpg|Takase Jinja in 1909
 * [[List of Shinto shrines in Japan]]
 * [[Ichinomiya]]
 * Other shrines claiming to be [[Etchū Province|Etchū]] Ichinomiya
-** {{ill|Imizu Shrine|en|12=simple|13=User:Immanuelle/Imizu Shrine}}
-** {{ill|Keta Jinja|lt=Keta Jinja|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Keta Jinja}}
-** {{ill|Oyama Shrine (Tateyama)|lt=Oyama Shrine|simple|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oyama Shrine (Tateyama)}}
+** {{ill|Imizu Shrine|en|Imizu Shrine}}
+** {{ill|Keta Jinja|en|Keta Jinja|lt=Keta Jinja}}
+** {{ill|Oyama Shrine (Tateyama)|simple|Oyama Shrine (Tateyama)|lt=Oyama Shrine}}
 
 ==References==
 {{reflist}}
