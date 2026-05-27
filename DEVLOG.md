@@ -6,6 +6,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Fix sync_git_synced_pages "delete on orphan" bug — distinguish baseline from no-baseline
+**Files:** `shinto_miraheze/sync_git_synced_pages.py`, `queue.md`
+
+Pass 2 of `sync_git_synced_pages.py` (orphan handling — files in
+the repo whose title is not in the wiki's `[[Category:Git synced
+pages]]`) previously deleted local files unconditionally as long
+as `cat_still_present == True`. That fires the bug Emma found
+earlier today: `git_synced/Open questions.wiki` was added in
+commit `d8212c92` at 21:07Z; CI sync ran at 22:46Z and deleted
+the file because the wiki page didn't exist yet — Emma had to
+manually recreate the wiki version 12 minutes later.
+
+Fix splits Pass 2 into two sub-cases by baseline:
+
+* **`base_sha is None`** → no prior sync baseline → file is newly
+  added to the repo and has never been on the wiki. PUSH-CREATE
+  it to the wiki instead of deleting; initialise state so future
+  cycles can detect changes. Edit summary says
+  "Sync from repo git_synced/ (create page from repo)" or
+  "(re-add to category, page exists but was not in [[Category:Git
+  synced pages]])" depending on whether the page exists on the
+  wiki.
+* **`base_sha is not None`** → file used to be on the wiki and
+  was dropped from the category there. Wiki is source of truth
+  for membership → delete locally (preserved pre-fix behaviour).
+  The `WARN: ... has uncommitted local edits` branch only fires
+  in this case now (previously it ANDed `base_sha is not None`
+  with the divergence check, which was always-true once we got
+  past the first branch — now correctly gated).
+
+AST-parses cleanly. Same bug shape exists in
+`sync_duplicated_content.py` and `sync_need_translation.py`
+(filed as follow-up queue item) — those dirs are wiki-driven so
+the bug is less likely to fire in practice, but the fix applies
+identically. `sync_fandom_unique_pages.py` and
+`sync_miraheze_unique_pages.py` use a stricter "no category in
+either side" gate that's already safe.
+
 ### `[[Open questions]]` page maintenance policy + repo-side cleanup of resolved items + sync deletion bug filed
 **Files:** `CLAUDE.md`, `git_synced/Open questions.wiki`, `queue.md`
 

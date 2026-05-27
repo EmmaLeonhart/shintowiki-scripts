@@ -439,9 +439,55 @@ def main():
                 print(f"ERROR pushing-then-deleting {title}: {e}")
             continue
 
-        # Category still present in the repo, but wiki dropped the page
-        # from the category — wiki is source of truth for membership.
-        if base_sha is not None and local_sha != base_sha:
+        # Category still present in the repo, but wiki page isn't in the
+        # category. Two sub-cases, distinguished by whether we have a
+        # prior sync baseline:
+        #
+        # (a) base_sha is None → file is newly added to the repo and has
+        #     never been synced. Don't delete — PUSH it to the wiki
+        #     instead (creating the page if needed). This is the bug
+        #     fix for the 2026-05-27 incident where the CI sync deleted
+        #     git_synced/Open questions.wiki because the wiki page
+        #     didn't exist yet.
+        #
+        # (b) base_sha is not None → file used to be on the wiki and
+        #     was dropped from the category there. Wiki is source of
+        #     truth for membership → delete locally (preserved
+        #     pre-fix behaviour).
+        if base_sha is None:
+            if edits_performed >= args.max_edits:
+                skipped += 1
+                continue
+            if not args.apply:
+                print(f"[DRY] PUSH (new file, no prior baseline): {title}")
+                pushed += 1
+                continue
+            try:
+                page = site.pages[title]
+                if page.exists:
+                    summary = (
+                        f"Sync from repo git_synced/ (re-add to category, "
+                        f"page exists but was not in [[Category:Git synced pages]]) "
+                        f"{args.run_tag}"
+                    )
+                else:
+                    summary = (
+                        f"Sync from repo git_synced/ (create page from repo) "
+                        f"{args.run_tag}"
+                    )
+                result = page.save(local_text, summary=summary)
+                new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or 0
+                state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
+                pushed += 1
+                edits_performed += 1
+                print(f"PUSH  {title}  (new file, rev {new_revid})")
+                time.sleep(THROTTLE)
+            except Exception as e:
+                errors += 1
+                print(f"ERROR pushing new file {title}: {e}")
+            continue
+
+        if local_sha != base_sha:
             print(f"WARN: {title} has uncommitted local edits but wiki dropped the category — deleting anyway (recoverable from git)")
         if not args.apply:
             print(f"[DRY] DELETE local (cat removed on wiki): {title}")
