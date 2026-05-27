@@ -6,6 +6,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Page-churn diagnostic — phase 1 (sample of git_synced pages, no alternation found)
+**Files:** `shinto_miraheze/diagnose_page_churn.py` (new), `docs/page_churn_diagnostic.md` (new)
+
+Phase 1 of the "Bot ping-pong / never-settling pages" queue item from
+2026-05-26. Read-only diagnostic that walks
+`[[Category:Git synced pages]]` (Emma flagged this as the specific
+churn source), samples 20 of the 69 members, pulls the last 30
+revisions per page, attributes each revision to a bot script via
+edit-summary keyword matching (`SCRIPT_PATTERNS` table — ~35 rules
+covering syncs, orchestrator ops, untransclude-crud, etc.), and looks
+for streaks of ≥3 consecutive A→B→A→B toggles where neither side is
+`unknown`.
+
+Result: **zero alternation streaks detected** in the sampled 20
+pages. The most recent activity on git_synced pages is mostly a single
+recent bot edit followed by older edits with mixed signatures
+(unknowns, syncs, and ops without clear toggle structure).
+
+Caveats — honest:
+
+* Of ~137 revisions across the sample, **97 attribute as `unknown`**.
+  The detector's blind spots are wide enough that subtler alternation
+  patterns could be hiding. `SCRIPT_PATTERNS` needs more rules
+  (notably for `Bot: tag …`, `Bot: remove crud category`, history-
+  cleanup summaries, and human-editor revisions) before the result
+  can be claimed as exhaustive.
+* Sample is 20 of 69 (~29%). Re-run with `--sample-size 60` to cover
+  the full category.
+* This run looks ONLY at `[[Category:Git synced pages]]`. Churn in
+  other categories (`miraheze_unique/`, `fandom_unique/`,
+  `duplicated_content/`) isn't covered by this report.
+
+Likely interpretation: today's `8b72a8be ci(cleanup-loop): syncs run
+before any wiki-write step` fix may have stopped the active churn Emma
+observed. Cannot claim that conclusively until attribution is improved
+and the sample is widened — phase 2 (the fix) is gated on those
+follow-up runs.
+
 ### Monthly delete_orphans script — first scheduled fire 2026-06-01
 **Files:** `shinto_miraheze/delete_orphans.py` (new), `.github/workflows/delete-orphans.yml` (new)
 

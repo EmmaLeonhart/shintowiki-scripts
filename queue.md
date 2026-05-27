@@ -58,18 +58,23 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
   side is further ahead in revisions wins, with per-directory tie-break
   rules (TBD). See todo.md "Bot ping-pong" for the full theory.
-- [ ] **Diagnose and fix the page-churn loops Emma flagged.** Some pages are
-  being edited in rapid succession by two competing processes ("the git sync
-  and the other thing") and never settle — each bot's edit gets reverted by
-  the other. **Don't guess at the fix; diagnose first.** First step: pull
-  recent page history for a sample of affected pages from
-  shinto.miraheze.org, find pages where two bot accounts (or the same bot
-  via two different scripts/ops) are alternating, group by the
-  script/op pair driving the loop. THEN decide which side's view of the
-  canonical form is correct and align the other to it. See the matching
-  todo.md "Bot ping-pong" section for likely suspects (git_synced sync vs.
-  orchestrator ops, two orchestrator ops disagreeing, etc.). High priority —
-  these pages are net churn for zero progress.
+- [ ] **Page-churn loops — phase 2 (the fix), pending Emma's review of
+  the phase-1 report.** The phase-1 diagnostic ran 2026-05-27 (see
+  `docs/page_churn_diagnostic.md` + commit message of the diagnose tick).
+  Result: **zero alternation streaks detected** in a 20-page sample from
+  `[[Category:Git synced pages]]`, but with a caveat — 97 / ~137
+  revisions attribute as `unknown` because `SCRIPT_PATTERNS` in
+  `diagnose_page_churn.py` doesn't yet cover every bot's summary
+  template (notably: many `Bot: tag …`, `Bot: remove crud category`,
+  history-cleanup summaries). Likely interpretation: the 2026-05-26
+  sync-ordering fix (commit `8b72a8be`, syncs now run before any
+  wiki-write) stopped the active git_synced churn Emma flagged. To
+  confirm or refute before declaring "fixed": (a) extend
+  `SCRIPT_PATTERNS` to attribute the unknowns, (b) re-run the
+  diagnostic on a larger sample (`--sample-size 60` covers all 69
+  category members), (c) optionally widen to other categories
+  (mainspace generally, not just git_synced). The fix itself is gated
+  on what those next runs surface.
 
 ## Pinned notes
 
