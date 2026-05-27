@@ -66,7 +66,7 @@ This template is used to present a consistently formatted table for use in artic
 * Parameters can be safely left blank. Note that you may include an image with no caption, but a caption will not be shown if there is no image.
 * [[Help:Link#Wikilinks|Wikilinks]] can be used in any of the infobox fields.
 
-; name: Book name or [[Title (publishing)|title]]. If parameter is left blank, ''name'' will be inherited from the [[Wikipedia:Article titles|Wikipedia page]] where this infobox is invoked.
+; name: Book name or {{ill|title|ar|عنوان (نشر)|bg|Заглавие|da|Titel (værk)|de|Buchtitel|el|Τίτλος (εκδόσεις)|en|Title (publishing)|fa|عنوان (نشر)|fr|Titre (désignation)|fy|Titel (namme)|he|כותרת (כתיבה)|id|Judul|it|Titolo (editoria)|kaj|Du̱ccu̱ ba̱ryyat|ko|제목|mr|शीर्षक|nl|Boektitel|pl|Tytuł (literaturoznawstwo)|ru|Заглавие|sd|عنوان|su|Judul|sv|Titel (rubrik)|zh|标题|zh_yue|標題|zu|Isihlokosiqu|lt=title|qid=Q783521}}. If parameter is left blank, ''name'' will be inherited from the [[Wikipedia:Article titles|Wikipedia page]] where this infobox is invoked.
 ; image: Image (prefer 1st edition where permitted), use bare filename: <code><nowiki>Example.jpg</nowiki></code><br />For a title page from a [[:Commons:|Commons]] PDF, specify the page and width in [[WP:EIS|the syntax]]: <code><nowiki>[[File:Lissagaray - Histoire de la Commune de 1871, MS.djvu|page=9|220px]]</nowiki></code>
 ; image_size: Uses image size set by user (default 220px). Use a number to override image size. However, this is discouraged per [[WP:THUMBSIZE]].
 ; border: Inserting <code>yes</code> here will result in a 1px grey border around the image, useful for instances where the image and the background will blend together (such as a book cover with a white background). If no border is necessary, this parameter should not be used. Note: does not apply if {{para|image}} uses the full image syntax (e.g. <code><nowiki>[[File:Example.jpg]]</nowiki></code>); in this case add the border in {{para|image}} (e.g. <code><nowiki>[[File:Example.jpg|border=yes]]</nowiki></code>)
@@ -77,7 +77,7 @@ This template is used to present a consistently formatted table for use in artic
 ; audio_read_by: For [[:en:Audiobook|Audiobook]]s
 ; title_orig: Original title, if not in English; recommended if using {{para|native_external_url}} or {{para|native_wikisource}}, unless {{para|name}} (or the article's title if {{para|name}} is not used) is the original non-English title
 ; orig_lang_code: [[:en:ISO 639|ISO 639 code]] of original language, required if using {{para|title_orig}}, {{para|native_wikisource}} or {{para|native_external_url}}
-; working_title: [[Working title]], when different from published title
+; working_title: {{ill|working title|bg|Работно заглавие|bn|কাজের শিরোনাম|de|Arbeitstitel|en|Working title|es|Título provisional|fa|عنوان کاری|fi|Työnimi|fy|Wurktitel|id|Judul kerja|it|Titolo di lavorazione|ja|ワーキングタイトル|ko|가제목|ms|Tajuk kerja|nl|Werktitel|pt|Título de produção|ro|Titlu provizoriu|ru|Рабочее название|sv|Arbetsnamn|th|ชื่อชั่วคราว|tr|Geçici ad|zh|暂定名称|lt=working title|qid=Q1170216}}, when different from published title
 ; translator: Translator(s), if original not in English
 ; illustrator: Illustrator (where used throughout and a major feature)
 ; cover_artist: Cover artist, if any
@@ -87,7 +87,7 @@ This template is used to present a consistently formatted table for use in artic
 ; release_number: The "release number" of a book within the "series" (also would be called a "volume") – n.b. only relevant for an article where "series" is populated
 ; subject/subjects: (for non-fiction) A word or phrase that captures the essence of the topic of the work. ''See [[:en:Index term|Index term]] and [[:en:Library classification|Library classification]]''. Should not generally be combined with genre/genres (i.&nbsp;e., ''cooking'' as the subject or ''cookbook'' as the genre, but not both).
 ; genre/genres: ''See [[:en:literary genre|literary genre]]''. Use {{tl|hlist}} for sorting multiple entries. Should not generally be combined with subject/subjects (i.&nbsp;e., ''cooking'' as the subject or ''cookbook'' as the genre, but not both). Should be both specific (e.&nbsp;g., ''memoir'' rather than ''nonfiction'') and reliably sourced.
-; set_in: can be both time and place as [[Setting (narrative)|setting]]. No need to create long lists. Use approximate dates/places if it is not clearly specified in the text.
+; set_in: can be both time and place as {{ill|setting|af|Agtergrond (narratief)|am|መቼት|ca|Ambientació|de|Schauplatz|en|Setting (narrative)|es|Ambientación|fa|صحنه (روایت‌شناسی)|he|רקע|hi|अभिविन्यास (कहानी)|io|Encenigo|is|Sögusvið|it|Ambientazione|ja|設定 (物語)|ko|설정|ms|Latar|nl|Setting|pl|Świat przedstawiony|ps|ترتیب ( په داستان کي )|pt|Ambientação|ru|Сеттинг|simple|Setting (fiction)|tr|Zaman ve mekân|uk|Сетинг|ur|ارضیہ|zh|設定 (敘事學)|zh_yue|背景設定|lt=setting|qid=Q617332}}. No need to create long lists. Use approximate dates/places if it is not clearly specified in the text.
 ; publisher: Publisher of primary publication (prefer 1st edition); also {{para|publisher2}} for additional publishers.
 ; pub_date: Date published (1st edition)
 ; english_pub_date: Date first published in English if 1st edition is in another language.
@@ -264,7 +264,7 @@ This template is used to present a consistently formatted table for use in artic
 		"series": {
 			"label": "Series",
 			"description": "Series the book is part of",
-			"example": "[[The Federalist Papers]]",
+			"example": "{{ill|Federalist Papers|ar|أوراق الفدرالية|bg|Федералистът|ca|El Federalista|ckb|کۆمەڵە وتاری فێدڕالیست|cs|Listy federalistů|de|Federalist Papers|en|The Federalist Papers|es|The Federalist Papers|fa|مقاله‌های فدرالیست|fi|Federalistikirjoitukset|fr|Les Papiers fédéralistes|he|כתבי הפדרליסט|id|The Federalist Papers|is|Greinar bandalagsmanna|it|Il Federalista|ja|ザ・フェデラリスト|kk|Федералист жазбалары|ko|연방주의자 논집|la|The Federalist|new|फेदेरलिस्त पेपर्स|nl|Federalist Papers|no|Federalist Papers|pl|Federalista|pt|O Federalista|ro|Federalist Papers|ru|Федералист|simple|Federalist Papers|sk|Listy federalistov|sl|Federalistični spisi|sr|Списи федералиста|sv|Federalist Papers|tr|Federalist Yazılar|uk|Федераліст|zh|联邦党人文集|lt=Federalist Papers|qid=Q858036}}",
 			"type": "string"
 		},
 		"image_size": {
@@ -295,7 +295,7 @@ This template is used to present a consistently formatted table for use in artic
 		"preceded_by": {
 			"label": "Preceded by",
 			"description": "The previous installment in the series/from the author",
-			"example": "[[Federalist No. 4]]",
+			"example": "{{ill|Federalist No. 4|de|Federalist-Artikel Nr. 4|en|Federalist No. 4|lt=Federalist No. 4|qid=Q5440612}}",
 			"type": "string"
 		},
 		"followed_by": {
@@ -463,4 +463,5 @@ About how to handle translated books, see the [[Template talk:Infobox book/Archi
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>

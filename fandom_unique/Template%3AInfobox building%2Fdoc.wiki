@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Location map|Module:Coordinates|Module:Check for unknown parameters}}
 
 {{tl|Infobox building}} may be used to summarize information about a building or built structure, including skyscrapers, hotels, hostels and performance venues.
@@ -1536,4 +1536,5 @@ A list of modules containing maps that may be used can be found at:
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox building/doc|check_date=2026-05-27}}
 </noinclude>
