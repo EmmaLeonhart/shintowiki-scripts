@@ -186,7 +186,7 @@
 | label42 = {{longitem|Parent organi{{#if:{{{parent_organisation|}}}|s|z}}ation}}
 |  data42 = {{#if:{{{parent_organisation|}}} |{{{parent_organisation}}} |{{{parent_organization|}}} }}
 
-| label43 = {{ill|subsidiary company|ar|شركة تابعة|arz|شركه تابعه|ast|Filial|az|Törəmə müəssisə|bg|Дъщерна компания|bh|सब्सिडरी|bs|Podružnica|ca|Filial|ckb|کۆمپانیای لکێنراو|cs|Dceřiná společnost|da|Datterselskab|de|Tochtergesellschaft|el|Θυγατρική εταιρεία|en|Subsidiary|eo|Filio|es|Filial|et|Tütarettevõte|eu|Eskumendeko enpresa|fa|شرکت تابعه|fo|Dótturfelag|fr|Filiale|fy|Dochterûndernimming|ha|Reshen Aiki|he|חברה בת|hi|सहायक कंपनी|hu|Leányvállalat|hy|Դուստր ընկերություն|id|Anak perusahaan|io|Filialo|it|Società controllata|ja|子会社|ka|შვილობილი კომპანია|kaa|Sıńar kompaniya|kk|Еншілес қоғам|kn|ಅಂಗಸಂಸ್ಥೆ|ko|자회사|lt|Dukterinė įmonė|lv|Meitasuzņēmums|ms|Anak syarikat|ne|सहायक कम्पनी|nl|Dochteronderneming|no|Datterselskap|pa|ਸਹਾਇਕ ਕੰਪਨੀ|pl|Jednostka zależna|pt|Subsidiária|ro|Filială|ru|Дочернее общество|simple|Subsidiary|sk|Dcérska spoločnosť|sr|Подружница|su|Anak pausahaan|sv|Dotterbolag|ta|கிளை நிறுவனம்|th|บริษัทสาขา|tr|Alt şirket|uk|Дочірнє підприємство|ur|ذیلی کمپنی|uz|Shoʻba (korxona)|vi|Công ty con|zh|子公司|zh_yue|子公司|lt=subsidiary company|qid=Q658255}}
+| label43 = [[Subsidiary|Subsidiaries]]
 |  data43 = {{#if:{{{subsidiaries|}}} |{{{subsidiaries}}} |{{{subsid|}}} }}
 
 | label44= Secessions
@@ -195,7 +195,7 @@
 | label45 = Affiliations
 |  data45 = {{{affiliations|{{{affiliation|}}}}}}
 
-| label46 = {{ill|Research Organisation Registry|de|Research Organization Registry|en|Research Organization Registry|es|Registro de organizaciones de investigación|fa|ثبت سازمان‌های پژوهشی|fr|Registre des organismes de recherche|nl|Research Organization Registry|lt=Research Organisation Registry|qid=Q110235640}} Id
+| label46 = [[Research Organization Registry|R.O.R.]] Id
 |  data46 = {{{ror_id|}}}
 
 | label47 = Budget 
@@ -213,7 +213,7 @@
 | label51 = {{#if:{{{funders|}}}|Funders|Funding}}
 |  data51 = {{{funders|{{{funding|}}}}}}
 
-| label52 = {{ill|financial endowment|ar|وقف مالي|bn|আর্থিক বৃত্তিদান|de|Endowment (Finanzierung)|en|Financial endowment|es|Dotación financiera|fa|موقوفه مالی|fr|Fonds de dotation en droit français|he|קרן (כסף)|hi|वित्तीय बंदोबस्ती|hr|Proračunski izdatak|hy|Ոչ առևտրային կազմակերպության նպատակային կապիտալ|id|Dana abadi|ja|基金|kk|Эндаумент|kn|ದತ್ತಿ ಮತ್ತು ಪ್ರತಿಷ್ಠಾನಗಳು|ko|기금|ms|Sumbangan kewangan|pt|Endowment|ro|Fond de dotare financiară|ru|Эндаумент|simple|Financial endowment|uk|Ендавмент|vi|Hỗ trợ tài chính|wuu|基金|zh|基金|zh_min_nan|Ki-kim|lt=financial endowment|qid=Q2620430}} 
+| label52 = [[Financial endowment|Endowment]] 
 |  data52 = {{{endowment|}}} {{#if:{{{endowment_year|}}} | ({{{endowment_year}}}) }}
 
 | label53 = {{#if:{{{num_staff|}}}{{{staff|}}} |Staff |Employees}} 
@@ -255,5 +255,4 @@
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
-[[Category:Templates transcluded in mainspace]]
 </noinclude>
