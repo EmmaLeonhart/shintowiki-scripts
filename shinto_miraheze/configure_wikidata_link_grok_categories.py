@@ -46,16 +46,25 @@ TEMPLATE_TITLE = "Template:Wikidata link"
 BEGIN_MARKER = "<!-- BEGIN_GROK_AUTO_CATEGORIES -->"
 END_MARKER = "<!-- END_GROK_AUTO_CATEGORIES -->"
 
-# Three-state classification driven by the `grok` parameter. MediaWiki on
-# miraheze treats `grok=` (empty) the same as a totally unpassed
-# parameter — both make `{{{grok|}}}` resolve to "" — so an empty slot
-# CANNOT distinguish "checked, no article" from "not yet checked". The
-# orchestrator op therefore writes the literal sentinel ``none`` for the
-# missing case. The template logic:
+# Three-state classification driven by the `grok` parameter, plus the
+# actual Grokopedia interwiki link rendering when a real slug is set.
+# MediaWiki on miraheze treats `grok=` (empty) the same as a totally
+# unpassed parameter — both make `{{{grok|}}}` resolve to "" — so an
+# empty slot CANNOT distinguish "checked, no article" from "not yet
+# checked". The orchestrator op therefore writes the literal sentinel
+# ``none`` for the missing case.
 #
-#   grok=<slug>   (non-empty, not "none") → "Pages with Grokipedia links"
+# Template behaviour per state:
+#
+#   grok=<slug>   (non-empty, not "none") → emit `[[got:<slug>]]` interwiki
+#                                          + "Pages with Grokipedia links" cat
 #   grok=none                              → "Pages without Grokipedia links"
 #   grok= (empty) OR no grok param at all  → "Pages to be checked for Grokipedia"
+#
+# The `[[got:...]]` is the Grokopedia interwiki prefix (configured on
+# the wiki); it routes to https://grokipedia.com/page/<slug>. Wrapped
+# in <includeonly> so the link only appears on pages that TRANSCLUDE
+# the template — never on Template:Wikidata link's own subject page.
 #
 # The legacy `grok=` (empty) state is folded into "to be checked"
 # alongside fully-absent; the orchestrator op rewrites those to
@@ -65,7 +74,7 @@ GROK_BLOCK = (
     "{{#ifeq:{{{grok|}}}|none|"
     "[[Category:Pages without Grokipedia links]]|"
     "{{#if:{{{grok|}}}|"
-    "[[Category:Pages with Grokipedia links]]|"
+    "[[got:{{{grok}}}]][[Category:Pages with Grokipedia links]]|"
     "[[Category:Pages to be checked for Grokipedia]]}}}}\n"
     f"{END_MARKER}</includeonly>"
 )
