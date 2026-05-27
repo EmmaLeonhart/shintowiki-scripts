@@ -33,9 +33,8 @@ from pathlib import Path
 import mwclient
 
 # Put the repo root on sys.path so the shinto_miraheze namespace
-# resolves — same pattern as strip_mediawiki_banners.py. No
-# __init__.py in shinto_miraheze/, so the script directory alone
-# isn't enough.
+# resolves. No __init__.py in shinto_miraheze/, so the script
+# directory alone isn't enough.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
 

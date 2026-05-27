@@ -6,6 +6,53 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Archive 7 genuinely-dead / one-shot-completed scripts
+**Files:** `archive/README.md`, plus `git mv` of 7 scripts from `shinto_miraheze/` to `archive/`, plus minor docstring updates in `shinto_miraheze/orchestrators/ops/strip_html_comments.py` and `shinto_miraheze/sync_miraheze_unique_pages.py`
+
+After Emma's "how many scripts do you have that you've never run at
+all" prompt, audited the 22 scripts in `shinto_miraheze/` not wired
+into any GitHub Actions workflow. 7 are genuinely dead and moved to
+`archive/` via `git mv` (history preserved):
+
+* `fix_ill_destinations.py` — superseded by `normalize_ill_wikidata`
+  orchestrator op which does both the `WD=Q…` and missing-`qid=`
+  cases per-page on every sweep. Also carries a historical
+  hardcoded secret literal, slated for the
+  `git filter-repo --replace-text` rewrite alongside the other
+  secret-removal targets.
+* `create_category_qid_redirects.py` and
+  `resolve_category_wikidata_from_interwiki.py` — per todo.md
+  (2026-05-08), no longer wired into any active workflow;
+  superseded by orchestrator-side category wikidata lookup.
+* `generate_shikinaisha_pages_v25_with_redirects.py` — V25
+  one-shot historical generator; the pages exist.
+* `strip_mediawiki_banners.py` — one-shot ns=8 banner cleanup;
+  no orchestrator walks ns=8 so no new banners are being
+  produced.
+* `unstick_duplicated_content_conflicts.py` — one-shot
+  duplicated-content unstick; the wiki-wins (2026-05-23) and
+  revision-aware (2026-05-27) sync changes make this kind of
+  recovery unnecessary going forward.
+* `fix_sexagenary_mt_entropy.py` — one-shot MT-entropy cleanup
+  for the 60 `git_synced/` Sexagenary cycle pages.
+
+`archive/README.md` extended with explanatory entries for each.
+Stale references in two live files updated: the
+`strip_html_comments.py` ops docstring now points at the
+archived path and notes the cleanup is done; the brief comment
+in `sync_miraheze_unique_pages.py` that referenced the archived
+script as a pattern example was trimmed (the pattern is obvious
+from the code itself).
+
+Kept loose in `shinto_miraheze/`: diagnostics
+(`diagnose_page_churn.py`, `case_collision_report.py`),
+one-shot-pending-re-run scripts (`delete_lowercase_template_collisions.py`),
+the wiki-namespace-creation-gated `populate_namespace_layers.py`,
+the `sync_revision_aware.py` helper module imported by the 5
+sync scripts, and a handful of `merge_*` / `resolve_*` / `tag_*`
+scripts whose live-or-dead status needs a closer per-script
+review before archiving.
+
 ### Fix sync_git_synced_pages "delete on orphan" bug — distinguish baseline from no-baseline
 **Files:** `shinto_miraheze/sync_git_synced_pages.py`, `queue.md`
 

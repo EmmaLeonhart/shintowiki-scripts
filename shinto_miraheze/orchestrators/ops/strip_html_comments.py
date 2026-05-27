@@ -39,7 +39,10 @@ exclusion was about generic space-saving ops being too risky on
 interface messages; this op exists specifically to undo damage that
 offload caused in ns=8, so it's an explicit carve-out. No orchestrator
 currently walks ns=8 — the companion one-shot
-``strip_mediawiki_banners.py`` does that walk and applies this op.
+``archive/strip_mediawiki_banners.py`` did that walk and applied this
+op (archived 2026-05-27 — its one-shot job is done; ns=8 is no longer
+being damaged because ``history_offload`` is excluded from every
+orchestrator).
 """
 
 import datetime
