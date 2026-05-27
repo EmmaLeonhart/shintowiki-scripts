@@ -6,6 +6,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### New script: `delete_lowercase_template_collisions.py` (deletes case-collision Template:Infobox twins on both wikis)
+**Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`, `queue.md`
+
+The 19 `Template:Infobox <Name>` case-collision pairs from
+`docs/case_collision_report.md` need wiki-side deletion to clear the
+duplicates from the repo — simply deleting the lowercase `.wiki`
+files from `fandom_unique/` / `miraheze_unique/` doesn't help, since
+the sync (e.g. `sync_miraheze_unique_pages.py:248-300`) re-PULLs any
+wiki-side page in the category that's missing locally. So the fix
+has to land on the wiki.
+
+New one-shot script does that for both shinto.miraheze.org and
+shinto.fandom.com. Standard scaffold: `mwclient`, `THROTTLE = 2.5`,
+`--apply` / `--max-deletes` / `--run-tag`, plus `--wiki
+miraheze|fandom|both` (default both). Per-page safeguard refuses to
+delete unless (a) lowercase variant exists, (b) canonical
+capitalised twin exists, (c) current wiki content is byte-identical
+between the two, (d) `list=embeddedin` returns zero transclusions
+of the lowercase variant. Condition (d) is the load-bearing one —
+it gates the delete on `canonicalize_template_case` having
+rewritten every `{{infobox X}}` / `[[Template:Infobox x]]`
+reference in the wiki to the canonical form. Without that gate,
+deleting the lowercase template page would break any unvisited
+transclusion.
+
+Dry-run 2026-05-27 against both wikis:
+
+* **shinto.miraheze.org**: 9 of 10 lowercase pages skipped for "still
+  has >=1 transclusion" (canonicalize sweep not done); 1 skipped
+  because the canonical `Template:Infobox Noble` is MISSING on
+  miraheze — only the lowercase one exists, so refusing to delete
+  the only copy. Queue item added for Emma to backfill the
+  canonical title on miraheze before the deleter can act on it.
+* **shinto.fandom.com**: all 10 lowercase pages skipped — same
+  transclusion-present reason; no missing canonicals.
+
+Zero would-deletes; nothing to apply yet. Re-run after another
+orchestrator cycle or two (the `canonicalize_template_case` op is
+wired into all 12 orchestrators) and the gates should start opening
+page-by-page.
+
 ### Phase-2 fix: strip `[[Category:qqqq]]` from 4 repo files (kills Take Minato Shrine churn)
 **Files:** `miraheze_unique/Take Minato Shrine.wiki`, `fandom_unique/Take Minato Shrine.wiki`, `fandom_unique/Template%3A中世神道.wiki`, `fandom_unique/Template%3A神社本庁.wiki`
 

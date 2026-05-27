@@ -83,6 +83,25 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   activity 2026-05-14/15) appear quiescent but still aren't
   confirmed resolved.
 
+## Case-collision lowercase Template:Infobox pages (2026-05-27)
+
+- [ ] **Run `delete_lowercase_template_collisions.py --apply` once the
+  `canonicalize_template_case` sweep finishes.** Script lives at
+  `shinto_miraheze/delete_lowercase_template_collisions.py`; per-page
+  safeguard refuses to delete unless (a) lowercase variant exists,
+  (b) canonical capitalised twin exists, (c) content is byte-
+  identical, (d) `embeddedin` returns zero transclusions. Dry-run
+  2026-05-27 against both wikis: every one of the 19 lowercase pages
+  still has live transclusions (sweep in flight), so 0 would-deletes
+  — re-run after another full orchestrator cycle or two.
+- [ ] **Investigate: `Template:Infobox Noble` is MISSING on
+  shinto.miraheze.org.** Surfaced by the same dry-run — only the
+  lowercase variant exists there. Means either someone manually
+  deleted the canonical form or it never got created. Either copy
+  the lowercase content into the canonical title before the
+  collision-delete script can touch it, or move-rename the lowercase
+  one. Fandom side has both; only miraheze has this hole.
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
