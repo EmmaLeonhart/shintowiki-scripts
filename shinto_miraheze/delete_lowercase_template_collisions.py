@@ -39,10 +39,48 @@ per the project-wide wiki-load convention.
 import argparse
 import io
 import os
+import re
 import sys
 import time
 
 import mwclient
+
+# Match `#REDIRECT [[Target]]` (or `#redirect`, `#Redirect`, optional
+# leading `:` interwiki marker, optional `|display text` after the
+# target). Captures the raw target string only. MediaWiki accepts any
+# casing of the `#REDIRECT` magic word and tolerates surrounding
+# whitespace.
+_REDIRECT_RE = re.compile(
+    r"^\s*#REDIRECT\s*:?\s*\[\[\s*(?P<target>[^|\]\n]+?)\s*(?:\|[^\]\n]*)?\s*\]\]",
+    re.IGNORECASE,
+)
+
+
+def _normalize_title(title: str) -> str:
+    """MediaWiki-style title normalisation: trim, collapse runs of
+    underscores/spaces to a single space, upper-case the first letter
+    of the page name (after any namespace prefix). Used to decide
+    whether a redirect target points at our canonical title.
+    """
+    t = title.strip().replace("_", " ")
+    t = re.sub(r" +", " ", t)
+    if ":" in t:
+        ns, _, page = t.partition(":")
+        if page:
+            page = page[0].upper() + page[1:]
+        return f"{ns.strip()}:{page}"
+    return t[0].upper() + t[1:] if t else t
+
+
+def _redirect_target(text: str):
+    """Return the (normalised) redirect target if ``text`` is a
+    `#REDIRECT [[X]]` page, else ``None``."""
+    if not text:
+        return None
+    m = _REDIRECT_RE.match(text)
+    if not m:
+        return None
+    return _normalize_title(m.group("target"))
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -161,16 +199,28 @@ def _process_wiki(wiki_key: str, apply: bool, max_deletes: int,
             skipped += 1
             continue
 
-        # (c) byte-identical content. If they diverge, the collision
-        # report is stale and a human needs to look — refuse.
+        # (c) byte-identical content OR lowercase is already a redirect
+        # pointing at the canonical. The redirect case is just as safe
+        # to delete: any transclusion or wikilink that resolved via the
+        # lowercase title was already being redirected to the canonical,
+        # so deleting the redirect breaks nothing the redirect was hiding.
+        # (Mostly hits page-move leftovers — e.g. Emma's 2026-05-27
+        # `Template:Infobox noble` -> `Template:Infobox Noble` move.)
         if (lower_text or "") != (canon_text or ""):
-            print(
-                f"  SKIP {lower_title!r}: content diverges from "
-                f"{canonical_title!r} ({len(lower_text or '')} vs "
-                f"{len(canon_text or '')} bytes) — needs manual review"
-            )
-            skipped += 1
-            continue
+            redirect_to = _redirect_target(lower_text or "")
+            if redirect_to and _normalize_title(redirect_to) == _normalize_title(canonical_title):
+                print(
+                    f"  ACCEPT {lower_title!r}: is a #REDIRECT to "
+                    f"{canonical_title!r} (page-move leftover, safe to delete)"
+                )
+            else:
+                print(
+                    f"  SKIP {lower_title!r}: content diverges from "
+                    f"{canonical_title!r} ({len(lower_text or '')} vs "
+                    f"{len(canon_text or '')} bytes) — needs manual review"
+                )
+                skipped += 1
+                continue
 
         # (d) zero remaining transclusions of the lowercase variant.
         # canonicalize_template_case op rewrites references to the

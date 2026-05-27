@@ -6,6 +6,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Relax `delete_lowercase_template_collisions` check (c): accept `#REDIRECT` to canonical
+**Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`, `queue.md`
+
+The dry-run earlier today caught `Template:Infobox noble` on
+miraheze in an awkward state: Emma's wiki-side move-rename
+restored the canonical title (`Template:Infobox Noble`) but left
+the lowercase as a 495-byte `#REDIRECT [[Template:Infobox Noble]]`.
+The byte-identical safety check (c) refused that as content
+divergence and skipped, even though deleting a redirect that
+points at the canonical breaks nothing — transclusions resolving
+through the redirect would resolve directly to the canonical
+after deletion.
+
+Picked up the "Optional follow-up" embedded in the queue item:
+added `_redirect_target(text)` + `_normalize_title(title)` helpers
+and a second-chance check in (c) — if `lower_text` is a
+`#REDIRECT [[X]]` and `X` normalises to `canonical_title`, accept
+and log `ACCEPT ... (page-move leftover, safe to delete)`. Other
+divergent content still hits the manual-review SKIP path
+unchanged.
+
+Helpers unit-tested in isolation: 9/9 redirect-syntax variants
+parsed correctly (lowercase/mixedcase `#REDIRECT` magic word,
+optional `:` interwiki marker, `|display text` pipe, `_`→space
+in target, leading whitespace, non-redirects). End-to-end
+dry-run against shinto.miraheze.org: `Template:Infobox noble`
+now passes (c) via the ACCEPT path, then correctly trips on (d)
+because the canonicalize sweep hasn't finished yet — meaning it's
+in the same waiting state as the other 19 collision pairs, no
+longer a singleton outlier.
+
 ### Verify + clear stale "cloud consumer cursor" queue item (routine already updated 2026-05-23)
 **Files:** `queue.md`
 

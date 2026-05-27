@@ -13,15 +13,11 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   `canonicalize_template_case` sweep finishes.** Script lives at
   `shinto_miraheze/delete_lowercase_template_collisions.py`; per-page
   safeguard refuses to delete unless (a) lowercase variant exists,
-  (b) canonical capitalised twin exists, (c) content is byte-identical,
-  (d) `embeddedin` returns zero transclusions. Verified 2026-05-27 (2nd
-  dry-run, post-Emma-noble-move): the noble case is resolved (canonical
-  exists; lowercase is now a 495-byte redirect, which trips check (c)
-  byte-identical — that's fine, the redirect points at the canonical so
-  transclusions still work). All other 19 lowercase pages still have
-  live transclusions on at least one wiki. Re-run after another full
-  orchestrator cycle or two. Optional follow-up: relax safety check (c)
-  to accept "lowercase is a `#REDIRECT` to canonical" as safe-to-delete.
+  (b) canonical capitalised twin exists, (c) content is byte-identical
+  OR lowercase is a `#REDIRECT` to canonical (relaxed 2026-05-27 — see
+  DEVLOG), (d) `embeddedin` returns zero transclusions. Currently every
+  page on both wikis still has live transclusions; re-run after another
+  full orchestrator cycle or two.
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
