@@ -184,8 +184,9 @@ These run automatically every 24 hours via GitHub Actions. No manual action need
 
 ### Temporary / one-off re-bucketing tasks
 
-- [ ] **Strip untranslated character-count categories from already-translated pages** — inverse of `tag_untranslated_japanese.py`. Tracked in `status.md` as task 1.
 - [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
+
+(Previously here: "Strip untranslated character-count categories from already-translated pages" — done, ported to `shinto_miraheze/orchestrators/ops/strip_char_count_cats.py` and running per mainspace orchestrator sweep.)
 
 ### Requires manual intervention
 
