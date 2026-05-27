@@ -30,6 +30,9 @@ this page is different
 
 ## Duplicated-content pipeline — remaining follow-ups (2026-05-23)
 
+
+Oh fucking come on you made the thing on console and I have no clue how to edit it lmao - Emma
+
 Big fixes shipped this session (see DEVLOG 2026-05-23): consumer instruction
 rewritten (macro paragraph-merge, NOT param dedup), sync conflict policy set to
 **wiki-wins** for duplicated_content + need_translation, queue builder now
@@ -47,6 +50,9 @@ re-pulled from the wiki, cursor reset. Still open:
   category-filters, cursor reset to 0.)
 ## Wikidata: カミノヤシロ kana — manual stragglers (bot request 2026-02-26)
 
+I think this is complete
+
+
 Both bot jobs shipped (see DEVLOG 2026-05-23). The "18 leftovers" earlier were a
 false alarm: part 2 now defers to part 1 whenever the ojp-hani P1448 already has
 a katakana qualifier (part 1 appends カミノヤシロ to it; the top-level modern
@@ -61,6 +67,8 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
 
 ## Bot ping-pong / never-settling pages (2026-05-26)
 
+bitch make this thing run  it isn't hard
+
 - [ ] **Make sync conflict-resolution revision-aware (not static policy).**
   Currently per `feedback_sync_conflict_policy.md`: wiki-wins for
   duplicated_content/need_translation, repo-wins for
@@ -69,6 +77,9 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   rules (TBD). See todo.md "Bot ping-pong" for the full theory.
 
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
+
+
+I think this is resolved
 
 - [ ] **Run `delete_lowercase_template_collisions.py --apply` once the
   `canonicalize_template_case` sweep finishes.** Script lives at
