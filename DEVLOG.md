@@ -6,6 +6,53 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### `[[Open questions]]` page maintenance policy + repo-side cleanup of resolved items + sync deletion bug filed
+**Files:** `CLAUDE.md`, `git_synced/Open questions.wiki`, `queue.md`
+
+Three threads landed together in one commit.
+
+1. **CLAUDE.md policy section.** Added a top-level rule covering the
+   `[[Open questions]]` wiki page: agents read it at session start
+   and every hourly work-loop cron tick; agents DELETE bullets they
+   verify have actually been resolved (don't leave stale "open
+   questions" lying around); agents investigate before declaring an
+   item blocked-on-Emma; new blockers go on the page (not just into
+   chat). Emma flagged the failure mode on 2026-05-27 — defaulting
+   to "needs Emma's input" without checking the code/state/API is
+   the failure she wants stopped.
+
+2. **`git_synced/Open questions.wiki` cleanup.** Removed three bullets
+   that were already resolved: (a) "Cloud-queue consumer cursor" —
+   verified via `RemoteTrigger get` on `trig_013F9aeKeL3hx8zo7weKj3Ed`
+   that the routine prompt is already the post-2026-05-23 "5 random,
+   no cursor" version; (b) "Sync conflict resolution should be
+   revision-aware" — shipped 2026-05-27 across all 5 sync scripts
+   (commits 97e6ca8f + 8db1d265); (c) updated the sync-policy
+   exception note to reflect that the revision-aware refactor
+   landed. Also reframed the lowercase-template item from "blocked"
+   to "no human action required, just waiting on CI cycles."
+   Added a "Recently resolved" section retaining one-line entries
+   for confirmation, with the convention that they get pruned
+   entirely on the next pass once Emma has seen them.
+
+3. **Sync deletion bug filed.** Discovered while committing the
+   above: commit `d8212c92` added `git_synced/Open questions.wiki`
+   at 21:07Z; CI sync `49ee2434` ran at 22:46Z and **deleted** the
+   local file because the wiki page didn't exist yet — Emma then
+   had to manually recreate the wiki page at 22:58Z. The sync's
+   delete branch needs to gate on either a prior `sync_commit`
+   baseline showing the file used to be on the wiki, or an age-
+   based grace period for newly-added files. Same shape bug may
+   exist in the other four `sync_*.py` scripts. Filed as a queue
+   item.
+
+Work-loop cron prompt also updated to require reading the
+`[[Open questions]]` page each tick (which fed into requirement
+(b) of the CLAUDE.md section above). One-shot diagnostic cron
+scheduled for 17:34 PT to run `diagnose_page_churn.py` and confirm
+that the ping-pong pages are actually settling now that
+revision-aware conflict + sync re-sequencing have shipped.
+
 ### Relax `delete_lowercase_template_collisions` check (c): accept `#REDIRECT` to canonical
 **Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`, `queue.md`
 

@@ -1,0 +1,53 @@
+__NOTOC__
+
+This page is the interface between Emma (human) and the bot agents that work on this wiki. Agents post open questions and blockers here when they hit a decision that requires human judgement. Emma answers them on the wiki. Agents read the wiki version each session and act on the answers.
+
+== How to use this page ==
+
+* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker (a design call, a credential need, a wiki-side action you cannot take, an ambiguous instruction), add it under the relevant section below with enough context that Emma can answer without re-deriving the problem. Don't move items out of "blocked" sections on your own — wait for Emma's edit on the wiki. '''When you verify an item has actually been resolved (via code/API/log inspection), delete the bullet entirely in the same commit''' — leaving stale "open questions" lying around is a failure mode Emma has flagged. Investigate before declaring something blocked-on-Emma; many items framed as blockers are either already resolved or are autonomous work that just needs to be started.
+* '''Emma:''' edit answers in-line under each question. When you've answered a question and the agents have acted on it, strike or delete the question. Free-form notes that don't fit anywhere else go under [[#Notes|Notes]] below.
+* '''This page is different from other git-synced pages.''' The wiki is the canonical source of truth here. When Emma edits this page on shinto.miraheze.org, those edits propagate down to the repo (wiki-wins for this page). Agents must not silently overwrite Emma's wiki edits with stale repo content.
+
+== Currently open ==
+
+=== Shintowiki bot pipeline (<code>shintowiki-scripts</code> queue) ===
+
+* '''Kana ojp-hani manual stragglers.''' Items with 0 or >1 ojp-hani P1448 official name surface in the <code>seed_kana_qualifier.py --dry-run</code> "AMBIGUOUS" report (e.g. Q135040786 with no ojp-hani name). ''Needs:'' Emma handles these directly on Wikidata as they appear; no bot action required. (Note: blocked until 2026-06-06 by the Wikidata freeze.)
+* '''<code>delete_lowercase_template_collisions.py --apply</code> waits for orchestrator sweeps.''' All 20 lowercase <code>Template:Infobox <name></code> case-collision twins (10 on shintowiki + 10 on shinto.fandom.com) still have live transclusions per the 2026-05-27 dry-run, so the script's safety gate refuses. ''No human action required'' — the <code>canonicalize_template_case</code> op (wired into all 12 orchestrators) is rewriting transclusions to the canonical capitalised form every CI cycle; the deleter clears itself once they hit zero. Re-run is just a CI cycles question, not a design question.
+
+=== Longer-horizon work (<code>todo.md</code>) ===
+
+''Items below are real human-gates — they need Emma's design input or a non-trivial product call before agents can act. Items that are autonomous-but-not-yet-started belong in <code>queue.md</code>, not here.''
+
+* '''AI translation pipeline on high-bucket pages.''' Pipeline doesn't exist yet. ''Needs:'' Emma's call on which AI to use + design constraints (per-page budget, output validation, when to mark a page "done"). The translation worker can then be built autonomously.
+* '''Enrich autocreated categories.''' Add meaningful content (interwikis, wikidata links, parent categories) to pages in <code>Category:Categories autocreated by EmmaBot</code> that were created as bare stubs. ''Needs:'' Emma's call on what "meaningful content" looks like per category type — the script around it is straightforward once that's decided.
+* '''Category-pages race-condition audit.''' Some categories may have inconsistent state from earlier concurrent script runs. Scope unknown. ''Needs:'' Emma to specify what anomaly pattern to look for (or signal "drop this — no longer concerning").
+* '''Recreate <code>Category:Categories_missing_wikidata</code>.''' Original was wrongly populated and cleaned out as crud. Needs to be recreated with accurate membership then split into typed subcategories. ''Needs:'' Emma's design on the recreation criteria.
+* '''Drop state files from the wiki↔repo sync scripts.''' Refactor — derive baselines from git log + wiki history rather than the on-disk <code>sync_*.state</code> files. Moderate risk on autonomous syncs that already run unattended. ''Needs:'' Emma to confirm risk appetite and timing.
+* '''Secret-removal git-history rewrite.''' Destructive (force-push, history rewrite). Pre-requisite for open-source release. ''Needs:'' Emma to plan the maintenance window and confirm literal replacement targets.
+* '''Hand-convert remaining fandom <code>Template:Infobox X</code> pages to Portable Infobox.''' ~23 templates, manual per-template rewrites with rendering tests on shinto.fandom.com. ''Needs:'' human time, not bot work.
+* '''Architecture items (VISION.md).''' Namespace restructure, Pramana integration, automated translation pipeline, change-tracking bot. ''Needs:'' Emma's long-horizon design.
+
+== Recently resolved (kept here briefly for confirmation, then deleted) ==
+
+* '''Cloud-queue consumer cursor.''' (resolved 2026-05-23) The claude.ai routine <code>trig_013F9aeKeL3hx8zo7weKj3Ed</code> was rewritten to pick 5 random items per fire, with statefulness purely on file-presence + category. Verified 2026-05-27 via <code>RemoteTrigger get</code>.
+* '''Revision-aware sync conflict resolution.''' (resolved 2026-05-27) Shipped across all 5 sync scripts in commits 97e6ca8f and 8db1d265. <code>shinto_miraheze/sync_revision_aware.py</code> compares revs-since-baseline on each side; whichever is further ahead wins; static per-directory policy is the tie-break. Replaces the prior static wiki-wins/repo-wins policy.
+* '''Sync re-sequencing.''' (resolved 2026-05-27) <code>cleanup-loop.yml</code> now runs all <code>sync_*</code> steps BEFORE the orchestrator + any other write-to-wiki step (commits 3a155574, 8b72a8be). Wiki state at the start of each orchestrator cycle is already the desired state per the repo.
+
+== Currently answered (waiting on bot action) ==
+
+''(empty — when Emma answers a question above, the agent moves it here briefly until the work ships, then deletes it entirely.)''
+
+== Notes ==
+
+''(free-form scratch space for Emma to leave context that doesn't fit a specific question)''
+
+== Sync-policy exception note ==
+
+Files in <code>git_synced/</code> use revision-aware conflict resolution as of 2026-05-27 (whichever side is further ahead in revisions wins; static repo-wins is the tie-break fallback). This page is intended to be edited primarily ON the wiki by Emma, and her edits should accumulate revisions faster than agent-side edits, so the revision-aware policy should naturally favour wiki content. Agents working on <code>shintowiki-scripts</code> should additionally:
+
+# Always pull this page from the wiki at the start of a session (don't trust the repo copy alone).
+# When committing changes to other files, never include a stale repo version of this page in a sync push.
+# If you're about to edit this file in the repo, first confirm the wiki version hasn't been updated since the last sync — otherwise you'd risk clobbering Emma's answers.
+
+[[Category:Git synced pages]]
