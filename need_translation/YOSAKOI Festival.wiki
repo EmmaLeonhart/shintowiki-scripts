@@ -2,18 +2,11 @@
 
 == 2025-05-18 07:44 ==
 
-[[Summer Matsuri]] linked to {{ill|YOSAKOI Festival|ja|よさこい祭り|12=simple|13=User:Immanuelle/Yosakoi Festival|comment=changed title based on wikidata|qid=Q11255132}}
+[[Summer Matsuri]] linked to {{ill|YOSAKOI Festival|id|Festival Yosakoi|ja|よさこい祭り|qid=Q11255132}}
 {{commonscat|Category:Kochi Yosakoi Matsuri}}
 
 {{translated page|ja|よさこい祭り|version=103899872|comment=Imported full ja history}}
-{{wikidata link|Q11255132|co|commons:Category:Kochi Yosakoi Matsuri|id|Festival Yosakoi|ja|よさこい祭り|check_date=2026-05-12}}
-[[Category:Dance_festivals_in_Japan]]
-[[Category:Festivals in Kochi Prefecture]]
-[[Category:History_of_Kochi,_Kochi]]
-[[Category:Recurring_events_established_in_1954]]
-[[Category:Street_culture]]
-[[Category:Wikidata has short description]]
-[[Category:Need translation]]
+{{wikidata link|Q11255132|id|Festival Yosakoi|ja|よさこい祭り|grok=none|check_date=2026-05-27}}
 
 ==Japanese content==
 
@@ -225,13 +218,6 @@
 
 {{Event-stub}}
 {{デフォルトソート:よさこいまつり}}
-[[Category:高知県の祭り]]
-[[Category:高知市の文化]]
-[[Category:高知市の歴史]]
-[[Category:日本のダンスフェスティバル]]
-[[Category:ストリート・カルチャー]]
-[[Category:1954年開始のイベント]]
-[[Category:戦後の高知]]
 [[Category:Tier 0 Categories]][[Category:need translation]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
@@ -243,3 +229,17 @@
 [[Category:Pages with 750+ untranslated japanese characters]]
 [[Category:Pages with 1000+ untranslated japanese characters]]
 [[Category:Pages with 1500+ untranslated japanese characters]]
+[[Category:Dance_festivals_in_Japan]]
+[[Category:Festivals in Kochi Prefecture]]
+[[Category:History_of_Kochi,_Kochi]]
+[[Category:Recurring_events_established_in_1954]]
+[[Category:Street_culture]]
+[[Category:Wikidata has short description]]
+[[Category:Need translation]]
+[[Category:高知県の祭り]]
+[[Category:高知市の文化]]
+[[Category:高知市の歴史]]
+[[Category:日本のダンスフェスティバル]]
+[[Category:ストリート・カルチャー]]
+[[Category:1954年開始のイベント]]
+[[Category:戦後の高知]]

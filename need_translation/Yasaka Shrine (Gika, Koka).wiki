@@ -1,4 +1,3 @@
-
 {{Expand Japanese|八坂神社 (甲賀市)}}
 
 {{Infobox religious building
@@ -14,7 +13,7 @@
 | coordinates = {{coord|34.95059027777778|136.19681583333335}}
 | map_relief = 1
 | religious_affiliation = [[Shinto]]
-| deity = {{ill|Gozu Tennō|lt=Gozu Tennō|de|Gozu-Tennō|en|Gozu Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247}}
+| deity = {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247|lt=Gozu Tennō}}
 }}
 
 {{nihongo|'''Yasaka Shrine'''|八坂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
@@ -26,12 +25,12 @@
 * {{ill|Shikinai Shōsha|lt=Shikinai Shōsha|en|Shikinai Shōsha|ja|式内小社|simple|Shikinai Shōsha|qid=Q134917287}}
 * {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
 * {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181801</ref>
-* {{ill|Engishiki seat|lt=Engishiki seat|qid=Q135018062}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181801</ref>
+* {{ill|Engishiki seat|qid=Q135018062|lt=Engishiki seat}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181801</ref>
 ** Series ordinal: 1260
 * {{ill|Junior Fifth Rank|lt=Junior Fifth Rank|ja|従五位|ko|종5위|zh|從五位|qid=Q11071125}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181801</ref>
 * {{ill|Senior Fifth Rank|lt=Senior Fifth Rank|ja|正五位|ko|정5위|zh|正五位|qid=Q11123280}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181801</ref>
 
-* {{ill|Gion shrines|lt=Gion shrine|en|Gion shrines|ja|祇園神社|qid=Q11588442}}
+* {{ill|Gion shrines|ja|祇園神社|qid=Q11588442|lt=Gion shrine}}
 
 == part of (P361) ==
 
@@ -56,7 +55,7 @@
 
 == dedicated to (P825) ==
 
-* {{ill|Gozu Tennō|lt=Gozu Tennō|de|Gozu-Tennō|en|Gozu Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247}}
+* {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247|lt=Gozu Tennō}}
 * {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 
 == Kokugakuin University Digital Museum entry ID (P13677) ==
@@ -91,18 +90,10 @@
 
 ==References==
 
-[[Category:Shikinaisha]]
-[[Category:Shikinai Shōsha]]
-[[Category:Shikinai Ronsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Junior Fifth Rank]]
-[[Category:Senior Fifth Rank]]
-[[Category:Gion shrine]]
-[[Category:Shikinaisha in Ōmi Province]]
 {{commons category|Yasaka-jinja (Gika, Koka)}}
 [[JA:八坂神社 (甲賀市)]]
 
-{{wikidata link|Q72183108|co|commons:Category:Yasaka-jinja (Gika, Koka)|ja|八坂神社 (甲賀市)|check_date=2026-05-12}}
+{{wikidata link|Q72183108|co|commons:Category:Yasaka-jinja (Gika, Koka)|ja|八坂神社 (甲賀市)|grok=none|check_date=2026-05-27}}
 
 {{translated page|ja|八坂神社 (甲賀市)|version=107296568|comment=Imported full ja history}}
 [[Category:Need translation]]
@@ -116,3 +107,11 @@
 [[Category:重要文化財 (建造物)]]
 [[Category:滋賀県内の市町村指定有形文化財]]
 [[Category:History of Koka, Shiga]]
+[[Category:Shikinaisha]]
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Junior Fifth Rank]]
+[[Category:Senior Fifth Rank]]
+[[Category:Gion shrine]]
+[[Category:Shikinaisha in Ōmi Province]]
