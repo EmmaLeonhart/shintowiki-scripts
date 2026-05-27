@@ -608,7 +608,7 @@
 
 {{カバネ}}
 {{Normdaten}}
-{{wikidata link|Q2483673|ja|国造|en|Kuni no miyatsuko|es|Kuni no miyatsuko|ff|Kuni no miyatsuko|it|Kuni no miyatsuko|ko|국조 (일본)|simple|Kuni no miyatsuko|vi|Kuni no miyatsuko|zh|國造|check_date=2026-05-13}}
+{{wikidata link|Q2483673|ja|国造|en|Kuni no miyatsuko|es|Kuni no miyatsuko|ff|Kuni no miyatsuko|it|Kuni no miyatsuko|ko|국조 (일본)|simple|Kuni no miyatsuko|vi|Kuni no miyatsuko|zh|國造|grok=none|check_date=2026-05-27}}
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]

@@ -1,12 +1,11 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E4%BC%8A%E4%BD%90%E6%88%91%E5%91%BD for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{Infobox Japanese kami
 | 名 = Isaga-no-Mikoto
 | 神祇 =
 | 全名 = Isaga-no-Mikoto
-| 別名 = Kamu-Isaga-no-Kami, Kushitama-no-Mikoto, Isaka-Miiso-no-Mikoto, {{ill|Kushiyatama-no-Mikoto|ja|クシヤタマ|lt=Kushiyatama-no-Mikoto|lt_ja=櫛八玉命}}
+| 別名 = Kamu-Isaga-no-Kami, Kushitama-no-Mikoto, Isaka-Miiso-no-Mikoto, {{ill|Kushiyatama-no-Mikoto|ja|クシヤタマ|lt=Kushiyatama-no-Mikoto}}
 | 別称 =
 | 神格 =
-| 父 = {{ill|Takehina-no-Mikoto|ja|建比良鳥命|lt=Takehina-no-Mikoto|lt_ja=武雛命}}
+| 父 = {{ill|Takehina-no-Mikoto|fr|Takehi-Nateru|ja|建比良鳥命|zh|建比良鳥命|qid=Q11065428|lt=Takehina-no-Mikoto}}
 | 母 =
 | 親 =
 | 兄弟姉妹 = {{ill|Izumo-Takeko-no-Mikoto|ja|出雲建子命}}
@@ -14,11 +13,11 @@
 | 子 = {{ill|Tsusa-no-Mikoto|ja|津狭命}}
 | 神社 = Asuki Shrine (Kamu-Isaga Shrine)
 | 記紀等 =
-| 関連氏族 = {{ill|Izumo no Kuni no Miyatsuko|ja|出雲国造}}
+| 関連氏族 = {{ill|Izumo no Kuni no Miyatsuko|fr|Clan Izumo|ja|出雲国造|simple|Izumo clan|qid=Q11395856}}
 }}
-'''Isaga-no-Mikoto''' (''isaga'') is a {{ill|kami|ja|神 (神道)|lt=kami|lt_ja=神}} who appears in the {{ill|Izumo no Kuni no Miyatsuko|ja|出雲国造#系譜|lt=Izumo no Kuni no Miyatsuko genealogy|lt_ja=出雲国造系図}}.
+'''Isaga-no-Mikoto''' (''isaga'') is a {{ill|kami|ja|神 (神道)|lt=kami}} who appears in the {{ill|Izumo no Kuni no Miyatsuko|ja|出雲国造#系譜|lt=Izumo no Kuni no Miyatsuko genealogy}}.
 == Overview ==
-In the Izumo no Kuni no Miyatsuko genealogy, such as the ''Kokuzō {{ill|Kitajima family|ja|出雲国造#北島家|lt=Kitajima family|lt_ja=北島家}} Keifu'' compiled in the early {{ill|Edo period|ja|江戸時代}}, he is recorded as the grandson of {{ill|Ame-no-Hohi-no-Mikoto|ja|天穂日命}}, the ancestor deity of the {{ill|kuni no miyatsuko|ja|国造}}, and the son of Takehina-no-Mikoto (Takehinadori-no-Mikoto); in some transmissions, the 3rd generation is '''Kushitama-no-Mikoto'''{{Sfn|Takashima|1995|pp=175-178}}{{Sfn|Senge|1882}}. There are {{ill|genealogies|ja|系図}} that make Isaga-no-Mikoto an alternate name of Izumo-Takeko-no-Mikoto (Izumotsuhiko){{Sfn|Senge|1882}}, as well as genealogies that make Isaga-no-Mikoto and Izumo-Takeko-no-Mikoto {{ill|brothers|ja|兄弟}} and further transmit Kushiyatama-no-Mikoto as an alternate name of Isaga-no-Mikoto{{Sfn|Shibata|Inamura|1929|p=442}}. In the genealogy of the {{ill|Sugawara clan|ja|菅原氏}}, an alternate name of '''Isaka-Miiso-no-Mikoto''' is transmitted{{Sfn|Mitani|1970|p=20}}. No deity by the same name is found in the ''{{ill|Kojiki|ja|古事記}}'' or ''{{ill|Nihon Shoki|ja|日本書紀}}''.
+In the Izumo no Kuni no Miyatsuko genealogy, such as the ''Kokuzō {{ill|Kitajima family|ja|出雲国造#北島家|lt=Kitajima family}} Keifu'' compiled in the early {{ill|Edo period|ja|江戸時代}}, he is recorded as the grandson of {{ill|Ame-no-Hohi-no-Mikoto|ja|天穂日命}}, the ancestor deity of the {{ill|kuni no miyatsuko|ja|国造}}, and the son of Takehina-no-Mikoto (Takehinadori-no-Mikoto); in some transmissions, the 3rd generation is '''Kushitama-no-Mikoto'''{{Sfn|Takashima|1995|pp=175-178}}{{Sfn|Senge|1882}}. There are {{ill|genealogies|ja|系図}} that make Isaga-no-Mikoto an alternate name of Izumo-Takeko-no-Mikoto (Izumotsuhiko){{Sfn|Senge|1882}}, as well as genealogies that make Isaga-no-Mikoto and Izumo-Takeko-no-Mikoto {{ill|brothers|ja|兄弟}} and further transmit Kushiyatama-no-Mikoto as an alternate name of Isaga-no-Mikoto{{Sfn|Shibata|Inamura|1929|p=442}}. In the genealogy of the {{ill|Sugawara clan|ja|菅原氏}}, an alternate name of '''Isaka-Miiso-no-Mikoto''' is transmitted{{Sfn|Mitani|1970|p=20}}. No deity by the same name is found in the ''{{ill|Kojiki|ja|古事記}}'' or ''{{ill|Nihon Shoki|ja|日本書紀}}''.
 == Description ==
 === Kokuzō Kitajima family genealogy ===
 <div style = "overflow: auto;white-space:nowrap">
@@ -43,9 +42,9 @@ In the Izumo no Kuni no Miyatsuko genealogy, such as the ''Kokuzō {{ill|Kitajim
 {{familytree | border = 0| |||||||!}}
 {{familytree | border = 0|||||||01||||| 01 = {{ill|Yomorosu-no-Mikoto|ja|世毛呂須命}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = {{ill|Izumo-Furune|ja|出雲振根|lt=Ata-no-Mikoto|lt_ja=阿多命}}}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Izumo-Furune|ja|出雲振根|lt=Ata-no-Mikoto}}}}
 {{familytree | border = 0| |||||||!}}
-{{familytree | border = 0|||||||01||||| 01 = {{ill|Iineri|ja|飯入根|lt=Ihene-no-Mikoto|lt_ja=伊幣根命}}}}
+{{familytree | border = 0|||||||01||||| 01 = {{ill|Iineri|ja|飯入根|lt=Ihene-no-Mikoto}}}}
 {{familytree | border = 0| |||||||!}}
 {{familytree | border = 0|||||||01||||| 01 = (following omitted)}}
 {{familytree/end}}
@@ -54,8 +53,8 @@ In the Izumo no Kuni no Miyatsuko genealogy, such as the ''Kokuzō {{ill|Kitajim
 == Examination ==
 It has been argued that the Isaga in the deity name may be a word changed from Isasakaha / Isakaha, meaning "small river"{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}. Regarding the genealogy from Ame-no-Hohi-no-Mikoto to Ihene-no-Mikoto (corresponding to the 1st through 12th generations in the ''Kokuzō Kitajima Keifu'') visible in the Izumo no Kuni no Miyatsuko genealogy, it has been argued that, since shrines enshrining Ame-no-Hohi-no-Mikoto in {{ill|Izumo Province|ja|出雲国}} were still listed as {{ill|Shikige-sha|ja|式外社}} at the time of compilation of the ''{{ill|Izumo-no-Kuni Fudoki|ja|出雲国風土記}}'' and only became {{ill|official shrines|ja|官社}} in a later era, these were newly incorporated as the {{ill|ancestral deity|ja|祖神}} of the Izumo no Kuni no Miyatsuko{{Sfn|Takashima|1995|pp=175-178}}.
 == Shrines Enshrining Him ==
-In Awata Hiroshi's ''Jingi Shiryō'', in addition to Kamu-Isaga Shrine (enshrined at Asuki Shrine, described below), the enshrined deities of Isaba Shrine (enshrined at Tsugari Shrine, Tōhayashimachi, {{ill|Izumo, Shimane|ja|出雲市|lt=Izumo City|lt_ja=出雲市}}, {{ill|Shimane Prefecture|ja|島根県}}) and Isaga Shrine (Shussai, {{ill|Hikawa-chō|ja|斐川町}}, Izumo City) are also considered to be Isaga-no-Mikoto{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}; however, Isaba Shrine states in its shrine tradition that the enshrined deity is {{ill|Izanami|ja|伊邪那美尊}}{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}, and Isaga Shrine currently enshrines {{ill|Abo-no-Ōkami|ja|阿菩大神}}, a deity that appears in the ''{{ill|Harima-no-Kuni Fudoki|ja|播磨国風土記}}''{{Sfn|Yoshioka|1983|p=543}}.
-* Asuki Shrine ({{ill|Taisha-chō|ja|大社町}} {{ill|Yōkan-mura|ja|遙堪村|lt=Yōkan|lt_ja=遙堪}}, Izumo City, Shimane Prefecture) - merged {{Unbulleted list|Identified as the {{ill|Shikinai-sha|ja|式内社}} Asuki Shrine, and the same shrine, the Shikinai-sha Kamu-Isaga Shrine, is enshrined there as well{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}. Among the shrines described as within the same shrine as Asuki Shrine in the "{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}," Kamu-Isaga Shrine is the only one whose {{ill|festival date|ja|祭日}} (November 14) is recorded in the ''{{ill|Tokusen Shinmyōchō|ja|特選神名牒}}'', and originally it is considered to have been an independent shrine{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}.}}
+In Awata Hiroshi's ''Jingi Shiryō'', in addition to Kamu-Isaga Shrine (enshrined at Asuki Shrine, described below), the enshrined deities of Isaba Shrine (enshrined at Tsugari Shrine, Tōhayashimachi, {{ill|Izumo, Shimane|ja|出雲市|lt=Izumo City}}, {{ill|Shimane Prefecture|ja|島根県}}) and Isaga Shrine (Shussai, {{ill|Hikawa-chō|ja|斐川町}}, Izumo City) are also considered to be Isaga-no-Mikoto{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}; however, Isaba Shrine states in its shrine tradition that the enshrined deity is {{ill|Izanami|ja|伊邪那美尊}}{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}, and Isaga Shrine currently enshrines {{ill|Abo-no-Ōkami|ja|阿菩大神}}, a deity that appears in the ''{{ill|Harima-no-Kuni Fudoki|ja|播磨国風土記}}''{{Sfn|Yoshioka|1983|p=543}}.
+* Asuki Shrine ({{ill|Taisha-chō|ja|大社町}} {{ill|Yōkan-mura|ja|遙堪村|ko|요칸촌|qid=Q105623605|lt=Yōkan}}, Izumo City, Shimane Prefecture) - merged {{Unbulleted list|Identified as the {{ill|Shikinai-sha|ja|式内社}} Asuki Shrine, and the same shrine, the Shikinai-sha Kamu-Isaga Shrine, is enshrined there as well{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}{{Sfn|Awata|1971|pp=457-458, 460-461, 463}}. Among the shrines described as within the same shrine as Asuki Shrine in the "{{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}," Kamu-Isaga Shrine is the only one whose {{ill|festival date|ja|祭日}} (November 14) is recorded in the ''{{ill|Tokusen Shinmyōchō|ja|特選神名牒}}'', and originally it is considered to have been an independent shrine{{Sfn|Shiga|1981|pp=427-433, 443, 456-457}}.}}
 == Footnotes ==
 
 === Citations ===
@@ -80,7 +79,7 @@ In Awata Hiroshi's ''Jingi Shiryō'', in addition to Kamu-Isaga Shrine (enshrine
 {{日本神話}}
 {{神道 横}}
 {{デフォルトソート:いさかのみこと}}
-{{wikidata link|Q135284917|ja|伊佐我命|check_date=2026-05-13}}
+{{wikidata link|Q135284917|ja|伊佐我命|grok=none|check_date=2026-05-27}}
 [[Category:日本の神]]
 [[Category:Kuni no miyatsuko]]
 [[Category:Need translation]]
