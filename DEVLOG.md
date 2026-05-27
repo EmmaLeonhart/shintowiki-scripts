@@ -6,6 +6,61 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Phase-2 fix: strip `[[Category:qqqq]]` from 4 repo files (kills Take Minato Shrine churn)
+**Files:** `miraheze_unique/Take Minato Shrine.wiki`, `fandom_unique/Take Minato Shrine.wiki`, `fandom_unique/Template%3A中世神道.wiki`, `fandom_unique/Template%3A神社本庁.wiki`
+
+The "repo carries the crud category" hypothesis from the prior tick
+was **right after all** — I had falsified it with a case-sensitive
+grep for "Qqqq" (capital Q). The actual content in the repo files is
+`[[Category:qqqq]]` (lowercase). MediaWiki treats the first character
+of category names as case-insensitive, so `Category:qqqq` and
+`Category:Qqqq` are the same wiki category — which is why
+`remove_crud_categories` was finding it on the wiki to strip while
+the case-sensitive repo grep showed "no match".
+
+Investigation this tick:
+
+1. Fetched the live wikitext of Take Minato Shrine via the
+   parse-prop=wikitext API. Confirmed `qqqq` IS literally in the
+   wiki body.
+2. Case-insensitive `grep -in qqqq` on
+   `miraheze_unique/Take Minato Shrine.wiki` immediately found
+   `[[Category:qqqq]]` on line 144. Same on the fandom_unique
+   counterpart line 142.
+3. Broadened: `grep -irl "category:qqqq" miraheze_unique/
+   fandom_unique/ git_synced/ duplicated_content/ need_translation/`
+   surfaced 4 affected files total — the two Take Minato Shrine
+   mirrors plus two Templates with longer placeholder strings
+   (`[[Category:qqqqqqqqqqqqqqqqq]]`).
+
+Fix this tick: a Python regex pass over all 4 files stripping any
+`[[Category:q+]]` (case-insensitive). Net change: 4 files, 1 line
+removed from each. The two Template files with `qqqqqqqqqqqqqqqqq`
+were stripped on the second pass after the first crashed on a
+cp1252-encoding error printing one of the Japanese-character
+filenames — re-ran with UTF-8 stdout. Verified all four files clean
+afterward; no `qqqq` remaining anywhere in the sync directories.
+
+Expected effect on next cleanup-loop cycle:
+
+* `sync_miraheze_unique` push: no longer pushes `[[Category:qqqq]]`
+  back to the wiki (since the repo file no longer carries it).
+* `remove_crud_categories`: still strips any existing `qqqq` cat from
+  the live wiki on the first post-strip run; on subsequent cycles,
+  nothing left to strip.
+* Churn loop should terminate.
+
+Verification path (queue): re-run
+`diagnose_page_churn.py --category "Independently git synced pages"`
+after the next 1–2 cleanup-loop cycles and confirm Take Minato
+Shrine no longer shows fresh toggles.
+
+Caveat: the 3 historical alternations (Fujishima / Iki Gokoku /
+Imai Nogiku — pattern `strip_html_comments ↔ sync_miraheze_unique`)
+are a DIFFERENT churn pattern; this fix does not address them. They
+showed no activity since 2026-05-14/15 so may already be quiescent,
+but that's not confirmed.
+
 ### Page-churn diagnostic — widened to 4 sync categories, ACTIVE CHURN FOUND
 **Files:** `shinto_miraheze/diagnose_page_churn.py`, `docs/page_churn_diagnostic.md`
 

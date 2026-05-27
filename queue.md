@@ -58,28 +58,30 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
   side is further ahead in revisions wins, with per-directory tie-break
   rules (TBD). See todo.md "Bot ping-pong" for the full theory.
-- [ ] **Page-churn loops — phase 2 fix, ACTIVE CHURN CONFIRMED.**
-  Phase-1 diagnostic widened to 4 sync-coupled categories
-  (`Git synced pages`, `Independently git synced pages`,
-  `Pages with duplicated content`, `Need translation`). See
-  `docs/page_churn_diagnostic.md`. Result: **4 alternation streaks
-  found**, all in `[[Category:Independently git synced pages]]` (the
-  miraheze_unique sync). Three are historical (Fujishima Shrine (Suwa
-  Region), Iki Gokoku Shrine, Imai Nogiku — pattern
-  `strip_html_comments ↔ sync_miraheze_unique`, most recent activity
-  2026-05-14/15, predates the 8b72a8be sync-ordering fix; may or may
-  not be resolved). The fourth is **actively churning post-fix**:
-  Take Minato Shrine, pattern `remove_crud_categories ↔
-  sync_miraheze_unique`, 7 toggles, most recent revision 2026-05-27
-  04:49 UTC. The simple "repo has the crud category" hypothesis is
-  **false** — the repo file `miraheze_unique/Take Minato Shrine.wiki`
-  does NOT contain `[[Category:Qqqq]]`. Root cause is more subtle
-  (transcluded category from a template the page uses? Something
-  re-adding the cat between cycles?). Phase-2 fix candidates depend
-  on the root-cause investigation. Concrete next step before
-  designing the fix: figure out where `Category:Qqqq` is coming
-  from on Take Minato Shrine when `remove_crud_categories` keeps
-  finding it to remove despite the repo not carrying it.
+- [ ] **Page-churn loops — phase 2 ROOT CAUSE FIXED for the
+  `Category:Qqqq` case; verify next sync cycle stops the churn.**
+  Phase-1 diagnostic identified Take Minato Shrine as actively
+  churning (`remove_crud_categories ↔ sync_miraheze_unique × 7 toggles`,
+  most recent 2026-05-27 04:49 UTC). Earlier hypothesis-test claimed
+  the repo file didn't carry the cat — that was a case-sensitive grep
+  miss. The repo files DID carry `[[Category:qqqq]]` (lowercase q;
+  MediaWiki treats first-letter category names case-insensitively,
+  so `Category:qqqq` and `Category:Qqqq` are the same cat). Stripped
+  the line from 4 affected files in commit (see DEVLOG 2026-05-27):
+  `miraheze_unique/Take Minato Shrine.wiki`,
+  `fandom_unique/Take Minato Shrine.wiki`,
+  `fandom_unique/Template%3A中世神道.wiki`,
+  `fandom_unique/Template%3A神社本庁.wiki`. Pending verification: after
+  the next cleanup-loop cycle, re-run
+  `python shinto_miraheze/diagnose_page_churn.py
+  --category "Independently git synced pages" --sample-size 30
+  --rev-limit 30` and confirm Take Minato Shrine has no fresh
+  `remove_crud_categories` ↔ `sync_miraheze_unique` toggles after
+  the 4-file strip commit. The 3 older historical alternations
+  (Fujishima Shrine (Suwa Region), Iki Gokoku Shrine, Imai Nogiku —
+  pattern `strip_html_comments ↔ sync_miraheze_unique`, last
+  activity 2026-05-14/15) appear quiescent but still aren't
+  confirmed resolved.
 
 ## Pinned notes
 
