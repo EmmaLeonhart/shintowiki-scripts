@@ -6,6 +6,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Page-churn diagnostic — widened to 4 sync categories, ACTIVE CHURN FOUND
+**Files:** `shinto_miraheze/diagnose_page_churn.py`, `docs/page_churn_diagnostic.md`
+
+Completed sub-task (c) from the phase-2 queue item: extended the
+diagnostic to accept multiple `--category` flags and scan across the
+non-git_synced sync categories too. Refactored `main()` into a
+`_scan_category()` helper plus `_format_category_section()`, so the
+combined report has one section per category plus a cross-category
+"Overall" headline.
+
+Run: `--category "Git synced pages" --category "Independently git
+synced pages" --category "Pages with duplicated content" --category
+"Need translation" --sample-size 30`. Total 120 pages sampled across
+the four categories.
+
+**Result: 4 alternation streaks found, all in `[[Category:Independently
+git synced pages]]`** (miraheze_unique sync). Other three categories
+clean. Headline finding:
+
+| Page | Pattern | Most recent toggle |
+|---|---|---|
+| Take Minato Shrine | `remove_crud_categories` ↔ `sync_miraheze_unique` (×7) | **2026-05-27 04:49Z (post-fix)** |
+| Fujishima Shrine (Suwa Region) | `strip_html_comments` ↔ `sync_miraheze_unique` (×4) | 2026-05-14 20:20Z |
+| Iki Gokoku Shrine | `strip_html_comments` ↔ `sync_miraheze_unique` (×3) | 2026-05-15 13:06Z |
+| Imai Nogiku | `strip_html_comments` ↔ `sync_miraheze_unique` (×3) | 2026-05-15 13:06Z |
+
+The three with most-recent-toggle 2026-05-14/15 predate the
+2026-05-27 02:30Z `8b72a8be` sync-ordering fix. They may be resolved
+by that fix; impossible to claim from this data alone since the
+cleanup-loop's orchestrator state cycling means pages aren't visited
+every cycle. Take Minato Shrine, however, has a toggle AFTER the fix
+— so the underlying cause for `remove_crud_categories` vs
+`sync_miraheze_unique` is NOT just "sync runs after orchestrator".
+
+Tested the obvious hypothesis (repo file carries the crud category):
+**false**. `miraheze_unique/Take Minato Shrine.wiki` does not contain
+`[[Category:Qqqq]]`, yet every `remove_crud_categories` run finds the
+category present on the wiki page to strip. Root cause is more subtle
+— likely transcluded from a template the page uses, or being re-added
+between cycles by another process. Investigation is the obvious
+phase-2 next step but did not chase it this tick (HARD RAILS: don't
+implement the fix until I 100% understand what's adding the cat).
+
+Queue item updated: phase-2 fix is no longer "decide whether to act"
+— there IS active churn — but root-cause-finding for the
+`Category:Qqqq` source on Take Minato Shrine is the prerequisite
+before designing the fix.
+
 ### Page-churn diagnostic — improved attribution + widened sample (still no alternation)
 **Files:** `shinto_miraheze/diagnose_page_churn.py`, `docs/page_churn_diagnostic.md`
 
