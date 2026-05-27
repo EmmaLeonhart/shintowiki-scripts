@@ -156,8 +156,18 @@ jobs:
     if: always()
     uses: ./.github/workflows/generate-pages.yml
 
+  # cleanup depends on BOTH sync jobs (git-synced-sync, fandom-sync) so
+  # the wiki begins each cycle in the repo's desired state BEFORE any
+  # wiki-write job starts touching pages. Without these deps the syncs
+  # were running in parallel with cleanup + orchestrators, and the
+  # orchestrators' edits were being clobbered by stale repo content
+  # pushed by a sync that landed after them. Emma's directive
+  # 2026-05-26: "git syncing should be the first thing that occurs on
+  # the wiki. The first thing on the wiki should be git syncing. Any
+  # edits should happen after it." See queue.md "Bot ping-pong" +
+  # todo.md.
   cleanup:
-    needs: [window-gate, generate-quickstatements]
+    needs: [window-gate, generate-quickstatements, git-synced-sync, fandom-sync]
     if: always()
     uses: ./.github/workflows/wiki-cleanup.yml
     secrets: inherit

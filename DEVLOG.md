@@ -6,6 +6,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-26
 
+### Re-sequence cleanup-loop.yml so syncs run before any wiki-write
+**Files:** `.github/workflows/cleanup-loop.yml`
+
+Added `git-synced-sync` and `fandom-sync` as `needs:` of the `cleanup` job.
+Previously both sync jobs only depended on `window-gate`, so they ran in
+parallel with `cleanup` + the orchestrator chain — which meant a sync could
+land on the wiki AFTER an orchestrator had already edited a page, clobbering
+the orchestrator's edit with stale repo content. That's the root cause of
+the git_synced page-churn loops Emma flagged (2026-05-26): "git syncing
+should be the first thing that occurs on the wiki. The first thing on the
+wiki should be git syncing. Any edits should happen after it."
+
+With the new `needs:` line the dependency graph for each cleanup-loop fire
+is now:
+
+```
+window-gate -> generate-quickstatements --
+            -> git-synced-sync ---------+--> cleanup -> fandom-cleanup ->
+            -> fandom-sync ------------/                untransclude-crud ->
+                                                        mainspace-orch ->
+                                                        ... -> talk-orch
+```
+
+The two sync jobs still run in parallel with each other and with
+generate-quickstatements; what changes is that the entire wiki-write chain
+(cleanup + fandom-cleanup + untransclude + every orchestrator) now waits
+for both syncs to finish. The wiki state at the start of `cleanup` is
+guaranteed to reflect the repo's desired state; subsequent ops edit on top
+of a known baseline rather than racing with a sync.
+
+Minimal change (one job's `needs:` list). Preserves `if: always()` on
+everything so a sync failure doesn't skip the rest of the pipeline; the
+downstream jobs just see whatever wiki state the failed sync left behind
+(usually the prior cycle's state, not corrupted).
+
+Strict-literal-reading follow-up tracked in `queue.md`: the
+`sync_need_translation` and `sync_duplicated_content` steps run partway
+through `wiki-cleanup.yml` itself, AFTER several wiki-write steps. Whether
+those need reordering is a separate decision — they touch specific
+directories the orchestrators don't edit, so the churn risk is different.
+
 ### `canonicalize_template_case` op — rewrite Template:Infobox refs to canonical form
 **Files:** `shinto_miraheze/orchestrators/ops/canonicalize_template_case.py` (new), `shinto_miraheze/orchestrators/{mainspace,category,template,user,project,file,help,geojson,module,item,property,talk}_orchestrator.py`
 

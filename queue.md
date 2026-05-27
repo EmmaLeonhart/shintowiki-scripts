@@ -46,12 +46,18 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
 
 ## Bot ping-pong / never-settling pages (2026-05-26)
 
-- [ ] **Re-sequence cleanup-loop.yml so all `sync_*` steps run BEFORE the
-  orchestrators / any wiki-write step.** Emma's theory (2026-05-26): the
-  git_synced page churn is because the sync currently runs AFTER orchestrator
-  edits — so the orchestrator edits the wiki and the sync then clobbers it
-  with stale repo content. Sync first = wiki begins each cycle already in
-  the desired state, then ops edit on top of that.
+- [ ] **Optional follow-up (strict-literal reading): move Translation Sync +
+  Duplicated Content Sync to BEFORE the wiki-write steps inside
+  `wiki-cleanup.yml`.** The 2026-05-26 fix moved `git-synced-sync` +
+  `fandom-sync` to before the `cleanup` job in `cleanup-loop.yml`, which
+  resolves the specific git_synced page-churn Emma flagged. The literal
+  reading of "all sync_* steps" also includes the
+  `sync_need_translation` and `sync_duplicated_content` steps sequenced
+  partway through `wiki-cleanup.yml` itself. Whether those need reordering
+  is unclear — those syncs touch `need_translation/` and
+  `duplicated_content/` (specific directories the orchestrators don't
+  edit), so the churn risk is different. Decide whether to move them
+  before doing the larger YAML reshuffle.
 - [ ] **Make sync conflict-resolution revision-aware (not static policy).**
   Currently per `feedback_sync_conflict_policy.md`: wiki-wins for
   duplicated_content/need_translation, repo-wins for
