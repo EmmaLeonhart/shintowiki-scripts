@@ -6,6 +6,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Revision-aware conflict resolution shipped on remaining 4 sync scripts
+**Files:** `shinto_miraheze/sync_git_synced_pages.py`, `shinto_miraheze/sync_fandom_unique_pages.py`, `shinto_miraheze/sync_need_translation.py`, `shinto_miraheze/sync_duplicated_content.py`, `queue.md`
+
+Followed up the same-day "helper module + first sync" commit
+(97e6ca8f) by porting the revision-aware conflict-resolution
+pattern to all 4 remaining sync scripts. Each was modified with
+the identical 4-step recipe:
+
+1. Add `sys.path` shim + `from shinto_miraheze.sync_revision_aware
+   import head_commit, resolve_conflict`.
+2. After the wiki login, call `current_head = head_commit(REPO_ROOT)`
+   and log it.
+3. Read `base_commit = entry.get("sync_commit")` alongside the
+   existing baseline; extend EVERY `state[title] = {...}` write to
+   include `sync_commit: current_head`.
+4. In the "both changed" branch, call `resolve_conflict(...,
+   static_policy=<existing policy>)`. Add the missing
+   PULL-branch (in scripts where the static policy was always-PUSH:
+   git_synced, fandom_unique) or the missing PUSH-branch (in
+   scripts where the static policy was always-PULL:
+   need_translation, duplicated_content). The matching static
+   policy is the tie-break fallback.
+
+Edit summaries on the previously-"always wins" branches updated to
+say "repo wins on revision count" / "wiki wins on revision count"
+instead of the older flat "is source of truth" language, so log
+inspection makes the new policy visible. Backward-compat preserved
+across all 5: existing state entries without `sync_commit` cause
+`resolve_conflict` to short-circuit to the static policy, so today's
+runs match yesterday's behaviour until each entry gets its first
+new sync.
+
+All 5 sync scripts AST-parse cleanly. End-to-end conflict
+behaviour will surface on the next `wiki-cleanup.yml` /
+`cleanup-loop.yml` runs as natural traffic produces conflicts.
+
 ### Revision-aware sync conflict resolution: helper module + first sync (sync_miraheze_unique_pages)
 **Files:** `shinto_miraheze/sync_revision_aware.py` (new), `shinto_miraheze/sync_miraheze_unique_pages.py`, `queue.md`
 

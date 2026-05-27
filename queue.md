@@ -27,25 +27,6 @@ re-pulled from the wiki, cursor reset. Still open:
   (via claude.ai schedules) to drop the cursor and pick category-tagged files at
   random. (Repo-side mitigations already in place: `remote_queue.py` shuffles +
   category-filters, cursor reset to 0.)
-## Bot ping-pong / never-settling pages (2026-05-26) — revision-aware conflict resolution
-
-Emma's ask: "bitch make this thing run it isn't hard". Replace the static
-"repo-wins / wiki-wins by directory" conflict policy in the 5 sync scripts
-with: whichever side has more revisions since the baseline wins; on tie use
-the existing static policy as fallback. Concrete steps:
-
-- [ ] Add `shinto_miraheze/sync_revision_aware.py` helper with two functions:
-  `count_wiki_revs_since(site, title, baseline_revid)` → int,
-  `count_repo_commits_since(repo_root, file_path, baseline_commit)` → int.
-- [ ] Extend each sync's per-entry state from `{revid, sha}` to
-  `{revid, sha, sync_commit}`. Backward-compat: if `sync_commit` is absent,
-  fall back to the existing static policy on conflict.
-- [ ] In each sync's "both changed" branch, compute the two counts; PULL if
-  wiki > repo, PUSH if repo > wiki, tie → static policy.
-- [ ] Set `sync_commit = current HEAD` on every successful state-write.
-- [ ] Migrate all 5: sync_git_synced_pages.py, sync_miraheze_unique_pages.py,
-  sync_fandom_unique_pages.py, sync_need_translation.py,
-  sync_duplicated_content.py.
 
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
 
