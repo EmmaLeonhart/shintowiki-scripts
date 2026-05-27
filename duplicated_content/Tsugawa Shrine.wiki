@@ -1,26 +1,23 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsugawa_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
-
-
 {
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name=Tsugawa Shrine
 | image=File:Tsugawa-jinja1.jpg
 | location={{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}[[Kishiwada City]] Tsugawa Town 350
 | coordinates={{Coord|34.425117|N|135.439375}}
-| deity={{ill|Ikasuri no Kami|qid=Q10928586}}
-| Shrine Rank={{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} (small)<br/>{{ill|Izumi Province|en|Izumi Province|qid=Q1047117|lt=Izumi Province}} Fourth Shrine<br/>Former [[Gōsha]]
+| deity={{ill|Ikasuri no Kami|ja|座摩神|zh|坐摩巫祭神|qid=Q10928586}}
+| Shrine Rank={{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Shikinaisha}} (small)<br/>{{ill|Izumi Province|en|Izumi Province|qid=Q1047117|lt=Izumi Province}} Fourth Shrine<br/>Former [[Gōsha]]
 | Founded=During the reign of Emperor Sujin
 | Main Hall=Three-bay Nagare-zukuri
 | Annual Festival=[[October 8]]
-| prefecture={{ill|Kishiwada, Osaka|qid=Q740456}}
+| prefecture={{ill|Kishiwada, Osaka|ar|كيشيوادا (أوساكا)|arz|كيشيوادا, اوساكا|be|Кісівада|ca|Kishiwada|ce|Кисивада|ceb|Kishiwada Shi|de|Kishiwada|eo|Kishiwada|es|Kishiwada|eu|Kishiwada (Osaka)|fa|کیشی‌وادا، اوساکا|fi|Kishiwada|fr|Kishiwada|ga|Kishiwada|gl|Kishiwada|hr|Kishiwada|hy|Կիսիվադա|id|Kishiwada, Osaka|it|Kishiwada|ja|岸和田市|ko|기시와다시|lt|Kišivada|mg|Kishiwada|mzn|کیشی‌وادا، اوساکا|nl|Kishiwada|no|Kishiwada|pl|Kishiwada|pt|Kishiwada|ro|Kishiwada|ru|Кисивада|sh|Kishivada|simple|Kishiwada, Osaka|sr|Кишивада|sv|Kishiwada|tg|Кишиуада|th|คิชิวาดะ|tl|Kishiwada|tr|Kishiwada|tt|Кисивада|uk|Кішівада|ur|کیشیوادا، اوساکا|vi|Kishiwada, Ōsaka|war|Kishiwada, Osaka|zh|岸和田市|zh_classical|岸和田市|zh_min_nan|Kisiwada-chhī|zh_yue|岸和田|qid=Q740456}}
 }}
 
-'''Tsugawa Shrine''' (積川神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in Tsugawa Town, [[Kishiwada City]], {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Japan. It is an {{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} and formerly held the Rank of [[Gōsha]]. It is considered the Fourth Shrine of {{ill|Izumi Province|en|Izumi Province|qid=Q1047117|lt=Izumi Province}} and was an imperial prayer site.
+'''Tsugawa Shrine''' (積川神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in Tsugawa Town, [[Kishiwada City]], {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, Japan. It is an {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Shikinaisha}} and formerly held the Rank of [[Gōsha]]. It is considered the Fourth Shrine of {{ill|Izumi Province|en|Izumi Province|qid=Q1047117|lt=Izumi Province}} and was an imperial prayer site.
 
 == Deities ==
 * Main Deities - Ikui-no-Kami, Sakui-no-Kami, Tsunagai-no-Kami, Asuha-no-Kami, Hahiki-no-Kami.
 
-These deities are collectively known as the {{ill|Ikasuri no Kami|qid=Q10928586}}.
+These deities are collectively known as the {{ill|Ikasuri no Kami|ja|座摩神|zh|坐摩巫祭神|qid=Q10928586}}.
 
 == History ==
 The shrine is said to have been established during the reign of Emperor Sujin and is recorded in the ''[[Engishiki]]'' compiled in 927.
@@ -33,8 +30,8 @@ The shrine received various imperial patronages and was linked to important hist
 
 It became a [[Gōsha]] in 1873 and was designated an Important Cultural Property in 1950.
 
-== {{ill|Haisho|ja|拝所|lt=Worship Site|12=simple|13=User:Immanuelle/Haisho}} ==
-The Tsugawa Shrine {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Immanuelle/Haisho}} is located along the [[Kumano Kodō|Kumano Kodo]] route in Komatsusato Town, allowing distant parishioners to worship.
+== {{ill|Haisho|ja|拝所|qid=Q17194083|lt=Worship Site}} ==
+The Tsugawa Shrine {{ill|Haisho|ja|拝所|qid=Q17194083|lt=worship site}} is located along the [[Kumano Kodō|Kumano Kodo]] route in Komatsusato Town, allowing distant parishioners to worship.
 
 == Grounds ==
 * Main Hall (Important Cultural Property) - Renovated in 1603 by Toyotomi Hideyori.
@@ -44,7 +41,7 @@ The Tsugawa Shrine {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Imma
 * Shrine Office
 * Tsugawa Town Shrine Hall
 * External Sites
-** {{ill|Haisho|ja|拝所|lt=Worship Site|12=simple|13=User:Immanuelle/Haisho}} (Otabisho)
+** {{ill|Haisho|ja|拝所|qid=Q17194083|lt=Worship Site}} (Otabisho)
 
 === Subsidiary Shrines ===
 * Tenjinsha - deity: {{ill|Sugawara no Michizane|en|Sugawara no Michizane|qid=Q382005|lt=Sugawara no Michizane}}
@@ -83,7 +80,6 @@ The Tsugawa Shrine {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Imma
 {{Commons category|Tsugawa-jinja}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Tsugawa Shrine (Q11597137)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
 
@@ -91,10 +87,10 @@ The Tsugawa Shrine {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Imma
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Izumi district|ja|和泉郡|zh|和泉郡|qid=Q10982247}} || {{ill|Tsugawa Shrine|lt=Tsugawa Shrine|ja|積川神社|commons|Category:Tsugawa-jinja|qid=Q11597137}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Hoe offering|qid=Q135009205|lt=Hoe}}) || {{ill|Shikinai Shosha|qid=Q134917287}} || 6 seats, {{ill|Shi-no-Miya|qid=Q134917307|lt=Shi-no-Miya}} || — || {{coord|34.425060|135.439460|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181008 DB]
+| {{ill|Izumi district|ja|和泉郡|zh|和泉郡|qid=Q10982247}} || {{ill|Tsugawa Shrine|ja|積川神社|qid=Q11597137|lt=Tsugawa Shrine}} || {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} ({{ill|Shrines receiving Hoe offering|qid=Q135009205|lt=Hoe}}) || {{ill|Shikinai Shosha|qid=Q134917287}} || 6 seats, {{ill|Shi-no-Miya|qid=Q134917307|lt=Shi-no-Miya}} || — || {{coord|34.425060|135.439460|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181008 DB]
 |}
 
-{{wikidata link|Q11597137|co|commons:Category:Tsugawa-jinja|ja|積川神社|check_date=2026-05-12}}==Notes==
+{{wikidata link|Q11597137|ja|積川神社|check_date=2026-05-26}}==Notes==
 <references group="lower-alpha"/>
 [[Category:Buildings and structures in Kishiwada, Osaka]]
 [[Category:Cultural heritage monuments in Japan]]
@@ -114,3 +110,4 @@ The Tsugawa Shrine {{ill|Haisho|ja|拝所|lt=worship site|12=simple|13=User:Imma
 [[Category:Shikinai Shōsha]]
 [[Category:Shrines receiving Hoe offering]]
 [[Category:Kanpei-sha]]
+[[Category:Pages with duplicated content]]

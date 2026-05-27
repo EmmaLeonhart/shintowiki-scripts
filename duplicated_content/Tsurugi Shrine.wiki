@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Tsurugi_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25703497864|commit triggered pipeline]] -->
-
 {{About-distinguish|the shrine in Honshi|Mount Tsurugi (Tokushima)}}
 ----
 
@@ -13,16 +11,16 @@
 | coordinates           = {{coord|35|57|28.22|N|136|3|19.42|E}}
 | deity                 = [[Susanoo-no-Mikoto]],<br>
 [[Ōkuninushi|Onamuchi]],<br>
-{{ill|Prince Oshikuma|ja|忍熊皇子|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Oshikuma}}
+{{ill|Prince Oshikuma|ja|忍熊皇子}}
 }}
 
 {{Expand Japanese|劔神社}}
 
-{{ill|Tsurugi Shrine|simple|4=ja|5=劔神社|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Tsurugi Shrine}} ([[:ja:劔神社|劔神社]]) is a [[Shinto shrine]] located in {{ill|Ota, Fukui|lt=Ota|en|12=simple|13=User:Immanuelle/Ota, Fukui}}, [[Fukui Prefecture]], [[Japan]].<ref>{{Cite web |title=Tsurugi Shrine - With a Long History of 1,800 Years, This Shrine in Fukui Prefecture Is a Soothing Power Spot Where You Can Enjoy the Beauty of Nature! A Look at the Highlights of Tsurugi Shrine, Including the Temple Bell, a National Treasure! - Art & Architecture｜COOL JAPAN VIDEOS｜A Website With Information About Travel, Culture, Food, History, and Things to Do in Japan |url=https://cooljapan-videos.com/en/articles/jlvxujs2 |access-date=2023-12-02 |website=cooljapan-videos.com |language=en}}</ref><ref>https://web.archive.org/web/20220120150410/https://info.pref.fukui.lg.jp/hyakkei/40_english/010_view/pdf/062.pdf</ref> It is a [[Beppyo Shrine]], or a shrine that is particularly notable in a certain way with a significant history to it.<ref name=":0">{{Cite web |title=別表神社とは？御朱印めぐりに参考になる「別表神社一覧」とマップ {{!}} 開運戦隊ゴシュインジャー |url=https://jinja-gosyuin.com/beppyou/ |access-date=2023-04-02 |website=jinja-gosyuin.com}}</ref> It is a [[Ichinomiya|Ninomiya]], or a second Rank shrine in its province after the [[Ichinomiya]].
+{{ill|Tsurugi Shrine|simple|en}} ([[:ja:劔神社|劔神社]]) is a [[Shinto shrine]] located in {{ill|Ota, Fukui|en|Ota, Fukui|lt=Ota}}, [[Fukui Prefecture]], [[Japan]].<ref>{{Cite web |title=Tsurugi Shrine - With a Long History of 1,800 Years, This Shrine in Fukui Prefecture Is a Soothing Power Spot Where You Can Enjoy the Beauty of Nature! A Look at the Highlights of Tsurugi Shrine, Including the Temple Bell, a National Treasure! - Art & Architecture｜COOL JAPAN VIDEOS｜A Website With Information About Travel, Culture, Food, History, and Things to Do in Japan |url=https://cooljapan-videos.com/en/articles/jlvxujs2 |access-date=2023-12-02 |website=cooljapan-videos.com |language=en}}</ref><ref>https://web.archive.org/web/20220120150410/https://info.pref.fukui.lg.jp/hyakkei/40_english/010_view/pdf/062.pdf</ref> It is a [[Beppyo Shrine]], or a shrine that is particularly notable in a certain way with a significant history to it.<ref name=":0">{{Cite web |title=別表神社とは？御朱印めぐりに参考になる「別表神社一覧」とマップ {{!}} 開運戦隊ゴシュインジャー |url=https://jinja-gosyuin.com/beppyou/ |access-date=2023-04-02 |website=jinja-gosyuin.com}}</ref> It is a [[Ichinomiya|Ninomiya]], or a second Rank shrine in its province after the [[Ichinomiya]].
 == History ==
 
 === Establishment ===
-According to shrine tradition, the sacred sword that serves as the deity was created by the imperial prince {{ill|Prince Inishikiirihiko|ja|五十瓊敷入彦命|2=ja|3=五十瓊敷入彦命|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Prince Inishiki|13=User:Immanuelle/Prince Inishikiirihiko}} son of [[Emperor Suinin]], who gave it to [[Ōkuninushi|Oonamuchi-no-Mikoto]] during the reign of [[Empress Jingū|Empress Jingu]]. Oonamuchi-no-Mikoto then successfully subdued bandits in the Koshi Province (Echizen Country). Later, the spirit of Susanoo-no-Mikoto, originally enshrined at Ibegori on Mount Ibuki, was moved to the current location by the Ibeminister, and the sacred sword was enshrined as the spirit's symbol. Oonamuchi-no-Mikoto is also worshipped as an [[Oyagami]] for his contributions to developing the land, alongside his father, Emperor Naka no Ōe (Kehi-no-Kami).
+According to shrine tradition, the sacred sword that serves as the deity was created by the imperial prince {{ill|Prince Inishikiirihiko|ja|五十瓊敷入彦命}} son of [[Emperor Suinin]], who gave it to [[Ōkuninushi|Oonamuchi-no-Mikoto]] during the reign of [[Empress Jingū|Empress Jingu]]. Oonamuchi-no-Mikoto then successfully subdued bandits in the Koshi Province (Echizen Country). Later, the spirit of Susanoo-no-Mikoto, originally enshrined at Ibegori on Mount Ibuki, was moved to the current location by the Ibeminister, and the sacred sword was enshrined as the spirit's symbol. Oonamuchi-no-Mikoto is also worshipped as an [[Oyagami]] for his contributions to developing the land, alongside his father, Emperor Naka no Ōe (Kehi-no-Kami).
 
 === General History ===
 An ancient temple bell (a National Treasure) in the shrine's possession bears the inscription "Tsurugi Mikoji Temple Bell, Jingokyoen 4th Year, 9th Month, 11th Day," revealing that a {{ill|Jingū-ji|en|Jingū-ji|qid=Q1074971|lt=Jingu-ji}} (a type of Buddhist temple associated with a Shinto shrine) already existed by 770 (the fourth year of the Jingokyoen era) during the [[Nara period]].
@@ -70,7 +68,7 @@ File:Tsurugijinja-haiden01.jpg|alt=拝殿|Haiden (Worship Hall)
 
 [[every:Tsurugi Shrine|Tsurugi Shrine]]
 
-{{wikidata link|Q11398386|simple|Tsurugi Shrine|simple|user:immanuelle/Tsurugi Shrine|simple|User:Tsurugi Shrine|every|Tsurugi Shrine|simple|User:Immanuelle/Sugōisobe Shrine|simple|User:Immanuelle/Oagata Shrine|co|commons:Category:Tsurugi-jinja (Echizen, Fukui)|ja|劔神社|fa|معبد تسوروگی|fr|Tsurugi-jinja|check_date=2026-05-12}}
+{{wikidata link|Q11398386|simple|Tsurugi Shrine|simple|user:immanuelle/Tsurugi Shrine|simple|User:Tsurugi Shrine|every|Tsurugi Shrine|simple|User:Immanuelle/Sugōisobe Shrine|simple|User:Immanuelle/Oagata Shrine|co|commons:Category:Tsurugi-jinja (Echizen, Fukui)|ja|劔神社|fa|معبد تسوروگی|fr|Tsurugi-jinja|check_date=2026-05-27}}
 
 == Accidentally Overwritten Content ==
 

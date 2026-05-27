@@ -1,4 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Toy%C5%8Dke_Daijing%C5%AB for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25679255141|time triggered pipeline]] -->
 {{Infobox religious building
 | name                  = Toyouke Daijingu
 | native_name           = {{nihongo|豊受大神宮|Toyouke Daijingu}}
@@ -11,8 +10,8 @@
 | map_alt               = 
 | map_relief            = 
 | map_caption           = 
-| location              = {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}
-| deity                 = {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-hime}}
+| location              = {{ill|Ise, Mie|ar|إيسه|azb|ایسه، میه|bcl|Ise, Mie|be|Ісэ (горад)|ca|Ise (ciutat japonesa)|ce|Исе (гӀала)|ckb|ئیسێ|cs|Ise (Mie)|de|Ise (Mie)|eo|Ise (urbo)|es|Ise (Mie)|et|Ise (Jaapan)|eu|Ise (Mie)|fa|ایسه، میه|fi|Ise (kaupunki)|fr|Ise (Mie)|gl|Ise|hr|Ise|hy|Իսե (քաղաք)|id|Ise, Mie|it|Ise (Giappone)|ja|伊勢市|ka|ისე|ko|이세시|lt|Isė (Japonija)|mg|Ise|mzn|ایسه، میه|nl|Ise (Mie)|no|Ise (Mie)|pl|Ise (Japonia)|pt|Ise (Japão)|ro|Ise, Japonia|ru|Исе (город)|sh|Ise|simple|Ise, Mie|sr|Исе|sv|Ise, Japan|szl|Ise (Japůńijo)|tg|Исе|tl|Ise, Mie|tr|Ise (şehir)|tt|Исе (шәһәр)|uk|Ісе (Міє)|ur|ایسے، میہ|uz|Ise (Mie)|vi|Ise, Mie|war|Ise, Mie|zh|伊勢市|zh_classical|伊勢市|zh_min_nan|Ise-chhī|zh_yue|伊勢|qid=Q328067|lt=Ise}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}
+| deity                 = {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-hime}}
 | festival              = 
 | type                  = 
 | leadership            = 
@@ -22,16 +21,16 @@
 | established           = 4 BCE
 | date_destroyed        = 
 }}
-{{nihongo||豊受大神宮|'''{{ill|Toyouke Daijingu|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyouke Daijingu|13=User:Immanuelle/Toyouke Daijingu|comment=enwiki is a redirect}}'''}} is a shrine to to {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyoukebime}} the food goddess located in [[Ise Grand Shrine]]. it is also colloquially known as {{nihongo||外宮|'''{{ill|Toyouke Daijingu|lt=Gekū|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyouke Daijingu|13=User:Immanuelle/Toyouke Daijingu|comment=enwiki is a redirect}}'''|lit. outer shrine}}.<ref name=":0">{{Cite web |title=Outer Shrine (Geku) |url=https://www.japan-guide.com/e/e4311.html |access-date=2023-05-05 |website=www.japan-guide.com |language=en}}</ref> In pilgrimage customs people traditionally visit this shrine first and then {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} which is located 4 km to the south<ref name=":0" />
+{{nihongo||豊受大神宮|'''{{ill|Toyouke Daijingu|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343}}'''}} is a shrine to to {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyoukebime}} the food goddess located in [[Ise Grand Shrine]]. it is also colloquially known as {{nihongo||外宮|'''{{ill|Toyouke Daijingu|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343|lt=Gekū}}'''|lit. outer shrine}}.<ref name=":0">{{Cite web |title=Outer Shrine (Geku) |url=https://www.japan-guide.com/e/e4311.html |access-date=2023-05-05 |website=www.japan-guide.com |language=en}}</ref> In pilgrimage customs people traditionally visit this shrine first and then {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} which is located 4 km to the south<ref name=":0" />
 
-The shrine was founded after [[:en:Emperor Yuryaku|Emperor Yuryaku]] dreamt that he saw [[Amaterasu]]. She said she was unable to get food and asked him to bring {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-hime}} from {{ill|Tanba Province|en|Tanba Province|qid=Q954511|lt=Tanba}} help her with food.<ref>https://archive.is/3h7o</ref>
+The shrine was founded after [[:en:Emperor Yuryaku|Emperor Yuryaku]] dreamt that he saw [[Amaterasu]]. She said she was unable to get food and asked him to bring {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-hime}} from {{ill|Tanba Province|en|Tanba Province|qid=Q954511|lt=Tanba}} help her with food.<ref>https://archive.is/3h7o</ref>
 
-'''Toyouke Daijingu''' (豊受大神宮), also known as the '''Outer Shrine''' (外宮, Gekū), is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Toyokawachō|ja|豊川町 (伊勢市)|12=simple|13=User:Immanuelle/Toyokawa Town (Ise)|comment=changed title based on wikidata|qid=Q17223204}}, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise City}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}. It is one of the two main shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}} and is classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|2=ja|3=式内社|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} (Grand Shrine).
+'''Toyouke Daijingu''' (豊受大神宮), also known as the '''Outer Shrine''' (外宮, Gekū), is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Toyokawachō|ja|豊川町 (伊勢市)|qid=Q17223204}}, {{ill|Ise, Mie|ar|إيسه|azb|ایسه، میه|bcl|Ise, Mie|be|Ісэ (горад)|ca|Ise (ciutat japonesa)|ce|Исе (гӀала)|ckb|ئیسێ|cs|Ise (Mie)|de|Ise (Mie)|eo|Ise (urbo)|es|Ise (Mie)|et|Ise (Jaapan)|eu|Ise (Mie)|fa|ایسه، میه|fi|Ise (kaupunki)|fr|Ise (Mie)|gl|Ise|hr|Ise|hy|Իսե (քաղաք)|id|Ise, Mie|it|Ise (Giappone)|ja|伊勢市|ka|ისე|ko|이세시|lt|Isė (Japonija)|mg|Ise|mzn|ایسه، میه|nl|Ise (Mie)|no|Ise (Mie)|pl|Ise (Japonia)|pt|Ise (Japão)|ro|Ise, Japonia|ru|Исе (город)|sh|Ise|simple|Ise, Mie|sr|Исе|sv|Ise, Japan|szl|Ise (Japůńijo)|tg|Исе|tl|Ise, Mie|tr|Ise (şehir)|tt|Исе (шәһәр)|uk|Ісе (Міє)|ur|ایسے، میہ|uz|Ise (Mie)|vi|Ise, Mie|war|Ise, Mie|zh|伊勢市|zh_classical|伊勢市|zh_min_nan|Ise-chhī|zh_yue|伊勢|qid=Q328067|lt=Ise City}}, {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}. It is one of the two main shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}} and is classified as a {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} (Grand Shrine).
 == Overview ==
-{{ill|Toyouke Daijingu|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Toyouke Daijingu|13=User:Immanuelle/Toyouke Daijingu|comment=enwiki is a redirect}}, also commonly referred to as Gekū (外宮), is one of the two main shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, located in {{ill|Toyokawachō|ja|豊川町 (伊勢市)|12=simple|13=User:Immanuelle/Toyokawa-chō, Ise|comment=changed title based on wikidata|qid=Q17223204}}, [[:en:Ise City|Ise City]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}. This shrine venerates {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-Ōmikami}}, the deity of food, clothing, and shelter. The shrine is said to have been established during the 22nd year of the reign of Emperor Yūryaku and is built in the {{ill|Shinmei-zukuri|en|Shinmei-zukuri|qid=Q930545|lt=Yuiitsu-Shimmei-zukuri}} architectural style.
+{{ill|Toyouke Daijingu|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343}}, also commonly referred to as Gekū (外宮), is one of the two main shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}, located in {{ill|Toyokawachō|ja|豊川町 (伊勢市)|qid=Q17223204}}, [[:en:Ise City|Ise City]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}. This shrine venerates {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-Ōmikami}}, the deity of food, clothing, and shelter. The shrine is said to have been established during the 22nd year of the reign of Emperor Yūryaku and is built in the {{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545|lt=Yuiitsu-Shimmei-zukuri}} architectural style.
 
 == location ==
-Gekū is located approximately 5–6 minutes' walk from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station}} via the {{ill|Gekū Sando|ja|外宮参道|12=simple|13=User:Immanuelle/Outer Shrine Path|comment=changed title based on wikidata|qid=Q42387615}}. It is customary to visit Gekū before proceeding to {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Kōtai Jingu (Naikū)|ja|皇大神宮 (内宮)|12=simple|13=User:Immanuelle/Kōtai Jingu (Naikū)|ja_comment=jawiki link invalid}}, the inner shrine.
+Gekū is located approximately 5–6 minutes' walk from {{ill|Iseshi Station|eo|Stacio Iseshi|fr|Gare d'Iseshi|id|Stasiun Iseshi|ja|伊勢市駅|jv|Setatsiyun Iseshi|ko|이세시역|my|အိဆဲရှိဘူတာ|ur|ایسیشی اسٹیشن|zh|伊勢市站|qid=Q6079748|lt=Ise-shi Station}} via the {{ill|Gekū Sando|ja|外宮参道|qid=Q42387615}}. It is customary to visit Gekū before proceeding to {{ill|Kōtai Jingū|ja|皇大神宮 (内宮)|lt=Kōtai Jingu (Naikū)}}, the inner shrine.
 
 == Shrine Grounds ==
 Gekū is surrounded by ancient trees, such as the "Kiyomori Kusunoki" (清盛楠), named after [[Taira no Kiyomori]]{{citation needed |Taira no Kiyomori|12=simple|13=User:Immanuelle/Taira no Kiyomori}}, and features a beautiful magatama-shaped pond where Mie Prefecture's flower, the iris, blooms in summer. 
@@ -45,15 +44,15 @@ Ise Shrine - Kaguraden.jpg|Kaguraden (Dance Hall)
 </gallery>
 
 == Overview ==
-Located in the city center of {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, '''Gekū''' (外宮) is about a 5-6 minute walk from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise Station}}, accessible via the {{ill|Gekū Sando|ja|外宮参道|12=simple|13=User:Immanuelle/Gekū Sando}} from {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central}} and {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu Railway}}.<ref>Edited by Ise Bunka-sha (2008): p.32</ref> Together with the {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Naikū), it forms the '''Shōgū''' (正宮). Traditionally, it has been customary to visit Gekū before proceeding to Naikū when worshipping at the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}.<ref name="ub8">Edited by Ise Bunka-sha (2009): p.98</ref> This practice is known as the "Gekū Senrei no Rei" (外宮先祭の礼).<ref name=":0">{{Cite book|和書 |title=偽書が揺るがせた日本史 |date=2020/3/25 |publisher=（株）山川出版社 |page=82-84 |author=原田　実}}</ref>
+Located in the city center of {{ill|Ise, Mie|ar|إيسه|azb|ایسه، میه|bcl|Ise, Mie|be|Ісэ (горад)|ca|Ise (ciutat japonesa)|ce|Исе (гӀала)|ckb|ئیسێ|cs|Ise (Mie)|de|Ise (Mie)|eo|Ise (urbo)|es|Ise (Mie)|et|Ise (Jaapan)|eu|Ise (Mie)|fa|ایسه، میه|fi|Ise (kaupunki)|fr|Ise (Mie)|gl|Ise|hr|Ise|hy|Իսե (քաղաք)|id|Ise, Mie|it|Ise (Giappone)|ja|伊勢市|ka|ისე|ko|이세시|lt|Isė (Japonija)|mg|Ise|mzn|ایسه، میه|nl|Ise (Mie)|no|Ise (Mie)|pl|Ise (Japonia)|pt|Ise (Japão)|ro|Ise, Japonia|ru|Исе (город)|sh|Ise|simple|Ise, Mie|sr|Исе|sv|Ise, Japan|szl|Ise (Japůńijo)|tg|Исе|tl|Ise, Mie|tr|Ise (şehir)|tt|Исе (шәһәр)|uk|Ісе (Міє)|ur|ایسے، میہ|uz|Ise (Mie)|vi|Ise, Mie|war|Ise, Mie|zh|伊勢市|zh_classical|伊勢市|zh_min_nan|Ise-chhī|zh_yue|伊勢|qid=Q328067|lt=Ise, Mie}}, '''Gekū''' (外宮) is about a 5-6 minute walk from {{ill|Iseshi Station|eo|Stacio Iseshi|fr|Gare d'Iseshi|id|Stasiun Iseshi|ja|伊勢市駅|jv|Setatsiyun Iseshi|ko|이세시역|my|အိဆဲရှိဘူတာ|ur|ایسیشی اسٹیشن|zh|伊勢市站|qid=Q6079748|lt=Ise Station}}, accessible via the {{ill|Gekū Sando|ja|外宮参道|qid=Q42387615}} from {{ill|Central Japan Railway Company|ckb|کۆمپانیای ناوەڕاستی ڕێگای ئاسنینی ژاپۆن|cs|JR Central|da|Central Japan Railway Company|de|Central Japan Railway Company|eo|JR Centra|es|Central Japan Railway Company|fa|شرکت راه‌آهن مرکزی ژاپن|fi|JR Tōkai|fr|Central Japan Railway Company|hu|Central Japan Railway Company|id|Perusahaan Kereta Api Jepang Tengah|it|Central Japan Railway Company|ja|東海旅客鉄道|jv|Central Japan Railway Company|ko|도카이 여객철도|ms|Syarikat Kereta Api Jepun Tengah|nds|JR Tōkai|nl|Central Japan Railway Company|pl|Central Japan Railway Company|pt|Central Japan Railway Company|ru|Central Japan Railway Company|su|Pausahaan Japan Railway Tengah|sv|JR Tokai|th|บริษัทรถไฟญี่ปุ่นตอนกลาง|tl|Central Japan Railway Company|tr|Central Japan Railway Company|uk|Central Japan Railway Company|ur|سنٹرل جاپان ریلوے کمپنی|wuu|东海旅客铁道|zh|東海旅客鐵道|zh_yue|東海旅客鐵道|qid=Q513679|lt=JR Central}} and {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu Railway}}.<ref>Edited by Ise Bunka-sha (2008): p.32</ref> Together with the {{ill|Kōtai Jingū|ja|皇大神宮}} (Naikū), it forms the '''Shōgū''' (正宮). Traditionally, it has been customary to visit Gekū before proceeding to Naikū when worshipping at the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}.<ref name="ub8">Edited by Ise Bunka-sha (2009): p.98</ref> This practice is known as the "Gekū Senrei no Rei" (外宮先祭の礼).<ref name=":0">{{Cite book|和書 |title=偽書が揺るがせた日本史 |date=2020/3/25 |publisher=（株）山川出版社 |page=82-84 |author=原田　実}}</ref>
 
-Despite its central location, the shrine grounds retain a tranquil, otherworldly atmosphere. Notable features include the ancient "'''Kiyomori Kusu'''" (清盛楠), a sacred camphor tree said to have brushed against the crown of [[Taira no Kiyomori]]{{citation needed |Taira no Kiyomori|12=simple|13=User:Immanuelle/Taira no Kiyomori}} when he visited the shrine as an imperial envoy (勅使),<ref name="ub8" /> and the "'''Magatama Pond'''" (勾玉池), where {{ill|Acorus calamus|en|Acorus calamus|qid=Q158008|lt=Acorus calamus}}—Mie Prefecture’s official flower—bloom in early summer.<ref name="ub9">Edited by Ise Bunka-sha (2009): p.99</ref>
+Despite its central location, the shrine grounds retain a tranquil, otherworldly atmosphere. Notable features include the ancient "'''Kiyomori Kusu'''" (清盛楠), a sacred camphor tree said to have brushed against the crown of [[Taira no Kiyomori]]{{citation needed |Taira no Kiyomori|12=simple|13=User:Immanuelle/Taira no Kiyomori}} when he visited the shrine as an imperial envoy (勅使),<ref name="ub8" /> and the "'''Magatama Pond'''" (勾玉池), where {{ill|Acorus calamus|ace|Jeureunggèe|an|Acorus calamus|ang|Bēowyrt|ar|وج|arz|وج (نوع من النباتات)|ast|Acorus calamus|az|Bataqlıq kəcəvəri|ba|Аир ҡамышы|ban|Jangu|bat_smg|Ajėirs|be|Аер звычайны|be_x_old|Аер звычайны|bg|Блатен аир|bjn|Jariangau|bn|বচ|ca|Càlam (botànica)|ceb|Acorus calamus|cs|Puškvorec obecný|csb|Zwëczajny kalmùs|cy|Gellesgen bêr|de|Kalmus (Art)|eo|Kalam-akoro|es|Acorus calamus|et|Harilik kalmus|eu|Lasturrin|fa|وج|fi|Rohtokalmojuuri|fr|Acore odorant|frr|Swaanenbruad|fy|Kalmuswoartel|ga|Acorus calamus|gl|Acorus calamus|gom|वेखंड|gor|Alumongo|hi|बच|hr|Obični iđirot|hsb|Wšědny kalmus|hu|Orvosi kálmos|hy|Խնկեղեգ ճահճային|id|Jeringau|io|Akoro|is|Sverðblaðka|it|Acorus calamus|ja|ショウブ|kk|Шалшық андызы|kn|ಬಜೆ|ko|창포|ks|وَے|ky|Жөнөкөй айыр|la|Acorus calamus|lt|Balinis ajeras|lv|Parastā kalme|mad|Jhârângo|min|Jarangau|mk|Лирот|ml|വയമ്പ്‌|mr|वेखंड|ms|Pokok Jerangau|my|လင်းနေပင်|ne|बोझो|nl|Kalmoes|nn|Kalmusrot|os|Зал|pl|Tatarak zwyczajny|pnb|داج قلموس|pt|Açoro|ro|Obligeană|ru|Аир обыкновенный|sa|वामनी|sah|Манчаары (от)|sh|Iđirot|si|වදකහ|sk|Puškvorec obyčajný|sq|Kashtëfryza|sr|Acorus calamus|sv|Kalmus|ta|வசம்பு|te|వస|th|ว่านน้ำ|tr|Hazanbel|tt|Кылычүлән|uk|Лепеха звичайна|ur|داج قلموس|vi|Thủy xương bồ|war|Acorus calamus|wuu|菖蒲|za|Cingjfouxnaemq|zh|菖蒲|zh_yue|菖蒲|qid=Q158008|lt=Acorus calamus}}—Mie Prefecture’s official flower—bloom in early summer.<ref name="ub9">Edited by Ise Bunka-sha (2009): p.99</ref>
 
-Outside the shrine, the {{ill|Central business district|en|Central business district|qid=Q738570|lt=central business district}} (CBD) of Ise extends into {{ill|Honmachi|ja|本町 (伊勢市)|12=simple|13=User:Immanuelle/Honmachi, Ise|comment=changed title based on wikidata|qid=Q11520676}}, a historic torii-front town where the {{ill|Ise City Tourism Association|ja|伊勢市観光協会|12=simple|13=User:Immanuelle/Ise City Tourism Association|ja_comment=jawiki link invalid}} has its headquarters. The surrounding area, including Gekū Sando and the station-front streets, is a mix of {{ill|Omiyage|ja|土産物|Omiyage=Omiyage|lt=souvenir shops|12=simple|13=User:Immanuelle/Omiyage|ja_comment=jawiki redirects to 土産|comment=changed title based on wikidata|qid=Q63224833}}, {{ill|Ryokan|en|Ryokan|qid=Q562930|lt=ryokan}}, {{ill|Bank|en|Bank|qid=Q22687|lt=banks}}, and branch offices of major {{ill|Business sector|en|Business sector|qid=Q3477367|lt=corporations}}.
+Outside the shrine, the {{ill|Central business district|ar|منطقة الأعمال المركزية|az|Mərkəzi biznes rayonu|azb|مرکزی ایش بؤلگه‌سی|bcl|Central business district|bn|কেন্দ্রীয় বাণিজ্যিক এলাকা|ca|Central business district|de|Innenstadt|es|Distrito financiero|et|Ärikeskus|eu|Finantza barrutia|fa|ناحیه تجاری مرکزی|fi|Keskusta (taajaman osa)|fr|Quartier d'affaires|he|מרכז עסקים ראשי|hi|केन्द्रीय व्यवसायिक क्षेत्र|hu|Belváros (urbanisztika)|hy|Կենտրոնական գործարար շրջան|id|Distrik bisnis pusat|is|Miðborg|it|Quartiere degli affari|ja|中心業務地区|ko|중심 업무 지구|ms|Daerah pusat perniagaan|nl|Zakendistrict|no|Bysentrum|pl|Central business district|pnb|مرکزی کاروباری ضلع|pt|Distrito financeiro|ru|Деловой центр города|simple|Central business district|sk|Central business district|sv|Stadskärna|ta|மைய வணிகப் பகுதி|th|ย่านธุรกิจกลาง|tl|Sentrong kalakalang distrito|tr|Merkezî iş alanı|ur|مرکزی کاروباری ضلع|vi|Quận kinh doanh trung tâm|zh|中央商务区|zh_yue|核心商業區|qid=Q738570|lt=central business district}} (CBD) of Ise extends into {{ill|Honmachi|ja|本町 (伊勢市)|12=simple|13=User:Immanuelle/Honmachi, Ise|comment=changed title based on wikidata|qid=Q11520676}}, a historic torii-front town where the {{ill|Ise City Tourism Association|ja|伊勢市観光協会}} has its headquarters. The surrounding area, including Gekū Sando and the station-front streets, is a mix of {{ill|Omiyage|ja|土産物|Omiyage=Omiyage|lt=souvenir shops|12=simple|13=User:Immanuelle/Omiyage|ja_comment=jawiki redirects to 土産|comment=changed title based on wikidata|qid=Q63224833}}, {{ill|Ryokan|en|Ryokan|qid=Q562930|lt=ryokan}}, {{ill|Bank|en|Bank|qid=Q22687|lt=banks}}, and branch offices of major {{ill|Business sector|en|Business sector|qid=Q3477367|lt=corporations}}.
 
-The shrine buildings, like those of Kōtai Jingū, are enclosed within four layers of fences: '''Itagaki''' (板垣), '''Sototamagaki''' (外玉垣), '''Uchitamagaki''' (内玉垣), and '''Mizugaki''' (瑞垣). Guardhouses (宿衛屋) are stationed at the north and south gates. The shrine is patrolled and maintained 24/7 by the {{ill|Jingū Guards|ja|神宮衛士|12=simple|13=User:Immanuelle/Jingū Guards}}, who work in rotating shifts.<ref>『一般人は入れない立入禁止地帯』, History Mystery Research Group, {{ill|Saizusha Corporation|ja|彩図社|12=simple|13=User:Immanuelle/Saizusha|comment=changed title based on wikidata|qid=Q11487991}}, 2011</ref>
+The shrine buildings, like those of Kōtai Jingū, are enclosed within four layers of fences: '''Itagaki''' (板垣), '''Sototamagaki''' (外玉垣), '''Uchitamagaki''' (内玉垣), and '''Mizugaki''' (瑞垣). Guardhouses (宿衛屋) are stationed at the north and south gates. The shrine is patrolled and maintained 24/7 by the {{ill|Jingū Guards|ja|神宮衛士}}, who work in rotating shifts.<ref>『一般人は入れない立入禁止地帯』, History Mystery Research Group, {{ill|Saizusha Corporation|ja|彩図社|12=simple|13=User:Immanuelle/Saizusha|comment=changed title based on wikidata|qid=Q11487991}}, 2011</ref>
 
-Regarding divine virtues (神徳), in the doctrine of {{ill|Ise faith|lt=Ise faith|lt=Ise Shintō|ja|伊勢神道|12=simple|13=User:Immanuelle/Ise Shintō}}, as written in the {{ill|Shintō Gobusho|ja|神道五部書|12=simple|13=User:Immanuelle/Shintō Gobusho}}, the enshrined deity, {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-hime}}, is regarded as the deity of all creation and is considered synonymous with the primordial deities {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}} and {{ill|Kuni-no-Tokotachi|en|Kuni-no-Tokotachi|qid=Q478504|lt=Kuni-no-Tokotachi}}.<ref name=":0" /> However, the modern {{ill|Association of Shinto Shrines|en|Association of Shinto Shrines|qid=Q908077|lt=Association of Shinto Shrines}} does not adopt this interpretation, instead defining Toyouke-Ōmikami (豊受大御神) as the guardian deity of industry, who bestows blessings related to rice, clothing, food, and shelter.<ref>Signboard before the Hiyoke Bridge</ref>
+Regarding divine virtues (神徳), in the doctrine of {{ill|Ise faith|ja|伊勢神道|lt=Ise Shintō}}, as written in the {{ill|Shintō Gobusho|ja|神道五部書}}, the enshrined deity, {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-hime}}, is regarded as the deity of all creation and is considered synonymous with the primordial deities {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}} and {{ill|Kuni-no-Tokotachi|ca|Kunitokotatchi|es|Kunitokotachi|fr|Kunitokotachi|it|Kuni-no-Tokotachi|ja|国之常立神|mni|ꯀꯨꯅꯤ-ꯅꯣ-ꯇꯣꯀꯣꯇꯆꯤ|ru|Куни-но токотати-но микото|simple|Kuni-no-Tokotachi|th|คูนิ โนะ โทโกตาจิ|uk|Куні но токотаті но камі|zh|國常立尊|qid=Q478504|lt=Kuni-no-Tokotachi}}.<ref name=":0" /> However, the modern {{ill|Association of Shinto Shrines|en|Association of Shinto Shrines|qid=Q908077|lt=Association of Shinto Shrines}} does not adopt this interpretation, instead defining Toyouke-Ōmikami (豊受大御神) as the guardian deity of industry, who bestows blessings related to rice, clothing, food, and shelter.<ref>Signboard before the Hiyoke Bridge</ref>
 
 <gallery>
 Ise Shrine Geku Hiyokebashi.jpg|Entrance: Hiyoke Bridge
@@ -64,8 +63,8 @@ Ise Shrine - Kaguraden.jpg|Kaguraden (Hall of Sacred Music and Dance)
 == Deities Enshrined ==
 
 ; Main Deity
-* '''{{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-Ōmikami}}''' (とようけのおおみかみ)
-: According to the ''{{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Yamatohime-no-mikoto Seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki}}'', the divine object (*goshintai*, 御神体) enshrined here is the *Shinkyōtsukagami* (真経津鏡).
+* '''{{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-Ōmikami}}''' (とようけのおおみかみ)
+: According to the ''{{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記}}'', the divine object (*goshintai*, 御神体) enshrined here is the *Shinkyōtsukagami* (真経津鏡).
 
 ; Auxiliary Deities
 : Three *Mitomo-no-Kami* (御伴神) are enshrined in the same sanctuary (*Aiden-shin*, 相殿神), with one deity positioned in the east and two in the west.<ref name="as28">Mitsuhashi (2013): p.128</ref> Some interpretations identify these three deities as:
@@ -77,9 +76,9 @@ Ise Shrine - Kaguraden.jpg|Kaguraden (Hall of Sacred Music and Dance)
 == History ==
 
 === History ===
-Gekū’s origin is not recorded in the {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}} or {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}. According to the shrine’s own records, the shrine was established following a divine revelation to Emperor Yūryaku by {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu-Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, who expressed the need for a deity to assist with meals. Toyouke-Ōmikami was then invited from {{ill|Tanba Province|en|Tanba Province|qid=Q954511|lt=Tanba Province}} to the "Yamada Plain" near Naikū.
+Gekū’s origin is not recorded in the {{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031|lt=Kojiki}} or {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}. According to the shrine’s own records, the shrine was established following a divine revelation to Emperor Yūryaku by {{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602|lt=Amaterasu Ōmikami}}, who expressed the need for a deity to assist with meals. Toyouke-Ōmikami was then invited from {{ill|Tanba Province|en|Tanba Province|qid=Q954511|lt=Tanba Province}} to the "Yamada Plain" near Naikū.
 === History ===
-In Japanese mythology {{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-hime}} was either killed by [[Tsukuyomi-no-Mikoto]]{{Efn|In the [[Nihon Shoki]]}}<ref name="Roberts 2010">{{cite book|last=Roberts|first=Jeremy|url=http://www.enryo.ro/carti/Japanese%20mythology%20A%20to%20Z.pdf|title=Japanese Mythology A To Z|publisher=Chelsea House Publishers|year=2010|isbn=978-1-60413-435-3|edition=2nd|location=New York}}</ref> or by [[Susanoo-no-Mikoto]]{{Efn|In the [[Kojiki]]}}. Amaterasu mourned the death of her and in the [[Nihon Shoki]] the reason the sun and the moon are on opposite sides of the sky is that Amaterasu was unwilling to go near [[Tsukuyomi-no-Mikoto]] the moon god after he committed the murder.<ref name="Roberts 2010" /> Amaterasu is linked with Toyouke-hime as the sun is necessary for food to grow. This was prior to the [[:en:Tenson Korin|Tenson Korin]] and the establishment of [[Ise Grand Shrine|Ise Jingu]]. {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}} is said to have established the shrine to worship [[Amaterasu]] at a permanent location after many temporary locations.{{sfn|Bocking|2013|p=51}} In contrast with {{ill|Kōtai Jingū|lt=|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kotai jingu|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}, this shrine is not explicitly mentioned in the [[Kojiki]] or the [[Nihon Shoki]]. 
+In Japanese mythology {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-hime}} was either killed by [[Tsukuyomi-no-Mikoto]]{{Efn|In the [[Nihon Shoki]]}}<ref name="Roberts 2010">{{cite book|last=Roberts|first=Jeremy|url=http://www.enryo.ro/carti/Japanese%20mythology%20A%20to%20Z.pdf|title=Japanese Mythology A To Z|publisher=Chelsea House Publishers|year=2010|isbn=978-1-60413-435-3|edition=2nd|location=New York}}</ref> or by [[Susanoo-no-Mikoto]]{{Efn|In the [[Kojiki]]}}. Amaterasu mourned the death of her and in the [[Nihon Shoki]] the reason the sun and the moon are on opposite sides of the sky is that Amaterasu was unwilling to go near [[Tsukuyomi-no-Mikoto]] the moon god after he committed the murder.<ref name="Roberts 2010" /> Amaterasu is linked with Toyouke-hime as the sun is necessary for food to grow. This was prior to the [[:en:Tenson Korin|Tenson Korin]] and the establishment of [[Ise Grand Shrine|Ise Jingu]]. {{ill|Emperor Suinin|ar|الإمبراطور سوينين|arz|الامبراطور سوينين|azb|سوینین (ایمپیراتور)|ca|Suinin|ckb|ئیمپراتۆر سوینین|cs|Suinin|de|Suinin|eo|Suinin|es|Suinin Tennō|fa|امپراتور سوینین|fi|Suinin|fr|Suinin|hr|Suinin|id|Kaisar Suinin|it|Suinin|ja|垂仁天皇|ka|სუინინი|ko|스이닌 천황|lt|Imperatorius Suininas|mn|Эзэн Хаан Сүйнин|nl|Suinin|pl|Suinin|pt|Suinin|ru|Император Суйнин|sh|Car Suinin|simple|Emperor Suinin|sl|Cesar Sujnin|sr|Суинин|sv|Suinin|th|จักรพรรดิซูอินิง|tl|Emperador Suinin|tr|Suinin (imparator)|uk|Імператор Суйнін|uz|Imperator Suinin|vi|Thiên hoàng Suinin|yo|Emperor Suinin|zh|垂仁天皇|zh_min_nan|Suinin Thian-hông|zh_yue|垂仁天皇|qid=Q314850|lt=Emperor Suinin}} is said to have established the shrine to worship [[Amaterasu]] at a permanent location after many temporary locations.{{sfn|Bocking|2013|p=51}} In contrast with {{ill|Kōtai Jingū|ja|皇大神宮}}, this shrine is not explicitly mentioned in the [[Kojiki]] or the [[Nihon Shoki]]. 
 
 Besides the traditional establishment date of 4 BC,<ref>''Encyclopædia Britannica{{Snd}} Ise Shrine'' https://www.britannica.com/ebc/article-9368233</ref> it has also been proposed as having been made in the 5th century.<ref name="witcombe.sbc.edu">''Sacred Places{{Snd}} Ise Shrine'' http://witcombe.sbc.edu/sacredplaces/ise.html</ref> The shrine officially states it was created 1500 years ago in response to a revelation from [[Amaterasu]] that the shrine was needed.<ref>{{Cite web|title=About Ise Jingu｜Ise Jingu|url=https://www.isejingu.or.jp/en/about/index.html|access-date=2023-05-05|website=Ise Jingu|language=en}}</ref>
 
@@ -88,23 +87,23 @@ The shrine has been traditionally rebuilt every 20 years.<ref>{{Cite web|title=I
 There is a separate shrine dedicated to Toyouke's [[Mitama#Ara-mitama and nigi-mitama|Ara-mitama]], or {{Nihongo|2=豊受大御神荒魂|3=Toyouke-Ōmikami no Ara-mitama}} called {{ill|Taka-no-Miya|ja|多賀宮|12=simple|13=User:Immanuelle/Takanomiya|comment=changed title based on wikidata|qid=Q11431075}} (Takamiya) inside this shrine. 
 
 === History ===
-The origin of the enshrinement of Gekū (*Toyouke Daijingu*) is not mentioned in either the ''{{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}'' or the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}''.<ref name="as93">Mitsuhashi (2013): p.93</ref> According to the shrine record ''{{ill|Enryaku Gishikichō|lt=Enryaku Gishikichō|lt=Toyukegū Gishikichō|ja|止由気宮儀式帳|12=simple|13=User:Immanuelle/Toyukegū Gishikichō|ja_comment=jawiki redirects to 延暦儀式帳}}'', compiled in 804 (*Enryaku* 23), {{ill|Amaterasu|ja|天照大御神|lt=Amaterasu Ōmikami|12=simple|13=User:Immanuelle/Amaterasu Ōmikami|13=User:Immanuelle/Amaterasu|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}} (the enshrined deity of ''{{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}'' or *Naikū*) appeared in a dream of ''{{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Emperor Yūryaku}}''<ref name="as93" /> and revealed, "I cannot dine in peace alone. Summon *Toyouke-Ōkami* from *Tanba Province* to be near me." Although *Toyukegū Gishikichō* does not specify the year, ''{{ill|Daijingū Shozatsujiki|ja|大神宮諸雑事記|12=simple|13=User:Immanuelle/Daijingū Shozatsujiki|ja_comment=jawiki link invalid}}'' states that this event occurred in "the 21st year of Emperor Yūryaku, *Hinoto-mi* (丁巳),"<ref name="as94">Mitsuhashi (2013): p.94</ref> which corresponds to Yūryaku 21. In response to this divine oracle, on the 7th day of the 7th month (lunar calendar) of Yūryaku 22, *Toyouke Ōmikami* was enshrined in *"Yamada-no-hara, Numaki-no-sato, Watarai District, Ise Province"*, near Naikū.<ref name="as94" /> 
+The origin of the enshrinement of Gekū (*Toyouke Daijingu*) is not mentioned in either the ''{{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031|lt=Kojiki}}'' or the ''{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}''.<ref name="as93">Mitsuhashi (2013): p.93</ref> According to the shrine record ''{{ill|Enryaku Gishikichō|ja|止由気宮儀式帳|lt=Toyukegū Gishikichō}}'', compiled in 804 (*Enryaku* 23), {{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602|lt=Amaterasu Ōmikami}} (the enshrined deity of ''{{ill|Kōtai Jingū|ja|皇大神宮}}'' or *Naikū*) appeared in a dream of ''{{ill|Emperor Yūryaku|en|Emperor Yūryaku|qid=Q357235|lt=Emperor Yūryaku}}''<ref name="as93" /> and revealed, "I cannot dine in peace alone. Summon *Toyouke-Ōkami* from *Tanba Province* to be near me." Although *Toyukegū Gishikichō* does not specify the year, ''{{ill|Daijingū Shozatsujiki|ja|大神宮諸雑事記}}'' states that this event occurred in "the 21st year of Emperor Yūryaku, *Hinoto-mi* (丁巳),"<ref name="as94">Mitsuhashi (2013): p.94</ref> which corresponds to Yūryaku 21. In response to this divine oracle, on the 7th day of the 7th month (lunar calendar) of Yūryaku 22, *Toyouke Ōmikami* was enshrined in *"Yamada-no-hara, Numaki-no-sato, Watarai District, Ise Province"*, near Naikū.<ref name="as94" /> 
 
-The record states that the enshrinement of Gekū occurred 484 years after Naikū, but when mechanically calculating this duration based on historical reigns<ref>{{see|List of ancient Japanese emperors' reigns and their corresponding Western years}}</ref>, the years do not match exactly.<ref name="as94" /> In the ''{{ill|Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}}'', the shrine is listed as *Watarai-no-miya, Four Shrines* (*度会宮 四座*), classified as a major shrine.
+The record states that the enshrinement of Gekū occurred 484 years after Naikū, but when mechanically calculating this duration based on historical reigns<ref>{{see|List of ancient Japanese emperors' reigns and their corresponding Western years}}</ref>, the years do not match exactly.<ref name="as94" /> In the ''{{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}'', the shrine is listed as *Watarai-no-miya, Four Shrines* (*度会宮 四座*), classified as a major shrine.
 
-The ''{{ill|Watarai clan|ja|度会氏|12=simple|13=User:Immanuelle/Watarai clan}}'' served as hereditary shrine priests (*Shinkan*, 神職) for generations. During the *Kamakura period*, some shrine priests at Gekū began advocating that Gekū should be regarded as equal to or even superior in Rank to Naikū. Around 1296 or 1297, Gekū started using the title *"Toyouke Kōdaigū"*, which included the imperial character (*皇*, Kō), prompting protests from Naikū.<ref name=":0" /> Against this backdrop, ''{{ill|Watarai Ieyuki|ja|度会家行|12=simple|13=User:Immanuelle/Watarai Ieyuki|comment=changed title based on wikidata|qid=Q11486121}}'' formulated the doctrine of ''{{ill|Ise faith|lt=Ise faith|lt=Ise Shintō|ja|伊勢神道|12=simple|13=User:Immanuelle/Ise Shintō}}'' (Watarai Shintō), asserting that *Toyouke Ōmikami* was identical to {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}} and {{ill|Kuni-no-Tokotachi|ja|国常立神|12=simple|13=User:Immanuelle/Kuni-no-Tokotachi|ja_comment=jawiki redirects to 国之常立神}}, thus making Gekū superior to Naikū. Meanwhile, the shrine town of ''{{ill|Yamada|ja|山田 (伊勢市)|12=simple|13=User:Immanuelle/Yamada, Ise|comment=changed title based on wikidata|qid=Q11470062}}'' developed around Gekū.
+The ''{{ill|Watarai clan|ja|度会氏}}'' served as hereditary shrine priests (*Shinkan*, 神職) for generations. During the *Kamakura period*, some shrine priests at Gekū began advocating that Gekū should be regarded as equal to or even superior in Rank to Naikū. Around 1296 or 1297, Gekū started using the title *"Toyouke Kōdaigū"*, which included the imperial character (*皇*, Kō), prompting protests from Naikū.<ref name=":0" /> Against this backdrop, ''{{ill|Watarai Ieyuki|ja|度会家行|12=simple|13=User:Immanuelle/Watarai Ieyuki|comment=changed title based on wikidata|qid=Q11486121}}'' formulated the doctrine of ''{{ill|Ise faith|ja|伊勢神道|lt=Ise Shintō}}'' (Watarai Shintō), asserting that *Toyouke Ōmikami* was identical to {{ill|Ame-no-Minakanushi|en|Ame-no-Minakanushi|qid=Q2842779|lt=Ame-no-Minakanushi}} and {{ill|Kuni-no-Tokotachi|ja|国常立神}}, thus making Gekū superior to Naikū. Meanwhile, the shrine town of ''{{ill|Yamada|ja|山田 (伊勢市)|12=simple|13=User:Immanuelle/Yamada, Ise|comment=changed title based on wikidata|qid=Q11470062}}'' developed around Gekū.
 
 === Meiji Era and Beyond ===
 During the ''{{ill|Ise Riot|ja|伊勢暴動|12=simple|13=User:Immanuelle/Ise Riot|comment=changed title based on wikidata|qid=Q11379085}}'' of 1876, fires broke out in the towns of Nakajima, Uraguchi, Tokiwa, and Ōseko. Although Gekū took defensive measures, it escaped destruction and arson.<ref>Kaneko (1983): pp.214-215</ref> On January 14, 1945, at 2:53 PM,<ref name="ss9">Nihon no Kūshū Henshū Iinkai (1980): p.239</ref> six bombs were dropped within the sacred grounds of Gekū, damaging the *Gojōden* (五丈殿), *Kyūjōden* (九丈殿), *Kaguraden* (神楽殿), and *Saikan* (斎館).<ref name="yk">Nishigaki & Matsushima (1974): p.247</ref> However, the damage was relatively minor, with only eaves, sliding doors, and fences sustaining damage, along with a few holes in the roofs.<ref>{{Cite web|和書|author=Nakamura Hisanori|url=http://www.asahi.com/area/mie/articles/MTW20120818251060001.html|title=[5] Exaggerated Reports for Wartime Propaganda|work={{ill|Asahi Shimbun Digital|ja|朝日新聞デジタル|12=simple|13=User:Immanuelle/Asahi Shimbun Digital|ja_comment=jawiki redirects to 朝日新聞 (ニュースサイト)|comment=changed title based on wikidata|qid=Q11517520}}|publisher={{ill|The Asahi Shimbun|en|The Asahi Shimbun|qid=Q720503|lt=Asahi Shimbun}}|date=2012-08-18|accessdate=2015-01-25|archiveurl=https://web.archive.org/web/20150125095304/http://www.asahi.com/area/mie/articles/MTW20120818251060001.html|archivedate=2015-01-25}}</ref>
 
-During the ''{{ill|Ujiyamada Air Raid|ja|宇治山田空襲|12=simple|13=User:Immanuelle/Ujiyamada Air Raid}}'' on July 28-29, incendiary bombs fell inside the sacred enclosure (*Mikakiuchi*, 御垣内), but the shrine itself was not engulfed in flames.<ref name="kg4">Yano (2006): p.184</ref> The aftermath revealed that the debris of incendiary bombs collected from the shrine grounds filled three truckloads.<ref name="kg4" />
+During the ''{{ill|Ujiyamada Air Raid|ja|宇治山田空襲}}'' on July 28-29, incendiary bombs fell inside the sacred enclosure (*Mikakiuchi*, 御垣内), but the shrine itself was not engulfed in flames.<ref name="kg4">Yano (2006): p.184</ref> The aftermath revealed that the debris of incendiary bombs collected from the shrine grounds filled three truckloads.<ref name="kg4" />
 
 == Grounds ==
-The main shrine consists of three buildings: the Main Sanctuary (正殿), the Western Treasure Hall (西宝殿), and the Eastern Treasure Hall (東宝殿).<ref name="ub9" /> These are surrounded by multiple layers of wooden fences, making them not directly visible from the worship area. Behind the Main Sanctuary are the Mikeden (御饌殿) and the Geheiden (外幣殿).<ref name="ub9" /> Next to the main shrine is the sacred site (御敷地) where the shrine will be rebuilt in the next {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū}}.<ref name="ub9" /> This site, known as the "Old Shrine Site" (古殿地), was where the previous shrine stood before the last relocation.
+The main shrine consists of three buildings: the Main Sanctuary (正殿), the Western Treasure Hall (西宝殿), and the Eastern Treasure Hall (東宝殿).<ref name="ub9" /> These are surrounded by multiple layers of wooden fences, making them not directly visible from the worship area. Behind the Main Sanctuary are the Mikeden (御饌殿) and the Geheiden (外幣殿).<ref name="ub9" /> Next to the main shrine is the sacred site (御敷地) where the shrine will be rebuilt in the next {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮}}.<ref name="ub9" /> This site, known as the "Old Shrine Site" (古殿地), was where the previous shrine stood before the last relocation.
 
-The shrine grounds are about one-tenth the size of the Inner Shrine and feature left-side traffic, unlike the Inner Shrine.<ref>矢野（2006）：46 - 47ページ</ref> Within the grounds, there are three subsidiary shrines of high Rank: {{ill|Taka-no-Miya|ja|多賀宮|12=simple|13=User:Immanuelle/Takanomiya|comment=changed title based on wikidata|qid=Q11431075}}, {{ill|Kaze-no-Miya|ja|風宮|12=simple|13=User:Immanuelle/Kaze-no-Miya}}, and {{ill|Tsuchi-no-Miya|ja|土宮|12=simple|13=User:Immanuelle/Tsuchi-no-Miya}}, along with buildings such as the purification hall (斎館), the Kagura Hall (神楽殿), the sacred fire hall (忌火屋殿) for preparing offerings, and the Sake Storage Hall (御酒殿). The boundary of the shrine is guarded by the {{ill|Miyanomeguri-no-Kami|ja|四至神|12=simple|13=User:Immanuelle/Miyanomeguri-no-Kami|13=User:Immanuelle/Miyanomeguri-no-Kami}}.<ref name="ub8" /><ref>矢野（2006）：47ページ</ref>
+The shrine grounds are about one-tenth the size of the Inner Shrine and feature left-side traffic, unlike the Inner Shrine.<ref>矢野（2006）：46 - 47ページ</ref> Within the grounds, there are three subsidiary shrines of high Rank: {{ill|Taka-no-Miya|ja|多賀宮|12=simple|13=User:Immanuelle/Takanomiya|comment=changed title based on wikidata|qid=Q11431075}}, {{ill|Kaze-no-Miya|ja|風宮}}, and {{ill|Tsuchi-no-Miya|ja|土宮}}, along with buildings such as the purification hall (斎館), the Kagura Hall (神楽殿), the sacred fire hall (忌火屋殿) for preparing offerings, and the Sake Storage Hall (御酒殿). The boundary of the shrine is guarded by the {{ill|Miyanomeguri-no-Kami|ja|四至神}}.<ref name="ub8" /><ref>矢野（2006）：47ページ</ref>
 
-A road extending northwest from the North Gate Torii leads to the {{ill|Watarai Kunimi Shrine|lt=Watarai Kunimi Shrine|lt=Watarai-koku Gokami Shrine|ja|度会国御神社|12=simple|13=User:Immanuelle/Watarai-koku Gokami Shrine}}, which enshrines the guardian deities of Ise City and the Watarai District. Further along is {{ill|Ōtsu Shrine (Ise)|ja|大津神社|12=simple|13=User:Immanuelle/Ōtsu Shrine (Ise)}}, protecting the mouth of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}.<ref name="ub9" /> Additionally, some shrines within the precincts, such as {{ill|Watarai Okunitama-hime Shrine|lt=Watarai Okunitama-hime Shrine|lt=Watarai Ōkunidama-hime Shrine|ja|度会大国玉比賣神社|12=simple|13=User:Immanuelle/Watarai Ōkunidama-hime Shrine}} and {{ill|Igari Shrine|ja|伊我理神社|12=simple|13=User:Immanuelle/Igari Shrine}}, are not directly connected by paths and require exiting onto the Mikumoto Road (三重県道32号伊勢磯部線) to access.<ref>伊勢文化舎（2008）：37ページ</ref>
+A road extending northwest from the North Gate Torii leads to the {{ill|Watarai Kunimi Shrine|ja|度会国御神社|lt=Watarai-koku Gokami Shrine}}, which enshrines the guardian deities of Ise City and the Watarai District. Further along is {{ill|Ōtsu Shrine (Ise)|ja|大津神社}}, protecting the mouth of the {{ill|Isuzu River|en|Isuzu River|qid=Q6089522|lt=Isuzu River}}.<ref name="ub9" /> Additionally, some shrines within the precincts, such as {{ill|Watarai Okunitama-hime Shrine|ja|度会大国玉比賣神社|lt=Watarai Ōkunidama-hime Shrine}} and {{ill|Igari Shrine|ja|伊我理神社}}, are not directly connected by paths and require exiting onto the Mikumoto Road (三重県道32号伊勢磯部線) to access.<ref>伊勢文化舎（2008）：37ページ</ref>
 
 <gallery>
 Geku Maine sanctuary Ise-jingu Grand Shrine 01-r.jpg|Main Sanctuary
@@ -121,7 +120,7 @@ Daiichi-torii-guchi Sando is the primary route into the shrine. It starts at the
 A {{ill|Chōzuya|en|Chōzuya|qid=Q1069667|lt=Temizusha}} is present at the shrine for worshippers to purify .<ref name=":0" />
 
 === Kitamikado-guchi Sando ===
-An alternative {{ill|Sandō|en|Sandō|qid=Q667783|lt=entrance path}} for the shrine.<ref name=":0" />
+An alternative {{ill|Sandō|es|Sandō|fa|ساندو|fi|Sandō|fr|Sandō|it|Sandō|ja|参道|oc|Sandō (arquitectura)|pl|Sandō|pt|Sandō|simple|Sandō|uk|Прочанська дорога|zh|參道|qid=Q667783|lt=entrance path}} for the shrine.<ref name=":0" />
 
 === Saikan and Anzaisho ===
 Saikan and Anzaisho are the Purification Hall and Hall for Imperial Household Visitors respectively. They are on the right side of the pilgrimage path. The Saikan, which is surrounded by fences, is used by Shinto priests to purify themselves. They stay here for one or two nights to cleanse their minds from worldly concerns before performing rituals, as they bathe and eat meals prepared with sacred fire to achieve spiritual serenity; adjacent to Saikan, there is a building called Anzaisho, which serves as the Hall for the Emperor and Empress.<ref name=":0" />
@@ -149,21 +148,21 @@ Toyouke Omikami is enshrined at the Honden. It lies in the most sacred area encl
 !location
 |-
 |1
-|{{ill|Taka-no-Miya|ja|多賀宮|12=simple|13=User:Immanuelle/Taka-no-Miya}}
+|{{ill|Taka-no-Miya|ja|多賀宮}}
 |多賀宮
 |Toyouke no Ōmikami no Aramitama
 |豊受大御神荒御魂
 |in Gekū
 |-
 |2
-|{{ill|Tsuchi-no-Miya|ja|土宮|12=simple|13=User:Immanuelle/Tsuchi-no-Miya}}
+|{{ill|Tsuchi-no-Miya|ja|土宮}}
 |土宮
 |Ōtsuchi no mioya no kami
 |大土御祖神
 |in Gekū
 |-
 |3
-|{{ill|Tsukiyomi-no-Miya (Gekū)|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|ja|月夜見宮|2=ja|3=月夜見宮|lt=Tsukiyomi-no-Miya|lt=Tsukiyomi-no-Miya|12=simple|13=User:Immanuelle/Tsukiyomi-no-Miya (Gekū)}}
+|{{ill|Tsukiyomi-no-Miya (Gekū)|ja|月夜見宮|lt=Tsukiyomi-no-Miya}}
 {{efn|Shikinaisha}}
 |月夜見宮
 |Tsukiyomi no mikoto
@@ -173,7 +172,7 @@ Tsukiyomi no mikoto no Aramitama
 |Miyajiri, Ise city
 |-
 |4
-|{{ill|Kaze-no-Miya|ja|風宮|12=simple|13=User:Immanuelle/Kaze-no-Miya}}
+|{{ill|Kaze-no-Miya|ja|風宮}}
 |風宮
 |Shinatsuhiko no mikoto
 Shinatobe no mikoto
@@ -193,14 +192,14 @@ Shinatobe no mikoto
 !location
 |-
 |1
-|{{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)}}
+|{{ill|Kusanagi Shrine (Ise)|ja|草奈伎神社|lt=Kusanagi Shrine}}
 |草奈伎神社
 |Mishirushi no tsurugi no kami
 |御剣仗神 (標劔仗神<ref>"Jingū sessha massha junhai", The first volume (上巻) p.65</ref>)
 |Tokiwa, Ise city
 |-
 |2
-|{{ill|Kusanagi Shrine (Ise)|lt=Ōmakunari Shrine|ja|大間国生神社|12=simple|13=User:Immanuelle/Kusanagi Shrine (Ise)|ja_comment=jawiki redirects to 草奈伎神社}}
+|{{ill|Kusanagi Shrine (Ise)|ja|大間国生神社|lt=Ōmakunari Shrine}}
 |大間国生神社
 |Ōwakako no mikoto
 Otowakako no mikoto
@@ -209,7 +208,7 @@ Otowakako no mikoto
 |Tokiwa, Ise city
 |-
 |3
-|{{ill|Watarai Kunimi Shrine|ja|度会国御神社|12=simple|13=User:Immanuelle/Watarai Kunimi Shrine}}
+|{{ill|Watarai Kunimi Shrine|ja|度会国御神社}}
 {{efn|Shikinaisha}}
 |度会国御神社
 |Hikokunimigakitakeyotsuka no mikoto
@@ -217,7 +216,7 @@ Otowakako no mikoto
 |in Gekū
 |-
 |4
-|{{ill|Watarai Okunitama-hime Shrine|lt=Watarai Okunitama-hime Shrine|lt=Watarai Ōkunidama-hime Shrine|ja|度会大国玉比賣神社|12=simple|13=User:Immanuelle/Watarai Ōkunidama-hime Shrine}}
+|{{ill|Watarai Okunitama-hime Shrine|ja|度会大国玉比賣神社|lt=Watarai Ōkunidama-hime Shrine}}
 |度会大国玉比賣神社
 |Ōkunitama no mikoto
 Mizusasarahime no mikoto
@@ -226,42 +225,42 @@ Mizusasarahime no mikoto
 |in Gekū
 |-
 |5
-|{{ill|8=ja|9=田上大水神社|Tanoe-Ōmizu Shrine|12=simple|13=User:Immanuelle/8=ja}}
+|{{ill|Tanoe-Ōmizu Shrine}}
 |田上大水神社
 |Ogoto kan-nushi
 |小事神主
 |Fujisato, Ise city
 |-
 |6
-|{{ill|8=ja|9=田上大水神社|Tanoe-Ōmizu Shrine|lt=Tanoe-Ōmizu Mimae Shrine|lt_ja=田上大水御前神社|12=simple|13=User:Immanuelle/8=ja}}
+|{{ill|Tanoe-Ōmizu Shrine|lt=Tanoe-Ōmizu Mimae Shrine}}
 |田上大水御前神社
 |Miyako
 |宮子
 |in Tanoe ōmizu jinja
 |-
 |7
-|{{ill|Shitomi Shrine|ja|志等美神社|12=simple|13=User:Immanuelle/Shitomi Shrine}}
+|{{ill|Shitomi Shrine|ja|志等美神社}}
 |志等美神社
 |Kukunochi no kami
 |久久能智神
 |Tsujikuru, Ise city
 |-
 |8
-|{{ill|Shitomi Shrine|lt=Shitomi Shrine|lt=Ōkōchi Shrine|ja|大河内神社|12=simple|13=User:Immanuelle/Ōkōchi Shrine|ja_comment=jawiki redirects to 志等美神社}}
+|{{ill|Shitomi Shrine|ja|大河内神社|lt=Ōkōchi Shrine}}
 |大河内神社
 |Ōyamazumi no kami
 |大山祇神
 |in Shitomi jinja
 |-
 |9
-|{{ill|Kiyonoiba Shrine|ja|清野井庭神社|12=simple|13=User:Immanuelle/Kiyonoiba Shrine}}
+|{{ill|Kiyonoiba Shrine|ja|清野井庭神社}}
 |清野井庭神社
 |Kayanohime no mikoto
 |草野姫命
 |Tokiwa, Ise city
 |-
 |10
-|{{ill|Takagawara Shrine|ja|高河原神社|comment=no clue what happened there|12=simple|13=User:Immanuelle/Takagawara Shrine}}
+|{{ill|Takagawara Shrine|ja|高河原神社}}
 |高河原神社
 |Tsukiyomi no mikoto no Mitama
 |月夜見尊御魂
@@ -269,7 +268,7 @@ Mizusasarahime no mikoto
 (Gekū, 月夜見宮)
 |-
 |11
-|{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt=Kawara Shrine|12=simple|13=User:Immanuelle/Kawara Shrine (Gekū)}}
+|{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt=Kawara Shrine}}
 |河原神社
 |Kawa no kami<ref>"Oisesan wo arukō (『お伊勢さんを歩こう』, Ise-Jingū-sūkei-kai, April 1, 2005) p.15, No Hiragana in "Oise mairi" and "Jingū sessha massha junhai".</ref>
 |川神
@@ -277,21 +276,21 @@ Mizusasarahime no mikoto
 Ise city
 |-
 |12
-|{{ill|Kawarabuchi Shrine|ja|河原淵神社|12=simple|13=User:Immanuelle/Kawarabuchi Shrine}}
+|{{ill|Kawarabuchi Shrine|ja|河原淵神社}}
 |河原淵神社
 |Sawahime no mikoto
 |澤姫命
 |Funae, Ise city
 |-
 |13
-|{{ill|Yamazue Shrine|ja|山末神社|12=simple|13=User:Immanuelle/Yamazue Shrine}}
+|{{ill|Yamazue Shrine|ja|山末神社}}
 |山末神社
 |Ōyamatsuhime no mikoto
 |大山津姫命
 |in Gekū
 |-
 |14
-|{{ill|Usunono Shrine|ja|宇須乃野神社|12=simple|13=User:Immanuelle/Usunono Shrine}}
+|{{ill|Usunono Shrine|ja|宇須乃野神社}}
 |宇須乃野神社
 |Usunome no mikoto
 |宇須乃女命
@@ -299,14 +298,14 @@ Ise city
 Ise city
 |-
 |15
-|{{ill|Mike Shrine (Ise)|ja|御食神社 (伊勢市)|lt=Mike Shrine|12=simple|13=User:Immanuelle/Mike Shrine (Ise)}}
+|{{ill|Mike Shrine (Ise)|ja|御食神社 (伊勢市)|lt=Mike Shrine}}
 |御食神社
 |Minato no miketsu kami
 |水戸御饗都
 |Kamiyashiro, Ise city
 |-
 |16
-|{{ill|Obata Shrine|ja|小俣神社|12=simple|13=User:Immanuelle/Obata Shrine}}
+|{{ill|Obata Shrine|ja|小俣神社}}
 |小俣神社
 |Uka no Mitama no kami
 |宇賀御魂神
@@ -326,42 +325,42 @@ Ise city
 !location
 |-
 |1
-|{{ill|Igari Shrine|ja|伊我理神社|12=simple|13=User:Immanuelle/Igari Shrine}}
+|{{ill|Igari Shrine|ja|伊我理神社}}
 |伊我理神社
 |Igarihime no mikoto
 |伊我理比女命
 |in Gekū
 |-
 |2
-|{{ill|Usunono Shrine|ja|宇須乃野神社|lt=Agata Shrine|lt_ja=県神社|12=simple|13=User:Immanuelle/Usunono Shrine}}
+|{{ill|Usunono Shrine|ja|宇須乃野神社|lt=Agata Shrine}}
 |縣神社
 |Agata no kami<ref>"Oisesan wo arukō" p.16</ref>
 |縣神
 |same as Usuno no jinja
 |-
 |3
-|{{ill|Igari Shrine|ja|伊我理神社|lt=Inaka Shrine|lt_ja=井中神社|12=simple|13=User:Immanuelle/Igari Shrine}}
+|{{ill|Igari Shrine|ja|伊我理神社|lt=Inaka Shrine}}
 |井中神社
 |Inaka no kami
 |井中神
 |same as Ikari jinja
 |-
 |4
-|{{ill|Shitomi Shrine|lt=Uchikake Shrine|ja|志等美神社|lt_ja=打懸神社|12=simple|13=User:Immanuelle/Shitomi Shrine}}
+|{{ill|Shitomi Shrine|ja|志等美神社|lt=Uchikake Shrine}}
 |打縣神社
 |Uchikake myōjin<ref>"Oisesan wo arukō" p.17</ref>
 |打縣名神
 |in Shitomi jinja
 |-
 |5
-|{{ill|Akasaki Shrine|ja|赤崎神社|12=simple|13=User:Immanuelle/Akasaki Shrine}}
+|{{ill|Akasaki Shrine|ja|赤崎神社}}
 |赤崎神社
 |Arasakihime no mikoto
 |荒崎姫命
 |Toba, Toba city
 |-
 |6
-|{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt=Mori Shrine|lt_ja=毛理神社|12=simple|13=User:Immanuelle/Kawara Shrine (Gekū)}}
+|{{ill|Kawara Shrine (Gekū)|ja|河原神社 (伊勢市)|lt=Mori Shrine}}
 |毛理神社
 |Ki no kami<ref>"Oisesan wo arukō" p.15</ref>
 |木神
@@ -369,7 +368,7 @@ Ise city
 (河原神社)
 |-
 |7
-|{{ill|Ōtsu Shrine (Ise)|ja|大津神社_(伊勢市)|lt=Ōtsu Shrine|12=simple|13=User:Immanuelle/Ōtsu Shrine (Ise)}}
+|{{ill|Ōtsu Shrine (Ise)|ja|大津神社_(伊勢市)|lt=Ōtsu Shrine}}
 |大津神社
 |Ashihara kami
 (Ashihara no kami<ref name="Oisesan wo arukō p.8">"Oisesan wo arukō" p.8</ref>)
@@ -377,7 +376,7 @@ Ise city
 |in Gekū
 |-
 |8
-|{{ill|Shioya Shrine|ja|志宝屋神社|12=simple|13=User:Immanuelle/Shioya Shrine}}
+|{{ill|Shioya Shrine|ja|志宝屋神社}}
 |志宝屋神社
 |Shiotsuchi no oji
 |塩土老翁
@@ -396,14 +395,14 @@ Ise city
 !location
 |-
 |1
-|{{ill|Misakadono-no-Kami|ja|御酒殿神|12=simple|13=User:Immanuelle/Misakadono-no-Kami}}
+|{{ill|Misakadono-no-Kami|ja|御酒殿神}}
 |御酒殿
 |Misakadono no kami<ref name="Oisesan wo arukō p.82">"Oisesan wo arukō" p.8</ref>
 |御酒殿神
 |in Gekū
 |-
 |2
-|{{ill|Miyanomeguri-no-Kami|ja|四至神|12=simple|13=User:Immanuelle/Miyanomeguri-no-Kami|13=User:Immanuelle/Miyanomeguri-no-Kami}}
+|{{ill|Miyanomeguri-no-Kami|ja|四至神}}
 |四至神
 |Miya no meguri no kami
 |四至神
@@ -411,14 +410,14 @@ Ise city
 without building
 |-
 |3
-|{{ill|Kami-no-Mii Shrine|ja|上御井神社|12=simple|13=User:Immanuelle/Kami-no-Mii Shrine}}
+|{{ill|Kami-no-Mii Shrine|ja|上御井神社}}
 |上御井神社
 |Kami no mii no mamori no kami<ref name="Oisesan wo arukō p.82" />
 |上御井鎮守神
 |in Gekū
 |-
 |4
-|{{ill|Shimo-no-Mii Shrine|ja|下御井神社|12=simple|13=User:Immanuelle/Shimo-no-Mii Shrine}}
+|{{ill|Shimo-no-Mii Shrine|ja|下御井神社}}
 |下御井神社
 |Shimo no mii no mamori no kami<ref name="Oisesan wo arukō p.82" />
 |下御井鎮守神
@@ -427,39 +426,39 @@ without building
 |}
 
 == Festivals ==
-Rituals at {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}} follow the principle of "Gekū-saki-matsuri" (外宮先祭), meaning that ceremonies are conducted at {{ill|Toyouke Daijingu|ja|豊受大神宮|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Tōyuke Daijingū|13=User:Immanuelle/Toyouke Daijingu|comment=enwiki is a redirect}} (Gekū, the Outer Shrine) before those at {{ill|Kōtai Jingū|ja|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}} (Naikū, the Inner Shrine). However, during the {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮|12=simple|13=User:Immanuelle/Jingū Shikinen Sengū}}, Naikū is prioritized.<ref name="sk">Shikinaisha Kenkyūkai, ed. (1990): p. 150</ref>
+Rituals at {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}} follow the principle of "Gekū-saki-matsuri" (外宮先祭), meaning that ceremonies are conducted at {{ill|Toyouke Daijingu|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343}} (Gekū, the Outer Shrine) before those at {{ill|Kōtai Jingū|ja|皇大神宮}} (Naikū, the Inner Shrine). However, during the {{ill|Jingū Shikinen Sengū|ja|神宮式年遷宮}}, Naikū is prioritized.<ref name="sk">Shikinaisha Kenkyūkai, ed. (1990): p. 150</ref>
 
 === Daily Morning and Evening Great Food Offerings Ceremony ===
 The '''Higoto-Asayu-Ōmiketsai''' (日別朝夕大御饌祭) is performed twice daily, with the '''Morning Ōmiketsai''' held from 8:00 AM to 9:00 AM and the '''Evening Ōmiketsai''' from 3:00 PM to 4:00 PM at the Gekū Mikeden (Outer Shrine Food Hall). This ceremony involves offering sacred food ([[御饌]]) to the deities.<ref name="sk" /> It is also referred to as the '''Jōten-Ōmike''' (常典御饌).
 
-A {{ill|Kannushi|ja|権禰宜|12=simple|13=User:Immanuelle/Gon-negi|ja_comment=jawiki redirects to 神職|comment=changed title based on wikidata|qid=Q60523}} who has undergone purification at the Tōyuke Daijingū Saikan (斎館) prepares the offerings. Sacred fire (忌火) is ignited at the shrine's {{ill|Imibiya-den|ja|忌火屋殿|12=simple|13=User:Immanuelle/Imibiya-den|ja_comment=jawiki link invalid}} using a traditional fire drill. A purified [[:en:Kannushi|Shinto priest]] prepares food offerings, including three servings of rice (御飯, onii), water from {{ill|Kami-no-Mii Shrine|ja|上御井神社|12=simple|13=User:Immanuelle/Kami-no-Mii Shrine}}, salt (御塩, mishio), dried sea bream (or seasonal items such as dried squid, barracuda, or gnomefish), dried bonito, seaweed, vegetables, fruits, and three offerings of sacred sake (清酒). These are then presented by one {{ill|Negi|ja|禰宜|12=simple|13=User:Immanuelle/Negi|comment=changed title based on wikidata|qid=Q11594490}}, one {{ill|Kannushi|ja|権禰宜|12=simple|13=User:Immanuelle/Gon-negi|ja_comment=jawiki redirects to 神職|comment=changed title based on wikidata|qid=Q60523}}, one {{ill|Miya-zukasa|ja|宮掌|12=simple|13=User:Immanuelle/Miya-zukasa|ja_comment=jawiki link invalid}}, and two attendants at the Mikeden, dedicated to {{ill|Amaterasu|ja|天照皇大神|12=simple|13=User:Immanuelle/Amaterasu-Ōmikami|ja_comment=jawiki redirects to QID FIXED|qid=Q455602}}, {{ill|Toyouke-hime|ja|豊受大御神|12=simple|13=User:Immanuelle/Tōyuke-Ōmikami|ja_comment=jawiki redirects to トヨウケビメ|comment=changed title based on wikidata|qid=Q2983724}}, {{ill|Ame-no-Tajikarao|ja|天手力男神|12=simple|13=User:Immanuelle/Ame-no-Tajikarao|ja_comment=jawiki redirects to アメノタヂカラオ|comment=changed title based on wikidata|qid=Q849412}}, and {{ill|Takuhadachiji-hime|en|Takuhadachiji-hime|qid=Q11110848|lt=Takuhadachiji-hime}}, as well as three accompanying deities.<ref name="sk" />
+A {{ill|Kannushi|ja|権禰宜|12=simple|13=User:Immanuelle/Gon-negi|ja_comment=jawiki redirects to 神職|comment=changed title based on wikidata|qid=Q60523}} who has undergone purification at the Tōyuke Daijingū Saikan (斎館) prepares the offerings. Sacred fire (忌火) is ignited at the shrine's {{ill|Imibiya-den|ja|忌火屋殿}} using a traditional fire drill. A purified [[:en:Kannushi|Shinto priest]] prepares food offerings, including three servings of rice (御飯, onii), water from {{ill|Kami-no-Mii Shrine|ja|上御井神社}}, salt (御塩, mishio), dried sea bream (or seasonal items such as dried squid, barracuda, or gnomefish), dried bonito, seaweed, vegetables, fruits, and three offerings of sacred sake (清酒). These are then presented by one {{ill|Negi|ja|禰宜|12=simple|13=User:Immanuelle/Negi|comment=changed title based on wikidata|qid=Q11594490}}, one {{ill|Kannushi|ja|権禰宜|12=simple|13=User:Immanuelle/Gon-negi|ja_comment=jawiki redirects to 神職|comment=changed title based on wikidata|qid=Q60523}}, one {{ill|Miya-zukasa|ja|宮掌}}, and two attendants at the Mikeden, dedicated to {{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|rsk|Аматерасу|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602}}, {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724}}, {{ill|Ame-no-Tajikarao|ja|天手力男神|12=simple|13=User:Immanuelle/Ame-no-Tajikarao|ja_comment=jawiki redirects to アメノタヂカラオ|comment=changed title based on wikidata|qid=Q849412}}, and {{ill|Takuhadachiji-hime|en|Takuhadachiji-hime|qid=Q11110848|lt=Takuhadachiji-hime}}, as well as three accompanying deities.<ref name="sk" />
 
-Salt used as a food offering is sourced from the {{ill|Mishioden Shrine|ja|御塩殿神社|12=simple|13=User:Immanuelle/Mishioden Shrine}} and transported along the designated {{ill|Mishio Path|ja|御塩道|12=simple|13=User:Immanuelle/Mishio Path|ja_comment=jawiki link invalid}}. The transport is carried out via the "Mishio Bridge" (御塩橋), a structure used exclusively for this purpose within the shrine grounds.
+Salt used as a food offering is sourced from the {{ill|Mishioden Shrine|ja|御塩殿神社}} and transported along the designated {{ill|Mishio Path|ja|御塩道}}. The transport is carried out via the "Mishio Bridge" (御塩橋), a structure used exclusively for this purpose within the shrine grounds.
 
 Rice is cultivated at the "Jingū Shinden" (神宮神田) within Ise City, and vegetables are grown at the "Jingū Misono" (神宮御園). The shrine adheres to a principle of self-sufficiency for food offerings, with ceremonial earthenware (土器) crafted at the shrine's ceramic production site in {{ill|Q11240358|ja|明和町|12=simple|13=User:Immanuelle/Meiwa, Mie|comment=changed title based on wikidata|qid=Q11240358}} within {{ill|Taki District, Mie|en|Taki District, Mie|qid=Q1042360|lt=Taki District, Mie}}.<ref name="sk" />
 
 == Sacred Horses (Shinme) ==
 [[File:Shinme(Geku)02.jpg|thumb|Appearance of a sacred horse<ref>[http://www.jingukaikan.jp/kaikan/tsuitachi.html 『月の初めはお伊勢さんで　朔日参りのご案内』神宮会館] Retrieved April 22, 2015.</ref>]]
 
-At the {{ill|Toyōke Daijingū|ja|外宮|12=simple|13=User:Immanuelle/Outer Shrine (Gekū)|ja_comment=jawiki redirects to 豊受大神宮|comment=changed title based on wikidata|qid=Q11633343}}, two {{ill|Shinme|ja|神馬|12=simple|13=User:Immanuelle/sacred horses|comment=changed title based on wikidata|qid=Q11591047}} donated by the {{ill|Imperial House of Japan|en|Imperial House of Japan|qid=Q909452|lt=Imperial Household of Japan}} are kept.<ref name="jp">JTB Publishing (2011): p.140</ref> However, if one of the sacred horses passes away, there will be a period when only one remains until a new one is donated. Deceased sacred horses are buried in a designated grave, and a formal '''horse dedication ceremony (牽進式, Kenshinshiki)''' is held for newly donated horses. After undergoing purification, the new sacred horse is led inside the sanctuary of the {{ill|Main Shrine (Seigū)|ja|正宮|12=simple|13=User:Immanuelle/Main Shrine (Seigū)|ja_comment=jawiki link invalid}}, where a [[:en:Kannushi|Shinto priest]] recites a '''norito''' (Shinto prayer) to report the dedication of the horse before the deity.<ref>[http://www.isejingu.or.jp/whatsnew/detail.php?uid=127 『October 1st – Sacred Horse Dedication Ceremony (御馬牽進式, Miuma Kenshinshiki) was conducted』 Ise Jingu] Retrieved April 22, 2015.</ref>
+At the {{ill|Toyōke Daijingū|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343}}, two {{ill|Shinme|ja|神馬|12=simple|13=User:Immanuelle/sacred horses|comment=changed title based on wikidata|qid=Q11591047}} donated by the {{ill|Imperial House of Japan|ar|البيت الإمبراطوري في اليابان|as|জাপানৰ ৰাজপৰিয়াল|ast|Familia imperial xaponesa|az|Yaponiya imperator evi|be|Імператарскі дом Японіі|ca|Família Imperial del Japó|ckb|خێزانی شاھانەی ژاپۆن|cs|Japonská císařská dynastie|de|Japanisches Kaiserhaus|el|Αυτοκρατορικός Οίκος της Ιαπωνίας|eo|Japana reĝa familio|es|Familia imperial japonesa|fa|دودمان یاماتو|fr|Maison impériale du Japon|he|בית הקיסרות של יפן|hr|Japanska carska obitelj|hu|Japán császári ház|id|Wangsa Kekaisaran Jepang|it|Famiglia imperiale del Giappone|ja|皇室|ko|일본 황실|la|Domus imperatoriae Iaponiae|ms|Kerabat diraja Jepun|no|Japans keiserhus|pt|Casa Imperial do Japão|ro|Familia imperială a Japoniei|ru|Японский императорский дом|sh|Carska kuća Japana|simple|Imperial House of Japan|sq|Shtëpia Perandorake e Japonisë|th|ราชวงศ์ญี่ปุ่น|tr|Yamato Hanedanı|uk|Імператорський дім Японії|ur|جاپان کا شاہی خاندان|vi|Hoàng thất Nhật Bản|zh|日本皇室|zh_classical|日本皇室|zh_min_nan|Ji̍t-pún hông-sek|zh_yue|日本皇室|qid=Q909452|lt=Imperial Household of Japan}} are kept.<ref name="jp">JTB Publishing (2011): p.140</ref> However, if one of the sacred horses passes away, there will be a period when only one remains until a new one is donated. Deceased sacred horses are buried in a designated grave, and a formal '''horse dedication ceremony (牽進式, Kenshinshiki)''' is held for newly donated horses. After undergoing purification, the new sacred horse is led inside the sanctuary of the {{ill|Main Shrine (Seigū)|ja|正宮}}, where a [[:en:Kannushi|Shinto priest]] recites a '''norito''' (Shinto prayer) to report the dedication of the horse before the deity.<ref>[http://www.isejingu.or.jp/whatsnew/detail.php?uid=127 『October 1st – Sacred Horse Dedication Ceremony (御馬牽進式, Miuma Kenshinshiki) was conducted』 Ise Jingu] Retrieved April 22, 2015.</ref>
 
 The sacred horses are usually kept in the '''divine stable (御厩, Mi-Uma-ya)''', though they may not always be present depending on the weather or their health.<ref>Publishing Division, Domestic Information Section, Third Editorial Department (2014): p.17</ref> Locals respectfully refer to them as '''"O-Uma-sama" (お馬さま)''', and the horses remain unfazed by photography,<ref>Shufu no Tomosha Editorial Team (2011): pp.24, 81, 87</ref> though flash photography is strictly prohibited.
 
 On the '''1st, 11th, and 21st of every month''', the sacred horses participate in a ritual called '''Shinme Kensan (神馬牽参)''', where they visit the Main Shrine to pay respects.<ref name="jp" /> Around '''8:00 AM''', the sacred horse is led by priests to the front of the Main Shrine and performs a bow before the deity.<ref>Shufu no Tomosha Editorial Team (2011): p.87</ref> However, the ceremony may be canceled in case of rain or if the horse refuses to proceed. During the '''Shinme Kensan''', the horse wears a '''ceremonial horse cloth (馬衣, Uma-ginu)''' adorned with the {{ill|Kikumon (chrysanthemum crests)|ja|菊花紋章|12=simple|13=User:Immanuelle/Chrysanthemum Seal|comment=changed title based on wikidata|qid=Q11082563}}.<ref name="jp" />
 
-The {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=simple|13=User:Immanuelle/Inner Shrine (Naikū)}} also keeps '''two sacred horses''', and they perform the '''Shinme Kensan''' ritual on the same days as the Outer Shrine.<ref name="jp" />
+The {{ill|Kōtai Jingū|ja|内宮|lt=Inner Shrine (Naikū)}} also keeps '''two sacred horses''', and they perform the '''Shinme Kensan''' ritual on the same days as the Outer Shrine.<ref name="jp" />
 
 == Local Information ==
 [[File:Ise Shrine Geku area Aerial photograph.1983.jpg|thumb|270px|Aerial view of the Outer Shrine area, taken in {{ill|1983|en|1983|qid=Q2434|lt=1983}}.<br />{{ill|Geospatial Information Authority of Japan|ja|国土航空写真|12=simple|13=User:Immanuelle/Geospatial Information Authority of Japan|ja_comment=jawiki link invalid|qid=Q135491397}}.]]
 
 === Location ===
-* Toyokawa-cho, {{ill|Ise, Mie|en|Ise, Mie|qid=Q328067|lt=Ise, Mie}}, Mie Prefecture
+* Toyokawa-cho, {{ill|Ise, Mie|ar|إيسه|azb|ایسه، میه|bcl|Ise, Mie|be|Ісэ (горад)|ca|Ise (ciutat japonesa)|ce|Исе (гӀала)|ckb|ئیسێ|cs|Ise (Mie)|de|Ise (Mie)|eo|Ise (urbo)|es|Ise (Mie)|et|Ise (Jaapan)|eu|Ise (Mie)|fa|ایسه، میه|fi|Ise (kaupunki)|fr|Ise (Mie)|gl|Ise|hr|Ise|hy|Իսե (քաղաք)|id|Ise, Mie|it|Ise (Giappone)|ja|伊勢市|ka|ისე|ko|이세시|lt|Isė (Japonija)|mg|Ise|mzn|ایسه، میه|nl|Ise (Mie)|no|Ise (Mie)|pl|Ise (Japonia)|pt|Ise (Japão)|ro|Ise, Japonia|ru|Исе (город)|sh|Ise|simple|Ise, Mie|sr|Исе|sv|Ise, Japan|szl|Ise (Japůńijo)|tg|Исе|tl|Ise, Mie|tr|Ise (şehir)|tt|Исе (шәһәр)|uk|Ісе (Міє)|ur|ایسے، میہ|uz|Ise (Mie)|vi|Ise, Mie|war|Ise, Mie|zh|伊勢市|zh_classical|伊勢市|zh_min_nan|Ise-chhī|zh_yue|伊勢|qid=Q328067|lt=Ise, Mie}}, Mie Prefecture
 
 === Transportation ===
 
 ==== Rail ====
-* Nearest station: {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line}} / {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu}} {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Kintetsu Yamada Line}} - {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station}} (approx. 5-minute walk)
-* Kintetsu Yamada Line / {{ill|Toba Line|ja|鳥羽線|12=simple|13=User:Immanuelle/Toba Line|ja_comment=jawiki redirects to 近鉄鳥羽線|comment=changed title based on wikidata|qid=Q5357612}} - {{ill|Ujiyamada Station|ja|Ujiyamada Station|12=simple|13=User:Immanuelle/Ujiyamada Station|ja_comment=jawiki link invalid}} (approx. 6-minute bus ride)
+* Nearest station: {{ill|Central Japan Railway Company|ckb|کۆمپانیای ناوەڕاستی ڕێگای ئاسنینی ژاپۆن|cs|JR Central|da|Central Japan Railway Company|de|Central Japan Railway Company|eo|JR Centra|es|Central Japan Railway Company|fa|شرکت راه‌آهن مرکزی ژاپن|fi|JR Tōkai|fr|Central Japan Railway Company|hu|Central Japan Railway Company|id|Perusahaan Kereta Api Jepang Tengah|it|Central Japan Railway Company|ja|東海旅客鉄道|jv|Central Japan Railway Company|ko|도카이 여객철도|ms|Syarikat Kereta Api Jepun Tengah|nds|JR Tōkai|nl|Central Japan Railway Company|pl|Central Japan Railway Company|pt|Central Japan Railway Company|ru|Central Japan Railway Company|su|Pausahaan Japan Railway Tengah|sv|JR Tokai|th|บริษัทรถไฟญี่ปุ่นตอนกลาง|tl|Central Japan Railway Company|tr|Central Japan Railway Company|uk|Central Japan Railway Company|ur|سنٹرل جاپان ریلوے کمپنی|wuu|东海旅客铁道|zh|東海旅客鐵道|zh_yue|東海旅客鐵道|qid=Q513679|lt=JR}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line}} / {{ill|Kintetsu Railway|en|Kintetsu Railway|qid=Q1531085|lt=Kintetsu}} {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Kintetsu Yamada Line}} - {{ill|Iseshi Station|eo|Stacio Iseshi|fr|Gare d'Iseshi|id|Stasiun Iseshi|ja|伊勢市駅|jv|Setatsiyun Iseshi|ko|이세시역|my|အိဆဲရှိဘူတာ|ur|ایسیشی اسٹیشن|zh|伊勢市站|qid=Q6079748|lt=Ise-shi Station}} (approx. 5-minute walk)
+* Kintetsu Yamada Line / {{ill|Toba Line|ja|鳥羽線|12=simple|13=User:Immanuelle/Toba Line|ja_comment=jawiki redirects to 近鉄鳥羽線|comment=changed title based on wikidata|qid=Q5357612}} - {{ill|Ujiyamada Station|ja|Ujiyamada Station}} (approx. 6-minute bus ride)
 
 ==== Bus ====
 * {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kotsu}} bus: Get off at "Gekū-mae" (Outer Shrine Front) stop (immediately accessible by foot)
@@ -469,7 +468,7 @@ The {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=s
 * From {{ill|Ise Expressway|en|Ise Expressway|qid=Q6079578|lt=Ise Expressway}} {{ill|Ise-nishi itnerchange|ja|伊勢西インターチェンジ|12=simple|13=User:Immanuelle/Ise-Nishi Interchange|comment=changed title based on wikidata|qid=Q10884865}}, head north on {{ill|Mie Prefectural Road Route 32|ja|三重県道32号伊勢磯部線|12=simple|13=User:Immanuelle/Mie Prefectural Route 32|comment=changed title based on wikidata|qid=Q11357920}} (Mikomoto Road) for about 5 minutes. A free parking lot with '''434 spaces''' is available in front of the '''North Gate'''.<ref>Mie Prefecture Tourism Federation 『[http://www.kankomie.or.jp/sagasu12_barrier/barifuri/leisure/area_ise/01-jingu.html Mie Barrier-Free Leisure Guide: Ise-Shima, Okage Yokocho]』</ref>
 
 ==== Additional Information ====
-* Walking distance from the Outer Shrine to the {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=simple|13=User:Immanuelle/Inner Shrine (Naikū)}}: Approx. '''50 minutes''' (bus service available)
+* Walking distance from the Outer Shrine to the {{ill|Kōtai Jingū|ja|内宮|lt=Inner Shrine (Naikū)}}: Approx. '''50 minutes''' (bus service available)
 
 === Facilities ===
 * '''Sengūkan Museum'''
@@ -481,7 +480,7 @@ The {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=s
 :: On '''October 22, 2017''', {{ill|Typhoon Lan (2017)|en|Typhoon Lan (2017)|qid=Q42108577|lt=Typhoon 21}} caused '''Magatama Pond''' to flood, resulting in '''severe water damage'''. The '''underground exhibit room was submerged''', while the '''first-floor exhibition area and office rooms''' sustained flooding, affecting '''electrical and air conditioning systems'''.<ref>{{Cite web|ja|url=https://mainichi.jp/articles/20171025/k00/00m/040/048000c|date=October 24, 2017|accessdate=June 30, 2018|title=Typhoon 21 causes flooding at Ise Shrine's Sengūkan Museum|publisher=[[Mainichi Shimbun]]}}</ref> Due to the damage, the museum was forced to '''close for two years''' (though the free rest area remained open during renovations). The restoration included '''wall and floor replacements''', '''waterproofing measures''' such as '''1.2-meter-high flood barriers''' and '''flood doors''' at six key entrances, and the construction of a '''viewing deck with free Wi-Fi''' over '''Magatama Pond'''.<ref>{{Cite web|ja|url=https://www.isenp.co.jp/2019/11/07/38225/|date=November 7, 2019|accessdate=November 10, 2019|title=Sengūkan Museum reopens after two-year closure due to Typhoon damage|publisher=[[Ise Shimbun]]}}</ref> The museum '''reopened on November 7, 2019''', after completing these renovations.<ref>{{Cite web|ja|url=https://www.isenp.co.jp/2019/11/08/38248/|date=November 8, 2019|accessdate=November 10, 2019|title=Sengūkan Museum fully restored – Officials celebrate reopening|publisher=Ise Shimbun}}</ref><ref>{{Cite web|ja|url=https://www.chunichi.co.jp/article/mie/20191108/CK2019110802000023.html|author=Nobu Takahashi|date=November 8, 2019|accessdate=November 10, 2019|title=Sengūkan Museum reopens – Large crowds cause temporary admission limits|publisher=Chunichi Shimbun}}</ref>
 
 === Surroundings ===
-* *''{{ill|Takakurayama (Ise)|ja|高倉山 (伊勢市)|12=simple|13=User:Immanuelle/Takakurayama (Ise)}}''* – A mountain range within the Outer Shrine's sacred grounds. Historically, it supplied timber for the '''Shikinen Sengū (式年遷宮)''' shrine rebuilding ceremonies.
+* *''{{ill|Takakurayama (Ise)|ja|高倉山 (伊勢市)}}''* – A mountain range within the Outer Shrine's sacred grounds. Historically, it supplied timber for the '''Shikinen Sengū (式年遷宮)''' shrine rebuilding ceremonies.
 
 *
 
@@ -495,8 +494,8 @@ The {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=s
 
 == Deities ==
 ; Main Deity
-* '''{{ill|Toyouke-hime|en|Toyouke-hime|qid=Q2983724|lt=Toyouke-Ōmikami}}'''
-: According to the {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記|12=simple|13=User:Immanuelle/Chronicle of Princess Yamatohime|13=User:Immanuelle/Yamatohime no Mikoto Seiki}}, the sacred object of worship is the Makufutsukagami mirror.
+* '''{{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-Ōmikami}}'''
+: According to the {{ill|Yamatohime no Mikoto Seiki|ja|倭姫命世記}}, the sacred object of worship is the Makufutsukagami mirror.
 
 ; Associated Deities
 : Known as the "Mitomo no Kami," these three deities are enshrined in the east and west side halls. They include {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|qid=Q1056017|lt=Ninigi}}, {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Ame-no-Koyane-no-Mikoto|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}, and {{ill|Futodama|en|Futodama|qid=Q11059539|lt=Futodama}}. 
@@ -505,12 +504,12 @@ The {{ill|Kōtai Jingū|lt=Kōtai Jingū|lt=Inner Shrine (Naikū)|ja|内宮|12=s
 Gekū holds daily rituals, including the Morning and Evening Grand Offerings, where sacred food prepared with utmost purity is offered to the deities. These ceremonies are conducted in the Mikeden, a sacred hall dedicated to this purpose.
 
 == Access ==
-* '''By Train:''' Approx. 5 minutes' walk from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station}} on the JR Sangu Line or the Kintetsu Yamada Line.
+* '''By Train:''' Approx. 5 minutes' walk from {{ill|Iseshi Station|eo|Stacio Iseshi|fr|Gare d'Iseshi|id|Stasiun Iseshi|ja|伊勢市駅|jv|Setatsiyun Iseshi|ko|이세시역|my|အိဆဲရှိဘူတာ|ur|ایسیشی اسٹیشن|zh|伊勢市站|qid=Q6079748|lt=Ise-shi Station}} on the JR Sangu Line or the Kintetsu Yamada Line.
 * '''By Bus:''' Disembark at "Gekū-mae" bus stop.
 * '''By Car:''' About 5 minutes from the Ise Nishi IC on the Ise Expressway.
 
 == Nearby Attractions ==
-* {{ill|Sengūkan Museum|ja|せんぐう館|12=simple|13=User:Immanuelle/Sengūkan Museum|ja_comment=jawiki link invalid}} - A museum dedicated to the history and significance of the Shikinen Sengū (periodic rebuilding of the shrine).
+* {{ill|Sengūkan Museum|ja|せんぐう館}} - A museum dedicated to the history and significance of the Shikinen Sengū (periodic rebuilding of the shrine).
 
 == References ==
 * Ise Cultural Institute, "Ise Grand Shrine: A Pilgrimage Guide," Ise Cultural Publications, 2008.
@@ -526,15 +525,15 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 == See also ==
 * {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|2=ja|3=皇大神宮|4=zh|5=皇大神宮|12=simple|13=User:Immanuelle/Kōtai Jingū|13=User:Immanuelle/Kōtai Jingū|comment=enwiki is a redirect}}
 
-* {{ill|Moto-Ise Shrines|ja|元伊勢|12=simple|13=User:Immanuelle/Moto-Ise Shrines|13=User:Immanuelle/Moto-Ise Shrines}}
-* {{ill|Daijingū|ja|大神宮|12=simple|13=User:Immanuelle/Daijingū}}
-* {{ill|Watarai clan|ja|度会氏|12=simple|13=User:Immanuelle/Watarai clan}}
-* {{ill|Hinumanai Shrine|ja|比沼麻奈為神社|12=simple|13=User:Immanuelle/Hinumanai Shrine}}
-* {{ill|Toyouke Shrine (Fukuchiyama)|ja|豊受大神社|12=simple|13=User:Immanuelle/Toyouke Shrine (Fukuchiyama)}}
-* {{ill|Toyouke Shrine|ja|豊受神社|12=simple|13=User:Immanuelle/Toyouke Shrine}}
+* {{ill|Moto-Ise Shrines|ja|元伊勢}}
+* {{ill|Daijingū|ja|大神宮}}
+* {{ill|Watarai clan|ja|度会氏}}
+* {{ill|Hinumanai Shrine|ja|比沼麻奈為神社}}
+* {{ill|Toyouke Shrine (Fukuchiyama)|ja|豊受大神社}}
+* {{ill|Toyouke Shrine|ja|豊受神社}}
 * {{ill|Tsukuyomi-no-Mikoto|en|Tsukuyomi-no-Mikoto|qid=Q595520|qid=Q595520|lt=Tsukuyomi-no-Mikoto}}
-* {{ill|Akane Shrine|ja|茜社|12=simple|13=User:Immanuelle/Akane Shrine}} – Located within the precincts of the Outer Shrine but not under its jurisdiction.
-* {{ill|Sana Shrine|ja|佐那神社|12=simple|13=User:Immanuelle/Sana Shrine}}
+* {{ill|Akane Shrine|ja|茜社}} – Located within the precincts of the Outer Shrine but not under its jurisdiction.
+* {{ill|Sana Shrine|ja|佐那神社}}
 * {{ill|Toyo Province|en|Toyo Province|qid=Q1205043|lt=Toyo Province}}
 * {{ill|Ukanomitama|en|Ukanomitama|qid=Q3080728|qid=Q3080728|lt=Ukanomitama}}
 * {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}
@@ -551,7 +550,7 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 * 伊勢文化舎 編『お伊勢さん125社めぐり』別冊『伊勢人』、[[伊勢文化舎]]、平成20th year 12月23日、151pp. ISBN 978-4-900759-37-4
 * 伊勢文化舎 編『宇治橋ものがたり』伊勢文化舎、平成21st year 10月1日、119pp. ISBN 978-4-900759-39-8
 * 金子延夫『玉城町史 二巻 －南伊勢の歴史と伝承－』三重県郷土資料叢書第91集、三重県郷土資料刊行会、昭和58th year 12月10日
-* 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|en|Kogakkan University|qid=Q1797584|lt=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
+* 式内社研究会 編『式内社調査報告 第六巻 東海道1』{{ill|Kogakkan University|de|Kōgakkan-Universität|fa|دانشگاه کوگاکان|id|Universitas Kogakkan|ja|皇學館大学|tt|Когаккан университеты|zh|皇学馆大学|qid=Q1797584|lt=Kogakkan University}}出版部、平成2nd year 2月28日、690p. ISBN 4-87644-080-8
 * 出版事業本部 国内情報部 第三編集部 編『[[るるぶ]] お伊勢まいり』るるぶ情報版近畿21、通巻4615号、[[JTBパブリッシング]]、2014th year 5月1日、92p. ISBN 978-4-533-09761-4
 * 西垣晴次・松島博『三重県の歴史』県史シリーズ24、山川出版社、昭和49th year 10月5日、254p.
 * 日本の空襲編集委員会 編『日本の空襲―五 愛知・三重・岐阜・福井・石川・富山』[[:en:三省堂|三省堂]]、1980th year 6月1日、360p.
@@ -565,7 +564,7 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 * {{cite book|last1=Breen|first1=John|last2=Teeuwen|first2=Mark|title=Shinto in History: Ways of the Kami|url=https://books.google.com/books?id=MADlfH002mAC|year=2000|publisher=University of Hawaii Press |isbn=978-0-8248-2363-4}}
 * {{cite book|last1=Fletcher|first1=Banister|author-link1=Sir Banister Fletcher|last2=Cruickshank |first2=Dan|title=Sir Banister Fletcher's a History of Architecture |url=https://books.google.com/books?id=Gt1jTpXAThwC |year=1996|publisher=Architectural Press|isbn=978-0-7506-2267-7}}
 * Hvass, Svend M. (1998). ''Ise{{Snd}} Japan's Ise Shrines{{Snd}} Ancient yet New''. Copenhagen. Aristo Publishing. {{ISBN|87-985103-3-9}}
-* {{ill|Richard Ponsonby-Fane|en|Richard Ponsonby-Fane|qid=Q3246771|lt=Ponsonby-Fane, Richard}}. (1962). ''Studies in Shinto and Shrines.'' Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/3994492 OCLC 399449]
+* {{ill|Richard Ponsonby-Fane|arz|ريتشارد بونسونبي-فان|fa|ریچارد پونسونبی-فین|fr|Richard Ponsonby-Fane|ja|リチャード・ポンソンビー＝フェイン|simple|Richard Ponsonby-Fane|ur|رچرڈ پونسونبی-فین|qid=Q3246771|lt=Ponsonby-Fane, Richard}}. (1962). ''Studies in Shinto and Shrines.'' Kyoto: Ponsonby Memorial Society. [http://www.worldcat.org/wcpa/oclc/3994492 OCLC 399449]
 * {{cite book|author1=Kenzo Tange|author2=Noboru Kawazoe|title=Ise: Prototype of Japanese Architecture|url=https://books.google.com/books?id=pIH_PQAACAAJ|year=1965|publisher=MIT Press|isbn=978-0-262-20006-6}}
 
 {{Izanami-firebirths}}
@@ -586,7 +585,6 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 {{Commons category|Geku}}
 
 == AUTOGENERATED CONTENT FROM WIKIDATA ==
-[[Category:Pages with duplicated content]]
 
 '''Toyōke Daijingū (Q11633343)''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
@@ -594,10 +592,10 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Toyōke Daijingū|lt=Toyōke Daijingū|en|Toyouke Daijingu|ja|豊受大神宮|commons|Category:Geku|zh|豐受大神宮|qid=Q11633343}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || {{ill|Shikinai Taisha|qid=Q134917288}} || part of {{ill|Ise Grand Shrine|qid=Q687168}} || — || {{coord|34.487219|136.703328|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181113 DB]
+| {{ill|Watarai District|en|Watarai District|ja|度会郡|ceb|Watarai-gun|ckb|گەڕەکی واتاری|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|lt=Watarai district|qid=Q1131032}} || {{ill|Toyōke Daijingū|ja|豊受大神宮|tok|tomo sewi suli Keku|zh|豐受大神宮|qid=Q11633343|lt=Toyōke Daijingū}} || {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|ja|新嘗祭|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|simple|Tsukinami-no-Matsuri|ja|月次祭|qid=Q11516161}}.}}) || {{ill|Shikinai Taisha|qid=Q134917288}} || part of {{ill|Ise Grand Shrine|qid=Q687168}} || — || {{coord|34.487219|136.703328|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181113 DB]
 |}
 
-{{wikidata link|Q11633343|co|commons:Category:Geku|en|Toyouke Daijingu|ja|豊受大神宮|zh|豐受大神宮|zh|%E8%B1%90%E5%8F%97%E5%A4%A7%E7%A5%9E%E5%AE%AE|tok|tomo sewi suli Keku|check_date=2026-05-11}}==Notes==
+{{wikidata link|Q11633343|co|commons:Category:Geku|en|Toyouke Daijingu|ja|豊受大神宮|zh|豐受大神宮|zh|%E8%B1%90%E5%8F%97%E5%A4%A7%E7%A5%9E%E5%AE%AE|tok|tomo sewi suli Keku|check_date=2026-05-26}}==Notes==
 <references group="lower-alpha"/>
 [[Category:125 Shrines of Ise]]
 [[Category:Buildings and structures in Japan completed in 2013]]
@@ -626,3 +624,4 @@ Gekū holds daily rituals, including the Morning and Evening Grand Offerings, wh
 [[Category:Pages with 250+ untranslated japanese characters]]
 [[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Pages with 500+ untranslated japanese characters]]
+[[Category:Pages with duplicated content]]
