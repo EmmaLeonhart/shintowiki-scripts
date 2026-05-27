@@ -6,6 +6,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Reorder `wiki-cleanup.yml`: Translation + Duplicated Content syncs run BEFORE all wiki-write chunks
+**Files:** `.github/workflows/wiki-cleanup.yml`, `queue.md`
+
+Strict-literal follow-up to the 2026-05-26 `cleanup-loop.yml`
+reorder that moved `git-synced-sync` + `fandom-sync` before the
+`cleanup` job. The same logic — "the wiki state at the start of any
+write chunk should already match the repo's view" — applies inside
+`wiki-cleanup.yml` for the two cloud-queue dirs. Moved
+`sync_need_translation` + `sync_duplicated_content` (and their
+sibling commit + commit-state steps) from after Cleanup Loop up to
+right after `Bookkeeping: mark active`. The two chunk-divider
+comments now carry "(moved up 2026-05-27)" and reference this
+DEVLOG entry. No other steps reordered; everything between
+remains as-is.
+
+### Rename `miraheze_unique/Template%3AInfobox noble.wiki` → `Template%3AInfobox Noble.wiki`
+**Files:** `miraheze_unique/Template%3AInfobox noble.wiki` (renamed)
+
+Emma moved the page on shinto.miraheze.org from `Template:Infobox
+noble` (lowercase, the only surviving variant on miraheze per
+today's `delete_lowercase_template_collisions.py` dry-run) to the
+canonical `Template:Infobox Noble`. Renamed the local file to
+match so the next `sync_miraheze_unique_pages.py` run doesn't see
+both as orphans. Unblocks the eventual collision-delete script on
+miraheze (the canonical-twin check on `Template:Infobox noble`
+will now pass).
+
 ### New script: `delete_lowercase_template_collisions.py` (deletes case-collision Template:Infobox twins on both wikis)
 **Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`, `queue.md`
 

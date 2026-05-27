@@ -90,6 +90,64 @@ jobs:
             --run-tag "${RUN_TAG}" --status active --stage "Bookkeeping: START"
 
       # ════════════════════════════════════════
+      #  Translation Sync (moved up 2026-05-27)
+      # ════════════════════════════════════════
+      # Per queue.md "Bot ping-pong / never-settling pages" — Translation
+      # Sync and Duplicated Content Sync are sequenced BEFORE any
+      # wiki-write step so the wiki state at the start of every chunk
+      # below already reflects the repo's current view of these two
+      # directories. Mirrors the 2026-05-26 reorder in cleanup-loop.yml
+      # for git-synced-sync + fandom-sync. See DEVLOG 2026-05-27.
+
+      - name: "Translation: sync_need_translation"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Translation Sync: sync_need_translation" \
+            python3 shinto_miraheze/sync_need_translation.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit: need_translation/ changes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          git add -A need_translation/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No need_translation/ changes to commit."
+          else
+            git commit -m "chore(translation): sync Need translation pages [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "need_translation/ changes pushed." || echo "WARNING: failed to push need_translation/ changes."
+          fi
+
+      - name: "Commit state: Translation Sync"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Translation Sync"
+
+      # ════════════════════════════════════════
+      #  Duplicated Content Sync (moved up 2026-05-27)
+      # ════════════════════════════════════════
+
+      - name: "Duplicated content: sync_duplicated_content"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Duplicated Content Sync: sync_duplicated_content" \
+            python3 shinto_miraheze/sync_duplicated_content.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Commit: duplicated_content/ changes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          git add -A duplicated_content/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No duplicated_content/ changes to commit."
+          else
+            git commit -m "chore(duplicated-content): sync Pages with duplicated content [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "duplicated_content/ changes pushed." || echo "WARNING: failed to push duplicated_content/ changes."
+          fi
+
+      - name: "Commit state: Duplicated Content Sync"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: shinto_miraheze/commit_state.sh "Duplicated Content Sync"
+
+      # ════════════════════════════════════════
       #  Chunk 1: Import & Categorization
       # ════════════════════════════════════════
 
@@ -390,58 +448,6 @@ jobs:
       - name: "Commit state: Cleanup Loop"
         if: always() && steps.*.outcome != 'cancelled'
         run: shinto_miraheze/commit_state.sh "Cleanup Loop"
-
-      # ════════════════════════════════════════
-      #  Translation Sync
-      # ════════════════════════════════════════
-
-      - name: "Translation: sync_need_translation"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Translation Sync: sync_need_translation" \
-            python3 shinto_miraheze/sync_need_translation.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-      - name: "Commit: need_translation/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          git add -A need_translation/ 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No need_translation/ changes to commit."
-          else
-            git commit -m "chore(translation): sync Need translation pages [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
-            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "need_translation/ changes pushed." || echo "WARNING: failed to push need_translation/ changes."
-          fi
-
-      - name: "Commit state: Translation Sync"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: shinto_miraheze/commit_state.sh "Translation Sync"
-
-      # ════════════════════════════════════════
-      #  Duplicated Content Sync
-      # ════════════════════════════════════════
-
-      - name: "Duplicated content: sync_duplicated_content"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Duplicated Content Sync: sync_duplicated_content" \
-            python3 shinto_miraheze/sync_duplicated_content.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-      - name: "Commit: duplicated_content/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          git add -A duplicated_content/ 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No duplicated_content/ changes to commit."
-          else
-            git commit -m "chore(duplicated-content): sync Pages with duplicated content [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
-            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "duplicated_content/ changes pushed." || echo "WARNING: failed to push duplicated_content/ changes."
-          fi
-
-      - name: "Commit state: Duplicated Content Sync"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: shinto_miraheze/commit_state.sh "Duplicated Content Sync"
 
       # ════════════════════════════════════════
       #  Git-Synced Pages Sync — MOVED
