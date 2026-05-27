@@ -1,0 +1,101 @@
+<includeonly>{{Main other|{{Infobox film/short description|released={{{released|}}}|country={{#invoke:String2 |split |txt={{#invoke:unstrip|killMarkers|{{#invoke:delink|delink|{{{country|}}}}}}} |sep=[<{;] |plain=false}}|director={{{director|}}}}}}}{{Infobox
+| italic title = {{{italic_title|<noinclude>no
+[[Category:Templates missing wikidata]]
+[[Category:Templates transcluded in mainspace]]
+</noinclude>}}} 
+| bodyclass    = vevent
+
+| aboveclass   = summary
+| abovestyle   = font-size: 125%; font-style: italic;
+| above        = {{If empty |{{{name|}}} |{{PAGENAMEBASE}} }}
+
+| image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|sizedefault=frameless|upright={{{image_upright|1}}}|alt={{{alt|}}}|title={{{alt|}}}}}
+| caption      = {{{caption|}}}
+
+| labelstyle   = white-space: nowrap; padding-right: 0.65em;
+
+| class1       = description
+|  data1       = {{{native_name|}}}
+
+| label2       = Directed by
+|  data2       = {{{director|}}}
+
+| label3       = Written by
+|  data3       = {{{writer|}}}
+
+| label4       = Screenplay by
+|  data4       = {{{screenplay|}}}
+
+| label5       = Story by
+|  data5       = {{{story|}}}
+
+| label6       = Based on
+|  data6       = {{{based_on|}}}
+
+| label7       = Produced by
+|  data7       = {{{producer|}}}
+
+| label8       = Starring
+|  data8       = {{{starring|}}}
+
+| label9       = Narrated by
+|  data9       = {{{narrator|}}}
+
+| label10      = Cinematography
+|  data10      = {{{cinematography|}}}
+
+| label11      = Edited by
+|  data11      = {{{editing|}}}
+
+| label12      = Music by
+|  data12      = {{{music|}}}
+
+| label13      = Animation by
+| data13       = {{{animator|}}}
+
+| label14      = Layouts by
+| data14       = {{{layout_artist|}}}
+
+| label15      = Backgrounds by
+| data15       = {{{background_artist|}}}
+
+| label16      = Color process
+| data16       = {{{color_process|}}}
+
+| label17      = {{Longitem |Production<br/>{{Pluralize from text|{{If empty |{{{production_companies|}}} |{{{studio|}}} }} || company | companies }}}}
+|  data17      = {{#if: {{{production_companies|{{{studio|}}} }}} | <div style="vertical-align: middle;">{{{production_companies|{{{studio|}}}}}}</div> }}
+
+| label18      = Distributed by
+|  data18      = {{{distributor|}}}
+
+| label19      = {{Longitem|style=white-space: normal;|Release date{{Pluralize from text|{{{released|}}}|plural=s}}}}
+|  data19      = {{{released|}}}
+
+| label20      = {{Longitem|style=white-space: normal;|Running time}}
+|  data20      = {{{runtime|}}}
+
+| label21      = {{Pluralize from text|{{{country|}}}|| Country | Countries }}
+|  data21      = {{{country|}}}
+
+| label22      = {{Pluralize from text|{{{language|}}}|| Language | Languages }}
+|  data22      = {{{language|}}}
+
+| label23      = Budget
+|  data23      = {{{budget|}}}
+
+| label24      = Box office
+|  data24      = {{{gross|}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{Main other|}}|preview=Page using [[:Template:Infobox film]] with unknown parameter "_VALUE_"|showblankpositional=1| alt | animator | background_artist | based_on | budget | caption | cinematography | color_process | country | director | distributor | editing | gross | italic_title | image | image_upright | language | layout_artist | music | name | narrator | native_name | producer | production_companies | released | runtime | screenplay | starring | story | studio | writer }}{{Main other|{{#if: {{{released|}}} | {{#ifeq: {{Str find|{{{released|}}} | film-date}} | -1 |  }} |  }}{{#ifexpr: {{Str count|{{{released|}}}|film-date}} > 1 |  }}{{#ifeq: {{Str find|{{{country|}}}|flagicon}} | -1 ||  }}}}</includeonly><noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox film with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Pages using infobox film with nonstandard dates]]
+[[Category:Pages using infobox film with missing date]]
+[[Category:Pages using infobox film with multiple film date templates]]
+[[Category:Pages using infobox film with flag icon]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+</noinclude>

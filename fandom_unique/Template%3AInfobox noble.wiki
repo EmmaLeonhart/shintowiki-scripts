@@ -1,0 +1,138 @@
+{{infobox
+| child = {{{child|}}}
+| bodyclass  = vcard
+| bodystyle  = width: 22.5em;
+| datastyle  = text-align: left;
+| abovestyle = {{if empty|{{{abovestyle|}}}|background: #{{#switch: {{{1}}}
+| relative   = E8E4EF
+| none       = E8E4EF
+| 99BADD
+}}; color: #{{#switch: {{{1}}}
+| relative = 553377
+| none     = 553377
+| highness = 005566
+| lesser   = 005566
+| majesty  = 000066
+| monarch  = 000066
+| prince   = 000000
+| princess = 000000
+| royal    = 000000
+| 000000
+}}; 
+}}
+
+| aboveclass = fn
+| above      = {{Br separated entries
+ | 1 = {{#if:{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}|<div class="honorific-prefix" style="font-size: 77%; font-weight: normal; display:inline;">{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|{{{pre-nominals|}}}}}}}}}}}}</div>}}
+ | 2 = <div class="fn" style="display:inline">{{#if:{{{name|}}}|{{{name}}}|{{PAGENAMEBASE}}}}</div>
+ | 3 = {{#if:{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}|<div class="honorific-suffix" style="font-size: 77%; font-weight: normal; display:inline;">{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|{{{post-nominals|}}}}}}}}}}}}</div>}}
+ }}
+
+| subheader = {{{title|}}}
+
+| image   = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|upright=1|alt={{{alt|}}}}}
+| caption = {{{caption|}}}
+
+| headerstyle = background: #EEEEEE;
+| header1     = {{#if: {{{succession|}}} | {{{succession}}} {{#switch:{{{more}}}|no=|{{#switch:{{{1}}}|monarch={{nobold|''[[Style of the British sovereign#List of changes to the royal style|(more...)]]''}}|majesty={{nobold|''[[Style of the British sovereign#List of changes to the royal style|(more...)]]''}}}} }} }} 
+
+| label3 = [[Coat of arms]]
+| data3  = {{{CoA|}}}
+| label4 = {{if empty|{{{reign-type|}}}|{{#switch:{{{2}}}|consort=Consort|Reign}}}}
+| data4  = {{{reign|}}}
+| label5     = Tenure
+| data5      = {{{tenure|}}}
+| label6 = {{if empty|{{{pre-type|}}}|Predecessor}}
+| data6  = {{{previous|{{{predecessor|{{{preceded by|{{{preceded_by|}}}}}}}}}}}}
+| label7 = {{if empty|{{{suc-type|}}}|Successor}}
+| data7  = {{{successor|{{{succeeded by|{{{succeeded_by|}}}}}}}}}
+
+| header10 = {{#if: {{{succession|}}} | <span style="height: 4px">&#32;</span>}}
+
+| label11 = Full name
+| data11  = {{#if: {{{full name|}}} |<div class="nickname">{{{full name}}}</div>}}
+| label12 = Native name
+| data12  = {{#if:{{{native_name|}}}|<span class="nickname" {{#if:{{{native_name_lang|}}}|lang="{{{native_name_lang}}}"}}>{{{native_name}}}</span>}}
+| label13 = Titles and styles
+| data13  = {{#if:{{{styles|}}}|{{{styles}}}|{{{titles|}}}}}
+| label14     = Other titles
+| data14      = {{{other_titles|}}}
+| label15     = Other&nbsp;names
+| class15     = nickname
+| data15      = {{{other_names|}}}
+| label16    = Known&nbsp;for
+| data16     = {{{known|{{{known_for|}}}}}}
+| label17    = Years active
+| data17     = {{{years_active|}}}
+| label18 = Born
+| data18  = {{Br separated entries|1={{#if:{{{birth_name|{{{birthname|}}}}}}|<span class="nickname">{{{birth_name|{{{birthname|}}}}}}</span>}}|2={{{birth_date|}}}|3={{#if:{{{birth_place|}}}|<span class="birthplace">{{{birth_place|}}}</span>}}}}
+| label19 = Baptised
+| data19  = {{br separated entries| {{if empty|{{{christening_date|}}}|{{{date of christening|}}}}} | {{if empty|{{{christening_place|}}}|{{{place of christening|}}}}} }}
+| label20 = Died
+| data20  = {{br separated entries|{{{death_date|}}}|{{{death_place|}}}}}
+| label23     = Cause&nbsp;of death
+| data23      = {{{death_cause|}}}
+| label24     = Body discovered
+| data24      = {{{body_discovered|}}}
+| label27 = Buried
+| data27  = {{br separated entries| {{if empty|{{{burial_date|}}}|{{{date of burial|}}}}} | {{#if:{{{burial_place|}}}{{{place of burial|}}}{{{resting_place|}}}| <span class="label">{{if empty|{{{burial_place|}}}|{{{place of burial|}}}|{{{resting_place|}}}}}</span> }} | {{{resting_place_coordinates|}}} }}
+| label32    = Nationality
+| data32     = {{{nationality|}}}
+| label33    = Residence
+| class33    = label
+| data33     = {{{residence|}}}
+| label34    = Locality
+| data34     = {{{locality|}}}
+| label35    = Net&nbsp;worth
+| data35     = {{{networth|}}}
+| label36    = Wars and battles
+| data36     = {{{wars_and_battles|}}}
+| label37    = Offices
+| data37     = {{{offices|}}}
+| label38 = [[{{#if:{{{house-type|}}}|{{{house-type}}}|Nobility}}|{{#if:{{{house-type|}}}|Family|Noble family}}]]
+| data38  = {{{noble family|}}}
+| label39 = {{if empty|{{{spouse-type|}}}|{{#switch:{{{2}}}|consort=Consort to|{{#switch:{{{1}}}|monarch=Consort|majesty=Consort|Spouse(s)}}}}}}
+| data39  = {{{spouse|}}}
+
+| label40  = {{#if:{{{issue-type|}}}|{{{issue-type}}}|Issue}}{{#if:{{{issue-link|}}}|<br><span style="font-weight:normal">''[[{{{issue-link}}}|{{#if:{{{issue-pipe|}}}|{{{issue-pipe}}}|Detail}}]]''</span>}}
+| data40  = {{{issue|}}}
+
+| label50    = {{{heir-type|Heir}}}
+| data50     = {{{heir|}}}
+
+| label53    = Parents
+| data53     = {{{parents|}}}
+
+| label55 = Father
+| data55  = {{{father|}}}
+
+| label56 = Mother
+| data56  = {{{mother|}}}
+
+| label57 = {{#if:{{{signature|}}}|Signature}}
+| data57  = {{#ifexpr:{{str find|{{{signature|}}}|[File}}>0|{{{signature}}}|{{#invoke:InfoboxImage|InfoboxImage|image={{{signature|}}}|size=128px}}}}
+
+| label59 = Occupation
+| data59  = {{{occupation|}}}
+
+| label60 = Memorials
+| data60  = {{{memorials|}}}
+
+| label61 = Website
+| data61  = {{{website|{{{url|}}}}}}
+
+| header67   = {{#if:{{{footnotes|}}}|Notes}}
+| data68     = {{{footnotes|}}}
+
+| data72  = {{{module|}}}
+| data73  = {{{misc|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox noble]] with unknown parameter "_VALUE_"|ignoreblank=y| 1 | 2 | abovestyle | alt | birth_date | birth_name | birth_place | birthname | body_discovered | burial_date | burial_place | caption | child | christening_date | christening_place | CoA | date of burial | date of christening | death_cause | death_date | death_place | father | footnotes | full name | heir | heir-type | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | honorific-prefix | honorific-suffix | house-type | image | image_size | issue | issue-link | issue-pipe | issue-type | known | known_for | locality | memorials | misc | module | more | mother | name | nationality | native_name | native_name_lang | networth | noble family | occupation | offices | other_names | other_titles | parents | place of burial | place of christening | post-nominals | pre-nominals | pre-type | preceded by | preceded_by | predecessor | previous | reign | reign-type | residence | resting_place | resting_place_coordinates | signature | spouse | spouse-type | styles | suc-type | succeeded by | succeeded_by | succession | successor | tenure | title | titles | url | wars_and_battles | website | years_active }}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox noble with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

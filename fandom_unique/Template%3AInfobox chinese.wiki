@@ -1,0 +1,16 @@
+<includeonly>{{#invoke:infobox|infoboxTemplate
+|above={{{title|{{PAGENAMEBASE}}}}}
+|bodyclass={{#ifeq:{{{collapse|}}}|yes|mw-collapsible mw-collapsed}}
+|abovestyle=color: var(--color-base,#202122);background-color: var(--background-color-interactive-subtle,{{{headercolor|#b0c4de}}});
+|rowstyle1=display:none;
+||child={{{child|}}}
+|data1={{#invoke:Infobox multi-lingual name|ibox_mln}}
+}}</includeonly><noinclude>
+[[Category:Templates transcluded in mainspace]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{documentation}}
+[[Category:Templates missing wikidata]]
+</noinclude>
