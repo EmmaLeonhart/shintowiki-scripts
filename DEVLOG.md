@@ -6,6 +6,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Create `[[Open questions]]` page (wiki-side bot↔Emma interface), link from Main Page
+**Files:** `git_synced/Open questions.wiki` (new), `git_synced/Main Page.wiki`, `queue.md`
+
+Per Emma's manually-added queue item: create a wiki-side page
+where bot agents post blockers / open design questions and Emma
+answers them on the wiki. Agents read the wiki version each
+session and act on the answers.
+
+Seeded `git_synced/Open questions.wiki` with the current set of
+autonomously-blocked queue + todo items grouped under "Shintowiki
+bot pipeline (`shintowiki-scripts` queue)" and "Longer-horizon
+work (`todo.md`)" sections, plus an "Answered (waiting on bot
+action)" placeholder section, a free-form "Notes" section, and
+a "Sync-policy exception note" at the bottom explaining how
+agents should treat this specific page differently from the
+default repo-wins `git_synced/` policy. Tagged
+`[[Category:Git synced pages]]` so the next
+`sync_git_synced_pages.py` run creates it on shintowiki
+(seeding-into-category path, same pattern as other new entries
+in `git_synced/`).
+
+Edited `git_synced/Main Page.wiki` to add a one-line link to
+the new page in the Tasks section. Picked mainspace (rather
+than `Project:` ns) because the existing git_synced sync only
+covers ns 0/10/14 — Main Page itself is also meta-in-mainspace
+on this wiki, so the choice matches local convention.
+
+The "this page is different" instruction from Emma is captured
+as the page's "Sync-policy exception note" — until the
+revision-aware conflict-resolution refactor lands, agents
+should treat the wiki copy of this one page as authoritative
+even though `git_synced/` is repo-wins by default.
+
 ### Strip `<!-- History offloaded: ... -->` banner from 259 sync-dir files (anti-churn cleanup)
 **Files:** 259 files across `miraheze_unique/`, `fandom_unique/`, `git_synced/`; `queue.md`
 

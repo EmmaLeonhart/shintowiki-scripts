@@ -6,7 +6,9 @@ We have [https://shinto.miraheze.org/wiki/Special:PrefixIndex?prefix=&namespace=
 
 == Tasks ==
 
-See [[User:EmmaBot]] for current tasks being done cleaning up this wiki
+See [[User:EmmaBot]] for current tasks being done cleaning up this wiki.
+
+For decisions / blockers the bot agents need Emma to answer, see '''[[Open questions]]''' — that page is the wiki-side interface where agents post questions and Emma answers them. Edit it directly on the wiki; the answers propagate down to agents on their next session.
 
 === Current tasks ===
 
