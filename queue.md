@@ -44,6 +44,25 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   — no bot action.
 
 
+## Refactor configure-wikidata-link-grok-categories to be repo-side (2026-05-27)
+
+- [ ] **Rewrite `configure_wikidata_link_grok_categories.py` to edit the
+  REPO file, not the live wiki.** Current shape: workflow runs script,
+  script logs into miraheze via mwclient, script edits
+  `Template:Wikidata link` on the wiki directly. Problem: that template
+  is in `[[Category:Independently git synced pages]]` which is
+  repo-wins for conflicts, so any wiki-side edit gets clobbered by the
+  next `sync_miraheze_unique_pages.py` run. The repo file
+  `miraheze_unique/Template%3AWikidata link.wiki` is the source of
+  truth. Correct shape: script edits the repo file (replace-or-append
+  the GROK_BLOCK using the existing `_replace_or_append` helper),
+  commits with a `[skip ci]`-able message, pushes, and lets the next
+  sync cycle propagate to the wiki. Also: drop the workflow's wiki
+  authentication step entirely — no `WIKI_USERNAME` / `WIKI_PASSWORD`
+  needed. Today's emergency fix (commit `bd4b937d`) brought the repo
+  + wiki into sync manually; this refactor closes the window where the
+  shape itself was wrong.
+
 ## Bot ping-pong / never-settling pages (2026-05-26)
 
 - [ ] **Optional follow-up (strict-literal reading): move Translation Sync +
