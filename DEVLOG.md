@@ -6,6 +6,51 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Monthly delete_orphans script — first scheduled fire 2026-06-01
+**Files:** `shinto_miraheze/delete_orphans.py` (new), `.github/workflows/delete-orphans.yml` (new)
+
+Per Emma's spec (2026-05-27): a standalone script + monthly workflow that
+walks `Special:LonelyPages` on shinto.miraheze.org and deletes the
+subject-side orphans (`delete_orphaned_talk_pages.py` already handles
+the talk-side flavour). First scheduled fire 2026-06-01 05:07 UTC, then
+the 1st of every month at that time.
+
+Shape:
+
+* Script mirrors `delete_orphaned_talk_pages.py` with the
+  project-standard `--apply` (default dry-run) / `--max-deletes` /
+  `--run-tag` CLI plus `THROTTLE = 2.5` between delete API calls.
+* Safeguards baked in: hard-excludes `Main Page`; skips redirects;
+  skips pages tagged `[[Category:Do not delete]]` (opt-out); mainspace
+  (ns=0) only.
+* Workflow has both `workflow_dispatch` and `schedule: 7 5 1 * *`.
+  Manual dispatch defaults to dry-run via an `apply` choice input
+  (false/true) so a manual run never deletes by accident; schedule
+  fires always pass `--apply --max-deletes 50`.
+
+Casing-gotcha noted: the API parameter is `qppage=Lonelypages`
+(lowercase second word), NOT `LonelyPages` — verified via
+`action=paraminfo&modules=query%2Bquerypage`. Documented inline so
+future-me doesn't trip the same convention assumption. Per
+`feedback_qppage_casing.md` in memory.
+
+Smoke test: live anonymous dry-run against
+`https://shinto.miraheze.org/w/api.php?action=query&list=querypage&qppage=Lonelypages`
+returned 10 entries before the cap. ALL 10 were interwiki-prefixed
+titles like `Ast:Category:Wikipedia:Artículos con identificadores VIAF`,
+`Az:İtsukuşima məbədi`, `Bg:Шинтоистко светилище на Ицукушима` — i.e.
+foreign-language stubs accidentally created as local mainspace pages.
+These look like legitimate cleanup targets (no incoming links, no
+useful content, just import-artifact titles), but I am noting this
+finding so Emma can eyeball before the first scheduled fire on
+2026-06-01 and adjust the safeguard list / definition if she wants
+something tighter (e.g. exclude pages whose title starts with a
+2-3-letter interwiki prefix as an extra layer of "are you sure").
+
+Workflow's `workflow_dispatch` path with `apply=false` is the safe
+manual eyeball mechanism — runs the dry-run on CI, dumps the would-delete
+list to the workflow log, no edits.
+
 ### Refactor configure-wikidata-link-grok-categories to be repo-side
 **Files:** `shinto_miraheze/configure_wikidata_link_grok_categories.py`, `.github/workflows/configure-wikidata-link-grok-categories.yml`
 

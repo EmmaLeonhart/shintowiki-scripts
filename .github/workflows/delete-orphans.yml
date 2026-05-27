@@ -1,0 +1,97 @@
+name: Delete Orphans (Monthly)
+
+# Walks Special:LonelyPages on shinto.miraheze.org and deletes
+# mainspace pages with zero incoming wikilinks (subject-side orphans).
+# Talk-side orphans are handled by the separate
+# delete_orphaned_talk_pages.py invoked from wiki-cleanup.yml.
+#
+# Safeguards baked into the script: never deletes Main Page, skips
+# redirects, skips pages tagged [[Category:Do not delete]], mainspace
+# only.
+#
+# Schedule: `7 5 1 * *` — 05:07 UTC on the 1st of each month. First
+# fire: 2026-06-01 05:07 UTC (per Emma's spec 2026-05-27).
+#
+# Manual dispatch: trigger from the Actions tab. The `apply` input
+# defaults to `false` (dry-run) so a manual dispatch never deletes by
+# accident; set apply=true explicitly to actually delete. Schedule
+# runs always pass --apply.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Actually delete pages? Set true to apply; default dry-run."
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      max_deletes:
+        description: "Per-run cap on deletions"
+        required: false
+        default: "50"
+  schedule:
+    # 05:07 UTC on the 1st of every month — off-:00 per CLAUDE.md cron
+    # guidance.
+    - cron: "7 5 1 * *"
+
+permissions:
+  contents: read
+
+jobs:
+  delete-orphans:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient
+
+      - name: Validate required secrets (apply runs only)
+        if: github.event_name == 'schedule' || github.event.inputs.apply == 'true'
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required for apply runs."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      - name: Compute run tag + flags
+        id: compute
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|delete-orphans monthly]]" >> "$GITHUB_ENV"
+          # schedule fires always apply; workflow_dispatch honours the input
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "APPLY_FLAG=--apply" >> "$GITHUB_ENV"
+            echo "MAX_DELETES=50" >> "$GITHUB_ENV"
+          else
+            if [ "${{ github.event.inputs.apply }}" = "true" ]; then
+              echo "APPLY_FLAG=--apply" >> "$GITHUB_ENV"
+            else
+              echo "APPLY_FLAG=" >> "$GITHUB_ENV"
+            fi
+            echo "MAX_DELETES=${{ github.event.inputs.max_deletes }}" >> "$GITHUB_ENV"
+          fi
+
+      - name: "Delete orphans (Special:LonelyPages)"
+        run: |
+          python3 shinto_miraheze/delete_orphans.py \
+            ${APPLY_FLAG} \
+            --max-deletes "${MAX_DELETES}" \
+            --run-tag "${RUN_TAG}"

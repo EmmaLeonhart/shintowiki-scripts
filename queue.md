@@ -38,42 +38,6 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   — no bot action.
 
 
-## Monthly delete-orphaned-pages script (first run 2026-06-01) (2026-05-27)
-
-- [ ] **Build `delete_orphans.py` standalone script + monthly workflow,
-  first run 2026-06-01.** Emma 2026-05-27: "it wouldn't be an
-  orchestrator. It would just be a regular thing that would delete all
-  orphaned pages. We can have it so that it runs every month on the
-  first." We have `delete_orphaned_talk_pages.py` already (talk pages
-  with no subject) — this new script handles the OTHER orphan
-  definition: subject-side pages.
-  - **Script** `shinto_miraheze/delete_orphans.py`: walks
-    `Special:LonelyPages` via `list=querypage&qppage=LonelyPages`,
-    deletes each member via `site.api("delete", title=..., reason=...,
-    token=...)`. Standard CLI: `--apply`, `--max-deletes`, `--run-tag`.
-    Throttle 2.5 s between deletes. mwclient + `WIKI_USERNAME` /
-    `WIKI_PASSWORD` env vars. Pattern: mirror
-    `delete_orphaned_talk_pages.py`.
-  - **Workflow** `.github/workflows/delete-orphans.yml`:
-    `workflow_dispatch` + `schedule: - cron: "7 5 1 * *"` (07:05 UTC
-    on the 1st of every month — off-:00 minute per CLAUDE.md cron
-    guidance). First fire: 2026-06-01 05:07 UTC. Not wired into
-    cleanup-loop — its own monthly schedule.
-  - **Definition (needs Emma's call):** what counts as "orphaned"?
-    Default: members of `Special:LonelyPages` (zero incoming
-    wikilinks). Tighter alternatives if she wants more conservatism:
-    (a) LonelyPages AND not in any category; (b) LonelyPages AND
-    not transcluded; (c) LonelyPages AND older than N days.
-  - **Safeguards:** never delete Main Page; respect a
-    `[[Category:Do not delete]]` opt-out (skip any page tagged); skip
-    redirects (Special:LonelyPages already filters those but
-    double-check).
-  - **Per-run cap:** ~50 deletes default — bounds wall-clock and bot
-    edit volume on miraheze.
-  - **Verification path:** dry-run default; log every candidate with
-    its (skipped vs deleted) reason; on `--apply`, post a run summary
-    to a tracking wiki page so deletions are auditable.
-
 ## Bot ping-pong / never-settling pages (2026-05-26)
 
 - [ ] **Optional follow-up (strict-literal reading): move Translation Sync +
