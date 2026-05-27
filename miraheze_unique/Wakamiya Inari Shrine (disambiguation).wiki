@@ -1,15 +1,15 @@
 
 '''Wakamiya Inari Shrine''' (若宮稲荷神社) is the name of several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}}.
 
-* {{ill|Wakamiya Inari Shrine (Kazamaura)|ja|若宮稲荷神社 (風間浦村)|12=simple|13=User:Immanuelle/Wakamiya Inari Shrine (Kazamaura)|ja_comment=jawiki link invalid}} - Located in Kazamaura, Shimokita District, Aomori Prefecture, at Shimonofuro, Yunoue.
-* {{ill|Wakamiya Inari Shrine (Nakadomari)|ja|若宮稲荷神社 (中泊町)|12=simple|13=User:Immanuelle/Wakamiya Inari Shrine (Nakadomari)|ja_comment=jawiki link invalid}} - Located in Nakadomari, Kitatsugaru District, Aomori Prefecture, at Tamogi, Wakamiya.
-* {{ill|Wakamiya Inari Shrine (Izumo)|ja|若宮稲荷神社 (出雲市)|12=simple|13=User:Immanuelle/Wakamiya Inari Shrine (Izumo)|ja_comment=jawiki link invalid}} - Located in Izumo City, Shimane Prefecture, in Takamatsu Town.
-* {{ill|Wakamiya Inari Shrine|ja|若宮稲荷神社 (長崎市)|12=simple|13=User:Immanuelle/Wakamiya Inari Shrine (Nagasaki)|comment=changed title based on wikidata|qid=Q116450100}} - Located in Nagasaki City, Nagasaki Prefecture, in Irabayashi. Also known as Irabayashi Inari Shrine, it is renowned for the {{ill|Takengei|en|Takengei|qid=Q11598643|lt=Takengei}} performance.
-* {{ill|Wakamiya Inari Shrine|en|Wakamiya Inari Shrine|qid=Q7960795|lt=Wakamiya Inari Shrine}} - Located in Waipahu, Hawaii, United States.
+* {{ill|Wakamiya Inari Shrine (Kazamaura)|ja|若宮稲荷神社 (風間浦村)}} - Located in Kazamaura, Shimokita District, Aomori Prefecture, at Shimonofuro, Yunoue.
+* {{ill|Wakamiya Inari Shrine (Nakadomari)|ja|若宮稲荷神社 (中泊町)}} - Located in Nakadomari, Kitatsugaru District, Aomori Prefecture, at Tamogi, Wakamiya.
+* {{ill|Wakamiya Inari Shrine (Izumo)|ja|若宮稲荷神社 (出雲市)}} - Located in Izumo City, Shimane Prefecture, in Takamatsu Town.
+* {{ill|Wakamiya Inari Shrine|ja|若宮稲荷神社 (長崎市)|qid=Q116450100}} - Located in Nagasaki City, Nagasaki Prefecture, in Irabayashi. Also known as Irabayashi Inari Shrine, it is renowned for the {{ill|Takengei|fr|Takengei|ja|竹ン芸|qid=Q11598643|lt=Takengei}} performance.
+* {{ill|Wakamiya Inari Shrine|ja|若宮稲荷神社 (ハワイ)|qid=Q7960795|lt=Wakamiya Inari Shrine}} - Located in Waipahu, Hawaii, United States.
 == See Also ==
-* {{ill|Inari Shrine (disambiguation)|ja|稲荷神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Inari Shrine (disambiguation)|ja_comment=jawiki redirects to 稲荷神社}}
-* {{ill|Wakamiya Sha (disambiguation)|ja|若宮社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Wakamiya-sha|ja_comment=jawiki redirects to 若宮社|comment=changed title based on wikidata|qid=Q11616278}}
-* {{ill|Wakamiya Shrine|ja|若宮神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Wakamiya Shrine|ja_comment=jawiki redirects to 若宮神社}}
+* {{ill|Inari Shrine (disambiguation)|ja|稲荷神社 (曖昧さ回避)}}
+* {{ill|Wakamiya Sha (disambiguation)|ja|若宮社|qid=Q11616278}}
+* {{ill|Wakamiya Shrine|ja|若宮神社 (曖昧さ回避)}}
 
 {{disambiguation}}  
 
@@ -17,12 +17,12 @@
 
 == Shrines with this name ==
 
-* {{ill|Wakamiya Inari Shrine (Q116450100)|lt=Wakamiya Inari Shrine|qid=Q116450100}} — Nagasaki
-* {{ill|Wakamiya Inari Shrine (Q7960795)|lt=Wakamiya Inari Shrine|qid=Q7960795}} — Waipahu
+* {{ill|Wakamiya Inari Shrine (Q116450100)|ja|若宮稲荷神社 (長崎市)|qid=Q116450100|lt=Wakamiya Inari Shrine}} — Nagasaki
+* {{ill|Wakamiya Inari Shrine (Q7960795)|ja|若宮稲荷神社 (ハワイ)|qid=Q7960795|lt=Wakamiya Inari Shrine}} — Waipahu
 
 {{translated page|ja|若宮稲荷神社|version=101856841|comment=Imported full ja history}}
 
-{{wikidata link|Q55525359|ja|若宮稲荷神社|check_date=2026-05-12}}
+{{wikidata link|Q55525359|ja|若宮稲荷神社|grok=none|check_date=2026-05-27}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
