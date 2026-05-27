@@ -16,12 +16,12 @@
     "sha": "7faedada2436a2b10542b888da2bb1f76823825e"
   },
   "Amasashi-hiko-no-Mikoto Shrine": {
-    "revid": 3760257,
-    "sha": "6c69922bc6c2ce6795df79726c9c420396a77ddc"
+    "revid": 3766154,
+    "sha": "318201a0e81713b27dd26cf170180746f1a814b8"
   },
   "Amatakekanakusano Shrine": {
-    "revid": 3760252,
-    "sha": "a37406a93f58b363013ff249a1c033a39af6bb90"
+    "revid": 3766158,
+    "sha": "8c0923732861b42fb4900b647b41578b14895a46"
   },
   "Amatsu Shrine (Itoigawa)": {
     "revid": 3760254,
@@ -48,8 +48,8 @@
     "sha": "0ed24b94e5efaf758e8bb5b5200b2baaf7e8f19e"
   },
   "Awayama-no-Ueno Shrine": {
-    "revid": 3742743,
-    "sha": "a430ed6aa76d560e31d20466c39eec0d686634e4"
+    "revid": 3766196,
+    "sha": "0b7765577fb3efaafb0cae148ab335326903f49e"
   },
   "Dai Nippon Koku Ichinomiya Ki": {
     "revid": 3741392,
@@ -92,16 +92,16 @@
     "sha": "4e7979f1787fbd360ad1989f70a929215ce7bc2f"
   },
   "Hakusan Shrine (Nuttari-higashi, Niigata)": {
-    "revid": 3740563,
-    "sha": "b5760632cb152d29fecf10d2294a4404e022a130"
+    "revid": 3766227,
+    "sha": "7d5d72c77394ac48b4c8a4c25249db54969e52cc"
   },
   "Haniwa Warrior in Keiko Armor": {
     "revid": 3760494,
     "sha": "2907133dc42e1cc7234ab004b119bf278f2322cc"
   },
   "Hayabusa Shrine (Kyoto)": {
-    "revid": 3745731,
-    "sha": "fcd5a6d184999ced88e59f06e919c8c7531758e4"
+    "revid": 3766235,
+    "sha": "9353ed703e3f002f45e83320eb97e7192ad86dc0"
   },
   "Heart (Chinese constellation)": {
     "revid": 3760314,
@@ -112,16 +112,16 @@
     "sha": "43fa1e1c2dd35fbf1a16a1ff881f7074906b92bd"
   },
   "Hijiri Shrine (Izumi, Osaka)": {
-    "revid": 3745904,
-    "sha": "9db65c6cd3b6d73e07b7e5361e06a30c1515c39d"
+    "revid": 3766239,
+    "sha": "93a5534ad7c2cb48204acb73df352acf4e4038ae"
   },
   "Himukai-daijingū": {
     "revid": 3746017,
     "sha": "d44d2a8e6d241e7588936ca4a8f00e34af271032"
   },
   "Hinama-ji Hime-no-Mikoto Shrine": {
-    "revid": 3746031,
-    "sha": "882e93d1d272438ea5fbae965708c73eb673549e"
+    "revid": 3766245,
+    "sha": "4f370525d37c2f5a0af4d85895fbf2a44d9f7bdb"
   },
   "Hitsujisaki Shrine (Minato, Ishinomaki)": {
     "revid": 3746563,
@@ -176,20 +176,20 @@
     "sha": "081b557da7807872d3a71a32ac30f866a5b0ce10"
   },
   "Kameido Tenjin Shrine": {
-    "revid": 3749923,
-    "sha": "f68b4d514133ecd5990b2030d0dd2d3394dcb8ef"
+    "revid": 3767173,
+    "sha": "c091009478346f9af9771b4f8feca5a0784be066"
   },
   "Kameyama Hachimangū": {
-    "revid": 3749928,
-    "sha": "0bd312d478ee35a8e31b5cb48ee7af666e39ca46"
+    "revid": 3767172,
+    "sha": "f55b43fe431f67e45aa6d184ac2d9f26a6ba5a12"
   },
   "Kamo Shrine (Takatsuki)": {
     "revid": 3750289,
     "sha": "a0a1613c537f62792bf059f9d7178deeba19ba51"
   },
   "Kamo-no-Ōkami-no-mikokami-nushi-tama Shrine": {
-    "revid": 3750257,
-    "sha": "a18d1583ef020de4938178ca71d764c41c9e8a77"
+    "revid": 3766258,
+    "sha": "55378bca6bc525d5ed896e8cb49c92fe2874d843"
   },
   "Kanbara Shrine (Niigata)": {
     "revid": 3750450,
@@ -212,8 +212,8 @@
     "sha": "fa8e4355e57f1163c798d62d5c164b85a5de3de1"
   },
   "Kehi Shrine": {
-    "revid": 3751184,
-    "sha": "a283ca8c4a84ce40364cb878f411769e29a13872"
+    "revid": 3766292,
+    "sha": "ae7eb71046371929e0e320acecbbae0db8f55c8d"
   },
   "Kengoshizuka Kofun": {
     "revid": 3751202,
@@ -244,8 +244,8 @@
     "sha": "1ae0aab3a0720bc5ca1e5680ff515f2e11c0ea57"
   },
   "Kotoshironushi Shrine (Awa)": {
-    "revid": 3751954,
-    "sha": "4323ebcf63c05c18c1ba58963ba4655553c07381"
+    "revid": 3766304,
+    "sha": "1230983a8c1dae2d0947d62f79eb538a7afcb5b3"
   },
   "Kujiki": {
     "revid": 3752200,
@@ -300,8 +300,8 @@
     "sha": "f445eaa322a5c7207905be80748d098bc4d3c7a2"
   },
   "Mononobe Shrine (Ōda)": {
-    "revid": 3753100,
-    "sha": "adb824b6ef7495e6dbc71ab18a07618d69e96338"
+    "revid": 3766359,
+    "sha": "fdbfebeb71f93ba940af56547dc866c51317a73f"
   },
   "Munakata clan": {
     "revid": 3753300,
@@ -412,16 +412,16 @@
     "sha": "aaa600e25eb3f40aa05fe3abfe6871010956c088"
   },
   "Triangular-Rimmed Divine Beast Mirror": {
-    "revid": 3744415,
-    "sha": "03a60824a5a8436481dcaa583b9c00671ba81bf8"
+    "revid": 3766054,
+    "sha": "9ca725c8b2c1c56722b30848ea8ee2e946bebf31"
   },
   "Tsukubusuma Shrine": {
-    "revid": 3737024,
-    "sha": "fca8476e437c100dfb1627340c1c65cde33a8165"
+    "revid": 3766781,
+    "sha": "0ac9581566f29c9b4b7fa693e408809974460d59"
   },
   "Tsurusaki Shrine": {
-    "revid": 3738555,
-    "sha": "b596f26ee5d839dac199118a4f8220703e7dfb06"
+    "revid": 3766884,
+    "sha": "c31e81b2127f063047eb909d6ec91d300b21e073"
   },
   "Ukita no Kuni no Miyatsuko": {
     "revid": 3744528,
