@@ -7,27 +7,6 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
-## Duplicated-content pipeline — remaining follow-ups (2026-05-23)
-
-
-Oh fucking come on you made the thing on console and I have no clue how to edit it lmao - Emma
-
-Big fixes shipped this session (see DEVLOG 2026-05-23): consumer instruction
-rewritten (macro paragraph-merge, NOT param dedup), sync conflict policy set to
-**wiki-wins** for duplicated_content + need_translation, queue builder now
-shuffles + only queues files that still carry the category, 134 dup pages
-re-pulled from the wiki, cursor reset. Still open:
-
-- [ ] **The cloud consumer still uses a cursor.** The claude.ai scheduled
-  routine walks `consume_remote_queue.state` through `remote_queue.json`. Emma
-  wants statefulness to be purely file-presence + category (no cursor): each run
-  should scan `duplicated_content/` for files still tagged
-  `[[Category:Pages with duplicated content]]` and pick at RANDOM. The routine's
-  PROMPT defines this — it can't be edited from the repo. Reword the routine
-  (via claude.ai schedules) to drop the cursor and pick category-tagged files at
-  random. (Repo-side mitigations already in place: `remote_queue.py` shuffles +
-  category-filters, cursor reset to 0.)
-
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
 
 - [ ] **Run `delete_lowercase_template_collisions.py --apply` once the

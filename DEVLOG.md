@@ -6,6 +6,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Verify + clear stale "cloud consumer cursor" queue item (routine already updated 2026-05-23)
+**Files:** `queue.md`
+
+`RemoteTrigger get trig_013F9aeKeL3hx8zo7weKj3Ed` returned the
+current routine prompt — it already says "There is NO cursor and
+NO state file ... DO NOT read or write consume_remote_queue.state
+— ignore it entirely" and "Random selection (not in-order) is the
+whole point". `updated_at: 2026-05-23T21:21:39`, same day as the
+queue item was filed; the rewrite landed but the queue item was
+never removed. Recent `git log --grep=remote-queue` confirms the
+routine is running in the new style (commits b0c9eeb7, a5d345ee,
+ce21e2f9, etc.). So this is RESOLVED, not pending — removing the
+item from queue.md. Emma's frustration comment on the item
+("you made the thing on console and I have no clue how to edit
+it lmao") is a fair UX complaint about the claude.ai console
+being the only way to edit routine prompts, but doesn't reflect
+an outstanding action — the prompt is already correct.
+
 ### Revision-aware conflict resolution shipped on remaining 4 sync scripts
 **Files:** `shinto_miraheze/sync_git_synced_pages.py`, `shinto_miraheze/sync_fandom_unique_pages.py`, `shinto_miraheze/sync_need_translation.py`, `shinto_miraheze/sync_duplicated_content.py`, `queue.md`
 
