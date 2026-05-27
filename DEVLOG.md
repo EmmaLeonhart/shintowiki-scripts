@@ -6,6 +6,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Apply sync "delete on orphan" fix to sync_duplicated_content + sync_need_translation
+**Files:** `shinto_miraheze/sync_duplicated_content.py`, `shinto_miraheze/sync_need_translation.py`, `queue.md`
+
+Same shape as the earlier 2026-05-27 fix on
+`sync_git_synced_pages.py`, applied identically to the two
+remaining sync scripts that had the unconditional "DELETE local
+(cat removed on wiki)" branch. Split Pass 2 by baseline: when
+`base_sha is None`, PUSH-CREATE the file to the wiki (new repo
+file that's never been on the wiki) instead of deleting; when
+`base_sha is not None`, preserve the existing delete behaviour
+(wiki really did drop the page from the category).
+
+These directories use wiki-wins static policy and are normally
+wiki-driven (new pages get the category on-wiki and pull down),
+so the bug fires less often here than for `git_synced/` — but
+the code shape is identical and the fix is too. Edit summaries
+match each directory's convention. Both scripts AST-parse.
+`sync_fandom_unique_pages.py` and `sync_miraheze_unique_pages.py`
+use a stricter "no category in either side" gate and don't need
+this fix.
+
 ### Archive 7 genuinely-dead / one-shot-completed scripts
 **Files:** `archive/README.md`, plus `git mv` of 7 scripts from `shinto_miraheze/` to `archive/`, plus minor docstring updates in `shinto_miraheze/orchestrators/ops/strip_html_comments.py` and `shinto_miraheze/sync_miraheze_unique_pages.py`
 

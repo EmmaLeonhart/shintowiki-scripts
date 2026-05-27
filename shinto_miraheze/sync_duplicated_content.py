@@ -377,9 +377,48 @@ def main():
             continue
 
         # Category still present in the repo, but the wiki no longer lists the
-        # page in the category — someone removed it on-wiki directly. Drop the
-        # local copy; wiki is the source of truth for category membership.
-        if base_sha is not None and local_sha != base_sha:
+        # page in the category. Two sub-cases by baseline:
+        #
+        # (a) base_sha is None → no prior sync baseline → file is newly added
+        #     to the repo and has never been on the wiki. PUSH-CREATE instead
+        #     of deleting (same fix as sync_git_synced_pages.py, 2026-05-27).
+        # (b) base_sha is not None → someone removed the category on-wiki
+        #     directly. Drop the local copy; wiki is source of truth for
+        #     category membership (preserved pre-fix behaviour).
+        if base_sha is None:
+            if edits_performed >= args.max_edits:
+                skipped += 1
+                continue
+            if not args.apply:
+                print(f"[DRY] PUSH (new file, no prior baseline): {title}")
+                pushed += 1
+                continue
+            try:
+                page = site.pages[title]
+                if page.exists:
+                    summary = (
+                        f"Sync from repo duplicated_content/ (re-add to category, "
+                        f"page exists but was not in [[Category:Pages with duplicated content]]) "
+                        f"{args.run_tag}"
+                    )
+                else:
+                    summary = (
+                        f"Sync from repo duplicated_content/ (create page from repo) "
+                        f"{args.run_tag}"
+                    )
+                result = page.save(local_text, summary=summary)
+                new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or 0
+                state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
+                pushed += 1
+                edits_performed += 1
+                print(f"PUSH  {title}  (new file, rev {new_revid})")
+                time.sleep(THROTTLE)
+            except Exception as e:
+                errors += 1
+                print(f"ERROR pushing new file {title}: {e}")
+            continue
+
+        if local_sha != base_sha:
             print(f"WARN: {title} has uncommitted local edits but wiki dropped the category — deleting anyway (recoverable from git)")
         if not args.apply:
             print(f"[DRY] DELETE local (cat removed on wiki): {title}")

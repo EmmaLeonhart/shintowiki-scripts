@@ -7,10 +7,6 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
-## sync_duplicated_content + sync_need_translation: same "delete new-repo files" bug (2026-05-27)
-
-- [ ] **Apply the sync_git_synced_pages fix to `sync_duplicated_content.py` and `sync_need_translation.py`.** Same shape as the bug just fixed in sync_git_synced_pages.py (DEVLOG 2026-05-27): the "DELETE local (cat removed on wiki)" branch fires regardless of whether the file has ever been on the wiki, so a freshly-committed new repo file gets deleted on the next sync. Patch: when `base_sha is None` (no prior sync baseline), PUSH-CREATE to the wiki instead of deleting. Note: these dirs use static wiki-wins policy and are usually wiki-driven (new files normally appear via wiki-side category-tagging, not via the repo), so the bug is less likely to fire in practice — but the code shape is identical and the fix should be too. `sync_fandom_unique_pages.py` and `sync_miraheze_unique_pages.py` use a different "no category in either side" gate that's already safe; no change needed there.
-
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
 
 - [ ] **Run `delete_lowercase_template_collisions.py --apply` once the
