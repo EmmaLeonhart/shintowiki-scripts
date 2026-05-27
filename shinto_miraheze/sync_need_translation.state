@@ -1,594 +1,742 @@
 {
   "20-Year Plan for One Million Families": {
     "revid": 3740052,
-    "sha": "fd61a6783db2a39d1c4f3c208c45f93facc6f7e5"
+    "sha": "fd61a6783db2a39d1c4f3c208c45f93facc6f7e5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "200 Famous Japanese Mountains": {
     "revid": 3760305,
-    "sha": "0e6f82518c10c170d9c77abe6256c9a1609185f1"
+    "sha": "0e6f82518c10c170d9c77abe6256c9a1609185f1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "2003 Shooting of Japanese Diplomats in Iraq": {
     "revid": 3740053,
-    "sha": "baa8394d184ce83ee4754a74e3bb8e8e0382eab6"
+    "sha": "baa8394d184ce83ee4754a74e3bb8e8e0382eab6",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Achi Shrine (Achi)": {
     "revid": 3760255,
-    "sha": "7faedada2436a2b10542b888da2bb1f76823825e"
+    "sha": "7faedada2436a2b10542b888da2bb1f76823825e",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Amasashi-hiko-no-Mikoto Shrine": {
     "revid": 3766154,
-    "sha": "318201a0e81713b27dd26cf170180746f1a814b8"
+    "sha": "318201a0e81713b27dd26cf170180746f1a814b8",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Amatakekanakusano Shrine": {
     "revid": 3766158,
-    "sha": "8c0923732861b42fb4900b647b41578b14895a46"
+    "sha": "8c0923732861b42fb4900b647b41578b14895a46",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Amatsu Shrine (Itoigawa)": {
     "revid": 3760254,
-    "sha": "4b043e7bb50098f95478ac86b2dfbc1576010715"
+    "sha": "4b043e7bb50098f95478ac86b2dfbc1576010715",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ame no Wakahiko": {
     "revid": 3740974,
-    "sha": "b30f8281fddaae7896be8552cbd5080f1a54dd67"
+    "sha": "b30f8281fddaae7896be8552cbd5080f1a54dd67",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ame-no-ohabari": {
     "revid": 3740968,
-    "sha": "429cb48701be30f81bebe0d49e0fb87a51892694"
+    "sha": "429cb48701be30f81bebe0d49e0fb87a51892694",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Asai Shrine (Takaoka)": {
     "revid": 3760307,
-    "sha": "16f0919a88d84b9b5ff3fb4c59b4812c0e0b7f37"
+    "sha": "16f0919a88d84b9b5ff3fb4c59b4812c0e0b7f37",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Association of Shinto Shrines": {
     "revid": 3741105,
-    "sha": "24952a5f042802d6b195792d56d01987fb27cd84"
+    "sha": "24952a5f042802d6b195792d56d01987fb27cd84",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Atago Shrine (Sendai)": {
     "revid": 3741126,
-    "sha": "0ed24b94e5efaf758e8bb5b5200b2baaf7e8f19e"
+    "sha": "0ed24b94e5efaf758e8bb5b5200b2baaf7e8f19e",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Awayama-no-Ueno Shrine": {
     "revid": 3766196,
-    "sha": "0b7765577fb3efaafb0cae148ab335326903f49e"
+    "sha": "0b7765577fb3efaafb0cae148ab335326903f49e",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Dai Nippon Koku Ichinomiya Ki": {
     "revid": 3741392,
-    "sha": "12ee5172a83165e6cb721ed6eda0750698b769c1"
+    "sha": "12ee5172a83165e6cb721ed6eda0750698b769c1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Danbara Kofun": {
     "revid": 3757396,
-    "sha": "a76f849ac71d3863dfff0c314b5bd8fb39780737"
+    "sha": "a76f849ac71d3863dfff0c314b5bd8fb39780737",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Enuma no Kuni no Miyatsuko": {
     "revid": 3739630,
-    "sha": "c5f007ac431aea3ae9aab0c9d9f750556f14f627"
+    "sha": "c5f007ac431aea3ae9aab0c9d9f750556f14f627",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Fukuyama Hachimangū": {
     "revid": 3739853,
-    "sha": "7ab34934ab36d4f844f4b5d8569cc1418bd78de6"
+    "sha": "7ab34934ab36d4f844f4b5d8569cc1418bd78de6",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Fuse Shrine (Nagano)": {
     "revid": 3739917,
-    "sha": "b3117d6f6adef2c0551585b0ae7471f22d4a5dee"
+    "sha": "b3117d6f6adef2c0551585b0ae7471f22d4a5dee",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Futako Shrine": {
     "revid": 3740197,
-    "sha": "d7111e696525539fd627caad446683ee22b1972d"
+    "sha": "d7111e696525539fd627caad446683ee22b1972d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Gary Luscombe": {
     "revid": 3740247,
-    "sha": "78a5d2ce29884833b552ed4e9f241fd91a24ec73"
+    "sha": "78a5d2ce29884833b552ed4e9f241fd91a24ec73",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Genkai Sea": {
     "revid": 3740256,
-    "sha": "5553bc0cfba24514a7e3d32f2e787443e31a5227"
+    "sha": "5553bc0cfba24514a7e3d32f2e787443e31a5227",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Gomyo Tenjin Shrine": {
     "revid": 3760310,
-    "sha": "b86256bfd7daa86312299a7f8225c66570273f22"
+    "sha": "b86256bfd7daa86312299a7f8225c66570273f22",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Goryō": {
-    "revid": 3760301,
-    "sha": "4e7979f1787fbd360ad1989f70a929215ce7bc2f"
+    "revid": 3769380,
+    "sha": "703abd047ab4398a2f8586a5fed9d4e5ca4f9561",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Hakusan Shrine (Nuttari-higashi, Niigata)": {
     "revid": 3766227,
-    "sha": "7d5d72c77394ac48b4c8a4c25249db54969e52cc"
+    "sha": "7d5d72c77394ac48b4c8a4c25249db54969e52cc",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Haniwa Warrior in Keiko Armor": {
     "revid": 3760494,
-    "sha": "2907133dc42e1cc7234ab004b119bf278f2322cc"
+    "sha": "2907133dc42e1cc7234ab004b119bf278f2322cc",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Hayabusa Shrine (Kyoto)": {
     "revid": 3766235,
-    "sha": "9353ed703e3f002f45e83320eb97e7192ad86dc0"
+    "sha": "9353ed703e3f002f45e83320eb97e7192ad86dc0",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Heijō Shrine": {
     "revid": 3760315,
-    "sha": "43fa1e1c2dd35fbf1a16a1ff881f7074906b92bd"
+    "sha": "43fa1e1c2dd35fbf1a16a1ff881f7074906b92bd",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Hijiri Shrine (Izumi, Osaka)": {
     "revid": 3766239,
-    "sha": "93a5534ad7c2cb48204acb73df352acf4e4038ae"
+    "sha": "93a5534ad7c2cb48204acb73df352acf4e4038ae",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Himukai-daijingū": {
     "revid": 3746017,
-    "sha": "d44d2a8e6d241e7588936ca4a8f00e34af271032"
+    "sha": "d44d2a8e6d241e7588936ca4a8f00e34af271032",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Hinama-ji Hime-no-Mikoto Shrine": {
     "revid": 3766245,
-    "sha": "4f370525d37c2f5a0af4d85895fbf2a44d9f7bdb"
+    "sha": "4f370525d37c2f5a0af4d85895fbf2a44d9f7bdb",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Hitsujisaki Shrine (Minato, Ishinomaki)": {
     "revid": 3746563,
-    "sha": "2549be78dab1181bb2bd598b0cab524ad0d7a3a9"
+    "sha": "2549be78dab1181bb2bd598b0cab524ad0d7a3a9",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Horaisan Kofun": {
     "revid": 3746698,
-    "sha": "871f50611e3fbba539ca76ed38d8ccd91dbb3d6f"
+    "sha": "871f50611e3fbba539ca76ed38d8ccd91dbb3d6f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Iino Hachimangū": {
     "revid": 3747265,
-    "sha": "242b5c89cdafb9b56cca14ac7a62b11b7de88666"
+    "sha": "242b5c89cdafb9b56cca14ac7a62b11b7de88666",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Iizuna Shrine (Mount Iizuna)": {
     "revid": 3747275,
-    "sha": "dde3da6e0746ad8a862e315f0650740600aaf5a7"
+    "sha": "dde3da6e0746ad8a862e315f0650740600aaf5a7",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ikasuri Shrine": {
     "revid": 3747312,
-    "sha": "8e183c87d6212c7e66ebefe5b88aa5e4b2b48a0d"
+    "sha": "8e183c87d6212c7e66ebefe5b88aa5e4b2b48a0d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Imamiya Ebisu Shrine": {
     "revid": 3747422,
-    "sha": "ddc5142bd56511cd16bf6fc5acde1610b0f6feb5"
+    "sha": "ddc5142bd56511cd16bf6fc5acde1610b0f6feb5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Imperial decrees": {
     "revid": 3747442,
-    "sha": "77fca579bfa4c78a2ffdba2e2b1edc47d5c1e5f2"
+    "sha": "77fca579bfa4c78a2ffdba2e2b1edc47d5c1e5f2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Inaba Shrine": {
     "revid": 3747451,
-    "sha": "3d711effcb833052266cdd4282b2be5b736837ec"
+    "sha": "3d711effcb833052266cdd4282b2be5b736837ec",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Inaba Shrine (Gifu)": {
     "revid": 3747452,
-    "sha": "54c5b70efde573548fe04108b564fd5dcf271e30"
+    "sha": "54c5b70efde573548fe04108b564fd5dcf271e30",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Jichinsai": {
     "revid": 3760317,
-    "sha": "1a33717a3122671f1e8a971c9cc2f9ed7304a34d"
+    "sha": "1a33717a3122671f1e8a971c9cc2f9ed7304a34d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Juniso Kumano Shrine": {
     "revid": 3749698,
-    "sha": "804fa3bee2e5bb81b9cf680fd6d9515ee3822d08"
+    "sha": "804fa3bee2e5bb81b9cf680fd6d9515ee3822d08",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kai clan": {
     "revid": 3749875,
-    "sha": "48adc15af8bf1858cd800677630bac4b808ed6e2"
+    "sha": "48adc15af8bf1858cd800677630bac4b808ed6e2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kai no Kuni no Miyatsuko": {
     "revid": 3749877,
-    "sha": "081b557da7807872d3a71a32ac30f866a5b0ce10"
+    "sha": "081b557da7807872d3a71a32ac30f866a5b0ce10",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kameido Tenjin Shrine": {
     "revid": 3767173,
-    "sha": "c091009478346f9af9771b4f8feca5a0784be066"
+    "sha": "c091009478346f9af9771b4f8feca5a0784be066",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kameyama Hachimangū": {
     "revid": 3767172,
-    "sha": "f55b43fe431f67e45aa6d184ac2d9f26a6ba5a12"
+    "sha": "f55b43fe431f67e45aa6d184ac2d9f26a6ba5a12",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kamo Shrine (Takatsuki)": {
     "revid": 3750289,
-    "sha": "a0a1613c537f62792bf059f9d7178deeba19ba51"
+    "sha": "a0a1613c537f62792bf059f9d7178deeba19ba51",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kamo-no-Ōkami-no-mikokami-nushi-tama Shrine": {
     "revid": 3766258,
-    "sha": "55378bca6bc525d5ed896e8cb49c92fe2874d843"
+    "sha": "55378bca6bc525d5ed896e8cb49c92fe2874d843",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kanbara Shrine (Niigata)": {
     "revid": 3750450,
-    "sha": "dd3d769dbcc0ab8ff7efa3793348801e3e7c0382"
+    "sha": "dd3d769dbcc0ab8ff7efa3793348801e3e7c0382",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kashii-gū": {
     "revid": 3750665,
-    "sha": "85dbec8143fdddfece1edbc940309b913c5c86d5"
+    "sha": "85dbec8143fdddfece1edbc940309b913c5c86d5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kashima Shrine (Kashiba)": {
     "revid": 3750683,
-    "sha": "b3ae8dd081b241bd3f03b816a04f077e79172259"
+    "sha": "b3ae8dd081b241bd3f03b816a04f077e79172259",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kawahara Shrine": {
     "revid": 3751104,
-    "sha": "82d6c3ca4f60ad0f8638bee2198ef873d31e0ee5"
+    "sha": "82d6c3ca4f60ad0f8638bee2198ef873d31e0ee5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kegare": {
     "revid": 3760319,
-    "sha": "fa8e4355e57f1163c798d62d5c164b85a5de3de1"
+    "sha": "fa8e4355e57f1163c798d62d5c164b85a5de3de1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kehi Shrine": {
     "revid": 3766292,
-    "sha": "ae7eb71046371929e0e320acecbbae0db8f55c8d"
+    "sha": "ae7eb71046371929e0e320acecbbae0db8f55c8d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kengoshizuka Kofun": {
     "revid": 3751202,
-    "sha": "af8b896cf3fd8ffaaeabd4213ff3fc349847ef58"
+    "sha": "af8b896cf3fd8ffaaeabd4213ff3fc349847ef58",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Keta-hongū": {
     "revid": 3751222,
-    "sha": "67aa0412285a911ba7bb750837fa99e02ed0ae16"
+    "sha": "67aa0412285a911ba7bb750837fa99e02ed0ae16",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kii no Kuni no Miyatsuko": {
     "revid": 3751277,
-    "sha": "94592e2e11762398a73bcca4fa63f46f77651c97"
+    "sha": "94592e2e11762398a73bcca4fa63f46f77651c97",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kikurihime": {
     "revid": 3760320,
-    "sha": "2bc9e959b1d2440e769f0cfd8b652d79289d8f9a"
+    "sha": "2bc9e959b1d2440e769f0cfd8b652d79289d8f9a",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kishiwada Danjiri Festival": {
     "revid": 3751378,
-    "sha": "b1896cbaeb8554379bf7f2f17d8c554dc271b351"
+    "sha": "b1896cbaeb8554379bf7f2f17d8c554dc271b351",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Konpira Gongen": {
     "revid": 3751857,
-    "sha": "c6d092de04704276cfb77a155c96b35d7d691603"
+    "sha": "c6d092de04704276cfb77a155c96b35d7d691603",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kotokuji Temple (Koka City)": {
     "revid": 3751948,
-    "sha": "1ae0aab3a0720bc5ca1e5680ff515f2e11c0ea57"
+    "sha": "1ae0aab3a0720bc5ca1e5680ff515f2e11c0ea57",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kotoshironushi Shrine (Awa)": {
     "revid": 3766304,
-    "sha": "1230983a8c1dae2d0947d62f79eb538a7afcb5b3"
+    "sha": "1230983a8c1dae2d0947d62f79eb538a7afcb5b3",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kujiki": {
     "revid": 3752200,
-    "sha": "39e04766f42b3b06ca497325c6ddb4158af895e6"
+    "sha": "39e04766f42b3b06ca497325c6ddb4158af895e6",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kuri (kitchen)": {
     "revid": 3760321,
-    "sha": "7537855572a266a89a4291d28e65ad740ad6721a"
+    "sha": "7537855572a266a89a4291d28e65ad740ad6721a",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kurume Suitengū": {
     "revid": 3752530,
-    "sha": "9a44cb85da557ce4df57f0db21dcc62c4e7018cb"
+    "sha": "9a44cb85da557ce4df57f0db21dcc62c4e7018cb",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Kushihiki Hachimangū": {
     "revid": 3752572,
-    "sha": "1e2511ed726d007f529ae4fb5853f628b8cad0c5"
+    "sha": "1e2511ed726d007f529ae4fb5853f628b8cad0c5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Magaibutsu": {
     "revid": 3746349,
-    "sha": "8c47b7812073c03802a564bd2f4798e38efd20ea"
+    "sha": "8c47b7812073c03802a564bd2f4798e38efd20ea",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mamezuka Shrine": {
     "revid": 3760322,
-    "sha": "8c38f0da98be83161bd5aa248b36e0da3fad3062"
+    "sha": "8c38f0da98be83161bd5aa248b36e0da3fad3062",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mishima Shrine (Iruma)": {
     "revid": 3743644,
-    "sha": "5c099a77c41619731757c98bc0b5165007803277"
+    "sha": "5c099a77c41619731757c98bc0b5165007803277",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mishima Shrine (Tsumara)": {
     "revid": 3743647,
-    "sha": "cec56e1e8bc255fa2759c0ddee8f85d115f5b92f"
+    "sha": "cec56e1e8bc255fa2759c0ddee8f85d115f5b92f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Miwa Shrine (Gifu)": {
     "revid": 3760324,
-    "sha": "6138a6a454b41beceba09fda80c4d77b781d1f21"
+    "sha": "6138a6a454b41beceba09fda80c4d77b781d1f21",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Miyajima (disambiguation)": {
     "revid": 3742975,
-    "sha": "48fbb982951a69ca25e3c6e0d5ae6c63db577f92"
+    "sha": "48fbb982951a69ca25e3c6e0d5ae6c63db577f92",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mononobe Shrine (Kashiwazaki)": {
     "revid": 3753096,
-    "sha": "134e8ede20c43324e5216c4420352d04a0829315"
+    "sha": "134e8ede20c43324e5216c4420352d04a0829315",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mononobe Shrine (Nagoya)": {
     "revid": 3753097,
-    "sha": "c16a5f549c85ead9869c0b44e32c7c9ec2e293a9"
+    "sha": "c16a5f549c85ead9869c0b44e32c7c9ec2e293a9",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mononobe Shrine (Oda)": {
     "revid": 3753098,
-    "sha": "f445eaa322a5c7207905be80748d098bc4d3c7a2"
+    "sha": "f445eaa322a5c7207905be80748d098bc4d3c7a2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Mononobe Shrine (Ōda)": {
     "revid": 3766359,
-    "sha": "fdbfebeb71f93ba940af56547dc866c51317a73f"
+    "sha": "fdbfebeb71f93ba940af56547dc866c51317a73f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Munakata clan": {
     "revid": 3753300,
-    "sha": "23b25a158d6897e00e268f93c15a873d4682cbe3"
+    "sha": "23b25a158d6897e00e268f93c15a873d4682cbe3",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Nagahatabe Shrine (Kamisato)": {
     "revid": 3753406,
-    "sha": "778dcb2b4e23a9c7de0eaaacbbeee7b2210c00b3"
+    "sha": "778dcb2b4e23a9c7de0eaaacbbeee7b2210c00b3",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Nakayama Shrine (Tottori Daisen)": {
     "revid": 3753576,
-    "sha": "4e12911765653f6b5213d5d4777b717452d8a270"
+    "sha": "4e12911765653f6b5213d5d4777b717452d8a270",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Nigihayahi": {
     "revid": 3753946,
-    "sha": "5500dc6568dd1720c1928980461bad79edee94e0"
+    "sha": "5500dc6568dd1720c1928980461bad79edee94e0",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ninomiya Shrine (Miyake)": {
     "revid": 3754014,
-    "sha": "c5f71ddbf88cae706ca10d8fdacc8f511c146118"
+    "sha": "c5f71ddbf88cae706ca10d8fdacc8f511c146118",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Nomi Shrine (Ichinomiya)": {
     "revid": 3754136,
-    "sha": "576377a143270f9b0aa622455fd38db41771fd65"
+    "sha": "576377a143270f9b0aa622455fd38db41771fd65",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Nunaki-iri-hime": {
     "revid": 3754258,
-    "sha": "0cc634c8a3fbb284837bd86e13d9fd256b81e870"
+    "sha": "0cc634c8a3fbb284837bd86e13d9fd256b81e870",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Okuni Shrine (Isesaki)": {
     "revid": 3754964,
-    "sha": "bd040838b2596f7c98024e598763a8eb7626424a"
+    "sha": "bd040838b2596f7c98024e598763a8eb7626424a",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ono Shrine (Atsugi)": {
     "revid": 3755250,
-    "sha": "63bfa7afdd8821baccf6a3f2a6d1dfcad217ec24"
+    "sha": "63bfa7afdd8821baccf6a3f2a6d1dfcad217ec24",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Oomoto Hikari no Michi": {
     "revid": 3755337,
-    "sha": "cc5289c89cf48bdc7ae0ecff80cf38bafbe0c738"
+    "sha": "cc5289c89cf48bdc7ae0ecff80cf38bafbe0c738",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Oosakayamaguchi Shrine (Katsuge district)": {
     "revid": 3755351,
-    "sha": "030de2511a4d90482dbf5b6141cb2080aa85604c"
+    "sha": "030de2511a4d90482dbf5b6141cb2080aa85604c",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Saonetsuhiko": {
     "revid": 3762576,
-    "sha": "3573be17152a1b4f830362ab7404b98db99088be"
+    "sha": "3573be17152a1b4f830362ab7404b98db99088be",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Sarutahiko Shrine": {
     "revid": 3762589,
-    "sha": "8731b251dfdc2ae375fb89da25192240e9673c0c"
+    "sha": "8731b251dfdc2ae375fb89da25192240e9673c0c",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Senji Ryakketsu": {
     "revid": 3762772,
-    "sha": "d1c9bdb9e59e761a26200072bba561b55b6e4b59"
+    "sha": "d1c9bdb9e59e761a26200072bba561b55b6e4b59",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Shogakukan": {
     "revid": 3763882,
-    "sha": "9d8f9b14c0b3ad4e14c8870711e76da18aa87681"
+    "sha": "9d8f9b14c0b3ad4e14c8870711e76da18aa87681",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Sōma Nomaoi": {
     "revid": 3764533,
-    "sha": "050e280595ddfb645d1c70fa8d636875272a557f"
+    "sha": "050e280595ddfb645d1c70fa8d636875272a557f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tachi (disambiguation)": {
     "revid": 3764559,
-    "sha": "9ad5be47c91f7eac11bf06a37ea02086080b4a07"
+    "sha": "9ad5be47c91f7eac11bf06a37ea02086080b4a07",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Takano River": {
     "revid": 3764803,
-    "sha": "54f1ad362559d160523dc74ad3a835621709d6fa"
+    "sha": "54f1ad362559d160523dc74ad3a835621709d6fa",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Takaozan Kofun": {
     "revid": 3764839,
-    "sha": "e3b7dd36ed3aa5b2037a4d0500087a78152a9d83"
+    "sha": "e3b7dd36ed3aa5b2037a4d0500087a78152a9d83",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Takehi-Nateru": {
     "revid": 3764934,
-    "sha": "a747accd3aac9bf63022de92df74296cc9aa3dc1"
+    "sha": "a747accd3aac9bf63022de92df74296cc9aa3dc1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tamakushi-hime": {
     "revid": 3765222,
-    "sha": "dd899250b9175bce5982ac1c0b3b177c08295fa2"
+    "sha": "dd899250b9175bce5982ac1c0b3b177c08295fa2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tamayori-hime (mother of Jimmu)": {
     "revid": 3765257,
-    "sha": "99421539329e2b4f16748a28a8656a9efa6b75e2"
+    "sha": "99421539329e2b4f16748a28a8656a9efa6b75e2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tenjinsha (Itoshima)": {
     "revid": 3765519,
-    "sha": "82bcea8908ec62a78626eefcd0f09c5e41b9c7f8"
+    "sha": "82bcea8908ec62a78626eefcd0f09c5e41b9c7f8",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tenshō Kōtai Jingūkyō": {
     "revid": 3765580,
-    "sha": "6be151cbcbd61c18c676fc24f63b48c01f509303"
+    "sha": "6be151cbcbd61c18c676fc24f63b48c01f509303",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tenson-zoku": {
     "revid": 3765585,
-    "sha": "00b05fbd7024fc288545f7c6828c25776550706f"
+    "sha": "00b05fbd7024fc288545f7c6828c25776550706f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Teranomikoto Shrine": {
     "revid": 3765598,
-    "sha": "adfe9665dc7308f0d32ad851035c3499a4a8a3cb"
+    "sha": "adfe9665dc7308f0d32ad851035c3499a4a8a3cb",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "The Warring States Period in Kinai and Kinki": {
     "revid": 3765609,
-    "sha": "aaa600e25eb3f40aa05fe3abfe6871010956c088"
+    "sha": "aaa600e25eb3f40aa05fe3abfe6871010956c088",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Triangular-Rimmed Divine Beast Mirror": {
     "revid": 3766054,
-    "sha": "9ca725c8b2c1c56722b30848ea8ee2e946bebf31"
+    "sha": "9ca725c8b2c1c56722b30848ea8ee2e946bebf31",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tsukubusuma Shrine": {
     "revid": 3766781,
-    "sha": "0ac9581566f29c9b4b7fa693e408809974460d59"
+    "sha": "0ac9581566f29c9b4b7fa693e408809974460d59",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Tsurusaki Shrine": {
     "revid": 3766884,
-    "sha": "c31e81b2127f063047eb909d6ec91d300b21e073"
+    "sha": "c31e81b2127f063047eb909d6ec91d300b21e073",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ukita no Kuni no Miyatsuko": {
     "revid": 3767466,
-    "sha": "dfebc444ab71f9adbff0b2f797aa5c69ee3b1033"
+    "sha": "dfebc444ab71f9adbff0b2f797aa5c69ee3b1033",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "YOSAKOI Festival": {
     "revid": 3768183,
-    "sha": "edff7080f2b437b516158a74cc55786191deae77"
+    "sha": "edff7080f2b437b516158a74cc55786191deae77",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Yasaka Shrine (Gika, Koka)": {
     "revid": 3768492,
-    "sha": "459a167fb7ed5bf22425c8e70b7b57c43677df48"
+    "sha": "459a167fb7ed5bf22425c8e70b7b57c43677df48",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ōmi no Kuni no Miyatsuko": {
-    "revid": 3735460,
-    "sha": "59b789578fd51f06beaa0f49dffbfa47e99f6ecb"
+    "revid": 3769035,
+    "sha": "4c3a4438bb17db97ee9cb8d6216f4e9eebd16ee0",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ōshikōchi clan": {
-    "revid": 3735507,
-    "sha": "08dd6397b3dc67002681971bd61d7d1f26fe9b82"
+    "revid": 3769087,
+    "sha": "0c0cd96cfaac087942c79316fc6ae1ce37a60153",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "Ōyamato Shrine": {
-    "revid": 3744798,
-    "sha": "b149736c572425b6b0c3cb4152c015faa5bb5241"
+    "revid": 3769145,
+    "sha": "ae2a9fb8d7ab72ab6fc7986ea18bd4169a22376c",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "ほんみち概観": {
     "revid": 3664657,
-    "sha": "a8aa72c199f7785e42885a95a82a4e2d6486f46d"
+    "sha": "a8aa72c199f7785e42885a95a82a4e2d6486f46d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "キヒサツミ": {
-    "revid": 3735751,
-    "sha": "e5340806fb3343edb376cc9983ebb8db7d8f067a"
+    "revid": 3769165,
+    "sha": "5e1b28f0970995701c5b7fa50fa31f613b779aac",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "三野後国造": {
-    "revid": 3741832,
-    "sha": "6d50d1c2b619c3a640856e120c8a5b66272acd09"
+    "revid": 3769167,
+    "sha": "adc129869fdc81fa92007e3ecd325a26a9c5a449",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "伊佐我命": {
-    "revid": 3735781,
-    "sha": "f1d8b0bd0a1f75eea241e26bbbe34c1c1232497c"
+    "revid": 3769180,
+    "sha": "b1c7e5b78d64d91332026ca057a41ded44eaed1d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "伊勢国造": {
-    "revid": 3741973,
-    "sha": "bed358ce2f1ef542e2131710c93819db10e272fb"
+    "revid": 3769182,
+    "sha": "7f57c28b43d1569d3596a8196c4a929c7f4aef5d",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "伊甚国造": {
-    "revid": 3735787,
-    "sha": "8116973596de2dfe130d6025c0d27801ec5bb8fb"
+    "revid": 3769183,
+    "sha": "16c0677d772fbf67d84aeeb48da29052c225b640",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "倭手彦": {
-    "revid": 3735799,
-    "sha": "4f917167d67008caaa1489f896f904705d43750f"
+    "revid": 3769188,
+    "sha": "1765b62b7184b34535ba59aab22bf1b9b92b5618",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "健磐龍命": {
-    "revid": 3735801,
-    "sha": "c5a9aa3d25340bb4d421aa053bf10dc65092bbe5"
+    "revid": 3769189,
+    "sha": "57317f09d9a41417cc40dc239ebbf6da148d20ee",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "円応教教典": {
     "revid": 3664753,
-    "sha": "062b8a06042a0e6da7c6e8cb06926fdb22b17031"
+    "sha": "062b8a06042a0e6da7c6e8cb06926fdb22b17031",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "凡河内国造": {
-    "revid": 3742106,
-    "sha": "589735bb7648526b7c858cf2daadc2e04e36ca9f"
+    "revid": 3769191,
+    "sha": "36b1faa2fb5280258bff91b2d7742974cff95753",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "千葉国造": {
-    "revid": 3735809,
-    "sha": "862c85f185579895accaf1b36cdcdd82d67b6728"
+    "revid": 3769193,
+    "sha": "a0712530fb64cb91d4dd0cc7bf07607f3bbe320f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "国造": {
-    "revid": 3735815,
-    "sha": "334d86c395516b1b18097a881de0a64fa24aea6b"
+    "revid": 3769196,
+    "sha": "9b666e7c6cecb48c34c5c48d05a716be030029ce",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "大河内味張": {
-    "revid": 3735819,
-    "sha": "7a60fdd84bc3fd88b1cf5510880c33bb1c20827d"
+    "revid": 3769198,
+    "sha": "d61ff021e11d063529e18a733edade83be0145d1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "天道根命": {
-    "revid": 3735827,
-    "sha": "4d756f1e65671f12e24d9030dc73cfe21f54c59a"
+    "revid": 3769202,
+    "sha": "2435cf79dd58e779c31091033677fd8deda5d6c2",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "尾張国造": {
-    "revid": 3735835,
-    "sha": "00c61e2b8f794e85f461a38cd4421472d1c40084"
+    "revid": 3769206,
+    "sha": "234142ac44086ce525cee3c6b697315971e72a30",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "尾張氏": {
-    "revid": 3735837,
-    "sha": "caf4f45e327ecd43716fbd30d8244214668f8f24"
+    "revid": 3769207,
+    "sha": "2298abe8811e30e5655dd7cdcdcc7aaf5d137cc6",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "師長国造": {
-    "revid": 3735847,
-    "sha": "7a260e6e6aad9cf36d69ced9167e7b4f418f5595"
+    "revid": 3769212,
+    "sha": "2b41399413177faf0f2c8f3c7f57bde8a0eb46dd",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "廬原国造": {
-    "revid": 3735849,
-    "sha": "80b6df7253d8501b34deb3d9c59af2d5d7041dbd"
+    "revid": 3769213,
+    "sha": "e45d96f3e90182b3be78ebf5cb4b7a6d2b4ceb10",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "建比良鳥命": {
-    "revid": 3735853,
-    "sha": "7cecb2ace2f5b362471dc0cf8e5c5b369d21a5f9"
+    "revid": 3769215,
+    "sha": "03930d97ca41b1732cb139a57e86a1abdebdc9e0",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "御神書": {
     "revid": 3664845,
-    "sha": "a23fe08b6ac3c24270e971d6a87a3beb92c237f3"
+    "sha": "a23fe08b6ac3c24270e971d6a87a3beb92c237f3",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "斐陀国造": {
-    "revid": 3735863,
-    "sha": "3e3b9c20d7b4d8ce5ccef75ffdc49df4d30f0562"
+    "revid": 3769220,
+    "sha": "1aefb5d7b11eca5ee7424ac23c2035b521e3cecf",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "无邪志国造": {
-    "revid": 3735867,
-    "sha": "414ba99253f289fcc2451407ca0343e2d13bd28c"
+    "revid": 3769222,
+    "sha": "89bb6e287f9890d60c5a15281a8cbec252c41699",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "本巣国造": {
-    "revid": 3746427,
-    "sha": "fbc69852d0b84ec394c9fc611273908130c19db6"
+    "revid": 3769227,
+    "sha": "34860fa2db6d46be0bfe97bb274a9efb5208d9a5",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "椎根津彦": {
-    "revid": 3735879,
-    "sha": "f9b98316b1c701bccf407bbe4bddbd627d01c62e"
+    "revid": 3769228,
+    "sha": "eb85c72821490170eef363c96892613f7ebade67",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "沼田国造": {
-    "revid": 3746431,
-    "sha": "71f4ffa08e82b0817190f68f41b829613b937582"
+    "revid": 3769268,
+    "sha": "ea58d8c05f291fc167cc85884f1a4f2422f67a9e",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "熊野国造": {
-    "revid": 3746438,
-    "sha": "9eaace169867946ffb5dcc3013172d48044fa438"
+    "revid": 3769318,
+    "sha": "223f1c9698a752f7cff3ea982b29b30849f0b262",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "甘露の法雨": {
     "revid": 3664905,
-    "sha": "c96f11cedcdc71dccc90c6df5eb507c61a803ef0"
+    "sha": "c96f11cedcdc71dccc90c6df5eb507c61a803ef0",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "知々夫国造": {
-    "revid": 3746457,
-    "sha": "6a9e1ece5549018e4e352c34e857be0fc4098cac"
+    "revid": 3769323,
+    "sha": "0b929104a78a759666f41b10b02f1c01ce675e57",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "科野国造": {
-    "revid": 3735909,
-    "sha": "10d4a9e98591677cf7baa6c68b9f1e335d7c78b4"
+    "revid": 3769325,
+    "sha": "73819a37ad68bdf749be43a95183317743e3a151",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "穂国造": {
-    "revid": 3747127,
-    "sha": "57a350fea49e6fafd479d7bb8db5b4ea4f14aad4"
+    "revid": 3769326,
+    "sha": "e96a6dd3e72f68f015dfe5645173dfbbcfa259a1",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "菟狭津彦命": {
     "revid": 3735925,
-    "sha": "3d59c9f5edc66429f96850df506b4c4daaf337cf"
+    "sha": "3d59c9f5edc66429f96850df506b4c4daaf337cf",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "角鹿国造": {
     "revid": 3735929,
-    "sha": "03c36338c0d9421b66b03e0b173219e673faccc3"
+    "sha": "03c36338c0d9421b66b03e0b173219e673faccc3",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "遠淡海国造": {
     "revid": 3747157,
-    "sha": "cfd384fe97e9dfff32ed260812c5ace938dea4a4"
+    "sha": "cfd384fe97e9dfff32ed260812c5ace938dea4a4",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "那須国造": {
     "revid": 3735943,
-    "sha": "10b49d5b47d5ac89b6f2fd985913e8b21d4c2067"
+    "sha": "10b49d5b47d5ac89b6f2fd985913e8b21d4c2067",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "都紀女加": {
     "revid": 3747159,
-    "sha": "d6cd9365808ee45e365479ad3737a5d132695386"
+    "sha": "d6cd9365808ee45e365479ad3737a5d132695386",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "長狭国造": {
     "revid": 3735955,
-    "sha": "5c8b05dd259d592a27828bab431a872b5e08ee0f"
+    "sha": "5c8b05dd259d592a27828bab431a872b5e08ee0f",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   },
   "額田国造": {
     "revid": 3747168,
-    "sha": "0fd605f5b837658f4e6dccd7777b775ca341b7b4"
+    "sha": "0fd605f5b837658f4e6dccd7777b775ca341b7b4",
+    "sync_commit": "0030e1cb19a515652a452ed9bc3b05fe84ff9cf6"
   }
 }
