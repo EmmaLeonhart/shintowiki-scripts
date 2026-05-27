@@ -6,6 +6,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-26
 
+### Grokopedia "missing" sentinel switched from empty to `none`
+**Files:** `shinto_miraheze/orchestrators/ops/grokipedia_link.py`, `shinto_miraheze/configure_wikidata_link_grok_categories.py`
+
+Emma reported the template's categorisation was working for `grok=<slug>`
+and for the totally-unset case, but `grok=` (empty) was silently falling
+into "to be checked" — MediaWiki on miraheze appears to treat
+`grok=` the same as a fully-unpassed param (both make `{{{grok|}}}`
+resolve to `""`), so an empty slot cannot be distinguished from "never
+checked".
+
+Switched the explicit "no Grokopedia article found" marker from empty
+`grok=` to the literal sentinel `grok=none`:
+
+* `grokipedia_link` op now writes `grok=none` for the missing case
+  (was: empty string). It also detects legacy `grok=` (empty) markers
+  on revisit and rewrites them to `grok=none` without re-probing
+  Grokopedia — the original missing determination from the prior run is
+  preserved.
+* Template snippet rewritten: outer `#ifeq:{{{grok|}}}|none|...` checks
+  the sentinel first; inner `#if:{{{grok|}}}|...` distinguishes a real
+  slug from empty/absent. Empty `grok=` and totally-absent both fall
+  into "Pages to be checked for Grokipedia" — which matches the
+  user-observed behaviour and gives the orchestrator op a chance to
+  visit and rewrite the legacy marker on its next sweep.
+* `configure_wikidata_link_grok_categories.py` gained a
+  `_replace_or_append` helper: if the `<!-- BEGIN_GROK_AUTO_CATEGORIES -->`
+  marker is already on the wiki page, splice the new snippet in place of
+  the old one (instead of no-opping). Lets us iterate on the template
+  logic by re-dispatching the workflow rather than hand-editing.
+  Verified idempotent on the third re-run.
+
 ### Re-sequence cleanup-loop.yml so syncs run before any wiki-write
 **Files:** `.github/workflows/cleanup-loop.yml`
 

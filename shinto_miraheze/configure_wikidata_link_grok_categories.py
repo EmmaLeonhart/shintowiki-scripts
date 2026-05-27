@@ -28,6 +28,7 @@ auth via ``WIKI_USERNAME`` + ``WIKI_PASSWORD`` env vars.
 import argparse
 import io
 import os
+import re
 import sys
 
 import mwclient
@@ -45,24 +46,51 @@ TEMPLATE_TITLE = "Template:Wikidata link"
 BEGIN_MARKER = "<!-- BEGIN_GROK_AUTO_CATEGORIES -->"
 END_MARKER = "<!-- END_GROK_AUTO_CATEGORIES -->"
 
-# Sentinel default for {{{grok|...}}}: returned by the parameter
-# expansion only when grok is COMPLETELY UNSET. If grok is passed as
-# `grok=` (empty), the expansion returns "" — NOT the sentinel. That
-# lets the outer #ifeq distinguish the three states cleanly:
-#   no grok param        → expansion == sentinel → "to be checked"
-#   grok= (empty)        → expansion == ""       → inner #if false → "without"
-#   grok=<value>         → expansion == value    → inner #if true  → "with"
-_GROK_SENTINEL = "__GROK_UNSET__"
-
+# Three-state classification driven by the `grok` parameter. MediaWiki on
+# miraheze treats `grok=` (empty) the same as a totally unpassed
+# parameter — both make `{{{grok|}}}` resolve to "" — so an empty slot
+# CANNOT distinguish "checked, no article" from "not yet checked". The
+# orchestrator op therefore writes the literal sentinel ``none`` for the
+# missing case. The template logic:
+#
+#   grok=<slug>   (non-empty, not "none") → "Pages with Grokipedia links"
+#   grok=none                              → "Pages without Grokipedia links"
+#   grok= (empty) OR no grok param at all  → "Pages to be checked for Grokipedia"
+#
+# The legacy `grok=` (empty) state is folded into "to be checked"
+# alongside fully-absent; the orchestrator op rewrites those to
+# `grok=none` on the next visit so they migrate to the correct bucket.
 GROK_BLOCK = (
     f"<includeonly>{BEGIN_MARKER}\n"
-    "{{#ifeq:{{{grok|" + _GROK_SENTINEL + "}}}|" + _GROK_SENTINEL + "|"
-    "[[Category:Pages to be checked for Grokipedia]]|"
+    "{{#ifeq:{{{grok|}}}|none|"
+    "[[Category:Pages without Grokipedia links]]|"
     "{{#if:{{{grok|}}}|"
     "[[Category:Pages with Grokipedia links]]|"
-    "[[Category:Pages without Grokipedia links]]}}}}\n"
+    "[[Category:Pages to be checked for Grokipedia]]}}}}\n"
     f"{END_MARKER}</includeonly>"
 )
+
+
+_MARKER_BLOCK_RE = re.compile(
+    r"<includeonly>\s*" + re.escape(BEGIN_MARKER) + r".*?"
+    + re.escape(END_MARKER) + r"\s*</includeonly>",
+    re.DOTALL,
+)
+
+
+def _replace_or_append(text: str, block: str) -> str:
+    """If the BEGIN/END marker pair is already in ``text``, splice
+    ``block`` in place of the existing marker section (including the
+    enclosing ``<includeonly>...</includeonly>`` tags). Otherwise append
+    ``block`` at the end. Idempotent against re-runs and supports
+    updating the snippet's logic without manual template surgery."""
+    if _MARKER_BLOCK_RE.search(text):
+        # re.sub interprets backslash sequences in the replacement
+        # string — escape any backslashes in the block content.
+        safe_block = block.replace("\\", r"\\")
+        return _MARKER_BLOCK_RE.sub(safe_block, text, count=1)
+    sep = "" if text.endswith("\n") else "\n"
+    return f"{text}{sep}{block}\n"
 
 
 def main() -> int:
@@ -89,31 +117,28 @@ def main() -> int:
     current = page.text()
     print(f"Fetched {TEMPLATE_TITLE} ({len(current)} chars)")
 
-    if BEGIN_MARKER in current:
-        print(f"Marker {BEGIN_MARKER!r} already present — no-op.")
+    new_text = _replace_or_append(current, GROK_BLOCK)
+
+    if new_text == current:
+        print("Template already carries the current GROK_BLOCK verbatim — no-op.")
         return 0
 
-    sep = "" if current.endswith("\n") else "\n"
-    new_text = f"{current}{sep}{GROK_BLOCK}\n"
-
-    if not new_text or new_text == current:
-        print("Would-be edit produced no change; aborting.")
-        return 1
-
+    action = "replace existing block" if BEGIN_MARKER in current else "append new block"
     summary = (
-        "configure Grokopedia conditional categorisation "
-        f"(grok=*|grok=|absent → 3 tracking categories) {args.run_tag}"
+        f"configure Grokopedia conditional categorisation ({action}; "
+        f"grok=<slug>|grok=none|empty-or-absent → 3 tracking categories) "
+        f"{args.run_tag}"
     ).strip()
 
     if not args.apply:
         preview = GROK_BLOCK.replace("\n", "\\n")
-        print("DRY RUN: would append the following block at end of template:")
+        print(f"DRY RUN ({action}): block content =")
         print(f"  {preview}")
         print(f"  summary: {summary}")
         return 0
 
     page.save(new_text, summary=summary, minor=False, bot=True)
-    print(f"EDIT applied to {TEMPLATE_TITLE}: appended Grokopedia categorisation block.")
+    print(f"EDIT applied to {TEMPLATE_TITLE}: {action}.")
     return 0
 
 

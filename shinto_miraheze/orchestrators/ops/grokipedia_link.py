@@ -8,25 +8,32 @@ template as a **named parameter** so the next cycle can skip the probe:
 
 * Grokopedia HAS the page → set ``|grok=<canonical-slug>``.
 * Grokopedia does NOT have the page (every casing probe returned 404) →
-  set ``|grok=`` (empty value, parameter present).
+  set ``|grok=none`` (the literal sentinel ``none``, NOT empty). Empty
+  ``grok=`` is treated by MediaWiki the same way as a missing parameter,
+  so the template can't distinguish "checked, no article" from "never
+  checked" if the slot is empty.
 * Transient error / inconclusive (5xx, timeout, mixed) → no-op for this
   visit; re-probe next cycle.
+* Legacy ``|grok=`` (empty) markers from before the sentinel switch get
+  rewritten to ``|grok=none`` on re-visit (no re-probe — the original
+  "missing" determination is preserved).
 
 Categorisation is handled by ``Template:Wikidata link`` itself, NOT by
 this op. The template emits one of three categories based on the
 ``grok`` parameter state (configured by
 ``configure_wikidata_link_grok_categories.py``):
 
-* ``grok=<slug>`` → ``[[Category:Pages with Grokipedia links]]``
-* ``grok=`` (empty, present) → ``[[Category:Pages without Grokipedia links]]``
-* no ``grok`` parameter at all → ``[[Category:Pages to be checked for Grokipedia]]``
+* ``grok=<slug>`` (any non-empty value other than ``none``) → ``[[Category:Pages with Grokipedia links]]``
+* ``grok=none`` → ``[[Category:Pages without Grokipedia links]]``
+* no ``grok`` parameter at all, OR ``grok=`` empty → ``[[Category:Pages to be checked for Grokipedia]]``
 
 So this op only sets the param state; the template propagates the
-visible classification. That's also why the missing case stamps
-``grok=`` rather than just leaving the param off: an empty present
-``grok`` parameter is the **positive marker** for "we checked, nothing
-on Grokopedia" — it's distinguishable from "we haven't checked yet"
-(which is the "no grok param at all" state).
+visible classification. That's why the missing case stamps the literal
+sentinel ``none`` — MediaWiki collapses ``grok=`` (empty) into the
+same state as "no parameter passed", so an empty present ``grok`` slot
+CANNOT be distinguished from "we haven't checked yet". The ``none``
+sentinel is the **positive marker** for "we checked, nothing on
+Grokopedia".
 
 The named-param shape is deliberate: Grokopedia is NOT a language wiki,
 so modelling it as one of the positional ``lang|title`` pairs would
@@ -54,8 +61,10 @@ is always present before we touch the template.
 
 Skip gates (cheap, run before the HTTP probe):
 * page is a redirect
-* ``grok`` named param already on ``{{wikidata link}}`` (any value,
-  including empty — both mean "we already checked, here's the result")
+* ``grok`` named param already present AND non-empty (either a real
+  slug or the ``none`` sentinel — both mean "checked, here's the
+  result"). Empty ``grok=`` is NOT a skip — it triggers the legacy
+  rewrite to ``grok=none``.
 * no ``{{wikidata link}}`` template at all (we'd have no place to cache
   the result, and re-probing every cycle would hammer grokipedia.com —
   the explicit user concern)
@@ -210,23 +219,45 @@ def apply(title: str, text: str):
         return None, None
 
     qid, pairs, named = _parse_wd_params(wd_match.group(1))
-    if "grok" in named:
+    existing_grok = named.get("grok")
+
+    # Skip when the slot is already conclusively filled:
+    #   * a non-empty value that isn't the legacy empty marker — either a
+    #     real slug or the new "none" sentinel.
+    if existing_grok is not None and existing_grok != "":
         return None, None
 
-    slug, status = _find_canonical_slug(title)
+    # Legacy `grok=` (empty) markers from earlier runs are no longer
+    # interpreted by Template:Wikidata link the way we wanted — MediaWiki
+    # treats `grok=` as if the param weren't passed, so those pages fall
+    # into "to be checked" instead of "without Grokipedia links". Rewrite
+    # the empty marker to the explicit sentinel `none` without re-probing
+    # Grokopedia (the missing determination from the original run is
+    # still authoritative; if Grokopedia adds the article later, a human
+    # can clear the param to force a re-check).
+    if existing_grok == "":
+        new_named: dict[str, str] = {"grok": "none"}
+        for key, value in named.items():
+            if key != "grok":
+                new_named[key] = value
+        new_template = _build_wd_template(qid, pairs, new_named)
+        new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
+        return new_text, "rewrite legacy empty grok= to grok=none"
 
+    # No grok param at all → probe Grokopedia.
+    slug, status = _find_canonical_slug(title)
     if status == "error":
         return None, None
 
     # Insert grok= as the first named param so it appears prominently in
     # the wikitext. wikidata_lookup will not touch it on future cycles —
     # it only mutates check_date / consistent_qid. The value is either
-    # the canonical Grokopedia slug (status == 'exists') or the empty
-    # string (status == 'missing'); Template:Wikidata link's conditional
-    # categorisation reads the param state to emit one of three
-    # tracking categories.
-    grok_value = slug if status == "exists" else ""
-    new_named: dict[str, str] = {"grok": grok_value}
+    # the canonical Grokopedia slug (status == 'exists') or the literal
+    # sentinel 'none' (status == 'missing'); Template:Wikidata link's
+    # conditional categorisation reads the param state to emit one of
+    # three tracking categories.
+    grok_value = slug if status == "exists" else "none"
+    new_named = {"grok": grok_value}
     for key, value in named.items():
         if key != "grok":
             new_named[key] = value
@@ -234,4 +265,4 @@ def apply(title: str, text: str):
     new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
     if status == "exists":
         return new_text, f"add grok={slug} to wikidata link (Grokopedia)"
-    return new_text, "set grok= empty (no Grokopedia article)"
+    return new_text, "set grok=none (no Grokopedia article)"
