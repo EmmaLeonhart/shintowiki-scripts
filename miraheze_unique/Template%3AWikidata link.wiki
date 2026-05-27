@@ -13,3 +13,6 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Templates missing wikidata]]
 </noinclude>
+<includeonly><!-- BEGIN_GROK_AUTO_CATEGORIES -->
+{{#ifeq:{{{grok|}}}|none|[[Category:Pages without Grokipedia links]]|{{#if:{{{grok|}}}|[[Category:Pages with Grokipedia links]]|[[Category:Pages to be checked for Grokipedia]]}}}}
+<!-- END_GROK_AUTO_CATEGORIES --></includeonly>
