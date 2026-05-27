@@ -4,6 +4,53 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-27
+
+### Verified: dup-content pipeline drained Take Minato Shrine end-to-end
+**Files:** (verification only — no code change)
+
+Closed the lingering verify item from the 2026-05-23 duplicated-content
+session ("Verify after the next cleanup-loop run that sync_duplicated_content
+resolved the conflicts wiki-wins and the consumer actually merges the macro
+duplication on a sample page — e.g. Take Minato Shrine — currently
+triplicated").
+
+Findings:
+
+* `duplicated_content/Take Minato Shrine.wiki` was deleted from the repo on
+  2026-05-24 by commit `ca9901e0` (a routine `chore(duplicated-content): sync
+  Pages with duplicated content [skip ci]` from `sync_duplicated_content.py`).
+  A delete inside that sync commit is the "drained" signal: the wiki page
+  lost its `[[Category:Pages with duplicated content]]` tag, the sync pushed
+  whatever pending repo edits there were, then removed the now-uncategorised
+  local file. (Sync's pass-2 logic, lines ~395–403 of
+  `sync_duplicated_content.py`.) That sequence implies the wiki-wins
+  conflict resolution worked — if conflicts had blocked the sync, the file
+  would still be sitting in `duplicated_content/`.
+* Live wiki page `Take Minato Shrine` exists (11061 chars). Categories
+  fetched via `action=parse&prop=categories`: no
+  `Pages with duplicated content`. Carries
+  `Pages to be checked for Grokipedia` — confirming the new grok
+  categorisation is hitting real mainspace pages.
+* Zero occurrences of any of the macro-duplication markers on the live
+  wikitext: `Accidentally Overwritten` = 0, `merged content` = 0,
+  `==Take Minato Shrine` = 0. The cloud routine genuinely cleaned up
+  the dup artifacts.
+* Page structure: 21 logical section headers (English `== History ==`,
+  `== Deities ==`, `== Auxiliary Shrines ==`, etc.) plus a parallel
+  `== Japanese content ==` section preserved separately. Restructured,
+  not triplicated.
+
+Honest caveats: I didn't dig into the cleanup-loop run logs for the literal
+PULL/PUSH/CONFLICT counts on the `sync_duplicated_content` step — the
+file-was-deleted-by-routine-sync-commit evidence is consistent with success
+but isn't direct log evidence. If a specific run needs auditing later, look
+at the run's `cleanup` job log and grep for the `sync_duplicated_content`
+step output. The merge quality (Japanese content kept as a parallel
+section rather than merged into the English sections) may not be what
+Emma's standards eventually want — that's a content-quality question
+about the cloud routine's instruction, not a pipeline question.
+
 ## 2026-05-26
 
 ### Grokopedia "missing" sentinel switched from empty to `none`

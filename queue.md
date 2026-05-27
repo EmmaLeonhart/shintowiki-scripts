@@ -24,12 +24,6 @@ re-pulled from the wiki, cursor reset. Still open:
   (via claude.ai schedules) to drop the cursor and pick category-tagged files at
   random. (Repo-side mitigations already in place: `remote_queue.py` shuffles +
   category-filters, cursor reset to 0.)
-- [ ] **Verify after the next cleanup-loop run** that `sync_duplicated_content`
-  resolved the conflicts wiki-wins (pulled, not skipped) and that the consumer,
-  with the corrected instruction, actually merges the macro duplication on a
-  sample page (e.g. Take Minato Shrine — currently triplicated) and the merged
-  result reaches the wiki.
-
 ## Wikidata: カミノヤシロ kana — manual stragglers (bot request 2026-02-26)
 
 Both bot jobs shipped (see DEVLOG 2026-05-23). The "18 leftovers" earlier were a
