@@ -7,6 +7,27 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
+## manually added by Emma
+
+I think we have an open questions git synced page
+
+put all of these things in it
+
+What’s left, honestly nothing autonomous:
+Queue: cloud consumer cursor (<claude.ai> routine edit, you), kana ojp-hani stragglers (you, manual), revision-aware conflict resolution (needs your design + per-dir tie-break rules), delete_lowercase_template_collisions --apply (blocked on canonicalize sweep).
+Todo: AI translation pipeline (blocked), translate ~187 need_translation files (manual + blocked on history_offload), enrich autocreated categories (needs script design), ILLs without WD= (per-case judgment), category audits (need design), state-file removal refactor (moderate risk), secret removal (destructive — careful planning), Infobox→Portable rewrites (manual), and architecture items.
+
+
+if it exists then link it on the main page
+
+if it does not then make it and link it
+
+in future sessions please do a syncing for that page
+
+explanation in the main page so stuff can be done on wiki to establish the rules for agents to follow
+
+this page is different
+
 ## Duplicated-content pipeline — remaining follow-ups (2026-05-23)
 
 Big fixes shipped this session (see DEVLOG 2026-05-23): consumer instruction
