@@ -6,6 +6,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Churn verification (qqqq case): all 4 historical pages quiescent; 2 new ones surfaced
+**Files:** `queue.md`, `docs/page_churn_diagnostic.md`
+
+Re-ran `diagnose_page_churn.py --category "Independently git synced
+pages" --sample-size 30 --rev-limit 30` after this morning's qqqq
+strip commit + direct API spot-checks of all 4 previously-flagged
+pages. Result:
+
+* **Take Minato Shrine** — last toggle 2026-05-25 00:39Z (`Bot:
+  remove [[Category:Qqqq]] (crud category cleanup)`). No fresh
+  toggles since. The qqqq churn is dead — whether that's because
+  the strip commit landed or because the orchestrator simply hasn't
+  re-visited the page is impossible to say from this data alone,
+  but either way the repo file no longer carries the cat, so the
+  churn cannot resume.
+* **Fujishima Shrine (Suwa Region)** — last activity 2026-05-14
+  20:20Z (`strip_html_comments ↔ sync_miraheze_unique` pattern,
+  not the qqqq one). 13 days quiescent.
+* **Iki Gokoku Shrine** — last activity 2026-05-15 13:06Z. 12 days
+  quiescent.
+* **Imai Nogiku** — last activity 2026-05-15 13:06Z. 12 days
+  quiescent.
+
+The 3 `strip_html_comments` pages were the older pattern and look
+to have stopped on their own (likely an orchestrator/sync update
+between then and now).
+
+**New churn pages surfaced today**: today's random 30-page sample
+flagged 2 fresh alternations — Itakiso shrine and Katakurabe no
+Mikoto. These are unrelated to qqqq and need their own diagnostic
+pass; queued for follow-up.
+
 ### Reorder `wiki-cleanup.yml`: Translation + Duplicated Content syncs run BEFORE all wiki-write chunks
 **Files:** `.github/workflows/wiki-cleanup.yml`, `queue.md`
 
