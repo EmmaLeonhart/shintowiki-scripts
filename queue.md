@@ -58,23 +58,20 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
   side is further ahead in revisions wins, with per-directory tie-break
   rules (TBD). See todo.md "Bot ping-pong" for the full theory.
-- [ ] **Page-churn loops — phase 2 (the fix), pending Emma's review of
-  the phase-1 report.** The phase-1 diagnostic ran 2026-05-27 (see
-  `docs/page_churn_diagnostic.md` + commit message of the diagnose tick).
-  Result: **zero alternation streaks detected** in a 20-page sample from
-  `[[Category:Git synced pages]]`, but with a caveat — 97 / ~137
-  revisions attribute as `unknown` because `SCRIPT_PATTERNS` in
-  `diagnose_page_churn.py` doesn't yet cover every bot's summary
-  template (notably: many `Bot: tag …`, `Bot: remove crud category`,
-  history-cleanup summaries). Likely interpretation: the 2026-05-26
-  sync-ordering fix (commit `8b72a8be`, syncs now run before any
-  wiki-write) stopped the active git_synced churn Emma flagged. To
-  confirm or refute before declaring "fixed": (a) extend
-  `SCRIPT_PATTERNS` to attribute the unknowns, (b) re-run the
-  diagnostic on a larger sample (`--sample-size 60` covers all 69
-  category members), (c) optionally widen to other categories
-  (mainspace generally, not just git_synced). The fix itself is gated
-  on what those next runs surface.
+- [ ] **Page-churn loops — phase 2 decision, pending Emma's review.**
+  Phase-1 diagnostic and the (a) + (b) follow-ups have run: see
+  `docs/page_churn_diagnostic.md`. Current numbers: 60-of-69 git_synced
+  pages sampled, last 30 revisions each, `unknown` attribution now 14%
+  (down from 71% on the first run). **Zero alternation streaks
+  detected** across the full sample. Top bot pairs by frequency are
+  `sync_git_synced` + `strip_html_comments` — they do not show
+  toggling. Likely interpretation: the 2026-05-27 sync-ordering fix
+  (commit `8b72a8be`) stopped the active git_synced churn. Still
+  unresolved: (c) widen to non-git_synced categories
+  (`miraheze_unique/`, `fandom_unique/`, `duplicated_content/`,
+  mainspace generally) to confirm no churn elsewhere; (d) decide what,
+  if anything, the phase-2 fix should be — Emma's call given the
+  diagnostic shows no current churn.
 
 ## Pinned notes
 

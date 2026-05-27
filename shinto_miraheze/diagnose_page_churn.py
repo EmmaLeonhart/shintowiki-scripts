@@ -75,7 +75,9 @@ SCRIPT_PATTERNS: list[tuple[str, list[str]]] = [
     ("strip_char_count_cats", ["strip char-count", "strip_char_count_cats"]),
     ("untranslated_japanese", ["untranslated japanese", "tag untranslated"]),
     ("remove_defaultsort", ["remove defaultsort", "remove_defaultsort"]),
-    ("history_offload", ["history offload", "archive history"]),
+    ("history_offload", ["history offload", "archive history",
+                         "offloading history", "history cleanup",
+                         "miraheze stability"]),
     ("categories_to_bottom", ["move categories to bottom",
                               "categories_to_bottom"]),
     ("duplicate_qids", ["duplicate qid", "duplicate_qids"]),
@@ -99,15 +101,42 @@ SCRIPT_PATTERNS: list[tuple[str, list[str]]] = [
     ("triage_emmabot_categories", ["triage emmabot categories",
                                    "triage_emmabot_categories"]),
     ("create_wanted_categories", ["wanted categor", "create_wanted_categories"]),
-    ("remove_crud_categories", ["remove crud categor", "remove_crud_categories"]),
+    ("remove_crud_categories", ["remove crud categor", "remove_crud_categories",
+                                 "crud category cleanup"]),
+    # Cross-wiki category-mirror tagger (writes "tag [[Category:Independently
+    # git synced pages]] on this miraheze wiki to mirror tagging on the
+    # other"). Not an orchestrator op — a standalone script outside the
+    # current orchestrator set.
+    ("tag_independently_git_synced", ["tag [[category:independently git synced pages]]"]),
     ("reimport_from_enwiki", ["reimport from enwiki", "imported full"]),
 ]
 
 
-def _attribute(comment: str) -> str:
-    """Return the script_id whose pattern first matches the comment, or
-    'unknown' if nothing matches. Case-insensitive."""
+_BOT_USERS = frozenset({"EmmaBot", "EmmaBot Sonnet"})
+
+# HotCat is a gadget — humans use it to (un)categorise pages. The
+# resulting edit summary embeds "using [[Help:Gadget-HotCat|HotCat]]".
+_HOTCAT_MARKER = "using [[help:gadget-hotcat|hotcat]]"
+
+
+def _attribute(user: str, comment: str) -> str:
+    """Return the script_id whose pattern first matches the comment.
+
+    Order of decisions:
+      1. Non-bot user → ``human`` (with ``human (HotCat)`` when the
+         HotCat gadget marker is present, since that's a distinctive
+         category-edit signal worth tracking separately).
+      2. Bot user with matching SCRIPT_PATTERNS rule → that script_id.
+      3. Bot user with no matching rule → ``unknown``.
+
+    The user check is up front so a SCRIPT_PATTERNS rule can't
+    accidentally claim a human edit just because the human happened to
+    quote a known keyword in their summary."""
     c = (comment or "").lower()
+    if user and user not in _BOT_USERS:
+        if _HOTCAT_MARKER in c:
+            return "human (HotCat)"
+        return "human"
     for script_id, patterns in SCRIPT_PATTERNS:
         for p in patterns:
             if p in c:
@@ -172,21 +201,25 @@ def fetch_revisions(title: str, limit: int) -> list[dict]:
     return revs
 
 
+_NON_CHURN_ATTRIB = frozenset({"unknown", "human", "human (HotCat)"})
+
+
 def detect_alternation(scripts_in_order: list[str]) -> tuple[str, str, int] | None:
     """If the most-recent revisions show two scripts toggling, return
     the (script_a, script_b, toggle_count) for the longest such streak.
     Otherwise None.
 
     Definition: a 'toggle' is consecutive A→B→A→B where neither script
-    is 'unknown'. We count starting from the most-recent revision back
-    until the pattern breaks.
+    is in ``_NON_CHURN_ATTRIB`` (unknown / human edits don't count as
+    half of a bot-vs-bot churn pair). We count starting from the most-
+    recent revision back until the pattern breaks.
     """
     if len(scripts_in_order) < 3:
         return None
     # walk newest-first
     a = scripts_in_order[0]
     b = scripts_in_order[1]
-    if a == b or a == "unknown" or b == "unknown":
+    if a == b or a in _NON_CHURN_ATTRIB or b in _NON_CHURN_ATTRIB:
         return None
     toggles = 2  # the first A,B already establishes 1 alternation
     expected = a
@@ -236,7 +269,7 @@ def main() -> int:
 
     for i, title in enumerate(sample, 1):
         revs = fetch_revisions(title, args.rev_limit)
-        scripts = [_attribute(r.get("comment", "")) for r in revs]
+        scripts = [_attribute(r.get("user", ""), r.get("comment", "")) for r in revs]
         per_page.append((title, revs, scripts))
         for s in scripts:
             script_total[s] += 1

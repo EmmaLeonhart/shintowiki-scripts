@@ -6,6 +6,68 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Page-churn diagnostic — improved attribution + widened sample (still no alternation)
+**Files:** `shinto_miraheze/diagnose_page_churn.py`, `docs/page_churn_diagnostic.md`
+
+Completed the (a) + (b) follow-ups from the phase-1 diagnostic earlier
+in the session:
+
+* `SCRIPT_PATTERNS` extended to cover the bot-summary templates that
+  landed as `unknown` in the first run. Notably: `history_offload`
+  now matches `offloading history` / `history cleanup` / `miraheze
+  stability` (the actual wording in the wiki summaries; the original
+  patterns "history offload" / "archive history" never matched);
+  `remove_crud_categories` now also matches `crud category cleanup`
+  (the existing "remove crud categor" pattern missed summaries with
+  text between the words); new `tag_independently_git_synced` rule
+  for the cross-wiki category-mirror tagger.
+
+* New `human` and `human (HotCat)` attribution paths. `_attribute`
+  now takes `(user, comment)`; any non-`EmmaBot`/`EmmaBot Sonnet` user
+  short-circuits to `human` regardless of comment content (so a human
+  edit that quotes a known keyword can't accidentally claim a script).
+  HotCat-gadget edits (`using [[Help:Gadget-HotCat|HotCat]]` marker
+  in the summary) are split out as a distinct `human (HotCat)`
+  attribution since those are a recognisable signal for routine
+  category recategorisation.
+
+* `detect_alternation` now excludes `unknown` AND `human` AND
+  `human (HotCat)` from being half of an alternation pair — human
+  edits are intentional, not bot-vs-bot churn.
+
+* Re-ran with `--sample-size 60` (covers 60 of 69 git_synced category
+  members). Result: **still zero alternation streaks**.
+
+Attribution-count comparison (run 1 → run 2):
+
+| Bucket                    | Run 1 (20 pages) | Run 2 (60 pages) |
+|---------------------------|------------------|------------------|
+| `human`                   | n/a              | 168              |
+| `sync_git_synced`         | 19               | 74               |
+| `history_offload`         | 0 (in `unknown`) | 59               |
+| `strip_html_comments`     | 19               | 58               |
+| `unknown`                 | 97 (71%)         | 58 (14%)         |
+| `human (HotCat)`          | n/a              | 2                |
+| other (each ≤ 2)          | …                | 5                |
+
+What this changes about the conclusion: the new run is on 87% of the
+category with reliable attribution for ~86% of revisions. The two
+bots that touch git_synced pages most often (sync_git_synced + the
+strip_html_comments orchestrator op) **are not toggling** on any
+sampled page. That strongly supports the earlier hypothesis that the
+2026-05-27 sync-ordering fix (commit `8b72a8be` — syncs run before
+any wiki-write step in `cleanup-loop.yml`) stopped the active
+git_synced churn Emma originally flagged.
+
+Cannot CLAIM "fixed" — the sample still excludes 9 pages, the
+remaining `unknown` 14% could theoretically hide patterns, and no
+non-git_synced category has been surveyed yet. But the strongest
+remaining hypothesis after this run is "no current churn".
+
+Queue item updated: phase-2 decision still pending Emma's review;
+remaining follow-ups (c) widen to other sync dirs, (d) make the
+phase-2 fix call — left open.
+
 ### Page-churn diagnostic — phase 1 (sample of git_synced pages, no alternation found)
 **Files:** `shinto_miraheze/diagnose_page_churn.py` (new), `docs/page_churn_diagnostic.md` (new)
 
