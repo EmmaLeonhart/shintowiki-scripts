@@ -32,6 +32,13 @@ from pathlib import Path
 
 import mwclient
 
+# Put the repo root on sys.path so the shinto_miraheze namespace
+# resolves — same pattern as strip_mediawiki_banners.py. No
+# __init__.py in shinto_miraheze/, so the script directory alone
+# isn't enough.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
@@ -224,6 +231,9 @@ def main():
     site.login(USERNAME, PASSWORD)
     print(f"Logged in to {WIKI_URL} as {USERNAME}")
 
+    current_head = head_commit(REPO_ROOT)  # stamped onto every state entry
+    print(f"Current HEAD: {current_head}")
+
     WIKI_DIR.mkdir(parents=True, exist_ok=True)
 
     state = load_state(STATE_FILE)
@@ -251,6 +261,7 @@ def main():
         entry = state.get(title) or {}
         base_revid = entry.get("revid")
         base_sha = entry.get("sha")
+        base_commit = entry.get("sync_commit")
         wiki_sha = sha1_text(wiki_text)
 
         if not local_path.exists():
@@ -260,7 +271,7 @@ def main():
                 continue
             try:
                 local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
-                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha, "sync_commit": current_head}
                 pulled += 1
                 print(f"PULL  {title}  (rev {wiki_revid})")
             except Exception as e:
@@ -277,8 +288,8 @@ def main():
         local_sha = sha1_text(local_text)
 
         if local_sha == wiki_sha:
-            if base_revid != wiki_revid or base_sha != wiki_sha:
-                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+            if base_revid != wiki_revid or base_sha != wiki_sha or base_commit != current_head:
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha, "sync_commit": current_head}
             continue
 
         wiki_changed = base_revid != wiki_revid
@@ -291,7 +302,7 @@ def main():
                 continue
             try:
                 local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
-                state[title] = {"revid": wiki_revid, "sha": wiki_sha}
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha, "sync_commit": current_head}
                 pulled += 1
                 print(f"PULL  {title}  ({base_revid} -> {wiki_revid})")
             except Exception as e:
@@ -314,7 +325,7 @@ def main():
                     summary=f"Sync from repo miraheze_unique/ {args.run_tag}",
                 )
                 new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or wiki_revid
-                state[title] = {"revid": new_revid, "sha": local_sha}
+                state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
                 pushed += 1
                 edits_performed += 1
                 print(f"PUSH  {title}  (new rev {new_revid})")
@@ -324,8 +335,34 @@ def main():
                 print(f"ERROR saving {title}: {e}")
             continue
 
-        # Both sides changed. Repo wins.
+        # Both sides changed. Revision-aware: whichever side has more revs
+        # since baseline wins. Tie / missing-baseline falls back to the
+        # static "repo wins" policy for this directory.
         conflicts += 1
+        rel_path = str(local_path.relative_to(REPO_ROOT)).replace(os.sep, "/")
+        winner = resolve_conflict(
+            site=site, title=title,
+            baseline_revid=base_revid, baseline_commit=base_commit,
+            repo_root=REPO_ROOT, rel_file_path=rel_path,
+            static_policy="repo",
+        )
+
+        if winner == "wiki":
+            if not args.apply:
+                print(f"[DRY] PULL (conflict, wiki has more revs): {title}  ({base_revid} -> {wiki_revid})")
+                pulled += 1
+                continue
+            try:
+                local_path.write_text(wiki_text, encoding="utf-8", newline="\n")
+                state[title] = {"revid": wiki_revid, "sha": wiki_sha, "sync_commit": current_head}
+                pulled += 1
+                print(f"PULL  {title}  (conflict, wiki wins on revision count; {base_revid} -> {wiki_revid})")
+            except Exception as e:
+                errors += 1
+                print(f"ERROR writing {title}: {e}")
+            continue
+
+        # winner == "repo" — push as before.
         if edits_performed >= args.max_edits:
             skipped += 1
             print(f"CONFLICT (repo wins): {title}  (wiki {base_revid} -> {wiki_revid}) - deferred, edit limit reached")
@@ -338,10 +375,10 @@ def main():
             page = site.pages[title]
             result = page.save(
                 local_text,
-                summary=f"Sync from repo miraheze_unique/ (overwriting divergent wiki edit; repo is source of truth) {args.run_tag}",
+                summary=f"Sync from repo miraheze_unique/ (overwriting divergent wiki edit; repo wins on revision count) {args.run_tag}",
             )
             new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or wiki_revid
-            state[title] = {"revid": new_revid, "sha": local_sha}
+            state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
             pushed += 1
             edits_performed += 1
             print(f"PUSH  {title}  (conflict, repo wins; wiki {base_revid} -> {wiki_revid} overwritten, new rev {new_revid})")
@@ -387,7 +424,7 @@ def main():
                     summary=f"Sync from repo miraheze_unique/ (seeding into [[Category:{CATEGORY}]]) {args.run_tag}",
                 )
                 new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title)
-                state[title] = {"revid": new_revid, "sha": local_sha}
+                state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
                 pushed_new += 1
                 edits_performed += 1
                 print(f"PUSH-NEW  {title}  (new rev {new_revid})")

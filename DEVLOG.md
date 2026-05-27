@@ -6,6 +6,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Revision-aware sync conflict resolution: helper module + first sync (sync_miraheze_unique_pages)
+**Files:** `shinto_miraheze/sync_revision_aware.py` (new), `shinto_miraheze/sync_miraheze_unique_pages.py`, `queue.md`
+
+Per Emma's queue note ("bitch make this thing run it isn't hard"):
+replace the static per-directory conflict policy in the sync scripts
+with a revision-count tie-breaker. Whichever side has more revisions
+since the last sync baseline wins; on tie (or missing baseline) fall
+back to the existing static policy per script.
+
+This commit ships the **helper module + first sync script**. The
+remaining 4 sync scripts will follow as separate commits to keep
+each unit reviewable.
+
+* `sync_revision_aware.py` exposes three small helpers:
+  `count_wiki_revs_since(site, title, baseline_revid)` (one API call
+  with `rvendid` + `rvlimit=500`); `count_repo_commits_since(repo_root,
+  file_path, baseline_commit)` (`git rev-list --count base..HEAD --
+  file`); and a `resolve_conflict(...)` wrapper that combines the two
+  and returns `"wiki"` or `"repo"`, falling back to the
+  caller-supplied `static_policy` on tie or missing baseline. Also
+  exposes `head_commit(repo_root)` so callers can stamp the current
+  HEAD on the state entries they write.
+
+* `sync_miraheze_unique_pages.py` extended: per-page state now
+  `{revid, sha, sync_commit}`; conflict branch calls
+  `resolve_conflict(..., static_policy="repo")`; new `"wiki"` branch
+  PULLs instead of pushing; edit summary on the repo-wins push
+  updated to say "repo wins on revision count" rather than the old
+  flat "repo is source of truth". Backward-compat: existing entries
+  without `sync_commit` cause `resolve_conflict` to return the
+  static policy, so behaviour matches today's runs until each entry
+  gets its first new sync.
+
+Verified by import-load + helper smoke test against the live repo
+(HEAD SHA resolves, `count_repo_commits_since` returns expected
+count on a known range, `resolve_conflict` with no baseline returns
+the supplied static policy). End-to-end behaviour against the wiki
+will surface on the next `wiki-cleanup.yml` run.
+
 ### Create `[[Open questions]]` page (wiki-side bot↔Emma interface), link from Main Page
 **Files:** `git_synced/Open questions.wiki` (new), `git_synced/Main Page.wiki`, `queue.md`
 

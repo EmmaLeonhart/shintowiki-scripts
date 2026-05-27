@@ -27,48 +27,41 @@ re-pulled from the wiki, cursor reset. Still open:
   (via claude.ai schedules) to drop the cursor and pick category-tagged files at
   random. (Repo-side mitigations already in place: `remote_queue.py` shuffles +
   category-filters, cursor reset to 0.)
-## Wikidata: カミノヤシロ kana — manual stragglers (bot request 2026-02-26)
+## Bot ping-pong / never-settling pages (2026-05-26) — revision-aware conflict resolution
 
-I think this is complete
+Emma's ask: "bitch make this thing run it isn't hard". Replace the static
+"repo-wins / wiki-wins by directory" conflict policy in the 5 sync scripts
+with: whichever side has more revisions since the baseline wins; on tie use
+the existing static policy as fallback. Concrete steps:
 
-
-Both bot jobs shipped (see DEVLOG 2026-05-23). The "18 leftovers" earlier were a
-false alarm: part 2 now defers to part 1 whenever the ojp-hani P1448 already has
-a katakana qualifier (part 1 appends カミノヤシロ to it; the top-level modern
-hiragana reading is normal and left alone). Emma fixed the original 3
-ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
-
-- [ ] **Items with 0 or >1 ojp-hani P1448 official name** (rare; surface in the
-  `seed_kana_qualifier.py --dry-run` "AMBIGUOUS" report, e.g. Q135040786
-  with no ojp-hani name). Emma handles these directly on the wiki as they appear
-  — no bot action.
-
-
-## Bot ping-pong / never-settling pages (2026-05-26)
-
-bitch make this thing run  it isn't hard
-
-- [ ] **Make sync conflict-resolution revision-aware (not static policy).**
-  Currently per `feedback_sync_conflict_policy.md`: wiki-wins for
-  duplicated_content/need_translation, repo-wins for
-  git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
-  side is further ahead in revisions wins, with per-directory tie-break
-  rules (TBD). See todo.md "Bot ping-pong" for the full theory.
+- [ ] Add `shinto_miraheze/sync_revision_aware.py` helper with two functions:
+  `count_wiki_revs_since(site, title, baseline_revid)` → int,
+  `count_repo_commits_since(repo_root, file_path, baseline_commit)` → int.
+- [ ] Extend each sync's per-entry state from `{revid, sha}` to
+  `{revid, sha, sync_commit}`. Backward-compat: if `sync_commit` is absent,
+  fall back to the existing static policy on conflict.
+- [ ] In each sync's "both changed" branch, compute the two counts; PULL if
+  wiki > repo, PUSH if repo > wiki, tie → static policy.
+- [ ] Set `sync_commit = current HEAD` on every successful state-write.
+- [ ] Migrate all 5: sync_git_synced_pages.py, sync_miraheze_unique_pages.py,
+  sync_fandom_unique_pages.py, sync_need_translation.py,
+  sync_duplicated_content.py.
 
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
-
-
-I think this is resolved
 
 - [ ] **Run `delete_lowercase_template_collisions.py --apply` once the
   `canonicalize_template_case` sweep finishes.** Script lives at
   `shinto_miraheze/delete_lowercase_template_collisions.py`; per-page
   safeguard refuses to delete unless (a) lowercase variant exists,
-  (b) canonical capitalised twin exists, (c) content is byte-
-  identical, (d) `embeddedin` returns zero transclusions. Dry-run
-  2026-05-27 against both wikis: every one of the 19 lowercase pages
-  still has live transclusions (sweep in flight), so 0 would-deletes
-  — re-run after another full orchestrator cycle or two.
+  (b) canonical capitalised twin exists, (c) content is byte-identical,
+  (d) `embeddedin` returns zero transclusions. Verified 2026-05-27 (2nd
+  dry-run, post-Emma-noble-move): the noble case is resolved (canonical
+  exists; lowercase is now a 495-byte redirect, which trips check (c)
+  byte-identical — that's fine, the redirect points at the canonical so
+  transclusions still work). All other 19 lowercase pages still have
+  live transclusions on at least one wiki. Re-run after another full
+  orchestrator cycle or two. Optional follow-up: relax safety check (c)
+  to accept "lowercase is a `#REDIRECT` to canonical" as safe-to-delete.
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
