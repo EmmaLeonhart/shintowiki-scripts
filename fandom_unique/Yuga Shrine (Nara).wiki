@@ -13,10 +13,10 @@
 |地図   = Nara city}}
 [[File:Yuga-jinja 201611a.jpg|thumb|200px|Autumn foliage at Yuga Shrine in mid-November 2016]]
 
-'''Yuga Shrine''' (瑜伽神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Takabatakechō|ja|高畑町|12=simple|13=User:Immanuelle/Takabatake Town|comment=changed title based on wikidata|qid=Q24899934}}, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}, on Yuga Mountain.
+'''Yuga Shrine''' (瑜伽神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Takabatakechō|ja|高畑町|12=simple|13=User:Immanuelle/Takabatake Town|comment=changed title based on wikidata|qid=Q24899934}}, {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}, on Yuga Mountain.
 
 == History ==
-According to shrine tradition, the sacred mountain {{ill|Asuka Kannabi|ja|飛鳥神奈備|12=simple|13=User:Immanuelle/Asuka Kannabi|ja_comment=jawiki link invalid}} was relocated to this site with the establishment of {{ill|Heijō-kyō|en|Heijō-kyō|qid=Q862509|lt=Heijō-kyō}}, and the mountain was subsequently called the Asuka Mountain of Heijō{{sfn|Nara City History: Shrines and Temples|p=81}}. Initially, the shrine served as the guardian of {{ill|Gangō-ji|en|Gangō-ji|qid=Q1203099|lt=Gango-ji}} {{ill|Q104539457|ja|禅定院|12=simple|13=User:Immanuelle/Zenjō-in|comment=changed title based on wikidata|qid=Q104539457}}, protecting against misfortune from the {{ill|Kimon|ja|鬼門|12=simple|13=User:Immanuelle/Kimon|qq=}} direction. Later, when {{ill|Daijō-in|ja|大乗院|12=simple|13=User:Immanuelle/Daijō-in|comment=changed title based on wikidata|qid=Q16766994}} of {{ill|Kōfuku-ji|en|Kōfuku-ji|qid=Q1070863|lt=Kōfuku-ji}} was built at the foot of the mountain, the shrine was venerated by the {{ill|Fujiwara clan|en|Fujiwara clan|qid=Q641628|lt=Fujiwara clan}} and others{{sfn|Nara City History: Shrines and Temples|p=81}}.
+According to shrine tradition, the sacred mountain {{ill|Asuka Kannabi|ja|飛鳥神奈備}} was relocated to this site with the establishment of {{ill|Heijō-kyō|en|Heijō-kyō|qid=Q862509|lt=Heijō-kyō}}, and the mountain was subsequently called the Asuka Mountain of Heijō{{sfn|Nara City History: Shrines and Temples|p=81}}. Initially, the shrine served as the guardian of {{ill|Gangō-ji|en|Gangō-ji|qid=Q1203099|lt=Gango-ji}} {{ill|Q104539457|ja|禅定院|12=simple|13=User:Immanuelle/Zenjō-in|comment=changed title based on wikidata|qid=Q104539457}}, protecting against misfortune from the {{ill|Kimon|ja|鬼門}} direction. Later, when {{ill|Daijō-in|ja|大乗院|12=simple|13=User:Immanuelle/Daijō-in|comment=changed title based on wikidata|qid=Q16766994}} of {{ill|Kōfuku-ji|en|Kōfuku-ji|qid=Q1070863|lt=Kōfuku-ji}} was built at the foot of the mountain, the shrine was venerated by the {{ill|Fujiwara clan|en|Fujiwara clan|qid=Q641628|lt=Fujiwara clan}} and others{{sfn|Nara City History: Shrines and Temples|p=81}}.
 
 The ''{{ill|Daijōin Jisha Zōjiki|ja|大乗院寺社雑事記|12=simple|13=User:Immanuelle/Daijō-in Jisha Zasshiki|comment=changed title based on wikidata|qid=Q11432101}}'' records an entry from December 30, 1494, stating "Ichigo Chieko-in-den Go-kenchiku no Bun ... Imamiyaden Goten Dō Haiden Kari-fuki ya," identifying "Imamiya" as referring to this shrine. It is said that "Imamiya" was used in contrast to the original shrine in Asuka{{sfn|Nara City History: Shrines and Temples|p=81}}. The current name, Yuga Shrine, has been in use only relatively recently{{sfn|Nara City History: Shrines and Temples|p=81}}.
 
@@ -28,9 +28,9 @@ The ''{{ill|Daijōin Jisha Zōjiki|ja|大乗院寺社雑事記|12=simple|13=User
 * '''Asuka Kannabi Shrine'''
 ''' Enshrining the gentle spirit of Yuga Ōkami
 * '''Saritahiko Shrine'''
-''' {{ill|Sarutahiko Ōkami|ja|猿田彦大神|12=simple|13=User:Immanuelle/Sarutahiko Ōkami|ja_comment=jawiki redirects to サルタヒコ}}
+''' {{ill|Sarutahiko Ōkami|ja|猿田彦大神}}
 * '''Kuebiko Shrine'''
-''' {{ill|Kuebiko Ōkami|ja|久延毘古大神|12=simple|13=User:Immanuelle/Kuebiko Ōkami|ja_comment=jawiki link invalid}}
+''' {{ill|Kuebiko Ōkami|ja|久延毘古大神}}
 * '''Hitokoto Inari Shrine'''
 
 == Cultural Properties ==
@@ -39,9 +39,9 @@ The ''{{ill|Daijōin Jisha Zōjiki|ja|大乗院寺社雑事記|12=simple|13=User
 In spring, the flowers bloom again upon Yuga Mountain.
 Today’s autumn leaves, one hesitates to part from.
 </blockquote>
-The poem was composed by {{ill|Yoshiki Kajino|ja|梶野良材|12=simple|13=User:Immanuelle/Kajino Yoshitaka|comment=changed title based on wikidata|qid=Q11538933}}, also known as Kajino Tosa-no-kami Fujiwara no Yoshitaka. He served as the {{ill|Ongoku-bugyō|ja|奈良奉行|12=simple|13=User:Immanuelle/Nara Magistrate|ja_comment=jawiki redirects to 遠国奉行|comment=changed title based on wikidata|qid=Q17171698}} from April 8, 1831, until his transfer as the Kyoto West Magistrate on December 8, 1837. He also authored ''{{ill|Yamashiro Yamato Kenbun Zuihitsu|ja|山城大和見聞随筆|12=simple|13=User:Immanuelle/Yamashiro Yamato Kenbun Zuihitsu|ja_comment=jawiki link invalid}}'' ("An Essay on Observations in Yamashiro and Yamato").
+The poem was composed by {{ill|Yoshiki Kajino|ja|梶野良材|12=simple|13=User:Immanuelle/Kajino Yoshitaka|comment=changed title based on wikidata|qid=Q11538933}}, also known as Kajino Tosa-no-kami Fujiwara no Yoshitaka. He served as the {{ill|Ongoku-bugyō|ja|奈良奉行|12=simple|13=User:Immanuelle/Nara Magistrate|ja_comment=jawiki redirects to 遠国奉行|comment=changed title based on wikidata|qid=Q17171698}} from April 8, 1831, until his transfer as the Kyoto West Magistrate on December 8, 1837. He also authored ''{{ill|Yamashiro Yamato Kenbun Zuihitsu|ja|山城大和見聞随筆}}'' ("An Essay on Observations in Yamashiro and Yamato").
 
-Yuga Mountain has been famous for its cherry blossoms and autumn foliage since ancient times and is included among the {{ill|Sixteen Views of Nara|ja|奈良十六景|12=simple|13=User:Immanuelle/Sixteen Views of Nara|ja_comment=jawiki link invalid}}, featuring "Yuga Mountain Cherry Blossoms" and "Yuga Mountain Autumn Leaves"{{sfn|Nara City History: Shrines and Temples|p=80}}.
+Yuga Mountain has been famous for its cherry blossoms and autumn foliage since ancient times and is included among the {{ill|Sixteen Views of Nara|ja|奈良十六景}}, featuring "Yuga Mountain Cherry Blossoms" and "Yuga Mountain Autumn Leaves"{{sfn|Nara City History: Shrines and Temples|p=80}}.
 
 === "Asuka of Heijō" Manyō Poem Monument ===
 <blockquote>
@@ -49,7 +49,7 @@ The Asuka of my old home is now in ruin,
 Yet fair is Asuka of Nara,
 How beautiful it remains.
 </blockquote>
-This poem was composed by {{ill|Ōtomo no Sakanoue no Iratsume|en|Ōtomo no Sakanoue no Iratsume|qid=Q839976|lt=Ōtomo no Sakanoue no Iratsume}} in the fifth year of {{ill|Tenpyō|en|Tenpyō|qid=Q1199879|lt=Tenpyō}}, corresponding to 733 CE.
+This poem was composed by {{ill|Ōtomo no Sakanoue no Iratsume|en|Ōtomo no Sakanoue no Iratsume|qid=Q839976|lt=Ōtomo no Sakanoue no Iratsume}} in the fifth year of {{ill|Tenpyō|br|Tenpyō|ca|Era Tenpyō|de|Tempyō|es|Tenpyō|fa|تنپیو|fr|Ère Tenpyō|ia|Tenpyo|id|Tempyō|it|Tenpyō|ja|天平|ko|덴표|no|Tenpyō|pt|Tenpyō|ru|Тэмпё|simple|Tenpyō|sr|Тенпјо|tr|Tenpyō|uk|Темпьо (ненґо)|zh|天平 (日本)|zh_yue|天平 (日本)|qid=Q1199879|lt=Tenpyō}}, corresponding to 733 CE.
 
 == Access ==
 * By train: The shrine is accessible from {{ill|Kintetsu Nara Station|en|Kintetsu Nara Station|qid=Q6414371|lt=Kintetsu Nara Station}}, followed by a short walk.
@@ -79,7 +79,7 @@ File:Yuga-jinja 201511.jpg|Torii, approach, and stone lantern
 
 {{Commons category|Yuga Shrine}}
 
-{{wikidata link|Q22120767|co|commons:Category:Yuga Shrine|ja|瑜伽神社 (奈良市)|ja|瑜伽神社|check_date=2026-05-12}}
+{{wikidata link|Q22120767|co|commons:Category:Yuga Shrine|ja|瑜伽神社 (奈良市)|ja|瑜伽神社|grok=none|check_date=2026-05-27}}
 [[Category:Chinjusha]]
 [[Category:Heijō-kyō]]
 [[Category:Shinto]]
