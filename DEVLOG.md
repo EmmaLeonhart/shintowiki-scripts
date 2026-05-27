@@ -6,6 +6,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Refactor configure-wikidata-link-grok-categories to be repo-side
+**Files:** `shinto_miraheze/configure_wikidata_link_grok_categories.py`, `.github/workflows/configure-wikidata-link-grok-categories.yml`
+
+Reversed the configure workflow's polarity: it used to log into miraheze
+via `mwclient` and edit `Template:Wikidata link` on the wiki directly.
+That was the wrong shape — the template is in
+`[[Category:Independently git synced pages]]`, which is repo-wins for
+conflicts, so any wiki-side edit lived in a vulnerable window before
+the next `sync_miraheze_unique_pages` run clobbered it with the
+unchanged repo state (we hit that trap on 2026-05-27, fixed in
+commit `bd4b937d` by manually syncing the repo file to the live wiki).
+
+The new shape:
+
+* Script reads + writes `miraheze_unique/Template%3AWikidata link.wiki`
+  in the repo via the existing `_replace_or_append` helper. No
+  `mwclient`, no wiki login. Standard `--apply` / `--run-tag` CLI
+  preserved.
+* Workflow drops the `WIKI_USERNAME` / `WIKI_PASSWORD` env, drops the
+  secret-validation step, switches `permissions:` to `contents: write`,
+  and adds a final `Commit + push` step that stages the file, skips on
+  no-change, and pushes a `[skip ci]` commit so the next sync cycle
+  picks it up.
+* Re-running on an already-current file is a no-op — verified locally
+  with both `--dry-run` and `--apply` against the current
+  GROK_BLOCK-bearing file.
+
+Net effect: when the snippet logic next needs to change, edit the
+`GROK_BLOCK` constant in the script, dispatch the workflow, and the
+repo + wiki stay in sync through the normal sync pipeline. No more
+"edit wiki, hope sync doesn't clobber" vulnerability.
+
 ### Verified: dup-content pipeline drained Take Minato Shrine end-to-end
 **Files:** (verification only — no code change)
 

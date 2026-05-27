@@ -1,65 +1,62 @@
 name: Configure Wikidata Link Grok Categories
 
-# One-shot: edits Template:Wikidata link on shinto.miraheze.org to add a
-# conditional categorisation block that classifies every page transcluding
-# the template by its `grok` parameter state:
+# Edit the repo file `miraheze_unique/Template%3AWikidata link.wiki` to
+# install / refresh the conditional Grokopedia categorisation snippet,
+# then commit + push. The next cleanup-loop run propagates the file to
+# the live wiki via `sync_miraheze_unique_pages.py` (repo-wins for that
+# directory, so the repo is the source of truth — see CLAUDE.md and the
+# 2026-05-27 fix in commit bd4b937d).
 #
-#   grok=<slug>  → [[Category:Pages with Grokipedia links]]
-#   grok=        → [[Category:Pages without Grokipedia links]]
-#   no grok      → [[Category:Pages to be checked for Grokipedia]]
+# Idempotent: the configure script's `_replace_or_append` helper splices
+# the snippet in place of any existing marker block, or appends one if
+# none is present. Re-running on an already-current file is a no-op.
 #
-# The grokipedia_link orchestrator op sets the grok= parameter on each
-# mainspace page after probing grokipedia.com; this workflow wires up the
-# template side so the categorisation comes from MediaWiki parser-functions
-# automatically.
-#
-# Idempotent. Trigger manually from the Actions tab (workflow_dispatch).
-# Not wired into cleanup-loop — once the template carries the snippet,
-# this never needs to fire again.
+# Trigger manually from the Actions tab (workflow_dispatch). Not wired
+# into cleanup-loop — re-run only when the snippet itself needs to change.
+# No wiki credentials required: this workflow never touches the wiki
+# directly.
 
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   configure:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    env:
-      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
-      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install mwclient
-
-      - name: Validate required secrets
-        run: |
-          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
-            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
-            exit 1
-          fi
-          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
-            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
-            exit 1
-          fi
-
-      - name: Compute run tag
-        run: |
-          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-          echo "RUN_TAG=[[github:${RUN_PATH}|configure-wikidata-link-grok-categories]]" >> "$GITHUB_ENV"
-
-      - name: "Configure Template:Wikidata link (grok-based categorisation)"
+      - name: "Apply GROK_BLOCK to repo file (no wiki access)"
         run: |
           python3 shinto_miraheze/configure_wikidata_link_grok_categories.py \
             --apply \
-            --run-tag "${RUN_TAG}"
+            --run-tag "configure-wikidata-link-grok-categories workflow_dispatch run ${GITHUB_RUN_ID}"
+
+      - name: "Commit + push if the file changed"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "miraheze_unique/Template%3AWikidata link.wiki"
+          if git diff --cached --quiet; then
+            echo "Repo file already current — nothing to commit."
+            exit 0
+          fi
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          MSG=$(printf '%s\n\n%s\n' \
+            "ci(grok): refresh Template:Wikidata link GROK_BLOCK [skip ci]" \
+            "Triggered by [[github:${RUN_PATH}|configure-wikidata-link-grok-categories]]. Re-applied the conditional GROK_BLOCK to the repo file; the next sync_miraheze_unique_pages run will propagate to shinto.miraheze.org.")
+          git commit -m "$MSG"
+          git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo "Pushed."

@@ -2,27 +2,37 @@
 """
 configure_wikidata_link_grok_categories.py
 ==========================================
-One-shot: install the conditional Grokopedia-categorisation snippet onto
-``Template:Wikidata link`` so that pages transcluding the template are
-auto-categorised by the state of the template's ``grok`` parameter:
+Install / update the conditional Grokopedia categorisation snippet in
+``miraheze_unique/Template%3AWikidata link.wiki`` — the repo-side
+source-of-truth for ``Template:Wikidata link`` on shinto.miraheze.org.
 
-  * ``grok=<slug>``  (set, non-empty) → [[Category:Pages with Grokipedia links]]
-  * ``grok=``        (set, empty)     → [[Category:Pages without Grokipedia links]]
-  * no ``grok`` param at all          → [[Category:Pages to be checked for Grokipedia]]
+The wiki page is mirrored bidirectionally with that repo file by
+``sync_miraheze_unique_pages.py`` (run from cleanup-loop.yml). The
+conflict policy for ``miraheze_unique/`` is REPO-WINS — so the proper
+place to edit the template is the repo file. Editing the live wiki
+directly creates a window where the repo is behind, and the next sync
+clobbers the wiki edit with the stale repo state (we hit that exact
+trap on 2026-05-27, fixed in commit bd4b937d).
 
-The ``grokipedia_link`` orchestrator op writes ``grok=<slug>`` or
-``grok=`` onto each mainspace page's wikidata-link template after
-probing grokipedia.com; this script wires the template side, so the
-categorisation comes for free from MediaWiki's parser-functions.
+This script reads the repo file, applies / refreshes the
+``<!-- BEGIN_GROK_AUTO_CATEGORIES -->`` block via the
+``_replace_or_append`` helper, and writes back. The workflow then
+commits + pushes the file change; the next ``sync_miraheze_unique_pages``
+run propagates to the wiki.
 
-Idempotent. Looks for the marker comment
-``<!-- BEGIN_GROK_AUTO_CATEGORIES -->``; if present, no-ops. If absent,
-appends a self-contained ``<includeonly>`` block at the bottom of the
-template so the categorisation only fires on transcluding pages (the
-template page itself is unaffected).
+State table (template snippet behaviour, after the snippet lands):
 
-Standard CLI flags: ``--apply`` (default dry-run), ``--run-tag``. Wiki
-auth via ``WIKI_USERNAME`` + ``WIKI_PASSWORD`` env vars.
+  * ``grok=<slug>``  (non-empty, not "none") → emit ``[[got:<slug>]]``
+                                               interwiki + "Pages with
+                                               Grokipedia links" cat
+  * ``grok=none``                             → "Pages without Grokipedia
+                                                 links"
+  * ``grok=`` (empty) OR no ``grok`` param   → "Pages to be checked for
+                                                 Grokipedia"
+
+CLI: ``--apply`` (default dry-run), ``--max-edits`` (kept for CI
+uniformity — this script touches one file), ``--run-tag``. No wiki
+authentication required.
 """
 
 import argparse
@@ -31,44 +41,21 @@ import os
 import re
 import sys
 
-import mwclient
-
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-WIKI_URL = "shinto.miraheze.org"
-WIKI_PATH = "/w/"
-USER_AGENT = (
-    "ConfigureWikidataLinkGrokCategories/1.0 "
-    "(User:EmmaBot; shinto.miraheze.org)"
-)
-TEMPLATE_TITLE = "Template:Wikidata link"
+# Repo-relative path of the file we edit. miraheze_unique/ is the
+# miraheze-side mirror dir; the title is URL-encoded the way
+# sync_miraheze_unique_pages.title_to_filename() encodes it (``:``
+# becomes ``%3A``, spaces preserved as-is).
+TEMPLATE_FILE = "miraheze_unique/Template%3AWikidata link.wiki"
 
 BEGIN_MARKER = "<!-- BEGIN_GROK_AUTO_CATEGORIES -->"
 END_MARKER = "<!-- END_GROK_AUTO_CATEGORIES -->"
 
-# Three-state classification driven by the `grok` parameter, plus the
-# actual Grokopedia interwiki link rendering when a real slug is set.
-# MediaWiki on miraheze treats `grok=` (empty) the same as a totally
-# unpassed parameter — both make `{{{grok|}}}` resolve to "" — so an
-# empty slot CANNOT distinguish "checked, no article" from "not yet
-# checked". The orchestrator op therefore writes the literal sentinel
-# ``none`` for the missing case.
-#
-# Template behaviour per state:
-#
-#   grok=<slug>   (non-empty, not "none") → emit `[[got:<slug>]]` interwiki
-#                                          + "Pages with Grokipedia links" cat
-#   grok=none                              → "Pages without Grokipedia links"
-#   grok= (empty) OR no grok param at all  → "Pages to be checked for Grokipedia"
-#
-# The `[[got:...]]` is the Grokopedia interwiki prefix (configured on
-# the wiki); it routes to https://grokipedia.com/page/<slug>. Wrapped
-# in <includeonly> so the link only appears on pages that TRANSCLUDE
-# the template — never on Template:Wikidata link's own subject page.
-#
-# The legacy `grok=` (empty) state is folded into "to be checked"
-# alongside fully-absent; the orchestrator op rewrites those to
-# `grok=none` on the next visit so they migrate to the correct bucket.
+# Three-state classification + Grokopedia interwiki rendering. See
+# module docstring for the full semantics. MediaWiki on miraheze treats
+# ``grok=`` (empty) the same as a totally unpassed parameter, so the
+# missing case uses the literal sentinel ``none``.
 GROK_BLOCK = (
     f"<includeonly>{BEGIN_MARKER}\n"
     "{{#ifeq:{{{grok|}}}|none|"
@@ -104,50 +91,47 @@ def _replace_or_append(text: str, block: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--apply", action="store_true", help="actually save the edit")
+    ap.add_argument("--apply", action="store_true",
+                    help="actually write the file (default: dry-run)")
     ap.add_argument(
         "--max-edits", type=int, default=1,
-        help="hard ceiling on saves; this script only ever does 1, flag kept for CI uniformity",
+        help="hard ceiling on writes; this script only ever does 1, "
+             "flag kept for CI uniformity",
     )
-    ap.add_argument("--run-tag", default="manual run")
+    ap.add_argument("--run-tag", default="manual run",
+                    help="echoed into the workflow's git-commit message")
     args = ap.parse_args()
 
-    username = os.getenv("WIKI_USERNAME", "EmmaBot")
-    password = os.getenv("WIKI_PASSWORD", "")
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
-    site.login(username, password)
-    print(f"Logged in as {username}")
-
-    page = site.pages[TEMPLATE_TITLE]
-    if not page.exists:
-        print(f"FATAL: {TEMPLATE_TITLE} does not exist on the wiki.", file=sys.stderr)
+    if not os.path.exists(TEMPLATE_FILE):
+        print(f"FATAL: {TEMPLATE_FILE} does not exist in the repo.",
+              file=sys.stderr)
         return 2
 
-    current = page.text()
-    print(f"Fetched {TEMPLATE_TITLE} ({len(current)} chars)")
+    with open(TEMPLATE_FILE, "r", encoding="utf-8") as f:
+        current = f.read()
+    print(f"Read {TEMPLATE_FILE} ({len(current)} chars)")
 
     new_text = _replace_or_append(current, GROK_BLOCK)
 
     if new_text == current:
-        print("Template already carries the current GROK_BLOCK verbatim — no-op.")
+        print("Repo file already carries the current GROK_BLOCK "
+              "verbatim — no-op.")
         return 0
 
     action = "replace existing block" if BEGIN_MARKER in current else "append new block"
-    summary = (
-        f"configure Grokopedia conditional categorisation ({action}; "
-        f"grok=<slug>|grok=none|empty-or-absent → 3 tracking categories) "
-        f"{args.run_tag}"
-    ).strip()
+    preview = GROK_BLOCK.replace("\n", "\\n")
 
     if not args.apply:
-        preview = GROK_BLOCK.replace("\n", "\\n")
         print(f"DRY RUN ({action}): block content =")
         print(f"  {preview}")
-        print(f"  summary: {summary}")
+        print(f"  run-tag: {args.run_tag}")
         return 0
 
-    page.save(new_text, summary=summary, minor=False, bot=True)
-    print(f"EDIT applied to {TEMPLATE_TITLE}: {action}.")
+    with open(TEMPLATE_FILE, "w", encoding="utf-8", newline="") as f:
+        f.write(new_text)
+    print(f"EDIT applied to {TEMPLATE_FILE}: {action}.")
+    print("  Next sync_miraheze_unique_pages run will push this to "
+          "shinto.miraheze.org.")
     return 0
 
 
