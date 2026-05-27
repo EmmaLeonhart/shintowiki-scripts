@@ -83,10 +83,6 @@
     "revid": 3760494,
     "sha": "2907133dc42e1cc7234ab004b119bf278f2322cc"
   },
-  "Heart (Chinese constellation)": {
-    "revid": 3760314,
-    "sha": "f01d475a38a05c2a0523040fb5a521ff070eb777"
-  },
   "Heijō Shrine": {
     "revid": 3760315,
     "sha": "43fa1e1c2dd35fbf1a16a1ff881f7074906b92bd"
@@ -236,8 +232,8 @@
     "sha": "ebea213e07f0636edc308756f97852b9c5928818"
   },
   "Kawara Shrine (Gekū)": {
-    "revid": 3751131,
-    "sha": "1a6934b9d00d4997eef90dc6ee7a1412fcb33a83"
+    "revid": 3768054,
+    "sha": "fa2dfb15c6757d934642bdf0375f6bb26d922638"
   },
   "Kawara Shrine (Naikū)": {
     "revid": 3766289,
@@ -564,7 +560,7 @@
     "sha": "c90981f439a536388a099db321b1ee9653e0d4df"
   },
   "Ubagami Daijingu Togyo Festival": {
-    "revid": 3766962,
-    "sha": "5b7c1b3f5bf8200e753c3273191f3a7ec809d15f"
+    "revid": 3768055,
+    "sha": "7f311daaa8a7fee7ad9c61be5bd375f28c3b9a7f"
   }
 }
