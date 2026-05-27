@@ -175,7 +175,7 @@ You must remove the hidden notes (both the <code><nowiki></nowiki></code> charac
 
 ; trade_name : Trade name, doing business as, d/b/a or fictitious business name under which a company presents itself to the public. This parameter is used only when the company has a legally registered trade name that is different from the company's full, legal name.
 :Example:
-:: "Cellco Partnership" is the full, legal name of the company that trades as "[[Verizon Wireless]]". This template's name parameter would, therefore, be set as Cellco Partnership, while its trade_name parameter would be set as Verizon Wireless.
+:: "Cellco Partnership" is the full, legal name of the company that trades as "{{ill|Verizon|ar|فيرايزون للاتصالات اللاسلكية|azb|ورایزن وایرلس|be|Verizon Wireless|ca|Verizon Wireless|de|Verizon Wireless|en|Verizon (wireless service)|es|Verizon Wireless|fa|ورایزن وایرلس|fr|Verizon Wireless|id|Verizon Wireless|it|Verizon Wireless|ja|ベライゾン・ワイヤレス|kk|Verizon Wireless|ko|버라이즌 (모바일 네트워크)|ms|Verizon Wireless|pl|Verizon Wireless|pt|Verizon Wireless|ru|Verizon Wireless|sah|Verizon Wireless|th|เวอไรซอน (เครือข่ายมือถือ)|uk|Verizon Wireless|wuu|威瑞森无线|zh|威訊無線|lt=Verizon|qid=Q919641}}". This template's name parameter would, therefore, be set as Cellco Partnership, while its trade_name parameter would be set as Verizon Wireless.
 
 ; native_name : The full, legal non-English name of the company as it appears in the company's home country language, reproducing any punctuation or abbreviations. For Chinese and Korean names' syntax, see [[#Embedding|the "Embedding" section below]].
 :Examples:
@@ -223,7 +223,7 @@ You must remove the hidden notes (both the <code><nowiki></nowiki></code> charac
 :Examples:
 :: {{Unbulleted list|Thomas Oliver|<syntaxhighlight lang="wikitext" inline>{{Unbulleted list|[[Paul Allen]]|[[Bill Gates]]}}</syntaxhighlight>}}
 
-; defunct{{efn|name=defunct}} : The year (or, more specifically, if known, the date) the company became defunct/[[Dissolution (law)|legally dissolved]]. Use {{tlx|End date}}.
+; defunct{{efn|name=defunct}} : The year (or, more specifically, if known, the date) the company became defunct/{{ill|dissolution|cs|Dissoluce|en|Dissolution (law)|es|Disolución (derecho)|fa|انحلال (حقوق)|ja|解散|ko|해체 (법률)|ms|Pembubaran (undang-undang)|nl|Ontbinding (overeenkomst)|lt=dissolution|qid=Q5282797}}. Use {{tlx|End date}}.
 :Fallback Wikidata item: {{Wikidata entity link|P576}}
 :Examples:
 :: {{Unbulleted list|<syntaxhighlight lang="wikitext" inline>{{End date|2000}}</syntaxhighlight>|<syntaxhighlight lang="wikitext" inline>{{End date|1936|06|30}}</syntaxhighlight>}}
@@ -263,7 +263,7 @@ You must remove the hidden notes (both the <code><nowiki></nowiki></code> charac
 :Example:
 :: {{Unbulleted list|<syntaxhighlight lang="wikitext" inline>{{Unbulleted list|[[Tim Cook]] ([[Chief executive officer|CEO]])|[[:en:Arthur D. Levinson|Arthur D. Levinson]] ([[:en:Chairman|Chairman]])|[[Jonathan Ive]] ([[Senior vice-president|SVP]] of [[industrial design]])|[[Steve Jobs]] (chairman, 1976–1985, 2011; CEO, 1997–2011)}}</syntaxhighlight>}}
 
-; products : A representative selection of the company's well-known current or former [[Product (business)|products]], listed alphabetically. If there is more than one entry, use {{tlx|Unbulleted list}} to format the entries.
+; products : A representative selection of the company's well-known current or former {{ill|product|ar|منتج (اقتصاد)|az|Məhsul (biznes)|azb|محصول|bar|Produkt (Wirtschaft)|be|Прадукт (бізнес)|bg|Продукт (бизнес)|bs|Proizvod (ekonomija)|ca|Producte (màrqueting)|ckb|بەرھەم (کاسبی)|cs|Produkt (obchod)|da|Produkt (erhverv)|de|Produkt (Wirtschaft)|el|Εμπόρευμα|en|Product (business)|eo|Produkto (ekonomio)|es|Producto (mercadotecnia)|et|Toode|fa|فراورده|fi|Tuote|he|מוצר|hi|उत्पाद|hr|Proizvod|ht|Pwodui (ekonomi)|hy|Արտադրանք (բիզնես)|id|Produk|it|Prodotto (economia)|ja|商品|jv|Wijil|ki|Kĩacawũ|kk|Бұйым|ko|상품|li|Perduk|lt|Produktas|lv|Produkts|min|Produk|mn|Бүтээгдэхүүн|nl|Product (economie)|no|Produkt (økonomi)|pa|ਉਤਪਾਦ (ਕਾਰੋਬਾਰ)|pl|Produkt (marketing)|ps|تولید (سوداگري)|pt|Produto (marketing)|ro|Produs (economie)|ru|Продукт (бизнес)|sah|Табаар|sh|Proizvod|simple|Product (business)|sk|Výrobok|sl|Produkt (posel)|sr|Производ|sv|Produkt (ekonomi)|th|ผลิตภัณฑ์ (ธุรกิจ)|tr|Ürün (işletme)|tt|Продукт|uk|Продукт (економіка)|ur|مصنوعات (کاروبار)|uz|Mahsulot|vi|Sản phẩm|zh|产品|zh_yue|產品|zu|Umkhiqizo (womhwebo)|lt=product|qid=Q2424752}}, listed alphabetically. If there is more than one entry, use {{tlx|Unbulleted list}} to format the entries.
 :Examples:
 :: {{Unbulleted list|<syntaxhighlight lang="wikitext" inline>{{Unbulleted list|[[:en:Microsoft Windows|Microsoft Windows]]|[[:en:Microsoft Office|Microsoft Office]]}}</syntaxhighlight>|<syntaxhighlight lang="wikitext" inline>{{Unbulleted list|[[:en:Bentley Continental Flying Spur|Continental Flying Spur]]|[[:en:Bentley Continental GT|Continental GT]]|[[Bentley Mulsanne (2010)|Mulsanne]]}}</syntaxhighlight>}}
 

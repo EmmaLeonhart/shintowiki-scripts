@@ -194,4 +194,5 @@ This subtemplate is used to simplify the code of {{tl|infobox country}}.  It sho
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q56191518|azb|شابلون:Infobox country/formernext|az|Şablon:Dövlət/formernext|ban|Mal:Infobox country/formernext|bn|টেমপ্লেট:তথ্যছক রাষ্ট্র/প্রাক্তন পরবর্তী|bxr|Загбар:Инфобокс улас/formernext|cdo|模板:Infobox country/formernext|ckb|داڕێژە:Infobox country/formernext|da|Skabelon:Infoboks land/førefter|dv|ފަންވަތް:Infobox country/formernext|en|Template:Infobox country/formernext|es|Plantilla:Ficha de antigua entidad territorial/PredecesorSucesor|fa|الگو:Infobox country/formernext|gu|ઢાંચો:Infobox country/formernext|hak|模板:Infobox country/formernext|hi|साँचा:Infobox country/formernext|id|Templat:Infobox country/formernext|ilo|Plantilia:Infobox pagilian/formernext|ja|Template:Infobox country/formernext|kge|Citakan:Infobox country/formernext|ko|틀:나라 정보/formernext|check_date=2026-05-27}}
 </noinclude>

@@ -1,14 +1,14 @@
 
 '''Yawata Hachimangū''' (八幡八幡宮)
 
-* Common name for Kōzuke-no-kuni Issha Hachimangū.
-* Common name for Shimotsuke-no-kuni Issha Hachimangū.
+* Common name for {{ill|Kōzuke-no-kuni Issha Hachimangū|ja|上野國一社八幡宮|qid=Q11360309}}.
+* Common name for {{ill|Shimotsuke-no-kuni Issha Hachimangū|abstract|Q11361384|ja|下野國一社八幡宮|qid=Q11361384}}.
 
 {{disambiguation}}
 
 {{translated page|ja|八幡八幡宮|version=59860565|comment=Imported full ja history}}
 
-{{wikidata link|Q11390919|ja|八幡八幡宮|check_date=2026-05-12}}
+{{wikidata link|Q11390919|ja|八幡八幡宮|grok=none|check_date=2026-05-27}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
