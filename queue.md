@@ -46,14 +46,6 @@ ambiguous items by hand on the wiki. Only genuinely-manual cases remain:
   git_synced/fandom_unique/miraheze_unique. Emma's stated rule: whichever
   side is further ahead in revisions wins, with per-directory tie-break
   rules (TBD). See todo.md "Bot ping-pong" for the full theory.
-- [ ] **Two new churn pages surfaced 2026-05-27: Itakiso shrine + Katakurabe no Mikoto.**
-  Today's `diagnose_page_churn.py --category "Independently git synced
-  pages" --sample-size 30 --rev-limit 30` flagged both as alternating.
-  Different pattern from the resolved qqqq case — needs its own
-  per-page investigation: pull recent revisions, identify the two
-  competing ops, decide the fix (likely either a repo-file strip or
-  an orchestrator-op adjustment). Report file:
-  `docs/page_churn_diagnostic.md`.
 
 ## Case-collision lowercase Template:Infobox pages (2026-05-27)
 

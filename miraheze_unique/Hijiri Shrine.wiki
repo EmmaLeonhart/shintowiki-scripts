@@ -2,7 +2,6 @@
 [[Category:Independently git synced pages]]
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
 [[Category:Independently git synced pages]]
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Hijiri_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24999656626|time triggered pipeline]] -->
 {
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 | Name         = Hijiri Shrine

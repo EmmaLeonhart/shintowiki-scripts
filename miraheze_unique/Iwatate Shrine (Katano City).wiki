@@ -1,5 +1,4 @@
 <!-- shrine-disambig-page: refresh wikidata list -->
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Iwatate_Shrine_%28Katano_City%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 
 {{Citation needed|date=November 2019}}
 {{Infobox religious building| religious_affiliation = [[Shinto]]

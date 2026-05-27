@@ -6,6 +6,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Strip `<!-- History offloaded: ... -->` banner from 259 sync-dir files (anti-churn cleanup)
+**Files:** 259 files across `miraheze_unique/`, `fandom_unique/`, `git_synced/`; `queue.md`
+
+Root cause for the `strip_html_comments ↔ sync_*_unique` churn
+pattern flagged on Itakiso shrine + Katakurabe no Mikoto (and
+historically Fujishima Shrine (Suwa Region) / Iki Gokoku Shrine /
+Imai Nogiku): the orchestrator's `strip_html_comments` op
+removes the `<!-- History offloaded: ... -->` banner from the
+wiki page (legitimate behaviour — the banner breaks rendering
+outside Category ns), then the next sync runs and pushes the
+repo file (which still carries the banner) back over the top,
+restoring it. Orchestrator strips again next cycle. Churn.
+
+Symmetric fix to the 2026-05-27 qqqq strip: removed the banner
+from every sync-dir file that carried it (259 in total — 184
+mainspace, 75 templates, 0 Category pages so no risk of
+`history_offload`'s destructive recreate stage re-prepending).
+After the next sync cycle the wiki should converge to "no
+banner" everywhere and the churn vector closes.
+
+**Narrowed scope twice** during this work — initial draft
+stripped ALL HTML comments (mirroring `strip_html_comments`
+exactly) but that would have stripped the `<!-- BEGIN:
+auto-generated Wikidata shrine list -->` / `<!-- END: ... -->`
+sentinels used by `shinto_miraheze/generate_shrine_disambig_lists.py`
+to locate regenerated sections, and the
+`<!-- shrine-disambig-page: refresh wikidata list -->`
+instruction prefix that tells the generator a page wants
+regeneration. Final scope: History banner only, leaving all
+other HTML comments alone. Reverted two intermediate attempts
+(`git restore`) before landing the narrow version. The
+pre-existing `strip_html_comments` vs
+`generate_shrine_disambig_lists` coordination problem (the op
+strips the sentinels too) is left in place; that's a separate
+issue tracked under "Bot ping-pong" in todo.md.
+
 ### Churn verification (qqqq case): all 4 historical pages quiescent; 2 new ones surfaced
 **Files:** `queue.md`, `docs/page_churn_diagnostic.md`
 

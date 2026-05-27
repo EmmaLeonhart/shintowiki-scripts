@@ -2,7 +2,6 @@
 [[Category:Independently git synced pages]]
 <!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
 [[Category:Independently git synced pages]]
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Itsukushima_Shrines_%28disambiguation%29 for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/25032451587|time triggered pipeline]] -->
 
 '''Itsukushima Shrine''' (厳島神社, 嚴島神社, いつくしまじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}
 named after "Itsukushima" and enshrines {{ill|Ichikishima-hime|ja|市杵島姫神|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}} as its primary deity.
