@@ -6,6 +6,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Fix `sync_revision_aware.count_wiki_revs_since` — drop invalid `rvstartid="now"`
+**Files:** `shinto_miraheze/sync_revision_aware.py`
+
+`Git Synced Sync` CI run at 01:27Z failed with
+`mwclient.errors.APIError: ('badinteger', 'Invalid value "now" for
+integer parameter "rvstartid".', None)`.
+
+Root cause: the revision-aware helper (shipped today in
+`97e6ca8f`) passed `rvstartid="now"` to the MediaWiki API. That
+parameter requires an integer revision ID; the string "now" is
+not accepted. The traversal intent was "walk from the most
+recent revision back to the baseline" — MediaWiki defaults to
+exactly that when neither `rvstartid` nor `rvstart` is given, so
+the fix is just to omit `rvstartid` entirely.
+
+Tested against live API with a known baseline revid for
+`Aizu-hime-no-Kami`: returns the expected count of 2 newer
+revisions. Comment added next to the omission explaining why,
+so the next reader doesn't add a `rvstartid="now"` back.
+
+This bug affected all 5 sync scripts (they all import this
+helper), but only surfaces on the "both sides changed" conflict
+branch. `Git Synced Sync` hit it because today's churn produced
+a real conflict on at least one page; the other 4 syncs may not
+have hit one yet. Fix is in the helper, so all 5 are covered by
+the same patch.
+
 ### Investigation: lowercase-template gate isn't clearing — orchestrator op verified working in isolation but not landing on actual pages
 **Files:** `queue.md`
 

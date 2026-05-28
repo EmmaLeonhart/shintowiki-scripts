@@ -35,11 +35,16 @@ def count_wiki_revs_since(site, title: str, baseline_revid: Optional[int]) -> Op
     """
     if not baseline_revid:
         return None
+    # rvstartid omitted on purpose — MediaWiki defaults to "start at the
+    # most recent revision" when neither rvstartid nor rvstart is given.
+    # An earlier version passed rvstartid="now" which the API rejects as
+    # `badinteger` (the parameter requires an integer revision ID, not
+    # the magic string "now"). Walking newest→baseline via rvendid is
+    # the intended traversal.
     result = site.api(
         "query",
         prop="revisions",
         rvprop="ids",
-        rvstartid="now",
         rvendid=str(baseline_revid),
         rvlimit=500,
         titles=title,
