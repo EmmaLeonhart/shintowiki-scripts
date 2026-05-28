@@ -6,6 +6,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Trim lowercase-template queue item — auto-fire wired, just monitoring now
+**Files:** `queue.md`
+
+The lowercase-template-collision queue entry had grown to ~80
+lines tracking investigation findings (sub-task (a) orchestrator
+logs, sub-task (b) local-files canonicalization, sub-task (c)
+workflow wiring, plus historical counts and theory). Sub-tasks
+(b) and (c) shipped today; transclusion counts ARE dropping
+naturally each hour (mountain 18→17, officeholder 21→20,
+organization 26→24 in the most recent observation window), so
+sub-task (a) was a red herring — the orchestrator is reaching
+pages, just slowly and alphabetically-unevenly. With deletion
+auto-wired into cleanup-loop, the rest is automatic.
+
+Rewrote the entry as two short bullets: (1) wait for transclusions
+to drain, deletion auto-wired, no human action; (2) fandom-side
+strategy is a real design Q for Emma (mirror canonical re-export
+vs separate fandom-side bot pass). Old investigation framing
+pruned; historical work remains in upstream DEVLOG entries.
+
 ### Wire `delete_lowercase_template_collisions.py` into wiki-cleanup.yml — auto-fires when templates hit 0
 **Files:** `.github/workflows/wiki-cleanup.yml`, `queue.md`
 
