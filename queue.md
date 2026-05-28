@@ -49,14 +49,14 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   followed, the pre-heavy save failed and we need to find the
   underlying error.
 
-  **Separate fix needed:** the `miraheze_unique/` sync needs to run the
-  canonicalization on local `.wiki` files BEFORE pushing — otherwise
-  the sync's repo-wins overwrites any wiki-side canonicalization done
-  by the orchestrator. Cleanest implementation: a one-shot script that
-  walks all `miraheze_unique/*.wiki`, `fandom_unique/*.wiki`,
-  `git_synced/*.wiki`, `need_translation/*.wiki`, `duplicated_content/*.wiki`
-  and applies the same `canonicalize_template_case` regexes. Once the
-  local files are canonical, the syncs stop reverting.
+  **Sync-dir local-files canonicalization DONE** (2026-05-28,
+  see DEVLOG). Wrote `shinto_miraheze/canonicalize_sync_dir_files.py`
+  — a one-shot script that walks all five sync dirs and applies the
+  same `canonicalize_template_case` op to local `.wiki` files. Apply
+  pass edited 8 files (3 in `miraheze_unique/`, 3 in `fandom_unique/`,
+  2 in `need_translation/`). Re-run is a no-op (idempotent). Next
+  sync cycle will push the canonicalization to the wiki, removing the
+  repo-wins-overwrite cycle that was reverting Emma's manual fixes.
 
 - [ ] **Then re-run `delete_lowercase_template_collisions.py --apply`**
   once the above investigation drains the surviving transclusions.

@@ -6,6 +6,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Canonicalize lowercase Template:Infobox refs in local sync-dir `.wiki` files (8 files)
+**Files:** `shinto_miraheze/canonicalize_sync_dir_files.py` (new), 8 sync-dir `.wiki` files
+
+Sub-task (b) from the lowercase-template investigation. Wrote a
+one-shot script that walks all five wiki↔repo sync directories
+(`git_synced/`, `miraheze_unique/`, `fandom_unique/`,
+`need_translation/`, `duplicated_content/`) and applies the same
+`canonicalize_template_case` orchestrator op to each `.wiki`
+file. Mirrors the op's own guard — skips files whose URL-decoded
+title starts with `Template:Infobox ` (those are the template
+definition pages themselves, which legitimately carry the
+lowercase form pending the eventual wiki-side deletion).
+
+Dry-run found 8 files needing rewrite:
+* `miraheze_unique/{Aizu-hime-no-Kami,Mount Moriya,Takeda Katsuyori}.wiki`
+* `fandom_unique/{Aizu-hime-no-Kami,Mount Moriya,Takeda Katsuyori}.wiki`
+* `need_translation/{Association of Shinto Shrines,Oomoto Hikari no Michi}.wiki`
+
+Each had exactly one lowercase `{{Infobox X}}` call. `--apply`
+rewrote all 8. Re-run as dry-run reports 0 changes (idempotent).
+
+Why this matters: today's investigation showed `Aizu-hime-no-Kami`
+had a churn cycle where Emma's manual on-wiki canonicalization at
+20:13Z was overwritten by `sync_miraheze_unique`'s repo-wins push
+at 20:56Z (since the repo file still had the lowercase form).
+With these 8 files now canonical in the repo, the next sync cycle
+will push the canonical form to the wiki instead of overwriting
+it back to lowercase.
+
+Standard `--apply` / `--max-edits` / `--run-tag` scaffolding kept
+for consistency, though the script doesn't actually edit the wiki
+(it transforms repo files in place; the sync handles wiki side).
+Not wired into CI — it's a one-shot. If new case-collisions
+surface later (`canonicalize_template_case`'s `TEMPLATE_CANONICAL`
+dict gets new entries), re-run this script once to keep the
+local files in sync with the wiki-side normalization.
+
 ### Fix `sync_revision_aware.count_wiki_revs_since` — drop invalid `rvstartid="now"`
 **Files:** `shinto_miraheze/sync_revision_aware.py`
 
