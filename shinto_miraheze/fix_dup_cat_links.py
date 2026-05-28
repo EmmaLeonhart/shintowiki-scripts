@@ -11,7 +11,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
-PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
+PASSWORD = os.getenv("WIKI_PASSWORD", "")
 DUP_CAT   = "duplicated qid category redirects"
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,

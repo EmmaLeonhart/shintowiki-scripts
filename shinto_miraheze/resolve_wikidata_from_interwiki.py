@@ -31,7 +31,7 @@ if sys.platform == 'win32':
 WIKI_URL  = 'shinto.miraheze.org'
 WIKI_PATH = '/w/'
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
-PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
+PASSWORD = os.getenv("WIKI_PASSWORD", "")
 CATEGORY_NAME = 'Missing wikidata'
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)

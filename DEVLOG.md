@@ -6,6 +6,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Strip `[REDACTED_*]` placeholders from 16 active scripts + delete `debug_pairs.py`
+**Files:** 16 scripts in `shinto_miraheze/` (uniform `PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")` → `os.getenv("WIKI_PASSWORD", "")`), deletion of `shinto_miraheze/debug_pairs.py`
+
+Followup to the earlier archive-deletion commit on Emma's
+"delete the files with redacted secrets" directive. The 16
+active scripts that contained the placeholder as a
+`os.getenv` default value can't themselves be deleted (CI
+invokes them), but the placeholder default can be swapped
+to `""` with zero behaviour change — both fail at
+`site.login(USERNAME, PASSWORD)` the same way when the
+`WIKI_PASSWORD` env var isn't set. This removes the
+working-tree hazard for these scripts.
+
+The 17th file, `debug_pairs.py`, was the only one with an
+inline `site.login('EmmaBot', '[REDACTED_SECRET_1]')` call
+(no env-var fallback). It's a scratch debug script with no
+docstring, unwired, and couldn't have worked as written.
+Deleted entirely per the same directive.
+
+All 16 modified files AST-parse. Repo-wide grep confirms
+no `[REDACTED_*]` literals remain anywhere outside
+`DEVLOG.md`, `todo.md`, `docs/API.md` (legitimate
+documentation describing them as `git filter-repo --replace-text`
+targets) and `.claude/settings.local.json` (gitignored).
+
 ### Delete 12 retired archive scripts containing `[REDACTED_*]` placeholder literals
 **Files:** `archive/README.md`, plus deletion of 4 root-level archive scripts and the entire `archive/wikidata_scripts/` directory (8 files)
 

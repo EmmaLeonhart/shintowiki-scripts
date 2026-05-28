@@ -22,7 +22,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
-PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")
+PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 
 SOURCE_CAT = "Erroneous_qid_category_links"
