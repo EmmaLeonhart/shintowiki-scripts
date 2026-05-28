@@ -1,14 +1,14 @@
 
 '''Ōtsu Shrine''' (大津神社) refers to several Shinto shrines in Japan:
 
-* {{ill|Ōtsu Shrine (Hida)|ja|大津神社 (飛騨市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Hida)|qq=}} - Located in Hida City, Gifu Prefecture.
-* {{ill|Ōtsu Shrine (Ise)|ja|大津神社 (伊勢市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Ise)|qq=}} - Located in Ise City, Mie Prefecture. A subsidiary shrine of {{ill|Tōyūke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Tōyūke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}}, part of the 125 shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}.
-* {{ill|Ōtsu Shrine (Izumi Ōtsu)|ja|大津神社 (泉大津市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Izumi Ōtsu)|ja_comment=jawiki link invalid}} - Located in Izumi Ōtsu City, Osaka Prefecture.
-* {{ill|Ōtsu Shrine (Habikino)|ja|大津神社 (羽曳野市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Habikino)|qq=}} - Located in Habikino City, Osaka Prefecture.
-* {{ill|Ōtsu Shrine (Higashi Ōsaka)|ja|大津神社 (東大阪市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Higashi Ōsaka)|ja_comment=jawiki link invalid}} - Located in Higashi Ōsaka City, Osaka Prefecture.
-* {{ill|Ōtsu Shrine (Nishiwaki)|ja|大津神社 (西脇市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Nishiwaki)|ja_comment=jawiki link invalid}} - Located in Nishiwaki City, Hyōgo Prefecture.
-* {{ill|Ōtsu Shrine (Maniwa)|ja|大津神社 (真庭市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Maniwa)|ja_comment=jawiki link invalid}} - Located in Maniwa City, Okayama Prefecture.
-* {{ill|Ōtsu Shrine (Ōita)|ja|大津神社 (大分市)|12=simple|13=User:Immanuelle/Ōtsu Shrine (Ōita)|ja_comment=jawiki link invalid}} - Located in Ōita City, Ōita Prefecture.
+* {{ill|Ōtsu Shrine (Hida)|ja|大津神社 (飛騨市)|qid=Q11437362}} - Located in Hida City, Gifu Prefecture.
+* {{ill|Ōtsu Shrine (Ise)|ja|大津神社 (伊勢市)|qid=Q17222697}} - Located in Ise City, Mie Prefecture. A subsidiary shrine of {{ill|Tōyūke Daijingū|ja|豊受大神宮|1=Toyōke Daijingū|2=ja|3=豊受大神宮|4=zh|5=豐受大神宮|12=simple|13=User:Immanuelle/Tōyūke Daijingū|13=User:Immanuelle/Toyōke Daijingū|comment=enwiki is a redirect}}, part of the 125 shrines of the {{ill|Ise Grand Shrine|en|Ise Shrine|qid=Q687168|lt=Ise Grand Shrine}}.
+* {{ill|Ōtsu Shrine (Izumi Ōtsu)|ja|大津神社 (泉大津市)}} - Located in Izumi Ōtsu City, Osaka Prefecture.
+* {{ill|Ōtsu Shrine (Habikino)|ja|大津神社 (羽曳野市)|qid=Q11437361}} - Located in Habikino City, Osaka Prefecture.
+* {{ill|Ōtsu Shrine (Higashi Ōsaka)|ja|大津神社 (東大阪市)}} - Located in Higashi Ōsaka City, Osaka Prefecture.
+* {{ill|Ōtsu Shrine (Nishiwaki)|ja|大津神社 (西脇市)}} - Located in Nishiwaki City, Hyōgo Prefecture.
+* {{ill|Ōtsu Shrine (Maniwa)|ja|大津神社 (真庭市)}} - Located in Maniwa City, Okayama Prefecture.
+* {{ill|Ōtsu Shrine (Ōita)|ja|大津神社 (大分市)}} - Located in Ōita City, Ōita Prefecture.
 
 {{disambiguation}}
 
@@ -17,7 +17,7 @@
 * {{ill|Ohotsuno Shrine (Q135039122)|lt=Ohotsuno Shrine|qid=Q135039122}} — Kawachi Province
 * {{ill|Ohotsuno Shrine (Q135039910)|lt=Ohotsuno Shrine|qid=Q135039910}} — Hida Province
 * {{ill|Ootsu Shrine (Q135041170)|lt=Ootsu Shrine|qid=Q135041170}} — Taka district
-* {{ill|Ōtsu Shrine (Q17222697)|lt=Ōtsu Shrine|qid=Q17222697}} — Toyokawachō
+* {{ill|Ōtsu Shrine (Q17222697)|ja|大津神社 (伊勢市)|qid=Q17222697|lt=Ōtsu Shrine}} — Toyokawachō
 * {{ill|Ōzu Shrine (Q135464613)|lt=Ōzu Shrine|qid=Q135464613}} — Kashiwazaki
 * {{ill|Ōzu Shrine (Q135464661)|lt=Ōzu Shrine|qid=Q135464661}} — Kashiwazaki
 
@@ -25,7 +25,7 @@
 
 {{draft categories|
 
-{{wikidata link|Q11437359|ja|大津神社|check_date=2026-05-13}}
+{{wikidata link|Q11437359|ja|大津神社|grok=none|check_date=2026-05-27}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

@@ -1,7 +1,7 @@
 
 '''Ōtaki Shrine (大滝神社'''、'''大瀧神社''') can refer to the following shrines
 
-* {{ill|Ōtaki Shrine (Hokuto)|ja|大滝神社 (北杜市)|12=simple|13=User:Immanuelle/Ōtaki Shrine (Hokuto)}} 
+* {{ill|Ōtaki Shrine (Hokuto)|ja|大滝神社 (北杜市)}} 
 
 * {{ill|Otaki Shrine and Okata Shrine|ja|大瀧神社・岡太神社|12=simple|13=User:Immanuelle/Ōtaki Shrine & Okamoto Shrine|comment=changed title based on wikidata|qid=Q20039081}}
 * {{ill|Ōtaki Shrine|ja|大滝神社 (福山市)|12=simple|13=User:Immanuelle/Ōtaki Shrine (Fukuyama)|comment=changed title based on wikidata|qid=Q48764224}}  
@@ -19,7 +19,7 @@
 
 {{draft categories|
 
-{{wikidata link|Q123352290|ja|大滝神社|zh|大滝神社|check_date=2026-05-12}}
+{{wikidata link|Q123352290|ja|大滝神社|zh|大滝神社|grok=none|check_date=2026-05-27}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

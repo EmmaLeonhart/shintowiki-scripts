@@ -1,24 +1,24 @@
 
 '''Ōtomo Shrine''' (大伴神社) refers to several shrines in Japan.
 
-* {{ill|Ōtomo Shrine|ja|大伴神社 (高岡市)|12=simple|13=User:Immanuelle/Ōtomo Shrine (Takaoka)|comment=changed title based on wikidata|qid=Q11432351}} - Located in Fushiki Ichinomiya, Takaoka City, Toyama Prefecture.
-* {{ill|Ōtomo Shrine (Saku, Mochizuki)|ja|大伴神社 (佐久市望月)|12=simple|13=User:Immanuelle/Ōtomo Shrine (Saku, Mochizuki)|qq=}} - Located in Mochizuki, Saku City, Nagano Prefecture. Considered a candidate for an {{ill|Ancient shrine|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Ancient shrine|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
-* {{ill|Ōtomo Shrine (Saku, Nozawa)|ja|大伴神社 (佐久市野澤)|12=simple|13=User:Immanuelle/Ōtomo Shrine (Saku, Nozawa)|ja_comment=jawiki link invalid}} - Located in Nozawa, Saku City, Nagano Prefecture.
-* {{ill|Ōtomo Shrine (Ōtsu)|ja|大伴神社 (大津市)|12=simple|13=User:Immanuelle/Ōtomo Shrine (Ōtsu)|ja_comment=jawiki link invalid}} - Located in Minamishiga, Ōtsu City, Shiga Prefecture. Also known as Ōtomo Kurohito Shrine or Ōtomo Kurohito Shrine.
-* {{ill|Sumiyoshi Ōtomo Shrine|ja|住吉大伴神社|12=simple|13=User:Immanuelle/Sumiyoshi Ōtomo Shrine|qq=}} - Located in Ryōanji Sumiyoshichō, Ukyo-ku, Kyoto City, Kyoto Prefecture. Considered a candidate for an ancient shrine.
-* {{ill|Ōtomo Kurohito Shrine|ja|大伴黒主神社|12=simple|13=User:Immanuelle/Ōtomo Kurohito Shrine|ja_comment=jawiki link invalid}} - Located in Yamanakata-chō, Tondabayashi City, Osaka Prefecture.
+* {{ill|Ōtomo Shrine|ja|大伴神社 (高岡市)|qid=Q11432351}} - Located in Fushiki Ichinomiya, Takaoka City, Toyama Prefecture.
+* {{ill|Ōtomo Shrine (Saku, Mochizuki)|ja|大伴神社 (佐久市望月)|qid=Q111333730}} - Located in Mochizuki, Saku City, Nagano Prefecture. Considered a candidate for an {{ill|Ancient shrine|ja|式内社|lt=Shikinaisha}}.
+* {{ill|Ōtomo Shrine (Saku, Nozawa)|ja|大伴神社 (佐久市野澤)}} - Located in Nozawa, Saku City, Nagano Prefecture.
+* {{ill|Ōtomo Shrine (Ōtsu)|ja|大伴神社 (大津市)}} - Located in Minamishiga, Ōtsu City, Shiga Prefecture. Also known as Ōtomo Kurohito Shrine or Ōtomo Kurohito Shrine.
+* {{ill|Sumiyoshi Ōtomo Shrine|ja|住吉大伴神社|qid=Q17994598}} - Located in Ryōanji Sumiyoshichō, Ukyo-ku, Kyoto City, Kyoto Prefecture. Considered a candidate for an ancient shrine.
+* {{ill|Ōtomo Kurohito Shrine|ja|大伴黒主神社}} - Located in Yamanakata-chō, Tondabayashi City, Osaka Prefecture.
 
 {{disambiguation}}
 
 == Shrines with this name ==
 
-* {{ill|Ootomo Shrine (Q111333730)|lt=Ootomo Shrine|qid=Q111333730}} — Saku
+* {{ill|Ootomo Shrine (Q111333730)|ja|大伴神社 (佐久市望月)|qid=Q111333730|lt=Ootomo Shrine}} — Saku
 
 {{translated page|ja|大伴神社|version=42078078|comment=Imported full ja history}}
 
 {{draft categories|
 
-{{wikidata link|Q11432350|ja|大伴神社|check_date=2026-05-13}}
+{{wikidata link|Q11432350|ja|大伴神社|grok=none|check_date=2026-05-27}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]

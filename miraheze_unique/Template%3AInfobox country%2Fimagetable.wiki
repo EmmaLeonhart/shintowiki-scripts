@@ -30,5 +30,6 @@ This subtemplate is used to simplify the code of {{tl|infobox country}}.  It sho
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q28071437|ab|Ашаблон:Акарточка аҳәынҭқарра/imagetable|ar|قالب:صندوق معلومات بلد/جدول صور|ary|موضيل:معلومات دولة/imagetable|azb|شابلون:Infobox country/imagetable|az|Şablon:Dövlət/imagetable|ban|Mal:Infobox country/imagetable|bbc|Templat:Infobox country/imagetable|bh|टेम्पलेट:Infobox country/imagetable|bjn|Citakan:Infobox country/imagetable|blk|တမ်းပလေက်:Infobox country/imagetable|bn|টেমপ্লেট:তথ্যছক রাষ্ট্র/চিত্রটেবিল|cdo|模板:Infobox country/imagetable|da|Skabelon:Infoboks land/imagetable|en|Template:Infobox country/imagetable|fa|الگو:Infobox country/imagetable|gl|Modelo:País/imagetable|gu|ઢાંચો:Infobox country/imagetable|hak|模板:Infobox country/imagetable|hi|साँचा:Infobox country/imagetable|id|Templat:Infobox country/imagetable|check_date=2026-05-27}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

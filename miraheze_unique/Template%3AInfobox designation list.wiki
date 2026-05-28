@@ -120,5 +120,6 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q12981320|ar|قالب:Designation list|arz|قالب:Designation list|as|সাঁচ:Infobox designation list|azb|شابلون:Infobox designation list|az|Şablon:Nişanlama siyahısı|ban|Mal:Infobox designation list|bcl|Plantilya:Infobox designation list|bh|टेम्पलेट:Infobox designation list|bn|টেমপ্লেট:তথ্যছক নিয়োগ তালিকা|bs|Šablon:Infobox designation list|bxr|Загбар:Инфобокс designation list|cy|Nodyn:Infobox designation list|dtp|Templat:Infobox designation list|el|Πρότυπο:Infobox designation list|en|Template:Infobox designation list|fa|الگو:Infobox designation list|gor|Templat:Designation list|gu|ઢાંચો:Infobox designation list|hi|साँचा:Infobox designation list|hr|Predložak:Infobox designation list|check_date=2026-05-28}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

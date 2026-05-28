@@ -1,18 +1,17 @@
-
 * changes.
-* {{ill|Ōi Shrine (Kasama)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kasama)|qq=}}
+* {{ill|Ōi Shrine (Kasama)|en|Ōi Shrine (Kasama)}}
 （Ibaraki Prefecture [[Kasama, Ibaraki|Kasama City]]） - Shikinaisha candidate shrine.
-* {{ill|Oi Shrine|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
+* {{ill|Oi Shrine|en|Oi Shrine}}
 （[[Shizuoka Prefecture|Shizuoka]] [[Shimada, Shizuoka|Shimada City]]） - Kokushi Genzaisha (国史見在社) and Beppyo Shrine (別表神社). Famous for the [[Shimada Obi Festival|Shimada no Obi Matsuri]]. There are several other shrines with the same name along the [[Ōi River (Shizuoka)|Ōi River]] basin.
-* {{ill|Ōi Shrine (Nagoya)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Nagoya)|qq=}}
+* {{ill|Ōi Shrine (Nagoya)|en|Ōi Shrine (Nagoya)}}
 （[[Aichi Prefecture|Aichi]] [[Nagoya|Nagoya City]]）
-* {{ill|Ōi Shrine (Aisai)|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōi Shrine (Aisai)|qq=}}
+* {{ill|Ōi Shrine (Aisai)|en|Ōi Shrine (Aisai)}}
 （Aichi Prefecture [[Aisai, Aichi|Aisai City]]）
-* {{ill|Ōi Shrine (Kitagata)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kitagata)|qq=}}
+* {{ill|Ōi Shrine (Kitagata)|en|Ōi Shrine (Kitagata)}}
 （[[Gifu Prefecture|Gifu]] [[Kitagata, Gifu|Kitagata Town]] [[Motosu District, Gifu|Motosu District]]）
-* {{ill|Ōi Shrine (Kyoto)|en|qq=draft|qq=draft|12=simple|13=User:Immanuelle/Ōi Shrine (Kyoto)|qq=}}
+* {{ill|Ōi Shrine (Kyoto)|en|Ōi Shrine (Kyoto)}}
 （[[Kyoto Prefecture|Kyoto]] [[Kyoto|Kyoto City]] [[Ukyō-ku, Kyoto|Ukyō Ward]]） - Shikinaisha candidate shrine. Named after the [[Ōigawa (Kyoto)|Ōi River (Kyoto)]].
-* {{ill|Ōi Shrine (Kameoka)|en|12=simple|13=User:Immanuelle/Ōi Shrine (Kameoka)|qq=}}
+* {{ill|Ōi Shrine (Kameoka)|en|Ōi Shrine (Kameoka)}}
 （Kyoto Prefecture [[Kameoka, Kyoto|Kameoka City]]） - Shikinaisha.
 == See Also ==
 * [[Ōi (disambiguation)]]
@@ -70,7 +69,7 @@
 
 {{draft categories|
 
-{{wikidata link|Q66564749|co|commons:Category:Oi-jinja (Kasama)|ja|大井神社 (笠間市)|ja|大井神社 (島田市)|ja|大井神社 (名古屋市)|ja|大井神社 (愛西市)|ja|大井神社 (北方町)|ja|大井神社 (京都市)|ja|大井神社 (亀岡市)|ja|大井神社|en|Ōi Shrine (Kasama)|check_date=2026-05-12}}
+{{wikidata link|Q66564749|co|commons:Category:Oi-jinja (Kasama)|ja|大井神社 (笠間市)|ja|大井神社 (島田市)|ja|大井神社 (名古屋市)|ja|大井神社 (愛西市)|ja|大井神社 (北方町)|ja|大井神社 (京都市)|ja|大井神社 (亀岡市)|ja|大井神社|en|Ōi Shrine (Kasama)|grok=none|check_date=2026-05-27}}
 
 == Accidentally Overwritten Content ==
 
@@ -219,6 +218,15 @@ File:Oi Jinja Kasama Oyakosugi.jpg|Parent and Child Cedars (Sacred tree)
 
 {{Commons category|Oi-jinja (Kasama)}}
 {{wikidata link|Q66564749}}
+[[Category:Ōi Shrine (Kasama)}}
+
+[[Category:笠間市の建築物]]
+[[Category:笠間市の歴史]]
+[[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Pages with interwikis with duplicate languages]]
+[[Category:Independently git synced pages]]
 [[Category:Architecture of Kasama City]]
 [[Category:Beppyo shrines]]
 [[Category:Buildings and structures in Kasama, Ibaraki]]
@@ -229,12 +237,3 @@ File:Oi Jinja Kasama Oyakosugi.jpg|Parent and Child Cedars (Sacred tree)
 [[Category:Shrine disambiguations]]
 [[Category:Son-sha in Ibaraki Prefecture]]
 [[Category:Wikidata has short description]]
-[[Category:Ōi Shrine (Kasama)}}
-
-[[Category:笠間市の建築物]]
-[[Category:笠間市の歴史]]
-[[Category:Shikinai Shōsha]]
-[[Category:Kokuhei-sha]]
-[[Category:Shikinai Ronsha]]
-[[Category:Pages with interwikis with duplicate languages]]
-[[Category:Independently git synced pages]]

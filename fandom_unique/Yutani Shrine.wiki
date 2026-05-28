@@ -1,12 +1,10 @@
-
-
 '''Yutani Shrine''' (湯谷神社)
 
-* Yutani Shrine (Maibara)
-* Yutani Shrine (Tottori)
-* Yutani Shrine (Nomi)
-* Yutani Shrine (Izu-no-kuni)
-* Yutani Shrine (Kofu)
+* {{ill|Yutani Shrine (Maibara)|ja|湯谷神社 (米原市)}}
+* {{ill|Yutani Shrine (Tottori)|ja|湯谷神社 (鳥取市)}}
+* {{ill|Yutani Shrine (Nomi)|ja|湯谷神社 (能美市)}}
+* {{ill|Yutani Shrine (Izu-no-kuni)|ja|湯谷神社 (伊豆の国市)}}
+* {{ill|Yutani Shrine (Kofu)|ja|湯谷神社 (甲府市)}}
 
 {{disambiguation}}
 
@@ -14,12 +12,11 @@
 
 == Shrines with this name ==
 
-* 湯谷神社 — Izunokuni
+* {{ill|湯谷神社 (Q134955542)|lt=湯谷神社|qid=Q134955542}} — Izunokuni
 
 {{translated page|ja|湯谷神社|version=99864196|comment=Imported full ja history}}
 
-{{wikidata link|Q128845623|ja|湯谷神社|check_date=2026-05-12}}
+{{wikidata link|Q128845623|ja|湯谷神社|grok=none|check_date=2026-05-27}}
 [[Category:Shrine disambiguations]]
-[[Category:Special:LonelyPages 26 May 2025]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

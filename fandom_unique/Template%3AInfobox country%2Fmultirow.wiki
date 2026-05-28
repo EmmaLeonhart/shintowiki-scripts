@@ -1,5 +1,6 @@
 <noinclude><table>
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q56191504|ar|قالب:صندوق معلومات بلد/متعدد|ary|موضيل:معلومات دولة/multirow|azb|شابلون:Infobox country/multirow|az|Şablon:Dövlət/multirow|ban|Mal:Infobox country/multirow|bbc|Templat:Infobox country/multirow|bcl|Plantilya:Infobox nasyon/multirow|bh|टेम्पलेट:Infobox country/multirow|bjn|Citakan:Infobox country/multirow|blk|တမ်းပလေက်:Infobox country/multirow|bn|টেমপ্লেট:তথ্যছক রাষ্ট্র/বহু সারি|bxr|Загбар:Инфобокс улас/multirow|cdo|模板:Infobox country/multirow|ckb|داڕێژە:Infobox country/multirow|da|Skabelon:Infoboks land/flererækker|en|Template:Infobox country/multirow|fa|الگو:Infobox country/multirow|fj|Template:Infobox country/multirow|fr|Modèle:Infobox Pays/Documentation|gor|Templat:Infobox country/multirow|check_date=2026-05-27}}
 </noinclude>
 {{infobox | child = yes | decat=yes
 | rowclass25 = mergedrow
