@@ -6,6 +6,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Verification: local-files canonicalization is propagating; `Template:Infobox noble` cleared to 0 on miraheze
+**Files:** `queue.md`
+
+Followup verification after the `02a194ba` canonicalize-sync-dir
+commit. Confirmed the active `sync_miraheze_unique` push at
+03:39:43Z applied to `Aizu-hime-no-Kami` (one of the 8 files
+canonicalized) — current wiki content shows `{{Infobox Noble}}`
+where it had `{{Infobox noble}}` before.
+
+Knock-on effect: `Template:Infobox noble` is **at 0 transclusions
+on miraheze** (was 1 before today). First template to fully
+clear. The other 9 templates on miraheze still have transclusions
+(chinese 1, film 3, historic site 7, holiday 16, kofun 3,
+mountain 18, museum 10, officeholder 21, organization 26) — the
+wiki-side `canonicalize_template_case` op is supposed to drain
+these but isn't making progress (sub-task (a) from the
+investigation, still pending).
+
+Fandom counts much higher across the board (chinese 1, film 2,
+historic site 6, holiday 14, kofun 3, mountain 17, museum 7,
+noble 55, officeholder 18, organization 25). Fandom doesn't get
+its own canonicalization pass — it's a mirror via
+`fandom_mirror.py`. Fandom-side cleanup needs a separate
+strategy. Filed in queue.md.
+
+Next concrete step: wire `delete_lowercase_template_collisions.py`
+into a workflow so it auto-fires whenever any template hits 0
+transclusions. The script's per-template safety gate makes this
+safe — it skips anything with remaining transclusions.
+
 ### Canonicalize lowercase Template:Infobox refs in local sync-dir `.wiki` files (8 files)
 **Files:** `shinto_miraheze/canonicalize_sync_dir_files.py` (new), 8 sync-dir `.wiki` files
 

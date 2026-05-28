@@ -59,8 +59,27 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   repo-wins-overwrite cycle that was reverting Emma's manual fixes.
 
 - [ ] **Then re-run `delete_lowercase_template_collisions.py --apply`**
-  once the above investigation drains the surviving transclusions.
-  Currently 20 of 20 templates still gated per the 2026-05-28 dry-run.
+  once the surviving transclusions drain. **Progress update 2026-05-28
+  03:50Z:** the local-files canonicalization commit `02a194ba` is
+  propagating to the wiki via the active sync. Verified
+  `Aizu-hime-no-Kami` was pushed canonical at 03:39:43Z (was lowercase
+  before). Result: **`Template:Infobox noble` is now at 0 transclusions
+  on miraheze** (was 1). The other 9 templates still have transclusions
+  on miraheze; all 10 still have transclusions on fandom (fandom side
+  is way further behind — needs separate work). Next: wire the deletion
+  script into a workflow (probably `workflow_dispatch` for on-demand
+  trigger, since the script's per-template safety gate makes it safe to
+  auto-fire whenever any template hits 0).
+
+  Miraheze counts as of 03:50Z (uncapped, from `embeddedin?eilimit=100`):
+  * chinese 1, film 3, historic site 7, holiday 16, kofun 3,
+    mountain 18, museum 10, **noble 0**, officeholder 21, organization 26.
+
+  Fandom counts: chinese 1, film 2, historic site 6, holiday 14,
+  kofun 3, mountain 17, museum 7, noble 55, officeholder 18,
+  organization 25. (Fandom doesn't get the orchestrator
+  canonicalization pass — it's a mirror; fandom side needs a
+  separate canonicalization strategy.)
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
