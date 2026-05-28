@@ -32,11 +32,11 @@
 | data11  = {{{flavour|{{{flavor|}}}}}} 
 | label12 = Style
 | data12  = {{{style|}}}
-| label13 = [[Gravity (alcoholic beverage)|Original gravity]]
+| label13 = {{ill|gravity|de|Stammwürze|en|Gravity (alcoholic beverage)|fi|Kantavierre|fr|Densité primitive de moût|ja|比重 (ビール)|jv|Gravitasi ombènan|nl|Stamwortgehalte|pl|Ekstrakt brzeczki podstawowej|sv|Vörtstyrka|lt=gravity|qid=Q38635}}
 | data13  = {{{og|}}}
-| label14 = [[Gravity (alcoholic beverage)|Final gravity]]
+| label14 = {{ill|gravity|de|Stammwürze|en|Gravity (alcoholic beverage)|fi|Kantavierre|fr|Densité primitive de moût|ja|比重 (ビール)|jv|Gravitasi ombènan|nl|Stamwortgehalte|pl|Ekstrakt brzeczki podstawowej|sv|Vörtstyrka|lt=gravity|qid=Q38635}}
 | data14  = {{{fg|}}}
-| label15 = [[International Bitterness Units scale|IBU scale]]
+| label15 = {{ill|International Bittering Units scale|ast|Escala internacional d'unidaes d'amargor|cs|IBU (pivo)|da|International Bitterness Units|de|International Bitterness Unit|en|International Bitterness Units scale|eo|Internacia Bier-amareca Unuo|es|Unidad Internacional de Amargor|fr|International Bitterness Unit|it|International Bitterness Unit|ja|国際苦味単位|nl|European Bitterness Unit|pl|International Bitterness Units|pt|International Bitterness Units scale|sv|International Bitterness Units|tr|European Bitterness Unit|zh|國際苦度單位|lt=International Bittering Units scale|qid=Q2000486}}
 | data15  = {{{ibu|}}}
 | label16 = Ingredients
 | data16  = {{{ingredients|}}}
@@ -59,9 +59,9 @@
 | name | logo | logo_size | logo_alt | logo_caption | image | image_size | image_alt | caption | type | abv | proof | manufacturer | brewery | distributor | region | origin | origin_label | introduced | year | discontinued | last_year | colour | color | flavor | flavour | style | og | fg | ibu | ingredients | variants | related | homepage | website }}<includeonly>{{#ifeq:{{NAMESPACE}}|{{ns:0}}|}}</includeonly><noinclude>{{documentation}}
 [[Category:Articles with hRecipes]]
 [[Category:Articles with hProducts]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q6288622|ar|قالب:بطاقة شراب|ary|موضيل:معلومات مشروب|as|সাঁচ:Infobox beverage|azb|شابلون:Infobox drink|az|Şablon:İçki|ban|Mal:Infobox drink|be|Шаблон:Напой|bg|Шаблон:Напитка|bh|टेम्पलेट:Infobox drink|bn|টেমপ্লেট:তথ্যছক পানীয়|bs|Šablon:Infokutija piće|ca|Plantilla:Infotaula beguda|ce|Кеп:Малар|ckb|داڕێژە:Infobox drink|cs|Šablona:Infobox - nápoj|da|Skabelon:Infoboks drink|dtp|Templat:Infobox drink|el|Πρότυπο:Infobox beverage|en|Template:Infobox drink|es|Plantilla:Ficha de bebida|check_date=2026-05-28}}
 </noinclude>

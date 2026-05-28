@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{warning |Articles about ethnic groups or similarly large human populations should not be illustrated by a [[photomontage]] or [[Wikipedia:Picture tutorial#Galleries|gallery of images]] of group members; see [[MOS:PEOPLEGALLERY]] }}{{High-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
 
 == Syntax ==
@@ -650,7 +650,6 @@ All parameters optional except ''group''.
 [[Category:Society and social science infobox templates|Ethnic Group]]
 [[Category:WikiProject Ethnic groups templates]]
 [[Category:Templates that add a tracking category]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
