@@ -1,10 +1,8 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Aki_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
-
 {{Infobox religious building|image=File:Aki-jinja, haisho-2.jpg|prefecture={{ill|Uda, Nara|qid=Q863747}}|coordinates={{Coord|34.47825|N|135.92397222222223}}}}
 
-{{ill|Aki Shrine|ja|阿紀神社|12=simple|13=User:Immanuelle/Aki Shrine}} is a {{ill|Moto-Ise Shrines|lt=Motoise shrine|ja|元伊勢|12=simple|13=User:Immanuelle/Moto-Ise Shrines}}
+{{ill|Aki Shrine|ja|阿紀神社}} is a {{ill|Moto-Ise Shrines|ja|元伊勢|lt=Motoise shrine}}
 
-Moto-Ise Shrines are {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} that used to host Amaterasu before she was moved to [[Ise Grand Shrine|Ise Jingu]]. The first one was {{ill|Ōmiwa Shrine|ja|檜原神社|12=simple|13=User:Immanuelle/Hibara Shrine|ja_comment=jawiki redirects to 大神神社|comment=changed title based on wikidata|qid=Q705542}} ({{ill|Ōmiwa Shrine|en|Ōmiwa Shrine|qid=Q705542|lt=Ōmiwa Shrine}}). 
+Moto-Ise Shrines are {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} that used to host Amaterasu before she was moved to [[Ise Grand Shrine|Ise Jingu]]. The first one was {{ill|Ōmiwa Shrine|abstract|Q705542|ar|معبد أوميوا|fa|معبد اومیوا|fr|Ōmiwa-jinja|id|Kuil Ōmiwa|ja|大神神社|la|Templum Ōmiwa|my|အိုးမိဝကျောင်းတော်|ru|Оомива-дзиндзя|simple|Ōmiwa Shrine|tok|tomo sewi Omiwa|zh|大神神社|qid=Q705542}} ({{ill|Ōmiwa Shrine|abstract|Q705542|ar|معبد أوميوا|fa|معبد اومیوا|fr|Ōmiwa-jinja|id|Kuil Ōmiwa|ja|大神神社|la|Templum Ōmiwa|my|အိုးမိဝကျောင်းတော်|ru|Оомива-дзиндзя|simple|Ōmiwa Shrine|tok|tomo sewi Omiwa|zh|大神神社|qid=Q705542|lt=Ōmiwa Shrine}}). 
 ==Overview==
 
 ==References==
@@ -29,9 +27,9 @@ Moto-Ise Shrines are {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto 
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| {{ill|Uda District, Nara|en|Uda District, Nara|ja|宇陀郡|ar|يودا (اليابان)|ca|Districte d&amp;#x27;Uda|ceb|Uda-gun|es|Distrito de Uda|fa|شهرستان اودا، نارا|fr|District d&amp;#x27;Uda|id|Distrik Uda, Nara|it|Distretto di Uda|ko|우다군|nl|Uda (district)|pl|Powiat Uda|ru|Уда (уезд)|zh|宇陀郡|lt=Uda district|qid=Q1131315}} || {{ill|Aki Shrine|lt=Aki Shrine|ja|阿紀神社|commons|Category:Aki-jinja|qid=Q11657607}} || {{ill|Kanpei-sha|qid=Q135160338|lt=Kanpei|comment=categorized}} ({{ill|Shrines receiving Hoe and Quiver|qid=Q135009152|lt=Hoe and Quiver}}) || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.478372|135.924053|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180762 DB]
+| {{ill|Uda District, Nara|en|Uda District, Nara|ja|宇陀郡|ar|يودا (اليابان)|ca|Districte d&amp;#x27;Uda|ceb|Uda-gun|es|Distrito de Uda|fa|شهرستان اودا، نارا|fr|District d&amp;#x27;Uda|id|Distrik Uda, Nara|it|Distretto di Uda|ko|우다군|nl|Uda (district)|pl|Powiat Uda|ru|Уда (уезд)|zh|宇陀郡|lt=Uda district|qid=Q1131315}} || {{ill|Aki Shrine|lt=Aki Shrine|ja|阿紀神社|commons|Category:Aki-jinja|qid=Q11657607}} || {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} ({{ill|Shrines receiving Hoe and Quiver|qid=Q135009152|lt=Hoe and Quiver}}) || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|34.478372|135.924053|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=180762 DB]
 |}
-{{wikidata link|Q11657607|da|d:Q11657607|ja|阿紀神社|check_date=2026-05-13}}
+{{wikidata link|Q11657607|da|d:Q11657607|ja|阿紀神社|grok=none|check_date=2026-05-28}}
 [[Category:Shikinaisha in Yamato Province]]==Notes==
 <references group="lower-alpha"/>
 [[Category:Shikinai Shōsha]]

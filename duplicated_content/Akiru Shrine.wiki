@@ -1,24 +1,22 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Akiru_Shrine for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
+{{Infobox religious building|image=File:阿伎留神社 正面.JPG|prefecture={{ill|Akiruno, Tokyo|qid=Q240480}}|coordinates={{Coord|35.725333|N|139.222731}}|deity={{ill|Ajisukitakahikone|es|Ajisukitakahikone|fr|Ajisukitakahikone|hu|Adzsiszukitakahikone|it|Ajisukitakahikone|ja|アヂスキタカヒコネ|mni|ꯑꯖꯤꯁꯨꯀꯤꯇꯀꯍꯤꯀꯣꯅꯦ|ru|Адзи-суки-така-хико-нэ|simple|Ajisukitakahikone|zh|味耜高彥根神|qid=Q506610}}; {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508}}; {{ill|Takehi-Nateru|qid=Q11065428}}; {{ill|Ōmononushi|qid=Q10936701}}|architecture_style={{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}}}
 
-{{Infobox religious building|image=File:阿伎留神社 正面.JPG|prefecture={{ill|Akiruno, Tokyo|qid=Q240480}}|coordinates={{Coord|35.725333|N|139.222731}}|deity={{ill|Ajisukitakahikone|qid=Q506610}}; {{ill|Ame-no-Koyane|qid=Q2564508}}; {{ill|Takehi-Nateru|qid=Q11065428}}; {{ill|Ōmononushi|qid=Q10936701}}|architecture_style={{ill|Shinmei-zukuri|qid=Q930545}}}}
-
-'''Akiru Shrine''' (阿伎留神社, Akiru Jinja) is a Shinto shrine located in {{ill|Akiruno, Tokyo|en|Akiruno, Tokyo|qid=Q240480|lt=Akiruno, Tokyo}}, Tokyo. It is listed as a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} and held the status of a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the pre-war Modern Shrine Ranking System.
+'''Akiru Shrine''' (阿伎留神社, Akiru Jinja) is a Shinto shrine located in {{ill|Akiruno, Tokyo|en|Akiruno, Tokyo|qid=Q240480|lt=Akiruno, Tokyo}}, Tokyo. It is listed as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} and held the status of a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}} under the pre-war Modern Shrine Ranking System.
 == Overview ==
-Akiru Shrine is mentioned in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} as the foremost of the eight shrines in {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province}}, Tamagawa District. 
-The shrine's name has been written as "阿伎留," "阿伎瑠," "秋留," and "畔切," all pronounced "Akiru." One theory suggests that "Akiru" derives from "畔切" (furrows), referring to the area's early agricultural development and the deity worshipped during its clearing. The shrine’s priestly lineage is said to have spanned over 70 generations, with its origins attributed to {{ill|Haji no Ren Oshio|ja|土師連男塩|12=simple|13=User:Immanuelle/Haji no Ren Oshio|ja_comment=jawiki link invalid}}, who established the shrine as a guardian deity.
+Akiru Shrine is mentioned in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} as the foremost of the eight shrines in {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province}}, Tamagawa District. 
+The shrine's name has been written as "阿伎留," "阿伎瑠," "秋留," and "畔切," all pronounced "Akiru." One theory suggests that "Akiru" derives from "畔切" (furrows), referring to the area's early agricultural development and the deity worshipped during its clearing. The shrine’s priestly lineage is said to have spanned over 70 generations, with its origins attributed to {{ill|Haji no Ren Oshio|ja|土師連男塩}}, who established the shrine as a guardian deity.
 In the third year of {{ill|Tengyō|en|Tengyō|qid=Q1327340|lt=Tengyō}} (940 CE), {{ill|Fujiwara no Hidesato|2=ja|3=藤原秀郷|ja|Fujiwara no Hidesato|2=ja|3=藤原秀郷|12=simple|13=User:Immanuelle/Fujiwara no Hidesato|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q1136623}}, a {{ill|Chinjufu shōgun|en|Chinjufu_shōgun|qid=Q2700052|lt=Chinjufu shōgun}}, enshrined deities from Ōharano Shrine in Kyoto, leading to the shrine being referred to as "Kasuga Daimyōjin" in the medieval period. It was also known as "Matsubara Daimyōjin" due to its location and is colloquially referred to as "Matsubara-sama."
 == Enshrined Deities ==
 The shrine enshrines the following four kami:
 * {{ill|Ōmononushi|ja|大物主神|12=simple|13=User:Immanuelle/Ōmononushi|qid=Q10936701}} (Ōmononushi no Kami)
-* {{ill|Ajisukitakahikone|ja|味耜高彦根神|12=simple|13=User:Immanuelle/Ajisukitakahikone|qid=Q506610}} (Ajisukitakahikone no Kami)
-* {{ill|Takehi-Nateru|ja|建比良鳥命|1=Takehi-Nateru|1=Takehi-Nateru|zh|建比良鳥命|1=Takehi-Nateru|fr|12=simple|13=User:Immanuelle/Takehi-Nateru|13=User:Immanuelle/Takehi-Nateru}} (Takehina no Tori no Kami)
-* {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Ame-no-Koyane|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}} (Ame no Koyane no Mikoto)
+* {{ill|Ajisukitakahikone|es|Ajisukitakahikone|fr|Ajisukitakahikone|hu|Adzsiszukitakahikone|it|Ajisukitakahikone|ja|アヂスキタカヒコネ|mni|ꯑꯖꯤꯁꯨꯀꯤꯇꯀꯍꯤꯀꯣꯅꯦ|ru|Адзи-суки-така-хико-нэ|simple|Ajisukitakahikone|zh|味耜高彥根神|qid=Q506610}} (Ajisukitakahikone no Kami)
+* {{ill|Takehi-Nateru|ja|建比良鳥命|zh|建比良鳥命|fr|Takehi-Nateru}} (Takehina no Tori no Kami)
+* {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508}} (Ame no Koyane no Mikoto)
 {{ill|Shinpen Musashi Fudoki-kō|ja|新編武蔵風土記稿|12=simple|13=User:Immanuelle/Shinpen Musashi Fudoki Kō|comment=changed title based on wikidata|qid=Q11503943}} lists only Ajisukitakahikone as the enshrined deity, suggesting it as the shrine's original principal deity.<ref name="chimei">"Tokyo no Chimei," Akiru Shrine section.</ref>
 == History ==
 === Historical Background ===
 Situated on a terrace overlooking the {{ill|Aki River|en|Aki_River|qid=Q23043420|lt=Aki River}}, the shrine likely originated as a place of worship for the local community during the area's early agricultural development.<ref name="chimei"/>
 According to the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}}, the shrine was granted a promotion to Junior Fourth Rank, Lower Grade, on July 15, 884 CE. Subsequent offerings and promotions were made over time.
-The shrine is listed in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki Jinmyōchō|13=User:Immanuelle/Engishiki Jinmyōchō}} (927 CE) as "Akiru Shrine" in Tama District, Musashi Province.
+The shrine is listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} (927 CE) as "Akiru Shrine" in Tama District, Musashi Province.
 In the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period}}, the shrine was revered by military leaders such as {{ill|Minamoto no Yoritomo|en|Minamoto no Yoritomo|qid=Q242800|lt=Minamoto no Yoritomo}}, {{ill|Ashikaga Takauji|en|Ashikaga Takauji|qid=Q297107|lt=Ashikaga Takauji}}, and the Hōjō clan, who donated shrine lands.
 During the Edo period, {{ill|Tokugawa Ieyasu|en|Tokugawa Ieyasu|qid=Q171977|lt=Tokugawa Ieyasu}} granted 10 koku of land to the shrine in 1591, a practice continued by successive shōguns.
 === Modern Era ===
@@ -58,10 +56,10 @@ The annual Grand Festival held from September 28 to 30 features a rare hexagonal
 {{reflist}}
 
 == See Also ==
-* {{ill|List of Shinto shrines in Tokyo|ja|東京都の神社|12=simple|13=User:Immanuelle/List of Shinto shrines in Tokyo|ja_comment=jawiki link invalid}}
+* {{ill|List of Shinto shrines in Tokyo|ja|東京都の神社}}
 * {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province}}
 == External Links ==
-* {{ill|Shinto Jinja Source Compilation|ja|神道・神社史料集成|surl=http://www.tokyo-jinjacho.or.jp/nishitama/akiruno/5491/|12=simple|13=User:Immanuelle/Shinto Jinja Source Compilation|ja_comment=jawiki link invalid}}
+* {{ill|Shinto Jinja Source Compilation|ja|神道・神社史料集成}}
 * [http://i-kamicho.com/akiru.html Akiru Shrine Official Site]
 
 {{translated page|ja|阿伎留神社|version=101576757|comment=Imported full ja history}}
@@ -75,9 +73,9 @@ The annual Grand Festival held from September 28 to 30 features a rare hexagonal
 {| class="wikitable sortable"
 ! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
 |-
-| — || {{ill|Akiru Shrine|lt=Akiru Shrine|ja|阿伎留神社|commons|Category:Akiru-jinja|qid=Q11657213}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|35.725348|139.222604|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181692 DB]
+| — || {{ill|Akiru Shrine|lt=Akiru Shrine|ja|阿伎留神社|commons|Category:Akiru-jinja|qid=Q11657213}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} || — || — || {{coord|35.725348|139.222604|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181692 DB]
 |}
-{{wikidata link|Q11657213|da|d:Q11657213|ja|阿伎留神社|check_date=2026-05-13}}
+{{wikidata link|Q11657213|ja|阿伎留神社|grok=none|check_date=2026-05-28}}
 [[Category:Shikinaisha in Musashi Province]]==Notes==
 <references group="lower-alpha"/>
 [[Category:Junior Fourth Rank]]
