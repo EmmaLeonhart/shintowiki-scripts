@@ -1,5 +1,3 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=Ame-no-ohabari for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24957526818|time triggered pipeline]] -->
-
 {{Short description|Japanese mythological weapon}}
 {{Multiple issues|
 {{notability|date=November 2023}}
@@ -15,7 +13,7 @@
 ==Overview==
 Wielded by the male creator-god [[Izanagi]], this blade is used to cut up the infant Fire God [[Kagu-tsuchi|Kagutsuchi]] after his birth burns {{ill|Izanami|en|Izanami|qid=Q682306|lt=Izanami}} to death.<ref name=":0">{{Cite web |date=2011-05-19 |title=Encyclopedia of Shinto - Home : Kami in Classic Texts : Amenoohabari |url=http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=39 |access-date=2023-11-04 |archive-url=https://web.archive.org/web/20110519134542/http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=39 |archive-date=2011-05-19 }}</ref> It cuts the Fire God into multiple pieces, creating eight volcano-gods. When blood drips from the blade afterwards, the Sea God {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi}} and the Rain God [[Kuraokami]] are formed.
 The name of the ten-fist sword wielded by Izanagi is given postscripturally as {{ill|Ame-no-ohabari|en|Ame-no-ohabari|qid=Q10939046|lt=Ame-no-ohabari}}, otherwise known as Itsu-no-ohabari.<ref name="Ouwehand">{{cite book |last1=Ouwehand |first1=Cornelis |url=https://books.google.com/books?id=1P4UAAAAIAAJ&pg=PA57 |title=Namazu-e and Their Themes: An Interpretative Approach to Some Aspects of Japanese Folk Religion |last2=Logunova |first2=Vera Vasil'evna |publisher=Brill Archive |year=1964 |pages=57–}}, gives sword as "Itsu-no-o habari"</ref>
-In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q582846|lt=Izumo}} chapter), the heavenly deities [[Amaterasu]] and [[Takamimusubi|Takamusubi]] decreed that either Takemikazuchi or his father {{ill|Ame-no-ohabari|en|Ame-no-ohabari|qid=Q10939046|lt=Itsu-no-ohabari}} ("Heaven-Point-Blade-Extended") must be sent down for the conquest. Itsu-no-ohabari (who appeared previously as a ten-fist sword) here has the mind and speech of a sentient god, and he volunteered his son Takemikazuchi for the subjugation campaign. Takemikazuchi was accompanied by {{ill|Ame-no-torifune|ja|鳥之石楠船神|vertical-align=sup|12=simple|13=User:Immanuelle/Ame-no-torifune}} "Deity Heavenly-Bird-Boat" (which may be a boat as well as being a god).<ref name="chamberlin-fire-deity2">{{Harvnb|Chamberlain|1919|loc=§XXXII, Abdication of the deity Master-of-the-Great-Land, pp.121-}}</ref><ref name="kojiki-kuniyuzuri">{{Harvnb|武田|1996}}『古事記』text p. 60/ mod. Ja. tr. p.244</ref>
+In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q582846|lt=Izumo}} chapter), the heavenly deities [[Amaterasu]] and [[Takamimusubi|Takamusubi]] decreed that either Takemikazuchi or his father {{ill|Ame-no-ohabari|en|Ame-no-ohabari|qid=Q10939046|lt=Itsu-no-ohabari}} ("Heaven-Point-Blade-Extended") must be sent down for the conquest. Itsu-no-ohabari (who appeared previously as a ten-fist sword) here has the mind and speech of a sentient god, and he volunteered his son Takemikazuchi for the subjugation campaign. Takemikazuchi was accompanied by {{ill|Ame-no-torifune|ja|鳥之石楠船神}} "Deity Heavenly-Bird-Boat" (which may be a boat as well as being a god).<ref name="chamberlin-fire-deity2">{{Harvnb|Chamberlain|1919|loc=§XXXII, Abdication of the deity Master-of-the-Great-Land, pp.121-}}</ref><ref name="kojiki-kuniyuzuri">{{Harvnb|武田|1996}}『古事記』text p. 60/ mod. Ja. tr. p.244</ref>
 == See also ==
 * [[Ame-no-Nuboko]]
 == References ==
@@ -32,7 +30,7 @@ In the ''Kojiki'' (Conquest of {{ill|Izumo Province|en|Izumo Province|qid=Q58284
 {{Myth-stub}}
 {{Japan-stub}}
 
-{{wikidata link|Q10939046|en|Ame-no-ohabari|it|Ame-no-ohabari|ja|天之尾羽張|pl|Niebiański Mężnie Naprężony Brzeszczot|zh|天之尾羽張|check_date=2026-05-13}}
+{{wikidata link|Q10939046|en|Ame-no-ohabari|it|Ame-no-ohabari|ja|天之尾羽張|pl|Niebiański Mężnie Naprężony Brzeszczot|zh|天之尾羽張|grok=none|check_date=2026-05-28}}
 
 {{translated page|ja|天之尾羽張|version=104157444|comment=Imported full ja history}}
 [[Category:日本の神]]
