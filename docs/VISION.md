@@ -184,9 +184,11 @@ Proposed structure after cleanup:
 ```
 wikibot/
   shinto_miraheze/        ← active scripts for shinto.miraheze.org
-  archive/                ← preserved but inactive legacy scripts
   data/                   ← CSVs and data files (gitignored if large)
   docs/                   ← VISION.md, SCRIPTS.md, etc.
   .env.example
   README.md
 ```
+(Retired/legacy scripts are deleted from the working tree, not archived;
+git history retains them. See CLAUDE.md "Repository layout" for the
+2026-05-28 audit/decision.)

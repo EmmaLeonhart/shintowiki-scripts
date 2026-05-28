@@ -57,7 +57,7 @@ shintowiki-scripts/
 ├── shinto-label-generator/     # Sub-project: multilingual shrine-label QuickStatements
 ├── _site/                      # GitHub Pages output (committed; updated by CI)
 ├── docs/                       # Reference docs (see Documentation below)
-├── archive/                    # Retired / one-off scripts — NOT wired into CI
+│                                # (archive/ removed 2026-05-28; retired scripts are deleted, not archived)
 │
 │   # Wiki ↔ repo content-sync dirs (one <title>.wiki per page; see docs/SYNCING.md):
 ├── need_translation/  git_synced/  miraheze_unique/  fandom_unique/  duplicated_content/

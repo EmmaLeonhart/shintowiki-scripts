@@ -6,6 +6,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Drop `archive/` entirely after audit — no irreplaceable technique
+**Files:** `git rm -r archive/` (7 files including README), `CLAUDE.md`, `README.md`, `docs/VISION.md`, `docs/SCRIPTS.md`
+
+After the earlier archive-deletion commits (12 scripts removed
+for the `[REDACTED_*]` placeholder hazard), Emma asked: "did
+we audit to see if anything was in the archive that actually
+is a thing we might forget how to do? If there isn't anything
+like that, we can drop the archive altogether."
+
+Audit of the 6 remaining `archive/*.py` scripts:
+
+* `import_to_fandom.py` — Special:Export → action=import recipe;
+  fully captured in active `fandom/import_template_list_to_fandom.py`
+  AND `shinto_miraheze/orchestrators/ops/fandom_mirror.py`.
+* `test_fandom_login.py` — 3 lines of mwclient login; trivially
+  reproducible.
+* `process_dupl.py` — local duplicated-content merger; superseded
+  by the claude.ai remote routine's LLM instruction.
+* `strip_mediawiki_banners.py` — just `allpages(ns=8)` + the
+  still-active `strip_html_comments` op; pattern is trivial to
+  re-derive if ns=8 cleanup is ever needed again.
+* `unstick_duplicated_content_conflicts.py` — recovery pattern;
+  the revision-aware sync (97e6ca8f + 8db1d265) makes this kind
+  of unstick unnecessary going forward.
+* `fix_sexagenary_mt_entropy.py` — one-shot tied to 60 specific
+  Sexagenary cycle pages; the rules wouldn't generalize.
+
+Verdict: nothing irreplaceable. `archive/` deleted entirely.
+Git history retains all of it; `git log --follow --all -- archive/<name>`
+still works for any reader who wants to see the historical code.
+
+CLAUDE.md "Repository layout" row + bullet updated to say
+retired scripts are DELETED, not archived. README.md tree-
+diagram, docs/VISION.md proposed-structure, and
+docs/SCRIPTS.md table-row updated to reflect the removal.
+
 ### Strip `[REDACTED_*]` placeholders from 16 active scripts + delete `debug_pairs.py`
 **Files:** 16 scripts in `shinto_miraheze/` (uniform `PASSWORD = os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")` → `os.getenv("WIKI_PASSWORD", "")`), deletion of `shinto_miraheze/debug_pairs.py`
 

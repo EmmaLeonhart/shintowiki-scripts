@@ -72,7 +72,7 @@ repo root:
 | shinto.fandom import scripts + their input lists | `fandom/` |
 | Multilingual shrine-label sub-project | `shinto-label-generator/` |
 | Reference docs (anything beyond the 5 core root docs) | `docs/` |
-| Retired / one-off / superseded scripts (NOT wired into CI) | `archive/` |
+| Retired / one-off / superseded scripts | DELETE — don't archive (2026-05-28 audit found nothing in `archive/` had irreplaceable technique; directory removed; git history retains the code) |
 | Wiki↔repo per-page content sync | the named dir (`need_translation/`, `git_synced/`, `miraheze_unique/`, `fandom_unique/`, `duplicated_content/`) |
 
 **Rules:**
@@ -86,8 +86,15 @@ repo root:
 * **When you move a referenced file, grep the whole repo and fix every
   reference** (workflows, scripts' internal paths, doc links) in the same
   change. Use `git mv` so history is preserved.
-* **Delete scratch/stale; archive reusable-but-retired tools** into `archive/`
-  rather than leaving them in root.
+* **Delete retired/scratch/stale scripts; do NOT keep an `archive/`
+  directory.** The `archive/` directory was audited and deleted on
+  2026-05-28 after Emma asked whether any of its contents held
+  irreplaceable technique — none did, all techniques were either
+  already captured in active code or trivially reproducible. Git
+  history retains everything anyway. Going forward: when a script
+  becomes retired or superseded, delete it from the working tree;
+  if there's a real reusable technique worth preserving, write a
+  brief note in the relevant doc or in `DEVLOG.md`.
 * **If you're unsure where something belongs, ask** — do not default to the
   root.
 
