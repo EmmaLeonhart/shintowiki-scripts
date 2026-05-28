@@ -29,15 +29,15 @@
 
 == part of (P361) ==
 
-* {{ill|List of Shikinaisha in Etchū Province|lt=List of Shikinaisha in Etchū Province|ja|越中国の式内社一覧|qid=Q11636380}}
+* {{ill|List of Shikinaisha in Etchū Province|ja|越中国の式内社一覧|qid=Q11636380|lt=List of Shikinaisha in Etchū Province}}
 ** Series ordinal: 7
-** P155: {{ill|Ogami Shrine (Tonami City)|lt=Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|qid=Q11659237}}
-** P156: {{ill|Imizu Shrine|lt=Imizu Shrine|en|Imizu Shrine|ja|射水神社|zh|射水神社|qid=Q11458557}}
+** P155: {{ill|Ogami Shrine (Tonami City)|ja|雄神神社 (砺波市)|qid=Q11659237|lt=Ogami Shrine (Tonami City)}}
+** P156: {{ill|Imizu Shrine|ja|射水神社|zh|射水神社|qid=Q11458557|lt=Imizu Shrine}}
 
 == located in the administrative territorial entity (P131) ==
 
-* {{ill|Etchū Province|lt=Etchū Province|ckb|پارێزگای ئێتچو|cs|Provincie Eččú|de|Provinz Etchū|en|Etchū Province|es|Provincia de Etchū|fa|ولایت اتچو|fr|Province d'Etchū|gl|Provincia de Etchū|id|Provinsi Etchū|it|Etchū|ja|越中国|ko|엣추국|lt|Ečiū žemė|nl|Etchu (provincie)|pt|Província de Etchū|ru|Эттю (провинция)|simple|Etchū Province|sk|Eččú (provincia)|sr|Провинција Ечу|tr|Etchū (vilayet)|uk|Провінція Еттю|vi|Tỉnh Etchū|zh_min_nan|Ettyû-kok|zh_yue|越中國|zh|越中國|qid=Q906899}}
-* {{ill|Tonami district|lt=Tonami district|ja|礪波郡|zh|礪波郡|qid=Q11588138}}
+* {{ill|Etchū Province|ckb|پارێزگای ئێتچو|cs|Provincie Eččú|de|Provinz Etchū|es|Provincia de Etchū|fa|ولایت اتچو|fr|Province d'Etchū|gl|Provincia de Etchū|id|Provinsi Etchū|it|Etchū|ja|越中国|ko|엣추국|lt|Ečiū žemė|nl|Etchu (provincie)|pt|Província de Etchū|ru|Эттю (провинция)|simple|Etchū Province|sk|Eččú (provincia)|sr|Провинција Ечу|tr|Etchū (vilayet)|uk|Провінція Еттю|vi|Tỉnh Etchū|zh|越中國|zh_min_nan|Ettyû-kok|zh_yue|越中國|qid=Q906899|lt=Etchū Province}}
+* {{ill|Tonami district|ja|礪波郡|zh|礪波郡|qid=Q11588138|lt=Tonami district}}
 
 == coordinate location (P625) ==
 
@@ -54,19 +54,16 @@
 
 == said to be the same as (P460) ==
 
-* {{ill|Asawino Shrine|lt=Asawino Shrine|qid=Q135040356}}
+* {{ill|Asawino Shrine|qid=Q135040356|lt=Asawino Shrine}}
 
 ==References==
 
 [[JA:浅井神社 (高岡市福岡町赤丸)]]
 
-{{wikidata link|Q134925834|ja|浅井神社 (高岡市福岡町赤丸)|check_date=2026-05-13}}
+{{wikidata link|Q134925834|ja|浅井神社 (高岡市福岡町赤丸)|grok=none|check_date=2026-05-28}}
 
 {{translated page|ja|浅井神社 (高岡市福岡町赤丸)|version=107330545|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 {{神社
 | 名称 = 浅井神社
 | 画像 = [[File:赤丸浅井神社の大ケヤキ - panoramio.jpg|250px|社殿と大けやき]]
@@ -122,3 +119,6 @@
 [[Category:Shikinaisha in Etchū Province]]
 [[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
