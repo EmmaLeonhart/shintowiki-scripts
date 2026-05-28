@@ -6,6 +6,48 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Investigation: lowercase-template gate isn't clearing — orchestrator op verified working in isolation but not landing on actual pages
+**Files:** `queue.md`
+
+Mainspace orchestrator state rolled over today (commit
+`112a92b0` wiped 46,274 lines from
+`mainspace_orchestrator.state` — full sweep complete since
+`canonicalize_template_case` op shipped 2026-05-26 in
+`f27ea68c`). Re-ran the lowercase-template-collision dry-run
+expecting the gate to clear. Still 20 of 20 templates blocked.
+
+Investigated why. Sampled 5 mainspace pages still transcluding
+the lowercase forms (Kumano Kodō, Japanese New Year,
+Aizu-hime-no-Kami, Ikeda Tsuneoki, Chausuyama Kofun (Osaka)).
+All have `{{Infobox X}}` or `{{infobox X}}` calls in their wiki
+content; the op rewrites all 5 correctly when called locally on
+the live content (`apply(title, content)` returns a valid
+`(new_text, summary)`). But the most recent bot edit on these
+pages is 2026-05-15 / 17 — BEFORE the op shipped 2026-05-26.
+
+So either the sweep didn't actually visit these pages (despite
+the state rollover suggesting exhaustion), or it visited them
+but the pre-heavy save failed silently and the page got
+`_mark_done`-ed via the error path, or a sibling pre-heavy op
+threw on these pages and aborted the batch.
+
+Separately: `Aizu-hime-no-Kami` is in `miraheze_unique/` — its
+history shows Emma's manual canonicalization at 20:13Z
+overwritten 43 minutes later by `sync_miraheze_unique`'s
+repo-wins push (the repo file had the lowercase form). Same
+ping-pong shape as today's verified-solved alternation issue,
+but at the "single overwrite" level not the "≥3 toggle"
+threshold the diagnostic checks. Local sync `.wiki` files in
+all 5 sync dirs need their own canonicalization pass — the
+orchestrator only fixes the wiki side, and the sync's repo-wins
+overwrites it back.
+
+Filed the concrete next-investigation step + the separate
+local-files canonicalization fix into `queue.md`. Did NOT
+attempt the fix in this tick — investigation needs orchestrator
+log access (`gh run view --log`) and the local-file fix should
+be a separate one-shot script with its own dry-run review.
+
 ### Drop `archive/` entirely after audit — no irreplaceable technique
 **Files:** `git rm -r archive/` (7 files including README), `CLAUDE.md`, `README.md`, `docs/VISION.md`, `docs/SCRIPTS.md`
 
