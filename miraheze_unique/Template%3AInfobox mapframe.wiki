@@ -1,7 +1,6 @@
 <includeonly>{{#invoke:Infobox mapframe|main}}</includeonly><noinclude>{{Infobox mapframe|id=Q100}}
 {{Documentation}}[[Category:Templates with Documentation template]]
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

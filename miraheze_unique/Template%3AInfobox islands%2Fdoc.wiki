@@ -439,7 +439,6 @@ This template generates an hCard microformat. More information can be found [[Te
 [[Category:Infobox templates with module parameter]]
 [[Category:Embeddable templates]]
 [[Category:Infobox templates using Wikidata]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

@@ -415,7 +415,6 @@ All parameters are optional.
 }}</includeonly>
 <noinclude>
 [[Category:Infobox Australian road articles with an infobox mapframe map|{{#if:{{{coordinates_a|}}}|π}}{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

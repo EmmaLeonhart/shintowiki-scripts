@@ -23,7 +23,6 @@
 | label6 = [[Universal Decimal Classification|Universal Decimal]]
 | data6 = {{#invoke:WikidataIB|getValue|P1190|qid={{#invoke:WikidataIB|getQid}}|osd=no|fwd=ALL|{{{UDC|}}}}}
 }}</includeonly><noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
