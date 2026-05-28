@@ -6,6 +6,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-27
 
+### Add `enrich_enwiki_categories.py` — drain the 500+ "with enwiki" triage bucket
+**Files:** `shinto_miraheze/enrich_enwiki_categories.py` (new), `.github/workflows/wiki-cleanup.yml`
+
+The triage pipeline (`triage_emmabot_categories.py` etc.) was
+producing a 500+ member `[[Category:Emmabot categories with enwiki]]`
+bucket with no enrichment step to drain it. A jawiki analogue
+(`enrich_jawiki_categories.py`) already existed; we just hadn't
+written the enwiki counterpart. Cloning the jawiki script's exact
+shape gives us the enwiki version for free.
+
+For each category in the source bucket: queries enwiki for the
+matching `Category:Name` (batched, 50 per request, `pageprops` for
+`wikibase_item`). Three outcomes:
+
+* enwiki page missing → tag `[[Category:Emmabot enwiki categories false positives]]`
+* enwiki page exists, has wikidata QID → add `[[en:Category:Name]]`
+  + `{{wikidata link|QID}}`, tag
+  `[[Category:Emmabot enwiki categories with wikidata]]`
+* enwiki page exists, no wikidata → add `[[en:Category:Name]]`,
+  tag `[[Category:Emmabot enwiki categories with only enwiki
+  category and no wikidata]]`
+
+In all three, the source `[[Category:Emmabot categories with enwiki]]`
+is removed. Standard scaffolding (`--apply` / `--max-edits` /
+`--run-tag` / `THROTTLE = 2.5` / UTF-8 stdout). Wired into
+`wiki-cleanup.yml` right after the jawiki enricher, capped at
+`$WIKI_EDIT_LIMIT` per cycle.
+
 ### Apply sync "delete on orphan" fix to sync_duplicated_content + sync_need_translation
 **Files:** `shinto_miraheze/sync_duplicated_content.py`, `shinto_miraheze/sync_need_translation.py`, `queue.md`
 

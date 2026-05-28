@@ -201,6 +201,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: enrich_jawiki_categories" \
             python3 shinto_miraheze/enrich_jawiki_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Import: enrich_enwiki_categories"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: enrich_enwiki_categories" \
+            python3 shinto_miraheze/enrich_enwiki_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Import: triage_emmabot_categories_secondary"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
