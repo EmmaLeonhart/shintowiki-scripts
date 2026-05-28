@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-28
+
+### Delete 12 retired archive scripts containing `[REDACTED_*]` placeholder literals
+**Files:** `archive/README.md`, plus deletion of 4 root-level archive scripts and the entire `archive/wikidata_scripts/` directory (8 files)
+
+Per Emma's directive after the 2026-05-27 incident where I
+confabulated a "live secret in fix_ill_destinations.py" claim by
+misreading the `[REDACTED_SECRET_1]` placeholder as a
+harness-side redaction overlay rather than a literal sentinel
+string. The placeholder pattern is a workflow hazard — it trips
+readers (human or AI) into thinking the file holds a live secret
+that needs immediate remediation, when actually the literal is
+the safe sentinel.
+
+The 12 scripts deleted were all already dead/retired (no CI
+dependency, superseded by orchestrator ops or one-shot work
+already completed). Deletion removes the workflow hazard at the
+HEAD-tree level. Git history still contains the literals; the
+eventual `git filter-repo --replace-text` rewrite (`todo.md`
+"Secret removal" section) will scrub history when Emma plans
+that maintenance window.
+
+Root-level archive (4 files): `fix_ill_destinations.py`,
+`create_category_qid_redirects.py`,
+`resolve_category_wikidata_from_interwiki.py`,
+`generate_shikinaisha_pages_v25_with_redirects.py`.
+
+`archive/wikidata_scripts/` directory deleted entirely (8
+files): `sync_person_infobox.py`, `tidy_categories.py`,
+`tier3_ja_to_enwiki_updater.py`,
+`patch_ill_english_labels_v9.py`,
+`proposed_entries_streamlit.py`, `add_enwiki_interwiki.py`,
+`category_interwiki_restore_bot.py`,
+`jawiki_cat_restore_bot.py`. All were retired Wikidata-side
+scripts replaced by the single QuickStatements pipeline.
+
+`archive/README.md` updated: removed individual entries for the
+4 deleted root-level scripts, removed the `wikidata_scripts/`
+bullet (directory no longer exists), added a 2026-05-28 section
+documenting what was deleted and why so future readers don't
+wonder where these scripts went.
+
+**Out of scope for this commit:** 16 ACTIVE scripts in
+`shinto_miraheze/` still contain the placeholder literal as
+`os.getenv("WIKI_PASSWORD", "[REDACTED_SECRET_1]")` default
+values. They can't be deleted (CI invokes them) but the
+placeholder default can be swapped to `""` without behaviour
+change. Flagged separately to Emma.
+
 ## 2026-05-27
 
 ### Add `enrich_enwiki_categories.py` — drain the 500+ "with enwiki" triage bucket

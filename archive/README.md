@@ -9,25 +9,6 @@ pipeline. Do not assume they still run against current APIs or schemas.
 - `test_fandom_login.py` — local smoke test for fandom mwclient auth.
 - `process_dupl.py` — local duplicated-content section merger (superseded by
   the claude.ai remote routine that consumes `remote_queue.json`).
-- `wikidata_scripts/` — older Wikidata-side scripts (interwiki restore,
-  category tidy, infobox sync, label patches, Streamlit proposal viewer).
-  All Wikidata writes now go through the QuickStatements pipeline only
-  (see `CLAUDE.md`), so these are not used.
-- `fix_ill_destinations.py` — old "fix `{{ill|...|WD=Q...}}` destinations"
-  sweep. Superseded by `shinto_miraheze/orchestrators/ops/normalize_ill_wikidata.py`
-  which handles the same job (and the missing-`qid=` case) per-page on every
-  orchestrator sweep. Also carries one of the hardcoded historical secrets
-  flagged for `git filter-repo --replace-text` rewrite — do not re-run.
-- `create_category_qid_redirects.py` — created `Q{QID}` redirects for category
-  pages with `{{wikidata link|Q...}}`. Per `todo.md` (2026-05-08), no longer
-  wired into any active workflow; superseded by `normalize_category_page` +
-  category-side wikidata-lookup orchestrator ops.
-- `resolve_category_wikidata_from_interwiki.py` — resolved Wikidata for
-  category pages via interwiki links. Per `todo.md` (2026-05-08), no longer
-  wired; superseded by orchestrator-side wikidata lookup.
-- `generate_shikinaisha_pages_v25_with_redirects.py` — V25 historical
-  Shikinaisha page generator (regular + Wikidata-redirect cases). One-shot;
-  the pages have long since been generated.
 - `strip_mediawiki_banners.py` — one-shot sweep over ns=8 MediaWiki pages
   to strip `<!-- History offloaded: ... -->` banners that `history_offload`
   left behind. ns=8 is excluded from every recurring orchestrator, so no
@@ -43,3 +24,31 @@ pipeline. Do not assume they still run against current APIs or schemas.
 
 If you resurrect something here, move it back out of `archive/` into the
 appropriate directory rather than running it in place.
+
+## 2026-05-28: 12 retired scripts deleted (not just archived)
+
+Per Emma's directive, the following 12 retired scripts that contained the
+`[REDACTED_SECRET_*]` / `[REDACTED_USER_*]` placeholder literals were
+deleted from the working tree rather than kept in archive. The placeholders
+are a workflow hazard — they trip readers (human or AI) into thinking
+they're live-secret redactions when they're actually sentinel strings.
+The scripts themselves were already dead (superseded by orchestrator ops
+or one-shot work that's done). They remain in git history; the eventual
+`git filter-repo --replace-text` rewrite (per todo.md "Secret removal")
+will remove the literals from history.
+
+Deleted (root-level archive):
+- `fix_ill_destinations.py` — superseded by `normalize_ill_wikidata` op.
+- `create_category_qid_redirects.py` — superseded by orchestrator-side
+  category wikidata lookup (per 2026-05-08 todo note).
+- `resolve_category_wikidata_from_interwiki.py` — same as above.
+- `generate_shikinaisha_pages_v25_with_redirects.py` — V25 one-shot
+  historical generator; the pages exist.
+
+Deleted (`archive/wikidata_scripts/` — entire directory removed):
+- `sync_person_infobox.py`, `tidy_categories.py`,
+  `tier3_ja_to_enwiki_updater.py`, `patch_ill_english_labels_v9.py`,
+  `proposed_entries_streamlit.py`, `add_enwiki_interwiki.py`,
+  `category_interwiki_restore_bot.py`, `jawiki_cat_restore_bot.py` —
+  all retired Wikidata-side scripts. All Wikidata writes now go through
+  the QuickStatements pipeline only (see `CLAUDE.md`).
