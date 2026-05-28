@@ -1,4 +1,4 @@
-{{Infobox person|gender={{ill|male|qid=Q6581097|1=Male (gender)}}}}
+{{Infobox person|gender={{ill|Male (gender)|qid=Q6581097}}}}
 
 {{Good article}}
 {{Otheruses|Legendary figure|Historical figure|Aterui}}
@@ -66,17 +66,10 @@ Numerous regional legends concerning Akuro-ō are found across Iwate, Miyagi, Ak
 * The Scarlet-Faced Emissary  
 * Leviathan of the Covenant  
 
-[[Category:Aterui]]
-[[Category:Legendary figures of Japan]]
-[[Category:People of the Heian period]]
-[[Category:People of Mutsu Province]]
-[[Category:History of the Tōhoku region]]
-[[Category:Emishi]]
-[[Category:Oni]]
 == References ==
 {{Reflist|qq=}}
 == Related Articles ==
-* {{ill|Emishi|en|Emishi|qid=Q932574|lt=Emishi|1=Emishi}}
+* {{ill|Emishi|en|Emishi|qid=Q932574|lt=Emishi}}
 * [[Sakanoue no Tamuramaro]]
 * [[Japanese folklore]]
 ==References==
@@ -85,7 +78,7 @@ Numerous regional legends concerning Akuro-ō are found across Iwate, Miyagi, Ak
 ]
 {{translated page|ja|悪路王|version=103929448|comment=Imported full ja history}}
 
-{{wikidata link|Q18700408|ja|悪路王|ja|田村三代記}}
+{{wikidata link|Q18700408|ja|悪路王|grok=none|check_date=2026-05-28}}
 [[Category:Aterui]]
 [[Category:Legendary Japanese people]]
 [[Category:Tamura storytelling]]
@@ -94,3 +87,10 @@ Numerous regional legends concerning Akuro-ō are found across Iwate, Miyagi, Ak
 [[Category:Pages with interwikis with duplicate languages]]
 [[Category:Ezo]]
 [[Category:Independently git synced pages]]
+[[Category:Aterui]]
+[[Category:Legendary figures of Japan]]
+[[Category:People of the Heian period]]
+[[Category:People of Mutsu Province]]
+[[Category:History of the Tōhoku region]]
+[[Category:Emishi]]
+[[Category:Oni]]
