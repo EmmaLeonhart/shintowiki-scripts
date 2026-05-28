@@ -80,6 +80,13 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   organization 25. (Fandom doesn't get the orchestrator
   canonicalization pass — it's a mirror; fandom side needs a
   separate canonicalization strategy.)
+
+  **Auto-fire wiring done 2026-05-28:** `delete_lowercase_template_collisions.py`
+  is now a step in `wiki-cleanup.yml` (after `remove_crud_categories`).
+  Per-template safety gate makes it a no-op for any template still in
+  use, so it'll clear templates naturally as their transclusion counts
+  hit 0 across CI cycles. No further coordination needed — when the
+  remaining templates hit 0, the next cycle deletes them.
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).

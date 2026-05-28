@@ -430,6 +430,20 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: remove_crud_categories" \
             python3 shinto_miraheze/remove_crud_categories.py --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      # Auto-fire delete_lowercase_template_collisions on every cycle. The
+      # script has per-template safety gates (must have zero transclusions
+      # + canonical twin must exist + content byte-identical or #REDIRECT)
+      # so it's a no-op for any template still in use. As the
+      # canonicalize_template_case orchestrator op drains references over
+      # time, individual templates clear and get deleted naturally — no
+      # manual coordination needed. First confirmed clear: Template:Infobox
+      # noble on miraheze (2026-05-28).
+      - name: "Cleanup: delete_lowercase_template_collisions"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: delete_lowercase_template_collisions" \
+            python3 shinto_miraheze/delete_lowercase_template_collisions.py --apply --max-deletes 50 --run-tag "${RUN_TAG}"
+
       # Kludge: Template:GaiadDate keeps getting swept up by deletion passes
       # but must not be deleted. Undelete it after the cleanup loop runs so
       # any incidental delete in the same cycle is reversed before the day

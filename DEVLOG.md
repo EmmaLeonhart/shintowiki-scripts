@@ -6,6 +6,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Wire `delete_lowercase_template_collisions.py` into wiki-cleanup.yml — auto-fires when templates hit 0
+**Files:** `.github/workflows/wiki-cleanup.yml`, `queue.md`
+
+Added a step "Cleanup: delete_lowercase_template_collisions"
+right after `remove_crud_categories` in the cleanup-loop block.
+Passes `--apply --max-deletes 50 --run-tag "${RUN_TAG}"`.
+
+The script has per-template safety gates (lowercase variant
+must exist, canonical capitalised twin must exist, content
+byte-identical or `#REDIRECT` to canonical, zero remaining
+transclusions on the wiki). For any template still in use,
+the step is a no-op. As `canonicalize_template_case` drains
+references over CI cycles, individual templates hit 0 and
+get deleted naturally — no manual coordination.
+
+First template confirmed clear earlier today:
+`Template:Infobox noble` on miraheze (2026-05-28 03:50Z, 0
+transclusions). The next cleanup-loop cycle should delete it.
+
+YAML parses. Defaults `--wiki both` so the same step handles
+both wikis. Fandom side is way further behind (per the
+queue) so most templates won't clear there for a while — but
+the step will pick up miraheze deletions first as they
+become eligible.
+
 ### Verification: local-files canonicalization is propagating; `Template:Infobox noble` cleared to 0 on miraheze
 **Files:** `queue.md`
 
