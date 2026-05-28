@@ -134,7 +134,6 @@
 {{documentation|content=
 This subtemplate is used by {{tl|infobox holiday}} to generate the date for holidays in future years.  It should not be used directly.
 }}
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

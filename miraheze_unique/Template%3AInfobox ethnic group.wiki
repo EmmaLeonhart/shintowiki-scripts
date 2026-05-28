@@ -171,7 +171,6 @@
 [[Category:Articles using infobox ethnic group with image parameters|{{#if:{{{image|}}}{{{rawimage|}}}{{{image_caption|}}}{{{caption|}}}|{{#ifexpr:{{#invoke:String|find|{{{image|}}}{{{rawimage|}}}{{{image_caption|}}}{{{caption|}}}|<div}}>0|ID|IR}}|Β}}{{PAGENAME}}]]
 [[Category:Articles using infobox ethnic group with image parameters|{{#if:{{{flag|}}}{{{flag_caption|}}}|F|ψ}}{{PAGENAME}}]]
 [[Category:Articles using Template:Infobox ethnic group with deprecated parameters|¶]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

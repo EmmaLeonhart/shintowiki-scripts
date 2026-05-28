@@ -1,13 +1,13 @@
 '''Awa Shrine'''
-* {{ill|Awa Shrine|en|Awa Shrine|qid=Q705547|lt=Awa Shrine (Chiba)}} - A shrine located in Tateyama City, Chiba Prefecture.
+* {{ill|Awa Shrine|abstract|Q705547|fr|Awa-jinja|ja|安房神社|zh|安房神社|qid=Q705547|lt=Awa Shrine (Chiba)}} - A shrine located in Tateyama City, Chiba Prefecture.
 * {{ill|Awa Shrine (Oyama)|ja|安房神社 (小山市)|12=simple|13=User:Immanuelle/Awa Shrine (Oyama)|comment=changed title based on wikidata|qid=Q59282622}} - A shrine located in Oyama City, Tochigi Prefecture.
 * {{ill|Awaguchi Shrine|ja|安房口神社|12=simple|13=User:Immanuelle/Awakuchi Shrine|comment=changed title based on wikidata|qid=Q59282598}} - A shrine located in Yokosuka City, Kanagawa Prefecture.
 * {{ill|Awa Shrine (Tokushima)|ja|阿波神社|12=simple|13=User:Immanuelle/Awa Shrine (Tokushima)|comment=changed title based on wikidata|qid=Q11657564}} - A shrine located in Naruto City, Tokushima Prefecture.
-* Awa Tenmangū - A sub-shrine located in {{ill|Wakamiya Hachiman-gū Shrine (Kyoto)|lt=Wakamiya Hachiman-gū Shrine (Kyoto)|lt=Wakamiya Hachiman Shrine (Kyoto)|ja|若宮八幡宮社|12=simple|13=User:Immanuelle/Wakamiya Hachiman Shrine (Kyoto)|qq=}}, in Higashiyama Ward, Kyoto City.
+* Awa Tenmangū - A sub-shrine located in {{ill|Wakamiya Hachiman-gū Shrine (Kyoto)|ja|若宮八幡宮社|lt=Wakamiya Hachiman Shrine (Kyoto)}}, in Higashiyama Ward, Kyoto City.
 {{Disambiguation|qq=}}
 
 {{translated page|ja|安房神社 (曖昧さ回避)|version=74604054|comment=Imported full ja history}}
 
-{{wikidata link|Q79727319|ja|安房神社 (曖昧さ回避)|check_date=2026-05-14}}
+{{wikidata link|Q79727319|ja|安房神社 (曖昧さ回避)|grok=none|check_date=2026-05-28}}
 [[Category:Shrine disambiguations]]
 [[Category:Independently git synced pages]]

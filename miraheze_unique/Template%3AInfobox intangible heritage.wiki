@@ -43,7 +43,6 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox intangible heritage]] with unknown parameter "_VALUE_"|ignoreblank=y| infoboxwidth | ICH | Name | image | imagesize | alt | Caption | imagecaption | State Party | Country | Countries | Domains | Criteria | Link | ID | Region | Coordinates | Year | Session | Extension | List | Below | Note }}<noinclude>
 {{documentation}}
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

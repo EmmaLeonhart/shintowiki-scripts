@@ -456,7 +456,6 @@ Copy and paste the infobox above into the desired article and fill in the values
 }}</includeonly>
 <noinclude>
 [[Category:Food infobox templates|Food]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

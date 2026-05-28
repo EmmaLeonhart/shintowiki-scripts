@@ -1,13 +1,13 @@
 '''Asai Shrine''' (浅井神社, あさいじんじゃ, あざいじんじゃ)
-* {{ill|Asai Shrine (Takaoka Ishizutsumi)|ja|浅井神社 (高岡市石堤)|12=simple|13=User:Immanuelle/Asai Shrine (Takaoka Ishizutsumi)|qq=}} - Located in {{ill|Takaoka, Toyama|en|Takaoka, Toyama|qid=Q502988|lt=Takaoka, Toyama}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture}}, Ishizutsumi.
+* {{ill|Asai Shrine (Takaoka Ishizutsumi)|ja|浅井神社 (高岡市石堤)}} - Located in {{ill|Takaoka, Toyama|en|Takaoka, Toyama|qid=Q502988|lt=Takaoka, Toyama}}, {{ill|Toyama Prefecture|en|Toyama Prefecture|qid=Q132929|lt=Toyama Prefecture}}, Ishizutsumi.
 * {{ill|Asai Shrine (Takaoka)|ja|浅井神社 (高岡市福岡町赤丸)|12=simple|13=User:Immanuelle/Asai Shrine (Takaoka)|comment=changed title based on wikidata|qid=Q134925834}} - Located in Fukuokamachi Akamaru, Takaoka, Toyama Prefecture.
 * {{ill|Azai Shrine (Ichinomiya)|ja|浅井神社 (一宮市)|12=simple|13=User:Immanuelle/Asai Shrine (Ichinomiya)|comment=changed title based on wikidata|qid=Q11556984}} - Located in {{ill|Ichinomiya, Aichi|en|Ichinomiya, Aichi|qid=Q270810|lt=Ichinomiya, Aichi}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, Asai-cho Higashi Asai.
-* {{ill|Asai Shrine (Inazawa)|ja|浅井神社 (稲沢市)|12=simple|13=User:Immanuelle/Asai Shrine (Inazawa)|ja_comment=jawiki link invalid}} - Located in {{ill|Inazawa|en|Inazawa|qid=Q389562|lt=Inazawa, Aichi}}, Aichi Prefecture, Asai-cho.
-* {{ill|Asai Shrine (Yatsushiro)|ja|浅井神社 (八代市)|12=simple|13=User:Immanuelle/Asai Shrine (Yatsushiro)|ja_comment=jawiki link invalid}} - Located in {{ill|Yatsushiro|en|Yatsushiro|qid=Q734479|lt=Yatsushiro, Kumamoto}}, {{ill|Kumamoto Prefecture|en|Kumamoto Prefecture|qid=Q130308|lt=Kumamoto Prefecture}}, Kitanomaru-cho.
+* {{ill|Asai Shrine (Inazawa)|ja|浅井神社 (稲沢市)}} - Located in {{ill|Inazawa|en|Inazawa|qid=Q389562|lt=Inazawa, Aichi}}, Aichi Prefecture, Asai-cho.
+* {{ill|Asai Shrine (Yatsushiro)|ja|浅井神社 (八代市)}} - Located in {{ill|Yatsushiro|en|Yatsushiro|qid=Q734479|lt=Yatsushiro, Kumamoto}}, {{ill|Kumamoto Prefecture|en|Kumamoto Prefecture|qid=Q130308|lt=Kumamoto Prefecture}}, Kitanomaru-cho.
 {{disambiguation}}
 
 {{translated page|ja|浅井神社|version=50387766|comment=Imported full ja history}}
 
-{{wikidata link|Q11556982|ja|浅井神社|check_date=2026-05-13}}
+{{wikidata link|Q11556982|ja|浅井神社|grok=none|check_date=2026-05-28}}
 [[Category:Shrine disambiguations]]
 [[Category:Independently git synced pages]]

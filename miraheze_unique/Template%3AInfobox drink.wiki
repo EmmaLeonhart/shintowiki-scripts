@@ -59,7 +59,6 @@
 | name | logo | logo_size | logo_alt | logo_caption | image | image_size | image_alt | caption | type | abv | proof | manufacturer | brewery | distributor | region | origin | origin_label | introduced | year | discontinued | last_year | colour | color | flavor | flavour | style | og | fg | ibu | ingredients | variants | related | homepage | website }}<includeonly>{{#ifeq:{{NAMESPACE}}|{{ns:0}}|}}</includeonly><noinclude>{{documentation}}
 [[Category:Articles with hRecipes]]
 [[Category:Articles with hProducts]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

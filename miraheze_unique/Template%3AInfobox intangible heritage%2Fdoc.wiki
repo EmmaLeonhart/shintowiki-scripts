@@ -140,7 +140,6 @@ For example, the text to the left produces the infobox to the right ([[:en:Radif
 }}</includeonly>
 <noinclude>
 [[Category:Masterpieces of the Oral and Intangible Heritage of Humanity templates]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

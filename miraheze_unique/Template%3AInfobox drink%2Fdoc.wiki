@@ -249,7 +249,6 @@ This example is taken from the [[:en:Bombay Sapphire|Bombay Sapphire]] article.
 }}</includeonly>
 <noinclude>
 [[Category:Drink infobox templates| ]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

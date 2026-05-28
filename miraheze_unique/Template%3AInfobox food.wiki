@@ -131,7 +131,6 @@
 |name|name_italics|name_lang|national_cuisine|no_commons|no_recipes|other|place_of_origin|protein|qid|region|served|serving_size
 |similar_dish|time1|time2|type|upright|variations|year}}<noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
 [[Category:Pages using infobox food with unknown parameters|_VALUE_]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
