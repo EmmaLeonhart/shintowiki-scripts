@@ -1,10 +1,9 @@
-<!-- History offloaded: due to miraheze stability concerns, the edit history of this page has been offloaded to the XML archive. See https://emmaleonhart.github.io/shintowiki-scripts/wikihistory.html?page=%E8%8F%9F%E7%8B%AD%E6%B4%A5%E5%BD%A6%E5%91%BD for full history. Last refreshed: [[github:EmmaLeonhart/shintowiki-scripts/actions/runs/24951476559|time triggered pipeline]] -->
 {{Infobox kuge
 | 氏名 = Usatsuhiko-no-Mikoto
 | 画像 =
 | 画像サイズ =
 | 画像説明 =
-| 時代 = {{ill|Antiquity|ja|古代|lt=Antiquity|lt_ja=上古}}, {{ill|Yayoi period|ja|弥生時代}}
+| 時代 = {{ill|Antiquity|ja|古代|lt=Antiquity}}, {{ill|Yayoi period|ja|弥生時代}}
 | 生誕 = Unknown
 | 死没 = Unknown
 | 改名 =
@@ -17,30 +16,30 @@
 | 主君 = {{ill|Emperor Jinmu|ja|神武天皇}}
 | 氏族 = {{ill|Usa clan|ja|宇佐氏}}
 | 父母 = {{ill|Ame-no-Mikudari-no-Mikoto|ja|天三降命}}
-| 兄弟 = {{ill|Usatsu-hime|ja|菟狭津媛|lt=Usatsu-hime-no-Mikoto|lt_ja=宇佐津媛命}}
+| 兄弟 = {{ill|Usatsu-hime|ja|菟狭津媛|lt=Usatsu-hime-no-Mikoto}}
 | 妻   =
 | 子   = Tsunetsu-hiko-no-Mikoto
 | 特記事項 =
 }}
-'''Usatsuhiko-no-Mikoto''' (''usatsuhiko-no-mikoto''; {{ill|dates of birth and death unknown|ja|生没年不詳|lt=dates of birth and death unknown|lt_ja=生没年不詳}}) was a {{ill|gōzoku|ja|豪族}} of ancient {{ill|Japan|ja|日本}} and the first '''{{ill|Usa no Kuni no Miyatsuko|ja|宇佐国造}}'''.
+'''Usatsuhiko-no-Mikoto''' (''usatsuhiko-no-mikoto''; {{ill|dates of birth and death unknown|ja|生没年不詳|lt=dates of birth and death unknown}}) was a {{ill|gōzoku|ja|豪族}} of ancient {{ill|Japan|ja|日本}} and the first '''{{ill|Usa no Kuni no Miyatsuko|ja|宇佐国造}}'''.
 
 == Overview ==
 In the ''{{ill|Kojiki|ja|古事記}}'' he is written as '''Usatsuhiko'''; in the ''{{ill|Nihon Shoki|ja|日本書紀}}'' and the "{{ill|Kōson Hongi|ja|皇孫本紀}}" as '''Usatsuhiko'''; in the "Kokuzō Hongi" as '''Usatsuhiko-no-Mikoto'''.
 
-In the ''Kojiki'' he is identified as a figure of {{ill|Usa District|ja|宇佐郡|lt=Usa|lt_ja=宇沙}} in {{ill|Toyo Province|ja|豊国}}, and in the ''Nihon Shoki'' as a figure of {{ill|Usa|ja|宇佐郡|lt=Usa|lt_ja=菟狭}} in {{ill|Chikushi Province|ja|筑紫国}}; he appears together with his younger sister Usatsu-hime-no-Mikoto.
+In the ''Kojiki'' he is identified as a figure of {{ill|Usa District|ja|宇佐郡|lt=Usa}} in {{ill|Toyo Province|ja|豊国}}, and in the ''Nihon Shoki'' as a figure of {{ill|Usa|ja|宇佐郡|lt=Usa}} in {{ill|Chikushi Province|ja|筑紫国}}; he appears together with his younger sister Usatsu-hime-no-Mikoto.
 
-In the ''Nihon Shoki'', when {{ill|Emperor Jinmu|ja|神武天皇}} made his {{ill|Jinmu eastern expedition|ja|神武東征|lt=eastern expedition|lt_ja=東征}} and landed at {{ill|Usa|ja|宇佐郡|lt=Usa|lt_ja=菟狭}} in {{ill|Chikushi Province|ja|筑紫国}}, with {{ill|Shiinetsuhiko|ja|椎根津彦|lt=Uzuhiko|lt_ja=珍彦}}, the {{ill|kunitsukami|ja|国津神|lt=Kunitsukami|lt_ja=国神}}, as sea guide, bound for the Nakatsukuni ({{ill|Yamato Province|ja|大和国}}), Usatsuhiko and {{ill|Usatsu-hime|ja|菟狭津媛}} — the ancestors of the {{ill|Usa no Kuni no Miyatsuko|ja|宇佐国造|lt=Usa no Kuni no Miyatsuko|lt_ja=菟狭国造}} — were there; they built a one-pillared raised palace (''ashi-hitotsu agari no miya'') at the upper reaches of the {{ill|Usa River|ja|駅館川|lt=Usa River|lt_ja=菟狭川}} and gave a banquet in service. There Emperor Jinmu issued a decree and had the younger sister Usatsu-hime married to the attendant minister {{ill|Amanotane-ko-no-Mikoto|ja|天種子命}} ({{ill|Nakatomi clan|ja|中臣氏|lt=Nakatomi-no-Muraji|lt_ja=中臣連}} distant ancestor). The ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' and the ''Kojiki'' record similar traditions, but the ''Kojiki'' has no description of Amanotane-ko-no-Mikoto.
+In the ''Nihon Shoki'', when {{ill|Emperor Jinmu|ja|神武天皇}} made his {{ill|Jinmu eastern expedition|ja|神武東征|lt=eastern expedition}} and landed at {{ill|Usa|ja|宇佐郡|lt=Usa}} in {{ill|Chikushi Province|ja|筑紫国}}, with {{ill|Shiinetsuhiko|ja|椎根津彦|lt=Uzuhiko}}, the {{ill|kunitsukami|ja|国津神|lt=Kunitsukami}}, as sea guide, bound for the Nakatsukuni ({{ill|Yamato Province|ja|大和国}}), Usatsuhiko and {{ill|Usatsu-hime|ja|菟狭津媛}} — the ancestors of the {{ill|Usa no Kuni no Miyatsuko|ja|宇佐国造|lt=Usa no Kuni no Miyatsuko}} — were there; they built a one-pillared raised palace (''ashi-hitotsu agari no miya'') at the upper reaches of the {{ill|Usa River|ja|駅館川|lt=Usa River}} and gave a banquet in service. There Emperor Jinmu issued a decree and had the younger sister Usatsu-hime married to the attendant minister {{ill|Amanotane-ko-no-Mikoto|ja|天種子命}} ({{ill|Nakatomi clan|ja|中臣氏|lt=Nakatomi-no-Muraji}} distant ancestor). The ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀}}'' and the ''Kojiki'' record similar traditions, but the ''Kojiki'' has no description of Amanotane-ko-no-Mikoto.
 
 {{quote|Usa District
 Usatsuhiko-no-Mikoto (loyalty to the ruler) (reverence for the gods) (just cause)
 
-He was the son of {{ill|Ame-no-Mikudari-no-Mikoto|ja|天三降命|lt=Ame-no-Mikudari-no-Mikoto|lt_ja=天御降命}} — grandson of {{ill|Takamimusubi-no-Mikoto|ja|高皇産霊尊|lt=Takamimusu-no-Mikoto|lt_ja=高皇産令命}} — and resided at Usa-jima. He served Hime-Ōkami, and when Emperor Jinmu reached Usa during his eastern expedition and lodged there for a time, he built the one-pillared raised palace and offered him hospitality. He is the ancestor of the {{ill|Usa clan|ja|宇佐氏}}, and his descendants have branched into several hundred families including the {{ill|Miyanari clan|ja|宮成氏|lt=Miyanari|lt_ja=宮成}} and the {{ill|Itōzu clan|ja|到津氏|lt=Itōzu|lt_ja=到津}} {{ill|baron|ja|男爵}} houses.|''Shūshinka Kyōdo Shiryō Shūsei''{{sfn|大分県教育会|1936}}}}
+He was the son of {{ill|Ame-no-Mikudari-no-Mikoto|ja|天三降命|lt=Ame-no-Mikudari-no-Mikoto}} — grandson of {{ill|Takamimusubi-no-Mikoto|ja|高皇産霊尊|lt=Takamimusu-no-Mikoto}} — and resided at Usa-jima. He served Hime-Ōkami, and when Emperor Jinmu reached Usa during his eastern expedition and lodged there for a time, he built the one-pillared raised palace and offered him hospitality. He is the ancestor of the {{ill|Usa clan|ja|宇佐氏}}, and his descendants have branched into several hundred families including the {{ill|Miyanari clan|ja|宮成氏|lt=Miyanari}} and the {{ill|Itōzu clan|ja|到津氏|lt=Itōzu}} {{ill|baron|an|Barón|ar|بارون|arz|بارون|ast|Barón|be|Барон|bg|Барон|bn|ব্যারন|bpy|বারাও|br|Baron|bxr|Барон|ca|Baró|ckb|بارۆن|cs|Baron|da|Baron|de|Baron|el|Βαρόνος|eo|Barono|es|Barón|et|Parun|eu|Baroi|fa|بارون|fi|Paroni|fr|Baron (noblesse)|fy|Baron|ga|Barún|gl|Barón|he|ברון|hr|Barun|hu|Báró|hy|Բարոն|id|Baron|io|Barono|is|Barón|it|Barone|ja|男爵|ka|ბარონი|kk|Барон|ko|남작|ky|Барон|la|Baro (gradus nobilitatis)|lt|Baronas|lv|Barons|mk|Барон (титула)|mn|Барон|myv|Олязор|mzn|بارائو|nl|Baron (titel)|nn|Baron|no|Baron|oc|Baron (noblesa)|pl|Baron|pt|Barão|ro|Baron|ru|Барон|scn|Baruni|sh|Baron|simple|Baron|sk|Barón|sl|Baron|sr|Барон|sv|Baron|tg|Барон|th|บารอน|tl|Baron|tr|Baron|uk|Барон|ur|بیرن|uz|Baron|vi|Nam tước|wuu|男爵|zh|男爵|zh_min_nan|Lâm-chiok|zh_yue|男爵|qid=Q165503}} houses.|''Shūshinka Kyōdo Shiryō Shūsei''{{sfn|大分県教育会|1936}}}}
 
 == Genealogy ==
 {{see |{{ill|Usa clan|ja|宇佐氏}}}}
 He is said to have been the son of {{ill|Ame-no-Mikudari-no-Mikoto|ja|天三降命}} (son of {{ill|Ame-no-Ikutama-no-Mikoto|ja|天活玉命}}), grandson of {{ill|Takamimusubi|ja|高皇産霊尊}} (''takamimusubi'').
 
-His younger sister Usatsu-hime-no-Mikoto became the wife of {{ill|Amanotane-ko-no-Mikoto|ja|天種子命}} and bore {{ill|Usatsu-omi-no-Mikoto|ja|宇佐津臣命}}, the ancestor of the {{ill|Nakatomi clan|ja|中臣氏|lt=Nakatomi-no-Muraji|lt_ja=中臣連}}.
+His younger sister Usatsu-hime-no-Mikoto became the wife of {{ill|Amanotane-ko-no-Mikoto|ja|天種子命}} and bore {{ill|Usatsu-omi-no-Mikoto|ja|宇佐津臣命}}, the ancestor of the {{ill|Nakatomi clan|ja|中臣氏|lt=Nakatomi-no-Muraji}}.
 
 == Footnotes ==
 
@@ -60,7 +59,7 @@ His younger sister Usatsu-hime-no-Mikoto became the wife of {{ill|Amanotane-ko-n
 {{日本神話}}
 {{Normdaten}}
 {{デフォルトソート:うさつひこのみこと}}
-{{wikidata link|Q109287983|ja|菟狭津彦命|check_date=2026-05-13}}
+{{wikidata link|Q109287983|ja|菟狭津彦命|grok=none|check_date=2026-05-28}}
 [[Category:宇佐氏|*うさつひこのみこと]]
 [[Category:生没年不詳]]
 [[category:古代日本の人物]]
