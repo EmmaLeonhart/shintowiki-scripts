@@ -8,7 +8,7 @@ This template generates a table of designations for sites which have been deemed
 
 Supported designations are listed at [[Wikipedia:WikiProject Historic sites]]. If you would like to add a new designation, post a note on the template's talk page.
 
-Although this template uses the same supported designations as [[:en:Template:Designation|Template:Designation]], a different colour palette is used.  The colours for {{tl|Designation}} (see [[Template:Designation/colour]]) are used for backgrounds, so the background and text colour combinations must not be hard to see for those who are fully or partially [[colour blind]] (see [[WP:Accessibility]]).  The colours for this template  (see [[Template:Designation/colour2]]) are used for borders, so there is somewhat greater scope to use colours connected at least loosely with their designations. For example, the blue border used for [[Monument historique]] is the same shade of blue present in the [[:en:Flag of France|Flag of France]].   
+Although this template uses the same supported designations as [[:en:Template:Designation|Template:Designation]], a different colour palette is used.  The colours for {{tl|Designation}} (see [[Template:Designation/colour]]) are used for backgrounds, so the background and text colour combinations must not be hard to see for those who are fully or partially [[colour blind]] (see [[WP:Accessibility]]).  The colours for this template  (see [[Template:Designation/colour2]]) are used for borders, so there is somewhat greater scope to use colours connected at least loosely with their designations. For example, the blue border used for {{ill|Historical Monument|als|Monument historique|ar|المعالم التاريخية في فرنسا|ast|Monumentu históricu de Francia|az|Tarixi abidə (Fransa)|ca|Monument historique (França)|cs|Monument historique|da|Monument historique|de|Monument historique|el|Ιστορικό Μνημείο (Γαλλία)|en|Monument historique|eo|Historia Monumento (Francio)|es|Monumento histórico de Francia|eu|Monumentu historiko (Frantzia)|fr|Monument historique (France)|id|Monument historique|it|Monumento storico (Francia)|ja|歴史的記念物 (フランス)|ko|역사기념물 (프랑스)|ms|Monumen sejarah (Perancis)|nl|Monument historique|oc|Monument istoric en França|pl|Monument historique|pt|Monumento histórico da França|ru|Исторический памятник (Франция)|sk|Monument historique|sv|Monument historique|th|อนุสรณ์สถานทางประวัติศาสตร์แห่งฝรั่งเศส|tr|Monument historique|uk|Історична пам'ятка (Франція)|vls|Monument historique|zh|法国历史遗迹|lt=Historical Monument|qid=Q916475}} is the same shade of blue present in the [[:en:Flag of France|Flag of France]].   
 
 ===Blank template===
 {{Infobox designation list
@@ -581,4 +581,5 @@ Please note that parameters and other data which appear in both templates should
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>

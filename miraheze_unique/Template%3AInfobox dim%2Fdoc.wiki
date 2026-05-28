@@ -35,5 +35,6 @@ The template also accepts other geohack parameters to generate the dim argument:
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox dim/doc|check_date=2026-05-28}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>
