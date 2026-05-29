@@ -6,6 +6,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Stop the unique-sync from recreating deleted lowercase template twins (skip-set)
+**Files:** `shinto_miraheze/sync_revision_aware.py`, `shinto_miraheze/sync_miraheze_unique_pages.py`, `shinto_miraheze/sync_fandom_unique_pages.py`
+
+Found a real convergence bug in the lowercase case-collision cleanup:
+`delete_lowercase_template_collisions.py` deletes the lowercase
+`Template:Infobox <name>` wiki pages once transclusions hit 0, but the
+lowercase `.wiki` files in `miraheze_unique/` + `fandom_unique/` still
+carry `[[Category:Independently git synced pages]]`. So on the next
+`sync_*_unique_pages.py` run the deleted page is an orphan-WITH-category
+and the sync's PUSH-NEW branch **recreates it on the wiki** — deleter and
+sync ping-pong forever, lowercase twin immortal. (Concrete instance of
+the `todo.md` "bot ping-pong / never-settling pages" concern.) The
+deleter's docstring assumed the orphan would be category-less, but its
+own byte-identical-to-canonical precondition guarantees the category is
+present.
+
+Fix: added `LOWERCASE_COLLISION_TITLES` (13 titles: 10 base + 3 noble
+sub-variants) to `sync_revision_aware.py`, and a skip in both Pass 1 and
+Pass 2 of both unique-sync scripts. Skipping (rather than stripping the
+category) is deliberate: it keeps the sync from decategorizing the wiki
+page, so the deleter's byte-identity gate stays satisfied and the wiki
+pages still get deleted normally. Deleter unchanged. End state: deleter
+removes the lowercase wiki pages, sync never recreates them — convergent.
+
+Deferred: pruning the 26 inert lowercase `.wiki` files from the repo.
+They're now sync-ignored (harmless), but they can't be removed from this
+Windows case-insensitive checkout — every git path op folds the lowercase
+name to its on-disk capital twin ("Ignoring path"); only the ~2 whose
+lowercase form is materialized on disk are removable. Needs a
+case-sensitive (Linux) checkout to `git rm` the rest. Non-urgent.
+
 ### Investigated "drop sync state files" — premise is false, state files stay
 **Files:** `todo.md`
 

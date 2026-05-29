@@ -20,17 +20,16 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   (`256cee7d`), so deletions happen on the cleanup-loop schedule
   without further work. **No human action needed; just wait.**
 
-- [ ] **Fandom side needs a separate canonicalization strategy.**
-  Fandom mirrors miraheze via `fandom_mirror.py` — it doesn't get its
-  own `canonicalize_template_case` pass. Current fandom transclusion
-  counts are way higher than miraheze (Infobox noble alone: 55 fandom
-  vs 0 miraheze). Once miraheze drains and the deletion script clears
-  miraheze, fandom will still hold the lowercase variants with
-  hundreds of transclusions. Design Q for Emma: should fandom mirror
-  the canonical form going forward (i.e., re-export each affected
-  miraheze page to fandom via the mirror), or should we add a
-  fandom-side bot pass equivalent to the orchestrator op? Defer to
-  Emma's call — not autonomous.
+- [ ] **Prune the 26 inert lowercase `.wiki` files from a case-sensitive checkout.**
+  The recreation ping-pong is fixed (2026-05-28): both unique-sync
+  scripts now skip `LOWERCASE_COLLISION_TITLES`, so the deleter can
+  remove the lowercase wiki pages and the sync never recreates them.
+  The matching repo files (`miraheze_unique/` + `fandom_unique/`
+  `Template%3AInfobox <lowercase>.wiki`, 13 each) are now sync-ignored
+  and harmless, but still tracked — and they can't be `git rm`'d from
+  the Windows case-insensitive dev checkout (every path op folds to the
+  on-disk capital twin). Remove them from a Linux/case-sensitive
+  checkout and commit. Non-urgent (they're inert).
 
 ## Pinned notes
 

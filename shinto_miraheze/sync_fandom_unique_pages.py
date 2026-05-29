@@ -32,7 +32,9 @@ from pathlib import Path
 import mwclient
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
+from shinto_miraheze.sync_revision_aware import (
+    head_commit, resolve_conflict, LOWERCASE_COLLISION_TITLES,
+)
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -246,6 +248,14 @@ def main():
     edits_performed = 0
 
     for title, (wiki_revid, wiki_text) in wiki_pages.items():
+        if title in LOWERCASE_COLLISION_TITLES:
+            # Case-collision lowercase twin being deleted on-wiki by
+            # delete_lowercase_template_collisions.py. Skip entirely so we
+            # never recreate it (the deleter would fight us) and never
+            # decategorize the wiki page (keeps the deleter's byte-identity
+            # gate intact). See LOWERCASE_COLLISION_TITLES.
+            skipped += 1
+            continue
         local_path = WIKI_DIR / title_to_filename(title)
         entry = state.get(title) or {}
         base_revid = entry.get("revid")
@@ -381,6 +391,8 @@ def main():
     # local content if it carries the category tag.
     orphans = sorted(set(local_files) - set(wiki_pages))
     for title in orphans:
+        if title in LOWERCASE_COLLISION_TITLES:
+            continue  # see LOWERCASE_COLLISION_TITLES — never recreate
         local_path = local_files[title]
         try:
             local_text = local_path.read_text(encoding="utf-8")

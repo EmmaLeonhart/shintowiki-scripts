@@ -24,6 +24,36 @@ from pathlib import Path
 from typing import Optional
 
 
+# Lowercase case-collision template twins (wiki titles) that
+# delete_lowercase_template_collisions.py is removing on-wiki. The
+# unique-pages sync scripts (sync_miraheze_unique_pages.py,
+# sync_fandom_unique_pages.py) MUST skip these titles entirely: otherwise,
+# once the deleter removes the lowercase wiki page, the sync's orphan/PULL
+# logic recreates it (the local twin still carries the gating category),
+# and the deleter + sync ping-pong forever. Skipping also keeps the sync
+# from decategorizing the wiki page, which preserves the deleter's
+# "byte-identical to canonical twin" precondition. The matching local
+# .wiki files were removed from the repo in the same change. See the
+# deleter's TEMPLATE_PAIRS, docs/case_collision_report.md, and DEVLOG
+# 2026-05-28. Includes the 10 base templates plus the 3 noble sub-variants
+# (family / (Japan) / /doc) that also collide.
+LOWERCASE_COLLISION_TITLES = {
+    "Template:Infobox chinese",
+    "Template:Infobox film",
+    "Template:Infobox historic site",
+    "Template:Infobox holiday",
+    "Template:Infobox kofun",
+    "Template:Infobox mountain",
+    "Template:Infobox museum",
+    "Template:Infobox noble",
+    "Template:Infobox noble (Japan)",
+    "Template:Infobox noble family",
+    "Template:Infobox noble/doc",
+    "Template:Infobox officeholder",
+    "Template:Infobox organization",
+}
+
+
 def count_wiki_revs_since(site, title: str, baseline_revid: Optional[int]) -> Optional[int]:
     """Count wiki revisions of ``title`` more recent than ``baseline_revid``.
 
