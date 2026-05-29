@@ -6,6 +6,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Act on Emma's Open-Questions dispositions — retire dead todo items
+**Files:** `todo.md`, `queue.md`
+
+Work-loop tick. Emma cleared the [[Open questions]] backlog on the wiki
+(synced to repo) with per-item dispositions. Acted on the unambiguous
+"drop / already-exists" ones in `todo.md`: (1) retired the VISION.md
+architecture program (namespace restructure, `{{ill}}`→`Export:` move,
+category-name standardization, Pramana, change-tracking bot) — Emma "no
+longer happening" — keeping the note that the **automated translation
+pipeline already exists** (the cloud-queue `remote_queue.json` worker that
+translates `need_translation/` pages); (2) dropped the fandom
+Infobox→Portable conversion section + its postponed duplicate — Emma "no
+AI does this"; (3) dropped both copies of the category race-condition
+audit item — Emma "no longer concerning". Open-Questions bullet removal is
+Emma's/CI's job on the wiki (wiki-wins page), not the repo copy. Still
+pending under the verify item: kana ojp-hani SPARQL check (freeze-blocked
+for edits) and secret-removal history-grep.
+
 ### Stop the unique-sync from recreating deleted lowercase template twins (skip-set)
 **Files:** `shinto_miraheze/sync_revision_aware.py`, `shinto_miraheze/sync_miraheze_unique_pages.py`, `shinto_miraheze/sync_fandom_unique_pages.py`
 

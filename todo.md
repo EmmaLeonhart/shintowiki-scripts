@@ -31,8 +31,6 @@ Active work queue lives in [queue.md](queue.md) (queue — items are deleted whe
 ## Postponed (moved from queue.md 2026-05-08)
 
 - [ ] **Recreate deleted Wikidata items via per-page orchestrator op** — a batch of items created for ILL targets were deleted by another editor on Wikidata. The orchestrator's `deleted_qids_in_ill` op already detects this case (rewrites the stale QID to `qid=DELETED_QID` on the page and tags `[[Category:Pages with deleted QID in ill template]]`). Next step: build either (a) a new orchestrator op `recreate_deleted_qids.py` that, per page, gathers context (page title, en label from page name, P31 type inference from category membership, P11250 = `shinto:<title>`) and submits `wbeditentity` CREATE + claims via the Wikidata API; or (b) a cleanup-loop script `generate_recreate_quickstatements.py` that walks the tagged-pages category and renders a `QuickStatements/recreate-deleted` page with `CREATE` / `LAST|P11250|"shinto:..."` blocks for the user to review and submit through the existing QS pipeline. (b) is lower-risk — avoids needing Wikidata-side bot credentials and lets a human gate notability before submission. Both paths require defining what minimum claim set will avoid re-deletion (without strong sourcing the new items will get deleted again — which was the original problem).
-- [ ] **Audit category pages for race-condition artifacts** — see the duplicate entry under Wiki content tasks > High priority. (Postponed watch item: `resolve_category_wikidata_from_interwiki.py` and `create_category_qid_redirects.py` are no longer wired into any active workflow as of 2026-05-08, and `normalize_category_page` sweeps continuously, so any actual artifacts are slowly being normalized. No clear failure mode to audit against — wait for specific anomalies to surface.)
-- [ ] **Hand-convert the remaining fandom `Template:Infobox X` pages to Portable Infobox** — `fandom_unique/` has 255 such templates; 6 are portable, 249 are not. Per the prior analysis (`status.md`): 88 are /doc subpages or redirects (no conversion needed), 95 use Lua/parser-function-driven construction that can't be mechanically translated, 51 use non-numbered-pair patterns, 4 are `child=yes` sub-templates that should stay as children. The remaining ~12-15 plausible mechanical conversions and the high-leverage hand-rewrites (`Template:Infobox religious building`, `Template:Infobox Japanese Temple`, `Template:Infobox Japanese Kofun`, `Template:Infobox Officeholder`, `Template:Infobox Noble`) need careful per-template work with rendering tests on shinto.fandom.com. Until someone is actively curating the fandom mirror, this is not blocking — articles render readably without infoboxes thanks to `cleanup_fandom_pages.py`.
 - [ ] **Translate the remaining ~187 untranslated `need_translation/` files** (most are done; remainder postponed). Blocked on history_offload completion for those pages — translating first would force the archive + revdel step to re-archive a longer history than necessary. See the more detailed entry under "Requires manual intervention" below for the prioritized list.
 - [ ] **ILLs without `WD=`** — see the duplicate entry under Wiki content tasks > High priority. (Deferred — lower priority than the active queue.)
 - [ ] **Retrofit `populate_namespace_layers.py` → `ops/namespace_layers.py`** — mainspace only; creates/edits sibling pages in Data:/Export: namespaces; `HANDLES_SAVE = True`. Blocked on the wiki-side namespace creation.
@@ -208,7 +206,6 @@ All items below require manual editing or human review. None have a safe automat
 - [ ] **Duplicate QID disambiguation pages** — 621 `Q{QID}` mainspace pages point to 2+ categories. Multi-step cleanup in progress: (1) `resolve_double_category_qids.py` now automates the easy cases where all listed categories resolve to the same target (now in cleanup loop). (2) Remaining pages where categories point to genuinely different targets still need human review. Also applies to `[[Category:duplicated qid category redirects]]`.
 - [ ] **Translate all category names in [Category:Japanese language category names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names)** — ensure every category in this tracking set is migrated to a canonical English category title.
 - [ ] **[Category:Pages with duplicated content](https://shinto.miraheze.org/wiki/Category:Pages_with_duplicated_content)** — pages where the same content exists under multiple titles. Needs human review per page: which title is canonical, whether a history merge is appropriate.
-- [ ] **Audit category pages for race-condition artifacts** — some categories may have inconsistent state from the `resolve_category_wikidata` and `create_category_qid_redirects` scripts running concurrently. Scope unknown; needs an audit script.
 - [ ] **Review post-audit leftovers** - many entries in https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names appear to be downstream artifacts; verify whether any automated cleanup is still needed.
 
 ### Lower priority
@@ -221,13 +218,11 @@ All items below require manual editing or human review. None have a safe automat
 
 ## Repository / script tasks
 
-### Rewrite Wikipedia-style infobox templates as Fandom Portable Infoboxes (2026-05-03)
+### Rewrite fandom Infobox templates as Portable Infoboxes — DROPPED 2026-05-28
 
-- [ ] **Convert ~23 ``Template:Infobox X`` pages on shinto.fandom.com from MediaWiki/Wikipedia-style table-and-Lua syntax to Fandom Portable Infobox (`<infobox>...</infobox>` XML markup).** The textual cleanup script `shinto_miraheze/cleanup_fandom_pages.py` (added 2026-05-03) handles `{{ill}}`/`{{wikidata link}}`/`{{shortdesc}}` stripping and interwiki dedup on the article side, but the templates themselves still call `{{#invoke:Wikidata|getValue|...}}` and `{{#invoke:InfoboxImage|InfoboxImage|...}}`. Wikibase Client is OFF on fandom and the `Module:Wikidata`/`Module:InfoboxImage` modules don't exist there, so every infobox renders broken.
-  - **Highest-leverage targets** (most transcluded among the 26 article pages currently in `shinto_miraheze/sync_fandom_pages.state`): `Template:Infobox religious building` (used by both temple and shrine articles via the `Template:Infobox Buddhist temple` redirect), `Template:Infobox Japanese Temple`, `Template:Infobox Japanese Kofun`, `Template:Infobox Officeholder`, `Template:Infobox Noble`. The remaining ~18 are long-tail (Egyptian deity, Holiday, Lake, Law, Monarch, Museum, Musician, Organization, etc.) and may not have any current transclusions on shinto.fandom.com.
-  - **Approach**: hand-rewrite per template using `<title source="name">`, `<image source="image">`, `<group><header>...</header><data source="X" label="Y"/>...</group>`. Skip `<default>` for empty rows — Portable Infoboxes already hide empty rows. Theme via CSS variables (e.g., `theme="shrine"`, `theme="temple"`) rather than hardcoded backgrounds; add the variables to `MediaWiki:Common.css` on fandom. Don't try to port the Lua-driven affiliation-color switching — fold the most common cases into two themes.
-  - **Reference**: [Help:Infoboxes](https://community.fandom.com/wiki/Help:Infoboxes), [Help:Infoboxes/Tags](https://community.fandom.com/wiki/Help:Infoboxes/Tags), [Help:Infobox migration](https://community.fandom.com/wiki/Help:Infobox_migration). The auto-converter (Special:InfoboxBuilder) is documented as breaking on Lua-driven infoboxes, so manual rewrites are expected.
-  - **Why it's not urgent**: cleanup_fandom_pages strips the `{{ill}}` etc. that would have been red-template errors on every article — articles render readably even with broken infoboxes (no inline error spam), just without the side panel. Until someone is actively curating the fandom mirror, this can wait.
+Per Emma ([[Open questions]], 2026-05-28): not bot work, dropped. Articles already
+render readably without the side panel thanks to `cleanup_fandom_pages.py` (which
+strips the `{{ill}}`/`{{wikidata link}}`/`{{shortdesc}}` that would otherwise error).
 
 ### history_offload delete-without-recreate on JS/CSS pages — root cause + fix (2026-05-02 → 2026-05-03)
 
@@ -269,13 +264,12 @@ All items below require manual editing or human review. None have a safe automat
 
 ---
 
-## Longer term (architecture)
+## Longer term (architecture) — retired 2026-05-28
 
-These are tracked in detail in [VISION.md](docs/VISION.md). Listed here for completeness.
-
-- [ ] **Namespace restructure** — introduce `Data:`, `Meta:`, `Export:` namespaces per the VISION.md plan. Script `populate_namespace_layers.py` is ready but gated behind `--enable-namespace-layers` flag until namespaces are created on the wiki. Currently creates `Data:` (JSON with QID) and `Export:` (wikitext copy) pages from mainspace.
-- [ ] **Move `{{ill}}` export data to `Export:` namespace** — simplify mainspace to plain `[[links]]`; keep the ILL/QID data in `Export:` pages only
-- [ ] **Category name standardization** — establish canonical English names for all categories; categories handled via Wikidata rather than translation
-- [ ] **Pramana integration** — connect `Data:` pages to pramana.dev as the canonical ID backend
-- [ ] **Automated translation pipeline** — take any Japanese Wikipedia page and produce a consistent translated page with proper ILL/Wikidata connections
-- [ ] **Change-tracking bot** — monitor wiki changes and propagate them across namespace layers
+Per Emma ([[Open questions]], 2026-05-28): the VISION.md architecture program is no
+longer happening. Dropped: namespace restructure (`Data:`/`Meta:`/`Export:`),
+`{{ill}}`→`Export:` data move, category-name standardization, Pramana integration,
+and the change-tracking bot. The one exception — the **automated translation
+pipeline — already exists**: the cloud-queue worker that drains `remote_queue.json`
+translates `need_translation/` pages (see the remote-queue reference section above).
+`docs/VISION.md` retains the historical plan.
