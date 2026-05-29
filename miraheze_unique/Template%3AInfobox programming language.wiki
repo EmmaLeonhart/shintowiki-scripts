@@ -104,7 +104,6 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox programming language]] with unknown parameter "_VALUE_" | name | title | logo | logo size | logo_size | logo alt | logo_alt | logo caption | collapsible | screenshot | screenshot_size | screenshot size | screenshot_alt | screenshot alt | screenshot caption | sampleCode | paradigm | paradigms | family | designer | designers | developer | developers | released | year | ver layout | latest release version | latest_release_version | latest release date | latest_release_date | latest preview version | latest test version | latest_preview_version | latest_test_version | latest preview date | latest test date | latest_preview_date | latest_test_date | typing | scope | programming language | programming_language | discontinued | platform | operating system | operating_system | license | File extensions | file extensions | file ext | file_ext | File format | file format | file_format | fileformat | file formats | website | implementations | dialects | influenced by| influenced_by | influenced | wikibooks-inline | wikibooks }}<noinclude>
 {{documentation}}
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
