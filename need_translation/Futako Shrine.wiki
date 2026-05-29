@@ -23,7 +23,7 @@
 | location = {{ill|Takatsu-ku|qid=Q1076736}}
 }}
 
-'''{{Nihongo|Futako shrine|二子神社|Futako jinja}}''', located in {{ill|Takatsu-ku, Kawasaki|en|Takatsu-ku, Kawasaki|qid=Q1076736|lt=Takatsu-ku, Kawasaki}}, is a [[Shinto]] {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=shrine}} in [[:en:Kanagawa prefecture|Kanagawa prefecture]], {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. It was established in 1641 and was called "Shinmeisha". It was renamed "Futako Shrine" in the [[:en:Meiji Era|Meiji Era]], after the area in which it is located.
+'''{{Nihongo|Futako shrine|二子神社|Futako jinja}}''', located in {{ill|Takatsu-ku, Kawasaki|en|Takatsu-ku, Kawasaki|qid=Q1076736|lt=Takatsu-ku, Kawasaki}}, is a [[Shinto]] {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=shrine}} in [[:en:Kanagawa prefecture|Kanagawa prefecture]], {{ill|Japan|en|Japan|qid=Q17|lt=Japan}}. It was established in 1641 and was called "Shinmeisha". It was renamed "Futako Shrine" in the [[:en:Meiji Era|Meiji Era]], after the area in which it is located.
 
 ==Features==
 It is known for the "Kanoko Monument" sculpture next to the shrine. The sculpture was made by the artist {{ill|Tarō Okamoto|en|Tarō Okamoto|qid=Q983942|lt=Tarō Okamoto}}, who was born locally. The sculpture is dedicated to the artist's mother, {{ill|Kanoko Okamoto|en|Kanoko Okamoto|qid=Q1396664|lt=Kanoko Okamoto}}.
@@ -52,7 +52,7 @@ File:川崎市のまちの樹50選 「ムクノキ」.jpg|"Mukunoki", one of Kaw
 
 {{Commons category|Futako-jinja}}
 
-{{wikidata link|Q21480958|en|Futako Shrine|ja|二子神社|check_date=2026-05-14}}
+{{wikidata link|Q21480958|en|Futako Shrine|ja|二子神社|grok=none|check_date=2026-05-29}}
 
 {{translated page|ja|二子神社|version=107367709|comment=Imported full ja history}}
 [[Category:Need translation]]
