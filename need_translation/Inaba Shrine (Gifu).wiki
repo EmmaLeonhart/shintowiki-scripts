@@ -49,7 +49,7 @@
 * 181942
 ** P3831: {{ill|Kokugakuin University Shrine database|qid=Q135159299|lt=Kokugakuin University Shrine database}}
 == modern shrine ranking (P13723) ==
-* {{ill|Kokuhei Shōsha|lt=Kokuhei Shōsha|qid=Q134917281}}
+* {{ill|Kokuhei Shōsha|qid=Q134917281|lt=Kokuhei Shōsha}}
 == Corporate Number (Japan) (P3225) ==
 * 7200005000241
 == Commons category (P373) ==
@@ -67,7 +67,7 @@
 [[KO:이나바 신사]]
 [[TH:ศาลเจ้าอินาบะ]]
 [[ZH:伊奈波神社]]
-{{wikidata link|Q701414|co|commons:Category:Inaba-jinja|en|Inaba Shrine|eu|Inaba santutegia|fr|Inaba-jinja|ja|伊奈波神社|ko|이나바 신사|th|ศาลเจ้าอินาบะ|zh|伊奈波神社|check_date=2026-05-15}}
+{{wikidata link|Q701414|co|commons:Category:Inaba-jinja|en|Inaba Shrine|eu|Inaba santutegia|fr|Inaba-jinja|ja|伊奈波神社|ko|이나바 신사|th|ศาลเจ้าอินาบะ|zh|伊奈波神社|grok=none|check_date=2026-05-29}}
 {{translated page|ja|伊奈波神社|version=107400255|comment=Imported full ja history}}
 
 [[Category:kokushi genzaisha]]
