@@ -6,6 +6,41 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Investigated "drop sync state files" — premise is false, state files stay
+**Files:** `todo.md`
+
+Picked up the `todo.md` item "Drop state files from the wiki↔repo
+sync scripts" (derive baselines from git log + wiki history, delete
+`sync_*.state`). Traced the full state-file semantics through
+`sync_git_synced_pages.py`, `sync_need_translation.py`, and
+`sync_revision_aware.py`. The item's premise — that the per-page
+baseline is redundant with git history — does not hold:
+
+1. The CI run tag is `[[github:<run-url>|<cause>]]`, a workflow-run
+   URL, not a git commit SHA or a baseline revid. It carries no
+   baseline, so "the run tag links to a commit → base revid is
+   recoverable" is inaccurate.
+2. After a PULL the stored `revid` is the *foreign* editor's revid,
+   not a bot-sync edit — and these dirs are edited on the wiki by
+   non-bot writers by design (orchestrators on `git_synced`, the
+   cloud routine + humans on `need_translation`). "Most recent bot
+   edit" therefore can't reconstruct the baseline.
+3. `base_sha is None` is the load-bearing 2026-05-27 incident fix
+   distinguishing "new repo file, never synced → PUSH-CREATE" from
+   "was synced, wiki dropped the category → DELETE local".
+   Reconstructing "was this ever synced?" from wiki history alone
+   would misclassify a new repo file whose title already exists on
+   the wiki → DELETE → the 2026-05-10 / 2026-05-27 mass-deletion
+   failure mode.
+
+A faithful baseline without the state file needs a cross-system
+merge base (content-walk both histories) — expensive enough to
+violate the server-load budget, and exactly what the `.state` file
+cheaply memoizes. Did NOT ship the cheap derivation; rewrote the
+`todo.md` entry with the finding and three options for Emma
+(recommend (a): close wontfix, keep the state files). No code or
+wiki change.
+
 ### Trim lowercase-template queue item — auto-fire wired, just monitoring now
 **Files:** `queue.md`
 
