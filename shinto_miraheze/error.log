@@ -87,3 +87,4 @@ ModuleNotFoundError: No module named 'shinto_miraheze'
 [2026-05-23 08:59:07 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: Invalid control character at: line 109772 column 52 (char 2701059)
 [2026-05-23 09:00:10 UTC] [ERROR] generate_p6262_quickstatements: SPARQL query failed: 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
 [2026-05-28 04:42:34 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: 503 Server Error: Backend fetch failed for url: https://query.wikidata.org/sparql
+[2026-05-29 15:57:01 UTC] [ERROR] generate_p6262_quickstatements: SPARQL query failed: Unterminated string starting at: line 45548 column 19 (char 1081308)
