@@ -7,6 +7,25 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
+## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now")
+
+Emma chose the safe-redesign path (not the naive git-history derivation,
+which is unsafe — see DEVLOG 2026-05-28 / todo.md). Goal: drop
+`sync_git_synced_pages.state`, `sync_need_translation.state`,
+`sync_miraheze_unique_pages.state`, `sync_fandom_unique_pages.state`,
+`sync_duplicated_content.state` by reconstructing the per-page baseline
+`(base_revid, base_sha, base_commit)` durably instead of from a committed
+file. **Safety-critical, and NOT locally dry-runnable (no wiki creds on
+the dev box) — implement in a focused, attended, CI-verified pass; do NOT
+let the unattended hourly cron ship this.**
+
+Design to implement + verify:
+- [ ] **Embed the baseline in the push edit summary.** On every PUSH, append a machine-readable marker to the summary, e.g. `[sync-base:<sha1-of-pushed-content>]`. The pushed content == the repo file content, so the marker records base_sha; base_revid = that push's revid (recoverable by walking page history for the most recent EmmaBot edit whose summary carries the marker). This covers the PUSH baseline with zero new state.
+- [ ] **Reconstruct the PULL baseline from content.** PULLs make no wiki edit, so no marker. After a pull, repo content == the pulled revision's content, so `base_sha = sha1(current repo file)` is trivially correct, and the no-op fast-path (`local_sha == wiki_sha`) already needs no baseline. Only when wiki ≠ repo do we need direction: derive `wiki_changed` by checking whether the wiki's current top revision content-sha equals the repo sha (unchanged) vs differs (changed); avoid full content-history walks (server-load budget).
+- [ ] **Preserve the load-bearing `base_sha is None` anti-deletion gate.** The orphan branch must still distinguish "new repo file never synced → PUSH-CREATE" from "was synced, wiki dropped category → DELETE local". Reconstruct "ever synced?" from: presence of a prior EmmaBot `[sync-base:...]` edit in the page's wiki history. If none AND no merge-base content match → treat as never-synced (PUSH-CREATE, never DELETE). Bias hard toward never-deleting on ambiguity (the 2026-05-10 / 2026-05-27 incidents were both spurious deletions).
+- [ ] **Keep revision-aware conflict resolution working** (sync_revision_aware.py) — feed it the reconstructed baselines.
+- [ ] **Test before wiring:** add a `--dry-run`-only verification mode and run it on CI (workflow_dispatch) against the live wiki for each of the 5 dirs; diff its decisions against the current `.state`-based decisions on the same data. Only delete the `.state` files + remove `load_state`/`save_state` once the dry-run decisions match for a full cycle. Roll out one script at a time.
+
 ## Lowercase Template:Infobox case-collision cleanup — IN PROGRESS, no human action (2026-05-28)
 
 - [ ] **Wait for transclusions to drain naturally; deletion is auto-wired.**
