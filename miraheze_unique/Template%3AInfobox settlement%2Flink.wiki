@@ -1,8 +1,7 @@
 {{#if:{{{link|}}}|[[{{{link}}}|{{{type}}}]]|{{#ifexist:{{{type}}} of {{PAGENAME}}|[[{{{type}}} of {{PAGENAME}}|{{{type|}}}]]|{{#if:{{{name|}}}|{{#ifexist:{{{type}}} of {{{name}}}|[[{{{type}}} of {{{name}}}|{{{type|}}}]]|{{{type}}}}}|{{{type}}}}}}}}}<noinclude>
 {{documentation}}
 
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
 [[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
 </noinclude>

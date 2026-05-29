@@ -2,7 +2,7 @@
 
 [[Category:Independently git synced pages]]
 
-'''Itsukushima Shrine''' (厳島神社, 嚴島神社, いつくしまじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
+'''Itsukushima Shrine''' (厳島神社, 嚴島神社, いつくしまじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}}
 named after "Itsukushima" and enshrines {{ill|Ichikishima-hime|ja|市杵島姫神}} as its primary deity.
 
 There are approximately 500 shrines across Japan with this name, with the main shrine being {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine}} in [[Hatsukaichi City]], {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}}.
@@ -57,7 +57,7 @@ There are approximately 500 shrines across Japan with this name, with the main s
 *
 *
 * {{ill|Ichikishima Shrines|ja|市杵島神社|lt=Ichikishima Shrine}}
-* {{ill|Munakata Shrines|ja|宗像神社|qid=Q11451876}}
+* {{ill|Munakata Shrines|ja|宗像神社|12=simple|13=User:Immanuelle/Munakata Shrine|comment=changed title based on wikidata|qid=Q11451876}}
 * {{ill|Itsukushima (disambiguation)|en|Itsukushima (disambiguation)|qid=Q5577390|lt=Itsukushima (disambiguation)}}
 
 {{disambiguation}}
@@ -89,17 +89,17 @@ There are approximately 500 shrines across Japan with this name, with the main s
 * {{ill|Itsukushima Shrine (Q134598577)|lt=Itsukushima Shrine|qid=Q134598577}} — Tateyama
 * {{ill|Itsukushima Shrine (Q134886165)|lt=Itsukushima Shrine|qid=Q134886165}} — Sugito
 * {{ill|Itsukushima Shrine (Q134886314)|lt=Itsukushima Shrine|qid=Q134886314}} — Kazo
-* {{ill|Itsukushima Shrine (Q134887128)|qid=Q134887128|lt=Itsukushima Shrine}} — Hanyū-shi
-* {{ill|Itsukushima Shrine (Q134887243)|qid=Q134887243|lt=Itsukushima Shrine}} — Hidaka
+* {{ill|Itsukushima Shrine (Q134887128)|lt=Itsukushima Shrine|qid=Q134887128}} — Hanyū-shi
+* {{ill|Itsukushima Shrine (Q134887243)|lt=Itsukushima Shrine|qid=Q134887243}} — Hidaka
 * {{ill|Itsukushima Shrine (Q134927983)|lt=Itsukushima Shrine|qid=Q134927983}} — Kamakura
-* {{ill|Itsukushima Shrine (Q134955869)|qid=Q134955869|lt=Itsukushima Shrine}} — Numazu
-* {{ill|Itsukushima Shrine (Q134955926)|qid=Q134955926|lt=Itsukushima Shrine}} — Fuji
-* {{ill|Itsukushima Shrine (Q134955959)|qid=Q134955959|lt=Itsukushima Shrine}} — Atami
-* {{ill|Itsukushima Shrine (Q134957469)|qid=Q134957469|lt=Itsukushima Shrine}} — Gotemba
-* {{ill|Itsukushima Shrine (Q135068808)|qid=Q135068808|lt=Itsukushima Shrine}} — Otagi district
-* {{ill|Itsukushima Shrine (Q135153830)|qid=Q135153830|lt=Itsukushima Shrine}} — Tsukubamirai
-* {{ill|Itsukushima Shrine (Q135153835)|qid=Q135153835|lt=Itsukushima Shrine}} — Tsukubamirai
-* {{ill|Itsukushima Shrine (Q135153848)|qid=Q135153848|lt=Itsukushima Shrine}} — Jōsō-shi
+* {{ill|Itsukushima Shrine (Q134955869)|lt=Itsukushima Shrine|qid=Q134955869}} — Numazu
+* {{ill|Itsukushima Shrine (Q134955926)|lt=Itsukushima Shrine|qid=Q134955926}} — Fuji
+* {{ill|Itsukushima Shrine (Q134955959)|lt=Itsukushima Shrine|qid=Q134955959}} — Atami
+* {{ill|Itsukushima Shrine (Q134957469)|lt=Itsukushima Shrine|qid=Q134957469}} — Gotemba
+* {{ill|Itsukushima Shrine (Q135068808)|lt=Itsukushima Shrine|qid=Q135068808}} — Otagi district
+* {{ill|Itsukushima Shrine (Q135153830)|lt=Itsukushima Shrine|qid=Q135153830}} — Tsukubamirai
+* {{ill|Itsukushima Shrine (Q135153835)|lt=Itsukushima Shrine|qid=Q135153835}} — Tsukubamirai
+* {{ill|Itsukushima Shrine (Q135153848)|lt=Itsukushima Shrine|qid=Q135153848}} — Jōsō-shi
 * {{ill|Itsukushima Shrine (Q135153925)|lt=Itsukushima Shrine|qid=Q135153925}} — Kasama
 * {{ill|Itsukushima Shrine (Q135153932)|lt=Itsukushima Shrine|qid=Q135153932}} — Ami
 * {{ill|Itsukushima Shrine (Q135153967)|lt=Itsukushima Shrine|qid=Q135153967}} — Yachiyo
@@ -161,28 +161,28 @@ There are approximately 500 shrines across Japan with this name, with the main s
 * {{ill|Itsukushima Shrine (Q134602867)|lt=Itsukushima Shrine|qid=Q134602867}} — Inzai
 * {{ill|Itsukushima Shrine (Q134602993)|lt=Itsukushima Shrine|qid=Q134602993}} — Shirako
 * {{ill|Itsukushima Shrine (Q134603081)|lt=Itsukushima Shrine|qid=Q134603081}} — Kamogawa
-* {{ill|Itsukushima Shrine (Q134603255)|lt=Itsukushima Shrine|qid=Q134603255}} — Chōnan-machi
+* {{ill|Itsukushima Shrine (Q134603255)|qid=Q134603255|lt=Itsukushima Shrine}} — Chōnan-machi
 * {{ill|Itsukushima Shrine (Q134886092)|lt=Itsukushima Shrine|qid=Q134886092}} — Fukaya
-* {{ill|Itsukushima Shrine (Q134886557)|lt=Itsukushima Shrine|qid=Q134886557}} — Kumagaya
+* {{ill|Itsukushima Shrine (Q134886557)|qid=Q134886557|lt=Itsukushima Shrine}} — Kumagaya
 * {{ill|Itsukushima Shrine (Q134956911)|lt=Itsukushima Shrine|qid=Q134956911}} — Chūō Ward
-* {{ill|Itsukushima Shrine (Q134957174)|lt=Itsukushima Shrine|qid=Q134957174}} — Kannami
+* {{ill|Itsukushima Shrine (Q134957174)|qid=Q134957174|lt=Itsukushima Shrine}} — Kannami
 * {{ill|Itsukushima Shrine (Q134957358)|lt=Itsukushima Shrine|qid=Q134957358}} — Mori
-* {{ill|Itsukushima Shrine (Q134957550)|lt=Itsukushima Shrine|qid=Q134957550}} — Ito
+* {{ill|Itsukushima Shrine (Q134957550)|qid=Q134957550|lt=Itsukushima Shrine}} — Ito
 * {{ill|Itsukushima Shrine (Q134957883)|lt=Itsukushima Shrine|qid=Q134957883}} — Matsuzaki
-* {{ill|Itsukushima Shrine (Q134989452)|lt=Itsukushima Shrine|qid=Q134989452}} — Mitoyo
+* {{ill|Itsukushima Shrine (Q134989452)|qid=Q134989452|lt=Itsukushima Shrine}} — Mitoyo
 * {{ill|Itsukushima Shrine (Q135153706)|lt=Itsukushima Shrine|qid=Q135153706}} — Tsukuba
-* {{ill|Itsukushima Shrine (Q135462856)|lt=Itsukushima Shrine|qid=Q135462856}} — Tainai
+* {{ill|Itsukushima Shrine (Q135462856)|qid=Q135462856|lt=Itsukushima Shrine}} — Tainai
 * {{ill|嚴島神社 (Q135433814)|lt=嚴島神社|qid=Q135433814}} — Setouchi
-* {{ill|嚴島神社 (Q135434516)|lt=嚴島神社|qid=Q135434516}} — Satsumasendai
+* {{ill|嚴島神社 (Q135434516)|qid=Q135434516|lt=嚴島神社}} — Satsumasendai
 * {{ill|嚴島神社 (Q135434571)|lt=嚴島神社|qid=Q135434571}} — Minamiōsumi-chō
-* {{ill|嚴島神社 (Q135459909)|lt=嚴島神社|qid=Q135459909}} — Sekikawa
+* {{ill|嚴島神社 (Q135459909)|qid=Q135459909|lt=嚴島神社}} — Sekikawa
 * {{ill|嚴島神社 (Q135460785)|lt=嚴島神社|qid=Q135460785}} — Itoigawa
-* {{ill|嚴島神社 (Q135462992)|lt=嚴島神社|qid=Q135462992}} — Murakami
+* {{ill|嚴島神社 (Q135462992)|qid=Q135462992|lt=嚴島神社}} — Murakami
 * {{ill|嚴島神社 (Q135464088)|lt=嚴島神社|qid=Q135464088}} — Seiro
 
 {{translated page|ja|厳島神社 (曖昧さ回避)|version=103952393|comment=Imported full ja history}}
 
-{{wikidata link|Q11410137|ja|厳島神社 (曖昧さ回避)|zh|Itsukushima Shrines (disambiguation)|ja|厳島神社|ja|福住|ja|鴎島|ja|アメリカ|ja|伊達市|ja|紅雲町|ja|中央区|ja|本町|ja|中落合|ja|小山|ja|山王|ja|西つつじケ丘|ja|中区|ja|羽衣町|ja|元町|ja|淡島神社|ja|淡島|ja|太閤|ja|御影|ja|須佐神社|ja|南区|ja|向島|ja|広島|ja|北区|ja|大島郡|ja|厳嶋神社|ja|森町|ja|西区|ja|嚴島神社|ja|新栄町|ja|厳島|ja|*|check_date=2026-05-15}}
+{{wikidata link|Q11410137|ja|厳島神社 (曖昧さ回避)|grok=none|check_date=2026-05-29}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

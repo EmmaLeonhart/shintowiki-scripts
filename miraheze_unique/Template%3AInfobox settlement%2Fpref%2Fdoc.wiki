@@ -70,8 +70,7 @@ The default is to display metric units first, so the template only checks these 
 }}</includeonly>
 <noinclude>
 [[Category:Independently git synced pages]][[Category:Place infobox subtemplates]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
 [[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
 </noinclude>

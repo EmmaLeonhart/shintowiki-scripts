@@ -44,8 +44,7 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Infobox tribe]] with unknown parameter "_VALUE_"|ignoreblank=y| name | local name | type | image | image_size | alt | caption | ethnicity| nisba | location | varna | descended_label | descended| parent_tribe| population | demonym | branches | language | religion | surnames }}<noinclude>
 {{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
 
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
 [[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
 </noinclude>

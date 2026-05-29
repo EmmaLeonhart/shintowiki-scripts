@@ -29,8 +29,7 @@ This subtemplate of {{tl|Infobox settlement}} is used for automatic linking for 
 }}</includeonly>
 <noinclude>
 [[Category:Independently git synced pages]][[Category:Place infobox subtemplates]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
 </noinclude>
 <noinclude>
