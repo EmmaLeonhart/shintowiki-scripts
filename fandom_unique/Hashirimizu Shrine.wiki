@@ -1,7 +1,7 @@
 '''Hashirimizu Shrine''' (走水神社) refers to multiple Shinto shrines in Japan.
 
-* {{ill|Hashirimizu Shrine (Yokosuka)|ja|走水神社 (横須賀市)|12=simple|13=User:Immanuelle/Hashirimizu Shrine (Yokosuka)}} (はしりみずじんじゃ) -- Located in [[:en:Yokosuka City|Yokosuka City]], {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}. This shrine is associated with the legend of [[Tachibanahime-no-Mikoto|Ototachibana-hime]].
-* {{ill|Hashirimizu Shrine (Kobe)|ja|走水神社 (神戸市)|12=simple|13=User:Immanuelle/Hashirimizu Shrine (Kobe)}} (はしうどじんじゃ) -- Located in [[:en:Chuo Ward|Chuo Ward]], [[:en:Kobe City|Kobe City]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}} (formerly Hashirimizu Village).
+* {{ill|Hashirimizu Shrine (Yokosuka)|ja|走水神社 (横須賀市)}} (はしりみずじんじゃ) -- Located in [[:en:Yokosuka City|Yokosuka City]], {{ill|Kanagawa Prefecture|en|Kanagawa Prefecture|qid=Q127513|lt=Kanagawa Prefecture}}. This shrine is associated with the legend of [[Tachibanahime-no-Mikoto|Ototachibana-hime]].
+* {{ill|Hashirimizu Shrine (Kobe)|ja|走水神社 (神戸市)}} (はしうどじんじゃ) -- Located in [[:en:Chuo Ward|Chuo Ward]], [[:en:Kobe City|Kobe City]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}} (formerly Hashirimizu Village).
 
 {{disambiguation}}
 
@@ -11,7 +11,7 @@
 
 {{translated page|ja|走水神社|version=39201705|comment=Imported full ja history}}
 
-{{wikidata link|Q11636077|ja|走水神社|check_date=2026-05-15}}
+{{wikidata link|Q11636077|ja|走水神社|grok=none|check_date=2026-05-29}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
