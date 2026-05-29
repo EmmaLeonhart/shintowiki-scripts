@@ -6,6 +6,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Reconcile superseded `.state`-removal todo entry with Emma's decision
+**Files:** `todo.md`
+
+Work-loop tick (no new Open-Questions answers; remaining verify-items not
+bot-actionable — kana is freeze-blocked/Emma-manual, enrich-autocats + secret-grep
+need wiki creds / the redacted literals). Bounded doc-hygiene instead: Emma chose the
+safe `.state` redesign ("do it now"), and the build spec now lives in `queue.md`, so
+the verbose `todo.md` "Drop state files" investigation block was duplicated, stale doc
+state. Collapsed it to a pointer at the queue spec (full rationale stays here in
+DEVLOG). Prevents the doc-drift Emma flags.
+
 ### Scoped the blank-`{{wikidata link}}` feature — most exists; a cascade blocker found
 **Files:** `queue.md`
 

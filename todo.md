@@ -233,14 +233,15 @@ strips the `{{ill}}`/`{{wikidata link}}`/`{{shortdesc}}` that would otherwise er
 - [ ] **Manually undelete `User:Immanuelle/common.js` on shinto.miraheze.org via Special:Undelete.** This needs steward / sysop hands — the bot can't restore a JS page belonging to another user. After it's restored, the kludges (`undelete_immanuelle_common_js.py` step in `wiki-cleanup.yml`, undelete step in `import-templates-to-fandom.yml`, the script itself) can be removed; the history_offload guard above prevents re-deletion.
 - [ ] **Audit other deleted JS/CSS user pages** — if the same delete-without-recreate hit any of the existing User-namespace JS/CSS pages on shinto.miraheze.org before the guard landed, they'll need the same manual undelete. Walk Special:Log/delete filtered to ns=2,3 and look for ``.js``/``.css``/``.json`` titles deleted by EmmaBot.
 
-### Drop state files from the wiki↔repo sync scripts (2026-04-23) — INVESTIGATED 2026-05-28, premise is false
+### Drop state files from the wiki↔repo sync scripts — Emma approved safe redesign 2026-05-28
 
-- [ ] **The "state files are redundant with git history" premise does NOT hold — keep the state files unless Emma wants the larger redesign in option (b).** Original idea: derive `base_revid` by walking wiki history to the most recent bot edit, and `base_sha` from git content at that commit, then delete `sync_*.state`. Traced the full state semantics through `sync_git_synced_pages.py`, `sync_need_translation.py`, and `sync_revision_aware.py` (2026-05-28). Three concrete reasons the cheap derivation reintroduces the documented mass-deletion/churn failure modes:
-  1. **The run tag is not a commit.** `RUN_TAG=[[github:<run-url>|<cause>]]` is a CI *run URL*, not a git commit SHA or a baseline revid — it carries no baseline. The premise "the run tag links to a git commit so base revid is recoverable" is inaccurate.
-  2. **After a PULL the stored `revid` is a *foreign* editor's revid, not a bot edit.** These dirs are edited on the wiki by non-bot writers *by design* (orchestrators touch `git_synced` pages; the cloud routine + humans touch `need_translation`) — that is the whole reason the sync exists. So "most recent bot edit" does not reconstruct the baseline, and the baseline genuinely isn't free.
-  3. **`base_sha is None` is load-bearing (the 2026-05-27 incident fix).** It distinguishes "newly-added repo file, never synced → PUSH-CREATE" from "was synced, wiki dropped the category → DELETE local". Reconstructing "was this ever synced?" from wiki history alone is unsafe: a brand-new repo file whose title already exists on the wiki with unrelated bot edits would be misclassified as "synced before → DELETE", i.e. exactly the 2026-05-10 / 2026-05-27 mass-deletion failure mode.
-
-  A faithful baseline reconstruction without the state file requires a cross-system *merge base* — content-walking both the wiki revision history and the git blob history to find the last point they agreed — which is many content-fetch API calls per page (violates the server-load budget) and is precisely what the `.state` file cheaply memoizes. **Options for Emma:** (a) close as wontfix — keep the state files, the "redundant" premise is false [recommended]; (b) move the baseline into a durable, reconstructable marker (e.g. embed the source git blob sha in every push edit summary + a per-page pull marker) — a larger redesign that changes behaviour and needs sign-off; (c) accept the expensive content-walk merge-base reconstruction (likely a non-starter on server load).
+Now an active build spec in `queue.md` (§"Sync `.state`-file removal — SAFE REDESIGN").
+Emma said "do it now" and chose the durable-baseline redesign — embed the baseline in
+push edit summaries + reconstruct pull baselines from content — over the naive
+git-history derivation, which the 2026-05-28 investigation found unsafe (it reintroduces
+the 2026-05-10 / 2026-05-27 mass-deletion failure modes; the `.state` file is a cheap
+memoized cross-system merge-base, not redundant with git). Reserved for an attended,
+CI-verified session (NOT the unattended cron). Full rationale: DEVLOG 2026-05-28.
 
 ### Secret removal (run soon, before open-source release)
 
