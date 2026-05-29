@@ -51,7 +51,7 @@
                       | {{#ifexpr:{{#expr:{{{mintime|{{{time1|}}}}}}>60}}
                          
                          | {{rounddown|{{#expr:{{{mintime|{{{time1|}}}}}}/60}}}} [[hour]]{{#ifeq:{{rounddown|{{#expr:{{{mintime|{{{time1|}}}}}}/60}}}}|1 | |s}} {{#ifeq:{{#expr:{{{mintime|{{{time1|}}}}}} mod 60}}|0 |
-                                           | {{#expr:{{{mintime|{{{time1|}}}}}} mod 60}} [[Minute|min]]
+                                           | {{#expr:{{{mintime|{{{time1|}}}}}} mod 60}} {{ill|minute|af|Minuut|als|Minute|an|Minuto|ar|دقيقة|arc|ܩܛܝܢܬܐ|ary|دقيقة|arz|دقيقه|ast|Minutu|ay|T'ijuqa|az|Dəqiqə|ba|Минут|ban|Menit|bcl|Minuto|be|Хвіліна|be_x_old|Хвіліна|bew|Menit|bg|Минута|bn|মিনিট|br|Munut|bs|Minuta|ca|Minut|cdo|Hŭng-cṳ̆ng|ckb|خولەک|crh|Daqqa|cs|Minuta|cv|Минут|cy|Munud|da|Minut|de|Minute|el|Λεπτό|eml|Minùt|en|Minute|eo|Minuto|es|Minuto|et|Minut|eu|Minutu|fa|دقیقه|fi|Minuutti|fj|Miniti|fr|Minute (temps)|frr|Minüüt|fy|Minút|gcr|Minout (tan)|gl|Minuto|gn|Aravo'i|ha|Dakika|hak|Fûn-chûng|he|דקה|hi|मिनट|hif|Minit|hr|Minuta|ht|Minit (tan)|hu|Perc|hy|Րոպե|hyw|Վայրկեան|ia|Minuta|id|Menit|is|Mínúta|it|Minuto|ja|分|jv|Menit|ka|წუთი|kab|Tasdidt|kbp|Ɖoo cɩcɩka|kk|Минут|kn|ನಿಮಿಷ|ko|분 (시간)|ksh|Menutt|ku|Deqe (yeke)|ky|Мүнөт|la|Minutum|lb|Minutt|lmo|Minut|ln|Monúti|lt|Minutė|lv|Minūte|mai|मिनेट|mg|Minitra (fotoana)|mk|Минута|ml|നിമിഷം|mn|Минут|mr|मिनिट|ms|Minit|my|မိနစ်|nah|Minuto|nds|Minuut|ne|मिनेट|new|मिनेत|nl|Minuut (tijd)|nn|Minutt|no|Minutt|nso|Motsotso|oc|Minuta (temps)|pa|ਮਿੰਟ|pl|Minuta|pms|Minuta|pnb|منٹ|ps|دقيقه|pt|Minuto|qu|Minutu|ro|Minut|rsk|Минута|ru|Минута|rue|Минута|sah|Мүнүүтэ|sat|ᱴᱤᱲᱤᱡ|scn|Minutu|sco|Meenit|sd|منٽ|sh|Minuta|si|මිනිත්තු|simple|Minute|sk|Minúta|sl|Minuta|sn|Mhindi|so|Daqiiqad|sq|Minuta|sr|Минут|stq|Minute|su|Menit|sv|Minut|sw|Dakika|szl|Minuta|ta|மணித்துளி|te|నిమిషము|tg|Дақиқа|th|นาที|tok|tenpo Minu|tr|Dakika|ug|مىنۇت|uk|Хвилина|ur|دقیقہ (وقت)|uz|Daqiqa|vec|Minuto|vi|Phút|wa|Munute (tins)|war|Minuto|wo|Simili|wuu|分钟|xmf|წუთი|yi|מינוט|za|Faencung|zh|分钟|zh_min_nan|Hun-cheng|zh_yue|分鐘|lt=minute|qid=Q7727}}
                                           }}
                          
                          | {{{mintime|{{{time1|}}}}}} [[minute]]{{#ifeq:{{{mintime|{{{time1|}}}}}}|1 | |s}}
@@ -131,7 +131,6 @@
 |name|name_italics|name_lang|national_cuisine|no_commons|no_recipes|other|place_of_origin|protein|qid|region|served|serving_size
 |similar_dish|time1|time2|type|upright|variations|year}}<noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
 [[Category:Pages using infobox food with unknown parameters|_VALUE_]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

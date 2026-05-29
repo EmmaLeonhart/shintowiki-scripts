@@ -2,9 +2,9 @@
 <noinclude>
 
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q5623668|ar|قالب:صندوق معلومات عائلة|arz|قالب:Infobox family|as|সাঁচ:Infobox family|azb|شابلون:سوی|az|Şablon:Soy|ban|Mal:Infobox family|ba|Ҡалып:Ырыу|be|Шаблон:Род|bg|Шаблон:Фамилия|bn|টেমপ্লেট:তথ্যছক পরিবার|ckb|داڕێژە:Infobox Family|cv|Шаблон:Ăрат|da|Skabelon:Infoboks familie|el|Πρότυπο:Πληροφορίες οικογένειας|en|Template:Infobox family|eo|Ŝablono:Informkesto familio|es|Plantilla:Ficha de familia|et|Mall:Infokast suguvõsa|fa|الگو:جعبه اطلاعات خانواده|fi|Malline:Suku|check_date=2026-05-29}}
 </noinclude>

@@ -780,7 +780,6 @@ The following supplemental blocks may be copied into the template above as neede
 [[Category:Embeddable templates]]
 [[Category:Templates that add a tracking category|{{PAGENAME}}]]
 [[Category:Templates with coordinates fields]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

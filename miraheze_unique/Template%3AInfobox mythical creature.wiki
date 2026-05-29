@@ -42,7 +42,6 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{Main other|}}|preview=Page using [[Template:Infobox mythical creature]] with unknown parameter "_VALUE_"|showblankpositional=1| name | image | image_size | image size| image_upright | image upright | alt | caption | Grouping | Sub_Grouping | Similar_entities | Family | Folklore | First_Attested | AKA | Country | Region | Habitat | Details }}<noinclude>
 {{Documentation}}[[Category:Templates with Documentation template]]
 [[Category:Pages using infobox mythical creature with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

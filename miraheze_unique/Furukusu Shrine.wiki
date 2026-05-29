@@ -1,6 +1,6 @@
 Furukusu Shrine is a shrine
 
-*{{ill|8=ja|9=古楠神社 (掛川市)|Furukusu Shrine (Kakegawa City)|12=simple|13=User:Immanuelle/8=ja|qq=}} - Located in Kakegawa City, Shizuoka Prefecture
+*{{ill|Furukusu Shrine (Kakegawa City)}} - Located in Kakegawa City, Shizuoka Prefecture
 * {{ill|Furukusu Shrine (Fukuroi City)|9=古楠神社 (袋井市)|Furukusu Shrine (Fukuroi City)|12=simple|13=User:Immanuelle/8=ja|ja_comment=jawiki link invalid|qid=Q135504167}} - Located in Fukuroi City, Shizuoka Prefecture
 
 {{disambiguation}}
@@ -16,7 +16,7 @@ Furukusu Shrine is a shrine
 
 {{translated page|ja|古楠神社|version=40563124|comment=Imported full ja history}}
 
-{{wikidata link|Q11411303|ja|古楠神社|check_date=2026-05-14}}
+{{wikidata link|Q11411303|ja|古楠神社|grok=none|check_date=2026-05-29}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

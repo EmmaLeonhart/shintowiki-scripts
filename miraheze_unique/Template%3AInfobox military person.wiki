@@ -123,7 +123,6 @@
 [[Category:Pages using infobox military person with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Pages using infobox military person with both image and medal]]
 [[Category:Pages using infobox military person with embed|{{#if:{{{embed_title|}}}|Τ}}{{FULLPAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
