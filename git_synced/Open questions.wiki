@@ -13,20 +13,32 @@ This page is the interface between Emma (human) and the bot agents that work on 
 === Shintowiki bot pipeline (<code>shintowiki-scripts</code> queue) ===
 
 * '''Kana ojp-hani manual stragglers.''' Items with 0 or >1 ojp-hani P1448 official name surface in the <code>seed_kana_qualifier.py --dry-run</code> "AMBIGUOUS" report (e.g. Q135040786 with no ojp-hani name). ''Needs:'' Emma handles these directly on Wikidata as they appear; no bot action required. (Note: blocked until 2026-06-06 by the Wikidata freeze.)
+** Pretty sure this was already done and you should be checking the SPARQL and removing if so
 * '''<code>delete_lowercase_template_collisions.py --apply</code> waits for orchestrator sweeps.''' All 20 lowercase <code>Template:Infobox <name></code> case-collision twins (10 on shintowiki + 10 on shinto.fandom.com) still have live transclusions per the 2026-05-27 dry-run, so the script's safety gate refuses. ''No human action required'' — the <code>canonicalize_template_case</code> op (wired into all 12 orchestrators) is rewriting transclusions to the canonical capitalised form every CI cycle; the deleter clears itself once they hit zero. Re-run is just a CI cycles question, not a design question.
+** Yeah I think this is something that is done
 
 === Longer-horizon work (<code>todo.md</code>) ===
 
 ''Items below are real human-gates — they need Emma's design input or a non-trivial product call before agents can act. Items that are autonomous-but-not-yet-started belong in <code>queue.md</code>, not here.''
 
 * '''AI translation pipeline on high-bucket pages.''' Pipeline doesn't exist yet. ''Needs:'' Emma's call on which AI to use + design constraints (per-page budget, output validation, when to mark a page "done"). The translation worker can then be built autonomously.
+** I am pretty definitively sure that this does in fact exist
 * '''Enrich autocreated categories.''' Add meaningful content (interwikis, wikidata links, parent categories) to pages in <code>Category:Categories autocreated by EmmaBot</code> that were created as bare stubs. ''Needs:'' Emma's call on what "meaningful content" looks like per category type — the script around it is straightforward once that's decided.
+** Well okay so the big issue again with this is mostly that that category isn't even a category that's really full of anything. That category is empty because there are many other triage pages and I'm pretty sure that you already did all the work. I'm pretty sure that you did a tonne of work on this already.
 * '''Category-pages race-condition audit.''' Some categories may have inconsistent state from earlier concurrent script runs. Scope unknown. ''Needs:'' Emma to specify what anomaly pattern to look for (or signal "drop this — no longer concerning").
-* '''Recreate <code>Category:Categories_missing_wikidata</code>.''' Original was wrongly populated and cleaned out as crud. Needs to be recreated with accurate membership then split into typed subcategories. ''Needs:'' Emma's design on the recreation criteria.
+** Um yeah I would consider this to be no longer concerning. I don't even remember what this issue was about.
+* '''Recreate <code>[[:Category:Categories_missing_wikidata]]</code>.''' Original was wrongly populated and cleaned out as crud. Needs to be recreated with accurate membership then split into typed subcategories. ''Needs:'' Emma's design on the recreation criteria.
+** Yeah just recreate it. All you need to do is have it so that the main space orchestrator has the main space and category. Orchestrators will add this page to any page that does not have the wiki data link template.
+** And also any Wikidata link that does not actually link to Wikidata should have this same thing.
+** Yeah actually the more I'm thinking about it the more I'm realising this is basically a very very very straightforward thing with just slight edits to the wikidata link template, slightly editing the wikidata link template, and then also adding the stuff back. It is very easy. I would personally go as far as to say that I think that every single page should have the wikidata link template at the bottom of it and it would be blank for these and then this page would add this to it and disrespect. I might even go as far as to say that, in this respect, I want you to make it so that the wikidata link template being missing on a page, the orchestrator just adds the template with nothing if nothing is present. All of this stuff, whether a wikidata link is present or not, becomes a part of the actual operating and as a result I am going to go as far as to say we should be tagging the pages without wikidata as a CRUD category.
 * '''Drop state files from the wiki↔repo sync scripts.''' Refactor — derive baselines from git log + wiki history rather than the on-disk <code>sync_*.state</code> files. Moderate risk on autonomous syncs that already run unattended. ''Needs:'' Emma to confirm risk appetite and timing.
+** Please do it now
 * '''Secret-removal git-history rewrite.''' Destructive (force-push, history rewrite). Pre-requisite for open-source release. ''Needs:'' Emma to plan the maintenance window and confirm literal replacement targets.
+** This was already done pretty sure
 * '''Hand-convert remaining fandom <code>Template:Infobox X</code> pages to Portable Infobox.''' ~23 templates, manual per-template rewrites with rendering tests on shinto.fandom.com. ''Needs:'' human time, not bot work.
+** Bruh no AI does this
 * '''Architecture items (VISION.md).''' Namespace restructure, Pramana integration, automated translation pipeline, change-tracking bot. ''Needs:'' Emma's long-horizon design.
+** Pretty much all of this is just completely no longer happening, no chance of it happening, and the only exception here is the automated translation pipeline, which exists right now.
 
 == Recently resolved (kept here briefly for confirmation, then deleted) ==
 
