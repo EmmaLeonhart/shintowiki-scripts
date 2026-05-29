@@ -26,7 +26,7 @@ Examples of Fourth Rank officials eligible to become Sangi include:
 
 == Related Articles ==
 * {{ill|Kugyō|2=ja|3=公卿|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}
-* {{ill|Court Ranks in Japan|ja|位階|12=simple|13=User:Immanuelle/Ranks|comment=changed title based on wikidata|qid=Q99196082}}
+* {{ill|Court Ranks in Japan|de|Hofrang in Japan|es|Sistema de rangos en Japón|ja|位階|ko|위계 (일본)|ru|Икай|zh|日本品秩|qid=Q99196082}}
 * {{ill|East Asian government service ranking|ja|官位|12=simple|13=User:Immanuelle/Offices|13=User:Immanuelle/Kan'i system|comment=changed title based on wikidata|qid=Q11452076}}
 * {{ill|Han-ke (Kuge)|ja|半家 (公家)}}
 
@@ -65,7 +65,7 @@ Examples of individuals qualified to become Sangi while holding the Rank of Shii
 
 == See Also ==
 * {{ill|Kugyō|2=ja|3=公卿|ja|Kugyō|2=ja|3=公卿|12=simple|13=User:Immanuelle/Kugyō|13=User:Immanuelle/Kugyō|ja_comment=jawiki link invalid|comment=changed title based on wikidata|qid=Q3138036}}
-* {{ill|Court Ranks in Japan|ja|位階|12=simple|13=User:Immanuelle/Ikai|comment=changed title based on wikidata|qid=Q99196082}}
+* {{ill|Court Ranks in Japan|de|Hofrang in Japan|es|Sistema de rangos en Japón|ja|位階|ko|위계 (일본)|ru|Икай|zh|日本品秩|qid=Q99196082}}
 * {{ill|East Asian government service ranking|ja|官位|12=simple|13=User:Immanuelle/Kan'i|13=User:Immanuelle/Kan'i system|comment=changed title based on wikidata|qid=Q11452076}}
 * {{ill|Hanke (Kuge)|ja|半家 (公家)}}
 
@@ -73,7 +73,7 @@ Examples of individuals qualified to become Sangi while holding the Rank of Shii
 
 {{translated page|ja|非参議|version=61450233|comment=Imported full ja history}}
 
-{{wikidata link|Q11663700|ja|非参議|ko|비참의|check_date=2026-05-15}}
+{{wikidata link|Q11663700|ja|非参議|ko|비참의|grok=none|check_date=2026-05-29}}
 [[Category:subst:PAGENAME}}
 
 [[Category:Wikidata no short description]]
