@@ -12,7 +12,7 @@
 | coordinates = {{coord|38.439854|141.341651}}
 | map_relief = 1
 | religious_affiliation = [[Shinto]]
-| deity = {{ill|Watatsumi|lt=Watatsumi|az|Vatatsumi|de|Watatsumi|en|Watatsumi|es|Watatsumi|fa|واتاتسومی|fr|Watatsumi|hu|Vatacumi|ja|ワタツミ|ko|와타쓰미|mni|ꯋꯇꯠꯁꯨꯃꯤ|pl|Watatsumi|ru|Ватацуми|simple|Watatsumi|uk|Вататсумі|zh|綿津見|qid=Q1474187}}
+| deity = {{ill|Watatsumi|abstract|Q1474187|az|Vatatsumi|de|Watatsumi|es|Watatsumi|fa|واتاتسومی|fr|Watatsumi|hu|Vatacumi|ja|ワタツミ|ko|와타쓰미|mni|ꯋꯇꯠꯁꯨꯃꯤ|pl|Watatsumi|ru|Ватацуми|simple|Watatsumi|uk|Вататсумі|zh|綿津見|qid=Q1474187|lt=Watatsumi}}
 }}
 {{nihongo|'''Hitsujisaki Shrine (Minato, Ishinomaki)'''|零羊崎神社 (石巻市湊)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
 == instance of (P31) ==
@@ -20,7 +20,7 @@
 * {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
 ** Series ordinal: 1529
 * {{ill|Myojin Taisha|lt=Myōjin Taisha|en|Myojin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}
-* {{ill|Q134986946|lt=Q134986946|qid=Q134986946}}
+* {{ill|Q134986946|qid=Q134986946|lt=Q134986946}}
 * {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei-sha}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182080</ref>
 * {{ill|Engishiki seat|qid=Q135018062|lt=Engishiki seat}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=182080</ref>
 ** Series ordinal: 1539
@@ -33,7 +33,7 @@
 * {{ill|List of Shikinaisha in Mutsu Province|lt=List of Shikinaisha in Mutsu Province|ja|陸奥国の式内社一覧|qid=Q11658590}}
 * {{ill|List of Shikinaisha in Mutsu Province|lt=List of Shikinaisha in Mutsu Province|ja|陸奥国の式内社一覧|qid=Q11658590}}
 ** Series ordinal: 43
-** P155: {{ill|Kusano Shrine|lt=Kusano Shrine|ja|苕野神社|qid=Q11616108}}
+** P155: {{ill|Kusano Shrine|ja|苕野神社|qid=Q11616108|lt=Kusano Shrine}}
 ** P156: {{ill|Katoriitsuno- Shrine|lt=Katoriitsuno- Shrine|qid=Q135040002}}
 == located in the administrative territorial entity (P131) ==
 * {{ill|Ishinomaki|lt=Ishinomaki|ar|إيشينوماكي (مياغي)|azb|ایشینوماکی، میاقی|ceb|Ishinomaki (lungsod sa Hapon)|ce|Исиномаки|cs|Išinomaki|de|Ishinomaki|devoyage|Ishinomaki|el|Ισινομάκι|en|Ishinomaki|envoyage|Ishinomaki|eo|Iŝinomaki|es|Ishinomaki|eu|Ishinomaki (Miyagi)|fa|ایشینوماکی، میاگی|fi|Ishinomaki|fr|Ishinomaki|gl|Ishinomaki|hy|Իսինոմակի|id|Ishinomaki, Miyagi|it|Ishinomaki|ja|石巻市|javoyage|石巻市|ko|이시노마키시|lt|Išinomakis|mg|Ishinomaki|ms|Ishinomaki, Miyagi|mzn|ایشینوماکی، میاگی|nl|Ishinomaki|no|Ishinomaki|pl|Ishinomaki|pt|Ishinomaki|ro|Ishinomaki|ru|Исиномаки|sh|Ishinomaki|simple|Ishinomaki|sr|Ишиномаки|sv|Ishinomaki|tg|Ишиномаки|th|อิชิโนมากิ|tl|Ishinomaki|tr|Ishinomaki|tt|Исиномаки|tum|Ishinomaki|uk|Ісіномакі|vi|Ishinomaki, Miyagi|war|Ishinomaki, Miyagi|zh-classical|石卷市|zh_min_nan|Isinomaki-chhī|zh_yue|石卷|zh|石卷市|zhvoyage|石卷|qid=Q270814}}
@@ -60,7 +60,7 @@
 ==References==
 {{commons category|Hitsujisaki-jinja (Minato, Ishinomaki)}}
 [[JA:零羊崎神社 (石巻市湊)]]
-{{wikidata link|Q11660144|co|commons:Category:Hitsujisaki-jinja (Minato, Ishinomaki)|ja|零羊崎神社 (石巻市湊)|check_date=2026-05-15}}
+{{wikidata link|Q11660144|co|commons:Category:Hitsujisaki-jinja (Minato, Ishinomaki)|ja|零羊崎神社 (石巻市湊)|grok=none|check_date=2026-05-29}}
 {{translated page|ja|零羊崎神社 (石巻市湊)|version=107318882|comment=Imported full ja history}}
 
 [[Category:Shikinaisha]]

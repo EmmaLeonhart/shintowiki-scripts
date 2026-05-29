@@ -70,13 +70,10 @@ In modern times, the site is a park, with a statue of {{ill|Kim Il Sung|en|Kim I
 {{Shinto-stub}}
 {{Korea-reli-stub}}
 
-{{wikidata link|Q11482369|en|Heijō Shrine|ja|平壌神社|ko|평양신사|simple|Heijō Shrine|zh|平壤神社|check_date=2026-05-15}}
+{{wikidata link|Q11482369|en|Heijō Shrine|ja|平壌神社|ko|평양신사|simple|Heijō Shrine|zh|平壤神社|grok=none|check_date=2026-05-29}}
 
 {{translated page|ja|平壌神社|version=105146564|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
 {{神社
  | 名称=平壌神社
  | 画像 =[[Image:Heijo Shrine.JPG|250px|center]]
@@ -132,3 +129,6 @@ In modern times, the site is a park, with a statue of {{ill|Kim Il Sung|en|Kim I
 [[Category:Shinmei shrines]]
 [[Category:Shinto shrines in Korea]]
 [[Category:Wikidata has short description]]
+[[Category:need translation]]
+[[Category:Duplicated content translation]]
+[[Category:Pages with duplicated content]]
