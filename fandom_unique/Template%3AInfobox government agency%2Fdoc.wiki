@@ -196,7 +196,7 @@ All parameters except the agency name are optional.
 |-
 | superseding1 || no || Name of superseding agency. Can be repeated up to six times (superseding1 to superseding6).<br/>'''Note:''' Title of box will automatically pluralise upon use of superseding2. || Text
 |-
-| jurisdiction || no || Name of the jurisdiction in which the agency resides || Text e.g.; <nowiki>[[Government of Western Australia]] or [[United States Government]]</nowiki>
+| jurisdiction || no || Name of the jurisdiction in which the agency resides || Text e.g.; <nowiki>{{ill|Government of Western Australia|ar|حكومة أستراليا الغربية|en|Government of Western Australia|fr|Gouvernement de l'Australie-Occidentale|ms|Kerajaan Australia Barat|zh|西澳大利亞州政府|zh_yue|西澳洲政府|lt=Government of Western Australia|qid=Q5589347}} or [[United States Government]]</nowiki>
 |-
 | headquarters || no || Location of the agency's headquarters. || Text e.g.; <nowiki>[[Sydney, New South Wales]]</nowiki>
 |-
@@ -1275,7 +1275,6 @@ For the [[:en:Ministry of Land, Infrastructure, Transport and Tourism|Ministry o
 [[Category:Politics and government infobox templates|Government Agency]]
 [[Category:Embeddable templates]]
 [[Category:Templates that add a tracking category|{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

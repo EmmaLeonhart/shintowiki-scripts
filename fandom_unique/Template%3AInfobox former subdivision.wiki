@@ -47,7 +47,7 @@
 | data10       = {{#ifexist:{{{capital}}}|[[{{{capital}}}]]|{{{capital|}}}}}
 
 | rowclass11   = mergedtoprow
-| label11      = [[Demonym]]
+| label11      = {{ill|demonym|af|Demoniem|als|Volksbezeichnung|an|Chentilicio|ar|نسبة (وصف)|arz|ديمونيم|ast|Xentiliciu|av|Демоним|az|Demonim|azb|دمونیم|be|Катайконім|bg|Демоним|bh|निवासी नाँव|bn|জাতীয়তাসূচক বিশেষণ|bs|Demonim|ca|Gentilici|ce|Бахархойн цӀераш|cs|Demonymum|cv|Этнохороним|da|Demonym|de|Volksbezeichnung|diq|Demonim|el|Δημωνύμιο|en|Demonym|eo|Laŭloka nomo|es|Gentilicio|eu|Herritar-izen|ext|Gentiliciu|fa|اهلیت‌نام|fr|Gentilé|gl|Xentilicio|he|שם ייחוס|hi|वासीनाम|hy|Տեղաբնականուն|id|Demonim|ilo|Nagan dagiti umili|inh|Бахархой цӀераш|it|Etnico (onomastica)|ja|デモニム|kaa|Etnoxoronim|kk|Этнохороним|km|ប្រជានាម|ko|데모님|ku|Demonîm|lij|Nomme di abitanti|lo|ເດມະນິມ|lt|Demonimas|lv|Demonīms|mg|Anaran'ny mponina|min|Demonim|mk|Демоним|mn|Ард түмний нэр|ms|Demonim|ne|रैथाने|nl|Inwonersnaam|no|Innbyggernavn|oc|Gentilici|pa|ਵਸਨੀਕੀ ਨਾਮ|pl|Nazwy mieszkańców osad|pnb|آبادی ناں|ps|د گڼه گوڼې نوم|pt|Gentílico|ro|Demonim|ru|Названия жителей|sah|Этнохороним|scn|Noma di l'abbitanti dî cità dâ Sicilia|sco|Demonym|sd|آبادي جو نالو|sh|Demonim|shi|Izli anamur|simple|Demonym|sk|Demonym|sl|Demonim|so|Jinsiyad|sq|Demonimi|sr|Демоним|su|Démonim|sv|Invånarnamn|ta|நாட்டுப்பெயர்|tg|Номи қавмӣ|th|เดมะนิม|tl|Ngalang panlipi|tr|Demonim|tt|Etnoxoronim|uk|Катойконім|ur|نام آبادی|uz|Etnoxoronim|vec|Nome dei abitanti|vi|Tên gọi dân cư|wa|No di dmorant|war|Hentilisyo|wo|Turu Way-Dëkk|wuu|区域居民称谓词|zh|区域居民称谓词|zh_min_nan|Jîn-bîn hō-miâ|zh_yue|當地居民嘅嗌法|zu|Igama Labantu Abahlala Kuleyondawo|lt=demonym|qid=Q217438}}
 | data11       = {{#ifexist:{{{demonym}}}|[[{{{demonym}}}]]|{{{demonym|}}}}}
 
 |rowclass13    = mergedtoprow  
@@ -248,7 +248,7 @@
 }}
 
 | rowclass45    = mergedtoprow
-| label45       = [[Legislature]]
+| label45       = {{ill|legislature|af|Wetgewer|als|Legislative|am|ህግ አውጭ|ar|سلطة تشريعية|arz|سلطه تشريعيه|ast|Poder llexislativu|az|Qanunverici hakimiyyət|azb|موقننه گوجو|bcl|Lehislatura|be|Заканадаўчая ўлада|be_x_old|Заканадаўчая ўлада|bg|Законодателна власт|bn|আইনসভা|br|Dael|bs|Zakonodavna vlast|btm|Legislatif|ca|Poder legislatiu|ckb|دەسەڵاتی یاسادانان|cs|Zákonodárná moc|cy|Deddfwrfa|da|Lovgivende magt|de|Legislative|el|Νομοθετικό σώμα|en|Legislature|eo|Leĝdona povo|es|Poder legislativo|et|Seadusandlik võim|eu|Botere legegile|fa|قوه مقننه|fi|Lainsäädäntövalta|fr|Pouvoir législatif|fy|Wetjouwende macht|gl|Poder lexislativo|gv|Çhionnal slattyssagh|hak|Li̍p-fap|he|רשות מחוקקת|hi|विधायिका|hr|Zakonodavna vlast|hsb|Legislatiwa|ht|Pouvwa lejislatif|hu|Törvényhozás|hy|Օրենսդիր իշխանություն|id|Legislatif|io|Legifantaro|is|Löggjafarvald|it|Potere legislativo|ja|立法府|jv|Legislatif|ka|საკანონმდებლო ხელისუფლება|kk|Заң шығарушы билік|kn|ಶಾಸಕಾಂಗ|ko|입법부|ky|Мыйзам чыгаруу бийлиги|la|Potestas legifera|lb|Legislativ|li|Legislatieve mach|lmo|Poder legislativ|lo|ອົງກອນນິຕິບັນຍັດ|lt|Įstatymų leidžiamoji valdžia|lv|Likumdošanas vara|mg|Fahefana mpanao lalàna|mk|Законодавна власт|ml|നിയമനിർമ്മാണസഭ|mr|विधिमंडळ|ms|Badan perundangan|my|လွှတ်တော်|nds|Gesettgevend Macht|ne|व्यवस्थापिका|nl|Wetgevende macht|nn|Den lovgjevande makta|no|Lovgivende makt|oc|Poder legislatiu|pa|ਵਿਧਾਨਪਾਲਿਕਾ|pap|Poder legislativo|pl|Władza ustawodawcza|pnb|مقننہ|ps|قانون جوړونه|pt|Poder legislativo|qu|Kamachi quq atiy|ro|Legislativ|ru|Законодательная власть|sco|Legislatur|sd|قانون ساز ادارو|sh|Zakonodavna vlast|si|ව්‍යවස්ථාදායකය|simple|Legislature|sk|Zákonodarná moc|sl|Zakonodajna oblast|so|Sharcidajin|sq|Legjislatura|sr|Законодавна власт|su|Législatip|sv|Lagstiftande församling|ta|சட்டவாக்க அவை|te|చట్టసభలు|tg|Ҳокимияти қонунбарор|th|สภานิติบัญญัติ|ti|ሓጋጊ ኣካል|tl|Tagapagbatas|tr|Yasama organı|uk|Законодавча влада|ur|مقننہ|uz|Qonun chiqaruvchi hokimiyat|vi|Cơ quan lập pháp|wuu|立法机关|zgh|ⵜⴰⴱⴰⴹⴰ ⵜⵓⵣⵔⵉⴼⵜ|zh|立法机关|zh_min_nan|Li̍p-hoat ki-koan|zh_yue|立法機構|lt=legislature|qid=Q11204}}
 | data45        = {{#if:{{{legislature|}}}|{{{legislature|}}}|{{#if:{{{house1|}}}{{{house2|}}}|&nbsp;}}}}
 | rowclass46    = mergedrow
 | label46       = <div class="ib-former-subdiv-fake-li">•&nbsp;{{#if:{{{type_house1|}}}|{{{type_house1|}}}|Upper house}}</div>
@@ -336,9 +336,9 @@
 [[Category:Former country articles requiring maintenance|D2]]
 [[Category:subdivision}}}s of {{{nation}}}]]
 [[Category:Pages using infobox former subdivision with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q6523892|ar|قالب:صندوق معلومات منطقة إدارية سابقة|as|সাঁচ:Infobox former subdivision|azb|شابلون:Infobox former subdivision|az|Şablon:Tarixi ərazi|ba|Ҡалып:Историческая область|bcl|Plantilya:Infobox kadtong subdibisyon|be|Шаблон:Гістарычная вобласць|bn|টেমপ্লেট:তথ্যছক প্রাক্তন প্রশাসনিক বিভাগ|ce|Кеп:Историн мохк|ckb|داڕێژە:Infobox former subdivision|en|Template:Infobox former subdivision|es|Plantilla:Ficha de antigua entidad territorial|fa|الگو:جعبه اطلاعات تقسیمات پیشین|gu|ઢાંચો:Infobox former subdivision|hi|साँचा:Infobox Former Subdivision|iba|Templat:Infobox former subdivision|id|Templat:Infobox former subdivision|ilo|Plantilia:Infobox dati a subdibision|inh|Ло:Тархьара область|it|Template:Provincia storica|check_date=2026-05-29}}
 </noinclude>
