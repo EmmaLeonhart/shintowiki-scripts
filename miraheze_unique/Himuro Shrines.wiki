@@ -3,28 +3,28 @@
 The word Himuro literally means {{ill|Ice house (building)|en|Ice_house_(building)|qid=Q253893|lt=Ice house}}
 
 == Himuro Shrines across Japan ==
-* {{ill|Himuro Gongen|ja|氷室権現|12=simple|13=User:Immanuelle/Himuro Gongen|ja_comment=jawiki redirects to 氷室}}
+* {{ill|Himuro Gongen|ja|氷室権現}}
 
-* {{ill|Main Water Office|ja|主水司|12=simple|13=User:Immanuelle/Shusō|comment=changed title based on wikidata|qid=Q11368771}}
+* {{ill|Main Water Office|ja|主水司|qid=Q11368771}}
 
-* {{ill|Hatahisa Shrine|ja|幡日佐神社|12=simple|13=User:Immanuelle/Hatahisa Shrine}}
+* {{ill|Hatahisa Shrine|ja|幡日佐神社}}
 
 * {{ill|Himuro Shrine|en|Himuro Shrine|qid=Q11549570|lt=Himuro Shrine}}
 * {{ill|Himuro Shrine (Kyoto)|ja|氷室神社 (京都市)|12=simple|13=User:Immanuelle/Himuro Shrine (Kyoto)|ja_comment=jawiki redirects to 氷室 (京都市北区西賀茂)|comment=changed title based on wikidata|qid=Q11549558}}
-* {{ill|Himuro Shrine, Tenri city|ja|氷室神社 (天理市)|12=simple|13=User:Immanuelle/Himuro Shrine (Tenri)|comment=changed title based on wikidata|qid=Q58209684}}
-* {{ill|Himuro Shrine|ja|氷室神社 (神戸市)|12=simple|13=User:Immanuelle/Himuro Shrine (Kobe)|comment=changed title based on wikidata|qid=Q11549572}}
+* {{ill|Himuro Shrine, Tenri city|ja|氷室神社 (天理市)|qid=Q58209684}}
+* {{ill|Himuro Shrine|ja|氷室神社 (神戸市)|qid=Q11549572}}
 {{disambiguation}}
 
 == Shrines with this name ==
 
 * {{ill|Himuro Shrine (Q11549570)|lt=Himuro Shrine|qid=Q11549570}} — Yamato Province
-* {{ill|Himuro Shrine (Q11549572)|lt=Himuro Shrine|qid=Q11549572}} — Kobe
-* {{ill|Himuro Shrine, Tenri city (Q58209684)|lt=Himuro Shrine, Tenri city|qid=Q58209684}} — Tenri
-* {{ill|氷室神社 (Q134886876)|lt=氷室神社|qid=Q134886876}} — Kawaguchi
+* {{ill|Himuro Shrine (Q11549572)|ja|氷室神社 (神戸市)|qid=Q11549572|lt=Himuro Shrine}} — Kobe
+* {{ill|Himuro Shrine, Tenri city (Q58209684)|ja|氷室神社 (天理市)|qid=Q58209684|lt=Himuro Shrine, Tenri city}} — Tenri
+* {{ill|氷室神社 (Q134886876)|qid=Q134886876|lt=氷室神社}} — Kawaguchi
 
 {{translated page|ja|氷室神社 (曖昧さ回避)|version=103534174|comment=Imported full ja history}}
 
-{{wikidata link|Q11549571|ja|氷室神社 (曖昧さ回避)|check_date=2026-05-15}}
+{{wikidata link|Q11549571|ja|氷室神社 (曖昧さ回避)|grok=none|check_date=2026-05-29}}
 [[Category:Himuro Shrines]]
 [[Category:Shinto shrines by tradition]]
 [[Category:Shrine disambiguations]]

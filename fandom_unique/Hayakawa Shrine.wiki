@@ -1,22 +1,22 @@
 '''Hayakawa Shrine''' (速川神社) refers to several Shinto shrines.
 
-* '''Hayakawa Shrine''' - A {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}} located in {{ill|Etchū Province|ja|Etchū Province|12=simple|13=User:Immanuelle/Etchū Province|ja_comment=jawiki link invalid}}, {{ill|Imizu District, Toyama|en|Imizu District, Toyama|qid=Q6004195|lt=Imizu District}}.
-''' '''{{ill|Hayakawa Shrine (Himi)|ja|速川神社 (氷見市)|12=simple|13=User:Immanuelle/Hayakawa Shrine (Himi)|ja_comment=jawiki link invalid}}''' - A proposed site of the above. Located in Himi City, Toyama Prefecture.
-''' '''{{ill|Hayakawa Shrine (Takaoka)|ja|速川神社 (高岡市)|12=simple|13=User:Immanuelle/Hayakawa Shrine (Takaoka)|ja_comment=jawiki link invalid}}''' - Another proposed site of the above. Located in Takaoka City, Toyama Prefecture.
-''' '''{{ill|Hayakawa Hachiman Shrine|ja|早川八幡社|12=simple|13=User:Immanuelle/Hayakawa Hachiman Shrine|ja_comment=jawiki link invalid}}''' - Another related shrine. Located in Takaoka City, Toyama Prefecture.
-* '''{{ill|Hayakawa Shrine (Saito)|ja|速川神社 (西都市)|12=simple|13=User:Immanuelle/Hayakawa Shrine (Saito)}}''' - Located in Saito City, Miyazaki Prefecture.
+* '''Hayakawa Shrine''' - A {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} located in {{ill|Etchū Province|ja|Etchū Province}}, {{ill|Imizu District, Toyama|en|Imizu District, Toyama|qid=Q6004195|lt=Imizu District}}.
+''' '''{{ill|Hayakawa Shrine (Himi)|ja|速川神社 (氷見市)}}''' - A proposed site of the above. Located in Himi City, Toyama Prefecture.
+''' '''{{ill|Hayakawa Shrine (Takaoka)|ja|速川神社 (高岡市)}}''' - Another proposed site of the above. Located in Takaoka City, Toyama Prefecture.
+''' '''{{ill|Hayakawa Hachiman Shrine|ja|早川八幡社}}''' - Another related shrine. Located in Takaoka City, Toyama Prefecture.
+* '''{{ill|Hayakawa Shrine (Saito)|ja|速川神社 (西都市)|qid=Q11639672}}''' - Located in Saito City, Miyazaki Prefecture.
 
 {{disambiguation}}
 
 == Shrines with this name ==
 
-* {{ill|Hayakahano Shrine (Q135040370)|lt=Hayakahano Shrine|qid=Q135040370}} — Imizu district
-* {{ill|Sokukawa Shrine (Q135069973)|lt=Sokukawa Shrine|qid=Q135069973}} — Imizu district
-* {{ill|Sokukawa Shrine (Etchū Province) (Q135069974)|lt=Sokukawa Shrine (Etchū Province)|qid=Q135069974}} — Imizu district
+* {{ill|Hayakahano Shrine (Q135040370)|qid=Q135040370|lt=Hayakahano Shrine}} — Imizu district
+* {{ill|Sokukawa Shrine (Q135069973)|qid=Q135069973|lt=Sokukawa Shrine}} — Imizu district
+* {{ill|Sokukawa Shrine (Etchū Province) (Q135069974)|qid=Q135069974|lt=Sokukawa Shrine (Etchū Province)}} — Imizu district
 
 {{translated page|ja|速川神社|version=40514071|comment=Imported full ja history}}
 
-{{wikidata link|Q11639669|ja|速川神社|check_date=2026-05-15}}
+{{wikidata link|Q11639669|ja|速川神社|grok=none|check_date=2026-05-29}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

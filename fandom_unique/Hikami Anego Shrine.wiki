@@ -1,17 +1,16 @@
-
 {{Infobox religious building| religious_affiliation = [[Shinto]]
 |name = Hikami Anego Shrine
 | religious_affiliation = [[Shinto]]
 |image = [[File:Hikami Anego Jinja Haiden, Midori Ward Nagoya 2015.JPG|250px]]<br />Haiden
-|location = Aichi Prefecture, Nagoya, Midori-ku, Nagoya, Ōdaka-chō Hikamiyama 1-3
+|location = {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, {{ill|Nagoya|en|Nagoya|qid=Q11751|lt=Nagoya}}, {{ill|Midori-ku, Nagoya|en|Midori-ku, Nagoya|qid=Q1155209|lt=Midori-ku, Nagoya}}, Ōdaka-chō Hikamiyama 1-3
 |coordinates = {{ウィキ座標2段度分秒|35|3|41.26|N|136|55|48.95|E|region:JP-23_type:landmark|display=inline,title|name=Hikami Anego Shrine}}
-|Deities = Miyazu-hime
-|Shrine_Rank = Shikinaisha (small), Former Gōsha{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qid=Q134917316|comment=changed title based on wikidata|qid=Q712534}}, Sessha of Atsuta Shrine
+|Deities = {{ill|Miyazu-hime|en|Miyazu-hime|qid=Q11455216|lt=Miyazu-hime}}
+|Shrine_Rank = {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} (small), Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}, {{ill|External branch shrine|ja|末社|lt=Sessha}} of {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}
 |Foundation = (Tradition) 4th year of Emperor Chūai's reign
 |Main_hall = 
 |Festival = First Sunday in October (Ōdaka Festival)
 |Map = {{location map+|Japan Aichi|width=220|float=|caption=|places=
-{{location map~|Japan Aichi|lat_deg=35|lat_min=7|lat_sec=38.59|lon_deg=136|lon_min=54|lon_sec=31.22|label=Atsuta Shrine|position=top|mark=Shinto torii icon vermillion.svg|marksize=20}}
+{{location map~|Japan Aichi|lat_deg=35|lat_min=7|lat_sec=38.59|lon_deg=136|lon_min=54|lon_sec=31.22|label={{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}|position=top|mark=Shinto torii icon vermillion.svg|marksize=20}}
 {{location map~|Japan Aichi|lat_deg=35|lat_min=3|lat_sec=41.26|lon_deg=136|lon_min=55|lon_sec=48.95|label='''Hikami Anego Shrine'''|position=bottom|mark=Shinto torii icon vermillion.svg|marksize=20}}
 }}}}
 
@@ -20,26 +19,26 @@
 [[File:Hikami-Yama-no-zu.png|thumb|220px|right|{{center|Reproduction of "Map of Hikami Mountain"}}]]
 [[File:Hikami-Anego-jinja Motomiya-2.JPG|thumb|220px|right|{{center|Former shrine (left) and monument to the residence of Miyazu-hime (right)}}]]
 
-'''Hikami Anego Shrine''' (氷上姉子神社) is a Shinto shrine located in Midori-ku, Nagoya, Aichi Prefecture, Japan. It is a Shikinaisha, and its historical Rank under the Modern system of Ranked Shinto shrines was that of a Gōsha{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qid=Q134917316|comment=changed title based on wikidata|qid=Q712534}}. Currently, it serves as an external branch shrine of Atsuta Shrine.
+'''Hikami Anego Shrine''' (氷上姉子神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Midori-ku, Nagoya|en|Midori-ku, Nagoya|qid=Q1155209|lt=Midori-ku, Nagoya}}, {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}}, Japan. It is a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}, and its historical Rank under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|lt=Modern system of Ranked Shinto shrines}} was that of a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}. Currently, it serves as an external branch shrine of {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}.
 
-The shrine is situated on a hill known as "Hikamiyama" (氷上山/火上山) and is said to be the site where the Kusanagi no Tsurugi, one of the Three Sacred Treasures, was enshrined before the founding of Atsuta Shrine. Locally, it is affectionately referred to as "O-Hikami-san."
+The shrine is situated on a hill known as "Hikamiyama" (氷上山/火上山) and is said to be the site where the {{ill|Kusanagi no Tsurugi|ja|草薙剣|lt=Kusanagi-no-Tsurugi}}, one of the {{ill|Imperial Regalia of Japan|en|Imperial Regalia of Japan|qid=Q327465|lt=Three Sacred Treasures}}, was enshrined before the founding of Atsuta Shrine. Locally, it is affectionately referred to as "O-Hikami-san."
 
 == Enshrined Deities ==
 
 The shrine venerates the following deity:<ref name="History_Pamphlet">Shrine history pamphlet.</ref>
-* Miyazu-hime (Miyasu-hime/Miyazu-hime)
+* {{ill|Miyazu-hime|en|Miyazu-hime|qid=Q11455216|lt=Miyazu-hime}} (Miyasu-hime/Miyazu-hime)
 
-The deity is associated with the Owari clan, as indicated in texts such as the Nihon Shoki, Kojiki, and fragments of the Fudoki. The texts recount how Prince Yamato Takeru wed Miyazu-hime and entrusted her with the Kusanagi sword.
+The deity is associated with the {{ill|Owari clan|en|Owari clan|qid=Q11465311|lt=Owari clan}}, as indicated in texts such as the {{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}, {{ill|Kojiki|en|Kojiki|qid=Q813031|lt=Kojiki}}, and fragments of the {{ill|Fudoki|en|Fudoki|qid=Q1194534|lt=Fudoki}}. The texts recount how {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}} wed Miyazu-hime and entrusted her with the Kusanagi sword.
 
 == History ==
 
 === Foundation ===
 
-According to tradition recorded in the Atsuta Shrine's origin myths, Hikami Anego Shrine originated as the residence of Miyazu-hime, who safeguarded the Kusanagi sword before the establishment of Atsuta Shrine. It is said to have been founded during the reign of Emperor Chūai and relocated to its current site during the reign of Empress Jitō.<ref name="History_Pamphlet"/>
+According to tradition recorded in the {{ill|Atsuta Shrine's origin myths|ja|熱田神宮縁起|12=simple|13=User:Immanuelle/Atsuta Shrine's origin myths|ja_comment=jawiki link invalid|qid=Q135578841}}, Hikami Anego Shrine originated as the residence of Miyazu-hime, who safeguarded the Kusanagi sword before the establishment of Atsuta Shrine. It is said to have been founded during the reign of Emperor Chūai and relocated to its current site during the reign of Empress Jitō.<ref name="History_Pamphlet"/>
 
 === Chronological Events ===
 
-The shrine is listed in the Engishiki Jinmyōchō (927 AD) under the name "Hi-no-Kami Anego Shrine." Over centuries, the shrine was maintained and revered as a significant religious site connected to the Owari clan and Yamato Takeru legends.
+The shrine is listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} (927 AD) under the name "Hi-no-Kami Anego Shrine." Over centuries, the shrine was maintained and revered as a significant religious site connected to the Owari clan and Yamato Takeru legends.
 
 == Architecture ==
 
@@ -61,18 +60,18 @@ The shrine hosts several annual rituals:
 
 * Address: Ōdaka-chō Hikamiyama 1-3, Midori-ku, Nagoya, Aichi Prefecture
 * '''Transportation:'''
-** 20-minute walk from Ōdaka Station on the JR Tōkaidō Line.
-** 25-minute walk from Nawa Station (Aichi) on the Meitetsu Tokoname Line.
+** 20-minute walk from {{ill|Ōdaka Station|en|Ōdaka Station|qid=Q871424|lt=Ōdaka Station}} on the JR Tōkaidō Line.
+** 25-minute walk from {{ill|Nawa Station|en|Nawa Station|qid=Q845442|lt=Nawa Station (Aichi)}} on the Meitetsu Tokoname Line.
 
 == Related Articles ==
-* Atsuta Shrine
+* {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}
 
 == References ==
 
 {{Reflist}}
 
 == External Links ==
-* [https://www.atsutajingu.or.jp/jingu/about/yukari/yukari_detail03.html Official page] - Atsuta Shrine
+* [https://www.atsutajingu.or.jp/jingu/about/yukari/yukari_detail03.html Official page] - {{ill|Atsuta Shrine|en|Atsuta Shrine|qid=Q482065|lt=Atsuta Shrine}}
 
 }}
 
@@ -83,7 +82,7 @@ The shrine hosts several annual rituals:
 {{Atsuta Faith}}
 
 {{Commons category|Hikami-Anego-jinja}}
-{{wikidata link|Q11549548|ja|氷上姉子神社}}
+{{wikidata link|Q11549548|ja|氷上姉子神社|grok=none|check_date=2026-05-29}}
 [[Category:Atsuta Shrine]]
 [[Category:Buildings and structures in Midori-ku, Nagoya]]
 [[Category:Former Gō-sha in Aichi Prefecture]]

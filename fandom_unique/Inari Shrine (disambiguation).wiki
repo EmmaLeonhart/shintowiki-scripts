@@ -5,17 +5,17 @@
 * {{ill|Inari Shrine (Kurume City)|qid=Q135579228}} - Located in {{ill|Kurume|ar|كورومي (فوكوكا)|azb|کورومه، فوکوئوکا|be|Курумэ|bg|Куруме|ca|Kurume|ce|Куруме|ceb|Kurume (lungsod sa Hapon)|de|Kurume|eo|Kurume|es|Kurume|et|Kurume|eu|Kurume (Fukuoka)|fa|کورومه، فوکوئوکا|fi|Kurume|fr|Kurume|ga|Kurume|gl|Kurume|hak|Kurume, Fukuoka|hy|Կուրումե|id|Kurume, Fukuoka|it|Kurume|ja|久留米市|ko|구루메시|lt|Kurumė|mg|Kurume|ms|Kurume, Fukuoka|mzn|کورومه، فوکوئوکا|nl|Kurume|no|Kurume|pl|Kurume|pt|Kurume|ro|Kurume|ru|Куруме|sco|Kurume|sh|Kurume|simple|Kurume|sr|Куруме|sv|Kurume|szl|Kurume|tg|Куруме|th|คูรูเมะ|tl|Kurume|tr|Kurume|tt|Куруме|uk|Куруме (Фукуока)|ur|کورومی، فوکوکا|vi|Kurume|war|Kurume, Fukuoka|wuu|久留米市|zh|久留米市|zh_classical|久留米市|zh_min_nan|Kurume-chhī|zh_yue|久留米|qid=Q320934|lt=Kurume City}}, {{ill|Tanushimaru, Fukuoka|es|Tanushimaru|ja|田主丸町|ko|다누시마루정|qid=Q7683922|lt=Tanushimaru Town}}, Noda, Fukuoka Prefecture.
 
 == Related Items ==
-* {{ill|Motonosumi Shrine|ja|元乃隅神社|zh|元乃隅神社|qid=Q22120637}} (Yuyatsuo, Nagato City, Yamaguchi Prefecture) - Previously named "Motonosumi Inari Shrine," but it is not a registered religious corporation.
+* {{ill|Motonosumi Shrine|ja|元乃隅神社|12=simple|13=User:Immanuelle/Motonosumi Shrine|comment=changed title based on wikidata|qid=Q22120637}} (Yuyatsuo, Nagato City, Yamaguchi Prefecture) - Previously named "Motonosumi Inari Shrine," but it is not a registered religious corporation.
 
 {{disambiguation}}
 
 == Shrines with this name ==
 
-* {{ill|Inari Shrine (Q60988699)|ja|稲成神社|qid=Q60988699|lt=Inari Shrine}}
+* {{ill|Inari Shrine (Q60988699)|lt=Inari Shrine|qid=Q60988699}}
 
 {{translated page|ja|稲成神社|version=102014665|comment=Imported full ja history}}
 
-{{wikidata link|Q60988699|ja|稲成神社|check_date=2026-05-15}}
+{{wikidata link|Q60988699|ja|稲成神社|grok=none|check_date=2026-05-29}}
 [[Category:All disambiguation pages]]
 [[Category:Inari faith]]
 [[Category:Shrine disambiguations]]

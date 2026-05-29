@@ -1,8 +1,8 @@
 '''Hayashi Shrine''' (林神社, also read as Rin Shrine) refers to multiple Shinto shrines in Japan.
 
-* {{ill|Hayashi Shrine (Tonami)|ja|林神社 (砺波市頼成)|12=simple|13=User:Immanuelle/Hayashi Shrine (Tonami)}} - Located in Tonami City, Toyama Prefecture.
-* {{ill|Hayashi Shrine (Akashi)|ja|林神社 (明石市)|12=simple|13=User:Immanuelle/Hayashi Shrine (Akashi)}} - Located in Akashi City, Hyōgo Prefecture.
-* Hayashi Shrine (Nara) - A subsidiary shrine within {{ill|Kangō Shrine|ja|漢國神社|12=simple|13=User:Immanuelle/Kangō Shrine}} in Nara City, Nara Prefecture.
+* {{ill|Hayashi Shrine (Tonami)|ja|林神社 (砺波市頼成)}} - Located in Tonami City, Toyama Prefecture.
+* {{ill|Hayashi Shrine (Akashi)|ja|林神社 (明石市)}} - Located in Akashi City, Hyōgo Prefecture.
+* Hayashi Shrine (Nara) - A subsidiary shrine within {{ill|Kangō Shrine|ja|漢國神社}} in Nara City, Nara Prefecture.
 
 {{disambiguation}}
 
@@ -16,7 +16,7 @@
 
 {{translated page|ja|林神社|version=54067802|comment=Imported full ja history}}
 
-{{wikidata link|Q11533248|ja|林神社|check_date=2026-05-15}}
+{{wikidata link|Q11533248|ja|林神社|grok=none|check_date=2026-05-29}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

@@ -48,10 +48,10 @@
             | {{{location|}}}
             | {{#if:{{{county|}}}|{{{county}}} }}{{#if:{{{region|}}}|{{#if:{{{county|}}}|,{{sp}}}}{{{region}}}}}{{#if:{{{country|}}}|{{#if:{{{county|}}}{{{region|}}}|,{{sp}}}}{{{country}}} }} }}
 
-|label5  = [[Ordnance Survey National Grid|OS grid]]
+|label5  = {{ill|Ordnance Survey National Grid|cy|Grid Cenedlaethol yr Arolwg Ordnans|de|National Grid (Ordnance Survey)|en|Ordnance Survey National Grid|fa|شبکه ملی مرجع|fr|Ordnance Survey National Grid|frr|OSGB36|hi|आर्डिनेंस सर्वेक्षण राष्ट्रीय ग्रिड|id|Sistem grid Britania|nl|British national grid reference system|simple|Ordnance Survey National Grid|tr|İngiliz grid referans sistemi|zh|英國國家格網參考系統|lt=Ordnance Survey National Grid|qid=Q1967305}}
 |data5   = {{#if:{{{grid_ref_UK|}}}|{{gbm4ibx|{{{grid_ref_UK|}}}}} }}
 
-|label6  = [[Irish grid reference system|OSI/OSNI grid]]
+|label6  = {{ill|Irish grid reference system|de|Irish Grid|en|Irish grid reference system|ga|Eangach thagartha náisiúnta na hÉireann|gv|Corys ingagh ogheragh Nerin|it|Irish grid|ru|Ирландская координатная сетка|simple|Irish national grid reference system|ur|آئرش گرڈ ریفرنس سسٹم|zh|爱尔兰网格参考系统|lt=Irish grid reference system|qid=Q1672843}}
 |data6   = {{#if:{{{grid_ref_Ireland|}}}|{{iem4ibx|{{{grid_ref_Ireland|}}}}} }}
 
 |label7  = Coordinates
@@ -96,13 +96,13 @@
 |label18  = Ecosystem(s)
 |data18   = {{{ecosystem|}}}
 
-|label19  = [[List of terrestrial ecoregions (WWF)|WWF Classification]]
+|label19  = {{ill|list of terrestrial ecoregions (WWF)|ca|Llista d'ecoregions terrestres (WWF)|en|List of terrestrial ecoregions (WWF)|es|Anexo:Ecorregiones terrestres|fa|فهرست بوم‌ناحیه‌های خشکی (صندوق جهانی طبیعت)|it|Lista delle ecoregioni terrestri|lt=list of terrestrial ecoregions (WWF)|qid=Q4283819}}
 |data19   = {{{classification_WWF|}}}
 
-|label20 = [[List of ecoregions in the United States (EPA)|EPA Classification]]
+|label20 = {{ill|list of ecoregions in the United States|bg|Екологични региони на Северна Америка|en|List of ecoregions in the United States (EPA)|lt=list of ecoregions in the United States|qid=Q6617850}}
 |data20   = {{{classification_EPA|}}}
 
-|label21 = [[List of ecoregions in North America (CEC)|CEC Classification]]
+|label21 = {{ill|list of ecoregions in North America|en|List of ecoregions in North America (CEC)|lt=list of ecoregions in North America|qid=Q6617798}}
 |data21   = {{{classification_CEC|}}}
 
 |label22  = Disturbance
@@ -130,9 +130,9 @@
 {{documentation}}
 
 [[Category:Pages using infobox forest with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q10810677|ar|قالب:صندوق معلومات غابة|arz|قالب:معلومات غابه|azb|شابلون:مئشه بیلگی قوتوسو|az|Şablon:Meşə|ban|Mal:Infobox forest|ba|Ҡалып:Лес|be|Шаблон:Лес|bn|টেমপ্লেট:তথ্যছক বন|cs|Šablona:Infobox - les|en|Template:Infobox forest|fa|الگو:جعبه اطلاعات جنگل|fr|Modèle:Infobox Forêt|hi|साँचा:Infobox forest|id|Templat:Infobox forest|ja|Template:Infobox forest|jv|Cithakan:Infobox forest|kk|Үлгі:Орман|kn|ಟೆಂಪ್ಲೇಟು:Infobox forest|ko|틀:숲 정보|lv|Veidne:Meža infokaste|check_date=2026-05-29}}
 </noinclude>

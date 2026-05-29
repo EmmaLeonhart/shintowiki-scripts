@@ -1,7 +1,7 @@
 '''Hayabusa Shrine''' (隼神社)
 
-* {{ill|Nagi Shrine (Kyoto)|lt=Hayabusa Shrine (Kyoto)|ja|隼神社 (京都市)|1=Nagi_Shrine_(Kyoto)#Hayabusa_Shrine|2=ja|lt_ja=隼神社 (京都市)|3=梛神社|lt=Hayabusa Shrine (Kyoto)|12=simple|13=User:Immanuelle/Hayabusa Shrine (Kyoto)}} - Located in {{ill|Nakagyō-ku, Kyoto|en|Nakagyō-ku, Kyoto|qid=Q1075455|lt=Nakagyō-ku, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, within the grounds of {{ill|Nagi Shrine (Kyoto)|ja|梛神社|12=simple|13=User:Immanuelle/Nagi Shrine (Kyoto)}}. It is a {{ill|Shikinaisha|ja|式内社|1=Shikinaisha|2=ja|3=式内社|1=Shikinaisha|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyocho|lt=Shikinaisha}}.
-* {{ill|Hayabusa Shrine (Nara)|ja|隼神社 (奈良市)|12=simple|13=User:Immanuelle/Hayabusa Shrine (Nara)}} - Situated in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}.
+* {{ill|Nagi Shrine (Kyoto)|ja|隼神社 (京都市)|lt=Hayabusa Shrine (Kyoto)}} - Located in {{ill|Nakagyō-ku, Kyoto|en|Nakagyō-ku, Kyoto|qid=Q1075455|lt=Nakagyō-ku, Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture}}, within the grounds of {{ill|Nagi Shrine (Kyoto)|ja|梛神社}}. It is a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}.
+* {{ill|Hayabusa Shrine (Nara)|ja|隼神社 (奈良市)}} - Situated in {{ill|Nara (city)|en|Nara (city)|qid=Q169134|lt=Nara City}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture}}.
 
 {{disambiguation}}
 
@@ -12,7 +12,7 @@
 
 {{translated page|ja|隼神社|version=66993662|comment=Imported full ja history}}
 
-{{wikidata link|Q23996462|ja|隼神社|check_date=2026-05-15}}
+{{wikidata link|Q23996462|ja|隼神社|grok=none|check_date=2026-05-29}}
 [[Category:Shinto shrines by tradition]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]

@@ -438,7 +438,6 @@ print("Hello, World!")
 [[Category:Programming language templates| ]]
 [[Category:Computing infobox templates|Programming language]]
 [[Category:Infobox templates using Wikidata]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

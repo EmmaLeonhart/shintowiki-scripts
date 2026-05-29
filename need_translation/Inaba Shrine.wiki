@@ -68,13 +68,13 @@
 
 == modern shrine ranking (P13723) ==
 
-* {{ill|Kokuhei Shōsha|lt=Kokuhei Shōsha|qid=Q134917281}}
+* {{ill|Kokuhei Shōsha|qid=Q134917281|lt=Kokuhei Shōsha}}
 ** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
 ** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
 
 == country (P17) ==
 
-* {{ill|Japan|ltq=Q17|qid=Q17}}
+* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17}}
 
 == Instagram username (P2003) ==
 
@@ -109,7 +109,7 @@
 [[TH:ศาลเจ้าอินาบะ]]
 [[ZH:伊奈波神社]]
 
-{{wikidata link|Q701414|commons|Category:Inaba-jinja|th|ศาลเจ้าอินาบะ|en|Inaba Shrine|eu|Inaba santutegia|fr|Inaba-jinja|ja|伊奈波神社|ko|이나바 신사|zh|伊奈波神社|check_date=2026-05-15}}
+{{wikidata link|Q701414|commons|Category:Inaba-jinja|th|ศาลเจ้าอินาบะ|en|Inaba Shrine|eu|Inaba santutegia|fr|Inaba-jinja|ja|伊奈波神社|ko|이나바 신사|zh|伊奈波神社|grok=inaba_shrine|check_date=2026-05-29}}
 
 == Japanese content ==
 {{神社
