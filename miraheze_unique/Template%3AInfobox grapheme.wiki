@@ -74,7 +74,7 @@
 |data4={{{language|}}}
 |label5=Sound values
 |data5={{#ifeq:{{{type|}}}|pictographic||{{#ifeq:{{{type|}}}|[[pictographic]]||{{{phonemes|}}}}}}}
-|label6=In&nbsp;[[Unicode]]
+|label6=In&nbsp;{{ill|The Unicode® Standard|af|Unicode|als|Unicode|am|ዩኒኮድ|ar|الترميز الموحد|as|ইউনিক’ড|ast|Unicode|az|Unicode|bar|Unicode|be|Унікод|be_x_old|Юнікод|bg|Уникод|bh|युनिकोड|blk|ယူနီကုဒ်ကရိုꩻနောဝ်ꩻ|bn|ইউনিকোড|br|Unicode|bs|Unicode|ca|Unicode|cdo|Unicode|chr|ᏳᏂᎪᏛ|ckb|یوونیکۆد|cs|Unicode|cv|Юникод|cy|Unicode|da|Unicode|de|Unicode|el|Unicode|en|Unicode|eo|Unikodo|es|Unicode|et|Unicode|eu|Unicode|fa|یونی‌کد|fi|Unicode|fr|Unicode|ga|Unicode|gl|Unicode|gu|યુનિકોડ|hak|Unicode|he|יוניקוד|hi|यूनिकोड|hr|Unikod|hu|Unicode|hy|Յունիկոդ|ia|Unicode|id|Unicode|ilo|Unicode|is|Unicode|it|Unicode|ja|Unicode|jv|Unicode|ka|უნიკოდი|kk|Юникод|kn|ಯುನಿಕೋಡ್|ko|유니코드|ks|یوٗنِکوڈ|ku|Unicode|ky|Юникод|la|Unicodex|lfn|Unicode|lt|Unikodas|lv|Unikods|mai|युनिकोड|mhr|Unicode|mk|Уникод|ml|യൂണികോഡ്|mn|Юникод|mnw|ယူနဳကုဒ်|mr|युनिकोड|ms|Unicode|my|ယူနီကုဒ်|nds|Unicode|ne|युनिकोड|new|युनिकोड|nl|Unicode|nn|Unicode|no|Unicode|oc|Unicòde|pa|ਯੂਨੀਕੋਡ|pap|Unicode|pl|Unicode|pnb|یونیکوڈ|ps|يونيکوډ|pt|Unicode|ro|Unicode|ru|Юникод|sa|युनिकोड|sah|Юникод|sat|ᱭᱩᱱᱤᱠᱳᱰ|sco|Unicode|sd|يونيڪوڊ|sh|Unikod|si|යුනිකෝඩ්|simple|Unicode|sk|Unicode|sl|Unicode|sq|Unicode|sr|Unicode|su|Unicode|sv|Unicode|sw|Unicode|ta|ஒருங்குறி|te|యూనికోడ్|tg|Юникод|th|ยูนิโคด|tl|Unicode|tok|nasin Juniko|tr|Unicode|tyv|Юникод|ug|Unicode|uk|Юнікод|ur|یونیکوڈ|uz|Unicode|vi|Unicode|wa|Unicôde|wuu|Unicode|xmf|იუნიკოდი|yi|יוניקאד|yo|Unicode|zh|统一码|zh_classical|萬國碼|zh_min_nan|Unicode|zh_yue|統一碼|lt=The Unicode® Standard|qid=Q8819}}
 |data6={{#if:{{{unicode|}}}|{{#if:{{{no_unicode_code|}}}|{{{unicode|}}}|<code>{{{unicode|}}}</code>}}}}
 |label7={{#switch:{{lc:{{{type|}}}}}
                 |[[abjad]]|abjad|[[abuguida]]|abuguida|[[alphabet]]|alphabet=Alphabetical|#default=Lexicographic}} position
@@ -145,7 +145,8 @@
 |below={{#if:{{{phonemes|}}}|{{IPA notice/msg}}|}}
 }}<includeonly>{{#if:{{{letter|}}}||}}</includeonly>{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox grapheme]] with unknown parameter "_VALUE_"|ignoreblank=y| alphanumber | associates | boxsize | children | direction | equivalents | fam1 | fam2 | fam3 | fam4 | fam5 | fam6 | fam7 | fam8 | fam9 | fam10 | fam11 | fam12 | fam13 | fam14 | fam15 | fam16 | fam17 | fam18 | fam19 | fam20 | image | image2 | image3 | imagealt | imagealt2 | imagealt3 | imageclass | imageclass2 | imageclass3 | imagesize | imagesize2 | imagesize3 | imageupright | imageupright2 | imageupright3 | language | letter | mode | module | name | no_unicode_code | number | phonemes | script | SHform | SHtype | sisters | type | typedesc | unicode | usageperiod | variations }}<noinclude>
 {{documentation}}
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q14385252|ang|Bysen:Cyþþubox bōcstæf|ar|قالب:حرف|ast|Plantía:Grafema|av|Халип:Графемаялъул инфобокс|az|Şablon:Qrafem|ba|Ҡалып:Графема|be|Шаблон:Картка графемы|bh|टेम्पलेट:Infobox grapheme|bn|টেমপ্লেট:তথ্যছক বর্ণ|ca|Plantilla:Infotaula grafema|crh|Şablon:Arf|cv|Шаблон:Графема карточки|de|Vorlage:Infobox Graphem|en|Template:Infobox grapheme|es|Plantilla:Ficha de letra|fa|الگو:Infobox grapheme|fr|Modèle:Infobox Graphème|ga|Teimpléad:WD Bosca Sonraí Graiféim|gu|ઢાંચો:Infobox grapheme|ha|Samfuri:Infobox grapheme|check_date=2026-05-29}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
 <noinclude>
 [[Category:Pages using Template:Infobox grapheme without param letter]]

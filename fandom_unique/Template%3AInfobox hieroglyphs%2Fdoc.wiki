@@ -443,9 +443,9 @@ Hieroglyphic combinations are divided into sets of a letter and a number in [[:e
 <noinclude>
 [[Category:Language infobox templates|Hieroglyphics]]
 [[Category:Egyptian hieroglyphics templates]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox hieroglyphs/doc|check_date=2026-05-29}}
 </noinclude>
