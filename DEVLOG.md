@@ -6,6 +6,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-28
 
+### Scoped the blank-`{{wikidata link}}` feature — most exists; a cascade blocker found
+**Files:** `queue.md`
+
+Work-loop tick, "verify before building" step on Emma's Categories-missing-wikidata
+design. Found `ops/wikidata_link.py` already tags pages with no `{{wikidata link|…}}`
+(`[[Category:Pages without wikidata]]` on mainspace/category; `[[Category:Templates
+missing wikidata]]` inside `<noinclude>` on templates, to dodge transclusion cascade).
+The gap to Emma's "every page has a blank template that self-categorizes" is: (a) the
+op tags a category, not a blank template; (b) `{{wikidata link}}` renders broken
+(`{{q|}}` + empty interwikis) with no QID, so it needs a no-QID guard branch; (c)
+"Pages without wikidata" isn't yet a crud category; (d) "present but QID doesn't
+resolve" ties into `ops/wikidata_lookup.py`. **Design blocker:** a self-categorizing
+template via `<includeonly>` re-introduces the exact cascade bug the op was built to
+avoid — needs a cascade-safe mechanism + it's a wiki-wide mass edit, so resolve with
+Emma + dry-run before building. Refined the queue item into a build spec; did not
+build (per hard rails — not 100% understood until the cascade approach is settled).
+
 ### Act on Emma's Open-Questions dispositions — retire dead todo items
 **Files:** `todo.md`, `queue.md`
 
