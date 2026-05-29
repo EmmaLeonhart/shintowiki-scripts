@@ -31,6 +31,19 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
   on-disk capital twin). Remove them from a Linux/case-sensitive
   checkout and commit. Non-urgent (they're inert).
 
+## From [[Open questions]] — Emma's 2026-05-28 dispositions
+
+Emma answered the whole Open Questions backlog on the wiki (pulled to
+the repo at commit 4738295d / origin). Her answers are the "**" sub-bullets
+on that page. Acting on them (the page itself is wiki-wins — prune the
+bullets ON THE WIKI, not in the repo copy; no local wiki creds, so bullet
+removal is Emma's or a CI edit). Read latest via
+`git show origin/main:"git_synced/Open questions.wiki"`.
+
+- [ ] **Recreate `[[Category:Categories missing wikidata]]` via the orchestrator — Emma's design.** Emma: "just recreate it… every single page should have the `{{wikidata link}}` template at the bottom; blank for these." Concrete steps: (1) the mainspace + category orchestrators add a BLANK `{{wikidata link}}` to any page (ns 0 + 14) that has none; (2) tag pages whose wikidata link is missing OR present-but-not-actually-linking-Wikidata into a CRUD category (`[[Category:Categories missing wikidata]]` for cats; the page-level equivalent for mainspace — reconcile with existing `tag_pages_without_wikidata.py` / `[[Category:Pages without wikidata]]`); (3) "pages without wikidata" becomes a crud category. Slight edit to the `{{wikidata link}}` template + an orchestrator op. Verify against existing ops (`tag_pages_without_wikidata`, the wikidata-link template) before building — much may already exist.
+- [ ] **Verify "already done" items, then prune their Open-Questions bullets (on the wiki).** Emma marked these done/no-longer-concerning — confirm via code/log/SPARQL, record disposition, leave the bullet for Emma/CI to strike on the wiki: (a) Kana ojp-hani stragglers — "check the SPARQL and remove if done" (read-only `seed_kana_qualifier.py --dry-run` is freeze-safe; edits are not, freeze to 2026-06-06); (b) AI translation pipeline — Emma: "this does in fact exist" → find it, correct `todo.md`'s "doesn't exist yet"; (c) Enrich autocreated categories — Emma: category is empty / work already done → confirm `Category:Categories autocreated by EmmaBot` membership, drop the todo item; (d) Secret-removal history rewrite — Emma: "already done" → grep history for the redacted literals, drop if clean; (e) Category race-condition audit — Emma: "no longer concerning" → drop the todo item.
+- [ ] **Drop the dead todo/VISION items Emma killed.** Emma: fandom Infobox→Portable conversion "no AI does this" (drop); VISION architecture (namespace restructure, Pramana, change-tracking bot) "no longer happening" — drop all except the automated translation pipeline, which "exists right now" (note it as shipped). Remove these from `todo.md`.
+
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
