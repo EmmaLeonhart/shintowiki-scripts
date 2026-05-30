@@ -1,24 +1,20 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-
 '''Kamō Hachiman Shrine''' (蒲生八幡神社)
 
-* {{ill|Kamō Hachiman Shrine (Kitakyushu)|ja|蒲生八幡神社 (北九州市)|12=simple|13=User:Immanuelle/Kamō Hachiman Shrine (Kitakyushu)}} - Located in Kitakyushu, Fukuoka Prefecture.
-* {{ill|Kamō Hachiman Shrine (Aira)|ja|蒲生八幡神社 (姶良市)|12=simple|13=User:Immanuelle/Kamō Hachiman Shrine (Aira)}} - Located in Aira, Kagoshima Prefecture.
+* {{ill|Kamō Hachiman Shrine (Kitakyushu)|ja|蒲生八幡神社 (北九州市)}} - Located in Kitakyushu, Fukuoka Prefecture.
+* {{ill|Kamō Hachiman Shrine (Aira)|ja|蒲生八幡神社 (姶良市)}} - Located in Aira, Kagoshima Prefecture.
 
 {{disambiguation}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Kamō Hachiman Shrine (Kitakyushu) (Q11621338)|lt=Kamō Hachiman Shrine (Kitakyushu)|qid=Q11621338}} — Kitakyūshū
 * {{ill|Kamō Hachiman Shrine, Aira (Q11621340)|lt=Kamō Hachiman Shrine, Aira|qid=Q11621340}} — Aira
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|蒲生八幡神社|version=39192455|comment=Imported full ja history}}
 
-{{wikidata link|Q11621339|ja|蒲生八幡神社}}
+{{wikidata link|Q11621339|ja|蒲生八幡神社|grok=none|check_date=2026-05-30}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

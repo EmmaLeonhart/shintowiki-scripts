@@ -1,4 +1,4 @@
-{{Infobox Buddhist temple|prefecture={{ill|Okaya|qid=Q838672|1=Okaya, Nagano}}|coordinates={{Coord|36.035194|N|138.068639}}}}
+{{Infobox Buddhist temple|prefecture={{ill|Okaya, Nagano|ar|أوكايا (ناغانو)|azb|اوکایا، ناقانو|ce|Окая|ceb|Okaya (lungsod sa Hapon)|de|Okaya|es|Okaya (Nagano)|fa|اوکایا|fi|Okaya|fr|Okaya (Nagano)|gl|Okaya|hy|Օկայա|id|Okaya, Nagano|it|Okaya|ja|岡谷市|ko|오카야시|mzn|اوکایا، ناگانو|nl|Okaya|no|Okaya|pl|Okaya|pt|Okaya|ro|Okaya|ru|Окая|sv|Okaya|tg|Окая|th|โอกายะ|tl|Okaya, Nagano|tr|Okaya|tt|Окая|uk|Окая (Наґано)|ur|اوکایا، ناگانو|uz|Okaya (Nagano)|vi|Okaya, Nagano|war|Okaya, Nagano|zh|岡谷市|zh_classical|岡谷市|zh_min_nan|Okaya-chhī|zh_yue|岡谷|qid=Q838672}}|coordinates={{Coord|36.035194|N|138.068639}}}}
 
 {{Infobox religious building
 | name          = Kannoni-in
@@ -7,25 +7,25 @@
 | location      = Minato 4-chome 15-22, Okaya, Nagano Prefecture, Japan
 | latitude_deg  = 36 | latitude_min  = 2 | latitude_sec  = 6.7
 | longitude_deg = 138 | longitude_min = 4 | longitude_sec = 7.1
-| sect          = {{ill|Shingon-shū Chisan-ha|en|Shingon-shū Chisan-ha|qid=Q674374|lt=Shingon-shū Chisan-ha|1=Shingon-shū Chisan-ha}}
-| deity         = {{ill|Ekādaśamukha|en|Ekādaśamukha|qid=Q11404731|lt=Eleven-Faced Avalokitesvara|1=Ekādaśamukha}}
+| sect          = {{ill|Shingon-shū Chisan-ha|fr|Shingon-shū Chizan-ha|ja|真言宗智山派|zh|真言宗智山派|qid=Q674374|lt=Shingon-shū Chisan-ha}}
+| deity         = {{ill|Ekādaśamukha|en|Ekādaśamukha|qid=Q11404731|lt=Eleven-Faced Avalokitesvara}}
 | founded       = 
 | founder       = 
 | full_name     = Ryūkōzan Kannoni-in
-| former_affiliation = {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}} (Shabō)
-| noteworthy    = Historical ties to {{ill|Suwa Goryōnin|ja|諏訪御料人|12=simple|13=User:Immanuelle/Suwa Goryōnin|1=Suwa Goronin|comment=changed title based on wikidata|qid=Q8193299}}
+| former_affiliation = {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}} (Shabō)
+| noteworthy    = Historical ties to {{ill|Suwa Goronin|fa|سووا گوریونین|ja|諏訪御料人|zh|諏訪御料人|qid=Q8193299}}
 | map           = Nagano Prefecture
 | map_relief    = yes
 | map_width     = 256
 }}
-'''Kannoni-in''' (観音院), also known as '''Kosaka Kannoni-in''', is a Buddhist temple of the {{ill|Shingon-shū Chisan-ha|en|Shingon-shū Chisan-ha|qid=Q674374|lt=Shingon-shū Chisan-ha|1=Shingon-shū Chisan-ha}} sect located in {{ill|Okaya, Nagano|en|Okaya, Nagano|qid=Q838672|lt=Okaya|1=Okaya, Nagano}}, Nagano Prefecture, Japan. The temple's mountain name (''sangō'') is '''Ryūkōzan''' (龍光山), and its principal object of worship is the {{ill|Ekādaśamukha|en|Ekādaśamukha|qid=Q11404731|lt=Eleven-Faced Avalokitesvara|1=Ekādaśamukha}}.
+'''Kannoni-in''' (観音院), also known as '''Kosaka Kannoni-in''', is a Buddhist temple of the {{ill|Shingon-shū Chisan-ha|fr|Shingon-shū Chizan-ha|ja|真言宗智山派|zh|真言宗智山派|qid=Q674374|lt=Shingon-shū Chisan-ha}} sect located in {{ill|Okaya, Nagano|ar|أوكايا (ناغانو)|azb|اوکایا، ناقانو|ce|Окая|ceb|Okaya (lungsod sa Hapon)|de|Okaya|es|Okaya (Nagano)|fa|اوکایا|fi|Okaya|fr|Okaya (Nagano)|gl|Okaya|hy|Օկայա|id|Okaya, Nagano|it|Okaya|ja|岡谷市|ko|오카야시|mzn|اوکایا، ناگانو|nl|Okaya|no|Okaya|pl|Okaya|pt|Okaya|ro|Okaya|ru|Окая|sv|Okaya|tg|Окая|th|โอกายะ|tl|Okaya, Nagano|tr|Okaya|tt|Окая|uk|Окая (Наґано)|ur|اوکایا، ناگانو|uz|Okaya (Nagano)|vi|Okaya, Nagano|war|Okaya, Nagano|zh|岡谷市|zh_classical|岡谷市|zh_min_nan|Okaya-chhī|zh_yue|岡谷|qid=Q838672|lt=Okaya}}, Nagano Prefecture, Japan. The temple's mountain name (''sangō'') is '''Ryūkōzan''' (龍光山), and its principal object of worship is the {{ill|Ekādaśamukha|en|Ekādaśamukha|qid=Q11404731|lt=Eleven-Faced Avalokitesvara}}.
 
 == History ==
-Originally a {{ill|Shabō|ja|社坊|12=simple|13=User:Immanuelle/Shabō|ja_comment=jawiki redirects to 神宮寺|1=Jingū-ji|comment=changed title based on wikidata|qid=Q1074971}} (a temple associated with a Shinto shrine) of {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha|1=Suwa-taisha}}, Kannoni-in served as a {{ill|Prayer Temple|ja|祈願所|1=Kigan-sho|12=simple|13=User:Immanuelle/Prayer Temple|13=User:Immanuelle/Kigan-sho|qq=}} for the {{ill|Suwa clan|en|Suwa clan|qid=Q2975376|lt=Suwa clan|1=Suwa clan}} during the medieval period. The temple is situated on a hill overlooking {{ill|Lake Suwa|en|Lake Suwa|qid=Q1206692|lt=Lake Suwa|1=Lake Suwa}}, providing a scenic view of the surrounding area.
+Originally a {{ill|Jingū-ji|ja|社坊|12=simple|13=User:Immanuelle/Shabō|ja_comment=jawiki redirects to 神宮寺|comment=changed title based on wikidata|qid=Q1074971}} (a temple associated with a Shinto shrine) of {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}}, Kannoni-in served as a {{ill|Prayer Temple|ja|祈願所|qid=Q11588473}} for the {{ill|Suwa clan|en|Suwa clan|qid=Q2975376|lt=Suwa clan}} during the medieval period. The temple is situated on a hill overlooking {{ill|Lake Suwa|ar|بحيرة سوا|arz|بحيره سوا|ceb|Suwa Ko|de|Suwa-See|eo|Suŭa-Lago|es|Lago Suwa|et|Suwa järv|eu|Suwa aintzira|fa|دریاچه سووا|fr|Lac Suwa|id|Danau Suwa|ja|諏訪湖|ko|스와호|lt|Suva (ežeras)|mk|Сува (езеро)|my|ဆုဝကန်|nn|Suwasjøen|pl|Suwa (jezioro)|ro|Lacul Suwa|ru|Сува (озеро)|sr|Језеро Сува|th|ทะเลสาบซูวะ|tr|Suwa Gölü|vi|Hồ Suwa|zh|諏訪湖|zh_yue|諏訪湖|qid=Q1206692|lt=Lake Suwa}}, providing a scenic view of the surrounding area.
 
-The temple was revived during the early Edo period under the patronage of {{ill|Suwa Tadatane|ja|諏訪忠恒|12=simple|13=User:Immanuelle/Suwa Tadatane|1=Suwa Tadatsune|comment=changed title based on wikidata|qid=Q11631876}}, the lord of the {{ill|Suwa Domain|en|Suwa Domain|qid=Q3034531|lt=Suwa Domain|1=Suwa Domain}}. The current main hall was rebuilt in 1715 (Shōtoku 5) by {{ill|Suwa Tadatora|ja|諏訪忠虎|12=simple|13=User:Immanuelle/Suwa Tadatora|1=Suwa Tadatora|comment=changed title based on wikidata|qid=Q11631882}}.
+The temple was revived during the early Edo period under the patronage of {{ill|Suwa Tadatsune|ja|諏訪忠恒|qid=Q11631876}}, the lord of the {{ill|Suwa Domain|fa|قلمرو سووا|fr|Domaine de Suwa|id|Wilayah Suwa|ja|諏訪藩|pt|Domínio de Suwa|ru|Сува (княжество)|zh|諏訪藩|qid=Q3034531|lt=Suwa Domain}}. The current main hall was rebuilt in 1715 (Shōtoku 5) by {{ill|Suwa Tadatora|ja|諏訪忠虎|12=simple|13=User:Immanuelle/Suwa Tadatora|comment=changed title based on wikidata|qid=Q11631882}}.
 
-The temple is featured in {{ill|Yasushi Inoue|en|Yasushi Inoue|qid=Q712734|lt=Yasushi Inoue|1=Yasushi Inoue}}'s historical novel *{{ill|Fūrin Kazan (novel)|ja|風林火山 (小説)|12=simple|13=User:Immanuelle/Fūrin Kazan (novel)|1=The Samurai Banner of Furin Kazan|comment=changed title based on wikidata|qid=Q11665512}}*, where it serves as the residence of {{ill|Yufu-hime|ja|諏訪御料人|12=simple|13=User:Immanuelle/Yufu-hime|1=Suwa Goronin|comment=changed title based on wikidata|qid=Q8193299}}, a concubine of [[Takeda Shingen]]{{efn|Japanese feudal lord (1521–1573)|12=simple|13=User:Immanuelle/Takeda Shingen|ja_comment=jawiki link invalid}} and the mother of {{ill|Takeda Katsuyori|en|Takeda Katsuyori|qid=Q662482|lt=Takeda Katsuyori|1=Takeda Katsuyori}}. The 2007 NHK {{ill|Taiga drama|en|Taiga drama|qid=Q1200935|lt=Taiga Drama|1=Taiga drama}} adaptation of *Fūrin Kazan* also portrays the temple.
+The temple is featured in {{ill|Yasushi Inoue|en|Yasushi Inoue|qid=Q712734|lt=Yasushi Inoue}}'s historical novel *{{ill|The Samurai Banner of Furin Kazan|ja|風林火山 (小説)|12=simple|13=User:Immanuelle/Fūrin Kazan (novel)|comment=changed title based on wikidata|qid=Q11665512}}*, where it serves as the residence of {{ill|Suwa Goronin|fa|سووا گوریونین|ja|諏訪御料人|zh|諏訪御料人|qid=Q8193299}}, a concubine of [[Takeda Shingen]]{{efn|Japanese feudal lord (1521–1573)|12=simple|13=User:Immanuelle/Takeda Shingen|ja_comment=jawiki link invalid}} and the mother of {{ill|Takeda Katsuyori|en|Takeda Katsuyori|qid=Q662482|lt=Takeda Katsuyori}}. The 2007 NHK {{ill|Taiga drama|en|Taiga drama|qid=Q1200935|lt=Taiga Drama}} adaptation of *Fūrin Kazan* also portrays the temple.
 
 In 1963 (Shōwa 38), a memorial tower dedicated to Suwa Goryōnin was erected on the temple grounds.
 
@@ -38,9 +38,9 @@ In 1963 (Shōwa 38), a memorial tower dedicated to Suwa Goryōnin was erected on
 * ''Exploring Shinshu's Ancient Temples: Tendai and Shingon Sects'' (1996). Kyodo Publishing.
 
 == See Also ==
-* {{ill|Kosaka Castle|ja|小坂城 (岡谷市)|12=simple|13=User:Immanuelle/Kosaka Castle|ja_comment=jawiki link invalid}}
-* {{ill|Minato Village|ja|湊村 (長野県)|12=simple|13=User:Immanuelle/Minato Village|1=Minato|comment=changed title based on wikidata|qid=Q11563162}}
-* {{ill|Okaya City Landmarks|ja|岡谷市#名所・旧跡・観光スポット|12=simple|13=User:Immanuelle/Okaya City Landmarks|1=Okaya, Nagano|comment=changed title based on wikidata|qid=Q838672}}
+* {{ill|Kosaka Castle|ja|小坂城 (岡谷市)}}
+* {{ill|Minato|ja|湊村 (長野県)|12=simple|13=User:Immanuelle/Minato Village|comment=changed title based on wikidata|qid=Q11563162}}
+* {{ill|Okaya, Nagano|ar|أوكايا (ناغانو)|azb|اوکایا، ناقانو|ce|Окая|ceb|Okaya (lungsod sa Hapon)|de|Okaya|es|Okaya (Nagano)|fa|اوکایا|fi|Okaya|fr|Okaya (Nagano)|gl|Okaya|hy|Օկայա|id|Okaya, Nagano|it|Okaya|ja|岡谷市|ko|오카야시|mzn|اوکایا، ناگانو|nl|Okaya|no|Okaya|pl|Okaya|pt|Okaya|ro|Okaya|ru|Окая|sv|Okaya|tg|Окая|th|โอกายะ|tl|Okaya, Nagano|tr|Okaya|tt|Окая|uk|Окая (Наґано)|ur|اوکایا، ناگانو|uz|Okaya (Nagano)|vi|Okaya, Nagano|war|Okaya, Nagano|zh|岡谷市|zh_classical|岡谷市|zh_min_nan|Okaya-chhī|zh_yue|岡谷|qid=Q838672}}
 
 == External Links ==
 * [http://www.kanko-okaya.jp/tabitabi/jsp/furin/ Okaya City Tourism - Kosaka Kannoni-in]
@@ -55,7 +55,7 @@ In 1963 (Shōwa 38), a memorial tower dedicated to Suwa Goryōnin was erected on
 
 {{translated page|ja|観音院 (岡谷市)|version=101725685|comment=Imported full ja history}}
 
-{{wikidata link|Q11630661|ja|観音院 (岡谷市)}}
+{{wikidata link|Q11630661|ja|観音院 (岡谷市)|grok=none|check_date=2026-05-30}}
 [[Category:Buddhist temples in Nagano Prefecture]]
 [[Category:Buildings and structures in Okaya]]
 [[Category:History of Okaya]]

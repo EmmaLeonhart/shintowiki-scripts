@@ -1,22 +1,18 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-
 '''Kanasana Shrine''' (金鑽神社) refers to shrines with the name "Kanasana."
 
-* {{ill|Kanasana Shrine (Honjo City, Imai)|ja|金鑽神社 (本庄市今井)|12=simple|13=User:Immanuelle/Kanasana Shrine (Honjo City, Imai)|ja_comment=jawiki link invalid}} - Located in {{ill|Imai (disambiguation)|en|Imai (disambiguation)|qid=Q1659666|lt=Imai|1=Imai (disambiguation)}}, {{ill|Honjō, Saitama|en|Honjō, Saitama|qid=Q873565|lt=Honjo City|1=Honjō, Saitama}}, {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture|1=Saitama Prefecture}}.
-* {{ill|Kanasana Shrine (Honjo City, Kurisaki)|ja|金鑽神社 (本庄市栗崎)|12=simple|13=User:Immanuelle/Kanasana Shrine (Honjo City, Kurisaki)|ja_comment=jawiki link invalid}} - Located in {{ill|Kurisaki|ja|栗崎|12=simple|13=User:Immanuelle/Kurisaki|ja_comment=jawiki link invalid}}, Honjo City, Saitama Prefecture.
-* {{ill|Kanasana Shrine|en|Kanasana Shrine|qid=Q11647974|lt=Kanasana Shrine|1=Kanasana Shrine}} - Located in {{ill|Ninomiyama|ja|字二ノ宮|12=simple|13=User:Immanuelle/Ninomiyama|ja_comment=jawiki link invalid}}, {{ill|Kamikawa, Saitama|en|Kamikawa, Saitama|qid=Q1346757|lt=Kamikawa Town|1=Kamikawa, Saitama}}, {{ill|Kodama District, Saitama|en|Kodama District, Saitama|qid=Q938038|lt=Kodama District|1=Kodama District, Saitama}}, Saitama Prefecture. Known as the 2nd or 5th shrine of {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province|1=Musashi Province}}, formerly an {{ill|Imperial Shrine of the Middle Rank|ja|官幣中社|12=simple|13=User:Immanuelle/Imperial Shrine of the Middle Rank|ja_comment=jawiki redirects to 近代社格制度|1=Modern system of ranked Shinto shrines}} 
+* {{ill|Kanasana Shrine (Honjo City, Imai)|ja|金鑽神社 (本庄市今井)}} - Located in {{ill|Imai (disambiguation)|en|Imai (disambiguation)|qid=Q1659666|lt=Imai}}, {{ill|Honjō, Saitama|en|Honjō, Saitama|qid=Q873565|lt=Honjo City}}, {{ill|Saitama Prefecture|en|Saitama Prefecture|qid=Q128186|lt=Saitama Prefecture}}.
+* {{ill|Kanasana Shrine (Honjo City, Kurisaki)|ja|金鑽神社 (本庄市栗崎)}} - Located in {{ill|Kurisaki|ja|栗崎}}, Honjo City, Saitama Prefecture.
+* {{ill|Kanasana Shrine|en|Kanasana Shrine|qid=Q11647974|lt=Kanasana Shrine}} - Located in {{ill|Ninomiyama|ja|字二ノ宮}}, {{ill|Kamikawa, Saitama|arz|بلده كاميكاوا, اليابان|ceb|Kamikawa-machi (subdistrito sa Hapon)|de|Kamikawa (Saitama)|es|Kamikawa (Saitama)|fa|کامیکاوا، سایتاما|fr|Kamikawa (Saitama)|id|Kamikawa, Saitama|it|Kamikawa (Saitama)|ja|神川町|ko|가미카와정 (사이타마현)|ms|Kamikawa, Saitama|my|ခမိခါဝါမြို့၊ ဆိုင်းတမ|pl|Kamikawa (Saitama)|ru|Камикава (Сайтама)|sv|Kamikawa, Saitama|tl|Kamikawa, Saitama|tr|Kamikawa, Saitama|uk|Камікава (Сайтама)|ur|کامیکاوا، سائیتاما|zh|神川町|qid=Q1346757|lt=Kamikawa Town}}, {{ill|Kodama District, Saitama|en|Kodama District, Saitama|qid=Q938038|lt=Kodama District}}, Saitama Prefecture. Known as the 2nd or 5th shrine of {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398|lt=Musashi Province}}, formerly an {{ill|Imperial Shrine of the Middle Rank|ja|官幣中社}} 
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|金鑽神社 (Q134887335)|lt=金鑽神社|qid=Q134887335}} — Honjō-shi
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|金鑽神社|version=65441573|comment=Imported full ja history}}
 
-{{wikidata link|Q11647976|ja|金鑽神社}}
+{{wikidata link|Q11647976|ja|金鑽神社|grok=none|check_date=2026-05-30}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
