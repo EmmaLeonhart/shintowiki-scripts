@@ -15,8 +15,18 @@ reading is never lost.
 
 For each ojp-hani P1448 that has a confirmed `<base>カミノヤシロ` qualifier, it
 removes the now-redundant raw `<base>` katakana wherever it still sits:
-  * as a sibling P1814 qualifier on the same official name, and/or
-  * as a top-level P1814 statement on the item.
+  * as a sibling P1814 qualifier on the same official name (safe per-statement —
+    that statement already carries the カミノヤシロ qualifier), and/or
+  * as a top-level P1814 statement on the item — but ONLY once EVERY ojp-hani
+    P1448 name on the item already carries a カミノヤシロ qualifier. This guard
+    matters for multi-name items (a shrine proposed as the site of several
+    Engishiki shrines, with >1 ojp-hani P1448): the ADD step seeds the item's
+    single top-level katakana onto each of those names, so the top-level is the
+    SOURCE for all of them. Removing it after only one name's add has landed
+    (QS runs in random order) would strand the names whose add hasn't run yet.
+    So we hold the top-level removal until none of the item's ojp-hani names is
+    still missing the qualifier — "add to both first, then remove top-level"
+    (Emma 2026-05-30).
 The modern (hiragana) top-level reading never matches and is left untouched.
 
 Output: kana_redundant_remove.txt
@@ -102,7 +112,16 @@ def main():
       ?st ps:P1448 ?on . FILTER(LANG(?on) = "{OJP}")
       ?st pq:P1814 ?done . FILTER(STRENDS(STR(?done), "{SUFFIX}"))
       OPTIONAL {{ ?st pq:P1814 ?sibling . FILTER(!STRENDS(STR(?sibling), "{SUFFIX}")) }}
-      OPTIONAL {{ ?item p:P1814 ?ts . ?ts ps:P1814 ?top . }}
+      OPTIONAL {{
+        ?item p:P1814 ?ts . ?ts ps:P1814 ?top .
+        # Only expose the top-level for removal once EVERY ojp-hani P1448 name on
+        # the item already carries a カミノヤシロ qualifier — i.e. no name still
+        # depends on this top-level as its add source. Guards the multi-name case.
+        FILTER NOT EXISTS {{
+          ?item p:P1448 ?st2 . ?st2 ps:P1448 ?on2 . FILTER(LANG(?on2) = "{OJP}")
+          FILTER NOT EXISTS {{ ?st2 pq:P1814 ?q2 . FILTER(STRENDS(STR(?q2), "{SUFFIX}")) }}
+        }}
+      }}
     }}
     """
     print("Querying REMOVE candidates (カミノヤシロ qualifier confirmed present)...")
