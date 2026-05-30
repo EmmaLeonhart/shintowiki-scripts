@@ -6,21 +6,21 @@ There are multiple spellings so this article will cover all of them
 
 == Kamo Shrine ([[:ja:加茂神社|加茂神社]]) ==
 === Tohoku ===
-* {{ill|Kamo Shrine (Osaki)|qid=Q135579623}} (Osaki City, Miyagi Prefecture)
-* {{ill|Kamo Shrine (Yamagata)|qid=Q135579624}} (Yamagata City, Yamagata Prefecture)
+* {{ill|Kamo Shrine (Osaki)|ja|加茂神社 (大崎市)|12=simple|13=User:Immanuelle/Kamo Shrine (Osaki)|ja_comment=jawiki link invalid|qid=Q135579623}} (Osaki City, Miyagi Prefecture)
+* {{ill|Kamo Shrine (Yamagata)|ja|加茂神社 (山形市)|12=simple|13=User:Immanuelle/Kamo Shrine (Yamagata)|ja_comment=jawiki link invalid|qid=Q135579624}} (Yamagata City, Yamagata Prefecture)
 
 === Kanto ===
-* {{ill|Kamo Shrine|ja|加茂神社 (那須烏山市)|qid=Q119929429}} (Nasukarasuyama, Tochigi Prefecture)
-* {{ill|Kamo Shrine (Saitama)|ja|加茂神社 (さいたま市)|qid=Q106301088}} (Saitama City, Saitama Prefecture)
-* {{ill|Kamo Shrine|ja|加茂神社 (鴨川市)|qid=Q28682038}} (Kamogawa City, Chiba Prefecture)
+* {{ill|Kamo Shrine|ja|加茂神社 (那須烏山市)|12=simple|13=User:Immanuelle/Kamo Shrine (Nasukarasuyama)|comment=changed title based on wikidata|qid=Q119929429}} (Nasukarasuyama, Tochigi Prefecture)
+* {{ill|Kamo Shrine (Saitama)|ja|加茂神社 (さいたま市)|12=simple|13=User:Immanuelle/Kamo Shrine (Saitama)|comment=changed title based on wikidata|qid=Q106301088}} (Saitama City, Saitama Prefecture)
+* {{ill|Kamo Shrine|ja|加茂神社 (鴨川市)|12=simple|13=User:Immanuelle/Kamo Shrine (Kamogawa)|comment=changed title based on wikidata|qid=Q28682038}} (Kamogawa City, Chiba Prefecture)
 * Kamo Shrine (Ichihara City, Chiba Prefecture, Kamo 2-5-2)
-* {{ill|Q134986894|ja|加茂神社 (小田原市)|qid=Q134986894}} (Odawara City, Kanagawa Prefecture)
+* {{ill|Q134986894|ja|加茂神社 (小田原市)|12=simple|13=User:Immanuelle/Kamo Shrine (Odawara)|comment=changed title based on wikidata|qid=Q134986894}} (Odawara City, Kanagawa Prefecture)
 
 === Chubu ===
-* {{ill|Kamo Shrine (Sado)|qid=Q135579625}} (Sado City, Niigata Prefecture)
-* {{ill|Kamo Shrine (Myoko)|qid=Q135579626}} (Myoko City, Niigata Prefecture)
-* {{ill|Kamo Shrine (Toyama)|qid=Q135579627}} (Toyama City, Toyama Prefecture)
-* {{ill|Kamo Shrine (Imizu)|ja|加茂神社 (射水市)|12=simple|13=User:Immanuelle/Kamo Shrine (Imizu)}} (Imizu City, Toyama Prefecture)
+* {{ill|Kamo Shrine (Sado)|ja|加茂神社 (佐渡市)|12=simple|13=User:Immanuelle/Kamo Shrine (Sado)|ja_comment=jawiki link invalid|qid=Q135579625}} (Sado City, Niigata Prefecture)
+* {{ill|Kamo Shrine (Myoko)|ja|加茂神社 (妙高市)|12=simple|13=User:Immanuelle/Kamo Shrine (Myoko)|ja_comment=jawiki link invalid|qid=Q135579626}} (Myoko City, Niigata Prefecture)
+* {{ill|Kamo Shrine (Toyama)|ja|加茂神社 (富山市)|12=simple|13=User:Immanuelle/Kamo Shrine (Toyama)|ja_comment=jawiki link invalid|qid=Q135579627}} (Toyama City, Toyama Prefecture)
+* {{ill|Kamo Shrine (Imizu)|ja|加茂神社 (射水市)}} (Imizu City, Toyama Prefecture)
 * {{ill|Kamo Shrine (Fukui)|ja|加茂神社 (福井市)|12=simple|13=User:Immanuelle/Kamo Shrine (Fukui)|ja_comment=jawiki link invalid|qid=Q135579628}} (Fukui City, Fukui Prefecture)
 * {{ill|Kamo Shrine (Obama)|ja|加茂神社 (小浜市)|12=simple|13=User:Immanuelle/Kamo Shrine (Obama)|ja_comment=jawiki link invalid|qid=Q135579629}} (Obama City, Fukui Prefecture)
 * {{ill|Kamo Shrine (Tabayama)|ja|加茂神社 (丹波山村)|12=simple|13=User:Immanuelle/Kamo Shrine (Tabayama)|ja_comment=jawiki link invalid|qid=Q135579630}} (Tabayama Village, Yamanashi Prefecture)
@@ -108,14 +108,14 @@ There are multiple spellings so this article will cover all of them
 * {{ill|Kamo shrines|en|Kamo shrines|qid=Q1306606|lt=Kamo Shrine (Kamo-sha)}} ({{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto}}, {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto City}}) - Another name for {{ill|Kamo shrines|en|Kamo shrines|qid=Q1306606|lt=Kamo Shrines}}, which collectively refers to {{ill|Kamigamo Shrine|en|Kamigamo Shrine|qid=Q700448|lt=Kamigamo Shrine}} and {{ill|Shimogamo Shrine|en|Shimogamo Shrine|qid=Q701620|lt=Shimogamo Shrine}}.
 * {{ill|Kamo Shrine (Tamaki)|ja|Kamo Shrine (Ise)|lt=Kamo Shrine (Ise)|lt=鴨神社 (玉城町)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Tamaki)|ja_comment=jawiki link invalid|qid=Q135579668}} ({{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture}}, {{ill|Tamaki, Mie|en|Tamaki, Mie|qid=Q587348|lt=Tamaki}}, Yamagami)
 * {{ill|Kamo Shrine (Q11675604)|ja|鴨神社 (高槻市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Takatuki)|comment=changed title based on wikidata|qid=Q11675604}} ({{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}, {{ill|Takatsuki|en|Takatsuki|qid=Q335423|lt=Takatuki}}, Akaōji-chō)
-* {{ill|Kamo Shrine (Kawanishi)|ja|鴨神社 (川西市)|qid=Q11675602|lt=Kamo Shrine}} ({{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, {{ill|Kawanishi, Hyōgo|en|Kawanishi, Hyōgo|qid=Q609350|lt=Kawanishi}}, Kamo)
+* {{ill|Kamo Shrine (Kawanishi)|ja|鴨神社 (川西市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Kawanishi)|comment=changed title based on wikidata|qid=Q11675602}} ({{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture}}, {{ill|Kawanishi, Hyōgo|en|Kawanishi, Hyōgo|qid=Q609350|lt=Kawanishi}}, Kamo)
 * {{ill|Kamo Shrine (Tamano)|ja|鴨神社 (玉野市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Tamano)|ja_comment=jawiki link invalid|qid=Q135579669}} ({{ill|Okayama Prefecture|en|Okayama Prefecture|qid=Q132936|lt=Okayama Prefecture}}, {{ill|Tamano|en|Tamano|qid=Q850335|lt=Tamano}}, Nagao)
 * {{ill|Kamo Shrine (Akaiwa)|ja|鴨神社 (赤磐市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Akaiwa)|ja_comment=jawiki link invalid|qid=Q135579670}} (Okayama Prefecture, {{ill|Akaiwa|en|Akaiwa|qid=Q415372|lt=Akaiwa}}, Nibori-nishi)
 * {{ill|Kamo Shrine (Asakuchi)|ja|鴨神社 (浅口市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Asakuchi)|ja_comment=jawiki link invalid|qid=Q135579671}} (Okayama Prefecture, {{ill|Asakuchi|en|Asakuchi|qid=Q990353|lt=Asakuchi}}, Kamogata-chō Kamo)
 * {{ill|Kamo Shrine (Kibichuo)|ja|鴨神社 (吉備中央町)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Kibichuo)|ja_comment=jawiki link invalid|qid=Q135579672}} (Okayama Prefecture, {{ill|Kibichūō|en|Kibichūō|qid=Q1156219|lt=Kibichuo}}, Kamikamo)
 * {{ill|Kamo Shrine (Sanyo-Onoda)|ja|鴨神社 (山陽小野田市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Sanyo-Onoda)|ja_comment=jawiki link invalid|qid=Q135579673}} ({{ill|Yamaguchi Prefecture|en|Yamaguchi Prefecture|qid=Q127264|lt=Yamaguchi Prefecture}}, {{ill|San'yō-Onoda|en|San'yō-Onoda|qid=Q861239|lt=Sanyo-Onoda}}, Asa)
 * {{ill|Kamo Shrine (Higashimiyoshi)|ja|鴨神社 (東みよし町)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Higashimiyoshi)|qid=Q135579674}} ({{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture}}, {{ill|Higashimiyoshi|en|Higashimiyoshi|qid=Q1206006|lt=Higashimiyoshi}}, Kamo)
-* {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)|lt=Kamo Shrine|lt_ja=鴨神社|12=simple|13=User:Immanuelle/Kamo Shrine (Sakaide)|comment=changed title based on wikidata|qid=Q11675600}} - An {{ill|Sanuki Province|en|Sanuki Province|qid=Q929682|lt=Ancient shrine of Sanuki Province}}. Theories of its location include {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)#東鴨神社|lt=Higashi Kamo Shrine|12=simple|13=User:Immanuelle/Higashi Kamo Shrine|comment=changed title based on wikidata|qid=Q11675600}} and {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)#西鴨神社|lt=Nishi Kamo Shrine|12=simple|13=User:Immanuelle/Nishi Kamo Shrine|comment=changed title based on wikidata|qid=Q11675600}} (both in {{ill|Sakaide, Kagawa|en|Sakaide, Kagawa|qid=Q855059|lt=Sakaide}}, Kamochō).
+* {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)|qid=Q11675600|lt=Kamo Shrine}} - An {{ill|Sanuki Province|ceb|Sanuki|cs|Provincie Sanuki|de|Provinz Sanuki|es|Provincia de Sanuki|fa|ولایت سانئوکی|fr|Province de Sanuki|gl|Provincia de Sanuki|id|Provinsi Sanuki|it|Sanuki (provincia)|ja|讃岐国|ko|사누키국|lt|Sanukio žemė|nl|Sanuki (provincie)|no|Sanukiprovinsen|pt|Província de Sanuki|ru|Сануки (провинция)|simple|Sanuki Province|sk|Sanuki (provincia)|sr|Провинција Сануки|tr|Sanuki (vilayet)|uk|Провінція Санукі|zh|讚岐國|zh_min_nan|Sanuki-kok|qid=Q929682|lt=Ancient shrine of Sanuki Province}}. Theories of its location include {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)|qid=Q11675600|lt=Higashi Kamo Shrine}} and {{ill|Kamo Shrine (Sakaide)|ja|鴨神社 (坂出市)|qid=Q11675600|lt=Nishi Kamo Shrine}} (both in {{ill|Sakaide, Kagawa|ar|ساكايدي (كاغاوا)|azb|ساکایده، کاقاوا|ca|Sakaide|ce|Сакаиде|ceb|Sakaidechō|de|Sakaide|el|Σακάιντε (Κάγκαουα)|es|Sakaide (Kagawa)|fa|ساکایده، کاگاوا|fi|Sakaide|fr|Sakaide|gl|Sakaide|hy|Սակաիդե|id|Sakaide, Kagawa|it|Sakaide|ja|坂出市|ko|사카이데시|mg|Sakaidechō|mzn|ساکایده، کاگاوا|nl|Sakaide|pl|Sakaide|pt|Sakaide|ro|Sakaide|ru|Сакаиде|simple|Sakaide, Kagawa|sv|Sakaide|tg|Сакаиде|tl|Sakaide, Kagawa|tr|Sakaide|tt|Сакаиде|uk|Сакаїде|ur|ساکائیڈے، کاگاوا|uz|Sakaide (Kagawa)|vi|Sakaide, Kagawa|war|Sakaide, Kagawa|zh|坂出市|zh_classical|坂出市|zh_min_nan|Sakaide-chhī|zh_yue|坂出|qid=Q855059|lt=Sakaide}}, Kamochō).
 
 == Related Articles ==
 
@@ -124,7 +124,7 @@ There are multiple spellings so this article will cover all of them
 
 {{translated page|ja|加茂神社|version=103715123|comment=Imported full ja history}}
 
-{{wikidata link|Q11398885|ja|加茂神社|ja|賀茂神社|ja|鴨神社|en|Kamo Shrines|check_date=2026-05-16}}
+{{wikidata link|Q11398885|ja|加茂神社|ja|賀茂神社|ja|鴨神社|en|Kamo Shrines|grok=none|check_date=2026-05-30}}
 [[Category:All disambiguation pages]]
 [[Category:Kamo Shrines]]
 [[Category:Shrine disambiguations]]
