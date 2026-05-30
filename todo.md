@@ -21,12 +21,7 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 - [ ] **Multiple `{{wikidata link}}` on one page.** Per-case review — usually a Wikidata disambiguation issue.
 - [ ] **`[[Category:Pages with duplicated content]]` + remaining `need_translation/` pages.** Mostly handled by the cloud-queue worker (`docs/remote_queue_pipeline.md`); manual review only for the hard cases — canonical-title choice / history merge, and the 9 large kokuzō articles. NEVER strip `[[Category:Need translation]]` without verifying the body is actually English (the sync deletes the file when the category goes).
 
-## Manual wiki actions (need sysop / human hands)
 
-- [ ] **Undelete `User:Immanuelle/common.js`** via Special:Undelete (bot can't restore another user's JS — `customjsprotected`). Then remove the `undelete_immanuelle_common_js.py` kludges. The `history_offload` guard (ns 2/3/8/9 + `.js`/`.css`/`.json`) prevents re-deletion.
-- [ ] **Audit other deleted user JS/CSS/JSON pages.** Walk Special:Log/delete (ns 2,3, EmmaBot) for pre-guard delete-without-recreate; undelete any found.
-- [ ] **`Template:Talk page header`** — edit to fit migrated/transformed talk pages.
-- [ ] **Special:WantedPages / Special:WantedTemplates** — decide what to do (deferred until the category pipeline is solid).
 
 ## Wikidata (social / high-care — respect the freeze to 2026-06-06; QuickStatements pipeline only)
 
