@@ -1,285 +1,33 @@
 # Todo
 
-Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG.md](DEVLOG.md). See [VISION.md](docs/VISION.md) for the broader architecture plan.
+Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work is in [queue.md](queue.md); finished work + history in [DEVLOG.md](DEVLOG.md); how the pipelines/orchestrators work lives in [CLAUDE.md](CLAUDE.md) and `docs/` (e.g. `docs/remote_queue_pipeline.md`). Reference/narrative and completed/dropped items do NOT belong here.
 
----
+## Scheduled reminders
 
-## Audit: which pre-orchestrator legacy scripts are actually running?
+- [ ] **July 2026 — audit terminating cleanup scripts.** Confirm these are inert (state covers every eligible page → no edits), then remove from `wiki-cleanup.yml` + delete: `reimport_from_enwiki.py`, `migrate_talk_pages.py`, `normalize_category_pages.py` (Sun), `remove_legacy_cat_templates.py` (monthly). Overlaps with the legacy-script audit below.
+- [ ] **2027-05-23 — proposed-label drip-feed flips 20/day → ALL.** Automatic in `modern-quickstatements/select_label_proposals.py` (`RAMP_DATE`). Reminder only; if community feedback says the ~965k proposals need rework, fix the generators (or push `RAMP_DATE`) before the flip.
 
-Do a light audit of the legacy (pre-orchestrator) scripts still wired into the
-workflows. **Expectation: most are fine and should stay** — they run frequently or
-have good reasons to, and many deliberately have NO `.state` file because they rely
-on the live state of the wiki (Special: pages, category membership) and do that
-very effectively. The audit is just to confirm which still do useful work vs. which
-have genuinely gone inert, not a delete-spree. (We kept these un-optimised because
-they predate the orchestrator and didn't need porting.) Catalogue each: does it
-still produce edits, what's its trigger, is it wiki-state-driven (keep) or truly
-done (candidate to retire)?
+## Repo / script tasks
 
-## Current session work
+- [ ] **Audit which pre-orchestrator legacy scripts still run.** Most should stay — they run frequently or are wiki-state-driven (no `.state` file, by design). Catalogue each script wired into the workflows: still producing edits? trigger? wiki-state-driven (keep) vs genuinely inert (retire). Not a delete-spree — a confirmation pass.
+- [ ] **`populate_namespace_layers.py` → `ops/namespace_layers.py`.** Mainspace-only op creating/editing sibling Data:/Export: pages; `HANDLES_SAVE = True`. Blocked on wiki-side namespace creation.
 
-Active work queue lives in [queue.md](queue.md) (queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
+## Wiki content tasks (manual / human review)
 
-## Reference: the remote-queue / cloud-Claude cleanup pipeline (how it works, what went wrong, how to debug)
+- [ ] **ILLs without `WD=` / "Unknown" targets.** Fill missing `WD=` via `fix_ill_destinations.py`; check each context, don't blind-overwrite. Includes the Shikinaisha pages whose ILLs point at "Unknown".
+- [ ] **Duplicate QID disambiguation pages** (~621 `Q{QID}` pages → 2+ categories). `resolve_double_category_qids.py` auto-handles same-target cases (in the cleanup loop); genuinely-different-target ones need human review. Also `[[Category:duplicated qid category redirects]]`.
+- [ ] **Translate category names in `[[Category:Japanese language category names]]`** → canonical English titles; review the post-audit leftovers there for any remaining automated cleanup.
+- [ ] **Categories with interwikis but no `{{wikidata link}}`.** Re-run the wikidata-link resolution on these (older passes added interwikis without the template).
+- [ ] **Multiple `{{wikidata link}}` on one page.** Per-case review — usually a Wikidata disambiguation issue.
+- [ ] **`[[Category:Pages with duplicated content]]` + remaining `need_translation/` pages.** Mostly handled by the cloud-queue worker (`docs/remote_queue_pipeline.md`); manual review only for the hard cases — canonical-title choice / history merge, and the 9 large kokuzō articles. NEVER strip `[[Category:Need translation]]` without verifying the body is actually English (the sync deletes the file when the category goes).
 
-**The whole idea.** A Python script reads the *actual current content* of the wiki (mirrored into the repo) and emits a worklist; a cloud-Claude routine fixes a few items each day; the sync pushes the fixes back to the wiki. As the wiki changes, the worklist regenerates itself. **There is no cursor and no hand-maintained state — "needs work" is defined purely by what's in the files.**
+## Manual wiki actions (need sysop / human hands)
 
-**The pieces, end to end:**
-1. **Repo⟷wiki sync** (`shinto_miraheze/sync_*.py`, run by `wiki-cleanup.yml`): keeps `duplicated_content/`, `need_translation/`, `fandom_unique/`, `miraheze_unique/` mirrored with the matching wiki categories. Conflict policy: **wiki wins** for the cloud-queue dirs (`duplicated_content`, `need_translation`); **repo wins** for the long-term template syncs (`git_synced`, `fandom_unique`, `miraheze_unique`). When a file loses its gating category, the sync pushes it to the wiki and **deletes the local file** (that's "done").
-2. **Queue generator** (`remote_queue.py`, run daily by `build-remote-queue.yml`): scans those dirs and writes `remote_queue.json` = a list of `{file, category, instruction}`. It **shuffles**, and for `duplicated_content` it only lists files that still carry `[[Category:Pages with duplicated content]]`. So the queue is always "what still needs work, in random order."
-3. **The cloud worker** = claude.ai routine **"Drain remote_queue.json (5 random/day)"** (`trig_013F9aeKeL3hx8zo7weKj3Ed`, Sonnet, daily): picks **5 random** items, applies each item's `instruction` to the file (merge duplicated paragraphs / translate Japanese / strip fandom templates), removes the gating category when genuinely done, commits with `[skip ci]`. No cursor.
+- [ ] **Undelete `User:Immanuelle/common.js`** via Special:Undelete (bot can't restore another user's JS — `customjsprotected`). Then remove the `undelete_immanuelle_common_js.py` kludges. The `history_offload` guard (ns 2/3/8/9 + `.js`/`.css`/`.json`) prevents re-deletion.
+- [ ] **Audit other deleted user JS/CSS/JSON pages.** Walk Special:Log/delete (ns 2,3, EmmaBot) for pre-guard delete-without-recreate; undelete any found.
+- [ ] **`Template:Talk page header`** — edit to fit migrated/transformed talk pages.
+- [ ] **Special:WantedPages / Special:WantedTemplates** — decide what to do (deferred until the category pipeline is solid).
 
-**What went wrong (all fixed 2026-05-23 — keep as the failure-mode catalogue):**
-- **Wrong concept of "duplicated content."** The instruction told the worker to "drop autogenerated boilerplate / dedupe prose," so it stripped duplicate *infobox parameters* instead of MERGING the macro-scale whole-body paragraph duplication (the same article copied 2–3×, often under `==Accidentally Overwritten Content==` / `==merged content==`). Fixed: rewrote `DUPLICATED_CONTENT_INSTRUCTION`.
-- **The cursor.** The old routine walked a counter (`consume_remote_queue.state`) in order through the static queue and never revisited — so files fixed-but-not-yet-synced were skipped forever, and ~105 items got "done" with the wrong instruction. Fixed: rewrote the routine to pick 5 random, no cursor.
-- **Sync jam.** Every dup page showed as a conflict (both wiki and repo had changed since the last baseline), so the conservative "skip on conflict" left all 134 unsynced — the worker's edits never reached the wiki. Fixed: conflict policy → wiki-wins (pull) for the cloud-queue dirs.
+## Wikidata (social / high-care — respect the freeze to 2026-06-06; QuickStatements pipeline only)
 
-**How to analyze it when it misbehaves:**
-- *The worker:* `RemoteTrigger {action:"get", trigger_id:"trig_013F9aeKeL3hx8zo7weKj3Ed"}` (or claude.ai/code/routines) — check prompt, cron, model, `last_fired_at`. Its commits: `git log --grep="remote-queue"`.
-- *The queue:* open `remote_queue.json` (`item_count`, per-category counts). Regenerate logic is `remote_queue.py`; its workflow is `build-remote-queue.yml`.
-- *The sync:* on a `cleanup-loop` run, view the `cleanup` job log and grep the `sync_duplicated_content` / `sync_need_translation` step for `PULL` / `PUSH` / `CONFLICT` / `Deleted local` counts. Baselines live in `shinto_miraheze/sync_*.state`.
-- *Did a fix reach the wiki?* Check the page history on shinto.miraheze.org. Or check presence: if `duplicated_content/<title>.wiki` is **gone**, it synced + drained; if it's still there **with** the category, it's still queued; still there **without** the category = fixed locally but not yet pushed (look at why the sync hasn't pushed it — usually a conflict or the sync step erroring).
-
-## Postponed (moved from queue.md 2026-05-08)
-
-- [ ] **Recreate deleted Wikidata items via per-page orchestrator op** — a batch of items created for ILL targets were deleted by another editor on Wikidata. The orchestrator's `deleted_qids_in_ill` op already detects this case (rewrites the stale QID to `qid=DELETED_QID` on the page and tags `[[Category:Pages with deleted QID in ill template]]`). Next step: build either (a) a new orchestrator op `recreate_deleted_qids.py` that, per page, gathers context (page title, en label from page name, P31 type inference from category membership, P11250 = `shinto:<title>`) and submits `wbeditentity` CREATE + claims via the Wikidata API; or (b) a cleanup-loop script `generate_recreate_quickstatements.py` that walks the tagged-pages category and renders a `QuickStatements/recreate-deleted` page with `CREATE` / `LAST|P11250|"shinto:..."` blocks for the user to review and submit through the existing QS pipeline. (b) is lower-risk — avoids needing Wikidata-side bot credentials and lets a human gate notability before submission. Both paths require defining what minimum claim set will avoid re-deletion (without strong sourcing the new items will get deleted again — which was the original problem).
-- [ ] **Translate the remaining ~187 untranslated `need_translation/` files** (most are done; remainder postponed). Blocked on history_offload completion for those pages — translating first would force the archive + revdel step to re-archive a longer history than necessary. See the more detailed entry under "Requires manual intervention" below for the prioritized list.
-- [ ] **ILLs without `WD=`** — see the duplicate entry under Wiki content tasks > High priority. (Deferred — lower priority than the active queue.)
-- [ ] **Retrofit `populate_namespace_layers.py` → `ops/namespace_layers.py`** — mainspace only; creates/edits sibling pages in Data:/Export: namespaces; `HANDLES_SAVE = True`. Blocked on the wiki-side namespace creation.
-
-## Scheduled — 2027-05-23: label drip-feed opens fully
-
-- [ ] **Proposed-label drip-feed jumps from 20/day to ALL.** `modern-quickstatements/select_label_proposals.py` emits 20 random proposed labels/day from the `shinto-label-generator/` subtree until `RAMP_DATE = 2027-05-23`, then automatically switches to emitting the entire pool (~965k across 19 languages). The slow first year is deliberate — time to see community feedback and adjust the proposals before they go out en masse. This is already coded (the ramp is automatic); this entry is just the reminder of when it flips. If feedback early on says the proposals need rework, fix the generators (or push RAMP_DATE out) before the flip.
-
-## Scheduled review — July 2026
-
-- [ ] **Audit terminating cleanup scripts** — all per-page "cycling" operations have been moved into the three namespace orchestrators (`mainspace_orchestrator.py`, `category_orchestrator.py`, `template_orchestrator.py`). The following scripts in `wiki-cleanup.yml` are **terminating** — they have state files but don't reset at the end of a sweep, so once their state covers every eligible page they simply do nothing on subsequent runs. In July 2026, check each one's state/log to confirm it has stopped producing edits; if so, remove the step from `wiki-cleanup.yml` and delete the script:
-  - `reimport_from_enwiki.py` (input-file driven; state shows it is already effectively complete)
-  - `migrate_talk_pages.py`
-  - `normalize_category_pages.py` (Sunday only)
-  - `remove_legacy_cat_templates.py` (monthly)
-
-## Bot ping-pong / never-settling pages (emerging concern — 2026-05-26)
-
-### Emma's specific theory (2026-05-26, follow-up)
-
-> "There's a page churn thing that's visible only on the wiki and it's also
-> related to the git_synced pages but I think it works a bit differently … the
-> git_synced pages get kind of clobbered and then restored … I think there's
-> a simple thing: git syncing should be the first thing that occurs on the
-> wiki. The first thing on the wiki should be git syncing. Any edits should
-> happen after it."
-
-Concretely, the theory:
-
-1. **Sync runs in the wrong order.** `sync_git_synced_pages.py` is currently
-   sequenced AFTER the orchestrator ops in `cleanup-loop.yml`. So an
-   orchestrator op edits a page on the wiki, then the sync pushes the
-   stale repo `.wiki` over the top — clobbering the wiki-side edit.
-2. **Conflict resolution should be revision-aware, not "repo wins" /
-   "wiki wins" by static policy.** Emma's stated rule (which she's not
-   sure we're implementing): *whichever side is further ahead in
-   revisions is the one that copies over the other.* Ties broken
-   per-directory (different rule per sync dir).
-
-### Likely concrete fixes
-
-* **Re-sequence `cleanup-loop.yml`** so all `sync_*` steps run BEFORE
-  the orchestrator + before any other write-to-wiki step. The wiki
-  state at the start of any orchestrator cycle should already be the
-  desired state per the repo.
-* **Change conflict-resolution in the sync scripts** from the current
-  static policy (`feedback_sync_conflict_policy.md`: wiki-wins for
-  dup-content + need_translation; repo-wins for git_synced + fandom_unique
-  + miraheze_unique) to a revision-aware compare:
-  * pull each side's most recent revid / file mtime
-  * whichever is further ahead wins
-  * tie-break per directory (Emma to specify)
-* The existing static policy stays as the tie-break fallback (or as the
-  per-directory tie-break rule).
-
-### Original framing (kept for context)
-
-Some pages are getting edited in **rapid succession** by two competing
-processes — Emma originally called them "the git sync and the other
-thing" — and the result is that those pages never actually reach a
-settled state. One bot's edit is reverted by the other; the second bot
-then re-applies; the first bot reverts again; and so on. The pages are
-stuck in a churn loop.
-
-We don't yet know the exact pair of processes involved (or whether it's more
-than one pair). The likely suspects:
-
-- **`sync_git_synced_pages.py` (repo-wins)** pushing a stale `.wiki` file back
-  to the wiki, undoing whatever an orchestrator op just normalised on the wiki
-  side. Repo-wins is correct policy for `git_synced/` per
-  `feedback_sync_conflict_policy.md`, but it means orchestrator changes on the
-  wiki get clobbered if the repo file hasn't been refreshed first.
-- **An orchestrator op + a legacy `wiki-cleanup.yml` script** both touching
-  the same page with mutually-incompatible normalizations.
-- **Two orchestrator ops disagreeing** about the same fragment (e.g. one adds
-  a tag the other strips, or one collapses a template form the other expands).
-- Less likely but possible: a sync's "wiki-wins" pull replacing locally-edited
-  content that a worker just produced before the worker can commit.
-
-What this section is NOT: a discrete task with a known fix. We do not yet know
-how to repair this. **Priority is high** — pages that never converge are net
-churn (wiki edits, CI time, server load against the §"Server load" budget) for
-zero forward progress.
-
-**First step when someone picks this up:** identify the actual churn-pair(s).
-A short diagnostic — pull each page's recent history from the shinto.miraheze
-API, find pages where two bot accounts (or the same bot via two scripts) are
-alternating, list them, and group by which two ops/scripts are in the loop.
-That tells you which two pieces of code need to agree on the canonical form,
-which is the real fix. Pure "make script X stop" responses risk regressing
-the legitimate work each side is doing.
-
-## Server load (emerging concern — 2026-04-18)
-
-Miraheze has raised server-load concerns. All scripts should minimize read/write volume against `shinto.miraheze.org`:
-- Prefer running stateful scripts at their existing `--max-edits` caps; do not bump caps without reason.
-- Do not add new loops that walk full namespaces unless there is a dedicated reason and a state file to bound per-run work.
-- SPARQL/Wikidata-side bail-on-429 policy (2026-03-28) remains in force; some generators use exponential backoff (2026-03-29) only when strictly necessary.
-- Before adding a new automated step to `wiki-cleanup.yml`, justify it against this constraint.
-
-## Automation boundary
-
-The GitHub Actions pipeline (8 reusable workflows orchestrated by `.github/workflows/cleanup-loop.yml`, runs daily + on push) handles everything that can be scripted safely and repeatably. State files are committed incrementally after each chunk (Import & Categorization, Structural Fixes, Wikidata, Final Core, Cleanup Loop, Deprecated) so progress is not lost if a later chunk fails. After the wiki cleanup, QuickStatements are submitted to Wikidata, P459 qualifiers are applied via direct API, and a run history page is rebuilt. **Everything outside the loop requires manual intervention.** The remaining open tasks all require human judgment, prereq work, or infrastructure that does not yet exist.
-
-Dashboard: [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/) — includes [run history](https://emmaleonhart.github.io/shintowiki-scripts/runs.html) for QS submissions.
-
-**429 policy (as of 2026-03-28):** All scripts that hit Wikidata (SPARQL or API) bail immediately on HTTP 429 — no retries. This avoids worsening rate-limit situations. Check CI logs for `RateLimitError` if a step fails unexpectedly.
-
-### Currently automated (cleanup loop)
-
-These run automatically every 24 hours via GitHub Actions. No manual action needed unless something breaks.
-
-**Bookkeeping** (start & end of loop):
-- **Bot userpage status** — `update_bot_userpage_status.py`: marks workflow active at start, inactive at end, and updates `User:EmmaBot` with run metadata.
-
-**Core Loop** (structural changes that later scripts depend on):
-- **Enwiki XML reimport** — `reimport_from_enwiki.py`: downloads XML export from enwiki (with templates, current revision) and reimports into shintowiki with mangled timestamps to force overwrite. Fixes erroneous transclusions by pulling the full dependency tree. Processes 10 pages per run from `erroneous_transclusion_pages.txt`. Failed imports are logged to `reimport_from_enwiki.errors`. **Current state:** all 17 pages in the current list have been processed (state file complete). Remaining pages are all Module doc pages that cause CI hangs — these were manually imported locally. The script will idle until new pages are added to the list.
-- **Wanted category creation** — `create_wanted_categories.py`: fetches Special:WantedCategories via API and creates stub pages tagged `[[Category:Categories autocreated by EmmaBot]]`.
-- **Uncategorized category fix** — `categorize_uncategorized_categories.py`: adds `[[Category:Categories autocreated by EmmaBot]]` to category pages from Special:UncategorizedCategories that were created in earlier bulk workflows without proper categorization.
-- **EmmaBot category triage (enwiki)** — `triage_emmabot_categories.py`: checks autocreated categories against enwiki; moves to `[[Category:Emmabot categories with enwiki]]` or `[[Category:Emmabot categories without enwiki]]` (100 per run).
-- **EmmaBot category triage (jawiki)** — `triage_emmabot_categories_jawiki.py`: second pass on without-enwiki categories; checks jawiki; moves to `[[Category:Emmabot categories with jawiki]]` or `[[Category:Emmabot categories without enwiki or jawiki]]` (100 per run).
-- **EmmaBot category triage (secondary)** — `triage_emmabot_categories_secondary.py`: third pass on remaining categories using additional heuristics.
-- **Triage single-member categories** — `triage_secondary_single_member.py`: walks `[[Category:Secondary category triage]]` and moves categories with exactly one member into `[[Category:Triaged categories with only one member]]`.
-- **Unused template deletion** — `delete_unused_templates.py`: deletes template pages from Special:UnusedTemplates.
-- **Double redirect fixes** — `fix_double_redirects.py`: fixes pages listed on Special:DoubleRedirects.
-- **Resolve double category QIDs** — `resolve_double_category_qids.py`: walks `[[Category:Double category qids]]` disambiguation pages; when all listed categories resolve to the same final target (one is a redirect to the other), replaces the disambiguation page with a simple redirect. Part of a multi-step cleanup of duplicate QID disambiguation pages. 100 per run.
-- **P11250 QuickStatements** — `generate_p11250_quickstatements.py`: walks direct members of `[[Category:Pages linked to Wikidata]]`, checks Wikidata P11250, and adds QuickStatements lines to `[[QuickStatements/P11250]]` for items missing the property. Stateful, 300 per run. Has retry logic with automatic 429 termination and error logging to `error.log`.
-- **Tag pages without wikidata** — `tag_pages_without_wikidata.py`: walks all pages in mainspace, category space, and template space; tags pages lacking `{{wikidata link}}` with `[[Category:Pages without wikidata]]`. Stateful, 300 pages *checked* per run (not 300 edited — bounds runtime regardless of hit rate).
-- **Clean P11250 QuickStatements** — `clean_p11250_quickstatements.py`: reads `[[QuickStatements/P11250]]`, checks each line against Wikidata, and removes lines where the item now has the correct P11250 value. 300 checks per run.
-- **Clean wikidata category redirects** — `clean_wikidata_cat_redirects.py`: cleans up wikidata-related category redirects. 300 per run.
-- **Fix noinclude on templates** — `fix_template_noinclude.py`: finds templates with `[[Category:` or `{{wikidata link` outside `<noinclude>` blocks and wraps them properly. Tags fixed templates with `[[Category:Templates fixed with noinclude]]`. 100 per run.
-- **Categorize uncategorized pages** — `categorize_uncategorized_pages.py`: fetches `Special:UncategorizedPages` and tags them with `[[Category:Uncategorized pages]]`. 100 per run.
-- **Tag untranslated Japanese content** — `tag_untranslated_japanese.py`: walks all mainspace pages and detects significant Japanese text (hiragana, katakana, CJK ideographs) outside of templates, interwiki links, refs, and other expected contexts. Tags pages with `[[Category:Pages with untranslated japanese content]]`. 100 pages checked per run. Prerequisite for the namespace layer work.
-
-**Cleanup Loop** (category cleanup + talk pages):
-- **Unused category deletion** — `delete_unused_categories.py`: deletes Special:UnusedCategories pages, skipping any with `{{Possibly empty category}}`.
-- **Orphaned talk page deletion** — `delete_orphaned_talk_pages.py`: deletes talk pages from Special:OrphanedTalkPages whose subject page does not exist.
-- **Talk page migration** — `migrate_talk_pages.py`: rebuilds talk pages and seeds them with discussion content from ja/en/simple Wikipedia. State file: `shinto_miraheze/migrate_talk_pages.state`.
-- **Broken redirect deletion** — `delete_broken_redirects.py`: deletes redirects from Special:BrokenRedirects whose target page does not exist.
-- **Crud category cleanup** — `remove_crud_categories.py`: strips `[[Category:X]]` tags from member pages across all subcategories of Category:Crud_categories.
-
-**Wikidata (QuickStatements + direct API)**:
-- **P11250 Miraheze links** — `fetch_p11250_from_wiki.py` + `submit_daily_batch.py`: fetches P11250 QS lines from `[[QuickStatements/P11250]]` wiki page and submits via QuickStatements API.
-- **P958 qualifiers** — `generate_p958_qualifiers.py` + `submit_daily_batch.py`: generates and submits P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) via QuickStatements API. Bails immediately on 429 (as of 2026-03-28).
-- **P459 qualifiers** — `test_wikidata_qualifier.py`: applies P459 (determination method) qualifiers to P13723 (shrine ranking) statements via direct Wikidata API. 100 edits per run. ~244 remaining as of 2026-03-26 — should complete within a few days. Bails immediately on 429 (as of 2026-03-28).
-
-**Temporary** (remove after completion):
-- **Shrine ranking page creation** — `create_shrine_ranking_pages.py`: creates article pages for subcategories of `[[Category:Shrine rankings needing pages]]`. Remove from workflow after all 21 pages exist (5 already existed, 16 to create).
-
-### Temporary / one-off re-bucketing tasks
-
-- [ ] **AI translation pipeline on high-bucket pages** — Once re-bucketing is done, use the highest buckets (1000+, 2000+, etc.) to identify pages that are essentially untranslated. Run an AI translation agent against these. Also cross-reference with [[Category:Secondary category triage]] for prioritization. Blocked on re-bucketing completing first.
-
-(Previously here: "Strip untranslated character-count categories from already-translated pages" — done, ported to `shinto_miraheze/orchestrators/ops/strip_char_count_cats.py` and running per mainspace orchestrator sweep.)
-
-### Requires manual intervention
-
-- [ ] **Template:Talk page header** — Edit this template so that it fits all requirements for migrated/transformed talk pages.
-- [ ] **Translate the remaining untranslated `need_translation/` pages.** As of 2026-05-10, ~187 files still carry `[[Category:Need translation]]` (down from 215 after the recent verified-English-bodied cleanup pass in commits 629e581, 36bf0a3, 5f82924, 98c086f, a98113a). Nine large kokuzo articles are the priority: `国造.wiki` (8669 CJK), `无邪志国造.wiki` (5141), `出雲国造.wiki` (4527), `千葉国造.wiki` (1763), `尾張国造.wiki` (1640), `倭国造.wiki` (1346), `廬原国造.wiki` (982), `斐陀国造.wiki` (854), `伊勢国造.wiki` (841). 83 files are shrine pages with `== Japanese Wikipedia content ==` sections (auto-generated English top + Japanese body). Translate using `{{ill|English|ja|Japanese|lt=Display|lt_ja=Japanese Display}}` per `feedback_translation_link_rules.md` in memory. Never remove `[[Category:Need translation]]` without verifying the body is actually English — CI deletes the file from the repo when the category is gone.
-  - **Prerequisite — do NOT start this until history offloading is complete for these pages.** The `history_offload` op (running across all four orchestrators, gated on `ENABLE_HISTORY_OFFLOAD=1` in cleanup-loop.yml) needs to have archived and truncated the revision history of each candidate page before translation-driven edits pile new revisions on top. Translating first would force the archive + revdel step to re-archive a longer history than necessary and dilutes the "converge to one surviving revision" property described in `ops/history_offload.py`. Check `shinto_miraheze/orchestrators/duplicate_qids.state` and the archive repo to confirm coverage before unblocking this task.
-- [ ] **Enrich autocreated categories** — Write a script to add meaningful content (interwikis, wikidata links, parent categories) to pages in `Category:Categories autocreated by EmmaBot` that were created as stubs.
-- [ ] **Special:WantedPages and Special:WantedTemplates** — Planning to do something with these eventually, but not sure what yet. Waiting until the category pipeline is solid before tackling.
-
----
-
-## Wiki content tasks (on shintowiki)
-
-All items below require manual editing or human review. None have a safe automated path right now.
-
-### High priority
-
-- [ ] **ILLs without `WD=`** — ILL templates missing a `WD=` parameter are broken by design. Run `fix_ill_destinations.py` or a new script to identify and fill in missing `WD=` values. Do not blindly overwrite — check the local context of each.
-- [ ] **Duplicate QID disambiguation pages** — 621 `Q{QID}` mainspace pages point to 2+ categories. Multi-step cleanup in progress: (1) `resolve_double_category_qids.py` now automates the easy cases where all listed categories resolve to the same target (now in cleanup loop). (2) Remaining pages where categories point to genuinely different targets still need human review. Also applies to `[[Category:duplicated qid category redirects]]`.
-- [ ] **Translate all category names in [Category:Japanese language category names](https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names)** — ensure every category in this tracking set is migrated to a canonical English category title.
-- [ ] **[Category:Pages with duplicated content](https://shinto.miraheze.org/wiki/Category:Pages_with_duplicated_content)** — pages where the same content exists under multiple titles. Needs human review per page: which title is canonical, whether a history merge is appropriate.
-- [ ] **Review post-audit leftovers** - many entries in https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names appear to be downstream artifacts; verify whether any automated cleanup is still needed.
-
-### Lower priority
-
-- [ ] **Recreate `Category:Categories_missing_wikidata`** — the original category was not accurately applied and was cleaned out as a crud category. Needs to be recreated with accurate membership, then split into two typed subcategories: (1) categories missing interwikis entirely, and (2) categories with valid interwikis but no Wikidata link yet.
-- [ ] **Categories with interwikis but no Wikidata link added** — older script passes added interwiki links without adding the `{{wikidata link}}` template. Re-run the wikidata link script on these.
-- [ ] **Multiple `{{wikidata link}}` on one page** — usually indicates a Wikidata disambiguation issue. Needs per-case review.
-- [ ] **Shikinaisha pages with broken ILL destinations** — ILLs pointing to "Unknown" as target from early workflow. Most are identifiable from context; fix with `fix_ill_destinations.py` pass.
----
-
-## Repository / script tasks
-
-### Rewrite fandom Infobox templates as Portable Infoboxes — DROPPED 2026-05-28
-
-Per Emma ([[Open questions]], 2026-05-28): not bot work, dropped. Articles already
-render readably without the side panel thanks to `cleanup_fandom_pages.py` (which
-strips the `{{ill}}`/`{{wikidata link}}`/`{{shortdesc}}` that would otherwise error).
-
-### history_offload delete-without-recreate on JS/CSS pages — root cause + fix (2026-05-02 → 2026-05-03)
-
-**Root cause confirmed (2026-05-03)**: ``User:Immanuelle/common.js`` ended up deleted because ``history_offload`` ran its delete + recreate cycle on it. ``page.delete()`` succeeded (EmmaBot has the ``delete`` right), but the recreate step would have failed regardless of whether the wikitext banner corrupted the JS content model — MediaWiki rejects edits to other users' personal JS with API code ``customjsprotected``, since EmmaBot doesn't hold the ``edituserjs`` right. Same applies to user CSS / JSON (``editusercss`` / ``edituserjson``) and to MediaWiki:-namespace JS / CSS (``editsitejs`` / ``editsitecss``).
-
-**Fix shipped (2026-05-03)**: ``history_offload.py`` now refuses these pages outright — ``ns in (2, 3, 8, 9)`` AND title ending in ``.js``/``.css``/``.json``. The op returns "skipped: protected user/interface JS/CSS/JSON page" without making the destructive delete call. New pages won't end up in this state. ``undelete_immanuelle_common_js.py`` also catches the ``customjsprotected`` API error and treats it as a soft failure (logs loudly, exits 0) so the cleanup-loop step doesn't go red on every cycle.
-
-- [ ] **Manually undelete `User:Immanuelle/common.js` on shinto.miraheze.org via Special:Undelete.** This needs steward / sysop hands — the bot can't restore a JS page belonging to another user. After it's restored, the kludges (`undelete_immanuelle_common_js.py` step in `wiki-cleanup.yml`, undelete step in `import-templates-to-fandom.yml`, the script itself) can be removed; the history_offload guard above prevents re-deletion.
-- [ ] **Audit other deleted JS/CSS user pages** — if the same delete-without-recreate hit any of the existing User-namespace JS/CSS pages on shinto.miraheze.org before the guard landed, they'll need the same manual undelete. Walk Special:Log/delete filtered to ns=2,3 and look for ``.js``/``.css``/``.json`` titles deleted by EmmaBot.
-
-### Drop state files from the wiki↔repo sync scripts — Emma approved safe redesign 2026-05-28
-
-Active build spec in `queue.md` (§"Sync `.state`-file removal — SAFE REDESIGN").
-Emma said "do it now" and chose the durable-baseline redesign — embed the baseline in
-push edit summaries + reconstruct pull baselines from content — over the naive
-git-history derivation, which the 2026-05-28 investigation found unsafe (it reintroduces
-the 2026-05-10 / 2026-05-27 mass-deletion failure modes; the `.state` file is a cheap
-memoized cross-system merge-base, not redundant with git). Reserved for an attended,
-CI-verified session (NOT the unattended cron). Full rationale: DEVLOG 2026-05-28.
-
-### Secret removal — DONE (Emma confirmed 2026-05-30)
-
-The git-history secret rewrite was completed months ago: all secrets originally
-hard-coded in the (then-private) repo were rotated out and redacted throughout
-history before the repo was made public, then GitHub Actions creds replaced them.
-Nothing leaked (never public with live secrets). No secret-bearing scripts remain
-in the working tree (verified 2026-05-30: grep for "redacted secret"/"secret
-redacted" finds only doc references; the old hand-run scripts were already
-deleted). `docs/API.md`'s example was updated off the `[REDACTED_SECRET_1]`
-placeholder to the `os.getenv("WIKI_PASSWORD", "")` pattern.
-
----
-
-## Known external issues
-
-- [ ] **Wikidata item deletions** — a batch of Wikidata items created by an earlier script (for interlanguage link targets) were deleted by another editor on Wikidata. The deletions happened without opportunity to contest or add supplementary content that might have justified keeping them. Need to assess scope (which items were deleted, whether they can be re-created with stronger sourcing) and develop a strategy for re-creation or working around the missing QIDs.
-
----
-
-## Longer term (architecture) — retired 2026-05-28
-
-Per Emma ([[Open questions]], 2026-05-28): the VISION.md architecture program is no
-longer happening. Dropped: namespace restructure (`Data:`/`Meta:`/`Export:`),
-`{{ill}}`→`Export:` data move, category-name standardization, Pramana integration,
-and the change-tracking bot. The one exception — the **automated translation
-pipeline — already exists**: the cloud-queue worker that drains `remote_queue.json`
-translates `need_translation/` pages (see the remote-queue reference section above).
-`docs/VISION.md` retains the historical plan.
+- [ ] **Recreate deleted Wikidata items.** A batch of ILL-target items were deleted by another editor. Build `generate_recreate_quickstatements.py`: walk `[[Category:Pages with deleted QID in ill template]]`, render `CREATE` + `P11250|"shinto:..."` blocks for human review via the existing QS pipeline. Define a minimum claim set that won't get re-deleted (the original failure). Lower-risk than a direct-API recreator; human-gates notability.
