@@ -243,19 +243,16 @@ the 2026-05-10 / 2026-05-27 mass-deletion failure modes; the `.state` file is a 
 memoized cross-system merge-base, not redundant with git). Reserved for an attended,
 CI-verified session (NOT the unattended cron). Full rationale: DEVLOG 2026-05-28.
 
-### Secret removal (run soon, before open-source release)
+### Secret removal — DONE (Emma confirmed 2026-05-30)
 
-- [ ] **Rotate exposed credentials first** — treat any historical plaintext credentials as compromised and rotate them before/alongside history rewrite.
-- [ ] **Rewrite git history to remove sensitive literals while preserving commit history structure** — use `git filter-repo --replace-text` (do not run yet until branch/backup plan is ready).
-- [ ] **Target literals for replacement** — currently identified examples include:
-  - `[REDACTED_SECRET_1]`
-  - `[REDACTED_SECRET_2]`
-  - `[REDACTED_USER_1]`
-- [ ] **Prepare replacements file and perform dry planning review** — confirm exact replacement tokens and scope before execution.
-- [ ] **Execute rewrite in one controlled maintenance window** — run once, verify with repo-wide search, then force-push branches/tags.
-- [ ] **Coordinate downstream clone reset** — after rewrite, collaborators must re-clone or hard-reset because commit SHAs will change.
-- [ ] **Post-rewrite verification** — search entire repo history and working tree to confirm sensitive literals are fully removed.
-- [ ] **Open-source readiness gate** — do not make repo public until rewrite + rotation + verification are complete.
+The git-history secret rewrite was completed months ago: all secrets originally
+hard-coded in the (then-private) repo were rotated out and redacted throughout
+history before the repo was made public, then GitHub Actions creds replaced them.
+Nothing leaked (never public with live secrets). No secret-bearing scripts remain
+in the working tree (verified 2026-05-30: grep for "redacted secret"/"secret
+redacted" finds only doc references; the old hand-run scripts were already
+deleted). `docs/API.md`'s example was updated off the `[REDACTED_SECRET_1]`
+placeholder to the `os.getenv("WIKI_PASSWORD", "")` pattern.
 
 ---
 

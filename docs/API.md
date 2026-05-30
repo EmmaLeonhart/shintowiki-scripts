@@ -24,12 +24,13 @@ This document records exactly how each external service is accessed across this 
 ### Connection + login
 
 ```python
+import os
 import mwclient
 
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME  = "EmmaBot"
-PASSWORD  = "[REDACTED_SECRET_1]"    # some old scripts have "[REDACTED_SECRET_1]"
+PASSWORD  = os.getenv("WIKI_PASSWORD", "")  # never hard-code; set WIKI_PASSWORD in the env
 
 site = mwclient.Site(
     WIKI_URL,
@@ -426,7 +427,7 @@ if sys.platform == 'win32':
 WIKI_URL  = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 USERNAME  = "EmmaBot"
-PASSWORD  = "[REDACTED_SECRET_1]"
+PASSWORD  = os.getenv("WIKI_PASSWORD", "")  # never hard-code; set WIKI_PASSWORD in the env
 THROTTLE  = 1.5
 BOT_UA    = "BotName/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
