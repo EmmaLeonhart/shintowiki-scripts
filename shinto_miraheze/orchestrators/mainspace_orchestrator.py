@@ -54,7 +54,7 @@ from shinto_miraheze.orchestrators.ops import (
 # grokipedia_link is a PRE_HEAVY light op (mainspace only) placed
 # AFTER wikidata_lookup. Stores its result as a NAMED param (grok=<slug>)
 # on {{wikidata link}} rather than a positional lang|title pair, because
-# Grokopedia is not a language wiki and wikidata_lookup's Phase 2 would
+# Grokipedia is not a language wiki and wikidata_lookup's Phase 2 would
 # wipe a positional pair every sitelinks refresh; named params are
 # preserved. Probes grokipedia.com per page (throttled).
 OPS = [

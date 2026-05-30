@@ -2,7 +2,7 @@
 """
 configure_wikidata_link_grok_categories.py
 ==========================================
-Install / update the conditional Grokopedia categorisation snippet in
+Install / update the conditional Grokipedia categorisation snippet in
 ``miraheze_unique/Template%3AWikidata link.wiki`` — the repo-side
 source-of-truth for ``Template:Wikidata link`` on shinto.miraheze.org.
 
@@ -52,7 +52,7 @@ TEMPLATE_FILE = "miraheze_unique/Template%3AWikidata link.wiki"
 BEGIN_MARKER = "<!-- BEGIN_GROK_AUTO_CATEGORIES -->"
 END_MARKER = "<!-- END_GROK_AUTO_CATEGORIES -->"
 
-# Three-state classification + Grokopedia interwiki rendering. See
+# Three-state classification + Grokipedia interwiki rendering. See
 # module docstring for the full semantics. MediaWiki on miraheze treats
 # ``grok=`` (empty) the same as a totally unpassed parameter, so the
 # missing case uses the literal sentinel ``none``.

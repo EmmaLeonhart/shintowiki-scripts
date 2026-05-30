@@ -2,12 +2,12 @@
 grokipedia_link op
 ==================
 Mainspace only. Probes ``https://grokipedia.com/page/<slug>`` to decide
-whether the visited shintowiki page has a corresponding Grokopedia
+whether the visited shintowiki page has a corresponding Grokipedia
 article, and stamps the result onto the page's ``{{wikidata link|...}}``
 template as a **named parameter** so the next cycle can skip the probe:
 
-* Grokopedia HAS the page → set ``|grok=<canonical-slug>``.
-* Grokopedia does NOT have the page (every casing probe returned 404) →
+* Grokipedia HAS the page → set ``|grok=<canonical-slug>``.
+* Grokipedia does NOT have the page (every casing probe returned 404) →
   set ``|grok=none`` (the literal sentinel ``none``, NOT empty). Empty
   ``grok=`` is treated by MediaWiki the same way as a missing parameter,
   so the template can't distinguish "checked, no article" from "never
@@ -33,18 +33,18 @@ sentinel ``none`` — MediaWiki collapses ``grok=`` (empty) into the
 same state as "no parameter passed", so an empty present ``grok`` slot
 CANNOT be distinguished from "we haven't checked yet". The ``none``
 sentinel is the **positive marker** for "we checked, nothing on
-Grokopedia".
+Grokipedia".
 
-The named-param shape is deliberate: Grokopedia is NOT a language wiki,
+The named-param shape is deliberate: Grokipedia is NOT a language wiki,
 so modelling it as one of the positional ``lang|title`` pairs would
 (a) misrepresent its semantics and (b) get wiped on every Phase-2
 sitelinks refresh in ``wikidata_lookup`` (which replaces the entire
-pair list with whatever Wikidata reports for the QID — Grokopedia is
+pair list with whatever Wikidata reports for the QID — Grokipedia is
 never in that set). Named params, by contrast, survive
 ``wikidata_lookup`` untouched (it preserves ``named`` via
 ``dict(named)`` and only mutates ``check_date`` and ``consistent_qid``).
 
-Grokopedia is case-sensitive (verified 2026-05-26: ``Tokyo`` → 200,
+Grokipedia is case-sensitive (verified 2026-05-26: ``Tokyo`` → 200,
 ``tokyo`` → 404; ``yamato_no_kuni_no_miyatsuko`` → 200,
 ``Yamato_no_Kuni_no_Miyatsuko`` → 404). There is NO predictable casing
 convention — articles are stored in whatever case they were created
@@ -181,7 +181,7 @@ def _probe(slug: str) -> str:
 
 
 def _find_canonical_slug(title: str) -> tuple["str | None", str]:
-    """Probe Grokopedia for the page corresponding to ``title``.
+    """Probe Grokipedia for the page corresponding to ``title``.
 
     Returns (slug, status) where:
       * status == 'exists': slug is the form that returned 200.
@@ -214,7 +214,7 @@ def apply(title: str, text: str):
 
     wd_match = WD_LINK_RE.search(text)
     if not wd_match:
-        # No template to cache into. Skip to avoid hammering Grokopedia
+        # No template to cache into. Skip to avoid hammering Grokipedia
         # for the same page every cycle (the user's stated concern).
         return None, None
 
@@ -232,8 +232,8 @@ def apply(title: str, text: str):
     # treats `grok=` as if the param weren't passed, so those pages fall
     # into "to be checked" instead of "without Grokipedia links". Rewrite
     # the empty marker to the explicit sentinel `none` without re-probing
-    # Grokopedia (the missing determination from the original run is
-    # still authoritative; if Grokopedia adds the article later, a human
+    # Grokipedia (the missing determination from the original run is
+    # still authoritative; if Grokipedia adds the article later, a human
     # can clear the param to force a re-check).
     if existing_grok == "":
         new_named: dict[str, str] = {"grok": "none"}
@@ -244,7 +244,7 @@ def apply(title: str, text: str):
         new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
         return new_text, "rewrite legacy empty grok= to grok=none"
 
-    # No grok param at all → probe Grokopedia.
+    # No grok param at all → probe Grokipedia.
     slug, status = _find_canonical_slug(title)
     if status == "error":
         return None, None
@@ -252,7 +252,7 @@ def apply(title: str, text: str):
     # Insert grok= as the first named param so it appears prominently in
     # the wikitext. wikidata_lookup will not touch it on future cycles —
     # it only mutates check_date / consistent_qid. The value is either
-    # the canonical Grokopedia slug (status == 'exists') or the literal
+    # the canonical Grokipedia slug (status == 'exists') or the literal
     # sentinel 'none' (status == 'missing'); Template:Wikidata link's
     # conditional categorisation reads the param state to emit one of
     # three tracking categories.
@@ -264,5 +264,5 @@ def apply(title: str, text: str):
     new_template = _build_wd_template(qid, pairs, new_named)
     new_text = text[: wd_match.start()] + new_template + text[wd_match.end() :]
     if status == "exists":
-        return new_text, f"add grok={slug} to wikidata link (Grokopedia)"
-    return new_text, "set grok=none (no Grokopedia article)"
+        return new_text, f"add grok={slug} to wikidata link (Grokipedia)"
+    return new_text, "set grok=none (no Grokipedia article)"

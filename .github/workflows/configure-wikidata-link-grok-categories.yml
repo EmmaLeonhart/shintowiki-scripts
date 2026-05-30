@@ -1,7 +1,7 @@
 name: Configure Wikidata Link Grok Categories
 
 # Edit the repo file `miraheze_unique/Template%3AWikidata link.wiki` to
-# install / refresh the conditional Grokopedia categorisation snippet,
+# install / refresh the conditional Grokipedia categorisation snippet,
 # then commit + push. The next cleanup-loop run propagates the file to
 # the live wiki via `sync_miraheze_unique_pages.py` (repo-wins for that
 # directory, so the repo is the source of truth — see CLAUDE.md and the

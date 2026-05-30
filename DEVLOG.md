@@ -1361,7 +1361,7 @@ about the cloud routine's instruction, not a pipeline question.
 
 ## 2026-05-26
 
-### Grokopedia "missing" sentinel switched from empty to `none`
+### Grokipedia "missing" sentinel switched from empty to `none`
 **Files:** `shinto_miraheze/orchestrators/ops/grokipedia_link.py`, `shinto_miraheze/configure_wikidata_link_grok_categories.py`
 
 Emma reported the template's categorisation was working for `grok=<slug>`
@@ -1371,13 +1371,13 @@ into "to be checked" — MediaWiki on miraheze appears to treat
 resolve to `""`), so an empty slot cannot be distinguished from "never
 checked".
 
-Switched the explicit "no Grokopedia article found" marker from empty
+Switched the explicit "no Grokipedia article found" marker from empty
 `grok=` to the literal sentinel `grok=none`:
 
 * `grokipedia_link` op now writes `grok=none` for the missing case
   (was: empty string). It also detects legacy `grok=` (empty) markers
   on revisit and rewrites them to `grok=none` without re-probing
-  Grokopedia — the original missing determination from the prior run is
+  Grokipedia — the original missing determination from the prior run is
   preserved.
 * Template snippet rewritten: outer `#ifeq:{{{grok|}}}|none|...` checks
   the sentinel first; inner `#if:{{{grok|}}}|...` distinguishes a real
@@ -1479,7 +1479,7 @@ explicit "main space orchestrator (and only the main space orchestrator)"
 directive) that cross-links shintowiki pages into
 [grokipedia.com](https://grokipedia.com). On each visit:
 
-1. HTTP-probe `https://grokipedia.com/page/<slug>`. Grokopedia is
+1. HTTP-probe `https://grokipedia.com/page/<slug>`. Grokipedia is
    case-sensitive (verified: `Tokyo` → 200, `tokyo` → 404;
    `yamato_no_kuni_no_miyatsuko` → 200, `Yamato_no_Kuni_no_Miyatsuko` → 404)
    with no predictable casing convention, so the op tries the shintowiki title
@@ -1488,7 +1488,7 @@ directive) that cross-links shintowiki pages into
    parameter** on the page's `{{wikidata link|...}}` template.
 3. If every probe returns 404 → set `|grok=` (empty value, parameter
    *present*). An empty-but-present grok param is the positive "we
-   checked, nothing on Grokopedia" marker — distinguishable from
+   checked, nothing on Grokipedia" marker — distinguishable from
    "we haven't checked yet" (which is no grok param at all).
 4. Transient errors (5xx, timeout, mixed) → no-op; re-probe next cycle.
 
@@ -1514,7 +1514,7 @@ triggered via the new `configure-wikidata-link-grok-categories.yml`
 workflow (workflow_dispatch only — fires once, never recurring).
 
 Named-param shape (not a positional `lang|title` pair) is load-bearing:
-Grokopedia is not a language wiki, and named params survive
+Grokipedia is not a language wiki, and named params survive
 `wikidata_lookup`'s Phase 2 sitelinks refresh untouched (verified — it
 preserves `named` via `dict(named)` and only mutates `check_date` /
 `consistent_qid`). A positional pair would be wiped every 6-month
