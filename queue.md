@@ -7,6 +7,111 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
+## 1. Retire `propagate_independent_category.py` — it is now a churn engine (2026-05-30)
+
+**Context (full, so this is executable without re-deriving).** Emma noticed
+`fandom_unique/` (and `miraheze_unique/`) pages "disappearing." Investigation
+2026-05-30:
+
+- `propagate_independent_category.py` was added 2026-05-05 as a one-time
+  *bootstrap* preflight to ensure `[[Category:Independently git synced pages]]`
+  was tagged on BOTH wikis back when independent per-wiki syncing was new.
+  It is wired into `.github/workflows/fandom-sync.yml` on a **`*/15 * * * *`
+  cron (every 15 min)** and runs forever. Bootstrap is long done → it is now
+  pure churn.
+- **The churn loop.** propagate builds a universe =
+  `(miraheze cat ∪ fandom cat ∪ miraheze_unique/ files ∪ fandom_unique/ files)`
+  and ADDS the category to the WIKI page of anything in the universe missing it
+  — keying off *local-file presence*, never checking whether the local file has
+  the literal tag. The two `sync_*_unique_pages.py` scripts are **repo-wins**;
+  for any mirror file whose body lacks the literal tag they treat the
+  propagate-added wiki tag as a divergent edit and STRIP it. Next cycle propagate
+  re-adds it. Ping-pong (verified on `Kamuyaimimi` etc.: tag→strip every ~2h on
+  2026-05-30). The loop terminates for a given page only when a sync cycle
+  catches it after the strip and before the re-tag → page is not a current
+  category member → sync's orphan-delete (`cat_in_local` False) removes the
+  mirror file. **That orphan-delete is the "disappearance" Emma saw — it is the
+  cure, not the disease. No WIKI data is ever lost (DELETE only does
+  `local_path.unlink()` on the repo mirror; the wiki page is untouched and
+  content is recoverable from git history).** How the spurious pages got into the
+  mirror in the first place: a self-categorizing infobox (`{{Infobox Noble}}` /
+  `{{Infobox person}}`, which carry the category inside `<noinclude>`) briefly
+  leaked the tag *outside* noinclude, cascading it onto every transcluding
+  article; those became category members → got pulled into the mirror. The
+  infoboxes are fixed now (tag is inside noinclude — verified).
+
+- **Classification of the ~96 current churn candidates (mirror files lacking the
+  literal tag), 2026-05-30:**
+  - **6 LEGIT templates** present in both dirs, must KEEP — `Template:Gokoku
+    Shrines`, `Template:Kofun navbar`, `Template:Shinto Talismans`,
+    `Template:Shinto shrines`, `Template:Shinto`, `Template:Shinto2`. These are
+    real independently-synced navboxes; they are surviving ONLY because propagate
+    keeps re-tagging them (repo file lacks the literal tag).
+  - **16 non-template, byte-identical in both dirs** + **51 single-dir-only**
+    (the deity/clan articles: Kamuyaimimi, Michinoomi, Nagatsuhiko, …) → SPURIOUS
+    cascade artifacts; they do not belong in the mirror and should be removed.
+  - **1 divergent** (`Hayashi Shrine`, different content in the two dirs) → human
+    review: legit divergent override or coincidence?
+
+- **The data-loss trap (critical ordering).** If propagate just stops, the 6
+  legit templates (wiki page has the tag from propagate's last run, repo file
+  does not) get their tag stripped by the next repo-wins sync, fall out of the
+  category, and are then orphan-deleted = loss of legit templates. So:
+
+- **Safe retirement plan (do in this order):**
+  1. **Add the literal `[[Category:Independently git synced pages]]` tag inside
+     the trailing `<noinclude>`** of the 6 legit templates' repo files in BOTH
+     `fandom_unique/` and `miraheze_unique/`. Makes them self-sustaining.
+  2. **Review `Hayashi Shrine`**; if legit, add the tag too; if spurious, leave
+     for cleanup.
+  3. **Remove `propagate_independent_category.py` from `fandom-sync.yml`** (delete
+     the preflight step; update the header comment). Optionally delete the script
+     (it has no other caller — grep first).
+  4. The spurious articles then self-clean: with propagate gone they are no longer
+     re-tagged, fall out of the category, and orphan-delete drains them over the
+     next sync cycles (bounded by `--max-edits`; pure deletions of repo mirror
+     files, no wiki edits).
+  5. Verify after a full fandom-sync cycle: re-run the churn-candidate count;
+     the 6 templates retain their tag and the spurious set drains to ~0.
+  - DEVLOG the incident + the retirement when it ships.
+
+## 2. Address ALL of the [[Open questions]] — Emma's 2026-05-28 dispositions
+
+Barrel through every one of Emma's "**" dispositions on `git_synced/Open
+questions.wiki`, verify each via code/API/log/SPARQL, ACT on it, and DELETE the
+resolved bullet (Emma has directed that resolved bullets be removed). The page is
+wiki-wins; pull latest first and don't clobber Emma's edits. Items (detail +
+investigation already done in the "From [[Open questions]]" section below):
+- Kana ojp-hani stragglers — verify SPARQL/dry-run, prune if done.
+- `delete_lowercase_template_collisions` — verify, prune (Emma: "done").
+- AI translation pipeline — confirm it exists (cloud-queue worker), fix
+  `todo.md`'s "doesn't exist yet", prune.
+- Enrich autocreated categories — confirm `Category:Categories autocreated by
+  EmmaBot` is empty/done, drop the todo + prune.
+- Race-condition audit — Emma: no longer concerning → drop + prune.
+- Recreate `[[Category:Categories missing wikidata]]` — Emma gave a full design
+  (orchestrator adds the page to anything lacking the `{{wikidata link}}`
+  template / lacking a real Wikidata link; every page gets a blank
+  `{{wikidata link}}`; tag `Pages without wikidata` as crud). Resolve the
+  template-cascade design blocker, then build (see detailed bullet below).
+- Drop sync `.state` files — Emma: "do it now" (the SAFE REDESIGN section below).
+- Secret-removal history rewrite — Emma: "already done" → grep history, prune if
+  clean.
+- Fandom Infobox→Portable — Emma: "no AI does this" → already dropped, prune.
+- VISION architecture — Emma: dead except translation pipeline → already retired,
+  prune.
+
+## 3. Build a weekly GitHub Action: prepend an Open-questions→queue.md analysis task
+
+Create a GitHub Actions workflow that runs **weekly** and PREPENDS an item to the
+top of `queue.md` instructing the agent to analyse `git_synced/Open questions.wiki`
+and decompose any actionable item on it into concrete `queue.md` steps. Purpose:
+the Open-questions page is the human↔bot interface; this keeps it from going stale
+by guaranteeing a recurring sweep lands in the queue where the autonomous loop will
+work it. (The workflow only edits `queue.md` — prepend a dated task block; commit
+with `[skip ci]`; it does not itself do the analysis, it schedules it into the
+queue.)
+
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now")
 
 Emma chose the safe-redesign path (not the naive git-history derivation,
@@ -70,3 +175,12 @@ removal is Emma's or a CI edit). Read latest via
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).
 2. **Script-template invariants.** All scripts must support `--apply`, `--max-edits`, `--run-tag` flags; use `mwclient`; apply `time.sleep(THROTTLE)` with `THROTTLE = 2.5` between edits (bumped from 1.5 on 2026-04-18 for server load); set `User-Agent`; `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`; state file alongside the script. See `check_wikidata_labels.py` as a reference implementation. Do not innovate on this scaffolding.
 3. **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
+
+## Pinned tail (keep these two LAST, always)
+
+- [ ] **Ensure the three productivity-loop crons are running.** Start them if this
+  session never did; restart them if a planning burst / queue re-fill killed them.
+  Work-loop `3 * * * *`, auto-flush `15 * * * *`, status-report `42 * * * *`
+  (session-local `durable:false`, recreated each session).
+- [ ] **Run the status-report action once more, independently** — an end-of-session
+  summary of everything that happened this session.
