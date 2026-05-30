@@ -6,6 +6,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Deferred-verification log + monthly verification-sweep workflow
+**Files:** `docs/deferred_verification.md` (new), `.github/workflows/monthly-verification-sweep.yml` (new), `queue.md`
+
+Formalised the "ship and move on" reality: wiki/CI changes are lagging indicators
+(hours to manifest), so the bot ships unverified rather than stalling, and
+everything is fixable after the fact. New `docs/deferred_verification.md` logs each
+shipped-but-unverified change + exactly how to test it (seeded with this session's:
+Q4 template render + op idempotency, Q3 enwiki parent enrichment, propagate drain,
+conflict-resolution behaviour, kana backlog post-freeze). New
+`monthly-verification-sweep.yml` (1st of month, 07:23 UTC, idempotent marker,
+[skip ci]) prepends a queue.md task to walk that doc and actually test each open
+item — the batched verification we skip in the moment. Principle recorded as
+queue.md pinned note #4. Mirrors the weekly Open-questions sweep's shape.
+
 ### Q4 (steps 1-2): self-categorizing {{wikidata link}} + op appends blank template
 **Files:** `miraheze_unique/Template%3AWikidata link.wiki`, `fandom_unique/Template%3AWikidata link.wiki`, `shinto_miraheze/orchestrators/ops/wikidata_link.py`, `queue.md`
 
