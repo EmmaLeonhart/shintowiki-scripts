@@ -5,7 +5,7 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 ## Scheduled reminders
 
 - [ ] **July 2026 — audit terminating cleanup scripts.** Confirm these are inert (state covers every eligible page → no edits), then remove from `wiki-cleanup.yml` + delete: `reimport_from_enwiki.py`, `migrate_talk_pages.py`, `normalize_category_pages.py` (Sun), `remove_legacy_cat_templates.py` (monthly). Overlaps with the legacy-script audit below.
-- [ ] **2027-05-23 — proposed-label drip-feed flips 20/day → ALL.** Automatic in `modern-quickstatements/select_label_proposals.py` (`RAMP_DATE`). Reminder only; if community feedback says the ~965k proposals need rework, fix the generators (or push `RAMP_DATE`) before the flip.
+
 
 ## Repo / script tasks
 
