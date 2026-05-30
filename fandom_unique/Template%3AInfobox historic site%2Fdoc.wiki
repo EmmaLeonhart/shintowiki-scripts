@@ -1,7 +1,7 @@
 {{Documentation subpage}}
 
 {{High-use}}
-{{auto short description}}
+{{Removed template}}
 {{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Location map|Module:Check for unknown parameters}}
 
 <div style="height:70ex; width:auto; border:1px #aaa solid; margin-left:5px; float:right; clear:right; overflow:auto; padding:5px;">{{Infobox historic site
@@ -1614,9 +1614,9 @@ This infobox does not specify an image, causing the map to be displayed at the t
 [[Category:Templates with coordinates fields]]
 [[Category:Embeddable templates]]
 [[Category:Templates that add a tracking category]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox historic site/doc|check_date=2026-05-30}}
 </noinclude>
