@@ -10,7 +10,7 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 ## Repo / script tasks
 
 - [ ] **Audit which pre-orchestrator legacy scripts still run.** Most should stay — they run frequently or are wiki-state-driven (no `.state` file, by design). Catalogue each script wired into the workflows: still producing edits? trigger? wiki-state-driven (keep) vs genuinely inert (retire). Not a delete-spree — a confirmation pass.
-- [ ] **`populate_namespace_layers.py` → `ops/namespace_layers.py`.** Mainspace-only op creating/editing sibling Data:/Export: pages; `HANDLES_SAVE = True`. Blocked on wiki-side namespace creation.
+
 
 ## Wiki content tasks (manual / human review)
 
