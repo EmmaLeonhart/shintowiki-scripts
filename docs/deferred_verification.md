@@ -50,9 +50,6 @@ batched verification we skip in the moment.
   Verify no spurious overwrites: when wiki and repo both changed, the side with the more
   recent edit wins (watch sync edit summaries — should no longer say "wins on revision
   count"; the logic now reads timestamps).
-- [ ] **kana qualifier backlog** (status checked 2026-05-30: 5340 candidates remain).
-  After the Wikidata freeze lifts (2026-06-06), confirm the QS pipeline drains these
-  (`modern-quickstatements/check_kana_qualifier_status.py`).
 
 - [ ] **Sync `.state`-file removal (shipped 2026-05-30) — HIGHEST-PRIORITY REVIEW.**
   All 5 `sync_*.py` now run STATELESS: `load_state` returns `{}`, `save_state` is a
