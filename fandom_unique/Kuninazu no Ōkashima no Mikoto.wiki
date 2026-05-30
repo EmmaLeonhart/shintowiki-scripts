@@ -1,0 +1,48 @@
+{{Infobox person|gender={{ill|Male (gender)|qid=Q6581097}}|spouse={{ill|Niikawa-hime no Mikoto|qid=Q108044745}}|children={{ill|Omikiyama no Mikoto|qid=Q99517230}}|father={{ill|Kushiukameshi no Mikoto|qid=Q106106958}}|mother={{ill|Ominakuchi-hime|qid=Q106107729}}}}
+{{Infobox Noble
+| name = Kuninazu no Ōkashima no Mikoto
+| image = 
+| image_size = 
+| caption = 
+| era = [[Kofun period]]
+| birth_date = Unknown
+| death_date = Unknown
+| other_names = Ōkashima
+| honorary_title = 
+| deity_name = 
+| posthumous_name = 
+| burial_place = 
+| Rank = 
+| lord = [[Emperor Suinin]]
+| clan = {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan}}
+| parents = Father: {{ill|Kushiukameshi no Mikoto|ja|久志宇賀主命|12=simple|13=User:Immanuelle/Kushiugatsu no Mikoto|comment=changed title based on wikidata|qid=Q106106958}}
+| siblings = 
+| children = {{ill|Omikiyama no Mikoto|ja|臣狭山命|12=simple|13=User:Immanuelle/Omi Sayama no Mikoto|comment=changed title based on wikidata|qid=Q99517230}}
+}}
+
+'''Kuninazu no Ōkashima no Mikoto''' (国摩大鹿島命) was an ancient Japanese noble of the {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}} and an ancestor of the {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan}}.
+
+== Overview ==
+Kuninazu no Ōkashima no Mikoto is mentioned in the *{{ill|Nihon Shoki|en|Nihon Shoki|qid=Q813935|lt=Nihon Shoki}}* during the 25th year of the reign of {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}} as one of the "Five Daibu" (五大夫), prominent nobles of the era. He is listed alongside {{ill|Take Nunokawa Wake no Mikoto|ja|武渟川別|lt=Takeninukawawake}}, the ancestor of the {{ill|Abe clan|ja|阿部氏}}, and {{ill|Hikokuni-fuki no mikoto|ja|彦国葺|12=simple|13=User:Immanuelle/Hikokunifuki|ja_comment=jawiki redirects to 彦国葺命|comment=changed title based on wikidata|qid=Q11487899}}, the ancestor of the {{ill|Wani clan|en|Wani clan|qid=Q11417873|lt=Wani clan}}, solidifying his position as a significant figure in early Japanese history.
+
+== Genealogy ==
+Kuninazu no Ōkashima no Mikoto is identified as the son of {{ill|Kushiukameshi no Mikoto|ja|久志宇賀主命|12=simple|13=User:Immanuelle/Kushiugatsu no Mikoto|comment=changed title based on wikidata|qid=Q106106958}} and the father of {{ill|Omikiyama no Mikoto|ja|臣狭山命|12=simple|13=User:Immanuelle/Omi Sayama no Mikoto|comment=changed title based on wikidata|qid=Q99517230}}, according to genealogical records.<ref>*{{ill|Sonpi Bunmyaku|fa|سونپی بونمیاکو|fr|Sonpi bunmyaku|ja|尊卑分脈|zh|尊卑分脈|qid=Q1704738|lt=Sonpi Bunmyaku}}</ref>
+
+== References ==
+{{Reflist}}
+
+== Related Articles ==
+*{{ill|Radical 25|en|Radical 25|qid=Q94724|lt=Radical 25}}
+*{{ill|Urabe clan|fr|Clan Urabe|ja|卜部氏|ko|우라베씨|simple|Urabe clan|qid=Q11409028|lt=Urabe clan}}
+*{{ill|Taifu|en|Taifu|qid=Q14126428|lt=Taifu}}
+
+{{translated page|ja|国摩大鹿島命|version=91088245|comment=Imported full ja history}}
+
+{{wikidata link|Q99517269|ja|国摩大鹿島命|check_date=2026-05-17}}
+[[Category:Nakatomi clan]]
+[[Category:People of ancient Japan]]
+[[Category:People of Kofun-period Japan]]
+[[Category:Wikidata no short description]]
+[[Category:Year of birth unknown]]
+[[Category:Year_of_birth_unknown]]
+[[Category:Year_of_death_unknown]]
