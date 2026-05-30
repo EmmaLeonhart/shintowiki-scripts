@@ -5,7 +5,7 @@
  |small=yes
  |smallimage=[[File:Wikidata-logo.svg|20px]]
  |smalltext=This {{pagetype}} is linked to its entry on [[Wikidata]]: [https://www.wikidata.org/wiki/{{{1}}} {{{1}}}].
-}}|{{#switch:{{NAMESPACE}}|=[[Category:Pages without wikidata]]|Category=[[Category:Pages without wikidata]]}}}}<includeonly>
+}}|{{#switch:{{NAMESPACE}}|=[[Category:Pages without wikidata]]|Category=[[Category:Categories missing wikidata]]}}}}<includeonly>
 </includeonly><noinclude>
 {{documentation}}
 [[Category:Templates]]

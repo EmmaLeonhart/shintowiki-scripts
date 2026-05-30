@@ -6,11 +6,10 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
-## Q4 — finish self-categorizing wikidata-link (steps 1-2 shipped 2026-05-30)
+## Q4 — finish self-categorizing wikidata-link (core shipped 2026-05-30)
 
-Core shipped (DEVLOG 2026-05-30): `{{wikidata link}}` self-categorizes on a blank invocation (ns 0/14, cascade-safe) and `ops/wikidata_link.py` appends a blank template instead of the literal category. Remaining:
-- [ ] Make `[[Category:Pages without wikidata]]` a crud category (tag it into `Category:Crud categories`) so `remove_crud_categories` strips the LEGACY literal tags; the template-emitted category is transclusion-sourced and survives. (Wiki edit → needs CI/creds, or a small repo script that CI runs.)
-- [ ] Recreate `[[Category:Categories missing wikidata]]` as a typed parent + wire orchestrators to add it to pages lacking the template / whose wikidata link doesn't resolve (`ops/wikidata_lookup.py` already validates QIDs — tie in there).
+Core shipped (DEVLOG 2026-05-30): `{{wikidata link}}` self-categorizes on a blank invocation (ns 0/14, cascade-safe) and `ops/wikidata_link.py` appends a blank template. Category recreation is NOT needed — `[[Category:Pages without wikidata]]` auto-creates as pages get tagged (Emma 2026-05-30). Only leftover:
+- [ ] Tag `[[Category:Pages without wikidata]]` into `[[Category:Crud categories]]` so `remove_crud_categories` strips the legacy literal tags (the template-emitted one is transclusion-sourced and survives). Trivial one-off wiki edit — do directly on the wiki or via a CI step; not locally doable (no wiki creds in the dev session).
 
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now") — ATTENDED ONLY
 
