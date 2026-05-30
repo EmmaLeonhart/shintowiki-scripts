@@ -1,4 +1,4 @@
-'''Kagoshima Shrine''' (鹿児島神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}.
+'''Kagoshima Shrine''' (鹿児島神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}.
 
 * {{ill|Kagoshima Shrine (Kagoshima City)|ja|鹿児島神社 (鹿児島市)}} - Located in Kusamuta-chō, {{ill|Kagoshima|en|Kagoshima|qid=Q15674|lt=Kagoshima City}}.
 * {{ill|Kagoshima Shrine (Tarumizu City)|ja|鹿児島神社 (垂水市)}} - Located in Shimomiya-chō, {{ill|Tarumizu, Kagoshima|ar|تاروميزو (كاغوشيما)|azb|تارومیزو، کاقوشیما|ce|Тарумидзу|ceb|Tarumizu (lungsod sa Hapon)|cs|Tarumizu (Kagošima)|de|Tarumizu|es|Tarumizu|fa|تارومیزو، کاگوشیما|fi|Tarumizu|fr|Tarumizu|gl|Tarumizu|id|Tarumizu, Kagoshima|it|Tarumizu|ja|垂水市|ko|다루미즈시|mg|Tarumizu|mzn|تارومیزو، کاگوشیما|nl|Tarumizu|pl|Tarumizu|pt|Tarumizu|ro|Tarumizu|ru|Тарумидзу|sv|Tarumizu|tg|Тарумизу|tl|Tarumizu, Kagoshima|tr|Tarumizu|tt|Тарумидзу|tum|Tarumizu|uk|Тарумідзу|ur|تارومیزو، کاگوشیما|vi|Tarumizu, Kagoshima|war|Tarumizu, Kagoshima|zh|垂水市|zh_classical|垂水市|zh_min_nan|Tarumizu-chhī|zh_yue|垂水|qid=Q847591|lt=Tarumizu City}}.
@@ -61,7 +61,7 @@
 |no
 |yes
 |-
-|{{ill|Emperor Tenji|ar|الإمبراطور تينجي|azb|تنجی (ایمپیراتور)|ca|Tenji|ckb|ئیمپراتۆر تێنجی|cs|Tendži|de|Tenji|es|Tenji Tennō|fa|امپراتور تنجی|fi|Tenji|fr|Tenji (empereur)|hak|Tenji Thiên-fòng|he|טנג'י|hu|Tendzsi japán császár|id|Kaisar Tenji|it|Tenji|ja|天智天皇|ka|ტენძი|ko|덴지 천황|nl|Tenji|pl|Tenji|pt|Tenji|ru|Император Тэндзи|sh|Car Tenji|simple|Emperor Tenji|sl|Cesar Tendži|sr|Car Tenji|sv|Tenji|th|จักรพรรดิเท็นจิ|tl|Emperador Tenji|tr|Tenji (imparator)|uk|Імператор Тендзі|uz|Imperator Tenji|vi|Thiên hoàng Tenji|wuu|天智天皇|yo|Emperor Tenji|zh|天智天皇|zh_min_nan|Tenzi Thian-hông|zh_yue|天智天皇|qid=Q314802|lt=Emperor Tenji}}
+|{{ill|Emperor Tenji|en|Emperor Tenji|qid=Q314802|lt=Emperor Tenji}}
 |no
 |no
 |yes
@@ -79,13 +79,13 @@
 
 == Shrines with this name ==
 
-* {{ill|Kagoshima Shrine (Q11676983)|lt=Kagoshima Shrine|qid=Q11676983}} — Sōmura
+* {{ill|Kagoshima Shrine (Q11676983)|ja|鹿児島神社 (鹿児島市)|qid=Q11676983|lt=Kagoshima Shrine}} — Sōmura
 * {{ill|Kagoshima Shrine (Tarumizu City) (Q11676981)|lt=Kagoshima Shrine (Tarumizu City)|qid=Q11676981}} — Tarumizu
-* {{ill|鹿児島神社 (Q135433816)|lt=鹿児島神社|qid=Q135433816}} — Kikai
+* {{ill|鹿児島神社 (Q135433816)|qid=Q135433816|lt=鹿児島神社}} — Kikai
 
 {{translated page|ja|鹿児島神社|version=39296109|comment=Imported full ja history}}
 
-{{wikidata link|Q11676982|ja|鹿児島神社|check_date=2026-05-16}}
+{{wikidata link|Q11676982|ja|鹿児島神社|grok=none|check_date=2026-05-30}}
 [[Category:Shinto shrines in Kagoshima Prefecture]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]

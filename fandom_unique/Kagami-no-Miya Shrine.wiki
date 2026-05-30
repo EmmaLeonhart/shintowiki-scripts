@@ -1,18 +1,18 @@
 '''Kagami-no-Miya Shrine''' (鏡宮神社) refers to Shinto shrines in Japan.
 
 * {{ill|Kagami-no-Miya Shrine (Takasaki)|ja|鏡宮神社 (高崎市)}} - Located in Koyagi-cho, Takasaki City, Gunma Prefecture.
-* {{ill|Kagami-no-Miya|ja|鏡宮神社 (伊勢市)|qid=Q17226516|lt=Kagami-no-Miya Shrine}} - Located in Asama-cho, Ise City, Mie Prefecture. A branch shrine of the {{ill|Kōtai Jingū|ja|皇大神宮}}.
+* {{ill|Kagami-no-Miya|ja|鏡宮神社 (伊勢市)|lt=Kagami-no-Miya Shrine}} - Located in Asama-cho, Ise City, Mie Prefecture. A branch shrine of the {{ill|Kōtai Jingū|abstract|Q11581011|ja|皇大神宮|tok|tomo sewi suli Naku|zh|皇大神宮|qid=Q11581011}}.
 
 {{disambiguation}}
 
 == Shrines with this name ==
 
-* {{ill|Kagami-no-miya Shrine (Q17226516)|ja|鏡宮神社 (伊勢市)|qid=Q17226516|lt=Kagami-no-miya Shrine}} — Ise
-* {{ill|鏡宮神社 (Q135425332)|qid=Q135425332|lt=鏡宮神社}} — Takasaki
+* {{ill|Kagami-no-miya Shrine (Q17226516)|lt=Kagami-no-miya Shrine|qid=Q17226516}} — Ise
+* {{ill|鏡宮神社 (Q135425332)|lt=鏡宮神社|qid=Q135425332}} — Takasaki
 
 {{translated page|ja|鏡宮神社|version=49586450|comment=Imported full ja history}}
 
-{{wikidata link|Q16766631|ja|鏡宮神社|check_date=2026-05-16}}
+{{wikidata link|Q16766631|ja|鏡宮神社|grok=none|check_date=2026-05-30}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
