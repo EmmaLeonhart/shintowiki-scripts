@@ -11,9 +11,14 @@ name: Independent Pages Sync
 #   shinto.miraheze.org  ⇄  miraheze_unique/<title>.wiki
 #   shinto.fandom.com    ⇄  fandom_unique/<title>.wiki
 #
-# A preflight pass (propagate_independent_category) ensures the category
-# is tagged on both wikis for any page tagged on either one, so the
-# two sync scripts converge on the same title set.
+# Each page that is genuinely meant to be synced carries the literal
+# [[Category:Independently git synced pages]] tag inside its repo .wiki
+# file (in <noinclude> for templates), so the two sync scripts converge
+# on the same title set on their own. (A preflight pass,
+# propagate_independent_category, used to add the tag wiki-side every
+# run; it was a 2026-05-05 bootstrap and was removed 2026-05-30 once
+# propagation was complete — left active it fought the repo-wins sync
+# and churned pages. See DEVLOG 2026-05-30.)
 #
 # Renamed from "Fandom Sync" 2026-05-05. The previous design was a
 # bidirectional wiki↔wiki sync gated by [[Category:Fandom sync]] on
@@ -107,15 +112,6 @@ jobs:
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: rename_fandom_sync_category" \
             python3 shinto_miraheze/rename_fandom_sync_category.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
-
-      # Preflight: ensure [[Category:Independently git synced pages]] is
-      # tagged on both wikis for any page tagged on either. Without this,
-      # the two sync scripts could disagree on the title set.
-      - name: "Independent sync: propagate_independent_category"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Independent Sync: propagate_independent_category" \
-            python3 shinto_miraheze/propagate_independent_category.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       # Refresh the auto-generated "== Shrines with this name ==" block
       # on every shrine disambig page BEFORE the per-wiki sync steps,

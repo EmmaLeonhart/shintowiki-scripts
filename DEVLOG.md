@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-05-30
+
+### Retired `propagate_independent_category.py` — it had become a churn engine
+**Files:** `.github/workflows/fandom-sync.yml`, `shinto_miraheze/propagate_independent_category.py` (deleted), 13 `fandom_unique/` + `miraheze_unique/` `.wiki` files, `queue.md`
+
+Emma reported `fandom_unique/` pages "disappearing." Investigation: a batch of
+deity/clan articles (Kamuyaimimi, Michinoomi, …) were getting pulled into the
+unique mirrors then deleted a sync later. Root cause was a two-script churn loop,
+not data loss:
+
+* `propagate_independent_category.py` (added 2026-05-05 as a one-time bootstrap to
+  ensure `[[Category:Independently git synced pages]]` was tagged on both wikis)
+  was wired into `fandom-sync.yml` on a `*/15 * * * *` cron and ran forever. It
+  builds a universe = (both wikis' category ∪ both mirror dirs' files) and ADDS the
+  category to the wiki page of anything in it lacking the tag — keyed off local-file
+  presence, never checking whether the local file has a *literal* tag.
+* The two `sync_*_unique_pages.py` scripts are repo-wins. For any mirror file whose
+  body lacks the literal tag, they treat propagate's wiki-side tag as a divergent
+  edit and strip it. Next cycle propagate re-adds it → ping-pong (verified on
+  `Kamuyaimimi`: tag→strip every ~2h on 2026-05-30).
+* The loop terminates for a page when a sync catches it after the strip and before
+  the re-tag → not a current category member → the sync's orphan-delete
+  (`cat_in_local` False) removes the **repo mirror file**. That deletion is what
+  Emma saw — the cure, not the disease. The wiki page is never touched
+  (DELETE only `local_path.unlink()`); content is recoverable from git history.
+* How the spurious pages first entered the mirror: a self-categorizing infobox
+  (`{{Infobox Noble}}`/`{{Infobox person}}`, which carry the category inside
+  `<noinclude>`) briefly leaked the tag outside noinclude and cascaded it onto every
+  transcluding article. The infoboxes are fixed (tag inside noinclude — verified).
+
+Fix, in safe order: (1) added the literal tag inside the trailing `<noinclude>` of
+the 6 genuinely-synced templates that were surviving only on propagate's re-tagging
+(`Template:Shinto`, `Shinto2`, `Shinto shrines`, `Shinto Talismans`, `Gokoku
+Shrines`, `Kofun navbar`) in BOTH mirror dirs, and tagged the one divergent legit
+page `Hayashi Shrine` (fandom copy; miraheze copy already tagged) — so they are now
+self-sustaining; (2) confirmed no other template and no divergent page is left
+untagged (so the drain can't delete a legit page); (3) removed the propagate
+preflight step from `fandom-sync.yml` and deleted the script (no other caller). The
+remaining untagged mirror files are all non-template cascade artifacts and will
+drain via orphan-delete over the next sync cycles (repo-only deletions, wiki
+untouched). **Verification of the drain + that the 6 templates retain their tag is
+pending the next fandom-sync CI cycle (tracked in `queue.md`).**
+
 ## 2026-05-28
 
 ### Reconcile superseded `.state`-removal todo entry with Emma's decision
