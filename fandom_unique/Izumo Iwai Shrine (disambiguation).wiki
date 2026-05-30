@@ -1,4 +1,4 @@
-'''Izumo Iwai Shrine''' (出雲伊波比神社, Izumo no Iwai no Kamuyashiro or Izumo Iwai Jinja) refers to several {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrines}}.
+'''Izumo Iwai Shrine''' (出雲伊波比神社, Izumo no Iwai no Kamuyashiro or Izumo Iwai Jinja) refers to several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines}}.
 
 * Izumo Iwai Shrine - An {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}}-listed minor shrine (小社) located in {{ill|Musashi Province|en|Musashi Province|qid=Q907398|lt=Musashi Province}}, Iruma District. There are four candidate shrines for this designation.
 * {{ill|Izumo Iwai Shrine (Miyadera)|ja|出雲祝神社}} - Located in Miyadera, Iruma City, Saitama Prefecture (formerly Iruma District). One of the candidate shrines.
@@ -22,7 +22,7 @@
 
 {{translated page|ja|出雲伊波比神社 (曖昧さ回避)|version=79966592|comment=Imported full ja history}}
 
-{{wikidata link|Q104539298|ja|出雲伊波比神社 (曖昧さ回避)|check_date=2026-05-15}}
+{{wikidata link|Q104539298|ja|出雲伊波比神社 (曖昧さ回避)|grok=none|check_date=2026-05-30}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
