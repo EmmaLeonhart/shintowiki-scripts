@@ -115,6 +115,46 @@ def check_enwiki_categories_with_wikidata(titles):
     return results
 
 
+_parent_last = 0.0
+
+
+def enwiki_parents(name):
+    """Bare names of the non-hidden parent categories of Category:<name> on
+    enwiki (e.g. 'Museums by region'). Throttled ~3/s; best-effort (returns
+    what it has on error)."""
+    global _parent_last
+    elapsed = time.time() - _parent_last
+    if elapsed < 0.34:
+        time.sleep(0.34 - elapsed)
+    out = []
+    cont = {}
+    while True:
+        params = {
+            "action": "query", "titles": f"Category:{name}",
+            "prop": "categories", "cllimit": "max", "clshow": "!hidden",
+            "format": "json",
+        }
+        params.update(cont)
+        try:
+            resp = requests.get(ENWIKI_API, params=params,
+                                headers={"User-Agent": WP_UA}, timeout=30)
+            _parent_last = time.time()
+            data = resp.json()
+        except Exception as e:
+            print(f"  enwiki parents API error for {name}: {e}")
+            return out
+        for page in data.get("query", {}).get("pages", {}).values():
+            for c in page.get("categories", []) or []:
+                t = c.get("title", "")
+                if t.startswith("Category:"):
+                    out.append(t[len("Category:"):])
+        if "continue" in data:
+            cont = data["continue"]
+        else:
+            break
+    return out
+
+
 def iter_source_categories(site):
     """Yield bare category names from the source category."""
     cat = site.categories[SOURCE_CAT]
@@ -197,6 +237,26 @@ def main():
 
             if not EN_LINK_RE.search(new_text):
                 new_text = new_text.rstrip() + f"\n[[en:Category:{name}]]\n"
+
+        # Link the enwiki parent categories. We add ALL non-hidden parents even
+        # if they don't exist locally yet: a red parent link lands the parent in
+        # Special:WantedCategories, the pipeline creates it
+        # (create_wanted_categories.py), triages it back into
+        # [[Category:Emmabot categories with enwiki]] (triage_emmabot_categories.py),
+        # and this script enriches IT next sweep — so the category tree builds up
+        # recursively from enwiki without us pre-creating anything (Emma 2026-05-30).
+        if exists:
+            n_parents = 0
+            for parent in enwiki_parents(name):
+                pat = re.compile(
+                    rf"\[\[\s*Category\s*:\s*{re.escape(parent)}\s*\]\]",
+                    re.IGNORECASE,
+                )
+                if not pat.search(new_text):
+                    new_text = new_text.rstrip() + f"\n[[Category:{parent}]]\n"
+                    n_parents += 1
+            if n_parents:
+                summary_tag += f"; +{n_parents} parent cat(s)"
 
         target_re = re.compile(
             rf"\[\[\s*Category\s*:\s*{re.escape(target_cat)}\s*\]\]",
