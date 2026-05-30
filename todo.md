@@ -15,9 +15,8 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 ## Wiki content tasks (manual / human review)
 
 - [ ] **ILLs without `WD=` / "Unknown" targets.** Fill missing `WD=` via `fix_ill_destinations.py`; check each context, don't blind-overwrite. Includes the Shikinaisha pages whose ILLs point at "Unknown".
-- [ ] **Duplicate QID disambiguation pages** (~621 `Q{QID}` pages → 2+ categories). `resolve_double_category_qids.py` auto-handles same-target cases (in the cleanup loop); genuinely-different-target ones need human review. Also `[[Category:duplicated qid category redirects]]`.
-- [ ] **Translate category names in `[[Category:Japanese language category names]]`** → canonical English titles; review the post-audit leftovers there for any remaining automated cleanup.
-- [ ] **Categories with interwikis but no `{{wikidata link}}`.** Re-run the wikidata-link resolution on these (older passes added interwikis without the template).
+- [ ] **Duplicate QID disambiguation pages** — mostly DRAINED (verified 2026-05-30: `[[Category:Double category qids]]` = **7** members, `[[Category:Duplicated qid category redirects]]` = **0**; the ~621 historical figure is long gone). `resolve_double_category_qids.py` auto-handles same-target cases in the cleanup loop; the 7-page tail is the genuinely-different-target review remnant. Low priority — nearly done.
+- [ ] **Translate category names in `[[Category:Japanese language category names]]`** → canonical English titles. **THE real remaining backlog (verified 2026-05-30: 1171 subcategories).** Mix of dated maintenance cats (`2020年2月` etc.) and content cats (`さいたま市の神社`). Needs a scripted translation pass — see the 8 PM plan cron.
 - [ ] **Multiple `{{wikidata link}}` on one page.** Per-case review — usually a Wikidata disambiguation issue.
 - [ ] **`[[Category:Pages with duplicated content]]` + remaining `need_translation/` pages.** Mostly handled by the cloud-queue worker (`docs/remote_queue_pipeline.md`); manual review only for the hard cases — canonical-title choice / history merge, and the 9 large kokuzō articles. NEVER strip `[[Category:Need translation]]` without verifying the body is actually English (the sync deletes the file when the category goes).
 
