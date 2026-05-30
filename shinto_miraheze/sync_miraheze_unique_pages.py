@@ -86,18 +86,16 @@ def sha1_text(text: str) -> str:
 
 
 def load_state(path: Path) -> dict:
-    if not path.exists():
-        return {}
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return {}
+    # STATE FILES REMOVED 2026-05-30 — see sync_git_synced_pages.load_state for the
+    # rationale. Always {} → baselines None → differing pages resolve by
+    # most-recent-edit timestamp; equal pages no-op; orphan/delete keys off the
+    # category tag, not the baseline.
+    return {}
 
 
 def save_state(path: Path, state: dict) -> None:
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+    # No-op: state is no longer persisted (see load_state).
+    return
 
 
 def iter_category_with_revisions(site, category_name, namespaces):

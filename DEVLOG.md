@@ -6,6 +6,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Sync `.state`-file removal — shipped (all 5 sync scripts now stateless)
+**Files:** `shinto_miraheze/sync_{git_synced_pages,need_translation,miraheze_unique_pages,fandom_unique_pages,duplicated_content}.py`, the 5 `.state` files (deleted), `queue.md`, `CLAUDE.md`, `docs/deferred_verification.md`
+
+Acted on Emma's "do it now" (and her point that deferring untested-but-reversible
+work is worse than shipping it visibly). Since conflict resolution is now
+most-recent-edit timestamp based, the per-page baselines the `.state` files held are
+vestigial. Made all 5 scripts stateless: `load_state` returns `{}`, `save_state` is a
+no-op, deleted the 5 `.state` files. Any page whose wiki/repo content differs is now
+decided by which side was edited more recently; equal pages no-op. For the wiki-wins
+dirs (need_translation, duplicated_content) the orphan branch was re-gated from the
+`base_sha is None` baseline to **wiki-page existence** (missing → push-create;
+exists-but-dropped-category → delete local) so a wiki-side category removal isn't
+churned back — the one real regression the blunt "always None" would have caused.
+Risks + the verify checklist are logged in `docs/deferred_verification.md` (the
+queue's now-first item is to review it 8–24h out). Pinned operational notes moved
+from queue.md into CLAUDE.md.
+
 ### Pruned 24 lowercase Template:Infobox case-collision twins from the repo
 **Files:** 24 `miraheze_unique/` + `fandom_unique/` `Template%3AInfobox <lowercase>.wiki`, `queue.md`
 

@@ -99,18 +99,21 @@ def sha1_text(text: str) -> str:
 
 
 def load_state(path: Path) -> dict:
-    if not path.exists():
-        return {}
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return {}
+    # STATE FILES REMOVED 2026-05-30. Conflict resolution is now most-recent-edit
+    # timestamp based (see sync_revision_aware.resolve_conflict), so the per-page
+    # (base_revid, base_sha, base_commit) baselines this used to hold are no longer
+    # needed. Always returns {} → every baseline lookup is None → any page whose
+    # wiki vs repo content differs is decided by which side was edited more
+    # recently; pages whose content is already equal are no-ops. Orphan/delete
+    # branches keep their existing behaviour (they key off the category tag, not
+    # the baseline).
+    return {}
 
 
 def save_state(path: Path, state: dict) -> None:
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+    # No-op: state is no longer persisted (see load_state). Kept as a stub so the
+    # existing save_state(...) call site needs no change.
+    return
 
 
 def iter_category_with_revisions(site, category_name, namespaces):

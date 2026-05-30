@@ -89,18 +89,16 @@ def sha1_text(text: str) -> str:
 
 
 def load_state(path: Path) -> dict:
-    if not path.exists():
-        return {}
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return {}
+    # STATE FILES REMOVED 2026-05-30 — see sync_git_synced_pages.load_state for the
+    # rationale. Always {} → baselines None → differing pages resolve by
+    # most-recent-edit timestamp; equal pages no-op; orphan/delete keys off the
+    # category tag, not the baseline.
+    return {}
 
 
 def save_state(path: Path, state: dict) -> None:
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+    # No-op: state is no longer persisted (see load_state).
+    return
 
 
 def iter_category_with_revisions(site, category_name):
@@ -377,56 +375,40 @@ def main():
             continue
 
         # Category still present in the repo, but the wiki no longer lists the
-        # page in the category. Two sub-cases by baseline:
+        # page in the category. STATELESS decision (no baseline — see load_state):
         #
-        # (a) base_sha is None → no prior sync baseline → file is newly added
-        #     to the repo and has never been on the wiki. PUSH-CREATE instead
-        #     of deleting (same fix as sync_git_synced_pages.py, 2026-05-27).
-        # (b) base_sha is not None → someone removed the category on-wiki
-        #     directly. Drop the local copy; wiki is source of truth for
-        #     category membership (preserved pre-fix behaviour).
-        if base_sha is None:
+        # * wiki page MISSING → genuinely new local file never synced →
+        #   PUSH-CREATE (the 2026-05-27 fix: never delete an unsynced new file).
+        # * wiki page EXISTS but isn't in the category → category dropped on the
+        #   wiki → wiki-wins for duplicated_content → DELETE local. (Page-existence
+        #   instead of base_sha is what keeps this correct without the state file —
+        #   re-adding here would churn against a wiki-side removal.)
+        page = site.pages[title]
+        if not page.exists:
             if edits_performed >= args.max_edits:
                 skipped += 1
                 continue
             if not args.apply:
-                print(f"[DRY] PUSH (new file, no prior baseline): {title}")
+                print(f"[DRY] PUSH-CREATE (new file, wiki page missing): {title}")
                 pushed += 1
                 continue
             try:
-                page = site.pages[title]
-                if page.exists:
-                    summary = (
-                        f"Sync from repo duplicated_content/ (re-add to category, "
-                        f"page exists but was not in [[Category:Pages with duplicated content]]) "
-                        f"{args.run_tag}"
-                    )
-                else:
-                    summary = (
-                        f"Sync from repo duplicated_content/ (create page from repo) "
-                        f"{args.run_tag}"
-                    )
-                result = page.save(local_text, summary=summary)
-                new_revid = (result or {}).get("newrevid") or _fetch_latest_revid(site, title) or 0
-                state[title] = {"revid": new_revid, "sha": local_sha, "sync_commit": current_head}
+                page.save(local_text, summary=f"Sync from repo duplicated_content/ (create page from repo) {args.run_tag}")
                 pushed += 1
                 edits_performed += 1
-                print(f"PUSH  {title}  (new file, rev {new_revid})")
+                print(f"PUSH-CREATE  {title}")
                 time.sleep(THROTTLE)
             except Exception as e:
                 errors += 1
-                print(f"ERROR pushing new file {title}: {e}")
+                print(f"ERROR creating {title}: {e}")
             continue
 
-        if local_sha != base_sha:
-            print(f"WARN: {title} has uncommitted local edits but wiki dropped the category — deleting anyway (recoverable from git)")
         if not args.apply:
             print(f"[DRY] DELETE local (cat removed on wiki): {title}")
             deleted_local += 1
             continue
         try:
             local_path.unlink()
-            state.pop(title, None)
             deleted_local += 1
             print(f"DELETE  {title}  (no longer in wiki category)")
         except Exception as e:

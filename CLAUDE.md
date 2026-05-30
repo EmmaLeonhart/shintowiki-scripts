@@ -130,6 +130,24 @@ repo root:
   the process (a small generic orchestrator for single-edit scripts)
   rather than hand-wiring each one.
 
+## Pinned operational notes (moved out of queue.md 2026-05-30)
+
+* **`[[Category:Need translation]]` removal is destructive — and so are the
+  duplicated_content / git_synced category removals.** When a wiki page loses its
+  gating category, the sync (`sync_need_translation.py` etc.) DELETES the local
+  file from the synced dir. The legitimate path is the cloud-queue worker removing
+  the category from a *genuinely-finished* page. NEVER bulk-strip a gating category
+  from pages by a filename/title heuristic without verifying the body — that mass-
+  deletes synced content. (Reversible from git history, but don't.)
+* **Sync scripts are stateless as of 2026-05-30** — no `sync_*.state` files;
+  conflict resolution is most-recent-edit timestamp; see each script's `load_state`
+  docstring and `docs/deferred_verification.md`.
+* **Script-template invariants.** Wiki-writing scripts take `--apply` /
+  `--max-edits` / `--run-tag`; use `mwclient`; `THROTTLE = 2.5`; set a
+  Miraheze-UA-policy-compliant `User-Agent` (a generic UA gets 403);
+  `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`.
+* **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
+
 ## Editing pace philosophy
 
 Bot edits must satisfy three constraints **simultaneously**:

@@ -54,6 +54,28 @@ batched verification we skip in the moment.
   After the Wikidata freeze lifts (2026-06-06), confirm the QS pipeline drains these
   (`modern-quickstatements/check_kana_qualifier_status.py`).
 
+- [ ] **Sync `.state`-file removal (shipped 2026-05-30) — HIGHEST-PRIORITY REVIEW.**
+  All 5 `sync_*.py` now run STATELESS: `load_state` returns `{}`, `save_state` is a
+  no-op, and the 5 `.state` files were deleted. Conflict resolution is timestamp-based
+  (most-recent-edit-wins), so any page whose wiki vs repo content DIFFERS is decided by
+  whichever side was edited more recently; pages with equal content are no-ops. Orphan
+  handling: git_synced + the unique dirs re-add via the category tag (repo-wins); the
+  wiki-wins dirs (need_translation, duplicated_content) were re-gated on **wiki-page
+  existence** (missing → push-create; exists-but-dropped-category → delete local) so a
+  wiki-side category removal isn't churned back.
+  '''Verify (8–24h after it hits a sync cycle):'''
+  1. Watch sync edit summaries — should NOT see runaway PUSH/DELETE counts or churn
+     (the same page edited every cycle). A few per cycle is normal.
+  2. Spot-check git_synced/need_translation/duplicated_content pages aren't being
+     spuriously deleted from the repo OR having categories re-added against a wiki-side
+     removal. Recover any wrong deletion from git history; restore any wrongly-deleted
+     wiki page via Special:Undelete.
+  3. Confirm `.state` files do NOT reappear (save_state is a no-op).
+  '''Known risk:''' timestamp comparison now drives EVERY differing page (was only
+  conflicts) → more SPARQL/wiki reads + the per-dir static policy only breaks ties.
+  Bounded by each script's `--max-edits`; everything is reversible. If it misbehaves,
+  the fix is to refine the stateless orphan/winner logic, not to bring back the files.
+
 ## Verified (kept briefly, then prune)
 
 *(empty — move Open items here with the date + what you observed once confirmed.)*
