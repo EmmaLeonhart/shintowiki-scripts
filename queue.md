@@ -15,11 +15,6 @@ Drop `sync_git_synced_pages.state`, `sync_need_translation.state`, `sync_mirahez
 - [ ] **Keep `sync_revision_aware.py` working** (now most-recent-edit-wins) with the reconstructed baselines.
 - [ ] **Test before wiring:** `--dry-run`-only verification mode, run on CI vs the live wiki for each of the 5 dirs; diff its decisions against the current `.state`-based decisions; only delete the `.state` files once decisions match for a full cycle. Roll out one script at a time.
 
-## Lowercase Template:Infobox case-collision — prune inert repo files
-
-The case-collision cleanup is auto-wired + self-clearing on the wiki (no action there). Repo task left:
-- [ ] **Prune the inert lowercase `.wiki` files from a case-sensitive checkout.** The `miraheze_unique/` + `fandom_unique/` `Template%3AInfobox <lowercase>.wiki` files (13 each) are sync-ignored + harmless but still tracked; they can't be `git rm`'d from the Windows case-insensitive dev checkout (path ops fold to the capital twin). Remove from a Linux/case-sensitive checkout and commit. Non-urgent.
-
 ## Pinned notes
 
 1. **`[[Category:Need translation]]` removal is destructive.** The sync in `shinto_miraheze/sync_need_translation.py` (run by `.github/workflows/wiki-cleanup.yml`) DELETES the file from `need_translation/` when the wiki page loses the category. Never bulk-strip based on filename heuristics. Verify the actual body (CJK outside `{{ill}}`/`{{jalink}}`/`{{nihongo}}` template params).

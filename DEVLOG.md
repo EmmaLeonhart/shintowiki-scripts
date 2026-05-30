@@ -6,6 +6,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Pruned 24 lowercase Template:Infobox case-collision twins from the repo
+**Files:** 24 `miraheze_unique/` + `fandom_unique/` `Template%3AInfobox <lowercase>.wiki`, `queue.md`
+
+Removed the inert lowercase case-collision twins via `git rm --cached` (index-only —
+never touches the colliding on-disk file, so no data-loss risk on the Windows
+case-insensitive checkout, which is why this had been deferred). Only removed the 12
+titles per dir whose CAPITAL canonical twin is also tracked (kept the capitals);
+left `Infobox historic site` (no tracked capital twin → would lose the only copy).
+The unique-sync scripts skip `LOWERCASE_COLLISION_TITLES`, so these won't reappear.
+
+### kana REMOVE generator: hold top-level removal until all names done
+**Files:** `modern-quickstatements/generate_kana_qualifier_remove.py`
+
+(see commit) Guarded the top-level P1814 removal so it only fires once every
+ojp-hani P1448 name on a multi-name item carries the カミノヤシロ qualifier.
+
 ### Deferred-verification log + monthly verification-sweep workflow
 **Files:** `docs/deferred_verification.md` (new), `.github/workflows/monthly-verification-sweep.yml` (new), `queue.md`
 
