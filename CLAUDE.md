@@ -114,6 +114,22 @@ repo root:
 * **State files use `.state`** (not `.json`) even if the contents are
   JSON, because `commit_state.sh` globs by extension.
 
+* **Never postpone a wiki edit for lack of local credentials — wire a
+  script into CI instead.** The dev session has NO wiki write creds
+  (reads work fine with a compliant User-Agent; writes do not). The rule
+  is NOT "defer it / hand it to Emma" — it is: write a small script that
+  performs the edit and add a step that runs it in the pre-orchestrator
+  GitHub Actions pipeline (`wiki-cleanup.yml`), where the creds live. It
+  is a *lagging* action (runs on the next CI fire), but it gets done with
+  zero local creds. **Usual protocol for a one-off edit:** a date-gated
+  script that, once its date arrives, performs the single edit on that
+  day and then no-ops (see `add_wikidata_crud_categories.py` /
+  `remove_wikidata_crud_categories.py` for the pattern). **If we ever have
+  to do another one of these single-edit-via-CI things,** that's the
+  signal they're starting to accumulate — at that point start formalising
+  the process (a small generic orchestrator for single-edit scripts)
+  rather than hand-wiring each one.
+
 ## Editing pace philosophy
 
 Bot edits must satisfy three constraints **simultaneously**:

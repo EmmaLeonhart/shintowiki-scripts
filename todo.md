@@ -4,6 +4,18 @@ Consolidated list of open tasks. Historical/completed work is tracked in [DEVLOG
 
 ---
 
+## Audit: which pre-orchestrator legacy scripts are actually running?
+
+Do a light audit of the legacy (pre-orchestrator) scripts still wired into the
+workflows. **Expectation: most are fine and should stay** — they run frequently or
+have good reasons to, and many deliberately have NO `.state` file because they rely
+on the live state of the wiki (Special: pages, category membership) and do that
+very effectively. The audit is just to confirm which still do useful work vs. which
+have genuinely gone inert, not a delete-spree. (We kept these un-optimised because
+they predate the orchestrator and didn't need porting.) Catalogue each: does it
+still produce edits, what's its trigger, is it wiki-state-driven (keep) or truly
+done (candidate to retire)?
+
 ## Current session work
 
 Active work queue lives in [queue.md](queue.md) (queue — items are deleted when done). This file (`todo.md`) is the long-horizon backlog.
