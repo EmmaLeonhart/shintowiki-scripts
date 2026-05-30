@@ -6,6 +6,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Sync conflict resolution: most-recent-edit wins, not revision count
+**Files:** `shinto_miraheze/sync_revision_aware.py`
+
+Emma flagged a wrong overwrite on [[Kamitsukeno no Michiji]] ("Sync from repo
+miraheze_unique/ … repo wins on revision count"). Revision/commit COUNT is
+arbitrary on both sides — and especially meaningless for the unique-pages dirs,
+where wiki histories were intentionally truncated and the repo files are newly
+created, so neither side's count reflects which holds the intended content.
+Replaced the count-based comparison in `resolve_conflict` with latest-edit
+timestamp: read the wiki page's top-revision time and the most recent git commit
+time for the file; whichever was edited more recently wins; fall back to the
+per-dir static policy only when a timestamp is unreadable or they tie. Added
+`wiki_latest_edit_epoch` / `repo_latest_edit_epoch` / `_iso_to_epoch`; removed the
+count helpers (only `resolve_conflict` used them). Signature unchanged
+(`baseline_*` accepted but now unused), so all 5 sync scripts keep working.
+Verified the helpers against the live wiki + repo.
+
 ### Q3: link enwiki parent categories (enrich_enwiki_categories.py)
 **Files:** `shinto_miraheze/enrich_enwiki_categories.py`, `queue.md`
 
