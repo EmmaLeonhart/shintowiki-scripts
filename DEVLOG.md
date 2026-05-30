@@ -6,6 +6,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Q4 (steps 1-2): self-categorizing {{wikidata link}} + op appends blank template
+**Files:** `miraheze_unique/Template%3AWikidata link.wiki`, `fandom_unique/Template%3AWikidata link.wiki`, `shinto_miraheze/orchestrators/ops/wikidata_link.py`, `queue.md`
+
+Emma-approved (Open questions #4). Both `{{wikidata link}}` templates now wrap
+their render body in `{{#if:{{{1|}}}|<old body verbatim>|{{#switch:{{NAMESPACE}}|=
+[[Category:Pages without wikidata]]|Category=[[Category:Pages without
+wikidata]]}}}}` — a blank invocation renders nothing and self-categorizes only in
+ns 0/14 (cascade-safe; never on template-transcluded pages). QID-bearing calls hit
+the verbatim old body, so zero render change for existing pages. The
+`wikidata_link` op's mainspace/category branch now appends a blank `{{wikidata
+link}}` (not the literal category tag) so the template drives the categorization
+("every page carries the template, blank when no QID" — Emma). Added
+`WD_TEMPLATE_PRESENT_RE` (matches blank OR filled) for the skip check, else the op
+would re-append every pass — idempotency unit-tested (pass 2 = no-op). Template
+branch unchanged (noinclude tag). Legacy literal-tag pages left for the crud step.
+
+Both templates brace-balanced; op compiles + behaviour/idempotency tested locally.
+Couldn't render-test the template pre-ship (can't redefine a wiki template via API)
+— '''verifying post-sync via action=parse next cleanup cycle''', will fix fast if
+wrong. Remaining Q4: verify render, make Pages-without-wikidata crud, recreate
+Categories-missing-wikidata.
+
 ### Sync conflict resolution: most-recent-edit wins, not revision count
 **Files:** `shinto_miraheze/sync_revision_aware.py`
 

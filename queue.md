@@ -73,28 +73,33 @@ shipping). `enwiki_parents()` verified vs live enwiki; full `--apply` runs in CI
 
 ## Q4. Recreate `[[Category:Categories missing wikidata]]` + self-categorizing wikidata-link (Emma approved 2026-05-30)
 
-Emma approved the cascade-safe approach ("Yes, that is great. Please do it."). Steps:
-- [ ] Edit `{{wikidata link}}` (lives in `miraheze_unique/` + `fandom_unique/`,
-  repo-wins sync) to add a no-QID branch: when arg 1 is blank, render nothing and
-  self-categorize into `[[Category:Pages without wikidata]]` — but ONLY in content
-  namespaces (guard with `{{#ifeq:{{NAMESPACE}}|...}}` / `{{#switch}}` so it fires
-  in ns 0 + Category, and NEVER on Template pages, to avoid the transclusion
-  cascade `wikidata_link.py` was built to dodge). Guard the current body so a blank
-  invocation doesn't emit `{{q|}}` + empty `[[da:]]` interwikis.
-- [ ] Change `ops/wikidata_link.py`: where a page has neither a `{{wikidata link}}`
-  nor the category, APPEND a blank `{{wikidata link}}` (instead of just adding the
-  category) so the template self-categorizes going forward. Keep the noinclude
-  split for template pages.
-- [ ] Make `[[Category:Pages without wikidata]]` a crud category (add to
-  `Category:Crud categories` so `remove_crud_categories` / the pipeline treats it
-  accordingly — confirm this is the intended lifecycle with Emma if ambiguous).
-- [ ] Recreate `[[Category:Categories missing wikidata]]` as a typed parent and
-  wire the mainspace + category orchestrators to add it to any page lacking the
-  wikidata-link template / whose wikidata link doesn't resolve.
-- [ ] **Wiki-wide mass edit** (blank template appended to thousands of pages) —
-  respect editing-pace philosophy + orchestrator budgets; roll out behind a
-  dry-run; arguably an attended first cycle. Verify no template-cascade regression
-  after the first sweep.
+Emma approved the cascade-safe approach ("Yes, that is great. Please do it.").
+- [x] '''Template self-categorization SHIPPED''' — `{{wikidata link}}` (both
+  `miraheze_unique/` + `fandom_unique/`) now wraps its render body in
+  `{{#if:{{{1|}}}|<old body verbatim>|{{#switch:{{NAMESPACE}}|=…|Category=…}}}}`:
+  blank arg 1 renders nothing and self-categorizes `[[Category:Pages without
+  wikidata]]` only in ns 0/14 (cascade-safe). QID-bearing calls hit the verbatim
+  old body → zero render change. Brace-balanced; logic reasoned (couldn't render-
+  test pre-ship — verify post-sync via action=parse).
+- [x] '''Op change SHIPPED''' — `ops/wikidata_link.py` mainspace/category branch
+  now appends a blank `{{wikidata link}}` (not the literal category). Added
+  `WD_TEMPLATE_PRESENT_RE` (matches blank OR filled template) for the skip check —
+  prevents re-append churn; idempotency unit-tested. Template branch unchanged
+  (noinclude tag, cascade-safe). Legacy literal-tag pages left for crud cleanup.
+- [ ] VERIFY post-sync (next cleanup cycle): action=parse a QID-bearing page
+  (renders unchanged) + a page the op just blanked (renders nothing, gains
+  `[[Category:Pages without wikidata]]`); confirm NO category cascade onto
+  template-transcluding pages. Fix immediately if the template render is wrong.
+- [ ] Make `[[Category:Pages without wikidata]]` a crud category (so
+  `remove_crud_categories` strips the LEGACY literal tags; the template-emitted
+  category is transclusion-sourced, not a literal tag, so it survives). Do AFTER
+  the verify step.
+- [ ] Recreate `[[Category:Categories missing wikidata]]` as a typed parent +
+  wire orchestrators to add it to pages lacking the template / whose wikidata link
+  doesn't resolve. (`ops/wikidata_lookup.py` already validates QIDs — tie in there
+  for "link present but doesn't resolve".)
+- [ ] Watch the wiki-wide mass edit pace (budget-bounded by the orchestrators;
+  blank template appended to many pages over many cycles).
 
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now")
 

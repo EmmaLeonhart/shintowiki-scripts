@@ -1,11 +1,12 @@
 """
 wikidata_link op
 ================
-Tags pages missing a {{wikidata link|...}} template with the appropriate
-"missing wikidata" maintenance category:
+Ensures pages missing a {{wikidata link|...}} template get one / get the
+appropriate "missing wikidata" maintenance category:
 
-* Mainspace / Category pages  → ``[[Category:Pages without wikidata]]``
-  appended at the end of the page.
+* Mainspace / Category pages  → append a blank ``{{wikidata link}}`` at the end
+  of the page; the template self-categorizes into
+  ``[[Category:Pages without wikidata]]`` (ns 0/14 only) when it has no QID.
 * Template pages              → ``[[Category:Templates missing wikidata]]``
   inserted inside a ``<noinclude>`` block so the category doesn't
   cascade through transclusion into every page that uses the template
@@ -31,6 +32,11 @@ MAINSPACE_TAG = f"[[Category:{MAINSPACE_CAT}]]"
 TEMPLATE_TAG = f"[[Category:{TEMPLATE_CAT}]]"
 
 WD_LINK_RE = re.compile(r"\{\{\s*wikidata\s*link\s*\|", re.IGNORECASE)
+# Matches the template whether or not it has args: "{{wikidata link|..." OR a
+# blank "{{wikidata link}}". Used for the mainspace/category presence check so a
+# blank template we appended counts as present (otherwise we'd re-append it every
+# pass — infinite churn).
+WD_TEMPLATE_PRESENT_RE = re.compile(r"\{\{\s*wikidata\s*link\s*[|}]", re.IGNORECASE)
 
 _MAINSPACE_CAT_RE = re.compile(
     r"\[\[\s*Category\s*:\s*Pages[ _]without[ _]wikidata\s*\]\]\n?",
@@ -97,10 +103,17 @@ def apply(title: str, text: str):
     if title.startswith("Template:"):
         return _apply_template(text)
 
-    # Mainspace / Category: existing behaviour.
-    if WD_LINK_RE.search(text):
+    # Mainspace / Category: append a BLANK {{wikidata link}} so the template
+    # itself self-categorizes the page into [[Category:Pages without wikidata]]
+    # (Emma's design: every page carries the wikidata-link template, blank when
+    # there's no QID yet). The template's no-arg-1 branch emits that category
+    # only in ns 0/14, so it never cascades through template transclusion.
+    if WD_TEMPLATE_PRESENT_RE.search(text):
         return None, None
+    # A page still carrying the LEGACY literal [[Category:Pages without
+    # wikidata]] tag is left alone — the crud-category cleanup strips that tag,
+    # and a later pass then appends the blank template (avoids double-tagging).
     if _MAINSPACE_CAT_RE.search(text):
         return None, None
-    new_text = text.rstrip() + "\n" + MAINSPACE_TAG + "\n"
-    return new_text, "tag page without wikidata link"
+    new_text = text.rstrip() + "\n{{wikidata link}}\n"
+    return new_text, "append blank {{wikidata link}} (self-categorizes page without wikidata)"
