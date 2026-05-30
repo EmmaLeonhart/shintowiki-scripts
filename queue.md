@@ -7,24 +7,19 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
 
-## 1. VERIFY propagate retirement drained cleanly (code shipped 2026-05-30)
+## 1. MONITOR propagate-retirement drain to ~0 (verified working 2026-05-30)
 
-The propagate-churn fix shipped 2026-05-30 (commit + DEVLOG "Retired
-`propagate_independent_category.py`"): 6 legit templates + `Hayashi Shrine`
-tagged in the repo, propagate step removed from `fandom-sync.yml`, script
-deleted. **Remaining = verification only, after the next fandom-sync CI cycle
-runs:**
-- [ ] Confirm the fandom-sync workflow is green post-change (no missing-step /
-  YAML error from removing the propagate step).
-- [ ] Re-run the churn-candidate count (mirror files lacking the literal
-  `[[Category:Independently git synced pages]]` tag). Expect: the 6 templates
-  (`Shinto`, `Shinto2`, `Shinto shrines`, `Shinto Talismans`, `Gokoku Shrines`,
-  `Kofun navbar`) + `Hayashi Shrine` STILL carry the tag; the non-template
-  cascade artifacts drain toward ~0 over successive cycles.
-- [ ] Spot-check on the wikis that the 6 templates remained category members and
-  were not orphan-deleted. If any legit page was wrongly dropped, restore from
-  git history.
-- [ ] Once drained + verified, delete this item.
+Retirement shipped + VERIFIED 2026-05-30. First post-change `fandom-sync` run
+(`cdf736ee`, run 26690133613) was GREEN and behaved exactly as designed: 48
+spurious cascade artifacts orphan-deleted, **none of the 6 legit templates
+touched**, all 6 templates + `Hayashi Shrine` retain their tag. fandom_unique
+drained ~49→2; the 2 remaining (`Take Momotake no Mikoto`,
+`Takeiwatatsu-no-Mikoto`) are spurious and drain next cycle. miraheze_unique has
+~67 left, all spurious deity/clan articles, draining over the next sync cycles
+(bounded by `--max-edits`; repo-only deletions, wiki untouched).
+- [ ] Passive: once miraheze_unique churn-candidate count (files lacking the
+  literal `[[Category:Independently git synced pages]]` tag) reaches ~0, delete
+  this item. No action needed — purely automatic; just confirm at a later tick.
 
 ## 2. Address ALL of the [[Open questions]] — Emma's 2026-05-28 dispositions
 

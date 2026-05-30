@@ -44,8 +44,14 @@ untagged (so the drain can't delete a legit page); (3) removed the propagate
 preflight step from `fandom-sync.yml` and deleted the script (no other caller). The
 remaining untagged mirror files are all non-template cascade artifacts and will
 drain via orphan-delete over the next sync cycles (repo-only deletions, wiki
-untouched). **Verification of the drain + that the 6 templates retain their tag is
-pending the next fandom-sync CI cycle (tracked in `queue.md`).**
+untouched).
+
+**Verified 2026-05-30:** the first post-change `fandom-sync` run (`cdf736ee`, run
+26690133613, started 17:20Z after the 16:26Z push) was GREEN and behaved as
+designed — 48 spurious cascade artifacts orphan-deleted, none of the 6 legit
+templates touched, all 6 + `Hayashi Shrine` retain their tag. fandom_unique drained
+~49→2 (both remaining are spurious deity articles); miraheze_unique ~67 left, all
+spurious, draining over the next cycles. The churn loop is dead.
 
 ### Pruned 4 verified-resolved [[Open questions]] dispositions
 **Files:** `git_synced/Open questions.wiki`, `queue.md`
