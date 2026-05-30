@@ -69,6 +69,31 @@ secret-removal grep needs the (intentionally absent) literals; kana stragglers a
 a Wikidata SPARQL check under the 2026-06-06 freeze; and two items are larger
 builds (recreate `Categories missing wikidata`, drop sync `.state` files).
 
+### Numbered the remaining [[Open questions]] + posted bot responses/questions
+**Files:** `git_synced/Open questions.wiki`, `queue.md`
+
+Per Emma's request (the page bullets weren't numbered, so "item N" was ambiguous),
+numbered the 6 remaining questions 1–6 and appended an inline `(bot 2026-05-30)`
+response to each — either a concrete blocker (1 kana = SPARQL under freeze + the
+referenced script doesn't exist; 2 lowercase + 3 autocreated-cats = miraheze anon
+API 403, need creds/CI; 6 secret-removal = need the real redacted literals) or a
+design question (4 Categories-missing-wikidata = OK to make the template
+self-categorize only in ns 0/14 to avoid the transclusion cascade?), or a scoping
+note (5 sync `.state` removal = attended-only). This routes the confusion back to
+Emma on the interface page rather than blocking in chat.
+
+### Built weekly Open-questions → queue.md sweep workflow
+**Files:** `.github/workflows/weekly-open-questions-sweep.yml`
+
+New scheduled workflow (Mondays 06:17 UTC + manual dispatch) that PREPENDS a task
+block to `queue.md` telling the agent to analyse `git_synced/Open questions.wiki`
+and decompose unhandled items into concrete queue steps. Idempotent via a
+`<!-- weekly-oq-sweep -->` marker (won't stack a second block if the prior week's is
+unconsumed); inserts before the first `## ` heading; commits `[skip ci]` with the
+same retry-push loop as `build-remote-queue.yml`. YAML validated. Keeps the
+human↔bot interface page from going stale by guaranteeing a recurring sweep lands
+where the autonomous loop will work it.
+
 ## 2026-05-28
 
 ### Reconcile superseded `.state`-removal todo entry with Emma's decision

@@ -1,0 +1,89 @@
+name: Weekly Open Questions Sweep
+
+# Once a week, PREPEND a task to queue.md telling the agent to analyse
+# git_synced/Open questions.wiki (the human<->bot interface page) and
+# decompose any actionable item / unhandled Emma disposition into concrete
+# queue.md steps. This workflow does NOT do the analysis itself — it only
+# schedules it into the queue, where the autonomous work-loop picks it up.
+#
+# Idempotent: a marker comment (<!-- weekly-oq-sweep -->) guards against
+# stacking a second block if the previous week's task is still unconsumed.
+#
+# Commits with [skip ci] so it doesn't trigger the cleanup pipeline.
+
+on:
+  schedule:
+    # Mondays 06:17 UTC (off the :00 mark to avoid the scheduled-workflow herd)
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prepend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Prepend Open-questions sweep task to queue.md
+        run: |
+          python3 - <<'PY'
+          import datetime, pathlib, sys
+
+          MARKER = "<!-- weekly-oq-sweep -->"
+          q = pathlib.Path("queue.md")
+          text = q.read_text(encoding="utf-8")
+
+          if MARKER in text:
+              print("An unconsumed weekly-oq-sweep block is already in queue.md; "
+                    "not adding another.")
+              sys.exit(0)
+
+          today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          block = (
+              f"## Weekly sweep: analyse [[Open questions]] into queue.md "
+              f"({MARKER} {today})\n\n"
+              "Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. "
+              "Read `git_synced/Open questions.wiki` (the wiki version is "
+              "authoritative — pull/confirm the live page, don't clobber Emma's "
+              "edits). For every actionable item or Emma disposition not yet "
+              "handled: either decompose it into concrete steps lower in this "
+              "queue, or act on it now and prune the resolved bullet from the "
+              "page. Then delete THIS block.\n\n"
+          )
+
+          # Insert as the first work item: before the first '## ' heading,
+          # after the queue.md preamble.
+          lines = text.splitlines(keepends=True)
+          insert_at = next((i for i, ln in enumerate(lines)
+                            if ln.startswith("## ")), len(lines))
+          new_text = "".join(lines[:insert_at]) + block + "".join(lines[insert_at:])
+          q.write_text(new_text, encoding="utf-8")
+          print(f"Prepended weekly Open-questions sweep task dated {today}.")
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet queue.md; then
+            echo "queue.md unchanged; nothing to commit."
+            exit 0
+          fi
+          git add queue.md
+          git commit -m "chore: schedule weekly Open-questions sweep into queue.md [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; pulling --rebase and retrying"
+            git pull --rebase
+          done
+          echo "All push attempts exhausted" >&2
+          exit 1

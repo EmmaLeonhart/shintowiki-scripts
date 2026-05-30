@@ -34,37 +34,23 @@ AI translation pipeline (exists — `remote_queue.py` need_translation worker +
 longer concerning), fandom Infobox→Portable (Emma: "no AI does this" — already
 dropped in `todo.md`), VISION architecture (already retired in `todo.md`).
 
-**Remaining — each BLOCKED on the dev box or a larger build:**
-- Kana ojp-hani stragglers — needs a Wikidata SPARQL check; the referenced
-  `seed_kana_qualifier.py` does not exist (mechanism is the QS generators
-  `modern-quickstatements/generate_kana_qualifier_{add,remove}.py`). Wikidata
-  FREEZE to 2026-06-06; Emma handles stragglers manually. Verify via SPARQL read
-  post-freeze, then prune.
-- `delete_lowercase_template_collisions` (Emma: "done") — needs a miraheze read to
-  confirm 0 transclusions / templates deleted. **`shinto.miraheze.org` returns 403
-  for anonymous API**, so not verifiable from the dev box without creds; confirm
-  from a CI step / with creds, then prune.
-- Enrich autocreated categories (Emma: category empty / already done) — same 403
-  block; confirm `Category:Categories autocreated by EmmaBot` membership from CI /
-  with creds, drop the `todo.md` item + prune.
-- Secret-removal history rewrite (Emma: "already done") — needs the actual
-  redacted literals (intentionally not in the repo) to grep history; can't confirm
-  from context. Prune once a creds-side grep confirms clean.
-- Recreate `[[Category:Categories missing wikidata]]` — Emma gave a full design;
-  has a template-cascade design blocker. Larger build (see detailed bullet below).
-- Drop sync `.state` files — Emma: "do it now" — larger attended build (the SAFE
-  REDESIGN section below).
-
-## 3. Build a weekly GitHub Action: prepend an Open-questions→queue.md analysis task
-
-Create a GitHub Actions workflow that runs **weekly** and PREPENDS an item to the
-top of `queue.md` instructing the agent to analyse `git_synced/Open questions.wiki`
-and decompose any actionable item on it into concrete `queue.md` steps. Purpose:
-the Open-questions page is the human↔bot interface; this keeps it from going stale
-by guaranteeing a recurring sweep lands in the queue where the autonomous loop will
-work it. (The workflow only edits `queue.md` — prepend a dated task block; commit
-with `[skip ci]`; it does not itself do the analysis, it schedules it into the
-queue.)
+**Remaining 6 bullets are now NUMBERED on the page, each with an inline bot
+response/question posted for Emma (2026-05-30) — awaiting her answer:**
+1. Kana ojp-hani stragglers — SPARQL check held until the 2026-06-06 Wikidata
+   freeze lifts; the referenced `seed_kana_qualifier.py` doesn't exist (mechanism
+   is the QS generators). Parked for Emma's OK.
+2. `delete_lowercase_template_collisions` (Emma: "done") — can't verify
+   (`shinto.miraheze.org` anon API = 403); asked Emma to confirm on-wiki or let CI
+   self-confirm.
+3. Enrich autocreated categories (Emma: empty/done) — same 403 block; asked Emma
+   to confirm, then drop the `todo.md` item.
+4. Recreate `[[Category:Categories missing wikidata]]` — buildable; posted the
+   cascade-safe design decision (self-categorize only in ns 0/14, keep noinclude
+   on templates) for Emma's OK before building.
+5. Drop sync `.state` files — flagged as attended-only (safety-critical, not for
+   the unattended cron); the SAFE REDESIGN spec is below.
+6. Secret-removal history rewrite (Emma: "done") — can't confirm without the real
+   literals; asked Emma to paste them or confirm.
 
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now")
 
