@@ -47,6 +47,15 @@ SELECT ?item ?on ?top WHERE {{
 }}
 """
 
+# AMBIGUOUS stragglers: items with >1 ojp-hani P1448 official name — the
+# generators can't decide which to attach the kana qualifier to, so these are
+# Emma's MANUAL domain (Open questions #1: "Emma handles these directly").
+AMBIGUOUS_Q = f"""
+SELECT ?item (COUNT(DISTINCT ?on) AS ?c) WHERE {{
+  ?item p:P1448 ?st . ?st ps:P1448 ?on . FILTER(LANG(?on) = "{OJP}")
+}} GROUP BY ?item HAVING(COUNT(DISTINCT ?on) > 1)
+"""
+
 
 def main():
     print("=== kana-qualifier status check (read-only) ===\n")

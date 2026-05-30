@@ -1,0 +1,90 @@
+# Kana ambiguous stragglers: items with >1 ojp-hani P1448 official name (86 items)
+# Read-only from Wikidata SPARQL. The kana-qualifier generators attach a katakana+カミノヤシロ
+# qualifier to THE ojp-hani P1448 name; with multiple such names there is no single one to attach to.
+
+Q48758315  (Hanoura Shrine):  和奈佐意富曽神社  |  和耶神社
+Q110915859  (Oshaku Shrine):  南子神社  |  波夜志命神社  |  加弥命神社  |  佐伎多麻比咩命神社  |  加弥命神社  |  片菅命神社
+Q134893135  (Hayatamawakenomikoto Shrine):  佐伎多麻比咩命神社  |  波夜多麻和気命神社
+Q134927474  (Hachiman Shrine):  加弥命神社  |  多祁美加加命神社  |  竹麻神社
+Q134930277  (Ninomiya Shrine):  加弥命神社  |  伊波乃比咩命神社  |  久良恵命神社  |  夜須命神社
+Q134930603  (Ryou Shrine):  佐伎多麻比咩命神社  |  穂都佐気命神社
+Q135192783  (Ninomiya Shrine (Tsubota)):  加弥命神社  |  伊波乃比咩命神社  |  夜須命神社
+Q134893133  (Sutou Shrine):  波夜志命神社  |  伊豆奈比咩命神社
+Q22120521  (Miyake Shrine):  三宅神社  |  三宅神社  |  大鹿三宅神社  |  江神社
+Q11379322  (Izanagi Shrine):  伊射奈岐神社  |  伊射奈岐神社  |  三島鴨神社
+Q135270126  (Mishimakamono Shrine):  三島鴨神社  |  伊射奈岐神社
+Q11378828  (Iyo Shrine):  伊予神社  |  伊予豆比子命神社
+Q11379248  (Iwashizu Shrine):  伊和志豆神社  |  岡太神社
+Q11379327  (Ikota Shrine):  多太神社  |  伊居太神社
+Q11379329  (Ikeda Shrine):  多太神社  |  伊居太神社
+Q11472009  (Okata Shrine):  岡太神社  |  河内国魂神社
+Q135039219  (Iketano Shrine):  多太神社  |  伊居太神社
+Q135039222  (Wokatano Shrine):  岡太神社  |  河内国魂神社
+Q135039221  (Iwashitsuno Shrine):  岡太神社  |  伊和志豆神社
+Q135185797  (Iwashizu Shrine):  岡太神社  |  伊和志豆神社
+Q135206858  (Okata Shrine):  岡太神社  |  河内国魂神社
+Q135270127  (Iketano Shrine):  伊居太神社  |  多太神社
+Q135270129  (Wokatano Shrine):  岡太神社  |  河内国魂神社
+Q11390944  (Hachimangū Kinomiya Shrine):  伊波例命神社  |  伊波久良和気命神社
+Q11608777  (Migukurumitama Shrine):  利雁神社  |  美具久留御玉神社
+Q11404276  (Kitano Tenjinsha):  物部天神社  |  出雲伊波比神社
+Q335618  (Kumano Hayatama Taisha):  天手力男神社  |  熊野早玉神社
+Q705035  (Kumano Hongū Taisha):  天手力男神社  |  海神社  |  熊野坐神社
+Q11433065  (Ōsaki Shrine):  荒樫神社  |  大前神社
+Q705949  (Sumiyoshi Taisha):  大依羅神社  |  中臣須牟地神社  |  草津大歳神社  |  住吉坐神社
+Q135186675  (E Shrine):  大井神社  |  江神社
+Q11442606  (Ame-no-Tanagao Shrine):  物部布都神社  |  天手長比売神社  |  天手長男神社
+Q135198631  (Kunitsu Shrine):  物部布都神社  |  国津神社
+Q11434131  (Ōshio Hachiman Shrine):  天国津彦神社  |  高岡神社  |  天八百萬比咩神社  |  天国津日咩神社
+Q11481363  (Jogu Shrine):  天国津彦神社  |  天国津日咩神社  |  天八百萬比咩神社  |  天八百萬比咩神社
+Q18457651  (Watazumi Shrine):  大島神社  |  和多都美神社  |  和多都美御子神社  |  波良波神社
+Q135017431  (Ōmiyanome Shrine):  大宮売神社  |  大宮売神
+Q135190252  (Rokusho Shrine):  多賀神社  |  長谷神社  |  若倭神社
+Q11473738  (Okada Kamo Shrine):  岡田鴨神社  |  相楽神社
+Q11490723  (Inbe Shrine):  天村雲神伊自波夜比売神社  |  忌部神社  |  忌部神社
+Q11631810  (Uketa Shrine):  松尾神社  |  松尾神社  |  石穂神社
+Q482065  (Atsuta Jingū):  下知我麻神社  |  上知我麻神社  |  孫若御子神社  |  御田神社  |  熱田神社
+Q11512854  (Hoshinomiya-sha Shrine):  上知我麻神社  |  下知我麻神社  |  上知我麻神社
+Q11556984  (Azai Shrine (Ichinomiya)):  浅井神社  |  野見神社
+Q11559099  (Kaijin Shrine):  和多都美神社  |  和多都美御子神社  |  胡禄神社  |  胡禄御子神社
+Q11646130  (Nomi Shrine):  神服神社  |  野身神社
+Q11610732  (Miminashi Yamaguchi Shrine):  目原坐高御魂神社  |  耳成山口神社
+Q11547445  (Himekoso Shrine):  阿遅速雄神社  |  比売許曽神社
+Q11671792  (Kōzu-gū):  阿遅速雄神社  |  比売許曽神社
+Q135039202  (Himekosono Shrine):  阿遅速雄神社  |  比売許曽神社
+Q246455  (Tatsuta Shrine):  龍田比古龍田比女神社  |  龍田坐天御柱国御柱神社
+Q11677158  (Kashima Onata Shrine):  鹿島緒名太神社  |  鹿島伊都乃比気神社  |  鹿島伊都乃比気神社  |  鹿島緒名太神社
+Q11677857  (Koganeyama Shrine (Ishinomaki)):  黄金山神社  |  計仙麻神社
+Q17226544  (Nakatomi Itate Shrine):  中臣印達神社  |  阿波遅神社
+Q117848511  (Akaruhimenomikoto Shrine):  天水分豊浦命神社  |  赤留比売命神社
+Q135185705  (Akaruhimenomikoto Shrine former site):  天水分豊浦命神社  |  赤留比売命神社
+Q134926963  (Himemiya Shrine):  多祁伊志豆伎命神社  |  伊波比咩命神社
+Q30925511  (Sengen Shrine):  伊賀牟比売命神社  |  火牟須比命神社
+Q134926924  (Sanai Shrine):  文梨神社  |  阿米都瀬気多知命神社  |  阿米都瀬気多知命神社
+Q134927903  (Unai Shrine):  伊波弖別命神社  |  阿米都瀬気多知命神社
+Q134930633  (Habuhime Shrine (Shimoda)):  大津往命神社  |  波布比売命神社
+Q134928742  (Nijugohashira Shrine):  火地神社  |  流田神社
+Q135017435  (Miketsu Shrine):  御食津神  |  御食津神社
+Q135017438  (Kotoshironushi Shrine):  事代主神社  |  事代主神
+Q135039197  (Kusatsuohotoshino Shrine):  中臣須牟地神社  |  草津大歳神社
+Q135195732  (Hinomisaki Shrine (branch shrine outside the precincts of Hongū Shrine)):  佐久多神社  |  同社坐韓国伊太弖神社
+Q72727981  (Nagahatabe Shrine):  今木青坂稲実荒御魂神社  |  今城青坂稲実池上神社  |  今城青八坂稲実神社  |  長幡部神社
+Q135039255  (Witano Shrine):  乎美禰神社  |  猪田神社
+Q135069159  (Inoda Shrine):  乎美禰神社  |  猪田神社
+Q135069160  (Inoda Shrine (Iga Province)):  乎美禰神社  |  猪田神社
+Q135194870  (Ōanamochi Miyo Shrine):  久麻加夫都阿良加志比古神社  |  大穴持神像石神社
+Q705297  (Nishinomiya Shrine):  保久良神社  |  大国主西神社
+Q708859  (Isonokami Jingū):  出雲健雄神社  |  石上坐布都御魂神社
+Q3199052  (Koshikiiwa Shrine):  保久良神社  |  大国主西神社
+Q135038811  (Kamuharano- Shrine):  和伎坐天乃夫支売神社  |  綺原坐健伊那大比売神社
+Q17228121  (Katada Shrine):  大国玉比売神社  |  榎村神社  |  榎村神社
+Q98082987  (Amanokaguyama Shrine):  天香山坐櫛真命神社  |  畝尾坐健土安神社
+Q723417  (Ōasahiko Shrine):  宇志比古神社  |  大麻比古神社
+Q17226795  (Sana Shrine):  守山神社  |  佐那神社
+Q135039229  (Utsukano Shrine):  宇都可神社  |  波太伎神社
+Q135039294  (Hatada Shrine):  守山神社  |  畠田神社
+Q59282644  (Takagi Shrine):  宮目神社  |  高城神社  |  高城神社
+Q20043641  (Kashima Amatarashiwake Shrine):  石神山精神社  |  鹿島天足別神社
+Q17225818  (Yuta Shrine):  雷電神社  |  雷電神社  |  湯田神社
+Q135186710  (Kandate Iino Takaichi Shrine):  高市神社  |  飯野神社
+Q135186711  (Iino Shrine):  高市神社  |  飯野神社
