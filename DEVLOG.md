@@ -47,6 +47,22 @@ drain via orphan-delete over the next sync cycles (repo-only deletions, wiki
 untouched). **Verification of the drain + that the 6 templates retain their tag is
 pending the next fandom-sync CI cycle (tracked in `queue.md`).**
 
+### Pruned 4 verified-resolved [[Open questions]] dispositions
+**Files:** `git_synced/Open questions.wiki`, `queue.md`
+
+Acted on Emma's 2026-05-28 dispositions and removed the bullets she'd answered as
+resolved: (1) AI translation pipeline — confirmed it exists (`remote_queue.py`
+`need_translation` worker + `wiki-cleanup.yml`; `todo.md` already correct);
+(2) category-pages race-condition audit — Emma "no longer concerning";
+(3) hand-convert fandom Infobox→Portable — Emma "no AI does this" (already dropped
+in `todo.md`); (4) VISION architecture program — already retired in `todo.md`.
+Remaining Open-questions items are blocked on the dev box and noted in `queue.md`
+item 2: `shinto.miraheze.org` returns 403 to the anonymous API, so the
+lowercase-collision and autocreated-categories checks need creds/CI; the
+secret-removal grep needs the (intentionally absent) literals; kana stragglers are
+a Wikidata SPARQL check under the 2026-06-06 freeze; and two items are larger
+builds (recreate `Categories missing wikidata`, drop sync `.state` files).
+
 ## 2026-05-28
 
 ### Reconcile superseded `.state`-removal todo entry with Emma's decision

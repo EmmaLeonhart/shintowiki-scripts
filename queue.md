@@ -31,26 +31,34 @@ runs:**
 Barrel through every one of Emma's "**" dispositions on `git_synced/Open
 questions.wiki`, verify each via code/API/log/SPARQL, ACT on it, and DELETE the
 resolved bullet (Emma has directed that resolved bullets be removed). The page is
-wiki-wins; pull latest first and don't clobber Emma's edits. Items (detail +
-investigation already done in the "From [[Open questions]]" section below):
-- Kana ojp-hani stragglers — verify SPARQL/dry-run, prune if done.
-- `delete_lowercase_template_collisions` — verify, prune (Emma: "done").
-- AI translation pipeline — confirm it exists (cloud-queue worker), fix
-  `todo.md`'s "doesn't exist yet", prune.
-- Enrich autocreated categories — confirm `Category:Categories autocreated by
-  EmmaBot` is empty/done, drop the todo + prune.
-- Race-condition audit — Emma: no longer concerning → drop + prune.
-- Recreate `[[Category:Categories missing wikidata]]` — Emma gave a full design
-  (orchestrator adds the page to anything lacking the `{{wikidata link}}`
-  template / lacking a real Wikidata link; every page gets a blank
-  `{{wikidata link}}`; tag `Pages without wikidata` as crud). Resolve the
-  template-cascade design blocker, then build (see detailed bullet below).
-- Drop sync `.state` files — Emma: "do it now" (the SAFE REDESIGN section below).
-- Secret-removal history rewrite — Emma: "already done" → grep history, prune if
-  clean.
-- Fandom Infobox→Portable — Emma: "no AI does this" → already dropped, prune.
-- VISION architecture — Emma: dead except translation pipeline → already retired,
-  prune.
+wiki-wins; pull latest first and don't clobber Emma's edits.
+
+**Pruned 2026-05-30 (verified resolved, removed from the repo copy of the page):**
+AI translation pipeline (exists — `remote_queue.py` need_translation worker +
+`wiki-cleanup.yml`; `todo.md` already correct), race-condition audit (Emma: no
+longer concerning), fandom Infobox→Portable (Emma: "no AI does this" — already
+dropped in `todo.md`), VISION architecture (already retired in `todo.md`).
+
+**Remaining — each BLOCKED on the dev box or a larger build:**
+- Kana ojp-hani stragglers — needs a Wikidata SPARQL check; the referenced
+  `seed_kana_qualifier.py` does not exist (mechanism is the QS generators
+  `modern-quickstatements/generate_kana_qualifier_{add,remove}.py`). Wikidata
+  FREEZE to 2026-06-06; Emma handles stragglers manually. Verify via SPARQL read
+  post-freeze, then prune.
+- `delete_lowercase_template_collisions` (Emma: "done") — needs a miraheze read to
+  confirm 0 transclusions / templates deleted. **`shinto.miraheze.org` returns 403
+  for anonymous API**, so not verifiable from the dev box without creds; confirm
+  from a CI step / with creds, then prune.
+- Enrich autocreated categories (Emma: category empty / already done) — same 403
+  block; confirm `Category:Categories autocreated by EmmaBot` membership from CI /
+  with creds, drop the `todo.md` item + prune.
+- Secret-removal history rewrite (Emma: "already done") — needs the actual
+  redacted literals (intentionally not in the repo) to grep history; can't confirm
+  from context. Prune once a creds-side grep confirms clean.
+- Recreate `[[Category:Categories missing wikidata]]` — Emma gave a full design;
+  has a template-cascade design blocker. Larger build (see detailed bullet below).
+- Drop sync `.state` files — Emma: "do it now" — larger attended build (the SAFE
+  REDESIGN section below).
 
 ## 3. Build a weekly GitHub Action: prepend an Open-questions→queue.md analysis task
 
