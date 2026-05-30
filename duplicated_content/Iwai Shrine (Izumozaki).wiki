@@ -48,7 +48,7 @@ Since 1690 CE (Genroku 3), the shrine has held the {{ill|Maritime Safety Prayer 
 |-
 | RONSHA || {{ill|Iwai Shrine (Izumozaki)|lt=Iwai Shrine|ja|石井神社 (出雲崎町)|qid=Q123118312}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}} || — || — || {{ill|Ihawino Shrine|lt=Ihawino Shrine|qid=Q135040453}} || {{coord|37.542861|138.687750|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182442 DB]
 |}
-{{wikidata link|Q123118312|da|d:Q16277320|check_date=2026-05-15}}
+{{wikidata link|Q123118312|da|d:Q16277320|grok=none|check_date=2026-05-29}}
 
 == Accidentally Overwritten Content ==
 
@@ -170,7 +170,7 @@ Since 1690 CE (Genroku 3), the shrine has held the {{ill|Maritime Safety Prayer 
 
 == part of (P361) ==
 
-* {{ill|List of Shikinaisha in Echigo Province|ltq=Q11636502|qid=Q11636502}}
+* {{ill|List of Shikinaisha in Echigo Province|ja|越後国の式内社一覧|qid=Q11636502}}
 ** Series ordinal: 24
 ** P155: {{ill|Mishima Shrine|lt=Mishima Shrine|ja|三島神社 (柏崎市)|qid=Q124496790}}
 ** P156: {{ill|Uonuma Shrine|ltq=Q11674000|qid=Q11674000}}
@@ -178,7 +178,7 @@ Since 1690 CE (Genroku 3), the shrine has held the {{ill|Maritime Safety Prayer 
 == located in the administrative territorial entity (P131) ==
 
 * {{ill|Izumozaki|ltq=Q1204583|qid=Q1204583}}
-* {{ill|Echigo Province|lt=Echigo Province|be|Этыго (правінцыя)|ckb|پارێزگای ئێچیگۆ|cs|Provincie Ečigo|de|Provinz Echigo|en|Echigo Province|es|Provincia de Echigo|fa|ولایت اچیگو|fr|Province d'Echigo|gl|Provincia de Echigo|id|Provinsi Echigo|it|Echigo|ja|越後国|ko|에치고국|lt|Ečigo žemė|nl|Echigo (provincie)|pt|Província de Echigo|ru|Этиго (провинция)|simple|Echigo Province|sk|Ečigo (provincia)|sr|Провинција Ечиго|tr|Echigo (vilayet)|uk|Провінція Етіґо|zh_min_nan|Etigo-kok|zh_yue|越後國|zh|越後國|qid=Q666514}}
+* {{ill|Echigo Province|be|Этыго (правінцыя)|ckb|پارێزگای ئێچیگۆ|cs|Provincie Ečigo|de|Provinz Echigo|es|Provincia de Echigo|fa|ولایت اچیگو|fr|Province d'Echigo|gl|Provincia de Echigo|id|Provinsi Echigo|it|Echigo|ja|越後国|ko|에치고국|lt|Ečigo žemė|nl|Echigo (provincie)|pt|Província de Echigo|ru|Этиго (провинция)|simple|Echigo Province|sk|Ečigo (provincia)|sr|Провинција Ечиго|tr|Echigo (vilayet)|uk|Провінція Етіґо|zh|越後國|zh_min_nan|Etigo-kok|zh_yue|越後國|qid=Q666514|lt=Echigo Province}}
 * {{ill|Santō District, Niigata|ltq=Q1155567|qid=Q1155567}}
 
 == coordinate location (P625) ==
