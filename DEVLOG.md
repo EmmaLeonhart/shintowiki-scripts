@@ -6,6 +6,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Q3: link enwiki parent categories (enrich_enwiki_categories.py)
+**Files:** `shinto_miraheze/enrich_enwiki_categories.py`, `queue.md`
+
+The "Emmabot categories with enwiki" pages already got interwiki + `{{wikidata
+link}}` from the existing `enrich_enwiki_categories.py` (already in
+`wiki-cleanup.yml`); the missing enrichment Emma flagged was '''parent
+categories'''. Added `enwiki_parents()` and, for each found-on-enwiki page, link
+all non-hidden enwiki parents not already present. Per Emma we link parents even
+when they don't exist locally — a red link → WantedCategories → created → triaged
+back into "with enwiki" → enriched again, so the tree builds recursively with
+nothing pre-created. Deliberately extended the EXISTING drainer rather than adding
+a competing script (a separate one would have raced it removing the same tag —
+caught by reading the pipeline first). No cursor: wiki-side category draining is
+the worklist. `enwiki_parents()` verified vs live enwiki; `--apply` path runs in
+CI. Takes effect next cleanup run.
+
 ### Barrelled the Open-questions backlog: verified Q1/Q2/Q6, scoped Q3/Q4, answered Q5
 **Files:** `modern-quickstatements/check_kana_qualifier_status.py` (new), `shinto_miraheze/check_lowercase_collisions.py` (new), `docs/API.md`, `todo.md`, `git_synced/Open questions.wiki`, `queue.md`
 

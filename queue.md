@@ -54,25 +54,22 @@ blocker dissolved once a Miraheze-UA-compliant User-Agent was used):**
    closed). Prune bullet #6 once Emma OKs (left for her since she's actively
    editing the page).
 
-## Q3. Enrich the 5106 `Category:Emmabot categories with enwiki` pages
+## Q3. Enrich `Category:Emmabot categories with enwiki` — parent categories (SHIPPED 2026-05-30, verify in CI)
 
-Emma 2026-05-30: the autocreated-cats parent is empty, but the successor category
-`Category:Emmabot categories with enwiki` (5106 members, scoped 2026-05-30) holds
-bare-stub category pages that still need enrichment. This is a per-page sweep over
-ns 14 → belongs as a **`category_orchestrator` op**, not a standalone script
-(migration criterion). Build steps:
-- [ ] Design the enrichment precisely with Emma's "interwikis, wikidata links,
-  parent categories" intent: for each stub category page that has a matching enwiki
-  category, add (a) the `[[en:Category:X]]` interwiki, (b) `{{wikidata link}}` if
-  the enwiki category has a Wikidata item (resolve via enwiki API → sitelink →
-  QID), (c) parent categories mirrored from the enwiki category where they exist
-  locally. Skip anything already present (idempotent).
-- [ ] Write `ops/enrich_autocreated_category.py` (light op: `apply(title, text)`)
-  guarded to only act on members of `[[Category:Emmabot categories with enwiki]]`.
-  Respect THROTTLE + the category-orchestrator budget; bound per-run.
-- [ ] Dry-run, then wire into `category_orchestrator` OPS. Also handle the smaller
-  `Secondary category triage` (147) and `Triaged categories with only one member`
-  (209) sets if in scope.
+Investigation 2026-05-30: these pages already get `[[en:]]` interwiki +
+`{{wikidata link}}` from the EXISTING `enrich_enwiki_categories.py` (already wired
+in `wiki-cleanup.yml`), which drains "with enwiki" into terminal buckets. The
+missing enrichment was '''parent categories'''. Shipped (commit `0144a1bd`): added
+`enwiki_parents()` to that script + link ALL non-hidden enwiki parents on each
+found-on-enwiki page (even non-local ones → WantedCategories → created → triaged →
+enriched recursively, per Emma). No new script/cursor — wiki-side draining is the
+worklist; a separate script would have RACED the existing one (caught before
+shipping). `enwiki_parents()` verified vs live enwiki; full `--apply` runs in CI.
+- [ ] Verify next `wiki-cleanup` run: pages gain `[[Category:<enwiki parent>]]`
+  links + drain to terminal buckets; red parents appear in WantedCategories and get
+  created/triaged. Then delete this item.
+- [ ] (optional) mirror the same parent-linking into `enrich_jawiki_categories.py`
+  (jawiki bucket currently 0 members, so low priority).
 
 ## Q4. Recreate `[[Category:Categories missing wikidata]]` + self-categorizing wikidata-link (Emma approved 2026-05-30)
 
