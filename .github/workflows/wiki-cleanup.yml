@@ -424,6 +424,23 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_broken_redirects" \
             python3 shinto_miraheze/delete_broken_redirects.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      # Wikidata-missing crud lifecycle (Emma 2026-05-30): date-gated, no-ops
+      # until their dates. add_ makes Pages-without-wikidata / Categories-missing-
+      # wikidata crud (from 2026-06-06) so remove_crud_categories below drains the
+      # legacy literal tags; remove_ un-cruds them (from 2026-12-06). Runs BEFORE
+      # remove_crud_categories so the crud tag is present when it sweeps.
+      - name: "Cleanup: add_wikidata_crud_categories (date-gated)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: add_wikidata_crud_categories" \
+            python3 shinto_miraheze/add_wikidata_crud_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
+      - name: "Cleanup: remove_wikidata_crud_categories (date-gated)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: remove_wikidata_crud_categories" \
+            python3 shinto_miraheze/remove_wikidata_crud_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Cleanup: remove_crud_categories"
         if: always() && steps.*.outcome != 'cancelled'
         run: |

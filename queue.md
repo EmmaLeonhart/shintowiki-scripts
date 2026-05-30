@@ -6,11 +6,6 @@ The purpose of this file is to bound scope. If a task is not in this queue, it i
 
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, shrine-disambig content strip) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
-## Q4 — finish self-categorizing wikidata-link (core shipped 2026-05-30)
-
-Core shipped (DEVLOG 2026-05-30): `{{wikidata link}}` self-categorizes on a blank invocation (ns 0/14, cascade-safe) and `ops/wikidata_link.py` appends a blank template. Category recreation is NOT needed — `[[Category:Pages without wikidata]]` auto-creates as pages get tagged (Emma 2026-05-30). Only leftover:
-- [ ] Tag `[[Category:Pages without wikidata]]` into `[[Category:Crud categories]]` so `remove_crud_categories` strips the legacy literal tags (the template-emitted one is transclusion-sourced and survives). Trivial one-off wiki edit — do directly on the wiki or via a CI step; not locally doable (no wiki creds in the dev session).
-
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now") — ATTENDED ONLY
 
 Drop `sync_git_synced_pages.state`, `sync_need_translation.state`, `sync_miraheze_unique_pages.state`, `sync_fandom_unique_pages.state`, `sync_duplicated_content.state` by reconstructing the per-page baseline durably instead of from a committed file. **Safety-critical, NOT locally dry-runnable (no wiki creds on the dev box) — attended, CI-verified pass only; never let the unattended hourly cron ship it** (a baseline-reconstruction bug mass-deletes synced pages — the 2026-05-10 / 05-27 incidents).
