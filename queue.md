@@ -34,23 +34,70 @@ AI translation pipeline (exists — `remote_queue.py` need_translation worker +
 longer concerning), fandom Infobox→Portable (Emma: "no AI does this" — already
 dropped in `todo.md`), VISION architecture (already retired in `todo.md`).
 
-**Remaining 6 bullets are now NUMBERED on the page, each with an inline bot
-response/question posted for Emma (2026-05-30) — awaiting her answer:**
-1. Kana ojp-hani stragglers — SPARQL check held until the 2026-06-06 Wikidata
-   freeze lifts; the referenced `seed_kana_qualifier.py` doesn't exist (mechanism
-   is the QS generators). Parked for Emma's OK.
-2. `delete_lowercase_template_collisions` (Emma: "done") — can't verify
-   (`shinto.miraheze.org` anon API = 403); asked Emma to confirm on-wiki or let CI
-   self-confirm.
-3. Enrich autocreated categories (Emma: empty/done) — same 403 block; asked Emma
-   to confirm, then drop the `todo.md` item.
-4. Recreate `[[Category:Categories missing wikidata]]` — buildable; posted the
-   cascade-safe design decision (self-categorize only in ns 0/14, keep noinclude
-   on templates) for Emma's OK before building.
-5. Drop sync `.state` files — flagged as attended-only (safety-critical, not for
-   the unattended cron); the SAFE REDESIGN spec is below.
-6. Secret-removal history rewrite (Emma: "done") — can't confirm without the real
-   literals; asked Emma to paste them or confirm.
+**Status of the 6 numbered questions (Emma answered all on 2026-05-30; the 403
+blocker dissolved once a Miraheze-UA-compliant User-Agent was used):**
+1. Kana — CHECKED (`modern-quickstatements/check_kana_qualifier_status.py`):
+   5340 candidates remain, NOT done, frozen to 2026-06-06. Stays open; re-check +
+   let the QS pipeline drain after the freeze.
+2. Lowercase collisions — CHECKED (`shinto_miraheze/check_lowercase_collisions.py`):
+   25/26 twins still exist, self-clearing via `canonicalize_template_case`. Stays
+   open; revisit ~1 month out per Emma.
+3. Enrich successor categories — SCOPED + decomposed into "## Q3" below. Emma:
+   autocreated-cats category is empty (confirmed 0) but the successor
+   `Category:Emmabot categories with enwiki` (5106 pages) still needs enrichment.
+4. Recreate `Categories missing wikidata` — Emma approved the cascade-safe design
+   ("Yes, do it"). Decomposed into "## Q4" below.
+5. Drop sync `.state` files — answered Emma (NOT done); attended-only safety build
+   (SAFE REDESIGN spec below). No autonomous action.
+6. Secret-removal — DONE (Emma confirmed history rewrite months ago; no
+   secret-bearing scripts remain; `docs/API.md` placeholder fixed; `todo.md` task
+   closed). Prune bullet #6 once Emma OKs (left for her since she's actively
+   editing the page).
+
+## Q3. Enrich the 5106 `Category:Emmabot categories with enwiki` pages
+
+Emma 2026-05-30: the autocreated-cats parent is empty, but the successor category
+`Category:Emmabot categories with enwiki` (5106 members, scoped 2026-05-30) holds
+bare-stub category pages that still need enrichment. This is a per-page sweep over
+ns 14 → belongs as a **`category_orchestrator` op**, not a standalone script
+(migration criterion). Build steps:
+- [ ] Design the enrichment precisely with Emma's "interwikis, wikidata links,
+  parent categories" intent: for each stub category page that has a matching enwiki
+  category, add (a) the `[[en:Category:X]]` interwiki, (b) `{{wikidata link}}` if
+  the enwiki category has a Wikidata item (resolve via enwiki API → sitelink →
+  QID), (c) parent categories mirrored from the enwiki category where they exist
+  locally. Skip anything already present (idempotent).
+- [ ] Write `ops/enrich_autocreated_category.py` (light op: `apply(title, text)`)
+  guarded to only act on members of `[[Category:Emmabot categories with enwiki]]`.
+  Respect THROTTLE + the category-orchestrator budget; bound per-run.
+- [ ] Dry-run, then wire into `category_orchestrator` OPS. Also handle the smaller
+  `Secondary category triage` (147) and `Triaged categories with only one member`
+  (209) sets if in scope.
+
+## Q4. Recreate `[[Category:Categories missing wikidata]]` + self-categorizing wikidata-link (Emma approved 2026-05-30)
+
+Emma approved the cascade-safe approach ("Yes, that is great. Please do it."). Steps:
+- [ ] Edit `{{wikidata link}}` (lives in `miraheze_unique/` + `fandom_unique/`,
+  repo-wins sync) to add a no-QID branch: when arg 1 is blank, render nothing and
+  self-categorize into `[[Category:Pages without wikidata]]` — but ONLY in content
+  namespaces (guard with `{{#ifeq:{{NAMESPACE}}|...}}` / `{{#switch}}` so it fires
+  in ns 0 + Category, and NEVER on Template pages, to avoid the transclusion
+  cascade `wikidata_link.py` was built to dodge). Guard the current body so a blank
+  invocation doesn't emit `{{q|}}` + empty `[[da:]]` interwikis.
+- [ ] Change `ops/wikidata_link.py`: where a page has neither a `{{wikidata link}}`
+  nor the category, APPEND a blank `{{wikidata link}}` (instead of just adding the
+  category) so the template self-categorizes going forward. Keep the noinclude
+  split for template pages.
+- [ ] Make `[[Category:Pages without wikidata]]` a crud category (add to
+  `Category:Crud categories` so `remove_crud_categories` / the pipeline treats it
+  accordingly — confirm this is the intended lifecycle with Emma if ambiguous).
+- [ ] Recreate `[[Category:Categories missing wikidata]]` as a typed parent and
+  wire the mainspace + category orchestrators to add it to any page lacking the
+  wikidata-link template / whose wikidata link doesn't resolve.
+- [ ] **Wiki-wide mass edit** (blank template appended to thousands of pages) —
+  respect editing-pace philosophy + orchestrator budgets; roll out behind a
+  dry-run; arguably an attended first cycle. Verify no template-cascade regression
+  after the first sweep.
 
 ## Sync `.state`-file removal — SAFE REDESIGN (Emma approved 2026-05-28, "do it now")
 

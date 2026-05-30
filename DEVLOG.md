@@ -6,6 +6,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Barrelled the Open-questions backlog: verified Q1/Q2/Q6, scoped Q3/Q4, answered Q5
+**Files:** `modern-quickstatements/check_kana_qualifier_status.py` (new), `shinto_miraheze/check_lowercase_collisions.py` (new), `docs/API.md`, `todo.md`, `git_synced/Open questions.wiki`, `queue.md`
+
+Emma answered all 6 numbered Open-questions and told me to stop hiding behind the
+miraheze "403" and actually run local scripts. Key unblock: the 403 was a
+User-Agent-policy rejection — a compliant UA (`ShintoWikiBot/1.0 (…; email)`) gets
+200, so miraheze reads work from the dev box after all.
+
+- '''Q6 secret removal — DONE.''' Emma confirmed the history rewrite happened months
+  ago. Verified no secret-bearing scripts remain (grep for "redacted secret" finds
+  only doc refs); fixed `docs/API.md`'s two hard-coded `[REDACTED_SECRET_1]`
+  examples to `os.getenv("WIKI_PASSWORD","")`; closed the `todo.md` task.
+- '''Q1 kana — CHECKED, not done.''' New read-only `check_kana_qualifier_status.py`
+  runs the generator's own APPEND+SEED SPARQL: 5340 candidates remain (frozen to
+  2026-06-06). Stays open.
+- '''Q2 lowercase collisions — CHECKED, not done.''' New `check_lowercase_collisions.py`
+  (compliant UA) checks both wikis: 25/26 twins still exist, self-clearing via
+  `canonicalize_template_case`. Stays open (revisit ~1mo).
+- '''Q5 sync .state removal — answered.''' Not done; remains attended-only safety
+  build.
+- '''Q3 enrich + Q4 categories-missing-wikidata — scoped + decomposed into queue.md.'''
+  Q3 target is `Category:Emmabot categories with enwiki` (5106 pages, a ns-14 sweep
+  → category_orchestrator op). Q4 (Emma approved the cascade-safe ns-0/14 design) is
+  a template edit + op change + crud cat + category recreate; wiki-wide, behind a
+  dry-run. Both are orchestrator-op-level builds left as concrete specs rather than
+  rushed.
+- Also reformatted Emma's inline page answers as attributed `(Emma)` bullets.
+
 ### Retired `propagate_independent_category.py` — it had become a churn engine
 **Files:** `.github/workflows/fandom-sync.yml`, `shinto_miraheze/propagate_independent_category.py` (deleted), 13 `fandom_unique/` + `miraheze_unique/` `.wiki` files, `queue.md`
 
