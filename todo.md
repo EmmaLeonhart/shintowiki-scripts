@@ -235,7 +235,7 @@ strips the `{{ill}}`/`{{wikidata link}}`/`{{shortdesc}}` that would otherwise er
 
 ### Drop state files from the wiki↔repo sync scripts — Emma approved safe redesign 2026-05-28
 
-Now an active build spec in `queue.md` (§"Sync `.state`-file removal — SAFE REDESIGN").
+Active build spec in `queue.md` (§"Sync `.state`-file removal — SAFE REDESIGN").
 Emma said "do it now" and chose the durable-baseline redesign — embed the baseline in
 push edit summaries + reconstruct pull baselines from content — over the naive
 git-history derivation, which the 2026-05-28 investigation found unsafe (it reintroduces
