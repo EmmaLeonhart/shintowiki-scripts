@@ -13,9 +13,9 @@ This template is an implementation detail, encapsulating the classification asso
 
 [[Category: implementation details|{{PAGENAME}}]]
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q14445689|ar|قالب:صندوق معلومات آلة موسيقية/تصنيف|arz|قالب:Infobox instrument/Classification|as|সাঁচ:Infobox instrument/Classification|azb|شابلون:Infobox instrument/Classification|ban|Mal:Infobox Instrument/Classification|bcl|Plantilya:Infobox instrumento/Klasipikasyon|bh|टेम्पलेट:Infobox instrument/Classification|bn|টেমপ্লেট:Infobox instrument/Classification|ckb|داڕێژە:زانیاریدانی ئامێری مۆسیقی/پۆلێنکردن|en|Template:Infobox instrument/Classification|fa|الگو:جعبه اطلاعات ساز/Classification|gu|ઢાંચો:Infobox instrument/Classification|hak|模板:Infobox instrument/Classification|id|Templat:Infobox instrument/Classification|ilo|Plantilia:Infobox instrumento/pannakaidasig|ja|Template:Infobox instrument/Classification|jv|Cithakan:Infobox instrument/Classification|km|ទំព័រគំរូ:Infobox instrument/Classification|lt|Šablonas:Infolentelė muzikos instrumentas/Klasifikacija|min|Templat:Infobox Instrument/Classification|check_date=2026-05-30}}
 </noinclude>
