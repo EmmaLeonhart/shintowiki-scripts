@@ -134,9 +134,9 @@
 {{documentation|content=
 This subtemplate is used by {{tl|infobox holiday}} to generate the date for holidays in future years.  It should not be used directly.
 }}
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link|Q15220505|arz|قالب:Infobox holiday/date|ban|Mal:Infobox holiday/date|bjn|Citakan:Infobox holiday/date|blk|တမ်းပလေက်:Infobox holiday/date|bn|টেমপ্লেট:তথ্যছক ছুটির দিন/তারিখ|ckb|داڕێژە:Infobox holiday/date|dag|Tɛmplet:Infobox holiday/date|el|Πρότυπο:Infobox holiday/date|en|Template:Infobox holiday/date|fa|الگو:جعبه اطلاعات جشن/تاریخ|gor|Templat:Infobox holiday/date|gu|ઢાંચો:Infobox holiday/date|id|Templat:Infobox holiday/date|ja|Template:Infobox holiday/date|ko|틀:기념일 정보/날짜|ku|Şablon:Agahîdank cejn/dîrok|mai|आकृति:Infobox holiday/date|ml|ഫലകം:Infobox holiday/date|mnw|ထာမ်ပလိက်:Infobox holiday/date|ms|Templat:Kotak info cuti/tarikh|check_date=2026-05-30}}
 </noinclude>

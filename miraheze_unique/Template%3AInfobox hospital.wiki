@@ -241,7 +241,8 @@
 | speciality; specialty 
 }}<noinclude>
 {{Documentation}}
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q5618337|als|Vorlage:Infobox Krankenhaus|ar|قالب:صندوق معلومات مستشفى|as|সাঁচ:Infobox hospital|az|Şablon:Xəstəxana|ban|Mal:Infobox hospital|ba|Ҡалып:Больница|be|Шаблон:Бальніца|bg|Шаблон:Болница|bh|टेम्पलेट:Infobox hospital|bn|টেমপ্লেট:তথ্যছক হাসপাতাল|bs|Šablon:Infokutija bolnica|cv|Шаблон:Пульницă|da|Skabelon:Infoboks hospital|de|Vorlage:Infobox Krankenhaus|dtp|Templat:Infobox hospital|el|Πρότυπο:Νοσοκομείο|en|Template:Infobox hospital|es|Plantilla:Ficha de hospital|et|Mall:Haigla|eu|Txantiloi:Ospitale infotaula|check_date=2026-05-30}}
+[[Category:Templates not transcluded in mainspace]]
 </noinclude>
 <noinclude>
 [[Category:Pages using infobox hospital with unknown parameters|_VALUE_{{PAGENAME}}]]

@@ -389,9 +389,9 @@ Other maintenance categories include:
 [[Category:Events infobox templates|Holiday]]
 [[Category:Infobox templates using Wikidata]]
 [[Category:Templates that add a tracking category]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
+{{wikidata link||en|Infobox holiday/doc|check_date=2026-05-30}}
 </noinclude>
