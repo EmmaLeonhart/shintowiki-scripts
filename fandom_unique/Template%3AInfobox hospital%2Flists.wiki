@@ -1,8 +1,6 @@
  <noinclude> 
 
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 [[Category:Templates missing wikidata]]
-{{wikidata link|Q14940444|ban|Mal:Infobox hospital/lists|bh|टेम्पलेट:Infobox hospital/lists|bn|টেমপ্লেট:তথ্যছক হাসপাতাল/তালিকা|en|Template:Infobox hospital/lists|fa|الگو:Infobox hospital/lists|hy|Կաղապար:Տեղեկաքարտ Հիվանդանոց/ցանկեր|id|Templat:Infobox hospital/lists|mai|आकृति:Infobox hospital/lists|ml|ഫലകം:Infobox hospital/lists|my|တမ်းပလိတ်:Infobox hospital/lists|ne|ढाँचा:Infobox hospital/lists|nso|Template:Infobox hospital/lists|sa|फलकम्:Infobox hospital/lists|sco|Template:Infobox hospital/lists|simple|Template:Infobox hospital/lists|th|แม่แบบ:กล่องข้อมูล โรงพยาบาล/lists|vi|Bản mẫu:Thông tin bệnh viện/danh sách|check_date=2026-05-30}}
 </noinclude>
