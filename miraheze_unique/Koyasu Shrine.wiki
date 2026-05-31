@@ -1,12 +1,9 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
+'''Koyasu Shrine''' (子安神社) is a type of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} primarily dedicated to deities associated with [[safe childbirth]] and [[:en:child-rearing|child-rearing]].
 
-'''Koyasu Shrine''' (子安神社) is a type of {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} primarily dedicated to deities associated with [[safe childbirth]] and [[:en:child-rearing|child-rearing]].
-
-Shrines are generally divided into those enshrining [[Konohanasakuya-hime]], who is also the deity of {{ill|Mount Fuji|en|Mount Fuji|qid=Q39231|lt=Mount Fuji|1=Mount Fuji}} (and the main deity of [[:en:Sengen Shrine|Sengen Shrine]]), and those enshrining [[Kushinadahime]], the wife of [[Susanoo-no-Mikoto|Susanoo]]. Both deities are genealogically related, with the former being the child and the latter being the grandchild of [[Ōyamatsumi]].
+Shrines are generally divided into those enshrining [[Konohanasakuya-hime]], who is also the deity of {{ill|Mount Fuji|en|Mount Fuji|qid=Q39231|lt=Mount Fuji}} (and the main deity of [[:en:Sengen Shrine|Sengen Shrine]]), and those enshrining [[Kushinadahime]], the wife of [[Susanoo-no-Mikoto|Susanoo]]. Both deities are genealogically related, with the former being the child and the latter being the grandchild of [[Ōyamatsumi]].
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Koyasu Shrine (Q110895374)|lt=Koyasu Shrine|qid=Q110895374}} — Ichikawa
@@ -40,23 +37,22 @@ Shrines are generally divided into those enshrining [[Konohanasakuya-hime]], who
 * {{ill|Kōnōchi Shrine (Q11447895)|lt=Kōnōchi Shrine|qid=Q11447895}} — Kihō-chō
 * {{ill|子安神社 (Q135461063)|lt=子安神社|qid=Q135461063}} — Jōetsu-shi
 * {{ill|子安神社 (Q137010076)|lt=子安神社|qid=Q137010076}} — Isehara
-<!-- END: auto-generated Wikidata shrine list -->
 
 == See Also ==
-* {{ill|Komori Shrine|ja|子守神社|12=simple|13=User:Immanuelle/Komori Shrine}}
-* {{ill|Kosodate Myōjin|ja|子育明神|12=simple|13=User:Immanuelle/Kosodate Myōjin|ja_comment=jawiki redirects to 護王神社|1=Goō Shrine|comment=changed title based on wikidata|qid=Q11632526}}
-* {{ill|Koyasu Jizō|ja|子安地蔵|12=simple|13=User:Immanuelle/Koyasu Jizō|ja_comment=jawiki link invalid}}
-** {{ill|Koyasu Jizō Hall|ja|子安地蔵堂|12=simple|13=User:Immanuelle/Koyasu Jizō Hall|1=Koyasu-Jizō|comment=changed title based on wikidata|qid=Q11447885}}
-** {{ill|Koyasu Jizō Temple|ja|子安地蔵寺|12=simple|13=User:Immanuelle/Koyasu Jizō Temple}}
-* {{ill|Komori Jizō|ja|子守地蔵|12=simple|13=User:Immanuelle/Komori Jizō|ja_comment=jawiki link invalid}}
-* {{ill|Kosodate Jizō|ja|子育地蔵|12=simple|13=User:Immanuelle/Kosodate Jizō}}
-* {{ill|Suitengū|en|Suitengū|qid=Q125319456|lt=Suitengū|1=Suitengū}}
+* {{ill|Komori Shrine|ja|子守神社}}
+* {{ill|Goō Shrine|ja|子育明神|12=simple|13=User:Immanuelle/Kosodate Myōjin|ja_comment=jawiki redirects to 護王神社|comment=changed title based on wikidata|qid=Q11632526}}
+* {{ill|Koyasu Jizō|ja|子安地蔵}}
+** {{ill|Koyasu-Jizō|ja|子安地蔵堂|12=simple|13=User:Immanuelle/Koyasu Jizō Hall|comment=changed title based on wikidata|qid=Q11447885}}
+** {{ill|Koyasu Jizō Temple|ja|子安地蔵寺}}
+* {{ill|Komori Jizō|ja|子守地蔵}}
+* {{ill|Kosodate Jizō|ja|子育地蔵}}
+* {{ill|Suitengū|en|Suitengū|qid=Q125319456|lt=Suitengū}}
 
 {{Shinto-stub}}
 
 {{translated page|ja|子安神社|version=102329956|comment=Imported full ja history}}
 
-{{wikidata link|Q11447896|ja|子安神社}}
+{{wikidata link|Q11447896|ja|子安神社|grok=none|check_date=2026-05-31}}
 [[Category:All disambiguation pages]]
 [[Category:Child care]]
 [[Category:Childbirth]]
@@ -66,3 +62,4 @@ Shrines are generally divided into those enshrining [[Konohanasakuya-hime]], who
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
