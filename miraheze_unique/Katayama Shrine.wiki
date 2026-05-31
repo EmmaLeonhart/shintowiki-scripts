@@ -1,18 +1,15 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-
 '''Katayama Shrine''' (片山神社)
 
-* {{ill|Katayama Shrine (Nagoya)|ja|片山神社 (名古屋市)|12=simple|13=User:Immanuelle/Katayama Shrine (Nagoya)|ja_comment=jawiki link invalid|qid=Q135579690|1=Katayama Shrine (Nagoya)}} - A Shinto shrine located in Yoshino, Higashi Ward, Nagoya City, Aichi Prefecture.
-* {{ill|Katayama Shrine (Kameyama)|ja|片山神社 (亀山市)|12=simple|13=User:Immanuelle/Katayama Shrine (Kameyama)}} (Also known as Suzuka Myojin or Suzuka Gongen) - Located in Kameyama City, Mie Prefecture.
-* {{ill|Katayama Shrine (Suita)|ja|片山神社 (吹田市)|12=simple|13=User:Immanuelle/Katayama Shrine (Suita)}} - Located in Suita City, Osaka Prefecture.
+* {{ill|Katayama Shrine (Nagoya)|ja|片山神社 (名古屋市)|12=simple|13=User:Immanuelle/Katayama Shrine (Nagoya)|ja_comment=jawiki link invalid|qid=Q135579690}} - A Shinto shrine located in Yoshino, Higashi Ward, Nagoya City, Aichi Prefecture.
+* {{ill|Katayama Shrine (Kameyama)|ja|片山神社 (亀山市)}} (Also known as Suzuka Myojin or Suzuka Gongen) - Located in Kameyama City, Mie Prefecture.
+* {{ill|Katayama Shrine (Suita)|ja|片山神社 (吹田市)}} - Located in Suita City, Osaka Prefecture.
 
 == Other ==
-* {{ill|Katayama Hachiman Shrine|ja|片山八幡社|12=simple|13=User:Immanuelle/Katayama Hachiman Shrine}} - A shrine located in Komaki City, Aichi Prefecture, regarded as a related site to Katayama Shrine.
-* {{ill|Katayama Hiko Shrine|ja|片山日子神社|12=simple|13=User:Immanuelle/Katayama Hiko Shrine}}
+* {{ill|Katayama Hachiman Shrine|ja|片山八幡社}} - A shrine located in Komaki City, Aichi Prefecture, regarded as a related site to Katayama Shrine.
+* {{ill|Katayama Hiko Shrine|ja|片山日子神社}}
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Katayama Shrine (Q119929653)|lt=Katayama Shrine|qid=Q119929653}} — Suita
@@ -23,11 +20,10 @@
 * {{ill|Katayamano Shrine (Q135039527)|lt=Katayamano Shrine|qid=Q135039527}} — Owari Province
 * {{ill|Katayamano Shrine (Q135039827)|lt=Katayamano Shrine|qid=Q135039827}} — Azai district
 * {{ill|片山神社 (Q134989444)|lt=片山神社|qid=Q134989444}} — Marugame
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|片山神社|version=101817969|comment=Imported full ja history}}
 
-{{wikidata link|Q55522721|ja|片山神社|ja|片山神社 (亀山市)}}
+{{wikidata link|Q55522721|ja|片山神社|ja|片山神社 (亀山市)|grok=none|check_date=2026-05-30}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]

@@ -1,14 +1,12 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-
 '''Kawashimo Shrine''' (川濯神社, also read Kawasuso Shrine, Kawasosogi Shrine, Kawaso Shrine)
 
-* {{ill|Kawashimo Shrine (Hakodate, Nezaki Town)|ja|川濯神社 (函館市根崎町)|12=simple|13=User:Immanuelle/Kawashimo Shrine (Hakodate, Nezaki Town)}} - A shrine located in {{ill|Hokkaido|en|Hokkaido|qid=Q35581|lt=Hokkaido|1=Hokkaido}}, {{ill|Hakodate|en|Hakodate|qid=Q26418|lt=Hakodate City|1=Hakodate}}, Nezaki Town.
-* {{ill|Kawashimo Shrine (Hakodate, Furukawa Town)|ja|川濯神社 (函館市古川町)|12=simple|13=User:Immanuelle/Kawashimo Shrine (Hakodate, Furukawa Town)|ja_comment=jawiki link invalid}} - A shrine located in Hokkaido, Hakodate City, Furukawa Town.
+* {{ill|Kawashimo Shrine (Hakodate, Nezaki Town)|ja|川濯神社 (函館市根崎町)}} - A shrine located in {{ill|Hokkaido|en|Hokkaido|qid=Q35581|lt=Hokkaido}}, {{ill|Hakodate|en|Hakodate|qid=Q26418|lt=Hakodate City}}, Nezaki Town.
+* {{ill|Kawashimo Shrine (Hakodate, Furukawa Town)|ja|川濯神社 (函館市古川町)}} - A shrine located in Hokkaido, Hakodate City, Furukawa Town.
 {{disambiguation}}
 
 {{translated page|ja|川濯神社|version=97524594|comment=Imported full ja history}}
 
-{{wikidata link|Q123407867|ja|川濯神社}}
+{{wikidata link|Q123407867|ja|川濯神社|grok=none|check_date=2026-05-31}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Wikidata no English label]]
