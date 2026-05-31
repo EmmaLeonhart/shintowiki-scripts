@@ -528,15 +528,12 @@ BACKLOG_ITEMS = [
         "id": 3, "slug": "ill-missing-wikidata",
         "title": "ILLs without WD= / \"Unknown\" targets",
         "blurb": "Interlanguage-link templates whose Wikidata target is unset or "
-                 "literally \"Unknown\". Fill via fix_ill_destinations.py per "
-                 "context — don't blind-overwrite. (Detection here finds the "
-                 "WD=Unknown cases; missing-WD= is harder and not yet listed.)",
-        "kind": "pending_detection",
-        "needs_script": "fix_ill_destinations.py (extended to enumerate {{ill}} usages)",
-        "why": "This wiki runs the basic database search backend — CirrusSearch "
-               "<code>insource:</code> is unavailable, so the WD=Unknown / "
-               "missing-WD= cases can't be matched from page source via the API, "
-               "and there is no tracking category for them.",
+                 "literally \"Unknown\". The <code>unresolved_ill_qid</code> "
+                 "orchestrator op tags these pages as it sweeps mainspace, so "
+                 "the list grows over successive cleanup cycles. Fill via "
+                 "fix_ill_destinations.py per context — don't blind-overwrite.",
+        "kind": "category", "cmtype": "page",
+        "category": "Pages with unresolved QID in ill template",
     },
     {
         "id": 4, "slug": "duplicate-qid-tail",
@@ -562,15 +559,11 @@ BACKLOG_ITEMS = [
         "title": "Multiple {{wikidata link}} on one page",
         "blurb": "Pages carrying two or more {{wikidata link}} templates — "
                  "usually a Wikidata disambiguation issue needing per-case "
-                 "review.",
-        "kind": "pending_detection",
-        "needs_script": "a dedicated detector that fetches each Wikidata-link-"
-                        "bearing page (via embeddedin Template:Wikidata link) "
-                        "and counts the templates",
-        "why": "Detecting <em>two or more</em> templates on a page needs source "
-               "inspection. With no CirrusSearch <code>insource:</code> on this "
-               "wiki, the only path is fetching each transcluding page and "
-               "counting — too heavy for build time, so it needs its own script.",
+                 "review. The <code>multiple_wikidata_links</code> orchestrator "
+                 "op tags these pages as it sweeps mainspace + categories, so "
+                 "the list grows over successive cleanup cycles.",
+        "kind": "category", "cmtype": "page",
+        "category": "Pages with multiple wikidata links",
     },
     {
         "id": 7, "slug": "duplicated-content-need-translation",
@@ -641,11 +634,6 @@ def _resolve_backlog_data(item):
             notes.append(f"{len(members)} in [[Category:{cat}]]")
             entries.append((cat, [(m["title"], _wiki_href(m["title"])) for m in members]))
         return entries, "; ".join(notes)
-    if kind == "pending_detection":
-        note = (f"<strong>Live list not yet available.</strong> {item['why']} "
-                f"Compiling it needs a dedicated repo script: "
-                f"<code>{item['needs_script']}</code>.")
-        return [], note
     return [], None
 
 
@@ -662,9 +650,7 @@ def generate_backlog_index(resolved_counts):
     cards = []
     for item in BACKLOG_ITEMS:
         count = resolved_counts.get(item["id"], "?")
-        if item["kind"] == "pending_detection":
-            status = "detection pending"
-        elif item["kind"] in ("repo_static", "repo_workflow"):
+        if item["kind"] in ("repo_static", "repo_workflow"):
             status = f"<strong>{count}</strong> scripts"
         else:
             status = f"<strong>{count}</strong> detected"
@@ -691,10 +677,7 @@ def generate_backlog_index(resolved_counts):
 
 
 def generate_backlog_detail(item, entries, note):
-    if item["kind"] == "pending_detection":
-        total = 0
-        list_html = ""
-    elif item["kind"] == "category_multi":
+    if item["kind"] == "category_multi":
         # entries is a list of (category, [(label, href), ...])
         total = sum(len(sub) for _, sub in entries)
         sections = []

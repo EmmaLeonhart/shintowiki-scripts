@@ -26,6 +26,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     ill_category_to_link,
     interlang_consolidate,
+    multiple_wikidata_links,
     normalize_ill_positional,
     normalize_ill_wikidata,
     remove_defaultsort,
@@ -34,6 +35,7 @@ from shinto_miraheze.orchestrators.ops import (
     strip_afc_templates,
     strip_char_count_cats,
     strip_html_comments,
+    unresolved_ill_qid,
     untranslated_japanese,
     wikidata_link,
     wikidata_lookup,
@@ -73,9 +75,11 @@ OPS = [
     duplicate_qids,
     remove_defaultsort,
     deleted_qids_in_ill,
+    unresolved_ill_qid,
     untranslated_japanese,
     strip_char_count_cats,
     wikidata_link,
+    multiple_wikidata_links,
     categories_to_bottom,
 ]
 

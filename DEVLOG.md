@@ -6,6 +6,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Orchestrator detectors for backlog items 3 & 6 (no CirrusSearch → tag-into-category)
+**Files:** `shinto_miraheze/orchestrators/ops/multiple_wikidata_links.py` (new),
+`shinto_miraheze/orchestrators/ops/unresolved_ill_qid.py` (new),
+`shinto_miraheze/orchestrators/{mainspace,category}_orchestrator.py`, `site/generate_pages.py`
+
+The dashboard's items 3 & 6 couldn't be detected at build time (this wiki runs
+the basic DB search backend — no CirrusSearch `insource:`). Emma's call: detect
+them with orchestrator ops that sweep every page and tag matches into a tracking
+category, then point the dashboard at those categories like the other six.
+- **`multiple_wikidata_links`** (ns 0,14): tags `[[Category:Pages with multiple
+  wikidata links]]` when a page has ≥2 `{{wikidata link…}}` calls; strips it when
+  back to 0/1. Registered after `wikidata_link` in both the mainspace and
+  category orchestrators.
+- **`unresolved_ill_qid`** (ns 0): tags `[[Category:Pages with unresolved QID in
+  ill template]]` when any `{{ill}}` has no valid `qid=Q\d+` and isn't
+  `qid=DELETED_QID` (covers no-qid, `qid=Unknown`, literal "Unknown"). Registered
+  after `deleted_qids_in_ill` so the DELETED_QID marker — item 8's separate
+  category — is already in place. Excludes it deliberately.
+Both are pure-text, self-healing (add/strip based on current state), skip
+redirects, do no network I/O. Unit-tested on sample wikitext; both orchestrators
+import cleanly with the ops registered. Switched dashboard `BACKLOG_ITEMS` 3 & 6
+to `category` kind and removed the `pending_detection` code path. The two
+categories populate gradually on the next `cleanup-loop.yml` mainspace/category
+runs (budget-bounded), so the dashboard lists grow over successive cycles.
+
 ### Backlog dashboard — a GitHub Pages page per todo.md item
 **Files:** `site/generate_pages.py`, `_site/backlog.html` + `_site/backlog-*.html` (8 detail pages)
 

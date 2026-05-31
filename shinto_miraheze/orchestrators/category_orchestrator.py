@@ -17,6 +17,7 @@ from shinto_miraheze.orchestrators.ops import (
     history_offload,
     ill_category_to_link,
     interlang_consolidate,
+    multiple_wikidata_links,
     normalize_category_page,
     remove_legacy_cat_templates,
     straggler_link_to_ill,
@@ -47,6 +48,7 @@ OPS = [
     remove_legacy_cat_templates,
     normalize_category_page,
     wikidata_link,
+    multiple_wikidata_links,
 ]
 
 

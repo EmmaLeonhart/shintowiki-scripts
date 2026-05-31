@@ -77,8 +77,12 @@ batched verification we skip in the moment.
   `generate-pages.yml` run that `https://emmaleonhart.github.io/shintowiki-scripts/backlog.html`
   and the 8 `backlog-*.html` detail pages render with live counts, and that the
   Japanese-category (1189) / need-translation (392) lists load (large pages).
-  Confirm items 3 & 6 still show "detection pending" (or build their detector
-  scripts to replace it).
+  Items 3 & 6 are now category-backed by the new `unresolved_ill_qid` /
+  `multiple_wikidata_links` orchestrator ops — confirm those categories start
+  populating after the next `cleanup-loop.yml` mainspace/category sweeps (they
+  read 0 until the orchestrator tags pages with `--apply`), and that the ops
+  don't over-tag (spot-check a tagged page genuinely has an unresolved ill /
+  2+ wikidata links).
 
 ## Verified (kept briefly, then prune)
 

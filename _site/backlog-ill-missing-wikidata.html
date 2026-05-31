@@ -108,13 +108,14 @@ li { margin: 0.25rem 0; }
 <h1>3. ILLs without WD= / "Unknown" targets</h1>
 <p><a href="backlog.html">&larr; Back to backlog</a></p>
 <div class="section">
-  <p>Interlanguage-link templates whose Wikidata target is unset or literally "Unknown". Fill via fix_ill_destinations.py per context — don't blind-overwrite. (Detection here finds the WD=Unknown cases; missing-WD= is harder and not yet listed.)</p>
+  <p>Interlanguage-link templates whose Wikidata target is unset or literally "Unknown". The <code>unresolved_ill_qid</code> orchestrator op tags these pages as it sweeps mainspace, so the list grows over successive cleanup cycles. Fill via fix_ill_destinations.py per context — don't blind-overwrite.</p>
 </div>
-<div class="info-box"><strong>Live list not yet available.</strong> This wiki runs the basic database search backend — CirrusSearch <code>insource:</code> is unavailable, so the WD=Unknown / missing-WD= cases can't be matched from page source via the API, and there is no tracking category for them. Compiling it needs a dedicated repo script: <code>fix_ill_destinations.py (extended to enumerate {{ill}} usages)</code>.</div>
 
+<h2>Detected pages &mdash; 0</h2>
+<p class="timestamp">No pages currently detected for this item.</p>
 
 <footer>
-  Generated 2026-05-31 00:35 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Generated 2026-05-31 02:21 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
   Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
 </footer>
 </body>
