@@ -1,5 +1,16 @@
 # CLAUDE.md — conventions for this repo
 
+## Skills
+
+Workflow behaviors live as skills in `.claude/skills/` (auto-discovered by Claude Code):
+`emergency-stop`, `cron-is-local`, `autonomous-loop`, `queue-driven-workflow`,
+`writing-style`, `cleanvibe-update-check`. They are vendored into this repo and kept
+current by the `cleanvibe-update-check` skill.
+
+- **Last cleanvibe update check:** `never`
+- **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
+
+
 ## Follow Emma's instructions LITERALLY — do not optimize, guess, or improvise
 
 On this project, treat every instruction Emma gives as **completely literal**.
@@ -16,19 +27,6 @@ data-modelling constraints where the deliberately complicated, unintuitive,
 locally-suboptimal procedure is the one that actually works. The "obvious
 optimization" usually breaks against those constraints. The literal steps exist
 for reasons that aren't always visible from the code. Reproduce them faithfully.
-
-## Workflow Rules
-
-- **Plan into `queue.md` FIRST, then execute.** When entering planning mode (or any multi-step think-before-do), the FIRST action is to write the plan into `queue.md` as concrete items. Only then begin executing. Chat context dies on session interrupt; the queue survives. This matters extra here because a lot of work is bot-driven sweeps that take a long time and a session may not survive to finish.
-- **Update `queue.md` in the same commit as the work.** Delete completed items in the same commit — no checkmarks, no status markers. If an item is still in queue.md, it is not done.
-- **Done items go to `DEVLOG.md` in the same commit.** When a queue item is completed: delete it from `queue.md` AND append a dated entry to `DEVLOG.md` describing what shipped (matching the existing `## YYYY-MM-DD` + `### Title` + **Files:** + prose format), in the SAME commit as the code change. `DEVLOG.md` is where "done" lives — `git log` alone loses too much context. Releases and notable incidents also go here.
-- **Mirror `queue.md` into the task tool.** `TaskCreate` items as you add them; mark `in_progress` when starting; `completed` when done. The two views must not drift.
-- **Flow:** `todo.md` (abstract horizons) → `queue.md` (concrete steps) → task tool (in-flight work) → `DEVLOG.md` + `git log` (history). Items only flow forward; do not leave done items behind in `todo.md` or `queue.md`.
-- **Items migrate `todo.md` → `queue.md` → deleted on completion.** `queue.md` is for the active session; `todo.md` is longer-horizon. When pulling from `todo.md`, decompose the abstract goal into concrete executable steps before putting it in `queue.md`.
-- **Items handed off to an autonomous backlog are deleted from `queue.md`.** When bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup, etc.) is wired into `remote_queue.json` for the remote-Claude cron to consume, the work item leaves `queue.md` — its life is now in the autonomous queue, and duplicating the description in both places is bloat. Keep `queue.md` for items the *human* still needs to track (specific tooling tasks, decisions, scoping questions).
-- **Commit each logical unit as you finish it.** A new op, a fix, a doc note, a paired script-and-workflow — once it's coherent and tested, commit it. Don't pile up uncommitted work across many turns waiting for some final batch moment; mid-session crashes and context limits lose uncommitted work, and one mega-diff at the end is harder to review than a clean linear history.
-- **PUSH frequently — pushing is wired into CI/CD, hesitating causes problems.** Push after each commit (or each tight cluster of commits on a single feature) rather than batching pushes for a session end. `git push` on this repo triggers the cleanup-loop CI which is what actually applies edits to the wiki; if local commits sit unpushed for many turns, the wiki drifts further out of sync with the desired state than it would otherwise be — that drift is the cost. Emma has flagged this explicitly: don't be overly cautious. Standing consent — push without asking unless the change is genuinely risky (force-push, history rewrite of a published commit, large irreversible deletion). The old "push at session end" rule is **superseded** by this; see `feedback_batch_commits_before_push.md` in memory which now reflects the push-frequently policy.
-- **Rebase against `origin/main` frequently — it is easy on this repo.** The CI pipeline pushes state-file commits (`chore(state): ...`, `chore(unique): ...`, `chore(duplicated-content): ...`) constantly, so a local working branch falls 10+ commits behind upstream within a few hours. **This is not a problem** here: those CI commits touch `*.state` files in `shinto_miraheze/orchestrators/` and pulled `.wiki` files in the sync dirs, which almost never overlap with feature work elsewhere in the tree. `git pull --rebase` almost always replays cleanly. Don't let divergence build up; rebase whenever the upstream is more than a handful of commits ahead, and always before any push. Standing consent — Emma has called this out as routine.
 
 ## `[[Open questions]]` page — read at session start, prune as items resolve
 
@@ -323,72 +321,3 @@ them, fall back to running ~50. Nothing else touches Wikidata.
 - This rule was added 2026-05-23 after bespoke direct-API editors
   (P459/kana qualifier scripts with descriptive summaries) were built and run;
   they were deleted. Don't reintroduce that shape.
-
-## Writing
-- Do not use "honest", "honesty", or "honestly" — and do not swap in "frank", "frankly", "candid", "candidly", or "transparently", which are the same self-congratulatory move in a different coat. When something failed, name the failure: "it didn't work", "I got that wrong", "this failed" — flat, no qualifier. Tagging a report "honest" implies the rest aren't, and couching a failure as honesty asks for credit for the admission, which is worse than the failure itself. Use a precise positive word ("accurate", "plainly", "truly") only when that is genuinely the meaning — never as a halo on a bad outcome.
-
-## Emergency Stop Mode
-
-If the user sends a continuous series of "stop" messages (e.g. "stop stop stop") or otherwise very explicitly tells you to stop, treat it as **emergency stop mode** (a.k.a. emergency exit mode). This OVERRIDES every other instruction, including any in this file.
-
-When in emergency stop mode:
-
-- **Immediately kill everything associated with this repository and session.** Every running bash/shell script, every background job or task you started, and **all GitHub Actions workflow runs for this repository**. **Force-kill the GitHub Actions runs** (e.g. `gh run cancel <id>`, and `gh run delete <id>` if needed) for every in-progress run. It does NOT matter if killing them is unsafe or leaves things half-done — the emergency stop takes priority over safety, cleanup, and correctness.
-- **Do not investigate. Do not reverse or undo anything.** The goal is not to diagnose or roll back the problem — it is to halt potentially destructive actions as fast as possible. Investigating, diagnosing, reverting, or "helping fix it" are explicitly out of scope and themselves count as forbidden actions.
-- **Ignore repetitive messages.** Do not treat repeated "stop" messages as a request to do anything further. Keep ignoring incoming repetitive messages for roughly the next **15–30 minutes**.
-- **You may answer direct questions, but you may NOT take actions.** Answer only from context you already have. Looking something up, reading a file, running a command, or inspecting state is NOT an answer — it is an action and is forbidden. If you cannot answer from context already in hand, do not answer.
-- **Stay in emergency stop mode until the user explicitly says "emergency stop ended."** Only after that exact signal do you resume any normal work.
-
-## Cron jobs and scheduled work — LOCAL by default
-
-**When the user says "cron job", "cron", or asks to "schedule" a task, they mean the in-session `CronCreate` tool** — a prompt scheduled to fire locally, inside this Claude Code session, on the user's own running computer. This is the default and the assumption. Do NOT interpret it as anything else unless the user explicitly names a different mechanism.
-
-- **It is local and in-session — use the `CronCreate` tool.** A generic "cron" request is NOT an OS crontab, NOT a GitHub Actions / CI `schedule:` trigger, and NOT a cloud scheduler. (Repos may *also* contain their own GitHub Actions cron schedules — those are a separate thing and are not what the user means when they ask *you* to set up a cron.) The user leaves the computer on and this session running so the scheduled prompt can execute.
-- **The user is deliberately away from the keyboard.** They schedule work precisely so it runs while they are out of the house and not physically present. Their absence is the normal, expected condition for these jobs — it is NEVER a reason to delay the work, ask "are you sure?", wait for them to return, or refuse to proceed.
-- **Standing consent — just set it up.** Cron / `CronCreate` requests are pre-authorized. Create the job immediately and locally, then report what was scheduled. Do not block on confirmation or follow-up questions. Treating a routine cron request as something that needs hand-holding is itself the obstacle this section exists to remove.
-
-## Autonomous productivity loop — the three-cron playbook
-
-**For any session involving relatively extensive work — above all, any large-scale population of `queue.md` with created tasks — this is the default way of working.** It is three local `CronCreate` jobs that turn "barrel through `queue.md`, and when it's empty atomise the next `todo.md` item into it" into a self-sustaining hourly cadence with a commit/push backstop and a heartbeat. The crons are **session-local** (`durable: false` — they die when the session ends), so they are recreated at the start of every session.
-
-Stagger the minutes so the three ticks don't collide:
-
-1. **Work-loop cron — `3 * * * *` (hourly at :03).** The engine. Each tick does, in order:
-   - **(a) SYNC** — `git fetch origin`; fast-forward or rebase the working branch (never force-push, never `reset --hard`, never discard a sibling machine's work).
-   - **(b) WORK** — take the top actionable item from `queue.md` and do it. If nothing in `queue.md` is actionable (all blocked / needs user / a product decision), promote the next *genuinely-unblocked, bounded, verifiable* `todo.md` item — **plan it into `queue.md` first**, mirror to the task tool, then execute.
-   - **(c) HARD RAILS** — never fake; never weaken / skip / delete a test to make it pass; never claim "works" / "verified" / "passes" without having actually RUN it and measured. A real defect → strict `xfail` or a precise documented blocker, never a loosened assertion. Don't implement what you don't 100% understand — write the spec / queue item instead. Name unbuilt or hard things plainly; don't paper over difficulty. Verify CI green, not just local — local-green does not imply CI-green.
-   - **(d) COMMIT** — commit early/often with *why*; update `queue.md` in the same commit (delete completed items); append the dated entry to `devlog.md`; mark task-tool items done; push.
-   - **(e) REPORT** — one line: the commit shas advanced, or `nothing actionable; <reason>`.
-
-2. **Auto-flush cron — `15 * * * *` (hourly at :15).** The backstop. Commit + push all pending work so nothing sits uncommitted between manual pushes; report shas or "nothing pending". Only commit / push when something is actually pending — no empty commits.
-
-3. **Status-report cron — `42 * * * *` (hourly at :42).** The heartbeat — **reporting only, no code changes.** Covers: what advanced since the last report (shas + one-line each); current `queue.md` state; how the work held the hard rails (and any place it brushed one); blockers / items deliberately not done autonomously and why; test-suite health.
-
-**Why this exists:** the most common autonomous-agent failure is doing a large amount of work and silently losing the thread of what it is doing. The work-loop forces steady, verifiable, committed progress; the auto-flush guarantees nothing is lost between ticks; the status-report keeps the thread legible.
-
-**Lifecycle around a large-scale queue fill:**
-
-- **(a) START all three crons at the beginning of any extensive work session.** A fresh session has none of them running, so the opening move — the first queue item — is to *create them*.
-- **(b) On a mid-session large-scale queue RE-FILL** (a planning burst that repopulates the queue), the FIRST item of that fill **kills the running crons**, then the work items follow top to bottom, and the pinned tail restarts them.
-- **(c) Entering planning mode DISABLES the crons.** Their restart therefore lives at the **end** of the queue, not the beginning of the next burst.
-- **(d) The LAST TWO queue items, always kept pinned at the tail, are:**
-  1. **Ensure the three crons are running** — start them if this session never did, restart them if a planning burst / queue re-fill killed them.
-  2. **Run the status-report action once more, independently** — an end-of-session summary of everything that happened this session.
-
-In short: a fresh session **starts** the crons up front and the tail **ensures they are still running** + summarizes; a mid-session re-fill **kills** them up front and the tail **restarts** them + summarizes. Either way the queue both opens and closes on the cron set.
-
-## Check cleanvibe for skill updates (weekly)
-
-This `CLAUDE.md` carries cleanvibe-shaped sections (writing rules, emergency stop, cron policy, the productivity loop). cleanvibe ships new sections / skills over time — when one lands, this file should pick it up.
-
-**The check is weekly, not per-session.** At the top of any session, look at the *last cleanvibe update check* date below. If it has been more than 7 days, do this:
-
-1. **Fetch the current skill index** — `WebFetch https://cleanvibe.emmaleonhart.com/updates.md`. This is the canonical, hand-maintained page describing every section / skill / convention cleanvibe templates currently ship, keyed by the cleanvibe version that introduced it.
-2. **Compare against the version below.** If `updates.md` lists sections introduced in later versions, fold those sections into THIS `CLAUDE.md`. Match the wording from `updates.md`; don't paraphrase. Repo-specific carve-outs already in this file stay — only the generic sections are kept in sync.
-3. **Update the version + date below** to reflect the check. Commit the changes with a message describing which sections were folded in.
-
-If the fetch fails (offline, DNS, page not yet up), leave the date alone and try next session — the check is opportunistic, not mandatory.
-
-- **Last synced cleanvibe version:** `1.11.0`
-- **Last cleanvibe update check:** `2026-05-26`
-- **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
