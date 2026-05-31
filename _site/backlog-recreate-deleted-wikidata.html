@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recreate deleted Wikidata items — Backlog</title>
+  <style>* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 960px; margin: 2rem auto; padding: 0 1.5rem;
+  color: #1a1a1a; line-height: 1.6;
+}
+h1 { border-bottom: 3px solid #4caf50; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+h2 { color: #2e7d32; margin: 1.5rem 0 0.75rem; }
+h3 { color: #333; margin: 1rem 0 0.5rem; }
+a { color: #2e7d32; }
+a:hover { color: #4caf50; }
+p { margin: 0.5rem 0; }
+nav {
+  background: #f1f8e9; border: 1px solid #c5e1a5; border-radius: 8px;
+  padding: 1rem 1.5rem; margin-bottom: 1.5rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+}
+nav a { text-decoration: none; font-weight: 500; }
+nav .sep { color: #aed581; }
+.timestamp { color: #666; font-size: 0.85rem; }
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem; margin: 1rem 0;
+}
+.stat-card {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1rem; text-align: center;
+}
+.stat-card .number { font-size: 1.8rem; font-weight: 700; color: #2e7d32; }
+.stat-card .label { font-size: 0.85rem; color: #666; }
+.section {
+  background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+  padding: 1.25rem; margin: 1rem 0;
+}
+.section h3 { margin-top: 0; }
+.info-box {
+  background: #fff3e0; border-left: 4px solid #ff9800;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.success-box {
+  background: #e8f5e9; border-left: 4px solid #4caf50;
+  padding: 0.75rem 1rem; margin: 0.75rem 0; border-radius: 0 4px 4px 0;
+}
+.feature-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem; margin: 1rem 0;
+}
+.feature-card {
+  background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px;
+  padding: 1.25rem; text-decoration: none; color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { border-color: #4caf50; box-shadow: 0 2px 8px rgba(76,175,80,0.15); }
+.feature-card h3 { color: #2e7d32; margin: 0 0 0.5rem; }
+.feature-card p { margin: 0; font-size: 0.9rem; color: #555; }
+.qs-box {
+  width: 100%; font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.8rem; border: 1px solid #ccc; border-radius: 4px;
+  padding: 0.75rem; resize: vertical; background: #fafafa;
+}
+.progress-bar {
+  background: #e0e0e0; border-radius: 12px; height: 24px;
+  overflow: hidden; margin: 0.5rem 0;
+}
+.progress-fill {
+  height: 100%; background: #4caf50; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 600;
+  transition: width 0.3s ease; min-width: 2rem;
+}
+.pipeline-list { list-style: none; padding: 0; }
+.pipeline-list li {
+  padding: 0.4rem 0.75rem; border-left: 3px solid #e0e0e0; margin: 0.25rem 0;
+}
+.pipeline-list li.chunk-header {
+  border-left-color: #4caf50; font-weight: 600; margin-top: 0.75rem;
+}
+footer {
+  margin-top: 2rem; padding-top: 1rem;
+  border-top: 1px solid #e0e0e0; color: #999; font-size: 0.8rem;
+}
+ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+li { margin: 0.25rem 0; }
+.backlog-list {
+  columns: 2; column-gap: 2rem; list-style: none; margin-left: 0;
+  font-size: 0.9rem;
+}
+.backlog-list li { break-inside: avoid; padding: 0.1rem 0; }
+@media (max-width: 640px) { .backlog-list { columns: 1; } }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" style="font-weight:700;font-size:1.1rem;color:#2e7d32;text-decoration:none;">shintowiki</a>
+  <span class="sep">|</span>
+  <a href="index.html">Overview</a>  <strong>Backlog</strong>  <a href="shrine-ranking.html">Shrine Ranking</a>  <a href="p11250.html">P11250</a>  <a href="runs.html">Run History</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">GitHub</a>
+  <a href="https://shinto.miraheze.org">Wiki</a>
+</nav>
+
+<h1>8. Recreate deleted Wikidata items</h1>
+<p><a href="backlog.html">&larr; Back to backlog</a></p>
+<div class="section">
+  <p>ILL-target Wikidata items that another editor deleted. To be recreated via the QuickStatements pipeline (respecting the freeze to 2026-06-06) with a minimum claim set that won't be re-deleted.</p>
+</div>
+
+<h2>Detected pages &mdash; 144</h2>
+<ul class="backlog-list">
+    <li><a href="https://shinto.miraheze.org/wiki/1-day_onsen_facility">1-day onsen facility</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/26-Rank_cap_system">26-Rank cap system</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Abe_no_Ariyo">Abe no Ariyo</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Abe_no_Yasuchika">Abe no Yasuchika</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Achi_clan">Achi clan</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Achi_Shrine_(Kurashiki)">Achi Shrine (Kurashiki)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Acupuncture_Hakase">Acupuncture Hakase</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Adachi_Yoshikage">Adachi Yoshikage</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Aedo_Hashihime_Shrine">Aedo Hashihime Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Agata_no_Inukai_clan">Agata no Inukai clan</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Agata_Shrine">Agata Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Agata_Shrine_(Gero_City)">Agata Shrine (Gero City)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Agata_Shrine_(Ōamishirasato)">Agata Shrine (Ōamishirasato)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Akagi_Shrine_(Fujimi_Town_Yokomuro)">Akagi Shrine (Fujimi Town Yokomuro)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Akagi_Shrines">Akagi Shrines</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ame-no-Hibaraooshinadomi-no-Kami">Ame-no-Hibaraooshinadomi-no-Kami</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Anesaki_Kofun_Group">Anesaki Kofun Group</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Annual_event">Annual event</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/April_1_(Lunisolar)">April 1 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/April_15_(Lunisolar)">April 15 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/April_4_(Lunisolar)">April 4 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Arakawato_Hime">Arakawato Hime</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Atami_Onsen">Atami Onsen</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/August_20_(Lunisolar)">August 20 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/August_3_(Lunisolar)">August 3 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/August_5_(Lunisolar)">August 5 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Awaga_Daimyojin_Mototsufumi">Awaga Daimyojin Mototsufumi</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Awata_Shrine">Awata Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Bath_Additive">Bath Additive</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Bath_tax">Bath tax</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Bengala">Bengala</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Bungo_no_Kuni_Fudoki">Bungo no Kuni Fudoki</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Bōseikyō">Bōseikyō</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Changes_to_deities_in_the_Meiji_period">Changes to deities in the Meiji period</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chest-shaped_Sarcophagus">Chest-shaped Sarcophagus</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chigo">Chigo</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chikatō-no-Kami">Chikatō-no-Kami</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chikugo_River_Fireworks_Festival">Chikugo River Fireworks Festival</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chimyō_Gongen">Chimyō Gongen</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chinkoku-ji">Chinkoku-ji</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Chukain_Temple">Chukain Temple</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/City_Offices_(Tōji_and_Sai)">City Offices (Tōji and Sai)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/December_11_(Lunisolar)">December 11 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Dōmeki">Dōmeki</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/February_11_(Lunisolar)">February 11 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Furutama-no-Mikoto">Furutama-no-Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Furutsuka_Kofun">Furutsuka Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Furyū-odori">Furyū-odori</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Futagoyama_Kofun">Futagoyama Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Futon_Daiko">Futon Daiko</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gekū_Sando">Gekū Sando</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gero_Onsen">Gero Onsen</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gifu_Shichifukujin">Gifu Shichifukujin</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gion_and_Tenno_Festivals">Gion and Tenno Festivals</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gion_Shrine_(Kurashiki)">Gion Shrine (Kurashiki)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Gojō_Tenjin_Shrine">Gojō Tenjin Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Goryō_Shrine_(Miyamae,_Fujisawa)">Goryō Shrine (Miyamae, Fujisawa)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hachioji_Shrine_(Kariya_City)">Hachioji Shrine (Kariya City)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hachiōji_(disambiguation)">Hachiōji (disambiguation)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Haisho">Haisho</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Han-style_mirror">Han-style mirror</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Himuro_Gongen">Himuro Gongen</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hodosan_Shrine">Hodosan Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Homisuwajūgosho_Shrine">Homisuwajūgosho Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hoshida_Myōkengū">Hoshida Myōkengū</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hot_Spring_Bathing_Instructor">Hot Spring Bathing Instructor</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hot_Spring_Mark">Hot Spring Mark</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hot_Spring_Utilization_Instructor">Hot Spring Utilization Instructor</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hozumi_no_Kujii">Hozumi no Kujii</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hyōtan-yama_Kofun">Hyōtan-yama Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hyōtan-zuka_Kofun">Hyōtan-zuka Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hōri">Hōri</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Hōtō_Shrine">Hōtō Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ibukidonushi_no_Kami">Ibukidonushi no Kami</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ikutachi">Ikutachi</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ima_Izumiguchi_Hachiman-yama_Kofun">Ima Izumiguchi Hachiman-yama Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Imajuku_Ōtsuka_Kofun">Imajuku Ōtsuka Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Inukaibe">Inukaibe</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ise_Calendar">Ise Calendar</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Isekisan_Shrine">Isekisan Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Isurugi_Gongen">Isurugi Gongen</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Isurugi_Hikojinja">Isurugi Hikojinja</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ita_Shrine">Ita Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Itsuhayahime-no-Mikoto">Itsuhayahime-no-Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Itsukahara_Kofun">Itsukahara Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Iwatsukiwake_no_Mikoto">Iwatsukiwake no Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Iwaya_Myōken-gū">Iwaya Myōken-gū</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Iyo_Shrine">Iyo Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Izumo_clan">Izumo clan</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Izumo_Taisha_Matsuyama_Shrine">Izumo Taisha Matsuyama Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Izumo_Taishakyo_Mission_of_Hawaii">Izumo Taishakyo Mission of Hawaii</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Izumo-no-Iwai_Shrine_(Yorii_Town)">Izumo-no-Iwai Shrine (Yorii Town)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/January_1_(Lunisolar)">January 1 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Japanese_Indigenous_Theory">Japanese Indigenous Theory</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Jikkō_kyō">Jikkō kyō</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Jinjachō">Jinjachō</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Jungle_bath">Jungle bath</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kabutozuka_Kofun">Kabutozuka Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kalpina">Kalpina</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kamikoso_Shrine">Kamikoso Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kamo_Akimasa">Kamo Akimasa</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kashima_Jingū">Kashima Jingū</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kawachi_no_Ōkimi_(Late_Nara_period)">Kawachi no Ōkimi (Late Nara period)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kawachi-no-Mikoto">Kawachi-no-Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kawara_Shrine_(Gekū)">Kawara Shrine (Gekū)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kinomiya_Faith">Kinomiya Faith</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kotohira_shrines">Kotohira shrines</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Koyasu_Jizō_Temple">Koyasu Jizō Temple</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kubotsu_Ōji_Shrine">Kubotsu Ōji Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kumano_Nyakuōji_Shrine">Kumano Nyakuōji Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kumata_Shrine">Kumata Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Kuno_no_Kuni_no_Miyatsuko">Kuno no Kuni no Miyatsuko</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/List_of_Kofun_in_Japan_with_the_Name_"Hyō"">List of Kofun in Japan with the Name "Hyō"</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Magatsuhi-no-kami">Magatsuhi-no-kami</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Mishine-no-Mikura">Mishine-no-Mikura</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Mitsumine_Shrine">Mitsumine Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Motoinari_Kofun">Motoinari Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Mount_Aonomine">Mount Aonomine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Myōkenyama_Kofun">Myōkenyama Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Nawino_Shrine">Nawino Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Nishida_Osamu">Nishida Osamu</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ogawa_Shrine">Ogawa Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Omikiyama_no_Mikoto">Omikiyama no Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ono_Family_(Shake)">Ono Family (Shake)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Prince_Inishikiirihiko">Prince Inishikiirihiko</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/September_1_(Lunisolar)">September 1 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/September_10_(Lunisolar)">September 10 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/September_17_(Lunisolar)">September 17 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/September_24_(Lunisolar)">September 24 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/September_8_(Lunisolar)">September 8 (Lunisolar)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Shidori_Shrine_(Nara)">Shidori Shrine (Nara)</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Summer_Matsuri">Summer Matsuri</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Takakuni_no_Hikono_Mikoto">Takakuni no Hikono Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Takeminakata_&_Minomikotohikokamiwake_Shrine">Takeminakata & Minomikotohikokamiwake Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Takeo_Shimokorihiko_Shrine">Takeo Shimokorihiko Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Tamamoro_Shrine">Tamamoro Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Tanba_clan">Tanba clan</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Tenno-no-Mori_Kofun">Tenno-no-Mori Kofun</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Todoroki-hime-no-Mikoto_Shrine">Todoroki-hime-no-Mikoto Shrine</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Tsukushi_no_Iwai">Tsukushi no Iwai</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Yabuiri">Yabuiri</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Yokoanabo">Yokoanabo</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ōbashi_no_Mikoto">Ōbashi no Mikoto</a></li>
+    <li><a href="https://shinto.miraheze.org/wiki/Ōnakatomi_clan">Ōnakatomi clan</a></li>
+</ul>
+
+<footer>
+  Generated 2026-05-31 00:33 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
+</footer>
+</body>
+</html>

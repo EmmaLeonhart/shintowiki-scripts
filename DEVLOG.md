@@ -6,6 +6,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-05-30
 
+### Backlog dashboard — a GitHub Pages page per todo.md item
+**Files:** `site/generate_pages.py`, `_site/backlog.html` + `_site/backlog-*.html` (8 detail pages)
+
+Emma wanted the dashboard to carry a page for every open backlog item that
+*detects* the involved pages and compiles a live, linked list. Added a **Backlog
+index** (card per item with live count + status) and **8 detail pages**, wired
+into the existing `generate_pages.py` build (CI `generate-pages.yml` regenerates
+`_site/` and deploys). Detection per item, verified live against the wiki
+2026-05-30:
+- **(4) Double category qids** = 7, **(5) Japanese language category names** =
+  1189 subcats, **(7) duplicated content (138) + need translation (392)** = 530,
+  **(8) deleted-QID-in-ill** = 144 — all via `categorymembers` with continuation.
+- **(1)** lists the 4 terminating scripts; **(2)** parses `wiki-cleanup.yml` for
+  the ~50 scripts it invokes — both as GitHub blob links.
+- **(3) ILL WD=Unknown** and **(6) multiple `{{wikidata link}}`** are marked
+  **detection-pending**, NOT faked: this wiki runs the basic database search
+  backend (no CirrusSearch `insource:` — verified it silently returns 0 for every
+  query, including `insource:/Shinto/`), and neither has a tracking category.
+  Their pages explain why and name the dedicated script that would build the
+  list. Added `io.TextIOWrapper` UTF-8 stdout wrapping so the generator runs on
+  the Windows dev box (Japanese titles / arrows) as well as CI.
+
 ### Sync `.state`-file removal — shipped (all 5 sync scripts now stateless)
 **Files:** `shinto_miraheze/sync_{git_synced_pages,need_translation,miraheze_unique_pages,fandom_unique_pages,duplicated_content}.py`, the 5 `.state` files (deleted), `queue.md`, `CLAUDE.md`, `docs/deferred_verification.md`
 

@@ -13,11 +13,16 @@ Fetches live data from shinto.miraheze.org and Wikidata APIs.
 """
 
 import datetime
+import io
 import json
 import os
 import re
 import sys
 import time
+
+# Windows consoles default to cp1252 and choke on Japanese titles / arrows in
+# progress output; force UTF-8 so the generator runs identically on dev + CI.
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -66,6 +71,30 @@ def fetch_category_count(category):
     if pages:
         return pages[0].get("categoryinfo", {}).get("pages", 0)
     return 0
+
+
+def fetch_category_members(category, cmtype="page", cap=5000):
+    """Return [{'title':...,'ns':...}] for members of a category, following
+    continuation. `cmtype` is "page", "subcat", or "page|subcat|file". Bounded
+    by `cap` so a runaway category can't produce unbounded HTML."""
+    members = []
+    params = {
+        "action": "query", "list": "categorymembers",
+        "cmtitle": f"Category:{category}", "cmtype": cmtype,
+        "cmlimit": "500", "format": "json", "formatversion": "2",
+    }
+    while True:
+        resp = http.get(WIKI_API, params=params,
+                        headers={"User-Agent": USER_AGENT}, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+        members.extend(data.get("query", {}).get("categorymembers", []))
+        cont = data.get("continue")
+        if not cont or len(members) >= cap:
+            break
+        params.update(cont)
+        time.sleep(0.3)
+    return members[:cap]
 
 
 def fetch_stats():
@@ -200,12 +229,19 @@ footer {
 }
 ul { margin: 0.5rem 0 0.5rem 1.5rem; }
 li { margin: 0.25rem 0; }
+.backlog-list {
+  columns: 2; column-gap: 2rem; list-style: none; margin-left: 0;
+  font-size: 0.9rem;
+}
+.backlog-list li { break-inside: avoid; padding: 0.1rem 0; }
+@media (max-width: 640px) { .backlog-list { columns: 1; } }
 """
 
 
 def nav_html(active="index"):
     links = [
         ("index", "index.html", "Overview"),
+        ("backlog", "backlog.html", "Backlog"),
         ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking"),
         ("p11250", "p11250.html", "P11250"),
         ("runs", "runs.html", "Run History"),
@@ -450,6 +486,242 @@ def generate_p11250_page(qs_lines, stats):
     return page_html("P11250 QuickStatements — Shintowiki", body, active="p11250"), raw_text
 
 
+# ─── Backlog dashboard ───────────────────────────────────────
+# One page per todo.md backlog item. Each detail page DETECTS the pages (or
+# repo scripts) belonging to the item and lists them live with links.
+# Detection verified against shinto.miraheze.org 2026-05-30.
+
+WIKI_LINK_TEMPLATE = f"{WIKI_URL}/wiki/{{}}"
+REPO_BLOB = f"{REPO_URL}/blob/main/{{}}"
+
+
+def _wiki_href(title):
+    return WIKI_LINK_TEMPLATE.format(title.replace(" ", "_"))
+
+
+# kind: "repo_static" | "repo_workflow" | "category" | "category_multi" | "search"
+BACKLOG_ITEMS = [
+    {
+        "id": 1, "slug": "retire-terminating-scripts",
+        "title": "Retire terminating cleanup scripts (July 2026)",
+        "blurb": "Scheduled for July 2026: confirm these are inert (state covers "
+                 "every eligible page → no more edits), then remove from the "
+                 "workflow and delete. Time-gated, not yet actionable.",
+        "kind": "repo_static",
+        "scripts": [
+            "shinto_miraheze/reimport_from_enwiki.py",
+            "shinto_miraheze/migrate_talk_pages.py",
+            "shinto_miraheze/normalize_category_pages.py",
+            "shinto_miraheze/remove_legacy_cat_templates.py",
+        ],
+    },
+    {
+        "id": 2, "slug": "audit-legacy-scripts",
+        "title": "Audit which pre-orchestrator legacy scripts still run",
+        "blurb": "A confirmation pass over every script wired into "
+                 "wiki-cleanup.yml: still producing edits? wiki-state-driven "
+                 "(keep) vs genuinely inert (retire). Not a delete-spree.",
+        "kind": "repo_workflow",
+        "workflow": ".github/workflows/wiki-cleanup.yml",
+    },
+    {
+        "id": 3, "slug": "ill-missing-wikidata",
+        "title": "ILLs without WD= / \"Unknown\" targets",
+        "blurb": "Interlanguage-link templates whose Wikidata target is unset or "
+                 "literally \"Unknown\". Fill via fix_ill_destinations.py per "
+                 "context — don't blind-overwrite. (Detection here finds the "
+                 "WD=Unknown cases; missing-WD= is harder and not yet listed.)",
+        "kind": "pending_detection",
+        "needs_script": "fix_ill_destinations.py (extended to enumerate {{ill}} usages)",
+        "why": "This wiki runs the basic database search backend — CirrusSearch "
+               "<code>insource:</code> is unavailable, so the WD=Unknown / "
+               "missing-WD= cases can't be matched from page source via the API, "
+               "and there is no tracking category for them.",
+    },
+    {
+        "id": 4, "slug": "duplicate-qid-tail",
+        "title": "Duplicate QID disambiguation pages (tail)",
+        "blurb": "Q-named category pages sharing a QID across 2+ categories. The "
+                 "~621 historical figure long drained; resolve_double_category_"
+                 "qids.py auto-handles same-target cases. What remains is the "
+                 "genuinely-different-target review tail.",
+        "kind": "category", "category": "Double category qids", "cmtype": "page",
+    },
+    {
+        "id": 5, "slug": "japanese-category-names",
+        "title": "Japanese-language category names → English",
+        "blurb": "THE real remaining backlog: category pages whose titles are in "
+                 "Japanese script, to be translated/transliterated to canonical "
+                 "English titles. A mix of dated maintenance cats and content "
+                 "cats. See the scripting-plans doc.",
+        "kind": "category", "category": "Japanese language category names",
+        "cmtype": "subcat",
+    },
+    {
+        "id": 6, "slug": "multiple-wikidata-links",
+        "title": "Multiple {{wikidata link}} on one page",
+        "blurb": "Pages carrying two or more {{wikidata link}} templates — "
+                 "usually a Wikidata disambiguation issue needing per-case "
+                 "review.",
+        "kind": "pending_detection",
+        "needs_script": "a dedicated detector that fetches each Wikidata-link-"
+                        "bearing page (via embeddedin Template:Wikidata link) "
+                        "and counts the templates",
+        "why": "Detecting <em>two or more</em> templates on a page needs source "
+               "inspection. With no CirrusSearch <code>insource:</code> on this "
+               "wiki, the only path is fetching each transcluding page and "
+               "counting — too heavy for build time, so it needs its own script.",
+    },
+    {
+        "id": 7, "slug": "duplicated-content-need-translation",
+        "title": "Duplicated content + remaining need-translation pages",
+        "blurb": "Whole-body duplication to merge, plus pages still tagged for "
+                 "translation. Mostly worked by the cloud-queue routine; manual "
+                 "review only for the hard cases (canonical-title choice, "
+                 "history merge, the large kokuzō articles).",
+        "kind": "category_multi",
+        "categories": [
+            ("Pages with duplicated content", "page"),
+            ("Need translation", "page"),
+        ],
+    },
+    {
+        "id": 8, "slug": "recreate-deleted-wikidata",
+        "title": "Recreate deleted Wikidata items",
+        "blurb": "ILL-target Wikidata items that another editor deleted. To be "
+                 "recreated via the QuickStatements pipeline (respecting the "
+                 "freeze to 2026-06-06) with a minimum claim set that won't be "
+                 "re-deleted.",
+        "kind": "category", "category": "Pages with deleted QID in ill template",
+        "cmtype": "page",
+    },
+]
+
+
+def _backlog_workflow_scripts(workflow_path):
+    """Extract unique *.py script filenames referenced by a workflow file."""
+    path = os.path.join(REPO_ROOT, workflow_path)
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return []
+    names = sorted(set(re.findall(r"([A-Za-z0-9_]+\.py)", text)))
+    # Resolve each to its repo path (best-effort: search shinto_miraheze/).
+    resolved = []
+    for name in names:
+        rel = None
+        for base in ("shinto_miraheze", "modern-quickstatements", "site"):
+            cand = os.path.join(REPO_ROOT, base, name)
+            if os.path.exists(cand):
+                rel = f"{base}/{name}"
+                break
+        resolved.append((name, rel))
+    return resolved
+
+
+def _resolve_backlog_data(item):
+    """Fetch the live list for one backlog item. Returns (entries, note) where
+    entries is a list of (label, href) and note is an optional caveat string."""
+    kind = item["kind"]
+    if kind == "repo_static":
+        return [(p.split("/")[-1], REPO_BLOB.format(p)) for p in item["scripts"]], None
+    if kind == "repo_workflow":
+        rows = _backlog_workflow_scripts(item["workflow"])
+        entries = [(name, REPO_BLOB.format(rel) if rel else
+                    f"{REPO_URL}/search?q={name}") for name, rel in rows]
+        return entries, f"{len(entries)} scripts referenced by {item['workflow']}"
+    if kind == "category":
+        members = fetch_category_members(item["category"], item.get("cmtype", "page"))
+        return [(m["title"], _wiki_href(m["title"])) for m in members], None
+    if kind == "category_multi":
+        entries, notes = [], []
+        for cat, cmtype in item["categories"]:
+            members = fetch_category_members(cat, cmtype)
+            notes.append(f"{len(members)} in [[Category:{cat}]]")
+            entries.append((cat, [(m["title"], _wiki_href(m["title"])) for m in members]))
+        return entries, "; ".join(notes)
+    if kind == "pending_detection":
+        note = (f"<strong>Live list not yet available.</strong> {item['why']} "
+                f"Compiling it needs a dedicated repo script: "
+                f"<code>{item['needs_script']}</code>.")
+        return [], note
+    return [], None
+
+
+def _backlog_list_html(entries):
+    if not entries:
+        return '<p class="timestamp">No pages currently detected for this item.</p>'
+    items = "\n".join(
+        f'    <li><a href="{href}">{label}</a></li>' for label, href in entries
+    )
+    return f'<ul class="backlog-list">\n{items}\n</ul>'
+
+
+def generate_backlog_index(resolved_counts):
+    cards = []
+    for item in BACKLOG_ITEMS:
+        count = resolved_counts.get(item["id"], "?")
+        if item["kind"] == "pending_detection":
+            status = "detection pending"
+        elif item["kind"] in ("repo_static", "repo_workflow"):
+            status = f"<strong>{count}</strong> scripts"
+        else:
+            status = f"<strong>{count}</strong> detected"
+        cards.append(f"""  <a class="feature-card" href="backlog-{item['slug']}.html">
+    <h3>{item['id']}. {item['title']}</h3>
+    <p>{item['blurb']}</p>
+    <p class="timestamp">{status}</p>
+  </a>""")
+    body = f"""
+<h1>Backlog</h1>
+<div class="section">
+  <p>Live status of the {len(BACKLOG_ITEMS)} open backlog items from
+  <a href="{REPO_URL}/blob/main/todo.md">todo.md</a>. Each page below
+  <strong>detects</strong> the wiki pages (or repo scripts) belonging to that
+  item and lists them with links to the actual pages involved. Counts and lists
+  are fetched live from <a href="{WIKI_URL}">shinto.miraheze.org</a> at build
+  time.</p>
+</div>
+<div class="feature-grid">
+{chr(10).join(cards)}
+</div>
+"""
+    return page_html("Backlog — Shintowiki Scripts", body, active="backlog")
+
+
+def generate_backlog_detail(item, entries, note):
+    if item["kind"] == "pending_detection":
+        total = 0
+        list_html = ""
+    elif item["kind"] == "category_multi":
+        # entries is a list of (category, [(label, href), ...])
+        total = sum(len(sub) for _, sub in entries)
+        sections = []
+        for cat, sub in entries:
+            sections.append(
+                f'<h2><a href="{_wiki_href("Category:" + cat)}">'
+                f'Category:{cat}</a> &mdash; {len(sub)}</h2>\n'
+                f'{_backlog_list_html(sub)}'
+            )
+        list_html = "\n".join(sections)
+    else:
+        total = len(entries)
+        list_html = f"<h2>Detected pages &mdash; {total}</h2>\n{_backlog_list_html(entries)}"
+
+    note_html = f'<div class="info-box">{note}</div>' if note else ""
+    body = f"""
+<h1>{item['id']}. {item['title']}</h1>
+<p><a href="backlog.html">&larr; Back to backlog</a></p>
+<div class="section">
+  <p>{item['blurb']}</p>
+</div>
+{note_html}
+{list_html}
+"""
+    return page_html(f"{item['title']} — Backlog", body, active="backlog"), total
+
+
 # ─── Main ────────────────────────────────────────────────────
 
 def main():
@@ -477,11 +749,33 @@ def main():
     with open(os.path.join(SITE_DIR, "p11250.txt"), "w", encoding="utf-8") as f:
         f.write(p11250_raw + "\n")
 
+    # Backlog dashboard: one detail page per todo.md item + an index.
+    print("Generating backlog dashboard...", flush=True)
+    backlog_counts = {}
+    for item in BACKLOG_ITEMS:
+        print(f"  [{item['id']}] {item['title']}", flush=True)
+        try:
+            entries, note = _resolve_backlog_data(item)
+            detail_html, total = generate_backlog_detail(item, entries, note)
+        except Exception as exc:
+            print(f"      WARNING: detection failed: {exc}")
+            detail_html, total = generate_backlog_detail(
+                item, [], f"detection error at build time: {exc}")
+        backlog_counts[item["id"]] = total
+        with open(os.path.join(SITE_DIR, f"backlog-{item['slug']}.html"),
+                  "w", encoding="utf-8") as f:
+            f.write(detail_html)
+        print(f"      {total} entries")
+
+    with open(os.path.join(SITE_DIR, "backlog.html"), "w", encoding="utf-8") as f:
+        f.write(generate_backlog_index(backlog_counts))
+
     # Write summary.json for external consumption
     summary = {
         "generated_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "stats": stats,
         "p11250_pending": len(qs_lines),
+        "backlog_counts": backlog_counts,
     }
     with open(os.path.join(SITE_DIR, "summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)

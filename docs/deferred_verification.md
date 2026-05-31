@@ -73,6 +73,13 @@ batched verification we skip in the moment.
   Bounded by each script's `--max-edits`; everything is reversible. If it misbehaves,
   the fix is to refine the stateless orphan/winner logic, not to bring back the files.
 
+- [ ] **Backlog dashboard pages** (shipped 2026-05-30). Verify after the next
+  `generate-pages.yml` run that `https://emmaleonhart.github.io/shintowiki-scripts/backlog.html`
+  and the 8 `backlog-*.html` detail pages render with live counts, and that the
+  Japanese-category (1189) / need-translation (392) lists load (large pages).
+  Confirm items 3 & 6 still show "detection pending" (or build their detector
+  scripts to replace it).
+
 ## Verified (kept briefly, then prune)
 
 *(empty — move Open items here with the date + what you observed once confirmed.)*
