@@ -52,7 +52,7 @@
 == street address (P6375) ==
 * {'text': '静岡県賀茂郡南伊豆町入間713', 'language': 'ja'}<ref>https://www.houjin-bangou.nta.go.jp/download/zenken/index.html</ref>
 ==References==
-[[JA:三島神社 (南伊豆町入間)]]
+[[ja:三島神社 (南伊豆町入間)]]
 {{wikidata link|Q134930713|ja|三島神社 (南伊豆町入間)}}
 {{translated page|ja|三島神社 (南伊豆町入間)|version=103522609|comment=Imported full ja history}}
 
