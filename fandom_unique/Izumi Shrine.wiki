@@ -1,0 +1,28 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+
+'''Izumi Shrine''' (泉神社) refers to several {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrines|1=Shinto shrine}} across Japan.
+
+* {{ill|Izumi Shrine (Hitachi)|ja|泉神社 (日立市)|12=simple|13=User:Immanuelle/Izumi Shrine (Hitachi)|1=Izumi Shrine (Hitachi)|comment=changed title based on wikidata|qid=Q11554897}} (Hitachi City, Ibaraki Prefecture) - A {{ill|Shikinaisha|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Shikinaisha|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}} small shrine. The {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}} categorized it as a {{ill|Gōsha|ja|郷社|1=Gō-sha|qid=Q134917316}}{{efn|District Shrines|qid=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q134917316|qq= 近代社格制度}}.
+* {{ill|Izumi Shrine (Maibara)|ja|泉神社 (米原市)|12=simple|13=User:Immanuelle/Izumi Shrine (Maibara)|qq=}} (Maibara City, Shiga Prefecture)
+* {{ill|Izumi Shrine (Usa)|ja|泉神社 (宇佐市)|12=simple|13=User:Immanuelle/Izumi Shrine (Usa)|ja_comment=jawiki link invalid|qid=Q135579316|1=Izumi Shrine (Usa)}} (Usa City, Oita Prefecture) - Formerly classified as a Gōsha.
+
+==Other spellings==
+* {{ill|Izumi Shrine (Nagahama)|ja|和泉神社|12=simple|13=User:Immanuelle/Izumi Shrine (Nagahama)|1=Izumi Shrine|comment=changed title based on wikidata|qid=Q132125270}} (和泉神社)
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Izumi Shrine (Q11554897)|lt=Izumi Shrine|qid=Q11554897}} — Hitachi Province
+* {{ill|Izumi Shrine (Q11554898)|lt=Izumi Shrine|qid=Q11554898}} — Maihara
+* {{ill|Izumi Shrine (Q135155910)|lt=Izumi Shrine|qid=Q135155910}} — Mito
+* {{ill|泉神社 (Q135460154)|lt=泉神社|qid=Q135460154}} — Sanjō-shi
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|泉神社|version=54730329|comment=Imported full ja history}}
+
+{{wikidata link|Q11554895|ja|泉神社}}
+[[Category:Shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]
