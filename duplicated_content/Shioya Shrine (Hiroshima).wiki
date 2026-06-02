@@ -21,20 +21,20 @@
 '''Shioya Shrine''' (塩屋神社) is a shrine located in {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}} {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima City}} {{ill|Saeki-ku, Hiroshima|en|Saeki-ku, Hiroshima|qid=Q73718|lt=Saeki Ward}} {{ill|Ebiyama Town|ja|海老山町 (広島市)|lt=Ebiyama Town|lt_ja=海老山町|12=simple|13=User:Immanuelle/Ebiyama Town (Hiroshima)|comment=changed title based on wikidata|qid=Q42633835}}.
 
 == Overview ==
-Within the shrine grounds stands the '''Daikei Tree''' of {{ill|Zelkova serrata|en|Zelkova serrata|qid=Q920344|lt=Zelkova}}.
+Within the shrine grounds stands the '''Daikei Tree''', a large {{ill|Zelkova serrata|en|Zelkova serrata|qid=Q920344|lt=Zelkova}}.
 
 Beside it, an upright sign bears the inscription: {{Quote|The branches resemble an OK sign formed as if an index finger were raised.<br>It appears that wishes may be granted.|Shioya Shrine|Shioya Shrine grounds}}
 
 == History ==
 * Around the 26th year of {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Empress Suiko}} ({{ill|618|en|618|qid=Q31035|lt=618 AD}}): Shioya Shrine is said to have been established.
-* In {{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei}} 28 ({{ill|2015|en|2015|qid=Q2002|lt=2015 AD}}): Renovations were carried out on the grounds as part of the 1400th-anniversary commemoration of its enshrinement.
-* In Heisei 30 ({{ill|2018|en|2018|qid=Q25291|lt=2018 AD}}): The 1400th anniversary of the shrine’s enshrinement was observed.
+* In {{ill|Heisei era|en|Heisei era|qid=Q234510|lt=Heisei}} 28 ({{ill|2015|en|2015|qid=Q2002|lt=2015 AD}}): Renovations were carried out on the grounds as part of the 1,400th-anniversary commemoration of its enshrinement.
+* In Heisei 30 ({{ill|2018|en|2018|qid=Q25291|lt=2018 AD}}): The 1,400th anniversary of the shrine's enshrinement was observed.
 
 == Annual Festival ==
 Held in conjunction with the Tanabata festival.
-* Passing through the straw ring
-* Grand Festival
-* Dedication of the Kawahara Tsukagura Group (Not currently dedicated as of Reiwa 7)
+* Chinowa Kuguri (Passing through the straw ring)
+* Grand Festival and Shrine Maiden's Purification Rites
+* Dedication of the Kawahara Tsukagura Group (not currently dedicated as of Reiwa 7)
 
 == Other Shrines on the Grounds ==
 * Ryugu Shrine
@@ -51,12 +51,12 @@ Held in conjunction with the Tanabata festival.
 |Rituals=
 }}
 
-* Yugai Dokusa Shrine
+* Yugatamichi Shrine (湯蓋道空社)
 {{Infobox religious building| religious_affiliation = [[Shinto]]
-|Name=Yugai Dokusa Shrine
+|Name=Yugatamichi Shrine (湯蓋道空社)
 |image=
 |Location=Same as Shioya Shrine
-|Deity=Yugai Dokusa-no-mikoto
+|Deity=Yugatamichi-no-Mikoto (湯蓋道空命)
 |Rank=
 |Founded=
 |Main Hall=
@@ -64,94 +64,14 @@ Held in conjunction with the Tanabata festival.
 |Annual Festival=March: {{ill|Vernal Equinox Day|en|Vernal Equinox Day|qid=Q1049141|lt=Vernal Equinox Day}}
 |Rituals=
 }}
+
 == See Also ==
 * {{ill|Itsukaichi Hachiman Shrine|ja|五日市八幡神社}}
-
-== External Links ==
-* {{ill|https://www.hachiman-jinja.jp/|ja|五日市八幡神社|lt=Itsukaichi Hachiman Shrine}}
-* {{ill|Shioya Shrine (Hiroshima)|ja|塩屋神社|lt=Shioya Shrine|lt_ja=塩屋神社|12=simple|13=User:Immanuelle/https://www.shioya-jinja.jp/|comment=changed title based on wikidata|qid=Q17992427}}
-
-== See Also ==
 * {{ill|List of Japanese deities|en|List of Japanese deities}}
 * {{ill|Ōyamatsumi|qid=Q386563|lt=Ōyamatsumi|lt=Oyamatsumi|en|12=simple|13=User:Immanuelle/Oyamatsumi}}
 * {{ill|Umisachi and Yamasachi|en|Umisachi and Yamasachi}}
 * {{ill|Ninigi-no-Mikoto|en|Ninigi-no-Mikoto|lt=Ninigi}}
 * {{ill|Sumiyoshi sanjin|en|Sumiyoshi sanjin|lt=Sumiyoshi Sanjin}}
-
-{{translated page|ja|塩屋神社|version=103635435|comment=Imported full ja history}}
-
-==Merged second translation==
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name= Shioya Shrine (塩屋神社)
-| religious_affiliation = [[Shinto]]
-|image= [[File:Shioya shrine.JPG|250px|Shioya Shrine (Ryugu Shrine in the background, Daikei Tree on the left)]]
-|location= {{ill|Saeki-ku, Hiroshima|en|Saeki-ku, Hiroshima|qid=Q73718|lt=Saeki-ku, Hiroshima}}, {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima City}}, {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=広島県}}, {{ill|Q20038243|ja|海老山町|12=simple|13=User:Immanuelle/Ebiyama Town, Hiroshima|comment=changed title based on wikidata|qid=Q20038243}} 8-12
-|ISO = JP-34
-|Latitude = 34 | LatMinutes = 21 | LatSeconds = 46.2
-|Longitude = 132 | LongMinutes = 21 | LongSeconds = 53.7
-|Map= Japan Hiroshima city Urban area
-|deity= {{ill|Sarutahiko Ōkami|ja|猿田彦神|12=simple|13=User:Immanuelle/Sarutahiko-no-Mikoto|ja_comment=jawiki redirects to サルタヒコ|comment=changed title based on wikidata|qid=Q3090037}}, {{ill|Shiotsuchi-no-Oji|ja|塩土老翁神|12=simple|13=User:Immanuelle/Shiotsuchioji|ja_comment=jawiki redirects to シオツチオジ|comment=changed title based on wikidata|qid=Q11174872}}
-|ShrineRank=
-|consecration_year= Traditional date: 618 CE (Suiko 26)
-|MainHall=
-|Alternatename=
-|AnnualFestival= Second Saturday of July
-|Rituals=
-}}
-
-'''Shioya Shrine''' (塩屋神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Q20038243|ja|海老山町|12=simple|13=User:Immanuelle/Ebiyama Town, Hiroshima|comment=changed title based on wikidata|qid=Q20038243}}, {{ill|Saeki-ku, Hiroshima|en|Saeki-ku, Hiroshima|qid=Q73718|lt=Saeki-ku, Hiroshima}}, {{ill|Hiroshima|en|Hiroshima|qid=Q34664|lt=Hiroshima City}}, {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=広島県}}.
-
-== Overview ==
-The shrine grounds feature a large [[zelkova tree]] known as the '''Daikei Tree'''. 
-
-A sign on the premises reads: 
-{{Quote|The branches resemble the shape of "OK" with fingers pointing upwards. It seems like a place where your wishes may come true.|Shioya Shrine|Shioya Shrine grounds}}
-
-== History ==
-* {{ill|Empress Suiko|en|Empress Suiko|qid=Q298057|lt=Suiko}} 26 (618 CE): Traditionally believed to be the year of the shrine's establishment.
-* [[:en:Heisei period|Heisei]] 28 (2015 CE): Grounds renovation as part of the 1,400th anniversary commemoration.
-* Heisei 30 (2018 CE): 1,400th anniversary of the shrine's foundation.
-
-== festival ==
-The shrine festival coincides with Tanabata traditions, including:
-* Chinowa Kuguri (Passing through the grass ring)
-* Main Festival and Shrine Maiden’s Purification Rites
-* Kaguradan dedication by the Kawarazu Kagura Troupe
-
-== Other Shrines within the Grounds ==
-=== Ryugu Shrine ===
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name= Ryugu Shrine (龍宮神社)
-| religious_affiliation = [[Shinto]]
-|image=
-|location= Same as Shioya Shrine
-|deity= {{ill|Toyotama-hime|ja|豊玉姫命|12=simple|13=User:Immanuelle/Toyotama-hime|ja_comment=jawiki redirects to トヨタマヒメ|comment=changed title based on wikidata|qid=Q2329261}}, {{ill|Tamayori-hime|ja|玉依姫命|12=simple|13=User:Immanuelle/Tamayorihime|ja_comment=jawiki redirects to タマヨリビメ|comment=changed title based on wikidata|qid=Q56344982}}
-|ShrineRank=
-|consecration_year= 1893 CE (Meiji 26)
-|MainHall=
-|Alternatename=
-|AnnualFestival= {{ill|Japanese Lunisolar Calendar|ja|旧暦}}: March 10
-|Rituals=
-}}
-
-=== Yugatamichi Shrine ===
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-|name= Yugatamichi Shrine (湯蓋道空社)
-| religious_affiliation = [[Shinto]]
-|image=
-|location= Same as Shioya Shrine
-|deity= Yugatamichi-no-Mikoto (湯蓋道空命)
-|ShrineRank=
-|consecration_year=
-|MainHall=
-|Alternatename=
-|AnnualFestival= Spring Equinox (March)
-|Rituals=
-}}
-
-{{-}}
-== See Also ==
-* {{ill|Itsukaichi Hachiman Shrine|ja|五日市八幡神社}}
 
 == External Links ==
 * [https://www.hachiman-jinja.jp/ Itsukaichi Hachiman Shrine]
@@ -164,8 +84,6 @@ The shrine festival coincides with Tanabata traditions, including:
 [[Category:History of Saeki Ward]]
 [[Category:Japanese deities]]
 [[Category:Kunitsukami]]
-[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Hiroshima]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with interwikis with duplicate languages]]
-[[Category:Pages with duplicated content]]
