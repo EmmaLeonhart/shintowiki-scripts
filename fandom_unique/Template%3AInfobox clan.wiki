@@ -1,0 +1,127 @@
+{{ infobox
+| templatestyles = Infobox/mobileviewfix.css
+| above     = {{{clan name}}}
+| subheader = {{{native name|{{{native_name|{{{gaelic names|}}} }}} }}}
+
+| image     = {{#invoke:InfoboxImage|InfoboxImage|image={{{image badge|}}}|size={{{image badge size|{{{image_size|}}}}}}|sizedefault=frameless|upright=0.86|alt={{{alt|}}}}}
+| caption   = {{#if:{{{chiefs crest|}}}| [[Crest (heraldry)|Crest]]: {{{chiefs crest|}}}| {{{badge caption|{{{badge_caption|}}}}}} }}
+
+| label6    = Motto
+| data6     = {{{chiefs motto|}}}
+
+| label7    = {{ill|heraldic war cry|ca|Lema (heràldica)|de|Kriegsgeschrei|en|Slogan (heraldry)|gl|Slogan (heráldica)|he|סלוגן (הרלדיקה)|id|Slogan (heraldik)|ja|モットー (紋章学)|pl|Zawołanie bojowe klanów szkockich|pt|Slogan (heráldica)|zh_min_nan|Slogan (bûn-chiong-ha̍k)|lt=heraldic war cry|qid=Q3329162}}
+| data7     = {{{chiefs slogan|}}}
+
+| label8    = {{ill|battle cry|bar|Schlochtruaf|bg|Боен вик|de|Schlachtruf|en|Battle cry|es|Grito de guerra|fa|رجزخوانی|fi|Sotahuuto (sodankäynti)|fr|Liste de cris de guerre|he|קריאת קרב|it|Lista di grida di guerra|ja|鬨|ko|함성 (군사)|lt|Karo šūkis|nl|Strijdkreet|pl|Zawołanie|pt|Grito de guerra|ru|Боевой клич|sr|Бојни поклич|sv|Stridsrop|uk|Бойовий вигук|uz|Suron|zh|戰吼|zh_min_nan|Chiàn-hoah|lt=battle cry|qid=Q1433428}}
+| data8     = {{{war cry|}}}
+
+| header10  = {{#if:{{{country|}}}{{{region|}}}{{{district|}}}{{{plant badge|}}}{{{clan badge|}}}{{{animal|}}}{{{pipe music|}}}| Profile }}
+
+| label11   = Country
+| data11    = {{{country|}}}
+
+| label12   = {{#if:{{{region type|}}}|{{{region type}}}|Region}}
+| data12    = {{{region|}}}
+
+| label13   = {{#if:{{{district type|}}}|{{{district type}}}|District}}
+| data13    = {{{district|}}}
+
+| label14   = Ancestry
+| data14    = {{{ancestry|}}}
+
+| label15   = Ethnicity
+| data15    = {{{ethnicity|}}}
+
+| label16    = Founder
+| data16     = {{{founder|}}}
+
+| label17   = {{#if:{{{plant badge|}}}|[[Clan badge|Plant badge]]|[[Clan badge]]}}
+| data17    = {{#if:{{{plant badge|}}}|{{{plant badge}}}|{{{clan badge|}}}}}
+
+| label18   = {{ill|totem|af|Totem|ar|طوطم|arz|طوطم|bar|Totem|bg|Тотем|bn|টোটেম|ca|Tòtem|cs|Totem|da|Totem|de|Totem|el|Τοτέμ|en|Totem|eo|Totemo|es|Tótem|et|Tootem|eu|Totem|fa|توتم|fi|Toteemi|fr|Totem (objet rituel)|ga|Tótam|gl|Tótem|he|טוטם|hu|Totem|hy|Տոտեմ|id|Totem|io|Totemo|it|Totem|ja|トーテム|kk|Тотем|ko|토템|ku|Totem|la|Totemum|lt|Totemas|mk|Тотем|ml|ടോട്ടം|nl|Totem|no|Totem|pa|ਟੋਟਮ|pl|Totem (religia)|pnb|ٹوٹم|pt|Totem|ro|Totem|ru|Тотем|sk|Totem|sn|Mutupo|sq|Totemi|sr|Тотем|sv|Totem|ta|குலக்குறிச் சின்னம்|th|โทเท็ม|tr|Totem|ug|توتېم|uk|Тотем|vi|Vật tổ|wuu|图腾|zh|圖騰|zh_yue|圖騰|lt=totem|qid=Q263443}}
+| data18    = {{{animal|}}}
+
+| label19   = [[Great Highland Bagpipe|Pipe music]]
+| data19    = {{{pipe music|}}}
+
+| header20  = {{#if:{{{chiefs name|}}}| Chief }}
+
+| data21    = {{#invoke:InfoboxImage|InfoboxImage|image={{{image arms|}}}|size={{{image arms size|{{{image_arms_size|}}}}}}|sizedefault=frameless|upright=0.86|alt={{{image_arms_alt|}}}}}
+
+| data22    = {{#if:{{{chiefs name|}}}| {{{chiefs name|}}}| {{{clan name}}} no longer has a chief, and is an [[:en:Armigerous clan|Armigerous clan]] }}
+
+| data23    = {{{chiefs title|}}} {{#if:{{{chiefs gaelic title|}}}| ({{{chiefs gaelic title|}}}) }}
+
+| label24   = [[Clan seat|Seat]]
+| data24    = {{{seat|}}}
+
+| label25   = Historic seat
+| data25    = {{{historic seat|}}}
+
+| label26   = Last Chief
+| data26    = {{{last chiefs name|}}}
+
+| label27   = Died
+| data27    = {{{date of death of last chief|}}}
+
+| label28   = Commander
+| data28    = {{{commander|}}}
+
+| data29    = {{#if:{{{septs|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! [[Sept]]s of {{{clan name}}}
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{septs}}}</div>
+{{!}}}
+}}
+
+| data30    = {{#if:{{{branches|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! Clan branches
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{branches}}}</div>
+{{!}}}
+}}
+
+| data31    = {{#if:{{{Allied clans|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! Allied clans
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{Allied clans}}}</div>
+{{!}}}
+}}
+
+| data32    = {{#if:{{{Rival clans|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! Rival clans
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{Rival clans}}}</div>
+{{!}}}
+}}
+
+| data33    = {{#if:{{{kindreds|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! Kindreds
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{kindreds}}}</div>
+{{!}}}
+}}
+
+| data34    = {{#if:{{{titles|}}}|
+{{{!}} class="mw-collapsible mw-collapsed" style="width:100%"
+! Titles
+{{!}}-
+{{!}} style="text-align:left; padding:0.3em" {{!}} <div>{{{titles}}}</div>
+{{!}}}
+}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox clan]] with unknown parameter "_VALUE_"|ignoreblank=y| Allied clans | alt | ancestry | animal | badge caption | badge_caption | branches | chiefs crest | chiefs gaelic title | chiefs motto | chiefs name | chiefs slogan | chiefs title | clan badge | clan name | commander | country | date of death of last chief | district | district type | ethnicity | founder | gaelic names | historic seat | image arms | image arms size | image badge | image badge size | image_arms_alt | image_arms_size | image_size | kindreds | last chiefs name | native name | native_name | pipe music | plant badge | region | region type | Rival clans | seat | septs | titles | war cry }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox clan with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+[[Category:Templates transcluded in mainspace]]
+</noinclude>
