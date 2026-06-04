@@ -9,10 +9,10 @@
 | label6    = Motto
 | data6     = {{{chiefs motto|}}}
 
-| label7    = {{ill|heraldic war cry|ca|Lema (heràldica)|de|Kriegsgeschrei|en|Slogan (heraldry)|gl|Slogan (heráldica)|he|סלוגן (הרלדיקה)|id|Slogan (heraldik)|ja|モットー (紋章学)|pl|Zawołanie bojowe klanów szkockich|pt|Slogan (heráldica)|zh_min_nan|Slogan (bûn-chiong-ha̍k)|lt=heraldic war cry|qid=Q3329162}}
+| label7    = [[heraldic war cry]]
 | data7     = {{{chiefs slogan|}}}
 
-| label8    = {{ill|battle cry|bar|Schlochtruaf|bg|Боен вик|de|Schlachtruf|en|Battle cry|es|Grito de guerra|fa|رجزخوانی|fi|Sotahuuto (sodankäynti)|fr|Liste de cris de guerre|he|קריאת קרב|it|Lista di grida di guerra|ja|鬨|ko|함성 (군사)|lt|Karo šūkis|nl|Strijdkreet|pl|Zawołanie|pt|Grito de guerra|ru|Боевой клич|sr|Бојни поклич|sv|Stridsrop|uk|Бойовий вигук|uz|Suron|zh|戰吼|zh_min_nan|Chiàn-hoah|lt=battle cry|qid=Q1433428}}
+| label8    = [[battle cry]]
 | data8     = {{{war cry|}}}
 
 | header10  = {{#if:{{{country|}}}{{{region|}}}{{{district|}}}{{{plant badge|}}}{{{clan badge|}}}{{{animal|}}}{{{pipe music|}}}| Profile }}
@@ -38,7 +38,7 @@
 | label17   = {{#if:{{{plant badge|}}}|[[Clan badge|Plant badge]]|[[Clan badge]]}}
 | data17    = {{#if:{{{plant badge|}}}|{{{plant badge}}}|{{{clan badge|}}}}}
 
-| label18   = {{ill|totem|af|Totem|ar|طوطم|arz|طوطم|bar|Totem|bg|Тотем|bn|টোটেম|ca|Tòtem|cs|Totem|da|Totem|de|Totem|el|Τοτέμ|en|Totem|eo|Totemo|es|Tótem|et|Tootem|eu|Totem|fa|توتم|fi|Toteemi|fr|Totem (objet rituel)|ga|Tótam|gl|Tótem|he|טוטם|hu|Totem|hy|Տոտեմ|id|Totem|io|Totemo|it|Totem|ja|トーテム|kk|Тотем|ko|토템|ku|Totem|la|Totemum|lt|Totemas|mk|Тотем|ml|ടോട്ടം|nl|Totem|no|Totem|pa|ਟੋਟਮ|pl|Totem (religia)|pnb|ٹوٹم|pt|Totem|ro|Totem|ru|Тотем|sk|Totem|sn|Mutupo|sq|Totemi|sr|Тотем|sv|Totem|ta|குலக்குறிச் சின்னம்|th|โทเท็ม|tr|Totem|ug|توتېم|uk|Тотем|vi|Vật tổ|wuu|图腾|zh|圖騰|zh_yue|圖騰|lt=totem|qid=Q263443}}
+| label18   = [[totem]]
 | data18    = {{{animal|}}}
 
 | label19   = [[Great Highland Bagpipe|Pipe music]]
@@ -120,7 +120,5 @@
 [[Category:Pages using infobox clan with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
 </noinclude>

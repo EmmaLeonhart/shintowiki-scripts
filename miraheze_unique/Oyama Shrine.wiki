@@ -13,8 +13,8 @@
 * {{ill|Oyama Shrine|ja|大山神社 (尾道市)|12=simple|13=User:Immanuelle/Ōyama Shrine (Onomichi)|comment=changed title based on wikidata|qid=Q124496778}} - Located in {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture}}, {{ill|Innoshima Habuchō, Onomichi|ja|尾道市因島土生町}}
 
 {{disambiguation}}
-{{disambiguation}}
 
+<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Ohoyamano Shrine (Q135039905)|lt=Ohoyamano Shrine|qid=Q135039905}} — Mino Province
@@ -31,6 +31,8 @@
 * {{ill|Ōyama Shrine (Q135260307)|lt=Ōyama Shrine|qid=Q135260307}} — Motegi
 * {{ill|大山神社 (Q134594946)|lt=大山神社|qid=Q134594946}} — Isumi
 * {{ill|大山神社 (Q135463953)|lt=大山神社|qid=Q135463953}} — Aga
+
+<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|大山神社|version=97972710|comment=Imported full ja history}}
 
