@@ -1,0 +1,23 @@
+{{#if:{{{km2|}}}
+ |{{#if:{{{sqmi|}}}
+  |{{formatnum:{{{km2}}}}}/km<sup>2</sup> ({{formatnum:{{{sqmi}}}}}/sq&nbsp;mi)
+  |{{formatnum:{{{km2}}}}}/km<sup>2</sup> ({{#expr: ({{formatnum:{{{km2}}}|R}})*2.58998811 round ({{precision|{{formatnum:{{{km2}}}|R}}}}-0)}}/sq&nbsp;mi)
+ }}
+ |{{#if:{{{sqmi|}}}
+  |{{formatnum:{{{sqmi}}}}}/sq&nbsp;mi ({{#expr: ({{formatnum:{{{sqmi}}}|R}})/2.58998811 round ({{precision|{{formatnum:{{{sqmi}}}|R}}}}+1)}}/km<sup>2</sup>)
+  |{{#if:{{{m2|}}}
+   |{{#if:{{{sqft|}}}
+    |{{formatnum:{{{m2}}}}}/m<sup>2</sup> ({{formatnum:{{{sqft}}}}}/sq&nbsp;ft)
+     |{{formatnum:{{{m2}}}}}/m<sup>2</sup> ({{#expr: ({{formatnum:{{{m2}}}|R}})/10.7639104 round ({{precision|{{formatnum:{{{m2}}}|R}}}}+1)}}/sq&nbsp;ft)
+    }}
+   |{{#if:{{{sqft|}}}
+    |{{formatnum:{{{sqft}}}}}/sq&nbsp;ft ({{#expr: ({{formatnum:{{{sqft}}}|R}})*10.7639104 round ({{precision|{{formatnum:{{{sqft}}}|R}}}}-0)}}/m<sup>2</sup>)
+   }}
+  }}
+ }}
+}}<noinclude>{{documentation}}
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
