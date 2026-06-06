@@ -35,6 +35,31 @@ autonomous-loop crons started for the session.
   Module-level stdout-wrapper moved into `main()` so the modules import cleanly
   under pytest.
 
+#### Backlog item 2 — fix_ill_destinations.py (fill unresolved {{ill}} qids)
+**Files:** `shinto_miraheze/fix_ill_destinations.py` (new),
+`shinto_miraheze/tests/test_fix_ill_destinations.py` (new),
+`.github/workflows/wiki-cleanup.yml`
+
+Category-driven filler over `[[Category:Pages with unresolved QID in ill
+template]]` (live **873** members). For each `{{ill}}` whose qid is missing /
+empty / the literal `Unknown` (NOT `DELETED_QID`), resolves a destination QID
+and writes it surgically — replace a placeholder qid in place, else append
+`|qid=Q…`; never overwrites a valid `Q\d+`; no other param touched.
+- **Resolution**: (1) enwiki pageprops `wikibase_item` on the English target
+  (explicit `en|` pair, else positional[0]) — the NEW capability over
+  `normalize_ill_wikidata` Mode B; (2) single-unique sitelink QID across the
+  non-en pairs; 2+ distinct → leave. 
+- **Disambiguation guard (added after live testing)**: a live run filled
+  `{{ill|Mountain Shrine|ja|山神社}}` → Q11470798, which is a *Wikimedia
+  disambiguation page*. Added `is_bad_target` rejecting any candidate whose P31
+  is disambiguation / category / list before filling. Re-verified on the same
+  page: the dab fill is gone, only the correct `Saijin`→Q11591100 remains.
+- Live read-only end-to-end test across 6 real category pages confirmed correct
+  resolutions (enwiki-first priority correctly preferred `Southern Court`→Q3001082
+  over the looser ja match). Wired into `wiki-cleanup.yml` at 50 saves/run +
+  in-script `MAX_PAGES_PER_RUN=300`; edits the shinto wiki only (not Wikidata —
+  freeze N/A). 14 unit tests pass.
+
 ## 2026-05-30
 
 ### Orchestrator detectors for backlog items 3 & 6 (no CirrusSearch → tag-into-category)
