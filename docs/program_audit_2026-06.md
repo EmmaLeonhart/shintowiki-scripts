@@ -181,7 +181,11 @@ deferred verification (churn-inspection half pending a healthy wiki — see
   kludge.
 - **`Template:GaiadDate` mis-deletion.** Swept up by deletion passes but must not
   be deleted. **Kludge:** `undelete_gaiad_date` every cycle. → **Fix:** exclude it
-  from the deletion passes, then drop the kludge.
+  from the deletion passes, then drop the kludge. **ROOT-CAUSE FIX LANDED
+  2026-06-06:** `delete_unused_templates.py` now has a `KEEP_TITLES` never-delete
+  set (with a loop-level unit test) protecting `Template:GaiadDate` — the
+  Special:UnusedTemplates culprit. Kludge kept as a safety net until a CI cycle
+  confirms GaiadDate stops being deleted, then retire `undelete_gaiad_date`.
 - **`audit_double_category_qids` disabled** (2026-04-24) — un-throttled walk hung
   the loop for 11h. Superseded by the auto-fixer + the new
   `report_double_qid_tail.py`. → **Verdict: retire the script. DONE 2026-06-06**

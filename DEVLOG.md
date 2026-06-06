@@ -6,6 +6,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): root-cause fix for the GaiadDate undelete kludge
+**Files:** `shinto_miraheze/delete_unused_templates.py`,
+`shinto_miraheze/tests/test_delete_unused_templates_keep.py` (new),
+`shinto_miraheze/undelete_gaiad_date.py`, `docs/program_audit_2026-06.md`,
+`queue.md`
+
+Addressed the audit §6 "Fix" item behind the `undelete_gaiad_date` kludge.
+`Template:GaiadDate` has zero transclusions, so it appears in
+Special:UnusedTemplates every cycle and `delete_unused_templates.py` deleted it
+each run — then the kludge undeleted it. Added a `KEEP_TITLES` never-delete set +
+`is_protected(title)` guard so the deletion loop skips protected titles (a
+strictly *more conservative* change — the safe direction for deletion logic).
+
+To make the guard testable, made the module import-safe: the module-level
+`sys.stdout = io.TextIOWrapper(...)` swap (which breaks pytest's output capture on
+import) moved into `_ensure_utf8_stdout()`, called from `main()` — runtime
+behavior on real CI runs is identical (main is always the entry point). Added
+`test_delete_unused_templates_keep.py`: unit-tests the predicate AND a loop-level
+test that drives `main()` with fakes, asserting `Template:GaiadDate` is skipped
+while an ordinary unused template is still deleted. Full suite 30 → **33 passed**.
+
+Did NOT drop the `undelete_gaiad_date` kludge — kept as a safety net for one or
+more CI cycles. Annotated the kludge docstring + audit doc: retire it once a CI
+cycle confirms GaiadDate stays put (the script will then report "exists; nothing
+to undelete" every run). If it's still deleted after this, another deletion pass
+is the culprit and must be excluded there.
+
 ### Work-loop (1pm cron): retire audit_double_category_qids.py
 **Files:** `shinto_miraheze/audit_double_category_qids.py` (deleted),
 `.github/workflows/wiki-cleanup.yml`, `todo.md`,

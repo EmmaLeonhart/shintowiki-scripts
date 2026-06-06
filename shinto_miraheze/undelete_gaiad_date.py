@@ -7,6 +7,15 @@ Kludge: [[Template:GaiadDate]] keeps getting deleted by deletion passes
 script checks whether the page currently exists on shintowiki and, if
 it doesn't, issues an action=undelete to restore every deleted revision.
 
+ROOT-CAUSE FIX LANDED 2026-06-06: delete_unused_templates.py now carries a
+KEEP_TITLES never-delete set containing Template:GaiadDate, so the usual
+culprit (Special:UnusedTemplates) no longer deletes it. This kludge is kept
+as a safety net for one or more CI cycles; once a cycle confirms GaiadDate
+is no longer being deleted (this script reports "exists; nothing to
+undelete" every run), retire it — delete the script and its wiki-cleanup.yml
+step. If GaiadDate still gets deleted after the fix, another deletion pass is
+the culprit; find and exclude it there.
+
 Runs once per pipeline cycle after the Cleanup Loop step that is the
 usual culprit for sweeping it up. Requires the `undelete` right —
 EmmaBot has sysop, which grants it.
