@@ -6,6 +6,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): complete login_with_retry rollout to all standalone scripts
+**Files:** 62 `shinto_miraheze/*.py` scripts, `todo.md`, `queue.md`
+
+Finished the `todo.md` "Shared login-retry helper" rollout for the standalone
+scope. Swept every top-level `shinto_miraheze/*.py` that still did a raw
+`site.login(...)` — 62 scripts — adding `from wiki_login import login_with_retry`
+(inserted right after each file's `mwclient` import) and rewriting the call to
+`login_with_retry(site, ...)`. So one transient miraheze auth flake in any one
+CI step no longer red-marks the whole job.
+
+Method: a one-off migration script (deleted after use) applied the identical
+mechanical swap, guarded so it only touched files containing `site.login(`
+(automatically excluding the 9 already-migrated scripts, `orchestrators/`, and
+`fandom/`) and never double-imported. Verified: (1) `python -m py_compile` on all
+62 changed files — clean; (2) full `shinto_miraheze/tests/` suite — 30 passed;
+(3) post-sweep grep — only `wiki_login.py` retains a raw `site.login(` (the helper
+itself), every changed file has exactly one helper import; (4) no cross-imports —
+all 62 run only as `__main__` and every workflow invokes them as
+`python3 shinto_miraheze/X.py` (script dir on `sys.path`), so the bare sibling
+import resolves, same as the 9 proven scripts. No runtime login test (no local
+creds — by design).
+
+NOT done (left on the `todo.md` item as a distinct follow-up): the orchestrators'
+shared login (`orchestrators/common.py` — highest single-point value),
+`orchestrators/ops/fandom_mirror.py`, and the two `fandom/*.py` importers. These
+live outside `shinto_miraheze/` top level, so a bare `import wiki_login` does not
+resolve — each needs a path-aware import, a separate change.
+
 ### Work-loop #5: adopt login_with_retry in this session's 3 new scripts
 **Files:** `shinto_miraheze/report_double_qid_tail.py`,
 `report_multiple_wikidata_links.py`, `fix_ill_destinations.py`, `todo.md`

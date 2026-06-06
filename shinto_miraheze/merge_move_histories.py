@@ -20,6 +20,7 @@ Pages that link to more than one partner are skipped (must be exclusive pairs).
 
 import os
 import mwclient
+from wiki_login import login_with_retry
 import re
 import time
 import io
@@ -210,7 +211,7 @@ def merge_pair(site, a_title, b_title, token):
 def main():
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f'Logged in to {WIKI_URL}\n')
 
     token = get_csrf_token(site)

@@ -30,6 +30,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 # Mirrors THRESHOLDS in
 # shinto_miraheze/orchestrators/ops/untranslated_japanese.py. Inlined
@@ -65,7 +66,7 @@ def main() -> int:
     username = os.getenv("WIKI_USERNAME", "EmmaBot")
     password = os.getenv("WIKI_PASSWORD", "")
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
-    site.login(username, password)
+    login_with_retry(site, username, password)
     print(f"Logged in as {username}")
 
     edited = skipped = missing = errors = 0

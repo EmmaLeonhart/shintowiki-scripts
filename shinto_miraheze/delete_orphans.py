@@ -44,6 +44,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -161,7 +162,7 @@ def main() -> int:
             print("FATAL: --apply requires WIKI_PASSWORD env var.",
                   file=sys.stderr)
             return 2
-        site.login(USERNAME, PASSWORD)
+        login_with_retry(site, USERNAME, PASSWORD)
         print(f"Logged in as {USERNAME}")
     else:
         print("DRY RUN — no login, no deletes")

@@ -36,6 +36,7 @@ import time
 import unicodedata
 
 import mwclient
+from wiki_login import login_with_retry
 
 # Counter-family sunset: bail out without editing on/after this date.
 # Coordinated with ``sunset_jp_char_count_cats.py`` (which marks the
@@ -255,7 +256,7 @@ def main():
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     # When targeting a specific category, skip state tracking — always process all members

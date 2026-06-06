@@ -9,6 +9,7 @@ import re
 from pathlib import Path
 
 import mwclient
+from wiki_login import login_with_retry
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
@@ -193,7 +194,7 @@ def main():
         path=WIKI_PATH,
         clients_useragent="BotStatusUpdater/1.0 (User:EmmaBot; shinto.miraheze.org)",
     )
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
 
     # Lightweight stage-only update — skip the full page rebuild
     if args.stage and not args.status:

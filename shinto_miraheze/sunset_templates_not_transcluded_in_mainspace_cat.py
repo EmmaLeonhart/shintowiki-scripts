@@ -28,6 +28,7 @@ import os
 import sys
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -51,7 +52,7 @@ def main() -> int:
     username = os.getenv("WIKI_USERNAME", "EmmaBot")
     password = os.getenv("WIKI_PASSWORD", "")
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
-    site.login(username, password)
+    login_with_retry(site, username, password)
     print(f"Logged in as {username}")
 
     page = site.pages[TARGET_CATEGORY]

@@ -6,4 +6,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-_(empty — work-loop 2026-06-06 #1 closed Q4 self-categorization + idempotency (VERIFIED) and partial-passed sync most-recent-edit-wins; #2 rechecked Q3 enwiki enrichment (corrected the doc's wrong description; recorded bucket state 4788 source / 0 with-wikidata / 10 / 101 + a rate-over-weeks recheck criterion). See DEVLOG 2026-06-06. Still Open and needing input/conditions: Emma's answer on the recreate-deleted-WD question; Q3 enwiki enrichment recheck with a content-cat sample; the propagate-retirement drain (67/705) over more cycles; phase-c place gazetteer — guessing-risk, gated on Emma; legacy-script audit — needs CI edit-count logs.)_
+Pinned tail (keep last, always):
+- [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
+- [ ] Run the status-report action once more independently as an end-of-session summary.

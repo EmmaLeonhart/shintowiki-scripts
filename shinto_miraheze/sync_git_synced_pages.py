@@ -46,6 +46,7 @@ import urllib.parse
 from pathlib import Path
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
@@ -237,7 +238,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     current_head = head_commit(REPO_ROOT)  # stamped onto every state entry

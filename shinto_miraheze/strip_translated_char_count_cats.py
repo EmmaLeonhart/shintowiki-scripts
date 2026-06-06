@@ -26,6 +26,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -82,7 +83,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     done = load_state(STATE_FILE) if args.apply else set()

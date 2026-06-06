@@ -31,6 +31,7 @@ import urllib.parse
 from pathlib import Path
 
 import mwclient
+from wiki_login import login_with_retry
 
 # Put the repo root on sys.path so the shinto_miraheze namespace
 # resolves. No __init__.py in shinto_miraheze/, so the script
@@ -227,7 +228,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in to {WIKI_URL} as {USERNAME}")
 
     current_head = head_commit(REPO_ROOT)  # stamped onto every state entry

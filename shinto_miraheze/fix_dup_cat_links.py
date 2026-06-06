@@ -5,6 +5,7 @@ Fix existing dup pages that have [[Category:X]] instead of [[:Category:X]]
 in their numbered list entries.
 """
 import re, sys, io, mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -16,7 +17,7 @@ DUP_CAT   = "duplicated qid category redirects"
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                      clients_useragent='CategoryQidRedirectBot/1.0 (User:EmmaBot; shinto.miraheze.org)')
-site.login(USERNAME, PASSWORD)
+login_with_retry(site, USERNAME, PASSWORD)
 print("Logged in as", USERNAME, flush=True)
 
 # Regex: numbered list item with bare [[Category:...]] (no leading colon)

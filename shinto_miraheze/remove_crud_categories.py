@@ -19,6 +19,7 @@ import io
 import sys
 import argparse
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -48,7 +49,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent="CrudCategoryRemoverBot/1.0 (User:EmmaBot; shinto.miraheze.org)")
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
     crud_cat = site.categories[CRUD_CAT]

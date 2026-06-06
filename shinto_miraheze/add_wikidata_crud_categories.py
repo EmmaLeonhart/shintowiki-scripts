@@ -25,6 +25,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -58,7 +59,7 @@ def main():
     if not PASSWORD:
         print("No WIKI_PASSWORD — read-only (dry-run only).")
     else:
-        site.login(USERNAME, PASSWORD)
+        login_with_retry(site, USERNAME, PASSWORD)
         print(f"Logged in as {USERNAME}")
 
     edits = 0

@@ -32,6 +32,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 import requests as requests_lib
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
@@ -204,7 +205,7 @@ def main():
         clients_useragent=USER_AGENT,
     )
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
     imported = skipped = errors = 0

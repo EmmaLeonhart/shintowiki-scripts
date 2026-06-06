@@ -42,6 +42,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -325,7 +326,7 @@ def main():
     # this repo sets this; we did not, and it bit us on the first
     # post-re-enable run.
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
     visited_state, _ = load_state()

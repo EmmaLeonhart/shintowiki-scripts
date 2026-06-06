@@ -33,6 +33,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -142,7 +143,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
                          clients_useragent=USER_AGENT)
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     # Read existing QS page

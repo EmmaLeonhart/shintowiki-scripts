@@ -19,6 +19,7 @@ import os
 import time
 import re
 import mwclient
+from wiki_login import login_with_retry
 import requests
 import sys
 
@@ -35,7 +36,7 @@ PASSWORD = os.getenv("WIKI_PASSWORD", "")
 CATEGORY_NAME = 'Missing wikidata'
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH)
-site.login(USERNAME, PASSWORD)
+login_with_retry(site, USERNAME, PASSWORD)
 
 # Retrieve username in a way that works on all mwclient versions
 try:

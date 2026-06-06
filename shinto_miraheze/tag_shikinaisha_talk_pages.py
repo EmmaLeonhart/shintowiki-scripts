@@ -22,6 +22,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -81,7 +82,7 @@ def main():
         path=WIKI_PATH,
         clients_useragent="ShikinaishaTalkTaggerBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
     )
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
     completed = load_state(args.state_file) if args.apply else set()

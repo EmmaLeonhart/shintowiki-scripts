@@ -39,6 +39,7 @@ import sys
 import time
 
 import mwclient
+from wiki_login import login_with_retry
 import requests
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
@@ -186,7 +187,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(username, password)
+    login_with_retry(site, username, password)
     print(f"Logged in as {username}")
 
     # Get QS lines from either --input file or live wiki page
