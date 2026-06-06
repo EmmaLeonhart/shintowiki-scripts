@@ -55,6 +55,8 @@ import time
 import mwclient
 import requests
 
+from wiki_login import login_with_retry
+
 # ─── CONFIG ─────────────────────────────────────────────────
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
@@ -356,7 +358,7 @@ def main():
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     members = get_category_members(site)

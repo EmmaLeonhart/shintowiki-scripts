@@ -6,6 +6,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop #5: adopt login_with_retry in this session's 3 new scripts
+**Files:** `shinto_miraheze/report_double_qid_tail.py`,
+`report_multiple_wikidata_links.py`, `fix_ill_destinations.py`, `todo.md`
+
+Continued the shared-login rollout, scoped to the 3 scripts I authored earlier
+this session (they should have used the helper from the start):
+`report_double_qid_tail`, `report_multiple_wikidata_links`, `fix_ill_destinations`
+— each had the identical un-retried `site.login(USERNAME, PASSWORD)`, now
+`login_with_retry`. Verified: ast.parse, bare import in the run-dir context
+(`login_with_retry` present), and the full 30-test suite (which imports all 3
+modules) green. (A local `--help` UnicodeEncodeError is just the Windows cp1252
+console choking on the `→`/`…` glyphs in the help text — exit 0, irrelevant to CI's
+UTF-8.) ~25 CI-wired scripts still on the `todo.md` rollout item — kept the batch
+small and fully-verified rather than mass-editing.
+
 ### Work-loop #4: promote login-retry to a shared helper, adopt in deletion scripts
 **Files:** `shinto_miraheze/wiki_login.py` (new),
 `shinto_miraheze/delete_lowercase_template_collisions.py`,
