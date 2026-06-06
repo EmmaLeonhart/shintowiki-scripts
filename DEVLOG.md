@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-06
+
+### Work-loop: finish the deferred-verification wiki-parse sweep
+**Files:** `docs/deferred_verification.md`
+
+The wiki responded this tick (502-flaky last session), so I ran the read-only
+`action=parse` checks left Open. Results:
+- **Q4 `{{wikidata link}}` self-categorization → VERIFIED.** 6/6 mainspace
+  `Pages without wikidata` members render that category; 3/3 `Categories missing
+  wikidata` Category-ns members render theirs — confirming the ns-aware
+  else-branch fires only on an empty QID slot. Re-read the template source to
+  confirm the `{{#if:{{{1|}}}|…|{{#switch:{{NAMESPACE}}…}}}}` condition.
+- **Q4 idempotency → VERIFIED.** Exactly one `{{wikidata link}}` per sampled page.
+- **sync most-recent-edit-wins → partial PASS.** 0/30 EmmaBot recentchanges
+  summaries mention "revision count"; low sync churn.
+- **Q3 enwiki enrichment → NOT confirmed.** 6 sampled members (all dated
+  `Articles with unsourced statements…` cats) show no enwiki parent — biased
+  sample; needs a content-cat recheck. Left Open.
+- **Caught my own probe bug:** `action=parse` returns category titles with
+  underscores; an underscore-vs-space mismatch in the first probe produced false
+  "renders=False" negatives that I almost recorded as a concern. Re-ran
+  normalized before concluding — no wiki issue. (Rail: verify before claiming.)
+
 ## 2026-06-05
 
 ### Wiki-content backlog barrel-through (Emma remote-control session)

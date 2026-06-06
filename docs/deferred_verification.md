@@ -26,21 +26,17 @@ batched verification we skip in the moment.
 
 ## Open (shipped, not yet verified)
 
-- [ ] **Q4 — `{{wikidata link}}` self-categorization** (shipped 2026-05-30, `34fcfefc`).
-  Verify via `action=parse`: a page invoking `{{wikidata link|Q…}}` renders exactly as
-  before (the tmbox + interwikis); a page with a blank `{{wikidata link}}` renders
-  nothing visible AND gains `[[Category:Pages without wikidata]]` — but ONLY in ns 0/14.
-  Confirm NO `[[Category:Pages without wikidata]]` cascade onto pages that merely
-  transclude a template containing the blank call. If the render is broken, fix the
-  template (`miraheze_unique/` + `fandom_unique/` `Template%3AWikidata link.wiki`).
-- [ ] **Q4 — op appends blank `{{wikidata link}}`** (shipped 2026-05-30, `34fcfefc`).
-  Verify a mainspace/category page lacking a wikidata link gets a single blank
-  `{{wikidata link}}` appended (NOT re-appended each cleanup cycle — idempotency).
 - [ ] **Q3 — enwiki parent-category enrichment** (shipped 2026-05-30, `f2b36a86`).
   Verify `enrich_enwiki_categories.py` adds `[[Category:<enwiki parent>]]` links to
   pages in `[[Category:Emmabot categories with enwiki]]`, red parents land in
   Special:WantedCategories, and the create→triage→enrich recursion proceeds. (~8h to
   show; Emma may confirm directly.)
+  **2026-06-06 check: NOT confirmed.** 6 sampled members (all `Articles with
+  unsourced statements from <month year>` dated-maintenance cats) render with NO
+  other category — no enwiki parent added. Either these dated maintenance cats
+  genuinely have no enwiki parent, or enrichment hasn't reached them. The sample is
+  biased (all one type, alphabetically first). Recheck with a CONTENT-category
+  sample before concluding; leave Open.
 - [ ] **propagate retirement drain** (shipped 2026-05-30, `0714ce70`).
   Verify `miraheze_unique/` churn-candidate count (files lacking the literal
   `[[Category:Independently git synced pages]]` tag) drains to ~0 and the 6 legit
@@ -53,6 +49,10 @@ batched verification we skip in the moment.
   Verify no spurious overwrites: when wiki and repo both changed, the side with the more
   recent edit wins (watch sync edit summaries — should no longer say "wins on revision
   count"; the logic now reads timestamps).
+  **2026-06-06 check: partial PASS.** 0 / 30 most-recent `User:EmmaBot`
+  recentchanges summaries mention "revision count", and sync-push/delete entries
+  were absent from that window (low churn). Consistent with the new timestamp
+  logic; small window, so kept Open for a wider recheck, but no warning signs.
 
 - [ ] **Sync `.state`-file removal (shipped 2026-05-30) — HIGHEST-PRIORITY REVIEW.**
   All 5 `sync_*.py` now run STATELESS: `load_state` returns `{}`, `save_state` is a
@@ -78,6 +78,21 @@ batched verification we skip in the moment.
 
 ## Verified (kept briefly, then prune)
 
+- [x] **Q4 — `{{wikidata link}}` self-categorization** (shipped 2026-05-30,
+  `34fcfefc`; **verified 2026-06-06**). Via `action=parse`: 6/6 sampled mainspace
+  members of `[[Category:Pages without wikidata]]` render that category; 3/3
+  sampled `[[Category:Categories missing wikidata]]` Category-ns members render
+  THAT category — confirming the ns-aware `{{#switch:{{NAMESPACE}}|=Pages without
+  wikidata|Category=Categories missing wikidata}}` else-branch fires only when the
+  QID slot (`{{{1}}}`) is empty. (Template source re-read to confirm the condition.)
+  *Probe note: `action=parse` returns category titles with underscores — an
+  underscore-vs-space mismatch in the first probe gave false negatives; corrected.*
+- [x] **Q4 — op appends blank `{{wikidata link}}` / idempotency** (shipped
+  2026-05-30, `34fcfefc`; **verified 2026-06-06**). Every sampled member carries
+  exactly ONE `{{wikidata link}}` template (no re-append each cycle); the appended
+  blank gets pairs folded in by `interlang_consolidate` but keeps an empty QID, so
+  it still self-categorizes. No runaway-duplicate-template pages (consistent with
+  `[[Category:Pages with multiple wikidata links]]` sitting at 1).
 - [x] **Backlog dashboard pages** (shipped 2026-05-30; **verified 2026-06-05**).
   `https://emmaleonhart.github.io/shintowiki-scripts/backlog.html` renders 8
   backlog cards with live counts: retire-terminating(4), legacy-script-audit(50),

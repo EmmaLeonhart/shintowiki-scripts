@@ -6,4 +6,4 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-_(empty — the 2026-06-05 barrel-through session drained the queue; see DEVLOG 2026-06-05. Three autonomous-loop crons running. Next: Emma's answer on the recreate-deleted-WD open question; phase-c place gazetteer for category translation; the wiki-`action=parse` deferred-verification items when the wiki is healthy.)_
+_(empty — work-loop 2026-06-06 closed the Q4 self-categorization + idempotency deferred-verification items (VERIFIED) and partial-passed the sync most-recent-edit-wins item; see DEVLOG 2026-06-06. Still Open and needing input/conditions: Emma's answer on the recreate-deleted-WD question; Q3 enwiki enrichment recheck with a content-cat sample; the propagate-retirement drain (67/705) over more cycles; phase-c place gazetteer — guessing-risk, gated on Emma; legacy-script audit — needs CI edit-count logs.)_
