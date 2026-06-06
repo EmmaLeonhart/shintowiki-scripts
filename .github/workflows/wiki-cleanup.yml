@@ -532,6 +532,33 @@ jobs:
       # sweep rather than monthly. Standalone script retained but no
       # longer invoked by CI.
 
+      # Backlog item 1: regenerate category_moves.csv from the live Japanese-
+      # category backlog right before move_categories consumes it. Makes NO wiki
+      # edits — reads the wiki + Wikidata, appends confident rows (Wikidata-
+      # anchored English Category sitelink + deterministic dated-maintenance
+      # transform; never a guess) to the CSV, writes a residual report. The
+      # CSV/residual are the human review surface (committed below); the move
+      # itself is the move_categories step that follows.
+      - name: "Deprecated: generate_category_translation_moves"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
+          shinto_miraheze/run_step.sh "Deprecated: generate_category_translation_moves" \
+            python3 shinto_miraheze/generate_category_translation_moves.py --apply --run-tag "${RUN_TAG}"
+
+      - name: "Commit: category_moves.csv + residual report"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
+          git add shinto_miraheze/category_moves.csv docs/category_translation_residual.md 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No category-translation changes to commit."
+          else
+            git commit -m "chore(cat-translation): regenerate category_moves.csv + residual [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
+          fi
+
       - name: "Deprecated: move_categories"
         if: always() && steps.*.outcome != 'cancelled'
         run: |

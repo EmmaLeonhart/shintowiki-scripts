@@ -35,6 +35,38 @@ autonomous-loop crons started for the session.
   Module-level stdout-wrapper moved into `main()` so the modules import cleanly
   under pytest.
 
+#### Backlog item 1 — generate_category_translation_moves.py (phases a + b)
+**Files:** `shinto_miraheze/generate_category_translation_moves.py` (new),
+`shinto_miraheze/tests/test_category_translation.py` (new),
+`.github/workflows/wiki-cleanup.yml`
+
+Naming-logic generator for `[[Category:Japanese language category names]]` (live
+**1189** subcats). Emits ONLY confident proposals into `category_moves.csv`
+(appends, never clobbers the existing 295 rows; skips already-listed sources);
+the existing `move_categories.py` performs the move. **Never guesses.**
+- **Phase b (the real win): Wikidata-anchored.** Live audit found **1067/1189**
+  carry `{{wikidata link|Q…}}`; when the QID is the Wikimedia-*category* item, its
+  enwiki sitelink (authoritative) — fallback en label — IS the English `Category:`
+  name. Dry-run (partial, see below) resolved e.g. `三木町の建築物` →
+  `Category:Buildings and structures in Miki, Kagawa`, `三島市の歴史` →
+  `Category:History of Mishima`. Requiring a `Category:` prefix means the QID must
+  be a category item, which structurally rules out the dab-page risk.
+- **Phase a: deterministic dated-maintenance transform.** `<EN prefix> from
+  YYYY年M月` → `Month YYYY`; long malformed timestamps (`…2016年5月31日 (火) 13:15
+  (UTC)`) collapse onto the month form. The live data showed the dated bucket is
+  only **2** categories (most drained by prior sweeps) — the bulk is content cats,
+  which is why phase b was built in the same pass rather than dated-only.
+- **Place-name gazetteer (phase c) deliberately NOT built** — that's the
+  guessing-risk part; unresolved cats go to `docs/category_translation_residual.md`
+  for the follow-on phase / human translation.
+- Local dry-run: a Miraheze **502** truncated enumeration to 500/1189 subcats and
+  still resolved **205/483** (the rest residual). Hardened `get_subcats` to flag an
+  incomplete pass (no silent caps) and the residual report self-labels PARTIAL.
+  Added a bounded `_get_json` retry for transient 5xx. Wired into `wiki-cleanup.yml`
+  monthly, immediately before `move_categories`, with a commit of the CSV +
+  residual — so CI regenerates fully on GitHub's network (no flaky partial local
+  data committed). 5 unit tests on the dated transform pass.
+
 #### Backlog item 2 — fix_ill_destinations.py (fill unresolved {{ill}} qids)
 **Files:** `shinto_miraheze/fix_ill_destinations.py` (new),
 `shinto_miraheze/tests/test_fix_ill_destinations.py` (new),

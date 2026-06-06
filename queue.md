@@ -10,9 +10,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 Working order follows `docs/wiki_content_scripting_plans_2026-05.md` (3 & 4 first, then 2, then 1, then 5 — gated). Every wiki-writing script is wired into CI (no local write creds); the dev session tests dry-run / read-only and commits + pushes so the next CI fire exercises it.
 
-### D. Item 1 — `generate_category_translation_moves.py` phase (a) (LARGE → start deterministic chunk)
-Enumerate `[[Category:Japanese language category names]]` subcats. Phase (a): deterministic dated-maintenance transform (`YYYY年M月` → `Month YYYY`; collapse long malformed timestamp forms onto the month form) + a small hand-maintained template-prefix lookup. Emit `category_moves.csv` rows `(source,dest,reason)` for the confident deterministic cases ONLY; everything else → residual report, never guessed. (Phases b/c/d — Wikidata-label resolver, place gazetteer, human queue — are follow-on todo items.) The existing `move_categories.py` already consumes the CSV (monthly CI step). Test by inspecting the generated CSV.
-
 ### E. Item 5 — recreate deleted Wikidata items — POST OPEN QUESTION (gated on Emma + freeze)
 Do NOT build/run the generator. Per the plan it needs Emma's explicit notability go-ahead + a defensible minimum claim set, and Wikidata freeze runs to 2026-06-06. Post a precise open question to `git_synced/Open questions.wiki` (minimum claim set proposal + the 144-item scope) for Emma to approve; commit + push so it syncs to the wiki.
 
