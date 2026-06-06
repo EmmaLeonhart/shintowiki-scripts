@@ -59,6 +59,12 @@ from urllib.parse import quote
 import mwclient
 import requests
 
+# wiki_login lives in the sibling shinto_miraheze/ package; this script runs as
+# a top-level `python3 fandom/X.py`, so add the repo root to sys.path before the
+# package import (same shim as sync_fandom_unique_pages.py).
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from shinto_miraheze.wiki_login import login_with_retry
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 THROTTLE = 2.5  # seconds between fandom uploads
@@ -210,7 +216,7 @@ def fandom_login() -> mwclient.Site:
             "FANDOM_USERNAME / FANDOM_PASSWORD env vars are required."
         )
     site = mwclient.Site(DST_HOST, path="/", clients_useragent=USER_AGENT)
-    site.login(user, pw)
+    login_with_retry(site, user, pw)
     return site
 
 

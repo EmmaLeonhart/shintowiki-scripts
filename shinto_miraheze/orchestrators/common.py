@@ -48,6 +48,8 @@ import time
 
 import mwclient
 
+from shinto_miraheze.wiki_login import login_with_retry
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
@@ -113,7 +115,7 @@ def login_site() -> mwclient.Site:
     username = os.getenv("WIKI_USERNAME", "EmmaBot")
     password = os.getenv("WIKI_PASSWORD", "")
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
-    site.login(username, password)
+    login_with_retry(site, username, password)
     print(f"Logged in as {username}")
     return site
 

@@ -33,6 +33,8 @@ import os
 
 import mwclient
 
+from shinto_miraheze.wiki_login import login_with_retry
+
 # All writes to shinto.fandom.com stop on this date. After it, every
 # entry point that mutates fandom — fandom_mirror.mirror_page() (used
 # by history_offload), sync_fandom_unique_pages.py, the wantedfiles
@@ -71,7 +73,7 @@ def _get_fandom_site() -> mwclient.Site:
             "FANDOM_USERNAME / FANDOM_PASSWORD not set — cannot mirror to fandom."
         )
     site = mwclient.Site(FANDOM_HOST, path="/", clients_useragent=USER_AGENT)
-    site.login(user, pw)
+    login_with_retry(site, user, pw)
     _fandom_site = site
     return site
 

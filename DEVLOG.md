@@ -6,6 +6,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): finish login_with_retry — orchestrator + fandom, item DONE
+**Files:** `shinto_miraheze/orchestrators/common.py`,
+`shinto_miraheze/orchestrators/ops/fandom_mirror.py`,
+`fandom/import_template_list_to_fandom.py`,
+`fandom/import_commons_wantedfiles_to_fandom.py`, `todo.md`, `queue.md`
+
+Closed the last 4 raw `site.login(...)` sites in the repo, fully completing the
+`todo.md` shared-login-retry item (now deleted from `todo.md`). After this, a grep
+for `site.login(` across the whole tree returns ONLY `wiki_login.py` itself (the
+helper).
+
+- `common.py` (the single shared login for ALL 12 namespace orchestrators — the
+  highest-value spot) and `fandom_mirror.py` (history_offload's fandom mirror op)
+  run under `python3 -m shinto_miraheze...` (repo root on `sys.path`), so they use
+  a clean package import: `from shinto_miraheze.wiki_login import login_with_retry`.
+- The two `fandom/*.py` importers run as top-level `python3 fandom/X.py` (only
+  `fandom/` on `sys.path`) — a bare or package import would `ModuleNotFoundError`
+  (this is the exact trap the existing inlined-constant note at
+  `import_commons...py:411` warned about). Added the same `sys.path` repo-root shim
+  `sync_fandom_unique_pages.py` already uses, then the package import.
+
+Verified: `py_compile` all 4; the orchestrator package imports resolve from
+repo-root context (`common.login_with_retry` / `fandom_mirror.login_with_retry`
+present); each fandom shim resolves under a faithfully-mimicked top-level
+invocation (repo root stripped from `sys.path`, `fandom/` made `sys.path[0]`, each
+module exec'd in its own process) — both report the helper bound; full 30-test
+suite green.
+
 ### Work-loop (1pm cron): complete login_with_retry rollout to all standalone scripts
 **Files:** 62 `shinto_miraheze/*.py` scripts, `todo.md`, `queue.md`
 
