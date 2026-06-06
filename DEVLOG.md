@@ -35,6 +35,19 @@ autonomous-loop crons started for the session.
   Module-level stdout-wrapper moved into `main()` so the modules import cleanly
   under pytest.
 
+#### Comprehensive program audit
+**Files:** `docs/program_audit_2026-06.md` (new), `todo.md`
+
+Wrote the single read-through of the whole machine: the CI invocation graph (10
+top-level scheduled workflows + the cleanup-loop spine that `workflow_call`s 16
+sub-workflows; 5 manual-only dispatch workflows flagged as retire-candidates), the
+12 orchestrators with their verified `OPS` lists, the legacy standalone scripts by
+wiki-cleanup chunk, the single Wikidata QS path, the sync + cloud-queue loop, the
+known kludges (`undelete_*` papering over a `history_offload` recreate glitch + a
+`Template:GaiadDate` mis-deletion), a table of the 7 in-flight wiki migrations with
+their current state + next observable step, and keep/fix/retire verdicts. Linked
+from `todo.md`.
+
 #### Deferred-verification read-only sweep + orphan-state cleanup
 **Files:** `docs/deferred_verification.md`, removed
 `shinto_miraheze/sync_main_page.state`
