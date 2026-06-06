@@ -35,6 +35,24 @@ autonomous-loop crons started for the session.
   Module-level stdout-wrapper moved into `main()` so the modules import cleanly
   under pytest.
 
+#### Deferred-verification read-only sweep + orphan-state cleanup
+**Files:** `docs/deferred_verification.md`, removed
+`shinto_miraheze/sync_main_page.state`
+
+Ran the read-only checks from `docs/deferred_verification.md` that the wiki would
+answer. Moved to Verified: **backlog dashboard** (renders 8 cards w/ live counts),
+**items 3 & 6 categories populating** (dashboard: ILLs-without-WD **849**,
+multiple-wikidata-links **1**; direct count `unresolved_ill_qid`=873 — both
+populate, contrary to the "reads 0 until swept" caveat), **sync statelessness**
+(all 5 `sync_*.py` `save_state` are no-ops; no `sync_*.state` remain).
+- **Found + removed an orphan state file**: `sync_main_page.state` survived commit
+  `feb2b678` which deleted `sync_main_page.py` — no script, no CI reference. `git
+  rm`'d.
+- `propagate retirement drain` annotated (still draining, 67/705 miraheze_unique
+  files lack the tag — Open). The wiki-`action=parse`-dependent items couldn't be
+  checked — shinto.miraheze.org was 502/timeout throughout the sweep; left Open
+  with that note (no false "verified" claims).
+
 #### Backlog item 1 — generate_category_translation_moves.py (phases a + b)
 **Files:** `shinto_miraheze/generate_category_translation_moves.py` (new),
 `shinto_miraheze/tests/test_category_translation.py` (new),

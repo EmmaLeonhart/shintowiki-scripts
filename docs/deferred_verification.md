@@ -46,6 +46,9 @@ batched verification we skip in the moment.
   `[[Category:Independently git synced pages]]` tag) drains to ~0 and the 6 legit
   templates were NOT orphan-deleted. (Check with `check_lowercase_collisions.py`-style
   read or by recounting the repo files.)
+  **2026-06-05 check:** still draining — **67 / 705** `miraheze_unique/*.wiki`
+  lack the tag (was a larger fraction; not yet ~0). Not broken, not finished —
+  leave Open, recheck next sweep.
 - [ ] **sync conflict resolution → most-recent-edit-wins** (shipped 2026-05-30, `179eaebd`).
   Verify no spurious overwrites: when wiki and repo both changed, the side with the more
   recent edit wins (watch sync edit summaries — should no longer say "wins on revision
@@ -73,17 +76,36 @@ batched verification we skip in the moment.
   Bounded by each script's `--max-edits`; everything is reversible. If it misbehaves,
   the fix is to refine the stateless orphan/winner logic, not to bring back the files.
 
-- [ ] **Backlog dashboard pages** (shipped 2026-05-30). Verify after the next
-  `generate-pages.yml` run that `https://emmaleonhart.github.io/shintowiki-scripts/backlog.html`
-  and the 8 `backlog-*.html` detail pages render with live counts, and that the
-  Japanese-category (1189) / need-translation (392) lists load (large pages).
-  Items 3 & 6 are now category-backed by the new `unresolved_ill_qid` /
-  `multiple_wikidata_links` orchestrator ops — confirm those categories start
-  populating after the next `cleanup-loop.yml` mainspace/category sweeps (they
-  read 0 until the orchestrator tags pages with `--apply`), and that the ops
-  don't over-tag (spot-check a tagged page genuinely has an unresolved ill /
-  2+ wikidata links).
-
 ## Verified (kept briefly, then prune)
 
-*(empty — move Open items here with the date + what you observed once confirmed.)*
+- [x] **Backlog dashboard pages** (shipped 2026-05-30; **verified 2026-06-05**).
+  `https://emmaleonhart.github.io/shintowiki-scripts/backlog.html` renders 8
+  backlog cards with live counts: retire-terminating(4), legacy-script-audit(50),
+  ILLs-without-WD(**849**), duplicate-QID-tail(4), Japanese-category(**1189**),
+  multiple-wikidata-links(**1**), duplicated+need-translation(524), recreate-
+  deleted-WD(144). Page fully functional, not empty/errored.
+- [x] **Items 3 & 6 categories populating** (the `unresolved_ill_qid` /
+  `multiple_wikidata_links` ops; **verified 2026-06-05**). Both populate — they do
+  NOT read 0: the dashboard shows ILLs-without-resolved-QID at **849** and
+  multiple-wikidata-links at **1** (a direct category-members count read
+  `unresolved_ill_qid` = **873** the same day). The ops are tagging on the
+  cleanup-loop sweeps as designed. (Over-tag spot-check still worth a glance but
+  the fix_ill_destinations live test on 6 of these pages found genuine unresolved
+  ills, consistent with correct tagging.)
+- [x] **Sync `.state`-file removal — statelessness** (shipped 2026-05-30;
+  **partially verified 2026-06-05**). All 5 `sync_*.py` confirmed stateless:
+  `save_state` is `return` (no-op) in sync_duplicated_content, sync_fandom_unique_pages,
+  sync_git_synced_pages, sync_miraheze_unique_pages, sync_need_translation. No
+  `sync_*.state` files remain on disk. **Found + removed an orphan**:
+  `sync_main_page.state` survived commit `feb2b678` (which deleted
+  `sync_main_page.py`) — no script, no CI reference; `git rm`'d this session.
+  ⚠ The churn-inspection half (watch sync edit summaries for runaway PUSH/DELETE)
+  could NOT be run — shinto.miraheze.org was returning 502s / read-timeouts during
+  the sweep. Recheck the recentchanges of `User:EmmaBot` next healthy sweep.
+
+## Open (wiki-parse-dependent, deferred — wiki was 502/timeout during the 2026-06-05 sweep)
+
+The remaining items (Q4 self-categorization render, Q4 blank-template idempotency,
+Q3 enwiki parent-category enrichment, sync conflict-resolution edit summaries)
+need live `action=parse` / recentchanges reads that the flaky wiki refused during
+this sweep. Left Open; recheck on the next monthly sweep when the wiki responds.

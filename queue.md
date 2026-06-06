@@ -16,12 +16,6 @@ Do NOT build/run the generator. Per the plan it needs Emma's explicit notability
 ### F. queue item 2 (carried) — comprehensive program audit
 Write `docs/program_audit_2026-06.md`: every workflow, orchestrator+ops, legacy CI script, sync script, the QS pipeline, the remote-queue loop — what runs, trigger, state file, what's failing/stuck/orphaned, in-flight wiki migrations + next observable step, verdict per item (keep/fix/retire). Link from `todo.md`.
 
-### G. queue item 1 (carried) — deferred-verification sweep (read-only checks)
-Walk `docs/deferred_verification.md` Open items; run each read-only check now (action=parse / category counts / sync edit-summary inspection). Move confirmed ones to Verified with date+observation; fix anything broken. Don't bring back `.state` files.
-
-### H. Prune resolved meta blocks
-The weekly-OQ-sweep block: live `[[Open questions]]` has no new actionable items (checked at session start) — prune that block. The monthly-verify-sweep block is the same work as G — fold into G and prune.
-
 ### Y. (pinned tail) Ensure the three autonomous-loop crons are running
 Start them if this session never did; restart if a planning burst killed them.
 
