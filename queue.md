@@ -6,11 +6,4 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-## Session 2026-06-05 — barrel through the wiki-content backlog (Emma remote-control)
-
-Working order follows `docs/wiki_content_scripting_plans_2026-05.md` (3 & 4 first, then 2, then 1, then 5 — gated). Every wiki-writing script is wired into CI (no local write creds); the dev session tests dry-run / read-only and commits + pushes so the next CI fire exercises it.
-
-### Y. (pinned tail) Ensure the three autonomous-loop crons are running
-Start them if this session never did; restart if a planning burst killed them.
-
-### Z. (pinned tail) Run the status-report action once more — end-of-session summary
+_(empty — the 2026-06-05 barrel-through session drained the queue; see DEVLOG 2026-06-05. Three autonomous-loop crons running. Next: Emma's answer on the recreate-deleted-WD open question; phase-c place gazetteer for category translation; the wiki-`action=parse` deferred-verification items when the wiki is healthy.)_
