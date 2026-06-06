@@ -90,16 +90,9 @@ jobs:
             --run-tag "${RUN_TAG}" \
             ${RETRY_ERRORS_FLAG}
 
-      # Kludge alongside the import: User:Immanuelle/common.js keeps getting
-      # auto-deleted by orchestrator history_offload (delete stage runs but
-      # the recreate stage appears to glitch out). Restore it on every run
-      # of this workflow too so we have multiple recovery surfaces. See
-      # todo.md "Diagnose history_offload delete-without-recreate glitch".
-      - name: Undelete User:Immanuelle/common.js
-        if: always()
-        run: |
-          python3 shinto_miraheze/undelete_immanuelle_common_js.py \
-            --apply --run-tag "${RUN_TAG}"
+      # undelete_immanuelle_common_js kludge RETIRED 2026-06-06 — root cause
+      # fixed (history_offload skips protected JS/CSS/JSON pages) and the kludge
+      # was impotent (customjsprotected). See wiki-cleanup.yml note + git history.
 
       - name: Commit state
         if: always()

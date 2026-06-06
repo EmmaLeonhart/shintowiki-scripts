@@ -174,11 +174,17 @@ deferred verification (churn-inspection half pending a healthy wiki — see
 
 ## 6. Known-stuck / kludged / failing
 
-- **`history_offload` delete-without-recreate glitch.** `User:Immanuelle/common.js`
-  gets deleted by `history_offload` but its recreate stage glitches, leaving the
-  page deleted. **Kludge:** `undelete_immanuelle_common_js` restores it every
-  cycle. → **Fix:** diagnose the recreate glitch (open todo item), then drop the
-  kludge.
+- **`history_offload` delete-without-recreate glitch.** ~~`User:Immanuelle/common.js`
+  gets deleted by `history_offload` but its recreate stage glitches~~ **RESOLVED.**
+  Diagnosed 2026-05-03: not a glitch — `history_offload` could *delete* the page
+  (delete right granted) but not *recreate* it, because editing another user's
+  `/common.js` needs `edituserjs`, which EmmaBot lacks (`customjsprotected`).
+  **Fix in place + verified 2026-06-06:** `history_offload.py:271` skips
+  `.js/.css/.json` pages in ns 2,3,8,9 outright, so the page is no longer deleted;
+  the page is live again (pageid 1055). The `undelete_immanuelle_common_js` kludge
+  was impotent anyway (same permission wall) and has been **RETIRED 2026-06-06**
+  (script deleted; steps removed from `wiki-cleanup.yml` +
+  `import-templates-to-fandom.yml`).
 - **`Template:GaiadDate` mis-deletion.** Swept up by deletion passes but must not
   be deleted. **Kludge:** `undelete_gaiad_date` every cycle. → **Fix:** exclude it
   from the deletion passes, then drop the kludge. **ROOT-CAUSE FIX LANDED
@@ -218,8 +224,12 @@ deferred verification (churn-inspection half pending a healthy wiki — see
 
 - **Keep (healthy core):** cleanup-loop spine, 12 orchestrators + ops, the sync
   subsystem, the single Wikidata QS path, the dashboard/`generate-pages` build.
-- **Fix:** the two `undelete_*` kludges (diagnose root causes), the category
-  orchestrator's never-completing cycle (should settle post-catch-up-window).
+- **Fix:** the `undelete_*` kludges — `undelete_immanuelle_common_js` **RETIRED
+  2026-06-06** (root cause fixed in `history_offload`; kludge was impotent);
+  `undelete_gaiad_date` root-caused 2026-06-06 (`delete_unused_templates`
+  `KEEP_TITLES` guard) but kept one more CI cycle to confirm before retiring. Plus
+  the category orchestrator's never-completing cycle (should settle
+  post-catch-up-window).
 - **Retire (confirm-then-delete, overlaps July-2026 legacy audit):**
   `create_shrine_ranking_pages` + `rebucket_300plus_untranslated` (TEMPORARY),
   ~~`audit_double_category_qids` (disabled, superseded)~~ **— RETIRED 2026-06-06**,

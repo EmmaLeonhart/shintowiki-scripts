@@ -480,16 +480,12 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: undelete_gaiad_date" \
             python3 shinto_miraheze/undelete_gaiad_date.py --apply --run-tag "${RUN_TAG}"
 
-      # Kludge: User:Immanuelle/common.js keeps disappearing — orchestrator
-      # history_offload appears to delete it but its recreate stage glitches
-      # out, leaving the page in the deleted pool. Until that root cause is
-      # diagnosed (todo.md "Diagnose history_offload delete-without-recreate
-      # glitch"), restore it every cycle.
-      - name: "Cleanup: undelete_immanuelle_common_js"
-        if: always() && steps.*.outcome != 'cancelled'
-        run: |
-          shinto_miraheze/run_step.sh "Cleanup Loop: undelete_immanuelle_common_js" \
-            python3 shinto_miraheze/undelete_immanuelle_common_js.py --apply --run-tag "${RUN_TAG}"
+      # undelete_immanuelle_common_js — RETIRED 2026-06-06. Root cause fixed:
+      # history_offload now skips .js/.css/.json pages in ns 2,3,8,9 (it could
+      # delete but not recreate them — customjsprotected), so the page is no
+      # longer auto-deleted. The kludge was impotent anyway (EmmaBot lacks
+      # edituserjs, so its action=undelete always failed customjsprotected) and
+      # the page is live again. See git history for the old script.
 
       - name: "Commit state: Cleanup Loop"
         if: always() && steps.*.outcome != 'cancelled'

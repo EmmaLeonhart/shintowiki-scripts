@@ -6,6 +6,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): retire undelete_immanuelle_common_js kludge
+**Files:** `shinto_miraheze/undelete_immanuelle_common_js.py` (deleted),
+`.github/workflows/wiki-cleanup.yml`,
+`.github/workflows/import-templates-to-fandom.yml`,
+`docs/program_audit_2026-06.md`, `queue.md`
+
+Closed the other audit §6 "Fix" item (the `history_offload`
+"delete-without-recreate glitch"). Investigated rather than assuming it was
+blocked: (1) it was never a glitch — `history_offload` could delete the page but
+not recreate another user's `/common.js` (`edituserjs` right, which EmmaBot lacks
+→ `customjsprotected`); (2) the root-cause fix is already in place and verified —
+`history_offload.py:271` skips `.js/.css/.json` pages in ns 2,3,8,9 outright
+(landed 2026-05-03); (3) the kludge was impotent regardless (same permission wall
+→ it only ever soft-failed and exited 0); (4) a live read-only API check shows the
+page exists again (pageid 1055, contentmodel javascript). So it was a per-cycle
+dead-weight step in two workflows.
+
+Retired it: deleted the script (git history retains it), removed the steps from
+`wiki-cleanup.yml` and `import-templates-to-fandom.yml` (replacing each with a
+short retirement note — both still carried stale comments pointing at a long-gone
+todo item), and updated audit §6/§8. Kept `undelete_gaiad_date` — that kludge
+actually works and is still in its post-fix CI confirmation window. Test suite
+unchanged (33 passed; the script had no importers or tests).
+
 ### Work-loop (1pm cron): root-cause fix for the GaiadDate undelete kludge
 **Files:** `shinto_miraheze/delete_unused_templates.py`,
 `shinto_miraheze/tests/test_delete_unused_templates_keep.py` (new),
