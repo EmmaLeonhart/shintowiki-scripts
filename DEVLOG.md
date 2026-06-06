@@ -6,6 +6,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop #4: promote login-retry to a shared helper, adopt in deletion scripts
+**Files:** `shinto_miraheze/wiki_login.py` (new),
+`shinto_miraheze/delete_lowercase_template_collisions.py`,
+`delete_unused_templates.py`, `delete_unused_redirects.py`,
+`delete_unused_categories.py`, `delete_orphaned_talk_pages.py`,
+`delete_broken_redirects.py`, `shinto_miraheze/tests/test_login_retry.py`, `todo.md`
+
+Promoted #3's inline `_login_with_retry` to a shared `wiki_login.login_with_retry`
+and adopted it across the cleanup-job deletion scripts (the class where a
+transient login flake fails a step → red-marks the whole `cleanup` job for nothing):
+`delete_lowercase_template_collisions` (refactored to import it) +
+`delete_unused_templates` / `delete_unused_redirects` / `delete_unused_categories`
+/ `delete_orphaned_talk_pages` / `delete_broken_redirects` (all had the identical
+clean `site.login(USERNAME, PASSWORD)`). Standalone scripts run as
+`python3 shinto_miraheze/X.py`, so a bare `import wiki_login` resolves to the
+sibling — verified with the real invocation (`--help` loads the module; import OK).
+30 tests pass (retry tests repointed to the shared helper). The remaining ~30
+scripts still do a single login — left on the `todo.md` item as the broader rollout.
+
 ### Work-loop #3: harden delete_lowercase login against transient-auth CI failure
 **Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`,
 `shinto_miraheze/tests/test_login_retry.py` (new), `todo.md`

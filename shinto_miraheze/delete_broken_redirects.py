@@ -16,6 +16,8 @@ import time
 
 import mwclient
 
+from wiki_login import login_with_retry
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
@@ -60,7 +62,7 @@ def main():
         path=WIKI_PATH,
         clients_useragent="BrokenRedirectDeleteBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
     )
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 
     checked = deleted = skipped = errors = 0

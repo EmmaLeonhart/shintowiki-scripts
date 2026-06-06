@@ -44,6 +44,8 @@ import time
 
 import mwclient
 
+from wiki_login import login_with_retry
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
@@ -149,7 +151,7 @@ def main() -> int:
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120
-    site.login(USERNAME, PASSWORD)
+    login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 
     print(f"Fetching Special:UnusedRedirects via querypage={QUERYPAGE_NAME!r} ...")
