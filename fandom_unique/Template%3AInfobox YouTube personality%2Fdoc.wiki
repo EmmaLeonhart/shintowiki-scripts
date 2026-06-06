@@ -361,7 +361,7 @@ Only the most pertinent information should be included. Please remove unused par
 			],
 			"label": "Honorific prefix",
 			"description": "Honorific prefix(es), to appear above the YouTube personality's name.",
-			"example": "{{ill|Sir|ar|سير (لقب)|ast|Sir|az|Ser|be|Сэр|bg|Сър/дейм|bn|স্যার|ca|Sir|ce|Сэр|ckb|سێر (نازناو)|cs|Sir|de|Sir (Anrede)|en|Sir|eo|Siro|es|Sir|et|Sir|fa|سر (عنوان)|fi|Sir|fr|Sir (noblesse)|fy|Sir|gl|Sir|he|סר|hi|सर|hr|Sir (naslov)|hy|Սըր|id|Sir|it|Sir|ja|サー|kk|Сэр|ko|Sir|mk|Сер (титула)|mn|Сэр (цол)|ms|Sir|ne|सर|nl|Sir (titel)|nn|Sir|no|Sir|or|ସାର୍|pl|Sir|pt|Sir|ru|Сэр|sh|Sir (titula)|simple|Sir|sk|Sir|sl|Sir (naziv)|sr|Сер (титула)|sv|Sir (titel)|sw|“Sir”|ta|சர்|te|సర్|tr|Sir|uk|Сер (титул)|vec|Sir|zh|爵士|lt=Sir|qid=Q209690}}",
+			“example”: “[[Sir]]”,
 			"type": "line"
 		},
 		"name": {
@@ -999,15 +999,15 @@ Only the most pertinent information should be included. Please remove unused par
 
 }}</includeonly>
 <noinclude>
-[[Category:Independently git synced pages]][[Category:People and person infobox templates|YouTube personality]]
-[[Category:Independently git synced pages]][[Category:Arts and culture infobox templates|YouTube personality]]
-[[Category:Independently git synced pages]][[Category:Biographical templates usable as a module|YouTube personality]]
-[[Category:Independently git synced pages]][[Category:Infobox templates with module parameter|YouTube personality]]
-[[Category:Independently git synced pages]][[Category:Infobox templates with updated parameter]]
-[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
-[[Category:Independently git synced pages]][[Category:Templates that generate named references]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:People and person infobox templates|YouTube personality]]
+[[Category:Arts and culture infobox templates|YouTube personality]]
+[[Category:Biographical templates usable as a module|YouTube personality]]
+[[Category:Infobox templates with module parameter|YouTube personality]]
+[[Category:Infobox templates with updated parameter]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates that generate named references]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
 </noinclude>
