@@ -4,6 +4,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-05
+
+### Wiki-content backlog barrel-through (Emma remote-control session)
+
+Decomposed `docs/wiki_content_scripting_plans_2026-05.md` into queue.md and built
+the surfacing/fixing scripts, in the plan's recommended order. Three
+autonomous-loop crons started for the session.
+
+#### Backlog items 3 & 4 — render-once review reports
+**Files:** `shinto_miraheze/report_multiple_wikidata_links.py` (new),
+`shinto_miraheze/report_double_qid_tail.py` (new),
+`shinto_miraheze/tests/test_report_logic.py` (new),
+`.github/workflows/render-duplicate-qids.yml`
+
+- **`report_multiple_wikidata_links.py`** (item 4): reads `[[Category:Pages with
+  multiple wikidata links]]`, extracts the QIDs from each `{{wikidata link|Q…}}`,
+  fetches each item's en label/description from Wikidata, and writes a side-by-side
+  review page `[[Multiple wikidata links]]` so a human can pick the correct QID.
+  Live category currently reads **0** (the op shipped 2026-05-30; self-populates
+  as the orchestrator sweeps) — the report renders an explicit "none" state.
+- **`report_double_qid_tail.py`** (item 3): reads `[[Category:Double category
+  qids]]` (live **4** dab pages), parses each dab page's competing `[[:Category:…]]`
+  targets, reports per target existence + member count + its `{{wikidata link}}`
+  QID, to `[[Double category QID tail]]`. Read-only on content; only writes the
+  report page.
+- Both wired as end-of-chain steps in `render-duplicate-qids.yml` (runs after every
+  orchestrator sweep, where the live categories are freshest). 8 unit tests on the
+  pure parse/render logic pass locally; end-to-end runs in CI (no local write creds).
+  Module-level stdout-wrapper moved into `main()` so the modules import cleanly
+  under pytest.
+
 ## 2026-05-30
 
 ### Orchestrator detectors for backlog items 3 & 6 (no CirrusSearch → tag-into-category)

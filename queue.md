@@ -10,12 +10,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 Working order follows `docs/wiki_content_scripting_plans_2026-05.md` (3 & 4 first, then 2, then 1, then 5 — gated). Every wiki-writing script is wired into CI (no local write creds); the dev session tests dry-run / read-only and commits + pushes so the next CI fire exercises it.
 
-### A. Item 4 — `report_multiple_wikidata_links.py` (SMALL, render-once standalone)
-Consume `[[Category:Pages with multiple wikidata links]]`; for each page extract the QIDs from each `{{wikidata link|Q…}}`, fetch each item's label/description from Wikidata, write a side-by-side review page (`[[Multiple wikidata links]]`) so a human can pick the correct one. Read-only on content. Wire into category-orchestrator follow-up or a CI step. Test dry-run.
-
-### B. Item 3 — `report_double_qid_tail.py` (SMALL, render-once standalone)
-Consume `[[Category:Double category qids]]` (≈7 pages). For each dab page list the competing category targets, whether each exists, its QID (from the category's `{{wikidata link}}`), and member count. Write to a wiki review page (`[[Double category QID tail]]`). Read-only on content. Wire into CI. Test dry-run.
-
 ### C. Item 2 — `fix_ill_destinations.py` (MEDIUM, category-driven filler)
 Consume `[[Category:Pages with unresolved QID in ill template]]`. For each `{{ill}}` lacking a valid `qid=Q\d+` (skip `qid=DELETED_QID`): (1) enwiki pageprops `wikibase_item` on the English target → fill; (2) Mode-B sitelink resolution for non-en pairs, single unique QID → fill, 2+ distinct → leave; (3) literal "Unknown" → leave. Fill ONLY writes a qid into a call that had none — never overwrites. Bounded by `--max-edits`, stateless, `--apply`/`--run-tag`. Wire into CI. Test dry-run.
 

@@ -58,6 +58,24 @@ jobs:
           shinto_miraheze/run_step.sh "Render: find_duplicate_page_qids" \
             python3 shinto_miraheze/find_duplicate_page_qids.py --apply --run-tag "${RUN_TAG}"
 
+      # Backlog item 4: surface pages with 2+ {{wikidata link}} for human pick.
+      # Reads [[Category:Pages with multiple wikidata links]] (populated by the
+      # multiple_wikidata_links orchestrator op). Renders even when empty.
+      - name: "Render: report_multiple_wikidata_links"
+        if: always()
+        run: |
+          shinto_miraheze/run_step.sh "Render: report_multiple_wikidata_links" \
+            python3 shinto_miraheze/report_multiple_wikidata_links.py --apply --run-tag "${RUN_TAG}"
+
+      # Backlog item 3: surface the genuinely-different-target tail of
+      # [[Category:Double category qids]] (the ~4 dab pages the auto-resolver
+      # leaves for a human). Read-only on content pages.
+      - name: "Render: report_double_qid_tail"
+        if: always()
+        run: |
+          shinto_miraheze/run_step.sh "Render: report_double_qid_tail" \
+            python3 shinto_miraheze/report_double_qid_tail.py --apply --run-tag "${RUN_TAG}"
+
       - name: "Commit state: Render Duplicate QIDs"
         if: always()
         run: shinto_miraheze/commit_state.sh "Render Duplicate QIDs"
