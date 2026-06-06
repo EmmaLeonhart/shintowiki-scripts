@@ -10,7 +10,14 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 == Currently open ==
 
-''(empty — Emma's whole 2026-05-28 disposition backlog was acted on by 2026-05-30; see Recently resolved + DEVLOG 2026-05-30. Post new blockers here.)''
+* '''Recreate deleted Wikidata items — go/no-go + minimum claim set (backlog item 5).''' (posted 2026-06-05) <code>[[Category:Pages with deleted QID in ill template]]</code> currently holds '''144''' pages whose <code>{{ill}}</code> pointed at a Wikidata item another editor '''deleted''' (now marked <code>qid=DELETED_QID</code>). The scripting plan (<code>docs/wiki_content_scripting_plans_2026-05.md</code> §5) wants these recreated via the QuickStatements pipeline (<code>generate_recreate_quickstatements.py</code>, fires after the freeze). This is the one backlog item flagged '''social-sensitivity / needs Emma's explicit go-ahead''' before anything is generated, because:
+** The items were deleted '''by another editor''', presumably for notability. Mass recreation could be contentious and conspicuous — exactly the "visibility is worse than data loss" risk in CLAUDE.md. Recreating 144 items that someone already judged non-notable, under an identifiable bot process, is the worst-case visibility outcome.
+** Because the original QID is gone, we'd '''CREATE new items''' (can't restore old IDs), then a separate add-first/repoint-later script rewrites the ill <code>qid=</code> once SPARQL confirms the new item by <code>P11250</code>.
+*: '''Questions for Emma:'''
+*:# '''Go / no-go at all?''' If these were deleted as non-notable, recreating them may just get them re-deleted (the original failure) and draw negative attention. Is it worth it, or should we instead leave <code>qid=DELETED_QID</code> in place and surface the 144 on the dashboard as "needs a real enwiki article first"?
+*:# '''If go: what minimum claim set''' won't get re-deleted? Proposed floor: <code>Len</code> (English label from the ill target) + <code>Den</code> ("Shinto shrine" / appropriate description) + <code>P31</code> (instance of — the notability-bearing class, e.g. Shinto shrine Q845945) + <code>P11250</code> ("shinto:<PageName>" cross-wiki anchor back to the article). Is P31 + P11250 + label/description enough, or do you want a stronger anchor (coordinates P625, country P17, etc.) before any CREATE?
+*:# '''Batch size / pacing''' for the first run — all 144, or a small trial batch (e.g. 10) reviewed before the rest?
+*: Nothing is built or generated until this is answered; the freeze (to 2026-06-06) blocks the QS submission regardless. (Raised by the 2026-06-05 barrel-through session — see DEVLOG.)
 
 == Recently resolved (kept here briefly for confirmation, then deleted) ==
 
