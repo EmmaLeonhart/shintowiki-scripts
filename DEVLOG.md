@@ -6,6 +6,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop #3: harden delete_lowercase login against transient-auth CI failure
+**Files:** `shinto_miraheze/delete_lowercase_template_collisions.py`,
+`shinto_miraheze/tests/test_login_retry.py` (new), `todo.md`
+
+Investigated the only `completed failure` cleanup-loop run, `27036877968`
+(2026-06-05 19:54, predates this session). Two failed steps: `category-orchestrator`
+(the KNOWN 180-min timeout — never completes a full cycle; not touched) and
+`delete_lowercase_template_collisions`. Pulled the job log: root cause was
+`mwclient.errors.LoginError: The supplied credentials could not be authenticated`
+at `_process_wiki`'s `site.login` — a **transient miraheze auth flake**, not bad
+creds (every other step in the same run logged in fine; the `undelete_*` steps
+right after logged in + ran). The single un-retried login let one flake fail the
+whole `cleanup` job.
+- Added `_login_with_retry` (3 attempts, linear backoff; re-raises the final error
+  so genuine bad-cred failures still surface). Does NOT touch deletion logic.
+- 3 unit tests (transient-then-success, first-try, exhausted-reraise); moved the
+  module-level stdout wrapper into `main()` so the module imports under pytest
+  (same fix as the report scripts this session). 30 tests pass.
+- Logged the repo-wide pattern (every script does a single un-retried login) as a
+  `todo.md` item — promote `_login_with_retry` to a shared helper.
+
 ### Work-loop #2: Q3 enwiki-enrichment recheck — corrected the doc, found 2 anomalies
 **Files:** `docs/deferred_verification.md`
 

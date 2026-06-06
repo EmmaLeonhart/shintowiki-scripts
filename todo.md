@@ -11,6 +11,8 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 - **Full program audit:** [`docs/program_audit_2026-06.md`](docs/program_audit_2026-06.md) (2026-06-05) — the single read-through of the whole machine: CI invocation graph, orchestrators+ops, legacy CI scripts, the Wikidata QS path, the sync/cloud-queue loop, known kludges, in-flight migrations, keep/fix/retire verdicts.
 
+- [ ] **Shared login-retry helper.** Every wiki script does a single un-retried `site.login()`; a transient miraheze `LoginError` (spurious "credentials could not be authenticated") fails that step and its whole CI job — observed failing cleanup-loop run `27036877968` (2026-06-05) at `delete_lowercase_template_collisions.py`, which got a targeted `_login_with_retry` on 2026-06-06. Promote that to a shared helper (e.g. in `orchestrators/common.py` or a small `wiki_login.py`) and adopt it across the standalone scripts so one auth flake never red-marks a cleanup job again.
+
 - [ ] **Audit which pre-orchestrator legacy scripts still run.** Most should stay — they run frequently or are wiki-state-driven (no `.state` file, by design). Catalogue each script wired into the workflows: still producing edits? trigger? wiki-state-driven (keep) vs genuinely inert (retire). Not a delete-spree — a confirmation pass.
 
 

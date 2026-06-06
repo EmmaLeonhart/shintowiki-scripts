@@ -82,7 +82,6 @@ def _redirect_target(text: str):
         return None
     return _normalize_title(m.group("target"))
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
@@ -159,6 +158,37 @@ def _fetch_content(site, title: str):
     return True, revs[0].get("slots", {}).get("main", {}).get("content", "")
 
 
+def _login_with_retry(site, username, password, attempts=3, base_delay=5):
+    """Log in, retrying on a transient login failure before giving up.
+
+    Miraheze intermittently returns a spurious ``LoginError: The supplied
+    credentials could not be authenticated`` on a single login even when the
+    credentials are valid — observed in cleanup-loop run 27036877968
+    (2026-06-05): this script's one un-retried ``site.login`` raised, which
+    failed the entire ``cleanup`` job, while every other step in the SAME run
+    (including the ``undelete_*`` steps immediately after) logged in and ran
+    fine. Retrying a few times with backoff absorbs the flake; the final
+    failure is re-raised so a genuine bad-credential error still surfaces
+    rather than being silently swallowed.
+
+    NB: every script in this repo currently does a single un-retried
+    ``site.login`` and shares this vulnerability — a shared helper would be the
+    proper fix; this is the targeted one for the script that demonstrably failed.
+    """
+    last = None
+    for attempt in range(1, attempts + 1):
+        try:
+            site.login(username, password)
+            return
+        except Exception as e:  # mwclient.errors.LoginError + transient network
+            last = e
+            if attempt < attempts:
+                print(f"  login attempt {attempt}/{attempts} failed ({e}); "
+                      f"retrying in {base_delay * attempt}s")
+                time.sleep(base_delay * attempt)
+    raise last
+
+
 def _process_wiki(wiki_key: str, apply: bool, max_deletes: int,
                   run_tag: str) -> tuple[int, int, int]:
     cfg = WIKIS[wiki_key]
@@ -170,7 +200,7 @@ def _process_wiki(wiki_key: str, apply: bool, max_deletes: int,
             print(f"  FATAL: --apply requires WIKI_PASSWORD env var.",
                   file=sys.stderr)
             return 0, 0, 1
-        site.login(USERNAME, PASSWORD)
+        _login_with_retry(site, USERNAME, PASSWORD)
         print(f"  logged in as {USERNAME}")
     else:
         print("  dry-run (no login, no deletes)")
@@ -265,6 +295,7 @@ def _process_wiki(wiki_key: str, apply: bool, max_deletes: int,
 
 
 def main() -> int:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--apply", action="store_true",
