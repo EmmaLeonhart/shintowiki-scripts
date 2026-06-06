@@ -184,7 +184,9 @@ deferred verification (churn-inspection half pending a healthy wiki — see
   from the deletion passes, then drop the kludge.
 - **`audit_double_category_qids` disabled** (2026-04-24) — un-throttled walk hung
   the loop for 11h. Superseded by the auto-fixer + the new
-  `report_double_qid_tail.py`. → **Verdict: retire the script.**
+  `report_double_qid_tail.py`. → **Verdict: retire the script. DONE 2026-06-06**
+  (script deleted; dead commented block in `wiki-cleanup.yml` replaced with a
+  retirement note).
 - **Wiki flakiness (observed 2026-06-05):** shinto.miraheze.org returned repeated
   502s / read-timeouts during this session. Not a repo bug, but it (a) truncated
   the category-translation generator's first run to 500/1189 subcats (now flagged,
@@ -216,8 +218,9 @@ deferred verification (churn-inspection half pending a healthy wiki — see
   orchestrator's never-completing cycle (should settle post-catch-up-window).
 - **Retire (confirm-then-delete, overlaps July-2026 legacy audit):**
   `create_shrine_ranking_pages` + `rebucket_300plus_untranslated` (TEMPORARY),
-  `audit_double_category_qids` (disabled, superseded), and the 5 manual-only
-  dispatch workflows once their one-time jobs are confirmed done.
+  ~~`audit_double_category_qids` (disabled, superseded)~~ **— RETIRED 2026-06-06**,
+  and the 5 manual-only dispatch workflows once their one-time jobs are confirmed
+  done.
 - **Blocked on Emma:** backlog item 5 (recreate deleted Wikidata items) — go/no-go
   + minimum claim set (open question posted 2026-06-05).
 - **Pending deferred verification:** sync-churn inspection + the 4

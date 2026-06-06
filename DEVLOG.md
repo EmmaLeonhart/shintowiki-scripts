@@ -6,6 +6,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): retire audit_double_category_qids.py
+**Files:** `shinto_miraheze/audit_double_category_qids.py` (deleted),
+`.github/workflows/wiki-cleanup.yml`, `todo.md`,
+`docs/program_audit_2026-06.md`, `queue.md`
+
+Executed the one unconditional-retire verdict from `program_audit_2026-06.md`
+§6/§8. `audit_double_category_qids.py` was disabled 2026-04-24 (its un-throttled
+walk over every `[[Category:Double category qids]]` dab page hung the cleanup job
+for 11h) and superseded by the `resolve_double_category_qids` auto-fixer +
+`report_double_qid_tail.py` (both wired in `wiki-cleanup.yml` /
+`render-duplicate-qids.yml`).
+
+Before deleting, confirmed it was truly inert: no `.state` file, no tracked
+`reports/` output, and the only workflow reference was the already-commented-out
+DISABLED block — no live invocation, no Python importer (it ran only as a
+standalone). Deleted the script (git history retains it), and replaced the dead
+~18-line commented block in `wiki-cleanup.yml` with a concise retirement note that
+preserves *why* it's gone and names its replacements. Annotated todo #2 and struck
+the audit-doc verdict. Test suite unchanged: 30 passed (the script had no test
+coverage and no importers).
+
+This does NOT jump the July-2026 terminating-script gate — those are a separate
+list (`reimport_from_enwiki`, `migrate_talk_pages`, `normalize_category_pages`,
+`remove_legacy_cat_templates`) gated on confirming their one-time jobs are done;
+this script had a standing unconditional retire verdict instead.
+
 ### Work-loop (1pm cron): finish login_with_retry — orchestrator + fandom, item DONE
 **Files:** `shinto_miraheze/orchestrators/common.py`,
 `shinto_miraheze/orchestrators/ops/fandom_mirror.py`,

@@ -275,24 +275,15 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: resolve_double_category_qids" \
             python3 shinto_miraheze/resolve_double_category_qids.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      # audit_double_category_qids — DISABLED 2026-04-24. The audit walks
-      # every page in [[Category:Double category qids]], follows redirect
-      # chains for each linked category, and counts members per target.
-      # At ~2000+ dab pages × ~10 wiki API calls each (no throttle), one
-      # run can take 11+ hours on a slow wiki — seen 2026-04-24 hanging
-      # the entire cleanup job and blocking everything after it. The
-      # report was never consulted. Now that the auto-fixer is back
-      # on (2026-05-05) and migrates multi-target dabs to a separate
-      # "currently" category, the audit is also redundant for the easy
-      # cases. Re-enable only with a smaller scope
-      # (e.g. sample N pages per run) or after moving the expensive
-      # work into an orchestrator op that piggybacks on the existing
-      # category sweep.
-      # - name: "Structural: audit_double_category_qids"
-      #   if: always() && steps.*.outcome != 'cancelled'
-      #   run: |
-      #     shinto_miraheze/run_step.sh "Core Loop: audit_double_category_qids" \
-      #       python3 shinto_miraheze/audit_double_category_qids.py --apply --run-tag "${RUN_TAG}"
+      # audit_double_category_qids — RETIRED 2026-06-06 (script deleted).
+      # Was disabled 2026-04-24: its un-throttled walk over every
+      # [[Category:Double category qids]] dab page (~2000+ × ~10 API calls,
+      # no throttle) hung the whole cleanup job for 11h, and the report was
+      # never consulted. Superseded by the resolve_double_category_qids
+      # auto-fixer (migrates multi-target dabs to a "currently" category)
+      # + report_double_qid_tail.py (renders the small genuinely-different-
+      # target tail for human review). Both are wired above / in
+      # render-duplicate-qids.yml. See git history for the old script.
 
       - name: "Commit state: Structural Fixes"
         if: always() && steps.*.outcome != 'cancelled'
