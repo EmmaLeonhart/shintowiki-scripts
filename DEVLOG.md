@@ -6,6 +6,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop #2: Q3 enwiki-enrichment recheck — corrected the doc, found 2 anomalies
+**Files:** `docs/deferred_verification.md`
+
+Rechecked Q3 with a content-category sample (last tick's was all dated-maintenance
+cats). The recheck **corrected a wrong premise**: `enrich_enwiki_categories.py`
+does NOT add enwiki *parent* categories (the deferred-doc said it did). Reading the
+script's docstring: it adds an `[[en:Category:Name]]` interlang link +
+`{{wikidata link|QID}}` and rebuckets the category out of `Emmabot categories with
+enwiki` into one of 3 buckets. So I measured the buckets instead:
+- source `Emmabot categories with enwiki`: **4788**; `…with wikidata`: **0**;
+  `…only enwiki, no wikidata`: **10**; `…false positives`: **101**.
+Enrichment HAS run (111 drained) but two anomalies warrant watching: the source is
+huge (4788) vs ~111 drained, and the with-wikidata bucket is **0**. Recorded a
+rate-over-weeks recheck criterion (source shrinks + buckets grow → working-slow;
+static → stalled, check the wikidata-branch + CI edit counts). Left Open — can't
+confirm a rate in one tick. No defect *claimed* (111 processed proves the core path
+runs); no "verified" *claimed* either. Corrected the doc's description in the same edit.
+
 ### Work-loop: finish the deferred-verification wiki-parse sweep
 **Files:** `docs/deferred_verification.md`
 

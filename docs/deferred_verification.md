@@ -26,17 +26,31 @@ batched verification we skip in the moment.
 
 ## Open (shipped, not yet verified)
 
-- [ ] **Q3 — enwiki parent-category enrichment** (shipped 2026-05-30, `f2b36a86`).
-  Verify `enrich_enwiki_categories.py` adds `[[Category:<enwiki parent>]]` links to
-  pages in `[[Category:Emmabot categories with enwiki]]`, red parents land in
-  Special:WantedCategories, and the create→triage→enrich recursion proceeds. (~8h to
-  show; Emma may confirm directly.)
-  **2026-06-06 check: NOT confirmed.** 6 sampled members (all `Articles with
-  unsourced statements from <month year>` dated-maintenance cats) render with NO
-  other category — no enwiki parent added. Either these dated maintenance cats
-  genuinely have no enwiki parent, or enrichment hasn't reached them. The sample is
-  biased (all one type, alphabetically first). Recheck with a CONTENT-category
-  sample before concluding; leave Open.
+- [ ] **Q3 — enwiki category enrichment + drain** (shipped 2026-05-30, `f2b36a86`).
+  **Doc-description corrected 2026-06-06:** `enrich_enwiki_categories.py` does NOT
+  add `[[Category:<enwiki parent>]]` (the original wording here was wrong). Per its
+  own docstring it: looks up the matching enwiki Category; if absent → tags
+  `Emmabot enwiki categories false positives`; if present w/o wikidata → adds
+  `[[en:Category:Name]]` interlang link + tags `…with only enwiki category and no
+  wikidata`; if present w/ wikidata → adds `[[en:Category:Name]]` +
+  `{{wikidata link|QID}}` + tags `…with wikidata`; and in ALL cases REMOVES
+  `[[Category:Emmabot categories with enwiki]]`. So the real test is whether the
+  source drains into the 3 buckets.
+  **2026-06-06 check — observed bucket state (live):**
+  - `Emmabot categories with enwiki` (source): **4788**
+  - `…with wikidata`: **0**
+  - `…with only enwiki category and no wikidata`: **10**
+  - `Emmabot enwiki categories false positives`: **101**
+  So enrichment HAS run (111 categories moved into buckets) and the false-positive
+  + enwiki-only paths fire. **Two anomalies to watch, NOT yet a confirmed defect:**
+  (1) the source sits at **4788** vs ~111 drained — either slow/budget-bound drain,
+  or triage adds new members faster than enrichment removes them; (2) the
+  **with-wikidata bucket is 0** — suspicious (many enwiki categories DO have wikidata
+  items), but could be that the ~111 processed so far happen to be the niche/no-wd
+  ones. **Recheck criterion (rate over weeks):** if across the next sweeps the source
+  shrinks and the buckets (esp. with-wikidata) grow → working-but-slow → Verify; if
+  the numbers stay static → enrichment has stalled → investigate the wikidata-branch
+  + the per-cycle edit count in CI logs. Left Open.
 - [ ] **propagate retirement drain** (shipped 2026-05-30, `0714ce70`).
   Verify `miraheze_unique/` churn-candidate count (files lacking the literal
   `[[Category:Independently git synced pages]]` tag) drains to ~0 and the 6 legit
