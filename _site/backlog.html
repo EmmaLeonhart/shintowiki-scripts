@@ -123,12 +123,12 @@ li { margin: 0.25rem 0; }
   <a class="feature-card" href="backlog-audit-legacy-scripts.html">
     <h3>2. Audit which pre-orchestrator legacy scripts still run</h3>
     <p>A confirmation pass over every script wired into wiki-cleanup.yml: still producing edits? wiki-state-driven (keep) vs genuinely inert (retire). Not a delete-spree.</p>
-    <p class="timestamp"><strong>50</strong> scripts</p>
+    <p class="timestamp"><strong>52</strong> scripts</p>
   </a>
   <a class="feature-card" href="backlog-ill-missing-wikidata.html">
     <h3>3. ILLs without WD= / "Unknown" targets</h3>
     <p>Interlanguage-link templates whose Wikidata target is unset or literally "Unknown". The <code>unresolved_ill_qid</code> orchestrator op tags these pages as it sweeps mainspace, so the list grows over successive cleanup cycles. Fill via fix_ill_destinations.py per context — don't blind-overwrite.</p>
-    <p class="timestamp"><strong>849</strong> detected</p>
+    <p class="timestamp"><strong>901</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-duplicate-qid-tail.html">
     <h3>4. Duplicate QID disambiguation pages (tail)</h3>
@@ -143,7 +143,7 @@ li { margin: 0.25rem 0; }
   <a class="feature-card" href="backlog-multiple-wikidata-links.html">
     <h3>6. Multiple {{wikidata link}} on one page</h3>
     <p>Pages carrying two or more {{wikidata link}} templates — usually a Wikidata disambiguation issue needing per-case review. The <code>multiple_wikidata_links</code> orchestrator op tags these pages as it sweeps mainspace + categories, so the list grows over successive cleanup cycles.</p>
-    <p class="timestamp"><strong>1</strong> detected</p>
+    <p class="timestamp"><strong>0</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-duplicated-content-need-translation.html">
     <h3>7. Duplicated content + remaining need-translation pages</h3>
@@ -153,12 +153,12 @@ li { margin: 0.25rem 0; }
   <a class="feature-card" href="backlog-recreate-deleted-wikidata.html">
     <h3>8. Recreate deleted Wikidata items</h3>
     <p>ILL-target Wikidata items that another editor deleted. To be recreated via the QuickStatements pipeline (respecting the freeze to 2026-06-06) with a minimum claim set that won't be re-deleted.</p>
-    <p class="timestamp"><strong>144</strong> detected</p>
+    <p class="timestamp"><strong>145</strong> detected</p>
   </a>
 </div>
 
 <footer>
-  Generated 2026-06-05 20:31 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Generated 2026-06-06 11:35 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
   Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
 </footer>
 </body>
