@@ -4,24 +4,37 @@
 
 Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fandom template fixup) lives in `remote_queue.json` and is worked by the claude.ai remote routine — not duplicated here.
 
-## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-06-01)
+---
 
-Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
+## Session 2026-06-05 — barrel through the wiki-content backlog (Emma remote-control)
 
-## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-06-01)
+Working order follows `docs/wiki_content_scripting_plans_2026-05.md` (3 & 4 first, then 2, then 1, then 5 — gated). Every wiki-writing script is wired into CI (no local write creds); the dev session tests dry-run / read-only and commits + pushes so the next CI fire exercises it.
 
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
+### A. Item 4 — `report_multiple_wikidata_links.py` (SMALL, render-once standalone)
+Consume `[[Category:Pages with multiple wikidata links]]`; for each page extract the QIDs from each `{{wikidata link|Q…}}`, fetch each item's label/description from Wikidata, write a side-by-side review page (`[[Multiple wikidata links]]`) so a human can pick the correct one. Read-only on content. Wire into category-orchestrator follow-up or a CI step. Test dry-run.
 
-## 1. Review the deferred-verification log
+### B. Item 3 — `report_double_qid_tail.py` (SMALL, render-once standalone)
+Consume `[[Category:Double category qids]]` (≈7 pages). For each dab page list the competing category targets, whether each exists, its QID (from the category's `{{wikidata link}}`), and member count. Write to a wiki review page (`[[Double category QID tail]]`). Read-only on content. Wire into CI. Test dry-run.
 
-Walk `docs/deferred_verification.md` and actually TEST each Open item — the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators (8–24h to manifest). Highest priority right now: the **sync `.state`-file removal** (shipped 2026-05-30, all 5 sync scripts now stateless + timestamp-based) — watch the next sync cycles for spurious deletions / category-churn and fix the stateless orphan/winner logic if needed (do NOT bring the `.state` files back). For each item: run its check; if it works, move it to the doc's Verified section with the date + what you saw; if it's broken, fix it. (The `monthly-verification-sweep.yml` GH Action re-adds this task monthly.)
+### C. Item 2 — `fix_ill_destinations.py` (MEDIUM, category-driven filler)
+Consume `[[Category:Pages with unresolved QID in ill template]]`. For each `{{ill}}` lacking a valid `qid=Q\d+` (skip `qid=DELETED_QID`): (1) enwiki pageprops `wikibase_item` on the English target → fill; (2) Mode-B sitelink resolution for non-en pairs, single unique QID → fill, 2+ distinct → leave; (3) literal "Unknown" → leave. Fill ONLY writes a qid into a call that had none — never overwrites. Bounded by `--max-edits`, stateless, `--apply`/`--run-tag`. Wire into CI. Test dry-run.
 
-## 2. Comprehensive audit of the whole program
+### D. Item 1 — `generate_category_translation_moves.py` phase (a) (LARGE → start deterministic chunk)
+Enumerate `[[Category:Japanese language category names]]` subcats. Phase (a): deterministic dated-maintenance transform (`YYYY年M月` → `Month YYYY`; collapse long malformed timestamp forms onto the month form) + a small hand-maintained template-prefix lookup. Emit `category_moves.csv` rows `(source,dest,reason)` for the confident deterministic cases ONLY; everything else → residual report, never guessed. (Phases b/c/d — Wikidata-label resolver, place gazetteer, human queue — are follow-on todo items.) The existing `move_categories.py` already consumes the CSV (monthly CI step). Test by inspecting the generated CSV.
 
-Produce a written, comprehensive audit of everything this repo does to the wiki(s) and Wikidata — a single document a human can read to understand the full machine. Cover:
-- **What runs:** every workflow in `.github/workflows/`, every orchestrator + its ops, every legacy standalone script wired into CI, every sync script, the QuickStatements pipeline, the remote-queue/cloud-worker loop. For each: what it does, its trigger/schedule, and its current state file (if any).
-- **What's failing or stuck:** anything erroring, not producing edits when it should, or whose state file has stopped advancing.
-- **What's never been wired in / orphaned:** scripts in the tree that nothing invokes; half-finished pipelines; ops written but not registered.
-- **The processes in flight on the wiki:** the multi-cycle migrations (double-category-qid drain, crud-category lifecycle, need_translation/duplicated_content sync, etc.) — where each one is in its lifecycle and what the next observable step is.
-- **Verdict per item:** keep / fix / retire, with reasoning.
-Write it to `docs/` (e.g. `docs/program_audit_2026-06.md`) and link it from `todo.md`. This is the "figure out what's actually left and what the machine is doing" pass.
+### E. Item 5 — recreate deleted Wikidata items — POST OPEN QUESTION (gated on Emma + freeze)
+Do NOT build/run the generator. Per the plan it needs Emma's explicit notability go-ahead + a defensible minimum claim set, and Wikidata freeze runs to 2026-06-06. Post a precise open question to `git_synced/Open questions.wiki` (minimum claim set proposal + the 144-item scope) for Emma to approve; commit + push so it syncs to the wiki.
+
+### F. queue item 2 (carried) — comprehensive program audit
+Write `docs/program_audit_2026-06.md`: every workflow, orchestrator+ops, legacy CI script, sync script, the QS pipeline, the remote-queue loop — what runs, trigger, state file, what's failing/stuck/orphaned, in-flight wiki migrations + next observable step, verdict per item (keep/fix/retire). Link from `todo.md`.
+
+### G. queue item 1 (carried) — deferred-verification sweep (read-only checks)
+Walk `docs/deferred_verification.md` Open items; run each read-only check now (action=parse / category counts / sync edit-summary inspection). Move confirmed ones to Verified with date+observation; fix anything broken. Don't bring back `.state` files.
+
+### H. Prune resolved meta blocks
+The weekly-OQ-sweep block: live `[[Open questions]]` has no new actionable items (checked at session start) — prune that block. The monthly-verify-sweep block is the same work as G — fold into G and prune.
+
+### Y. (pinned tail) Ensure the three autonomous-loop crons are running
+Start them if this session never did; restart if a planning burst killed them.
+
+### Z. (pinned tail) Run the status-report action once more — end-of-session summary
