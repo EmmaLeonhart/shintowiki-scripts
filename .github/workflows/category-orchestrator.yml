@@ -55,6 +55,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   category-orchestrator:
     runs-on: ubuntu-latest

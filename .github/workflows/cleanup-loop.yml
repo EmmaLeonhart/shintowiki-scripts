@@ -27,6 +27,9 @@ concurrency:
   # the prior stuck run instead of queueing behind it.
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # window-gate publishes per-orchestrator edit limits (uniform 100 by
   # default; can be bumped via workflow_dispatch input on the individual

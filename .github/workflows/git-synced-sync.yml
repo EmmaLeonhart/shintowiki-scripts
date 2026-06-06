@@ -28,6 +28,9 @@ concurrency:
   group: git-synced-sync
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   git-synced-sync:
     runs-on: ubuntu-latest
