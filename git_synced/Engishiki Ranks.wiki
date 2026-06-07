@@ -1,0 +1,110 @@
+{| class="wikitable"
+|+Engishiki Rankings
+!Ranking 1
+!
+!Ranking 2
+!
+!Ranking 3
+!
+|-
+|Myōjin Taisha
+|{{lang|ja|名神大社}}
+|Kanpei-sha
+|{{lang|ja|官幣社}}
+|Tsukinami-sai and Niiname-sai and Ainame-sai
+|{{lang|ja|月次相嘗新嘗}}
+|-
+|Shikinai Taisha
+|{{lang|ja|式内大社}}
+|Kokuhei-sha
+|{{lang|ja|国幣社}}
+|Tsukinami-sai and Niiname-sai offerings
+|{{lang|ja|月次新嘗}}
+|-
+|Shikinai Shōsha
+|{{lang|ja|式内小社}}
+|
+|
+|Hoe and Quiver
+|{{lang|ja|鍬靫}}
+|-
+|
+|
+|
+|
+|Hoe
+|{{lang|ja|鍬}}
+|-
+|
+|
+|
+|
+|Quiver
+|{{lang|ja|靫}}
+|}
+{| class="wikitable"
+|+Engishiki Combinations?
+|-
+| rowspan="3" |Kanpei-sha
+|Myōjin Taisha
+| rowspan="2" |Kanpei Taisha
+|Kanpei Myōjin Taisha?
+|-
+|Shikinai Taisha
+|Kanpei Shikinai Taisha?
+|-
+|Shikinai Shōsha
+| colspan="2" |Kanpei Shosha
+|-
+| rowspan="3" |Kokuhei-sha
+|Myōjin Taisha
+| rowspan="2" |Kokuhei Taisha
+|Kokuhei Myōjin Taisha?
+|-
+|Shikinai Taisha
+|Kokuhei Shikinai Taisha?
+|-
+|Shikinai Shōsha
+| colspan="2" |Kokuhei Shosha
+|}
+{| class="wikitable"
+|+Modern (Imperial) system
+!Category
+!Rank
+!Kanji
+|-
+| rowspan="3" |Kanpei-sha
+|Kanpei Taisha
+|{{lang|ja|官幣大社}}
+|-
+|Kanpei Chusha
+|{{lang|ja|官幣中社}}
+|-
+|Kanpei Shosha
+|{{lang|ja|官幣小社}}
+|-
+| rowspan="3" |Kokuhei-sha
+|Kokuhei Taisha
+|{{lang|ja|国幣大社}}
+|-
+|Kokuhei Chusha
+|{{lang|ja|国幣中社}}
+|-
+|Kokuhei Shosha
+|{{lang|ja|国幣小社}}
+|-
+| rowspan="4" |Min-sha
+|Fuken-sha
+|{{lang|ja|府県社}}
+|-
+|Gō-sha
+|{{lang|ja|郷社}}
+|-
+|Son-sha
+|{{lang|ja|村社}}
+|-
+|Hokora
+|{{lang|ja|祠}}
+|}
+
+{{wikidata link||en|Engishiki Ranks|grok=none|check_date=2026-05-28}}
