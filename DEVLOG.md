@@ -6,6 +6,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Work-loop (:03): resolve the 6 search-hit candidates (Part 3 of interlang op)
+**Files:** `git_synced/{Minase Jingu, Miwa Shrine (Kiryu), Mike Shrine (Ise),
+Missionary Office}.wiki`, `queue.md`
+
+Verified each search-hit candidate from the resolution CSV against its Wikidata
+entity (label/description/P31/P131 location) before filling — not blind top-hit:
+* `Minase Jingu` → **Q705121** (水無瀬神宮, shrine in Osaka) ✓
+* `Mike Shrine (Ise)` → **Q17211721** (御食神社, shrine in Mie — Ise is in Mie) ✓
+* `Miwa Shrine (Kiryu)` → **Q11608848** (美和神社 (桐生市) — ja label says Kiryu City) ✓
+* `Missionary Office` → **Q11452939** (宣教使; page is `{{Nihongo|Missionary
+  Office|宣教使}}` — English label "Missionary Messenger" is just a translation
+  variant) ✓
+* `Why am I me?` → already carries **Q18455813** in its template; it sits in
+  Pages-without-wikidata only via a stale literal tag (crud-drain handles it) —
+  no fill needed.
+* `Izanagi Jingu` → in the 9-case merge set (QID overlaps `Izanagi Jingū`).
+
+Filled the 4, removed the search-hits item from queue.md. Remaining Part 3:
+9 merges, 3 throttled re-run, 26 no-hit. Wiki write happens via the git-synced
+sync (no local creds).
+
 ### Remote-control session: project homepage, site backlog surfacing, Wikidata-count clarity
 **Files:** `site/generate_pages.py`, `_site/*` (regenerated), `queue.md`,
 `git_synced/Open questions.wiki`

@@ -24,7 +24,7 @@ The mission was found to be too socially divisive and the office was abolished i
 [[en:Missionary Office]][[Category:Defunct government agencies of Japan]]
 [[en:Missionary Office]][[Category:Pages with unreviewed translations]]
 {{State Shinto}}
-{{wikidata link}}
+{{wikidata link|Q11452939}}
 
 <!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
