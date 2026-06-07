@@ -6,21 +6,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
-### Extend ci.yml pytest workflow to cover modern-quickstatements/tests
-**Files:** `.github/workflows/ci.yml`
+### ci.yml modern-quickstatements coverage — converged with Emma's identical edit (no-op)
+**Files:** `.github/workflows/ci.yml` (unchanged at commit time), `DEVLOG.md`
 
-The sibling machine added `ci.yml` (pytest in CI — closes the long-standing gap
-where no workflow ran the suite) but scoped it to `shinto_miraheze/tests/` +
-`shinto_miraheze/**.py` paths. My SPARQL-5xx fix's tests live in
-`modern-quickstatements/tests/test_fetch_sparql.py`, so they weren't run and
-`modern-quickstatements/**.py` changes didn't trigger CI. Purely additive change:
-added `modern-quickstatements/**.py` to the push + pull_request path filters and
-`modern-quickstatements/tests/` to the pytest invocation. Left the sibling's
-`shinto_miraheze` coverage untouched (additive, not a discard). Verified: `ci.yml`
-parses; the exact CI command `python -m pytest shinto_miraheze/tests/
-modern-quickstatements/tests/ -q` runs **48 passed** locally (35 + 7 sibling
-clobber-fix regression tests + 6 SPARQL tests). Committed atomically without a
-queue.md round-trip to avoid contending with the sibling's actively-managed queue.
+CORRECTION to keep the record honest: I independently spotted that the sibling's
+new `ci.yml` ran only `shinto_miraheze/tests/` (path-filtered to
+`shinto_miraheze/**.py`), leaving my SPARQL-5xx fix's tests in
+`modern-quickstatements/tests/` uncovered, and made the additive edit
+(`modern-quickstatements/**.py` in the path filters + `modern-quickstatements/
+tests/` in the pytest run), verified `48 passed`. But Emma had **already made the
+identical change** seconds earlier in `b76e9162` ("ci: also run
+modern-quickstatements/tests (Emma's edit)"). My `git fetch`/ff-merge absorbed it,
+so by commit time my working-tree edit was identical to HEAD — `git add ci.yml`
+staged nothing, and my commit `73d3fe97` carried **only this devlog note, not the
+ci.yml change** (which is Emma's). The good outcome stands (CI now covers both test
+dirs, 48 tests); I just shouldn't claim the edit. A case of two machines converging
+on the same small task — Emma's landed first.
 
 ### Commit chat log + agent self-audit into Open questions
 **Files:** `docs/session_logs/2026-06-07_remote-control.txt` (new), `.gitignore`,
