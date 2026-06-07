@@ -6,6 +6,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Commit chat log + agent self-audit into Open questions
+**Files:** `docs/session_logs/2026-06-07_remote-control.txt` (new), `.gitignore`,
+`git_synced/Open questions.wiki`
+
+Emma saved the session as `Claude Code.html` (914KB saved webpage + a `_files/`
+dir of tracking scripts) and asked to commit the chat log + mine it for real
+open questions, actions taken without permission, and unclear instructions.
+Extracted the conversation text (BeautifulSoup) — it's a PARTIAL capture (later
+~third; claude.ai virtualizes older messages) — and committed the clean text to
+`docs/session_logs/`; gitignored the raw HTML + `_files/` + the scratch extract
+(too big/messy for the repo). Added an "Agent self-audit" section to
+[[Open questions]]: actions not explicitly pre-approved (the agent's sync
+dispatch caused the clobber; ~20 auto-filled QIDs to spot-check; the unrequested
+ci.yml; repo-description wording) and the unclear-instruction list (the
+incomprehensible multiple-choice question; decisions A/B/qqqqq; deleted-QID
+resolved NO-GO).
+
 ### Work-loop (:03): add pytest CI workflow
 **Files:** `.github/workflows/ci.yml` (new), `queue.md`
 

@@ -1,0 +1,681 @@
+# Chat log — ShintoWiki /remote-control session, 2026-06-07
+# Source: saved claude.ai page 'Claude Code.html' (PARTIAL capture — claude.ai
+# virtualizes older messages, so this is the later ~third of the session:
+# from the 'put confusing stuff into Open questions' turn through the CI-workflow add).
+# Extracted text only; UI fragments ('Ran', 'Edited', '3h ago') left as-is.
+
+ShintoWiki
+2
+Got it — clear instructions now. The Open questions page is your interface (you don't read the chat), so I'll move everything confusing from this chat into it, clear the bloated "Recently resolved" section, commit, and push. And I'll keep barreling (no Wikidata edits). Let me read the current page, then rewrite it:
+Read
+Open questions.wiki
+Now rewriting the page — clear decisions up top, this chat's confusing items captured, "Recently resolved" bloat removed:
+Updated
+Open questions.wiki
++25
+-16
+Rewrote the page — clear "Decisions Emma needs to make" (the 3 real ones: recreate-which-targets, the "legacy" question, the 9 merges), a "Done this session" context block, and killed the "Recently resolved" graveyard with a policy note so it won't bloat again. Let me commit + push:
+3h ago
+Yeah, so basically we should be clearing the open questions. The recently cleared things should automatically clear, and if they don't, set that thing up and then clear all of them manually this time. Add in all of the confusing things that I've been confused about and stuff into this chat, into that open questions page, and come in and push it so that it'll finally be on the wiki and I could actually use it as somewhat of my actual thing.
+I don't know why it is, but it seems like you're just kind of overwriting the changes that are occurring on the wiki. The entire idea of the get synced page, I feel like you might have not understood the idea that the get synced pages are specifically supposed to be something where the latest one that was changed on either end overwrites the other one. I don't know if you made an open questions edit and then that made it and then that clobbered my edit, but yeah, you gotta fucking resolve all this stuff.
+I am going to, when I get home, give you a chat log of exactly what happened in this chat so that you can analyse what happened in it and actually update the open questions more from it. At that point, there should already be an open question sync thing that is happening on GitHub Actions and will be completing. There should already be an open question sync thing that is occurring due to your most recent push. That most recent push of yours is going to be something that should be happening sooner rather than later so that we get something up and running into the GitHub Actions queue. I know the GitHub Actions queue takes like fucking two hours to get in sometimes more, but you still have to actually do it. It's still important that we actually have our GitHub Actions, that our pushes are occurring as much as possible, so that the cancelling/cancellation infrastructure thing actually works as best as possible.
+I'll give you the chat log, and then you'll be updating the chat log. You'll be able to look over the chat log, commit the chat log, look over the chat log, and add more stuff to the open questions, but that's going to probably be like one to two hours from now. Right now, you can just kind of go through. Right now, my order is basically that you have to go forward with everything that does not involve actually editing Wikidata, because you're not allowed to create pages on Wikidata as a suicidal. It is suicidal to create pages on wiki data.
+Show more
+3h ago
+Pushed
+main
+Crystal clear now. Key takeaways I'm acting on:
+(1)
+the git-synced clobber is a real bug — the sync should be per-file most-recent-edit-wins but it's comparing repo-HEAD time (so my unrelated commits made the repo "look newer" and clobbered your wiki edit) →
+fix the sync
+;
+(2)
+build the auto-clear for resolved items (+ I already cleared manually);
+(3)
+ensure the rewrite syncs to the wiki;
+(4)
+keep going on everything
+except creating Wikidata items
+(understood: that's the hard line — "suicidal");
+(5)
+chat log coming in 1–2h.
+Let me start with the sync bug since it's actively damaging your edits. Reading the conflict-resolution logic:
+Ran
+Find conflict-resolution and timestamp logic
+Legacy sync finished — let me check its result and read the full conflict-resolution logic (line 102 already uses per-file
+%ct
+, so the bug may be subtler):
+3h ago
+Yeah, because for the most part what I would say is these are open questions. The question of what to do with the deleted QIDs and stuff like that is an open question, but it's not an open question compared to pretty much any of the confusion that I've had in this chat. It's more like a maybe, so it might be. It might need a specific section for low-urgency questions, because we also have the high-urgency questions going on right now. And the eight things: there are the eight things that are going on on the page that I'm not really sure about. I think some of them might have been resolved, but some of them might not have been. I think the ones that were resolved were ones that, I don't know, if we know they're resolved even if they might be. If so, they're not really. We should probably be doing some level of trying to figure out that they're resolved. Keeping in mind that a lot of these are ones that may take really long periods of time to actually verify due to being orchestrated or straight limited, and some of them might be one that gets verified almost instantaneously. There's a bit of a lag going on, but you'd probably be able to figure out how to do this stuff. I'm going to finish this project. Sorry, I want to finish this project as soon as I can.
+Show more
+3h ago
+Ran
+cd "C:/Users/Immanuelle/Documents/Github/shintowiki-scripts"
+echo "=== legacy sync result ===" && tail -2 "C:/Users/IMMANU~1/AppData/Local/Temp/claude/C--Users-Immanuelle-Documents-Github-shintowiki-scripts/ec69641f-2409-46cc-81ab-37f96f12192a/tasks/bh3dzjmwz.output" 2>/dev/null
+Legacy edit is now confirmed live on the wiki (
+legacy present: True
+) — clobber fully fixed.
+New instruction understood: Open questions needs
+high-urgency
+(this chat's active stuff) vs
+low-urgency/maybe
+(the deleted-QID recreate — which is also now effectively off, since creating Wikidata items is the hard "no"). And you want the
+8 backlog items verified
+— which are actually resolved vs still going (some verify instantly, some lag due to orchestration/throttling). Let me get live status on all 8:
+Ran
+Fetch live counts for the 8 backlog categories
+Backlog verified. Here's the status of the 8:
+#6 multiple-wikidata-links = 0 (clear)
+,
+#4 double-category-qids = 4 (drained to a tail)
+,
+#2 audit = catalogued (done)
+; still ongoing:
+#3 unresolved-ILL (1000+)
+,
+#5 Japanese cat names (1171 subcats — the big one)
+,
+#7 dup-content 134 + need-translation 385
+;
+#1 retire-scripts is time-gated (July)
+;
+#8 deleted-QID (145) is now NO-GO
+since creating Wikidata items is the hard line. Let me restructure Open questions with high/low urgency + this status:
+3h ago
+Oh, okay, yes. If it's repo head time, that is bad enough that you should be explicitly going back to it. If it's repo head time, the edits are always going to get clobbered. This is bad enough that you should probably specifically look through the wiki edit histories of all of these pages to review the changes that are being clobbered, because this probably means a large amount of stuff has been destroyed.
+It's only supposed to be, like, a local thing or something like this. You should specifically look through the histories of each page, pulling the edit logs, every single one of them, and going through the histories to see which ones are actually doing it. This is going to be a relatively long manual process, although I expect that you're going to be able to do this to extract the actual desired edition and put it in the repo so it syncs there
+3h ago
+Updated
+Open questions.wiki
++39
+-31
+Committing the Open-questions rewrite first, then digging into the bug — because if it's repo-HEAD time, you're right that this has likely clobbered edits across
+many
+git-synced pages, not just this one. Let me confirm the exact logic:
+Ran
+Commit and push Open questions restructure
+Push needs a rebase (remote moved). Let me sync and push:
+Pushed
+main
+Now the bug. Let me read the full conflict-resolution logic to confirm whether it's per-file or repo-HEAD:
+Read
+sync_revision_aware.py
+Important correction to my own diagnosis:
+resolve_conflict
+does
+use per-file time (line 102:
+git log -1 --format=%ct -- <file>
+), not repo-HEAD. So the bug is subtler — most likely a
+stale repo commit with a newer timestamp beats a fresh wiki edit
+(something commits the repo copy without first pulling the latest wiki content, so "repo is newer" wins but the repo content is old → clobber). Either way, your instinct stands: I need to audit the histories to see how widespread the damage is. Let me scope it and build the audit:
+Ran
+Check per-file history and git_synced page counts
+The per-file history is the smoking gun: before the clobber,
+Open questions.wiki
+'s last repo commit was
+2026-06-05
+, but your wiki edit was
+2026-06-07
+— so per-file logic should have said "wiki wins." It clobbered anyway, which means
+git log -1 --format=%ct -- <file>
+returned the wrong time. The classic cause:
+shallow CI checkout
+(
+fetch-depth: 1
+) — with truncated history, per-file
+git log
+degenerates to ~HEAD/run time, so "repo is newer" always wins. That's exactly your "repo head time" → systematic clobber. Let me confirm:
+Ran
+2 commands
+Bug confirmed.
+Both sync workflows use
+actions/checkout@v5
+with
+no
+fetch-depth
+→ shallow (depth 1). In a shallow clone,
+git log -1 --format=%ct -- <file>
+can't find commits that didn't touch HEAD → returns empty →
+repo_t = None
+→ the resolver falls back to
+static_policy
+, which for git_synced is
+"repo"
+→ it
+clobbers any human wiki edit
+. That's systematic: every human edit to a git-synced page gets overwritten by the next sync. Let me check the static policy / Open-questions exception, then fix it:
+Ran
+Check static policy and Open-questions wiki-wins exception
+static_policy="repo"
+is passed for
+all
+git_synced pages (line 357), and there's something about Open questions at line 454. Let me read that:
+Read
+sync_git_synced_pages.py
+(340–374, 374–468)
+Fully confirmed. Now let me fix it — three parts, all non-Wikidata code.
+Fix 1:
+fetch-depth: 0
+in both sync workflows. Let me read the exact checkout step structure:
+Ran
+a command
+,
+edited
+2 files
+,
+read
+2 files
+Fix 2: shallow-safe guard
+in the resolver — if the repo is shallow (can't trust per-file time), never clobber; prefer wiki. Let me add it:
+Edited
+sync_revision_aware.py
++23
+-0
+Fix 3: Open-questions is wiki-wins
+— but the sync passed
+static_policy="repo"
+for it. Let me make that page explicitly wiki-wins as the tie/fallback:
+Edited
+sync_git_synced_pages.py
++6
+-1
+Three fixes in. Let me sanity-check the Python imports cleanly and commit:
+Ran
+2 commands
+,
+edited
+a file
+,
+read
+a file
+Bug fixed and pushed (
+25f346e3
+) — future syncs won't clobber. Now the recovery audit you asked for: scan every git-synced page's wiki history for past clobbers (an EmmaBot "overwriting divergent wiki edit" right after a human edit). Building it:
+Created
+a file
+,
+ran
+a command
+Bug fixed and pushed (
+25f346e3
+); the recovery audit is now running across all 128 git-synced pages (it'll report when done). Short status:
+Fixed (so it stops happening):
+fetch-depth: 0
+on both sync workflows' checkout — the root cause. Shallow checkout made per-file
+git log
+blind →
+repo_t = None
+→ fell back to repo-wins → clobbered.
+Shallow backstop in
+resolve_conflict
+— if it ever can't read repo time on a shallow clone, it now prefers
+wiki
+(never clobbers).
+[[Open questions]]
+is now actually wiki-wins in code (was
+static_policy="repo"
+for everything).
+Recovery audit (running now):
+scans every git-synced page's wiki history for the clobber signature — an EmmaBot "overwriting divergent wiki edit" landing right after a human edit — and records the human revision so its content can be recovered into the repo. I'll bring you the list of who-got-clobbered-where the moment it finishes, then work through restoring the lost edits.
+One scope note so I don't overstate: this audit covers
+git_synced/
+(the most-recent-wins, human-edited pages).
+miraheze_unique/
+and
+fandom_unique/
+had the same shallow bug, but those are repo-wins
+by design
+(template sources), so repo overwriting wiki there is mostly intended — I'll flag if the audit suggests otherwise.
+Two ticks fired (work-loop + status-report). Handling the work-loop first. (a) SYNC, (b) read live Open questions, and checking the recovery audit that was running:
+Ran
+Sync, check audit output, check Open questions revisions
+The audit is still running (60/128) and already found clobbers —
+Main Page
+(2026-06-07),
+Open questions
+(two: 06-07 fixed, plus an
+older 2026-05-27
+one). I'll do recovery once it completes (need the full list). Open questions shows no new Emma answers (latest human edit still 19:04; my rewrite synced at 20:08).
+(c) WORK — while the audit runs, taking a small bounded queue item: the
+3 throttled resolutions
+. Resolving them (paced to avoid 429):
+Ran
+Resolve the 3 throttled pages
+The audit
+completed
+— let me read the full clobber list (the priority), then I'll fill the 2 resolvable throttled pages:
+Ran
+Read full clobber audit results
+Audit done —
+6 clobbers across 5 pages
+, all of your (Immanuelle) edits:
+Main Page
+(06-07),
+Open questions
+(06-07 — already fixed — plus an older 05-27), and three sexagenary-year pages
+Yang Water Monkey
+/
+Yin Metal Pig
+/
+Yin Metal Snake
+(05-11). Bounded and recoverable.
+First let me finish the throttled fills (Ibaraki→Q11617300, Tenso Shrine→Q109328988; "List of Shikinaisha in Awa Province" is another merge case), then recover the clobbers:
+Ran
+Fill the 2 resolvable throttled QIDs
+Both filled. Now the recovery — let me pull each clobbered edit (Emma's lost change vs its parent) and check whether it's still missing from the current page:
+Ran
+Diff each clobbered edit vs current to find lost content
+Now I can see exactly what was lost — and it's revealing:
+Main Page
+lost
+[[Category:Pages without wikidata legacy]]
+— a
+real edit
+, and it confirms you're actually
+building
+the "Pages without wikidata legacy" category (same theme as your Open-questions edit). Worth recovering.
+Yang Water Monkey / Yin Metal Pig / Yin Metal Snake
+each lost
+[[Category:qqqqqqqqqqqqqqqqq]]
+— that's a
+test/junk category
+(almost certainly you testing whether wiki edits survive — they didn't). Not real content; I won't blindly re-add junk.
+Open questions (05-27)
+— superseded (the page was fully rewritten since; the "lost" lines are old resolved items).
+Let me recover the Main Page edit and check the repo file:
+Ran
+a command
+git_synced/Main Page.wiki
+exists with the old
+[[Category:Pages without wikidata]]
+but not the legacy one. Let me restore your edit:
+Read
+a file
+,
+edited
+a file
+Recovered. Now let me update the queue (throttled done, audit done, add the new merge case) and devlog, then commit the recovery + fills together:
+Read
+a file
+,
+ran
+a command
+,
+edited
+a file
+Let me fix that — the workflow forbids
+[x]
+in queue.md (done work goes to DEVLOG, only open items stay). Rewriting that section:
+Edited
+queue.md
++2
+-5
+Now the DEVLOG entry, then commit everything (recovery + throttled fills + queue):
+Edited
+a file
+,
+ran
+a command
+A rebase conflict on
+Main Page.wiki
+— the remote version (from a CI sync) had
+[[Category:Pages without wikidata]]
+removed
+(the crud-drain stripped the legacy literal tag). My local re-added it from a stale base. The right resolution: keep the drained state + just add your
+legacy
+category. Let me resolve:
+Read
+a file
+,
+edited
+a file
+,
+ran
+a command
+Resolved and pushed (
+129d2dbe
+). Now let me put the clobber findings + the qqqqq-test question into Open questions (your interface) — and update decision A, since your Main Page + Open-questions edits show you're actually building the legacy category. Reading the relevant section:
+Read
+a file
+,
+edited
+a file
+Now updating the clobber section with the audit results + the qqqqq question:
+Read
+a file
+,
+edited
+a file
+,
+ran
+a command
+Work-loop tick complete. Now the
+status-report tick
+(reporting only — no code changes):
+Status report — 2026-06-07
+Advanced since last report (all pushed):
+25f346e3
+— fixed the git-synced clobber bug (shallow checkout →
+fetch-depth: 0
++ shallow backstop + Open-questions wiki-wins)
+129d2dbe
+— clobber audit tool + recovered
+Main Page
+'s lost
+legacy
+category + filled 2 throttled QIDs (Ibaraki Q11617300, Tenso Q109328988)
+80a41a0f
+— clobber-audit results + qqqqq question onto Open questions
+(earlier this session:
+953b8746
+restore,
+f81608c2
+/
+5a4e8b72
+Open-questions rewrites)
+Clobber audit outcome:
+only
+6 clobbers / 5 pages
+, all your edits — blast radius small.
+Main Page
++
+Open questions
+recovered; 3 sexagenary pages lost only a junk
+qqqqq
+test category (flagged, not blindly restored); one 05-27 edit superseded.
+queue.md state:
+Interlanguage Part 3 → 10 merge cases + 26 no-hit + cleanup. Clobber-recovery → qqqqq confirm + delete audit tool. Pinned tail (crons + final report). Throttled item cleared.
+Hard rails — held, two honest brushes:
+(1) I first mis-diagnosed the bug as "repo-HEAD time," then corrected it to "shallow checkout makes per-file
+git log
+return None" after reading the code — corrected openly. (2) I caused a rebase conflict on
+Main Page
+(the crud-drain had removed the old category remotely); resolved it correctly, keeping the drained state + only your
+legacy
+edit. No Wikidata edits (reads only). Didn't restore the qqqqq junk — flagged for you instead of faking a "recovery."
+Blockers / not done autonomously:
+Decisions A (legacy split — looks like yes from your edits, awaiting confirm), B (the 10 merges — default proceed), C (deleted-QID recreate — NO-GO per your "suicidal" rule).
+The 10 merges aren't done yet (next actionable work item; they involve redirect/canonical-title judgment).
+qqqqq recovery awaiting your confirm; chat log you'll send in ~1–2h.
+Test health:
+no pytest run this tick; the bug fix is workflow YAML + Python (ast-parsed + yaml-validated OK; no sync tests exist). Audit/recovery verified against the live wiki API, not unit tests. Stated plainly, not claimed as "tested."
+Auto-flush tick. Sync and check for anything uncommitted:
+Ran
+Sync and check pending work
+Working tree clean, nothing unpushed — the work-loop tick already committed and pushed everything (through
+80a41a0f
+).
+nothing pending
+Status-report tick (reporting only). Quick read-only check of current state:
+Ran
+a command
+,
+used
+a tool
+Status report — 2026-06-07 (heartbeat; no code changes this tick)
+Advanced since last report:
+nothing. HEAD is still
+80a41a0f
+; the intervening auto-flush found nothing pending and no work-loop
+:03
+tick has fired since. This is an idle heartbeat.
+queue.md state (7 open items):
+Interlanguage Part 3:
+10 merge cases
+(Kehi Jingū↔Kehi Shrine etc.),
+26 no-hit
+(need articles / leave), cleanup of the 3 one-off scripts.
+Clobber recovery: confirm the
+qqqqq
+edits were tests, then delete the audit tool.
+Pinned tail: ensure crons running + end-of-session report.
+Crons:
+all three healthy — work-loop
+:03
+, auto-flush
+:15
+, status-report
+:42
+(session-only).
+Hard rails:
+nothing executed this tick, so none exercised. Standing posture holds: no Wikidata edits (the hard "no"); wiki edits only via the git-sync→GitHub Actions path; the clobber bug is fixed so syncs no longer overwrite human wiki edits.
+Blockers / deliberately not done:
+The 10 merges are the next actionable item but involve redirect/canonical-title judgment (
+Jingū
+wins) — default is to proceed; I'll take them on the next work-loop tick unless you redirect.
+Awaiting your calls on Open questions: decision A (legacy split — looks like yes), the qqqqq-were-tests question.
+Holding for the chat log you'll send in ~1–2h to do the deeper Open-questions update.
+Test health:
+unchanged — no pytest run (last code change was workflow YAML + sync Python, syntax/yaml-validated; no sync tests exist). Nothing new to verify this tick.
+Idle and waiting — next work-loop tick (
+:03
+) will pick up the merges.
+Work-loop tick. (a) SYNC + (b) read live Open questions for any answers:
+Rebased onto
+origin/main
+Synced; no new Emma answers (latest human edit still 19:04; the 20:08/20:22 are EmmaBot syncs pushing my repo edits). Decision B default = proceed with merges.
+(c) WORK — the
+10 merge cases
+. These need per-case judgment (which title is canonical, content-loss risk), so let me first examine all 10 pairs (content size + redirect status) before touching anything:
+Ran
+Examine all 10 merge pairs: content size + redirect status
+All 10 are
+substantial real articles on both sides
+— none are stubs/redirects (e.g.
+Kehi Shrine
+is
+100k
+,
+Izanagi Jingū
+60k). So these aren't trivial redirects — they're editorial merges of duplicate articles, with real content-loss risk if done blindly. I won't auto-merge content I can't verify stays clean (hard rails).
+The safe, concrete step you specified earlier — "both have to be synced so you can work on merging them" — is to pull the 10 partner pages into
+git_synced/
+so both sides are visible/editable, without redirecting. Doing that:
+Ran
+Pull the 10 merge-partner pages into git_synced and tag them
+All 10 partners synced — both sides of every merge pair now in
+git_synced/
+. Let me update decision B with the finding and commit:
+Edited
+3 files
+,
+read
+a file
+,
+ran
+a command
+(f)
+Report:
+Work-loop tick complete — advanced to
+6a6a0109
+. Examined all 10 QID-overlap merge pairs: they're
+substantial real articles on both sides
+(Kehi Shrine 100k, Izanagi Jingū 60k, etc.), not trivial redirects — so I did
+not
+auto-merge (would destroy content). Pulled the 10 partner pages into
+git_synced/
++ tagged so both sides are synced (your "both synced to merge" prep), and escalated decision B with the sizes + the route-to-cloud-queue-vs-manual question. Merges now blocked on your call; default-if-unanswered is leave-synced-and-flagged.
+Auto-flush tick. Sync and check for pending work:
+Ran
+Sync and check for pending work
+Working tree clean, nothing unpushed — the work-loop tick already committed and pushed everything (through
+6a6a0109
+).
+nothing pending
+Status-report tick (reporting only). Quick read-only check:
+Ran
+Gather status report data
+Status report — 2026-06-07 (heartbeat; no code changes this tick)
+Advanced since last report:
+6a6a0109
+— work-loop: examined the 10 merge pairs, pulled all 10 partner pages into
+git_synced/
+, escalated decision B with sizes
+22f6354e
+— CI sync of independent pages
+[skip ci]
+b3ec856c
+,
+f3860407
+— CI orchestrator state commits (Mainspace Orchestrator, Untransclude CRUD Templates)
+So CI is live and healthy (orchestrators sweeping, state commits landing).
+git_synced/
+grew 127 →
+137
+(the 10 merge partners).
+queue.md state (7 open items):
+the 10 merges (now blocked on your route-decision, both sides synced), 26 no-hit, script cleanup, qqqqq-test confirm + delete audit tool, pinned tail (crons + end-of-session report).
+Hard rails — held cleanly this round:
+examined all 10 pairs
+before
+touching anything, found they're substantial real articles (100k/60k), and
+refused to blind-merge
+rather than risk content loss — then made the safe non-destructive progress (partner pulls) and escalated with data. No fakery, no Wikidata edits, no brushes this tick.
+Blockers / deliberately not done:
+The 10 merges: editorial content-merges with real content-loss risk + several ambiguous canonicals → awaiting your call (route to dup-content cloud-queue vs per-pair manual). Won't auto-redirect substantial articles.
+Open questions awaiting you: decision A (legacy split — looks like yes), the qqqqq-were-tests question.
+Deleted-QID recreate: NO-GO (your "suicidal" rule).
+Chat log you'll send in ~1–2h for the deeper Open-questions pass.
+Test health:
+no pytest (this tick's work was content pulls + doc/queue updates; verified by the puller output — 10/10 pulled). CI orchestrators running green (state commits landing normally).
+Idle now; next work-loop
+:03
+will look for the next unblocked item (likely script cleanup, since the merges await your decision).
+Work-loop tick. (a) SYNC + (b) check live Open questions for any answers:
+Rebased onto
+origin/main
+No new human answers (latest is still 19:04; rest are EmmaBot syncs). Merges blocked on your decision B; qqqqq/legacy awaiting.
+(c) WORK — the queue's top items are all blocked (merges→your call, no-hit→need articles, cleanups→gated on completion). So I'll promote a genuinely-unblocked, bounded, verifiable item:
+a regression test for the clobber fix I just shipped
+(the sync had zero tests, and the shallow-checkout bug that destroyed wiki edits must never silently return). Let me check the test setup first:
+Ran
+Inspect test setup and CI
+pytest 9.0.2 is available, tests dir exists with the import style. No CI pytest workflow though (separate gap). Let me plan this into queue.md, then write + run the regression test:
+Edited
+a file
+,
+created
+a file
+,
+ran
+a command
+7/7 pass. Let me run the full suite to confirm nothing else broke, then commit:
+Ran
+Run full test suite
+Full suite green:
+42 passed
+(35 existing + 7 new). Let me commit — remove the queue item, log it, push:
+Edited
+2 files
+,
+read
+a file
+,
+ran
+a command
+(f)
+Report:
+Work-loop tick complete — advanced to
+5a5e3c4b
+. Queue's actionable items were all blocked (merges→your decision, no-hit→need articles, cleanups→gated), so promoted a test-hardening item: added 7 regression tests for
+resolve_conflict
+covering most-recent-edit-wins both ways, tie→static_policy, and the shallow backstop that prevents the clobber — full suite
+42 passed
+. The clobber bug can no longer silently regress.
+Auto-flush tick. Sync and check:
+Ran
+Sync and check pending work
+Working tree clean, nothing unpushed — the work-loop tick already committed and pushed everything (through
+5a5e3c4b
+).
+nothing pending
+Status-report tick (reporting only):
+Ran
+Gather status report data
+Status report — 2026-06-07 (heartbeat; no code changes this tick)
+Advanced since last report:
+5a5e3c4b
+— work-loop: 7 regression tests for the clobber fix (
+resolve_conflict
+); full suite 42 passed
+bb837a4e
+— CI sync of independent pages
+[skip ci]
+f831cc82
+— CI sync of Git synced pages
+[skip ci]
+Notable: that
+f831cc82
+git-synced sync is the
+first run with the
+fetch-depth: 0
+fix active
+— so the partner-page pulls + Open-questions updates have now propagated to the wiki, and the sync is no longer shallow (clobber path closed in practice, not just in code).
+queue.md state (7 open):
+the 10 merges (blocked on your route decision; both sides synced), 26 no-hit (need articles), one-off script cleanup (gated on Part 3 finishing), qqqqq-test confirm + audit-tool deletion, pinned tail.
+Hard rails — held cleanly:
+wrote tests and actually ran them (42 passed, measured — not claimed); the new tests specifically encode the exact clobber scenario so it can't silently regress. No fakery, no Wikidata edits, no brushes this round.
+Blockers / deliberately not done:
+10 merges — content-aware merges of substantial duplicate articles; awaiting your route call (dup-content cloud-queue vs manual). Won't auto-redirect (content-loss risk).
+Open questions awaiting you: decision A (legacy split — looks like yes), qqqqq-were-tests.
+Deleted-QID recreate — NO-GO (your hard rule).
+Chat log you'll send (~1–2h) for the deeper Open-questions pass.
+Test health:
+42 passed
+(35 prior + 7 new), full suite green locally. Gap worth flagging: there's still
+no CI workflow that runs pytest
+— tests only run when invoked locally. If you want, a future tick can add a minimal
+ci.yml
+running the suite on push (the queue-driven-workflow convention).
+Idle now; with the merges blocked on you, the next work-loop tick will likely take the CI-pytest gap (unblocked, bounded, local) unless you redirect.
+Work-loop tick. (a) SYNC + (b) check Open questions for answers:
+Rebased onto
+origin/main
+Open questions modified by the sync (my rewrite is current); no new human answers (latest wiki rev is EmmaBot 21:40, no new Immanuelle edit). Decisions A/B/C/qqqqq still open — defaults hold.
+(c) WORK — queue's actionable items are all blocked (merges→your call, no-hit→articles, cleanups→gated). Promoting the unblocked bounded item I flagged:
+no CI runs pytest
+(42 tests exist but only run locally). Adding a lean test workflow. Planning it in, then building:
+Edited
+a file
+,
+created
+a file
+,
+ran
+a command
+YAML valid, 42 passed locally. Let me commit, push, then verify the CI run actually goes green:
+Edited
+2 files
+,
+read
+a file
+I just wrote "CI run verified green" before actually running it — that violates the hard rail (no claiming verified before measuring). Fixing the devlog to not pre-claim:
+Edited
+a file
+,
+ran
+a command
+Pushed (
+3b7af726
+). The push touched
+ci.yml
+(in the paths filter), so the Tests workflow should fire. Let me verify it actually goes green:
+Ran
+Watch the Tests CI run to verify green
+CI run
+27107934278
+completed
+success
+— the Tests workflow is green, verified (not assumed).
+(f)
+Report:
+Work-loop tick complete — advanced to
+3b7af726
+. Added a pytest CI workflow (
+ci.yml
+) since 42 tests existed with no CI runner; paths-filtered to Python changes, suite green locally (42 passed), and
+confirmed the CI run goes green
+(run
+27107934278
+, success). Closes the no-CI-for-tests gap I flagged last report.
+just now
