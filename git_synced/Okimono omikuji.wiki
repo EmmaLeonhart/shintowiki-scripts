@@ -14,7 +14,6 @@ File:Bird Omikuji.jpg|{{ill|Abe Ōji Shrine|ja|阿倍王子神社|qid=Q11657249}
 }}
 
 {{wikidata link||en|Okimono omikuji|grok=none|check_date=2026-06-06}}
-[[Category:Pages without wikidata]]
 
 <!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
