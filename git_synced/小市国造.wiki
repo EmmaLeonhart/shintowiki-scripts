@@ -15,3 +15,7 @@ The [[descendants]] of Koji-no-Mikoto settled widely in [[Ochi District]] and be
 [[Category:Mononobe clan|-おちのくにのみやつこ]]
 [[Category:愛媛県の歴史]]
 [[Category:Kuni no miyatsuko]]
+
+<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's {{wikidata link}} could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
+[[Category:Git synced pages]]
+[[Category:Pages git synced to resolve interlanguage and interwiki links]]
