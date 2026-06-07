@@ -6,6 +6,35 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): harden shrines-missing-en-label SPARQL fetch (CI evidence)
+**Files:** `modern-quickstatements/generate_shrines_missing_en_label.py`,
+`modern-quickstatements/tests/test_fetch_sparql.py` (new), `queue.md`
+
+Acted on a real CI failure found during the per-tick diligence scan: the
+"Generate shrines-missing-en-label list" workflow (run 27087424162) failed with
+`requests.exceptions.HTTPError: 502 Server Error: Bad Gateway` from
+`query.wikidata.org/sparql`. `fetch_sparql` already retried `ReadTimeout` (→
+graceful `None`, leaving the existing list untouched) and bailed on 429, but a
+transient 502/503/504 hit `raise_for_status()` uncaught and red-marked the daily
+job.
+
+Extended the existing graceful-degradation pattern to transient 5xx
+(500/502/503/504) and `ConnectionError`: retry with linear backoff, then return
+`None` after exhausting retries — same as the timeout path. Kept the 429
+immediate-bail (repo policy) and let genuine 4xx (e.g. a 400 bad query) still
+surface loudly. Made the module import-safe (module-level stdout swap → 
+`_ensure_utf8_stdout()` called from `main()`, same fix as
+`delete_unused_templates`) so it could be unit-tested. Added
+`modern-quickstatements/tests/test_fetch_sparql.py` (6 cases: happy path, 502→
+retry→success, persistent 502→None, 429→immediate bail with no retries,
+ConnectionError→retry→success, 400→raises). Ran both suites: `shinto_miraheze/
+tests` + `modern-quickstatements/tests` = **41 passed**.
+
+This mirrors the login_with_retry widening and the translation generator's
+`_get_json` 5xx tolerance: transient external-service hiccups must not red-mark a
+CI job. Note: no CI workflow runs pytest in this repo, so the suite is a dev-time
+gate — I ran it locally and report the count.
+
 ### Work-loop (1pm cron): cleanvibe update check (was "never")
 **Files:** `CLAUDE.md`, `queue.md`
 
