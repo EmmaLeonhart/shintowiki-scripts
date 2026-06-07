@@ -6,6 +6,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Extend ci.yml pytest workflow to cover modern-quickstatements/tests
+**Files:** `.github/workflows/ci.yml`
+
+The sibling machine added `ci.yml` (pytest in CI — closes the long-standing gap
+where no workflow ran the suite) but scoped it to `shinto_miraheze/tests/` +
+`shinto_miraheze/**.py` paths. My SPARQL-5xx fix's tests live in
+`modern-quickstatements/tests/test_fetch_sparql.py`, so they weren't run and
+`modern-quickstatements/**.py` changes didn't trigger CI. Purely additive change:
+added `modern-quickstatements/**.py` to the push + pull_request path filters and
+`modern-quickstatements/tests/` to the pytest invocation. Left the sibling's
+`shinto_miraheze` coverage untouched (additive, not a discard). Verified: `ci.yml`
+parses; the exact CI command `python -m pytest shinto_miraheze/tests/
+modern-quickstatements/tests/ -q` runs **48 passed** locally (35 + 7 sibling
+clobber-fix regression tests + 6 SPARQL tests). Committed atomically without a
+queue.md round-trip to avoid contending with the sibling's actively-managed queue.
+
 ### Commit chat log + agent self-audit into Open questions
 **Files:** `docs/session_logs/2026-06-07_remote-control.txt` (new), `.gitignore`,
 `git_synced/Open questions.wiki`
