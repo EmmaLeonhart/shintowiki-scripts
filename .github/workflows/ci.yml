@@ -1,0 +1,33 @@
+name: Tests
+
+# Runs the pytest suite so regressions are caught in CI — notably the
+# 2026-06-07 git-synced clobber fix (sync_revision_aware.resolve_conflict),
+# which previously had zero tests. Paths-filtered to Python changes so the
+# orchestrator/state-commit churn ([skip ci]) doesn't trigger it.
+on:
+  push:
+    paths:
+      - "shinto_miraheze/**.py"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    paths:
+      - "shinto_miraheze/**.py"
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pytest requests mwclient
+
+      - name: Run tests
+        run: python -m pytest shinto_miraheze/tests/ -q

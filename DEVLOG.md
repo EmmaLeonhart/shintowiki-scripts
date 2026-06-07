@@ -6,6 +6,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Work-loop (:03): add pytest CI workflow
+**Files:** `.github/workflows/ci.yml` (new), `queue.md`
+
+42 tests existed but no workflow ran them, so regressions (e.g. to the clobber
+fix) wouldn't surface in CI. Added a minimal `ci.yml`: checkout → setup-python
+3.11 → `pip install pytest requests mwclient` → `pytest shinto_miraheze/tests/`,
+triggered on push/PR (paths-filtered to `shinto_miraheze/**.py` so the
+[skip ci] orchestrator/state churn doesn't fire it) + workflow_dispatch. YAML
+validated; suite green locally (42 passed) before push. CI run watched
+post-push to confirm it actually goes green (not assumed).
+
 ### Work-loop (:03): regression tests for the clobber fix
 **Files:** `shinto_miraheze/tests/test_sync_revision_aware.py` (new), `queue.md`
 
