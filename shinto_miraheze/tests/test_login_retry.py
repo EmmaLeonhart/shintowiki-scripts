@@ -51,3 +51,19 @@ def test_login_reraises_after_exhausting_attempts(monkeypatch):
         d.login_with_retry(site, "EmmaBot", "pw", attempts=3, base_delay=0)
     assert ei.value is boom
     assert site.calls == 3  # tried exactly `attempts` times
+
+
+def test_default_attempts_is_five():
+    # The default was raised 3 -> 5 on 2026-06-06 after a transient miraheze
+    # auth flake outlasted the 3-attempt window in CI (run 27074506079).
+    import inspect
+    assert inspect.signature(d.login_with_retry).parameters["attempts"].default == 5
+
+
+def test_default_window_absorbs_four_transient_failures(monkeypatch):
+    # With the default attempts=5, four consecutive transient failures must be
+    # absorbed (success on the fifth call), not re-raised.
+    monkeypatch.setattr(d.time, "sleep", lambda *_: None)
+    site = _FakeSite(fail_n=4)
+    d.login_with_retry(site, "EmmaBot", "pw", base_delay=0)  # use default attempts
+    assert site.calls == 5

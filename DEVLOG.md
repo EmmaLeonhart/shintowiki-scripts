@@ -6,6 +6,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): widen login_with_retry default window (CI evidence)
+**Files:** `shinto_miraheze/wiki_login.py`,
+`shinto_miraheze/tests/test_login_retry.py`, `queue.md`
+
+Acted on a real CI failure rather than a backlog item. Inspecting cleanup-loop
+run 27074506079 (to check the GaiadDate confirmation), found its `cleanup` job
+failed at the `delete_lowercase_template_collisions` step with
+`mwclient.errors.LoginError: The supplied credentials could not be authenticated`
+— the exact transient miraheze auth flake `login_with_retry` exists to absorb, and
+that step *already* uses the helper. The default `attempts=3, base_delay=5` only
+covers a ~15s flake window (retries at t=0,5,15s); this flake outlasted it and
+red-marked the whole job.
+
+Raised the default to `attempts=5` (retries at t=0,5,15,30,50 → ~50s window) so a
+longer flake is absorbed; the re-raise on genuine bad creds is preserved (a real
+failure now surfaces in <1 min instead of ~15s — acceptable for CI). Extended
+`test_login_retry.py`: pinned the new default via `inspect.signature` and added a
+test that the default window absorbs four consecutive transient failures (succeeds
+on the 5th call). Suite 33 → **35 passed**.
+
+Note this is the helper's own documented purpose (one flake must not red-mark a
+job); the change makes the existing mechanism more robust, it doesn't add a new
+one. Not a one-off-script proliferation — every call site uses the default, so all
+~70 adopters get the wider window for free.
+
 ### Work-loop (1pm cron): retire undelete_immanuelle_common_js kludge
 **Files:** `shinto_miraheze/undelete_immanuelle_common_js.py` (deleted),
 `.github/workflows/wiki-cleanup.yml`,

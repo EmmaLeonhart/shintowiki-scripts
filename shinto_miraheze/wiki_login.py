@@ -30,13 +30,20 @@ wiki_login`` resolves to this sibling module.)
 import time
 
 
-def login_with_retry(site, username, password, attempts=3, base_delay=5):
+def login_with_retry(site, username, password, attempts=5, base_delay=5):
     """Log in, retrying on a transient login failure before giving up.
 
     Retries ``attempts`` times with linear backoff (``base_delay * attempt``
     seconds). Any exception from ``site.login`` (``mwclient.errors.LoginError``
     or a transient network error) triggers a retry; the exception from the
     final attempt is re-raised so a real bad-credential failure is not masked.
+
+    The default ``attempts=5`` covers a ~50s flake window (retries at
+    t=0,5,15,30,50s). This was raised from 3 (~15s) on 2026-06-06 after CI run
+    27074506079's cleanup job failed at ``delete_lowercase_template_collisions``
+    with ``LoginError: The supplied credentials could not be authenticated`` —
+    a transient miraheze auth flake that outlasted the 3-attempt window even
+    though the step already used this helper.
     """
     last = None
     for attempt in range(1, attempts + 1):
