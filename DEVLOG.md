@@ -6,6 +6,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-06
 
+### Work-loop (1pm cron): cleanvibe update check (was "never")
+**Files:** `CLAUDE.md`, `queue.md`
+
+Ran the overdue weekly cleanvibe skill-update check (CLAUDE.md recorded "Last
+cleanvibe update check: never"). Fetched `https://cleanvibe.emmaleonhart.com/
+updates.md`: latest cleanvibe v1.15.0 (2026-06-05); all 6 vendored skills
+(emergency-stop, cron-is-local, autonomous-loop, queue-driven-workflow,
+writing-style, cleanvibe-update-check) are listed at v1.14.0+ with no per-skill
+revisions. The only post-v1.14.0 change, v1.15.0, addresses copyright compliance
+in `cleanvibe replicate` (paper-redistribution) projects — not applicable here.
+So no `.claude/skills/` files changed; stamped the check date to 2026-06-07.
+
 ### Work-loop (1pm cron): widen login_with_retry default window (CI evidence)
 **Files:** `shinto_miraheze/wiki_login.py`,
 `shinto_miraheze/tests/test_login_retry.py`, `queue.md`
