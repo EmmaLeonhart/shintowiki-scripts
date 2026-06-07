@@ -12,7 +12,8 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 '''A. "Pages without wikidata legacy" — do you want the category split?''' (raised by Emma's 2026-06-07 edit to this page)
 : Right now there is ONE flat <code>[[Category:Pages without wikidata]]</code> (~403 pages), fed two ways: ~344 old pages still on the literal tag (being drained by <code>remove_crud_categories</code>; the category is marked crud until 2026-12-06), and ~58 via the blank-<code>{{wikidata link}}</code> self-categorization. Emma's edit changed a note to say "Pages without wikidata '''legacy'''".
-: '''Question:''' do you want the legacy literal-tag population moved into a separate <code>[[Category:Pages without wikidata legacy]]</code> (so the template-driven category is clean), or was "legacy" just a clarifying word? If you want the split, the agent wires it into the <code>wikidata_link</code> op. '''Default if unanswered:''' treat as a clarifying note, no split.
+: '''Update 2026-06-07:''' the clobber recovery (below) found Emma had ALSO manually tagged <code>[[Main Page]]</code> with <code>[[Category:Pages without wikidata legacy]]</code> (that edit was clobbered; now restored). So Emma appears to be actively building this category — reading decision A as a likely '''YES, split it'''.
+: '''Question:''' confirm — should the agent systematically move the ~344 literal-tag pages from <code>[[Category:Pages without wikidata]]</code> into <code>[[Category:Pages without wikidata legacy]]</code> (wiring it into the <code>wikidata_link</code> op / crud lifecycle)? '''Default if unanswered:''' do NOT mass-move yet (it's a large, semi-irreversible recat); just keep the category Emma started and wait for explicit confirmation.
 
 '''B. The 9 QID-overlap MERGE cases — proceed automatically?''' (interlanguage-resolution op, in flight)
 : 9 of the resolved pages share a QID with another existing shinto page (duplicates): <code>Kehi Jingū</code>↔<code>Kehi Shrine</code> (Q11129346), <code>Izanagi Jingu</code>↔<code>Izanagi Jingū</code> (Q10884977), and 7 deity/kuni-no-miyatsuko pairs (full list in <code>queue.md</code>).
@@ -36,9 +37,14 @@ This page is the interface between Emma (human) and the bot agents that work on 
 # '''Duplicated content + need-translation''' — ONGOING: 134 dup-content + 385 need-translation; worked by the cloud-queue routine.
 # '''Recreate deleted Wikidata items''' — see decision C (NO-GO, parked).
 
-== Open agent task: fix the git-synced clobber bug ==
+== Git-synced clobber bug — FIXED + recovery (2026-06-07) ==
 
-The 2026-06-07 clobber of THIS page happened because the sync's "most-recent-edit-wins" effectively compared repo state against the wiki in a way that let unrelated repo commits look "newer" than Emma's wiki edit, so it overwrote her edit. Agent to-do (non-Wikidata, in progress): make the comparison strictly per-file (last commit touching THAT file vs that page's top wiki revision), and/or add a hard wiki-wins guard for this page. Tracked in <code>queue.md</code>.
+'''Root cause:''' the sync workflows checked out with no <code>fetch-depth</code> (shallow), so the resolver's per-file <code>git log</code> returned nothing → it fell back to repo-wins → overwrote live wiki edits. '''Fixed''' (commit 25f346e3): <code>fetch-depth: 0</code> on both sync checkouts + a shallow backstop (prefer wiki when repo time is unreadable) + this page is now explicitly wiki-wins in code.
+
+'''Recovery — audited all 128 git-synced pages; only 6 clobbers / 5 pages, all Emma's edits:'''
+* <code>[[Open questions]]</code> (06-07 "legacy" edit) and <code>[[Main Page]]</code> (<code>[[Category:Pages without wikidata legacy]]</code>) — RESTORED.
+* <code>[[Open questions]]</code> (2026-05-27) — superseded (page rewritten since), nothing to restore.
+* '''<code>[[Yang Water Monkey]]</code>, <code>[[Yin Metal Pig]]</code>, <code>[[Yin Metal Snake]]</code>''' (2026-05-11) — each lost only <code>[[Category:qqqqqqqqqqqqqqqqq]]</code>, which looks like a TEST category. '''Question for Emma:''' were those test edits (ignore), or did you mean something — should the agent recover them?
 
 == Done this session (2026-06-07) — FYI, agent deletes once Emma has seen it ==
 
