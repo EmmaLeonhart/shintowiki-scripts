@@ -6,6 +6,20 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
+## Interlanguage-resolution operation (Emma, 2026-06-07) — Part 3 remaining
+
+Parts 1+2 done (57-page cohort pulled into `git_synced/`, tagged into
+`[[Category:Git synced pages]]` + `[[Category:Pages git synced to resolve
+interlanguage and interwiki links]]`, sync dispatched). Part 3a done (CSV:
+`shinto_miraheze/build_wikidata_resolution_csv.out.csv`). Part 3b done (14
+exact-label non-overlap QIDs filled + pushed). Remaining:
+
+- [ ] **9 QID-overlap MERGE cases.** A resolved QID is already claimed (via P11250) by another shinto page — duplicate pages. Pull the overlapping page into `git_synced/` too, decide the merge (usually redirect one → the other; **prefer the "Jingū" title over "…Shrine"**), then set the QID. Cases: `Kehi Jingū`↔`Kehi Shrine` (Q11129346), `Izanagi Jingu`↔`Izanagi Jingū` (Q10884977), `Iwaki no Kuni no Miyatsuko`↔`Ishikami no Kuni no Miyatsuko` (Q11585422), `List of Kuni no Miyatsuko`↔`Kuni no miyatsuko` (Q2483673), `Mukuda…`↔`Makuta Kuni no Miyatsuko` (Q11667981), `乎止与命`↔`Otoyo no mikoto` (Q97706258), `无邪志国造`↔`Musashi no Kuni no Miyatsuko` (Q11504612), `椎根津彦`↔`Saonetsuhiko` (Q11120574), `道奥菊多国造`↔`Michinoku Kikuta Kuni-no-Miyatsuko` (Q11641674).
+- [ ] **6 search-hit candidates — review then fill if confident.** Not exact-label, so eyeball each: `Minase Jingu`→Q705121, `Mike Shrine (Ise)`→Q17211721, `Miwa Shrine (Kiryu)`→Q11608848, `Missionary Office`→Q11452939, `Why am I me?`→Q18455813 (+ `Izanagi Jingu` is in the merge set). Watch for disambiguation (many Mike/Miwa shrines).
+- [ ] **3 throttled — re-run** `build_wikidata_resolution_csv.py` for `Ibaraki no Kuni no Miyatsuko`, `List of Shikinaisha in Awa Province`, `Tenso Shrine`.
+- [ ] **26 no-hit — no Wikidata item found.** Biographies, sect-specific docs, shinto-coined terms, list/disambiguation pages. These need an article created first (overlaps backlog item 8, deleted-QID recreation) or should stay unconnected. Leave for now; don't force.
+- [ ] **Cleanup when the operation completes:** delete the one-off scripts `pull_unresolved_wikidata_to_git_synced.py`, `build_wikidata_resolution_csv.py` (+ `.out.csv`), `fill_resolved_wikidata_qids.py` once Part 3 is finished (repo-discipline: don't leave one-offs around).
+
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
