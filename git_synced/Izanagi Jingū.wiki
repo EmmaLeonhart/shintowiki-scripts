@@ -1,0 +1,311 @@
+{{Expand Japanese|伊弉諾神宮}}
+
+{{Infobox religious building
+| name = Izanagi Shrine
+| native_name = 伊弉諾神宮
+| image = Izanagi-jingu Haiden.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Izanagi Shrine
+| coordinates = {{coord|34.460204|134.852498}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Izanagi|lt=Izanagi|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|en|Izanagi|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}}
+| website = {{Official website|https://kuniuminoshima.jp/%e4%bc%8a%e5%bc%89%e8%ab%be%e7%a5%9e%e5%ae%ae/}}
+}}
+
+{{nihongo|'''Izanagi Jingū'''|伊弉諾神宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awaji Province]].
+
+== instance of (P31) ==
+
+* {{ill|List of Jingū|lt=jingū|en|List of Jingū|es|Santuario Jingū|fr|Sanctuaire jingū|ja|神宮|ko|신궁 (신토)|zh|神宮|qid=Q120680118}}
+* {{ill|Ichinomiya|lt=ichinomiya|ca|Ichinomiya (Xinto)|de|Ichi-no-miya|en|Ichinomiya|fr|Ichi-no-miya|id|Ichinomiya|ja|一宮|ko|이치노미야|pt|Ichinomiya (templo)|simple|Ichinomiya|th|อิจิโนมิยะ|uk|Ітіномія (титул)|zh|一宮|qid=Q1656379}}
+** P1001: {{ill|Awaji Province|ltq=Q1053717|qid=Q1053717}}
+* {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}}
+* {{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964|lt=Myōjin Taisha}}
+* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286}}
+* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}}
+* {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei-sha}}<ref>https://jmapps.ne.jp/kokugakuin/det.html?data_id=183162</ref>
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Awaji Province|ja|淡路国の式内社一覧|qid=Q11559808|lt=List of Shikinaisha in Awaji Province}}
+** Series ordinal: 1
+** P155: {{ill|Ametachikarawono Shrine|qid=Q135041283}}
+** P156: {{ill|Ise-Kuruma Shrine|ja|伊勢久留麻神社|qid=Q128866991|lt=Ise-Kuruma Shrine}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Awaji, Hyōgo|ltq=Q373107|qid=Q373107}}
+* {{ill|Awaji Province|ltq=Q1053717|qid=Q1053717}}
+* {{ill|Tsuna District, Hyōgo|ja|津名郡|zh|津名郡|qid=Q7850141|lt=Tsuna district}}
+
+== coordinate location (P625) ==
+
+* {{coord|34.460204|134.852498}}<ref>https://jmapps.ne.jp/kokugakuin/det.html?data_id=183162</ref>
+
+== official website (P856) ==
+
+* https://kuniuminoshima.jp/%e4%bc%8a%e5%bc%89%e8%ab%be%e7%a5%9e%e5%ae%ae/
+** Language of work: {{ill|Japanese language|ltq=Q5287|qid=Q5287}}
+
+== image (P18) ==
+
+* Izanagi-jingu Haiden.JPG
+
+== dedicated to (P825) ==
+
+* {{ill|Izanagi|lt=Izanagi|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|en|Izanagi|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}}
+
+== OpenStreetMap way ID (P10689) ==
+
+* 687937350
+
+== OpenCorporates ID (P1320) ==
+
+* jp/2140005019631
+
+== described by source (P1343) ==
+
+* {{ill|Kokugakuin University Shrine database (old)|ltq=Q135037878|qid=Q135037878}}
+** P2699: https://web.archive.org/web/20160130164422/http://21coe.kokugakuin.ac.jp/db/jinja/530001.html
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 183162
+** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
+
+== modern shrine ranking (P13723) ==
+
+* {{ill|Kanpei Taisha|qid=Q134917279|lt=Kanpei Taisha}}
+** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
+** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
+
+== country (P17) ==
+
+* {{ill|Japan|ltq=Q17|qid=Q17}}
+
+== native label (P1705) ==
+
+* {'text': '伊弉諾神宮', 'language': 'ja'}
+** P1814: いざなぎじんぐう
+** P2125: Izanagi-jingū
+
+== name in kana (P1814) ==
+
+* いざなぎじんぐう
+
+== has part(s) of the class (P2670) ==
+
+* {{ill|Haiden (Shinto)|es|Haiden (sintoísmo)|fa|هایدن (شینتو)|fi|Haiden|fr|Haiden|id|Haiden (Shinto)|it|Haiden|ja|拝殿|mk|Хаиден (Шинто)|pl|Haiden|pt|Haiden|ru|Хайдэн|tr|Haiden (Şinto)|qid=Q3125745|lt=haiden}}
+* {{ill|Honden|ar|هوندن (شنتو)|ca|Honden|cs|Honden|es|Honden|eu|Honden|fi|Honden|fr|Honden|id|Honden|it|Honden|ja|本殿|nl|Honden (shinto)|oc|Honden|pl|Honden|pt|Honden|ru|Хондэн|simple|Honden|th|ฮนเด็ง|tr|Honden|qid=Q2044994}}
+* {{ill|Chōzuya|bcl|Chōzuya|es|Chōzuya|fa|تمیزویا|fr|Chōzuya|id|Chōzuya|it|Chōzuya|ja|手水|ko|데미즈야|oc|Chōzuya|ro|Chōzuya|ru|Тэмидзуя|simple|Chōzuya|zh|手水舍|qid=Q1069667}}
+
+== postal code (P281) ==
+
+* 656-1521<ref>https://kuniuminoshima.jp</ref>
+
+== TripAdvisor ID (P3134) ==
+
+* 2105917
+
+== Corporate Number (Japan) (P3225) ==
+
+* 2140005019631
+
+== Commons category (P373) ==
+
+* Izanagi-jingu
+
+== Google Maps Customer ID (P3749) ==
+
+* 4568735081946745150
+
+== street address (P6375) ==
+
+* {'text': '兵庫県淡路市多賀740', 'language': 'ja'}
+* {'text': '740 Taga, Awaji-shi, Hyōgo-ken 656-1521', 'language': 'en'}
+
+== Freebase ID (P646) ==
+
+* /m/011pzfks
+
+== Japan Search name ID (P6698) ==
+
+* 伊弉諾神宮
+
+== image of entrance (P9721) ==
+
+* Izanagi-jingu, otorii-1.jpg
+
+{{commons category|Category:Izanagi-jingu}}
+[[EN:Izanagi Shrine]]
+[[ja:伊弉諾神宮]]
+[[ZH:伊弉諾神宮]]
+
+{{wikidata link|Q10884977|commons|Category:Izanagi-jingu|en|Izanagi Shrine|ja|伊弉諾神宮|zh|伊弉諾神宮|grok=none|check_date=2026-05-30}}
+
+== Japanese content ==
+
+{{Shrine
+| Name = Izanagi Shrine
+| Image = [[File:Izanagi-jingu, haiden-1.jpg|270px]]<br />House of worship
+| Location = {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Awaji, Hyōgo|Q373107|qid=Q373107}}Taga 740
+| Location = {{Wiki coordinates 2 steps degrees minutes seconds|34|27|36|N|134|51|08|E|region:JP-28_type:landmark|display=inline,title|name=Izanagi Shrine}}
+| Enshrined deity = {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanami}}<br />{{ill|Izanami|Q682306|qid=Q682306|lt=Izanami}}
+| Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964|lt=Meishindai}})<br />{{ill|Awaji Province|Q1053717|qid=Q1053717}}{{ill|Ichinomiya|Q1656379|qid=Q1656379}}<br />Old {{ill|Q712534|lt=Kanpei Taisha}}<br />{{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}}
+| Founding = Age of the Gods (according to {{ill|Nihon Shoki|Q813935|qid=Q813935}}/{{ill|Kojiki|Q813031|qid=Q813031}})
+| Main shrine = Sangensha {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+| Chief priest = {{ill|Takashi Honmyō|ja|本名孝至|qid=Q115529376}}
+| Aliases = Mr. Ichinomiya, Mr. Izanami
+| Annual festival = {{ill|April 22|ab|Мшаԥымза 22|af|22 April|als|22. April|alt|Кандык айдыҥ 22 кӱни|am|22 April|an|22 d'abril|ar|22 أبريل|ary|22 أبريل|arz|22 ابريل|as|২২ এপ্ৰিল|ast|22 d'abril|av|22 апрель|avk|22-e ke balemeaksat|az|22 aprel|azb|۲۲ آوریل|ba|22 апрель|ban|22 April|bat_smg|Balondė 22|bcl|Abril 22|be|22 красавіка|be_x_old|22 красавіка|bg|22 април|bh|22 अप्रैल|bjn|22 April|blk|အေပီ ၂၂|bn|২২ এপ্রিল|bo|ཟླ་༤ཚེས་༢༢ཉིན་|bpy|এপ্রিল ২২|br|22 Ebrel|bs|22. april|btm|22 April|bxr|4 һарын 22|ca|22 d'abril|cdo|4 nguŏk 22 hô̤|ce|22 апрель|ceb|Abril 22|ckb|٢٢ی نیسان|co|22 d'aprile|cs|22. duben|csb|22 łżëkwiata|cv|Ака, 22|cy|22 Ebrill|da|22. april|de|22. April|diq|22 Nisane|dv|އެޕްރީލް 22|el|22 Απριλίου|eml|22 d'avrìl|eo|22-a de aprilo|es|22 de abril|et|22. aprill|eu|Apirilaren 22|ext|22 abril|fa|۲۲ آوریل|fi|22. huhtikuuta|fiu_vro|22. mahlakuu päiv|fo|22. apríl|fr|22 avril|frp|22 d’avril|frr|22. April|fur|22 di Avrîl|fy|22 april|ga|22 Aibreán|gan|4月22號|gd|22 an Giblean|gl|22 de abril|gn|22 jasyrundy|gor|22 April|gu|એપ્રિલ ૨૨|gv|22 Averil|hak|4-ngie̍t 22-ngit|he|22 באפריל|hi|२२ अप्रैल|hif|22 April|hr|22. travnja|hsb|22. apryla|ht|22 avril|hu|Április 22.|hy|Ապրիլի 22|ia|22 de april|id|22 April|ie|22 april|ig|22 Eprel|ilo|Abril 22|io|22ma di aprilo|is|22. apríl|it|22 aprile|ja|4月22日|jbo|vonma'i 22moi|jv|22 April|ka|22 აპრილი|kaa|22-aprel|kab|22 yebrir|kk|22 сәуір|kn|ಏಪ್ರಿಲ್ ೨೨|ko|4월 22일|koi|Апрель 22’ лун|ks|اَپریل 22|ksh|22. Apprill|ku|22ê nîsanê|kv|Косму тӧлысь 22-ӧд лун|la|22 Aprilis|lb|22. Abrëll|li|22 april|lij|22 arvî|lmo|22 04|ln|Mokɔlɔ 22 sánzá ya mínei|lo|22 ເມສາ|lt|Balandžio 22|lv|22. aprīlis|mai|२२ अप्रैल|map_bms|22 April|mg|22 Aprily|mhr|22 вӱдшор|mk|22 април|ml|ഏപ്രിൽ 22|mn|4 сарын 22|mr|एप्रिल २२|ms|22 April|my|၂၂ ဧပြီ|myv|Чадыковонь 22 чи|mzn|۲۲ آوریل|nah|22 metztli abril|nap|22 'e abbrile|nds|22. April|nds_nl|22 april|new|अप्रिल २२|nl|22 april|nn|22. april|no|22. april|nrm|22 Avri|nso|Moranang 22|oc|22 d'abril|olo|22. sulakuudu|or|୨୨ ଅପ୍ରେଲ|os|22 апрелы|pa|22 ਅਪ੍ਰੈਲ|pam|Abril 22|pap|22 di aprel|pl|22 kwietnia|pnb|22 اپریل|pnt|22 Απρίλτ|ps|22 اپرېل|pt|22 de abril|qu|22 ñiqin ayriway killapi|ro|22 aprilie|rsk|22. април|ru|22 апреля|rue|22. апріль|sa|२२ अप्रैल|sah|Муус устар 22|scn|22 di aprili|sco|22 Aprile|sd|22 اپريل|se|Cuoŋománu 22.|sh|22. aprila|shn|ဢေႇပရႄႇ 22|si|අප්‍රේල් 22|simple|April 22|sk|22. apríl|sl|22. april|sm|Aperila 22|smn|Cuáŋuimáánu 22.|sn|Kubvumbi 22|sq|22 Prill|sr|22. април|stq|22. April|su|22 April|sv|22 april|sw|22 Aprili|szl|22 kwjetńa|ta|ஏப்ரல் 22|te|ఏప్రిల్ 22|tg|22 апрел|th|22 เมษายน|tk|22 aprel|tl|Abril 22|tly|22 Aprel|tr|22 Nisan|tt|22 апрель|tyv|22 Дөрт ай|udm|22 оштолэзь|ug|22- ئۈمىد|uk|22 квітня|ur|22 اپریل|uz|22-aprel|vec|22 de apriłe|vi|22 tháng 4|vls|22 april|vo|Prilul 22|wa|22 d' avri|war|Abril 22|wuu|4月22号|xal|Мөрн сарин 22|xmf|22 პირელი|yi|22סטן אפריל|yo|22 April|za|4 nyied 22 hauh|zea|22 april|zgh|22 ⵉⴱⵔⵉⵔ|zh|4月22日|zh_min_nan|4 goe̍h 22 ji̍t|zh_yue|4月22號|qid=Q2526}}| Shinto ritual = Congee fortune-telling festival ({{ill|January 15|Q2260|qid=Q2260}} ({{ill|koshōgatsu|Q137803901|qid=Q137803901}}))<br />Insect festival (July {{ill|Crow-dipper sprouts|Q11406993|qid=Q11406993}} day)
+| Map = {{Location map|Japan Hyogo|lat_deg=34|lat_min=27|lat_sec=36|lon_deg=134|lon_min=51|lon_sec=08|label=Izanagi Shrine|mark=Shinto torii icon vermillion.svg|marksize=20|position=top|width=200|float=center|caption=}}{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200}}}}
+[[File:Izanagi-jingu, otorii-1.jpg|thumb|250px|right|{{center|Otorii}}]]'''Izanagi Jingu'' (Izanagi Jingu) is located in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Awaji, Hyōgo|Q373107|qid=Q373107}} Taga. {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}), {{ill|Awaji Province|Q1053717|qid=Q1053717}}{{ill|Ichinomiya|Q1656379|qid=Q1656379}}. {{ill|Q712534|lt=Old Shrine Ranking}} is {{ill|Q712534|lt=Old Shrine Ranking}} is {{ill|Q712534|lt=Kanpei Taisha}}, and currently it is {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}} of {{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}.The name of the former location, {{ill|Ichinomiya, Hyōgo (Tsuna)|Q5986243|qid=Q5986243|lt=Ichinomiya Town}} (currently Awaji City), originates from our company. Commonly known as ``Ikku-san'' and ``Izanou-san.'' On {{ill|January 15|Q2260|qid=Q2260}} ({{ill|koshōgatsu|Q137803901|qid=Q137803901}}), the Awaji Agriculture, Forestry and Fisheries Festival will be held in addition to the Ogayu Fortune Festival. {{ill|2016|Q25245|qid=Q25245}}{{ill|April 25|Q2531|qid=Q2531}} was certified as {{ill|Japan Heritage|Q18382798|qid=Q18382798}} as one of the constituent cultural properties<ref>{{Cite web|Japanese book|url=https://japan-heritage.bunka.go.jp/ja/stories/story030/ |title=STORY #030 “Awaji, the island of national birth” that decorates the beginning of “Kojiki” - The activities of the mariners who supported the ancient nation - |publisher=Agency for Cultural Affairs |accessdate=2020-08-04 }}</ref>.
+
+=== Enshrined God ===
+* {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi Mikoto}}
+* {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami Mikoto}}
+
+Both gods appear in the Japanese mythology {{ill|Kuniumi|Q3545163|qid=Q3545163}} and {{ill|Kamiumi|Q3545159|qid=Q3545159}}.Since the enshrined deity in "Yukyu Goki" is "Izanagi no Ichibushira," it is thought that originally only Izanagi was enshrined. </ref>. {{ill|1931|Q18782|qid=Q18782}} ({{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}6) "Ancient Shrine Document Copy" contains a petition regarding the enshrined deity, which states, The shrine is also of the highest rank, and the status of the shrine is Kanpei Taisha.The two deities, Izanami no Mikoto and Izanami no Mikoto, were born domestically and divinely, and these two deities should be enshrined regardless of the number of shrines listed in "{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}." |Q3125096}} In {{ill|1870|Q7741|qid=Q7741}}, {{ill|Myōdō Prefecture|Q9610752|qid=Q9610752}} designated Izanagi as the sole pillar. This is unfair as the subsidiary shrine of the Sesha was officially recognized. }} (1932) When we opened the main shrine, we found that Izami no Mikoto was also being enshrined as it had been handed down, so we requested permission to enshrine the two deities, Izanakomiko and Izami no Mikoto, with the request along with some materials, and {{ill|1932|Q18743|qid=Q18743}} (Showa 7) {{ill|Minister of Home Affairs|Q11267748|qid=Q11267748|lt=Minister of the Interior}} ``We have received permission to increase the number of enshrined deities,'' and the shrine officially began to enshrine two deities<ref name="kamigami" />.In addition, {{ill|Takeshi Matsumae|Q11529297|qid=Q11529297}} argues that the myth of the local god Izanagi was incorporated into the {{ill|UNKNOWN|lt=Yamato Court}} mythology from Awaji Province.<ref name="matsumae">From Ken Matsumae, "Japanese Gods," Chuokoronsha Co., Ltd., September 1974. </ref>. According to Matsumae, it does not seem that the belief that Izana no Mikoto was the parent of the Imperial Ancestor God existed in the imperial court for a long time; the two gods were only incorporated after the mid-seventh century, and it was passed down by people from Awaji who were called to {{ill|Daijosai|Q11433653|qid=Q11433653}} rituals for Rabbit's Day, and by Awaji seamen who brought food to the imperial court.<ref name="matsumae" /> Furthermore, in ``{{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981}}'', it is said that the reason why our company jumped from the 8th rank of Muppin to the highest rank of Ippin is that it was during this period that he was officially made the next relative of the Imperial Ancestor God.<ref name="matsumae" />
+
+=== History ===
+
+=== Founding ===
+In ``{{ill|Nihon Shoki|Q813935|qid=Q813935}}'' and ``{{ill|Kojiki|Q813031|qid=Q813031}},'' it is said that Izanagi no Mikoto, who had finished domestic and divine births, rested in a mysterious palace (kakurinomiya, final abode) in Taga, the land where he first gave birth, {{ill|Awaji Island|ar|أواجي (جزيرة)|az|Avaci adası|bcl|Isla nin Awaji|be|Авадзі (востраў)|bg|Аваджи (остров)|bn|আয়াজি দ্বীপ|ca|Illa d'Awaji|ceb|Awaji Shima|cs|Awadži|da|Avaji|de|Awaji-shima|el|Αβάτζι|eo|Aŭaĝi|es|Isla Awaji|et|Awaji saar|eu|Awaji uhartea|fa|جزیره آواجی|fi|Awaji|fr|Awaji-shima|gl|Illa de Awaji|he|אוואג'י (אי)|hi|अवाजी द्वीप|hy|Ավաձի (կղզի)|id|Pulau Awaji|it|Isola Awaji|ja|淡路島|ko|아와지섬|la|Insula Awaji|lb|Awaji-shima|lt|Avadžis|nl|Awaji (eiland)|pl|Awaji (wyspa)|pt|Ilha Awaji|ro|Insula Awaji|ru|Авадзи (остров)|sl|Avadži (otok)|sv|Awaji|tg|Ҷазираи Авадзӣ|th|เกาะอาวาจิ|tr|Awaji Adası|uk|Авадзі|vi|Awaji (đảo)|wuu|淡路岛|zh|淡路島|qid=Q504373}}, which is said to be the origin of our company. The other place that is said to be the ghost shrine of Izanagison is {{jalink|Taga Taisha|Q402091} in {{ill|Shiga Prefecture|ace|Prefektur Shiga|af|Shiga-prefektuur|an|Prefectura de Shiga|ar|شيغا (محافظة)|az|Şiqa prefekturası|azb|شیقا اوستانی|ban|Préféktur Shiga|be|Сіга (прэфектура)|bg|Шига|bn|শিগা প্রশাসনিক অঞ্চল|br|Prefedelezh Shiga|ca|Prefectura de Shiga|cdo|Shiga-gâing|ce|Сига (префектура)|ceb|Shiga-ken|ckb|پارێزگای شیگا|cs|Prefektura Šiga|cy|Shiga (talaith)|da|Shiga-præfekturet|de|Präfektur Shiga|eo|Gubernio Ŝiga|es|Prefectura de Shiga|et|Shiga prefektuur|eu|Shiga (prefektura)|fa|استان شیگا|fi|Shigan prefektuuri|fr|Préfecture de Shiga|frr|Shiga (Prefektüür)|ga|Maoracht Shiga|gl|Prefectura de Shiga|hak|Shiga-yen|he|שיגה (מחוז)|hr|Shiga (prefektura)|hu|Siga prefektúra|hy|Սիգա (պրեֆեկտուրա)|id|Prefektur Shiga|ilo|Prepektura ti Shiga|it|Prefettura di Shiga|ja|滋賀県|jv|Préfèktur Shiga|ka|სიგის პრეფექტურა|ko|시가현|la|Shigaënsis|lt|Šigos prefektūra|lv|Sigas prefektūra|mk|Шига (префектура)|mn|Шига муж|mni|ꯁꯤꯒꯥ ꯂꯝꯈꯥꯢ|mr|शिगा प्रांत|ms|Wilayah Shiga|ne|सिगा|nl|Shiga (prefectuur)|no|Shiga (prefektur)|os|Сигæ|pl|Prefektura Shiga|pnb|ضلع شیگا|pt|Shiga|ro|Prefectura Shiga|ru|Сига|sco|Shiga Prefectur|se|Shiga prefektuvra|sh|Prefektura Shiga|si|ෂිගා ප්‍රාන්තය|simple|Shiga Prefecture|sk|Šiga (prefektúra)|sr|Префектура Шига|su|Préféktur Shiga|sv|Shiga prefektur|sw|Mkoa wa Shiga|tg|Устони Шига|th|จังหวัดชิงะ|tl|Prepektura ng Shiga|tr|Shiga|tt|Сига (префектура)|uk|Префектура Сіґа|ur|شیگا پریفیکچر|vi|Shiga|war|Shiga (prefektura)|wuu|滋贺县|zh|滋贺县|zh_classical|滋賀縣|zh_min_nan|Siga-koān|zh_yue|滋賀縣|qid=Q131358}} }, which is written in the Shinpuku-ji book of Kojiki, ``The late Izanagi Ōkamija za'''tankai'''no'''Taga'''ya.'' (Izanagi no Okami is According to the description of ``Afumi no Tagani Masanari''. However, it is known that the deity enshrined at Taga Taisha Shrine was not Izanagison until the period of the Northern and Southern Courts, so it is not possible to connect the description in the Kojiki with Taga Taisha Shrine. In the Kojiki, ``Omi'' is usually referred to as ``Kindankai,'' and even in the same ``Kojiki,'' many manuscripts other than the Shinpukuji version refer to ``the late Iyanagi Daishinshaza''''Awaji''''. 'Taga'''ya.', and for various other reasons, there is a prevailing theory in academic circles that supports 'Awaji' rather than 'Awami' (Yukichi Takeda, Kojiro Naoki, etc.). Furthermore, in "Nihonshoki" it is consistently written as "Awaji", and there is no name that corresponds to "Omi".
+
+=== Outline ===
+In ancient literature, there is a mention of ``Izaku no Kami'' living on the island in the September article of the 5th year of ``{{ill|Nihon Shoki|Q813935|qid=Q813935}}'' {{ill|Emperor Richū|Q329704|qid=Q329704}}, and a description of ``Shimagami'' in the September 14th article of {{ill|Emperor Ingyō|Q349258|qid=Q349258}}, and these are generally compared to our company.
+
+“{{ill|Shinshō Kyakuchokufushō|Q11502312|qid=Q11502312}}” {{ill|Daidō|Q1373191|qid=Q1373191|lt=Daido}} According to the 1st year ({{ill|806|Q30021|qid=Q30021}}), 13 {{ill|UNKNOWN|lt=Kanfu}} were allocated to "Tsunagami". Furthermore, in the official seal of September 13, {{ill|Tengyō|Q1327340|qid=Q1327340}} 3rd year ({{ill|940|Q23830|qid=Q23830}}), it appears that 5 houses were added to ``Isana Shinmikojin.'' "{{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981}}" {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} In the article dated January 27, 1985 ({{ill|859|Q23897|qid=Q23897}}), {{ill|Shinkai (divine rank)|Q11591025|qid=Q11591025}} of ``Isanagi no Mikoto'' was promoted from the 8th class of the Muppin Order to the 8th class of the Ippin Order.{{ill|Enchō|Q1327274|qid=Q1327274|lt=Extended}} "{{ill|Engishiki|Q1342448|qid=Q1342448}}" established in 5 years ({{ill|927|Q30470|qid=Q30470}}) {{ill|Engishiki|Q1342448|qid=Q1342448}} |Engishiki Shrine Name Book|Q11064932|Shin Name Book}}, {{ill|Awaji Province|Q1053717|qid=Q1053717}}{{ill|Tsuna District, Hyōgo|ja|津名郡|zh|津名郡|qid=Q7850141}} has "Awaji Isanaki Shrine It is listed as ``Meishin Taisha'' and is listed as {{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}.{{ill|Eiman|Q1193868|qid=Q1193868}} June 1st year ({{ill|1165|Q19676|qid=Q19676}}) "Annual Tribute Order for Jingikan Shrines" <ref> Heian Ibun No. 3358 "Annual Tribute Order for Jingikan Shrines" edited by Rizo Takeuchi "Heian Ibun Ancient Documents Volume 7" Tokyodo Publishing Co., Ltd. Included in October 1963. </ref>'s description of "Awaji Province Ichinomiya <Fifty Charcoal Fifty Fifty Trees>", {{ill|Genkyū|Q1194276|qid=Q1194276}} April 2nd year ({{ill|1205|Q5229|qid=Q5229}}) "Awaji Kokushichosen" <ref> name="chousn">'''Chousen'' is an order given by {{ill|Kokushi (official)|Q1351234|qid=Q1351234}}, who was not assigned to the local government, to officials in {{ill|kokuga|Q11421342|qid=Q11421342}}. ``Awaji Kokushichosen'' is one of the ``Gokokuji Documents'' of Gokokuji Temple on Awaji Island, and is included in ``Hyogo Prefectural History Historical Materials Edition Medieval 1'', Hyogo Prefecture, November 1983, edited by the Hyogo Prefectural History Editorial Committee. <ref name="kamakura">Kamakura Ibun No. 3088 "Awaji Province Ota Bun" written in April 2012 ({{ill|1223|Q5399|qid=Q5399}}) "Awaji Province Ota Bun" written in April 2012 ({{ill|1223|Q5399|qid=Q5399}}) Included in "Kamakura Ibun Ancient Documents Volume 5" edited by Rizo Takeuchi, published by Tokyodo Publishing Co., Ltd., September 1973. </ref>'s description of ``One Shrine of Ichinomiya and One Shrine of the same Shrine'' indicates that it was considered to be Ichinomiya in Awaji Province from the end of {{ill|Heian period|Q193292|qid=Q193292}} to the beginning of {{ill|Kamakura period|ar|فترة كاماكورا|be|Перыяд Камакура|bg|Камакура|bn|কামাকুরা যুগ|ckb|سەردەمی کاماکورا|cs|Období Kamakura|de|Kamakura-Zeit|eo|Kamakura-epoko|es|Período Kamakura|et|Kamakura ajastu|eu|Kamakura aroa|fa|دوره کاماکورا|fi|Kamakura-kausi|fr|Époque de Kamakura|gl|Período Kamakura|he|תקופת קמקורה|hu|Kamakura-kor|id|Zaman Kamakura|it|Periodo Kamakura|ja|鎌倉時代|ko|가마쿠라 시대|lt|Kamakura laikotarpis|mn|Камакура эрин|nl|Kamakuraperiode|no|Kamakura-perioden|pt|Período Kamakura|ru|Период Камакура|simple|Kamakura period|sk|Obdobie Kamakura|sl|Obdobje Kamakura|sr|Камакура период|sv|Kamakura|th|ยุคคามากูระ|tl|Panahong Kamakura|tr|Kamakura Dönemi|uk|Період Камакура|vi|Thời kỳ Kamakura|wuu|镰仓时代|zh|鎌倉時代|zh_min_nan|Kamakura sî-tāi|zh_yue|鎌倉時代|qid=Q236205}}. For this reason, he was also called Ichinomiya Okami.In addition, the above document reveals the state of our company in {{ill|Middle Ages|Q12554|qid=Q12554|lt=Medieval}}. “Awaji Kokushicho Sen”<ref name="chausn" From this, {{ill|kokuga|Q11421342|qid=Q11421342}} is in charge of the festivals of our company and {{ill|Yamato Okunitama Shrine, Minamiawaji|Q11433429|qid=Q11433429}}, which is our company and {{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=Ninomiya}}, and it is thought that bugaku was held at the Hokke-kai and Sakura-kai of both shrines.<ref name="kiso">From "Basic Research on the Ichinomiya System in Medieval Countries" edited by the Ichinomiya System Study Group in Medieval Countries, Iwata Shoin, February 2000. </ref>. Also, from the description in "Awaji Province Ota Bun" <ref name="kamakura" />, we know that there was a {{ill|Jingū-ji|Q1074971|qid=Q1074971}} in the early Kamakura period.
+
+According to the records of Myokyo-ji Temple, which was our {{ill|Bettō-ji|Q11396755|qid=Q11396755|lt=Betto}}, Nakami Tamura, a descendant of {{ill|Sakanoue no Tamuramaro|Q941979|qid=Q941979}}, rebuilt the shrine in {{ill|Kōan (Kamakura period)|de|Kōan (Kamakura-Zeit)|fa|کوآن (دوره)|fr|Ère Kōan (Kamakura)|ia|Koan (prime)|id|Kōan|ja|弘安|ko|고안 (1278년)|ru|Коан (Камакура)|simple|Kōan (Kamakura period)|sr|Коан (Камакура период)|sv|Kōan (Kamakura)|tr|Kōan (Kamakura)|zh|弘安|qid=Q389180}}3 ({{ill|1280|ab|1280|af|1280|als|1280|am|1280 እ.ኤ.አ.|an|1280|ar|1280|ary|1280|arz|1280|ast|1280|avk|1280|az|1280|azb|۱۲۸۰ (میلادی)|ban|1280|be|1280|be_x_old|1280|bg|1280|bn|১২৮০|bpy|মারি ১২৮০|br|1280|bs|1280.|ca|1280|cdo|1280 nièng|ceb|1280|ckb|١٢٨٠|crh|1280|cs|1280|cv|1280|cy|1280|da|1280|de|1280|diq|1280|el|1280|eml|1280|eo|1280|es|1280|et|1280|eu|1280|fa|۱۲۸۰ (میلادی)|fi|1280|fo|1280|fr|1280|frr|1280|fy|1280|ga|1280|gan|1280年|gcr|1280|gd|1280|gl|1280|he|1280|hi|१२८०|hr|1280.|hsb|1280|ht|1280 (almanak jilyen)|hu|1280|hy|1280|id|1280|ilo|1280|io|1280|is|1280|it|1280|ja|1280年|jv|1280|ka|1280|kaa|1280|kk|1280 жыл|ko|1280년|la|1280|lb|1280|lij|1280|lmo|1280|lt|1280 m.|lv|1280. gads|map_bms|1280|mdf|1280|mg|1280|mhr|1280|mi|1280|min|1280|mk|1280|mr|इ.स. १२८०|mrj|1280 и|ms|1280|my|၁၂၈၀|myv|1280 ие|mzn|۱۲۸۰|nah|1280|nap|1280|nds|1280|new|सन् १२८०|nl|1280|nn|1280|no|1280|nrm|1280|nso|1280|oc|1280|or|୧୨୮୦|os|1280-æм аз|pl|1280|pnb|1280|pt|1280|qu|1280|ro|1280|ru|1280 год|rue|1280|sa|१२८०|sah|1280|scn|1280|sd|1280ع|se|1280|sh|1280.|shn|1280|simple|1280|sk|1280|sl|1280|smn|1280|sq|1280|sr|1280|su|1280|sv|1280|sw|1280|tg|Соли 1280|th|พ.ศ. 1823|tk|1280|tl|1280|tly|1280|tr|1280|tt|1280 ел|uk|1280|ur|1280ء|uz|1280|vec|1280|vi|1280|vls|1280|war|1280|wuu|1280年|xmf|1280|zea|1280|zh|1280年|zh_min_nan|1280 nî|zh_yue|1280年|qid=Q5536}}). {{ill|Daiei (era)|Q1193564|qid=Q1193564}} 5th year ({{ill|1525|ab|1525|af|1525|als|1525|am|1525 እ.ኤ.አ.|an|1525|ar|1525|ary|1525|arz|1525|ast|1525|avk|1525|az|1525|azb|۱۵۲۵ (میلادی)|bar|1525|bcl|1525|be|1525|be_x_old|1525|bg|1525|bn|১৫২৫|bpy|মারি ১৫২৫|br|1525|bs|1525.|ca|1525|cdo|1525 nièng|ce|1525 шо|ceb|1525|ckb|١٥٢٥|crh|1525|cs|1525|cv|1525|cy|1525|da|1525|de|1525|diq|1525|el|1525|eml|1525|eo|1525|es|1525|et|1525|eu|1525|fa|۱۵۲۵ (میلادی)|fi|1525|fo|1525|fr|1525|frr|1525|fur|1525|fy|1525|ga|1525|gan|1525年|gcr|1525|gd|1525|gl|1525|he|1525|hi|१५२५|hif|1525|hr|1525.|ht|1525 (almanak jilyen)|hu|1525|hy|1525|ia|1525|id|1525|ilo|1525|io|1525|is|1525|it|1525|ja|1525年|jv|1525|ka|1525|kaa|1525|kk|1525 жыл|ko|1525년|krc|1525 джыл|la|1525|lb|1525|lfn|1525|lij|1525|lmo|1525|lt|1525 m.|lv|1525. gads|mai|१५२५|map_bms|1525|mdf|1525|mg|1525|mhr|1525|mi|1525|min|1525|mk|1525|mn|1525 он|mr|इ.स. १५२५|mrj|1525 и|ms|1525|my|၁၅၂၅|nah|1525|nap|1525|nds|1525|new|सन् १५२५|nl|1525|nn|1525|no|1525|nrm|1525|nso|1525|oc|1525|or|୧୫୨୫|os|1525-æм аз|pa|1525|pl|1525|pnb|1525|pt|1525|qu|1525|ro|1525|ru|1525 год|rue|1525|sa|१५२५|sah|1525|scn|1525|sd|1525ع|se|1525|sh|1525.|shn|1525|simple|1525|sk|1525|sl|1525|smn|1525|sq|1525|sr|1525|su|1525|sv|1525|sw|1525|ta|1525|tg|Соли 1525|th|พ.ศ. 2068|tk|1525|tl|1525|tly|1525|tr|1525|tt|1525 ел|uk|1525|ur|1525ء|uz|1525|vec|1525|vi|1525|vls|1525|wa|1525|war|1525|wuu|1525年|xmf|1525|yi|1525|zh|1525年|zh_min_nan|1525 nî|zh_yue|1525年|qid=Q6314}}) <ref name="taikei"> Edited by Shinto Taikei Compilation Association, "Shinto Taikei Shrines Edition 41 Kii/Awaji Province" Included in Shinto Taikei Compilation Association, September 1987. According to </ref>, the Tamura clan was the Ichinomiya Shinto priest and feudal lord.{{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}}9 ({{ill|1581|ab|1581|af|1581|als|1581|am|1581 እ.ኤ.አ.|an|1581|ar|1581|ary|1581|arz|1581|ast|1581|avk|1581|az|1581|azb|۱۵۸۱ (میلادی)|bar|1581|bcl|1581|be|1581|be_x_old|1581|bg|1581|bn|১৫৮১|bpy|মারি ১৫৮১|br|1581|bs|1581.|ca|1581|cdo|1581 nièng|ceb|1581|ckb|١٥٨١|crh|1581|cs|1581|cv|1581|cy|1581|da|1581|de|1581|diq|1581|el|1581|eml|1581|eo|1581|es|1581|et|1581|eu|1581|fa|۱۵۸۱ (میلادی)|fi|1581|fo|1581|fr|1581|frr|1581|fur|1581|fy|1581|ga|1581|gan|1581年|gcr|1581|gd|1581|gl|1581|gv|1581|he|1581|hi|१५८१|hr|1581.|ht|1581 (almanak jilyen)|hu|1581|hy|1581|hyw|1581 թուական|ia|1581|id|1581|ilo|1581|io|1581|is|1581|it|1581|ja|1581年|jv|1581|ka|1581|kaa|1581|kk|1581 жыл|ko|1581년|krc|1581 джыл|la|1581|lb|1581|lij|1581|lmo|1581|ln|1581|lt|1581 m.|lv|1581. gads|mai|१५८१|map_bms|1581|mdf|1581|mg|1581|mhr|1581|mi|1581|mk|1581|mr|इ.स. १५८१|mrj|1581 и|ms|1581|my|၁၅၈၁|myv|1581 ие|mzn|۱۵۸۱|nah|1581|nap|1581|nds|1581|new|सन् १५८१|nl|1581|nn|1581|no|1581|nrm|1581|nso|1581|oc|1581|or|୧୫୮୧|os|1581-æм аз|pl|1581|pnb|1581|pt|1581|qu|1581|ro|1581|ru|1581 год|rue|1581|sa|१५८१|sah|1581|scn|1581|sd|1581ع|se|1581|sh|1581.|shn|1581|si|1581|simple|1581|sk|1581|sl|1581|smn|1581|sq|1581|sr|1581|su|1581|sv|1581|sw|1581|ta|1581|tg|Соли 1581|th|พ.ศ. 2124|tk|1581|tl|1581|tly|1581|tr|1581|tt|1581 ел|uk|1581|ur|1581ء|uz|1581|vec|1581|vi|1581|vls|1581|wa|1581|war|1581|wuu|1581年|xmf|1581|yi|1581|zh|1581年|zh_min_nan|1581 nî|zh_yue|1581年|qid=Q6717}}) Tsuneharu Tamura was ordered by {{ill|Oda Nobunaga|Q171411|qid=Q171411}} to take the lead in the battle against {{ill|Takeda Katsuyori|cs|Kacujori Takeda|de|Takeda Katsuyori|eo|Takeda Katsuyori|es|Takeda Katsuyori|eu|Takeda Katsuyori|fa|تاکدا کاتسویوری|fr|Takeda Katsuyori|id|Takeda Katsuyori|it|Takeda Katsuyori|ja|武田勝頼|ko|다케다 가쓰요리|ms|Takeda Katsuyori|nl|Takeda Katsuyori|pl|Katsuyori Takeda|pt|Takeda Katsuyori|ro|Takeda Katsuyori|ru|Такэда Кацуёри|sr|Такеда Кацујори|th|ทาเกดะ คัตสึโยริ|tr|Takeda Katsuyori|uk|Такеда Кацуйорі|zh|武田勝賴|zh_min_nan|Takeda Katuyori|qid=Q662482}}, but he did not obey and committed seppuku, resulting in the destruction of the Tamura clan.<ref name="kamigami" />.
+
+In the {{ill|Edo period|Q184963|qid=Q184963}}, it was revered by the {{ill|Hachisuka clan|de|Hachisuka (Klan)|fa|خاندان هاچیسوکا|fr|Clan Hachisuka|hu|Hacsiszuka család|id|Klan Hachisuka|it|Clan Hachisuka|ja|蜂須賀氏|pt|Clã Hachisuka|ru|Хатисука (род)|zh|蜂須賀氏|qid=Q2975261|lt=Hachisuka family}}, the lord of {{ill|Tokushima Domain|Q3034557|qid=Q3034557}}, and {{ill|Genna|Q635245|qid=Q635245|lt=Genwa}} Obtained 10 {{ill|Koku|ar|كوكو|az|Koku|ca|Koku|cs|Koku|de|Koku|es|Koku|fa|ککو|fr|Koku|id|Koku|it|Koku|ja|石 (単位)|ko|섬 (단위)|lt|Koku|ms|Koku|nl|Koku|no|Koku|pl|Koku|pt|Koku|ro|Koku|ru|Коку|sk|Koku|sl|Koku|sr|Коку|sv|Koku|ta|கொக்கு (அளவு)|th|โคกุ (หน่วยวัด)|tr|Koku sistemi|uk|Коку (міра)|vi|Thạch (đơn vị đo lường)|zh|石 (容量單位)|zh_classical|石|qid=Q855048|lt=stone}} with the black seal letter <ref name="taikei" /> in 7th year ({{ill|1621|ab|1621|af|1621|als|1621|am|1621 እ.ኤ.አ.|an|1621|ar|1621|ary|1621|arz|1621|ast|1621|avk|1621|az|1621|azb|۱۶۲۱ (میلادی)|ban|1621|bcl|1621|be|1621|be_x_old|1621|bg|1621|bn|১৬২১|bpy|মারি ১৬২১|br|1621|bs|1621.|ca|1621|cdo|1621 nièng|ceb|1621|ckb|١٦٢١|crh|1621|cs|1621|cv|1621|cy|1621|da|1621|de|1621|diq|1621|el|1621|eml|1621|eo|1621|es|1621|et|1621|eu|1621|fa|۱۶۲۱ (میلادی)|fi|1621|fo|1621|fr|1621|frr|1621|fur|1621|fy|1621|ga|1621|gan|1621年|gcr|1621|gd|1621|gl|1621|hak|1621-ngièn|he|1621|hi|१६२१|hr|1621.|ht|1621 (almanak gregoryen)|hu|1621|hy|1621|hyw|1621 թուական|ia|1621|id|1621|ilo|1621|io|1621|is|1621|it|1621|ja|1621年|jv|1621|ka|1621|kaa|1621|kk|1621 жыл|kn|೧೬೨೧|ko|1621년|krc|1621 джыл|la|1621|lb|1621|lez|1621 йис|li|1621|lij|1621|lmo|1621|lt|1621 m.|lv|1621. gads|mai|१६२१|map_bms|1621|mdf|1621|mg|1621|mhr|1621|mi|1621|mk|1621|mr|इ.स. १६२१|mrj|1621 и|ms|1621|my|၁၆၂၁|mzn|۱۶۲۱|nah|1621|nap|1621|nds|1621|nds_nl|1621|new|सन् १६२१|nl|1621|nn|1621|no|1621|nrm|1621|nso|1621|oc|1621|or|୧୬୨୧|os|1621-æм аз|pa|1621|pl|1621|pnb|1621|pt|1621|qu|1621|ro|1621|ru|1621 год|rue|1621|sa|१६२१|sah|1621|scn|1621|sd|1621ع|se|1621|sh|1621.|shn|1621|simple|1621|sk|1621|sl|1621|smn|1621|sq|1621|sr|1621|stq|1621|su|1621|sv|1621|sw|1621|szl|1621|ta|1621|tg|Соли 1621|th|พ.ศ. 2164|tk|1621|tl|1621|tly|1621|tr|1621|tt|1621 ел|uk|1621|ur|1621ء|uz|1621|vec|1621|vi|1621|vls|1621|wa|1621|war|1621|wuu|1621年|xmf|1621|yi|1621|zh|1621年|zh_min_nan|1621 nî|zh_yue|1621年|qid=Q6812}}). In addition, the Ishigami clan served as a hereditary Shinto priest, and the shrine's rituals were administered by both the shrine family and the temple family, but the two groups have been in conflict several times.
+
+In the first year of {{ill|Kanbun (era)|es|Kanbun|fa|کانبون (دوره)|fr|Ère Kanbun|id|Kanbun (era)|ja|寛文|ko|간분|ru|Камбун (нэнго)|simple|Kanbun (era)|sr|Канбун (ера)|sv|Kanbun|tr|Kanbun (dönem)|zh|寬文|qid=Q1146228}} ({{ill|1661|ab|1661|af|1661|als|1661|am|1661 እ.ኤ.አ.|an|1661|ar|1661|ary|1661|arz|1661|ast|1661|avk|1661|az|1661|azb|۱۶۶۱ (میلادی)|ban|1661|bcl|1661|be|1661|be_x_old|1661|bg|1661|bn|১৬৬১|bpy|মারি ১৬৬১|br|1661|bs|1661.|ca|1661|cdo|1661 nièng|ceb|1661|ckb|١٦٦١|crh|1661|cs|1661|cv|1661|cy|1661|da|1661|de|1661|diq|1661|el|1661|eml|1661|eo|1661|es|1661|et|1661|eu|1661|fa|۱۶۶۱ (میلادی)|fi|1661|fo|1661|fr|1661|frp|1661|frr|1661|fur|1661|fy|1661|ga|1661|gan|1661年|gcr|1661|gd|1661|gl|1661|gv|1661|he|1661|hi|१६६१|hr|1661.|hsb|1661|ht|1661 (almanak gregoryen)|hu|1661|hy|1661|hyw|1661 թուական|ia|1661|id|1661|ilo|1661|io|1661|is|1661|it|1661|ja|1661年|jv|1661|ka|1661|kaa|1661|kk|1661 жыл|ko|1661년|krc|1661 джыл|ksh|Joohr 1661|la|1661|lb|1661|lij|1661|lmo|1661|lt|1661 m.|lv|1661. gads|mai|१६६१|map_bms|1661|mdf|1661|mg|1661|mhr|1661|mi|1661|mk|1661|mr|इ.स. १६६१|mrj|1661 и|ms|1661|my|၁၆၆၁|myv|1661 ие|mzn|۱۶۶۱|nah|1661|nap|1661|nds|1661|new|सन् १६६१|nl|1661|nn|1661|no|1661|nrm|1661|nso|1661|oc|1661|olo|1661|or|୧୬୬୧|os|1661-æм аз|pa|1661|pl|1661|pnb|1661|pt|1661|qu|1661|ro|1661|ru|1661 год|rue|1661|sa|१६६१|sah|1661|scn|1661|sd|1661ع|se|1661|sh|1661.|shn|1661|simple|1661|sk|1661|sl|1661|smn|1661|sq|1661|sr|1661|su|1661|sv|1661|sw|1661|szl|1661|ta|1661|te|1661|tg|Соли 1661|th|พ.ศ. 2204|tk|1661|tl|1661|tly|1661|tr|1661|tt|1661 ел|uk|1661|ur|1661ء|uz|1661|vec|1661|vi|1661|vls|1661|wa|1661|war|1661|wuu|1661年|xmf|1661|yi|1661|zh|1661年|zh_classical|一六六一年|zh_min_nan|1661 nî|zh_yue|1661年|qid=Q7005}}), our company's ``Two Pillars of Engi'' <ref name="taikei" /> was created. Since the Engi was read in front of the feudal lord and the envoys when they visited the shrine, a dispute arose over whether the shrine family or the temple family would serve. ``Gunke Monogatari'' includes a description of ``the only turmoil in Ichinomiya'' that lasted for six years during the Horeki era.{{ill|Hōreki|Q1194397|qid=Q1194397}} 2nd year ({{ill|1752|ab|1752|af|1752|als|1752|am|1752 እ.ኤ.አ.|an|1752|ar|1752|ary|1752|arz|1752|ast|1752|avk|1752|az|1752|azb|۱۷۵۲ (میلادی)|ba|1752 йыл|ban|1752|bar|1752|bcl|1752|be|1752|be_x_old|1752|bg|1752|bn|১৭৫২|bo|༡༧༥༢ལོ།|bpy|মারি ১৭৫২|br|1752|bs|1752.|ca|1752|cdo|1752 nièng|ceb|1752|ckb|١٧٥٢|co|1752|crh|1752|cs|1752|csb|1752|cv|1752|cy|1752|da|1752|de|1752|diq|1752|el|1752|eml|1752|eo|1752|es|1752|et|1752|eu|1752|fa|۱۷۵۲ (میلادی)|fi|1752|fo|1752|fr|1752|frp|1752|frr|1752|fur|1752|fy|1752|ga|1752|gag|1752|gan|1752年|gcr|1752|gd|1752|gl|1752|gv|1752|he|1752|hi|१७५२|hr|1752.|hsb|1752|ht|1752 (almanak gregoryen)|hu|1752|hy|1752|hyw|1752 թուական|ia|1752|id|1752|ilo|1752|io|1752|is|1752|it|1752|ja|1752年|jv|1752|ka|1752|kaa|1752|kk|1752 жыл|kn|೧೭೫೨|ko|1752년|krc|1752 джыл|ksh|Joohr 1752|la|1752|lb|1752|lez|1752 йис|li|1752|lij|1752|lmo|1752|lt|1752 m.|lv|1752. gads|mai|१७५२|map_bms|1752|mdf|1752|mg|1752|mhr|1752|mi|1752|min|1752|mk|1752|mr|इ.स. १७५२|mrj|1752 и|ms|1752|my|၁၇၅၂|myv|1752 ие|mzn|۱۷۵۲|nah|1752|nap|1752|nds|1752|new|सन् १७५२|nl|1752|nn|1752|no|1752|nrm|1752|nso|1752|oc|1752|olo|1752|or|୧୭୫୨|os|1752-æм аз|pam|1752|pl|1752|pnb|1752|pt|1752|qu|1752|ro|1752|ru|1752 год|rue|1752|sa|१७५२|sah|1752|scn|1752|sd|1752ع|se|1752|sh|1752.|shn|1752|simple|1752|sk|1752|sl|1752|smn|1752|sq|1752|sr|1752|su|1752|sv|1752|sw|1752|szl|1752|ta|1752|tg|Соли 1752|th|พ.ศ. 2295|tk|1752|tl|1752|tly|1752|tr|1752|tt|1752 ел|ug|1752 - يىلى|uk|1752|ur|1752ء|uz|1752|vec|1752|vi|1752|vls|1752|vo|1752|wa|1752|war|1752|wuu|1752年|xmf|1752|yi|1752|zea|1752|zh|1752年|zh_classical|一七五二年|zh_min_nan|1752 nî|zh_yue|1752年|qid=Q7618}})'s ``Gunke Monogatari'' reveals the existence of six shrine families who did not have a danke and held festivals by distributing the territory of Ichinomiya, and six temple priests at the end of Myokyo-ji Temple, which was a betto, and these six shrine families are thought to be Jingu temples.<ref name="kiso" /> However, according to ``A copy of the response letter with an addendum from Miyabo's husband'', five of the six shrine priests, Tozobo, Torinbo, Engyobo, Shinbo, and Jizobo, withdrew, leaving only Miyabo.
+
+{{ill|Bunsei|de|Bunsei|es|Bunsei|fa|بونسی (دوره)|fr|Ère Bunsei|ia|Bunsei|ja|文政|ko|분세이|ru|Бунсэй|simple|Bunsei|sr|Бунсеи|sv|Bunsei|tr|Bunsei|zh|文政|qid=Q1327119}} 8 ({{ill|1825|Q6997|qid=Q6997}}) From the description in "Awajikusa Volume 4", it is said that the Jinguji temple, which was also called {{ill|East Asian Yogācāra|Q349849|qid=Q349849}} and {{ill|Shingon Buddhism|bg|Шингон|bn|শিঙ্গোন বৌদ্ধধর্ম|ca|Shingon (budisme)|cs|Šingon|cy|Shingon|da|Shingon Skolen|de|Shingon-shū|eo|Ŝingono|es|Budismo shingon|et|Shingon|eu|Shingon|fa|شینگون|fi|Shingon|fr|Shingon|hu|Singon buddhizmus|id|Buddhisme Shingon|it|Buddismo Shingon|ja|真言宗|ko|진언종|mr|शिंगॉन बौद्ध|nl|Shingon|no|Shingon-shū|pl|Shingon|pt|Shingon|ro|Shingon|ru|Сингон|sh|Shingon budizam|sr|Šingon|sv|Shingon|th|ชิงงง|tr|Şingon Budizmi|uk|Секта Сінґон|vi|Chân ngôn tông|wuu|真言宗|zh|真言宗|zh_classical|真言宗|zh_min_nan|Chin-giân-chong|zh_yue|真言宗|qid=Q550182}}, was founded by Koji. (Japan)|Q1143910|Koji}} was converted to {{ill|Nichiren-shū|Q206611|qid=Q206611}} by Mr. Tamura in the first year ({{ill|1555|Q6579|qid=Q6579}}), and {{jali nk|Genroku|Q1325001}} From the description in ``A copy of the reply letter with an addendum from the priest of the temple priest'' dated August 12 ({{ill|1699|Q7710|qid=Q7710}}), it is known that shrine priests who did not comply with the conversion were expelled. For this reason, there is a theory that the Tamura clan had jurisdiction over Ichinomiya at the end of the medieval period<ref name="kiso" />.In {{ill|1870|Q7741|qid=Q7741}} ({{ill|Meiji era|Q3125096|qid=Q3125096}}3), {{ill|Myōdō Prefecture|Q9610752|qid=Q9610752}} decided to enshrine one deity, Izanagison, instead of two. In {{ill|1871|Q7746|qid=Q7746}} (Meiji 4), it was promoted to Kokuhei-chusha, and in {{ill|1885|Q7821|qid=Q7821}} (Meiji 18), it was promoted to {{ill|Q712534|lt=Kanpei Taisha}}. In {{ill|1932|Q18743|qid=Q18743}} ({{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}7), it was approved to enshrine Izanari as the enshrined deity, as described above.
+
+In {{ill|1948|ab|1948|af|1948|als|1948|am|1948 እ.ኤ.አ.|an|1948|ar|1948|ary|1948|arz|1948|ast|1948|av|1948|avk|1948|az|1948|azb|۱۹۴۸ (میلادی)|ba|1948 йыл|ban|1948|bar|1948|bat_smg|1948|bcl|1948|be|1948|be_x_old|1948|bg|1948|bh|1948|bjn|1948|bn|১৯৪৮|bpy|মারি ১৯৪৮|br|1948|bs|1948.|ca|1948|cdo|1948 nièng|ce|1948 шо|ceb|1948|ckb|١٩٤٨|co|1948|crh|1948|cs|1948|csb|1948|cv|1948|cy|1948|da|1948|de|1948|diq|1948|dsb|1948|el|1948|eml|1948|eo|1948|es|1948|et|1948|eu|1948|ext|1948|fa|۱۹۴۸|fi|1948|fiu_vro|1948|fo|1948|fr|1948|frp|1948|frr|1948|fur|1948|fy|1948|ga|1948|gag|1948|gan|1948年|gcr|1948|gd|1948|gl|1948|gn|1948|gv|1948|hak|1948-ngièn|he|1948|hi|१९४८|hif|1948|hr|1948.|hsb|1948|ht|1948 (almanak gregoryen)|hu|1948|hy|1948|hyw|1948 թուական|ia|1948|id|1948|ie|1948|ilo|1948|inh|1948 шу|io|1948|is|1948|it|1948|ja|1948年|jbo|1948moi|jv|1948|ka|1948|kaa|1948|kbp|1948|kk|1948 жыл|kn|೧೯೪೮|ko|1948년|krc|1948 джыл|ksh|Joohr 1948|ku|1948|kv|1948-ӧд во|kw|1948|la|1948|lb|1948|lez|1948 йис|li|1948|lij|1948|lld|1948|lmo|1948|ln|1948|lt|1948 m.|lv|1948. gads|mai|१९४८|map_bms|1948|mdf|1948|mg|1948|mhr|1948|mi|1948|min|1948|mk|1948|ml|1948|mn|1948 он|mr|इ.स. १९४८|mrj|1948 и|ms|1948|my|၁၉၄၈|myv|1948 ие|mzn|۱۹۴۸|nah|1948|nap|1948|nds|1948|nds_nl|1948|new|ई सं १९४८|nl|1948|nn|1948|no|1948|nrm|1948|nso|1948|oc|1948|olo|1948|or|୧୯୪୮|os|1948-æм аз|pa|1948|pam|1948|pap|1948|pl|1948|pms|1948|pnb|1948|pt|1948|qu|1948|ro|1948|roa_tara|1948|ru|1948 год|rue|1948|sah|1948 сыл|sc|1948|scn|1948|sco|1948|sd|1948ع|se|1948|sh|1948.|shn|1948|si|1948|simple|1948|sk|1948|sl|1948|smn|1948|so|1948|sq|1948|sr|1948|stq|1948|su|1948|sv|1948|sw|1948|szl|1948|ta|1948|te|1948|tet|1948|tg|Соли 1948|th|พ.ศ. 2491|tk|1948|tl|1948|tly|1948|tpi|1948|tr|1948|tt|1948 ел|ty|1948|udm|1948 ар|ug|1948 - يىلى|uk|1948|ur|1948ء|uz|1948|vec|1948|vi|1948|vls|1948|vo|1948|wa|1948|war|1948|wuu|1948年|xmf|1948|yi|1948|za|1948 nienz|zea|1948|zh|1948年|zh_classical|一九四八年|zh_min_nan|1948 nî|zh_yue|1948年|zu|1948|qid=Q5165}} (Showa 23), it was added to {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}} of {{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}.
+
+In {{ill|1954|Q18581|qid=Q18581}} (Showa 29), the name was changed from Izano Shrine to the current Izano Shrine.
+
+{{ill|1995|Q2068|qid=Q2068}} ({{ill|Heisei era|Q234510|qid=Q234510}}7) It suffered significant damage, including the collapse of the first torii gate in the {{ill|Damage by Great Hanshin earthquake|Q11392882|qid=Q11392882}} of {{ill|January 17|Q2264|qid=Q2264}}. The torii gate was rebuilt in November of the same year, with the format changed to {{ill|Torii|Q234731|qid=Q234731|lt=Shinmei Torii}}, with the dedication of {{ill|Ujiko|Q125562175|qid=Q125562175}}.
+
+There is a {{ill|fragrant wood|Q87216239|qid=Q87216239}} stone monument in the precincts.
+
+=== God level ===
+* {{ill|Ten'an|Q1075611|qid=Q1075611|lt=Ten'an}} January 27, 3rd year ({{ill|859|Q23897|qid=Q23897}}), from Mupin-kun 8th class to Ippin-kun 8th class ('{{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981}}') - Written as 'Isanagi no Mikoto'.
+
+=== Precincts ===
+* Main shrine - In {{ill|1879|Q7783|qid=Q7783}} ({{ill|Meiji era|Q3125096|qid=Q3125096}} 12 years), it was rebuilt about 10 meters ahead of its current location, but in {{ill|1881|ab|1881|af|1881|als|1881|am|1881 እ.ኤ.አ.|an|1881|ar|1881|ary|1881|arz|1881|ast|1881|avk|1881|az|1881|azb|۱۸۸۱ (میلادی)|ba|1881 йыл|ban|1881|bar|1881|bat_smg|1881|bcl|1881|be|1881|be_x_old|1881|bg|1881|bn|১৮৮১|bpy|মারি ১৮৮১|br|1881|bs|1881.|ca|1881|cdo|1881 nièng|ce|1881 шо|ceb|1881|ckb|١٨٨١|crh|1881|cs|1881|csb|1881|cv|1881|cy|1881|da|1881|de|1881|diq|1881|el|1881|eml|1881|eo|1881|es|1881|et|1881|eu|1881|fa|۱۸۸۱|fi|1881|fiu_vro|1881|fo|1881|fr|1881|frp|1881|frr|1881|fur|1881|fy|1881|ga|1881|gan|1881年|gcr|1881|gd|1881|gl|1881|gn|1881|gv|1881|hak|1881-ngièn|he|1881|hi|१८८१|hif|1881|hr|1881.|hsb|1881|ht|1881 (almanak gregoryen)|hu|1881|hy|1881|hyw|1881 թուական|ia|1881|id|1881|ilo|1881|io|1881|is|1881|it|1881|ja|1881年|jv|1881|ka|1881|kaa|1881|kk|1881 жыл|kn|೧೮೮೧|ko|1881년|krc|1881 джыл|ksh|Joohr 1881|ku|1881|kv|1881-ӧд во|la|1881|lb|1881|lez|1881 йис|li|1881|lij|1881|lld|1881|lmo|1881|lt|1881 m.|lv|1881. gads|mai|१८८१|map_bms|1881|mdf|1881|mg|1881|mhr|1881|mi|1881|min|1881|mk|1881|ml|1881|mr|इ.स. १८८१|mrj|1881 и|ms|1881|my|၁၈၈၁|myv|1881 ие|mzn|۱۸۸۱|nah|1881|nap|1881|nds|1881|nds_nl|1881|new|ई सं १८८१|nl|1881|nn|1881|no|1881|nrm|1881|nso|1881|oc|1881|olo|1881|or|୧୮୮୧|os|1881-æм аз|pa|1881|pap|1881|pl|1881|pnb|1881|pt|1881|qu|1881|ro|1881|ru|1881 год|rue|1881|sa|१८८१|sah|1881|sc|1881|scn|1881|sd|1881ع|se|1881|sh|1881.|shn|1881|si|1881|simple|1881|sk|1881|sl|1881|smn|1881|sq|1881|sr|1881|stq|1881|su|1881|sv|1881|sw|1881|szl|1881|ta|1881|te|1881|tet|1881|tg|Соли 1881|th|พ.ศ. 2424|tk|1881|tl|1881|tly|1881|tr|1881|tt|1881 ел|udm|1881 ар|uk|1881|ur|1881ء|uz|1881|vec|1881|vi|1881|vls|1881|vo|1881|wa|1881|war|1881|wuu|1881年|xmf|1881|yi|1881|za|1881 nienz|zea|1881|zh|1881年|zh_classical|一八八一年|zh_min_nan|1881 nî|zh_yue|1881年|qid=Q7808}} (Meiji 14 years), a mausoleum, which was a forbidden area behind the main shrine, was created and relocated on top of it. It is a Sangen shrine {{ill|Nagare-zukuri|Q210684|qid=Q210684}} and is connected to the shrine hall by a roof.
+* The Hall - Built in 1881 (Meiji 14).
+* Transept
+* Chumon - Built in 1881 (Meiji 14).
+* Corridor
+* Purification Hall/Shinsenden
+* Worship Hall - Rebuilt in {{ill|1882|Q7812|qid=Q7812}} (Meiji 15). It has a copper plate roof and doubles as a dance hall.
+* Mikoshi Storehouse - Built in {{ill|Bunka|Q1373146|qid=Q1373146|lt=Bunka}}5 ({{ill|1808|Q6914|qid=Q6914}}) by {{ill|Tokushima Domain|Q3034557|qid=Q3034557}} lord {{ill|Hachisuka Haruaki|Q3125457|qid=Q3125457}}.
+* {{ill|Hirohito|Q34479|qid=Q34479}}'s own {{ill|Camphora officinarum|ab|Акамфараҵла|af|Kanferboom|an|Cinnamomum camphora|ar|كافور (نبات)|arz|كافور (نبات)|ast|Cinnamomum camphora|az|Camphora officinarum|be|Камфоравае дрэва|bg|Камфорово дърво|bn|কর্পূর গাছ|ca|Camforer|ceb|Dalapot|cs|Kafrovník lékařský|da|Kamfertræ|de|Kampferbaum|dv|ކާފޫރު ގަސް|eo|Kamforarbo|es|Cinnamomum camphora|eu|Kanforrondo|fa|درخت کافور|fi|Kamferipuu|fr|Camphrier|frr|Kamferbuum|gl|Alcanforeiro|hi|कपूर|hr|Kamforovo drvo|hsb|Kamferowy štom|hu|Kámforfa|hy|Կամֆորայի ծառ|id|Camphora officinarum|it|Cinnamomum camphora|ja|クスノキ|ka|ქაფურის ხე|kk|Камфора ағашы|kn|ಕರ್ಪೂರ ಮರ|ko|녹나무|ku|Dara kamfûrê|la|Cinnamomum camphora|mg|Camphora officinarum|ml|കർപ്പൂരം|ms|Kapur tohori|my|ပရုတ်ပင်|ne|कपुरको रूख|nl|Kamferboom|nn|Kamfertre|no|Kamfertre|oc|Camfrièr|or|କର୍ପୁର|pa|ਕਪੂਰ (ਦਰੱਖ਼ਤ)|pl|Cynamonowiec kamforowy|pt|Cinnamomum camphora|pwn|drakes|qu|Alkachu|ru|Коричник камфорный|sl|Kafrovec|sv|Kamferträd|ta|கற்பூர மரம்|te|సిన్నామోనం కాంఫొర|th|การบูร (พรรณไม้)|tr|Kâfur ağacı|uk|Камфорне дерево|vi|Long não (cây)|war|Cinnamomum camphora|za|Gaucah|zh|樟树|zh_min_nan|Chiuⁿ-á|zh_yue|樟|qid=Q158722|lt=campus}} - It was planted on November 30th, {{ill|1922|Q2165|qid=Q2165}} ({{ill|Taishō era|ar|فترة تايشو|br|Oadvezh Taishō|ca|Període Taishō|cs|Období Taišó|de|Taishō-Zeit|eo|Taiŝo-epoko|es|Era Taishō|et|Taishō ajastu|eu|Taishō aroa|fa|دوره تایشو|fi|Taishō-kausi|fr|Ère Taishō|he|תקופת טאישו|hi|ताइशो युग|hu|Taisó-kor|hy|Տայսյո|id|Zaman Taishō|it|Periodo Taishō|ja|大正|ko|다이쇼 시대|lt|Taišio laikotarpis|lv|Taišo periods|ml|തായ്ഷോ കാലഘട്ടം|ms|Zaman Taishō|nl|Taishoperiode|no|Taishō-perioden|pl|Taishō (okres)|pt|Período Taishō|ro|Perioada Taishō|ru|Тайсё|sh|Taishō period|simple|Taishō era|sr|Таишо период|sv|Taishō|th|ยุคไทโช|tl|Panahong Taishō|tr|Taişo Dönemi|uk|Період Тайсьо|uz|Taishō davri|vi|Thời kỳ Đại Chính|zh|大正|zh_classical|大正 (年號)|zh_min_nan|Tāi-chèng|zh_yue|大正 (日本年號)|qid=Q329174}}11) by Emperor Showa, who was still {{ill|Crown prince|Q207293|qid=Q207293}}.
+* {{ill|Ise Grand Shrine|Q687168|qid=Q687168|lt=Ise Kodai Shrine}} Distant Worship Hall - Ise Shrine is at the same latitude as Jingu Shrine, and is located due east from here.* Higashijinmon - Built during the Edo period by the Hachisuka clan, the lord of the Tokushima domain. It was renovated in the first year of {{ill|Genroku|Q1325001|qid=Q1325001}} ({{ill|1688|Q7671|qid=Q7671}}). The oldest building in the shrine.
+* {{ill|Kiichiro Higuchi|Q974210|qid=Q974210}}{{ill|Lieutenant general|Q152951|qid=Q152951}} Statue
+* Memento Hall
+* Nishijinmon - Built during the Edo period by the Hachisuka clan, the lord of the Tokushima domain. It was renovated in the first year of Genroku (1688). The oldest building in the shrine.
+* Shrine office
+* VIP hall
+* Sanshuden
+* East Award Office Building - Built in {{ill|1998|Q2089|qid=Q2089}} ({{ill|Heisei era|Q234510|qid=Q234510}}10).
+*West Award Office Building - Built in 1998 (Heisei 10).
+* Main gate (Omote Shinmon) - Rebuilt in {{ill|1883|Q7816|qid=Q7816}} (Meiji 16). It used to be Zuishinmon.
+*Tea room “Asuan”
+* Hojo-no-Kamiike Pond - This is said to be the remains of a moat that was said to have been centered around the imperial mausoleum at the Yugu ruins. A {{ill|Common carp|Q81110|qid=Q81110|lt=carp}} is released to pray for life, and a {{ill|Turtle|Q223044|qid=Q223044|lt=turtle}} is released to pray for recovery.
+* Sun Road Signpost - A monument that shows the relationship between the movement of the {{ill|Sun|Q525|qid=Q525}} and famous shrines centered around Izanagi Shrine.
+<gallery>
+Izanagi-jingu, honden.jpg|Main shrine
+Izanagi-jingu, haraeden.jpg|Haraeden
+Izanagi-jingu, Main Gate 001.jpg|OmotejinmonIzanagi-jingu, Sacred Pond 001.jpg|Sacred Pond
+Izanagi-jingu, torii.jpg|Torii in the precincts
+</gallery>
+
+=== Setsusha ===
+* Left and right shrines - Deities enshrined: {{ill|Amaterasu|abstract|Q455602|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be|Аматэрасу|be_x_old|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tok|jan sewi suli Amatelasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|qid=Q455602|lt=Amaterasu Omikami}}, {{ill|Tsukuyomi-no-Mikoto|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|rsk|Цукуйоми|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh|月讀|zh_min_nan|Tukuyomi|qid=Q595520|lt=Tsukuyomison}}
+* Kashima Shrine/Sumiyoshi Shrine - Enshrined as the god of protection of agriculture and good luck and long life<ref name=":0">According to the local information board. </ref>.
+* Settsu Shrine/Kama Shrine - Guardian deity of sake brewing and brewing. <ref name=":0" /> is worshiped as the god of warding off disaster and fire protection.
+* Iwakusu Shrine - Enshrined deity: {{ill|Hiruko|Q1067028|qid=Q1067028|lt=Ebisu no Mikoto}}. It is enshrined at the base of a large camphor tree (designated by Hyogo Prefecture as a natural monument) that is approximately 900 years old. It is said to be the god of childbirth and safe childbirth. It has been enshrined since the middle of the {{ill|Heian period|Q193292|qid=Q193292}}.
+* Awaji Soreisha Shrine - Enshrined deity: Over 8,000 spirits of enlightened people, wise men, and people of merit from {{ill|Awaji Island|ar|أواجي (جزيرة)|az|Avaci adası|bcl|Isla nin Awaji|be|Авадзі (востраў)|bg|Аваджи (остров)|bn|আয়াজি দ্বীপ|ca|Illa d'Awaji|ceb|Awaji Shima|cs|Awadži|da|Avaji|de|Awaji-shima|el|Αβάτζι|eo|Aŭaĝi|es|Isla Awaji|et|Awaji saar|eu|Awaji uhartea|fa|جزیره آواجی|fi|Awaji|fr|Awaji-shima|gl|Illa de Awaji|he|אוואג'י (אי)|hi|अवाजी द्वीप|hy|Ավաձի (կղզի)|id|Pulau Awaji|it|Isola Awaji|ja|淡路島|ko|아와지섬|la|Insula Awaji|lb|Awaji-shima|lt|Avadžis|nl|Awaji (eiland)|pl|Awaji (wyspa)|pt|Ilha Awaji|ro|Insula Awaji|ru|Авадзи (остров)|sl|Avadži (otok)|sv|Awaji|tg|Ҷазираи Авадзӣ|th|เกาะอาวาจิ|tr|Awaji Adası|uk|Авадзі|vi|Awaji (đảo)|wuu|淡路岛|zh|淡路島|qid=Q504373}}. {{ill|1876|Q7766|qid=Q7766}} (Meiji 9) Built.	
+* Yeonju Palace
+* Outside company
+** Hama Shrine (Hamanomiya) - Enshrined deity: {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanamison}}, {{ill|Izanami|Q682306|qid=Q682306|lt=Izanamison}}. Sessha.
+*** Otoshi Ninja Shrine - Deity enshrined: {{ill|Oogotooshionokami|ja|大事忍男神|zh|大事忍男神|qid=Q10933447}}
+*** {{ill|sex worship|Q11072719|qid=Q11072719|lt=Yin Yang Stone}}
+<gallery>Izanagi-jingu, Auxiliary Kamado-jinja and Neno-jinja 001.jpg|Kamado Shrine/Neno Shrine
+Izanagi-jingu, Sumiyoshi-jinja and Kashima-jinja.jpg|Sumiyoshi Shrine/Kashima Shrine
+Izanagi-jingu, Sau-jinja.jpg|Left and right shrines
+Izanagi-jingu, Iwakusu-jinja.jpg|Iwakusu Shrine
+Izanagi-jingu, Auxiliary Soreisha Shrine 001.jpg|Awaji Soreisha Shrine
+Izanagi-jingu, Hama-jinja, shaden.jpg|Hama Shrine (Hamanomiya)
+</gallery>
+
+=== Cultural assets ===
+
+=== Hyogo Prefecture designated natural monument ===
+[[File:Izanagi-jingu, kusu.jpg|thumb|200px|right|{{center|couple couple}}]]
+* Couple Kusu at Izano Shrine - Designated on March 9, 1973 <ref>{{Cite web|Japanese book|url=https://www.hyogo-c.ed.jp/~shabun-bo/gyouseisituhp/top/23kenshitei.pdf |title=List of prefecture-designated cultural properties |publisher=Hyogo Prefectural Board of Education Cultural Properties Division |accessdate=2016-01-22}}</ref>.
+
+=== Awaji City designated tangible cultural property ===
+* 9 divine statues
+
+=== Local information ===
+; Location
+:* {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Awaji, Hyōgo|Q373107|qid=Q373107}}Taga 740
+; Transportation access
+:* Bus: {{ill|Awaji Kōtsū|Q11559804|qid=Q11559804}}, {{ill|Shinki Bus|Q11589421|qid=Q11589421}} (Sannomiya/Nishiura Line {{ill|highway bus|Q3182239|qid=Q3182239}}) and {{ill|Awajin Awahime Bus|Q17192440|qid=Q17192440}} (Awajin Awahime Bus) 1 (clockwise)/2 (counterclockwise)/11 (southern sightseeing tour) {{ill|Route|Q11604910|qid=Q11604910|lt=Route}} Get off at "Izano Jingu-mae" bus stop (short walk after getting off)
+; around
+:* {{ill|Hyogo Prefectural Awaji Kaori no Park|Q11393062|qid=Q11393062}} - Adjacent.
+
+=== Footnotes ===
+{{Footnote help}}
+{{reflist}}
+
+=== References ===
+* {{Cite book|Japanese book|editor={{ill|Rizō Takeuchi|Q4262779|qid=Q4262779}} |title=Heian Ibun |volume=Ancient Documents Volume 7 |publisher={{ill|Tōkyōdō Shuppan|Q11524645|qid=Q11524645}} |date=1963-10 |id={{JP number|73017843}} |ref=harv}}
+* {{Cite book|Japanese book|editor={{ill|Katsumi Kuroita|Q3894478|qid=Q3894478}}, Kokushi Taikei Editorial Association |title=Kokushi Taikei |volume=Volume 27 {{ill|Shinshō Kyakuchokufushō|Q11502312|qid=Q11502312}}・{{ill|Hōsō Ruirin|Q11555203|qid=Q11555203}}・{{ill|Ruijufusenshō|Q11665188|qid=Q11665188}}・{{ill|Zoku Sajōshō|Q11607072|qid=Q11607072}}・{{ill|Besshūfusenshō|Q11396822|qid=Q11396822}} |publisher={{ill|Yoshikawa Kōbunkan|Q4346755|qid=Q4346755}} |date=1965-01 |id={{JP number|50003574}} |ref=harv}}
+* {{Cite book|Japanese book|editor=Kokushi Taikei Editorial Committee |title=Kokushi Taikei|volume=Volume 7 {{ill|Kojiki|Q813031|qid=Q813031}}・{{ill|Kujiki|ar|كجيكي|fa|کوجیکی (سندای کوجی هونگی)|fr|Kujiki|id|Kujiki|it|Kujiki|ja|先代旧事本紀|ko|선대구사본기|pt|Kujiki|ru|Кудзики|uk|Кудзікі|vi|Cựu sự kỷ|zh|先代舊事本紀|qid=Q2716751}}・{{ill|Shintō Gobusho|Q11590920|qid=Q11590920}} |publisher=Yoshikawa Kobunkan |date=1966-01 |id={{JP number|50003554}} |ref=harv}}* {{Cite book|Japanese book|editor=Kokushi Taikei, Kokushi Taikei Editorial Association |title=Kokushi Taikei |volume=Volume 4 {{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981}} |publisher=Yoshikawa Kobunkan |date=1966-04 |id={{JP number|50003551}} |ref=harv}}
+* {{Cite book|Japanese book|editor=Kokushi Taikei Editorial Association |title=Kokushi Taikei |volume=Volume 1 {{ill|Nihon Shoki|Q813935|qid=Q813935}}First part |publisher=Yoshikawa Kobunkan |date=1966-12 |id={{JP number|50003547}} |ref=harv}}
+* {{Cite book|Japanese book|editor=Rizo Takeuchi |title=Kamakura Ibun |volume=Ancient Documents Volume 5 |publisher=Tokyodo Publishing |date=1973-09 |id={{JP number|73017866}} |ref=harv}}
+* {{Cite book|Japanese book|author=Ken Matsumae |authorlink=Ken Matsumae |title=Gods of Japan |publisher={{ill|Chuokoron-Shinsha|Q996095|qid=Q996095}} |series={{ill|Chūkō Shinsho|Q11363038|qid=Q11363038}} |date=1974-09 |id={{JP number|74009565}} |ref=harv}}* {{Cite book|Japanese book|editor=Hyogo Prefectural History Editorial Committee |title=Hyogo Prefectural History |volume=Historical Materials Edition Medieval 1 |publisher=Hyogo Prefecture |date=1983-11 |id={{JP number|84033176}} |ref=harv}}
+* {{Cite book|Japanese book|editor={{ill|Ken'ichi Tanigawa|de|Tanigawa Ken’ichi|ja|谷川健一|qid=Q2392596}} |title=Japanese Gods -Shrines and Sacred Sites- |volume=3 Settsu, Kawachi, Izumi, Awaji |publisher={{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}} |date=1984-08 |id={{JP number|84054243}} |ref=harv}}
+* {{Cite book|Japanese book|editor=Shinto Taikei Compilation Association |title=Shinto Taikei |volume=Shrine Edition 41 Kii/Awaji Province |publisher=Shinto Taikei Compilation Association |date=1987-09 |id={{JP number|88000195}} |ref=harv}}
+* {{Cite book|Japanese book|editor=Medieval Countries Ichinomiya System Study Group |title=Basic Research on Medieval Countries Ichinomiya System |publisher=Iwata Shoin |date=2000-02 |isbn=4-87294-170-5 |ref=harv}}
+* {{Cite book|Japanese book|editor=The Nation's No. 1 Shrine Association |title=Official Guidebook Nationwide's No. 1 Shrine Tour |publisher=The Nation's No. 1 Shrine Association |date=2008-12 |id= |ref=harv}}
+
+=== External link ===
+{{Commonscat|Izanagi-jingu}}
+* [https://kuniuminoshima.jp/ Izanagi Shrine] - Official website
+* [http://www.hyogo-jinjacho.com/data/6328110.html Izanagi Shrine] - Hyogo Prefectural Shrine Agency
+* [http://21coe.kokugakuin.ac.jp/db/jinja/530001.html Awaji Isanaki Shrine] - Kokugakuin University 21st Century COE Program “Shinto/Shrine Historical Materials Collection”
+
+{{Shinto horizontal}}
+{{Normdaten}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Izanagi Shrine]][[Category:Shikinaisha|Izanagi Shrine]][[Category:jingū]]
+[[Category:Myōjin Taisha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awaji Province]]
+[[Category:Shinto shrines in Hyōgo Prefecture]]
+[[Category:淡路市の歴史]]
+[[Category:淡路市の建築物]]
+[[Category:Myōjin Taisha]]
+[[Category:Shikinaisha in Awaji Province]]
+[[Category:Ichinomiya]]
+[[Category:Kanpei Taisha]]
+[[Category:Beppyo shrines]]
+[[Category:Awaji Province]]
+[[Category:Japan Heritage]]
+<!-- [git-synced 2026-06-07] DUPLICATE-MERGE partner: this page shares a Wikidata item with another shinto page (see queue.md merge list). Synced so both sides are visible for a content-aware merge; canonical title prefers the "Jingū"/proper form over romanised variants. Do NOT blind-redirect — merge content first. -->
+[[Category:Git synced pages]]
+[[Category:Pages git synced to resolve interlanguage and interwiki links]]

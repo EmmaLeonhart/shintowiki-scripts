@@ -1,0 +1,91 @@
+{{afc comment|Wikidata entry [[d:Q11450714]]
+
+[[:ja:安房国の式内社一覧]]
+
+[[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|talk]]) 21:27, 16 February 2026 (UTC)}}
+This is a list of Shikinaisha in [[Awa Province (Chiba)]]. That is the shrines in the [[Engishiki Jinmyōchō]] in the province.
+
+The Engishiki Jinmyōchō counts 6 Shikinaisha in the province – 4 Shikinai Shosha and 2 Shikinai Taisha.
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Candidates !! Notes !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Awa District, Chiba|ceb|Awa-gun (distrito sa Hapon)|fa|شهرستان آوا، چیبا|fr|District d'Awa|id|Distrik Awa, Chiba|it|Distretto di Awa|ja|安房郡|ko|아와군|pl|Powiat Awa|ru|Ава (уезд)|simple|Awa District, Chiba|th|อำเภออาวะ (จังหวัดชิบะ)|uk|Повіт Ава (Тіба)|zh|安房郡|qid=Q1153597|lt=Awa district}}
+| {{ill|Awa Shrine|abstract|Q705547|fr|Awa-jinja|ja|安房神社|zh|安房神社|qid=Q705547|lt=Awa Shrine}}
+| {{ill|Kanpei-sha|simple|Kanpei-sha (Engishiki Jinmyocho)|qid=Q135160338|lt=Kanpei}} ({{ill|Shrines receiving Tsukinami-sai and Niiname-sai offerings|qid=Q135009132|lt=Tsukinami}}{{efn|gets offerings for the yearly {{ill|Niiname-no-Matsuri|de|Niiname-sai|fr|Niiname-no-Matsuri|id|Niiname-no-Matsuri|ja|新嘗祭|ko|신상제 (11월)|simple|Niiname-no-Matsuri|qid=Q11501518}} and the monthly {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|Tsukinami-no-Matsuri|qid=Q11516161}}.}})
+| {{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}
+| Firmly identified
+| {{ill|Ichinomiya|qid=Q1656379|lt=ichinomiya}}
+| {{coord|34.922224|139.836581|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181732 DB]
+|-
+| rowspan="2" | {{ill|Awa District, Chiba|ceb|Awa-gun (distrito sa Hapon)|fa|شهرستان آوا، چیبا|fr|District d'Awa|id|Distrik Awa, Chiba|it|Distretto di Awa|ja|安房郡|ko|아와군|pl|Powiat Awa|ru|Ава (уезд)|simple|Awa District, Chiba|th|อำเภออาวะ (จังหวัดชิบะ)|uk|Повіт Ава (Тіба)|zh|安房郡|qid=Q1153597|lt=Awa district}}
+| rowspan="2" | {{ill|Mimeno-amehirinohimeno- Shrine|qid=Q135039751|lt=Mimeno-amehirinohimeno- Shrine}}
+| rowspan="2" | {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}}
+| rowspan="2" | {{ill|Shikinai Taisha|ja|式内大社|simple|Shikinai Taisha|qid=Q134917288}}
+| {{ill|Susaki Shrine|ja|洲崎神社|simple|Susaki Shrine|qid=Q11556513|lt=Sunosaki Shrine}}
+| {{ill|Ichinomiya|qid=Q1656379|lt=ichinomiya}}
+| {{coord|34.968122|139.758306|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181733 DB]
+|-
+| {{ill|Sunomiya Shrine|ja|洲宮神社|qid=Q11556507|lt=Sunomiya Shrine}}
+| —
+| {{coord|34.952650|139.838525|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181733 DB]
+|-
+| style="background-color:#ffdddd;"| {{ill|Asai District, Chiba|ja|朝夷郡|simple|Asai District, Chiba|qid=Q4803406|lt=Asai district}}
+| style="background-color:#ffdddd;"| {{ill|Shimotate Matsubara Shrine|ja|下立松原神社|qid=Q11361262|lt=Shimotate Matsubara Shrine}}
+| style="background-color:#ffdddd;"| {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}}
+| style="background-color:#ffdddd;"| {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+| style="background-color:#ffdddd;"| Firmly identified
+| style="background-color:#ffdddd;"| —
+| style="background-color:#ffdddd;"| {{coord|34.915326|139.867849|display=inline}}
+| style="background-color:#ffdddd;"| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181736 DB]
+|-
+| rowspan="2" | {{ill|Asai District, Chiba|ja|朝夷郡|simple|Asai District, Chiba|qid=Q4803406|lt=Asai district}}
+| rowspan="2" | {{ill|Nakoshinoyamano Shrine|qid=Q135039752|lt=Nakoshinoyamano Shrine}}
+| rowspan="2" | {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}}
+| rowspan="2" | {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+| {{ill|Nakoshiyama Shrine|lt=Nakoshiyama Shrine|qid=Q135069577}}
+| —
+| {{coord|35.056172|139.953395|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181735 DB]
+|-
+| {{ill|Nakoshiyama Shrine (Awa Province)|lt=Nakoshiyama Shrine (Awa Province)|qid=Q135069580}}
+| —
+| {{coord|35.016896|139.954044|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181735 DB]
+|-
+| style="background-color:#ffdddd;"| {{ill|Asai District, Chiba|ja|朝夷郡|simple|Asai District, Chiba|qid=Q4803406|lt=Asai district}}
+| style="background-color:#ffdddd;"| {{ill|Shimotate Matsubara Shrine|ja|下立松原神社|qid=Q11361262|lt=Shimotate Matsubara Shrine}}
+| style="background-color:#ffdddd;"| {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}}
+| style="background-color:#ffdddd;"| {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+| style="background-color:#ffdddd;"| Firmly identified
+| style="background-color:#ffdddd;"| —
+| style="background-color:#ffdddd;"| {{coord|34.915326|139.867849|display=inline}}
+| style="background-color:#ffdddd;"| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181736 DB]
+|-
+| {{ill|Asai District, Chiba|ja|朝夷郡|simple|Asai District, Chiba|qid=Q4803406|lt=Asai district}}
+| {{ill|Takabe Shrine|lt=Takabe Shrine|ja|高家神社|sv|Takabe-jinja|zh|高家神社|qid=Q11669186}}
+| {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei}}
+| {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+| Firmly identified
+| —
+| {{coord|34.962569|139.949649|display=inline}}
+| [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181737 DB]
+|}
+
+== Shikigeisha (式外社) ==
+''(none listed)''
+
+== References ==
+<references group="lower-alpha"/>
+{{translated page|ja|安房国の式内社一覧|version=56551073|comment=Imported full ja history}}
+{{List of Shikinaisha}}
+{{wikidata link|Q11450714|ja|安房国の式内社一覧|grok=none|check_date=2026-05-31}}
+[[Category:Shikinaisha in Awa Province (Chiba)]]
+[[Category:Lists of Shikinaisha by location]]
+<!-- [git-synced 2026-06-07] DUPLICATE-MERGE partner: this page shares a Wikidata item with another shinto page (see queue.md merge list). Synced so both sides are visible for a content-aware merge; canonical title prefers the "Jingū"/proper form over romanised variants. Do NOT blind-redirect — merge content first. -->
+[[Category:Git synced pages]]
+[[Category:Pages git synced to resolve interlanguage and interwiki links]]

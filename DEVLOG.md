@@ -6,6 +6,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Work-loop (:03): examined the 10 merge pairs, pulled partners, escalated decision
+**Files:** `git_synced/` (10 new partner pages), `git_synced/Open questions.wiki`, `queue.md`
+
+Took the merge-cases queue item. Examined all 10 QID-overlap pairs (content size +
+redirect status) before touching anything — found they're **substantial real
+articles on both sides**, not stub+article: e.g. `Kehi Jingū` 21k ↔ `Kehi Shrine`
+**100k**; `Izanagi Jingu` 8k ↔ `Izanagi Jingū` 60k; `无邪志国造` 16k ↔ `Musashi no
+Kuni no Miyatsuko` 7k. Several have an ambiguous canonical (two romanisations). A
+blind redirect would destroy real content, so I did NOT auto-merge (hard rails:
+won't do a content merge I can't verify is clean). Safe progress: pulled all 10
+partner pages into `git_synced/` + tagged (both sides now synced/visible, per
+Emma's "both have to be synced to merge"), with a do-not-blind-redirect notice on
+each. Escalated decision B on [[Open questions]] with the data.
+
 ### Clobber audit + recovery; 2 more interlang QIDs filled
 **Files:** `git_synced/Main Page.wiki`, `git_synced/{Ibaraki no Kuni no Miyatsuko,
 Tenso Shrine}.wiki`, `shinto_miraheze/audit_git_synced_clobbers.py` (new), `queue.md`

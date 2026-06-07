@@ -1,0 +1,62 @@
+
+{{Infobox person
+| name = Otoyo no Mikoto
+| image = 
+| image_size = 
+| caption = 
+| era = [[Kofun period]]
+| birth_date = Unknown
+| death_date = Unknown
+| renamed = 
+| other_names = Kotoyo no Mikoto, Koto no Mikoto
+| posthumous_name = 
+| deity_name = 
+| Buddhist_name = 
+| burial_place = Possibly {{ill|Shiratorizuka Kofun (Nagoya)|ja|白鳥塚古墳 (名古屋市)|qid=Q11580550|lt=Shiratori-zuka Kofun}}
+| Rank = [[Kokuzō]]
+| lord = Possibly [[Emperor Keikō]]
+| clan = [[Owari clan]]
+| parents = 
+| siblings = 
+| spouse = [[Mashikito Hime]]
+| children = {{ill|Takeinadane|fr|Takeinadane|ja|建稲種命|qid=Q11486691}}|notable_facts =| gender = {{ill|Male (gender)|ar|ذكر|diq|Lac|eo|Malino|es|Masculino|fr|Sexe masculin|ha|Namiji|id|Lelaki|kaj|A̱jjwa|new|बायचिं|pt|Masculino|scn|Masculiddu|sk|Mužské pohlavie|tok|mije kon|qid=Q6581097}}
+| father = {{ill|Konui no Mikoto|qid=Q110930790}}; {{ill|Awayawake no Mikoto|qid=Q110930820}}; {{ill|Taketahori no Mikoto|ja|建多乎利命|qid=Q97706292}}
+}}
+
+'''Otoyo no Mikoto''' (乎止与命) was a [[Kofun period]] [[Kuni no miyatsuko|local chieftain]] and one of the [[Owari clan|Owari Kokuzō]].
+
+== Overview ==
+In the ''[[:en:Kokuzō Hongi|Kokuzō Hongi]]'', he is referred to as '''Kotoyo no Mikoto''', while in the ''{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}}'', he is recorded as '''Koto no Mikoto'''<ref>"Kawachi Province, Kami-betsu, Tenson, Owari no Muraji" in the ''Shinsen Shōjiroku'', Kōnin 6 (815).</ref>.
+
+The ''Kokuzō Hongi'' states that he was appointed as the [[Owari clan|Kokuzō of Owari Province]] during the reign of {{ill|Emperor Seimu|ar|الإمبراطور سيمو|arz|الامبراطور سيمو|azb|سیمو (ایمپیراتور)|ca|Seimu|cs|Seimu|de|Seimu|es|Seimu Tennō|fa|امپراتور سیمو|fi|Seimu|fr|Seimu|hr|Seimu|hu|Szeimu japán császár|id|Kaisar Seimu|it|Seimu|ja|成務天皇|ka|სეიმუ|ko|세이무 천황|nl|Seimu|pl|Seimu|pt|Seimu|ru|Император Сэйму|sh|Car Seimu|simple|Emperor Seimu|sl|Cesar Sejmu|sv|Seimu|th|จักรพรรดิเซมุ|tl|Emperador Seimu|tr|Seimu (imparator)|uk|Імператор Сейму|uz|Imperator Seimu|vi|Thiên hoàng Seimu|yo|Emperor Seimu|zh|成務天皇|zh_min_nan|Seimu Thian-hông|zh_yue|成務天皇|qid=Q316672|lt=Emperor Seimu}}.
+
+His son, [[Takeinadane]], succeeded him as the Owari Kokuzō, and his daughter, [[Miyazu-hime]], became the wife of {{ill|Yamato Takeru|en|Yamato Takeru|qid=Q461258|lt=Yamato Takeru}}. The {{ill|Hikami Anego Shrine|ja|氷上姉子神社|qid=Q11549548}} in {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture}} enshrines [[Miyazu-hime]], with a tradition linking it to the residence of Otoyo no Mikoto.
+
+==Genealogy==
+{{User:Immanuelle/Generations of Watatsumi}}
+
+== Notes ==
+{{Reflist}}
+== See Also ==
+* [[Kokuzō]]
+* {{ill|Yamato Takeru|en|Yamato Takeru|qid=Q461258|lt=Yamato Takeru}}
+* [[List of figures from before the Asuka period]]
+
+{{translated page|ja|乎止与命|version=99874819|comment=Imported full ja history}}
+
+{{wikidata link|Q97706258|ja|乎止与命|grok=none|check_date=2026-06-06}}
+[[Category:History of Aichi Prefecture]]
+[[Category:Kuni no miyatsuko]]
+[[Category:Kuni no miyatsuko position holders]]
+[[Category:Owari clan]]
+[[Category:People of ancient Japan]]
+[[Category:People of Kofun-period Japan]]
+[[Category:People of Owari Province]]
+[[Category:Wikidata no short description]]
+[[Category:Year of birth unknown]]
+[[Category:Year of death unknown]]
+[[Category:Year_of_birth_unknown]]
+[[Category:Year_of_death_unknown]]
+<!-- [git-synced 2026-06-07] DUPLICATE-MERGE partner: this page shares a Wikidata item with another shinto page (see queue.md merge list). Synced so both sides are visible for a content-aware merge; canonical title prefers the "Jingū"/proper form over romanised variants. Do NOT blind-redirect — merge content first. -->
+[[Category:Git synced pages]]
+[[Category:Pages git synced to resolve interlanguage and interwiki links]]
