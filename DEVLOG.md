@@ -6,6 +6,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Work-loop (:03): regression tests for the clobber fix
+**Files:** `shinto_miraheze/tests/test_sync_revision_aware.py` (new), `queue.md`
+
+Queue's top items were all blocked (merges→Emma's route call, no-hit→need
+articles, cleanups→gated on completion), so promoted a test-hardening item:
+`resolve_conflict` had zero tests and just gained the shallow-checkout backstop
+that stops the wiki-edit clobber. Added 7 tests (monkeypatching the timestamp
+readers + shallow check — no wiki/git access): wiki-newer→wiki, repo-newer→repo,
+tie→static_policy, the backstop (repo_t None + shallow → wiki even when
+static_policy=repo), repo-None-but-full-clone→static_policy, wiki-None→
+static_policy, invalid-policy→ValueError. Full suite green: 42 passed. Locks in
+the fix so the clobber bug can't silently regress.
+
 ### Work-loop (:03): examined the 10 merge pairs, pulled partners, escalated decision
 **Files:** `git_synced/` (10 new partner pages), `git_synced/Open questions.wiki`, `queue.md`
 
