@@ -4,6 +4,70 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-07
+
+### Remote-control session: project homepage, site backlog surfacing, Wikidata-count clarity
+**Files:** `site/generate_pages.py`, `_site/*` (regenerated), `queue.md`,
+`git_synced/Open questions.wiki`
+
+Acted on a `/remote-control` session (Emma). Three things shipped, one queued.
+
+1. **GitHub repo metadata.** Description was the placeholder "A bot that runs
+   edits on wikis" and homepage was empty. Set description to name what the repo
+   actually is (maintenance bots for shinto.miraheze.org — Wikidata integration,
+   interlanguage links, category cleanup, daily QuickStatements) and set the
+   homepage to the Pages dashboard `https://emmaleonhart.github.io/shintowiki-scripts/`.
+
+2. **Backlog surfaced on the About page.** The 8 todo.md backlog items previously
+   lived only on `backlog.html`. Added an "Open backlog — unresolved issues"
+   section at the bottom of `index.html` listing all 8 with live-detected counts,
+   each linking to its detail page. Reordered `main()` so backlog detection runs
+   before index generation (the index now receives `backlog_counts`).
+
+3. **Wikidata count honesty / dead-stat fix.** The homepage showed a "Linked to
+   Wikidata" stat sourced from `Category:Pages linked to Wikidata`, which no
+   longer exists on the wiki (nothing populates it) — so it rendered as **0
+   linked**, implying nothing is connected, which is false and was the source of
+   Emma's confusion about the "403". Replaced the dead stat + broken progress bar
+   with: a "Pages still needing a Wikidata QID" card (the real 403) and an
+   explanatory note that 403 is the residual *tail* — pages with no interlanguage
+   links to resolve from, or whose links disagree — not a one-click backlog. The
+   `wikidata_lookup` op already auto-resolves everything that has a usable signal.
+   Removed the dead category from the key-categories list. Generator runs clean
+   (verified: 11,068 content pages, 403 without-QID, 8 backlog pages built).
+
+### Fandom `{{ill}}` interlanguage links: split into a fandom-specific synced template
+**Files:** `fandom_unique/Template%3AInterlanguage link.wiki` (new),
+`miraheze_unique/Template%3AInterlanguage link.wiki` (new)
+
+Emma: on shinto.fandom.com `{{ill}}` (→ `Template:Interlanguage link`) must link
+to other languages "like `{{wikidata link}}` does" — it was still using the
+interwiki-prefix system, which resolves on miraheze but **not** on fandom.
+
+Confirmed the breakage by rendering on both wikis: on fandom the qid branch
+(`[[d:Special:EntityPage/Q…]]`) and every language branch (`[[:ja:…]]`) produce
+**no href at all** (interwiki prefixes don't resolve there); on miraheze both
+resolve. The helper modules (`Separated entries`, `Redirect`, `Trim`) all exist
+and render on fandom — only interwiki link *resolution* is broken. `{{wikidata
+link}}` works on fandom precisely because it uses a direct `https://` URL.
+
+`Template:Interlanguage link` was never given the per-wiki split (no repo file in
+any sync dir; both wikis edited directly). Did the split Emma described:
+* `miraheze_unique/…` — current miraheze body verbatim (interwiki links, which
+  work there) + `[[Category:Independently git synced pages]]`.
+* `fandom_unique/…` — same body but every link rewritten to an external URL:
+  qid → `https://www.wikidata.org/wiki/Q…#sitelinks-wikipedia`; each language
+  pair → `https://<lang>.wikipedia.org/wiki/{{urlencode:<target>|WIKI}}`. Only
+  the 17 link constructions changed; all #if/#switch/#invoke logic untouched.
+  The pre-existing `{{{20}}}`-typo on the 28-slot target was preserved verbatim.
+
+Verified by substituting params into the new fandom body and parsing it on
+fandom: qid → `https://www.wikidata.org/wiki/Q1490#sitelinks-wikipedia`; langs →
+`https://ja.wikipedia.org/wiki/東京`, `https://de.wikipedia.org/wiki/Tokio` —
+working external links. Both files carry the sync category; the 6-hourly
+`cleanup-loop.yml` runs the fandom + miraheze `*_unique` syncs (Pass 2 pushes
+repo-only files that carry the category), so they land on both wikis next fire.
+
 ## 2026-06-06
 
 ### Work-loop (1pm cron): harden shrines-missing-en-label SPARQL fetch (CI evidence)

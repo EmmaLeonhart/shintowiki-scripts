@@ -286,7 +286,7 @@ def page_html(title, body, active="index"):
 
 # ─── Index page ──────────────────────────────────────────────
 
-def generate_index(stats, qs_count=0):
+def generate_index(stats, qs_count=0, backlog_counts=None):
     count = qs_count
     total = stats.get("total_pages", "?")
     edits = stats.get("total_edits", "?")
@@ -297,6 +297,20 @@ def generate_index(stats, qs_count=0):
     untranslated = stats.get("untranslated_japanese", "?")
     double_qids = stats.get("double_category_qids", "?")
     dup_redirects = stats.get("duplicated_qid_redirects", "?")
+    backlog_counts = backlog_counts or {}
+
+    # Bottom-of-page backlog list: one line per todo.md item, linking to its
+    # live detail page, with the live-detected count when available.
+    backlog_rows = []
+    for item in BACKLOG_ITEMS:
+        c = backlog_counts.get(item["id"])
+        unit = "scripts" if item["kind"] in ("repo_static", "repo_workflow") else "pages"
+        count_txt = f" &mdash; <strong>{c}</strong> {unit}" if c not in (None, "?") else ""
+        backlog_rows.append(
+            f'    <li><a href="backlog-{item["slug"]}.html">{item["id"]}. '
+            f'{item["title"]}</a>{count_txt}</li>'
+        )
+    backlog_items_html = "\n".join(backlog_rows)
 
     # Wikidata progress bar
     if isinstance(linked, int) and isinstance(without, int) and (linked + without) > 0:
@@ -342,12 +356,25 @@ def generate_index(stats, qs_count=0):
 <div class="stats-grid">
   <div class="stat-card"><div class="number">{total:,}</div><div class="label">Content pages</div></div>
   <div class="stat-card"><div class="number">{edits:,}</div><div class="label">Total edits</div></div>
-  <div class="stat-card"><div class="number">{linked:,}</div><div class="label">Linked to Wikidata</div></div>
-  <div class="stat-card"><div class="number">{without:,}</div><div class="label">Missing Wikidata</div></div>
+  <div class="stat-card"><div class="number">{without}</div><div class="label">Pages still needing a Wikidata QID</div></div>
+  <div class="stat-card"><div class="number">{count:,}</div><div class="label">Pending P11250 statements</div></div>
 </div>
 
 <h2>Wikidata integration progress</h2>
-{bar}
+<div class="info-box">
+  <p><strong>{without} pages still lack a Wikidata QID.</strong> This is not a count of
+  "unconnected pages waiting for a one-click fix" &mdash; it is the residual <em>tail</em>
+  that cannot be resolved automatically.</p>
+  <p>Most pages get their QID filled in automatically: the <code>wikidata_lookup</code>
+  maintenance step reads each page's interlanguage links (e.g. <code>[[ja:&hellip;]]</code>),
+  queries Wikidata's sitelinks API, and &mdash; when the interlanguage links agree on one
+  item &mdash; writes the QID into <code>{{{{wikidata link}}}}</code>. What is left in this
+  count are the pages with <em>no signal to resolve from</em>: no interlanguage links at all,
+  interlanguage links that disagree on which item to use (left flagged for human review), or
+  genuinely non-notable subjects with no Wikidata item to connect to. There is no
+  information available to connect these automatically &mdash; that is exactly what makes
+  them the remaining tail.</p>
+</div>
 
 <h2>Automated maintenance</h2>
 <div class="section">
@@ -394,12 +421,22 @@ def generate_index(stats, qs_count=0):
 <div class="section">
   <h3>Key categories</h3>
   <ul>
-    <li><a href="{WIKI_URL}/wiki/Category:Pages_linked_to_Wikidata">Pages linked to Wikidata</a> ({linked})</li>
     <li><a href="{WIKI_URL}/wiki/Category:Pages_without_wikidata">Pages without wikidata</a> ({without})</li>
     <li><a href="{WIKI_URL}/wiki/Category:Japanese_language_category_names">Japanese language category names</a> ({japanese})</li>
     <li><a href="{WIKI_URL}/wiki/Category:Double_category_qids">Double category QIDs</a> ({double_qids})</li>
     <li><a href="{WIKI_URL}/wiki/Category:duplicated_qid_category_redirects">Duplicated QID category redirects</a> ({dup_redirects})</li>
     <li><a href="{WIKI_URL}/wiki/Category:Pages_with_untranslated_japanese_content">Pages with untranslated Japanese content</a> ({untranslated})</li>
+  </ul>
+</div>
+
+<h2 id="backlog">Open backlog &mdash; unresolved issues</h2>
+<div class="section">
+  <p>The {len(BACKLOG_ITEMS)} outstanding work items tracked in
+  <a href="{REPO_URL}/blob/main/todo.md">todo.md</a>. Each links to a live
+  <a href="backlog.html">backlog</a> page that detects and lists the actual wiki pages
+  (or repo scripts) involved. Counts are fetched live at build time.</p>
+  <ul class="backlog-list">
+{backlog_items_html}
   </ul>
 </div>
 """
@@ -720,19 +757,9 @@ def main():
     qs_lines = parse_qs_lines(qs_text)
     print(f"  Found {len(qs_lines)} QuickStatements lines")
 
-    print("Generating index.html...", flush=True)
-    index_html = generate_index(stats, qs_count=len(qs_lines))
-    with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_html)
-
-    print("Generating p11250.html and p11250.txt...", flush=True)
-    p11250_html, p11250_raw = generate_p11250_page(qs_lines, stats)
-    with open(os.path.join(SITE_DIR, "p11250.html"), "w", encoding="utf-8") as f:
-        f.write(p11250_html)
-    with open(os.path.join(SITE_DIR, "p11250.txt"), "w", encoding="utf-8") as f:
-        f.write(p11250_raw + "\n")
-
-    # Backlog dashboard: one detail page per todo.md item + an index.
+    # Backlog dashboard: one detail page per todo.md item + an index. Built
+    # BEFORE the index so the homepage's bottom-of-page backlog list can show
+    # the live-detected counts.
     print("Generating backlog dashboard...", flush=True)
     backlog_counts = {}
     for item in BACKLOG_ITEMS:
@@ -749,6 +776,19 @@ def main():
                   "w", encoding="utf-8") as f:
             f.write(detail_html)
         print(f"      {total} entries")
+
+    print("Generating index.html...", flush=True)
+    index_html = generate_index(stats, qs_count=len(qs_lines),
+                                backlog_counts=backlog_counts)
+    with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_html)
+
+    print("Generating p11250.html and p11250.txt...", flush=True)
+    p11250_html, p11250_raw = generate_p11250_page(qs_lines, stats)
+    with open(os.path.join(SITE_DIR, "p11250.html"), "w", encoding="utf-8") as f:
+        f.write(p11250_html)
+    with open(os.path.join(SITE_DIR, "p11250.txt"), "w", encoding="utf-8") as f:
+        f.write(p11250_raw + "\n")
 
     with open(os.path.join(SITE_DIR, "backlog.html"), "w", encoding="utf-8") as f:
         f.write(generate_backlog_index(backlog_counts))

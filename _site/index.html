@@ -137,16 +137,26 @@ li { margin: 0.25rem 0; }
 <h2>Wiki statistics</h2>
 <div class="stats-grid">
   <div class="stat-card"><div class="number">11,068</div><div class="label">Content pages</div></div>
-  <div class="stat-card"><div class="number">3,780,652</div><div class="label">Total edits</div></div>
-  <div class="stat-card"><div class="number">0</div><div class="label">Linked to Wikidata</div></div>
-  <div class="stat-card"><div class="number">403</div><div class="label">Missing Wikidata</div></div>
+  <div class="stat-card"><div class="number">3,781,154</div><div class="label">Total edits</div></div>
+  <div class="stat-card"><div class="number">403</div><div class="label">Pages still needing a Wikidata QID</div></div>
+  <div class="stat-card"><div class="number">5,567</div><div class="label">Pending P11250 statements</div></div>
 </div>
 
 <h2>Wikidata integration progress</h2>
-<div class="progress-bar">
-  <div class="progress-fill" style="width:0.0%">0 linked (0%)</div>
+<div class="info-box">
+  <p><strong>403 pages still lack a Wikidata QID.</strong> This is not a count of
+  "unconnected pages waiting for a one-click fix" &mdash; it is the residual <em>tail</em>
+  that cannot be resolved automatically.</p>
+  <p>Most pages get their QID filled in automatically: the <code>wikidata_lookup</code>
+  maintenance step reads each page's interlanguage links (e.g. <code>[[ja:&hellip;]]</code>),
+  queries Wikidata's sitelinks API, and &mdash; when the interlanguage links agree on one
+  item &mdash; writes the QID into <code>{{wikidata link}}</code>. What is left in this
+  count are the pages with <em>no signal to resolve from</em>: no interlanguage links at all,
+  interlanguage links that disagree on which item to use (left flagged for human review), or
+  genuinely non-notable subjects with no Wikidata item to connect to. There is no
+  information available to connect these automatically &mdash; that is exactly what makes
+  them the remaining tail.</p>
 </div>
-<p class="timestamp">403 pages still need Wikidata links</p>
 
 <h2>Automated maintenance</h2>
 <div class="section">
@@ -193,7 +203,6 @@ li { margin: 0.25rem 0; }
 <div class="section">
   <h3>Key categories</h3>
   <ul>
-    <li><a href="https://shinto.miraheze.org/wiki/Category:Pages_linked_to_Wikidata">Pages linked to Wikidata</a> (0)</li>
     <li><a href="https://shinto.miraheze.org/wiki/Category:Pages_without_wikidata">Pages without wikidata</a> (403)</li>
     <li><a href="https://shinto.miraheze.org/wiki/Category:Japanese_language_category_names">Japanese language category names</a> (0)</li>
     <li><a href="https://shinto.miraheze.org/wiki/Category:Double_category_qids">Double category QIDs</a> (4)</li>
@@ -202,8 +211,26 @@ li { margin: 0.25rem 0; }
   </ul>
 </div>
 
+<h2 id="backlog">Open backlog &mdash; unresolved issues</h2>
+<div class="section">
+  <p>The 8 outstanding work items tracked in
+  <a href="https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/todo.md">todo.md</a>. Each links to a live
+  <a href="backlog.html">backlog</a> page that detects and lists the actual wiki pages
+  (or repo scripts) involved. Counts are fetched live at build time.</p>
+  <ul class="backlog-list">
+    <li><a href="backlog-retire-terminating-scripts.html">1. Retire terminating cleanup scripts (July 2026)</a> &mdash; <strong>4</strong> scripts</li>
+    <li><a href="backlog-audit-legacy-scripts.html">2. Audit which pre-orchestrator legacy scripts still run</a> &mdash; <strong>51</strong> scripts</li>
+    <li><a href="backlog-ill-missing-wikidata.html">3. ILLs without WD= / "Unknown" targets</a> &mdash; <strong>1000</strong> pages</li>
+    <li><a href="backlog-duplicate-qid-tail.html">4. Duplicate QID disambiguation pages (tail)</a> &mdash; <strong>4</strong> pages</li>
+    <li><a href="backlog-japanese-category-names.html">5. Japanese-language category names → English</a> &mdash; <strong>1189</strong> pages</li>
+    <li><a href="backlog-multiple-wikidata-links.html">6. Multiple {{wikidata link}} on one page</a> &mdash; <strong>0</strong> pages</li>
+    <li><a href="backlog-duplicated-content-need-translation.html">7. Duplicated content + remaining need-translation pages</a> &mdash; <strong>519</strong> pages</li>
+    <li><a href="backlog-recreate-deleted-wikidata.html">8. Recreate deleted Wikidata items</a> &mdash; <strong>145</strong> pages</li>
+  </ul>
+</div>
+
 <footer>
-  Generated 2026-06-07 11:47 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Generated 2026-06-07 18:12 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
   Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
 </footer>
 </body>
