@@ -8,10 +8,12 @@ on:
   push:
     paths:
       - "shinto_miraheze/**.py"
+      - "modern-quickstatements/**.py"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "shinto_miraheze/**.py"
+      - "modern-quickstatements/**.py"
   workflow_dispatch:
 
 jobs:
@@ -30,4 +32,4 @@ jobs:
         run: pip install pytest requests mwclient
 
       - name: Run tests
-        run: python -m pytest shinto_miraheze/tests/ -q
+        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ -q
