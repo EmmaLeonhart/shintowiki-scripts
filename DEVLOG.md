@@ -6,6 +6,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Clobber audit + recovery; 2 more interlang QIDs filled
+**Files:** `git_synced/Main Page.wiki`, `git_synced/{Ibaraki no Kuni no Miyatsuko,
+Tenso Shrine}.wiki`, `shinto_miraheze/audit_git_synced_clobbers.py` (new), `queue.md`
+
+Audited all 128 git-synced pages' wiki histories for the clobber signature
+(EmmaBot "overwriting divergent wiki edit" right after a human edit). Result:
+only **6 clobbers across 5 pages**, all Emma's edits — the bug's blast radius was
+small (a clobber needs a human edit immediately before a sync). Findings +
+recovery:
+* `Open questions` (06-07 "legacy" edit) — already restored earlier.
+* `Main Page` — lost `[[Category:Pages without wikidata legacy]]`; RESTORED. (This
+  + the Open-questions edit show Emma is actively building a "Pages without
+  wikidata legacy" category — strong signal that decision A on [[Open questions]]
+  is a yes.)
+* `Yang Water Monkey` / `Yin Metal Pig` / `Yin Metal Snake` (05-11) — each lost
+  `[[Category:qqqqqqqqqqqqqqqqq]]`, a junk/test category (almost certainly Emma
+  testing whether wiki edits survive). NOT auto-recovered (don't re-add junk);
+  flagged on [[Open questions]] to confirm.
+* `Open questions` (05-27) — superseded (page fully rewritten since); no recovery.
+
+Also filled 2 of the 3 throttled interlang resolutions: `Ibaraki no Kuni no
+Miyatsuko`→Q11617300 (茨城国造, exact), `Tenso Shrine`→Q109328988 (exact). The
+3rd, `List of Shikinaisha in Awa Province`, is a 10th merge case (overlaps
+`…(Chiba)` Q11450714).
+
 ### Fix the git-synced clobber bug (shallow CI checkout → systematic repo-wins)
 **Files:** `.github/workflows/git-synced-sync.yml`, `.github/workflows/fandom-sync.yml`,
 `shinto_miraheze/sync_revision_aware.py`, `shinto_miraheze/sync_git_synced_pages.py`
