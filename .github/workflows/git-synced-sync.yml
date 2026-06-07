@@ -42,6 +42,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          # Full history: most-recent-edit-wins compares the per-file
+          # last-commit time (git log -1 -- <file>). A shallow checkout
+          # (default depth 1) can't see it, returns no timestamp, and the
+          # resolver falls back to repo-wins — silently clobbering human
+          # wiki edits. fetch-depth: 0 is load-bearing.
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v6

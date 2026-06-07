@@ -133,6 +133,24 @@ def head_commit(repo_root: Path) -> Optional[str]:
         return None
 
 
+def _repo_is_shallow(repo_root: Path) -> bool:
+    """True if the git checkout is shallow. In a shallow clone, per-file
+    ``git log`` can't see history that didn't touch HEAD, so
+    ``repo_latest_edit_epoch`` returns None for most files and the conflict
+    resolver would fall back to its static policy — clobbering live wiki edits
+    on git_synced (static_policy='repo'). The resolver uses this to fail safe
+    to wiki-wins instead. The real fix is ``fetch-depth: 0`` in CI; this is the
+    backstop so a future shallow checkout can never silently clobber again."""
+    try:
+        out = subprocess.run(
+            ["git", "rev-parse", "--is-shallow-repository"],
+            cwd=str(repo_root), check=True, capture_output=True, text=True, timeout=10,
+        )
+        return out.stdout.strip() == "true"
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return False
+
+
 def resolve_conflict(
     *,
     site,
@@ -164,6 +182,11 @@ def resolve_conflict(
     wiki_t = wiki_latest_edit_epoch(site, title)
     repo_t = repo_latest_edit_epoch(repo_root, rel_file_path)
 
+    # Shallow-clone backstop: if we couldn't read the repo's per-file time AND
+    # the checkout is shallow, we can't trust the repo side at all — never
+    # clobber a live wiki edit on that uncertainty. Prefer wiki.
+    if repo_t is None and _repo_is_shallow(repo_root):
+        return "wiki"
     if wiki_t is None or repo_t is None:
         return static_policy
     if wiki_t > repo_t:

@@ -6,6 +6,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Fix the git-synced clobber bug (shallow CI checkout → systematic repo-wins)
+**Files:** `.github/workflows/git-synced-sync.yml`, `.github/workflows/fandom-sync.yml`,
+`shinto_miraheze/sync_revision_aware.py`, `shinto_miraheze/sync_git_synced_pages.py`
+
+Root cause of the [[Open questions]] clobber (and likely more): both sync
+workflows ran `actions/checkout@v5` with **no `fetch-depth`** → shallow (depth 1).
+The resolver's most-recent-edit-wins reads per-file last-commit time via
+`git log -1 --format=%ct -- <file>`; in a shallow clone that history isn't
+present → `repo_t = None` → resolver falls back to `static_policy` = "repo" for
+git_synced → pushes the stale repo copy over the live wiki edit. So any human
+edit to a git-synced page could be overwritten by the next sync. Confirmed: Emma
+edited [[Open questions]] on the wiki 2026-06-07 19:04; the repo file's real last
+commit was 2026-06-05 (so per-file logic should say "wiki wins"), but shallow
+checkout made repo_t None and it clobbered.
+
+Fixes: (1) `fetch-depth: 0` on the checkout in both sync workflows — primary fix;
+(2) shallow backstop in `resolve_conflict` — if repo_t is None and the checkout
+is shallow, return "wiki" (never clobber on uncertainty); (3) [[Open questions]]
+now uses `static_policy="wiki"` (was "repo"), matching its documented wiki-wins
+policy. Outstanding (queued): audit all 128 git-synced pages' wiki histories for
+past clobbers and recover lost human edits.
+
 ### Work-loop (:03): resolve the 6 search-hit candidates (Part 3 of interlang op)
 **Files:** `git_synced/{Minase Jingu, Miwa Shrine (Kiryu), Mike Shrine (Ise),
 Missionary Office}.wiki`, `queue.md`

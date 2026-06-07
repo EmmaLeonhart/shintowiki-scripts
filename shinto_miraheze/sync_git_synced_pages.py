@@ -350,11 +350,16 @@ def main():
         # static "repo wins" policy for this directory.
         conflicts += 1
         rel_path = str(local_path.relative_to(REPO_ROOT)).replace(os.sep, "/")
+        # [[Open questions]] is the human↔bot interface and is wiki-wins by
+        # policy (Emma edits it on the wiki). Everything else in git_synced/ is
+        # a template sync where the repo is the source of truth (repo-wins). The
+        # static_policy is only the tie / can't-read-timestamp fallback;
+        # most-recent-edit-wins still applies first.
         winner = resolve_conflict(
             site=site, title=title,
             baseline_revid=base_revid, baseline_commit=base_commit,
             repo_root=REPO_ROOT, rel_file_path=rel_path,
-            static_policy="repo",
+            static_policy="wiki" if title == "Open questions" else "repo",
         )
 
         if winner == "wiki":
