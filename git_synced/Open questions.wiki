@@ -4,48 +4,56 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 == How to use this page ==
 
-* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker (a design call, a credential need, a wiki-side action you cannot take, an ambiguous instruction), add it under the relevant section below with enough context that Emma can answer without re-deriving the problem. '''When you verify an item has actually been resolved (via code/API/log inspection), delete the bullet entirely in the same commit''' — leaving stale "open questions" lying around is a failure mode Emma has flagged. Investigate before declaring something blocked-on-Emma; many items framed as blockers are either already resolved or are autonomous work that just needs to be started.
-* '''Emma:''' edit answers in-line under each question. When you've answered a question and the agents have acted on it, strike or delete the question. Free-form notes that don't fit anywhere else go under [[#Notes|Notes]] below.
-* '''This page is different from other git-synced pages.''' The wiki is the canonical source of truth here. When Emma edits this page on shinto.miraheze.org, those edits propagate down to the repo (wiki-wins for this page). Agents must not silently overwrite Emma's wiki edits with stale repo content.
-* '''No "Recently resolved" graveyard.''' Resolved items are DELETED immediately, not parked here to bloat the page. History lives in <code>DEVLOG.md</code> + git log. (Emma, 2026-06-07.)
+* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker, add it under the right urgency section with enough context that Emma can answer without re-deriving the problem. '''When you verify an item is actually resolved (via code/API/log inspection), DELETE the bullet in the same commit''' — no "recently resolved" graveyard; history lives in <code>DEVLOG.md</code> + git log. Investigate before declaring something blocked-on-Emma; many "blockers" are autonomous work that just needs starting.
+* '''Emma:''' edit answers in-line under each question; delete it once acted on. Free-form context goes under [[#Notes|Notes]].
+* '''This page is wiki-wins.''' The wiki is canonical. Edits Emma makes here on shinto.miraheze.org propagate down to the repo. Agents must not overwrite Emma's wiki edits with stale repo content. (A bot clobber of this page happened 2026-06-07 and is being fixed — see the sync-bug item below.)
 
-== Decisions Emma needs to make ==
+== Decisions needed — HIGHER URGENCY ==
 
-'''1. The 304 "deleted/missing QID" link targets — recreate which, if any?''' (the only pre-existing item; reframed 2026-06-07 with real data)
-: <code>[[Category:Pages with deleted QID in ill template]]</code> = '''145 pages''' that contain an <code>{{ill|…|qid=Qxxx}}</code> whose Qxxx now returns "missing" from Wikidata. These are LINK TARGETS inside the pages, not the pages themselves. There are '''304 distinct''' such targets across the 145 pages.
-: '''What "missing" means (checked 2026-06-07):''' the <code>deleted_qids_in_ill</code> op writes <code>qid=DELETED_QID</code> only when a specific Qxxx that was already written in the ill now returns "missing". Sampled one — <code>Q135490857</code> was genuinely '''deleted''' on 2026-05-19 by user MisterSynergy with reason "Empty item: content was empty". So these were created (likely by the import, as empty stubs), then deleted for being empty — NOT necessarily for the subject being non-notable. Recreating them WITH real claims (label + description + P31 + P11250) would make them non-empty, which is exactly what was missing.
-: '''The targets split sharply by type:''' (a) historical people — e.g. <code>Abe Arimori</code>, <code>Abe Yasukichi</code>, the Abe/Adachi onmyōji genealogies — generally notable, safe; (b) '''many small local shrines''' — a long run of <code>Akagi Shrine (Araguchi Town)</code>, <code>Akagi Shrine (Arai Town)</code>, … individual tiny branch shrines, the riskier set.
-: '''Questions for Emma:'''
-:# Recreate at all? If yes, '''which subset''' — historical people only (safe default), or shrines too?
-:# Minimum claim set so they survive: <code>Len</code> + <code>Den</code> + <code>P31</code> (per-target instance-of) + <code>P11250</code> (shinto: back-link). Enough?
-:# This goes through the QuickStatements pipeline (the only allowed Wikidata channel). Agent default if unanswered: build the generator for the '''historical-person targets only''', skip the small shrines.
+'''A. "Pages without wikidata legacy" — do you want the category split?''' (raised by Emma's 2026-06-07 edit to this page)
+: Right now there is ONE flat <code>[[Category:Pages without wikidata]]</code> (~403 pages), fed two ways: ~344 old pages still on the literal tag (being drained by <code>remove_crud_categories</code>; the category is marked crud until 2026-12-06), and ~58 via the blank-<code>{{wikidata link}}</code> self-categorization. Emma's edit changed a note to say "Pages without wikidata '''legacy'''".
+: '''Question:''' do you want the legacy literal-tag population moved into a separate <code>[[Category:Pages without wikidata legacy]]</code> (so the template-driven category is clean), or was "legacy" just a clarifying word? If you want the split, the agent wires it into the <code>wikidata_link</code> op. '''Default if unanswered:''' treat as a clarifying note, no split.
 
-'''2. "Pages without wikidata legacy" — what do you want here?''' (raised by Emma's 2026-06-07 edit)
-: Emma edited this page to change "Pages without wikidata" → "Pages without wikidata '''legacy'''" in a note about the self-categorizing <code>{{wikidata link}}</code>. Current reality: there is ONE flat <code>[[Category:Pages without wikidata]]</code> (403 pages) fed by two mechanisms — (a) ~344 pages on the OLD literal-tag, being drained by <code>remove_crud_categories</code> (the category is marked <code>[[Category:Crud categories]]</code>; crud designation lifts 2026-12-06); (b) ~58 pages via the blank-template self-categorization.
-: '''Question:''' do you want the legacy literal-tag population split into a separate <code>[[Category:Pages without wikidata legacy]]</code> (distinct from the template-driven one), or was "legacy" just a clarifying note? If you want the split, say so and the agent will wire it into the <code>wikidata_link</code> op.
+'''B. The 9 QID-overlap MERGE cases — proceed automatically?''' (interlanguage-resolution op, in flight)
+: 9 of the resolved pages share a QID with another existing shinto page (duplicates): <code>Kehi Jingū</code>↔<code>Kehi Shrine</code> (Q11129346), <code>Izanagi Jingu</code>↔<code>Izanagi Jingū</code> (Q10884977), and 7 deity/kuni-no-miyatsuko pairs (full list in <code>queue.md</code>).
+: '''Question / default:''' agent will MERGE these — redirect the duplicate to the canonical page, '''keeping the "Jingū" / proper-form title and redirecting the romanised "…Shrine" variant''' (Emma's rule) — unless you say otherwise. This is a miraheze edit (via git sync), not a Wikidata edit, so it proceeds under the "everything except Wikidata" go-ahead.
 
-'''3. Interlanguage-resolution operation — proceed with the 9 merges?''' (in flight, 2026-06-07)
-: The 57 "<code>{{wikidata link}}</code> present but unresolved" pages were pulled into <code>git_synced/</code> and tagged <code>[[Category:Pages git synced to resolve interlanguage and interwiki links]]</code>. 18 QIDs resolved & filled so far (14 exact-label + 4 verified search-hits). '''9 are QID-overlap MERGE cases''' — the resolved QID is already claimed by another shinto page (duplicate pages): e.g. <code>Kehi Jingū</code>↔<code>Kehi Shrine</code>, <code>Izanagi Jingu</code>↔<code>Izanagi Jingū</code>, plus 7 deity/kuni-no-miyatsuko duplicates.
-: '''Question:''' proceed to merge these automatically (redirect one → the other, '''keeping the "Jingū" / proper title and redirecting the "…Shrine" / romanised variant''', per your rule)? Agent default if unanswered: do the merges, "Jingū"/native title wins, on a per-page basis. (26 of the 57 have no Wikidata item at all — those overlap with decision #1.)
+== Lower urgency / maybe ==
 
-== Done this session (2026-06-07) — FYI, no decision needed ==
+'''C. The 304 "deleted/missing QID" link targets — currently NO-GO.''' (reframed 2026-06-07)
+: <code>[[Category:Pages with deleted QID in ill template]]</code> = 145 pages containing <code>{{ill|…|qid=Qxxx}}</code> whose Qxxx now returns "missing" from Wikidata (304 distinct targets). Sampled one — <code>Q135490857</code> was deleted 2026-05-19 as an "Empty item" (created empty by the import, then deleted), not for the subject being non-notable. Targets split into historical people (notable) and many small local shrines (riskier).
+: '''Status: parked.''' Recreating these means CREATING Wikidata items, which Emma has ruled a hard NO ("suicidal", 2026-06-07). So: leave <code>qid=DELETED_QID</code> in place, surface the set on the dashboard as "needs a real article first". Revisit only if the no-Wikidata-creation policy changes.
 
-''(Context for the above, so the decisions make sense. Agent will delete this section once Emma has seen it.)''
-* '''Repo homepage + description''' set to the GitHub Pages dashboard.
-* '''Dashboard fixes:''' surfaced all 8 backlog items at the bottom of the About page; replaced the dead "Linked to Wikidata" stat (the category no longer exists → showed 0) and corrected the Wikidata-count explanation (the 403 is mostly an actively-draining migration backlog, not an unresolvable tail).
-* '''Fandom <code>{{ill}}</code> fixed:''' on shinto.fandom.com the interlanguage links were dead (interwiki prefixes <code>[[d:…]]</code> / <code>[[:ja:…]]</code> don't resolve there). Split <code>Template:Interlanguage link</code> per-wiki (<code>fandom_unique/</code> uses external <code>https://</code> URLs like <code>{{wikidata link}}</code> does; <code>miraheze_unique/</code> keeps interwiki). Verified live.
-* '''Clobber I caused + fixed:''' my dispatched Git Synced Sync overwrote Emma's 19:04 wiki edit to THIS page (the "legacy" change). Restored it (commit 953b8746) and re-synced. Root cause worth noting: the sync's "most-recent-edit-wins" uses repo-HEAD commit time, not per-file time, so unrelated commits made it look newer than Emma's wiki edit and it clobbered. (Possible future fix: per-file timestamp comparison, or a hard wiki-wins guard for this page.)
+== Backlog status — the 8 todo.md items (verified live 2026-06-07) ==
+
+''Some verify instantly (category count); some lag because they drain over many throttled orchestrator cycles. Resolved ones get deleted from todo.md, not parked.''
+# '''Retire terminating cleanup scripts''' — TIME-GATED to July 2026; not actionable yet.
+# '''Audit legacy scripts''' — DONE (catalogued in <code>docs/program_audit_2026-06.md</code>); only the empirical "still producing edits?" check on the July-gated scripts remains (overlaps #1).
+# '''ILLs without WD= / "Unknown"''' — ONGOING, 1000+ in <code>[[Category:Pages with unresolved QID in ill template]]</code>; orchestrator-fed, drains/grows over cycles, not a one-shot.
+# '''Double category qids''' — NEARLY DONE: down to a '''4-page''' tail; <code>resolve_double_category_qids</code> auto-handles same-target cases.
+# '''Japanese-language category names''' — ONGOING, '''1171 subcategories''' — the big real backlog; Wikidata-anchored resolver shipped and draining.
+# '''Multiple <code>{{wikidata link}}</code> per page''' — CURRENTLY CLEAR (0); self-maintaining monitor op, may repopulate.
+# '''Duplicated content + need-translation''' — ONGOING: 134 dup-content + 385 need-translation; worked by the cloud-queue routine.
+# '''Recreate deleted Wikidata items''' — see decision C (NO-GO, parked).
+
+== Open agent task: fix the git-synced clobber bug ==
+
+The 2026-06-07 clobber of THIS page happened because the sync's "most-recent-edit-wins" effectively compared repo state against the wiki in a way that let unrelated repo commits look "newer" than Emma's wiki edit, so it overwrote her edit. Agent to-do (non-Wikidata, in progress): make the comparison strictly per-file (last commit touching THAT file vs that page's top wiki revision), and/or add a hard wiki-wins guard for this page. Tracked in <code>queue.md</code>.
+
+== Done this session (2026-06-07) — FYI, agent deletes once Emma has seen it ==
+
+* Repo homepage/description set to the GitHub Pages dashboard.
+* Dashboard: surfaced all 8 backlog items on the About page; fixed the dead "Linked to Wikidata" stat and corrected the 403 explanation.
+* Fandom <code>{{ill}}</code> fixed (dead interwiki links → external <code>https://</code> URLs; per-wiki template split). Verified live.
+* Interlanguage-resolution op: 57 pages pulled to <code>git_synced/</code>, 18 QIDs resolved & filled.
+* Clobber of this page restored ("legacy" edit is back on the wiki).
 
 == Notes ==
 
-''(free-form scratch space for Emma to leave context that doesn't fit a specific question)''
+''(free-form scratch space for Emma)''
 
 == Sync-policy exception note ==
 
-Conflict resolution for <code>git_synced/</code> (and the other sync dirs) is '''most-recent-edit-wins''' as of 2026-05-30 (whichever side — wiki top revision vs latest git commit — was edited more recently wins; the per-directory static policy is only the tie-break). This page is intended to be edited primarily ON the wiki by Emma. Agents working on <code>shintowiki-scripts</code> should additionally:
-
-# Always pull this page from the wiki at the start of a session (don't trust the repo copy alone).
-# When committing changes to other files, never include a stale repo version of this page in a sync push.
-# If you're about to edit this file in the repo, first confirm the wiki version hasn't been updated since the last sync — otherwise you'd risk clobbering Emma's answers.
+Conflict resolution for <code>git_synced/</code> is '''most-recent-edit-wins''' (whichever side — wiki top revision vs latest git commit touching the file — was edited more recently wins). This page is edited primarily ON the wiki by Emma. Agents: always pull this page from the wiki at session start; never push a stale repo copy; before editing it repo-side, confirm the wiki hasn't been updated since the last sync.
 
 [[Category:Git synced pages]]
