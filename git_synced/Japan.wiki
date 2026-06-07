@@ -1,6 +1,6 @@
 Japan is the main country that practices shinto.
 
-{{wikidata link||en|Japan|grok=Japan|check_date=2026-05-30}}
+{{wikidata link|Q17|en|Japan|grok=Japan|check_date=2026-05-30}}
 [[Category:Uncategorized pages]]
 
 <!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's {{wikidata link}} could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
