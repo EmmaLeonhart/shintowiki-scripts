@@ -112,7 +112,7 @@ However, unlike the {{ill|Asakura clan|ja|朝倉氏}} of Echizen and the {{ill|O
 * {{ill|Asakura clan|ja|朝倉氏}}
 * {{ill|Chōroku War|ja|長禄合戦}}
 
-{{wikidata link|Q11577901|ja|甲斐氏|check_date=2026-05-16}}
+{{wikidata link||ja|甲斐氏|check_date=2026-05-16}}
 [[Category:甲斐氏|*]]
 [[Category:菊池氏|*か]]
 [[Category:日本の氏族]]
@@ -125,6 +125,6 @@ However, unlike the {{ill|Asakura clan|ja|朝倉氏}} of Echizen and the {{ill|O
 [[Category:Need translation]]
 [[Category:Pages without wikidata]]
 
-<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
+<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's {{wikidata link}} could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
 [[Category:Pages git synced to resolve interlanguage and interwiki links]]
