@@ -362,18 +362,26 @@ def generate_index(stats, qs_count=0, backlog_counts=None):
 
 <h2>Wikidata integration progress</h2>
 <div class="info-box">
-  <p><strong>{without} pages still lack a Wikidata QID.</strong> This is not a count of
-  "unconnected pages waiting for a one-click fix" &mdash; it is the residual <em>tail</em>
-  that cannot be resolved automatically.</p>
-  <p>Most pages get their QID filled in automatically: the <code>wikidata_lookup</code>
-  maintenance step reads each page's interlanguage links (e.g. <code>[[ja:&hellip;]]</code>),
-  queries Wikidata's sitelinks API, and &mdash; when the interlanguage links agree on one
-  item &mdash; writes the QID into <code>{{{{wikidata link}}}}</code>. What is left in this
-  count are the pages with <em>no signal to resolve from</em>: no interlanguage links at all,
-  interlanguage links that disagree on which item to use (left flagged for human review), or
-  genuinely non-notable subjects with no Wikidata item to connect to. There is no
-  information available to connect these automatically &mdash; that is exactly what makes
-  them the remaining tail.</p>
+  <p><strong>{without} pages are currently in
+  <a href="{WIKI_URL}/wiki/Category:Pages_without_wikidata">Category:Pages without wikidata</a>.</strong>
+  It is a single flat maintenance category fed by two mechanisms &mdash; not a list of
+  permanently-unconnectable pages.</p>
+  <ul>
+    <li><strong>Most are a migration backlog.</strong> They still carry the old literal
+    category tag and have no <code>{{{{wikidata link}}}}</code> template yet. Each cleanup
+    cycle <code>remove_crud_categories</code> strips the legacy tag, the
+    <code>wikidata_link</code> step adds the template, and <code>wikidata_lookup</code>
+    resolves a QID from the page's interlanguage links wherever a matching Wikidata item
+    exists. Many of these (major topics included) will connect once processed; the count
+    drains over successive cycles.</li>
+    <li><strong>A smaller set already carry the template but can't resolve.</strong> Their
+    interlanguage links point at titles that don't exist on the target-language Wikipedia
+    (or have no Wikidata item), so there is nothing to resolve to.</li>
+  </ul>
+  <p>The <code>wikidata_lookup</code> step reads each page's interlanguage links (e.g.
+  <code>[[ja:&hellip;]]</code>), queries Wikidata's sitelinks API, and &mdash; when the
+  links agree on one item &mdash; writes the QID into <code>{{{{wikidata link}}}}</code>. If
+  the links disagree it flags the page for review rather than guessing.</p>
 </div>
 
 <h2>Automated maintenance</h2>
