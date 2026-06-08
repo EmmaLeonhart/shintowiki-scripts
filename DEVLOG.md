@@ -4,6 +4,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-08
+
+### Measured the full degree/extent of the git-synced clobber (Emma's ask)
+**Files:** `shinto_miraheze/measure_clobber_degree.py` (new), `.gitignore`, `queue.md`
+
+Emma pushed back that the first clobber audit only counted 6 (it filtered to
+human-overwritten edits) and asked for a systematic measure of the degree across
+ALL git-synced pages. Did it:
+* '''Extent:''' '''116''' "overwriting divergent wiki edit" events across '''85 of
+  138''' git-synced pages (~62%) — far wider than the original 6. 6 overwrote
+  human (Immanuelle) edits, 110 overwrote EmmaBot's own wiki-side edits.
+* '''Degree (diff sizes):''' SMALL. Total ~271 lines removed across all 116;
+  max single event 41 lines; the vast majority 1–5 lines. Human: 6 events / 26
+  lines. Bot: 110 events / 245 lines.
+* '''Interpretation:''' no large permanent loss. The biggest events are this
+  session's own churn (repeated [[Open questions]] rewrites: −41/−23/−19/−6/−6;
+  the interlanguage-resolution op touching Kehi Shrine/Kai clan/Gary Luscombe/
+  Kōtai). The 110 bot-overwritten are orchestrator-improves→sync-reverts churn
+  (small category/template tweaks, self-healing as orchestrators re-sweep; Kehi
+  Shrine −36/+36 is a net-neutral reformat). The 6 human losses (26 lines) had
+  their meaningful part (Main Page legacy category) already recovered; the rest
+  were the qqqqq test categories. No further recovery warranted; fetch-depth:0
+  + most-recent-wins stops the churn going forward.
+* Untracked the previously-committed `audit_git_synced_clobbers.out.json` and
+  gitignored `shinto_miraheze/*.out.json` (audit outputs shouldn't be in the repo).
+
 ## 2026-06-07
 
 ### Work-loop (:03): cross-script test for the title↔filename mapping

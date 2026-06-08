@@ -22,7 +22,7 @@ exact-label non-overlap QIDs filled + pushed). Remaining:
 
 Bug fixed + audit done (6 clobbers / 5 pages, all Emma's edits — see DEVLOG). `Open questions` (06-07) + `Main Page` recovered; `Open questions` (05-27) superseded. Remaining:
 - [ ] `Yang Water Monkey` / `Yin Metal Pig` / `Yin Metal Snake` (2026-05-11) — each lost `[[Category:qqqqqqqqqqqqqqqqq]]`, a junk/test category (likely Emma testing whether wiki edits survive). NOT recovered — confirm with Emma these were tests; else recover. Asked on [[Open questions]].
-- [ ] Delete `audit_git_synced_clobbers.py` (+ `.out.json`) once recovery is confirmed done.
+- [ ] Delete the clobber-audit one-offs (`audit_git_synced_clobbers.py`, `measure_clobber_degree.py`, their `*.out.json`) once Emma has reviewed the clobber situation. Degree measured 2026-06-08: 116 events / 85 of 138 pages, but SMALL (≤41 lines/event, ~271 total); 6 human (26 lines, recovered) + 110 bot (orchestrator↔sync churn, self-healing, no permanent loss). No further recovery needed unless Emma wants the 110 chased.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.

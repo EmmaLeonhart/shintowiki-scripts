@@ -14,3 +14,4 @@ shinto_miraheze/manual_import_local.py
 /Claude Code.html
 /Claude Code_files/
 /_session_log_extracted.txt
+/shinto_miraheze/*.out.json
