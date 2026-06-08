@@ -6,6 +6,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): second QID-overlap merge (乎止与命 → Otoyo no mikoto)
+**Files:** `git_synced/乎止与命.wiki`, `git_synced/Otoyo no mikoto.wiki`, `queue.md`
+
+Per decision B (combine+redirect). Verified the English canonical `Otoyo no
+mikoto` (3.8k) is the full article (complete infobox, prose, genealogy, the QID
+Q97706258, a {{translated page}} marker) and covers all the cohort `乎止与命`'s
+facts (burial place, rank, kuni-no-miyatsuko) — so redirected the lesser JP-script
+parallel to it (content preserved in history) and cleaned the canonical's
+merge-notice + resolution category. Did NOT touch any Q-titled Double-category-qid
+dab page (Emma's intentional self-healing — see CLAUDE.md gotcha). Reclassified
+`无邪志国造`→Musashi as content-move (cohort is fuller), leaving 道奥菊多国造 as
+the next simple redirect.
+
 ### Work-loop (:03): act on Emma's Open-questions answers; first merge done
 **Files:** `git_synced/Open questions.wiki`, `git_synced/Izanagi Jingu.wiki`, `queue.md`
 
