@@ -12,8 +12,11 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 '''The 10 QID-overlap merges — 3 done, 7 need your input''' (Emma, 2026-06-08: "Combine and redirect, Jingū always wins").
 : '''Done (clean redirect-to-fuller):''' <code>Izanagi Jingu</code>→<code>Izanagi Jingū</code>, <code>乎止与命</code>→<code>Otoyo no mikoto</code>, <code>道奥菊多国造</code>→<code>Michinoku Kikuta Kuni-no-Miyatsuko</code> — the English canonical already held the full translated content + QID, so safe.
-: '''NEW FINDING — 3 are TRANSLATION-merges, not simple dups.''' One side is a clean English article; the OTHER is a raw/partial untranslated '''Japanese''' source with real detail the English lacks — e.g. <code>Kehi Shrine</code> (100k = English stub + <code>{{Expand Japanese}}</code> + a full raw JP article 概要→文化財) vs the clean <code>Kehi Jingū</code> (21k); same shape for <code>无邪志国造</code>↔<code>Musashi no Kuni no Miyatsuko</code>. A blind redirect would dump the untranslated source into history (your translation pipeline would otherwise process it). '''Q: translate the JP into the English/Jingū canonical first, or redirect-away anyway (JP→history) per "don't care about damage"?''' The agent is holding rather than abandon translation material on a guess.
+: '''NEW FINDING — 3 are TRANSLATION-merges, not simple dups.''' One side is a clean English article; the OTHER is a raw/partial untranslated '''Japanese''' source with real detail the English lacks — e.g. <code>Kehi Shrine</code> (100k = English stub + <code>{{Expand Japanese}}+ a full raw JP article 概要→文化財) vs the clean <code>Kehi Jingū</code> (21k); same shape for <code>无邪志国造</code>↔<code>Musashi no Kuni no Miyatsuko</code>. A blind redirect would dump the untranslated source into history (your translation pipeline would otherwise process it). '''Q: translate the JP into the English/Jingū canonical first, or redirect-away anyway (JP→history) per "don't care about damage"?''' The agent is holding rather than abandon translation material on a guess.
+
+* I say just drop the untranslated stuff
 : '''4 ambiguous-canonical''' (two-romanisation pairs + the list-vs-concept <code>Kuni no miyatsuko</code> pair) — still flagged in <code>queue.md</code> for your canonical call.
+:* Just kinda do it choose one
 
 == For Emma — self-audit items still pending your call ==
 
