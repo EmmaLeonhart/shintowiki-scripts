@@ -6,6 +6,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): found the remaining merges are translation-merges — held, surfaced to Emma
+**Files:** `queue.md`, `git_synced/Open questions.wiki`
+
+Went to do the next "content-move" merge (无邪志国造→Musashi; Kehi→Kehi Jingū) and
+discovered they're not simple dups: one side is a clean English article, the other
+a raw/partial untranslated **Japanese** source with real detail the English lacks
+(`Kehi Shrine` = English stub + `{{Expand Japanese}}` + full raw JP article
+概要→文化財 + WD-property dump; `无邪志国造` = raw JP with 墓/系譜/考証 sections the
+English Musashi translation omits). A blind redirect would dump untranslated
+source into history that the translation pipeline would otherwise process — so I
+did NOT redirect; held and surfaced the translate-first-vs-redirect-away question
+on [[Open questions]] + queue.md. (The 3 clean redirect-to-fuller merges, where
+the English canonical already had the full translated content, are done.) No
+Wikidata edits; stayed off the legacy/Q-dab pages.
+
 ### Work-loop (:03): third QID-overlap merge (道奥菊多国造 → Michinoku Kikuta Kuni-no-Miyatsuko)
 **Files:** `git_synced/道奥菊多国造.wiki`, `git_synced/Michinoku Kikuta Kuni-no-Miyatsuko.wiki`, `queue.md`
 
