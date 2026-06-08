@@ -28,4 +28,6 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 ## Wikidata (social / high-care — respect the freeze to 2026-06-06; QuickStatements pipeline only)
 
+- [ ] **26 interlanguage-cohort pages with no Wikidata item.** Leftover from the 2026-06-07 interlanguage-resolution op: biographies, sect-specific docs, shinto-coined terms, list/disambiguation pages that have no matching Wikidata item. They either need an article created on Wikidata first (overlaps the deleted-QID recreation item below — and creating WD items is off-limits autonomously) or should simply stay unconnected. Not forced; no autonomous action.
+
 - [ ] **Recreate deleted Wikidata items.** A batch of ILL-target items were deleted by another editor. Build `generate_recreate_quickstatements.py`: walk `[[Category:Pages with deleted QID in ill template]]`, render `CREATE` + `P11250|"shinto:..."` blocks for human review via the existing QS pipeline. Define a minimum claim set that won't get re-deleted (the original failure). Lower-risk than a direct-API recreator; human-gates notability.

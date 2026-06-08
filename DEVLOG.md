@@ -6,6 +6,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Clear the three Emma-gated items (self-audit signed off, qqqqq dropped, one-offs deleted)
+**Files:** `queue.md`, `todo.md`, `git_synced/Open questions.wiki`, deleted:
+`shinto_miraheze/build_wikidata_resolution_csv.py` (+`.out.csv`),
+`shinto_miraheze/audit_git_synced_clobbers.py` (+`.out.json`),
+`shinto_miraheze/measure_clobber_degree.py` (+`.out.json`)
+
+Emma resolved all three remaining gated items in chat:
+* **Self-audit QID spot-check — "pretty fine."** Signed off → deleted the
+  one-off `build_wikidata_resolution_csv.py` + `.out.csv` (kept only until the
+  spot-check) and removed the self-audit section from `[[Open questions]]`.
+* **ci.yml keep/delete (a "review sign-off").** Keep — Emma already extended it
+  to also run `modern-quickstatements/tests/`, i.e. it's in use. Bullet removed
+  from `[[Open questions]]`.
+* **qqqqq junk-category recovery — "basically nothing, don't worry about it."**
+  Dropped; the `Yang Water Monkey`/`Yin Metal Pig`/`Yin Metal Snake` lost
+  `[[Category:qqqqqqqqqqqqqqqqq]]` test cats stay unrecovered. Queue item deleted.
+* **Clobber-audit one-offs (the other "review sign-off").** Audit done +
+  reported (small, self-healing, no recovery needed); deleted the diagnostic
+  scripts per the no-archive rule.
+The 26 no-hit interlanguage pages moved from `queue.md` to `todo.md` as
+long-horizon (no autonomous action; need WD items that can't be auto-created).
+`queue.md` now holds only the pinned-tail cron items.
+
 ### Reconcile stale `todo.md` backlog items 2 & 4 (ILL-fix + multiple-WD-link)
 **File:** `todo.md`
 

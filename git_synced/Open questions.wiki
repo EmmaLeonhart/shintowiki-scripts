@@ -8,15 +8,6 @@ This page is the interface between Emma (human) and the bot agents that work on 
 * '''Emma:''' edit answers in-line under each question; the agent deletes it once acted on. Free-form context goes under [[#Notes|Notes]].
 * '''This page is wiki-wins.''' The wiki is canonical; Emma's edits here propagate down to the repo. (The 2026-06-07 bot clobber of this page is fixed — <code>fetch-depth:0</code> + most-recent-edit-wins + explicit wiki-wins for this page.)
 
-== For Emma — self-audit (now on a reviewable page) ==
-
-Both items are laid out on a GitHub Pages dashboard so you can see exactly what to look at:
-'''https://emmaleonhart.github.io/shintowiki-scripts/self-audit.html''' (live after the next Pages deploy).
-
-* '''~23 auto-filled Wikidata QIDs''' — each shintowiki page is shown beside its filled QID + the Wikidata label/description, so you can eyeball whether they describe the same thing. If any is wrong, just tell the bot the page name and it'll clear that QID.
-* '''Agent-added <code>.github/workflows/ci.yml</code>''' (runs pytest on push) — keep or delete; the page explains the trade-off.
-
-
 == Notes ==
 
 ''(free-form scratch space for Emma)''
