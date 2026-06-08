@@ -15,7 +15,7 @@ interlanguage and interwiki links]]`, sync dispatched). Part 3a done (CSV:
 exact-label non-overlap QIDs filled + pushed). Remaining:
 
 - [ ] **26 no-hit — no Wikidata item found.** Biographies, sect-specific docs, shinto-coined terms, list/disambiguation pages. These need an article created first (overlaps backlog item 8, deleted-QID recreation) or should stay unconnected. Leave for now; don't force.
-- [ ] **Cleanup (Part 3 now finished — merges done):** delete the one-off scripts `pull_unresolved_wikidata_to_git_synced.py`, `fill_resolved_wikidata_qids.py`, and `build_wikidata_resolution_csv.py` (+ `.out.csv`) — but KEEP the `.out.csv` until Emma finishes the QID spot-check (Open questions references it). Delete scripts now / CSV after the spot-check.
+- [ ] **Cleanup (remaining):** `pull_unresolved_wikidata_to_git_synced.py` + `fill_resolved_wikidata_qids.py` deleted (done one-offs). Still keep `build_wikidata_resolution_csv.py` + `.out.csv` until Emma finishes the QID spot-check (Open questions references the CSV); delete both after that.
 
 ## git-synced clobber recovery (Emma, 2026-06-07)
 

@@ -6,6 +6,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): delete the done interlanguage-resolution one-off scripts
+**Files:** removed `shinto_miraheze/pull_unresolved_wikidata_to_git_synced.py`,
+`shinto_miraheze/fill_resolved_wikidata_qids.py`; `queue.md`
+
+Part 3 (resolution + all merges) is finished, so per repo discipline (delete
+retired one-offs; git history retains them) removed the puller and filler — their
+job is done (cohort pulled, QIDs filled, merges executed). Kept
+`build_wikidata_resolution_csv.py` + its `.out.csv` because Open questions still
+references the CSV for Emma's pending QID spot-check; those go once she's done.
+
 ### Work-loop (:03): weekly Open-questions sweep — nothing new actionable
 **Files:** `queue.md`
 
