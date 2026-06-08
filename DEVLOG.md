@@ -6,6 +6,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): act on Emma's Open-questions answers; first merge done
+**Files:** `git_synced/Open questions.wiki`, `git_synced/Izanagi Jingu.wiki`, `queue.md`
+
+Emma answered on the wiki (06-08): A (legacy split) "I've already dealt with
+this" → resolved; B (10 merges) "Combine and redirect, Jingū always wins" → GO;
+qqqqq "This is right" → tests, won't recover. Acted: cleaned Open questions
+(deleted all resolved items + an accidental find-replace garbling she introduced;
+kept the 2 pending self-audit review items). Established the dup-content
+cloud-queue is within-page only (doesn't fit cross-page merges), so the 10 merges
+are per-pair editorial — doing one carefully per tick, never blind. First merge:
+`Izanagi Jingu` → redirect to `Izanagi Jingū` (canonical already held the full
+60k article + QID; the 8k cohort was a lesser parallel copy, preserved in
+history). queue.md updated with per-pair canonical status (simple-redirect /
+content-move / ambiguous-flag-for-Emma).
+
 ### Measured the full degree/extent of the git-synced clobber (Emma's ask)
 **Files:** `shinto_miraheze/measure_clobber_degree.py` (new), `.gitignore`, `queue.md`
 
