@@ -6,6 +6,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): pushed the pending Open-questions question to the wiki (interface was stale)
+Noticed the live [[Open questions]] wiki page lagged the repo — my translation-merge
+question (dd5cd223, committed 06:26 UTC) hadn't synced because the last scheduled
+Git Synced Sync ran 04:51 UTC (irregular schedule, ~5h gap), not a failure. Since
+the clobber bug is fixed (most-recent-edit-wins + wiki-wins for this page), a single
+manual Git Synced Sync dispatch was safe — ran it, verified the translation-merge
+question + 3-done status are now on the live wiki so Emma can actually answer.
+(One dispatch, not hammering — per the self-audit lesson.)
+
 ### Work-loop (:03): one "merge" was a false positive — it's a valid disambiguation page
 **Files:** `queue.md`
 
