@@ -6,6 +6,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): one "merge" was a false positive — it's a valid disambiguation page
+**Files:** `queue.md`
+
+Assessed the last unclassified merge pair and found `List of Shikinaisha in Awa
+Province` is a legitimate `{{disambiguation}}` page pointing to two genuinely
+different provinces — `(Chiba)` 安房国 and `(Tokushima)` 阿波国 (both romanize to
+"Awa"). The Q11450714 "overlap" was a resolver false-positive: it matched the dab
+page to one of its own targets. The cohort correctly has no QID; the partner
+`(Chiba)` correctly holds Q11450714. Removed it from the merge set; left the dab
+page untouched (it's correct). So the merge count is really 3 done + 2
+translation-merges (Kehi, 无邪志国造) + 4 ambiguous — not 10 needing action.
+
 ### Work-loop (:03): found the remaining merges are translation-merges — held, surfaced to Emma
 **Files:** `queue.md`, `git_synced/Open questions.wiki`
 
