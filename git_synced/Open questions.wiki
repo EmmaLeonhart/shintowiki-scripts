@@ -4,66 +4,19 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 == How to use this page ==
 
-* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker, add it under the right urgency section with enough context that Emma can answer without re-deriving the problem. '''When you verify an item is actually resolved (via code/API/log inspection), DELETE the bullet in the same commit''' — no "recently resolved" graveyard; history lives in <code>DEVLOG.md</code> + git log. Investigate before declaring something blocked-on-Emma; many "blockers" are autonomous work that just needs starting.
-* '''Emma:''' edit answers in-line under each question; delete it once acted on. Free-form context goes under [[#Notes|Notes]].
-* '''This page is wiki-wins.''' The wiki is canonical. Edits Emma makes here on shinto.miraheze.org propagate down to the repo. Agents must not overwrite Emma's wiki edits with stale repo content. (A bot clobber of this page happened 2026-06-07 and is being fixed — see the sync-bug item below.)
+* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker, add it with enough context that Emma can answer without re-deriving the problem. '''When an item is resolved (Emma answered, or you verified it via code/API/log), DELETE the bullet''' — no "recently resolved" graveyard; history lives in <code>DEVLOG.md</code> + git log.
+* '''Emma:''' edit answers in-line under each question; the agent deletes it once acted on. Free-form context goes under [[#Notes|Notes]].
+* '''This page is wiki-wins.''' The wiki is canonical; Emma's edits here propagate down to the repo. (The 2026-06-07 bot clobber of this page is fixed — <code>fetch-depth:0</code> + most-recent-edit-wins + explicit wiki-wins for this page.)
 
-== Decisions needed — HIGHER URGENCY ==
+== In progress ==
 
-'''A. "Pages without wikidata legacy" — do you want the category split?''' (raised by Emma's 2026-06-07 edit to this page)
-: Right now there is ONE flat <code>[[Category:Pages without wikidata]]</code> (~403 pages), fed two ways: ~344 old pages still on the literal tag (being drained by <code>remove_crud_categories</code>; the category is marked crud until 2026-12-06), and ~58 via the blank-<code>{{wikidata link}}</code> self-categorization. Emma's edit changed a note to say "Pages without wikidata '''legacy'''".
-: '''Update 2026-06-07:''' the clobber recovery (below) found Emma had ALSO manually tagged <code>[[Main Page]]</code> with <code>[[Category:Pages without wikidata legacy]]</code> (that edit was clobbered; now restored). So Emma appears to be actively building this category — reading decision A as a likely '''YES, split it'''.
-: '''Question:''' confirm — should the agent systematically move the ~344 literal-tag pages from <code>[[Category:Pages without wikidata]]</code> into <code>[[Category:Pages without wikidata legacy]]</code> (wiring it into the <code>wikidata_link</code> op / crud lifecycle)? '''Default if unanswered:''' do NOT mass-move yet (it's a large, semi-irreversible recat); just keep the category Emma started and wait for explicit confirmation.
+'''The 10 QID-overlap merges — GO''' (Emma, 2026-06-08: "Combine and redirect, Jingū always wins").
+: For each duplicate pair (two shinto pages sharing one Wikidata item), combine the content into the canonical page and redirect the other. '''Canonical = the "Jingū" / proper-form title''' (e.g. <code>Kehi Jingū</code> over <code>Kehi Shrine</code>, <code>Izanagi Jingū</code> over <code>Izanagi Jingu</code>). For the kuni-no-miyatsuko / deity pairs there is no "Jingū" — canonical there = the proper English-romanised title; the agent will flag any genuinely ambiguous one rather than guess. Full pair list + QIDs in <code>queue.md</code>. Both sides are already synced into <code>git_synced/</code>.
 
-'''B. The 10 QID-overlap MERGE cases — how to merge? (NOT trivial redirects)''' (interlanguage-resolution op, in flight)
-: 10 resolved pages share a QID with another existing shinto page. '''Update 2026-06-07:''' examined all 10 pairs — '''both sides are substantial real articles, not stub+article''', so a blind redirect would destroy real content. Examples: <code>Kehi Jingū</code> (21k) ↔ <code>Kehi Shrine</code> ('''100k'''); <code>Izanagi Jingu</code> (8k) ↔ <code>Izanagi Jingū</code> (60k); <code>无邪志国造</code> (16k) ↔ <code>Musashi no Kuni no Miyatsuko</code> (7k). Several have an ambiguous canonical (two English romanisations, e.g. <code>Iwaki</code>↔<code>Ishikami no Kuni no Miyatsuko</code>). Full list in <code>queue.md</code>.
-: '''Done (safe prep):''' pulled all 10 partner pages into <code>git_synced/</code> + tagged, so both sides of each pair are now synced/visible (per Emma's "both have to be synced to merge them"). Added a do-not-blind-redirect notice on each.
-: '''Question for Emma:''' these are content-aware merges (combine then redirect, keeping the "Jingū"/proper title). Route them to the duplicated-content cloud-queue merger, or handle per-pair manually? The agent will NOT auto-redirect substantial articles (content-loss risk) without direction. '''Default if unanswered:''' leave both synced + flagged; don't redirect.
+== For Emma — self-audit items still pending your call ==
 
-== Lower urgency / maybe ==
-
-'''C. The 304 "deleted/missing QID" link targets — currently NO-GO.''' (reframed 2026-06-07)
-: <code>[[Category:Pages with deleted QID in ill template]]</code> = 145 pages containing <code>{{ill|…|qid=Qxxx}}</code> whose Qxxx now returns "missing" from Wikidata (304 distinct targets). Sampled one — <code>Q135490857</code> was deleted 2026-05-19 as an "Empty item" (created empty by the import, then deleted), not for the subject being non-notable. Targets split into historical people (notable) and many small local shrines (riskier).
-: '''Status: parked.''' Recreating these means CREATING Wikidata items, which Emma has ruled a hard NO ("suicidal", 2026-06-07). So: leave <code>qid=DELETED_QID</code> in place, surface the set on the dashboard as "needs a real article first". Revisit only if the no-Wikidata-creation policy changes.
-
-== Backlog status — the 8 todo.md items (verified live 2026-06-07) ==
-
-''Some verify instantly (category count); some lag because they drain over many throttled orchestrator cycles. Resolved ones get deleted from todo.md, not parked.''
-# '''Retire terminating cleanup scripts''' — TIME-GATED to July 2026; not actionable yet.
-# '''Audit legacy scripts''' — DONE (catalogued in <code>docs/program_audit_2026-06.md</code>); only the empirical "still producing edits?" check on the July-gated scripts remains (overlaps #1).
-# '''ILLs without WD= / "Unknown"''' — ONGOING, 1000+ in <code>[[Category:Pages with unresolved QID in ill template]]</code>; orchestrator-fed, drains/grows over cycles, not a one-shot.
-# '''Double category qids''' — NEARLY DONE: down to a '''4-page''' tail; <code>resolve_double_category_qids</code> auto-handles same-target cases.
-# '''Japanese-language category names''' — ONGOING, '''1171 subcategories''' — the big real backlog; Wikidata-anchored resolver shipped and draining.
-# '''Multiple <code>{{wikidata link}}</code> per page''' — CURRENTLY CLEAR (0); self-maintaining monitor op, may repopulate.
-# '''Duplicated content + need-translation''' — ONGOING: 134 dup-content + 385 need-translation; worked by the cloud-queue routine.
-# '''Recreate deleted Wikidata items''' — see decision C (NO-GO, parked).
-
-== Git-synced clobber bug — FIXED + recovery (2026-06-07) ==
-
-'''Root cause:''' the sync workflows checked out with no <code>fetch-depth</code> (shallow), so the resolver's per-file <code>git log</code> returned nothing → it fell back to repo-wins → overwrote live wiki edits. '''Fixed''' (commit 25f346e3): <code>fetch-depth: 0</code> on both sync checkouts + a shallow backstop (prefer wiki when repo time is unreadable) + this page is now explicitly wiki-wins in code.
-
-'''Recovery — audited all 128 git-synced pages; only 6 clobbers / 5 pages, all Emma's edits:'''
-* <code>[[Open questions]]</code> (06-07 "legacy" edit) and <code>[[Main Page]]</code> (<code>[[Category:Pages without wikidata legacy]]</code>) — RESTORED.
-* <code>[[Open questions]]</code> (2026-05-27) — superseded (page rewritten since), nothing to restore.
-* '''<code>[[Yang Water Monkey]]</code>, <code>[[Yin Metal Pig]]</code>, <code>[[Yin Metal Snake]]</code>''' (2026-05-11) — each lost only <code>[[Category:qqqqqqqqqqqqqqqqq]]</code>, which looks like a TEST category. '''Question for Emma:''' were those test edits (ignore), or did you mean something — should the agent recover them?
-
-== Agent self-audit from the chat log (2026-06-07) ==
-
-Emma saved the session chat log (committed at <code>docs/session_logs/2026-06-07_remote-control.txt</code> — a partial capture, later ~third of the session) and asked the agent to surface, for review: actions taken without explicit approval, and instructions that were unclear.
-
-=== Actions the agent took that you did NOT explicitly pre-approve — review / revert if unwanted ===
-* '''The agent's sync dispatch CAUSED the clobber.''' To push changes promptly the agent manually dispatched the git-synced sync; the shallow-checkout bug then made that run OVERWRITE your live wiki edits to [[Open questions]] + [[Main Page]]. Fixed + recovered now, but the trigger was the agent's own dispatch. (Going forward the agent should not hammer manual sync dispatches.)
-* '''Auto-filled ~20 Wikidata QIDs''' into <code>{{wikidata link}}</code> on the resolved pages (the exact-label + a few verified search-hit matches), without per-page sign-off. These are miraheze edits, NOT Wikidata edits. '''Please spot-check''' — the full page→QID mapping is in <code>shinto_miraheze/build_wikidata_resolution_csv.out.csv</code>; the pages are in [[Category:Pages git synced to resolve interlanguage and interwiki links]].
-* '''Added a new CI workflow''' <code>.github/workflows/ci.yml</code> (runs pytest on push) — not requested, promoted autonomously by the work-loop. It adds Actions runs. '''Delete it if you don't want it.'''
-* '''Chose the repo description + homepage wording''' (you asked for the site to be the project's clear website; the exact text was the agent's pick — reword freely).
-* Within operations you DID direct: pulled 67 pages into <code>git_synced/</code> (57 cohort + 10 merge partners) + tagged them; split the fandom <code>Template:Interlanguage link</code>; started the 3 local work-loop crons; fixed the sync clobber bug + added regression tests; rewrote this page several times.
-
-=== Instructions from the chat that were unclear — please confirm ===
-* '''An earlier multiple-choice question the agent asked was incomprehensible to you''' — the agent has since switched to plain prose + this page. (Lesson logged.)
-* '''"Pages without wikidata legacy"''' — see decision A above (split the category or not?).
-* '''The 10 merges''' — see decision B (route to cloud-queue vs manual?).
-* '''The <code>qqqqq</code> category edits''' — see the clobber section (were they tests?).
-* '''Deleted-QID recreate''' — RESOLVED by your "suicidal / never create Wikidata items" rule (decision C, NO-GO). Kept only as a low-urgency reference.
+* '''Spot-check the ~20 auto-filled Wikidata QIDs''' (agent filled exact-label + verified search-hit matches without per-page sign-off; miraheze edits, not Wikidata edits). Mapping: <code>shinto_miraheze/build_wikidata_resolution_csv.out.csv</code>; pages: [[Category:Pages git synced to resolve interlanguage and interwiki links]].
+* '''Keep or delete <code>.github/workflows/ci.yml</code>''' — agent added it autonomously (runs pytest on push; adds Actions runs).
 
 == Notes ==
 
