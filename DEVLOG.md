@@ -6,6 +6,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): third QID-overlap merge (道奥菊多国造 → Michinoku Kikuta Kuni-no-Miyatsuko)
+**Files:** `git_synced/道奥菊多国造.wiki`, `git_synced/Michinoku Kikuta Kuni-no-Miyatsuko.wiki`, `queue.md`
+
+The line-diff first looked like the cohort had unique prose (Lineage / Tutelary
+shrine sections), so I read the canonical before acting — and it DOES cover them
+(its `== Ancestry ==`/`== Clan ==`/`== Shrine ==`/`== See Also ==` carry the same
+content under different headers, plus a full-ja-history import + the QID
+Q11641674). So a clean redirect was safe: redirected `道奥菊多国造` → `Michinoku
+Kikuta Kuni-no-Miyatsuko` (cohort preserved in history), cleaned the canonical's
+merge-notice. Verify-before-acting is what made this safe. Merges now 3/10; the
+redirect-to-fuller set is done. Remaining: 3 content-moves (无邪志国造→Musashi,
+Kehi 100k→Jingū, List of Shikinaisha), 4 ambiguous flagged for Emma.
+
 ### Work-loop (:03): second QID-overlap merge (乎止与命 → Otoyo no mikoto)
 **Files:** `git_synced/乎止与命.wiki`, `git_synced/Otoyo no mikoto.wiki`, `queue.md`
 
