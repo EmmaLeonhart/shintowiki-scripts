@@ -6,6 +6,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): cleaned the answered merge questions off Open questions
+**Files:** `git_synced/Open questions.wiki`
+
+Did the deferred cleanup: pulled the live wiki page handling the malformed lone
+surrogate char (`errors="surrogatepass"` — that's what broke last tick's pull),
+then removed the resolved "In progress" merges section (both questions answered +
+all merges executed). Kept the still-pending self-audit items (QID spot-check,
+keep/delete ci.yml). The sync pushes the cleaned page back (my commit is newer
+than the 09:45 wiki rev → most-recent-wins). Page down to header + pending
+self-audit + Notes + sync-note.
+
 ### Work-loop (:03): completed the QID-overlap merges (Emma answered both questions)
 **Files:** `git_synced/{Kehi Shrine, 无邪志国造, Iwaki no Kuni no Miyatsuko, Mukuda no Kuni no Miyatsuko, 椎根津彦}.wiki` (→ redirects), `git_synced/Kehi Jingū.wiki` (QID), 5 canonical pages (notice cleanup), `queue.md`
 
