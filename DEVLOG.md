@@ -6,6 +6,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): built a self-audit GitHub Pages dashboard (Emma's request)
+**Files:** `site/generate_pages.py`, `_site/self-audit.html` (+ regen), `git_synced/Open questions.wiki`
+
+Emma (Open questions 14:29): she didn't understand what to review for the two
+self-audit items and asked for a GitHub Pages page. Added `self-audit.html` to
+the site generator: (1) a live table of the ~23 auto-filled Wikidata QIDs — each
+shintowiki page beside its filled QID + Wikidata label/description + a
+sitelinks-check link, so she can eyeball each page↔item match (reads the
+resolution category + WD labels at build time); (2) a keep-or-delete explanation
+of the agent-added ci.yml. Updated the Open-questions self-audit section to point
+at the page (acting on her request) and removed the now-answered "make a page"
+note. Generator runs clean.
+
 ### Work-loop (:03): delete the done interlanguage-resolution one-off scripts
 **Files:** removed `shinto_miraheze/pull_unresolved_wikidata_to_git_synced.py`,
 `shinto_miraheze/fill_resolved_wikidata_qids.py`; `queue.md`
