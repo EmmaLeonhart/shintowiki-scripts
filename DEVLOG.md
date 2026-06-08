@@ -6,6 +6,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): weekly Open-questions sweep — nothing new actionable
+**Files:** `queue.md`
+
+Ran the auto-added weekly-oq-sweep. Pulled the live [[Open questions]]: all Emma
+dispositions are already handled (the merge answers → all merges executed +
+the answered section pruned in the repo, pending sync to the wiki) and the only
+remaining bullets are the 2 self-audit items that genuinely await Emma's input
+(QID spot-check, keep/delete ci.yml) — not agent-actionable. So nothing to
+decompose into the queue. Deleted the sweep block per its own instruction.
+
 ### Work-loop (:03): cleaned the answered merge questions off Open questions
 **Files:** `git_synced/Open questions.wiki`
 
