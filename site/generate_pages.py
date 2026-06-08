@@ -242,6 +242,7 @@ def nav_html(active="index"):
     links = [
         ("index", "index.html", "Overview"),
         ("backlog", "backlog.html", "Backlog"),
+        ("self-audit", "self-audit.html", "Self-audit"),
         ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking"),
         ("p11250", "p11250.html", "P11250"),
         ("runs", "runs.html", "Run History"),
@@ -752,6 +753,139 @@ def generate_backlog_detail(item, entries, note):
 
 # ─── Main ────────────────────────────────────────────────────
 
+_WD_LINK_QID_RE = re.compile(r"\{\{\s*wikidata\s*link\s*\|\s*(Q\d+)", re.IGNORECASE)
+_WD_ENTITY_API = "https://www.wikidata.org/w/api.php"
+
+
+def _resolution_pages_with_qids():
+    """Return [(title, qid)] for pages in the interlanguage-resolution category
+    that the agent auto-filled with a QID — the set Emma needs to spot-check."""
+    out = []
+    params = {
+        "action": "query", "generator": "categorymembers",
+        "gcmtitle": "Category:Pages git synced to resolve interlanguage and interwiki links",
+        "gcmtype": "page", "gcmlimit": "50",
+        "prop": "revisions", "rvslots": "main", "rvprop": "content",
+        "format": "json", "formatversion": "2",
+    }
+    cont = {}
+    while True:
+        p = dict(params); p.update(cont)
+        r = http.get(WIKI_API, params=p, headers={"User-Agent": USER_AGENT}, timeout=60)
+        r.raise_for_status()
+        data = r.json()
+        for pg in data.get("query", {}).get("pages", []):
+            try:
+                txt = pg["revisions"][0]["slots"]["main"]["content"]
+            except (KeyError, IndexError):
+                continue
+            m = _WD_LINK_QID_RE.search(txt)
+            if m:
+                out.append((pg["title"], m.group(1)))
+        if "continue" not in data:
+            break
+        cont = data["continue"]; time.sleep(0.3)
+    return sorted(out)
+
+
+def _wd_labels(qids):
+    """Batch-fetch {qid: (label, description)} from Wikidata."""
+    labels = {}
+    qids = list(dict.fromkeys(qids))
+    for i in range(0, len(qids), 50):
+        batch = qids[i:i + 50]
+        try:
+            r = http.get(_WD_ENTITY_API, params={
+                "action": "wbgetentities", "ids": "|".join(batch),
+                "props": "labels|descriptions", "languages": "en|ja",
+                "format": "json",
+            }, headers={"User-Agent": USER_AGENT}, timeout=30)
+            r.raise_for_status()
+            ents = r.json().get("entities", {})
+            for q in batch:
+                e = ents.get(q, {})
+                lab = (e.get("labels", {}).get("en") or e.get("labels", {}).get("ja") or {}).get("value", "")
+                desc = e.get("descriptions", {}).get("en", {}).get("value", "")
+                labels[q] = (lab, desc)
+        except Exception:
+            for q in batch:
+                labels.setdefault(q, ("", ""))
+        time.sleep(0.3)
+    return labels
+
+
+def generate_self_audit():
+    """Render self-audit.html — a reviewable view of the agent's autonomous
+    actions Emma flagged she wanted to check (the auto-filled Wikidata QIDs and
+    the agent-added CI workflow)."""
+    try:
+        pairs = _resolution_pages_with_qids()
+    except Exception as exc:
+        pairs = []
+        err = str(exc)
+    else:
+        err = None
+    labels = _wd_labels([q for _, q in pairs]) if pairs else {}
+
+    rows = ""
+    for title, qid in pairs:
+        lab, desc = labels.get(qid, ("", ""))
+        rows += (
+            f'      <tr>'
+            f'<td><a href="{_wiki_href(title)}">{title}</a></td>'
+            f'<td><a href="https://www.wikidata.org/wiki/{qid}">{qid}</a></td>'
+            f'<td>{lab}</td><td style="color:#666;font-size:0.85rem">{desc}</td>'
+            f'<td><a href="https://www.wikidata.org/wiki/{qid}#sitelinks-wikipedia">check sitelinks</a></td>'
+            f'</tr>\n'
+        )
+    table = (
+        f'<table style="width:100%;font-size:0.9rem;border-collapse:collapse">\n'
+        f'  <thead><tr style="text-align:left;border-bottom:2px solid #4caf50">'
+        f'<th>Shintowiki page</th><th>Filled QID</th><th>Wikidata label</th>'
+        f'<th>Description</th><th>Verify</th></tr></thead>\n  <tbody>\n{rows}  </tbody>\n</table>'
+        if pairs else
+        (f'<p class="timestamp">Detection failed at build time: {err}</p>' if err
+         else '<p class="timestamp">No auto-filled QIDs currently detected (they may have drained as pages left the category).</p>')
+    )
+
+    body = f"""
+<h1>Self-audit — agent actions to review</h1>
+<div class="section">
+  <p>During the 2026-06-07/08 interlanguage-resolution work the bot took two kinds
+  of action on its own that it flagged for Emma to check. This page shows them
+  concretely so you can see exactly what to look at.</p>
+</div>
+
+<h2>1. Auto-filled Wikidata QIDs ({len(pairs)})</h2>
+<div class="info-box">
+  <p><strong>What this is / what to check:</strong> for each page below, the bot
+  decided <em>which Wikidata item that shintowiki page corresponds to</em> and
+  wrote that QID into the page's <code>{{{{wikidata link}}}}</code> (a
+  shinto.miraheze.org edit — <strong>not</strong> a Wikidata edit). It did this
+  without per-page sign-off, on a high-confidence match (the item's label exactly
+  matched the page's interlanguage target, or a verified search hit).</p>
+  <p><strong>To verify one:</strong> click the page and the QID side by side —
+  do they describe the <em>same</em> shrine/deity/place? The "Wikidata label" and
+  "Description" columns are there so you can eyeball most without clicking. If any
+  is wrong, tell the bot the page name and it'll clear that QID.</p>
+</div>
+{table}
+
+<h2>2. Agent-added CI workflow — keep or delete?</h2>
+<div class="section">
+  <p><strong>What it is:</strong> <code>.github/workflows/ci.yml</code> — the bot
+  added it autonomously. It runs the <code>pytest</code> suite (currently 52 tests,
+  covering the git-synced sync logic incl. the clobber fix) on every push that
+  touches Python, plus PRs. <strong>Upside:</strong> catches regressions (e.g. to
+  the clobber fix) automatically. <strong>Cost:</strong> it adds GitHub Actions
+  runs.</p>
+  <p><strong>Your call:</strong> keep it (recommended — it's cheap and guards the
+  sync logic), or tell the bot to delete it. Nothing depends on it.</p>
+</div>
+"""
+    return page_html("Self-audit — Shintowiki Scripts", body, active="self-audit")
+
+
 def main():
     os.makedirs(SITE_DIR, exist_ok=True)
 
@@ -800,6 +934,10 @@ def main():
 
     with open(os.path.join(SITE_DIR, "backlog.html"), "w", encoding="utf-8") as f:
         f.write(generate_backlog_index(backlog_counts))
+
+    print("Generating self-audit.html...", flush=True)
+    with open(os.path.join(SITE_DIR, "self-audit.html"), "w", encoding="utf-8") as f:
+        f.write(generate_self_audit())
 
     # Write summary.json for external consumption
     summary = {
