@@ -85,20 +85,29 @@ def _redirect_target(text: str):
     return _normalize_title(m.group("target"))
 
 
-USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
-PASSWORD = os.getenv("WIKI_PASSWORD", "")
+# Credentials are resolved PER-WIKI inside _process_wiki (see WIKIS below) —
+# there is deliberately no module-global USERNAME/PASSWORD, because that shape
+# is what caused miraheze creds to be used for the fandom login (LoginError,
+# 2026-06-08).
 THROTTLE = 2.5
 
+# Each wiki uses its OWN credentials — fandom is NOT shinto.miraheze.org and the
+# WIKI_* creds don't authenticate there. Using miraheze creds for fandom raised
+# an uncaught LoginError that reddened the whole cleanup job (2026-06-08). Creds
+# are resolved per-wiki at runtime; a wiki whose password env is absent is
+# skipped (non-fatal) rather than crashing the run.
 WIKIS = {
     "miraheze": {
         "url": "shinto.miraheze.org",
         "path": "/w/",
         "ua": "DeleteLowercaseTemplateCollisionsBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
+        "user_env": "WIKI_USERNAME", "pass_env": "WIKI_PASSWORD", "user_default": "EmmaBot",
     },
     "fandom": {
         "url": "shinto.fandom.com",
         "path": "/",
         "ua": "DeleteLowercaseTemplateCollisionsBot/1.0 (User:EmmaBot; shinto.fandom.com)",
+        "user_env": "FANDOM_USERNAME", "pass_env": "FANDOM_PASSWORD", "user_default": "",
     },
 }
 
@@ -167,12 +176,19 @@ def _process_wiki(wiki_key: str, apply: bool, max_deletes: int,
         cfg["url"], path=cfg["path"], clients_useragent=cfg["ua"],
     )
     if apply:
-        if not PASSWORD:
-            print(f"  FATAL: --apply requires WIKI_PASSWORD env var.",
-                  file=sys.stderr)
-            return 0, 0, 1
-        login_with_retry(site, USERNAME, PASSWORD)
-        print(f"  logged in as {USERNAME}")
+        # Resolve THIS wiki's own credentials. Fandom != miraheze: the WIKI_*
+        # creds don't authenticate on fandom, so using them there raised an
+        # uncaught LoginError that reddened the whole cleanup job (2026-06-08).
+        # A wiki whose password env is absent is SKIPPED (non-fatal) — the
+        # cleanup job only carries miraheze creds, so fandom skips cleanly.
+        username = os.getenv(cfg["user_env"], cfg["user_default"])
+        password = os.getenv(cfg["pass_env"], "")
+        if not password:
+            print(f"  SKIP wiki {cfg['url']}: no {cfg['pass_env']} env "
+                  f"set — cannot --apply here; skipping (non-fatal).")
+            return 0, 0, 0
+        login_with_retry(site, username, password)
+        print(f"  logged in as {username}")
     else:
         print("  dry-run (no login, no deletes)")
 

@@ -6,6 +6,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Fix `delete_lowercase_template_collisions` LoginError (per-wiki creds + graceful skip)
+**File:** `shinto_miraheze/delete_lowercase_template_collisions.py`
+
+Once the CI-starvation fix let the cleanup-loop run to completion, the
+`Cleanup: delete_lowercase_template_collisions` step failed the whole job with
+`mwclient.errors.LoginError: Incorrect username or password entered`. Root
+cause: the script defaults to `--wiki both` but logged into BOTH wikis with the
+module-global `WIKI_USERNAME`/`WIKI_PASSWORD` (miraheze creds). Fandom isn't
+shinto.miraheze.org, so its login failed and the uncaught exception reddened the
+run. Fix:
+* Each entry in `WIKIS` now carries its own `user_env`/`pass_env`/`user_default`
+  (miraheze → `WIKI_*`/`EmmaBot`; fandom → `FANDOM_*`).
+* `_process_wiki` resolves creds per-wiki; a wiki whose password env is absent is
+  **skipped non-fatally** (`return 0,0,0`) instead of FATAL-erroring. The cleanup
+  job only carries miraheze creds, so miraheze processes and fandom skips cleanly.
+* Removed the dead module-global `USERNAME`/`PASSWORD` (that shape was the bug).
+Verified: `--apply` with no creds skips both wikis and exits 0; 52 tests pass.
+
 ### Fix CI starvation (cleanup-loop → daily, generate-pages own schedule) + Grok category mainspace gate
 **Files:** `.github/workflows/cleanup-loop.yml`, `.github/workflows/generate-pages.yml`,
 `miraheze_unique/Template%3AWikidata link.wiki`
