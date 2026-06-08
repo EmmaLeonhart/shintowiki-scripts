@@ -6,6 +6,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Fix CI starvation (cleanup-loop → daily, generate-pages own schedule) + Grok category mainspace gate
+**Files:** `.github/workflows/cleanup-loop.yml`, `.github/workflows/generate-pages.yml`,
+`miraheze_unique/Template%3AWikidata link.wiki`
+
+Emma flagged the cleanup-loop is perpetually cancelled and starving its tail
+jobs. Root cause (evidenced): cleanup-loop ran on `push` + 6h `schedule` with
+`cancel-in-progress`, so every ~hourly content push cancelled the multi-hour
+pipeline before it finished → the *_unique syncs and generate-pages (which is
+`workflow_call`-only, invoked only at the cleanup-loop tail since ddddffb6)
+never ran; Pages last built 2026-05-31. Fixes:
+* **cleanup-loop → once daily** (`cron: 23 2 * * *`) and **removed the `push`
+  trigger** so pushes no longer cancel it — one uninterrupted daily run.
+* **generate-pages: re-added a standalone daily schedule** (`cron: 23 7 * * *`)
+  so Pages refreshes regardless of the cleanup-loop (the original
+  merge-conflict reason for removing it was mitigated by d0bc7816; the `pages`
+  concurrency group keeps a scheduled run + a cleanup-loop call from piling up).
+* **Grok category mainspace-gate:** `Template:Wikidata link`'s Grok auto-category
+  block put non-mainspace pages into `[[Category:Pages to be checked for
+  Grokipedia]]` (and the with/without variants). Wrapped the category emission
+  in `{{#ifeq:{{NAMESPACE}}||…}}` so only mainspace (ns0) pages get the Grok
+  categories; kept the `[[got:…]]` interwiki link unconditional. Verified via the
+  live parser: mainspace → category present; Template/Category ns → none.
+  (Edited the miraheze_unique copy — the live wiki template syncs from there.)
+
 ### Work-loop (:03): built a self-audit GitHub Pages dashboard (Emma's request)
 **Files:** `site/generate_pages.py`, `_site/self-audit.html` (+ regen), `git_synced/Open questions.wiki`
 

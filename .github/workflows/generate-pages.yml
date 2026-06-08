@@ -3,6 +3,16 @@ name: Generate GitHub Pages
 on:
   workflow_dispatch:
   workflow_call:
+  # Standalone daily schedule (re-added 2026-06-08). It was removed in ddddffb6
+  # so Pages would only run as the tail of cleanup-loop (to avoid concurrent
+  # _site merge conflicts). But cleanup-loop is now ~always cancelled
+  # (cancel-in-progress + frequent pushes + its multi-hour runtime), so it never
+  # reaches this job and Pages starved (last build 2026-05-31). The merge-conflict
+  # risk was since mitigated (d0bc7816: commit full _site, CI updates it), and the
+  # `pages` concurrency group makes a scheduled run + a cleanup-loop call coexist
+  # safely. 07:23 UTC avoids the cleanup-loop's 0/6/12/18 fires.
+  schedule:
+    - cron: "23 7 * * *"
 
 permissions:
   contents: write

@@ -14,5 +14,5 @@
 [[Category:Templates missing wikidata]]
 </noinclude>
 <includeonly><!-- BEGIN_GROK_AUTO_CATEGORIES -->
-{{#ifeq:{{{grok|}}}|none|[[Category:Pages without Grokipedia links]]|{{#if:{{{grok|}}}|[[got:{{{grok}}}]][[Category:Pages with Grokipedia links]]|[[Category:Pages to be checked for Grokipedia]]}}}}
+{{#ifeq:{{{grok|}}}|none||{{#if:{{{grok|}}}|[[got:{{{grok}}}]]}}}}{{#ifeq:{{NAMESPACE}}||{{#ifeq:{{{grok|}}}|none|[[Category:Pages without Grokipedia links]]|{{#if:{{{grok|}}}|[[Category:Pages with Grokipedia links]]|[[Category:Pages to be checked for Grokipedia]]}}}}}}
 <!-- END_GROK_AUTO_CATEGORIES --></includeonly>

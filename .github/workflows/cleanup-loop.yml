@@ -2,16 +2,16 @@ name: shinto-cleanup-loop
 
 on:
   workflow_dispatch:
-  push:
-    paths-ignore:
-      - "**/*.state"
-      - "**/*.log"
-      - "**/*.errors"
   schedule:
-    # Every 6 hours. Each fire runs the full pipeline; concurrency
-    # `cancel-in-progress: true` evicts any prior run still going so
-    # back-to-back orchestrator sweeps don't pile up.
-    - cron: "0 */6 * * *"
+    # Once daily (changed from every-6h + push-triggered, 2026-06-08, Emma).
+    # The old setup (6h schedule + a `push:` trigger + `cancel-in-progress`)
+    # meant every content push cancelled the in-progress run; the pipeline takes
+    # multiple hours, so with ~hourly commits it ~never completed and its tail
+    # jobs (the *_unique syncs, generate-pages) starved (Pages last built
+    # 2026-05-31). Now: one uninterrupted daily run. The `push:` trigger is
+    # removed for the same reason — the syncs and generate-pages have their own
+    # schedules for freshness, so nothing relies on a per-push cleanup-loop.
+    - cron: "23 2 * * *"
 
 permissions:
   contents: write
