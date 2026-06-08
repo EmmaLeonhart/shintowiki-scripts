@@ -6,6 +6,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-07
 
+### Work-loop (:03): cross-script test for the title↔filename mapping
+**Files:** `shinto_miraheze/tests/test_title_filename_roundtrip.py` (new), `queue.md`
+
+Queue's actionable items all blocked (merges→Emma, no-hit→articles, cleanups→
+gated), so promoted a test-hardening item: the page-title↔filename mapping is
+duplicated verbatim in all 3 sync scripts (git_synced / fandom_unique /
+miraheze_unique) and was untested — a silent divergence would mis-map pages and
+corrupt the sync. Note: the sync scripts can't be imported under pytest (they do
+`sys.stdout = io.TextIOWrapper(...)` at module load, which breaks pytest
+capture); rather than modify load-bearing scripts on an idle tick, the test
+exec's only the extracted `_FORBIDDEN`/`title_to_filename`/`filename_to_title`
+source in an isolated namespace. 4 tests: round-trip per script (incl. `%3A`/
+`%3F`/`%25`/`%2F`/unicode), forbidden-char encoding, percent-escaped-first, and
+all-three-agree-on-output. Full suite: 52 passed. (First attempt's byte-identical
+source check was a flawed regex — replaced with behavioural agreement.)
+
 ### ci.yml modern-quickstatements coverage — converged with Emma's identical edit (no-op)
 **Files:** `.github/workflows/ci.yml` (unchanged at commit time), `DEVLOG.md`
 
