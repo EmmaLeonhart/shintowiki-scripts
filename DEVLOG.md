@@ -6,6 +6,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Reconcile stale `todo.md` backlog items 2 & 4 (ILL-fix + multiple-WD-link)
+**File:** `todo.md`
+
+Work-loop tick: every `queue.md` item is Emma-gated and the live `[[Open
+questions]]` had no answered bullets, so promoted the next unblocked `todo.md`
+work. Investigation found items "ILLs without `WD=`" and "Multiple
+`{{wikidata link}}`" describe *building* fix scripts that are already built,
+wired, and running autonomously in CI: `fix_ill_destinations.py` (in
+`wiki-cleanup.yml`, `--apply --max-edits 50`, complete 410-line impl) and
+`report_multiple_wikidata_links.py` (in `render-duplicate-qids.yml`, `--apply`).
+Rewrote both items to record the build as shipped+running and state the true
+residual — inherent per-page human review the running scripts already surface on
+dashboards — so future ticks don't re-investigate done builds. No code/wiki/Wikidata
+changes. (Verified by reading both scripts + grepping the workflow wiring.)
+
 ### Fix `delete_lowercase_template_collisions` LoginError (per-wiki creds + graceful skip)
 **File:** `shinto_miraheze/delete_lowercase_template_collisions.py`
 
