@@ -6,6 +6,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ## 2026-06-08
 
+### Work-loop (:03): completed the QID-overlap merges (Emma answered both questions)
+**Files:** `git_synced/{Kehi Shrine, 无邪志国造, Iwaki no Kuni no Miyatsuko, Mukuda no Kuni no Miyatsuko, 椎根津彦}.wiki` (→ redirects), `git_synced/Kehi Jingū.wiki` (QID), 5 canonical pages (notice cleanup), `queue.md`
+
+Emma answered on the wiki (09:45): translation-merges → "just drop the untranslated
+stuff" (redirect-away, JP→history); 4 ambiguous → "just kinda do it choose one".
+Executed all remaining merges:
+* Kehi Shrine → redirect `Kehi Jingū` (set Kehi Jingū's QID Q11129346 first; "Jingū wins"; raw JP dropped to history per Emma).
+* 无邪志国造 → redirect `Musashi no Kuni no Miyatsuko` (has Q11504612).
+* Iwaki → `Ishikami no Kuni no Miyatsuko` (Q11585422); Mukuda → `Makuta Kuni no Miyatsuko` (Q11667981); 椎根津彦 → `Saonetsuhiko` (Q11120574) — chose the QID-holding canonical in each.
+* `List of Kuni no Miyatsuko` ↔ `Kuni no miyatsuko` = list-vs-concept FALSE POSITIVE (like Shikinaisha) — NOT a merge; the 74k list correctly has no QID, the concept page correctly holds Q2483673.
+Result: 8 genuine merges done (3 earlier + 5 now), 2 false-positives removed.
+Cleaned merge-notice + resolution category off the 5 canonicals. Did NOT touch
+the legacy/Q-dab pages. The merge backlog is fully drained.
+
 ### Work-loop (:03): pushed the pending Open-questions question to the wiki (interface was stale)
 Noticed the live [[Open questions]] wiki page lagged the repo — my translation-merge
 question (dd5cd223, committed 06:26 UTC) hadn't synced because the last scheduled
