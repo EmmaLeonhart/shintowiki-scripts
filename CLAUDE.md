@@ -257,6 +257,17 @@ the retry — do not replace it with a single-shot push.
 
 ## Gotchas
 
+* **DO NOT "fix" the `Pages without wikidata legacy[ legacy[ legacy]]` category
+  state, and do not auto-edit the Q-titled `[[Category:Double category qids]]`
+  dab pages.** Emma did this *surgically and intentionally* (2026-06-08). The
+  rationale: `Pages without wikidata` is a crud category being drained, so
+  stripping the literal tag off a page races against the self-categorizing
+  `{{wikidata link}}` template reintroducing it — a reintroduction collision.
+  Moving the legacy population onto a distinct `legacy`-suffixed category name
+  that nothing auto-reintroduces removes that race. **The repeated `legacy`
+  suffix and the odd dab-page formatting are intentional, not corruption** — it
+  is self-healing *unless an agent actively interferes*. Never normalize/revert
+  the suffix, never "repair" those dab pages, never point an op at them.
 * **Read the DEVLOG.md top entry** when making non-trivial changes;
   it captures recent refactors and constraints (server-load effort,
   retry loop, migration criterion) that aren't visible from the code
