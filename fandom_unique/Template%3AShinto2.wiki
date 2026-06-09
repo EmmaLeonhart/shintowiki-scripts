@@ -1,0 +1,77 @@
+{{Navbox
+|name  = Shinto2
+|title = [[Shinto|<span style="color:White;">Shinto</span>]]
+|bodyclass = hlist
+|basestyle =background:#b0000f
+|groupstyle = background:#FFCCCB;
+|image = [[File:Shinto torii vermillion.svg|right|85px]]
+| state = {{{state|autocollapse}}}
+
+|group1 = Practices and beliefs
+|list1 =
+* [[Kami]]
+* [[Kagura|Ritual dance]]
+* [[Misogi|Ritual purity]]
+* [[:en:Polytheism|Polytheism]]
+* [[:en:Animism|Animism]]
+* [[Japanese festivals]]
+* [[Japanese mythology|Mythology]]
+
+|group2 = [[:en:Shinto shrine|Shinto shrine]]s
+|list2 =
+* [[:en:List of Shinto shrines|List of Shinto shrines]]
+* [[Ichinomiya]]
+* [[:en:Twenty-Two Shrines|Twenty-Two Shrines]]
+* [[Modern system of Ranked Shinto shrines]]
+* [[Association of Shinto Shrines]]
+* [[:en:Shinto architecture|Shinto architecture]]
+
+|group3 = [[:en:List of Japanese deities|Notable Kami]]
+|list3 = 
+* [[Amaterasu]]
+* [[Ame-no-Uzume]]
+* [[:en:Inari Ōkami|Inari]]
+* [[Izanagi]]
+* [[:en:Izanami|Izanami]]
+* [[Susanoo-no-Mikoto|Susanoo]]
+* [[Tsukuyomi-no-Mikoto|Tsukuyomi]]
+
+|group4 = Important literature
+|list4 =
+* ''[[Kojiki]]'' (''ca''. 711 CE)
+* ''[[Nihon Shoki]]'' (720 CE)
+* ''[[Fudoki]]''  (713–723 CE)
+* ''[[Shoku Nihongi]]''  (797 CE)
+* ''[[Kogo Shūi]]''  (807 CE)
+* ''[[Kujiki]]''  (807 to 936 CE)
+* ''[[Engishiki]]'' (927 CE)
+
+|group5 = [[:Category:Shinto|See also]]
+|list5 =
+* [[:en:Religion in Japan|Religion in Japan]]
+* [[Glossary of Shinto]]
+* [[:en:List of Japanese deities|List of Japanese deities]]
+* [[:en:List of sacred objects in Japanese mythology|Sacred objects]]
+* [[:en:Buddhism in Japan|Japanese Buddhism]]
+* [[:en:Edo neo-Confucianism|Edo neo-Confucianism]]
+* [[Ko-Shintō]]
+* [[:en:State Shinto|State Shinto]]
+* [[Overseas Shinto]]
+* [[:en:Nippon Kaigi|Nippon Kaigi]]
+* [[:en:List of legendary creatures from Japan|Mythical creatures]]
+* [[:en:History of Shinto|History]]
+* [[:en:Taoism in Japan|Taoism in Japan]]
+** [[Onmyōdō]]
+** [[Onmyōji]]
+
+}}<noinclude>
+[[Category:Shinto templates| ]]
+[[Category:Independently git synced pages| ]]
+[[Category:Japan navigational boxes]]
+[[Category:Religion and belief navigational boxes]]
+
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates missing wikidata]]
+[[Category:Independently git synced pages]]
+</noinclude>

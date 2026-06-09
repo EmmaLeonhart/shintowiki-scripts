@@ -1,0 +1,585 @@
+{{Documentation subpage}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+
+{{#ifeq:{{SUBPAGENAME}}|sandbox||{{High-use}}}}
+
+== Usage ==
+This template generates a table of designations for sites which have been deemed worthy of protection by local, state, provincial, national, or other governmental bodies. Its functionality is similar to {{tl|Infobox historic site}}, but is intended for articles that already have another infobox. It should usually be [[#Embedding|embedded]] in an article's existing infobox, but can be used to display a stand-alone table in a subsection, such as in an article on a broader topic, if necessary.
+
+Supported designations are listed at [[Wikipedia:WikiProject Historic sites]]. If you would like to add a new designation, post a note on the template's talk page.
+
+Although this template uses the same supported designations as [[:en:Template:Designation|Template:Designation]], a different colour palette is used.  The colours for {{tl|Designation}} (see [[Template:Designation/colour]]) are used for backgrounds, so the background and text colour combinations must not be hard to see for those who are fully or partially [[colour blind]] (see [[WP:Accessibility]]).  The colours for this template  (see [[Template:Designation/colour2]]) are used for borders, so there is somewhat greater scope to use colours connected at least loosely with their designations. For example, the blue border used for {{ill|Historical Monument|als|Monument historique|ar|المعالم التاريخية في فرنسا|ast|Monumentu históricu de Francia|az|Tarixi abidə (Fransa)|ca|Monument historique (França)|cs|Monument historique|da|Monument historique|de|Monument historique|el|Ιστορικό Μνημείο (Γαλλία)|en|Monument historique|eo|Historia Monumento (Francio)|es|Monumento histórico de Francia|eu|Monumentu historiko (Frantzia)|fr|Monument historique (France)|id|Monument historique|it|Monumento storico (Francia)|ja|歴史的記念物 (フランス)|ko|역사기념물 (프랑스)|ms|Monumen sejarah (Perancis)|nl|Monument historique|oc|Monument istoric en França|pl|Monument historique|pt|Monumento histórico da França|ru|Исторический памятник (Франция)|sk|Monument historique|sv|Monument historique|th|อนุสรณ์สถานทางประวัติศาสตร์แห่งฝรั่งเศส|tr|Monument historique|uk|Історична пам'ятка (Франція)|vls|Monument historique|zh|法国历史遗迹|lt=Historical Monument|qid=Q916475}} is the same shade of blue present in the [[:en:Flag of France|Flag of France]].   
+
+===Blank template===
+{{Infobox designation list
+| embed                   = {{{embed}}}
+| designation1            = {{{designation1}}}
+| designation1_offname    = {{{designation1_offname}}}
+| designation1_type       = {{{designation1_type}}}
+| designation1_criteria   = {{{designation1_criteria}}}
+| designation1_date       = {{{designation1_date}}}
+| delisted1_date          = {{{delisted1_date}}}
+| designation1_partof     = {{{designation1_partof}}}
+| designation1_number     = {{{designation1_number}}}
+| designation1_free1name  = {{{designation1_free1name}}}
+| designation1_free1value = {{{designation1_free1value}}}
+| designation1_free2name  = {{{designation1_free2name}}}
+| designation1_free2value = {{{designation1_free2value}}}
+| designation1_free3name  = {{{designation1_free3name}}}
+| designation1_free3value = {{{designation1_free3value}}}
+| designation2            = {{{designation2}}}
+| designation2_offname    = {{{designation2_offname}}}
+| designation2_type       = {{{designation2_type}}}
+| designation2_criteria   = {{{designation2_criteria}}}
+| designation2_date       = {{{designation2_date}}}
+| delisted2_date          = {{{delisted2_date}}}
+| designation2_partof     = {{{designation2_partof}}}
+| designation2_number     = {{{designation2_number}}}
+| designation2_free1name  = {{{designation2_free1name}}}
+| designation2_free1value = {{{designation2_free1value}}}
+| designation2_free2name  = {{{designation2_free2name}}}
+| designation2_free2value = {{{designation2_free2value}}}
+| designation2_free3name  = {{{designation2_free3name}}}
+| designation2_free3value = {{{designation2_free3value}}}
+| designation3            = {{{designation3}}}
+| designation3_offname    = {{{designation3_offname}}}
+| designation3_type       = {{{designation3_type}}}
+| designation3_criteria   = {{{designation3_criteria}}}
+| designation3_date       = {{{designation3_date}}}
+| delisted3_date          = {{{delisted3_date}}}
+| designation3_partof     = {{{designation3_partof}}}
+| designation3_number     = {{{designation3_number}}}
+| designation3_free1name  = {{{designation3_free1name}}}
+| designation3_free1value = {{{designation3_free1value}}}
+| designation3_free2name  = {{{designation3_free2name}}}
+| designation3_free2value = {{{designation3_free2value}}}
+| designation3_free3name  = {{{designation3_free3name}}}
+| designation3_free3value = {{{designation3_free3value}}}
+| designation4            = {{{designation4}}}
+| designation4_offname    = {{{designation4_offname}}}
+| designation4_type       = {{{designation4_type}}}
+| designation4_criteria   = {{{designation4_criteria}}}
+| designation4_date       = {{{designation4_date}}}
+| delisted4_date          = {{{delisted4_date}}}
+| designation4_partof     = {{{designation4_partof}}}
+| designation4_number     = {{{designation4_number}}}
+| designation4_free1name  = {{{designation4_free1name}}}
+| designation4_free1value = {{{designation4_free1value}}}
+| designation4_free2name  = {{{designation4_free2name}}}
+| designation4_free2value = {{{designation4_free2value}}}
+| designation4_free3name  = {{{designation4_free3name}}}
+| designation4_free3value = {{{designation4_free3value}}}
+| designation5            = {{{designation5}}}
+| designation5_offname    = {{{designation5_offname}}}
+| designation5_type       = {{{designation5_type}}}
+| designation5_criteria   = {{{designation5_criteria}}}
+| designation5_date       = {{{designation5_date}}}
+| delisted5_date          = {{{delisted5_date}}}
+| designation5_partof     = {{{designation5_partof}}}
+| designation5_number     = {{{designation5_number}}}
+| designation5_free1name  = {{{designation5_free1name}}}
+| designation5_free1value = {{{designation5_free1value}}}
+| designation5_free2name  = {{{designation5_free2name}}}
+| designation5_free2value = {{{designation5_free2value}}}
+| designation5_free3name  = {{{designation5_free3name}}}
+| designation5_free3value = {{{designation5_free3value}}}
+| designation6            = {{{designation6}}}
+| designation6_offname    = {{{designation6_offname}}}
+| designation6_type       = {{{designation6_type}}}
+| designation6_criteria   = {{{designation6_criteria}}}
+| designation6_date       = {{{designation6_date}}}
+| delisted6_date          = {{{delisted6_date}}}
+| designation6_partof     = {{{designation6_partof}}}
+| designation6_number     = {{{designation6_number}}}
+| designation6_free1name  = {{{designation6_free1name}}}
+| designation6_free1value = {{{designation6_free1value}}}
+| designation6_free2name  = {{{designation6_free2name}}}
+| designation6_free2value = {{{designation6_free2value}}}
+| designation6_free3name  = {{{designation6_free3name}}}
+| designation6_free3value = {{{designation6_free3value}}}
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox designation list
+| embed                   = 
+| designation1            = 
+| designation1_offname    = 
+| designation1_type       = 
+| designation1_criteria   = 
+| designation1_date       = 
+| delisted1_date          = 
+| designation1_partof     = 
+| designation1_number     = 
+| designation1_free1name  = 
+| designation1_free1value = 
+| designation1_free2name  = 
+| designation1_free2value = 
+| designation1_free3name  = 
+| designation1_free3value = 
+| designation2            = 
+| designation2_offname    = 
+| designation2_type       = 
+| designation2_criteria   = 
+| designation2_date       = 
+| delisted2_date          = 
+| designation2_partof     = 
+| designation2_number     = 
+| designation2_free1name  = 
+| designation2_free1value = 
+| designation2_free2name  = 
+| designation2_free2value = 
+| designation2_free3name  = 
+| designation2_free3value = 
+| designation3            = 
+| designation3_offname    = 
+| designation3_type       = 
+| designation3_criteria   = 
+| designation3_date       = 
+| delisted3_date          = 
+| designation3_partof     = 
+| designation3_number     = 
+| designation3_free1name  = 
+| designation3_free1value = 
+| designation3_free2name  = 
+| designation3_free2value = 
+| designation3_free3name  = 
+| designation3_free3value = 
+| designation4            = 
+| designation4_offname    = 
+| designation4_type       = 
+| designation4_criteria   = 
+| designation4_date       = 
+| delisted4_date          = 
+| designation4_partof     = 
+| designation4_number     = 
+| designation4_free1name  = 
+| designation4_free1value = 
+| designation4_free2name  = 
+| designation4_free2value = 
+| designation4_free3name  = 
+| designation4_free3value = 
+| designation5            = 
+| designation5_offname    = 
+| designation5_type       = 
+| designation5_criteria   = 
+| designation5_date       = 
+| delisted5_date          = 
+| designation5_partof     = 
+| designation5_number     = 
+| designation5_free1name  = 
+| designation5_free1value = 
+| designation5_free2name  = 
+| designation5_free2value = 
+| designation5_free3name  = 
+| designation5_free3value =
+| designation6            = {{{designation6}}}
+| designation6_offname    = {{{designation6_offname}}}
+| designation6_type       = {{{designation6_type}}}
+| designation6_criteria   = {{{designation6_criteria}}}
+| designation6_date       = {{{designation6_date}}}
+| delisted6_date          = {{{delisted6_date}}}
+| designation6_partof     = {{{designation6_partof}}}
+| designation6_number     = {{{designation6_number}}}
+| designation6_free1name  = {{{designation6_free1name}}}
+| designation6_free1value = {{{designation6_free1value}}}
+| designation6_free2name  = {{{designation6_free2name}}}
+| designation6_free2value = {{{designation6_free2value}}}
+| designation6_free3name  = {{{designation6_free3name}}}
+| designation6_free3value = {{{designation6_free3value}}}
+}}
+</syntaxhighlight>
+
+==Designations==
+{{Infobox designation list
+| designation1 = WHS
+| designation1_date = 1981 (5th [[:en:World Heritage Committee|session]])
+| designation1_partof = [[:en:Arles, Roman and Romanesque Monuments|Arles, Roman and Romanesque Monuments]]
+| designation1_number = [http://whc.unesco.org/en/list/164 164]
+| designation1_criteria = ii, iv
+| designation1_type = Cultural
+| designation1_free1name = Region
+| designation1_free1value = [[:en:List of World Heritage Sites in Europe|Europe and North America]]
+| designation2 = Monument historique
+| designation2_date = 1840
+| designation2_number = PA00081180
+| designation2_offname = Obélisque antique
+}}
+
+Up to six designations can be displayed. Normally designations are listed in decreasing scope (i.e. an international designation first, followed by a national one, etc.). Each designation is represented by a colored bar, controlled by the {{tl|Designation}} template. For more information see [[:en:Template:Designation/doc|Template:Designation/doc]].
+
+To display a designation, there are several templates. While no parameters are necessary, it is recommended that at least the designation date and reference number (if applicable) are known before adding the designation. For each designation (1–6) the following parameters may be used:
+
+''designation1'' – Input the callname of the designation here. For a list of supported callnames, see [[Template:Designation/doc#Supported designations]].
+::'''Example format –''' <code>|&nbsp;designation1 = World Heritage Site</code>
+''designation1_offname'' – The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.
+::'''Example format –''' <code>|&nbsp;designation1_offname = Obélisque antique</code>
+''designation1_type'' – Some registers have certain types of designations (i.e. "Natural" and "Cultural", "Grade I" and "Grade II", etc.). If the type is closely associated with the designation, input that type here.
+::'''Example format –''' <code>|&nbsp;designation1_type = Cultural</code>
+''designation1_criteria'' – Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.
+::'''Example format –''' <code>|&nbsp;designation1_criteria = ii, iv</code>
+''designation1_date'' – Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).
+::'''Example format –''' <code>|&nbsp;designation1_date = <nowiki>March 4, 1972<ref>{{cite web|...}}</ref></nowiki></code>
+''delisted1_date'' – If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word "Former" to the beginning. This parameter also needs a reference.
+::'''Example format –''' <code>|&nbsp;delisted1_date = <nowiki>March 5, 1972<ref>{{cite web|...}}</ref></nowiki></code>
+''designation1_partof'' – Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). For example, [[:en:Ellis Island|Ellis Island]] is a part of the [[:en:Statue of Liberty National Monument|Statue of Liberty National Monument]]; both are listed as [[:en:New York City Landmark|New York City Landmark]]s. If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.
+::'''Example format –''' <code>|&nbsp;designation1_partof = <nowiki>[[:en:Statue of Liberty National Monument|Statue of Liberty National Monument]]</nowiki></code>
+''designation1_number'' – Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.
+::'''Example format –''' <code>|&nbsp;designation1_number = 70010045</code>
+
+For designations 2-6, these same parameters are used, only "designation1" in all the parameters is replaced by "designation2", "designation3", etc.
+
+;Custom parameters:
+Besides all of these hard-coded parameters there is also the possibility of adding up to 3 custom parameters for each designation. These can be used for information specific to that single register (such as "Region" for World Heritage Sites or "Multiple Property Submission" to the U.S. National Register of Historic Places). If there is anything extra needed to fully identify the designated site, include it here.
+''designation1_free1name'' – The name (bolded part) of the 1st custom parameter you would like to identify.
+::'''Example format –''' <code>|&nbsp;designation1_free1name = Region</code>
+''designation1_free1value'' – The value to which you want to set the custom parameter.
+::'''Example format –''' <code>|&nbsp;<nowiki>designation1_free1value = [[World Heritage Sites in Europe|Europe and North America]]</nowiki></code>
+
+Up to three custom parameters can be named and defined for each parameter (<code>|&nbsp;designation1_free2name =</code>, <code>|&nbsp;designation1_free2value =</code>, etc.).
+
+==Embedding==
+By adding {{para|embed|yes}} to the first line of code, one can embed this infobox into another, creating one continuous infobox. Other infoboxes will need to have a special parameter that allows embedding. For example, {{tl|Infobox venue}} has an <code>embedded</code> parameter for this purpose, so it is possible to do the following:
+
+{{Infobox venue
+| stadium_name = Olympic Memorial Stadium
+| image = [[File:11-11-06-LA-Coliseum-USC-UO.jpg|250px|Olympic Memorial Stadium during the Big Match]]
+| caption = Olympic Memorial Stadium during the Big Match
+| location = 123 Main Street, Anytown, Any County
+| broke_ground = December 21, 1921
+| opened = May 1, 1923
+| owner = Ministry of Any County
+| operator = Government of Anytown
+| surface = Natural Grass
+| architect = Acme
+| embedded =
+  {{Infobox designation list
+  | embed = yes
+  | designation1 = WHS
+  | designation1_date = 1997-02-05
+  | designation1_number = 12345
+  | designation2 = NRHP
+  | designation2_date = 2000-12-07
+  | designation2_number = ABCD
+  | designation3 = California
+  | designation3_date = 2010-09-31
+  | designation3_number = CN555
+  }}
+}}
+<syntaxhighlight lang="wikitext" style="width:50%; overflow:scroll">
+{{Infobox venue
+| stadium_name = Olympic Memorial Stadium
+| image = [[File:11-11-06-LA-Coliseum-USC-UO.jpg|250px|Olympic Memorial Stadium during the Big Match]]
+| caption = Olympic Memorial Stadium during the Big Match
+| location = 123 Main Street, Anytown, Any County
+| broke_ground = December 21, 1921
+| opened = May 1, 1923
+| owner = Ministry of Any County
+| operator = Government of Anytown
+| surface = Natural Grass
+| architect = Acme
+| embedded =
+  {{Infobox designation list
+  | embed = yes
+  | designation1 = WHS
+  | designation1_date = 1997-02-05
+  | designation1_number = 12345
+  | designation2 = NRHP
+  | designation2_date = 2000-12-07
+  | designation2_number = ABCD
+  | designation3 = California
+  | designation3_date = 2010-09-31
+  | designation3_number = CN555
+  }}
+}}
+</syntaxhighlight>
+
+{{clear}}
+Please note that parameters and other data which appear in both templates should usually be eliminated from one or the other to avoid repeating information. For example, {{tl|Infobox protected area}} already has parameters to display IUCN designations.
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly> 
+
+==Template Data==
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "An Infobox on Designation list",
+	"params": {
+		"embed": {
+			"type": "string",
+			"suggested": true
+		},
+		"delisted1_date": {
+			"type": "string"
+		},
+		"designation1": {
+			"suggested": true,
+			"type": "string"
+		},
+		"designation1_offname": {
+			"type": "string"
+		},
+		"designation1_type": {
+			"type": "string"
+		},
+		"designation1_criteria": {
+			"type": "string"
+		},
+		"designation1_date": {
+			"type": "string"
+		},
+		"designation1_partof": {
+			"type": "string"
+		},
+		"designation1_number": {
+			"type": "string"
+		},
+		"designation1_free1name": {
+			"type": "string"
+		},
+		"designation1_free1value": {
+			"type": "string"
+		},
+		"designation1_free2name": {
+			"type": "string"
+		},
+		"designation1_free2value": {
+			"type": "string"
+		},
+		"designation1_free3name": {
+			"type": "string"
+		},
+		"designation1_free3value": {
+			"type": "string"
+		},
+		"designation2": {
+			"suggested": true,
+			"type": "string"
+		},
+		"delisted2_date": {
+			"type": "string"
+		},
+		"designation2_offname": {
+			"type": "string"
+		},
+		"designation2_type": {
+			"type": "string"
+		},
+		"designation2_criteria": {
+			"type": "string"
+		},
+		"designation2_date": {
+			"type": "string"
+		},
+		"designation2_partof": {
+			"type": "string"
+		},
+		"designation2_number": {
+			"type": "string"
+		},
+		"designation2_free1name": {
+			"type": "string"
+		},
+		"designation2_free1value": {
+			"type": "string"
+		},
+		"designation2_free2name": {
+			"type": "string"
+		},
+		"designation2_free2value": {
+			"type": "string"
+		},
+		"designation2_free3name": {
+			"type": "string"
+		},
+		"designation2_free3value": {
+			"type": "string"
+		},
+		"designation3": {
+			"suggested": true,
+			"type": "string"
+		},
+		"delisted3_date": {
+			"type": "string"
+		},
+		"designation3_offname": {
+			"type": "string"
+		},
+		"designation3_type": {
+			"type": "string"
+		},
+		"designation3_criteria": {
+			"type": "string"
+		},
+		"designation3_date": {
+			"type": "string"
+		},
+		"designation3_partof": {
+			"type": "string"
+		},
+		"designation3_number": {
+			"type": "string"
+		},
+		"designation3_free1name": {
+			"type": "string"
+		},
+		"designation3_free1value": {
+			"type": "string"
+		},
+		"designation3_free2name": {
+			"type": "string"
+		},
+		"designation3_free2value": {
+			"type": "string"
+		},
+		"designation3_free3name": {
+			"type": "string"
+		},
+		"designation3_free3value": {
+			"type": "string"
+		},
+		"designation4": {
+			"suggested": true,
+			"type": "string"
+		},
+		"delisted4_date": {
+			"type": "string"
+		},
+		"designation4_offname": {
+			"type": "string"
+		},
+		"designation4_type": {
+			"type": "string"
+		},
+		"designation4_criteria": {
+			"type": "string"
+		},
+		"designation4_date": {
+			"type": "string"
+		},
+		"designation4_partof": {
+			"type": "string"
+		},
+		"designation4_number": {
+			"type": "string"
+		},
+		"designation4_free1name": {
+			"type": "string"
+		},
+		"designation4_free1value": {
+			"type": "string"
+		},
+		"designation4_free2name": {
+			"type": "string"
+		},
+		"designation4_free2value": {
+			"type": "string"
+		},
+		"designation4_free3name": {
+			"type": "string"
+		},
+		"designation4_free3value": {
+			"type": "string"
+		},
+		"designation5": {
+			"suggested": true,
+			"type": "string"
+		},
+		"delisted5_date": {
+			"type": "string"
+		},
+		"designation5_offname": {
+			"type": "string"
+		},
+		"designation5_type": {
+			"type": "string"
+		},
+		"designation5_criteria": {
+			"type": "string"
+		},
+		"designation5_date": {
+			"type": "string"
+		},
+		"designation5_partof": {
+			"type": "string"
+		},
+		"designation5_number": {
+			"type": "string"
+		},
+		"designation5_free1name": {
+			"type": "string"
+		},
+		"designation5_free1value": {
+			"type": "string"
+		},
+		"designation5_free2name": {
+			"type": "string"
+		},
+		"designation5_free2value": {
+			"type": "string"
+		},
+		"designation5_free3name": {
+			"type": "string"
+		},
+		"designation5_free3value": {
+			"type": "string"
+		},
+		"designation6": {
+			"suggested": true,
+			"type": "string"
+		},
+		"delisted6_date": {
+			"type": "string"
+		},
+		"designation6_offname": {
+			"type": "string"
+		},
+		"designation6_type": {
+			"type": "string"
+		},
+		"designation6_criteria": {
+			"type": "string"
+		},
+		"designation6_date": {
+			"type": "string"
+		},
+		"designation6_partof": {
+			"type": "string"
+		},
+		"designation6_number": {
+			"type": "string"
+		},
+		"designation6_free1name": {
+			"type": "string"
+		},
+		"designation6_free1value": {
+			"type": "string"
+		},
+		"designation6_free2name": {
+			"type": "string"
+		},
+		"designation6_free2value": {
+			"type": "string"
+		},
+		"designation6_free3name": {
+			"type": "string"
+		},
+		"designation6_free3value": {
+			"type": "string"
+		}
+	}
+}
+</templatedata>
+
+== See also ==
+* [[Template:Infobox NRHP]]
+<noinclude>
+[[Category:Place-related infobox templates|Designation list]]
+[[Category:Embeddable templates]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>

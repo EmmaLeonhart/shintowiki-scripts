@@ -1,0 +1,28 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+
+'''Inari Shrine''' (稲成神社) refers to a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} (specifically an {{ill|Inari shrine|en|Inari shrine|qid=Q514480|lt=Inari Shrine|1=Inari shrine}}). There are three registered {{ill|Religious Corporation|ja|宗教法人|12=simple|13=User:Immanuelle/Religious Corporation|1=religious corporation|comment=changed title based on wikidata|qid=Q7311343}} under this name.
+
+* {{ill|Taikodani Inari Shrine|ja|太皷谷稲成神社|12=simple|13=User:Immanuelle/Taikodani Inari Shrine}} - Located in {{ill|Tsuwano, Shimane|en|Tsuwano, Shimane|qid=Q640586|lt=Tsuwano Town|1=Tsuwano, Shimane}}, {{ill|Kanoashi District, Shimane|en|Kanoashi District, Shimane|qid=Q1349420|lt=Kanoashi District|1=Kanoashi District, Shimane}}, Shimane Prefecture.
+* {{ill|Inari Shrine (Tsuwano Town)|ja|稲成神社 (津和野町)|12=simple|13=User:Immanuelle/Inari Shrine (Tsuwano Town)|ja_comment=jawiki link invalid|qid=Q135579227|1=Inari Shrine (Tsuwano Town)}} - Located in Tsuwano Town, Kanoashi District, Shimane Prefecture.
+* {{ill|Inari Shrine (Kurume City)|ja|稲成神社 (久留米市)|12=simple|13=User:Immanuelle/Inari Shrine (Kurume City)|ja_comment=jawiki link invalid|qid=Q135579228|1=Inari Shrine (Kurume City)}} - Located in {{ill|Kurume|en|Kurume|qid=Q320934|lt=Kurume City|1=Kurume}}, {{ill|Tanushimaru, Fukuoka|en|Tanushimaru, Fukuoka|qid=Q7683922|lt=Tanushimaru Town|1=Tanushimaru, Fukuoka}}, Noda, Fukuoka Prefecture.
+
+== Related Items ==
+* {{ill|Motonosumi Shrine|ja|元乃隅神社|12=simple|13=User:Immanuelle/Motonosumi Shrine|1=Motonosumi Shrine|comment=changed title based on wikidata|qid=Q22120637}} (Yuyatsuo, Nagato City, Yamaguchi Prefecture) - Previously named "Motonosumi Inari Shrine," but it is not a registered religious corporation.
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Inari Shrine (Q60988699)|lt=Inari Shrine|qid=Q60988699}}
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|稲成神社|version=102014665|comment=Imported full ja history}}
+
+{{wikidata link|Q60988699|ja|稲成神社}}
+[[Category:All disambiguation pages]]
+[[Category:Inari faith]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]
