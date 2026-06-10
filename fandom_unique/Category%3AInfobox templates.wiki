@@ -1,0 +1,27 @@
+<!--templates-->
+{{Pathnavbox|
+* {{Pathnav|主要カテゴリ|ウィキペディアの管理|ウィキペディアのテンプレート|スタイル別のテンプレート|}}
+}}
+{{Template category
+|topic = Infobox系統
+|description =  系統のテンプレートを集めるカテゴリ
+|portal = 
+|ALTTEXT = 
+|notes = 
+|help = no
+}}
+{{WikiProjectリンク|テンプレート|}}
+{{translated page|ja|Category:基礎情報テンプレート|version=99913286}}
+{{redirect|WP:INFO|information regarding the use of information pages on Wikipedia|Wikipedia:INFOPAGES|the wikiproject|Wikipedia:WikiProject Infoboxes|style guidelines|Wikipedia:Manual of Style/Infoboxes}}
+{{shortcuts|CAT:INFOBOX|WP:INFO}}
+{{All included|[[WP:INFOBOXES|infoboxes]]|infoboxes}}
+{{Commons cat|Infobox templates}}
+{{WikiProject Infoboxes sidebar |collapsed}}
+{{CatAutoTOC}}
+{{wikidata link|Q6154820}}
+<!--interwikis-->
+[[ja:Category:基礎情報テンプレート]]
+[[en:Category:Infobox templates]]
+<!--categories-->
+[[Category:Wikipedia infoboxes| ]]
+[[Category:Independently git synced pages]]
