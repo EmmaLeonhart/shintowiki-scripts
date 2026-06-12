@@ -1,0 +1,35 @@
+{{Infobox
+| italic title   = {{{italic title|no}}}
+| abovestyle     = color: #000000; background-color: #cef2e0;
+| above          = {{{Folk_Tale_Name|{{BASEPAGENAME}}}}}
+
+|   image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|{{{Image_Name|}}} }}}|size={{{image_size|}}}|sizedefault=frameless|alt={{{alt|}}}}}
+| caption        = {{{caption|{{{Image_Caption|}}} }}}
+
+| header1  = {{#if: {{{Folk_Tale_Name|}}}{{{AKA|}}} | Folk tale }}
+|  label2  = Name
+|   data2  = {{{Folk_Tale_Name|}}}
+|  label3  = Also known as
+|   data3  = {{{AKA|}}}
+|  label5  = [[Aarne–Thompson classification system|Aarne–Thompson]] grouping
+|   data5  = {{{Aarne-Thompson Grouping|}}}
+|  label6  = Mythology
+|   data6  = {{{Mythology|}}}
+|  label7  = Country
+|   data7  = {{{Country|}}}
+|  label8  = Region
+|   data8  = {{{Region|}}}
+|  label9  = Origin Date
+|   data9  = {{{Origin_Date|}}}
+|  label10  = Published in
+|   data10  = {{{Published_In|}}}
+|  label11 = Related
+|   data11 = {{{Related|}}}
+}}<noinclude>
+{{doc}}
+
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
