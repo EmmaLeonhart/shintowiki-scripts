@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-12T07:22:58.448495+00:00",
+  "generated_utc": "2026-06-12T11:11:39.308195+00:00",
   "stats": {
     "linked_to_wikidata": 0,
     "without_wikidata": 0,
@@ -8,10 +8,10 @@
     "untranslated_japanese": 0,
     "double_category_qids": 8,
     "duplicated_qid_redirects": 0,
-    "total_pages": 11057,
-    "total_edits": 3788509
+    "total_pages": 11056,
+    "total_edits": 3789169
   },
-  "p11250_pending": 5536,
+  "p11250_pending": 5520,
   "backlog_counts": {
     "1": 4,
     "2": 51,
