@@ -1,7 +1,6 @@
 <includeonly>{{#invoke:Infobox dim|dim}}</includeonly>{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox dim]] with unknown parameter "_VALUE_"|ignoreblank=y| area_acre | area_ha | area_km2 | area_mi2 | dim | length_km | length_mi | population | scale | type | width_km | width_mi }}<noinclude>
 {{Documentation}}[[Category:Templates with Documentation template]]
 [[Category:Pages using infobox dim with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

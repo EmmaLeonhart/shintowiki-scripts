@@ -31,7 +31,6 @@ The template also accepts other geohack parameters to generate the dim argument:
 <noinclude>
 [[Category:Map formatting and function templates]]
 [[Category:Place-related infobox templates]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

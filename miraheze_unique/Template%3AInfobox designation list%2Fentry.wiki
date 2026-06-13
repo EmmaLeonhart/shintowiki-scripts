@@ -40,7 +40,6 @@
 }}<noinclude>
 {{Documentation|content=This is an internal template used in {{tl|Infobox designation list}} to produce individual entries.}}
 
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

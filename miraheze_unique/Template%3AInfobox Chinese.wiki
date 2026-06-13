@@ -7,7 +7,6 @@
 |data1={{#invoke:Infobox multi-lingual name|ibox_mln}}
 }}</includeonly><noinclude>
 [[Category:Templates transcluded in mainspace]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]

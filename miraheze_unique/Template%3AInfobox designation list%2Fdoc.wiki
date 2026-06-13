@@ -576,7 +576,6 @@ Please note that parameters and other data which appear in both templates should
 <noinclude>
 [[Category:Place-related infobox templates|Designation list]]
 [[Category:Embeddable templates]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
