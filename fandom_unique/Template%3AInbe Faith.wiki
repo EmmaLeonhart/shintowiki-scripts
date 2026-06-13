@@ -1,0 +1,33 @@
+{{Navbox
+| name  = Inbe Faith
+| title = [[Inbe clan|Inbe Faith]]
+| listclass = hlist
+| image = [[File:Precincts of Awa-jinja.JPG|150px|link=|alt=]]
+ |group1 = Main Deities
+ |list1 =
+* [[Inbe clan]]
+* [[Futodama]]
+ |group2 = Shrines
+ |list2 =
+* [[Awa Shrine]]
+* [[:en:Inbe Shrine|Inbe Shrine]]
+* [[:en:Ōasahiko Shrine|Ōasahiko Shrine]]
+* [[Susaki Shrine]]
+
+|group4 = Cadet branches
+|list4=
+* [[Nakatomi clan]]
+
+|group5 = Misc
+|list5 =
+* [[Kogo Shūi]]
+
+}}<noinclude>
+{{wikidata link|Q125506974|en|Template:Inbe Faith|fr|Modèle:Palette Clan Inbe|check_date=2026-05-22}}
+[[Category:Inbe clan]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
+</noinclude>

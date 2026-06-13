@@ -1,0 +1,63 @@
+{{Navbox
+| name  = Inari Faith
+| title = [[:en:Inari shrine|Inari shrines]]
+
+| basestyle = background:#b0000f;
+| listtitlestyle = background:#FFCCCB;
+| listclass = hlist
+| image = [[File:A man confronted with an apparition of the Fox goddess.jpg|150px|link=|alt=]]
+|groupstyle = background:#FFCCCB; color:#fff;
+| group1 = Gods
+| list1 = {{Navbox|child
+|groupstyle = background:#FFCCCB; color:#fff; |group1 = Main Deities
+ |list1 =
+* [[:en:Inari Ōkami|Inari Ōkami]]
+* [[Ukanomitama]]
+ |group2 = Minor gods
+ |list2 =
+* [[Dakini]]
+* [[:en:Fox spirit|Fox spirit]]
+* [[:en:Shinshi|Shinshi]]
+}}
+| group2 = Places
+| list2 ={{Navbox|child
+|groupstyle = background:#FFCCCB; color:#fff; |group1 = Head Shrine
+ |list1 =
+* [[Fushimi Inari-taisha]]
+
+ |group2 = Other Shrines
+ |list2 =
+* {{ill|Shiwa Inari Shrine|ja|志和稲荷神社|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|12=simple|13=User:Immanuelle/Shiwa Inari Shrine}}
+* [[Takekoma Inari Shrine]]
+* {{ill|Yakyu Inari Shrine|ja|箭弓稲荷神社 (東松山市)|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|12=simple|13=User:Immanuelle/Yakyu Inari Shrine}}
+* [[Yūtoku Inari Shrine]]
+* {{ill|Taikodani Inari Shrine|ja|太皷谷稲成神社|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|12=simple|13=User:Immanuelle/Taikodani Inari Shrine}}
+* [[Kasama Inari Shrine]]
+* [[Takahashi Inari Shrine]]
+* [[:en:Namiyoke Inari Shrine|Namiyoke Inari Shrine]]
+* [[Takayama Inari Shrine]]
+* [[Tamatsukuri Inari Shrine]]
+
+ |group3= Temples
+ |list3=
+* [[:en:Toyokawa Inari|Toyokawa Inari]]
+* [[Ryōhō-ji]]
+* {{ill|Saijo Inari|ja|最上稲荷|12=simple|13=User:Immanuelle/Saijo Inari|12=simple|13=User:Immanuelle/Saijo Inari}}
+* {{ill|Toyokawa Inari Tokyo|ja|豊川稲荷東京別院|12=simple|13=User:Immanuelle/Toyokawa Inari Tokyo|12=simple|13=User:Immanuelle/Toyokawa Inari Tokyo}}
+}}
+
+|group3= Misc
+|list3=
+* [[:en:Abura-age|Abura-age]]
+* [[:en:Fox spirit|Fox spirit]]
+}}
+<noinclude>
+[[en:Template:Inari Faith]]{{wikidata link|Q125475111|en|Template:Inari Faith|fr|Modèle:Palette Inari|check_date=2026-05-22}}
+[[Category:Buddhism in Japan templates]]
+[[Category:Inari faith]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
+</noinclude>
