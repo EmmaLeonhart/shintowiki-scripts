@@ -7,8 +7,8 @@
 | group1 = Head Shrine
 | list1 = 
 * [[Ise Grand Shrine]]
-**{{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮|every|Kotai jingu|12=simple|13=User:Immanuelle/Kōtai Jingū|12=simple|13=User:Immanuelle/Kōtai Jingū|qq=}}（Naikū）
-**{{ill|Toyōke Daijingū|ja|豊受大神宮|zh|豐受大神宮|every|12=simple|13=User:Immanuelle/Toyōke Daijingū|12=simple|13=User:Immanuelle/Toyōke Daijingū|qq=}}（Gekū）</div>
+**[[Kōtai Jingū]]（Naikū）
+**[[Toyōke Daijingū]]（Gekū）</div>
 
 | group2 = [[:en:Prefectures of Japan|Prefectures]]
 | list2 = {{Navbox|subgroup
@@ -32,19 +32,19 @@
 ** [[Saruka Shrine|Saruka]]
 *'''[[:en:Iwate Prefecture|Iwate]]''' 
 ** [[Komagata Shrine|Komagata]]
-** {{ill|Shiwa Inari Shrine|ja|志和稲荷神社|every|lt=Shiwa Inari|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|qq=}}
+** [[Shiwa Inari Shrine|Shiwa Inari]]
 ** [[Morioka Hachimangū]]
 *'''[[:en:Miyagi Prefecture|Miyagi]]''' 
 ** [[:en:Shiogama shrine|Shiogama]]
-** {{ill|Koganeyama Shrine (Ishinomaki)|ja|黄金山神社 (石巻市)|every|lt=Koganeyama|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|qq=}}
+** [[Koganeyama Shrine (Ishinomaki)|Koganeyama]]
 ** [[Takekoma Inari Shrine|Takekoma Inari]]
 ** [[Miyagi Gokoku Shrine|Gokoku]]
 ** [[Ōsaki Hachimangū]]
 *'''[[:en:Akita Prefecture|Akita]]''' 
 ** [[:en:Koshiō Shrine|Koshiō]]
-** {{ill|Taiheizan Miyoshi Shrine|lt=Taiheizan Miyoshi Shrine|lt=Taiheiyama Miyoshi Shrine|ja|太平山三吉神社|every|lt=Taiheiyama Miyoshi|12=simple|13=User:Immanuelle/Taiheiyama Miyoshi Shrine|12=simple|13=User:Immanuelle/Taiheiyama Miyoshi Shrine|qq=}}
-** {{ill|Akita Suwa Shrine|ja|秋田諏訪宮|every|lt=Akita Suwa|12=simple|13=User:Immanuelle/Akita Suwa Shrine|12=simple|13=User:Immanuelle/Akita Suwa Shrine|qq=}}
-** {{ill|Akita Gokoku Shrine|ja|秋田県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Akita Gokoku Shrine|12=simple|13=User:Immanuelle/Akita Gokoku Shrine|qq=}}
+** [[Taiheizan Miyoshi Shrine]]
+** [[Akita Suwa Shrine|Akita Suwa]]
+** [[Akita Gokoku Shrine|Gokoku]]
 *'''[[:en:Yamagata Prefecture|Yamagata]]''' 
 **[[:en:Three Mountains of Dewa|Three Mountains of Dewa]]
 ***[[Gassan Shrine|Gassan]]
@@ -55,17 +55,17 @@
 ** [[Kinbō Shrine|Kinbō]]
 ** [[Kumano Shrine (Yamagata)|Kumano]]
 ** [[:en:Gokoku shrines|Gokoku]]
-** {{ill|Ayukai Hachimangu|ja|鮎貝八幡宮|every|12=simple|13=User:Immanuelle/Ayukai Hachimangu|12=simple|13=User:Immanuelle/Ayukai Hachimangu|qq=}}
-** {{ill|Yachi Hachimangū|lt=Yachi Hachimangū|lt=Yachi Hachimangu|ja|谷地八幡宮|every|12=simple|13=User:Immanuelle/Yachi Hachimangu|12=simple|13=User:Immanuelle/Yachi Hachimangu|qq=}}
-** {{ill|Chōkai Gassan Ryōsho-gū|ja|鳥海月山両所宮|every|12=simple|13=User:Immanuelle/Chōkai gassan ryōsho-gu|12=simple|13=User:Immanuelle/Chōkai gassan ryōsho-gu|qq=}}
-** {{ill|Sagae Hachimangu|ja|寒河江八幡宮|every|12=simple|13=User:Immanuelle/Sagae Hachimangu|12=simple|13=User:Immanuelle/Sagae Hachimangu|qq=}}
-** {{ill|Kitadate Shrine|lt=Kitadate Shrine|lt=Hokutan Shrine|ja|北舘神社|every|lt=Hokutan|12=simple|13=User:Immanuelle/Hokutan Shrine|12=simple|13=User:Immanuelle/Hokutan Shrine|qq=}}
+** [[Ayukai Hachimangu]]
+** [[Yachi Hachimangū]]
+** [[Chōkai Gassan Ryōsho-gū]]
+** [[Sagae Hachimangu]]
+** [[Kitadate Shrine]]
 *'''[[:en:Fukushima Prefecture|Fukushima]]''' 
 ** [[Tsutsukowake Shrine|Tsutsukowake]]
 ** [[Isasumi Shrine|Isasumi]]
 ** [[Tsutsukowake Shrine|Tsutsukowake]]
 ** [[:en:Ryōzen Shrine|Ryōzen]]
-** {{ill|Fukushima Gokoku Shrine|ja|福島縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Fukushima Gokoku Shrine|12=simple|13=User:Immanuelle/Fukushima Gokoku Shrine|qq=}}
+** [[Fukushima Gokoku Shrine|Gokoku]]
 
     | group3     = [[:en:Kantō region|Kantō]]
     | group3style= border-right: 4px solid #79FF76
@@ -77,9 +77,9 @@
 **[[Tokiwa shrine|Tokiwa]]
 **[[Tsukubasan Shrine|Tsukubasan]]
 **[[:en:Mito Tōshō-gū|Mito Tōshō-gū]]
-**{{ill|Osugi Shrine|ja|大杉神社|every|lt=Osugi|12=simple|13=User:Immanuelle/Osugi Shrine|12=simple|13=User:Immanuelle/Osugi Shrine|qq=}}
+**[[Osugi Shrine|Osugi]]
 **[[Kasama Inari Shrine|Kasama Inari]]
-**{{ill|Ibaraki Gokoku Shrine|ja|茨城県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Ibaraki Gokoku Shrine|12=simple|13=User:Immanuelle/Ibaraki Gokoku Shrine|qq=}}
+**[[Ibaraki Gokoku Shrine|Gokoku]]
 *'''[[:en:Tochigi Prefecture|Tochigi]]'''
 **[[Futarasan shrine|Futarasan]]
 **[[Utsunomiya Futarayama Shrine|Utsunomiya Futarayama]]
@@ -87,14 +87,14 @@
 **[[:en:Nikkō Tōshō-gū|Nikkō Tōshō-gū]]†
 *'''[[:en:Gunma Prefecture|Gunma]]''' 
 **[[Nukisaki Shrine|Nukisaki]]
-**{{ill|Gunma Gokoku Shrine|ja|群馬縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Gunma Gokoku Shrine|12=simple|13=User:Immanuelle/Gunma Gokoku Shrine|qq=}}
+**[[Gunma Gokoku Shrine|Gokoku]]
 *'''[[:en:Saitama Prefecture|Saitama]]''' 
 **[[Hikawa Shrine (Saitama)|Hikawa]]
 **[[Kanasana Shrine|Kanasana]]
 **[[Chichibu Shrine|Chichibu]]
-**{{ill|Mitsumine Shrine|ja|三峯神社|every|lt=Mitsumine|12=simple|13=User:Immanuelle/Mitsumine Shrine|12=simple|13=User:Immanuelle/Mitsumine Shrine|qq=}}
-**{{ill|Hodosan Shrine|ja|寳登山神社|every|lt=Hodosan|12=simple|13=User:Immanuelle/Hodosan Shrine|12=simple|13=User:Immanuelle/Hodosan Shrine|qq=}}
-**{{ill|Yakyu Inari Shrine|ja|箭弓稲荷神社 (東松山市)|every|lt=Yakyu Inari|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|qq=}}
+**[[Mitsumine Shrine|Mitsumine]]
+**[[Hodosan Shrine|Hodosan]]
+**[[Yakyu Inari Shrine|Yakyu Inari]]
 **[[:en:Hikawa Shrine (Kawagoe)|Hikawa]]
 **[[:en:Washinomiya Shrine|Washinomiya]]
 **[[Koma Shrine|Koma]]
@@ -103,7 +103,7 @@
 **[[Katori Jingū|Katori]]
 **[[Tamasaki Shrine|Tamasaki]]
 **[[Komikado Shrine|Komikado]]
-**{{ill|Chiba Gokoku Shrine|ja|千葉縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Chiba Gokoku Shrine|12=simple|13=User:Immanuelle/Chiba Gokoku Shrine|qq=}}
+**[[Chiba Gokoku Shrine|Gokoku]]
 
 *'''[[:en:Tokyo|Tokyo]]'''
 **[[Meiji Jingu|Meiji]]
@@ -115,18 +115,18 @@
 **[[:en:Tōgō Shrine|Tōgō]]
 **[[:en:Ōmiya Hachimangū (Tokyo)|Ōmiya Hachimangū]]
 **[[Yushima Tenmangū]]
-**{{ill|Igusa Hachimangu|ja|井草八幡宮|every|12=simple|13=User:Immanuelle/Igusa Hachimangu|12=simple|13=User:Immanuelle/Igusa Hachimangu|qq=}}
+**[[Igusa Hachimangu]]
 **[[:en:Yasukuni Shrine|Yasukuni]]†
 *'''[[:en:Kanagawa Prefecture|Kanagawa]]''' 
 **[[Samukawa Shrine|Samukawa]]
 **[[Tsurugaoka Hachimangū]]
 **[[Hakone Shrine|Hakone]]
 **[[Enoshima Shrine|Enoshima]]
-**{{ill|Iseyama Kotaijingu|ja伊勢山皇大神宮|1=Iseyama Kōtai Jingū|2=fr|3=Iseyama Kotai Jingu|4=ja|5=伊勢山皇大神宮|6=zh|7=伊勢山皇大神宮|12=simple|13=User:Immanuelle/Iseyama Kotaijingu|13=User:Immanuelle/Iseyama Kōtai Jingū|12=simple|13=User:Immanuelle/Iseyama Kotaijingu|13=User:Immanuelle/Iseyama Kōtai Jingū|qq=}}
-**{{ill|Hiratsuka Hachimangu|ja|平塚八幡宮|1=Hiratsuka Hachimangu|every|12=simple|13=User:Immanuelle/Hiratsuka Hachimangu|13=User:Immanuelle/Hiratsuka Hachimangu|12=simple|13=User:Immanuelle/Hiratsuka Hachimangu|13=User:Immanuelle/Hiratsuka Hachimangu|qq=}}
+**[[Iseyama Kotaijingu|Iseyama Kōtai Jingū]]
+**[[Hiratsuka Hachimangu]]
 **[[Hōtoku  Ninomiya Shrine|Hōtoku  Ninomiya]]
-**{{ill|Inage Shrine|ja|稲毛神社|every|lt=Inage|12=simple|13=User:Immanuelle/Inage Shrine|12=simple|13=User:Immanuelle/Inage Shrine|qq=}}
-**{{ill|Ōyama Afuri Shrine|ja|大山阿夫利神社|every|lt=Oyama Afuri|12=simple|13=User:Immanuelle/Ōyama Afuri Shrine|12=simple|13=User:Immanuelle/Ōyama Afuri Shrine|qq=}}
+**[[Inage Shrine|Inage]]
+**[[Ōyama Afuri Shrine|Oyama Afuri]]
 **[[Kamakura-gū]]†
 
     | group4      = [[:en:Chūbu region|Chūbu]]
@@ -135,37 +135,37 @@
 *'''[[:en:Niigata Prefecture|Niigata]]''' 
 **[[Yahiko Shrine|Yahiko]]
 **[[Watatsu Shrine|Watatsu]]
-**{{ill|Niigata Gokoku Shrine|ja|新潟縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Niigata Gokoku Shrine|12=simple|13=User:Immanuelle/Niigata Gokoku Shrine|qq=}}
-**{{ill|Hakusan Shrine|ja|白山神社 (新潟市中央区一番堀通町)|every|lt=Hakusan|12=simple|13=User:Immanuelle/Hakusan Shrine|12=simple|13=User:Immanuelle/Hakusan Shrine|qq=}}
+**[[Niigata Gokoku Shrine|Gokoku]]
+**[[Hakusan Shrine|Hakusan]]
 *'''[[:en:Toyama Prefecture|Toyama]]''' 
 **[[Takase Shrine|Takase]]
 **[[Oyama Shrine (Tateyama)|Oyama (Tateyama)]]
 **[[Imizu Shrine|Imizu]]
 **[[:en:Toyama Gokoku Shrine|Gokoku]]
-**{{ill|Hie Shrine (Toyama)|ja|日枝神社_(富山市)|every|lt=Hie|12=simple|13=User:Immanuelle/Hie Shrine (Toyama)|12=simple|13=User:Immanuelle/Hie Shrine (Toyama)|qq=}}
+**[[Hie Shrine (Toyama)|Hie]]
 *'''[[:en:Ishikawa Prefecture|Ishikawa]]''' 
 **[[Shirayama Hime Shrine|Shirayama Hime]]
-**{{ill|Sugōisobe Shrine|ja|菅生石部神社|every|lt=Sugōisobe|12=simple|13=User:Immanuelle/Sugōisobe Shrine|12=simple|13=User:Immanuelle/Sugōisobe Shrine|qq=}}
+**[[Sugōisobe Shrine|Sugōisobe]]
 **[[Oyama Shrine (Ishikawa)|Oyama (Ishikawa)]]
-**{{ill|Onominato Shrine|ja|大野湊神社|every|lt=Onominato|12=simple|13=User:Immanuelle/Onominato Shrine|12=simple|13=User:Immanuelle/Onominato Shrine|qq=}}
-**{{ill|Ishikawa Gokoku Shrine|ja|石川護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Ishikawa Gokoku Shrine|12=simple|13=User:Immanuelle/Ishikawa Gokoku Shrine|qq=}}
+**[[Onominato Shrine|Onominato]]
+**[[Ishikawa Gokoku Shrine|Gokoku]]
 **[[Keta Taisha]]†
 *'''[[:en:Fukui Prefecture|Fukui]]''' 
 **[[Kehi Jingū|Kehi]]
 **[[Kanegasaki-gū]]
 **[[Wakasahiko Shrine|Wakasahiko]]
-**{{ill|Tsurugi Shrine|ja|劔神社|every|lt=Tsurugi|12=simple|13=User:Immanuelle/Tsurugi Shrine|12=simple|13=User:Immanuelle/Tsurugi Shrine|qq=}}
+**[[Tsurugi Shrine|Tsurugi]]
 **[[Fujishima Shrine|Fujishima]]
-**{{ill|Fukui Shrine|ja|福井神社|every|lt=Fukui|12=simple|13=User:Immanuelle/Fukui Shrine|12=simple|13=User:Immanuelle/Fukui Shrine|qq=}}
-**{{ill|Fukui Gokoku Shrine|ja|福井県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Fukui Gokoku Shrine|12=simple|13=User:Immanuelle/Fukui Gokoku Shrine|qq=}}
-**{{ill|Shinmei Shrine (Fukui City)|lt=Shinmei|ja|神明神社_(福井市)|every|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|qq=}}
+**[[Fukui Shrine|Fukui]]
+**[[Fukui Gokoku Shrine|Gokoku]]
+**[[Shinmei Shrine (Fukui City)|Shinmei]]
 *'''[[:en:Yamanashi Prefecture|Yamanashi]]''' 
 ** [[:en:Ichinomiya Asama Shrine (Fuefuki)|Ichinomiya Asama]]
-**{{ill|Kitaguchi Hongū Fuji Sengen Shrine|ja|北口本宮冨士浅間神社|every|lt=Kitaguchi Hongu Fuji Asama|12=simple|13=User:Immanuelle/Kitaguchi Hongū Fuji Sengen Shrine|12=simple|13=User:Immanuelle/Kitaguchi Hongū Fuji Sengen Shrine|qq=}}
-**{{ill|Fuji Omuro Asama Shrine|ja|冨士御室浅間神社|every|lt=Fuji Omuro Asama|12=simple|13=User:Immanuelle/Fuji Omuro Asama Shrine|12=simple|13=User:Immanuelle/Fuji Omuro Asama Shrine|qq=}}
+**[[Kitaguchi Hongū Fuji Sengen Shrine|Kitaguchi Hongu Fuji Asama]]
+**[[Fuji Omuro Asama Shrine|Fuji Omuro Asama]]
 **[[Takeda Shrine|Takeda]]
-**{{ill|Omuro Sengen Shrine (Yamanashi)|ja|冨士山下宮小室浅間神社|every|lt=Fuji Yamashitamiya Komuro Asama|12=simple|13=User:Immanuelle/Omuro Sengen Shrine (Yamanashi)|12=simple|13=User:Immanuelle/Omuro Sengen Shrine (Yamanashi)|qq=}}
-**{{ill|Yamanashi Gokoku Shrine|ja|山梨縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Yamanashi Gokoku Shrine|12=simple|13=User:Immanuelle/Yamanashi Gokoku Shrine|qq=}}
+**[[Omuro Sengen Shrine (Yamanashi)|Fuji Yamashitamiya Komuro Asama]]
+**[[Yamanashi Gokoku Shrine|Gokoku]]
 *'''[[:en:Nagano Prefecture|Nagano]]''' 
 **[[Suwa-taisha]]
 ***Kamisha Hongu
@@ -175,18 +175,18 @@
 **[[Ikushimatarushima Shrine|Ikushimatarushima]]
 **[[Togakushi Shrine|Togakushi]]
 **[[:en:Hotaka Shrine|Hotaka]]
-**{{ill|Nagano Gokoku Shrine|ja|長野縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Nagano Gokoku Shrine|12=simple|13=User:Immanuelle/Nagano Gokoku Shrine|qq=}}
-**{{ill|Yohashira Shrine|ja|四柱神社|every|lt=Yohashira|12=simple|13=User:Immanuelle/Yohashira Shrine|12=simple|13=User:Immanuelle/Yohashira Shrine|qq=}}
-**{{ill|Fukashi Shrine|ja|深志神社|every|lt=Fukashi|12=simple|13=User:Immanuelle/Fukashi Shrine|12=simple|13=User:Immanuelle/Fukashi Shrine|qq=}}
-**{{ill|Tenaga Shrine|ja|手長神社|every|lt=Tenaga|12=simple|13=User:Immanuelle/Tenaga Shrine|12=simple|13=User:Immanuelle/Tenaga Shrine|qq=}}
-**{{ill|Takemizuwake Shrine|ja|武水別神社|every|lt=Takemizuwake|12=simple|13=User:Immanuelle/Takemizuwake Shrine|12=simple|13=User:Immanuelle/Takemizuwake Shrine|qq=}}
-**{{ill|Nyakuichi Ōji Shrine|ja|若一王子神社|every|lt=Nyakuichi Ouji|12=simple|13=User:Immanuelle/Nyakuichi Ōji Shrine|12=simple|13=User:Immanuelle/Nyakuichi Ōji Shrine|qq=}}
+**[[Nagano Gokoku Shrine|Gokoku]]
+**[[Yohashira Shrine|Yohashira]]
+**[[Fukashi Shrine|Fukashi]]
+**[[Tenaga Shrine|Tenaga]]
+**[[Takemizuwake Shrine|Takemizuwake]]
+**[[Nyakuichi Ōji Shrine|Nyakuichi Ouji]]
 *'''[[:en:Gifu Prefecture|Gifu]]''' 
 **[[Nangū Taisha]]
 **[[Minashi Shrine|Minashi]]
 **[[:en:Inaba Shrine|Inaba]]
 **[[Gifu Gokoku Shrine|Gokoku]]
-**{{ill|Sakurayama Hachimangu|ja|桜山八幡宮|every|lt=Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|qq=}}
+**[[Sakurayama Hachimangu]]
 *'''[[:en:Shizuoka Prefecture|Shizuoka]]''' 
 **[[Mishima Taisha]]
 **[[Fujisan Hongū Sengen Taisha]]
@@ -196,13 +196,13 @@
 **[[Izusan Shrine|Izusan]]
 **[[:en:Kunōzan Tōshō-gū|Kunōzan Tōshō-gū]]
 **[[Akihasan Hongū Akiha Shrine|Akihasan Hongū Akiha]]
-**{{ill|Ikonahime no Mikoto Shrine|lt=Ikonahime no Mikoto Shrine|lt=Shirahama Shrine|ja|伊古奈比咩命神社|every|lt=Shirahama|12=simple|13=User:Immanuelle/Shirahama Shrine|12=simple|13=User:Immanuelle/Shirahama Shrine|qq=}}
-**{{ill|Shizuoka Gokoku Shrine|ja|靜岡縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Shizuoka Gokoku Shrine|12=simple|13=User:Immanuelle/Shizuoka Gokoku Shrine|qq=}}
+**[[Ikonahime no Mikoto Shrine]]
+**[[Shizuoka Gokoku Shrine|Gokoku]]
 **[[Yaizu Shrine|Yaizu]]
-**{{ill|Oi Shrine|ja|大井神社_(島田市)|every|lt=Oi|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
-**{{ill|Gosha Suwa Shrine|ja|五社神社・諏訪神社|fr|every|lt=Gosha Suwa|12=simple|13=User:Immanuelle/Gosha Suwa Shrine|12=simple|13=User:Immanuelle/Gosha Suwa Shrine|qq=}}
-**{{ill|Kinomiya Shrine|ja|来宮神社|every|lt=Kinomiya|12=simple|13=User:Immanuelle/Kinomiya Shrine|12=simple|13=User:Immanuelle/Kinomiya Shrine|qq=}}
-**{{ill|Fuji Rokusho Sengen Shrine|ja|富知六所淺間神社|every|lt=Fuji Rokusho Sengen|12=simple|13=User:Immanuelle/Fuji Rokusho Sengen Shrine|12=simple|13=User:Immanuelle/Fuji Rokusho Sengen Shrine|qq=}}
+**[[Oi Shrine|Oi]]
+**[[Gosha Suwa Shrine|Gosha Suwa]]
+**[[Kinomiya Shrine|Kinomiya]]
+**[[Fuji Rokusho Sengen Shrine|Fuji Rokusho Sengen]]
 *'''[[:en:Aichi Prefecture|Aichi]]''' 
 **[[:en:Atsuta Jingu|Atsuta]]
 **[[Masumida Shrine|Masumida]]
@@ -212,7 +212,7 @@
 **[[Owari Ōkunitama Shrine|Owari Ōkunitama]]
 **[[Aichi Gokoku Shrine|Gokoku]]
 **[[Wakamiya Hachiman Shrine|Wakamiya Hachiman]]
-**{{ill|Chiryu Shrine|ja|知立神社|every|lt=Chiryu|12=simple|13=User:Immanuelle/Chiryu Shrine|12=simple|13=User:Immanuelle/Chiryu Shrine|qq=}}
+**[[Chiryu Shrine|Chiryu]]
     | group5      = [[:en:Kansai region|Kansai]]
     | group5style = border-right: 4px solid #7272FF
     | list5       = 
@@ -221,7 +221,7 @@
 **[[Aekuni Shrine|Aekuni]]
 **[[Yūki Shrine|Yūki]]
 **[[Kitabatake Shrine|Kitabatake]]
-**{{ill|Mie Gokoku Shrine|ja|三重県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Mie Gokoku Shrine|12=simple|13=User:Immanuelle/Mie Gokoku Shrine|qq=}}
+**[[Mie Gokoku Shrine|Gokoku]]
 **[[:en:Tsubaki Grand Shrine|Tsubaki Okamiyashiro]]
 **[[Sarutahiko Shrine|Sarutahiko]]
 **[[Futami Okitama Shrine|Futami Okitama]]
@@ -233,9 +233,9 @@
 **[[:en:Omi Jingu|Omi]]
 **[[Mikami Shrine|Mikami]]
 **[[Himure Hachiman-gū]]
-**{{ill|Aga Shrine|ja|阿賀神社|every|lt=Aga|12=simple|13=User:Immanuelle/Aga Shrine|12=simple|13=User:Immanuelle/Aga Shrine|qq=}}
-**{{ill|Shiga Gokoku Shrine|ja|滋賀県護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Shiga Gokoku Shrine|12=simple|13=User:Immanuelle/Shiga Gokoku Shrine|qq=}}
-**{{ill|Nagahama Hachimangu|ja|長浜八幡宮|every|12=simple|13=User:Immanuelle/Nagahama Hachimangu|12=simple|13=User:Immanuelle/Nagahama Hachimangu|qq=}}
+**[[Aga Shrine|Aga]]
+**[[Shiga Gokoku Shrine|Gokoku]]
+**[[Nagahama Hachimangu]]
 *'''[[:en:Kyoto Prefecture|Kyoto]]''' 
 **[[Kamigamo Shrine|Kamigamo]]
 **[[Shimogamo Shrine|Shimogamo]]
@@ -256,7 +256,7 @@
 **[[Kyoto Ryozen Gokoku Shrine|Kyoto Ryozen Gokoku]]
 **[[Fushimi Inari-taisha]]†
 **[[Umenomiya Taisha|Umenomiya Taisha]]†
-**{{ill|Nashinoki Shrine|ja|梨木神社|every|lt=Nashinoki|12=simple|13=User:Immanuelle/Nashinoki Shrine|12=simple|13=User:Immanuelle/Nashinoki Shrine|qq=}}†
+**[[Nashinoki Shrine|Nashinoki]]†
 **[[Izumo-daijingū]]†
 **[[Kenkun Shrine|Kenkun]]†
 *'''[[:en:Osaka Prefecture|Osaka]]''' 
@@ -271,7 +271,7 @@
 **[[Osaka Tenmangū]]
 **[[Kōzu-gū]]
 **[[Imamiya Ebisu Shrine|Imamiya Ebisu]]
-**{{ill|Osaka Gokoku Shrine|ja|大阪護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Osaka Gokoku Shrine|12=simple|13=User:Immanuelle/Osaka Gokoku Shrine|qq=}}
+**[[Osaka Gokoku Shrine|Gokoku]]
 *'''[[:en:Hyōgo Prefecture|Hyōgo]]''' 
 **[[Izanagi Jingu|Izanagi]]
 **[[Hirota Shrine|Hirota]]
@@ -286,8 +286,8 @@
 **[[Hiromine Shrine|Hiromine]]
 **[[Oishi Shrine|Oishi]]
 **[[Tada Shrine|Tada]]
-**{{ill|Hyōgo Himeji Gokoku Shrine|ja|兵庫縣姫路護國神社|every|lt=Himeji Gokoku|12=simple|13=User:Immanuelle/Hyōgo Himeji Gokoku Shrine|12=simple|13=User:Immanuelle/Hyōgo Himeji Gokoku Shrine|qq=}}
-**{{ill|Hyōgo Kobe Gokoku Shrine|ja|兵庫縣神戸護國神社|every|lt=Kobe Gokoku|12=simple|13=User:Immanuelle/Hyōgo Kobe Gokoku Shrine|12=simple|13=User:Immanuelle/Hyōgo Kobe Gokoku Shrine|qq=}}
+**[[Hyōgo Himeji Gokoku Shrine|Himeji Gokoku]]
+**[[Hyōgo Kobe Gokoku Shrine|Kobe Gokoku]]
 *'''[[:en:Nara Prefecture|Nara]]''' 
 **[[Kasuga-taisha]]
 **[[:en:Ōmiwa Shrine|Ōmiwa]]
@@ -299,8 +299,8 @@
 **[[:en:Yoshino Jingu|Yoshino]]
 **[[Kashihara Shrine|Kashihara]]
 **[[Tanzan Shrine|Tanzan]]
-**{{ill|Iwazononiimasu Takumushitama Shrine|ja|石園座多久虫玉神社|every|lt=Isonozatakumushitama|12=simple|13=User:Immanuelle/Iwazononiimasu Takumushitama Shrine|12=simple|13=User:Immanuelle/Iwazononiimasu Takumushitama Shrine|qq=}}
-**{{ill|Nara Gokoku Shrine|ja|奈良県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Nara Gokoku Shrine|12=simple|13=User:Immanuelle/Nara Gokoku Shrine|qq=}}
+**[[Iwazononiimasu Takumushitama Shrine|Isonozatakumushitama]]
+**[[Nara Gokoku Shrine|Gokoku]]
 *'''[[:en:Wakayama Prefecture|Wakayama]]''' 
 **[[Niutsuhime Shrine|Niutsuhime]]
 **[[Kamayama Shrine|Kamayama]]
@@ -308,7 +308,7 @@
 **[[Kumano Hayatama Taisha]]
 **[[Kumano Nachi Taisha]]
 **[[Itakiso shrine|Itakiso]]
-**{{ill|Tōkei Shrine|lt=Tōkei Shrine|lt=Tokei Shrine|ja|鬪雞神社|every|lt=Tokei|12=simple|13=User:Immanuelle/Tokei Shrine|12=simple|13=User:Immanuelle/Tokei Shrine|qq=}}
+**[[Tōkei Shrine]]
 **[[Hinokuma Shrine|Hinokuma]]†
     | group6      = [[:en:Chūgoku region|Chūgoku]]
     | group6style = border-right: 4px solid #FF9148
@@ -327,61 +327,61 @@
 **[[:en:Susa Shrine|Mononobe]]
 **[[Susa Shrine|Susa]]
 **[[Sada Shrine|Sada]]
-**{{ill|Hirahama Hachimangu|ja|平濱八幡宮|every|12=simple|13=User:Immanuelle/Hirahama Hachimangu|12=simple|13=User:Immanuelle/Hirahama Hachimangu|qq=}}
+**[[Hirahama Hachimangu]]
 **[[Yaegaki Shrine|Yaegaki]]
-**{{ill|Taikodani Inari Shrine|ja|太皷谷稲成神社|every|lt=Taikodani Inari|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|qq=}}
-**{{ill|Matsue Gokoku Shrine|ja|松江護國神社|every|lt=Matsue Gokoku|12=simple|13=User:Immanuelle/Matsue Gokoku Shrine|12=simple|13=User:Immanuelle/Matsue Gokoku Shrine|qq=}}
+**[[Taikodani Inari Shrine|Taikodani Inari]]
+**[[Matsue Gokoku Shrine|Matsue Gokoku]]
 **[[:en:Hamada Castle|Hamada Gokoku]]
 *'''[[:en:Okayama Prefecture|Okayama]]''' 
 **[[Kibitsu Shrine (Bitchū)|Kibitsu]]
 **[[Nakayama Shrine|Nakayama]]
 **[[Ani Shrine|Ani]]
 **[[Kibitsuhiko Shrine|Kibitsuhiko]]
-**{{ill|Okayama Gokoku Shrine|ja|岡山県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Okayama Gokoku Shrine|12=simple|13=User:Immanuelle/Okayama Gokoku Shrine|qq=}}
+**[[Okayama Gokoku Shrine|Gokoku]]
 *'''[[:en:Hiroshima Prefecture|Hiroshima]]''' 
 **[[Itsukushima Shrine|Itsukushima]]
 **[[Hayatani Shrine|Hayatani]]
 **[[:en:Nunakuma Shrine|Nunakuma]]
 **[[Kibitsu Shrine (Bingo)|Kibitsu]]
 **[[Fukuyama Hachimangū]]
-**{{ill|Kameyama Shrine|ja|亀山神社_(呉市清水)|every|lt=Kameyama|12=simple|13=User:Immanuelle/Kameyama Shrine|12=simple|13=User:Immanuelle/Kameyama Shrine|qq=}}
-**{{ill|Hijiyama Shrine|ja|比治山神社|every|lt=Hijiyama|12=simple|13=User:Immanuelle/Hijiyama Shrine|12=simple|13=User:Immanuelle/Hijiyama Shrine|qq=}}
+**[[Kameyama Shrine|Kameyama]]
+**[[Hijiyama Shrine|Hijiyama]]
 **[[Bingo Gokoku Shrine|Bingo Gokoku]]
 **[[Hiroshima Gokoku Shrine|Hiroshima Gokoku]]
 *'''[[:en:Yamaguchi Prefecture|Yamaguchi]]''' 
 **[[:en:Akama Shrine|Akama]]
 **[[Sumiyoshi Shrine (Shimonoseki)|Sumiyoshi]]
-**{{ill|Toyosaka and Noda Shrines|lt=Toyosaka|ja|豊榮神社・野田神社|every|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|qq=}}
-**{{ill|Toyosaka and Noda Shrines|lt=Noda|ja|豊榮神社・野田神社|every|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|qq=}}
+**[[Toyosaka and Noda Shrines|Toyosaka]]
+**[[Toyosaka and Noda Shrines|Noda]]
 **[[:en:Tamanooya Shrine|Tamanooya]]
 **[[Iminomiya Shrine|Iminomiya]]
 **[[Hōfu Tenmangū]]
-**{{ill|Kotozaki Hachimangu|ja|琴崎八幡宮|every|12=simple|13=User:Immanuelle/Kotozaki Hachimangu|12=simple|13=User:Immanuelle/Kotozaki Hachimangu|qq=}}
+**[[Kotozaki Hachimangu]]
 **[[Kameyama Hachimangū]]
-**{{ill|Yamaguchi Gokoku Shrine|ja|山口県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Yamaguchi Gokoku Shrine|12=simple|13=User:Immanuelle/Yamaguchi Gokoku Shrine|qq=}}
+**[[Yamaguchi Gokoku Shrine|Gokoku]]
     | group7      = [[Shikoku]]
     | group7style = border-right: 4px solid #D16EFF
     | list7       = 
 *'''[[:en:Tokushima Prefecture|Tokushima]]''' 
 **[[:en:Inbe Shrine|Inbe]]
 **[[:en:Ōasahiko Shrine|Ōasahiko]]
-**{{ill|Tsunomine Shrine|ja|津峯神社|every|lt=Tsunomine|12=simple|13=User:Immanuelle/Tsunomine Shrine|12=simple|13=User:Immanuelle/Tsunomine Shrine|qq=}}
-**{{ill|Tokushima Gokoku Shrine|ja|徳島縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Tokushima Gokoku Shrine|12=simple|13=User:Immanuelle/Tokushima Gokoku Shrine|qq=}}
+**[[Tsunomine Shrine|Tsunomine]]
+**[[Tokushima Gokoku Shrine|Gokoku]]
 *'''[[:en:Kagawa Prefecture|Kagawa]]''' 
 **[[Kotohira-gū]]†
 **[[Tamura Shrine|Tamura]]
 *'''[[:en:Ehime Prefecture|Ehime]]''' 
 **[[Ōyamazumi Shrine|Ōyamazumi]]
 **[[Isono Shrine|Isono]]
-**{{ill|Ishizuchi Shrine|ja|%E7%9F%B3%E9%8E%9A%E7%A5%9E%E7%A4%BE|every|6=fr|7=Ishizuchi-jinja|lt=Ishizuchi|12=simple|13=User:Immanuelle/Ishizuchi Shrine|12=simple|13=User:Immanuelle/Ishizuchi Shrine|qq=}}
-**{{ill|Warei Shrine|ja|%E5%92%8C%E9%9C%8A%E7%A5%9E%E7%A4%BE|every|lt=Warei|12=simple|13=User:Immanuelle/Warei Shrine|12=simple|13=User:Immanuelle/Warei Shrine|qq=}}
-**{{ill|Iyozuhiko-no-Mikoto Shrine|ja|%E4%BC%8A%E8%B1%AB%E8%B1%86%E6%AF%94%E5%8F%A4%E5%91%BD%E7%A5%9E%E7%A4%BE|every|lt=Iyozuhiko-no-Mikoto|12=simple|13=User:Immanuelle/Iyozuhiko-no-Mikoto Shrine|12=simple|13=User:Immanuelle/Iyozuhiko-no-Mikoto Shrine|qq=}}
-**{{ill|Ehime Gokoku Shrine|ja|%E6%84%9B%E5%AA%9B%E7%B8%A3%E8%AD%B7%E5%9C%8B%E7%A5%9E%E7%A4%BE|every|lt=Gokoku|12=simple|13=User:Immanuelle/Ehime Gokoku Shrine|12=simple|13=User:Immanuelle/Ehime Gokoku Shrine|qq=}}
+**[[Ishizuchi Shrine|Ishizuchi]]
+**[[Warei Shrine|Warei]]
+**[[Iyozuhiko-no-Mikoto Shrine|Iyozuhiko-no-Mikoto]]
+**[[Ehime Gokoku Shrine|Gokoku]]
 *'''[[:en:Kōchi Prefecture|Kōchi]]''' 
 **[[Tosa Shrine|Tosa]]
-**{{ill|Ushioe Tenmangu|ja|潮江天満宮|12=simple|13=User:Immanuelle/Ushioe Tenmangu|12=simple|13=User:Immanuelle/Ushioe Tenmangu|qq=}}
-**{{ill|Kochi Gokoku Shrine|ja|高知縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Kochi Gokoku Shrine|12=simple|13=User:Immanuelle/Kochi Gokoku Shrine|qq=}}
-**{{ill|Yamauchi Shrine|ja|山内神社|every|lt=Yamauchi|12=simple|13=User:Immanuelle/Yamauchi Shrine|12=simple|13=User:Immanuelle/Yamauchi Shrine|qq=}}†
+**[[Ushioe Tenmangu]]
+**[[Kochi Gokoku Shrine|Gokoku]]
+**[[Yamauchi Shrine|Yamauchi]]†
 
     | group8      = [[Kyushu|Kyūshū]]
     | group8style = border-right: 4px solid #C5C5C5
@@ -400,27 +400,27 @@
 **[[Kurume Suitengū]]
 **[[Kushida Shrine|Kushida]]
 **[[Furogu Shrine|Furogu]]
-**{{ill|Tobihata Hachimangu|lt=Tobihata Hachimangu|lt=Tobata Hachimangu|ja|%E9%A3%9B%E5%B9%A1%E5%85%AB%E5%B9%A1%E5%AE%AE|every|12=simple|13=User:Immanuelle/Tobata Hachimangu|12=simple|13=User:Immanuelle/Tobata Hachimangu|qq=}}
-**{{ill|Kosou Hachimangu|ja|%E7%94%B2%E5%AE%97%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE|every|12=simple|13=User:Immanuelle/Kosou Hachimangu|12=simple|13=User:Immanuelle/Kosou Hachimangu|qq=}}
+**[[Tobihata Hachimangu]]
+**[[Kosou Hachimangu]]
 **[[Umi Hachiman-gū]]
-**{{ill|Otomi Shrine|ja|%E5%A4%A7%E5%AF%8C%E7%A5%9E%E7%A4%BE|every|lt=Otomi|12=simple|13=User:Immanuelle/Otomi Shrine|12=simple|13=User:Immanuelle/Otomi Shrine|qq=}}
+**[[Otomi Shrine|Otomi]]
 **[[Terumo Shrine|Terumo]]
-**{{ill|Noso Hachimangu|ja|%E6%9B%A9%E7%A5%96%E5%85%AB%E5%B9%A1%E5%AE%AE|every|12=simple|13=User:Immanuelle/Noso Hachimangu|12=simple|13=User:Immanuelle/Noso Hachimangu|qq=}}
-**{{ill|Washio Atago Shrine|ja|%E9%B7%B2%E5%B0%BE%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE|every|lt=Washio Atago|12=simple|13=User:Immanuelle/Washio Atago Shrine|12=simple|13=User:Immanuelle/Washio Atago Shrine|qq=}}
-**{{ill|Wakamatsu Ebisu Shrine|ja|%E8%8B%A5%E6%9D%BE%E6%81%B5%E6%AF%94%E9%A0%88%E7%A5%9E%E7%A4%BE|every|lt=Wakamatsu Ebisu|12=simple|13=User:Immanuelle/Wakamatsu Ebisu Shrine|12=simple|13=User:Immanuelle/Wakamatsu Ebisu Shrine|qq=}}
-**{{ill|Fukuoka Gokoku Shrine|ja|福岡縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Fukuoka Gokoku Shrine|12=simple|13=User:Immanuelle/Fukuoka Gokoku Shrine|qq=}}
-**{{ill|Tokaebisu Shrine|ja|%E5%8D%81%E6%97%A5%E6%81%B5%E6%AF%94%E9%A0%88%E7%A5%9E%E7%A4%BE|every|lt=Tokaebisu|12=simple|13=User:Immanuelle/Tokaebisu Shrine|12=simple|13=User:Immanuelle/Tokaebisu Shrine|qq=}}
+**[[Noso Hachimangu]]
+**[[Washio Atago Shrine|Washio Atago]]
+**[[Wakamatsu Ebisu Shrine|Wakamatsu Ebisu]]
+**[[Fukuoka Gokoku Shrine|Gokoku]]
+**[[Tokaebisu Shrine|Tokaebisu]]
 *'''[[:en:Saga Prefecture|Saga]]''' 
-**{{ill|Saga Shrine|ja|佐嘉神社|every|lt=Saga|12=simple|13=User:Immanuelle/Saga Shrine|12=simple|13=User:Immanuelle/Saga Shrine|qq=}}
+**[[Saga Shrine|Saga]]
 **[[Tashima Shrine (Saga)|Tashima]]
 **[[Chiriku Hachimangu|Chiriku Hachimangu]]
 **[[Yūtoku Inari Shrine|Yūtoku Inari]]
-**{{ill|Saga Gokoku Shrine|ja|佐賀縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Saga Gokoku Shrine|12=simple|13=User:Immanuelle/Saga Gokoku Shrine|qq=}}
+**[[Saga Gokoku Shrine|Gokoku]]
 *'''[[:en:Nagasaki Prefecture|Nagasaki]]''' 
 **[[Sumiyoshi Shrine (Iki City)|Sumiyoshi]]
 **[[Kaijin Shrine|Kaijin]]
 **[[Suwa Shrine (Nagasaki)|Suwa]]
-**{{ill|Kameyama Hachimangu Shrine|ja|亀山八幡宮 (佐世保市)|every|lt=Kameyama Hachimangu|12=simple|13=User:Immanuelle/Kameyama Hachimangu Shrine|12=simple|13=User:Immanuelle/Kameyama Hachimangu Shrine|qq=}}
+**[[Kameyama Hachimangu Shrine|Kameyama Hachimangu]]
 **[[Nagasaki Gokoku Shrine|Gokoku]]
 *'''[[:en:Kumamoto Prefecture|Kumamoto]]''' 
 **[[Aso Shrine|Aso]]
@@ -428,32 +428,32 @@
 **[[Kikuchi Shrine|Kikuchi]]
 **[[Fujisaki Hachimangū]]
 **[[:en:Aoi Aso Shrine|Aoi Aso]]
-**{{ill|Kumamoto Gokoku Shrine|ja|熊本県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Kumamoto Gokoku Shrine|12=simple|13=User:Immanuelle/Kumamoto Gokoku Shrine|qq=}}
+**[[Kumamoto Gokoku Shrine|Gokoku]]
 **[[Takahashi Inari Shrine|Takahashi Inari]]
 *'''[[:en:Ōita Prefecture|Ōita]]''' 
 **[[Usa Jingū]]
 **[[Sasamuta Shrine|Sasamuta]]
 **[[Yusuhara Hachimangū]]
-**{{ill|Hachiman Asami Shrine|ja|八幡朝見神社|every|lt=Hachiman Asami|12=simple|13=User:Immanuelle/Hachiman Asami Shrine|12=simple|13=User:Immanuelle/Hachiman Asami Shrine|qq=}}
-**{{ill|Kasuga Shrine (Ōita)|lt=Kasuga Shrine (Ōita)|lt=Kasuga Shrine (Oita)|lt=Kasuga|ja|春日神社 (大分市)|every|12=simple|13=User:Immanuelle/Kasuga Shrine (Oita)|12=simple|13=User:Immanuelle/Kasuga Shrine (Oita)|qq=}}
-**{{ill|Ōita Gokoku Shrine|ja|大分縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Ōita Gokoku Shrine|12=simple|13=User:Immanuelle/Ōita Gokoku Shrine|qq=}}
+**[[Hachiman Asami Shrine|Hachiman Asami]]
+**[[Kasuga Shrine (Ōita)]]
+**[[Ōita Gokoku Shrine|Gokoku]]
 *'''[[:en:Miyazaki Prefecture|Miyazaki]]''' 
 **[[Miyazaki Jingū|Miyazaki-jingū]]
 **[[Udo Jingū|Udo-jingū]]
 **[[Tsuno Shrine|Tsuno]]
-**{{ill|Kanbashira-gū|ja|神柱宮|fr|every|12=simple|13=User:Immanuelle/Kanbashira-gū|12=simple|13=User:Immanuelle/Kanbashira-gū|qq=}}
-**{{ill|Sano Shrine|ja|狭野神社|every|lt=Sano|12=simple|13=User:Immanuelle/Sano Shrine|12=simple|13=User:Immanuelle/Sano Shrine|qq=}}
+**[[Kanbashira-gū]]
+**[[Sano Shrine|Sano]]
 **[[Aoshima Shrine|Aoshima]]
 **[[Takachiho Shrine|Takachiho]]
 **[[Amanoiwato Shrine|Amanoiwato]]
-**{{ill|Miyazaki Gokoku Shrine|ja|宮崎縣護國神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Miyazaki Gokoku Shrine|12=simple|13=User:Immanuelle/Miyazaki Gokoku Shrine|qq=}}
+**[[Miyazaki Gokoku Shrine|Gokoku]]
 *'''[[:en:Kagoshima Prefecture|Kagoshima]]''' 
 **[[Kirishima Jingū|Kirishima-Jingū]]
 **[[Kagoshima Jingū|Kagoshima]]
 **[[:en:Terukuni Shrine|Terukuni]]
 **[[Nitta Shrine (Satsumasendai City)|Nitta]]
 **[[Hirasaki Shrine|Hirasaki]]
-**{{ill|Kagoshima Gokoku Shrine|ja|鹿児島県護国神社|every|lt=Gokoku|12=simple|13=User:Immanuelle/Kagoshima Gokoku Shrine|12=simple|13=User:Immanuelle/Kagoshima Gokoku Shrine|qq=}}
+**[[Kagoshima Gokoku Shrine|Gokoku]]
 *'''[[:en:Okinawa Prefecture|Okinawa]]''' 
 **[[:en:Naminoue Shrine|Naminoue]]
 
@@ -571,11 +571,11 @@
 * [[Shiramine Jingū|Shiramine Jingū]]
 * [[Sumiyoshi Shrine (Shimonoseki)|Sumiyoshi]]
 *[[Yatsushiro-gū]]
-* {{ill|Watatsumi Shrine_(Kobe)|lt=Watatsumi|simple|12=simple|13=User:Immanuelle/Watatsumi Shrine_(Kobe)|12=simple|13=User:Immanuelle/Watatsumi Shrine_(Kobe)|qq=}}.
+* [[Watatsumi Shrine_(Kobe)|Watatsumi]].
 
 | group4 = 海外官幣中社 (Overseas Kanpei-Chūsha)
 | list4 =
-* {{ill|Tainan Shrine|ja|臺灣建築|simple|Tainan Shrine|lt=Tainan|12=simple|13=User:Immanuelle/Tainan Shrine|12=simple|13=User:Immanuelle/Tainan Shrine|qq=}}.
+* [[Tainan Shrine|Tainan]].
 
 | group5 = 官幣小社 (Kanpei-Shōsha)
 | list5 =
@@ -593,7 +593,7 @@
 *[[:en:Yasukuni Shrine|Yasukuni]]
 *[[Abeno Shrine|Abeno]]
 *[[Fujishima Shrine|Fujishima]]
-*{{ill|Fukui Shrine|ja|福井神社|simple|lt=Fukui|12=simple|13=User:Immanuelle/Fukui Shrine|12=simple|13=User:Immanuelle/Fukui Shrine|qq=}}
+*[[Fukui Shrine|Fukui]]
 *[[Goō Shrine|Goō]]
 *[[Karasawayama Shrine|Karasawayama]]
 *[[Kenkun Shrine|Kenkun]]
@@ -602,21 +602,21 @@
 *[[Komikado Shrine|Komikado]]
 *[[:en:Kunōzan Tōshō-gū|Kunōzan Tōshō-gū]]
 *[[Minatogawa Shrine|Minatogawa]]
-*{{ill|Nashinoki Shrine|ja|梨木神社|simple|lt=Nashinoki|12=simple|13=User:Immanuelle/Nashinoki Shrine|12=simple|13=User:Immanuelle/Nashinoki Shrine|qq=}}
+*[[Nashinoki Shrine|Nashinoki]]
 *[[Nawa Shrine|Nawa]]
 *[[:en:Nikkō Tōshō-gū|Nikkō Tōshō-gū]]
 *[[Oyama Shrine (Ishikawa)|Oyama]]
 *[[:en:Ryōzen Shrine|Ryōzen]]
-*{{ill|Saga Shrine|ja|佐嘉神社|simple|lt=Saga|12=simple|13=User:Immanuelle/Saga Shrine|12=simple|13=User:Immanuelle/Saga Shrine|qq=}}
+*[[Saga Shrine|Saga]]
 *[[Shijōnawate Shrine|Shijōnawate]]
 *[[Tanzan Shrine|Tanzan]]
 *[[:en:Toyokuni Shrine (Kyoto)|Toyokuni (Kyoto)]]
-*{{ill|Toyosaka and Noda Shrines|lt=Toyosaka|ja|豊榮神社・野田神社|simple|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|qq=}}
-*{{ill|Toyosaka and Noda Shrines|lt=Noda|ja|豊榮神社・野田神社|simple|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|12=simple|13=User:Immanuelle/Toyosaka and Noda Shrines|qq=}}
+*[[Toyosaka and Noda Shrines|Toyosaka]]
+*[[Toyosaka and Noda Shrines|Noda]]
 *[[:en:Terukuni Shrine|Terukuni]]
 *[[Tokiwa shrine|Tokiwa]]
 *[[Uesugi Shrine|Uesugi]]
-*{{ill|Yamauchi Shrine|ja|山内神社|simple|lt=Yamauchi|12=simple|13=User:Immanuelle/Yamauchi Shrine|12=simple|13=User:Immanuelle/Yamauchi Shrine|qq=}}
+*[[Yamauchi Shrine|Yamauchi]]
 *[[Yūki Shrine|Yūki]]
 
 }}
@@ -690,39 +690,39 @@
 
 | group5 = 国幣小社 (Kokuhei Shōsha)
 | list5 =
-*{{ill|Chichibu Shrine|simple|lt=Chichibu|12=simple|13=User:Immanuelle/Chichibu Shrine|12=simple|13=User:Immanuelle/Chichibu Shrine|qq=}}
+*[[Chichibu Shrine|Chichibu]]
 *[[Chiriku Hachimangu|Chiriku Hachiman]]
 *[[:en:Dewa Shrine|Dewa]]
 *[[Fujisaki Hachimangū|Fujisaki-hachimangu]]
-*{{ill|Hakone Shrine|simple|lt=Hakone|12=simple|13=User:Immanuelle/Hakone Shrine|12=simple|13=User:Immanuelle/Hakone Shrine|qq=}}
+*[[Hakone Shrine|Hakone]]
 *[[Hinomisaki Shrine|Hinomisaki]]
-*{{ill|Hirasaki Shrine|simple|lt=Hirasaki|12=simple|13=User:Immanuelle/Hirasaki Shrine|12=simple|13=User:Immanuelle/Hirasaki Shrine|qq=}}
+*[[Hirasaki Shrine|Hirasaki]]
 *[[:en:Hotaka Shrine|Hotaka]]
 *[[Iminomiya Shrine|Iminomiya]]
-*{{ill|Inaba Shrine|simple|lt=Inaba|12=simple|13=User:Immanuelle/Inaba Shrine|12=simple|13=User:Immanuelle/Inaba Shrine|qq=}}
-*{{ill|Iwakiyama Shrine|simple|lt=Iwakiyama|12=simple|13=User:Immanuelle/Iwakiyama Shrine|12=simple|13=User:Immanuelle/Iwakiyama Shrine|qq=}}
-*{{ill|Izusan Shrine|simple|lt=Izusan|12=simple|13=User:Immanuelle/Izusan Shrine|12=simple|13=User:Immanuelle/Izusan Shrine|qq=}}
+*[[Inaba Shrine|Inaba]]
+*[[Iwakiyama Shrine|Iwakiyama]]
+*[[Izusan Shrine|Izusan]]
 *[[Kibitsuhiko Shrine|Kibitsuhiko]]
-*{{ill|Kibitsu Shrine (Bingo)|lt=Kibitsu|simple|12=simple|13=User:Immanuelle/Kibitsu Shrine (Bingo)|12=simple|13=User:Immanuelle/Kibitsu Shrine (Bingo)|qq=}}
-*{{ill|Koshiō Shrine|simple|lt=Koshiō|12=simple|13=User:Immanuelle/Koshiō Shrine|12=simple|13=User:Immanuelle/Koshiō Shrine|qq=}}
+*[[Kibitsu Shrine (Bingo)|Kibitsu]]
+*[[Koshiō Shrine|Koshiō]]
 *[[Komagata Shrine|Komagata]]
-*{{ill|Minashi Shrine|simple|lt=Minashi|12=simple|13=User:Immanuelle/Minashi Shrine|12=simple|13=User:Immanuelle/Minashi Shrine|qq=}}
+*[[Minashi Shrine|Minashi]]
 *[[:en:Mononobe Shrine|Mononobe]]
 *[[:en:Nunakuma Shrine|Nunakuma]]
-*{{ill|Ōgamiyama Shrine|simple|lt=Ōgamiyama|12=simple|13=User:Immanuelle/Ōgamiyama Shrine|12=simple|13=User:Immanuelle/Ōgamiyama Shrine|qq=}}
-*{{ill|Okuni Shrine|lt=Okuni Shrine|lt=Oguni Shrine|simple|lt=Oguni|12=simple|13=User:Immanuelle/Oguni Shrine|12=simple|13=User:Immanuelle/Oguni Shrine|qq=}}
+*[[Ōgamiyama Shrine|Ōgamiyama]]
+*[[Okuni Shrine]]
 *[[Owari Ōkunitama Shrine|Owari Ōkunitama]]
 *[[Oyama Shrine (Tateyama)|Oyama]]
-*{{ill|Sada Shrine|simple|lt=Sada|12=simple|13=User:Immanuelle/Sada Shrine|12=simple|13=User:Immanuelle/Sada Shrine|qq=}}
-*{{ill|Shitori Shrine (Tottori)|simple|lt=Shitori|12=simple|13=User:Immanuelle/Shitori Shrine (Tottori)|12=simple|13=User:Immanuelle/Shitori Shrine (Tottori)|qq=}}
-*{{ill|Shizuoka Sengen Shrine|simple|lt=Shizuoka Sengen|12=simple|13=User:Immanuelle/Shizuoka Sengen Shrine|12=simple|13=User:Immanuelle/Shizuoka Sengen Shrine|qq=}}
+*[[Sada Shrine|Sada]]
+*[[Shitori Shrine (Tottori)|Shitori]]
+*[[Shizuoka Sengen Shrine|Shizuoka Sengen]]
 *[[Susa Shrine|Susa]]
-*{{ill|Sugōisobe Shrine|ja|菅生石部神社|simple|lt=Sugōisobe|12=simple|13=User:Immanuelle/Sugōisobe Shrine|12=simple|13=User:Immanuelle/Sugōisobe Shrine|qq=}}
-*{{ill|Tsushima Shrine|simple|lt=Tsushima|12=simple|13=User:Immanuelle/Tsushima Shrine|12=simple|13=User:Immanuelle/Tsushima Shrine|qq=}}
-*{{ill|Tsurugi Shrine|ja|劔神社|simple|lt=Tsurugi|12=simple|13=User:Immanuelle/Tsurugi Shrine|12=simple|13=User:Immanuelle/Tsurugi Shrine|qq=}}
-*{{ill|Togakushi Shrine|simple|lt=Togakushi|12=simple|13=User:Immanuelle/Togakushi Shrine|12=simple|13=User:Immanuelle/Togakushi Shrine|qq=}}
-*{{ill|Takase Shrine|simple|lt=Takase|12=simple|13=User:Immanuelle/Takase Shrine|12=simple|13=User:Immanuelle/Takase Shrine|qq=}}
-*{{ill|Toga Shrine|simple|lt=Toga|12=simple|13=User:Immanuelle/Toga Shrine|12=simple|13=User:Immanuelle/Toga Shrine|qq=}}
+*[[Sugōisobe Shrine|Sugōisobe]]
+*[[Tsushima Shrine|Tsushima]]
+*[[Tsurugi Shrine|Tsurugi]]
+*[[Togakushi Shrine|Togakushi]]
+*[[Takase Shrine|Takase]]
+*[[Toga Shrine|Toga]]
 *[[Tsuno Shrine|Tsuno]]
 *[[Watatsu Shrine|Watatsu]]
 *[[:en:Yudonosan Shrine|Yudonosan]]
@@ -732,15 +732,15 @@
 | list6 =
 *[[Heijō Shrine|Heijō]]
 *[[Kagi Shrine|Kagi]]
-*{{ill|Kankō Shrine|simple|lt=Kankō|12=simple|13=User:Immanuelle/Kankō Shrine|12=simple|13=User:Immanuelle/Kankō Shrine|qq=}}
+*[[Kankō Shrine|Kankō]]
 *[[Keijō Shrine|Keijō]]
-*{{ill|Kōshū Shrine|simple|lt=Kōshū|12=simple|13=User:Immanuelle/Kōshū Shrine|12=simple|13=User:Immanuelle/Kōshū Shrine|qq=}}
-*{{ill|Kōgen Shrine|simple|lt=Kōgen|12=simple|13=User:Immanuelle/Kōgen Shrine|12=simple|13=User:Immanuelle/Kōgen Shrine|qq=}}
+*[[Kōshū Shrine|Kōshū]]
+*[[Kōgen Shrine|Kōgen]]
 *[[Ryūtōsan Shrine|Ryūtōsan]]
-*{{ill|Shinchiku Shrine|simple|lt=Shinchiku|12=simple|13=User:Immanuelle/Shinchiku Shrine|12=simple|13=User:Immanuelle/Shinchiku Shrine|qq=}}
+*[[Shinchiku Shrine|Shinchiku]]
 *[[Taichung Martyrs' Shrine|Taichu]]
-*{{ill|Taikyu Shrine|simple|lt=Taikyu|12=simple|13=User:Immanuelle/Taikyu Shrine|12=simple|13=User:Immanuelle/Taikyu Shrine|qq=}}
-*{{ill|Zenshū Shrine|simple|lt=Zenshū|12=simple|13=User:Immanuelle/Zenshū Shrine|12=simple|13=User:Immanuelle/Zenshū Shrine|qq=}}
+*[[Taikyu Shrine|Taikyu]]
+*[[Zenshū Shrine|Zenshū]]
 
 }}
 
@@ -768,109 +768,109 @@
 *[[Obihiro Shrine|Obihiro]]
 *[[Tarumaezan Shrine|Tarumaezan]]
 *[[Saruka Shrine|Saruka]]
-*{{ill|Shiwa Inari Shrine|ja|志和稲荷神社|simple|lt=Shiwa Inari|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|12=simple|13=User:Immanuelle/Shiwa Inari Shrine|qq=}}
+*[[Shiwa Inari Shrine|Shiwa Inari]]
 *[[Morioka Hachimangū]]
-*{{ill|Koganeyama Shrine (Ishinomaki)|ja|黄金山神社 (石巻市)|simple|lt=Kinkasan|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|12=simple|13=User:Immanuelle/Koganeyama Shrine (Ishinomaki)|qq=}}
+*[[Koganeyama Shrine (Ishinomaki)|Kinkasan]]
 *[[Takekoma Inari Shrine|Takekoma Inari]]
-*{{ill|Taiheizan Miyoshi Shrine|lt=Taiheizan Miyoshi Shrine|lt=Taiheiyama Miyoshi Shrine|ja|太平山三吉神社|simple|lt=Taiheiyama Miyoshi|12=simple|13=User:Immanuelle/Taiheiyama Miyoshi Shrine|12=simple|13=User:Immanuelle/Taiheiyama Miyoshi Shrine|qq=}}
-*{{ill|Akita Suwa Shrine|ja|秋田諏訪宮|simple|lt=Akita Suwa|12=simple|13=User:Immanuelle/Akita Suwa Shrine|12=simple|13=User:Immanuelle/Akita Suwa Shrine|qq=}}
+*[[Taiheizan Miyoshi Shrine]]
+*[[Akita Suwa Shrine|Akita Suwa]]
 *[[Kinbō Shrine|Kinpō]]
 *[[Kumano Shrine (Yamagata)|Kumano]]
-*{{ill|Ayukai Hachimangu|ja|鮎貝八幡宮|simple|lt=Ayukai Hachimangu|12=simple|13=User:Immanuelle/Ayukai Hachimangu|12=simple|13=User:Immanuelle/Ayukai Hachimangu|qq=}}
-*{{ill|Yachi Hachimangū|lt=Yachi Hachimangū|lt=Yachi Hachimangu|ja|谷地八幡宮|simple|lt=Yachi Hachimangū|lt=Yachi Hachimangu|12=simple|13=User:Immanuelle/Yachi Hachimangu|12=simple|13=User:Immanuelle/Yachi Hachimangu|qq=}}
-*{{ill|Chōkai Gassan Ryōsho-gū|ja|鳥海月山両所宮|simple|lt=Chōkai Gassan Ryōsho-gu|12=simple|13=User:Immanuelle/Chōkai gassan ryōsho-gu|12=simple|13=User:Immanuelle/Chōkai gassan ryōsho-gu|qq=}}
-*{{ill|Sagae Hachimangu|ja|寒河江八幡宮|simple|lt=Sagae Hachimangu|12=simple|13=User:Immanuelle/Sagae Hachimangu|12=simple|13=User:Immanuelle/Sagae Hachimangu|qq=}}
+*[[Ayukai Hachimangu]]
+*[[Yachi Hachimangū]]
+*[[Chōkai Gassan Ryōsho-gū|Chōkai Gassan Ryōsho-gu]]
+*[[Sagae Hachimangu]]
 *[[Tsukubasan Shrine|Tsukubasan]]
 *[[:en:Mito Tōshō-gū|Mito Tōshō-gū]]
-*{{ill|Mitsumine Shrine|ja|三峯神社|simple|lt=Mitsumine|12=simple|13=User:Immanuelle/Mitsumine Shrine|12=simple|13=User:Immanuelle/Mitsumine Shrine|qq=}}
-*{{ill|Hodosan Shrine|ja|寳登山神社|simple|lt=Hodosan|12=simple|13=User:Immanuelle/Hodosan Shrine|12=simple|13=User:Immanuelle/Hodosan Shrine|qq=}}
-*{{ill|Yakyu Inari Shrine|ja|箭弓稲荷神社 (東松山市)|simple|lt=Yakyu Inari|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|12=simple|13=User:Immanuelle/Yakyu Inari Shrine|qq=}}
+*[[Mitsumine Shrine|Mitsumine]]
+*[[Hodosan Shrine|Hodosan]]
+*[[Yakyu Inari Shrine|Yakyu Inari]]
 *[[:en:Hikawa Shrine (Kawagoe)|Hikawa (Kawagoe)]]
 *[[:en:Washinomiya Shrine|Washinomiya]]
 *[[Koma Shrine|Koma]]
 *[[Enoshima Shrine|Enoshima]]
-*{{ill|Iseyama Kotaijingu|ja伊勢山皇大神宮|1=Iseyama Kōtai Jingū|2=fr|3=Iseyama Kotai Jingu|4=ja|5=伊勢山皇大神宮|6=zh|7=伊勢山皇大神宮|12=simple|13=User:Immanuelle/Iseyama Kotaijingu|13=User:Immanuelle/Iseyama Kōtai Jingū|12=simple|13=User:Immanuelle/Iseyama Kotaijingu|13=User:Immanuelle/Iseyama Kōtai Jingū|qq=}}
-*{{ill|Hiratsuka Hachimangu|ja|平塚八幡宮|1=Hiratsuka Hachimangu|simple|lt=Hiratsuka Hachimangu|12=simple|13=User:Immanuelle/Hiratsuka Hachimangu|13=User:Immanuelle/Hiratsuka Hachimangu|12=simple|13=User:Immanuelle/Hiratsuka Hachimangu|13=User:Immanuelle/Hiratsuka Hachimangu|qq=}}
+*[[Iseyama Kotaijingu|Iseyama Kōtai Jingū]]
+*[[Hiratsuka Hachimangu]]
 *[[Hōtoku Ninomiya Shrine|Hōtoku Ninomiya]]
-*{{ill|Ōyama Afuri Shrine|ja|大山阿夫利神社|simple|lt=Oyama Afuri|12=simple|13=User:Immanuelle/Ōyama Afuri Shrine|12=simple|13=User:Immanuelle/Ōyama Afuri Shrine|qq=}}
-*{{ill|Hakusan Shrine|ja|白山神社 (新潟市中央区一番堀通町)|simple|lt=Hakusan|12=simple|13=User:Immanuelle/Hakusan Shrine|12=simple|13=User:Immanuelle/Hakusan Shrine|qq=}}
-*{{ill|Hie Shrine (Toyama)|ja|日枝神社_(富山市)|simple|lt=Hie|12=simple|13=User:Immanuelle/Hie Shrine (Toyama)|12=simple|13=User:Immanuelle/Hie Shrine (Toyama)|qq=}}
-*{{ill|Onominato Shrine|ja|大野湊神社|simple|lt=Onominato|12=simple|13=User:Immanuelle/Onominato Shrine|12=simple|13=User:Immanuelle/Onominato Shrine|qq=}}
-*{{ill|Shinmei Shrine (Fukui City)|ja|神明神社_(福井市)|simple|lt=Shinmei|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|12=simple|13=User:Immanuelle/Shinmei Shrine (Fukui City)|qq=}}
-*{{ill|Kitaguchi Hongū Fuji Sengen Shrine|ja|北口本宮冨士浅間神社|simple|lt=Kitaguchi Hongu Fuji Asama|12=simple|13=User:Immanuelle/Kitaguchi Hongū Fuji Sengen Shrine|12=simple|13=User:Immanuelle/Kitaguchi Hongū Fuji Sengen Shrine|qq=}}
-*{{ill|Fuji Omuro Asama Shrine|ja|冨士御室浅間神社|simple|lt=Fuji Omuro Asama|12=simple|13=User:Immanuelle/Fuji Omuro Asama Shrine|12=simple|13=User:Immanuelle/Fuji Omuro Asama Shrine|qq=}}
+*[[Ōyama Afuri Shrine|Oyama Afuri]]
+*[[Hakusan Shrine|Hakusan]]
+*[[Hie Shrine (Toyama)|Hie]]
+*[[Onominato Shrine|Onominato]]
+*[[Shinmei Shrine (Fukui City)|Shinmei]]
+*[[Kitaguchi Hongū Fuji Sengen Shrine|Kitaguchi Hongu Fuji Asama]]
+*[[Fuji Omuro Asama Shrine|Fuji Omuro Asama]]
 *[[Takeda Shrine|Takeda]]
-*{{ill|Fukashi Shrine|ja|深志神社|simple|lt=Fukashi|12=simple|13=User:Immanuelle/Fukashi Shrine|12=simple|13=User:Immanuelle/Fukashi Shrine|qq=}}
-*{{ill|Tenaga Shrine|ja|手長神社|simple|lt=Tenaga|12=simple|13=User:Immanuelle/Tenaga Shrine|12=simple|13=User:Immanuelle/Tenaga Shrine|qq=}}
-*{{ill|Takemizuwake Shrine|ja|武水別神社|simple|lt=Takemizuwake|12=simple|13=User:Immanuelle/Takemizuwake Shrine|12=simple|13=User:Immanuelle/Takemizuwake Shrine|qq=}}
-*{{ill|Nyakuichi Ōji Shrine|ja|若一王子神社|simple|lt=Nyakuichi Ouji|12=simple|13=User:Immanuelle/Nyakuichi Ōji Shrine|12=simple|13=User:Immanuelle/Nyakuichi Ōji Shrine|qq=}}
-*{{ill|Sakurayama Hachimangu|ja|桜山八幡宮|simple|lt=Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|12=simple|13=User:Immanuelle/Sakurayama Hachimangu|qq=}}
+*[[Fukashi Shrine|Fukashi]]
+*[[Tenaga Shrine|Tenaga]]
+*[[Takemizuwake Shrine|Takemizuwake]]
+*[[Nyakuichi Ōji Shrine|Nyakuichi Ouji]]
+*[[Sakurayama Hachimangu]]
 *[[Akihasan Hongū Akiha Shrine|Akihasan Hongū Akiha]]
-*{{ill|Ikonahime no Mikoto Shrine|lt=Ikonahime no Mikoto Shrine|lt=Shirahama Shrine|ja|伊古奈比咩命神社|simple|lt=Shirahama|12=simple|13=User:Immanuelle/Shirahama Shrine|12=simple|13=User:Immanuelle/Shirahama Shrine|qq=}}
+*[[Ikonahime no Mikoto Shrine]]
 *[[Yaizu Shrine|Yaizu]]
-*{{ill|Oi Shrine|ja|大井神社_(島田市)|simple|lt=Oi|12=simple|13=User:Immanuelle/Oi Shrine|12=simple|13=User:Immanuelle/Oi Shrine|qq=}}
-*{{ill|Gosha Suwa Shrine|ja|五社神社・諏訪神社|simple|lt=Gosha Suwa|12=simple|13=User:Immanuelle/Gosha Suwa Shrine|12=simple|13=User:Immanuelle/Gosha Suwa Shrine|qq=}}
+*[[Oi Shrine|Oi]]
+*[[Gosha Suwa Shrine|Gosha Suwa]]
 *[[Wakamiya Hachiman Shrine|Wakamiya Hachiman]]
-*{{ill|Chiryu Shrine|ja|知立神社|simple|lt=Chiryu|12=simple|13=User:Immanuelle/Chiryu Shrine|12=simple|13=User:Immanuelle/Chiryu Shrine|qq=}}
+*[[Chiryu Shrine|Chiryu]]
 *[[:en:Tsubaki Grand Shrine|Tsubaki Okamiyashiro]]
 *[[Himure Hachiman-gū]]
-*{{ill|Nagahama Hachimangu|ja|長浜八幡宮|simple|lt=Nagahama Hachimangu|12=simple|13=User:Immanuelle/Nagahama Hachimangu|12=simple|13=User:Immanuelle/Nagahama Hachimangu|qq=}}
+*[[Nagahama Hachimangu]]
 *[[Nishinomiya Shrine|Nishinomiya]]
 *[[Itatehyōzu Shrine|Itatehyōzu]]
 *[[Hiromine Shrine|Hiromine]]
 *[[Oishi Shrine|Oishi]]
 *[[Tada Shrine|Tada]]
-*{{ill|Iwazononiimasu Takumushitama Shrine|ja|石園座多久虫玉神社|simple|lt=Isonozatakumushitama|12=simple|13=User:Immanuelle/Iwazononiimasu Takumushitama Shrine|12=simple|13=User:Immanuelle/Iwazononiimasu Takumushitama Shrine|qq=}}
-*{{ill|Tōkei Shrine|lt=Tōkei Shrine|lt=Tokei Shrine|ja|鬪雞神社|simple|lt=Tokei|12=simple|13=User:Immanuelle/Tokei Shrine|12=simple|13=User:Immanuelle/Tokei Shrine|qq=}}
-*{{ill|Hirahama Hachimangu|ja|平濱八幡宮|simple|lt=Hirahama Hachimangu|12=simple|13=User:Immanuelle/Hirahama Hachimangu|12=simple|13=User:Immanuelle/Hirahama Hachimangu|qq=}}
+*[[Iwazononiimasu Takumushitama Shrine|Isonozatakumushitama]]
+*[[Tōkei Shrine]]
+*[[Hirahama Hachimangu]]
 *[[Yaegaki Shrine|Yaegaki]]
 *[[Fukuyama Hachimangū]]
-*{{ill|Kameyama Shrine|ja|亀山神社_(呉市清水)|simple|lt=Kameyama|12=simple|13=User:Immanuelle/Kameyama Shrine|12=simple|13=User:Immanuelle/Kameyama Shrine|qq=}}
+*[[Kameyama Shrine|Kameyama]]
 *[[Hōfu Tenmangū]]
-*{{ill|Kotozaki Hachimangu|ja|琴崎八幡宮|simple|lt=Kotozaki Hachimangu|12=simple|13=User:Immanuelle/Kotozaki Hachimangu|12=simple|13=User:Immanuelle/Kotozaki Hachimangu|qq=}}
+*[[Kotozaki Hachimangu]]
 *[[Kameyama Hachimangū]]
-*{{ill|Ishizuchi Shrine|ja|石鎚神社|simple|lt=Ishizuchi|12=simple|13=User:Immanuelle/Ishizuchi Shrine|12=simple|13=User:Immanuelle/Ishizuchi Shrine|qq=}}
-*{{ill|Warei Shrine|ja|和霊神社|simple|lt=Warei|12=simple|13=User:Immanuelle/Warei Shrine|12=simple|13=User:Immanuelle/Warei Shrine|qq=}}
-*{{ill|Iyozuhiko-no-Mikoto Shrine|ja|伊予豆比古命神社|simple|lt=Iyozu Hikomei|12=simple|13=User:Immanuelle/Iyozuhiko-no-Mikoto Shrine|12=simple|13=User:Immanuelle/Iyozuhiko-no-Mikoto Shrine|qq=}}
-*{{ill|Ushioe Tenmangu|lt=Ushioe Tenmangu|lt=Ushioe Tenmangu shrine|ja|潮江天満宮|simple|lt=Ushioe Tenmangu|12=simple|13=User:Immanuelle/Ushioe Tenmangu shrine|12=simple|13=User:Immanuelle/Ushioe Tenmangu shrine|qq=}}
+*[[Ishizuchi Shrine|Ishizuchi]]
+*[[Warei Shrine|Warei]]
+*[[Iyozuhiko-no-Mikoto Shrine|Iyozu Hikomei]]
+*[[Ushioe Tenmangu]]
 *[[Miyajidake Shrine|Miyajidake]]
 *[[Kurume Suitengū]]
 *[[Kushida Shrine|Kushida]]
 *[[Furogu Shrine|Furogu]]
-*{{ill|Tobihata Hachimangu|lt=Tobihata Hachimangu|lt=Tobata Hachimangu|ja|飛幡八幡宮|simple|lt=Tobihata Hachimangu|lt=Tobata Hachimangu|12=simple|13=User:Immanuelle/Tobata Hachimangu|12=simple|13=User:Immanuelle/Tobata Hachimangu|qq=}}
-*{{ill|Kosou Hachimangu|ja|甲宗八幡神社|simple|lt=Kosou Hachimangu|12=simple|13=User:Immanuelle/Kosou Hachimangu|12=simple|13=User:Immanuelle/Kosou Hachimangu|qq=}}
+*[[Tobihata Hachimangu]]
+*[[Kosou Hachimangu]]
 *[[Umi Hachiman-gū]]
-*{{ill|Otomi Shrine|ja|大富神社|simple|lt=Otomi|12=simple|13=User:Immanuelle/Otomi Shrine|12=simple|13=User:Immanuelle/Otomi Shrine|qq=}}
+*[[Otomi Shrine|Otomi]]
 *[[Terumo Shrine|Terumo]]
-*{{ill|Noso Hachimangu|ja|曩祖八幡宮|simple|lt=Noso Hachimangu|12=simple|13=User:Immanuelle/Noso Hachimangu|12=simple|13=User:Immanuelle/Noso Hachimangu|qq=}}
+*[[Noso Hachimangu]]
 *[[Yūtoku Inari Shrine|Yūtoku Inari]]
-*{{ill|Kameyama Hachimangu Shrine|ja|亀山八幡宮 (佐世保市)|simple|lt=Kameyama Hachimangu|12=simple|13=User:Immanuelle/Kameyama Hachimangu Shrine|12=simple|13=User:Immanuelle/Kameyama Hachimangu Shrine|qq=}}
+*[[Kameyama Hachimangu Shrine|Kameyama Hachimangu]]
 
 }}
 
 | group2 = 郷社 (Gō-sha - District Shrines)
 | list2 =
-*{{ill|Kitadate Shrine|lt=Kitadate Shrine|lt=Hokutan Shrine|ja|北舘神社|simple|lt=Hokutan|12=simple|13=User:Immanuelle/Hokutan Shrine|12=simple|13=User:Immanuelle/Hokutan Shrine|qq=}}
-*{{ill|Osugi Shrine|ja|大杉神社|simple|lt=Osugi|12=simple|13=User:Immanuelle/Osugi Shrine|12=simple|13=User:Immanuelle/Osugi Shrine|qq=}}
-*{{ill|Igusa Hachimangu|ja|井草八幡宮|simple|lt=Igusa Hachimangu|12=simple|13=User:Immanuelle/Igusa Hachimangu|12=simple|13=User:Immanuelle/Igusa Hachimangu|qq=}}
-*{{ill|Inage Shrine|ja|稲毛神社|simple|lt=Inage|12=simple|13=User:Immanuelle/Inage Shrine|12=simple|13=User:Immanuelle/Inage Shrine|qq=}}
-*{{ill|Omuro Sengen Shrine (Yamanashi)|ja|冨士山下宮小室浅間神社|simple|lt=Fuji Yamashitamiya Komuro Asama|12=simple|13=User:Immanuelle/Omuro Sengen Shrine (Yamanashi)|12=simple|13=User:Immanuelle/Omuro Sengen Shrine (Yamanashi)|qq=}}
-*{{ill|Fuji Rokusho Sengen Shrine|ja|富知六所淺間神社|simple|lt=Fuji Rokusho Sengen|12=simple|13=User:Immanuelle/Fuji Rokusho Sengen Shrine|12=simple|13=User:Immanuelle/Fuji Rokusho Sengen Shrine|qq=}}
+*[[Kitadate Shrine]]
+*[[Osugi Shrine|Osugi]]
+*[[Igusa Hachimangu]]
+*[[Inage Shrine|Inage]]
+*[[Omuro Sengen Shrine (Yamanashi)|Fuji Yamashitamiya Komuro Asama]]
+*[[Fuji Rokusho Sengen Shrine|Fuji Rokusho Sengen]]
 *[[Imamiya Ebisu Shrine|Imamiya Ebisu]]
-*{{ill|Taikodani Inari Shrine|ja|太皷谷稲成神社|simple|lt=Taikodani Inari|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|12=simple|13=User:Immanuelle/Taikodani Inari Shrine|qq=}}
-*{{ill|Tsunomine Shrine|ja|津峯神社|simple|lt=Tsunomine|12=simple|13=User:Immanuelle/Tsunomine Shrine|12=simple|13=User:Immanuelle/Tsunomine Shrine|qq=}}
-*{{ill|Washio Atago Shrine|ja|鷲尾愛宕神社|simple|lt=Washio Atago|12=simple|13=User:Immanuelle/Washio Atago Shrine|12=simple|13=User:Immanuelle/Washio Atago Shrine|qq=}}
+*[[Taikodani Inari Shrine|Taikodani Inari]]
+*[[Tsunomine Shrine|Tsunomine]]
+*[[Washio Atago Shrine|Washio Atago]]
 
 | group3 = 村社 (Son-sha - Village Shrines)
 | list3 =
 *[[Ōsaki Hachimangū]]
 *[[Kasama Inari Shrine|Kasama Inari]]
-*{{ill|Yohashira Shrine|ja|四柱神社|simple|lt=Yohashira|12=simple|13=User:Immanuelle/Yohashira Shrine|12=simple|13=User:Immanuelle/Yohashira Shrine|qq=}}
-*{{ill|Kinomiya Shrine|ja|来宮神社|simple|lt=Kinomiya|12=simple|13=User:Immanuelle/Kinomiya Shrine|12=simple|13=User:Immanuelle/Kinomiya Shrine|qq=}}
+*[[Yohashira Shrine|Yohashira]]
+*[[Kinomiya Shrine|Kinomiya]]
 *[[Futami Okitama Shrine|Futami Okitama]]
-*{{ill|Aga Shrine|ja|阿賀神社|simple|lt=Aga|12=simple|13=User:Immanuelle/Aga Shrine|12=simple|13=User:Immanuelle/Aga Shrine|qq=}}
-*{{ill|Hijiyama Shrine|ja|比治山神社|simple|lt=Hijiyama|12=simple|13=User:Immanuelle/Hijiyama Shrine|12=simple|13=User:Immanuelle/Hijiyama Shrine|qq=}}
-*{{ill|Wakamatsu Ebisu Shrine|ja|若松恵比須神社|simple|lt=Wakamatsu Ebisu|12=simple|13=User:Immanuelle/Wakamatsu Ebisu Shrine|12=simple|13=User:Immanuelle/Wakamatsu Ebisu Shrine|qq=}}
+*[[Aga Shrine|Aga]]
+*[[Hijiyama Shrine|Hijiyama]]
+*[[Wakamatsu Ebisu Shrine|Wakamatsu Ebisu]]
 *[[Aoshima Shrine|Aoshima]]
 *[[Takachiho Shrine|Takachiho]]
 *[[Amanoiwato Shrine|Amanoiwato]]
@@ -883,9 +883,7 @@
 }}}}
 <noinclude>
 
-{{wikidata link|Q110066542|ja|Template:近代社格制度}}
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 </noinclude>

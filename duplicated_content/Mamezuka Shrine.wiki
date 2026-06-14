@@ -15,44 +15,9 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Mamezuka Shrine'''|豆塚神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+{{nihongo|'''Mamezuka Shrine'''|豆塚神社}} is a [[shinto shrine]] in {{ill|Izunokuni|ar|إزونوكني (شيزوكا)|arz|ازونوكنى|azb|ایزونوکونی، شیزوئوکا|ce|Идзунокуни|ceb|Izunokuni (lungsod sa Hapon)|de|Izunokuni|es|Izunokuni (Shizuoka)|et|Izunokuni|fa|ایزونوکونی، شیزوئوکا|fi|Izunokuni|fr|Izunokuni|gl|Izunokuni|id|Izunokuni, Shizuoka|it|Izunokuni|ja|伊豆の国市|ko|이즈노쿠니시|mzn|ایزونوکونی، شیزوئوکا|nl|Izunokuni|pl|Izunokuni|pt|Izunokuni|ro|Izunokuni|ru|Идзунокуни|sv|Izunokuni|tg|Изунокуни|tl|Izunokuni|tr|İzunokuni|tt|Идзунокуни|tum|Izunokuni|uk|Ідзунокуні|vi|Izunokuni, Shizuoka|war|Izunokuni, Shizuoka|zh|伊豆之國市|zh_classical|伊豆之國市|zh_min_nan|Izunokuni-chhī|zh_yue|伊豆之國|qid=Q863758|lt=Izunokuni}}, [[Shizuoka Prefecture]], listed in the [[Engishiki Jinmyōchō]] as a {{ill|Shikinai Supershrine|qid=Q135419779|lt=Shikinai Supershrine}}. It holds the rank of {{ill|Gō-sha|ja|郷社|qid=Q134917316|lt=Gō-sha}} and is registered as a {{ill|religious corporation|ja|宗教法人|qid=Q7311343|lt=religious corporation}} (corporate number: 5080105001699; postal code: 410-2223).<ref>https://www.houjin-bangou.nta.go.jp/download/zenken/index.html</ref>
 
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
-* {{ill|Shikinai Supershrine|qid=Q135419779|lt=Shikinai Supershrine}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Izunokuni|ar|إزونوكني (شيزوكا)|arz|ازونوكنى|azb|ایزونوکونی، شیزوئوکا|ce|Идзунокуни|ceb|Izunokuni (lungsod sa Hapon)|de|Izunokuni|es|Izunokuni (Shizuoka)|et|Izunokuni|fa|ایزونوکونی، شیزوئوکا|fi|Izunokuni|fr|Izunokuni|gl|Izunokuni|id|Izunokuni, Shizuoka|it|Izunokuni|ja|伊豆の国市|ko|이즈노쿠니시|mzn|ایزونوکونی، شیزوئوکا|nl|Izunokuni|pl|Izunokuni|pt|Izunokuni|ro|Izunokuni|ru|Идзунокуни|sv|Izunokuni|tg|Изунокуни|tl|Izunokuni|tr|İzunokuni|tt|Идзунокуни|tum|Izunokuni|uk|Ідзунокуні|vi|Izunokuni, Shizuoka|war|Izunokuni, Shizuoka|zh|伊豆之國市|zh_classical|伊豆之國市|zh_min_nan|Izunokuni-chhī|zh_yue|伊豆之國|qid=Q863758|lt=Izunokuni}}
-
-== coordinate location (P625) ==
-
-* {{coord|35.05556|138.93167}}
-
-== image (P18) ==
-
-* Mamezuka Jinja.JPG
-
-== modern shrine ranking (P13723) ==
-
-* {{ill|Gō-sha|ja|郷社|qid=Q134917316|lt=Gō-sha}}
-
-== legal form (P1454) ==
-
-* {{ill|religious corporation|ja|宗教法人|qid=Q7311343|lt=religious corporation}}
-
-== postal code (P281) ==
-
-* 410-2223<ref>https://www.houjin-bangou.nta.go.jp/download/zenken/index.html</ref>
-
-== Corporate Number (Japan) (P3225) ==
-
-* 5080105001699<ref>https://www.houjin-bangou.nta.go.jp/download/zenken/index.html</ref>
-
-== has part(s) (P527) ==
-
-* {{ill|Ishitokutaka Shrine (Mamezuka Shrine)|lt=Ishitokutaka Shrine (Mamezuka Shrine)|qid=Q135192938}}<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181619</ref>
+The shrine encompasses {{ill|Ishitokutaka Shrine (Mamezuka Shrine)|lt=Ishitokutaka Shrine (Mamezuka Shrine)|qid=Q135192938}} as a subsidiary shrine.<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181619</ref>
 
 ==References==
 
@@ -69,12 +34,12 @@
 |位置 = {{Coord|35|3|20|N|138|55|54|E}}
 |祭神   = 石徳高命
 |社格   = {{jalink|伊豆国の式内社一覧|Q11380552|式内社}}<br/>旧{{jalink|郷社}}
-|創建   = 
-|本殿   = 
-|別名   = 
-|札所等 = 
+|創建   =
+|本殿   =
+|別名   =
+|札所等 =
 |例祭   = 4月3日
-|神事   = 
+|神事   =
 |地図 = {{Location map|Japan Shizuoka|label=豆塚神社|coordinates=
 {{coord2|35|3|20|N|138|55|54|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 }}
@@ -112,4 +77,3 @@
 [[Category:Shikinai Supershrine]]
 [[Category:need translation]]
 [[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
