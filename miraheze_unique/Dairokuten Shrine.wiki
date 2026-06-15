@@ -192,6 +192,7 @@ According to {{ill|Company register|en|Company register|qid=Q1394657|lt=corporat
 
 == Shrines with this name ==
 
+<!-- BEGIN: auto-generated Wikidata shrine list -->
 * {{ill|Dairokuten Shrine (Q11602401)|lt=Dairokuten Shrine|qid=Q11602401}} — Suginami
 * {{ill|Dairokuten Shrine (Q130409851)|lt=Dairokuten Shrine|qid=Q130409851}} — Kasukabe
 * {{ill|Dairokuten Shrine (Q131144548)|lt=Dairokuten Shrine|qid=Q131144548}} — Shisui
@@ -209,12 +210,13 @@ According to {{ill|Company register|en|Company register|qid=Q1394657|lt=corporat
 * {{ill|Dairokuten Shrine (Q135155755)|lt=Dairokuten Shrine|qid=Q135155755}} — Goka
 * {{ill|Dairokuten Shrine (Q135463431)|lt=Dairokuten Shrine|qid=Q135463431}} — Minamiuonuma
 * {{ill|Dairokuten Shrine (Q18337197)|lt=Dairokuten Shrine|qid=Q18337197}} — Chigasaki
+<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|第六天神社|version=101312709|comment=Imported full ja history}}
 
 {{Commons category|Dairokuten jinjya}}
 {{wikidata link|Q11602399|ja|第六天神社|ja|主な第六天神社|grok=none|check_date=2026-05-28}}
-[[Category:Dairokuten Shrine
+[[Category:Dairokuten Shrine]]
 [[Category:All disambiguation pages]]
 [[Category:Dairokuten Shrines]]
 [[Category:History of Japan]]
