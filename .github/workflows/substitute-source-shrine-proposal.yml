@@ -1,0 +1,44 @@
+name: Substitute Source Shrine proposal (one-shot)
+
+# ONE-SHOT date-gated Wikidata talk-page edit (Emma 2026-06-16).
+# substitute_source_shrine_proposal.py is a no-op until 2026-09-04 (80 days out),
+# then subst's the finished {{Wikidata:Property proposal/Source Shrine}} into
+# [[Wikidata talk:WikiProject Shinto]] exactly once and is idempotent thereafter.
+# Scheduled daily through September so it fires promptly on the gate date and
+# self-heals if a run fails; safe to delete this workflow + script once the edit
+# has landed.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every day in September (UTC). Date gate inside the script enforces 2026-09-04.
+    - cron: "17 9 * 9 *"
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  substitute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Substitute finished proposal
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python substitute_source_shrine_proposal.py --apply --run-tag "[[github:${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|substitute-source-shrine-proposal]]"
