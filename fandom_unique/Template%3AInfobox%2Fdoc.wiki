@@ -1,0 +1,1247 @@
+{{Documentation subpage}}
+
+{{Distinguish|Template:Userbox}}
+{{#ifeq:{{SUBPAGENAME}}|sandbox||{{High-use}}}}
+{{Lua|Module:Infobox}}
+{{Parameter names example
+ |name={{PAGENAME}}  |title |above |subheader |subheader1 |subheader2={{{subheader2}}}<br/>......
+ |image|caption |image1|caption1 |image2|caption2={{{caption2}}}<br/>......
+ |header1=<div style="border-top:1px dashed #ccc;">{{{header1}}}<br/>{{nobold|( ''or'' )}}</div>
+ |label2={{{label1}}} |data2={{{data1}}}
+ |data3=( ''or'' )<br/><div style="padding-bottom:0.25em;border-bottom:1px dashed #ccc;">{{{data1}}}</div>
+ |header5={{{header2}}}<br/><div style="padding:0.75em 0 0.5em;">{{nobold|( ''or'' )}}</div>
+ |label6={{{label2}}} |data6={{{data2}}}
+ |data7=( ''or'' )<br/><div style="padding-bottom:0.25em;border-bottom:1px dashed #ccc;">{{{data2}}}</div>
+ |data9=<div style="padding:0.75em 0 0.5em;">( ''etc'' )</div>
+ |below
+}}
+
+'''[[Template:Infobox]]''' is intended as a meta template: a template used for constructing other templates. '''Note''': In general, it is not meant for use directly in an article, but can be used on a one-off basis if required. [[Help:Infobox]] contains an introduction about the recommended content and design of infoboxes; [[Wikipedia:Manual of Style/Infoboxes]] contains additional style guidelines. See [[WP:List of infoboxes]] and [[:Category:Infobox templates]] for lists of prepared topic-specific infoboxes.
+
+== Usage ==
+{{tlf|Infobox}} is a meta-template: used to organise an actual <nowiki>{{Infobox sometopic}}</nowiki> template (like {{tl|Infobox building}}). 
+
+For <code><nowiki>[[Template:Infobox sometopic]]</nowiki></code>, template code then looks like this, simplified:
+<syntaxhighlight lang="wikitext">
+{{Infobox
+| name     = {{{name|{{PAGENAME}}}}}
+| image    = {{{image|}}}
+| caption1 = {{{caption|}}}
+
+| label1   = Former names
+|  data1   = {{{former_names|}}}
+
+| header2  = General information
+
+| label3   = Status
+|  data3   = {{{status|}}}
+... 
+}}
+</syntaxhighlight>
+
+== Optional control parameters ==
+; name : If this parameter is present, "view, talk and edit" links will be added to the bottom of the infobox pointing to the named page, prefixed by <code>Template:</code> if no namespace is specified. You may use the value <nowiki>{{subst:PAGENAME}}</nowiki>; however, this is rarely what you want because it will send users clicking these links in an infobox to the template code rather than the data in the infobox they probably want to change.
+; child :  See the [[#Embedding|Embedding]] section for details. If this is set to "yes", this child infobox should be titled but have no name parameter. This parameter is empty by default, set it to "yes" to activate it.
+; subbox :  See the [[#Subboxes|Subboxes]] section for details. If this is set to "yes", this subbox should be titled but have no name parameter. This parameter is empty by default, set to "yes" to activate it. It has no effect if the {{para|child}} parameter is also set to "yes".
+; decat : If this is set to "yes", the current page will not be autocategorized in a maintenance category when the generated infobox has some problems or no visible data section. Leave empty by default or set to "yes" to activate it.
+; autoheaders: If this is set to any non-blank value, headers which are not followed by data fields are suppressed.  See the "[[#Hiding headers when all its data fields are empty|hiding headers when all its data fields are empty]]" section for more details.
+
+== Content parameters ==
+
+=== Title ===
+There are two different ways to put a title on an infobox. One contains the title inside the infobox's border in the uppermost cell of the table, the other puts it as a caption on top of the table. You can use them both together, or just one or the other, or neither (though this is not recommended):
+
+; title : Text to put in the caption over the top of the table (or as section header before the whole content of this table, if this is a child infobox). For [[Wikipedia:Manual of Style/Accessibility#Tables|accessibility reasons]], this is the most recommended alternative.
+; above : Text to put within the uppermost cell of the table.
+; subheader(n) : additional title fields which fit below {{para|title}}} and {{para|above}}}, but before images.
+
+Examples:
+
+{{Infobox
+ | name       = Infobox/doc
+ | title      = Text in caption over infobox
+ | subheader  = Subheader of the infobox
+ | header     = (the rest of the infobox goes here)
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | name       = {{subst:PAGENAME}}
+ | title      = Text in caption over infobox
+ | subheader  = Subheader of the infobox
+ | header     = (the rest of the infobox goes here)
+}}
+</syntaxhighlight>
+{{clear}}
+
+{{Infobox
+ | name       = Infobox/doc
+ | above      = Text in uppermost cell of infobox
+ | subheader  = Subheader of the infobox
+ | subheader2 = Second subheader of the infobox
+ | header     = (the rest of the infobox goes here)
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | name       = {{subst:PAGENAME}}
+ | above      = Text in uppermost cell of infobox
+ | subheader  = Subheader of the infobox
+ | subheader2 = Second subheader of the infobox
+ | header     = (the rest of the infobox goes here)
+}}
+</syntaxhighlight>
+{{clear}}
+
+=== Illustration images ===
+; image(n) : images to display at the top of the template. Use full image syntax, for example <nowiki>[[File:example.png|200px|alt=Example alt text]]</nowiki>. Image is centered by default. See [[WP:ALT]] for more on alt text.
+; caption(n) : Text to put underneath the images.
+
+=== Main data ===
+; header(n) : Text to use as a header in row n.
+; label(n) : Text to use as a label in row n.
+; data(n) : Text to display as data in row n.
+
+Note: for any given value for (n), not all combinations of parameters are permitted. The presence of a {{para|header''(n)''}} will cause the corresponding {{para|data''(n)''}} (and {{para|rowclass''(n)''}} {{para|label''(n)''}}, see below) to be ignored; the absence of a {{para|data''(n)''}} will cause the corresponding {{para|label''(n)''}} to be ignored. Valid combinations for any single row are:
+
+* {{para|class''(n)''}} {{para|header''(n)''}}
+* {{para|rowclass''(n)''}} {{para|class''(n)''}} {{para|data''(n)''}}
+* {{para|rowclass''(n)''}} {{para|label''(n)''}} {{para|class''(n)''}} {{para|data''(n)''}}
+
+See the rendering of header4, label4, and data4 in the [[#Examples|Examples]] section below.
+
+==== Number ranges ====
+To allow flexibility when the layout of an infobox is changed, it may be helpful when developing an infobox to use non-contiguous numbers for header and label/data rows. Parameters for new rows can then be inserted in future without having to renumber existing parameters. For example:
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+ | header3  = Section 1
+ |  label5  = Label A
+ |   data5  = Data A
+ |  label7  = Label C
+ |   data7  = Data C
+ | header10 = Section 2
+ |  label12 = Label D
+ |   data12 = Data D
+</syntaxhighlight>
+{{clear}}
+
+It is also possible to automatically renumber parameter names by using [[User:Frietjes/infoboxgap.js]] or [[Module:IncrementParams]].
+
+There is no upper limit on numbers but there must be at most 50 between each used number.
+
+==== Making data fields optional ====
+A row with a label but no data is not displayed. This allows for the easy creation of optional infobox content rows. To make a row optional use a parameter that defaults to an empty string, like so:
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+ | label5 = Population
+ |  data5 = {{{population|}}}
+</syntaxhighlight>
+{{clear}}
+
+This way if an article doesn't define the population parameter in its infobox the row won't be displayed.
+
+For more complex fields with pre-formatted contents that would still be present even if the parameter wasn't set, you can wrap it all in an "#if" statement to make the whole thing vanish when the parameter is not used. For instance, the "#if" statement in the following example reads "#if:the parameter ''mass'' has been supplied |then display it, followed by 'kg'":
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+ | label6 = Mass
+ |  data6 = {{ #if: {{{mass|}}} | {{{mass}}} kg }}
+</syntaxhighlight>
+{{clear}}
+
+For more on #if, see [[meta:ParserFunctions##if:|here]].
+
+==== Hiding headers when all its data fields are empty ====
+You can also make headers automatically hide when their section is empty (has no data-row showing).
+
+Consider this situation:
+{{Infobox
+ | title   = Example: header with & without data
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = Header5 with data below
+ |  label6 = label6 text |  data6 = Some value
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title   = Example: header with & without data
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = Header5 with data below
+ |  label6 = label6 text |   data6 = Some value
+}}
+</syntaxhighlight>
+{{clear}}
+
+If you want hide the header when no {{para|data''N''}} values are present, use {{para|autoheaders|y}}:
+
+{{Infobox
+ | title   = Example: header with & without data
+ | autoheaders = y
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = Header5 with data below
+ |  label6 = label6 text |  data6 = Some value
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title   = Example: header with & without data
+ | autoheaders = y
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = Header5 with data below
+ |  label6 = label6 text |  data6 = Some value
+}}
+</syntaxhighlight>
+{{clear}}
+
+So, header1 will be shown if any of item1, item2, or item3 is defined. If none of the three parameters are defined the header won't be shown and no empty row appears before the next visible content.
+
+Note: if the data has empty css elements, like {{para|data|2=&lt;span style="background:yellow;">&lt;/span>}}, this will be treated as non-empty (having data).
+
+If {{para|autoheaders|y}} but there are items that you {{em|do not}} want to trigger a header, place {{para|headerX|_BLANK_}}. This will serve as an empty header and separate it from the subsequent items.
+
+{{Infobox
+ | title   = Example: blank header with & without data
+ | autoheaders = y
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = _BLANK_
+ |  label6 = label6 text |  data6 = Some value, but does not trigger header1 or show header5
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title   = Example: blank header with & without data
+ | autoheaders = y
+ | headerstyle = background: lightgrey
+
+ | header1 = Header1 with empty section
+ |  label2 = label2 text |  data2 =
+ |  label3 = label3 text |  data3 =
+ |  label4 = label4 text |  data4 =
+
+ | header5 = _BLANK_
+ |  label6 = label6 text |  data6 = Some value, but does not trigger header1 or show header5
+}}
+</syntaxhighlight>
+{{clear}}
+
+=== Footer ===
+; below : Text to put in the bottom cell. The bottom cell is intended for footnotes, see-also, and other such information.
+
+== Presentation parameters ==
+
+=== Italic titles ===
+Titles of articles with infoboxes may be made italic, in line with [[WP:ITALICTITLE]], by passing the <code>italic title</code> parameter.
+
+* Turn on italic titles by passing {{para|italic title|<nowiki>{{{italic title|}}}</nowiki>}} from the infobox.
+* Turn off by default (notably because only Latin script may be safely rendered in this style and italic may be needed to distinguish foreign language from local English language only in that script, but would be difficult to read for other scripts) but allow some instances to be made italic by passing {{para|italic title|<nowiki>{{{italic title|no}}}</nowiki>}}
+* Do not make any titles italic by not passing the parameter at all.
+
+=== CSS styling ===
+{{div col}}
+; bodystyle : Applies to the infobox table as a whole
+; titlestyle : Applies only to the title caption. Adding a background color is usually inadvisable since the text is rendered "outside" the infobox.
+; abovestyle : Applies only to the "above" cell at the top. The default style has font-size:125%; since this cell is usually used for a title, if you want to use the above cell for regular-sized text include "font-size:100%;" in the abovestyle.
+; imagestyle : Applies to the cell the image is in. This includes the text of the image caption, but you should set text properties with captionstyle instead of imagestyle in case the caption is moved out of this cell in the future.
+; captionstyle : Applies to the text of the image caption.
+; rowstyle(n) : This parameter is inserted into the <code>style</code> attribute for the specified row.
+; headerstyle : Applies to all header cells
+; subheaderstyle : Applies to all subheader cells
+; labelstyle : Applies to all label cells
+; datastyle : Applies to all data cells
+; belowstyle : Applies only to the below cell
+{{div col end}}
+
+=== HTML classes and microformats ===
+{{div col}}
+; bodyclass : This parameter is inserted into the <code>class</code> attribute for the infobox as a whole.
+; titleclass : This parameter is inserted into the <code>class</code> attribute for the infobox's '''title''' caption.
+
+; aboveclass : This parameter is inserted into the <code>class</code> attribute for the infobox's '''above''' cell.
+; subheaderrowclass(n) : This parameter is inserted into the <code>class</code> attribute for the complete table row the '''subheader''' is on.
+; subheaderclass(n) : This parameter is inserted into the <code>class</code> attribute for the infobox's '''subheader'''.
+; imagerowclass(n) : These parameters are inserted into the <code>class</code> attribute for the complete table row their respective '''image''' is on.
+; imageclass : This parameter is inserted into the <code>class</code> attribute for the '''image'''.
+; rowclass(n) : This parameter is inserted into the <code>class</code> attribute for the specified row including the '''label''' and '''data''' cells.
+; class(n) : This parameter is inserted into the <code>class</code> attribute for the '''data''' cell of the specified row. If there's no '''data''' cell it has no effect.
+
+; belowclass : This parameter is inserted into the <code>class</code> attribute for the infobox's '''below''' cell.
+{{div col end}}
+
+This template supports the addition of microformat information. This is done by adding "class" attributes to various data cells, indicating what kind of information is contained within. Multiple class names may be specified, separated by spaces, some of them being used as selectors for custom styling according to a project policy or to the skin selected in user preferences, others being used for microformats.
+
+To flag an infobox as containing [[:en:HCard|HCard]] information, for example, add the following parameter:
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+ | bodyclass = vcard
+</syntaxhighlight>
+{{clear}}
+
+And for each row containing a data cell that's part of the vcard, add a corresponding class parameter:
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+ | class1 = fn
+ | class2 = org
+ | class3 = tel
+</syntaxhighlight>
+{{clear}}
+
+...and so forth. "above" and "title" can also be given classes, since these are usually used to display the name of the subject of the infobox.
+
+See [[Wikipedia:WikiProject Microformats]] for more information on adding microformat information to Wikipedia, and [[:en:Microformat|Microformat]] for more information on microformats in general.
+
+== Examples ==
+Notice how the row doesn't appear in the displayed infobox when a '''label''' is defined without an accompanying '''data''' cell, and how all of them are displayed when a '''header''' is defined on the same row as a '''data''' cell. Also notice that '''subheaders''' are not bold by default like the '''headers''' used to split the main data section, because this role is meant to be for the '''above''' cell :
+{{Suppress categories|
+{{Infobox
+ |name         = Infobox/doc
+ |bodystyle    = 
+
+ |titlestyle   = 
+ |abovestyle   = background: #cfc;
+ |subheaderstyle =
+ |title        = Test Infobox
+ |above        = Above text
+ |subheader    = Subheader above image
+ |subheader2   = Second subheader
+
+ |imagestyle   = 
+ |captionstyle = 
+ |image        = [[File:Example-serious.jpg|200px|alt=Example alt text]]
+ |caption      = Caption displayed below File:Example-serious.jpg
+
+ |headerstyle  = background: #ccf;
+ |labelstyle   = background: #ddf;
+ |datastyle    = 
+
+ |header1 = Header defined alone
+ | label1 = 
+ |  data1 = 
+ |header2 = 
+ | label2 = Label defined alone does not display (needs data, or is suppressed)
+ |  data2 = 
+ |header3 =
+ | label3 = 
+ |  data3 = Data defined alone
+ |header4 = All three defined (header, label, data, all with same number)
+ | label4 = does not display (same number as a header)
+ |  data4 = does not display (same number as a header)
+ |header5 =
+ | label5 = Label and data defined (label)
+ |  data5 = Label and data defined (data)
+
+ |belowstyle = background: #ddf;
+ |below      = Below text
+}}
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox
+ |name         = Infobox/doc
+ |bodystyle    = 
+
+ |titlestyle   = 
+ |abovestyle   = background: #cfc;
+ |subheaderstyle =
+ |title        = Test Infobox
+ |above        = Above text
+ |subheader    = Subheader above image
+ |subheader2   = Second subheader
+
+ |imagestyle   = 
+ |captionstyle = 
+ |image        = [[File:Example-serious.jpg|200px|alt=Example alt text]]
+ |caption      = Caption displayed below File:Example-serious.jpg
+
+ |headerstyle  = background: #ccf;
+ |labelstyle   = background: #ddf;
+ |datastyle    = 
+
+ |header1 = Header defined alone
+ | label1 = 
+ |  data1 = 
+ |header2 = 
+ | label2 = Label defined alone does not display (needs data, or is suppressed)
+ |  data2 = 
+ |header3 =
+ | label3 = 
+ |  data3 = Data defined alone
+ |header4 = All three defined (header, label, data, all with same number)
+ | label4 = does not display (same number as a header)
+ |  data4 = does not display (same number as a header)
+ |header5 =
+ | label5 = Label and data defined (label)
+ |  data5 = Label and data defined (data)
+
+ |belowstyle = background: #ddf;
+ |below      = Below text
+}}
+</syntaxhighlight>
+For this example, the {{para|bodystyle}} and {{para|labelstyle}} parameters are used to adjust the infobox width and define a default width for the column of labels:
+
+{{Infobox
+ |name        = Infobox/doc
+ |bodystyle   = width: 20em
+
+ |titlestyle  = 
+ |title       = Test Infobox
+
+ |headerstyle = 
+ |labelstyle  = width: 33%
+ |datastyle   = 
+
+ |header1 = 
+ | label1 = Label 1
+ |  data1 = Data 1
+ |header2 = 
+ | label2 = Label 2
+ |  data2 = Data 2
+ |header3 = 
+ | label3 = Label 3
+ |  data3 = Data 3
+ |header4 = Header 4
+ | label4 = 
+ |  data4 = 
+ |header5 = 
+ | label5 = Label 5
+ |  data5 = Data 5: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+ |belowstyle = 
+ |below = Below text
+}}
+<syntaxhighlight lang="wikitext">
+{{Infobox
+ |name        = Infobox/doc
+ |bodystyle   = width: 20em
+
+ |titlestyle  = 
+ |title       = Test Infobox
+
+ |headerstyle = 
+ |labelstyle  = width: 33%
+ |datastyle   = 
+
+ |header1 = 
+ | label1 = Label 1
+ |  data1 = Data 1
+ |header2 = 
+ | label2 = Label 2
+ |  data2 = Data 2
+ |header3 = 
+ | label3 = Label 3
+ |  data3 = Data 3
+ |header4 = Header 4
+ | label4 = 
+ |  data4 = 
+ |header5 = 
+ | label5 = Label 5
+ |  data5 = Data 5: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+ |belowstyle = 
+ |below = Below text
+}}
+
+</syntaxhighlight>
+
+== Embedding ==
+
+One infobox template can be embedded into another using the {{para|child}} parameter. This feature can be used to create a modular infobox, or to create better-defined logical sections. Long ago, it was necessary to use embedding in order to create infoboxes with more than 99 rows; but nowadays there's no limit to the number of rows that can be defined in a single instance of <code><nowiki>{{infobox}}</nowiki></code>.
+
+{{Infobox
+ | title = Top level title
+ | data1 = {{Infobox | decat = yes | child = yes
+    | title = First subsection
+    | label1= Label 1.1
+    | data1 = Data 1.1
+   }}
+ | data2 = {{Infobox | decat = yes | child = yes
+  |title = Second subsection
+  | label1= Label 2.1
+  | data1 = Data 2.1
+  }}
+ | belowstyle = 
+ | below = Below text
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title = Top level title
+ | data1 = {{Infobox | decat = yes | child = yes
+    | title = First subsection
+    | label1= Label 1.1
+    | data1 = Data 1.1
+   }}
+ | data2 = {{Infobox | decat = yes | child = yes
+  |title = Second subsection
+  | label1= Label 2.1
+  | data1 = Data 2.1
+  }}
+ | belowstyle = 
+ | below = Below text
+}}
+</syntaxhighlight>
+{{clear}}
+
+Note, in the examples above, the child infobox is placed in a <code>data</code> field, not a <code>header</code> field.  Notice that the section subheadings are not in bold font if bolding is not explicitly specified. To obtain bold section headings, place the child infobox in a '''header''' field (but not in a '''label''' field because it would not be displayed!), either using
+
+{{Infobox
+ | title = Top level title
+ | header1 = {{Infobox | decat = yes | child = yes
+    | title = First subsection
+    | label1= Label 1.1
+    | data1 = Data 1.1
+   }}
+ | header2 = {{Infobox | decat = yes | child = yes
+    | title = Second subsection
+    | label1= Label 2.1
+    | data1 = Data 2.1
+   }}
+ | belowstyle = 
+ | below = Below text
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title = Top level title
+ | header1 = {{Infobox | decat = yes | child = yes
+    | title = First subsection
+    | label1= Label 1.1
+    | data1 = Data 1.1
+   }}
+ | header2 = {{Infobox | decat = yes | child = yes
+    | title = Second subsection
+    | label1= Label 2.1
+    | data1 = Data 2.1
+   }}
+ | belowstyle = 
+ | below = Below text
+}}
+</syntaxhighlight>
+{{clear}}
+
+or,
+
+{{Infobox
+ | title = Top level title
+ | header1 = First subsection
+   {{Infobox | decat = yes | child = yes
+    | label1 = Label 1.1
+    |   data1 = Data 1.1
+   }}
+ | header2 = Second subsection
+   {{Infobox | decat = yes | child = yes
+    | label1 = Label 2.1
+    |  data1 = Data 2.1
+   }}
+ | belowstyle = 
+ | below = Below text
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | title = Top level title
+ | header1 = First subsection
+   {{Infobox | decat = yes | child = yes
+    | label1 = Label 1.1
+    |   data1 = Data 1.1
+   }}
+ | header2 = Second subsection
+   {{Infobox | decat = yes | child = yes
+    | label1 = Label 2.1
+    |  data1 = Data 2.1
+   }}
+ | belowstyle = 
+ | below = Below text
+}}
+</syntaxhighlight>
+{{clear}}
+
+Note that omitting the {{para|title}} parameter, and not including any text preceding the embedded infobox, may result in spurious blank table rows, creating gaps in the visual presentation. The garbage output can be suppressed using {{para|rowstyleN|display: none}}, replacing N with the data/header number.
+
+[[Wikipedia:WikiProject Infoboxes/embed]] includes some links to Wikipedia articles which include infoboxes embedded within other infoboxes.
+
+== Subboxes ==
+An alternative method for embedding is to use {{para|subbox|yes}}, which removes the outer border from the infobox, but preserves the interior structure.  One feature of this approach is that the parent and child boxes need not have the same structure, and the label and data fields are not aligned between the parent and child boxes because they are not in the same parent table.
+
+{{Infobox
+ | headerstyle = background-color: #eee;
+ | labelstyle  = background-color: #eee;
+ | header1 = Main 1
+ | header2 = Main 2
+ |   data3 = {{Infobox | subbox = yes
+    | headerstyle = background-color: #ccc;
+    | labelstyle  = background-color: #ddd;
+    | header1 = Sub 3-1
+    | header2 = Sub 3-2
+    |  label3 = Label 3-3    |   data3 = Data 3-3
+   }}
+ |   data4 = {{Infobox | subbox = yes
+    | labelstyle  = background-color: #ccc;
+    |  label1 = Label 4-1    |   data1 = Data 4-1
+   }}
+ |  label5 = Label 5 |   data5 = Data 5
+ | header6 = Main 6
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+ | headerstyle = background-color: #eee;
+ | labelstyle  = background-color: #eee;
+ | header1 = Main 1
+ | header2 = Main 2
+ |   data3 = {{Infobox | subbox = yes
+    | headerstyle = background-color: #ccc;
+    | labelstyle  = background-color:#ddd;
+    | header1 = Sub 3-1
+    | header2 = Sub 3-2
+    |  label3 = Label 3-3    |   data3 = Data 3-3
+   }}
+ |   data4 = {{Infobox | subbox = yes
+    | labelstyle  = background-color: #ccc;
+    |  label1 = Label 4-1    |   data1 = Data 4-1
+   }}
+ |  label5 = Label 5 |   data5 = Data 5
+ | header6 = Main 6
+}}
+</syntaxhighlight>
+{{clear}}
+
+Similar embedding techniques may be used within content parameters of some other templates generating tables (such as [[:Template:Sidebar|Sidebar]]):
+
+{{Sidebar
+ | navbar = off
+ | headingstyle = background-color: #eee;
+ | heading1 = Heading 1
+ | heading2 = Heading 2
+ | content3 = {{Infobox | subbox = yes
+    | headerstyle = background-color: #ccc;
+    | labelstyle = background-color: #ddd;
+    | header1 = Sub 3-1
+    | header2 = Sub 3-2
+    |  label3 = Label 3-3 |   data3 = Data 3-3
+   }}
+ | content4 = {{Infobox | subbox = yes
+    | labelstyle = background-color: #ccc;
+    |  label1 = Label 4-1 |   data1 = Data 4-1
+   }}
+ | heading5 = Heading 5
+}}
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Sidebar
+ | navbar = off
+ | headingstyle = background-color: #eee;
+ | heading1 = Heading 1
+ | heading2 = Heading 2
+ | content3 = {{Infobox | subbox = yes
+    | headerstyle = background-color: #ccc;
+    | labelstyle = background-color: #ddd;
+    | header1 = Sub 3-1
+    | header2 = Sub 3-2
+    |  label3 = Label 3-3 |   data3 = Data 3-3
+   }}
+ | content4 = {{Infobox | subbox = yes
+    | labelstyle = background-color: #ccc;
+    |  label1 = Label 4-1 |   data1 = Data 4-1
+   }}
+ | heading5 = Heading 5
+}}
+</syntaxhighlight>
+{{clear}}
+
+Note that the default padding of the parent data cell containing each subbox is still visible, so the subboxes are slightly narrower than the parent box and there's a higher vertical spacing between standard cells of the parent box than between cells of distinct subboxes.
+
+== Controlling line-breaking in embedded bulletless lists ==
+Template {{tlx|nbsp}} may be used with {{tlx|wbr}} and {{tlx|nowrap}} to control line-breaking in bulletless lists embedded in infoboxes (e.g. cast list in {{tlx|Infobox film}}), to prevent wrapped long entries from being confused with multiple entries. See [[Template:Wbr/doc#Controlling line-breaking in infoboxes]] for details.
+
+== Full blank syntax ==
+(Note: there is no limit to the number of possible rows; only 20 are given below since infoboxes larger than that will be relatively rare. Just extend the numbering as needed. The microformat "class" parameters are also omitted as they are not commonly used.)
+
+<syntaxhighlight lang="wikitext" style="overflow: auto;">
+{{Infobox
+| name           = {{subst:PAGENAME}}
+| child          = {{{child|}}}
+| subbox         = {{{subbox|}}}
+| italic title   = {{{italic title|no}}}
+| templatestyles = 
+| child templatestyles = 
+| grandchild templatestyles = 
+| bodystyle      = 
+
+| titlestyle     = 
+| abovestyle     = 
+| subheaderstyle = 
+| title          = 
+| above          = 
+| subheader      = 
+
+|   imagestyle   = 
+| captionstyle   = 
+|   image        = 
+| caption        = 
+|   image2       = 
+| caption2       = 
+
+| headerstyle    = 
+|  labelstyle    = 
+|   datastyle    = 
+| header1  = 
+|  label1  = 
+|   data1  = 
+| header2  = 
+|  label2  = 
+|   data2  = 
+| header3  = 
+|  label3  = 
+|   data3  = 
+| header4  = 
+|  label4  = 
+|   data4  = 
+| header5  = 
+|  label5  = 
+|   data5  = 
+| header6  = 
+|  label6  = 
+|   data6  = 
+| header7  = 
+|  label7  = 
+|   data7  = 
+| header8  = 
+|  label8  = 
+|   data8  = 
+| header9  = 
+|  label9  = 
+|   data9  = 
+| header10 = 
+|  label10 = 
+|   data10 = 
+| header11 = 
+|  label11 = 
+|   data11 = 
+| header12 = 
+|  label12 = 
+|   data12 = 
+| header13 = 
+|  label13 = 
+|   data13 = 
+| header14 = 
+|  label14 = 
+|   data14 = 
+| header15 = 
+|  label15 = 
+|   data15 = 
+| header16 = 
+|  label16 = 
+|   data16 = 
+| header17 = 
+|  label17 = 
+|   data17 = 
+| header18 = 
+|  label18 = 
+|   data18 = 
+| header19 = 
+|  label19 = 
+|   data19 = 
+| header20 = 
+|  label20 = 
+|   data20 = 
+
+| belowstyle     = 
+| below          = 
+}}
+</syntaxhighlight>
+{{clear}}
+{{Help:Infobox/user style}}
+
+== Porting to other MediaWikis ==
+The infobox template requires the [[:mw:Extension:Scribunto|Scribunto]] and [[:mw:Extension:TemplateStyles|TemplateStyles]] extensions. [[Wikipedia:WikiProject Transwiki|WikiProject Transwiki]] has a version of this template that has been modified to work on other MediaWikis.
+
+== TemplateData ==
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "This template is intended as a meta template, a template used for constructing other templates. In general, it is not meant for use directly in an article but can be used on a one-off basis if required.",
+	"format": "{{_\n| ________________ = _\n}}\n",
+	"params": {
+ 		"name": {
+			"label": "name",
+ 			"description": ""
+         },
+ 		"child": {
+			"label": "child",
+ 			"description": ""
+         },
+ 		"subbox": {
+			"label": "subbox",
+ 			"description": ""
+         },
+ 		"italic title": {
+			"label": "italic title",
+ 			"description": ""
+         },
+  		"templatestyles": {
+			"label": "templatestyles",
+ 			"description": ""
+         },
+ 		"child templatestyles": {
+			"label": "child templatestyles",
+ 			"description": ""
+         },
+ 		"grandchild templatestyles": {
+			"label": "grandchild templatestyles",
+ 			"description": ""
+         },
+ 		"bodystyle": {
+			"label": "bodystyle",
+ 			"description": ""
+         },
+ 		"titlestyle": {
+			"label": "titlestyle",
+ 			"description": ""
+         },
+ 		"abovestyle": {
+			"label": "abovestyle",
+ 			"description": ""
+         },
+ 		"subheaderstyle": {
+			"label": "subheaderstyle",
+ 			"description": ""
+         },
+		"title": {
+			"label": "Title",
+			"description": "Title displayed above the infobox",
+			"type": "string",
+			"suggested": true
+		},
+ 		"above": {
+			"label": "above",
+ 			"description": ""
+         },
+ 		"subheader": {
+			"label": "subheader",
+ 			"description": ""
+         },
+ 		"imagestyle": {
+			"label": "imagestyle",
+ 			"description": ""
+         },
+ 		"captionstyle": {
+			"label": "captionstyle",
+ 			"description": ""
+         },
+		"image": {
+			"label": "Image",
+			"description": "Image illustrating the topic.  Use full image syntax.",
+			"type": "content",
+			"suggested": true,
+			"example": "[[File:example.png|200px|alt=Example alt text]]"
+		},
+		"caption": {
+			"label": "Caption",
+			"description": "caption for the image",
+			"type": "content",
+			"suggested": true
+		},
+ 		"image2": {
+			"label": "image2",
+ 			"description": ""
+         },
+ 		"caption2": {
+			"label": "caption2",
+ 			"description": ""
+         },
+ 		"headerstyle": {
+			"label": "headerstyle",
+ 			"description": ""
+         },
+ 		"labelstyle": {
+			"label": "labelstyle",
+ 			"description": ""
+         },
+ 		"datastyle": {
+			"label": "datastyle",
+ 			"description": ""
+         },
+ 		"header1": {
+			"label": "header1",
+ 			"description": ""
+         },
+ 		"label1": {
+			"label": "label1",
+ 			"description": ""
+         },
+ 		"data1": {
+			"label": "data1",
+ 			"description": ""
+         },
+ 		"header2": {
+			"label": "header2",
+ 			"description": ""
+         },
+ 		"label2": {
+			"label": "label2",
+ 			"description": ""
+         },
+ 		"data2": {
+			"label": "data2",
+ 			"description": ""
+         },
+ 		"header3": {
+			"label": "header3",
+ 			"description": ""
+         },
+ 		"label3": {
+			"label": "label3",
+ 			"description": ""
+         },
+ 		"data3": {
+			"label": "data3",
+ 			"description": ""
+         },
+ 		"header4": {
+			"label": "header4",
+ 			"description": ""
+         },
+ 		"label4": {
+			"label": "label4",
+ 			"description": ""
+         },
+ 		"data4": {
+			"label": "data4",
+ 			"description": ""
+         },
+ 		"header5": {
+			"label": "header5",
+ 			"description": ""
+         },
+ 		"label5": {
+			"label": "label5",
+ 			"description": ""
+         },
+ 		"data5": {
+			"label": "data5",
+ 			"description": ""
+         },
+ 		"header6": {
+			"label": "header6",
+ 			"description": ""
+         },
+ 		"label6": {
+			"label": "label6",
+ 			"description": ""
+         },
+ 		"data6": {
+			"label": "data6",
+ 			"description": ""
+         },
+ 		"header7": {
+			"label": "header7",
+ 			"description": ""
+         },
+ 		"label7": {
+			"label": "label7",
+ 			"description": ""
+         },
+ 		"data7": {
+			"label": "data7",
+ 			"description": ""
+         },
+ 		"header8": {
+			"label": "header8",
+ 			"description": ""
+         },
+ 		"label8": {
+			"label": "label8",
+ 			"description": ""
+         },
+ 		"data8": {
+			"label": "data8",
+ 			"description": ""
+         },
+ 		"header9": {
+			"label": "header9",
+ 			"description": ""
+         },
+ 		"label9": {
+			"label": "label9",
+ 			"description": ""
+         },
+ 		"data9": {
+			"label": "data9",
+ 			"description": ""
+         },
+ 		"header10": {
+			"label": "header10",
+ 			"description": ""
+         },
+ 		"label10": {
+			"label": "label10",
+ 			"description": ""
+         },
+ 		"data10": {
+			"label": "data10",
+ 			"description": ""
+         },
+ 		"header11": {
+			"label": "header11",
+ 			"description": ""
+         },
+ 		"label11": {
+			"label": "label11",
+ 			"description": ""
+         },
+ 		"data11": {
+			"label": "data11",
+ 			"description": ""
+         },
+ 		"header12": {
+			"label": "header12",
+ 			"description": ""
+         },
+ 		"label12": {
+			"label": "label12",
+ 			"description": ""
+         },
+ 		"data12": {
+			"label": "data12",
+ 			"description": ""
+         },
+ 		"header13": {
+			"label": "header13",
+ 			"description": ""
+         },
+ 		"label13": {
+			"label": "label13",
+ 			"description": ""
+         },
+ 		"data13": {
+			"label": "data13",
+ 			"description": ""
+         },
+ 		"header14": {
+			"label": "header14",
+ 			"description": ""
+         },
+ 		"label14": {
+			"label": "label14",
+ 			"description": ""
+         },
+ 		"data14": {
+			"label": "data14",
+ 			"description": ""
+         },
+ 		"header15": {
+			"label": "header15",
+ 			"description": ""
+         },
+ 		"label15": {
+			"label": "label15",
+ 			"description": ""
+         },
+ 		"data15": {
+			"label": "data15",
+ 			"description": ""
+         },
+ 		"header16": {
+			"label": "header16",
+ 			"description": ""
+         },
+ 		"label16": {
+			"label": "label16",
+ 			"description": ""
+         },
+ 		"data16": {
+			"label": "data16",
+ 			"description": ""
+         },
+ 		"header17": {
+			"label": "header17",
+ 			"description": ""
+         },
+ 		"label17": {
+			"label": "label17",
+ 			"description": ""
+         },
+ 		"data17": {
+			"label": "data17",
+ 			"description": ""
+         },
+ 		"header18": {
+			"label": "header18",
+ 			"description": ""
+         },
+ 		"label18": {
+			"label": "label18",
+ 			"description": ""
+         },
+ 		"data18": {
+			"label": "data18",
+ 			"description": ""
+         },
+ 		"header19": {
+			"label": "header19",
+ 			"description": ""
+         },
+ 		"label19": {
+			"label": "label19",
+ 			"description": ""
+         },
+ 		"data19": {
+			"label": "data19",
+ 			"description": ""
+         },
+ 		"header20": {
+			"label": "header20",
+ 			"description": ""
+         },
+ 		"label20": {
+			"label": "label20",
+ 			"description": ""
+         },
+ 		"data20": {
+			"label": "data20",
+ 			"description": ""
+         },
+ 		"belowstyle": {
+			"label": "belowstyle",
+ 			"description": ""
+         },
+ 		"below": {
+			"label": "below",
+ 			"description": ""
+         }
+	},
+	"paramOrder": [
+		"name",
+		"child",
+		"subbox",
+		"italic title",
+		"templatestyles",
+		"child templatestyles", 
+		"grandchild templatestyles",
+		"bodystyle",
+		"titlestyle",
+		"abovestyle",
+		"subheaderstyle",
+		"title",
+		"above",
+		"subheader",
+		"imagestyle",
+		"captionstyle",
+		"image",
+		"caption",
+		"image2",
+		"caption2",
+		"headerstyle",
+		"labelstyle",
+		"datastyle",
+		"header1",
+		"label1",
+		"data1",
+		"header2",
+		"label2",
+		"data2",
+		"header3",
+		"label3",
+		"data3",
+		"header4",
+		"label4",
+		"data4",
+		"header5",
+		"label5",
+		"data5",
+		"header6",
+		"label6",
+		"data6",
+		"header7",
+		"label7",
+		"data7",
+		"header8",
+		"label8",
+		"data8",
+		"header9",
+		"label9",
+		"data9",
+		"header10",
+		"label10",
+		"data10",
+		"header11",
+		"label11",
+		"data11",
+		"header12",
+		"label12",
+		"data12",
+		"header13",
+		"label13",
+		"data13",
+		"header14",
+		"label14",
+		"data14",
+		"header15",
+		"label15",
+		"data15",
+		"header16",
+		"label16",
+		"data16",
+		"header17",
+		"label17",
+		"data17",
+		"header18",
+		"label18",
+		"data18",
+		"header19",
+		"label19",
+		"data19",
+		"header20",
+		"label20",
+		"data20",
+		"belowstyle",
+		"below"
+	]
+}
+</templatedata>
+
+==Tracking categories==
+* {{Category link with count|Articles with missing Wikidata information}}
+* {{Category link with count|Articles using infobox templates with no data rows}}
+* {{Category link with count|Pages using embedded infobox templates with the title parameter}}
+
+==See also==
+* [[Module:Infobox]], the [[WP:LUA|Lua]] module on which this template is based
+* [[Module:Check for unknown parameters]]
+* {{tl|Infobox3cols}}
+* {{tl|Navbox}} and {{tl|Sidebar}}
+* [[Wikipedia:List of infoboxes|List of infoboxes]]
+* [[:Module:InfoboxImage]]
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Infobox templates| ]]
+[[Category:Independently git synced pages]][[Category:Wikipedia metatemplates|Infobox]]
+[[Category:Independently git synced pages]][[Category:s generating microformats]]
+[[Category:Independently git synced pages]][[Category:s based on the Infobox Lua module]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]{{wikidata link||en|Infobox/doc|check_date=2026-05-24}}
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>
