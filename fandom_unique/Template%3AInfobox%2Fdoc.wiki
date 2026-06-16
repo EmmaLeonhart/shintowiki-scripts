@@ -1237,12 +1237,10 @@ The infobox template requires the [[:mw:Extension:Scribunto|Scribunto]] and [[:m
 
 }}</includeonly>
 <noinclude>
-[[Category:Independently git synced pages]][[Category:Infobox templates| ]]
-[[Category:Independently git synced pages]][[Category:Wikipedia metatemplates|Infobox]]
-[[Category:Independently git synced pages]][[Category:s generating microformats]]
-[[Category:Independently git synced pages]][[Category:s based on the Infobox Lua module]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-{{wikidata link||en|Infobox/doc|check_date=2026-05-24}}
+[[Category:Infobox templates| ]]
+[[Category:Wikipedia metatemplates|Infobox]]
+[[Category:s generating microformats]]
+[[Category:s based on the Infobox Lua module]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
 </noinclude>
