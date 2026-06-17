@@ -1,0 +1,438 @@
+{{Documentation subpage}}
+
+{{High-use}}
+{{Removed template}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Coordinates|Module:Infobox body of water tracking|Module:Check for unknown parameters|Module:Wikidata}}
+
+This template can be used to add comparative, at-a-glance material to articles on lakes, oceans, bays, and similar water bodies.  If there is a single article for the reservoir and the dam, then please use the integrated {{tl|infobox dam}} template, instead of this template.
+
+== Usage ==
+{{Parameter names example
+| name             
+| native_name 
+| other_name        
+| image             
+| alt              
+| caption           
+| image_bathymetry   
+| alt_bathymetry     
+| caption_bathymetry 
+| location           
+| group             
+| coordinates        
+| type             
+| etymology          
+| part_of          
+| inflow            
+| rivers           
+| outflow          
+| oceans            
+| catchment         
+| basin_countries   
+| agency            
+| designation       
+| date-built        
+| engineer          
+| date-flooded      
+| length            
+| width           
+| area              
+| depth             
+| max-depth        
+| volume            
+| residence_time    
+| salinity          
+| shore            
+| elevation       
+| temperature_high
+| temperature_low
+| frozen            
+| islands         
+| sections         
+| trenches          
+| benches          
+| cities            
+| website          
+| reference        
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox body of water
+| name               = {{subst:PAGENAMEBASE}}
+| native_name        = {{native name}} or {{native name list}}
+| other_name         = 
+
+| image              = 
+| alt                = 
+| caption            = 
+| image_bathymetry   = 
+| alt_bathymetry     = 
+| caption_bathymetry = 
+
+| location           = 
+| group              = 
+| coordinates        = 
+| type               = 
+| etymology          = 
+| part_of            = 
+| inflow             = 
+| rivers             = 
+| outflow            = 
+| oceans             = 
+| catchment          = 
+| basin_countries    = 
+| agency             = 
+| designation        = 
+| date-built         = 
+| engineer           = 
+| date-flooded       = 
+| length             =  
+| width              = 
+| area               = 
+| depth              = 
+| max-depth          = 
+| volume             = 
+| residence_time     = 
+| salinity           = 
+| shore              = 
+| elevation          = 
+| temperature_high   = 
+| temperature_low    = 
+| frozen             = 
+| islands            = 
+| islands_category   = 
+| sections           = 
+| trenches           = 
+| benches            = 
+| cities             = 
+
+| pushpin_map             = 
+| pushpin_label_position  = 
+| pushpin_map_alt         = 
+| pushpin_map_caption     = 
+| mapframe       = 
+  
+| website            = 
+| reference          = 
+}}
+</syntaxhighlight>
+
+== Parameters ==
+; <code>name</code>: name of the body of water. Avoid using templates, boldface or italics in this field.
+; <code>native_name</code>:   name in that country's official language(s), if other than English. – use {{tlx|native name}} or, for multiple names, use {{tlx|native name list}}
+; <code>other_name</code>: Local, alternative or former names. Separate multiple values by using {{tlx|plainlist}} or {{tlx|unbulleted list}}.
+; <code>image</code>: characteristic_image.png Please avoid sunset pictures or maps (For maps, use image_bathymetry).<br />If missing, the article is added to [[:Category:Articles using infobox body of water without image]]<br />''see also:'' [[Wikipedia:WikiProject Lakes/Galleries]]
+; <code>alt</code>: [[WP:ALT|Alt text]] describing the image, for visually impaired readers and other applications where the image cannot be seen. <br />If image is present and this field is empty, the article is placed in [[:Category:Articles using infobox body of water without alt]]
+; <code>caption</code>: Text about the image; avoid repeating the name of the body of water, it's already in the first field of the infobox.
+; <code>image_bathymetry</code>: bathymetry_image.png (or other image, avoid maps showing only the location of the body of water)<br />If missing, the article is placed in [[:Category:Articles using infobox body of water without image bathymetry]]
+; <code>alt_bathymetry</code>: Alt text for the bathymetry (or other) image.<br />If image bathymetry is present and this field is empty, the article is placed in [[:Category:Articles using infobox body of water without alt bathymetry]]
+; <code>caption_bathymetry</code>: Text about the [[:en:Bathymetry|Bathymetry]] (or other) image
+; <code>location</code>: Text about the body of water's location. Note the town/state/region in which the body water is located. Names are listed in wikified form, without flags.<br />Add the country only if the body of water is located in several countries or if there are several basin countries, but only one country in which the body of water is located.
+; <code>group</code>: Group of lakes that this body of water belongs to (e.g., [[Lake Erie]] is part of the [[Great Lakes]])
+; <code>coordinates</code>: Latitude and Longitude coordinates of the body of water.  It is common to use the approximate ''center'' of the body of water, or simply any notable portion of the body of water, for the coordinates. Coordinates are generally displayed in the infobox and on the top corner of the articles. For more, see [[WP:GEO]] and [[WP:Obtaining geographic coordinates]]<br />Sample coordinates: {{tlc|coord|47|01|10|N|8|24|04|E|type:waterbody_region:CH|display {{=}}inline,title}}<br />If missing, the article is placed in [[:Category:Articles using infobox body of water without coordinates]]
+; <code>type</code>: [[Body of water#Waterbody types|type of body of water]] / type of lake. If it's a reservoir, add "<nowiki>[[reservoir]]</nowiki>".<br />For typologies of lakes, see [[Wikipedia_talk:WikiProject_Lakes/Archive_1#Lake_types]] and [[Lake#Types of lakes]]<br />Samples values with wikimarkup (only one or a few may apply): <nowiki> [[periglacial]], [[subglacial lake]], [[artificial lake]] [[reservoir (water)|reservoir]], [[endorheic]], [[meromictic]], [[oxbow lake]], [[rift lake]], [[underground lake]], [[crater lake]], [[intermittent lake]], [[:Category:Former lakes|former lake]], [[:Category:Shrunken lakes|shrunken lake]]; [[oligotrophic]], [[mesotropic]], [[eutrophic lake]], [[hypertrophic]]</nowiki>
+; <code>part_of</code>: name of any parent basin or hydrology system
+; <code>etymology</code>: person, event or other entity the body is named after
+; <code>inflow</code>: major inflow sources&nbsp;— rivers, aquifers, glacial runoff, etc.<br />Use italics for any terms that are not place names, e.g. ''none''
+; <code>outflow</code>: outflow waterway names.<br />If [[:en:evaporation|evaporation]] or [[seepage]] are notable outflows, they may be included.<br />Use italics for any terms that are not place names, e.g. ''evaporation''
+; <code>catchment</code>: the area of catchment (in square kilometres) which includes the entire area of the [[:en:Drainage basin|Drainage basin]] for that body of water.  This may include rivers and other bodies of water.  If this can be accompanied with a map or drawing, include it with the article.<br />Sample value: {{tlc|convert|2124|km2|sqmi|abbr{{=}}on}}
+; <code>basin_countries</code>: which countries have drainage to/from or border the body of water. To conform a standard, this should include ''all'' countries that are directly involved with the body of water's ecology; this would include inflows, outflows, or physically contact the body of water.<br />Countries are listed in unwikified form, without flags. For Antarctica, use "(Antarctica)".
+; <code>agency</code>: managing or owning organisation
+; <code>designation</code>: protected status as a nature reserve, etc.
+; <code>date-built</code>: date construction the body of water/reservoir started, if man-made.
+; <code>date-flooded</code>: date the body of water/reservoir was first flooded, if man-made or otherwise recent.
+; <code>length</code>: maximum length of the body of water in km, statute mile, and/or nautical miles; the length of the body of water at its longest dimension.<br />Sample value: {{tlc|convert|100|km|mi|abbr{{=}}on}}
+; <code>width</code>: maximum width of the body of water in km, statute mile, and/or nautical miles; perpendicular to the angle used to calculate ''length''.<br />Sample value: {{tlc|convert|50|km|mi|abbr{{=}}on}}
+; <code>min_width</code>: minimum width of the [[:en:Strait|Strait]] in km, statute mile, and/or nautical miles; perpendicular to the angle used to calculate ''length''. Note: do not use this parameter for lakes, bays, or other bodies of water.
+; <code>area</code>: total area of the body of water's [[Surface area|surface]] in square kilometres, square miles, acres, or hectares; if this value varies drastically (due to evaporation or changes in flow), attempt to find a documented ''average'' value.<br />Sample conversion for imperial units: {{tlc|convert|1234|acre|abbr{{=}}on}} this renders as: {{convert|1234|acre|abbr=on}}
+; <code>depth</code>: Average depth of the body of water in metres, fathoms, and/or feet<br />Sample conversion for imperial units: {{tlc|convert|123|ft|abbr{{=}}on}} this renders as: {{convert|123|ft|abbr=on}}
+; <code>max-depth</code>: Maximum depth of the body of water in metres, fathoms, and/or feet.<br />Sample value: {{convert|10|m|ft|abbr=on}}
+; <code>volume</code>: total volume of the body of water (cubic metres, cubic kilometres, cubic miles [cu&thinsp;mi], and/or acre-feet)<br />Sample value: 11.8&nbsp;km³<br />To convert acre-feet, use {{tlc|convert|1234567|acre.ft|abbr{{=}}on}} this renders as {{convert|1234567|acre.ft|abbr=on}}
+; <code>residence_time</code>: [[Residence time (fluid dynamics)|residence time]] of the body of water or [[lake retention time]] (generally in years). This is the mean time water spends in the body of water.
+; <code>shore</code>: length of the shoreline in kilometres and statute miles; this should ''not'' include values for waterways directly connected to the body of water, and should reflect the shore at ''average'' surface area.<br />Sample value: {{tlc|convert|75|km|mi|abbr{{=}}on}}
+; <code>elevation</code>: elevation above sea-level in meters; again, if this value varies due to variable inflow or outflow, attempt to use a documented ''average'' value.  If at all possible, state the date at which the elevation was measured.<br />Sample value: {{tlc|convert|150|m|ft|abbr{{=}}on}}
+; <code>islands</code>: total number of islands in the body of water; it is common practice to also include the '''names''' of any ''[[WP:N|notable]]'' islands in the body of water.
+; <code>islands_category</code>: if there is a specific category for articles about islands in the body of water, it can be added in this field (e.g., [[:Category:Islands of the Caspian Sea|Islands of the Caspian Sea]], [[:Category:Lake islands]] or [[:Category:Islands by ocean or sea]]). "Islands" in the infobox then links to one of these categories instead of [[:Category:Islands by body of water]].
+;<code>sections</code>: names of sections of the lake, sub-basins, bays, etc.
+;<code>trenches</code>
+;<code>benches</code>
+; <code>cities</code>: notable cities or settlements on or near the shore of the body of water.
+; <code>frozen</code>: Information about freezing: e.g. usual freezing date, months the body of water is frozen, last years the body of water was frozen, ''never'', etc.
+; <code>reference</code>: references for some or all of the values. Rather than including full references in any of the previous fields, <nowiki><ref name ="multiple"> and </ref></nowiki> should be used in this field and cross-referenced in the other fields with <nowiki><ref name ="multiple"/></nowiki>. See [[Help:Footnotes]] on how to use the tags.
+; <code>align</code>: "align =left" allows to align the infobox left (default is right). This avoids collision with another infobox.
+; <code>pushpin_map</code>: The name of a location map as per [[:Template:Location map]]. Requires coordinates in {{para|coordinates|{{tlf|coord|...}}}} format. An existing list of map names can be found via [[:Template:Location_map/List]]. <br />If missing, the article is placed in [[:Category:Articles using infobox body of water without pushpin map]]
+; <code>pushpin_label_position</code>: Location of the label to the pushpin. One of "left", "right", "top", or "bottom".
+; <code>pushpin_map_alt</code>: Pushpin map alt text. <br />If pushpin map is present and this field is empty, the article is placed in [[:Category:Articles using infobox body of water without pushpin map alt]]
+; <code>pushpin_map_caption</code>: Pushpin map caption.
+; <code>module</code>: Use to embed another infobox. See [[Firth of Tay]] for an example. 
+Imperial units should be converted to metric units, preferably using {{tl|convert}}, e.g. {{tlc|convert|1234|acre|abbr{{=}}on}} this renders as {{convert|1234|acre|abbr=on}}
+
+===Mapframe maps===
+{{Infobox mapframe/doc/parameters
+| mapframe-frame-width = 264
+| mapframe-marker = water
+| mapframe-stroke-color = #0000ff
+}}
+
+== Tracking categories ==
+There are several tracking categories for maintenance of articles using this infobox: 
+* {{clc|Articles using infobox body of water without image}} – if image is missing
+* {{clc|Articles using infobox body of water without alt}} – if image alt text is missing
+* {{clc|Articles using infobox body of water without image bathymetry}} – if bathymetry image is missing
+* {{clc|Articles using infobox body of water without alt bathymetry}} – if bathymetry image is present, but bathymetry image alt text is missing
+* {{clc|Articles using infobox body of water without pushpin map}} – if no pushpin map is present
+* {{clc|Articles using infobox body of water without pushpin map alt}} – if pushpin map is present, but alt text is missing
+* {{clc|Articles using infobox body of water without coordinates}} – if coordinates are missing
+* {{clc|Articles using infobox body of water with mapframe}} – if mapframe=yes (purely for tracking)
+* {{clc|Wikipedia infobox body of water articles needing maintenance}} – if specific fields are missing, or included, see category description
+** {{clc|Pages using infobox body of water with a non-automatically converted dimension}} - if {{tl|convert}} is not used for measurement fields
+** {{clc|Pages using infobox body of water with duplicate parameters}} – if specific duplicate fields are used
+** {{clc|Pages using infobox body of water with unknown parameters}} - if an unknown parameter is present in the infobox template
+* {{clc|Pages using infobox body of water with auto short description}} - when shortdesc is auto-generated
+The categories are hidden, i.e. they are not visible in the standard display of the articles (see [[WP:Hidden categories]]).
+
+==TemplateData==
+{{Collapse top|title=[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"format": "{{_\n| __________________ = _\n}}\n",
+	"params": {
+		"name": {
+			"required": true,
+			"label": "Name",
+			"type": "string",
+			"description": "Name of the Body of Water."
+		},
+		"other_name": {
+			"required": false,
+			"label": "Other Name",
+			"type": "string",
+			"description": "Local, Alternative or Former Names"
+		},
+		"image": {
+			"required": false,
+			"label": "Image",
+			"type": "wiki-file-name",
+			"description": "Image of the Body of Water"
+		},
+		"alt": {
+			"required": false,
+			"label": "Image alternative text",
+			"type": "string",
+			"description": "Alt text to display if the image specified by image does not display for whatever reason"
+		},
+		"caption": {
+			"required": false,
+			"label": "Image caption",
+			"type": "string",
+			"description": "Caption for the image."
+		},
+		"image_bathymetry": {
+			"required": false,
+			"label": "Image Bathymetry",
+			"type": "wiki-page-name",
+			"description": "Bathymetry Image"
+		},
+		"alt_bathymetry": {
+			"required": false,
+			"label": "Alt Bathymetry",
+			"type": "string",
+			"description": "Alternate text to display if image_bathymetry does not display for whatever reason"
+		},
+		"caption_bathymetry": {
+			"required": false,
+			"label": "Caption Bathymetry",
+			"type": "string",
+			"description": "Image caption for image_bathymetry"
+		},
+		"location": {
+			"required": false,
+			"label": "Location",
+			"type": "string",
+			"description": "Location of the Body of Water"
+		},
+		"group": {
+			"required": false,
+			"label": "Group",
+			"type": "string",
+			"description": "Group of lakes that the body of water belongs to"
+		},
+		"coordinates": {
+			"required": false,
+			"label": "Coordinates",
+			"type": "number",
+			"description": "Latitude and Longitude coordinates of the body of water",
+			"aliases": [
+				"coords"
+			]
+		},
+		"type": {
+			"required": false,
+			"label": "Type",
+			"type": "string",
+			"description": "Type of the Body of Water"
+		},
+		"etymology": {
+			"required": false,
+			"label": "Etymology",
+			"type": "string",
+			"description": "person, event, or other entity body is named after"
+		},
+		"part_of": {
+			"required": false,
+			"label": "Part of",
+			"type": "string",
+			"description": "Name of any parent basin or hydrology system"
+		},
+		"inflow": {
+			"required": false,
+			"label": "Inflow",
+			"type": "string",
+			"description": "Major inflow sources — rivers, aquifers, glacial runoff, etc."
+		},
+		"outflow": {
+			"required": false,
+			"label": "Outflow",
+			"type": "string",
+			"description": "Outflow Waterway Names e.g. evaporation"
+		},
+		"catchment": {
+			"required": false,
+			"label": "Catchment",
+			"type": "string",
+			"description": "The area of catchment (in square kilometres) which includes the entire area of the drainage basin for that body of water."
+		},
+		"basin_countries": {
+			"required": false,
+			"label": "Basin Countries",
+			"type": "string",
+			"description": "Which countries have drainage to/from or border the body of water."
+		},
+		"date-built": {
+			"required": false,
+			"label": "Date Built",
+			"type": "line",
+			"description": "Date of construction of the body of water/reservoir started, if man-made."
+		},
+		"date-flooded": {
+			"required": false,
+			"label": "Date Flooded",
+			"type": "line",
+			"description": "Date of the body of water/reservoir was first flooded, if man-made or otherwise recent."
+		},
+		"agency": {
+			"required": false,
+			"label": "Agency",
+			"type": "string",
+			"description": "Managing or owning organisation"
+		},
+		"length": {
+			"required": false,
+			"label": "Length",
+			"type": "number",
+			"description": "Maximum length of the body of water in km"
+		},
+		"width": {
+			"required": false,
+			"label": "Width",
+			"type": "number",
+			"description": "Maximum width of the body of water in km"
+		},
+		"area": {
+			"required": false,
+			"label": "Area",
+			"type": "number",
+			"description": "Total area of the body of water's surface in square kilometres"
+		},
+		"depth": {
+			"required": false,
+			"label": "Depth",
+			"type": "number",
+			"description": "Average depth of the body of water in metres, fathoms, and/or feet"
+		},
+		"max-depth": {
+			"required": false,
+			"label": "Max Depth",
+			"type": "number",
+			"description": "Maximum depth of the body of water in metres, fathoms, and/or feet."
+		},
+		"volume": {
+			"required": false,
+			"label": "Volume",
+			"type": "number",
+			"description": "Total volume of the body of water (cubic metres, cubic kilometres, cubic miles [cu mi], and/or acre-feet)"
+		},
+		"residence_time": {
+			"required": false,
+			"label": "Residence Time",
+			"type": "number",
+			"description": "Time spent by water in the body of water."
+		},
+		"shore": {
+			"required": false,
+			"label": "Shore",
+			"type": "number",
+			"description": "Length of the shoreline in kilometres and statute miles this should not include values for waterways directly connected to the body of water, and should reflect the shore at average surface area."
+		},
+		"elevation": {
+			"required": false,
+			"label": "Elevation",
+			"type": "number",
+			"description": "Elevation above sea-level in meters."
+		},
+		"frozen": {
+			"required": false,
+			"label": "Frozen",
+			"type": "string",
+			"description": "Information about freezing: e.g. usual freezing date, months the body of water is frozen, last years the body of water was frozen, never, etc."
+		},
+		"islands": {
+			"required": false,
+			"label": "Islands",
+			"type": "number",
+			"description": "Total number of islands in the body of water"
+		},
+		"cities": {
+			"required": false,
+			"label": "Cities",
+			"type": "number",
+			"description": "Notable cities or settlements on or near the shore of the body of water."
+		},
+		"reference": {
+			"required": false,
+			"label": "Reference",
+			"type": "string",
+			"description": "references for some or all of the values."
+		}
+	}
+}
+</templatedata>
+{{Collapse bottom}}
+
+== Microformat ==
+{{UF-hcard-geo}}
+
+== See also ==
+* List of {{subpages|page=Template:{{BASEPAGENAME}}}}
+* [[Template:Infobox body of water/Bookmarklet]]
+* [[Template:Infobox river]]
+
+<includeonly>{{basepage subpage|
+
+{{citation needed|Infobox Body Of Water}}
+
+}}</includeonly>
+<noinclude>
+[[Category:Place infobox templates|Body Of Water]]
+[[Category:Lake templates| ]]
+[[Category:Ocean and sea templates]]
+[[Category:WikiProject Oceans]]
+[[Category:Embeddable templates]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{wikidata link||en|Infobox body of water/doc|check_date=2026-05-26}}
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>
