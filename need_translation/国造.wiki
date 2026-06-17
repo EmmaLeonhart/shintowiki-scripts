@@ -1,629 +1,615 @@
-{{複数の問題|出典の明記=2017年8月28日 (月) 05:18 (UTC)|参照方法=2017年8月28日 (月) 05:18 (UTC)}}
-[[File:Kuni-no-miyatsuko of ancient Japan.jpg|thumb|300px|国造配置図]]
-'''国造'''（くに の みやつこ、こくぞう、こくそう）は、[[古代]][[日本]]の地方[[行政]]機構において、旧来からの[[氏姓制]]に基づき地方を治める[[官職]]の一種。また、その官職に就いた人を指す。[[ヤマト王権]]が[[国造国|国]]の範囲を行政区分として認定し、その長として国造を認定した。
+[[File:Kuni-no-miyatsuko of ancient Japan.jpg|thumb|300px|Map of kokuzo distribution]]
+'''Kuni no miyatsuko''' (くにのみやつこ; also read ''kokuzo'' or ''kokuso'') was a type of official position in the local administrative structure of ancient Japan, based on the traditional clan-surname (ujikabane) system, who governed the provinces. The term also refers to the persons who held such positions. The [[ヤマト王権|Yamato Court]] recognized the territory of a ''kuni'' (province) as an administrative unit and designated its head as kuni no miyatsuko.
 
-[[古墳時代]]より続くその地方を支配する地方[[豪族]]が任じられ、旧来と同様に、その[[国造国|国]]内で[[軍事]]権（[[国造軍]]）<ref>[[ヤマト王権]]の命により外征にも動員された。</ref>、[[行政]]権、[[裁判]]権などを担った。しかし、[[大和朝廷]]に服し、任じられる立場へ変わった。
+From the [[古墳時代|Kofun period]] onward, local powerful clans (gōzoku) that had long dominated the region were appointed to this role, and just as before, they continued to exercise military authority ([[国造軍|kokuzo-gun]]),<ref>They were also mobilized for foreign campaigns by order of the [[ヤマト王権|Yamato Court]].</ref> administrative authority, and judicial authority within their kuni. However, they became subordinate to the [[大和朝廷|Yamato Court]] and shifted to a position of being appointed by it.
 
-[[大化の改新]]・[[律令制]]開始以降は、支配権を持たず主に[[祭祀]]を司る[[世襲制]]の名誉職となった（'''律令国造'''）。
+After the [[大化の改新|Taika Reform]] and the beginning of the [[律令制|Ritsuryo system]], kokuzo lost their governing authority and became a hereditary honorary title, primarily responsible for overseeing ceremonies and rituals ('''Ritsuryo kokuzo''').
 
-[[律令制]]下では、それまで地方[[豪族]]は地方官である[[郡司]]層に就き、地方では旧来の[[氏姓制]]が[[律令制]]を支えた。また一族は武力の保有や馬の飼育を続けた。平安初期には没落が進み、新たな地方有力層に取って代わられた。
+Under the Ritsuryo system, the former local clans occupied the ranks of local officials called [[郡司|gunji]], and the traditional ujikabane system continued to support the Ritsuryo system in the provinces. The clans also continued to maintain armed forces and breed horses. In the early [[平安時代|Heian period]], their decline accelerated and they were replaced by a new class of provincial elite.
 
-== 概要 ==
-[[ヤマト王権]]の行政区分の1つである[[国造国|国]]の長を意味し、この国は[[令制国]]整備前の行政区分であるため、その範囲ははっきりしない。地域の豪族が支配した領域が国として扱われたと考えられる。有力な豪族が朝廷によって派遣、または朝廷に帰順して国造に任命され、その多くが[[允恭天皇|允恭朝]]に[[臣]]・[[連]]・[[キミ (カバネ)|君]]（公）・[[直 (姓)|直]]（凡直）などの[[カバネ|姓]]が贈られた。ヤマト王権直轄の[[県主]]と異なり、軍事権・裁判権など広い範囲で自治権を認められた。
+== Overview ==
+The kuni no miyatsuko was the head of a ''kuni'', one of the administrative units of the [[ヤマト王権|Yamato Court]]. Since these kuni predated the establishment of the [[令制国|Ritsuryo provincial system]], their boundaries are not clearly defined. It is thought that the territory controlled by regional powerful clans was treated as a kuni. Influential clans were either dispatched by the court or submitted to it and were appointed as kokuzo, with many receiving [[カバネ|kabane]] (clan surnames) such as [[臣|omi]], [[連|muraji]], [[キミ (カバネ)|kimi]] (kō), and [[直 (姓)|atai]] (ōnaotai) in the court of [[允恭天皇|Emperor Ingyō]]. Unlike the [[県主|agata-nushi]], who were directly under Yamato Court control, kokuzo were granted broad autonomy including military and judicial authority.
 
-国造の最初の設置は[[神武天皇|神武朝]]の記事に見え、ヤマト王権が勢力を拡大し始めた[[崇神天皇|崇神朝]]に[[四道将軍]]の遠征ルートに沿って本格的な設置が開始された。その後も[[景行天皇|景行朝]]の景行天皇による西国遠征と[[倭建命]]の東国遠征に合わせて各地に首長が配置され、次代の[[成務天皇|成務朝]]に一気に国造の設置がなされた。これら国造の設置の詳細は『[[国造本紀]]』に見えるほか、『[[記紀]]』にも成務天皇による国県制定の記事が見える。その後も遅れて[[応神天皇|応神朝]]に設置されたり、[[仁徳天皇|仁徳朝]]に分割され再配置されたりした国造もある。
+The earliest establishment of kokuzo appears in records from the court of [[神武天皇|Emperor Jinmu]], and systematic establishment began in earnest during the reign of [[崇神天皇|Emperor Sujin]], along routes of the [[四道将軍|Four Generals' expeditions]]. In the court of [[景行天皇|Emperor Keikō]], chiefs were placed throughout the land in coordination with the emperor's western expeditions and [[倭建命|Yamato Takeru]]'s eastern expeditions, and in the subsequent court of [[成務天皇|Emperor Seimu]], kokuzo were established in rapid succession. Details of these appointments appear in the [[国造本紀|Kokuzo Hongi]], and records of the establishment of the kuni-agata system by Emperor Seimu also appear in the [[記紀|Kiki]]. Some kokuzo were established later in the court of [[応神天皇|Emperor Ōjin]], and others were divided and redistributed during the court of [[仁徳天皇|Emperor Nintoku]].
 
-国造が[[大王 (ヤマト王権)|大王]]から与えられた姓は、
-# [[畿内#日本の畿内|畿内]]及び周辺諸国の直姓国造
-# [[吉備国|吉備]]や[[出雲国|出雲]]の臣姓国造
-# [[山陽道]]の一部と[[南海道]]の[[凡直]]（おおしのあたい）姓国造
-# [[東海道|東海]]・[[東山道|東山]]の[[名代]]の[[伴造]]（とものみやつこ）姓国造
-# 東の[[毛野]]（けぬ）、西の[[筑紫国|筑紫]]・[[豊国|豊]]・[[肥国|肥]]の君姓国造
-などさまざまであり、一律に行われた編成ではないことが分かる。
+The kabane given to kokuzo by the Ōkimi (Great King) varied:
+# Atai-kabane kokuzo in [[畿内#日本の畿内|Kinai]] and surrounding provinces
+# Omi-kabane kokuzo in [[吉備国|Kibi]] and [[出雲国|Izumo]]
+# Ōnaotai-kabane kokuzo in parts of [[山陽道]] and [[南海道]]
+# Tomomiyatsuko-kabane kokuzo, named for groups under the ''namishiro no tomonozukuri'' system, in the [[東海道]] and [[東山道]] regions
+# Kimi-kabane kokuzo in the eastern [[毛野]] (Keno) region and the western [[筑紫国|Tsukushi]], [[豊国|Toyo]], and [[肥国|Hi]] regions
 
-国造はそれぞれの国造の[[祖神]]たる[[神祇]]の祭祀を司り、[[部民]]や[[屯倉]]の管理なども行った。国造族の子女を[[舎人]]や[[釆女]]として朝廷に出仕させており、[[紀国造]]や[[上毛野国造]]などのように外交に従事したりもした。また、筑紫の国造（[[筑紫国造]]）のように北九州を勢力下に入れ、ヤマト王権に反抗する者や、[[闘鶏国造]]のように解体された国造も存在する。
+This variety shows that the organization was not uniform.
 
-国造の下に[[古代日本の地方官制#県（アガタ）|県]]（あがた）があり、かなり整備された[[国県制]]があったとする見解もある。しかし、律令制以前の地方支配の実態は、国造制の実態や中小豪族との関係など不明な点が多い。
+Kokuzo presided over the worship of ancestral deities (ujigami) of their respective kokuzo clans, and also managed [[部民|be-no-tami]] (clan workers) and [[屯倉|miyake]] (royal granaries). Daughters and sons of kokuzo clans served at court as [[舎人|toneri]] (attendants) and [[釆女|uneme]] (palace women), and some, such as the [[紀国造|Ki no Kokuzo]] and [[上毛野国造|Kamitsukeno no Kokuzo]], were involved in diplomacy. There were also kokuzo, such as the [[筑紫国造|Tsukushi no Kokuzo]], who brought northern Kyushu under their control and rebelled against the Yamato Court, and some, like the [[闘鶏国造|Tōchi Kokuzo]], were dissolved.
 
-古墳時代を通して長らく存続した国造であったが、[[6世紀]]の末期（[[推古天皇|推古朝]]）から[[7世紀]]中期（[[孝徳天皇|孝徳朝]]）にかけて、各地の国造が[[評督]]へと変更されていき、大化の改新の後、[[大宝令]]の施行によって評が郡へと置き換わり、国造のなかには[[郡領]]を兼任した者もいた。
+Below the kokuzo were [[古代日本の地方官制#県（アガタ）|agata]] (sub-districts), and some scholars hold that there was a fairly developed kuni-agata system. However, many aspects of local governance before the Ritsuryo system remain unclear, including the actual state of the kokuzo system and relationships with medium and small clans.
 
-[[9世紀]]成立とされる「[[国造本紀]]」（『[[先代旧事本紀]]』巻10）には、全国135の国造の設置時期と任命された者らの記録がある。
+Kokuzo endured for a long time through the Kofun period, but from the late [[6世紀|6th century]] (reign of [[推古天皇|Empress Suiko]]) to the mid-[[7世紀|7th century]] (reign of [[孝徳天皇|Emperor Kōtoku]]), kokuzo throughout the land were changed to [[評督|hyō-toku]] (district overseers), and after the Taika Reform, when the [[大宝令|Taihō Code]] came into effect, hyō were replaced by gun (counties), with some kokuzo also holding concurrent positions as [[郡領|gunryō]] (county officials).
 
-== 律令国造 ==
-大化の改新以降、国造が治めた国は整理・統合、あるいは分割され、令制国に置き換えられたが、律令体制下においても、国造は存続した。これを「'''律令国造'''」という。主に祭祀を司る世襲制の名誉職になり、かつての国造の後裔にあたる[[郡司]]が兼任した。また国造には国造田などが支給された。その後、[[8世紀]]後半以降には国造はなくなっていった。現代の学界では、[[氏姓制]]下の国造と律令国造を区別するため、例えば前者なら上総国造（かずさのくにのみやつこ）というところを後者では上総'''国'''国造（かずさのくにのくにのみやつこ／かずさのくにこくぞう）と書き分けることが行われる。
+The [[国造本紀|Kokuzo Hongi]] (Volume 10 of the [[先代旧事本紀|Sendai Kuji Hongi]]), believed to have been compiled in the [[9世紀|9th century]], contains records of 135 kokuzo throughout the country, including their establishment periods and those who were appointed.
 
-=== 律令制下に名前の見える国造 ===
-*[[凡河内石麻呂|凡河内忌寸石麻呂]]（[[摂津国造]]、『[[続日本紀]]』[[慶運]]3年（[[706年]]）10月12日条）
-*[[山背品遅|山背忌寸品遅]]（[[山背国造]]、『[[続日本紀]]』[[慶運]]3年（[[706年]]）10月12日条）
-*[[出雲果安|出雲臣果安]]（[[出雲国造|出雲国国造]]、『[[続日本紀]]』[[霊亀]]2年（[[716年]]）2月10日条）
-*[[大倭五百足|大倭忌寸五百足]]（[[大倭国造]]、『[[続日本紀]]』[[養老]]7年（[[723年]]）10月23日条）
-*[[粟凡弟臣石麻呂|粟凡直弟臣]]（[[粟国造|阿波国造]]、「阿波国造碑」[[養老]]7年（[[723年]]））
-*[[出雲広嶋|出雲臣広嶋]]（[[出雲国造]]、『[[続日本紀]]』[[神亀]]元年（[[724年]]）正月27日条）
-*[[紀摩祖|紀直摩祖]]（[[紀伊国造]]、『[[続日本紀]]』[[神亀]]元年（[[724年]]）10月16日条）
-*[[紀豊嶋|紀直豊嶋]]（[[紀伊国造]]、『[[続日本紀]]』[[天平]]元年（[[729年]]）3月27日条）
-*[[出雲弟山|出雲臣弟山]]（[[出雲国造]]、『[[続日本紀]]』[[天平]]18年（[[746年]]）3月7日条）
-*[[尾張小倉|尾張宿禰小倉]]（[[尾張国造|尾張国国造]]、『[[続日本紀]]』[[天平]]19年（[[747年]]）3月11日条）
-*[[粟若子|粟直若子]]（[[粟国造|阿波国造]]、『大日本古文書』[[天平勝宝]]4年（[[752年]]）5月5日条）
-*[[上道斐太都|上道朝臣斐太都]]（[[吉備国造]]、『[[続日本紀]]』[[天平宝字]]元年（[[757年]]）閏8月8日条）
-*[[出雲益万|出雲臣益万]]（[[出雲国造|出雲国国造]]、『[[続日本紀]]』[[天平宝字]]8年（[[764年]]）正月20日条）
-*[[紀国栖|紀直国栖]]（[[紀伊国造]]、『[[続日本紀]]』[[天平神護]]元年（[[765年]]）10月22日条）
-*[[上道斐太都|上道朝臣正道]]（[[備前国|備前国国造]]、『[[続日本紀]]』[[神護景雲]]元年（[[767年]]）9月23日条）
-*[[武蔵不破麻呂|武蔵宿禰不破麻呂]]（[[无邪志国造|武蔵国国造]]、『[[続日本紀]]』[[神護景雲]]元年（[[767年]]）12月8日条）
-*[[道嶋嶋足|道嶋宿禰嶋足]]（[[陸奥国|陸奥国大国造]]、『[[続日本紀]]』[[神護景雲]]元年（[[767年]]）12月8日条）
-*[[道嶋三山|道嶋宿禰嶋足]]（[[陸奥国|陸奥国国造]]、『[[続日本紀]]』[[神護景雲]]元年（[[767年]]）12月8日条）
-*[[漆部伊波|漆部直伊波]]（[[相武国造|相模国国造]]、『[[続日本紀]]』[[神護景雲]]2年（[[768年]]）2月3日条）
-*[[伊勢老人|伊勢朝臣老人]]（[[伊勢国造|伊勢国国造]]、『[[続日本紀]]』[[神護景雲]]2年（[[768年]]）6月6日条）
-*[[壬生小家主|壬生宿禰小家主]]（[[常陸国|常陸国国造]]、『[[続日本紀]]』[[神護景雲]]2年（[[768年]]）6月6日条）
-*[[美濃玉虫|美濃直玉虫]]（[[美濃国|美濃国国造]]、『[[続日本紀]]』[[神護景雲]]2年（[[768年]]）6月6日条）
-*[[檜前部老刀自|上野佐位朝臣老刀自]]（[[上毛野国造|上野国国造]]、『[[続日本紀]]』[[神護景雲]]2年（[[768年]]）6月6日条）
-*[[大和長岡|大和宿禰長岡]]（[[大倭国造|大和国造]]、『[[続日本紀]]』[[神護景雲]]3年（[[769年]]）10月29日条）
-*[[因幡国造浄成女]]（[[因幡国造|因幡国国造]]、『[[続日本紀]]』[[宝亀]]2年（[[771年]]）12月14日条）
-*[[出雲国上|出雲臣国上]]（[[出雲国造|出雲国国造]]、『[[続日本紀]]』[[宝亀]]4年（[[773年]]）9月8日条）
-*[[丹波真養|丹波直真養]]（[[丹後国造|丹後国国造]]、『[[続日本紀]]』[[延暦]]2年（[[783年]]）3月13日条）
-*[[粟凡豊穂|粟凡直豊穂]]（[[粟国造|阿波国造]]、『[[続日本紀]]』[[延暦]]2年（[[783年]]）12月2日条）
-*[[飛騨国造祖門]]（[[飛騨国造|飛騨国国造]]、『[[続日本紀]]』[[延暦]]2年（[[783年]]）12月2日条）
-*[[出雲国成|出雲臣国成]]（[[出雲国造|出雲国国造]]、『[[続日本紀]]』[[延暦]]4年（[[785年]]）2月18日条）
-*[[和気清麻呂|和気朝臣清麻呂]]（[[美作国|美作]][[備前国]]国造、『[[日本後紀]]』[[延暦]]7年（[[788年]]）6月7日条）
-*[[出雲人長|出雲臣人長]]（[[出雲国造|出雲国国造]]、『[[続日本紀]]』[[延暦]]9年（[[790年]]）4月17日条）
-*[[紀五百友|紀直五百友]]（[[紀伊国造]]、『[[続日本紀]]』[[延暦]]9年（[[790年]]）5月8日条）
-*[[金刺舎人広名]]（[[駿河国造|駿河国国造]]、『[[続日本紀]]』[[延暦]]10年（[[791年]]）4月18日条）
-*[[武蔵弟総|武蔵宿禰弟総]]（[[无邪志国造|武蔵国国造]]、『[[類聚国史]]』[[延暦]]14年（[[795年]]）12月8日条）
-*[[道嶋御楯|道嶋宿禰御楯]]（[[陸奥国|陸奥国大国造]]、『[[類聚国史]]』[[延暦]]21年（[[802年]]）12月8日条）
-*[[紀豊成|紀直豊成]]（[[紀伊国造|紀伊国国造]]、『[[日本後紀]]』[[延暦]]23年（[[804年]]）10月12日条）
-*[[出雲門起|出雲臣門起]]（[[出雲国造]]、『[[日本後紀]]』[[延暦]]24年（[[805年]]）9月27日条）
-*[[出雲旅人|出雲臣旅人]]（[[出雲国造]]、『[[日本後紀]]』[[弘仁]]2年（[[811年]]）3月27日条）
-*[[出雲豊持|出雲臣豊持]]（[[出雲国造|出雲国国造]]、『[[類聚国史]]』[[天長]]3年（[[826年]]）3月29日条）
-*[[壱岐戈麻呂|壱岐直戈麻呂]]（[[壱岐国造|壱岐嶋造]]、『[[類聚国史]]』[[天長]]3年（[[829年]]）正月20日条）
-*[[紀高継|紀宿禰高継]]（[[紀伊国造|紀伊国国造]]、『[[続日本後紀]]』[[嘉祥]]2年（[[849年]]）閏12月21日条）
-*[[伴千福麻呂|伴直千福麻呂]]（[[安房国造|安房国国造]]、『[[文徳天皇実録]]』[[嘉祥]]3年（[[850年]]）6月3日条）
+== Ritsuryo Kokuzo ==
+After the Taika Reform, the kuni governed by kokuzo were reorganized, consolidated, or divided and replaced by the Ritsuryo provincial system; nevertheless, kokuzo continued to exist under the Ritsuryo framework. These are called '''Ritsuryo Kokuzo'''. They became a hereditary honorary title primarily overseeing rituals, concurrently held by gunji — descendants of the former kokuzo. Kokuzo also received allocated rice fields known as kokuzo-den. Subsequently, from the latter half of the [[8世紀|8th century]] onward, kokuzo gradually disappeared. In modern scholarship, to distinguish kokuzo under the ujikabane system from Ritsuryo Kokuzo, a convention exists: for example, the former is written as ''Kazusa no Kuni no Miyatsuko'' (上総国造) and the latter as ''Kazusa no Kuni no Kokuzo'' (上総国国造).
 
-== 一覧 ==
-=== 諸国造一覧 ===
-国造が存在したのは[[律令制]]以前であるが、便宜上[[9世紀]]以降の令制国の領域で分類した<ref>『国史大辞典』国造項 氏姓国造一覧表を参考にして記載。</ref>。
+=== Kokuzo Named in Ritsuryo-era Records ===
+*[[凡河内石麻呂|Ōshikouchi no Imiki Ishimaro]] ([[摂津国造|Settsu Kokuzo]], ''[[続日本紀|Shoku Nihongi]]'', [[慶運|Keiyun]] 3 (706), 10th month, 12th day)
+*[[山背品遅|Yamashiro no Imiki Shinachi]] ([[山背国造|Yamashiro Kokuzo]], ''Shoku Nihongi'', Keiyun 3 (706), 10th month, 12th day)
+*[[出雲果安|Izumo no Omi Hatayasu]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', [[霊亀|Reiki]] 2 (716), 2nd month, 10th day)
+*[[大倭五百足|Ōyamato no Imiki Ihotari]] ([[大倭国造|Ōyamato Kokuzo]], ''Shoku Nihongi'', [[養老|Yōrō]] 7 (723), 10th month, 23rd day)
+*[[粟凡弟臣石麻呂|Awa no Ōnaotai Ototomi]] ([[粟国造|Awa Kokuzo]], "Awa Province Kokuzo Stele," Yōrō 7 (723))
+*[[出雲広嶋|Izumo no Omi Hiroshima]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', [[神亀|Jinki]] 1 (724), 1st month, 27th day)
+*[[紀摩祖|Ki no Atai Maso]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', Jinki 1 (724), 10th month, 16th day)
+*[[紀豊嶋|Ki no Atai Toyoshima]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', [[天平|Tenpyō]] 1 (729), 3rd month, 27th day)
+*[[出雲弟山|Izumo no Omi Otoyama]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', Tenpyō 18 (746), 3rd month, 7th day)
+*[[尾張小倉|Owari no Sukune Ogura]] ([[尾張国造|Owari no Kuni Kokuzo]], ''Shoku Nihongi'', Tenpyō 19 (747), 3rd month, 11th day)
+*[[粟若子|Awa no Atai Wakako]] ([[粟国造|Awa Kokuzo]], ''Dai Nihon Komonjo'', [[天平勝宝|Tenpyō Shōhō]] 4 (752), 5th month, 5th day)
+*[[上道斐太都|Kamitsumichi no Asomi Hitadzu]] ([[吉備国造|Kibi Kokuzo]], ''Shoku Nihongi'', [[天平宝字|Tenpyō Hōji]] 1 (757), intercalary 8th month, 8th day)
+*[[出雲益万|Izumo no Omi Masukazu]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Tenpyō Hōji 8 (764), 1st month, 20th day)
+*[[紀国栖|Ki no Atai Kunikasugi]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', [[天平神護|Tenpyō Jingo]] 1 (765), 10th month, 22nd day)
+*[[上道斐太都|Kamitsumichi no Asomi Masadō]] ([[備前国|Bizen no Kuni Kokuzo]], ''Shoku Nihongi'', [[神護景雲|Jingo Keiun]] 1 (767), 9th month, 23rd day)
+*[[武蔵不破麻呂|Musashi no Sukune Fuwamarao]] ([[无邪志国造|Musashi no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[道嶋嶋足|Michishima no Sukune Shimatari]] ([[陸奥国|Mutsu no Kuni Daikokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[道嶋三山|Michishima no Sukune Shimatari]] ([[陸奥国|Mutsu no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[漆部伊波|Nuribe no Atai Iwa]] ([[相武国造|Sagamu no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 2nd month, 3rd day)
+*[[伊勢老人|Ise no Asomi Okina]] ([[伊勢国造|Ise no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[壬生小家主|Mibu no Sukune Okuienushi]] ([[常陸国|Hitachi no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[美濃玉虫|Mino no Atai Tamamushi]] ([[美濃国|Mino no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[檜前部老刀自|Kamitsukeno Saibe no Asomi Oitoji]] ([[上毛野国造|Kōzuke no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[大和長岡|Yamato no Sukune Nagaoka]] ([[大倭国造|Yamato no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 3 (769), 10th month, 29th day)
+*[[因幡国造浄成女|Inaba no Kuni Kokuzo Jōjōme]] ([[因幡国造|Inaba no Kuni Kokuzo]], ''Shoku Nihongi'', [[宝亀|Hōki]] 2 (771), 12th month, 14th day)
+*[[出雲国上|Izumo no Omi Kunitaka]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Hōki 4 (773), 9th month, 8th day)
+*[[丹波真養|Tanba no Atai Masayasu]] ([[丹後国造|Tango no Kuni Kokuzo]], ''Shoku Nihongi'', [[延暦|Enryaku]] 2 (783), 3rd month, 13th day)
+*[[粟凡豊穂|Awa no Ōnaotai Toyoho]] ([[粟国造|Awa Kokuzo]], ''Shoku Nihongi'', Enryaku 2 (783), 12th month, 2nd day)
+*[[飛騨国造祖門|Hida no Kuni Kokuzo Somon]] ([[飛騨国造|Hida no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 2 (783), 12th month, 2nd day)
+*[[出雲国成|Izumo no Omi Kuninari]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 4 (785), 2nd month, 18th day)
+*[[和気清麻呂|Wake no Asomi Kiyomaro]] ([[美作国|Mimasaka]] / [[備前国|Bizen Kokuzo]], ''[[日本後紀|Nihon Kōki]]'', Enryaku 7 (788), 6th month, 7th day)
+*[[出雲人長|Izumo no Omi Hitotari]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', Enryaku 9 (790), 4th month, 17th day)
+*[[紀五百友|Ki no Atai Ihotomo]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', Enryaku 9 (790), 5th month, 8th day)
+*[[金刺舎人広名|Kanasashi no Toneri Hirona]] ([[駿河国造|Suruga no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 10 (791), 4th month, 18th day)
+*[[武蔵弟総|Musashi no Sukune Ototusa]] ([[无邪志国造|Musashi no Kuni Kokuzo]], ''[[類聚国史|Ruijū Kokushi]]'', Enryaku 14 (795), 12th month, 8th day)
+*[[道嶋御楯|Michishima no Sukune Mitachi]] ([[陸奥国|Mutsu no Kuni Daikokuzo]], ''Ruijū Kokushi'', Enryaku 21 (802), 12th month, 8th day)
+*[[紀豊成|Ki no Atai Toyonari]] ([[紀伊国造|Ki no Kuni Kokuzo]], ''Nihon Kōki'', Enryaku 23 (804), 10th month, 12th day)
+*[[出雲門起|Izumo no Omi Kadoki]] ([[出雲国造|Izumo Kokuzo]], ''Nihon Kōki'', Enryaku 24 (805), 9th month, 27th day)
+*[[出雲旅人|Izumo no Omi Tabibito]] ([[出雲国造|Izumo Kokuzo]], ''Nihon Kōki'', [[弘仁|Kōnin]] 2 (811), 3rd month, 27th day)
+*[[出雲豊持|Izumo no Omi Toyomochi]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Ruijū Kokushi'', [[天長|Tenchō]] 3 (826), 3rd month, 29th day)
+*[[壱岐戈麻呂|Iki no Atai Hokimaro]] ([[壱岐国造|Iki no Shima-zukuri]], ''Ruijū Kokushi'', Tenchō 3 (829), 1st month, 20th day)
+*[[紀高継|Ki no Sukune Takatsugi]] ([[紀伊国造|Ki no Kuni Kokuzo]], ''[[続日本後紀|Shoku Nihon Kōki]]'', [[嘉祥|Kashō]] 2 (849), intercalary 12th month, 21st day)
+*[[伴千福麻呂|Tomo no Atai Chifukomaro]] ([[安房国造|Awa no Kuni Kokuzo]], ''[[文徳天皇実録|Montoku Tennō Jitsuroku]]'', Kashō 3 (850), 6th month, 3rd day)
 
-{| class="wikitable" style="background:#ffffff;font-size:85%" align="left" 
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 令制国
-!style="background:#ccccff; white-space:nowrap" colspan="2" | 国造名
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 初代国造<br />（任命時期）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 氏族（括弧内は[[カバネ]]）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 支配領域
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 備考
+== List ==
+=== List of Kokuzo by Province ===
+Although kokuzo existed before the [[律令制|Ritsuryo system]], for convenience the provinces are classified using the later Ritsuryo provincial territories (from the 9th century onward).<ref>Compiled with reference to the table of ujikabane kokuzo in the kokuzo entry of ''Kokushi Daijiten''.</ref>
+
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
 |-
-!style="background:#ccccff; white-space:nowrap" | 表記
-!style="background:#ccccff; white-space:nowrap" | 読み
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[畿内]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[畿内|Kinai (Home Provinces)]]'''
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[大和国]]
-| '''[[倭国造]]'''<br />（大倭国造）||やまと||[[椎根津彦]]<br />（[[神武天皇]]期）||倭氏（直）||大和国中部||[[大和神社]]社家
+| '''[[倭国造]]'''<br />（大倭国造）||Yamato||[[椎根津彦]]<br />(reign of Emperor Jinmu)||Yamato clan (Atai)||Central Yamato Province||Shrine family of [[大和神社]]
 |-
-| '''[[闘鶏国造]]'''||つげ||武比古命<br />（[[成務天皇]]期）||都祁氏（直）||大和国東部||後裔の[[北氏]]は[[都祁水分神社]]社家
+| '''[[闘鶏国造]]'''||Tsuge||Takehikono-mikoto<br />(reign of Emperor Seimu)||Tsuge clan (Atai)||Eastern Yamato Province||Descendants' Kita clan are shrine family of [[都祁水分神社]]
 |-
-| '''[[葛城国造]]'''||かつらぎ||剣根命<br />（神武天皇期）||葛城氏（直）||大和国西部||
+| '''[[葛城国造]]'''||Katsuragi||Tsurugine-no-mikoto<br />(reign of Emperor Jinmu)||Katsuragi clan (Atai)||Western Yamato Province||
 |-
 | align="center" style="background:#E3E3FF; white-space:nowrap" rowspan="2"| [[山城国]]
-| '''[[山背国造|山城国造]]'''||やましろ|| style="white-space:nowrap"|阿多根命<br />（神武天皇期）||rowspan="2"|山背氏（[[山代氏]]）（直）||rowspan="2"|山城国南部||一族の後裔は[[廣田神社]]社家
+| '''[[山背国造|Yamashiro Kokuzo]]'''||Yamashiro|| style="white-space:nowrap"|Atarane-no-mikoto<br />(reign of Emperor Jinmu)||rowspan="2"|Yamashiro clan ([[山代氏]]) (Atai)||rowspan="2"|Southern Yamashiro Province||Descendants of the clan are shrine family of [[廣田神社]]
 |-
-| '''[[山背国造]]'''||やましろ||曾能振命<br />（成務天皇期）||山城国造の重複
+| '''[[山背国造]]'''||Yamashiro||Sonofuri-no-mikoto<br />(reign of Emperor Seimu)||Duplicate entry for Yamashiro Kokuzo
 |-
 | align="center" style="background:#E3E3FF"| [[河内国]]
-| '''[[凡河内国造]]'''||おおしこうち<br />おおしかわち||彦己曾保理命<br />（神武天皇期）||[[凡河内氏]]（直）||河内国||後裔の渡辺氏は[[坐摩神社]]社家
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Kawachi Province||Descendants' Watanabe clan are shrine family of [[坐摩神社]]
 |-
 | align="center" style="background:#E3E3FF"| [[和泉国]]
-| '''[[凡河内国造]]'''||おおしこうち<br />おおしかわち||彦己曾保理命<br />（神武天皇期）||[[凡河内氏]]（直）||和泉国||
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Izumi Province||
 |-
 | align="center" style="background:#E3E3FF"| [[摂津国]]
-| '''[[凡河内国造]]'''||おおしこうち<br />おおしかわち||彦己曾保理命<br />（神武天皇期）||[[凡河内氏]]（直）||摂津国||[[神戸市]]には凡河内国造が祀った[[河内国魂神社]]がある。
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Settsu Province||There is a [[河内国魂神社]] in Kobe City enshrined by the Ōshikouchi Kokuzo.
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[東海道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[東海道|Tōkaidō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[伊賀国]]
-| '''[[伊賀国造]]'''||いが||武伊賀都別命<br />（成務天皇期）||伊賀氏（君）、[[阿保氏#阿保氏 （息速別命後裔）|阿保氏]]（君）||伊賀国||
+| '''[[伊賀国造]]'''||Iga||Takeigatsuwake-no-mikoto<br />(reign of Emperor Seimu)||Iga clan (Kimi), [[阿保氏#阿保氏 （息速別命後裔）|Aho clan]] (Kimi)||Iga Province||
 |-
 | align="center" style="background:#E3E3FF"| [[伊勢国]]
-| '''[[伊勢国造]]'''||いせ||[[天日鷲命]]または[[天日別命]]<br />（神武天皇期）||[[伊勢氏]]（直）||伊勢国||
+| '''[[伊勢国造]]'''||Ise||[[天日鷲命]] or [[天日別命]]<br />(reign of Emperor Jinmu)||[[伊勢氏]] (Atai)||Ise Province||
 |-
 | align="center" style="background:#E3E3FF"| [[志摩国]]
-| '''[[島津国造]]'''||しまづ||出雲笠夜命<br />（成務天皇期）||島氏（直）||志摩国||
+| '''[[島津国造]]'''||Shimadzu||Izumo Kasayo-no-mikoto<br />(reign of Emperor Seimu)||Shima clan (Atai)||Shima Province||
 |-
 | align="center" style="background:#E3E3FF"| [[尾張国]]
-| '''[[尾張国造]]'''||おわり||[[小止與命]]<ref> [{{NDLDC|991097/216}} 『国史大系 第7巻』]（経済雑誌社、国立国会図書館デジタルコレクション）216コマ。</ref>（小止与命）<br />（成務天皇期）||[[尾張氏]]（連）<br />のち千秋氏||尾張国||[[熱田神宮]][[大宮司]]家
+| '''[[尾張国造]]'''||Owari||[[小止與命]]<ref> [{{NDLDC|991097/216}} ''Kokushi Taikei'' Vol. 7] (Keizai Zasshisha; National Diet Library Digital Collection), frame 216.</ref> (Oyotome-no-mikoto)<br />(reign of Emperor Seimu)||[[尾張氏]] (Muraji),<br />later Chiaki clan||Owari Province||Head family of [[熱田神宮]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[三河国]]
-| '''[[参河国造]]'''||みかわ||知波夜命<br />（成務天皇期）||三川氏（直）||三河国西部||後裔の[[永見氏]]は[[知立神社]]社家
+| '''[[参河国造]]'''||Mikawa||Chihaya-no-mikoto<br />(reign of Emperor Seimu)||Mikawa clan (Atai)||Western Mikawa Province||Descendants' [[永見氏|Nagami clan]] are shrine family of [[知立神社]]
 |-
-| '''[[穂国造]]'''||ほ||朝廷別王<br />（成務天皇朝）または菟上足尼<br />（[[雄略天皇]]期）||穂氏（君）または[[磯部氏]]||三河国東部||[[砥鹿神社]]社家
+| '''[[穂国造]]'''||Ho||Asahi Tsuwake-ō<br />(reign of Emperor Seimu) or Usagami no Sukune<br />(reign of Emperor Yūryaku)||Ho clan (Kimi) or [[磯部氏]]||Eastern Mikawa Province||Shrine family of [[砥鹿神社]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[遠江国]]
-| '''[[遠淡海国造]]'''||とおつおうみ||印岐美命<br />（成務天皇期）||遠淡海氏（直）か||遠江国西部||
+| '''[[遠淡海国造]]'''||Tōtsu-Ōmi||Inkimi-no-mikoto<br />(reign of Emperor Seimu)||Tōtsu-Ōmi clan (Atai) (tentative)||Western Tōtōmi Province||
 |-
-| '''[[久努国造]]'''||くの||印幡足尼<br />（[[仲哀天皇]]期）||[[久野氏|久努氏]]（直）||遠江国中部||
+| '''[[久努国造]]'''||Kuno||Inbatarune<br />(reign of Emperor Chūai)||[[久野氏|Kuno clan]] (Atai)||Central Tōtōmi Province||
 |-
-| '''[[素賀国造]]'''||すが<br />そが||美志印命<br />（神武天皇期）||||遠江国東部||
+| '''[[素賀国造]]'''||Suga / Soga||Mishiinno-mikoto<br />(reign of Emperor Jinmu)||||Eastern Tōtōmi Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[駿河国]]
-| '''[[廬原国造]]'''||いおはら||意加部彦命<br />（成務天皇期）||[[庵原氏|廬原氏]]（君）||駿河国西部||
+| '''[[廬原国造]]'''||Iohara||Ikabe Hikono-mikoto<br />(reign of Emperor Seimu)||[[庵原氏|Iohara clan]] (Kimi)||Western Suruga Province||
 |-
-| '''[[珠流河国造]]'''||するが||片堅石命<br />（成務天皇期）||[[金刺氏]]（舎人）||駿河国東部||
+| '''[[珠流河国造]]'''||Suruga||Katakataishi-no-mikoto<br />(reign of Emperor Seimu)||[[金刺氏]] (Toneri)||Eastern Suruga Province||
 |-
 | align="center" style="background:#E3E3FF"| [[伊豆国]]
-| '''[[伊豆国造]]'''||いず||若建命<br />（[[神功皇后]]期）||伊豆氏（直）<br />のち[[日下部氏]]（直）<br />改姓後伊豆氏（直）||伊豆国||[[三島大社]]社家
+| '''[[伊豆国造]]'''||Izu||Wakatake-no-mikoto<br />(reign of Empress Jingū)||Izu clan (Atai),<br />later [[日下部氏]] (Atai),<br />renamed Izu clan (Atai)||Izu Province||Shrine family of [[三島大社]]
 |-
 | align="center" style="background:#E3E3FF"| [[甲斐国]]
-| '''[[甲斐国造]]'''||かい||[[鹽海足尼]]<br />（[[景行天皇]]期）||[[甲斐氏]]（君）<br />のちに[[壬生氏]]（直）か||甲斐国||
+| '''[[甲斐国造]]'''||Kai||[[鹽海足尼]]<br />(reign of Emperor Keikō)||[[甲斐氏]] (Kimi),<br />later [[壬生氏]] (Atai) (tentative)||Kai Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[相模国]]
-| '''[[師長国造]]'''<br />（磯長国造）||しなが||意富鷲意彌命<br />（成務天皇期）||[[丈部氏]]か||相模国西部||一族の宗我部氏は[[大國魂神社]]社家
+| '''[[師長国造]]'''<br />(Shinaga Kokuzo)||Shinaga||Ōwashiomi-no-mikoto<br />(reign of Emperor Seimu)||[[丈部氏]] (tentative)||Western Sagami Province||The Sōgabe clan of the same lineage are shrine family of [[大國魂神社]]
 |-
-| '''[[相武国造]]'''<br />（武相国造）||さがむ||茅武彦命(弟武彦命)<br />（成務天皇期）||[[壬生氏]]（直）||相模国東部||
+| '''[[相武国造]]'''<br />(Sagamu Kokuzo)||Sagamu||Kayatake Hikono-mikoto (Otake Hikono-mikoto)<br />(reign of Emperor Seimu)||[[壬生氏]] (Atai)||Eastern Sagami Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[武蔵国]]
-| '''[[知々夫国造]]'''||ちちぶ||知知夫彦命<br />（[[崇神天皇]]期）||大伴部氏（直）か||武蔵国北西部||
+| '''[[知々夫国造]]'''||Chichibu||Chichibe Hikono-mikoto<br />(reign of Emperor Sujin)||Ōtomobe clan (Atai) (tentative)||Northwestern Musashi Province||
 |-
-| '''[[无邪志国造]]'''||むさし||兄多毛比命<br />（成務天皇期）||无邪志氏（直）および笠原氏（直）<br />のち丈部氏（直）改姓後武蔵氏（宿禰）|| rowspan="2" |武蔵国（秩父除く）||[[氷川神社]]社家
+| '''[[无邪志国造]]'''||Musashi||Enatamohino-mikoto<br />(reign of Emperor Seimu)||Musashi clan (Atai) and Kasahara clan (Atai),<br />later Hatori clan (Atai), renamed Musashi clan (Sukune)|| rowspan="2" |Musashi Province (excl. Chichibu)||Shrine family of [[氷川神社]]
 |-
-| '''[[胸刺国造]]'''||むなさし||[[海上五十狭茅|伊狭知直]]<br />（時期記載なし）||||一般に无邪志国造と同一
+| '''[[胸刺国造]]'''||Munasashi||[[海上五十狭茅|Isachi no Atai]]<br />(period not recorded)||||Generally considered the same as Musashi Kokuzo
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[安房国]]
-| '''[[阿波国造]]'''||あわ||大伴直大瀧<br />（成務天皇期）||大伴氏（直）||安房国西部||
+| '''[[阿波国造]]'''||Awa||Ōtomo no Atai Ōtaki<br />(reign of Emperor Seimu)||Ōtomo clan (Atai)||Western Awa Province||
 |-
-| '''[[長狭国造]]'''||ながさ||神八井耳命の子孫<ref>『古事記』では[[神八井耳命]]を長狭国造の祖とする。</ref><br />（時期記載なし）||長狭氏（不明）<br />または日下部氏（使主）||安房国東部||
+| '''[[長狭国造]]'''||Nagasa||Descendants of [[神八井耳命]]<ref>In the ''Kojiki'', [[神八井耳命|Kamiyainimimi-no-mikoto]] is cited as the progenitor of Nagasa Kokuzo.</ref><br />(period not recorded)||Nagasa clan (unknown)<br />or Kusukabe clan (Obito)||Eastern Awa Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="6"| [[上総国]]
-| '''[[須恵国造]]'''||すえ||大布日意彌命<br />（成務天皇期）||末氏（使主）||上総国南部||
+| '''[[須恵国造]]'''||Sue||Ōbuhino-omi-no-mikoto<br />(reign of Emperor Seimu)||Sue clan (Obito)||Southern Kazusa Province||
 |-
-| '''[[馬来田国造]]'''||うまくた<br />まくた||深河意彌命<br />（成務天皇期）||||上総国中西部||
+| '''[[馬来田国造]]'''||Umakuta / Makuta||Fukahano-omi-no-mikoto<br />(reign of Emperor Seimu)||||West-central Kazusa Province||
 |-
-| '''[[上海上国造]]'''||かみつうなかみ||忍立化多比命<br />（成務天皇期）||檜前氏（舎人直）||上総国中西部||
+| '''[[上海上国造]]'''||Kamitsu-Unakama||Oshitatachimotahi-no-mikoto<br />(reign of Emperor Seimu)||Hinokuma clan (Toneri-atai)||West-central Kazusa Province||
 |-
-| '''[[菊麻国造]]'''||くくま<br />きくま||[[大鹿国直]]<br />（成務天皇期）||来熊田氏（造）か||上総国北西部||
+| '''[[菊麻国造]]'''||Kukuma / Kikuma||[[大鹿国直]]<br />(reign of Emperor Seimu)||Kikumata clan (Miyatsuko) (tentative)||Northwestern Kazusa Province||
 |-
-| '''[[伊甚国造]]'''||いじむ<br />いじみ||伊己侶止直<br />（成務天皇期）||伊甚氏（直）||上総国東部||
+| '''[[伊甚国造]]'''||Ijimu / Ijimi||Ikoro Tono-atai<br />(reign of Emperor Seimu)||Ijimi clan (Atai)||Eastern Kazusa Province||
 |-
-| '''[[武社国造]]'''||むさ||彦忍人命<br />（成務天皇期）||牟邪氏（臣）||上総国北東部||
+| '''[[武社国造]]'''||Musa||Hikooshine-no-mikoto<br />(reign of Emperor Seimu)||Musa clan (Omi)||Northeastern Kazusa Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[下総国]]
-| '''[[千葉国造]]'''||ちは||記載なし<ref>後世の系図では応神朝の武多乃直とする説がある。</ref>||大私部氏（直）||下総国南部||
+| '''[[千葉国造]]'''||Chiha||Not recorded<ref>Later genealogies suggest Takenari no Atai of the Ōjin era.</ref>||Ōkisakurabe clan (Atai)||Southern Shimōsa Province||
 |-
-| '''[[印波国造]]'''||いんば||伊都許利命<br />（応神天皇期）||丈部氏（直）||下総国中部||後裔の太田氏は[[麻賀多神社]]社家
+| '''[[印波国造]]'''||Inba||Idukori-no-mikoto<br />(reign of Emperor Ōjin)||Hatori clan (Atai)||Central Shimōsa Province||Descendants' Ōta clan are shrine family of [[麻賀多神社]]
 |-
-| '''[[下海上国造]]'''||しもつうなかみ||久都伎直<br />（応神天皇期）||他田日奉部氏（直）||下総国東部||
+| '''[[下海上国造]]'''||Shimotsu-Unakama||Kudoki no Atai<br />(reign of Emperor Ōjin)||Tadahino Matsuri-be clan (Atai)||Eastern Shimōsa Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="7"| [[常陸国]]
-| '''[[筑波国造]]'''||つくば||阿閉色命<br />（成務天皇期）||||常陸国南部||
+| '''[[筑波国造]]'''||Tsukuba||Aheshine-no-mikoto<br />(reign of Emperor Seimu)||||Southern Hitachi Province||
 |-
-| '''[[新治国造]]'''||にいはり||比奈羅布命<br />（成務天皇期）||新治氏（直）||常陸国西部||
+| '''[[新治国造]]'''||Niihara||Hinarabu-no-mikoto<br />(reign of Emperor Seimu)||Niihara clan (Atai)||Western Hitachi Province||
 |-
-| '''[[茨城国造]]'''||いばらき||筑紫刀禰<br />（応神天皇期）||壬生氏（連）||常陸国中部||
+| '''[[茨城国造]]'''||Ibaraki||Tsukushi no Tone<br />(reign of Emperor Ōjin)||Mibu clan (Muraji)||Central Hitachi Province||
 |-
-| '''[[仲国造]]'''||なか||建借馬命<br />（成務天皇期）||壬生氏（直）||常陸国東部||
+| '''[[仲国造]]'''||Naka||Takekaruma-no-mikoto<br />(reign of Emperor Seimu)||Mibu clan (Atai)||Eastern Hitachi Province||
 |-
-| '''[[久自国造]]'''||くじ||船瀬足尼<br />（成務天皇期）||大部氏（造）||常陸国北中部||
+| '''[[久自国造]]'''||Kuji||Funaseno Sukune<br />(reign of Emperor Seimu)||Ōbe clan (Miyatsuko)||North-central Hitachi Province||
 |-
-| '''[[高国造]]'''||たか||彌佐比命<br />（成務天皇期）||[[岩城氏]]（直）||常陸国北部||
+| '''[[高国造]]'''||Taka||Misahino-mikoto<br />(reign of Emperor Seimu)||[[岩城氏]] (Atai)||Northern Hitachi Province||
 |-
-| style="white-space:nowrap" |'''[[道口岐閉国造]]'''||みちのくちのきへ||宇佐比刀禰<br />（応神天皇期）||||常陸国北端||
+| style="white-space:nowrap" |'''[[道口岐閉国造]]'''||Michinokuchi no Kihe||Usahino Tone<br />(reign of Emperor Ōjin)||||Far northern Hitachi Province||
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[東山道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[近江国]]
-| '''[[淡海国造]]'''<br />（近淡海国造）||おうみ||大陀牟夜別<br />（成務天皇期）||近江氏（臣）||近江国西部||
+| '''[[淡海国造]]'''<br />(Ōmi Kokuzo)||Ōmi||Ōtamuyawake<br />(reign of Emperor Seimu)||Ōmi clan (Omi)||Western Ōmi Province||
 |-
-| '''[[安国造]]'''<br />（近淡海安国造）<br />（淡海安国造）||やす||（記載なし）||安氏（直）||近江国南東部||
+| '''[[安国造]]'''<br />(Ōmi-Yasu Kokuzo)||Yasu||(not recorded)||Yasu clan (Atai)||Southeastern Ōmi Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="5"| [[美濃国]]
-| '''[[額田国造]]'''||ぬかた||大直侶宇命<br />（成務天皇期）||額田氏（国造）||美濃国北西部||
+| '''[[額田国造]]'''||Nukata||Ōnaorō-no-mikoto<br />(reign of Emperor Seimu)||Nukata clan (Kokuzo)||Northwestern Mino Province||
 |-
-| '''[[三野前国造]]'''||みののさき<br />みののみちのくち||八瓜命<br />（[[開化天皇]]期）||三野氏（美濃氏）（直）||美濃国中西部||
+| '''[[三野前国造]]'''||Mino no Saki / Mino no Michinokuchi||Yakuri-no-mikoto<br />(reign of Emperor Kaikwa)||Mino clan (Mino clan) (Atai)||West-central Mino Province||
 |-
-| '''[[本巣国造]]'''||もとす||[[神大根王]]||三野氏（美濃氏）（直）||美濃国中西部||三野前国造の別名とされる
+| '''[[本巣国造]]'''||Motosu||[[神大根王]]||Mino clan (Mino clan) (Atai)||West-central Mino Province||Also called Mino-mae Kokuzo
 |-
-| '''[[牟義都国造]]'''||むげつ||押黒兄日子王||牟宜都氏（君）||美濃国北中部||
+| '''[[牟義都国造]]'''||Mugetsu||Oshikuroene Hikono-ō||||North-central Mino Province||
 |-
-| '''[[三野後国造]]'''||みののしり||臣賀夫良命<br />（成務天皇期）||三野後氏（直）||美濃国東部||
+| '''[[三野後国造]]'''||Mino no Shiri||Tomikabura-no-mikoto<br />(reign of Emperor Seimu)||Mino-shiri clan (Atai)||Eastern Mino Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="1"| [[飛騨国]]
-| '''[[斐陀国造]]'''||ひだ||大八埼命<br />（成務天皇期）||斐陀氏（国造）||飛騨国||
+| '''[[斐陀国造]]'''||Hida||Ōyasaki-no-mikoto<br />(reign of Emperor Seimu)||Hida clan (Kokuzo)||Hida Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="1"| [[信濃国]]
-| '''[[科野国造]]'''||しなの||[[武五百建命]]<br />（崇神天皇期）||科野氏（君）<br />のち[[金刺氏]]・[[他田氏]]（舎人）||信濃国全域||[[諏訪大社]]下社社家
+| '''[[科野国造]]'''||Shinano||[[武五百建命]]<br />(reign of Emperor Sujin)||Shinano clan (Kimi),<br />later [[金刺氏|Kanasashi clan]] and [[他田氏|Tada clan]] (Toneri)||All of Shinano Province||Shrine family of [[諏訪大社]] (Lower Shrine)
 |-
 | align="center" style="background:#E3E3FF"| [[上野国]]
-| '''[[上毛野国造]]'''||かみつけの||[[彦狭島王|彦狭島命]]<br />（時期記載なし）||[[上毛野氏]]（君）||上野国||
+| '''[[上毛野国造]]'''||Kamitsukeno||[[彦狭島王|Hikosashima-no-mikoto]]<br />(period not recorded)||[[上毛野氏]] (Kimi)||Kōzuke Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[下野国]]
-| '''[[下毛野国造]]'''||しもみつけの||[[奈良別]]<br />（[[仁徳天皇]]期）||[[下毛野氏]]（君）||下野国（那須除く）||
+| '''[[下毛野国造]]'''||Shimomitsukeno||[[奈良別|Narabetsu]]<br />(reign of Emperor Nintoku)||[[下毛野氏]] (Kimi)||Shimotsuke Province (excl. Nasu)||
 |-
-| '''[[那須国造]]'''||なす||[[大臣命]]<br />（景行天皇期）||[[那須氏]]（直）||下野国北部||鎌倉幕府御家人　室町幕府関八州八屋形　江戸幕府交代寄合
+| '''[[那須国造]]'''||Nasu||[[大臣命]]<br />(reign of Emperor Keikō)||[[那須氏]] (Atai)||Northern Shimotsuke Province||Kamakura shogunate gokenin; Muromachi shogunate Kantō Hasshu Yakata; Edo shogunate kōtai-yoriai
 |-
 | align="center" style="background:#E3E3FF" rowspan="10"| [[陸奥国]]
-| '''[[白河国造]]'''||しらかわ||鹽伊乃己自直<br />（成務天皇期）||のち那須氏（直）が郡領||陸奥国南部<br />（福島県域南西部）||
+| '''[[白河国造]]'''||Shirakawa||Shioino Kojino-atai<br />(reign of Emperor Seimu)||Later Nasu clan (Atai) as gunji||Southern Mutsu Province<br />(southwestern Fukushima area)||
 |-
-| '''[[石背国造]]'''||いわせ||建彌依米命<br />（成務天皇期）||[[吉弥侯部|吉弥侯部氏]]||陸奥国南部<br />（福島県域中西部）||石背国造神社社家
+| '''[[石背国造]]'''||Iwase||Takemiyorume-no-mikoto<br />(reign of Emperor Seimu)||[[吉弥侯部|Yoshimikobe clan]]||Southern Mutsu Province<br />(west-central Fukushima area)||Shrine family of Iwase Kokuzo Shrine
 |-
-| '''[[阿尺国造]]'''||あさか||比止禰命<br />（成務天皇期）||丈部氏（直）||陸奥国南部<br />（福島県域中西部）||[[安積国造神社]]社家
+| '''[[阿尺国造]]'''||Asaka||Hitoneno-mikoto<br />(reign of Emperor Seimu)||Hatori clan (Atai)||Southern Mutsu Province<br />(west-central Fukushima area)||Shrine family of [[安積国造神社]]
 |-
-| '''[[道奥菊多国造]]'''||みちのおくのきくた||屋主乃禰<ref> [{{NDLDC|991097/219}} 『国史大系 第7巻』]（経済雑誌社、国立国会図書館デジタルコレクション）219コマ。</ref>（屋主刀禰）<br />（応神天皇期）||湯坐菊多氏（臣）||陸奥国南部<br />（福島県域南東部）||
+| '''[[道奥菊多国造]]'''||Michinookuno Kikuta||Yanushino Tone<ref> [{{NDLDC|991097/219}} ''Kokushi Taikei'' Vol. 7] (Keizai Zasshisha; National Diet Library Digital Collection), frame 219.</ref> (Yanushi no Tone)<br />(reign of Emperor Ōjin)||Yuzakikuta clan (Omi)||Southern Mutsu Province<br />(southeastern Fukushima area)||
 |-
-| '''[[石城国造]]'''||いわき||[[建許呂命]]<br />（成務天皇期）||石城氏（直）||陸奥国南部<br />（福島県域中東部）||
+| '''[[石城国造]]'''||Iwaki||[[建許呂命]]<br />(reign of Emperor Seimu)||Iwaki clan (Atai)||Southern Mutsu Province<br />(east-central Fukushima area)||
 |-
-| '''[[染羽国造]]'''||しめは<br />しねは||足彦命<br />（成務天皇期）||||陸奥国南部<br />（福島県域中東部）||
+| '''[[染羽国造]]'''||Shimeha / Shineha||Tarihikono-mikoto<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(east-central Fukushima area)||
 |-
-| '''[[信夫国造]]'''||しのぶ||久麻直<br />（成務天皇期）||丈部氏||陸奥国南部<br />（福島県域北西部）||
+| '''[[信夫国造]]'''||Shinobu||Kumano-atai<br />(reign of Emperor Seimu)||Hatori clan||Southern Mutsu Province<br />(northwestern Fukushima area)||
 |-
-| '''[[浮田国造]]'''||うきた||[[鹿我別|賀我別王]]<br />（成務天皇期）||吉弥侯部氏||陸奥国南部<br />（福島県域北東部）||
+| '''[[浮田国造]]'''||Ukita||[[鹿我別|Kagawakeno-ō]]<br />(reign of Emperor Seimu)||Yoshimikobe clan||Southern Mutsu Province<br />(northeastern Fukushima area)||
 |-
-| '''[[伊久国造]]'''||いく||豊島命<br />（成務天皇期）||||陸奥国南部<br />（宮城県域南東部）
+| '''[[伊久国造]]'''||Iku||Toyoshima-no-mikoto<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(southeastern Miyagi area)
 |
 |-
-| '''[[思国造]]'''<br />（日利か）||わたり||志久麻彦<br />（成務天皇期）||||陸奥国南部<br />（宮城県域南東部）||「思」は「日利」の誤記で亘理郡とする説がある<ref>名取市以北の古墳築造事情から「思太」の「太」の脱字として[[志田郡]]にあてる説もあるが一国だけ遠く北に離れて孤立していることになり不自然であることから有力説にはなってない。</ref>。
+| '''[[思国造]]'''<br />(possibly Hiri)||Watari||Shikuma Hiko<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(southeastern Miyagi area)||Some suggest "思" is a miswriting of "日利," placing it in Watari District; others suggest "太" was omitted from "思太," placing it in [[志田郡|Shida District]], though this interpretation creates an isolated position far to the north and has not gained wide acceptance.<ref>There is also a theory that, based on the pattern of kofun construction north of Natori, it should be read as Shida District with the omission of "太" from "思太," but as this would leave it isolated and far to the north, it has not become a leading theory.</ref>
 |-
 | align="center" style="background:#E3E3FF"| [[出羽国]]
-| ||||||||||
+| |||||||||
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[北陸道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[北陸道|Hokuriku-dō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[若狭国]]
-| '''[[若狭国造]]'''||わかさ||[[荒礪命]]<br />（[[允恭天皇]]期）||稚桜部氏（臣）||若狭国||
+| '''[[若狭国造]]'''||Wakasa||[[荒礪命]]<br />(reign of Emperor Ingyō)||Wakakurabe clan (Omi)||Wakasa Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[越前国]]
-| '''[[角鹿国造]]'''||つぬが||建功狭日命<br />（成務天皇期）||角鹿氏（直）||越前国南西部||[[氣比神宮]]社家
+| '''[[角鹿国造]]'''||Tsunuga||Takekosahi-no-mikoto<br />(reign of Emperor Seimu)||Tsunuga clan (Atai)||Southwestern Echizen Province||Shrine family of [[氣比神宮]]
 |-
-| '''[[三国国造]]'''||みくに||若長足尼<br />（成務天皇期）||||越前国北東部||
+| '''[[三国国造]]'''||Mikuni||Wakanagatarisune<br />(reign of Emperor Seimu)||||Northeastern Echizen Province||
 |-
-| '''[[高志国造]]'''<br />（越国造）<br />（古志国造）||こし||[[市入命]]<br />（成務天皇期）||道氏（君・公）||越前国中部<br />（越前国丹生郡）||奴奈川神社の社家榊氏は高志国造裔を称す、越後国が本拠説あり
+| '''[[高志国造]]'''<br />(Koshi Kokuzo / Furushi Kokuzo)||Koshi||[[市入命]]<br />(reign of Emperor Seimu)||Michi clan (Kimi / Kō)||Central Echizen Province<br />(Niū District, Echizen)||Sakaki clan, shrine family of Nunagawa Shrine, claims descent from Koshi Kokuzo; some assert their base was Echigo Province
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[加賀国]]
-| '''[[江沼国造]]'''||えぬま||志波勝足尼<br />（[[反正天皇]]期）||江沼氏（臣）||加賀国南部||
+| '''[[江沼国造]]'''||Enuma||Shiwakatsune<br />(reign of Emperor Hanzei)||Enuma clan (Omi)||Southern Kaga Province||
 |-
-| '''[[加我国造]]'''<br />（賀我国造）||かが||大兄彦君<br />（雄略天皇期）||||rowspan="2"|加賀国中部||
+| '''[[加我国造]]'''<br />(Kaga Kokuzo)||Kaga||Ōenohimekimi<br />(reign of Emperor Yūryaku)||||Central Kaga Province (shared with below)||
 |-
-| '''[[加宜国造]]'''||かが||素都乃奈美留命<br />（[[仁徳天皇]]期）||道氏（君・公）||
+| '''[[加宜国造]]'''||Kaga||Sudono Namiru-no-mikoto<br />(reign of Emperor Nintoku)||Michi clan (Kimi / Kō)||Central Kaga Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[能登国]]
-| '''[[羽咋国造]]'''||はくい||石城別王<br />（雄略天皇期）||羽咋氏（君・公）||能登国南部||
+| '''[[羽咋国造]]'''||Hakui||Ishiki Wakeno-ō<br />(reign of Emperor Yūryaku)||Hakui clan (Kimi / Kō)||Southern Noto Province||
 |-
-| '''[[能等国造]]'''||のと||[[彦狭島命]]<br />（成務天皇期）||能登氏（臣）||能登国北部||
+| '''[[能等国造]]'''||Noto||[[彦狭島命]]<br />(reign of Emperor Seimu)||Noto clan (Omi)||Northern Noto Province||
 |-
 | align="center" style="background:#E3E3FF"| [[越中国]]
-| '''[[伊彌頭国造]]'''||いみづ||[[大河音足尼]]<br />（成務天皇期）||射水氏（臣）||越中国||
+| '''[[伊彌頭国造]]'''||Imidzu||[[大河音足尼]]<br />(reign of Emperor Seimu)||Imizu clan (Omi)||Etchū Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[越後国]]
-| '''[[久比岐国造]]'''||くびき||御戈命<br />（崇神天皇期）||頸城氏（直）||越後国西部||
+| '''[[久比岐国造]]'''||Kubiki||Mikoto-no-mikoto<br />(reign of Emperor Sujin)||Kubiki clan (Atai)||Western Echigo Province||
 |-
-| '''[[高志深江国造]]'''||こしのふかえ||[[素都乃奈美留命]]<br />（崇神天皇期）||高志氏（君・公）||越後国北部||
+| '''[[高志深江国造]]'''||Koshi no Fukae||[[素都乃奈美留命]]<br />(reign of Emperor Sujin)||Koshi clan (Kimi / Kō)||Northern Echigo Province||
 |-
 | align="center" style="background:#E3E3FF"| [[佐渡国]]
-| '''[[佐渡国造]]'''||さど||大荒木直<br />（成務天皇期）||不明（直）||佐渡国||
+| '''[[佐渡国造]]'''||Sado||Ōaraki no Atai<br />(reign of Emperor Seimu)||Unknown (Atai)||Sado Province||
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[丹波国]]
-|  rowspan="2"|'''[[丹波国造]]'''||rowspan="2"|たんば||rowspan="2"|大倉岐命<br />（成務天皇期）||rowspan="2"|[[丹波氏]]（直）||rowspan="2"|丹波国・丹後国||rowspan="2"|[[籠神社]]社家は国造族の支流
+|  rowspan="2"|'''[[丹波国造]]'''||rowspan="2"|Tanba||rowspan="2"|Ōkuraki-no-mikoto<br />(reign of Emperor Seimu)||rowspan="2"|[[丹波氏]] (Atai)||rowspan="2"|Tanba Province and Tango Province||rowspan="2"|Branch of the kokuzo clan serves as shrine family of [[籠神社]]
 |-
 | align="center" style="background:#E3E3FF"| [[丹後国]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[但馬国]]
-| '''[[但遅麻国造]]'''||たじま||船穂足尼<br />（成務天皇期）||但馬氏（君・公）||但馬国東部||
+| '''[[但遅麻国造]]'''||Tajima||Funahosune<br />(reign of Emperor Seimu)||Tajima clan (Kimi / Kō)||Eastern Tajima Province||
 |-
-| '''[[二方国造]]'''||ふたかた||美尼布命<br />（成務天皇期）||二方氏（直）||但馬国西部||
+| '''[[二方国造]]'''||Futagata||Minibu-no-mikoto<br />(reign of Emperor Seimu)||Futagata clan (Atai)||Western Tajima Province||
 |-
 | align="center" style="background:#E3E3FF"| [[因幡国]]
-| '''[[稲葉国造]]'''||いなば||彦多都彦命<br />（成務天皇期）||[[因幡氏|因幡氏（稲葉氏）]]（国造）||因幡国||後裔の[[伊福部氏]]は[[宇倍神社]]社家
+| '''[[稲葉国造]]'''||Inaba||Hikataduhi-no-mikoto<br />(reign of Emperor Seimu)||[[因幡氏|Inaba clan]] (Kokuzo)||Inaba Province||Descendants' [[伊福部氏|Ifukube clan]] are shrine family of [[宇倍神社]]
 |-
 | align="center" style="background:#E3E3FF"| [[伯耆国]]
-| '''[[伯岐国造]]'''<br />（波伯国造）||ほうき||大八木足尼<br />（成務天皇期）||伯岐氏（伯耆氏）（造）||伯耆国||
+| '''[[伯岐国造]]'''<br />(Hōki Kokuzo)||Hōki||Ōyakisune<br />(reign of Emperor Seimu)||Hōki clan (Hōki clan) (Miyatsuko)||Hōki Province||
 |-
 | align="center" style="background:#E3E3FF"| [[出雲国]]
-| '''[[出雲国造]]'''||いずも||[[宇迦都久怒]]<br />（崇神天皇期）||[[出雲氏]]（臣）||出雲国||[[出雲大社]]社家
+| '''[[出雲国造]]'''||Izumo||[[宇迦都久怒]]<br />(reign of Emperor Sujin)||[[出雲氏]] (Omi)||Izumo Province||Shrine family of [[出雲大社]]
 |-
 | align="center" style="background:#E3E3FF"| [[石見国]]
-| '''[[石見国造]]'''||いわみ||大屋古命<br />（崇神天皇期）||||石見国||
+| '''[[石見国造]]'''||Iwami||Ōyafuru-no-mikoto<br />(reign of Emperor Sujin)||||Iwami Province||
 |-
 | align="center" style="background:#E3E3FF"| [[隠岐国]]
-| '''[[意岐国造]]'''||おき||十挨彦命<br />（応神天皇期）||[[億岐氏]]（不明）||隠岐国||[[玉若酢命神社]]社家
+| '''[[意岐国造]]'''||Oki||Tōkahi Hikono-mikoto<br />(reign of Emperor Ōjin)||[[億岐氏]] (unknown)||Oki Province||Shrine family of [[玉若酢命神社]]
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道|Sanyōdō]]'''
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[播磨国]]
-| '''[[明石国造]]'''||あかし||都彌自足尼<br />（応神天皇期）||海氏（直）||播磨国南東部||
+| '''[[明石国造]]'''||Akashi||Tsumijisune<br />(reign of Emperor Ōjin)||Umi clan (Atai)||Southeastern Harima Province||
 |-
-| '''[[針間国造]]'''||はりま||伊許自別命<br />（成務天皇期）||針間氏（直）、[[佐伯直#針間別佐伯直を祖とする佐伯氏|佐伯氏]]（直）||播磨国北部||
+| '''[[針間国造]]'''||Harima||Ikojiwake-no-mikoto<br />(reign of Emperor Seimu)||Harima clan (Atai), [[佐伯直#針間別佐伯直を祖とする佐伯氏|Saeki clan]] (Atai)||Northern Harima Province||
 |-
-| '''[[針間鴨国造]]'''||はりまのかも||市入別命<br />（成務天皇期）||山氏（直）||播磨国東部||
+| '''[[針間鴨国造]]'''||Harima no Kamo||Ichirikuwake-no-mikoto<br />(reign of Emperor Seimu)||Yama clan (Atai)||Eastern Harima Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="1"| [[美作国]]
-| '''[[吉備中県国造]]'''||きびのなかつあがた||明石彦<br />（崇神天皇期）||三使部氏（直）||美作国||
+| '''[[吉備中県国造]]'''||Kibi no Nakatsu Agata||Akashihiko<br />(reign of Emperor Sujin)||Misabe clan (Atai)||Mimasaka Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[備前国]]
-| '''[[大伯国造]]'''||おおく||佐紀足尼<br />（応神天皇期）||||備前国東部||
+| '''[[大伯国造]]'''||Ōku||Sakisune<br />(reign of Emperor Ōjin)||||Eastern Bizen Province||
 |-
-| '''[[上道国造]]'''||かみつみち||多佐臣<br />（応神天皇期）||上道氏（臣）||備前国中部||
+| '''[[上道国造]]'''||Kamitsumichi||Tasaomi<br />(reign of Emperor Ōjin)||Kamitsumichi clan (Omi)||Central Bizen Province||
 |-
-| '''[[三野国造]]'''||みの||弟彦命<br />（応神天皇期）||三野氏（臣）||備前国南西部||
+| '''[[三野国造]]'''||Mino||Otohikono-mikoto<br />(reign of Emperor Ōjin)||Mino clan (Omi)||Southwestern Bizen Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[備中国]]
-| '''[[笠臣国造]]'''||かさのおみ<br />かさ||笠三枚臣<br />（応神天皇期）||笠氏（臣）||備中国南西部||
+| '''[[笠臣国造]]'''||Kasa no Omi / Kasa||Kasa Mimai-omi<br />(reign of Emperor Ōjin)||Kasa clan (Omi)||Southwestern Bitchū Province||
 |-
-| '''[[加夜国造]]'''||かや||中彦命<br />（応神天皇期）||香屋氏（臣）||備中国南東部||[[吉備津神社]]祢宜家
+| '''[[加夜国造]]'''||Kaya||Nakahikono-mikoto<br />(reign of Emperor Ōjin)||Kaya clan (Omi)||Southeastern Bitchū Province||Negi family of [[吉備津神社]]
 |-
-| '''[[下道国造]]'''||しもつみち||兄彦命（稲建別）<br />（応神天皇期）||下道氏（臣）||備中国中部||
+| '''[[下道国造]]'''||Shimotsu-michi||Enohikono-mikoto (Inatakenowake)<br />(reign of Emperor Ōjin)||Shimotsu-michi clan (Omi)||Central Bitchū Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[備後国]]
-| '''[[吉備品治国造]]'''<br />（吉備風治国造）||きびのほむち||大船足尼<br />（成務天皇期）||吉備品遅部氏（君）||備後国南部||
+| '''[[吉備品治国造]]'''<br />(Kibi Homuchi Kokuzo)||Kibi no Homuchi||Ōfunesune<br />(reign of Emperor Seimu)||Kibi Homuchi-be clan (Kimi)||Southern Bingo Province||
 |-
-| '''[[吉備穴国造]]'''||きびあな||八千足尼<br />（景行天皇期）||安那氏（公）||備後国東部||
+| '''[[吉備穴国造]]'''||Kibi-Ana||Yachinosune<br />(reign of Emperor Keikō)||Ana clan (Kō)||Eastern Bingo Province||
 |-
 | align="center" style="background:#E3E3FF"| [[安芸国]]
-| '''[[阿岐国造]]'''||あき||[[飽速玉命]]<br />（成務天皇期）||阿岐氏（安芸氏）（凡直）||安芸国||
+| '''[[阿岐国造]]'''||Aki||[[飽速玉命]]<br />(reign of Emperor Seimu)||Aki clan (Aki clan) (Ōnaotai)||Aki Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="4"| [[周防国]]
-| '''[[大島国造]]'''||おおしま||穴倭古命<br />（成務天皇期）||||周防国大島||出雲国造末流、武蔵国造支流
+| '''[[大島国造]]'''||Ōshima||Anayamatofuru-no-mikoto<br />(reign of Emperor Seimu)||||Ōshima in Suō Province||Branch lineage of Izumo Kokuzo; supporting branch of Musashi Kokuzo
 |-
-| '''[[周防国造]]'''||すおう||加米乃意美<br />（応神天皇期）||周防氏（凡直）||周防国東部||
+| '''[[周防国造]]'''||Suō||Kameno Omi<br />(reign of Emperor Ōjin)||Suō clan (Ōnaotai)||Eastern Suō Province||
 |-
-| '''[[波久岐国造]]'''||はくき||豊玉根命<br />（崇神天皇期）||||周防国西部||
+| '''[[波久岐国造]]'''||Hakuki||Toyotamasuko-no-mikoto<br />(reign of Emperor Sujin)||||Western Suō Province||
 |-
-| '''[[都怒国造]]'''||つぬ||田鳥足尼<br />（仁徳天皇期）||角氏（臣）||周防国中部||
+| '''[[都怒国造]]'''||Tsunu||Tadori Sune<br />(reign of Emperor Nintoku)||Tsuno clan (Omi)||Central Suō Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[長門国]]
-| '''[[阿武国造]]'''||あむ||味波波命<br />（景行天皇期）||阿牟氏（公）||長門国東部||
+| '''[[阿武国造]]'''||Amu||Ajihawa-no-mikoto<br />(reign of Emperor Keikō)||Amu clan (Kō)||Eastern Nagato Province||
 |-
-| '''[[穴門国造]]'''||あなと||速都鳥命<br />（景行天皇期）||穴門氏（直）||長門国西部||[[住吉神社 (下関市)|住吉神社]]社家
+| '''[[穴門国造]]'''||Anato||Hayatodori-no-mikoto<br />(reign of Emperor Keikō)||Anato clan (Atai)||Western Nagato Province||Shrine family of [[住吉神社 (下関市)|Sumiyoshi Shrine]]
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[南海道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[南海道|Nankaidō]]'''
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[紀伊国]]
-| '''[[熊野国造]]'''||くまの||大阿斗足尼<br />（成務天皇期）||熊野氏（直）||紀伊国東部||[[熊野本宮大社]]社家
+| '''[[熊野国造]]'''||Kumano||Ōatosune<br />(reign of Emperor Seimu)||Kumano clan (Atai)||Eastern Kii Province||Shrine family of [[熊野本宮大社]]
 |-
-| '''[[紀国造]]'''<br />（紀伊国造）||き<br />きい||[[天道根命]]<br />（神武天皇期）||紀氏（君・直）||紀伊国西部||style="white-space:nowrap"|[[日前神宮・国懸神宮]]社家
+| '''[[紀国造]]'''<br />(Ki Kokuzo)||Ki / Kii||[[天道根命]]<br />(reign of Emperor Jinmu)||Ki clan (Kimi / Atai)||Western Kii Province||style="white-space:nowrap"|Shrine family of [[日前神宮・国懸神宮]]
 |-
 | align="center" style="background:#E3E3FF"| [[淡路国]]
-| '''[[淡道国造]]'''||あわじ||矢口足尼<br />（成務天皇期）||淡道氏（凡直）または波多門部氏（造）||淡路国||
+| '''[[淡道国造]]'''||Awaji||Yaguchisune<br />(reign of Emperor Seimu)||Awaji clan (Ōnaotai) or Hadomonbe clan (Miyatsuko)||Awaji Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[阿波国]]
-| '''[[粟国造]]'''||あわ||千波足尼<br />（応神天皇期）||粟氏（凡直）||阿波国北部||
+| '''[[粟国造]]'''||Awa||Chibasune<br />(reign of Emperor Ōjin)||Awa clan (Ōnaotai)||Northern Awa Province||
 |-
-| '''[[長国造]]'''||なが||韓背足尼<br />（成務天皇期）||長氏（公・直）||阿波国南部||
+| '''[[長国造]]'''||Naga||Karabisune<br />(reign of Emperor Seimu)||Naga clan (Kō / Atai)||Southern Awa Province||
 |-
 | align="center" style="background:#E3E3FF"| [[讃岐国]]
-| '''[[讃岐国造]]'''||さぬき||須賣保禮命<br />（応神天皇期）||[[讃岐氏]]（公・凡直）||讃岐国||後裔の[[十河氏]]は[[十河城]]主
+| '''[[讃岐国造]]'''||Sanuki||Sumahorano-mikoto<br />(reign of Emperor Ōjin)||[[讃岐氏]] (Kō / Ōnaotai)||Sanuki Province||Descendants' [[十河氏]] are lords of [[十河城]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="5"| [[伊予国]]
-| '''[[小市国造]]'''||おち<br />おいち||[[小市国造|子致命]]<br />（応神天皇期）||[[越智氏|小市氏]]（直）||伊予国東部||後裔の[[越智氏|大祝氏]]は[[大山祇神社]]社家
+| '''[[小市国造]]'''||Ochi / Oichi||[[小市国造|Kochino-mikoto]]<br />(reign of Emperor Ōjin)||[[越智氏|Kochi clan]] (Atai)||Eastern Iyo Province||Descendants' [[越智氏|Ōhōri clan]] are shrine family of [[大山祇神社]]
 |-
-| '''[[怒麻国造]]'''||ぬま||若彌尾命<br />（神功皇后期）||||伊予国北部||
+| '''[[怒麻国造]]'''||Numa||Wakamio-no-mikoto<br />(reign of Empress Jingū)||||Northern Iyo Province||
 |-
-| '''[[風速国造]]'''||かぜはや||阿佐利<br />（応神天皇期）||風早氏（直）||伊予国中部||
+| '''[[風速国造]]'''||Kazehaya||Asari<br />(reign of Emperor Ōjin)||Kazahaya clan (Atai)||Central Iyo Province||
 |-
-| '''[[久味国造]]'''||くみ||伊與主命<br />（応神天皇期）||[[久米氏#久米直|久米氏]]（直）||伊予国中部||
+| '''[[久味国造]]'''||Kumi||Iyonushi-no-mikoto<br />(reign of Emperor Ōjin)||[[久米氏#久米直|Kume clan]] (Atai)||Central Iyo Province||
 |-
-| '''[[伊余国造]]'''||いよ||速後上命<br />（成務天皇期）||伊余氏（伊予氏）（凡直）||伊予国南部||
+| '''[[伊余国造]]'''||Iyo||Hayaushikami-no-mikoto<br />(reign of Emperor Seimu)||Iyo clan (Iyo clan) (Ōnaotai)||Southern Iyo Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[土佐国]]
-| '''[[都佐国造]]'''||とさ||小立足尼<br />（成務天皇期）||都佐氏（公・凡直）||土佐国中部||
+| '''[[都佐国造]]'''||Tosa||Koidarisune<br />(reign of Emperor Seimu)||Tosa clan (Kō / Ōnaotai)||Central Tosa Province||
 |-
-| '''[[波多国造]]'''||はた||天韓襲命<br />（崇神天皇期）||[[波多氏 (古代)#地祇系氏族（波多国造）|波多氏]]（君）||土佐国西部||
+| '''[[波多国造]]'''||Hata||Amakaragino-mikoto<br />(reign of Emperor Sujin)||[[波多氏 (古代)#地祇系氏族（波多国造）|Hata clan]] (Kimi)||Western Tosa Province||
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[西海道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[西海道|Saikaidō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[筑前国]]
-| rowspan="2"|'''[[筑紫国造]]'''||rowspan="2"|つくし||rowspan="2"|田道命<br />（成務天皇期）||rowspan="2"|[[筑紫氏]]（君・公）||rowspan="2"|筑前国・筑後国||rowspan="2"|
+| rowspan="2"|'''[[筑紫国造]]'''||rowspan="2"|Tsukushi||rowspan="2"|Taminchi-no-mikoto<br />(reign of Emperor Seimu)||rowspan="2"|[[筑紫氏]] (Kimi / Kō)||rowspan="2"|Chikuzen Province and Chikugo Province||rowspan="2"|
 |-
 | align="center" style="background:#E3E3FF"| [[筑後国]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[豊前国]]
-| '''[[豊国造]]'''||とよ||宇那足尼<br />（成務天皇期）||豊氏（直）||豊前国北部||
+| '''[[豊国造]]'''||Toyo||Unanosune<br />(reign of Emperor Seimu)||Toyo clan (Atai)||Northern Buzen Province||
 |-
-| '''[[宇佐国造]]'''||うさ||[[宇佐都彦命]]<br />（神武天皇期）||[[宇佐氏]]（公）||豊前国東部||[[宇佐神宮]]社家
+| '''[[宇佐国造]]'''||Usa||[[宇佐都彦命]]<br />(reign of Emperor Jinmu)||[[宇佐氏]] (Kō)||Eastern Buzen Province||Shrine family of [[宇佐神宮]]
 |-
 | align="center" style="background:#E3E3FF" rowspan="3"| [[豊後国]]
-| '''[[国前国造]]'''||くにさき||午佐自命<br />（成務天皇期）||国前氏（臣）||豊後国北部||
+| '''[[国前国造]]'''||Kunisaki||Usajino-mikoto<br />(reign of Emperor Seimu)||Kunisaki clan (Omi)||Northern Bungo Province||
 |-
-| '''[[大分国造]]'''||おおいた<br />おおきだ||[[建弥阿久良命]]<br />（垂仁天皇期）||大分氏（君）||豊後国東部||
+| '''[[大分国造]]'''||Ōita / Ōkida||[[建弥阿久良命]]<br />(reign of Emperor Suinin)||Ōita clan (Kimi)||Eastern Bungo Province||
 |-
-| '''[[比多国造]]'''||ひた||止波足尼<br />（成務天皇期）||||豊後国西部||
+| '''[[比多国造]]'''||Hita||Tohasune<br />(reign of Emperor Seimu)||||Western Bungo Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="4"| [[肥前国]]
-| '''[[筑志米多国造]]'''||つくしのめた||[[都紀女加]]<br />（成務天皇期）||筑紫米多氏（君）||肥前国東部||
+| '''[[筑志米多国造]]'''||Tsukushi no Meta||[[都紀女加]]<br />(reign of Emperor Seimu)||Tsukushi Meta clan (Kimi)||Eastern Hizen Province||
 |-
-| '''[[松津国造]]'''||||金弓連<br />（仁徳天皇期）||||肥前国東部か||
+| '''[[松津国造]]'''||||Kanayumi no Muraji<br />(reign of Emperor Nintoku)||||Possibly eastern Hizen Province||
 |-
-| '''[[末羅国造]]'''||まつら||矢田稲吉<br />（成務天皇期）||松浦氏（直）||肥前国北部||
+| '''[[末羅国造]]'''||Matsura||Yata Inayoshi<br />(reign of Emperor Seimu)||Matsura clan (Atai)||Northern Hizen Province||
 |-
-| '''[[葛津国造]]'''<br />（葛津立国造）||ふじつ<br />（ふじつたち）||若彦命<br />（成務天皇期）||||肥前国西部||
+| '''[[葛津国造]]'''<br />(Fujitstachi Kokuzo)||Fujitsu / Fujitsutachi||Wakahikono-mikoto<br />(reign of Emperor Seimu)||||Western Hizen Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="4"| [[肥後国]]
-| '''[[阿蘇国造]]'''||あそ||速瓶玉命<br />（崇神天皇期）||[[阿蘇君|阿蘇氏]]（君）||肥後国北東部||一族の宇治氏は[[阿蘇神社]]社家
+| '''[[阿蘇国造]]'''||Aso||Hayamihotama-no-mikoto<br />(reign of Emperor Sujin)||[[阿蘇君|Aso clan]] (Kimi)||Northeastern Higo Province||The clan's Uji clan are shrine family of [[阿蘇神社]]
 |-
-| '''[[火国造]]'''||ひ||[[建緒組命]]<br />（崇神天皇期）||肥氏（君）||肥後国中部||
+| '''[[火国造]]'''||Hi||[[建緒組命]]<br />(reign of Emperor Sujin)||Hi clan (Kimi)||Central Higo Province||
 |-
-| '''[[葦北国造]]'''||あしきた||三井根子命<br />（景行天皇期）||葦北氏（君）（刑部靫部）||肥後国南部||
+| '''[[葦北国造]]'''||Ashikita||Miineko-no-mikoto<br />(reign of Emperor Keikō)||Ashikita clan (Kimi) (Osabe-Yugehabe)||Southern Higo Province||
 |-
-| '''[[天草国造]]'''||あまくさ||建島松命<br />（成務天皇期）||||肥後国天草||
+| '''[[天草国造]]'''||Amakusa||Takeshimamatsuno-mikoto<br />(reign of Emperor Seimu)||||Amakusa in Higo Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="1"| [[日向国]]
-| '''[[日向国造]]'''||ひゅうが||老男命<br />（応神天皇期）||諸県氏（君）||日向国||
+| '''[[日向国造]]'''||Hyūga||Okinano-mikoto<br />(reign of Emperor Ōjin)||Morokata clan (Kimi)||Hyūga Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[大隅国]]
-| '''[[大隅国造]]'''||おおすみ||伏布<br />（仁徳天皇期）||大住氏（直）||大隅国（種子島除く）||
+| '''[[大隅国造]]'''||Ōsumi||Fushinu<br />(reign of Emperor Nintoku)||Ōzumi clan (Atai)||Ōsumi Province (excl. Tanegashima)||
 |-
-| '''[[多褹島造]]'''||たね||（記載なし）||||大隅国（種子島）||
+| '''[[多褹島造]]'''||Tane||(not recorded)||||Ōsumi Province (Tanegashima)||
 |-
 | align="center" style="background:#E3E3FF"| [[薩摩国]]
-| '''[[薩摩国造]]'''||さつま||伊具足尼命<br />（仁徳天皇期）||薩摩氏（君）||薩摩国||
+| '''[[薩摩国造]]'''||Satsuma||Ikusokuno-mikoto<br />(reign of Emperor Nintoku)||Satsuma clan (Kimi)||Satsuma Province||
 |-
 | align="center" style="background:#E3E3FF"| [[壱岐国]]
-| '''[[壱岐国造]]'''<br />（伊吉島造）||いき||上毛布直<br />（[[継体天皇]]期）||[[壱岐氏]]（直・島造）||壱岐国||
+| '''[[壱岐国造]]'''<br />(Iki Shima-zukuri)||Iki||Kamiketabuno-atai<br />(reign of Emperor Keitai)||[[壱岐氏]] (Atai / Shima-zukuri)||Iki Province||
 |-
 | align="center" style="background:#E3E3FF" rowspan="2"| [[対馬国]]
-| '''[[上県国造]]'''||||建彌己己命<br />（神武天皇期）||津島県氏（直）||rowspan="2"|対馬島||rowspan="2"|
+| '''[[上県国造]]'''||||Takemikoki-no-mikoto<br />(reign of Emperor Jinmu)||Tsushima-Agata clan (Atai)||rowspan="2"|Tsushima Island||rowspan="2"|
 |-
-| '''[[下県国造]]'''||||（記載なし）||対馬下県氏（直）
+| '''[[下県国造]]'''||||(not recorded)||Tsushima-Shimo-Agata clan (Atai)
 |}
 {{-}}
 
-=== 大化後に設置された国造 ===
-{| class="wikitable" style="background:#ffffff;font-size:85%" align="left" 
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 令制国
-!style="background:#ccccff; white-space:nowrap" colspan="2" | 国造名
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 初代国造<br />（任命時期）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 氏族（括弧内は[[カバネ]]）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 支配領域
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 備考
+=== Kokuzo Established After the Taika Reform ===
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
 |-
-!style="background:#ccccff; white-space:nowrap" | 表記
-!style="background:#ccccff; white-space:nowrap" | 読み
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[畿内]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[畿内|Kinai (Home Provinces)]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[和泉国]]
-| '''[[和泉国造]]'''||いずみ||（霊亀元年）||不明||和泉国||河内国より分置した茅野監を国に改称。
+| '''[[和泉国造]]'''||Izumi||(Reiki 1)||Unknown||Izumi Province||Established by renaming the Kayano-kan, separated from Kawachi Province.
 |-
 | align="center" style="background:#E3E3FF"| [[摂津国]]
-| '''[[摂津国造]]'''||せっつ||（[[桓武天皇|桓武朝]]？）||凡河内氏（忌寸）||摂津国||
+| '''[[摂津国造]]'''||Settsu||(reign of Emperor Kanmu?)||Ōshikouchi clan (Imiki)||Settsu Province||
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[東山道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[陸奥国]]
-| '''[[陸奥国大国造]]'''||みちのく||[[道嶋嶋足]]<br />（神護景雲元年？）||[[道嶋氏]]（宿禰）||陸奥国||陸奥諸国造を統合して設置。
+| '''[[陸奥国大国造]]'''||Michinoku||(Jingo Keiun 1?)||[[道嶋氏]] (Sukune)||Mutsu Province||Established by consolidating the various Mutsu kokuzo.
 |-
 | align="center" style="background:#E3E3FF"| [[出羽国]]
-| '''[[出羽国造]]'''||でわ||（和銅五年）||不明||出羽国||陸奥国、越後国の二国に割いて設置。
+| '''[[出羽国造]]'''||Dewa||(Wadō 5)||Unknown||Dewa Province||Established by dividing parts of Mutsu Province and Echigo Province.
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[美作国]]
-| '''[[美作国造]]'''||みまさか||（和銅六年）||不明||美作国||備前国を割いて設置。
+| '''[[美作国造]]'''||Mimasaka||(Wadō 6)||Unknown||Mimasaka Province||Established by dividing from Bizen Province.
 |}
 {{-}}
 
-=== 不存在の国造一覧 ===
-以下の国造は神社の伝承や『諏訪史料』28巻中の『諏訪下社大祝武居祝系圖略』、偽書である『[[先代旧事本紀大成経]]』や『[[科野国造|阿蘇家略系図]]』、『修補諏訪氏系図.正編』、『諸系譜』などに見えるものの、いずれも信憑性が低く、その他史料での他見がないことから実際には存在しなかったと見られる国造である。
-{| class="wikitable" style="background:#ffffff;font-size:85%" align="left" 
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 令制国
-!style="background:#ccccff; white-space:nowrap" colspan="2" | 国造名
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 初代国造<br />（任命時期）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 氏族（括弧内は[[カバネ]]）
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 支配領域
-!style="background:#ccccff; white-space:nowrap" rowspan="2" | 備考
+=== List of Non-Existent Kokuzo ===
+The following kokuzo appear in shrine traditions and texts such as Volume 28 of the ''Suwa Shiryō'' (containing the "Suwa Shimosha Ōhōri Takei-nohafuri Lineage Chart Abbreviated"), and the apocryphal works ''[[先代旧事本紀大成経|Sendai Kuji Hongi Taiseikyo]]'', ''[[科野国造|Aso-ke Ryakukeizu]]'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu''; however, since their credibility is low and they cannot be corroborated in other historical sources, they are considered to have not actually existed.
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
 |-
-!style="background:#ccccff; white-space:nowrap" | 表記
-!style="background:#ccccff; white-space:nowrap" | 読み
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[東海道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[東海道|Tōkaidō]]'''
 |-
 | align="center" style="background:#E3E3FF" rowspan="1"| [[尾張国]]
-| '''[[嶋田国造]]'''<br />（尾張国嶋田国造）||しまだ||仲臣子上<br />（設置時期の記載なし）||嶋田氏？（臣）||尾張国南部||[[多氏]]の嶋田臣か。仲臣子上は丹羽県主の祖。
+| '''[[嶋田国造]]'''<br />(Owari-Shimada Kokuzo)||Shimada||Nakatomi Kokami<br />(establishment period not recorded)||Shimada clan? (Omi)||Southern Owari Province||Possibly the Shimada-omi branch of the [[多氏|Ta clan]]; Nakatomi Kokami is the progenitor of the Niwa District master.
 |-
 | align="center" style="background:#E3E3FF"| [[下総国]]
-| '''[[布佐国造]]'''||ふさ||[[天富命|天之富命]]<br />（神武天皇期）||忌部氏（首）||下総国西部||[[竹内神社]]社伝による。
+| '''[[布佐国造]]'''||Fusa||[[天富命|Ameno Tominoto]]<br />(reign of Emperor Jinmu)||Inbe clan (Obito)||Western Shimōsa Province||Based on tradition of [[竹内神社]].
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[東山道]]'''
-|-
-| align="center" style="background:#E3E3FF"| [[信濃国]]
-| '''[[伊奈国造]]'''||いな||速後上命<br />（設置時期の記載なし）||不明||信濃国南部||ただし科野国には[[科野国造]]設置の記載が他書に見える。速後上命は伊豫国造の祖。
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[信濃国]]
-| '''[[洲羽国造]]'''||すわ||[[建大臣命]]<br />[[神功皇后]]||不明||信濃国中部||『[[先代旧事本紀]]』国造本紀における諏訪への国造設置記事は[[那須国造]]の誤記であり、設置時期や始祖の建大臣命、設置の経緯などの具体的な情報は偽書である『[[先代旧事本紀大成経]]』や『阿蘇家略系図』、『修補諏訪氏系図.正編』、『諸系譜』などに由来するため、架空の国造であることが確実視されている<ref name="ReferenceA">間枝遼太郎「大祝本『神氏系図』・『阿蘇家略系譜』再考―再構成される諏訪の伝承―」（『国語国文研究』161号、2023年8月）</ref>。
+| '''[[伊奈国造]]'''||Ina||Hayaushikami-no-mikoto<br />(establishment period not recorded)||Unknown||Southern Shinano Province||Note: another source records the establishment of [[科野国造|Shinano Kokuzo]] for Shinano Province; Hayaushikami-no-mikoto is the progenitor of Iyo Kokuzo.
 |-
 | align="center" style="background:#E3E3FF"| [[信濃国]]
-| '''[[木蘇国造]]'''||きそ||弟武彦命<br />（設置時期の記載なし）||不明||信濃国南部||木蘇国造について記されているのは、偽書である『[[先代旧事本紀大成経]]』や『阿蘇家略系図』、『修補諏訪氏系図.正編』、『諸系譜』などのみであるため、架空の国造であることが確実視されている<ref name="ReferenceA"/>。
+| '''[[洲羽国造]]'''||Suwa||[[建大臣命]] / [[神功皇后|Empress Jingū]]||Unknown||Central Shinano Province||The kokuzo establishment record for Suwa in the ''[[先代旧事本紀|Sendai Kuji Hongi]]'' Kokuzo Hongi is a miswriting of [[那須国造|Nasu Kokuzo]]; the specific details (establishment period, founder Takenōomi-no-mikoto, establishment circumstances) derive from the apocryphal ''Sendai Kuji Hongi Taiseikyo'', ''Aso-ke Ryakukeizu'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu'', making this kokuzo almost certainly fictional.<ref name="ReferenceA">Maeda Ryōtarō, "Reconsideration of the Ōhōri's Kami Clan Genealogy and Aso Family Abbreviated Lineage: Reconstructing Suwa Traditions" (''Kokugokokugo Kenkyū'' No. 161, August 2023)</ref>
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道]]'''
+| align="center" style="background:#E3E3FF"| [[信濃国]]
+| '''[[木蘇国造]]'''||Kiso||Otohikono-mikoto<br />(establishment period not recorded)||Unknown||Southern Shinano Province||The Kiso Kokuzo appears only in apocryphal works such as the ''Sendai Kuji Hongi Taiseikyo'', ''Aso-ke Ryakukeizu'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu'', making it almost certainly fictional.<ref name="ReferenceA"/>
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道|Sanyōdō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[安芸国]]
-| '''[[沼田国造]]'''||ぬた||飽速玉命||筑紫氏||安芸国東部||[[沼田神社]]社家が沼田国造家と称している。飽速玉命は阿岐国造の祖。
+| '''[[沼田国造]]'''||Nuta||Ayahatadama-no-mikoto||Tsukushi clan||Eastern Aki Province||The Nuta Shrine family claims to be of the Nuta Kokuzo lineage; Ayahatadama-no-mikoto is the progenitor of Aki Kokuzo.
 |-
-|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道]]'''
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
 |-
 | align="center" style="background:#E3E3FF"| [[出雲国]]
-| '''[[須佐国造]]'''||すさ||盆成<br />（成務天皇朝）||須佐氏||出雲国南西部||[[須佐神社]]社家が須佐国造家と称している。
+| '''[[須佐国造]]'''||Susa||Bonsei<br />(reign of Emperor Seimu)||Susa clan||Southwestern Izumo Province||The [[須佐神社|Susa Shrine]] family claims to be of the Susa Kokuzo lineage.
 |}
 {{-}}
 
-== 大化以後も存続した国造 ==
-=== 主な新国造 ===
-* [[出雲国造|出雲国国造]]
-*:[[出雲大社]]の最高神職として、[[現人神]]のように信仰を集めた。[[南北朝時代 (日本)|南北朝時代]]に千家・北島に分裂したが、現在も出雲大社社家として存続。
-* [[紀伊国造|紀伊国国造]]
-*:[[日前神宮・国懸神宮]]社家。[[平安時代]]前期と[[江戸時代]]中期に後嗣を欠いたが、女系相続により家を維持した。現在は藤原姓。
+== Kokuzo that Survived After the Taika Reform ==
+=== Main New Kokuzo ===
+* [[出雲国造|Izumo no Kuni Kokuzo]] (Kizuki Kokuzo)
+*: As the supreme Shinto priest of [[出雲大社|Izumo Taisha]], they were revered almost like a living deity (''arahitogami''). During the [[南北朝時代 (日本)|Northern and Southern Courts period]], they split into the Senke and Kitajima branches, but they continue today as shrine families of Izumo Taisha.
+* [[紀伊国造|Ki no Kuni Kokuzo]]
+*: Shrine family of [[日前神宮・国懸神宮]]. The family line lapsed in the early [[平安時代|Heian period]] and mid-[[江戸時代|Edo period]], but was maintained through maternal succession. Currently uses the Fujiwara surname.
 
-==== 武家として系譜を伝えた国造家 ====
-* [[那須国造]]　藤原長家流を称しているが、国造家と姻戚関係を重ね後の那須氏となったという説がある。
+==== Kokuzo Clans that Transmitted Their Lineage as Warrior Families ====
+* [[那須国造|Nasu Kokuzo]] — Claims to be of Fujiwara Nagaie lineage, but some assert that they intermarried with the kokuzo family to become the later Nasu clan.
 
-==== 社家として系譜を伝えた国造家 ====
-* [[阿尺国造]]（安積国造）
-*:[[福島県]][[郡山市]]・安積（あさか）国造神社社家の安藤家。安積国造家の末裔として安積[[姓]]を名乗る。
-* [[石背国造]]
-* [[无邪志国造]]
-* [[伊豆国造]]
-* [[尾張国造]]
-*:[[熱田神宮]]の大宮司家
-* [[出雲国造|杵築国造]]
-* [[熊野国造]]　
-*:熊野大社の社家
-* [[科野国造]]　
-*:[[諏訪大社]]下社の大祝の[[金刺氏]]。後に諏訪氏との抗争に敗れて滅ぼされ、傍系の武居氏が務める。
-* [[斐陀国造]]
-* [[角鹿国造]]
-* [[穂国造]]
-*:[[砥鹿神社]]の社家
-* [[但島国造]]
-* [[丹波国造]]
-*:[[京都府]][[宮津市]]・[[籠神社]]社家の海部家。現宮司は第82代丹波国造を称する。[[海部氏系図]]は[[国宝]]になっている。
-* [[凡河内国造]]
-* [[賀陽国造]]
-* [[三野国造]]
-* [[億岐国造]]
-* [[宇佐国造]]
-*:[[宇佐神宮]]の社家
-* [[阿蘇国造]]
-*:[[阿蘇氏|宇治氏]]のち改め阿蘇氏。[[戦国時代 (日本)|戦国時代]]には[[阿蘇合戦]]で[[戦国大名]]としては滅亡したが、[[加藤清正]]により[[阿蘇惟種]]の遺児である[[阿蘇惟善|惟善]]が大宮司として復帰した。現在に至るまで大宮司家として存続している。
-* [[日向国造]]
-* [[因幡国造]]
-*:[[宇倍神社]]の[[神主]]であり因幡国造を称した[[伊福部氏]]は、実際には国造の[[因幡氏]]（因幡国造氏）から分かれた支流である。
+==== Kokuzo Clans that Transmitted Their Lineage as Shrine Families ====
+* [[阿尺国造|Asaka Kokuzo]] (Asaka Kokuzo)
+*: The Ando family, shrine family of [[安積国造神社|Asaka Kokuzo Shrine]] in Kōriyama City, Fukushima Prefecture. They claim descent from the Asaka Kokuzo clan and use the Asaka surname.
+* [[石背国造|Iwase Kokuzo]]
+* [[无邪志国造|Musashi Kokuzo]]
+* [[伊豆国造|Izu Kokuzo]]
+* [[尾張国造|Owari Kokuzo]]
+*: Head family of [[熱田神宮|Atsuta Jingū]]
+* [[出雲国造|Izumo Kokuzo]] (Kizuki Kokuzo)
+* [[熊野国造|Kumano Kokuzo]]
+*: Shrine family of Kumano Taisha
+* [[科野国造|Shinano Kokuzo]]
+*: The [[金刺氏|Kanasashi clan]], head priests (''Ōhōri'') of [[諏訪大社|Suwa Taisha]] (Lower Shrine). Later defeated in conflict with the Suwa clan and extinguished, with the collateral [[武居氏|Takei clan]] taking over.
+* [[斐陀国造|Hida Kokuzo]]
+* [[角鹿国造|Tsunuga Kokuzo]]
+* [[穂国造|Ho Kokuzo]]
+*: Shrine family of [[砥鹿神社|Tonoshiro Shrine]]
+* [[但島国造|Tajima Kokuzo]]
+* [[丹波国造|Tanba Kokuzo]]
+*: The [[海部氏|Amabe family]], shrine family of [[籠神社|Kono Shrine]] in Miyazu City, Kyoto Prefecture. The current high priest claims to be the 82nd Tanba Kokuzo. The [[海部氏系図|Amabe clan genealogy]] is a National Treasure.
+* [[凡河内国造|Ōshikouchi Kokuzo]]
+* [[賀陽国造|Kaya Kokuzo]]
+* [[三野国造|Mino Kokuzo]]
+* [[億岐国造|Oki Kokuzo]]
+* [[宇佐国造|Usa Kokuzo]]
+*: Shrine family of [[宇佐神宮|Usa Jingū]]
+* [[阿蘇国造|Aso Kokuzo]]
+*: The [[阿蘇氏|Uji clan]], later renamed Aso clan. As warlords during the [[戦国時代 (日本)|Sengoku period]], they were destroyed in the [[阿蘇合戦|Aso War]], but [[加藤清正|Kato Kiyomasa]] restored [[阿蘇惟種|Aso Koretane]]'s orphan [[阿蘇惟善|Koretomo]] as head priest. They continue to exist as the head priest family to this day.
+* [[日向国造|Hyūga Kokuzo]]
+* [[因幡国造|Inaba Kokuzo]]
+*: The [[伊福部氏|Ifukube clan]], who served as ''kannagi'' (ritual officiants) at [[宇倍神社|Ube Shrine]] and claimed the title Inaba Kokuzo, were actually a branch lineage that split off from the [[因幡氏|Inaba clan]] (Inaba Kokuzo clan), the true kokuzo.
 
-== 脚注 ==
+== Footnotes ==
 {{reflist}}
 
-== 参考文献 ==
-* 『國史大辭典』（吉川弘文館）国造項
-* 大川原竜一「大化以前の国造制の構造とその本質 <small>-記紀の「国造」表記と『隋書』「軍尼」の考察を通して-</small>」（『歴史学研究』829号、2007年）
-* [[篠川賢]]・大川原竜一・[[鈴木正信]]共編著『国造制の研究―史料編・論考編―』（八木書店、2013年）
-* [[篠川賢]]『国造―大和政権と地方豪族』（中央公論新社、2021年）
-* 間枝遼太郎「大祝本『神氏系図』・『阿蘇家略系譜』再考―再構成される諏訪の伝承―」（『国語国文研究』161号、2023年8月）
-* 鈴木正信『日本古代の国造と地域支配』（八木書店、2023年）
+== References ==
+* Kokuzo entry in ''Kokushi Daijiten'' (Yoshikawa Kōbunkan)
+* Ōkawara Ryūichi, "The Structure and Essence of the Kokuzo System Before the Taika Reform: Through an Examination of 'Kokuzo' Notation in the Kiki and 'Gunni' in the ''Suishu''," (''Historical Studies'' No. 829, 2007)
+* [[篠川賢|Shinokawa Ken]], Ōkawara Ryūichi, [[鈴木正信|Suzuki Masanobu]] (eds.), ''Research on the Kokuzo System: Sources and Studies'' (Yagi Shoten, 2013)
+* [[篠川賢|Shinokawa Ken]], ''Kokuzo: The Yamato Government and Local Clans'' (Chūō Kōron Shinsha, 2021)
+* Maeda Ryōtarō, "Reconsideration of the Ōhōri's Kami Clan Genealogy and Aso Family Abbreviated Lineage: Reconstructing Suwa Traditions" (''Kokugokokugo Kenkyū'' No. 161, August 2023)
+* [[鈴木正信|Suzuki Masanobu]], ''Kokuzo and Regional Rule in Ancient Japan'' (Yagi Shoten, 2023)
 
-== 関連項目 ==
-* [[カバネ|カバネ（姓）]]
-* [[氏姓制度]]
-* [[筑紫君磐井]]
-* [[国造本紀]]
-* [[国造軍]]
-* [[県主]]
-* [[県主の一覧]]
+== Related Articles ==
+* [[カバネ|Kabane (clan surname)]]
+* [[氏姓制度|Ujikabane system]]
+* [[筑紫君磐井|Tsukushi no Kimi Iwai]]
+* [[国造本紀|Kokuzo Hongi]]
+* [[国造軍|Kokuzo-gun (kokuzo military)]]
+* [[県主|Agata-nushi]]
+* [[県主の一覧|List of agata-nushi]]
 
 {{Japanese-history-stub}}
 
 {{カバネ}}
 {{Normdaten}}
 {{wikidata link|Q2483673|ja|国造|en|Kuni no miyatsuko|es|Kuni no miyatsuko|ff|Kuni no miyatsuko|it|Kuni no miyatsuko|ko|국조 (일본)|simple|Kuni no miyatsuko|vi|Kuni no miyatsuko|zh|國造|grok=none|check_date=2026-05-27}}
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
-[[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Pages with 750+ untranslated japanese characters]]
-[[Category:Pages with 1000+ untranslated japanese characters]]
-[[Category:Pages with 1500+ untranslated japanese characters]]
-[[Category:Pages with 2000+ untranslated japanese characters]]
-[[Category:Pages with 3000+ untranslated japanese characters]]
-[[Category:神道の称号・役職]]
-[[Category:古墳時代]]
-[[Category:飛鳥時代]]
 [[Category:Kuni no miyatsuko]]
-[[Category:Need translation]]
-[[Category:Need translation]]
+[[Category:Shinto titles and roles]]
+[[Category:Kofun period]]
+[[Category:Asuka period]]
