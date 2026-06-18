@@ -1,9 +1,15 @@
 name: fandom-cleanup-loop
 
 # General fandom cleanup loop — sits between the miraheze cleanup loop
-# and the mainspace orchestrator. Currently does ONE thing: drains the
-# first 500 entries of [[Special:WantedFiles]] on shinto.fandom.com by
-# importing them from Wikimedia Commons (when available) with attribution.
+# and the mainspace orchestrator. Does two things per fire:
+#   1. Drains the first 500 entries of [[Special:WantedFiles]] on
+#      shinto.fandom.com by importing them from Wikimedia Commons (when
+#      available) with attribution.
+#   2. Runs the fandom subset orchestrator: an all-namespace sweep
+#      (except File:/MediaWiki:) that deletes Fandom pages with no
+#      miraheze equivalent and copies the Shinto redirect onto a Fandom
+#      page that is still real content where Shinto has since redirected.
+#      See fandom/fandom_subset_orchestrator.py.
 #
 # Bounded per run by design: we never iterate the whole wanted-files
 # list. The wiki regenerates the list every few days, so successive
@@ -28,6 +34,10 @@ on:
         description: "Optional cap on successful uploads per run (0 = unbounded within max_edits)"
         type: string
         default: "0"
+      subset_max_edits:
+        description: "Per-run cap on fandom subset orchestrator WRITES (deletes + copy-overs)"
+        type: string
+        default: "100"
 
 permissions:
   contents: write
@@ -46,6 +56,7 @@ jobs:
       FANDOM_PASSWORD: ${{ secrets.FANDOM_PASSWORD }}
       MAX_EDITS: ${{ inputs.max_edits || '500' }}
       MAX_UPLOADS: ${{ inputs.max_uploads || '0' }}
+      SUBSET_MAX_EDITS: ${{ inputs.subset_max_edits || '100' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -92,6 +103,14 @@ jobs:
             --apply \
             --max-edits "${MAX_EDITS}" \
             ${MAX_UPLOADS_FLAG} \
+            --run-tag "${RUN_TAG}"
+
+      - name: Fandom subset orchestrator (delete / copy-over vs miraheze)
+        if: always()
+        run: |
+          python3 fandom/fandom_subset_orchestrator.py \
+            --apply \
+            --max-edits "${SUBSET_MAX_EDITS}" \
             --run-tag "${RUN_TAG}"
 
       - name: Commit state
