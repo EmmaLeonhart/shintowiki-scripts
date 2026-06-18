@@ -22,10 +22,11 @@
 * {{ill|Sarume clan|ja|猿女君|12=simple|13=User:Immanuelle/Sarume clan|12=simple|13=User:Immanuelle/Sarume clan}}
 }}<noinclude>
 
-[[en:Template:Sarutahiko Faith]]{{wikidata link|Q124107341}}
+[[en:Template:Sarutahiko Faith]]{{wikidata link|Q124107341|en|Template:Sarutahiko Faith|fr|Modèle:Palette Foi Tsubaki|simple|Template:Sarutahiko Faith|check_date=2026-06-18}}
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

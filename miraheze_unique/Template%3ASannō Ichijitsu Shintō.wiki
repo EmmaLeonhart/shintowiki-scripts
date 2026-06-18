@@ -46,11 +46,12 @@
 }}
 }}
 <noinclude>
-[[en:Sannō Ichijitsu Shintō]][[en:Template:Sannō Ichijitsu Shintō]]{{wikidata link|Q125475302}}
+[[en:Sannō Ichijitsu Shintō]][[en:Template:Sannō Ichijitsu Shintō]]{{wikidata link|Q125475302|en|Template:Sannō Ichijitsu Shintō|fr|Modèle:Palette Sannō Ichijitsu Shintō|check_date=2026-06-18}}
 [[Category:Sannō Ichijitsu Shintō]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
