@@ -96,6 +96,16 @@ HARD_EXCLUDES = {"Main Page"}
 
 FANDOM_DIR = REPO_ROOT / "fandom_unique"
 STATE_FILE = SCRIPT_DIR / "fandom_subset_orchestrator.state"
+ERRORS_FILE = SCRIPT_DIR / "fandom_subset_orchestrator.errors"
+
+# API error codes that mean "the bot is not allowed to delete" rather
+# than a transient/per-page problem. If we see these, the bot password
+# almost certainly lacks the "Delete pages" grant (the account itself
+# IS a sysop, confirmed 2026-06-18). We record them to a committed
+# .errors file so the blocker is durable in git rather than lost in a
+# CI log — there is no automatic path from a CI script to
+# [[Open questions]].
+PERMISSION_DENIED_CODES = {"permissiondenied", "cantdelete", "protectedpage"}
 
 USER_AGENT = (
     "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
@@ -317,6 +327,7 @@ def main() -> int:
     walk_order = ns_list[start_idx:]
 
     writes = checked = deleted = copied = skipped = errors = 0
+    perm_denied = []  # [(title, code)] — bot lacks the delete grant
     completed_walk = True  # cleared if we stop early on the write cap
 
     for i, ns in enumerate(walk_order):
@@ -380,6 +391,9 @@ def main() -> int:
                             writes += 1
                             time.sleep(THROTTLE)
                         except Exception as ex:
+                            code = getattr(ex, "code", "") or ""
+                            if code in PERMISSION_DENIED_CODES:
+                                perm_denied.append((title, code))
                             print(f"  ERROR {action} {title}: {ex}")
                             errors += 1
 
@@ -390,6 +404,7 @@ def main() -> int:
                         completed_walk = False
                         print(f"\nReached max-edits ({args.max_edits}); "
                               f"saved cursor ns={ns} from={title!r}.")
+                        _write_errors_file(perm_denied)
                         _summary(args, checked, deleted, copied, skipped, errors, writes)
                         return 0
 
@@ -405,8 +420,44 @@ def main() -> int:
         save_state({"ns": ns_list[0] if ns_list else 0, "from_title": ""})
         print("\nCompleted full sweep; cursor wrapped to start.")
 
+    _write_errors_file(perm_denied)
     _summary(args, checked, deleted, copied, skipped, errors, writes)
     return 0
+
+
+def _write_errors_file(perm_denied):
+    """Write/clear the committed .errors file for permission-denied deletes.
+
+    Non-empty → the bot password lacks the 'Delete pages' grant; record a
+    durable, git-committed note (commit_state.sh globs *.errors). Empty →
+    remove any stale file from a previous run so a fixed grant clears it.
+    """
+    if not perm_denied:
+        try:
+            ERRORS_FILE.unlink()
+        except FileNotFoundError:
+            pass
+        return
+    sample = perm_denied[:10]
+    lines = [
+        "fandom_subset_orchestrator: DELETE PERMISSION DENIED.",
+        "",
+        f"{len(perm_denied)} delete(s) were rejected with a permission "
+        "error code.",
+        "The 'Their Eminence' account IS a sysop, so this means the BOT "
+        "PASSWORD used in CI (FANDOM_PASSWORD) was created without the "
+        "'Delete pages' grant.",
+        "",
+        "ACTION (Emma): edit the bot password at "
+        "https://shinto.fandom.com/wiki/Special:BotPasswords and enable "
+        "the 'Delete pages' grant, then re-save the FANDOM_PASSWORD secret.",
+        "",
+        "Sample rejected titles (code):",
+    ]
+    lines += [f"  - {t}  ({code})" for t, code in sample]
+    ERRORS_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"\n!! Wrote {ERRORS_FILE.name}: {len(perm_denied)} delete(s) "
+          f"denied — bot password likely lacks the Delete grant.")
 
 
 def _summary(args, checked, deleted, copied, skipped, errors, writes):
