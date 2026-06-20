@@ -1,0 +1,48 @@
+{{Navbox
+| name  = Izumo-taishakyo
+| title = [[Izumo-taishakyo]]
+| listclass = hlist
+| image = [[File:Izumo-taisha14bs4592.jpg|150px|link=|alt=]]
+ |group1 = Main Deities
+ |list1 =
+* [[Ōkuninushi]]
+* [[Ame no Hohi]]
+* [[Susanoo-no-Mikoto]]
+
+ |group2 = Lesser deities
+ |list2 =
+* {{ill|Takehi-Nateru|ja|建比良鳥命|1=Takehi-Nateru|zh|建比良鳥命|1=Takehi-Nateru|fr|12=simple|13=User:Immanuelle/Takehi-Nateru|13=User:Immanuelle/Takehi-Nateru|12=simple|13=User:Immanuelle/Takehi-Nateru|13=User:Immanuelle/Takehi-Nateru}}
+
+ |group3 = Shrines
+ |list3 =
+* [[Izumo-taisha]]
+* [[Hinomisaki Shrine]]
+* [[Izumo Taishakyo Mission of Hawaii]]
+* {{ill|Izumo Taisha Matsuyama Shrine|ja|出雲大社松山分祠|12=simple|13=User:Immanuelle/Izumo Taisha Matsuyama Shrine|12=simple|13=User:Immanuelle/Izumo Taisha Matsuyama Shrine}}
+* {{ill|Izumo Taisha Okinawa Branch|ja|出雲大社沖縄分社|12=simple|13=User:Immanuelle/Izumo Taisha Okinawa Branch|12=simple|13=User:Immanuelle/Izumo Taisha Okinawa Branch}}
+
+|group4 = People
+|list4 =
+* [[Izumo clan]]
+* [[Senge Takatomi]]
+* [[Senge Motomaro]]
+* [[Noriko Senge]]
+
+|group5 = Misc
+|list5=
+* [[Taisha-zukuri]]
+* [[:en:Izumo Province|Izumo Province]]
+* [[Haji clan]] (relatives of the Izumo clan)
+* [[Reisai]]
+|group7= Other shrines of Okuninushi
+|list7=
+* [[Ōgamiyama Shrine]]
+}}<noinclude>
+
+[[en:Template:Izumo-taishakyo]]{{wikidata link|Q125475718}}
+[[Category:Izumo Grand Shrine]]
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates fixed with noinclude]]
+</noinclude>
