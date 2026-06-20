@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-19
+
+### Verified last changes + closed weekly Open-questions sweep
+**Files:** `queue.md`, `DEVLOG.md`.
+
+- Confirmed the recent fandom subset-orchestrator work shipped clean: CI is
+  green across the scheduled syncs (`Independent Pages Sync`, `Git Synced Sync`
+  all succeeding); the `feat(fandom)` all-namespace subset orchestrator +
+  durable `.errors`-on-delete-denial commits are healthy.
+- Ran the weekly `[[Open questions]]` sweep: `git_synced/Open questions.wiki`
+  (synced from the live wiki within the hour) holds **no actionable items or
+  Emma dispositions** — only the boilerplate how-to/Notes/sync-policy sections.
+  Nothing to decompose or act on, so removed the auto-added `weekly-oq-sweep`
+  block from `queue.md` per its own instructions. Pinned cron tail retained.
+
 ## 2026-06-08
 
 ### Clear the three Emma-gated items (self-audit signed off, qqqqq dropped, one-offs deleted)
