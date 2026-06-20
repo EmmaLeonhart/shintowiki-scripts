@@ -68,7 +68,6 @@
 {{translated page|ja|Template:旧府県社|version=84560096|comment=Imported full ja history}}
 
 [[Category:{{{TopCat|{{{1}}}の{{{4}}}}}}|{{{5}}}]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Templates missing wikidata]]
 </noinclude>

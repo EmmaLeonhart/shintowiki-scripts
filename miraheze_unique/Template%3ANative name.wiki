@@ -1,5 +1,4 @@
 <includeonly>{{#invoke:native name|native_name}}</includeonly><noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
-[[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 [[Category:Templates missing wikidata]]
 [[Category:Independently git synced pages]]
