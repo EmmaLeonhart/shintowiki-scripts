@@ -1,6 +1,3 @@
-<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:Independently git synced pages]]
-<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
 [[Category:Independently git synced pages]]
 
 '''Ichikishima Shrine''' (市杵島神社) or '''Ichikishima-hime Shrine''' (市杵島姫神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}
@@ -9,40 +6,7 @@ dedicated to {{ill|Ichikishima-hime|ja|市杵島姫神|12=simple|13=User:Immanue
 
 According to the myth associated with the descent of the heavenly grandson ({{ill|Tenson kōrin|en|Tenson kōrin|qid=Q1084733|lt=Tenson Kōrin|1=Tenson kōrin}}), the three goddesses safeguarded Ninigi-no-Mikoto, leading to their veneration as protectors of children and their dedication in child-related shrines.
 
-== Shrines Dedicated to Ichikishima-hime ==
-
-* {{ill|Bentenjima (Nemuro)|ja|市杵島神社 (根室市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Nemuro)|ja_comment=jawiki redirects to 弁天島 (根室市)}} - [[Nemuro City]], [[:en:Hokkaidō|Hokkaidō]] (Benten Island)
-* {{ill|Ichikishima Shrine (Yūki)|ja|市杵島神社 (結城市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Yūki)|ja_comment=jawiki link invalid|qid=Q135579171|1=Ichikishima Shrine (Yūki)}} - [[Yūki City]], {{ill|Ibaraki Prefecture|en|Ibaraki Prefecture|qid=Q83273|lt=Ibaraki Prefecture|1=Ibaraki Prefecture}}
-* {{ill|Ichikishima Shrine (Maebashi)|ja|市杵嶋神社 (前橋市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Maebashi)|ja_comment=jawiki link invalid|qid=Q135579174|1=Ichikishima Shrine (Maebashi)}} - [[Maebashi City]], {{ill|Gunma Prefecture|en|Gunma Prefecture|qid=Q129499|lt=Gunma Prefecture|1=Gunma Prefecture}}
-* {{ill|Ichikishima Shrine (Inzai)|ja|市杵島神社 (印西市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Inzai)|ja_comment=jawiki link invalid|qid=Q135579175|1=Ichikishima Shrine (Inzai)}} - [[Inzai City]], {{ill|Chiba Prefecture|en|Chiba Prefecture|qid=Q80011|lt=Chiba Prefecture|1=Chiba Prefecture}}
-* {{ill|Ichikishima Shrine (Suginami)|ja|市杵嶋神社 (杉並区)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Suginami)}} - [[:en:Suginami City|Suginami City]], {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}} (Zempukuji)
-* Ichikishima Shrine (Nerima) - [[:en:Nerima City|Nerima City]], {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}
-* {{ill|Ichikishima Shrine (Kita)|ja|市杵島神社 (北区)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Kita)|ja_comment=jawiki link invalid|qid=Q135579176|1=Ichikishima Shrine (Kita)}} - [[Kita City]], {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}
-* {{ill|Ichikishima Shrine (Koganei)|ja|市杵島神社 (小金井市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Koganei)|ja_comment=jawiki link invalid|qid=Q135579177|1=Ichikishima Shrine (Koganei)}} - [[Koganei City]], {{ill|Tokyo|en|Tokyo|qid=Q1490|lt=Tokyo|1=Tokyo}}
-* {{ill|Ichikishima Shrine (Fujiyoshida)|ja|市杵島神社 (富士吉田市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Fujiyoshida)|ja_comment=jawiki link invalid|qid=Q135579178|1=Ichikishima Shrine (Fujiyoshida)}} - [[Fujiyoshida City]], {{ill|Yamanashi Prefecture|en|Yamanashi Prefecture|qid=Q132720|lt=Yamanashi Prefecture|1=Yamanashi Prefecture}}
-* {{ill|Ichikishima Shrine (Handa)|ja|市杵嶋神社 (半田市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Handa)|ja_comment=jawiki link invalid|qid=Q135579179|1=Ichikishima Shrine (Handa)}} - [[:en:Handa City|Handa City]], {{ill|Aichi Prefecture|en|Aichi Prefecture|qid=Q80434|lt=Aichi Prefecture|1=Aichi Prefecture}}
-* {{ill|Ichikishima-hime Shrine (Tsu)|ja|市杵島姫神社 (津市)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Tsu)|ja_comment=jawiki link invalid|qid=Q135579180|1=Ichikishima-hime Shrine (Tsu)}} - [[:en:Tsu City|Tsu City]], {{ill|Mie Prefecture|en|Mie Prefecture|qid=Q128196|lt=Mie Prefecture|1=Mie Prefecture}}
-* {{ill|Ichikishima Shrine (Takashima)|ja|市杵嶋神社 (高島市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Takashima)|ja_comment=jawiki link invalid|qid=Q135579181|1=Ichikishima Shrine (Takashima)}} - [[Takashima City]], {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}}
-* {{ill|Ichikishima Shrine (Inukami District)|ja|市杵嶋神社 (犬神郡)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Inukami District)|ja_comment=jawiki link invalid|qid=Q135579182|1=Ichikishima Shrine (Inukami District)}} - [[Inukami District]], {{ill|Shiga Prefecture|en|Shiga Prefecture|qid=Q131358|lt=Shiga Prefecture|1=Shiga Prefecture}} ([[Taga Town]])
-* {{ill|Ichikishima Shrine (Moriguchi)|ja|市杵島神社 (守口市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Moriguchi)|ja_comment=jawiki link invalid|qid=Q135579183|1=Ichikishima Shrine (Moriguchi)}} - [[Moriguchi City]], {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture|1=Osaka Prefecture}}
-* {{ill|Ichikishima-hime Shrine (Takarazuka)|ja|市杵島姫神社 (宝塚市)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Takarazuka)|ja_comment=jawiki link invalid|qid=Q135579184|1=Ichikishima-hime Shrine (Takarazuka)}} - [[:en:Takarazuka City|Takarazuka City]], {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}
-* Ichikishima-hime Shrine - {{ill|Shiki District|en|Shiki District|qid=Q7496587|lt=Shiki District|1=Shiki District}}, {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}} ([[Tawaramoto Town]])
-* {{ill|Ichikishima Shrine (Kashihara)|ja|市杵島神社 (橿原市)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Kashihara)|ja_comment=jawiki link invalid|qid=Q135579185|1=Ichikishima Shrine (Kashihara)}} - [[Kashihara City]], {{ill|Nara Prefecture|en|Nara Prefecture|qid=Q131287|lt=Nara Prefecture|1=Nara Prefecture}}
-* {{ill|Ichikishima-hime Shrine (Naruto Muya)|ja|市杵島姫神社 (鳴門市)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Muya)}} - [[Naruto City]], {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}} ([[Muya Town Benten]])
-* {{ill|Ichikishima-hime Shrine (Naruto Minamihama)|ja|市杵島姫神社 (鳴門市撫養町南浜)|12=simple|13=User:Immanuelle/Ichikishima-hime Shrine (Naruto Minamihama)}} - [[Naruto City]], {{ill|Tokushima Prefecture|en|Tokushima Prefecture|qid=Q160734|lt=Tokushima Prefecture|1=Tokushima Prefecture}} ([[Muya Town Minamihama]])
-* {{ill|Ichikishima Shrine (Kadogawa)|ja|市杵島神社 (門川町)|12=simple|13=User:Immanuelle/Ichikishima Shrine (Kadogawa)|ja_comment=jawiki link invalid|qid=Q135579186|1=Ichikishima Shrine (Kadogawa)}} - [[Kadogawa Town]], [[:en:Higashiusuki District|Higashiusuki District]], {{ill|Miyazaki Prefecture|en|Miyazaki Prefecture|qid=Q130300|lt=Miyazaki Prefecture|1=Miyazaki Prefecture}}
-
-== Related Articles ==
-
-* {{ill|Munakata Taisha|en|Munakata Taisha|qid=Q704962|lt=Munakata Taisha|1=Munakata Taisha}}
-* {{ill|Munakata Shrines|ja|宗像神社|12=simple|13=User:Immanuelle/Munakata Shrines}}
-* {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine|1=Itsukushima Shrine}}
-* {{ill|Itsukushima Shrine (disambiguation)|ja|厳島神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Itsukushima Shrine (disambiguation)|1=Itsukushima Shrines (disambiguation)|comment=changed title based on wikidata|qid=Q11410137}}
-* {{ill|Honji suijaku|en|Honji suijaku|qid=Q3080781|lt=Honji Suijaku|1=Honji suijaku}}
-
 {{disambiguation}}
-
-{{Munakata Faith}}
 
 <!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
@@ -56,6 +20,8 @@ According to the myth associated with the descent of the heavenly grandson ({{il
 * {{ill|市杵島神社 (Q135156034)|lt=市杵島神社|qid=Q135156034}} — Kamisu
 * {{ill|市杵島神社 (Q135425170)|lt=市杵島神社|qid=Q135425170}} — Maebashi
 <!-- END: auto-generated Wikidata shrine list -->
+
+{{Munakata Faith}}
 
 {{translated page|ja|市杵島神社|version=103492686|comment=Imported full ja history}}
 

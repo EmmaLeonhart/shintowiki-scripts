@@ -33,6 +33,7 @@
 
 }}
 
+<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Koiwata Tenso Shrine (Q106852625)|lt=Koiwata Tenso Shrine|qid=Q106852625}} — Kita-Koiwa
@@ -57,6 +58,7 @@
 * {{ill|Tenso Shrine (Q97209891)|lt=Tenso Shrine|qid=Q97209891}} — Itabashi
 * {{ill|Tenso Shrine (Q97376108)|ja|天祖神社 (東京都港区)|qid=Q97376108|lt=Tenso Shrine}} — Roppongi
 * {{ill|Tenso Shrine (Itabashi-ku) (Q97209904)|lt=Tenso Shrine (Itabashi-ku)|qid=Q97209904}} — Itabashi
+<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|神明神社|version=105512749|comment=Imported full ja history}}
 {{wikidata link|Q109328988|de|Tenso Schrein|en|Tenso Shrine|check_date=2026-05-26}}
