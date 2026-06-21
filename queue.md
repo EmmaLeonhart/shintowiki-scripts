@@ -22,7 +22,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ## STAGE A — the 4-stage English-label generator (do in order; each stage only handles what earlier stages left)
 
-- [ ] **A3. Stage 3 — non-CJK transliteration fallback. [INVESTIGATED — parked pending Emma, see [[Open questions]].]** Live check 2026-06-21: of the 2737 Stage-3-eligible shrines (no `en`, no kana, no A2 match), only **2 have any non-CJK label** (3 labels: "Santuario Nishizaka" it, "Masugataten-Schrein" de, "Masugata-tenjin-sha" romanized). All are shrine-word-first or hyphenated, so the literal "drop the second word → Shrine" rule mislabels them ("Santuario Shrine"). They already route to Stage 4 (LLM), which labels them correctly. Not building a generator that fires on ~2 shrines and would emit wrong labels — escalated for Emma to confirm the no-op/route-to-LLM default or specify handling. Do NOT silently build this.
 - [ ] **A5. Wire the four stages into one ordered run** so each stage's worklist excludes shrines already handled by an earlier stage, and the daily submitter draws from all of them. (A4 already enforces the LLM↔earlier-stage disjointness; this item is to verify/document the end-to-end ordering and confirm no double-emission across all atomic files.)
 
 ## STAGE B — downstream language generators seeded from the English label

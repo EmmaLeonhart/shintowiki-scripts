@@ -91,6 +91,9 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   worse than data loss"). Parked A3 and posted a precise question to
   [[Open questions]] with the proposed default (no-op / route to LLM). No labels
   lost — the affected shrines continue to flow to the LLM as today.
+- **Resolved same day:** Emma answered "just drop this one". Stage 3 dropped;
+  removed A3 from the queue and the resolved bullet from [[Open questions]]. The
+  pipeline is now Stage 0 (wiki-title) → 1 (kana) → 2 (identical-name) → 4 (LLM).
 
 ### A4 — narrow the LLM (Stage 4) to the true residual
 **Files:** `modern-quickstatements/select_shrines_to_translate.py`,
