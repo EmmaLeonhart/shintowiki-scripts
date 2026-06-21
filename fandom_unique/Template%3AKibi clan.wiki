@@ -6,12 +6,12 @@
  |group1 = Main Deities
  |list1 =
 * [[Kibitsuhiko-no-mikoto]]
-* {{ill|Wakatakehiko|ja|稚武彦命|12=simple|13=User:Immanuelle/Wakatakehiko|12=simple|13=User:Immanuelle/Wakatakehiko|qq=}}
+* [[Wakatakehiko]]
  |group2 = Shrines
  |list2 =
 * [[Kibitsu Shrine (Bitchū)]]
 * [[Kibitsu Shrine (Bingo)]]
-* {{ill|Kibitsu Shrine (Tokushima)|ja|吉備津神社 (徳島市)|12=simple|13=User:Immanuelle/Kibitsu Shrine (Tokushima)|12=simple|13=User:Immanuelle/Kibitsu Shrine (Tokushima)|qq=}}
+* [[Kibitsu Shrine (Tokushima)]]
 * [[Kibitsuhiko Shrine]]
 |group4 = People
 |list4=
@@ -26,11 +26,10 @@
 * [[:en:Prince Hoshikawa Rebellion|Prince Hoshikawa Rebellion]]
 
 }}<noinclude>
-[[en:Template:Kibi clan]]{{wikidata link|Q125506241}}
+[[en:Template:Kibi clan]]
 [[Category:Kibi clan]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 </noinclude>
