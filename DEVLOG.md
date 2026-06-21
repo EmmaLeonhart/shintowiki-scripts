@@ -52,6 +52,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   from the LLM. Logged the remaining overlap (the LLM selector still draws kana
   items) as the explicit fix for A4.
 
+### A2 — Stage 2 identical-Japanese-name reuse generator (built, TDD)
+**Files:** `modern-quickstatements/reuse_labels.py`,
+`generate_identical_name_en_labels.py`, `tests/test_reuse_labels.py`,
+`tests/test_generate_identical_name_en_labels.py`, `submit_daily_batch.py`,
+`.github/workflows/generate-shrines-missing-en-label.yml`,
+`docs/english_label_pipeline.md`.
+
+- `reuse_labels.choose_label(candidates, qid)`: pure rule logic — dominant
+  same-ja-name en reading wins; alias only when exactly one other distinct
+  reading; ties broken by per-QID-deterministic random (stable, no daily churn).
+- `generate_identical_name_en_labels.py`: SPARQL design driven by smoke-testing.
+  A self-join on identical ja-label strings took 32s for 60 rows (would time
+  out at scale); a GET `VALUES` query 431'd (header too large). Settled on
+  **POST batched `VALUES ?ja {…}`** (~1s per 150 labels) against the worklist's
+  no-kana subset. Normalizes trailing parenthetical disambiguators
+  ("Maruyama Shrine (Oita)"→"Maruyama Shrine") so a location-specific label is
+  never reused verbatim.
+- Live run on the 2026-06-21 worklist: **1881/4618** no-kana targets got a
+  reused label (+440 aliases); 0 malformed; **0 QID overlap with Stage 1**.
+  Stages 1+2 together now cover **2305/5060** en-less shrines deterministically,
+  offloaded from the 5/day LLM. Wired `identical_name_en_labels.txt` into
+  `ATOMIC_FILES` + the daily worklist workflow. 46 tests pass.
+- Updated A4's note: the LLM selector must also skip QIDs already in the Stage 1/2
+  output files (currently only dedups against `en_labels_sonnet.txt`).
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

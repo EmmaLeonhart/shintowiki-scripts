@@ -51,7 +51,7 @@ throttle is spent on shrines that need no LLM at all.
 |---|---|---|---|
 | **0** | Shrine has a shintowiki article | Title = label (lookup) | EXISTS (Source 1), keep |
 | **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine, daijingu→Daijingu). NOT pykakasi/Indonesian. | **DONE — `kana_english.py` + `generate_kana_en_labels.py`** |
-| **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **MISSING — A2** |
+| **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **DONE — `reuse_labels.py` + `generate_identical_name_en_labels.py`** |
 | **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **MISSING — A3** |
 | **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | EXISTS (Source 2), but must be **narrowed to the residual — A4/A5** |
 
@@ -68,7 +68,24 @@ throttle is spent on shrines that need no LLM at all.
   ~8 irregular/unromanizable readings). Tests: `tests/test_kana_english.py`,
   `tests/test_generate_kana_en_labels.py`.
 
-## Implementation notes for A2–A5
+## Stage 2 as built (A2, 2026-06-21)
+- `modern-quickstatements/reuse_labels.py` — `choose_label(candidates, qid)`:
+  pure rule logic. Dominant reading wins; alias only when exactly one other
+  distinct reading; ties broken by a per-QID-deterministic random pick (stable
+  across daily runs, no label churn).
+- `modern-quickstatements/generate_identical_name_en_labels.py` — for the
+  no-kana subset of the worklist, POSTs batched `VALUES ?ja {…}` queries (a
+  self-join times out; GET 431s on large bodies — POST ~1s/150 labels) to fetch
+  same-ja-name shrines' en labels, normalizes out trailing parenthetical
+  disambiguators ("Maruyama Shrine (Oita)"→"Maruyama Shrine"), and emits
+  `Len`/`Aen` to `identical_name_en_labels.txt` (in `ATOMIC_FILES`).
+- Live run on the 2026-06-21 worklist: **1881/4618** no-kana targets got a
+  reused label (+440 aliases), 0 malformed, **0 QID overlap with Stage 1**.
+  Tests: `tests/test_reuse_labels.py`, `tests/test_generate_identical_name_en_labels.py`.
+- Stages 1+2 together now deterministically handle **2305 / 5060** en-less
+  shrines, all offloaded from the 5/day LLM.
+
+## Implementation notes for A3–A5
 - **A4/A5** change `select_shrines_to_translate.py` (or the worklist generator)
   so the LLM only draws shrines NOT handled by Stages 1–3 — i.e. exclude
   kana-bearing items (now A1's job) and identical-name-resolvable items (A2).
