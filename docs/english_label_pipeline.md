@@ -53,7 +53,7 @@ throttle is spent on shrines that need no LLM at all.
 | **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine, daijingu→Daijingu). NOT pykakasi/Indonesian. | **DONE — `kana_english.py` + `generate_kana_en_labels.py`** |
 | **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **DONE — `reuse_labels.py` + `generate_identical_name_en_labels.py`** |
 | **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **PARKED — only 2 such shrines exist & all irregular; escalated (see Open questions)** |
-| **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | EXISTS (Source 2), but must be **narrowed to the residual — A4/A5** |
+| **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | **DONE (A4)** — `select_shrines_to_translate.py` now excludes every QID already in `en_labels.txt` / `kana_en_labels.txt` / `identical_name_en_labels.txt` / `en_labels_sonnet.txt`; residual 5060→2688 |
 
 ## Stage 1 as built (A1, 2026-06-21)
 - `modern-quickstatements/kana_english.py` — `label_for(ja, kana)` picks the

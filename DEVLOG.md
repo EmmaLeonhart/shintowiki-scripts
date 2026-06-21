@@ -92,6 +92,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   [[Open questions]] with the proposed default (no-op / route to LLM). No labels
   lost — the affected shrines continue to flow to the LLM as today.
 
+### A4 — narrow the LLM (Stage 4) to the true residual
+**Files:** `modern-quickstatements/select_shrines_to_translate.py`,
+`tests/test_select_shrines_to_translate.py`, `docs/english_label_pipeline.md`.
+
+- `select_shrines_to_translate.py` previously dedup'd only against
+  `en_labels_sonnet.txt`, so the LLM could re-translate the ~2305 shrines Stages
+  1+2 now handle. Generalized to `excluded_qids()` over all en-label files
+  (`en_labels.txt`, `kana_en_labels.txt`, `identical_name_en_labels.txt`,
+  `en_labels_sonnet.txt`) and extracted a pure `select()`. Also moved the
+  module-level `sys.stdout` UTF-8 swap into `main()` so the module is
+  import-safe for pytest.
+- Verified on the live worklist: LLM residual **5060 → 2688** (~2372 worklist
+  shrines now skipped because an earlier stage covers them). Output format
+  unchanged, so the consuming local Sonnet cron is unaffected. 50 tests pass.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
