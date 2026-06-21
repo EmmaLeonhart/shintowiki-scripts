@@ -11,7 +11,7 @@ This page is the interface between Emma (human) and the bot agents that work on 
 == Open questions ==
 
 * '''Stage 3 (non-CJK transliteration fallback) — confirm it can be a no-op / route to the LLM.''' Investigated 2026-06-21 against the live worklist: of the 2737 shrines that reach Stage 3 (no en, no kana, no identical-name match), only '''2 shrines have any non-CJK label at all''' (3 labels total): "Santuario Nishizaka" (it), "Masugataten-Schrein" (de), "Masugata-tenjin-sha" (romanized). Every one is irregular for the literal rule "transliterate, drop the second word, replace with Shrine" — they are shrine-word-''first'' (Italian Santuario, German Schrein) or hyphenated, so the literal rule would emit a wrong label like "Santuario Shrine". These 2 shrines already fall through to Stage 4 (the LLM), which labels them correctly. '''Proposed default (unless you object): leave Stage 3 unbuilt and let these route to the LLM.''' If you want Stage 3 built, tell me the intended handling for shrine-word-first / hyphenated non-CJK labels (e.g. strip any recognised shrine-word in any position → "&lt;Name&gt; Shrine"). — Claude, 2026-06-21
-
+** Yeah  so just drop this one
 == Notes ==
 
 ''(free-form scratch space for Emma)''
