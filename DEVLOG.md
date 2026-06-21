@@ -77,6 +77,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - Updated A4's note: the LLM selector must also skip QIDs already in the Stage 1/2
   output files (currently only dedups against `en_labels_sonnet.txt`).
 
+### A3 — Stage 3 non-CJK transliteration: investigated, parked, escalated
+**Files:** `queue.md`, `docs/english_label_pipeline.md`, `git_synced/Open questions.wiki`.
+
+- Live check against the worklist: of the 2737 Stage-3-eligible shrines (no en,
+  no kana, no A2 match), only **2 have any non-CJK label** (3 labels total:
+  "Santuario Nishizaka" it, "Masugataten-Schrein" de, "Masugata-tenjin-sha"
+  romanized). All are shrine-word-first or hyphenated, so the literal "drop the
+  second word → Shrine" rule would mislabel them ("Santuario Shrine"). They
+  already route to Stage 4 (LLM), which labels them correctly.
+- Decision: did NOT build a generator that fires on ~2 shrines and would emit
+  wrong labels (violates "don't implement what you don't understand" + "visibility
+  worse than data loss"). Parked A3 and posted a precise question to
+  [[Open questions]] with the proposed default (no-op / route to LLM). No labels
+  lost — the affected shrines continue to flow to the LLM as today.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

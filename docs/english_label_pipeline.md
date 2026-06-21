@@ -52,7 +52,7 @@ throttle is spent on shrines that need no LLM at all.
 | **0** | Shrine has a shintowiki article | Title = label (lookup) | EXISTS (Source 1), keep |
 | **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine, daijingu→Daijingu). NOT pykakasi/Indonesian. | **DONE — `kana_english.py` + `generate_kana_en_labels.py`** |
 | **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **DONE — `reuse_labels.py` + `generate_identical_name_en_labels.py`** |
-| **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **MISSING — A3** |
+| **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **PARKED — only 2 such shrines exist & all irregular; escalated (see Open questions)** |
 | **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | EXISTS (Source 2), but must be **narrowed to the residual — A4/A5** |
 
 ## Stage 1 as built (A1, 2026-06-21)
