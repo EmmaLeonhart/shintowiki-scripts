@@ -81,11 +81,12 @@
 
 }}
 <noinclude>
-[[en:Template:Shinmei shrines]]{{wikidata link|Q125475266}}
+[[en:Template:Shinmei shrines]]{{wikidata link|Q125475266|en|Template:Shinmei shrines|fr|Modèle:Palette Sanctuaires Shinmei|check_date=2026-06-21}}
 [[Category:Shinmei shrines]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
