@@ -110,6 +110,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   shrines now skipped because an earlier stage covers them). Output format
   unchanged, so the consuming local Sonnet cron is unaffected. 50 tests pass.
 
+### A5 — verify end-to-end ordering; prune double-emission
+**Files:** `modern-quickstatements/dedup_sonnet_labels.py`,
+`tests/test_dedup_sonnet_labels.py`,
+`.github/workflows/generate-shrines-missing-en-label.yml`,
+`docs/english_label_pipeline.md`.
+
+- Verified the four en-label output files for double-emission and found **46
+  QIDs** (10 kana + 36 identical-name) that also still carried a stale LLM label
+  in `en_labels_sonnet.txt` — that file accumulated LLM labels before Stages
+  1/2/A4 existed, so the lower-priority LLM label could win nondeterministically.
+- `dedup_sonnet_labels.py` (TDD) prunes `en_labels_sonnet.txt` of any QID a
+  higher-priority deterministic file (en_labels / kana_en_labels /
+  identical_name_en_labels) now covers. Ran it: 46 pruned, 71 kept; re-verified
+  **all four files pairwise disjoint on Len QIDs**. Wired into the daily workflow
+  after Stage 1/2 generation. A4's selector keeps the prune stable (LLM won't
+  re-add). 54 tests pass. **Stage A complete.**
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

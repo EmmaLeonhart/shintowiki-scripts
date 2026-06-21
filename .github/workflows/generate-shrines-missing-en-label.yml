@@ -46,11 +46,15 @@ jobs:
         working-directory: modern-quickstatements
         run: python generate_identical_name_en_labels.py
 
+      - name: Prune LLM labels superseded by Stage 0/1/2 (priority)
+        working-directory: modern-quickstatements
+        run: python dedup_sonnet_labels.py
+
       - name: Commit refreshed list
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add modern-quickstatements/shrines_missing_en_label.json modern-quickstatements/kana_en_labels.txt modern-quickstatements/identical_name_en_labels.txt
+          git add modern-quickstatements/shrines_missing_en_label.json modern-quickstatements/kana_en_labels.txt modern-quickstatements/identical_name_en_labels.txt modern-quickstatements/en_labels_sonnet.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

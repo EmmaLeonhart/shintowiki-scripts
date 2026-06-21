@@ -22,8 +22,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ## STAGE A — the 4-stage English-label generator (do in order; each stage only handles what earlier stages left)
 
-- [ ] **A5. Wire the four stages into one ordered run** so each stage's worklist excludes shrines already handled by an earlier stage, and the daily submitter draws from all of them. (A4 already enforces the LLM↔earlier-stage disjointness; this item is to verify/document the end-to-end ordering and confirm no double-emission across all atomic files.)
-
 ## STAGE B — downstream language generators seeded from the English label
 
 - [ ] **B1. Repoint the non-CJK multilang generator to the English label.** `shinto-label-generator/generate_multilang_quickstatements.py` currently sources from Indonesian labels (its docstring says so) for tr/de/nl/es/it/eu/lt/ru/uk/fa/ar/arz/hi/fr/pt. Make it derive from the `en` label going forward, WITHOUT deleting existing Indonesian-derived output. Toki Pona (`tokiponizer`) should also flow from English.

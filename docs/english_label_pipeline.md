@@ -68,6 +68,23 @@ throttle is spent on shrines that need no LLM at all.
   ~8 irregular/unromanizable readings). Tests: `tests/test_kana_english.py`,
   `tests/test_generate_kana_en_labels.py`.
 
+## End-to-end ordering as built (A5, 2026-06-21)
+The four stages are not a barriered sequential run — they are independent
+generators over **disjoint QID partitions**, so priority is enforced by
+construction plus two guards:
+- **Stage 1** consumes only the kana-bearing worklist subset; **Stage 2** only
+  the no-kana subset → 1 and 2 are disjoint (verified: 0 QID overlap).
+- **Stage 4** (`select_shrines_to_translate.py`) excludes every QID already in
+  any higher-priority file (A4).
+- **`dedup_sonnet_labels.py`** (A5) prunes `en_labels_sonnet.txt` of QIDs a
+  higher-priority deterministic file now covers — needed because that file
+  accumulated LLM labels before Stages 1/2/A4 existed. Run in the daily workflow
+  after Stage 1/2 generation.
+- Verified after the prune: **all four en-label files (`en_labels`,
+  `kana_en_labels`, `identical_name_en_labels`, `en_labels_sonnet`) are pairwise
+  disjoint on `Len` QIDs** — no double-emission. The daily submitter draws from
+  all four via `ATOMIC_FILES`.
+
 ## Stage 2 as built (A2, 2026-06-21)
 - `modern-quickstatements/reuse_labels.py` — `choose_label(candidates, qid)`:
   pure rule logic. Dominant reading wins; alias only when exactly one other
