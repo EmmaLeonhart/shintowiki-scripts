@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-21
+
+### Metabolize the English-label-first translation agenda + A0 audit
+**Files:** `queue.md`, `docs/english_label_pipeline.md`, `DEVLOG.md`, `query.csv` (Emma's commit).
+
+- Emma dropped a freeform "New Agenda" into `queue.md` (plus `query.csv`, the
+  per-language label-count scoreboard) describing an English-label-first
+  translation pipeline. Metabolized it into 11 ordered, bounded queue items
+  across Stage A (4-stage English-label generator), Stage B (English-seeded
+  downstream language generators + per-language coverage from `query.csv`), and
+  Stage C (CJK-no-`ja` edge case), with the standing QuickStatements-only /
+  no-direct-Wikidata-editing constraints pinned at the top. Mirrored to 11
+  tasks. (commit `b60bcdcf`)
+- Set up the 3:32pm daily metabolization cron + the three autonomous-loop crons
+  (work-loop :03, auto-flush :15, status-report :42).
+- **A0 audit** (`docs/english_label_pipeline.md`): mapped the two existing
+  en-label sources — wiki-title lookup (Stage 0, keep) and the SPARQL→Sonnet LLM
+  path. Central finding: the LLM path sends *all* shrines missing en, **kana
+  included**, to the 5/day LLM, so Stages 1–3 (deterministic kana, identical-name
+  reuse, non-CJK transliteration) don't exist yet and the LLM is doing work
+  deterministic rules should. A1–A5 carve those stages out ahead of the LLM.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
