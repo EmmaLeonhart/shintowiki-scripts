@@ -40,6 +40,7 @@ ATOMIC_FILES = [
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
     "p6262_fandom_links.txt",                 # Add P6262 (Fandom article ID) links
     "en_labels.txt",                          # Add en labels (Len) for items with a shintowiki page but no en label
+    "kana_en_labels.txt",                     # Stage 1: en labels (Len) + aliases (Aen) deterministically built from kana (generate_kana_en_labels.py); no LLM
     "en_labels_sonnet.txt",                   # Add en labels (Len) machine-translated by the daily remote Sonnet routine (5/day) from ja label + kana
     "label_proposals_drip.txt",               # 20/day random multilingual labels drip-fed from the shinto-label-generator subtree
     "kana_qualifier_add.txt",                 # Add <kana>カミノヤシロ P1814 qualifier to ojp-hani P1448 official names (bot request 2026-02-26)

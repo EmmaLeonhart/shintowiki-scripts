@@ -38,11 +38,15 @@ jobs:
         working-directory: modern-quickstatements
         run: python generate_shrines_missing_en_label.py
 
+      - name: Generate Stage 1 deterministic kana en-labels
+        working-directory: modern-quickstatements
+        run: python generate_kana_en_labels.py
+
       - name: Commit refreshed list
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add modern-quickstatements/shrines_missing_en_label.json
+          git add modern-quickstatements/shrines_missing_en_label.json modern-quickstatements/kana_en_labels.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

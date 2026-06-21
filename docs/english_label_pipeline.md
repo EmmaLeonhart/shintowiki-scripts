@@ -50,15 +50,25 @@ throttle is spent on shrines that need no LLM at all.
 | Stage | Condition (after Stage 0 lookup) | Method | Status |
 |---|---|---|---|
 | **0** | Shrine has a shintowiki article | Title = label (lookup) | EXISTS (Source 1), keep |
-| **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, jingu→Grand Shrine [alias], taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine). NOT pykakasi/Indonesian. | **MISSING — A1** |
+| **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine, daijingu→Daijingu). NOT pykakasi/Indonesian. | **DONE — `kana_english.py` + `generate_kana_en_labels.py`** |
 | **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **MISSING — A2** |
 | **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **MISSING — A3** |
 | **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | EXISTS (Source 2), but must be **narrowed to the residual — A4/A5** |
 
-## Implementation notes for A1–A5
-- **A1** adds a deterministic generator consuming the kana-bearing subset of
-  `shrines_missing_en_label.json`, emitting `Len`/`Aen` to a new atomic `.txt`.
-  Add that file to `ATOMIC_FILES`.
+## Stage 1 as built (A1, 2026-06-21)
+- `modern-quickstatements/kana_english.py` — `label_for(ja, kana)` picks the
+  shrine-type suffix from the **kanji** label (unambiguous) and romanizes the
+  stem from kana to macron-free Hepburn. Pure 神宮 deferred (see module header).
+- `modern-quickstatements/generate_kana_en_labels.py` — consumes the kana-bearing
+  subset of `shrines_missing_en_label.json`, emits `Len`/`Aen` to
+  `kana_en_labels.txt` (now in `submit_daily_batch.ATOMIC_FILES`).
+- Regenerated daily by `generate-shrines-missing-en-label.yml` right after the
+  worklist refresh. On the 2026-06-21 worklist: **424 / 442** kana shrines
+  handled deterministically; 18 deferred (2 pure-神宮, 8 non-shrine suffixes,
+  ~8 irregular/unromanizable readings). Tests: `tests/test_kana_english.py`,
+  `tests/test_generate_kana_en_labels.py`.
+
+## Implementation notes for A2–A5
 - **A4/A5** change `select_shrines_to_translate.py` (or the worklist generator)
   so the LLM only draws shrines NOT handled by Stages 1–3 — i.e. exclude
   kana-bearing items (now A1's job) and identical-name-resolvable items (A2).

@@ -26,6 +26,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   reuse, non-CJK transliteration) don't exist yet and the LLM is doing work
   deterministic rules should. A1–A5 carve those stages out ahead of the LLM.
 
+### A1 — Stage 1 deterministic kana→English generator (built, TDD)
+**Files:** `modern-quickstatements/kana_english.py`,
+`generate_kana_en_labels.py`, `tests/test_kana_english.py`,
+`tests/test_generate_kana_en_labels.py`, `submit_daily_batch.py`,
+`.github/workflows/generate-shrines-missing-en-label.yml`,
+`docs/english_label_pipeline.md`.
+
+- `kana_english.label_for(ja, kana)`: builds the English shrine label from the
+  kana reading using proper Hepburn (NOT the tokiponizer table, which collapses
+  zu→su), Title Case, macron-free (Kyoto not Kyōto). Suffix **type** comes from
+  the **kanji** label, not the kana — the kana じんぐう alone can't separate
+  明治/神宮 (Meiji Jingū) from 天神/宮 (Tenjin-gū). Conventions: 神社→Shrine,
+  大社→Grand Shrine (+Taisha alias), 大神社→Daijinja, 宮→-gu Shrine, 社→-sha
+  Shrine, 大神宮→Daijingu. **Pure 神宮 is deferred** (ambiguous stem boundary)
+  to the LLM rather than risk "Ten Jingu".
+- TDD bug catch: the first kana-only version mislabeled 天神宮→"Ten Jingu" and
+  新潟大神宮→"Niigatadai Jingu" (the 大/dai absorbed into the stem). Verification
+  on the real 5060-item worklist surfaced it; rewrote to kanji-driven detection
+  with a regression test. Now: 新潟大神宮→"Niigata Daijingu", 天満宮→"Tenman-gu
+  Shrine", and **424/442** kana shrines labelled deterministically, 18 deferred.
+  No malformed labels (no empty/kana-leak/leading-hyphen). 32 tests pass.
+- Output `kana_en_labels.txt` added to `submit_daily_batch.ATOMIC_FILES`;
+  regenerated daily by the worklist workflow. Stage 1 now offloads ~424 shrines
+  from the LLM. Logged the remaining overlap (the LLM selector still draws kana
+  items) as the explicit fix for A4.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
