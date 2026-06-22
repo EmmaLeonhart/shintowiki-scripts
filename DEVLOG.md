@@ -127,6 +127,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   after Stage 1/2 generation. A4's selector keeps the prune stable (LLM won't
   re-add). 54 tests pass. **Stage A complete.**
 
+### B1 — repoint the 15-language multilang generator to the English label
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_multilang_en_source.py`, `queue.md`.
+
+- `generate_multilang_quickstatements.py` sourced shrine names from Indonesian
+  labels (inaccurate pykakasi-derived). Added `extract_name_from_en` (TDD, 10
+  tests) parsing "<Name> Shrine / Grand Shrine / Daijinja / Daijingu / -gu Shrine
+  / -sha Shrine", and `make_sparql_en`. `main()` now runs an **en-primary pass**
+  (Q845945 shrines with en, missing the target lang) before the **kept id pass**
+  (covers temples + shrines en doesn't reach) and local proposals; English wins
+  on overlap. Nothing Indonesian-derived removed. Moved the module-level stdout
+  swap into `main()` for import-safety.
+- Live smoke (ru/de/fr): 36/40 en-source shrines produced correct labels
+  ("Sumiyoshi Shrine" → ru "Храм Сумиёси", de "Sumiyoshi Schrein", fr
+  "Sanctuaire Sumiyoshi"); non-canonical en labels ("Ōtori Taisha",
+  "Sagami-ji Temple") correctly skip to the id fallback. 64 tests pass repo-wide.
+- **Split out B1b:** Toki Pona (`fetch_shrines_tokiponize.py`) still sources from
+  id/ru/uk/lt and is a separate repoint — tracked as its own queue item rather
+  than claimed done here.
+- **B2 dropped (Emma, 2026-06-21):** "you do not need to confirm CJK + Korean
+  derive from the Japanese label — this is a known fact / an assumption of what
+  we're doing." Removed B2 from the queue; no verification needed.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

@@ -1,6 +1,11 @@
 """
 Generate labels in multiple languages for Shinto shrines and Buddhist temples.
-Source: Indonesian (id) labels on Wikidata OR local proposed labels.
+
+Source (B1, 2026-06-21): the ENGLISH label is now the primary, accurate seed —
+`extract_name_from_en` pulls the name out of "<Name> Shrine" / "Grand Shrine" /
+"Daijinja" forms produced by Stages 0/1/2. The Indonesian (id) label + local
+proposals are KEPT as a fallback for shrines/temples English doesn't yet cover
+(English wins on overlap). Nothing Indonesian-derived is removed.
 
 Languages handled:
   Simple suffix/prefix: tr, de, nl, es, it, eu
@@ -23,11 +28,13 @@ import unicodedata
 import requests
 from tokiponizer import kana_to_romaji, tokenize_romaji
 
-# Windows UTF-8 console fix
-if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
-    sys.stdout.reconfigure(encoding='utf-8')
+def _ensure_utf8_stdout():
+    """Windows UTF-8 console fix. Called from main() rather than at import time so
+    the module stays import-safe (a module-level sys.stdout swap breaks pytest)."""
+    if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
+        sys.stdout.reconfigure(encoding='utf-8')
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
@@ -299,6 +306,33 @@ def extract_name(id_label):
             return (name, is_grand, p_type) if name else None
     return None
 
+
+# English shrine-label suffixes produced by Stages 0/1/2, most specific first so
+# "Grand Shrine" is matched before bare " Shrine". Each: (suffix, is_grand).
+_EN_SUFFIXES = [
+    (" Grand Shrine", True),
+    (" Daijinja", True),
+    (" Daijingu", True),
+    (" Shrine", False),
+]
+
+
+def extract_name_from_en(en_label):
+    """Extract the shrine name (+ is_grand) from an English label, preserving
+    casing. Returns (name, is_grand, "shrine") or None when the label is not in a
+    recognised English shrine form (then the caller falls back to the id path).
+    '<Name>-gu Shrine' / '<Name>-sha Shrine' keep the hyphenated part in the name."""
+    cleaned = re.sub(r'\([^)]*\)', '', en_label)
+    cleaned = re.sub(r'\[[^\]]*\]', '', cleaned).strip()
+    for suffix, is_grand in _EN_SUFFIXES:
+        if cleaned.endswith(suffix):
+            name = cleaned[: -len(suffix)].strip()
+            # Degenerate: "Grand Shrine" with no real name leaves a bare qualifier.
+            if not name or name == "Grand":
+                return None
+            return (name, is_grand, "shrine")
+    return None
+
 # ----------------------------
 # Cyrillicization (Polivanov system)
 # ----------------------------
@@ -513,6 +547,20 @@ ORDER BY ?item
 """
 
 
+def make_sparql_en(lang_code):
+    """B1: primary source — Shinto shrines that have an English label but are
+    missing the target language. The English label is the accurate seed the whole
+    pipeline now flows through (Indonesian remains a fallback below)."""
+    return f"""
+SELECT DISTINCT ?item ?enLabel WHERE {{
+  ?item wdt:P31/wdt:P279* wd:Q845945 .
+  ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en")
+  FILTER NOT EXISTS {{ ?item rdfs:label ?existing . FILTER(LANG(?existing) = "{lang_code}") }}
+}}
+ORDER BY ?item
+"""
+
+
 def run_sparql(query, label):
     print(f"  Querying Wikidata: {label}...")
     r = requests.get(
@@ -546,6 +594,7 @@ def load_proposals():
 # ----------------------------
 
 def main():
+    _ensure_utf8_stdout()
     outdir = "quickstatements"
     os.makedirs(outdir, exist_ok=True)
     
@@ -557,11 +606,30 @@ def main():
         
         rows = []
         seen = set()
-        
-        # 1. From Wikidata
+
+        # 1. From English labels (primary, accurate source — B1).
+        en_results = run_sparql(make_sparql_en(lang), f"shrines (en source) missing {lang} label")
+        en_added = 0
+        for binding in en_results:
+            qid = binding["item"]["value"].split("/")[-1]
+            if qid in seen:
+                continue
+            extracted = extract_name_from_en(binding["enLabel"]["value"])
+            if not extracted:
+                continue  # not a canonical en shrine label -> let the id pass try
+            name, is_grand, p_type = extracted
+            label = format_label(lang, name, is_grand, p_type)
+            if label:
+                rows.append({"qid": qid, "label": label})
+                seen.add(qid)
+                en_added += 1
+        print(f"  From English: {en_added} rows")
+
+        # 2. From Indonesian labels (KEPT — covers temples + shrines en doesn't reach).
         results = run_sparql(make_sparql(lang), f"shrines missing {lang} label")
         skipped = 0
-        
+        id_added = 0
+
         for binding in results:
             qid = binding["item"]["value"].split("/")[-1]
             if qid in seen:
@@ -578,12 +646,13 @@ def main():
             label = format_label(lang, name, is_grand, p_type)
             if label:
                 rows.append({"qid": qid, "label": label})
+                id_added += 1
             else:
                 skipped += 1
-                
-        print(f"  From Wikidata: {len(rows)} rows")
 
-        # 2. From Local Proposals
+        print(f"  From Indonesian (Wikidata): {id_added} rows")
+
+        # 3. From Local Proposals
         # These are items that have JA label but NO ID label on Wikidata.
         # So they won't be in the SPARQL results (which require ID label).
         # We assume they also don't have the target language label (since they are 'Japanese-only').
