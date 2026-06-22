@@ -342,6 +342,68 @@ def farsify(name):
 
 
 # ----------------------------
+# Greek maps (B3 tier-2). Conventions from existing Wikidata labels: u→ου,
+# voiced stops as digraphs (g→γκ, d→ντ, b→μπ), h→χ, y→γι. Output is unaccented
+# (Greek stress accents aren't predictable from romaji).
+# ----------------------------
+
+GREEK_BASE = {
+    "a": "α", "i": "ι", "u": "ου", "e": "ε", "o": "ο",
+    "ka": "κα", "ki": "κι", "ku": "κου", "ke": "κε", "ko": "κο",
+    "sa": "σα", "shi": "σι", "su": "σου", "se": "σε", "so": "σο",
+    "ta": "τα", "chi": "τσι", "tsu": "τσου", "tu": "τσου", "te": "τε", "to": "το",
+    "na": "να", "ni": "νι", "nu": "νου", "ne": "νε", "no": "νο",
+    "ha": "χα", "hi": "χι", "hu": "φου", "fu": "φου", "he": "χε", "ho": "χο",
+    "ma": "μα", "mi": "μι", "mu": "μου", "me": "με", "mo": "μο",
+    "ya": "για", "yu": "γιου", "yo": "γιο",
+    "ra": "ρα", "ri": "ρι", "ru": "ρου", "re": "ρε", "ro": "ρο",
+    "wa": "ουα", "wo": "ο", "n": "ν",
+    "ga": "γκα", "gi": "γκι", "gu": "γκου", "ge": "γκε", "go": "γκο",
+    "za": "ζα", "ji": "τζι", "zu": "ζου", "ze": "ζε", "zo": "ζο",
+    "da": "ντα", "di": "ντι", "du": "ντου", "de": "ντε", "do": "ντο",
+    "ba": "μπα", "bi": "μπι", "bu": "μπου", "be": "μπε", "bo": "μπο",
+    "pa": "πα", "pi": "πι", "pu": "που", "pe": "πε", "po": "πο",
+}
+
+GREEK_YOON = {
+    "kya": "κια", "kyu": "κιου", "kyo": "κιο",
+    "sha": "σα", "shu": "σου", "sho": "σο",
+    "cha": "τσα", "chu": "τσου", "cho": "τσο",
+    "nya": "νια", "nyu": "νιου", "nyo": "νιο",
+    "hya": "χια", "hyu": "χιου", "hyo": "χιο",
+    "mya": "μια", "myu": "μιου", "myo": "μιο",
+    "rya": "ρια", "ryu": "ριου", "ryo": "ριο",
+    "gya": "γκια", "gyu": "γκιου", "gyo": "γκιο",
+    "ja": "τζα", "ju": "τζου", "jo": "τζο",
+    "bya": "μπια", "byu": "μπιου", "byo": "μπιο",
+    "pya": "πια", "pyu": "πιου", "pyo": "πιο",
+}
+
+
+def _grecify_word(word):
+    w = unicodedata.normalize("NFKC", word).lower()
+    w = w.replace("ā", "a").replace("ī", "i").replace("ū", "u").replace("ē", "e").replace("ō", "o")
+    w = re.sub(r"[^\w]", "", w)
+    w = kana_to_romaji(w)
+    tokens = tokenize_romaji(w)
+    parts = []
+    for t in tokens:
+        if t in GREEK_YOON:
+            parts.append(GREEK_YOON[t])
+        elif t in GREEK_BASE:
+            parts.append(GREEK_BASE[t])
+    result = "".join(parts)
+    return result.capitalize() if result else ""
+
+
+def grecify(name):
+    """Convert a romanized Japanese name to Greek script. Handles multi-word names."""
+    words = name.split()
+    greek_words = [_grecify_word(w) for w in words if w]
+    return " ".join(w for w in greek_words if w)
+
+
+# ----------------------------
 # Name extraction
 # ----------------------------
 
@@ -566,6 +628,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
             if p_type == "temple": return "Gran Templu" if is_grand else "Templu"
             return "Gran Santuariu" if is_grand else "Santuariu"
         if lang in ("sh", "hr"): return "hram"      # space-suffix: <Name> hram
+        if lang == "el": return "Μεγάλο Ιερό" if is_grand else "Ιερό"  # prefix, grecified name
         return ""
 
     if lang == "tr":
@@ -605,6 +668,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
             ar_name = ar_name.replace("غ", "ج")
         base = f"معبد {ar_name}"
         return f"{base} الكبير" if is_grand else base
+    if lang == "el":
+        el_name = grecify(name)
+        return f"{get_affix()} {el_name}"
     if lang == "hi":
         hi_name = hindify(name)
         return f"{hi_name} {get_affix()}"
@@ -620,7 +686,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 # ----------------------------
 
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
-             "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr"]
+             "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el"]
 
 
 def make_sparql(lang_code):

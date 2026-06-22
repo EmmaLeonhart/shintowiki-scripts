@@ -285,6 +285,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   (inconsistent). Remaining todo is increasingly script-map work (Greek/Thai/
   Hebrew/Georgian/Burmese) + the single-digit tail.
 
+### B3 tier 2 — Greek (el) script map
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_greek.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`.
+
+- Built `GREEK_BASE`/`GREEK_YOON` + `grecify` (mirrors the Cyrillic structure):
+  u→ου, voiced-stop digraphs g→γκ / d→ντ / b→μπ, h→χ, y→γι. Format "Ιερό <Name>"
+  / "Μεγάλο Ιερό <Name>", unaccented (Greek stress accents aren't predictable
+  from romaji). Verified letters match real labels — Yasaka→Γιασακα (real
+  Γιασάκα), Takeda→Τακεντα, Itsukushima→Ιτσουκουσιμα. TDD 6 tests; 58 pass.
+  Coverage **36→37**, todo **77→76**.
+- Noted `az` is Latin-script (affix candidate, not a script map) for the next
+  pass. Remaining script maps: th, my, he, ka, mk (Cyrillic-reusable), ta, bo.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

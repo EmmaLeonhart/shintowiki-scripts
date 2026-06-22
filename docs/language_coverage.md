@@ -4,7 +4,7 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **36 covered**, **77 todo** (plus `bn`, a new language not yet in query.csv).
+As of 2026-06-21: **116 languages** in `query.csv`, **37 covered**, **76 todo** (plus `bn`, a new language not yet in query.csv).
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)
@@ -44,8 +44,12 @@ Kuil/kept-Japanese) — pick a convention.
 English-romaji affix:** `cs`/`sl` re-spell the name phonetically (Jasukuni,
 Meidži); `pl`/`fi` keep the Japanese word (Jinja/Taisha); `sk`/`nan` re-spell
 phonetically (Icukušima, POJ); `ro` convention inconsistent.
-**Still todo (need script maps):** `th` 33 (Thai), `az` 25, `my` 25 (Burmese),
-`el` 16 (Greek), `he` 14 (Hebrew), `ka` 10 (Georgian), `mk` 4, `ta` 3 …
+**Script maps — `el` 16 (Greek) DONE** (grecify: Ιερό/Μεγάλο Ιερό + unaccented
+Greek name, voiced-stop digraphs γκ/ντ/μπ).
+**Still todo (need script maps):** `th` 33 (Thai), `my` 25 (Burmese), `he` 14
+(Hebrew), `ka` 10 (Georgian), `mk` 4 (Cyrillic — could reuse the Cyrillic map),
+`ta` 3 (Tamil), `bo` (Tibetan — flagged as previously bad). NOTE `az` 25 is
+Latin-script Turkic (affix candidate, not a script map) — check its convention.
 
 ### Tier 3 — regional-language variants of already-covered languages
 `en-gb` 11, `en-us` 8, `en-ca` 7, `pt-br` 2, `de-ch` 1 — these duplicate an
