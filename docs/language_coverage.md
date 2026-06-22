@@ -5,6 +5,17 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 human-readable snapshot + the plan for filling the long tail.
 
 As of 2026-06-21: **116 languages** in `query.csv`, **47 covered**, **66 todo** (plus `bn`, a new language not yet in query.csv).
+
+**Deep-tail build is effectively complete (stopping point reached 2026-06-21).**
+Of the 66 remaining: all 19 with ≥4 labels fail the verification gate — `pl`/`fi`
+keep the Japanese word (Jinja/Taisha); `th`/`my` need context-dependent script
+shaping; `cs`/`sl`/`nan`/`hak`/`nan-latn-*` re-spell the name phonetically;
+`ka` keeps the Japanese suffix; `yue`/`wuu` mix traditional/simplified zh; `ro`
+is inconsistent; `en-gb`/`en-us`/`en-ca` are regional-English (language fallback
+covers them). The other 47 have only 1–3 labels each — too low-sample to infer a
+convention reliably. **These should be routed to the LLM, not hand-built.** The
+nightly 10pm cron will keep finding nothing new to add until the gate-failing
+languages get LLM treatment or Emma changes scope.
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)
