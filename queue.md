@@ -24,7 +24,8 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ## STAGE B — downstream language generators seeded from the English label
 
-- [ ] **B3. Institutionalize one generator per language using `query.csv`.** Build a registry covering every language column in `query.csv`; each language gets a generator whose job is to fill that column toward the top. Many exist (the 15 non-CJK in `generate_multilang_quickstatements.py` + zh/ko/tok); add generators for the long tail that lacks one. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo` was noted as bad), inspect the actual existing labels and either continue a good pattern or invent a sane convention rather than copying the bad one.
+- [ ] **B3. Institutionalize one generator per language using `query.csv`.** **Registry DONE:** `shinto-label-generator/language_registry.py` (live source of truth: 116 langs, 19 covered, 94 todo) + `docs/language_coverage.md` (tiered plan). Remaining = add generators down the tiers. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo`), inspect existing labels and continue a good pattern or invent a sane convention. Subitems below track the tiers.
+- [ ] **B3a. Tier 1 — emit zh script variants from the Chinese generator.** `generate_chinese_quickstatements.py` emits only `Lzh`. Extend it to also emit zh-hant/zh-hk/zh-tw (traditional) and zh-hans/zh-cn/zh-sg (simplified) via OpenCC conversion of the existing zh output — ≈1272 labels, the biggest single win, CJK-derived (from zh/ja, not English). Keep existing `zh.txt` output.
 - [ ] **B4. Add new-language generators: Bengali (`bn`), Vietnamese (`vi`).** Then verify the pipeline status of Indonesian (`id`), Malay (`ms`), Japanese (`ja`), English (`en`) — Mistral may have muddied which of these are already covered; confirm against the code.
 
 ## STAGE C — edge case (low priority, do not fret)

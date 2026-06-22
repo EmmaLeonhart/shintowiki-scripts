@@ -166,6 +166,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   tests pass; 54 modern-quickstatements tests still green. **Stage B's English
   repoint (B1 + B1b) is complete.**
 
+### B3 (foundation) — language coverage registry + tiered plan
+**Files:** `shinto-label-generator/language_registry.py`,
+`shinto-label-generator/tests/test_language_registry.py`,
+`docs/language_coverage.md`, `queue.md`.
+
+- Built `language_registry.py` (TDD, 5 tests): the single source of truth mapping
+  each generated language to (script, method), with `split_coverage` partitioning
+  query.csv into covered vs. the uncovered long tail (sorted by count; ja/en/mul
+  excluded). Live numbers: **116 languages, 19 covered, 94 todo.**
+- `docs/language_coverage.md` documents the gap as a tiered plan: **Tier 1 = zh
+  script variants** (zh-hant 592, zh-hk 376, zh-hans 123, zh-tw 120, zh-cn 41,
+  zh-sg 20 ≈ 1272 labels — the biggest single win, CJK-derived via OpenCC, not
+  English); Tier 2 = European/high-count transliteration targets; Tier 3 =
+  regional variants (low value); Tier 4 = the single-digit tail (convention-check
+  each against existing labels). Split out **B3a** (zh variants) as the concrete
+  next generator.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
