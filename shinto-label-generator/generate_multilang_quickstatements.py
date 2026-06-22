@@ -550,6 +550,17 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "arz": return "معبد … الكبير" if is_grand else "معبد"
         if lang == "hi": return "महा मंदिर" if is_grand else "मंदिर"
         if lang == "bn": return f"{_BN_MAHA} {_BN_MANDIR}" if is_grand else _BN_MANDIR
+        # B3 tier-2 European languages (conventions from existing Wikidata labels)
+        if lang == "ca":
+            if p_type == "temple": return "Gran Temple" if is_grand else "Temple"
+            return "Gran Santuari" if is_grand else "Santuari"
+        if lang == "gl":
+            if p_type == "temple": return "Gran Templo" if is_grand else "Templo"
+            return "Gran Santuario" if is_grand else "Santuario"
+        if lang == "sv": return "templet"          # suffixed: <Name>-templet
+        if lang == "nb": return "helligdommen"      # suffixed: <Name>-helligdommen
+        if lang == "da": return "helligdommen"
+        if lang == "hu": return "nagyszentély" if is_grand else "szentély"  # suffixed
         return ""
 
     if lang == "tr":
@@ -560,8 +571,10 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl"]:
         return f"{get_affix()} {name}"
+    if lang in ["sv", "nb", "da", "hu"]:
+        return f"{name}-{get_affix()}"
     if lang == "eu":
         return f"{name} {get_affix()}"
     if lang == "lt":
@@ -599,7 +612,8 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 # SPARQL
 # ----------------------------
 
-ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn"]
+ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
+             "ca", "gl", "sv", "nb", "da", "hu"]
 
 
 def make_sparql(lang_code):

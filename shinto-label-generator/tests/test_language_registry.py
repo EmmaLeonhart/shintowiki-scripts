@@ -22,12 +22,12 @@ def test_source_langs_not_treated_as_todo():
 
 
 def test_uncovered_language_is_todo():
-    rows = [("de", 267), ("sv", 37), ("th", 33)]
+    rows = [("de", 267), ("pl", 35), ("th", 33)]  # pl, th still have no generator
     covered, todo = r.split_coverage(rows)
     cov_langs = {c["lang"] for c in covered}
     todo_langs = {c["lang"] for c in todo}
     assert "de" in cov_langs
-    assert {"sv", "th"} <= todo_langs
+    assert {"pl", "th"} <= todo_langs
 
 
 def test_todo_sorted_by_count_desc():

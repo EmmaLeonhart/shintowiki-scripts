@@ -237,6 +237,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   source/pipeline. **Stage B downstream-language work: B1/B1b/B3a/B4/B4b done;
   remaining is B3's tier-2/4 long tail.**
 
+### B3 tier 2 (batch 1) — 6 European affix languages
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_eu_tier2.py`,
+`shinto-label-generator/tests/test_language_registry.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`,
+`queue.md`.
+
+- Sampled existing Wikidata labels for 11 candidate European langs and added the
+  6 where English-romaji name + the language's shrine word reproduces the
+  existing convention exactly: **ca** (Santuari/Gran Santuari), **gl**
+  (Santuario), **sv** (-templet), **nb**/**da** (-helligdommen), **hu**
+  (-szentély/-nagyszentély). Added a suffix-hyphen format branch for sv/nb/da/hu.
+  TDD 9 tests; 45 pass. Coverage **26→32**, todo **87→81**.
+- **Deferred with documented reason** (not done blindly): `cs`/`sl` re-spell the
+  *name* phonetically (Jasukuni, not Yasukuni) and `pl`/`fi` keep the Japanese
+  word (Jinja/Taisha) — neither is a plain English-romaji affix, so they need
+  name re-transliteration / the specific Japanese suffix first. `ro` convention
+  is inconsistent. Recorded in docs/language_coverage.md.
+- Updated a registry test fixture that had used `sv` as an "uncovered" example
+  (sv is now covered) → swapped to still-uncovered `pl`/`th`.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
