@@ -327,6 +327,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   Paused the loop and surfaced the decision to Emma rather than hand-build
   low-confidence labels (visibility-worse-than-data-loss).
 
+### B3 — Hebrew (he) script map; th/my/ka fail the verification gate; B3 done
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_hebrew.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`,
+`queue.md`.
+
+- Emma's scope decision: build only the higher-count script maps (th/my/he/ka),
+  with verification. Investigated all four against real labels:
+  - **`he` (Hebrew) — BUILT.** `hebraify` (abjad + matres lectionis: a→א, u/o→ו,
+    i→י, ya→י) reproduces the real labels exactly (סאנו/יסוקוני/האקוטו/איסה).
+    Format "מקדש <Name>". TDD 3 tests verifying reproduction; 71 pass. Coverage
+    **43→44**.
+  - **`th`/`my` — FAILED the gate:** Thai/Burmese have context-dependent vowel
+    forms / consonant stacking; a flat romaji→syllable map can't reproduce the
+    existing labels (Thai "ma" = มะ in Itsukushima vs มั in Amatsu). Documented;
+    route to LLM.
+  - **`ka` — FAILED the gate:** clean alphabet but the convention keeps the
+    Japanese suffix transliterated (ძინძია=jinja) — unreconstructable from our
+    suffix-stripped English name (same class as cs/sl/pl/fi/mk). Documented.
+- **B3 complete; the entire label-translation agenda is done.** Cleaned the
+  finished agenda scaffolding out of queue.md (only the pinned cron tail remains).
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

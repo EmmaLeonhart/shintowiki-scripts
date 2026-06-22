@@ -6,26 +6,7 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-## STANDING CONSTRAINTS for the label-translation agenda (read before any item below)
-
-- **NON-NEGOTIABLE: never introduce any new direct-API Wikidata editing.** Wikidata is edited by exactly ONE channel: the existing daily QuickStatements drip pipeline, with NO edit summaries. Every item below produces QuickStatements lines into the atomic `.txt` files consumed by `modern-quickstatements/submit_daily_batch.py`. If something cannot be expressed as a QuickStatement, STOP and raise it on `[[Open questions]]` — do not route around the QS pipeline.
-- **Do not remove or disrupt existing Indonesian-derived labels** already flowing through the pipeline. The migration is additive: new work derives from English, but the existing `id`-path output stays.
-- **Follow Emma's instructions literally** — don't optimize/merge/guess the stages.
-- **Add-first / remove-later via SPARQL (two scripts, never one)** whenever an item both adds and removes.
-- **Romanization conventions** (the anglicise-but-preserve rules): `jinja → Shrine`; `jingu → Grand Shrine` (keep "jingu" as alias); `taisha → Grand Shrine` (keep "taisha" as alias); `daijinja → Daijinja`; `-sha → -sha Shrine`; `-gu → -gu Shrine`. CJK languages copy the characters; Korean is the special hangul case; everything else flows from the English label.
-
----
-
-# AGENDA: English-label-first translation pipeline for Shinto shrines
-
-**Vision (one paragraph):** Every run, SPARQL finds Shinto shrines lacking an English label and runs a 4-stage priority pipeline to give them one. The English label then becomes the seed from which all non-CJK downstream languages are generated (replacing the current roundabout Japanese→Indonesian→everything path), while CJK languages derive straight from the Japanese label. The end state is maximum linguistic coverage of every shrine name, drip-fed slowly through QuickStatements. `query.csv` is the coverage scoreboard (ja 30228, en 25171, id 24416, fr 23910, then a steep cliff to zh 1038 and a long single-digit tail) — the goal is to fill every language column toward the top with a dedicated generator.
-
-## STAGE A — the 4-stage English-label generator (do in order; each stage only handles what earlier stages left)
-
-## STAGE B — downstream language generators seeded from the English label
-
-- [ ] **B3. Institutionalize one generator per language using `query.csv`.** **Registry DONE:** `shinto-label-generator/language_registry.py` (live source of truth: 116 langs, 19 covered, 94 todo) + `docs/language_coverage.md` (tiered plan). Remaining = add generators down the tiers. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo`), inspect existing labels and continue a good pattern or invent a sane convention. Subitems below track the tiers.
-
+_The English-label-first translation agenda (metabolized 2026-06-21) is complete: the 4-stage English-label pipeline (Stage 3 dropped per Emma), both downstream generators repointed to English, zh script variants, the per-language coverage registry (`shinto-label-generator/language_registry.py`, 44/116 covered), Vietnamese/Bengali/Greek/Hebrew + European/Latin affix batches, and the CJK→ja backfill all shipped. See `docs/english_label_pipeline.md` and `docs/language_coverage.md`. The remaining long-tail languages (Thai/Burmese/Georgian script maps, single-digit-label langs) were deliberately not hand-built — they failed the verification gate or are too low-value — and are left for the LLM/manual per Emma's scope decision._
 
 ---
 

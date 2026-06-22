@@ -404,6 +404,56 @@ def grecify(name):
 
 
 # ----------------------------
+# Hebrew maps (B3 script map). Abjad with matres lectionis: a→א, u/o→ו, i→י,
+# final e→ה, ya→י. Verified to reproduce existing labels (סאנו, יסוקוני,
+# האקוטו, איסה). Stored in logical (reading) order — no RTL reversal.
+# ----------------------------
+
+HEBREW_INITIAL = {"a": "א", "i": "אי", "u": "או", "e": "א", "o": "או"}
+
+HEBREW_BASE = {
+    "a": "א", "i": "י", "u": "ו", "e": "ה", "o": "ו",
+    "ka": "קא", "ki": "קי", "ku": "קו", "ke": "קה", "ko": "קו",
+    "sa": "סא", "shi": "שי", "su": "סו", "se": "סה", "so": "סו",
+    "ta": "טא", "chi": "צ׳י", "tsu": "צו", "tu": "צו", "te": "טה", "to": "טו",
+    "na": "נא", "ni": "ני", "nu": "נו", "ne": "נה", "no": "נו",
+    "ha": "הא", "hi": "הי", "hu": "פו", "fu": "פו", "he": "הה", "ho": "הו",
+    "ma": "מא", "mi": "מי", "mu": "מו", "me": "מה", "mo": "מו",
+    "ya": "י", "yu": "יו", "yo": "יו",
+    "ra": "רא", "ri": "רי", "ru": "רו", "re": "רה", "ro": "רו",
+    "wa": "וא", "wo": "ו", "n": "ן",
+    "ga": "גא", "gi": "גי", "gu": "גו", "ge": "גה", "go": "גו",
+    "za": "זא", "ji": "ג׳י", "zu": "זו", "ze": "זה", "zo": "זו",
+    "da": "דא", "di": "די", "du": "דו", "de": "דה", "do": "דו",
+    "ba": "בא", "bi": "בי", "bu": "בו", "be": "בה", "bo": "בו",
+    "pa": "פא", "pi": "פי", "pu": "פו", "pe": "פה", "po": "פו",
+}
+
+
+def _hebraify_word(word):
+    w = unicodedata.normalize("NFKC", word).lower()
+    w = w.replace("ā", "a").replace("ī", "i").replace("ū", "u").replace("ē", "e").replace("ō", "o")
+    w = re.sub(r"[^\w]", "", w)
+    w = kana_to_romaji(w)
+    tokens = tokenize_romaji(w)
+    parts = []
+    for idx, t in enumerate(tokens):
+        if t in HEBREW_BASE:
+            if idx == 0 and t in HEBREW_INITIAL:
+                parts.append(HEBREW_INITIAL[t])
+            else:
+                parts.append(HEBREW_BASE[t])
+    return "".join(parts)
+
+
+def hebraify(name):
+    """Convert a romanized Japanese name to Hebrew script. Handles multi-word names."""
+    words = name.split()
+    heb_words = [_hebraify_word(w) for w in words if w]
+    return " ".join(w for w in heb_words if w)
+
+
+# ----------------------------
 # Name extraction
 # ----------------------------
 
@@ -635,6 +685,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "min": return "Kuil Gadang" if is_grand else "Kuil"  # prefix
         if lang == "eo": return "Ĉefjaŝiro" if is_grand else "Jaŝiro"    # prefix (Esperantized yashiro)
         if lang == "jv": return "Kuil"                                   # prefix
+        if lang == "he": return "מקדש"                                   # prefix, hebraified name
         return ""
 
     if lang == "tr":
@@ -677,6 +728,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "el":
         el_name = grecify(name)
         return f"{get_affix()} {el_name}"
+    if lang == "he":
+        he_name = hebraify(name)
+        return f"{get_affix()} {he_name}"
     if lang == "hi":
         hi_name = hindify(name)
         return f"{hi_name} {get_affix()}"
@@ -693,7 +747,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
-             "az", "tl", "war", "min", "eo", "jv"]
+             "az", "tl", "war", "min", "eo", "jv", "he"]
 
 
 def make_sparql(lang_code):
