@@ -14,12 +14,16 @@ import sys
 import io
 import requests
 from tokiponizer import tokiponize
+from generate_multilang_quickstatements import extract_name_from_en
 
-# Windows UTF-8 console fix (guard against double-wrapping from imports)
-if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
-    sys.stdout.reconfigure(encoding='utf-8')
+
+def _ensure_utf8_stdout():
+    """Windows UTF-8 console fix. Called from main() rather than at import time so
+    the module stays import-safe (a module-level sys.stdout swap breaks pytest)."""
+    if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
+        sys.stdout.reconfigure(encoding='utf-8')
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
@@ -35,7 +39,7 @@ SELECT DISTINCT ?item ?itemLabel ?srcLabel ?srcLang ?jaLabel ?tokLabel WHERE {
   }
   ?item rdfs:label ?srcLabel .
   BIND(LANG(?srcLabel) AS ?srcLang)
-  FILTER(?srcLang IN ("id", "ru", "uk", "lt"))
+  FILTER(?srcLang IN ("en", "id", "ru", "uk", "lt"))
   OPTIONAL { ?item rdfs:label ?tokLabel . FILTER(LANG(?tokLabel) = "tok") }
   OPTIONAL { ?item rdfs:label ?jaLabel . FILTER(LANG(?jaLabel) = "ja") }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
@@ -94,6 +98,19 @@ def process_label(source_lang, source_label):
     6. Decapitalize
     Returns (prefix, cleaned_name) or None if no valid prefix found.
     """
+    # English (B1b): suffix-based, not prefix-based. Reuse the multilang
+    # extractor; map is_grand onto the existing grand marker so make_tokipona_label
+    # emits "suli". Returns None for non-canonical en labels (fall back to others).
+    if source_lang == "en":
+        extracted = extract_name_from_en(source_label)
+        if not extracted:
+            return None
+        name, is_grand, _p_type = extracted
+        name = name.replace(" ", "").replace("-", "").lower()
+        if not name:
+            return None
+        return ("Temple Grand" if is_grand else "Shrine", name)
+
     # Remove bracketed content: (stuff), [stuff], {stuff}
     cleaned = re.sub(r'\([^)]*\)', '', source_label)
     cleaned = re.sub(r'\[[^\]]*\]', '', cleaned)
@@ -158,6 +175,7 @@ def write_quickstatements(rows, outdir="quickstatements"):
     return written
 
 def main():
+    _ensure_utf8_stdout()
     results = fetch_shrines()
 
     tok_labels_by_qid = {}
@@ -167,6 +185,14 @@ def main():
         if tok_label:
             tok_labels_by_qid.setdefault(qid, set()).add(tok_label)
 
+    # B1b: English is the primary source. For any QID that has an en label, use
+    # ONLY its en source (the accurate seed) and drop its id/ru/uk/lt rows; QIDs
+    # without an en label keep deriving from the other sources (fallback).
+    en_qids = {
+        b["item"]["value"].split("/")[-1]
+        for b in results if b["srcLang"]["value"] == "en"
+    }
+
     # Deduplicate SPARQL results: keep first (qid, source_lang, source_label) triple
     seen_qids = {}
     deduped = []
@@ -174,11 +200,14 @@ def main():
         qid = binding["item"]["value"].split("/")[-1]
         source_lang = binding["srcLang"]["value"]
         source_label = binding["srcLabel"]["value"]
+        if qid in en_qids and source_lang != "en":
+            continue  # en wins for this QID
         key = (qid, source_lang, source_label)
         if key not in seen_qids:
             seen_qids[key] = True
             deduped.append(binding)
-    print(f"After dedup: {len(deduped)} unique (QID, source_lang, source_label) triples")
+    print(f"After dedup: {len(deduped)} unique (QID, source_lang, source_label) triples "
+          f"({len(en_qids)} QIDs sourced from English)")
 
     rows = []
     seen_rows = set()

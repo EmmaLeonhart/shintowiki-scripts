@@ -24,7 +24,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ## STAGE B — downstream language generators seeded from the English label
 
-- [ ] **B1b. Repoint Toki Pona (`fetch_shrines_tokiponize.py`) to the English label.** The 15-language `generate_multilang_quickstatements.py` is done (en-primary, id-fallback). Toki Pona still derives its name from id/ru/uk/lt source labels (SPARQL `FILTER(?srcLang IN ("id","ru","uk","lt"))` + `process_label`/prefix-strip). Add `en` as the primary source: strip the English shrine suffix (reuse `extract_name_from_en`), tokiponize the name, keep the existing source langs as fallback. Don't delete existing Toki Pona output.
 - [ ] **B3. Institutionalize one generator per language using `query.csv`.** Build a registry covering every language column in `query.csv`; each language gets a generator whose job is to fill that column toward the top. Many exist (the 15 non-CJK in `generate_multilang_quickstatements.py` + zh/ko/tok); add generators for the long tail that lacks one. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo` was noted as bad), inspect the actual existing labels and either continue a good pattern or invent a sane convention rather than copying the bad one.
 - [ ] **B4. Add new-language generators: Bengali (`bn`), Vietnamese (`vi`).** Then verify the pipeline status of Indonesian (`id`), Malay (`ms`), Japanese (`ja`), English (`en`) — Mistral may have muddied which of these are already covered; confirm against the code.
 

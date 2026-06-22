@@ -150,6 +150,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   derive from the Japanese label — this is a known fact / an assumption of what
   we're doing." Removed B2 from the queue; no verification needed.
 
+### B1b — repoint Toki Pona to the English label
+**Files:** `shinto-label-generator/fetch_shrines_tokiponize.py`,
+`shinto-label-generator/tests/test_tokiponize_en_source.py`, `queue.md`.
+
+- `fetch_shrines_tokiponize.py` sourced names from id/ru/uk/lt prefixes. Added
+  `en` to the SPARQL source filter and an English branch in `process_label`
+  (reuses `extract_name_from_en`, maps is_grand → the "Temple Grand" marker so
+  `make_tokipona_label` emits "suli"). `main()` now makes **English primary per
+  QID** (a QID with an en label uses only its en source; others keep deriving
+  from id/ru/uk/lt). Made the module import-safe (stdout swap into a function).
+- TDD: 7 new tests. Live smoke: "Sumiyoshi Shrine" → "tomo sewi Sumijosi",
+  "Karatsu Shrine" → "tomo sewi Kalatu"; non-canonical en labels (Taisha/Temple/
+  comma-disambiguated) correctly skip to fallback. 25/30 handled. 17 label-gen
+  tests pass; 54 modern-quickstatements tests still green. **Stage B's English
+  repoint (B1 + B1b) is complete.**
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
