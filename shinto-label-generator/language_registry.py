@@ -48,6 +48,10 @@ COVERED = {
     "sh": ("generate_multilang_quickstatements.py", "affix"),
     "hr": ("generate_multilang_quickstatements.py", "affix"),
     "el": ("generate_multilang_quickstatements.py", "greek"),
+    "az": ("generate_multilang_quickstatements.py", "affix"),
+    "tl": ("generate_multilang_quickstatements.py", "affix"),
+    "war": ("generate_multilang_quickstatements.py", "affix"),
+    "min": ("generate_multilang_quickstatements.py", "affix"),
     # CJK + special cases
     "zh": ("generate_chinese_quickstatements.py", "cjk-manyogana"),
     "zh-hant": ("generate_chinese_quickstatements.py", "opencc-s2t"),

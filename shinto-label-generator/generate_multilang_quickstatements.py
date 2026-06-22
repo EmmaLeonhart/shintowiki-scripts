@@ -629,6 +629,10 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
             return "Gran Santuariu" if is_grand else "Santuariu"
         if lang in ("sh", "hr"): return "hram"      # space-suffix: <Name> hram
         if lang == "el": return "Μεγάλο Ιερό" if is_grand else "Ιερό"  # prefix, grecified name
+        if lang == "az": return "məbədi"            # space-suffix: <Name> məbədi
+        if lang == "tl": return "Dambanang"         # prefix
+        if lang == "war": return "Santuario"        # prefix
+        if lang == "min": return "Kuil Gadang" if is_grand else "Kuil"  # prefix
         return ""
 
     if lang == "tr":
@@ -639,11 +643,11 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min"]:
         return f"{get_affix()} {name}"
     if lang in ["sv", "nb", "da", "hu"]:
         return f"{name}-{get_affix()}"
-    if lang in ["sh", "hr"]:
+    if lang in ["sh", "hr", "az"]:
         return f"{name} {get_affix()}"
     if lang == "eu":
         return f"{name} {get_affix()}"
@@ -686,7 +690,8 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 # ----------------------------
 
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
-             "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el"]
+             "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
+             "az", "tl", "war", "min"]
 
 
 def make_sparql(lang_code):

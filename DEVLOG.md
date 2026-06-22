@@ -299,6 +299,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - Noted `az` is Latin-script (affix candidate, not a script map) for the next
   pass. Remaining script maps: th, my, he, ka, mk (Cyrillic-reusable), ta, bo.
 
+### B3 — Latin-script tail batch (az, tl, war, min)
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_latin_tail.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`.
+
+- Added `az` (`<Name> məbədi`, space-suffix), `tl` (Dambanang), `war` (Santuario),
+  `min` (Kuil/Kuil Gadang) — conventions from existing labels, English-romaji name.
+  TDD 6 tests; 64 pass. Coverage **37→41**, todo **76→72**.
+- Deferred `mk` (Macedonian Cyrillic uses ш for sh, unlike Russian Polivanov's с
+  — needs its own Cyrillic map, not a reuse) and `eo` (mixed convention).
+- Remaining is the genuinely-marginal tail: unfamiliar-script maps (th/my/he/ka/
+  ta/bo — low confidence, better routed to the LLM) and single-digit langs.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
