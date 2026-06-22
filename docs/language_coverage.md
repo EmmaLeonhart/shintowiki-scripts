@@ -4,7 +4,7 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **41 covered**, **72 todo** (plus `bn`, a new language not yet in query.csv).
+As of 2026-06-21: **116 languages** in `query.csv`, **43 covered**, **70 todo** (plus `bn`, a new language not yet in query.csv).
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)
@@ -40,8 +40,11 @@ handling, not just OpenCC).
 `sh`/`hr` (`<Name> hram`).
 **Done (Latin tail):** `az` (`<Name> məbədi`), `tl` (Dambanang), `war`
 (Santuario), `min` (Kuil/Kuil Gadang).
-**Still todo (Latin affix):** `eo` 24 (mixed Jaŝiro/-Sanktejo), `jv` 5 (mixed
-Kuil/kept-Japanese) — pick a convention.
+**Done:** `eo` (Jaŝiro/Ĉefjaŝiro), `jv` (Kuil).
+**Remaining is the marginal/risky tail:** mk (needs Macedonian Cyrillic map);
+unfamiliar-script maps th/my/he/ka/ta/bo (low confidence — better LLM/manual);
+and ~50 single-digit-label Latin/other langs (1–3 labels, conventions unreliable
+from so few examples). Coverage of all medium+ count languages is complete.
 **Deferred — need name re-transliteration or the Japanese suffix, not a plain
 English-romaji affix:** `cs`/`sl` re-spell the name phonetically (Jasukuni,
 Meidži); `pl`/`fi` keep the Japanese word (Jinja/Taisha); `sk`/`nan` re-spell

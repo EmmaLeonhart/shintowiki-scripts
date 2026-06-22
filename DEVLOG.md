@@ -312,6 +312,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - Remaining is the genuinely-marginal tail: unfamiliar-script maps (th/my/he/ka/
   ta/bo — low confidence, better routed to the LLM) and single-digit langs.
 
+### B3 — eo + jv (Latin), then loop reached the marginal tail
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_eo_jv.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`.
+
+- Added `eo` (Jaŝiro/Ĉefjaŝiro) and `jv` (Kuil) — Latin-script, conventions from
+  existing labels. TDD 4 tests; 68 pass. Coverage **41→43**, todo **72→70**.
+- **Reached the flagged inflection point:** all medium+ count languages and the
+  clean Latin-script ones are now done (43/116). What remains is genuinely
+  marginal/risky — unfamiliar-script maps (th/my/he/ka/ta/bo) I can't verify at
+  high confidence, mk's Macedonian-specific Cyrillic, and ~50 single-digit
+  languages whose convention can't be reliably inferred from 1–3 examples.
+  Paused the loop and surfaced the decision to Emma rather than hand-build
+  low-confidence labels (visibility-worse-than-data-loss).
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
