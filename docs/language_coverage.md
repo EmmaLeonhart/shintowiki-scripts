@@ -4,7 +4,7 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **32 covered**, **81 todo** (plus `bn`, a new language not yet in query.csv).
+As of 2026-06-21: **116 languages** in `query.csv`, **36 covered**, **77 todo** (plus `bn`, a new language not yet in query.csv).
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)
@@ -36,12 +36,14 @@ handling, not just OpenCC).
 **Done (affix, conventions from existing labels):** `ca` (Santuari), `gl`
 (Santuario), `sv` (-templet), `nb`/`da` (-helligdommen), `hu` (-szentély/
 -nagyszentély), plus `vi` (B4) and `bn` (B4b).
-**Still todo (Latin affix, straightforward next batch):** `pl` 35, `cs` 31,
-`sl` 29, `la` 28, `eo` 24, `fi` 18, `ro` 9, `jv` 5, `sh` 5, `hr` 4, `sk` 3 …
-NOTE: `cs`/`sl` re-spell the *name* in their own phonetics (Jasukuni, Meidži),
-and `pl`/`fi` keep the Japanese word (Jinja/Taisha) — these need name
-re-transliteration or the specific Japanese suffix, not a plain English-romaji
-affix; defer until that's designed.
+**Done batch 2 (affix):** `la` (Templum/Magnum Templum), `ast` (Santuariu),
+`sh`/`hr` (`<Name> hram`).
+**Still todo (Latin affix):** `eo` 24 (mixed Jaŝiro/-Sanktejo), `jv` 5 (mixed
+Kuil/kept-Japanese) — pick a convention.
+**Deferred — need name re-transliteration or the Japanese suffix, not a plain
+English-romaji affix:** `cs`/`sl` re-spell the name phonetically (Jasukuni,
+Meidži); `pl`/`fi` keep the Japanese word (Jinja/Taisha); `sk`/`nan` re-spell
+phonetically (Icukušima, POJ); `ro` convention inconsistent.
 **Still todo (need script maps):** `th` 33 (Thai), `az` 25, `my` 25 (Burmese),
 `el` 16 (Greek), `he` 14 (Hebrew), `ka` 10 (Georgian), `mk` 4, `ta` 3 …
 

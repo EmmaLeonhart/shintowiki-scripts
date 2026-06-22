@@ -272,6 +272,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - **This clears the original queue's Stage C.** Remaining: B3's long tail
   (more affix langs, script-map langs, single-digit tail).
 
+### B3 tier 2 (batch 2) — 4 more affix languages
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_eu_tier2b.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`.
+
+- Added `la` (Templum/Magnum Templum), `ast` (Santuariu, like Spanish), `sh`/`hr`
+  (`<Name> hram`, space-suffix like tr/eu) — conventions from existing labels.
+  TDD 7 tests; 52 pass. Coverage **32→36**, todo **81→77**.
+- Deferred with reasons: `eo`/`jv` (mixed conventions — pick one later); `cs`/`sl`/
+  `sk`/`nan` (phonetic name respelling); `pl`/`fi` (keep Japanese word); `ro`
+  (inconsistent). Remaining todo is increasingly script-map work (Greek/Thai/
+  Hebrew/Georgian/Burmese) + the single-digit tail.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
