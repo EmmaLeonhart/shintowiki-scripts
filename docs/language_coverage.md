@@ -4,7 +4,7 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **19 covered**, **94 todo**.
+As of 2026-06-21: **116 languages** in `query.csv`, **25 covered**, **88 todo**.
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)
@@ -23,15 +23,14 @@ derive from the Japanese label (a known assumption, B2 dropped).
 
 ## Todo — the long tail (94), by priority
 
-### Tier 1 — CJK script variants of zh (≈1272 labels, biggest single win)
-`zh-hant` 592, `zh-hk` 376, `zh-hans` 123, `zh-tw` 120, `zh-cn` 41, `zh-sg` 20,
-plus the Sinitic topolects `nan` 11, `yue` 8, `wuu` 6, `hak` 4, `lzh` 2,
-`nan-latn-tailo` 4, `nan-latn-pehoeji` 4.
-These derive from the **zh / ja** label, not English: mostly OpenCC script
-conversion (`zh-hant`/`zh-hk`/`zh-tw` = traditional; `zh-hans`/`zh-cn`/`zh-sg` =
-simplified) of the existing `generate_chinese_quickstatements.py` output. The
-Chinese generator currently emits only `Lzh`; extending it to emit the variants
-is the highest-leverage next generator.
+### Tier 1 — CJK script variants of zh — **DONE (B3a)**
+`zh-hant`, `zh-hk`, `zh-tw` (traditional, via OpenCC s2t/s2tw/s2hk) and
+`zh-hans`, `zh-cn`, `zh-sg` (simplified, reuse the base) are now emitted by
+`generate_chinese_quickstatements.py` (`zh_variants`) into their own
+`quickstatements/<code>.txt` files. **Still todo:** the Sinitic topolects that
+aren't a pure script conversion — `nan` 11, `yue` 8, `wuu` 6, `hak` 4, `lzh` 2,
+`nan-latn-tailo` 4, `nan-latn-pehoeji` 4 (need romanization/topolect-specific
+handling, not just OpenCC).
 
 ### Tier 2 — European / high-count transliteration targets
 `sv` 37, `ca` 35, `pl` 35, `th` 33, `cs` 31, `sl` 29, `la` 28, `az` 25, `my` 25,

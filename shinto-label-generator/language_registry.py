@@ -37,6 +37,12 @@ COVERED = {
     "pt": ("generate_multilang_quickstatements.py", "affix"),
     # CJK + special cases
     "zh": ("generate_chinese_quickstatements.py", "cjk-manyogana"),
+    "zh-hant": ("generate_chinese_quickstatements.py", "opencc-s2t"),
+    "zh-tw": ("generate_chinese_quickstatements.py", "opencc-s2tw"),
+    "zh-hk": ("generate_chinese_quickstatements.py", "opencc-s2hk"),
+    "zh-hans": ("generate_chinese_quickstatements.py", "simplified-base"),
+    "zh-cn": ("generate_chinese_quickstatements.py", "simplified-base"),
+    "zh-sg": ("generate_chinese_quickstatements.py", "simplified-base"),
     "ko": ("generate_korean_quickstatements.py", "hangul/hanja"),
     "tok": ("fetch_shrines_tokiponize.py", "tokiponize"),
     "id": ("generate_indonesian_proposals.py", "romaji"),

@@ -183,6 +183,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   each against existing labels). Split out **B3a** (zh variants) as the concrete
   next generator.
 
+### B3a — emit zh script variants from the Chinese generator
+**Files:** `shinto-label-generator/generate_chinese_quickstatements.py`,
+`shinto-label-generator/tests/test_zh_variants.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`,
+`queue.md`.
+
+- `generate_chinese_quickstatements.py` emitted only `Lzh` (simplified). Added
+  `zh_variants(simplified)` (TDD, 4 tests): simplified codes (zh-hans/zh-cn/zh-sg)
+  reuse the base; traditional codes (zh-hant/zh-tw/zh-hk) via OpenCC s2t/s2tw/s2hk.
+  `main()` now writes a `quickstatements/<code>.txt` per variant; made the module
+  import-safe. Verified: 護國神社→zh `护国神社`→zh-hant `護國神社`; 靖国神社→zh-hant
+  `靖國神社`. Registry updated → coverage **19→25 covered, 94→88 todo**. 26 tests pass.
+- Known limitation (documented): variants are generated for the missing-zh set;
+  a shrine that has a variant label but no `zh` (near-empty intersection) could
+  be overwritten — acceptable for this rare CJK case.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

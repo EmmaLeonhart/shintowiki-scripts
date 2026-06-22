@@ -16,11 +16,14 @@ import re
 import requests
 from opencc import OpenCC
 
-# Windows UTF-8 console fix (guard against double-wrapping from imports)
-if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
-    sys.stdout.reconfigure(encoding='utf-8')
+
+def _ensure_utf8_stdout():
+    """Windows UTF-8 console fix. Called from main() rather than at import time so
+    the module stays import-safe (a module-level sys.stdout swap breaks pytest)."""
+    if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
+        sys.stdout.reconfigure(encoding='utf-8')
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
@@ -44,6 +47,25 @@ ORDER BY ?item
 # Japanese shinjitai is close enough to traditional Chinese for t2s to work.
 # (jp2t config doesn't exist in opencc-python-reimplemented)
 t2s = OpenCC("t2s")
+
+# B3a: script-variant converters from the simplified base label.
+_s2t = OpenCC("s2t")    # generic traditional
+_s2tw = OpenCC("s2tw")  # Taiwan traditional
+_s2hk = OpenCC("s2hk")  # Hong Kong traditional
+
+
+def zh_variants(simplified):
+    """Map the simplified zh label to each zh script-variant language code.
+    Simplified codes (zh-hans/zh-cn/zh-sg) reuse the base; traditional codes
+    (zh-hant/zh-tw/zh-hk) are OpenCC-converted."""
+    return {
+        "zh-hans": simplified,
+        "zh-cn": simplified,
+        "zh-sg": simplified,
+        "zh-hant": _s2t.convert(simplified),
+        "zh-tw": _s2tw.convert(simplified),
+        "zh-hk": _s2hk.convert(simplified),
+    }
 
 # ----------------------------
 # Kana → Chinese character mapping (man'yogana-style phonetic substitution)
@@ -176,6 +198,7 @@ def fetch_shrines():
 
 
 def main():
+    _ensure_utf8_stdout()
     results = fetch_shrines()
 
     # Deduplicate by QID
@@ -214,6 +237,25 @@ def main():
 
     print(f"\nDone! Wrote {len(rows)} Chinese QuickStatements to {filepath}")
     print(f"Skipped {skipped} items (no translatable label)")
+
+    # B3a: emit the zh script variants (simplified reuse base; traditional via
+    # OpenCC). Generated for the same shrines (those missing a zh label, which
+    # almost always also miss the rarer script-variant labels).
+    variant_codes = ["zh-hant", "zh-tw", "zh-hk", "zh-hans", "zh-cn", "zh-sg"]
+    variant_lines = {code: [] for code in variant_codes}
+    for row in rows:
+        variants = zh_variants(row["zh_label"])
+        for code, label in variants.items():
+            esc = label.replace('"', '""')
+            variant_lines[code].append(f'# Source: JA "{row["ja_label"]}"')
+            variant_lines[code].append(f'{row["qid"]}\tL{code}\t"{esc}"')
+    for code in variant_codes:
+        vpath = os.path.join(outdir, f"{code}.txt")
+        with open(vpath, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(variant_lines[code]))
+            if variant_lines[code]:
+                f.write("\n")
+        print(f"  Wrote {len(rows)} {code} QuickStatements to {vpath}")
 
     # Sample output
     print("\n--- Sample output ---")
