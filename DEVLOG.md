@@ -258,6 +258,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - Updated a registry test fixture that had used `sv` as an "uncovered" example
   (sv is now covered) → swapped to still-uncovered `pl`/`th`.
 
+### C1 — CJK→ja label backfill
+**Files:** `modern-quickstatements/generate_cjk_ja_backfill.py`,
+`modern-quickstatements/tests/test_cjk_ja_backfill.py`, `submit_daily_batch.py`,
+`.github/workflows/generate-shrines-missing-en-label.yml`, `queue.md`.
+
+- Investigated first: only **3 shrines** have a zh label but no ja (Taiwan-era
+  shrines: 西山神社, 大溪社, 馬太鞍遙拜所). `generate_cjk_ja_backfill.py` copies the
+  zh-family name onto the ja label via `Qxxx|Lja|"…"`, guarded by
+  `is_cjk_ideographic` so only genuine CJK ideographs are copied (never hangul/
+  Latin/mixed). TDD 7 tests; live run emits the 3 expected lines. Wired
+  `cjk_ja_backfill.txt` into `ATOMIC_FILES` + the daily workflow.
+- **This clears the original queue's Stage C.** Remaining: B3's long tail
+  (more affix langs, script-map langs, single-digit tail).
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

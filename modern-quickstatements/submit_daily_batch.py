@@ -42,6 +42,7 @@ ATOMIC_FILES = [
     "en_labels.txt",                          # Add en labels (Len) for items with a shintowiki page but no en label
     "kana_en_labels.txt",                     # Stage 1: en labels (Len) + aliases (Aen) deterministically built from kana (generate_kana_en_labels.py); no LLM
     "identical_name_en_labels.txt",           # Stage 2: en labels (Len) + aliases (Aen) reused from same-ja-name shrines (generate_identical_name_en_labels.py); no LLM
+    "cjk_ja_backfill.txt",                     # C1: copy a CJK (zh) name onto the ja label for shrines lacking one (generate_cjk_ja_backfill.py)
     "en_labels_sonnet.txt",                   # Add en labels (Len) machine-translated by the daily remote Sonnet routine (5/day) from ja label + kana
     "label_proposals_drip.txt",               # 20/day random multilingual labels drip-fed from the shinto-label-generator subtree
     "kana_qualifier_add.txt",                 # Add <kana>カミノヤシロ P1814 qualifier to ojp-hani P1448 official names (bot request 2026-02-26)

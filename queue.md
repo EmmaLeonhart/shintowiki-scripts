@@ -26,9 +26,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 - [ ] **B3. Institutionalize one generator per language using `query.csv`.** **Registry DONE:** `shinto-label-generator/language_registry.py` (live source of truth: 116 langs, 19 covered, 94 todo) + `docs/language_coverage.md` (tiered plan). Remaining = add generators down the tiers. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo`), inspect existing labels and continue a good pattern or invent a sane convention. Subitems below track the tiers.
 
-## STAGE C — edge case (low priority, do not fret)
-
-- [ ] **C1. CJK-name-but-no-Japanese-label backfill.** If a shrine has no `ja` label but has a name in another CJK language, copy that CJK name onto the `ja` label (via QuickStatements). Rare edge case — keep minimal.
 
 ---
 
