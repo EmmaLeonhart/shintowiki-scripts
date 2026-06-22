@@ -66582,6 +66582,8 @@ Q100151435	Lko	"승원사"
 Q100151787	Lko	"정각원"
 # Source: JA "西八幡社" (hanja reading)
 Q100152252	Lko	"서팔번사"
+# Source: JA "文官屯神社" (hanja reading)
+Q101031475	Lko	"문관둔신사"
 # Source: JA "敬専寺 (刈谷市)" (hanja reading)
 Q101584182	Lko	"경부사예곡시"
 # Source: JA "建国神廟" (hanja reading)
@@ -67594,6 +67596,8 @@ Q113162702	Lko	"교은사"
 Q11327031	Lko	"하와이대신궁"
 # Source: JA "ハワイ石鎚神社" (hanja reading)
 Q11327035	Lko	"하와이석추신사"
+# Source: JA "ハワイ金刀比羅神社・ハワイ太宰府天満宮" (hanja reading)
+Q11327036	Lko	"하와이금도비라신사하와이태재부천만궁"
 # Source: JA "本龍寺" (hanja reading)
 Q113332055	Lko	"본룡사"
 # Source: JA "錫杖寺" (hanja reading)
@@ -71990,6 +71994,8 @@ Q134419501	Lko	"변재천"
 Q134436385	Lko	"검영산옥천사"
 # Source: JA "長松院" (hanja reading)
 Q134464446	Lko	"장송원"
+# Source: JA "マウイ神社" (hanja reading)
+Q134489499	Lko	"마우이신사"
 # Source: JA "眞福寺" (hanja reading)
 Q134530903	Lko	"진복사"
 # Source: JA "遍照院" (hanja reading)
@@ -107162,6 +107168,8 @@ Q16482065	Lko	"에비스제리"
 Q16482294	Lko	"부사산신앙노대상토운술노원천"
 # Source: JA "藤崎八旛宮" (hanja reading)
 Q167146	Lko	"등기팔번궁"
+# Source: JA "厦門神社" (hanja reading)
+Q17025103	Lko	"하문신사"
 # Source: JA "安禅寺" (hanja reading)
 Q17192562	Lko	"안선사"
 # Source: JA "安養寺" (hanja reading)
@@ -109006,6 +109014,8 @@ Q57445946	Lko	"지식사"
 Q57603743	Lko	"광동신사"
 # Source: JA "比賣神社" (hanja reading)
 Q5765240	Lko	"비매신사"
+# Source: JA "浄土真宗本願寺派ハワイ開教区" (hanja reading)
+Q5897245	Lko	"정토진종본원사파하와이개교구"
 # Source: JA "常膳寺" (hanja reading)
 Q59046527	Lko	"상선사"
 # Source: JA "高山寺" (hanja reading)
@@ -109422,6 +109432,8 @@ Q76971499	Lko	"옥천신사우촌시"
 Q77762409	Lko	"서룡사풍전시"
 # Source: JA "光明寺" (hanja reading)
 Q78178320	Lko	"광명사"
+# Source: JA "西安神社" (hanja reading)
+Q79306447	Lko	"서안신사"
 # Source: JA "尾曳稲荷神社" (hanja reading)
 Q80428331	Lko	"미예도하신사"
 # Source: JA "光恩寺" (hanja reading)
@@ -109662,6 +109674,8 @@ Q95830097	Lko	"상림사"
 Q95844854	Lko	"극악사"
 # Source: JA "鞭崎八幡宮" (hanja reading)
 Q95937613	Lko	"편기팔번궁"
+# Source: JA "南京神社" (hanja reading)
+Q95997484	Lko	"남경신사"
 # Source: JA "勝楽寺 (西尾市)" (hanja reading)
 Q96035885	Lko	"승악사서미시"
 # Source: JA "円能寺" (hanja reading)
