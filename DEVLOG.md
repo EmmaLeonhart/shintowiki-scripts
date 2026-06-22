@@ -199,6 +199,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   a shrine that has a variant label but no `zh` (near-empty intersection) could
   be overwritten — acceptable for this rare CJK case.
 
+### B4 (Vietnamese) — add vi generator; split Bengali to B4b
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_vietnamese.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`,
+`queue.md`.
+
+- Checked existing Wikidata labels (20 vi, 1 bn) to follow convention.
+  **Vietnamese** is clean prefix-style: `Đền <Name>` (shrine), `Thần cung <Name>`
+  (grand/jingū), `Chùa` (temple). Added `vi` to `ALL_LANGS`, `get_affix()`, and
+  the prefix-style format branch. Output matches real labels exactly
+  (Đền Itsukushima, Thần cung Ise, Chùa Senso). TDD 4 tests; 30 pass.
+  Registry → **26 covered, 87 todo**.
+- **Bengali split to B4b:** its one existing label (太宰府天満宮 → দাজাইফু তেনমঙ্গু)
+  is pure phonetic transliteration with no translated shrine word; it needs a
+  Bengali-abugida map (analogous to the Hindi maps) + a designed convention —
+  a full iteration, tracked separately. Pipeline-status note recorded: `id` has
+  a generator, `ja`/`en` are source/pipeline, `ms` (Malay) has none yet.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

@@ -478,6 +478,11 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "pt":
             if p_type == "temple": return "Grande Templo" if is_grand else "Templo"
             return "Grande Santuário" if is_grand else "Santuário"
+        if lang == "vi":
+            # Convention from existing Wikidata labels: Đền (shrine),
+            # Thần cung (grand/jingū), Chùa (Buddhist temple).
+            if p_type == "temple": return "Chùa"
+            return "Thần cung" if is_grand else "Đền"
         if lang == "fa": return "معبد بزرگ" if is_grand else "معبد"
         if lang == "ar": return "معبد … الكبير" if is_grand else "معبد"
         if lang == "arz": return "معبد … الكبير" if is_grand else "معبد"
@@ -492,7 +497,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt"]:
+    if lang in ["es", "it", "fr", "pt", "vi"]:
         return f"{get_affix()} {name}"
     if lang == "eu":
         return f"{name} {get_affix()}"
@@ -526,7 +531,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 # SPARQL
 # ----------------------------
 
-ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt"]
+ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi"]
 
 
 def make_sparql(lang_code):
