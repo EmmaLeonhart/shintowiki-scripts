@@ -4,7 +4,7 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **44 covered**, **69 todo** (plus `bn`, a new language not yet in query.csv).
+As of 2026-06-21: **116 languages** in `query.csv`, **47 covered**, **66 todo** (plus `bn`, a new language not yet in query.csv).
 (`ja`/`en` are source/pipeline languages, `mul` is skipped — not counted as todo.)
 
 ## Covered (19)

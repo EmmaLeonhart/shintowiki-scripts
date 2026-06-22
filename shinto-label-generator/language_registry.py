@@ -55,6 +55,9 @@ COVERED = {
     "eo": ("generate_multilang_quickstatements.py", "affix"),
     "jv": ("generate_multilang_quickstatements.py", "affix"),
     "he": ("generate_multilang_quickstatements.py", "hebrew"),
+    "ms": ("generate_multilang_quickstatements.py", "affix"),
+    "br": ("generate_multilang_quickstatements.py", "affix"),
+    "mr": ("generate_multilang_quickstatements.py", "marathi-devanagari"),
     # CJK + special cases
     "zh": ("generate_chinese_quickstatements.py", "cjk-manyogana"),
     "zh-hant": ("generate_chinese_quickstatements.py", "opencc-s2t"),

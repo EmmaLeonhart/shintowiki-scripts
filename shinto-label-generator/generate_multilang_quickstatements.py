@@ -289,6 +289,41 @@ def bengalify(name):
     return "".join(out)
 
 
+# Marathi (deep tail): same Devanagari script as Hindi, but the existing labels
+# render names with explicit aa-matras (कामिकावा, not कमिकव) + the तीर्थ suffix.
+# So: hindify, then insert a Devanagari aa-matra after each inherent-a consonant
+# (same logic as bengalify, staying in Devanagari). Known gap: hindify drops
+# gemination (Hokkaido→होकाइदो vs होक्काइदो) — inherited from Hindi, documented.
+_DEVA_AA_MATRA = "ा"  # U+093E
+_MR_TIRTH = "".join(chr(c) for c in [0x0924, 0x0940, 0x0930, 0x094D, 0x0925])  # तीर्थ
+
+
+def marathify(name):
+    """Romanized Japanese name → Marathi Devanagari with explicit aa-matras."""
+    deva = hindify(name)
+    if not deva:
+        return ""
+    out = []
+    i, n = 0, len(deva)
+    while i < n:
+        ch = deva[i]
+        if ch == " ":
+            out.append(" ")
+            i += 1
+            continue
+        out.append(ch)
+        cp = ord(ch)
+        i += 1
+        if cp in _DEVA_CONSONANTS:
+            if i < n and ord(deva[i]) == _DEVA_NUKTA:
+                out.append(deva[i])
+                i += 1
+            nxt = ord(deva[i]) if i < n else None
+            if nxt not in _DEVA_MATRAS and nxt != _DEVA_VIRAMA:
+                out.append(_DEVA_AA_MATRA)
+    return "".join(out)
+
+
 def _arabify_word(word):
     """Transliterate a single romanized Japanese word to Arabic script."""
     w = unicodedata.normalize("NFKC", word).lower()
@@ -686,6 +721,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "eo": return "Ĉefjaŝiro" if is_grand else "Jaŝiro"    # prefix (Esperantized yashiro)
         if lang == "jv": return "Kuil"                                   # prefix
         if lang == "he": return "מקדש"                                   # prefix, hebraified name
+        if lang == "ms": return "Kuil Agung" if is_grand else "Kuil"      # prefix (Malay, like id)
+        if lang == "br": return "Santual"                                # prefix (Breton)
+        if lang == "mr": return _MR_TIRTH                                # suffix, Marathi Devanagari name
         return ""
 
     if lang == "tr":
@@ -696,7 +734,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br"]:
         return f"{get_affix()} {name}"
     if lang in ["sv", "nb", "da", "hu"]:
         return f"{name}-{get_affix()}"
@@ -734,6 +772,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "hi":
         hi_name = hindify(name)
         return f"{hi_name} {get_affix()}"
+    if lang == "mr":
+        mr_name = marathify(name)
+        return f"{mr_name} {get_affix()}"
     if lang == "bn":
         bn_name = bengalify(name)
         if not bn_name:
@@ -747,7 +788,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
-             "az", "tl", "war", "min", "eo", "jv", "he"]
+             "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr"]
 
 
 def make_sparql(lang_code):

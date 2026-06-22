@@ -349,6 +349,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 - **B3 complete; the entire label-translation agenda is done.** Cleaned the
   finished agenda scaffolding out of queue.md (only the pinned cron tail remains).
 
+### Deep language tail (10pm cron, batch 1) — ms, br, mr
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`tests/test_ms_br.py`, `tests/test_marathi.py`, `language_registry.py`,
+`docs/language_coverage.md`.
+
+- First nightly deep-tail run. Added **ms** (Malay, `Kuil`/`Kuil Agung`), **br**
+  (Breton, `Santual`) — affix, conventions from existing labels — and **mr**
+  (Marathi): new `marathify` = hindify (Devanagari) + explicit aa-matra insertion
+  (Marathi renders कामिकावा, not कमिकव) + `तीर्थ` suffix. Verified against real
+  labels BEFORE building (कामिकावा/ओबिहिरो/सारुका reproduce exactly); the one
+  non-match (Hokkaido gemination) is a pre-existing hindify gap, documented.
+  TDD; 78 tests pass. Coverage **44→47**, todo **69→66**.
+- Assessed but deferred this run: yue/wuu (mixed traditional/simplified zh),
+  hak/nan-latn (POJ romanization), ka/cs/sl/pl/fi/mk (keep Japanese suffix /
+  phonetic respell), ta/oc/ga (no consistent native word) — all fail the gate.
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep
