@@ -25,7 +25,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 ## STAGE B — downstream language generators seeded from the English label
 
 - [ ] **B3. Institutionalize one generator per language using `query.csv`.** **Registry DONE:** `shinto-label-generator/language_registry.py` (live source of truth: 116 langs, 19 covered, 94 todo) + `docs/language_coverage.md` (tiered plan). Remaining = add generators down the tiers. For low-sample languages whose existing Wikidata convention looks clearly wrong (e.g. Tibetan `bo`), inspect existing labels and continue a good pattern or invent a sane convention. Subitems below track the tiers.
-- [ ] **B4b. Add Bengali (`bn`) generator.** Vietnamese done (B4 — `Đền`/`Thần cung`/`Chùa` affix, matching existing labels). Bengali needs a Bengali-abugida transliteration map (analogous to the Hindi `HINDI_BASE`/`YOON`/`INITIAL` maps) + `bengalify(name)`, seeded from the English name. Existing convention (1 label: 太宰府天満宮 → দাজাইফু তেনমঙ্গু) is pure phonetic transliteration with no translated shrine word — design a sane convention (transliterate name; optionally append the Bengali shrine word মন্দির). Also verify pipeline status of `id`/`ms`/`ja`/`en` (Mistral muddied which are covered) — `id` has a generator, `ja`/`en` are source/pipeline, `ms` (Malay) has none yet.
 
 ## STAGE C — edge case (low priority, do not fret)
 

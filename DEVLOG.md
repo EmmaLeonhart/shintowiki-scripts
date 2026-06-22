@@ -217,6 +217,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
   a full iteration, tracked separately. Pipeline-status note recorded: `id` has
   a generator, `ja`/`en` are source/pipeline, `ms` (Malay) has none yet.
 
+### B4b — add Bengali (bn) generator
+**Files:** `shinto-label-generator/generate_multilang_quickstatements.py`,
+`shinto-label-generator/tests/test_bengali.py`,
+`shinto-label-generator/language_registry.py`, `docs/language_coverage.md`,
+`queue.md`.
+
+- Bengali built by transliterating the Devanagari (`hindify`) output to Bengali
+  script: `DEVANAGARI_TO_BENGALI` (built dynamically at +0x80 offset — verified
+  valid for all 28 chars hindify can emit, with `व`→`ব` the one exception) +
+  `bengalify`. Convention mirrors Hindi: transliterate name + `মন্দির` /
+  `মহা মন্দির`.
+- **Caught the inherent-vowel trap via real-data check:** a naive akshara copy
+  gave কসুগ for "Kasuga", which reads "Kôsugô" (Bengali's inherent vowel is ô,
+  not Devanagari's a). Fixed `bengalify` to insert an explicit aa-matra (া)
+  after inherent-a consonants → কাসুগা "Kasuga", যাসুকুনি "Yasukuni". TDD 6
+  tests (codepoint-based to avoid script typos); 36 label-gen tests pass.
+- Verified `ms` (Malay) still has no generator; `id` has one; `ja`/`en` are
+  source/pipeline. **Stage B downstream-language work: B1/B1b/B3a/B4/B4b done;
+  remaining is B3's tier-2/4 long tail.**
+
 ## 2026-06-19
 
 ### Verified last changes + closed weekly Open-questions sweep

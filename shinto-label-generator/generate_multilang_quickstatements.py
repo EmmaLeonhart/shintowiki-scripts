@@ -227,6 +227,68 @@ def hindify(name):
     return " ".join(w for w in hindi_words if w)
 
 
+# ----------------------------
+# Bengali (B4b): transliterate the Devanagari (hindify) output to Bengali script.
+# Devanagari and Bengali share a parallel Unicode layout (ISCII legacy), so each
+# emitted akshara maps to its Bengali counterpart at offset +0x80 — verified
+# valid for every character hindify can emit EXCEPT व (no Bengali 'va' → ব).
+# Built dynamically from the Hindi maps so it stays in sync.
+# ----------------------------
+
+DEVANAGARI_TO_BENGALI = {}
+for _d in (HINDI_BASE, HINDI_YOON, HINDI_INITIAL):
+    for _v in _d.values():
+        for _ch in _v:
+            DEVANAGARI_TO_BENGALI.setdefault(_ch, chr(ord(_ch) + 0x80))
+DEVANAGARI_TO_BENGALI["व"] = "ব"  # Bengali has no 'va' letter; use ba
+
+# Bengali shrine words (mirrors the Hindi मंदिर / महा मंदिर convention),
+# built from codepoints to avoid mis-typed script: মন্দির, মহা মন্দির.
+_BN_MANDIR = "".join(chr(c) for c in [0x09AE, 0x09A8, 0x09CD, 0x09A6, 0x09BF, 0x09B0])
+_BN_MAHA = "".join(chr(c) for c in [0x09AE, 0x09B9, 0x09BE])
+
+
+_DEVA_CONSONANTS = set(range(0x0915, 0x093A))   # क … ह
+_DEVA_MATRAS = set(range(0x093E, 0x094D))       # ा … ौ (vowel signs)
+_DEVA_VIRAMA = 0x094D
+_DEVA_NUKTA = 0x093C
+_BN_AA_MATRA = "া"                          # া
+
+
+def bengalify(name):
+    """Transliterate a romanized Japanese name to Bengali script via the
+    Devanagari (hindify) output. Bengali's inherent vowel is 'ô', not 'a', so a
+    bare consonant carrying Devanagari's inherent 'a' must get an explicit
+    aa-matra (া) to read correctly (কাসুগা "Kasuga", not কসুগ "Kôsugô").
+    Returns None if hindify produced nothing or any char is unmapped."""
+    deva = hindify(name)
+    if not deva:
+        return None
+    out = []
+    i, n = 0, len(deva)
+    while i < n:
+        ch = deva[i]
+        if ch == " ":
+            out.append(" ")
+            i += 1
+            continue
+        if ch not in DEVANAGARI_TO_BENGALI:
+            return None
+        out.append(DEVANAGARI_TO_BENGALI[ch])
+        cp = ord(ch)
+        i += 1
+        if cp in _DEVA_CONSONANTS:
+            # consume an optional nukta (stays before any matra)
+            if i < n and ord(deva[i]) == _DEVA_NUKTA:
+                out.append(DEVANAGARI_TO_BENGALI[deva[i]])
+                i += 1
+            # inherent 'a' unless an explicit matra or virama follows
+            nxt = ord(deva[i]) if i < n else None
+            if nxt not in _DEVA_MATRAS and nxt != _DEVA_VIRAMA:
+                out.append(_BN_AA_MATRA)
+    return "".join(out)
+
+
 def _arabify_word(word):
     """Transliterate a single romanized Japanese word to Arabic script."""
     w = unicodedata.normalize("NFKC", word).lower()
@@ -487,6 +549,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "ar": return "معبد … الكبير" if is_grand else "معبد"
         if lang == "arz": return "معبد … الكبير" if is_grand else "معبد"
         if lang == "hi": return "महा मंदिर" if is_grand else "मंदिर"
+        if lang == "bn": return f"{_BN_MAHA} {_BN_MANDIR}" if is_grand else _BN_MANDIR
         return ""
 
     if lang == "tr":
@@ -525,13 +588,18 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "hi":
         hi_name = hindify(name)
         return f"{hi_name} {get_affix()}"
+    if lang == "bn":
+        bn_name = bengalify(name)
+        if not bn_name:
+            return None
+        return f"{bn_name} {get_affix()}"
     return None
 
 # ----------------------------
 # SPARQL
 # ----------------------------
 
-ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi"]
+ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn"]
 
 
 def make_sparql(lang_code):

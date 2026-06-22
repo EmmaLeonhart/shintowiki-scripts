@@ -38,8 +38,9 @@ handling, not just OpenCC).
 `ro` 9, `gl` 6, `ast` 5, `jv` 5, `sh` 5, `hr` 4, `mk` 4, `sk` 3 …
 Most are affix-style (like the existing 15) seeded from the English name; `el`
 (Greek), `th` (Thai), `he` (Hebrew), `ka` (Georgian), `my` (Burmese) need script
-transliteration maps. **Vietnamese done (B4 — `Đền`/`Thần cung`/`Chùa`).
-Bengali (`bn`) queued as B4b** (needs a Bengali-abugida map).
+transliteration maps. **Vietnamese done (B4 — `Đền`/`Thần cung`/`Chùa`) and
+Bengali done (B4b — Devanagari→Bengali abugida via `bengalify`, with explicit
+aa-matras since Bengali's inherent vowel is ô).**
 
 ### Tier 3 — regional-language variants of already-covered languages
 `en-gb` 11, `en-us` 8, `en-ca` 7, `pt-br` 2, `de-ch` 1 — these duplicate an
