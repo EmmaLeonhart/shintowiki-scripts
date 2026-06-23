@@ -1654,6 +1654,8 @@ Q1088510	Lko	"코잔지 사원"
 Q10885171	Lko	"이자와노미야 신사"
 # Source: ID "Kuil Sakuma" (romanization)
 Q10885893	Lko	"사쿠마 신사"
+# Source: ID "Kuil Jiadong" (romanization)
+Q10886974	Lko	"지아돈 신사"
 # Source: ID "Wihara Shinano Kokubun-ji" (romanization)
 Q10888022	Lko	"시나노코쿠분지 사원"
 # Source: ID "Wihara Bitchū Kokubun-ji" (romanization)
@@ -1692,6 +1694,8 @@ Q10917397	Lko	"요시노 신사"
 Q10919351	Lko	"교간지 사원"
 # Source: ID "Kuil Hamhung" (romanization)
 Q10921793	Lko	"하훈 신사"
+# Source: ID "Kuil Yuanlin" (romanization)
+Q10922369	Lko	"유안인 신사"
 # Source: ID "Wihara Zendo-ji" (romanization)
 Q10923448	Lko	"젠도지 사원"
 # Source: ID "Kuil Kagi" (romanization)
@@ -5300,8 +5304,6 @@ Q11411459	Lko	"후루쿠마 신사"
 Q11411527	Lko	"코마치아타고 신사"
 # Source: ID "Wihara Kochōzen-ji" (romanization)
 Q11411748	Lko	"코초젠지 사원"
-# Source: ID "Kuil Tainan" (romanization)
-Q11411931	Lko	"타이난 신사"
 # Source: ID "Kuil Ukyōzuka" (romanization)
 Q11412139	Lko	"우쿄즈카 신사"
 # Source: ID "Kuil kanou" (romanization)
@@ -60048,8 +60050,14 @@ Q1552446	Lko	"네고로지 사원"
 Q15715500	Lko	"호쿄지 사원"
 # Source: ID "Wihara Hannya-ji" (romanization)
 Q1576651	Lko	"한냐지 사원"
+# Source: ID "Kuil Tongxiao" (romanization)
+Q15919074	Lko	"톤이아오 신사"
 # Source: ID "Kuil Gokanseki" (romanization)
 Q15927737	Lko	"고칸세키 신사"
+# Source: ID "Kuil Donggang" (romanization)
+Q15931876	Lko	"돈간 신사"
+# Source: ID "Kuil Qingshui" (romanization)
+Q15934402	Lko	"인슈이 신사"
 # Source: ID "Kuil Hinomisaki" (romanization)
 Q1619446	Lko	"히노미사키 신사"
 # Source: JA "大観密寺" (hanja reading fallback)
@@ -63210,6 +63218,8 @@ Q39199198	Lko	"타케하야 신사"
 Q39201727	Lko	"스사노오 신사"
 # Source: ID "Kuil Taichung" (romanization)
 Q3936229	Lko	"타이춘 신사"
+# Source: ID "Kuil Taitung" (romanization)
+Q3936240	Lko	"타이쓴 신사"
 # Source: ID "Kuil Taipei Tenmangū" (romanization)
 Q3936981	Lko	"타이페이텐만구 신사"
 # Source: ID "Wihara Dairin-ji" (romanization)
@@ -64822,6 +64832,10 @@ Q67518287	Lko	"호킨지 사원"
 Q67752315	Lko	"히메미야 신사"
 # Source: ID "Kuil Hokkō" (romanization)
 Q67935789	Lko	"호코 신사"
+# Source: ID "Kuil Chaozhou" (romanization)
+Q67935896	Lko	"차오호우 신사"
+# Source: ID "Kuil Riko" (romanization)
+Q67935897	Lko	"리코 신사"
 # Source: ID "Kuil Araho" (romanization)
 Q67989816	Lko	"아라호 신사"
 # Source: ID "Wihara Shōgan-ji" (romanization)
@@ -64990,6 +65004,8 @@ Q76280323	Lko	"쿄텐지 사원"
 Q76386845	Lko	"카야텐만 신사"
 # Source: ID "Kuil Shirayamahime" (romanization)
 Q76715002	Lko	"시라야마히메 신사"
+# Source: ID "Kuil Taoyuan" (romanization)
+Q7684357	Lko	"타오유안 신사"
 # Source: ID "Wihara Kajū-ji" (romanization)
 Q772598	Lko	"카주지 사원"
 # Source: ID "Kuil Azusami Tenjinsha" (romanization)
@@ -65504,28 +65520,14 @@ Q967723	Lko	"즈이센지 사원"
 Q96820108	Lko	"하치오지 신사"
 # Source: ID "Kuil Kaizan" (romanization)
 Q97013988	Lko	"카이잔 신사"
-# Source: ID "Kuil Taitung" (romanization)
-Q97013990	Lko	"타이쓴 신사"
-# Source: ID "Kuil Penghu" (romanization)
-Q97013995	Lko	"펜후 신사"
 # Source: ID "Kuil Miaoli" (romanization)
 Q97013996	Lko	"미아오이 신사"
-# Source: ID "Kuil Taoyuan" (romanization)
-Q97013997	Lko	"타오유안 신사"
 # Source: ID "Kuil Taihoku Inari" (romanization)
 Q97013999	Lko	"타이호쿠이나리 신사"
 # Source: ID "Kuil Changhua" (romanization)
 Q97014000	Lko	"찬후아 신사"
-# Source: ID "Kuil Chaozhou" (romanization)
-Q97014001	Lko	"차오호우 신사"
-# Source: ID "Kuil Donggang" (romanization)
-Q97014002	Lko	"돈간 신사"
-# Source: ID "Kuil Yuanlin" (romanization)
-Q97014004	Lko	"유안인 신사"
 # Source: ID "Kuil Shinei" (romanization)
 Q97014005	Lko	"시네이 신사"
-# Source: ID "Kuil Qingshui" (romanization)
-Q97014006	Lko	"인슈이 신사"
 # Source: ID "Kuil Xinzhuang" (romanization)
 Q97014008	Lko	"인후안 신사"
 # Source: ID "Kuil Fengyuan" (romanization)
@@ -65544,8 +65546,6 @@ Q97014017	Lko	"토세키 신사"
 Q97014140	Lko	"우오돈 신사"
 # Source: ID "Kuil Wenshan" (romanization)
 Q97014143	Lko	"웬샨 신사"
-# Source: ID "Kuil Tongxiao" (romanization)
-Q97014145	Lko	"톤이아오 신사"
 # Source: ID "Kuil Dahu" (romanization)
 Q97014146	Lko	"다후 신사"
 # Source: ID "Kuil Zhudong" (romanization)
@@ -65560,8 +65560,6 @@ Q97014154	Lko	"로코 신사"
 Q97014156	Lko	"이우슈이 신사"
 # Source: ID "Kuil Yuchi" (romanization)
 Q97014158	Lko	"유치 신사"
-# Source: ID "Kuil Xinhua" (romanization)
-Q97014159	Lko	"인후아 신사"
 # Source: ID "Kuil Nanjing" (romanization)
 Q97014163	Lko	"난진 신사"
 # Source: ID "Kuil Alishan" (romanization)
@@ -65570,16 +65568,10 @@ Q97014165	Lko	"아이샨 신사"
 Q97014166	Lko	"도우이우 신사"
 # Source: ID "Kuil Linnei" (romanization)
 Q97014167	Lko	"인네이 신사"
-# Source: ID "Kuil Riko" (romanization)
-Q97014170	Lko	"리코 신사"
-# Source: ID "Kuil Jiadong" (romanization)
-Q97014171	Lko	"지아돈 신사"
 # Source: ID "Kuil Hengchun" (romanization)
 Q97014176	Lko	"헨춘 신사"
 # Source: ID "Kuil Toyota" (romanization)
 Q97014178	Lko	"토요타 신사"
-# Source: ID "Kuil Lintian" (romanization)
-Q97014180	Lko	"인이안 신사"
 # Source: ID "Kuil Dairen" (romanization)
 Q97056254	Lko	"다이렌 신사"
 # Source: ID "Wihara Fuko-ji" (romanization)
@@ -68158,6 +68150,8 @@ Q114260461	Lko	"장덕사"
 Q11426261	Lko	"성흥사"
 # Source: JA "本行寺" (hanja reading)
 Q114267835	Lko	"본행사"
+# Source: JA "蘇澳金刀比羅神社" (hanja reading)
+Q114268984	Lko	"소오금도비라신사"
 # Source: JA "堀川戎神社" (hanja reading)
 Q11427435	Lko	"굴천융신사"
 # Source: JA "報恩寺 (大垣市)" (hanja reading)
@@ -69620,8 +69614,6 @@ Q11602795	Lko	"축토팔번신사"
 Q11602813	Lko	"축후천화화대회"
 # Source: JA "篠村八幡宮" (hanja reading)
 Q11603769	Lko	"소촌팔번궁"
-# Source: JA "桃園神社" (hanja reading)
-Q116040341	Lko	"도원신사"
 # Source: JA "米山薬師 (姶良市)" (hanja reading)
 Q11604165	Lko	"미산약사압량시"
 # Source: JA "黙仙寺" (hanja reading)
@@ -76888,8 +76880,6 @@ Q134604566	Lko	"천기신사"
 Q134604567	Lko	"천조대신사"
 # Source: JA "大木神社" (hanja reading)
 Q134604573	Lko	"대목신사"
-# Source: JA "末廣神社" (hanja reading)
-Q134604581	Lko	"말광신사"
 # Source: JA "粟嶋神社" (hanja reading)
 Q134604589	Lko	"속도신사"
 # Source: JA "中里神社" (hanja reading)
@@ -106664,6 +106654,10 @@ Q137258081	Lko	"진교사"
 Q137299149	Lko	"산전팔번신사"
 # Source: JA "八雲神社" (hanja reading)
 Q137321737	Lko	"팔운신사"
+# Source: JA "小舟町八雲神社" (hanja reading)
+Q137321800	Lko	"소주정팔운신사"
+# Source: JA "大伝馬町八雲神社" (hanja reading)
+Q137321831	Lko	"대전마정팔운신사"
 # Source: JA "五霊神社" (hanja reading)
 Q137343468	Lko	"오령신사"
 # Source: JA "木下神社" (hanja reading)
@@ -106994,6 +106988,8 @@ Q138641337	Lko	"현광암"
 Q138657811	Lko	"용택산보수원"
 # Source: JA "福島八幡宮" (hanja reading)
 Q138683940	Lko	"복도팔번궁"
+# Source: JA "西山神社" (hanja reading)
+Q138684951	Lko	"서산신사"
 # Source: JA "岡湊神社" (hanja reading)
 Q138713330	Lko	"강주신사"
 # Source: JA "津賀田神社" (hanja reading)
@@ -107152,14 +107148,14 @@ Q140289805	Lko	"입명사"
 Q140290142	Lko	"정심사"
 # Source: JA "久保寺 (岡谷市)" (hanja reading)
 Q140298888	Lko	"구보사강곡시"
+# Source: JA "妙善寺" (hanja reading)
+Q140322777	Lko	"묘선사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
 Q15272318	Lko	"연화사"
-# Source: JA "通霄神社" (hanja reading)
-Q15919074	Lko	"통소신사"
-# Source: JA "東港神社" (hanja reading)
-Q15931876	Lko	"동항신사"
+# Source: JA "猴硐神社" (hanja reading)
+Q15944753	Lko	"후동신사"
 # Source: JA "石井神社" (hanja reading)
 Q16277320	Lko	"석정신사"
 # Source: JA "えびす祭り" (hanja reading)
@@ -108810,6 +108806,10 @@ Q48764406	Lko	"강촌천만궁"
 Q48764676	Lko	"호념사"
 # Source: JA "大宝寺" (hanja reading)
 Q48764817	Lko	"대보사"
+# Source: JA "大渓社" (hanja reading)
+Q48936587	Lko	"대부사"
+# Source: JA "角板山祠" (hanja reading)
+Q48936592	Lko	"각판산사"
 # Source: JA "地蔵院" (hanja reading)
 Q51095227	Lko	"지장원"
 # Source: JA "徳浄寺" (hanja reading)
@@ -109266,6 +109266,8 @@ Q63993330	Lko	"곡엄사"
 Q64015472	Lko	"용안사"
 # Source: JA "胤重寺" (hanja reading)
 Q64075967	Lko	"윤중사"
+# Source: JA "鵝鑾鼻神社" (hanja reading)
+Q65057943	Lko	"아란비신사"
 # Source: JA "五社之祠" (hanja reading)
 Q65248449	Lko	"오사지사"
 # Source: JA "光明院" (hanja reading)
@@ -110120,6 +110122,8 @@ Q97280526	Lko	"본구사"
 Q97280660	Lko	"청웅사"
 # Source: JA "要津寺" (hanja reading)
 Q97280914	Lko	"요진사"
+# Source: JA "瑞芳神社" (hanja reading)
+Q97301392	Lko	"서방신사"
 # Source: JA "清学院" (hanja reading)
 Q97310303	Lko	"청학원"
 # Source: JA "九成寺" (hanja reading)
