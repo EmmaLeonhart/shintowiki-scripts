@@ -117,3 +117,23 @@ construction plus two guards:
   Emma: keep the overall Wikidata-facing drip pace governed by the submitter, so
   Stage 1 can generate a large pool that drains at the submitter's existing rate.
   Recorded here rather than acted on.
+
+## Temples (Japanese Buddhist temples — added 2026-06-23)
+
+Japanese Buddhist temples (`P31=Q5393308` + `P17=Q17`; Japan-only so the
+Japanese→English naming rules apply) run the same pipeline as shrines:
+
+- **Worklist:** `generate_temples_missing_en_label.py` → `temples_missing_en_label.json`
+  (refreshed daily by `generate-shrines-missing-en-label.yml`; new temples flow in).
+- **Stage 1 (deterministic):** `temple_english.py` + `generate_temple_en_labels.py`
+  → `temple_en_labels.txt` (in `ATOMIC_FILES`). `<Stem>-<suffix> Temple`, suffix
+  romanized from the kana so the reading is preserved (`-ji`/`-dera`/`-tera`/
+  `-in`/`-an`/`-do`/`-bo`); brackets stripped; conservative `None` otherwise.
+- **Stage 4 (LLM):** `select_shrines_to_translate.py` returns a temple batch
+  alongside the shrine batch (kind-tagged); the existing cloud Sonnet routine
+  translates them — no cloud-side change. `temple_en_labels.txt` is in
+  `EXCLUDE_FILES` so the LLM only sees the genuine residual.
+- **Stage 2 (identical-name reuse):** not yet built for temples (optional
+  efficiency; those temples otherwise route to the LLM). `reuse_labels` is
+  generic; only the SPARQL in `generate_identical_name_en_labels.py` is
+  shrine-typed.

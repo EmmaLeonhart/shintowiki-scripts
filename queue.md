@@ -8,15 +8,16 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 _The English-label-first translation agenda (metabolized 2026-06-21) is complete: the 4-stage English-label pipeline (Stage 3 dropped per Emma), both downstream generators repointed to English, zh script variants, the per-language coverage registry (`shinto-label-generator/language_registry.py`, 44/116 covered), Vietnamese/Bengali/Greek/Hebrew + European/Latin affix batches, and the CJK→ja backfill all shipped. See `docs/english_label_pipeline.md` and `docs/language_coverage.md`. The remaining long-tail languages (Thai/Burmese/Georgian script maps, single-digit-label langs) were deliberately not hand-built — they failed the verification gate or are too low-value — and are left for the LLM/manual per Emma's scope decision._
 
-_Buddhist-temple deterministic en-labels shipped 2026-06-23 (see DEVLOG): `temple_english.py` + `generate_temples_missing_en_label.py` + `generate_temple_en_labels.py`, wired into the daily worklist workflow and `submit_daily_batch.ATOMIC_FILES`. 359/378 kana-bearing Japanese temples get a deterministic `<Stem>-<suffix> Temple` label; the daily drip applies them, and the multilingual generators propagate from English downstream once the en labels land._
+_Japanese Buddhist temples now run the FULL automatic pipeline, same as shrines (shipped 2026-06-23, see DEVLOG): **Stage 1** deterministic kana→`<Stem>-<suffix> Temple` (`temple_english.py` + `generate_temple_en_labels.py`, 359/378 kana temples) AND **Stage 4** the cloud Sonnet routine — `select_shrines_to_translate.py` now returns a shrine batch + a temple batch (kind-tagged) from `temples_missing_en_label.json`, so the kana-less majority (~14.5k) flows through the LLM automatically with no cloud-side change and no shrine starvation. The daily worklist workflow refreshes both lists (new temples added to Wikidata flow through), the drip applies, and the multilingual generators propagate from English downstream._
 
 ---
 
-## Temple close-out — remaining (NOT the deterministic part, which shipped 2026-06-23)
+## Temple close-out — small residual only (the pipeline is complete + automatic)
 
-The deterministic kana→English temple step is done and self-running. What remains before the temple side is *fully* closed, deliberately left for a decision rather than done blind:
-- **The kana-less majority (~14,515 of 14,893).** Stage 1 only handles temples that carry a kana reading (378). The rest have no `P1814` kana, so they need either the Stage 0 wiki-title lookup (only covers temples that have a shintowiki article — unverified coverage) or the Stage 4 LLM routine (currently shrine-scoped, `P31=Q845945`; extending it to temples means feeding 14k items through a 5/day throttle — a multi-year drip, Emma's call whether worth it).
-- **Verify application + multilingual propagation** after the first drip cycles: confirm the 359 temple en-labels landed on Wikidata and that the `shinto-label-generator` multilang generators picked them up.
+Every Japanese temple missing an en label is now handled automatically (Stage 1 deterministic, else Stage 4 LLM). What's left is minor / verify-only:
+- **(optional, efficiency) Stage 2 identical-name reuse for temples** — would cut LLM load for temples sharing a ja name; `reuse_labels.choose_label` is already generic, only the SPARQL in `generate_identical_name_en_labels.py` is shrine-typed. Not a coverage gap (those temples otherwise go through the LLM).
+- **Cloud-prompt note:** the Sonnet routine now receives `"kind":"temple"` items; it can use that tag to enforce the exact `<Stem>-<suffix> Temple` form (Stage 1 already does for kana temples). The translation itself works regardless.
+- **Verify after the first drip cycles:** confirm temple en-labels are landing on Wikidata and the `shinto-label-generator` multilang generators pick them up.
 
 ---
 

@@ -4,6 +4,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-23 — Temples through the LLM stage too (full pipeline, correcting the de-scope)
+
+The earlier entry shipped only the deterministic temple step and wrongly framed the kana-less majority as "a decision left undone." Corrected: temples now run the **same full automatic pipeline as shrines**, including the cloud LLM.
+
+- `select_shrines_to_translate.py` now returns up to N shrines **and** up to N temples (kind-tagged), reading `temples_missing_en_label.json`; added `temple_en_labels.txt` to `EXCLUDE_FILES`. Separate per-kind batches so temples never reduce the shrine quota, and the existing daily claude.ai Sonnet routine starts translating temples with **no cloud-side change** (it just translates whatever JSON it's handed). `"kind":"temple"` lets the prompt enforce `<Stem>-<suffix> Temple`.
+- The kana-less ~14.5k temples are therefore handled (Stage 4 LLM), and new temples added to Wikidata flow through via the daily worklist refresh. The pipeline is complete and automatic; the only residual is an optional Stage-2 reuse efficiency layer and post-drip verification (queue.md).
+- Tests: +4 in `test_select_shrines_to_translate.py` (per-kind batches, temple exclusion). Suite 87 passing.
+
 ## 2026-06-23 — Buddhist-temple deterministic English labels (Stage-1 analogue)
 
 Extended the shrine en-label pipeline to **Japanese Buddhist temples** (the deterministic, no-LLM part).
