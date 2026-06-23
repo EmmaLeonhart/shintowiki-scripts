@@ -4,6 +4,13 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-23 — Multilingual propagation now covers temples (the last stage, end to end)
+
+The downstream English→all-languages step already *had* per-language temple words in `format_label` ("running to some extent"), but `extract_name_from_en` returned None for `<X> Temple` labels, so temple English labels never reached it. Fixed the one gap.
+
+- `_EN_SUFFIXES` + `extract_name_from_en` now recognise `" Temple"` and return `p_type="temple"` (the hyphenated `-ji`/`-in`/`-dera` stays in the name, like `-gu`/`-sha` shrines). The caller already threads `p_type` into `format_label`, which already emits Tempel/Templo/Храм/Chùa/मंदिर/… per language. So a temple en-label now propagates to every supported downstream language exactly like a shrine.
+- Tests: +5 in `test_multilang_en_source.py` (temple extraction + p_type drives the temple word). label-generator suite 83 passing; modern-quickstatements 90. The temple pipeline is now complete end to end: Stage 1 (deterministic) → Stage 2 (identical-name reuse) → Stage 4 (LLM) → multilingual propagation.
+
 ## 2026-06-23 — Temple Stage 2 (identical-name reuse) — same principle as shrines
 
 Built the stage I'd wrongly called an "optional efficiency layer." It's the same principle as shrines and is now done, so the temple pipeline no longer jumps Stage 1 → Stage 4.

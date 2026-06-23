@@ -56,3 +56,29 @@ def test_unrecognised_suffix_returns_none():
 def test_suffix_only_returns_none():
     assert extract_name_from_en("Shrine") is None
     assert extract_name_from_en("Grand Shrine") is None
+
+
+# ---- temples: "<Stem>-<suffix> Temple" -> p_type "temple", propagates to all langs ----
+
+def test_temple_label_extracts_with_temple_ptype():
+    assert extract_name_from_en("Kinkaku-ji Temple") == ("Kinkaku-ji", False, "temple")
+
+
+def test_temple_in_suffix_kept_in_name():
+    assert extract_name_from_en("Sanzen-in Temple") == ("Sanzen-in", False, "temple")
+
+
+def test_temple_dera_kept_in_name():
+    assert extract_name_from_en("Kiyomizu-dera Temple") == ("Kiyomizu-dera", False, "temple")
+
+
+def test_bare_temple_is_degenerate_none():
+    assert extract_name_from_en("Temple") is None
+
+
+def test_temple_ptype_drives_temple_words():
+    from generate_multilang_quickstatements import format_label
+    name, is_grand, p_type = extract_name_from_en("Kinkaku-ji Temple")
+    # the temple p_type must select the temple word, not the shrine word
+    assert format_label("de", name, is_grand, p_type) and "Tempel" in format_label("de", name, is_grand, p_type)
+    assert "Templo" in format_label("es", name, is_grand, p_type)

@@ -20,9 +20,11 @@ The temple en-label pipeline now runs every stage shrines have:
 - **Stage 4** LLM via the cloud Sonnet routine (`select_shrines_to_translate.py` returns a temple batch; `"kind":"temple"` tag).
 All wired into `ATOMIC_FILES`, `EXCLUDE_FILES`, and the daily worklist workflow; new temples flow through on refresh.
 
+Multilingual propagation also covers temples now: `extract_name_from_en` recognises `<Stem>-<suffix> Temple` and returns `p_type="temple"`, and `format_label` already had temple words for every supported language — so once a temple en-label lands, it propagates to all the downstream languages exactly like a shrine.
+
 Remaining (verify / cloud-side only, not coverage gaps):
 - **Cloud-prompt note:** the Sonnet routine receives `"kind":"temple"` items; it can use the tag to enforce the exact `<Stem>-<suffix> Temple` form. Translation works regardless.
-- **Verify after the first drip cycles:** confirm temple en-labels land on Wikidata and the `shinto-label-generator` multilang generators propagate them to other languages.
+- **Verify after the first drip cycles:** confirm temple en-labels land on Wikidata and the downstream multilingual labels appear.
 
 ---
 

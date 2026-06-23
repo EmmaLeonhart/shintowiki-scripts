@@ -516,30 +516,34 @@ def extract_name(id_label):
     return None
 
 
-# English shrine-label suffixes produced by Stages 0/1/2, most specific first so
-# "Grand Shrine" is matched before bare " Shrine". Each: (suffix, is_grand).
+# English shrine/temple-label suffixes produced by Stages 0/1/2, most specific
+# first so "Grand Shrine" is matched before bare " Shrine". Each:
+# (suffix, is_grand, p_type). Temple labels are "<Stem>-<suffix> Temple" (the
+# hyphenated suffix stays in the name, like "<Name>-gu Shrine").
 _EN_SUFFIXES = [
-    (" Grand Shrine", True),
-    (" Daijinja", True),
-    (" Daijingu", True),
-    (" Shrine", False),
+    (" Grand Shrine", True, "shrine"),
+    (" Daijinja", True, "shrine"),
+    (" Daijingu", True, "shrine"),
+    (" Temple", False, "temple"),
+    (" Shrine", False, "shrine"),
 ]
 
 
 def extract_name_from_en(en_label):
-    """Extract the shrine name (+ is_grand) from an English label, preserving
-    casing. Returns (name, is_grand, "shrine") or None when the label is not in a
-    recognised English shrine form (then the caller falls back to the id path).
-    '<Name>-gu Shrine' / '<Name>-sha Shrine' keep the hyphenated part in the name."""
+    """Extract the shrine/temple name (+ is_grand + p_type) from an English label,
+    preserving casing. Returns (name, is_grand, p_type) or None when the label is
+    not in a recognised English shrine/temple form (then the caller falls back to
+    the id path). '<Name>-gu Shrine' / '<Name>-sha Shrine' / '<Name>-ji Temple'
+    keep the hyphenated part in the name."""
     cleaned = re.sub(r'\([^)]*\)', '', en_label)
     cleaned = re.sub(r'\[[^\]]*\]', '', cleaned).strip()
-    for suffix, is_grand in _EN_SUFFIXES:
+    for suffix, is_grand, p_type in _EN_SUFFIXES:
         if cleaned.endswith(suffix):
             name = cleaned[: -len(suffix)].strip()
-            # Degenerate: "Grand Shrine" with no real name leaves a bare qualifier.
+            # Degenerate: a bare qualifier with no real name.
             if not name or name == "Grand":
                 return None
-            return (name, is_grand, "shrine")
+            return (name, is_grand, p_type)
     return None
 
 # ----------------------------
