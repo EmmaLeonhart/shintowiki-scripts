@@ -10,6 +10,27 @@ _The English-label-first translation agenda (metabolized 2026-06-21) is complete
 
 ---
 
+## 2026-06-23 22:00 — Buddhist-temple label sprint (definitive close-out) [PRELIMINARY DOC; full run fires via cron at 10pm]
+
+> This is the intended **definitive ending** of shintowiki-scripts: after this run the repo joins Aelaki as a finished, self-running bot (off Emma's active "compartment" board — tracked as a meta item in the `central-command` repo's `META-AGENDA.md`).
+
+**Goal:** apply the same Japanese-name → English → all-languages label-propagation the repo already does for Shinto shrines to **Japanese Buddhist temples**, then actually edit the wiki/Wikidata.
+
+**Scope — Japanese temples only.** Restrict to Buddhist temples *in Japan*: SPARQL `?item wdt:P31 wd:Q5393308 . ?item wdt:P17 wd:Q17 .` (Q5393308 = Buddhist temple, Q17 = Japan). Reason (Emma): the Japanese→other-language translation conventions only hold for Japanese temples; e.g. a Thai temple should be rendered Japanese→Thai by Thai convention, and its English name does not propagate cleanly to the other languages. Existing infra already targets this set — see `shinto-label-generator/fetch_shrines_tokiponize.py` (its SPARQL already unions shrines with `Q5393308 + P17 Q17`).
+
+**Naming convention for temples:** `<name>-<suffix> Temple` — unlike shrines, temples are inconsistent, so **preserve the full Japanese reading**: the temple name, a hyphen, the suffix, a space, then the word `Temple`. (Confirm against existing prefix/suffix handling before generating.)
+
+**Bracket rule (applies to everything, always):** strip bracketed content from the Japanese label *before* any search/translation. Brackets do not belong in Wikidata labels — they are a labelling error. All searching, dedup (identically-named temples), and the Claude translation step run on the bracket-stripped name.
+
+**Steps for the 10pm run:**
+1. Write a fresh SPARQL query for Japanese Buddhist temples (Q5393308 + P17 Q17) with source labels, run it locally (mirror `fetch_shrines_tokiponize.py`), save the dataset, and investigate coverage/gaps.
+2. Audit what temple infra already exists vs. what's shrine-only; extend the multilang generators (`generate_multilang_quickstatements.py` + per-language) to temples using the `<name>-<suffix> Temple` convention and bracket-stripping.
+3. Generate English labels first, then propagate to the covered languages (reuse `language_registry.py`).
+4. Verify (tests + spot-checks), then **apply** to the wiki/Wikidata following the established patterns (mwclient / QuickStatements, `--apply`, rate-limit sleeps, UA + Unicode handling per the global rules). Real edits, not a dry run only.
+5. Commit per repo convention (delete this queue item, append to `DEVLOG.md`); report outcome back into `central-command/META-AGENDA.md`.
+
+---
+
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
