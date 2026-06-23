@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-23 — Temple multilingual framework: transliterate + a "temple" word, every language (Emma's rule)
+
+Established the per-language temple naming framework (Emma handed over `temple_query.csv`, the temple equivalent of `query.csv`).
+
+- **`temple_query.csv`** added: per-language Japanese-temple label counts, 221 langs (en 11164, id 10013, zh 2224, tr 1036, fr 893, de 658, ko 604 …).
+- Sampled real temple labels across languages: **most just transliterate the name with its `-ji`/`-dera`/`-in` suffix and add NO temple word** (tr "Daitoku-ji", el "Τοφούκου-τζι", nb "Tōdai-ji"). Emma's explicit decision **overrides** that: always transliterate the name AND add the language's word for "(Buddhist) temple."
+- **Critical fix:** `make_sparql_en` (the accurate English source) only queried shrines, so temple English labels never entered the multilang generator from English. It now unions Japanese temples (`Q5393308` + `P17 Q17`), like the Indonesian-source path already did.
+- Fixed the ~12 covered languages that returned a **shrine** word for temples → correct temple word: el Ναός, hu templom, da/nb tempel, eo/tl/war Templo, br Templ, ms/jv/min **Wihara**, mr मंदिर. Kept the ~26 already-correct/generic ones (de Tempel, fr Temple, ru Храм, vi Chùa, tr Tapınağı …). zh/ko/tok keep their own paths (CJK / Korean generator / toki pona).
+- Tests +8 (`test_temple_multilang.py`): every covered language now yields "transliterate + temple word", and the gap languages no longer emit a shrine word. Suites: label-gen + modern-qs **176 green**.
+
 ## 2026-06-23 — Multilingual propagation now covers temples (the last stage, end to end)
 
 The downstream English→all-languages step already *had* per-language temple words in `format_label` ("running to some extent"), but `extract_name_from_en` returned None for `<X> Temple` labels, so temple English labels never reached it. Fixed the one gap.

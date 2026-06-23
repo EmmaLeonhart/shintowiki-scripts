@@ -708,26 +708,50 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "gl":
             if p_type == "temple": return "Gran Templo" if is_grand else "Templo"
             return "Gran Santuario" if is_grand else "Santuario"
-        if lang == "sv": return "templet"          # suffixed: <Name>-templet
-        if lang == "nb": return "helligdommen"      # suffixed: <Name>-helligdommen
-        if lang == "da": return "helligdommen"
-        if lang == "hu": return "nagyszentély" if is_grand else "szentély"  # suffixed
+        if lang == "sv": return "templet"          # suffixed: <Name>-templet (temple word; fine for both)
+        if lang == "nb":
+            if p_type == "temple": return "tempel"
+            return "helligdommen"      # suffixed: <Name>-helligdommen
+        if lang == "da":
+            if p_type == "temple": return "tempel"
+            return "helligdommen"
+        if lang == "hu":
+            if p_type == "temple": return "templom"
+            return "nagyszentély" if is_grand else "szentély"  # suffixed
         if lang == "la": return "Magnum Templum" if is_grand else "Templum"  # prefix
         if lang == "ast":
             if p_type == "temple": return "Gran Templu" if is_grand else "Templu"
             return "Gran Santuariu" if is_grand else "Santuariu"
         if lang in ("sh", "hr"): return "hram"      # space-suffix: <Name> hram
-        if lang == "el": return "Μεγάλο Ιερό" if is_grand else "Ιερό"  # prefix, grecified name
-        if lang == "az": return "məbədi"            # space-suffix: <Name> məbədi
-        if lang == "tl": return "Dambanang"         # prefix
-        if lang == "war": return "Santuario"        # prefix
-        if lang == "min": return "Kuil Gadang" if is_grand else "Kuil"  # prefix
-        if lang == "eo": return "Ĉefjaŝiro" if is_grand else "Jaŝiro"    # prefix (Esperantized yashiro)
-        if lang == "jv": return "Kuil"                                   # prefix
-        if lang == "he": return "מקדש"                                   # prefix, hebraified name
-        if lang == "ms": return "Kuil Agung" if is_grand else "Kuil"      # prefix (Malay, like id)
-        if lang == "br": return "Santual"                                # prefix (Breton)
-        if lang == "mr": return _MR_TIRTH                                # suffix, Marathi Devanagari name
+        if lang == "el":
+            if p_type == "temple": return "Μεγάλος Ναός" if is_grand else "Ναός"
+            return "Μεγάλο Ιερό" if is_grand else "Ιερό"  # prefix, grecified name
+        if lang == "az": return "məbədi"            # məbəd = temple; fine for both
+        if lang == "tl":
+            if p_type == "temple": return "Templo"
+            return "Dambanang"         # prefix
+        if lang == "war":
+            if p_type == "temple": return "Templo"
+            return "Santuario"        # prefix
+        if lang == "min":
+            if p_type == "temple": return "Wihara Gadang" if is_grand else "Wihara"
+            return "Kuil Gadang" if is_grand else "Kuil"  # prefix
+        if lang == "eo":
+            if p_type == "temple": return "Granda Templo" if is_grand else "Templo"
+            return "Ĉefjaŝiro" if is_grand else "Jaŝiro"    # prefix (Esperantized yashiro)
+        if lang == "jv":
+            if p_type == "temple": return "Wihara"
+            return "Kuil"                                   # prefix
+        if lang == "he": return "מקדש"                                   # mikdash = temple; fine for both
+        if lang == "ms":
+            if p_type == "temple": return "Wihara Agung" if is_grand else "Wihara"
+            return "Kuil Agung" if is_grand else "Kuil"      # prefix (Malay, like id)
+        if lang == "br":
+            if p_type == "temple": return "Templ"
+            return "Santual"                                # prefix (Breton)
+        if lang == "mr":
+            if p_type == "temple": return "मंदिर"
+            return _MR_TIRTH                                # suffix, Marathi Devanagari name
         return ""
 
     if lang == "tr":
@@ -814,12 +838,20 @@ ORDER BY ?item
 
 
 def make_sparql_en(lang_code):
-    """B1: primary source — Shinto shrines that have an English label but are
-    missing the target language. The English label is the accurate seed the whole
-    pipeline now flows through (Indonesian remains a fallback below)."""
+    """B1: primary source — Shinto shrines AND Japanese Buddhist temples that have
+    an English label but are missing the target language. The English label is the
+    accurate seed the whole pipeline flows through (Indonesian remains a fallback
+    below). Temples are Japan-only (P17=Q17), mirroring the rest of the pipeline."""
     return f"""
 SELECT DISTINCT ?item ?enLabel WHERE {{
-  ?item wdt:P31/wdt:P279* wd:Q845945 .
+  {{
+    ?item wdt:P31/wdt:P279* wd:Q845945 .
+  }}
+  UNION
+  {{
+    ?item wdt:P31 wd:Q5393308 .
+    ?item wdt:P17 wd:Q17 .
+  }}
   ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en")
   FILTER NOT EXISTS {{ ?item rdfs:label ?existing . FILTER(LANG(?existing) = "{lang_code}") }}
 }}
