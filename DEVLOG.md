@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-23 — Buddhist-temple deterministic English labels (Stage-1 analogue)
+
+Extended the shrine en-label pipeline to **Japanese Buddhist temples** (the deterministic, no-LLM part).
+
+- `generate_temples_missing_en_label.py` — SPARQL worklist of temples missing an en label, **Japan-only** (`P31=Q5393308` + `P17=Q17`); reuses the tested `fetch_sparql`. Live run: **14,893 temples missing en, 378 with a kana reading**.
+- `temple_english.py` — deterministic `<Stem>-<suffix> Temple` from the kana, suffix romanized *from the reading* so it's preserved (`寺` じ→`-ji`, でら→`-dera`, てら→`-tera`; `院` いん→`-in`; `庵` あん→`-an`; `堂` どう→`-do`; `坊` ぼう→`-bo`). Strips （）()〔〕 brackets first. Conservative: unknown suffix / suffix-kana mismatch / unromanizable or empty stem → None (non-temple items like 教会/僧伽/派 return None). Reuses `kana_english.romanize`.
+- `generate_temple_en_labels.py` → `temple_en_labels.txt`: **359/378** kana temples handled (19 deferred = the non-temple tail). Added to `submit_daily_batch.ATOMIC_FILES` so the daily QuickStatements drip applies them; added both generators to the daily worklist workflow so it self-refreshes.
+- Tests: `test_temple_english.py` (17) + `test_generate_temple_en_labels.py` (5). Full modern-quickstatements suite **83 passed**.
+
+NOT done / honest scope: this is the deterministic slice only. The **kana-less majority (~14,515)** is not covered — it needs Stage 0 wiki-title lookup (coverage unverified for temples) or the LLM stage (currently shrine-scoped; extending means a multi-year 5/day drip — Emma's call). Application is via the scheduled drip, not a direct edit I ran; multilingual propagation flows downstream once the en labels land. Remaining items tracked in `queue.md`.
+
 ## 2026-06-21
 
 ### Metabolize the English-label-first translation agenda + A0 audit

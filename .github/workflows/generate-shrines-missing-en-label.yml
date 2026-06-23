@@ -46,6 +46,14 @@ jobs:
         working-directory: modern-quickstatements
         run: python generate_identical_name_en_labels.py
 
+      - name: Generate Japanese-temple missing-en-label worklist
+        working-directory: modern-quickstatements
+        run: python generate_temples_missing_en_label.py
+
+      - name: Generate deterministic temple en-labels ("<Stem>-<suffix> Temple")
+        working-directory: modern-quickstatements
+        run: python generate_temple_en_labels.py
+
       - name: Prune LLM labels superseded by Stage 0/1/2 (priority)
         working-directory: modern-quickstatements
         run: python dedup_sonnet_labels.py
@@ -58,7 +66,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add modern-quickstatements/shrines_missing_en_label.json modern-quickstatements/kana_en_labels.txt modern-quickstatements/identical_name_en_labels.txt modern-quickstatements/en_labels_sonnet.txt modern-quickstatements/cjk_ja_backfill.txt
+          git add modern-quickstatements/shrines_missing_en_label.json modern-quickstatements/kana_en_labels.txt modern-quickstatements/identical_name_en_labels.txt modern-quickstatements/en_labels_sonnet.txt modern-quickstatements/cjk_ja_backfill.txt modern-quickstatements/temples_missing_en_label.json modern-quickstatements/temple_en_labels.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
