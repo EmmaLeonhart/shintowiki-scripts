@@ -57,6 +57,7 @@ EXCLUDE_FILES = [
     "kana_en_labels.txt",
     "temple_en_labels.txt",
     "identical_name_en_labels.txt",
+    "temple_identical_name_en_labels.txt",
 ]
 
 

@@ -12,12 +12,17 @@ _Japanese Buddhist temples now run the FULL automatic pipeline, same as shrines 
 
 ---
 
-## Temple close-out — small residual only (the pipeline is complete + automatic)
+## Temple close-out — full pipeline shipped; verify-only residual
 
-Every Japanese temple missing an en label is now handled automatically (Stage 1 deterministic, else Stage 4 LLM). What's left is minor / verify-only:
-- **(optional, efficiency) Stage 2 identical-name reuse for temples** — would cut LLM load for temples sharing a ja name; `reuse_labels.choose_label` is already generic, only the SPARQL in `generate_identical_name_en_labels.py` is shrine-typed. Not a coverage gap (those temples otherwise go through the LLM).
-- **Cloud-prompt note:** the Sonnet routine now receives `"kind":"temple"` items; it can use that tag to enforce the exact `<Stem>-<suffix> Temple` form (Stage 1 already does for kana temples). The translation itself works regardless.
-- **Verify after the first drip cycles:** confirm temple en-labels are landing on Wikidata and the `shinto-label-generator` multilang generators pick them up.
+The temple en-label pipeline now runs every stage shrines have:
+- **Stage 1** deterministic kana → `<Stem>-<suffix> Temple` (`temple_english.py`).
+- **Stage 2** identical-name reuse from same-ja-name Japanese temples (`generate_temple_identical_name_en_labels.py`, sharing the parametrized `generate_identical_name_en_labels.run`).
+- **Stage 4** LLM via the cloud Sonnet routine (`select_shrines_to_translate.py` returns a temple batch; `"kind":"temple"` tag).
+All wired into `ATOMIC_FILES`, `EXCLUDE_FILES`, and the daily worklist workflow; new temples flow through on refresh.
+
+Remaining (verify / cloud-side only, not coverage gaps):
+- **Cloud-prompt note:** the Sonnet routine receives `"kind":"temple"` items; it can use the tag to enforce the exact `<Stem>-<suffix> Temple` form. Translation works regardless.
+- **Verify after the first drip cycles:** confirm temple en-labels land on Wikidata and the `shinto-label-generator` multilang generators propagate them to other languages.
 
 ---
 

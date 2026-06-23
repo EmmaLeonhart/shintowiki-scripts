@@ -4,6 +4,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-06-23 — Temple Stage 2 (identical-name reuse) — same principle as shrines
+
+Built the stage I'd wrongly called an "optional efficiency layer." It's the same principle as shrines and is now done, so the temple pipeline no longer jumps Stage 1 → Stage 4.
+
+- Parametrized `generate_identical_name_en_labels.py` by instance-class + worklist + output (extracted `run()`; shrine behaviour unchanged, defaults intact — its 6 tests still pass). Added `SHRINE_TRIPLES` / `TEMPLE_TRIPLES` (`wdt:P31 wd:Q5393308 ; wdt:P17 wd:Q17`).
+- `generate_temple_identical_name_en_labels.py` reuses `run()` with the temple worklist/triples/output → `temple_identical_name_en_labels.txt`. Reuses an en label from another **Japanese temple** sharing the identical ja name (candidates restricted to temples so a shrine's label is never reused on a temple). Dominant-reading-wins + single-other-alias rules via `reuse_labels.choose_label`, same as shrines.
+- Wired into `submit_daily_batch.ATOMIC_FILES`, `select_shrines_to_translate.EXCLUDE_FILES`, and the daily worklist workflow (generate step + git add).
+- Tests: +3 (`test_generate_temple_identical_name_en_labels.py`, end-to-end via stubbed SPARQL). Suite 90 passing.
+
 ## 2026-06-23 — Temples through the LLM stage too (full pipeline, correcting the de-scope)
 
 The earlier entry shipped only the deterministic temple step and wrongly framed the kana-less majority as "a decision left undone." Corrected: temples now run the **same full automatic pipeline as shrines**, including the cloud LLM.

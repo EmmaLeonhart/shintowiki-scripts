@@ -53,6 +53,12 @@ TRANSIENT_STATUS = (500, 502, 503, 504)
 
 _PAREN_DISAMBIG = re.compile(r"\s*\([^)]*\)\s*$")
 
+# SPARQL triples that select the instance class to reuse candidate labels from.
+# Shrines (default) reuse from other Shinto shrines; the temple Stage 2 passes the
+# Japanese-Buddhist-temple triples so temple labels are reused only from temples.
+SHRINE_TRIPLES = "wdt:P31 wd:" + SHINTO_SHRINE
+TEMPLE_TRIPLES = "wdt:P31 wd:Q5393308 ; wdt:P17 wd:Q17"
+
 
 class RateLimitError(Exception):
     """HTTP 429 — bail immediately, no retries (repo policy)."""
@@ -67,14 +73,14 @@ def _sparql_escape(s):
     return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def fetch_batch(ja_labels, retries=3):
+def fetch_batch(ja_labels, retries=3, instance_triples=SHRINE_TRIPLES):
     """POST a VALUES query for a batch of ja labels; return (ja, en) rows, or
     None if the endpoint stayed unavailable. Bails on 429."""
     values = " ".join('"%s"@ja' % _sparql_escape(j) for j in ja_labels)
     query = (
         "SELECT ?ja ?en WHERE {\n"
         "  VALUES ?ja { " + values + " }\n"
-        "  ?b wdt:P31 wd:" + SHINTO_SHRINE + " ; rdfs:label ?ja ; rdfs:label ?en .\n"
+        "  ?b " + instance_triples + " ; rdfs:label ?ja ; rdfs:label ?en .\n"
         '  FILTER(LANG(?en)="en")\n'
         "}\n"
     )
@@ -111,14 +117,14 @@ def fetch_batch(ja_labels, retries=3):
                 return None
 
 
-def gather_candidates(ja_labels):
-    """Return {ja_label: Counter(normalized_en -> shrine_count)} for the given
-    distinct ja labels, or None if a batch could not be fetched."""
+def gather_candidates(ja_labels, instance_triples=SHRINE_TRIPLES):
+    """Return {ja_label: Counter(normalized_en -> count)} for the given distinct
+    ja labels, or None if a batch could not be fetched."""
     counters = {}
     distinct = sorted(set(ja_labels))
     for i in range(0, len(distinct), BATCH):
         chunk = distinct[i:i + BATCH]
-        rows = fetch_batch(chunk)
+        rows = fetch_batch(chunk, instance_triples=instance_triples)
         if rows is None:
             return None
         for row in rows:
@@ -148,29 +154,26 @@ def lines_for_target(qid, ja, counters):
     return lines
 
 
-def load_targets():
-    if not os.path.exists(WORKLIST):
+def load_targets(worklist=WORKLIST):
+    if not os.path.exists(worklist):
         return []
-    with open(WORKLIST, encoding="utf-8") as f:
+    with open(worklist, encoding="utf-8") as f:
         items = json.load(f).get("items", [])
-    # no-kana subset: kana-bearing shrines are Stage 1's job
+    # no-kana subset: kana-bearing items are Stage 1's job
     return [it for it in items if not (it.get("kana") or "").strip() and it.get("ja")]
 
 
-def main():
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--stats", action="store_true", help="Query + report, write nothing.")
-    ap.add_argument("--limit", type=int, default=0, help="Cap number of targets (smoke).")
-    args = ap.parse_args()
-
-    targets = load_targets()
-    if args.limit:
-        targets = targets[: args.limit]
-    print(f"Stage 2 targets (no-kana, no-en): {len(targets)} shrines, "
+def run(worklist=WORKLIST, output_file=OUTPUT_FILE, instance_triples=SHRINE_TRIPLES,
+        kind="shrines", stats=False, limit=0):
+    """Stage 2 for one instance class. Reuses an en label from another item of the
+    same class sharing the identical ja name. Writes ``output_file`` unless stats."""
+    targets = load_targets(worklist)
+    if limit:
+        targets = targets[:limit]
+    print(f"Stage 2 targets (no-kana, no-en): {len(targets)} {kind}, "
           f"{len(set(t['ja'] for t in targets))} distinct ja labels.")
 
-    counters = gather_candidates([t["ja"] for t in targets])
+    counters = gather_candidates([t["ja"] for t in targets], instance_triples)
     if counters is None:
         print("SPARQL unavailable — leaving existing output untouched.")
         return
@@ -188,13 +191,22 @@ def main():
     print(f"Reused a same-name en label for {handled}/{len(targets)} targets "
           f"-> {label_lines} labels + {alias_lines} aliases.")
 
-    if args.stats:
+    if stats:
         return
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(all_lines))
         if all_lines:
             f.write("\n")
-    print(f"Wrote {os.path.basename(OUTPUT_FILE)}")
+    print(f"Wrote {os.path.basename(output_file)}")
+
+
+def main():
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--stats", action="store_true", help="Query + report, write nothing.")
+    ap.add_argument("--limit", type=int, default=0, help="Cap number of targets (smoke).")
+    args = ap.parse_args()
+    run(stats=args.stats, limit=args.limit)
 
 
 if __name__ == "__main__":
