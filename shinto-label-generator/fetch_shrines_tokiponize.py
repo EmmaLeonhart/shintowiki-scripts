@@ -109,6 +109,8 @@ def process_label(source_lang, source_label):
         name = name.replace(" ", "").replace("-", "").lower()
         if not name:
             return None
+        # toki pona has no temple/shrine distinction (both render "tomo sewi NAME");
+        # only grand-ness (suli) matters, so p_type is intentionally ignored here.
         return ("Temple Grand" if is_grand else "Shrine", name)
 
     # Remove bracketed content: (stuff), [stuff], {stuff}
