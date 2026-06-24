@@ -17,15 +17,15 @@
  |group2 = Shrines
  |list2 =
 * [[:en:Ōmiwa Shrine|Ōmiwa Shrine]]
-* {{ill|Miwa Shrine (Fuefuki City)|ja|美和神社 (笛吹市)|1=Miwa Shrine (Fuefuki City)|12=simple|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|12=simple|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|13=User:Immanuelle/Miwa Shrine (Fuefuki City)|qq=}}
+* [[Miwa Shrine (Fuefuki City)]]
 * [[Miwa Shrine (Gifu)]]
 * [[:en:Ōmiwa Shrine, Ichinomiya|Ōmiwa Shrine, Ichinomiya]]
-* {{ill|Omiwa Shrine (Tokushima)|lt=Omiwa Shrine|ja|大御和神社|12=simple|13=User:Immanuelle/Omiwa Shrine (Tokushima)|12=simple|13=User:Immanuelle/Omiwa Shrine (Tokushima)|qq=}}
-* {{ill|Ōmiwa Shrine (Shimotsuke)|lt=Ōmiwa Jinja|ja|大神神社 (栃木市)|12=simple|13=User:Immanuelle/Ōmiwa Shrine (Shimotsuke)|12=simple|13=User:Immanuelle/Ōmiwa Shrine (Shimotsuke)|qq=}}
-* {{ill|8=ja|9=美和神社_(桐生市)|Miwa Shrine (Kiryu)|12=simple|13=User:Immanuelle/8=ja|12=simple|13=User:Immanuelle/8=ja|qq=}}
+* [[Omiwa Shrine (Tokushima)|Omiwa Shrine]]
+* [[Ōmiwa Shrine (Shimotsuke)|Ōmiwa Jinja]]
+* [[Miwa Shrine (Kiryu)]]
 |group3=historical figures
 |list3=
-* {{ill|Ōtataneko|ja|大田田根子|1=Ōtataneko|4=fr|5=Ōtataneko命|12=simple|13=User:Immanuelle/Ōtataneko|13=User:Immanuelle/Ōtataneko|12=simple|13=User:Immanuelle/Ōtataneko|13=User:Immanuelle/Ōtataneko|qq=}}
+* [[Ōtataneko]]
 * [[:en:Emperor Sujin|Emperor Sujin]]
 * [[:en:Princess Yamato Totohi Momoso|Princess Yamato Totohi Momoso]]
 
@@ -51,14 +51,14 @@
  |group2 = Shrines
  |list2 =
 * [[Ōyamato Shrine]]
-* {{ill|Yamato Okunitama Shrine, Minamiawaji|ja|大和大国魂神社|simple|12=simple|13=User:Immanuelle/Yamato Okunitama Shrine, Minamiawaji|12=simple|13=User:Immanuelle/Yamato Okunitama Shrine, Minamiawaji|qq=}}
-* {{ill|Yamato Okunitama Shrine, Mima|ja|倭大国魂神社|12=simple|13=User:Immanuelle/Yamato Okunitama Shrine, Mima|12=simple|13=User:Immanuelle/Yamato Okunitama Shrine, Mima|qq=}}
+* [[Yamato Okunitama Shrine, Minamiawaji]]
+* [[Yamato Okunitama Shrine, Mima]]
 |group3=historical figures
 |list3=
 
-* {{ill|Nunaki-iri-hime|ja|渟名城入姫命|12=simple|13=User:Immanuelle/Nunaki-iri-hime|12=simple|13=User:Immanuelle/Nunaki-iri-hime|qq=}}
-* {{ill|Ichishi no Nagaochi|ja|市磯長尾市|12=simple|13=User:Immanuelle/Ichishi no Nagaochi|12=simple|13=User:Immanuelle/Ichishi no Nagaochi|qq=}}
-* {{ill|Saonetsuhiko|lt=Saonetsuhiko|ja|椎根津彦|lt2=珍彦命|complete=true|12=simple|13=User:Immanuelle/Saonetsuhiko|12=simple|13=User:Immanuelle/Saonetsuhiko|qq=}}
+* [[Nunaki-iri-hime]]
+* [[Ichishi no Nagaochi]]
+* [[Saonetsuhiko]]
 
 |group4=misc
 |list4=
@@ -68,11 +68,10 @@
 }}
 <noinclude>
 
-[[en:Template:Miwa and Yamato Faith]]{{wikidata link|Q125244487|en|Miwa and Yamato Faith}}
+[[en:Template:Miwa and Yamato Faith]]
 [[Category:Miwa shrines]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 </noinclude>

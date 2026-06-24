@@ -1,10 +1,10 @@
 '''Otomiya Shrine''' (乙宮神社) is a [[:en:Shrines|Shrines]].
 
-* {{ill|Otomiya Shrine (Nagasaki City)|ja|乙宮神社 (長崎市)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[:en:Nagasaki City|Nagasaki City]].
-* {{ill|Otomiya Shrine (Arikawaura, Shinkamigoto)|ja|乙宮神社 (新上五島町漁生浦郷)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Arikawaura, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine|ja|乙宮神社 (新上五島町小河原郷)|12=simple|13=User:Immanuelle/Otomiya Shrine (Ogawara, Shinkamigoto)|comment=changed title based on wikidata|qid=Q11369925}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Ogawara, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine (Tategushi, Shinkamigoto)|ja|乙宮神社 (新上五島町立串郷)}} - Located in {{ill|Nagasaki Prefecture|en|Nagasaki Prefecture|qid=Q169376|lt=Nagasaki Prefecture}}, [[Tategushi, Shinkamigoto Town]].
-* {{ill|Otomiya Shrine (Kirishima)|ja|乙宮神社 (霧島市)}} - Located in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}, [[Kirishima City]].
+* [[Otomiya Shrine (Nagasaki City)]] - Located in [[Nagasaki Prefecture]], [[:en:Nagasaki City|Nagasaki City]].
+* [[Otomiya Shrine (Arikawaura, Shinkamigoto)]] - Located in [[Nagasaki Prefecture]], [[Arikawaura, Shinkamigoto Town]].
+* [[Otomiya Shrine]] - Located in [[Nagasaki Prefecture]], [[Ogawara, Shinkamigoto Town]].
+* [[Otomiya Shrine (Tategushi, Shinkamigoto)]] - Located in [[Nagasaki Prefecture]], [[Tategushi, Shinkamigoto Town]].
+* [[Otomiya Shrine (Kirishima)]] - Located in [[Kagoshima Prefecture]], [[Kirishima City]].
 
 {{disambiguation}}
 
@@ -12,11 +12,6 @@
 
 == Shrines with this name ==
 
-* {{ill|乙宮神社 (Q135434493)|lt=乙宮神社|qid=Q135434493}} — Kirishima
+* [[乙宮神社 (Q135434493)|乙宮神社]] — Kirishima
 
-{{translated page|ja|乙宮神社|version=39192446|comment=Imported full ja history}}
-
-{{wikidata link|Q11369923|ja|乙宮神社|check_date=2026-05-18}}
 [[Category:Shrine disambiguations]]
-[[Category:Wikidata has short description]]
-[[Category:Independently git synced pages]]
