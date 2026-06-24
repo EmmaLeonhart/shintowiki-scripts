@@ -1,0 +1,118 @@
+<mainpage-leftcolumn-start />
+
+Welcome to the '''{{SITENAME}}'''! We're a collaborative reference on [[Shinto]], Japan's indigenous religious tradition — covering [[Kami|kami]], [[Shinto shrine|shrines]], [[Matsuri|festivals]], [[Kannushi|priesthood]], and the classical texts. This wiki is an online encyclopedia which [[w:Help:Editing|anyone can edit]] and contribute to, [[Special:CreatePage|creating a new page]] or [[Special:AllPages|improving an existing one]]. If you're new and don't know where to start, feel free to reach out to one of our [[Special:ListUsers/sysop|administrators]] or check out [[w:Help:Getting Started|these help pages]]! If you speak Japanese please translate pages [[:Category:need translation|here]].
+
+==Important articles==
+<gallery position="center" captionalign="center" navigation="true">
+Itsukushima Gate.jpg|alt=A vermilion torii gate standing in the sea at Itsukushima, framed by wooded mountains.|[[Itsukushima Shrine]] — one of Japan's most iconic shrines
+Amaterasu cave crop.jpg|alt=A woodblock-style depiction of the sun goddess Amaterasu emerging from a rock cave surrounded by other kami.|[[Amaterasu]] emerging from the [[Amano-Iwato]] cave
+Wiki Episode.jpeg|alt=Interior view of a shrine hall with tatami flooring.|[[Shinto shrine|Shrine architecture]] and the parts of a shrine
+Wiki Mission.jpeg|alt=A shrine priest in white robes performing a purification ritual.|[[Kannushi|Priests]] and [[Matsuri|festivals]]
+Wiki Location.jpeg|alt=A wooded path leading to a shrine gate.|[[Ise Grand Shrine]], [[Izumo-taisha]], and other sacred sites
+Wiki Object.jpeg|alt=A bronze mirror displayed on a shrine altar.|The [[Imperial Regalia of Japan|Three Sacred Treasures]] and other ritual objects
+</gallery>
+The [[w:Help:Galleries|gallery]] above links to articles that cover the wiki's main areas — [[Shinto shrine|shrines]], [[Kami|deities]], [[Matsuri|festivals]], ritual, and sacred texts. To start new pages in any of these areas, use the buttons below:
+
+<div class="inputbox-gallery">
+<inputbox>
+type=create
+preload=Template:Shrine page
+buttonlabel=New shrine page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Kami page
+buttonlabel=New kami page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Festival page
+buttonlabel=New festival page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Ritual page
+buttonlabel=New ritual page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Text page
+buttonlabel=New text/scripture page
+width=25
+</inputbox>
+<inputbox>
+type=create
+preload=Template:Sacred object page
+buttonlabel=New sacred object page
+width=25
+</inputbox>
+</div>
+
+==Track your progress==
+The [[w:Help:Tables|table]] below lists some of Japan's most historically and religiously significant shrines. Use the [[w:Help:Table Progress Tracking|progress tracking feature]] to mark which ones you've visited on pilgrimage or would like to see.
+
+<table-progress-tracking table-id="1" unique-column-index="1">
+{| class="wikitable sortable"
+|-
+! Shrine !! Location !! Notes
+|-
+| [[Ise Grand Shrine]] || Mie Prefecture || The most sacred shrine in Shinto, dedicated to [[Amaterasu]]; rebuilt every 20 years in the [[Jingū Shikinen Sengū|Shikinen Sengū]] tradition
+|-
+| [[Izumo-taisha]] || Shimane Prefecture || One of the oldest and most important shrines, dedicated to [[Ōkuninushi]]
+|-
+| [[Itsukushima Shrine]] || Hiroshima Prefecture || Famous for its "floating" torii gate in the sea; UNESCO World Heritage Site
+|-
+| [[Fushimi Inari-taisha]] || Kyoto Prefecture || Head shrine of [[Inari]]; known for thousands of vermilion torii forming forest tunnels
+|-
+| [[Meiji Jingu|Meiji Shrine]]|| Tokyo || Dedicated to the deified spirits of Emperor Meiji and Empress Shōken
+|-
+| [[Atsuta Shrine]] || Aichi Prefecture || Houses one of the [[Imperial Regalia of Japan|Three Sacred Treasures]], the sword [[Kusanagi no Tsurugi|Kusanagi-no-Tsurugi]]
+|}
+</table-progress-tracking>
+
+==Interactive Map==
+<interactive-map name="Japan" />
+[[w:Help:Interactive Maps|Interactive Maps]] are a great way to explore the geography of Shinto. Markers can locate [[Shinto shrine|shrines]], sacred mountains, and other sites of religious significance across Japan — from [[Ise Grand Shrine|Ise]] and [[Izumo-taisha|Izumo]] to the [[Fushimi Inari-taisha|Fushimi Inari]] torii paths. [[Special:AllMaps|Take a look at all the Interactive Maps on this wiki]].
+
+<mainpage-endcolumn /><mainpage-rightcolumn-start />
+
+==About==
+[[Shinto]] (神道, ''the way of the kami'') is the indigenous religious tradition of Japan. It centres on the veneration of [[Kami]] — sacred spirits associated with nature, ancestors, historical figures, and specific places — through rituals, festivals, and observances performed at [[Shrine|shrines]]. Shinto has no founder, no canonical scripture, and no fixed doctrine; instead it is a living tradition preserved through practice and through classical texts like the [[Kojiki]], the [[Nihon Shoki]], and the [[Engishiki]].
+
+Core starting points on this wiki:
+
+* '''[[Shinto]]''' — the tradition itself: its history, practice, and schools
+* '''[[Kami]]''' — the spirits and deities venerated in Shinto, including [[Amaterasu]], [[Susanoo]], [[Tsukuyomi]], [[Inari]], [[Hachiman]], and countless others
+* '''[[Shrine]]'''  — sacred architecture, [[Torii]] gates, and famous sites like [[Ise Grand Shrine]] and [[Izumo-taisha]]
+* '''[[Matsuri]]''' — the festival calendar
+* '''[[Kannushi]]''', '''[[Miko]]''' — priests and shrine attendants
+* '''[[Kojiki]]''', '''[[Nihon Shoki]]''', '''[[Engishiki]]''' — the foundational classical texts
+
+==Join the conversation==
+'''Discussions''' is a place to connect with other contributors and readers interested in Shinto. Share questions about practice and belief, discuss recent edits, suggest new articles, or swap notes from visits to shrines and festivals. Ready to connect? [[Special:Forum|Head over to Discussions]] and start the conversation now!
+
+==Helping out==
+''Need help building out this community?''
+
+*[[Project:Wiki rules|Rules of this wiki]]
+*[[Project:Policies|Policies of this wiki]]
+*[[Project:Accessibility checklist|Accessibility checklist]]
+*[[w:Help:Getting Started|Getting started]]
+*[[w:Help:Contributing|How to contribute]]
+*[[w:Help:Community Management|Managing your community]]
+*[[w:Help:Growing your wiki|Growing your wiki]]
+*[[w:Help:Contents|Guides]]
+*[[w:Help:Index|All Help articles]]
+
+You can also be part of the larger Fandom family of communities. Visit [[w:c:community|Fandom's Community Central]]!
+
+<mainpage-endcolumn />
+__NOTOC__
+__noeditsection__
+
+[[Category:Independently git synced pages]]
+[[Category:{{SITENAME}}]]
