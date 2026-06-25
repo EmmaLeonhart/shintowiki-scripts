@@ -1,6 +1,6 @@
 {{Navbox
 | name  = Iwanaga Faith
-| title = {{ill|Iwanaga-hime|lt=Iwanaga Faith|simple|Iwanaga-hime|ja|磐長姫命|12=simple|13=User:Immanuelle/Iwanaga-hime|12=simple|13=User:Immanuelle/Iwanaga-hime|qq=}}
+| title = [[Iwanaga-hime|Iwanaga Faith]]
 | titlestyle = background:#767C6B; color:#fff;
 | listclass = hlist
 | image = [[File:Omuroyama Sengen Shrine from the East path 3.jpg|150px|link=|alt=]]
@@ -8,72 +8,69 @@
 
  | group1 = Main
  | list1 =
-* {{ill|Iwanaga-hime|ja|磐長姫命|12=simple|13=User:Immanuelle/Iwanaga-hime|12=simple|13=User:Immanuelle/Iwanaga-hime|qq=}}
+* [[Iwanaga-hime]]
 
 | group3 = Shrines
-| list3 = 
+| list3 =
 * [[:en:Mount Ōmuro (Shizuoka)|Ōmuroyama Sengen Shrine]]
-* {{ill|Kumomi Sengen Shrine|ja|雲見浅間神社|simple|User:Immanuelle/Kumomi Sengen Shrine|12=simple|13=User:Immanuelle/Kumomi Sengen Shrine|12=simple|13=User:Immanuelle/Kumomi Sengen Shrine|qq=}}
-* {{ill|Kifune Shrine|simple|User:Immanuelle/Kifune Shrine|en|12=simple|13=User:Immanuelle/Kifune Shrine|12=simple|13=User:Immanuelle/Kifune Shrine|qq=}}
-* {{ill|Mishima Taisha|en|12=simple|13=User:Immanuelle/Mishima Taisha|12=simple|13=User:Immanuelle/Mishima Taisha|qq=}}
+* [[Kumomi Sengen Shrine]]
+* [[Kifune Shrine]]
+* [[Mishima Taisha]]
 * [[:en:Ōyamazumi Shrine|Ōyamazumi Shrine]]
-* {{ill|Daishōgun Shrine|ja|大将軍神社 (京都市北区)|1=Daishōgun Shrine (Kita-ku, Kyoto)|12=simple|13=User:Immanuelle/Daishōgun Shrine|13=User:Immanuelle/Daishōgun Shrine (Kita-ku, Kyoto)|12=simple|13=User:Immanuelle/Daishōgun Shrine|13=User:Immanuelle/Daishōgun Shrine (Kita-ku, Kyoto)|qq=}}
-* {{ill|Daishōgun Shrine (Nara City)|ja|大将軍神社 (奈良市)|12=simple|13=User:Immanuelle/Daishōgun Shrine (Nara City)|12=simple|13=User:Immanuelle/Daishōgun Shrine (Nara City)|qq=}}
+* [[Daishōgun Shrine|Daishōgun Shrine (Kita-ku, Kyoto)]]
+* [[Daishōgun Shrine (Nara City)]]
  | group5 = Misc
  | list5 =
-* {{ill|Banana-type myth|ja|バナナ型神話|lt=Banana-type myths|12=simple|13=User:Immanuelle/Banana-type myth|12=simple|13=User:Immanuelle/Banana-type myth|qq=}}
+* [[Banana-type myth|Banana-type myths]]
 | group2 = Related Deities
 | list2 =
-* {{ill|Ōyamatsumi|WD=Q386563|lt=Ōyamatsumi|lt=Oyamatsumi|ja|大山津見神|12=simple|13=User:Immanuelle/Oyamatsumi|12=simple|13=User:Immanuelle/Oyamatsumi|qq=}}
-* {{ill|Ninigi-no-Mikoto|ja|瓊瓊杵尊|12=simple|13=User:Immanuelle/Ninigi-no-Mikoto|12=simple|13=User:Immanuelle/Ninigi-no-Mikoto|qq=}}
-* {{ill|Konohanasakuya-hime|en|Konohanasakuya-hime|simple|User:Immanuelle/Konohanasakuya-hime|12=simple|13=User:Immanuelle/Konohanasakuya-hime|12=simple|13=User:Immanuelle/Konohanasakuya-hime|qq=}}
+* [[Ōyamatsumi|Oyamatsumi]]
+* [[Ninigi-no-Mikoto]]
+* [[Konohanasakuya-hime]]
 * [[Ashinazuchi and Tenazuchi]]
 * [[:en:Konohanachiru-hime|Konohanachiru-hime]]
 
 |group6=Shrines with some worship
 |list6=
 * [[:en:Yasaka Shrine|Yasaka Shrine]]
-* {{ill|Musashi-Mitake Shrine|ja|武蔵御嶽神社|12=simple|13=User:Immanuelle/Musashi Mitake Shrine|12=simple|13=User:Immanuelle/Musashi Mitake Shrine|qq=}}
-* {{ill|Anumi Shrine|ja|阿沼美神社|12=simple|13=User:Immanuelle/Anumi Shrine|12=simple|13=User:Immanuelle/Anumi Shrine|qq=}}
-* {{ill|Hijiri Shrine|ja|聖神社 (和泉市)|12=simple|13=User:Immanuelle/Hijiri Shrine|12=simple|13=User:Immanuelle/Hijiri Shrine|qq=}}
+* [[Musashi-Mitake Shrine]]
+* [[Anumi Shrine]]
+* [[Hijiri Shrine]]
 * [[:en:Chiba Shrine|Chiba Shrine]]
-* {{ill|Ishigami Shrine (Ome)|ja|石神社 (青梅市)|12=simple|13=User:Immanuelle/Ishigami Shrine (Ome)|12=simple|13=User:Immanuelle/Ishigami Shrine (Ome)|qq=}}
-* {{ill|Wadanoki Shrine|ja|和田乃神社|12=simple|13=User:Immanuelle/Wadanoki Shrine|12=simple|13=User:Immanuelle/Wadanoki Shrine|qq=}}
+* [[Ishigami Shrine (Ome)]]
+* [[Wadanoki Shrine]]
 * [[:en:Aoshima Shrine|Aoshima Shrine]]
-* {{ill|Inage Asama Shrine|ja|稲毛浅間神社|12=simple|13=User:Immanuelle/Inage Asama Shrine|12=simple|13=User:Immanuelle/Inage Asama Shrine|qq=}}
-* {{ill|Yohara Shrine|ja|楊原神社|12=simple|13=User:Immanuelle/Yohara Shrine|12=simple|13=User:Immanuelle/Yohara Shrine|qq=}}
+* [[Inage Asama Shrine]]
+* [[Yohara Shrine]]
 * [[:en:Sengen shrine|Asama Shrine]]
-* {{ill|Nomii Shrine (Takatsuki)|ja|野見神社 (高槻市)|12=simple|13=User:Immanuelle/Nomii Shrine (Takatsuki)|12=simple|13=User:Immanuelle/Nomii Shrine (Takatsuki)|qq=}}
-* {{ill|Kasuga Shrine (Inabe)|ja|春日神社 (いなべ市)|12=simple|13=User:Immanuelle/Kasuga Shrine (Inabe)|12=simple|13=User:Immanuelle/Kasuga Shrine (Inabe)|qq=}}
-* {{ill|Narao Hachiman Shrine|ja|鳴尾八幡神社|12=simple|13=User:Immanuelle/Narao Hachiman Shrine|12=simple|13=User:Immanuelle/Narao Hachiman Shrine|qq=}}
-* {{ill|Nawakuri Shrine|ja|縄久利神社|12=simple|13=User:Immanuelle/Nawakuri Shrine|12=simple|13=User:Immanuelle/Nawakuri Shrine|qq=}}
-* {{ill|Iwa Shrine (Kashiwara)|ja|石神社 (柏原市)|12=simple|13=User:Immanuelle/Iwa Shrine (Kashiwara)|12=simple|13=User:Immanuelle/Iwa Shrine (Kashiwara)|qq=}}
-* {{ill|Hakusan Nakai Shrine|ja|白山中居神社|12=simple|13=User:Immanuelle/Hakusan Nakai Shrine|12=simple|13=User:Immanuelle/Hakusan Nakai Shrine|qq=}}
-* {{ill|Izu Shrine|ja|伊豆神社|12=simple|13=User:Immanuelle/Izu Shrine|12=simple|13=User:Immanuelle/Izu Shrine|qq=}}
-* {{ill|Bekkyū Ōyamazumi Shrine|ja|別宮大山祇神社|1=Bekkyū Ōyamazumi Shrine|12=simple|13=User:Immanuelle/Betsugu Oyamatsumi Shrine|13=User:Immanuelle/Betsugu Oyamatsumi Shrine|12=simple|13=User:Immanuelle/Betsugu Oyamatsumi Shrine|13=User:Immanuelle/Betsugu Oyamatsumi Shrine|qq=}}
-* {{ill|Ashitaka Shrine|ja|足高神社|12=simple|13=User:Immanuelle/Ashitaka Shrine|12=simple|13=User:Immanuelle/Ashitaka Shrine|qq=}}
-* {{ill|Kawakami Yamawaka Hachiman Shrine|ja|川上山若宮八幡宮|12=simple|13=User:Immanuelle/Kawakami Yamawaka Hachiman Shrine|12=simple|13=User:Immanuelle/Kawakami Yamawaka Hachiman Shrine|qq=}}
-* {{ill|Oyamatsumi Shrine (Nishi Aizu)|ja|大山祇神社 (西会津町)|1=Oyamatsumi Shrine (Nishi Aizu)|12=simple|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|12=simple|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|13=User:Immanuelle/Oyamatsumi Shrine (Nishi Aizu)|qq=}}
-* {{ill|Hikawa Shrine (Itabashi)|ja|氷川神社 (板橋区氷川町)|12=simple|13=User:Immanuelle/Hikawa Shrine (Itabashi)|12=simple|13=User:Immanuelle/Hikawa Shrine (Itabashi)|qq=}}
-* {{ill|Sazareishi Shrine|ja|細石神社|1=Sazareishi Shrine|12=simple|13=User:Immanuelle/Sazareishi Shrine|12=simple|13=User:Immanuelle/Sazareishi Shrine|qq=}}
-* {{ill|Misono Shrine|ja|御祖神社|1=Adachi Myokengu|2=ja|3=御祖神社|4=fr|5=Adachi Myokengu|6=simple|7=User:Immanuelle/Adachiyama Myokengu|1=Adachi Myokengu|4=fr|5=Adachi Myokengu|6=simple|7=User:Immanuelle/Adachiyama Myokengu|12=simple|13=User:Immanuelle/Misono Shrine|13=User:Immanuelle/Adachi Myokengu|12=simple|13=User:Immanuelle/Misono Shrine|13=User:Immanuelle/Adachi Myokengu|qq=}}
-* {{ill|Kaina Shrine|ja|甲斐奈神社|12=simple|13=User:Immanuelle/Kaina Shrine|12=simple|13=User:Immanuelle/Kaina Shrine|qq=}}
-* {{ill|Iina Shrine|ja|飯名神社|12=simple|13=User:Immanuelle/Iina Shrine|12=simple|13=User:Immanuelle/Iina Shrine|qq=}}
-* {{ill|Mishima Shrine (Taito)|ja|三島神社 (台東区)|12=simple|13=User:Immanuelle/Mishima Shrine (Taito)|12=simple|13=User:Immanuelle/Mishima Shrine (Taito)|qq=}}
-* {{ill|Kōtai Shrine (Shijōōji, Nara)|ja|皇大神社 (奈良市平松町)|12=simple|13=User:Immanuelle/Kōtai Shrine (Shijōōji, Nara)|12=simple|13=User:Immanuelle/Kōtai Shrine (Shijōōji, Nara)|qq=}}
-* {{ill|Shinta Shrine|ja|信太神社|12=simple|13=User:Immanuelle/Shinta Shrine|12=simple|13=User:Immanuelle/Shinta Shrine|qq=}}
-* {{ill|Kamo Shrine (Tottori Nanbu)|ja|賀茂神社 (鳥取県南部町)|12=simple|13=User:Immanuelle/Kamo Shrine (Tottori Nanbu)|12=simple|13=User:Immanuelle/Kamo Shrine (Tottori Nanbu)|qq=}}
-* {{ill|Nakayama Shrine (Tottori Daisen)|ja|中山神社 (鳥取県大山町)|12=simple|13=User:Immanuelle/Nakayama Shrine (Tottori Daisen)|12=simple|13=User:Immanuelle/Nakayama Shrine (Tottori Daisen)|qq=}}
-* {{ill|Murakami Shrine (Kakamigahara)|ja|村上神社 (各務原市那加長塚町)|12=simple|13=User:Immanuelle/Murakami Shrine (Kakamigahara)|12=simple|13=User:Immanuelle/Murakami Shrine (Kakamigahara)|qq=}}
+* [[Nomii Shrine (Takatsuki)]]
+* [[Kasuga Shrine (Inabe)]]
+* [[Narao Hachiman Shrine]]
+* [[Nawakuri Shrine]]
+* [[Iwa Shrine (Kashiwara)]]
+* [[Hakusan Nakai Shrine]]
+* [[Izu Shrine]]
+* [[Bekkyū Ōyamazumi Shrine]]
+* [[Ashitaka Shrine]]
+* [[Kawakami Yamawaka Hachiman Shrine]]
+* [[Oyamatsumi Shrine (Nishi Aizu)]]
+* [[Hikawa Shrine (Itabashi)]]
+* [[Sazareishi Shrine]]
+* [[Misono Shrine|Adachi Myokengu]]
+* [[Kaina Shrine]]
+* [[Iina Shrine]]
+* [[Mishima Shrine (Taito)]]
+* [[Kōtai Shrine (Shijōōji, Nara)]]
+* [[Shinta Shrine]]
+* [[Kamo Shrine (Tottori Nanbu)]]
+* [[Nakayama Shrine (Tottori Daisen)]]
+* [[Murakami Shrine (Kakamigahara)]]
 
 }}
 <noinclude>
 
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Shinto cult templates]]
-[[en:Template:Iwanaga Faith]]
-[[Category:Templates missing wikidata]]
 [[en:Template:Iwanaga Faith]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
