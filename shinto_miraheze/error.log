@@ -172,3 +172,4 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
 
+[2026-06-25 07:26:52 UTC] [ERROR] generate_en_labels_quickstatements: SPARQL query failed: 502 Server Error: Bad Gateway for url: https://query.wikidata.org/sparql
