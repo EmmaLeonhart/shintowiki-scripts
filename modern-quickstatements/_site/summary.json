@@ -12,10 +12,10 @@
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
     "total": 16997,
-    "remaining": 1,
-    "completed": 16996,
+    "remaining": 3,
+    "completed": 16994,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 1
+    "lines": 3
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
