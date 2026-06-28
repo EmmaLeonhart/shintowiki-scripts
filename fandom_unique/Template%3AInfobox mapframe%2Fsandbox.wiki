@@ -1,7 +1,0 @@
-<includeonly>{{#invoke:Infobox mapframe/sandbox|main}}</includeonly><noinclude>{{Infobox mapframe/sandbox|id=Q100}}
-{{Documentation}}[[Category:Templates with Documentation template]]
-
-[[Category:Templates]]
-[[Category:Templates fixed with noinclude]]
-[[Category:infobox templates]]
-</noinclude>
