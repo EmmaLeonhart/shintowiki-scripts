@@ -61,9 +61,9 @@
 | label23  = Culture
 | data23   = {{{culture|{{{civilization|{{{civilisation|}}}}}}}}}
 
-| label24 = {{ill|Rundata|en|Rundata|sv|Rundata|lt=Rundata|qid=Q134446066}} ID
+| label24 = [[Rundata]] ID
 | data24  = {{{rune_id|}}}
-| label25 = {{ill|Runestone styles|ca|Estils de les pedres rúniques|da|Indskriftordning|de|Runensteinstil|en|Runestone styles|es|Estilos de las piedras rúnicas|it|Stili delle pietre runiche|sv|Runstensstilar|lt=Runestone styles|qid=Q4992044}}
+| label25 = [[Runestone styles]]
 | data25  = {{{rune_style|}}}
 | label26 = [[Runemaster]]
 | data26  = {{{rune_master|}}}
@@ -79,7 +79,5 @@
 [[Category:Pages using infobox artifact with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
 </noinclude>
