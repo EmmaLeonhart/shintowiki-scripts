@@ -12,6 +12,10 @@ _Japanese Buddhist temples now run the FULL automatic pipeline, same as shrines 
 
 ---
 
+## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
+
+Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
+
 ## Temple close-out — full pipeline shipped; verify-only residual
 
 The temple en-label pipeline now runs every stage shrines have:
