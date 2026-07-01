@@ -147,7 +147,7 @@ Gating: `wikidata-daily-fire` (one fire/UTC-day) AND the **hard freeze to
 
 → **Verdict: keep, do not touch the shape.** This is the most safety-sensitive
 subsystem. The freeze auto-resumes 2026-06-06. Backlog item 5 (recreate deleted
-WD items) is the only pending Wikidata work and is **blocked on Emma** (open
+WD items) is the only pending Wikidata work and is **BLOCKED-ON-USER-ACTION** (open
 question posted 2026-06-05).
 
 ---
@@ -235,7 +235,7 @@ deferred verification (churn-inspection half pending a healthy wiki — see
   ~~`audit_double_category_qids` (disabled, superseded)~~ **— RETIRED 2026-06-06**,
   and the 5 manual-only dispatch workflows once their one-time jobs are confirmed
   done.
-- **Blocked on Emma:** backlog item 5 (recreate deleted Wikidata items) — go/no-go
+- **BLOCKED-ON-USER-ACTION:** backlog item 5 (recreate deleted Wikidata items) — go/no-go
   + minimum claim set (open question posted 2026-06-05).
 - **Pending deferred verification:** sync-churn inspection + the 4
   wiki-`action=parse` items (a healthy wiki needed — see
