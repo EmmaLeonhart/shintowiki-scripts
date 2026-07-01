@@ -9686,8 +9686,6 @@ Q11555326	Lko	"호케지 사원"
 Q11555336	Lko	"호렌지 사원"
 # Source: ID "Wihara Hozo-ji (Okazaki)" (romanization)
 Q11555343	Lko	"호조지 사원"
-# Source: ID "Wihara Hōkan-ji" (romanization)
-Q11555353	Lko	"호칸지 사원"
 # Source: ID "Wihara Hōgo-bō" (romanization)
 Q11555359	Lko	"호고보 사원"
 # Source: ID "Wihara Hōkoku-ji" (romanization)
@@ -106976,6 +106974,8 @@ Q138497691	Lko	"연승원"
 Q138502928	Lko	"기곡중송원신사"
 # Source: JA "松尾神社" (hanja reading)
 Q138527452	Lko	"송미신사"
+# Source: JA "宗興寺" (hanja reading)
+Q138565344	Lko	"종흥사"
 # Source: JA "東光寺 (横浜市神奈川区)" (hanja reading)
 Q138565377	Lko	"동광사횡빈시신내천구"
 # Source: JA "長福寺" (hanja reading)
@@ -107148,8 +107148,48 @@ Q140289805	Lko	"입명사"
 Q140290142	Lko	"정심사"
 # Source: JA "久保寺 (岡谷市)" (hanja reading)
 Q140298888	Lko	"구보사강곡시"
+# Source: JA "海蔵寺" (hanja reading)
+Q140322722	Lko	"해장사"
 # Source: JA "妙善寺" (hanja reading)
 Q140322777	Lko	"묘선사"
+# Source: JA "霊泉寺" (hanja reading)
+Q140352963	Lko	"영천사"
+# Source: JA "福正寺" (hanja reading)
+Q140355626	Lko	"복정사"
+# Source: JA "信竜寺" (hanja reading)
+Q140355627	Lko	"신룡사"
+# Source: JA "光清寺" (hanja reading)
+Q140356216	Lko	"광청사"
+# Source: JA "火之神神社" (hanja reading)
+Q140356456	Lko	"화지신신사"
+# Source: JA "聖宝寺" (hanja reading)
+Q140359325	Lko	"성보사"
+# Source: JA "愛宕寺" (hanja reading)
+Q140359375	Lko	"애탕사"
+# Source: JA "閼伽井坊" (hanja reading)
+Q140360958	Lko	"알가정방"
+# Source: JA "清雲寺" (hanja reading)
+Q140361032	Lko	"청운사"
+# Source: JA "法国寺" (hanja reading)
+Q140361271	Lko	"법국사"
+# Source: JA "大福寺" (hanja reading)
+Q140361330	Lko	"대복사"
+# Source: JA "真宗大谷派五村別院" (hanja reading)
+Q140361383	Lko	"진종대곡파오촌별원"
+# Source: JA "宝泉寺" (hanja reading)
+Q140367953	Lko	"보천사"
+# Source: JA "金剛寺 (横浜市保土ケ谷区)" (hanja reading)
+Q140385534	Lko	"금강사횡빈시보토케곡구"
+# Source: JA "自性院 (横浜市港南区)" (hanja reading)
+Q140385570	Lko	"자성원횡빈시항남구"
+# Source: JA "東光寺 (横浜市南区)" (hanja reading)
+Q140385657	Lko	"동광사횡빈시남구"
+# Source: JA "大聖院 (横浜市西区)" (hanja reading)
+Q140387383	Lko	"대성원횡빈시서구"
+# Source: JA "専念寺 (横浜市港北区)" (hanja reading)
+Q140391142	Lko	"부념사횡빈시항북구"
+# Source: JA "長延寺 (横浜市)" (hanja reading)
+Q140391206	Lko	"장연사횡빈시"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
