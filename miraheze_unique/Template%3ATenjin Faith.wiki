@@ -36,11 +36,12 @@
 
 }}
 <noinclude>
-[[en:Template:Tenjin Faith]]{{wikidata link|Q125475236}}
+[[en:Template:Tenjin Faith]]{{wikidata link|Q125475236|check_date=2026-07-01}}
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Tenjin (kami)]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
