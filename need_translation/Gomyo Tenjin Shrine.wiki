@@ -104,87 +104,70 @@
 
 {{translated page|ja|天神社 (上里町五明)|version=107002291|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
-{{神社
-|名称    = 天神社
-|画像    = [[File:GomyouAma-jinja(Misato).jpg|270px]]
-|所在地  = {{jalink|埼玉県|Q128186}}{{jalink|児玉郡|Q938038}}{{jalink|上里町|Q1345287}}五明871
-|位置 = {{WikidataCoord}}
-|祭神    = {{jalink|稚産霊神}}<br/>{{jalink|豊宇気毘売神}}
-|神体    = 
-|社格    = {{jalink|式内社}}<br/>旧{{jalink|村社}}
-|創建    = 不詳
-|宮司    =
-|本殿    = {{jalink|流造|Q210684}}
-|別名    = 
-|札所等  = 
-|例祭    = 11月11日
-|神事    = 
-|地図 = {{Location map|Japan Saitama|label=天神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
-}}
-'''天神社'''（てんじんじゃ）は、{{jalink|埼玉県|Q128186}}{{jalink|児玉郡|Q938038}}{{jalink|上里町|Q1345287}}五明の{{jalink|神流川 (利根川水系)|Q11590491|神流川}}沿いにある神社。祭神は{{jalink|ワクムスビ||稚産霊神}}、{{jalink|トヨウケビメ|Q2983724|豊宇気毘売神}}の2柱。{{jalink|武蔵国|Q907398}}{{jalink|賀美郡|Q11634927}}の延喜式内「今城青八坂稲実神社」の論社で、旧社格は村社。旧五明村の鎮守。
+{{nihongo|'''Tenjin-sha'''|天神社}} is a shrine located along the {{jalink|神流川 (利根川水系)|Q11590491|Kanna River}} (Tone River system) in Gomyo, {{jalink|上里町|Q1345287|Kamisato}}, {{jalink|児玉郡|Q938038|Kodama District}}, {{jalink|埼玉県|Q128186|Saitama Prefecture}}. The enshrined deities are {{jalink|ワクムスビ||Wakumusubi}} and {{jalink|トヨウケビメ|Q2983724|Toyoukebime}}. It is a candidate shrine (ronsha) for the Engishiki-listed "Imakiawoyasakainamino Shrine" in {{jalink|賀美郡|Q11634927|Kami District}}, {{jalink|武蔵国|Q907398|Musashi Province}}, and was formerly ranked as a village shrine (sonsha). It served as the tutelary shrine of the former village of Gomyo.
 
-== 由緒 ==
-創祀年代は不詳。
-社名の起源は、稲作信仰によるもので、渡来系氏族が高度な稲作技術を導入し、稲霊を祀ったことと伝えられている。<ref name="天神社御由緒">第62回伊勢神宮式年遷宮記念『天神社 御由緒
-』より</ref>なお、渡来系氏族とは、5世紀末から6世紀初めにかけて朝鮮半島の百済から渡来してきた今来漢人（いまきかんじん）のことで、当初の居住地「大和国今来郡」から移住してきたため、社名「今城」（いまき）の起源とされている。
+== Origin ==
+The date of the shrine's founding is unknown.
+
+The origin of the shrine's name is said to be connected to rice cultivation worship: an immigrant clan introduced advanced rice farming techniques and enshrined the rice spirit.<ref name="天神社御由緒">From the 62nd Ise Shrine Shikinen Sengū commemorative ''Tenjin-sha: Goyuisho''.</ref> The immigrant clan in question refers to the ''Imakikanajin'' — people who crossed from Baekje on the Korean Peninsula in the late 5th to early 6th centuries. Because they migrated from their original home in "Imaki District, Yamato Province," the shrine name "Imaki" (今城) traces to this origin.
+
 <gallery widths="200px" heights="150px">
-File:GomyouAma-jinja(Kamisato) Torii2.jpg|一の鳥居
-File:Ama-jinja(Kamisato,Gomyou) Torii1.jpg|二の鳥居
+File:GomyouAma-jinja(Kamisato) Torii2.jpg|First torii gate
+File:Ama-jinja(Kamisato,Gomyou) Torii1.jpg|Second torii gate
 </gallery>
-1722年に、現在の社殿が再建された。
-1832年に、上野国新田郡の岩松満次郎が中黒紋の幕と高張提灯を今城青八坂稲実大明神に寄贈した。<ref name="埼玉県上里町">由緒案内板『天神社』（設置者：埼玉県上里町、設置日：昭和63年3月）</ref>
+
+In 1722, the current shrine buildings were rebuilt.
+
+In 1832, Iwamatu Manjiro of Nitta District, Kozuke Province, donated a curtain bearing the Nakaguro family crest and a ceremonial paper lantern to Imakiawoyasakainamino Daimyojin.<ref name="埼玉県上里町">Shrine information board ''Tenjin-sha'' (erected by Kamisato, Saitama Prefecture; March 1988).</ref>
+
 <gallery widths="200px" heights="150px">
-File:GomyouAma-jinja(Misato) Haiden.jpg|社殿
-File:GomyouAma-jinja(Misato) Kaguraden.jpg|神楽殿
+File:GomyouAma-jinja(Misato) Haiden.jpg|Worship hall (haiden)
+File:GomyouAma-jinja(Misato) Kaguraden.jpg|Sacred music hall (kaguraden)
 </gallery>
-昭和42年に、境内から
 
-''「えむぎしきない」''
+In 1967 (Shōwa 42), a stone pillar of sacred stone inscribed with the characters "Emugi Shikinaisha" (えむぎしきない) and "Imakiawoyasakanokami" (いまきあおやさかのかみ) was discovered on the shrine grounds. This became the basis for its designation as a candidate shrine for the Engishiki-listed name. The stone pillar is currently enshrined as the sacred object (shintai).<ref name="埼玉県上里町"/>
 
-''「いまきあおやさかのかみ」''
+'''Shrine ranks'''
+* {{jalink|明治|Q3125096}} 5 ({{jalink|1872年|Q7753|1872}}) — Village shrine (sonsha)<ref name="天神社御由緒"/>
+* Taishō 8 (1919), February 3 — Designated as a shrine receiving ritual food and cloth offerings
 
-と刻まれた神代石の石棒が発見された。このことが根拠となり、式内社名の論社とされている。現在は、この石棒が御神体として祀られている。<ref name="埼玉県上里町"/>
+== Enshrined Deities <ref name="天神社御由緒"/> ==
+'''Principal deities'''
+* {{jalink|ワクムスビ||Wakumusubi}} (Wakumusubi no Kami)
+* {{jalink|トヨウケビメ|Q2983724|Toyoukebime}} (Toyoukebime no Kami)
 
-'''社格'''
-* {{jalink|明治|Q3125096}}5年（{{jalink|1872年|Q7753}}） - 村社<ref name="天神社御由緒"/>
-* 大正8年（1919年）2月3日 - 神饌幣畠料供進社
-
-== 祭神 <ref name="天神社御由緒"/> ==
-'''主祭神'''
-* {{jalink|ワクムスビ||稚産霊神}}（わくむすびのかみ）
-* {{jalink|トヨウケビメ|Q2983724|豊宇気毘売神}}（とようけひめのかみ）
 <gallery widths="200" heights="150px">
-File:GomyouAma-jinja(Misato) Sarcophagus2.jpg|石碑
+File:GomyouAma-jinja(Misato) Sarcophagus2.jpg|Stone monument
 </gallery>
 
-== 境内社 ==
-明治10年（1877年）に合祀。
-* 若宮 白山社<ref name="埼玉県上里町"/>
+== Sub-shrines ==
+Merged in Meiji 10 (1877).
+* Wakamiya Hakusan-sha<ref name="埼玉県上里町"/>
 
-明治42年（1909年）に合祀。社殿裏に鎮座。
-* 若宮 丹生社<ref name="埼玉県上里町"/>  （祭神）月読命<ref name="武蔵国郡村誌">『武蔵国郡村誌』6巻 比良郡五明村（発行者:埼玉県、発行日:1953年（昭和28年））</ref>
-: {{jalink|万寿|Q1194155}}元年（1024年）3月に、{{jalink|藤原知近}}が創建した。<ref name="武蔵国郡村誌"/>
+Merged in Meiji 42 (1909). Enshrined behind the main hall.
+* Wakamiya Niusha<ref name="埼玉県上里町"/> (deity: Tsukuyomi no Mikoto)<ref name="武蔵国郡村誌">''Musashi Province District and Village Records'', vol. 6, Kodama District, Gomyo Village (published by Saitama Prefecture, 1953).</ref>
+: Founded in the third month of {{jalink|万寿|Q1194155|Manju}} 1 (1024) by {{jalink|藤原知近|Fujiwara no Tomochika}}.<ref name="武蔵国郡村誌"/>
 
-拝殿の正面に向かって右側の石祠群
-* 諏訪神社・稲荷神社・八坂神社・市杵島神社<ref name="埼玉県上里町"/>
+Stone shrine group to the right when facing the haiden:
+* Suwa Shrine, Inari Shrine, Yasaka Shrine, Ichikishima Shrine<ref name="埼玉県上里町"/>
+
 <gallery widths="200px" heights="150px">
-File:GomyouTen-jinja(Kamisato) Tansho-sha.jpg|丹生社
-File:GomyouAma-jinja(Misato) Sarcophagus1.jpg|石祠
+File:GomyouTen-jinja(Kamisato) Tansho-sha.jpg|Niusha
+File:GomyouAma-jinja(Misato) Sarcophagus1.jpg|Stone shrine
 </gallery>
 
-== 行事 <ref name="天神社御由緒" /> ==
-* 元旦祭（1月1日）
-* 春祭り（3月29日）
-* 大祓式（7月31日）
-* 秋祭り（11月19日）
-* 新嘗祭（12月9日）
+== Festivals <ref name="天神社御由緒" /> ==
+* New Year's Festival (January 1)
+* Spring Festival (March 29)
+* Great Purification Ceremony (July 31)
+* Autumn Festival (November 19)
+* Niiname-sai (December 9)
 
-== 交通 ==
-* JR{{jalink|高崎線|Q1346657}}{{jalink|神保原駅|Q845133}}より上里町バス{{jalink|こむぎっち号|Q28682946}}（中央ルート）「アグリパーク上里」行に乗車19分。終点「アグリパーク上里」下車徒歩15分。
-* JR{{jalink|高崎線|Q1346657}}{{jalink|神保原駅|Q845133}}より徒歩45分（3.3km）
+== Access ==
+* From JR {{jalink|高崎線|Q1346657|Takasaki Line}} {{jalink|神保原駅|Q845133|Jimboharae Station}}, take the Kamisato Town Bus {{jalink|こむぎっち号|Q28682946|Komugicchin}} (Central Route) bound for "Agri Park Kamisato" — 19 minutes. Alight at the terminal stop "Agri Park Kamisato" and walk 15 minutes.
+* 45-minute walk (3.3 km) from JR {{jalink|高崎線|Q1346657|Takasaki Line}} {{jalink|神保原駅|Q845133|Jimboharae Station}}.
 
-== 脚注 ==
+== References ==
 {{Reflist}}
 
 ==End Japanese==
@@ -193,18 +176,11 @@ File:GomyouAma-jinja(Misato) Sarcophagus1.jpg|石祠
 [[Category:武蔵国の式内社]]
 [[Category:上里町の建築物]]
 [[Category:上里町の歴史]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Shikinaisha]]
 [[Category:Shikinai Shōsha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Kokuhei-sha]]
 [[Category:Tenmangū (worship)]]
 [[Category:Shikinaisha in Musashi Province]]
-[[Category:need translation]]
 [[Category:Duplicated content translation]]
 [[Category:Pages with duplicated content]]

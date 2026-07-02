@@ -191,9 +191,8 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox religion]] with unknown parameter "_VALUE_"|ignoreblank=y| abbreviation | absorbed | aid | alt | area | associations | branched_from | caption | churches | congregations | congregations_type | defunct | director | division | division_type | division_type1 | division_type2 | division_type3 | division1 | division2 | division3 | fellowships | fellowships_type | fellowships_type1 | fellowships1 | footnotes | founded_date | founded_place | founder | full_communion | governance | headquarters | hospitals | icon | icon_alt | icon_width | image | imagealttext | imagewidth | independence | language | leader | leader_name | leader_name1 | leader_name2 | leader_name3 | leader_title | leader_title1 | leader_title2 | leader_title3 | leader/moderator | liturgy | logo | main_classification | members | merged_into | merger | ministers | ministers_type | missionaries | missionary organization | module | name | native_name | native_name_lang | number_of_followers | nursing_homes | orientation | other_names | polity | possessions | primary_schools | publications | recognition | reunion | scripture | secondary_schools | separated_from | separations | slogan | structure | tax_status | territory | tertiary | seminaries  |theology | type | website | website_title1 | website1 }}</includeonly><noinclude>
 {{documentation}}
 
-[[Category:Independently git synced pages]][[Category:Pages using infobox religion with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Pages using infobox religion with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
 </noinclude>
