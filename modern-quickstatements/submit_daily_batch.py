@@ -24,6 +24,14 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 QS_API = "https://quickstatements.toolforge.org/api.php"
 MAX_RETRIES = 10
 RETRY_DELAY = 20  # seconds between retries
+# Error substrings that are permanent for the whole run — retrying them (or
+# trying the next file) cannot succeed, and burning 10 retries per file on them
+# pushed the job past its 30-minute timeout from 2026-06-22, which killed the
+# step as 'cancelled' (not 'failure') and so never triggered the
+# direct-daily-edits fallback. Bail immediately instead.
+PERMANENT_ERRORS = [
+    "Problem generating OAuth signature",
+]
 # Cap total lines submitted per run. Paired with the once-per-day fire gate
 # in cleanup-loop.yml. This is the ONLY thing that edits Wikidata — all
 # Wikidata work is generated as QuickStatements lines into the atomic files
@@ -105,27 +113,45 @@ def submit_batch(lines, token, username, batch_name):
     return False, f"API error: {result}", result
 
 
+def is_permanent_error(message):
+    """True if the error message indicates a failure retrying can't fix."""
+    return any(marker in message for marker in PERMANENT_ERRORS)
+
+
 def submit_with_retries(lines, token, username, batch_name):
-    """Try submitting a batch up to MAX_RETRIES times."""
+    """Try submitting a batch up to MAX_RETRIES times.
+
+    Bails out after the first attempt on a permanent error (e.g. the
+    QS OAuth-signature failure) — see PERMANENT_ERRORS.
+    """
     for attempt in range(1, MAX_RETRIES + 1):
         success, message, raw = submit_batch(lines, token, username, batch_name)
         if success:
             return success, message, raw, attempt
         print(f"  Attempt {attempt}/{MAX_RETRIES} failed: {message}")
+        if is_permanent_error(message):
+            print("  Permanent error — not retrying.")
+            return False, message, raw, attempt
         if attempt < MAX_RETRIES:
             print(f"  Retrying in {RETRY_DELAY}s...")
             time.sleep(RETRY_DELAY)
     return False, message, raw, MAX_RETRIES
 
 
-def write_report(report):
-    """Write run report to reports/ directory."""
+def write_report(report, quiet=False):
+    """Write run report to reports/ directory.
+
+    Called after every batch (not just at the end) so a run killed by the
+    job timeout still leaves a partial report on disk for the
+    commit-and-push step to pick up.
+    """
     os.makedirs("reports", exist_ok=True)
     ts = report["timestamp"].replace(":", "-").replace(" ", "_")
     filepath = f"reports/{ts}.json"
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
-    print(f"Report written to {filepath}")
+    if not quiet:
+        print(f"Report written to {filepath}")
     return filepath
 
 
@@ -205,6 +231,10 @@ def main():
             print(f"  FAILED after {attempts} attempts: {message}")
             any_failed = True
             # Continue to next file instead of giving up
+
+        # Persist progress so far — a timeout-killed run keeps its report
+        report["outcome"] = "interrupted"
+        write_report(report, quiet=True)
 
         # Gap between files
         time.sleep(5)

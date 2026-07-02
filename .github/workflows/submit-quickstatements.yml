@@ -19,7 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     outputs:
-      qs-failed: ${{ steps.qs-submit.outcome == 'failure' }}
+      # != 'success' (not == 'failure'): a submit step killed by the job
+      # timeout ends as 'cancelled', and from 2026-06-22 to 2026-07-02 that
+      # silently disarmed the direct-daily-edits fallback — no Wikidata
+      # edits at all. Any non-success must trigger the fallback.
+      qs-failed: ${{ steps.qs-submit.outcome != 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -61,6 +65,6 @@ jobs:
           git push
 
       - name: Warn if submission failed
-        if: steps.qs-submit.outcome == 'failure'
+        if: steps.qs-submit.outcome != 'success'
         run: |
           echo "::warning::QuickStatements API submission failed — this is expected behavior. The QS API frequently returns errors or timeouts. The report has been committed above. Direct API fallback will run."
