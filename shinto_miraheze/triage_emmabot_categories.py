@@ -50,23 +50,47 @@ SOURCE_CAT_RE = re.compile(
 
 
 def check_enwiki_categories(titles):
-    """Check which category titles exist on enwiki. Returns set of existing titles."""
+    """Check which category titles exist on enwiki.
+
+    Returns (existing, unknown): sets of bare titles. `unknown` holds titles
+    whose batch query failed even after retries — callers must skip those
+    rather than misclassify them as "without enwiki". POST (not GET): 50
+    long Japanese titles in a GET query string can exceed the URL-length
+    limit, and enwiki then answers with an HTML error page instead of JSON
+    (this crashed the cleanup job daily from ~2026-06-08 to 2026-07-02).
+    """
     existing = set()
+    unknown = set()
     # titles are bare names like "Foo", query as "Category:Foo"
     for i in range(0, len(titles), ENWIKI_BATCH_SIZE):
         batch = titles[i : i + ENWIKI_BATCH_SIZE]
         query_titles = "|".join(f"Category:{t}" for t in batch)
-        resp = requests.get(
-            ENWIKI_API,
-            params={
-                "action": "query",
-                "titles": query_titles,
-                "format": "json",
-            },
-            headers={"User-Agent": "EmmaBot/1.0 (shinto.miraheze.org)"},
-            timeout=30,
-        )
-        data = resp.json()
+        data = None
+        for attempt in range(3):
+            try:
+                resp = requests.post(
+                    ENWIKI_API,
+                    data={
+                        "action": "query",
+                        "titles": query_titles,
+                        "format": "json",
+                    },
+                    headers={"User-Agent": "EmmaBot/1.0 (shinto.miraheze.org)"},
+                    timeout=30,
+                )
+                if resp.status_code != 200:
+                    print(f"  enwiki batch {i // ENWIKI_BATCH_SIZE + 1}: HTTP {resp.status_code} (attempt {attempt + 1}/3)")
+                    time.sleep(5)
+                    continue
+                data = resp.json()
+                break
+            except Exception as e:
+                print(f"  enwiki batch {i // ENWIKI_BATCH_SIZE + 1}: {type(e).__name__}: {e} (attempt {attempt + 1}/3)")
+                time.sleep(5)
+        if data is None:
+            print(f"  enwiki batch {i // ENWIKI_BATCH_SIZE + 1}: giving up — {len(batch)} titles left unknown (skipped this run)")
+            unknown.update(batch)
+            continue
         pages = data.get("query", {}).get("pages", {})
         for page in pages.values():
             if page.get("missing") is not None:
@@ -76,7 +100,7 @@ def check_enwiki_categories(titles):
             if full_title.startswith("Category:"):
                 existing.add(full_title[len("Category:"):])
         time.sleep(0.5)  # be polite to enwiki
-    return existing
+    return existing, unknown
 
 
 def iter_source_categories(site):
@@ -116,14 +140,19 @@ def main():
 
     # Batch-check enwiki existence
     print("Checking enwiki for matching categories...")
-    enwiki_existing = check_enwiki_categories(names)
-    print(f"  {len(enwiki_existing)} have enwiki matches, {len(names) - len(enwiki_existing)} do not.\n")
+    enwiki_existing, enwiki_unknown = check_enwiki_categories(names)
+    print(f"  {len(enwiki_existing)} have enwiki matches, {len(names) - len(enwiki_existing) - len(enwiki_unknown)} do not, {len(enwiki_unknown)} unknown (query failed).\n")
 
     edited = skipped = errors = 0
     for i, name in enumerate(names, 1):
         if args.max_edits and edited >= args.max_edits:
             print(f"Reached max edits ({args.max_edits}); stopping.")
             break
+
+        if name in enwiki_unknown:
+            print(f"[{i}/{len(names)}] Category:{name} SKIP (enwiki status unknown — retry next run)")
+            skipped += 1
+            continue
 
         has_enwiki = name in enwiki_existing
         target_cat = WITH_ENWIKI_CAT if has_enwiki else WITHOUT_ENWIKI_CAT
