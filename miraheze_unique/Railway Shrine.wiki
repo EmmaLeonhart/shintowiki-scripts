@@ -1,12 +1,12 @@
 '''Railway Shrine''' (鉄道神社)
 
 == Shrines named "Railway Shrine" ==
-* {{ill|Railway Shrine (Kita, Tokyo)|ja|鉄道神社 (東京都北区)}} – Shrine located within the {{ill|East Japan Railway Company, Tōkyō Metropolitan Area Headquarters|ja|東日本旅客鉄道東京支社|12=simple|13=User:Immanuelle/JR East Tokyo Branch|ja_comment=jawiki redirects to 東日本旅客鉄道首都圏本部|comment=changed title based on wikidata|qid=Q11527192}} in Kita Ward, Tokyo. Formerly located on the rooftop of the {{ill|JR East Headquarters Building|ja|JR東日本本社ビル#旧国鉄本社ビル|12=simple|13=User:Immanuelle/former Japanese National Railways Headquarters|comment=changed title based on wikidata|qid=Q3156958}} in Chiyoda Ward, Tokyo.<ref>{{PDFlink|[http://www2.kokugakuin.ac.jp/ishii-rabo/data/pdf/199202.pdf 日本の企業と宗教]}} 石井研士</ref>
+* {{ill|Railway Shrine (Kita, Tokyo)|ja|鉄道神社 (東京都北区)}} – Shrine located within the {{ill|East Japan Railway Company, Tōkyō Metropolitan Area Headquarters|ja|東日本旅客鉄道首都圏本部|qid=Q11527192}} in Kita Ward, Tokyo. Formerly located on the rooftop of the {{ill|JR East Headquarters Building|fr|JR East Japan Headquarters|ja|JR東日本本社ビル|pl|JR East Japan Building|zh|JR東日本總部大樓|qid=Q3156958}} in Chiyoda Ward, Tokyo.<ref>{{PDFlink|[http://www2.kokugakuin.ac.jp/ishii-rabo/data/pdf/199202.pdf 日本の企業と宗教]}} 石井研士</ref>
 * {{ill|Railway Shrine (Yokohama)|ja|鉄道神社（神奈川県横浜市）}} – Shrine located in Ōkurayama Park (Ume-en) in Yokohama, Kanagawa Prefecture. Shrine of the Tokyu Group, enshrined from Ise Grand Shrine.
-* {{ill|Tetsudo Shrine|ja|鉄道神社 (南牧村)|12=simple|13=User:Immanuelle/Railway Shrine (Minamimaki)|comment=changed title based on wikidata|qid=Q30936255}} – Shrine near the highest elevation of JR Group railway lines (near Nobeyama Station) in Minamimaki Village, Minamisaku District, Nagano Prefecture.
-* Railway Shrine (Osaka) – Shrine on the rooftop of the {{ill|JR West Japan Headquarters Building|ja|JR西日本本社ビル|12=simple|13=User:Immanuelle/JR West Headquarters|comment=changed title based on wikidata|qid=Q11226320}} in Osaka, Osaka Prefecture. See {{ill|JR West Japan Headquarters Building|ja|JR西日本本社ビル#鉄道神社|12=simple|13=User:Immanuelle/JR West Headquarters#Railway Shrine|comment=changed title based on wikidata|qid=Q11226320}}.
-* {{ill|Tetsudō Shrine|ja|鉄道神社 (福岡市)|12=simple|13=User:Immanuelle/Railway Shrine (Fukuoka)|comment=changed title based on wikidata|qid=Q30932529}} – Shrine located on the rooftop of {{ill|JR Hakata City|ja|JR博多シティ|12=simple|13=User:Immanuelle/JR Hakata City|comment=changed title based on wikidata|qid=Q11226208}} at Hakata Station in Fukuoka City, Fukuoka Prefecture.
-* {{ill|Tetsudō Shrine|ja|鉄道神社 (大分市)|12=simple|13=User:Immanuelle/Railway Shrine (Oita)|comment=changed title based on wikidata|qid=Q22119498}} – Shrine located on the rooftop of {{ill|AMU PLAZA OITA|ja|JRおおいたシティ|12=simple|13=User:Immanuelle/JR Ōita City|ja_comment=jawiki redirects to アミュプラザおおいた|comment=changed title based on wikidata|qid=Q18335584}} at Ōita Station in Ōita City, Ōita Prefecture.
+* {{ill|Tetsudo Shrine|ja|鉄道神社 (南牧村)|qid=Q30936255}} – Shrine near the highest elevation of JR Group railway lines (near Nobeyama Station) in Minamimaki Village, Minamisaku District, Nagano Prefecture.
+* Railway Shrine (Osaka) – Shrine on the rooftop of the {{ill|JR West Japan Headquarters Building|ja|JR西日本本社ビル|qid=Q11226320}} in Osaka, Osaka Prefecture. See {{ill|JR West Japan Headquarters Building|ja|JR西日本本社ビル|qid=Q11226320}}.
+* {{ill|Tetsudō Shrine|ja|鉄道神社 (福岡市)|qid=Q30932529}} – Shrine located on the rooftop of {{ill|JR Hakata City|ja|JR博多シティ|ko|JR 하카타 시티|zh|JR博多城|qid=Q11226208}} at Hakata Station in Fukuoka City, Fukuoka Prefecture.
+* {{ill|Tetsudō Shrine|ja|鉄道神社 (大分市)|qid=Q22119498}} – Shrine located on the rooftop of {{ill|AMU PLAZA OITA|ja|アミュプラザおおいた|qid=Q18335584}} at Ōita Station in Ōita City, Ōita Prefecture.
 * Japan Railway Shrine – Shrine located within the {{ill|Museum Yamato Bunkakan|en|Museum Yamato Bunkakan|qid=Q3329639|lt=Yamato Bunkakan}} in Nara City, Nara Prefecture. Adjacent to Nihon Railway Reisha and Iwafune Inari Shrine.<ref>『近畿日本鉄道100th year のあゆみ』p.572 2010th year  近畿日本鉄道</ref>
 * {{ill|Aizu Railway Shrine|ja|会津鉄道神社}} – Shrine located in front of Ashinomaki-Onsen Station in Aizuwakamatsu City, Fukushima Prefecture.
 * {{ill|Shinano Railway Shrine|ja|しなの鉄道神社}} – Shrine located within Karuizawa Station in Karuizawa Town, Kitasaku District, Nagano Prefecture.
@@ -32,9 +32,9 @@
 
 == Shrines with this name ==
 
-* {{ill|Tetsudo Shrine (Q30936255)|lt=Tetsudo Shrine|qid=Q30936255}} — Minamimaki
-* {{ill|Tetsudō Shrine (Q22119498)|lt=Tetsudō Shrine|qid=Q22119498}} — Ōita-shi
-* {{ill|Tetsudō Shrine (Q30932529)|lt=Tetsudō Shrine|qid=Q30932529}} — Hakata-eki-chūōgai
+* {{ill|Tetsudo Shrine (Q30936255)|ja|鉄道神社 (南牧村)|qid=Q30936255|lt=Tetsudo Shrine}} — Minamimaki
+* {{ill|Tetsudō Shrine (Q22119498)|ja|鉄道神社 (大分市)|qid=Q22119498|lt=Tetsudō Shrine}} — Ōita-shi
+* {{ill|Tetsudō Shrine (Q30932529)|ja|鉄道神社 (福岡市)|qid=Q30932529|lt=Tetsudō Shrine}} — Hakata-eki-chūōgai
 
 {{translated page|ja|鉄道神社|version=101879864|comment=Imported full ja history}}
 
@@ -42,3 +42,4 @@
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
