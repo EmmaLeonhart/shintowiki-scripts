@@ -244,7 +244,7 @@
 ==Source==
 *[https://ja.wikisource.org/wiki/%E9%9C%8A%E5%AD%A6%E6%8A%84 霊学抄] on Wikisource
 
-{{wikidata link||en|Reigakushō|check_date=2026-05-25}}
+{{wikidata link||en|Reigakushō|grok=none|check_date=2026-05-25}}
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
@@ -258,6 +258,5 @@
 [[Category:Pages with 2000+ untranslated japanese characters]]
 [[Category:Honda Chikaatsu]]
 
-<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
 [[Category:Pages git synced to resolve interlanguage and interwiki links]]
