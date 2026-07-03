@@ -50,5 +50,6 @@
 [[Category:Templates]]
 [[Category:Translated pages]][[Category:Independently git synced pages]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Templates missing wikidata]]
+{{wikidata link|Q5615431|af|Sjabloon:Vertaalvanaf|als|Vorlage:Übersetzungshinweis|ang|Bysen:Translated page|an|Plantilla:Traducción de|ar|قالب:صفحة مترجمة|ary|موضيل:صفحة مطرجمة|ast|Plantía:Traducíu de|ban|Mal:Alih basa|bar|Vorlog:Import|ba|Ҡалып:Тәржемә ителгән мәҡәлә|bcl|Plantilya:Pigdakit-taramon na pahina|be|Шаблон:Пераклад|bg|Шаблон:Превод от|bh|टेम्पलेट:Translated page|bn|টেমপ্লেট:অনূদিত পাতা|bs|Šablon:Prevedeno|ca|Plantilla:Traduït de|cdo|模板:Translated page|ce|Кеп:Гоч дина статья|crh|Şablon:Tercime etilgen maqale|check_date=2026-07-03}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
