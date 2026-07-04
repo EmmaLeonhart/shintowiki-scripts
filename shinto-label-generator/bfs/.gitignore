@@ -1,2 +1,0 @@
-# only the atomic write temp is transient; state.json IS tracked for cross-session resume
-state.json.tmp
