@@ -24,6 +24,8 @@ So my thought here is pretty simple. We are going to have to fix up so that:
 
 And finally, because I think that we'd like to locally store things or something like that, I don't really remember the full details of how this thing works. We're going to change all of the queued up edits of the category relay ones to have the category prefix for the English language label. 
 
+I think the monthly verification sweep is something that is still scheduled. Now I don't know why it's a monthly verification sweep, but I'm going to say we do this stuff once and see if it has been properly fixed. And once you've cleared out the entire queue, we'll leave this thing in again if it turns out that the remaining (I think it was seven issues or something like that) that we had are not resolved. I'm pretty sure we had seven issues with the wiki that we set up stuff for and we thought were resolved but weren't sure about it. 
+
 
 
 ## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
