@@ -37,25 +37,36 @@ thread stacks into the CI log every 15 min. NEXT ACTION: after the next
 scheduled cleanup-loop run (02:23 UTC daily), read the category-orchestrator
 job log, find the dumped stack, fix the named line.
 
-## 同上 error
+## 同上 error — pipeline SHIPPED for Izumo (48/51); remaining rungs
 
+The year-old import bug (P6375 = 同上@ja copied verbatim from jawiki
+式内社一覧 per-district table templates, uncited) now has a standing corrective
+pipeline (2026-07-04): `resolve_doujou_addresses.py` parses the 10 出雲国
+district templates, resolves each 同上 to the nearest preceding real address
+(exactly the table's semantics, incl. rowspan continuations and the |||同上
+typo), matches items by ja label; `generate_doujou_address_fixes.py` re-derives
+convergent self-contained QS lines from LIVE Wikidata state every run (phase 1:
+add correct address with S143=Q177837 + S4656=list-article URL; phase 2: remove
+同上 only once the good claim exists — order-safe under the drip's random
+sampling); `direct_daily_edits.py` gained monolingual-text (`ja:"…"`) support.
+Wired into generate-quickstatements.yml. Slow multi-year drip is by design.
 
-In the initial import of the Shikinaisha from jawiki there were numerous shrines that got the property
-
-adress = 同上
-
-for example on https://www.wikidata.org/wiki/Q135040965
-
-I am extremely surprised that nobody has pointed this out for a full year. What it is, is that on Japanese Wikipedia, this was present in shrines on the lists. What this literally translates to is the same as above. I thought it was something like unknown, but it's the same as above. We have an odd characteristic of this, though, where these addresses are very clearly cited to the Wikipedia pages of the list of shiki naisha in the area. 
-
-However, I believe none of them actually have the citation on them, so this adds an immediate complication to them. 
-
-What I want you to do is:
-1. Set something up that will, for the so what I want you to do right now, take a really long time and feel overly complicated.
-2. Investigate the wiki data items to figure out how to get the actual Wikipedia link and give that as the source, and have it so that there is a thing that edits all of these things to make it so the source changes to that Wikipedia article.
-3. Do something that, on our wiki, on the Shinto wiki, includes the Japanese language addresses on the periodic regeneration of the list of shiki naisha pages, which presumably are ones that regenerate constantly. If they are not ones that do so, they should be regenerating. I wouldn't say necessarily once a day, but I would probably say once every day.
-Once we have those, we actually have the ability to use the addresses in it. If we have a sighted one, because the order is the same on both of them, if we have a sighted one that is the excited one with a citation that is the same as the one above it in the list on arWiki, which is a regular address, then we will essentially just have a thing that propagates that as far as adding it to the queued up edits. As these things go through the queued up edits, they will gradually be added and gradually propagating down until eventually we have the full citations and stuff all implemented and we have the other stuff.
-I hope that makes sense. Just to clarify again, emphatically, all of this stuff is extremely slow, relying on just one single pipeline that is quite rate limited. It'll probably take multiple years for this pipeline to complete, and that's okay. What matters is that the pipeline is consistently correcting these things. It's going to gradually propagate down these so that in a few years the wiki data is going to be pretty good.
+Remaining rungs:
+1. **3 manual items** the resolver refuses to guess (kanji-variant/cross-district
+   ambiguity): Q135040786 坐韓国伊大弖神社, Q135070085 剣神社, Q135070108
+   佐久多神社. Resolve by hand or LLM with the district tables open.
+2. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
+   found in the current 51, all Izumo — re-check with the SPARQL in
+   resolve_doujou_addresses.py after the drip converges).
+3. **Citation backfill for non-同上 imported addresses**: same reference pair
+   (S143 jawiki + S4656 list URL) for Shikinaisha P6375 claims that are
+   unreferenced but correct. Reuse the resolver's row-matching; emit through the
+   same drip. Bounded: query first, gate on row-address == claim-address.
+4. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
+   regeneration of the List-of-Shikinaisha pages, regenerating ~daily (Emma).
+   Investigate which generator owns those pages (site/generate_pages.py?) and
+   whether they regenerate at all; wire addresses in from the same district
+   tables or from Wikidata P6375 once corrected.
 
 ## Temple & Shrine Standardization
 

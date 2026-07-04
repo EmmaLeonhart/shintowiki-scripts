@@ -42,6 +42,13 @@ jobs:
         working-directory: modern-quickstatements
         run: python fetch_category_label_fixes_from_wiki.py
 
+      - name: Resolve + generate 同上 address fixes
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          python resolve_doujou_addresses.py
+          python generate_doujou_address_fixes.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         continue-on-error: true

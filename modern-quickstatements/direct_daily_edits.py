@@ -13,6 +13,7 @@ import io
 import json
 import os
 import random
+import re
 import sys
 import time
 import requests
@@ -44,6 +45,7 @@ ATOMIC_FILES = [
     "en_labels.txt",
     "en_labels_sonnet.txt",
     "category_label_fixes.txt",
+    "doujou_address_fixes.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
     "kana_redundant_remove.txt",
@@ -68,6 +70,11 @@ def parse_qs_value(raw):
     """Parse a QS v1 value token into a Wikidata API-compatible value."""
     if raw.startswith("Q"):
         return {"type": "entity", "value": {"entity-type": "item", "numeric-id": int(raw[1:]), "id": raw}}
+    # QS v1 monolingual text: ja:"島根県..." (P6375 etc.)
+    m = re.match(r'^([a-z][a-z0-9-]{1,11}):"(.*)"$', raw)
+    if m:
+        return {"type": "monolingualtext",
+                "value": {"text": m.group(2), "language": m.group(1)}}
     if raw.startswith('"') and raw.endswith('"'):
         return {"type": "string", "value": raw[1:-1]}
     if raw in ("novalue", "somevalue"):
@@ -151,6 +158,8 @@ def value_to_api_json(parsed_value):
     """Convert a parsed value to the JSON string expected by wbcreateclaim/wbsetqualifier."""
     if parsed_value["type"] == "entity":
         return json.dumps(parsed_value["value"])
+    if parsed_value["type"] == "monolingualtext":
+        return json.dumps(parsed_value["value"])
     if parsed_value["type"] == "string":
         return json.dumps(parsed_value["value"])
     return json.dumps(parsed_value.get("value", ""))
@@ -215,6 +224,12 @@ def find_claim(session, entity, prop, parsed_value):
 
         if parsed_value["type"] == "entity":
             if dv.get("value", {}).get("id") == parsed_value["value"].get("id"):
+                return claim["id"]
+        elif parsed_value["type"] == "monolingualtext":
+            v = dv.get("value", {})
+            if (isinstance(v, dict)
+                    and v.get("text") == parsed_value["value"]["text"]
+                    and v.get("language") == parsed_value["value"]["language"]):
                 return claim["id"]
         elif parsed_value["type"] == "string":
             if dv.get("value") == parsed_value["value"]:
