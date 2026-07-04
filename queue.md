@@ -84,8 +84,6 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    building; likely routes through the remote (translation) routine, not a translit script.
 5. **Broaden kami source.** `Q524158` gave 352; also sweep Shinto-deity subclasses /
    Japanese-deity classes for fuller coverage, re-run `generate_kami_quickstatements.py`.
-6. **Wire new label files into `docs/index.html`** browse site (kami_labels,
-   shrine_rank_labels, province_labels, shikinaisha_lists).
 
 ---
 

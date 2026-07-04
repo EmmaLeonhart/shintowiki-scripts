@@ -4,6 +4,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Browse site: cross-category label pages (queue item, docs wiring)
+
+`docs/generate_pages.py` + `index.html` now surface the four multi-language
+category files as their own browsable/copyable pages under a new "Cross-category
+label sets" section: shikinaisha_lists (3982), kami_labels (18651),
+shrine_rank_labels (2267), province_labels (3053). They share the QuickStatements
+page template; only index.html + the stale id_proposed.html changed among existing
+pages (no mass churn).
+
 ## 2026-07-04 — translit_common offline tests (queue item 4)
 
 Added `shinto-label-generator/tests/test_translit_common.py` (12 tests): the
