@@ -13,11 +13,18 @@ on:
       pages:
         description: "Semicolon-separated exact page titles (empty = full 'List of Shikinaisha in' prefix sweep)"
         type: string
-        default: "List of Shikinaisha in Awa Province (Chiba);List of Shikinaisha in Awa Province (Tokushima)"
+        default: ""
       max_edits:
         description: "Page-save cap"
         type: string
         default: "100"
+  schedule:
+    # Daily full sweep (Emma's original spec: "regenerating ~daily").
+    # 18:37 UTC keeps clear of the ~06:00 UTC cleanup-loop's ~8h window.
+    # With batched wbgetentities (50 ids/call) a full ~68-province sweep is
+    # tractable; progress state is runner-local so every scheduled run is a
+    # fresh full sweep.
+    - cron: "37 18 * * *"
 
 permissions:
   contents: write
@@ -47,11 +54,17 @@ jobs:
       - name: Build run tag
         run: |
           RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+          case "${GITHUB_EVENT_NAME}" in
+            schedule) CAUSE="time triggered pipeline" ;;
+            *)        CAUSE="manual triggered pipeline" ;;
+          esac
+          echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
       - name: Regenerate lists
+        # inputs.* are empty on schedule triggers: empty max_edits falls back
+        # to 100, empty pages means the full prefix sweep.
         run: |
           python3 -u -m shinto_miraheze.update_shikinaisha_lists \
-            --apply --max-edits "${{ inputs.max_edits }}" \
+            --apply --max-edits "${{ inputs.max_edits || '100' }}" \
             --run-tag "${RUN_TAG}" \
             --pages "${{ inputs.pages }}"

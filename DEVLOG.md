@@ -31,6 +31,23 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Both Awa lists live with Address column; daily full-sweep schedule wired
+
+- First Awa run's "success" was FALSE for Tokushima: ~250 one-per-entity
+  Wikidata calls drew throttle pages, one entity exhausted retries, the
+  per-page catch swallowed it, run exited 0. Fixed (bda29d72): batched
+  wbgetentities (50 ids/call — entries + P460 candidates prefetched, ~5
+  calls per province), status-aware retries honoring Retry-After, and the
+  run exits nonzero when any page fails.
+- Re-dispatched Tokushima-only: **VERIFIED LIVE** 16:22:03Z — Address column
+  + 89 {{lang|ja|…}} cells (run took ~1 min vs the 6-min throttle death).
+  Chiba verified earlier (7 cells). The dab page untouched, as specified.
+- Wired the **daily full sweep** (18:37 UTC cron, clear of the cleanup-loop
+  window) — Emma's original spec was "regenerating ~daily"; batching makes a
+  ~68-province sweep tractable. Schedule-trigger fallbacks for empty inputs.
+  Remaining queue rung: verify the first scheduled sweep + spot-check
+  non-Awa pages.
+
 ## 2026-07-04 — Monthly sweep COMPLETED (wiki recovered) + Chiba list live-verified
 
 Miraheze came back mid-afternoon (sync workflows green from 15:30 UTC), so the

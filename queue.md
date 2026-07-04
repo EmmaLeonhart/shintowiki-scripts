@@ -83,15 +83,13 @@ address_citation_backfill.txt, converges as refs land; see devlog):
    workflow `update-shikinaisha-lists.yml` (defaults to the two Awa list
    pages — Chiba + Tokushima; the bare "Awa Province" page is a
    disambiguation page and is not touched).
-   Remaining rungs:
-   a. Dispatched 2026-07-04 ~16:10 UTC (run 28711987593). **Chiba VERIFIED
-      LIVE**: regenerated 16:11:09Z, Address column in header, 7 ja-address
-      cells. Tokushima still processing at last check (bigger province) —
-      verify its page once the run completes (watcher armed).
-   b. Decide the cadence for the FULL sweep (all ~68 province pages,
-      ~heavy Wikidata traffic): wire into cleanup-loop (daily is likely too
-      hot — the old run took hours) or a weekly schedule; clear
-      shiki_list_progress.json semantics are per-sweep resume only.
+   Remaining rung:
+   a. **Verify the first scheduled FULL sweep** (daily 18:37 UTC cron added
+      2026-07-04 per Emma's original "regenerating ~daily" spec; first fire
+      tonight): run green AND spot-check 2-3 non-Awa province pages carry
+      the Address column. Both Awa pages already VERIFIED LIVE (Chiba
+      16:11:09Z, 7 addr cells; Tokushima 16:22:03Z, 89 addr cells — after
+      fixing the throttle failure with batched fetches + honest exit).
 
 ## Temple & Shrine Standardization (decomposed 2026-07-04; Emma's rule: temple-only langs use the temple name for shrines)
 
