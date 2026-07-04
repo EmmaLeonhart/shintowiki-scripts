@@ -42,14 +42,12 @@ cure, delete this item. Full forensic trail: DEVLOG 2026-07-04.
   observed labels — revisit only if a converter arrives or Sonnet does them.
 - **cdo**: zero observed labels, mixed-script wiki — parked with evidence.
 
-## Wikidata direct path at 300/day — verify + cleanup
+## Wikidata direct path at 300/day — verify after 2-3 daily cycles
 
-Emma decisions 2026-07-04: QS permanently dead (no manual batch ever);
-direct_daily_edits.py is the only editor, MAX_EDITS=300 at 30-90s.
-1. VERIFY after 2-3 daily cycles: reports/ show ~300-line runs; sampled
-   temple QIDs gain en labels.
-2. Cleanup: retire submit_daily_batch's QS attempt (burns a failed API call
-   per file per day).
+reports/ show the qs_retired daily reports + ~300-line direct runs; sampled
+temple QIDs gain en labels (temple files only entered the direct list
+2026-07-04 — they were orphaned in the QS-only list before). Details:
+DEVLOG 2026-07-04.
 
 ---
 

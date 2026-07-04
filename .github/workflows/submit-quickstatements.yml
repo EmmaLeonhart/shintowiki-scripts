@@ -43,13 +43,14 @@ jobs:
           path: modern-quickstatements
         continue-on-error: true
 
-      - name: Submit daily batch via QuickStatements API
+      - name: Write daily report (QS path retired 2026-07-04)
+        # submit_daily_batch.py no longer calls the QS API (retired — Emma
+        # ruled out its required one-time manual batch). It writes the dated
+        # report the daily gate reads and exits 1 so qs-failed stays true
+        # and direct-daily-edits (the only editor) fires.
         id: qs-submit
         continue-on-error: true
         working-directory: modern-quickstatements
-        env:
-          QS_TOKEN: ${{ secrets.QS_TOKEN }}
-          QS_USERNAME: ${{ secrets.QS_USERNAME }}
         run: python submit_daily_batch.py
 
       - name: Commit and push run report
@@ -64,7 +65,7 @@ jobs:
           git stash pop || true
           git push
 
-      - name: Warn if submission failed
+      - name: Note the deliberate nonzero exit
         if: steps.qs-submit.outcome != 'success'
         run: |
-          echo "::warning::QuickStatements API submission failed — this is expected behavior. The QS API frequently returns errors or timeouts. The report has been committed above. Direct API fallback will run."
+          echo "::notice::Deliberate: the QS path is retired; the nonzero exit routes edits to direct-daily-edits (the only Wikidata editor). Report committed above."

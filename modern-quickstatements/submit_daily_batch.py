@@ -1,42 +1,28 @@
-"""Submit atomic QuickStatements via the QuickStatements API.
+"""Daily Wikidata-edit reporter (the QuickStatements path is RETIRED).
 
-Submits all atomic operation files (P459 qualifiers, P4656 references,
-P958 qualifiers, Shikinai Hiteisha removals). Each file is tried
-independently with retries, so one flaky failure doesn't block the rest.
+History: this script used to submit the atomic files through the
+QuickStatements toolforge API. That API refuses every batch with
+"Problem generating OAuth signature; user needs to have submitted a batch
+manually at least once before", and Emma ruled out ever doing the one-time
+manual web-UI batch (2026-07-04). The direct Wikidata API editor
+(direct_daily_edits.py, 300 lines/day) is therefore the ONLY path — its
+ATOMIC_FILES must stay a superset of the list below (drift-guard test:
+tests/test_atomic_files_alignment.py).
 
-Writes a run report to reports/ after each run.
-
-Expects environment variables:
-  QS_TOKEN     - API token from QuickStatements user page
-  QS_USERNAME  - Wikidata username for QuickStatements submissions
+What this script still does, and why it still runs daily in cleanup-loop:
+ 1. Writes the dated report under reports/ — cleanup-loop's
+    wikidata-daily-fire gate reads the newest report's date to fire the
+    edit jobs exactly once per UTC day.
+ 2. Exits nonzero, so the workflow's qs-failed output stays true and
+    direct-daily-edits fires unchanged (no DAG surgery needed).
+No network calls; the QS_TOKEN/QS_USERNAME secrets are no longer used.
 """
 
 import io
 import json
 import os
 import sys
-import time
 from datetime import datetime, timezone
-import requests
-
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-
-QS_API = "https://quickstatements.toolforge.org/api.php"
-MAX_RETRIES = 10
-RETRY_DELAY = 20  # seconds between retries
-# Error substrings that are permanent for the whole run — retrying them (or
-# trying the next file) cannot succeed, and burning 10 retries per file on them
-# pushed the job past its 30-minute timeout from 2026-06-22, which killed the
-# step as 'cancelled' (not 'failure') and so never triggered the
-# direct-daily-edits fallback. Bail immediately instead.
-PERMANENT_ERRORS = [
-    "Problem generating OAuth signature",
-]
-# Cap total lines submitted per run. Paired with the once-per-day fire gate
-# in cleanup-loop.yml. This is the ONLY thing that edits Wikidata — all
-# Wikidata work is generated as QuickStatements lines into the atomic files
-# and run through here (no bespoke direct-API editors).
-MAX_LINES_TOTAL = 50
 
 ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
@@ -71,80 +57,8 @@ def read_batch(filepath):
     return lines
 
 
-def submit_batch(lines, token, username, batch_name):
-    """Submit a batch of QuickStatements v1 lines to the API.
-
-    Returns (success: bool, message: str, raw_response: dict|None).
-    """
-    if not lines:
-        return True, "No lines to submit", None
-
-    data = "||".join(lines)
-
-    try:
-        r = requests.post(
-            QS_API,
-            data={
-                "action": "import",
-                "submit": "1",
-                "format": "v1",
-                "data": data,
-                "username": username,
-                "token": token,
-                "batchname": batch_name,
-                "compress": "1",
-            },
-            headers={"User-Agent": "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"},
-            timeout=120,
-        )
-    except Exception as e:
-        return False, f"Request failed: {e}", None
-
-    if r.status_code != 200:
-        return False, f"HTTP {r.status_code}: {r.text[:500]}", None
-
-    try:
-        result = r.json()
-    except Exception:
-        return False, f"Non-JSON response: {r.text[:500]}", None
-
-    if "batch_id" in result:
-        return True, f"Batch created: #{result['batch_id']}", result
-    return False, f"API error: {result}", result
-
-
-def is_permanent_error(message):
-    """True if the error message indicates a failure retrying can't fix."""
-    return any(marker in message for marker in PERMANENT_ERRORS)
-
-
-def submit_with_retries(lines, token, username, batch_name):
-    """Try submitting a batch up to MAX_RETRIES times.
-
-    Bails out after the first attempt on a permanent error (e.g. the
-    QS OAuth-signature failure) — see PERMANENT_ERRORS.
-    """
-    for attempt in range(1, MAX_RETRIES + 1):
-        success, message, raw = submit_batch(lines, token, username, batch_name)
-        if success:
-            return success, message, raw, attempt
-        print(f"  Attempt {attempt}/{MAX_RETRIES} failed: {message}")
-        if is_permanent_error(message):
-            print("  Permanent error — not retrying.")
-            return False, message, raw, attempt
-        if attempt < MAX_RETRIES:
-            print(f"  Retrying in {RETRY_DELAY}s...")
-            time.sleep(RETRY_DELAY)
-    return False, message, raw, MAX_RETRIES
-
-
 def write_report(report, quiet=False):
-    """Write run report to reports/ directory.
-
-    Called after every batch (not just at the end) so a run killed by the
-    job timeout still leaves a partial report on disk for the
-    commit-and-push step to pick up.
-    """
+    """Write run report to reports/ directory."""
     os.makedirs("reports", exist_ok=True)
     ts = report["timestamp"].replace(":", "-").replace(" ", "_")
     filepath = f"reports/{ts}.json"
@@ -155,107 +69,39 @@ def write_report(report, quiet=False):
     return filepath
 
 
-def main():
-    now = datetime.now(timezone.utc)
+def build_report(now=None):
+    """The retired-path daily report: per-file pending-line counts, outcome
+    qs_retired. Kept as a pure function so tests can run it offline."""
+    now = now or datetime.now(timezone.utc)
     report = {
         "timestamp": now.strftime("%Y-%m-%d %H:%M:%S UTC"),
-        "outcome": "unknown",
+        "outcome": "qs_retired",
+        "note": ("QuickStatements path retired 2026-07-04 (Emma: no manual "
+                 "batch ever) — direct_daily_edits.py is the only editor"),
         "batches": [],
     }
-
-    token = os.environ.get("QS_TOKEN", "")
-    username = os.environ.get("QS_USERNAME", "")
-
-    if not token or not username:
-        missing = []
-        if not token:
-            missing.append("QS_TOKEN")
-        if not username:
-            missing.append("QS_USERNAME")
-        report["outcome"] = "skipped"
-        report["error"] = f"{', '.join(missing)} not set"
-        print(f"SKIPPED: {report['error']}")
-        write_report(report)
-        return
-
-    any_succeeded = False
-    any_failed = False
-    total_submitted = 0
-
     for filepath in ATOMIC_FILES:
         lines = read_batch(filepath)
-        batch_entry = {
+        report["batches"].append({
             "file": filepath,
             "lines_available": len(lines),
             "lines_submitted": 0,
-            "success": None,
-            "message": "",
-            "attempts": 0,
-            "api_response": None,
-        }
+            "success": False,
+            "message": "QS retired — flows via the direct API drip",
+        })
+    return report
 
-        if not lines:
-            batch_entry["success"] = True
-            batch_entry["message"] = "Nothing to submit"
-            print(f"{filepath}: nothing to submit")
-            report["batches"].append(batch_entry)
-            continue
 
-        # Cap total lines across all files
-        remaining_budget = MAX_LINES_TOTAL - total_submitted
-        if remaining_budget <= 0:
-            batch_entry["success"] = True
-            batch_entry["message"] = f"Skipped (daily cap of {MAX_LINES_TOTAL} reached)"
-            print(f"{filepath}: skipped ({MAX_LINES_TOTAL} line cap reached)")
-            report["batches"].append(batch_entry)
-            continue
-        if len(lines) > remaining_budget:
-            lines = lines[:remaining_budget]
-
-        batch_name = f"auto: {os.path.splitext(filepath)[0]} ({len(lines)} lines)"
-        print(f"{filepath}: submitting {len(lines)} lines as '{batch_name}'...")
-
-        success, message, raw, attempts = submit_with_retries(lines, token, username, batch_name)
-        batch_entry["lines_submitted"] = len(lines)
-        batch_entry["success"] = success
-        batch_entry["message"] = message
-        batch_entry["attempts"] = attempts
-        batch_entry["api_response"] = raw
-        report["batches"].append(batch_entry)
-
-        if success:
-            print(f"  OK: {message}" + (f" (attempt {attempts})" if attempts > 1 else ""))
-            any_succeeded = True
-            total_submitted += len(lines)
-        else:
-            print(f"  FAILED after {attempts} attempts: {message}")
-            any_failed = True
-            # Continue to next file instead of giving up
-
-        # Persist progress so far — a timeout-killed run keeps its report
-        report["outcome"] = "interrupted"
-        write_report(report, quiet=True)
-
-        # Gap between files
-        time.sleep(5)
-
-    if any_succeeded and not any_failed:
-        report["outcome"] = "submitted"
-    elif any_succeeded and any_failed:
-        report["outcome"] = "partial"
-    elif not any_succeeded and not any_failed:
-        report["outcome"] = "nothing_to_do"
-    else:
-        report["outcome"] = "failed"
-
-    report_path = write_report(report)
-    print(f"Done. Outcome: {report['outcome']}")
-
-    # Exit non-zero when ALL batches failed so the workflow can trigger the direct API fallback
-    if report["outcome"] == "failed":
-        print("WARNING: All batches failed — direct API fallback should run")
-        sys.exit(1)
+def main():
+    report = build_report()
+    write_report(report)
+    pending = sum(b["lines_available"] for b in report["batches"])
+    print(f"QS path retired — {pending} lines pending across "
+          f"{len(ATOMIC_FILES)} files, all flowing via direct_daily_edits.py.")
+    print("Exiting 1 so cleanup-loop's qs-failed wiring fires the direct path.")
+    sys.exit(1)
 
 
 if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
     main()

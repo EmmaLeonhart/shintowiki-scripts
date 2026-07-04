@@ -4,6 +4,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 (late) — QS path fully retired + the orphaned-files bug it exposed
+
+- **submit_daily_batch.py no longer calls the QuickStatements API** (retired;
+  Emma ruled out the required one-time manual batch). It now only writes the
+  dated report the wikidata-daily-fire gate reads, and exits 1 so the
+  unchanged qs-failed wiring routes everything to direct_daily_edits.py —
+  no DAG surgery. QS_TOKEN/QS_USERNAME env dropped from the workflow; dead
+  submit/retry helpers deleted per house style.
+- **Real bug found during the retirement:** direct_daily_edits.ATOMIC_FILES
+  was missing SEVEN files that existed only in the submit list — both temple
+  label files (359 + 11,346 lines), kana_en_labels, identical_name_en_labels,
+  cjk_ja_backfill, and both migrate_ritsuryo removals. With QS dead, those
+  lines could NEVER flow (and this is the deeper reason temple labels never
+  moved). Lists aligned; new drift-guard test asserts direct ⊇ report list.
+- Module-level stdout rewrap moved into direct_daily_edits' main guard (same
+  pytest-capture fix as the others). Suite: 278 green.
+
 ## 2026-07-04 — Property-label coverage report (queue item 3, bounded first step)
 
 `bfs/property_label_report.py` enumerates properties on the Shinto-core items

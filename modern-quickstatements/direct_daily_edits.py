@@ -18,8 +18,6 @@ import sys
 import time
 import requests
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
@@ -33,7 +31,11 @@ MAX_EDITS = 300
 MIN_DELAY = 30
 MAX_DELAY = 90
 
-# Same files as submit_daily_batch.py
+# MUST be a superset of submit_daily_batch.ATOMIC_FILES (drift-guard test
+# enforces it): with the QS path retired (2026-07-04), THIS list is the only
+# road to Wikidata — 7 files (both temple label files, kana/identical-name
+# labels, cjk backfill, both migrate removals) existed only in the submit
+# list and would have been silently orphaned.
 ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",
     "p4656_jawiki_references.txt",
@@ -44,6 +46,11 @@ ATOMIC_FILES = [
     "p11250_miraheze_links.txt",
     "p6262_fandom_links.txt",
     "en_labels.txt",
+    "kana_en_labels.txt",
+    "identical_name_en_labels.txt",
+    "temple_en_labels.txt",
+    "temple_identical_name_en_labels.txt",
+    "cjk_ja_backfill.txt",
     "en_labels_sonnet.txt",
     "category_label_fixes.txt",
     "doujou_address_fixes.txt",
@@ -51,6 +58,8 @@ ATOMIC_FILES = [
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
     "kana_redundant_remove.txt",
+    "migrate_ritsuryo_funding_remove.txt",
+    "migrate_ritsuryo_funding_underspecified_remove.txt",
 ]
 
 
@@ -472,4 +481,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # In the main guard, not at import: tests import this module under pytest.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
     main()
