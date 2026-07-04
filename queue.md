@@ -102,19 +102,24 @@ both kinds (25 distinct words, 13 shared — the shared ones ARE Emma's
 "use the temple word" rule, already live for ar/fa/he/hi/bn/tr/la/sv/az/…).
 The gap is coverage, not fallback logic. Rungs:
 
-1. **Add the ~15 temple-only langs with ≥5 temple labels to format_label**
-   (gan 91, ur 38, km 16, as 14, mai 10, pa 9, cdo 8, lo 8, dz 7, new 6,
-   mad 6, shn 5, nn 5, zh-mo 5, ceb 5): for each, sample its existing temple
-   labels from Wikidata to extract the affix convention (word + position),
-   then wire the lang in with that word for BOTH p_types (Emma's rule).
-   Long tail (<5 labels) not worth automating. zh-* variants: check the CJK
-   path first — they may already be handled there.
+1. ~~temple-only langs~~ PARTIAL 2026-07-04: **nn, ceb, mai, as, ur shipped**
+   into format_label + ALL_LANGS + language_registry with tests (sampled
+   conventions: ceb "Templong <Name>"; nn mirrors nb; mai=hindify+मंदिर;
+   as=bengalify+Assamese-ৰ+মন্দিৰ; ur=farsify+مندر — temple word serves both
+   kinds per Emma's rule). Remaining split:
+   a. **gan (91 labels!), cdo, zh-mo → the CJK path** — their sampled labels
+      are verbatim kanji (trad variants), so they belong in
+      generate_chinese_quickstatements.py (opencc variant conversion), NOT
+      format_label. Wire them there.
+   b. **pa/km/lo/dz/new/mad/shn deferred** — no script converter exists
+      (Gurmukhi/Khmer/Lao/Tibetan/Newa/…) and 0-2 observed labels each;
+      counts ≤16. Only worth it if a converter arrives or Sonnet does them.
 2. **Both-kind langs missing from format_label** (pl 35/196, th 33/135,
    cs 31/135, fi 18/46, sl 29/97, ro 9/33 …): same sampling method, but these
    get DISTINCT shrine/temple words where the observed conventions differ.
    (ja/en/id/zh/ko/tok are fine — own paths per DEVLOG 2026-06-23.)
-3. **Tests per new lang** (same pattern as test_temple_multilang.py) +
-   regenerate and eyeball a small batch before the drip picks it up.
+3. **Regenerate + eyeball a small batch** for the 5 new langs before the drip
+   picks them up (tests are in tests/test_temple_only_tier.py, done).
 
 
 ## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01) — PARTIAL 2026-07-04, wiki-dependent remainder only

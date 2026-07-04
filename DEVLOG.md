@@ -31,6 +31,25 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Temple-only tier: nn/ceb/mai/as/ur added to the multilang generator
+
+First implementation slice of the standardization epic (rung 1). Sampled each
+candidate language's existing Japanese-temple labels from Wikidata to derive
+conventions, then shipped the five whose scripts the generator already speaks:
+
+- **nn** — mirrors nb: `<Name>-tempel` / shrine `<Name>-heilagdomen`.
+- **ceb** — observed "templong Singan" → `Templong <Name>`, both kinds.
+- **mai** — Devanagari via hindify + मंदिर, both kinds (same word as hi).
+- **as** — new `assamify()`: bengalify output with Assamese ৰ for Bengali র;
+  word মন্দিৰ (bn মন্দির with the same substitution), both kinds.
+- **ur** — farsify + مندر, both kinds (Urdu script ⊇ the Farsi letter set).
+- Routing decision from the samples: **gan/cdo/zh-mo labels are verbatim
+  kanji**, so they belong to the CJK generator, not transliteration —
+  queued there. pa/km/lo/dz/new/mad/shn deferred (no script converter,
+  ≤2 observed labels each).
+- ALL_LANGS 38→43; language_registry updated; 7 new tests
+  (test_temple_only_tier.py); label-generator suite 93 green.
+
 ## 2026-07-04 — Queue barrel: temple-drip outage diagnosed, standardization epic decomposed, monthly sweep (partial), list-pages investigated
 
 - **Temple drip: NOT landing, root cause found.** All QS batches fail with the

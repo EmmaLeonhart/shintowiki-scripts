@@ -298,6 +298,27 @@ _DEVA_AA_MATRA = "ा"  # U+093E
 _MR_TIRTH = "".join(chr(c) for c in [0x0924, 0x0940, 0x0930, 0x094D, 0x0925])  # तीर्थ
 
 
+# ----------------------------
+# Assamese (temple-only tier, 2026-07-04): Bengali-script sibling. Same
+# bengalify output with the Assamese ra (ৰ U+09F0) substituted for the
+# Bengali ra (র U+09B0); the temple word মন্দিৰ mirrors bn মন্দির with the
+# same substitution. Per Emma's standardization rule, temple-only languages
+# use their temple word for BOTH shrines and temples.
+# ----------------------------
+
+_AS_RA = chr(0x09F0)
+_AS_MANDIR = _BN_MANDIR.replace(chr(0x09B0), _AS_RA)
+
+
+def assamify(name):
+    """Romanized Japanese name → Assamese script (bengalify output with the
+    Assamese ra). None when bengalify can't map the name."""
+    bn = bengalify(name)
+    if not bn:
+        return None
+    return bn.replace(chr(0x09B0), _AS_RA)
+
+
 def marathify(name):
     """Romanized Japanese name → Marathi Devanagari with explicit aa-matras."""
     deva = hindify(name)
@@ -715,6 +736,16 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "da":
             if p_type == "temple": return "tempel"
             return "helligdommen"
+        if lang == "nn":
+            if p_type == "temple": return "tempel"
+            return "heilagdomen"   # Nynorsk parallel of nb helligdommen
+        # Temple-only tier (2026-07-04): these languages have temple-label
+        # conventions on Wikidata but no shrine ones, so per Emma's rule the
+        # temple word serves both kinds.
+        if lang == "ceb": return "Templong"  # observed: "templong <Name>"
+        if lang == "mai": return "महा मंदिर" if is_grand else "मंदिर"  # Devanagari, same word as hi
+        if lang == "as": return _AS_MANDIR
+        if lang == "ur": return "مندر"
         if lang == "hu":
             if p_type == "temple": return "templom"
             return "nagyszentély" if is_grand else "szentély"  # suffixed
@@ -762,9 +793,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br", "ceb"]:
         return f"{get_affix()} {name}"
-    if lang in ["sv", "nb", "da", "hu"]:
+    if lang in ["sv", "nb", "da", "hu", "nn"]:
         return f"{name}-{get_affix()}"
     if lang in ["sh", "hr", "az"]:
         return f"{name} {get_affix()}"
@@ -800,6 +831,17 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "hi":
         hi_name = hindify(name)
         return f"{hi_name} {get_affix()}"
+    if lang == "mai":
+        mai_name = hindify(name)
+        return f"{mai_name} {get_affix()}"
+    if lang == "as":
+        as_name = assamify(name)
+        if not as_name:
+            return None
+        return f"{as_name} {get_affix()}"
+    if lang == "ur":
+        ur_name = farsify(name)
+        return f"{ur_name} {get_affix()}"
     if lang == "mr":
         mr_name = marathify(name)
         return f"{mr_name} {get_affix()}"
@@ -816,7 +858,8 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
-             "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr"]
+             "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
+             "nn", "ceb", "mai", "as", "ur"]
 
 
 def make_sparql(lang_code):

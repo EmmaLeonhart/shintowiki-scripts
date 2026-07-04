@@ -58,6 +58,14 @@ COVERED = {
     "ms": ("generate_multilang_quickstatements.py", "affix"),
     "br": ("generate_multilang_quickstatements.py", "affix"),
     "mr": ("generate_multilang_quickstatements.py", "marathi-devanagari"),
+    # Temple-only tier (2026-07-04): langs with Wikidata temple-label
+    # conventions but no shrine ones — the temple word serves both kinds
+    # (Emma's standardization rule).
+    "nn": ("generate_multilang_quickstatements.py", "affix-suffix"),
+    "ceb": ("generate_multilang_quickstatements.py", "affix"),
+    "mai": ("generate_multilang_quickstatements.py", "devanagari"),
+    "as": ("generate_multilang_quickstatements.py", "bengali-abugida+as-ra"),
+    "ur": ("generate_multilang_quickstatements.py", "perso-arabic"),
     # CJK + special cases
     "zh": ("generate_chinese_quickstatements.py", "cjk-manyogana"),
     "zh-hant": ("generate_chinese_quickstatements.py", "opencc-s2t"),
