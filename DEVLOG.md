@@ -4,6 +4,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Label-generalization queue rewritten to match reality
+
+Queue BFS section was badly stale (said Buddhist deities "shelved" when they're
+fully shipped via the JP+Sanskrit engine split, 3,464 labels; texts/humans/P279-fix
+not marked done). Rewrote it: SHIPPED = kami/Buddhist/provinces/people/texts/
+shikinaisha/court-ranks-CJK all wired into the 10-step batch + the separate Sanskrit
+engine (ar/fa/he added). REMAINING = court-rank lexical translation, the
+descriptive/property/drift TRANSLATION tier (→ daily Claude routine), the written-
+but-API-429-blocked misc-terms transliterator (-zukuri/rituals/sects), and polish
+(tok Sanskrit, Sanskrit engine niceties). No code this entry — queue hygiene; the
+Wikidata API is rate-limiting the session so the misc-terms run couldn't verify.
+
 ## 2026-07-04 (night) — TEXTS unified + labelled across the language set (hub session)
 
 Emma's directive: texts are the hub session's lane ("most of them just are

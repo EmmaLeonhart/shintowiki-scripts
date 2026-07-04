@@ -53,70 +53,40 @@ DEVLOG 2026-07-04.
 
 ## Multilingual label generalization (BFS-driven) — non-central-command session's active work
 
-Goal: generalize labels for Shinto texts/concepts/deities/ranks/provinces across all
-covered languages. Everything lives in `shinto-label-generator/`. Shrines + Buddhist
-temples + Shikinaisha lists are ALREADY covered (algorithmic names) and are excluded
-from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVLOG
-2026-07-04): Shikinaisha-list generator; kami / shrine-rank / province generators
-(`translit_common.py` shared helper); BFS crawler + per-layer analysis.
+Goal: name every important Shinto entity across all ~60 covered languages so a
+speaker of any of them can navigate the Engishiki and its world. Everything lives
+in `shinto-label-generator/`, wired into `!regenerateQuickStatements.bat`.
 
-1. **BFS crawl → depth 5 (resumable).** `shinto-label-generator/bfs/crawl_shinto_bfs.py`,
-   forward-links-only, resumes from `bfs/state.json`; `--max-nodes N` bounds a run.
-   Growth 54→183→4932; level 3 (~5000+) was mid-crawl. A background run may be active
-   THIS session — do NOT start a second crawl while one is writing state.json (two
-   writers corrupt it). When stopped, resume with e.g. `--max-nodes 2000 --max-depth 5`;
-   commit updated `state.json` + new `levels/level_NN.tsv`. Deeper levels drift into
-   non-Shinto geography (LAYER_ANALYSIS.md) → NEEDS-DECISION from Emma on the cutoff
-   (likely depth 3-4); surface level sizes, don't silently push to 5.
-2. **Re-run layer analysis as levels land.** `python bfs/analyze_layers.py` after each
-   new `level_NN.tsv`; refresh `bfs/LAYER_ANALYSIS.md`.
-3. **Property labels (Emma, NEW) — first step DONE, needs a relevance filter + Emma.**
-   `bfs/property_label_report.py` → `property_label_report.md`: 806 distinct properties
-   on the Shinto-core items (levels 0-1) — counting MAIN values, QUALIFIERS, and
-   references (qualifiers matter: Shinto properties are heavily qualified; +90 props vs
-   direct-only), ALL with gaps in ≥1 covered lang. FINDING: much of the 806 is irrelevant
-   external-ID properties (e.g. "Video Game History Foundation Library subject ID"); the
-   genuinely actionable Shinto/structural targets
-   are a small set — e.g. **P14005 Japanese court rank** (missing 57/60), P13723, P527,
-   P31, P361. NEXT: (a) filter to Shinto-relevant properties (drop external-ID datatype
-   props); (b) property labels are TRANSLATION not transliteration → Emma-scoped decision
-   on how to fill them (do NOT guess-transliterate). Extending the sweep to layer 2 is a
-   network follow-up (blocked while the crawl holds the Wikidata budget).
-4. **TEXTS DONE across the full 287 (hub session, Emma's directive: "most
-   texts are romaji — literally transliterate").** UNIFIED pipeline in
-   `generate_text_quickstatements.py` (the two sessions' independent text
-   labellers merged under the bat-wired filename): 2,611 labels / 197 texts —
-   Latin verbatim titles (macrons kept), engine scripts via bare_name, zh
-   family from the kanji (fires even for Sinitic glossed titles like 清史稿),
-   ko = sino-Korean hanja FIRST (classical-text convention; deliberate
-   override of the phonetic-only pass), phonetic fallback. Non-destructive,
-   gap-aware. **Residue: 90 unroutable** (no romaji/kana/kanji) in
-   `bfs/text_labels_residue.md` — translation problem, folds into item 8's
-   pipeline. 5 routing tests green.
-5. **Humans DONE; court ranks PARTIAL (CJK only — need lexical translation).** Japanese
-   people (`generate_human_quickstatements.py`, 27 romaji-named figures →1050 labels,
-   `looks_romaji`-guarded) shipped. Court ranks (P14005, 16 values): CJK+ko shipped and
-   correct (they share the kanji 正一位 etc.), BUT the en labels are LEXICAL
-   ("Junior/Senior Nth Rank") → the ~50 non-CJK langs need lexical TRANSLATION, not
-   transliteration (compose from translated Junior/Senior + ordinal + Rank). NOT done.
-6. **Buddhist deities — SHELVED, needs an ANALYSIS task (Emma).** The bare-name engine
-   transliterates the JAPANESE reading, but Buddhist deity names are Sanskrit-derived
-   with established forms per language (Indra≠"indora", Avalokiteśvara≠Kannon-reading).
-   Generator gated behind `--buddhist` (off); bad output removed. NEXT: comprehensive
-   analysis of how each Buddhist deity's name is rendered across the covered languages;
-   only ones whose English name IS Japanese-derived can use the engine. Systematic
-   *translation*, not transliteration.
-7. **Misc list must use subclass-of (P279), not only instance-of (P31).** BUG:
-   `list_miscellaneous.py`/`categorize_miscellaneous.py` dropped items that are classes
-   (only P279, no P31) via the `if types[q]` guard — Shinto concept-classes got thrown
-   out. Fix: include P279 in the type signal + easy-root exclusion; rebuild
-   `miscellaneous.tsv` + `miscellaneous_categorized.md`.
-8. **Drift items are wanted too (Emma) — need a TRANSLATION pipeline.** The "drift"
-   (encyclopedia articles, concepts, etc.) is NOT to be discarded — build a proper
-   lexical-TRANSLATION pipeline so they get labels too (this is the recurring theme:
-   descriptive things translate, only proper names transliterate). `bilateral relation`
-   (76) = "X–Japan relations" articles, pure drift from the Japan node — Emma skeptical;
-   lowest priority / probably skip.
+**SHIPPED — transliteration (proper names), all wired into the 10-step batch:**
+kami 18,651 · Buddhist deities 3,464 (JP engine for JP-named, separate Sanskrit
+engine `sanskrit_translit.py` for Sanskrit-named — clusters preserved, all scripts
+incl. ar/fa/he) · provinces 3,053 · Japanese people 1,050 · classical texts 2,611
+(hub session's unified 287-scope labeller) · Shikinaisha lists 3,982 · court ranks
+CJK/ko. Supporting: BFS crawl (stopped at level 3 = 45,949; deeper = geography
+drift, resume only if wanted), misc categorization (P279 subclass bug FIXED),
+property-coverage report.
+
+**REMAINING:**
+1. **Court ranks — non-CJK lexical translation.** en labels are lexical
+   ("Junior/Senior Nth Rank"); the ~50 non-CJK langs need real translation
+   (compose from Junior/Senior + ordinal + Rank), not transliteration.
+2. **Descriptive concepts + properties + drift — the TRANSLATION tier.** Abstract
+   Shinto concepts (State Shinto, religion types), the Wikidata properties
+   themselves (P13723 etc. — report in `bfs/property_label_report.md`, relevance
+   filter still todo), and the wanted "drift" (encyclopedia entries etc.) all need
+   lexical translation. Route via the daily Claude translation routine
+   (`remote_queue.json`), NOT blind generation. `bilateral relation` (76,
+   "X–Japan relations") = pure drift, skip.
+3. **Misc-terms transliterator — WRITTEN, blocked on API.**
+   `generate_misc_terms_quickstatements.py` catches the Japanese-named terms in
+   the misc bucket (-zukuri architecture styles, rituals like Reisai, sects like
+   koshintō) via `looks_romaji`, excluding texts. Wikidata API is 429-blocking the
+   session — run it when the limit clears, verify, then wire into the batch (step 11).
+4. **Polish:** tok for Sanskrit deities (Toki Pona can't take clusters — needs a
+   syllabifier); Sanskrit engine niceties (Arabic initial-vowel carrier, Greek
+   d→ντ in clusters).
+5. **Text residue: 90 unroutable** (no romaji/kana/kanji) in
+   `bfs/text_labels_residue.md` — folds into the translation tier (item 2).
 
 ---
 
