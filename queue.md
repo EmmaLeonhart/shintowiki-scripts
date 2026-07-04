@@ -9,8 +9,22 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 _The English-label-first translation agenda (metabolized 2026-06-21) is complete: the 4-stage English-label pipeline (Stage 3 dropped per Emma), both downstream generators repointed to English, zh script variants, the per-language coverage registry (`shinto-label-generator/language_registry.py`, 44/116 covered), Vietnamese/Bengali/Greek/Hebrew + European/Latin affix batches, and the CJK→ja backfill all shipped. See `docs/english_label_pipeline.md` and `docs/language_coverage.md`. The remaining long-tail languages (Thai/Burmese/Georgian script maps, single-digit-label langs) were deliberately not hand-built — they failed the verification gate or are too low-value — and are left for the LLM/manual per Emma's scope decision._
 
 _Japanese Buddhist temples now run the FULL automatic pipeline, same as shrines (shipped 2026-06-23, see DEVLOG): **Stage 1** deterministic kana→`<Stem>-<suffix> Temple` (`temple_english.py` + `generate_temple_en_labels.py`, 359/378 kana temples) AND **Stage 4** the cloud Sonnet routine — `select_shrines_to_translate.py` now returns a shrine batch + a temple batch (kind-tagged) from `temples_missing_en_label.json`, so the kana-less majority (~14.5k) flows through the LLM automatically with no cloud-side change and no shrine starvation. The daily worklist workflow refreshes both lists (new temples added to Wikidata flow through), the drip applies, and the multilingual generators propagate from English downstream._
-
 ---
+
+## Stuff to do now
+
+First thing is first, there's a fuck tonne of crud in here. 
+
+Like a lot of it, so we should remove the crud. After we've removed the crud from the queue, then we can work on the one error that I am seeing, which is that the labels of categories, the English, when they're being applied as English labels, we do not have the category prefix on them. That makes it pretty bad. That makes it pretty bad. That makes it so that the categories really deviate from what they're supposed to be like. 
+
+
+So my thought here is pretty simple. We are going to have to fix up so that:
+1. This error doesn't happen again, so the pipeline for categories needs to be changed.
+2. We need to have something set up, a separate task that makes Wikidata Quick Statements that go into the thing. For all of the categories that have had the error put onto them through this, it is going to create saved edit things that change the title to have the category prefix.
+
+And finally, because I think that we'd like to locally store things or something like that, I don't really remember the full details of how this thing works. We're going to change all of the queued up edits of the category relay ones to have the category prefix for the English language label. 
+
+
 
 ## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
 
