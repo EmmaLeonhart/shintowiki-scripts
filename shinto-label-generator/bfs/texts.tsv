@@ -1,0 +1,256 @@
+qid	en	ja	p31_types
+Q135932838	ALA-LC romanization of Japanese	日本語のALA-LCラテン文字表記法	ALA-LC romanization, orthographic transcription, romanization of Japanese, transliteration
+Q96594976			Department of "Ancient and Modern Book Collection"
+Q96599316			Department of "Ancient and Modern Book Collection"
+Q4173137	Jewish Encyclopedia of Brockhaus and Efron	ブロックハウス・エフロン・ユダヤ百科事典	Jewish encyclopedia
+Q754673	English alphabet	英語アルファベット	Latin-script alphabet
+Q15633578	MediaWiki.org	MediaWiki.org	MediaWiki instance, MediaWiki wiki, Wikimedia multilingual project, Wikimedia special project, wiki with script conversion
+Q8449	Spanish Wikipedia	スペイン語版ウィキペディア	MediaWiki instance, Wikipedia language edition
+Q30239	Chinese Wikipedia	中国語版ウィキペディア	MediaWiki instance, Wikipedia language edition, wiki with script conversion
+Q8420	1964 Summer Olympics	1964年東京オリンピック	Summer Olympic Games edition
+Q181278	2020 Summer Olympics	2020年東京オリンピック	Summer Olympic Games edition
+Q11451199	List of Shikinaisha in Aki Province	安芸国の式内社一覧	Three Greats, chapter, list
+Q90405608	FactGrid	FactGrid	WikiProject, Wikibase instance, database, knowledge base, online publication, service on Internet
+Q60024037	Lingua Libre	Lingua Libre	WikiProject, Wikidata front end, pronunciation database, web application, wiki
+Q8423370	Wikimedia France	ウィキメディア・フランス	Wikimedia chapter
+Q373	Wikivoyage	ウィキボヤージュ	Wikimedia content project, guide book
+Q2013	Wikidata	ウィキデータ	Wikimedia content project, knowledge base, knowledge graph, online database
+Q1063116	Meta-Wiki	メタウィキ	Wikimedia multilingual project, Wikimedia special project, multi-languoid Wikimedia site, multi-script Wikimedia site, wiki with script conversion
+Q14360537	Wikipedia:Text of the GNU Free Documentation License, version 1.2		Wikimedia project page, version, edition or translation
+Q328	English Wikipedia	英語版ウィキペディア	Wikipedia language edition
+Q8447	French Wikipedia	フランス語版ウィキペディア	Wikipedia language edition
+Q48183	German Wikipedia	ドイツ語版ウィキペディア	Wikipedia language edition
+Q177837	Japanese Wikipedia	日本語版ウィキペディア	Wikipedia language edition
+Q11920	Italian Wikipedia	イタリア語版ウィキペディア	Wikipedia language edition
+Q58251	Azerbaijani Wikipedia	アゼルバイジャン語版ウィキペディア	Wikipedia language edition
+Q191168	Czech Wikipedia	チェコ語版ウィキペディア	Wikipedia language edition
+Q199698	Ukrainian Wikipedia	ウクライナ語版ウィキペディア	Wikipedia language edition
+Q206855	Russian Wikipedia	ロシア語版ウィキペディア	Wikipedia language edition
+Q207260	Basque Wikipedia	バスク語版ウィキペディア	Wikipedia language edition
+Q1551807	Polish Wikipedia	ポーランド語版ウィキペディア	Wikipedia language edition
+Q1975217	Armenian Wikipedia	アルメニア語版ウィキペディア	Wikipedia language edition
+Q19826574	English Wikivoyage	英語版Wikivoyage	Wikivoyage language edition
+Q9646	1972 Winter Olympics	1972年札幌オリンピック	Winter Olympic Games edition
+Q9664	1998 Winter Olympics	1998年長野オリンピック	Winter Olympic Games edition
+Q667558	revised Hepburn romanization	修正ヘボン式ローマ字表記	anglicization, romanization, romanization of Japanese, rule, transliteration
+Q135658911	English Romanization of Japanese	英語式ローマ字表記	anglicization, romanization, romanization of Japanese, transliteration, umbrella term
+Q137864053	Japan		article
+Q56650909	Hong Kong Chinese Authority Name	香港中文名称規範数據庫	authority file, online database
+Q115920372	CiNii Research	CiNii Research	bibliographic database
+Q107507571	OpenAlex	オープンアレックス	bibliographic database, index, open data set, website
+Q76630151	WorldCat Identities	WorldCat Identities	bibliographic database, website
+Q63411600	Bibliography of the History of the Czech Lands		bibliography, database
+Q6389422	Kenkyūsha’s New Japanese-English Dictionary	新和英大辞典	bilingual dictionary, dictionary of the Japanese language
+Q185598	diary	日記	book form, literary genre
+Q1814982	University of Chicago Press	シカゴ大学出版局	book publisher, university press
+Q16960686	Dictionary.com	Dictionary.com	business, online dictionary, website
+Q11356190	List of Shikinaisha in Mikawa Province	三河国の式内社一覧	chapter, list
+Q11360032	List of Shikinaisha in Kazusa Province	上総国の式内社一覧	chapter, list
+Q11360308	List of Shikinaisha in Kōzuke Province	上野国の式内社一覧	chapter, list
+Q11361283	List of Shikinaisha in Shimōsa Province	下総国の式内社一覧	chapter, list
+Q11361380	List of Shikinaisha in Shimotsuke Province	下野国の式内社一覧	chapter, list
+Q11368516	List of Shikinaisha in Tango Province	丹後国の式内社一覧	chapter, list
+Q11368560	List of Shikinaisha in Tanba Province	丹波国の式内社一覧	chapter, list
+Q11378813	List of Shikinaisha in Iyo Province	伊予国の式内社一覧	chapter, list
+Q11378973	List of Shikinaisha in Ise Province	伊勢国の式内社一覧	chapter, list
+Q11380552	List of Shikinaisha in Izu Province	伊豆国の式内社一覧	chapter, list
+Q11380647	List of Shikinaisha in Iga Province	伊賀国の式内社一覧	chapter, list
+Q11381490	List of Shikinaisha in Hōki Province	伯耆国の式内社一覧	chapter, list
+Q11381626	List of Shikinaisha in Tajima Province	但馬国の式内社一覧	chapter, list
+Q11383282	List of Shikinaisha in Sado Province	佐渡国の式内社一覧	chapter, list
+Q11386164	List of Shikinaisha in Shinano Province	信濃国の式内社一覧	chapter, list
+Q11387310	List of Shikinaisha in Bitchū Province	備中国の式内社一覧	chapter, list
+Q11387322	List of Shikinaisha in Bizen Province	備前国の式内社一覧	chapter, list
+Q11387367	List of Shikinaisha in Bingo Province	備後国の式内社一覧	chapter, list
+Q11395784	List of Shikinaisha in Dewa Province	出羽国の式内社一覧	chapter, list
+Q11395853	List of Shikinaisha in Izumo Province	出雲国の式内社一覧	chapter, list
+Q11399659	List of Shikinaisha in Kaga Province	加賀国の式内社一覧	chapter, list
+Q11416958	List of Shikinaisha in Suo Province	周防国の式内社一覧	chapter, list
+Q11417778	List of Shikinaisha in Izumi Province	和泉国の式内社一覧	chapter, list
+Q11420254	List of Shikinaisha in Inaba Province	因幡国の式内社一覧	chapter, list
+Q11423010	List of Shikinaisha in Tosa Province	土佐国の式内社一覧	chapter, list
+Q11429584	List of Shikinaisha in Iki Island	壱岐国の式内社一覧	chapter, list
+Q11433427	List of Shikinaisha in Yamato Province	大和国の式内社一覧	chapter, list
+Q11441745	List of Shikinaisha in Ōsumi Province	大隅国の式内社一覧	chapter, list
+Q11450714	List of Shikinaisha in Awa Province (Chiba)	安房国の式内社一覧	chapter, list
+Q11453224	List of Shikinaisha in the Imperial Palace	宮中・京中の式内社一覧	chapter, list
+Q11458212	List of Shikinaisha in Tsushima	対馬国の式内社一覧	chapter, list
+Q11465292	List of Shikinaisha in Owari Province	尾張国の式内社一覧	chapter, list
+Q11467693	List of Shikinaisha in Yamashiro Province	山城国の式内社一覧	chapter, list
+Q11481683	List of Shikinaisha in Hitachi Province	常陸国の式内社一覧	chapter, list
+Q11490919	List of Shikinaisha in Shima Province	志摩国の式内社一覧	chapter, list
+Q11498550	List of Shikinaisha in Settsu Province	摂津国の式内社一覧	chapter, list
+Q11498723	List of Shikinaisha in Harima Province	播磨国の式内社一覧	chapter, list
+Q11505106	List of Shikinaisha in Hyūga Province	日向国の式内社一覧	chapter, list
+Q11546334	List of Shikinaisha in Musashi Province	武蔵国の式内社一覧	chapter, list
+Q11553385	List of Shikinaisha in Kawachi Province	河内国の式内社一覧	chapter, list
+Q11559808	List of Shikinaisha in Awaji Province	淡路国の式内社一覧	chapter, list
+Q11577868	List of Shikinaisha in Kai Province	甲斐国の式内社一覧	chapter, list
+Q11582137	List of Shikinaisha in Sagami Province	相模国の式内社一覧	chapter, list
+Q11587179	List of Shikinaisha in Iwami Province	石見国の式内社一覧	chapter, list
+Q11602776	List of Shikinaisha in Chikuzen Province	筑前国の式内社一覧	chapter, list
+Q11602803	List of Shikinaisha in Chikugo Province	筑後国の式内社一覧	chapter, list
+Q11604948	List of Shikinaisha in Kii Province	紀伊国の式内社一覧	chapter, list
+Q11608745	List of Shikinaisha in Mimasaka Province	美作国の式内社一覧	chapter, list
+Q11609223	List of Shikinaisha in Mino Province	美濃国の式内社一覧	chapter, list
+Q11611527	List of Shikinaisha in Hizen Province	肥前国の式内社一覧	chapter, list
+Q11611572	List of Shikinaisha in Higo Province	肥後国の式内社一覧	chapter, list
+Q11612019	List of Shikinaisha in Noto Province	能登国の式内社一覧	chapter, list
+Q11616621	List of Shikinaisha in Wakasa Province	若狭国の式内社一覧	chapter, list
+Q11622280	List of Shikinaisha in Satsuma Province	薩摩国の式内社一覧	chapter, list
+Q11632546	List of Shikinaisha in Sanuki Province	讃岐国の式内社一覧	chapter, list
+Q11633695	List of Shikinaisha in Bungo Province	豊後国の式内社一覧	chapter, list
+Q11636380	List of Shikinaisha in Etchū Province	越中国の式内社一覧	chapter, list
+Q11636413	List of Shikinaisha in Echizen Province	越前国の式内社一覧	chapter, list
+Q11636502	List of Shikinaisha in Echigo Province	越後国の式内社一覧	chapter, list
+Q11638477	List of Shikinaisha in Ōmi Province	近江国の式内社一覧	chapter, list
+Q11642130	List of Shikinaisha in Tōtōmi Province	遠江国の式内社一覧	chapter, list
+Q11654882	List of Shikinaisha in Nagato Province	長門国の式内社一覧	chapter, list
+Q11657514	List of Shikinaisha in Awa Province (Tokushima)	阿波国の式内社一覧	chapter, list
+Q11658590	List of Shikinaisha in Mutsu Province	陸奥国の式内社一覧	chapter, list
+Q11659043	List of Shikinaisha in Oki Province	隠岐国の式内社一覧	chapter, list
+Q11665887	List of Shikinaisha in Hida Province	飛騨国の式内社一覧	chapter, list
+Q11668489	List of Shikinaisha in Suruga Province	駿河国の式内社一覧	chapter, list
+Q17212793	List of Shikinaisha in Buzen Province	豊前国の式内社一覧	chapter, list
+Q16958215	iNaturalist	iNaturalist	citizen science project, mobile app, online community, online database, social network, taxonomic database, website
+Q10372494	Civil Code of Japan	民法	civil code, government-sponsored bill, law of Japan, statute
+Q75488338	Language		class, controlled vocabulary, database
+Q137863868	Meyer’s Universum, Einundzwanzigster Band		collection volume, publication
+Q28527677	Open ISNI for Organizations		database
+Q135037878	Kokugakuin University Shrine database (old)	神社史料集成	database
+Q465	DBpedia	DBペディア	database derived from Wikimedia projects, knowledge base, knowledge graph, online database
+Q1133223	World Atlas of Language Structures	言語構造世界地図	database, free software, website
+Q15241312	Freebase Data Dumps	Freebase データダンプ	database, source of statements in Wikidata
+Q118645236	UMLS 2023	UMLS 2023	database, version, edition or translation
+Q107016745	Japanese Database of National Cultural Properties	国指定文化財等データベース	database, web portal
+Q135919429	website of Agency for Cultural Affairs	文化庁ホームページ	database, web portal
+Q18336371	BBC Things	BBC Things	database, website
+Q61941037	e-Stat	e-Stat	database, website
+Q11392186	Public Offices Election Act	公職選挙法	election act, law of Japan, statute
+Q20991545			encyclopedia article
+Q20991546			encyclopedia article
+Q24358975			encyclopedia article
+Q24469027			encyclopedia article
+Q24469030			encyclopedia article
+Q24469034			encyclopedia article
+Q24469039			encyclopedia article
+Q24469044			encyclopedia article
+Q24469057			encyclopedia article
+Q24469060			encyclopedia article
+Q24469066			encyclopedia article
+Q24469070			encyclopedia article
+Q24469073			encyclopedia article
+Q24469078			encyclopedia article
+Q24511007			encyclopedia article
+Q24733132			encyclopedia article
+Q24736964			encyclopedia article
+Q24755546			encyclopedia article
+Q24923851			encyclopedia article
+Q25376781			encyclopedia article
+Q29950498			encyclopedia article
+Q49387431			encyclopedia article
+Q62104270			encyclopedia article
+Q66481470			encyclopedia article
+Q84646722	1911 Encyclopædia Britannica/Name		encyclopedia article
+Q84647692	1911 Encyclopædia Britannica/Hierarchy		encyclopedia article
+Q84665032	1911 Encyclopædia Britannica/Japan		encyclopedia article
+Q84690498	1911 Encyclopædia Britannica/English Language		encyclopedia article
+Q86851716			encyclopedia article
+Q87333663			encyclopedia article
+Q87337597			encyclopedia article
+Q99221192	Catholic Encyclopedia (1913)/Japan		encyclopedia article
+Q108004008	1922 Encyclopædia Britannica/Japan		encyclopedia article
+Q109110299			encyclopedia article
+Q112779246			encyclopedia article
+Q120367107	1911 Encyclopædia Britannica/Titles of Honour		encyclopedia article
+Q123911807	The American Cyclopædia (1879)/Japan		encyclopedia article
+Q124007594	1911 Encyclopædia Britannica/Title		encyclopedia article
+Q124012281	The New Student's Reference Work/Japan		encyclopedia article
+Q135288413	The New International Encyclopædia/Shintō		encyclopedia article
+Q135288499	The New International Encyclopædia/Japan		encyclopedia article
+Q136511631	Collier's New Encyclopedia (1921)/Japan		encyclopedia article
+Q4114391	Sytin Military Encyclopedia	シティン軍事百科事典	encyclopedic dictionary
+Q4532135	Encyclopedic Lexicon	百科用語集	encyclopedic dictionary
+Q63284758	Desktop Encyclopedic Dictionary	卓上百科辞書	encyclopedic dictionary
+Q4532138	Granat Encyclopedic Dictionary	グラナート百科辞書	encyclopedic dictionary, version, edition or translation
+Q112258758	GF WordNet		free software, lexicographic database
+Q1342448	Engishiki	延喜式	ge and shi, written work
+Q1052981	Nihon Sandai Jitsuroku	日本三代実録	historical non-fiction work, literary work
+Q1053542	Nihon Kiryaku	日本紀略	historical non-fiction work, literary work
+Q8475	Interpol	国際刑事警察機構	intergovernmental organization, international organization, law enforcement agency, missing persons organization, organization, telegraphic address
+Q3152127	UNESCO Institute for Statistics	UNESCO統計研究所	international organization, online database
+Q71016606	Golden	ゴールデン	knowledge base, online encyclopedia
+Q3270407	Act on National Flag and Anthem	国旗及び国歌に関する法律	law of Japan, statute
+Q117351898	ordinary local public entity	普通地方公共団体	legal form
+Q7882536	non-denominational	単立	legal form, legal term or legal concept, religious concept
+Q11504610	Unranked	无位	legal status
+Q2628882	legal status	法的地位	legal term or legal concept
+Q109527857	kokuji	告示	legal transaction
+Q533822			lexical database
+Q95449814	CC 6		library classification scheme, version, edition or translation
+Q386073	New Book of Tang	新唐書	literary work
+Q611399	Shoku Nihongi	続日本紀	literary work
+Q1029706	New International Encyclopedia	新国際百科事典	literary work
+Q1038639	Ruijū Kokushi	類聚国史	literary work
+Q1041301	Shoku Nihon Kōki	続日本後紀	literary work
+Q1052905	Nihon Montoku Tennō Jitsuroku	日本文徳天皇実録	literary work
+Q1077029	Nihon Kōki	日本後紀	literary work
+Q1345223	History of Yuan	元史	literary work
+Q1374339	Draft History of Qing	清史稿	literary work
+Q3181656	The Nuttall Encyclopædia	ナットール百科事典	literary work
+Q11064932	Engishiki Jinmyōchō	延喜式神名帳	literary work, religious text
+Q5674013	Hart's Rules	オックスフォード・ルール	literary work, style guide, technical standard
+Q8201	Chinese characters	漢字	logographic writing system, natural writing system, writing system
+Q14005			metadata registry, online music database, social cataloging application
+Q2657718	Armenian Soviet Encyclopedia	アルメニア・ソビエト百科事典	national encyclopedia, universal encyclopedia
+Q16639816	The Signpost	サインポスト	newsletter, online magazine, online newspaper, periodical
+Q13219454	Library of Congress Authorities	アメリカ議会図書館典拠	online database
+Q106509962	National Library of Israel Names and Subjects Authority File	イスラエル国立図書館名称・主題典拠ファイル	online database
+Q54760023	Media Arts Database	メディア芸術データベース	online database, video game database, website
+Q2071334	Know Your Meme	Know Your Meme	online encyclopedia, website
+Q192509	romanization of Japanese	ローマ字	orthographic transcription, romanisation system
+Q130958401	Shintō Encyclopedia	神道事典	specialized dictionary
+Q8020	The Chicago Manual of Style	シカゴ・マニュアル・オブ・スタイル	style guide, written work
+Q106840430	The Chicago Manual of Style (16th edition)	シカゴ・マニュアル・オブ・スタイル (第16版)	version, edition or translation
+Q139266603	Shintō Encyclopedia	神道事典 (初版)	version, edition or translation
+Q602358	Brockhaus and Efron Encyclopedic Dictionary	ブロックハウス・エフロン百科事典	version, edition or translation
+Q867541	Encyclopædia Britannica 11th edition	ブリタニカ百科事典第11版	version, edition or translation
+Q2041543	Otto's encyclopedia	オットー百科事典	version, edition or translation
+Q10876391	Wikipedia language edition	ウィキペディアの個別言語版	version, edition or translation
+Q15987490	1922 Encyclopædia Britannica	ブリタニカ百科事典1922年版	version, edition or translation
+Q19047539	Collier's New Encyclopedia, 1921	コリアーズ新百科事典1921年版	version, edition or translation
+Q19077875	The American Cyclopædia	ジ・アメリカン・サイクロペディア	version, edition or translation
+Q19219752	Meyers Konversations-Lexikon, 4th edition (1885–1890)	マイヤー会話辞典第4版（1885-1890）	version, edition or translation
+Q20078554	Great Soviet Encyclopedia (1926–1947)	ソヴィエト大百科事典 (1926-1947)	version, edition or translation
+Q23301814	Archaeology & Language		version, edition or translation
+Q28959682	The Chicago Manual of Style (15th edition)		version, edition or translation
+Q29584283	Shinto (Infobase Publishing)		version, edition or translation
+Q50897150	Dicionario da Real Academia Galega (ed.dixital 2012)		version, edition or translation
+Q62024871	UDC: Universal Decimal Classification. Standard edition. Volume 1 - Systematic tables		version, edition or translation
+Q66386517	Small Soviet Encyclopedia		version, edition or translation
+Q107523790	The Chicago Manual of Style (17th edition)		version, edition or translation
+Q114796497			version, edition or translation
+Q135052815	The Oxford Style Manual (1st edition)	オックスフォード文体便覧 (初版)	version, edition or translation
+Q138824136			version, edition or translation
+Q139816217	Seibidō's dictionary of linguistics (1st edition)	現代言語学辞典 (初版)	version, edition or translation
+Q140329490		岩波哲学小辞典 (初版)	version, edition or translation
+Q101314624	Lean Logic	リーン・ロジック	version, edition or translation, website
+Q47183836	Draft History of Qing, volume 158		volume
+Q63346110	New History of Yuan, Vol.250		volume
+Q85413430			volume
+Q85418884	New Book of Tang, Vol.220		volume
+Q85435774	History of Yuan, Vol.208		volume
+Q123560817	Armenian Soviet Encyclopedia, vol. 1	アルメニア・ソビエト百科事典 第1巻	volume
+Q124737633	Armenian Soviet Encyclopedia, vol. 6	アルメニア・ソビエト百科事典 第6巻	volume
+Q8229	Latin script	ラテン文字	writing system
+Q190502	Japanese writing system	日本語の表記体系	writing system
+Q18130932	Traditional Chinese	繁体字中国語	writing system
+Q13414913	Simplified Chinese	簡体字中国語	writing system, written language
+Q11571092	Tokusen Jinmyōchō	特選神名牒	written work
+Q11588823	Jinmyōchō Kōshō	神名帳考證	written work
+Q11588824	Engishiki Jinmyōchō Studies	神名帳考証	written work
+Q1053256	New History of Yuan	新元史	written work
+Q1146980	Old Book of Tang	旧唐書	written work
+Q19180675	Small Brockhaus and Efron Encyclopedic Dictionary	ブロックハウス・エフロン小百科事典	written work
+Q23986557	Wikipedia: The Missing Manual		written work
+Q84087675	Dizionario di Storia	歴史辞典	written work

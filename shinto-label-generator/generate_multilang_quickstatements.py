@@ -1000,20 +1000,6 @@ def run_sparql(query, label):
             _t.sleep(wait)
     raise last_err
 
-def load_proposals():
-    """Load local Indonesian label proposals."""
-    path = "proposed_indonesian_labels.csv"
-    if not os.path.exists(path):
-        return []
-    
-    proposals = []
-    with open(path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            proposals.append(row)
-    print(f"  Loaded {len(proposals)} local proposals.")
-    return proposals
-
 # ----------------------------
 # Main
 # ----------------------------
@@ -1022,9 +1008,6 @@ def main():
     _ensure_utf8_stdout()
     outdir = "quickstatements"
     os.makedirs(outdir, exist_ok=True)
-    
-    # Load proposals once
-    local_proposals = load_proposals()
 
     def _gen_lang(lang):
         print(f"\n=== {lang.upper()} ===")
@@ -1076,33 +1059,6 @@ def main():
                 skipped += 1
 
         print(f"  From Indonesian (Wikidata): {id_added} rows")
-
-        # 3. From Local Proposals
-        # These are items that have JA label but NO ID label on Wikidata.
-        # So they won't be in the SPARQL results (which require ID label).
-        # We assume they also don't have the target language label (since they are 'Japanese-only').
-        
-        added_local = 0
-        for p in local_proposals:
-            qid = p["qid"]
-            if qid in seen:
-                continue
-            
-            # Use the proposed ID label as source
-            id_label = p["proposed_label"]
-            # We also have p["type"] but let's re-extract to be safe/consistent
-            extracted = extract_name(id_label)
-            if not extracted:
-                continue
-            name, is_grand, p_type = extracted
-            
-            label = format_label(lang, name, is_grand, p_type)
-            if label:
-                rows.append({"qid": qid, "label": label})
-                seen.add(qid)
-                added_local += 1
-        
-        print(f"  From Local Proposals: {added_local} rows")
 
         # Write QuickStatements
         filepath = os.path.join(outdir, f"{lang}.txt")
