@@ -26,6 +26,29 @@ And finally, because I think that we'd like to locally store things or something
 
 I think the monthly verification sweep is something that is still scheduled. Now I don't know why it's a monthly verification sweep, but I'm going to say we do this stuff once and see if it has been properly fixed. And once you've cleared out the entire queue, we'll leave this thing in again if it turns out that the remaining (I think it was seven issues or something like that) that we had are not resolved. I'm pretty sure we had seven issues with the wiki that we set up stuff for and we thought were resolved but weren't sure about it. 
 
+It also appears that we may have had our pipeline break again, but I'm not really sure, just cause there was no run today. I'd like you to do a bit of a verification on that. 
+
+I also came across a relatively major error on wikidata that I introduced almost a full year ago at this point. I want to explain it, and I want you to do your best to set up a pipeline to stop it. I am going to make the pipeline into the next thing. 
+
+## 同上 error
+
+
+In the initial import of the Shikinaisha from jawiki there were numerous shrines that got the property
+
+adress = 同上
+
+for example on https://www.wikidata.org/wiki/Q135040965
+
+I am extremely surprised that nobody has pointed this out for a full year. What it is, is that on Japanese Wikipedia, this was present in shrines on the lists. What this literally translates to is the same as above. I thought it was something like unknown, but it's the same as above. We have an odd characteristic of this, though, where these addresses are very clearly cited to the Wikipedia pages of the list of shiki naisha in the area. 
+
+However, I believe none of them actually have the citation on them, so this adds an immediate complication to them. 
+
+What I want you to do is:
+1. Set something up that will, for the so what I want you to do right now, take a really long time and feel overly complicated.
+2. Investigate the wiki data items to figure out how to get the actual Wikipedia link and give that as the source, and have it so that there is a thing that edits all of these things to make it so the source changes to that Wikipedia article.
+3. Do something that, on our wiki, on the Shinto wiki, includes the Japanese language addresses on the periodic regeneration of the list of shiki naisha pages, which presumably are ones that regenerate constantly. If they are not ones that do so, they should be regenerating. I wouldn't say necessarily once a day, but I would probably say once every day.
+Once we have those, we actually have the ability to use the addresses in it. If we have a sighted one, because the order is the same on both of them, if we have a sighted one that is the excited one with a citation that is the same as the one above it in the list on arWiki, which is a regular address, then we will essentially just have a thing that propagates that as far as adding it to the queued up edits. As these things go through the queued up edits, they will gradually be added and gradually propagating down until eventually we have the full citations and stuff all implemented and we have the other stuff.
+I hope that makes sense. Just to clarify again, emphatically, all of this stuff is extremely slow, relying on just one single pipeline that is quite rate limited. It'll probably take multiple years for this pipeline to complete, and that's okay. What matters is that the pipeline is consistently correcting these things. It's going to gradually propagate down these so that in a few years the wiki data is going to be pretty good.
 
 
 ## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
