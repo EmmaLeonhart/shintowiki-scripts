@@ -50,6 +50,10 @@ What I want you to do is:
 Once we have those, we actually have the ability to use the addresses in it. If we have a sighted one, because the order is the same on both of them, if we have a sighted one that is the excited one with a citation that is the same as the one above it in the list on arWiki, which is a regular address, then we will essentially just have a thing that propagates that as far as adding it to the queued up edits. As these things go through the queued up edits, they will gradually be added and gradually propagating down until eventually we have the full citations and stuff all implemented and we have the other stuff.
 I hope that makes sense. Just to clarify again, emphatically, all of this stuff is extremely slow, relying on just one single pipeline that is quite rate limited. It'll probably take multiple years for this pipeline to complete, and that's okay. What matters is that the pipeline is consistently correcting these things. It's going to gradually propagate down these so that in a few years the wiki data is going to be pretty good.
 
+## Temple & Shrine Standardization
+
+So I don't really know if this is the case or not. My expectation here is that likely a massive amount more languages have the infrastructure to have shrine names than temple names or shrine names. I want to standardise it a bit so that the languages with no shrine infrastructure, but just temple infrastructure, basically you just kind of guess at them or use the temple name or whatever, so that we are properly propagating all the names in that way. 
+
 
 ## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
 
