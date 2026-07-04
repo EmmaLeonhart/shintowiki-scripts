@@ -30,8 +30,8 @@ CLASS = "Q65122124"
 # For a SANSKRIT-named deity: the Sanskrit engine handles these scripts; the true
 # Latin-script langs get the name verbatim; CJK from the kanji; these non-Latin
 # scripts aren't in the Sanskrit module yet, so they're skipped (honest gap).
-SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED           # hi mai mr bn as ru uk el
-NONLATIN_TODO = {"ar", "arz", "fa", "ur", "he", "tok"}
+SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED   # hi mai mr bn as ru uk el ar arz fa ur he
+NONLATIN_TODO = {"tok"}                          # toki pona can't take Sanskrit clusters yet
 LATIN = set(COVERED) - SANSKRIT_SCRIPTS - NONLATIN_TODO - set(ZH_CODES) - {"ko"}
 
 

@@ -122,6 +122,29 @@ _GRK = {
 }
 
 
+# Arabic (abjad; vowels as matres lectionis — over-voweled but readable).
+_ARA = {
+    "kh": "خ", "gh": "غ", "ch": "تش", "jh": "ج", "th": "ث", "dh": "ذ",
+    "ph": "ف", "bh": "ب", "sh": "ش",
+    "k": "ك", "g": "غ", "c": "تش", "j": "ج", "t": "ت", "d": "د", "n": "ن",
+    "p": "ب", "b": "ب", "m": "م", "y": "ي", "r": "ر", "l": "ل", "v": "و",
+    "w": "و", "s": "س", "h": "ه",
+    "a": "ا", "i": "ي", "u": "و", "e": "ي", "o": "و", "ai": "اي", "au": "او",
+}
+# Perso-Arabic (fa/ur): Arabic + Persian letters for p/g/ch.
+_PER = {**_ARA, "p": "پ", "g": "گ", "ch": "چ", "c": "چ"}
+
+# Hebrew (abjad).
+_HEB = {
+    "kh": "ח", "gh": "ג", "ch": "צ׳", "jh": "ג׳", "th": "ת", "dh": "ד",
+    "ph": "פ", "bh": "ב", "sh": "ש",
+    "k": "ק", "g": "ג", "c": "צ׳", "j": "ג׳", "t": "ט", "d": "ד", "n": "נ",
+    "p": "פ", "b": "ב", "m": "מ", "y": "י", "r": "ר", "l": "ל", "v": "ו",
+    "w": "ו", "s": "ס", "h": "ה",
+    "a": "א", "i": "י", "u": "ו", "e": "", "o": "ו", "ai": "אי", "au": "או",
+}
+
+
 def _map_word(word, table):
     return "".join(table.get(t, "") for t in _tokens(word))
 
@@ -139,6 +162,9 @@ _LANG = {
     "bn": ("bengali", False), "as": ("bengali", False),
     "ru": ("cyr", True), "uk": ("cyr", True),
     "el": ("grk", True),
+    "ar": ("ara", False), "arz": ("ara", False),
+    "fa": ("per", False), "ur": ("per", False),
+    "he": ("heb", False),
 }
 
 
@@ -160,6 +186,12 @@ def sanskrit(name, lang):
             r = _map_word(w, _CYR)
         elif kind == "grk":
             r = _map_word(w, _GRK)
+        elif kind == "ara":
+            r = _map_word(w, _ARA)
+        elif kind == "per":
+            r = _map_word(w, _PER)
+        elif kind == "heb":
+            r = _map_word(w, _HEB)
         else:
             r = ""
         if cap:
