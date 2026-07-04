@@ -132,29 +132,20 @@ The gap is coverage, not fallback logic. Rungs:
    picks them up (tests are in tests/test_temple_only_tier.py, done).
 
 
-## Temple drip verified NOT landing — QS path broken, BLOCKED-ON-USER-ACTION (Emma: one manual QS batch)
+## Wikidata edits: direct path promoted to primary at 300/day (Emma decisions 2026-07-04)
 
-Checked 2026-07-04: 5/5 sampled temple QIDs from temple_en_labels.txt still have
-NO en label; the file is unchanged since 2026-06-23 (359 lines pending;
-temple_identical has 11,346). Root cause chain:
-1. **The QuickStatements API path fails for EVERY batch** with: "Problem
-   generating OAuth signature; user 'Immanuelle' needs to have submitted a
-   batch manually at least once before" (see reports/2026-07-03_02-56-19).
-   → **Emma unblocks it by logging into quickstatements.toolforge.org as
-   'Immanuelle' and submitting any one batch manually in the web UI**; after
-   that, API batches work again. This is THE fix — the QS path is the
-   ~800-edits/day path.
-2. The direct-API fallback (50/day) only fires when the submit job actually
-   runs; during 06-22→07-01 the wedged cleanup-loop runs got the submit job
-   CANCELLED (e.g. run 28499096140) → zero Wikidata edits for 10 days. It ran
-   07-02 (manual dispatch, ~50 edits OK); 07-03 gate said already-submitted;
-   07-04 run still in progress at check time.
-3. Even a healthy fallback can't move temples: 50 random lines/day over
-   ~25k pending lines ≈ 0.7 temple lines/day.
-After Emma's manual batch: re-run this check (5 QIDs from temple_en_labels.txt
-should gain labels within days, and the file should shrink on regeneration).
-Cloud-prompt note kept: the Sonnet routine gets `"kind":"temple"` items and can
-enforce the `<Stem>-<suffix> Temple` form.
+QuickStatements is PERMANENTLY DEAD for this pipeline — its API requires a
+one-time manual web-UI batch and Emma has said she will not do one. Decisions
+taken in-session 2026-07-04: `direct_daily_edits.py` is the primary (only)
+Wikidata editor at **MAX_EDITS=300, delays 30–90s** (Emma picked the 300/day
+tier explicitly; ~25k pending lines ≈ 3 months). Still once-daily gated by
+cleanup-loop. Historical context: 06-22→07-01 had zero Wikidata edits (wedged
+runs cancelled the submit job), and at the old 50/day the temple files
+(temple_en_labels 359 + temple_identical 11,346) moved ~0.7 lines/day.
+VERIFY after 2-3 daily cycles: reports/ show ~300-line direct runs, and
+sampled temple QIDs start gaining en labels. Consider retiring
+submit_daily_batch's QS attempt entirely (it burns a failed API call per file
+every day) — small cleanup, next tick.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.

@@ -23,14 +23,15 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
-# Capped at 50 — this is the QS-failed fallback path, so when it runs it
-# stands in for the 50-line submit_daily_batch budget. It executes the SAME
-# generated QuickStatements lines as submit_daily_batch (just via the API when
-# the QS toolforge API is down); it is not a bespoke editor. Paired with the
-# once-per-day fire gate in cleanup-loop.yml.
-MAX_EDITS = 50
-MIN_DELAY = 60   # 1 minute
-MAX_DELAY = 300  # 5 minutes
+# 300/day at 30-90s delays (Emma, 2026-07-04). The QuickStatements toolforge
+# path is permanently dead — its API demands a one-time manual web-UI batch
+# and Emma has said she will not do one — so this direct-API path is now the
+# PRIMARY (only) Wikidata editor, not a fallback. 300/day drains the ~25k
+# pending lines in ~3 months instead of years; delays stay well inside bot
+# norms. Still gated to once per day by cleanup-loop.yml.
+MAX_EDITS = 300
+MIN_DELAY = 30
+MAX_DELAY = 90
 
 # Same files as submit_daily_batch.py
 ATOMIC_FILES = [
