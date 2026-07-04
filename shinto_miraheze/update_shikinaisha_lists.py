@@ -26,9 +26,14 @@ Revival changes (2026-07-04):
 import os, re, time, argparse, requests, sys, io
 from html import escape
 
-# ── No delay - start immediately ───────────────────────
 import json
-STATE_FILE = "shiki_list_progress.json"
+# Anchored next to this module (not CWD) so CI can commit/restore it: the
+# 2026-07-04 full-sweep dispatch hit the 170-min job timeout at province ~N,
+# and with runner-local progress the next run would restart at page 1 and
+# never reach the tail. Progress now persists ACROSS runs (workflow commits
+# it) and is cleared when a sweep completes the full page list.
+STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          "shiki_list_progress.json")
 
 def load_progress():
     """Load progress from state file."""
@@ -1004,6 +1009,14 @@ if __name__ == "__main__":
             except UnicodeEncodeError:
                 print(f"ERROR [page with unicode title]: {e}")
         time.sleep(1.5)
+
+    if use_progress and not failures and all(p in progress for p in all_pages):
+        # Full sweep complete — clear progress so the NEXT scheduled run
+        # starts a fresh cycle (the archived generator's permanent-done
+        # progress file is exactly what froze these pages for months).
+        if os.path.exists(STATE_FILE):
+            os.remove(STATE_FILE)
+        print(f"[INFO] Sweep complete ({len(all_pages)} pages) — progress cleared for the next cycle.")
 
     if failures:
         # A green run must mean the work actually landed — the 2026-07-04

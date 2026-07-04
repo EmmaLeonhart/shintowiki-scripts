@@ -29,13 +29,23 @@ on:
 permissions:
   contents: write
 
+# A dispatch and the daily schedule must not run concurrently (double-editing
+# the same pages); queue instead of cancel.
+concurrency:
+  group: update-shikinaisha-lists
+  cancel-in-progress: false
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   update-lists:
     runs-on: ubuntu-latest
-    timeout-minutes: 170
+    # Job stays under the 6h hosted max; the STEP timeout below leaves
+    # headroom so the progress-commit step still runs after a timeout
+    # (the 2026-07-04 full-sweep dispatch died at the old 170-min job
+    # timeout and lost its progress entirely).
+    timeout-minutes: 355
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
@@ -62,9 +72,27 @@ jobs:
 
       - name: Regenerate lists
         # inputs.* are empty on schedule triggers: empty max_edits falls back
-        # to 100, empty pages means the full prefix sweep.
+        # to 100, empty pages means the full prefix sweep. Step timeout <
+        # job timeout so the progress-commit step below still runs.
+        timeout-minutes: 340
         run: |
           python3 -u -m shinto_miraheze.update_shikinaisha_lists \
             --apply --max-edits "${{ inputs.max_edits || '100' }}" \
             --run-tag "${RUN_TAG}" \
             --pages "${{ inputs.pages }}"
+
+      - name: Commit sweep progress
+        # Progress must survive across runs: a timed-out sweep resumes where
+        # it stopped tomorrow; a completed sweep clears the file (the script
+        # deletes it) so the next cycle starts fresh.
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shinto_miraheze/shiki_list_progress.json || true
+          if git diff --cached --quiet; then
+            echo "No progress change to commit."
+          else
+            git commit -m "chore(state): shikinaisha list sweep progress [skip ci]"
+            git push || { git pull --rebase --autostash && git push; }
+          fi
