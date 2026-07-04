@@ -31,6 +31,33 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Shikinaisha list generator REVIVED with Address column (Emma: full generator; pages were never hand-authored)
+
+Emma's decisions (in-session): the List-of-Shikinaisha pages get the **full
+generator** treatment, and the earlier "hand-authored" framing was wrong —
+they were always generated, they just stopped updating (the archived
+generator's progress file marked every page done permanently). Also: the bare
+"List of Shikinaisha in Awa Province" is a DISAMBIGUATION page (three Awa
+pages total: Chiba list Q11450714, Tokushima list Q11657514, and the dab) —
+only the two lists get overwritten.
+
+- Recovered `update_shikinaisha_lists_v3.py` from git history (archived
+  f496f0f5, deleted with archive/ in 37fe5391) into
+  `shinto_miraheze/update_shikinaisha_lists.py`.
+- Revival changes: **Address column from P6375** (ja preferred, the literal
+  同上 refused so the import bug can't round-trip back onto the page it came
+  from) placed between Notes and Co-ords in both row shapes (firmly-identified
+  + rowspan candidate groups); house flags --apply/--max-edits/--run-tag/
+  --pages; WIKI_USERNAME/WIKI_PASSWORD env creds with the old hardcoded
+  password fallback REMOVED; login retries capped at 5; --pages runs bypass
+  the progress file; stdout rewrap moved into the main guard.
+- New `update-shikinaisha-lists.yml` workflow_dispatch (creds live only in
+  Actions), defaulting to the two Awa pages.
+- ci.yml: added `shinto-label-generator/**.py` to the path filter + its test
+  dir to the pytest run (the 95-test suite had ZERO CI coverage — found when
+  the temple-tier pushes triggered no CI run). Combined suite: **243 green**
+  locally with the exact CI invocation.
+
 ## 2026-07-04 — gan + zh-mo wired into the CJK variant path (cdo deferred with evidence)
 
 Second slice of the standardization epic. `zh_variants` now also emits **gan**

@@ -70,20 +70,27 @@ address_citation_backfill.txt, converges as refs land; see devlog):
 1. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
    found in the current 51, all Izumo — re-check with the SPARQL in
    resolve_doujou_addresses.py after the drip converges).
-2. **Shinto-wiki list pages** — INVESTIGATED 2026-07-04, premise fails,
-   NEEDS-DECISION (Emma): the List-of-Shikinaisha pages do NOT regenerate.
-   They are hand-authored {{ill}} tables (afc comment, 2026-02-16) living in
-   `git_synced/` — sync_git_synced_pages mirrors edits ~half-hourly but no
-   generator rebuilds content; `site/generate_pages.py` is only the GitHub
-   Pages status site. Only 2 such pages are in git_synced (both Awa); wiki
-   enumeration blocked by the 07-04 Miraheze 503 outage. Columns today:
-   District/Name/Funding/Rank/Candidates/Notes/Co-ords/DB — no Address.
-   Decision needed: (a) new script that INSERTS an Address column into the
-   existing hand-authored tables by matching each row's qid= to Wikidata
-   P6375 (one-shot per page, non-regenerating, preserves hand content), or
-   (b) build a true generator that rebuilds these pages from Wikidata (big:
-   replaces hand-authored pages), or (c) drop the idea. (a) is the cheap
-   fit but edits her authored tables, so not done autonomously.
+2. **Shinto-wiki list pages — DECIDED (Emma 2026-07-04: full generator;
+   pages were NEVER hand-authored, they're generated pages that stopped
+   updating) and the generator is REVIVED**:
+   `shinto_miraheze/update_shikinaisha_lists.py` (recovered from
+   archive/engishiki_list_generator/update_shikinaisha_lists_v3.py in git
+   history; the old progress file had marked every page done permanently —
+   that's why they went stale). Revival adds the **Address column (P6375,
+   ja preferred, 同上 refused)** between Notes and Co-ords, house flags
+   (--apply/--max-edits/--run-tag/--pages), env creds (no hardcoded
+   fallback), capped login retries. 5 offline tests. New dispatchable
+   workflow `update-shikinaisha-lists.yml` (defaults to the two Awa list
+   pages — Chiba + Tokushima; the bare "Awa Province" page is a
+   disambiguation page and is not touched).
+   Remaining rungs:
+   a. Dispatch the workflow for the two Awa pages; verify the tables render
+      with the Address column on-wiki (Emma said overwrite — done via CI
+      where the credentials live).
+   b. Decide the cadence for the FULL sweep (all ~68 province pages,
+      ~heavy Wikidata traffic): wire into cleanup-loop (daily is likely too
+      hot — the old run took hours) or a weekly schedule; clear
+      shiki_list_progress.json semantics are per-sweep resume only.
 
 ## Temple & Shrine Standardization (decomposed 2026-07-04; Emma's rule: temple-only langs use the temple name for shrines)
 

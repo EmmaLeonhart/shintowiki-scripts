@@ -1,0 +1,57 @@
+name: Update Shikinaisha Lists
+
+# Regenerates "List of Shikinaisha in X Province" pages from Wikidata via the
+# revived shinto_miraheze/update_shikinaisha_lists.py (2026-07-04) — these
+# pages were always generated; the old generator was archived and its progress
+# file froze them. Dispatch with `pages` for a targeted overwrite (default:
+# the two Awa provinces, per Emma 2026-07-04) or empty `pages` for a full
+# prefix sweep.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: "Semicolon-separated exact page titles (empty = full 'List of Shikinaisha in' prefix sweep)"
+        type: string
+        default: "List of Shikinaisha in Awa Province (Chiba);List of Shikinaisha in Awa Province (Tokushima)"
+      max_edits:
+        description: "Page-save cap"
+        type: string
+        default: "100"
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  update-lists:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: Regenerate lists
+        run: |
+          python3 -u -m shinto_miraheze.update_shikinaisha_lists \
+            --apply --max-edits "${{ inputs.max_edits }}" \
+            --run-tag "${RUN_TAG}" \
+            --pages "${{ inputs.pages }}"

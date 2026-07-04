@@ -9,11 +9,13 @@ on:
     paths:
       - "shinto_miraheze/**.py"
       - "modern-quickstatements/**.py"
+      - "shinto-label-generator/**.py"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "shinto_miraheze/**.py"
       - "modern-quickstatements/**.py"
+      - "shinto-label-generator/**.py"
   workflow_dispatch:
 
 jobs:
@@ -29,7 +31,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pytest requests mwclient
+        run: pip install pytest requests mwclient opencc-python-reimplemented
 
       - name: Run tests
-        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ -q
+        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ -q
