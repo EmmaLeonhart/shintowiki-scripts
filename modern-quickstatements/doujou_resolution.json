@@ -49,6 +49,13 @@
    "source_template": "Template:出雲国意宇郡の式内社一覧",
    "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
   },
+  "Q135040786": {
+   "label": "坐韓国伊大弖神社",
+   "resolved_address": "島根県八束郡東出雲町揖屋2229",
+   "source_article": "出雲国の式内社一覧",
+   "source_template": "MANUAL_OVERRIDES (see comment)",
+   "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
+  },
   "Q135040900": {
    "label": "坐波夜都武自和気神社",
    "resolved_address": "島根県八束郡東出雲町下意東815",
@@ -301,6 +308,13 @@
    "source_template": "Template:出雲国意宇郡の式内社一覧",
    "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
   },
+  "Q135070085": {
+   "label": "剣神社",
+   "resolved_address": "島根県松江市八雲町日吉10",
+   "source_article": "出雲国の式内社一覧",
+   "source_template": "MANUAL_OVERRIDES (see comment)",
+   "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
+  },
   "Q135070088": {
    "label": "布吾弥神社",
    "resolved_address": "島根県松江市八雲町熊野2451",
@@ -313,6 +327,13 @@
    "resolved_address": "島根県安来市広瀬町広瀬364",
    "source_article": "出雲国の式内社一覧",
    "source_template": "Template:出雲国意宇郡の式内社一覧",
+   "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
+  },
+  "Q135070108": {
+   "label": "佐久多神社",
+   "resolved_address": "島根県松江市宍道町上来待551",
+   "source_article": "出雲国の式内社一覧",
+   "source_template": "MANUAL_OVERRIDES (see comment)",
    "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
   },
   "Q135070135": {
@@ -337,19 +358,6 @@
    "source_url": "https://ja.wikipedia.org/wiki/出雲国の式内社一覧"
   }
  },
- "unmatched": [
-  {
-   "qid": "Q135040786",
-   "label": "坐韓国伊大弖神社"
-  },
-  {
-   "qid": "Q135070085",
-   "label": "剣神社"
-  },
-  {
-   "qid": "Q135070108",
-   "label": "佐久多神社"
-  }
- ],
+ "unmatched": [],
  "list_article": "出雲国の式内社一覧"
 }

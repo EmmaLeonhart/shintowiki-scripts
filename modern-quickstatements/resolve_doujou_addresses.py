@@ -53,6 +53,21 @@ PREFECTURES = (
 ).split()
 PREF_RE = re.compile("^(" + "|".join(PREFECTURES) + ")")
 
+# Hand-resolved items the row matcher can't safely claim automatically
+# (kanji-variant / cross-district name collisions). Each verified
+# 2026-07-04 against the 意宇郡 table revision current at import time
+# (2025-04-29) AND the item's own P131 (all three: Q11073594 意宇郡):
+#   Q135040786 同社坐韓国伊大弖神社 — item already carries the correct
+#     claim 揖屋2229 beside 同上; override lets the generator emit the
+#     phase-2 removal.
+#   Q135070085 (論)剣神社 row → 島根県松江市八雲町日吉10.
+#   Q135070108 (論)佐久多神社 — both its rows carry 上来待551.
+MANUAL_OVERRIDES = {
+    "Q135040786": "島根県八束郡東出雲町揖屋2229",
+    "Q135070085": "島根県松江市八雲町日吉10",
+    "Q135070108": "島根県松江市宍道町上来待551",
+}
+
 
 def fetch_wikitext(title: str) -> str:
     r = requests.get(JA_API, params={
@@ -145,6 +160,15 @@ def main():
 
     out, unmatched = {}, []
     for qid, label in sorted(items.items()):
+        if qid in MANUAL_OVERRIDES:
+            out[qid] = {
+                "label": label,
+                "resolved_address": MANUAL_OVERRIDES[qid],
+                "source_article": LIST_ARTICLE,
+                "source_template": "MANUAL_OVERRIDES (see comment)",
+                "source_url": f"https://ja.wikipedia.org/wiki/{LIST_ARTICLE}",
+            }
+            continue
         bare = label.replace("合祀：", "")
         def _norm(s):
             # kanji variants seen between item labels and list rows
