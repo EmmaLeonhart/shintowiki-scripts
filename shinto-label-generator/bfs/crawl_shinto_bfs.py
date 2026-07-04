@@ -2,19 +2,20 @@
 Layered breadth-first crawl of the Wikidata Shinto neighbourhood.
 
 Seeds (depth 0) are the shrine-ranking / classification concepts in
-seeds_raw.txt (a Wikidata "What links here" dump). From each item we expand in
-BOTH directions:
-  - outgoing : every wikibase-item value in the item's statements, qualifiers
-               and references (same rule as latent-space-cartography's
-               random_walk.py)
-  - incoming : backlinks ("what links here"), filtered to Q-items
+seeds_raw.txt (that file is a Wikidata "What links here" dump, but that was only
+how the seed LIST was gathered — the crawl itself follows FORWARD links).
+
+From each item we expand along its OUTGOING links: every wikibase-item value in
+the item's statements, qualifiers and references (same rule as
+latent-space-cartography's random_walk.py). Backlinks are intentionally NOT
+followed (they explode into all of Japanese geography); `--backlinks` can turn
+them back on for experiments.
 
 An item's depth is its shortest hop distance from any seed. Each depth level is
 written to levels/level_NN.tsv (qid<TAB>en-label) once it is fully discovered.
 
-The crawl is INCREMENTAL and RESUMABLE. Both-directions depth-5 from high-degree
-nodes is effectively unbounded, so a single run expands at most --max-nodes nodes
-then checkpoints to state.json; re-run (or --resume, the default) to continue.
+The crawl is INCREMENTAL and RESUMABLE. A single run expands at most --max-nodes
+nodes then checkpoints to state.json; re-run (the default resumes) to continue.
 Reads are throttled and the crawl bails immediately on HTTP 429 (repo policy).
 
 Usage:
@@ -215,9 +216,10 @@ def status(state):
         print(f"  level {d}: {state['counts'][d]}{'' if done else '  (in progress)'}")
 
 
-def run(max_nodes, max_depth, backlink_cap):
+def run(max_nodes, max_depth, backlink_cap, use_backlinks):
     state = load_state() or init_state()
     state["max_depth"] = max_depth
+    state["backlinks"] = use_backlinks
     if backlink_cap is not None:
         state["backlink_cap"] = backlink_cap
     depth_of = state["depth_of"]
@@ -254,14 +256,16 @@ def run(max_nodes, max_depth, backlink_cap):
         qid = frontier.pop()
         try:
             neigh = outgoing_links(qid)
-            inc, trunc = backlinks(qid, cap)
+            trunc = False
+            if use_backlinks:
+                inc, trunc = backlinks(qid, cap)
+                neigh |= inc
         except RateLimited as e:
             print(f"\n{e}\nCheckpointing and exiting.")
             state["frontier"] = frontier + [qid]   # re-queue the unfinished node
             state["next_set"] = sorted(next_set, key=lambda x: int(x[1:]))
             save_state(state)
             return
-        neigh |= inc
         if trunc:
             truncated_nodes.append(qid)
         fresh = 0
@@ -296,8 +300,10 @@ def main():
     ap = argparse.ArgumentParser(description="Layered BFS crawl of the Wikidata Shinto neighbourhood.")
     ap.add_argument("--max-nodes", type=int, default=60, help="max nodes to expand this run")
     ap.add_argument("--max-depth", type=int, default=5, help="deepest level to discover")
+    ap.add_argument("--backlinks", action="store_true",
+                    help="ALSO follow backlinks (off by default; forward links only)")
     ap.add_argument("--backlink-cap", type=int, default=None,
-                    help="cap backlinks per node (default: no cap; logs truncation)")
+                    help="cap backlinks per node when --backlinks (logs truncation)")
     ap.add_argument("--status", action="store_true", help="print progress and exit")
     ap.add_argument("--reset", action="store_true", help="wipe state and restart from seeds")
     args = ap.parse_args()
@@ -308,7 +314,7 @@ def main():
     if args.status:
         status(load_state())
         return
-    run(args.max_nodes, args.max_depth, args.backlink_cap)
+    run(args.max_nodes, args.max_depth, args.backlink_cap, args.backlinks)
 
 
 if __name__ == "__main__":
