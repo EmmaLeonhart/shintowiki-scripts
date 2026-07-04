@@ -299,6 +299,56 @@ _MR_TIRTH = "".join(chr(c) for c in [0x0924, 0x0940, 0x0930, 0x094D, 0x0925])  #
 
 
 # ----------------------------
+# Czech / Slovene Latin transcription (rung-2 tier, 2026-07-04). Conventions
+# from existing Wikidata labels: cs Jasukuni, Meidži, Curugaoka Hačiman,
+# Acuta, Kašihara džingú, Enrjakudži, Bjódóin (š/č/dž/c, ó/ú for long
+# vowels, hyphens joined); sl the same consonants but NO vowel length and
+# hyphens KEPT (Jakuši-dži, Todai-dži, Hačimangu, Kijomizu). Single-pass
+# alternation so ya→ja can't be re-hit by ja→dža.
+# ----------------------------
+
+_SLAVIC_MAP = {
+    "shi": "ši", "sha": "ša", "shu": "šu", "sho": "šo",
+    "chi": "či", "cha": "ča", "chu": "ču", "cho": "čo",
+    "tsu": "cu",
+    "ji": "dži", "ja": "dža", "ju": "džu", "jo": "džo",
+    "ya": "ja", "yu": "ju", "yo": "jo",
+    "ts": "c", "sh": "š", "ch": "č",
+    "y": "j", "j": "dž", "w": "v",
+}
+_SLAVIC_RE = re.compile("|".join(sorted(_SLAVIC_MAP, key=len, reverse=True)))
+_CS_LONG = {"ā": "á", "ī": "í", "ū": "ú", "ē": "é", "ō": "ó"}
+
+
+def _slavic_word(word, long_vowels):
+    w = unicodedata.normalize("NFC", word)
+    cap = w[:1].isupper()
+    w = _SLAVIC_RE.sub(lambda m: _SLAVIC_MAP[m.group(0)], w.lower())
+    if long_vowels:
+        for macron, acute in _CS_LONG.items():
+            w = w.replace(macron, acute)
+    else:
+        for macron, plain in zip("āīūēō", "aiueo"):
+            w = w.replace(macron, plain)
+    return (w[:1].upper() + w[1:]) if cap else w
+
+
+def czechify(name):
+    """Romanized Japanese → Czech transcription; hyphen segments joined
+    (Enryaku-ji → Enrjakudži)."""
+    words = [_slavic_word(w, long_vowels=True).replace("-", "")
+             for w in name.split()]
+    return " ".join(w for w in words if w)
+
+
+def slovenify(name):
+    """Romanized Japanese → Slovene transcription; hyphens kept, vowel
+    length dropped (Tōdai-ji → Todai-dži)."""
+    words = [_slavic_word(w, long_vowels=False) for w in name.split()]
+    return " ".join(w for w in words if w)
+
+
+# ----------------------------
 # Assamese (temple-only tier, 2026-07-04): Bengali-script sibling. Same
 # bengalify output with the Assamese ra (ৰ U+09F0) substituted for the
 # Bengali ra (র U+09B0); the temple word মন্দিৰ mirrors bn মন্দির with the
@@ -739,6 +789,23 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "nn":
             if p_type == "temple": return "tempel"
             return "heilagdomen"   # Nynorsk parallel of nb helligdommen
+        # Rung-2 tier (2026-07-04): both-kind languages that were missing
+        # from format_label; distinct words from observed conventions.
+        if lang == "pl":
+            # observed "świątynia Tado"; świątynia serves both kinds
+            return "Wielka świątynia" if is_grand else "Świątynia"
+        if lang == "ro":
+            if p_type == "temple": return "Marele Templu" if is_grand else "Templul"
+            return "Marele Sanctuar" if is_grand else "Sanctuarul"  # observed "Marele Sanctuar de la Izumo"
+        if lang == "fi":
+            if p_type == "temple": return "temppeli"
+            return "pyhäkkö"       # suffixed like the other Nordic langs
+        if lang == "cs":
+            if p_type == "temple": return "Velký chrám" if is_grand else "Chrám"
+            return "Velká svatyně" if is_grand else "Svatyně"  # observed "Svatyně Jasukuni"
+        if lang == "sl":
+            if p_type == "temple": return "Veliki tempelj" if is_grand else "Tempelj"  # observed "tempelj Kijomizu"
+            return "Veliko svetišče" if is_grand else "Svetišče"  # observed both forms
         # Temple-only tier (2026-07-04): these languages have temple-label
         # conventions on Wikidata but no shrine ones, so per Emma's rule the
         # temple word serves both kinds.
@@ -793,10 +860,14 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br", "ceb"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br", "ceb", "pl", "ro"]:
         return f"{get_affix()} {name}"
-    if lang in ["sv", "nb", "da", "hu", "nn"]:
+    if lang in ["sv", "nb", "da", "hu", "nn", "fi"]:
         return f"{name}-{get_affix()}"
+    if lang == "cs":
+        return f"{get_affix()} {czechify(name)}"
+    if lang == "sl":
+        return f"{get_affix()} {slovenify(name)}"
     if lang in ["sh", "hr", "az"]:
         return f"{name} {get_affix()}"
     if lang == "eu":
@@ -859,7 +930,8 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
 ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "arz", "hi", "fr", "pt", "vi", "bn",
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
              "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
-             "nn", "ceb", "mai", "as", "ur"]
+             "nn", "ceb", "mai", "as", "ur",
+             "pl", "ro", "fi", "cs", "sl"]
 
 
 def make_sparql(lang_code):
@@ -903,18 +975,30 @@ ORDER BY ?item
 
 
 def run_sparql(query, label):
+    """One transient WDQS failure used to kill the WHOLE multilang loop mid-
+    run (2026-07-04: the regenerate run died on lang 3/43 and continue-on-
+    error hid it — only tr+de were written). Bounded retries with backoff."""
+    import time as _t
     print(f"  Querying Wikidata: {label}...")
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers={"User-Agent": "Japanese-Tokiponizer/1.0 (multilang label pipeline)"},
-        timeout=300,
-    )
-    r.raise_for_status()
-    data = r.json()
-    results = data["results"]["bindings"]
-    print(f"  Got {len(results)} results.")
-    return results
+    last_err = None
+    for attempt in range(3):
+        try:
+            r = requests.get(
+                SPARQL_ENDPOINT,
+                params={"query": query, "format": "json"},
+                headers={"User-Agent": "Japanese-Tokiponizer/1.0 (multilang label pipeline)"},
+                timeout=300,
+            )
+            r.raise_for_status()
+            results = r.json()["results"]["bindings"]
+            print(f"  Got {len(results)} results.")
+            return results
+        except Exception as e:
+            last_err = e
+            wait = 30 * (attempt + 1)
+            print(f"  [RETRY] SPARQL failed ({e}); waiting {wait}s...", flush=True)
+            _t.sleep(wait)
+    raise last_err
 
 def load_proposals():
     """Load local Indonesian label proposals."""
@@ -942,7 +1026,7 @@ def main():
     # Load proposals once
     local_proposals = load_proposals()
 
-    for lang in ALL_LANGS:
+    def _gen_lang(lang):
         print(f"\n=== {lang.upper()} ===")
         
         rows = []
@@ -1033,6 +1117,20 @@ def main():
         for row in rows[:5]:
             print(f"    {row['qid']:12s} | {row['label']}")
 
+    # Per-lang fault isolation (2026-07-04): one language's failure must not
+    # kill the remaining 40+ (that's how a whole regenerate run silently
+    # produced only tr+de). Failures are collected and the run exits nonzero
+    # so continue-on-error can't disguise a partial regeneration as success.
+    failed = []
+    for lang in ALL_LANGS:
+        try:
+            _gen_lang(lang)
+        except Exception as e:
+            print(f"[LANG-FAILED] {lang}: {e}", flush=True)
+            failed.append(lang)
+
+    if failed:
+        sys.exit(f"{len(failed)} language(s) failed: {', '.join(failed)}")
     print("\nDone!")
 
 

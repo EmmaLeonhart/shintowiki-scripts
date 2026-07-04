@@ -66,6 +66,13 @@ COVERED = {
     "mai": ("generate_multilang_quickstatements.py", "devanagari"),
     "as": ("generate_multilang_quickstatements.py", "bengali-abugida+as-ra"),
     "ur": ("generate_multilang_quickstatements.py", "perso-arabic"),
+    # Rung-2 tier (2026-07-04): both-kind langs, distinct words from
+    # observed conventions; cs/sl get the Slavic Latin transcriber.
+    "pl": ("generate_multilang_quickstatements.py", "affix"),
+    "ro": ("generate_multilang_quickstatements.py", "affix"),
+    "fi": ("generate_multilang_quickstatements.py", "affix-suffix"),
+    "cs": ("generate_multilang_quickstatements.py", "czech-latin"),
+    "sl": ("generate_multilang_quickstatements.py", "slovene-latin"),
     # CJK + special cases
     "zh": ("generate_chinese_quickstatements.py", "cjk-manyogana"),
     "zh-hant": ("generate_chinese_quickstatements.py", "opencc-s2t"),

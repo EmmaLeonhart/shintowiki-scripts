@@ -31,6 +31,27 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Rung-2 languages shipped (pl/ro/fi/cs/sl) + multilang loop made fault-tolerant; Wikidata edits to 300/day; branches closed
+
+- **Emma decisions (in-session):** no QS manual batch EVER → direct_daily_edits
+  promoted to primary at 300/day, 30–90s delays (her explicit pick); full
+  autonomy — stop queuing work on her.
+- **Branch cleanup closed everywhere:** hub's three were already deleted
+  remotely; the LSC pair deleted via GitHub API after her named authorization.
+- **Rung-2 tier:** pl (Świątynia, both kinds), ro (Sanctuarul/Templul),
+  fi (-pyhäkkö/-temppeli), cs + sl on a new Slavic Latin transcriber whose
+  tests are all observed Wikidata label pairs (Jasukuni, Meidži, Curugaoka
+  Hačiman, Acuta, Enrjakudži, Bjódóin; Jakuši-dži, Todai-dži, Kijomizu,
+  Hačimangu). th deferred — needs a real Thai transliterator (pre-posed vowel
+  signs). ALL_LANGS 38→48 across today's three tiers.
+- **Found + fixed why regeneration silently died:** the 15:09 regenerate run's
+  multilang step crashed at lang 3/43 (unretried SPARQL blip) and
+  continue-on-error made the step read success — only tr+de were written.
+  run_sparql now retries 3× with backoff; the lang loop is fault-isolated
+  per language and exits nonzero on any failure. 253 tests green.
+- Dispatched NOW rather than waiting for schedules: the category-orchestrator
+  hang-diagnosis run and the full province-list sweep (both running).
+
 ## 2026-07-04 — Both Awa lists live with Address column; daily full-sweep schedule wired
 
 - First Awa run's "success" was FALSE for Tokushima: ~250 one-per-entity

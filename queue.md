@@ -124,12 +124,18 @@ The gap is coverage, not fallback logic. Rungs:
    b. **pa/km/lo/dz/new/mad/shn deferred** — no script converter exists
       (Gurmukhi/Khmer/Lao/Tibetan/Newa/…) and 0-2 observed labels each;
       counts ≤16. Only worth it if a converter arrives or Sonnet does them.
-2. **Both-kind langs missing from format_label** (pl 35/196, th 33/135,
-   cs 31/135, fi 18/46, sl 29/97, ro 9/33 …): same sampling method, but these
-   get DISTINCT shrine/temple words where the observed conventions differ.
-   (ja/en/id/zh/ko/tok are fine — own paths per DEVLOG 2026-06-23.)
-3. **Regenerate + eyeball a small batch** for the 5 new langs before the drip
-   picks them up (tests are in tests/test_temple_only_tier.py, done).
+2. ~~Both-kind langs~~ DONE 2026-07-04: **pl, ro, fi, cs, sl shipped** with
+   distinct words from sampled conventions (pl Świątynia both kinds; ro
+   Sanctuarul/Templul; fi -pyhäkkö/-temppeli; cs Svatyně/Chrám with the new
+   Czech transcriber — Jasukuni/Meidži/Curugaoka Hačiman all reproduce; sl
+   Svetišče/Tempelj with the Slovene variant — Jakuši-dži/Todai-dži).
+   **th DEFERRED**: Thai script transliterator doesn't exist (vowel signs
+   precede consonants — real work, not a map). ALL_LANGS 43→48.
+3. **Verify the regeneration run** (dispatched 2026-07-04 ~17:05 after fixing
+   why the last one silently died at lang 3/43: run_sparql had no retry and
+   continue-on-error masked the crash — now retried 3×, per-lang fault
+   isolation, nonzero exit on partial failure): confirm all lang files exist
+   incl. the 10 new (nn/ceb/mai/as/ur + pl/ro/fi/cs/sl) and spot-check lines.
 
 
 ## Wikidata edits: direct path promoted to primary at 300/day (Emma decisions 2026-07-04)

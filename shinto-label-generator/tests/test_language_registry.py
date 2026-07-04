@@ -22,12 +22,14 @@ def test_source_langs_not_treated_as_todo():
 
 
 def test_uncovered_language_is_todo():
-    rows = [("de", 267), ("pl", 35), ("th", 33)]  # pl, th still have no generator
+    # th (needs a Thai transliterator) and my (Burmese) still have no
+    # generator; pl gained one in the 2026-07-04 rung-2 tier.
+    rows = [("de", 267), ("pl", 35), ("th", 33), ("my", 25)]
     covered, todo = r.split_coverage(rows)
     cov_langs = {c["lang"] for c in covered}
     todo_langs = {c["lang"] for c in todo}
-    assert "de" in cov_langs
-    assert {"pl", "th"} <= todo_langs
+    assert {"de", "pl"} <= cov_langs
+    assert {"th", "my"} <= todo_langs
 
 
 def test_todo_sorted_by_count_desc():
