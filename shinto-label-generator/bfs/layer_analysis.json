@@ -30,13 +30,13 @@
         "count": 2
       },
       {
-        "type": "Q135236642",
-        "label": "Enumeration of 22",
+        "type": "Q18247357",
+        "label": "group of structures or buildings",
         "count": 1
       },
       {
-        "type": "Q18247357",
-        "label": "group of structures or buildings",
+        "type": "Q135236642",
+        "label": "Enumeration of 22",
         "count": 1
       },
       {
@@ -112,18 +112,28 @@
         "count": 2
       },
       {
-        "type": "Q112099",
-        "label": "island country",
-        "count": 1
-      },
-      {
         "type": "Q3624078",
         "label": "sovereign state",
         "count": 1
       },
       {
+        "type": "Q112099",
+        "label": "island country",
+        "count": 1
+      },
+      {
         "type": "Q6256",
         "label": "country",
+        "count": 1
+      },
+      {
+        "type": "Q20162172",
+        "label": "human language",
+        "count": 1
+      },
+      {
+        "type": "Q399495",
+        "label": "standard language",
         "count": 1
       },
       {
@@ -137,28 +147,18 @@
         "count": 1
       },
       {
-        "type": "Q1097949",
-        "label": "literary language",
-        "count": 1
-      },
-      {
         "type": "Q1288568",
         "label": "modern language",
         "count": 1
       },
       {
-        "type": "Q20162172",
-        "label": "human language",
+        "type": "Q1097949",
+        "label": "literary language",
         "count": 1
       },
       {
         "type": "Q152559",
         "label": "macrolanguage",
-        "count": 1
-      },
-      {
-        "type": "Q399495",
-        "label": "standard language",
         "count": 1
       },
       {
@@ -192,8 +192,8 @@
         "count": 1
       },
       {
-        "type": "Q108704490",
-        "label": "polytheistic religion",
+        "type": "Q1189816",
+        "label": "ethnic religion",
         "count": 1
       },
       {
@@ -337,6 +337,143 @@
         "type": "Q3024240",
         "label": "historical country",
         "count": 14
+      }
+    ]
+  },
+  "3": {
+    "total": 45949,
+    "covered": {
+      "shrine": 2358,
+      "temple": 52,
+      "list": 135,
+      "todo": 43404
+    },
+    "no_p31_in_todo": 1843,
+    "top_todo_classes": [
+      {
+        "type": "Q1288568",
+        "label": "modern language",
+        "count": 5190
+      },
+      {
+        "type": "Q34770",
+        "label": "language",
+        "count": 4925
+      },
+      {
+        "type": "Q15221623",
+        "label": "bilateral relation",
+        "count": 3194
+      },
+      {
+        "type": "Q5",
+        "label": "human",
+        "count": 3160
+      },
+      {
+        "type": "Q4167836",
+        "label": "Wikimedia category",
+        "count": 2184
+      },
+      {
+        "type": "Q13433827",
+        "label": "encyclopedia article",
+        "count": 1162
+      },
+      {
+        "type": "Q34442",
+        "label": "road",
+        "count": 956
+      },
+      {
+        "type": "Q3917681",
+        "label": "embassy",
+        "count": 812
+      },
+      {
+        "type": "Q33742",
+        "label": "natural language",
+        "count": 712
+      },
+      {
+        "type": "Q4022",
+        "label": "river",
+        "count": 692
+      },
+      {
+        "type": "Q494721",
+        "label": "city of Japan",
+        "count": 686
+      },
+      {
+        "type": "Q38058796",
+        "label": "extinct language",
+        "count": 485
+      },
+      {
+        "type": "Q45762",
+        "label": "dead language",
+        "count": 484
+      },
+      {
+        "type": "Q3331189",
+        "label": "version, edition or translation",
+        "count": 454
+      },
+      {
+        "type": "Q18663566",
+        "label": "dissolved municipality of Japan",
+        "count": 448
+      },
+      {
+        "type": "Q1549591",
+        "label": "big city",
+        "count": 447
+      },
+      {
+        "type": "Q3024240",
+        "label": "historical country",
+        "count": 398
+      },
+      {
+        "type": "Q12413618",
+        "label": "international border",
+        "count": 370
+      },
+      {
+        "type": "Q46426234",
+        "label": "former district of Japan",
+        "count": 337
+      },
+      {
+        "type": "Q23983335",
+        "label": "district of the House of Representatives of Japan",
+        "count": 312
+      },
+      {
+        "type": "Q4164871",
+        "label": "position",
+        "count": 297
+      },
+      {
+        "type": "Q33384",
+        "label": "dialect",
+        "count": 294
+      },
+      {
+        "type": "Q1122846",
+        "label": "district of Japan",
+        "count": 293
+      },
+      {
+        "type": "Q133346",
+        "label": "border",
+        "count": 293
+      },
+      {
+        "type": "Q41710",
+        "label": "ethnic group",
+        "count": 292
       }
     ]
   }
