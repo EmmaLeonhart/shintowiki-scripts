@@ -1,0 +1,343 @@
+{
+  "0": {
+    "total": 54,
+    "covered": {
+      "shrine": 0,
+      "temple": 0,
+      "list": 0,
+      "todo": 54
+    },
+    "no_p31_in_todo": 2,
+    "top_todo_classes": [
+      {
+        "type": "Q10444029",
+        "label": "shrine rank",
+        "count": 47
+      },
+      {
+        "type": "Q4167836",
+        "label": "Wikimedia category",
+        "count": 3
+      },
+      {
+        "type": "Q137901635",
+        "label": "Gifu Prefecture Shrine ranking",
+        "count": 3
+      },
+      {
+        "type": "Q188619",
+        "label": "hierarchy",
+        "count": 2
+      },
+      {
+        "type": "Q135236642",
+        "label": "Enumeration of 22",
+        "count": 1
+      },
+      {
+        "type": "Q18247357",
+        "label": "group of structures or buildings",
+        "count": 1
+      },
+      {
+        "type": "Q4167410",
+        "label": "Wikimedia disambiguation page",
+        "count": 1
+      },
+      {
+        "type": "Q7725634",
+        "label": "literary work",
+        "count": 1
+      },
+      {
+        "type": "Q179461",
+        "label": "religious text",
+        "count": 1
+      },
+      {
+        "type": "Q24017414",
+        "label": "second-order class",
+        "count": 1
+      },
+      {
+        "type": "Q135009120",
+        "label": "Ritsuryō funding type",
+        "count": 1
+      }
+    ]
+  },
+  "1": {
+    "total": 183,
+    "covered": {
+      "shrine": 22,
+      "temple": 0,
+      "list": 70,
+      "todo": 91
+    },
+    "no_p31_in_todo": 16,
+    "top_todo_classes": [
+      {
+        "type": "Q4167836",
+        "label": "Wikimedia category",
+        "count": 36
+      },
+      {
+        "type": "Q10876391",
+        "label": "Wikipedia language edition",
+        "count": 5
+      },
+      {
+        "type": "Q47461344",
+        "label": "written work",
+        "count": 4
+      },
+      {
+        "type": "Q135009120",
+        "label": "Ritsuryō funding type",
+        "count": 3
+      },
+      {
+        "type": "Q4212085",
+        "label": "kanazukai",
+        "count": 2
+      },
+      {
+        "type": "Q8513",
+        "label": "database",
+        "count": 2
+      },
+      {
+        "type": "Q3331189",
+        "label": "version, edition or translation",
+        "count": 2
+      },
+      {
+        "type": "Q112099",
+        "label": "island country",
+        "count": 1
+      },
+      {
+        "type": "Q3624078",
+        "label": "sovereign state",
+        "count": 1
+      },
+      {
+        "type": "Q6256",
+        "label": "country",
+        "count": 1
+      },
+      {
+        "type": "Q33742",
+        "label": "natural language",
+        "count": 1
+      },
+      {
+        "type": "Q34770",
+        "label": "language",
+        "count": 1
+      },
+      {
+        "type": "Q1097949",
+        "label": "literary language",
+        "count": 1
+      },
+      {
+        "type": "Q1288568",
+        "label": "modern language",
+        "count": 1
+      },
+      {
+        "type": "Q20162172",
+        "label": "human language",
+        "count": 1
+      },
+      {
+        "type": "Q152559",
+        "label": "macrolanguage",
+        "count": 1
+      },
+      {
+        "type": "Q399495",
+        "label": "standard language",
+        "count": 1
+      },
+      {
+        "type": "Q123407493",
+        "label": "MediaWiki instance",
+        "count": 1
+      },
+      {
+        "type": "Q36509592",
+        "label": "wiki with script conversion",
+        "count": 1
+      },
+      {
+        "type": "Q50337",
+        "label": "prefecture of Japan",
+        "count": 1
+      },
+      {
+        "type": "Q223393",
+        "label": "literary genre",
+        "count": 1
+      },
+      {
+        "type": "Q111972893",
+        "label": "type of structure",
+        "count": 1
+      },
+      {
+        "type": "Q3024240",
+        "label": "historical country",
+        "count": 1
+      },
+      {
+        "type": "Q108704490",
+        "label": "polytheistic religion",
+        "count": 1
+      },
+      {
+        "type": "Q32090",
+        "label": "lifestyle",
+        "count": 1
+      }
+    ]
+  },
+  "2": {
+    "total": 4932,
+    "covered": {
+      "shrine": 3118,
+      "temple": 6,
+      "list": 6,
+      "todo": 1802
+    },
+    "no_p31_in_todo": 199,
+    "top_todo_classes": [
+      {
+        "type": "Q6256",
+        "label": "country",
+        "count": 126
+      },
+      {
+        "type": "Q3624078",
+        "label": "sovereign state",
+        "count": 121
+      },
+      {
+        "type": "Q4167836",
+        "label": "Wikimedia category",
+        "count": 121
+      },
+      {
+        "type": "Q15221623",
+        "label": "bilateral relation",
+        "count": 76
+      },
+      {
+        "type": "Q860290",
+        "label": "province of Japan",
+        "count": 68
+      },
+      {
+        "type": "Q50337",
+        "label": "prefecture of Japan",
+        "count": 49
+      },
+      {
+        "type": "Q1288568",
+        "label": "modern language",
+        "count": 43
+      },
+      {
+        "type": "Q13433827",
+        "label": "encyclopedia article",
+        "count": 42
+      },
+      {
+        "type": "Q112099",
+        "label": "island country",
+        "count": 39
+      },
+      {
+        "type": "Q33742",
+        "label": "natural language",
+        "count": 38
+      },
+      {
+        "type": "Q494721",
+        "label": "city of Japan",
+        "count": 30
+      },
+      {
+        "type": "Q5",
+        "label": "human",
+        "count": 29
+      },
+      {
+        "type": "Q3331189",
+        "label": "version, edition or translation",
+        "count": 26
+      },
+      {
+        "type": "Q27949697",
+        "label": "Wikibase reason for deprecated rank",
+        "count": 20
+      },
+      {
+        "type": "Q123480",
+        "label": "landlocked country",
+        "count": 18
+      },
+      {
+        "type": "Q7270",
+        "label": "republic",
+        "count": 18
+      },
+      {
+        "type": "Q11815167",
+        "label": "archipelagic state",
+        "count": 18
+      },
+      {
+        "type": "Q33384",
+        "label": "dialect",
+        "count": 18
+      },
+      {
+        "type": "Q245065",
+        "label": "intergovernmental organization",
+        "count": 17
+      },
+      {
+        "type": "Q524158",
+        "label": "kami",
+        "count": 17
+      },
+      {
+        "type": "Q16695773",
+        "label": "WikiProject",
+        "count": 17
+      },
+      {
+        "type": "Q1549591",
+        "label": "big city",
+        "count": 16
+      },
+      {
+        "type": "Q34770",
+        "label": "language",
+        "count": 15
+      },
+      {
+        "type": "Q484652",
+        "label": "international organization",
+        "count": 14
+      },
+      {
+        "type": "Q3024240",
+        "label": "historical country",
+        "count": 14
+      }
+    ]
+  }
+}
