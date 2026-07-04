@@ -33,8 +33,6 @@ import sys
 
 import requests
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-
 UA = {"User-Agent": "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"}
 JA_API = "https://ja.wikipedia.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
@@ -67,6 +65,27 @@ MANUAL_OVERRIDES = {
     "Q135070085": "島根県松江市八雲町日吉10",
     "Q135070108": "島根県松江市宍道町上来待551",
 }
+
+
+def normalize_kanji(s: str) -> str:
+    """Kanji variants seen between item labels and list rows."""
+    return s.replace("劔", "剣").replace("劍", "剣").replace("嶋", "島")
+
+
+def label_matches_names(label: str, names: list) -> bool:
+    """True when a Wikidata ja label denotes one of a row's name cells.
+    Tolerates 合祀：/同社 prefixes and kanji variants; allows the label as
+    a suffix of the cell (rows often carry a longer ceremonial form) but
+    only for labels >3 chars so 剣神社-sized names can't cross-match."""
+    bare = label.replace("合祀：", "")
+    b = normalize_kanji(bare)
+    for n in names:
+        n_bare = normalize_kanji(n.replace("同社", "").replace("合祀：", ""))
+        if normalize_kanji(label) == normalize_kanji(n) or b == n_bare:
+            return True
+        if len(b) > 3 and (normalize_kanji(n).endswith(b) or n_bare.endswith(b)):
+            return True
+    return False
 
 
 def fetch_wikitext(title: str) -> str:
@@ -140,6 +159,8 @@ def resolve_district(template_title: str):
 
 
 def main():
+    # In main, not at import: tests import this module under pytest capture.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     list_text = fetch_wikitext(LIST_ARTICLE)
     templates = re.findall(r"\{\{(出雲国[^{}]*?の式内社一覧)\}\}", list_text)
     print(f"District templates: {len(templates)}")
@@ -169,20 +190,8 @@ def main():
                 "source_url": f"https://ja.wikipedia.org/wiki/{LIST_ARTICLE}",
             }
             continue
-        bare = label.replace("合祀：", "")
-        def _norm(s):
-            # kanji variants seen between item labels and list rows
-            return s.replace("劔", "剣").replace("劍", "剣").replace("嶋", "島")
-        def _match(r_):
-            for n in r_["names"]:
-                n_bare = _norm(n.replace("同社", "").replace("合祀：", ""))
-                b = _norm(bare)
-                if _norm(label) == _norm(n) or b == n_bare:
-                    return True
-                if len(b) > 3 and (_norm(n).endswith(b) or n_bare.endswith(b)):
-                    return True
-            return False
-        hit = next((r_ for r_ in all_res if _match(r_)), None)
+        hit = next((r_ for r_ in all_res
+                    if label_matches_names(label, r_["names"])), None)
         if hit:
             out[qid] = {
                 "label": label,

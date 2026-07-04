@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Address citation backfill shipped (同上 rung 3)
+
+The non-同上 half of the import bug: rows that carried a REAL address are
+correct on Wikidata but uncited. New `generate_address_citation_backfill.py`
+attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
+
+- Collects EVERY real-address row from the 10 出雲国 district templates
+  (reusing the resolver's fetch/parse; rowspan name carry-down), then SPARQLs
+  for P6375@ja statements with NO reference whose value is one of those row
+  addresses — the VALUES join is the row-address == claim-address gate. A line
+  is emitted only when the item's ja label also matches a name cell of a row
+  carrying exactly that address (`label_matches_names`, extracted from the
+  resolver's inline matcher — behavior-preserving refactor). Everything else is
+  printed and skipped, never guessed.
+- Emits the doujou line shape; `direct_daily_edits.execute_line` already
+  handles it (find_claim by value → wbsetreference; identical refs hash-dedupe,
+  so re-application is a no-op). Re-derived from live state each run; converges
+  as referenced statements drop out of the SPARQL.
+- Wired: generate-quickstatements.yml step + `address_citation_backfill.txt`
+  in direct_daily_edits ATOMIC_FILES (drip-only, like the doujou file).
+- First real run: 151 lines, 24 conservative skips (label≠row-name at shared
+  addresses — e.g. 六所神社 vs the row's 佐久佐神社 at 佐草町227). Spot-checked
+  Q135040787 live: claim present, refs 0. Moved the module-level stdout
+  TextIOWrapper into main() in resolve_doujou_addresses.py + the new script
+  (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
+  test_address_citation_backfill.py).
+
 ## 2026-07-04 — CI-gate audit of the 07-04 run + 同上 manual rung closed (Emma) + Miraheze 503 outage
 
 Hub work-loop tick, barreling this repo's queue.

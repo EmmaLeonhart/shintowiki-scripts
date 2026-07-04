@@ -46,6 +46,7 @@ ATOMIC_FILES = [
     "en_labels_sonnet.txt",
     "category_label_fixes.txt",
     "doujou_address_fixes.txt",
+    "address_citation_backfill.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
     "kana_redundant_remove.txt",

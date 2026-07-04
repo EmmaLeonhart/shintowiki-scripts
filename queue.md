@@ -63,16 +63,14 @@ add correct address with S143=Q177837 + S4656=list-article URL; phase 2: remove
 sampling); `direct_daily_edits.py` gained monolingual-text (`ja:"…"`) support.
 Wired into generate-quickstatements.yml. Slow multi-year drip is by design.
 
-Remaining rungs (rung "3 manual items" DONE 2026-07-04 by Emma f27c354f —
-MANUAL_OVERRIDES added, unmatched now empty; see devlog):
+Remaining rungs (DONE 2026-07-04: "3 manual items" by Emma f27c354f
+[MANUAL_OVERRIDES, unmatched empty]; "citation backfill" shipped same day —
+generate_address_citation_backfill.py, 151 lines first run, drips via
+address_citation_backfill.txt, converges as refs land; see devlog):
 1. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
    found in the current 51, all Izumo — re-check with the SPARQL in
    resolve_doujou_addresses.py after the drip converges).
-2. **Citation backfill for non-同上 imported addresses**: same reference pair
-   (S143 jawiki + S4656 list URL) for Shikinaisha P6375 claims that are
-   unreferenced but correct. Reuse the resolver's row-matching; emit through the
-   same drip. Bounded: query first, gate on row-address == claim-address.
-3. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
+2. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
    regeneration of the List-of-Shikinaisha pages, regenerating ~daily (Emma).
    Investigate which generator owns those pages (site/generate_pages.py?) and
    whether they regenerate at all; wire addresses in from the same district

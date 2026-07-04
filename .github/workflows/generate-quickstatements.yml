@@ -49,6 +49,13 @@ jobs:
           python resolve_doujou_addresses.py
           python generate_doujou_address_fixes.py
 
+      - name: Generate address citation backfill (non-同上 imported addresses)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          sleep 5
+          python generate_address_citation_backfill.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         continue-on-error: true
