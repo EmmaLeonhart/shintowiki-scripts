@@ -51,14 +51,6 @@ batched verification we skip in the moment.
   shrinks and the buckets (esp. with-wikidata) grow → working-but-slow → Verify; if
   the numbers stay static → enrichment has stalled → investigate the wikidata-branch
   + the per-cycle edit count in CI logs. Left Open.
-- [ ] **propagate retirement drain** (shipped 2026-05-30, `0714ce70`).
-  Verify `miraheze_unique/` churn-candidate count (files lacking the literal
-  `[[Category:Independently git synced pages]]` tag) drains to ~0 and the 6 legit
-  templates were NOT orphan-deleted. (Check with `check_lowercase_collisions.py`-style
-  read or by recounting the repo files.)
-  **2026-06-05 check:** still draining — **67 / 705** `miraheze_unique/*.wiki`
-  lack the tag (was a larger fraction; not yet ~0). Not broken, not finished —
-  leave Open, recheck next sweep.
 - [ ] **sync conflict resolution → most-recent-edit-wins** (shipped 2026-05-30, `179eaebd`).
   Verify no spurious overwrites: when wiki and repo both changed, the side with the more
   recent edit wins (watch sync edit summaries — should no longer say "wins on revision
@@ -91,6 +83,17 @@ batched verification we skip in the moment.
   the fix is to refine the stateless orphan/winner logic, not to bring back the files.
 
 ## Verified (kept briefly, then prune)
+
+- [x] **propagate retirement drain** (shipped 2026-05-30, `0714ce70`;
+  **verified 2026-07-04**). Drained essentially to zero: **3 / 642**
+  `miraheze_unique/*.wiki` lack the `[[Category:Independently git synced pages]]`
+  tag (was 67/705 on 06-05; total also shrank 705→642 as untagged files were
+  retired). Template files intact (Template%3A* population present — no
+  orphan-deletion of the legit templates). Stragglers: Amenotaneko, Sanjō
+  family, Ōhesoki — tail of the drain, not churn.
+- [x] **Sync `.state` files do not reappear** (part 3 of the .state-removal
+  review; **verified 2026-07-04**): zero `sync_*.state` files anywhere in the
+  repo. The edit-summary churn half still needs a healthy wiki (see below).
 
 - [x] **Q4 — `{{wikidata link}}` self-categorization** (shipped 2026-05-30,
   `34fcfefc`; **verified 2026-06-06**). Via `action=parse`: 6/6 sampled mainspace
@@ -138,3 +141,9 @@ The remaining items (Q4 self-categorization render, Q4 blank-template idempotenc
 Q3 enwiki parent-category enrichment, sync conflict-resolution edit summaries)
 need live `action=parse` / recentchanges reads that the flaky wiki refused during
 this sweep. Left Open; recheck on the next monthly sweep when the wiki responds.
+
+**2026-07-04 sweep:** same story — shinto.miraheze.org served 503s throughout
+(outage since ~11:30 UTC), so the three wiki-read items (Q3 bucket counts,
+conflict-resolution summaries, sync churn inspection) could not be run again.
+The two repo-local halves WERE run and moved to Verified above. Wiki-dependent
+trio stays Open for the next healthy sweep.

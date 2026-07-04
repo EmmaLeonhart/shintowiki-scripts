@@ -31,6 +31,31 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Queue barrel: temple-drip outage diagnosed, standardization epic decomposed, monthly sweep (partial), list-pages investigated
+
+- **Temple drip: NOT landing, root cause found.** All QS batches fail with the
+  QuickStatements OAuth quirk — "user 'Immanuelle' needs to have submitted a
+  batch manually at least once before". Every file in the 07-03 report shows
+  the same error. Fix is Emma's: one manual batch in the QS web UI unlocks the
+  API. Secondary: 06-22→07-01 had ZERO Wikidata edits — the wedged cleanup-loop
+  runs cancelled the submit job outright; and the 50/day random direct fallback
+  mathematically can't move 25k pending lines anyway.
+- **Temple & Shrine Standardization decomposed with data.** Emma's hunch
+  confirmed and quantified: 221 langs have temple-label infrastructure vs 116
+  shrine (112 temple-only, 7 shrine-only all count=1). format_label's 38 langs
+  all already emit both kinds (25 distinct / 13 shared words — the shared ones
+  are exactly her "use the temple word" rule). The gap is coverage: ~15
+  temple-only langs with ≥5 labels (gan/ur/km/as/mai/pa/…) + the both-kind
+  uncovered tier (pl/th/cs/fi/sl/ro). Rungs in queue.md.
+- **Monthly verification sweep (partial — wiki 503 again).** Verified:
+  propagate-retirement drain converged (3/642 untagged, was 67/705; templates
+  intact); no sync_*.state resurrection. The three wiki-read items blocked by
+  the outage for the second sweep running.
+- **List-of-Shikinaisha pages investigated (同上 rung):** they do NOT
+  regenerate — hand-authored {{ill}} tables in git_synced/ (sync mirrors edits,
+  nothing rebuilds them; site/generate_pages.py is the GH-Pages status site).
+  Address column → NEEDS-DECISION options written to queue.
+
 ## 2026-07-04 — CI-gate audit of the 07-04 run + 同上 manual rung closed (Emma) + Miraheze 503 outage
 
 Hub work-loop tick, barreling this repo's queue.

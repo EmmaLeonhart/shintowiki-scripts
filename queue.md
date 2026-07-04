@@ -70,30 +70,86 @@ address_citation_backfill.txt, converges as refs land; see devlog):
 1. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
    found in the current 51, all Izumo — re-check with the SPARQL in
    resolve_doujou_addresses.py after the drip converges).
-2. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
-   regeneration of the List-of-Shikinaisha pages, regenerating ~daily (Emma).
-   Investigate which generator owns those pages (site/generate_pages.py?) and
-   whether they regenerate at all; wire addresses in from the same district
-   tables or from Wikidata P6375 once corrected.
+2. **Shinto-wiki list pages** — INVESTIGATED 2026-07-04, premise fails,
+   NEEDS-DECISION (Emma): the List-of-Shikinaisha pages do NOT regenerate.
+   They are hand-authored {{ill}} tables (afc comment, 2026-02-16) living in
+   `git_synced/` — sync_git_synced_pages mirrors edits ~half-hourly but no
+   generator rebuilds content; `site/generate_pages.py` is only the GitHub
+   Pages status site. Only 2 such pages are in git_synced (both Awa); wiki
+   enumeration blocked by the 07-04 Miraheze 503 outage. Columns today:
+   District/Name/Funding/Rank/Candidates/Notes/Co-ords/DB — no Address.
+   Decision needed: (a) new script that INSERTS an Address column into the
+   existing hand-authored tables by matching each row's qid= to Wikidata
+   P6375 (one-shot per page, non-regenerating, preserves hand content), or
+   (b) build a true generator that rebuilds these pages from Wikidata (big:
+   replaces hand-authored pages), or (c) drop the idea. (a) is the cheap
+   fit but edits her authored tables, so not done autonomously.
 
-## Temple & Shrine Standardization
+## Temple & Shrine Standardization (decomposed 2026-07-04; Emma's rule: temple-only langs use the temple name for shrines)
 
-So I don't really know if this is the case or not. My expectation here is that likely a massive amount more languages have the infrastructure to have shrine names than temple names or shrine names. I want to standardise it a bit so that the languages with no shrine infrastructure, but just temple infrastructure, basically you just kind of guess at them or use the temple name or whatever, so that we are properly propagating all the names in that way. 
+Emma's original note (kept): "My expectation here is that likely a massive
+amount more languages have the infrastructure to have shrine names than temple
+names or shrine names. I want to standardise it a bit so that the languages
+with no shrine infrastructure, but just temple infrastructure, basically you
+just kind of guess at them or use the temple name or whatever, so that we are
+properly propagating all the names in that way."
+
+Measured 2026-07-04 (query.csv vs temple_query.csv vs format_label): the
+asymmetry is real and it runs temple-heavy — **221 langs have temple labels,
+116 have shrine labels; 112 langs are temple-only, just 7 shrine-only** (all
+7 at count=1, ignore). format_label covers 38 langs and ALL 38 already emit
+both kinds (25 distinct words, 13 shared — the shared ones ARE Emma's
+"use the temple word" rule, already live for ar/fa/he/hi/bn/tr/la/sv/az/…).
+The gap is coverage, not fallback logic. Rungs:
+
+1. **Add the ~15 temple-only langs with ≥5 temple labels to format_label**
+   (gan 91, ur 38, km 16, as 14, mai 10, pa 9, cdo 8, lo 8, dz 7, new 6,
+   mad 6, shn 5, nn 5, zh-mo 5, ceb 5): for each, sample its existing temple
+   labels from Wikidata to extract the affix convention (word + position),
+   then wire the lang in with that word for BOTH p_types (Emma's rule).
+   Long tail (<5 labels) not worth automating. zh-* variants: check the CJK
+   path first — they may already be handled there.
+2. **Both-kind langs missing from format_label** (pl 35/196, th 33/135,
+   cs 31/135, fi 18/46, sl 29/97, ro 9/33 …): same sampling method, but these
+   get DISTINCT shrine/temple words where the observed conventions differ.
+   (ja/en/id/zh/ko/tok are fine — own paths per DEVLOG 2026-06-23.)
+3. **Tests per new lang** (same pattern as test_temple_multilang.py) +
+   regenerate and eyeball a small batch before the drip picks it up.
 
 
-## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01)
+## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01) — PARTIAL 2026-07-04, wiki-dependent remainder only
 
-Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
+Ran 2026-07-04: repo-local halves done and moved to Verified (retirement drain
+3/642, essentially converged; no sync_*.state reappearance). The three
+wiki-read items (Q3 enwiki bucket counts, conflict-resolution edit summaries,
+sync churn inspection) were blocked AGAIN by a Miraheze 503 outage — second
+sweep in a row. Remaining: run just those three when the wiki responds, then
+delete THIS block.
 
-## Verify temple drip landed (residual of the shipped temple pipeline)
+## Temple drip verified NOT landing — QS path broken, BLOCKED-ON-USER-ACTION (Emma: one manual QS batch)
 
-After the first drip cycles: confirm temple en-labels are landing on Wikidata and
-downstream multilingual labels appear. Cloud-prompt note: the Sonnet routine gets
-`"kind":"temple"` items and can enforce the `<Stem>-<suffix> Temple` form.
+Checked 2026-07-04: 5/5 sampled temple QIDs from temple_en_labels.txt still have
+NO en label; the file is unchanged since 2026-06-23 (359 lines pending;
+temple_identical has 11,346). Root cause chain:
+1. **The QuickStatements API path fails for EVERY batch** with: "Problem
+   generating OAuth signature; user 'Immanuelle' needs to have submitted a
+   batch manually at least once before" (see reports/2026-07-03_02-56-19).
+   → **Emma unblocks it by logging into quickstatements.toolforge.org as
+   'Immanuelle' and submitting any one batch manually in the web UI**; after
+   that, API batches work again. This is THE fix — the QS path is the
+   ~800-edits/day path.
+2. The direct-API fallback (50/day) only fires when the submit job actually
+   runs; during 06-22→07-01 the wedged cleanup-loop runs got the submit job
+   CANCELLED (e.g. run 28499096140) → zero Wikidata edits for 10 days. It ran
+   07-02 (manual dispatch, ~50 edits OK); 07-03 gate said already-submitted;
+   07-04 run still in progress at check time.
+3. Even a healthy fallback can't move temples: 50 random lines/day over
+   ~25k pending lines ≈ 0.7 temple lines/day.
+After Emma's manual batch: re-run this check (5 QIDs from temple_en_labels.txt
+should gain labels within days, and the file should shrink on regeneration).
+Cloud-prompt note kept: the Sonnet routine gets `"kind":"temple"` items and can
+enforce the `<Stem>-<suffix> Temple` form.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
-## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-06-22)
-
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
