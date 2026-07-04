@@ -36,12 +36,11 @@ The thesis can be cited as:
 *[https://en.tenrikyo-resource.com/ Tenrikyo Resource Wiki] – project co-founded by Forbes
 *[https://en.tenrikyo-resource.com/wiki/User:Roykoogee User:Roykoogee] – user page at [[TRW]]
 
-{{wikidata link||en|Roy Tetsuo Forbes|check_date=2026-05-25}}
+{{wikidata link||en|Roy Tetsuo Forbes|grok=none|check_date=2026-05-25}}
 [[Category:American translators]]
 [[Category:American bloggers]]
 [[Category:Tenrikyo]]
 [[Category:University of Hawaiʻi at Mānoa alumni]]
 
-<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
 [[Category:Pages git synced to resolve interlanguage and interwiki links]]
