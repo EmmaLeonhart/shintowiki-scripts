@@ -6,11 +6,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-_The English-label-first translation agenda (metabolized 2026-06-21) is complete: the 4-stage English-label pipeline (Stage 3 dropped per Emma), both downstream generators repointed to English, zh script variants, the per-language coverage registry (`shinto-label-generator/language_registry.py`, 44/116 covered), Vietnamese/Bengali/Greek/Hebrew + European/Latin affix batches, and the CJK→ja backfill all shipped. See `docs/english_label_pipeline.md` and `docs/language_coverage.md`. The remaining long-tail languages (Thai/Burmese/Georgian script maps, single-digit-label langs) were deliberately not hand-built — they failed the verification gate or are too low-value — and are left for the LLM/manual per Emma's scope decision._
-
-_Japanese Buddhist temples now run the FULL automatic pipeline, same as shrines (shipped 2026-06-23, see DEVLOG): **Stage 1** deterministic kana→`<Stem>-<suffix> Temple` (`temple_english.py` + `generate_temple_en_labels.py`, 359/378 kana temples) AND **Stage 4** the cloud Sonnet routine — `select_shrines_to_translate.py` now returns a shrine batch + a temple batch (kind-tagged) from `temples_missing_en_label.json`, so the kana-less majority (~14.5k) flows through the LLM automatically with no cloud-side change and no shrine starvation. The daily worklist workflow refreshes both lists (new temples added to Wikidata flow through), the drip applies, and the multilingual generators propagate from English downstream._
----
-
 ## Stuff to do now
 
 First thing is first, there's a fuck tonne of crud in here. 
@@ -59,21 +54,11 @@ So I don't really know if this is the case or not. My expectation here is that l
 
 Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
 
-## Temple close-out — full pipeline shipped; verify-only residual
+## Verify temple drip landed (residual of the shipped temple pipeline)
 
-The temple en-label pipeline now runs every stage shrines have:
-- **Stage 1** deterministic kana → `<Stem>-<suffix> Temple` (`temple_english.py`).
-- **Stage 2** identical-name reuse from same-ja-name Japanese temples (`generate_temple_identical_name_en_labels.py`, sharing the parametrized `generate_identical_name_en_labels.run`).
-- **Stage 4** LLM via the cloud Sonnet routine (`select_shrines_to_translate.py` returns a temple batch; `"kind":"temple"` tag).
-All wired into `ATOMIC_FILES`, `EXCLUDE_FILES`, and the daily worklist workflow; new temples flow through on refresh.
-
-Multilingual propagation also covers temples now: `extract_name_from_en` recognises `<Stem>-<suffix> Temple` and returns `p_type="temple"`, and `format_label` already had temple words for every supported language — so once a temple en-label lands, it propagates to all the downstream languages exactly like a shrine.
-
-Remaining (verify / cloud-side only, not coverage gaps):
-- **Cloud-prompt note:** the Sonnet routine receives `"kind":"temple"` items; it can use the tag to enforce the exact `<Stem>-<suffix> Temple` form. Translation works regardless.
-- **Verify after the first drip cycles:** confirm temple en-labels land on Wikidata and the downstream multilingual labels appear.
-
----
+After the first drip cycles: confirm temple en-labels are landing on Wikidata and
+downstream multilingual labels appear. Cloud-prompt note: the Sonnet routine gets
+`"kind":"temple"` items and can enforce the `<Stem>-<suffix> Temple` form.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
