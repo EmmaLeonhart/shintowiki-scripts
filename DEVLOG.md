@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Property-label coverage report (queue item 3, bounded first step)
+
+`bfs/property_label_report.py` enumerates properties on the Shinto-core items
+(levels 0-1, 237 items) + roadmap props vs the 60 covered languages, report-only
+(no labels emitted — property labels are translation, not transliteration). Result:
+716 distinct properties, all with gaps — but dominated by irrelevant external-ID
+props; the actionable Shinto/structural targets are small (P14005 Japanese court
+rank missing 57/60, P13723, P527, P31, P361). Scoping signal: property labelling
+needs a relevance filter + Emma's translation decision, not a blanket 716-prop
+pass. One WDQS query + label calls (separate service from the live crawl's API).
+
 ## 2026-07-04 — Reconciled texts/concepts item against Emma's roadmap (queue item 4)
 
 Read `docs/mass-label-expansion-plan.md` (the folded-in roadmap). §5 mandates

@@ -72,12 +72,16 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    (likely depth 3-4); surface level sizes, don't silently push to 5.
 2. **Re-run layer analysis as levels land.** `python bfs/analyze_layers.py` after each
    new `level_NN.tsv`; refresh `bfs/LAYER_ANALYSIS.md`.
-3. **Property labels (Emma, NEW).** Enumerate every Wikidata property (P-id) used across
-   the crawled corpus items' statements; for each, count which covered languages lack a
-   label. IMPORTANT: property labels are TRANSLATION (e.g. "shrine ranking" → de), not
-   name transliteration — the translit generators do NOT apply. Bounded first step:
-   emit a report of distinct properties + missing-language counts. Then scope a
-   translation approach; do NOT guess-transliterate property names.
+3. **Property labels (Emma, NEW) — first step DONE, needs a relevance filter + Emma.**
+   `bfs/property_label_report.py` → `property_label_report.md`: 716 distinct properties
+   on the Shinto-core items (levels 0-1), ALL with gaps in ≥1 covered lang. FINDING: the
+   716 is dominated by irrelevant external-ID properties (e.g. "Video Game History
+   Foundation Library subject ID"); the genuinely actionable Shinto/structural targets
+   are a small set — e.g. **P14005 Japanese court rank** (missing 57/60), P13723, P527,
+   P31, P361. NEXT: (a) filter to Shinto-relevant properties (drop external-ID datatype
+   props); (b) property labels are TRANSLATION not transliteration → Emma-scoped decision
+   on how to fill them (do NOT guess-transliterate). Extending the sweep to layer 2 is a
+   network follow-up (blocked while the crawl holds the Wikidata budget).
 4. **Texts/concepts — RECONCILED with the roadmap (`docs/mass-label-expansion-plan.md` §5).**
    Emma's roadmap says missing labels use SYSTEMATIC transliteration ("systematic
    guesswork"), NOT bespoke translation — so no translation pipeline is wanted. The main
