@@ -48,6 +48,7 @@ EASY_ROOTS = {
     "Q860290":  "province of Japan",
     "Q10444029": "shrine rank",
     "Q13406463": "list article",
+    "Q15221623": "bilateral relation",   # "X–Japan relations" — ignore per Emma
 }
 
 
@@ -111,11 +112,14 @@ def read_corpus():
     return qids
 
 
-def fetch_p31(qids):
+def fetch_types(qids):
+    """type(s) per item from BOTH P31 (instance of) AND P279 (subclass of), so
+    concept-CLASSES (which carry P279 but often no P31) are not dropped."""
     types = {q: set() for q in qids}
     for ch in _chunks(qids, CHUNK):
         vals = " ".join(f"wd:{q}" for q in ch)
-        for b in _sparql(f"SELECT ?item ?t WHERE {{ VALUES ?item {{ {vals} }} ?item wdt:P31 ?t. }}"):
+        for b in _sparql(f"SELECT ?item ?t WHERE {{ VALUES ?item {{ {vals} }} "
+                         f"?item (wdt:P31|wdt:P279) ?t. }}"):
             types[b["item"]["value"].rsplit("/", 1)[1]].add(b["t"]["value"].rsplit("/", 1)[1])
     return types
 
@@ -157,8 +161,8 @@ def item_labels(qids):
 def main():
     _utf8()
     qids = read_corpus()
-    print(f"Corpus (levels 0-2): {len(qids)} items. Fetching P31...")
-    types = fetch_p31(qids)
+    print(f"Corpus (levels 0-2): {len(qids)} items. Fetching P31 + P279...")
+    types = fetch_types(qids)
     distinct = set().union(*types.values()) if types else set()
     print(f"  {len(distinct)} distinct P31 types. Resolving 'easy' (shrine/god/geo/…) subclasses...")
     easy = easy_typeset(distinct)
