@@ -4,6 +4,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — translit_common offline tests (queue item 4)
+
+Added `shinto-label-generator/tests/test_translit_common.py` (12 tests): the
+romaji-source guard (English glosses like "Three Pioneer Kami" rejected; kana
+`ja` fallback; kanji-only gloss → None), per-script `bare_name` dispatch, `zh_map`
+from kanji (all 9 zh codes), ko phonetic-vs-hanja. Full label-gen suite 23 passed.
+Crawl left running (level 3 done at 45,949; expanding toward level 4).
+
 ## 2026-07-04 (evening) — Sweep made multi-day-safe; label-generator subtree de-vestigialized (Emma queue items)
 
 - **Full province sweep post-mortem:** the dispatch died at MY 170-min job

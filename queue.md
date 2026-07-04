@@ -78,16 +78,13 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    name transliteration — the translit generators do NOT apply. Bounded first step:
    emit a report of distinct properties + missing-language counts. Then scope a
    translation approach; do NOT guess-transliterate property names.
-4. **Tests for `translit_common.py`** (offline pytest): `looks_romaji` rejects
-   "Three Pioneer Kami" / accepts "Takamimusubi"; `romaji_source` falls back to a kana
-   `ja` label; `bare_name` per-script dispatch; `zh_map` from kanji; ko phonetic vs hanja.
-5. **Texts/concepts labelling (the thorny target the BFS exists for).** Engishiki text,
+4. **Texts/concepts labelling (the thorny target the BFS exists for).** Engishiki text,
    kanazukai, Ritsuryō funding types, Shinto-as-religion, etc. need real
    translation/judgment, NOT systematic transliteration. Write a scoping plan before
    building; likely routes through the remote (translation) routine, not a translit script.
-6. **Broaden kami source.** `Q524158` gave 352; also sweep Shinto-deity subclasses /
+5. **Broaden kami source.** `Q524158` gave 352; also sweep Shinto-deity subclasses /
    Japanese-deity classes for fuller coverage, re-run `generate_kami_quickstatements.py`.
-7. **Wire new label files into `docs/index.html`** browse site (kami_labels,
+6. **Wire new label files into `docs/index.html`** browse site (kami_labels,
    shrine_rank_labels, province_labels, shikinaisha_lists).
 
 ---
