@@ -31,6 +31,20 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — gan + zh-mo wired into the CJK variant path (cdo deferred with evidence)
+
+Second slice of the standardization epic. `zh_variants` now also emits **gan**
+(= s2t generic traditional — matches all 15 sampled gan temple labels, e.g.
+大德寺/延曆寺/藥師寺) and **zh-mo** (= s2hk; Macau follows the HK traditional
+convention, consistent with the one sampled label 南法華寺). Both ride the
+existing zh pipeline: same SPARQL population (items missing a zh label — the
+same incremental-coverage tradeoff the other variants already accept), files
+land in quickstatements/, and select_label_proposals' glob feeds them to the
+daily drip with no further wiring. **cdo deferred**: a broad P31-subclass
+sweep found ZERO cdo labels on Japanese shrines/temples — no convention to
+follow, and cdo wiki mixes hanzi with romanized Bàng-uâ-cê. Registry updated;
+label-generator suite 95 green (+2 tests).
+
 ## 2026-07-04 — Temple-only tier: nn/ceb/mai/as/ur added to the multilang generator
 
 First implementation slice of the standardization epic (rung 1). Sampled each

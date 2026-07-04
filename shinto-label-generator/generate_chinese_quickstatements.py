@@ -57,7 +57,16 @@ _s2hk = OpenCC("s2hk")  # Hong Kong traditional
 def zh_variants(simplified):
     """Map the simplified zh label to each zh script-variant language code.
     Simplified codes (zh-hans/zh-cn/zh-sg) reuse the base; traditional codes
-    (zh-hant/zh-tw/zh-hk) are OpenCC-converted."""
+    (zh-hant/zh-tw/zh-hk) are OpenCC-converted.
+
+    gan + zh-mo added 2026-07-04 (temple-only tier routing): every sampled
+    gan temple label on Wikidata is verbatim generic-traditional hanzi
+    (大德寺/延曆寺/藥師寺/圓覺寺) → s2t, same as zh-hant; Macau follows the
+    Hong Kong traditional convention (sampled 南法華寺) → s2hk. cdo was
+    checked the same way and DEFERRED: zero cdo labels exist on Japanese
+    shrines/temples even under a broad P31-subclass sweep, so there is no
+    observed convention to follow (cdo wiki also mixes hanzi with romanized
+    Bàng-uâ-cê, so guessing a script would be wrong half the time)."""
     return {
         "zh-hans": simplified,
         "zh-cn": simplified,
@@ -65,6 +74,8 @@ def zh_variants(simplified):
         "zh-hant": _s2t.convert(simplified),
         "zh-tw": _s2tw.convert(simplified),
         "zh-hk": _s2hk.convert(simplified),
+        "gan": _s2t.convert(simplified),
+        "zh-mo": _s2hk.convert(simplified),
     }
 
 # ----------------------------
@@ -241,7 +252,7 @@ def main():
     # B3a: emit the zh script variants (simplified reuse base; traditional via
     # OpenCC). Generated for the same shrines (those missing a zh label, which
     # almost always also miss the rarer script-variant labels).
-    variant_codes = ["zh-hant", "zh-tw", "zh-hk", "zh-hans", "zh-cn", "zh-sg"]
+    variant_codes = ["zh-hant", "zh-tw", "zh-hk", "zh-hans", "zh-cn", "zh-sg", "gan", "zh-mo"]
     variant_lines = {code: [] for code in variant_codes}
     for row in rows:
         variants = zh_variants(row["zh_label"])

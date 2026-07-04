@@ -107,10 +107,14 @@ The gap is coverage, not fallback logic. Rungs:
    conventions: ceb "Templong <Name>"; nn mirrors nb; mai=hindify+मंदिर;
    as=bengalify+Assamese-ৰ+মন্দিৰ; ur=farsify+مندر — temple word serves both
    kinds per Emma's rule). Remaining split:
-   a. **gan (91 labels!), cdo, zh-mo → the CJK path** — their sampled labels
-      are verbatim kanji (trad variants), so they belong in
-      generate_chinese_quickstatements.py (opencc variant conversion), NOT
-      format_label. Wire them there.
+   a. ~~gan/zh-mo → CJK path~~ DONE 2026-07-04: wired into
+      generate_chinese_quickstatements.zh_variants (gan = s2t generic
+      traditional, matching all 15 sampled labels; zh-mo = s2hk, Macau
+      follows HK convention). select_label_proposals globs the new
+      quickstatements/gan.txt + zh-mo.txt into the drip automatically.
+      **cdo DEFERRED with evidence**: zero cdo labels exist on Japanese
+      shrines/temples even under a broad P31-subclass sweep — no observed
+      convention, and cdo wiki mixes hanzi with romanized Bàng-uâ-cê.
    b. **pa/km/lo/dz/new/mad/shn deferred** — no script converter exists
       (Gurmukhi/Khmer/Lao/Tibetan/Newa/…) and 0-2 observed labels each;
       counts ≤16. Only worth it if a converter arrives or Sonnet does them.

@@ -11,7 +11,21 @@ from generate_chinese_quickstatements import zh_variants  # noqa: E402
 
 def test_has_all_variant_codes():
     v = zh_variants("护国神社")
-    assert set(v) == {"zh-hans", "zh-cn", "zh-sg", "zh-hant", "zh-tw", "zh-hk"}
+    assert set(v) == {"zh-hans", "zh-cn", "zh-sg", "zh-hant", "zh-tw", "zh-hk",
+                      "gan", "zh-mo"}
+
+
+def test_gan_is_generic_traditional():
+    # gan labels on Wikidata are verbatim traditional hanzi (e.g. 大德寺,
+    # 延曆寺) — the s2t conversion, same as zh-hant
+    v = zh_variants("护国神社")
+    assert v["gan"] == "護國神社"
+    assert v["gan"] == v["zh-hant"]
+
+
+def test_zh_mo_follows_hk_convention():
+    v = zh_variants("护国神社")
+    assert v["zh-mo"] == v["zh-hk"]
 
 
 def test_simplified_codes_reuse_base():

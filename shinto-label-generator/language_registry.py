@@ -74,6 +74,8 @@ COVERED = {
     "zh-hans": ("generate_chinese_quickstatements.py", "simplified-base"),
     "zh-cn": ("generate_chinese_quickstatements.py", "simplified-base"),
     "zh-sg": ("generate_chinese_quickstatements.py", "simplified-base"),
+    "gan": ("generate_chinese_quickstatements.py", "opencc-s2t"),
+    "zh-mo": ("generate_chinese_quickstatements.py", "opencc-s2hk"),
     "ko": ("generate_korean_quickstatements.py", "hangul/hanja"),
     "tok": ("fetch_shrines_tokiponize.py", "tokiponize"),
     "id": ("generate_indonesian_proposals.py", "romaji"),
