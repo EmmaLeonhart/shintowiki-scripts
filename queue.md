@@ -84,9 +84,10 @@ address_citation_backfill.txt, converges as refs land; see devlog):
    pages — Chiba + Tokushima; the bare "Awa Province" page is a
    disambiguation page and is not touched).
    Remaining rungs:
-   a. Dispatch the workflow for the two Awa pages; verify the tables render
-      with the Address column on-wiki (Emma said overwrite — done via CI
-      where the credentials live).
+   a. Dispatched 2026-07-04 ~16:10 UTC (run 28711987593). **Chiba VERIFIED
+      LIVE**: regenerated 16:11:09Z, Address column in header, 7 ja-address
+      cells. Tokushima still processing at last check (bigger province) —
+      verify its page once the run completes (watcher armed).
    b. Decide the cadence for the FULL sweep (all ~68 province pages,
       ~heavy Wikidata traffic): wire into cleanup-loop (daily is likely too
       hot — the old run took hours) or a weekly schedule; clear
@@ -132,15 +133,6 @@ The gap is coverage, not fallback logic. Rungs:
 3. **Regenerate + eyeball a small batch** for the 5 new langs before the drip
    picks them up (tests are in tests/test_temple_only_tier.py, done).
 
-
-## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-07-01) — PARTIAL 2026-07-04, wiki-dependent remainder only
-
-Ran 2026-07-04: repo-local halves done and moved to Verified (retirement drain
-3/642, essentially converged; no sync_*.state reappearance). The three
-wiki-read items (Q3 enwiki bucket counts, conflict-resolution edit summaries,
-sync churn inspection) were blocked AGAIN by a Miraheze 503 outage — second
-sweep in a row. Remaining: run just those three when the wiki responds, then
-delete THIS block.
 
 ## Temple drip verified NOT landing — QS path broken, BLOCKED-ON-USER-ACTION (Emma: one manual QS batch)
 

@@ -31,6 +31,24 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — Monthly sweep COMPLETED (wiki recovered) + Chiba list live-verified
+
+Miraheze came back mid-afternoon (sync workflows green from 15:30 UTC), so the
+wiki-read trio ran and the monthly verification sweep is now fully closed:
+
+- **Q3 enwiki enrichment**: all four Emmabot categories exist with 0 members —
+  source went 4788 → 0 since 06-06; backlog gone, with-wikidata anomaly moot.
+  (Observation doesn't distinguish completed-enrichment from family-retirement;
+  no defect signal either way.)
+- **Conflict resolution**: 0/50 recent EmmaBot summaries say "revision count";
+  no sync PUSH/DELETE churn (the Template:U* ×3 repeats are multi-op
+  orchestrator passes). `.state`-removal review closed.
+- **Open questions live page confirmed** (rev 2026-06-09, zero open bullets) —
+  the earlier local-copy-only sweep result now stands against the live page.
+- **Awa regeneration run 28711987593**: Chiba VERIFIED LIVE at 16:11:09Z —
+  Address column in the header, 7 {{lang|ja|…}} address cells. Tokushima still
+  processing at check time; watcher armed for run completion.
+
 ## 2026-07-04 — Shikinaisha list generator REVIVED with Address column (Emma: full generator; pages were never hand-authored)
 
 Emma's decisions (in-session): the List-of-Shikinaisha pages get the **full

@@ -26,64 +26,29 @@ batched verification we skip in the moment.
 
 ## Open (shipped, not yet verified)
 
-- [ ] **Q3 — enwiki category enrichment + drain** (shipped 2026-05-30, `f2b36a86`).
-  **Doc-description corrected 2026-06-06:** `enrich_enwiki_categories.py` does NOT
-  add `[[Category:<enwiki parent>]]` (the original wording here was wrong). Per its
-  own docstring it: looks up the matching enwiki Category; if absent → tags
-  `Emmabot enwiki categories false positives`; if present w/o wikidata → adds
-  `[[en:Category:Name]]` interlang link + tags `…with only enwiki category and no
-  wikidata`; if present w/ wikidata → adds `[[en:Category:Name]]` +
-  `{{wikidata link|QID}}` + tags `…with wikidata`; and in ALL cases REMOVES
-  `[[Category:Emmabot categories with enwiki]]`. So the real test is whether the
-  source drains into the 3 buckets.
-  **2026-06-06 check — observed bucket state (live):**
-  - `Emmabot categories with enwiki` (source): **4788**
-  - `…with wikidata`: **0**
-  - `…with only enwiki category and no wikidata`: **10**
-  - `Emmabot enwiki categories false positives`: **101**
-  So enrichment HAS run (111 categories moved into buckets) and the false-positive
-  + enwiki-only paths fire. **Two anomalies to watch, NOT yet a confirmed defect:**
-  (1) the source sits at **4788** vs ~111 drained — either slow/budget-bound drain,
-  or triage adds new members faster than enrichment removes them; (2) the
-  **with-wikidata bucket is 0** — suspicious (many enwiki categories DO have wikidata
-  items), but could be that the ~111 processed so far happen to be the niche/no-wd
-  ones. **Recheck criterion (rate over weeks):** if across the next sweeps the source
-  shrinks and the buckets (esp. with-wikidata) grow → working-but-slow → Verify; if
-  the numbers stay static → enrichment has stalled → investigate the wikidata-branch
-  + the per-cycle edit count in CI logs. Left Open.
-- [ ] **sync conflict resolution → most-recent-edit-wins** (shipped 2026-05-30, `179eaebd`).
-  Verify no spurious overwrites: when wiki and repo both changed, the side with the more
-  recent edit wins (watch sync edit summaries — should no longer say "wins on revision
-  count"; the logic now reads timestamps).
-  **2026-06-06 check: partial PASS.** 0 / 30 most-recent `User:EmmaBot`
-  recentchanges summaries mention "revision count", and sync-push/delete entries
-  were absent from that window (low churn). Consistent with the new timestamp
-  logic; small window, so kept Open for a wider recheck, but no warning signs.
-
-- [ ] **Sync `.state`-file removal (shipped 2026-05-30) — HIGHEST-PRIORITY REVIEW.**
-  All 5 `sync_*.py` now run STATELESS: `load_state` returns `{}`, `save_state` is a
-  no-op, and the 5 `.state` files were deleted. Conflict resolution is timestamp-based
-  (most-recent-edit-wins), so any page whose wiki vs repo content DIFFERS is decided by
-  whichever side was edited more recently; pages with equal content are no-ops. Orphan
-  handling: git_synced + the unique dirs re-add via the category tag (repo-wins); the
-  wiki-wins dirs (need_translation, duplicated_content) were re-gated on **wiki-page
-  existence** (missing → push-create; exists-but-dropped-category → delete local) so a
-  wiki-side category removal isn't churned back.
-  '''Verify (8–24h after it hits a sync cycle):'''
-  1. Watch sync edit summaries — should NOT see runaway PUSH/DELETE counts or churn
-     (the same page edited every cycle). A few per cycle is normal.
-  2. Spot-check git_synced/need_translation/duplicated_content pages aren't being
-     spuriously deleted from the repo OR having categories re-added against a wiki-side
-     removal. Recover any wrong deletion from git history; restore any wrongly-deleted
-     wiki page via Special:Undelete.
-  3. Confirm `.state` files do NOT reappear (save_state is a no-op).
-  '''Known risk:''' timestamp comparison now drives EVERY differing page (was only
-  conflicts) → more SPARQL/wiki reads + the per-dir static policy only breaks ties.
-  Bounded by each script's `--max-edits`; everything is reversible. If it misbehaves,
-  the fix is to refine the stateless orphan/winner logic, not to bring back the files.
 
 ## Verified (kept briefly, then prune)
 
+- [x] **Q3 — enwiki category enrichment + drain** (shipped 2026-05-30,
+  `f2b36a86`; **closed 2026-07-04**). Live counts: ALL FOUR categories exist
+  with **0 members** — the source (`Emmabot categories with enwiki`) went
+  4788 → 0 since 06-06, and the three buckets (falsepos was 101, enwiki-only
+  was 10, with-wikidata was 0) are also empty. The enrichment backlog is
+  GONE; the 06-06 "with-wikidata bucket is 0" anomaly is moot (nothing left
+  to enrich). Note recorded plainly: this observation doesn't distinguish
+  "enrichment completed + buckets consumed downstream" from "the Emmabot
+  category family was retired by a cleanup" — if the distinction ever
+  matters, read the enrichment CI logs from mid-June; no defect signal
+  either way.
+- [x] **sync conflict resolution → most-recent-edit-wins** (shipped
+  2026-05-30, `179eaebd`; **verified 2026-07-04**). 0/50 most-recent EmmaBot
+  edit summaries mention "revision count"; no sync PUSH/DELETE churn in the
+  window. (The Template:U* pages each edited 3× are the template-orchestrator
+  running multiple ops per page — orchestrator summaries, not sync ones.)
+- [x] **Sync `.state`-file removal — churn half** (**verified 2026-07-04**,
+  completing the 06-05 partial): recentchanges window shows no runaway
+  PUSH/DELETE and no same-page-every-cycle sync churn; `.state` files still
+  absent (checked 07-04 earlier). Review CLOSED.
 - [x] **propagate retirement drain** (shipped 2026-05-30, `0714ce70`;
   **verified 2026-07-04**). Drained essentially to zero: **3 / 642**
   `miraheze_unique/*.wiki` lack the `[[Category:Independently git synced pages]]`
@@ -135,15 +100,6 @@ batched verification we skip in the moment.
   could NOT be run — shinto.miraheze.org was returning 502s / read-timeouts during
   the sweep. Recheck the recentchanges of `User:EmmaBot` next healthy sweep.
 
-## Open (wiki-parse-dependent, deferred — wiki was 502/timeout during the 2026-06-05 sweep)
-
-The remaining items (Q4 self-categorization render, Q4 blank-template idempotency,
-Q3 enwiki parent-category enrichment, sync conflict-resolution edit summaries)
-need live `action=parse` / recentchanges reads that the flaky wiki refused during
-this sweep. Left Open; recheck on the next monthly sweep when the wiki responds.
-
-**2026-07-04 sweep:** same story — shinto.miraheze.org served 503s throughout
-(outage since ~11:30 UTC), so the three wiki-read items (Q3 bucket counts,
-conflict-resolution summaries, sync churn inspection) could not be run again.
-The two repo-local halves WERE run and moved to Verified above. Wiki-dependent
-trio stays Open for the next healthy sweep.
+**2026-07-04 sweep, second pass:** the wiki recovered mid-afternoon (sync
+workflows green from 15:30 UTC), so the wiki-read trio ran after all — all
+three moved to Verified above. Nothing remains Open.
