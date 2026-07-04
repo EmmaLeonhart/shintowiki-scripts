@@ -5,12 +5,12 @@
 | image = [[File:Kasuga-taisha11bs3200.jpg|150px|link=|alt=]]
  |group1 = Main Deities
  |list1 =
-* {{ill|Kasuga-no-Kami|ja|春日神|1=Kasuga-no-Kami|2=ja|3=春日神|4=fr|5=Kasuga no Kami|6=zh|7=春日權現|8=wuu|9=春日權現|fr|Kasuga_no_Kami|12=simple|13=User:Immanuelle/Kasuga-no-Kami|13=User:Immanuelle/Kasuga-no-Kami|12=simple|13=User:Immanuelle/Kasuga-no-Kami|13=User:Immanuelle/Kasuga-no-Kami|qq=}}
+* [[Kasuga-no-Kami]]
 ** [[Takemikazuchi]]-o
 ** [[Futsunushi]]
 ** [[Ame-no-Koyane]]
 ** [[Himegami]]
-** {{ill|Ame-no-Oshikumone|ja|天押雲根命|12=simple|13=User:Immanuelle/Ame-no-Oshikumone|12=simple|13=User:Immanuelle/Ame-no-Oshikumone|qq=}}
+** [[Ame-no-Oshikumone]]
  |group2 = Shrines
  |list2 =
 * [[Kasuga-taisha]]
@@ -18,27 +18,26 @@
 * [[:en:Ōharano Shrine|Ōharano Shrine]]
 * [[Hirano Shrine]]
 * [[:en:Yoshida Shrine|Yoshida Shrine]]
-* {{ill|Kasuga Shrine (Oita)|ja|春日神社 (大分市)|1=Kasuga Shrine (Ōita)|12=simple|13=User:Immanuelle/Kasuga Shrine (Oita)|13=User:Immanuelle/Kasuga Shrine (Ōita)|12=simple|13=User:Immanuelle/Kasuga Shrine (Oita)|13=User:Immanuelle/Kasuga Shrine (Ōita)|qq=}}
-* {{ill|Yagi Shrine|ja|夜疑神社|12=simple|13=User:Immanuelle/Yagi Shrine|12=simple|13=User:Immanuelle/Yagi Shrine|qq=}}
-* {{ill|Isagawa Shrine|ja|率川神社|12=simple|13=User:Immanuelle/Isagawa Shrine|12=simple|13=User:Immanuelle/Isagawa Shrine|qq=}}
+* [[Kasuga Shrine (Oita)|Kasuga Shrine (Ōita)]]
+* [[Yagi Shrine]]
+* [[Isagawa Shrine]]
 |group5 = Misc
 |list5 =
 * [[Fujiwara clan]]
 * [[Nakatomi clan]]
-* {{ill|Urabe clan|lt=Yoshida family|ja|卜部氏|en|draft:Yoshida family|simple|User:Immanuelle/Urabe_clan|fr|clan Urabe|12=simple|13=User:Immanuelle/Urabe clan|12=simple|13=User:Immanuelle/Urabe clan|qq=}}
+* [[Urabe clan|Yoshida family]]
 * [[Kasugayama Primeval Forest]]
 * [[:en:Yoshida Shintō|Yoshida Shintō]]
-* {{ill|Kasuga Mandalas|ja|春日曼荼羅|12=simple|13=User:Immanuelle/Kasuga Mandalas|12=simple|13=User:Immanuelle/Kasuga Mandalas|qq=}}
+* [[Kasuga Mandalas]]
 * [[Kasuga Gongen Genki E]]
 }}<noinclude>
 
 
-[[en:Kasuga Faith]][[en:Template:Kasuga Faith]]{{wikidata link|Q123981350}}
+[[en:Kasuga Faith]][[en:Template:Kasuga Faith]]
 [[Category:Kasuga shrines]]
 [[Category:Kasuga-taisha]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
 </noinclude>

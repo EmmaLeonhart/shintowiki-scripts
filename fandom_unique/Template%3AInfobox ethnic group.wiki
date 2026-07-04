@@ -172,7 +172,5 @@
 [[Category:Articles using infobox ethnic group with image parameters|{{#if:{{{flag|}}}{{{flag_caption|}}}|F|ψ}}{{PAGENAME}}]]
 [[Category:Articles using Template:Infobox ethnic group with deprecated parameters|¶]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
 </noinclude>
