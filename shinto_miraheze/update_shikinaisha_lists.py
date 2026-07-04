@@ -258,24 +258,53 @@ def create_shrine_page(qid: str, shrine_name: str, province: str, actual_page_na
 # ────────────────────────────────────────────────────────
 #  Wikidata helpers
 # ────────────────────────────────────────────────────────
-def wd_entity(qid: str) -> dict:
-    """Fetch Wikidata entity with retry logic for rate limiting."""
+def _wd_get(params: dict) -> dict:
+    """One wbgetentities call with throttle-aware retries. The 2026-07-04
+    Tokushima run died on 'Expecting value: line 1 column 1' — Wikidata
+    serving a non-JSON throttle page — so retries now surface the HTTP
+    status and honor Retry-After instead of guessing."""
     import time as time_module
-    max_retries = 5
+    max_retries = 6
     for attempt in range(max_retries):
+        time_module.sleep(0.5)
         try:
-            time_module.sleep(0.5)  # Rate limit: wait 500ms between requests
-            resp = S.get(WD_API, params={
-                "action": "wbgetentities", "ids": qid,
-                "props": "labels|claims|sitelinks", "languages": "en,ja",
-                "redirects": "yes", "format": "json"}, timeout=30)
-            data = resp.json()
-            return data["entities"][qid]
+            resp = S.get(WD_API, params=params, timeout=30)
+            if resp.status_code == 429 or resp.status_code >= 500:
+                wait = int(resp.headers.get("Retry-After", 0) or 0) or 15 * (attempt + 1)
+                print(f"  [RETRY] Wikidata HTTP {resp.status_code}, waiting {wait}s...", flush=True)
+                time_module.sleep(wait)
+                continue
+            return resp.json()
         except Exception as e:
-            wait_time = 5 * (attempt + 1)  # 5, 10, 15, 20, 25 seconds
-            print(f"  [RETRY] Wikidata API error for {qid}: {e}, waiting {wait_time}s...", flush=True)
-            time_module.sleep(wait_time)
-    raise Exception(f"Failed to fetch {qid} after {max_retries} retries")
+            wait = 10 * (attempt + 1)
+            print(f"  [RETRY] Wikidata API error: {e}, waiting {wait}s...", flush=True)
+            time_module.sleep(wait)
+    raise Exception(f"Wikidata request failed after {max_retries} retries: {params.get('ids', '')[:80]}")
+
+
+def wd_entity(qid: str) -> dict:
+    """Fetch a single Wikidata entity (cache-missing fallback path)."""
+    data = _wd_get({
+        "action": "wbgetentities", "ids": qid,
+        "props": "labels|claims|sitelinks", "languages": "en,ja",
+        "redirects": "yes", "format": "json"})
+    return data["entities"][qid]
+
+
+def prefetch_entities(qids) -> None:
+    """Batch-load entities into the cache, 50 per wbgetentities call — the
+    per-entity loop was ~250 calls for one Tokushima-sized province and drew
+    Wikidata throttling; batching cuts it to ~5."""
+    todo = [q for q in dict.fromkeys(qids) if q and q not in _ENT_CACHE]
+    for i in range(0, len(todo), 50):
+        batch = todo[i:i + 50]
+        data = _wd_get({
+            "action": "wbgetentities", "ids": "|".join(batch),
+            "props": "labels|claims|sitelinks", "languages": "en,ja",
+            "redirects": "yes", "format": "json"})
+        for qid, ent in data.get("entities", {}).items():
+            _ENT_CACHE[qid] = ent
+        print(f"  [PREFETCH] {min(i + 50, len(todo))}/{len(todo)} entities cached", flush=True)
 
 # ── safe label helper -------------------------------------------------
 def _lbl(ent: dict, fallback: str = "") -> str:
@@ -313,6 +342,17 @@ def get_quantity(claim) -> str:
 def harvest_shiki(ent):
     counts = {"total": "0", "shosha": "0", "taisha": "0"}
     rows   = []
+
+    # Batch-load every P527 entry (and, second wave, their P460 candidates)
+    # up front instead of one API call per entity mid-walk.
+    entry_qids = [cl["mainsnak"]["datavalue"]["value"]["id"]
+                  for cl in ent["claims"].get("P527", [])
+                  if cl["mainsnak"]["datavalue"]["value"]["id"] not in COUNT_CLASSES]
+    prefetch_entities(entry_qids)
+    cand_qids = [c["mainsnak"]["datavalue"]["value"]["id"]
+                 for q in entry_qids
+                 for c in get_entity_cached(q)["claims"].get("P460", [])]
+    prefetch_entities(cand_qids)
 
     for cl in ent["claims"].get("P527", []):
         tgt = cl["mainsnak"]["datavalue"]["value"]["id"]
@@ -942,6 +982,7 @@ if __name__ == "__main__":
         print(f"[INFO] Found {len(all_pages)} total province lists")
 
     edited = 0
+    failures = []
     for page in all_pages:
         if use_progress and page in progress:
             print(f"[SKIP] {page} (already processed this sweep — delete {STATE_FILE} to restart)")
@@ -957,8 +998,14 @@ if __name__ == "__main__":
                 progress[page] = True
                 save_progress(progress)
         except Exception as e:
+            failures.append(page)
             try:
                 print(f"ERROR {page}: {e}")
             except UnicodeEncodeError:
                 print(f"ERROR [page with unicode title]: {e}")
         time.sleep(1.5)
+
+    if failures:
+        # A green run must mean the work actually landed — the 2026-07-04
+        # Tokushima failure exited 0 and looked like success.
+        sys.exit(f"{len(failures)} page(s) failed: {'; '.join(failures[:5])}")
