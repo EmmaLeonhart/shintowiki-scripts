@@ -136,11 +136,15 @@ The gap is coverage, not fallback logic. Rungs:
    Svetišče/Tempelj with the Slovene variant — Jakuši-dži/Todai-dži).
    **th DEFERRED**: Thai script transliterator doesn't exist (vowel signs
    precede consonants — real work, not a map). ALL_LANGS 43→48.
-3. **Verify the regeneration run** (dispatched 2026-07-04 ~17:05 after fixing
-   why the last one silently died at lang 3/43: run_sparql had no retry and
-   continue-on-error masked the crash — now retried 3×, per-lang fault
-   isolation, nonzero exit on partial failure): confirm all lang files exist
-   incl. the 10 new (nn/ceb/mai/as/ur + pl/ro/fi/cs/sl) and spot-check lines.
+3. ~~Verify regeneration~~ DONE 2026-07-04 ~18:00: run 28713498916 completed
+   in 33m51s (fault-tolerance fix carried it); all 10 new language files
+   exist at ~55k lines each; spot-checks correct in both kinds and all
+   scripts — cs "Chrám Tókaidži" / "Svatyně Hondžó Hačiman", sl "Tempelj
+   Tokai-dži", ur "توکایجی مندر", as "তোকাইজি মন্দিৰ" (Assamese ৰ), ceb
+   "Templong Tōkai-ji", fi "Tōkai-ji-temppeli", pl "Świątynia Tōkai-ji".
+   Known cosmetic artifact inherited from the existing bengalify (extra
+   inherent-vowel in some as/bn names, e.g. তোৰিনাজি) — same behavior bn has
+   had in production; not a regression. The drip picks these up via the glob.
 
 
 ## Wikidata edits: direct path promoted to primary at 300/day (Emma decisions 2026-07-04)

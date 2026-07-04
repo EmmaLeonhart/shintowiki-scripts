@@ -31,6 +31,22 @@ attaches the same reference pair Emma specified (S143=Q177837 + S4656=list URL).
   (module-level rewrap breaks pytest capture). Tests: 97 green (90 + 7 new in
   test_address_citation_backfill.py).
 
+## 2026-07-04 — 48-language regeneration verified; category orchestrator succeeds standalone
+
+- **Regeneration (run 28713498916, 33m51s, success)**: all 10 new language
+  files exist at ~55k lines each; spot-checks correct across scripts and both
+  kinds (cs Chrám Tókaidži + Svatyně Hondžó Hačiman; sl Tempelj Tokai-dži;
+  ur/as/ceb/fi/pl all right). Standardization rungs 1-3 now fully closed —
+  remaining: th + 7 tiny langs deferred with named reasons.
+- **Category orchestrator standalone dispatch: SUCCESS in 6m24s** — edits from
+  the exact page every wedge sat on, zero retry warnings, state committed.
+  The month-long hang doesn't reproduce outside the pipeline; tonight's
+  scheduled run discriminates retry-cap-cure vs in-pipeline cause.
+- Sibling-session work flushed and noted: shikinaisha-list multilang label
+  generator (3,982 QS lines) + a new BFS Wikidata Shinto crawler thread Emma
+  is directing elsewhere (bfs commits 74c409ec/71c8e5ef/82632f2c — not
+  touched from here).
+
 ## 2026-07-04 — Rung-2 languages shipped (pl/ro/fi/cs/sl) + multilang loop made fault-tolerant; Wikidata edits to 300/day; branches closed
 
 - **Emma decisions (in-session):** no QS manual batch EVER → direct_daily_edits
