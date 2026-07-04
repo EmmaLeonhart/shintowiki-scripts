@@ -78,12 +78,20 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    name transliteration — the translit generators do NOT apply. Bounded first step:
    emit a report of distinct properties + missing-language counts. Then scope a
    translation approach; do NOT guess-transliterate property names.
-4. **Texts/concepts labelling (the thorny target the BFS exists for).** Engishiki text,
-   kanazukai, Ritsuryō funding types, Shinto-as-religion, etc. need real
-   translation/judgment, NOT systematic transliteration. Write a scoping plan before
-   building; likely routes through the remote (translation) routine, not a translit script.
-5. **Broaden kami source.** `Q524158` gave 352; also sweep Shinto-deity subclasses /
-   Japanese-deity classes for fuller coverage, re-run `generate_kami_quickstatements.py`.
+4. **Texts/concepts — RECONCILED with the roadmap (`docs/mass-label-expansion-plan.md` §5).**
+   Emma's roadmap says missing labels use SYSTEMATIC transliteration ("systematic
+   guesswork"), NOT bespoke translation — so no translation pipeline is wanted. The main
+   text (Engishiki Jinmyōchō) is already labelled via the shikinaisha generator; the
+   remaining Shinto terms (kanazukai, Ritsuryō funding types) are tiny sets that can fold
+   into a general bare-term transliteration pass if desired. Off-domain
+   encyclopedia/database/language items are skipped. No further action unless Emma wants
+   the small term sweep.
+5. **Broaden deity + rank coverage to the full roadmap (§2–§3).** Currently kami =
+   `Q524158` only and ranks = shrine rank `Q10444029` only. Roadmap also requires:
+   **Japanese court ranks** (P14005 valid values), **Buddhist deities**, and the
+   P13723-valid-value ranks. Same bare-name transliteration (`translit_common`), just
+   different source classes / property-value sweeps; re-run the generators. NETWORK —
+   run when the crawl is idle or `--max-depth`-capped so it doesn't 429 the crawl.
 
 ---
 

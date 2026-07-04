@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Reconciled texts/concepts item against Emma's roadmap (queue item 4)
+
+Read `docs/mass-label-expansion-plan.md` (the folded-in roadmap). §5 mandates
+systematic transliteration for missing labels, NOT bespoke translation — so the
+"texts/concepts need a translation pipeline" premise was wrong. Engishiki
+Jinmyōchō is already labelled (shikinaisha generator); remaining Shinto terms are
+tiny. Reframed queue item 4 accordingly and surfaced the real roadmap GAPS my
+generators don't yet cover: Japanese court ranks (P14005), Buddhist deities, and
+P13723 valid-value ranks (queue item 5). No code this entry — planning/reconciliation.
+
 ## 2026-07-04 — Browse site: cross-category label pages (queue item, docs wiring)
 
 `docs/generate_pages.py` + `index.html` now surface the four multi-language
