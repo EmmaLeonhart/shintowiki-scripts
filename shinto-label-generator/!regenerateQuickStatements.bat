@@ -15,7 +15,7 @@ if %errorlevel%==0 (
     set PYTHON=python
 )
 
-echo [1/5] Generating Toki Pona labels...
+echo [1/8] Generating Toki Pona labels...
 %PYTHON% fetch_shrines_tokiponize.py
 if errorlevel 1 (
     echo.
@@ -25,7 +25,7 @@ if errorlevel 1 (
 )
 echo.
 
-echo [2/5] Generating Korean labels...
+echo [2/8] Generating Korean labels...
 %PYTHON% generate_korean_quickstatements.py
 if errorlevel 1 (
     echo.
@@ -35,7 +35,7 @@ if errorlevel 1 (
 )
 echo.
 
-echo [3/5] Generating Chinese labels...
+echo [3/8] Generating Chinese labels...
 %PYTHON% generate_chinese_quickstatements.py
 if errorlevel 1 (
     echo.
@@ -45,7 +45,7 @@ if errorlevel 1 (
 )
 echo.
 
-echo [4/5] Generating tr/de/nl/es/it/eu/lt/ru/uk/fa/ar labels...
+echo [4/8] Generating tr/de/nl/es/it/eu/lt/ru/uk/fa/ar labels...
 %PYTHON% generate_multilang_quickstatements.py
 if errorlevel 1 (
     echo.
@@ -55,11 +55,41 @@ if errorlevel 1 (
 )
 echo.
 
-echo [5/5] Generating Shikinaisha-list labels (Engishiki Jinmyocho + 69 province lists)...
+echo [5/8] Generating Shikinaisha-list labels (Engishiki Jinmyocho + 69 province lists)...
 %PYTHON% generate_shikinaisha_list_quickstatements.py
 if errorlevel 1 (
     echo.
     echo ERROR: Shikinaisha-list pipeline failed.
+    pause
+    exit /b 1
+)
+echo.
+
+echo [6/8] Generating kami (deity) labels...
+%PYTHON% generate_kami_quickstatements.py
+if errorlevel 1 (
+    echo.
+    echo ERROR: Kami pipeline failed.
+    pause
+    exit /b 1
+)
+echo.
+
+echo [7/8] Generating shrine-rank labels...
+%PYTHON% generate_shrine_rank_quickstatements.py
+if errorlevel 1 (
+    echo.
+    echo ERROR: Shrine-rank pipeline failed.
+    pause
+    exit /b 1
+)
+echo.
+
+echo [8/8] Generating province labels...
+%PYTHON% generate_province_quickstatements.py
+if errorlevel 1 (
+    echo.
+    echo ERROR: Province pipeline failed.
     pause
     exit /b 1
 )
