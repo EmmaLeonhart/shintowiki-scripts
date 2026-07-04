@@ -114,7 +114,13 @@ def clear_state(path: str) -> None:
 def login_site() -> mwclient.Site:
     username = os.getenv("WIKI_USERNAME", "EmmaBot")
     password = os.getenv("WIKI_PASSWORD", "")
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+    # max_retries=5: mwclient's default of 25 with linearly-growing sleeps
+    # means one persistently-erroring call silently eats 30*(0+1+..+24) =
+    # 150 minutes — the whole 160-min CI step budget (category-orchestrator
+    # timed out daily, 2026-06→07, with zero output). 5 retries caps the
+    # silent window at ~5 min; a real outage then fails loud and fast.
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT,
+                         max_retries=5)
     login_with_retry(site, username, password)
     print(f"Logged in as {username}")
     return site
@@ -187,6 +193,14 @@ def run_orchestrator(
     share a single state file across multiple namespaces (the misc
     orchestrator does this to sweep many namespaces under one budget).
     """
+    # Hang forensics (2026-07-04): the category orchestrator wedged silently
+    # for 160 minutes/day for ~a month — no stdout, no stderr, no state
+    # growth — and the cause was not reproducible locally. Dump every
+    # thread's stack to stderr every 15 minutes so the NEXT wedge names its
+    # exact line in the CI log. Cheap (one timer thread), cancelled on exit.
+    import faulthandler
+    faulthandler.dump_traceback_later(900, repeat=True)
+
     applicable_ops = [op for op in ops if namespace in op.NAMESPACES]
     if not applicable_ops:
         print(f"No operations registered for ns={namespace} ({ns_label}); exiting.")

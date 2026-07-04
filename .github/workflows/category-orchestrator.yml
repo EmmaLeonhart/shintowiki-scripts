@@ -145,8 +145,12 @@ jobs:
         # 2026-05-09 — every run reached 180 min mid-sweep and lost its
         # state increments. Gives commit_state.sh ~20 min headroom.
         timeout-minutes: 160
+        # -u: unbuffered stdout. The 2026-06→07 daily wedge produced ZERO
+        # log output because block-buffered prints die with the killed
+        # process; unbuffered + the faulthandler watchdog in common.py
+        # make the next wedge print its own stack trace in this log.
         run: |
-          python3 -m shinto_miraheze.orchestrators.category_orchestrator \
+          python3 -u -m shinto_miraheze.orchestrators.category_orchestrator \
             --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Category Orchestrator"

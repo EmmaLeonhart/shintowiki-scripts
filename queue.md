@@ -20,11 +20,22 @@ auto-repaired to full titles by the generator's new repair pass each run.
 After the next cleanup-loop + daily-edits cycle: confirm the fixes page populates,
 the drip applies prefixed labels, and no bare category labels are re-emitted.
 
-## Verify the pipeline ran today (Emma: "no run today"?)
+## Read the category-orchestrator stack dump after tonight's run (pipeline break, diagnosed to instrumentation stage)
 
-Check the scheduled workflows' latest runs (cleanup-loop 02:23 UTC daily,
-generate-quickstatements, direct-daily-edits). If a run is missing/failed,
-diagnose and fix.
+Emma's "no run today" hunch verified 2026-07-04 and it's WORSE: cleanup-loop has
+failed EVERY scheduled run since at least 2026-06-08 — always the
+category-orchestrator job, timing out at 160 min with ZERO stdout/stderr and
+ZERO state growth (never marks even one page done). Poison-page theory tested
+and eliminated: every light + network op runs instantly on the first non-done
+page (Category:Articles to be merged); no import-time side effects; login
+retries are bounded and noisy. mwclient's silent-retry budget (25 retries ≈ 150
+min of sleep) matched the timeout exactly and is now capped at 5, but the log
+shows no retry warnings either, so the true wedge point is still unproven.
+Instrumentation shipped: `python3 -u` + `faulthandler.dump_traceback_later(900,
+repeat=True)` in `common.run_orchestrator` — the next wedge prints its own
+thread stacks into the CI log every 15 min. NEXT ACTION: after the next
+scheduled cleanup-loop run (02:23 UTC daily), read the category-orchestrator
+job log, find the dumped stack, fix the named line.
 
 ## 同上 error
 
