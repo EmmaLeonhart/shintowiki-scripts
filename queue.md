@@ -60,6 +60,48 @@ direct_daily_edits.py is the only editor, MAX_EDITS=300 at 30-90s.
 
 ---
 
+## Multilingual label generalization (BFS-driven) — non-central-command session's active work
+
+Goal: generalize labels for Shinto texts/concepts/deities/ranks/provinces across all
+covered languages. Everything lives in `shinto-label-generator/`. Shrines + Buddhist
+temples + Shikinaisha lists are ALREADY covered (algorithmic names) and are excluded
+from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVLOG
+2026-07-04): Shikinaisha-list generator; kami / shrine-rank / province generators
+(`translit_common.py` shared helper); BFS crawler + per-layer analysis.
+
+1. **BFS crawl → depth 5 (resumable).** `shinto-label-generator/bfs/crawl_shinto_bfs.py`,
+   forward-links-only, resumes from `bfs/state.json`; `--max-nodes N` bounds a run.
+   Growth 54→183→4932; level 3 (~5000+) was mid-crawl. A background run may be active
+   THIS session — do NOT start a second crawl while one is writing state.json (two
+   writers corrupt it). When stopped, resume with e.g. `--max-nodes 2000 --max-depth 5`;
+   commit updated `state.json` + new `levels/level_NN.tsv`. Deeper levels drift into
+   non-Shinto geography (LAYER_ANALYSIS.md) → NEEDS-DECISION from Emma on the cutoff
+   (likely depth 3-4); surface level sizes, don't silently push to 5.
+2. **Re-run layer analysis as levels land.** `python bfs/analyze_layers.py` after each
+   new `level_NN.tsv`; refresh `bfs/LAYER_ANALYSIS.md`.
+3. **Property labels (Emma, NEW).** Enumerate every Wikidata property (P-id) used across
+   the crawled corpus items' statements; for each, count which covered languages lack a
+   label. IMPORTANT: property labels are TRANSLATION (e.g. "shrine ranking" → de), not
+   name transliteration — the translit generators do NOT apply. Bounded first step:
+   emit a report of distinct properties + missing-language counts. Then scope a
+   translation approach; do NOT guess-transliterate property names.
+4. **Tests for `translit_common.py`** (offline pytest): `looks_romaji` rejects
+   "Three Pioneer Kami" / accepts "Takamimusubi"; `romaji_source` falls back to a kana
+   `ja` label; `bare_name` per-script dispatch; `zh_map` from kanji; ko phonetic vs hanja.
+5. **Texts/concepts labelling (the thorny target the BFS exists for).** Engishiki text,
+   kanazukai, Ritsuryō funding types, Shinto-as-religion, etc. need real
+   translation/judgment, NOT systematic transliteration. Write a scoping plan before
+   building; likely routes through the remote (translation) routine, not a translit script.
+6. **Broaden kami source.** `Q524158` gave 352; also sweep Shinto-deity subclasses /
+   Japanese-deity classes for fuller coverage, re-run `generate_kami_quickstatements.py`.
+7. **Wire new label files into `docs/index.html`** browse site (kami_labels,
+   shrine_rank_labels, province_labels, shikinaisha_lists).
+8. **Vestigial cleanup (Emma).** `shinto-label-generator/` carries its own
+   `claude.md`/`CLAUDE.md`, `PLAN.md`, `todo.md` — consolidate into the repo or remove;
+   the sub-dir shouldn't hold its own Claude instructions unless genuinely needed.
+
+---
+
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
