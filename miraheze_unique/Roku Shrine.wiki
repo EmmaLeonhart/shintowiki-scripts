@@ -7,7 +7,8 @@
 
 {{translated page|ja|六神社|version=98537844|comment=Imported full ja history}}
 
-{{wikidata link|Q11392494|ja|六神社|check_date=2026-05-25}}
+{{wikidata link|Q11392494|ja|六神社|grok=none|check_date=2026-05-25}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
