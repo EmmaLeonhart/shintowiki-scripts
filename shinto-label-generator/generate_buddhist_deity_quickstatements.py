@@ -19,12 +19,20 @@ import sys
 
 from language_registry import COVERED
 from translit_common import (
-    bare_name, zh_map, hanja_read, clean_name,
+    bare_name, zh_map, hanja_read, clean_name, looks_romaji,
     sparql_qids, fetch_labels, write_qs, ZH_CODES,
 )
+import sanskrit_translit
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CLASS = "Q65122124"
+
+# For a SANSKRIT-named deity: the Sanskrit engine handles these scripts; the true
+# Latin-script langs get the name verbatim; CJK from the kanji; these non-Latin
+# scripts aren't in the Sanskrit module yet, so they're skipped (honest gap).
+SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED           # hi mai mr bn as ru uk el
+NONLATIN_TODO = {"ar", "arz", "fa", "ur", "he", "tok"}
+LATIN = set(COVERED) - SANSKRIT_SCRIPTS - NONLATIN_TODO - set(ZH_CODES) - {"ko"}
 
 
 def _utf8():
@@ -42,36 +50,50 @@ def main():
     print(f"  {len(qids)} deities. Fetching labels...")
     items = fetch_labels(qids)
 
-    lines, with_en, no_en = [], 0, 0
+    def emit_zh_ko(qid, ja, existing):
+        for code, lab in zh_map(ja).items():
+            if code in covered and code not in existing and lab:
+                lines.append((qid, code, lab))
+        if "ko" in covered and "ko" not in existing:
+            ko = hanja_read(ja)
+            if ko:
+                lines.append((qid, "ko", ko))
+
+    lines, jp, skt, no_en = [], 0, 0, 0
     for qid, d in items.items():
         en, ja, existing = d["en"], d["ja"], d["langs"]
-        src = clean_name(en)                 # the established international name
-        if src:
-            with_en += 1
+        src = clean_name(en)
+        if not src:
+            no_en += 1                              # only CJK/ko from kanji are safe
+            emit_zh_ko(qid, ja, existing)
+        elif looks_romaji(src):
+            jp += 1                                 # JP-NAMED -> Japanese engine
             for lang in covered:
                 if lang in existing or lang in ZH_CODES:
                     continue
                 lab = bare_name(lang, src, ja, ko_mode="phonetic")
                 if lab:
                     lines.append((qid, lang, lab))
-            for code, lab in zh_map(ja).items():   # CJK from the kanji
-                if code in covered and code not in existing and lab:
-                    lines.append((qid, code, lab))
-        else:
-            no_en += 1                        # only CJK/ko from kanji are safe
             for code, lab in zh_map(ja).items():
                 if code in covered and code not in existing and lab:
                     lines.append((qid, code, lab))
-            if "ko" in covered and "ko" not in existing:
-                ko = hanja_read(ja)
-                if ko:
-                    lines.append((qid, "ko", ko))
+        else:
+            skt += 1                                # SANSKRIT -> Sanskrit engine
+            for lang in LATIN:                      # true Latin scripts: verbatim
+                if lang in covered and lang not in existing:
+                    lines.append((qid, lang, src))
+            for lang in SANSKRIT_SCRIPTS:           # Devanagari/Bengali/Cyrillic/Greek
+                if lang in covered and lang not in existing:
+                    lab = sanskrit_translit.sanskrit(src, lang)
+                    if lab:
+                        lines.append((qid, lang, lab))
+            emit_zh_ko(qid, ja, existing)           # CJK + ko from kanji
 
     outdir = os.path.join(HERE, "quickstatements")
     os.makedirs(outdir, exist_ok=True)
     outpath = os.path.join(outdir, "buddhist_deity_labels.txt")
     write_qs(outpath, lines)
-    print(f"\n{with_en} with en, {no_en} without. Wrote {len(lines)} labels -> {outpath}")
+    print(f"\nJP-named={jp} Sanskrit={skt} no-en={no_en}. Wrote {len(lines)} labels -> {outpath}")
     for qid, lang, lab in lines:   # spot-check Indra + Varuna across scripts
         if qid in ("Q128335", "Q1001037") and lang in ("la", "ru", "el", "hi"):
             print(f"  {qid} {lang}: {lab}")

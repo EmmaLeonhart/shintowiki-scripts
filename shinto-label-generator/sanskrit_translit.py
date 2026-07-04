@@ -1,0 +1,172 @@
+"""
+Sanskrit transliterator — SEPARATE from the Japanese engine (Emma: the two must
+not share infrastructure; Japanese is mora-based CV, Sanskrit has consonant
+clusters and a native abugida).
+
+Input: a romanized Sanskrit name (IAST-ish or plain ASCII, e.g. "Skanda",
+"Varuna", "Vaiśravaṇa", "Trailokyavijaya"). Output: the name in a target script,
+LETTER-BY-LETTER so clusters survive (Skanda -> Σκάνδα, not "Κανντα").
+
+Scripts: Devanagari (hi/mai; native Sanskrit script), Bengali (bn/as via the
+Devanagari→Bengali offset), Cyrillic (ru/uk), Greek (el). Latin-script languages
+keep the romanized name unchanged, so they don't go through here.
+"""
+
+import re
+import unicodedata
+
+# ---------------------------------------------------------------------------
+# Letter tokenizer: greedy digraph/diacritic match over a normalized name.
+# ---------------------------------------------------------------------------
+
+# Normalize IAST diacritics to plain ASCII digraphs we tokenize on.
+_IAST = {
+    "ā": "a", "ī": "i", "ū": "u", "ṛ": "ri", "ṝ": "ri", "ḷ": "li",
+    "ṃ": "m", "ṁ": "m", "ḥ": "h", "ń": "n", "ṅ": "n", "ñ": "ny",
+    "ṭ": "t", "ḍ": "d", "ṇ": "n", "ś": "sh", "ṣ": "sh", "ḫ": "h",
+}
+
+# Multi-letter clusters recognised as single units (order matters: longest first).
+_UNITS = ["kh", "gh", "ch", "jh", "th", "dh", "ph", "bh", "sh", "ai", "au",
+          "k", "g", "c", "j", "t", "d", "n", "p", "b", "m", "y", "r", "l",
+          "v", "w", "s", "h", "a", "i", "u", "e", "o"]
+_UNIT_RE = re.compile("|".join(_UNITS))
+_VOWELS = {"a", "i", "u", "e", "o", "ai", "au"}
+
+
+def _norm(name):
+    s = unicodedata.normalize("NFC", name or "").lower()
+    s = "".join(_IAST.get(c, c) for c in s)
+    s = re.sub(r"[^a-z ]", "", s)
+    return s
+
+
+def _tokens(word):
+    return _UNIT_RE.findall(word)
+
+
+# ---------------------------------------------------------------------------
+# Devanagari (proper abugida: inherent-a, matras, virama for clusters).
+# ---------------------------------------------------------------------------
+
+_DEVA_CONS = {
+    "k": "क", "kh": "ख", "g": "ग", "gh": "घ", "ch": "छ", "c": "च", "j": "ज",
+    "jh": "झ", "t": "त", "th": "थ", "d": "द", "dh": "ध", "n": "न", "p": "प",
+    "ph": "फ", "b": "ब", "bh": "भ", "m": "म", "y": "य", "r": "र", "l": "ल",
+    "v": "व", "w": "व", "sh": "श", "s": "स", "h": "ह",
+}
+_DEVA_VOWEL_IND = {"a": "अ", "i": "इ", "u": "उ", "e": "ए", "o": "ओ",
+                   "ai": "ऐ", "au": "औ"}
+_DEVA_MATRA = {"a": "", "i": "ि", "u": "ु", "e": "े", "o": "ो",
+               "ai": "ै", "au": "ौ"}
+_VIRAMA = "्"
+
+
+def _devanagari(word):
+    toks = _tokens(word)
+    out = []
+    i = 0
+    while i < len(toks):
+        t = toks[i]
+        if t in _VOWELS:                      # independent vowel
+            out.append(_DEVA_VOWEL_IND[t])
+            i += 1
+        elif t in _DEVA_CONS:
+            out.append(_DEVA_CONS[t])
+            nxt = toks[i + 1] if i + 1 < len(toks) else None
+            if nxt in _VOWELS:                # consonant + vowel -> matra
+                out.append(_DEVA_MATRA[nxt])
+                i += 2
+            else:                             # bare consonant -> virama (cluster/final)
+                out.append(_VIRAMA)
+                i += 1
+        else:
+            i += 1
+    return "".join(out)
+
+
+# Bengali: Devanagari→Bengali codepoint offset (+0x80), same as the JP pipeline's
+# bengalify trick; va→ba (Bengali has no va).
+def _to_bengali(deva):
+    out = []
+    for ch in deva:
+        if ch == "व":
+            out.append("ব")
+        elif "ऀ" <= ch <= "ॿ":
+            out.append(chr(ord(ch) + 0x80))
+        else:
+            out.append(ch)
+    return "".join(out)
+
+
+# ---------------------------------------------------------------------------
+# Cyrillic (scholarly-ish, letter-by-letter; aspirates as digraphs).
+# ---------------------------------------------------------------------------
+
+_CYR = {
+    "kh": "кх", "gh": "гх", "ch": "чх", "jh": "джх", "th": "тх", "dh": "дх",
+    "ph": "пх", "bh": "бх", "sh": "ш",
+    "k": "к", "g": "г", "c": "ч", "j": "дж", "t": "т", "d": "д", "n": "н",
+    "p": "п", "b": "б", "m": "м", "y": "й", "r": "р", "l": "л", "v": "в",
+    "w": "в", "s": "с", "h": "х",
+    "a": "а", "i": "и", "u": "у", "e": "е", "o": "о", "ai": "ай", "au": "ау",
+}
+
+_GRK = {
+    "kh": "χ", "gh": "γχ", "ch": "τσχ", "jh": "τζχ", "th": "θ", "dh": "δ",
+    "ph": "φ", "bh": "μπχ", "sh": "σ",
+    "k": "κ", "g": "γκ", "c": "τσ", "j": "τζ", "t": "τ", "d": "ντ", "n": "ν",
+    "p": "π", "b": "μπ", "m": "μ", "y": "γι", "r": "ρ", "l": "λ", "v": "β",
+    "w": "ου", "s": "σ", "h": "χ",
+    "a": "α", "i": "ι", "u": "ου", "e": "ε", "o": "ο", "ai": "αι", "au": "αου",
+}
+
+
+def _map_word(word, table):
+    return "".join(table.get(t, "") for t in _tokens(word))
+
+
+def _cap(s):
+    return s[:1].upper() + s[1:] if s and s[0].isascii() else s
+
+
+# ---------------------------------------------------------------------------
+# Public API: sanskrit(name, lang) -> label in that language's script, or None.
+# ---------------------------------------------------------------------------
+
+_LANG = {
+    "hi": ("deva", False), "mai": ("deva", False), "mr": ("deva", False),
+    "bn": ("bengali", False), "as": ("bengali", False),
+    "ru": ("cyr", True), "uk": ("cyr", True),
+    "el": ("grk", True),
+}
+
+
+def sanskrit(name, lang):
+    spec = _LANG.get(lang)
+    if not spec:
+        return None                 # not a script this module handles
+    kind, cap = spec
+    words = [w for w in _norm(name).split() if w]
+    if not words:
+        return None
+    rendered = []
+    for w in words:
+        if kind == "deva":
+            r = _devanagari(w)
+        elif kind == "bengali":
+            r = _to_bengali(_devanagari(w))
+        elif kind == "cyr":
+            r = _map_word(w, _CYR)
+        elif kind == "grk":
+            r = _map_word(w, _GRK)
+        else:
+            r = ""
+        if cap:
+            r = _cap(r)
+        if r:
+            rendered.append(r)
+    return " ".join(rendered) or None
+
+
+SUPPORTED = set(_LANG)
