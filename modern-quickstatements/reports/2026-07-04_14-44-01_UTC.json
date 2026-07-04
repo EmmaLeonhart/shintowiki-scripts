@@ -1,0 +1,277 @@
+{
+  "timestamp": "2026-07-04 14:44:01 UTC",
+  "outcome": "failed",
+  "batches": [
+    {
+      "file": "modern_shrine_ranking_qualifiers.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "p4656_jawiki_references.txt",
+      "lines_available": 3,
+      "lines_submitted": 3,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p958_qualifiers.txt",
+      "lines_available": 6,
+      "lines_submitted": 6,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "remove_shikinai_hiteisha.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "remove_shikinaisha.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "engishiki_add_references.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "p11250_miraheze_links.txt",
+      "lines_available": 5225,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "p6262_fandom_links.txt",
+      "lines_available": 12566,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "en_labels.txt",
+      "lines_available": 141,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "kana_en_labels.txt",
+      "lines_available": 424,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "identical_name_en_labels.txt",
+      "lines_available": 2323,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "temple_en_labels.txt",
+      "lines_available": 359,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "temple_identical_name_en_labels.txt",
+      "lines_available": 11392,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "cjk_ja_backfill.txt",
+      "lines_available": 1,
+      "lines_submitted": 1,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "en_labels_sonnet.txt",
+      "lines_available": 125,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "label_proposals_drip.txt",
+      "lines_available": 20,
+      "lines_submitted": 20,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "kana_qualifier_add.txt",
+      "lines_available": 5340,
+      "lines_submitted": 50,
+      "success": false,
+      "message": "API error: {'status': \"Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before\", 'debug': {'format': 'v1', 'temporary': False, 'openpage': 0}}",
+      "attempts": 1,
+      "api_response": {
+        "status": "Problem generating OAuth signature; user 'Immanuelle' needs to have submitted a batch manually at least once before",
+        "debug": {
+          "format": "v1",
+          "temporary": false,
+          "openpage": 0
+        }
+      }
+    },
+    {
+      "file": "kana_redundant_remove.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "migrate_ritsuryo_funding_remove.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    },
+    {
+      "file": "migrate_ritsuryo_funding_underspecified_remove.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": true,
+      "message": "Nothing to submit",
+      "attempts": 0,
+      "api_response": null
+    }
+  ]
+}
