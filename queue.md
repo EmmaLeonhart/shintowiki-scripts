@@ -82,14 +82,17 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    props); (b) property labels are TRANSLATION not transliteration → Emma-scoped decision
    on how to fill them (do NOT guess-transliterate). Extending the sweep to layer 2 is a
    network follow-up (blocked while the crawl holds the Wikidata budget).
-4. **Texts/concepts — RECONCILED with the roadmap (`docs/mass-label-expansion-plan.md` §5).**
-   Emma's roadmap says missing labels use SYSTEMATIC transliteration ("systematic
-   guesswork"), NOT bespoke translation — so no translation pipeline is wanted. The main
-   text (Engishiki Jinmyōchō) is already labelled via the shikinaisha generator; the
-   remaining Shinto terms (kanazukai, Ritsuryō funding types) are tiny sets that can fold
-   into a general bare-term transliteration pass if desired. Off-domain
-   encyclopedia/database/language items are skipped. No further action unless Emma wants
-   the small term sweep.
+4. **TEXTS DONE across the full 287 (hub session, Emma's directive: "most
+   texts are romaji — literally transliterate").** UNIFIED pipeline in
+   `generate_text_quickstatements.py` (the two sessions' independent text
+   labellers merged under the bat-wired filename): 2,611 labels / 197 texts —
+   Latin verbatim titles (macrons kept), engine scripts via bare_name, zh
+   family from the kanji (fires even for Sinitic glossed titles like 清史稿),
+   ko = sino-Korean hanja FIRST (classical-text convention; deliberate
+   override of the phonetic-only pass), phonetic fallback. Non-destructive,
+   gap-aware. **Residue: 90 unroutable** (no romaji/kana/kanji) in
+   `bfs/text_labels_residue.md` — translation problem, folds into item 8's
+   pipeline. 5 routing tests green.
 5. **Humans DONE; court ranks PARTIAL (CJK only — need lexical translation).** Japanese
    people (`generate_human_quickstatements.py`, 27 romaji-named figures →1050 labels,
    `looks_romaji`-guarded) shipped. Court ranks (P14005, 16 values): CJK+ko shipped and

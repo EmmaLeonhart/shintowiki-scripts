@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 (night) — TEXTS unified + labelled across the language set (hub session)
+
+Emma's directive: texts are the hub session's lane ("most of them just are
+Romaji and can be literally transliterated"). Two sessions independently
+built text labellers within the hour — merged into ONE pipeline under the
+bat-wired filename `generate_text_quickstatements.py` (full 287-item
+texts.tsv scope; the 13-text classical pass it replaces is a strict subset):
+
+- Routing per missing language: Latin targets take the title VERBATIM
+  (macrons kept); engine scripts via translit_common.bare_name; zh family
+  from the JAPANESE kanji (fires even when the en title is an English gloss —
+  清史稿 gets the zh set with no romaji); Korean by sino-Korean hanja reading
+  first (日本書紀→일본서기 convention; deliberate override of the earlier
+  phonetic choice), phonetic fallback.
+- **2,611 labels for 197 texts** → quickstatements/text_labels.txt (daily
+  label drip picks it up via the existing glob). Non-destructive, gap-aware
+  (only languages with no label).
+- **90 unroutable → bfs/text_labels_residue.md** (Braille standards,
+  empty-label encyclopedia articles, Wikimedia infra — no romaji/kana/kanji);
+  explicitly a translation problem for the drift pipeline (queue item 8).
+- Suite 132 green in shinto-label-generator (5 new routing tests).
+
 ## 2026-07-04 — Court ranks + humans shipped; Buddhist deities shelved (analysis needed)
 
 - Court ranks (P14005 values, 16→128, CJK+ko) shipped.
