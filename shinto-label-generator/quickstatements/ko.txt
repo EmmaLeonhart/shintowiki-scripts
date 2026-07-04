@@ -67080,6 +67080,8 @@ Q107271207	Lko	"정복사"
 Q107283157	Lko	"송림사"
 # Source: JA "浄楽寺" (hanja reading)
 Q107311423	Lko	"정악사"
+# Source: JA "春徳寺" (hanja reading)
+Q107322760	Lko	"춘덕사"
 # Source: JA "高勝寺" (hanja reading)
 Q107333038	Lko	"고승사"
 # Source: JA "光雲寺" (hanja reading)
@@ -69366,6 +69368,8 @@ Q11567315	Lko	"무동사"
 Q11567418	Lko	"무극사송본시"
 # Source: JA "無量光寺" (hanja reading)
 Q11567535	Lko	"무량광사"
+# Source: JA "無量寺 (横浜市南区)" (hanja reading)
+Q11567539	Lko	"무량사횡빈시남구"
 # Source: JA "無量寺" (hanja reading)
 Q11567541	Lko	"무량사"
 # Source: JA "無量寺 (松本市)" (hanja reading)
@@ -106978,6 +106982,8 @@ Q138527452	Lko	"송미신사"
 Q138565344	Lko	"종흥사"
 # Source: JA "東光寺 (横浜市神奈川区)" (hanja reading)
 Q138565377	Lko	"동광사횡빈시신내천구"
+# Source: JA "蓮法寺" (hanja reading)
+Q138565384	Lko	"연법사"
 # Source: JA "長福寺" (hanja reading)
 Q138569873	Lko	"장복사"
 # Source: JA "壽社" (hanja reading)
@@ -107190,6 +107196,14 @@ Q140387383	Lko	"대성원횡빈시서구"
 Q140391142	Lko	"부념사횡빈시항북구"
 # Source: JA "長延寺 (横浜市)" (hanja reading)
 Q140391206	Lko	"장연사횡빈시"
+# Source: JA "遍照寺 (横浜市)" (hanja reading)
+Q140391298	Lko	"편조사횡빈시"
+# Source: JA "良忠寺" (hanja reading)
+Q140391437	Lko	"양충사"
+# Source: JA "林光寺 (横浜市西区)" (hanja reading)
+Q140391480	Lko	"임광사횡빈시서구"
+# Source: JA "瑞雲寺" (hanja reading)
+Q140428527	Lko	"서운사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
