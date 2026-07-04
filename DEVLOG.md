@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — BFS-driven label generalization: Shikinaisha lists, kami, ranks, provinces + Wikidata crawler
+
+New sub-effort in `shinto-label-generator/` to generalize labels beyond shrines
+across the whole covered language set. Shipped this session:
+
+- **Shikinaisha-list generator** (`generate_shikinaisha_list_quickstatements.py`):
+  Engishiki Jinmyōchō (Q11064932) + its 69 per-province `P527` "List of
+  Shikinaisha" items → 3982 labels / 58 langs (`quickstatements/shikinaisha_lists.txt`).
+  Kind classified off the Japanese label (the four provinces whose EN label lacks
+  " Province" — Awa×2/Iki/Tsushima — were the real bug); CJK from kanji.
+- **BFS crawler** (`bfs/crawl_shinto_bfs.py`): layered, resumable, throttled,
+  forward-links-only (backlinks dropped per Emma — they explode into all of
+  Japanese geography). Seeded from 54 shrine-ranking concepts. Levels 0/1/2 =
+  54/183/4932; level 3 mid-crawl. State + all level files tracked in-repo
+  (`bfs/state.json`, `bfs/levels/`) so it resumes across sessions.
+- **Per-layer analysis** (`bfs/analyze_layers.py` → `LAYER_ANALYSIS.md`): shrine
+  share climbs 0→12→63%; the non-shrine remainder is increasingly off-domain
+  drift. New label-worthy buckets: shrine ranks, kami, provinces.
+- **Three name/term generators** on a shared `translit_common.py` (romaji-source
+  guard so English glosses don't get phonetically mangled; CJK always from kanji):
+  kami (352→18651), shrine ranks (47→2267), provinces (83→3053, "{X} Province"
+  frame). All non-destructive; wired into the master batch (8 steps).
+
+Queue section + 4 local crons (work-loop :03, auto-flush :15, status-report :42,
+daily 12:20 barrel) set up to continue autonomously. Texts/concepts + property
+labels (translation, not transliteration) are the remaining thorny targets — queued.
+
 ## 2026-07-04 — Address citation backfill shipped (同上 rung 3)
 
 The non-同上 half of the import bug: rows that carried a REAL address are
