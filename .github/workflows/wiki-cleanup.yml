@@ -334,6 +334,12 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: generate_en_labels_quickstatements" \
             python3 shinto_miraheze/generate_en_labels_quickstatements.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
+      - name: "Wikidata: generate_category_label_prefix_fixes"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: generate_category_label_prefix_fixes" \
+            python3 shinto_miraheze/generate_category_label_prefix_fixes.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
+
       # tag_pages_without_wikidata — moved ownership to mainspace-orchestrator.
       # Per-page tagging is strictly the orchestrator's job; keeping a parallel
       # bulk-scan here double-edits and races with the orchestrator.

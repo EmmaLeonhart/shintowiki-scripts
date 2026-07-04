@@ -216,12 +216,13 @@ SELECT ?item ?p11250 ?label WHERE {{
 
 
 def title_to_label(title: str) -> str:
-    """Strip a leading namespace prefix to get a Wikidata-style en label.
-    "Category:Shrines in Tokyo" -> "Shrines in Tokyo"; mainspace passes through.
-    Only namespaces we actually emit P11250 for are recognized — keeps
-    mainspace titles that happen to contain ':' from being mangled."""
-    if title.startswith("Category:"):
-        return title[len("Category:"):]
+    """Return the Wikidata-style en label for a local page title.
+
+    The FULL title including the namespace prefix: Wikidata convention
+    labels category items "Category:Shrines in Tokyo". Stripping the
+    prefix here was a year-old bug (queue.md 2026-07-04) — see
+    generate_category_label_prefix_fixes.py for the backfill of items
+    already damaged by it."""
     return title
 
 

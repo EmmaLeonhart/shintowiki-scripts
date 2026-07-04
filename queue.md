@@ -6,24 +6,25 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-## Stuff to do now
+## Verify the category-prefix fix after the next cleanup-loop run
 
-First thing is first, there's a fuck tonne of crud in here. 
+The fix shipped 2026-07-04 (three legs, per Emma's spec): (1) both Len-emitting
+generators (`generate_en_labels_quickstatements.py`, `generate_p11250_quickstatements.py`)
+now keep the `Category:` prefix — the year-old strip was the bug; (2) new
+`generate_category_label_prefix_fixes.py` renders corrective Len lines for
+already-damaged items to [[QuickStatements/Category label fixes]], consumed by
+`fetch_category_label_fixes_from_wiki.py` → `category_label_fixes.txt` →
+`direct_daily_edits.py` (wbsetlabel overwrites; deliberately slow drip, multi-year
+is fine); (3) queued Category: lines on [[QuickStatements/En labels]] are
+auto-repaired to full titles by the generator's new repair pass each run.
+After the next cleanup-loop + daily-edits cycle: confirm the fixes page populates,
+the drip applies prefixed labels, and no bare category labels are re-emitted.
 
-Like a lot of it, so we should remove the crud. After we've removed the crud from the queue, then we can work on the one error that I am seeing, which is that the labels of categories, the English, when they're being applied as English labels, we do not have the category prefix on them. That makes it pretty bad. That makes it pretty bad. That makes it so that the categories really deviate from what they're supposed to be like. 
+## Verify the pipeline ran today (Emma: "no run today"?)
 
-
-So my thought here is pretty simple. We are going to have to fix up so that:
-1. This error doesn't happen again, so the pipeline for categories needs to be changed.
-2. We need to have something set up, a separate task that makes Wikidata Quick Statements that go into the thing. For all of the categories that have had the error put onto them through this, it is going to create saved edit things that change the title to have the category prefix.
-
-And finally, because I think that we'd like to locally store things or something like that, I don't really remember the full details of how this thing works. We're going to change all of the queued up edits of the category relay ones to have the category prefix for the English language label. 
-
-I think the monthly verification sweep is something that is still scheduled. Now I don't know why it's a monthly verification sweep, but I'm going to say we do this stuff once and see if it has been properly fixed. And once you've cleared out the entire queue, we'll leave this thing in again if it turns out that the remaining (I think it was seven issues or something like that) that we had are not resolved. I'm pretty sure we had seven issues with the wiki that we set up stuff for and we thought were resolved but weren't sure about it. 
-
-It also appears that we may have had our pipeline break again, but I'm not really sure, just cause there was no run today. I'd like you to do a bit of a verification on that. 
-
-I also came across a relatively major error on wikidata that I introduced almost a full year ago at this point. I want to explain it, and I want you to do your best to set up a pipeline to stop it. I am going to make the pipeline into the next thing. 
+Check the scheduled workflows' latest runs (cleanup-loop 02:23 UTC daily,
+generate-quickstatements, direct-daily-edits). If a run is missing/failed,
+diagnose and fix.
 
 ## 同上 error
 

@@ -188,11 +188,14 @@ SELECT ?item ?label WHERE {{
 
 
 def title_to_label(title: str) -> str:
-    """Strip a leading namespace prefix to get a Wikidata-style en label.
-    "Category:Shrines in Tokyo" -> "Shrines in Tokyo"; mainspace passes
-    through. Only namespaces we actually emit Len for are recognized."""
-    if title.startswith("Category:"):
-        return title[len("Category:"):]
+    """Return the Wikidata-style en label for a local page title.
+
+    The FULL title including the namespace prefix: Wikidata convention
+    labels category items "Category:Shrines in Tokyo", not "Shrines in
+    Tokyo". Stripping the prefix here was a year-old bug (queue.md
+    2026-07-04) — bare labels made category items indistinguishable from
+    their subject topics. Corrective backfill for already-damaged items:
+    generate_category_label_prefix_fixes.py."""
     return title
 
 
@@ -382,8 +385,21 @@ def main():
         preserved[qid] = label
 
     merged = {**preserved, **new_qs}
+
+    # Repair queued category lines (2026-07-04): lines emitted before the
+    # prefix fix carry bare labels ("Shrines in Tokyo"). Where we still
+    # know the source title and it is a Category: page, force the queued
+    # label back to the full title. Idempotent — correct lines pass through.
+    repaired = 0
+    for qid, label in list(merged.items()):
+        title = qid_to_title.get(qid)
+        if title and title.startswith("Category:") and label != title:
+            merged[qid] = title
+            repaired += 1
+
     print(f"  Preserved existing lines:    {len(preserved)}")
     print(f"  Removed (now has en label):  {len(removed)}")
+    print(f"  Repaired queued Category: lines: {repaired}")
     print(f"  Final en-label line count:   {len(merged)}")
 
     qs_lines = [f'{qid}|Len|"{qs_escape(merged[qid])}"' for qid in sorted(merged)]

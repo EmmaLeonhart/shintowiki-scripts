@@ -38,6 +38,10 @@ jobs:
         working-directory: modern-quickstatements
         run: python fetch_en_labels_from_wiki.py
 
+      - name: Fetch category-label-prefix fixes from wiki
+        working-directory: modern-quickstatements
+        run: python fetch_category_label_fixes_from_wiki.py
+
       - name: Generate shrine ranking QS
         working-directory: modern-quickstatements
         continue-on-error: true

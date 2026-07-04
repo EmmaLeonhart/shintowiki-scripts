@@ -43,6 +43,7 @@ ATOMIC_FILES = [
     "p6262_fandom_links.txt",
     "en_labels.txt",
     "en_labels_sonnet.txt",
+    "category_label_fixes.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
     "kana_redundant_remove.txt",
