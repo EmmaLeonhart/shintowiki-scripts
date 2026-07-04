@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — CI-gate audit of the 07-04 run + 同上 manual rung closed (Emma) + Miraheze 503 outage
+
+Hub work-loop tick, barreling this repo's queue.
+
+- **Pushed Emma's stranded local commit** f27c354f ("q"): her hand-resolution of
+  the 3 同上 items the resolver refused (Q135040786 同社坐韓国伊大弖神社 →
+  phase-2 removal only, correct claim already present; Q135070085 剣神社 →
+  八雲町日吉10; Q135070108 佐久多神社 → 宍道町上来待551) via `MANUAL_OVERRIDES`
+  in `resolve_doujou_addresses.py`. `unmatched` is now empty — 51/51 Izumo items
+  resolved. Queue rung deleted.
+- **07-04 cleanup-loop run audited** (28696944857): category-orchestrator wedged
+  160 min with zero output *again*, but this run proves nothing about the
+  watchdog — its workflow ref (pinned 05:56 UTC) and checkout dd8174b1 both
+  predate the instrumentation commit 63926a81 (pushed 09:18 UTC). Verified: no
+  faulthandler in that checkout's `common.py`, no `-u` in its step. Same for the
+  category-prefix fix f88f3a9c (09:03 UTC) vs the generate job (done 06:20 UTC).
+  **Both queue verifications therefore move to the 2026-07-05 ~06:00 UTC run**,
+  the first carrying both. Banked inference: the watchdog is armed at
+  `run_orchestrator`'s first line and writes to fd 2, so if tomorrow's run also
+  prints zero dumps, the wedge is at import time / before entry.
+- **Miraheze outage**: shinto.miraheze.org has served 503s since ~11:30 UTC —
+  that (not code) is why Git Synced Sync + Independent Pages Sync fail from
+  11:48 UTC on. Probed directly at ~14:45 UTC: still 503. Self-heals on next
+  scheduled runs once the wiki returns; no action.
+
 ## 2026-06-23 — Temple multilingual framework: transliterate + a "temple" word, every language (Emma's rule)
 
 Established the per-language temple naming framework (Emma handed over `temple_query.csv`, the temple equivalent of `query.csv`).

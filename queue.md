@@ -19,6 +19,9 @@ is fine); (3) queued Category: lines on [[QuickStatements/En labels]] are
 auto-repaired to full titles by the generator's new repair pass each run.
 After the next cleanup-loop + daily-edits cycle: confirm the fixes page populates,
 the drip applies prefixed labels, and no bare category labels are re-emitted.
+(BLOCKED-ON-EXTERNAL until the 2026-07-05 ~06:00 UTC run: the 07-04 run's
+generate job finished 06:20 UTC, before the fix landed at 09:03 UTC (f88f3a9c) —
+tonight's run is the first that carries it.)
 
 ## Read the category-orchestrator stack dump after tonight's run (pipeline break, diagnosed to instrumentation stage)
 
@@ -34,8 +37,17 @@ shows no retry warnings either, so the true wedge point is still unproven.
 Instrumentation shipped: `python3 -u` + `faulthandler.dump_traceback_later(900,
 repeat=True)` in `common.run_orchestrator` — the next wedge prints its own
 thread stacks into the CI log every 15 min. NEXT ACTION: after the next
-scheduled cleanup-loop run (02:23 UTC daily), read the category-orchestrator
+scheduled cleanup-loop run (~06:00 UTC daily), read the category-orchestrator
 job log, find the dumped stack, fix the named line.
+(2026-07-04 run checked: it wedged 160 min with zero output AGAIN, but that run
+predated the instrumentation — its workflow ref pinned at 05:56 UTC and its
+checkout dd8174b1 both exclude 63926a81 (pushed 09:18 UTC). Verified: no
+faulthandler in that checkout's common.py, no `-u` in its workflow step. So the
+zero-dump run is expected, not a watchdog failure. First instrumented run =
+2026-07-05 ~06:00 UTC; read that log. One inference already banked: IF tomorrow
+also dumps nothing, the wedge is before `run_orchestrator` entry — i.e. import
+time or argparse/env, since the watchdog is armed at the function's first line
+and writes straight to fd 2.)
 
 ## 同上 error — pipeline SHIPPED for Izumo (48/51); remaining rungs
 
@@ -51,18 +63,16 @@ add correct address with S143=Q177837 + S4656=list-article URL; phase 2: remove
 sampling); `direct_daily_edits.py` gained monolingual-text (`ja:"…"`) support.
 Wired into generate-quickstatements.yml. Slow multi-year drip is by design.
 
-Remaining rungs:
-1. **3 manual items** the resolver refuses to guess (kanji-variant/cross-district
-   ambiguity): Q135040786 坐韓国伊大弖神社, Q135070085 剣神社, Q135070108
-   佐久多神社. Resolve by hand or LLM with the district tables open.
-2. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
+Remaining rungs (rung "3 manual items" DONE 2026-07-04 by Emma f27c354f —
+MANUAL_OVERRIDES added, unmatched now empty; see devlog):
+1. **Generalize beyond 出雲国** if other provinces' imports carry 同上 (none
    found in the current 51, all Izumo — re-check with the SPARQL in
    resolve_doujou_addresses.py after the drip converges).
-3. **Citation backfill for non-同上 imported addresses**: same reference pair
+2. **Citation backfill for non-同上 imported addresses**: same reference pair
    (S143 jawiki + S4656 list URL) for Shikinaisha P6375 claims that are
    unreferenced but correct. Reuse the resolver's row-matching; emit through the
    same drip. Bounded: query first, gate on row-address == claim-address.
-4. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
+3. **Shinto-wiki list pages**: include the Japanese addresses in the periodic
    regeneration of the List-of-Shikinaisha pages, regenerating ~daily (Emma).
    Investigate which generator owns those pages (site/generate_pages.py?) and
    whether they regenerate at all; wire addresses in from the same district
