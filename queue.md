@@ -6,6 +6,18 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
+## Newly added stuff
+
+If you are the session that is not central command, can you please add all the stuff that you're still working on into the queue so that it's clear what you're doing and it can be easily restarted? 
+
+Remove some of the vestigial stuff from the Shinto label generator directory. It does not really need its own Claude.md and things like that, and these things should probably be either moved into this or moved into the larger repository or stuff like that. They're not really that significant. It's weird they're there like this. 
+
+And yeah, our mass label import stuff is things we are doing for the purposes of trying to generalise a lot of the important texts and concepts and deities and things like that across many languages. This is something that I presume you have enough context for, but you might not, and this is worthy. 
+
+Also, because there is a 6:00 UTC, when is that? When is that? Did it actually happen? I'm pretty sure that has happened already. If it hasn't happened already, if it has happened already, there should have been a cron job or something for it. Let's just probably set up all of those things to do a cron job at 6:00 PM. 
+
+Although I'm also really weird because I'm also confused, because some of the queue data suggests you might have already done it. 
+
 ## Verify the category-prefix fix (gate: tonight's ~06:00 UTC cleanup-loop run — first to carry f88f3a9c)
 
 After the run + daily-edits cycle: [[QuickStatements/Category label fixes]]
