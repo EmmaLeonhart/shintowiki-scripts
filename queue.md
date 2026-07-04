@@ -90,12 +90,30 @@ from new labelling (but NOT pruned from the BFS graph). Shipped so far (see DEVL
    into a general bare-term transliteration pass if desired. Off-domain
    encyclopedia/database/language items are skipped. No further action unless Emma wants
    the small term sweep.
-5. **Broaden deity + rank coverage to the full roadmap (§2–§3).** Currently kami =
-   `Q524158` only and ranks = shrine rank `Q10444029` only. Roadmap also requires:
-   **Japanese court ranks** (P14005 valid values), **Buddhist deities**, and the
-   P13723-valid-value ranks. Same bare-name transliteration (`translit_common`), just
-   different source classes / property-value sweeps; re-run the generators. NETWORK —
-   run when the crawl is idle or `--max-depth`-capped so it doesn't 429 the crawl.
+5. **Humans DONE; court ranks PARTIAL (CJK only — need lexical translation).** Japanese
+   people (`generate_human_quickstatements.py`, 27 romaji-named figures →1050 labels,
+   `looks_romaji`-guarded) shipped. Court ranks (P14005, 16 values): CJK+ko shipped and
+   correct (they share the kanji 正一位 etc.), BUT the en labels are LEXICAL
+   ("Junior/Senior Nth Rank") → the ~50 non-CJK langs need lexical TRANSLATION, not
+   transliteration (compose from translated Junior/Senior + ordinal + Rank). NOT done.
+6. **Buddhist deities — SHELVED, needs an ANALYSIS task (Emma).** The bare-name engine
+   transliterates the JAPANESE reading, but Buddhist deity names are Sanskrit-derived
+   with established forms per language (Indra≠"indora", Avalokiteśvara≠Kannon-reading).
+   Generator gated behind `--buddhist` (off); bad output removed. NEXT: comprehensive
+   analysis of how each Buddhist deity's name is rendered across the covered languages;
+   only ones whose English name IS Japanese-derived can use the engine. Systematic
+   *translation*, not transliteration.
+7. **Misc list must use subclass-of (P279), not only instance-of (P31).** BUG:
+   `list_miscellaneous.py`/`categorize_miscellaneous.py` dropped items that are classes
+   (only P279, no P31) via the `if types[q]` guard — Shinto concept-classes got thrown
+   out. Fix: include P279 in the type signal + easy-root exclusion; rebuild
+   `miscellaneous.tsv` + `miscellaneous_categorized.md`.
+8. **Drift items are wanted too (Emma) — need a TRANSLATION pipeline.** The "drift"
+   (encyclopedia articles, concepts, etc.) is NOT to be discarded — build a proper
+   lexical-TRANSLATION pipeline so they get labels too (this is the recurring theme:
+   descriptive things translate, only proper names transliterate). `bilateral relation`
+   (76) = "X–Japan relations" articles, pure drift from the Japan node — Emma skeptical;
+   lowest priority / probably skip.
 
 ---
 

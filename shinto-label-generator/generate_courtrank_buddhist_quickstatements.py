@@ -14,6 +14,7 @@ quickstatements/buddhist_deity_labels.txt
 
 import os
 import sys
+import argparse
 
 from language_registry import COVERED
 from translit_common import (
@@ -71,6 +72,15 @@ def gen(qids, ko_mode, outname, covered):
 
 def main():
     _utf8()
+    ap = argparse.ArgumentParser()
+    # Buddhist deities are OFF by default: their names are Sanskrit-origin with
+    # established international forms (Indra, Avalokiteśvara, Vairocana), but the
+    # bare-name engine transliterates the JAPANESE reading — e.g. Indra (Q128335)
+    # -> "indora" in Latin, "इनदोर" in Hindi. That's wrong. They need an
+    # international/Sanskrit-name source before this can emit non-CJK labels.
+    ap.add_argument("--buddhist", action="store_true",
+                    help="ALSO emit Buddhist-deity labels (BROKEN for non-CJK — JP reading of Sanskrit names)")
+    args = ap.parse_args()
     covered = set(COVERED)
 
     print("Court ranks (values of P14005)...")
@@ -78,14 +88,15 @@ def main():
     print(f"  {len(ranks)} court-rank values.")
     gen(ranks, "hanja", "courtrank_labels.txt", covered)
 
-    print("\nBuddhist deities...")
-    cls = resolve_class("Buddhist deity")
-    if cls:
-        deities = sparql_qids(f"?item wdt:P31/wdt:P279* wd:{cls} .")
-        print(f"  {len(deities)} Buddhist-deity items (via {cls}).")
-        gen(deities, "phonetic", "buddhist_deity_labels.txt", covered)
-    else:
-        print("  could not resolve a Buddhist-deity class; skipped.")
+    if args.buddhist:
+        print("\nBuddhist deities (WARNING: non-CJK labels use the JP reading, not the real name)...")
+        cls = resolve_class("Buddhist deity")
+        if cls:
+            deities = sparql_qids(f"?item wdt:P31/wdt:P279* wd:{cls} .")
+            print(f"  {len(deities)} Buddhist-deity items (via {cls}).")
+            gen(deities, "phonetic", "buddhist_deity_labels.txt", covered)
+        else:
+            print("  could not resolve a Buddhist-deity class; skipped.")
 
 
 if __name__ == "__main__":

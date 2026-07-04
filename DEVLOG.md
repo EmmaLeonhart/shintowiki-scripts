@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Court ranks + humans shipped; Buddhist deities shelved (analysis needed)
+
+- Court ranks (P14005 values, 16→128, CJK+ko) shipped.
+- Humans: `generate_human_quickstatements.py` translates the 27 romaji-named Japanese
+  figures in the misc bucket (Sugawara no Michizane, the Fujiwara, emperors) → 1050
+  labels/60 langs; `looks_romaji` guard drops foreign people (Jimmy Wales) + junk
+  (female/male/language items mis-typed as human).
+- Buddhist deities SHELVED: bare-name engine gives the JP reading of Sanskrit names
+  (Indra→"indora"). Generator gated behind `--buddhist`; bad output deleted. Needs an
+  analysis task on cross-language name forms (Emma).
+- KNOWN BUG (queued): the misc list used only P31 (instance-of), dropping class-items
+  that use P279 (subclass-of) — to be rebuilt with subclasses included.
+
 ## 2026-07-04 (late) — QS path fully retired + the orphaned-files bug it exposed
 
 - **submit_daily_batch.py no longer calls the QuickStatements API** (retired;
