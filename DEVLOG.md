@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 (evening) — Sweep made multi-day-safe; label-generator subtree de-vestigialized (Emma queue items)
+
+- **Full province sweep post-mortem:** the dispatch died at MY 170-min job
+  timeout at province ~62/68 (not a code failure — 62 pages regenerated live,
+  so the Address column is on nearly every list page already), and its
+  runner-local progress evaporated. Fixed (69a0745c): progress file anchored
+  in shinto_miraheze/ and committed by the workflow after every run
+  (if: always()), cleared by the script when a sweep completes the full page
+  list; step timeout 340 / job 355 (under the 6h hosted max); concurrency
+  group so dispatch + schedule queue instead of overlapping. Note: the new
+  18:37 UTC schedule did not fire on day one — watch tomorrow.
+- **Vestigial cleanup per Emma's queue note:** subtree claude.md deleted
+  (still-true architecture notes folded into root CLAUDE.md § the
+  label-generator sub-project); PLAN.md → docs/mass-label-expansion-plan.md
+  (it's the live roadmap the BFS thread executes); subtree todo.md's live
+  items merged into root todo.md § Label-generator horizons; deleted:
+  Japanese Tokenizer Python.md (origin chat log; technique lives in
+  tokiponizer.py), !runClaude.bat, clear.bat,
+  redownload_indonesian_without_tok.bat, the inert subtree workflow dir,
+  .claude/ lock. Kept: README.md, !regenerateQuickStatements.bat (live
+  local runner), shrines_tokiponized.csv (tracked data).
+- Emma's 12:20 and 6:00 PM local crons created in the hub session.
+
 ## 2026-07-04 — BFS-driven label generalization: Shikinaisha lists, kami, ranks, provinces + Wikidata crawler
 
 New sub-effort in `shinto-label-generator/` to generalize labels beyond shrines

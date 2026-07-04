@@ -7,6 +7,24 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 - [ ] **July 2026 — audit terminating cleanup scripts.** Confirm these are inert (state covers every eligible page → no edits), then remove from `wiki-cleanup.yml` + delete: `reimport_from_enwiki.py`, `migrate_talk_pages.py`, `normalize_category_pages.py` (Sun), `remove_legacy_cat_templates.py` (monthly). Overlaps with the legacy-script audit below.
 
 
+## Label-generator horizons (merged 2026-07-04 from the subtree's deleted todo.md)
+
+> Long-term goal: every Shinto shrine, temple, deity, and related entity on
+> Wikidata labeled in all supported languages (reference: Q687168 with every
+> language column filled). Formal expansion roadmap:
+> [`docs/mass-label-expansion-plan.md`](docs/mass-label-expansion-plan.md);
+> the active BFS-driven work is in `queue.md`.
+
+- [ ] **EN/FR/ID gap regularization:** some shrines have labels in one or two
+  of English/French/Indonesian but not all three (old technical failures).
+  Analyze the gaps, then a pipeline to fill missing ones where the others exist.
+- [ ] **QuickStatements provenance comments:** annotate output lines with the
+  source label they derive from (id-label for most languages, ja kanji for zh,
+  reading-vs-hanja for ko).
+- [ ] **Long-tail language expansion:** `python language_registry.py` prints
+  the uncovered languages by label count; th is the biggest (needs a real Thai
+  transliterator — pre-posed vowel signs).
+
 ## Repo / script tasks
 
 - **Full program audit:** [`docs/program_audit_2026-06.md`](docs/program_audit_2026-06.md) (2026-06-05) — the single read-through of the whole machine: CI invocation graph, orchestrators+ops, legacy CI scripts, the Wikidata QS path, the sync/cloud-queue loop, known kludges, in-flight migrations, keep/fix/retire verdicts.

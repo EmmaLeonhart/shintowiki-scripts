@@ -96,6 +96,25 @@ repo root:
 * **If you're unsure where something belongs, ask** — do not default to the
   root.
 
+### `shinto-label-generator/` (the multilingual label sub-project)
+
+Folded here 2026-07-04 from the subtree's own `claude.md` (deleted — a sub-dir
+doesn't carry its own Claude instructions). Generates multi-language labels for
+shrines/temples (and, via the BFS expansion, texts/concepts/deities — roadmap:
+`docs/mass-label-expansion-plan.md`). **`language_registry.py` is the single
+source of truth for which language has which generator/method.** Pipelines:
+`generate_multilang_quickstatements.py` (all transliteration-based languages,
+`ALL_LANGS`), `generate_chinese_quickstatements.py` (kana→man'yōgana + OpenCC;
+zh family + gan/zh-mo), `generate_korean_quickstatements.py` (koreanize for
+Japan, `hanja` sino-Korean elsewhere), `fetch_shrines_tokiponize.py` (Toki
+Pona), `generate_indonesian_proposals.py` (the id-label seed for
+Japanese-only shrines). Outputs land in `quickstatements/<lang>.txt`, browsed
+via `docs/index.html` (GitHub Pages) and drip-fed to Wikidata by
+`select_label_proposals.py`. CI: `label-generator-regenerate.yml` (root
+workflows only — the subtree's own workflow dir was inert and is deleted);
+tests in `shinto-label-generator/tests/`, collected by root `ci.yml`.
+Local full rebuild: `!regenerateQuickStatements.bat`.
+
 ## Runtime environment
 
 * **Wiki bot scripts run on GitHub Actions**, not locally. Auth is
