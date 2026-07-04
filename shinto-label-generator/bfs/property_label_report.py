@@ -3,8 +3,11 @@ Property-label coverage report (queue item 3, bounded first step).
 
 Enumerates the Wikidata properties used on the Shinto-CORE items (BFS levels 0-1
 — the ranks / Engishiki / list concepts, where the meaningful Shinto properties
-live) UNION the roadmap-named properties, then reports, per property, how many of
-the covered languages (language_registry.COVERED) lack a label.
+live) as MAIN statement values (wdt:), QUALIFIERS (pq:), AND references (pr:),
+UNION the roadmap-named properties, then reports, per property, how many of the
+covered languages (language_registry.COVERED) lack a label. Qualifiers are
+included deliberately: Shinto properties are heavily qualified, so a large share
+of the properties that need labels appear only as qualifiers.
 
 This is REPORT-ONLY reconnaissance — it does NOT emit any labels. Property labels
 are TRANSLATION, not transliteration (per queue item 3), so the actual filling is
@@ -93,18 +96,37 @@ def read_core_qids():
     return qids
 
 
+_PID_TAIL = re.compile(r"/(P\d+)$")
+
+
 def enumerate_properties(qids):
+    """Distinct P-ids used on the items as MAIN statement values (wdt:),
+    QUALIFIERS (pq:), AND references (pr:) — a property needs a label wherever
+    it appears, not just on truthy main statements."""
     values = " ".join(f"wd:{q}" for q in qids)
-    rows = _sparql(f"""SELECT DISTINCT ?p WHERE {{
+    rows = _sparql(f"""
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    SELECT DISTINCT ?p WHERE {{
       VALUES ?item {{ {values} }}
-      ?item ?p ?v .
-      FILTER(STRSTARTS(STR(?p), "http://www.wikidata.org/prop/direct/"))
+      {{
+        ?item ?p ?v .
+        FILTER(STRSTARTS(STR(?p), "http://www.wikidata.org/prop/direct/"))
+      }} UNION {{
+        ?item ?ps ?st .
+        ?st ?p ?qv .
+        FILTER(STRSTARTS(STR(?p), "http://www.wikidata.org/prop/qualifier/"))
+      }} UNION {{
+        ?item ?ps ?st .
+        ?st prov:wasDerivedFrom ?ref .
+        ?ref ?p ?rv .
+        FILTER(STRSTARTS(STR(?p), "http://www.wikidata.org/prop/reference/"))
+      }}
     }}""")
     props = set()
     for b in rows:
-        pid = b["p"]["value"].rsplit("/", 1)[1]
-        if re.match(r"^P\d+$", pid):
-            props.add(pid)
+        m = _PID_TAIL.search(b["p"]["value"])
+        if m:
+            props.add(m.group(1))
     return props
 
 
@@ -146,9 +168,11 @@ def main():
     lines = [
         "# Property-label coverage (queue item 3, bounded first step)",
         "",
-        f"Properties used on the Shinto-core items (BFS levels 0-1) + roadmap props, "
-        f"vs the {len(covered)} covered languages. REPORT ONLY — no labels emitted; "
-        f"property labels are translation (Emma-scoped), not transliteration.",
+        f"Properties used on the Shinto-core items (BFS levels 0-1) as MAIN values, "
+        f"QUALIFIERS, and references, + roadmap props, vs the {len(covered)} covered "
+        f"languages. Qualifiers matter — Shinto properties are heavily qualified. "
+        f"REPORT ONLY — no labels emitted; property labels are translation "
+        f"(Emma-scoped), not transliteration.",
         "",
         f"- Distinct properties examined: **{len(report)}**",
         f"- Fully covered in all {len(covered)} covered langs: **{len(fully)}**",

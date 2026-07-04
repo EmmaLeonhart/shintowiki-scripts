@@ -8,12 +8,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 `bfs/property_label_report.py` enumerates properties on the Shinto-core items
 (levels 0-1, 237 items) + roadmap props vs the 60 covered languages, report-only
-(no labels emitted — property labels are translation, not transliteration). Result:
-716 distinct properties, all with gaps — but dominated by irrelevant external-ID
-props; the actionable Shinto/structural targets are small (P14005 Japanese court
-rank missing 57/60, P13723, P527, P31, P361). Scoping signal: property labelling
-needs a relevance filter + Emma's translation decision, not a blanket 716-prop
-pass. One WDQS query + label calls (separate service from the live crawl's API).
+(no labels emitted — property labels are translation, not transliteration). Now
+counts MAIN values + QUALIFIERS + references (Emma: Shinto properties are heavily
+qualified, so qualifier properties are a big share of what needs labels) — 806
+distinct props, +90 vs the initial direct-only pass. All have gaps, but much is
+irrelevant external-ID props; the actionable Shinto/structural targets are small
+(P14005 Japanese court rank missing 57/60, P13723, P527, P31, P361). Scoping
+signal: property labelling needs a relevance filter + Emma's translation decision.
+One WDQS query + label calls (separate service from the live crawl's API).
 
 ## 2026-07-04 — Reconciled texts/concepts item against Emma's roadmap (queue item 4)
 
