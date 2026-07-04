@@ -43,11 +43,16 @@ job log, find the dumped stack, fix the named line.
 predated the instrumentation — its workflow ref pinned at 05:56 UTC and its
 checkout dd8174b1 both exclude 63926a81 (pushed 09:18 UTC). Verified: no
 faulthandler in that checkout's common.py, no `-u` in its workflow step. So the
-zero-dump run is expected, not a watchdog failure. First instrumented run =
-2026-07-05 ~06:00 UTC; read that log. One inference already banked: IF tomorrow
-also dumps nothing, the wedge is before `run_orchestrator` entry — i.e. import
-time or argparse/env, since the watchdog is armed at the function's first line
-and writes straight to fd 2.)
+zero-dump run is expected, not a watchdog failure.
+**NEW DATUM 2026-07-04 16:35 UTC: a STANDALONE workflow_dispatch of the
+category orchestrator with current instrumented code SUCCEEDED in 6m24s** —
+no retry warnings, real edits from page [1] (Category:Articles to be merged,
+the exact page every wedge sat on), state committed (d1b9dc94). So the wedge
+is NOT reproducible outside the cleanup-loop pipeline; it needs either the
+old 25-deep mwclient retry budget or the in-pipeline context (hours of prior
+bot load / throttling). Tonight's ~06:00 UTC scheduled run is the
+discriminator: wedge again in-pipeline → the faulthandler dump names the
+line; success → the retry-cap fix was the cure and this item closes.)
 
 ## 同上 error — pipeline SHIPPED for Izumo (48/51); remaining rungs
 
