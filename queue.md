@@ -141,6 +141,20 @@ jawiki sitelink → the rest need content before they'd survive re-deletion.
 
 ---
 
+## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items (next session)
+
+- [ ] **Go over the context dump** committed this session in `context dump/` (a saved
+  Claude Code page + assets, `911bbfb6`). Read it for the info/links it carries and fold
+  anything actionable into the queue/plan.
+- [ ] **Agentic RAG on the Wikidata items that Immanuelle created and that were then
+  deleted.** Emma is dumping these (there are likely account restrictions preventing a
+  live API pull, so the source is the dump, not a query). **Check the `context dump/` for
+  the item info / links first**, then do agentic RAG over the things linked there to
+  reconstruct enough content for recreation. **If that context is missing from the dump,
+  say so explicitly** (don't fabricate) and flag it as blocked-on-Emma-providing-the-dump.
+  Feeds directly into backlog #8 (deleted-QID recreation) above — the deleted
+  Immanuelle-created items overlap the 304 deleted ill targets.
+
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
