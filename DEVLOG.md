@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Provenance: buddhist wired + corrected a wrong CI claim, verified E2E
+
+Two things. (1) Wired the buddhist generator for provenance (all 3 branches —
+JP-romaji `romaji "…"`, Sanskrit-verbatim/scripts `Sanskrit "…"`, CJK/ko `ja kanji "…"`
+/ `(hanja)`; fixed its 3-tuple sample loop). (2) CORRECTED a factual error I'd been
+repeating: earlier entries said "CI regen adds the comments to kami_labels.txt" — FALSE.
+`label-generator-regenerate.yml` runs only fetch_shrines_tokiponize / korean / chinese /
+indonesian / multilang; the CATEGORY generators (kami, buddhist, human, misc_terms,
+shrine_rank, courtrank, province, text, …) are NOT CI-run — they regenerate only on
+Emma's local `!regenerateQuickStatements.bat`. So provenance comments on category files
+are local-rebuild-gated (the CI-run subset korean/chinese/multilang WILL apply on CI once
+wired). This also means my category-file .txt edits this session (ヴ fix, ko-kana fix,
+collision/whitespace fixes to kami/buddhist/text/etc.) are permanent, not CI-reverted —
+only the per-language shrine files (ar/de/ko/he/tok/zh) are CI-regenerated.
+Verified the wiring end-to-end: a local `generate_misc_terms` run produced 960 well-formed
+`# <source>` lines (one per label, 0 orphans, integrity tests green), then reverted the
+.txt so category files stay a consistent set for the next full rebuild. Suite 165.
+Remaining: province, text (local), korean/chinese/multilang (CI).
+
 ## 2026-07-05 — Provenance rollout: human / misc_terms / shrine_rank / courtrank wired
 
 Continued the provenance-comment rollout (queue "Active" item), 4 more write_qs

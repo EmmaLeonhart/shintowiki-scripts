@@ -57,17 +57,26 @@ Annotate each generated label line with the source it derives from, as a `# <sou
 comment line (drip selector + submitter skip `#`, so it never reaches Wikidata; same
 pattern generate_indonesian_proposals.py already uses). FOUNDATION SHIPPED: `write_qs`
 now emits a provenance comment for 4-tuple `(qid, lang, label, source)` rows
-(backward-compatible; tested). WIRED so far (phonetic ← `romaji "…"`, CJK ←
-`ja kanji "…"`, ko-hanja ← `ja kanji "…" (hanja)`): kami, **human, misc_terms,
-shrine_rank, courtrank_buddhist** (2026-07-05). CI regen adds the comments to those
-files on next run. ROLLOUT REMAINING (thread a per-label `source` 4th element): the
-3 other write_qs users — **buddhist** (3 branches: JP-romaji / Sanskrit-verbatim /
-CJK — use `Sanskrit "…"` for the Sanskrit branch), **province**, **text** — then the
-custom-loop generators korean (hanja vs koreanize) and chinese (ja kanji) and multilang
-(id/en source label). One generator per tick is fine; each is a mechanical
-3-tuple→4-tuple change (remember to fix each generator's sample-print loop, which
-unpacks 3-tuples). Note: each wired file ~doubles in line count on regen (a comment per
-label) — that is the intended "annotate output lines".
+(backward-compatible; tested). Sources: phonetic ← `romaji "…"`, CJK ← `ja kanji "…"`,
+ko-hanja ← `ja kanji "…" (hanja)`, Sanskrit-named ← `Sanskrit "…"`.
+
+**IMPORTANT — how comments actually reach the .txt (corrected 2026-07-05):** the
+CATEGORY generators (kami, buddhist, human, misc_terms, shrine_rank, courtrank_buddhist,
+province, text, shikinaisha, *_translations) are NOT run by CI — `label-generator-
+regenerate.yml` only runs fetch_shrines_tokiponize / korean / chinese / indonesian /
+multilang. So category-file comments apply only on Emma's local `!regenerateQuickStatements.bat`
+rebuild (verified end-to-end 2026-07-05: a local `generate_misc_terms` run produced 960
+well-formed `# <source>` lines, one per label, integrity tests green — then reverted so
+category files stay a consistent set for the next full rebuild). The CI-run subset
+(korean/chinese/multilang) DOES apply on CI once wired.
+
+WIRED so far: kami, human, misc_terms, shrine_rank, courtrank_buddhist, **buddhist**
+(2026-07-05). ROLLOUT REMAINING (thread a per-label `source`; fix each generator's
+sample-print loop that unpacks 3-tuples): category generators **province**, **text**
+(local-rebuild-gated), then the CI-run **korean** (hanja vs koreanize), **chinese**
+(ja kanji), **multilang** (id/en source label) — these last three apply on CI once
+wired. One generator per tick. Each wired file ~doubles in line count on regen (a comment
+per label) — the intended "annotate output lines".
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 
